@@ -1,0 +1,433 @@
+{
+  "source": "poq_qual_model_outcomes.md",
+  "source_hash": "47b5b98e637ecf19b2cf1a2fcfcd16eb",
+  "translated_at": "2026-03-25",
+  "items": [
+    {
+      "id": 1,
+      "br": "Visão Geral",
+      "en": "Overview",
+      "es": "Visión General"
+    },
+    {
+      "id": 2,
+      "br": "Armazena os resultados possíveis (outcomes) a nível de modelo de qualificação. Define as faixas de pontuação consolidada e suas classificações finais (ex.: \"Qualificado\", \"Não Qualificado\", \"Qualificação Condicional\") que determinam o veredito global da avaliação do fornecedor.",
+      "en": "Stores possible outcomes at the qualification model level. Defines consolidated score ranges and their final classifications (e.g., \"Qualified\", \"Not Qualified\", \"Conditional Qualification\") that determine the overall verdict of the supplier assessment.",
+      "es": "Almacena os resultados possíveis (outcomes) a nível de modelo de calificación. Define as faixas de puntuación consolidada y sus classificações finais (ex.: \"Qualificado\", \"Não Qualificado\", \"Qualificação Condicional\") que determinam o veredito global de la evaluación del proveedor."
+    },
+    {
+      "id": 3,
+      "br": "Outcomes de modelo vs. de área",
+      "en": "Outcomes de modelo vs. de área",
+      "es": "Outcomes de modelo vs. de área"
+    },
+    {
+      "id": 4,
+      "br": "Esta tabela define outcomes a nível de modelo (resultado consolidado). Para outcomes a nível de área individual, consulte [[poq_qual_area_outcomes]].",
+      "en": "This table defines outcomes at the model level (consolidated result). For individual area-level outcomes, see [[poq_qual_area_outcomes]].",
+      "es": "Esta tabla define outcomes a nível de modelo (resultado consolidado). Para outcomes a nível de área individual, consulte [[poq_qual_area_outcomes]]."
+    },
+    {
+      "id": 5,
+      "br": "Propósito de Negócio",
+      "en": "Business Purpose",
+      "es": "Propósito de Negocio"
+    },
+    {
+      "id": 6,
+      "br": "Esta tabela é utilizada nos seguintes processos:",
+      "en": "This table is used in the following processes:",
+      "es": "Esta tabla se utiliza en los siguientes procesos:"
+    },
+    {
+      "id": 7,
+      "br": "Determinação do resultado consolidado da qualificação com base na pontuação ponderada de todas as áreas.",
+      "en": "Determination of the consolidated qualification result based on the weighted score of all areas.",
+      "es": "Determinação del resultado consolidado de la calificación con base en la puntuación ponderada de todas as áreas."
+    },
+    {
+      "id": 8,
+      "br": "Definição das faixas de score que determinam aprovação/reprovação global do fornecedor.",
+      "en": "Definition of score ranges that determine the supplier's overall approval/rejection.",
+      "es": "Definición de las faixas de score que determinam aprobación/rechazo global del proveedor."
+    },
+    {
+      "id": 9,
+      "br": "Alimenta o status de qualificação do fornecedor para controle em processos de sourcing e procurement.",
+      "en": "Feeds the supplier's qualification status for control in sourcing and procurement processes.",
+      "es": "Alimenta o status de calificación del proveedor para control em procesos de sourcing y procurement."
+    },
+    {
+      "id": 10,
+      "br": "Base para KPIs de taxa de qualificação e distribuição de resultados.",
+      "en": "Basis for qualification rate KPIs and results distribution.",
+      "es": "Base para KPIs de taxa de calificación y distribuição de resultados."
+    },
+    {
+      "id": 11,
+      "br": "Outcome \"QUALIFIED\" pode disparar inclusão automática na lista de fornecedores aprovados.",
+      "en": "Outcome \"QUALIFIED\" can trigger automatic inclusion in the approved suppliers list.",
+      "es": "Outcome \"QUALIFIED\" puede disparar inclusão automática en la lista de proveedores aprobados."
+    },
+    {
+      "id": 12,
+      "br": "Colunas Principais",
+      "en": "Key Columns",
+      "es": "Columnas Principales"
+    },
+    {
+      "id": 13,
+      "br": "Confiança",
+      "en": "Confidence",
+      "es": "Confianza"
+    },
+    {
+      "id": 14,
+      "br": "Escala de 0% a 100% — grau de certeza da descrição gerada por IA com base na documentação oficial Oracle (OEDMF/BICC Release 13/25A).",
+      "en": "Scale from 0% to 100% — degree of certainty of the AI-generated description based on official Oracle documentation (OEDMF/BICC Release 13/25A).",
+      "es": "Escala de 0% a 100% — grado de certeza de la descripción generada por IA con base en la documentación oficial Oracle (OEDMF/BICC Release 13/25A)."
+    },
+    {
+      "id": 15,
+      "br": "- 🟢 81–100% — Coluna presente na documentação oficial Oracle; nome, tipo e descrição confirmados.",
+      "en": "- 🟢 81–100% — Column present in official Oracle documentation; name, type, and description confirmed.",
+      "es": "- 🟢 81–100% — Columna presente en la documentación oficial Oracle; nombre, tipo y descripción confirmados."
+    },
+    {
+      "id": 16,
+      "br": "- 🟡 51–80% — Coluna inferida por naming convention ou padrão Oracle; tipo exato pode variar.",
+      "en": "- 🟡 51–80% — Column inferred by naming convention or Oracle standard; exact type may vary.",
+      "es": "- 🟡 51–80% — Columna inferida por naming convention o estándar Oracle; el tipo exacto puede variar."
+    },
+    {
+      "id": 17,
+      "br": "- 🔴 0–50% — Existência ou tipo incertos; pode não existir no release atual; validar no ambiente.",
+      "en": "- 🔴 0–50% — Uncertain existence or type; may not exist in the current release; validate in the environment.",
+      "es": "- 🔴 0–50% — Existencia o tipo inciertos; puede no existir en el release actual; validar en el ambiente."
+    },
+    {
+      "id": 18,
+      "br": "Coluna",
+      "en": "Column",
+      "es": "Columna"
+    },
+    {
+      "id": 19,
+      "br": "Tipo",
+      "en": "Type",
+      "es": "Tipo"
+    },
+    {
+      "id": 20,
+      "br": "Nulo?",
+      "en": "Nullable?",
+      "es": "¿Nulo?"
+    },
+    {
+      "id": 21,
+      "br": "Categoria",
+      "en": "Category",
+      "es": "Categoría"
+    },
+    {
+      "id": 22,
+      "br": "Descrição",
+      "en": "Description",
+      "es": "Descripción"
+    },
+    {
+      "id": 23,
+      "br": "Identificador único do outcome do modelo",
+      "en": "Unique model outcome identifier",
+      "es": "Identificador único del outcome del modelo"
+    },
+    {
+      "id": 24,
+      "br": "Modelo de qualificação",
+      "en": "Qualification model",
+      "es": "Modelo de calificación"
+    },
+    {
+      "id": 25,
+      "br": "Classificação",
+      "en": "Classification",
+      "es": "Clasificación"
+    },
+    {
+      "id": 26,
+      "br": "Código do resultado: QUALIFIED, NOT_QUALIFIED, CONDITIONAL, NEEDS_REVIEW",
+      "en": "Result code: QUALIFIED, NOT_QUALIFIED, CONDITIONAL, NEEDS_REVIEW",
+      "es": "Código del resultado: QUALIFIED, NOT_QUALIFIED, CONDITIONAL, NEEDS_REVIEW"
+    },
+    {
+      "id": 27,
+      "br": "Tradução",
+      "en": "Translation",
+      "es": "Traducción"
+    },
+    {
+      "id": 28,
+      "br": "Nome do resultado (traduzido)",
+      "en": "Result name (translated)",
+      "es": "Nome del resultado (traduzido)"
+    },
+    {
+      "id": 29,
+      "br": "Pontuação",
+      "en": "Score",
+      "es": "Puntuación"
+    },
+    {
+      "id": 30,
+      "br": "Pontuação mínima para atingir este outcome",
+      "en": "Minimum score to reach this outcome",
+      "es": "Pontuação mínima para atingir este outcome"
+    },
+    {
+      "id": 31,
+      "br": "Pontuação máxima desta faixa de outcome",
+      "en": "Maximum score of this outcome range",
+      "es": "Pontuação máxima desta faixa de outcome"
+    },
+    {
+      "id": 32,
+      "br": "Identificação",
+      "en": "Identification",
+      "es": "Identificación"
+    },
+    {
+      "id": 33,
+      "br": "Ordem de exibição/avaliação do outcome",
+      "en": "Outcome display/evaluation order",
+      "es": "Ordem de exhibición/evaluación del outcome"
+    },
+    {
+      "id": 34,
+      "br": "Se este é o outcome padrão (fallback): Y/N",
+      "en": "Whether this is the default (fallback) outcome: Y/N",
+      "es": "Se este é o outcome predeterminado (fallback): Y/N"
+    },
+    {
+      "id": 35,
+      "br": "Texto livre",
+      "en": "Free Text",
+      "es": "Texto libre"
+    },
+    {
+      "id": 36,
+      "br": "Descrição do outcome e critérios de aplicação",
+      "en": "Outcome description and application criteria",
+      "es": "Descrição del outcome y criterios de aplicação"
+    },
+    {
+      "id": 37,
+      "br": "Ação automática associada: APPROVE_SUPPLIER, BLOCK_SUPPLIER, NOTIFY_OWNER",
+      "en": "Associated automatic action: APPROVE_SUPPLIER, BLOCK_SUPPLIER, NOTIFY_OWNER",
+      "es": "Ação automática associada: APPROVE_SUPPLIER, BLOCK_SUPPLIER, NOTIFY_OWNER"
+    },
+    {
+      "id": 38,
+      "br": "Se dispara notificação automática: Y/N",
+      "en": "Whether it triggers automatic notification: Y/N",
+      "es": "Se dispara notificación automática: Y/N"
+    },
+    {
+      "id": 39,
+      "br": "Se o outcome está ativo: Y/N",
+      "en": "Whether the outcome is active: Y/N",
+      "es": "Se o outcome está activo: Y/N"
+    },
+    {
+      "id": 40,
+      "br": "Auditoria",
+      "en": "Audit",
+      "es": "Auditoría"
+    },
+    {
+      "id": 41,
+      "br": "Usuário que criou o registro",
+      "en": "User who created the record",
+      "es": "Usuario que creó el registro"
+    },
+    {
+      "id": 42,
+      "br": "Data/hora de criação",
+      "en": "Creation date/time",
+      "es": "Fecha/hora de creación"
+    },
+    {
+      "id": 43,
+      "br": "Último usuário que alterou",
+      "en": "Last user who modified",
+      "es": "Último usuario que modificó"
+    },
+    {
+      "id": 44,
+      "br": "Data/hora da última alteração",
+      "en": "Last modification date/time",
+      "es": "Fecha/hora de la última modificación"
+    },
+    {
+      "id": 45,
+      "br": "Login da última sessão",
+      "en": "Last session login",
+      "es": "Login de la última sesión"
+    },
+    {
+      "id": 46,
+      "br": "Controle",
+      "en": "Control",
+      "es": "Control"
+    },
+    {
+      "id": 47,
+      "br": "Controle de concorrência otimista",
+      "en": "Optimistic concurrency control",
+      "es": "Control de concurrencia optimista"
+    },
+    {
+      "id": 48,
+      "br": "Relacionamentos",
+      "en": "Relationships",
+      "es": "Relaciones"
+    },
+    {
+      "id": 49,
+      "br": "Tabelas-pai (FK de entrada)",
+      "en": "Parent Tables (inbound FK)",
+      "es": "Tablas padre (FK de entrada)"
+    },
+    {
+      "id": 50,
+      "br": "modelo de qualificação",
+      "en": "qualification model",
+      "es": "modelo de calificación"
+    },
+    {
+      "id": 51,
+      "br": "Tabelas relacionadas",
+      "en": "Related Tables",
+      "es": "Tablas relacionadas"
+    },
+    {
+      "id": 52,
+      "br": "poq_qual_area_outcomes — outcomes equivalentes a nível de área",
+      "en": "poq_qual_area_outcomes — equivalent outcomes at area level",
+      "es": "poq_qual_area_outcomes — outcomes equivalentes a nível de área"
+    },
+    {
+      "id": 53,
+      "br": "poq_qual_asmt_init_v — view de avaliações que utiliza o OUTCOME_CODE definido aqui",
+      "en": "poq_qual_asmt_init_v — assessments view that uses the OUTCOME_CODE defined here",
+      "es": "poq_qual_asmt_init_v — view de evaluaciones que utiliza o OUTCOME_CODE definido aqui"
+    },
+    {
+      "id": 54,
+      "br": "poq_qual_model_areas — áreas cujas pontuações são consolidadas para determinar o outcome do modelo",
+      "en": "poq_qual_model_areas — areas whose scores are consolidated to determine the model outcome",
+      "es": "poq_qual_model_areas — áreas cujas puntuaciones são consolidadas para determinar o outcome del modelo"
+    },
+    {
+      "id": 55,
+      "br": "Uso Típico",
+      "en": "Typical Usage",
+      "es": "Uso Típico"
+    },
+    {
+      "id": 56,
+      "br": "Faixas de resultado de um modelo",
+      "en": "Result ranges of a model",
+      "es": "Faixas de resultado de un modelo"
+    },
+    {
+      "id": 57,
+      "br": "Modelos com outcome de aprovação e seu score mínimo",
+      "en": "Models with approval outcome and their minimum score",
+      "es": "Modelos con outcome de aprobación y su score mínimo"
+    },
+    {
+      "id": 58,
+      "br": "Filtros comuns",
+      "en": "Common Filters",
+      "es": "Filtros comunes"
+    },
+    {
+      "id": 59,
+      "br": "Outcomes ativos",
+      "en": "Active outcomes",
+      "es": "Outcomes activos"
+    },
+    {
+      "id": 60,
+      "br": "Faixa de aprovação",
+      "en": "Approval range",
+      "es": "Faixa de aprobación"
+    },
+    {
+      "id": 61,
+      "br": "Faixa de reprovação",
+      "en": "Rejection range",
+      "es": "Faixa de rechazo"
+    },
+    {
+      "id": 62,
+      "br": "Outcome fallback",
+      "en": "Outcome fallback",
+      "es": "Outcome fallback"
+    },
+    {
+      "id": 63,
+      "br": "Observações",
+      "en": "Notes",
+      "es": "Observaciones"
+    },
+    {
+      "id": 64,
+      "br": "As faixas de MIN_SCORE e MAX_SCORE não devem se sobrepor dentro de um mesmo modelo.",
+      "en": "The MIN_SCORE and MAX_SCORE ranges must not overlap within the same model.",
+      "es": "As faixas de MIN_SCORE y MAX_SCORE en el devem si sobrepor dentro de un mesmo modelo."
+    },
+    {
+      "id": 65,
+      "br": "O ACTION_CODE permite automação: por exemplo, outcome NOT_QUALIFIED pode disparar bloqueio automático do fornecedor.",
+      "en": "The ACTION_CODE enables automation: for example, outcome NOT_QUALIFIED can trigger automatic supplier blocking.",
+      "es": "O ACTION_CODE permite automação: por exemplo, outcome NOT_QUALIFIED puede disparar bloqueio automático del proveedor."
+    },
+    {
+      "id": 66,
+      "br": "O outcome com DEFAULT_FLAG = 'Y' é aplicado quando o score não se encaixa em nenhuma faixa explícita (edge case / fallback).",
+      "en": "The outcome with DEFAULT_FLAG = 'Y' is applied when the score does not fit any explicit range (edge case / fallback).",
+      "es": "O outcome con DEFAULT_FLAG = 'Y' é aplicado cuando o score en el si encaixa em nenhuma faixa explícita (edge case / fallback)."
+    },
+    {
+      "id": 67,
+      "br": "Cada modelo deve ter pelo menos os outcomes QUALIFIED e NOT_QUALIFIED configurados para funcionar corretamente.",
+      "en": "Each model must have at least the QUALIFIED and NOT_QUALIFIED outcomes configured to function correctly.",
+      "es": "Cada modelo deve ter pelo menos os outcomes QUALIFIED y NOT_QUALIFIED configurados para funcionar corretamente."
+    },
+    {
+      "id": 68,
+      "br": "O OUTCOME_CODE definido aqui é o mesmo valor gravado no campo OUTCOME_CODE da view poq_qual_asmt_init_v.",
+      "en": "The OUTCOME_CODE defined here is the same value recorded in the OUTCOME_CODE field of the poq_qual_asmt_init_v view.",
+      "es": "O OUTCOME_CODE definido aqui é o mesmo valor gravado en el campo OUTCOME_CODE de la view poq_qual_asmt_init_v."
+    },
+    {
+      "id": 69,
+      "br": "Referências",
+      "en": "References",
+      "es": "Referencias"
+    },
+    {
+      "id": 70,
+      "br": "[Oracle Docs — Supplier Qualification Management](https://docs.oracle.com/en/cloud/saas/procurement/25a/oedmf/)",
+      "en": "[Oracle Docs — Supplier Qualification Management](https://docs.oracle.com/en/cloud/saas/procurement/25a/oedmf/)",
+      "es": "[Oracle Docs — Supplier Qualification Management](https://docs.oracle.com/en/cloud/saas/procurement/25a/oedmf/)"
+    },
+    {
+      "id": 71,
+      "br": "po-module-data-dictionary — Dossiê do módulo PO/Procurement",
+      "en": "po-module-data-dictionary — module dossier for PO/Procurement",
+      "es": "po-module-data-dictionary — Dosier del módulo PO/Procurement"
+    }
+  ]
+}

@@ -1,0 +1,427 @@
+{
+  "source": "gl_reconciliation_rules.md",
+  "source_hash": "a77bb4075742770a1c4bd7d999140358",
+  "translated_at": "2026-03-25",
+  "items": [
+    {
+      "id": 1,
+      "br": "Visão Geral",
+      "en": "Overview",
+      "es": "Descripcion General"
+    },
+    {
+      "id": 2,
+      "br": "Armazena as regras de reconciliação contábil utilizadas pelo módulo de Account Reconciliation do Oracle Fusion GL. Define critérios de matching automático entre lançamentos contábeis (journal lines) para identificar itens que se compensam, facilitando o processo de reconciliação de contas de balanço (clearing accounts, suspense accounts, intercompany, etc.).",
+      "en": "Stores the accounting reconciliation rules used by the Account Reconciliation module of Oracle Fusion GL. Defines automatic matching criteria between journal entries (journal lines) to identify offsetting items, facilitating the reconciliation process for balance sheet accounts (clearing accounts, suspense accounts, intercompany, etc.).",
+      "es": "Almacena las reglas de reconciliacion contable utilizadas por el modulo de Account Reconciliation de Oracle Fusion GL. Define criterios de matching automatico entre asientos contables (journal lines) para identificar items que se compensan, facilitando el proceso de reconciliacion de cuentas de balance (clearing accounts, suspense accounts, intercompany, etc.)."
+    },
+    {
+      "id": 3,
+      "br": "Módulo de Reconciliação",
+      "en": "Reconciliation Module",
+      "es": "Modulo de Reconciliacion"
+    },
+    {
+      "id": 4,
+      "br": "Esta tabela faz parte do recurso de Intercompany/Account Reconciliation do GL. Nem todas as implementações utilizam a reconciliação automática — muitas fazem reconciliação manual ou via ferramentas externas.",
+      "en": "This table is part of the Intercompany/Account Reconciliation feature of GL. Not all implementations use automatic reconciliation — many perform manual reconciliation or use external tools.",
+      "es": "Esta tabla es parte del recurso de Intercompany/Account Reconciliation del GL. No todas las implementaciones utilizan la reconciliacion automatica — muchas realizan reconciliacion manual o usan herramientas externas."
+    },
+    {
+      "id": 5,
+      "br": "Propósito de Negócio",
+      "en": "Business Purpose",
+      "es": "Proposito de Negocio"
+    },
+    {
+      "id": 6,
+      "br": "Esta tabela é utilizada nos seguintes processos:",
+      "en": "This table is used in the following processes:",
+      "es": "Esta tabla se utiliza en los siguientes procesos:"
+    },
+    {
+      "id": 7,
+      "br": "Definição de critérios para matching automático de lançamentos em contas de clearing.",
+      "en": "Definition of criteria for automatic matching of entries in clearing accounts.",
+      "es": "Definicion de criterios para matching automatico de asientos en cuentas de clearing."
+    },
+    {
+      "id": 8,
+      "br": "Reconciliação de itens em contas suspense para identificar pendências.",
+      "en": "Reconciliation of items in suspense accounts to identify pending items.",
+      "es": "Reconciliacion de items en cuentas suspense para identificar pendencias."
+    },
+    {
+      "id": 9,
+      "br": "Matching de lançamentos intercompany entre business units.",
+      "en": "Matching of intercompany entries between business units.",
+      "es": "Matching de asientos intercompany entre business units."
+    },
+    {
+      "id": 10,
+      "br": "Automatização da reconciliação como parte do processo de fechamento mensal.",
+      "en": "Automation of reconciliation as part of the monthly closing process.",
+      "es": "Automatizacion de la reconciliacion como parte del proceso de cierre mensual."
+    },
+    {
+      "id": 11,
+      "br": "Documentação formal dos critérios de reconciliação aplicados.",
+      "en": "Formal documentation of applied reconciliation criteria.",
+      "es": "Documentacion formal de los criterios de reconciliacion aplicados."
+    },
+    {
+      "id": 12,
+      "br": "Colunas Principais",
+      "en": "Key Columns",
+      "es": "Columnas Principales"
+    },
+    {
+      "id": 13,
+      "br": "Confiança",
+      "en": "Confidence",
+      "es": "Confianza"
+    },
+    {
+      "id": 14,
+      "br": "Escala de 0% a 100% — grau de certeza da descrição gerada por IA com base na documentação oficial Oracle (OEDMF/BICC Release 13/25A).",
+      "en": "Scale from 0% to 100% — degree of certainty of the AI-generated description based on official Oracle documentation (OEDMF/BICC Release 13/25A).",
+      "es": "Escala de 0% a 100% — grado de certeza de la descripcion generada por IA con base en la documentacion oficial Oracle (OEDMF/BICC Release 13/25A)."
+    },
+    {
+      "id": 15,
+      "br": "- 🟢 81–100% — Coluna presente na documentação oficial Oracle; nome, tipo e descrição confirmados.",
+      "en": "- 🟢 81–100% — Column present in official Oracle documentation; name, type, and description confirmed.",
+      "es": "- 🟢 81–100% — Columna presente en la documentacion oficial Oracle; nombre, tipo y descripcion confirmados."
+    },
+    {
+      "id": 16,
+      "br": "- 🟡 51–80% — Coluna inferida por naming convention ou padrão Oracle; tipo exato pode variar.",
+      "en": "- 🟡 51–80% — Column inferred by naming convention or Oracle standard; exact type may vary.",
+      "es": "- 🟡 51–80% — Columna inferida por naming convention o estandar Oracle; tipo exacto puede variar."
+    },
+    {
+      "id": 17,
+      "br": "- 🔴 0–50% — Existência ou tipo incertos; pode não existir no release atual; validar no ambiente.",
+      "en": "- 🔴 0–50% — Existence or type uncertain; may not exist in the current release; validate in the environment.",
+      "es": "- 🔴 0–50% — Existencia o tipo inciertos; puede no existir en el release actual; validar en el ambiente."
+    },
+    {
+      "id": 18,
+      "br": "Coluna",
+      "en": "Column",
+      "es": "Columna"
+    },
+    {
+      "id": 19,
+      "br": "Tipo",
+      "en": "Type",
+      "es": "Tipo"
+    },
+    {
+      "id": 20,
+      "br": "Nulo?",
+      "en": "Nullable?",
+      "es": "Nulo?"
+    },
+    {
+      "id": 21,
+      "br": "Categoria",
+      "en": "Category",
+      "es": "Categoria"
+    },
+    {
+      "id": 22,
+      "br": "Descrição",
+      "en": "Description",
+      "es": "Descripcion"
+    },
+    {
+      "id": 23,
+      "br": "Identificador único da regra de reconciliação",
+      "en": "Unique identifier for the reconciliation rule",
+      "es": "Identificador unico de la regla de reconciliacion"
+    },
+    {
+      "id": 24,
+      "br": "Identificação",
+      "en": "Identification",
+      "es": "Identificacion"
+    },
+    {
+      "id": 25,
+      "br": "Nome da regra de reconciliação",
+      "en": "Reconciliation rule name",
+      "es": "Nombre de la regla de reconciliacion"
+    },
+    {
+      "id": 26,
+      "br": "Identificador do ledger",
+      "en": "Ledger identifier",
+      "es": "Identificador del ledger"
+    },
+    {
+      "id": 27,
+      "br": "Identificador da estrutura do plano de contas",
+      "en": "Chart of accounts structure identifier",
+      "es": "Identificador de la estructura del plan de cuentas"
+    },
+    {
+      "id": 28,
+      "br": "Classificação",
+      "en": "Classification",
+      "es": "Clasificacion"
+    },
+    {
+      "id": 29,
+      "br": "Modo de matching: AUTOMATIC, MANUAL, SUGGESTED",
+      "en": "Matching mode: AUTOMATIC, MANUAL, SUGGESTED",
+      "es": "Modo de matching: AUTOMATIC, MANUAL, SUGGESTED"
+    },
+    {
+      "id": 30,
+      "br": "Configuração",
+      "en": "Configuration",
+      "es": "Configuracion"
+    },
+    {
+      "id": 31,
+      "br": "Tolerância de valor para matching (diferença aceitável)",
+      "en": "Value tolerance for matching (acceptable difference)",
+      "es": "Tolerancia de valor para matching (diferencia aceptable)"
+    },
+    {
+      "id": 32,
+      "br": "Tolerância percentual para matching",
+      "en": "Percentage tolerance for matching",
+      "es": "Tolerancia porcentual para matching"
+    },
+    {
+      "id": 33,
+      "br": "Filtro",
+      "en": "Filter",
+      "es": "Filtro"
+    },
+    {
+      "id": 34,
+      "br": "Conta contábil inicial do range a reconciliar",
+      "en": "Starting accounting account of the range to reconcile",
+      "es": "Cuenta contable inicial del rango a reconciliar"
+    },
+    {
+      "id": 35,
+      "br": "Conta contábil final do range a reconciliar",
+      "en": "Ending accounting account of the range to reconcile",
+      "es": "Cuenta contable final del rango a reconciliar"
+    },
+    {
+      "id": 36,
+      "br": "Status",
+      "en": "Status",
+      "es": "Status"
+    },
+    {
+      "id": 37,
+      "br": "Indica se a regra está ativa (Y/N)",
+      "en": "Indicates whether the rule is active (Y/N)",
+      "es": "Indica si la regla esta activa (Y/N)"
+    },
+    {
+      "id": 38,
+      "br": "Texto livre",
+      "en": "Free text",
+      "es": "Texto libre"
+    },
+    {
+      "id": 39,
+      "br": "Descrição da regra de reconciliação",
+      "en": "Reconciliation rule description",
+      "es": "Descripcion de la regla de reconciliacion"
+    },
+    {
+      "id": 40,
+      "br": "Primeiro critério de matching (ex: AMOUNT, REFERENCE, DATE)",
+      "en": "First matching criterion (e.g., AMOUNT, REFERENCE, DATE)",
+      "es": "Primer criterio de matching (ej: AMOUNT, REFERENCE, DATE)"
+    },
+    {
+      "id": 41,
+      "br": "Segundo critério de matching",
+      "en": "Second matching criterion",
+      "es": "Segundo criterio de matching"
+    },
+    {
+      "id": 42,
+      "br": "Terceiro critério de matching",
+      "en": "Third matching criterion",
+      "es": "Tercer criterio de matching"
+    },
+    {
+      "id": 43,
+      "br": "Auditoria",
+      "en": "Audit",
+      "es": "Auditoria"
+    },
+    {
+      "id": 44,
+      "br": "Usuário que criou o registro",
+      "en": "User who created the record",
+      "es": "Usuario que creo el registro"
+    },
+    {
+      "id": 45,
+      "br": "Data/hora de criação",
+      "en": "Creation date/time",
+      "es": "Fecha/hora de creacion"
+    },
+    {
+      "id": 46,
+      "br": "Último usuário que alterou",
+      "en": "Last user who modified",
+      "es": "Ultimo usuario que modifico"
+    },
+    {
+      "id": 47,
+      "br": "Data/hora da última alteração",
+      "en": "Last modification date/time",
+      "es": "Fecha/hora de la ultima modificacion"
+    },
+    {
+      "id": 48,
+      "br": "Login da última sessão",
+      "en": "Last session login",
+      "es": "Login de la ultima sesion"
+    },
+    {
+      "id": 49,
+      "br": "Relacionamentos",
+      "en": "Relationships",
+      "es": "Relaciones"
+    },
+    {
+      "id": 50,
+      "br": "Tabelas-pai (FK de entrada)",
+      "en": "Parent tables (inbound FK)",
+      "es": "Tablas padre (FK de entrada)"
+    },
+    {
+      "id": 51,
+      "br": "ledger/livro contábil",
+      "en": "ledger/accounting book",
+      "es": "ledger/libro contable"
+    },
+    {
+      "id": 52,
+      "br": "estrutura do plano de contas",
+      "en": "chart of accounts structure",
+      "es": "estructura del plan de cuentas"
+    },
+    {
+      "id": 53,
+      "br": "Tabelas-filha (FK de saída)",
+      "en": "Child tables (outbound FK)",
+      "es": "Tablas hija (FK de salida)"
+    },
+    {
+      "id": 54,
+      "br": "Nenhuma FK direta conhecida — as regras são consumidas pelo processo de reconciliação que gera resultados em tabelas de matching.",
+      "en": "No direct FK known — the rules are consumed by the reconciliation process that generates results in matching tables.",
+      "es": "Ninguna FK directa conocida — las reglas son consumidas por el proceso de reconciliacion que genera resultados en tablas de matching."
+    },
+    {
+      "id": 55,
+      "br": "Uso Típico",
+      "en": "Typical Usage",
+      "es": "Uso Tipico"
+    },
+    {
+      "id": 56,
+      "br": "Listar regras ativas por ledger",
+      "en": "List active rules by ledger",
+      "es": "Listar reglas activas por ledger"
+    },
+    {
+      "id": 57,
+      "br": "Regras com tolerância configurada",
+      "en": "Rules with configured tolerance",
+      "es": "Reglas con tolerancia configurada"
+    },
+    {
+      "id": 58,
+      "br": "Filtros comuns",
+      "en": "Common Filters",
+      "es": "Filtros comunes"
+    },
+    {
+      "id": 59,
+      "br": "Regras ativas",
+      "en": "Active rules",
+      "es": "Reglas activas"
+    },
+    {
+      "id": 60,
+      "br": "Regras de matching automático",
+      "en": "Automatic matching rules",
+      "es": "Reglas de matching automatico"
+    },
+    {
+      "id": 61,
+      "br": "Regras que sugerem matches para aprovação manual",
+      "en": "Rules that suggest matches for manual approval",
+      "es": "Reglas que sugieren matches para aprobacion manual"
+    },
+    {
+      "id": 62,
+      "br": "Observações",
+      "en": "Notes",
+      "es": "Observaciones"
+    },
+    {
+      "id": 63,
+      "br": "As regras de reconciliação são configuradas por ledger e podem ser restritas a um range de contas contábeis.",
+      "en": "Reconciliation rules are configured per ledger and can be restricted to a range of accounting accounts.",
+      "es": "Las reglas de reconciliacion se configuran por ledger y pueden restringirse a un rango de cuentas contables."
+    },
+    {
+      "id": 64,
+      "br": "O MATCH_MODE controla o grau de automação: AUTOMATIC faz o match sem intervenção, SUGGESTED propõe matches para revisão humana, MANUAL requer seleção manual.",
+      "en": "MATCH_MODE controls the degree of automation: AUTOMATIC performs matching without intervention, SUGGESTED proposes matches for human review, MANUAL requires manual selection.",
+      "es": "MATCH_MODE controla el grado de automatizacion: AUTOMATIC realiza el match sin intervencion, SUGGESTED propone matches para revision humana, MANUAL requiere seleccion manual."
+    },
+    {
+      "id": 65,
+      "br": "Tolerâncias (TOLERANCE_AMOUNT / TOLERANCE_PERCENTAGE) permitem matching mesmo quando há pequenas diferenças de arredondamento.",
+      "en": "Tolerances (TOLERANCE_AMOUNT / TOLERANCE_PERCENTAGE) allow matching even when there are small rounding differences.",
+      "es": "Tolerancias (TOLERANCE_AMOUNT / TOLERANCE_PERCENTAGE) permiten matching incluso cuando hay pequenas diferencias de redondeo."
+    },
+    {
+      "id": 66,
+      "br": "Esta tabela tem confiança média (65-75%) em várias colunas porque a documentação oficial do Oracle Fusion é limitada para o módulo de reconciliação automática do GL. Validar a estrutura no ambiente real.",
+      "en": "This table has medium confidence (65-75%) in several columns because official Oracle Fusion documentation is limited for the GL automatic reconciliation module. Validate the structure in the actual environment.",
+      "es": "Esta tabla tiene confianza media (65-75%) en varias columnas porque la documentacion oficial de Oracle Fusion es limitada para el modulo de reconciliacion automatica del GL. Validar la estructura en el ambiente real."
+    },
+    {
+      "id": 67,
+      "br": "Nem todas as implementações do Oracle Fusion ativam o recurso de reconciliação do GL — muitas instituições financeiras utilizam ferramentas dedicadas (BlackLine, Trintech, etc.).",
+      "en": "Not all Oracle Fusion implementations activate the GL reconciliation feature — many financial institutions use dedicated tools (BlackLine, Trintech, etc.).",
+      "es": "No todas las implementaciones de Oracle Fusion activan el recurso de reconciliacion del GL — muchas instituciones financieras utilizan herramientas dedicadas (BlackLine, Trintech, etc.)."
+    },
+    {
+      "id": 68,
+      "br": "Referências",
+      "en": "References",
+      "es": "Referencias"
+    },
+    {
+      "id": 69,
+      "br": "[Oracle Docs — GL Reconciliation](https://docs.oracle.com/en/cloud/saas/financials/25a/oedmf/)",
+      "en": "[Oracle Docs — GL Reconciliation](https://docs.oracle.com/en/cloud/saas/financials/25a/oedmf/)",
+      "es": "[Oracle Docs — GL Reconciliation](https://docs.oracle.com/en/cloud/saas/financials/25a/oedmf/)"
+    },
+    {
+      "id": 70,
+      "br": "gl-module-data-dictionary — Dossiê do módulo GL",
+      "en": "gl-module-data-dictionary — GL module dossier",
+      "es": "gl-module-data-dictionary — Dossier del modulo GL"
+    }
+  ]
+}

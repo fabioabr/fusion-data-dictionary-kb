@@ -1,0 +1,2620 @@
+{
+  "meta": {
+    "pvo_name": "TransactionConsoleP1",
+    "full_path": "HcmTopModelAnalyticsGlobalAM.HcmApprovalsReportingAM.TransactionConsoleP1",
+    "module_path": "HcmTopModelAnalyticsGlobalAM.HcmApprovalsReportingAM",
+    "module_code": "AP",
+    "type": "pvo",
+    "description": "Extrai os dados do console de transações de RH, incluindo transações, ocorrências, atribuições de responsáveis, processos de aprovação e detalhes de erro. Permite monitorar e resolver problemas em transações de gestão de pessoas de forma centralizada."
+  },
+  "stats": {
+    "total_attributes": 184,
+    "tables_count": 7,
+    "bicc_enabled": 20,
+    "bicc_pct": 11,
+    "pk_count": 1
+  },
+  "tables": [
+    "FND_CONSOLE_ISSUE",
+    "FND_CONSOLE_TRANSACTION_INFO",
+    "HRC_ARM_PROCESS_VL",
+    "HRC_CONSOLE_ISSUE_ASSIGNMENT",
+    "HRC_TXN_CONSOLE_ENTRY",
+    "HRC_TXN_DATA",
+    "HRC_TXN_HEADER"
+  ],
+  "attributes": [
+    {
+      "name": "ApprovalProcessPEOActive",
+      "table": "HRC_ARM_PROCESS_VL",
+      "column": "ACTIVE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ApprovalProcessPEOCompositeId",
+      "table": "HRC_ARM_PROCESS_VL",
+      "column": "COMPOSITE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ApprovalProcessPEOCreatedBy3",
+      "table": "HRC_ARM_PROCESS_VL",
+      "column": "CREATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ApprovalProcessPEOCreationDate4",
+      "table": "HRC_ARM_PROCESS_VL",
+      "column": "CREATION_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ApprovalProcessPEODescription",
+      "table": "HRC_ARM_PROCESS_VL",
+      "column": "DESCRIPTION",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ApprovalProcessPEOEnterpriseId",
+      "table": "HRC_ARM_PROCESS_VL",
+      "column": "ENTERPRISE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ApprovalProcessPEOLastUpdateDate3",
+      "table": "HRC_ARM_PROCESS_VL",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": true
+    },
+    {
+      "name": "ApprovalProcessPEOLastUpdateLogin3",
+      "table": "HRC_ARM_PROCESS_VL",
+      "column": "LAST_UPDATE_LOGIN",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ApprovalProcessPEOLastUpdatedBy3",
+      "table": "HRC_ARM_PROCESS_VL",
+      "column": "LAST_UPDATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ApprovalProcessPEOModuleId",
+      "table": "HRC_ARM_PROCESS_VL",
+      "column": "MODULE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ApprovalProcessPEOName",
+      "table": "HRC_ARM_PROCESS_VL",
+      "column": "NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ApprovalProcessPEOObjectVersionNumber2",
+      "table": "HRC_ARM_PROCESS_VL",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ApprovalProcessPEOProcessId",
+      "table": "HRC_ARM_PROCESS_VL",
+      "column": "PROCESS_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ApprovalProcessPEORuleFileName",
+      "table": "HRC_ARM_PROCESS_VL",
+      "column": "RULE_FILE_NAME",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ApprovalProcessPEOTaskFileName",
+      "table": "HRC_ARM_PROCESS_VL",
+      "column": "TASK_FILE_NAME",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ApprovalProcessPEOTxnModuleIdentifier",
+      "table": "HRC_ARM_PROCESS_VL",
+      "column": "TXN_MODULE_IDENTIFIER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ConsoleEntryPEOChangeEffectiveDate",
+      "table": "HRC_TXN_CONSOLE_ENTRY",
+      "column": "CHANGE_EFFECTIVE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ConsoleEntryPEOConsoleEntryId",
+      "table": "HRC_TXN_CONSOLE_ENTRY",
+      "column": "CONSOLE_ENTRY_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ConsoleEntryPEOConsoleTxnStatus",
+      "table": "HRC_TXN_CONSOLE_ENTRY",
+      "column": "CONSOLE_TXN_STATUS",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ConsoleEntryPEOCreatedBy",
+      "table": "HRC_TXN_CONSOLE_ENTRY",
+      "column": "CREATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ConsoleEntryPEOCreationDate",
+      "table": "HRC_TXN_CONSOLE_ENTRY",
+      "column": "CREATION_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ConsoleEntryPEOLastUpdateDate",
+      "table": "HRC_TXN_CONSOLE_ENTRY",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ConsoleEntryPEOLastUpdateLogin",
+      "table": "HRC_TXN_CONSOLE_ENTRY",
+      "column": "LAST_UPDATE_LOGIN",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ConsoleEntryPEOLastUpdatedBy",
+      "table": "HRC_TXN_CONSOLE_ENTRY",
+      "column": "LAST_UPDATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ConsoleEntryPEOObjectName",
+      "table": "HRC_TXN_CONSOLE_ENTRY",
+      "column": "OBJECT_NAME",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ConsoleEntryPEOObjectVersionNumber",
+      "table": "HRC_TXN_CONSOLE_ENTRY",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ConsoleEntryPEOProcessCategory",
+      "table": "HRC_TXN_CONSOLE_ENTRY",
+      "column": "PROCESS_CATEGORY",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ConsoleEntryPEOSrNumber",
+      "table": "HRC_TXN_CONSOLE_ENTRY",
+      "column": "SR_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ConsoleEntryPEOStatusCategory",
+      "table": "HRC_TXN_CONSOLE_ENTRY",
+      "column": "STATUS_CATEGORY",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ConsoleEntryPEOTaskApprovers",
+      "table": "HRC_TXN_CONSOLE_ENTRY",
+      "column": "TASK_APPROVERS",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ConsoleEntryPEOTaskId",
+      "table": "HRC_TXN_CONSOLE_ENTRY",
+      "column": "TASK_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ConsoleEntryPEOTaskOutcome",
+      "table": "HRC_TXN_CONSOLE_ENTRY",
+      "column": "TASK_OUTCOME",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ConsoleEntryPEOTaskState",
+      "table": "HRC_TXN_CONSOLE_ENTRY",
+      "column": "TASK_STATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ConsoleEntryPEOTransactionId",
+      "table": "HRC_TXN_CONSOLE_ENTRY",
+      "column": "TRANSACTION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ConsoleIssueAssignmentPEOAssignedTo",
+      "table": "HRC_CONSOLE_ISSUE_ASSIGNMENT",
+      "column": "ASSIGNED_TO",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ConsoleIssueAssignmentPEOConsoleTransactionId",
+      "table": "HRC_CONSOLE_ISSUE_ASSIGNMENT",
+      "column": "CONSOLE_TRANSACTION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ConsoleIssueAssignmentPEOCreatedBy",
+      "table": "HRC_CONSOLE_ISSUE_ASSIGNMENT",
+      "column": "CREATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ConsoleIssueAssignmentPEOCreationDate",
+      "table": "HRC_CONSOLE_ISSUE_ASSIGNMENT",
+      "column": "CREATION_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ConsoleIssueAssignmentPEOEnterpriseId",
+      "table": "HRC_CONSOLE_ISSUE_ASSIGNMENT",
+      "column": "ENTERPRISE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ConsoleIssueAssignmentPEOIssueAssignmentId",
+      "table": "HRC_CONSOLE_ISSUE_ASSIGNMENT",
+      "column": "ISSUE_ASSIGNMENT_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ConsoleIssueAssignmentPEOIssueId",
+      "table": "HRC_CONSOLE_ISSUE_ASSIGNMENT",
+      "column": "ISSUE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ConsoleIssueAssignmentPEOLastUpdateDate",
+      "table": "HRC_CONSOLE_ISSUE_ASSIGNMENT",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ConsoleIssueAssignmentPEOLastUpdateLogin",
+      "table": "HRC_CONSOLE_ISSUE_ASSIGNMENT",
+      "column": "LAST_UPDATE_LOGIN",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ConsoleIssueAssignmentPEOLastUpdatedBy",
+      "table": "HRC_CONSOLE_ISSUE_ASSIGNMENT",
+      "column": "LAST_UPDATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ConsoleIssueAssignmentPEOObjectVersionNumber",
+      "table": "HRC_CONSOLE_ISSUE_ASSIGNMENT",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ConsoleIssueAssignmentPEOPriority",
+      "table": "HRC_CONSOLE_ISSUE_ASSIGNMENT",
+      "column": "PRIORITY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ConsoleIssueAssignmentPEOTransactionId",
+      "table": "HRC_CONSOLE_ISSUE_ASSIGNMENT",
+      "column": "TRANSACTION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "FndConsoleIssuePEOAttribute10Varchar21",
+      "table": "FND_CONSOLE_ISSUE",
+      "column": "ATTRIBUTE10_VARCHAR2",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "FndConsoleIssuePEOAttribute11Varchar21",
+      "table": "FND_CONSOLE_ISSUE",
+      "column": "ATTRIBUTE11_VARCHAR2",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "FndConsoleIssuePEOAttribute12Varchar21",
+      "table": "FND_CONSOLE_ISSUE",
+      "column": "ATTRIBUTE12_VARCHAR2",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "FndConsoleIssuePEOAttribute13Varchar21",
+      "table": "FND_CONSOLE_ISSUE",
+      "column": "ATTRIBUTE13_VARCHAR2",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "FndConsoleIssuePEOAttribute14Varchar21",
+      "table": "FND_CONSOLE_ISSUE",
+      "column": "ATTRIBUTE14_VARCHAR2",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "FndConsoleIssuePEOAttribute15Varchar21",
+      "table": "FND_CONSOLE_ISSUE",
+      "column": "ATTRIBUTE15_VARCHAR2",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "FndConsoleIssuePEOAttribute1Varchar21",
+      "table": "FND_CONSOLE_ISSUE",
+      "column": "ATTRIBUTE1_VARCHAR2",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "FndConsoleIssuePEOAttribute2Varchar21",
+      "table": "FND_CONSOLE_ISSUE",
+      "column": "ATTRIBUTE2_VARCHAR2",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "FndConsoleIssuePEOAttribute3Varchar21",
+      "table": "FND_CONSOLE_ISSUE",
+      "column": "ATTRIBUTE3_VARCHAR2",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "FndConsoleIssuePEOAttribute4Varchar21",
+      "table": "FND_CONSOLE_ISSUE",
+      "column": "ATTRIBUTE4_VARCHAR2",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "FndConsoleIssuePEOAttribute5Varchar21",
+      "table": "FND_CONSOLE_ISSUE",
+      "column": "ATTRIBUTE5_VARCHAR2",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "FndConsoleIssuePEOAttribute6Varchar21",
+      "table": "FND_CONSOLE_ISSUE",
+      "column": "ATTRIBUTE6_VARCHAR2",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "FndConsoleIssuePEOAttribute7Varchar21",
+      "table": "FND_CONSOLE_ISSUE",
+      "column": "ATTRIBUTE7_VARCHAR2",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "FndConsoleIssuePEOAttribute8Varchar21",
+      "table": "FND_CONSOLE_ISSUE",
+      "column": "ATTRIBUTE8_VARCHAR2",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "FndConsoleIssuePEOAttribute9Varchar21",
+      "table": "FND_CONSOLE_ISSUE",
+      "column": "ATTRIBUTE9_VARCHAR2",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "FndConsoleIssuePEOAttributeCategory2",
+      "table": "FND_CONSOLE_ISSUE",
+      "column": "ATTRIBUTE_CATEGORY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "FndConsoleIssuePEOConsoleTransactionId1",
+      "table": "FND_CONSOLE_ISSUE",
+      "column": "CONSOLE_TRANSACTION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "FndConsoleIssuePEOCreatedBy5",
+      "table": "FND_CONSOLE_ISSUE",
+      "column": "CREATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "FndConsoleIssuePEOCreationDate3",
+      "table": "FND_CONSOLE_ISSUE",
+      "column": "CREATION_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "FndConsoleIssuePEOErrorCode",
+      "table": "FND_CONSOLE_ISSUE",
+      "column": "ERROR_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "FndConsoleIssuePEOFaultCode",
+      "table": "FND_CONSOLE_ISSUE",
+      "column": "FAULT_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "FndConsoleIssuePEOFaultId",
+      "table": "FND_CONSOLE_ISSUE",
+      "column": "FAULT_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "FndConsoleIssuePEOFaultPayload",
+      "table": "FND_CONSOLE_ISSUE",
+      "column": "FAULT_PAYLOAD",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "FndConsoleIssuePEOIssueActionCode",
+      "table": "FND_CONSOLE_ISSUE",
+      "column": "ISSUE_ACTION_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "FndConsoleIssuePEOIssueId",
+      "table": "FND_CONSOLE_ISSUE",
+      "column": "ISSUE_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "FndConsoleIssuePEOIssueStatusCode",
+      "table": "FND_CONSOLE_ISSUE",
+      "column": "ISSUE_STATUS_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "FndConsoleIssuePEOIssueTitle",
+      "table": "FND_CONSOLE_ISSUE",
+      "column": "ISSUE_TITLE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "FndConsoleIssuePEOIssueTypeCode",
+      "table": "FND_CONSOLE_ISSUE",
+      "column": "ISSUE_TYPE_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "FndConsoleIssuePEOLastUpdateDate4",
+      "table": "FND_CONSOLE_ISSUE",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": true
+    },
+    {
+      "name": "FndConsoleIssuePEOLastUpdateLogin4",
+      "table": "FND_CONSOLE_ISSUE",
+      "column": "LAST_UPDATE_LOGIN",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "FndConsoleIssuePEOLastUpdatedBy4",
+      "table": "FND_CONSOLE_ISSUE",
+      "column": "LAST_UPDATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "FndConsoleTransactionInfoPEOAttribute10Varchar2",
+      "table": "FND_CONSOLE_TRANSACTION_INFO",
+      "column": "ATTRIBUTE10_VARCHAR2",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "FndConsoleTransactionInfoPEOAttribute11Varchar2",
+      "table": "FND_CONSOLE_TRANSACTION_INFO",
+      "column": "ATTRIBUTE11_VARCHAR2",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "FndConsoleTransactionInfoPEOAttribute12Varchar2",
+      "table": "FND_CONSOLE_TRANSACTION_INFO",
+      "column": "ATTRIBUTE12_VARCHAR2",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "FndConsoleTransactionInfoPEOAttribute13Varchar2",
+      "table": "FND_CONSOLE_TRANSACTION_INFO",
+      "column": "ATTRIBUTE13_VARCHAR2",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "FndConsoleTransactionInfoPEOAttribute14Varchar2",
+      "table": "FND_CONSOLE_TRANSACTION_INFO",
+      "column": "ATTRIBUTE14_VARCHAR2",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "FndConsoleTransactionInfoPEOAttribute15Varchar2",
+      "table": "FND_CONSOLE_TRANSACTION_INFO",
+      "column": "ATTRIBUTE15_VARCHAR2",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "FndConsoleTransactionInfoPEOAttribute1Varchar2",
+      "table": "FND_CONSOLE_TRANSACTION_INFO",
+      "column": "ATTRIBUTE1_VARCHAR2",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "FndConsoleTransactionInfoPEOAttribute2Varchar2",
+      "table": "FND_CONSOLE_TRANSACTION_INFO",
+      "column": "ATTRIBUTE2_VARCHAR2",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "FndConsoleTransactionInfoPEOAttribute3Varchar2",
+      "table": "FND_CONSOLE_TRANSACTION_INFO",
+      "column": "ATTRIBUTE3_VARCHAR2",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "FndConsoleTransactionInfoPEOAttribute4Varchar2",
+      "table": "FND_CONSOLE_TRANSACTION_INFO",
+      "column": "ATTRIBUTE4_VARCHAR2",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "FndConsoleTransactionInfoPEOAttribute5Varchar2",
+      "table": "FND_CONSOLE_TRANSACTION_INFO",
+      "column": "ATTRIBUTE5_VARCHAR2",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "FndConsoleTransactionInfoPEOAttribute6Varchar2",
+      "table": "FND_CONSOLE_TRANSACTION_INFO",
+      "column": "ATTRIBUTE6_VARCHAR2",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "FndConsoleTransactionInfoPEOAttribute7Varchar2",
+      "table": "FND_CONSOLE_TRANSACTION_INFO",
+      "column": "ATTRIBUTE7_VARCHAR2",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "FndConsoleTransactionInfoPEOAttribute8Varchar2",
+      "table": "FND_CONSOLE_TRANSACTION_INFO",
+      "column": "ATTRIBUTE8_VARCHAR2",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "FndConsoleTransactionInfoPEOAttribute9Varchar2",
+      "table": "FND_CONSOLE_TRANSACTION_INFO",
+      "column": "ATTRIBUTE9_VARCHAR2",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "FndConsoleTransactionInfoPEOAttributeCategory1",
+      "table": "FND_CONSOLE_TRANSACTION_INFO",
+      "column": "ATTRIBUTE_CATEGORY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "FndConsoleTransactionInfoPEOConsoleTransactionId",
+      "table": "FND_CONSOLE_TRANSACTION_INFO",
+      "column": "CONSOLE_TRANSACTION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "FndConsoleTransactionInfoPEOCreatedBy2",
+      "table": "FND_CONSOLE_TRANSACTION_INFO",
+      "column": "CREATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "FndConsoleTransactionInfoPEOCreationDate2",
+      "table": "FND_CONSOLE_TRANSACTION_INFO",
+      "column": "CREATION_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "FndConsoleTransactionInfoPEOCustomAbortFlag",
+      "table": "FND_CONSOLE_TRANSACTION_INFO",
+      "column": "CUSTOM_ABORT_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "FndConsoleTransactionInfoPEODomainName",
+      "table": "FND_CONSOLE_TRANSACTION_INFO",
+      "column": "DOMAIN_NAME",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "FndConsoleTransactionInfoPEOEcid",
+      "table": "FND_CONSOLE_TRANSACTION_INFO",
+      "column": "ECID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "FndConsoleTransactionInfoPEOFamily",
+      "table": "FND_CONSOLE_TRANSACTION_INFO",
+      "column": "FAMILY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "FndConsoleTransactionInfoPEOLastUpdateDate2",
+      "table": "FND_CONSOLE_TRANSACTION_INFO",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": true
+    },
+    {
+      "name": "FndConsoleTransactionInfoPEOLastUpdateLogin2",
+      "table": "FND_CONSOLE_TRANSACTION_INFO",
+      "column": "LAST_UPDATE_LOGIN",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "FndConsoleTransactionInfoPEOLastUpdatedBy2",
+      "table": "FND_CONSOLE_TRANSACTION_INFO",
+      "column": "LAST_UPDATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "FndConsoleTransactionInfoPEOModuleComponentInstanceId",
+      "table": "FND_CONSOLE_TRANSACTION_INFO",
+      "column": "MODULE_COMPONENT_INSTANCE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "FndConsoleTransactionInfoPEOModuleComponentName",
+      "table": "FND_CONSOLE_TRANSACTION_INFO",
+      "column": "MODULE_COMPONENT_NAME",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "FndConsoleTransactionInfoPEOModuleComponentType",
+      "table": "FND_CONSOLE_TRANSACTION_INFO",
+      "column": "MODULE_COMPONENT_TYPE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "FndConsoleTransactionInfoPEOModuleInstanceDesc",
+      "table": "FND_CONSOLE_TRANSACTION_INFO",
+      "column": "MODULE_INSTANCE_DESC",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "FndConsoleTransactionInfoPEOModuleInstanceId",
+      "table": "FND_CONSOLE_TRANSACTION_INFO",
+      "column": "MODULE_INSTANCE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "FndConsoleTransactionInfoPEOModuleName",
+      "table": "FND_CONSOLE_TRANSACTION_INFO",
+      "column": "MODULE_NAME",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "FndConsoleTransactionInfoPEOModuleRevision",
+      "table": "FND_CONSOLE_TRANSACTION_INFO",
+      "column": "MODULE_REVISION",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "FndConsoleTransactionInfoPEOModuleType",
+      "table": "FND_CONSOLE_TRANSACTION_INFO",
+      "column": "MODULE_TYPE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "FndConsoleTransactionInfoPEOTransactionId2",
+      "table": "FND_CONSOLE_TRANSACTION_INFO",
+      "column": "TRANSACTION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "FndConsoleTransactionInfoPEOTransactionSequence",
+      "table": "FND_CONSOLE_TRANSACTION_INFO",
+      "column": "TRANSACTION_SEQUENCE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "FndConsoleTransactionInfoPEOTransactionTypeCode",
+      "table": "FND_CONSOLE_TRANSACTION_INFO",
+      "column": "TRANSACTION_TYPE_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "FndConsoleTransactionInfoPEOTransactionUserKey",
+      "table": "FND_CONSOLE_TRANSACTION_INFO",
+      "column": "TRANSACTION_USER_KEY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "HrcTxnDataPEOAttribute1",
+      "table": "HRC_TXN_DATA",
+      "column": "ATTRIBUTE1",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "HrcTxnDataPEOAttribute10",
+      "table": "HRC_TXN_DATA",
+      "column": "ATTRIBUTE10",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "HrcTxnDataPEOAttribute11",
+      "table": "HRC_TXN_DATA",
+      "column": "ATTRIBUTE11",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "HrcTxnDataPEOAttribute12",
+      "table": "HRC_TXN_DATA",
+      "column": "ATTRIBUTE12",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "HrcTxnDataPEOAttribute13",
+      "table": "HRC_TXN_DATA",
+      "column": "ATTRIBUTE13",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "HrcTxnDataPEOAttribute14",
+      "table": "HRC_TXN_DATA",
+      "column": "ATTRIBUTE14",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "HrcTxnDataPEOAttribute15",
+      "table": "HRC_TXN_DATA",
+      "column": "ATTRIBUTE15",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "HrcTxnDataPEOAttribute16",
+      "table": "HRC_TXN_DATA",
+      "column": "ATTRIBUTE16",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "HrcTxnDataPEOAttribute17",
+      "table": "HRC_TXN_DATA",
+      "column": "ATTRIBUTE17",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "HrcTxnDataPEOAttribute18",
+      "table": "HRC_TXN_DATA",
+      "column": "ATTRIBUTE18",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "HrcTxnDataPEOAttribute19",
+      "table": "HRC_TXN_DATA",
+      "column": "ATTRIBUTE19",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "HrcTxnDataPEOAttribute2",
+      "table": "HRC_TXN_DATA",
+      "column": "ATTRIBUTE2",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "HrcTxnDataPEOAttribute20",
+      "table": "HRC_TXN_DATA",
+      "column": "ATTRIBUTE20",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "HrcTxnDataPEOAttribute21",
+      "table": "HRC_TXN_DATA",
+      "column": "ATTRIBUTE21",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "HrcTxnDataPEOAttribute22",
+      "table": "HRC_TXN_DATA",
+      "column": "ATTRIBUTE22",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "HrcTxnDataPEOAttribute23",
+      "table": "HRC_TXN_DATA",
+      "column": "ATTRIBUTE23",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "HrcTxnDataPEOAttribute24",
+      "table": "HRC_TXN_DATA",
+      "column": "ATTRIBUTE24",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "HrcTxnDataPEOAttribute25",
+      "table": "HRC_TXN_DATA",
+      "column": "ATTRIBUTE25",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "HrcTxnDataPEOAttribute26",
+      "table": "HRC_TXN_DATA",
+      "column": "ATTRIBUTE26",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "HrcTxnDataPEOAttribute27",
+      "table": "HRC_TXN_DATA",
+      "column": "ATTRIBUTE27",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "HrcTxnDataPEOAttribute28",
+      "table": "HRC_TXN_DATA",
+      "column": "ATTRIBUTE28",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "HrcTxnDataPEOAttribute29",
+      "table": "HRC_TXN_DATA",
+      "column": "ATTRIBUTE29",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "HrcTxnDataPEOAttribute3",
+      "table": "HRC_TXN_DATA",
+      "column": "ATTRIBUTE3",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "HrcTxnDataPEOAttribute30",
+      "table": "HRC_TXN_DATA",
+      "column": "ATTRIBUTE30",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "HrcTxnDataPEOAttribute4",
+      "table": "HRC_TXN_DATA",
+      "column": "ATTRIBUTE4",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "HrcTxnDataPEOAttribute5",
+      "table": "HRC_TXN_DATA",
+      "column": "ATTRIBUTE5",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "HrcTxnDataPEOAttribute6",
+      "table": "HRC_TXN_DATA",
+      "column": "ATTRIBUTE6",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "HrcTxnDataPEOAttribute7",
+      "table": "HRC_TXN_DATA",
+      "column": "ATTRIBUTE7",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "HrcTxnDataPEOAttribute8",
+      "table": "HRC_TXN_DATA",
+      "column": "ATTRIBUTE8",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "HrcTxnDataPEOAttribute9",
+      "table": "HRC_TXN_DATA",
+      "column": "ATTRIBUTE9",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "HrcTxnDataPEOAttributeCategory",
+      "table": "HRC_TXN_DATA",
+      "column": "ATTRIBUTE_CATEGORY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "HrcTxnDataPEOCompletedDate",
+      "table": "HRC_TXN_DATA",
+      "column": "COMPLETED_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "HrcTxnDataPEOCreatedBy1",
+      "table": "HRC_TXN_DATA",
+      "column": "CREATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "HrcTxnDataPEOCreationDate1",
+      "table": "HRC_TXN_DATA",
+      "column": "CREATION_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "HrcTxnDataPEOCurrentApprover",
+      "table": "HRC_TXN_DATA",
+      "column": "CURRENT_APPROVER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "HrcTxnDataPEOEcid",
+      "table": "HRC_TXN_DATA",
+      "column": "ECID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "HrcTxnDataPEOEnterpriseId",
+      "table": "HRC_TXN_DATA",
+      "column": "ENTERPRISE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "HrcTxnDataPEOLastUpdateDate1",
+      "table": "HRC_TXN_DATA",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": true
+    },
+    {
+      "name": "HrcTxnDataPEOLastUpdateLogin1",
+      "table": "HRC_TXN_DATA",
+      "column": "LAST_UPDATE_LOGIN",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "HrcTxnDataPEOLastUpdatedBy1",
+      "table": "HRC_TXN_DATA",
+      "column": "LAST_UPDATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "HrcTxnDataPEOObjectVersionNumber1",
+      "table": "HRC_TXN_DATA",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "HrcTxnDataPEOState",
+      "table": "HRC_TXN_DATA",
+      "column": "STATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "HrcTxnDataPEOStatus",
+      "table": "HRC_TXN_DATA",
+      "column": "STATUS",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "HrcTxnDataPEOSubmittedBy",
+      "table": "HRC_TXN_DATA",
+      "column": "SUBMITTED_BY",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "HrcTxnDataPEOSubmittedDate",
+      "table": "HRC_TXN_DATA",
+      "column": "SUBMITTED_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "HrcTxnDataPEOTaskId",
+      "table": "HRC_TXN_DATA",
+      "column": "TASK_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "HrcTxnDataPEOTransactionDataId",
+      "table": "HRC_TXN_DATA",
+      "column": "TRANSACTION_DATA_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "HrcTxnDataPEOTransactionId1",
+      "table": "HRC_TXN_DATA",
+      "column": "TRANSACTION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "HrcTxnHeaderPEOApplicationId",
+      "table": "HRC_TXN_HEADER",
+      "column": "APPLICATION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "HrcTxnHeaderPEOCreatedBy",
+      "table": "HRC_TXN_HEADER",
+      "column": "CREATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "HrcTxnHeaderPEOCreationDate",
+      "table": "HRC_TXN_HEADER",
+      "column": "CREATION_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "HrcTxnHeaderPEOInitiatorUserId",
+      "table": "HRC_TXN_HEADER",
+      "column": "INITIATOR_USER_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "HrcTxnHeaderPEOLastUpdateDate",
+      "table": "HRC_TXN_HEADER",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": true
+    },
+    {
+      "name": "HrcTxnHeaderPEOLastUpdateLogin",
+      "table": "HRC_TXN_HEADER",
+      "column": "LAST_UPDATE_LOGIN",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "HrcTxnHeaderPEOLastUpdatedBy",
+      "table": "HRC_TXN_HEADER",
+      "column": "LAST_UPDATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "HrcTxnHeaderPEOModuleGroup",
+      "table": "HRC_TXN_HEADER",
+      "column": "MODULE_GROUP",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "HrcTxnHeaderPEOModuleIdentifier",
+      "table": "HRC_TXN_HEADER",
+      "column": "MODULE_IDENTIFIER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "HrcTxnHeaderPEOObject",
+      "table": "HRC_TXN_HEADER",
+      "column": "OBJECT",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "HrcTxnHeaderPEOObjectId",
+      "table": "HRC_TXN_HEADER",
+      "column": "OBJECT_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "HrcTxnHeaderPEOObjectVersionNumber",
+      "table": "HRC_TXN_HEADER",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "HrcTxnHeaderPEOParentTransactionId",
+      "table": "HRC_TXN_HEADER",
+      "column": "PARENT_TRANSACTION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "HrcTxnHeaderPEOProcessId",
+      "table": "HRC_TXN_HEADER",
+      "column": "PROCESS_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "HrcTxnHeaderPEOProcessOwner",
+      "table": "HRC_TXN_HEADER",
+      "column": "PROCESS_OWNER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "HrcTxnHeaderPEOReentryFunction",
+      "table": "HRC_TXN_HEADER",
+      "column": "REENTRY_FUNCTION",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "HrcTxnHeaderPEOSectionDisplayName",
+      "table": "HRC_TXN_HEADER",
+      "column": "SECTION_DISPLAY_NAME",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "HrcTxnHeaderPEOSubject",
+      "table": "HRC_TXN_HEADER",
+      "column": "SUBJECT",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "HrcTxnHeaderPEOSubjectId",
+      "table": "HRC_TXN_HEADER",
+      "column": "SUBJECT_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "HrcTxnHeaderPEOTransactionId",
+      "table": "HRC_TXN_HEADER",
+      "column": "TRANSACTION_ID",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    }
+  ],
+  "by_table": {
+    "HRC_ARM_PROCESS_VL": [
+      {
+        "attribute": "ApprovalProcessPEOActive",
+        "column": "ACTIVE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ApprovalProcessPEOCompositeId",
+        "column": "COMPOSITE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ApprovalProcessPEOCreatedBy3",
+        "column": "CREATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ApprovalProcessPEOCreationDate4",
+        "column": "CREATION_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ApprovalProcessPEODescription",
+        "column": "DESCRIPTION",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ApprovalProcessPEOEnterpriseId",
+        "column": "ENTERPRISE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ApprovalProcessPEOLastUpdateDate3",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ApprovalProcessPEOLastUpdateLogin3",
+        "column": "LAST_UPDATE_LOGIN",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ApprovalProcessPEOLastUpdatedBy3",
+        "column": "LAST_UPDATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ApprovalProcessPEOModuleId",
+        "column": "MODULE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ApprovalProcessPEOName",
+        "column": "NAME",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ApprovalProcessPEOObjectVersionNumber2",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ApprovalProcessPEOProcessId",
+        "column": "PROCESS_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ApprovalProcessPEORuleFileName",
+        "column": "RULE_FILE_NAME",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ApprovalProcessPEOTaskFileName",
+        "column": "TASK_FILE_NAME",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ApprovalProcessPEOTxnModuleIdentifier",
+        "column": "TXN_MODULE_IDENTIFIER",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "HRC_TXN_CONSOLE_ENTRY": [
+      {
+        "attribute": "ConsoleEntryPEOChangeEffectiveDate",
+        "column": "CHANGE_EFFECTIVE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ConsoleEntryPEOConsoleEntryId",
+        "column": "CONSOLE_ENTRY_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ConsoleEntryPEOConsoleTxnStatus",
+        "column": "CONSOLE_TXN_STATUS",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ConsoleEntryPEOCreatedBy",
+        "column": "CREATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ConsoleEntryPEOCreationDate",
+        "column": "CREATION_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ConsoleEntryPEOLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ConsoleEntryPEOLastUpdateLogin",
+        "column": "LAST_UPDATE_LOGIN",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ConsoleEntryPEOLastUpdatedBy",
+        "column": "LAST_UPDATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ConsoleEntryPEOObjectName",
+        "column": "OBJECT_NAME",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ConsoleEntryPEOObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ConsoleEntryPEOProcessCategory",
+        "column": "PROCESS_CATEGORY",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ConsoleEntryPEOSrNumber",
+        "column": "SR_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ConsoleEntryPEOStatusCategory",
+        "column": "STATUS_CATEGORY",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ConsoleEntryPEOTaskApprovers",
+        "column": "TASK_APPROVERS",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ConsoleEntryPEOTaskId",
+        "column": "TASK_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ConsoleEntryPEOTaskOutcome",
+        "column": "TASK_OUTCOME",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ConsoleEntryPEOTaskState",
+        "column": "TASK_STATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ConsoleEntryPEOTransactionId",
+        "column": "TRANSACTION_ID",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "HRC_CONSOLE_ISSUE_ASSIGNMENT": [
+      {
+        "attribute": "ConsoleIssueAssignmentPEOAssignedTo",
+        "column": "ASSIGNED_TO",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ConsoleIssueAssignmentPEOConsoleTransactionId",
+        "column": "CONSOLE_TRANSACTION_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ConsoleIssueAssignmentPEOCreatedBy",
+        "column": "CREATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ConsoleIssueAssignmentPEOCreationDate",
+        "column": "CREATION_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ConsoleIssueAssignmentPEOEnterpriseId",
+        "column": "ENTERPRISE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ConsoleIssueAssignmentPEOIssueAssignmentId",
+        "column": "ISSUE_ASSIGNMENT_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ConsoleIssueAssignmentPEOIssueId",
+        "column": "ISSUE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ConsoleIssueAssignmentPEOLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ConsoleIssueAssignmentPEOLastUpdateLogin",
+        "column": "LAST_UPDATE_LOGIN",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ConsoleIssueAssignmentPEOLastUpdatedBy",
+        "column": "LAST_UPDATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ConsoleIssueAssignmentPEOObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ConsoleIssueAssignmentPEOPriority",
+        "column": "PRIORITY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ConsoleIssueAssignmentPEOTransactionId",
+        "column": "TRANSACTION_ID",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "FND_CONSOLE_ISSUE": [
+      {
+        "attribute": "FndConsoleIssuePEOAttribute10Varchar21",
+        "column": "ATTRIBUTE10_VARCHAR2",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "FndConsoleIssuePEOAttribute11Varchar21",
+        "column": "ATTRIBUTE11_VARCHAR2",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "FndConsoleIssuePEOAttribute12Varchar21",
+        "column": "ATTRIBUTE12_VARCHAR2",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "FndConsoleIssuePEOAttribute13Varchar21",
+        "column": "ATTRIBUTE13_VARCHAR2",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "FndConsoleIssuePEOAttribute14Varchar21",
+        "column": "ATTRIBUTE14_VARCHAR2",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "FndConsoleIssuePEOAttribute15Varchar21",
+        "column": "ATTRIBUTE15_VARCHAR2",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "FndConsoleIssuePEOAttribute1Varchar21",
+        "column": "ATTRIBUTE1_VARCHAR2",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "FndConsoleIssuePEOAttribute2Varchar21",
+        "column": "ATTRIBUTE2_VARCHAR2",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "FndConsoleIssuePEOAttribute3Varchar21",
+        "column": "ATTRIBUTE3_VARCHAR2",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "FndConsoleIssuePEOAttribute4Varchar21",
+        "column": "ATTRIBUTE4_VARCHAR2",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "FndConsoleIssuePEOAttribute5Varchar21",
+        "column": "ATTRIBUTE5_VARCHAR2",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "FndConsoleIssuePEOAttribute6Varchar21",
+        "column": "ATTRIBUTE6_VARCHAR2",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "FndConsoleIssuePEOAttribute7Varchar21",
+        "column": "ATTRIBUTE7_VARCHAR2",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "FndConsoleIssuePEOAttribute8Varchar21",
+        "column": "ATTRIBUTE8_VARCHAR2",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "FndConsoleIssuePEOAttribute9Varchar21",
+        "column": "ATTRIBUTE9_VARCHAR2",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "FndConsoleIssuePEOAttributeCategory2",
+        "column": "ATTRIBUTE_CATEGORY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "FndConsoleIssuePEOConsoleTransactionId1",
+        "column": "CONSOLE_TRANSACTION_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "FndConsoleIssuePEOCreatedBy5",
+        "column": "CREATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "FndConsoleIssuePEOCreationDate3",
+        "column": "CREATION_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "FndConsoleIssuePEOErrorCode",
+        "column": "ERROR_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "FndConsoleIssuePEOFaultCode",
+        "column": "FAULT_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "FndConsoleIssuePEOFaultId",
+        "column": "FAULT_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "FndConsoleIssuePEOFaultPayload",
+        "column": "FAULT_PAYLOAD",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "FndConsoleIssuePEOIssueActionCode",
+        "column": "ISSUE_ACTION_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "FndConsoleIssuePEOIssueId",
+        "column": "ISSUE_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "FndConsoleIssuePEOIssueStatusCode",
+        "column": "ISSUE_STATUS_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "FndConsoleIssuePEOIssueTitle",
+        "column": "ISSUE_TITLE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "FndConsoleIssuePEOIssueTypeCode",
+        "column": "ISSUE_TYPE_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "FndConsoleIssuePEOLastUpdateDate4",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "FndConsoleIssuePEOLastUpdateLogin4",
+        "column": "LAST_UPDATE_LOGIN",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "FndConsoleIssuePEOLastUpdatedBy4",
+        "column": "LAST_UPDATED_BY",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "FND_CONSOLE_TRANSACTION_INFO": [
+      {
+        "attribute": "FndConsoleTransactionInfoPEOAttribute10Varchar2",
+        "column": "ATTRIBUTE10_VARCHAR2",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "FndConsoleTransactionInfoPEOAttribute11Varchar2",
+        "column": "ATTRIBUTE11_VARCHAR2",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "FndConsoleTransactionInfoPEOAttribute12Varchar2",
+        "column": "ATTRIBUTE12_VARCHAR2",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "FndConsoleTransactionInfoPEOAttribute13Varchar2",
+        "column": "ATTRIBUTE13_VARCHAR2",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "FndConsoleTransactionInfoPEOAttribute14Varchar2",
+        "column": "ATTRIBUTE14_VARCHAR2",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "FndConsoleTransactionInfoPEOAttribute15Varchar2",
+        "column": "ATTRIBUTE15_VARCHAR2",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "FndConsoleTransactionInfoPEOAttribute1Varchar2",
+        "column": "ATTRIBUTE1_VARCHAR2",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "FndConsoleTransactionInfoPEOAttribute2Varchar2",
+        "column": "ATTRIBUTE2_VARCHAR2",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "FndConsoleTransactionInfoPEOAttribute3Varchar2",
+        "column": "ATTRIBUTE3_VARCHAR2",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "FndConsoleTransactionInfoPEOAttribute4Varchar2",
+        "column": "ATTRIBUTE4_VARCHAR2",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "FndConsoleTransactionInfoPEOAttribute5Varchar2",
+        "column": "ATTRIBUTE5_VARCHAR2",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "FndConsoleTransactionInfoPEOAttribute6Varchar2",
+        "column": "ATTRIBUTE6_VARCHAR2",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "FndConsoleTransactionInfoPEOAttribute7Varchar2",
+        "column": "ATTRIBUTE7_VARCHAR2",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "FndConsoleTransactionInfoPEOAttribute8Varchar2",
+        "column": "ATTRIBUTE8_VARCHAR2",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "FndConsoleTransactionInfoPEOAttribute9Varchar2",
+        "column": "ATTRIBUTE9_VARCHAR2",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "FndConsoleTransactionInfoPEOAttributeCategory1",
+        "column": "ATTRIBUTE_CATEGORY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "FndConsoleTransactionInfoPEOConsoleTransactionId",
+        "column": "CONSOLE_TRANSACTION_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "FndConsoleTransactionInfoPEOCreatedBy2",
+        "column": "CREATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "FndConsoleTransactionInfoPEOCreationDate2",
+        "column": "CREATION_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "FndConsoleTransactionInfoPEOCustomAbortFlag",
+        "column": "CUSTOM_ABORT_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "FndConsoleTransactionInfoPEODomainName",
+        "column": "DOMAIN_NAME",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "FndConsoleTransactionInfoPEOEcid",
+        "column": "ECID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "FndConsoleTransactionInfoPEOFamily",
+        "column": "FAMILY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "FndConsoleTransactionInfoPEOLastUpdateDate2",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "FndConsoleTransactionInfoPEOLastUpdateLogin2",
+        "column": "LAST_UPDATE_LOGIN",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "FndConsoleTransactionInfoPEOLastUpdatedBy2",
+        "column": "LAST_UPDATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "FndConsoleTransactionInfoPEOModuleComponentInstanceId",
+        "column": "MODULE_COMPONENT_INSTANCE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "FndConsoleTransactionInfoPEOModuleComponentName",
+        "column": "MODULE_COMPONENT_NAME",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "FndConsoleTransactionInfoPEOModuleComponentType",
+        "column": "MODULE_COMPONENT_TYPE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "FndConsoleTransactionInfoPEOModuleInstanceDesc",
+        "column": "MODULE_INSTANCE_DESC",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "FndConsoleTransactionInfoPEOModuleInstanceId",
+        "column": "MODULE_INSTANCE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "FndConsoleTransactionInfoPEOModuleName",
+        "column": "MODULE_NAME",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "FndConsoleTransactionInfoPEOModuleRevision",
+        "column": "MODULE_REVISION",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "FndConsoleTransactionInfoPEOModuleType",
+        "column": "MODULE_TYPE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "FndConsoleTransactionInfoPEOTransactionId2",
+        "column": "TRANSACTION_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "FndConsoleTransactionInfoPEOTransactionSequence",
+        "column": "TRANSACTION_SEQUENCE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "FndConsoleTransactionInfoPEOTransactionTypeCode",
+        "column": "TRANSACTION_TYPE_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "FndConsoleTransactionInfoPEOTransactionUserKey",
+        "column": "TRANSACTION_USER_KEY",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "HRC_TXN_DATA": [
+      {
+        "attribute": "HrcTxnDataPEOAttribute1",
+        "column": "ATTRIBUTE1",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "HrcTxnDataPEOAttribute10",
+        "column": "ATTRIBUTE10",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "HrcTxnDataPEOAttribute11",
+        "column": "ATTRIBUTE11",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "HrcTxnDataPEOAttribute12",
+        "column": "ATTRIBUTE12",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "HrcTxnDataPEOAttribute13",
+        "column": "ATTRIBUTE13",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "HrcTxnDataPEOAttribute14",
+        "column": "ATTRIBUTE14",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "HrcTxnDataPEOAttribute15",
+        "column": "ATTRIBUTE15",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "HrcTxnDataPEOAttribute16",
+        "column": "ATTRIBUTE16",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "HrcTxnDataPEOAttribute17",
+        "column": "ATTRIBUTE17",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "HrcTxnDataPEOAttribute18",
+        "column": "ATTRIBUTE18",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "HrcTxnDataPEOAttribute19",
+        "column": "ATTRIBUTE19",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "HrcTxnDataPEOAttribute2",
+        "column": "ATTRIBUTE2",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "HrcTxnDataPEOAttribute20",
+        "column": "ATTRIBUTE20",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "HrcTxnDataPEOAttribute21",
+        "column": "ATTRIBUTE21",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "HrcTxnDataPEOAttribute22",
+        "column": "ATTRIBUTE22",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "HrcTxnDataPEOAttribute23",
+        "column": "ATTRIBUTE23",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "HrcTxnDataPEOAttribute24",
+        "column": "ATTRIBUTE24",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "HrcTxnDataPEOAttribute25",
+        "column": "ATTRIBUTE25",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "HrcTxnDataPEOAttribute26",
+        "column": "ATTRIBUTE26",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "HrcTxnDataPEOAttribute27",
+        "column": "ATTRIBUTE27",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "HrcTxnDataPEOAttribute28",
+        "column": "ATTRIBUTE28",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "HrcTxnDataPEOAttribute29",
+        "column": "ATTRIBUTE29",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "HrcTxnDataPEOAttribute3",
+        "column": "ATTRIBUTE3",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "HrcTxnDataPEOAttribute30",
+        "column": "ATTRIBUTE30",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "HrcTxnDataPEOAttribute4",
+        "column": "ATTRIBUTE4",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "HrcTxnDataPEOAttribute5",
+        "column": "ATTRIBUTE5",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "HrcTxnDataPEOAttribute6",
+        "column": "ATTRIBUTE6",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "HrcTxnDataPEOAttribute7",
+        "column": "ATTRIBUTE7",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "HrcTxnDataPEOAttribute8",
+        "column": "ATTRIBUTE8",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "HrcTxnDataPEOAttribute9",
+        "column": "ATTRIBUTE9",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "HrcTxnDataPEOAttributeCategory",
+        "column": "ATTRIBUTE_CATEGORY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "HrcTxnDataPEOCompletedDate",
+        "column": "COMPLETED_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "HrcTxnDataPEOCreatedBy1",
+        "column": "CREATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "HrcTxnDataPEOCreationDate1",
+        "column": "CREATION_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "HrcTxnDataPEOCurrentApprover",
+        "column": "CURRENT_APPROVER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "HrcTxnDataPEOEcid",
+        "column": "ECID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "HrcTxnDataPEOEnterpriseId",
+        "column": "ENTERPRISE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "HrcTxnDataPEOLastUpdateDate1",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "HrcTxnDataPEOLastUpdateLogin1",
+        "column": "LAST_UPDATE_LOGIN",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "HrcTxnDataPEOLastUpdatedBy1",
+        "column": "LAST_UPDATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "HrcTxnDataPEOObjectVersionNumber1",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "HrcTxnDataPEOState",
+        "column": "STATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "HrcTxnDataPEOStatus",
+        "column": "STATUS",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "HrcTxnDataPEOSubmittedBy",
+        "column": "SUBMITTED_BY",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "HrcTxnDataPEOSubmittedDate",
+        "column": "SUBMITTED_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "HrcTxnDataPEOTaskId",
+        "column": "TASK_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "HrcTxnDataPEOTransactionDataId",
+        "column": "TRANSACTION_DATA_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "HrcTxnDataPEOTransactionId1",
+        "column": "TRANSACTION_ID",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "HRC_TXN_HEADER": [
+      {
+        "attribute": "HrcTxnHeaderPEOApplicationId",
+        "column": "APPLICATION_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "HrcTxnHeaderPEOCreatedBy",
+        "column": "CREATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "HrcTxnHeaderPEOCreationDate",
+        "column": "CREATION_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "HrcTxnHeaderPEOInitiatorUserId",
+        "column": "INITIATOR_USER_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "HrcTxnHeaderPEOLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "HrcTxnHeaderPEOLastUpdateLogin",
+        "column": "LAST_UPDATE_LOGIN",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "HrcTxnHeaderPEOLastUpdatedBy",
+        "column": "LAST_UPDATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "HrcTxnHeaderPEOModuleGroup",
+        "column": "MODULE_GROUP",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "HrcTxnHeaderPEOModuleIdentifier",
+        "column": "MODULE_IDENTIFIER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "HrcTxnHeaderPEOObject",
+        "column": "OBJECT",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "HrcTxnHeaderPEOObjectId",
+        "column": "OBJECT_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "HrcTxnHeaderPEOObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "HrcTxnHeaderPEOParentTransactionId",
+        "column": "PARENT_TRANSACTION_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "HrcTxnHeaderPEOProcessId",
+        "column": "PROCESS_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "HrcTxnHeaderPEOProcessOwner",
+        "column": "PROCESS_OWNER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "HrcTxnHeaderPEOReentryFunction",
+        "column": "REENTRY_FUNCTION",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "HrcTxnHeaderPEOSectionDisplayName",
+        "column": "SECTION_DISPLAY_NAME",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "HrcTxnHeaderPEOSubject",
+        "column": "SUBJECT",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "HrcTxnHeaderPEOSubjectId",
+        "column": "SUBJECT_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "HrcTxnHeaderPEOTransactionId",
+        "column": "TRANSACTION_ID",
+        "bicc": true,
+        "pk": true
+      }
+    ]
+  }
+}

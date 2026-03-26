@@ -1,0 +1,553 @@
+{
+  "source": "gl_ledgers.md",
+  "source_hash": "54a228ee0f7cdb2aa61af6bb05308a56",
+  "translated_at": "2026-03-25",
+  "items": [
+    {
+      "id": 1,
+      "br": "Visão Geral",
+      "en": "Overview",
+      "es": "Vision General"
+    },
+    {
+      "id": 2,
+      "br": "Armazena a definição dos ledgers (livros contábeis) do General Ledger. É a tabela central de configuração do GL — define o plano de contas, moeda funcional, calendário contábil e método de subledger accounting para cada livro. Praticamente toda tabela transacional do GL referencia LEDGER_ID desta tabela. Suporta Primary Ledger, Secondary Ledger e Reporting Currency.",
+      "en": "Stores the definition of General Ledger ledgers (accounting books). This is the central GL configuration table — it defines the chart of accounts, functional currency, accounting calendar, and subledger accounting method for each book. Virtually every transactional GL table references LEDGER_ID from this table. Supports Primary Ledger, Secondary Ledger, and Reporting Currency.",
+      "es": "Almacena la definicion de los ledgers (libros contables) del General Ledger. Es la tabla central de configuracion del GL — define el plan de cuentas, moneda funcional, calendario contable y metodo de subledger accounting para cada libro. Practicamente toda tabla transaccional del GL referencia LEDGER_ID de esta tabla. Soporta Primary Ledger, Secondary Ledger y Reporting Currency."
+    },
+    {
+      "id": 3,
+      "br": "Tabela central do GL",
+      "en": "GL central table",
+      "es": "Tabla central del GL"
+    },
+    {
+      "id": 4,
+      "br": "Esta é a tabela mais referenciada do módulo GL. O LEDGER_ID é FK em [[gl_balances]], [[gl_je_headers]], [[gl_je_lines]], [[gl_periods]] e dezenas de outras tabelas do ERP.",
+      "en": "This is the most referenced table in the GL module. LEDGER_ID is an FK in [[gl_balances]], [[gl_je_headers]], [[gl_je_lines]], [[gl_periods]], and dozens of other ERP tables.",
+      "es": "Esta es la tabla mas referenciada del modulo GL. El LEDGER_ID es FK en [[gl_balances]], [[gl_je_headers]], [[gl_je_lines]], [[gl_periods]] y decenas de otras tablas del ERP."
+    },
+    {
+      "id": 5,
+      "br": "Propósito de Negócio",
+      "en": "Business Purpose",
+      "es": "Proposito de Negocio"
+    },
+    {
+      "id": 6,
+      "br": "Esta tabela é utilizada nos seguintes processos:",
+      "en": "This table is used in the following processes:",
+      "es": "Esta tabla se utiliza en los siguientes procesos:"
+    },
+    {
+      "id": 7,
+      "br": "Definição dos livros contábeis da organização (primary, secondary, reporting).",
+      "en": "Definition of the organization's accounting books (primary, secondary, reporting).",
+      "es": "Definicion de los libros contables de la organizacion (primary, secondary, reporting)."
+    },
+    {
+      "id": 8,
+      "br": "Suporte a múltiplos livros contábeis com diferentes planos de contas e moedas.",
+      "en": "Support for multiple accounting books with different charts of accounts and currencies.",
+      "es": "Soporte a multiples libros contables con diferentes planes de cuentas y monedas."
+    },
+    {
+      "id": 9,
+      "br": "Identificação dos ledgers para consolidação financeira.",
+      "en": "Identification of ledgers for financial consolidation.",
+      "es": "Identificacion de los ledgers para consolidacion financiera."
+    },
+    {
+      "id": 10,
+      "br": "Filtro obrigatório por ledger em todas as consultas contábeis.",
+      "en": "Mandatory ledger filter in all accounting queries.",
+      "es": "Filtro obligatorio por ledger en todas las consultas contables."
+    },
+    {
+      "id": 11,
+      "br": "Configuração do método de contabilização (Standard Accrual, Cash etc.).",
+      "en": "Configuration of the accounting method (Standard Accrual, Cash, etc.).",
+      "es": "Configuracion del metodo de contabilizacion (Standard Accrual, Cash, etc.)."
+    },
+    {
+      "id": 12,
+      "br": "Ledgers separados para IFRS vs BRGAAP quando necessário.",
+      "en": "Separate ledgers for IFRS vs BRGAAP when needed.",
+      "es": "Ledgers separados para IFRS vs BRGAAP cuando sea necesario."
+    },
+    {
+      "id": 13,
+      "br": "Colunas Principais",
+      "en": "Key Columns",
+      "es": "Columnas Principales"
+    },
+    {
+      "id": 14,
+      "br": "Confiança",
+      "en": "Confidence",
+      "es": "Confianza"
+    },
+    {
+      "id": 15,
+      "br": "Escala de 0% a 100% — grau de certeza da descrição gerada por IA com base na documentação oficial Oracle (OEDMF/BICC Release 13/25A).",
+      "en": "Scale from 0% to 100% — degree of certainty of the AI-generated description based on official Oracle documentation (OEDMF/BICC Release 13/25A).",
+      "es": "Escala de 0% a 100% — grado de certeza de la descripcion generada por IA con base en la documentacion oficial Oracle (OEDMF/BICC Release 13/25A)."
+    },
+    {
+      "id": 16,
+      "br": "- 🟢 81–100% — Coluna presente na documentação oficial Oracle; nome, tipo e descrição confirmados.",
+      "en": "- 🟢 81–100% — Column present in official Oracle documentation; name, type, and description confirmed.",
+      "es": "- 🟢 81–100% — Columna presente en la documentacion oficial Oracle; nombre, tipo y descripcion confirmados."
+    },
+    {
+      "id": 17,
+      "br": "- 🟡 51–80% — Coluna inferida por naming convention ou padrão Oracle; tipo exato pode variar.",
+      "en": "- 🟡 51–80% — Column inferred by naming convention or Oracle standard; exact type may vary.",
+      "es": "- 🟡 51–80% — Columna inferida por naming convention o estandar Oracle; tipo exacto puede variar."
+    },
+    {
+      "id": 18,
+      "br": "- 🔴 0–50% — Existência ou tipo incertos; pode não existir no release atual; validar no ambiente.",
+      "en": "- 🔴 0–50% — Uncertain existence or type; may not exist in the current release; validate in the environment.",
+      "es": "- 🔴 0–50% — Existencia o tipo inciertos; puede no existir en el release actual; validar en el ambiente."
+    },
+    {
+      "id": 19,
+      "br": "Coluna",
+      "en": "Column",
+      "es": "Columna"
+    },
+    {
+      "id": 20,
+      "br": "Tipo",
+      "en": "Type",
+      "es": "Tipo"
+    },
+    {
+      "id": 21,
+      "br": "Nulo?",
+      "en": "Nullable?",
+      "es": "Nulo?"
+    },
+    {
+      "id": 22,
+      "br": "Categoria",
+      "en": "Category",
+      "es": "Categoria"
+    },
+    {
+      "id": 23,
+      "br": "Descrição",
+      "en": "Description",
+      "es": "Descripcion"
+    },
+    {
+      "id": 24,
+      "br": "Identificador único do ledger",
+      "en": "Unique ledger identifier",
+      "es": "Identificador unico del ledger"
+    },
+    {
+      "id": 25,
+      "br": "Identificação",
+      "en": "Identification",
+      "es": "Identificacion"
+    },
+    {
+      "id": 26,
+      "br": "Nome do ledger (ex: \"Patria Primary Ledger\")",
+      "en": "Ledger name (e.g., \"Patria Primary Ledger\")",
+      "es": "Nombre del ledger (ej: \"Patria Primary Ledger\")"
+    },
+    {
+      "id": 27,
+      "br": "Nome curto/código do ledger",
+      "en": "Ledger short name/code",
+      "es": "Nombre corto/codigo del ledger"
+    },
+    {
+      "id": 28,
+      "br": "Descrição textual do ledger",
+      "en": "Textual description of the ledger",
+      "es": "Descripcion textual del ledger"
+    },
+    {
+      "id": 29,
+      "br": "Classificação",
+      "en": "Classification",
+      "es": "Clasificacion"
+    },
+    {
+      "id": 30,
+      "br": "Categoria: PRIMARY, SECONDARY, ALC (Reporting Currency), NONE",
+      "en": "Category: PRIMARY, SECONDARY, ALC (Reporting Currency), NONE",
+      "es": "Categoria: PRIMARY, SECONDARY, ALC (Reporting Currency), NONE"
+    },
+    {
+      "id": 31,
+      "br": "Tipo de objeto: L (Ledger), S (Ledger Set)",
+      "en": "Object type: L (Ledger), S (Ledger Set)",
+      "es": "Tipo de objeto: L (Ledger), S (Ledger Set)"
+    },
+    {
+      "id": 32,
+      "br": "ID da estrutura do plano de contas (Key Flexfield)",
+      "en": "Chart of accounts structure ID (Key Flexfield)",
+      "es": "ID de la estructura del plan de cuentas (Key Flexfield)"
+    },
+    {
+      "id": 33,
+      "br": "Moeda funcional do ledger (ex: BRL, USD)",
+      "en": "Ledger functional currency (e.g., BRL, USD)",
+      "es": "Moneda funcional del ledger (ej: BRL, USD)"
+    },
+    {
+      "id": 34,
+      "br": "Nome do calendário contábil (period set)",
+      "en": "Accounting calendar name (period set)",
+      "es": "Nombre del calendario contable (period set)"
+    },
+    {
+      "id": 35,
+      "br": "Tipo de período contábil (Month, Quarter, Year)",
+      "en": "Accounting period type (Month, Quarter, Year)",
+      "es": "Tipo de periodo contable (Month, Quarter, Year)"
+    },
+    {
+      "id": 36,
+      "br": "Período",
+      "en": "Period",
+      "es": "Periodo"
+    },
+    {
+      "id": 37,
+      "br": "Primeiro período contábil do ledger",
+      "en": "First accounting period of the ledger",
+      "es": "Primer periodo contable del ledger"
+    },
+    {
+      "id": 38,
+      "br": "CCID da conta de lucros/prejuízos acumulados (retained earnings)",
+      "en": "CCID of the retained earnings account",
+      "es": "CCID de la cuenta de ganancias/perdidas acumuladas (retained earnings)"
+    },
+    {
+      "id": 39,
+      "br": "Método de contabilização SLA (Standard Accrual, Cash etc.)",
+      "en": "SLA accounting method (Standard Accrual, Cash, etc.)",
+      "es": "Metodo de contabilizacion SLA (Standard Accrual, Cash, etc.)"
+    },
+    {
+      "id": 40,
+      "br": "Tipo do método SLA",
+      "en": "SLA method type",
+      "es": "Tipo del metodo SLA"
+    },
+    {
+      "id": 41,
+      "br": "Controle",
+      "en": "Control",
+      "es": "Control"
+    },
+    {
+      "id": 42,
+      "br": "Permite lançamentos em conta suspense quando desbalanceado (Y/N)",
+      "en": "Allows postings to suspense account when unbalanced (Y/N)",
+      "es": "Permite asientos en cuenta suspense cuando esta desbalanceado (Y/N)"
+    },
+    {
+      "id": 43,
+      "br": "Permite lançamentos intercompany (Y/N)",
+      "en": "Allows intercompany postings (Y/N)",
+      "es": "Permite asientos intercompany (Y/N)"
+    },
+    {
+      "id": 44,
+      "br": "Habilita saldos médios diários (Y/N)",
+      "en": "Enables daily average balances (Y/N)",
+      "es": "Habilita saldos promedio diarios (Y/N)"
+    },
+    {
+      "id": 45,
+      "br": "Habilita controle orçamentário (Y/N)",
+      "en": "Enables budgetary control (Y/N)",
+      "es": "Habilita control presupuestario (Y/N)"
+    },
+    {
+      "id": 46,
+      "br": "Requer journals de budget (Y/N)",
+      "en": "Requires budget journals (Y/N)",
+      "es": "Requiere journals de budget (Y/N)"
+    },
+    {
+      "id": 47,
+      "br": "Habilita workflow de aprovação de journals (Y/N)",
+      "en": "Enables journal approval workflow (Y/N)",
+      "es": "Habilita workflow de aprobacion de journals (Y/N)"
+    },
+    {
+      "id": 48,
+      "br": "Habilita cálculo automático de imposto (Y/N)",
+      "en": "Enables automatic tax calculation (Y/N)",
+      "es": "Habilita calculo automatico de impuesto (Y/N)"
+    },
+    {
+      "id": 49,
+      "br": "Indica se é ledger de consolidação (Y/N)",
+      "en": "Indicates whether it is a consolidation ledger (Y/N)",
+      "es": "Indica si es un ledger de consolidacion (Y/N)"
+    },
+    {
+      "id": 50,
+      "br": "Traduzir transações intercompany (Y/N)",
+      "en": "Translate intercompany transactions (Y/N)",
+      "es": "Traducir transacciones intercompany (Y/N)"
+    },
+    {
+      "id": 51,
+      "br": "Opção de balancing segment: A (All Values), I (Selected Values)",
+      "en": "Balancing segment option: A (All Values), I (Selected Values)",
+      "es": "Opcion de balancing segment: A (All Values), I (Selected Values)"
+    },
+    {
+      "id": 52,
+      "br": "Nome da coluna do balancing segment (ex: SEGMENT1)",
+      "en": "Balancing segment column name (e.g., SEGMENT1)",
+      "es": "Nombre de la columna del balancing segment (ej: SEGMENT1)"
+    },
+    {
+      "id": 53,
+      "br": "Nome da coluna do management segment (ex: SEGMENT3)",
+      "en": "Management segment column name (e.g., SEGMENT3)",
+      "es": "Nombre de la columna del management segment (ej: SEGMENT3)"
+    },
+    {
+      "id": 54,
+      "br": "Status de completude da configuração do ledger",
+      "en": "Ledger configuration completeness status",
+      "es": "Estado de completitud de la configuracion del ledger"
+    },
+    {
+      "id": 55,
+      "br": "ID da configuração do ledger",
+      "en": "Ledger configuration ID",
+      "es": "ID de la configuracion del ledger"
+    },
+    {
+      "id": 56,
+      "br": "Auditoria",
+      "en": "Audit",
+      "es": "Auditoria"
+    },
+    {
+      "id": 57,
+      "br": "Usuário que criou o registro",
+      "en": "User who created the record",
+      "es": "Usuario que creo el registro"
+    },
+    {
+      "id": 58,
+      "br": "Data/hora de criação",
+      "en": "Creation date/time",
+      "es": "Fecha/hora de creacion"
+    },
+    {
+      "id": 59,
+      "br": "Último usuário que alterou",
+      "en": "Last user who modified",
+      "es": "Ultimo usuario que modifico"
+    },
+    {
+      "id": 60,
+      "br": "Data/hora da última alteração",
+      "en": "Last modification date/time",
+      "es": "Fecha/hora de la ultima modificacion"
+    },
+    {
+      "id": 61,
+      "br": "Relacionamentos",
+      "en": "Relationships",
+      "es": "Relaciones"
+    },
+    {
+      "id": 62,
+      "br": "Tabelas-pai (FK de entrada)",
+      "en": "Parent tables (inbound FK)",
+      "es": "Tablas padre (FK de entrada)"
+    },
+    {
+      "id": 63,
+      "br": "conta de lucros acumulados",
+      "en": "retained earnings account",
+      "es": "cuenta de ganancias acumuladas"
+    },
+    {
+      "id": 64,
+      "br": "configuração do ledger",
+      "en": "ledger configuration",
+      "es": "configuracion del ledger"
+    },
+    {
+      "id": 65,
+      "br": "Tabelas-filha (FK de saída)",
+      "en": "Child tables (outbound FK)",
+      "es": "Tablas hija (FK de salida)"
+    },
+    {
+      "id": 66,
+      "br": "saldos contábeis",
+      "en": "accounting balances",
+      "es": "saldos contables"
+    },
+    {
+      "id": 67,
+      "br": "headers de journals",
+      "en": "journal headers",
+      "es": "headers de journals"
+    },
+    {
+      "id": 68,
+      "br": "linhas de journals",
+      "en": "journal lines",
+      "es": "lineas de journals"
+    },
+    {
+      "id": 69,
+      "br": "valores de segmento do ledger",
+      "en": "ledger segment values",
+      "es": "valores de segmento del ledger"
+    },
+    {
+      "id": 70,
+      "br": "atribuições de ledger sets",
+      "en": "ledger set assignments",
+      "es": "asignaciones de ledger sets"
+    },
+    {
+      "id": 71,
+      "br": "BSVs por entidade legal",
+      "en": "BSVs per legal entity",
+      "es": "BSVs por entidad legal"
+    },
+    {
+      "id": 72,
+      "br": "períodos contábeis",
+      "en": "accounting periods",
+      "es": "periodos contables"
+    },
+    {
+      "id": 73,
+      "br": "Uso Típico",
+      "en": "Typical Usage",
+      "es": "Uso Tipico"
+    },
+    {
+      "id": 74,
+      "br": "Listar todos os ledgers da organização",
+      "en": "List all organization ledgers",
+      "es": "Listar todos los ledgers de la organizacion"
+    },
+    {
+      "id": 75,
+      "br": "Identificar o primary ledger e seus secondary ledgers",
+      "en": "Identify the primary ledger and its secondary ledgers",
+      "es": "Identificar el primary ledger y sus secondary ledgers"
+    },
+    {
+      "id": 76,
+      "br": "Filtros comuns",
+      "en": "Common filters",
+      "es": "Filtros comunes"
+    },
+    {
+      "id": 77,
+      "br": "Apenas ledgers (não ledger sets)",
+      "en": "Only ledgers (not ledger sets)",
+      "es": "Solo ledgers (no ledger sets)"
+    },
+    {
+      "id": 78,
+      "br": "Primary ledger",
+      "en": "Primary ledger",
+      "es": "Primary ledger"
+    },
+    {
+      "id": 79,
+      "br": "Secondary ledger",
+      "en": "Secondary ledger",
+      "es": "Secondary ledger"
+    },
+    {
+      "id": 80,
+      "br": "Reporting currency (Automatic Ledger Currency)",
+      "en": "Reporting currency (Automatic Ledger Currency)",
+      "es": "Reporting currency (Automatic Ledger Currency)"
+    },
+    {
+      "id": 81,
+      "br": "Ledgers em Real",
+      "en": "Ledgers in BRL",
+      "es": "Ledgers en Real"
+    },
+    {
+      "id": 82,
+      "br": "Observações",
+      "en": "Notes",
+      "es": "Observaciones"
+    },
+    {
+      "id": 83,
+      "br": "LEDGER_ID é a FK mais comum do módulo GL — presente em praticamente todas as tabelas transacionais.",
+      "en": "LEDGER_ID is the most common FK in the GL module — present in virtually all transactional tables.",
+      "es": "LEDGER_ID es la FK mas comun del modulo GL — presente en practicamente todas las tablas transaccionales."
+    },
+    {
+      "id": 84,
+      "br": "LEDGER_CATEGORY_CODE distingue: PRIMARY (livro principal), SECONDARY (livro secundário com regras contábeis diferentes), ALC (moeda de reporte).",
+      "en": "LEDGER_CATEGORY_CODE distinguishes: PRIMARY (main book), SECONDARY (secondary book with different accounting rules), ALC (reporting currency).",
+      "es": "LEDGER_CATEGORY_CODE distingue: PRIMARY (libro principal), SECONDARY (libro secundario con reglas contables diferentes), ALC (moneda de reporte)."
+    },
+    {
+      "id": 85,
+      "br": "OBJECT_TYPE_CODE = 'S' indica um Ledger Set (agrupamento lógico de ledgers) — não é um ledger real, mas uma abstração para simplificar atribuições.",
+      "en": "OBJECT_TYPE_CODE = 'S' indicates a Ledger Set (logical grouping of ledgers) — it is not a real ledger, but an abstraction to simplify assignments.",
+      "es": "OBJECT_TYPE_CODE = 'S' indica un Ledger Set (agrupamiento logico de ledgers) — no es un ledger real, sino una abstraccion para simplificar asignaciones."
+    },
+    {
+      "id": 86,
+      "br": "O CHART_OF_ACCOUNTS_ID define qual estrutura de plano de contas o ledger usa — pode variar entre primary e secondary ledgers.",
+      "en": "CHART_OF_ACCOUNTS_ID defines which chart of accounts structure the ledger uses — it may vary between primary and secondary ledgers.",
+      "es": "CHART_OF_ACCOUNTS_ID define cual estructura de plan de cuentas usa el ledger — puede variar entre primary y secondary ledgers."
+    },
+    {
+      "id": 87,
+      "br": "RET_EARN_CODE_COMBINATION_ID aponta para a conta de lucros/prejuízos acumulados — usada no fechamento anual para transferir o resultado.",
+      "en": "RET_EARN_CODE_COMBINATION_ID points to the retained earnings account — used in annual closing to transfer the result.",
+      "es": "RET_EARN_CODE_COMBINATION_ID apunta a la cuenta de ganancias/perdidas acumuladas — usada en el cierre anual para transferir el resultado."
+    },
+    {
+      "id": 88,
+      "br": "A configuração do ledger é feita uma única vez no setup inicial — alterações posteriores têm impacto significativo.",
+      "en": "Ledger configuration is done once during initial setup — later changes have significant impact.",
+      "es": "La configuracion del ledger se hace una unica vez en el setup inicial — cambios posteriores tienen impacto significativo."
+    },
+    {
+      "id": 89,
+      "br": "Referências",
+      "en": "References",
+      "es": "Referencias"
+    },
+    {
+      "id": 90,
+      "br": "[Oracle Docs — GL_LEDGERS](https://docs.oracle.com/en/cloud/saas/financials/25a/oedmf/glledgers-25358.html)",
+      "en": "[Oracle Docs — GL_LEDGERS](https://docs.oracle.com/en/cloud/saas/financials/25a/oedmf/glledgers-25358.html)",
+      "es": "[Oracle Docs — GL_LEDGERS](https://docs.oracle.com/en/cloud/saas/financials/25a/oedmf/glledgers-25358.html)"
+    },
+    {
+      "id": 91,
+      "br": "gl-module-data-dictionary — Dossiê do módulo GL",
+      "en": "gl-module-data-dictionary — GL module dossier",
+      "es": "gl-module-data-dictionary — Dossier del modulo GL"
+    }
+  ]
+}

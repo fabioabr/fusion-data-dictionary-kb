@@ -1,0 +1,6705 @@
+{
+  "meta": {
+    "pvo_name": "PurchaseOrderHistoryPVO",
+    "full_path": "FscmTopModelAM.PrcPoPublicViewAM.PurchaseOrderHistoryPVO",
+    "module_path": "FscmTopModelAM.PrcPoPublicViewAM",
+    "module_code": "PO",
+    "type": "pvo",
+    "description": "Extrai o histórico completo de ações em ordens de compra (aprovação, rejeição, revisão, cancelamento), com datas, responsáveis e vínculos com requisições. Essencial para auditoria do ciclo de vida dos pedidos e análise de gargalos."
+  },
+  "stats": {
+    "total_attributes": 476,
+    "tables_count": 6,
+    "bicc_enabled": 19,
+    "bicc_pct": 4,
+    "pk_count": 5
+  },
+  "tables": [
+    "HZ_PARTIES",
+    "PER_PERSON_NAMES_F_V",
+    "POR_REQUISITION_HEADERS_ALL",
+    "PO_ACTION_HISTORY",
+    "PO_HEADERS_ALL",
+    "PO_VERSIONS"
+  ],
+  "attributes": [
+    {
+      "name": "Address1",
+      "table": "HZ_PARTIES",
+      "column": "ADDRESS1",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "Address2",
+      "table": "HZ_PARTIES",
+      "column": "ADDRESS2",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "Address3",
+      "table": "HZ_PARTIES",
+      "column": "ADDRESS3",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "Address4",
+      "table": "HZ_PARTIES",
+      "column": "ADDRESS4",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AnalysisFy",
+      "table": "HZ_PARTIES",
+      "column": "ANALYSIS_FY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "Attribute1",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "ATTRIBUTE1",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "Attribute10",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "ATTRIBUTE10",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "Attribute101",
+      "table": "HZ_PARTIES",
+      "column": "ATTRIBUTE10",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "Attribute11",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "ATTRIBUTE11",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "Attribute110",
+      "table": "HZ_PARTIES",
+      "column": "ATTRIBUTE1",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "Attribute111",
+      "table": "HZ_PARTIES",
+      "column": "ATTRIBUTE11",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "Attribute12",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "ATTRIBUTE12",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "Attribute121",
+      "table": "HZ_PARTIES",
+      "column": "ATTRIBUTE12",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "Attribute13",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "ATTRIBUTE13",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "Attribute131",
+      "table": "HZ_PARTIES",
+      "column": "ATTRIBUTE13",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "Attribute14",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "ATTRIBUTE14",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "Attribute141",
+      "table": "HZ_PARTIES",
+      "column": "ATTRIBUTE14",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "Attribute15",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "ATTRIBUTE15",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "Attribute151",
+      "table": "HZ_PARTIES",
+      "column": "ATTRIBUTE15",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "Attribute16",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "ATTRIBUTE16",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "Attribute161",
+      "table": "HZ_PARTIES",
+      "column": "ATTRIBUTE16",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "Attribute17",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "ATTRIBUTE17",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "Attribute171",
+      "table": "HZ_PARTIES",
+      "column": "ATTRIBUTE17",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "Attribute18",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "ATTRIBUTE18",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "Attribute181",
+      "table": "HZ_PARTIES",
+      "column": "ATTRIBUTE18",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "Attribute19",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "ATTRIBUTE19",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "Attribute191",
+      "table": "HZ_PARTIES",
+      "column": "ATTRIBUTE19",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "Attribute2",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "ATTRIBUTE2",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "Attribute20",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "ATTRIBUTE20",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "Attribute201",
+      "table": "HZ_PARTIES",
+      "column": "ATTRIBUTE20",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "Attribute21",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "ATTRIBUTE21",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "Attribute210",
+      "table": "HZ_PARTIES",
+      "column": "ATTRIBUTE2",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "Attribute211",
+      "table": "HZ_PARTIES",
+      "column": "ATTRIBUTE21",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "Attribute22",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "ATTRIBUTE22",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "Attribute221",
+      "table": "HZ_PARTIES",
+      "column": "ATTRIBUTE22",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "Attribute23",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "ATTRIBUTE23",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "Attribute231",
+      "table": "HZ_PARTIES",
+      "column": "ATTRIBUTE23",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "Attribute24",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "ATTRIBUTE24",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "Attribute241",
+      "table": "HZ_PARTIES",
+      "column": "ATTRIBUTE24",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "Attribute25",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "ATTRIBUTE25",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "Attribute251",
+      "table": "HZ_PARTIES",
+      "column": "ATTRIBUTE25",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "Attribute26",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "ATTRIBUTE26",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "Attribute261",
+      "table": "HZ_PARTIES",
+      "column": "ATTRIBUTE26",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "Attribute27",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "ATTRIBUTE27",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "Attribute271",
+      "table": "HZ_PARTIES",
+      "column": "ATTRIBUTE27",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "Attribute28",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "ATTRIBUTE28",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "Attribute281",
+      "table": "HZ_PARTIES",
+      "column": "ATTRIBUTE28",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "Attribute29",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "ATTRIBUTE29",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "Attribute291",
+      "table": "HZ_PARTIES",
+      "column": "ATTRIBUTE29",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "Attribute3",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "ATTRIBUTE3",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "Attribute30",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "ATTRIBUTE30",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "Attribute301",
+      "table": "HZ_PARTIES",
+      "column": "ATTRIBUTE30",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "Attribute31",
+      "table": "HZ_PARTIES",
+      "column": "ATTRIBUTE3",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "Attribute4",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "ATTRIBUTE4",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "Attribute41",
+      "table": "HZ_PARTIES",
+      "column": "ATTRIBUTE4",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "Attribute5",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "ATTRIBUTE5",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "Attribute51",
+      "table": "HZ_PARTIES",
+      "column": "ATTRIBUTE5",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "Attribute6",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "ATTRIBUTE6",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "Attribute61",
+      "table": "HZ_PARTIES",
+      "column": "ATTRIBUTE6",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "Attribute7",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "ATTRIBUTE7",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "Attribute71",
+      "table": "HZ_PARTIES",
+      "column": "ATTRIBUTE7",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "Attribute8",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "ATTRIBUTE8",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "Attribute81",
+      "table": "HZ_PARTIES",
+      "column": "ATTRIBUTE8",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "Attribute9",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "ATTRIBUTE9",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "Attribute91",
+      "table": "HZ_PARTIES",
+      "column": "ATTRIBUTE9",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AttributeCategory",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "ATTRIBUTE_CATEGORY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AttributeCategory1",
+      "table": "HZ_PARTIES",
+      "column": "ATTRIBUTE_CATEGORY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AttributeDate1",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "ATTRIBUTE_DATE1",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AttributeDate10",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "ATTRIBUTE_DATE10",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AttributeDate101",
+      "table": "HZ_PARTIES",
+      "column": "ATTRIBUTE_DATE10",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AttributeDate11",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "ATTRIBUTE_DATE11",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AttributeDate111",
+      "table": "HZ_PARTIES",
+      "column": "ATTRIBUTE_DATE11",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AttributeDate12",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "ATTRIBUTE_DATE12",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AttributeDate121",
+      "table": "HZ_PARTIES",
+      "column": "ATTRIBUTE_DATE12",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AttributeDate13",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "ATTRIBUTE_DATE13",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AttributeDate14",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "ATTRIBUTE_DATE14",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AttributeDate15",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "ATTRIBUTE_DATE15",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AttributeDate16",
+      "table": "HZ_PARTIES",
+      "column": "ATTRIBUTE_DATE1",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AttributeDate2",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "ATTRIBUTE_DATE2",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AttributeDate21",
+      "table": "HZ_PARTIES",
+      "column": "ATTRIBUTE_DATE2",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AttributeDate3",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "ATTRIBUTE_DATE3",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AttributeDate31",
+      "table": "HZ_PARTIES",
+      "column": "ATTRIBUTE_DATE3",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AttributeDate4",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "ATTRIBUTE_DATE4",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AttributeDate41",
+      "table": "HZ_PARTIES",
+      "column": "ATTRIBUTE_DATE4",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AttributeDate5",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "ATTRIBUTE_DATE5",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AttributeDate51",
+      "table": "HZ_PARTIES",
+      "column": "ATTRIBUTE_DATE5",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AttributeDate6",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "ATTRIBUTE_DATE6",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AttributeDate61",
+      "table": "HZ_PARTIES",
+      "column": "ATTRIBUTE_DATE6",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AttributeDate7",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "ATTRIBUTE_DATE7",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AttributeDate71",
+      "table": "HZ_PARTIES",
+      "column": "ATTRIBUTE_DATE7",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AttributeDate8",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "ATTRIBUTE_DATE8",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AttributeDate81",
+      "table": "HZ_PARTIES",
+      "column": "ATTRIBUTE_DATE8",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AttributeDate9",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "ATTRIBUTE_DATE9",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AttributeDate91",
+      "table": "HZ_PARTIES",
+      "column": "ATTRIBUTE_DATE9",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AttributeNumber1",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "ATTRIBUTE_NUMBER1",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AttributeNumber10",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "ATTRIBUTE_NUMBER10",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AttributeNumber101",
+      "table": "HZ_PARTIES",
+      "column": "ATTRIBUTE_NUMBER10",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AttributeNumber11",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "ATTRIBUTE_NUMBER11",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AttributeNumber110",
+      "table": "HZ_PARTIES",
+      "column": "ATTRIBUTE_NUMBER1",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AttributeNumber111",
+      "table": "HZ_PARTIES",
+      "column": "ATTRIBUTE_NUMBER11",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AttributeNumber12",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "ATTRIBUTE_NUMBER12",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AttributeNumber121",
+      "table": "HZ_PARTIES",
+      "column": "ATTRIBUTE_NUMBER12",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AttributeNumber13",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "ATTRIBUTE_NUMBER13",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AttributeNumber14",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "ATTRIBUTE_NUMBER14",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AttributeNumber15",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "ATTRIBUTE_NUMBER15",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AttributeNumber16",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "ATTRIBUTE_NUMBER16",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AttributeNumber17",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "ATTRIBUTE_NUMBER17",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AttributeNumber18",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "ATTRIBUTE_NUMBER18",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AttributeNumber19",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "ATTRIBUTE_NUMBER19",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AttributeNumber2",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "ATTRIBUTE_NUMBER2",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AttributeNumber20",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "ATTRIBUTE_NUMBER20",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AttributeNumber21",
+      "table": "HZ_PARTIES",
+      "column": "ATTRIBUTE_NUMBER2",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AttributeNumber3",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "ATTRIBUTE_NUMBER3",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AttributeNumber31",
+      "table": "HZ_PARTIES",
+      "column": "ATTRIBUTE_NUMBER3",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AttributeNumber4",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "ATTRIBUTE_NUMBER4",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AttributeNumber41",
+      "table": "HZ_PARTIES",
+      "column": "ATTRIBUTE_NUMBER4",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AttributeNumber5",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "ATTRIBUTE_NUMBER5",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AttributeNumber51",
+      "table": "HZ_PARTIES",
+      "column": "ATTRIBUTE_NUMBER5",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AttributeNumber6",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "ATTRIBUTE_NUMBER6",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AttributeNumber61",
+      "table": "HZ_PARTIES",
+      "column": "ATTRIBUTE_NUMBER6",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AttributeNumber7",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "ATTRIBUTE_NUMBER7",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AttributeNumber71",
+      "table": "HZ_PARTIES",
+      "column": "ATTRIBUTE_NUMBER7",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AttributeNumber8",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "ATTRIBUTE_NUMBER8",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AttributeNumber81",
+      "table": "HZ_PARTIES",
+      "column": "ATTRIBUTE_NUMBER8",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AttributeNumber9",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "ATTRIBUTE_NUMBER9",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AttributeNumber91",
+      "table": "HZ_PARTIES",
+      "column": "ATTRIBUTE_NUMBER9",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BusinessGroupId",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "BUSINESS_GROUP_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CategoryCode",
+      "table": "HZ_PARTIES",
+      "column": "CATEGORY_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CeoName",
+      "table": "HZ_PARTIES",
+      "column": "CEO_NAME",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CertReasonCode",
+      "table": "HZ_PARTIES",
+      "column": "CERT_REASON_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CertificationLevel",
+      "table": "HZ_PARTIES",
+      "column": "CERTIFICATION_LEVEL",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "City",
+      "table": "HZ_PARTIES",
+      "column": "CITY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "Comments",
+      "table": "HZ_PARTIES",
+      "column": "COMMENTS",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "Country",
+      "table": "HZ_PARTIES",
+      "column": "COUNTRY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "County",
+      "table": "HZ_PARTIES",
+      "column": "COUNTY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CreatedBy",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "CREATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CreatedBy1",
+      "table": "HZ_PARTIES",
+      "column": "CREATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CreatedByModule",
+      "table": "HZ_PARTIES",
+      "column": "CREATED_BY_MODULE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CreationDate",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "CREATION_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CreationDate1",
+      "table": "HZ_PARTIES",
+      "column": "CREATION_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CurrFyPotentialRevenue",
+      "table": "HZ_PARTIES",
+      "column": "CURR_FY_POTENTIAL_REVENUE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "DateOfBirth",
+      "table": "HZ_PARTIES",
+      "column": "DATE_OF_BIRTH",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "DisplayName",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "DISPLAY_NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "DunsNumberC",
+      "table": "HZ_PARTIES",
+      "column": "DUNS_NUMBER_C",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "EffectiveEndDate",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "EFFECTIVE_END_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "EffectiveStartDate",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "EFFECTIVE_START_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "EmailAddress",
+      "table": "HZ_PARTIES",
+      "column": "EMAIL_ADDRESS",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "EmployeesTotal",
+      "table": "HZ_PARTIES",
+      "column": "EMPLOYEES_TOTAL",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "FirstName",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "FIRST_NAME",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "FiscalYearendMonth",
+      "table": "HZ_PARTIES",
+      "column": "FISCAL_YEAREND_MONTH",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "FullName",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "FULL_NAME",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "Gender",
+      "table": "HZ_PARTIES",
+      "column": "GENDER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "GroupType",
+      "table": "HZ_PARTIES",
+      "column": "GROUP_TYPE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "GsaIndicatorFlag",
+      "table": "HZ_PARTIES",
+      "column": "GSA_INDICATOR_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "HomeCountry",
+      "table": "HZ_PARTIES",
+      "column": "HOME_COUNTRY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "Honors",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "HONORS",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "HqBranchInd",
+      "table": "HZ_PARTIES",
+      "column": "HQ_BRANCH_IND",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "IdenAddrLocationId",
+      "table": "HZ_PARTIES",
+      "column": "IDEN_ADDR_LOCATION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "IdenAddrPartySiteId",
+      "table": "HZ_PARTIES",
+      "column": "IDEN_ADDR_PARTY_SITE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InternalFlag",
+      "table": "HZ_PARTIES",
+      "column": "INTERNAL_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "JgzzFiscalCode",
+      "table": "HZ_PARTIES",
+      "column": "JGZZ_FISCAL_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "KnownAs",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "KNOWN_AS",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LanguageName",
+      "table": "HZ_PARTIES",
+      "column": "LANGUAGE_NAME",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LastName",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "LAST_NAME",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LastUpdateDate",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": true
+    },
+    {
+      "name": "LastUpdateDate1",
+      "table": "HZ_PARTIES",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": true
+    },
+    {
+      "name": "LastUpdateLogin",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "LAST_UPDATE_LOGIN",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LastUpdateLogin1",
+      "table": "HZ_PARTIES",
+      "column": "LAST_UPDATE_LOGIN",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LastUpdatedBy",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "LAST_UPDATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LastUpdatedBy1",
+      "table": "HZ_PARTIES",
+      "column": "LAST_UPDATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LegislationCode",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "LEGISLATION_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ListName",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "LIST_NAME",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "MaritalStatus",
+      "table": "HZ_PARTIES",
+      "column": "MARITAL_STATUS",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "MiddleNames",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "MIDDLE_NAMES",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "MilitaryRank",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "MILITARY_RANK",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "MissionStatement",
+      "table": "HZ_PARTIES",
+      "column": "MISSION_STATEMENT",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NamInformation1",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "NAM_INFORMATION1",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NamInformation10",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "NAM_INFORMATION10",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NamInformation11",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "NAM_INFORMATION11",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NamInformation12",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "NAM_INFORMATION12",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NamInformation13",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "NAM_INFORMATION13",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NamInformation14",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "NAM_INFORMATION14",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NamInformation15",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "NAM_INFORMATION15",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NamInformation16",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "NAM_INFORMATION16",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NamInformation17",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "NAM_INFORMATION17",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NamInformation18",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "NAM_INFORMATION18",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NamInformation19",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "NAM_INFORMATION19",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NamInformation2",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "NAM_INFORMATION2",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NamInformation20",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "NAM_INFORMATION20",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NamInformation21",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "NAM_INFORMATION21",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NamInformation22",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "NAM_INFORMATION22",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NamInformation23",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "NAM_INFORMATION23",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NamInformation24",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "NAM_INFORMATION24",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NamInformation25",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "NAM_INFORMATION25",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NamInformation26",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "NAM_INFORMATION26",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NamInformation27",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "NAM_INFORMATION27",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NamInformation28",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "NAM_INFORMATION28",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NamInformation29",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "NAM_INFORMATION29",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NamInformation3",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "NAM_INFORMATION3",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NamInformation30",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "NAM_INFORMATION30",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NamInformation4",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "NAM_INFORMATION4",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NamInformation5",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "NAM_INFORMATION5",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NamInformation6",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "NAM_INFORMATION6",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NamInformation7",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "NAM_INFORMATION7",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NamInformation8",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "NAM_INFORMATION8",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NamInformation9",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "NAM_INFORMATION9",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NamInformationCategory",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "NAM_INFORMATION_CATEGORY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NameType",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "NAME_TYPE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NextFyPotentialRevenue",
+      "table": "HZ_PARTIES",
+      "column": "NEXT_FY_POTENTIAL_REVENUE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ObjectId",
+      "table": "PO_ACTION_HISTORY",
+      "column": "OBJECT_ID",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    },
+    {
+      "name": "ObjectSubTypeCode",
+      "table": "PO_ACTION_HISTORY",
+      "column": "OBJECT_SUB_TYPE_CODE",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    },
+    {
+      "name": "ObjectTypeCode",
+      "table": "PO_ACTION_HISTORY",
+      "column": "OBJECT_TYPE_CODE",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    },
+    {
+      "name": "ObjectVersionNumber",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ObjectVersionNumber1",
+      "table": "HZ_PARTIES",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "OrderName",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "ORDER_NAME",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "OrigSystemReference",
+      "table": "HZ_PARTIES",
+      "column": "ORIG_SYSTEM_REFERENCE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartyId",
+      "table": "HZ_PARTIES",
+      "column": "PARTY_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartyName",
+      "table": "HZ_PARTIES",
+      "column": "PARTY_NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartyNumber",
+      "table": "HZ_PARTIES",
+      "column": "PARTY_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartyType",
+      "table": "HZ_PARTIES",
+      "column": "PARTY_TYPE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartyUniqueName",
+      "table": "HZ_PARTIES",
+      "column": "PARTY_UNIQUE_NAME",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonAcademicTitle",
+      "table": "HZ_PARTIES",
+      "column": "PERSON_ACADEMIC_TITLE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonFirstName",
+      "table": "HZ_PARTIES",
+      "column": "PERSON_FIRST_NAME",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonId",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "PERSON_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonLastName",
+      "table": "HZ_PARTIES",
+      "column": "PERSON_LAST_NAME",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonLastNamePrefix",
+      "table": "HZ_PARTIES",
+      "column": "PERSON_LAST_NAME_PREFIX",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonMiddleName",
+      "table": "HZ_PARTIES",
+      "column": "PERSON_MIDDLE_NAME",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonNameId",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "PERSON_NAME_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonNameSuffix",
+      "table": "HZ_PARTIES",
+      "column": "PERSON_NAME_SUFFIX",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonPreNameAdjunct",
+      "table": "HZ_PARTIES",
+      "column": "PERSON_PRE_NAME_ADJUNCT",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonPreviousLastName",
+      "table": "HZ_PARTIES",
+      "column": "PERSON_PREVIOUS_LAST_NAME",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonSecondLastName",
+      "table": "HZ_PARTIES",
+      "column": "PERSON_SECOND_LAST_NAME",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonTitle",
+      "table": "HZ_PARTIES",
+      "column": "PERSON_TITLE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonalAddressFlag",
+      "table": "HZ_PARTIES",
+      "column": "PERSONAL_ADDRESS_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonalEmailFlag",
+      "table": "HZ_PARTIES",
+      "column": "PERSONAL_EMAIL_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonalPhoneFlag",
+      "table": "HZ_PARTIES",
+      "column": "PERSONAL_PHONE_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PostalCode",
+      "table": "HZ_PARTIES",
+      "column": "POSTAL_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PreNameAdjunct",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "PRE_NAME_ADJUNCT",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PrefFunctionalCurrency",
+      "table": "HZ_PARTIES",
+      "column": "PREF_FUNCTIONAL_CURRENCY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PreferredContactMethod",
+      "table": "HZ_PARTIES",
+      "column": "PREFERRED_CONTACT_METHOD",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PreferredContactPersonId",
+      "table": "HZ_PARTIES",
+      "column": "PREFERRED_CONTACT_PERSON_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PreferredName",
+      "table": "HZ_PARTIES",
+      "column": "PREFERRED_NAME",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PreferredNameId",
+      "table": "HZ_PARTIES",
+      "column": "PREFERRED_NAME_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PreviousLastName",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "PREVIOUS_LAST_NAME",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PrimaryEmailContactPtId",
+      "table": "HZ_PARTIES",
+      "column": "PRIMARY_EMAIL_CONTACT_PT_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PrimaryPhoneAreaCode",
+      "table": "HZ_PARTIES",
+      "column": "PRIMARY_PHONE_AREA_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PrimaryPhoneContactPtId",
+      "table": "HZ_PARTIES",
+      "column": "PRIMARY_PHONE_CONTACT_PT_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PrimaryPhoneCountryCode",
+      "table": "HZ_PARTIES",
+      "column": "PRIMARY_PHONE_COUNTRY_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PrimaryPhoneExtension",
+      "table": "HZ_PARTIES",
+      "column": "PRIMARY_PHONE_EXTENSION",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PrimaryPhoneLineType",
+      "table": "HZ_PARTIES",
+      "column": "PRIMARY_PHONE_LINE_TYPE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PrimaryPhoneNumber",
+      "table": "HZ_PARTIES",
+      "column": "PRIMARY_PHONE_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PrimaryPhonePurpose",
+      "table": "HZ_PARTIES",
+      "column": "PRIMARY_PHONE_PURPOSE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PrimaryUrlContactPtId",
+      "table": "HZ_PARTIES",
+      "column": "PRIMARY_URL_CONTACT_PT_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "Province",
+      "table": "HZ_PARTIES",
+      "column": "PROVINCE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchasingActionHistoryActionCode",
+      "table": "PO_ACTION_HISTORY",
+      "column": "ACTION_CODE",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    },
+    {
+      "name": "PurchasingActionHistoryActionDate",
+      "table": "PO_ACTION_HISTORY",
+      "column": "ACTION_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchasingActionHistoryActionLevel",
+      "table": "PO_ACTION_HISTORY",
+      "column": "ACTION_LEVEL",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchasingActionHistoryAssignmentDate",
+      "table": "PO_ACTION_HISTORY",
+      "column": "ASSIGNMENT_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchasingActionHistoryCreatedBy",
+      "table": "PO_ACTION_HISTORY",
+      "column": "CREATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchasingActionHistoryCreationDate",
+      "table": "PO_ACTION_HISTORY",
+      "column": "CREATION_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchasingActionHistoryIdentificationKey",
+      "table": "PO_ACTION_HISTORY",
+      "column": "IDENTIFICATION_KEY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchasingActionHistoryLastUpdateDate",
+      "table": "PO_ACTION_HISTORY",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": true
+    },
+    {
+      "name": "PurchasingActionHistoryLastUpdateLogin",
+      "table": "PO_ACTION_HISTORY",
+      "column": "LAST_UPDATE_LOGIN",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchasingActionHistoryLastUpdatedBy",
+      "table": "PO_ACTION_HISTORY",
+      "column": "LAST_UPDATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchasingActionHistoryNote",
+      "table": "PO_ACTION_HISTORY",
+      "column": "NOTE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchasingActionHistoryObjectRevisionNum",
+      "table": "PO_ACTION_HISTORY",
+      "column": "OBJECT_REVISION_NUM",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchasingActionHistoryObjectVersionNumber",
+      "table": "PO_ACTION_HISTORY",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchasingActionHistoryOfflineCode",
+      "table": "PO_ACTION_HISTORY",
+      "column": "OFFLINE_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchasingActionHistoryPerformerId",
+      "table": "PO_ACTION_HISTORY",
+      "column": "PERFORMER_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchasingActionHistoryPoVersionId",
+      "table": "PO_ACTION_HISTORY",
+      "column": "PO_VERSION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchasingActionHistoryProgramDate",
+      "table": "PO_ACTION_HISTORY",
+      "column": "PROGRAM_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchasingActionHistoryRoleCode",
+      "table": "PO_ACTION_HISTORY",
+      "column": "ROLE_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchasingActionHistorySupplierAccessibleFlag",
+      "table": "PO_ACTION_HISTORY",
+      "column": "SUPPLIER_ACCESSIBLE_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchasingDocumentHeaderAcceptanceDueDate",
+      "table": "PO_HEADERS_ALL",
+      "column": "ACCEPTANCE_DUE_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchasingDocumentHeaderAcceptanceRequiredFlag",
+      "table": "PO_HEADERS_ALL",
+      "column": "ACCEPTANCE_REQUIRED_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchasingDocumentHeaderAcceptanceWithinDays",
+      "table": "PO_HEADERS_ALL",
+      "column": "ACCEPTANCE_WITHIN_DAYS",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchasingDocumentHeaderAgentId",
+      "table": "PO_HEADERS_ALL",
+      "column": "AGENT_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchasingDocumentHeaderAmountLimit",
+      "table": "PO_HEADERS_ALL",
+      "column": "AMOUNT_LIMIT",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchasingDocumentHeaderAmountReleased",
+      "table": "PO_HEADERS_ALL",
+      "column": "AMOUNT_RELEASED",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchasingDocumentHeaderApprovedDate",
+      "table": "PO_HEADERS_ALL",
+      "column": "APPROVED_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchasingDocumentHeaderApprovedFlag",
+      "table": "PO_HEADERS_ALL",
+      "column": "APPROVED_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchasingDocumentHeaderAutoSourcingFlag",
+      "table": "PO_HEADERS_ALL",
+      "column": "AUTO_SOURCING_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchasingDocumentHeaderBillToLocationId",
+      "table": "PO_HEADERS_ALL",
+      "column": "BILL_TO_LOCATION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchasingDocumentHeaderBilltoBuId",
+      "table": "PO_HEADERS_ALL",
+      "column": "BILLTO_BU_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchasingDocumentHeaderBlanketTotalAmount",
+      "table": "PO_HEADERS_ALL",
+      "column": "BLANKET_TOTAL_AMOUNT",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchasingDocumentHeaderCancelFlag",
+      "table": "PO_HEADERS_ALL",
+      "column": "CANCEL_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchasingDocumentHeaderCarrierId",
+      "table": "PO_HEADERS_ALL",
+      "column": "CARRIER_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchasingDocumentHeaderCatAdminAuthEnabledFlag",
+      "table": "PO_HEADERS_ALL",
+      "column": "CAT_ADMIN_AUTH_ENABLED_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchasingDocumentHeaderCbcAccountingDate",
+      "table": "PO_HEADERS_ALL",
+      "column": "CBC_ACCOUNTING_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchasingDocumentHeaderChangeRequestedBy",
+      "table": "PO_HEADERS_ALL",
+      "column": "CHANGE_REQUESTED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchasingDocumentHeaderChangeSummary",
+      "table": "PO_HEADERS_ALL",
+      "column": "CHANGE_SUMMARY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchasingDocumentHeaderClosedDate",
+      "table": "PO_HEADERS_ALL",
+      "column": "CLOSED_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchasingDocumentHeaderComments",
+      "table": "PO_HEADERS_ALL",
+      "column": "COMMENTS",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchasingDocumentHeaderConfirmingOrderFlag",
+      "table": "PO_HEADERS_ALL",
+      "column": "CONFIRMING_ORDER_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchasingDocumentHeaderConsignedConsumptionFlag",
+      "table": "PO_HEADERS_ALL",
+      "column": "CONSIGNED_CONSUMPTION_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchasingDocumentHeaderConsumeReqDemandFlag",
+      "table": "PO_HEADERS_ALL",
+      "column": "CONSUME_REQ_DEMAND_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchasingDocumentHeaderContermsArticlesUpdDate",
+      "table": "PO_HEADERS_ALL",
+      "column": "CONTERMS_ARTICLES_UPD_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchasingDocumentHeaderContermsDelivUpdDate",
+      "table": "PO_HEADERS_ALL",
+      "column": "CONTERMS_DELIV_UPD_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchasingDocumentHeaderContermsExistFlag",
+      "table": "PO_HEADERS_ALL",
+      "column": "CONTERMS_EXIST_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchasingDocumentHeaderCpaReference",
+      "table": "PO_HEADERS_ALL",
+      "column": "CPA_REFERENCE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchasingDocumentHeaderCreatedBy",
+      "table": "PO_HEADERS_ALL",
+      "column": "CREATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchasingDocumentHeaderCreatedLanguage",
+      "table": "PO_HEADERS_ALL",
+      "column": "CREATED_LANGUAGE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchasingDocumentHeaderCreationDate",
+      "table": "PO_HEADERS_ALL",
+      "column": "CREATION_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchasingDocumentHeaderCurrencyCode",
+      "table": "PO_HEADERS_ALL",
+      "column": "CURRENCY_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchasingDocumentHeaderCurrentVersionId",
+      "table": "PO_HEADERS_ALL",
+      "column": "CURRENT_VERSION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchasingDocumentHeaderDefaultTaxationCountry",
+      "table": "PO_HEADERS_ALL",
+      "column": "DEFAULT_TAXATION_COUNTRY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchasingDocumentHeaderDocumentCreationMethod",
+      "table": "PO_HEADERS_ALL",
+      "column": "DOCUMENT_CREATION_METHOD",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchasingDocumentHeaderDocumentStatus",
+      "table": "PO_HEADERS_ALL",
+      "column": "DOCUMENT_STATUS",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchasingDocumentHeaderEdiProcessedFlag",
+      "table": "PO_HEADERS_ALL",
+      "column": "EDI_PROCESSED_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchasingDocumentHeaderEdiProcessedStatus",
+      "table": "PO_HEADERS_ALL",
+      "column": "EDI_PROCESSED_STATUS",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchasingDocumentHeaderEmailAddress",
+      "table": "PO_HEADERS_ALL",
+      "column": "EMAIL_ADDRESS",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchasingDocumentHeaderEnabledFlag",
+      "table": "PO_HEADERS_ALL",
+      "column": "ENABLED_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchasingDocumentHeaderEncumbranceRequiredFlag",
+      "table": "PO_HEADERS_ALL",
+      "column": "ENCUMBRANCE_REQUIRED_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchasingDocumentHeaderEndDate",
+      "table": "PO_HEADERS_ALL",
+      "column": "END_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchasingDocumentHeaderFax",
+      "table": "PO_HEADERS_ALL",
+      "column": "FAX",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchasingDocumentHeaderFirmDate",
+      "table": "PO_HEADERS_ALL",
+      "column": "FIRM_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchasingDocumentHeaderFirmStatusLookupCode",
+      "table": "PO_HEADERS_ALL",
+      "column": "FIRM_STATUS_LOOKUP_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchasingDocumentHeaderFobLookupCode",
+      "table": "PO_HEADERS_ALL",
+      "column": "FOB_LOOKUP_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchasingDocumentHeaderFreightTermsLookupCode",
+      "table": "PO_HEADERS_ALL",
+      "column": "FREIGHT_TERMS_LOOKUP_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchasingDocumentHeaderFromHeaderId",
+      "table": "PO_HEADERS_ALL",
+      "column": "FROM_HEADER_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchasingDocumentHeaderFromTypeLookupCode",
+      "table": "PO_HEADERS_ALL",
+      "column": "FROM_TYPE_LOOKUP_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchasingDocumentHeaderFrozenFlag",
+      "table": "PO_HEADERS_ALL",
+      "column": "FROZEN_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchasingDocumentHeaderGenerateOrdersAutomatic",
+      "table": "PO_HEADERS_ALL",
+      "column": "GENERATE_ORDERS_AUTOMATIC",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchasingDocumentHeaderGovernmentContext",
+      "table": "PO_HEADERS_ALL",
+      "column": "GOVERNMENT_CONTEXT",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchasingDocumentHeaderGroupRequisitionLines",
+      "table": "PO_HEADERS_ALL",
+      "column": "GROUP_REQUISITION_LINES",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchasingDocumentHeaderGroupRequisitions",
+      "table": "PO_HEADERS_ALL",
+      "column": "GROUP_REQUISITIONS",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchasingDocumentHeaderInterfaceSourceCode",
+      "table": "PO_HEADERS_ALL",
+      "column": "INTERFACE_SOURCE_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchasingDocumentHeaderJobDefinitionName",
+      "table": "PO_HEADERS_ALL",
+      "column": "JOB_DEFINITION_NAME",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchasingDocumentHeaderJobDefinitionPackage",
+      "table": "PO_HEADERS_ALL",
+      "column": "JOB_DEFINITION_PACKAGE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchasingDocumentHeaderLastUpdateDate",
+      "table": "PO_HEADERS_ALL",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": true
+    },
+    {
+      "name": "PurchasingDocumentHeaderLastUpdateLogin",
+      "table": "PO_HEADERS_ALL",
+      "column": "LAST_UPDATE_LOGIN",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchasingDocumentHeaderLastUpdatedBy",
+      "table": "PO_HEADERS_ALL",
+      "column": "LAST_UPDATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchasingDocumentHeaderLastUpdatedProgram",
+      "table": "PO_HEADERS_ALL",
+      "column": "LAST_UPDATED_PROGRAM",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchasingDocumentHeaderMinReleaseAmount",
+      "table": "PO_HEADERS_ALL",
+      "column": "MIN_RELEASE_AMOUNT",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchasingDocumentHeaderNoteToAuthorizer",
+      "table": "PO_HEADERS_ALL",
+      "column": "NOTE_TO_AUTHORIZER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchasingDocumentHeaderNoteToReceiver",
+      "table": "PO_HEADERS_ALL",
+      "column": "NOTE_TO_RECEIVER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchasingDocumentHeaderNoteToVendor",
+      "table": "PO_HEADERS_ALL",
+      "column": "NOTE_TO_VENDOR",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchasingDocumentHeaderObjectVersionNumber",
+      "table": "PO_HEADERS_ALL",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchasingDocumentHeaderOrchestrationOrderFlag",
+      "table": "PO_HEADERS_ALL",
+      "column": "ORCHESTRATION_ORDER_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchasingDocumentHeaderPayOnCode",
+      "table": "PO_HEADERS_ALL",
+      "column": "PAY_ON_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchasingDocumentHeaderPcardId",
+      "table": "PO_HEADERS_ALL",
+      "column": "PCARD_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchasingDocumentHeaderPendingSignatureFlag",
+      "table": "PO_HEADERS_ALL",
+      "column": "PENDING_SIGNATURE_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchasingDocumentHeaderPoHeaderId",
+      "table": "PO_HEADERS_ALL",
+      "column": "PO_HEADER_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchasingDocumentHeaderPrcBuId",
+      "table": "PO_HEADERS_ALL",
+      "column": "PRC_BU_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchasingDocumentHeaderPriceUpdateTolerance",
+      "table": "PO_HEADERS_ALL",
+      "column": "PRICE_UPDATE_TOLERANCE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchasingDocumentHeaderProgramAppName",
+      "table": "PO_HEADERS_ALL",
+      "column": "PROGRAM_APP_NAME",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchasingDocumentHeaderProgramName",
+      "table": "PO_HEADERS_ALL",
+      "column": "PROGRAM_NAME",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchasingDocumentHeaderRate",
+      "table": "PO_HEADERS_ALL",
+      "column": "RATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchasingDocumentHeaderRateDate",
+      "table": "PO_HEADERS_ALL",
+      "column": "RATE_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchasingDocumentHeaderRateType",
+      "table": "PO_HEADERS_ALL",
+      "column": "RATE_TYPE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchasingDocumentHeaderReferenceNum",
+      "table": "PO_HEADERS_ALL",
+      "column": "REFERENCE_NUM",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchasingDocumentHeaderReleaseMethod",
+      "table": "PO_HEADERS_ALL",
+      "column": "RELEASE_METHOD",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchasingDocumentHeaderReqBuId",
+      "table": "PO_HEADERS_ALL",
+      "column": "REQ_BU_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchasingDocumentHeaderRequestId",
+      "table": "PO_HEADERS_ALL",
+      "column": "REQUEST_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchasingDocumentHeaderRetroPriceApplyUpdatesFlag",
+      "table": "PO_HEADERS_ALL",
+      "column": "RETRO_PRICE_APPLY_UPDATES_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchasingDocumentHeaderRetroPriceCommUpdatesFlag",
+      "table": "PO_HEADERS_ALL",
+      "column": "RETRO_PRICE_COMM_UPDATES_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchasingDocumentHeaderReviewAutogeneratedReleases",
+      "table": "PO_HEADERS_ALL",
+      "column": "REVIEW_AUTOGENERATED_RELEASES",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchasingDocumentHeaderRevisedDate",
+      "table": "PO_HEADERS_ALL",
+      "column": "REVISED_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchasingDocumentHeaderRevisionNum",
+      "table": "PO_HEADERS_ALL",
+      "column": "REVISION_NUM",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchasingDocumentHeaderSegment1",
+      "table": "PO_HEADERS_ALL",
+      "column": "SEGMENT1",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchasingDocumentHeaderSegment2",
+      "table": "PO_HEADERS_ALL",
+      "column": "SEGMENT2",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchasingDocumentHeaderSegment3",
+      "table": "PO_HEADERS_ALL",
+      "column": "SEGMENT3",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchasingDocumentHeaderSegment4",
+      "table": "PO_HEADERS_ALL",
+      "column": "SEGMENT4",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchasingDocumentHeaderSegment5",
+      "table": "PO_HEADERS_ALL",
+      "column": "SEGMENT5",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchasingDocumentHeaderShipToLocationId",
+      "table": "PO_HEADERS_ALL",
+      "column": "SHIP_TO_LOCATION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchasingDocumentHeaderShippingControl",
+      "table": "PO_HEADERS_ALL",
+      "column": "SHIPPING_CONTROL",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchasingDocumentHeaderSoldtoLeId",
+      "table": "PO_HEADERS_ALL",
+      "column": "SOLDTO_LE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchasingDocumentHeaderStartDate",
+      "table": "PO_HEADERS_ALL",
+      "column": "START_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchasingDocumentHeaderStyleId",
+      "table": "PO_HEADERS_ALL",
+      "column": "STYLE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchasingDocumentHeaderSubmitApprovalAutomatic",
+      "table": "PO_HEADERS_ALL",
+      "column": "SUBMIT_APPROVAL_AUTOMATIC",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchasingDocumentHeaderSubmitDate",
+      "table": "PO_HEADERS_ALL",
+      "column": "SUBMIT_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchasingDocumentHeaderSummaryFlag",
+      "table": "PO_HEADERS_ALL",
+      "column": "SUMMARY_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchasingDocumentHeaderSupplierNotifMethod",
+      "table": "PO_HEADERS_ALL",
+      "column": "SUPPLIER_NOTIF_METHOD",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchasingDocumentHeaderTaxAttributeUpdateCode",
+      "table": "PO_HEADERS_ALL",
+      "column": "TAX_ATTRIBUTE_UPDATE_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchasingDocumentHeaderTaxDocumentSubtype",
+      "table": "PO_HEADERS_ALL",
+      "column": "TAX_DOCUMENT_SUBTYPE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchasingDocumentHeaderTermsId",
+      "table": "PO_HEADERS_ALL",
+      "column": "TERMS_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchasingDocumentHeaderTypeLookupCode",
+      "table": "PO_HEADERS_ALL",
+      "column": "TYPE_LOOKUP_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchasingDocumentHeaderUpdateSourcingRulesFlag",
+      "table": "PO_HEADERS_ALL",
+      "column": "UPDATE_SOURCING_RULES_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchasingDocumentHeaderUseNeedByDate",
+      "table": "PO_HEADERS_ALL",
+      "column": "USE_NEED_BY_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchasingDocumentHeaderUseShipTo",
+      "table": "PO_HEADERS_ALL",
+      "column": "USE_SHIP_TO",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchasingDocumentHeaderVendorContactId",
+      "table": "PO_HEADERS_ALL",
+      "column": "VENDOR_CONTACT_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchasingDocumentHeaderVendorId",
+      "table": "PO_HEADERS_ALL",
+      "column": "VENDOR_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchasingDocumentHeaderVendorOrderNum",
+      "table": "PO_HEADERS_ALL",
+      "column": "VENDOR_ORDER_NUM",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchasingDocumentHeaderVendorSiteId",
+      "table": "PO_HEADERS_ALL",
+      "column": "VENDOR_SITE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchasingDocumentHeaderXmlChangeSendDate",
+      "table": "PO_HEADERS_ALL",
+      "column": "XML_CHANGE_SEND_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchasingDocumentHeaderXmlFlag",
+      "table": "PO_HEADERS_ALL",
+      "column": "XML_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchasingDocumentHeaderXmlSendDate",
+      "table": "PO_HEADERS_ALL",
+      "column": "XML_SEND_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchasingDocumentVersionAcceptedDate",
+      "table": "PO_VERSIONS",
+      "column": "ACCEPTED_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchasingDocumentVersionApprovedDate",
+      "table": "PO_VERSIONS",
+      "column": "APPROVED_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchasingDocumentVersionBaseVersionId",
+      "table": "PO_VERSIONS",
+      "column": "BASE_VERSION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchasingDocumentVersionCancelBackingReqFlag",
+      "table": "PO_VERSIONS",
+      "column": "CANCEL_BACKING_REQ_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchasingDocumentVersionCancelDocFlag",
+      "table": "PO_VERSIONS",
+      "column": "CANCEL_DOC_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchasingDocumentVersionChangeOrderDesc",
+      "table": "PO_VERSIONS",
+      "column": "CHANGE_ORDER_DESC",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchasingDocumentVersionChangeOrderStatus",
+      "table": "PO_VERSIONS",
+      "column": "CHANGE_ORDER_STATUS",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchasingDocumentVersionChangeOrderType",
+      "table": "PO_VERSIONS",
+      "column": "CHANGE_ORDER_TYPE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchasingDocumentVersionCoCanceledByRole",
+      "table": "PO_VERSIONS",
+      "column": "CO_CANCELED_BY_ROLE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchasingDocumentVersionCoCanceledByUserId",
+      "table": "PO_VERSIONS",
+      "column": "CO_CANCELED_BY_USER_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchasingDocumentVersionCoCanceledFlag",
+      "table": "PO_VERSIONS",
+      "column": "CO_CANCELED_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchasingDocumentVersionCoNum",
+      "table": "PO_VERSIONS",
+      "column": "CO_NUM",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchasingDocumentVersionCoSequence",
+      "table": "PO_VERSIONS",
+      "column": "CO_SEQUENCE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchasingDocumentVersionCommunicatedDate",
+      "table": "PO_VERSIONS",
+      "column": "COMMUNICATED_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchasingDocumentVersionCommunicatedToSupplier",
+      "table": "PO_VERSIONS",
+      "column": "COMMUNICATED_TO_SUPPLIER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchasingDocumentVersionCounterproposalFlag",
+      "table": "PO_VERSIONS",
+      "column": "COUNTERPROPOSAL_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchasingDocumentVersionCreatedBy",
+      "table": "PO_VERSIONS",
+      "column": "CREATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchasingDocumentVersionCreatedByProgramName",
+      "table": "PO_VERSIONS",
+      "column": "CREATED_BY_PROGRAM_NAME",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchasingDocumentVersionCreationDate",
+      "table": "PO_VERSIONS",
+      "column": "CREATION_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchasingDocumentVersionDocumentDate",
+      "table": "PO_VERSIONS",
+      "column": "DOCUMENT_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchasingDocumentVersionEsignEnvOwnerEmailId",
+      "table": "PO_VERSIONS",
+      "column": "ESIGN_ENV_OWNER_EMAIL_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchasingDocumentVersionEsignEnvelopeId",
+      "table": "PO_VERSIONS",
+      "column": "ESIGN_ENVELOPE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchasingDocumentVersionEsignEnvelopeOwner",
+      "table": "PO_VERSIONS",
+      "column": "ESIGN_ENVELOPE_OWNER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchasingDocumentVersionEsignEnvelopeStatus",
+      "table": "PO_VERSIONS",
+      "column": "ESIGN_ENVELOPE_STATUS",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchasingDocumentVersionExternalSystemFlag",
+      "table": "PO_VERSIONS",
+      "column": "EXTERNAL_SYSTEM_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchasingDocumentVersionFundsStatus",
+      "table": "PO_VERSIONS",
+      "column": "FUNDS_STATUS",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchasingDocumentVersionJobDefinitionName",
+      "table": "PO_VERSIONS",
+      "column": "JOB_DEFINITION_NAME",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchasingDocumentVersionJobDefinitionPackage",
+      "table": "PO_VERSIONS",
+      "column": "JOB_DEFINITION_PACKAGE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchasingDocumentVersionLastUpdateDate",
+      "table": "PO_VERSIONS",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": true
+    },
+    {
+      "name": "PurchasingDocumentVersionLastUpdateLogin",
+      "table": "PO_VERSIONS",
+      "column": "LAST_UPDATE_LOGIN",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchasingDocumentVersionLastUpdatedBy",
+      "table": "PO_VERSIONS",
+      "column": "LAST_UPDATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchasingDocumentVersionModifiedFlag",
+      "table": "PO_VERSIONS",
+      "column": "MODIFIED_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchasingDocumentVersionObjectVersionNumber",
+      "table": "PO_VERSIONS",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchasingDocumentVersionOnlineReportId",
+      "table": "PO_VERSIONS",
+      "column": "ONLINE_REPORT_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchasingDocumentVersionOriginatorId",
+      "table": "PO_VERSIONS",
+      "column": "ORIGINATOR_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchasingDocumentVersionOriginatorRole",
+      "table": "PO_VERSIONS",
+      "column": "ORIGINATOR_ROLE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchasingDocumentVersionPendingResponseRole",
+      "table": "PO_VERSIONS",
+      "column": "PENDING_RESPONSE_ROLE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchasingDocumentVersionPoHeaderId",
+      "table": "PO_VERSIONS",
+      "column": "PO_HEADER_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchasingDocumentVersionProcessedDate",
+      "table": "PO_VERSIONS",
+      "column": "PROCESSED_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchasingDocumentVersionProgramAppName",
+      "table": "PO_VERSIONS",
+      "column": "PROGRAM_APP_NAME",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchasingDocumentVersionProgramName",
+      "table": "PO_VERSIONS",
+      "column": "PROGRAM_NAME",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchasingDocumentVersionRejectedFlag",
+      "table": "PO_VERSIONS",
+      "column": "REJECTED_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchasingDocumentVersionRequestDate",
+      "table": "PO_VERSIONS",
+      "column": "REQUEST_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchasingDocumentVersionRequestId",
+      "table": "PO_VERSIONS",
+      "column": "REQUEST_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchasingDocumentVersionRevisionNum",
+      "table": "PO_VERSIONS",
+      "column": "REVISION_NUM",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchasingDocumentVersionSubmittedDate",
+      "table": "PO_VERSIONS",
+      "column": "SUBMITTED_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchasingDocumentVersionVersionId",
+      "table": "PO_VERSIONS",
+      "column": "VERSION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchasingDocumentVersionWithdrawnFlag",
+      "table": "PO_VERSIONS",
+      "column": "WITHDRAWN_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RequisitionHeaderActiveRequisitionFlag",
+      "table": "POR_REQUISITION_HEADERS_ALL",
+      "column": "ACTIVE_REQUISITION_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RequisitionHeaderApprovedDate",
+      "table": "POR_REQUISITION_HEADERS_ALL",
+      "column": "APPROVED_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RequisitionHeaderChangePendingFlag",
+      "table": "POR_REQUISITION_HEADERS_ALL",
+      "column": "CHANGE_PENDING_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RequisitionHeaderCreatedBy",
+      "table": "POR_REQUISITION_HEADERS_ALL",
+      "column": "CREATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RequisitionHeaderCreationDate",
+      "table": "POR_REQUISITION_HEADERS_ALL",
+      "column": "CREATION_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RequisitionHeaderDescription",
+      "table": "POR_REQUISITION_HEADERS_ALL",
+      "column": "DESCRIPTION",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RequisitionHeaderDocumentStatus",
+      "table": "POR_REQUISITION_HEADERS_ALL",
+      "column": "DOCUMENT_STATUS",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RequisitionHeaderEmergencyPoNumber",
+      "table": "POR_REQUISITION_HEADERS_ALL",
+      "column": "EMERGENCY_PO_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RequisitionHeaderEmergencyReqFlag",
+      "table": "POR_REQUISITION_HEADERS_ALL",
+      "column": "EMERGENCY_REQ_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RequisitionHeaderInterfaceSourceCode",
+      "table": "POR_REQUISITION_HEADERS_ALL",
+      "column": "INTERFACE_SOURCE_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RequisitionHeaderInterfaceSourceLineId",
+      "table": "POR_REQUISITION_HEADERS_ALL",
+      "column": "INTERFACE_SOURCE_LINE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RequisitionHeaderJobDefinitionName",
+      "table": "POR_REQUISITION_HEADERS_ALL",
+      "column": "JOB_DEFINITION_NAME",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RequisitionHeaderJobDefinitionPackage",
+      "table": "POR_REQUISITION_HEADERS_ALL",
+      "column": "JOB_DEFINITION_PACKAGE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RequisitionHeaderJustification",
+      "table": "POR_REQUISITION_HEADERS_ALL",
+      "column": "JUSTIFICATION",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RequisitionHeaderLastUpdateDate",
+      "table": "POR_REQUISITION_HEADERS_ALL",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": true
+    },
+    {
+      "name": "RequisitionHeaderLastUpdateLogin",
+      "table": "POR_REQUISITION_HEADERS_ALL",
+      "column": "LAST_UPDATE_LOGIN",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RequisitionHeaderLastUpdatedBy",
+      "table": "POR_REQUISITION_HEADERS_ALL",
+      "column": "LAST_UPDATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RequisitionHeaderModifyingApproverId",
+      "table": "POR_REQUISITION_HEADERS_ALL",
+      "column": "MODIFYING_APPROVER_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RequisitionHeaderObjectVersionNumber",
+      "table": "POR_REQUISITION_HEADERS_ALL",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RequisitionHeaderPcardId",
+      "table": "POR_REQUISITION_HEADERS_ALL",
+      "column": "PCARD_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RequisitionHeaderPrcBuId",
+      "table": "POR_REQUISITION_HEADERS_ALL",
+      "column": "PRC_BU_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RequisitionHeaderPreparerId",
+      "table": "POR_REQUISITION_HEADERS_ALL",
+      "column": "PREPARER_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RequisitionHeaderReqBuId",
+      "table": "POR_REQUISITION_HEADERS_ALL",
+      "column": "REQ_BU_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RequisitionHeaderRequestId",
+      "table": "POR_REQUISITION_HEADERS_ALL",
+      "column": "REQUEST_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RequisitionHeaderRequisitionHeaderId",
+      "table": "POR_REQUISITION_HEADERS_ALL",
+      "column": "REQUISITION_HEADER_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RequisitionHeaderRequisitionNumber",
+      "table": "POR_REQUISITION_HEADERS_ALL",
+      "column": "REQUISITION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RequisitionHeaderSubmissionDate",
+      "table": "POR_REQUISITION_HEADERS_ALL",
+      "column": "SUBMISSION_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "Salutation",
+      "table": "HZ_PARTIES",
+      "column": "SALUTATION",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SequenceNum",
+      "table": "PO_ACTION_HISTORY",
+      "column": "SEQUENCE_NUM",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    },
+    {
+      "name": "SicCode",
+      "table": "HZ_PARTIES",
+      "column": "SIC_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SicCodeType",
+      "table": "HZ_PARTIES",
+      "column": "SIC_CODE_TYPE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "State",
+      "table": "HZ_PARTIES",
+      "column": "STATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "Status",
+      "table": "HZ_PARTIES",
+      "column": "STATUS",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "Suffix",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "SUFFIX",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ThirdPartyFlag",
+      "table": "HZ_PARTIES",
+      "column": "THIRD_PARTY_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "Title",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "TITLE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TradingPartnerIdentifier",
+      "table": "HZ_PARTIES",
+      "column": "TRADING_PARTNER_IDENTIFIER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "Url",
+      "table": "HZ_PARTIES",
+      "column": "URL",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "UserGuid",
+      "table": "HZ_PARTIES",
+      "column": "USER_GUID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ValidatedFlag",
+      "table": "HZ_PARTIES",
+      "column": "VALIDATED_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "YearEstablished",
+      "table": "HZ_PARTIES",
+      "column": "YEAR_ESTABLISHED",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    }
+  ],
+  "by_table": {
+    "HZ_PARTIES": [
+      {
+        "attribute": "Address1",
+        "column": "ADDRESS1",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "Address2",
+        "column": "ADDRESS2",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "Address3",
+        "column": "ADDRESS3",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "Address4",
+        "column": "ADDRESS4",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AnalysisFy",
+        "column": "ANALYSIS_FY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "Attribute101",
+        "column": "ATTRIBUTE10",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "Attribute110",
+        "column": "ATTRIBUTE1",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "Attribute111",
+        "column": "ATTRIBUTE11",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "Attribute121",
+        "column": "ATTRIBUTE12",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "Attribute131",
+        "column": "ATTRIBUTE13",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "Attribute141",
+        "column": "ATTRIBUTE14",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "Attribute151",
+        "column": "ATTRIBUTE15",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "Attribute161",
+        "column": "ATTRIBUTE16",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "Attribute171",
+        "column": "ATTRIBUTE17",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "Attribute181",
+        "column": "ATTRIBUTE18",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "Attribute191",
+        "column": "ATTRIBUTE19",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "Attribute201",
+        "column": "ATTRIBUTE20",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "Attribute210",
+        "column": "ATTRIBUTE2",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "Attribute211",
+        "column": "ATTRIBUTE21",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "Attribute221",
+        "column": "ATTRIBUTE22",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "Attribute231",
+        "column": "ATTRIBUTE23",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "Attribute241",
+        "column": "ATTRIBUTE24",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "Attribute251",
+        "column": "ATTRIBUTE25",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "Attribute261",
+        "column": "ATTRIBUTE26",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "Attribute271",
+        "column": "ATTRIBUTE27",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "Attribute281",
+        "column": "ATTRIBUTE28",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "Attribute291",
+        "column": "ATTRIBUTE29",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "Attribute301",
+        "column": "ATTRIBUTE30",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "Attribute31",
+        "column": "ATTRIBUTE3",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "Attribute41",
+        "column": "ATTRIBUTE4",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "Attribute51",
+        "column": "ATTRIBUTE5",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "Attribute61",
+        "column": "ATTRIBUTE6",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "Attribute71",
+        "column": "ATTRIBUTE7",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "Attribute81",
+        "column": "ATTRIBUTE8",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "Attribute91",
+        "column": "ATTRIBUTE9",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AttributeCategory1",
+        "column": "ATTRIBUTE_CATEGORY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AttributeDate101",
+        "column": "ATTRIBUTE_DATE10",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AttributeDate111",
+        "column": "ATTRIBUTE_DATE11",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AttributeDate121",
+        "column": "ATTRIBUTE_DATE12",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AttributeDate16",
+        "column": "ATTRIBUTE_DATE1",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AttributeDate21",
+        "column": "ATTRIBUTE_DATE2",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AttributeDate31",
+        "column": "ATTRIBUTE_DATE3",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AttributeDate41",
+        "column": "ATTRIBUTE_DATE4",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AttributeDate51",
+        "column": "ATTRIBUTE_DATE5",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AttributeDate61",
+        "column": "ATTRIBUTE_DATE6",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AttributeDate71",
+        "column": "ATTRIBUTE_DATE7",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AttributeDate81",
+        "column": "ATTRIBUTE_DATE8",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AttributeDate91",
+        "column": "ATTRIBUTE_DATE9",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AttributeNumber101",
+        "column": "ATTRIBUTE_NUMBER10",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AttributeNumber110",
+        "column": "ATTRIBUTE_NUMBER1",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AttributeNumber111",
+        "column": "ATTRIBUTE_NUMBER11",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AttributeNumber121",
+        "column": "ATTRIBUTE_NUMBER12",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AttributeNumber21",
+        "column": "ATTRIBUTE_NUMBER2",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AttributeNumber31",
+        "column": "ATTRIBUTE_NUMBER3",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AttributeNumber41",
+        "column": "ATTRIBUTE_NUMBER4",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AttributeNumber51",
+        "column": "ATTRIBUTE_NUMBER5",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AttributeNumber61",
+        "column": "ATTRIBUTE_NUMBER6",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AttributeNumber71",
+        "column": "ATTRIBUTE_NUMBER7",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AttributeNumber81",
+        "column": "ATTRIBUTE_NUMBER8",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AttributeNumber91",
+        "column": "ATTRIBUTE_NUMBER9",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CategoryCode",
+        "column": "CATEGORY_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CeoName",
+        "column": "CEO_NAME",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CertReasonCode",
+        "column": "CERT_REASON_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CertificationLevel",
+        "column": "CERTIFICATION_LEVEL",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "City",
+        "column": "CITY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "Comments",
+        "column": "COMMENTS",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "Country",
+        "column": "COUNTRY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "County",
+        "column": "COUNTY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CreatedBy1",
+        "column": "CREATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CreatedByModule",
+        "column": "CREATED_BY_MODULE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CreationDate1",
+        "column": "CREATION_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CurrFyPotentialRevenue",
+        "column": "CURR_FY_POTENTIAL_REVENUE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "DateOfBirth",
+        "column": "DATE_OF_BIRTH",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "DunsNumberC",
+        "column": "DUNS_NUMBER_C",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "EmailAddress",
+        "column": "EMAIL_ADDRESS",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "EmployeesTotal",
+        "column": "EMPLOYEES_TOTAL",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "FiscalYearendMonth",
+        "column": "FISCAL_YEAREND_MONTH",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "Gender",
+        "column": "GENDER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "GroupType",
+        "column": "GROUP_TYPE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "GsaIndicatorFlag",
+        "column": "GSA_INDICATOR_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "HomeCountry",
+        "column": "HOME_COUNTRY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "HqBranchInd",
+        "column": "HQ_BRANCH_IND",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "IdenAddrLocationId",
+        "column": "IDEN_ADDR_LOCATION_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "IdenAddrPartySiteId",
+        "column": "IDEN_ADDR_PARTY_SITE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InternalFlag",
+        "column": "INTERNAL_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "JgzzFiscalCode",
+        "column": "JGZZ_FISCAL_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "LanguageName",
+        "column": "LANGUAGE_NAME",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "LastUpdateDate1",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "LastUpdateLogin1",
+        "column": "LAST_UPDATE_LOGIN",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "LastUpdatedBy1",
+        "column": "LAST_UPDATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "MaritalStatus",
+        "column": "MARITAL_STATUS",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "MissionStatement",
+        "column": "MISSION_STATEMENT",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "NextFyPotentialRevenue",
+        "column": "NEXT_FY_POTENTIAL_REVENUE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ObjectVersionNumber1",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "OrigSystemReference",
+        "column": "ORIG_SYSTEM_REFERENCE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PartyId",
+        "column": "PARTY_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PartyName",
+        "column": "PARTY_NAME",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PartyNumber",
+        "column": "PARTY_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PartyType",
+        "column": "PARTY_TYPE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PartyUniqueName",
+        "column": "PARTY_UNIQUE_NAME",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PersonAcademicTitle",
+        "column": "PERSON_ACADEMIC_TITLE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PersonFirstName",
+        "column": "PERSON_FIRST_NAME",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PersonLastName",
+        "column": "PERSON_LAST_NAME",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PersonLastNamePrefix",
+        "column": "PERSON_LAST_NAME_PREFIX",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PersonMiddleName",
+        "column": "PERSON_MIDDLE_NAME",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PersonNameSuffix",
+        "column": "PERSON_NAME_SUFFIX",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PersonPreNameAdjunct",
+        "column": "PERSON_PRE_NAME_ADJUNCT",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PersonPreviousLastName",
+        "column": "PERSON_PREVIOUS_LAST_NAME",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PersonSecondLastName",
+        "column": "PERSON_SECOND_LAST_NAME",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PersonTitle",
+        "column": "PERSON_TITLE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PersonalAddressFlag",
+        "column": "PERSONAL_ADDRESS_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PersonalEmailFlag",
+        "column": "PERSONAL_EMAIL_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PersonalPhoneFlag",
+        "column": "PERSONAL_PHONE_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PostalCode",
+        "column": "POSTAL_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PrefFunctionalCurrency",
+        "column": "PREF_FUNCTIONAL_CURRENCY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PreferredContactMethod",
+        "column": "PREFERRED_CONTACT_METHOD",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PreferredContactPersonId",
+        "column": "PREFERRED_CONTACT_PERSON_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PreferredName",
+        "column": "PREFERRED_NAME",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PreferredNameId",
+        "column": "PREFERRED_NAME_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PrimaryEmailContactPtId",
+        "column": "PRIMARY_EMAIL_CONTACT_PT_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PrimaryPhoneAreaCode",
+        "column": "PRIMARY_PHONE_AREA_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PrimaryPhoneContactPtId",
+        "column": "PRIMARY_PHONE_CONTACT_PT_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PrimaryPhoneCountryCode",
+        "column": "PRIMARY_PHONE_COUNTRY_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PrimaryPhoneExtension",
+        "column": "PRIMARY_PHONE_EXTENSION",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PrimaryPhoneLineType",
+        "column": "PRIMARY_PHONE_LINE_TYPE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PrimaryPhoneNumber",
+        "column": "PRIMARY_PHONE_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PrimaryPhonePurpose",
+        "column": "PRIMARY_PHONE_PURPOSE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PrimaryUrlContactPtId",
+        "column": "PRIMARY_URL_CONTACT_PT_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "Province",
+        "column": "PROVINCE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "Salutation",
+        "column": "SALUTATION",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "SicCode",
+        "column": "SIC_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "SicCodeType",
+        "column": "SIC_CODE_TYPE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "State",
+        "column": "STATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "Status",
+        "column": "STATUS",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ThirdPartyFlag",
+        "column": "THIRD_PARTY_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TradingPartnerIdentifier",
+        "column": "TRADING_PARTNER_IDENTIFIER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "Url",
+        "column": "URL",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "UserGuid",
+        "column": "USER_GUID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ValidatedFlag",
+        "column": "VALIDATED_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "YearEstablished",
+        "column": "YEAR_ESTABLISHED",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "PER_PERSON_NAMES_F_V": [
+      {
+        "attribute": "Attribute1",
+        "column": "ATTRIBUTE1",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "Attribute10",
+        "column": "ATTRIBUTE10",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "Attribute11",
+        "column": "ATTRIBUTE11",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "Attribute12",
+        "column": "ATTRIBUTE12",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "Attribute13",
+        "column": "ATTRIBUTE13",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "Attribute14",
+        "column": "ATTRIBUTE14",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "Attribute15",
+        "column": "ATTRIBUTE15",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "Attribute16",
+        "column": "ATTRIBUTE16",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "Attribute17",
+        "column": "ATTRIBUTE17",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "Attribute18",
+        "column": "ATTRIBUTE18",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "Attribute19",
+        "column": "ATTRIBUTE19",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "Attribute2",
+        "column": "ATTRIBUTE2",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "Attribute20",
+        "column": "ATTRIBUTE20",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "Attribute21",
+        "column": "ATTRIBUTE21",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "Attribute22",
+        "column": "ATTRIBUTE22",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "Attribute23",
+        "column": "ATTRIBUTE23",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "Attribute24",
+        "column": "ATTRIBUTE24",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "Attribute25",
+        "column": "ATTRIBUTE25",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "Attribute26",
+        "column": "ATTRIBUTE26",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "Attribute27",
+        "column": "ATTRIBUTE27",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "Attribute28",
+        "column": "ATTRIBUTE28",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "Attribute29",
+        "column": "ATTRIBUTE29",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "Attribute3",
+        "column": "ATTRIBUTE3",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "Attribute30",
+        "column": "ATTRIBUTE30",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "Attribute4",
+        "column": "ATTRIBUTE4",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "Attribute5",
+        "column": "ATTRIBUTE5",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "Attribute6",
+        "column": "ATTRIBUTE6",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "Attribute7",
+        "column": "ATTRIBUTE7",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "Attribute8",
+        "column": "ATTRIBUTE8",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "Attribute9",
+        "column": "ATTRIBUTE9",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AttributeCategory",
+        "column": "ATTRIBUTE_CATEGORY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AttributeDate1",
+        "column": "ATTRIBUTE_DATE1",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AttributeDate10",
+        "column": "ATTRIBUTE_DATE10",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AttributeDate11",
+        "column": "ATTRIBUTE_DATE11",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AttributeDate12",
+        "column": "ATTRIBUTE_DATE12",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AttributeDate13",
+        "column": "ATTRIBUTE_DATE13",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AttributeDate14",
+        "column": "ATTRIBUTE_DATE14",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AttributeDate15",
+        "column": "ATTRIBUTE_DATE15",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AttributeDate2",
+        "column": "ATTRIBUTE_DATE2",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AttributeDate3",
+        "column": "ATTRIBUTE_DATE3",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AttributeDate4",
+        "column": "ATTRIBUTE_DATE4",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AttributeDate5",
+        "column": "ATTRIBUTE_DATE5",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AttributeDate6",
+        "column": "ATTRIBUTE_DATE6",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AttributeDate7",
+        "column": "ATTRIBUTE_DATE7",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AttributeDate8",
+        "column": "ATTRIBUTE_DATE8",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AttributeDate9",
+        "column": "ATTRIBUTE_DATE9",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AttributeNumber1",
+        "column": "ATTRIBUTE_NUMBER1",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AttributeNumber10",
+        "column": "ATTRIBUTE_NUMBER10",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AttributeNumber11",
+        "column": "ATTRIBUTE_NUMBER11",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AttributeNumber12",
+        "column": "ATTRIBUTE_NUMBER12",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AttributeNumber13",
+        "column": "ATTRIBUTE_NUMBER13",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AttributeNumber14",
+        "column": "ATTRIBUTE_NUMBER14",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AttributeNumber15",
+        "column": "ATTRIBUTE_NUMBER15",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AttributeNumber16",
+        "column": "ATTRIBUTE_NUMBER16",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AttributeNumber17",
+        "column": "ATTRIBUTE_NUMBER17",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AttributeNumber18",
+        "column": "ATTRIBUTE_NUMBER18",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AttributeNumber19",
+        "column": "ATTRIBUTE_NUMBER19",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AttributeNumber2",
+        "column": "ATTRIBUTE_NUMBER2",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AttributeNumber20",
+        "column": "ATTRIBUTE_NUMBER20",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AttributeNumber3",
+        "column": "ATTRIBUTE_NUMBER3",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AttributeNumber4",
+        "column": "ATTRIBUTE_NUMBER4",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AttributeNumber5",
+        "column": "ATTRIBUTE_NUMBER5",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AttributeNumber6",
+        "column": "ATTRIBUTE_NUMBER6",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AttributeNumber7",
+        "column": "ATTRIBUTE_NUMBER7",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AttributeNumber8",
+        "column": "ATTRIBUTE_NUMBER8",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AttributeNumber9",
+        "column": "ATTRIBUTE_NUMBER9",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BusinessGroupId",
+        "column": "BUSINESS_GROUP_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CreatedBy",
+        "column": "CREATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CreationDate",
+        "column": "CREATION_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "DisplayName",
+        "column": "DISPLAY_NAME",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "EffectiveEndDate",
+        "column": "EFFECTIVE_END_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "EffectiveStartDate",
+        "column": "EFFECTIVE_START_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "FirstName",
+        "column": "FIRST_NAME",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "FullName",
+        "column": "FULL_NAME",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "Honors",
+        "column": "HONORS",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "KnownAs",
+        "column": "KNOWN_AS",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "LastName",
+        "column": "LAST_NAME",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "LastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "LastUpdateLogin",
+        "column": "LAST_UPDATE_LOGIN",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "LastUpdatedBy",
+        "column": "LAST_UPDATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "LegislationCode",
+        "column": "LEGISLATION_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ListName",
+        "column": "LIST_NAME",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "MiddleNames",
+        "column": "MIDDLE_NAMES",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "MilitaryRank",
+        "column": "MILITARY_RANK",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "NamInformation1",
+        "column": "NAM_INFORMATION1",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "NamInformation10",
+        "column": "NAM_INFORMATION10",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "NamInformation11",
+        "column": "NAM_INFORMATION11",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "NamInformation12",
+        "column": "NAM_INFORMATION12",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "NamInformation13",
+        "column": "NAM_INFORMATION13",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "NamInformation14",
+        "column": "NAM_INFORMATION14",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "NamInformation15",
+        "column": "NAM_INFORMATION15",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "NamInformation16",
+        "column": "NAM_INFORMATION16",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "NamInformation17",
+        "column": "NAM_INFORMATION17",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "NamInformation18",
+        "column": "NAM_INFORMATION18",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "NamInformation19",
+        "column": "NAM_INFORMATION19",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "NamInformation2",
+        "column": "NAM_INFORMATION2",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "NamInformation20",
+        "column": "NAM_INFORMATION20",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "NamInformation21",
+        "column": "NAM_INFORMATION21",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "NamInformation22",
+        "column": "NAM_INFORMATION22",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "NamInformation23",
+        "column": "NAM_INFORMATION23",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "NamInformation24",
+        "column": "NAM_INFORMATION24",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "NamInformation25",
+        "column": "NAM_INFORMATION25",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "NamInformation26",
+        "column": "NAM_INFORMATION26",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "NamInformation27",
+        "column": "NAM_INFORMATION27",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "NamInformation28",
+        "column": "NAM_INFORMATION28",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "NamInformation29",
+        "column": "NAM_INFORMATION29",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "NamInformation3",
+        "column": "NAM_INFORMATION3",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "NamInformation30",
+        "column": "NAM_INFORMATION30",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "NamInformation4",
+        "column": "NAM_INFORMATION4",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "NamInformation5",
+        "column": "NAM_INFORMATION5",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "NamInformation6",
+        "column": "NAM_INFORMATION6",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "NamInformation7",
+        "column": "NAM_INFORMATION7",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "NamInformation8",
+        "column": "NAM_INFORMATION8",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "NamInformation9",
+        "column": "NAM_INFORMATION9",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "NamInformationCategory",
+        "column": "NAM_INFORMATION_CATEGORY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "NameType",
+        "column": "NAME_TYPE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "OrderName",
+        "column": "ORDER_NAME",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PersonId",
+        "column": "PERSON_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PersonNameId",
+        "column": "PERSON_NAME_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PreNameAdjunct",
+        "column": "PRE_NAME_ADJUNCT",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PreviousLastName",
+        "column": "PREVIOUS_LAST_NAME",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "Suffix",
+        "column": "SUFFIX",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "Title",
+        "column": "TITLE",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "PO_ACTION_HISTORY": [
+      {
+        "attribute": "ObjectId",
+        "column": "OBJECT_ID",
+        "bicc": true,
+        "pk": true
+      },
+      {
+        "attribute": "ObjectSubTypeCode",
+        "column": "OBJECT_SUB_TYPE_CODE",
+        "bicc": true,
+        "pk": true
+      },
+      {
+        "attribute": "ObjectTypeCode",
+        "column": "OBJECT_TYPE_CODE",
+        "bicc": true,
+        "pk": true
+      },
+      {
+        "attribute": "PurchasingActionHistoryActionCode",
+        "column": "ACTION_CODE",
+        "bicc": true,
+        "pk": true
+      },
+      {
+        "attribute": "PurchasingActionHistoryActionDate",
+        "column": "ACTION_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PurchasingActionHistoryActionLevel",
+        "column": "ACTION_LEVEL",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PurchasingActionHistoryAssignmentDate",
+        "column": "ASSIGNMENT_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PurchasingActionHistoryCreatedBy",
+        "column": "CREATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PurchasingActionHistoryCreationDate",
+        "column": "CREATION_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PurchasingActionHistoryIdentificationKey",
+        "column": "IDENTIFICATION_KEY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PurchasingActionHistoryLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PurchasingActionHistoryLastUpdateLogin",
+        "column": "LAST_UPDATE_LOGIN",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PurchasingActionHistoryLastUpdatedBy",
+        "column": "LAST_UPDATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PurchasingActionHistoryNote",
+        "column": "NOTE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PurchasingActionHistoryObjectRevisionNum",
+        "column": "OBJECT_REVISION_NUM",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PurchasingActionHistoryObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PurchasingActionHistoryOfflineCode",
+        "column": "OFFLINE_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PurchasingActionHistoryPerformerId",
+        "column": "PERFORMER_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PurchasingActionHistoryPoVersionId",
+        "column": "PO_VERSION_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PurchasingActionHistoryProgramDate",
+        "column": "PROGRAM_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PurchasingActionHistoryRoleCode",
+        "column": "ROLE_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PurchasingActionHistorySupplierAccessibleFlag",
+        "column": "SUPPLIER_ACCESSIBLE_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "SequenceNum",
+        "column": "SEQUENCE_NUM",
+        "bicc": true,
+        "pk": true
+      }
+    ],
+    "PO_HEADERS_ALL": [
+      {
+        "attribute": "PurchasingDocumentHeaderAcceptanceDueDate",
+        "column": "ACCEPTANCE_DUE_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PurchasingDocumentHeaderAcceptanceRequiredFlag",
+        "column": "ACCEPTANCE_REQUIRED_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PurchasingDocumentHeaderAcceptanceWithinDays",
+        "column": "ACCEPTANCE_WITHIN_DAYS",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PurchasingDocumentHeaderAgentId",
+        "column": "AGENT_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PurchasingDocumentHeaderAmountLimit",
+        "column": "AMOUNT_LIMIT",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PurchasingDocumentHeaderAmountReleased",
+        "column": "AMOUNT_RELEASED",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PurchasingDocumentHeaderApprovedDate",
+        "column": "APPROVED_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PurchasingDocumentHeaderApprovedFlag",
+        "column": "APPROVED_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PurchasingDocumentHeaderAutoSourcingFlag",
+        "column": "AUTO_SOURCING_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PurchasingDocumentHeaderBillToLocationId",
+        "column": "BILL_TO_LOCATION_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PurchasingDocumentHeaderBilltoBuId",
+        "column": "BILLTO_BU_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PurchasingDocumentHeaderBlanketTotalAmount",
+        "column": "BLANKET_TOTAL_AMOUNT",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PurchasingDocumentHeaderCancelFlag",
+        "column": "CANCEL_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PurchasingDocumentHeaderCarrierId",
+        "column": "CARRIER_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PurchasingDocumentHeaderCatAdminAuthEnabledFlag",
+        "column": "CAT_ADMIN_AUTH_ENABLED_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PurchasingDocumentHeaderCbcAccountingDate",
+        "column": "CBC_ACCOUNTING_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PurchasingDocumentHeaderChangeRequestedBy",
+        "column": "CHANGE_REQUESTED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PurchasingDocumentHeaderChangeSummary",
+        "column": "CHANGE_SUMMARY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PurchasingDocumentHeaderClosedDate",
+        "column": "CLOSED_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PurchasingDocumentHeaderComments",
+        "column": "COMMENTS",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PurchasingDocumentHeaderConfirmingOrderFlag",
+        "column": "CONFIRMING_ORDER_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PurchasingDocumentHeaderConsignedConsumptionFlag",
+        "column": "CONSIGNED_CONSUMPTION_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PurchasingDocumentHeaderConsumeReqDemandFlag",
+        "column": "CONSUME_REQ_DEMAND_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PurchasingDocumentHeaderContermsArticlesUpdDate",
+        "column": "CONTERMS_ARTICLES_UPD_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PurchasingDocumentHeaderContermsDelivUpdDate",
+        "column": "CONTERMS_DELIV_UPD_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PurchasingDocumentHeaderContermsExistFlag",
+        "column": "CONTERMS_EXIST_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PurchasingDocumentHeaderCpaReference",
+        "column": "CPA_REFERENCE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PurchasingDocumentHeaderCreatedBy",
+        "column": "CREATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PurchasingDocumentHeaderCreatedLanguage",
+        "column": "CREATED_LANGUAGE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PurchasingDocumentHeaderCreationDate",
+        "column": "CREATION_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PurchasingDocumentHeaderCurrencyCode",
+        "column": "CURRENCY_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PurchasingDocumentHeaderCurrentVersionId",
+        "column": "CURRENT_VERSION_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PurchasingDocumentHeaderDefaultTaxationCountry",
+        "column": "DEFAULT_TAXATION_COUNTRY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PurchasingDocumentHeaderDocumentCreationMethod",
+        "column": "DOCUMENT_CREATION_METHOD",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PurchasingDocumentHeaderDocumentStatus",
+        "column": "DOCUMENT_STATUS",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PurchasingDocumentHeaderEdiProcessedFlag",
+        "column": "EDI_PROCESSED_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PurchasingDocumentHeaderEdiProcessedStatus",
+        "column": "EDI_PROCESSED_STATUS",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PurchasingDocumentHeaderEmailAddress",
+        "column": "EMAIL_ADDRESS",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PurchasingDocumentHeaderEnabledFlag",
+        "column": "ENABLED_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PurchasingDocumentHeaderEncumbranceRequiredFlag",
+        "column": "ENCUMBRANCE_REQUIRED_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PurchasingDocumentHeaderEndDate",
+        "column": "END_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PurchasingDocumentHeaderFax",
+        "column": "FAX",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PurchasingDocumentHeaderFirmDate",
+        "column": "FIRM_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PurchasingDocumentHeaderFirmStatusLookupCode",
+        "column": "FIRM_STATUS_LOOKUP_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PurchasingDocumentHeaderFobLookupCode",
+        "column": "FOB_LOOKUP_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PurchasingDocumentHeaderFreightTermsLookupCode",
+        "column": "FREIGHT_TERMS_LOOKUP_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PurchasingDocumentHeaderFromHeaderId",
+        "column": "FROM_HEADER_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PurchasingDocumentHeaderFromTypeLookupCode",
+        "column": "FROM_TYPE_LOOKUP_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PurchasingDocumentHeaderFrozenFlag",
+        "column": "FROZEN_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PurchasingDocumentHeaderGenerateOrdersAutomatic",
+        "column": "GENERATE_ORDERS_AUTOMATIC",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PurchasingDocumentHeaderGovernmentContext",
+        "column": "GOVERNMENT_CONTEXT",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PurchasingDocumentHeaderGroupRequisitionLines",
+        "column": "GROUP_REQUISITION_LINES",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PurchasingDocumentHeaderGroupRequisitions",
+        "column": "GROUP_REQUISITIONS",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PurchasingDocumentHeaderInterfaceSourceCode",
+        "column": "INTERFACE_SOURCE_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PurchasingDocumentHeaderJobDefinitionName",
+        "column": "JOB_DEFINITION_NAME",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PurchasingDocumentHeaderJobDefinitionPackage",
+        "column": "JOB_DEFINITION_PACKAGE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PurchasingDocumentHeaderLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PurchasingDocumentHeaderLastUpdateLogin",
+        "column": "LAST_UPDATE_LOGIN",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PurchasingDocumentHeaderLastUpdatedBy",
+        "column": "LAST_UPDATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PurchasingDocumentHeaderLastUpdatedProgram",
+        "column": "LAST_UPDATED_PROGRAM",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PurchasingDocumentHeaderMinReleaseAmount",
+        "column": "MIN_RELEASE_AMOUNT",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PurchasingDocumentHeaderNoteToAuthorizer",
+        "column": "NOTE_TO_AUTHORIZER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PurchasingDocumentHeaderNoteToReceiver",
+        "column": "NOTE_TO_RECEIVER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PurchasingDocumentHeaderNoteToVendor",
+        "column": "NOTE_TO_VENDOR",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PurchasingDocumentHeaderObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PurchasingDocumentHeaderOrchestrationOrderFlag",
+        "column": "ORCHESTRATION_ORDER_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PurchasingDocumentHeaderPayOnCode",
+        "column": "PAY_ON_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PurchasingDocumentHeaderPcardId",
+        "column": "PCARD_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PurchasingDocumentHeaderPendingSignatureFlag",
+        "column": "PENDING_SIGNATURE_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PurchasingDocumentHeaderPoHeaderId",
+        "column": "PO_HEADER_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PurchasingDocumentHeaderPrcBuId",
+        "column": "PRC_BU_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PurchasingDocumentHeaderPriceUpdateTolerance",
+        "column": "PRICE_UPDATE_TOLERANCE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PurchasingDocumentHeaderProgramAppName",
+        "column": "PROGRAM_APP_NAME",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PurchasingDocumentHeaderProgramName",
+        "column": "PROGRAM_NAME",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PurchasingDocumentHeaderRate",
+        "column": "RATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PurchasingDocumentHeaderRateDate",
+        "column": "RATE_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PurchasingDocumentHeaderRateType",
+        "column": "RATE_TYPE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PurchasingDocumentHeaderReferenceNum",
+        "column": "REFERENCE_NUM",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PurchasingDocumentHeaderReleaseMethod",
+        "column": "RELEASE_METHOD",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PurchasingDocumentHeaderReqBuId",
+        "column": "REQ_BU_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PurchasingDocumentHeaderRequestId",
+        "column": "REQUEST_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PurchasingDocumentHeaderRetroPriceApplyUpdatesFlag",
+        "column": "RETRO_PRICE_APPLY_UPDATES_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PurchasingDocumentHeaderRetroPriceCommUpdatesFlag",
+        "column": "RETRO_PRICE_COMM_UPDATES_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PurchasingDocumentHeaderReviewAutogeneratedReleases",
+        "column": "REVIEW_AUTOGENERATED_RELEASES",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PurchasingDocumentHeaderRevisedDate",
+        "column": "REVISED_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PurchasingDocumentHeaderRevisionNum",
+        "column": "REVISION_NUM",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PurchasingDocumentHeaderSegment1",
+        "column": "SEGMENT1",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PurchasingDocumentHeaderSegment2",
+        "column": "SEGMENT2",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PurchasingDocumentHeaderSegment3",
+        "column": "SEGMENT3",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PurchasingDocumentHeaderSegment4",
+        "column": "SEGMENT4",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PurchasingDocumentHeaderSegment5",
+        "column": "SEGMENT5",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PurchasingDocumentHeaderShipToLocationId",
+        "column": "SHIP_TO_LOCATION_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PurchasingDocumentHeaderShippingControl",
+        "column": "SHIPPING_CONTROL",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PurchasingDocumentHeaderSoldtoLeId",
+        "column": "SOLDTO_LE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PurchasingDocumentHeaderStartDate",
+        "column": "START_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PurchasingDocumentHeaderStyleId",
+        "column": "STYLE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PurchasingDocumentHeaderSubmitApprovalAutomatic",
+        "column": "SUBMIT_APPROVAL_AUTOMATIC",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PurchasingDocumentHeaderSubmitDate",
+        "column": "SUBMIT_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PurchasingDocumentHeaderSummaryFlag",
+        "column": "SUMMARY_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PurchasingDocumentHeaderSupplierNotifMethod",
+        "column": "SUPPLIER_NOTIF_METHOD",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PurchasingDocumentHeaderTaxAttributeUpdateCode",
+        "column": "TAX_ATTRIBUTE_UPDATE_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PurchasingDocumentHeaderTaxDocumentSubtype",
+        "column": "TAX_DOCUMENT_SUBTYPE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PurchasingDocumentHeaderTermsId",
+        "column": "TERMS_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PurchasingDocumentHeaderTypeLookupCode",
+        "column": "TYPE_LOOKUP_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PurchasingDocumentHeaderUpdateSourcingRulesFlag",
+        "column": "UPDATE_SOURCING_RULES_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PurchasingDocumentHeaderUseNeedByDate",
+        "column": "USE_NEED_BY_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PurchasingDocumentHeaderUseShipTo",
+        "column": "USE_SHIP_TO",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PurchasingDocumentHeaderVendorContactId",
+        "column": "VENDOR_CONTACT_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PurchasingDocumentHeaderVendorId",
+        "column": "VENDOR_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PurchasingDocumentHeaderVendorOrderNum",
+        "column": "VENDOR_ORDER_NUM",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PurchasingDocumentHeaderVendorSiteId",
+        "column": "VENDOR_SITE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PurchasingDocumentHeaderXmlChangeSendDate",
+        "column": "XML_CHANGE_SEND_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PurchasingDocumentHeaderXmlFlag",
+        "column": "XML_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PurchasingDocumentHeaderXmlSendDate",
+        "column": "XML_SEND_DATE",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "PO_VERSIONS": [
+      {
+        "attribute": "PurchasingDocumentVersionAcceptedDate",
+        "column": "ACCEPTED_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PurchasingDocumentVersionApprovedDate",
+        "column": "APPROVED_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PurchasingDocumentVersionBaseVersionId",
+        "column": "BASE_VERSION_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PurchasingDocumentVersionCancelBackingReqFlag",
+        "column": "CANCEL_BACKING_REQ_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PurchasingDocumentVersionCancelDocFlag",
+        "column": "CANCEL_DOC_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PurchasingDocumentVersionChangeOrderDesc",
+        "column": "CHANGE_ORDER_DESC",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PurchasingDocumentVersionChangeOrderStatus",
+        "column": "CHANGE_ORDER_STATUS",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PurchasingDocumentVersionChangeOrderType",
+        "column": "CHANGE_ORDER_TYPE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PurchasingDocumentVersionCoCanceledByRole",
+        "column": "CO_CANCELED_BY_ROLE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PurchasingDocumentVersionCoCanceledByUserId",
+        "column": "CO_CANCELED_BY_USER_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PurchasingDocumentVersionCoCanceledFlag",
+        "column": "CO_CANCELED_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PurchasingDocumentVersionCoNum",
+        "column": "CO_NUM",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PurchasingDocumentVersionCoSequence",
+        "column": "CO_SEQUENCE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PurchasingDocumentVersionCommunicatedDate",
+        "column": "COMMUNICATED_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PurchasingDocumentVersionCommunicatedToSupplier",
+        "column": "COMMUNICATED_TO_SUPPLIER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PurchasingDocumentVersionCounterproposalFlag",
+        "column": "COUNTERPROPOSAL_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PurchasingDocumentVersionCreatedBy",
+        "column": "CREATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PurchasingDocumentVersionCreatedByProgramName",
+        "column": "CREATED_BY_PROGRAM_NAME",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PurchasingDocumentVersionCreationDate",
+        "column": "CREATION_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PurchasingDocumentVersionDocumentDate",
+        "column": "DOCUMENT_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PurchasingDocumentVersionEsignEnvOwnerEmailId",
+        "column": "ESIGN_ENV_OWNER_EMAIL_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PurchasingDocumentVersionEsignEnvelopeId",
+        "column": "ESIGN_ENVELOPE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PurchasingDocumentVersionEsignEnvelopeOwner",
+        "column": "ESIGN_ENVELOPE_OWNER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PurchasingDocumentVersionEsignEnvelopeStatus",
+        "column": "ESIGN_ENVELOPE_STATUS",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PurchasingDocumentVersionExternalSystemFlag",
+        "column": "EXTERNAL_SYSTEM_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PurchasingDocumentVersionFundsStatus",
+        "column": "FUNDS_STATUS",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PurchasingDocumentVersionJobDefinitionName",
+        "column": "JOB_DEFINITION_NAME",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PurchasingDocumentVersionJobDefinitionPackage",
+        "column": "JOB_DEFINITION_PACKAGE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PurchasingDocumentVersionLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PurchasingDocumentVersionLastUpdateLogin",
+        "column": "LAST_UPDATE_LOGIN",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PurchasingDocumentVersionLastUpdatedBy",
+        "column": "LAST_UPDATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PurchasingDocumentVersionModifiedFlag",
+        "column": "MODIFIED_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PurchasingDocumentVersionObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PurchasingDocumentVersionOnlineReportId",
+        "column": "ONLINE_REPORT_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PurchasingDocumentVersionOriginatorId",
+        "column": "ORIGINATOR_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PurchasingDocumentVersionOriginatorRole",
+        "column": "ORIGINATOR_ROLE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PurchasingDocumentVersionPendingResponseRole",
+        "column": "PENDING_RESPONSE_ROLE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PurchasingDocumentVersionPoHeaderId",
+        "column": "PO_HEADER_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PurchasingDocumentVersionProcessedDate",
+        "column": "PROCESSED_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PurchasingDocumentVersionProgramAppName",
+        "column": "PROGRAM_APP_NAME",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PurchasingDocumentVersionProgramName",
+        "column": "PROGRAM_NAME",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PurchasingDocumentVersionRejectedFlag",
+        "column": "REJECTED_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PurchasingDocumentVersionRequestDate",
+        "column": "REQUEST_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PurchasingDocumentVersionRequestId",
+        "column": "REQUEST_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PurchasingDocumentVersionRevisionNum",
+        "column": "REVISION_NUM",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PurchasingDocumentVersionSubmittedDate",
+        "column": "SUBMITTED_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PurchasingDocumentVersionVersionId",
+        "column": "VERSION_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PurchasingDocumentVersionWithdrawnFlag",
+        "column": "WITHDRAWN_FLAG",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "POR_REQUISITION_HEADERS_ALL": [
+      {
+        "attribute": "RequisitionHeaderActiveRequisitionFlag",
+        "column": "ACTIVE_REQUISITION_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "RequisitionHeaderApprovedDate",
+        "column": "APPROVED_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "RequisitionHeaderChangePendingFlag",
+        "column": "CHANGE_PENDING_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "RequisitionHeaderCreatedBy",
+        "column": "CREATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "RequisitionHeaderCreationDate",
+        "column": "CREATION_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "RequisitionHeaderDescription",
+        "column": "DESCRIPTION",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "RequisitionHeaderDocumentStatus",
+        "column": "DOCUMENT_STATUS",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "RequisitionHeaderEmergencyPoNumber",
+        "column": "EMERGENCY_PO_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "RequisitionHeaderEmergencyReqFlag",
+        "column": "EMERGENCY_REQ_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "RequisitionHeaderInterfaceSourceCode",
+        "column": "INTERFACE_SOURCE_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "RequisitionHeaderInterfaceSourceLineId",
+        "column": "INTERFACE_SOURCE_LINE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "RequisitionHeaderJobDefinitionName",
+        "column": "JOB_DEFINITION_NAME",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "RequisitionHeaderJobDefinitionPackage",
+        "column": "JOB_DEFINITION_PACKAGE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "RequisitionHeaderJustification",
+        "column": "JUSTIFICATION",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "RequisitionHeaderLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "RequisitionHeaderLastUpdateLogin",
+        "column": "LAST_UPDATE_LOGIN",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "RequisitionHeaderLastUpdatedBy",
+        "column": "LAST_UPDATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "RequisitionHeaderModifyingApproverId",
+        "column": "MODIFYING_APPROVER_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "RequisitionHeaderObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "RequisitionHeaderPcardId",
+        "column": "PCARD_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "RequisitionHeaderPrcBuId",
+        "column": "PRC_BU_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "RequisitionHeaderPreparerId",
+        "column": "PREPARER_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "RequisitionHeaderReqBuId",
+        "column": "REQ_BU_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "RequisitionHeaderRequestId",
+        "column": "REQUEST_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "RequisitionHeaderRequisitionHeaderId",
+        "column": "REQUISITION_HEADER_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "RequisitionHeaderRequisitionNumber",
+        "column": "REQUISITION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "RequisitionHeaderSubmissionDate",
+        "column": "SUBMISSION_DATE",
+        "bicc": false,
+        "pk": false
+      }
+    ]
+  }
+}

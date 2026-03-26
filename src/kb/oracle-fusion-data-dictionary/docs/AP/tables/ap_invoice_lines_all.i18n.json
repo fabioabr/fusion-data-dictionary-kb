@@ -1,0 +1,637 @@
+{
+  "source": "ap_invoice_lines_all.md",
+  "source_hash": "eeac032e518289adb6d33893458844ce",
+  "translated_at": "2026-03-25",
+  "items": [
+    {
+      "id": 1,
+      "br": "Visão Geral",
+      "en": "Overview",
+      "es": "Vision General"
+    },
+    {
+      "id": 2,
+      "br": "Armazena as linhas de cada fatura do módulo Accounts Payable. Cada linha representa um item, imposto, frete ou encargo dentro da fatura, contendo descrição, quantidade, valor unitário, valor total e referência a pedido de compra. Atua como nível intermediário entre o cabeçalho da fatura (ap_invoices_all) e as distribuições contábeis (ap_invoice_distributions_all).",
+      "en": "Stores the lines of each invoice in the Accounts Payable module. Each line represents an item, tax, freight, or charge within the invoice, containing description, quantity, unit price, total amount, and purchase order reference. Acts as an intermediate level between the invoice header (ap_invoices_all) and accounting distributions (ap_invoice_distributions_all).",
+      "es": "Almacena las líneas de cada factura del módulo Accounts Payable. Cada línea representa un item, impuesto, flete o cargo dentro de la factura, conteniendo descripción, cantidad, precio unitario, valor total y referencia a orden de compra. Actúa como nivel intermedio entre el encabezado de la factura (ap_invoices_all) y las distribuciones contables (ap_invoice_distributions_all)."
+    },
+    {
+      "id": 3,
+      "br": "Sufixo _ALL",
+      "en": "_ALL Suffix",
+      "es": "Sufijo _ALL"
+    },
+    {
+      "id": 4,
+      "br": "O sufixo _ALL indica que a tabela armazena dados de todas as business units (multi-org). O filtro por ORG_ID é necessário para consultas por organização específica.",
+      "en": "The _ALL suffix indicates that the table stores data from all business units (multi-org). Filtering by ORG_ID is required for queries by specific organization.",
+      "es": "El sufijo _ALL indica que la tabla almacena datos de todas las business units (multi-org). El filtro por ORG_ID es necesario para consultas por organización específica."
+    },
+    {
+      "id": 5,
+      "br": "Propósito de Negócio",
+      "en": "Business Purpose",
+      "es": "Proposito de Negocio"
+    },
+    {
+      "id": 6,
+      "br": "Esta tabela é utilizada nos seguintes processos:",
+      "en": "This table is used in the following processes:",
+      "es": "Esta tabla se utiliza en los siguientes procesos:"
+    },
+    {
+      "id": 7,
+      "br": "Cada item, serviço, imposto ou frete recebido é registrado como uma linha separada.",
+      "en": "Each item, service, tax, or freight received is recorded as a separate line.",
+      "es": "Cada item, servicio, impuesto o flete recibido se registra como una línea separada."
+    },
+    {
+      "id": 8,
+      "br": "Linhas do tipo ITEM podem ser vinculadas a linhas de pedido de compra para validação de preço e quantidade.",
+      "en": "ITEM type lines can be linked to purchase order lines for price and quantity validation.",
+      "es": "Líneas de tipo ITEM pueden vincularse a líneas de orden de compra para validación de precio y cantidad."
+    },
+    {
+      "id": 9,
+      "br": "Linhas do tipo TAX armazenam os impostos calculados automaticamente ou informados manualmente.",
+      "en": "TAX type lines store taxes calculated automatically or entered manually.",
+      "es": "Líneas de tipo TAX almacenan los impuestos calculados automáticamente o informados manualmente."
+    },
+    {
+      "id": 10,
+      "br": "Cada linha gera uma ou mais distribuições contábeis em [[ap_invoice_distributions_all]].",
+      "en": "Each line generates one or more accounting distributions in [[ap_invoice_distributions_all]].",
+      "es": "Cada línea genera una o más distribuciones contables en [[ap_invoice_distributions_all]]."
+    },
+    {
+      "id": 11,
+      "br": "Suporte a linhas de withholding tax (AWT) geradas automaticamente.",
+      "en": "Support for automatically generated withholding tax (AWT) lines.",
+      "es": "Soporte a líneas de withholding tax (AWT) generadas automáticamente."
+    },
+    {
+      "id": 12,
+      "br": "Vinculação de cada item da fatura ao respectivo PO line e shipment para auditoria.",
+      "en": "Linking each invoice item to the respective PO line and shipment for audit.",
+      "es": "Vinculación de cada item de la factura al respectivo PO line y shipment para auditoría."
+    },
+    {
+      "id": 13,
+      "br": "Colunas Principais",
+      "en": "Key Columns",
+      "es": "Columnas Principales"
+    },
+    {
+      "id": 14,
+      "br": "Confiança",
+      "en": "Confidence",
+      "es": "Confianza"
+    },
+    {
+      "id": 15,
+      "br": "Escala de 0% a 100% — grau de certeza da descrição gerada por IA com base na documentação oficial Oracle (OEDMF/BICC Release 13/25A).",
+      "en": "Scale from 0% to 100% — degree of certainty of the AI-generated description based on official Oracle documentation (OEDMF/BICC Release 13/25A).",
+      "es": "Escala de 0% a 100% — grado de certeza de la descripción generada por IA con base en la documentación oficial Oracle (OEDMF/BICC Release 13/25A)."
+    },
+    {
+      "id": 16,
+      "br": "- 🟢 81–100% — Coluna presente na documentação oficial Oracle; nome, tipo e descrição confirmados.",
+      "en": "- 🟢 81–100% — Column present in official Oracle documentation; name, type, and description confirmed.",
+      "es": "- 🟢 81–100% — Columna presente en la documentación oficial Oracle; nombre, tipo y descripción confirmados."
+    },
+    {
+      "id": 17,
+      "br": "- 🟡 51–80% — Coluna inferida por naming convention ou padrão Oracle; tipo exato pode variar.",
+      "en": "- 🟡 51–80% — Column inferred by naming convention or Oracle standard; exact type may vary.",
+      "es": "- 🟡 51–80% — Columna inferida por naming convention o estándar Oracle; el tipo exacto puede variar."
+    },
+    {
+      "id": 18,
+      "br": "- 🔴 0–50% — Existência ou tipo incertos; pode não existir no release atual; validar no ambiente.",
+      "en": "- 🔴 0–50% — Uncertain existence or type; may not exist in current release; validate in environment.",
+      "es": "- 🔴 0–50% — Existencia o tipo inciertos; puede no existir en el release actual; validar en el ambiente."
+    },
+    {
+      "id": 19,
+      "br": "Coluna",
+      "en": "Column",
+      "es": "Columna"
+    },
+    {
+      "id": 20,
+      "br": "Tipo",
+      "en": "Type",
+      "es": "Tipo"
+    },
+    {
+      "id": 21,
+      "br": "Nulo?",
+      "en": "Nullable?",
+      "es": "Nulo?"
+    },
+    {
+      "id": 22,
+      "br": "Categoria",
+      "en": "Category",
+      "es": "Categoria"
+    },
+    {
+      "id": 23,
+      "br": "Descrição",
+      "en": "Description",
+      "es": "Descripcion"
+    },
+    {
+      "id": 24,
+      "br": "PK/FK",
+      "en": "PK/FK",
+      "es": "PK/FK"
+    },
+    {
+      "id": 25,
+      "br": "Identificador da fatura (parte da PK composta)",
+      "en": "Invoice identifier (part of composite PK)",
+      "es": "Identificador de la factura (parte de la PK compuesta)"
+    },
+    {
+      "id": 26,
+      "br": "Número sequencial da linha na fatura",
+      "en": "Sequential line number in the invoice",
+      "es": "Número secuencial de la línea en la factura"
+    },
+    {
+      "id": 27,
+      "br": "Classificação",
+      "en": "Classification",
+      "es": "Clasificacion"
+    },
+    {
+      "id": 28,
+      "br": "Tipo da linha (ITEM/TAX/FREIGHT/MISCELLANEOUS/AWT)",
+      "en": "Line type (ITEM/TAX/FREIGHT/MISCELLANEOUS/AWT)",
+      "es": "Tipo de la línea (ITEM/TAX/FREIGHT/MISCELLANEOUS/AWT)"
+    },
+    {
+      "id": 29,
+      "br": "Financeiro",
+      "en": "Financial",
+      "es": "Financiero"
+    },
+    {
+      "id": 30,
+      "br": "Valor da linha na moeda da transação",
+      "en": "Line amount in transaction currency",
+      "es": "Valor de la línea en la moneda de la transacción"
+    },
+    {
+      "id": 31,
+      "br": "Valor na moeda funcional (ledger)",
+      "en": "Amount in functional currency (ledger)",
+      "es": "Valor en la moneda funcional (ledger)"
+    },
+    {
+      "id": 32,
+      "br": "Quantidade",
+      "en": "Quantity",
+      "es": "Cantidad"
+    },
+    {
+      "id": 33,
+      "br": "Quantidade faturada",
+      "en": "Invoiced quantity",
+      "es": "Cantidad facturada"
+    },
+    {
+      "id": 34,
+      "br": "Preço unitário",
+      "en": "Unit price",
+      "es": "Precio unitario"
+    },
+    {
+      "id": 35,
+      "br": "Unidade de medida",
+      "en": "Unit of measure",
+      "es": "Unidad de medida"
+    },
+    {
+      "id": 36,
+      "br": "Texto livre",
+      "en": "Free Text",
+      "es": "Texto libre"
+    },
+    {
+      "id": 37,
+      "br": "Descrição da linha",
+      "en": "Line description",
+      "es": "Descripción de la línea"
+    },
+    {
+      "id": 38,
+      "br": "Contabilidade",
+      "en": "Accounting",
+      "es": "Contabilidad"
+    },
+    {
+      "id": 39,
+      "br": "Data contábil da linha",
+      "en": "Line accounting date",
+      "es": "Fecha contable de la línea"
+    },
+    {
+      "id": 40,
+      "br": "Conta contábil padrão",
+      "en": "Default accounting account",
+      "es": "Cuenta contable por defecto"
+    },
+    {
+      "id": 41,
+      "br": "Referência cruzada",
+      "en": "Cross-reference",
+      "es": "Referencia cruzada"
+    },
+    {
+      "id": 42,
+      "br": "Cabeçalho do PO vinculado",
+      "en": "Linked PO header",
+      "es": "Encabezado del PO vinculado"
+    },
+    {
+      "id": 43,
+      "br": "Linha do PO vinculada",
+      "en": "Linked PO line",
+      "es": "Línea del PO vinculada"
+    },
+    {
+      "id": 44,
+      "br": "Shipment do PO vinculado",
+      "en": "Linked PO shipment",
+      "es": "Shipment del PO vinculado"
+    },
+    {
+      "id": 45,
+      "br": "Distribuição do PO vinculada",
+      "en": "Linked PO distribution",
+      "es": "Distribución del PO vinculada"
+    },
+    {
+      "id": 46,
+      "br": "Transação de recebimento vinculada",
+      "en": "Linked receipt transaction",
+      "es": "Transacción de recibo vinculada"
+    },
+    {
+      "id": 47,
+      "br": "Linha de shipment de recebimento",
+      "en": "Receipt shipment line",
+      "es": "Línea de shipment de recibo"
+    },
+    {
+      "id": 48,
+      "br": "Tipo de matching (ITEM_TO_PO/ITEM_TO_RECEIPT/etc.)",
+      "en": "Matching type (ITEM_TO_PO/ITEM_TO_RECEIPT/etc.)",
+      "es": "Tipo de matching (ITEM_TO_PO/ITEM_TO_RECEIPT/etc.)"
+    },
+    {
+      "id": 49,
+      "br": "Fiscal",
+      "en": "Tax",
+      "es": "Fiscal"
+    },
+    {
+      "id": 50,
+      "br": "Código de classificação fiscal",
+      "en": "Tax classification code",
+      "es": "Código de clasificación fiscal"
+    },
+    {
+      "id": 51,
+      "br": "ID da taxa de imposto",
+      "en": "Tax rate ID",
+      "es": "ID de la tasa de impuesto"
+    },
+    {
+      "id": 52,
+      "br": "Percentual do imposto",
+      "en": "Tax percentage",
+      "es": "Porcentaje del impuesto"
+    },
+    {
+      "id": 53,
+      "br": "Região fiscal (imposto de renda)",
+      "en": "Tax region (income tax)",
+      "es": "Región fiscal (impuesto a la renta)"
+    },
+    {
+      "id": 54,
+      "br": "Tipo 1099 (reporting fiscal US)",
+      "en": "1099 type (US tax reporting)",
+      "es": "Tipo 1099 (reporting fiscal US)"
+    },
+    {
+      "id": 55,
+      "br": "Status",
+      "en": "Status",
+      "es": "Estado"
+    },
+    {
+      "id": 56,
+      "br": "Indica se a linha foi descartada (Y/N)",
+      "en": "Indicates whether the line was discarded (Y/N)",
+      "es": "Indica si la línea fue descartada (Y/N)"
+    },
+    {
+      "id": 57,
+      "br": "Indica se a linha foi cancelada (Y/N)",
+      "en": "Indicates whether the line was cancelled (Y/N)",
+      "es": "Indica si la línea fue cancelada (Y/N)"
+    },
+    {
+      "id": 58,
+      "br": "Controle",
+      "en": "Control",
+      "es": "Control"
+    },
+    {
+      "id": 59,
+      "br": "Indica se distribuições foram geradas (Y/D/N)",
+      "en": "Indicates whether distributions were generated (Y/D/N)",
+      "es": "Indica si las distribuciones fueron generadas (Y/D/N)"
+    },
+    {
+      "id": 60,
+      "br": "Rastreamento de ativo fixo (Y/N)",
+      "en": "Fixed asset tracking (Y/N)",
+      "es": "Rastreo de activo fijo (Y/N)"
+    },
+    {
+      "id": 61,
+      "br": "Projetos",
+      "en": "Projects",
+      "es": "Proyectos"
+    },
+    {
+      "id": 62,
+      "br": "Projeto vinculado",
+      "en": "Linked project",
+      "es": "Proyecto vinculado"
+    },
+    {
+      "id": 63,
+      "br": "Tarefa do projeto",
+      "en": "Project task",
+      "es": "Tarea del proyecto"
+    },
+    {
+      "id": 64,
+      "br": "Item",
+      "en": "Item",
+      "es": "Item"
+    },
+    {
+      "id": 65,
+      "br": "Item do inventário",
+      "en": "Inventory item",
+      "es": "Item del inventario"
+    },
+    {
+      "id": 66,
+      "br": "Descrição do item",
+      "en": "Item description",
+      "es": "Descripción del item"
+    },
+    {
+      "id": 67,
+      "br": "Business unit (multi-org)",
+      "en": "Business unit (multi-org)",
+      "es": "Business unit (multi-org)"
+    },
+    {
+      "id": 68,
+      "br": "Auditoria",
+      "en": "Audit",
+      "es": "Auditoria"
+    },
+    {
+      "id": 69,
+      "br": "Usuário que criou o registro",
+      "en": "User who created the record",
+      "es": "Usuario que creó el registro"
+    },
+    {
+      "id": 70,
+      "br": "Data/hora de criação",
+      "en": "Creation date/time",
+      "es": "Fecha/hora de creación"
+    },
+    {
+      "id": 71,
+      "br": "Último usuário que alterou",
+      "en": "Last user who modified",
+      "es": "Último usuario que modificó"
+    },
+    {
+      "id": 72,
+      "br": "Data/hora da última alteração",
+      "en": "Last modification date/time",
+      "es": "Fecha/hora de la última modificación"
+    },
+    {
+      "id": 73,
+      "br": "Login da última sessão",
+      "en": "Last session login",
+      "es": "Login de la última sesión"
+    },
+    {
+      "id": 74,
+      "br": "ATTRIBUTE1–15",
+      "en": "ATTRIBUTE1–15",
+      "es": "ATTRIBUTE1–15"
+    },
+    {
+      "id": 75,
+      "br": "Atributos descritivos customizáveis por implementação",
+      "en": "Customizable descriptive attributes per implementation",
+      "es": "Atributos descriptivos personalizables por implementación"
+    },
+    {
+      "id": 76,
+      "br": "Contexto do Descriptive Flexfield",
+      "en": "Descriptive Flexfield context",
+      "es": "Contexto del Descriptive Flexfield"
+    },
+    {
+      "id": 77,
+      "br": "Relacionamentos",
+      "en": "Relationships",
+      "es": "Relaciones"
+    },
+    {
+      "id": 78,
+      "br": "Tabelas-pai (FK de entrada)",
+      "en": "Parent Tables (inbound FK)",
+      "es": "Tablas padre (FK de entrada)"
+    },
+    {
+      "id": 79,
+      "br": "fatura-cabeçalho",
+      "en": "invoice header",
+      "es": "factura-encabezado"
+    },
+    {
+      "id": 80,
+      "br": "conta contábil padrão",
+      "en": "default accounting account",
+      "es": "cuenta contable por defecto"
+    },
+    {
+      "id": 81,
+      "br": "pedido de compra",
+      "en": "purchase order",
+      "es": "orden de compra"
+    },
+    {
+      "id": 82,
+      "br": "linha do PO",
+      "en": "PO line",
+      "es": "línea del PO"
+    },
+    {
+      "id": 83,
+      "br": "shipment do PO",
+      "en": "PO shipment",
+      "es": "shipment del PO"
+    },
+    {
+      "id": 84,
+      "br": "distribuição do PO",
+      "en": "PO distribution",
+      "es": "distribución del PO"
+    },
+    {
+      "id": 85,
+      "br": "recebimento",
+      "en": "receipt",
+      "es": "recibo"
+    },
+    {
+      "id": 86,
+      "br": "projeto",
+      "en": "project",
+      "es": "proyecto"
+    },
+    {
+      "id": 87,
+      "br": "business unit",
+      "en": "business unit",
+      "es": "business unit"
+    },
+    {
+      "id": 88,
+      "br": "Tabelas-filha (FK de saída)",
+      "en": "Child Tables (outbound FK)",
+      "es": "Tablas hija (FK de salida)"
+    },
+    {
+      "id": 89,
+      "br": "ap_invoice_distributions_all — via INVOICE_ID + LINE_NUMBER (distribuições contábeis)",
+      "en": "ap_invoice_distributions_all — via INVOICE_ID + LINE_NUMBER (accounting distributions)",
+      "es": "ap_invoice_distributions_all — via INVOICE_ID + LINE_NUMBER (distribuciones contables)"
+    },
+    {
+      "id": 90,
+      "br": "Uso Típico",
+      "en": "Typical Usage",
+      "es": "Uso Tipico"
+    },
+    {
+      "id": 91,
+      "br": "Linhas de uma fatura",
+      "en": "Lines of an invoice",
+      "es": "Líneas de una factura"
+    },
+    {
+      "id": 92,
+      "br": "Linhas com matching a PO",
+      "en": "Lines with PO matching",
+      "es": "Líneas con matching a PO"
+    },
+    {
+      "id": 93,
+      "br": "Filtros comuns",
+      "en": "Common Filters",
+      "es": "Filtros comunes"
+    },
+    {
+      "id": 94,
+      "br": "Apenas linhas de item",
+      "en": "Item lines only",
+      "es": "Solo líneas de item"
+    },
+    {
+      "id": 95,
+      "br": "Exclui descartadas",
+      "en": "Excludes discarded",
+      "es": "Excluye descartadas"
+    },
+    {
+      "id": 96,
+      "br": "Exclui canceladas",
+      "en": "Excludes cancelled",
+      "es": "Excluye canceladas"
+    },
+    {
+      "id": 97,
+      "br": "Observações",
+      "en": "Notes",
+      "es": "Observaciones"
+    },
+    {
+      "id": 98,
+      "br": "O campo LINE_TYPE_LOOKUP_CODE classifica a linha: ITEM (item/serviço), TAX (imposto), FREIGHT (frete), MISCELLANEOUS (diversos), AWT (withholding tax).",
+      "en": "The LINE_TYPE_LOOKUP_CODE field classifies the line: ITEM (item/service), TAX (tax), FREIGHT (freight), MISCELLANEOUS (miscellaneous), AWT (withholding tax).",
+      "es": "El campo LINE_TYPE_LOOKUP_CODE clasifica la línea: ITEM (item/servicio), TAX (impuesto), FREIGHT (flete), MISCELLANEOUS (diversos), AWT (withholding tax)."
+    },
+    {
+      "id": 99,
+      "br": "Linhas do tipo ITEM podem ser vinculadas a PO lines/shipments para matching. O campo MATCH_TYPE indica o tipo de matching realizado.",
+      "en": "ITEM type lines can be linked to PO lines/shipments for matching. The MATCH_TYPE field indicates the matching type performed.",
+      "es": "Líneas de tipo ITEM pueden vincularse a PO lines/shipments para matching. El campo MATCH_TYPE indica el tipo de matching realizado."
+    },
+    {
+      "id": 100,
+      "br": "A PK composta é INVOICE_ID + LINE_NUMBER.",
+      "en": "The composite PK is INVOICE_ID + LINE_NUMBER.",
+      "es": "La PK compuesta es INVOICE_ID + LINE_NUMBER."
+    },
+    {
+      "id": 101,
+      "br": "O campo GENERATE_DISTS controla a geração de distribuições: Y (gerar), D (já gerado), N (não gerar).",
+      "en": "The GENERATE_DISTS field controls distribution generation: Y (generate), D (already generated), N (do not generate).",
+      "es": "El campo GENERATE_DISTS controla la generación de distribuciones: Y (generar), D (ya generado), N (no generar)."
+    },
+    {
+      "id": 102,
+      "br": "Linhas descartadas (DISCARDED_FLAG = 'Y') permanecem na tabela mas são ignoradas nos processos de negócio.",
+      "en": "Discarded lines (DISCARDED_FLAG = 'Y') remain in the table but are ignored in business processes.",
+      "es": "Líneas descartadas (DISCARDED_FLAG = 'Y') permanecen en la tabla pero se ignoran en los procesos de negocio."
+    },
+    {
+      "id": 103,
+      "br": "Referências",
+      "en": "References",
+      "es": "Referencias"
+    },
+    {
+      "id": 104,
+      "br": "[Oracle Docs — AP_INVOICE_LINES_ALL](https://docs.oracle.com/en/cloud/saas/financials/25a/oedmf/apinvoicelinesall-10010.html)",
+      "en": "[Oracle Docs — AP_INVOICE_LINES_ALL](https://docs.oracle.com/en/cloud/saas/financials/25a/oedmf/apinvoicelinesall-10010.html)",
+      "es": "[Oracle Docs — AP_INVOICE_LINES_ALL](https://docs.oracle.com/en/cloud/saas/financials/25a/oedmf/apinvoicelinesall-10010.html)"
+    },
+    {
+      "id": 105,
+      "br": "ap-module-data-dictionary — Dossiê do módulo AP",
+      "en": "ap-module-data-dictionary — AP module dossier",
+      "es": "ap-module-data-dictionary — Dossier del módulo AP"
+    }
+  ]
+}

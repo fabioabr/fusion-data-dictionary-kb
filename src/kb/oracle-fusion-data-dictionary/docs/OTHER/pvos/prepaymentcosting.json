@@ -1,0 +1,1528 @@
+{
+  "meta": {
+    "pvo_name": "PrePaymentCosting",
+    "full_path": "HcmTopModelAnalyticsGlobalAM.CostResultsAM.PrePaymentCosting",
+    "module_path": "HcmTopModelAnalyticsGlobalAM.CostResultsAM",
+    "module_code": "OTHER",
+    "type": "pvo",
+    "description": "View Object para extração BICC de dados de Pre Payment Costing. Acessa as tabelas: PAY_PAYMENT_COSTS, PAY_PAYROLL_ACTIONS, PAY_PAYROLL_REL_ACTIONS (+4)."
+  },
+  "stats": {
+    "total_attributes": 106,
+    "tables_count": 7,
+    "bicc_enabled": 40,
+    "bicc_pct": 38,
+    "pk_count": 1
+  },
+  "tables": [
+    "PAY_PAYMENT_COSTS",
+    "PAY_PAYROLL_ACTIONS",
+    "PAY_PAYROLL_REL_ACTIONS",
+    "PAY_PAY_RELATIONSHIPS_DN",
+    "PAY_PRE_PAYMENTS",
+    "PAY_REQUESTS",
+    "PER_LEGISLATIVE_DATA_GROUPS"
+  ],
+  "attributes": [
+    {
+      "name": "LdgPEOCostAllocationIdFlexNum",
+      "table": "PER_LEGISLATIVE_DATA_GROUPS",
+      "column": "COST_ALLOCATION_ID_FLEX_NUM",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LdgPEOLegislativeDataGroupId",
+      "table": "PER_LEGISLATIVE_DATA_GROUPS",
+      "column": "LEGISLATIVE_DATA_GROUP_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PayActActionParameterGroupId",
+      "table": "PAY_PAYROLL_ACTIONS",
+      "column": "ACTION_PARAMETER_GROUP_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PayActActionPopulationStatus",
+      "table": "PAY_PAYROLL_ACTIONS",
+      "column": "ACTION_POPULATION_STATUS",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PayActActionSequence",
+      "table": "PAY_PAYROLL_ACTIONS",
+      "column": "ACTION_SEQUENCE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PayActActionStatus",
+      "table": "PAY_PAYROLL_ACTIONS",
+      "column": "ACTION_STATUS",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PayActActionType",
+      "table": "PAY_PAYROLL_ACTIONS",
+      "column": "ACTION_TYPE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PayActAssignmentSetId",
+      "table": "PAY_PAYROLL_ACTIONS",
+      "column": "ASSIGNMENT_SET_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PayActBatchProcessMode",
+      "table": "PAY_PAYROLL_ACTIONS",
+      "column": "BATCH_PROCESS_MODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PayActChequeProcedure",
+      "table": "PAY_PAYROLL_ACTIONS",
+      "column": "CHEQUE_PROCEDURE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PayActConsolidationSetId",
+      "table": "PAY_PAYROLL_ACTIONS",
+      "column": "CONSOLIDATION_SET_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PayActCreatedBy",
+      "table": "PAY_PAYROLL_ACTIONS",
+      "column": "CREATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PayActCreationDate",
+      "table": "PAY_PAYROLL_ACTIONS",
+      "column": "CREATION_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PayActCurrentChunkNumber",
+      "table": "PAY_PAYROLL_ACTIONS",
+      "column": "CURRENT_CHUNK_NUMBER",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PayActCurrentTask",
+      "table": "PAY_PAYROLL_ACTIONS",
+      "column": "CURRENT_TASK",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PayActDateEarned",
+      "table": "PAY_PAYROLL_ACTIONS",
+      "column": "DATE_EARNED",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PayActDisplayRunNumber",
+      "table": "PAY_PAYROLL_ACTIONS",
+      "column": "DISPLAY_RUN_NUMBER",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PayActEffectiveDate",
+      "table": "PAY_PAYROLL_ACTIONS",
+      "column": "EFFECTIVE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PayActElementSetId",
+      "table": "PAY_PAYROLL_ACTIONS",
+      "column": "ELEMENT_SET_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PayActEndChequeNumber",
+      "table": "PAY_PAYROLL_ACTIONS",
+      "column": "END_CHEQUE_NUMBER",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PayActEndDate",
+      "table": "PAY_PAYROLL_ACTIONS",
+      "column": "END_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PayActFutureProcessMode",
+      "table": "PAY_PAYROLL_ACTIONS",
+      "column": "FUTURE_PROCESS_MODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PayActLastUpdateDate",
+      "table": "PAY_PAYROLL_ACTIONS",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": true
+    },
+    {
+      "name": "PayActLastUpdateLogin",
+      "table": "PAY_PAYROLL_ACTIONS",
+      "column": "LAST_UPDATE_LOGIN",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PayActLastUpdatedBy",
+      "table": "PAY_PAYROLL_ACTIONS",
+      "column": "LAST_UPDATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PayActLegislativeDataGroupId",
+      "table": "PAY_PAYROLL_ACTIONS",
+      "column": "LEGISLATIVE_DATA_GROUP_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PayActLegislativeParameters",
+      "table": "PAY_PAYROLL_ACTIONS",
+      "column": "LEGISLATIVE_PARAMETERS",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PayActObjectVersionNumber",
+      "table": "PAY_PAYROLL_ACTIONS",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PayActOrgPaymentMethodId",
+      "table": "PAY_PAYROLL_ACTIONS",
+      "column": "ORG_PAYMENT_METHOD_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PayActOverridingDdDate",
+      "table": "PAY_PAYROLL_ACTIONS",
+      "column": "OVERRIDING_DD_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PayActPayRequestId",
+      "table": "PAY_PAYROLL_ACTIONS",
+      "column": "PAY_REQUEST_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PayActPaymentTypeId",
+      "table": "PAY_PAYROLL_ACTIONS",
+      "column": "PAYMENT_TYPE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PayActPayrollActionId",
+      "table": "PAY_PAYROLL_ACTIONS",
+      "column": "PAYROLL_ACTION_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PayActPayrollId",
+      "table": "PAY_PAYROLL_ACTIONS",
+      "column": "PAYROLL_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PayActReportCategoryId",
+      "table": "PAY_PAYROLL_ACTIONS",
+      "column": "REPORT_CATEGORY_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PayActReportFormatMappingId",
+      "table": "PAY_PAYROLL_ACTIONS",
+      "column": "REPORT_FORMAT_MAPPING_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PayActRetroDefinitionId",
+      "table": "PAY_PAYROLL_ACTIONS",
+      "column": "RETRO_DEFINITION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PayActRunTypeId",
+      "table": "PAY_PAYROLL_ACTIONS",
+      "column": "RUN_TYPE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PayActStartChequeNumber",
+      "table": "PAY_PAYROLL_ACTIONS",
+      "column": "START_CHEQUE_NUMBER",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PayActStartDate",
+      "table": "PAY_PAYROLL_ACTIONS",
+      "column": "START_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PayActTargetPayrollActionId",
+      "table": "PAY_PAYROLL_ACTIONS",
+      "column": "TARGET_PAYROLL_ACTION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PayRelActActionSequence",
+      "table": "PAY_PAYROLL_REL_ACTIONS",
+      "column": "ACTION_SEQUENCE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PayRelActActionStatus",
+      "table": "PAY_PAYROLL_REL_ACTIONS",
+      "column": "ACTION_STATUS",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PayRelActChunkNumber",
+      "table": "PAY_PAYROLL_REL_ACTIONS",
+      "column": "CHUNK_NUMBER",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PayRelActEndDate",
+      "table": "PAY_PAYROLL_REL_ACTIONS",
+      "column": "END_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PayRelActObjectVersionNumber",
+      "table": "PAY_PAYROLL_REL_ACTIONS",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PayRelActPayrollActionId",
+      "table": "PAY_PAYROLL_REL_ACTIONS",
+      "column": "PAYROLL_ACTION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PayRelActPayrollRelActionId",
+      "table": "PAY_PAYROLL_REL_ACTIONS",
+      "column": "PAYROLL_REL_ACTION_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PayRelActPayrollRelationshipId",
+      "table": "PAY_PAYROLL_REL_ACTIONS",
+      "column": "PAYROLL_RELATIONSHIP_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PayRelActPrePaymentId",
+      "table": "PAY_PAYROLL_REL_ACTIONS",
+      "column": "PRE_PAYMENT_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PayRelActRetroComponentId",
+      "table": "PAY_PAYROLL_REL_ACTIONS",
+      "column": "RETRO_COMPONENT_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PayRelActRunTypeId",
+      "table": "PAY_PAYROLL_REL_ACTIONS",
+      "column": "RUN_TYPE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PayRelActSerialNumber",
+      "table": "PAY_PAYROLL_REL_ACTIONS",
+      "column": "SERIAL_NUMBER",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PayRelActSourceActionId",
+      "table": "PAY_PAYROLL_REL_ACTIONS",
+      "column": "SOURCE_ACTION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PayRelActStartDate",
+      "table": "PAY_PAYROLL_REL_ACTIONS",
+      "column": "START_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PayRelDnCreatedBy",
+      "table": "PAY_PAY_RELATIONSHIPS_DN",
+      "column": "CREATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PayRelDnCreationDate",
+      "table": "PAY_PAY_RELATIONSHIPS_DN",
+      "column": "CREATION_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PayRelDnEndDate",
+      "table": "PAY_PAY_RELATIONSHIPS_DN",
+      "column": "END_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PayRelDnLastUpdateDate",
+      "table": "PAY_PAY_RELATIONSHIPS_DN",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": true
+    },
+    {
+      "name": "PayRelDnLastUpdateLogin",
+      "table": "PAY_PAY_RELATIONSHIPS_DN",
+      "column": "LAST_UPDATE_LOGIN",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PayRelDnLastUpdatedBy",
+      "table": "PAY_PAY_RELATIONSHIPS_DN",
+      "column": "LAST_UPDATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PayRelDnLegislativeDataGroupId1",
+      "table": "PAY_PAY_RELATIONSHIPS_DN",
+      "column": "LEGISLATIVE_DATA_GROUP_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PayRelDnObjectVersionNumber",
+      "table": "PAY_PAY_RELATIONSHIPS_DN",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PayRelDnPayrollRelationshipId",
+      "table": "PAY_PAY_RELATIONSHIPS_DN",
+      "column": "PAYROLL_RELATIONSHIP_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PayRelDnPayrollRelationshipNumber",
+      "table": "PAY_PAY_RELATIONSHIPS_DN",
+      "column": "PAYROLL_RELATIONSHIP_NUMBER",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PayRelDnPayrollStatUnitId",
+      "table": "PAY_PAY_RELATIONSHIPS_DN",
+      "column": "PAYROLL_STAT_UNIT_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PayRelDnPersonId",
+      "table": "PAY_PAY_RELATIONSHIPS_DN",
+      "column": "PERSON_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PayRelDnRelationshipTypeId",
+      "table": "PAY_PAY_RELATIONSHIPS_DN",
+      "column": "RELATIONSHIP_TYPE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PayRelDnStartDate",
+      "table": "PAY_PAY_RELATIONSHIPS_DN",
+      "column": "START_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PayReqCallId",
+      "table": "PAY_REQUESTS",
+      "column": "CALL_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PayReqCallType",
+      "table": "PAY_REQUESTS",
+      "column": "CALL_TYPE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PayReqCreatedBy",
+      "table": "PAY_REQUESTS",
+      "column": "CREATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PayReqCreationDate",
+      "table": "PAY_REQUESTS",
+      "column": "CREATION_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PayReqFlowInstanceId",
+      "table": "PAY_REQUESTS",
+      "column": "FLOW_INSTANCE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PayReqFlowTaskInstanceId",
+      "table": "PAY_REQUESTS",
+      "column": "FLOW_TASK_INSTANCE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PayReqLastUpdateDate",
+      "table": "PAY_REQUESTS",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": true
+    },
+    {
+      "name": "PayReqLastUpdateLogin",
+      "table": "PAY_REQUESTS",
+      "column": "LAST_UPDATE_LOGIN",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PayReqLastUpdatedBy",
+      "table": "PAY_REQUESTS",
+      "column": "LAST_UPDATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PayReqObjectVersionNumber",
+      "table": "PAY_REQUESTS",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PayReqParamNameVals",
+      "table": "PAY_REQUESTS",
+      "column": "PARAM_NAME_VALS",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PayReqPayRequestId",
+      "table": "PAY_REQUESTS",
+      "column": "PAY_REQUEST_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PayReqPayTaskActionId",
+      "table": "PAY_REQUESTS",
+      "column": "PAY_TASK_ACTION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PaymentCostAccountType",
+      "table": "PAY_PAYMENT_COSTS",
+      "column": "ACCOUNT_TYPE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PaymentCostAccountingDate",
+      "table": "PAY_PAYMENT_COSTS",
+      "column": "ACCOUNTING_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PaymentCostCostAllocationKeyflexId",
+      "table": "PAY_PAYMENT_COSTS",
+      "column": "COST_ALLOCATION_KEYFLEX_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PaymentCostCurrencyCode",
+      "table": "PAY_PAYMENT_COSTS",
+      "column": "CURRENCY_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PaymentCostDebitOrCredit",
+      "table": "PAY_PAYMENT_COSTS",
+      "column": "DEBIT_OR_CREDIT",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PaymentCostId",
+      "table": "PAY_PAYMENT_COSTS",
+      "column": "PAYMENT_COST_ID",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    },
+    {
+      "name": "PaymentCostPrePaymentId",
+      "table": "PAY_PAYMENT_COSTS",
+      "column": "PRE_PAYMENT_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PaymentCostSourceActionId",
+      "table": "PAY_PAYMENT_COSTS",
+      "column": "SOURCE_ACTION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PaymentCostSourceType",
+      "table": "PAY_PAYMENT_COSTS",
+      "column": "SOURCE_TYPE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PaymentCostValue",
+      "table": "PAY_PAYMENT_COSTS",
+      "column": "VALUE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PrePaymentBaseCurrencyValue",
+      "table": "PAY_PRE_PAYMENTS",
+      "column": "BASE_CURRENCY_VALUE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PrePaymentCalcBreakdownId",
+      "table": "PAY_PRE_PAYMENTS",
+      "column": "CALC_BREAKDOWN_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PrePaymentEffectiveDate",
+      "table": "PAY_PRE_PAYMENTS",
+      "column": "EFFECTIVE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PrePaymentOrgPaymentMethodId",
+      "table": "PAY_PRE_PAYMENTS",
+      "column": "ORG_PAYMENT_METHOD_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PrePaymentPayeeBankAccountId",
+      "table": "PAY_PRE_PAYMENTS",
+      "column": "PAYEE_BANK_ACCOUNT_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PrePaymentPayeeOrgPaymentMethodId",
+      "table": "PAY_PRE_PAYMENTS",
+      "column": "PAYEE_ORG_PAYMENT_METHOD_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PrePaymentPayerBankAccountId",
+      "table": "PAY_PRE_PAYMENTS",
+      "column": "PAYER_BANK_ACCOUNT_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PrePaymentPayrollActionId",
+      "table": "PAY_PRE_PAYMENTS",
+      "column": "PAYROLL_ACTION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PrePaymentPayrollRelActionId",
+      "table": "PAY_PRE_PAYMENTS",
+      "column": "PAYROLL_REL_ACTION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PrePaymentPersonalPaymentMethodId",
+      "table": "PAY_PRE_PAYMENTS",
+      "column": "PERSONAL_PAYMENT_METHOD_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PrePaymentPrePaymentId",
+      "table": "PAY_PRE_PAYMENTS",
+      "column": "PRE_PAYMENT_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PrePaymentSourceActionId",
+      "table": "PAY_PRE_PAYMENTS",
+      "column": "SOURCE_ACTION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PrePaymentThirdPartyPayeeId",
+      "table": "PAY_PRE_PAYMENTS",
+      "column": "THIRD_PARTY_PAYEE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PrePaymentValue",
+      "table": "PAY_PRE_PAYMENTS",
+      "column": "VALUE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    }
+  ],
+  "by_table": {
+    "PER_LEGISLATIVE_DATA_GROUPS": [
+      {
+        "attribute": "LdgPEOCostAllocationIdFlexNum",
+        "column": "COST_ALLOCATION_ID_FLEX_NUM",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "LdgPEOLegislativeDataGroupId",
+        "column": "LEGISLATIVE_DATA_GROUP_ID",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "PAY_PAYROLL_ACTIONS": [
+      {
+        "attribute": "PayActActionParameterGroupId",
+        "column": "ACTION_PARAMETER_GROUP_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PayActActionPopulationStatus",
+        "column": "ACTION_POPULATION_STATUS",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PayActActionSequence",
+        "column": "ACTION_SEQUENCE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PayActActionStatus",
+        "column": "ACTION_STATUS",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PayActActionType",
+        "column": "ACTION_TYPE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PayActAssignmentSetId",
+        "column": "ASSIGNMENT_SET_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PayActBatchProcessMode",
+        "column": "BATCH_PROCESS_MODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PayActChequeProcedure",
+        "column": "CHEQUE_PROCEDURE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PayActConsolidationSetId",
+        "column": "CONSOLIDATION_SET_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PayActCreatedBy",
+        "column": "CREATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PayActCreationDate",
+        "column": "CREATION_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PayActCurrentChunkNumber",
+        "column": "CURRENT_CHUNK_NUMBER",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PayActCurrentTask",
+        "column": "CURRENT_TASK",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PayActDateEarned",
+        "column": "DATE_EARNED",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PayActDisplayRunNumber",
+        "column": "DISPLAY_RUN_NUMBER",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PayActEffectiveDate",
+        "column": "EFFECTIVE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PayActElementSetId",
+        "column": "ELEMENT_SET_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PayActEndChequeNumber",
+        "column": "END_CHEQUE_NUMBER",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PayActEndDate",
+        "column": "END_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PayActFutureProcessMode",
+        "column": "FUTURE_PROCESS_MODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PayActLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PayActLastUpdateLogin",
+        "column": "LAST_UPDATE_LOGIN",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PayActLastUpdatedBy",
+        "column": "LAST_UPDATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PayActLegislativeDataGroupId",
+        "column": "LEGISLATIVE_DATA_GROUP_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PayActLegislativeParameters",
+        "column": "LEGISLATIVE_PARAMETERS",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PayActObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PayActOrgPaymentMethodId",
+        "column": "ORG_PAYMENT_METHOD_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PayActOverridingDdDate",
+        "column": "OVERRIDING_DD_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PayActPayRequestId",
+        "column": "PAY_REQUEST_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PayActPaymentTypeId",
+        "column": "PAYMENT_TYPE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PayActPayrollActionId",
+        "column": "PAYROLL_ACTION_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PayActPayrollId",
+        "column": "PAYROLL_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PayActReportCategoryId",
+        "column": "REPORT_CATEGORY_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PayActReportFormatMappingId",
+        "column": "REPORT_FORMAT_MAPPING_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PayActRetroDefinitionId",
+        "column": "RETRO_DEFINITION_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PayActRunTypeId",
+        "column": "RUN_TYPE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PayActStartChequeNumber",
+        "column": "START_CHEQUE_NUMBER",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PayActStartDate",
+        "column": "START_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PayActTargetPayrollActionId",
+        "column": "TARGET_PAYROLL_ACTION_ID",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "PAY_PAYROLL_REL_ACTIONS": [
+      {
+        "attribute": "PayRelActActionSequence",
+        "column": "ACTION_SEQUENCE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PayRelActActionStatus",
+        "column": "ACTION_STATUS",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PayRelActChunkNumber",
+        "column": "CHUNK_NUMBER",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PayRelActEndDate",
+        "column": "END_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PayRelActObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PayRelActPayrollActionId",
+        "column": "PAYROLL_ACTION_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PayRelActPayrollRelActionId",
+        "column": "PAYROLL_REL_ACTION_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PayRelActPayrollRelationshipId",
+        "column": "PAYROLL_RELATIONSHIP_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PayRelActPrePaymentId",
+        "column": "PRE_PAYMENT_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PayRelActRetroComponentId",
+        "column": "RETRO_COMPONENT_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PayRelActRunTypeId",
+        "column": "RUN_TYPE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PayRelActSerialNumber",
+        "column": "SERIAL_NUMBER",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PayRelActSourceActionId",
+        "column": "SOURCE_ACTION_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PayRelActStartDate",
+        "column": "START_DATE",
+        "bicc": true,
+        "pk": false
+      }
+    ],
+    "PAY_PAY_RELATIONSHIPS_DN": [
+      {
+        "attribute": "PayRelDnCreatedBy",
+        "column": "CREATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PayRelDnCreationDate",
+        "column": "CREATION_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PayRelDnEndDate",
+        "column": "END_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PayRelDnLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PayRelDnLastUpdateLogin",
+        "column": "LAST_UPDATE_LOGIN",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PayRelDnLastUpdatedBy",
+        "column": "LAST_UPDATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PayRelDnLegislativeDataGroupId1",
+        "column": "LEGISLATIVE_DATA_GROUP_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PayRelDnObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PayRelDnPayrollRelationshipId",
+        "column": "PAYROLL_RELATIONSHIP_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PayRelDnPayrollRelationshipNumber",
+        "column": "PAYROLL_RELATIONSHIP_NUMBER",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PayRelDnPayrollStatUnitId",
+        "column": "PAYROLL_STAT_UNIT_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PayRelDnPersonId",
+        "column": "PERSON_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PayRelDnRelationshipTypeId",
+        "column": "RELATIONSHIP_TYPE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PayRelDnStartDate",
+        "column": "START_DATE",
+        "bicc": true,
+        "pk": false
+      }
+    ],
+    "PAY_REQUESTS": [
+      {
+        "attribute": "PayReqCallId",
+        "column": "CALL_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PayReqCallType",
+        "column": "CALL_TYPE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PayReqCreatedBy",
+        "column": "CREATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PayReqCreationDate",
+        "column": "CREATION_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PayReqFlowInstanceId",
+        "column": "FLOW_INSTANCE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PayReqFlowTaskInstanceId",
+        "column": "FLOW_TASK_INSTANCE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PayReqLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PayReqLastUpdateLogin",
+        "column": "LAST_UPDATE_LOGIN",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PayReqLastUpdatedBy",
+        "column": "LAST_UPDATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PayReqObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PayReqParamNameVals",
+        "column": "PARAM_NAME_VALS",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PayReqPayRequestId",
+        "column": "PAY_REQUEST_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PayReqPayTaskActionId",
+        "column": "PAY_TASK_ACTION_ID",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "PAY_PAYMENT_COSTS": [
+      {
+        "attribute": "PaymentCostAccountType",
+        "column": "ACCOUNT_TYPE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PaymentCostAccountingDate",
+        "column": "ACCOUNTING_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PaymentCostCostAllocationKeyflexId",
+        "column": "COST_ALLOCATION_KEYFLEX_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PaymentCostCurrencyCode",
+        "column": "CURRENCY_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PaymentCostDebitOrCredit",
+        "column": "DEBIT_OR_CREDIT",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PaymentCostId",
+        "column": "PAYMENT_COST_ID",
+        "bicc": true,
+        "pk": true
+      },
+      {
+        "attribute": "PaymentCostPrePaymentId",
+        "column": "PRE_PAYMENT_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PaymentCostSourceActionId",
+        "column": "SOURCE_ACTION_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PaymentCostSourceType",
+        "column": "SOURCE_TYPE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PaymentCostValue",
+        "column": "VALUE",
+        "bicc": true,
+        "pk": false
+      }
+    ],
+    "PAY_PRE_PAYMENTS": [
+      {
+        "attribute": "PrePaymentBaseCurrencyValue",
+        "column": "BASE_CURRENCY_VALUE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PrePaymentCalcBreakdownId",
+        "column": "CALC_BREAKDOWN_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PrePaymentEffectiveDate",
+        "column": "EFFECTIVE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PrePaymentOrgPaymentMethodId",
+        "column": "ORG_PAYMENT_METHOD_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PrePaymentPayeeBankAccountId",
+        "column": "PAYEE_BANK_ACCOUNT_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PrePaymentPayeeOrgPaymentMethodId",
+        "column": "PAYEE_ORG_PAYMENT_METHOD_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PrePaymentPayerBankAccountId",
+        "column": "PAYER_BANK_ACCOUNT_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PrePaymentPayrollActionId",
+        "column": "PAYROLL_ACTION_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PrePaymentPayrollRelActionId",
+        "column": "PAYROLL_REL_ACTION_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PrePaymentPersonalPaymentMethodId",
+        "column": "PERSONAL_PAYMENT_METHOD_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PrePaymentPrePaymentId",
+        "column": "PRE_PAYMENT_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PrePaymentSourceActionId",
+        "column": "SOURCE_ACTION_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PrePaymentThirdPartyPayeeId",
+        "column": "THIRD_PARTY_PAYEE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PrePaymentValue",
+        "column": "VALUE",
+        "bicc": false,
+        "pk": false
+      }
+    ]
+  }
+}

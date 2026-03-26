@@ -1,0 +1,214 @@
+{
+  "meta": {
+    "pvo_name": "NegotiationsPVO",
+    "full_path": "FscmTopModelAM.PrcPonPublicViewAM.NegotiationsPVO",
+    "module_path": "FscmTopModelAM.PrcPonPublicViewAM",
+    "module_code": "PO",
+    "type": "pvo",
+    "description": "Extrai os cabeçalhos de negociações de sourcing (RFQ, RFI, Auction, RFP), incluindo tipo de evento, status, datas, regras de precificação e unidade de negócio. Permite análise de processos competitivos e eficácia das estratégias de sourcing."
+  },
+  "stats": {
+    "total_attributes": 13,
+    "tables_count": 3,
+    "bicc_enabled": 3,
+    "bicc_pct": 23,
+    "pk_count": 1
+  },
+  "tables": [
+    "FUN_ALL_BUSINESS_UNITS_V",
+    "PON_AUCTION_HEADERS_ALL",
+    "PON_AUC_DOCTYPES_VL"
+  ],
+  "attributes": [
+    {
+      "name": "BusinessUnitBuId",
+      "table": "FUN_ALL_BUSINESS_UNITS_V",
+      "column": "BU_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BusinessUnitBuName",
+      "table": "FUN_ALL_BUSINESS_UNITS_V",
+      "column": "BU_NAME",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationDocumentTypeDoctypeId",
+      "table": "PON_AUC_DOCTYPES_VL",
+      "column": "DOCTYPE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationDocumentTypeName",
+      "table": "PON_AUC_DOCTYPES_VL",
+      "column": "NAME",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderAuctionHeaderId",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "AUCTION_HEADER_ID",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderAuctionStatus",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "AUCTION_STATUS",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderAuctionTitle",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "AUCTION_TITLE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderAwardStatus",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "AWARD_STATUS",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderDocumentNumber",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "DOCUMENT_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderIsTemplateFlag",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "IS_TEMPLATE_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderObjectVersionNumber",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderPrcBuId",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "PRC_BU_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderProjectsEnabledFlag",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "PROJECTS_ENABLED_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    }
+  ],
+  "by_table": {
+    "FUN_ALL_BUSINESS_UNITS_V": [
+      {
+        "attribute": "BusinessUnitBuId",
+        "column": "BU_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BusinessUnitBuName",
+        "column": "BU_NAME",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "PON_AUC_DOCTYPES_VL": [
+      {
+        "attribute": "NegotiationDocumentTypeDoctypeId",
+        "column": "DOCTYPE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationDocumentTypeName",
+        "column": "NAME",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "PON_AUCTION_HEADERS_ALL": [
+      {
+        "attribute": "NegotiationHeaderAuctionHeaderId",
+        "column": "AUCTION_HEADER_ID",
+        "bicc": true,
+        "pk": true
+      },
+      {
+        "attribute": "NegotiationHeaderAuctionStatus",
+        "column": "AUCTION_STATUS",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderAuctionTitle",
+        "column": "AUCTION_TITLE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderAwardStatus",
+        "column": "AWARD_STATUS",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderDocumentNumber",
+        "column": "DOCUMENT_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderIsTemplateFlag",
+        "column": "IS_TEMPLATE_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderPrcBuId",
+        "column": "PRC_BU_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderProjectsEnabledFlag",
+        "column": "PROJECTS_ENABLED_FLAG",
+        "bicc": false,
+        "pk": false
+      }
+    ]
+  }
+}

@@ -1,0 +1,489 @@
+{
+  "meta": {
+    "pvo_name": "ReferenceAccount",
+    "full_path": "FscmTopModelAM.FinArTopPublicModelAM.ReferenceAccount",
+    "module_path": "FscmTopModelAM.FinArTopPublicModelAM",
+    "module_code": "AR",
+    "type": "pvo",
+    "description": "Extrai as contas de referência de Contas a Receber, mapeando combinações contábeis (code combinations) por unidade de negócio e vendedor. Define o plano de contas padrão para contabilização automática das transações de recebíveis."
+  },
+  "stats": {
+    "total_attributes": 32,
+    "tables_count": 6,
+    "bicc_enabled": 5,
+    "bicc_pct": 16,
+    "pk_count": 3
+  },
+  "tables": [
+    "AR_REF_ACCOUNTS_ALL",
+    "FUN_BU_PERF_V",
+    "GL_CODE_COMBINATIONS",
+    "GL_LEDGERS",
+    "HR_ORGANIZATION_INFORMATION_F",
+    "JTF_RS_SALESREPS"
+  ],
+  "attributes": [
+    {
+      "name": "BuId",
+      "table": "AR_REF_ACCOUNTS_ALL",
+      "column": "BU_ID",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    },
+    {
+      "name": "BusinessUnitBusinessUnitId",
+      "table": "FUN_BU_PERF_V",
+      "column": "BU_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BusinessUnitName",
+      "table": "FUN_BU_PERF_V",
+      "column": "BU_NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BusinessUnitPrimaryLedgerId",
+      "table": "HR_ORGANIZATION_INFORMATION_F",
+      "column": "ORG_INFORMATION3",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BusinessUnitStatus",
+      "table": "FUN_BU_PERF_V",
+      "column": "STATUS",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CodeCombinationClearingCodeCombinationId",
+      "table": "GL_CODE_COMBINATIONS",
+      "column": "CODE_COMBINATION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CodeCombinationFreightCodeCombinationId",
+      "table": "GL_CODE_COMBINATIONS",
+      "column": "CODE_COMBINATION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CodeCombinationRecCodeCombinationId",
+      "table": "GL_CODE_COMBINATIONS",
+      "column": "CODE_COMBINATION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CodeCombinationRevCodeCombinationId",
+      "table": "GL_CODE_COMBINATIONS",
+      "column": "CODE_COMBINATION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CodeCombinationTaxCodeCombinationId",
+      "table": "GL_CODE_COMBINATIONS",
+      "column": "CODE_COMBINATION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CodeCombinationUnbilledCodeCombinationId",
+      "table": "GL_CODE_COMBINATIONS",
+      "column": "CODE_COMBINATION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CodeCombinationUnearnedCodeCombinationId",
+      "table": "GL_CODE_COMBINATIONS",
+      "column": "CODE_COMBINATION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "FreightCcid",
+      "table": "AR_REF_ACCOUNTS_ALL",
+      "column": "FREIGHT_CCID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "GlLedgersChartOfAccountsId",
+      "table": "GL_LEDGERS",
+      "column": "CHART_OF_ACCOUNTS_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "GlLedgersLedgerId",
+      "table": "GL_LEDGERS",
+      "column": "LEDGER_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "GlLedgersName",
+      "table": "GL_LEDGERS",
+      "column": "NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "GlLedgersObjectVersionNumber",
+      "table": "GL_LEDGERS",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LedgerId",
+      "table": "AR_REF_ACCOUNTS_ALL",
+      "column": "LEDGER_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ObjectVersionNumber",
+      "table": "AR_REF_ACCOUNTS_ALL",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "OrgInfoEffectiveEndDate",
+      "table": "HR_ORGANIZATION_INFORMATION_F",
+      "column": "EFFECTIVE_END_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "OrgInfoEffectiveStartDate",
+      "table": "HR_ORGANIZATION_INFORMATION_F",
+      "column": "EFFECTIVE_START_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "OrgInfoOrgInformationId",
+      "table": "HR_ORGANIZATION_INFORMATION_F",
+      "column": "ORG_INFORMATION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RecCcid",
+      "table": "AR_REF_ACCOUNTS_ALL",
+      "column": "REC_CCID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ResourceSalesrepResourceId",
+      "table": "JTF_RS_SALESREPS",
+      "column": "RESOURCE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ResourceSalesrepResourceSalesrepId",
+      "table": "JTF_RS_SALESREPS",
+      "column": "RESOURCE_SALESREP_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ResourceSalesrepStatus",
+      "table": "JTF_RS_SALESREPS",
+      "column": "STATUS",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RevCcid",
+      "table": "AR_REF_ACCOUNTS_ALL",
+      "column": "REV_CCID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SourceRefAccountId",
+      "table": "AR_REF_ACCOUNTS_ALL",
+      "column": "SOURCE_REF_ACCOUNT_ID",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    },
+    {
+      "name": "SourceRefTable",
+      "table": "AR_REF_ACCOUNTS_ALL",
+      "column": "SOURCE_REF_TABLE",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    },
+    {
+      "name": "TaxCcid",
+      "table": "AR_REF_ACCOUNTS_ALL",
+      "column": "TAX_CCID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "UnbilledCcid",
+      "table": "AR_REF_ACCOUNTS_ALL",
+      "column": "UNBILLED_CCID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "UnearnedCcid",
+      "table": "AR_REF_ACCOUNTS_ALL",
+      "column": "UNEARNED_CCID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    }
+  ],
+  "by_table": {
+    "AR_REF_ACCOUNTS_ALL": [
+      {
+        "attribute": "BuId",
+        "column": "BU_ID",
+        "bicc": true,
+        "pk": true
+      },
+      {
+        "attribute": "FreightCcid",
+        "column": "FREIGHT_CCID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "LedgerId",
+        "column": "LEDGER_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "RecCcid",
+        "column": "REC_CCID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "RevCcid",
+        "column": "REV_CCID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "SourceRefAccountId",
+        "column": "SOURCE_REF_ACCOUNT_ID",
+        "bicc": true,
+        "pk": true
+      },
+      {
+        "attribute": "SourceRefTable",
+        "column": "SOURCE_REF_TABLE",
+        "bicc": true,
+        "pk": true
+      },
+      {
+        "attribute": "TaxCcid",
+        "column": "TAX_CCID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "UnbilledCcid",
+        "column": "UNBILLED_CCID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "UnearnedCcid",
+        "column": "UNEARNED_CCID",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "FUN_BU_PERF_V": [
+      {
+        "attribute": "BusinessUnitBusinessUnitId",
+        "column": "BU_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BusinessUnitName",
+        "column": "BU_NAME",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "BusinessUnitStatus",
+        "column": "STATUS",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "HR_ORGANIZATION_INFORMATION_F": [
+      {
+        "attribute": "BusinessUnitPrimaryLedgerId",
+        "column": "ORG_INFORMATION3",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "OrgInfoEffectiveEndDate",
+        "column": "EFFECTIVE_END_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "OrgInfoEffectiveStartDate",
+        "column": "EFFECTIVE_START_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "OrgInfoOrgInformationId",
+        "column": "ORG_INFORMATION_ID",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "GL_CODE_COMBINATIONS": [
+      {
+        "attribute": "CodeCombinationClearingCodeCombinationId",
+        "column": "CODE_COMBINATION_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CodeCombinationFreightCodeCombinationId",
+        "column": "CODE_COMBINATION_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CodeCombinationRecCodeCombinationId",
+        "column": "CODE_COMBINATION_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CodeCombinationRevCodeCombinationId",
+        "column": "CODE_COMBINATION_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CodeCombinationTaxCodeCombinationId",
+        "column": "CODE_COMBINATION_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CodeCombinationUnbilledCodeCombinationId",
+        "column": "CODE_COMBINATION_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CodeCombinationUnearnedCodeCombinationId",
+        "column": "CODE_COMBINATION_ID",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "GL_LEDGERS": [
+      {
+        "attribute": "GlLedgersChartOfAccountsId",
+        "column": "CHART_OF_ACCOUNTS_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "GlLedgersLedgerId",
+        "column": "LEDGER_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "GlLedgersName",
+        "column": "NAME",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "GlLedgersObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "JTF_RS_SALESREPS": [
+      {
+        "attribute": "ResourceSalesrepResourceId",
+        "column": "RESOURCE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ResourceSalesrepResourceSalesrepId",
+        "column": "RESOURCE_SALESREP_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ResourceSalesrepStatus",
+        "column": "STATUS",
+        "bicc": false,
+        "pk": false
+      }
+    ]
+  }
+}

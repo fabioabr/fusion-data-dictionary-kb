@@ -1,0 +1,677 @@
+{
+  "meta": {
+    "pvo_name": "ProspectsViewAllPVO",
+    "full_path": "HcmTopModelAnalyticsGlobalAM.HcmRecHiringProspectsAM.ProspectsViewAllPVO",
+    "module_path": "HcmTopModelAnalyticsGlobalAM.HcmRecHiringProspectsAM",
+    "module_code": "HCM",
+    "type": "pvo",
+    "description": "Visão completa (sem restrição de segurança) de prospects de recrutamento. Utilizada para relatórios analíticos abrangentes do funil de candidatos."
+  },
+  "stats": {
+    "total_attributes": 45,
+    "tables_count": 8,
+    "bicc_enabled": 22,
+    "bicc_pct": 49,
+    "pk_count": 1
+  },
+  "tables": [
+    "IRC_CAND_PROFILE_USAGES_M",
+    "IRC_PROSPECTS",
+    "IRC_PRSPT_LAST_INTERACTION_V",
+    "IRC_REQUISITIONS_B",
+    "IRC_SUBMISSIONS",
+    "PER_ALL_PEOPLE_F",
+    "PER_EMAIL_ADDRESSES",
+    "PER_PERSON_NAMES_F_V"
+  ],
+  "attributes": [
+    {
+      "name": "CProUsgPEOCandProfileId",
+      "table": "IRC_CAND_PROFILE_USAGES_M",
+      "column": "PROFILE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CProUsgPEOCandProfileUsageId",
+      "table": "IRC_CAND_PROFILE_USAGES_M",
+      "column": "CAND_PROFILE_USAGE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CProUsgPEOEffectiveEndDate",
+      "table": "IRC_CAND_PROFILE_USAGES_M",
+      "column": "EFFECTIVE_END_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CProUsgPEOEffectiveLatestChange",
+      "table": "IRC_CAND_PROFILE_USAGES_M",
+      "column": "EFFECTIVE_LATEST_CHANGE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CProUsgPEOEffectiveSequence",
+      "table": "IRC_CAND_PROFILE_USAGES_M",
+      "column": "EFFECTIVE_SEQUENCE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CProUsgPEOEffectiveStartDate",
+      "table": "IRC_CAND_PROFILE_USAGES_M",
+      "column": "EFFECTIVE_START_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "EmailAddrPEOAddedByEmailAddress",
+      "table": "PER_EMAIL_ADDRESSES",
+      "column": "EMAIL_ADDRESS",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "EmailAddrPEOEmailAddressId",
+      "table": "PER_EMAIL_ADDRESSES",
+      "column": "EMAIL_ADDRESS_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PerDetailsPEOAddedByPersonNumber",
+      "table": "PER_ALL_PEOPLE_F",
+      "column": "PERSON_NUMBER",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PerDetailsPEOEffectiveEndDate",
+      "table": "PER_ALL_PEOPLE_F",
+      "column": "EFFECTIVE_END_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PerDetailsPEOEffectiveStartDate",
+      "table": "PER_ALL_PEOPLE_F",
+      "column": "EFFECTIVE_START_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PerDetailsPEOPersonId",
+      "table": "PER_ALL_PEOPLE_F",
+      "column": "PERSON_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PerNamePEOAddedByFirstName",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "FIRST_NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PerNamePEOAddedByFullName",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "FULL_NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PerNamePEOAddedByLastName",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "LAST_NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PerNamePEOAddedByMiddleNames",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "MIDDLE_NAMES",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PerNamePEOEffectiveEndDate",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "EFFECTIVE_END_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PerNamePEOEffectiveStartDate",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "EFFECTIVE_START_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PerNamePEOPersonNameId",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "PERSON_NAME_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProspectId",
+      "table": "IRC_PROSPECTS",
+      "column": "PROSPECT_ID",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    },
+    {
+      "name": "ProspectLastInteractionPEOInteractionDate",
+      "table": "IRC_PRSPT_LAST_INTERACTION_V",
+      "column": "INTERACTION_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProspectLastInteractionPEOInteractionId",
+      "table": "IRC_PRSPT_LAST_INTERACTION_V",
+      "column": "INTERACTION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProspectsPEOAddedByPersonId",
+      "table": "IRC_PROSPECTS",
+      "column": "ADDED_BY_PERSON_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProspectsPEOCandidatePersonId",
+      "table": "IRC_PROSPECTS",
+      "column": "CANDIDATE_PERSON_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProspectsPEOContextId",
+      "table": "IRC_PROSPECTS",
+      "column": "CONTEXT_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProspectsPEOContextTypeCode",
+      "table": "IRC_PROSPECTS",
+      "column": "CONTEXT_TYPE_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProspectsPEOCreatedBy",
+      "table": "IRC_PROSPECTS",
+      "column": "CREATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProspectsPEOCreationDate",
+      "table": "IRC_PROSPECTS",
+      "column": "CREATION_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProspectsPEOLastUpdateDate",
+      "table": "IRC_PROSPECTS",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": true
+    },
+    {
+      "name": "ProspectsPEOLastUpdateLogin",
+      "table": "IRC_PROSPECTS",
+      "column": "LAST_UPDATE_LOGIN",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProspectsPEOLastUpdatedBy",
+      "table": "IRC_PROSPECTS",
+      "column": "LAST_UPDATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProspectsPEOObjectStatus",
+      "table": "IRC_PROSPECTS",
+      "column": "OBJECT_STATUS",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProspectsPEOObjectVersionNum",
+      "table": "IRC_PROSPECTS",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProspectsPEOProspectStatusCode",
+      "table": "IRC_PROSPECTS",
+      "column": "PROSPECT_STATUS_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProspectsPEOProspectTypeCode",
+      "table": "IRC_PROSPECTS",
+      "column": "PROSPECT_TYPE_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProspectsPEOReferralId",
+      "table": "IRC_PROSPECTS",
+      "column": "REFERRAL_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProspectsPEORequisitionId",
+      "table": "IRC_PROSPECTS",
+      "column": "REQUISITION_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProspectsPEOSubmissionId",
+      "table": "IRC_PROSPECTS",
+      "column": "SUBMISSION_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReqBPEORequisitionId",
+      "table": "IRC_REQUISITIONS_B",
+      "column": "REQUISITION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReqBPEORequisitionTemplateId",
+      "table": "IRC_REQUISITIONS_B",
+      "column": "REQUISITION_TEMPLATE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SubmissionPEOActiveFlag",
+      "table": "IRC_SUBMISSIONS",
+      "column": "ACTIVE_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SubmissionPEOCreationDate",
+      "table": "IRC_SUBMISSIONS",
+      "column": "CREATION_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SubmissionPEOObjectVersionNum",
+      "table": "IRC_SUBMISSIONS",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SubmissionPEOSubmissionDate",
+      "table": "IRC_SUBMISSIONS",
+      "column": "SUBMISSION_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SubmissionPEOSubmissionId",
+      "table": "IRC_SUBMISSIONS",
+      "column": "SUBMISSION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    }
+  ],
+  "by_table": {
+    "IRC_CAND_PROFILE_USAGES_M": [
+      {
+        "attribute": "CProUsgPEOCandProfileId",
+        "column": "PROFILE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CProUsgPEOCandProfileUsageId",
+        "column": "CAND_PROFILE_USAGE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CProUsgPEOEffectiveEndDate",
+        "column": "EFFECTIVE_END_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CProUsgPEOEffectiveLatestChange",
+        "column": "EFFECTIVE_LATEST_CHANGE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CProUsgPEOEffectiveSequence",
+        "column": "EFFECTIVE_SEQUENCE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CProUsgPEOEffectiveStartDate",
+        "column": "EFFECTIVE_START_DATE",
+        "bicc": true,
+        "pk": false
+      }
+    ],
+    "PER_EMAIL_ADDRESSES": [
+      {
+        "attribute": "EmailAddrPEOAddedByEmailAddress",
+        "column": "EMAIL_ADDRESS",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "EmailAddrPEOEmailAddressId",
+        "column": "EMAIL_ADDRESS_ID",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "PER_ALL_PEOPLE_F": [
+      {
+        "attribute": "PerDetailsPEOAddedByPersonNumber",
+        "column": "PERSON_NUMBER",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PerDetailsPEOEffectiveEndDate",
+        "column": "EFFECTIVE_END_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PerDetailsPEOEffectiveStartDate",
+        "column": "EFFECTIVE_START_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PerDetailsPEOPersonId",
+        "column": "PERSON_ID",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "PER_PERSON_NAMES_F_V": [
+      {
+        "attribute": "PerNamePEOAddedByFirstName",
+        "column": "FIRST_NAME",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PerNamePEOAddedByFullName",
+        "column": "FULL_NAME",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PerNamePEOAddedByLastName",
+        "column": "LAST_NAME",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PerNamePEOAddedByMiddleNames",
+        "column": "MIDDLE_NAMES",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PerNamePEOEffectiveEndDate",
+        "column": "EFFECTIVE_END_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PerNamePEOEffectiveStartDate",
+        "column": "EFFECTIVE_START_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PerNamePEOPersonNameId",
+        "column": "PERSON_NAME_ID",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "IRC_PROSPECTS": [
+      {
+        "attribute": "ProspectId",
+        "column": "PROSPECT_ID",
+        "bicc": true,
+        "pk": true
+      },
+      {
+        "attribute": "ProspectsPEOAddedByPersonId",
+        "column": "ADDED_BY_PERSON_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ProspectsPEOCandidatePersonId",
+        "column": "CANDIDATE_PERSON_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ProspectsPEOContextId",
+        "column": "CONTEXT_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ProspectsPEOContextTypeCode",
+        "column": "CONTEXT_TYPE_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ProspectsPEOCreatedBy",
+        "column": "CREATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProspectsPEOCreationDate",
+        "column": "CREATION_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ProspectsPEOLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ProspectsPEOLastUpdateLogin",
+        "column": "LAST_UPDATE_LOGIN",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProspectsPEOLastUpdatedBy",
+        "column": "LAST_UPDATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProspectsPEOObjectStatus",
+        "column": "OBJECT_STATUS",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ProspectsPEOObjectVersionNum",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProspectsPEOProspectStatusCode",
+        "column": "PROSPECT_STATUS_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ProspectsPEOProspectTypeCode",
+        "column": "PROSPECT_TYPE_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ProspectsPEOReferralId",
+        "column": "REFERRAL_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ProspectsPEORequisitionId",
+        "column": "REQUISITION_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ProspectsPEOSubmissionId",
+        "column": "SUBMISSION_ID",
+        "bicc": true,
+        "pk": false
+      }
+    ],
+    "IRC_PRSPT_LAST_INTERACTION_V": [
+      {
+        "attribute": "ProspectLastInteractionPEOInteractionDate",
+        "column": "INTERACTION_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProspectLastInteractionPEOInteractionId",
+        "column": "INTERACTION_ID",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "IRC_REQUISITIONS_B": [
+      {
+        "attribute": "ReqBPEORequisitionId",
+        "column": "REQUISITION_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReqBPEORequisitionTemplateId",
+        "column": "REQUISITION_TEMPLATE_ID",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "IRC_SUBMISSIONS": [
+      {
+        "attribute": "SubmissionPEOActiveFlag",
+        "column": "ACTIVE_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "SubmissionPEOCreationDate",
+        "column": "CREATION_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "SubmissionPEOObjectVersionNum",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "SubmissionPEOSubmissionDate",
+        "column": "SUBMISSION_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "SubmissionPEOSubmissionId",
+        "column": "SUBMISSION_ID",
+        "bicc": false,
+        "pk": false
+      }
+    ]
+  }
+}

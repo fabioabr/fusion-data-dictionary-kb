@@ -1,0 +1,116 @@
+---
+id: DOC-HCM-008
+doc_type: system-doc
+title: "ANC_ABSENCE_TYPES_F_TL — Traduções de Tipos de Ausência"
+system: Oracle Fusion Cloud HCM
+module: Human Capital Management
+domain: Técnico
+owner: fabio.patria
+team: dados
+status: draft
+confidentiality: internal
+tags:
+  - oracle-fusion
+  - hcm
+  - data-dictionary
+  - absence-management
+  - traducoes
+  - translations
+  - tipos-ausencia-tl
+aliases:
+  - ANC_ABSENCE_TYPES_F_TL
+  - anc_absence_types_f_tl
+  - tipos-ausencia-tl
+  - absence-types-tl
+  - anc-abs-types-tl
+source_format: markdown
+conversion_pipeline: manual-v1
+conversion_quality: 100
+qa_score: 0
+qa_date: 2026-03-25
+qa_status: not_reviewed
+created_at: 2026-03-25
+updated_at: 2026-03-25
+---
+
+# ANC_ABSENCE_TYPES_F_TL
+
+## 📌 Visão Geral
+
+Armazena as **traduções** dos nomes e descrições dos tipos de ausência em múltiplos idiomas.
+
+> [!note] Sufixos _F_TL
+> Combina **date-effective** (`_F`) e **traduções** (`_TL`). Cada registro possui vigência temporal e idioma.
+
+---
+
+## 🧠 Propósito de Negócio
+
+Esta tabela é utilizada nos seguintes processos:
+
+- **Internacionalização:** Exibição de tipos de ausência no idioma do colaborador.
+- **Self-service multilíngue:** Seleção de tipos em interfaces localizadas.
+- **Relatórios localizados:** Nomes de tipos no idioma do relatório.
+
+---
+
+## ⚙️ Colunas Principais
+
+> [!tip] Confiança
+> Escala de 0% a 100% — grau de certeza da descrição gerada por IA com base na documentação oficial Oracle (OEDMF/BICC Release 13/25A).
+> - 🟢 **81–100%** — Coluna presente na documentação oficial Oracle; nome, tipo e descrição confirmados.
+> - 🟡 **51–80%** — Coluna inferida por naming convention ou padrão Oracle; tipo exato pode variar.
+> - 🔴 **0–50%** — Existência ou tipo incertos; pode não existir no release atual; validar no ambiente.
+
+| # | Coluna | Tipo | Nulo? | Categoria | Descrição | FK | Confiança |
+|---|--------|------|-------|-----------|-----------|-----|-----------|
+| 1 | ABSENCE_TYPE_ID | NUMBER(18) | NOT NULL | PK/FK | Identificador do tipo de ausência | [[anc_absence_types_f]] | 🟢 95% |
+| 2 | LANGUAGE | VARCHAR2(4) | NOT NULL | PK | Código do idioma da tradução | — | 🟢 95% |
+| 3 | SOURCE_LANG | VARCHAR2(4) | NOT NULL | Controle | Idioma de origem da tradução | — | 🟢 90% |
+| 4 | ABSENCE_TYPE_NAME | VARCHAR2(240) | NOT NULL | Tradução | Nome traduzido do tipo | — | 🟢 90% |
+| 5 | EFFECTIVE_START_DATE | DATE | NOT NULL | Vigência | Data de início da vigência | — | 🟢 95% |
+| 6 | EFFECTIVE_END_DATE | DATE | NOT NULL | Vigência | Data de fim da vigência | — | 🟢 95% |
+| 7 | CREATED_BY | VARCHAR2(64) | NOT NULL | Auditoria | Usuário que criou o registro | — | 🟢 95% |
+| 8 | CREATION_DATE | TIMESTAMP | NOT NULL | Auditoria | Data/hora de criação | — | 🟢 95% |
+| 9 | LAST_UPDATED_BY | VARCHAR2(64) | NOT NULL | Auditoria | Último usuário que alterou | — | 🟢 95% |
+| 10 | LAST_UPDATE_DATE | TIMESTAMP | NOT NULL | Auditoria | Data/hora da última alteração | — | 🟢 95% |
+
+---
+
+## 🔗 Relacionamentos
+
+### Tabelas-pai (FK de entrada)
+- [[anc_absence_types_f]] — via `ABSENCE_TYPE_ID` (registro base do cadastro)
+
+### Tabelas-filha (FK de saída)
+- Nenhuma tabela-filha conhecida.
+
+---
+
+## 📎 Uso Típico
+
+### Nome do tipo em português
+```sql
+SELECT at.ABSENCE_TYPE_ID, tl.ABSENCE_TYPE_NAME
+FROM   ANC_ABSENCE_TYPES_F at
+JOIN   ANC_ABSENCE_TYPES_F_TL tl ON at.ABSENCE_TYPE_ID = tl.ABSENCE_TYPE_ID
+WHERE  tl.LANGUAGE = 'PT'
+  AND  SYSDATE BETWEEN at.EFFECTIVE_START_DATE AND at.EFFECTIVE_END_DATE;
+```
+
+### Filtros comuns
+- `LANGUAGE = 'PT'` — Traduções em português
+
+---
+
+## 🔒 Observações
+
+- Sempre fazer JOIN com a tabela base `_F` para filtrar por vigência.
+- O campo `SOURCE_LANG` indica o idioma de origem da tradução.
+
+---
+
+## 📚 Referências
+
+- [Oracle Docs — ANC_ABSENCE_TYPES_F_TL](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/ancabsencetypesftl.html)
+- [[hcm-module-data-dictionary]] — Dossiê do módulo HCM

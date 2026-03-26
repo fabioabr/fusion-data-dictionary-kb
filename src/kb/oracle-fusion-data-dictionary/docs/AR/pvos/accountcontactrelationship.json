@@ -1,0 +1,2435 @@
+{
+  "meta": {
+    "pvo_name": "AccountContactRelationShip",
+    "full_path": "FscmTopModelAM.FinArCustomersPublicModelAM.AccountContactRelationShip",
+    "module_path": "FscmTopModelAM.FinArCustomersPublicModelAM",
+    "module_code": "AR",
+    "type": "pvo",
+    "description": "Extrai os relacionamentos entre contatos e contas de clientes, incluindo hierarquias organizacionais e papéis. Permite mapear a estrutura de responsáveis por pagamentos e aprovações em cada conta."
+  },
+  "stats": {
+    "total_attributes": 171,
+    "tables_count": 6,
+    "bicc_enabled": 30,
+    "bicc_pct": 18,
+    "pk_count": 1
+  },
+  "tables": [
+    "HZ_CUST_ACCOUNT_ROLES",
+    "HZ_ORG_CONTACTS",
+    "HZ_PARTIES",
+    "HZ_RELATIONSHIPS",
+    "PER_PERSON_NAMES_F_V",
+    "PER_USERS"
+  ],
+  "attributes": [
+    {
+      "name": "ContactPersonPartyCategoryCode",
+      "table": "HZ_PARTIES",
+      "column": "CATEGORY_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ContactPersonPartyCeoName",
+      "table": "HZ_PARTIES",
+      "column": "CEO_NAME",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ContactPersonPartyCertReasonCode",
+      "table": "HZ_PARTIES",
+      "column": "CERT_REASON_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ContactPersonPartyCertificationLevel",
+      "table": "HZ_PARTIES",
+      "column": "CERTIFICATION_LEVEL",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ContactPersonPartyCity",
+      "table": "HZ_PARTIES",
+      "column": "CITY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ContactPersonPartyComments",
+      "table": "HZ_PARTIES",
+      "column": "COMMENTS",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ContactPersonPartyCountry",
+      "table": "HZ_PARTIES",
+      "column": "COUNTRY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ContactPersonPartyCounty",
+      "table": "HZ_PARTIES",
+      "column": "COUNTY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ContactPersonPartyCreatedBy",
+      "table": "HZ_PARTIES",
+      "column": "CREATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ContactPersonPartyCreatedByModule",
+      "table": "HZ_PARTIES",
+      "column": "CREATED_BY_MODULE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ContactPersonPartyCreationDate",
+      "table": "HZ_PARTIES",
+      "column": "CREATION_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ContactPersonPartyCurrFyPotentialRevenue",
+      "table": "HZ_PARTIES",
+      "column": "CURR_FY_POTENTIAL_REVENUE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ContactPersonPartyDateOfBirth",
+      "table": "HZ_PARTIES",
+      "column": "DATE_OF_BIRTH",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ContactPersonPartyDunsNumberC",
+      "table": "HZ_PARTIES",
+      "column": "DUNS_NUMBER_C",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ContactPersonPartyEmailAddress",
+      "table": "HZ_PARTIES",
+      "column": "EMAIL_ADDRESS",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ContactPersonPartyEmployeesTotal",
+      "table": "HZ_PARTIES",
+      "column": "EMPLOYEES_TOTAL",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ContactPersonPartyFiscalYearendMonth",
+      "table": "HZ_PARTIES",
+      "column": "FISCAL_YEAREND_MONTH",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ContactPersonPartyGender",
+      "table": "HZ_PARTIES",
+      "column": "GENDER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ContactPersonPartyGroupType",
+      "table": "HZ_PARTIES",
+      "column": "GROUP_TYPE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ContactPersonPartyGsaIndicatorFlag",
+      "table": "HZ_PARTIES",
+      "column": "GSA_INDICATOR_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ContactPersonPartyHomeCountry",
+      "table": "HZ_PARTIES",
+      "column": "HOME_COUNTRY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ContactPersonPartyHqBranchInd",
+      "table": "HZ_PARTIES",
+      "column": "HQ_BRANCH_IND",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ContactPersonPartyIdenAddrLocationId",
+      "table": "HZ_PARTIES",
+      "column": "IDEN_ADDR_LOCATION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ContactPersonPartyIdenAddrPartySiteId",
+      "table": "HZ_PARTIES",
+      "column": "IDEN_ADDR_PARTY_SITE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ContactPersonPartyInternalFlag",
+      "table": "HZ_PARTIES",
+      "column": "INTERNAL_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ContactPersonPartyJgzzFiscalCode",
+      "table": "HZ_PARTIES",
+      "column": "JGZZ_FISCAL_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ContactPersonPartyLanguageName",
+      "table": "HZ_PARTIES",
+      "column": "LANGUAGE_NAME",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ContactPersonPartyLastUpdateDate",
+      "table": "HZ_PARTIES",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": true
+    },
+    {
+      "name": "ContactPersonPartyLastUpdateLogin",
+      "table": "HZ_PARTIES",
+      "column": "LAST_UPDATE_LOGIN",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ContactPersonPartyLastUpdatedBy",
+      "table": "HZ_PARTIES",
+      "column": "LAST_UPDATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ContactPersonPartyMaritalStatus",
+      "table": "HZ_PARTIES",
+      "column": "MARITAL_STATUS",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ContactPersonPartyMissionStatement",
+      "table": "HZ_PARTIES",
+      "column": "MISSION_STATEMENT",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ContactPersonPartyNextFyPotentialRevenue",
+      "table": "HZ_PARTIES",
+      "column": "NEXT_FY_POTENTIAL_REVENUE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ContactPersonPartyObjectVersionNumber",
+      "table": "HZ_PARTIES",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ContactPersonPartyOrigSystemReference",
+      "table": "HZ_PARTIES",
+      "column": "ORIG_SYSTEM_REFERENCE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ContactPersonPartyPartyId",
+      "table": "HZ_PARTIES",
+      "column": "PARTY_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ContactPersonPartyPartyName",
+      "table": "HZ_PARTIES",
+      "column": "PARTY_NAME",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ContactPersonPartyPartyNumber",
+      "table": "HZ_PARTIES",
+      "column": "PARTY_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ContactPersonPartyPartyType",
+      "table": "HZ_PARTIES",
+      "column": "PARTY_TYPE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ContactPersonPartyPartyUniqueName",
+      "table": "HZ_PARTIES",
+      "column": "PARTY_UNIQUE_NAME",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ContactPersonPartyPersonAcademicTitle",
+      "table": "HZ_PARTIES",
+      "column": "PERSON_ACADEMIC_TITLE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ContactPersonPartyPersonFirstName",
+      "table": "HZ_PARTIES",
+      "column": "PERSON_FIRST_NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ContactPersonPartyPersonLastName",
+      "table": "HZ_PARTIES",
+      "column": "PERSON_LAST_NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ContactPersonPartyPersonLastNamePrefix",
+      "table": "HZ_PARTIES",
+      "column": "PERSON_LAST_NAME_PREFIX",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ContactPersonPartyPersonMiddleName",
+      "table": "HZ_PARTIES",
+      "column": "PERSON_MIDDLE_NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ContactPersonPartyPersonNameSuffix",
+      "table": "HZ_PARTIES",
+      "column": "PERSON_NAME_SUFFIX",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ContactPersonPartyPersonPreNameAdjunct",
+      "table": "HZ_PARTIES",
+      "column": "PERSON_PRE_NAME_ADJUNCT",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ContactPersonPartyPersonPreviousLastName",
+      "table": "HZ_PARTIES",
+      "column": "PERSON_PREVIOUS_LAST_NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ContactPersonPartyPersonSecondLastName",
+      "table": "HZ_PARTIES",
+      "column": "PERSON_SECOND_LAST_NAME",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ContactPersonPartyPersonTitle",
+      "table": "HZ_PARTIES",
+      "column": "PERSON_TITLE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ContactPersonPartyPostalCode",
+      "table": "HZ_PARTIES",
+      "column": "POSTAL_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ContactPersonPartyPrefFunctionalCurrency",
+      "table": "HZ_PARTIES",
+      "column": "PREF_FUNCTIONAL_CURRENCY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ContactPersonPartyPreferredContactMethod",
+      "table": "HZ_PARTIES",
+      "column": "PREFERRED_CONTACT_METHOD",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ContactPersonPartyPreferredContactPersonId",
+      "table": "HZ_PARTIES",
+      "column": "PREFERRED_CONTACT_PERSON_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ContactPersonPartyPreferredName",
+      "table": "HZ_PARTIES",
+      "column": "PREFERRED_NAME",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ContactPersonPartyPreferredNameId",
+      "table": "HZ_PARTIES",
+      "column": "PREFERRED_NAME_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ContactPersonPartyPrimaryEmailContactPtId",
+      "table": "HZ_PARTIES",
+      "column": "PRIMARY_EMAIL_CONTACT_PT_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ContactPersonPartyPrimaryPhoneAreaCode",
+      "table": "HZ_PARTIES",
+      "column": "PRIMARY_PHONE_AREA_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ContactPersonPartyPrimaryPhoneContactPtId",
+      "table": "HZ_PARTIES",
+      "column": "PRIMARY_PHONE_CONTACT_PT_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ContactPersonPartyPrimaryPhoneCountryCode",
+      "table": "HZ_PARTIES",
+      "column": "PRIMARY_PHONE_COUNTRY_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ContactPersonPartyPrimaryPhoneExtension",
+      "table": "HZ_PARTIES",
+      "column": "PRIMARY_PHONE_EXTENSION",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ContactPersonPartyPrimaryPhoneLineType",
+      "table": "HZ_PARTIES",
+      "column": "PRIMARY_PHONE_LINE_TYPE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ContactPersonPartyPrimaryPhoneNumber",
+      "table": "HZ_PARTIES",
+      "column": "PRIMARY_PHONE_NUMBER",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ContactPersonPartyPrimaryPhonePurpose",
+      "table": "HZ_PARTIES",
+      "column": "PRIMARY_PHONE_PURPOSE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ContactPersonPartyPrimaryUrlContactPtId",
+      "table": "HZ_PARTIES",
+      "column": "PRIMARY_URL_CONTACT_PT_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ContactPersonPartyProvince",
+      "table": "HZ_PARTIES",
+      "column": "PROVINCE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ContactPersonPartySalutation",
+      "table": "HZ_PARTIES",
+      "column": "SALUTATION",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ContactPersonPartySicCode",
+      "table": "HZ_PARTIES",
+      "column": "SIC_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ContactPersonPartySicCodeType",
+      "table": "HZ_PARTIES",
+      "column": "SIC_CODE_TYPE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ContactPersonPartyState",
+      "table": "HZ_PARTIES",
+      "column": "STATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ContactPersonPartyStatus",
+      "table": "HZ_PARTIES",
+      "column": "STATUS",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ContactPersonPartyThirdPartyFlag",
+      "table": "HZ_PARTIES",
+      "column": "THIRD_PARTY_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ContactPersonPartyTradingPartnerIdentifier",
+      "table": "HZ_PARTIES",
+      "column": "TRADING_PARTNER_IDENTIFIER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ContactPersonPartyUrl",
+      "table": "HZ_PARTIES",
+      "column": "URL",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ContactPersonPartyUserGuid",
+      "table": "HZ_PARTIES",
+      "column": "USER_GUID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ContactPersonPartyValidatedFlag",
+      "table": "HZ_PARTIES",
+      "column": "VALIDATED_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ContactPersonPartyYearEstablished",
+      "table": "HZ_PARTIES",
+      "column": "YEAR_ESTABLISHED",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustAccountRoleId",
+      "table": "HZ_CUST_ACCOUNT_ROLES",
+      "column": "CUST_ACCOUNT_ROLE_ID",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    },
+    {
+      "name": "CustomerAccountContactContactPersonId",
+      "table": "HZ_CUST_ACCOUNT_ROLES",
+      "column": "CONTACT_PERSON_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerAccountContactCreatedBy",
+      "table": "HZ_CUST_ACCOUNT_ROLES",
+      "column": "CREATED_BY",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerAccountContactCreatedByModule",
+      "table": "HZ_CUST_ACCOUNT_ROLES",
+      "column": "CREATED_BY_MODULE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerAccountContactCreationDate",
+      "table": "HZ_CUST_ACCOUNT_ROLES",
+      "column": "CREATION_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerAccountContactCustAccountId",
+      "table": "HZ_CUST_ACCOUNT_ROLES",
+      "column": "CUST_ACCOUNT_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerAccountContactCustAcctSiteId",
+      "table": "HZ_CUST_ACCOUNT_ROLES",
+      "column": "CUST_ACCT_SITE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerAccountContactLastUpdateDate",
+      "table": "HZ_CUST_ACCOUNT_ROLES",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": true
+    },
+    {
+      "name": "CustomerAccountContactLastUpdateLogin",
+      "table": "HZ_CUST_ACCOUNT_ROLES",
+      "column": "LAST_UPDATE_LOGIN",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerAccountContactLastUpdatedBy",
+      "table": "HZ_CUST_ACCOUNT_ROLES",
+      "column": "LAST_UPDATED_BY",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerAccountContactOrigSystemReference",
+      "table": "HZ_CUST_ACCOUNT_ROLES",
+      "column": "ORIG_SYSTEM_REFERENCE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerAccountContactPrimaryFlag",
+      "table": "HZ_CUST_ACCOUNT_ROLES",
+      "column": "PRIMARY_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerAccountContactRelationshipId",
+      "table": "HZ_CUST_ACCOUNT_ROLES",
+      "column": "RELATIONSHIP_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerAccountContactRoleType",
+      "table": "HZ_CUST_ACCOUNT_ROLES",
+      "column": "ROLE_TYPE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerAccountContactSourceCode",
+      "table": "HZ_CUST_ACCOUNT_ROLES",
+      "column": "SOURCE_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerAccountContactStatus",
+      "table": "HZ_CUST_ACCOUNT_ROLES",
+      "column": "STATUS",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "OrganizationContactComments",
+      "table": "HZ_ORG_CONTACTS",
+      "column": "COMMENTS",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "OrganizationContactContactNumber",
+      "table": "HZ_ORG_CONTACTS",
+      "column": "CONTACT_NUMBER",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "OrganizationContactCreatedBy",
+      "table": "HZ_ORG_CONTACTS",
+      "column": "CREATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "OrganizationContactCreatedByModule",
+      "table": "HZ_ORG_CONTACTS",
+      "column": "CREATED_BY_MODULE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "OrganizationContactCreationDate",
+      "table": "HZ_ORG_CONTACTS",
+      "column": "CREATION_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "OrganizationContactCurrencyCode",
+      "table": "HZ_ORG_CONTACTS",
+      "column": "CURRENCY_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "OrganizationContactDecisionMakerFlag",
+      "table": "HZ_ORG_CONTACTS",
+      "column": "DECISION_MAKER_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "OrganizationContactDepartment",
+      "table": "HZ_ORG_CONTACTS",
+      "column": "DEPARTMENT",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "OrganizationContactDepartmentCode",
+      "table": "HZ_ORG_CONTACTS",
+      "column": "DEPARTMENT_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "OrganizationContactJobTitle",
+      "table": "HZ_ORG_CONTACTS",
+      "column": "JOB_TITLE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "OrganizationContactJobTitleCode",
+      "table": "HZ_ORG_CONTACTS",
+      "column": "JOB_TITLE_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "OrganizationContactLastUpdateDate",
+      "table": "HZ_ORG_CONTACTS",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": true
+    },
+    {
+      "name": "OrganizationContactLastUpdateLogin",
+      "table": "HZ_ORG_CONTACTS",
+      "column": "LAST_UPDATE_LOGIN",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "OrganizationContactLastUpdatedBy",
+      "table": "HZ_ORG_CONTACTS",
+      "column": "LAST_UPDATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "OrganizationContactObjectVersionNumber",
+      "table": "HZ_ORG_CONTACTS",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "OrganizationContactOrgContactId",
+      "table": "HZ_ORG_CONTACTS",
+      "column": "ORG_CONTACT_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "OrganizationContactOrigSystemReference",
+      "table": "HZ_ORG_CONTACTS",
+      "column": "ORIG_SYSTEM_REFERENCE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "OrganizationContactPartyRelationshipId",
+      "table": "HZ_ORG_CONTACTS",
+      "column": "PARTY_RELATIONSHIP_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "OrganizationContactPartySiteId",
+      "table": "HZ_ORG_CONTACTS",
+      "column": "PARTY_SITE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "OrganizationContactRank",
+      "table": "HZ_ORG_CONTACTS",
+      "column": "RANK",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "OrganizationContactReferenceUseFlag",
+      "table": "HZ_ORG_CONTACTS",
+      "column": "REFERENCE_USE_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "OrganizationContactSalesAffinityCode",
+      "table": "HZ_ORG_CONTACTS",
+      "column": "SALES_AFFINITY_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "OrganizationContactSalesAffinityComments",
+      "table": "HZ_ORG_CONTACTS",
+      "column": "SALES_AFFINITY_COMMENTS",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "OrganizationContactSalesBuyingRoleCode",
+      "table": "HZ_ORG_CONTACTS",
+      "column": "SALES_BUYING_ROLE_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "OrganizationContactSalesInfluenceLevelCode",
+      "table": "HZ_ORG_CONTACTS",
+      "column": "SALES_INFLUENCE_LEVEL_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonCreatedByDisplayName",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "DISPLAY_NAME",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonCreatedByEffectiveEndDate",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "EFFECTIVE_END_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonCreatedByEffectiveStartDate",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "EFFECTIVE_START_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonCreatedByPersonId1",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "PERSON_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonCreatedByPersonNameId",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "PERSON_NAME_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonLastUpdatedByDisplayName",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "DISPLAY_NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonLastUpdatedByEffectiveEndDate",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "EFFECTIVE_END_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonLastUpdatedByEffectiveStartDate",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "EFFECTIVE_START_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonLastUpdatedByPersonId1",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "PERSON_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonLastUpdatedByPersonNameId",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "PERSON_NAME_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RelationshipActualContentSource",
+      "table": "HZ_RELATIONSHIPS",
+      "column": "ACTUAL_CONTENT_SOURCE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RelationshipComments",
+      "table": "HZ_RELATIONSHIPS",
+      "column": "COMMENTS",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RelationshipCreatedBy",
+      "table": "HZ_RELATIONSHIPS",
+      "column": "CREATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RelationshipCreatedByModule",
+      "table": "HZ_RELATIONSHIPS",
+      "column": "CREATED_BY_MODULE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RelationshipCreationDate",
+      "table": "HZ_RELATIONSHIPS",
+      "column": "CREATION_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RelationshipDependentFlag",
+      "table": "HZ_RELATIONSHIPS",
+      "column": "DEPENDENT_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RelationshipDirectionCode",
+      "table": "HZ_RELATIONSHIPS",
+      "column": "DIRECTION_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RelationshipDirectionalFlag",
+      "table": "HZ_RELATIONSHIPS",
+      "column": "DIRECTIONAL_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RelationshipEndDate",
+      "table": "HZ_RELATIONSHIPS",
+      "column": "END_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RelationshipHeadOfHouseholdFlag",
+      "table": "HZ_RELATIONSHIPS",
+      "column": "HEAD_OF_HOUSEHOLD_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RelationshipLastUpdateDate",
+      "table": "HZ_RELATIONSHIPS",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": true
+    },
+    {
+      "name": "RelationshipLastUpdateLogin",
+      "table": "HZ_RELATIONSHIPS",
+      "column": "LAST_UPDATE_LOGIN",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RelationshipLastUpdatedBy",
+      "table": "HZ_RELATIONSHIPS",
+      "column": "LAST_UPDATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RelationshipObjectId",
+      "table": "HZ_RELATIONSHIPS",
+      "column": "OBJECT_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RelationshipObjectTableName",
+      "table": "HZ_RELATIONSHIPS",
+      "column": "OBJECT_TABLE_NAME",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RelationshipObjectType",
+      "table": "HZ_RELATIONSHIPS",
+      "column": "OBJECT_TYPE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RelationshipObjectUsageCode",
+      "table": "HZ_RELATIONSHIPS",
+      "column": "OBJECT_USAGE_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RelationshipObjectVersionNumber",
+      "table": "HZ_RELATIONSHIPS",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RelationshipPercentageOwnership",
+      "table": "HZ_RELATIONSHIPS",
+      "column": "PERCENTAGE_OWNERSHIP",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RelationshipRelationshipCode",
+      "table": "HZ_RELATIONSHIPS",
+      "column": "RELATIONSHIP_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RelationshipRelationshipId",
+      "table": "HZ_RELATIONSHIPS",
+      "column": "RELATIONSHIP_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RelationshipRelationshipRecId",
+      "table": "HZ_RELATIONSHIPS",
+      "column": "RELATIONSHIP_REC_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RelationshipRelationshipType",
+      "table": "HZ_RELATIONSHIPS",
+      "column": "RELATIONSHIP_TYPE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RelationshipStartDate",
+      "table": "HZ_RELATIONSHIPS",
+      "column": "START_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RelationshipStatus",
+      "table": "HZ_RELATIONSHIPS",
+      "column": "STATUS",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RelationshipSubjectId",
+      "table": "HZ_RELATIONSHIPS",
+      "column": "SUBJECT_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RelationshipSubjectTableName",
+      "table": "HZ_RELATIONSHIPS",
+      "column": "SUBJECT_TABLE_NAME",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RelationshipSubjectType",
+      "table": "HZ_RELATIONSHIPS",
+      "column": "SUBJECT_TYPE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RelationshipSubjectUsageCode",
+      "table": "HZ_RELATIONSHIPS",
+      "column": "SUBJECT_USAGE_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "UserCreatedByCreatedBy",
+      "table": "PER_USERS",
+      "column": "CREATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "UserCreatedByCreationDate",
+      "table": "PER_USERS",
+      "column": "CREATION_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "UserCreatedByObjectVersionNumber",
+      "table": "PER_USERS",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "UserCreatedByPersonId",
+      "table": "PER_USERS",
+      "column": "PERSON_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "UserCreatedByUserGuid",
+      "table": "PER_USERS",
+      "column": "USER_GUID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "UserCreatedByUserId",
+      "table": "PER_USERS",
+      "column": "USER_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "UserCreatedByUsername",
+      "table": "PER_USERS",
+      "column": "USERNAME",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "UserLastUpdatedByLastUpdateDate",
+      "table": "PER_USERS",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "UserLastUpdatedByLastUpdatedBy",
+      "table": "PER_USERS",
+      "column": "LAST_UPDATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "UserLastUpdatedByObjectVersionNumber",
+      "table": "PER_USERS",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "UserLastUpdatedByPersonId",
+      "table": "PER_USERS",
+      "column": "PERSON_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "UserLastUpdatedByUserGuid",
+      "table": "PER_USERS",
+      "column": "USER_GUID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "UserLastUpdatedByUserId",
+      "table": "PER_USERS",
+      "column": "USER_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "UserLastUpdatedByUsername",
+      "table": "PER_USERS",
+      "column": "USERNAME",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    }
+  ],
+  "by_table": {
+    "HZ_PARTIES": [
+      {
+        "attribute": "ContactPersonPartyCategoryCode",
+        "column": "CATEGORY_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ContactPersonPartyCeoName",
+        "column": "CEO_NAME",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ContactPersonPartyCertReasonCode",
+        "column": "CERT_REASON_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ContactPersonPartyCertificationLevel",
+        "column": "CERTIFICATION_LEVEL",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ContactPersonPartyCity",
+        "column": "CITY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ContactPersonPartyComments",
+        "column": "COMMENTS",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ContactPersonPartyCountry",
+        "column": "COUNTRY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ContactPersonPartyCounty",
+        "column": "COUNTY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ContactPersonPartyCreatedBy",
+        "column": "CREATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ContactPersonPartyCreatedByModule",
+        "column": "CREATED_BY_MODULE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ContactPersonPartyCreationDate",
+        "column": "CREATION_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ContactPersonPartyCurrFyPotentialRevenue",
+        "column": "CURR_FY_POTENTIAL_REVENUE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ContactPersonPartyDateOfBirth",
+        "column": "DATE_OF_BIRTH",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ContactPersonPartyDunsNumberC",
+        "column": "DUNS_NUMBER_C",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ContactPersonPartyEmailAddress",
+        "column": "EMAIL_ADDRESS",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ContactPersonPartyEmployeesTotal",
+        "column": "EMPLOYEES_TOTAL",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ContactPersonPartyFiscalYearendMonth",
+        "column": "FISCAL_YEAREND_MONTH",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ContactPersonPartyGender",
+        "column": "GENDER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ContactPersonPartyGroupType",
+        "column": "GROUP_TYPE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ContactPersonPartyGsaIndicatorFlag",
+        "column": "GSA_INDICATOR_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ContactPersonPartyHomeCountry",
+        "column": "HOME_COUNTRY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ContactPersonPartyHqBranchInd",
+        "column": "HQ_BRANCH_IND",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ContactPersonPartyIdenAddrLocationId",
+        "column": "IDEN_ADDR_LOCATION_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ContactPersonPartyIdenAddrPartySiteId",
+        "column": "IDEN_ADDR_PARTY_SITE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ContactPersonPartyInternalFlag",
+        "column": "INTERNAL_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ContactPersonPartyJgzzFiscalCode",
+        "column": "JGZZ_FISCAL_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ContactPersonPartyLanguageName",
+        "column": "LANGUAGE_NAME",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ContactPersonPartyLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ContactPersonPartyLastUpdateLogin",
+        "column": "LAST_UPDATE_LOGIN",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ContactPersonPartyLastUpdatedBy",
+        "column": "LAST_UPDATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ContactPersonPartyMaritalStatus",
+        "column": "MARITAL_STATUS",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ContactPersonPartyMissionStatement",
+        "column": "MISSION_STATEMENT",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ContactPersonPartyNextFyPotentialRevenue",
+        "column": "NEXT_FY_POTENTIAL_REVENUE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ContactPersonPartyObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ContactPersonPartyOrigSystemReference",
+        "column": "ORIG_SYSTEM_REFERENCE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ContactPersonPartyPartyId",
+        "column": "PARTY_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ContactPersonPartyPartyName",
+        "column": "PARTY_NAME",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ContactPersonPartyPartyNumber",
+        "column": "PARTY_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ContactPersonPartyPartyType",
+        "column": "PARTY_TYPE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ContactPersonPartyPartyUniqueName",
+        "column": "PARTY_UNIQUE_NAME",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ContactPersonPartyPersonAcademicTitle",
+        "column": "PERSON_ACADEMIC_TITLE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ContactPersonPartyPersonFirstName",
+        "column": "PERSON_FIRST_NAME",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ContactPersonPartyPersonLastName",
+        "column": "PERSON_LAST_NAME",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ContactPersonPartyPersonLastNamePrefix",
+        "column": "PERSON_LAST_NAME_PREFIX",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ContactPersonPartyPersonMiddleName",
+        "column": "PERSON_MIDDLE_NAME",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ContactPersonPartyPersonNameSuffix",
+        "column": "PERSON_NAME_SUFFIX",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ContactPersonPartyPersonPreNameAdjunct",
+        "column": "PERSON_PRE_NAME_ADJUNCT",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ContactPersonPartyPersonPreviousLastName",
+        "column": "PERSON_PREVIOUS_LAST_NAME",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ContactPersonPartyPersonSecondLastName",
+        "column": "PERSON_SECOND_LAST_NAME",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ContactPersonPartyPersonTitle",
+        "column": "PERSON_TITLE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ContactPersonPartyPostalCode",
+        "column": "POSTAL_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ContactPersonPartyPrefFunctionalCurrency",
+        "column": "PREF_FUNCTIONAL_CURRENCY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ContactPersonPartyPreferredContactMethod",
+        "column": "PREFERRED_CONTACT_METHOD",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ContactPersonPartyPreferredContactPersonId",
+        "column": "PREFERRED_CONTACT_PERSON_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ContactPersonPartyPreferredName",
+        "column": "PREFERRED_NAME",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ContactPersonPartyPreferredNameId",
+        "column": "PREFERRED_NAME_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ContactPersonPartyPrimaryEmailContactPtId",
+        "column": "PRIMARY_EMAIL_CONTACT_PT_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ContactPersonPartyPrimaryPhoneAreaCode",
+        "column": "PRIMARY_PHONE_AREA_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ContactPersonPartyPrimaryPhoneContactPtId",
+        "column": "PRIMARY_PHONE_CONTACT_PT_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ContactPersonPartyPrimaryPhoneCountryCode",
+        "column": "PRIMARY_PHONE_COUNTRY_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ContactPersonPartyPrimaryPhoneExtension",
+        "column": "PRIMARY_PHONE_EXTENSION",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ContactPersonPartyPrimaryPhoneLineType",
+        "column": "PRIMARY_PHONE_LINE_TYPE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ContactPersonPartyPrimaryPhoneNumber",
+        "column": "PRIMARY_PHONE_NUMBER",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ContactPersonPartyPrimaryPhonePurpose",
+        "column": "PRIMARY_PHONE_PURPOSE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ContactPersonPartyPrimaryUrlContactPtId",
+        "column": "PRIMARY_URL_CONTACT_PT_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ContactPersonPartyProvince",
+        "column": "PROVINCE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ContactPersonPartySalutation",
+        "column": "SALUTATION",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ContactPersonPartySicCode",
+        "column": "SIC_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ContactPersonPartySicCodeType",
+        "column": "SIC_CODE_TYPE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ContactPersonPartyState",
+        "column": "STATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ContactPersonPartyStatus",
+        "column": "STATUS",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ContactPersonPartyThirdPartyFlag",
+        "column": "THIRD_PARTY_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ContactPersonPartyTradingPartnerIdentifier",
+        "column": "TRADING_PARTNER_IDENTIFIER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ContactPersonPartyUrl",
+        "column": "URL",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ContactPersonPartyUserGuid",
+        "column": "USER_GUID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ContactPersonPartyValidatedFlag",
+        "column": "VALIDATED_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ContactPersonPartyYearEstablished",
+        "column": "YEAR_ESTABLISHED",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "HZ_CUST_ACCOUNT_ROLES": [
+      {
+        "attribute": "CustAccountRoleId",
+        "column": "CUST_ACCOUNT_ROLE_ID",
+        "bicc": true,
+        "pk": true
+      },
+      {
+        "attribute": "CustomerAccountContactContactPersonId",
+        "column": "CONTACT_PERSON_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerAccountContactCreatedBy",
+        "column": "CREATED_BY",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerAccountContactCreatedByModule",
+        "column": "CREATED_BY_MODULE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerAccountContactCreationDate",
+        "column": "CREATION_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerAccountContactCustAccountId",
+        "column": "CUST_ACCOUNT_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerAccountContactCustAcctSiteId",
+        "column": "CUST_ACCT_SITE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerAccountContactLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerAccountContactLastUpdateLogin",
+        "column": "LAST_UPDATE_LOGIN",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerAccountContactLastUpdatedBy",
+        "column": "LAST_UPDATED_BY",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerAccountContactOrigSystemReference",
+        "column": "ORIG_SYSTEM_REFERENCE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerAccountContactPrimaryFlag",
+        "column": "PRIMARY_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerAccountContactRelationshipId",
+        "column": "RELATIONSHIP_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerAccountContactRoleType",
+        "column": "ROLE_TYPE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerAccountContactSourceCode",
+        "column": "SOURCE_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerAccountContactStatus",
+        "column": "STATUS",
+        "bicc": true,
+        "pk": false
+      }
+    ],
+    "HZ_ORG_CONTACTS": [
+      {
+        "attribute": "OrganizationContactComments",
+        "column": "COMMENTS",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "OrganizationContactContactNumber",
+        "column": "CONTACT_NUMBER",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "OrganizationContactCreatedBy",
+        "column": "CREATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "OrganizationContactCreatedByModule",
+        "column": "CREATED_BY_MODULE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "OrganizationContactCreationDate",
+        "column": "CREATION_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "OrganizationContactCurrencyCode",
+        "column": "CURRENCY_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "OrganizationContactDecisionMakerFlag",
+        "column": "DECISION_MAKER_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "OrganizationContactDepartment",
+        "column": "DEPARTMENT",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "OrganizationContactDepartmentCode",
+        "column": "DEPARTMENT_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "OrganizationContactJobTitle",
+        "column": "JOB_TITLE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "OrganizationContactJobTitleCode",
+        "column": "JOB_TITLE_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "OrganizationContactLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "OrganizationContactLastUpdateLogin",
+        "column": "LAST_UPDATE_LOGIN",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "OrganizationContactLastUpdatedBy",
+        "column": "LAST_UPDATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "OrganizationContactObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "OrganizationContactOrgContactId",
+        "column": "ORG_CONTACT_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "OrganizationContactOrigSystemReference",
+        "column": "ORIG_SYSTEM_REFERENCE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "OrganizationContactPartyRelationshipId",
+        "column": "PARTY_RELATIONSHIP_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "OrganizationContactPartySiteId",
+        "column": "PARTY_SITE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "OrganizationContactRank",
+        "column": "RANK",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "OrganizationContactReferenceUseFlag",
+        "column": "REFERENCE_USE_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "OrganizationContactSalesAffinityCode",
+        "column": "SALES_AFFINITY_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "OrganizationContactSalesAffinityComments",
+        "column": "SALES_AFFINITY_COMMENTS",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "OrganizationContactSalesBuyingRoleCode",
+        "column": "SALES_BUYING_ROLE_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "OrganizationContactSalesInfluenceLevelCode",
+        "column": "SALES_INFLUENCE_LEVEL_CODE",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "PER_PERSON_NAMES_F_V": [
+      {
+        "attribute": "PersonCreatedByDisplayName",
+        "column": "DISPLAY_NAME",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PersonCreatedByEffectiveEndDate",
+        "column": "EFFECTIVE_END_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PersonCreatedByEffectiveStartDate",
+        "column": "EFFECTIVE_START_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PersonCreatedByPersonId1",
+        "column": "PERSON_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PersonCreatedByPersonNameId",
+        "column": "PERSON_NAME_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PersonLastUpdatedByDisplayName",
+        "column": "DISPLAY_NAME",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PersonLastUpdatedByEffectiveEndDate",
+        "column": "EFFECTIVE_END_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PersonLastUpdatedByEffectiveStartDate",
+        "column": "EFFECTIVE_START_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PersonLastUpdatedByPersonId1",
+        "column": "PERSON_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PersonLastUpdatedByPersonNameId",
+        "column": "PERSON_NAME_ID",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "HZ_RELATIONSHIPS": [
+      {
+        "attribute": "RelationshipActualContentSource",
+        "column": "ACTUAL_CONTENT_SOURCE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "RelationshipComments",
+        "column": "COMMENTS",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "RelationshipCreatedBy",
+        "column": "CREATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "RelationshipCreatedByModule",
+        "column": "CREATED_BY_MODULE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "RelationshipCreationDate",
+        "column": "CREATION_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "RelationshipDependentFlag",
+        "column": "DEPENDENT_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "RelationshipDirectionCode",
+        "column": "DIRECTION_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "RelationshipDirectionalFlag",
+        "column": "DIRECTIONAL_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "RelationshipEndDate",
+        "column": "END_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "RelationshipHeadOfHouseholdFlag",
+        "column": "HEAD_OF_HOUSEHOLD_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "RelationshipLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "RelationshipLastUpdateLogin",
+        "column": "LAST_UPDATE_LOGIN",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "RelationshipLastUpdatedBy",
+        "column": "LAST_UPDATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "RelationshipObjectId",
+        "column": "OBJECT_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "RelationshipObjectTableName",
+        "column": "OBJECT_TABLE_NAME",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "RelationshipObjectType",
+        "column": "OBJECT_TYPE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "RelationshipObjectUsageCode",
+        "column": "OBJECT_USAGE_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "RelationshipObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "RelationshipPercentageOwnership",
+        "column": "PERCENTAGE_OWNERSHIP",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "RelationshipRelationshipCode",
+        "column": "RELATIONSHIP_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "RelationshipRelationshipId",
+        "column": "RELATIONSHIP_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "RelationshipRelationshipRecId",
+        "column": "RELATIONSHIP_REC_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "RelationshipRelationshipType",
+        "column": "RELATIONSHIP_TYPE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "RelationshipStartDate",
+        "column": "START_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "RelationshipStatus",
+        "column": "STATUS",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "RelationshipSubjectId",
+        "column": "SUBJECT_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "RelationshipSubjectTableName",
+        "column": "SUBJECT_TABLE_NAME",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "RelationshipSubjectType",
+        "column": "SUBJECT_TYPE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "RelationshipSubjectUsageCode",
+        "column": "SUBJECT_USAGE_CODE",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "PER_USERS": [
+      {
+        "attribute": "UserCreatedByCreatedBy",
+        "column": "CREATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "UserCreatedByCreationDate",
+        "column": "CREATION_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "UserCreatedByObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "UserCreatedByPersonId",
+        "column": "PERSON_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "UserCreatedByUserGuid",
+        "column": "USER_GUID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "UserCreatedByUserId",
+        "column": "USER_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "UserCreatedByUsername",
+        "column": "USERNAME",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "UserLastUpdatedByLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "UserLastUpdatedByLastUpdatedBy",
+        "column": "LAST_UPDATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "UserLastUpdatedByObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "UserLastUpdatedByPersonId",
+        "column": "PERSON_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "UserLastUpdatedByUserGuid",
+        "column": "USER_GUID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "UserLastUpdatedByUserId",
+        "column": "USER_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "UserLastUpdatedByUsername",
+        "column": "USERNAME",
+        "bicc": false,
+        "pk": false
+      }
+    ]
+  }
+}

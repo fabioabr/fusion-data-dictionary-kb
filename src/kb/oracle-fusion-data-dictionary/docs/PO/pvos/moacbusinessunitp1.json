@@ -1,0 +1,68 @@
+{
+  "meta": {
+    "pvo_name": "MoacBusinessUnitP1",
+    "full_path": "FscmTopModelAM.PrcPorPublicViewAM.MoacBusinessUnitP1",
+    "module_path": "FscmTopModelAM.PrcPorPublicViewAM",
+    "module_code": "PO",
+    "type": "pvo",
+    "description": "Extrai unidades de negócio no contexto MOAC (Multi-Org Access Control), definindo acessos multi-organizacionais do usuário. Fundamental para segurança de dados e governança em ambientes multi-empresa."
+  },
+  "stats": {
+    "total_attributes": 3,
+    "tables_count": 1,
+    "bicc_enabled": 2,
+    "bicc_pct": 67,
+    "pk_count": 1
+  },
+  "tables": [
+    "FUN_ALL_BUSINESS_UNITS_V"
+  ],
+  "attributes": [
+    {
+      "name": "BusinessUnitId",
+      "table": "FUN_ALL_BUSINESS_UNITS_V",
+      "column": "BU_ID",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    },
+    {
+      "name": "Name",
+      "table": "FUN_ALL_BUSINESS_UNITS_V",
+      "column": "BU_NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ShortCode",
+      "table": "FUN_ALL_BUSINESS_UNITS_V",
+      "column": "SHORT_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    }
+  ],
+  "by_table": {
+    "FUN_ALL_BUSINESS_UNITS_V": [
+      {
+        "attribute": "BusinessUnitId",
+        "column": "BU_ID",
+        "bicc": true,
+        "pk": true
+      },
+      {
+        "attribute": "Name",
+        "column": "BU_NAME",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ShortCode",
+        "column": "SHORT_CODE",
+        "bicc": false,
+        "pk": false
+      }
+    ]
+  }
+}

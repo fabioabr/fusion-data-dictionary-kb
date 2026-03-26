@@ -1,0 +1,82 @@
+{
+  "meta": {
+    "pvo_name": "DIRComponentDetailPVO",
+    "full_path": "HcmTopModelAnalyticsGlobalAM.DeductionPersonRecsAM.DIRComponentDetailPVO",
+    "module_path": "HcmTopModelAnalyticsGlobalAM.DeductionPersonRecsAM",
+    "module_code": "HCM",
+    "type": "pvo",
+    "description": "Disponibiliza detalhes de componentes de instrução de pagamento direto por período de vigência. Suporta configuração de depósitos bancários dos colaboradores."
+  },
+  "stats": {
+    "total_attributes": 4,
+    "tables_count": 1,
+    "bicc_enabled": 3,
+    "bicc_pct": 75,
+    "pk_count": 3
+  },
+  "tables": [
+    "PAY_DIR_COMP_DETAILS_F"
+  ],
+  "attributes": [
+    {
+      "name": "DIRComponentDetailDPEODirCardCompId",
+      "table": "PAY_DIR_COMP_DETAILS_F",
+      "column": "DIR_CARD_COMP_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "DIRComponentDetailDPEODirCompDetailId",
+      "table": "PAY_DIR_COMP_DETAILS_F",
+      "column": "DIR_COMP_DETAIL_ID",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    },
+    {
+      "name": "DIRComponentDetailDPEOEffectiveEndDate",
+      "table": "PAY_DIR_COMP_DETAILS_F",
+      "column": "EFFECTIVE_END_DATE",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    },
+    {
+      "name": "DIRComponentDetailDPEOEffectiveStartDate",
+      "table": "PAY_DIR_COMP_DETAILS_F",
+      "column": "EFFECTIVE_START_DATE",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    }
+  ],
+  "by_table": {
+    "PAY_DIR_COMP_DETAILS_F": [
+      {
+        "attribute": "DIRComponentDetailDPEODirCardCompId",
+        "column": "DIR_CARD_COMP_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "DIRComponentDetailDPEODirCompDetailId",
+        "column": "DIR_COMP_DETAIL_ID",
+        "bicc": true,
+        "pk": true
+      },
+      {
+        "attribute": "DIRComponentDetailDPEOEffectiveEndDate",
+        "column": "EFFECTIVE_END_DATE",
+        "bicc": true,
+        "pk": true
+      },
+      {
+        "attribute": "DIRComponentDetailDPEOEffectiveStartDate",
+        "column": "EFFECTIVE_START_DATE",
+        "bicc": true,
+        "pk": true
+      }
+    ]
+  }
+}

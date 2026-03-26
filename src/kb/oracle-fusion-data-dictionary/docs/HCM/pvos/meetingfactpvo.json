@@ -1,0 +1,1231 @@
+{
+  "meta": {
+    "pvo_name": "MeetingFactPVO",
+    "full_path": "HcmTopModelAnalyticsGlobalAM.HcmTalentCalibMeetingsAM.MeetingFactPVO",
+    "module_path": "HcmTopModelAnalyticsGlobalAM.HcmTalentCalibMeetingsAM",
+    "module_code": "HCM",
+    "type": "pvo",
+    "description": "Consolida fatos de reuniões de calibração incluindo facilitadores, participantes, avaliados e perfis associados. Visão central para análise do processo de Talent Review e calibração."
+  },
+  "stats": {
+    "total_attributes": 85,
+    "tables_count": 6,
+    "bicc_enabled": 13,
+    "bicc_pct": 15,
+    "pk_count": 3
+  },
+  "tables": [
+    "HRR_MEETINGS",
+    "HRR_MEETING_FACILITATORS",
+    "HRR_MEETING_PARTICIPANTS",
+    "HRR_MEETING_REVIEWEES",
+    "HRT_PROFILES_B",
+    "HRT_PROFILE_TYPES_B"
+  ],
+  "attributes": [
+    {
+      "name": "BusinessGroupId",
+      "table": "HRR_MEETINGS",
+      "column": "BUSINESS_GROUP_ID",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    },
+    {
+      "name": "CreatedBy",
+      "table": "HRR_MEETINGS",
+      "column": "CREATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CreationDate",
+      "table": "HRR_MEETINGS",
+      "column": "CREATION_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "DashboardTmplId",
+      "table": "HRR_MEETINGS",
+      "column": "DASHBOARD_TMPL_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "DataSubmissionStatusCode",
+      "table": "HRR_MEETING_PARTICIPANTS",
+      "column": "DATA_SUBMISSION_STATUS_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "DataSubmitDate",
+      "table": "HRR_MEETINGS",
+      "column": "DATA_SUBMIT_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "DateFrom",
+      "table": "HRT_PROFILE_TYPES_B",
+      "column": "DATE_FROM",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "DateTo",
+      "table": "HRT_PROFILE_TYPES_B",
+      "column": "DATE_TO",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LastUpdateDate",
+      "table": "HRR_MEETINGS",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": true
+    },
+    {
+      "name": "LastUpdateLogin",
+      "table": "HRR_MEETINGS",
+      "column": "LAST_UPDATE_LOGIN",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LastUpdatedBy",
+      "table": "HRR_MEETINGS",
+      "column": "LAST_UPDATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "MeetingDate",
+      "table": "HRR_MEETINGS",
+      "column": "MEETING_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "MeetingFacilitatorNotes",
+      "table": "HRR_MEETINGS",
+      "column": "MEETING_FACILITATOR_NOTES",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "MeetingFacilitatorPEOCreatedBy",
+      "table": "HRR_MEETING_FACILITATORS",
+      "column": "CREATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "MeetingFacilitatorPEOCreationDate",
+      "table": "HRR_MEETING_FACILITATORS",
+      "column": "CREATION_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "MeetingFacilitatorPEOEnterpriseId",
+      "table": "HRR_MEETING_FACILITATORS",
+      "column": "ENTERPRISE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "MeetingFacilitatorPEOFacilitatorPersonId",
+      "table": "HRR_MEETING_FACILITATORS",
+      "column": "FACILITATOR_PERSON_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "MeetingFacilitatorPEOLastUpdateDate",
+      "table": "HRR_MEETING_FACILITATORS",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": true
+    },
+    {
+      "name": "MeetingFacilitatorPEOLastUpdateLogin",
+      "table": "HRR_MEETING_FACILITATORS",
+      "column": "LAST_UPDATE_LOGIN",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "MeetingFacilitatorPEOLastUpdatedBy",
+      "table": "HRR_MEETING_FACILITATORS",
+      "column": "LAST_UPDATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "MeetingFacilitatorPEOMeetingId",
+      "table": "HRR_MEETING_FACILITATORS",
+      "column": "MEETING_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "MeetingFacilitatorPEOObjectVersionNumber",
+      "table": "HRR_MEETING_FACILITATORS",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "MeetingFacilitorPEOMeetingFacilitatorId",
+      "table": "HRR_MEETING_FACILITATORS",
+      "column": "MEETING_FACILITATOR_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "MeetingId",
+      "table": "HRR_MEETINGS",
+      "column": "MEETING_ID",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    },
+    {
+      "name": "MeetingInstructions",
+      "table": "HRR_MEETINGS",
+      "column": "MEETING_INSTRUCTIONS",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "MeetingLeaderId",
+      "table": "HRR_MEETINGS",
+      "column": "MEETING_LEADER_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "MeetingOrganizationId",
+      "table": "HRR_MEETINGS",
+      "column": "MEETING_ORGANIZATION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "MeetingParticipantPEOBusinessGroupId",
+      "table": "HRR_MEETING_PARTICIPANTS",
+      "column": "BUSINESS_GROUP_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "MeetingParticipantPEOCreatedBy",
+      "table": "HRR_MEETING_PARTICIPANTS",
+      "column": "CREATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "MeetingParticipantPEOCreationDate",
+      "table": "HRR_MEETING_PARTICIPANTS",
+      "column": "CREATION_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "MeetingParticipantPEOLastUpdateDate",
+      "table": "HRR_MEETING_PARTICIPANTS",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": true
+    },
+    {
+      "name": "MeetingParticipantPEOLastUpdateLogin",
+      "table": "HRR_MEETING_PARTICIPANTS",
+      "column": "LAST_UPDATE_LOGIN",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "MeetingParticipantPEOLastUpdatedBy",
+      "table": "HRR_MEETING_PARTICIPANTS",
+      "column": "LAST_UPDATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "MeetingParticipantPEOMeetingId",
+      "table": "HRR_MEETING_PARTICIPANTS",
+      "column": "MEETING_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "MeetingParticipantPEOMeetingParticipantId",
+      "table": "HRR_MEETING_PARTICIPANTS",
+      "column": "MEETING_PARTICIPANT_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "MeetingParticipantPEOObjectVersionNumber",
+      "table": "HRR_MEETING_PARTICIPANTS",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "MeetingParticipantPEOParticipantPersonId",
+      "table": "HRR_MEETING_PARTICIPANTS",
+      "column": "PARTICIPANT_PERSON_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "MeetingParticipantPEOParticipantTypeCode",
+      "table": "HRR_MEETING_PARTICIPANTS",
+      "column": "PARTICIPANT_TYPE_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "MeetingPurpose",
+      "table": "HRR_MEETINGS",
+      "column": "MEETING_PURPOSE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "MeetingRevieweeId",
+      "table": "HRR_MEETING_REVIEWEES",
+      "column": "MEETING_REVIEWEE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "MeetingRevieweePEOBusinessGroupId",
+      "table": "HRR_MEETING_REVIEWEES",
+      "column": "BUSINESS_GROUP_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "MeetingRevieweePEOCreatedBy",
+      "table": "HRR_MEETING_REVIEWEES",
+      "column": "CREATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "MeetingRevieweePEOCreationDate",
+      "table": "HRR_MEETING_REVIEWEES",
+      "column": "CREATION_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "MeetingRevieweePEOLastUpdateDate",
+      "table": "HRR_MEETING_REVIEWEES",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": true
+    },
+    {
+      "name": "MeetingRevieweePEOLastUpdateLogin",
+      "table": "HRR_MEETING_REVIEWEES",
+      "column": "LAST_UPDATE_LOGIN",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "MeetingRevieweePEOLastUpdatedBy",
+      "table": "HRR_MEETING_REVIEWEES",
+      "column": "LAST_UPDATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "MeetingRevieweePEOMeetingId",
+      "table": "HRR_MEETING_REVIEWEES",
+      "column": "MEETING_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "MeetingRevieweePEOObjectVersionNumber",
+      "table": "HRR_MEETING_REVIEWEES",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "MeetingStatusCode",
+      "table": "HRR_MEETINGS",
+      "column": "MEETING_STATUS_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "MeetingSubmissionDate",
+      "table": "HRR_MEETINGS",
+      "column": "MEETING_SUBMISSION_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "MeetingSubmitStatusCode",
+      "table": "HRR_MEETINGS",
+      "column": "MEETING_SUBMIT_STATUS_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "MeetingTitle",
+      "table": "HRR_MEETINGS",
+      "column": "MEETING_TITLE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ModuleId",
+      "table": "HRT_PROFILE_TYPES_B",
+      "column": "MODULE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ObjectVersionNumber",
+      "table": "HRR_MEETINGS",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "OwnerPersonId",
+      "table": "HRT_PROFILES_B",
+      "column": "OWNER_PERSON_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartyId",
+      "table": "HRT_PROFILES_B",
+      "column": "PARTY_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonId",
+      "table": "HRT_PROFILES_B",
+      "column": "PERSON_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PidApprovalFlag",
+      "table": "HRT_PROFILE_TYPES_B",
+      "column": "PID_APPROVAL_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PrefReviewQualifierId",
+      "table": "HRR_MEETINGS",
+      "column": "PREF_REVIEW_QUALIFIER_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProfileBPEOBusinessGroupId",
+      "table": "HRT_PROFILES_B",
+      "column": "BUSINESS_GROUP_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProfileBPEOCreatedBy",
+      "table": "HRT_PROFILES_B",
+      "column": "CREATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProfileBPEOCreationDate",
+      "table": "HRT_PROFILES_B",
+      "column": "CREATION_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProfileBPEOLastUpdateDate",
+      "table": "HRT_PROFILES_B",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": true
+    },
+    {
+      "name": "ProfileBPEOLastUpdateLogin",
+      "table": "HRT_PROFILES_B",
+      "column": "LAST_UPDATE_LOGIN",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProfileBPEOLastUpdatedBy",
+      "table": "HRT_PROFILES_B",
+      "column": "LAST_UPDATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProfileBPEOObjectVersionNumber",
+      "table": "HRT_PROFILES_B",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProfileCode",
+      "table": "HRT_PROFILES_B",
+      "column": "PROFILE_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProfileId",
+      "table": "HRT_PROFILES_B",
+      "column": "PROFILE_ID",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    },
+    {
+      "name": "ProfileTypeBPEOBusinessGroupId",
+      "table": "HRT_PROFILE_TYPES_B",
+      "column": "BUSINESS_GROUP_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProfileTypeBPEOCreatedBy",
+      "table": "HRT_PROFILE_TYPES_B",
+      "column": "CREATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProfileTypeBPEOCreationDate",
+      "table": "HRT_PROFILE_TYPES_B",
+      "column": "CREATION_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProfileTypeBPEOLastUpdateDate",
+      "table": "HRT_PROFILE_TYPES_B",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": true
+    },
+    {
+      "name": "ProfileTypeBPEOLastUpdateLogin",
+      "table": "HRT_PROFILE_TYPES_B",
+      "column": "LAST_UPDATE_LOGIN",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProfileTypeBPEOLastUpdatedBy",
+      "table": "HRT_PROFILE_TYPES_B",
+      "column": "LAST_UPDATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProfileTypeBPEOObjectVersionNumber",
+      "table": "HRT_PROFILE_TYPES_B",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProfileTypeBPEOProfileStatusCode",
+      "table": "HRT_PROFILE_TYPES_B",
+      "column": "PROFILE_STATUS_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProfileTypeBPEOProfileTypeId",
+      "table": "HRT_PROFILE_TYPES_B",
+      "column": "PROFILE_TYPE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProfileTypeBPEOProfileUsageCode",
+      "table": "HRT_PROFILE_TYPES_B",
+      "column": "PROFILE_USAGE_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProfileTypeCode",
+      "table": "HRT_PROFILE_TYPES_B",
+      "column": "PROFILE_TYPE_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProfileTypeId",
+      "table": "HRT_PROFILES_B",
+      "column": "PROFILE_TYPE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProfileUsageCode",
+      "table": "HRT_PROFILES_B",
+      "column": "PROFILE_USAGE_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "QuestionnaireId",
+      "table": "HRR_MEETINGS",
+      "column": "QUESTIONNAIRE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RevieweeAssignmentId",
+      "table": "HRR_MEETING_REVIEWEES",
+      "column": "REVIEWEE_ASSIGNMENT_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RevieweePersonId",
+      "table": "HRR_MEETING_REVIEWEES",
+      "column": "REVIEWEE_PERSON_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReviewerPersonId",
+      "table": "HRR_MEETING_REVIEWEES",
+      "column": "REVIEWER_PERSON_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    }
+  ],
+  "by_table": {
+    "HRR_MEETINGS": [
+      {
+        "attribute": "BusinessGroupId",
+        "column": "BUSINESS_GROUP_ID",
+        "bicc": true,
+        "pk": true
+      },
+      {
+        "attribute": "CreatedBy",
+        "column": "CREATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CreationDate",
+        "column": "CREATION_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "DashboardTmplId",
+        "column": "DASHBOARD_TMPL_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "DataSubmitDate",
+        "column": "DATA_SUBMIT_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "LastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "LastUpdateLogin",
+        "column": "LAST_UPDATE_LOGIN",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "LastUpdatedBy",
+        "column": "LAST_UPDATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "MeetingDate",
+        "column": "MEETING_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "MeetingFacilitatorNotes",
+        "column": "MEETING_FACILITATOR_NOTES",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "MeetingId",
+        "column": "MEETING_ID",
+        "bicc": true,
+        "pk": true
+      },
+      {
+        "attribute": "MeetingInstructions",
+        "column": "MEETING_INSTRUCTIONS",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "MeetingLeaderId",
+        "column": "MEETING_LEADER_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "MeetingOrganizationId",
+        "column": "MEETING_ORGANIZATION_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "MeetingPurpose",
+        "column": "MEETING_PURPOSE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "MeetingStatusCode",
+        "column": "MEETING_STATUS_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "MeetingSubmissionDate",
+        "column": "MEETING_SUBMISSION_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "MeetingSubmitStatusCode",
+        "column": "MEETING_SUBMIT_STATUS_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "MeetingTitle",
+        "column": "MEETING_TITLE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PrefReviewQualifierId",
+        "column": "PREF_REVIEW_QUALIFIER_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "QuestionnaireId",
+        "column": "QUESTIONNAIRE_ID",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "HRR_MEETING_PARTICIPANTS": [
+      {
+        "attribute": "DataSubmissionStatusCode",
+        "column": "DATA_SUBMISSION_STATUS_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "MeetingParticipantPEOBusinessGroupId",
+        "column": "BUSINESS_GROUP_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "MeetingParticipantPEOCreatedBy",
+        "column": "CREATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "MeetingParticipantPEOCreationDate",
+        "column": "CREATION_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "MeetingParticipantPEOLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "MeetingParticipantPEOLastUpdateLogin",
+        "column": "LAST_UPDATE_LOGIN",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "MeetingParticipantPEOLastUpdatedBy",
+        "column": "LAST_UPDATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "MeetingParticipantPEOMeetingId",
+        "column": "MEETING_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "MeetingParticipantPEOMeetingParticipantId",
+        "column": "MEETING_PARTICIPANT_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "MeetingParticipantPEOObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "MeetingParticipantPEOParticipantPersonId",
+        "column": "PARTICIPANT_PERSON_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "MeetingParticipantPEOParticipantTypeCode",
+        "column": "PARTICIPANT_TYPE_CODE",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "HRT_PROFILE_TYPES_B": [
+      {
+        "attribute": "DateFrom",
+        "column": "DATE_FROM",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "DateTo",
+        "column": "DATE_TO",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ModuleId",
+        "column": "MODULE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PidApprovalFlag",
+        "column": "PID_APPROVAL_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProfileTypeBPEOBusinessGroupId",
+        "column": "BUSINESS_GROUP_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProfileTypeBPEOCreatedBy",
+        "column": "CREATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProfileTypeBPEOCreationDate",
+        "column": "CREATION_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProfileTypeBPEOLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ProfileTypeBPEOLastUpdateLogin",
+        "column": "LAST_UPDATE_LOGIN",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProfileTypeBPEOLastUpdatedBy",
+        "column": "LAST_UPDATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProfileTypeBPEOObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProfileTypeBPEOProfileStatusCode",
+        "column": "PROFILE_STATUS_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProfileTypeBPEOProfileTypeId",
+        "column": "PROFILE_TYPE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProfileTypeBPEOProfileUsageCode",
+        "column": "PROFILE_USAGE_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProfileTypeCode",
+        "column": "PROFILE_TYPE_CODE",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "HRR_MEETING_FACILITATORS": [
+      {
+        "attribute": "MeetingFacilitatorPEOCreatedBy",
+        "column": "CREATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "MeetingFacilitatorPEOCreationDate",
+        "column": "CREATION_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "MeetingFacilitatorPEOEnterpriseId",
+        "column": "ENTERPRISE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "MeetingFacilitatorPEOFacilitatorPersonId",
+        "column": "FACILITATOR_PERSON_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "MeetingFacilitatorPEOLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "MeetingFacilitatorPEOLastUpdateLogin",
+        "column": "LAST_UPDATE_LOGIN",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "MeetingFacilitatorPEOLastUpdatedBy",
+        "column": "LAST_UPDATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "MeetingFacilitatorPEOMeetingId",
+        "column": "MEETING_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "MeetingFacilitatorPEOObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "MeetingFacilitorPEOMeetingFacilitatorId",
+        "column": "MEETING_FACILITATOR_ID",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "HRR_MEETING_REVIEWEES": [
+      {
+        "attribute": "MeetingRevieweeId",
+        "column": "MEETING_REVIEWEE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "MeetingRevieweePEOBusinessGroupId",
+        "column": "BUSINESS_GROUP_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "MeetingRevieweePEOCreatedBy",
+        "column": "CREATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "MeetingRevieweePEOCreationDate",
+        "column": "CREATION_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "MeetingRevieweePEOLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "MeetingRevieweePEOLastUpdateLogin",
+        "column": "LAST_UPDATE_LOGIN",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "MeetingRevieweePEOLastUpdatedBy",
+        "column": "LAST_UPDATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "MeetingRevieweePEOMeetingId",
+        "column": "MEETING_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "MeetingRevieweePEOObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "RevieweeAssignmentId",
+        "column": "REVIEWEE_ASSIGNMENT_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "RevieweePersonId",
+        "column": "REVIEWEE_PERSON_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ReviewerPersonId",
+        "column": "REVIEWER_PERSON_ID",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "HRT_PROFILES_B": [
+      {
+        "attribute": "OwnerPersonId",
+        "column": "OWNER_PERSON_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PartyId",
+        "column": "PARTY_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PersonId",
+        "column": "PERSON_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProfileBPEOBusinessGroupId",
+        "column": "BUSINESS_GROUP_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProfileBPEOCreatedBy",
+        "column": "CREATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProfileBPEOCreationDate",
+        "column": "CREATION_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProfileBPEOLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ProfileBPEOLastUpdateLogin",
+        "column": "LAST_UPDATE_LOGIN",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProfileBPEOLastUpdatedBy",
+        "column": "LAST_UPDATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProfileBPEOObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProfileCode",
+        "column": "PROFILE_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProfileId",
+        "column": "PROFILE_ID",
+        "bicc": true,
+        "pk": true
+      },
+      {
+        "attribute": "ProfileTypeId",
+        "column": "PROFILE_TYPE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProfileUsageCode",
+        "column": "PROFILE_USAGE_CODE",
+        "bicc": false,
+        "pk": false
+      }
+    ]
+  }
+}

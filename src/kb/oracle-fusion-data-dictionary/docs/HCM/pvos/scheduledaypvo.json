@@ -1,0 +1,1211 @@
+{
+  "meta": {
+    "pvo_name": "ScheduleDayPVO",
+    "full_path": "HcmTopModelAnalyticsGlobalAM.TimeRepositoryAM.ScheduleDayPVO",
+    "module_path": "HcmTopModelAnalyticsGlobalAM.TimeRepositoryAM",
+    "module_code": "HCM",
+    "type": "pvo",
+    "description": "Extrai dados de dias de escala de trabalho com turnos, grupos de registro e supervisores. Suporta planejamento diário de workforce e cobertura de turnos."
+  },
+  "stats": {
+    "total_attributes": 84,
+    "tables_count": 4,
+    "bicc_enabled": 26,
+    "bicc_pct": 31,
+    "pk_count": 2
+  },
+  "tables": [
+    "HTS_SCHEDULES_DAY_SHIFT_VIEW",
+    "HWM_TM_REC_GRP",
+    "HXT_SCH_PROF_DEFAULT_VIEW",
+    "PER_ASSIGNMENT_SUPERVISORS_F"
+  ],
+  "attributes": [
+    {
+      "name": "AssignmentSupervisorId",
+      "table": "PER_ASSIGNMENT_SUPERVISORS_F",
+      "column": "ASSIGNMENT_SUPERVISOR_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BISchedulerProfileOptionPEOCreationDate1",
+      "table": "HXT_SCH_PROF_DEFAULT_VIEW",
+      "column": "CREATION_DATE1",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BISchedulerProfileOptionPEOEffectiveEndDate",
+      "table": "HXT_SCH_PROF_DEFAULT_VIEW",
+      "column": "EFFECTIVE_END_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BISchedulerProfileOptionPEOEffectiveStartDate",
+      "table": "HXT_SCH_PROF_DEFAULT_VIEW",
+      "column": "EFFECTIVE_START_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BISchedulerProfileOptionPEOInclMemberId",
+      "table": "HXT_SCH_PROF_DEFAULT_VIEW",
+      "column": "INCL_MEMBER_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BISchedulerProfileOptionPEOSetupOptionValId",
+      "table": "HXT_SCH_PROF_DEFAULT_VIEW",
+      "column": "SETUP_OPTION_VAL_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BISchedulerProfileOptionPEOSetupProfileAsgId",
+      "table": "HXT_SCH_PROF_DEFAULT_VIEW",
+      "column": "SETUP_PROFILE_ASG_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "DayTimeRecordGroupPEOCommentText",
+      "table": "HWM_TM_REC_GRP",
+      "column": "COMMENT_TEXT",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "DayTimeRecordGroupPEOCommitTimestamp",
+      "table": "HWM_TM_REC_GRP",
+      "column": "COMMIT_TIMESTAMP",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "DayTimeRecordGroupPEOCreatedBy",
+      "table": "HWM_TM_REC_GRP",
+      "column": "CREATED_BY",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "DayTimeRecordGroupPEOCreationDate",
+      "table": "HWM_TM_REC_GRP",
+      "column": "CREATION_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "DayTimeRecordGroupPEODataSetId",
+      "table": "HWM_TM_REC_GRP",
+      "column": "DATA_SET_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "DayTimeRecordGroupPEODateFrom",
+      "table": "HWM_TM_REC_GRP",
+      "column": "DATE_FROM",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "DayTimeRecordGroupPEODateTo",
+      "table": "HWM_TM_REC_GRP",
+      "column": "DATE_TO",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "DayTimeRecordGroupPEODeleteFlag",
+      "table": "HWM_TM_REC_GRP",
+      "column": "DELETE_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "DayTimeRecordGroupPEOEnterpriseId",
+      "table": "HWM_TM_REC_GRP",
+      "column": "ENTERPRISE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "DayTimeRecordGroupPEOGroupTypeId",
+      "table": "HWM_TM_REC_GRP",
+      "column": "GRP_TYPE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "DayTimeRecordGroupPEOLastUpdateDate",
+      "table": "HWM_TM_REC_GRP",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": true
+    },
+    {
+      "name": "DayTimeRecordGroupPEOLastUpdateLogin",
+      "table": "HWM_TM_REC_GRP",
+      "column": "LAST_UPDATE_LOGIN",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "DayTimeRecordGroupPEOLastUpdatedBy",
+      "table": "HWM_TM_REC_GRP",
+      "column": "LAST_UPDATED_BY",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "DayTimeRecordGroupPEOLatestVersion",
+      "table": "HWM_TM_REC_GRP",
+      "column": "LATEST_VERSION",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "DayTimeRecordGroupPEOLayerCode",
+      "table": "HWM_TM_REC_GRP",
+      "column": "LAYER_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "DayTimeRecordGroupPEOLayerTimeRecordGroupId",
+      "table": "HWM_TM_REC_GRP",
+      "column": "LAYER_TM_REC_GRP_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "DayTimeRecordGroupPEOLayerTimeRecordGroupVersion",
+      "table": "HWM_TM_REC_GRP",
+      "column": "LAYER_TM_REC_GRP_VERSION",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "DayTimeRecordGroupPEOMeasure",
+      "table": "HWM_TM_REC_GRP",
+      "column": "MEASURE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "DayTimeRecordGroupPEOObjectVersionNumber",
+      "table": "HWM_TM_REC_GRP",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "DayTimeRecordGroupPEOOrderEntered",
+      "table": "HWM_TM_REC_GRP",
+      "column": "ORDER_ENTERED",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "DayTimeRecordGroupPEOOriginalTimeRecordGroupId",
+      "table": "HWM_TM_REC_GRP",
+      "column": "ORIG_TM_REC_GRP_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "DayTimeRecordGroupPEOOriginalTimeRecordGroupVersion",
+      "table": "HWM_TM_REC_GRP",
+      "column": "ORIG_TM_REC_GRP_VERSION",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "DayTimeRecordGroupPEOParentTimeRecordGroupId",
+      "table": "HWM_TM_REC_GRP",
+      "column": "PARENT_TM_REC_GRP_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "DayTimeRecordGroupPEOParentTimeRecordGroupVersion",
+      "table": "HWM_TM_REC_GRP",
+      "column": "PARENT_TM_REC_GRP_VERSION",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "DayTimeRecordGroupPEOResourceId",
+      "table": "HWM_TM_REC_GRP",
+      "column": "RESOURCE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "DayTimeRecordGroupPEOResourceType",
+      "table": "HWM_TM_REC_GRP",
+      "column": "RESOURCE_TYPE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "DayTimeRecordGroupPEOStartTime",
+      "table": "HWM_TM_REC_GRP",
+      "column": "START_TIME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "DayTimeRecordGroupPEOStopTime",
+      "table": "HWM_TM_REC_GRP",
+      "column": "STOP_TIME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "DayTimeRecordGroupPEOSubresourceId",
+      "table": "HWM_TM_REC_GRP",
+      "column": "SUBRESOURCE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "DayTimeRecordGroupPEOTimeConsumerConfigurationSetId",
+      "table": "HWM_TM_REC_GRP",
+      "column": "TCSMR_CONFIG_SET_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "DayTimeRecordGroupPEOTimeConsumerSetId",
+      "table": "HWM_TM_REC_GRP",
+      "column": "TCSMR_SET_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "DayTimeRecordGroupPEOTimeRecordGroupId",
+      "table": "HWM_TM_REC_GRP",
+      "column": "TM_REC_GRP_ID",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    },
+    {
+      "name": "DayTimeRecordGroupPEOTimeRecordGroupVersion",
+      "table": "HWM_TM_REC_GRP",
+      "column": "TM_REC_GRP_VERSION",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    },
+    {
+      "name": "DayTimeRecordGroupPEOTimeReporterId",
+      "table": "HWM_TM_REC_GRP",
+      "column": "TIME_REPORTER_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "DayTimeRecordGroupPEOUnitOfMeasure",
+      "table": "HWM_TM_REC_GRP",
+      "column": "UNIT_OF_MEASURE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "DayTimeRecordGroupPEOUserStatus",
+      "table": "HWM_TM_REC_GRP",
+      "column": "USER_STATUS",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "EffectiveEndDate",
+      "table": "PER_ASSIGNMENT_SUPERVISORS_F",
+      "column": "EFFECTIVE_END_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "EffectiveStartDate",
+      "table": "PER_ASSIGNMENT_SUPERVISORS_F",
+      "column": "EFFECTIVE_START_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ScheduleDayShift1PEOParentTmRecGrpId",
+      "table": "HTS_SCHEDULES_DAY_SHIFT_VIEW",
+      "column": "PARENT_TM_REC_GRP_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ScheduleDayShift1PEOParentTmRecGrpVersion",
+      "table": "HTS_SCHEDULES_DAY_SHIFT_VIEW",
+      "column": "PARENT_TM_REC_GRP_VERSION",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ScheduleDayShift1PEOShiftDateFrom",
+      "table": "HTS_SCHEDULES_DAY_SHIFT_VIEW",
+      "column": "SHIFT_DATE_FROM",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ScheduleDayShift1PEOShiftDateTo",
+      "table": "HTS_SCHEDULES_DAY_SHIFT_VIEW",
+      "column": "SHIFT_DATE_TO",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ScheduleDayShift1PEOShiftId",
+      "table": "HTS_SCHEDULES_DAY_SHIFT_VIEW",
+      "column": "SHIFT_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ScheduleDayShift1PEOShiftName",
+      "table": "HTS_SCHEDULES_DAY_SHIFT_VIEW",
+      "column": "SHIFT_NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ScheduleDayShift1PEOShiftSequence",
+      "table": "HTS_SCHEDULES_DAY_SHIFT_VIEW",
+      "column": "SHIFT_SEQUENCE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ScheduleDayShift1PEOShiftShortName",
+      "table": "HTS_SCHEDULES_DAY_SHIFT_VIEW",
+      "column": "SHIFT_SHORT_NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ScheduleDayShift1PEOShiftStartTime",
+      "table": "HTS_SCHEDULES_DAY_SHIFT_VIEW",
+      "column": "SHIFT_START_TIME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ScheduleDayShift1PEOShiftStopTime",
+      "table": "HTS_SCHEDULES_DAY_SHIFT_VIEW",
+      "column": "SHIFT_STOP_TIME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ScheduleDayShift1PEOShiftTmRecGrpId",
+      "table": "HTS_SCHEDULES_DAY_SHIFT_VIEW",
+      "column": "SHIFT_TM_REC_GRP_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ScheduleDayShift1PEOShiftTmRecGrpVersion",
+      "table": "HTS_SCHEDULES_DAY_SHIFT_VIEW",
+      "column": "SHIFT_TM_REC_GRP_VERSION",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ScheduleDayShift1PEOShiftTypeCode",
+      "table": "HTS_SCHEDULES_DAY_SHIFT_VIEW",
+      "column": "SHIFT_TYPE_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ScheduleDayShift2PEOParentTmRecGrpId",
+      "table": "HTS_SCHEDULES_DAY_SHIFT_VIEW",
+      "column": "PARENT_TM_REC_GRP_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ScheduleDayShift2PEOParentTmRecGrpVersion",
+      "table": "HTS_SCHEDULES_DAY_SHIFT_VIEW",
+      "column": "PARENT_TM_REC_GRP_VERSION",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ScheduleDayShift2PEOShiftDateFrom",
+      "table": "HTS_SCHEDULES_DAY_SHIFT_VIEW",
+      "column": "SHIFT_DATE_FROM",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ScheduleDayShift2PEOShiftDateTo",
+      "table": "HTS_SCHEDULES_DAY_SHIFT_VIEW",
+      "column": "SHIFT_DATE_TO",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ScheduleDayShift2PEOShiftId",
+      "table": "HTS_SCHEDULES_DAY_SHIFT_VIEW",
+      "column": "SHIFT_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ScheduleDayShift2PEOShiftName",
+      "table": "HTS_SCHEDULES_DAY_SHIFT_VIEW",
+      "column": "SHIFT_NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ScheduleDayShift2PEOShiftSequence",
+      "table": "HTS_SCHEDULES_DAY_SHIFT_VIEW",
+      "column": "SHIFT_SEQUENCE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ScheduleDayShift2PEOShiftShortName",
+      "table": "HTS_SCHEDULES_DAY_SHIFT_VIEW",
+      "column": "SHIFT_SHORT_NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ScheduleDayShift2PEOShiftStartTime",
+      "table": "HTS_SCHEDULES_DAY_SHIFT_VIEW",
+      "column": "SHIFT_START_TIME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ScheduleDayShift2PEOShiftStopTime",
+      "table": "HTS_SCHEDULES_DAY_SHIFT_VIEW",
+      "column": "SHIFT_STOP_TIME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ScheduleDayShift2PEOShiftTmRecGrpId",
+      "table": "HTS_SCHEDULES_DAY_SHIFT_VIEW",
+      "column": "SHIFT_TM_REC_GRP_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ScheduleDayShift2PEOShiftTmRecGrpVersion",
+      "table": "HTS_SCHEDULES_DAY_SHIFT_VIEW",
+      "column": "SHIFT_TM_REC_GRP_VERSION",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ScheduleDayShift2PEOShiftTypeCode",
+      "table": "HTS_SCHEDULES_DAY_SHIFT_VIEW",
+      "column": "SHIFT_TYPE_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ScheduleDayShift3PEOParentTmRecGrpId",
+      "table": "HTS_SCHEDULES_DAY_SHIFT_VIEW",
+      "column": "PARENT_TM_REC_GRP_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ScheduleDayShift3PEOParentTmRecGrpVersion",
+      "table": "HTS_SCHEDULES_DAY_SHIFT_VIEW",
+      "column": "PARENT_TM_REC_GRP_VERSION",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ScheduleDayShift3PEOShiftDateFrom",
+      "table": "HTS_SCHEDULES_DAY_SHIFT_VIEW",
+      "column": "SHIFT_DATE_FROM",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ScheduleDayShift3PEOShiftDateTo",
+      "table": "HTS_SCHEDULES_DAY_SHIFT_VIEW",
+      "column": "SHIFT_DATE_TO",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ScheduleDayShift3PEOShiftId",
+      "table": "HTS_SCHEDULES_DAY_SHIFT_VIEW",
+      "column": "SHIFT_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ScheduleDayShift3PEOShiftName",
+      "table": "HTS_SCHEDULES_DAY_SHIFT_VIEW",
+      "column": "SHIFT_NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ScheduleDayShift3PEOShiftSequence",
+      "table": "HTS_SCHEDULES_DAY_SHIFT_VIEW",
+      "column": "SHIFT_SEQUENCE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ScheduleDayShift3PEOShiftShortName",
+      "table": "HTS_SCHEDULES_DAY_SHIFT_VIEW",
+      "column": "SHIFT_SHORT_NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ScheduleDayShift3PEOShiftStartTime",
+      "table": "HTS_SCHEDULES_DAY_SHIFT_VIEW",
+      "column": "SHIFT_START_TIME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ScheduleDayShift3PEOShiftStopTime",
+      "table": "HTS_SCHEDULES_DAY_SHIFT_VIEW",
+      "column": "SHIFT_STOP_TIME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ScheduleDayShift3PEOShiftTmRecGrpId",
+      "table": "HTS_SCHEDULES_DAY_SHIFT_VIEW",
+      "column": "SHIFT_TM_REC_GRP_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ScheduleDayShift3PEOShiftTmRecGrpVersion",
+      "table": "HTS_SCHEDULES_DAY_SHIFT_VIEW",
+      "column": "SHIFT_TM_REC_GRP_VERSION",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ScheduleDayShift3PEOShiftTypeCode",
+      "table": "HTS_SCHEDULES_DAY_SHIFT_VIEW",
+      "column": "SHIFT_TYPE_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    }
+  ],
+  "by_table": {
+    "PER_ASSIGNMENT_SUPERVISORS_F": [
+      {
+        "attribute": "AssignmentSupervisorId",
+        "column": "ASSIGNMENT_SUPERVISOR_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "EffectiveEndDate",
+        "column": "EFFECTIVE_END_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "EffectiveStartDate",
+        "column": "EFFECTIVE_START_DATE",
+        "bicc": true,
+        "pk": false
+      }
+    ],
+    "HXT_SCH_PROF_DEFAULT_VIEW": [
+      {
+        "attribute": "BISchedulerProfileOptionPEOCreationDate1",
+        "column": "CREATION_DATE1",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BISchedulerProfileOptionPEOEffectiveEndDate",
+        "column": "EFFECTIVE_END_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BISchedulerProfileOptionPEOEffectiveStartDate",
+        "column": "EFFECTIVE_START_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "BISchedulerProfileOptionPEOInclMemberId",
+        "column": "INCL_MEMBER_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BISchedulerProfileOptionPEOSetupOptionValId",
+        "column": "SETUP_OPTION_VAL_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BISchedulerProfileOptionPEOSetupProfileAsgId",
+        "column": "SETUP_PROFILE_ASG_ID",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "HWM_TM_REC_GRP": [
+      {
+        "attribute": "DayTimeRecordGroupPEOCommentText",
+        "column": "COMMENT_TEXT",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "DayTimeRecordGroupPEOCommitTimestamp",
+        "column": "COMMIT_TIMESTAMP",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "DayTimeRecordGroupPEOCreatedBy",
+        "column": "CREATED_BY",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "DayTimeRecordGroupPEOCreationDate",
+        "column": "CREATION_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "DayTimeRecordGroupPEODataSetId",
+        "column": "DATA_SET_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "DayTimeRecordGroupPEODateFrom",
+        "column": "DATE_FROM",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "DayTimeRecordGroupPEODateTo",
+        "column": "DATE_TO",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "DayTimeRecordGroupPEODeleteFlag",
+        "column": "DELETE_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "DayTimeRecordGroupPEOEnterpriseId",
+        "column": "ENTERPRISE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "DayTimeRecordGroupPEOGroupTypeId",
+        "column": "GRP_TYPE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "DayTimeRecordGroupPEOLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "DayTimeRecordGroupPEOLastUpdateLogin",
+        "column": "LAST_UPDATE_LOGIN",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "DayTimeRecordGroupPEOLastUpdatedBy",
+        "column": "LAST_UPDATED_BY",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "DayTimeRecordGroupPEOLatestVersion",
+        "column": "LATEST_VERSION",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "DayTimeRecordGroupPEOLayerCode",
+        "column": "LAYER_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "DayTimeRecordGroupPEOLayerTimeRecordGroupId",
+        "column": "LAYER_TM_REC_GRP_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "DayTimeRecordGroupPEOLayerTimeRecordGroupVersion",
+        "column": "LAYER_TM_REC_GRP_VERSION",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "DayTimeRecordGroupPEOMeasure",
+        "column": "MEASURE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "DayTimeRecordGroupPEOObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "DayTimeRecordGroupPEOOrderEntered",
+        "column": "ORDER_ENTERED",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "DayTimeRecordGroupPEOOriginalTimeRecordGroupId",
+        "column": "ORIG_TM_REC_GRP_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "DayTimeRecordGroupPEOOriginalTimeRecordGroupVersion",
+        "column": "ORIG_TM_REC_GRP_VERSION",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "DayTimeRecordGroupPEOParentTimeRecordGroupId",
+        "column": "PARENT_TM_REC_GRP_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "DayTimeRecordGroupPEOParentTimeRecordGroupVersion",
+        "column": "PARENT_TM_REC_GRP_VERSION",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "DayTimeRecordGroupPEOResourceId",
+        "column": "RESOURCE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "DayTimeRecordGroupPEOResourceType",
+        "column": "RESOURCE_TYPE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "DayTimeRecordGroupPEOStartTime",
+        "column": "START_TIME",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "DayTimeRecordGroupPEOStopTime",
+        "column": "STOP_TIME",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "DayTimeRecordGroupPEOSubresourceId",
+        "column": "SUBRESOURCE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "DayTimeRecordGroupPEOTimeConsumerConfigurationSetId",
+        "column": "TCSMR_CONFIG_SET_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "DayTimeRecordGroupPEOTimeConsumerSetId",
+        "column": "TCSMR_SET_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "DayTimeRecordGroupPEOTimeRecordGroupId",
+        "column": "TM_REC_GRP_ID",
+        "bicc": true,
+        "pk": true
+      },
+      {
+        "attribute": "DayTimeRecordGroupPEOTimeRecordGroupVersion",
+        "column": "TM_REC_GRP_VERSION",
+        "bicc": true,
+        "pk": true
+      },
+      {
+        "attribute": "DayTimeRecordGroupPEOTimeReporterId",
+        "column": "TIME_REPORTER_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "DayTimeRecordGroupPEOUnitOfMeasure",
+        "column": "UNIT_OF_MEASURE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "DayTimeRecordGroupPEOUserStatus",
+        "column": "USER_STATUS",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "HTS_SCHEDULES_DAY_SHIFT_VIEW": [
+      {
+        "attribute": "ScheduleDayShift1PEOParentTmRecGrpId",
+        "column": "PARENT_TM_REC_GRP_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ScheduleDayShift1PEOParentTmRecGrpVersion",
+        "column": "PARENT_TM_REC_GRP_VERSION",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ScheduleDayShift1PEOShiftDateFrom",
+        "column": "SHIFT_DATE_FROM",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ScheduleDayShift1PEOShiftDateTo",
+        "column": "SHIFT_DATE_TO",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ScheduleDayShift1PEOShiftId",
+        "column": "SHIFT_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ScheduleDayShift1PEOShiftName",
+        "column": "SHIFT_NAME",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ScheduleDayShift1PEOShiftSequence",
+        "column": "SHIFT_SEQUENCE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ScheduleDayShift1PEOShiftShortName",
+        "column": "SHIFT_SHORT_NAME",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ScheduleDayShift1PEOShiftStartTime",
+        "column": "SHIFT_START_TIME",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ScheduleDayShift1PEOShiftStopTime",
+        "column": "SHIFT_STOP_TIME",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ScheduleDayShift1PEOShiftTmRecGrpId",
+        "column": "SHIFT_TM_REC_GRP_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ScheduleDayShift1PEOShiftTmRecGrpVersion",
+        "column": "SHIFT_TM_REC_GRP_VERSION",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ScheduleDayShift1PEOShiftTypeCode",
+        "column": "SHIFT_TYPE_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ScheduleDayShift2PEOParentTmRecGrpId",
+        "column": "PARENT_TM_REC_GRP_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ScheduleDayShift2PEOParentTmRecGrpVersion",
+        "column": "PARENT_TM_REC_GRP_VERSION",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ScheduleDayShift2PEOShiftDateFrom",
+        "column": "SHIFT_DATE_FROM",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ScheduleDayShift2PEOShiftDateTo",
+        "column": "SHIFT_DATE_TO",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ScheduleDayShift2PEOShiftId",
+        "column": "SHIFT_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ScheduleDayShift2PEOShiftName",
+        "column": "SHIFT_NAME",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ScheduleDayShift2PEOShiftSequence",
+        "column": "SHIFT_SEQUENCE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ScheduleDayShift2PEOShiftShortName",
+        "column": "SHIFT_SHORT_NAME",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ScheduleDayShift2PEOShiftStartTime",
+        "column": "SHIFT_START_TIME",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ScheduleDayShift2PEOShiftStopTime",
+        "column": "SHIFT_STOP_TIME",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ScheduleDayShift2PEOShiftTmRecGrpId",
+        "column": "SHIFT_TM_REC_GRP_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ScheduleDayShift2PEOShiftTmRecGrpVersion",
+        "column": "SHIFT_TM_REC_GRP_VERSION",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ScheduleDayShift2PEOShiftTypeCode",
+        "column": "SHIFT_TYPE_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ScheduleDayShift3PEOParentTmRecGrpId",
+        "column": "PARENT_TM_REC_GRP_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ScheduleDayShift3PEOParentTmRecGrpVersion",
+        "column": "PARENT_TM_REC_GRP_VERSION",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ScheduleDayShift3PEOShiftDateFrom",
+        "column": "SHIFT_DATE_FROM",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ScheduleDayShift3PEOShiftDateTo",
+        "column": "SHIFT_DATE_TO",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ScheduleDayShift3PEOShiftId",
+        "column": "SHIFT_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ScheduleDayShift3PEOShiftName",
+        "column": "SHIFT_NAME",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ScheduleDayShift3PEOShiftSequence",
+        "column": "SHIFT_SEQUENCE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ScheduleDayShift3PEOShiftShortName",
+        "column": "SHIFT_SHORT_NAME",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ScheduleDayShift3PEOShiftStartTime",
+        "column": "SHIFT_START_TIME",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ScheduleDayShift3PEOShiftStopTime",
+        "column": "SHIFT_STOP_TIME",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ScheduleDayShift3PEOShiftTmRecGrpId",
+        "column": "SHIFT_TM_REC_GRP_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ScheduleDayShift3PEOShiftTmRecGrpVersion",
+        "column": "SHIFT_TM_REC_GRP_VERSION",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ScheduleDayShift3PEOShiftTypeCode",
+        "column": "SHIFT_TYPE_CODE",
+        "bicc": true,
+        "pk": false
+      }
+    ]
+  }
+}

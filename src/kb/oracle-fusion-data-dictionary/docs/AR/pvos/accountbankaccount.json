@@ -1,0 +1,6999 @@
+{
+  "meta": {
+    "pvo_name": "AccountBankAccount",
+    "full_path": "FscmTopModelAM.FinArCustomersPublicModelAM.AccountBankAccount",
+    "module_path": "FscmTopModelAM.FinArCustomersPublicModelAM",
+    "module_code": "AR",
+    "type": "pvo",
+    "description": "Extrai as contas bancárias externas associadas a contas de clientes (customer accounts), incluindo dados de banco, agência, classificação e instrumentos de pagamento. Permite identificar os meios de recebimento cadastrados por cliente para conciliação bancária e gestão de cobranças."
+  },
+  "stats": {
+    "total_attributes": 497,
+    "tables_count": 6,
+    "bicc_enabled": 29,
+    "bicc_pct": 6,
+    "pk_count": 1
+  },
+  "tables": [
+    "HZ_CONTACT_POINTS",
+    "HZ_ORGANIZATION_PROFILES",
+    "HZ_PARTIES",
+    "IBY_EXTERNAL_PAYERS_ALL",
+    "IBY_EXT_BANK_ACCOUNTS",
+    "IBY_PMT_INSTR_USES_ALL"
+  ],
+  "attributes": [
+    {
+      "name": "BankAccountAccountClassification",
+      "table": "IBY_EXT_BANK_ACCOUNTS",
+      "column": "ACCOUNT_CLASSIFICATION",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankAccountAccountSuffix",
+      "table": "IBY_EXT_BANK_ACCOUNTS",
+      "column": "ACCOUNT_SUFFIX",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankAccountAgencyLocationCode",
+      "table": "IBY_EXT_BANK_ACCOUNTS",
+      "column": "AGENCY_LOCATION_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankAccountBaMaskSetting",
+      "table": "IBY_EXT_BANK_ACCOUNTS",
+      "column": "BA_MASK_SETTING",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankAccountBaNumElecSecSegmentId",
+      "table": "IBY_EXT_BANK_ACCOUNTS",
+      "column": "BA_NUM_ELEC_SEC_SEGMENT_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankAccountBaNumSecSegmentId",
+      "table": "IBY_EXT_BANK_ACCOUNTS",
+      "column": "BA_NUM_SEC_SEGMENT_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankAccountBaUnmaskLength",
+      "table": "IBY_EXT_BANK_ACCOUNTS",
+      "column": "BA_UNMASK_LENGTH",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankAccountBankAccountName",
+      "table": "IBY_EXT_BANK_ACCOUNTS",
+      "column": "BANK_ACCOUNT_NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankAccountBankAccountNameAlt",
+      "table": "IBY_EXT_BANK_ACCOUNTS",
+      "column": "BANK_ACCOUNT_NAME_ALT",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankAccountBankAccountNum",
+      "table": "IBY_EXT_BANK_ACCOUNTS",
+      "column": "BANK_ACCOUNT_NUM",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankAccountBankAccountNumElectronic",
+      "table": "IBY_EXT_BANK_ACCOUNTS",
+      "column": "BANK_ACCOUNT_NUM_ELECTRONIC",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankAccountBankAccountType",
+      "table": "IBY_EXT_BANK_ACCOUNTS",
+      "column": "BANK_ACCOUNT_TYPE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankAccountBankId",
+      "table": "IBY_EXT_BANK_ACCOUNTS",
+      "column": "BANK_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankAccountBranchId",
+      "table": "IBY_EXT_BANK_ACCOUNTS",
+      "column": "BRANCH_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankAccountCheckDigits",
+      "table": "IBY_EXT_BANK_ACCOUNTS",
+      "column": "CHECK_DIGITS",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankAccountCountryCode",
+      "table": "IBY_EXT_BANK_ACCOUNTS",
+      "column": "COUNTRY_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankAccountCreatedBy",
+      "table": "IBY_EXT_BANK_ACCOUNTS",
+      "column": "CREATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankAccountCreationDate",
+      "table": "IBY_EXT_BANK_ACCOUNTS",
+      "column": "CREATION_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankAccountCurrencyCode",
+      "table": "IBY_EXT_BANK_ACCOUNTS",
+      "column": "CURRENCY_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankAccountDescription",
+      "table": "IBY_EXT_BANK_ACCOUNTS",
+      "column": "DESCRIPTION",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankAccountEncrypted",
+      "table": "IBY_EXT_BANK_ACCOUNTS",
+      "column": "ENCRYPTED",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankAccountEndDate",
+      "table": "IBY_EXT_BANK_ACCOUNTS",
+      "column": "END_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankAccountExchangeRate",
+      "table": "IBY_EXT_BANK_ACCOUNTS",
+      "column": "EXCHANGE_RATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankAccountExchangeRateAgreementNum",
+      "table": "IBY_EXT_BANK_ACCOUNTS",
+      "column": "EXCHANGE_RATE_AGREEMENT_NUM",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankAccountExchangeRateAgreementType",
+      "table": "IBY_EXT_BANK_ACCOUNTS",
+      "column": "EXCHANGE_RATE_AGREEMENT_TYPE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankAccountExtBankAccountId",
+      "table": "IBY_EXT_BANK_ACCOUNTS",
+      "column": "EXT_BANK_ACCOUNT_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankAccountForeignPaymentUseFlag",
+      "table": "IBY_EXT_BANK_ACCOUNTS",
+      "column": "FOREIGN_PAYMENT_USE_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankAccountHedgingContractReference",
+      "table": "IBY_EXT_BANK_ACCOUNTS",
+      "column": "HEDGING_CONTRACT_REFERENCE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankAccountIban",
+      "table": "IBY_EXT_BANK_ACCOUNTS",
+      "column": "IBAN",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankAccountIbanHash1",
+      "table": "IBY_EXT_BANK_ACCOUNTS",
+      "column": "IBAN_HASH1",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankAccountIbanSecSegmentId",
+      "table": "IBY_EXT_BANK_ACCOUNTS",
+      "column": "IBAN_SEC_SEGMENT_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankAccountLastUpdateDate",
+      "table": "IBY_EXT_BANK_ACCOUNTS",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": true
+    },
+    {
+      "name": "BankAccountLastUpdateLogin",
+      "table": "IBY_EXT_BANK_ACCOUNTS",
+      "column": "LAST_UPDATE_LOGIN",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankAccountLastUpdatedBy",
+      "table": "IBY_EXT_BANK_ACCOUNTS",
+      "column": "LAST_UPDATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankAccountMaskedBankAccountNum",
+      "table": "IBY_EXT_BANK_ACCOUNTS",
+      "column": "MASKED_BANK_ACCOUNT_NUM",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankAccountMaskedIban",
+      "table": "IBY_EXT_BANK_ACCOUNTS",
+      "column": "MASKED_IBAN",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankAccountObjectVersionNumber",
+      "table": "IBY_EXT_BANK_ACCOUNTS",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankAccountPaymentFactorFlag",
+      "table": "IBY_EXT_BANK_ACCOUNTS",
+      "column": "PAYMENT_FACTOR_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankAccountProgramApplicationId",
+      "table": "IBY_EXT_BANK_ACCOUNTS",
+      "column": "PROGRAM_APPLICATION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankAccountProgramId",
+      "table": "IBY_EXT_BANK_ACCOUNTS",
+      "column": "PROGRAM_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankAccountProgramUpdateDate",
+      "table": "IBY_EXT_BANK_ACCOUNTS",
+      "column": "PROGRAM_UPDATE_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankAccountRequestId",
+      "table": "IBY_EXT_BANK_ACCOUNTS",
+      "column": "REQUEST_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankAccountSaltVersion",
+      "table": "IBY_EXT_BANK_ACCOUNTS",
+      "column": "SALT_VERSION",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankAccountSecondaryAccountReference",
+      "table": "IBY_EXT_BANK_ACCOUNTS",
+      "column": "SECONDARY_ACCOUNT_REFERENCE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankAccountShortAcctName",
+      "table": "IBY_EXT_BANK_ACCOUNTS",
+      "column": "SHORT_ACCT_NAME",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankAccountStartDate",
+      "table": "IBY_EXT_BANK_ACCOUNTS",
+      "column": "START_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankActualContentSource",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "ACTUAL_CONTENT_SOURCE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankAnalysisFy",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "ANALYSIS_FY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBankCode",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "BANK_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBankOrBranchNumber",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "BANK_OR_BRANCH_NUMBER",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchActualContentSource",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "ACTUAL_CONTENT_SOURCE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchAnalysisFy",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "ANALYSIS_FY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchBankCode",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "BANK_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchBankOrBranchNumber",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "BANK_OR_BRANCH_NUMBER",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchBranchCode",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "BRANCH_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchBranchFlag",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "BRANCH_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchBusinessReport",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "BUSINESS_REPORT",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchBusinessScope",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "BUSINESS_SCOPE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchCeoName",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "CEO_NAME",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchCeoTitle",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "CEO_TITLE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchCertReasonCode",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "CERT_REASON_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchCertificationLevel",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "CERTIFICATION_LEVEL",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchCleanlinessScore",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "CLEANLINESS_SCORE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchCode",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "BRANCH_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchComments",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "COMMENTS",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchCompletenessScore",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "COMPLETENESS_SCORE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchConflictId",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "CONFLICT_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchCongDistCode",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "CONG_DIST_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchContactActualContentSource",
+      "table": "HZ_CONTACT_POINTS",
+      "column": "ACTUAL_CONTENT_SOURCE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchContactAttributeCategory",
+      "table": "HZ_CONTACT_POINTS",
+      "column": "ATTRIBUTE_CATEGORY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchContactContactPointId",
+      "table": "HZ_CONTACT_POINTS",
+      "column": "CONTACT_POINT_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchContactContactPointPurpose",
+      "table": "HZ_CONTACT_POINTS",
+      "column": "CONTACT_POINT_PURPOSE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchContactCreatedBy",
+      "table": "HZ_CONTACT_POINTS",
+      "column": "CREATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchContactCreatedByModule",
+      "table": "HZ_CONTACT_POINTS",
+      "column": "CREATED_BY_MODULE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchContactCreationDate",
+      "table": "HZ_CONTACT_POINTS",
+      "column": "CREATION_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchContactEftSwiftCode",
+      "table": "HZ_CONTACT_POINTS",
+      "column": "EFT_SWIFT_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchContactEftUserNumber",
+      "table": "HZ_CONTACT_POINTS",
+      "column": "EFT_USER_NUMBER",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchContactEndDate",
+      "table": "HZ_CONTACT_POINTS",
+      "column": "END_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchContactLastUpdateDate",
+      "table": "HZ_CONTACT_POINTS",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchContactLastUpdateLogin",
+      "table": "HZ_CONTACT_POINTS",
+      "column": "LAST_UPDATE_LOGIN",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchContactLastUpdatedBy",
+      "table": "HZ_CONTACT_POINTS",
+      "column": "LAST_UPDATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchContactOrigSystemReference",
+      "table": "HZ_CONTACT_POINTS",
+      "column": "ORIG_SYSTEM_REFERENCE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchContactOverallPrimaryFlag",
+      "table": "HZ_CONTACT_POINTS",
+      "column": "OVERALL_PRIMARY_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchContactOwnerTableId",
+      "table": "HZ_CONTACT_POINTS",
+      "column": "OWNER_TABLE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchContactOwnerTableName",
+      "table": "HZ_CONTACT_POINTS",
+      "column": "OWNER_TABLE_NAME",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchContactPartyUsageCode",
+      "table": "HZ_CONTACT_POINTS",
+      "column": "PARTY_USAGE_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchContactPrimaryByPurpose",
+      "table": "HZ_CONTACT_POINTS",
+      "column": "PRIMARY_BY_PURPOSE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchContactPrimaryFlag",
+      "table": "HZ_CONTACT_POINTS",
+      "column": "PRIMARY_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchContactRelationshipId",
+      "table": "HZ_CONTACT_POINTS",
+      "column": "RELATIONSHIP_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchContactStartDate",
+      "table": "HZ_CONTACT_POINTS",
+      "column": "START_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchContactStatus",
+      "table": "HZ_CONTACT_POINTS",
+      "column": "STATUS",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchContentSourceNumber",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "CONTENT_SOURCE_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchControlYr",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "CONTROL_YR",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchCorpCurrencyCode",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "CORP_CURRENCY_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchCorporationClass",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "CORPORATION_CLASS",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchCreatedBy",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "CREATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchCreatedByModule",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "CREATED_BY_MODULE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchCreationDate",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "CREATION_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchCurcyConvRateType",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "CURCY_CONV_RATE_TYPE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchCurrFyPotentialRevenue",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "CURR_FY_POTENTIAL_REVENUE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchCurrencyCode",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "CURRENCY_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchDataCloudStatus",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "DATA_CLOUD_STATUS",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchDataConfidenceScore",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "DATA_CONFIDENCE_SCORE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchDbRating",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "DB_RATING",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchDisadv8aInd",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "DISADV_8A_IND",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchDisplayedDunsPartyId",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "DISPLAYED_DUNS_PARTY_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchDoNotConfuseWith",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "DO_NOT_CONFUSE_WITH",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchDomesticUltimateDunsNumC",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "DOMESTIC_ULTIMATE_DUNS_NUM_C",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchDunsNumber",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "DUNS_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchDunsNumberC",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "DUNS_NUMBER_C",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchDuplicateIndicator",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "DUPLICATE_INDICATOR",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchDuplicateScore",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "DUPLICATE_SCORE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchEffectiveEndDate",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "EFFECTIVE_END_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchEffectiveLatestChange",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "EFFECTIVE_LATEST_CHANGE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchEffectiveSequence",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "EFFECTIVE_SEQUENCE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchEffectiveStartDate",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "EFFECTIVE_START_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchEmpAtPrimaryAdr",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "EMP_AT_PRIMARY_ADR",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchEmpAtPrimaryAdrEstInd",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "EMP_AT_PRIMARY_ADR_EST_IND",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchEmpAtPrimaryAdrMinInd",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "EMP_AT_PRIMARY_ADR_MIN_IND",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchEmpAtPrimaryAdrText",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "EMP_AT_PRIMARY_ADR_TEXT",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchEmployeesTotal",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "EMPLOYEES_TOTAL",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchEnquiryDuns",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "ENQUIRY_DUNS",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchEnrichmentScore",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "ENRICHMENT_SCORE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchExportInd",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "EXPORT_IND",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchFiscalYearendMonth",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "FISCAL_YEAREND_MONTH",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchFlag",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "BRANCH_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchGlobalUltimateDunsNumC",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "GLOBAL_ULTIMATE_DUNS_NUM_C",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchGrowthStrategyDesc",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "GROWTH_STRATEGY_DESC",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchGsaIndicatorFlag",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "GSA_INDICATOR_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchHomeCountry",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "HOME_COUNTRY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchHqBranchInd",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "HQ_BRANCH_IND",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchImportInd",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "IMPORT_IND",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchIncorpYear",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "INCORP_YEAR",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchInternalFlag",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "INTERNAL_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchJgzzFiscalCode",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "JGZZ_FISCAL_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchLaborSurplusInd",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "LABOR_SURPLUS_IND",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchLastEnrichmentDate",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "LAST_ENRICHMENT_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchLastScoreUpdateDate",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "LAST_SCORE_UPDATE_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchLastUpdateDate",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchLastUpdateLogin",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "LAST_UPDATE_LOGIN",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchLastUpdatedBy",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "LAST_UPDATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchLegalStatus",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "LEGAL_STATUS",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchLineOfBusiness",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "LINE_OF_BUSINESS",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchLocalActivityCode",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "LOCAL_ACTIVITY_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchLocalActivityCodeType",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "LOCAL_ACTIVITY_CODE_TYPE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchLocalBusIdenType",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "LOCAL_BUS_IDEN_TYPE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchLocalBusIdentifier",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "LOCAL_BUS_IDENTIFIER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchMinorityOwnedInd",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "MINORITY_OWNED_IND",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchMinorityOwnedType",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "MINORITY_OWNED_TYPE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchMissionStatement",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "MISSION_STATEMENT",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchNameAddress1",
+      "table": "HZ_PARTIES",
+      "column": "ADDRESS1",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchNameAddress2",
+      "table": "HZ_PARTIES",
+      "column": "ADDRESS2",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchNameAddress3",
+      "table": "HZ_PARTIES",
+      "column": "ADDRESS3",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchNameAddress4",
+      "table": "HZ_PARTIES",
+      "column": "ADDRESS4",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchNameAnalysisFy",
+      "table": "HZ_PARTIES",
+      "column": "ANALYSIS_FY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchNameCategoryCode",
+      "table": "HZ_PARTIES",
+      "column": "CATEGORY_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchNameCeoName",
+      "table": "HZ_PARTIES",
+      "column": "CEO_NAME",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchNameCertReasonCode",
+      "table": "HZ_PARTIES",
+      "column": "CERT_REASON_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchNameCertificationLevel",
+      "table": "HZ_PARTIES",
+      "column": "CERTIFICATION_LEVEL",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchNameCity",
+      "table": "HZ_PARTIES",
+      "column": "CITY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchNameComments",
+      "table": "HZ_PARTIES",
+      "column": "COMMENTS",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchNameCountry",
+      "table": "HZ_PARTIES",
+      "column": "COUNTRY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchNameCounty",
+      "table": "HZ_PARTIES",
+      "column": "COUNTY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchNameCreatedBy",
+      "table": "HZ_PARTIES",
+      "column": "CREATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchNameCreatedByModule",
+      "table": "HZ_PARTIES",
+      "column": "CREATED_BY_MODULE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchNameCreationDate",
+      "table": "HZ_PARTIES",
+      "column": "CREATION_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchNameCurrFyPotentialRevenue",
+      "table": "HZ_PARTIES",
+      "column": "CURR_FY_POTENTIAL_REVENUE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchNameDateOfBirth",
+      "table": "HZ_PARTIES",
+      "column": "DATE_OF_BIRTH",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchNameDunsNumberC",
+      "table": "HZ_PARTIES",
+      "column": "DUNS_NUMBER_C",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchNameEmailAddress",
+      "table": "HZ_PARTIES",
+      "column": "EMAIL_ADDRESS",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchNameEmployeesTotal",
+      "table": "HZ_PARTIES",
+      "column": "EMPLOYEES_TOTAL",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchNameFiscalYearendMonth",
+      "table": "HZ_PARTIES",
+      "column": "FISCAL_YEAREND_MONTH",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchNameGender",
+      "table": "HZ_PARTIES",
+      "column": "GENDER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchNameGroupType",
+      "table": "HZ_PARTIES",
+      "column": "GROUP_TYPE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchNameGsaIndicatorFlag",
+      "table": "HZ_PARTIES",
+      "column": "GSA_INDICATOR_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchNameHomeCountry",
+      "table": "HZ_PARTIES",
+      "column": "HOME_COUNTRY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchNameHqBranchInd",
+      "table": "HZ_PARTIES",
+      "column": "HQ_BRANCH_IND",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchNameIdenAddrLocationId",
+      "table": "HZ_PARTIES",
+      "column": "IDEN_ADDR_LOCATION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchNameIdenAddrPartySiteId",
+      "table": "HZ_PARTIES",
+      "column": "IDEN_ADDR_PARTY_SITE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchNameInternalFlag",
+      "table": "HZ_PARTIES",
+      "column": "INTERNAL_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchNameJgzzFiscalCode",
+      "table": "HZ_PARTIES",
+      "column": "JGZZ_FISCAL_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchNameLanguageName",
+      "table": "HZ_PARTIES",
+      "column": "LANGUAGE_NAME",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchNameLastUpdateDate",
+      "table": "HZ_PARTIES",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": true
+    },
+    {
+      "name": "BankBranchNameLastUpdateLogin",
+      "table": "HZ_PARTIES",
+      "column": "LAST_UPDATE_LOGIN",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchNameLastUpdatedBy",
+      "table": "HZ_PARTIES",
+      "column": "LAST_UPDATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchNameMaritalStatus",
+      "table": "HZ_PARTIES",
+      "column": "MARITAL_STATUS",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchNameMissionStatement",
+      "table": "HZ_PARTIES",
+      "column": "MISSION_STATEMENT",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchNameNextFyPotentialRevenue",
+      "table": "HZ_PARTIES",
+      "column": "NEXT_FY_POTENTIAL_REVENUE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchNameObjectVersionNumber",
+      "table": "HZ_PARTIES",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchNameOrigSystemReference",
+      "table": "HZ_PARTIES",
+      "column": "ORIG_SYSTEM_REFERENCE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchNamePartyId",
+      "table": "HZ_PARTIES",
+      "column": "PARTY_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchNamePartyName",
+      "table": "HZ_PARTIES",
+      "column": "PARTY_NAME",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchNamePartyNumber",
+      "table": "HZ_PARTIES",
+      "column": "PARTY_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchNamePartyType",
+      "table": "HZ_PARTIES",
+      "column": "PARTY_TYPE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchNamePartyUniqueName",
+      "table": "HZ_PARTIES",
+      "column": "PARTY_UNIQUE_NAME",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchNamePersonAcademicTitle",
+      "table": "HZ_PARTIES",
+      "column": "PERSON_ACADEMIC_TITLE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchNamePersonFirstName",
+      "table": "HZ_PARTIES",
+      "column": "PERSON_FIRST_NAME",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchNamePersonLastName",
+      "table": "HZ_PARTIES",
+      "column": "PERSON_LAST_NAME",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchNamePersonLastNamePrefix",
+      "table": "HZ_PARTIES",
+      "column": "PERSON_LAST_NAME_PREFIX",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchNamePersonMiddleName",
+      "table": "HZ_PARTIES",
+      "column": "PERSON_MIDDLE_NAME",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchNamePersonNameSuffix",
+      "table": "HZ_PARTIES",
+      "column": "PERSON_NAME_SUFFIX",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchNamePersonPreNameAdjunct",
+      "table": "HZ_PARTIES",
+      "column": "PERSON_PRE_NAME_ADJUNCT",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchNamePersonPreviousLastName",
+      "table": "HZ_PARTIES",
+      "column": "PERSON_PREVIOUS_LAST_NAME",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchNamePersonSecondLastName",
+      "table": "HZ_PARTIES",
+      "column": "PERSON_SECOND_LAST_NAME",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchNamePersonTitle",
+      "table": "HZ_PARTIES",
+      "column": "PERSON_TITLE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchNamePostalCode",
+      "table": "HZ_PARTIES",
+      "column": "POSTAL_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchNamePrefFunctionalCurrency",
+      "table": "HZ_PARTIES",
+      "column": "PREF_FUNCTIONAL_CURRENCY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchNamePreferredContactMethod",
+      "table": "HZ_PARTIES",
+      "column": "PREFERRED_CONTACT_METHOD",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchNamePreferredContactPersonId",
+      "table": "HZ_PARTIES",
+      "column": "PREFERRED_CONTACT_PERSON_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchNamePreferredName",
+      "table": "HZ_PARTIES",
+      "column": "PREFERRED_NAME",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchNamePreferredNameId",
+      "table": "HZ_PARTIES",
+      "column": "PREFERRED_NAME_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchNamePrimaryEmailContactPtId",
+      "table": "HZ_PARTIES",
+      "column": "PRIMARY_EMAIL_CONTACT_PT_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchNamePrimaryPhoneAreaCode",
+      "table": "HZ_PARTIES",
+      "column": "PRIMARY_PHONE_AREA_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchNamePrimaryPhoneContactPtId",
+      "table": "HZ_PARTIES",
+      "column": "PRIMARY_PHONE_CONTACT_PT_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchNamePrimaryPhoneCountryCode",
+      "table": "HZ_PARTIES",
+      "column": "PRIMARY_PHONE_COUNTRY_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchNamePrimaryPhoneExtension",
+      "table": "HZ_PARTIES",
+      "column": "PRIMARY_PHONE_EXTENSION",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchNamePrimaryPhoneLineType",
+      "table": "HZ_PARTIES",
+      "column": "PRIMARY_PHONE_LINE_TYPE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchNamePrimaryPhoneNumber",
+      "table": "HZ_PARTIES",
+      "column": "PRIMARY_PHONE_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchNamePrimaryPhonePurpose",
+      "table": "HZ_PARTIES",
+      "column": "PRIMARY_PHONE_PURPOSE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchNamePrimaryUrlContactPtId",
+      "table": "HZ_PARTIES",
+      "column": "PRIMARY_URL_CONTACT_PT_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchNameProvince",
+      "table": "HZ_PARTIES",
+      "column": "PROVINCE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchNameSalutation",
+      "table": "HZ_PARTIES",
+      "column": "SALUTATION",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchNameSicCode",
+      "table": "HZ_PARTIES",
+      "column": "SIC_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchNameSicCodeType",
+      "table": "HZ_PARTIES",
+      "column": "SIC_CODE_TYPE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchNameState",
+      "table": "HZ_PARTIES",
+      "column": "STATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchNameStatus",
+      "table": "HZ_PARTIES",
+      "column": "STATUS",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchNameThirdPartyFlag",
+      "table": "HZ_PARTIES",
+      "column": "THIRD_PARTY_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchNameTradingPartnerIdentifier",
+      "table": "HZ_PARTIES",
+      "column": "TRADING_PARTNER_IDENTIFIER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchNameUrl",
+      "table": "HZ_PARTIES",
+      "column": "URL",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchNameUserGuid",
+      "table": "HZ_PARTIES",
+      "column": "USER_GUID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchNameValidatedFlag",
+      "table": "HZ_PARTIES",
+      "column": "VALIDATED_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchNameYearEstablished",
+      "table": "HZ_PARTIES",
+      "column": "YEAR_ESTABLISHED",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchNextFyPotentialRevenue",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "NEXT_FY_POTENTIAL_REVENUE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchObjectVersionNumber",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchOobInd",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "OOB_IND",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchOrganizationName",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "ORGANIZATION_NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchOrganizationProfileId",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "ORGANIZATION_PROFILE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchOrganizationSize",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "ORGANIZATION_SIZE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchOrganizationType",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "ORGANIZATION_TYPE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchParentDunsNumC",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "PARENT_DUNS_NUM_C",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchParentSubInd",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "PARENT_SUB_IND",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchPartyId",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "PARTY_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchPartyNumber",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "PARTY_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchPrefFunctionalCurrency",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "PREF_FUNCTIONAL_CURRENCY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchPreferredContactMethod",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "PREFERRED_CONTACT_METHOD",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchPreferredContactPersonId",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "PREFERRED_CONTACT_PERSON_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchPrincipalName",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "PRINCIPAL_NAME",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchPrincipalTitle",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "PRINCIPAL_TITLE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchPublicPrivateOwnershipFlag",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "PUBLIC_PRIVATE_OWNERSHIP_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchRecencyScore",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "RECENCY_SCORE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchRegistrationType",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "REGISTRATION_TYPE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchRentOwnInd",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "RENT_OWN_IND",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchRequestId",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "REQUEST_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchSeblUserKeyLoc",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "SEBL_USER_KEY_LOC",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchSicCode",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "SIC_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchSicCodeType",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "SIC_CODE_TYPE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchSmallBusInd",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "SMALL_BUS_IND",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchStatus",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "STATUS",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchStockSymbol",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "STOCK_SYMBOL",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchSuffixOverriddenFlag",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "SUFFIX_OVERRIDDEN_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchTotalEmpEstInd",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "TOTAL_EMP_EST_IND",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchTotalEmpMinInd",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "TOTAL_EMP_MIN_IND",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchTotalEmployeesInd",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "TOTAL_EMPLOYEES_IND",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchTotalEmployeesText",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "TOTAL_EMPLOYEES_TEXT",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchTotalPayments",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "TOTAL_PAYMENTS",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchTradingPartnerIdentifier",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "TRADING_PARTNER_IDENTIFIER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchUniqueNameAlias",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "UNIQUE_NAME_ALIAS",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchUniqueNameSuffix",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "UNIQUE_NAME_SUFFIX",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchValidityScore",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "VALIDITY_SCORE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchWomanOwnedInd",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "WOMAN_OWNED_IND",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBranchYearEstablished",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "YEAR_ESTABLISHED",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBusinessReport",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "BUSINESS_REPORT",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankBusinessScope",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "BUSINESS_SCOPE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankCeoName",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "CEO_NAME",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankCeoTitle",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "CEO_TITLE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankCertReasonCode",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "CERT_REASON_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankCertificationLevel",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "CERTIFICATION_LEVEL",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankCleanlinessScore",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "CLEANLINESS_SCORE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankComments",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "COMMENTS",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankCompletenessScore",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "COMPLETENESS_SCORE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankConflictId",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "CONFLICT_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankCongDistCode",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "CONG_DIST_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankContentSourceNumber",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "CONTENT_SOURCE_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankControlYr",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "CONTROL_YR",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankCorpCurrencyCode",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "CORP_CURRENCY_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankCorporationClass",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "CORPORATION_CLASS",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankCreatedBy",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "CREATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankCreatedByModule",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "CREATED_BY_MODULE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankCreationDate",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "CREATION_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankCurcyConvRateType",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "CURCY_CONV_RATE_TYPE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankCurrFyPotentialRevenue",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "CURR_FY_POTENTIAL_REVENUE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankCurrencyCode",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "CURRENCY_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankDataCloudStatus",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "DATA_CLOUD_STATUS",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankDataConfidenceScore",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "DATA_CONFIDENCE_SCORE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankDbRating",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "DB_RATING",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankDisadv8aInd",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "DISADV_8A_IND",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankDisplayedDunsPartyId",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "DISPLAYED_DUNS_PARTY_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankDoNotConfuseWith",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "DO_NOT_CONFUSE_WITH",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankDomesticUltimateDunsNumC",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "DOMESTIC_ULTIMATE_DUNS_NUM_C",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankDunsNumber",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "DUNS_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankDunsNumberC",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "DUNS_NUMBER_C",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankDuplicateIndicator",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "DUPLICATE_INDICATOR",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankDuplicateScore",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "DUPLICATE_SCORE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankEffectiveEndDate",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "EFFECTIVE_END_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankEffectiveLatestChange",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "EFFECTIVE_LATEST_CHANGE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankEffectiveSequence",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "EFFECTIVE_SEQUENCE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankEffectiveStartDate",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "EFFECTIVE_START_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankEmpAtPrimaryAdr",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "EMP_AT_PRIMARY_ADR",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankEmpAtPrimaryAdrEstInd",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "EMP_AT_PRIMARY_ADR_EST_IND",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankEmpAtPrimaryAdrMinInd",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "EMP_AT_PRIMARY_ADR_MIN_IND",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankEmpAtPrimaryAdrText",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "EMP_AT_PRIMARY_ADR_TEXT",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankEmployeesTotal",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "EMPLOYEES_TOTAL",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankEnquiryDuns",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "ENQUIRY_DUNS",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankEnrichmentScore",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "ENRICHMENT_SCORE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankExportInd",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "EXPORT_IND",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankFiscalYearendMonth",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "FISCAL_YEAREND_MONTH",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankGlobalUltimateDunsNumC",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "GLOBAL_ULTIMATE_DUNS_NUM_C",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankGrowthStrategyDesc",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "GROWTH_STRATEGY_DESC",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankGsaIndicatorFlag",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "GSA_INDICATOR_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankHomeCountry",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "HOME_COUNTRY",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankHqBranchInd",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "HQ_BRANCH_IND",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankImportInd",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "IMPORT_IND",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankIncorpYear",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "INCORP_YEAR",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankInternalFlag",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "INTERNAL_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankJgzzFiscalCode",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "JGZZ_FISCAL_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankLaborSurplusInd",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "LABOR_SURPLUS_IND",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankLastEnrichmentDate",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "LAST_ENRICHMENT_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankLastScoreUpdateDate",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "LAST_SCORE_UPDATE_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankLastUpdateDate",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankLastUpdateLogin",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "LAST_UPDATE_LOGIN",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankLastUpdatedBy",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "LAST_UPDATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankLegalStatus",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "LEGAL_STATUS",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankLineOfBusiness",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "LINE_OF_BUSINESS",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankLocalActivityCode",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "LOCAL_ACTIVITY_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankLocalActivityCodeType",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "LOCAL_ACTIVITY_CODE_TYPE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankLocalBusIdenType",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "LOCAL_BUS_IDEN_TYPE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankLocalBusIdentifier",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "LOCAL_BUS_IDENTIFIER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankMinorityOwnedInd",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "MINORITY_OWNED_IND",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankMinorityOwnedType",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "MINORITY_OWNED_TYPE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankMissionStatement",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "MISSION_STATEMENT",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankNameAddress1",
+      "table": "HZ_PARTIES",
+      "column": "ADDRESS1",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankNameAddress2",
+      "table": "HZ_PARTIES",
+      "column": "ADDRESS2",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankNameAddress3",
+      "table": "HZ_PARTIES",
+      "column": "ADDRESS3",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankNameAddress4",
+      "table": "HZ_PARTIES",
+      "column": "ADDRESS4",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankNameAnalysisFy",
+      "table": "HZ_PARTIES",
+      "column": "ANALYSIS_FY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankNameCategoryCode",
+      "table": "HZ_PARTIES",
+      "column": "CATEGORY_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankNameCeoName",
+      "table": "HZ_PARTIES",
+      "column": "CEO_NAME",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankNameCertReasonCode",
+      "table": "HZ_PARTIES",
+      "column": "CERT_REASON_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankNameCertificationLevel",
+      "table": "HZ_PARTIES",
+      "column": "CERTIFICATION_LEVEL",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankNameCity",
+      "table": "HZ_PARTIES",
+      "column": "CITY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankNameComments",
+      "table": "HZ_PARTIES",
+      "column": "COMMENTS",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankNameCountry",
+      "table": "HZ_PARTIES",
+      "column": "COUNTRY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankNameCounty",
+      "table": "HZ_PARTIES",
+      "column": "COUNTY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankNameCreatedBy",
+      "table": "HZ_PARTIES",
+      "column": "CREATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankNameCreatedByModule",
+      "table": "HZ_PARTIES",
+      "column": "CREATED_BY_MODULE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankNameCreationDate",
+      "table": "HZ_PARTIES",
+      "column": "CREATION_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankNameCurrFyPotentialRevenue",
+      "table": "HZ_PARTIES",
+      "column": "CURR_FY_POTENTIAL_REVENUE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankNameDateOfBirth",
+      "table": "HZ_PARTIES",
+      "column": "DATE_OF_BIRTH",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankNameDunsNumberC",
+      "table": "HZ_PARTIES",
+      "column": "DUNS_NUMBER_C",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankNameEmailAddress",
+      "table": "HZ_PARTIES",
+      "column": "EMAIL_ADDRESS",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankNameEmployeesTotal",
+      "table": "HZ_PARTIES",
+      "column": "EMPLOYEES_TOTAL",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankNameFiscalYearendMonth",
+      "table": "HZ_PARTIES",
+      "column": "FISCAL_YEAREND_MONTH",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankNameGender",
+      "table": "HZ_PARTIES",
+      "column": "GENDER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankNameGroupType",
+      "table": "HZ_PARTIES",
+      "column": "GROUP_TYPE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankNameGsaIndicatorFlag",
+      "table": "HZ_PARTIES",
+      "column": "GSA_INDICATOR_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankNameHomeCountry",
+      "table": "HZ_PARTIES",
+      "column": "HOME_COUNTRY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankNameHqBranchInd",
+      "table": "HZ_PARTIES",
+      "column": "HQ_BRANCH_IND",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankNameIdenAddrLocationId",
+      "table": "HZ_PARTIES",
+      "column": "IDEN_ADDR_LOCATION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankNameIdenAddrPartySiteId",
+      "table": "HZ_PARTIES",
+      "column": "IDEN_ADDR_PARTY_SITE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankNameInternalFlag",
+      "table": "HZ_PARTIES",
+      "column": "INTERNAL_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankNameJgzzFiscalCode",
+      "table": "HZ_PARTIES",
+      "column": "JGZZ_FISCAL_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankNameLanguageName",
+      "table": "HZ_PARTIES",
+      "column": "LANGUAGE_NAME",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankNameLastUpdateDate",
+      "table": "HZ_PARTIES",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": true
+    },
+    {
+      "name": "BankNameLastUpdateLogin",
+      "table": "HZ_PARTIES",
+      "column": "LAST_UPDATE_LOGIN",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankNameLastUpdatedBy",
+      "table": "HZ_PARTIES",
+      "column": "LAST_UPDATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankNameMaritalStatus",
+      "table": "HZ_PARTIES",
+      "column": "MARITAL_STATUS",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankNameMissionStatement",
+      "table": "HZ_PARTIES",
+      "column": "MISSION_STATEMENT",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankNameNextFyPotentialRevenue",
+      "table": "HZ_PARTIES",
+      "column": "NEXT_FY_POTENTIAL_REVENUE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankNameObjectVersionNumber",
+      "table": "HZ_PARTIES",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankNameOrigSystemReference",
+      "table": "HZ_PARTIES",
+      "column": "ORIG_SYSTEM_REFERENCE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankNamePartyId",
+      "table": "HZ_PARTIES",
+      "column": "PARTY_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankNamePartyName",
+      "table": "HZ_PARTIES",
+      "column": "PARTY_NAME",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankNamePartyNumber",
+      "table": "HZ_PARTIES",
+      "column": "PARTY_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankNamePartyType",
+      "table": "HZ_PARTIES",
+      "column": "PARTY_TYPE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankNamePartyUniqueName",
+      "table": "HZ_PARTIES",
+      "column": "PARTY_UNIQUE_NAME",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankNamePersonAcademicTitle",
+      "table": "HZ_PARTIES",
+      "column": "PERSON_ACADEMIC_TITLE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankNamePersonFirstName",
+      "table": "HZ_PARTIES",
+      "column": "PERSON_FIRST_NAME",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankNamePersonLastName",
+      "table": "HZ_PARTIES",
+      "column": "PERSON_LAST_NAME",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankNamePersonLastNamePrefix",
+      "table": "HZ_PARTIES",
+      "column": "PERSON_LAST_NAME_PREFIX",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankNamePersonMiddleName",
+      "table": "HZ_PARTIES",
+      "column": "PERSON_MIDDLE_NAME",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankNamePersonNameSuffix",
+      "table": "HZ_PARTIES",
+      "column": "PERSON_NAME_SUFFIX",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankNamePersonPreNameAdjunct",
+      "table": "HZ_PARTIES",
+      "column": "PERSON_PRE_NAME_ADJUNCT",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankNamePersonPreviousLastName",
+      "table": "HZ_PARTIES",
+      "column": "PERSON_PREVIOUS_LAST_NAME",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankNamePersonSecondLastName",
+      "table": "HZ_PARTIES",
+      "column": "PERSON_SECOND_LAST_NAME",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankNamePersonTitle",
+      "table": "HZ_PARTIES",
+      "column": "PERSON_TITLE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankNamePostalCode",
+      "table": "HZ_PARTIES",
+      "column": "POSTAL_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankNamePrefFunctionalCurrency",
+      "table": "HZ_PARTIES",
+      "column": "PREF_FUNCTIONAL_CURRENCY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankNamePreferredContactMethod",
+      "table": "HZ_PARTIES",
+      "column": "PREFERRED_CONTACT_METHOD",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankNamePreferredContactPersonId",
+      "table": "HZ_PARTIES",
+      "column": "PREFERRED_CONTACT_PERSON_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankNamePreferredName",
+      "table": "HZ_PARTIES",
+      "column": "PREFERRED_NAME",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankNamePreferredNameId",
+      "table": "HZ_PARTIES",
+      "column": "PREFERRED_NAME_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankNamePrimaryEmailContactPtId",
+      "table": "HZ_PARTIES",
+      "column": "PRIMARY_EMAIL_CONTACT_PT_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankNamePrimaryPhoneAreaCode",
+      "table": "HZ_PARTIES",
+      "column": "PRIMARY_PHONE_AREA_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankNamePrimaryPhoneContactPtId",
+      "table": "HZ_PARTIES",
+      "column": "PRIMARY_PHONE_CONTACT_PT_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankNamePrimaryPhoneCountryCode",
+      "table": "HZ_PARTIES",
+      "column": "PRIMARY_PHONE_COUNTRY_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankNamePrimaryPhoneExtension",
+      "table": "HZ_PARTIES",
+      "column": "PRIMARY_PHONE_EXTENSION",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankNamePrimaryPhoneLineType",
+      "table": "HZ_PARTIES",
+      "column": "PRIMARY_PHONE_LINE_TYPE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankNamePrimaryPhoneNumber",
+      "table": "HZ_PARTIES",
+      "column": "PRIMARY_PHONE_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankNamePrimaryPhonePurpose",
+      "table": "HZ_PARTIES",
+      "column": "PRIMARY_PHONE_PURPOSE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankNamePrimaryUrlContactPtId",
+      "table": "HZ_PARTIES",
+      "column": "PRIMARY_URL_CONTACT_PT_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankNameProvince",
+      "table": "HZ_PARTIES",
+      "column": "PROVINCE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankNameSalutation",
+      "table": "HZ_PARTIES",
+      "column": "SALUTATION",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankNameSicCode",
+      "table": "HZ_PARTIES",
+      "column": "SIC_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankNameSicCodeType",
+      "table": "HZ_PARTIES",
+      "column": "SIC_CODE_TYPE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankNameState",
+      "table": "HZ_PARTIES",
+      "column": "STATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankNameStatus",
+      "table": "HZ_PARTIES",
+      "column": "STATUS",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankNameThirdPartyFlag",
+      "table": "HZ_PARTIES",
+      "column": "THIRD_PARTY_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankNameTradingPartnerIdentifier",
+      "table": "HZ_PARTIES",
+      "column": "TRADING_PARTNER_IDENTIFIER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankNameUrl",
+      "table": "HZ_PARTIES",
+      "column": "URL",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankNameUserGuid",
+      "table": "HZ_PARTIES",
+      "column": "USER_GUID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankNameValidatedFlag",
+      "table": "HZ_PARTIES",
+      "column": "VALIDATED_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankNameYearEstablished",
+      "table": "HZ_PARTIES",
+      "column": "YEAR_ESTABLISHED",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankNextFyPotentialRevenue",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "NEXT_FY_POTENTIAL_REVENUE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankObjectVersionNumber",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankOobInd",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "OOB_IND",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankOrganizationName",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "ORGANIZATION_NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankOrganizationProfileId",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "ORGANIZATION_PROFILE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankOrganizationSize",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "ORGANIZATION_SIZE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankOrganizationType",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "ORGANIZATION_TYPE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankParentDunsNumC",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "PARENT_DUNS_NUM_C",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankParentSubInd",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "PARENT_SUB_IND",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankPartyId",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "PARTY_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankPartyNumber",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "PARTY_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankPrefFunctionalCurrency",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "PREF_FUNCTIONAL_CURRENCY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankPreferredContactMethod",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "PREFERRED_CONTACT_METHOD",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankPreferredContactPersonId",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "PREFERRED_CONTACT_PERSON_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankPrincipalName",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "PRINCIPAL_NAME",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankPrincipalTitle",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "PRINCIPAL_TITLE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankPublicPrivateOwnershipFlag",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "PUBLIC_PRIVATE_OWNERSHIP_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankRecencyScore",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "RECENCY_SCORE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankRegistrationType",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "REGISTRATION_TYPE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankRentOwnInd",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "RENT_OWN_IND",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankRequestId",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "REQUEST_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankSeblUserKeyLoc",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "SEBL_USER_KEY_LOC",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankSicCode",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "SIC_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankSicCodeType",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "SIC_CODE_TYPE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankSmallBusInd",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "SMALL_BUS_IND",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankStatus",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "STATUS",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankStockSymbol",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "STOCK_SYMBOL",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankSuffixOverriddenFlag",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "SUFFIX_OVERRIDDEN_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankTotalEmpEstInd",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "TOTAL_EMP_EST_IND",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankTotalEmpMinInd",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "TOTAL_EMP_MIN_IND",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankTotalEmployeesInd",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "TOTAL_EMPLOYEES_IND",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankTotalEmployeesText",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "TOTAL_EMPLOYEES_TEXT",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankTotalPayments",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "TOTAL_PAYMENTS",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankTradingPartnerIdentifier",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "TRADING_PARTNER_IDENTIFIER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankUniqueNameAlias",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "UNIQUE_NAME_ALIAS",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankUniqueNameSuffix",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "UNIQUE_NAME_SUFFIX",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankValidityScore",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "VALIDITY_SCORE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankWomanOwnedInd",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "WOMAN_OWNED_IND",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankYearEstablished",
+      "table": "HZ_ORGANIZATION_PROFILES",
+      "column": "YEAR_ESTABLISHED",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InstrumentPaymentUseId",
+      "table": "IBY_PMT_INSTR_USES_ALL",
+      "column": "INSTRUMENT_PAYMENT_USE_ID",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    },
+    {
+      "name": "PayersAcctSiteUseId",
+      "table": "IBY_EXTERNAL_PAYERS_ALL",
+      "column": "ACCT_SITE_USE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PayersBankChargeBearerCode",
+      "table": "IBY_EXTERNAL_PAYERS_ALL",
+      "column": "BANK_CHARGE_BEARER_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PayersCreatedBy",
+      "table": "IBY_EXTERNAL_PAYERS_ALL",
+      "column": "CREATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PayersCreationDate",
+      "table": "IBY_EXTERNAL_PAYERS_ALL",
+      "column": "CREATION_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PayersCustAccountId",
+      "table": "IBY_EXTERNAL_PAYERS_ALL",
+      "column": "CUST_ACCOUNT_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PayersDebitAdviceDeliveryMethod",
+      "table": "IBY_EXTERNAL_PAYERS_ALL",
+      "column": "DEBIT_ADVICE_DELIVERY_METHOD",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PayersDebitAdviceEmail",
+      "table": "IBY_EXTERNAL_PAYERS_ALL",
+      "column": "DEBIT_ADVICE_EMAIL",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PayersDebitAdviceFax",
+      "table": "IBY_EXTERNAL_PAYERS_ALL",
+      "column": "DEBIT_ADVICE_FAX",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PayersDirdebInstructionCode",
+      "table": "IBY_EXTERNAL_PAYERS_ALL",
+      "column": "DIRDEB_INSTRUCTION_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PayersExtPayerId",
+      "table": "IBY_EXTERNAL_PAYERS_ALL",
+      "column": "EXT_PAYER_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PayersLastUpdateDate",
+      "table": "IBY_EXTERNAL_PAYERS_ALL",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PayersLastUpdateLogin",
+      "table": "IBY_EXTERNAL_PAYERS_ALL",
+      "column": "LAST_UPDATE_LOGIN",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PayersLastUpdatedBy",
+      "table": "IBY_EXTERNAL_PAYERS_ALL",
+      "column": "LAST_UPDATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PayersLocalinstr",
+      "table": "IBY_EXTERNAL_PAYERS_ALL",
+      "column": "LOCALINSTR",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PayersObjectVersionNumber",
+      "table": "IBY_EXTERNAL_PAYERS_ALL",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PayersOrgId",
+      "table": "IBY_EXTERNAL_PAYERS_ALL",
+      "column": "ORG_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PayersOrgType",
+      "table": "IBY_EXTERNAL_PAYERS_ALL",
+      "column": "ORG_TYPE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PayersPartyId",
+      "table": "IBY_EXTERNAL_PAYERS_ALL",
+      "column": "PARTY_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PayersPaymentFunction",
+      "table": "IBY_EXTERNAL_PAYERS_ALL",
+      "column": "PAYMENT_FUNCTION",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PayersPurposeCode",
+      "table": "IBY_EXTERNAL_PAYERS_ALL",
+      "column": "PURPOSE_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PayersServiceLevel",
+      "table": "IBY_EXTERNAL_PAYERS_ALL",
+      "column": "SERVICE_LEVEL",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "UseCreatedBy",
+      "table": "IBY_PMT_INSTR_USES_ALL",
+      "column": "CREATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "UseCreationDate",
+      "table": "IBY_PMT_INSTR_USES_ALL",
+      "column": "CREATION_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "UseEndDate",
+      "table": "IBY_PMT_INSTR_USES_ALL",
+      "column": "END_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "UseExtPmtPartyId",
+      "table": "IBY_PMT_INSTR_USES_ALL",
+      "column": "EXT_PMT_PARTY_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "UseInstrumentId",
+      "table": "IBY_PMT_INSTR_USES_ALL",
+      "column": "INSTRUMENT_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "UseInstrumentType",
+      "table": "IBY_PMT_INSTR_USES_ALL",
+      "column": "INSTRUMENT_TYPE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "UseLastUpdateDate",
+      "table": "IBY_PMT_INSTR_USES_ALL",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": true
+    },
+    {
+      "name": "UseLastUpdateLogin",
+      "table": "IBY_PMT_INSTR_USES_ALL",
+      "column": "LAST_UPDATE_LOGIN",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "UseLastUpdatedBy",
+      "table": "IBY_PMT_INSTR_USES_ALL",
+      "column": "LAST_UPDATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "UseObjectVersionNumber",
+      "table": "IBY_PMT_INSTR_USES_ALL",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "UsePaymentFlow",
+      "table": "IBY_PMT_INSTR_USES_ALL",
+      "column": "PAYMENT_FLOW",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "UsePaymentFunction",
+      "table": "IBY_PMT_INSTR_USES_ALL",
+      "column": "PAYMENT_FUNCTION",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "UsePrimaryFlag",
+      "table": "IBY_PMT_INSTR_USES_ALL",
+      "column": "PRIMARY_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "UseStartDate",
+      "table": "IBY_PMT_INSTR_USES_ALL",
+      "column": "START_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    }
+  ],
+  "by_table": {
+    "IBY_EXT_BANK_ACCOUNTS": [
+      {
+        "attribute": "BankAccountAccountClassification",
+        "column": "ACCOUNT_CLASSIFICATION",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankAccountAccountSuffix",
+        "column": "ACCOUNT_SUFFIX",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankAccountAgencyLocationCode",
+        "column": "AGENCY_LOCATION_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankAccountBaMaskSetting",
+        "column": "BA_MASK_SETTING",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankAccountBaNumElecSecSegmentId",
+        "column": "BA_NUM_ELEC_SEC_SEGMENT_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankAccountBaNumSecSegmentId",
+        "column": "BA_NUM_SEC_SEGMENT_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankAccountBaUnmaskLength",
+        "column": "BA_UNMASK_LENGTH",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankAccountBankAccountName",
+        "column": "BANK_ACCOUNT_NAME",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "BankAccountBankAccountNameAlt",
+        "column": "BANK_ACCOUNT_NAME_ALT",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankAccountBankAccountNum",
+        "column": "BANK_ACCOUNT_NUM",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankAccountBankAccountNumElectronic",
+        "column": "BANK_ACCOUNT_NUM_ELECTRONIC",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankAccountBankAccountType",
+        "column": "BANK_ACCOUNT_TYPE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "BankAccountBankId",
+        "column": "BANK_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankAccountBranchId",
+        "column": "BRANCH_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankAccountCheckDigits",
+        "column": "CHECK_DIGITS",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "BankAccountCountryCode",
+        "column": "COUNTRY_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankAccountCreatedBy",
+        "column": "CREATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankAccountCreationDate",
+        "column": "CREATION_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankAccountCurrencyCode",
+        "column": "CURRENCY_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "BankAccountDescription",
+        "column": "DESCRIPTION",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "BankAccountEncrypted",
+        "column": "ENCRYPTED",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankAccountEndDate",
+        "column": "END_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankAccountExchangeRate",
+        "column": "EXCHANGE_RATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankAccountExchangeRateAgreementNum",
+        "column": "EXCHANGE_RATE_AGREEMENT_NUM",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankAccountExchangeRateAgreementType",
+        "column": "EXCHANGE_RATE_AGREEMENT_TYPE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankAccountExtBankAccountId",
+        "column": "EXT_BANK_ACCOUNT_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankAccountForeignPaymentUseFlag",
+        "column": "FOREIGN_PAYMENT_USE_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankAccountHedgingContractReference",
+        "column": "HEDGING_CONTRACT_REFERENCE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankAccountIban",
+        "column": "IBAN",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankAccountIbanHash1",
+        "column": "IBAN_HASH1",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankAccountIbanSecSegmentId",
+        "column": "IBAN_SEC_SEGMENT_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankAccountLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "BankAccountLastUpdateLogin",
+        "column": "LAST_UPDATE_LOGIN",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankAccountLastUpdatedBy",
+        "column": "LAST_UPDATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankAccountMaskedBankAccountNum",
+        "column": "MASKED_BANK_ACCOUNT_NUM",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "BankAccountMaskedIban",
+        "column": "MASKED_IBAN",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "BankAccountObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankAccountPaymentFactorFlag",
+        "column": "PAYMENT_FACTOR_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankAccountProgramApplicationId",
+        "column": "PROGRAM_APPLICATION_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankAccountProgramId",
+        "column": "PROGRAM_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankAccountProgramUpdateDate",
+        "column": "PROGRAM_UPDATE_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankAccountRequestId",
+        "column": "REQUEST_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankAccountSaltVersion",
+        "column": "SALT_VERSION",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankAccountSecondaryAccountReference",
+        "column": "SECONDARY_ACCOUNT_REFERENCE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankAccountShortAcctName",
+        "column": "SHORT_ACCT_NAME",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankAccountStartDate",
+        "column": "START_DATE",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "HZ_ORGANIZATION_PROFILES": [
+      {
+        "attribute": "BankActualContentSource",
+        "column": "ACTUAL_CONTENT_SOURCE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankAnalysisFy",
+        "column": "ANALYSIS_FY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBankCode",
+        "column": "BANK_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBankOrBranchNumber",
+        "column": "BANK_OR_BRANCH_NUMBER",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchActualContentSource",
+        "column": "ACTUAL_CONTENT_SOURCE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchAnalysisFy",
+        "column": "ANALYSIS_FY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchBankCode",
+        "column": "BANK_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchBankOrBranchNumber",
+        "column": "BANK_OR_BRANCH_NUMBER",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchBranchCode",
+        "column": "BRANCH_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchBranchFlag",
+        "column": "BRANCH_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchBusinessReport",
+        "column": "BUSINESS_REPORT",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchBusinessScope",
+        "column": "BUSINESS_SCOPE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchCeoName",
+        "column": "CEO_NAME",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchCeoTitle",
+        "column": "CEO_TITLE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchCertReasonCode",
+        "column": "CERT_REASON_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchCertificationLevel",
+        "column": "CERTIFICATION_LEVEL",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchCleanlinessScore",
+        "column": "CLEANLINESS_SCORE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchCode",
+        "column": "BRANCH_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchComments",
+        "column": "COMMENTS",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchCompletenessScore",
+        "column": "COMPLETENESS_SCORE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchConflictId",
+        "column": "CONFLICT_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchCongDistCode",
+        "column": "CONG_DIST_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchContentSourceNumber",
+        "column": "CONTENT_SOURCE_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchControlYr",
+        "column": "CONTROL_YR",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchCorpCurrencyCode",
+        "column": "CORP_CURRENCY_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchCorporationClass",
+        "column": "CORPORATION_CLASS",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchCreatedBy",
+        "column": "CREATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchCreatedByModule",
+        "column": "CREATED_BY_MODULE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchCreationDate",
+        "column": "CREATION_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchCurcyConvRateType",
+        "column": "CURCY_CONV_RATE_TYPE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchCurrFyPotentialRevenue",
+        "column": "CURR_FY_POTENTIAL_REVENUE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchCurrencyCode",
+        "column": "CURRENCY_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchDataCloudStatus",
+        "column": "DATA_CLOUD_STATUS",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchDataConfidenceScore",
+        "column": "DATA_CONFIDENCE_SCORE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchDbRating",
+        "column": "DB_RATING",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchDisadv8aInd",
+        "column": "DISADV_8A_IND",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchDisplayedDunsPartyId",
+        "column": "DISPLAYED_DUNS_PARTY_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchDoNotConfuseWith",
+        "column": "DO_NOT_CONFUSE_WITH",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchDomesticUltimateDunsNumC",
+        "column": "DOMESTIC_ULTIMATE_DUNS_NUM_C",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchDunsNumber",
+        "column": "DUNS_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchDunsNumberC",
+        "column": "DUNS_NUMBER_C",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchDuplicateIndicator",
+        "column": "DUPLICATE_INDICATOR",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchDuplicateScore",
+        "column": "DUPLICATE_SCORE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchEffectiveEndDate",
+        "column": "EFFECTIVE_END_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchEffectiveLatestChange",
+        "column": "EFFECTIVE_LATEST_CHANGE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchEffectiveSequence",
+        "column": "EFFECTIVE_SEQUENCE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchEffectiveStartDate",
+        "column": "EFFECTIVE_START_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchEmpAtPrimaryAdr",
+        "column": "EMP_AT_PRIMARY_ADR",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchEmpAtPrimaryAdrEstInd",
+        "column": "EMP_AT_PRIMARY_ADR_EST_IND",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchEmpAtPrimaryAdrMinInd",
+        "column": "EMP_AT_PRIMARY_ADR_MIN_IND",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchEmpAtPrimaryAdrText",
+        "column": "EMP_AT_PRIMARY_ADR_TEXT",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchEmployeesTotal",
+        "column": "EMPLOYEES_TOTAL",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchEnquiryDuns",
+        "column": "ENQUIRY_DUNS",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchEnrichmentScore",
+        "column": "ENRICHMENT_SCORE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchExportInd",
+        "column": "EXPORT_IND",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchFiscalYearendMonth",
+        "column": "FISCAL_YEAREND_MONTH",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchFlag",
+        "column": "BRANCH_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchGlobalUltimateDunsNumC",
+        "column": "GLOBAL_ULTIMATE_DUNS_NUM_C",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchGrowthStrategyDesc",
+        "column": "GROWTH_STRATEGY_DESC",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchGsaIndicatorFlag",
+        "column": "GSA_INDICATOR_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchHomeCountry",
+        "column": "HOME_COUNTRY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchHqBranchInd",
+        "column": "HQ_BRANCH_IND",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchImportInd",
+        "column": "IMPORT_IND",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchIncorpYear",
+        "column": "INCORP_YEAR",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchInternalFlag",
+        "column": "INTERNAL_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchJgzzFiscalCode",
+        "column": "JGZZ_FISCAL_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchLaborSurplusInd",
+        "column": "LABOR_SURPLUS_IND",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchLastEnrichmentDate",
+        "column": "LAST_ENRICHMENT_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchLastScoreUpdateDate",
+        "column": "LAST_SCORE_UPDATE_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchLastUpdateLogin",
+        "column": "LAST_UPDATE_LOGIN",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchLastUpdatedBy",
+        "column": "LAST_UPDATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchLegalStatus",
+        "column": "LEGAL_STATUS",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchLineOfBusiness",
+        "column": "LINE_OF_BUSINESS",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchLocalActivityCode",
+        "column": "LOCAL_ACTIVITY_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchLocalActivityCodeType",
+        "column": "LOCAL_ACTIVITY_CODE_TYPE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchLocalBusIdenType",
+        "column": "LOCAL_BUS_IDEN_TYPE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchLocalBusIdentifier",
+        "column": "LOCAL_BUS_IDENTIFIER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchMinorityOwnedInd",
+        "column": "MINORITY_OWNED_IND",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchMinorityOwnedType",
+        "column": "MINORITY_OWNED_TYPE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchMissionStatement",
+        "column": "MISSION_STATEMENT",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchNextFyPotentialRevenue",
+        "column": "NEXT_FY_POTENTIAL_REVENUE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchOobInd",
+        "column": "OOB_IND",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchOrganizationName",
+        "column": "ORGANIZATION_NAME",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchOrganizationProfileId",
+        "column": "ORGANIZATION_PROFILE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchOrganizationSize",
+        "column": "ORGANIZATION_SIZE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchOrganizationType",
+        "column": "ORGANIZATION_TYPE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchParentDunsNumC",
+        "column": "PARENT_DUNS_NUM_C",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchParentSubInd",
+        "column": "PARENT_SUB_IND",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchPartyId",
+        "column": "PARTY_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchPartyNumber",
+        "column": "PARTY_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchPrefFunctionalCurrency",
+        "column": "PREF_FUNCTIONAL_CURRENCY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchPreferredContactMethod",
+        "column": "PREFERRED_CONTACT_METHOD",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchPreferredContactPersonId",
+        "column": "PREFERRED_CONTACT_PERSON_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchPrincipalName",
+        "column": "PRINCIPAL_NAME",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchPrincipalTitle",
+        "column": "PRINCIPAL_TITLE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchPublicPrivateOwnershipFlag",
+        "column": "PUBLIC_PRIVATE_OWNERSHIP_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchRecencyScore",
+        "column": "RECENCY_SCORE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchRegistrationType",
+        "column": "REGISTRATION_TYPE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchRentOwnInd",
+        "column": "RENT_OWN_IND",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchRequestId",
+        "column": "REQUEST_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchSeblUserKeyLoc",
+        "column": "SEBL_USER_KEY_LOC",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchSicCode",
+        "column": "SIC_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchSicCodeType",
+        "column": "SIC_CODE_TYPE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchSmallBusInd",
+        "column": "SMALL_BUS_IND",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchStatus",
+        "column": "STATUS",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchStockSymbol",
+        "column": "STOCK_SYMBOL",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchSuffixOverriddenFlag",
+        "column": "SUFFIX_OVERRIDDEN_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchTotalEmpEstInd",
+        "column": "TOTAL_EMP_EST_IND",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchTotalEmpMinInd",
+        "column": "TOTAL_EMP_MIN_IND",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchTotalEmployeesInd",
+        "column": "TOTAL_EMPLOYEES_IND",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchTotalEmployeesText",
+        "column": "TOTAL_EMPLOYEES_TEXT",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchTotalPayments",
+        "column": "TOTAL_PAYMENTS",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchTradingPartnerIdentifier",
+        "column": "TRADING_PARTNER_IDENTIFIER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchUniqueNameAlias",
+        "column": "UNIQUE_NAME_ALIAS",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchUniqueNameSuffix",
+        "column": "UNIQUE_NAME_SUFFIX",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchValidityScore",
+        "column": "VALIDITY_SCORE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchWomanOwnedInd",
+        "column": "WOMAN_OWNED_IND",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchYearEstablished",
+        "column": "YEAR_ESTABLISHED",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBusinessReport",
+        "column": "BUSINESS_REPORT",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBusinessScope",
+        "column": "BUSINESS_SCOPE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankCeoName",
+        "column": "CEO_NAME",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankCeoTitle",
+        "column": "CEO_TITLE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankCertReasonCode",
+        "column": "CERT_REASON_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankCertificationLevel",
+        "column": "CERTIFICATION_LEVEL",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankCleanlinessScore",
+        "column": "CLEANLINESS_SCORE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankComments",
+        "column": "COMMENTS",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankCompletenessScore",
+        "column": "COMPLETENESS_SCORE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankConflictId",
+        "column": "CONFLICT_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankCongDistCode",
+        "column": "CONG_DIST_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankContentSourceNumber",
+        "column": "CONTENT_SOURCE_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankControlYr",
+        "column": "CONTROL_YR",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankCorpCurrencyCode",
+        "column": "CORP_CURRENCY_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankCorporationClass",
+        "column": "CORPORATION_CLASS",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankCreatedBy",
+        "column": "CREATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankCreatedByModule",
+        "column": "CREATED_BY_MODULE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankCreationDate",
+        "column": "CREATION_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankCurcyConvRateType",
+        "column": "CURCY_CONV_RATE_TYPE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankCurrFyPotentialRevenue",
+        "column": "CURR_FY_POTENTIAL_REVENUE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankCurrencyCode",
+        "column": "CURRENCY_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankDataCloudStatus",
+        "column": "DATA_CLOUD_STATUS",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankDataConfidenceScore",
+        "column": "DATA_CONFIDENCE_SCORE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankDbRating",
+        "column": "DB_RATING",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankDisadv8aInd",
+        "column": "DISADV_8A_IND",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankDisplayedDunsPartyId",
+        "column": "DISPLAYED_DUNS_PARTY_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankDoNotConfuseWith",
+        "column": "DO_NOT_CONFUSE_WITH",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankDomesticUltimateDunsNumC",
+        "column": "DOMESTIC_ULTIMATE_DUNS_NUM_C",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankDunsNumber",
+        "column": "DUNS_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankDunsNumberC",
+        "column": "DUNS_NUMBER_C",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankDuplicateIndicator",
+        "column": "DUPLICATE_INDICATOR",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankDuplicateScore",
+        "column": "DUPLICATE_SCORE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankEffectiveEndDate",
+        "column": "EFFECTIVE_END_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankEffectiveLatestChange",
+        "column": "EFFECTIVE_LATEST_CHANGE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankEffectiveSequence",
+        "column": "EFFECTIVE_SEQUENCE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankEffectiveStartDate",
+        "column": "EFFECTIVE_START_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankEmpAtPrimaryAdr",
+        "column": "EMP_AT_PRIMARY_ADR",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankEmpAtPrimaryAdrEstInd",
+        "column": "EMP_AT_PRIMARY_ADR_EST_IND",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankEmpAtPrimaryAdrMinInd",
+        "column": "EMP_AT_PRIMARY_ADR_MIN_IND",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankEmpAtPrimaryAdrText",
+        "column": "EMP_AT_PRIMARY_ADR_TEXT",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankEmployeesTotal",
+        "column": "EMPLOYEES_TOTAL",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankEnquiryDuns",
+        "column": "ENQUIRY_DUNS",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankEnrichmentScore",
+        "column": "ENRICHMENT_SCORE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankExportInd",
+        "column": "EXPORT_IND",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankFiscalYearendMonth",
+        "column": "FISCAL_YEAREND_MONTH",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankGlobalUltimateDunsNumC",
+        "column": "GLOBAL_ULTIMATE_DUNS_NUM_C",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankGrowthStrategyDesc",
+        "column": "GROWTH_STRATEGY_DESC",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankGsaIndicatorFlag",
+        "column": "GSA_INDICATOR_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankHomeCountry",
+        "column": "HOME_COUNTRY",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "BankHqBranchInd",
+        "column": "HQ_BRANCH_IND",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankImportInd",
+        "column": "IMPORT_IND",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankIncorpYear",
+        "column": "INCORP_YEAR",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankInternalFlag",
+        "column": "INTERNAL_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankJgzzFiscalCode",
+        "column": "JGZZ_FISCAL_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankLaborSurplusInd",
+        "column": "LABOR_SURPLUS_IND",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankLastEnrichmentDate",
+        "column": "LAST_ENRICHMENT_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankLastScoreUpdateDate",
+        "column": "LAST_SCORE_UPDATE_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "BankLastUpdateLogin",
+        "column": "LAST_UPDATE_LOGIN",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankLastUpdatedBy",
+        "column": "LAST_UPDATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankLegalStatus",
+        "column": "LEGAL_STATUS",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankLineOfBusiness",
+        "column": "LINE_OF_BUSINESS",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankLocalActivityCode",
+        "column": "LOCAL_ACTIVITY_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankLocalActivityCodeType",
+        "column": "LOCAL_ACTIVITY_CODE_TYPE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankLocalBusIdenType",
+        "column": "LOCAL_BUS_IDEN_TYPE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankLocalBusIdentifier",
+        "column": "LOCAL_BUS_IDENTIFIER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankMinorityOwnedInd",
+        "column": "MINORITY_OWNED_IND",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankMinorityOwnedType",
+        "column": "MINORITY_OWNED_TYPE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankMissionStatement",
+        "column": "MISSION_STATEMENT",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankNextFyPotentialRevenue",
+        "column": "NEXT_FY_POTENTIAL_REVENUE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankOobInd",
+        "column": "OOB_IND",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankOrganizationName",
+        "column": "ORGANIZATION_NAME",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "BankOrganizationProfileId",
+        "column": "ORGANIZATION_PROFILE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankOrganizationSize",
+        "column": "ORGANIZATION_SIZE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankOrganizationType",
+        "column": "ORGANIZATION_TYPE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankParentDunsNumC",
+        "column": "PARENT_DUNS_NUM_C",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankParentSubInd",
+        "column": "PARENT_SUB_IND",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankPartyId",
+        "column": "PARTY_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankPartyNumber",
+        "column": "PARTY_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankPrefFunctionalCurrency",
+        "column": "PREF_FUNCTIONAL_CURRENCY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankPreferredContactMethod",
+        "column": "PREFERRED_CONTACT_METHOD",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankPreferredContactPersonId",
+        "column": "PREFERRED_CONTACT_PERSON_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankPrincipalName",
+        "column": "PRINCIPAL_NAME",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankPrincipalTitle",
+        "column": "PRINCIPAL_TITLE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankPublicPrivateOwnershipFlag",
+        "column": "PUBLIC_PRIVATE_OWNERSHIP_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankRecencyScore",
+        "column": "RECENCY_SCORE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankRegistrationType",
+        "column": "REGISTRATION_TYPE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankRentOwnInd",
+        "column": "RENT_OWN_IND",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankRequestId",
+        "column": "REQUEST_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankSeblUserKeyLoc",
+        "column": "SEBL_USER_KEY_LOC",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankSicCode",
+        "column": "SIC_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankSicCodeType",
+        "column": "SIC_CODE_TYPE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankSmallBusInd",
+        "column": "SMALL_BUS_IND",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankStatus",
+        "column": "STATUS",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankStockSymbol",
+        "column": "STOCK_SYMBOL",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankSuffixOverriddenFlag",
+        "column": "SUFFIX_OVERRIDDEN_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankTotalEmpEstInd",
+        "column": "TOTAL_EMP_EST_IND",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankTotalEmpMinInd",
+        "column": "TOTAL_EMP_MIN_IND",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankTotalEmployeesInd",
+        "column": "TOTAL_EMPLOYEES_IND",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankTotalEmployeesText",
+        "column": "TOTAL_EMPLOYEES_TEXT",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankTotalPayments",
+        "column": "TOTAL_PAYMENTS",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankTradingPartnerIdentifier",
+        "column": "TRADING_PARTNER_IDENTIFIER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankUniqueNameAlias",
+        "column": "UNIQUE_NAME_ALIAS",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankUniqueNameSuffix",
+        "column": "UNIQUE_NAME_SUFFIX",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankValidityScore",
+        "column": "VALIDITY_SCORE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankWomanOwnedInd",
+        "column": "WOMAN_OWNED_IND",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankYearEstablished",
+        "column": "YEAR_ESTABLISHED",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "HZ_CONTACT_POINTS": [
+      {
+        "attribute": "BankBranchContactActualContentSource",
+        "column": "ACTUAL_CONTENT_SOURCE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchContactAttributeCategory",
+        "column": "ATTRIBUTE_CATEGORY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchContactContactPointId",
+        "column": "CONTACT_POINT_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchContactContactPointPurpose",
+        "column": "CONTACT_POINT_PURPOSE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchContactCreatedBy",
+        "column": "CREATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchContactCreatedByModule",
+        "column": "CREATED_BY_MODULE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchContactCreationDate",
+        "column": "CREATION_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchContactEftSwiftCode",
+        "column": "EFT_SWIFT_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchContactEftUserNumber",
+        "column": "EFT_USER_NUMBER",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchContactEndDate",
+        "column": "END_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchContactLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchContactLastUpdateLogin",
+        "column": "LAST_UPDATE_LOGIN",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchContactLastUpdatedBy",
+        "column": "LAST_UPDATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchContactOrigSystemReference",
+        "column": "ORIG_SYSTEM_REFERENCE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchContactOverallPrimaryFlag",
+        "column": "OVERALL_PRIMARY_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchContactOwnerTableId",
+        "column": "OWNER_TABLE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchContactOwnerTableName",
+        "column": "OWNER_TABLE_NAME",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchContactPartyUsageCode",
+        "column": "PARTY_USAGE_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchContactPrimaryByPurpose",
+        "column": "PRIMARY_BY_PURPOSE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchContactPrimaryFlag",
+        "column": "PRIMARY_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchContactRelationshipId",
+        "column": "RELATIONSHIP_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchContactStartDate",
+        "column": "START_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchContactStatus",
+        "column": "STATUS",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "HZ_PARTIES": [
+      {
+        "attribute": "BankBranchNameAddress1",
+        "column": "ADDRESS1",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchNameAddress2",
+        "column": "ADDRESS2",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchNameAddress3",
+        "column": "ADDRESS3",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchNameAddress4",
+        "column": "ADDRESS4",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchNameAnalysisFy",
+        "column": "ANALYSIS_FY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchNameCategoryCode",
+        "column": "CATEGORY_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchNameCeoName",
+        "column": "CEO_NAME",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchNameCertReasonCode",
+        "column": "CERT_REASON_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchNameCertificationLevel",
+        "column": "CERTIFICATION_LEVEL",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchNameCity",
+        "column": "CITY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchNameComments",
+        "column": "COMMENTS",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchNameCountry",
+        "column": "COUNTRY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchNameCounty",
+        "column": "COUNTY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchNameCreatedBy",
+        "column": "CREATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchNameCreatedByModule",
+        "column": "CREATED_BY_MODULE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchNameCreationDate",
+        "column": "CREATION_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchNameCurrFyPotentialRevenue",
+        "column": "CURR_FY_POTENTIAL_REVENUE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchNameDateOfBirth",
+        "column": "DATE_OF_BIRTH",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchNameDunsNumberC",
+        "column": "DUNS_NUMBER_C",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchNameEmailAddress",
+        "column": "EMAIL_ADDRESS",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchNameEmployeesTotal",
+        "column": "EMPLOYEES_TOTAL",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchNameFiscalYearendMonth",
+        "column": "FISCAL_YEAREND_MONTH",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchNameGender",
+        "column": "GENDER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchNameGroupType",
+        "column": "GROUP_TYPE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchNameGsaIndicatorFlag",
+        "column": "GSA_INDICATOR_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchNameHomeCountry",
+        "column": "HOME_COUNTRY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchNameHqBranchInd",
+        "column": "HQ_BRANCH_IND",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchNameIdenAddrLocationId",
+        "column": "IDEN_ADDR_LOCATION_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchNameIdenAddrPartySiteId",
+        "column": "IDEN_ADDR_PARTY_SITE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchNameInternalFlag",
+        "column": "INTERNAL_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchNameJgzzFiscalCode",
+        "column": "JGZZ_FISCAL_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchNameLanguageName",
+        "column": "LANGUAGE_NAME",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchNameLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchNameLastUpdateLogin",
+        "column": "LAST_UPDATE_LOGIN",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchNameLastUpdatedBy",
+        "column": "LAST_UPDATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchNameMaritalStatus",
+        "column": "MARITAL_STATUS",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchNameMissionStatement",
+        "column": "MISSION_STATEMENT",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchNameNextFyPotentialRevenue",
+        "column": "NEXT_FY_POTENTIAL_REVENUE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchNameObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchNameOrigSystemReference",
+        "column": "ORIG_SYSTEM_REFERENCE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchNamePartyId",
+        "column": "PARTY_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchNamePartyName",
+        "column": "PARTY_NAME",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchNamePartyNumber",
+        "column": "PARTY_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchNamePartyType",
+        "column": "PARTY_TYPE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchNamePartyUniqueName",
+        "column": "PARTY_UNIQUE_NAME",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchNamePersonAcademicTitle",
+        "column": "PERSON_ACADEMIC_TITLE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchNamePersonFirstName",
+        "column": "PERSON_FIRST_NAME",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchNamePersonLastName",
+        "column": "PERSON_LAST_NAME",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchNamePersonLastNamePrefix",
+        "column": "PERSON_LAST_NAME_PREFIX",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchNamePersonMiddleName",
+        "column": "PERSON_MIDDLE_NAME",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchNamePersonNameSuffix",
+        "column": "PERSON_NAME_SUFFIX",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchNamePersonPreNameAdjunct",
+        "column": "PERSON_PRE_NAME_ADJUNCT",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchNamePersonPreviousLastName",
+        "column": "PERSON_PREVIOUS_LAST_NAME",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchNamePersonSecondLastName",
+        "column": "PERSON_SECOND_LAST_NAME",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchNamePersonTitle",
+        "column": "PERSON_TITLE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchNamePostalCode",
+        "column": "POSTAL_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchNamePrefFunctionalCurrency",
+        "column": "PREF_FUNCTIONAL_CURRENCY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchNamePreferredContactMethod",
+        "column": "PREFERRED_CONTACT_METHOD",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchNamePreferredContactPersonId",
+        "column": "PREFERRED_CONTACT_PERSON_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchNamePreferredName",
+        "column": "PREFERRED_NAME",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchNamePreferredNameId",
+        "column": "PREFERRED_NAME_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchNamePrimaryEmailContactPtId",
+        "column": "PRIMARY_EMAIL_CONTACT_PT_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchNamePrimaryPhoneAreaCode",
+        "column": "PRIMARY_PHONE_AREA_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchNamePrimaryPhoneContactPtId",
+        "column": "PRIMARY_PHONE_CONTACT_PT_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchNamePrimaryPhoneCountryCode",
+        "column": "PRIMARY_PHONE_COUNTRY_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchNamePrimaryPhoneExtension",
+        "column": "PRIMARY_PHONE_EXTENSION",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchNamePrimaryPhoneLineType",
+        "column": "PRIMARY_PHONE_LINE_TYPE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchNamePrimaryPhoneNumber",
+        "column": "PRIMARY_PHONE_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchNamePrimaryPhonePurpose",
+        "column": "PRIMARY_PHONE_PURPOSE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchNamePrimaryUrlContactPtId",
+        "column": "PRIMARY_URL_CONTACT_PT_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchNameProvince",
+        "column": "PROVINCE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchNameSalutation",
+        "column": "SALUTATION",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchNameSicCode",
+        "column": "SIC_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchNameSicCodeType",
+        "column": "SIC_CODE_TYPE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchNameState",
+        "column": "STATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchNameStatus",
+        "column": "STATUS",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchNameThirdPartyFlag",
+        "column": "THIRD_PARTY_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchNameTradingPartnerIdentifier",
+        "column": "TRADING_PARTNER_IDENTIFIER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchNameUrl",
+        "column": "URL",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchNameUserGuid",
+        "column": "USER_GUID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchNameValidatedFlag",
+        "column": "VALIDATED_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankBranchNameYearEstablished",
+        "column": "YEAR_ESTABLISHED",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankNameAddress1",
+        "column": "ADDRESS1",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankNameAddress2",
+        "column": "ADDRESS2",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankNameAddress3",
+        "column": "ADDRESS3",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankNameAddress4",
+        "column": "ADDRESS4",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankNameAnalysisFy",
+        "column": "ANALYSIS_FY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankNameCategoryCode",
+        "column": "CATEGORY_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankNameCeoName",
+        "column": "CEO_NAME",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankNameCertReasonCode",
+        "column": "CERT_REASON_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankNameCertificationLevel",
+        "column": "CERTIFICATION_LEVEL",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankNameCity",
+        "column": "CITY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankNameComments",
+        "column": "COMMENTS",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankNameCountry",
+        "column": "COUNTRY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankNameCounty",
+        "column": "COUNTY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankNameCreatedBy",
+        "column": "CREATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankNameCreatedByModule",
+        "column": "CREATED_BY_MODULE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankNameCreationDate",
+        "column": "CREATION_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankNameCurrFyPotentialRevenue",
+        "column": "CURR_FY_POTENTIAL_REVENUE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankNameDateOfBirth",
+        "column": "DATE_OF_BIRTH",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankNameDunsNumberC",
+        "column": "DUNS_NUMBER_C",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankNameEmailAddress",
+        "column": "EMAIL_ADDRESS",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankNameEmployeesTotal",
+        "column": "EMPLOYEES_TOTAL",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankNameFiscalYearendMonth",
+        "column": "FISCAL_YEAREND_MONTH",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankNameGender",
+        "column": "GENDER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankNameGroupType",
+        "column": "GROUP_TYPE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankNameGsaIndicatorFlag",
+        "column": "GSA_INDICATOR_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankNameHomeCountry",
+        "column": "HOME_COUNTRY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankNameHqBranchInd",
+        "column": "HQ_BRANCH_IND",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankNameIdenAddrLocationId",
+        "column": "IDEN_ADDR_LOCATION_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankNameIdenAddrPartySiteId",
+        "column": "IDEN_ADDR_PARTY_SITE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankNameInternalFlag",
+        "column": "INTERNAL_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankNameJgzzFiscalCode",
+        "column": "JGZZ_FISCAL_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankNameLanguageName",
+        "column": "LANGUAGE_NAME",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankNameLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "BankNameLastUpdateLogin",
+        "column": "LAST_UPDATE_LOGIN",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankNameLastUpdatedBy",
+        "column": "LAST_UPDATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankNameMaritalStatus",
+        "column": "MARITAL_STATUS",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankNameMissionStatement",
+        "column": "MISSION_STATEMENT",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankNameNextFyPotentialRevenue",
+        "column": "NEXT_FY_POTENTIAL_REVENUE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankNameObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankNameOrigSystemReference",
+        "column": "ORIG_SYSTEM_REFERENCE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankNamePartyId",
+        "column": "PARTY_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankNamePartyName",
+        "column": "PARTY_NAME",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankNamePartyNumber",
+        "column": "PARTY_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankNamePartyType",
+        "column": "PARTY_TYPE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankNamePartyUniqueName",
+        "column": "PARTY_UNIQUE_NAME",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankNamePersonAcademicTitle",
+        "column": "PERSON_ACADEMIC_TITLE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankNamePersonFirstName",
+        "column": "PERSON_FIRST_NAME",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankNamePersonLastName",
+        "column": "PERSON_LAST_NAME",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankNamePersonLastNamePrefix",
+        "column": "PERSON_LAST_NAME_PREFIX",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankNamePersonMiddleName",
+        "column": "PERSON_MIDDLE_NAME",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankNamePersonNameSuffix",
+        "column": "PERSON_NAME_SUFFIX",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankNamePersonPreNameAdjunct",
+        "column": "PERSON_PRE_NAME_ADJUNCT",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankNamePersonPreviousLastName",
+        "column": "PERSON_PREVIOUS_LAST_NAME",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankNamePersonSecondLastName",
+        "column": "PERSON_SECOND_LAST_NAME",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankNamePersonTitle",
+        "column": "PERSON_TITLE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankNamePostalCode",
+        "column": "POSTAL_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankNamePrefFunctionalCurrency",
+        "column": "PREF_FUNCTIONAL_CURRENCY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankNamePreferredContactMethod",
+        "column": "PREFERRED_CONTACT_METHOD",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankNamePreferredContactPersonId",
+        "column": "PREFERRED_CONTACT_PERSON_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankNamePreferredName",
+        "column": "PREFERRED_NAME",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankNamePreferredNameId",
+        "column": "PREFERRED_NAME_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankNamePrimaryEmailContactPtId",
+        "column": "PRIMARY_EMAIL_CONTACT_PT_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankNamePrimaryPhoneAreaCode",
+        "column": "PRIMARY_PHONE_AREA_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankNamePrimaryPhoneContactPtId",
+        "column": "PRIMARY_PHONE_CONTACT_PT_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankNamePrimaryPhoneCountryCode",
+        "column": "PRIMARY_PHONE_COUNTRY_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankNamePrimaryPhoneExtension",
+        "column": "PRIMARY_PHONE_EXTENSION",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankNamePrimaryPhoneLineType",
+        "column": "PRIMARY_PHONE_LINE_TYPE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankNamePrimaryPhoneNumber",
+        "column": "PRIMARY_PHONE_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankNamePrimaryPhonePurpose",
+        "column": "PRIMARY_PHONE_PURPOSE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankNamePrimaryUrlContactPtId",
+        "column": "PRIMARY_URL_CONTACT_PT_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankNameProvince",
+        "column": "PROVINCE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankNameSalutation",
+        "column": "SALUTATION",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankNameSicCode",
+        "column": "SIC_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankNameSicCodeType",
+        "column": "SIC_CODE_TYPE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankNameState",
+        "column": "STATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankNameStatus",
+        "column": "STATUS",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankNameThirdPartyFlag",
+        "column": "THIRD_PARTY_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankNameTradingPartnerIdentifier",
+        "column": "TRADING_PARTNER_IDENTIFIER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankNameUrl",
+        "column": "URL",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankNameUserGuid",
+        "column": "USER_GUID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankNameValidatedFlag",
+        "column": "VALIDATED_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankNameYearEstablished",
+        "column": "YEAR_ESTABLISHED",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "IBY_PMT_INSTR_USES_ALL": [
+      {
+        "attribute": "InstrumentPaymentUseId",
+        "column": "INSTRUMENT_PAYMENT_USE_ID",
+        "bicc": true,
+        "pk": true
+      },
+      {
+        "attribute": "UseCreatedBy",
+        "column": "CREATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "UseCreationDate",
+        "column": "CREATION_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "UseEndDate",
+        "column": "END_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "UseExtPmtPartyId",
+        "column": "EXT_PMT_PARTY_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "UseInstrumentId",
+        "column": "INSTRUMENT_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "UseInstrumentType",
+        "column": "INSTRUMENT_TYPE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "UseLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "UseLastUpdateLogin",
+        "column": "LAST_UPDATE_LOGIN",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "UseLastUpdatedBy",
+        "column": "LAST_UPDATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "UseObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "UsePaymentFlow",
+        "column": "PAYMENT_FLOW",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "UsePaymentFunction",
+        "column": "PAYMENT_FUNCTION",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "UsePrimaryFlag",
+        "column": "PRIMARY_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "UseStartDate",
+        "column": "START_DATE",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "IBY_EXTERNAL_PAYERS_ALL": [
+      {
+        "attribute": "PayersAcctSiteUseId",
+        "column": "ACCT_SITE_USE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PayersBankChargeBearerCode",
+        "column": "BANK_CHARGE_BEARER_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PayersCreatedBy",
+        "column": "CREATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PayersCreationDate",
+        "column": "CREATION_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PayersCustAccountId",
+        "column": "CUST_ACCOUNT_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PayersDebitAdviceDeliveryMethod",
+        "column": "DEBIT_ADVICE_DELIVERY_METHOD",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PayersDebitAdviceEmail",
+        "column": "DEBIT_ADVICE_EMAIL",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PayersDebitAdviceFax",
+        "column": "DEBIT_ADVICE_FAX",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PayersDirdebInstructionCode",
+        "column": "DIRDEB_INSTRUCTION_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PayersExtPayerId",
+        "column": "EXT_PAYER_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PayersLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PayersLastUpdateLogin",
+        "column": "LAST_UPDATE_LOGIN",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PayersLastUpdatedBy",
+        "column": "LAST_UPDATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PayersLocalinstr",
+        "column": "LOCALINSTR",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PayersObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PayersOrgId",
+        "column": "ORG_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PayersOrgType",
+        "column": "ORG_TYPE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PayersPartyId",
+        "column": "PARTY_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PayersPaymentFunction",
+        "column": "PAYMENT_FUNCTION",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PayersPurposeCode",
+        "column": "PURPOSE_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PayersServiceLevel",
+        "column": "SERVICE_LEVEL",
+        "bicc": true,
+        "pk": false
+      }
+    ]
+  }
+}

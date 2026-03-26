@@ -1,0 +1,225 @@
+{
+  "meta": {
+    "pvo_name": "CandidateAddressesPVO",
+    "full_path": "HcmTopModelAnalyticsGlobalAM.HcmRecCandidatesAM.CandidateAddressesPVO",
+    "module_path": "HcmTopModelAnalyticsGlobalAM.HcmRecCandidatesAM",
+    "module_code": "HCM",
+    "type": "pvo",
+    "description": "Extrai enderecos de candidatos com dados de logradouro. Suporta gestao de localizacao e correspondencia com candidatos em processos seletivos."
+  },
+  "stats": {
+    "total_attributes": 14,
+    "tables_count": 2,
+    "bicc_enabled": 13,
+    "bicc_pct": 93,
+    "pk_count": 1
+  },
+  "tables": [
+    "IRC_CANDIDATE_ADDRESS_V",
+    "PER_ADDRESSES_F"
+  ],
+  "attributes": [
+    {
+      "name": "AddressId",
+      "table": "PER_ADDRESSES_F",
+      "column": "ADDRESS_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AddressLine1",
+      "table": "PER_ADDRESSES_F",
+      "column": "ADDRESS_LINE_1",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AddressLine2",
+      "table": "PER_ADDRESSES_F",
+      "column": "ADDRESS_LINE_2",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CandidateAddressPEOAddressId",
+      "table": "IRC_CANDIDATE_ADDRESS_V",
+      "column": "ADDRESS_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "Country",
+      "table": "PER_ADDRESSES_F",
+      "column": "COUNTRY",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "EffectiveEndDate",
+      "table": "PER_ADDRESSES_F",
+      "column": "EFFECTIVE_END_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "EffectiveStartDate",
+      "table": "PER_ADDRESSES_F",
+      "column": "EFFECTIVE_START_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ObjectVersionNumber",
+      "table": "PER_ADDRESSES_F",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonId",
+      "table": "IRC_CANDIDATE_ADDRESS_V",
+      "column": "PERSON_ID",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    },
+    {
+      "name": "PostalCode",
+      "table": "PER_ADDRESSES_F",
+      "column": "POSTAL_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "Region1",
+      "table": "PER_ADDRESSES_F",
+      "column": "REGION_1",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "Region2",
+      "table": "PER_ADDRESSES_F",
+      "column": "REGION_2",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "Region3",
+      "table": "PER_ADDRESSES_F",
+      "column": "REGION_3",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TownOrCity",
+      "table": "PER_ADDRESSES_F",
+      "column": "TOWN_OR_CITY",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    }
+  ],
+  "by_table": {
+    "PER_ADDRESSES_F": [
+      {
+        "attribute": "AddressId",
+        "column": "ADDRESS_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "AddressLine1",
+        "column": "ADDRESS_LINE_1",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "AddressLine2",
+        "column": "ADDRESS_LINE_2",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "Country",
+        "column": "COUNTRY",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "EffectiveEndDate",
+        "column": "EFFECTIVE_END_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "EffectiveStartDate",
+        "column": "EFFECTIVE_START_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PostalCode",
+        "column": "POSTAL_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "Region1",
+        "column": "REGION_1",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "Region2",
+        "column": "REGION_2",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "Region3",
+        "column": "REGION_3",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TownOrCity",
+        "column": "TOWN_OR_CITY",
+        "bicc": true,
+        "pk": false
+      }
+    ],
+    "IRC_CANDIDATE_ADDRESS_V": [
+      {
+        "attribute": "CandidateAddressPEOAddressId",
+        "column": "ADDRESS_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PersonId",
+        "column": "PERSON_ID",
+        "bicc": true,
+        "pk": true
+      }
+    ]
+  }
+}

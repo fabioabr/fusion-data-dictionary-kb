@@ -1,0 +1,451 @@
+{
+  "source": "ap_payment_hist_dists.md",
+  "source_hash": "54b6f203cd9161bce71bba576da5d7d2",
+  "translated_at": "2026-03-25",
+  "items": [
+    {
+      "id": 1,
+      "br": "Visão Geral",
+      "en": "Overview",
+      "es": "Vision General"
+    },
+    {
+      "id": 2,
+      "br": "Armazena as distribuições contábeis associadas a cada evento do histórico de pagamento em ap_payment_history_all. Cada registro vincula um evento de pagamento (criação, clearing, void) a uma distribuição de fatura em ap_invoice_distributions_all, com os valores em múltiplas moedas (banco, pagamento, funcional). Fornece o detalhe necessário para contabilização no Subledger Accounting.",
+      "en": "Stores the accounting distributions associated with each payment history event in ap_payment_history_all. Each record links a payment event (creation, clearing, void) to an invoice distribution in ap_invoice_distributions_all, with amounts in multiple currencies (bank, payment, functional). Provides the detail needed for Subledger Accounting posting.",
+      "es": "Almacena las distribuciones contables asociadas a cada evento del historico de pago en ap_payment_history_all. Cada registro vincula un evento de pago (creacion, clearing, void) a una distribucion de factura en ap_invoice_distributions_all, con los valores en multiples monedas (banco, pago, funcional). Proporciona el detalle necesario para contabilizacion en Subledger Accounting."
+    },
+    {
+      "id": 3,
+      "br": "Tabela de interseção",
+      "en": "Intersection Table",
+      "es": "Tabla de interseccion"
+    },
+    {
+      "id": 4,
+      "br": "Esta tabela é uma tabela de interseção entre o histórico de pagamento e as distribuições de fatura, permitindo rastrear como cada distribuição de fatura foi afetada por cada evento de pagamento.",
+      "en": "This table is an intersection table between payment history and invoice distributions, allowing tracking of how each invoice distribution was affected by each payment event.",
+      "es": "Esta tabla es una tabla de interseccion entre el historico de pago y las distribuciones de factura, permitiendo rastrear como cada distribucion de factura fue afectada por cada evento de pago."
+    },
+    {
+      "id": 5,
+      "br": "Propósito de Negócio",
+      "en": "Business Purpose",
+      "es": "Proposito de Negocio"
+    },
+    {
+      "id": 6,
+      "br": "Esta tabela é utilizada nos seguintes processos:",
+      "en": "This table is used in the following processes:",
+      "es": "Esta tabla se utiliza en los siguientes procesos:"
+    },
+    {
+      "id": 7,
+      "br": "Fornece o mapeamento entre eventos de pagamento e distribuições de fatura para geração de lançamentos no GL.",
+      "en": "Provides the mapping between payment events and invoice distributions for GL journal entry generation.",
+      "es": "Proporciona el mapeo entre eventos de pago y distribuciones de factura para generacion de asientos en el GL."
+    },
+    {
+      "id": 8,
+      "br": "Na compensação bancária, registra as distribuições que movem valores de \"AP liability\" para \"cash clearing\".",
+      "en": "In bank clearing, records the distributions that move amounts from \"AP liability\" to \"cash clearing\".",
+      "es": "En la compensacion bancaria, registra las distribuciones que mueven valores de \"AP liability\" a \"cash clearing\"."
+    },
+    {
+      "id": 9,
+      "br": "Registra distribuições de reversão quando um pagamento é anulado (void).",
+      "en": "Records reversal distributions when a payment is voided.",
+      "es": "Registra distribuciones de reversion cuando un pago es anulado (void)."
+    },
+    {
+      "id": 10,
+      "br": "Trilha completa do impacto contábil de cada evento de pagamento em nível de distribuição.",
+      "en": "Complete trail of the accounting impact of each payment event at the distribution level.",
+      "es": "Pista completa del impacto contable de cada evento de pago a nivel de distribucion."
+    },
+    {
+      "id": 11,
+      "br": "Base para verificar consistência entre valores de pagamento e valores contabilizados.",
+      "en": "Basis for verifying consistency between payment amounts and posted amounts.",
+      "es": "Base para verificar consistencia entre valores de pago y valores contabilizados."
+    },
+    {
+      "id": 12,
+      "br": "Colunas Principais",
+      "en": "Key Columns",
+      "es": "Columnas Principales"
+    },
+    {
+      "id": 13,
+      "br": "Confiança",
+      "en": "Confidence",
+      "es": "Confianza"
+    },
+    {
+      "id": 14,
+      "br": "Escala de 0% a 100% — grau de certeza da descrição gerada por IA com base na documentação oficial Oracle (OEDMF/BICC Release 13/25A).",
+      "en": "Scale from 0% to 100% — degree of certainty of the AI-generated description based on official Oracle documentation (OEDMF/BICC Release 13/25A).",
+      "es": "Escala de 0% a 100% — grado de certeza de la descripcion generada por IA con base en la documentacion oficial Oracle (OEDMF/BICC Release 13/25A)."
+    },
+    {
+      "id": 15,
+      "br": "- 🟢 81–100% — Coluna presente na documentação oficial Oracle; nome, tipo e descrição confirmados.",
+      "en": "- 🟢 81–100% — Column present in official Oracle documentation; name, type, and description confirmed.",
+      "es": "- 🟢 81–100% — Columna presente en la documentacion oficial Oracle; nombre, tipo y descripcion confirmados."
+    },
+    {
+      "id": 16,
+      "br": "- 🟡 51–80% — Coluna inferida por naming convention ou padrão Oracle; tipo exato pode variar.",
+      "en": "- 🟡 51–80% — Column inferred by naming convention or Oracle standard; exact type may vary.",
+      "es": "- 🟡 51–80% — Columna inferida por naming convention o estandar Oracle; tipo exacto puede variar."
+    },
+    {
+      "id": 17,
+      "br": "- 🔴 0–50% — Existência ou tipo incertos; pode não existir no release atual; validar no ambiente.",
+      "en": "- 🔴 0–50% — Existence or type uncertain; may not exist in the current release; validate in the environment.",
+      "es": "- 🔴 0–50% — Existencia o tipo inciertos; puede no existir en el release actual; validar en el ambiente."
+    },
+    {
+      "id": 18,
+      "br": "Coluna",
+      "en": "Column",
+      "es": "Columna"
+    },
+    {
+      "id": 19,
+      "br": "Tipo",
+      "en": "Type",
+      "es": "Tipo"
+    },
+    {
+      "id": 20,
+      "br": "Nulo?",
+      "en": "Nullable?",
+      "es": "Nulo?"
+    },
+    {
+      "id": 21,
+      "br": "Categoria",
+      "en": "Category",
+      "es": "Categoria"
+    },
+    {
+      "id": 22,
+      "br": "Descrição",
+      "en": "Description",
+      "es": "Descripcion"
+    },
+    {
+      "id": 23,
+      "br": "Identificador único da distribuição do evento",
+      "en": "Unique identifier of the event distribution",
+      "es": "Identificador unico de la distribucion del evento"
+    },
+    {
+      "id": 24,
+      "br": "Evento do histórico de pagamento",
+      "en": "Payment history event",
+      "es": "Evento del historico de pago"
+    },
+    {
+      "id": 25,
+      "br": "Distribuição da fatura associada",
+      "en": "Associated invoice distribution",
+      "es": "Distribucion de la factura asociada"
+    },
+    {
+      "id": 26,
+      "br": "Pagamento da fatura associado",
+      "en": "Associated invoice payment",
+      "es": "Pago de la factura asociado"
+    },
+    {
+      "id": 27,
+      "br": "Classificação",
+      "en": "Classification",
+      "es": "Clasificacion"
+    },
+    {
+      "id": 28,
+      "br": "Tipo da distribuição de pagamento (AP LIABILITY/CASH/AWT/etc.)",
+      "en": "Payment distribution type (AP LIABILITY/CASH/AWT/etc.)",
+      "es": "Tipo de la distribucion de pago (AP LIABILITY/CASH/AWT/etc.)"
+    },
+    {
+      "id": 29,
+      "br": "Financeiro",
+      "en": "Financial",
+      "es": "Financiero"
+    },
+    {
+      "id": 30,
+      "br": "Valor da distribuição da fatura",
+      "en": "Invoice distribution amount",
+      "es": "Valor de la distribucion de la factura"
+    },
+    {
+      "id": 31,
+      "br": "Valor na moeda funcional da distribuição da fatura",
+      "en": "Invoice distribution amount in functional currency",
+      "es": "Valor en la moneda funcional de la distribucion de la factura"
+    },
+    {
+      "id": 32,
+      "br": "Valor de ajuste da fatura",
+      "en": "Invoice adjustment amount",
+      "es": "Valor de ajuste de la factura"
+    },
+    {
+      "id": 33,
+      "br": "Valor de ajuste na moeda funcional",
+      "en": "Adjustment amount in functional currency",
+      "es": "Valor de ajuste en la moneda funcional"
+    },
+    {
+      "id": 34,
+      "br": "Valor da distribuição na moeda do pagamento",
+      "en": "Distribution amount in payment currency",
+      "es": "Valor de la distribucion en la moneda del pago"
+    },
+    {
+      "id": 35,
+      "br": "Valor na moeda do banco",
+      "en": "Amount in bank currency",
+      "es": "Valor en la moneda del banco"
+    },
+    {
+      "id": 36,
+      "br": "Valor compensado na moeda funcional",
+      "en": "Cleared amount in functional currency",
+      "es": "Valor compensado en la moneda funcional"
+    },
+    {
+      "id": 37,
+      "br": "Valor pago na moeda funcional",
+      "en": "Paid amount in functional currency",
+      "es": "Valor pagado en la moneda funcional"
+    },
+    {
+      "id": 38,
+      "br": "Valor maturado na moeda funcional",
+      "en": "Matured amount in functional currency",
+      "es": "Valor madurado en la moneda funcional"
+    },
+    {
+      "id": 39,
+      "br": "Contabilidade",
+      "en": "Accounting",
+      "es": "Contabilidad"
+    },
+    {
+      "id": 40,
+      "br": "Evento contábil do Subledger Accounting",
+      "en": "Subledger Accounting accounting event",
+      "es": "Evento contable del Subledger Accounting"
+    },
+    {
+      "id": 41,
+      "br": "Status",
+      "en": "Status",
+      "es": "Status"
+    },
+    {
+      "id": 42,
+      "br": "Indica se é distribuição de reversão (Y/N)",
+      "en": "Indicates whether it is a reversal distribution (Y/N)",
+      "es": "Indica si es distribucion de reversion (Y/N)"
+    },
+    {
+      "id": 43,
+      "br": "Referência cruzada",
+      "en": "Cross-reference",
+      "es": "Referencia cruzada"
+    },
+    {
+      "id": 44,
+      "br": "ID da distribuição original revertida",
+      "en": "ID of the original reversed distribution",
+      "es": "ID de la distribucion original revertida"
+    },
+    {
+      "id": 45,
+      "br": "Auditoria",
+      "en": "Audit",
+      "es": "Auditoria"
+    },
+    {
+      "id": 46,
+      "br": "Usuário que criou o registro",
+      "en": "User who created the record",
+      "es": "Usuario que creo el registro"
+    },
+    {
+      "id": 47,
+      "br": "Data/hora de criação",
+      "en": "Creation date/time",
+      "es": "Fecha/hora de creacion"
+    },
+    {
+      "id": 48,
+      "br": "Último usuário que alterou",
+      "en": "Last user who modified",
+      "es": "Ultimo usuario que modifico"
+    },
+    {
+      "id": 49,
+      "br": "Data/hora da última alteração",
+      "en": "Last modification date/time",
+      "es": "Fecha/hora de la ultima modificacion"
+    },
+    {
+      "id": 50,
+      "br": "Login da última sessão",
+      "en": "Last session login",
+      "es": "Login de la ultima sesion"
+    },
+    {
+      "id": 51,
+      "br": "Relacionamentos",
+      "en": "Relationships",
+      "es": "Relaciones"
+    },
+    {
+      "id": 52,
+      "br": "Tabelas-pai (FK de entrada)",
+      "en": "Parent Tables (inbound FK)",
+      "es": "Tablas padre (FK de entrada)"
+    },
+    {
+      "id": 53,
+      "br": "evento de pagamento",
+      "en": "payment event",
+      "es": "evento de pago"
+    },
+    {
+      "id": 54,
+      "br": "distribuição da fatura",
+      "en": "invoice distribution",
+      "es": "distribucion de la factura"
+    },
+    {
+      "id": 55,
+      "br": "pagamento da fatura",
+      "en": "invoice payment",
+      "es": "pago de la factura"
+    },
+    {
+      "id": 56,
+      "br": "evento contábil SLA",
+      "en": "SLA accounting event",
+      "es": "evento contable SLA"
+    },
+    {
+      "id": 57,
+      "br": "Tabelas-filha (FK de saída)",
+      "en": "Child Tables (outbound FK)",
+      "es": "Tablas hija (FK de salida)"
+    },
+    {
+      "id": 58,
+      "br": "auto-referência para reversões",
+      "en": "self-reference for reversals",
+      "es": "auto-referencia para reversiones"
+    },
+    {
+      "id": 59,
+      "br": "Uso Típico",
+      "en": "Typical Usage",
+      "es": "Uso Tipico"
+    },
+    {
+      "id": 60,
+      "br": "Distribuições de um evento de pagamento",
+      "en": "Distributions of a payment event",
+      "es": "Distribuciones de un evento de pago"
+    },
+    {
+      "id": 61,
+      "br": "Rastrear contabilização de um check",
+      "en": "Track check posting",
+      "es": "Rastrear contabilizacion de un cheque"
+    },
+    {
+      "id": 62,
+      "br": "Filtros comuns",
+      "en": "Common Filters",
+      "es": "Filtros comunes"
+    },
+    {
+      "id": 63,
+      "br": "Distribuições de liability",
+      "en": "Liability distributions",
+      "es": "Distribuciones de liability"
+    },
+    {
+      "id": 64,
+      "br": "Distribuições de caixa",
+      "en": "Cash distributions",
+      "es": "Distribuciones de caja"
+    },
+    {
+      "id": 65,
+      "br": "Exclui reversões",
+      "en": "Excludes reversals",
+      "es": "Excluye reversiones"
+    },
+    {
+      "id": 66,
+      "br": "Observações",
+      "en": "Notes",
+      "es": "Observaciones"
+    },
+    {
+      "id": 67,
+      "br": "O campo PAY_DIST_LOOKUP_CODE classifica a natureza contábil: AP LIABILITY (passivo AP), CASH (caixa), DISCOUNT (desconto), AWT (withholding tax), ROUNDING (arredondamento), EXCHANGE RATE VARIANCE (variação cambial).",
+      "en": "The PAY_DIST_LOOKUP_CODE field classifies the accounting nature: AP LIABILITY (AP liability), CASH (cash), DISCOUNT (discount), AWT (withholding tax), ROUNDING (rounding), EXCHANGE RATE VARIANCE (exchange rate variance).",
+      "es": "El campo PAY_DIST_LOOKUP_CODE clasifica la naturaleza contable: AP LIABILITY (pasivo AP), CASH (caja), DISCOUNT (descuento), AWT (withholding tax), ROUNDING (redondeo), EXCHANGE RATE VARIANCE (variacion cambiaria)."
+    },
+    {
+      "id": 68,
+      "br": "A tabela vincula três entidades: evento de pagamento, distribuição de fatura e pagamento de fatura, formando a base para contabilização via Subledger Accounting.",
+      "en": "The table links three entities: payment event, invoice distribution, and invoice payment, forming the basis for Subledger Accounting posting.",
+      "es": "La tabla vincula tres entidades: evento de pago, distribucion de factura y pago de factura, formando la base para contabilizacion via Subledger Accounting."
+    },
+    {
+      "id": 69,
+      "br": "O campo REVERSAL_FLAG = 'Y' indica distribuição de reversão, com REVERSED_PAYMENT_HIST_DIST_ID apontando para a original.",
+      "en": "The REVERSAL_FLAG = 'Y' field indicates a reversal distribution, with REVERSED_PAYMENT_HIST_DIST_ID pointing to the original.",
+      "es": "El campo REVERSAL_FLAG = 'Y' indica distribucion de reversion, con REVERSED_PAYMENT_HIST_DIST_ID apuntando a la original."
+    },
+    {
+      "id": 70,
+      "br": "Os valores são armazenados em múltiplas moedas: moeda do pagamento (AMOUNT), moeda do banco (BANK_CURR_AMOUNT) e moeda funcional (PAID_BASE_AMOUNT).",
+      "en": "Amounts are stored in multiple currencies: payment currency (AMOUNT), bank currency (BANK_CURR_AMOUNT), and functional currency (PAID_BASE_AMOUNT).",
+      "es": "Los valores se almacenan en multiples monedas: moneda del pago (AMOUNT), moneda del banco (BANK_CURR_AMOUNT) y moneda funcional (PAID_BASE_AMOUNT)."
+    },
+    {
+      "id": 71,
+      "br": "É tabela de alta volumetria — cada evento de pagamento gera múltiplas distribuições.",
+      "en": "This is a high-volume table — each payment event generates multiple distributions.",
+      "es": "Es tabla de alta volumetria — cada evento de pago genera multiples distribuciones."
+    },
+    {
+      "id": 72,
+      "br": "Referências",
+      "en": "References",
+      "es": "Referencias"
+    },
+    {
+      "id": 73,
+      "br": "[Oracle Docs — AP_PAYMENT_HIST_DISTS](https://docs.oracle.com/en/cloud/saas/financials/25a/oedmf/appaymenthistdists-25734.html)",
+      "en": "[Oracle Docs — AP_PAYMENT_HIST_DISTS](https://docs.oracle.com/en/cloud/saas/financials/25a/oedmf/appaymenthistdists-25734.html)",
+      "es": "[Oracle Docs — AP_PAYMENT_HIST_DISTS](https://docs.oracle.com/en/cloud/saas/financials/25a/oedmf/appaymenthistdists-25734.html)"
+    },
+    {
+      "id": 74,
+      "br": "ap-module-data-dictionary — Dossiê do módulo AP",
+      "en": "ap-module-data-dictionary — AP module dossier",
+      "es": "ap-module-data-dictionary — Dosier del modulo AP"
+    }
+  ]
+}

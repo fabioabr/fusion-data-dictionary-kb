@@ -1,0 +1,306 @@
+{
+  "meta": {
+    "pvo_name": "NegotiationPriceTierExtractPVO",
+    "full_path": "FscmTopModelAM.PrcExtractAM.PonBiccExtractAM.NegotiationPriceTierExtractPVO",
+    "module_path": "FscmTopModelAM.PrcExtractAM.PonBiccExtractAM",
+    "module_code": "PO",
+    "type": "pvo",
+    "description": "Extrai as faixas de preço (price tiers) configuradas em negociações para carga BICC, com quebras por volume. Alimenta análises de estratégia de precificação e economia por escala."
+  },
+  "stats": {
+    "total_attributes": 20,
+    "tables_count": 1,
+    "bicc_enabled": 20,
+    "bicc_pct": 100,
+    "pk_count": 3
+  },
+  "tables": [
+    "PON_AUCTION_SHIPMENTS_ALL"
+  ],
+  "attributes": [
+    {
+      "name": "AuctionHeaderId",
+      "table": "PON_AUCTION_SHIPMENTS_ALL",
+      "column": "AUCTION_HEADER_ID",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    },
+    {
+      "name": "CreatedBy",
+      "table": "PON_AUCTION_SHIPMENTS_ALL",
+      "column": "CREATED_BY",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CreationDate",
+      "table": "PON_AUCTION_SHIPMENTS_ALL",
+      "column": "CREATION_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "DifferentialResponseType",
+      "table": "PON_AUCTION_SHIPMENTS_ALL",
+      "column": "DIFFERENTIAL_RESPONSE_TYPE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "EffectiveEndDate",
+      "table": "PON_AUCTION_SHIPMENTS_ALL",
+      "column": "EFFECTIVE_END_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "EffectiveStartDate",
+      "table": "PON_AUCTION_SHIPMENTS_ALL",
+      "column": "EFFECTIVE_START_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "HasPriceDifferentialsFlag",
+      "table": "PON_AUCTION_SHIPMENTS_ALL",
+      "column": "HAS_PRICE_DIFFERENTIALS_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LastUpdateDate",
+      "table": "PON_AUCTION_SHIPMENTS_ALL",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": true
+    },
+    {
+      "name": "LastUpdateLogin",
+      "table": "PON_AUCTION_SHIPMENTS_ALL",
+      "column": "LAST_UPDATE_LOGIN",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LastUpdatedBy",
+      "table": "PON_AUCTION_SHIPMENTS_ALL",
+      "column": "LAST_UPDATED_BY",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LineNumber",
+      "table": "PON_AUCTION_SHIPMENTS_ALL",
+      "column": "LINE_NUMBER",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    },
+    {
+      "name": "MaxQuantity",
+      "table": "PON_AUCTION_SHIPMENTS_ALL",
+      "column": "MAX_QUANTITY",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ObjectVersionNumber",
+      "table": "PON_AUCTION_SHIPMENTS_ALL",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PrcBuId",
+      "table": "PON_AUCTION_SHIPMENTS_ALL",
+      "column": "PRC_BU_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "Price",
+      "table": "PON_AUCTION_SHIPMENTS_ALL",
+      "column": "PRICE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "Quantity",
+      "table": "PON_AUCTION_SHIPMENTS_ALL",
+      "column": "QUANTITY",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ShipToLocationId",
+      "table": "PON_AUCTION_SHIPMENTS_ALL",
+      "column": "SHIP_TO_LOCATION_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ShipToOrganizationId",
+      "table": "PON_AUCTION_SHIPMENTS_ALL",
+      "column": "SHIP_TO_ORGANIZATION_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ShipmentNumber",
+      "table": "PON_AUCTION_SHIPMENTS_ALL",
+      "column": "SHIPMENT_NUMBER",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    },
+    {
+      "name": "ShipmentType",
+      "table": "PON_AUCTION_SHIPMENTS_ALL",
+      "column": "SHIPMENT_TYPE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    }
+  ],
+  "by_table": {
+    "PON_AUCTION_SHIPMENTS_ALL": [
+      {
+        "attribute": "AuctionHeaderId",
+        "column": "AUCTION_HEADER_ID",
+        "bicc": true,
+        "pk": true
+      },
+      {
+        "attribute": "CreatedBy",
+        "column": "CREATED_BY",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CreationDate",
+        "column": "CREATION_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "DifferentialResponseType",
+        "column": "DIFFERENTIAL_RESPONSE_TYPE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "EffectiveEndDate",
+        "column": "EFFECTIVE_END_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "EffectiveStartDate",
+        "column": "EFFECTIVE_START_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "HasPriceDifferentialsFlag",
+        "column": "HAS_PRICE_DIFFERENTIALS_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "LastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "LastUpdateLogin",
+        "column": "LAST_UPDATE_LOGIN",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "LastUpdatedBy",
+        "column": "LAST_UPDATED_BY",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "LineNumber",
+        "column": "LINE_NUMBER",
+        "bicc": true,
+        "pk": true
+      },
+      {
+        "attribute": "MaxQuantity",
+        "column": "MAX_QUANTITY",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PrcBuId",
+        "column": "PRC_BU_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "Price",
+        "column": "PRICE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "Quantity",
+        "column": "QUANTITY",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ShipToLocationId",
+        "column": "SHIP_TO_LOCATION_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ShipToOrganizationId",
+        "column": "SHIP_TO_ORGANIZATION_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ShipmentNumber",
+        "column": "SHIPMENT_NUMBER",
+        "bicc": true,
+        "pk": true
+      },
+      {
+        "attribute": "ShipmentType",
+        "column": "SHIPMENT_TYPE",
+        "bicc": true,
+        "pk": false
+      }
+    ]
+  }
+}

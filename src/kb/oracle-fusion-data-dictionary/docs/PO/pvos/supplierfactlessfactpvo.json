@@ -1,0 +1,124 @@
+{
+  "meta": {
+    "pvo_name": "SupplierFactLessFactPVO",
+    "full_path": "FscmTopModelAM.PrcPozPublicViewAM.SupplierFactLessFactPVO",
+    "module_path": "FscmTopModelAM.PrcPozPublicViewAM",
+    "module_code": "PO",
+    "type": "pvo",
+    "description": "Extrai métricas agregadas de fornecedores sem dimensões transacionais diretas (factless fact), combinando sites e contatos. Suporta dashboards executivos e contagens de fornecedores ativos."
+  },
+  "stats": {
+    "total_attributes": 7,
+    "tables_count": 1,
+    "bicc_enabled": 7,
+    "bicc_pct": 100,
+    "pk_count": 6
+  },
+  "tables": [
+    "POZ_SUPP_SITES_CONTACTS_V"
+  ],
+  "attributes": [
+    {
+      "name": "CarrierId",
+      "table": "POZ_SUPP_SITES_CONTACTS_V",
+      "column": "CARRIER_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartySiteId",
+      "table": "POZ_SUPP_SITES_CONTACTS_V",
+      "column": "PARTY_SITE_ID",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    },
+    {
+      "name": "PersonPartyId",
+      "table": "POZ_SUPP_SITES_CONTACTS_V",
+      "column": "PERSON_PARTY_ID",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    },
+    {
+      "name": "PrcBuId",
+      "table": "POZ_SUPP_SITES_CONTACTS_V",
+      "column": "PRC_BU_ID",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    },
+    {
+      "name": "SuppPartyId",
+      "table": "POZ_SUPP_SITES_CONTACTS_V",
+      "column": "SUPP_PARTY_ID",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    },
+    {
+      "name": "VendorId",
+      "table": "POZ_SUPP_SITES_CONTACTS_V",
+      "column": "VENDOR_ID",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    },
+    {
+      "name": "VendorSiteId",
+      "table": "POZ_SUPP_SITES_CONTACTS_V",
+      "column": "VENDOR_SITE_ID",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    }
+  ],
+  "by_table": {
+    "POZ_SUPP_SITES_CONTACTS_V": [
+      {
+        "attribute": "CarrierId",
+        "column": "CARRIER_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PartySiteId",
+        "column": "PARTY_SITE_ID",
+        "bicc": true,
+        "pk": true
+      },
+      {
+        "attribute": "PersonPartyId",
+        "column": "PERSON_PARTY_ID",
+        "bicc": true,
+        "pk": true
+      },
+      {
+        "attribute": "PrcBuId",
+        "column": "PRC_BU_ID",
+        "bicc": true,
+        "pk": true
+      },
+      {
+        "attribute": "SuppPartyId",
+        "column": "SUPP_PARTY_ID",
+        "bicc": true,
+        "pk": true
+      },
+      {
+        "attribute": "VendorId",
+        "column": "VENDOR_ID",
+        "bicc": true,
+        "pk": true
+      },
+      {
+        "attribute": "VendorSiteId",
+        "column": "VENDOR_SITE_ID",
+        "bicc": true,
+        "pk": true
+      }
+    ]
+  }
+}

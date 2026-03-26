@@ -1,0 +1,3586 @@
+{
+  "meta": {
+    "pvo_name": "AllocatedChecklistsPVO",
+    "full_path": "HcmTopModelAnalyticsGlobalAM.ChecklistAM.AllocatedChecklistsPVO",
+    "module_path": "HcmTopModelAnalyticsGlobalAM.ChecklistAM",
+    "module_code": "HCM",
+    "type": "pvo",
+    "description": "Extrai checklists alocados a colaboradores com contatos e conteudos associados. Essencial para rastreamento de processos de onboarding e transicoes."
+  },
+  "stats": {
+    "total_attributes": 253,
+    "tables_count": 7,
+    "bicc_enabled": 42,
+    "bicc_pct": 17,
+    "pk_count": 1
+  },
+  "tables": [
+    "PER_ALLOCATED_CHECKLISTS",
+    "PER_ALLOCATED_CHECKLISTS_TL",
+    "PER_ALLOC_CHKLST_CONTACTS",
+    "PER_ALLOC_CHKLST_CONTENTS",
+    "PER_ALL_PEOPLE_F",
+    "PER_PERSON_NAMES_F_V",
+    "PER_USERS"
+  ],
+  "attributes": [
+    {
+      "name": "AllocatedChecklistContactsPEAdhocUserGuid",
+      "table": "PER_ALLOC_CHKLST_CONTACTS",
+      "column": "ADHOC_USER_GUID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistContactsPEAllocChklstContactId",
+      "table": "PER_ALLOC_CHKLST_CONTACTS",
+      "column": "ALLOC_CHKLST_CONTACT_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistContactsPEAllocatedChecklistId",
+      "table": "PER_ALLOC_CHKLST_CONTACTS",
+      "column": "ALLOCATED_CHECKLIST_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistContactsPEChecklistContactId",
+      "table": "PER_ALLOC_CHKLST_CONTACTS",
+      "column": "CHECKLIST_CONTACT_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistContactsPEContactTitleCode",
+      "table": "PER_ALLOC_CHKLST_CONTACTS",
+      "column": "CONTACT_TITLE_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistContactsPEContactType",
+      "table": "PER_ALLOC_CHKLST_CONTACTS",
+      "column": "CONTACT_TYPE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistContactsPECreatedBy",
+      "table": "PER_ALLOC_CHKLST_CONTACTS",
+      "column": "CREATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistContactsPECreationDate",
+      "table": "PER_ALLOC_CHKLST_CONTACTS",
+      "column": "CREATION_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistContactsPECustomContact",
+      "table": "PER_ALLOC_CHKLST_CONTACTS",
+      "column": "CUSTOM_CONTACT",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistContactsPEEnterpriseId",
+      "table": "PER_ALLOC_CHKLST_CONTACTS",
+      "column": "ENTERPRISE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistContactsPELastUpdateDate",
+      "table": "PER_ALLOC_CHKLST_CONTACTS",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistContactsPELastUpdateLogin",
+      "table": "PER_ALLOC_CHKLST_CONTACTS",
+      "column": "LAST_UPDATE_LOGIN",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistContactsPELastUpdatedBy",
+      "table": "PER_ALLOC_CHKLST_CONTACTS",
+      "column": "LAST_UPDATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistContactsPEObjectVersionNumber",
+      "table": "PER_ALLOC_CHKLST_CONTACTS",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistContactsPEResponsibilityType",
+      "table": "PER_ALLOC_CHKLST_CONTACTS",
+      "column": "RESPONSIBILITY_TYPE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistContentsPE1AllocChklstContentId",
+      "table": "PER_ALLOC_CHKLST_CONTENTS",
+      "column": "ALLOC_CHKLST_CONTENT_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistContentsPE1AllocatedChecklistId",
+      "table": "PER_ALLOC_CHKLST_CONTENTS",
+      "column": "ALLOCATED_CHECKLIST_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistContentsPE1ChecklistContentId",
+      "table": "PER_ALLOC_CHKLST_CONTENTS",
+      "column": "CHECKLIST_CONTENT_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistContentsPE1ChkContentDefnId",
+      "table": "PER_ALLOC_CHKLST_CONTENTS",
+      "column": "CHK_CONTENT_DEFN_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistContentsPE1ContentType",
+      "table": "PER_ALLOC_CHKLST_CONTENTS",
+      "column": "CONTENT_TYPE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistContentsPE1CreatedBy",
+      "table": "PER_ALLOC_CHKLST_CONTENTS",
+      "column": "CREATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistContentsPE1CreationDate",
+      "table": "PER_ALLOC_CHKLST_CONTENTS",
+      "column": "CREATION_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistContentsPE1EnterpriseId",
+      "table": "PER_ALLOC_CHKLST_CONTENTS",
+      "column": "ENTERPRISE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistContentsPE1LastUpdateDate",
+      "table": "PER_ALLOC_CHKLST_CONTENTS",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistContentsPE1LastUpdateLogin",
+      "table": "PER_ALLOC_CHKLST_CONTENTS",
+      "column": "LAST_UPDATE_LOGIN",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistContentsPE1LastUpdatedBy",
+      "table": "PER_ALLOC_CHKLST_CONTENTS",
+      "column": "LAST_UPDATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistContentsPE1ObjectVersionNumber",
+      "table": "PER_ALLOC_CHKLST_CONTENTS",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistContentsPE1Sequence",
+      "table": "PER_ALLOC_CHKLST_CONTENTS",
+      "column": "SEQUENCE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistContentsPE2AllocChklstContentId",
+      "table": "PER_ALLOC_CHKLST_CONTENTS",
+      "column": "ALLOC_CHKLST_CONTENT_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistContentsPE2AllocatedChecklistId",
+      "table": "PER_ALLOC_CHKLST_CONTENTS",
+      "column": "ALLOCATED_CHECKLIST_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistContentsPE2ChecklistContentId",
+      "table": "PER_ALLOC_CHKLST_CONTENTS",
+      "column": "CHECKLIST_CONTENT_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistContentsPE2ChkContentDefnId",
+      "table": "PER_ALLOC_CHKLST_CONTENTS",
+      "column": "CHK_CONTENT_DEFN_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistContentsPE2ContentType",
+      "table": "PER_ALLOC_CHKLST_CONTENTS",
+      "column": "CONTENT_TYPE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistContentsPE2CreatedBy",
+      "table": "PER_ALLOC_CHKLST_CONTENTS",
+      "column": "CREATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistContentsPE2CreationDate",
+      "table": "PER_ALLOC_CHKLST_CONTENTS",
+      "column": "CREATION_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistContentsPE2EnterpriseId",
+      "table": "PER_ALLOC_CHKLST_CONTENTS",
+      "column": "ENTERPRISE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistContentsPE2LastUpdateDate",
+      "table": "PER_ALLOC_CHKLST_CONTENTS",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistContentsPE2LastUpdateLogin",
+      "table": "PER_ALLOC_CHKLST_CONTENTS",
+      "column": "LAST_UPDATE_LOGIN",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistContentsPE2LastUpdatedBy",
+      "table": "PER_ALLOC_CHKLST_CONTENTS",
+      "column": "LAST_UPDATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistContentsPE2ObjectVersionNumber",
+      "table": "PER_ALLOC_CHKLST_CONTENTS",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistContentsPE2Sequence",
+      "table": "PER_ALLOC_CHKLST_CONTENTS",
+      "column": "SEQUENCE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistContentsPE3AllocChklstContentId",
+      "table": "PER_ALLOC_CHKLST_CONTENTS",
+      "column": "ALLOC_CHKLST_CONTENT_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistContentsPE3AllocatedChecklistId",
+      "table": "PER_ALLOC_CHKLST_CONTENTS",
+      "column": "ALLOCATED_CHECKLIST_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistContentsPE3ChecklistContentId",
+      "table": "PER_ALLOC_CHKLST_CONTENTS",
+      "column": "CHECKLIST_CONTENT_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistContentsPE3ChkContentDefnId",
+      "table": "PER_ALLOC_CHKLST_CONTENTS",
+      "column": "CHK_CONTENT_DEFN_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistContentsPE3ContentType",
+      "table": "PER_ALLOC_CHKLST_CONTENTS",
+      "column": "CONTENT_TYPE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistContentsPE3CreatedBy",
+      "table": "PER_ALLOC_CHKLST_CONTENTS",
+      "column": "CREATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistContentsPE3CreationDate",
+      "table": "PER_ALLOC_CHKLST_CONTENTS",
+      "column": "CREATION_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistContentsPE3EnterpriseId",
+      "table": "PER_ALLOC_CHKLST_CONTENTS",
+      "column": "ENTERPRISE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistContentsPE3LastUpdateDate",
+      "table": "PER_ALLOC_CHKLST_CONTENTS",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistContentsPE3LastUpdateLogin",
+      "table": "PER_ALLOC_CHKLST_CONTENTS",
+      "column": "LAST_UPDATE_LOGIN",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistContentsPE3LastUpdatedBy",
+      "table": "PER_ALLOC_CHKLST_CONTENTS",
+      "column": "LAST_UPDATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistContentsPE3ObjectVersionNumber",
+      "table": "PER_ALLOC_CHKLST_CONTENTS",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistContentsPE3Sequence",
+      "table": "PER_ALLOC_CHKLST_CONTENTS",
+      "column": "SEQUENCE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistContentsPE4AllocChklstContentId",
+      "table": "PER_ALLOC_CHKLST_CONTENTS",
+      "column": "ALLOC_CHKLST_CONTENT_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistContentsPE4AllocatedChecklistId",
+      "table": "PER_ALLOC_CHKLST_CONTENTS",
+      "column": "ALLOCATED_CHECKLIST_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistContentsPE4ChecklistContentId",
+      "table": "PER_ALLOC_CHKLST_CONTENTS",
+      "column": "CHECKLIST_CONTENT_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistContentsPE4ChkContentDefnId",
+      "table": "PER_ALLOC_CHKLST_CONTENTS",
+      "column": "CHK_CONTENT_DEFN_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistContentsPE4ContentType",
+      "table": "PER_ALLOC_CHKLST_CONTENTS",
+      "column": "CONTENT_TYPE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistContentsPE4CreatedBy",
+      "table": "PER_ALLOC_CHKLST_CONTENTS",
+      "column": "CREATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistContentsPE4CreationDate",
+      "table": "PER_ALLOC_CHKLST_CONTENTS",
+      "column": "CREATION_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistContentsPE4EnterpriseId",
+      "table": "PER_ALLOC_CHKLST_CONTENTS",
+      "column": "ENTERPRISE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistContentsPE4LastUpdateDate",
+      "table": "PER_ALLOC_CHKLST_CONTENTS",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistContentsPE4LastUpdateLogin",
+      "table": "PER_ALLOC_CHKLST_CONTENTS",
+      "column": "LAST_UPDATE_LOGIN",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistContentsPE4LastUpdatedBy",
+      "table": "PER_ALLOC_CHKLST_CONTENTS",
+      "column": "LAST_UPDATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistContentsPE4ObjectVersionNumber",
+      "table": "PER_ALLOC_CHKLST_CONTENTS",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistContentsPE4Sequence",
+      "table": "PER_ALLOC_CHKLST_CONTENTS",
+      "column": "SEQUENCE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistContentsPE5AllocChklstContentId",
+      "table": "PER_ALLOC_CHKLST_CONTENTS",
+      "column": "ALLOC_CHKLST_CONTENT_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistContentsPE5AllocatedChecklistId",
+      "table": "PER_ALLOC_CHKLST_CONTENTS",
+      "column": "ALLOCATED_CHECKLIST_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistContentsPE5ChecklistContentId",
+      "table": "PER_ALLOC_CHKLST_CONTENTS",
+      "column": "CHECKLIST_CONTENT_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistContentsPE5ChkContentDefnId",
+      "table": "PER_ALLOC_CHKLST_CONTENTS",
+      "column": "CHK_CONTENT_DEFN_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistContentsPE5ContentType",
+      "table": "PER_ALLOC_CHKLST_CONTENTS",
+      "column": "CONTENT_TYPE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistContentsPE5CreatedBy",
+      "table": "PER_ALLOC_CHKLST_CONTENTS",
+      "column": "CREATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistContentsPE5CreationDate",
+      "table": "PER_ALLOC_CHKLST_CONTENTS",
+      "column": "CREATION_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistContentsPE5EnterpriseId",
+      "table": "PER_ALLOC_CHKLST_CONTENTS",
+      "column": "ENTERPRISE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistContentsPE5LastUpdateDate",
+      "table": "PER_ALLOC_CHKLST_CONTENTS",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistContentsPE5LastUpdateLogin",
+      "table": "PER_ALLOC_CHKLST_CONTENTS",
+      "column": "LAST_UPDATE_LOGIN",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistContentsPE5LastUpdatedBy",
+      "table": "PER_ALLOC_CHKLST_CONTENTS",
+      "column": "LAST_UPDATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistContentsPE5ObjectVersionNumber",
+      "table": "PER_ALLOC_CHKLST_CONTENTS",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistContentsPE5Sequence",
+      "table": "PER_ALLOC_CHKLST_CONTENTS",
+      "column": "SEQUENCE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistContentsPEAllocChklstContentId",
+      "table": "PER_ALLOC_CHKLST_CONTENTS",
+      "column": "ALLOC_CHKLST_CONTENT_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistContentsPEChecklistContentId",
+      "table": "PER_ALLOC_CHKLST_CONTENTS",
+      "column": "CHECKLIST_CONTENT_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistContentsPEOAllocatedChecklistId",
+      "table": "PER_ALLOC_CHKLST_CONTENTS",
+      "column": "ALLOCATED_CHECKLIST_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistContentsPEOChkContentDefnId",
+      "table": "PER_ALLOC_CHKLST_CONTENTS",
+      "column": "CHK_CONTENT_DEFN_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistContentsPEOContentType",
+      "table": "PER_ALLOC_CHKLST_CONTENTS",
+      "column": "CONTENT_TYPE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistContentsPEOCreatedBy",
+      "table": "PER_ALLOC_CHKLST_CONTENTS",
+      "column": "CREATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistContentsPEOCreationDate",
+      "table": "PER_ALLOC_CHKLST_CONTENTS",
+      "column": "CREATION_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistContentsPEOEnterpriseId",
+      "table": "PER_ALLOC_CHKLST_CONTENTS",
+      "column": "ENTERPRISE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistContentsPEOLastUpdateDate",
+      "table": "PER_ALLOC_CHKLST_CONTENTS",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistContentsPEOLastUpdateLogin",
+      "table": "PER_ALLOC_CHKLST_CONTENTS",
+      "column": "LAST_UPDATE_LOGIN",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistContentsPEOLastUpdatedBy",
+      "table": "PER_ALLOC_CHKLST_CONTENTS",
+      "column": "LAST_UPDATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistContentsPEOObjectVersionNumber",
+      "table": "PER_ALLOC_CHKLST_CONTENTS",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistContentsPEOSequence",
+      "table": "PER_ALLOC_CHKLST_CONTENTS",
+      "column": "SEQUENCE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistId",
+      "table": "PER_ALLOCATED_CHECKLISTS",
+      "column": "ALLOCATED_CHECKLIST_ID",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistranslationAllocatedChecklistId",
+      "table": "PER_ALLOCATED_CHECKLISTS_TL",
+      "column": "ALLOCATED_CHECKLIST_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistranslationBusinessGroupId",
+      "table": "PER_ALLOCATED_CHECKLISTS_TL",
+      "column": "BUSINESS_GROUP_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistranslationChecklistDetails",
+      "table": "PER_ALLOCATED_CHECKLISTS_TL",
+      "column": "CHECKLIST_DETAILS",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistranslationChecklistName",
+      "table": "PER_ALLOCATED_CHECKLISTS_TL",
+      "column": "CHECKLIST_NAME",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistranslationCreatedBy",
+      "table": "PER_ALLOCATED_CHECKLISTS_TL",
+      "column": "CREATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistranslationCreationDate",
+      "table": "PER_ALLOCATED_CHECKLISTS_TL",
+      "column": "CREATION_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistranslationDescription",
+      "table": "PER_ALLOCATED_CHECKLISTS_TL",
+      "column": "DESCRIPTION",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistranslationLanguage",
+      "table": "PER_ALLOCATED_CHECKLISTS_TL",
+      "column": "LANGUAGE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistranslationLastUpdateDate",
+      "table": "PER_ALLOCATED_CHECKLISTS_TL",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistranslationLastUpdateLogin",
+      "table": "PER_ALLOCATED_CHECKLISTS_TL",
+      "column": "LAST_UPDATE_LOGIN",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistranslationLastUpdatedBy",
+      "table": "PER_ALLOCATED_CHECKLISTS_TL",
+      "column": "LAST_UPDATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistranslationMessageText",
+      "table": "PER_ALLOCATED_CHECKLISTS_TL",
+      "column": "MESSAGE_TEXT",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistranslationMessageTitle",
+      "table": "PER_ALLOCATED_CHECKLISTS_TL",
+      "column": "MESSAGE_TITLE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistranslationObjectVersionNumber",
+      "table": "PER_ALLOCATED_CHECKLISTS_TL",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistranslationSourceLang",
+      "table": "PER_ALLOCATED_CHECKLISTS_TL",
+      "column": "SOURCE_LANG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistsPEOActionDate",
+      "table": "PER_ALLOCATED_CHECKLISTS",
+      "column": "ACTION_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistsPEOActionOccurrenceId",
+      "table": "PER_ALLOCATED_CHECKLISTS",
+      "column": "ACTION_OCCURRENCE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistsPEOAllocationDate",
+      "table": "PER_ALLOCATED_CHECKLISTS",
+      "column": "ALLOCATION_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistsPEOAllocationDetails",
+      "table": "PER_ALLOCATED_CHECKLISTS",
+      "column": "ALLOCATION_DETAILS",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistsPEOAllocationNotifiedFlag",
+      "table": "PER_ALLOCATED_CHECKLISTS",
+      "column": "ALLOCATION_NOTIFIED_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistsPEOAssignmentId",
+      "table": "PER_ALLOCATED_CHECKLISTS",
+      "column": "ASSIGNMENT_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistsPEOAttribute1",
+      "table": "PER_ALLOCATED_CHECKLISTS",
+      "column": "ATTRIBUTE1",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistsPEOAttribute10",
+      "table": "PER_ALLOCATED_CHECKLISTS",
+      "column": "ATTRIBUTE10",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistsPEOAttribute11",
+      "table": "PER_ALLOCATED_CHECKLISTS",
+      "column": "ATTRIBUTE11",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistsPEOAttribute12",
+      "table": "PER_ALLOCATED_CHECKLISTS",
+      "column": "ATTRIBUTE12",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistsPEOAttribute13",
+      "table": "PER_ALLOCATED_CHECKLISTS",
+      "column": "ATTRIBUTE13",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistsPEOAttribute14",
+      "table": "PER_ALLOCATED_CHECKLISTS",
+      "column": "ATTRIBUTE14",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistsPEOAttribute15",
+      "table": "PER_ALLOCATED_CHECKLISTS",
+      "column": "ATTRIBUTE15",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistsPEOAttribute16",
+      "table": "PER_ALLOCATED_CHECKLISTS",
+      "column": "ATTRIBUTE16",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistsPEOAttribute17",
+      "table": "PER_ALLOCATED_CHECKLISTS",
+      "column": "ATTRIBUTE17",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistsPEOAttribute18",
+      "table": "PER_ALLOCATED_CHECKLISTS",
+      "column": "ATTRIBUTE18",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistsPEOAttribute19",
+      "table": "PER_ALLOCATED_CHECKLISTS",
+      "column": "ATTRIBUTE19",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistsPEOAttribute2",
+      "table": "PER_ALLOCATED_CHECKLISTS",
+      "column": "ATTRIBUTE2",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistsPEOAttribute20",
+      "table": "PER_ALLOCATED_CHECKLISTS",
+      "column": "ATTRIBUTE20",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistsPEOAttribute21",
+      "table": "PER_ALLOCATED_CHECKLISTS",
+      "column": "ATTRIBUTE21",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistsPEOAttribute22",
+      "table": "PER_ALLOCATED_CHECKLISTS",
+      "column": "ATTRIBUTE22",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistsPEOAttribute23",
+      "table": "PER_ALLOCATED_CHECKLISTS",
+      "column": "ATTRIBUTE23",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistsPEOAttribute24",
+      "table": "PER_ALLOCATED_CHECKLISTS",
+      "column": "ATTRIBUTE24",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistsPEOAttribute25",
+      "table": "PER_ALLOCATED_CHECKLISTS",
+      "column": "ATTRIBUTE25",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistsPEOAttribute26",
+      "table": "PER_ALLOCATED_CHECKLISTS",
+      "column": "ATTRIBUTE26",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistsPEOAttribute27",
+      "table": "PER_ALLOCATED_CHECKLISTS",
+      "column": "ATTRIBUTE27",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistsPEOAttribute28",
+      "table": "PER_ALLOCATED_CHECKLISTS",
+      "column": "ATTRIBUTE28",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistsPEOAttribute29",
+      "table": "PER_ALLOCATED_CHECKLISTS",
+      "column": "ATTRIBUTE29",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistsPEOAttribute3",
+      "table": "PER_ALLOCATED_CHECKLISTS",
+      "column": "ATTRIBUTE3",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistsPEOAttribute30",
+      "table": "PER_ALLOCATED_CHECKLISTS",
+      "column": "ATTRIBUTE30",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistsPEOAttribute4",
+      "table": "PER_ALLOCATED_CHECKLISTS",
+      "column": "ATTRIBUTE4",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistsPEOAttribute5",
+      "table": "PER_ALLOCATED_CHECKLISTS",
+      "column": "ATTRIBUTE5",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistsPEOAttribute6",
+      "table": "PER_ALLOCATED_CHECKLISTS",
+      "column": "ATTRIBUTE6",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistsPEOAttribute7",
+      "table": "PER_ALLOCATED_CHECKLISTS",
+      "column": "ATTRIBUTE7",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistsPEOAttribute8",
+      "table": "PER_ALLOCATED_CHECKLISTS",
+      "column": "ATTRIBUTE8",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistsPEOAttribute9",
+      "table": "PER_ALLOCATED_CHECKLISTS",
+      "column": "ATTRIBUTE9",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistsPEOAttributeCategory",
+      "table": "PER_ALLOCATED_CHECKLISTS",
+      "column": "ATTRIBUTE_CATEGORY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistsPEOAttributeDate1",
+      "table": "PER_ALLOCATED_CHECKLISTS",
+      "column": "ATTRIBUTE_DATE1",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistsPEOAttributeDate10",
+      "table": "PER_ALLOCATED_CHECKLISTS",
+      "column": "ATTRIBUTE_DATE10",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistsPEOAttributeDate11",
+      "table": "PER_ALLOCATED_CHECKLISTS",
+      "column": "ATTRIBUTE_DATE11",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistsPEOAttributeDate12",
+      "table": "PER_ALLOCATED_CHECKLISTS",
+      "column": "ATTRIBUTE_DATE12",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistsPEOAttributeDate13",
+      "table": "PER_ALLOCATED_CHECKLISTS",
+      "column": "ATTRIBUTE_DATE13",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistsPEOAttributeDate14",
+      "table": "PER_ALLOCATED_CHECKLISTS",
+      "column": "ATTRIBUTE_DATE14",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistsPEOAttributeDate15",
+      "table": "PER_ALLOCATED_CHECKLISTS",
+      "column": "ATTRIBUTE_DATE15",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistsPEOAttributeDate2",
+      "table": "PER_ALLOCATED_CHECKLISTS",
+      "column": "ATTRIBUTE_DATE2",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistsPEOAttributeDate3",
+      "table": "PER_ALLOCATED_CHECKLISTS",
+      "column": "ATTRIBUTE_DATE3",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistsPEOAttributeDate4",
+      "table": "PER_ALLOCATED_CHECKLISTS",
+      "column": "ATTRIBUTE_DATE4",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistsPEOAttributeDate5",
+      "table": "PER_ALLOCATED_CHECKLISTS",
+      "column": "ATTRIBUTE_DATE5",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistsPEOAttributeDate6",
+      "table": "PER_ALLOCATED_CHECKLISTS",
+      "column": "ATTRIBUTE_DATE6",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistsPEOAttributeDate7",
+      "table": "PER_ALLOCATED_CHECKLISTS",
+      "column": "ATTRIBUTE_DATE7",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistsPEOAttributeDate8",
+      "table": "PER_ALLOCATED_CHECKLISTS",
+      "column": "ATTRIBUTE_DATE8",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistsPEOAttributeDate9",
+      "table": "PER_ALLOCATED_CHECKLISTS",
+      "column": "ATTRIBUTE_DATE9",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistsPEOAttributeNumber1",
+      "table": "PER_ALLOCATED_CHECKLISTS",
+      "column": "ATTRIBUTE_NUMBER1",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistsPEOAttributeNumber10",
+      "table": "PER_ALLOCATED_CHECKLISTS",
+      "column": "ATTRIBUTE_NUMBER10",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistsPEOAttributeNumber11",
+      "table": "PER_ALLOCATED_CHECKLISTS",
+      "column": "ATTRIBUTE_NUMBER11",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistsPEOAttributeNumber12",
+      "table": "PER_ALLOCATED_CHECKLISTS",
+      "column": "ATTRIBUTE_NUMBER12",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistsPEOAttributeNumber13",
+      "table": "PER_ALLOCATED_CHECKLISTS",
+      "column": "ATTRIBUTE_NUMBER13",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistsPEOAttributeNumber14",
+      "table": "PER_ALLOCATED_CHECKLISTS",
+      "column": "ATTRIBUTE_NUMBER14",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistsPEOAttributeNumber15",
+      "table": "PER_ALLOCATED_CHECKLISTS",
+      "column": "ATTRIBUTE_NUMBER15",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistsPEOAttributeNumber16",
+      "table": "PER_ALLOCATED_CHECKLISTS",
+      "column": "ATTRIBUTE_NUMBER16",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistsPEOAttributeNumber17",
+      "table": "PER_ALLOCATED_CHECKLISTS",
+      "column": "ATTRIBUTE_NUMBER17",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistsPEOAttributeNumber18",
+      "table": "PER_ALLOCATED_CHECKLISTS",
+      "column": "ATTRIBUTE_NUMBER18",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistsPEOAttributeNumber19",
+      "table": "PER_ALLOCATED_CHECKLISTS",
+      "column": "ATTRIBUTE_NUMBER19",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistsPEOAttributeNumber2",
+      "table": "PER_ALLOCATED_CHECKLISTS",
+      "column": "ATTRIBUTE_NUMBER2",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistsPEOAttributeNumber20",
+      "table": "PER_ALLOCATED_CHECKLISTS",
+      "column": "ATTRIBUTE_NUMBER20",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistsPEOAttributeNumber3",
+      "table": "PER_ALLOCATED_CHECKLISTS",
+      "column": "ATTRIBUTE_NUMBER3",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistsPEOAttributeNumber4",
+      "table": "PER_ALLOCATED_CHECKLISTS",
+      "column": "ATTRIBUTE_NUMBER4",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistsPEOAttributeNumber5",
+      "table": "PER_ALLOCATED_CHECKLISTS",
+      "column": "ATTRIBUTE_NUMBER5",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistsPEOAttributeNumber6",
+      "table": "PER_ALLOCATED_CHECKLISTS",
+      "column": "ATTRIBUTE_NUMBER6",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistsPEOAttributeNumber7",
+      "table": "PER_ALLOCATED_CHECKLISTS",
+      "column": "ATTRIBUTE_NUMBER7",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistsPEOAttributeNumber8",
+      "table": "PER_ALLOCATED_CHECKLISTS",
+      "column": "ATTRIBUTE_NUMBER8",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistsPEOAttributeNumber9",
+      "table": "PER_ALLOCATED_CHECKLISTS",
+      "column": "ATTRIBUTE_NUMBER9",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistsPEOBackgroundImageUrl",
+      "table": "PER_ALLOCATED_CHECKLISTS",
+      "column": "BACKGROUND_IMAGE_URL",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistsPEOBackgroundThumbnailUrl",
+      "table": "PER_ALLOCATED_CHECKLISTS",
+      "column": "BACKGROUND_THUMBNAIL_URL",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistsPEOChecklistActionId",
+      "table": "PER_ALLOCATED_CHECKLISTS",
+      "column": "CHECKLIST_ACTION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistsPEOChecklistActionOccurrenceId",
+      "table": "PER_ALLOCATED_CHECKLISTS",
+      "column": "CHECKLIST_ACTION_OCCURRENCE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistsPEOChecklistCategory",
+      "table": "PER_ALLOCATED_CHECKLISTS",
+      "column": "CHECKLIST_CATEGORY",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistsPEOChecklistId",
+      "table": "PER_ALLOCATED_CHECKLISTS",
+      "column": "CHECKLIST_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistsPEOChecklistInstance",
+      "table": "PER_ALLOCATED_CHECKLISTS",
+      "column": "CHECKLIST_INSTANCE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistsPEOChecklistName",
+      "table": "PER_ALLOCATED_CHECKLISTS_TL",
+      "column": "CHECKLIST_NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistsPEOChecklistStatus",
+      "table": "PER_ALLOCATED_CHECKLISTS",
+      "column": "CHECKLIST_STATUS",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistsPEOCombinedTaskTemplateId",
+      "table": "PER_ALLOCATED_CHECKLISTS",
+      "column": "COMBINED_TASK_TEMPLATE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistsPEOCompletedOn",
+      "table": "PER_ALLOCATED_CHECKLISTS",
+      "column": "COMPLETED_ON",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistsPEOCompletionDate",
+      "table": "PER_ALLOCATED_CHECKLISTS",
+      "column": "COMPLETION_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistsPEOCompletionOffsetDays",
+      "table": "PER_ALLOCATED_CHECKLISTS",
+      "column": "COMPLETION_OFFSET_DAYS",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistsPEOCreatedBy",
+      "table": "PER_ALLOCATED_CHECKLISTS",
+      "column": "CREATED_BY",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistsPEOCreationDate",
+      "table": "PER_ALLOCATED_CHECKLISTS",
+      "column": "CREATION_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistsPEODefCompletionDate",
+      "table": "PER_ALLOCATED_CHECKLISTS",
+      "column": "DEF_COMPLETION_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistsPEODescription",
+      "table": "PER_ALLOCATED_CHECKLISTS_TL",
+      "column": "DESCRIPTION",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistsPEOEnterpriseId",
+      "table": "PER_ALLOCATED_CHECKLISTS",
+      "column": "ENTERPRISE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistsPEOEventDate",
+      "table": "PER_ALLOCATED_CHECKLISTS",
+      "column": "EVENT_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistsPEOInformation1",
+      "table": "PER_ALLOCATED_CHECKLISTS",
+      "column": "INFORMATION1",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistsPEOInformation10",
+      "table": "PER_ALLOCATED_CHECKLISTS",
+      "column": "INFORMATION10",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistsPEOInformation11",
+      "table": "PER_ALLOCATED_CHECKLISTS",
+      "column": "INFORMATION11",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistsPEOInformation12",
+      "table": "PER_ALLOCATED_CHECKLISTS",
+      "column": "INFORMATION12",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistsPEOInformation13",
+      "table": "PER_ALLOCATED_CHECKLISTS",
+      "column": "INFORMATION13",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistsPEOInformation14",
+      "table": "PER_ALLOCATED_CHECKLISTS",
+      "column": "INFORMATION14",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistsPEOInformation15",
+      "table": "PER_ALLOCATED_CHECKLISTS",
+      "column": "INFORMATION15",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistsPEOInformation16",
+      "table": "PER_ALLOCATED_CHECKLISTS",
+      "column": "INFORMATION16",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistsPEOInformation17",
+      "table": "PER_ALLOCATED_CHECKLISTS",
+      "column": "INFORMATION17",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistsPEOInformation18",
+      "table": "PER_ALLOCATED_CHECKLISTS",
+      "column": "INFORMATION18",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistsPEOInformation19",
+      "table": "PER_ALLOCATED_CHECKLISTS",
+      "column": "INFORMATION19",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistsPEOInformation2",
+      "table": "PER_ALLOCATED_CHECKLISTS",
+      "column": "INFORMATION2",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistsPEOInformation20",
+      "table": "PER_ALLOCATED_CHECKLISTS",
+      "column": "INFORMATION20",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistsPEOInformation21",
+      "table": "PER_ALLOCATED_CHECKLISTS",
+      "column": "INFORMATION21",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistsPEOInformation22",
+      "table": "PER_ALLOCATED_CHECKLISTS",
+      "column": "INFORMATION22",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistsPEOInformation23",
+      "table": "PER_ALLOCATED_CHECKLISTS",
+      "column": "INFORMATION23",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistsPEOInformation24",
+      "table": "PER_ALLOCATED_CHECKLISTS",
+      "column": "INFORMATION24",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistsPEOInformation25",
+      "table": "PER_ALLOCATED_CHECKLISTS",
+      "column": "INFORMATION25",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistsPEOInformation26",
+      "table": "PER_ALLOCATED_CHECKLISTS",
+      "column": "INFORMATION26",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistsPEOInformation27",
+      "table": "PER_ALLOCATED_CHECKLISTS",
+      "column": "INFORMATION27",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistsPEOInformation28",
+      "table": "PER_ALLOCATED_CHECKLISTS",
+      "column": "INFORMATION28",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistsPEOInformation29",
+      "table": "PER_ALLOCATED_CHECKLISTS",
+      "column": "INFORMATION29",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistsPEOInformation3",
+      "table": "PER_ALLOCATED_CHECKLISTS",
+      "column": "INFORMATION3",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistsPEOInformation30",
+      "table": "PER_ALLOCATED_CHECKLISTS",
+      "column": "INFORMATION30",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistsPEOInformation4",
+      "table": "PER_ALLOCATED_CHECKLISTS",
+      "column": "INFORMATION4",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistsPEOInformation5",
+      "table": "PER_ALLOCATED_CHECKLISTS",
+      "column": "INFORMATION5",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistsPEOInformation6",
+      "table": "PER_ALLOCATED_CHECKLISTS",
+      "column": "INFORMATION6",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistsPEOInformation7",
+      "table": "PER_ALLOCATED_CHECKLISTS",
+      "column": "INFORMATION7",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistsPEOInformation8",
+      "table": "PER_ALLOCATED_CHECKLISTS",
+      "column": "INFORMATION8",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistsPEOInformation9",
+      "table": "PER_ALLOCATED_CHECKLISTS",
+      "column": "INFORMATION9",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistsPEOInformationCategory",
+      "table": "PER_ALLOCATED_CHECKLISTS",
+      "column": "INFORMATION_CATEGORY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistsPEOInitiatorPersonId",
+      "table": "PER_ALLOCATED_CHECKLISTS",
+      "column": "INITIATOR_PERSON_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistsPEOInitiatorUser",
+      "table": "PER_ALLOCATED_CHECKLISTS",
+      "column": "INITIATOR_USER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistsPEOLastUpdateDate",
+      "table": "PER_ALLOCATED_CHECKLISTS",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": true
+    },
+    {
+      "name": "AllocatedChecklistsPEOLastUpdateLogin",
+      "table": "PER_ALLOCATED_CHECKLISTS",
+      "column": "LAST_UPDATE_LOGIN",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistsPEOLastUpdatedBy",
+      "table": "PER_ALLOCATED_CHECKLISTS",
+      "column": "LAST_UPDATED_BY",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistsPEOLegislationCode",
+      "table": "PER_ALLOCATED_CHECKLISTS",
+      "column": "LEGISLATION_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistsPEOObjectId",
+      "table": "PER_ALLOCATED_CHECKLISTS",
+      "column": "OBJECT_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistsPEOObjectVersionNumber",
+      "table": "PER_ALLOCATED_CHECKLISTS",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistsPEOPeriodOfServiceId",
+      "table": "PER_ALLOCATED_CHECKLISTS",
+      "column": "PERIOD_OF_SERVICE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistsPEOPersonId",
+      "table": "PER_ALLOCATED_CHECKLISTS",
+      "column": "PERSON_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistsPEOProcessingMode",
+      "table": "PER_ALLOCATED_CHECKLISTS",
+      "column": "PROCESSING_MODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllocatedChecklistsPEOSelfAssignedFlag",
+      "table": "PER_ALLOCATED_CHECKLISTS",
+      "column": "SELF_ASSIGNED_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonDetailsPEOEffectiveEndDate",
+      "table": "PER_ALL_PEOPLE_F",
+      "column": "EFFECTIVE_END_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonDetailsPEOEffectiveStartDate",
+      "table": "PER_ALL_PEOPLE_F",
+      "column": "EFFECTIVE_START_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonDetailsPEOPersonId",
+      "table": "PER_ALL_PEOPLE_F",
+      "column": "PERSON_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonDetailsPEOPersonNumber",
+      "table": "PER_ALL_PEOPLE_F",
+      "column": "PERSON_NUMBER",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonNamePEOEffectiveEndDate",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "EFFECTIVE_END_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonNamePEOEffectiveStartDate",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "EFFECTIVE_START_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonNamePEOFullName",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "FULL_NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonNamePEOPersonNameId",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "PERSON_NAME_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "UsersPEOAllocatedContactAdhocUsername",
+      "table": "PER_USERS",
+      "column": "USERNAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "UsersPEOUserId",
+      "table": "PER_USERS",
+      "column": "USER_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    }
+  ],
+  "by_table": {
+    "PER_ALLOC_CHKLST_CONTACTS": [
+      {
+        "attribute": "AllocatedChecklistContactsPEAdhocUserGuid",
+        "column": "ADHOC_USER_GUID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistContactsPEAllocChklstContactId",
+        "column": "ALLOC_CHKLST_CONTACT_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistContactsPEAllocatedChecklistId",
+        "column": "ALLOCATED_CHECKLIST_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistContactsPEChecklistContactId",
+        "column": "CHECKLIST_CONTACT_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistContactsPEContactTitleCode",
+        "column": "CONTACT_TITLE_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistContactsPEContactType",
+        "column": "CONTACT_TYPE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistContactsPECreatedBy",
+        "column": "CREATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistContactsPECreationDate",
+        "column": "CREATION_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistContactsPECustomContact",
+        "column": "CUSTOM_CONTACT",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistContactsPEEnterpriseId",
+        "column": "ENTERPRISE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistContactsPELastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistContactsPELastUpdateLogin",
+        "column": "LAST_UPDATE_LOGIN",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistContactsPELastUpdatedBy",
+        "column": "LAST_UPDATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistContactsPEObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistContactsPEResponsibilityType",
+        "column": "RESPONSIBILITY_TYPE",
+        "bicc": true,
+        "pk": false
+      }
+    ],
+    "PER_ALLOC_CHKLST_CONTENTS": [
+      {
+        "attribute": "AllocatedChecklistContentsPE1AllocChklstContentId",
+        "column": "ALLOC_CHKLST_CONTENT_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistContentsPE1AllocatedChecklistId",
+        "column": "ALLOCATED_CHECKLIST_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistContentsPE1ChecklistContentId",
+        "column": "CHECKLIST_CONTENT_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistContentsPE1ChkContentDefnId",
+        "column": "CHK_CONTENT_DEFN_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistContentsPE1ContentType",
+        "column": "CONTENT_TYPE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistContentsPE1CreatedBy",
+        "column": "CREATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistContentsPE1CreationDate",
+        "column": "CREATION_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistContentsPE1EnterpriseId",
+        "column": "ENTERPRISE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistContentsPE1LastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistContentsPE1LastUpdateLogin",
+        "column": "LAST_UPDATE_LOGIN",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistContentsPE1LastUpdatedBy",
+        "column": "LAST_UPDATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistContentsPE1ObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistContentsPE1Sequence",
+        "column": "SEQUENCE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistContentsPE2AllocChklstContentId",
+        "column": "ALLOC_CHKLST_CONTENT_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistContentsPE2AllocatedChecklistId",
+        "column": "ALLOCATED_CHECKLIST_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistContentsPE2ChecklistContentId",
+        "column": "CHECKLIST_CONTENT_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistContentsPE2ChkContentDefnId",
+        "column": "CHK_CONTENT_DEFN_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistContentsPE2ContentType",
+        "column": "CONTENT_TYPE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistContentsPE2CreatedBy",
+        "column": "CREATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistContentsPE2CreationDate",
+        "column": "CREATION_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistContentsPE2EnterpriseId",
+        "column": "ENTERPRISE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistContentsPE2LastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistContentsPE2LastUpdateLogin",
+        "column": "LAST_UPDATE_LOGIN",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistContentsPE2LastUpdatedBy",
+        "column": "LAST_UPDATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistContentsPE2ObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistContentsPE2Sequence",
+        "column": "SEQUENCE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistContentsPE3AllocChklstContentId",
+        "column": "ALLOC_CHKLST_CONTENT_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistContentsPE3AllocatedChecklistId",
+        "column": "ALLOCATED_CHECKLIST_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistContentsPE3ChecklistContentId",
+        "column": "CHECKLIST_CONTENT_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistContentsPE3ChkContentDefnId",
+        "column": "CHK_CONTENT_DEFN_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistContentsPE3ContentType",
+        "column": "CONTENT_TYPE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistContentsPE3CreatedBy",
+        "column": "CREATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistContentsPE3CreationDate",
+        "column": "CREATION_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistContentsPE3EnterpriseId",
+        "column": "ENTERPRISE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistContentsPE3LastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistContentsPE3LastUpdateLogin",
+        "column": "LAST_UPDATE_LOGIN",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistContentsPE3LastUpdatedBy",
+        "column": "LAST_UPDATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistContentsPE3ObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistContentsPE3Sequence",
+        "column": "SEQUENCE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistContentsPE4AllocChklstContentId",
+        "column": "ALLOC_CHKLST_CONTENT_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistContentsPE4AllocatedChecklistId",
+        "column": "ALLOCATED_CHECKLIST_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistContentsPE4ChecklistContentId",
+        "column": "CHECKLIST_CONTENT_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistContentsPE4ChkContentDefnId",
+        "column": "CHK_CONTENT_DEFN_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistContentsPE4ContentType",
+        "column": "CONTENT_TYPE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistContentsPE4CreatedBy",
+        "column": "CREATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistContentsPE4CreationDate",
+        "column": "CREATION_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistContentsPE4EnterpriseId",
+        "column": "ENTERPRISE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistContentsPE4LastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistContentsPE4LastUpdateLogin",
+        "column": "LAST_UPDATE_LOGIN",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistContentsPE4LastUpdatedBy",
+        "column": "LAST_UPDATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistContentsPE4ObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistContentsPE4Sequence",
+        "column": "SEQUENCE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistContentsPE5AllocChklstContentId",
+        "column": "ALLOC_CHKLST_CONTENT_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistContentsPE5AllocatedChecklistId",
+        "column": "ALLOCATED_CHECKLIST_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistContentsPE5ChecklistContentId",
+        "column": "CHECKLIST_CONTENT_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistContentsPE5ChkContentDefnId",
+        "column": "CHK_CONTENT_DEFN_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistContentsPE5ContentType",
+        "column": "CONTENT_TYPE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistContentsPE5CreatedBy",
+        "column": "CREATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistContentsPE5CreationDate",
+        "column": "CREATION_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistContentsPE5EnterpriseId",
+        "column": "ENTERPRISE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistContentsPE5LastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistContentsPE5LastUpdateLogin",
+        "column": "LAST_UPDATE_LOGIN",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistContentsPE5LastUpdatedBy",
+        "column": "LAST_UPDATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistContentsPE5ObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistContentsPE5Sequence",
+        "column": "SEQUENCE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistContentsPEAllocChklstContentId",
+        "column": "ALLOC_CHKLST_CONTENT_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistContentsPEChecklistContentId",
+        "column": "CHECKLIST_CONTENT_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistContentsPEOAllocatedChecklistId",
+        "column": "ALLOCATED_CHECKLIST_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistContentsPEOChkContentDefnId",
+        "column": "CHK_CONTENT_DEFN_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistContentsPEOContentType",
+        "column": "CONTENT_TYPE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistContentsPEOCreatedBy",
+        "column": "CREATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistContentsPEOCreationDate",
+        "column": "CREATION_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistContentsPEOEnterpriseId",
+        "column": "ENTERPRISE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistContentsPEOLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistContentsPEOLastUpdateLogin",
+        "column": "LAST_UPDATE_LOGIN",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistContentsPEOLastUpdatedBy",
+        "column": "LAST_UPDATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistContentsPEOObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistContentsPEOSequence",
+        "column": "SEQUENCE",
+        "bicc": true,
+        "pk": false
+      }
+    ],
+    "PER_ALLOCATED_CHECKLISTS": [
+      {
+        "attribute": "AllocatedChecklistId",
+        "column": "ALLOCATED_CHECKLIST_ID",
+        "bicc": true,
+        "pk": true
+      },
+      {
+        "attribute": "AllocatedChecklistsPEOActionDate",
+        "column": "ACTION_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistsPEOActionOccurrenceId",
+        "column": "ACTION_OCCURRENCE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistsPEOAllocationDate",
+        "column": "ALLOCATION_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistsPEOAllocationDetails",
+        "column": "ALLOCATION_DETAILS",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistsPEOAllocationNotifiedFlag",
+        "column": "ALLOCATION_NOTIFIED_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistsPEOAssignmentId",
+        "column": "ASSIGNMENT_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistsPEOAttribute1",
+        "column": "ATTRIBUTE1",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistsPEOAttribute10",
+        "column": "ATTRIBUTE10",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistsPEOAttribute11",
+        "column": "ATTRIBUTE11",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistsPEOAttribute12",
+        "column": "ATTRIBUTE12",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistsPEOAttribute13",
+        "column": "ATTRIBUTE13",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistsPEOAttribute14",
+        "column": "ATTRIBUTE14",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistsPEOAttribute15",
+        "column": "ATTRIBUTE15",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistsPEOAttribute16",
+        "column": "ATTRIBUTE16",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistsPEOAttribute17",
+        "column": "ATTRIBUTE17",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistsPEOAttribute18",
+        "column": "ATTRIBUTE18",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistsPEOAttribute19",
+        "column": "ATTRIBUTE19",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistsPEOAttribute2",
+        "column": "ATTRIBUTE2",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistsPEOAttribute20",
+        "column": "ATTRIBUTE20",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistsPEOAttribute21",
+        "column": "ATTRIBUTE21",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistsPEOAttribute22",
+        "column": "ATTRIBUTE22",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistsPEOAttribute23",
+        "column": "ATTRIBUTE23",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistsPEOAttribute24",
+        "column": "ATTRIBUTE24",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistsPEOAttribute25",
+        "column": "ATTRIBUTE25",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistsPEOAttribute26",
+        "column": "ATTRIBUTE26",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistsPEOAttribute27",
+        "column": "ATTRIBUTE27",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistsPEOAttribute28",
+        "column": "ATTRIBUTE28",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistsPEOAttribute29",
+        "column": "ATTRIBUTE29",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistsPEOAttribute3",
+        "column": "ATTRIBUTE3",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistsPEOAttribute30",
+        "column": "ATTRIBUTE30",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistsPEOAttribute4",
+        "column": "ATTRIBUTE4",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistsPEOAttribute5",
+        "column": "ATTRIBUTE5",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistsPEOAttribute6",
+        "column": "ATTRIBUTE6",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistsPEOAttribute7",
+        "column": "ATTRIBUTE7",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistsPEOAttribute8",
+        "column": "ATTRIBUTE8",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistsPEOAttribute9",
+        "column": "ATTRIBUTE9",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistsPEOAttributeCategory",
+        "column": "ATTRIBUTE_CATEGORY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistsPEOAttributeDate1",
+        "column": "ATTRIBUTE_DATE1",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistsPEOAttributeDate10",
+        "column": "ATTRIBUTE_DATE10",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistsPEOAttributeDate11",
+        "column": "ATTRIBUTE_DATE11",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistsPEOAttributeDate12",
+        "column": "ATTRIBUTE_DATE12",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistsPEOAttributeDate13",
+        "column": "ATTRIBUTE_DATE13",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistsPEOAttributeDate14",
+        "column": "ATTRIBUTE_DATE14",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistsPEOAttributeDate15",
+        "column": "ATTRIBUTE_DATE15",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistsPEOAttributeDate2",
+        "column": "ATTRIBUTE_DATE2",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistsPEOAttributeDate3",
+        "column": "ATTRIBUTE_DATE3",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistsPEOAttributeDate4",
+        "column": "ATTRIBUTE_DATE4",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistsPEOAttributeDate5",
+        "column": "ATTRIBUTE_DATE5",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistsPEOAttributeDate6",
+        "column": "ATTRIBUTE_DATE6",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistsPEOAttributeDate7",
+        "column": "ATTRIBUTE_DATE7",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistsPEOAttributeDate8",
+        "column": "ATTRIBUTE_DATE8",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistsPEOAttributeDate9",
+        "column": "ATTRIBUTE_DATE9",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistsPEOAttributeNumber1",
+        "column": "ATTRIBUTE_NUMBER1",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistsPEOAttributeNumber10",
+        "column": "ATTRIBUTE_NUMBER10",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistsPEOAttributeNumber11",
+        "column": "ATTRIBUTE_NUMBER11",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistsPEOAttributeNumber12",
+        "column": "ATTRIBUTE_NUMBER12",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistsPEOAttributeNumber13",
+        "column": "ATTRIBUTE_NUMBER13",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistsPEOAttributeNumber14",
+        "column": "ATTRIBUTE_NUMBER14",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistsPEOAttributeNumber15",
+        "column": "ATTRIBUTE_NUMBER15",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistsPEOAttributeNumber16",
+        "column": "ATTRIBUTE_NUMBER16",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistsPEOAttributeNumber17",
+        "column": "ATTRIBUTE_NUMBER17",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistsPEOAttributeNumber18",
+        "column": "ATTRIBUTE_NUMBER18",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistsPEOAttributeNumber19",
+        "column": "ATTRIBUTE_NUMBER19",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistsPEOAttributeNumber2",
+        "column": "ATTRIBUTE_NUMBER2",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistsPEOAttributeNumber20",
+        "column": "ATTRIBUTE_NUMBER20",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistsPEOAttributeNumber3",
+        "column": "ATTRIBUTE_NUMBER3",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistsPEOAttributeNumber4",
+        "column": "ATTRIBUTE_NUMBER4",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistsPEOAttributeNumber5",
+        "column": "ATTRIBUTE_NUMBER5",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistsPEOAttributeNumber6",
+        "column": "ATTRIBUTE_NUMBER6",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistsPEOAttributeNumber7",
+        "column": "ATTRIBUTE_NUMBER7",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistsPEOAttributeNumber8",
+        "column": "ATTRIBUTE_NUMBER8",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistsPEOAttributeNumber9",
+        "column": "ATTRIBUTE_NUMBER9",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistsPEOBackgroundImageUrl",
+        "column": "BACKGROUND_IMAGE_URL",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistsPEOBackgroundThumbnailUrl",
+        "column": "BACKGROUND_THUMBNAIL_URL",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistsPEOChecklistActionId",
+        "column": "CHECKLIST_ACTION_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistsPEOChecklistActionOccurrenceId",
+        "column": "CHECKLIST_ACTION_OCCURRENCE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistsPEOChecklistCategory",
+        "column": "CHECKLIST_CATEGORY",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistsPEOChecklistId",
+        "column": "CHECKLIST_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistsPEOChecklistInstance",
+        "column": "CHECKLIST_INSTANCE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistsPEOChecklistStatus",
+        "column": "CHECKLIST_STATUS",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistsPEOCombinedTaskTemplateId",
+        "column": "COMBINED_TASK_TEMPLATE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistsPEOCompletedOn",
+        "column": "COMPLETED_ON",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistsPEOCompletionDate",
+        "column": "COMPLETION_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistsPEOCompletionOffsetDays",
+        "column": "COMPLETION_OFFSET_DAYS",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistsPEOCreatedBy",
+        "column": "CREATED_BY",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistsPEOCreationDate",
+        "column": "CREATION_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistsPEODefCompletionDate",
+        "column": "DEF_COMPLETION_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistsPEOEnterpriseId",
+        "column": "ENTERPRISE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistsPEOEventDate",
+        "column": "EVENT_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistsPEOInformation1",
+        "column": "INFORMATION1",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistsPEOInformation10",
+        "column": "INFORMATION10",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistsPEOInformation11",
+        "column": "INFORMATION11",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistsPEOInformation12",
+        "column": "INFORMATION12",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistsPEOInformation13",
+        "column": "INFORMATION13",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistsPEOInformation14",
+        "column": "INFORMATION14",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistsPEOInformation15",
+        "column": "INFORMATION15",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistsPEOInformation16",
+        "column": "INFORMATION16",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistsPEOInformation17",
+        "column": "INFORMATION17",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistsPEOInformation18",
+        "column": "INFORMATION18",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistsPEOInformation19",
+        "column": "INFORMATION19",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistsPEOInformation2",
+        "column": "INFORMATION2",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistsPEOInformation20",
+        "column": "INFORMATION20",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistsPEOInformation21",
+        "column": "INFORMATION21",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistsPEOInformation22",
+        "column": "INFORMATION22",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistsPEOInformation23",
+        "column": "INFORMATION23",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistsPEOInformation24",
+        "column": "INFORMATION24",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistsPEOInformation25",
+        "column": "INFORMATION25",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistsPEOInformation26",
+        "column": "INFORMATION26",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistsPEOInformation27",
+        "column": "INFORMATION27",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistsPEOInformation28",
+        "column": "INFORMATION28",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistsPEOInformation29",
+        "column": "INFORMATION29",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistsPEOInformation3",
+        "column": "INFORMATION3",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistsPEOInformation30",
+        "column": "INFORMATION30",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistsPEOInformation4",
+        "column": "INFORMATION4",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistsPEOInformation5",
+        "column": "INFORMATION5",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistsPEOInformation6",
+        "column": "INFORMATION6",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistsPEOInformation7",
+        "column": "INFORMATION7",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistsPEOInformation8",
+        "column": "INFORMATION8",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistsPEOInformation9",
+        "column": "INFORMATION9",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistsPEOInformationCategory",
+        "column": "INFORMATION_CATEGORY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistsPEOInitiatorPersonId",
+        "column": "INITIATOR_PERSON_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistsPEOInitiatorUser",
+        "column": "INITIATOR_USER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistsPEOLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistsPEOLastUpdateLogin",
+        "column": "LAST_UPDATE_LOGIN",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistsPEOLastUpdatedBy",
+        "column": "LAST_UPDATED_BY",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistsPEOLegislationCode",
+        "column": "LEGISLATION_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistsPEOObjectId",
+        "column": "OBJECT_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistsPEOObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistsPEOPeriodOfServiceId",
+        "column": "PERIOD_OF_SERVICE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistsPEOPersonId",
+        "column": "PERSON_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistsPEOProcessingMode",
+        "column": "PROCESSING_MODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistsPEOSelfAssignedFlag",
+        "column": "SELF_ASSIGNED_FLAG",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "PER_ALLOCATED_CHECKLISTS_TL": [
+      {
+        "attribute": "AllocatedChecklistranslationAllocatedChecklistId",
+        "column": "ALLOCATED_CHECKLIST_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistranslationBusinessGroupId",
+        "column": "BUSINESS_GROUP_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistranslationChecklistDetails",
+        "column": "CHECKLIST_DETAILS",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistranslationChecklistName",
+        "column": "CHECKLIST_NAME",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistranslationCreatedBy",
+        "column": "CREATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistranslationCreationDate",
+        "column": "CREATION_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistranslationDescription",
+        "column": "DESCRIPTION",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistranslationLanguage",
+        "column": "LANGUAGE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistranslationLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistranslationLastUpdateLogin",
+        "column": "LAST_UPDATE_LOGIN",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistranslationLastUpdatedBy",
+        "column": "LAST_UPDATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistranslationMessageText",
+        "column": "MESSAGE_TEXT",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistranslationMessageTitle",
+        "column": "MESSAGE_TITLE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistranslationObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistranslationSourceLang",
+        "column": "SOURCE_LANG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistsPEOChecklistName",
+        "column": "CHECKLIST_NAME",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "AllocatedChecklistsPEODescription",
+        "column": "DESCRIPTION",
+        "bicc": true,
+        "pk": false
+      }
+    ],
+    "PER_ALL_PEOPLE_F": [
+      {
+        "attribute": "PersonDetailsPEOEffectiveEndDate",
+        "column": "EFFECTIVE_END_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PersonDetailsPEOEffectiveStartDate",
+        "column": "EFFECTIVE_START_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PersonDetailsPEOPersonId",
+        "column": "PERSON_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PersonDetailsPEOPersonNumber",
+        "column": "PERSON_NUMBER",
+        "bicc": true,
+        "pk": false
+      }
+    ],
+    "PER_PERSON_NAMES_F_V": [
+      {
+        "attribute": "PersonNamePEOEffectiveEndDate",
+        "column": "EFFECTIVE_END_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PersonNamePEOEffectiveStartDate",
+        "column": "EFFECTIVE_START_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PersonNamePEOFullName",
+        "column": "FULL_NAME",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PersonNamePEOPersonNameId",
+        "column": "PERSON_NAME_ID",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "PER_USERS": [
+      {
+        "attribute": "UsersPEOAllocatedContactAdhocUsername",
+        "column": "USERNAME",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "UsersPEOUserId",
+        "column": "USER_ID",
+        "bicc": false,
+        "pk": false
+      }
+    ]
+  }
+}

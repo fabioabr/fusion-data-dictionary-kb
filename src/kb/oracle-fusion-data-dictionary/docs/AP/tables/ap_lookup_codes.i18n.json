@@ -1,0 +1,403 @@
+{
+  "source": "ap_lookup_codes.md",
+  "source_hash": "8ed2eb664dfdb78e01aba2ea6090cb4f",
+  "translated_at": "2026-03-25",
+  "items": [
+    {
+      "id": 1,
+      "br": "Visão Geral",
+      "en": "Overview",
+      "es": "Vision General"
+    },
+    {
+      "id": 2,
+      "br": "Armazena os códigos de lookup (domínio de valores) do módulo Accounts Payable. Cada registro representa um par tipo/código com sua descrição, controlando listas de valores válidos para campos como tipo de fatura, grupo de pagamento, tipo de hold, tipo de distribuição e outros. É a tabela de referência para decodificação de códigos usados em diversas tabelas do módulo AP.",
+      "en": "Stores the lookup codes (value domain) of the Accounts Payable module. Each record represents a type/code pair with its description, controlling lists of valid values for fields such as invoice type, payment group, hold type, distribution type, and others. It is the reference table for decoding codes used in various AP module tables.",
+      "es": "Almacena los códigos de lookup (dominio de valores) del módulo Accounts Payable. Cada registro representa un par tipo/código con su descripción, controlando listas de valores válidos para campos como tipo de factura, grupo de pago, tipo de hold, tipo de distribución y otros. Es la tabla de referencia para decodificación de códigos usados en diversas tablas del módulo AP."
+    },
+    {
+      "id": 3,
+      "br": "Lookup legado",
+      "en": "Legacy Lookup",
+      "es": "Lookup legado"
+    },
+    {
+      "id": 4,
+      "br": "No Oracle Fusion, muitos lookups migraram para FND_LOOKUP_VALUES / FND_LOOKUPS. Entretanto, AP_LOOKUP_CODES ainda é utilizada para lookups específicos do módulo AP herdados do Oracle EBS ou mantidos por compatibilidade.",
+      "en": "In Oracle Fusion, many lookups migrated to FND_LOOKUP_VALUES / FND_LOOKUPS. However, AP_LOOKUP_CODES is still used for AP module-specific lookups inherited from Oracle EBS or maintained for compatibility.",
+      "es": "En Oracle Fusion, muchos lookups migraron a FND_LOOKUP_VALUES / FND_LOOKUPS. Sin embargo, AP_LOOKUP_CODES aún se utiliza para lookups específicos del módulo AP heredados de Oracle EBS o mantenidos por compatibilidad."
+    },
+    {
+      "id": 5,
+      "br": "Propósito de Negócio",
+      "en": "Business Purpose",
+      "es": "Proposito de Negocio"
+    },
+    {
+      "id": 6,
+      "br": "Esta tabela é utilizada nos seguintes processos:",
+      "en": "This table is used in the following processes:",
+      "es": "Esta tabla se utiliza en los siguientes procesos:"
+    },
+    {
+      "id": 7,
+      "br": "Garante que campos codificados contenham apenas valores válidos (ex: tipos de fatura, grupos de pagamento).",
+      "en": "Ensures that coded fields contain only valid values (e.g., invoice types, payment groups).",
+      "es": "Garantiza que campos codificados contengan solo valores válidos (ej: tipos de factura, grupos de pago)."
+    },
+    {
+      "id": 8,
+      "br": "Tradução de códigos internos para descrições legíveis ao usuário.",
+      "en": "Translation of internal codes to user-readable descriptions.",
+      "es": "Traducción de códigos internos a descripciones legibles para el usuario."
+    },
+    {
+      "id": 9,
+      "br": "Alimenta picklists na interface do usuário.",
+      "en": "Feeds picklists in the user interface.",
+      "es": "Alimenta picklists en la interfaz del usuario."
+    },
+    {
+      "id": 10,
+      "br": "Permite adicionar novos valores de lookup sem alterar estrutura de tabelas.",
+      "en": "Allows adding new lookup values without changing table structure.",
+      "es": "Permite agregar nuevos valores de lookup sin alterar estructura de tablas."
+    },
+    {
+      "id": 11,
+      "br": "Referência obrigatória para mapeamento de valores entre sistemas.",
+      "en": "Mandatory reference for value mapping between systems.",
+      "es": "Referencia obligatoria para mapeo de valores entre sistemas."
+    },
+    {
+      "id": 12,
+      "br": "Colunas Principais",
+      "en": "Key Columns",
+      "es": "Columnas Principales"
+    },
+    {
+      "id": 13,
+      "br": "Confiança",
+      "en": "Confidence",
+      "es": "Confianza"
+    },
+    {
+      "id": 14,
+      "br": "Escala de 0% a 100% — grau de certeza da descrição gerada por IA com base na documentação oficial Oracle (OEDMF/BICC Release 13/25A).",
+      "en": "Scale from 0% to 100% — degree of certainty of the AI-generated description based on official Oracle documentation (OEDMF/BICC Release 13/25A).",
+      "es": "Escala de 0% a 100% — grado de certeza de la descripción generada por IA con base en la documentación oficial Oracle (OEDMF/BICC Release 13/25A)."
+    },
+    {
+      "id": 15,
+      "br": "- 🟢 81–100% — Coluna presente na documentação oficial Oracle; nome, tipo e descrição confirmados.",
+      "en": "- 🟢 81–100% — Column present in official Oracle documentation; name, type, and description confirmed.",
+      "es": "- 🟢 81–100% — Columna presente en la documentación oficial Oracle; nombre, tipo y descripción confirmados."
+    },
+    {
+      "id": 16,
+      "br": "- 🟡 51–80% — Coluna inferida por naming convention ou padrão Oracle; tipo exato pode variar.",
+      "en": "- 🟡 51–80% — Column inferred by naming convention or Oracle standard; exact type may vary.",
+      "es": "- 🟡 51–80% — Columna inferida por naming convention o estándar Oracle; el tipo exacto puede variar."
+    },
+    {
+      "id": 17,
+      "br": "- 🔴 0–50% — Existência ou tipo incertos; pode não existir no release atual; validar no ambiente.",
+      "en": "- 🔴 0–50% — Uncertain existence or type; may not exist in current release; validate in environment.",
+      "es": "- 🔴 0–50% — Existencia o tipo inciertos; puede no existir en el release actual; validar en el ambiente."
+    },
+    {
+      "id": 18,
+      "br": "Coluna",
+      "en": "Column",
+      "es": "Columna"
+    },
+    {
+      "id": 19,
+      "br": "Tipo",
+      "en": "Type",
+      "es": "Tipo"
+    },
+    {
+      "id": 20,
+      "br": "Nulo?",
+      "en": "Nullable?",
+      "es": "Nulo?"
+    },
+    {
+      "id": 21,
+      "br": "Categoria",
+      "en": "Category",
+      "es": "Categoria"
+    },
+    {
+      "id": 22,
+      "br": "Descrição",
+      "en": "Description",
+      "es": "Descripcion"
+    },
+    {
+      "id": 23,
+      "br": "Tipo do lookup (agrupa valores relacionados)",
+      "en": "Lookup type (groups related values)",
+      "es": "Tipo del lookup (agrupa valores relacionados)"
+    },
+    {
+      "id": 24,
+      "br": "Código do valor dentro do tipo",
+      "en": "Value code within the type",
+      "es": "Código del valor dentro del tipo"
+    },
+    {
+      "id": 25,
+      "br": "3",
+      "en": "3",
+      "es": "3"
+    },
+    {
+      "id": 26,
+      "br": "Descrição exibida ao usuário (display name)",
+      "en": "Description displayed to the user (display name)",
+      "es": "Descripción mostrada al usuario (display name)"
+    },
+    {
+      "id": 27,
+      "br": "🟢 100%",
+      "en": "🟢 100%",
+      "es": "🟢 100%"
+    },
+    {
+      "id": 28,
+      "br": "4",
+      "en": "4",
+      "es": "4"
+    },
+    {
+      "id": 29,
+      "br": "Descrição detalhada do código",
+      "en": "Detailed description of the code",
+      "es": "Descripción detallada del código"
+    },
+    {
+      "id": 30,
+      "br": "Controle",
+      "en": "Control",
+      "es": "Control"
+    },
+    {
+      "id": 31,
+      "br": "Data de inativação (NULL = ativo)",
+      "en": "Inactivation date (NULL = active)",
+      "es": "Fecha de inactivación (NULL = activo)"
+    },
+    {
+      "id": 32,
+      "br": "Indica se o código está habilitado (Y/N)",
+      "en": "Indicates whether the code is enabled (Y/N)",
+      "es": "Indica si el código está habilitado (Y/N)"
+    },
+    {
+      "id": 33,
+      "br": "Data de início de vigência",
+      "en": "Effective start date",
+      "es": "Fecha de inicio de vigencia"
+    },
+    {
+      "id": 34,
+      "br": "Data de fim de vigência",
+      "en": "Effective end date",
+      "es": "Fecha de fin de vigencia"
+    },
+    {
+      "id": 35,
+      "br": "Auditoria",
+      "en": "Audit",
+      "es": "Auditoria"
+    },
+    {
+      "id": 36,
+      "br": "Usuário que criou o registro",
+      "en": "User who created the record",
+      "es": "Usuario que creó el registro"
+    },
+    {
+      "id": 37,
+      "br": "Data/hora de criação",
+      "en": "Creation date/time",
+      "es": "Fecha/hora de creación"
+    },
+    {
+      "id": 38,
+      "br": "Último usuário que alterou",
+      "en": "Last user who modified",
+      "es": "Último usuario que modificó"
+    },
+    {
+      "id": 39,
+      "br": "Data/hora da última alteração",
+      "en": "Last modification date/time",
+      "es": "Fecha/hora de la última modificación"
+    },
+    {
+      "id": 40,
+      "br": "Login da última sessão",
+      "en": "Last session login",
+      "es": "Login de la última sesión"
+    },
+    {
+      "id": 41,
+      "br": "Relacionamentos",
+      "en": "Relationships",
+      "es": "Relaciones"
+    },
+    {
+      "id": 42,
+      "br": "Tabelas-pai (FK de entrada)",
+      "en": "Parent Tables (inbound FK)",
+      "es": "Tablas padre (FK de entrada)"
+    },
+    {
+      "id": 43,
+      "br": "Nenhuma — tabela de referência raiz.",
+      "en": "None — root reference table.",
+      "es": "Ninguna — tabla de referencia raíz."
+    },
+    {
+      "id": 44,
+      "br": "Tabelas-filha (FK de saída)",
+      "en": "Child Tables (outbound FK)",
+      "es": "Tablas hija (FK de salida)"
+    },
+    {
+      "id": 45,
+      "br": "tipo: INVOICE TYPE",
+      "en": "type: INVOICE TYPE",
+      "es": "tipo: INVOICE TYPE"
+    },
+    {
+      "id": 46,
+      "br": "tipo: PAY GROUP",
+      "en": "type: PAY GROUP",
+      "es": "tipo: PAY GROUP"
+    },
+    {
+      "id": 47,
+      "br": "tipo: INVOICE DISTRIBUTION TYPE",
+      "en": "type: INVOICE DISTRIBUTION TYPE",
+      "es": "tipo: INVOICE DISTRIBUTION TYPE"
+    },
+    {
+      "id": 48,
+      "br": "Diversas outras tabelas AP que referenciam campos *_LOOKUP_CODE",
+      "en": "Various other AP tables that reference *_LOOKUP_CODE fields",
+      "es": "Diversas otras tablas AP que referencian campos *_LOOKUP_CODE"
+    },
+    {
+      "id": 49,
+      "br": "Uso Típico",
+      "en": "Typical Usage",
+      "es": "Uso Tipico"
+    },
+    {
+      "id": 50,
+      "br": "Listar tipos de fatura disponíveis",
+      "en": "List available invoice types",
+      "es": "Listar tipos de factura disponibles"
+    },
+    {
+      "id": 51,
+      "br": "Decodificar tipo de fatura em relatório",
+      "en": "Decode invoice type in report",
+      "es": "Decodificar tipo de factura en reporte"
+    },
+    {
+      "id": 52,
+      "br": "Lookup types comuns",
+      "en": "Common lookup types",
+      "es": "Lookup types comunes"
+    },
+    {
+      "id": 53,
+      "br": "Tipos de fatura (STANDARD/CREDIT/DEBIT/PREPAYMENT)",
+      "en": "Invoice types (STANDARD/CREDIT/DEBIT/PREPAYMENT)",
+      "es": "Tipos de factura (STANDARD/CREDIT/DEBIT/PREPAYMENT)"
+    },
+    {
+      "id": 54,
+      "br": "Tipos de distribuição (ITEM/TAX/FREIGHT)",
+      "en": "Distribution types (ITEM/TAX/FREIGHT)",
+      "es": "Tipos de distribución (ITEM/TAX/FREIGHT)"
+    },
+    {
+      "id": 55,
+      "br": "Grupos de pagamento",
+      "en": "Payment groups",
+      "es": "Grupos de pago"
+    },
+    {
+      "id": 56,
+      "br": "Tipos de hold/retenção",
+      "en": "Hold/retention types",
+      "es": "Tipos de hold/retención"
+    },
+    {
+      "id": 57,
+      "br": "Traduções",
+      "en": "Translations",
+      "es": "Traducciones"
+    },
+    {
+      "id": 58,
+      "br": "Observações",
+      "en": "Notes",
+      "es": "Observaciones"
+    },
+    {
+      "id": 59,
+      "br": "A PK composta é LOOKUP_TYPE + LOOKUP_CODE.",
+      "en": "The composite PK is LOOKUP_TYPE + LOOKUP_CODE.",
+      "es": "La PK compuesta es LOOKUP_TYPE + LOOKUP_CODE."
+    },
+    {
+      "id": 60,
+      "br": "O campo INACTIVE_DATE controla a vigência: registros com data futura ou NULL estão ativos.",
+      "en": "The INACTIVE_DATE field controls validity: records with future date or NULL are active.",
+      "es": "El campo INACTIVE_DATE controla la vigencia: registros con fecha futura o NULL están activos."
+    },
+    {
+      "id": 61,
+      "br": "No Oracle Fusion, a tendência é usar FND_LOOKUP_VALUES para novos lookups; AP_LOOKUP_CODES é mantida para compatibilidade com lookups legados do módulo AP.",
+      "en": "In Oracle Fusion, the trend is to use FND_LOOKUP_VALUES for new lookups; AP_LOOKUP_CODES is maintained for compatibility with legacy AP module lookups.",
+      "es": "En Oracle Fusion, la tendencia es usar FND_LOOKUP_VALUES para nuevos lookups; AP_LOOKUP_CODES se mantiene para compatibilidad con lookups legados del módulo AP."
+    },
+    {
+      "id": 62,
+      "br": "Não confundir com FND_LOOKUPS (view) ou FND_LOOKUP_VALUES_B/TL (tabelas base do FND).",
+      "en": "Do not confuse with FND_LOOKUPS (view) or FND_LOOKUP_VALUES_B/TL (FND base tables).",
+      "es": "No confundir con FND_LOOKUPS (view) o FND_LOOKUP_VALUES_B/TL (tablas base del FND)."
+    },
+    {
+      "id": 63,
+      "br": "Novos valores de lookup podem ser adicionados via configuração sem necessidade de desenvolvimento.",
+      "en": "New lookup values can be added via configuration without development.",
+      "es": "Nuevos valores de lookup pueden ser agregados vía configuración sin necesidad de desarrollo."
+    },
+    {
+      "id": 64,
+      "br": "Referências",
+      "en": "References",
+      "es": "Referencias"
+    },
+    {
+      "id": 65,
+      "br": "[Oracle Docs — AP_LOOKUP_CODES](https://docs.oracle.com/en/cloud/saas/financials/25a/oedmf/aplookupcodes-10024.html)",
+      "en": "[Oracle Docs — AP_LOOKUP_CODES](https://docs.oracle.com/en/cloud/saas/financials/25a/oedmf/aplookupcodes-10024.html)",
+      "es": "[Oracle Docs — AP_LOOKUP_CODES](https://docs.oracle.com/en/cloud/saas/financials/25a/oedmf/aplookupcodes-10024.html)"
+    },
+    {
+      "id": 66,
+      "br": "ap-module-data-dictionary — Dossiê do módulo AP",
+      "en": "ap-module-data-dictionary — AP module dossier",
+      "es": "ap-module-data-dictionary — Dossier del módulo AP"
+    }
+  ]
+}

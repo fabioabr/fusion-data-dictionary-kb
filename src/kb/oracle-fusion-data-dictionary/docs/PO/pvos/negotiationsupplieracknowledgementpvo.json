@@ -1,0 +1,5453 @@
+{
+  "meta": {
+    "pvo_name": "NegotiationSupplierAcknowledgementPVO",
+    "full_path": "FscmTopModelAM.PrcExtractAM.PonBiccExtractAM.NegotiationSupplierAcknowledgementPVO",
+    "module_path": "FscmTopModelAM.PrcExtractAM.PonBiccExtractAM",
+    "module_code": "PO",
+    "type": "pvo",
+    "description": "Extrai as confirmações de recebimento (acknowledgements) de fornecedores para convites de negociação. Permite monitorar engajamento e identificar fornecedores que não responderam ao convite."
+  },
+  "stats": {
+    "total_attributes": 387,
+    "tables_count": 4,
+    "bicc_enabled": 387,
+    "bicc_pct": 100,
+    "pk_count": 2
+  },
+  "tables": [
+    "GL_DAILY_CONVERSION_TYPES",
+    "HZ_PARTIES",
+    "PON_ACKNOWLEDGEMENTS",
+    "PON_AUCTION_HEADERS_ALL"
+  ],
+  "attributes": [
+    {
+      "name": "AuctionHeaderId",
+      "table": "PON_ACKNOWLEDGEMENTS",
+      "column": "AUCTION_HEADER_ID",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    },
+    {
+      "name": "DailyConversionTypeNegoHdrConversionType",
+      "table": "GL_DAILY_CONVERSION_TYPES",
+      "column": "CONVERSION_TYPE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "DailyConversionTypeNegoHdrDescription",
+      "table": "GL_DAILY_CONVERSION_TYPES",
+      "column": "DESCRIPTION",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "DailyConversionTypeNegoHdrEnableCrossRateFlag",
+      "table": "GL_DAILY_CONVERSION_TYPES",
+      "column": "ENABLE_CROSS_RATE_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "DailyConversionTypeNegoHdrEnforceInverseRateFlag",
+      "table": "GL_DAILY_CONVERSION_TYPES",
+      "column": "ENFORCE_INVERSE_RATE_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "DailyConversionTypeNegoHdrFemEnabledFlag",
+      "table": "GL_DAILY_CONVERSION_TYPES",
+      "column": "FEM_ENABLED_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "DailyConversionTypeNegoHdrFemRateTypeCode",
+      "table": "GL_DAILY_CONVERSION_TYPES",
+      "column": "FEM_RATE_TYPE_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "DailyConversionTypeNegoHdrFemScenario",
+      "table": "GL_DAILY_CONVERSION_TYPES",
+      "column": "FEM_SCENARIO",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "DailyConversionTypeNegoHdrFemTimeframe",
+      "table": "GL_DAILY_CONVERSION_TYPES",
+      "column": "FEM_TIMEFRAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "DailyConversionTypeNegoHdrPivotCurrencyCode",
+      "table": "GL_DAILY_CONVERSION_TYPES",
+      "column": "PIVOT_CURRENCY_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "DailyConversionTypeNegoHdrSecurityFlag",
+      "table": "GL_DAILY_CONVERSION_TYPES",
+      "column": "SECURITY_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "DailyConversionTypeNegoHdrUserConversionType",
+      "table": "GL_DAILY_CONVERSION_TYPES",
+      "column": "USER_CONVERSION_TYPE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "DailyConversionTypeNegoHdrUserOverrideCrossRateFlag",
+      "table": "GL_DAILY_CONVERSION_TYPES",
+      "column": "USER_OVERRIDE_CROSS_RATE_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegSuppAckAcknowledgementDate",
+      "table": "PON_ACKNOWLEDGEMENTS",
+      "column": "ACKNOWLEDGEMENT_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegSuppAckAcknowledgementResponse",
+      "table": "PON_ACKNOWLEDGEMENTS",
+      "column": "ACKNOWLEDGEMENT_RESPONSE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegSuppAckCreatedBy",
+      "table": "PON_ACKNOWLEDGEMENTS",
+      "column": "CREATED_BY",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegSuppAckCreationDate",
+      "table": "PON_ACKNOWLEDGEMENTS",
+      "column": "CREATION_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegSuppAckLastUpdateDate",
+      "table": "PON_ACKNOWLEDGEMENTS",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": true
+    },
+    {
+      "name": "NegSuppAckLastUpdateLogin",
+      "table": "PON_ACKNOWLEDGEMENTS",
+      "column": "LAST_UPDATE_LOGIN",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegSuppAckLastUpdatedBy",
+      "table": "PON_ACKNOWLEDGEMENTS",
+      "column": "LAST_UPDATED_BY",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegSuppAckObjectVersionNumber",
+      "table": "PON_ACKNOWLEDGEMENTS",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegSuppAckSurrogBidAckFlag",
+      "table": "PON_ACKNOWLEDGEMENTS",
+      "column": "SURROG_BID_ACK_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegSuppAckSurrogBidAckPersonId",
+      "table": "PON_ACKNOWLEDGEMENTS",
+      "column": "SURROG_BID_ACK_PERSON_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegSuppAckTradingPartnerId",
+      "table": "PON_ACKNOWLEDGEMENTS",
+      "column": "TRADING_PARTNER_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderAbstractDetails",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "ABSTRACT_DETAILS",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderAbstractStatus",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "ABSTRACT_STATUS",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderAdvanceNegotiableFlag",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "ADVANCE_NEGOTIABLE_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderAllowOtherBidCurrencyFlag",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "ALLOW_OTHER_BID_CURRENCY_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderAmendmentDescription",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "AMENDMENT_DESCRIPTION",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderAmendmentNumber",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "AMENDMENT_NUMBER",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderApprovalStatus",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "NEG_APPROVAL_STATUS",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderAttributeLineNumber",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "ATTRIBUTE_LINE_NUMBER",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderAttributesExist",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "ATTRIBUTES_EXIST",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderAuctionHeaderId",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "AUCTION_HEADER_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderAuctionHeaderIdOrigAmend",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "AUCTION_HEADER_ID_ORIG_AMEND",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderAuctionHeaderIdOrigRound",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "AUCTION_HEADER_ID_ORIG_ROUND",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderAuctionHeaderIdPrevAmend",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "AUCTION_HEADER_ID_PREV_AMEND",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderAuctionHeaderIdPrevRound",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "AUCTION_HEADER_ID_PREV_ROUND",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderAuctionOriginationCode",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "AUCTION_ORIGINATION_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderAuctionRoundNumber",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "AUCTION_ROUND_NUMBER",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderAuctionStatus",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "AUCTION_STATUS",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderAuctionTitle",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "AUCTION_TITLE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderAutoExtendAllLinesFlag",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "AUTO_EXTEND_ALL_LINES_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderAutoExtendDuration",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "AUTO_EXTEND_DURATION",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderAutoExtendEnabledFlag",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "AUTO_EXTEND_ENABLED_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderAutoExtendFlag",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "AUTO_EXTEND_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderAutoExtendMinTriggerRank",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "AUTO_EXTEND_MIN_TRIGGER_RANK",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderAutoExtendNumber",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "AUTO_EXTEND_NUMBER",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderAutoExtendTypeFlag",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "AUTO_EXTEND_TYPE_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderAutoextendChangedFlag",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "AUTOEXTEND_CHANGED_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderAwardApprAmeTransId",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "AWARD_APPR_AME_TRANS_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderAwardApprAmeTransPrevId",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "AWARD_APPR_AME_TRANS_PREV_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderAwardApprAmeTxnDate",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "AWARD_APPR_AME_TXN_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderAwardApprovalFlag",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "AWARD_APPROVAL_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderAwardApprovalStatus",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "AWARD_APPROVAL_STATUS",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderAwardByDate",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "AWARD_BY_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderAwardCompleteDate",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "AWARD_COMPLETE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderAwardDate",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "AWARD_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderAwardMode",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "AWARD_MODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderAwardStatus",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "AWARD_STATUS",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderBidDecrementMethod",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "BID_DECREMENT_METHOD",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderBidFrequencyCode",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "BID_FREQUENCY_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderBidListType",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "BID_LIST_TYPE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderBidRanking",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "BID_RANKING",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderBidScopeCode",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "BID_SCOPE_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderBidVisibilityCode",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "BID_VISIBILITY_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderCancelDate",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "CANCEL_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderCarrierId",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "CARRIER_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderCloseBiddingDate",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "CLOSE_BIDDING_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderCompleteFlag",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "COMPLETE_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderContermsArticlesUpdDate",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "CONTERMS_ARTICLES_UPD_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderContermsDelivUpdDate",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "CONTERMS_DELIV_UPD_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderContermsExistFlag",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "CONTERMS_EXIST_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderContractTemplateId",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "CONTRACT_TEMPLATE_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderContractType",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "CONTRACT_TYPE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderCreatedBy",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "CREATED_BY",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderCreationDate",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "CREATION_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderCreationDateOrigAmend",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "CREATION_DATE_ORIG_AMEND",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderCurrencyCode",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "CURRENCY_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderDescription",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "DESCRIPTION",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderDisplayBestPriceBlindFlag",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "DISPLAY_BEST_PRICE_BLIND_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderDoctypeId",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "DOCTYPE_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderDocumentNumber",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "DOCUMENT_NUMBER",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderDraftLocked",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "DRAFT_LOCKED",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderDraftLockedDate",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "DRAFT_LOCKED_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderDraftUnlockedDate",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "DRAFT_UNLOCKED_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderEnforcePrevrndBidPriceFlag",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "ENFORCE_PREVRND_BID_PRICE_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderEventId",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "EVENT_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderEventTitle",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "EVENT_TITLE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderExtAttribute1",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "EXT_ATTRIBUTE1",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderExtAttribute10",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "EXT_ATTRIBUTE10",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderExtAttribute11",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "EXT_ATTRIBUTE11",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderExtAttribute12",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "EXT_ATTRIBUTE12",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderExtAttribute13",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "EXT_ATTRIBUTE13",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderExtAttribute14",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "EXT_ATTRIBUTE14",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderExtAttribute15",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "EXT_ATTRIBUTE15",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderExtAttribute2",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "EXT_ATTRIBUTE2",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderExtAttribute3",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "EXT_ATTRIBUTE3",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderExtAttribute4",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "EXT_ATTRIBUTE4",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderExtAttribute5",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "EXT_ATTRIBUTE5",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderExtAttribute6",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "EXT_ATTRIBUTE6",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderExtAttribute7",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "EXT_ATTRIBUTE7",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderExtAttribute8",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "EXT_ATTRIBUTE8",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderExtAttribute9",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "EXT_ATTRIBUTE9",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderExtAttributeCategory",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "EXT_ATTRIBUTE_CATEGORY",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderFirstLineCloseDate",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "FIRST_LINE_CLOSE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderFobCode",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "FOB_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderFreightTermsCode",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "FREIGHT_TERMS_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderFullQuantityBidCode",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "FULL_QUANTITY_BID_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderGlobalTemplateFlag",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "GLOBAL_TEMPLATE_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderGroupEnabledFlag",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "GROUP_ENABLED_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderHasHdrAttrFlag",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "HAS_HDR_ATTR_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderHasItemsFlag",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "HAS_ITEMS_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderHasPeForAllItems",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "HAS_PE_FOR_ALL_ITEMS",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderHasPriceElements",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "HAS_PRICE_ELEMENTS",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderHasScoringTeamsFlag",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "HAS_SCORING_TEAMS_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderHdrAttrDisplayScore",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "HDR_ATTR_DISPLAY_SCORE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderHdrAttrEnableWeights",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "HDR_ATTR_ENABLE_WEIGHTS",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderHdrAttrMaximumScore",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "HDR_ATTR_MAXIMUM_SCORE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderHdrAttributeEnabledFlag",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "HDR_ATTRIBUTE_ENABLED_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderImportFileName",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "IMPORT_FILE_NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderIncludePdfInExternalPage",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "INCLUDE_PDF_IN_EXTERNAL_PAGE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderIntAttribute1",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "INT_ATTRIBUTE1",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderIntAttribute10",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "INT_ATTRIBUTE10",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderIntAttribute11",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "INT_ATTRIBUTE11",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderIntAttribute12",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "INT_ATTRIBUTE12",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderIntAttribute13",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "INT_ATTRIBUTE13",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderIntAttribute14",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "INT_ATTRIBUTE14",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderIntAttribute15",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "INT_ATTRIBUTE15",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderIntAttribute2",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "INT_ATTRIBUTE2",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderIntAttribute3",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "INT_ATTRIBUTE3",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderIntAttribute4",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "INT_ATTRIBUTE4",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderIntAttribute5",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "INT_ATTRIBUTE5",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderIntAttribute6",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "INT_ATTRIBUTE6",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderIntAttribute7",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "INT_ATTRIBUTE7",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderIntAttribute8",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "INT_ATTRIBUTE8",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderIntAttribute9",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "INT_ATTRIBUTE9",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderIntAttributeCategory",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "INT_ATTRIBUTE_CATEGORY",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderIsPaused",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "IS_PAUSED",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderIsTemplateFlag",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "IS_TEMPLATE_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderLanguageCode",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "LANGUAGE_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderLargeNegEnabledFlag",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "LARGE_NEG_ENABLED_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderLastLineNumber",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "LAST_LINE_NUMBER",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderLastPauseDate",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "LAST_PAUSE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderLastUpdateDate",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderLastUpdateLogin",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "LAST_UPDATE_LOGIN",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderLastUpdatedBy",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "LAST_UPDATED_BY",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderLineAttributeEnabledFlag",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "LINE_ATTRIBUTE_ENABLED_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderLineMasEnabledFlag",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "LINE_MAS_ENABLED_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderLotEnabledFlag",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "LOT_ENABLED_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderMaxBidColorSequenceId",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "MAX_BID_COLOR_SEQUENCE_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderMaxDocumentLineNum",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "MAX_DOCUMENT_LINE_NUM",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderMaxInternalLineNum",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "MAX_INTERNAL_LINE_NUM",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderMaxRetainageNegotiableFlag",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "MAX_RETAINAGE_NEGOTIABLE_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderMinBidChangeType",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "MIN_BID_CHANGE_TYPE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderMinBidDecrement",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "MIN_BID_DECREMENT",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderNegTeamEnabledFlag",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "NEG_TEAM_ENABLED_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderNumberOfBids",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "NUMBER_OF_BIDS",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderNumberOfExtensions",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "NUMBER_OF_EXTENSIONS",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderNumberOfLines",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "NUMBER_OF_LINES",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderNumberPriceDecimals",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "NUMBER_PRICE_DECIMALS",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderObjectVersionNumber",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderOpenAuctionNowFlag",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "OPEN_AUCTION_NOW_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderOpenBiddingDate",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "OPEN_BIDDING_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderOriginalCloseBiddingDate",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "ORIGINAL_CLOSE_BIDDING_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderOutcomeStatus",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "OUTCOME_STATUS",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderPauseRemarks",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "PAUSE_REMARKS",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderPaymentTermsId",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "PAYMENT_TERMS_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderPersonId",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "PERSON_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderPfTypeAllowed",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "PF_TYPE_ALLOWED",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderPoAgreedAmount",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "PO_AGREED_AMOUNT",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderPoEndDate",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "PO_END_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderPoMinRelAmount",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "PO_MIN_REL_AMOUNT",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderPoStartDate",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "PO_START_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderPoStyleId",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "PO_STYLE_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderPowerBiddingEnabledFlag",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "POWER_BIDDING_ENABLED_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderPrcBuId",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "PRC_BU_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderPriceDrivenAuctionFlag",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "PRICE_DRIVEN_AUCTION_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderPriceElementEnabledFlag",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "PRICE_ELEMENT_ENABLED_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderPriceTiersIndicator",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "PRICE_TIERS_INDICATOR",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderProgramAppName",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "PROGRAM_APP_NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderProgramName",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "PROGRAM_NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderProgressPaymentType",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "PROGRESS_PAYMENT_TYPE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderProgressPymtNegotiableFlag",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "PROGRESS_PYMT_NEGOTIABLE_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderProjectId",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "PROJECT_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderProxyBiddingEnabledFlag",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "PROXY_BIDDING_ENABLED_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderPublishAuctionNowFlag",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "PUBLISH_AUCTION_NOW_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderPublishDate",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "PUBLISH_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderPublishDateOrigAmend",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "PUBLISH_DATE_ORIG_AMEND",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderPublishRatesToBiddersFlag",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "PUBLISH_RATES_TO_BIDDERS_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderQtyPriceTiersEnabledFlag",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "QTY_PRICE_TIERS_ENABLED_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderRankIndicator",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "RANK_INDICATOR",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderRateDate",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "RATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderRateType",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "RATE_TYPE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderRecoupmentNegotiableFlag",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "RECOUPMENT_NEGOTIABLE_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderReminderDate",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "REMINDER_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderReqBuId",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "REQ_BU_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderRequestDate",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "REQUEST_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderRequestId",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "REQUEST_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderRequestedBy",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "REQUESTED_BY",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderRetainageNegotiableFlag",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "RETAINAGE_NEGOTIABLE_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderRfiLineEnabledFlag",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "RFI_LINE_ENABLED_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderScoringLockDate",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "SCORING_LOCK_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderSealedActualUnlockDate",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "SEALED_ACTUAL_UNLOCK_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderSealedActualUnsealDate",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "SEALED_ACTUAL_UNSEAL_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderSealedAuctionStatus",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "SEALED_AUCTION_STATUS",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderShareAwardDecision",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "SHARE_AWARD_DECISION",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderShowBidderNotes",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "SHOW_BIDDER_NOTES",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderShowBidderScores",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "SHOW_BIDDER_SCORES",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderSourceDocId",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "SOURCE_DOC_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderSourceDocLineMsg",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "SOURCE_DOC_LINE_MSG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderSourceDocMsg",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "SOURCE_DOC_MSG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderSourceDocMsgApp",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "SOURCE_DOC_MSG_APP",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderSourceDocNumber",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "SOURCE_DOC_NUMBER",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderSourceReqsFlag",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "SOURCE_REQS_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderStaggeredClosingInterval",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "STAGGERED_CLOSING_INTERVAL",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderStyleId",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "STYLE_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderSupplierEnterablePymtFlag",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "SUPPLIER_ENTERABLE_PYMT_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderSupplierViewType",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "SUPPLIER_VIEW_TYPE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderTeamScoringEnabledFlag",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "TEAM_SCORING_ENABLED_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderTechnicalActualUnlockDate",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "TECHNICAL_ACTUAL_UNLOCK_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderTechnicalActualUnsealDate",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "TECHNICAL_ACTUAL_UNSEAL_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderTechnicalEvaluationStatus",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "TECHNICAL_EVALUATION_STATUS",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderTechnicalLockStatus",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "TECHNICAL_LOCK_STATUS",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderTemplateId",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "TEMPLATE_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderTemplateScope",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "TEMPLATE_SCOPE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderTemplateStatus",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "TEMPLATE_STATUS",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderTwoPartFlag",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "TWO_PART_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderVersionNum",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "VERSION_NUM",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderViewByDate",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "VIEW_BY_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderWfApprovalItemKey",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "WF_APPROVAL_ITEM_KEY",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderWfAwardApprovalItemKey",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "WF_AWARD_APPROVAL_ITEM_KEY",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderWfItemKey",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "WF_ITEM_KEY",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderWfPoncomplCurrentRound",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "WF_PONCOMPL_CURRENT_ROUND",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderWfPoncomplItemKey",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "WF_PONCOMPL_ITEM_KEY",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationHeaderWfRoleName",
+      "table": "PON_AUCTION_HEADERS_ALL",
+      "column": "WF_ROLE_NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TradingPartnerAddress1",
+      "table": "HZ_PARTIES",
+      "column": "ADDRESS1",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TradingPartnerAddress2",
+      "table": "HZ_PARTIES",
+      "column": "ADDRESS2",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TradingPartnerAddress3",
+      "table": "HZ_PARTIES",
+      "column": "ADDRESS3",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TradingPartnerAddress4",
+      "table": "HZ_PARTIES",
+      "column": "ADDRESS4",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TradingPartnerAnalysisFy",
+      "table": "HZ_PARTIES",
+      "column": "ANALYSIS_FY",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TradingPartnerCategoryCode",
+      "table": "HZ_PARTIES",
+      "column": "CATEGORY_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TradingPartnerCeoName",
+      "table": "HZ_PARTIES",
+      "column": "CEO_NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TradingPartnerCertReasonCode",
+      "table": "HZ_PARTIES",
+      "column": "CERT_REASON_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TradingPartnerCertificationLevel",
+      "table": "HZ_PARTIES",
+      "column": "CERTIFICATION_LEVEL",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TradingPartnerCity",
+      "table": "HZ_PARTIES",
+      "column": "CITY",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TradingPartnerComments",
+      "table": "HZ_PARTIES",
+      "column": "COMMENTS",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TradingPartnerContactAddress1",
+      "table": "HZ_PARTIES",
+      "column": "ADDRESS1",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TradingPartnerContactAddress2",
+      "table": "HZ_PARTIES",
+      "column": "ADDRESS2",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TradingPartnerContactAddress3",
+      "table": "HZ_PARTIES",
+      "column": "ADDRESS3",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TradingPartnerContactAddress4",
+      "table": "HZ_PARTIES",
+      "column": "ADDRESS4",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TradingPartnerContactAnalysisFy",
+      "table": "HZ_PARTIES",
+      "column": "ANALYSIS_FY",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TradingPartnerContactCategoryCode",
+      "table": "HZ_PARTIES",
+      "column": "CATEGORY_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TradingPartnerContactCeoName",
+      "table": "HZ_PARTIES",
+      "column": "CEO_NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TradingPartnerContactCertReasonCode",
+      "table": "HZ_PARTIES",
+      "column": "CERT_REASON_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TradingPartnerContactCertificationLevel",
+      "table": "HZ_PARTIES",
+      "column": "CERTIFICATION_LEVEL",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TradingPartnerContactCity",
+      "table": "HZ_PARTIES",
+      "column": "CITY",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TradingPartnerContactComments",
+      "table": "HZ_PARTIES",
+      "column": "COMMENTS",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TradingPartnerContactCountry",
+      "table": "HZ_PARTIES",
+      "column": "COUNTRY",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TradingPartnerContactCounty",
+      "table": "HZ_PARTIES",
+      "column": "COUNTY",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TradingPartnerContactCreatedByModule",
+      "table": "HZ_PARTIES",
+      "column": "CREATED_BY_MODULE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TradingPartnerContactCurrFyPotentialRevenue",
+      "table": "HZ_PARTIES",
+      "column": "CURR_FY_POTENTIAL_REVENUE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TradingPartnerContactDateOfBirth",
+      "table": "HZ_PARTIES",
+      "column": "DATE_OF_BIRTH",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TradingPartnerContactDunsNumberC",
+      "table": "HZ_PARTIES",
+      "column": "DUNS_NUMBER_C",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TradingPartnerContactEmailAddress",
+      "table": "HZ_PARTIES",
+      "column": "EMAIL_ADDRESS",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TradingPartnerContactEmployeesTotal",
+      "table": "HZ_PARTIES",
+      "column": "EMPLOYEES_TOTAL",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TradingPartnerContactFiscalYearendMonth",
+      "table": "HZ_PARTIES",
+      "column": "FISCAL_YEAREND_MONTH",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TradingPartnerContactGender",
+      "table": "HZ_PARTIES",
+      "column": "GENDER",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TradingPartnerContactGroupType",
+      "table": "HZ_PARTIES",
+      "column": "GROUP_TYPE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TradingPartnerContactGsaIndicatorFlag",
+      "table": "HZ_PARTIES",
+      "column": "GSA_INDICATOR_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TradingPartnerContactHomeCountry",
+      "table": "HZ_PARTIES",
+      "column": "HOME_COUNTRY",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TradingPartnerContactHqBranchInd",
+      "table": "HZ_PARTIES",
+      "column": "HQ_BRANCH_IND",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TradingPartnerContactId",
+      "table": "PON_ACKNOWLEDGEMENTS",
+      "column": "TRADING_PARTNER_CONTACT_ID",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    },
+    {
+      "name": "TradingPartnerContactIdenAddrLocationId",
+      "table": "HZ_PARTIES",
+      "column": "IDEN_ADDR_LOCATION_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TradingPartnerContactIdenAddrPartySiteId",
+      "table": "HZ_PARTIES",
+      "column": "IDEN_ADDR_PARTY_SITE_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TradingPartnerContactInternalFlag",
+      "table": "HZ_PARTIES",
+      "column": "INTERNAL_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TradingPartnerContactJgzzFiscalCode",
+      "table": "HZ_PARTIES",
+      "column": "JGZZ_FISCAL_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TradingPartnerContactLanguageName",
+      "table": "HZ_PARTIES",
+      "column": "LANGUAGE_NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TradingPartnerContactMaritalStatus",
+      "table": "HZ_PARTIES",
+      "column": "MARITAL_STATUS",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TradingPartnerContactMissionStatement",
+      "table": "HZ_PARTIES",
+      "column": "MISSION_STATEMENT",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TradingPartnerContactNextFyPotentialRevenue",
+      "table": "HZ_PARTIES",
+      "column": "NEXT_FY_POTENTIAL_REVENUE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TradingPartnerContactOrigSystemReference",
+      "table": "HZ_PARTIES",
+      "column": "ORIG_SYSTEM_REFERENCE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TradingPartnerContactPartyId",
+      "table": "HZ_PARTIES",
+      "column": "PARTY_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TradingPartnerContactPartyName",
+      "table": "HZ_PARTIES",
+      "column": "PARTY_NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TradingPartnerContactPartyNumber",
+      "table": "HZ_PARTIES",
+      "column": "PARTY_NUMBER",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TradingPartnerContactPartyType",
+      "table": "HZ_PARTIES",
+      "column": "PARTY_TYPE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TradingPartnerContactPersonAcademicTitle",
+      "table": "HZ_PARTIES",
+      "column": "PERSON_ACADEMIC_TITLE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TradingPartnerContactPersonFirstName",
+      "table": "HZ_PARTIES",
+      "column": "PERSON_FIRST_NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TradingPartnerContactPersonLastName",
+      "table": "HZ_PARTIES",
+      "column": "PERSON_LAST_NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TradingPartnerContactPersonLastNamePrefix",
+      "table": "HZ_PARTIES",
+      "column": "PERSON_LAST_NAME_PREFIX",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TradingPartnerContactPersonMiddleName",
+      "table": "HZ_PARTIES",
+      "column": "PERSON_MIDDLE_NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TradingPartnerContactPersonNameSuffix",
+      "table": "HZ_PARTIES",
+      "column": "PERSON_NAME_SUFFIX",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TradingPartnerContactPersonPreNameAdjunct",
+      "table": "HZ_PARTIES",
+      "column": "PERSON_PRE_NAME_ADJUNCT",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TradingPartnerContactPersonPreviousLastName",
+      "table": "HZ_PARTIES",
+      "column": "PERSON_PREVIOUS_LAST_NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TradingPartnerContactPersonSecondLastName",
+      "table": "HZ_PARTIES",
+      "column": "PERSON_SECOND_LAST_NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TradingPartnerContactPersonTitle",
+      "table": "HZ_PARTIES",
+      "column": "PERSON_TITLE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TradingPartnerContactPostalCode",
+      "table": "HZ_PARTIES",
+      "column": "POSTAL_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TradingPartnerContactPrefFunctionalCurrency",
+      "table": "HZ_PARTIES",
+      "column": "PREF_FUNCTIONAL_CURRENCY",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TradingPartnerContactPreferredContactMethod",
+      "table": "HZ_PARTIES",
+      "column": "PREFERRED_CONTACT_METHOD",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TradingPartnerContactPreferredContactPersonId",
+      "table": "HZ_PARTIES",
+      "column": "PREFERRED_CONTACT_PERSON_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TradingPartnerContactPreferredName",
+      "table": "HZ_PARTIES",
+      "column": "PREFERRED_NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TradingPartnerContactPreferredNameId",
+      "table": "HZ_PARTIES",
+      "column": "PREFERRED_NAME_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TradingPartnerContactPrimaryEmailContactPtId",
+      "table": "HZ_PARTIES",
+      "column": "PRIMARY_EMAIL_CONTACT_PT_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TradingPartnerContactPrimaryPhoneAreaCode",
+      "table": "HZ_PARTIES",
+      "column": "PRIMARY_PHONE_AREA_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TradingPartnerContactPrimaryPhoneContactPtId",
+      "table": "HZ_PARTIES",
+      "column": "PRIMARY_PHONE_CONTACT_PT_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TradingPartnerContactPrimaryPhoneCountryCode",
+      "table": "HZ_PARTIES",
+      "column": "PRIMARY_PHONE_COUNTRY_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TradingPartnerContactPrimaryPhoneExtension",
+      "table": "HZ_PARTIES",
+      "column": "PRIMARY_PHONE_EXTENSION",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TradingPartnerContactPrimaryPhoneLineType",
+      "table": "HZ_PARTIES",
+      "column": "PRIMARY_PHONE_LINE_TYPE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TradingPartnerContactPrimaryPhoneNumber",
+      "table": "HZ_PARTIES",
+      "column": "PRIMARY_PHONE_NUMBER",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TradingPartnerContactPrimaryPhonePurpose",
+      "table": "HZ_PARTIES",
+      "column": "PRIMARY_PHONE_PURPOSE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TradingPartnerContactPrimaryUrlContactPtId",
+      "table": "HZ_PARTIES",
+      "column": "PRIMARY_URL_CONTACT_PT_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TradingPartnerContactProvince",
+      "table": "HZ_PARTIES",
+      "column": "PROVINCE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TradingPartnerContactSalutation",
+      "table": "HZ_PARTIES",
+      "column": "SALUTATION",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TradingPartnerContactSicCode",
+      "table": "HZ_PARTIES",
+      "column": "SIC_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TradingPartnerContactSicCodeType",
+      "table": "HZ_PARTIES",
+      "column": "SIC_CODE_TYPE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TradingPartnerContactState",
+      "table": "HZ_PARTIES",
+      "column": "STATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TradingPartnerContactStatus",
+      "table": "HZ_PARTIES",
+      "column": "STATUS",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TradingPartnerContactThirdPartyFlag",
+      "table": "HZ_PARTIES",
+      "column": "THIRD_PARTY_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TradingPartnerContactTradingPartnerIdentifier",
+      "table": "HZ_PARTIES",
+      "column": "TRADING_PARTNER_IDENTIFIER",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TradingPartnerContactUrl",
+      "table": "HZ_PARTIES",
+      "column": "URL",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TradingPartnerContactUserGuid",
+      "table": "HZ_PARTIES",
+      "column": "USER_GUID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TradingPartnerContactValidatedFlag",
+      "table": "HZ_PARTIES",
+      "column": "VALIDATED_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TradingPartnerContactYearEstablished",
+      "table": "HZ_PARTIES",
+      "column": "YEAR_ESTABLISHED",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TradingPartnerCountry",
+      "table": "HZ_PARTIES",
+      "column": "COUNTRY",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TradingPartnerCounty",
+      "table": "HZ_PARTIES",
+      "column": "COUNTY",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TradingPartnerCreatedByModule",
+      "table": "HZ_PARTIES",
+      "column": "CREATED_BY_MODULE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TradingPartnerCurrFyPotentialRevenue",
+      "table": "HZ_PARTIES",
+      "column": "CURR_FY_POTENTIAL_REVENUE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TradingPartnerDateOfBirth",
+      "table": "HZ_PARTIES",
+      "column": "DATE_OF_BIRTH",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TradingPartnerDunsNumberC",
+      "table": "HZ_PARTIES",
+      "column": "DUNS_NUMBER_C",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TradingPartnerEmailAddress",
+      "table": "HZ_PARTIES",
+      "column": "EMAIL_ADDRESS",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TradingPartnerEmployeesTotal",
+      "table": "HZ_PARTIES",
+      "column": "EMPLOYEES_TOTAL",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TradingPartnerFiscalYearendMonth",
+      "table": "HZ_PARTIES",
+      "column": "FISCAL_YEAREND_MONTH",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TradingPartnerGender",
+      "table": "HZ_PARTIES",
+      "column": "GENDER",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TradingPartnerGroupType",
+      "table": "HZ_PARTIES",
+      "column": "GROUP_TYPE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TradingPartnerGsaIndicatorFlag",
+      "table": "HZ_PARTIES",
+      "column": "GSA_INDICATOR_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TradingPartnerHomeCountry",
+      "table": "HZ_PARTIES",
+      "column": "HOME_COUNTRY",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TradingPartnerHqBranchInd",
+      "table": "HZ_PARTIES",
+      "column": "HQ_BRANCH_IND",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TradingPartnerIdenAddrLocationId",
+      "table": "HZ_PARTIES",
+      "column": "IDEN_ADDR_LOCATION_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TradingPartnerIdenAddrPartySiteId",
+      "table": "HZ_PARTIES",
+      "column": "IDEN_ADDR_PARTY_SITE_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TradingPartnerInternalFlag",
+      "table": "HZ_PARTIES",
+      "column": "INTERNAL_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TradingPartnerJgzzFiscalCode",
+      "table": "HZ_PARTIES",
+      "column": "JGZZ_FISCAL_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TradingPartnerLanguageName",
+      "table": "HZ_PARTIES",
+      "column": "LANGUAGE_NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TradingPartnerMaritalStatus",
+      "table": "HZ_PARTIES",
+      "column": "MARITAL_STATUS",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TradingPartnerMissionStatement",
+      "table": "HZ_PARTIES",
+      "column": "MISSION_STATEMENT",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TradingPartnerNextFyPotentialRevenue",
+      "table": "HZ_PARTIES",
+      "column": "NEXT_FY_POTENTIAL_REVENUE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TradingPartnerOrigSystemReference",
+      "table": "HZ_PARTIES",
+      "column": "ORIG_SYSTEM_REFERENCE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TradingPartnerPartyId",
+      "table": "HZ_PARTIES",
+      "column": "PARTY_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TradingPartnerPartyName",
+      "table": "HZ_PARTIES",
+      "column": "PARTY_NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TradingPartnerPartyNumber",
+      "table": "HZ_PARTIES",
+      "column": "PARTY_NUMBER",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TradingPartnerPartyType",
+      "table": "HZ_PARTIES",
+      "column": "PARTY_TYPE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TradingPartnerPersonAcademicTitle",
+      "table": "HZ_PARTIES",
+      "column": "PERSON_ACADEMIC_TITLE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TradingPartnerPersonFirstName",
+      "table": "HZ_PARTIES",
+      "column": "PERSON_FIRST_NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TradingPartnerPersonLastName",
+      "table": "HZ_PARTIES",
+      "column": "PERSON_LAST_NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TradingPartnerPersonLastNamePrefix",
+      "table": "HZ_PARTIES",
+      "column": "PERSON_LAST_NAME_PREFIX",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TradingPartnerPersonMiddleName",
+      "table": "HZ_PARTIES",
+      "column": "PERSON_MIDDLE_NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TradingPartnerPersonNameSuffix",
+      "table": "HZ_PARTIES",
+      "column": "PERSON_NAME_SUFFIX",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TradingPartnerPersonPreNameAdjunct",
+      "table": "HZ_PARTIES",
+      "column": "PERSON_PRE_NAME_ADJUNCT",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TradingPartnerPersonPreviousLastName",
+      "table": "HZ_PARTIES",
+      "column": "PERSON_PREVIOUS_LAST_NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TradingPartnerPersonSecondLastName",
+      "table": "HZ_PARTIES",
+      "column": "PERSON_SECOND_LAST_NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TradingPartnerPersonTitle",
+      "table": "HZ_PARTIES",
+      "column": "PERSON_TITLE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TradingPartnerPostalCode",
+      "table": "HZ_PARTIES",
+      "column": "POSTAL_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TradingPartnerPrefFunctionalCurrency",
+      "table": "HZ_PARTIES",
+      "column": "PREF_FUNCTIONAL_CURRENCY",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TradingPartnerPreferredContactMethod",
+      "table": "HZ_PARTIES",
+      "column": "PREFERRED_CONTACT_METHOD",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TradingPartnerPreferredContactPersonId",
+      "table": "HZ_PARTIES",
+      "column": "PREFERRED_CONTACT_PERSON_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TradingPartnerPreferredName",
+      "table": "HZ_PARTIES",
+      "column": "PREFERRED_NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TradingPartnerPreferredNameId",
+      "table": "HZ_PARTIES",
+      "column": "PREFERRED_NAME_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TradingPartnerPrimaryEmailContactPtId",
+      "table": "HZ_PARTIES",
+      "column": "PRIMARY_EMAIL_CONTACT_PT_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TradingPartnerPrimaryPhoneAreaCode",
+      "table": "HZ_PARTIES",
+      "column": "PRIMARY_PHONE_AREA_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TradingPartnerPrimaryPhoneContactPtId",
+      "table": "HZ_PARTIES",
+      "column": "PRIMARY_PHONE_CONTACT_PT_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TradingPartnerPrimaryPhoneCountryCode",
+      "table": "HZ_PARTIES",
+      "column": "PRIMARY_PHONE_COUNTRY_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TradingPartnerPrimaryPhoneExtension",
+      "table": "HZ_PARTIES",
+      "column": "PRIMARY_PHONE_EXTENSION",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TradingPartnerPrimaryPhoneLineType",
+      "table": "HZ_PARTIES",
+      "column": "PRIMARY_PHONE_LINE_TYPE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TradingPartnerPrimaryPhoneNumber",
+      "table": "HZ_PARTIES",
+      "column": "PRIMARY_PHONE_NUMBER",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TradingPartnerPrimaryPhonePurpose",
+      "table": "HZ_PARTIES",
+      "column": "PRIMARY_PHONE_PURPOSE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TradingPartnerPrimaryUrlContactPtId",
+      "table": "HZ_PARTIES",
+      "column": "PRIMARY_URL_CONTACT_PT_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TradingPartnerProvince",
+      "table": "HZ_PARTIES",
+      "column": "PROVINCE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TradingPartnerSalutation",
+      "table": "HZ_PARTIES",
+      "column": "SALUTATION",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TradingPartnerSicCode",
+      "table": "HZ_PARTIES",
+      "column": "SIC_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TradingPartnerSicCodeType",
+      "table": "HZ_PARTIES",
+      "column": "SIC_CODE_TYPE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TradingPartnerState",
+      "table": "HZ_PARTIES",
+      "column": "STATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TradingPartnerStatus",
+      "table": "HZ_PARTIES",
+      "column": "STATUS",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TradingPartnerThirdPartyFlag",
+      "table": "HZ_PARTIES",
+      "column": "THIRD_PARTY_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TradingPartnerTradingPartnerIdentifier",
+      "table": "HZ_PARTIES",
+      "column": "TRADING_PARTNER_IDENTIFIER",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TradingPartnerUrl",
+      "table": "HZ_PARTIES",
+      "column": "URL",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TradingPartnerUserGuid",
+      "table": "HZ_PARTIES",
+      "column": "USER_GUID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TradingPartnerValidatedFlag",
+      "table": "HZ_PARTIES",
+      "column": "VALIDATED_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TradingPartnerYearEstablished",
+      "table": "HZ_PARTIES",
+      "column": "YEAR_ESTABLISHED",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    }
+  ],
+  "by_table": {
+    "PON_ACKNOWLEDGEMENTS": [
+      {
+        "attribute": "AuctionHeaderId",
+        "column": "AUCTION_HEADER_ID",
+        "bicc": true,
+        "pk": true
+      },
+      {
+        "attribute": "NegSuppAckAcknowledgementDate",
+        "column": "ACKNOWLEDGEMENT_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegSuppAckAcknowledgementResponse",
+        "column": "ACKNOWLEDGEMENT_RESPONSE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegSuppAckCreatedBy",
+        "column": "CREATED_BY",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegSuppAckCreationDate",
+        "column": "CREATION_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegSuppAckLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegSuppAckLastUpdateLogin",
+        "column": "LAST_UPDATE_LOGIN",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegSuppAckLastUpdatedBy",
+        "column": "LAST_UPDATED_BY",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegSuppAckObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegSuppAckSurrogBidAckFlag",
+        "column": "SURROG_BID_ACK_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegSuppAckSurrogBidAckPersonId",
+        "column": "SURROG_BID_ACK_PERSON_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegSuppAckTradingPartnerId",
+        "column": "TRADING_PARTNER_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TradingPartnerContactId",
+        "column": "TRADING_PARTNER_CONTACT_ID",
+        "bicc": true,
+        "pk": true
+      }
+    ],
+    "GL_DAILY_CONVERSION_TYPES": [
+      {
+        "attribute": "DailyConversionTypeNegoHdrConversionType",
+        "column": "CONVERSION_TYPE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "DailyConversionTypeNegoHdrDescription",
+        "column": "DESCRIPTION",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "DailyConversionTypeNegoHdrEnableCrossRateFlag",
+        "column": "ENABLE_CROSS_RATE_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "DailyConversionTypeNegoHdrEnforceInverseRateFlag",
+        "column": "ENFORCE_INVERSE_RATE_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "DailyConversionTypeNegoHdrFemEnabledFlag",
+        "column": "FEM_ENABLED_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "DailyConversionTypeNegoHdrFemRateTypeCode",
+        "column": "FEM_RATE_TYPE_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "DailyConversionTypeNegoHdrFemScenario",
+        "column": "FEM_SCENARIO",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "DailyConversionTypeNegoHdrFemTimeframe",
+        "column": "FEM_TIMEFRAME",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "DailyConversionTypeNegoHdrPivotCurrencyCode",
+        "column": "PIVOT_CURRENCY_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "DailyConversionTypeNegoHdrSecurityFlag",
+        "column": "SECURITY_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "DailyConversionTypeNegoHdrUserConversionType",
+        "column": "USER_CONVERSION_TYPE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "DailyConversionTypeNegoHdrUserOverrideCrossRateFlag",
+        "column": "USER_OVERRIDE_CROSS_RATE_FLAG",
+        "bicc": true,
+        "pk": false
+      }
+    ],
+    "PON_AUCTION_HEADERS_ALL": [
+      {
+        "attribute": "NegotiationHeaderAbstractDetails",
+        "column": "ABSTRACT_DETAILS",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderAbstractStatus",
+        "column": "ABSTRACT_STATUS",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderAdvanceNegotiableFlag",
+        "column": "ADVANCE_NEGOTIABLE_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderAllowOtherBidCurrencyFlag",
+        "column": "ALLOW_OTHER_BID_CURRENCY_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderAmendmentDescription",
+        "column": "AMENDMENT_DESCRIPTION",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderAmendmentNumber",
+        "column": "AMENDMENT_NUMBER",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderApprovalStatus",
+        "column": "NEG_APPROVAL_STATUS",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderAttributeLineNumber",
+        "column": "ATTRIBUTE_LINE_NUMBER",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderAttributesExist",
+        "column": "ATTRIBUTES_EXIST",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderAuctionHeaderId",
+        "column": "AUCTION_HEADER_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderAuctionHeaderIdOrigAmend",
+        "column": "AUCTION_HEADER_ID_ORIG_AMEND",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderAuctionHeaderIdOrigRound",
+        "column": "AUCTION_HEADER_ID_ORIG_ROUND",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderAuctionHeaderIdPrevAmend",
+        "column": "AUCTION_HEADER_ID_PREV_AMEND",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderAuctionHeaderIdPrevRound",
+        "column": "AUCTION_HEADER_ID_PREV_ROUND",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderAuctionOriginationCode",
+        "column": "AUCTION_ORIGINATION_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderAuctionRoundNumber",
+        "column": "AUCTION_ROUND_NUMBER",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderAuctionStatus",
+        "column": "AUCTION_STATUS",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderAuctionTitle",
+        "column": "AUCTION_TITLE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderAutoExtendAllLinesFlag",
+        "column": "AUTO_EXTEND_ALL_LINES_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderAutoExtendDuration",
+        "column": "AUTO_EXTEND_DURATION",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderAutoExtendEnabledFlag",
+        "column": "AUTO_EXTEND_ENABLED_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderAutoExtendFlag",
+        "column": "AUTO_EXTEND_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderAutoExtendMinTriggerRank",
+        "column": "AUTO_EXTEND_MIN_TRIGGER_RANK",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderAutoExtendNumber",
+        "column": "AUTO_EXTEND_NUMBER",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderAutoExtendTypeFlag",
+        "column": "AUTO_EXTEND_TYPE_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderAutoextendChangedFlag",
+        "column": "AUTOEXTEND_CHANGED_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderAwardApprAmeTransId",
+        "column": "AWARD_APPR_AME_TRANS_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderAwardApprAmeTransPrevId",
+        "column": "AWARD_APPR_AME_TRANS_PREV_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderAwardApprAmeTxnDate",
+        "column": "AWARD_APPR_AME_TXN_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderAwardApprovalFlag",
+        "column": "AWARD_APPROVAL_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderAwardApprovalStatus",
+        "column": "AWARD_APPROVAL_STATUS",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderAwardByDate",
+        "column": "AWARD_BY_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderAwardCompleteDate",
+        "column": "AWARD_COMPLETE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderAwardDate",
+        "column": "AWARD_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderAwardMode",
+        "column": "AWARD_MODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderAwardStatus",
+        "column": "AWARD_STATUS",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderBidDecrementMethod",
+        "column": "BID_DECREMENT_METHOD",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderBidFrequencyCode",
+        "column": "BID_FREQUENCY_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderBidListType",
+        "column": "BID_LIST_TYPE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderBidRanking",
+        "column": "BID_RANKING",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderBidScopeCode",
+        "column": "BID_SCOPE_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderBidVisibilityCode",
+        "column": "BID_VISIBILITY_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderCancelDate",
+        "column": "CANCEL_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderCarrierId",
+        "column": "CARRIER_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderCloseBiddingDate",
+        "column": "CLOSE_BIDDING_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderCompleteFlag",
+        "column": "COMPLETE_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderContermsArticlesUpdDate",
+        "column": "CONTERMS_ARTICLES_UPD_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderContermsDelivUpdDate",
+        "column": "CONTERMS_DELIV_UPD_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderContermsExistFlag",
+        "column": "CONTERMS_EXIST_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderContractTemplateId",
+        "column": "CONTRACT_TEMPLATE_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderContractType",
+        "column": "CONTRACT_TYPE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderCreatedBy",
+        "column": "CREATED_BY",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderCreationDate",
+        "column": "CREATION_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderCreationDateOrigAmend",
+        "column": "CREATION_DATE_ORIG_AMEND",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderCurrencyCode",
+        "column": "CURRENCY_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderDescription",
+        "column": "DESCRIPTION",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderDisplayBestPriceBlindFlag",
+        "column": "DISPLAY_BEST_PRICE_BLIND_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderDoctypeId",
+        "column": "DOCTYPE_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderDocumentNumber",
+        "column": "DOCUMENT_NUMBER",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderDraftLocked",
+        "column": "DRAFT_LOCKED",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderDraftLockedDate",
+        "column": "DRAFT_LOCKED_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderDraftUnlockedDate",
+        "column": "DRAFT_UNLOCKED_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderEnforcePrevrndBidPriceFlag",
+        "column": "ENFORCE_PREVRND_BID_PRICE_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderEventId",
+        "column": "EVENT_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderEventTitle",
+        "column": "EVENT_TITLE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderExtAttribute1",
+        "column": "EXT_ATTRIBUTE1",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderExtAttribute10",
+        "column": "EXT_ATTRIBUTE10",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderExtAttribute11",
+        "column": "EXT_ATTRIBUTE11",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderExtAttribute12",
+        "column": "EXT_ATTRIBUTE12",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderExtAttribute13",
+        "column": "EXT_ATTRIBUTE13",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderExtAttribute14",
+        "column": "EXT_ATTRIBUTE14",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderExtAttribute15",
+        "column": "EXT_ATTRIBUTE15",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderExtAttribute2",
+        "column": "EXT_ATTRIBUTE2",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderExtAttribute3",
+        "column": "EXT_ATTRIBUTE3",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderExtAttribute4",
+        "column": "EXT_ATTRIBUTE4",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderExtAttribute5",
+        "column": "EXT_ATTRIBUTE5",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderExtAttribute6",
+        "column": "EXT_ATTRIBUTE6",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderExtAttribute7",
+        "column": "EXT_ATTRIBUTE7",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderExtAttribute8",
+        "column": "EXT_ATTRIBUTE8",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderExtAttribute9",
+        "column": "EXT_ATTRIBUTE9",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderExtAttributeCategory",
+        "column": "EXT_ATTRIBUTE_CATEGORY",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderFirstLineCloseDate",
+        "column": "FIRST_LINE_CLOSE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderFobCode",
+        "column": "FOB_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderFreightTermsCode",
+        "column": "FREIGHT_TERMS_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderFullQuantityBidCode",
+        "column": "FULL_QUANTITY_BID_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderGlobalTemplateFlag",
+        "column": "GLOBAL_TEMPLATE_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderGroupEnabledFlag",
+        "column": "GROUP_ENABLED_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderHasHdrAttrFlag",
+        "column": "HAS_HDR_ATTR_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderHasItemsFlag",
+        "column": "HAS_ITEMS_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderHasPeForAllItems",
+        "column": "HAS_PE_FOR_ALL_ITEMS",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderHasPriceElements",
+        "column": "HAS_PRICE_ELEMENTS",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderHasScoringTeamsFlag",
+        "column": "HAS_SCORING_TEAMS_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderHdrAttrDisplayScore",
+        "column": "HDR_ATTR_DISPLAY_SCORE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderHdrAttrEnableWeights",
+        "column": "HDR_ATTR_ENABLE_WEIGHTS",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderHdrAttrMaximumScore",
+        "column": "HDR_ATTR_MAXIMUM_SCORE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderHdrAttributeEnabledFlag",
+        "column": "HDR_ATTRIBUTE_ENABLED_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderImportFileName",
+        "column": "IMPORT_FILE_NAME",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderIncludePdfInExternalPage",
+        "column": "INCLUDE_PDF_IN_EXTERNAL_PAGE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderIntAttribute1",
+        "column": "INT_ATTRIBUTE1",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderIntAttribute10",
+        "column": "INT_ATTRIBUTE10",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderIntAttribute11",
+        "column": "INT_ATTRIBUTE11",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderIntAttribute12",
+        "column": "INT_ATTRIBUTE12",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderIntAttribute13",
+        "column": "INT_ATTRIBUTE13",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderIntAttribute14",
+        "column": "INT_ATTRIBUTE14",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderIntAttribute15",
+        "column": "INT_ATTRIBUTE15",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderIntAttribute2",
+        "column": "INT_ATTRIBUTE2",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderIntAttribute3",
+        "column": "INT_ATTRIBUTE3",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderIntAttribute4",
+        "column": "INT_ATTRIBUTE4",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderIntAttribute5",
+        "column": "INT_ATTRIBUTE5",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderIntAttribute6",
+        "column": "INT_ATTRIBUTE6",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderIntAttribute7",
+        "column": "INT_ATTRIBUTE7",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderIntAttribute8",
+        "column": "INT_ATTRIBUTE8",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderIntAttribute9",
+        "column": "INT_ATTRIBUTE9",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderIntAttributeCategory",
+        "column": "INT_ATTRIBUTE_CATEGORY",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderIsPaused",
+        "column": "IS_PAUSED",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderIsTemplateFlag",
+        "column": "IS_TEMPLATE_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderLanguageCode",
+        "column": "LANGUAGE_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderLargeNegEnabledFlag",
+        "column": "LARGE_NEG_ENABLED_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderLastLineNumber",
+        "column": "LAST_LINE_NUMBER",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderLastPauseDate",
+        "column": "LAST_PAUSE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderLastUpdateLogin",
+        "column": "LAST_UPDATE_LOGIN",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderLastUpdatedBy",
+        "column": "LAST_UPDATED_BY",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderLineAttributeEnabledFlag",
+        "column": "LINE_ATTRIBUTE_ENABLED_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderLineMasEnabledFlag",
+        "column": "LINE_MAS_ENABLED_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderLotEnabledFlag",
+        "column": "LOT_ENABLED_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderMaxBidColorSequenceId",
+        "column": "MAX_BID_COLOR_SEQUENCE_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderMaxDocumentLineNum",
+        "column": "MAX_DOCUMENT_LINE_NUM",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderMaxInternalLineNum",
+        "column": "MAX_INTERNAL_LINE_NUM",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderMaxRetainageNegotiableFlag",
+        "column": "MAX_RETAINAGE_NEGOTIABLE_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderMinBidChangeType",
+        "column": "MIN_BID_CHANGE_TYPE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderMinBidDecrement",
+        "column": "MIN_BID_DECREMENT",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderNegTeamEnabledFlag",
+        "column": "NEG_TEAM_ENABLED_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderNumberOfBids",
+        "column": "NUMBER_OF_BIDS",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderNumberOfExtensions",
+        "column": "NUMBER_OF_EXTENSIONS",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderNumberOfLines",
+        "column": "NUMBER_OF_LINES",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderNumberPriceDecimals",
+        "column": "NUMBER_PRICE_DECIMALS",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderOpenAuctionNowFlag",
+        "column": "OPEN_AUCTION_NOW_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderOpenBiddingDate",
+        "column": "OPEN_BIDDING_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderOriginalCloseBiddingDate",
+        "column": "ORIGINAL_CLOSE_BIDDING_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderOutcomeStatus",
+        "column": "OUTCOME_STATUS",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderPauseRemarks",
+        "column": "PAUSE_REMARKS",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderPaymentTermsId",
+        "column": "PAYMENT_TERMS_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderPersonId",
+        "column": "PERSON_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderPfTypeAllowed",
+        "column": "PF_TYPE_ALLOWED",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderPoAgreedAmount",
+        "column": "PO_AGREED_AMOUNT",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderPoEndDate",
+        "column": "PO_END_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderPoMinRelAmount",
+        "column": "PO_MIN_REL_AMOUNT",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderPoStartDate",
+        "column": "PO_START_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderPoStyleId",
+        "column": "PO_STYLE_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderPowerBiddingEnabledFlag",
+        "column": "POWER_BIDDING_ENABLED_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderPrcBuId",
+        "column": "PRC_BU_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderPriceDrivenAuctionFlag",
+        "column": "PRICE_DRIVEN_AUCTION_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderPriceElementEnabledFlag",
+        "column": "PRICE_ELEMENT_ENABLED_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderPriceTiersIndicator",
+        "column": "PRICE_TIERS_INDICATOR",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderProgramAppName",
+        "column": "PROGRAM_APP_NAME",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderProgramName",
+        "column": "PROGRAM_NAME",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderProgressPaymentType",
+        "column": "PROGRESS_PAYMENT_TYPE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderProgressPymtNegotiableFlag",
+        "column": "PROGRESS_PYMT_NEGOTIABLE_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderProjectId",
+        "column": "PROJECT_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderProxyBiddingEnabledFlag",
+        "column": "PROXY_BIDDING_ENABLED_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderPublishAuctionNowFlag",
+        "column": "PUBLISH_AUCTION_NOW_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderPublishDate",
+        "column": "PUBLISH_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderPublishDateOrigAmend",
+        "column": "PUBLISH_DATE_ORIG_AMEND",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderPublishRatesToBiddersFlag",
+        "column": "PUBLISH_RATES_TO_BIDDERS_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderQtyPriceTiersEnabledFlag",
+        "column": "QTY_PRICE_TIERS_ENABLED_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderRankIndicator",
+        "column": "RANK_INDICATOR",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderRateDate",
+        "column": "RATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderRateType",
+        "column": "RATE_TYPE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderRecoupmentNegotiableFlag",
+        "column": "RECOUPMENT_NEGOTIABLE_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderReminderDate",
+        "column": "REMINDER_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderReqBuId",
+        "column": "REQ_BU_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderRequestDate",
+        "column": "REQUEST_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderRequestId",
+        "column": "REQUEST_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderRequestedBy",
+        "column": "REQUESTED_BY",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderRetainageNegotiableFlag",
+        "column": "RETAINAGE_NEGOTIABLE_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderRfiLineEnabledFlag",
+        "column": "RFI_LINE_ENABLED_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderScoringLockDate",
+        "column": "SCORING_LOCK_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderSealedActualUnlockDate",
+        "column": "SEALED_ACTUAL_UNLOCK_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderSealedActualUnsealDate",
+        "column": "SEALED_ACTUAL_UNSEAL_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderSealedAuctionStatus",
+        "column": "SEALED_AUCTION_STATUS",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderShareAwardDecision",
+        "column": "SHARE_AWARD_DECISION",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderShowBidderNotes",
+        "column": "SHOW_BIDDER_NOTES",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderShowBidderScores",
+        "column": "SHOW_BIDDER_SCORES",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderSourceDocId",
+        "column": "SOURCE_DOC_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderSourceDocLineMsg",
+        "column": "SOURCE_DOC_LINE_MSG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderSourceDocMsg",
+        "column": "SOURCE_DOC_MSG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderSourceDocMsgApp",
+        "column": "SOURCE_DOC_MSG_APP",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderSourceDocNumber",
+        "column": "SOURCE_DOC_NUMBER",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderSourceReqsFlag",
+        "column": "SOURCE_REQS_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderStaggeredClosingInterval",
+        "column": "STAGGERED_CLOSING_INTERVAL",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderStyleId",
+        "column": "STYLE_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderSupplierEnterablePymtFlag",
+        "column": "SUPPLIER_ENTERABLE_PYMT_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderSupplierViewType",
+        "column": "SUPPLIER_VIEW_TYPE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderTeamScoringEnabledFlag",
+        "column": "TEAM_SCORING_ENABLED_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderTechnicalActualUnlockDate",
+        "column": "TECHNICAL_ACTUAL_UNLOCK_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderTechnicalActualUnsealDate",
+        "column": "TECHNICAL_ACTUAL_UNSEAL_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderTechnicalEvaluationStatus",
+        "column": "TECHNICAL_EVALUATION_STATUS",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderTechnicalLockStatus",
+        "column": "TECHNICAL_LOCK_STATUS",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderTemplateId",
+        "column": "TEMPLATE_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderTemplateScope",
+        "column": "TEMPLATE_SCOPE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderTemplateStatus",
+        "column": "TEMPLATE_STATUS",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderTwoPartFlag",
+        "column": "TWO_PART_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderVersionNum",
+        "column": "VERSION_NUM",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderViewByDate",
+        "column": "VIEW_BY_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderWfApprovalItemKey",
+        "column": "WF_APPROVAL_ITEM_KEY",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderWfAwardApprovalItemKey",
+        "column": "WF_AWARD_APPROVAL_ITEM_KEY",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderWfItemKey",
+        "column": "WF_ITEM_KEY",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderWfPoncomplCurrentRound",
+        "column": "WF_PONCOMPL_CURRENT_ROUND",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderWfPoncomplItemKey",
+        "column": "WF_PONCOMPL_ITEM_KEY",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationHeaderWfRoleName",
+        "column": "WF_ROLE_NAME",
+        "bicc": true,
+        "pk": false
+      }
+    ],
+    "HZ_PARTIES": [
+      {
+        "attribute": "TradingPartnerAddress1",
+        "column": "ADDRESS1",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TradingPartnerAddress2",
+        "column": "ADDRESS2",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TradingPartnerAddress3",
+        "column": "ADDRESS3",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TradingPartnerAddress4",
+        "column": "ADDRESS4",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TradingPartnerAnalysisFy",
+        "column": "ANALYSIS_FY",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TradingPartnerCategoryCode",
+        "column": "CATEGORY_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TradingPartnerCeoName",
+        "column": "CEO_NAME",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TradingPartnerCertReasonCode",
+        "column": "CERT_REASON_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TradingPartnerCertificationLevel",
+        "column": "CERTIFICATION_LEVEL",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TradingPartnerCity",
+        "column": "CITY",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TradingPartnerComments",
+        "column": "COMMENTS",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TradingPartnerContactAddress1",
+        "column": "ADDRESS1",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TradingPartnerContactAddress2",
+        "column": "ADDRESS2",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TradingPartnerContactAddress3",
+        "column": "ADDRESS3",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TradingPartnerContactAddress4",
+        "column": "ADDRESS4",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TradingPartnerContactAnalysisFy",
+        "column": "ANALYSIS_FY",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TradingPartnerContactCategoryCode",
+        "column": "CATEGORY_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TradingPartnerContactCeoName",
+        "column": "CEO_NAME",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TradingPartnerContactCertReasonCode",
+        "column": "CERT_REASON_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TradingPartnerContactCertificationLevel",
+        "column": "CERTIFICATION_LEVEL",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TradingPartnerContactCity",
+        "column": "CITY",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TradingPartnerContactComments",
+        "column": "COMMENTS",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TradingPartnerContactCountry",
+        "column": "COUNTRY",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TradingPartnerContactCounty",
+        "column": "COUNTY",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TradingPartnerContactCreatedByModule",
+        "column": "CREATED_BY_MODULE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TradingPartnerContactCurrFyPotentialRevenue",
+        "column": "CURR_FY_POTENTIAL_REVENUE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TradingPartnerContactDateOfBirth",
+        "column": "DATE_OF_BIRTH",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TradingPartnerContactDunsNumberC",
+        "column": "DUNS_NUMBER_C",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TradingPartnerContactEmailAddress",
+        "column": "EMAIL_ADDRESS",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TradingPartnerContactEmployeesTotal",
+        "column": "EMPLOYEES_TOTAL",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TradingPartnerContactFiscalYearendMonth",
+        "column": "FISCAL_YEAREND_MONTH",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TradingPartnerContactGender",
+        "column": "GENDER",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TradingPartnerContactGroupType",
+        "column": "GROUP_TYPE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TradingPartnerContactGsaIndicatorFlag",
+        "column": "GSA_INDICATOR_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TradingPartnerContactHomeCountry",
+        "column": "HOME_COUNTRY",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TradingPartnerContactHqBranchInd",
+        "column": "HQ_BRANCH_IND",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TradingPartnerContactIdenAddrLocationId",
+        "column": "IDEN_ADDR_LOCATION_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TradingPartnerContactIdenAddrPartySiteId",
+        "column": "IDEN_ADDR_PARTY_SITE_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TradingPartnerContactInternalFlag",
+        "column": "INTERNAL_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TradingPartnerContactJgzzFiscalCode",
+        "column": "JGZZ_FISCAL_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TradingPartnerContactLanguageName",
+        "column": "LANGUAGE_NAME",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TradingPartnerContactMaritalStatus",
+        "column": "MARITAL_STATUS",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TradingPartnerContactMissionStatement",
+        "column": "MISSION_STATEMENT",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TradingPartnerContactNextFyPotentialRevenue",
+        "column": "NEXT_FY_POTENTIAL_REVENUE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TradingPartnerContactOrigSystemReference",
+        "column": "ORIG_SYSTEM_REFERENCE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TradingPartnerContactPartyId",
+        "column": "PARTY_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TradingPartnerContactPartyName",
+        "column": "PARTY_NAME",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TradingPartnerContactPartyNumber",
+        "column": "PARTY_NUMBER",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TradingPartnerContactPartyType",
+        "column": "PARTY_TYPE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TradingPartnerContactPersonAcademicTitle",
+        "column": "PERSON_ACADEMIC_TITLE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TradingPartnerContactPersonFirstName",
+        "column": "PERSON_FIRST_NAME",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TradingPartnerContactPersonLastName",
+        "column": "PERSON_LAST_NAME",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TradingPartnerContactPersonLastNamePrefix",
+        "column": "PERSON_LAST_NAME_PREFIX",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TradingPartnerContactPersonMiddleName",
+        "column": "PERSON_MIDDLE_NAME",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TradingPartnerContactPersonNameSuffix",
+        "column": "PERSON_NAME_SUFFIX",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TradingPartnerContactPersonPreNameAdjunct",
+        "column": "PERSON_PRE_NAME_ADJUNCT",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TradingPartnerContactPersonPreviousLastName",
+        "column": "PERSON_PREVIOUS_LAST_NAME",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TradingPartnerContactPersonSecondLastName",
+        "column": "PERSON_SECOND_LAST_NAME",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TradingPartnerContactPersonTitle",
+        "column": "PERSON_TITLE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TradingPartnerContactPostalCode",
+        "column": "POSTAL_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TradingPartnerContactPrefFunctionalCurrency",
+        "column": "PREF_FUNCTIONAL_CURRENCY",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TradingPartnerContactPreferredContactMethod",
+        "column": "PREFERRED_CONTACT_METHOD",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TradingPartnerContactPreferredContactPersonId",
+        "column": "PREFERRED_CONTACT_PERSON_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TradingPartnerContactPreferredName",
+        "column": "PREFERRED_NAME",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TradingPartnerContactPreferredNameId",
+        "column": "PREFERRED_NAME_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TradingPartnerContactPrimaryEmailContactPtId",
+        "column": "PRIMARY_EMAIL_CONTACT_PT_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TradingPartnerContactPrimaryPhoneAreaCode",
+        "column": "PRIMARY_PHONE_AREA_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TradingPartnerContactPrimaryPhoneContactPtId",
+        "column": "PRIMARY_PHONE_CONTACT_PT_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TradingPartnerContactPrimaryPhoneCountryCode",
+        "column": "PRIMARY_PHONE_COUNTRY_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TradingPartnerContactPrimaryPhoneExtension",
+        "column": "PRIMARY_PHONE_EXTENSION",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TradingPartnerContactPrimaryPhoneLineType",
+        "column": "PRIMARY_PHONE_LINE_TYPE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TradingPartnerContactPrimaryPhoneNumber",
+        "column": "PRIMARY_PHONE_NUMBER",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TradingPartnerContactPrimaryPhonePurpose",
+        "column": "PRIMARY_PHONE_PURPOSE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TradingPartnerContactPrimaryUrlContactPtId",
+        "column": "PRIMARY_URL_CONTACT_PT_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TradingPartnerContactProvince",
+        "column": "PROVINCE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TradingPartnerContactSalutation",
+        "column": "SALUTATION",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TradingPartnerContactSicCode",
+        "column": "SIC_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TradingPartnerContactSicCodeType",
+        "column": "SIC_CODE_TYPE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TradingPartnerContactState",
+        "column": "STATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TradingPartnerContactStatus",
+        "column": "STATUS",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TradingPartnerContactThirdPartyFlag",
+        "column": "THIRD_PARTY_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TradingPartnerContactTradingPartnerIdentifier",
+        "column": "TRADING_PARTNER_IDENTIFIER",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TradingPartnerContactUrl",
+        "column": "URL",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TradingPartnerContactUserGuid",
+        "column": "USER_GUID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TradingPartnerContactValidatedFlag",
+        "column": "VALIDATED_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TradingPartnerContactYearEstablished",
+        "column": "YEAR_ESTABLISHED",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TradingPartnerCountry",
+        "column": "COUNTRY",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TradingPartnerCounty",
+        "column": "COUNTY",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TradingPartnerCreatedByModule",
+        "column": "CREATED_BY_MODULE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TradingPartnerCurrFyPotentialRevenue",
+        "column": "CURR_FY_POTENTIAL_REVENUE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TradingPartnerDateOfBirth",
+        "column": "DATE_OF_BIRTH",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TradingPartnerDunsNumberC",
+        "column": "DUNS_NUMBER_C",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TradingPartnerEmailAddress",
+        "column": "EMAIL_ADDRESS",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TradingPartnerEmployeesTotal",
+        "column": "EMPLOYEES_TOTAL",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TradingPartnerFiscalYearendMonth",
+        "column": "FISCAL_YEAREND_MONTH",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TradingPartnerGender",
+        "column": "GENDER",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TradingPartnerGroupType",
+        "column": "GROUP_TYPE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TradingPartnerGsaIndicatorFlag",
+        "column": "GSA_INDICATOR_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TradingPartnerHomeCountry",
+        "column": "HOME_COUNTRY",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TradingPartnerHqBranchInd",
+        "column": "HQ_BRANCH_IND",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TradingPartnerIdenAddrLocationId",
+        "column": "IDEN_ADDR_LOCATION_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TradingPartnerIdenAddrPartySiteId",
+        "column": "IDEN_ADDR_PARTY_SITE_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TradingPartnerInternalFlag",
+        "column": "INTERNAL_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TradingPartnerJgzzFiscalCode",
+        "column": "JGZZ_FISCAL_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TradingPartnerLanguageName",
+        "column": "LANGUAGE_NAME",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TradingPartnerMaritalStatus",
+        "column": "MARITAL_STATUS",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TradingPartnerMissionStatement",
+        "column": "MISSION_STATEMENT",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TradingPartnerNextFyPotentialRevenue",
+        "column": "NEXT_FY_POTENTIAL_REVENUE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TradingPartnerOrigSystemReference",
+        "column": "ORIG_SYSTEM_REFERENCE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TradingPartnerPartyId",
+        "column": "PARTY_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TradingPartnerPartyName",
+        "column": "PARTY_NAME",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TradingPartnerPartyNumber",
+        "column": "PARTY_NUMBER",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TradingPartnerPartyType",
+        "column": "PARTY_TYPE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TradingPartnerPersonAcademicTitle",
+        "column": "PERSON_ACADEMIC_TITLE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TradingPartnerPersonFirstName",
+        "column": "PERSON_FIRST_NAME",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TradingPartnerPersonLastName",
+        "column": "PERSON_LAST_NAME",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TradingPartnerPersonLastNamePrefix",
+        "column": "PERSON_LAST_NAME_PREFIX",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TradingPartnerPersonMiddleName",
+        "column": "PERSON_MIDDLE_NAME",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TradingPartnerPersonNameSuffix",
+        "column": "PERSON_NAME_SUFFIX",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TradingPartnerPersonPreNameAdjunct",
+        "column": "PERSON_PRE_NAME_ADJUNCT",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TradingPartnerPersonPreviousLastName",
+        "column": "PERSON_PREVIOUS_LAST_NAME",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TradingPartnerPersonSecondLastName",
+        "column": "PERSON_SECOND_LAST_NAME",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TradingPartnerPersonTitle",
+        "column": "PERSON_TITLE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TradingPartnerPostalCode",
+        "column": "POSTAL_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TradingPartnerPrefFunctionalCurrency",
+        "column": "PREF_FUNCTIONAL_CURRENCY",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TradingPartnerPreferredContactMethod",
+        "column": "PREFERRED_CONTACT_METHOD",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TradingPartnerPreferredContactPersonId",
+        "column": "PREFERRED_CONTACT_PERSON_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TradingPartnerPreferredName",
+        "column": "PREFERRED_NAME",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TradingPartnerPreferredNameId",
+        "column": "PREFERRED_NAME_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TradingPartnerPrimaryEmailContactPtId",
+        "column": "PRIMARY_EMAIL_CONTACT_PT_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TradingPartnerPrimaryPhoneAreaCode",
+        "column": "PRIMARY_PHONE_AREA_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TradingPartnerPrimaryPhoneContactPtId",
+        "column": "PRIMARY_PHONE_CONTACT_PT_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TradingPartnerPrimaryPhoneCountryCode",
+        "column": "PRIMARY_PHONE_COUNTRY_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TradingPartnerPrimaryPhoneExtension",
+        "column": "PRIMARY_PHONE_EXTENSION",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TradingPartnerPrimaryPhoneLineType",
+        "column": "PRIMARY_PHONE_LINE_TYPE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TradingPartnerPrimaryPhoneNumber",
+        "column": "PRIMARY_PHONE_NUMBER",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TradingPartnerPrimaryPhonePurpose",
+        "column": "PRIMARY_PHONE_PURPOSE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TradingPartnerPrimaryUrlContactPtId",
+        "column": "PRIMARY_URL_CONTACT_PT_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TradingPartnerProvince",
+        "column": "PROVINCE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TradingPartnerSalutation",
+        "column": "SALUTATION",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TradingPartnerSicCode",
+        "column": "SIC_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TradingPartnerSicCodeType",
+        "column": "SIC_CODE_TYPE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TradingPartnerState",
+        "column": "STATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TradingPartnerStatus",
+        "column": "STATUS",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TradingPartnerThirdPartyFlag",
+        "column": "THIRD_PARTY_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TradingPartnerTradingPartnerIdentifier",
+        "column": "TRADING_PARTNER_IDENTIFIER",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TradingPartnerUrl",
+        "column": "URL",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TradingPartnerUserGuid",
+        "column": "USER_GUID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TradingPartnerValidatedFlag",
+        "column": "VALIDATED_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TradingPartnerYearEstablished",
+        "column": "YEAR_ESTABLISHED",
+        "bicc": true,
+        "pk": false
+      }
+    ]
+  }
+}

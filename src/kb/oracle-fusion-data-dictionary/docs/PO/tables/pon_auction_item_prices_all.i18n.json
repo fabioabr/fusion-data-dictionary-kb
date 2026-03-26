@@ -1,0 +1,565 @@
+{
+  "source": "pon_auction_item_prices_all.md",
+  "source_hash": "95286e19a380ae9f4832f5b07966318e",
+  "translated_at": "2026-03-26",
+  "items": [
+    {
+      "id": 1,
+      "br": "Visão Geral",
+      "en": "Overview",
+      "es": "Vision General"
+    },
+    {
+      "id": 2,
+      "br": "Armazena as linhas de itens e preços de cada negociação do módulo Oracle Sourcing. Cada registro representa um item individual dentro da negociação, contendo descrição, quantidade, unidade de medida, preço-alvo (target price), categoria de compra, e informações de award. É a tabela de detalhe principal que complementa o cabeçalho (PON_AUCTION_HEADERS_ALL).",
+      "en": "Stores the lines of items and prices for each transaction in the Oracle Sourcing module. Each record represents an individual item within the transaction, containing description, quantity, unit of measure, target price, purchase category, and award information. It is the main detail table that complements the header (PON_AUCTION_HEADERS_ALL).",
+      "es": "Almacena las líneas de artículos y precios de cada negociación del módulo Oracle Sourcing. Cada registro representa un artículo individual dentro de la negociación, conteniendo descripción, cantidad, unidad de medida, precio objetivo (target price), categoría de compra, e información de adjudicación. Es la tabla de detalle principal que complementa el encabezado (PON_AUCTION_HEADERS_ALL)."
+    },
+    {
+      "id": 3,
+      "br": "Sufixo _ALL",
+      "en": "_ALL suffix",
+      "es": "Sufijo _ALL"
+    },
+    {
+      "id": 4,
+      "br": "O sufixo _ALL indica que a tabela armazena dados de todas as business units (multi-org). O filtro por ORG_ID na tabela-pai é necessário para consultas por organização específica.",
+      "en": "The _ALL suffix indicates that the table stores data for all business units (multi-org). Filtering by ORG_ID in the parent table is necessary for queries by specific organization.",
+      "es": "El sufijo _ALL indica que la tabla almacena datos de todas las unidades de negocio (multi-org). El filtro por ORG_ID en la tabla padre es necesario para consultas por organización específica."
+    },
+    {
+      "id": 5,
+      "br": "Propósito de Negócio",
+      "en": "Business Purpose",
+      "es": "Proposito de Negocio"
+    },
+    {
+      "id": 6,
+      "br": "Esta tabela é utilizada nos seguintes processos:",
+      "en": "This table is used in the following processes:",
+      "es": "Esta tabla se utiliza en los siguientes procesos:"
+    },
+    {
+      "id": 7,
+      "br": "Itens que compõem a negociação (o que se deseja comprar/contratar).",
+      "en": "Items that make up the transaction (what to buy/contract).",
+      "es": "Artículos que componen la negociación (lo que se desea comprar/contratar)."
+    },
+    {
+      "id": 8,
+      "br": "Preço-alvo, preço atual, preço de award e savings calculados.",
+      "en": "Target price, current price, award price, and savings calculated.",
+      "es": "Precio objetivo, precio actual, precio de adjudicación y ahorros calculados."
+    },
+    {
+      "id": 9,
+      "br": "Registro de qual fornecedor foi awardado para cada linha e em qual quantidade/preço.",
+      "en": "Record of which supplier was awarded for each line and in what quantity/price.",
+      "es": "Registro de qué proveedor fue adjudicado para cada línea y en qué cantidad/precio."
+    },
+    {
+      "id": 10,
+      "br": "Comparação entre preço-alvo e preço final por item.",
+      "en": "Comparison between target price and final price per item.",
+      "es": "Comparación entre precio objetivo y precio final por artículo."
+    },
+    {
+      "id": 11,
+      "br": "Vínculo com linhas de requisição de compra originadoras.",
+      "en": "Link to originating purchase requisition lines.",
+      "es": "Vinculación con líneas de solicitud de compra originadoras."
+    },
+    {
+      "id": 12,
+      "br": "Base para análise de gastos por categoria de compra.",
+      "en": "Basis for analysis of expenses by purchase category.",
+      "es": "Base para el análisis de gastos por categoría de compra."
+    },
+    {
+      "id": 13,
+      "br": "Colunas Principais",
+      "en": "Key Columns",
+      "es": "Columnas Principales"
+    },
+    {
+      "id": 14,
+      "br": "Confiança",
+      "en": "Confidence",
+      "es": "Confianza"
+    },
+    {
+      "id": 15,
+      "br": "Escala de 0% a 100% — grau de certeza da descrição gerada por IA com base na documentação oficial Oracle (OEDMF/BICC Release 13/25A).",
+      "en": "Scale from 0% to 100% — degree of certainty of the AI-generated description based on official Oracle documentation (OEDMF/BICC Release 13/25A).",
+      "es": "Escala de 0% a 100% — grado de certeza de la descripcion generada por IA basada en la documentacion oficial de Oracle (OEDMF/BICC Release 13/25A)."
+    },
+    {
+      "id": 16,
+      "br": "- 🟢 81–100% — Coluna presente na documentação oficial Oracle; nome, tipo e descrição confirmados.",
+      "en": "- 🟢 81–100% — Column present in official Oracle documentation; name, type, and description confirmed.",
+      "es": "- 🟢 81–100% — Columna presente en la documentacion oficial de Oracle; nombre, tipo y descripcion confirmados."
+    },
+    {
+      "id": 17,
+      "br": "- 🟡 51–80% — Coluna inferida por naming convention ou padrão Oracle; tipo exato pode variar.",
+      "en": "- 🟡 51–80% — Column inferred by naming convention or Oracle standard; exact type may vary.",
+      "es": "- 🟡 51–80% — Columna inferida por convencion de nombres o estandar Oracle; el tipo exacto puede variar."
+    },
+    {
+      "id": 18,
+      "br": "- 🔴 0–50% — Existência ou tipo incertos; pode não existir no release atual; validar no ambiente.",
+      "en": "- 🔴 0–50% — Uncertain existence or type; may not exist in current release; validate in environment.",
+      "es": "- 🔴 0–50% — Existencia o tipo inciertos; puede no existir en el release actual; validar en el ambiente."
+    },
+    {
+      "id": 19,
+      "br": "Coluna",
+      "en": "Column",
+      "es": "Columna"
+    },
+    {
+      "id": 20,
+      "br": "Tipo",
+      "en": "Type",
+      "es": "Tipo"
+    },
+    {
+      "id": 21,
+      "br": "Nulo?",
+      "en": "Nullable?",
+      "es": "Nulo?"
+    },
+    {
+      "id": 22,
+      "br": "Categoria",
+      "en": "Category",
+      "es": "Categoria"
+    },
+    {
+      "id": 23,
+      "br": "Descrição",
+      "en": "Description",
+      "es": "Descripcion"
+    },
+    {
+      "id": 24,
+      "br": "PK/FK",
+      "en": "PK/FK",
+      "es": "PK/FK"
+    },
+    {
+      "id": 25,
+      "br": "Negociação associada",
+      "en": "Associated transaction",
+      "es": "Negociación asociada"
+    },
+    {
+      "id": 26,
+      "br": "Número da linha dentro da negociação",
+      "en": "Line number within the transaction",
+      "es": "Número de línea dentro de la negociación"
+    },
+    {
+      "id": 27,
+      "br": "Identificação",
+      "en": "Identification",
+      "es": "Identificacion"
+    },
+    {
+      "id": 28,
+      "br": "Descrição do item/serviço",
+      "en": "Description of the item/service",
+      "es": "Descripción del artículo/servicio"
+    },
+    {
+      "id": 29,
+      "br": "Item do catálogo (se aplicável)",
+      "en": "Catalog item (if applicable)",
+      "es": "Artículo del catálogo (si aplica)"
+    },
+    {
+      "id": 30,
+      "br": "Número do item no catálogo",
+      "en": "Catalog item number",
+      "es": "Número del artículo en el catálogo"
+    },
+    {
+      "id": 31,
+      "br": "Categoria de compra do item",
+      "en": "Purchase category of the item",
+      "es": "Categoría de compra del artículo"
+    },
+    {
+      "id": 32,
+      "br": "Nome da categoria de compra (desnormalizado)",
+      "en": "Name of the purchase category (denormalized)",
+      "es": "Nombre de la categoría de compra (desnormalizado)"
+    },
+    {
+      "id": 33,
+      "br": "Quantidade",
+      "en": "Quantity",
+      "es": "Cantidad"
+    },
+    {
+      "id": 34,
+      "br": "Quantidade solicitada",
+      "en": "Requested quantity",
+      "es": "Cantidad solicitada"
+    },
+    {
+      "id": 35,
+      "br": "Unidade",
+      "en": "Unit",
+      "es": "Unidad"
+    },
+    {
+      "id": 36,
+      "br": "Unidade de medida",
+      "en": "Unit of measure",
+      "es": "Unidad de medida"
+    },
+    {
+      "id": 37,
+      "br": "Financeiro",
+      "en": "Financial",
+      "es": "Financiero"
+    },
+    {
+      "id": 38,
+      "br": "Preço unitário atual (referência/benchmark)",
+      "en": "Current unit price (reference/benchmark)",
+      "es": "Precio unitario actual (referencia/benchmark)"
+    },
+    {
+      "id": 39,
+      "br": "Preço-alvo desejado pelo comprador",
+      "en": "Target price desired by the buyer",
+      "es": "Precio objetivo deseado por el comprador"
+    },
+    {
+      "id": 40,
+      "br": "Preço inicial de lance (em auctions)",
+      "en": "Initial bid price (in auctions)",
+      "es": "Precio inicial de la puja (en auctions)"
+    },
+    {
+      "id": 41,
+      "br": "Preço de award (final negociado)",
+      "en": "Award price (final negotiated)",
+      "es": "Precio de adjudicación (final negociado)"
+    },
+    {
+      "id": 42,
+      "br": "Quantidade awarded",
+      "en": "Awarded quantity",
+      "es": "Cantidad adjudicada"
+    },
+    {
+      "id": 43,
+      "br": "Status",
+      "en": "Status",
+      "es": "Estado"
+    },
+    {
+      "id": 44,
+      "br": "Status do award do item: NO, AWARDED, REJECTED",
+      "en": "Status of the item award: NO, AWARDED, REJECTED",
+      "es": "Estado de la adjudicación del artículo: NO, AWARDED, REJECTED"
+    },
+    {
+      "id": 45,
+      "br": "Data",
+      "en": "Date",
+      "es": "Fecha"
+    },
+    {
+      "id": 46,
+      "br": "Data do award para este item",
+      "en": "Date of award for this item",
+      "es": "Fecha de la adjudicación para este artículo"
+    },
+    {
+      "id": 47,
+      "br": "Local de entrega",
+      "en": "Delivery location",
+      "es": "Lugar de entrega"
+    },
+    {
+      "id": 48,
+      "br": "Data de necessidade do item",
+      "en": "Item requirement date",
+      "es": "Fecha de necesidad del artículo"
+    },
+    {
+      "id": 49,
+      "br": "Seção da negociação",
+      "en": "Negotiation section",
+      "es": "Sección de negociación"
+    },
+    {
+      "id": 50,
+      "br": "Tipo da linha (bens, serviços, etc.)",
+      "en": "Line type (goods, services, etc.)",
+      "es": "Tipo de línea (bienes, servicios, etc.)"
+    },
+    {
+      "id": 51,
+      "br": "Requisição de compra originadora",
+      "en": "Original purchase requisition",
+      "es": "Solicitud de compra originadora"
+    },
+    {
+      "id": 52,
+      "br": "Linha da requisição originadora",
+      "en": "Original requisition line",
+      "es": "Línea de la solicitud originadora"
+    },
+    {
+      "id": 53,
+      "br": "Business unit",
+      "en": "Business unit",
+      "es": "Business unit"
+    },
+    {
+      "id": 54,
+      "br": "Auditoria",
+      "en": "Audit",
+      "es": "Auditoria"
+    },
+    {
+      "id": 55,
+      "br": "Usuário que criou o registro",
+      "en": "User who created the record",
+      "es": "Usuario que creo el registro"
+    },
+    {
+      "id": 56,
+      "br": "Data/hora de criação",
+      "en": "Creation date/time",
+      "es": "Fecha/hora de creacion"
+    },
+    {
+      "id": 57,
+      "br": "Último usuário que alterou",
+      "en": "Last user who modified",
+      "es": "Ultimo usuario que modifico"
+    },
+    {
+      "id": 58,
+      "br": "Data/hora da última alteração",
+      "en": "Last modification date/time",
+      "es": "Fecha/hora de la ultima modificacion"
+    },
+    {
+      "id": 59,
+      "br": "Login da última sessão",
+      "en": "Last session login",
+      "es": "Login de la ultima sesion"
+    },
+    {
+      "id": 60,
+      "br": "ATTRIBUTE1–15",
+      "en": "ATTRIBUTE1–15",
+      "es": "ATTRIBUTE1–15"
+    },
+    {
+      "id": 61,
+      "br": "Atributos descritivos customizáveis por implementação",
+      "en": "Customizable descriptive attributes by implementation",
+      "es": "Atributos descriptivos personalizables por implementación"
+    },
+    {
+      "id": 62,
+      "br": "Contexto do Descriptive Flexfield",
+      "en": "Context of Descriptive Flexfield",
+      "es": "Contexto del Descriptive Flexfield"
+    },
+    {
+      "id": 63,
+      "br": "Relacionamentos",
+      "en": "Relationships",
+      "es": "Relaciones"
+    },
+    {
+      "id": 64,
+      "br": "Tabelas-pai (FK de entrada)",
+      "en": "Parent Tables (inbound FK)",
+      "es": "Tablas padre (FK de entrada)"
+    },
+    {
+      "id": 65,
+      "br": "cabeçalho da negociação",
+      "en": "Negotiation header",
+      "es": "Encabezado de la negociación"
+    },
+    {
+      "id": 66,
+      "br": "seção",
+      "en": "section",
+      "es": "seccion"
+    },
+    {
+      "id": 67,
+      "br": "item do catálogo",
+      "en": "Catalog item",
+      "es": "Artículo del catálogo"
+    },
+    {
+      "id": 68,
+      "br": "categoria de compra",
+      "en": "Purchase category",
+      "es": "Categoría de compra"
+    },
+    {
+      "id": 69,
+      "br": "business unit",
+      "en": "business unit",
+      "es": "unidad de negocio"
+    },
+    {
+      "id": 70,
+      "br": "requisição",
+      "en": "requisition",
+      "es": "requisicion"
+    },
+    {
+      "id": 71,
+      "br": "linha de requisição",
+      "en": "requisition line",
+      "es": "linea de requisicion"
+    },
+    {
+      "id": 72,
+      "br": "local de entrega",
+      "en": "Delivery location",
+      "es": "Lugar de entrega"
+    },
+    {
+      "id": 73,
+      "br": "Tabelas-filha (FK de saída)",
+      "en": "Child Tables (outbound FK)",
+      "es": "Tablas hija (FK de salida)"
+    },
+    {
+      "id": 74,
+      "br": "pon_auction_attributes — via AUCTION_HEADER_ID + LINE_NUMBER (atributos do item)",
+      "en": "pon_auction_attributes — via AUCTION_HEADER_ID + LINE_NUMBER (item attributes)",
+      "es": "pon_auction_attributes — a través de AUCTION_HEADER_ID + LINE_NUMBER (atributos del artículo)"
+    },
+    {
+      "id": 75,
+      "br": "Tabelas de bid/response (ex: PON_BID_ITEM_PRICES) — via AUCTION_HEADER_ID + LINE_NUMBER (respostas de fornecedores)",
+      "en": "Bid/response tables (e.g., PON_BID_ITEM_PRICES) — via AUCTION_HEADER_ID + LINE_NUMBER (supplier responses)",
+      "es": "Tablas de oferta/respuesta (ej: PON_BID_ITEM_PRICES) — a través de AUCTION_HEADER_ID + LINE_NUMBER (respuestas de proveedores)"
+    },
+    {
+      "id": 76,
+      "br": "Uso Típico",
+      "en": "Typical Usage",
+      "es": "Uso Tipico"
+    },
+    {
+      "id": 77,
+      "br": "Itens de uma negociação com preços",
+      "en": "Items in a negotiation with prices",
+      "es": "Artículos de una negociación con precios"
+    },
+    {
+      "id": 78,
+      "br": "Savings por negociação",
+      "en": "Savings per negotiation",
+      "es": "Ahorros por negociación"
+    },
+    {
+      "id": 79,
+      "br": "Filtros comuns",
+      "en": "Common Filters",
+      "es": "Filtros comunes"
+    },
+    {
+      "id": 80,
+      "br": "Itens awarded a um fornecedor",
+      "en": "Items awarded to a supplier",
+      "es": "Artículos adjudicados a un proveedor"
+    },
+    {
+      "id": 81,
+      "br": "Itens sem award",
+      "en": "Unawarded items",
+      "es": "Artículos sin adjudicación"
+    },
+    {
+      "id": 82,
+      "br": "Filtro por categoria de compra",
+      "en": "Filter by purchase category",
+      "es": "Filtro por categoría de compra"
+    },
+    {
+      "id": 83,
+      "br": "Itens com necessidade nos próximos 30 dias",
+      "en": "Items with requirements in the next 30 days",
+      "es": "Artículos con necesidad en los próximos 30 días"
+    },
+    {
+      "id": 84,
+      "br": "Observações",
+      "en": "Notes",
+      "es": "Observaciones"
+    },
+    {
+      "id": 85,
+      "br": "A chave primária é composta por AUCTION_HEADER_ID + LINE_NUMBER.",
+      "en": "The primary key is composed of AUCTION_HEADER_ID + LINE_NUMBER.",
+      "es": "La clave primaria está compuesta por AUCTION_HEADER_ID + LINE_NUMBER."
+    },
+    {
+      "id": 86,
+      "br": "O campo CURRENT_PRICE representa o preço de referência/benchmark (preço contratual anterior ou preço de mercado).",
+      "en": "The CURRENT_PRICE field represents the reference/benchmark price (previous contract price or market price).",
+      "es": "El campo CURRENT_PRICE representa el precio de referencia/benchmark (precio contractual anterior o precio de mercado)."
+    },
+    {
+      "id": 87,
+      "br": "O TARGET_PRICE pode ser ocultado dos fornecedores dependendo da configuração da negociação no cabeçalho.",
+      "en": "The TARGET_PRICE can be hidden from suppliers depending on the negotiation configuration in the header.",
+      "es": "El TARGET_PRICE puede ocultarse a los proveedores dependiendo de la configuración de la negociación en el encabezado."
+    },
+    {
+      "id": 88,
+      "br": "O AWARD_PRICE é preenchido somente após o processo de award; antes disso permanece nulo.",
+      "en": "The AWARD_PRICE is filled only after the award process; before that, it remains null.",
+      "es": "El AWARD_PRICE se completa solo después del proceso de adjudicación; antes, permanece en nulo."
+    },
+    {
+      "id": 89,
+      "br": "Linhas podem estar vinculadas a requisições de compra via REQUISITION_HEADER_ID + REQUISITION_LINE_ID.",
+      "en": "Lines can be linked to purchase requests via REQUISITION_HEADER_ID + REQUISITION_LINE_ID.",
+      "es": "Las líneas pueden estar vinculadas a solicitudes de compra a través de ID_ENCABEZADO_DE_SOLICITUD + ID_LÍNEA_DE_SOLICITUD."
+    },
+    {
+      "id": 90,
+      "br": "Em negociações do tipo lot, múltiplos itens podem ser agrupados via SECTION_ID.",
+      "en": "In lot-type negotiations, multiple items can be grouped via SECTION_ID.",
+      "es": "En negociaciones de tipo lote, múltiples artículos pueden agruparse a través de ID_SECCIÓN."
+    },
+    {
+      "id": 91,
+      "br": "Referências",
+      "en": "References",
+      "es": "Referencias"
+    },
+    {
+      "id": 92,
+      "br": "[Oracle Docs — PON_AUCTION_ITEM_PRICES_ALL](https://docs.oracle.com/en/cloud/saas/procurement/25a/oedmf/ponauctionitempricesall.html)",
+      "en": "[Oracle Docs — PON_AUCTION_ITEM_PRICES_ALL](https://docs.oracle.com/en/cloud/saas/procurement/25a/oedmf/ponauctionitempricesall.html)",
+      "es": "[Documentos de Oracle — PRECIOS_DE_ARTÍCULOS_DE_AUCCIÓN_PON](https://docs.oracle.com/en/cloud/saas/procurement/25a/oedmf/ponauctionitempricesall.html)"
+    },
+    {
+      "id": 93,
+      "br": "po-module-data-dictionary — Dossiê do módulo PO/Procurement",
+      "en": "po-module-data-dictionary — PO/Procurement module dossier",
+      "es": "po-module-data-dictionary — Dossier del modulo PO/Procurement"
+    }
+  ]
+}

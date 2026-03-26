@@ -1,0 +1,4545 @@
+{
+  "meta": {
+    "pvo_name": "CustomerSiteProfile",
+    "full_path": "FscmTopModelAM.FinArTopPublicModelAM.CustomerSiteProfile",
+    "module_path": "FscmTopModelAM.FinArTopPublicModelAM",
+    "module_code": "AR",
+    "type": "pvo",
+    "description": "Extrai os perfis de cliente no nível de site (filial/endereço), permitindo configurações diferenciadas de crédito, cobrança e faturamento por localidade. Suporta operações onde cada filial do cliente possui condições comerciais distintas."
+  },
+  "stats": {
+    "total_attributes": 320,
+    "tables_count": 14,
+    "bicc_enabled": 110,
+    "bicc_pct": 34,
+    "pk_count": 1
+  },
+  "tables": [
+    "AR_APP_EXCEPTION_RULES",
+    "AR_AUTOCASH_HIERARCHIES",
+    "AR_AUTOMATCH_RULES",
+    "AR_CHARGE_SCHEDULES",
+    "AR_COLLECTORS",
+    "AR_STANDARD_TEXT_TL",
+    "AR_STATEMENT_CYCLES",
+    "GL_DAILY_CONVERSION_TYPES",
+    "HZ_CUSTOMER_PROFILES_F",
+    "HZ_CUST_PROFILE_AMTS_F",
+    "HZ_CUST_PROFILE_CLASSES",
+    "PER_PERSON_NAMES_F_V",
+    "RA_GROUPING_RULES",
+    "RA_TERMS_TL"
+  ],
+  "attributes": [
+    {
+      "name": "AutoCshHierarchyAutocashHierarchyId",
+      "table": "AR_AUTOCASH_HIERARCHIES",
+      "column": "AUTOCASH_HIERARCHY_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AutoCshHierarchyForAdrAutocashHierarchyId",
+      "table": "AR_AUTOCASH_HIERARCHIES",
+      "column": "AUTOCASH_HIERARCHY_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AutoCshHierarchyForAdrHierarchyName",
+      "table": "AR_AUTOCASH_HIERARCHIES",
+      "column": "HIERARCHY_NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AutoCshHierarchyHierarchyName",
+      "table": "AR_AUTOCASH_HIERARCHIES",
+      "column": "HIERARCHY_NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AutomatchRuleActiveFlag",
+      "table": "AR_AUTOMATCH_RULES",
+      "column": "ACTIVE_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AutomatchRuleAmountWeight",
+      "table": "AR_AUTOMATCH_RULES",
+      "column": "AMOUNT_WEIGHT",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AutomatchRuleAutomatchRuleId",
+      "table": "AR_AUTOMATCH_RULES",
+      "column": "AUTOMATCH_RULE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AutomatchRuleCreatedBy",
+      "table": "AR_AUTOMATCH_RULES",
+      "column": "CREATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AutomatchRuleCreationDate",
+      "table": "AR_AUTOMATCH_RULES",
+      "column": "CREATION_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AutomatchRuleCustomerThreshold",
+      "table": "AR_AUTOMATCH_RULES",
+      "column": "CUSTOMER_THRESHOLD",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AutomatchRuleCustomerWeight",
+      "table": "AR_AUTOMATCH_RULES",
+      "column": "CUSTOMER_WEIGHT",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AutomatchRuleDescription",
+      "table": "AR_AUTOMATCH_RULES",
+      "column": "DESCRIPTION",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AutomatchRuleEndDate",
+      "table": "AR_AUTOMATCH_RULES",
+      "column": "END_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AutomatchRuleLastUpdateDate",
+      "table": "AR_AUTOMATCH_RULES",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AutomatchRuleLastUpdateLogin",
+      "table": "AR_AUTOMATCH_RULES",
+      "column": "LAST_UPDATE_LOGIN",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AutomatchRuleLastUpdatedBy",
+      "table": "AR_AUTOMATCH_RULES",
+      "column": "LAST_UPDATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AutomatchRuleMinMatchThreshold",
+      "table": "AR_AUTOMATCH_RULES",
+      "column": "MIN_MATCH_THRESHOLD",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AutomatchRuleName",
+      "table": "AR_AUTOMATCH_RULES",
+      "column": "NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AutomatchRuleNetFreightWeight",
+      "table": "AR_AUTOMATCH_RULES",
+      "column": "NET_FREIGHT_WEIGHT",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AutomatchRuleNetTaxFreightWeight",
+      "table": "AR_AUTOMATCH_RULES",
+      "column": "NET_TAX_FREIGHT_WEIGHT",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AutomatchRuleNetTaxWeight",
+      "table": "AR_AUTOMATCH_RULES",
+      "column": "NET_TAX_WEIGHT",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AutomatchRuleNetUndiscWeight",
+      "table": "AR_AUTOMATCH_RULES",
+      "column": "NET_UNDISC_WEIGHT",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AutomatchRuleNumberOfDaysClosed",
+      "table": "AR_AUTOMATCH_RULES",
+      "column": "NUMBER_OF_DAYS_CLOSED",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AutomatchRuleObjectVersionNumber",
+      "table": "AR_AUTOMATCH_RULES",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AutomatchRuleRemittanceRegexp",
+      "table": "AR_AUTOMATCH_RULES",
+      "column": "REMITTANCE_REGEXP",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AutomatchRuleSetId",
+      "table": "AR_AUTOMATCH_RULES",
+      "column": "SET_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AutomatchRuleStartDate",
+      "table": "AR_AUTOMATCH_RULES",
+      "column": "START_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AutomatchRuleTransactionRegexp",
+      "table": "AR_AUTOMATCH_RULES",
+      "column": "TRANSACTION_REGEXP",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AutomatchRuleTransactionThreshold",
+      "table": "AR_AUTOMATCH_RULES",
+      "column": "TRANSACTION_THRESHOLD",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AutomatchRuleTransactionWeight",
+      "table": "AR_AUTOMATCH_RULES",
+      "column": "TRANSACTION_WEIGHT",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ChargeSchedulesScheduleDescription",
+      "table": "AR_CHARGE_SCHEDULES",
+      "column": "SCHEDULE_DESCRIPTION",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ChargeSchedulesScheduleId",
+      "table": "AR_CHARGE_SCHEDULES",
+      "column": "SCHEDULE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ChargeSchedulesScheduleName",
+      "table": "AR_CHARGE_SCHEDULES",
+      "column": "SCHEDULE_NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CollectorsAlias",
+      "table": "AR_COLLECTORS",
+      "column": "ALIAS",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CollectorsAttributeCategory",
+      "table": "AR_COLLECTORS",
+      "column": "ATTRIBUTE_CATEGORY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CollectorsCollectorId",
+      "table": "AR_COLLECTORS",
+      "column": "COLLECTOR_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CollectorsCreatedBy",
+      "table": "AR_COLLECTORS",
+      "column": "CREATED_BY",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CollectorsCreationDate",
+      "table": "AR_COLLECTORS",
+      "column": "CREATION_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CollectorsDescription",
+      "table": "AR_COLLECTORS",
+      "column": "DESCRIPTION",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CollectorsEmployeeId",
+      "table": "AR_COLLECTORS",
+      "column": "EMPLOYEE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CollectorsInactiveDate",
+      "table": "AR_COLLECTORS",
+      "column": "INACTIVE_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CollectorsLastUpdateDate",
+      "table": "AR_COLLECTORS",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CollectorsLastUpdateLogin",
+      "table": "AR_COLLECTORS",
+      "column": "LAST_UPDATE_LOGIN",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CollectorsLastUpdatedBy",
+      "table": "AR_COLLECTORS",
+      "column": "LAST_UPDATED_BY",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CollectorsName",
+      "table": "AR_COLLECTORS",
+      "column": "NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CollectorsObjectVersionNumber",
+      "table": "AR_COLLECTORS",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CollectorsResourceId",
+      "table": "AR_COLLECTORS",
+      "column": "RESOURCE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CollectorsResourceType",
+      "table": "AR_COLLECTORS",
+      "column": "RESOURCE_TYPE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CollectorsSetId",
+      "table": "AR_COLLECTORS",
+      "column": "SET_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CollectorsStatus",
+      "table": "AR_COLLECTORS",
+      "column": "STATUS",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CollectorsTelephoneNumber",
+      "table": "AR_COLLECTORS",
+      "column": "TELEPHONE_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CreditLimit",
+      "table": "HZ_CUSTOMER_PROFILES_F",
+      "column": "CREDIT_LIMIT",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustAccountProfileId",
+      "table": "HZ_CUSTOMER_PROFILES_F",
+      "column": "CUST_ACCOUNT_PROFILE_ID",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    },
+    {
+      "name": "CustomerFinancialProfileApplicationId",
+      "table": "HZ_CUST_PROFILE_AMTS_F",
+      "column": "APPLICATION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerFinancialProfileAutoRecMinReceiptAmount",
+      "table": "HZ_CUST_PROFILE_AMTS_F",
+      "column": "AUTO_REC_MIN_RECEIPT_AMOUNT",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerFinancialProfileCreatedBy",
+      "table": "HZ_CUST_PROFILE_AMTS_F",
+      "column": "CREATED_BY",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerFinancialProfileCreatedByModule",
+      "table": "HZ_CUST_PROFILE_AMTS_F",
+      "column": "CREATED_BY_MODULE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerFinancialProfileCreationDate",
+      "table": "HZ_CUST_PROFILE_AMTS_F",
+      "column": "CREATION_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerFinancialProfileCurrencyCode",
+      "table": "HZ_CUST_PROFILE_AMTS_F",
+      "column": "CURRENCY_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerFinancialProfileCustAccountId",
+      "table": "HZ_CUST_PROFILE_AMTS_F",
+      "column": "CUST_ACCOUNT_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerFinancialProfileCustAccountProfileId",
+      "table": "HZ_CUST_PROFILE_AMTS_F",
+      "column": "CUST_ACCOUNT_PROFILE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerFinancialProfileCustAcctProfileAmtId",
+      "table": "HZ_CUST_PROFILE_AMTS_F",
+      "column": "CUST_ACCT_PROFILE_AMT_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerFinancialProfileEffectiveEndDate",
+      "table": "HZ_CUST_PROFILE_AMTS_F",
+      "column": "EFFECTIVE_END_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerFinancialProfileEffectiveStartDate",
+      "table": "HZ_CUST_PROFILE_AMTS_F",
+      "column": "EFFECTIVE_START_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerFinancialProfileExchangeRateType",
+      "table": "HZ_CUST_PROFILE_AMTS_F",
+      "column": "EXCHANGE_RATE_TYPE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerFinancialProfileExpirationDate",
+      "table": "HZ_CUST_PROFILE_AMTS_F",
+      "column": "EXPIRATION_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerFinancialProfileGlobalAttributeCategory",
+      "table": "HZ_CUST_PROFILE_AMTS_F",
+      "column": "GLOBAL_ATTRIBUTE_CATEGORY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerFinancialProfileInterestFixedAmount",
+      "table": "HZ_CUST_PROFILE_AMTS_F",
+      "column": "INTEREST_FIXED_AMOUNT",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerFinancialProfileInterestRate",
+      "table": "HZ_CUST_PROFILE_AMTS_F",
+      "column": "INTEREST_RATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerFinancialProfileInterestScheduleId",
+      "table": "HZ_CUST_PROFILE_AMTS_F",
+      "column": "INTEREST_SCHEDULE_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerFinancialProfileInterestType",
+      "table": "HZ_CUST_PROFILE_AMTS_F",
+      "column": "INTEREST_TYPE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerFinancialProfileJgzzAttributeCategory",
+      "table": "HZ_CUST_PROFILE_AMTS_F",
+      "column": "JGZZ_ATTRIBUTE_CATEGORY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerFinancialProfileLastUpdateDate",
+      "table": "HZ_CUST_PROFILE_AMTS_F",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerFinancialProfileLastUpdateLogin",
+      "table": "HZ_CUST_PROFILE_AMTS_F",
+      "column": "LAST_UPDATE_LOGIN",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerFinancialProfileLastUpdatedBy",
+      "table": "HZ_CUST_PROFILE_AMTS_F",
+      "column": "LAST_UPDATED_BY",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerFinancialProfileMaxInterestCharge",
+      "table": "HZ_CUST_PROFILE_AMTS_F",
+      "column": "MAX_INTEREST_CHARGE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerFinancialProfileMinDunningAmount",
+      "table": "HZ_CUST_PROFILE_AMTS_F",
+      "column": "MIN_DUNNING_AMOUNT",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerFinancialProfileMinDunningInvoiceAmount",
+      "table": "HZ_CUST_PROFILE_AMTS_F",
+      "column": "MIN_DUNNING_INVOICE_AMOUNT",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerFinancialProfileMinFcBalanceAmount",
+      "table": "HZ_CUST_PROFILE_AMTS_F",
+      "column": "MIN_FC_BALANCE_AMOUNT",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerFinancialProfileMinFcBalanceOverdueType",
+      "table": "HZ_CUST_PROFILE_AMTS_F",
+      "column": "MIN_FC_BALANCE_OVERDUE_TYPE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerFinancialProfileMinFcBalancePercent",
+      "table": "HZ_CUST_PROFILE_AMTS_F",
+      "column": "MIN_FC_BALANCE_PERCENT",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerFinancialProfileMinFcInvoiceAmount",
+      "table": "HZ_CUST_PROFILE_AMTS_F",
+      "column": "MIN_FC_INVOICE_AMOUNT",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerFinancialProfileMinFcInvoiceOverdueType",
+      "table": "HZ_CUST_PROFILE_AMTS_F",
+      "column": "MIN_FC_INVOICE_OVERDUE_TYPE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerFinancialProfileMinFcInvoicePercent",
+      "table": "HZ_CUST_PROFILE_AMTS_F",
+      "column": "MIN_FC_INVOICE_PERCENT",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerFinancialProfileMinInterestCharge",
+      "table": "HZ_CUST_PROFILE_AMTS_F",
+      "column": "MIN_INTEREST_CHARGE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerFinancialProfileMinStatementAmount",
+      "table": "HZ_CUST_PROFILE_AMTS_F",
+      "column": "MIN_STATEMENT_AMOUNT",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerFinancialProfileObjectVersionNumber",
+      "table": "HZ_CUST_PROFILE_AMTS_F",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerFinancialProfileOverallCreditLimit",
+      "table": "HZ_CUST_PROFILE_AMTS_F",
+      "column": "OVERALL_CREDIT_LIMIT",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerFinancialProfilePenaltyFixedAmount",
+      "table": "HZ_CUST_PROFILE_AMTS_F",
+      "column": "PENALTY_FIXED_AMOUNT",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerFinancialProfilePenaltyRate",
+      "table": "HZ_CUST_PROFILE_AMTS_F",
+      "column": "PENALTY_RATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerFinancialProfilePenaltyScheduleId",
+      "table": "HZ_CUST_PROFILE_AMTS_F",
+      "column": "PENALTY_SCHEDULE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerFinancialProfilePenaltyType",
+      "table": "HZ_CUST_PROFILE_AMTS_F",
+      "column": "PENALTY_TYPE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerFinancialProfileProgramApplicationId",
+      "table": "HZ_CUST_PROFILE_AMTS_F",
+      "column": "PROGRAM_APPLICATION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerFinancialProfileProgramId",
+      "table": "HZ_CUST_PROFILE_AMTS_F",
+      "column": "PROGRAM_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerFinancialProfileProgramUpdateDate",
+      "table": "HZ_CUST_PROFILE_AMTS_F",
+      "column": "PROGRAM_UPDATE_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerFinancialProfileRequestId",
+      "table": "HZ_CUST_PROFILE_AMTS_F",
+      "column": "REQUEST_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerFinancialProfileSiteUseId",
+      "table": "HZ_CUST_PROFILE_AMTS_F",
+      "column": "SITE_USE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerFinancialProfileTrxCreditLimit",
+      "table": "HZ_CUST_PROFILE_AMTS_F",
+      "column": "TRX_CREDIT_LIMIT",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerFinancialProfileWhUpdateDate",
+      "table": "HZ_CUST_PROFILE_AMTS_F",
+      "column": "WH_UPDATE_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerProfileAccountStatus",
+      "table": "HZ_CUSTOMER_PROFILES_F",
+      "column": "ACCOUNT_STATUS",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerProfileApplicationId",
+      "table": "HZ_CUSTOMER_PROFILES_F",
+      "column": "APPLICATION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerProfileAttributeCategory",
+      "table": "HZ_CUSTOMER_PROFILES_F",
+      "column": "ATTRIBUTE_CATEGORY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerProfileAutoRecInclDisputedFlag",
+      "table": "HZ_CUSTOMER_PROFILES_F",
+      "column": "AUTO_REC_INCL_DISPUTED_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerProfileAutocashHierarchyId",
+      "table": "HZ_CUSTOMER_PROFILES_F",
+      "column": "AUTOCASH_HIERARCHY_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerProfileAutocashHierarchyIdForAdr",
+      "table": "HZ_CUSTOMER_PROFILES_F",
+      "column": "AUTOCASH_HIERARCHY_ID_FOR_ADR",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerProfileAutomatchRuleId",
+      "table": "HZ_CUSTOMER_PROFILES_F",
+      "column": "AUTOMATCH_RULE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerProfileB2bTpCode",
+      "table": "HZ_CUSTOMER_PROFILES_F",
+      "column": "B2B_TP_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerProfileChargeBeginDate",
+      "table": "HZ_CUSTOMER_PROFILES_F",
+      "column": "CHARGE_BEGIN_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerProfileChargeOnFinanceChargeFlag",
+      "table": "HZ_CUSTOMER_PROFILES_F",
+      "column": "CHARGE_ON_FINANCE_CHARGE_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerProfileClassesAutoRecInclDisputedFlag",
+      "table": "HZ_CUST_PROFILE_CLASSES",
+      "column": "AUTO_REC_INCL_DISPUTED_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerProfileClassesAutocashHierarchyId",
+      "table": "HZ_CUST_PROFILE_CLASSES",
+      "column": "AUTOCASH_HIERARCHY_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerProfileClassesAutocashHierarchyIdForAdr",
+      "table": "HZ_CUST_PROFILE_CLASSES",
+      "column": "AUTOCASH_HIERARCHY_ID_FOR_ADR",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerProfileClassesAutomatchRuleId",
+      "table": "HZ_CUST_PROFILE_CLASSES",
+      "column": "AUTOMATCH_RULE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerProfileClassesChargeBeginDate",
+      "table": "HZ_CUST_PROFILE_CLASSES",
+      "column": "CHARGE_BEGIN_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerProfileClassesChargeOnFinanceChargeFlag",
+      "table": "HZ_CUST_PROFILE_CLASSES",
+      "column": "CHARGE_ON_FINANCE_CHARGE_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerProfileClassesCombineDunningLetters",
+      "table": "HZ_CUST_PROFILE_CLASSES",
+      "column": "COMBINE_DUNNING_LETTERS",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerProfileClassesConsBillLevel",
+      "table": "HZ_CUST_PROFILE_CLASSES",
+      "column": "CONS_BILL_LEVEL",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerProfileClassesConsInvFlag",
+      "table": "HZ_CUST_PROFILE_CLASSES",
+      "column": "CONS_INV_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerProfileClassesConsInvType",
+      "table": "HZ_CUST_PROFILE_CLASSES",
+      "column": "CONS_INV_TYPE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerProfileClassesCopyMethod",
+      "table": "HZ_CUST_PROFILE_CLASSES",
+      "column": "COPY_METHOD",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerProfileClassesCreatedBy",
+      "table": "HZ_CUST_PROFILE_CLASSES",
+      "column": "CREATED_BY",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerProfileClassesCreationDate",
+      "table": "HZ_CUST_PROFILE_CLASSES",
+      "column": "CREATION_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerProfileClassesCreditAnalystId",
+      "table": "HZ_CUST_PROFILE_CLASSES",
+      "column": "CREDIT_ANALYST_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerProfileClassesCreditBalanceStatements",
+      "table": "HZ_CUST_PROFILE_CLASSES",
+      "column": "CREDIT_BALANCE_STATEMENTS",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerProfileClassesCreditChecking",
+      "table": "HZ_CUST_PROFILE_CLASSES",
+      "column": "CREDIT_CHECKING",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerProfileClassesCreditClassification",
+      "table": "HZ_CUST_PROFILE_CLASSES",
+      "column": "CREDIT_CLASSIFICATION",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerProfileClassesCreditItemsFlag",
+      "table": "HZ_CUST_PROFILE_CLASSES",
+      "column": "CREDIT_ITEMS_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerProfileClassesDescription",
+      "table": "HZ_CUST_PROFILE_CLASSES",
+      "column": "DESCRIPTION",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerProfileClassesDiscountGraceDays",
+      "table": "HZ_CUST_PROFILE_CLASSES",
+      "column": "DISCOUNT_GRACE_DAYS",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerProfileClassesDiscountTerms",
+      "table": "HZ_CUST_PROFILE_CLASSES",
+      "column": "DISCOUNT_TERMS",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerProfileClassesDisputedTransactionsFlag",
+      "table": "HZ_CUST_PROFILE_CLASSES",
+      "column": "DISPUTED_TRANSACTIONS_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerProfileClassesDunningLetters",
+      "table": "HZ_CUST_PROFILE_CLASSES",
+      "column": "DUNNING_LETTERS",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerProfileClassesExceptionRuleId",
+      "table": "HZ_CUST_PROFILE_CLASSES",
+      "column": "EXCEPTION_RULE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerProfileClassesGroupingRuleId",
+      "table": "HZ_CUST_PROFILE_CLASSES",
+      "column": "GROUPING_RULE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerProfileClassesHoldChargedInvoicesFlag",
+      "table": "HZ_CUST_PROFILE_CLASSES",
+      "column": "HOLD_CHARGED_INVOICES_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerProfileClassesInterestCalculationPeriod",
+      "table": "HZ_CUST_PROFILE_CLASSES",
+      "column": "INTEREST_CALCULATION_PERIOD",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerProfileClassesInterestCharges",
+      "table": "HZ_CUST_PROFILE_CLASSES",
+      "column": "INTEREST_CHARGES",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerProfileClassesInterestPeriodDays",
+      "table": "HZ_CUST_PROFILE_CLASSES",
+      "column": "INTEREST_PERIOD_DAYS",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerProfileClassesJgzzAttributeCategory",
+      "table": "HZ_CUST_PROFILE_CLASSES",
+      "column": "JGZZ_ATTRIBUTE_CATEGORY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerProfileClassesLastUpdateDate",
+      "table": "HZ_CUST_PROFILE_CLASSES",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerProfileClassesLastUpdateLogin",
+      "table": "HZ_CUST_PROFILE_CLASSES",
+      "column": "LAST_UPDATE_LOGIN",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerProfileClassesLastUpdatedBy",
+      "table": "HZ_CUST_PROFILE_CLASSES",
+      "column": "LAST_UPDATED_BY",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerProfileClassesLateChargeCalculationTrx",
+      "table": "HZ_CUST_PROFILE_CLASSES",
+      "column": "LATE_CHARGE_CALCULATION_TRX",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerProfileClassesLateChargeTermId",
+      "table": "HZ_CUST_PROFILE_CLASSES",
+      "column": "LATE_CHARGE_TERM_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerProfileClassesLateChargeType",
+      "table": "HZ_CUST_PROFILE_CLASSES",
+      "column": "LATE_CHARGE_TYPE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerProfileClassesLockboxMatchingOption",
+      "table": "HZ_CUST_PROFILE_CLASSES",
+      "column": "LOCKBOX_MATCHING_OPTION",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerProfileClassesMatchByAutoupdateFlag",
+      "table": "HZ_CUST_PROFILE_CLASSES",
+      "column": "MATCH_BY_AUTOUPDATE_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerProfileClassesMessageTextId",
+      "table": "HZ_CUST_PROFILE_CLASSES",
+      "column": "MESSAGE_TEXT_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerProfileClassesMultipleInterestRatesFlag",
+      "table": "HZ_CUST_PROFILE_CLASSES",
+      "column": "MULTIPLE_INTEREST_RATES_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerProfileClassesName",
+      "table": "HZ_CUST_PROFILE_CLASSES",
+      "column": "NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerProfileClassesObjectVersionNumber",
+      "table": "HZ_CUST_PROFILE_CLASSES",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerProfileClassesOutsideReporting",
+      "table": "HZ_CUST_PROFILE_CLASSES",
+      "column": "OUTSIDE_REPORTING",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerProfileClassesOverrideTerms",
+      "table": "HZ_CUST_PROFILE_CLASSES",
+      "column": "OVERRIDE_TERMS",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerProfileClassesPaymentGraceDays",
+      "table": "HZ_CUST_PROFILE_CLASSES",
+      "column": "PAYMENT_GRACE_DAYS",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerProfileClassesPrefContactMethod",
+      "table": "HZ_CUST_PROFILE_CLASSES",
+      "column": "PREF_CONTACT_METHOD",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerProfileClassesProfileClassId",
+      "table": "HZ_CUST_PROFILE_CLASSES",
+      "column": "PROFILE_CLASS_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerProfileClassesProgramApplicationId",
+      "table": "HZ_CUST_PROFILE_CLASSES",
+      "column": "PROGRAM_APPLICATION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerProfileClassesProgramId",
+      "table": "HZ_CUST_PROFILE_CLASSES",
+      "column": "PROGRAM_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerProfileClassesProgramUpdateDate",
+      "table": "HZ_CUST_PROFILE_CLASSES",
+      "column": "PROGRAM_UPDATE_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerProfileClassesRequestId",
+      "table": "HZ_CUST_PROFILE_CLASSES",
+      "column": "REQUEST_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerProfileClassesReviewCycle",
+      "table": "HZ_CUST_PROFILE_CLASSES",
+      "column": "REVIEW_CYCLE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerProfileClassesReviewCycleDays",
+      "table": "HZ_CUST_PROFILE_CLASSES",
+      "column": "REVIEW_CYCLE_DAYS",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerProfileClassesStandardTerms",
+      "table": "HZ_CUST_PROFILE_CLASSES",
+      "column": "STANDARD_TERMS",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerProfileClassesStatementCycleId",
+      "table": "HZ_CUST_PROFILE_CLASSES",
+      "column": "STATEMENT_CYCLE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerProfileClassesStatements",
+      "table": "HZ_CUST_PROFILE_CLASSES",
+      "column": "STATEMENTS",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerProfileClassesStatus",
+      "table": "HZ_CUST_PROFILE_CLASSES",
+      "column": "STATUS",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerProfileClassesTaxPrintingOption",
+      "table": "HZ_CUST_PROFILE_CLASSES",
+      "column": "TAX_PRINTING_OPTION",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerProfileClassesTolerance",
+      "table": "HZ_CUST_PROFILE_CLASSES",
+      "column": "TOLERANCE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerProfileClassesWhUpdateDate",
+      "table": "HZ_CUST_PROFILE_CLASSES",
+      "column": "WH_UPDATE_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerProfileClearingDays",
+      "table": "HZ_CUSTOMER_PROFILES_F",
+      "column": "CLEARING_DAYS",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerProfileCollectorId",
+      "table": "HZ_CUSTOMER_PROFILES_F",
+      "column": "COLLECTOR_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerProfileConsBillLevel",
+      "table": "HZ_CUSTOMER_PROFILES_F",
+      "column": "CONS_BILL_LEVEL",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerProfileConsInvFlag",
+      "table": "HZ_CUSTOMER_PROFILES_F",
+      "column": "CONS_INV_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerProfileConsInvType",
+      "table": "HZ_CUSTOMER_PROFILES_F",
+      "column": "CONS_INV_TYPE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerProfileCreatedBy",
+      "table": "HZ_CUSTOMER_PROFILES_F",
+      "column": "CREATED_BY",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerProfileCreatedByModule",
+      "table": "HZ_CUSTOMER_PROFILES_F",
+      "column": "CREATED_BY_MODULE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerProfileCreationDate",
+      "table": "HZ_CUSTOMER_PROFILES_F",
+      "column": "CREATION_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerProfileCreditAnalystId",
+      "table": "HZ_CUSTOMER_PROFILES_F",
+      "column": "CREDIT_ANALYST_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerProfileCreditBalanceStatements",
+      "table": "HZ_CUSTOMER_PROFILES_F",
+      "column": "CREDIT_BALANCE_STATEMENTS",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerProfileCreditChecking",
+      "table": "HZ_CUSTOMER_PROFILES_F",
+      "column": "CREDIT_CHECKING",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerProfileCreditClassification",
+      "table": "HZ_CUSTOMER_PROFILES_F",
+      "column": "CREDIT_CLASSIFICATION",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerProfileCreditCurrencyCode",
+      "table": "HZ_CUSTOMER_PROFILES_F",
+      "column": "CREDIT_CURRENCY_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerProfileCreditHold",
+      "table": "HZ_CUSTOMER_PROFILES_F",
+      "column": "CREDIT_HOLD",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerProfileCreditItemsFlag",
+      "table": "HZ_CUSTOMER_PROFILES_F",
+      "column": "CREDIT_ITEMS_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerProfileCreditRating",
+      "table": "HZ_CUSTOMER_PROFILES_F",
+      "column": "CREDIT_RATING",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerProfileCustAccountId",
+      "table": "HZ_CUSTOMER_PROFILES_F",
+      "column": "CUST_ACCOUNT_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerProfileDiscountGraceDays",
+      "table": "HZ_CUSTOMER_PROFILES_F",
+      "column": "DISCOUNT_GRACE_DAYS",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerProfileDiscountTerms",
+      "table": "HZ_CUSTOMER_PROFILES_F",
+      "column": "DISCOUNT_TERMS",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerProfileDisputedTransactionsFlag",
+      "table": "HZ_CUSTOMER_PROFILES_F",
+      "column": "DISPUTED_TRANSACTIONS_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerProfileDunningLetters",
+      "table": "HZ_CUSTOMER_PROFILES_F",
+      "column": "DUNNING_LETTERS",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerProfileEffectiveEndDate",
+      "table": "HZ_CUSTOMER_PROFILES_F",
+      "column": "EFFECTIVE_END_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerProfileEffectiveStartDate",
+      "table": "HZ_CUSTOMER_PROFILES_F",
+      "column": "EFFECTIVE_START_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerProfileExceptionRuleId",
+      "table": "HZ_CUSTOMER_PROFILES_F",
+      "column": "EXCEPTION_RULE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerProfileGroupingRuleId",
+      "table": "HZ_CUSTOMER_PROFILES_F",
+      "column": "GROUPING_RULE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerProfileHoldChargedInvoicesFlag",
+      "table": "HZ_CUSTOMER_PROFILES_F",
+      "column": "HOLD_CHARGED_INVOICES_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerProfileInterestCalculationPeriod",
+      "table": "HZ_CUSTOMER_PROFILES_F",
+      "column": "INTEREST_CALCULATION_PERIOD",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerProfileInterestCharges",
+      "table": "HZ_CUSTOMER_PROFILES_F",
+      "column": "INTEREST_CHARGES",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerProfileInterestPeriodDays",
+      "table": "HZ_CUSTOMER_PROFILES_F",
+      "column": "INTEREST_PERIOD_DAYS",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerProfileJgzzAttributeCategory",
+      "table": "HZ_CUSTOMER_PROFILES_F",
+      "column": "JGZZ_ATTRIBUTE_CATEGORY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerProfileLastCreditReviewDate",
+      "table": "HZ_CUSTOMER_PROFILES_F",
+      "column": "LAST_CREDIT_REVIEW_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerProfileLastUpdateDate",
+      "table": "HZ_CUSTOMER_PROFILES_F",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": true
+    },
+    {
+      "name": "CustomerProfileLastUpdateLogin",
+      "table": "HZ_CUSTOMER_PROFILES_F",
+      "column": "LAST_UPDATE_LOGIN",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerProfileLastUpdatedBy",
+      "table": "HZ_CUSTOMER_PROFILES_F",
+      "column": "LAST_UPDATED_BY",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerProfileLateChargeCalculationTrx",
+      "table": "HZ_CUSTOMER_PROFILES_F",
+      "column": "LATE_CHARGE_CALCULATION_TRX",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerProfileLateChargeTermId",
+      "table": "HZ_CUSTOMER_PROFILES_F",
+      "column": "LATE_CHARGE_TERM_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerProfileLateChargeType",
+      "table": "HZ_CUSTOMER_PROFILES_F",
+      "column": "LATE_CHARGE_TYPE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerProfileLockboxMatchingOption",
+      "table": "HZ_CUSTOMER_PROFILES_F",
+      "column": "LOCKBOX_MATCHING_OPTION",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerProfileMatchByAutoupdateFlag",
+      "table": "HZ_CUSTOMER_PROFILES_F",
+      "column": "MATCH_BY_AUTOUPDATE_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerProfileMessageTextId",
+      "table": "HZ_CUSTOMER_PROFILES_F",
+      "column": "MESSAGE_TEXT_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerProfileMultipleInterestRatesFlag",
+      "table": "HZ_CUSTOMER_PROFILES_F",
+      "column": "MULTIPLE_INTEREST_RATES_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerProfileNextCreditReviewDate",
+      "table": "HZ_CUSTOMER_PROFILES_F",
+      "column": "NEXT_CREDIT_REVIEW_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerProfileObjectVersionNumber",
+      "table": "HZ_CUSTOMER_PROFILES_F",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerProfileOrderAmountLimit",
+      "table": "HZ_CUSTOMER_PROFILES_F",
+      "column": "ORDER_AMOUNT_LIMIT",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerProfileOverrideTerms",
+      "table": "HZ_CUSTOMER_PROFILES_F",
+      "column": "OVERRIDE_TERMS",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerProfilePartyId",
+      "table": "HZ_CUSTOMER_PROFILES_F",
+      "column": "PARTY_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerProfilePaymentGraceDays",
+      "table": "HZ_CUSTOMER_PROFILES_F",
+      "column": "PAYMENT_GRACE_DAYS",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerProfilePercentCollectable",
+      "table": "HZ_CUSTOMER_PROFILES_F",
+      "column": "PERCENT_COLLECTABLE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerProfilePrefContactMethod",
+      "table": "HZ_CUSTOMER_PROFILES_F",
+      "column": "PREF_CONTACT_METHOD",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerProfilePrintingOptionCode",
+      "table": "HZ_CUSTOMER_PROFILES_F",
+      "column": "PRINTING_OPTION_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerProfileProfileClassId",
+      "table": "HZ_CUSTOMER_PROFILES_F",
+      "column": "PROFILE_CLASS_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerProfileProgramApplicationId",
+      "table": "HZ_CUSTOMER_PROFILES_F",
+      "column": "PROGRAM_APPLICATION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerProfileProgramId",
+      "table": "HZ_CUSTOMER_PROFILES_F",
+      "column": "PROGRAM_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerProfileProgramUpdateDate",
+      "table": "HZ_CUSTOMER_PROFILES_F",
+      "column": "PROGRAM_UPDATE_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerProfileRequestId",
+      "table": "HZ_CUSTOMER_PROFILES_F",
+      "column": "REQUEST_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerProfileReviewCycle",
+      "table": "HZ_CUSTOMER_PROFILES_F",
+      "column": "REVIEW_CYCLE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerProfileRiskCode",
+      "table": "HZ_CUSTOMER_PROFILES_F",
+      "column": "RISK_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerProfileSendStatements",
+      "table": "HZ_CUSTOMER_PROFILES_F",
+      "column": "SEND_STATEMENTS",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerProfileSiteUseId",
+      "table": "HZ_CUSTOMER_PROFILES_F",
+      "column": "SITE_USE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerProfileStandardTerms",
+      "table": "HZ_CUSTOMER_PROFILES_F",
+      "column": "STANDARD_TERMS",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerProfileStatementCycleId",
+      "table": "HZ_CUSTOMER_PROFILES_F",
+      "column": "STATEMENT_CYCLE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerProfileStatus",
+      "table": "HZ_CUSTOMER_PROFILES_F",
+      "column": "STATUS",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerProfileTaxPrintingOption",
+      "table": "HZ_CUSTOMER_PROFILES_F",
+      "column": "TAX_PRINTING_OPTION",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerProfileTolerance",
+      "table": "HZ_CUSTOMER_PROFILES_F",
+      "column": "TOLERANCE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerProfileTxnDeliveryMethod",
+      "table": "HZ_CUSTOMER_PROFILES_F",
+      "column": "TXN_DELIVERY_METHOD",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerProfileWhUpdateDate",
+      "table": "HZ_CUSTOMER_PROFILES_F",
+      "column": "WH_UPDATE_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerProfileXmlCbFlag",
+      "table": "HZ_CUSTOMER_PROFILES_F",
+      "column": "XML_CB_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerProfileXmlCmFlag",
+      "table": "HZ_CUSTOMER_PROFILES_F",
+      "column": "XML_CM_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerProfileXmlDmFlag",
+      "table": "HZ_CUSTOMER_PROFILES_F",
+      "column": "XML_DM_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerProfileXmlInvFlag",
+      "table": "HZ_CUSTOMER_PROFILES_F",
+      "column": "XML_INV_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ExceptionRuleActiveFlag",
+      "table": "AR_APP_EXCEPTION_RULES",
+      "column": "ACTIVE_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ExceptionRuleCreatedBy",
+      "table": "AR_APP_EXCEPTION_RULES",
+      "column": "CREATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ExceptionRuleCreationDate",
+      "table": "AR_APP_EXCEPTION_RULES",
+      "column": "CREATION_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ExceptionRuleDescription",
+      "table": "AR_APP_EXCEPTION_RULES",
+      "column": "DESCRIPTION",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ExceptionRuleEndDate",
+      "table": "AR_APP_EXCEPTION_RULES",
+      "column": "END_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ExceptionRuleExceptionRuleId",
+      "table": "AR_APP_EXCEPTION_RULES",
+      "column": "EXCEPTION_RULE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ExceptionRuleLastUpdateDate",
+      "table": "AR_APP_EXCEPTION_RULES",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ExceptionRuleLastUpdateLogin",
+      "table": "AR_APP_EXCEPTION_RULES",
+      "column": "LAST_UPDATE_LOGIN",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ExceptionRuleLastUpdatedBy",
+      "table": "AR_APP_EXCEPTION_RULES",
+      "column": "LAST_UPDATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ExceptionRuleName",
+      "table": "AR_APP_EXCEPTION_RULES",
+      "column": "NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ExceptionRuleObjectVersionNumber",
+      "table": "AR_APP_EXCEPTION_RULES",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ExceptionRuleSetId",
+      "table": "AR_APP_EXCEPTION_RULES",
+      "column": "SET_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ExceptionRuleStartDate",
+      "table": "AR_APP_EXCEPTION_RULES",
+      "column": "START_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ExchangeRateType",
+      "table": "HZ_CUSTOMER_PROFILES_F",
+      "column": "EXCHANGE_RATE_TYPE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "GlConvTypeConversionType",
+      "table": "GL_DAILY_CONVERSION_TYPES",
+      "column": "CONVERSION_TYPE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "GlConvTypeEnableCrossRateFlag",
+      "table": "GL_DAILY_CONVERSION_TYPES",
+      "column": "ENABLE_CROSS_RATE_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "GlConvTypeEnforceInverseRateFlag",
+      "table": "GL_DAILY_CONVERSION_TYPES",
+      "column": "ENFORCE_INVERSE_RATE_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "GlConvTypeFemEnabledFlag",
+      "table": "GL_DAILY_CONVERSION_TYPES",
+      "column": "FEM_ENABLED_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "GlConvTypeFemRateTypeCode",
+      "table": "GL_DAILY_CONVERSION_TYPES",
+      "column": "FEM_RATE_TYPE_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "GlConvTypeFemScenario",
+      "table": "GL_DAILY_CONVERSION_TYPES",
+      "column": "FEM_SCENARIO",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "GlConvTypeFemTimeframe",
+      "table": "GL_DAILY_CONVERSION_TYPES",
+      "column": "FEM_TIMEFRAME",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "GlConvTypePivotCurrencyCode",
+      "table": "GL_DAILY_CONVERSION_TYPES",
+      "column": "PIVOT_CURRENCY_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "GlConvTypeSecurityFlag",
+      "table": "GL_DAILY_CONVERSION_TYPES",
+      "column": "SECURITY_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "GlConvTypeUserConversionType",
+      "table": "GL_DAILY_CONVERSION_TYPES",
+      "column": "USER_CONVERSION_TYPE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "GlConvTypeUserOverrideCrossRateFlag",
+      "table": "GL_DAILY_CONVERSION_TYPES",
+      "column": "USER_OVERRIDE_CROSS_RATE_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LatePaymentTermTranslCreatedBy",
+      "table": "RA_TERMS_TL",
+      "column": "CREATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LatePaymentTermTranslCreationDate",
+      "table": "RA_TERMS_TL",
+      "column": "CREATION_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LatePaymentTermTranslDescription",
+      "table": "RA_TERMS_TL",
+      "column": "DESCRIPTION",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LatePaymentTermTranslLanguage",
+      "table": "RA_TERMS_TL",
+      "column": "LANGUAGE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LatePaymentTermTranslLastUpdateDate",
+      "table": "RA_TERMS_TL",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": true
+    },
+    {
+      "name": "LatePaymentTermTranslLastUpdateLogin",
+      "table": "RA_TERMS_TL",
+      "column": "LAST_UPDATE_LOGIN",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LatePaymentTermTranslLastUpdatedBy",
+      "table": "RA_TERMS_TL",
+      "column": "LAST_UPDATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LatePaymentTermTranslName",
+      "table": "RA_TERMS_TL",
+      "column": "NAME",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LatePaymentTermTranslObjVerNumber",
+      "table": "RA_TERMS_TL",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LatePaymentTermTranslSetId",
+      "table": "RA_TERMS_TL",
+      "column": "SET_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LatePaymentTermTranslSourceLang",
+      "table": "RA_TERMS_TL",
+      "column": "SOURCE_LANG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LatePaymentTermTranslTermId",
+      "table": "RA_TERMS_TL",
+      "column": "TERM_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ObjectVersionNumber",
+      "table": "GL_DAILY_CONVERSION_TYPES",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "OffsetDays",
+      "table": "HZ_CUSTOMER_PROFILES_F",
+      "column": "OFFSET_DAYS",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PayTermTransObjectVersionNumber",
+      "table": "RA_TERMS_TL",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PaymentTermTranslationCreatedBy",
+      "table": "RA_TERMS_TL",
+      "column": "CREATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PaymentTermTranslationCreationDate",
+      "table": "RA_TERMS_TL",
+      "column": "CREATION_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PaymentTermTranslationDescription",
+      "table": "RA_TERMS_TL",
+      "column": "DESCRIPTION",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PaymentTermTranslationLanguage",
+      "table": "RA_TERMS_TL",
+      "column": "LANGUAGE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PaymentTermTranslationLastUpdateDate",
+      "table": "RA_TERMS_TL",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": true
+    },
+    {
+      "name": "PaymentTermTranslationLastUpdateLogin",
+      "table": "RA_TERMS_TL",
+      "column": "LAST_UPDATE_LOGIN",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PaymentTermTranslationLastUpdatedBy",
+      "table": "RA_TERMS_TL",
+      "column": "LAST_UPDATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PaymentTermTranslationName",
+      "table": "RA_TERMS_TL",
+      "column": "NAME",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PaymentTermTranslationSetId",
+      "table": "RA_TERMS_TL",
+      "column": "SET_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PaymentTermTranslationSourceLang",
+      "table": "RA_TERMS_TL",
+      "column": "SOURCE_LANG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PaymentTermTranslationTermId",
+      "table": "RA_TERMS_TL",
+      "column": "TERM_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonNameDisplayName",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "DISPLAY_NAME",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonNameEffectiveEndDate",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "EFFECTIVE_END_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonNameEffectiveStartDate",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "EFFECTIVE_START_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonNamePersonNameId",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "PERSON_NAME_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RaGrpRuleAttributeCategory",
+      "table": "RA_GROUPING_RULES",
+      "column": "ATTRIBUTE_CATEGORY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RaGrpRuleCreatedBy",
+      "table": "RA_GROUPING_RULES",
+      "column": "CREATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RaGrpRuleCreationDate",
+      "table": "RA_GROUPING_RULES",
+      "column": "CREATION_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RaGrpRuleDescription",
+      "table": "RA_GROUPING_RULES",
+      "column": "DESCRIPTION",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RaGrpRuleEndDate",
+      "table": "RA_GROUPING_RULES",
+      "column": "END_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RaGrpRuleGroupingRuleId",
+      "table": "RA_GROUPING_RULES",
+      "column": "GROUPING_RULE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RaGrpRuleLastUpdateDate",
+      "table": "RA_GROUPING_RULES",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RaGrpRuleLastUpdateLogin",
+      "table": "RA_GROUPING_RULES",
+      "column": "LAST_UPDATE_LOGIN",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RaGrpRuleLastUpdatedBy",
+      "table": "RA_GROUPING_RULES",
+      "column": "LAST_UPDATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RaGrpRuleName",
+      "table": "RA_GROUPING_RULES",
+      "column": "NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RaGrpRuleObjectVersionNumber",
+      "table": "RA_GROUPING_RULES",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RaGrpRuleOrderingRuleId",
+      "table": "RA_GROUPING_RULES",
+      "column": "ORDERING_RULE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RaGrpRuleStartDate",
+      "table": "RA_GROUPING_RULES",
+      "column": "START_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "StatementCycleName",
+      "table": "AR_STATEMENT_CYCLES",
+      "column": "NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "StatementCycleObjectVersionNumber",
+      "table": "AR_STATEMENT_CYCLES",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "StatementCycleStatementCycleId",
+      "table": "AR_STATEMENT_CYCLES",
+      "column": "STATEMENT_CYCLE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "StdTextTransTLCreatedBy",
+      "table": "AR_STANDARD_TEXT_TL",
+      "column": "CREATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "StdTextTransTLCreationDate",
+      "table": "AR_STANDARD_TEXT_TL",
+      "column": "CREATION_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "StdTextTransTLLanguage",
+      "table": "AR_STANDARD_TEXT_TL",
+      "column": "LANGUAGE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "StdTextTransTLLastUpdateDate",
+      "table": "AR_STANDARD_TEXT_TL",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "StdTextTransTLLastUpdateLogin",
+      "table": "AR_STANDARD_TEXT_TL",
+      "column": "LAST_UPDATE_LOGIN",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "StdTextTransTLLastUpdatedBy",
+      "table": "AR_STANDARD_TEXT_TL",
+      "column": "LAST_UPDATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "StdTextTransTLObjectVersionNumber",
+      "table": "AR_STANDARD_TEXT_TL",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "StdTextTransTLSourceLang",
+      "table": "AR_STANDARD_TEXT_TL",
+      "column": "SOURCE_LANG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "StdTextTransTLStandardTextId",
+      "table": "AR_STANDARD_TEXT_TL",
+      "column": "STANDARD_TEXT_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "StdTextTransTLText",
+      "table": "AR_STANDARD_TEXT_TL",
+      "column": "TEXT",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    }
+  ],
+  "by_table": {
+    "AR_AUTOCASH_HIERARCHIES": [
+      {
+        "attribute": "AutoCshHierarchyAutocashHierarchyId",
+        "column": "AUTOCASH_HIERARCHY_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AutoCshHierarchyForAdrAutocashHierarchyId",
+        "column": "AUTOCASH_HIERARCHY_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AutoCshHierarchyForAdrHierarchyName",
+        "column": "HIERARCHY_NAME",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "AutoCshHierarchyHierarchyName",
+        "column": "HIERARCHY_NAME",
+        "bicc": true,
+        "pk": false
+      }
+    ],
+    "AR_AUTOMATCH_RULES": [
+      {
+        "attribute": "AutomatchRuleActiveFlag",
+        "column": "ACTIVE_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AutomatchRuleAmountWeight",
+        "column": "AMOUNT_WEIGHT",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AutomatchRuleAutomatchRuleId",
+        "column": "AUTOMATCH_RULE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AutomatchRuleCreatedBy",
+        "column": "CREATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AutomatchRuleCreationDate",
+        "column": "CREATION_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AutomatchRuleCustomerThreshold",
+        "column": "CUSTOMER_THRESHOLD",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AutomatchRuleCustomerWeight",
+        "column": "CUSTOMER_WEIGHT",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AutomatchRuleDescription",
+        "column": "DESCRIPTION",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AutomatchRuleEndDate",
+        "column": "END_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AutomatchRuleLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "AutomatchRuleLastUpdateLogin",
+        "column": "LAST_UPDATE_LOGIN",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AutomatchRuleLastUpdatedBy",
+        "column": "LAST_UPDATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AutomatchRuleMinMatchThreshold",
+        "column": "MIN_MATCH_THRESHOLD",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AutomatchRuleName",
+        "column": "NAME",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "AutomatchRuleNetFreightWeight",
+        "column": "NET_FREIGHT_WEIGHT",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AutomatchRuleNetTaxFreightWeight",
+        "column": "NET_TAX_FREIGHT_WEIGHT",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AutomatchRuleNetTaxWeight",
+        "column": "NET_TAX_WEIGHT",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AutomatchRuleNetUndiscWeight",
+        "column": "NET_UNDISC_WEIGHT",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AutomatchRuleNumberOfDaysClosed",
+        "column": "NUMBER_OF_DAYS_CLOSED",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AutomatchRuleObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AutomatchRuleRemittanceRegexp",
+        "column": "REMITTANCE_REGEXP",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AutomatchRuleSetId",
+        "column": "SET_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AutomatchRuleStartDate",
+        "column": "START_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AutomatchRuleTransactionRegexp",
+        "column": "TRANSACTION_REGEXP",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AutomatchRuleTransactionThreshold",
+        "column": "TRANSACTION_THRESHOLD",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AutomatchRuleTransactionWeight",
+        "column": "TRANSACTION_WEIGHT",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "AR_CHARGE_SCHEDULES": [
+      {
+        "attribute": "ChargeSchedulesScheduleDescription",
+        "column": "SCHEDULE_DESCRIPTION",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ChargeSchedulesScheduleId",
+        "column": "SCHEDULE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ChargeSchedulesScheduleName",
+        "column": "SCHEDULE_NAME",
+        "bicc": true,
+        "pk": false
+      }
+    ],
+    "AR_COLLECTORS": [
+      {
+        "attribute": "CollectorsAlias",
+        "column": "ALIAS",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CollectorsAttributeCategory",
+        "column": "ATTRIBUTE_CATEGORY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CollectorsCollectorId",
+        "column": "COLLECTOR_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CollectorsCreatedBy",
+        "column": "CREATED_BY",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CollectorsCreationDate",
+        "column": "CREATION_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CollectorsDescription",
+        "column": "DESCRIPTION",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CollectorsEmployeeId",
+        "column": "EMPLOYEE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CollectorsInactiveDate",
+        "column": "INACTIVE_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CollectorsLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CollectorsLastUpdateLogin",
+        "column": "LAST_UPDATE_LOGIN",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CollectorsLastUpdatedBy",
+        "column": "LAST_UPDATED_BY",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CollectorsName",
+        "column": "NAME",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CollectorsObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CollectorsResourceId",
+        "column": "RESOURCE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CollectorsResourceType",
+        "column": "RESOURCE_TYPE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CollectorsSetId",
+        "column": "SET_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CollectorsStatus",
+        "column": "STATUS",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CollectorsTelephoneNumber",
+        "column": "TELEPHONE_NUMBER",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "HZ_CUSTOMER_PROFILES_F": [
+      {
+        "attribute": "CreditLimit",
+        "column": "CREDIT_LIMIT",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CustAccountProfileId",
+        "column": "CUST_ACCOUNT_PROFILE_ID",
+        "bicc": true,
+        "pk": true
+      },
+      {
+        "attribute": "CustomerProfileAccountStatus",
+        "column": "ACCOUNT_STATUS",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerProfileApplicationId",
+        "column": "APPLICATION_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerProfileAttributeCategory",
+        "column": "ATTRIBUTE_CATEGORY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerProfileAutoRecInclDisputedFlag",
+        "column": "AUTO_REC_INCL_DISPUTED_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerProfileAutocashHierarchyId",
+        "column": "AUTOCASH_HIERARCHY_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerProfileAutocashHierarchyIdForAdr",
+        "column": "AUTOCASH_HIERARCHY_ID_FOR_ADR",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerProfileAutomatchRuleId",
+        "column": "AUTOMATCH_RULE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerProfileB2bTpCode",
+        "column": "B2B_TP_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerProfileChargeBeginDate",
+        "column": "CHARGE_BEGIN_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerProfileChargeOnFinanceChargeFlag",
+        "column": "CHARGE_ON_FINANCE_CHARGE_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerProfileClearingDays",
+        "column": "CLEARING_DAYS",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerProfileCollectorId",
+        "column": "COLLECTOR_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerProfileConsBillLevel",
+        "column": "CONS_BILL_LEVEL",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerProfileConsInvFlag",
+        "column": "CONS_INV_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerProfileConsInvType",
+        "column": "CONS_INV_TYPE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerProfileCreatedBy",
+        "column": "CREATED_BY",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerProfileCreatedByModule",
+        "column": "CREATED_BY_MODULE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerProfileCreationDate",
+        "column": "CREATION_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerProfileCreditAnalystId",
+        "column": "CREDIT_ANALYST_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerProfileCreditBalanceStatements",
+        "column": "CREDIT_BALANCE_STATEMENTS",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerProfileCreditChecking",
+        "column": "CREDIT_CHECKING",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerProfileCreditClassification",
+        "column": "CREDIT_CLASSIFICATION",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerProfileCreditCurrencyCode",
+        "column": "CREDIT_CURRENCY_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerProfileCreditHold",
+        "column": "CREDIT_HOLD",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerProfileCreditItemsFlag",
+        "column": "CREDIT_ITEMS_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerProfileCreditRating",
+        "column": "CREDIT_RATING",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerProfileCustAccountId",
+        "column": "CUST_ACCOUNT_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerProfileDiscountGraceDays",
+        "column": "DISCOUNT_GRACE_DAYS",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerProfileDiscountTerms",
+        "column": "DISCOUNT_TERMS",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerProfileDisputedTransactionsFlag",
+        "column": "DISPUTED_TRANSACTIONS_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerProfileDunningLetters",
+        "column": "DUNNING_LETTERS",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerProfileEffectiveEndDate",
+        "column": "EFFECTIVE_END_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerProfileEffectiveStartDate",
+        "column": "EFFECTIVE_START_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerProfileExceptionRuleId",
+        "column": "EXCEPTION_RULE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerProfileGroupingRuleId",
+        "column": "GROUPING_RULE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerProfileHoldChargedInvoicesFlag",
+        "column": "HOLD_CHARGED_INVOICES_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerProfileInterestCalculationPeriod",
+        "column": "INTEREST_CALCULATION_PERIOD",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerProfileInterestCharges",
+        "column": "INTEREST_CHARGES",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerProfileInterestPeriodDays",
+        "column": "INTEREST_PERIOD_DAYS",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerProfileJgzzAttributeCategory",
+        "column": "JGZZ_ATTRIBUTE_CATEGORY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerProfileLastCreditReviewDate",
+        "column": "LAST_CREDIT_REVIEW_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerProfileLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerProfileLastUpdateLogin",
+        "column": "LAST_UPDATE_LOGIN",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerProfileLastUpdatedBy",
+        "column": "LAST_UPDATED_BY",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerProfileLateChargeCalculationTrx",
+        "column": "LATE_CHARGE_CALCULATION_TRX",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerProfileLateChargeTermId",
+        "column": "LATE_CHARGE_TERM_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerProfileLateChargeType",
+        "column": "LATE_CHARGE_TYPE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerProfileLockboxMatchingOption",
+        "column": "LOCKBOX_MATCHING_OPTION",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerProfileMatchByAutoupdateFlag",
+        "column": "MATCH_BY_AUTOUPDATE_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerProfileMessageTextId",
+        "column": "MESSAGE_TEXT_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerProfileMultipleInterestRatesFlag",
+        "column": "MULTIPLE_INTEREST_RATES_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerProfileNextCreditReviewDate",
+        "column": "NEXT_CREDIT_REVIEW_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerProfileObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerProfileOrderAmountLimit",
+        "column": "ORDER_AMOUNT_LIMIT",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerProfileOverrideTerms",
+        "column": "OVERRIDE_TERMS",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerProfilePartyId",
+        "column": "PARTY_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerProfilePaymentGraceDays",
+        "column": "PAYMENT_GRACE_DAYS",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerProfilePercentCollectable",
+        "column": "PERCENT_COLLECTABLE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerProfilePrefContactMethod",
+        "column": "PREF_CONTACT_METHOD",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerProfilePrintingOptionCode",
+        "column": "PRINTING_OPTION_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerProfileProfileClassId",
+        "column": "PROFILE_CLASS_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerProfileProgramApplicationId",
+        "column": "PROGRAM_APPLICATION_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerProfileProgramId",
+        "column": "PROGRAM_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerProfileProgramUpdateDate",
+        "column": "PROGRAM_UPDATE_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerProfileRequestId",
+        "column": "REQUEST_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerProfileReviewCycle",
+        "column": "REVIEW_CYCLE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerProfileRiskCode",
+        "column": "RISK_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerProfileSendStatements",
+        "column": "SEND_STATEMENTS",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerProfileSiteUseId",
+        "column": "SITE_USE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerProfileStandardTerms",
+        "column": "STANDARD_TERMS",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerProfileStatementCycleId",
+        "column": "STATEMENT_CYCLE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerProfileStatus",
+        "column": "STATUS",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerProfileTaxPrintingOption",
+        "column": "TAX_PRINTING_OPTION",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerProfileTolerance",
+        "column": "TOLERANCE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerProfileTxnDeliveryMethod",
+        "column": "TXN_DELIVERY_METHOD",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerProfileWhUpdateDate",
+        "column": "WH_UPDATE_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerProfileXmlCbFlag",
+        "column": "XML_CB_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerProfileXmlCmFlag",
+        "column": "XML_CM_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerProfileXmlDmFlag",
+        "column": "XML_DM_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerProfileXmlInvFlag",
+        "column": "XML_INV_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ExchangeRateType",
+        "column": "EXCHANGE_RATE_TYPE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "OffsetDays",
+        "column": "OFFSET_DAYS",
+        "bicc": true,
+        "pk": false
+      }
+    ],
+    "HZ_CUST_PROFILE_AMTS_F": [
+      {
+        "attribute": "CustomerFinancialProfileApplicationId",
+        "column": "APPLICATION_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerFinancialProfileAutoRecMinReceiptAmount",
+        "column": "AUTO_REC_MIN_RECEIPT_AMOUNT",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerFinancialProfileCreatedBy",
+        "column": "CREATED_BY",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerFinancialProfileCreatedByModule",
+        "column": "CREATED_BY_MODULE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerFinancialProfileCreationDate",
+        "column": "CREATION_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerFinancialProfileCurrencyCode",
+        "column": "CURRENCY_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerFinancialProfileCustAccountId",
+        "column": "CUST_ACCOUNT_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerFinancialProfileCustAccountProfileId",
+        "column": "CUST_ACCOUNT_PROFILE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerFinancialProfileCustAcctProfileAmtId",
+        "column": "CUST_ACCT_PROFILE_AMT_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerFinancialProfileEffectiveEndDate",
+        "column": "EFFECTIVE_END_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerFinancialProfileEffectiveStartDate",
+        "column": "EFFECTIVE_START_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerFinancialProfileExchangeRateType",
+        "column": "EXCHANGE_RATE_TYPE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerFinancialProfileExpirationDate",
+        "column": "EXPIRATION_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerFinancialProfileGlobalAttributeCategory",
+        "column": "GLOBAL_ATTRIBUTE_CATEGORY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerFinancialProfileInterestFixedAmount",
+        "column": "INTEREST_FIXED_AMOUNT",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerFinancialProfileInterestRate",
+        "column": "INTEREST_RATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerFinancialProfileInterestScheduleId",
+        "column": "INTEREST_SCHEDULE_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerFinancialProfileInterestType",
+        "column": "INTEREST_TYPE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerFinancialProfileJgzzAttributeCategory",
+        "column": "JGZZ_ATTRIBUTE_CATEGORY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerFinancialProfileLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerFinancialProfileLastUpdateLogin",
+        "column": "LAST_UPDATE_LOGIN",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerFinancialProfileLastUpdatedBy",
+        "column": "LAST_UPDATED_BY",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerFinancialProfileMaxInterestCharge",
+        "column": "MAX_INTEREST_CHARGE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerFinancialProfileMinDunningAmount",
+        "column": "MIN_DUNNING_AMOUNT",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerFinancialProfileMinDunningInvoiceAmount",
+        "column": "MIN_DUNNING_INVOICE_AMOUNT",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerFinancialProfileMinFcBalanceAmount",
+        "column": "MIN_FC_BALANCE_AMOUNT",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerFinancialProfileMinFcBalanceOverdueType",
+        "column": "MIN_FC_BALANCE_OVERDUE_TYPE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerFinancialProfileMinFcBalancePercent",
+        "column": "MIN_FC_BALANCE_PERCENT",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerFinancialProfileMinFcInvoiceAmount",
+        "column": "MIN_FC_INVOICE_AMOUNT",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerFinancialProfileMinFcInvoiceOverdueType",
+        "column": "MIN_FC_INVOICE_OVERDUE_TYPE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerFinancialProfileMinFcInvoicePercent",
+        "column": "MIN_FC_INVOICE_PERCENT",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerFinancialProfileMinInterestCharge",
+        "column": "MIN_INTEREST_CHARGE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerFinancialProfileMinStatementAmount",
+        "column": "MIN_STATEMENT_AMOUNT",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerFinancialProfileObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerFinancialProfileOverallCreditLimit",
+        "column": "OVERALL_CREDIT_LIMIT",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerFinancialProfilePenaltyFixedAmount",
+        "column": "PENALTY_FIXED_AMOUNT",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerFinancialProfilePenaltyRate",
+        "column": "PENALTY_RATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerFinancialProfilePenaltyScheduleId",
+        "column": "PENALTY_SCHEDULE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerFinancialProfilePenaltyType",
+        "column": "PENALTY_TYPE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerFinancialProfileProgramApplicationId",
+        "column": "PROGRAM_APPLICATION_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerFinancialProfileProgramId",
+        "column": "PROGRAM_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerFinancialProfileProgramUpdateDate",
+        "column": "PROGRAM_UPDATE_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerFinancialProfileRequestId",
+        "column": "REQUEST_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerFinancialProfileSiteUseId",
+        "column": "SITE_USE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerFinancialProfileTrxCreditLimit",
+        "column": "TRX_CREDIT_LIMIT",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerFinancialProfileWhUpdateDate",
+        "column": "WH_UPDATE_DATE",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "HZ_CUST_PROFILE_CLASSES": [
+      {
+        "attribute": "CustomerProfileClassesAutoRecInclDisputedFlag",
+        "column": "AUTO_REC_INCL_DISPUTED_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerProfileClassesAutocashHierarchyId",
+        "column": "AUTOCASH_HIERARCHY_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerProfileClassesAutocashHierarchyIdForAdr",
+        "column": "AUTOCASH_HIERARCHY_ID_FOR_ADR",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerProfileClassesAutomatchRuleId",
+        "column": "AUTOMATCH_RULE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerProfileClassesChargeBeginDate",
+        "column": "CHARGE_BEGIN_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerProfileClassesChargeOnFinanceChargeFlag",
+        "column": "CHARGE_ON_FINANCE_CHARGE_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerProfileClassesCombineDunningLetters",
+        "column": "COMBINE_DUNNING_LETTERS",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerProfileClassesConsBillLevel",
+        "column": "CONS_BILL_LEVEL",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerProfileClassesConsInvFlag",
+        "column": "CONS_INV_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerProfileClassesConsInvType",
+        "column": "CONS_INV_TYPE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerProfileClassesCopyMethod",
+        "column": "COPY_METHOD",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerProfileClassesCreatedBy",
+        "column": "CREATED_BY",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerProfileClassesCreationDate",
+        "column": "CREATION_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerProfileClassesCreditAnalystId",
+        "column": "CREDIT_ANALYST_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerProfileClassesCreditBalanceStatements",
+        "column": "CREDIT_BALANCE_STATEMENTS",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerProfileClassesCreditChecking",
+        "column": "CREDIT_CHECKING",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerProfileClassesCreditClassification",
+        "column": "CREDIT_CLASSIFICATION",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerProfileClassesCreditItemsFlag",
+        "column": "CREDIT_ITEMS_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerProfileClassesDescription",
+        "column": "DESCRIPTION",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerProfileClassesDiscountGraceDays",
+        "column": "DISCOUNT_GRACE_DAYS",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerProfileClassesDiscountTerms",
+        "column": "DISCOUNT_TERMS",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerProfileClassesDisputedTransactionsFlag",
+        "column": "DISPUTED_TRANSACTIONS_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerProfileClassesDunningLetters",
+        "column": "DUNNING_LETTERS",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerProfileClassesExceptionRuleId",
+        "column": "EXCEPTION_RULE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerProfileClassesGroupingRuleId",
+        "column": "GROUPING_RULE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerProfileClassesHoldChargedInvoicesFlag",
+        "column": "HOLD_CHARGED_INVOICES_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerProfileClassesInterestCalculationPeriod",
+        "column": "INTEREST_CALCULATION_PERIOD",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerProfileClassesInterestCharges",
+        "column": "INTEREST_CHARGES",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerProfileClassesInterestPeriodDays",
+        "column": "INTEREST_PERIOD_DAYS",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerProfileClassesJgzzAttributeCategory",
+        "column": "JGZZ_ATTRIBUTE_CATEGORY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerProfileClassesLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerProfileClassesLastUpdateLogin",
+        "column": "LAST_UPDATE_LOGIN",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerProfileClassesLastUpdatedBy",
+        "column": "LAST_UPDATED_BY",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerProfileClassesLateChargeCalculationTrx",
+        "column": "LATE_CHARGE_CALCULATION_TRX",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerProfileClassesLateChargeTermId",
+        "column": "LATE_CHARGE_TERM_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerProfileClassesLateChargeType",
+        "column": "LATE_CHARGE_TYPE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerProfileClassesLockboxMatchingOption",
+        "column": "LOCKBOX_MATCHING_OPTION",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerProfileClassesMatchByAutoupdateFlag",
+        "column": "MATCH_BY_AUTOUPDATE_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerProfileClassesMessageTextId",
+        "column": "MESSAGE_TEXT_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerProfileClassesMultipleInterestRatesFlag",
+        "column": "MULTIPLE_INTEREST_RATES_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerProfileClassesName",
+        "column": "NAME",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerProfileClassesObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerProfileClassesOutsideReporting",
+        "column": "OUTSIDE_REPORTING",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerProfileClassesOverrideTerms",
+        "column": "OVERRIDE_TERMS",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerProfileClassesPaymentGraceDays",
+        "column": "PAYMENT_GRACE_DAYS",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerProfileClassesPrefContactMethod",
+        "column": "PREF_CONTACT_METHOD",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerProfileClassesProfileClassId",
+        "column": "PROFILE_CLASS_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerProfileClassesProgramApplicationId",
+        "column": "PROGRAM_APPLICATION_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerProfileClassesProgramId",
+        "column": "PROGRAM_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerProfileClassesProgramUpdateDate",
+        "column": "PROGRAM_UPDATE_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerProfileClassesRequestId",
+        "column": "REQUEST_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerProfileClassesReviewCycle",
+        "column": "REVIEW_CYCLE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerProfileClassesReviewCycleDays",
+        "column": "REVIEW_CYCLE_DAYS",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerProfileClassesStandardTerms",
+        "column": "STANDARD_TERMS",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerProfileClassesStatementCycleId",
+        "column": "STATEMENT_CYCLE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerProfileClassesStatements",
+        "column": "STATEMENTS",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerProfileClassesStatus",
+        "column": "STATUS",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerProfileClassesTaxPrintingOption",
+        "column": "TAX_PRINTING_OPTION",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerProfileClassesTolerance",
+        "column": "TOLERANCE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerProfileClassesWhUpdateDate",
+        "column": "WH_UPDATE_DATE",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "AR_APP_EXCEPTION_RULES": [
+      {
+        "attribute": "ExceptionRuleActiveFlag",
+        "column": "ACTIVE_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ExceptionRuleCreatedBy",
+        "column": "CREATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ExceptionRuleCreationDate",
+        "column": "CREATION_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ExceptionRuleDescription",
+        "column": "DESCRIPTION",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ExceptionRuleEndDate",
+        "column": "END_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ExceptionRuleExceptionRuleId",
+        "column": "EXCEPTION_RULE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ExceptionRuleLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ExceptionRuleLastUpdateLogin",
+        "column": "LAST_UPDATE_LOGIN",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ExceptionRuleLastUpdatedBy",
+        "column": "LAST_UPDATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ExceptionRuleName",
+        "column": "NAME",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ExceptionRuleObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ExceptionRuleSetId",
+        "column": "SET_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ExceptionRuleStartDate",
+        "column": "START_DATE",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "GL_DAILY_CONVERSION_TYPES": [
+      {
+        "attribute": "GlConvTypeConversionType",
+        "column": "CONVERSION_TYPE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "GlConvTypeEnableCrossRateFlag",
+        "column": "ENABLE_CROSS_RATE_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "GlConvTypeEnforceInverseRateFlag",
+        "column": "ENFORCE_INVERSE_RATE_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "GlConvTypeFemEnabledFlag",
+        "column": "FEM_ENABLED_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "GlConvTypeFemRateTypeCode",
+        "column": "FEM_RATE_TYPE_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "GlConvTypeFemScenario",
+        "column": "FEM_SCENARIO",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "GlConvTypeFemTimeframe",
+        "column": "FEM_TIMEFRAME",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "GlConvTypePivotCurrencyCode",
+        "column": "PIVOT_CURRENCY_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "GlConvTypeSecurityFlag",
+        "column": "SECURITY_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "GlConvTypeUserConversionType",
+        "column": "USER_CONVERSION_TYPE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "GlConvTypeUserOverrideCrossRateFlag",
+        "column": "USER_OVERRIDE_CROSS_RATE_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "RA_TERMS_TL": [
+      {
+        "attribute": "LatePaymentTermTranslCreatedBy",
+        "column": "CREATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "LatePaymentTermTranslCreationDate",
+        "column": "CREATION_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "LatePaymentTermTranslDescription",
+        "column": "DESCRIPTION",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "LatePaymentTermTranslLanguage",
+        "column": "LANGUAGE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "LatePaymentTermTranslLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "LatePaymentTermTranslLastUpdateLogin",
+        "column": "LAST_UPDATE_LOGIN",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "LatePaymentTermTranslLastUpdatedBy",
+        "column": "LAST_UPDATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "LatePaymentTermTranslName",
+        "column": "NAME",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "LatePaymentTermTranslObjVerNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "LatePaymentTermTranslSetId",
+        "column": "SET_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "LatePaymentTermTranslSourceLang",
+        "column": "SOURCE_LANG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "LatePaymentTermTranslTermId",
+        "column": "TERM_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PayTermTransObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PaymentTermTranslationCreatedBy",
+        "column": "CREATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PaymentTermTranslationCreationDate",
+        "column": "CREATION_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PaymentTermTranslationDescription",
+        "column": "DESCRIPTION",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PaymentTermTranslationLanguage",
+        "column": "LANGUAGE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PaymentTermTranslationLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PaymentTermTranslationLastUpdateLogin",
+        "column": "LAST_UPDATE_LOGIN",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PaymentTermTranslationLastUpdatedBy",
+        "column": "LAST_UPDATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PaymentTermTranslationName",
+        "column": "NAME",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PaymentTermTranslationSetId",
+        "column": "SET_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PaymentTermTranslationSourceLang",
+        "column": "SOURCE_LANG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PaymentTermTranslationTermId",
+        "column": "TERM_ID",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "PER_PERSON_NAMES_F_V": [
+      {
+        "attribute": "PersonNameDisplayName",
+        "column": "DISPLAY_NAME",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PersonNameEffectiveEndDate",
+        "column": "EFFECTIVE_END_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PersonNameEffectiveStartDate",
+        "column": "EFFECTIVE_START_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PersonNamePersonNameId",
+        "column": "PERSON_NAME_ID",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "RA_GROUPING_RULES": [
+      {
+        "attribute": "RaGrpRuleAttributeCategory",
+        "column": "ATTRIBUTE_CATEGORY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "RaGrpRuleCreatedBy",
+        "column": "CREATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "RaGrpRuleCreationDate",
+        "column": "CREATION_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "RaGrpRuleDescription",
+        "column": "DESCRIPTION",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "RaGrpRuleEndDate",
+        "column": "END_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "RaGrpRuleGroupingRuleId",
+        "column": "GROUPING_RULE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "RaGrpRuleLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "RaGrpRuleLastUpdateLogin",
+        "column": "LAST_UPDATE_LOGIN",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "RaGrpRuleLastUpdatedBy",
+        "column": "LAST_UPDATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "RaGrpRuleName",
+        "column": "NAME",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "RaGrpRuleObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "RaGrpRuleOrderingRuleId",
+        "column": "ORDERING_RULE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "RaGrpRuleStartDate",
+        "column": "START_DATE",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "AR_STATEMENT_CYCLES": [
+      {
+        "attribute": "StatementCycleName",
+        "column": "NAME",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "StatementCycleObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "StatementCycleStatementCycleId",
+        "column": "STATEMENT_CYCLE_ID",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "AR_STANDARD_TEXT_TL": [
+      {
+        "attribute": "StdTextTransTLCreatedBy",
+        "column": "CREATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "StdTextTransTLCreationDate",
+        "column": "CREATION_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "StdTextTransTLLanguage",
+        "column": "LANGUAGE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "StdTextTransTLLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "StdTextTransTLLastUpdateLogin",
+        "column": "LAST_UPDATE_LOGIN",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "StdTextTransTLLastUpdatedBy",
+        "column": "LAST_UPDATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "StdTextTransTLObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "StdTextTransTLSourceLang",
+        "column": "SOURCE_LANG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "StdTextTransTLStandardTextId",
+        "column": "STANDARD_TEXT_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "StdTextTransTLText",
+        "column": "TEXT",
+        "bicc": true,
+        "pk": false
+      }
+    ]
+  }
+}

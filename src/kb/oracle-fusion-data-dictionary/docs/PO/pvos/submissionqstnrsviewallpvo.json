@@ -1,0 +1,346 @@
+{
+  "meta": {
+    "pvo_name": "SubmissionQstnrsViewAllPVO",
+    "full_path": "HcmTopModelAnalyticsGlobalAM.HcmRecHiringRequisitionAM.SubmissionQstnrsViewAllPVO",
+    "module_path": "HcmTopModelAnalyticsGlobalAM.HcmRecHiringRequisitionAM",
+    "module_code": "PO",
+    "type": "pvo",
+    "description": "Extrai visão consolidada de todos os questionários de submissão associados a requisições e ofertas de contratação. Permite análise completa de instrumentos de avaliação utilizados no processo seletivo."
+  },
+  "stats": {
+    "total_attributes": 22,
+    "tables_count": 5,
+    "bicc_enabled": 7,
+    "bicc_pct": 32,
+    "pk_count": 3
+  },
+  "tables": [
+    "HRQ_QUESTIONNAIRES_B",
+    "IRC_IM_REQ_QSTNRS",
+    "IRC_OFFERS",
+    "IRC_REQUISITIONS_B",
+    "IRC_SUBMISSIONS"
+  ],
+  "attributes": [
+    {
+      "name": "CreationDate",
+      "table": "IRC_SUBMISSIONS",
+      "column": "CREATION_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "OffersPEOOfferId",
+      "table": "IRC_OFFERS",
+      "column": "OFFER_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "QstnrVersionNum",
+      "table": "IRC_IM_REQ_QSTNRS",
+      "column": "QSTNR_VERSION_NUM",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    },
+    {
+      "name": "QuestionnaireBPEOBusinessGroupId",
+      "table": "HRQ_QUESTIONNAIRES_B",
+      "column": "BUSINESS_GROUP_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "QuestionnaireBPEOMaxPossibleScore",
+      "table": "HRQ_QUESTIONNAIRES_B",
+      "column": "MAX_POSSIBLE_SCORE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "QuestionnaireBPEOQstnrVersionNum",
+      "table": "HRQ_QUESTIONNAIRES_B",
+      "column": "QSTNR_VERSION_NUM",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "QuestionnaireBPEOQuestionnaireId",
+      "table": "HRQ_QUESTIONNAIRES_B",
+      "column": "QUESTIONNAIRE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "QuestionnaireId",
+      "table": "IRC_IM_REQ_QSTNRS",
+      "column": "QUESTIONNAIRE_ID",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    },
+    {
+      "name": "RequisitionBPEORequisitionId",
+      "table": "IRC_REQUISITIONS_B",
+      "column": "REQUISITION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RequisitionId",
+      "table": "IRC_IM_REQ_QSTNRS",
+      "column": "REQUISITION_ID",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    },
+    {
+      "name": "RequisitionQstnrPEOCreatedBy",
+      "table": "IRC_IM_REQ_QSTNRS",
+      "column": "CREATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RequisitionQstnrPEOCreationDate",
+      "table": "IRC_IM_REQ_QSTNRS",
+      "column": "CREATION_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RequisitionQstnrPEOLastUpdateDate",
+      "table": "IRC_IM_REQ_QSTNRS",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": true
+    },
+    {
+      "name": "RequisitionQstnrPEOLastUpdateLogin",
+      "table": "IRC_IM_REQ_QSTNRS",
+      "column": "LAST_UPDATE_LOGIN",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RequisitionQstnrPEOLastUpdatedBy",
+      "table": "IRC_IM_REQ_QSTNRS",
+      "column": "LAST_UPDATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RequisitionQstnrPEOObjectVersionNumber",
+      "table": "IRC_IM_REQ_QSTNRS",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RequisitionQstnrPEOQstnrTypeCode",
+      "table": "IRC_IM_REQ_QSTNRS",
+      "column": "QSTNR_TYPE_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SubmissionPEOInternalFlag",
+      "table": "IRC_SUBMISSIONS",
+      "column": "INTERNAL_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SubmissionPEOObjectVersionNumber",
+      "table": "IRC_SUBMISSIONS",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SubmissionPEOPersonId",
+      "table": "IRC_SUBMISSIONS",
+      "column": "PERSON_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SubmissionPEOQstnrScore",
+      "table": "IRC_SUBMISSIONS",
+      "column": "QSTNR_SCORE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SubmissionPEOSubmissionId",
+      "table": "IRC_SUBMISSIONS",
+      "column": "SUBMISSION_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    }
+  ],
+  "by_table": {
+    "IRC_SUBMISSIONS": [
+      {
+        "attribute": "CreationDate",
+        "column": "CREATION_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "SubmissionPEOInternalFlag",
+        "column": "INTERNAL_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "SubmissionPEOObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "SubmissionPEOPersonId",
+        "column": "PERSON_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "SubmissionPEOQstnrScore",
+        "column": "QSTNR_SCORE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "SubmissionPEOSubmissionId",
+        "column": "SUBMISSION_ID",
+        "bicc": true,
+        "pk": false
+      }
+    ],
+    "IRC_OFFERS": [
+      {
+        "attribute": "OffersPEOOfferId",
+        "column": "OFFER_ID",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "IRC_IM_REQ_QSTNRS": [
+      {
+        "attribute": "QstnrVersionNum",
+        "column": "QSTNR_VERSION_NUM",
+        "bicc": true,
+        "pk": true
+      },
+      {
+        "attribute": "QuestionnaireId",
+        "column": "QUESTIONNAIRE_ID",
+        "bicc": true,
+        "pk": true
+      },
+      {
+        "attribute": "RequisitionId",
+        "column": "REQUISITION_ID",
+        "bicc": true,
+        "pk": true
+      },
+      {
+        "attribute": "RequisitionQstnrPEOCreatedBy",
+        "column": "CREATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "RequisitionQstnrPEOCreationDate",
+        "column": "CREATION_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "RequisitionQstnrPEOLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "RequisitionQstnrPEOLastUpdateLogin",
+        "column": "LAST_UPDATE_LOGIN",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "RequisitionQstnrPEOLastUpdatedBy",
+        "column": "LAST_UPDATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "RequisitionQstnrPEOObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "RequisitionQstnrPEOQstnrTypeCode",
+        "column": "QSTNR_TYPE_CODE",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "HRQ_QUESTIONNAIRES_B": [
+      {
+        "attribute": "QuestionnaireBPEOBusinessGroupId",
+        "column": "BUSINESS_GROUP_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "QuestionnaireBPEOMaxPossibleScore",
+        "column": "MAX_POSSIBLE_SCORE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "QuestionnaireBPEOQstnrVersionNum",
+        "column": "QSTNR_VERSION_NUM",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "QuestionnaireBPEOQuestionnaireId",
+        "column": "QUESTIONNAIRE_ID",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "IRC_REQUISITIONS_B": [
+      {
+        "attribute": "RequisitionBPEORequisitionId",
+        "column": "REQUISITION_ID",
+        "bicc": false,
+        "pk": false
+      }
+    ]
+  }
+}

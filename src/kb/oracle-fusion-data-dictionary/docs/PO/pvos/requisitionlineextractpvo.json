@@ -1,0 +1,3538 @@
+{
+  "meta": {
+    "pvo_name": "RequisitionLineExtractPVO",
+    "full_path": "FscmTopModelAM.PrcExtractAM.PorBiccExtractAM.RequisitionLineExtractPVO",
+    "module_path": "FscmTopModelAM.PrcExtractAM.PorBiccExtractAM",
+    "module_code": "PO",
+    "type": "pvo",
+    "description": "Extrai as linhas de requisições de compra para carga BICC, detalhando itens solicitados, quantidades, estimativas de preço, fornecedores sugeridos e local de entrega. Permite análise de demanda por categoria."
+  },
+  "stats": {
+    "total_attributes": 250,
+    "tables_count": 5,
+    "bicc_enabled": 199,
+    "bicc_pct": 80,
+    "pk_count": 1
+  },
+  "tables": [
+    "EGP_CATEGORIES_VL",
+    "EGP_SYSTEM_ITEMS_VL",
+    "HR_LOCATIONS_ALL_F_VL",
+    "PER_PERSON_NAMES_F_V",
+    "POR_REQUISITION_LINES_ALL"
+  ],
+  "attributes": [
+    {
+      "name": "ActionRequiredCode",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "ACTION_REQUIRED_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AdditionalContactEmail",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "ALT_SUPPLIER_CONTACT_EMAILS",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "Amount",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "AMOUNT",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AssessableValue",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "ASSESSABLE_VALUE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AssignedBuyerId",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "ASSIGNED_BUYER_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AtSourcingFlag",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "AT_SOURCING_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "Attribute1",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "ATTRIBUTE1",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "Attribute10",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "ATTRIBUTE10",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "Attribute11",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "ATTRIBUTE11",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "Attribute12",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "ATTRIBUTE12",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "Attribute13",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "ATTRIBUTE13",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "Attribute14",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "ATTRIBUTE14",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "Attribute15",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "ATTRIBUTE15",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "Attribute16",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "ATTRIBUTE16",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "Attribute17",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "ATTRIBUTE17",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "Attribute18",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "ATTRIBUTE18",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "Attribute19",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "ATTRIBUTE19",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "Attribute2",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "ATTRIBUTE2",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "Attribute20",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "ATTRIBUTE20",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "Attribute3",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "ATTRIBUTE3",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "Attribute4",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "ATTRIBUTE4",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "Attribute5",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "ATTRIBUTE5",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "Attribute6",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "ATTRIBUTE6",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "Attribute7",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "ATTRIBUTE7",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "Attribute8",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "ATTRIBUTE8",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "Attribute9",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "ATTRIBUTE9",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AttributeCategory",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "ATTRIBUTE_CATEGORY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AttributeDate1",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "ATTRIBUTE_DATE1",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AttributeDate10",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "ATTRIBUTE_DATE10",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AttributeDate2",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "ATTRIBUTE_DATE2",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AttributeDate3",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "ATTRIBUTE_DATE3",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AttributeDate4",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "ATTRIBUTE_DATE4",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AttributeDate5",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "ATTRIBUTE_DATE5",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AttributeDate6",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "ATTRIBUTE_DATE6",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AttributeDate7",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "ATTRIBUTE_DATE7",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AttributeDate8",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "ATTRIBUTE_DATE8",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AttributeDate9",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "ATTRIBUTE_DATE9",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AttributeNumber1",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "ATTRIBUTE_NUMBER1",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AttributeNumber10",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "ATTRIBUTE_NUMBER10",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AttributeNumber2",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "ATTRIBUTE_NUMBER2",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AttributeNumber3",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "ATTRIBUTE_NUMBER3",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AttributeNumber4",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "ATTRIBUTE_NUMBER4",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AttributeNumber5",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "ATTRIBUTE_NUMBER5",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AttributeNumber6",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "ATTRIBUTE_NUMBER6",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AttributeNumber7",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "ATTRIBUTE_NUMBER7",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AttributeNumber8",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "ATTRIBUTE_NUMBER8",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AttributeNumber9",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "ATTRIBUTE_NUMBER9",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AttributeTimestamp1",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "ATTRIBUTE_TIMESTAMP1",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AttributeTimestamp10",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "ATTRIBUTE_TIMESTAMP10",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AttributeTimestamp2",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "ATTRIBUTE_TIMESTAMP2",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AttributeTimestamp3",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "ATTRIBUTE_TIMESTAMP3",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AttributeTimestamp4",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "ATTRIBUTE_TIMESTAMP4",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AttributeTimestamp5",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "ATTRIBUTE_TIMESTAMP5",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AttributeTimestamp6",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "ATTRIBUTE_TIMESTAMP6",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AttributeTimestamp7",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "ATTRIBUTE_TIMESTAMP7",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AttributeTimestamp8",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "ATTRIBUTE_TIMESTAMP8",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AttributeTimestamp9",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "ATTRIBUTE_TIMESTAMP9",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AuctionDisplayNumber",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "AUCTION_DISPLAY_NUMBER",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AuctionHeaderId",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "AUCTION_HEADER_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AuctionLineNumber",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "AUCTION_LINE_NUMBER",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BackToBackFlag",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "BACK_TO_BACK_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BaseModelId",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "BASE_MODEL_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BaseModelPrice",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "BASE_MODEL_PRICE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BidLineNumber",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "BID_LINE_NUMBER",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BidNumber",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "BID_NUMBER",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BpaPriceUserOverrideFlag",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "BPA_PRICE_USER_OVERRIDE_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BuyerProcessingFlag",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "BUYER_PROCESSING_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CancelDate",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "CANCEL_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CancelFlag",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "CANCEL_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CancelReason",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "CANCEL_REASON",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CarrierId",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "CARRIER_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CategoryId",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "CATEGORY_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CategoryId1",
+      "table": "EGP_CATEGORIES_VL",
+      "column": "CATEGORY_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CategoryName",
+      "table": "EGP_CATEGORIES_VL",
+      "column": "CATEGORY_NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ConfiguredItemFlag",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "CONFIGURED_ITEM_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ContentPrcBuId",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "CONTENT_PRC_BU_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CreatedBy",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "CREATED_BY",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CreationDate",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "CREATION_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CurrencyAmount",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "CURRENCY_AMOUNT",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CurrencyCode",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "CURRENCY_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CurrencyUnitPrice",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "CURRENCY_UNIT_PRICE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerItem",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "CUSTOMER_ITEM",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerItemDesc",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "CUSTOMER_ITEM_DESC",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerPoLineNumber",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "CUSTOMER_PO_LINE_NUMBER",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerPoNumber",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "CUSTOMER_PO_NUMBER",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerPoScheduleNumber",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "CUSTOMER_PO_SCHEDULE_NUMBER",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "DaysEarlyReceiptAllowed",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "DAYS_EARLY_RECEIPT_ALLOWED",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "DaysLateReceiptAllowed",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "DAYS_LATE_RECEIPT_ALLOWED",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "DefaultTaxationCountry",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "DEFAULT_TAXATION_COUNTRY",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "DeliverToCustContactId",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "DELIVER_TO_CUST_CONTACT_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "DeliverToCustId",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "DELIVER_TO_CUST_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "DeliverToCustLocationId",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "DELIVER_TO_CUST_LOCATION_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "DeliverToLocationId",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "DELIVER_TO_LOCATION_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "DestinationOrganizationId",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "DESTINATION_ORGANIZATION_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "DestinationSubinventory",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "DESTINATION_SUBINVENTORY",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "DestinationTypeCode",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "DESTINATION_TYPE_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "DocumentSubType",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "DOCUMENT_SUB_TYPE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "EffectiveEndDate",
+      "table": "HR_LOCATIONS_ALL_F_VL",
+      "column": "EFFECTIVE_END_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "EffectiveEndDate1",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "EFFECTIVE_END_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "EffectiveStartDate",
+      "table": "HR_LOCATIONS_ALL_F_VL",
+      "column": "EFFECTIVE_START_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "EffectiveStartDate1",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "EFFECTIVE_START_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ExternalCategoryValue",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "EXTERNAL_CATEGORY_VALUE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ExternalUomQuantity",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "EXTERNAL_UOM_QUANTITY",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ExternalUomValue",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "EXTERNAL_UOM_VALUE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "FinalDischargeLocationId",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "FINAL_DISCHARGE_LOCATION_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "FirmFlag",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "FIRM_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "FirstPtyRegId",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "FIRST_PTY_REG_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "FundsStatus",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "FUNDS_STATUS",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "HazardClassId",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "HAZARD_CLASS_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InfoTemplateTouchedFlag",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "INFO_TEMPLATE_TOUCHED_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InterfaceLineKey",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "INTERFACE_LINE_KEY",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InventoryItemId",
+      "table": "EGP_SYSTEM_ITEMS_VL",
+      "column": "INVENTORY_ITEM_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ItemDescription",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "ITEM_DESCRIPTION",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ItemId",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "ITEM_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ItemNumber",
+      "table": "EGP_SYSTEM_ITEMS_VL",
+      "column": "ITEM_NUMBER",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ItemRevision",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "ITEM_REVISION",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ItemSource",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "ITEM_SOURCE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ItemUserOverrideFlag",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "ITEM_USER_OVERRIDE_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "JobDefinitionName",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "JOB_DEFINITION_NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "JobDefinitionPackage",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "JOB_DEFINITION_PACKAGE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LastApprovalDate",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "LAST_APPROVAL_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LastSubmittedDate",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "LAST_SUBMITTED_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LastUpdateDate",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": true
+    },
+    {
+      "name": "LastUpdateLogin",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "LAST_UPDATE_LOGIN",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LastUpdatedBy",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "LAST_UPDATED_BY",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LifecycleStatus",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "LIFECYCLE_STATUS",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LineGroup",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "LINE_GROUP",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LineIntendedUse",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "LINE_INTENDED_USE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LineIntendedUseId",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "LINE_INTENDED_USE_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LineLocationId",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "LINE_LOCATION_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LineNumber",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "LINE_NUMBER",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LineStatus",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "LINE_STATUS",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LineTypeId",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "LINE_TYPE_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ListName",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "LIST_NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LocationId",
+      "table": "HR_LOCATIONS_ALL_F_VL",
+      "column": "LOCATION_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LocationName",
+      "table": "HR_LOCATIONS_ALL_F_VL",
+      "column": "LOCATION_NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ManufacturerName",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "MANUFACTURER_NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ManufacturerPartNumber",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "MANUFACTURER_PART_NUMBER",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "MatchingBasis",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "MATCHING_BASIS",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ModeOfTransport",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "MODE_OF_TRANSPORT",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ModifiedByBuyerFlag",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "MODIFIED_BY_BUYER_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ModifiedByBuyerId",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "MODIFIED_BY_BUYER_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NeedByDate",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "NEED_BY_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiatedByPreparerFlag",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "NEGOTIATED_BY_PREPARER_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationRequiredFlag",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "NEGOTIATION_REQUIRED_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NewSupplierFlag",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "NEW_SUPPLIER_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NoteToBuyer",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "NOTE_TO_BUYER",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NoteToReceiver",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "NOTE_TO_RECEIVER",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NoteToSupplier",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "NOTE_TO_SUPPLIER",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ObjectVersionNumber",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ObjectVersionNumber1",
+      "table": "EGP_CATEGORIES_VL",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ObjectVersionNumber2",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "OnRfqFlag",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "ON_RFQ_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "OneTimeLocationFlag",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "ONE_TIME_LOCATION_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "OptionsPrice",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "OPTIONS_PRICE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "OrchestrationCode",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "ORCHESTRATION_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "OrderTypeLookupCode",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "ORDER_TYPE_LOOKUP_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "OrganizationId",
+      "table": "EGP_SYSTEM_ITEMS_VL",
+      "column": "ORGANIZATION_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "OriginalApprovalDate",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "ORIGINAL_APPROVAL_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "OriginalSubmittedDate",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "ORIGINAL_SUBMITTED_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ParentReqLineId",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "PARENT_REQ_LINE_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PcardFlag",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "PCARD_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonNameId",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "PERSON_NAME_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PoHeaderId",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "PO_HEADER_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PoLineId",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "PO_LINE_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PrcBuId",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "PRC_BU_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PriceVarianceExceededAmt",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "PRICE_VARIANCE_EXCEEDED_AMT",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PriceVarianceExceededFlag",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "PRICE_VARIANCE_EXCEEDED_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProductCategory",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "PRODUCT_CATEGORY",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProductFiscClassification",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "PRODUCT_FISC_CLASSIFICATION",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProductFiscClassificationId",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "PRODUCT_FISC_CLASSIFICATION_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProductType",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "PRODUCT_TYPE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PublicListId",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "PUBLIC_LIST_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PunchoutCatalogId",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "PUNCHOUT_CATALOG_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchaseBasis",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "PURCHASE_BASIS",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "QtyRcvTolerance",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "QTY_RCV_TOLERANCE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "Quantity",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "QUANTITY",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "Rate",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "RATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RateDate",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "RATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RateType",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "RATE_TYPE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReceiptCloseTolerancePercent",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "QTY_UNDER_RCV_TOLERANCE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReinstateLineLocationId",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "REINSTATE_LINE_LOCATION_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RepriceFlag",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "REPRICE_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReqBuId",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "REQ_BU_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReqPoInstanceId",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "REQ_PO_INSTANCE_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReqsInPoolFlag",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "REQS_IN_POOL_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReqtopoAutoFailedReason",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "REQTOPO_AUTO_FAILED_REASON",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReqtopoAutomationFailed",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "REQTOPO_AUTOMATION_FAILED",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RequestId",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "REQUEST_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RequestedShipDate",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "REQUESTED_SHIP_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RequesterId",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "REQUESTER_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RequesterSupervisorLevel1",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "REQUESTER_SUPERVISOR_LEVEL1",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RequesterSupervisorLevel10",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "REQUESTER_SUPERVISOR_LEVEL10",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RequesterSupervisorLevel2",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "REQUESTER_SUPERVISOR_LEVEL2",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RequesterSupervisorLevel3",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "REQUESTER_SUPERVISOR_LEVEL3",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RequesterSupervisorLevel4",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "REQUESTER_SUPERVISOR_LEVEL4",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RequesterSupervisorLevel5",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "REQUESTER_SUPERVISOR_LEVEL5",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RequesterSupervisorLevel6",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "REQUESTER_SUPERVISOR_LEVEL6",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RequesterSupervisorLevel7",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "REQUESTER_SUPERVISOR_LEVEL7",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RequesterSupervisorLevel8",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "REQUESTER_SUPERVISOR_LEVEL8",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RequesterSupervisorLevel9",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "REQUESTER_SUPERVISOR_LEVEL9",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RequisitionHeaderId",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "REQUISITION_HEADER_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RequisitionLineId",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "REQUISITION_LINE_ID",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    },
+    {
+      "name": "SalesOrderLineNumber",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "SALES_ORDER_LINE_NUMBER",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SalesOrderNumber",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "SALES_ORDER_NUMBER",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SalesOrderScheduleNumber",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "SALES_ORDER_SCHEDULE_NUMBER",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SecondaryQuantity",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "SECONDARY_QUANTITY",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SecondaryUomCode",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "SECONDARY_UOM_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ServiceLevel",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "SERVICE_LEVEL",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ShipToCustContactId",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "SHIP_TO_CUST_CONTACT_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ShipToCustId",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "SHIP_TO_CUST_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ShipToCustLocationId",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "SHIP_TO_CUST_LOCATION_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SmartFormId",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "SMART_FORM_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SourceDocHeaderId",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "SOURCE_DOC_HEADER_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SourceDocLineId",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "SOURCE_DOC_LINE_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SourceDocumentType",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "SOURCE_DOCUMENT_TYPE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SourceOrganizationId",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "SOURCE_ORGANIZATION_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SourceSubinventory",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "SOURCE_SUBINVENTORY",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SourceTypeCode",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "SOURCE_TYPE_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SuggestedBuyerId",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "SUGGESTED_BUYER_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SuggestedSupplierItemNumber",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "SUGGESTED_SUPPLIER_ITEM_NUMBER",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SuggestedVendorContact",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "SUGGESTED_VENDOR_CONTACT",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SuggestedVendorContactEmail",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "SUGGESTED_VENDOR_CONTACT_EMAIL",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SuggestedVendorContactFax",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "SUGGESTED_VENDOR_CONTACT_FAX",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SuggestedVendorContactPhone",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "SUGGESTED_VENDOR_CONTACT_PHONE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SuggestedVendorName",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "SUGGESTED_VENDOR_NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SuggestedVendorSite",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "SUGGESTED_VENDOR_SITE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SupplierDuns",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "SUPPLIER_DUNS",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SupplierRefNumber",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "SUPPLIER_REF_NUMBER",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TaxAttrUserOverrideFlag",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "TAX_ATTR_USER_OVERRIDE_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TaxClassificationCode",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "TAX_CLASSIFICATION_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ThirdPtyRegId",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "THIRD_PTY_REG_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ToHeaderId",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "TO_HEADER_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ToLineId",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "TO_LINE_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TrxBusinessCategory",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "TRX_BUSINESS_CATEGORY",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "UnNumberId",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "UN_NUMBER_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "UnitPrice",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "UNIT_PRICE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "UnspscCode",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "UNSPSC_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "UomCode",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "UOM_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "UrgentFlag",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "URGENT_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "UserDefinedFiscClass",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "USER_DEFINED_FISC_CLASS",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "VendorContactId",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "VENDOR_CONTACT_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "VendorId",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "VENDOR_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "VendorSiteId",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "VENDOR_SITE_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "WorkOrderId",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "WORK_ORDER_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "WorkOrderNumber",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "WORK_ORDER_NUMBER",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "WorkOrderOperationId",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "WORK_ORDER_OPERATION_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "WorkOrderOperationSeq",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "WORK_ORDER_OPERATION_SEQ",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "WorkOrderProduct",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "WORK_ORDER_PRODUCT",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "WorkOrderSubType",
+      "table": "POR_REQUISITION_LINES_ALL",
+      "column": "WORK_ORDER_SUB_TYPE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    }
+  ],
+  "by_table": {
+    "POR_REQUISITION_LINES_ALL": [
+      {
+        "attribute": "ActionRequiredCode",
+        "column": "ACTION_REQUIRED_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "AdditionalContactEmail",
+        "column": "ALT_SUPPLIER_CONTACT_EMAILS",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "Amount",
+        "column": "AMOUNT",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "AssessableValue",
+        "column": "ASSESSABLE_VALUE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "AssignedBuyerId",
+        "column": "ASSIGNED_BUYER_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "AtSourcingFlag",
+        "column": "AT_SOURCING_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "Attribute1",
+        "column": "ATTRIBUTE1",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "Attribute10",
+        "column": "ATTRIBUTE10",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "Attribute11",
+        "column": "ATTRIBUTE11",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "Attribute12",
+        "column": "ATTRIBUTE12",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "Attribute13",
+        "column": "ATTRIBUTE13",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "Attribute14",
+        "column": "ATTRIBUTE14",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "Attribute15",
+        "column": "ATTRIBUTE15",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "Attribute16",
+        "column": "ATTRIBUTE16",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "Attribute17",
+        "column": "ATTRIBUTE17",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "Attribute18",
+        "column": "ATTRIBUTE18",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "Attribute19",
+        "column": "ATTRIBUTE19",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "Attribute2",
+        "column": "ATTRIBUTE2",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "Attribute20",
+        "column": "ATTRIBUTE20",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "Attribute3",
+        "column": "ATTRIBUTE3",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "Attribute4",
+        "column": "ATTRIBUTE4",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "Attribute5",
+        "column": "ATTRIBUTE5",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "Attribute6",
+        "column": "ATTRIBUTE6",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "Attribute7",
+        "column": "ATTRIBUTE7",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "Attribute8",
+        "column": "ATTRIBUTE8",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "Attribute9",
+        "column": "ATTRIBUTE9",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AttributeCategory",
+        "column": "ATTRIBUTE_CATEGORY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AttributeDate1",
+        "column": "ATTRIBUTE_DATE1",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AttributeDate10",
+        "column": "ATTRIBUTE_DATE10",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AttributeDate2",
+        "column": "ATTRIBUTE_DATE2",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AttributeDate3",
+        "column": "ATTRIBUTE_DATE3",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AttributeDate4",
+        "column": "ATTRIBUTE_DATE4",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AttributeDate5",
+        "column": "ATTRIBUTE_DATE5",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AttributeDate6",
+        "column": "ATTRIBUTE_DATE6",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AttributeDate7",
+        "column": "ATTRIBUTE_DATE7",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AttributeDate8",
+        "column": "ATTRIBUTE_DATE8",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AttributeDate9",
+        "column": "ATTRIBUTE_DATE9",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AttributeNumber1",
+        "column": "ATTRIBUTE_NUMBER1",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AttributeNumber10",
+        "column": "ATTRIBUTE_NUMBER10",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AttributeNumber2",
+        "column": "ATTRIBUTE_NUMBER2",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AttributeNumber3",
+        "column": "ATTRIBUTE_NUMBER3",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AttributeNumber4",
+        "column": "ATTRIBUTE_NUMBER4",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AttributeNumber5",
+        "column": "ATTRIBUTE_NUMBER5",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AttributeNumber6",
+        "column": "ATTRIBUTE_NUMBER6",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AttributeNumber7",
+        "column": "ATTRIBUTE_NUMBER7",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AttributeNumber8",
+        "column": "ATTRIBUTE_NUMBER8",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AttributeNumber9",
+        "column": "ATTRIBUTE_NUMBER9",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AttributeTimestamp1",
+        "column": "ATTRIBUTE_TIMESTAMP1",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AttributeTimestamp10",
+        "column": "ATTRIBUTE_TIMESTAMP10",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AttributeTimestamp2",
+        "column": "ATTRIBUTE_TIMESTAMP2",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AttributeTimestamp3",
+        "column": "ATTRIBUTE_TIMESTAMP3",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AttributeTimestamp4",
+        "column": "ATTRIBUTE_TIMESTAMP4",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AttributeTimestamp5",
+        "column": "ATTRIBUTE_TIMESTAMP5",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AttributeTimestamp6",
+        "column": "ATTRIBUTE_TIMESTAMP6",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AttributeTimestamp7",
+        "column": "ATTRIBUTE_TIMESTAMP7",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AttributeTimestamp8",
+        "column": "ATTRIBUTE_TIMESTAMP8",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AttributeTimestamp9",
+        "column": "ATTRIBUTE_TIMESTAMP9",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AuctionDisplayNumber",
+        "column": "AUCTION_DISPLAY_NUMBER",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "AuctionHeaderId",
+        "column": "AUCTION_HEADER_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "AuctionLineNumber",
+        "column": "AUCTION_LINE_NUMBER",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "BackToBackFlag",
+        "column": "BACK_TO_BACK_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "BaseModelId",
+        "column": "BASE_MODEL_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "BaseModelPrice",
+        "column": "BASE_MODEL_PRICE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "BidLineNumber",
+        "column": "BID_LINE_NUMBER",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "BidNumber",
+        "column": "BID_NUMBER",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "BpaPriceUserOverrideFlag",
+        "column": "BPA_PRICE_USER_OVERRIDE_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "BuyerProcessingFlag",
+        "column": "BUYER_PROCESSING_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CancelDate",
+        "column": "CANCEL_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CancelFlag",
+        "column": "CANCEL_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CancelReason",
+        "column": "CANCEL_REASON",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CarrierId",
+        "column": "CARRIER_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CategoryId",
+        "column": "CATEGORY_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ConfiguredItemFlag",
+        "column": "CONFIGURED_ITEM_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ContentPrcBuId",
+        "column": "CONTENT_PRC_BU_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CreatedBy",
+        "column": "CREATED_BY",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CreationDate",
+        "column": "CREATION_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CurrencyAmount",
+        "column": "CURRENCY_AMOUNT",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CurrencyCode",
+        "column": "CURRENCY_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CurrencyUnitPrice",
+        "column": "CURRENCY_UNIT_PRICE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerItem",
+        "column": "CUSTOMER_ITEM",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerItemDesc",
+        "column": "CUSTOMER_ITEM_DESC",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerPoLineNumber",
+        "column": "CUSTOMER_PO_LINE_NUMBER",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerPoNumber",
+        "column": "CUSTOMER_PO_NUMBER",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerPoScheduleNumber",
+        "column": "CUSTOMER_PO_SCHEDULE_NUMBER",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "DaysEarlyReceiptAllowed",
+        "column": "DAYS_EARLY_RECEIPT_ALLOWED",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "DaysLateReceiptAllowed",
+        "column": "DAYS_LATE_RECEIPT_ALLOWED",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "DefaultTaxationCountry",
+        "column": "DEFAULT_TAXATION_COUNTRY",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "DeliverToCustContactId",
+        "column": "DELIVER_TO_CUST_CONTACT_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "DeliverToCustId",
+        "column": "DELIVER_TO_CUST_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "DeliverToCustLocationId",
+        "column": "DELIVER_TO_CUST_LOCATION_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "DeliverToLocationId",
+        "column": "DELIVER_TO_LOCATION_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "DestinationOrganizationId",
+        "column": "DESTINATION_ORGANIZATION_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "DestinationSubinventory",
+        "column": "DESTINATION_SUBINVENTORY",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "DestinationTypeCode",
+        "column": "DESTINATION_TYPE_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "DocumentSubType",
+        "column": "DOCUMENT_SUB_TYPE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ExternalCategoryValue",
+        "column": "EXTERNAL_CATEGORY_VALUE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ExternalUomQuantity",
+        "column": "EXTERNAL_UOM_QUANTITY",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ExternalUomValue",
+        "column": "EXTERNAL_UOM_VALUE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "FinalDischargeLocationId",
+        "column": "FINAL_DISCHARGE_LOCATION_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "FirmFlag",
+        "column": "FIRM_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "FirstPtyRegId",
+        "column": "FIRST_PTY_REG_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "FundsStatus",
+        "column": "FUNDS_STATUS",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "HazardClassId",
+        "column": "HAZARD_CLASS_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "InfoTemplateTouchedFlag",
+        "column": "INFO_TEMPLATE_TOUCHED_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "InterfaceLineKey",
+        "column": "INTERFACE_LINE_KEY",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ItemDescription",
+        "column": "ITEM_DESCRIPTION",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ItemId",
+        "column": "ITEM_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ItemRevision",
+        "column": "ITEM_REVISION",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ItemSource",
+        "column": "ITEM_SOURCE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ItemUserOverrideFlag",
+        "column": "ITEM_USER_OVERRIDE_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "JobDefinitionName",
+        "column": "JOB_DEFINITION_NAME",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "JobDefinitionPackage",
+        "column": "JOB_DEFINITION_PACKAGE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "LastApprovalDate",
+        "column": "LAST_APPROVAL_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "LastSubmittedDate",
+        "column": "LAST_SUBMITTED_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "LastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "LastUpdateLogin",
+        "column": "LAST_UPDATE_LOGIN",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "LastUpdatedBy",
+        "column": "LAST_UPDATED_BY",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "LifecycleStatus",
+        "column": "LIFECYCLE_STATUS",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "LineGroup",
+        "column": "LINE_GROUP",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "LineIntendedUse",
+        "column": "LINE_INTENDED_USE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "LineIntendedUseId",
+        "column": "LINE_INTENDED_USE_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "LineLocationId",
+        "column": "LINE_LOCATION_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "LineNumber",
+        "column": "LINE_NUMBER",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "LineStatus",
+        "column": "LINE_STATUS",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "LineTypeId",
+        "column": "LINE_TYPE_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ManufacturerName",
+        "column": "MANUFACTURER_NAME",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ManufacturerPartNumber",
+        "column": "MANUFACTURER_PART_NUMBER",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "MatchingBasis",
+        "column": "MATCHING_BASIS",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ModeOfTransport",
+        "column": "MODE_OF_TRANSPORT",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ModifiedByBuyerFlag",
+        "column": "MODIFIED_BY_BUYER_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ModifiedByBuyerId",
+        "column": "MODIFIED_BY_BUYER_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NeedByDate",
+        "column": "NEED_BY_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiatedByPreparerFlag",
+        "column": "NEGOTIATED_BY_PREPARER_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationRequiredFlag",
+        "column": "NEGOTIATION_REQUIRED_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NewSupplierFlag",
+        "column": "NEW_SUPPLIER_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NoteToBuyer",
+        "column": "NOTE_TO_BUYER",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NoteToReceiver",
+        "column": "NOTE_TO_RECEIVER",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NoteToSupplier",
+        "column": "NOTE_TO_SUPPLIER",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "OnRfqFlag",
+        "column": "ON_RFQ_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "OneTimeLocationFlag",
+        "column": "ONE_TIME_LOCATION_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "OptionsPrice",
+        "column": "OPTIONS_PRICE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "OrchestrationCode",
+        "column": "ORCHESTRATION_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "OrderTypeLookupCode",
+        "column": "ORDER_TYPE_LOOKUP_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "OriginalApprovalDate",
+        "column": "ORIGINAL_APPROVAL_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "OriginalSubmittedDate",
+        "column": "ORIGINAL_SUBMITTED_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ParentReqLineId",
+        "column": "PARENT_REQ_LINE_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PcardFlag",
+        "column": "PCARD_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PoHeaderId",
+        "column": "PO_HEADER_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PoLineId",
+        "column": "PO_LINE_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PrcBuId",
+        "column": "PRC_BU_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PriceVarianceExceededAmt",
+        "column": "PRICE_VARIANCE_EXCEEDED_AMT",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PriceVarianceExceededFlag",
+        "column": "PRICE_VARIANCE_EXCEEDED_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ProductCategory",
+        "column": "PRODUCT_CATEGORY",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ProductFiscClassification",
+        "column": "PRODUCT_FISC_CLASSIFICATION",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ProductFiscClassificationId",
+        "column": "PRODUCT_FISC_CLASSIFICATION_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ProductType",
+        "column": "PRODUCT_TYPE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PublicListId",
+        "column": "PUBLIC_LIST_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PunchoutCatalogId",
+        "column": "PUNCHOUT_CATALOG_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PurchaseBasis",
+        "column": "PURCHASE_BASIS",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "QtyRcvTolerance",
+        "column": "QTY_RCV_TOLERANCE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "Quantity",
+        "column": "QUANTITY",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "Rate",
+        "column": "RATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "RateDate",
+        "column": "RATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "RateType",
+        "column": "RATE_TYPE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ReceiptCloseTolerancePercent",
+        "column": "QTY_UNDER_RCV_TOLERANCE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ReinstateLineLocationId",
+        "column": "REINSTATE_LINE_LOCATION_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "RepriceFlag",
+        "column": "REPRICE_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ReqBuId",
+        "column": "REQ_BU_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ReqPoInstanceId",
+        "column": "REQ_PO_INSTANCE_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ReqsInPoolFlag",
+        "column": "REQS_IN_POOL_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ReqtopoAutoFailedReason",
+        "column": "REQTOPO_AUTO_FAILED_REASON",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ReqtopoAutomationFailed",
+        "column": "REQTOPO_AUTOMATION_FAILED",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "RequestId",
+        "column": "REQUEST_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "RequestedShipDate",
+        "column": "REQUESTED_SHIP_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "RequesterId",
+        "column": "REQUESTER_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "RequesterSupervisorLevel1",
+        "column": "REQUESTER_SUPERVISOR_LEVEL1",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "RequesterSupervisorLevel10",
+        "column": "REQUESTER_SUPERVISOR_LEVEL10",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "RequesterSupervisorLevel2",
+        "column": "REQUESTER_SUPERVISOR_LEVEL2",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "RequesterSupervisorLevel3",
+        "column": "REQUESTER_SUPERVISOR_LEVEL3",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "RequesterSupervisorLevel4",
+        "column": "REQUESTER_SUPERVISOR_LEVEL4",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "RequesterSupervisorLevel5",
+        "column": "REQUESTER_SUPERVISOR_LEVEL5",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "RequesterSupervisorLevel6",
+        "column": "REQUESTER_SUPERVISOR_LEVEL6",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "RequesterSupervisorLevel7",
+        "column": "REQUESTER_SUPERVISOR_LEVEL7",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "RequesterSupervisorLevel8",
+        "column": "REQUESTER_SUPERVISOR_LEVEL8",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "RequesterSupervisorLevel9",
+        "column": "REQUESTER_SUPERVISOR_LEVEL9",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "RequisitionHeaderId",
+        "column": "REQUISITION_HEADER_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "RequisitionLineId",
+        "column": "REQUISITION_LINE_ID",
+        "bicc": true,
+        "pk": true
+      },
+      {
+        "attribute": "SalesOrderLineNumber",
+        "column": "SALES_ORDER_LINE_NUMBER",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "SalesOrderNumber",
+        "column": "SALES_ORDER_NUMBER",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "SalesOrderScheduleNumber",
+        "column": "SALES_ORDER_SCHEDULE_NUMBER",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "SecondaryQuantity",
+        "column": "SECONDARY_QUANTITY",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "SecondaryUomCode",
+        "column": "SECONDARY_UOM_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ServiceLevel",
+        "column": "SERVICE_LEVEL",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ShipToCustContactId",
+        "column": "SHIP_TO_CUST_CONTACT_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ShipToCustId",
+        "column": "SHIP_TO_CUST_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ShipToCustLocationId",
+        "column": "SHIP_TO_CUST_LOCATION_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "SmartFormId",
+        "column": "SMART_FORM_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "SourceDocHeaderId",
+        "column": "SOURCE_DOC_HEADER_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "SourceDocLineId",
+        "column": "SOURCE_DOC_LINE_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "SourceDocumentType",
+        "column": "SOURCE_DOCUMENT_TYPE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "SourceOrganizationId",
+        "column": "SOURCE_ORGANIZATION_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "SourceSubinventory",
+        "column": "SOURCE_SUBINVENTORY",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "SourceTypeCode",
+        "column": "SOURCE_TYPE_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "SuggestedBuyerId",
+        "column": "SUGGESTED_BUYER_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "SuggestedSupplierItemNumber",
+        "column": "SUGGESTED_SUPPLIER_ITEM_NUMBER",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "SuggestedVendorContact",
+        "column": "SUGGESTED_VENDOR_CONTACT",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "SuggestedVendorContactEmail",
+        "column": "SUGGESTED_VENDOR_CONTACT_EMAIL",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "SuggestedVendorContactFax",
+        "column": "SUGGESTED_VENDOR_CONTACT_FAX",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "SuggestedVendorContactPhone",
+        "column": "SUGGESTED_VENDOR_CONTACT_PHONE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "SuggestedVendorName",
+        "column": "SUGGESTED_VENDOR_NAME",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "SuggestedVendorSite",
+        "column": "SUGGESTED_VENDOR_SITE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "SupplierDuns",
+        "column": "SUPPLIER_DUNS",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "SupplierRefNumber",
+        "column": "SUPPLIER_REF_NUMBER",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TaxAttrUserOverrideFlag",
+        "column": "TAX_ATTR_USER_OVERRIDE_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TaxClassificationCode",
+        "column": "TAX_CLASSIFICATION_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ThirdPtyRegId",
+        "column": "THIRD_PTY_REG_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ToHeaderId",
+        "column": "TO_HEADER_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ToLineId",
+        "column": "TO_LINE_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TrxBusinessCategory",
+        "column": "TRX_BUSINESS_CATEGORY",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "UnNumberId",
+        "column": "UN_NUMBER_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "UnitPrice",
+        "column": "UNIT_PRICE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "UnspscCode",
+        "column": "UNSPSC_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "UomCode",
+        "column": "UOM_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "UrgentFlag",
+        "column": "URGENT_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "UserDefinedFiscClass",
+        "column": "USER_DEFINED_FISC_CLASS",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "VendorContactId",
+        "column": "VENDOR_CONTACT_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "VendorId",
+        "column": "VENDOR_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "VendorSiteId",
+        "column": "VENDOR_SITE_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "WorkOrderId",
+        "column": "WORK_ORDER_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "WorkOrderNumber",
+        "column": "WORK_ORDER_NUMBER",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "WorkOrderOperationId",
+        "column": "WORK_ORDER_OPERATION_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "WorkOrderOperationSeq",
+        "column": "WORK_ORDER_OPERATION_SEQ",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "WorkOrderProduct",
+        "column": "WORK_ORDER_PRODUCT",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "WorkOrderSubType",
+        "column": "WORK_ORDER_SUB_TYPE",
+        "bicc": true,
+        "pk": false
+      }
+    ],
+    "EGP_CATEGORIES_VL": [
+      {
+        "attribute": "CategoryId1",
+        "column": "CATEGORY_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CategoryName",
+        "column": "CATEGORY_NAME",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ObjectVersionNumber1",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": true,
+        "pk": false
+      }
+    ],
+    "HR_LOCATIONS_ALL_F_VL": [
+      {
+        "attribute": "EffectiveEndDate",
+        "column": "EFFECTIVE_END_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "EffectiveStartDate",
+        "column": "EFFECTIVE_START_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "LocationId",
+        "column": "LOCATION_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "LocationName",
+        "column": "LOCATION_NAME",
+        "bicc": true,
+        "pk": false
+      }
+    ],
+    "PER_PERSON_NAMES_F_V": [
+      {
+        "attribute": "EffectiveEndDate1",
+        "column": "EFFECTIVE_END_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "EffectiveStartDate1",
+        "column": "EFFECTIVE_START_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ListName",
+        "column": "LIST_NAME",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ObjectVersionNumber2",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PersonNameId",
+        "column": "PERSON_NAME_ID",
+        "bicc": true,
+        "pk": false
+      }
+    ],
+    "EGP_SYSTEM_ITEMS_VL": [
+      {
+        "attribute": "InventoryItemId",
+        "column": "INVENTORY_ITEM_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ItemNumber",
+        "column": "ITEM_NUMBER",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "OrganizationId",
+        "column": "ORGANIZATION_ID",
+        "bicc": true,
+        "pk": false
+      }
+    ]
+  }
+}

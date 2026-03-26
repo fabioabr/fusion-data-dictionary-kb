@@ -1,0 +1,819 @@
+{
+  "meta": {
+    "pvo_name": "ParticipantResponsePVO",
+    "full_path": "HcmTopModelAnalyticsGlobalAM.QuestionnaireAM.ParticipantResponsePVO",
+    "module_path": "HcmTopModelAnalyticsGlobalAM.QuestionnaireAM",
+    "module_code": "HCM",
+    "type": "pvo",
+    "description": "Disponibiliza respostas consolidadas de participantes a questionários com flag de última tentativa. Suporta análise longitudinal de respostas e identificação da versão mais recente."
+  },
+  "stats": {
+    "total_attributes": 56,
+    "tables_count": 4,
+    "bicc_enabled": 26,
+    "bicc_pct": 46,
+    "pk_count": 2
+  },
+  "tables": [
+    "HRQ_ALL_QSTN_RESPONSES_V",
+    "HRQ_QSTNR_PARTICIPANTS",
+    "HRQ_QSTNR_RESPONSES",
+    "HRQ_QSTN_RESPONSES"
+  ],
+  "attributes": [
+    {
+      "name": "LatestAttemptFlag",
+      "table": "HRQ_QSTNR_RESPONSES",
+      "column": "LATEST_ATTEMPT_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "QstnResponsePEOAnswerClob",
+      "table": "HRQ_QSTN_RESPONSES",
+      "column": "ANSWER_CLOB",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "QstnResponsePEOAnswerComments",
+      "table": "HRQ_QSTN_RESPONSES",
+      "column": "ANSWER_COMMENTS",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "QstnResponsePEOAnswerList",
+      "table": "HRQ_QSTN_RESPONSES",
+      "column": "ANSWER_LIST",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "QstnResponsePEOAnswerText",
+      "table": "HRQ_QSTN_RESPONSES",
+      "column": "ANSWER_TEXT",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "QstnResponsePEOBusinessGroupId",
+      "table": "HRQ_QSTN_RESPONSES",
+      "column": "BUSINESS_GROUP_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "QstnResponsePEOCreatedBy",
+      "table": "HRQ_QSTN_RESPONSES",
+      "column": "CREATED_BY",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "QstnResponsePEOCreationDate",
+      "table": "HRQ_QSTN_RESPONSES",
+      "column": "CREATION_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "QstnResponsePEOLastUpdateDate",
+      "table": "HRQ_QSTN_RESPONSES",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": true
+    },
+    {
+      "name": "QstnResponsePEOLastUpdateLogin",
+      "table": "HRQ_QSTN_RESPONSES",
+      "column": "LAST_UPDATE_LOGIN",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "QstnResponsePEOLastUpdatedBy",
+      "table": "HRQ_QSTN_RESPONSES",
+      "column": "LAST_UPDATED_BY",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "QstnResponsePEOObjectVersionNumber",
+      "table": "HRQ_QSTN_RESPONSES",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "QstnResponsePEOQstnAnswerId",
+      "table": "HRQ_QSTN_RESPONSES",
+      "column": "QSTN_ANSWER_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "QstnResponsePEOQstnResponseId",
+      "table": "HRQ_QSTN_RESPONSES",
+      "column": "QSTN_RESPONSE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "QstnResponsePEOQstnrQuestionId",
+      "table": "HRQ_QSTN_RESPONSES",
+      "column": "QSTNR_QUESTION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "QstnResponsePEOQstnrResponseId",
+      "table": "HRQ_QSTN_RESPONSES",
+      "column": "QSTNR_RESPONSE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "QstnResponsePEOScore",
+      "table": "HRQ_QSTN_RESPONSES",
+      "column": "SCORE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "QstnResponsePEOSubQuestionId",
+      "table": "HRQ_QSTN_RESPONSES",
+      "column": "SUB_QUESTION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "QuestionResponsePEOAnswerClob",
+      "table": "HRQ_ALL_QSTN_RESPONSES_V",
+      "column": "ANSWER_CLOB",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "QuestionResponsePEOAnswerId",
+      "table": "HRQ_ALL_QSTN_RESPONSES_V",
+      "column": "ANSWER_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "QuestionResponsePEOAnswerText",
+      "table": "HRQ_ALL_QSTN_RESPONSES_V",
+      "column": "ANSWER_TEXT",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "QuestionResponsePEOAnswerType",
+      "table": "HRQ_ALL_QSTN_RESPONSES_V",
+      "column": "ANSWER_TYPE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "QuestionResponsePEOBusinessGroupId",
+      "table": "HRQ_ALL_QSTN_RESPONSES_V",
+      "column": "BUSINESS_GROUP_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "QuestionResponsePEOQstnResponseId",
+      "table": "HRQ_ALL_QSTN_RESPONSES_V",
+      "column": "QSTN_RESPONSE_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "QuestionResponsePEOQstnrQuestionId",
+      "table": "HRQ_ALL_QSTN_RESPONSES_V",
+      "column": "QSTNR_QUESTION_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "QuestionResponsePEOQstnrResponseId",
+      "table": "HRQ_ALL_QSTN_RESPONSES_V",
+      "column": "QSTNR_RESPONSE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "QuestionnairePartcipantPEOBusinessGroupId",
+      "table": "HRQ_QSTNR_PARTICIPANTS",
+      "column": "BUSINESS_GROUP_ID",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    },
+    {
+      "name": "QuestionnairePartcipantPEOParticipantId",
+      "table": "HRQ_QSTNR_PARTICIPANTS",
+      "column": "PARTICIPANT_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "QuestionnairePartcipantPEOQstnrParticipantId",
+      "table": "HRQ_QSTNR_PARTICIPANTS",
+      "column": "QSTNR_PARTICIPANT_ID",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    },
+    {
+      "name": "QuestionnairePartcipantPEOQuestionnaireId",
+      "table": "HRQ_QSTNR_PARTICIPANTS",
+      "column": "QUESTIONNAIRE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "QuestionnairePartcipantPEOSubjectId",
+      "table": "HRQ_QSTNR_PARTICIPANTS",
+      "column": "SUBJECT_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "QuestionnairePartcipantPEOSubscriberId",
+      "table": "HRQ_QSTNR_PARTICIPANTS",
+      "column": "SUBSCRIBER_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "QuestionnaireParticipantPEOCreatedBy",
+      "table": "HRQ_QSTNR_PARTICIPANTS",
+      "column": "CREATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "QuestionnaireParticipantPEOCreationDate",
+      "table": "HRQ_QSTNR_PARTICIPANTS",
+      "column": "CREATION_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "QuestionnaireParticipantPEOLastUpdateDate",
+      "table": "HRQ_QSTNR_PARTICIPANTS",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": true
+    },
+    {
+      "name": "QuestionnaireParticipantPEOLastUpdateLogin",
+      "table": "HRQ_QSTNR_PARTICIPANTS",
+      "column": "LAST_UPDATE_LOGIN",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "QuestionnaireParticipantPEOLastUpdatedBy",
+      "table": "HRQ_QSTNR_PARTICIPANTS",
+      "column": "LAST_UPDATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "QuestionnaireParticipantPEOObjectVersionNumber",
+      "table": "HRQ_QSTNR_PARTICIPANTS",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "QuestionnaireParticipantPEOParticipantType",
+      "table": "HRQ_QSTNR_PARTICIPANTS",
+      "column": "PARTICIPANT_TYPE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "QuestionnaireParticipantPEOStatus",
+      "table": "HRQ_QSTNR_PARTICIPANTS",
+      "column": "STATUS",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "QuestionnaireParticipantPEOSubjectCode",
+      "table": "HRQ_QSTNR_PARTICIPANTS",
+      "column": "SUBJECT_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "QuestionnaireParticipantPEOSubmittedDateTime",
+      "table": "HRQ_QSTNR_PARTICIPANTS",
+      "column": "SUBMITTED_DATE_TIME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "QuestionnaireResponsePEOAttemptNum",
+      "table": "HRQ_QSTNR_RESPONSES",
+      "column": "ATTEMPT_NUM",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "QuestionnaireResponsePEOBusinessGroupId",
+      "table": "HRQ_QSTNR_RESPONSES",
+      "column": "BUSINESS_GROUP_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "QuestionnaireResponsePEOCreatedBy",
+      "table": "HRQ_QSTNR_RESPONSES",
+      "column": "CREATED_BY",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "QuestionnaireResponsePEOCreationDate",
+      "table": "HRQ_QSTNR_RESPONSES",
+      "column": "CREATION_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "QuestionnaireResponsePEOLastUpdateDate",
+      "table": "HRQ_QSTNR_RESPONSES",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": true
+    },
+    {
+      "name": "QuestionnaireResponsePEOLastUpdateLogin",
+      "table": "HRQ_QSTNR_RESPONSES",
+      "column": "LAST_UPDATE_LOGIN",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "QuestionnaireResponsePEOLastUpdatedBy",
+      "table": "HRQ_QSTNR_RESPONSES",
+      "column": "LAST_UPDATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "QuestionnaireResponsePEOObjectVersionNumber",
+      "table": "HRQ_QSTNR_RESPONSES",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "QuestionnaireResponsePEOQstnrParticipantId",
+      "table": "HRQ_QSTNR_RESPONSES",
+      "column": "QSTNR_PARTICIPANT_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "QuestionnaireResponsePEOQstnrResponseId",
+      "table": "HRQ_QSTNR_RESPONSES",
+      "column": "QSTNR_RESPONSE_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "QuestionnaireResponsePEOQstnrVersionNum",
+      "table": "HRQ_QSTNR_RESPONSES",
+      "column": "QSTNR_VERSION_NUM",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "QuestionnaireResponsePEOStatus",
+      "table": "HRQ_QSTNR_RESPONSES",
+      "column": "STATUS",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "QuestionnaireResponsePEOSubmittedDateTime",
+      "table": "HRQ_QSTNR_RESPONSES",
+      "column": "SUBMITTED_DATE_TIME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "QuestionnaireResponsePEOTotalScore",
+      "table": "HRQ_QSTNR_RESPONSES",
+      "column": "TOTAL_SCORE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    }
+  ],
+  "by_table": {
+    "HRQ_QSTNR_RESPONSES": [
+      {
+        "attribute": "LatestAttemptFlag",
+        "column": "LATEST_ATTEMPT_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "QuestionnaireResponsePEOAttemptNum",
+        "column": "ATTEMPT_NUM",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "QuestionnaireResponsePEOBusinessGroupId",
+        "column": "BUSINESS_GROUP_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "QuestionnaireResponsePEOCreatedBy",
+        "column": "CREATED_BY",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "QuestionnaireResponsePEOCreationDate",
+        "column": "CREATION_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "QuestionnaireResponsePEOLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "QuestionnaireResponsePEOLastUpdateLogin",
+        "column": "LAST_UPDATE_LOGIN",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "QuestionnaireResponsePEOLastUpdatedBy",
+        "column": "LAST_UPDATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "QuestionnaireResponsePEOObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "QuestionnaireResponsePEOQstnrParticipantId",
+        "column": "QSTNR_PARTICIPANT_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "QuestionnaireResponsePEOQstnrResponseId",
+        "column": "QSTNR_RESPONSE_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "QuestionnaireResponsePEOQstnrVersionNum",
+        "column": "QSTNR_VERSION_NUM",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "QuestionnaireResponsePEOStatus",
+        "column": "STATUS",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "QuestionnaireResponsePEOSubmittedDateTime",
+        "column": "SUBMITTED_DATE_TIME",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "QuestionnaireResponsePEOTotalScore",
+        "column": "TOTAL_SCORE",
+        "bicc": true,
+        "pk": false
+      }
+    ],
+    "HRQ_QSTN_RESPONSES": [
+      {
+        "attribute": "QstnResponsePEOAnswerClob",
+        "column": "ANSWER_CLOB",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "QstnResponsePEOAnswerComments",
+        "column": "ANSWER_COMMENTS",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "QstnResponsePEOAnswerList",
+        "column": "ANSWER_LIST",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "QstnResponsePEOAnswerText",
+        "column": "ANSWER_TEXT",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "QstnResponsePEOBusinessGroupId",
+        "column": "BUSINESS_GROUP_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "QstnResponsePEOCreatedBy",
+        "column": "CREATED_BY",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "QstnResponsePEOCreationDate",
+        "column": "CREATION_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "QstnResponsePEOLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "QstnResponsePEOLastUpdateLogin",
+        "column": "LAST_UPDATE_LOGIN",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "QstnResponsePEOLastUpdatedBy",
+        "column": "LAST_UPDATED_BY",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "QstnResponsePEOObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "QstnResponsePEOQstnAnswerId",
+        "column": "QSTN_ANSWER_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "QstnResponsePEOQstnResponseId",
+        "column": "QSTN_RESPONSE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "QstnResponsePEOQstnrQuestionId",
+        "column": "QSTNR_QUESTION_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "QstnResponsePEOQstnrResponseId",
+        "column": "QSTNR_RESPONSE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "QstnResponsePEOScore",
+        "column": "SCORE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "QstnResponsePEOSubQuestionId",
+        "column": "SUB_QUESTION_ID",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "HRQ_ALL_QSTN_RESPONSES_V": [
+      {
+        "attribute": "QuestionResponsePEOAnswerClob",
+        "column": "ANSWER_CLOB",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "QuestionResponsePEOAnswerId",
+        "column": "ANSWER_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "QuestionResponsePEOAnswerText",
+        "column": "ANSWER_TEXT",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "QuestionResponsePEOAnswerType",
+        "column": "ANSWER_TYPE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "QuestionResponsePEOBusinessGroupId",
+        "column": "BUSINESS_GROUP_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "QuestionResponsePEOQstnResponseId",
+        "column": "QSTN_RESPONSE_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "QuestionResponsePEOQstnrQuestionId",
+        "column": "QSTNR_QUESTION_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "QuestionResponsePEOQstnrResponseId",
+        "column": "QSTNR_RESPONSE_ID",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "HRQ_QSTNR_PARTICIPANTS": [
+      {
+        "attribute": "QuestionnairePartcipantPEOBusinessGroupId",
+        "column": "BUSINESS_GROUP_ID",
+        "bicc": true,
+        "pk": true
+      },
+      {
+        "attribute": "QuestionnairePartcipantPEOParticipantId",
+        "column": "PARTICIPANT_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "QuestionnairePartcipantPEOQstnrParticipantId",
+        "column": "QSTNR_PARTICIPANT_ID",
+        "bicc": true,
+        "pk": true
+      },
+      {
+        "attribute": "QuestionnairePartcipantPEOQuestionnaireId",
+        "column": "QUESTIONNAIRE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "QuestionnairePartcipantPEOSubjectId",
+        "column": "SUBJECT_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "QuestionnairePartcipantPEOSubscriberId",
+        "column": "SUBSCRIBER_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "QuestionnaireParticipantPEOCreatedBy",
+        "column": "CREATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "QuestionnaireParticipantPEOCreationDate",
+        "column": "CREATION_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "QuestionnaireParticipantPEOLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "QuestionnaireParticipantPEOLastUpdateLogin",
+        "column": "LAST_UPDATE_LOGIN",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "QuestionnaireParticipantPEOLastUpdatedBy",
+        "column": "LAST_UPDATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "QuestionnaireParticipantPEOObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "QuestionnaireParticipantPEOParticipantType",
+        "column": "PARTICIPANT_TYPE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "QuestionnaireParticipantPEOStatus",
+        "column": "STATUS",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "QuestionnaireParticipantPEOSubjectCode",
+        "column": "SUBJECT_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "QuestionnaireParticipantPEOSubmittedDateTime",
+        "column": "SUBMITTED_DATE_TIME",
+        "bicc": true,
+        "pk": false
+      }
+    ]
+  }
+}

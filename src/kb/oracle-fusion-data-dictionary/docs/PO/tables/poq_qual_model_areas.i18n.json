@@ -1,0 +1,403 @@
+{
+  "source": "poq_qual_model_areas.md",
+  "source_hash": "ae80ab49caded62509abab42389ca52a",
+  "translated_at": "2026-03-25",
+  "items": [
+    {
+      "id": 1,
+      "br": "Visão Geral",
+      "en": "Overview",
+      "es": "Visión General"
+    },
+    {
+      "id": 2,
+      "br": "Armazena a associação entre modelos de qualificação e áreas de qualificação, definindo quais áreas compõem cada modelo e com que peso. Funciona como tabela de interseção entre poq_qual_models e poq_qual_areas_vl, adicionando o peso relativo de cada área no cálculo da nota final.",
+      "en": "Stores the association between qualification models and qualification areas, defining which areas compose each model and with what weight. Functions as an intersection table between poq_qual_models and poq_qual_areas_vl, adding the relative weight of each area in the final score calculation.",
+      "es": "Almacena a associação entre modelos de calificación y áreas de calificación, definindo quais áreas compõem cada modelo y con que peso. Funciona como tabla de interseção entre poq_qual_models y poq_qual_areas_vl, adicionando o peso relativo de cada área en el cálculo de la nota final."
+    },
+    {
+      "id": 3,
+      "br": "Tabela de interseção",
+      "en": "Intersection Table",
+      "es": "Tabla de intersección"
+    },
+    {
+      "id": 4,
+      "br": "Esta tabela materializa o relacionamento N:N entre modelos e áreas, sendo fundamental para o cálculo ponderado da pontuação final do fornecedor.",
+      "en": "This table materializes the N:N relationship between models and areas, being fundamental for the weighted calculation of the supplier's final score.",
+      "es": "Esta tabla materializa o relacionamento N:N entre modelos y áreas, sendo fundamental para o cálculo ponderado de la puntuación final del proveedor."
+    },
+    {
+      "id": 5,
+      "br": "Propósito de Negócio",
+      "en": "Business Purpose",
+      "es": "Propósito de Negocio"
+    },
+    {
+      "id": 6,
+      "br": "Esta tabela é utilizada nos seguintes processos:",
+      "en": "This table is used in the following processes:",
+      "es": "Esta tabla se utiliza en los siguientes procesos:"
+    },
+    {
+      "id": 7,
+      "br": "Definição de quais áreas de qualificação compõem cada modelo.",
+      "en": "Definition of which qualification areas compose each model.",
+      "es": "Definición de quais áreas de calificación compõem cada modelo."
+    },
+    {
+      "id": 8,
+      "br": "Configuração do peso de cada área no cálculo da nota consolidada.",
+      "en": "Configuration of each area's weight in the consolidated score calculation.",
+      "es": "Configuración del peso de cada área en el cálculo de la nota consolidada."
+    },
+    {
+      "id": 9,
+      "br": "Permite que a mesma área seja reutilizada em múltiplos modelos com pesos diferentes.",
+      "en": "Allows the same area to be reused in multiple models with different weights.",
+      "es": "Permite que a mesma área seja reutilizada em múltiplos modelos con pesos diferentes."
+    },
+    {
+      "id": 10,
+      "br": "Base para o algoritmo de pontuação ponderada do Supplier Qualification Management.",
+      "en": "Basis for the Supplier Qualification Management weighted scoring algorithm.",
+      "es": "Base para o algoritmo de puntuación ponderada del Supplier Qualification Management."
+    },
+    {
+      "id": 11,
+      "br": "Drill-down de resultados por área dentro de um modelo específico.",
+      "en": "Drill-down of results by area within a specific model.",
+      "es": "Drill-down de resultados por área dentro de un modelo específico."
+    },
+    {
+      "id": 12,
+      "br": "Colunas Principais",
+      "en": "Key Columns",
+      "es": "Columnas Principales"
+    },
+    {
+      "id": 13,
+      "br": "Confiança",
+      "en": "Confidence",
+      "es": "Confianza"
+    },
+    {
+      "id": 14,
+      "br": "Escala de 0% a 100% — grau de certeza da descrição gerada por IA com base na documentação oficial Oracle (OEDMF/BICC Release 13/25A).",
+      "en": "Scale from 0% to 100% — degree of certainty of the AI-generated description based on official Oracle documentation (OEDMF/BICC Release 13/25A).",
+      "es": "Escala de 0% a 100% — grado de certeza de la descripción generada por IA con base en la documentación oficial Oracle (OEDMF/BICC Release 13/25A)."
+    },
+    {
+      "id": 15,
+      "br": "- 🟢 81–100% — Coluna presente na documentação oficial Oracle; nome, tipo e descrição confirmados.",
+      "en": "- 🟢 81–100% — Column present in official Oracle documentation; name, type, and description confirmed.",
+      "es": "- 🟢 81–100% — Columna presente en la documentación oficial Oracle; nombre, tipo y descripción confirmados."
+    },
+    {
+      "id": 16,
+      "br": "- 🟡 51–80% — Coluna inferida por naming convention ou padrão Oracle; tipo exato pode variar.",
+      "en": "- 🟡 51–80% — Column inferred by naming convention or Oracle standard; exact type may vary.",
+      "es": "- 🟡 51–80% — Columna inferida por naming convention o estándar Oracle; el tipo exacto puede variar."
+    },
+    {
+      "id": 17,
+      "br": "- 🔴 0–50% — Existência ou tipo incertos; pode não existir no release atual; validar no ambiente.",
+      "en": "- 🔴 0–50% — Uncertain existence or type; may not exist in the current release; validate in the environment.",
+      "es": "- 🔴 0–50% — Existencia o tipo inciertos; puede no existir en el release actual; validar en el ambiente."
+    },
+    {
+      "id": 18,
+      "br": "Coluna",
+      "en": "Column",
+      "es": "Columna"
+    },
+    {
+      "id": 19,
+      "br": "Tipo",
+      "en": "Type",
+      "es": "Tipo"
+    },
+    {
+      "id": 20,
+      "br": "Nulo?",
+      "en": "Nullable?",
+      "es": "¿Nulo?"
+    },
+    {
+      "id": 21,
+      "br": "Categoria",
+      "en": "Category",
+      "es": "Categoría"
+    },
+    {
+      "id": 22,
+      "br": "Descrição",
+      "en": "Description",
+      "es": "Descripción"
+    },
+    {
+      "id": 23,
+      "br": "Identificador único do registro de associação",
+      "en": "Unique association record identifier",
+      "es": "Identificador único del registro de associação"
+    },
+    {
+      "id": 24,
+      "br": "Modelo de qualificação",
+      "en": "Qualification model",
+      "es": "Modelo de calificación"
+    },
+    {
+      "id": 25,
+      "br": "Área de qualificação",
+      "en": "Qualification area",
+      "es": "Área de calificación"
+    },
+    {
+      "id": 26,
+      "br": "Pontuação",
+      "en": "Score",
+      "es": "Puntuación"
+    },
+    {
+      "id": 27,
+      "br": "Peso percentual da área no modelo (0–100)",
+      "en": "Area percentage weight in the model (0–100)",
+      "es": "Peso percentual de la área en el modelo (0–100)"
+    },
+    {
+      "id": 28,
+      "br": "Identificação",
+      "en": "Identification",
+      "es": "Identificación"
+    },
+    {
+      "id": 29,
+      "br": "Ordem de exibição da área no modelo",
+      "en": "Area display order in the model",
+      "es": "Ordem de exhibición de la área en el modelo"
+    },
+    {
+      "id": 30,
+      "br": "Classificação",
+      "en": "Classification",
+      "es": "Clasificación"
+    },
+    {
+      "id": 31,
+      "br": "Se a área é obrigatória no modelo: Y/N",
+      "en": "Whether the area is mandatory in the model: Y/N",
+      "es": "Se a área é obligatoria en el modelo: Y/N"
+    },
+    {
+      "id": 32,
+      "br": "Se a área usa critério pass/fail independente: Y/N",
+      "en": "Whether the area uses independent pass/fail criterion: Y/N",
+      "es": "Se a área usa criterio pass/fail independente: Y/N"
+    },
+    {
+      "id": 33,
+      "br": "Score mínimo na área para aprovação (quando pass/fail)",
+      "en": "Minimum area score for approval (when pass/fail)",
+      "es": "Score mínimo en la área para aprobación (cuando pass/fail)"
+    },
+    {
+      "id": 34,
+      "br": "Se a associação está ativa: Y/N",
+      "en": "Whether the association is active: Y/N",
+      "es": "Se a associação está activa: Y/N"
+    },
+    {
+      "id": 35,
+      "br": "Auditoria",
+      "en": "Audit",
+      "es": "Auditoría"
+    },
+    {
+      "id": 36,
+      "br": "Usuário que criou o registro",
+      "en": "User who created the record",
+      "es": "Usuario que creó el registro"
+    },
+    {
+      "id": 37,
+      "br": "Data/hora de criação",
+      "en": "Creation date/time",
+      "es": "Fecha/hora de creación"
+    },
+    {
+      "id": 38,
+      "br": "Último usuário que alterou",
+      "en": "Last user who modified",
+      "es": "Último usuario que modificó"
+    },
+    {
+      "id": 39,
+      "br": "Data/hora da última alteração",
+      "en": "Last modification date/time",
+      "es": "Fecha/hora de la última modificación"
+    },
+    {
+      "id": 40,
+      "br": "Login da última sessão",
+      "en": "Last session login",
+      "es": "Login de la última sesión"
+    },
+    {
+      "id": 41,
+      "br": "Controle",
+      "en": "Control",
+      "es": "Control"
+    },
+    {
+      "id": 42,
+      "br": "Controle de concorrência otimista",
+      "en": "Optimistic concurrency control",
+      "es": "Control de concurrencia optimista"
+    },
+    {
+      "id": 43,
+      "br": "Relacionamentos",
+      "en": "Relationships",
+      "es": "Relaciones"
+    },
+    {
+      "id": 44,
+      "br": "Tabelas-pai (FK de entrada)",
+      "en": "Parent Tables (inbound FK)",
+      "es": "Tablas padre (FK de entrada)"
+    },
+    {
+      "id": 45,
+      "br": "modelo de qualificação",
+      "en": "qualification model",
+      "es": "modelo de calificación"
+    },
+    {
+      "id": 46,
+      "br": "área de qualificação",
+      "en": "qualification area",
+      "es": "área de calificación"
+    },
+    {
+      "id": 47,
+      "br": "Tabelas-filha (FK de saída)",
+      "en": "Child Tables (outbound FK)",
+      "es": "Tablas hija (FK de salida)"
+    },
+    {
+      "id": 48,
+      "br": "Nenhuma direta — esta é uma tabela de interseção.",
+      "en": "None directly — this is an intersection table.",
+      "es": "Nenhuma direta — esta é una tabla de interseção."
+    },
+    {
+      "id": 49,
+      "br": "Tabelas relacionadas",
+      "en": "Related Tables",
+      "es": "Tablas relacionadas"
+    },
+    {
+      "id": 50,
+      "br": "poq_qual_area_questions — perguntas das áreas referenciadas",
+      "en": "poq_qual_area_questions — questions from referenced areas",
+      "es": "poq_qual_area_questions — preguntas de las áreas referenciadas"
+    },
+    {
+      "id": 51,
+      "br": "poq_qual_area_outcomes — outcomes das áreas referenciadas",
+      "en": "poq_qual_area_outcomes — outcomes from referenced areas",
+      "es": "poq_qual_area_outcomes — outcomes de las áreas referenciadas"
+    },
+    {
+      "id": 52,
+      "br": "Uso Típico",
+      "en": "Typical Usage",
+      "es": "Uso Típico"
+    },
+    {
+      "id": 53,
+      "br": "Áreas e pesos de um modelo",
+      "en": "Areas and weights of a model",
+      "es": "Áreas y pesos de un modelo"
+    },
+    {
+      "id": 54,
+      "br": "Verificar se pesos somam 100%",
+      "en": "Verify if weights sum to 100%",
+      "es": "Verificar si pesos somam 100%"
+    },
+    {
+      "id": 55,
+      "br": "Filtros comuns",
+      "en": "Common Filters",
+      "es": "Filtros comunes"
+    },
+    {
+      "id": 56,
+      "br": "Associações ativas",
+      "en": "Active associations",
+      "es": "Associações activas"
+    },
+    {
+      "id": 57,
+      "br": "Áreas obrigatórias",
+      "en": "Mandatory areas",
+      "es": "Áreas obligatorias"
+    },
+    {
+      "id": 58,
+      "br": "Áreas com critério eliminatório",
+      "en": "Areas with eliminatory criterion",
+      "es": "Áreas con criterio eliminatório"
+    },
+    {
+      "id": 59,
+      "br": "Observações",
+      "en": "Notes",
+      "es": "Observaciones"
+    },
+    {
+      "id": 60,
+      "br": "A soma de WEIGHT_PERCENT de todas as áreas ativas de um modelo deve totalizar 100%.",
+      "en": "The sum of WEIGHT_PERCENT of all active areas in a model must total 100%.",
+      "es": "A soma de WEIGHT_PERCENT de todas as áreas activas de un modelo deve totalizar 100%."
+    },
+    {
+      "id": 61,
+      "br": "Quando PASS_FAIL_FLAG = 'Y', o fornecedor precisa atingir o MIN_PASSING_SCORE nesta área independentemente da nota final ponderada — funciona como critério eliminatório.",
+      "en": "When PASS_FAIL_FLAG = 'Y', the supplier must reach the MIN_PASSING_SCORE in this area regardless of the weighted final score — it functions as an eliminatory criterion.",
+      "es": "Quando PASS_FAIL_FLAG = 'Y', o proveedor precisa atingir o MIN_PASSING_SCORE nesta área independentemente de la nota final ponderada — funciona como criterio eliminatório."
+    },
+    {
+      "id": 62,
+      "br": "Cada par QUAL_MODEL_ID + QUAL_AREA_ID deve ser único (constraint esperada).",
+      "en": "Each QUAL_MODEL_ID + QUAL_AREA_ID pair must be unique (expected constraint).",
+      "es": "Cada par QUAL_MODEL_ID + QUAL_AREA_ID deve ser único (constraint esperada)."
+    },
+    {
+      "id": 63,
+      "br": "A mesma área pode aparecer em múltiplos modelos com pesos diferentes, proporcionando flexibilidade na configuração.",
+      "en": "The same area can appear in multiple models with different weights, providing configuration flexibility.",
+      "es": "A mesma área puede aparecer em múltiplos modelos con pesos diferentes, proporcionando flexibilidade en la configuración."
+    },
+    {
+      "id": 64,
+      "br": "Referências",
+      "en": "References",
+      "es": "Referencias"
+    },
+    {
+      "id": 65,
+      "br": "[Oracle Docs — Supplier Qualification Management](https://docs.oracle.com/en/cloud/saas/procurement/25a/oedmf/)",
+      "en": "[Oracle Docs — Supplier Qualification Management](https://docs.oracle.com/en/cloud/saas/procurement/25a/oedmf/)",
+      "es": "[Oracle Docs — Supplier Qualification Management](https://docs.oracle.com/en/cloud/saas/procurement/25a/oedmf/)"
+    },
+    {
+      "id": 66,
+      "br": "po-module-data-dictionary — Dossiê do módulo PO/Procurement",
+      "en": "po-module-data-dictionary — module dossier for PO/Procurement",
+      "es": "po-module-data-dictionary — Dosier del módulo PO/Procurement"
+    }
+  ]
+}

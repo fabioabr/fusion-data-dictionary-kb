@@ -1,0 +1,1324 @@
+{
+  "meta": {
+    "pvo_name": "XccCmrInventoryTransactionPVO",
+    "full_path": "FscmTopModelAM.FinCcControlEnginePublicModelAM.XccCmrInventoryTransactionPVO",
+    "module_path": "FscmTopModelAM.FinCcControlEnginePublicModelAM",
+    "module_code": "OTHER",
+    "type": "pvo",
+    "description": "View Object para extração BICC de dados de Xcc Cmr Inventory Transaction. Acessa as tabelas: CMR_PURCHASE_ORDER_DTLS, CMR_RCV_DISTRIBUTIONS, CMR_RCV_EVENTS (+6)."
+  },
+  "stats": {
+    "total_attributes": 91,
+    "tables_count": 9,
+    "bicc_enabled": 39,
+    "bicc_pct": 43,
+    "pk_count": 1
+  },
+  "tables": [
+    "CMR_PURCHASE_ORDER_DTLS",
+    "CMR_RCV_DISTRIBUTIONS",
+    "CMR_RCV_EVENTS",
+    "CMR_RCV_EVENT_COSTS",
+    "CMR_RCV_EVENT_TYPES",
+    "CMR_RCV_TRANSACTIONS",
+    "PER_PERSON_NAMES_F_V",
+    "PER_USERS",
+    "XLA_EVENT_TYPES_VL"
+  ],
+  "attributes": [
+    {
+      "name": "AccountingEventId",
+      "table": "CMR_RCV_EVENTS",
+      "column": "ACCOUNTING_EVENT_ID",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    },
+    {
+      "name": "CmrRcvDistributionsAccountedQty",
+      "table": "CMR_RCV_DISTRIBUTIONS",
+      "column": "ACCOUNTED_QTY",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CmrRcvDistributionsAccountingLineType",
+      "table": "CMR_RCV_DISTRIBUTIONS",
+      "column": "ACCOUNTING_LINE_TYPE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CmrRcvDistributionsCmrSubLedgerId",
+      "table": "CMR_RCV_DISTRIBUTIONS",
+      "column": "CMR_SUB_LEDGER_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CmrRcvDistributionsCodeCombinationId",
+      "table": "CMR_RCV_DISTRIBUTIONS",
+      "column": "CODE_COMBINATION_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CmrRcvDistributionsEnteredCurrencyAmount",
+      "table": "CMR_RCV_DISTRIBUTIONS",
+      "column": "ENTERED_CURRENCY_AMOUNT",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CmrRcvDistributionsEnteredCurrencyCode",
+      "table": "CMR_RCV_DISTRIBUTIONS",
+      "column": "ENTERED_CURRENCY_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CmrRcvDistributionsLedgerAmount",
+      "table": "CMR_RCV_DISTRIBUTIONS",
+      "column": "LEDGER_AMOUNT",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CmrRcvDistributionsLedgerCurrencyCode",
+      "table": "CMR_RCV_DISTRIBUTIONS",
+      "column": "LEDGER_CURRENCY_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CmrRcvEventCostsAccountingEventId",
+      "table": "CMR_RCV_EVENT_COSTS",
+      "column": "ACCOUNTING_EVENT_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CmrRcvEventCostsEventCostId",
+      "table": "CMR_RCV_EVENT_COSTS",
+      "column": "EVENT_COST_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CmrRcvEventsAccountedFlag",
+      "table": "CMR_RCV_EVENTS",
+      "column": "ACCOUNTED_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CmrRcvEventsBudgetaryControlFlag",
+      "table": "CMR_RCV_EVENTS",
+      "column": "BUDGETARY_CONTROL_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CmrRcvEventsCmrPoDistributionId",
+      "table": "CMR_RCV_EVENTS",
+      "column": "CMR_PO_DISTRIBUTION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CmrRcvEventsCmrRcvTransactionId",
+      "table": "CMR_RCV_EVENTS",
+      "column": "CMR_RCV_TRANSACTION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CmrRcvEventsConsignedFlag",
+      "table": "CMR_RCV_EVENTS",
+      "column": "CONSIGNED_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CmrRcvEventsCreatedBy",
+      "table": "CMR_RCV_EVENTS",
+      "column": "CREATED_BY",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CmrRcvEventsCreationDate",
+      "table": "CMR_RCV_EVENTS",
+      "column": "CREATION_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CmrRcvEventsDestinationTypeCode",
+      "table": "CMR_RCV_EVENTS",
+      "column": "DESTINATION_TYPE_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CmrRcvEventsEncumbranceAccountingFlag",
+      "table": "CMR_RCV_EVENTS",
+      "column": "ENCUMBRANCE_ACCOUNTING_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CmrRcvEventsEncumbranceReversalAcctAmt",
+      "table": "CMR_RCV_EVENTS",
+      "column": "ENCUMBRANCE_REVERSAL_ACCT_AMT",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CmrRcvEventsEncumbranceReversalEntrAmt",
+      "table": "CMR_RCV_EVENTS",
+      "column": "ENCUMBRANCE_REVERSAL_ENTR_AMT",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CmrRcvEventsEnteredCurrencyCode",
+      "table": "CMR_RCV_EVENTS",
+      "column": "ENTERED_CURRENCY_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CmrRcvEventsEntityCode",
+      "table": "CMR_RCV_EVENTS",
+      "column": "ENTITY_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CmrRcvEventsEventClassCode",
+      "table": "CMR_RCV_EVENTS",
+      "column": "EVENT_CLASS_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CmrRcvEventsEventId",
+      "table": "CMR_RCV_EVENTS",
+      "column": "EVENT_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CmrRcvEventsEventSource",
+      "table": "CMR_RCV_EVENTS",
+      "column": "EVENT_SOURCE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CmrRcvEventsEventTypeCode",
+      "table": "CMR_RCV_EVENTS",
+      "column": "EVENT_TYPE_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CmrRcvEventsFundReservationStatus",
+      "table": "CMR_RCV_EVENTS",
+      "column": "FUND_RESERVATION_STATUS",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CmrRcvEventsGlDate",
+      "table": "CMR_RCV_EVENTS",
+      "column": "GL_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CmrRcvEventsLastUpdateDate",
+      "table": "CMR_RCV_EVENTS",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": true
+    },
+    {
+      "name": "CmrRcvEventsLastUpdatedBy",
+      "table": "CMR_RCV_EVENTS",
+      "column": "LAST_UPDATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CmrRcvEventsNonrecoverableTax",
+      "table": "CMR_RCV_EVENTS",
+      "column": "NONRECOVERABLE_TAX",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CmrRcvEventsPersonCreatedByDisplayName",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "DISPLAY_NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CmrRcvEventsPersonCreatedByEffectiveEndDate",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "EFFECTIVE_END_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CmrRcvEventsPersonCreatedByEffectiveStartDate",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "EFFECTIVE_START_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CmrRcvEventsPersonCreatedByFullName",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "FULL_NAME",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CmrRcvEventsPersonCreatedByPersonId",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "PERSON_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CmrRcvEventsPersonCreatedByPersonNameId",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "PERSON_NAME_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CmrRcvEventsPersonLastUpdateByDisplayName",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "DISPLAY_NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CmrRcvEventsPersonLastUpdateByEffectiveEndDate",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "EFFECTIVE_END_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CmrRcvEventsPersonLastUpdateByEffectiveStartDate",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "EFFECTIVE_START_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CmrRcvEventsPersonLastUpdateByFullName",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "FULL_NAME",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CmrRcvEventsPersonLastUpdateByPersonId",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "PERSON_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CmrRcvEventsPersonLastUpdateByPersonNameId",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "PERSON_NAME_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CmrRcvEventsPoUnitPrice",
+      "table": "CMR_RCV_EVENTS",
+      "column": "PO_UNIT_PRICE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CmrRcvEventsPrimaryQty",
+      "table": "CMR_RCV_EVENTS",
+      "column": "PRIMARY_QTY",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CmrRcvEventsPrimaryUomCode",
+      "table": "CMR_RCV_EVENTS",
+      "column": "PRIMARY_UOM_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CmrRcvEventsReceiptCreationDate",
+      "table": "CMR_RCV_EVENTS",
+      "column": "RECEIPT_CREATION_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CmrRcvEventsSlaTransactionNumber",
+      "table": "CMR_RCV_EVENTS",
+      "column": "SLA_TRANSACTION_NUMBER",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CmrRcvEventsSourceDocNumber",
+      "table": "CMR_RCV_EVENTS",
+      "column": "SOURCE_DOC_NUMBER",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CmrRcvEventsSourceDocQty",
+      "table": "CMR_RCV_EVENTS",
+      "column": "SOURCE_DOC_QTY",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CmrRcvEventsSourceDocUomCode",
+      "table": "CMR_RCV_EVENTS",
+      "column": "SOURCE_DOC_UOM_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CmrRcvEventsTransactionAmt",
+      "table": "CMR_RCV_EVENTS",
+      "column": "TRANSACTION_AMT",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CmrRcvEventsTransactionDate",
+      "table": "CMR_RCV_EVENTS",
+      "column": "TRANSACTION_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CmrRcvEventsTransactionQty",
+      "table": "CMR_RCV_EVENTS",
+      "column": "TRANSACTION_QTY",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CmrRcvEventsTransactionTypeCode",
+      "table": "CMR_RCV_EVENTS",
+      "column": "TRANSACTION_TYPE_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CmrRcvEventsTransactionUomCode",
+      "table": "CMR_RCV_EVENTS",
+      "column": "TRANSACTION_UOM_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CmrRcvEventsTransferPrice",
+      "table": "CMR_RCV_EVENTS",
+      "column": "TRANSFER_PRICE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CmrRcvEventsUserCreatedByObjectVersionNumber",
+      "table": "PER_USERS",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CmrRcvEventsUserCreatedByPersonId",
+      "table": "PER_USERS",
+      "column": "PERSON_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CmrRcvEventsUserCreatedByUserId",
+      "table": "PER_USERS",
+      "column": "USER_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CmrRcvEventsUserCreatedByUsername",
+      "table": "PER_USERS",
+      "column": "USERNAME",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CmrRcvEventsUserLastUpdateByObjectVersionNumber",
+      "table": "PER_USERS",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CmrRcvEventsUserLastUpdateByPersonId",
+      "table": "PER_USERS",
+      "column": "PERSON_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CmrRcvEventsUserLastUpdateByUserId",
+      "table": "PER_USERS",
+      "column": "USER_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CmrRcvEventsUserLastUpdateByUsername",
+      "table": "PER_USERS",
+      "column": "USERNAME",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CmrRcvTransactionsCmrRcvTransactionId",
+      "table": "CMR_RCV_TRANSACTIONS",
+      "column": "CMR_RCV_TRANSACTION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CmrRcvTransactionsTransactionDate",
+      "table": "CMR_RCV_TRANSACTIONS",
+      "column": "TRANSACTION_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CmrRcvTransactionsTransactionQuantity",
+      "table": "CMR_RCV_TRANSACTIONS",
+      "column": "TRANSACTION_QUANTITY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CmrRcvTransactionsTransactionType",
+      "table": "CMR_RCV_TRANSACTIONS",
+      "column": "TRANSACTION_TYPE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CmrRcvTransactionsTransactionUomCode",
+      "table": "CMR_RCV_TRANSACTIONS",
+      "column": "TRANSACTION_UOM_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "EventTypeTranslationApplicationId",
+      "table": "XLA_EVENT_TYPES_VL",
+      "column": "APPLICATION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "EventTypeTranslationDescription",
+      "table": "XLA_EVENT_TYPES_VL",
+      "column": "DESCRIPTION",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "EventTypeTranslationEntityCode",
+      "table": "XLA_EVENT_TYPES_VL",
+      "column": "ENTITY_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "EventTypeTranslationEventClassCode",
+      "table": "XLA_EVENT_TYPES_VL",
+      "column": "EVENT_CLASS_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "EventTypeTranslationEventTypeCode",
+      "table": "XLA_EVENT_TYPES_VL",
+      "column": "EVENT_TYPE_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "EventTypeTranslationName",
+      "table": "XLA_EVENT_TYPES_VL",
+      "column": "NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "EventTypeTranslationObjectVersionNumber",
+      "table": "XLA_EVENT_TYPES_VL",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchaseOrderDtlsAccrueOnReceiptFlag",
+      "table": "CMR_PURCHASE_ORDER_DTLS",
+      "column": "ACCRUE_ON_RECEIPT_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchaseOrderDtlsActiveFlag",
+      "table": "CMR_PURCHASE_ORDER_DTLS",
+      "column": "ACTIVE_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchaseOrderDtlsCmrPoDistributionId",
+      "table": "CMR_PURCHASE_ORDER_DTLS",
+      "column": "CMR_PO_DISTRIBUTION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchaseOrderDtlsConsignedFlag",
+      "table": "CMR_PURCHASE_ORDER_DTLS",
+      "column": "CONSIGNED_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchaseOrderDtlsDestinationTypeCode",
+      "table": "CMR_PURCHASE_ORDER_DTLS",
+      "column": "DESTINATION_TYPE_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchaseOrderDtlsDistributionNumber",
+      "table": "CMR_PURCHASE_ORDER_DTLS",
+      "column": "DISTRIBUTION_NUMBER",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchaseOrderDtlsEventDate",
+      "table": "CMR_PURCHASE_ORDER_DTLS",
+      "column": "EVENT_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchaseOrderDtlsExternalSystemRefId",
+      "table": "CMR_PURCHASE_ORDER_DTLS",
+      "column": "EXTERNAL_SYSTEM_REF_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchaseOrderDtlsExternalSystemReference",
+      "table": "CMR_PURCHASE_ORDER_DTLS",
+      "column": "EXTERNAL_SYSTEM_REFERENCE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchaseOrderDtlsPoNumber",
+      "table": "CMR_PURCHASE_ORDER_DTLS",
+      "column": "PO_NUMBER",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchaseOrderDtlsSfoPrimaryTradeRelationId",
+      "table": "CMR_PURCHASE_ORDER_DTLS",
+      "column": "SFO_PRIMARY_TRADE_RELATION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RcvEventTypesTransactionType",
+      "table": "CMR_RCV_EVENT_TYPES",
+      "column": "TRANSACTION_TYPE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    }
+  ],
+  "by_table": {
+    "CMR_RCV_EVENTS": [
+      {
+        "attribute": "AccountingEventId",
+        "column": "ACCOUNTING_EVENT_ID",
+        "bicc": true,
+        "pk": true
+      },
+      {
+        "attribute": "CmrRcvEventsAccountedFlag",
+        "column": "ACCOUNTED_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CmrRcvEventsBudgetaryControlFlag",
+        "column": "BUDGETARY_CONTROL_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CmrRcvEventsCmrPoDistributionId",
+        "column": "CMR_PO_DISTRIBUTION_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CmrRcvEventsCmrRcvTransactionId",
+        "column": "CMR_RCV_TRANSACTION_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CmrRcvEventsConsignedFlag",
+        "column": "CONSIGNED_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CmrRcvEventsCreatedBy",
+        "column": "CREATED_BY",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CmrRcvEventsCreationDate",
+        "column": "CREATION_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CmrRcvEventsDestinationTypeCode",
+        "column": "DESTINATION_TYPE_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CmrRcvEventsEncumbranceAccountingFlag",
+        "column": "ENCUMBRANCE_ACCOUNTING_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CmrRcvEventsEncumbranceReversalAcctAmt",
+        "column": "ENCUMBRANCE_REVERSAL_ACCT_AMT",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CmrRcvEventsEncumbranceReversalEntrAmt",
+        "column": "ENCUMBRANCE_REVERSAL_ENTR_AMT",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CmrRcvEventsEnteredCurrencyCode",
+        "column": "ENTERED_CURRENCY_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CmrRcvEventsEntityCode",
+        "column": "ENTITY_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CmrRcvEventsEventClassCode",
+        "column": "EVENT_CLASS_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CmrRcvEventsEventId",
+        "column": "EVENT_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CmrRcvEventsEventSource",
+        "column": "EVENT_SOURCE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CmrRcvEventsEventTypeCode",
+        "column": "EVENT_TYPE_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CmrRcvEventsFundReservationStatus",
+        "column": "FUND_RESERVATION_STATUS",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CmrRcvEventsGlDate",
+        "column": "GL_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CmrRcvEventsLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CmrRcvEventsLastUpdatedBy",
+        "column": "LAST_UPDATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CmrRcvEventsNonrecoverableTax",
+        "column": "NONRECOVERABLE_TAX",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CmrRcvEventsPoUnitPrice",
+        "column": "PO_UNIT_PRICE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CmrRcvEventsPrimaryQty",
+        "column": "PRIMARY_QTY",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CmrRcvEventsPrimaryUomCode",
+        "column": "PRIMARY_UOM_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CmrRcvEventsReceiptCreationDate",
+        "column": "RECEIPT_CREATION_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CmrRcvEventsSlaTransactionNumber",
+        "column": "SLA_TRANSACTION_NUMBER",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CmrRcvEventsSourceDocNumber",
+        "column": "SOURCE_DOC_NUMBER",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CmrRcvEventsSourceDocQty",
+        "column": "SOURCE_DOC_QTY",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CmrRcvEventsSourceDocUomCode",
+        "column": "SOURCE_DOC_UOM_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CmrRcvEventsTransactionAmt",
+        "column": "TRANSACTION_AMT",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CmrRcvEventsTransactionDate",
+        "column": "TRANSACTION_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CmrRcvEventsTransactionQty",
+        "column": "TRANSACTION_QTY",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CmrRcvEventsTransactionTypeCode",
+        "column": "TRANSACTION_TYPE_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CmrRcvEventsTransactionUomCode",
+        "column": "TRANSACTION_UOM_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CmrRcvEventsTransferPrice",
+        "column": "TRANSFER_PRICE",
+        "bicc": true,
+        "pk": false
+      }
+    ],
+    "CMR_RCV_DISTRIBUTIONS": [
+      {
+        "attribute": "CmrRcvDistributionsAccountedQty",
+        "column": "ACCOUNTED_QTY",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CmrRcvDistributionsAccountingLineType",
+        "column": "ACCOUNTING_LINE_TYPE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CmrRcvDistributionsCmrSubLedgerId",
+        "column": "CMR_SUB_LEDGER_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CmrRcvDistributionsCodeCombinationId",
+        "column": "CODE_COMBINATION_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CmrRcvDistributionsEnteredCurrencyAmount",
+        "column": "ENTERED_CURRENCY_AMOUNT",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CmrRcvDistributionsEnteredCurrencyCode",
+        "column": "ENTERED_CURRENCY_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CmrRcvDistributionsLedgerAmount",
+        "column": "LEDGER_AMOUNT",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CmrRcvDistributionsLedgerCurrencyCode",
+        "column": "LEDGER_CURRENCY_CODE",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "CMR_RCV_EVENT_COSTS": [
+      {
+        "attribute": "CmrRcvEventCostsAccountingEventId",
+        "column": "ACCOUNTING_EVENT_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CmrRcvEventCostsEventCostId",
+        "column": "EVENT_COST_ID",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "PER_PERSON_NAMES_F_V": [
+      {
+        "attribute": "CmrRcvEventsPersonCreatedByDisplayName",
+        "column": "DISPLAY_NAME",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CmrRcvEventsPersonCreatedByEffectiveEndDate",
+        "column": "EFFECTIVE_END_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CmrRcvEventsPersonCreatedByEffectiveStartDate",
+        "column": "EFFECTIVE_START_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CmrRcvEventsPersonCreatedByFullName",
+        "column": "FULL_NAME",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CmrRcvEventsPersonCreatedByPersonId",
+        "column": "PERSON_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CmrRcvEventsPersonCreatedByPersonNameId",
+        "column": "PERSON_NAME_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CmrRcvEventsPersonLastUpdateByDisplayName",
+        "column": "DISPLAY_NAME",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CmrRcvEventsPersonLastUpdateByEffectiveEndDate",
+        "column": "EFFECTIVE_END_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CmrRcvEventsPersonLastUpdateByEffectiveStartDate",
+        "column": "EFFECTIVE_START_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CmrRcvEventsPersonLastUpdateByFullName",
+        "column": "FULL_NAME",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CmrRcvEventsPersonLastUpdateByPersonId",
+        "column": "PERSON_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CmrRcvEventsPersonLastUpdateByPersonNameId",
+        "column": "PERSON_NAME_ID",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "PER_USERS": [
+      {
+        "attribute": "CmrRcvEventsUserCreatedByObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CmrRcvEventsUserCreatedByPersonId",
+        "column": "PERSON_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CmrRcvEventsUserCreatedByUserId",
+        "column": "USER_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CmrRcvEventsUserCreatedByUsername",
+        "column": "USERNAME",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CmrRcvEventsUserLastUpdateByObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CmrRcvEventsUserLastUpdateByPersonId",
+        "column": "PERSON_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CmrRcvEventsUserLastUpdateByUserId",
+        "column": "USER_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CmrRcvEventsUserLastUpdateByUsername",
+        "column": "USERNAME",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "CMR_RCV_TRANSACTIONS": [
+      {
+        "attribute": "CmrRcvTransactionsCmrRcvTransactionId",
+        "column": "CMR_RCV_TRANSACTION_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CmrRcvTransactionsTransactionDate",
+        "column": "TRANSACTION_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CmrRcvTransactionsTransactionQuantity",
+        "column": "TRANSACTION_QUANTITY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CmrRcvTransactionsTransactionType",
+        "column": "TRANSACTION_TYPE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CmrRcvTransactionsTransactionUomCode",
+        "column": "TRANSACTION_UOM_CODE",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "XLA_EVENT_TYPES_VL": [
+      {
+        "attribute": "EventTypeTranslationApplicationId",
+        "column": "APPLICATION_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "EventTypeTranslationDescription",
+        "column": "DESCRIPTION",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "EventTypeTranslationEntityCode",
+        "column": "ENTITY_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "EventTypeTranslationEventClassCode",
+        "column": "EVENT_CLASS_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "EventTypeTranslationEventTypeCode",
+        "column": "EVENT_TYPE_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "EventTypeTranslationName",
+        "column": "NAME",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "EventTypeTranslationObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "CMR_PURCHASE_ORDER_DTLS": [
+      {
+        "attribute": "PurchaseOrderDtlsAccrueOnReceiptFlag",
+        "column": "ACCRUE_ON_RECEIPT_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PurchaseOrderDtlsActiveFlag",
+        "column": "ACTIVE_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PurchaseOrderDtlsCmrPoDistributionId",
+        "column": "CMR_PO_DISTRIBUTION_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PurchaseOrderDtlsConsignedFlag",
+        "column": "CONSIGNED_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PurchaseOrderDtlsDestinationTypeCode",
+        "column": "DESTINATION_TYPE_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PurchaseOrderDtlsDistributionNumber",
+        "column": "DISTRIBUTION_NUMBER",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PurchaseOrderDtlsEventDate",
+        "column": "EVENT_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PurchaseOrderDtlsExternalSystemRefId",
+        "column": "EXTERNAL_SYSTEM_REF_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PurchaseOrderDtlsExternalSystemReference",
+        "column": "EXTERNAL_SYSTEM_REFERENCE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PurchaseOrderDtlsPoNumber",
+        "column": "PO_NUMBER",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PurchaseOrderDtlsSfoPrimaryTradeRelationId",
+        "column": "SFO_PRIMARY_TRADE_RELATION_ID",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "CMR_RCV_EVENT_TYPES": [
+      {
+        "attribute": "RcvEventTypesTransactionType",
+        "column": "TRANSACTION_TYPE",
+        "bicc": true,
+        "pk": false
+      }
+    ]
+  }
+}

@@ -1,0 +1,1138 @@
+{
+  "meta": {
+    "pvo_name": "CmrAllPeriodCloseTxnsPVO",
+    "full_path": "FscmTopModelAM.ReceiptAccountingAM.CmrAllPeriodCloseTxnsPVO",
+    "module_path": "FscmTopModelAM.ReceiptAccountingAM",
+    "module_code": "AR",
+    "type": "pvo",
+    "description": "Extrai todas as transações pendentes no fechamento de período do módulo de Contas a Receber, incluindo erros de validação. Essencial para o processo de fechamento contábil mensal, identificando transações que impedem o encerramento do período."
+  },
+  "stats": {
+    "total_attributes": 79,
+    "tables_count": 3,
+    "bicc_enabled": 59,
+    "bicc_pct": 75,
+    "pk_count": 2
+  },
+  "tables": [
+    "CMR_ALL_PERIOD_VALERR_TXNS_V",
+    "CMR_PERIOD_CLOSE_ACTIONS_V",
+    "FUN_ALL_BUSINESS_UNITS_V"
+  ],
+  "attributes": [
+    {
+      "name": "BusinessUnitPEOBusinessUnitId",
+      "table": "FUN_ALL_BUSINESS_UNITS_V",
+      "column": "BU_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BusinessUnitPEOCreatedBy",
+      "table": "FUN_ALL_BUSINESS_UNITS_V",
+      "column": "CREATED_BY",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BusinessUnitPEOCreationDate",
+      "table": "FUN_ALL_BUSINESS_UNITS_V",
+      "column": "CREATION_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BusinessUnitPEODateFrom",
+      "table": "FUN_ALL_BUSINESS_UNITS_V",
+      "column": "DATE_FROM",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BusinessUnitPEODateTo",
+      "table": "FUN_ALL_BUSINESS_UNITS_V",
+      "column": "DATE_TO",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BusinessUnitPEODefaultCurrencyCode",
+      "table": "FUN_ALL_BUSINESS_UNITS_V",
+      "column": "DEFAULT_CURRENCY_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BusinessUnitPEODefaultSetId",
+      "table": "FUN_ALL_BUSINESS_UNITS_V",
+      "column": "DEFAULT_SET_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BusinessUnitPEOEnabledForHrFlag",
+      "table": "FUN_ALL_BUSINESS_UNITS_V",
+      "column": "ENABLED_FOR_HR_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BusinessUnitPEOEnterpriseId",
+      "table": "FUN_ALL_BUSINESS_UNITS_V",
+      "column": "BUSINESS_GROUP_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BusinessUnitPEOFinancialsBusinessUnitId",
+      "table": "FUN_ALL_BUSINESS_UNITS_V",
+      "column": "FIN_BUSINESS_UNIT_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BusinessUnitPEOLastUpdateDate",
+      "table": "FUN_ALL_BUSINESS_UNITS_V",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BusinessUnitPEOLastUpdateLogin",
+      "table": "FUN_ALL_BUSINESS_UNITS_V",
+      "column": "LAST_UPDATE_LOGIN",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BusinessUnitPEOLastUpdatedBy",
+      "table": "FUN_ALL_BUSINESS_UNITS_V",
+      "column": "LAST_UPDATED_BY",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BusinessUnitPEOLegalEntityId",
+      "table": "FUN_ALL_BUSINESS_UNITS_V",
+      "column": "LEGAL_ENTITY_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BusinessUnitPEOLocationId",
+      "table": "FUN_ALL_BUSINESS_UNITS_V",
+      "column": "LOCATION_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BusinessUnitPEOManagerId",
+      "table": "FUN_ALL_BUSINESS_UNITS_V",
+      "column": "MANAGER_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BusinessUnitPEOName",
+      "table": "FUN_ALL_BUSINESS_UNITS_V",
+      "column": "BU_NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BusinessUnitPEOPrimaryLedgerId",
+      "table": "FUN_ALL_BUSINESS_UNITS_V",
+      "column": "PRIMARY_LEDGER_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BusinessUnitPEOShortCode",
+      "table": "FUN_ALL_BUSINESS_UNITS_V",
+      "column": "SHORT_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BusinessUnitPEOStatus",
+      "table": "FUN_ALL_BUSINESS_UNITS_V",
+      "column": "STATUS",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CmrAllPeriodCloseTxnsPEOBillToBusinessUnitId",
+      "table": "CMR_ALL_PERIOD_VALERR_TXNS_V",
+      "column": "BILL_TO_BUSINESS_UNIT_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CmrAllPeriodCloseTxnsPEOBuId",
+      "table": "CMR_ALL_PERIOD_VALERR_TXNS_V",
+      "column": "BU_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CmrAllPeriodCloseTxnsPEOConvertToLetz",
+      "table": "CMR_ALL_PERIOD_VALERR_TXNS_V",
+      "column": "CONVERT_TO_LETZ",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CmrAllPeriodCloseTxnsPEOCurrencyCode",
+      "table": "CMR_ALL_PERIOD_VALERR_TXNS_V",
+      "column": "CURRENCY_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CmrAllPeriodCloseTxnsPEODestinationTypeCode",
+      "table": "CMR_ALL_PERIOD_VALERR_TXNS_V",
+      "column": "DESTINATION_TYPE_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CmrAllPeriodCloseTxnsPEODistributionType",
+      "table": "CMR_ALL_PERIOD_VALERR_TXNS_V",
+      "column": "DISTRIBUTION_TYPE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CmrAllPeriodCloseTxnsPEODocumentTypeCode",
+      "table": "CMR_ALL_PERIOD_VALERR_TXNS_V",
+      "column": "DOCUMENT_TYPE_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CmrAllPeriodCloseTxnsPEOEndDate",
+      "table": "CMR_ALL_PERIOD_VALERR_TXNS_V",
+      "column": "END_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CmrAllPeriodCloseTxnsPEOErrorCode",
+      "table": "CMR_ALL_PERIOD_VALERR_TXNS_V",
+      "column": "ERROR_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CmrAllPeriodCloseTxnsPEOInventoryItemId",
+      "table": "CMR_ALL_PERIOD_VALERR_TXNS_V",
+      "column": "INVENTORY_ITEM_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CmrAllPeriodCloseTxnsPEOInventoryOrgId",
+      "table": "CMR_ALL_PERIOD_VALERR_TXNS_V",
+      "column": "INVENTORY_ORG_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CmrAllPeriodCloseTxnsPEOItemOrganizationId",
+      "table": "CMR_ALL_PERIOD_VALERR_TXNS_V",
+      "column": "ITEM_ORGANIZATION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CmrAllPeriodCloseTxnsPEOLeTimeOffset",
+      "table": "CMR_ALL_PERIOD_VALERR_TXNS_V",
+      "column": "LE_TIME_OFFSET",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CmrAllPeriodCloseTxnsPEOLedgerId",
+      "table": "CMR_ALL_PERIOD_VALERR_TXNS_V",
+      "column": "LEDGER_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CmrAllPeriodCloseTxnsPEOPeriodName",
+      "table": "CMR_ALL_PERIOD_VALERR_TXNS_V",
+      "column": "PERIOD_NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CmrAllPeriodCloseTxnsPEOPeriodNum",
+      "table": "CMR_ALL_PERIOD_VALERR_TXNS_V",
+      "column": "PERIOD_NUM",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CmrAllPeriodCloseTxnsPEOPeriodSetName",
+      "table": "CMR_ALL_PERIOD_VALERR_TXNS_V",
+      "column": "PERIOD_SET_NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CmrAllPeriodCloseTxnsPEOPeriodType",
+      "table": "CMR_ALL_PERIOD_VALERR_TXNS_V",
+      "column": "PERIOD_TYPE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CmrAllPeriodCloseTxnsPEOPeriodYear",
+      "table": "CMR_ALL_PERIOD_VALERR_TXNS_V",
+      "column": "PERIOD_YEAR",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CmrAllPeriodCloseTxnsPEOServerEndDate",
+      "table": "CMR_ALL_PERIOD_VALERR_TXNS_V",
+      "column": "SERVER_END_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CmrAllPeriodCloseTxnsPEOServerStartDate",
+      "table": "CMR_ALL_PERIOD_VALERR_TXNS_V",
+      "column": "SERVER_START_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CmrAllPeriodCloseTxnsPEOSourceTable",
+      "table": "CMR_ALL_PERIOD_VALERR_TXNS_V",
+      "column": "SOURCE_TABLE",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    },
+    {
+      "name": "CmrAllPeriodCloseTxnsPEOStartDate",
+      "table": "CMR_ALL_PERIOD_VALERR_TXNS_V",
+      "column": "START_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CmrAllPeriodCloseTxnsPEOTransactionAmt",
+      "table": "CMR_ALL_PERIOD_VALERR_TXNS_V",
+      "column": "TRANSACTION_AMT",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CmrAllPeriodCloseTxnsPEOTransactionDate",
+      "table": "CMR_ALL_PERIOD_VALERR_TXNS_V",
+      "column": "TRANSACTION_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CmrAllPeriodCloseTxnsPEOTransactionId",
+      "table": "CMR_ALL_PERIOD_VALERR_TXNS_V",
+      "column": "TRANSACTION_ID",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    },
+    {
+      "name": "CmrAllPeriodCloseTxnsPEOTransactionLineNumber",
+      "table": "CMR_ALL_PERIOD_VALERR_TXNS_V",
+      "column": "TRANSACTION_LINE_NUMBER",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CmrAllPeriodCloseTxnsPEOTransactionNumber",
+      "table": "CMR_ALL_PERIOD_VALERR_TXNS_V",
+      "column": "TRANSACTION_NUMBER",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CmrAllPeriodCloseTxnsPEOTransactionQty",
+      "table": "CMR_ALL_PERIOD_VALERR_TXNS_V",
+      "column": "TRANSACTION_QTY",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CmrAllPeriodCloseTxnsPEOTransactionType",
+      "table": "CMR_ALL_PERIOD_VALERR_TXNS_V",
+      "column": "TRANSACTION_TYPE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CmrAllPeriodCloseTxnsPEOTransactionUomCode",
+      "table": "CMR_ALL_PERIOD_VALERR_TXNS_V",
+      "column": "TRANSACTION_UOM_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CmrPeriodCloseActionsPEOBuId",
+      "table": "CMR_PERIOD_CLOSE_ACTIONS_V",
+      "column": "BU_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CmrPeriodCloseActionsPEOEndDate",
+      "table": "CMR_PERIOD_CLOSE_ACTIONS_V",
+      "column": "END_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CmrPeriodCloseActionsPEOIntransitPoAccJobFlag",
+      "table": "CMR_PERIOD_CLOSE_ACTIONS_V",
+      "column": "INTRANSIT_PO_ACC_JOB_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CmrPeriodCloseActionsPEOIntransitPoRptNotAccCount",
+      "table": "CMR_PERIOD_CLOSE_ACTIONS_V",
+      "column": "INTRANSIT_PO_RPT_NOT_ACC_COUNT",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CmrPeriodCloseActionsPEOLeTimeOffset",
+      "table": "CMR_PERIOD_CLOSE_ACTIONS_V",
+      "column": "LE_TIME_OFFSET",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CmrPeriodCloseActionsPEOLedgerId",
+      "table": "CMR_PERIOD_CLOSE_ACTIONS_V",
+      "column": "LEDGER_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CmrPeriodCloseActionsPEOPendingAccrClrCount",
+      "table": "CMR_PERIOD_CLOSE_ACTIONS_V",
+      "column": "PENDING_ACCR_CLR_COUNT",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CmrPeriodCloseActionsPEOPendingDistCount",
+      "table": "CMR_PERIOD_CLOSE_ACTIONS_V",
+      "column": "PENDING_DIST_COUNT",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CmrPeriodCloseActionsPEOPendingIntReversalsCount",
+      "table": "CMR_PERIOD_CLOSE_ACTIONS_V",
+      "column": "PENDING_INT_REVERSALS_COUNT",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CmrPeriodCloseActionsPEOPendingInvoiceIntfCount",
+      "table": "CMR_PERIOD_CLOSE_ACTIONS_V",
+      "column": "PENDING_INVOICE_INTF_COUNT",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CmrPeriodCloseActionsPEOPendingInvoiceVarCount",
+      "table": "CMR_PERIOD_CLOSE_ACTIONS_V",
+      "column": "PENDING_INVOICE_VAR_COUNT",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CmrPeriodCloseActionsPEOPendingPeriodAccrCount",
+      "table": "CMR_PERIOD_CLOSE_ACTIONS_V",
+      "column": "PENDING_PERIOD_ACCR_COUNT",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CmrPeriodCloseActionsPEOPendingReceiptCount",
+      "table": "CMR_PERIOD_CLOSE_ACTIONS_V",
+      "column": "PENDING_RECEIPT_COUNT",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CmrPeriodCloseActionsPEOPendingReceiptIntfCount",
+      "table": "CMR_PERIOD_CLOSE_ACTIONS_V",
+      "column": "PENDING_RECEIPT_INTF_COUNT",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CmrPeriodCloseActionsPEOPendingRpaCount",
+      "table": "CMR_PERIOD_CLOSE_ACTIONS_V",
+      "column": "PENDING_RPA_COUNT",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CmrPeriodCloseActionsPEOPendingTraCount",
+      "table": "CMR_PERIOD_CLOSE_ACTIONS_V",
+      "column": "PENDING_TRA_COUNT",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CmrPeriodCloseActionsPEOPendingTraIntfCount",
+      "table": "CMR_PERIOD_CLOSE_ACTIONS_V",
+      "column": "PENDING_TRA_INTF_COUNT",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CmrPeriodCloseActionsPEOPeriodName",
+      "table": "CMR_PERIOD_CLOSE_ACTIONS_V",
+      "column": "PERIOD_NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CmrPeriodCloseActionsPEOPeriodNum",
+      "table": "CMR_PERIOD_CLOSE_ACTIONS_V",
+      "column": "PERIOD_NUM",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CmrPeriodCloseActionsPEOPeriodSetName",
+      "table": "CMR_PERIOD_CLOSE_ACTIONS_V",
+      "column": "PERIOD_SET_NAME",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CmrPeriodCloseActionsPEOPeriodType",
+      "table": "CMR_PERIOD_CLOSE_ACTIONS_V",
+      "column": "PERIOD_TYPE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CmrPeriodCloseActionsPEOPeriodYear",
+      "table": "CMR_PERIOD_CLOSE_ACTIONS_V",
+      "column": "PERIOD_YEAR",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CmrPeriodCloseActionsPEOServerEndDate",
+      "table": "CMR_PERIOD_CLOSE_ACTIONS_V",
+      "column": "SERVER_END_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CmrPeriodCloseActionsPEOServerStartDate",
+      "table": "CMR_PERIOD_CLOSE_ACTIONS_V",
+      "column": "SERVER_START_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CmrPeriodCloseActionsPEOStartDate",
+      "table": "CMR_PERIOD_CLOSE_ACTIONS_V",
+      "column": "START_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CmrPeriodCloseActionsPEOUnimportedInvoiceCount",
+      "table": "CMR_PERIOD_CLOSE_ACTIONS_V",
+      "column": "UNIMPORTED_INVOICE_COUNT",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CmrPeriodCloseActionsPEOUnimportedReceiptCount",
+      "table": "CMR_PERIOD_CLOSE_ACTIONS_V",
+      "column": "UNIMPORTED_RECEIPT_COUNT",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CmrPeriodCloseActionsPEOUninterfacedIntShptsCount",
+      "table": "CMR_PERIOD_CLOSE_ACTIONS_V",
+      "column": "UNINTERFACED_INT_SHPTS_COUNT",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    }
+  ],
+  "by_table": {
+    "FUN_ALL_BUSINESS_UNITS_V": [
+      {
+        "attribute": "BusinessUnitPEOBusinessUnitId",
+        "column": "BU_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "BusinessUnitPEOCreatedBy",
+        "column": "CREATED_BY",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "BusinessUnitPEOCreationDate",
+        "column": "CREATION_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "BusinessUnitPEODateFrom",
+        "column": "DATE_FROM",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "BusinessUnitPEODateTo",
+        "column": "DATE_TO",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "BusinessUnitPEODefaultCurrencyCode",
+        "column": "DEFAULT_CURRENCY_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "BusinessUnitPEODefaultSetId",
+        "column": "DEFAULT_SET_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "BusinessUnitPEOEnabledForHrFlag",
+        "column": "ENABLED_FOR_HR_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "BusinessUnitPEOEnterpriseId",
+        "column": "BUSINESS_GROUP_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "BusinessUnitPEOFinancialsBusinessUnitId",
+        "column": "FIN_BUSINESS_UNIT_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "BusinessUnitPEOLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "BusinessUnitPEOLastUpdateLogin",
+        "column": "LAST_UPDATE_LOGIN",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "BusinessUnitPEOLastUpdatedBy",
+        "column": "LAST_UPDATED_BY",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "BusinessUnitPEOLegalEntityId",
+        "column": "LEGAL_ENTITY_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "BusinessUnitPEOLocationId",
+        "column": "LOCATION_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "BusinessUnitPEOManagerId",
+        "column": "MANAGER_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "BusinessUnitPEOName",
+        "column": "BU_NAME",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "BusinessUnitPEOPrimaryLedgerId",
+        "column": "PRIMARY_LEDGER_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "BusinessUnitPEOShortCode",
+        "column": "SHORT_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "BusinessUnitPEOStatus",
+        "column": "STATUS",
+        "bicc": true,
+        "pk": false
+      }
+    ],
+    "CMR_ALL_PERIOD_VALERR_TXNS_V": [
+      {
+        "attribute": "CmrAllPeriodCloseTxnsPEOBillToBusinessUnitId",
+        "column": "BILL_TO_BUSINESS_UNIT_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CmrAllPeriodCloseTxnsPEOBuId",
+        "column": "BU_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CmrAllPeriodCloseTxnsPEOConvertToLetz",
+        "column": "CONVERT_TO_LETZ",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CmrAllPeriodCloseTxnsPEOCurrencyCode",
+        "column": "CURRENCY_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CmrAllPeriodCloseTxnsPEODestinationTypeCode",
+        "column": "DESTINATION_TYPE_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CmrAllPeriodCloseTxnsPEODistributionType",
+        "column": "DISTRIBUTION_TYPE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CmrAllPeriodCloseTxnsPEODocumentTypeCode",
+        "column": "DOCUMENT_TYPE_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CmrAllPeriodCloseTxnsPEOEndDate",
+        "column": "END_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CmrAllPeriodCloseTxnsPEOErrorCode",
+        "column": "ERROR_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CmrAllPeriodCloseTxnsPEOInventoryItemId",
+        "column": "INVENTORY_ITEM_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CmrAllPeriodCloseTxnsPEOInventoryOrgId",
+        "column": "INVENTORY_ORG_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CmrAllPeriodCloseTxnsPEOItemOrganizationId",
+        "column": "ITEM_ORGANIZATION_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CmrAllPeriodCloseTxnsPEOLeTimeOffset",
+        "column": "LE_TIME_OFFSET",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CmrAllPeriodCloseTxnsPEOLedgerId",
+        "column": "LEDGER_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CmrAllPeriodCloseTxnsPEOPeriodName",
+        "column": "PERIOD_NAME",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CmrAllPeriodCloseTxnsPEOPeriodNum",
+        "column": "PERIOD_NUM",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CmrAllPeriodCloseTxnsPEOPeriodSetName",
+        "column": "PERIOD_SET_NAME",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CmrAllPeriodCloseTxnsPEOPeriodType",
+        "column": "PERIOD_TYPE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CmrAllPeriodCloseTxnsPEOPeriodYear",
+        "column": "PERIOD_YEAR",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CmrAllPeriodCloseTxnsPEOServerEndDate",
+        "column": "SERVER_END_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CmrAllPeriodCloseTxnsPEOServerStartDate",
+        "column": "SERVER_START_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CmrAllPeriodCloseTxnsPEOSourceTable",
+        "column": "SOURCE_TABLE",
+        "bicc": true,
+        "pk": true
+      },
+      {
+        "attribute": "CmrAllPeriodCloseTxnsPEOStartDate",
+        "column": "START_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CmrAllPeriodCloseTxnsPEOTransactionAmt",
+        "column": "TRANSACTION_AMT",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CmrAllPeriodCloseTxnsPEOTransactionDate",
+        "column": "TRANSACTION_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CmrAllPeriodCloseTxnsPEOTransactionId",
+        "column": "TRANSACTION_ID",
+        "bicc": true,
+        "pk": true
+      },
+      {
+        "attribute": "CmrAllPeriodCloseTxnsPEOTransactionLineNumber",
+        "column": "TRANSACTION_LINE_NUMBER",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CmrAllPeriodCloseTxnsPEOTransactionNumber",
+        "column": "TRANSACTION_NUMBER",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CmrAllPeriodCloseTxnsPEOTransactionQty",
+        "column": "TRANSACTION_QTY",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CmrAllPeriodCloseTxnsPEOTransactionType",
+        "column": "TRANSACTION_TYPE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CmrAllPeriodCloseTxnsPEOTransactionUomCode",
+        "column": "TRANSACTION_UOM_CODE",
+        "bicc": true,
+        "pk": false
+      }
+    ],
+    "CMR_PERIOD_CLOSE_ACTIONS_V": [
+      {
+        "attribute": "CmrPeriodCloseActionsPEOBuId",
+        "column": "BU_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CmrPeriodCloseActionsPEOEndDate",
+        "column": "END_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CmrPeriodCloseActionsPEOIntransitPoAccJobFlag",
+        "column": "INTRANSIT_PO_ACC_JOB_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CmrPeriodCloseActionsPEOIntransitPoRptNotAccCount",
+        "column": "INTRANSIT_PO_RPT_NOT_ACC_COUNT",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CmrPeriodCloseActionsPEOLeTimeOffset",
+        "column": "LE_TIME_OFFSET",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CmrPeriodCloseActionsPEOLedgerId",
+        "column": "LEDGER_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CmrPeriodCloseActionsPEOPendingAccrClrCount",
+        "column": "PENDING_ACCR_CLR_COUNT",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CmrPeriodCloseActionsPEOPendingDistCount",
+        "column": "PENDING_DIST_COUNT",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CmrPeriodCloseActionsPEOPendingIntReversalsCount",
+        "column": "PENDING_INT_REVERSALS_COUNT",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CmrPeriodCloseActionsPEOPendingInvoiceIntfCount",
+        "column": "PENDING_INVOICE_INTF_COUNT",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CmrPeriodCloseActionsPEOPendingInvoiceVarCount",
+        "column": "PENDING_INVOICE_VAR_COUNT",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CmrPeriodCloseActionsPEOPendingPeriodAccrCount",
+        "column": "PENDING_PERIOD_ACCR_COUNT",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CmrPeriodCloseActionsPEOPendingReceiptCount",
+        "column": "PENDING_RECEIPT_COUNT",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CmrPeriodCloseActionsPEOPendingReceiptIntfCount",
+        "column": "PENDING_RECEIPT_INTF_COUNT",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CmrPeriodCloseActionsPEOPendingRpaCount",
+        "column": "PENDING_RPA_COUNT",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CmrPeriodCloseActionsPEOPendingTraCount",
+        "column": "PENDING_TRA_COUNT",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CmrPeriodCloseActionsPEOPendingTraIntfCount",
+        "column": "PENDING_TRA_INTF_COUNT",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CmrPeriodCloseActionsPEOPeriodName",
+        "column": "PERIOD_NAME",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CmrPeriodCloseActionsPEOPeriodNum",
+        "column": "PERIOD_NUM",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CmrPeriodCloseActionsPEOPeriodSetName",
+        "column": "PERIOD_SET_NAME",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CmrPeriodCloseActionsPEOPeriodType",
+        "column": "PERIOD_TYPE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CmrPeriodCloseActionsPEOPeriodYear",
+        "column": "PERIOD_YEAR",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CmrPeriodCloseActionsPEOServerEndDate",
+        "column": "SERVER_END_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CmrPeriodCloseActionsPEOServerStartDate",
+        "column": "SERVER_START_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CmrPeriodCloseActionsPEOStartDate",
+        "column": "START_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CmrPeriodCloseActionsPEOUnimportedInvoiceCount",
+        "column": "UNIMPORTED_INVOICE_COUNT",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CmrPeriodCloseActionsPEOUnimportedReceiptCount",
+        "column": "UNIMPORTED_RECEIPT_COUNT",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CmrPeriodCloseActionsPEOUninterfacedIntShptsCount",
+        "column": "UNINTERFACED_INT_SHPTS_COUNT",
+        "bicc": false,
+        "pk": false
+      }
+    ]
+  }
+}

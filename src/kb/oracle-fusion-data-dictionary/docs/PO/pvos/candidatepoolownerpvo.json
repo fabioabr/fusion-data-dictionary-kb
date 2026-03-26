@@ -1,0 +1,211 @@
+{
+  "meta": {
+    "pvo_name": "CandidatePoolOwnerPVO",
+    "full_path": "HcmTopModelAnalyticsGlobalAM.HcmRecSourcingCandPoolsAM.CandidatePoolOwnerPVO",
+    "module_path": "HcmTopModelAnalyticsGlobalAM.HcmRecSourcingCandPoolsAM",
+    "module_code": "PO",
+    "type": "pvo",
+    "description": "Extrai os proprietários (gestores) de pools de candidatos, com permissões e responsabilidades atribuídas. Suporta governança e auditoria dos processos de gestão de talentos."
+  },
+  "stats": {
+    "total_attributes": 13,
+    "tables_count": 2,
+    "bicc_enabled": 10,
+    "bicc_pct": 77,
+    "pk_count": 2
+  },
+  "tables": [
+    "HRT_POOLS_VL",
+    "HRT_POOL_OWNERS"
+  ],
+  "attributes": [
+    {
+      "name": "CreatedBy",
+      "table": "HRT_POOL_OWNERS",
+      "column": "CREATED_BY",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CreationDate",
+      "table": "HRT_POOL_OWNERS",
+      "column": "CREATION_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "EnterpriseId",
+      "table": "HRT_POOL_OWNERS",
+      "column": "ENTERPRISE_ID",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    },
+    {
+      "name": "FavoriteFlag",
+      "table": "HRT_POOL_OWNERS",
+      "column": "FAVORITE_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LastUpdateDate",
+      "table": "HRT_POOL_OWNERS",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": true
+    },
+    {
+      "name": "LastUpdateLogin",
+      "table": "HRT_POOL_OWNERS",
+      "column": "LAST_UPDATE_LOGIN",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LastUpdatedBy",
+      "table": "HRT_POOL_OWNERS",
+      "column": "LAST_UPDATED_BY",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ObjectVersionNumber",
+      "table": "HRT_POOL_OWNERS",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "OwnerPersonId",
+      "table": "HRT_POOL_OWNERS",
+      "column": "OWNER_PERSON_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PoolId",
+      "table": "HRT_POOL_OWNERS",
+      "column": "POOL_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PoolId1",
+      "table": "HRT_POOLS_VL",
+      "column": "POOL_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PoolOwnerId",
+      "table": "HRT_POOL_OWNERS",
+      "column": "POOL_OWNER_ID",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    },
+    {
+      "name": "PoolTypeCode",
+      "table": "HRT_POOLS_VL",
+      "column": "POOL_TYPE_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    }
+  ],
+  "by_table": {
+    "HRT_POOL_OWNERS": [
+      {
+        "attribute": "CreatedBy",
+        "column": "CREATED_BY",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CreationDate",
+        "column": "CREATION_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "EnterpriseId",
+        "column": "ENTERPRISE_ID",
+        "bicc": true,
+        "pk": true
+      },
+      {
+        "attribute": "FavoriteFlag",
+        "column": "FAVORITE_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "LastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "LastUpdateLogin",
+        "column": "LAST_UPDATE_LOGIN",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "LastUpdatedBy",
+        "column": "LAST_UPDATED_BY",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "OwnerPersonId",
+        "column": "OWNER_PERSON_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PoolId",
+        "column": "POOL_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PoolOwnerId",
+        "column": "POOL_OWNER_ID",
+        "bicc": true,
+        "pk": true
+      }
+    ],
+    "HRT_POOLS_VL": [
+      {
+        "attribute": "PoolId1",
+        "column": "POOL_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PoolTypeCode",
+        "column": "POOL_TYPE_CODE",
+        "bicc": false,
+        "pk": false
+      }
+    ]
+  }
+}

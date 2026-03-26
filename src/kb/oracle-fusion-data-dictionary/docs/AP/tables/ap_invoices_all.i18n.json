@@ -1,0 +1,715 @@
+{
+  "source": "ap_invoices_all.md",
+  "source_hash": "160b2e18ae858551af747b99f081744d",
+  "translated_at": "2026-03-25",
+  "items": [
+    {
+      "id": 1,
+      "br": "Visão Geral",
+      "en": "Overview",
+      "es": "Vision General"
+    },
+    {
+      "id": 2,
+      "br": "Armazena um registro para cada fatura (invoice) do módulo Accounts Payable. Cada linha representa uma fatura individual recebida de fornecedores, contendo número, valor, moeda, data, tipo (Standard, Credit Memo, Debit Memo, Prepayment, Mixed), status de validação e referência ao fornecedor emissor. É a tabela central do módulo AP e ponto de partida para todo o fluxo de contas a pagar — da entrada até o pagamento.",
+      "en": "Stores one record for each invoice in the Accounts Payable module. Each row represents an individual invoice received from suppliers, containing number, amount, currency, date, type (Standard, Credit Memo, Debit Memo, Prepayment, Mixed), validation status, and reference to the issuing supplier. It is the central table of the AP module and the starting point for the entire accounts payable flow — from entry to payment.",
+      "es": "Almacena un registro por cada factura (invoice) del módulo Accounts Payable. Cada fila representa una factura individual recibida de proveedores, conteniendo número, valor, moneda, fecha, tipo (Standard, Credit Memo, Debit Memo, Prepayment, Mixed), estado de validación y referencia al proveedor emisor. Es la tabla central del módulo AP y punto de partida para todo el flujo de cuentas por pagar — desde la entrada hasta el pago."
+    },
+    {
+      "id": 3,
+      "br": "Sufixo _ALL",
+      "en": "_ALL Suffix",
+      "es": "Sufijo _ALL"
+    },
+    {
+      "id": 4,
+      "br": "O sufixo _ALL indica que a tabela armazena dados de todas as business units (multi-org). O filtro por ORG_ID é necessário para consultas por organização específica.",
+      "en": "The _ALL suffix indicates that the table stores data from all business units (multi-org). Filtering by ORG_ID is required for queries by specific organization.",
+      "es": "El sufijo _ALL indica que la tabla almacena datos de todas las business units (multi-org). El filtro por ORG_ID es necesario para consultas por organización específica."
+    },
+    {
+      "id": 5,
+      "br": "Propósito de Negócio",
+      "en": "Business Purpose",
+      "es": "Proposito de Negocio"
+    },
+    {
+      "id": 6,
+      "br": "Esta tabela é utilizada nos seguintes processos:",
+      "en": "This table is used in the following processes:",
+      "es": "Esta tabla se utiliza en los siguientes procesos:"
+    },
+    {
+      "id": 7,
+      "br": "Cada fatura de fornecedor gera um registro, seja entrada manual, importação via interface, OCR ou EDI.",
+      "en": "Each supplier invoice generates a record, whether manual entry, interface import, OCR, or EDI.",
+      "es": "Cada factura de proveedor genera un registro, sea entrada manual, importación vía interfaz, OCR o EDI."
+    },
+    {
+      "id": 8,
+      "br": "Controle do status de validação (Validated, Needs Revalidation, Never Validated) e workflow de aprovação.",
+      "en": "Validation status control (Validated, Needs Revalidation, Never Validated) and approval workflow.",
+      "es": "Control del estado de validación (Validated, Needs Revalidation, Never Validated) y workflow de aprobación."
+    },
+    {
+      "id": 9,
+      "br": "Base para geração de lançamentos contábeis no General Ledger via Subledger Accounting.",
+      "en": "Basis for generating accounting entries in the General Ledger via Subledger Accounting.",
+      "es": "Base para generación de asientos contables en el General Ledger vía Subledger Accounting."
+    },
+    {
+      "id": 10,
+      "br": "Faturas validadas e aprovadas tornam-se elegíveis para seleção de pagamento.",
+      "en": "Validated and approved invoices become eligible for payment selection.",
+      "es": "Facturas validadas y aprobadas se vuelven elegibles para selección de pago."
+    },
+    {
+      "id": 11,
+      "br": "Vinculação de faturas a pedidos de compra (PO) e recebimentos para three-way matching.",
+      "en": "Linking invoices to purchase orders (PO) and receipts for three-way matching.",
+      "es": "Vinculación de facturas a órdenes de compra (PO) y recibos para three-way matching."
+    },
+    {
+      "id": 12,
+      "br": "Rastreabilidade completa com sequência de documento, WHO columns e histórico de aprovação.",
+      "en": "Complete traceability with document sequence, WHO columns, and approval history.",
+      "es": "Trazabilidad completa con secuencia de documento, WHO columns e historial de aprobación."
+    },
+    {
+      "id": 13,
+      "br": "Colunas Principais",
+      "en": "Key Columns",
+      "es": "Columnas Principales"
+    },
+    {
+      "id": 14,
+      "br": "Confiança",
+      "en": "Confidence",
+      "es": "Confianza"
+    },
+    {
+      "id": 15,
+      "br": "Escala de 0% a 100% — grau de certeza da descrição gerada por IA com base na documentação oficial Oracle (OEDMF/BICC Release 13/25A).",
+      "en": "Scale from 0% to 100% — degree of certainty of the AI-generated description based on official Oracle documentation (OEDMF/BICC Release 13/25A).",
+      "es": "Escala de 0% a 100% — grado de certeza de la descripción generada por IA con base en la documentación oficial Oracle (OEDMF/BICC Release 13/25A)."
+    },
+    {
+      "id": 16,
+      "br": "- 🟢 81–100% — Coluna presente na documentação oficial Oracle; nome, tipo e descrição confirmados.",
+      "en": "- 🟢 81–100% — Column present in official Oracle documentation; name, type, and description confirmed.",
+      "es": "- 🟢 81–100% — Columna presente en la documentación oficial Oracle; nombre, tipo y descripción confirmados."
+    },
+    {
+      "id": 17,
+      "br": "- 🟡 51–80% — Coluna inferida por naming convention ou padrão Oracle; tipo exato pode variar.",
+      "en": "- 🟡 51–80% — Column inferred by naming convention or Oracle standard; exact type may vary.",
+      "es": "- 🟡 51–80% — Columna inferida por naming convention o estándar Oracle; el tipo exacto puede variar."
+    },
+    {
+      "id": 18,
+      "br": "- 🔴 0–50% — Existência ou tipo incertos; pode não existir no release atual; validar no ambiente.",
+      "en": "- 🔴 0–50% — Uncertain existence or type; may not exist in current release; validate in environment.",
+      "es": "- 🔴 0–50% — Existencia o tipo inciertos; puede no existir en el release actual; validar en el ambiente."
+    },
+    {
+      "id": 19,
+      "br": "Coluna",
+      "en": "Column",
+      "es": "Columna"
+    },
+    {
+      "id": 20,
+      "br": "Tipo",
+      "en": "Type",
+      "es": "Tipo"
+    },
+    {
+      "id": 21,
+      "br": "Nulo?",
+      "en": "Nullable?",
+      "es": "Nulo?"
+    },
+    {
+      "id": 22,
+      "br": "Categoria",
+      "en": "Category",
+      "es": "Categoria"
+    },
+    {
+      "id": 23,
+      "br": "Descrição",
+      "en": "Description",
+      "es": "Descripcion"
+    },
+    {
+      "id": 24,
+      "br": "Identificador único da fatura",
+      "en": "Unique invoice identifier",
+      "es": "Identificador único de la factura"
+    },
+    {
+      "id": 25,
+      "br": "Identificação",
+      "en": "Identification",
+      "es": "Identificacion"
+    },
+    {
+      "id": 26,
+      "br": "Número da fatura do fornecedor",
+      "en": "Supplier invoice number",
+      "es": "Número de la factura del proveedor"
+    },
+    {
+      "id": 27,
+      "br": "Classificação",
+      "en": "Classification",
+      "es": "Clasificacion"
+    },
+    {
+      "id": 28,
+      "br": "Tipo da fatura (STANDARD/CREDIT/DEBIT/PREPAYMENT/MIXED)",
+      "en": "Invoice type (STANDARD/CREDIT/DEBIT/PREPAYMENT/MIXED)",
+      "es": "Tipo de la factura (STANDARD/CREDIT/DEBIT/PREPAYMENT/MIXED)"
+    },
+    {
+      "id": 29,
+      "br": "Data",
+      "en": "Date",
+      "es": "Fecha"
+    },
+    {
+      "id": 30,
+      "br": "Data da fatura",
+      "en": "Invoice date",
+      "es": "Fecha de la factura"
+    },
+    {
+      "id": 31,
+      "br": "Fornecedor",
+      "en": "Supplier",
+      "es": "Proveedor"
+    },
+    {
+      "id": 32,
+      "br": "Identificador do fornecedor",
+      "en": "Supplier identifier",
+      "es": "Identificador del proveedor"
+    },
+    {
+      "id": 33,
+      "br": "Site do fornecedor",
+      "en": "Supplier site",
+      "es": "Sitio del proveedor"
+    },
+    {
+      "id": 34,
+      "br": "Financeiro",
+      "en": "Financial",
+      "es": "Financiero"
+    },
+    {
+      "id": 35,
+      "br": "Valor total da fatura na moeda da transação",
+      "en": "Total invoice amount in transaction currency",
+      "es": "Valor total de la factura en la moneda de la transacción"
+    },
+    {
+      "id": 36,
+      "br": "Código da moeda da fatura (ISO 4217)",
+      "en": "Invoice currency code (ISO 4217)",
+      "es": "Código de moneda de la factura (ISO 4217)"
+    },
+    {
+      "id": 37,
+      "br": "Código da moeda de pagamento",
+      "en": "Payment currency code",
+      "es": "Codigo de moneda de pago"
+    },
+    {
+      "id": 38,
+      "br": "Tipo de taxa de câmbio",
+      "en": "Exchange rate type",
+      "es": "Tipo de tasa de cambio"
+    },
+    {
+      "id": 39,
+      "br": "Taxa de câmbio aplicada",
+      "en": "Applied exchange rate",
+      "es": "Tasa de cambio aplicada"
+    },
+    {
+      "id": 40,
+      "br": "Data da taxa de câmbio",
+      "en": "Exchange rate date",
+      "es": "Fecha de la tasa de cambio"
+    },
+    {
+      "id": 41,
+      "br": "Condições",
+      "en": "Terms",
+      "es": "Condiciones"
+    },
+    {
+      "id": 42,
+      "br": "Condição de pagamento",
+      "en": "Payment terms",
+      "es": "Condición de pago"
+    },
+    {
+      "id": 43,
+      "br": "Data-base para cálculo de vencimento",
+      "en": "Base date for due date calculation",
+      "es": "Fecha base para cálculo de vencimiento"
+    },
+    {
+      "id": 44,
+      "br": "Texto livre",
+      "en": "Free Text",
+      "es": "Texto libre"
+    },
+    {
+      "id": 45,
+      "br": "Descrição da fatura",
+      "en": "Invoice description",
+      "es": "Descripción de la factura"
+    },
+    {
+      "id": 46,
+      "br": "Origem da fatura (ex: Manual, ScanSnap, ERS)",
+      "en": "Invoice source (e.g., Manual, ScanSnap, ERS)",
+      "es": "Origen de la factura (ej: Manual, ScanSnap, ERS)"
+    },
+    {
+      "id": 47,
+      "br": "Pagamento",
+      "en": "Payment",
+      "es": "Pago"
+    },
+    {
+      "id": 48,
+      "br": "Método de pagamento (CHECK/EFT/WIRE)",
+      "en": "Payment method (CHECK/EFT/WIRE)",
+      "es": "Método de pago (CHECK/EFT/WIRE)"
+    },
+    {
+      "id": 49,
+      "br": "Grupo de pagamento",
+      "en": "Payment group",
+      "es": "Grupo de pago"
+    },
+    {
+      "id": 50,
+      "br": "Contabilidade",
+      "en": "Accounting",
+      "es": "Contabilidad"
+    },
+    {
+      "id": 51,
+      "br": "Data contábil (General Ledger)",
+      "en": "Accounting date (General Ledger)",
+      "es": "Fecha contable (General Ledger)"
+    },
+    {
+      "id": 52,
+      "br": "Conta contábil de AP (liability)",
+      "en": "AP accounting account (liability)",
+      "es": "Cuenta contable de AP (liability)"
+    },
+    {
+      "id": 53,
+      "br": "Status",
+      "en": "Status",
+      "es": "Estado"
+    },
+    {
+      "id": 54,
+      "br": "Status do pagamento (Y=pago/N=pendente/P=parcial)",
+      "en": "Payment status (Y=paid/N=pending/P=partial)",
+      "es": "Estado del pago (Y=pagado/N=pendiente/P=parcial)"
+    },
+    {
+      "id": 55,
+      "br": "Status de aprovação (APPROVED/REJECTED/INITIATED/etc.)",
+      "en": "Approval status (APPROVED/REJECTED/INITIATED/etc.)",
+      "es": "Estado de aprobación (APPROVED/REJECTED/INITIATED/etc.)"
+    },
+    {
+      "id": 56,
+      "br": "Status do workflow de aprovação",
+      "en": "Approval workflow status",
+      "es": "Estado del workflow de aprobación"
+    },
+    {
+      "id": 57,
+      "br": "Data de cancelamento da fatura",
+      "en": "Invoice cancellation date",
+      "es": "Fecha de cancelación de la factura"
+    },
+    {
+      "id": 58,
+      "br": "Usuário que cancelou",
+      "en": "User who cancelled",
+      "es": "Usuario que canceló"
+    },
+    {
+      "id": 59,
+      "br": "Valor total já pago",
+      "en": "Total amount already paid",
+      "es": "Valor total ya pagado"
+    },
+    {
+      "id": 60,
+      "br": "Desconto financeiro obtido",
+      "en": "Financial discount obtained",
+      "es": "Descuento financiero obtenido"
+    },
+    {
+      "id": 61,
+      "br": "Valor na moeda funcional (ledger)",
+      "en": "Amount in functional currency (ledger)",
+      "es": "Valor en la moneda funcional (ledger)"
+    },
+    {
+      "id": 62,
+      "br": "ID da sequência de documento",
+      "en": "Document sequence ID",
+      "es": "ID de la secuencia de documento"
+    },
+    {
+      "id": 63,
+      "br": "Número de sequência de documento legal",
+      "en": "Legal document sequence number",
+      "es": "Número de secuencia de documento legal"
+    },
+    {
+      "id": 64,
+      "br": "Referência cruzada",
+      "en": "Cross-reference",
+      "es": "Referencia cruzada"
+    },
+    {
+      "id": 65,
+      "br": "Pedido de compra vinculado (quick match)",
+      "en": "Linked purchase order (quick match)",
+      "es": "Orden de compra vinculada (quick match)"
+    },
+    {
+      "id": 66,
+      "br": "Trading Community party do fornecedor",
+      "en": "Supplier Trading Community party",
+      "es": "Trading Community party del proveedor"
+    },
+    {
+      "id": 67,
+      "br": "Party site do fornecedor",
+      "en": "Supplier party site",
+      "es": "Party site del proveedor"
+    },
+    {
+      "id": 68,
+      "br": "Entidade legal",
+      "en": "Legal entity",
+      "es": "Entidad legal"
+    },
+    {
+      "id": 69,
+      "br": "Business unit (multi-org)",
+      "en": "Business unit (multi-org)",
+      "es": "Business unit (multi-org)"
+    },
+    {
+      "id": 70,
+      "br": "Auditoria",
+      "en": "Audit",
+      "es": "Auditoria"
+    },
+    {
+      "id": 71,
+      "br": "Usuário que criou o registro",
+      "en": "User who created the record",
+      "es": "Usuario que creó el registro"
+    },
+    {
+      "id": 72,
+      "br": "Data/hora de criação",
+      "en": "Creation date/time",
+      "es": "Fecha/hora de creación"
+    },
+    {
+      "id": 73,
+      "br": "Último usuário que alterou",
+      "en": "Last user who modified",
+      "es": "Último usuario que modificó"
+    },
+    {
+      "id": 74,
+      "br": "Data/hora da última alteração",
+      "en": "Last modification date/time",
+      "es": "Fecha/hora de la última modificación"
+    },
+    {
+      "id": 75,
+      "br": "Login da última sessão",
+      "en": "Last session login",
+      "es": "Login de la última sesión"
+    },
+    {
+      "id": 76,
+      "br": "ATTRIBUTE1–15",
+      "en": "ATTRIBUTE1–15",
+      "es": "ATTRIBUTE1–15"
+    },
+    {
+      "id": 77,
+      "br": "Atributos descritivos customizáveis por implementação",
+      "en": "Customizable descriptive attributes per implementation",
+      "es": "Atributos descriptivos personalizables por implementación"
+    },
+    {
+      "id": 78,
+      "br": "Contexto do Descriptive Flexfield",
+      "en": "Descriptive Flexfield context",
+      "es": "Contexto del Descriptive Flexfield"
+    },
+    {
+      "id": 79,
+      "br": "GLOBAL_ATTRIBUTE1–20",
+      "en": "GLOBAL_ATTRIBUTE1–20",
+      "es": "GLOBAL_ATTRIBUTE1–20"
+    },
+    {
+      "id": 80,
+      "br": "Atributos globais (localizações por país)",
+      "en": "Global attributes (country localizations)",
+      "es": "Atributos globales (localizaciones por país)"
+    },
+    {
+      "id": 81,
+      "br": "Contexto do Global Descriptive Flexfield",
+      "en": "Global Descriptive Flexfield context",
+      "es": "Contexto del Global Descriptive Flexfield"
+    },
+    {
+      "id": 82,
+      "br": "Relacionamentos",
+      "en": "Relationships",
+      "es": "Relaciones"
+    },
+    {
+      "id": 83,
+      "br": "Tabelas-pai (FK de entrada)",
+      "en": "Parent Tables (inbound FK)",
+      "es": "Tablas padre (FK de entrada)"
+    },
+    {
+      "id": 84,
+      "br": "fornecedor",
+      "en": "supplier",
+      "es": "proveedor"
+    },
+    {
+      "id": 85,
+      "br": "site do fornecedor",
+      "en": "supplier site",
+      "es": "sitio del proveedor"
+    },
+    {
+      "id": 86,
+      "br": "trading community party",
+      "en": "trading community party",
+      "es": "trading community party"
+    },
+    {
+      "id": 87,
+      "br": "party site",
+      "en": "party site",
+      "es": "party site"
+    },
+    {
+      "id": 88,
+      "br": "condição de pagamento",
+      "en": "payment terms",
+      "es": "condición de pago"
+    },
+    {
+      "id": 89,
+      "br": "método de pagamento",
+      "en": "payment method",
+      "es": "método de pago"
+    },
+    {
+      "id": 90,
+      "br": "conta contábil",
+      "en": "accounting account",
+      "es": "cuenta contable"
+    },
+    {
+      "id": 91,
+      "br": "tipo de câmbio",
+      "en": "exchange rate type",
+      "es": "tipo de cambio"
+    },
+    {
+      "id": 92,
+      "br": "pedido de compra",
+      "en": "purchase order",
+      "es": "orden de compra"
+    },
+    {
+      "id": 93,
+      "br": "business unit",
+      "en": "business unit",
+      "es": "business unit"
+    },
+    {
+      "id": 94,
+      "br": "entidade legal",
+      "en": "legal entity",
+      "es": "entidad legal"
+    },
+    {
+      "id": 95,
+      "br": "Tabelas-filha (FK de saída)",
+      "en": "Child Tables (outbound FK)",
+      "es": "Tablas hija (FK de salida)"
+    },
+    {
+      "id": 96,
+      "br": "linhas da fatura",
+      "en": "invoice lines",
+      "es": "líneas de la factura"
+    },
+    {
+      "id": 97,
+      "br": "distribuições contábeis",
+      "en": "accounting distributions",
+      "es": "distribuciones contables"
+    },
+    {
+      "id": 98,
+      "br": "pagamentos da fatura",
+      "en": "invoice payments",
+      "es": "pagos de la factura"
+    },
+    {
+      "id": 99,
+      "br": "parcelas/vencimentos",
+      "en": "installments/due dates",
+      "es": "cuotas/vencimientos"
+    },
+    {
+      "id": 100,
+      "br": "histórico de aprovação",
+      "en": "approval history",
+      "es": "historial de aprobación"
+    },
+    {
+      "id": 101,
+      "br": "Uso Típico",
+      "en": "Typical Usage",
+      "es": "Uso Tipico"
+    },
+    {
+      "id": 102,
+      "br": "Listar faturas pendentes de pagamento",
+      "en": "List invoices pending payment",
+      "es": "Listar facturas pendientes de pago"
+    },
+    {
+      "id": 103,
+      "br": "Faturas com dados do fornecedor",
+      "en": "Invoices with supplier data",
+      "es": "Facturas con datos del proveedor"
+    },
+    {
+      "id": 104,
+      "br": "Filtros comuns",
+      "en": "Common Filters",
+      "es": "Filtros comunes"
+    },
+    {
+      "id": 105,
+      "br": "Faturas padrão",
+      "en": "Standard invoices",
+      "es": "Facturas estándar"
+    },
+    {
+      "id": 106,
+      "br": "Faturas não pagas",
+      "en": "Unpaid invoices",
+      "es": "Facturas no pagadas"
+    },
+    {
+      "id": 107,
+      "br": "Exclui canceladas",
+      "en": "Excludes cancelled",
+      "es": "Excluye canceladas"
+    },
+    {
+      "id": 108,
+      "br": "Aprovadas no workflow",
+      "en": "Approved in workflow",
+      "es": "Aprobadas en workflow"
+    },
+    {
+      "id": 109,
+      "br": "Observações",
+      "en": "Notes",
+      "es": "Observaciones"
+    },
+    {
+      "id": 110,
+      "br": "O campo INVOICE_TYPE_LOOKUP_CODE determina o tipo: STANDARD (fatura normal), CREDIT (nota de crédito), DEBIT (nota de débito), PREPAYMENT (adiantamento), MIXED (misto).",
+      "en": "The INVOICE_TYPE_LOOKUP_CODE field determines the type: STANDARD (regular invoice), CREDIT (credit memo), DEBIT (debit memo), PREPAYMENT (prepayment), MIXED (mixed).",
+      "es": "El campo INVOICE_TYPE_LOOKUP_CODE determina el tipo: STANDARD (factura normal), CREDIT (nota de crédito), DEBIT (nota de débito), PREPAYMENT (anticipo), MIXED (mixto)."
+    },
+    {
+      "id": 111,
+      "br": "O status de pagamento é controlado por PAYMENT_STATUS_FLAG: Y (totalmente pago), N (não pago), P (parcialmente pago).",
+      "en": "Payment status is controlled by PAYMENT_STATUS_FLAG: Y (fully paid), N (not paid), P (partially paid).",
+      "es": "El estado de pago es controlado por PAYMENT_STATUS_FLAG: Y (totalmente pagado), N (no pagado), P (parcialmente pagado)."
+    },
+    {
+      "id": 112,
+      "br": "A validação da fatura é pré-requisito para pagamento; faturas inválidas não aparecem na seleção de pagamento.",
+      "en": "Invoice validation is a prerequisite for payment; invalid invoices do not appear in payment selection.",
+      "es": "La validación de la factura es prerrequisito para el pago; facturas inválidas no aparecen en la selección de pago."
+    },
+    {
+      "id": 113,
+      "br": "Campos CANCELLED_* são preenchidos apenas quando a fatura é cancelada; faturas canceladas não podem ser pagas.",
+      "en": "CANCELLED_* fields are populated only when the invoice is cancelled; cancelled invoices cannot be paid.",
+      "es": "Los campos CANCELLED_* se completan solo cuando la factura es cancelada; facturas canceladas no pueden ser pagadas."
+    },
+    {
+      "id": 114,
+      "br": "A tabela possui Descriptive Flexfields (DFF) via colunas ATTRIBUTE1–15 para customizações por implementação.",
+      "en": "The table has Descriptive Flexfields (DFF) via ATTRIBUTE1–15 columns for customizations per implementation.",
+      "es": "La tabla posee Descriptive Flexfields (DFF) vía columnas ATTRIBUTE1–15 para personalizaciones por implementación."
+    },
+    {
+      "id": 115,
+      "br": "O campo SOURCE indica a origem da fatura e é importante para rastreabilidade de integrações.",
+      "en": "The SOURCE field indicates the invoice origin and is important for integration traceability.",
+      "es": "El campo SOURCE indica el origen de la factura y es importante para trazabilidad de integraciones."
+    },
+    {
+      "id": 116,
+      "br": "Referências",
+      "en": "References",
+      "es": "Referencias"
+    },
+    {
+      "id": 117,
+      "br": "[Oracle Docs — AP_INVOICES_ALL](https://docs.oracle.com/en/cloud/saas/financials/25a/oedmf/apinvoicesall-25702.html)",
+      "en": "[Oracle Docs — AP_INVOICES_ALL](https://docs.oracle.com/en/cloud/saas/financials/25a/oedmf/apinvoicesall-25702.html)",
+      "es": "[Oracle Docs — AP_INVOICES_ALL](https://docs.oracle.com/en/cloud/saas/financials/25a/oedmf/apinvoicesall-25702.html)"
+    },
+    {
+      "id": 118,
+      "br": "ap-module-data-dictionary — Dossiê do módulo AP",
+      "en": "ap-module-data-dictionary — AP module dossier",
+      "es": "ap-module-data-dictionary — Dossier del módulo AP"
+    }
+  ]
+}

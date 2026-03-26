@@ -1,0 +1,318 @@
+{
+  "meta": {
+    "pvo_name": "JobPostingPVO",
+    "full_path": "HcmTopModelAnalyticsGlobalAM.HcmRecJobDistributionAM.JobPostingPVO",
+    "module_path": "HcmTopModelAnalyticsGlobalAM.HcmRecJobDistributionAM",
+    "module_code": "HCM",
+    "type": "pvo",
+    "description": "Disponibiliza publicações de vagas em parceiros de recrutamento com provisionamento e status. Suporta gestão de distribuição de oportunidades."
+  },
+  "stats": {
+    "total_attributes": 20,
+    "tables_count": 5,
+    "bicc_enabled": 14,
+    "bicc_pct": 70,
+    "pk_count": 1
+  },
+  "tables": [
+    "IRC_JD_REQ_POSTINGS",
+    "IRC_REQUISITIONS_B",
+    "IRC_TP_PARTNERS",
+    "IRC_TP_PARTNER_PROVISNGS",
+    "PER_USERS"
+  ],
+  "attributes": [
+    {
+      "name": "PartnerPEOName",
+      "table": "IRC_TP_PARTNERS",
+      "column": "NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartnerPEOPartnerId",
+      "table": "IRC_TP_PARTNERS",
+      "column": "PARTNER_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartnerProvisionPEOProvisioningId",
+      "table": "IRC_TP_PARTNER_PROVISNGS",
+      "column": "PROVISIONING_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PostingId",
+      "table": "IRC_JD_REQ_POSTINGS",
+      "column": "POSTING_ID",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    },
+    {
+      "name": "PostingPEOCreatedBy",
+      "table": "IRC_JD_REQ_POSTINGS",
+      "column": "CREATED_BY",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PostingPEOCreationDate",
+      "table": "IRC_JD_REQ_POSTINGS",
+      "column": "CREATION_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PostingPEOJdErrorDesc",
+      "table": "IRC_JD_REQ_POSTINGS",
+      "column": "JD_ERROR_DESC",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PostingPEOLastUpdateDate",
+      "table": "IRC_JD_REQ_POSTINGS",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": true
+    },
+    {
+      "name": "PostingPEOLastUpdateLogin",
+      "table": "IRC_JD_REQ_POSTINGS",
+      "column": "LAST_UPDATE_LOGIN",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PostingPEOLastUpdatedBy",
+      "table": "IRC_JD_REQ_POSTINGS",
+      "column": "LAST_UPDATED_BY",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PostingPEOObjectVersionNumber",
+      "table": "IRC_JD_REQ_POSTINGS",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PostingPEOPostedBy",
+      "table": "IRC_JD_REQ_POSTINGS",
+      "column": "POSTED_BY",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PostingPEOPostedDate",
+      "table": "IRC_JD_REQ_POSTINGS",
+      "column": "POSTED_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PostingPEOProvisioningId",
+      "table": "IRC_JD_REQ_POSTINGS",
+      "column": "PROVISIONING_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PostingPEORequisitionId",
+      "table": "IRC_JD_REQ_POSTINGS",
+      "column": "REQUISITION_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RequisitionBPEORequisitionId",
+      "table": "IRC_REQUISITIONS_B",
+      "column": "REQUISITION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RequisitionBPEORequisitionNumber",
+      "table": "IRC_REQUISITIONS_B",
+      "column": "REQUISITION_NUMBER",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "UserPEOObjectVersionNumber",
+      "table": "PER_USERS",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "UserPEOPersonId",
+      "table": "PER_USERS",
+      "column": "PERSON_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "UserPEOUserId",
+      "table": "PER_USERS",
+      "column": "USER_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    }
+  ],
+  "by_table": {
+    "IRC_TP_PARTNERS": [
+      {
+        "attribute": "PartnerPEOName",
+        "column": "NAME",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PartnerPEOPartnerId",
+        "column": "PARTNER_ID",
+        "bicc": true,
+        "pk": false
+      }
+    ],
+    "IRC_TP_PARTNER_PROVISNGS": [
+      {
+        "attribute": "PartnerProvisionPEOProvisioningId",
+        "column": "PROVISIONING_ID",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "IRC_JD_REQ_POSTINGS": [
+      {
+        "attribute": "PostingId",
+        "column": "POSTING_ID",
+        "bicc": true,
+        "pk": true
+      },
+      {
+        "attribute": "PostingPEOCreatedBy",
+        "column": "CREATED_BY",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PostingPEOCreationDate",
+        "column": "CREATION_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PostingPEOJdErrorDesc",
+        "column": "JD_ERROR_DESC",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PostingPEOLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PostingPEOLastUpdateLogin",
+        "column": "LAST_UPDATE_LOGIN",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PostingPEOLastUpdatedBy",
+        "column": "LAST_UPDATED_BY",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PostingPEOObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PostingPEOPostedBy",
+        "column": "POSTED_BY",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PostingPEOPostedDate",
+        "column": "POSTED_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PostingPEOProvisioningId",
+        "column": "PROVISIONING_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PostingPEORequisitionId",
+        "column": "REQUISITION_ID",
+        "bicc": true,
+        "pk": false
+      }
+    ],
+    "IRC_REQUISITIONS_B": [
+      {
+        "attribute": "RequisitionBPEORequisitionId",
+        "column": "REQUISITION_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "RequisitionBPEORequisitionNumber",
+        "column": "REQUISITION_NUMBER",
+        "bicc": true,
+        "pk": false
+      }
+    ],
+    "PER_USERS": [
+      {
+        "attribute": "UserPEOObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "UserPEOPersonId",
+        "column": "PERSON_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "UserPEOUserId",
+        "column": "USER_ID",
+        "bicc": false,
+        "pk": false
+      }
+    ]
+  }
+}

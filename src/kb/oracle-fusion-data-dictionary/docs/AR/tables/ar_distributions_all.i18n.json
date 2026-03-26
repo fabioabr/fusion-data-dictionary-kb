@@ -1,0 +1,529 @@
+{
+  "source": "ar_distributions_all.md",
+  "source_hash": "7fbd21aa1c354c0679ff411b4a2f1247",
+  "translated_at": "2026-03-25",
+  "items": [
+    {
+      "id": 1,
+      "br": "Visão Geral",
+      "en": "Overview",
+      "es": "Visión general"
+    },
+    {
+      "id": 2,
+      "br": "Armazena as distribuições contábeis de recebimentos, ajustes e aplicações do módulo Accounts Receivable. Cada registro representa uma linha de débito ou crédito contábil vinculada a uma entidade-origem identificada por SOURCE_TABLE + SOURCE_ID. É a tabela central de contabilização do lado de recebimentos do AR — complementar a ra_cust_trx_line_gl_dist_all que trata das distribuições de transações (faturas).",
+      "en": "Stores the accounting distributions of receipts, adjustments, and applications from the Accounts Receivable module. Each record represents a debit or credit accounting line associated with a source entity identified by SOURCE_TABLE + SOURCE_ID. It is the central accounting table for the receivables side of AR — complementing ra_cust_trx_line_gl_dist_all which handles transaction distributions (invoices).",
+      "es": "Almacena las distribuciones contables de cobros, ajustes y aplicaciones del módulo Accounts Receivable. Cada registro representa una línea de débito o crédito contable vinculada a una entidad de origen identificada por SOURCE_TABLE + SOURCE_ID. Es la tabla central de contabilización del lado de cobros del AR — complementando a ra_cust_trx_line_gl_dist_all que trata de las distribuciones de transacciones (facturas)."
+    },
+    {
+      "id": 3,
+      "br": "As entidades-origem incluem:",
+      "en": "The source entities include:",
+      "es": "Las entidades de origen incluyen:"
+    },
+    {
+      "id": 4,
+      "br": "— Receivable Applications ([[ar_receivable_applications_all]])",
+      "en": "— Receivable Applications ([[ar_receivable_applications_all]])",
+      "es": "— Applications de cobros ([[ar_receivable_applications_all]])"
+    },
+    {
+      "id": 5,
+      "br": "— Adjustments (histórico legado)",
+      "en": "— Adjustments (legacy history)",
+      "es": "— Ajustes (historial legado)"
+    },
+    {
+      "id": 6,
+      "br": "— Adjustments ([[ar_adjustments_all]])",
+      "en": "— Adjustments ([[ar_adjustments_all]])",
+      "es": "— Ajustes ([[ar_adjustments_all]])"
+    },
+    {
+      "id": 7,
+      "br": "— Misc Cash Distributions ([[ar_misc_cash_distributions_all]])",
+      "en": "— Misc Cash Distributions ([[ar_misc_cash_distributions_all]])",
+      "es": "— Distribuciones de efectivo diversas ([[ar_misc_cash_distributions_all]])"
+    },
+    {
+      "id": 8,
+      "br": "— Cash Receipt History ([[ar_cash_receipt_history_all]])",
+      "en": "— Cash Receipt History ([[ar_cash_receipt_history_all]])",
+      "es": "— Historial de cobros de efectivo ([[ar_cash_receipt_history_all]])"
+    },
+    {
+      "id": 9,
+      "br": "Sufixo _ALL",
+      "en": "_ALL suffix",
+      "es": "Sufijo _ALL"
+    },
+    {
+      "id": 10,
+      "br": "O sufixo _ALL indica que a tabela armazena dados de todas as business units (multi-org). O filtro por ORG_ID é necessário para consultas por organização específica.",
+      "en": "The _ALL suffix indicates that the table stores data for all business units (multi-org). Filtering by ORG_ID is necessary for queries by specific organization.",
+      "es": "El sufijo _ALL indica que la tabla almacena datos de todas las business units (multi-org). Se requiere el filtro por ORG_ID para consultas específicas de organización."
+    },
+    {
+      "id": 11,
+      "br": "Propósito de Negócio",
+      "en": "Business Purpose",
+      "es": "Propósito de negocio"
+    },
+    {
+      "id": 12,
+      "br": "Esta tabela é utilizada nos seguintes processos:",
+      "en": "This table is used in the following processes:",
+      "es": "Esta tabla se utiliza en los siguientes procesos:"
+    },
+    {
+      "id": 13,
+      "br": "Geração de lançamentos contábeis (débito/crédito) para cada etapa do ciclo de vida do recebimento.",
+      "en": "Generation of accounting entries (debit/credit) for each stage of the receivables cycle.",
+      "es": "Generación de asientos contables (débito/crédito) para cada etapa del ciclo de vida del cobro."
+    },
+    {
+      "id": 14,
+      "br": "Distribuições contábeis de write-offs e reclassificações.",
+      "en": "Accounting distributions for write-offs and reclassifications.",
+      "es": "Distribuciones contables de escrituras y reclasificaciones."
+    },
+    {
+      "id": 15,
+      "br": "Lançamentos gerados quando recebimentos são aplicados a faturas.",
+      "en": "Entries generated when receipts are applied to invoices.",
+      "es": "Asientos generados cuando los cobros se aplican a facturas."
+    },
+    {
+      "id": 16,
+      "br": "Base para conciliar o subledger AR com o General Ledger.",
+      "en": "Basis for reconciling the AR subledger with the General Ledger.",
+      "es": "Base para conciliar el subledger AR con el General Ledger."
+    },
+    {
+      "id": 17,
+      "br": "Fonte de dados para o mecanismo de contabilização do subledger.",
+      "en": "Data source for the subledger accounting mechanism.",
+      "es": "Fuente de datos para el mecanismo de contabilización del subledger."
+    },
+    {
+      "id": 18,
+      "br": "Colunas Principais",
+      "en": "Key Columns",
+      "es": "Columnas principales"
+    },
+    {
+      "id": 19,
+      "br": "Confiança",
+      "en": "Confidence",
+      "es": "Confianza"
+    },
+    {
+      "id": 20,
+      "br": "Escala de 0% a 100% — grau de certeza da descrição gerada por IA com base na documentação oficial Oracle (OEDMF/BICC Release 13/25A).",
+      "en": "Scale from 0% to 100% — degree of certainty of the AI-generated description based on Oracle official documentation (OEDMF/BICC Release 13/25A).",
+      "es": "Escala del 0% al 100% — grado de certeza de la descripción generada por IA basada en la documentación oficial de Oracle (OEDMF/BICC Release 13/25A)."
+    },
+    {
+      "id": 21,
+      "br": "- 🟢 81–100% — Coluna presente na documentação oficial Oracle; nome, tipo e descrição confirmados.",
+      "en": "- 🟢 81–100% — Column present in Oracle official documentation; name, type, and description confirmed.",
+      "es": "- 🟢 81–100% — Columna presente en la documentación oficial de Oracle; nombre, tipo y descripción confirmados."
+    },
+    {
+      "id": 22,
+      "br": "- 🟡 51–80% — Coluna inferida por naming convention ou padrão Oracle; tipo exato pode variar.",
+      "en": "- 🟡 51–80% — Column inferred by naming convention or Oracle standard; exact type may vary.",
+      "es": "- 🟡 51–80% — Columna inferida por convención de nomenclatura o estándar de Oracle; el tipo exacto puede variar."
+    },
+    {
+      "id": 23,
+      "br": "- 🔴 0–50% — Existência ou tipo incertos; pode não existir no release atual; validar no ambiente.",
+      "en": "- 🔴 0–50% — Existence or type uncertain; may not exist in the current release; validate in the environment.",
+      "es": "- 🔴 0–50% — Existencia o tipo inciertos; puede no existir en la versión actual; validar en el entorno."
+    },
+    {
+      "id": 24,
+      "br": "Coluna",
+      "en": "Column",
+      "es": "Columna"
+    },
+    {
+      "id": 25,
+      "br": "Tipo",
+      "en": "Type",
+      "es": "Tipo"
+    },
+    {
+      "id": 26,
+      "br": "Nulo?",
+      "en": "Null?",
+      "es": "Nulo?"
+    },
+    {
+      "id": 27,
+      "br": "Categoria",
+      "en": "Category",
+      "es": "Categoría"
+    },
+    {
+      "id": 28,
+      "br": "Descrição",
+      "en": "Description",
+      "es": "Descripción"
+    },
+    {
+      "id": 29,
+      "br": "Identificador único da linha de distribuição",
+      "en": "Unique line distribution identifier",
+      "es": "Identificador único de la línea de distribución"
+    },
+    {
+      "id": 30,
+      "br": "ID da entidade-origem (varia conforme SOURCE_TABLE)",
+      "en": "Source entity ID (varies according to SOURCE_TABLE)",
+      "es": "ID de la entidad de origen (varía según SOURCE_TABLE)"
+    },
+    {
+      "id": 31,
+      "br": "Classificação",
+      "en": "Classification",
+      "es": "Clasificación"
+    },
+    {
+      "id": 32,
+      "br": "Tabela de origem: RA, ARR, ADJ, MCD, CRH",
+      "en": "Source table: RA, ARR, ADJ, MCD, CRH",
+      "es": "Tabla de origen: RA, ARR, ADJ, MCD, CRH"
+    },
+    {
+      "id": 33,
+      "br": "Tipo da distribuição (REC/UNAPP/ACC/FACTOR/REMITTANCE/etc.)",
+      "en": "Distribution type (REC/UNAPP/ACC/FACTOR/REMITTANCE/etc.)",
+      "es": "Tipo de distribución (REC/UNAPP/ACC/FACTOR/REMITTANCE/etc.)"
+    },
+    {
+      "id": 34,
+      "br": "Contabilidade",
+      "en": "Accounting",
+      "es": "Contabilidad"
+    },
+    {
+      "id": 35,
+      "br": "Combinação de contas contábeis (CCID)",
+      "en": "Accounting account combination (CCID)",
+      "es": "Combinación de cuentas contables (CCID)"
+    },
+    {
+      "id": 36,
+      "br": "Financeiro",
+      "en": "Finance",
+      "es": "Financiero"
+    },
+    {
+      "id": 37,
+      "br": "Valor a débito na moeda da transação",
+      "en": "Debit amount in transaction currency",
+      "es": "Valor a débito en la moneda de la transacción"
+    },
+    {
+      "id": 38,
+      "br": "Valor a crédito na moeda da transação",
+      "en": "Credit amount in transaction currency",
+      "es": "Valor a crédito en la moneda de la transacción"
+    },
+    {
+      "id": 39,
+      "br": "Valor a débito na moeda funcional",
+      "en": "Debit amount in functional currency",
+      "es": "Valor a débito en la moneda funcional"
+    },
+    {
+      "id": 40,
+      "br": "Valor a crédito na moeda funcional",
+      "en": "Credit amount in functional currency",
+      "es": "Valor a crédito en la moneda funcional"
+    },
+    {
+      "id": 41,
+      "br": "Código da moeda da transação",
+      "en": "Transaction currency code",
+      "es": "Código de la moneda de la transacción"
+    },
+    {
+      "id": 42,
+      "br": "Taxa de conversão cambial",
+      "en": "Exchange rate",
+      "es": "Tipo de cambio"
+    },
+    {
+      "id": 43,
+      "br": "Tipo de conversão cambial",
+      "en": "Exchange rate type",
+      "es": "Tipo de conversión de divisas"
+    },
+    {
+      "id": 44,
+      "br": "Data da conversão cambial",
+      "en": "Exchange rate date",
+      "es": "Fecha de conversión de divisas"
+    },
+    {
+      "id": 45,
+      "br": "Cliente",
+      "en": "Customer",
+      "es": "Cliente"
+    },
+    {
+      "id": 46,
+      "br": "ID do terceiro (cliente)",
+      "en": "Third party ID (customer)",
+      "es": "ID del tercero (cliente)"
+    },
+    {
+      "id": 47,
+      "br": "ID do sub-terceiro (site do cliente)",
+      "en": "Sub-third party ID (customer site)",
+      "es": "ID del sub-tercero (sitio del cliente)"
+    },
+    {
+      "id": 48,
+      "br": "Data contábil",
+      "en": "Accounting date",
+      "es": "Fecha contable"
+    },
+    {
+      "id": 49,
+      "br": "Data de contabilização no GL",
+      "en": "Posting date in GL",
+      "es": "Fecha de contabilización en el GL"
+    },
+    {
+      "id": 50,
+      "br": "ID do processo de posting",
+      "en": "Posting process ID",
+      "es": "ID del proceso de posting"
+    },
+    {
+      "id": 51,
+      "br": "Ledger contábil",
+      "en": "General Ledger",
+      "es": "Libro mayor"
+    },
+    {
+      "id": 52,
+      "br": "Fiscal",
+      "en": "Fiscal",
+      "es": "Fiscal"
+    },
+    {
+      "id": 53,
+      "br": "Código de imposto associado",
+      "en": "Associated tax code",
+      "es": "Código de impuesto asociado"
+    },
+    {
+      "id": 54,
+      "br": "Bucket de atividade (para subledger accounting)",
+      "en": "Activity bucket (for subledger accounting)",
+      "es": "Contenedor de actividades (para la contabilidad de sublibros)"
+    },
+    {
+      "id": 55,
+      "br": "Business unit (multi-org)",
+      "en": "Business unit (multi-org)",
+      "es": "Unidad de negocio (multi-org)"
+    },
+    {
+      "id": 56,
+      "br": "Auditoria",
+      "en": "Audit",
+      "es": "Auditoría"
+    },
+    {
+      "id": 57,
+      "br": "Usuário que criou o registro",
+      "en": "User who created the record",
+      "es": "Usuario que creó el registro"
+    },
+    {
+      "id": 58,
+      "br": "Data/hora de criação",
+      "en": "Creation date/time",
+      "es": "Fecha/hora de creación"
+    },
+    {
+      "id": 59,
+      "br": "Último usuário que alterou",
+      "en": "Last user who modified",
+      "es": "Último usuario que lo modificó"
+    },
+    {
+      "id": 60,
+      "br": "Data/hora da última alteração",
+      "en": "Last modification date/time",
+      "es": "Fecha/hora de la última modificación"
+    },
+    {
+      "id": 61,
+      "br": "Login da última sessão",
+      "en": "Last session login",
+      "es": "Inicio de sesión de la última sesión"
+    },
+    {
+      "id": 62,
+      "br": "Relacionamentos",
+      "en": "Relationships",
+      "es": "Relaciones"
+    },
+    {
+      "id": 63,
+      "br": "Tabelas-pai (FK de entrada — via SOURCE_TABLE + SOURCE_ID)",
+      "en": "Parent tables (FK - via SOURCE_TABLE + SOURCE_ID)",
+      "es": "Tablas padre (clave foránea de entrada — a través de SOURCE_TABLE + SOURCE_ID)"
+    },
+    {
+      "id": 64,
+      "br": "ar_receivable_applications_all — quando SOURCE_TABLE = 'RA'",
+      "en": "ar_receivable_applications_all — when SOURCE_TABLE = 'RA'",
+      "es": "ar_receivable_applications_all — cuando SOURCE_TABLE = 'RA'"
+    },
+    {
+      "id": 65,
+      "br": "ar_adjustments_all — quando SOURCE_TABLE = 'ADJ'",
+      "en": "ar_adjustments_all — when SOURCE_TABLE = 'ADJ'",
+      "es": "ar_adjustments_all — cuando SOURCE_TABLE = 'ADJ'"
+    },
+    {
+      "id": 66,
+      "br": "ar_misc_cash_distributions_all — quando SOURCE_TABLE = 'MCD'",
+      "en": "ar_misc_cash_distributions_all — when SOURCE_TABLE = 'MCD'",
+      "es": "ar_misc_cash_distributions_all — cuando SOURCE_TABLE = 'MCD'"
+    },
+    {
+      "id": 67,
+      "br": "ar_cash_receipt_history_all — quando SOURCE_TABLE = 'CRH'",
+      "en": "ar_cash_receipt_history_all — when SOURCE_TABLE = 'CRH'",
+      "es": "ar_cash_receipt_history_all — cuando SOURCE_TABLE = 'CRH'"
+    },
+    {
+      "id": 68,
+      "br": "conta contábil",
+      "en": "accounting account",
+      "es": "cuenta contable"
+    },
+    {
+      "id": 69,
+      "br": "cliente",
+      "en": "customer",
+      "es": "cliente"
+    },
+    {
+      "id": 70,
+      "br": "site",
+      "en": "site",
+      "es": "sitio web"
+    },
+    {
+      "id": 71,
+      "br": "ledger",
+      "en": "ledger",
+      "es": "libro mayor"
+    },
+    {
+      "id": 72,
+      "br": "business unit",
+      "en": "business unit",
+      "es": "unidad de negocio"
+    },
+    {
+      "id": 73,
+      "br": "Tabelas-filha (FK de saída)",
+      "en": "Child tables (FK - outbound)",
+      "es": "Tablas hijas (clave foránea de salida)"
+    },
+    {
+      "id": 74,
+      "br": "ar_detailed_distributions_all — distribuições detalhadas para XLA",
+      "en": "ar_detailed_distributions_all — detailed distributions for XLA",
+      "es": "ar_detailed_distributions_all — distribuciones detalladas para XLA"
+    },
+    {
+      "id": 75,
+      "br": "Uso Típico",
+      "en": "Typical Use",
+      "es": "Uso típico"
+    },
+    {
+      "id": 76,
+      "br": "Distribuições de uma aplicação de recebimento",
+      "en": "Distributions from a receipt application",
+      "es": "Distribuciones de una aplicación de recepción"
+    },
+    {
+      "id": 77,
+      "br": "Distribuições de ajustes por período",
+      "en": "Period adjustments distributions",
+      "es": "Distribuciones de ajustes por período"
+    },
+    {
+      "id": 78,
+      "br": "Total de distribuições por tipo de origem",
+      "en": "Total distributions by source type",
+      "es": "Total de distribuciones por tipo de origen"
+    },
+    {
+      "id": 79,
+      "br": "Observações",
+      "en": "Notes",
+      "es": "Observaciones"
+    },
+    {
+      "id": 80,
+      "br": "O par SOURCE_TABLE + SOURCE_ID é a chave de vinculação polimórfica — cada valor de SOURCE_TABLE direciona a um tipo diferente de tabela-origem.",
+      "en": "The SOURCE_TABLE + SOURCE_ID combination is the polymorphic linking key — each SOURCE_TABLE value directs to a different source table type.",
+      "es": "La combinación SOURCE_TABLE + SOURCE_ID es la clave de vinculación polimórfica: cada valor de SOURCE_TABLE dirige a un tipo diferente de tabla de origen."
+    },
+    {
+      "id": 81,
+      "br": "Os valores de SOURCE_TYPE variam conforme o SOURCE_TABLE: para CRH pode ser CASH, CONFIRMATION, REMITTANCE; para RA pode ser REC, UNAPP, ACC; para ADJ pode ser ADJ.",
+      "en": "SOURCE_TYPE values vary depending on SOURCE_TABLE: for CRH it can be CASH, CONFIRMATION, REMITTANCE; for RA it can be REC, UNAPP, ACC; for ADJ it can be ADJ.",
+      "es": "Los valores de SOURCE_TYPE varían según SOURCE_TABLE: para CRH puede ser CASH, CONFIRMATION, REMITTANCE; para RA puede ser REC, UNAPP, ACC; para ADJ puede ser ADJ."
+    },
+    {
+      "id": 82,
+      "br": "A soma de AMOUNT_DR e AMOUNT_CR deve balancear (débito = crédito) para cada SOURCE_ID + SOURCE_TABLE.",
+      "en": "The sum of AMOUNT_DR and AMOUNT_CR must balance (debit = credit) for each SOURCE_ID + SOURCE_TABLE.",
+      "es": "La suma de AMOUNT_DR y AMOUNT_CR debe equilibrarse (débito = crédito) para cada SOURCE_ID + SOURCE_TABLE."
+    },
+    {
+      "id": 83,
+      "br": "O campo SET_OF_BOOKS_ID é legado; em implementações modernas, usar ORG_ID para contexto contábil.",
+      "en": "The SET_OF_BOOKS_ID field is legacy; in modern implementations, use ORG_ID for accounting context.",
+      "es": "El campo SET_OF_BOOKS_ID es un campo heredado; en implementaciones modernas, utilizar ORG_ID para el contexto contable."
+    },
+    {
+      "id": 84,
+      "br": "O POSTING_CONTROL_ID = -3 indica distribuições ainda não contabilizadas no GL.",
+      "en": "POSTING_CONTROL_ID = -3 indicates distributions that have not yet been posted to the GL.",
+      "es": "POSTING_CONTROL_ID = -3 indica distribuciones que aún no han sido contabilizadas en el General Ledger."
+    },
+    {
+      "id": 85,
+      "br": "Referências",
+      "en": "References",
+      "es": "Referencias"
+    },
+    {
+      "id": 86,
+      "br": "[Oracle Docs — AR_DISTRIBUTIONS_ALL](https://docs.oracle.com/en/cloud/saas/financials/25a/oedmf/ardistributionsall-10041.html)",
+      "en": "[Oracle Docs — AR_DISTRIBUTIONS_ALL](https://docs.oracle.com/en/cloud/saas/financials/25a/oedmf/ardistributionsall-10041.html)",
+      "es": "[Oracle Docs — AR_DISTRIBUTIONS_ALL](https://docs.oracle.com/en/cloud/saas/financials/25a/oedmf/ardistributionsall-10041.html)"
+    },
+    {
+      "id": 87,
+      "br": "ar-module-data-dictionary — Dossiê do módulo AR",
+      "en": "ar-module-data-dictionary — AR module data dictionary",
+      "es": "ar-module-data-dictionary — Guía del módulo AR"
+    }
+  ]
+}

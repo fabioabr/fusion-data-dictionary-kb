@@ -1,0 +1,1361 @@
+{
+  "meta": {
+    "pvo_name": "InvoiceLineHoldsPVO",
+    "full_path": "FscmTopModelAM.FinApInvTransactionsAM.InvoiceLineHoldsPVO",
+    "module_path": "FscmTopModelAM.FinApInvTransactionsAM",
+    "module_code": "AP",
+    "type": "pvo",
+    "description": "Extrai as retenções (holds) aplicadas em nível de linha de fatura, incluindo motivo do bloqueio e referência a pedido/recebimento. Permite análise granular de exceções por item da fatura e resolução direcionada de discrepâncias."
+  },
+  "stats": {
+    "total_attributes": 93,
+    "tables_count": 12,
+    "bicc_enabled": 13,
+    "bicc_pct": 14,
+    "pk_count": 1
+  },
+  "tables": [
+    "AP_HOLDS_ALL",
+    "AP_INVOICES_ALL",
+    "AP_PAYMENT_SCHEDULES_ALL",
+    "FUN_BU_PERF_V",
+    "HZ_PARTIES",
+    "HZ_PARTY_SITES",
+    "IBY_PAYMENT_CODES_VL",
+    "PER_PERSON_NAMES_F_V",
+    "PER_USERS",
+    "PO_LINE_LOCATIONS_ALL",
+    "RCV_SHIPMENT_HEADERS",
+    "RCV_TRANSACTIONS"
+  ],
+  "attributes": [
+    {
+      "name": "BusinessUnitBusinessUnitId",
+      "table": "FUN_BU_PERF_V",
+      "column": "BU_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "HoldId",
+      "table": "AP_HOLDS_ALL",
+      "column": "HOLD_ID",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceHeaderEarliestSettlementDate",
+      "table": "AP_INVOICES_ALL",
+      "column": "EARLIEST_SETTLEMENT_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceHeaderExchangeDate",
+      "table": "AP_INVOICES_ALL",
+      "column": "EXCHANGE_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceHeaderExchangeRate",
+      "table": "AP_INVOICES_ALL",
+      "column": "EXCHANGE_RATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceHeaderExchangeRateType",
+      "table": "AP_INVOICES_ALL",
+      "column": "EXCHANGE_RATE_TYPE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceHeaderInvoiceAmount",
+      "table": "AP_INVOICES_ALL",
+      "column": "INVOICE_AMOUNT",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceHeaderInvoiceCurrencyCode",
+      "table": "AP_INVOICES_ALL",
+      "column": "INVOICE_CURRENCY_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceHeaderInvoiceDate",
+      "table": "AP_INVOICES_ALL",
+      "column": "INVOICE_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceHeaderInvoiceId",
+      "table": "AP_INVOICES_ALL",
+      "column": "INVOICE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceHeaderInvoiceNum",
+      "table": "AP_INVOICES_ALL",
+      "column": "INVOICE_NUM",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceHeaderLegalEntityId",
+      "table": "AP_INVOICES_ALL",
+      "column": "LEGAL_ENTITY_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceHeaderObjectVersionNumber",
+      "table": "AP_INVOICES_ALL",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceHeaderOrgId",
+      "table": "AP_INVOICES_ALL",
+      "column": "ORG_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceHeaderPartyId",
+      "table": "AP_INVOICES_ALL",
+      "column": "PARTY_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceHeaderPartySiteId",
+      "table": "AP_INVOICES_ALL",
+      "column": "PARTY_SITE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceHeaderPaymentMethodCode",
+      "table": "AP_INVOICES_ALL",
+      "column": "PAYMENT_METHOD_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceHeaderRemitToSupplierId",
+      "table": "AP_PAYMENT_SCHEDULES_ALL",
+      "column": "REMIT_TO_SUPPLIER_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceHeaderSetOfBooksId",
+      "table": "AP_INVOICES_ALL",
+      "column": "SET_OF_BOOKS_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceHeaderSource",
+      "table": "AP_INVOICES_ALL",
+      "column": "SOURCE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceHeaderTermsId",
+      "table": "AP_INVOICES_ALL",
+      "column": "TERMS_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceHeaderVendorSiteId",
+      "table": "AP_INVOICES_ALL",
+      "column": "VENDOR_SITE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceHoldCreatedBy",
+      "table": "AP_HOLDS_ALL",
+      "column": "CREATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceHoldCreationDate",
+      "table": "AP_HOLDS_ALL",
+      "column": "CREATION_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceHoldHeldBy",
+      "table": "AP_HOLDS_ALL",
+      "column": "HELD_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceHoldHoldDate",
+      "table": "AP_HOLDS_ALL",
+      "column": "HOLD_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceHoldHoldDetails",
+      "table": "AP_HOLDS_ALL",
+      "column": "HOLD_DETAILS",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceHoldHoldLookupCode",
+      "table": "AP_HOLDS_ALL",
+      "column": "HOLD_LOOKUP_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceHoldHoldReason",
+      "table": "AP_HOLDS_ALL",
+      "column": "HOLD_REASON",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceHoldInvoiceId",
+      "table": "AP_HOLDS_ALL",
+      "column": "INVOICE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceHoldLastUpdateDate",
+      "table": "AP_HOLDS_ALL",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": true
+    },
+    {
+      "name": "InvoiceHoldLastUpdatedBy",
+      "table": "AP_HOLDS_ALL",
+      "column": "LAST_UPDATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceHoldLineNumber",
+      "table": "AP_HOLDS_ALL",
+      "column": "LINE_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceHoldObjectVersionNumber",
+      "table": "AP_HOLDS_ALL",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceHoldOrgId",
+      "table": "AP_HOLDS_ALL",
+      "column": "ORG_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceHoldReleaseLookupCode",
+      "table": "AP_HOLDS_ALL",
+      "column": "RELEASE_LOOKUP_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceHoldReleaseReason",
+      "table": "AP_HOLDS_ALL",
+      "column": "RELEASE_REASON",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceHoldStatusFlag",
+      "table": "AP_HOLDS_ALL",
+      "column": "STATUS_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceHoldWfStatus",
+      "table": "AP_HOLDS_ALL",
+      "column": "WF_STATUS",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartyLastUpdateDate",
+      "table": "HZ_PARTIES",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartyPartyId",
+      "table": "HZ_PARTIES",
+      "column": "PARTY_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartySiteLastUpdateDate",
+      "table": "HZ_PARTY_SITES",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartySitePartySiteId",
+      "table": "HZ_PARTY_SITES",
+      "column": "PARTY_SITE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PayDelcodeLastUpdateDate",
+      "table": "IBY_PAYMENT_CODES_VL",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PayDelcodePaymentCode",
+      "table": "IBY_PAYMENT_CODES_VL",
+      "column": "PAYMENT_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PayDelcodePaymentCodeType",
+      "table": "IBY_PAYMENT_CODES_VL",
+      "column": "PAYMENT_CODE_TYPE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PayReacodeLastUpdateDate",
+      "table": "IBY_PAYMENT_CODES_VL",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PayReacodePaymentCode",
+      "table": "IBY_PAYMENT_CODES_VL",
+      "column": "PAYMENT_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PayReacodePaymentCodeType",
+      "table": "IBY_PAYMENT_CODES_VL",
+      "column": "PAYMENT_CODE_TYPE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonCreatedByDisplayName",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "DISPLAY_NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonCreatedByEffectiveEndDate",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "EFFECTIVE_END_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonCreatedByEffectiveStartDate",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "EFFECTIVE_START_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonCreatedByPersonId",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "PERSON_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonCreatedByPersonNameId",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "PERSON_NAME_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonHoldHeldByDisplayName",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "DISPLAY_NAME",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonHoldHeldByEffectiveEndDate",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "EFFECTIVE_END_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonHoldHeldByEffectiveStartDate",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "EFFECTIVE_START_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonHoldHeldByPersonId",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "PERSON_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonHoldHeldByPersonNameId",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "PERSON_NAME_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonNameDisplayName",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "DISPLAY_NAME",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonNameEffectiveEndDate",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "EFFECTIVE_END_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonNameEffectiveStartDate",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "EFFECTIVE_START_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonNamePersonNameId",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "PERSON_NAME_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonUpdatedByDisplayName",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "DISPLAY_NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonUpdatedByEffectiveEndDate2",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "EFFECTIVE_END_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonUpdatedByEffectiveStartDate2",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "EFFECTIVE_START_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonUpdatedByPersonId",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "PERSON_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonUpdatedByPersonNameId",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "PERSON_NAME_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PoLineLocLastUpdateDate",
+      "table": "PO_LINE_LOCATIONS_ALL",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PoLineLocLineLocationId",
+      "table": "PO_LINE_LOCATIONS_ALL",
+      "column": "LINE_LOCATION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PoLineLocObjectVersionNumber",
+      "table": "PO_LINE_LOCATIONS_ALL",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RcvShipHeaderInvHoldLastUpdateDate",
+      "table": "RCV_SHIPMENT_HEADERS",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RcvShipHeaderInvHoldObjectVersionNumber",
+      "table": "RCV_SHIPMENT_HEADERS",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RcvShipHeaderInvHoldRaDocLastUpdateDate",
+      "table": "RCV_SHIPMENT_HEADERS",
+      "column": "RA_DOC_LAST_UPDATE_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RcvShipHeaderInvHoldReceiptNum",
+      "table": "RCV_SHIPMENT_HEADERS",
+      "column": "RECEIPT_NUM",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RcvShipHeaderInvHoldShipmentHeaderId",
+      "table": "RCV_SHIPMENT_HEADERS",
+      "column": "SHIPMENT_HEADER_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RcvTransInvHoldLastUpdateDate",
+      "table": "RCV_TRANSACTIONS",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RcvTransInvHoldTransactionId",
+      "table": "RCV_TRANSACTIONS",
+      "column": "TRANSACTION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "UserCreatedByObjectVersionNumber",
+      "table": "PER_USERS",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "UserCreatedByPersonId",
+      "table": "PER_USERS",
+      "column": "PERSON_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "UserCreatedByUserGuid",
+      "table": "PER_USERS",
+      "column": "USER_GUID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "UserCreatedByUserId",
+      "table": "PER_USERS",
+      "column": "USER_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "UserCreatedByUsername",
+      "table": "PER_USERS",
+      "column": "USERNAME",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "UserHoldHeldByObjectVersionNumber",
+      "table": "PER_USERS",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "UserHoldHeldByPersonId",
+      "table": "PER_USERS",
+      "column": "PERSON_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "UserHoldHeldByUserGuid",
+      "table": "PER_USERS",
+      "column": "USER_GUID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "UserHoldHeldByUserId",
+      "table": "PER_USERS",
+      "column": "USER_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "UserHoldHeldByUsername",
+      "table": "PER_USERS",
+      "column": "USERNAME",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "UserUpdatedByObjectVersionNumber",
+      "table": "PER_USERS",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "UserUpdatedByPersonId",
+      "table": "PER_USERS",
+      "column": "PERSON_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "UserUpdatedByUserGuid",
+      "table": "PER_USERS",
+      "column": "USER_GUID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "UserUpdatedByUserId",
+      "table": "PER_USERS",
+      "column": "USER_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "UserUpdatedByUsername",
+      "table": "PER_USERS",
+      "column": "USERNAME",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    }
+  ],
+  "by_table": {
+    "FUN_BU_PERF_V": [
+      {
+        "attribute": "BusinessUnitBusinessUnitId",
+        "column": "BU_ID",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "AP_HOLDS_ALL": [
+      {
+        "attribute": "HoldId",
+        "column": "HOLD_ID",
+        "bicc": true,
+        "pk": true
+      },
+      {
+        "attribute": "InvoiceHoldCreatedBy",
+        "column": "CREATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceHoldCreationDate",
+        "column": "CREATION_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceHoldHeldBy",
+        "column": "HELD_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceHoldHoldDate",
+        "column": "HOLD_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceHoldHoldDetails",
+        "column": "HOLD_DETAILS",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceHoldHoldLookupCode",
+        "column": "HOLD_LOOKUP_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceHoldHoldReason",
+        "column": "HOLD_REASON",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceHoldInvoiceId",
+        "column": "INVOICE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceHoldLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceHoldLastUpdatedBy",
+        "column": "LAST_UPDATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceHoldLineNumber",
+        "column": "LINE_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceHoldObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceHoldOrgId",
+        "column": "ORG_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceHoldReleaseLookupCode",
+        "column": "RELEASE_LOOKUP_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceHoldReleaseReason",
+        "column": "RELEASE_REASON",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceHoldStatusFlag",
+        "column": "STATUS_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceHoldWfStatus",
+        "column": "WF_STATUS",
+        "bicc": true,
+        "pk": false
+      }
+    ],
+    "AP_INVOICES_ALL": [
+      {
+        "attribute": "InvoiceHeaderEarliestSettlementDate",
+        "column": "EARLIEST_SETTLEMENT_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceHeaderExchangeDate",
+        "column": "EXCHANGE_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceHeaderExchangeRate",
+        "column": "EXCHANGE_RATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceHeaderExchangeRateType",
+        "column": "EXCHANGE_RATE_TYPE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceHeaderInvoiceAmount",
+        "column": "INVOICE_AMOUNT",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceHeaderInvoiceCurrencyCode",
+        "column": "INVOICE_CURRENCY_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceHeaderInvoiceDate",
+        "column": "INVOICE_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceHeaderInvoiceId",
+        "column": "INVOICE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceHeaderInvoiceNum",
+        "column": "INVOICE_NUM",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceHeaderLegalEntityId",
+        "column": "LEGAL_ENTITY_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceHeaderObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceHeaderOrgId",
+        "column": "ORG_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceHeaderPartyId",
+        "column": "PARTY_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceHeaderPartySiteId",
+        "column": "PARTY_SITE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceHeaderPaymentMethodCode",
+        "column": "PAYMENT_METHOD_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceHeaderSetOfBooksId",
+        "column": "SET_OF_BOOKS_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceHeaderSource",
+        "column": "SOURCE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceHeaderTermsId",
+        "column": "TERMS_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceHeaderVendorSiteId",
+        "column": "VENDOR_SITE_ID",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "AP_PAYMENT_SCHEDULES_ALL": [
+      {
+        "attribute": "InvoiceHeaderRemitToSupplierId",
+        "column": "REMIT_TO_SUPPLIER_ID",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "HZ_PARTIES": [
+      {
+        "attribute": "PartyLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PartyPartyId",
+        "column": "PARTY_ID",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "HZ_PARTY_SITES": [
+      {
+        "attribute": "PartySiteLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PartySitePartySiteId",
+        "column": "PARTY_SITE_ID",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "IBY_PAYMENT_CODES_VL": [
+      {
+        "attribute": "PayDelcodeLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PayDelcodePaymentCode",
+        "column": "PAYMENT_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PayDelcodePaymentCodeType",
+        "column": "PAYMENT_CODE_TYPE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PayReacodeLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PayReacodePaymentCode",
+        "column": "PAYMENT_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PayReacodePaymentCodeType",
+        "column": "PAYMENT_CODE_TYPE",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "PER_PERSON_NAMES_F_V": [
+      {
+        "attribute": "PersonCreatedByDisplayName",
+        "column": "DISPLAY_NAME",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PersonCreatedByEffectiveEndDate",
+        "column": "EFFECTIVE_END_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PersonCreatedByEffectiveStartDate",
+        "column": "EFFECTIVE_START_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PersonCreatedByPersonId",
+        "column": "PERSON_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PersonCreatedByPersonNameId",
+        "column": "PERSON_NAME_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PersonHoldHeldByDisplayName",
+        "column": "DISPLAY_NAME",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PersonHoldHeldByEffectiveEndDate",
+        "column": "EFFECTIVE_END_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PersonHoldHeldByEffectiveStartDate",
+        "column": "EFFECTIVE_START_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PersonHoldHeldByPersonId",
+        "column": "PERSON_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PersonHoldHeldByPersonNameId",
+        "column": "PERSON_NAME_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PersonNameDisplayName",
+        "column": "DISPLAY_NAME",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PersonNameEffectiveEndDate",
+        "column": "EFFECTIVE_END_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PersonNameEffectiveStartDate",
+        "column": "EFFECTIVE_START_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PersonNamePersonNameId",
+        "column": "PERSON_NAME_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PersonUpdatedByDisplayName",
+        "column": "DISPLAY_NAME",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PersonUpdatedByEffectiveEndDate2",
+        "column": "EFFECTIVE_END_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PersonUpdatedByEffectiveStartDate2",
+        "column": "EFFECTIVE_START_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PersonUpdatedByPersonId",
+        "column": "PERSON_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PersonUpdatedByPersonNameId",
+        "column": "PERSON_NAME_ID",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "PO_LINE_LOCATIONS_ALL": [
+      {
+        "attribute": "PoLineLocLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PoLineLocLineLocationId",
+        "column": "LINE_LOCATION_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PoLineLocObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "RCV_SHIPMENT_HEADERS": [
+      {
+        "attribute": "RcvShipHeaderInvHoldLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "RcvShipHeaderInvHoldObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "RcvShipHeaderInvHoldRaDocLastUpdateDate",
+        "column": "RA_DOC_LAST_UPDATE_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "RcvShipHeaderInvHoldReceiptNum",
+        "column": "RECEIPT_NUM",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "RcvShipHeaderInvHoldShipmentHeaderId",
+        "column": "SHIPMENT_HEADER_ID",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "RCV_TRANSACTIONS": [
+      {
+        "attribute": "RcvTransInvHoldLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "RcvTransInvHoldTransactionId",
+        "column": "TRANSACTION_ID",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "PER_USERS": [
+      {
+        "attribute": "UserCreatedByObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "UserCreatedByPersonId",
+        "column": "PERSON_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "UserCreatedByUserGuid",
+        "column": "USER_GUID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "UserCreatedByUserId",
+        "column": "USER_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "UserCreatedByUsername",
+        "column": "USERNAME",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "UserHoldHeldByObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "UserHoldHeldByPersonId",
+        "column": "PERSON_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "UserHoldHeldByUserGuid",
+        "column": "USER_GUID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "UserHoldHeldByUserId",
+        "column": "USER_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "UserHoldHeldByUsername",
+        "column": "USERNAME",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "UserUpdatedByObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "UserUpdatedByPersonId",
+        "column": "PERSON_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "UserUpdatedByUserGuid",
+        "column": "USER_GUID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "UserUpdatedByUserId",
+        "column": "USER_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "UserUpdatedByUsername",
+        "column": "USERNAME",
+        "bicc": false,
+        "pk": false
+      }
+    ]
+  }
+}

@@ -1,0 +1,385 @@
+{
+  "source": "poq_all_qnaire_resp_values_v.md",
+  "source_hash": "494d5e6d1aa60907b069f8bbb07bc1f3",
+  "translated_at": "2026-03-25",
+  "items": [
+    {
+      "id": 1,
+      "br": "Visão Geral",
+      "en": "Overview",
+      "es": "Visión General"
+    },
+    {
+      "id": 2,
+      "br": "View que consolida os valores das respostas de questionários de qualificação de fornecedores no módulo Oracle Supplier Qualification Management (SQM). Apresenta as respostas individuais dos fornecedores a cada pergunta de um questionário, incluindo valores textuais, numéricos e de seleção, com informações desnormalizadas para facilitar consultas e relatórios.",
+      "en": "View that consolidates questionnaire response values for supplier qualification in the Oracle Supplier Qualification Management (SQM) module. Presents individual supplier responses to each questionnaire question, including text, numeric, and selection values, with denormalized information to facilitate queries and reports.",
+      "es": "Vista que consolida los valores de respuestas de cuestionarios de calificación de proveedores en el módulo Oracle Supplier Qualification Management (SQM). Presenta las respuestas individuales de los proveedores a cada pregunta de un cuestionario, incluyendo valores textuales, numéricos y de selección, con información desnormalizada para facilitar consultas e informes."
+    },
+    {
+      "id": 3,
+      "br": "Sufixo _V",
+      "en": "Suffix _V",
+      "es": "Sufijo _V"
+    },
+    {
+      "id": 4,
+      "br": "O sufixo _V indica que este é um view (visão), não uma tabela-base. Os dados são derivados de tabelas subjacentes do módulo POQ e expostos em formato consolidado para consumo analítico.",
+      "en": "The _V suffix indicates this is a view, not a base table. Data is derived from underlying POQ module tables and exposed in a consolidated format for analytical consumption.",
+      "es": "El sufijo _V indica que esta es una vista, no una tabla base. Los datos se derivan de tablas subyacentes del módulo POQ y se exponen en formato consolidado para consumo analítico."
+    },
+    {
+      "id": 5,
+      "br": "Propósito de Negócio",
+      "en": "Business Purpose",
+      "es": "Propósito de Negocio"
+    },
+    {
+      "id": 6,
+      "br": "Esta view é utilizada nos seguintes processos:",
+      "en": "This view is used in the following processes:",
+      "es": "Esta vista se utiliza en los siguientes procesos:"
+    },
+    {
+      "id": 7,
+      "br": "Consulta consolidada das respostas dos fornecedores a questionários de qualificação.",
+      "en": "Consolidated query of supplier responses to qualification questionnaires.",
+      "es": "Consulta consolidada de las respuestas de los proveedores a cuestionarios de calificación."
+    },
+    {
+      "id": 8,
+      "br": "Geração de relatórios sobre conformidade dos fornecedores com critérios de qualificação.",
+      "en": "Report generation on supplier compliance with qualification criteria.",
+      "es": "Generación de informes sobre conformidad de los proveedores con criterios de calificación."
+    },
+    {
+      "id": 9,
+      "br": "Análise lado a lado das respostas de múltiplos fornecedores ao mesmo questionário.",
+      "en": "Side-by-side analysis of responses from multiple suppliers to the same questionnaire.",
+      "es": "Análisis comparativo de las respuestas de múltiples proveedores al mismo cuestionario."
+    },
+    {
+      "id": 10,
+      "br": "Fonte de dados desnormalizados para pipelines de BI e analytics.",
+      "en": "Denormalized data source for BI and analytics pipelines.",
+      "es": "Fuente de datos desnormalizados para pipelines de BI y analytics."
+    },
+    {
+      "id": 11,
+      "br": "Evidência das respostas fornecidas em processos de qualificação.",
+      "en": "Evidence of responses provided in qualification processes.",
+      "es": "Evidencia de las respuestas proporcionadas en procesos de calificación."
+    },
+    {
+      "id": 12,
+      "br": "Colunas Principais",
+      "en": "Key Columns",
+      "es": "Columnas Principales"
+    },
+    {
+      "id": 13,
+      "br": "Confiança",
+      "en": "Confidence",
+      "es": "Confianza"
+    },
+    {
+      "id": 14,
+      "br": "Escala de 0% a 100% — grau de certeza da descrição gerada por IA com base na documentação oficial Oracle (OEDMF/BICC Release 13/25A).",
+      "en": "Scale from 0% to 100% — degree of certainty of the AI-generated description based on official Oracle documentation (OEDMF/BICC Release 13/25A).",
+      "es": "Escala de 0% a 100% — grado de certeza de la descripción generada por IA con base en la documentación oficial Oracle (OEDMF/BICC Release 13/25A)."
+    },
+    {
+      "id": 15,
+      "br": "- 🟢 81–100% — Coluna presente na documentação oficial Oracle; nome, tipo e descrição confirmados.",
+      "en": "- 🟢 81–100% — Column present in official Oracle documentation; name, type, and description confirmed.",
+      "es": "- 🟢 81–100% — Columna presente en la documentación oficial Oracle; nombre, tipo y descripción confirmados."
+    },
+    {
+      "id": 16,
+      "br": "- 🟡 51–80% — Coluna inferida por naming convention ou padrão Oracle; tipo exato pode variar.",
+      "en": "- 🟡 51–80% — Column inferred by naming convention or Oracle standard; exact type may vary.",
+      "es": "- 🟡 51–80% — Columna inferida por naming convention o estándar Oracle; el tipo exacto puede variar."
+    },
+    {
+      "id": 17,
+      "br": "- 🔴 0–50% — Existência ou tipo incertos; pode não existir no release atual; validar no ambiente.",
+      "en": "- 🔴 0–50% — Uncertain existence or type; may not exist in the current release; validate in the environment.",
+      "es": "- 🔴 0–50% — Existencia o tipo inciertos; puede no existir en el release actual; validar en el ambiente."
+    },
+    {
+      "id": 18,
+      "br": "Coluna",
+      "en": "Column",
+      "es": "Columna"
+    },
+    {
+      "id": 19,
+      "br": "Tipo",
+      "en": "Type",
+      "es": "Tipo"
+    },
+    {
+      "id": 20,
+      "br": "Nulo?",
+      "en": "Nullable?",
+      "es": "¿Nulo?"
+    },
+    {
+      "id": 21,
+      "br": "Categoria",
+      "en": "Category",
+      "es": "Categoría"
+    },
+    {
+      "id": 22,
+      "br": "Descrição",
+      "en": "Description",
+      "es": "Descripción"
+    },
+    {
+      "id": 23,
+      "br": "Identificador único do valor da resposta",
+      "en": "Unique response value identifier",
+      "es": "Identificador único del valor de respuesta"
+    },
+    {
+      "id": 24,
+      "br": "Identificador do questionário",
+      "en": "Questionnaire identifier",
+      "es": "Identificador del cuestionario"
+    },
+    {
+      "id": 25,
+      "br": "Identificador da pergunta",
+      "en": "Question identifier",
+      "es": "Identificador de la pregunta"
+    },
+    {
+      "id": 26,
+      "br": "Identificador da resposta do fornecedor",
+      "en": "Supplier response identifier",
+      "es": "Identificador de la respuesta del proveedor"
+    },
+    {
+      "id": 27,
+      "br": "Fornecedor respondente",
+      "en": "Responding supplier",
+      "es": "Proveedor respondiente"
+    },
+    {
+      "id": 28,
+      "br": "Texto",
+      "en": "Text",
+      "es": "Texto"
+    },
+    {
+      "id": 29,
+      "br": "Texto da pergunta (desnormalizado)",
+      "en": "Question text (denormalized)",
+      "es": "Texto de la pregunta (desnormalizado)"
+    },
+    {
+      "id": 30,
+      "br": "Valor da resposta (texto livre ou seleção)",
+      "en": "Response value (free text or selection)",
+      "es": "Valor de la respuesta (texto libre o selección)"
+    },
+    {
+      "id": 31,
+      "br": "Numérico",
+      "en": "Numeric",
+      "es": "Numérico"
+    },
+    {
+      "id": 32,
+      "br": "Valor numérico da resposta (quando aplicável)",
+      "en": "Numeric response value (when applicable)",
+      "es": "Valor numérico de la respuesta (cuando aplique)"
+    },
+    {
+      "id": 33,
+      "br": "Data",
+      "en": "Date",
+      "es": "Fecha"
+    },
+    {
+      "id": 34,
+      "br": "Valor de data da resposta (quando aplicável)",
+      "en": "Date response value (when applicable)",
+      "es": "Valor de fecha de la respuesta (cuando aplique)"
+    },
+    {
+      "id": 35,
+      "br": "Classificação",
+      "en": "Classification",
+      "es": "Clasificación"
+    },
+    {
+      "id": 36,
+      "br": "Tipo da pergunta (TEXT, NUMBER, DATE, SINGLE_SELECT, MULTI_SELECT)",
+      "en": "Question type (TEXT, NUMBER, DATE, SINGLE_SELECT, MULTI_SELECT)",
+      "es": "Tipo de pregunta (TEXT, NUMBER, DATE, SINGLE_SELECT, MULTI_SELECT)"
+    },
+    {
+      "id": 37,
+      "br": "Identificação",
+      "en": "Identification",
+      "es": "Identificación"
+    },
+    {
+      "id": 38,
+      "br": "Nome da seção do questionário (desnormalizado)",
+      "en": "Questionnaire section name (denormalized)",
+      "es": "Nombre de la sección del cuestionario (desnormalizado)"
+    },
+    {
+      "id": 39,
+      "br": "Nome do questionário (desnormalizado)",
+      "en": "Questionnaire name (denormalized)",
+      "es": "Nombre del cuestionario (desnormalizado)"
+    },
+    {
+      "id": 40,
+      "br": "Nome do fornecedor (desnormalizado)",
+      "en": "Supplier name (denormalized)",
+      "es": "Nombre del proveedor (desnormalizado)"
+    },
+    {
+      "id": 41,
+      "br": "Auditoria",
+      "en": "Audit",
+      "es": "Auditoría"
+    },
+    {
+      "id": 42,
+      "br": "Data/hora de criação da resposta",
+      "en": "Response creation date/time",
+      "es": "Fecha/hora de creación de la respuesta"
+    },
+    {
+      "id": 43,
+      "br": "Data/hora da última alteração",
+      "en": "Last modification date/time",
+      "es": "Fecha/hora de la última modificación"
+    },
+    {
+      "id": 44,
+      "br": "Relacionamentos",
+      "en": "Relationships",
+      "es": "Relaciones"
+    },
+    {
+      "id": 45,
+      "br": "Tabelas-base (fontes do view)",
+      "en": "Base Tables (view sources)",
+      "es": "Tablas base (fuentes de la vista)"
+    },
+    {
+      "id": 46,
+      "br": "poq_questionnaires — definição do questionário",
+      "en": "poq_questionnaires — questionnaire definition",
+      "es": "poq_questionnaires — definición del cuestionario"
+    },
+    {
+      "id": 47,
+      "br": "poq_questions — perguntas do questionário",
+      "en": "poq_questions — questionnaire questions",
+      "es": "poq_questions — preguntas del cuestionario"
+    },
+    {
+      "id": 48,
+      "br": "poq_responses — respostas dos fornecedores",
+      "en": "poq_responses — supplier responses",
+      "es": "poq_responses — respuestas de los proveedores"
+    },
+    {
+      "id": 49,
+      "br": "poz_suppliers — cadastro de fornecedores",
+      "en": "poz_suppliers — cadastro de fornecedores",
+      "es": "poz_suppliers — cadastro de fornecedores"
+    },
+    {
+      "id": 50,
+      "br": "Views relacionadas",
+      "en": "Related Views",
+      "es": "Vistas relacionadas"
+    },
+    {
+      "id": 51,
+      "br": "poq_all_resp_repos_values_v — valores de respostas em repositórios de qualificação",
+      "en": "poq_all_resp_repos_values_v — response values in qualification repositories",
+      "es": "poq_all_resp_repos_values_v — valores de respuestas em repositórios de calificación"
+    },
+    {
+      "id": 52,
+      "br": "Uso Típico",
+      "en": "Typical Usage",
+      "es": "Uso Típico"
+    },
+    {
+      "id": 53,
+      "br": "Respostas de um fornecedor a um questionário",
+      "en": "Supplier responses to a questionnaire",
+      "es": "Respuestas de un proveedor a un cuestionario"
+    },
+    {
+      "id": 54,
+      "br": "Comparação de respostas entre fornecedores",
+      "en": "Response comparison across suppliers",
+      "es": "Comparación de respuestas entre proveedores"
+    },
+    {
+      "id": 55,
+      "br": "Observações",
+      "en": "Notes",
+      "es": "Observaciones"
+    },
+    {
+      "id": 56,
+      "br": "Por ser uma view, não possui índices próprios — o desempenho depende dos índices das tabelas-base subjacentes.",
+      "en": "As a view, it has no indexes of its own — performance depends on the indexes of the underlying base tables.",
+      "es": "Al ser una vista, no posee índices propios — el rendimiento depende de los índices de las tablas base subyacentes."
+    },
+    {
+      "id": 57,
+      "br": "Os campos desnormalizados (QUESTION_TEXT, QUESTIONNAIRE_NAME, SUPPLIER_NAME, SECTION_NAME) evitam joins adicionais em consultas analíticas.",
+      "en": "Os campos desnormalizados (QUESTION_TEXT, QUESTIONNAIRE_NAME, SUPPLIER_NAME, SECTION_NAME) evitam joins adicionais em consultas analíticas.",
+      "es": "Os campos desnormalizados (QUESTION_TEXT, QUESTIONNAIRE_NAME, SUPPLIER_NAME, SECTION_NAME) evitam joins adicionais em consultas analíticas."
+    },
+    {
+      "id": 58,
+      "br": "O tipo de resposta (QUESTION_TYPE) determina qual coluna de valor está preenchida: RESPONSE_VALUE (texto/seleção), RESPONSE_NUMBER_VALUE (numérico), ou RESPONSE_DATE_VALUE (data).",
+      "en": "O tipo de resposta (QUESTION_TYPE) determina qual coluna de valor está preenchida: RESPONSE_VALUE (texto/seleção), RESPONSE_NUMBER_VALUE (numérico), ou RESPONSE_DATE_VALUE (data).",
+      "es": "O tipo de resposta (QUESTION_TYPE) determina qual coluna de valor está preenchida: RESPONSE_VALUE (texto/seleção), RESPONSE_NUMBER_VALUE (numérico), ou RESPONSE_DATE_VALUE (data)."
+    },
+    {
+      "id": 59,
+      "br": "Esta view é frequentemente utilizada por ferramentas de BI (OTBI/BICC) para extração de dados de qualificação de fornecedores.",
+      "en": "Esta view é frequentemente utilizada por ferramentas de BI (OTBI/BICC) para extração de dados de qualificação de fornecedores.",
+      "es": "Esta view é frequentemente utilizada por ferramentas de BI (OTBI/BICC) para extração de dados de qualificação de fornecedores."
+    },
+    {
+      "id": 60,
+      "br": "As colunas e estrutura exatas podem variar conforme o release do Oracle Fusion; recomenda-se validação no ambiente.",
+      "en": "Exact columns and structure may vary by Oracle Fusion release; validation in the environment is recommended.",
+      "es": "Las columnas y estructura exactas pueden variar según el release de Oracle Fusion; se recomienda validación en el ambiente."
+    },
+    {
+      "id": 61,
+      "br": "Referências",
+      "en": "References",
+      "es": "Referencias"
+    },
+    {
+      "id": 62,
+      "br": "[Oracle Docs — POQ_ALL_QNAIRE_RESP_VALUES_V](https://docs.oracle.com/en/cloud/saas/procurement/25a/oedmf/poqallqnairerespvaluesv.html)",
+      "en": "[Oracle Docs — POQ_ALL_QNAIRE_RESP_VALUES_V](https://docs.oracle.com/en/cloud/saas/procurement/25a/oedmf/poqallqnairerespvaluesv.html)",
+      "es": "[Oracle Docs — POQ_ALL_QNAIRE_RESP_VALUES_V](https://docs.oracle.com/en/cloud/saas/procurement/25a/oedmf/poqallqnairerespvaluesv.html)"
+    },
+    {
+      "id": 63,
+      "br": "po-module-data-dictionary — Dossiê do módulo Procurement",
+      "en": "po-module-data-dictionary — module dossier for Procurement",
+      "es": "po-module-data-dictionary — Dosier del módulo Procurement"
+    }
+  ]
+}

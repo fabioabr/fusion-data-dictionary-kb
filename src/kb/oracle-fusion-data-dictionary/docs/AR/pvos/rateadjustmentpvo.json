@@ -1,0 +1,1175 @@
+{
+  "meta": {
+    "pvo_name": "RateAdjustmentPVO",
+    "full_path": "FscmTopModelAM.FinArTopPublicModelAM.RateAdjustmentPVO",
+    "module_path": "FscmTopModelAM.FinArTopPublicModelAM",
+    "module_code": "AR",
+    "type": "pvo",
+    "description": "Extrai os ajustes de taxa de câmbio aplicados a recebimentos em moeda estrangeira, com taxas original e ajustada, ganho/perda cambial e data. Essencial para gestão de exposição cambial e contabilização de variações de câmbio em operações internacionais."
+  },
+  "stats": {
+    "total_attributes": 81,
+    "tables_count": 6,
+    "bicc_enabled": 19,
+    "bicc_pct": 23,
+    "pk_count": 1
+  },
+  "tables": [
+    "AR_CASH_RECEIPTS_ALL",
+    "AR_RATE_ADJUSTMENTS_ALL",
+    "FUN_BU_PERF_V",
+    "GL_DAILY_CONVERSION_TYPES",
+    "PER_PERSON_NAMES_F_V",
+    "PER_USERS"
+  ],
+  "attributes": [
+    {
+      "name": "BusinessUnitBusinessUnitId",
+      "table": "FUN_BU_PERF_V",
+      "column": "BU_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NewExcRateConversionType",
+      "table": "GL_DAILY_CONVERSION_TYPES",
+      "column": "CONVERSION_TYPE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NewExcRateCreatedBy",
+      "table": "GL_DAILY_CONVERSION_TYPES",
+      "column": "CREATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NewExcRateCreationDate",
+      "table": "GL_DAILY_CONVERSION_TYPES",
+      "column": "CREATION_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NewExcRateDescription",
+      "table": "GL_DAILY_CONVERSION_TYPES",
+      "column": "DESCRIPTION",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NewExcRateEnableCrossRateFlag",
+      "table": "GL_DAILY_CONVERSION_TYPES",
+      "column": "ENABLE_CROSS_RATE_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NewExcRateEnforceInverseRateFlag",
+      "table": "GL_DAILY_CONVERSION_TYPES",
+      "column": "ENFORCE_INVERSE_RATE_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NewExcRateFemEnabledFlag",
+      "table": "GL_DAILY_CONVERSION_TYPES",
+      "column": "FEM_ENABLED_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NewExcRateFemRateTypeCode",
+      "table": "GL_DAILY_CONVERSION_TYPES",
+      "column": "FEM_RATE_TYPE_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NewExcRateFemScenario",
+      "table": "GL_DAILY_CONVERSION_TYPES",
+      "column": "FEM_SCENARIO",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NewExcRateFemTimeframe",
+      "table": "GL_DAILY_CONVERSION_TYPES",
+      "column": "FEM_TIMEFRAME",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NewExcRateLastUpdateDate",
+      "table": "GL_DAILY_CONVERSION_TYPES",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": true
+    },
+    {
+      "name": "NewExcRateLastUpdateLogin",
+      "table": "GL_DAILY_CONVERSION_TYPES",
+      "column": "LAST_UPDATE_LOGIN",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NewExcRateLastUpdatedBy",
+      "table": "GL_DAILY_CONVERSION_TYPES",
+      "column": "LAST_UPDATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NewExcRateObjectVersionNumber",
+      "table": "GL_DAILY_CONVERSION_TYPES",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NewExcRatePivotCurrencyCode",
+      "table": "GL_DAILY_CONVERSION_TYPES",
+      "column": "PIVOT_CURRENCY_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NewExcRateSecurityFlag",
+      "table": "GL_DAILY_CONVERSION_TYPES",
+      "column": "SECURITY_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NewExcRateUserConversionType",
+      "table": "GL_DAILY_CONVERSION_TYPES",
+      "column": "USER_CONVERSION_TYPE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NewExcRateUserOverrideCrossRateFlag",
+      "table": "GL_DAILY_CONVERSION_TYPES",
+      "column": "USER_OVERRIDE_CROSS_RATE_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "OldExcRateConversionType",
+      "table": "GL_DAILY_CONVERSION_TYPES",
+      "column": "CONVERSION_TYPE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "OldExcRateCreatedBy",
+      "table": "GL_DAILY_CONVERSION_TYPES",
+      "column": "CREATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "OldExcRateCreationDate",
+      "table": "GL_DAILY_CONVERSION_TYPES",
+      "column": "CREATION_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "OldExcRateDescription",
+      "table": "GL_DAILY_CONVERSION_TYPES",
+      "column": "DESCRIPTION",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "OldExcRateEnableCrossRateFlag",
+      "table": "GL_DAILY_CONVERSION_TYPES",
+      "column": "ENABLE_CROSS_RATE_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "OldExcRateEnforceInverseRateFlag",
+      "table": "GL_DAILY_CONVERSION_TYPES",
+      "column": "ENFORCE_INVERSE_RATE_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "OldExcRateFemEnabledFlag",
+      "table": "GL_DAILY_CONVERSION_TYPES",
+      "column": "FEM_ENABLED_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "OldExcRateFemRateTypeCode",
+      "table": "GL_DAILY_CONVERSION_TYPES",
+      "column": "FEM_RATE_TYPE_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "OldExcRateFemScenario",
+      "table": "GL_DAILY_CONVERSION_TYPES",
+      "column": "FEM_SCENARIO",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "OldExcRateFemTimeframe",
+      "table": "GL_DAILY_CONVERSION_TYPES",
+      "column": "FEM_TIMEFRAME",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "OldExcRateLastUpdateDate",
+      "table": "GL_DAILY_CONVERSION_TYPES",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": true
+    },
+    {
+      "name": "OldExcRateLastUpdateLogin",
+      "table": "GL_DAILY_CONVERSION_TYPES",
+      "column": "LAST_UPDATE_LOGIN",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "OldExcRateLastUpdatedBy",
+      "table": "GL_DAILY_CONVERSION_TYPES",
+      "column": "LAST_UPDATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "OldExcRateObjectVersionNumber",
+      "table": "GL_DAILY_CONVERSION_TYPES",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "OldExcRatePivotCurrencyCode",
+      "table": "GL_DAILY_CONVERSION_TYPES",
+      "column": "PIVOT_CURRENCY_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "OldExcRateSecurityFlag",
+      "table": "GL_DAILY_CONVERSION_TYPES",
+      "column": "SECURITY_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "OldExcRateUserConversionType",
+      "table": "GL_DAILY_CONVERSION_TYPES",
+      "column": "USER_CONVERSION_TYPE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "OldExcRateUserOverrideCrossRateFlag",
+      "table": "GL_DAILY_CONVERSION_TYPES",
+      "column": "USER_OVERRIDE_CROSS_RATE_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonCreatedByDisplayName",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "DISPLAY_NAME",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonCreatedByEffectiveEndDate",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "EFFECTIVE_END_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonCreatedByEffectiveStartDate",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "EFFECTIVE_START_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonCreatedByPersonId",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "PERSON_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonCreatedByPersonNameId",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "PERSON_NAME_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonUpdatedByDisplayName",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "DISPLAY_NAME",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonUpdatedByEffectiveEndDate",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "EFFECTIVE_END_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonUpdatedByEffectiveStartDate",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "EFFECTIVE_START_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonUpdatedByPersonId",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "PERSON_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonUpdatedByPersonNameId",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "PERSON_NAME_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RateAdjustmentId",
+      "table": "AR_RATE_ADJUSTMENTS_ALL",
+      "column": "RATE_ADJUSTMENT_ID",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    },
+    {
+      "name": "ReceiptCashReceiptId",
+      "table": "AR_CASH_RECEIPTS_ALL",
+      "column": "CASH_RECEIPT_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReceiptRateAdjustmentCashReceiptId",
+      "table": "AR_RATE_ADJUSTMENTS_ALL",
+      "column": "CASH_RECEIPT_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReceiptRateAdjustmentCreatedBy",
+      "table": "AR_RATE_ADJUSTMENTS_ALL",
+      "column": "CREATED_BY",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReceiptRateAdjustmentCreatedFrom",
+      "table": "AR_RATE_ADJUSTMENTS_ALL",
+      "column": "CREATED_FROM",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReceiptRateAdjustmentCreationDate",
+      "table": "AR_RATE_ADJUSTMENTS_ALL",
+      "column": "CREATION_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReceiptRateAdjustmentGainLoss",
+      "table": "AR_RATE_ADJUSTMENTS_ALL",
+      "column": "GAIN_LOSS",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReceiptRateAdjustmentGlDate",
+      "table": "AR_RATE_ADJUSTMENTS_ALL",
+      "column": "GL_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReceiptRateAdjustmentGlPostedDate",
+      "table": "AR_RATE_ADJUSTMENTS_ALL",
+      "column": "GL_POSTED_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReceiptRateAdjustmentLastUpdateDate",
+      "table": "AR_RATE_ADJUSTMENTS_ALL",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": true
+    },
+    {
+      "name": "ReceiptRateAdjustmentLastUpdateLogin",
+      "table": "AR_RATE_ADJUSTMENTS_ALL",
+      "column": "LAST_UPDATE_LOGIN",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReceiptRateAdjustmentLastUpdatedBy",
+      "table": "AR_RATE_ADJUSTMENTS_ALL",
+      "column": "LAST_UPDATED_BY",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReceiptRateAdjustmentNewExchangeDate",
+      "table": "AR_RATE_ADJUSTMENTS_ALL",
+      "column": "NEW_EXCHANGE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReceiptRateAdjustmentNewExchangeRate",
+      "table": "AR_RATE_ADJUSTMENTS_ALL",
+      "column": "NEW_EXCHANGE_RATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReceiptRateAdjustmentNewExchangeRateType",
+      "table": "AR_RATE_ADJUSTMENTS_ALL",
+      "column": "NEW_EXCHANGE_RATE_TYPE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReceiptRateAdjustmentObjectVersionNumber",
+      "table": "AR_RATE_ADJUSTMENTS_ALL",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReceiptRateAdjustmentOldExchangeDate",
+      "table": "AR_RATE_ADJUSTMENTS_ALL",
+      "column": "OLD_EXCHANGE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReceiptRateAdjustmentOldExchangeRate",
+      "table": "AR_RATE_ADJUSTMENTS_ALL",
+      "column": "OLD_EXCHANGE_RATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReceiptRateAdjustmentOldExchangeRateType",
+      "table": "AR_RATE_ADJUSTMENTS_ALL",
+      "column": "OLD_EXCHANGE_RATE_TYPE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReceiptRateAdjustmentOrgId",
+      "table": "AR_RATE_ADJUSTMENTS_ALL",
+      "column": "ORG_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReceiptRateAdjustmentPostingControlId",
+      "table": "AR_RATE_ADJUSTMENTS_ALL",
+      "column": "POSTING_CONTROL_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReceiptRateAdjustmentProgramApplicationId",
+      "table": "AR_RATE_ADJUSTMENTS_ALL",
+      "column": "PROGRAM_APPLICATION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReceiptRateAdjustmentProgramId",
+      "table": "AR_RATE_ADJUSTMENTS_ALL",
+      "column": "PROGRAM_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReceiptRateAdjustmentProgramUpdateDate",
+      "table": "AR_RATE_ADJUSTMENTS_ALL",
+      "column": "PROGRAM_UPDATE_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReceiptRateAdjustmentRequestId",
+      "table": "AR_RATE_ADJUSTMENTS_ALL",
+      "column": "REQUEST_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReceiptSetOfBooksId",
+      "table": "AR_CASH_RECEIPTS_ALL",
+      "column": "SET_OF_BOOKS_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "UserCreatedByPersonId",
+      "table": "PER_USERS",
+      "column": "PERSON_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "UserCreatedByUserGuid",
+      "table": "PER_USERS",
+      "column": "USER_GUID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "UserCreatedByUserId",
+      "table": "PER_USERS",
+      "column": "USER_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "UserCreatedByUsername",
+      "table": "PER_USERS",
+      "column": "USERNAME",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "UserUpdatedByPersonId",
+      "table": "PER_USERS",
+      "column": "PERSON_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "UserUpdatedByUserGuid",
+      "table": "PER_USERS",
+      "column": "USER_GUID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "UserUpdatedByUserId",
+      "table": "PER_USERS",
+      "column": "USER_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "UserUpdatedByUsername",
+      "table": "PER_USERS",
+      "column": "USERNAME",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    }
+  ],
+  "by_table": {
+    "FUN_BU_PERF_V": [
+      {
+        "attribute": "BusinessUnitBusinessUnitId",
+        "column": "BU_ID",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "GL_DAILY_CONVERSION_TYPES": [
+      {
+        "attribute": "NewExcRateConversionType",
+        "column": "CONVERSION_TYPE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "NewExcRateCreatedBy",
+        "column": "CREATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "NewExcRateCreationDate",
+        "column": "CREATION_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "NewExcRateDescription",
+        "column": "DESCRIPTION",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "NewExcRateEnableCrossRateFlag",
+        "column": "ENABLE_CROSS_RATE_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "NewExcRateEnforceInverseRateFlag",
+        "column": "ENFORCE_INVERSE_RATE_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "NewExcRateFemEnabledFlag",
+        "column": "FEM_ENABLED_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "NewExcRateFemRateTypeCode",
+        "column": "FEM_RATE_TYPE_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "NewExcRateFemScenario",
+        "column": "FEM_SCENARIO",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "NewExcRateFemTimeframe",
+        "column": "FEM_TIMEFRAME",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "NewExcRateLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NewExcRateLastUpdateLogin",
+        "column": "LAST_UPDATE_LOGIN",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "NewExcRateLastUpdatedBy",
+        "column": "LAST_UPDATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "NewExcRateObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "NewExcRatePivotCurrencyCode",
+        "column": "PIVOT_CURRENCY_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "NewExcRateSecurityFlag",
+        "column": "SECURITY_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "NewExcRateUserConversionType",
+        "column": "USER_CONVERSION_TYPE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NewExcRateUserOverrideCrossRateFlag",
+        "column": "USER_OVERRIDE_CROSS_RATE_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "OldExcRateConversionType",
+        "column": "CONVERSION_TYPE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "OldExcRateCreatedBy",
+        "column": "CREATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "OldExcRateCreationDate",
+        "column": "CREATION_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "OldExcRateDescription",
+        "column": "DESCRIPTION",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "OldExcRateEnableCrossRateFlag",
+        "column": "ENABLE_CROSS_RATE_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "OldExcRateEnforceInverseRateFlag",
+        "column": "ENFORCE_INVERSE_RATE_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "OldExcRateFemEnabledFlag",
+        "column": "FEM_ENABLED_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "OldExcRateFemRateTypeCode",
+        "column": "FEM_RATE_TYPE_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "OldExcRateFemScenario",
+        "column": "FEM_SCENARIO",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "OldExcRateFemTimeframe",
+        "column": "FEM_TIMEFRAME",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "OldExcRateLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "OldExcRateLastUpdateLogin",
+        "column": "LAST_UPDATE_LOGIN",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "OldExcRateLastUpdatedBy",
+        "column": "LAST_UPDATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "OldExcRateObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "OldExcRatePivotCurrencyCode",
+        "column": "PIVOT_CURRENCY_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "OldExcRateSecurityFlag",
+        "column": "SECURITY_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "OldExcRateUserConversionType",
+        "column": "USER_CONVERSION_TYPE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "OldExcRateUserOverrideCrossRateFlag",
+        "column": "USER_OVERRIDE_CROSS_RATE_FLAG",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "PER_PERSON_NAMES_F_V": [
+      {
+        "attribute": "PersonCreatedByDisplayName",
+        "column": "DISPLAY_NAME",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PersonCreatedByEffectiveEndDate",
+        "column": "EFFECTIVE_END_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PersonCreatedByEffectiveStartDate",
+        "column": "EFFECTIVE_START_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PersonCreatedByPersonId",
+        "column": "PERSON_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PersonCreatedByPersonNameId",
+        "column": "PERSON_NAME_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PersonUpdatedByDisplayName",
+        "column": "DISPLAY_NAME",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PersonUpdatedByEffectiveEndDate",
+        "column": "EFFECTIVE_END_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PersonUpdatedByEffectiveStartDate",
+        "column": "EFFECTIVE_START_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PersonUpdatedByPersonId",
+        "column": "PERSON_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PersonUpdatedByPersonNameId",
+        "column": "PERSON_NAME_ID",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "AR_RATE_ADJUSTMENTS_ALL": [
+      {
+        "attribute": "RateAdjustmentId",
+        "column": "RATE_ADJUSTMENT_ID",
+        "bicc": true,
+        "pk": true
+      },
+      {
+        "attribute": "ReceiptRateAdjustmentCashReceiptId",
+        "column": "CASH_RECEIPT_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReceiptRateAdjustmentCreatedBy",
+        "column": "CREATED_BY",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ReceiptRateAdjustmentCreatedFrom",
+        "column": "CREATED_FROM",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReceiptRateAdjustmentCreationDate",
+        "column": "CREATION_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ReceiptRateAdjustmentGainLoss",
+        "column": "GAIN_LOSS",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ReceiptRateAdjustmentGlDate",
+        "column": "GL_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ReceiptRateAdjustmentGlPostedDate",
+        "column": "GL_POSTED_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ReceiptRateAdjustmentLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ReceiptRateAdjustmentLastUpdateLogin",
+        "column": "LAST_UPDATE_LOGIN",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReceiptRateAdjustmentLastUpdatedBy",
+        "column": "LAST_UPDATED_BY",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ReceiptRateAdjustmentNewExchangeDate",
+        "column": "NEW_EXCHANGE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ReceiptRateAdjustmentNewExchangeRate",
+        "column": "NEW_EXCHANGE_RATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ReceiptRateAdjustmentNewExchangeRateType",
+        "column": "NEW_EXCHANGE_RATE_TYPE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ReceiptRateAdjustmentObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReceiptRateAdjustmentOldExchangeDate",
+        "column": "OLD_EXCHANGE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ReceiptRateAdjustmentOldExchangeRate",
+        "column": "OLD_EXCHANGE_RATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ReceiptRateAdjustmentOldExchangeRateType",
+        "column": "OLD_EXCHANGE_RATE_TYPE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ReceiptRateAdjustmentOrgId",
+        "column": "ORG_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReceiptRateAdjustmentPostingControlId",
+        "column": "POSTING_CONTROL_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ReceiptRateAdjustmentProgramApplicationId",
+        "column": "PROGRAM_APPLICATION_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReceiptRateAdjustmentProgramId",
+        "column": "PROGRAM_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReceiptRateAdjustmentProgramUpdateDate",
+        "column": "PROGRAM_UPDATE_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReceiptRateAdjustmentRequestId",
+        "column": "REQUEST_ID",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "AR_CASH_RECEIPTS_ALL": [
+      {
+        "attribute": "ReceiptCashReceiptId",
+        "column": "CASH_RECEIPT_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReceiptSetOfBooksId",
+        "column": "SET_OF_BOOKS_ID",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "PER_USERS": [
+      {
+        "attribute": "UserCreatedByPersonId",
+        "column": "PERSON_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "UserCreatedByUserGuid",
+        "column": "USER_GUID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "UserCreatedByUserId",
+        "column": "USER_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "UserCreatedByUsername",
+        "column": "USERNAME",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "UserUpdatedByPersonId",
+        "column": "PERSON_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "UserUpdatedByUserGuid",
+        "column": "USER_GUID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "UserUpdatedByUserId",
+        "column": "USER_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "UserUpdatedByUsername",
+        "column": "USERNAME",
+        "bicc": false,
+        "pk": false
+      }
+    ]
+  }
+}

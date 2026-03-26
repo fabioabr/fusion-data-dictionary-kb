@@ -1,0 +1,606 @@
+{
+  "meta": {
+    "pvo_name": "DeviceActivityPVO",
+    "full_path": "HcmTopModelAnalyticsGlobalAM.TimeRepositoryAM.DeviceActivityPVO",
+    "module_path": "HcmTopModelAnalyticsGlobalAM.TimeRepositoryAM",
+    "module_code": "HCM",
+    "type": "pvo",
+    "description": "Consolida registros de atividade de dispositivos de ponto eletrônico, incluindo dados do colaborador. Suporta gestão de frequência e controle de jornada de trabalho."
+  },
+  "stats": {
+    "total_attributes": 41,
+    "tables_count": 3,
+    "bicc_enabled": 14,
+    "bicc_pct": 34,
+    "pk_count": 2
+  },
+  "tables": [
+    "HWM_TM_REC",
+    "PER_ALL_PEOPLE_F",
+    "PER_PERSON_NAMES_F_V"
+  ],
+  "attributes": [
+    {
+      "name": "PersonDetailsPEOEffectiveEndDate",
+      "table": "PER_ALL_PEOPLE_F",
+      "column": "EFFECTIVE_END_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonDetailsPEOEffectiveStartDate",
+      "table": "PER_ALL_PEOPLE_F",
+      "column": "EFFECTIVE_START_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonDetailsPEOPersonId",
+      "table": "PER_ALL_PEOPLE_F",
+      "column": "PERSON_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonDetailsPEOPersonNumber",
+      "table": "PER_ALL_PEOPLE_F",
+      "column": "PERSON_NUMBER",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonNamePEOEffectiveEndDate",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "EFFECTIVE_END_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonNamePEOEffectiveStartDate",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "EFFECTIVE_START_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonNamePEOPersonName",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "FULL_NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonNamePEOPersonNameId",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "PERSON_NAME_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TimeRecordPEOActivityEventTime",
+      "table": "HWM_TM_REC",
+      "column": "ACTIVITY_EVENT_TIME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TimeRecordPEOActivityType",
+      "table": "HWM_TM_REC",
+      "column": "ACTIVITY_TYPE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TimeRecordPEOCommentText",
+      "table": "HWM_TM_REC",
+      "column": "COMMENT_TEXT",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TimeRecordPEOCreatedBy",
+      "table": "HWM_TM_REC",
+      "column": "CREATED_BY",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TimeRecordPEOCreationDate",
+      "table": "HWM_TM_REC",
+      "column": "CREATION_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TimeRecordPEODataSetId",
+      "table": "HWM_TM_REC",
+      "column": "DATA_SET_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TimeRecordPEODateFrom",
+      "table": "HWM_TM_REC",
+      "column": "DATE_FROM",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TimeRecordPEODateTo",
+      "table": "HWM_TM_REC",
+      "column": "DATE_TO",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TimeRecordPEODeleteFlag",
+      "table": "HWM_TM_REC",
+      "column": "DELETE_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TimeRecordPEOEnterpriseId",
+      "table": "HWM_TM_REC",
+      "column": "ENTERPRISE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TimeRecordPEOLastUpdateDate",
+      "table": "HWM_TM_REC",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": true
+    },
+    {
+      "name": "TimeRecordPEOLastUpdateLogin",
+      "table": "HWM_TM_REC",
+      "column": "LAST_UPDATE_LOGIN",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TimeRecordPEOLastUpdatedBy",
+      "table": "HWM_TM_REC",
+      "column": "LAST_UPDATED_BY",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TimeRecordPEOLatestVersion",
+      "table": "HWM_TM_REC",
+      "column": "LATEST_VERSION",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TimeRecordPEOLayerCode",
+      "table": "HWM_TM_REC",
+      "column": "LAYER_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TimeRecordPEOMeasure",
+      "table": "HWM_TM_REC",
+      "column": "MEASURE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TimeRecordPEOObjectVersionNumber",
+      "table": "HWM_TM_REC",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TimeRecordPEOOrderEntered",
+      "table": "HWM_TM_REC",
+      "column": "ORDER_ENTERED",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TimeRecordPEOOriginalTimeRecordId",
+      "table": "HWM_TM_REC",
+      "column": "ORIG_TM_REC_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TimeRecordPEOOriginalTimeRecordVersion",
+      "table": "HWM_TM_REC",
+      "column": "ORIG_TM_REC_VERSION",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TimeRecordPEOResourceId",
+      "table": "HWM_TM_REC",
+      "column": "RESOURCE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TimeRecordPEOResourceType",
+      "table": "HWM_TM_REC",
+      "column": "RESOURCE_TYPE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TimeRecordPEOStartTime",
+      "table": "HWM_TM_REC",
+      "column": "START_TIME",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TimeRecordPEOStopTime",
+      "table": "HWM_TM_REC",
+      "column": "STOP_TIME",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TimeRecordPEOSubresourceId",
+      "table": "HWM_TM_REC",
+      "column": "SUBRESOURCE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TimeRecordPEOTimeConsumerConfigurationSetId",
+      "table": "HWM_TM_REC",
+      "column": "TCSMR_CONFIG_SET_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TimeRecordPEOTimeConsumerSetId",
+      "table": "HWM_TM_REC",
+      "column": "TCSMR_SET_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TimeRecordPEOTimeRecordId",
+      "table": "HWM_TM_REC",
+      "column": "TM_REC_ID",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    },
+    {
+      "name": "TimeRecordPEOTimeRecordType",
+      "table": "HWM_TM_REC",
+      "column": "TM_REC_TYPE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TimeRecordPEOTimeRecordVersion",
+      "table": "HWM_TM_REC",
+      "column": "TM_REC_VERSION",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    },
+    {
+      "name": "TimeRecordPEOTimeReporterId",
+      "table": "HWM_TM_REC",
+      "column": "TIME_REPORTER_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TimeRecordPEOUnitOfMeasure",
+      "table": "HWM_TM_REC",
+      "column": "UNIT_OF_MEASURE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TimeRecordPEOUserStatus",
+      "table": "HWM_TM_REC",
+      "column": "USER_STATUS",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    }
+  ],
+  "by_table": {
+    "PER_ALL_PEOPLE_F": [
+      {
+        "attribute": "PersonDetailsPEOEffectiveEndDate",
+        "column": "EFFECTIVE_END_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PersonDetailsPEOEffectiveStartDate",
+        "column": "EFFECTIVE_START_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PersonDetailsPEOPersonId",
+        "column": "PERSON_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PersonDetailsPEOPersonNumber",
+        "column": "PERSON_NUMBER",
+        "bicc": true,
+        "pk": false
+      }
+    ],
+    "PER_PERSON_NAMES_F_V": [
+      {
+        "attribute": "PersonNamePEOEffectiveEndDate",
+        "column": "EFFECTIVE_END_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PersonNamePEOEffectiveStartDate",
+        "column": "EFFECTIVE_START_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PersonNamePEOPersonName",
+        "column": "FULL_NAME",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PersonNamePEOPersonNameId",
+        "column": "PERSON_NAME_ID",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "HWM_TM_REC": [
+      {
+        "attribute": "TimeRecordPEOActivityEventTime",
+        "column": "ACTIVITY_EVENT_TIME",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TimeRecordPEOActivityType",
+        "column": "ACTIVITY_TYPE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TimeRecordPEOCommentText",
+        "column": "COMMENT_TEXT",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TimeRecordPEOCreatedBy",
+        "column": "CREATED_BY",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TimeRecordPEOCreationDate",
+        "column": "CREATION_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TimeRecordPEODataSetId",
+        "column": "DATA_SET_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TimeRecordPEODateFrom",
+        "column": "DATE_FROM",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TimeRecordPEODateTo",
+        "column": "DATE_TO",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TimeRecordPEODeleteFlag",
+        "column": "DELETE_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TimeRecordPEOEnterpriseId",
+        "column": "ENTERPRISE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TimeRecordPEOLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TimeRecordPEOLastUpdateLogin",
+        "column": "LAST_UPDATE_LOGIN",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TimeRecordPEOLastUpdatedBy",
+        "column": "LAST_UPDATED_BY",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TimeRecordPEOLatestVersion",
+        "column": "LATEST_VERSION",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TimeRecordPEOLayerCode",
+        "column": "LAYER_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TimeRecordPEOMeasure",
+        "column": "MEASURE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TimeRecordPEOObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TimeRecordPEOOrderEntered",
+        "column": "ORDER_ENTERED",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TimeRecordPEOOriginalTimeRecordId",
+        "column": "ORIG_TM_REC_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TimeRecordPEOOriginalTimeRecordVersion",
+        "column": "ORIG_TM_REC_VERSION",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TimeRecordPEOResourceId",
+        "column": "RESOURCE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TimeRecordPEOResourceType",
+        "column": "RESOURCE_TYPE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TimeRecordPEOStartTime",
+        "column": "START_TIME",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TimeRecordPEOStopTime",
+        "column": "STOP_TIME",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TimeRecordPEOSubresourceId",
+        "column": "SUBRESOURCE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TimeRecordPEOTimeConsumerConfigurationSetId",
+        "column": "TCSMR_CONFIG_SET_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TimeRecordPEOTimeConsumerSetId",
+        "column": "TCSMR_SET_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TimeRecordPEOTimeRecordId",
+        "column": "TM_REC_ID",
+        "bicc": true,
+        "pk": true
+      },
+      {
+        "attribute": "TimeRecordPEOTimeRecordType",
+        "column": "TM_REC_TYPE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TimeRecordPEOTimeRecordVersion",
+        "column": "TM_REC_VERSION",
+        "bicc": true,
+        "pk": true
+      },
+      {
+        "attribute": "TimeRecordPEOTimeReporterId",
+        "column": "TIME_REPORTER_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TimeRecordPEOUnitOfMeasure",
+        "column": "UNIT_OF_MEASURE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TimeRecordPEOUserStatus",
+        "column": "USER_STATUS",
+        "bicc": false,
+        "pk": false
+      }
+    ]
+  }
+}

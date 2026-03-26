@@ -1,0 +1,1973 @@
+{
+  "meta": {
+    "pvo_name": "BankAccountBalancePVO",
+    "full_path": "FscmTopModelAM.FinCeBankStatementsAM.BankAccountBalancePVO",
+    "module_path": "FscmTopModelAM.FinCeBankStatementsAM",
+    "module_code": "OTHER",
+    "type": "pvo",
+    "description": "View Object para extração BICC de dados de Bank Account Balance. Acessa as tabelas: CE_INTERNAL_BANK_ACCTS_V, CE_STATEMENT_HEADERS, CE_STMT_BALANCES (+3)."
+  },
+  "stats": {
+    "total_attributes": 138,
+    "tables_count": 6,
+    "bicc_enabled": 13,
+    "bicc_pct": 9,
+    "pk_count": 1
+  },
+  "tables": [
+    "CE_INTERNAL_BANK_ACCTS_V",
+    "CE_STATEMENT_HEADERS",
+    "CE_STMT_BALANCES",
+    "GL_LEDGERS",
+    "PER_PERSON_NAMES_F_V",
+    "PER_USERS"
+  ],
+  "attributes": [
+    {
+      "name": "BalanceBalanceAmount",
+      "table": "CE_STMT_BALANCES",
+      "column": "BALANCE_AMOUNT",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BalanceBalanceCode",
+      "table": "CE_STMT_BALANCES",
+      "column": "BALANCE_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BalanceBalanceCurr",
+      "table": "CE_STMT_BALANCES",
+      "column": "BALANCE_CURR",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BalanceBalanceDate",
+      "table": "CE_STMT_BALANCES",
+      "column": "BALANCE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BalanceBankAccountId",
+      "table": "CE_STMT_BALANCES",
+      "column": "BANK_ACCOUNT_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BalanceCreatedBy",
+      "table": "CE_STMT_BALANCES",
+      "column": "CREATED_BY",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BalanceCreationDate",
+      "table": "CE_STMT_BALANCES",
+      "column": "CREATION_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BalanceLastUpdateDate",
+      "table": "CE_STMT_BALANCES",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": true
+    },
+    {
+      "name": "BalanceLastUpdateLogin",
+      "table": "CE_STMT_BALANCES",
+      "column": "LAST_UPDATE_LOGIN",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BalanceLastUpdatedBy",
+      "table": "CE_STMT_BALANCES",
+      "column": "LAST_UPDATED_BY",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BalanceObjectVersionNumber",
+      "table": "CE_STMT_BALANCES",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BalanceStatementHeaderId",
+      "table": "CE_STMT_BALANCES",
+      "column": "STATEMENT_HEADER_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankAccountAccountClassification",
+      "table": "CE_INTERNAL_BANK_ACCTS_V",
+      "column": "ACCOUNT_CLASSIFICATION",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankAccountAccountHolderId",
+      "table": "CE_INTERNAL_BANK_ACCTS_V",
+      "column": "ACCOUNT_HOLDER_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankAccountAccountHolderName",
+      "table": "CE_INTERNAL_BANK_ACCTS_V",
+      "column": "ACCOUNT_HOLDER_NAME",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankAccountAccountHolderNameAlt",
+      "table": "CE_INTERNAL_BANK_ACCTS_V",
+      "column": "ACCOUNT_HOLDER_NAME_ALT",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankAccountAccountOwnerOrgId",
+      "table": "CE_INTERNAL_BANK_ACCTS_V",
+      "column": "ACCOUNT_OWNER_ORG_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankAccountAccountOwnerPartyId",
+      "table": "CE_INTERNAL_BANK_ACCTS_V",
+      "column": "ACCOUNT_OWNER_PARTY_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankAccountAccountSuffix",
+      "table": "CE_INTERNAL_BANK_ACCTS_V",
+      "column": "ACCOUNT_SUFFIX",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankAccountAgencyLocationCode",
+      "table": "CE_INTERNAL_BANK_ACCTS_V",
+      "column": "AGENCY_LOCATION_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankAccountApUseAllowedFlag",
+      "table": "CE_INTERNAL_BANK_ACCTS_V",
+      "column": "AP_USE_ALLOWED_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankAccountArUseAllowedFlag",
+      "table": "CE_INTERNAL_BANK_ACCTS_V",
+      "column": "AR_USE_ALLOWED_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankAccountAssetCodeCombinationId",
+      "table": "CE_INTERNAL_BANK_ACCTS_V",
+      "column": "ASSET_CODE_COMBINATION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankAccountBankAccountId",
+      "table": "CE_INTERNAL_BANK_ACCTS_V",
+      "column": "BANK_ACCOUNT_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankAccountBankAccountName",
+      "table": "CE_INTERNAL_BANK_ACCTS_V",
+      "column": "BANK_ACCOUNT_NAME",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankAccountBankAccountNameAlt",
+      "table": "CE_INTERNAL_BANK_ACCTS_V",
+      "column": "BANK_ACCOUNT_NAME_ALT",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankAccountBankAccountNum",
+      "table": "CE_INTERNAL_BANK_ACCTS_V",
+      "column": "BANK_ACCOUNT_NUM",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankAccountBankAccountNumElectronic",
+      "table": "CE_INTERNAL_BANK_ACCTS_V",
+      "column": "BANK_ACCOUNT_NUM_ELECTRONIC",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankAccountBankAccountType",
+      "table": "CE_INTERNAL_BANK_ACCTS_V",
+      "column": "BANK_ACCOUNT_TYPE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankAccountBankBranchId",
+      "table": "CE_INTERNAL_BANK_ACCTS_V",
+      "column": "BANK_BRANCH_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankAccountBankChargesCcid",
+      "table": "CE_INTERNAL_BANK_ACCTS_V",
+      "column": "BANK_CHARGES_CCID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankAccountBankExchangeRateType",
+      "table": "CE_INTERNAL_BANK_ACCTS_V",
+      "column": "BANK_EXCHANGE_RATE_TYPE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankAccountBankId",
+      "table": "CE_INTERNAL_BANK_ACCTS_V",
+      "column": "BANK_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankAccountCashClearingCcid",
+      "table": "CE_INTERNAL_BANK_ACCTS_V",
+      "column": "CASH_CLEARING_CCID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankAccountCashflowDisplayOrder",
+      "table": "CE_INTERNAL_BANK_ACCTS_V",
+      "column": "CASHFLOW_DISPLAY_ORDER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankAccountCashpoolMinPaymentAmt",
+      "table": "CE_INTERNAL_BANK_ACCTS_V",
+      "column": "CASHPOOL_MIN_PAYMENT_AMT",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankAccountCashpoolMinReceiptAmt",
+      "table": "CE_INTERNAL_BANK_ACCTS_V",
+      "column": "CASHPOOL_MIN_RECEIPT_AMT",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankAccountCashpoolRoundFactor",
+      "table": "CE_INTERNAL_BANK_ACCTS_V",
+      "column": "CASHPOOL_ROUND_FACTOR",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankAccountCashpoolRoundRule",
+      "table": "CE_INTERNAL_BANK_ACCTS_V",
+      "column": "CASHPOOL_ROUND_RULE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankAccountCheckDigits",
+      "table": "CE_INTERNAL_BANK_ACCTS_V",
+      "column": "CHECK_DIGITS",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankAccountCreatedBy",
+      "table": "CE_INTERNAL_BANK_ACCTS_V",
+      "column": "CREATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankAccountCreationDate",
+      "table": "CE_INTERNAL_BANK_ACCTS_V",
+      "column": "CREATION_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankAccountCurrencyCode",
+      "table": "CE_INTERNAL_BANK_ACCTS_V",
+      "column": "CURRENCY_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankAccountDataSecurityFlag",
+      "table": "CE_INTERNAL_BANK_ACCTS_V",
+      "column": "DATA_SECURITY_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankAccountDescription",
+      "table": "CE_INTERNAL_BANK_ACCTS_V",
+      "column": "DESCRIPTION",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankAccountDescriptionCode1",
+      "table": "CE_INTERNAL_BANK_ACCTS_V",
+      "column": "DESCRIPTION_CODE1",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankAccountDescriptionCode2",
+      "table": "CE_INTERNAL_BANK_ACCTS_V",
+      "column": "DESCRIPTION_CODE2",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankAccountEftRequesterIdentifier",
+      "table": "CE_INTERNAL_BANK_ACCTS_V",
+      "column": "EFT_REQUESTER_IDENTIFIER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankAccountEftUserNum",
+      "table": "CE_INTERNAL_BANK_ACCTS_V",
+      "column": "EFT_USER_NUM",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankAccountEndDate",
+      "table": "CE_INTERNAL_BANK_ACCTS_V",
+      "column": "END_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankAccountFxChargeCcid",
+      "table": "CE_INTERNAL_BANK_ACCTS_V",
+      "column": "FX_CHARGE_CCID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankAccountGlCurExcRateType",
+      "table": "CE_INTERNAL_BANK_ACCTS_V",
+      "column": "GL_CUR_EXC_RATE_TYPE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankAccountIbanNumber",
+      "table": "CE_INTERNAL_BANK_ACCTS_V",
+      "column": "IBAN_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankAccountInterestScheduleId",
+      "table": "CE_INTERNAL_BANK_ACCTS_V",
+      "column": "INTEREST_SCHEDULE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankAccountLastUpdateDate",
+      "table": "CE_INTERNAL_BANK_ACCTS_V",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": true
+    },
+    {
+      "name": "BankAccountLastUpdateLogin",
+      "table": "CE_INTERNAL_BANK_ACCTS_V",
+      "column": "LAST_UPDATE_LOGIN",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankAccountLastUpdatedBy",
+      "table": "CE_INTERNAL_BANK_ACCTS_V",
+      "column": "LAST_UPDATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankAccountManualToleranceRuleId",
+      "table": "CE_INTERNAL_BANK_ACCTS_V",
+      "column": "MANUAL_TOLERANCE_RULE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankAccountMaskedAccountNum",
+      "table": "CE_INTERNAL_BANK_ACCTS_V",
+      "column": "MASKED_ACCOUNT_NUM",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankAccountMaskedIban",
+      "table": "CE_INTERNAL_BANK_ACCTS_V",
+      "column": "MASKED_IBAN",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankAccountMaxCheckAmount",
+      "table": "CE_INTERNAL_BANK_ACCTS_V",
+      "column": "MAX_CHECK_AMOUNT",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankAccountMaxOutlay",
+      "table": "CE_INTERNAL_BANK_ACCTS_V",
+      "column": "MAX_OUTLAY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankAccountMaxTargetBalance",
+      "table": "CE_INTERNAL_BANK_ACCTS_V",
+      "column": "MAX_TARGET_BALANCE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankAccountMinCheckAmount",
+      "table": "CE_INTERNAL_BANK_ACCTS_V",
+      "column": "MIN_CHECK_AMOUNT",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankAccountMinTargetBalance",
+      "table": "CE_INTERNAL_BANK_ACCTS_V",
+      "column": "MIN_TARGET_BALANCE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankAccountMultiCurrencyAllowedFlag",
+      "table": "CE_INTERNAL_BANK_ACCTS_V",
+      "column": "MULTI_CURRENCY_ALLOWED_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankAccountNettingAcctFlag",
+      "table": "CE_INTERNAL_BANK_ACCTS_V",
+      "column": "NETTING_ACCT_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankAccountObjectVersionNumber",
+      "table": "CE_INTERNAL_BANK_ACCTS_V",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankAccountParsingRuleSetId",
+      "table": "CE_INTERNAL_BANK_ACCTS_V",
+      "column": "PARSING_RULE_SET_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankAccountPayUseAllowedFlag",
+      "table": "CE_INTERNAL_BANK_ACCTS_V",
+      "column": "PAY_USE_ALLOWED_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankAccountPoolBankChargeBearerCode",
+      "table": "CE_INTERNAL_BANK_ACCTS_V",
+      "column": "POOL_BANK_CHARGE_BEARER_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankAccountPoolPaymentMethodCode",
+      "table": "CE_INTERNAL_BANK_ACCTS_V",
+      "column": "POOL_PAYMENT_METHOD_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankAccountPoolPaymentReasonCode",
+      "table": "CE_INTERNAL_BANK_ACCTS_V",
+      "column": "POOL_PAYMENT_REASON_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankAccountPoolPaymentReasonComments",
+      "table": "CE_INTERNAL_BANK_ACCTS_V",
+      "column": "POOL_PAYMENT_REASON_COMMENTS",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankAccountPoolRemittanceMessage1",
+      "table": "CE_INTERNAL_BANK_ACCTS_V",
+      "column": "POOL_REMITTANCE_MESSAGE1",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankAccountPoolRemittanceMessage2",
+      "table": "CE_INTERNAL_BANK_ACCTS_V",
+      "column": "POOL_REMITTANCE_MESSAGE2",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankAccountPoolRemittanceMessage3",
+      "table": "CE_INTERNAL_BANK_ACCTS_V",
+      "column": "POOL_REMITTANCE_MESSAGE3",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankAccountPooledFlag",
+      "table": "CE_INTERNAL_BANK_ACCTS_V",
+      "column": "POOLED_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankAccountProgramApplicationId",
+      "table": "CE_INTERNAL_BANK_ACCTS_V",
+      "column": "PROGRAM_APPLICATION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankAccountProgramId",
+      "table": "CE_INTERNAL_BANK_ACCTS_V",
+      "column": "PROGRAM_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankAccountProgramUpdateDate",
+      "table": "CE_INTERNAL_BANK_ACCTS_V",
+      "column": "PROGRAM_UPDATE_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankAccountReconDifferenceCcid",
+      "table": "CE_INTERNAL_BANK_ACCTS_V",
+      "column": "RECON_DIFFERENCE_CCID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankAccountReconForBankXrateDateType",
+      "table": "CE_INTERNAL_BANK_ACCTS_V",
+      "column": "RECON_FOR_BANK_XRATE_DATE_TYPE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankAccountReconForeignBankXrateType",
+      "table": "CE_INTERNAL_BANK_ACCTS_V",
+      "column": "RECON_FOREIGN_BANK_XRATE_TYPE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankAccountReconRulesetId",
+      "table": "CE_INTERNAL_BANK_ACCTS_V",
+      "column": "RECON_RULESET_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankAccountReconStartDate",
+      "table": "CE_INTERNAL_BANK_ACCTS_V",
+      "column": "RECON_START_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankAccountRequestId",
+      "table": "CE_INTERNAL_BANK_ACCTS_V",
+      "column": "REQUEST_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankAccountSecondaryAccountReference",
+      "table": "CE_INTERNAL_BANK_ACCTS_V",
+      "column": "SECONDARY_ACCOUNT_REFERENCE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankAccountShortAccountName",
+      "table": "CE_INTERNAL_BANK_ACCTS_V",
+      "column": "SHORT_ACCOUNT_NAME",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankAccountStartDate",
+      "table": "CE_INTERNAL_BANK_ACCTS_V",
+      "column": "START_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankAccountXtrBankAccountReference",
+      "table": "CE_INTERNAL_BANK_ACCTS_V",
+      "column": "XTR_BANK_ACCOUNT_REFERENCE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankAccountXtrUseAllowedFlag",
+      "table": "CE_INTERNAL_BANK_ACCTS_V",
+      "column": "XTR_USE_ALLOWED_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BankAccountZeroAmountAllowed",
+      "table": "CE_INTERNAL_BANK_ACCTS_V",
+      "column": "ZERO_AMOUNT_ALLOWED",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LedgerLedgerCategoryCode",
+      "table": "GL_LEDGERS",
+      "column": "LEDGER_CATEGORY_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LedgerLedgerId",
+      "table": "GL_LEDGERS",
+      "column": "LEDGER_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LedgerObjectVersionNumber",
+      "table": "GL_LEDGERS",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ObjectVersionNumber",
+      "table": "PER_USERS",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ObjectVersionNumber1",
+      "table": "PER_USERS",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonCreatedByDisplayName",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "DISPLAY_NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonCreatedByEffectiveEndDate",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "EFFECTIVE_END_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonCreatedByEffectiveStartDate",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "EFFECTIVE_START_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonCreatedByPersonId",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "PERSON_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonCreatedByPersonNameId",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "PERSON_NAME_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonUpdatedByDisplayName",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "DISPLAY_NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonUpdatedByEffectiveEndDate",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "EFFECTIVE_END_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonUpdatedByEffectiveStartDate",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "EFFECTIVE_START_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonUpdatedByPersonId",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "PERSON_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonUpdatedByPersonNameId",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "PERSON_NAME_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "StatementHeaderAutorecProcessCode",
+      "table": "CE_STATEMENT_HEADERS",
+      "column": "AUTOREC_PROCESS_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "StatementHeaderAutorecProcessId",
+      "table": "CE_STATEMENT_HEADERS",
+      "column": "AUTOREC_PROCESS_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "StatementHeaderBankAccountId",
+      "table": "CE_STATEMENT_HEADERS",
+      "column": "BANK_ACCOUNT_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "StatementHeaderCreatedBy",
+      "table": "CE_STATEMENT_HEADERS",
+      "column": "CREATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "StatementHeaderCreationDate",
+      "table": "CE_STATEMENT_HEADERS",
+      "column": "CREATION_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "StatementHeaderCurrencyCode",
+      "table": "CE_STATEMENT_HEADERS",
+      "column": "CURRENCY_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "StatementHeaderElectronicSeqNum",
+      "table": "CE_STATEMENT_HEADERS",
+      "column": "ELECTRONIC_SEQ_NUM",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "StatementHeaderInboundFileId",
+      "table": "CE_STATEMENT_HEADERS",
+      "column": "INBOUND_FILE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "StatementHeaderLastUpdateDate",
+      "table": "CE_STATEMENT_HEADERS",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": true
+    },
+    {
+      "name": "StatementHeaderLastUpdateLogin",
+      "table": "CE_STATEMENT_HEADERS",
+      "column": "LAST_UPDATE_LOGIN",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "StatementHeaderLastUpdatedBy",
+      "table": "CE_STATEMENT_HEADERS",
+      "column": "LAST_UPDATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "StatementHeaderLegalSeqNum",
+      "table": "CE_STATEMENT_HEADERS",
+      "column": "LEGAL_SEQ_NUM",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "StatementHeaderObjectVersionNumber",
+      "table": "CE_STATEMENT_HEADERS",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "StatementHeaderReconStatusCode",
+      "table": "CE_STATEMENT_HEADERS",
+      "column": "RECON_STATUS_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "StatementHeaderStatementDate",
+      "table": "CE_STATEMENT_HEADERS",
+      "column": "STATEMENT_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "StatementHeaderStatementEntryType",
+      "table": "CE_STATEMENT_HEADERS",
+      "column": "STATEMENT_ENTRY_TYPE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "StatementHeaderStatementHeaderId",
+      "table": "CE_STATEMENT_HEADERS",
+      "column": "STATEMENT_HEADER_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "StatementHeaderStatementNumber",
+      "table": "CE_STATEMENT_HEADERS",
+      "column": "STATEMENT_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "StatementHeaderStatementType",
+      "table": "CE_STATEMENT_HEADERS",
+      "column": "STATEMENT_TYPE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "StatementHeaderStmtFromDate",
+      "table": "CE_STATEMENT_HEADERS",
+      "column": "STMT_FROM_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "StatementHeaderStmtToDate",
+      "table": "CE_STATEMENT_HEADERS",
+      "column": "STMT_TO_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "StmtBalanceId",
+      "table": "CE_STMT_BALANCES",
+      "column": "STMT_BALANCE_ID",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    },
+    {
+      "name": "UserCreatedByPersonId",
+      "table": "PER_USERS",
+      "column": "PERSON_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "UserCreatedByUserGuid",
+      "table": "PER_USERS",
+      "column": "USER_GUID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "UserCreatedByUserId",
+      "table": "PER_USERS",
+      "column": "USER_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "UserCreatedByUsername",
+      "table": "PER_USERS",
+      "column": "USERNAME",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "UserUpdatedByPersonId",
+      "table": "PER_USERS",
+      "column": "PERSON_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "UserUpdatedByUserGuid",
+      "table": "PER_USERS",
+      "column": "USER_GUID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "UserUpdatedByUserId",
+      "table": "PER_USERS",
+      "column": "USER_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "UserUpdatedByUsername",
+      "table": "PER_USERS",
+      "column": "USERNAME",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    }
+  ],
+  "by_table": {
+    "CE_STMT_BALANCES": [
+      {
+        "attribute": "BalanceBalanceAmount",
+        "column": "BALANCE_AMOUNT",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "BalanceBalanceCode",
+        "column": "BALANCE_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "BalanceBalanceCurr",
+        "column": "BALANCE_CURR",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "BalanceBalanceDate",
+        "column": "BALANCE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "BalanceBankAccountId",
+        "column": "BANK_ACCOUNT_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BalanceCreatedBy",
+        "column": "CREATED_BY",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "BalanceCreationDate",
+        "column": "CREATION_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "BalanceLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "BalanceLastUpdateLogin",
+        "column": "LAST_UPDATE_LOGIN",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BalanceLastUpdatedBy",
+        "column": "LAST_UPDATED_BY",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "BalanceObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BalanceStatementHeaderId",
+        "column": "STATEMENT_HEADER_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "StmtBalanceId",
+        "column": "STMT_BALANCE_ID",
+        "bicc": true,
+        "pk": true
+      }
+    ],
+    "CE_INTERNAL_BANK_ACCTS_V": [
+      {
+        "attribute": "BankAccountAccountClassification",
+        "column": "ACCOUNT_CLASSIFICATION",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankAccountAccountHolderId",
+        "column": "ACCOUNT_HOLDER_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankAccountAccountHolderName",
+        "column": "ACCOUNT_HOLDER_NAME",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankAccountAccountHolderNameAlt",
+        "column": "ACCOUNT_HOLDER_NAME_ALT",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankAccountAccountOwnerOrgId",
+        "column": "ACCOUNT_OWNER_ORG_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankAccountAccountOwnerPartyId",
+        "column": "ACCOUNT_OWNER_PARTY_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankAccountAccountSuffix",
+        "column": "ACCOUNT_SUFFIX",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankAccountAgencyLocationCode",
+        "column": "AGENCY_LOCATION_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankAccountApUseAllowedFlag",
+        "column": "AP_USE_ALLOWED_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankAccountArUseAllowedFlag",
+        "column": "AR_USE_ALLOWED_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankAccountAssetCodeCombinationId",
+        "column": "ASSET_CODE_COMBINATION_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankAccountBankAccountId",
+        "column": "BANK_ACCOUNT_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankAccountBankAccountName",
+        "column": "BANK_ACCOUNT_NAME",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankAccountBankAccountNameAlt",
+        "column": "BANK_ACCOUNT_NAME_ALT",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankAccountBankAccountNum",
+        "column": "BANK_ACCOUNT_NUM",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankAccountBankAccountNumElectronic",
+        "column": "BANK_ACCOUNT_NUM_ELECTRONIC",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankAccountBankAccountType",
+        "column": "BANK_ACCOUNT_TYPE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankAccountBankBranchId",
+        "column": "BANK_BRANCH_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankAccountBankChargesCcid",
+        "column": "BANK_CHARGES_CCID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankAccountBankExchangeRateType",
+        "column": "BANK_EXCHANGE_RATE_TYPE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankAccountBankId",
+        "column": "BANK_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankAccountCashClearingCcid",
+        "column": "CASH_CLEARING_CCID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankAccountCashflowDisplayOrder",
+        "column": "CASHFLOW_DISPLAY_ORDER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankAccountCashpoolMinPaymentAmt",
+        "column": "CASHPOOL_MIN_PAYMENT_AMT",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankAccountCashpoolMinReceiptAmt",
+        "column": "CASHPOOL_MIN_RECEIPT_AMT",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankAccountCashpoolRoundFactor",
+        "column": "CASHPOOL_ROUND_FACTOR",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankAccountCashpoolRoundRule",
+        "column": "CASHPOOL_ROUND_RULE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankAccountCheckDigits",
+        "column": "CHECK_DIGITS",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankAccountCreatedBy",
+        "column": "CREATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankAccountCreationDate",
+        "column": "CREATION_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankAccountCurrencyCode",
+        "column": "CURRENCY_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankAccountDataSecurityFlag",
+        "column": "DATA_SECURITY_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankAccountDescription",
+        "column": "DESCRIPTION",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankAccountDescriptionCode1",
+        "column": "DESCRIPTION_CODE1",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankAccountDescriptionCode2",
+        "column": "DESCRIPTION_CODE2",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankAccountEftRequesterIdentifier",
+        "column": "EFT_REQUESTER_IDENTIFIER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankAccountEftUserNum",
+        "column": "EFT_USER_NUM",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankAccountEndDate",
+        "column": "END_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankAccountFxChargeCcid",
+        "column": "FX_CHARGE_CCID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankAccountGlCurExcRateType",
+        "column": "GL_CUR_EXC_RATE_TYPE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankAccountIbanNumber",
+        "column": "IBAN_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankAccountInterestScheduleId",
+        "column": "INTEREST_SCHEDULE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankAccountLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "BankAccountLastUpdateLogin",
+        "column": "LAST_UPDATE_LOGIN",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankAccountLastUpdatedBy",
+        "column": "LAST_UPDATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankAccountManualToleranceRuleId",
+        "column": "MANUAL_TOLERANCE_RULE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankAccountMaskedAccountNum",
+        "column": "MASKED_ACCOUNT_NUM",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankAccountMaskedIban",
+        "column": "MASKED_IBAN",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankAccountMaxCheckAmount",
+        "column": "MAX_CHECK_AMOUNT",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankAccountMaxOutlay",
+        "column": "MAX_OUTLAY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankAccountMaxTargetBalance",
+        "column": "MAX_TARGET_BALANCE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankAccountMinCheckAmount",
+        "column": "MIN_CHECK_AMOUNT",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankAccountMinTargetBalance",
+        "column": "MIN_TARGET_BALANCE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankAccountMultiCurrencyAllowedFlag",
+        "column": "MULTI_CURRENCY_ALLOWED_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankAccountNettingAcctFlag",
+        "column": "NETTING_ACCT_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankAccountObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankAccountParsingRuleSetId",
+        "column": "PARSING_RULE_SET_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankAccountPayUseAllowedFlag",
+        "column": "PAY_USE_ALLOWED_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankAccountPoolBankChargeBearerCode",
+        "column": "POOL_BANK_CHARGE_BEARER_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankAccountPoolPaymentMethodCode",
+        "column": "POOL_PAYMENT_METHOD_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankAccountPoolPaymentReasonCode",
+        "column": "POOL_PAYMENT_REASON_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankAccountPoolPaymentReasonComments",
+        "column": "POOL_PAYMENT_REASON_COMMENTS",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankAccountPoolRemittanceMessage1",
+        "column": "POOL_REMITTANCE_MESSAGE1",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankAccountPoolRemittanceMessage2",
+        "column": "POOL_REMITTANCE_MESSAGE2",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankAccountPoolRemittanceMessage3",
+        "column": "POOL_REMITTANCE_MESSAGE3",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankAccountPooledFlag",
+        "column": "POOLED_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankAccountProgramApplicationId",
+        "column": "PROGRAM_APPLICATION_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankAccountProgramId",
+        "column": "PROGRAM_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankAccountProgramUpdateDate",
+        "column": "PROGRAM_UPDATE_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankAccountReconDifferenceCcid",
+        "column": "RECON_DIFFERENCE_CCID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankAccountReconForBankXrateDateType",
+        "column": "RECON_FOR_BANK_XRATE_DATE_TYPE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankAccountReconForeignBankXrateType",
+        "column": "RECON_FOREIGN_BANK_XRATE_TYPE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankAccountReconRulesetId",
+        "column": "RECON_RULESET_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankAccountReconStartDate",
+        "column": "RECON_START_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankAccountRequestId",
+        "column": "REQUEST_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankAccountSecondaryAccountReference",
+        "column": "SECONDARY_ACCOUNT_REFERENCE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankAccountShortAccountName",
+        "column": "SHORT_ACCOUNT_NAME",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankAccountStartDate",
+        "column": "START_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankAccountXtrBankAccountReference",
+        "column": "XTR_BANK_ACCOUNT_REFERENCE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankAccountXtrUseAllowedFlag",
+        "column": "XTR_USE_ALLOWED_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BankAccountZeroAmountAllowed",
+        "column": "ZERO_AMOUNT_ALLOWED",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "GL_LEDGERS": [
+      {
+        "attribute": "LedgerLedgerCategoryCode",
+        "column": "LEDGER_CATEGORY_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "LedgerLedgerId",
+        "column": "LEDGER_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "LedgerObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "PER_USERS": [
+      {
+        "attribute": "ObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ObjectVersionNumber1",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "UserCreatedByPersonId",
+        "column": "PERSON_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "UserCreatedByUserGuid",
+        "column": "USER_GUID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "UserCreatedByUserId",
+        "column": "USER_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "UserCreatedByUsername",
+        "column": "USERNAME",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "UserUpdatedByPersonId",
+        "column": "PERSON_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "UserUpdatedByUserGuid",
+        "column": "USER_GUID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "UserUpdatedByUserId",
+        "column": "USER_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "UserUpdatedByUsername",
+        "column": "USERNAME",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "PER_PERSON_NAMES_F_V": [
+      {
+        "attribute": "PersonCreatedByDisplayName",
+        "column": "DISPLAY_NAME",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PersonCreatedByEffectiveEndDate",
+        "column": "EFFECTIVE_END_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PersonCreatedByEffectiveStartDate",
+        "column": "EFFECTIVE_START_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PersonCreatedByPersonId",
+        "column": "PERSON_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PersonCreatedByPersonNameId",
+        "column": "PERSON_NAME_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PersonUpdatedByDisplayName",
+        "column": "DISPLAY_NAME",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PersonUpdatedByEffectiveEndDate",
+        "column": "EFFECTIVE_END_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PersonUpdatedByEffectiveStartDate",
+        "column": "EFFECTIVE_START_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PersonUpdatedByPersonId",
+        "column": "PERSON_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PersonUpdatedByPersonNameId",
+        "column": "PERSON_NAME_ID",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "CE_STATEMENT_HEADERS": [
+      {
+        "attribute": "StatementHeaderAutorecProcessCode",
+        "column": "AUTOREC_PROCESS_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "StatementHeaderAutorecProcessId",
+        "column": "AUTOREC_PROCESS_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "StatementHeaderBankAccountId",
+        "column": "BANK_ACCOUNT_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "StatementHeaderCreatedBy",
+        "column": "CREATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "StatementHeaderCreationDate",
+        "column": "CREATION_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "StatementHeaderCurrencyCode",
+        "column": "CURRENCY_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "StatementHeaderElectronicSeqNum",
+        "column": "ELECTRONIC_SEQ_NUM",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "StatementHeaderInboundFileId",
+        "column": "INBOUND_FILE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "StatementHeaderLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "StatementHeaderLastUpdateLogin",
+        "column": "LAST_UPDATE_LOGIN",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "StatementHeaderLastUpdatedBy",
+        "column": "LAST_UPDATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "StatementHeaderLegalSeqNum",
+        "column": "LEGAL_SEQ_NUM",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "StatementHeaderObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "StatementHeaderReconStatusCode",
+        "column": "RECON_STATUS_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "StatementHeaderStatementDate",
+        "column": "STATEMENT_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "StatementHeaderStatementEntryType",
+        "column": "STATEMENT_ENTRY_TYPE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "StatementHeaderStatementHeaderId",
+        "column": "STATEMENT_HEADER_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "StatementHeaderStatementNumber",
+        "column": "STATEMENT_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "StatementHeaderStatementType",
+        "column": "STATEMENT_TYPE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "StatementHeaderStmtFromDate",
+        "column": "STMT_FROM_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "StatementHeaderStmtToDate",
+        "column": "STMT_TO_DATE",
+        "bicc": false,
+        "pk": false
+      }
+    ]
+  }
+}

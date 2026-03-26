@@ -1,0 +1,3216 @@
+{
+  "meta": {
+    "pvo_name": "ParticipantEnrollmentPVO",
+    "full_path": "HcmTopModelAnalyticsGlobalAM.HcmBenefitsAM.ParticipantEnrollmentPVO",
+    "module_path": "HcmTopModelAnalyticsGlobalAM.HcmBenefitsAM",
+    "module_code": "HCM",
+    "type": "pvo",
+    "description": "Consolida inscrições de participantes em planos de benefícios com valores de taxas, grupos e relações. Visão central do enrollment para análise de adesão e custos de benefícios."
+  },
+  "stats": {
+    "total_attributes": 227,
+    "tables_count": 5,
+    "bicc_enabled": 79,
+    "bicc_pct": 35,
+    "pk_count": 11
+  },
+  "tables": [
+    "BEN_BENEFIT_RELATIONS_F",
+    "BEN_PER_BENEFIT_GROUP_F",
+    "BEN_PRTT_ENRT_RSLT",
+    "BEN_PRTT_RT_VAL",
+    "PER_ALL_PEOPLE_F"
+  ],
+  "attributes": [
+    {
+      "name": "ActlPremId",
+      "table": "BEN_PRTT_RT_VAL",
+      "column": "ACTL_PREM_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ActyBaseRtId",
+      "table": "BEN_PRTT_RT_VAL",
+      "column": "ACTY_BASE_RT_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ActyRefPerdCd",
+      "table": "BEN_PRTT_RT_VAL",
+      "column": "ACTY_REF_PERD_CD",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ActyTypCd",
+      "table": "BEN_PRTT_RT_VAL",
+      "column": "ACTY_TYP_CD",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AdminCategoryCd",
+      "table": "BEN_PRTT_ENRT_RSLT",
+      "column": "ADMIN_CATEGORY_CD",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AnnRtVal",
+      "table": "BEN_PRTT_RT_VAL",
+      "column": "ANN_RT_VAL",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AssignmentId",
+      "table": "BEN_PRTT_ENRT_RSLT",
+      "column": "ASSIGNMENT_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BenefitGroupId",
+      "table": "BEN_PER_BENEFIT_GROUP_F",
+      "column": "BENEFIT_GROUP_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BenefitRelSystemCd",
+      "table": "BEN_BENEFIT_RELATIONS_F",
+      "column": "BENEFIT_REL_SYSTEM_CD",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BenefitRelationId",
+      "table": "BEN_PRTT_ENRT_RSLT",
+      "column": "BENEFIT_RELATION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BenefitRelationId1",
+      "table": "BEN_BENEFIT_RELATIONS_F",
+      "column": "BENEFIT_RELATION_ID",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    },
+    {
+      "name": "BenefitRelationName",
+      "table": "BEN_BENEFIT_RELATIONS_F",
+      "column": "BENEFIT_RELATION_NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BnftAmt",
+      "table": "BEN_PRTT_ENRT_RSLT",
+      "column": "BNFT_AMT",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BnftNnmntryUom",
+      "table": "BEN_PRTT_ENRT_RSLT",
+      "column": "BNFT_NNMNTRY_UOM",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BnftOrdrNum",
+      "table": "BEN_PRTT_ENRT_RSLT",
+      "column": "BNFT_ORDR_NUM",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BnftRtTypCd",
+      "table": "BEN_PRTT_RT_VAL",
+      "column": "BNFT_RT_TYP_CD",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BnftTypCd",
+      "table": "BEN_PRTT_ENRT_RSLT",
+      "column": "BNFT_TYP_CD",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BusinessGroupId",
+      "table": "BEN_PRTT_ENRT_RSLT",
+      "column": "BUSINESS_GROUP_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BusinessGroupId1",
+      "table": "BEN_PRTT_RT_VAL",
+      "column": "BUSINESS_GROUP_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CirBenefitId",
+      "table": "BEN_PRTT_ENRT_RSLT",
+      "column": "CIR_BENEFIT_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CmcdRefPerdCd",
+      "table": "BEN_PRTT_RT_VAL",
+      "column": "CMCD_REF_PERD_CD",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CmcdRtVal",
+      "table": "BEN_PRTT_RT_VAL",
+      "column": "CMCD_RT_VAL",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CompLvlCd",
+      "table": "BEN_PRTT_ENRT_RSLT",
+      "column": "COMP_LVL_CD",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CompLvlFctrId",
+      "table": "BEN_PRTT_RT_VAL",
+      "column": "COMP_LVL_FCTR_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ConfigChar1",
+      "table": "BEN_PRTT_ENRT_RSLT",
+      "column": "CONFIG_CHAR_1",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ConfigChar10",
+      "table": "BEN_PRTT_ENRT_RSLT",
+      "column": "CONFIG_CHAR_10",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ConfigChar6",
+      "table": "BEN_PRTT_ENRT_RSLT",
+      "column": "CONFIG_CHAR_6",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ConfigChar7",
+      "table": "BEN_PRTT_ENRT_RSLT",
+      "column": "CONFIG_CHAR_7",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ConfigChar8",
+      "table": "BEN_PRTT_ENRT_RSLT",
+      "column": "CONFIG_CHAR_8",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ConfigChar9",
+      "table": "BEN_PRTT_ENRT_RSLT",
+      "column": "CONFIG_CHAR_9",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ConfigId1",
+      "table": "BEN_PRTT_ENRT_RSLT",
+      "column": "CONFIG_ID_1",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ConfigId2",
+      "table": "BEN_PRTT_ENRT_RSLT",
+      "column": "CONFIG_ID_2",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ConfigId3",
+      "table": "BEN_PRTT_ENRT_RSLT",
+      "column": "CONFIG_ID_3",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ConfigId4",
+      "table": "BEN_PRTT_ENRT_RSLT",
+      "column": "CONFIG_ID_4",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ConfigId5",
+      "table": "BEN_PRTT_ENRT_RSLT",
+      "column": "CONFIG_ID_5",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ConfigNum1",
+      "table": "BEN_PRTT_ENRT_RSLT",
+      "column": "CONFIG_NUM_1",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ConfigNum10",
+      "table": "BEN_PRTT_ENRT_RSLT",
+      "column": "CONFIG_NUM_10",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ConfigNum6",
+      "table": "BEN_PRTT_ENRT_RSLT",
+      "column": "CONFIG_NUM_6",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ConfigNum7",
+      "table": "BEN_PRTT_ENRT_RSLT",
+      "column": "CONFIG_NUM_7",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ConfigNum8",
+      "table": "BEN_PRTT_ENRT_RSLT",
+      "column": "CONFIG_NUM_8",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ConfigNum9",
+      "table": "BEN_PRTT_ENRT_RSLT",
+      "column": "CONFIG_NUM_9",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CreatedBy",
+      "table": "BEN_PRTT_ENRT_RSLT",
+      "column": "CREATED_BY",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CreatedBy1",
+      "table": "BEN_PRTT_RT_VAL",
+      "column": "CREATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CreationDate",
+      "table": "BEN_PRTT_ENRT_RSLT",
+      "column": "CREATION_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CreationDate1",
+      "table": "BEN_PRTT_RT_VAL",
+      "column": "CREATION_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CvgAmtCalcMthdId",
+      "table": "BEN_PRTT_RT_VAL",
+      "column": "CVG_AMT_CALC_MTHD_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "DirCardCompDefId",
+      "table": "BEN_PRTT_RT_VAL",
+      "column": "DIR_CARD_COMP_DEF_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "DirCardDefinitionId",
+      "table": "BEN_PRTT_RT_VAL",
+      "column": "DIR_CARD_DEFINITION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "DsplyOnEnrtFlag",
+      "table": "BEN_PRTT_RT_VAL",
+      "column": "DSPLY_ON_ENRT_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "EffectiveEndDate",
+      "table": "BEN_BENEFIT_RELATIONS_F",
+      "column": "EFFECTIVE_END_DATE",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    },
+    {
+      "name": "EffectiveEndDate1",
+      "table": "BEN_BENEFIT_RELATIONS_F",
+      "column": "EFFECTIVE_END_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "EffectiveEndDate2",
+      "table": "BEN_PER_BENEFIT_GROUP_F",
+      "column": "EFFECTIVE_END_DATE",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    },
+    {
+      "name": "EffectiveEndDate3",
+      "table": "BEN_PER_BENEFIT_GROUP_F",
+      "column": "EFFECTIVE_END_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "EffectiveEndDate4",
+      "table": "PER_ALL_PEOPLE_F",
+      "column": "EFFECTIVE_END_DATE",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    },
+    {
+      "name": "EffectiveStartDate",
+      "table": "BEN_BENEFIT_RELATIONS_F",
+      "column": "EFFECTIVE_START_DATE",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    },
+    {
+      "name": "EffectiveStartDate1",
+      "table": "BEN_PER_BENEFIT_GROUP_F",
+      "column": "EFFECTIVE_START_DATE",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    },
+    {
+      "name": "EffectiveStartDate2",
+      "table": "BEN_PER_BENEFIT_GROUP_F",
+      "column": "EFFECTIVE_START_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "EffectiveStartDate3",
+      "table": "PER_ALL_PEOPLE_F",
+      "column": "EFFECTIVE_START_DATE",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    },
+    {
+      "name": "ElctnsMadeDt",
+      "table": "BEN_PRTT_RT_VAL",
+      "column": "ELCTNS_MADE_DT",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ElectionDate",
+      "table": "BEN_PRTT_ENRT_RSLT",
+      "column": "ELECTION_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ElementEntryValueId",
+      "table": "BEN_PRTT_RT_VAL",
+      "column": "ELEMENT_ENTRY_VALUE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "EndedCvgThruDt",
+      "table": "BEN_PRTT_ENRT_RSLT",
+      "column": "ENDED_CVG_THRU_DT",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "EndedPerInLerId",
+      "table": "BEN_PRTT_ENRT_RSLT",
+      "column": "ENDED_PER_IN_LER_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "EndedPerInLerId1",
+      "table": "BEN_PRTT_RT_VAL",
+      "column": "ENDED_PER_IN_LER_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "EndedRateThruDt",
+      "table": "BEN_PRTT_RT_VAL",
+      "column": "ENDED_RATE_THRU_DT",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "EnrtCvgStrtDt",
+      "table": "BEN_PRTT_ENRT_RSLT",
+      "column": "ENRT_CVG_STRT_DT",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "EnrtCvgThruDt",
+      "table": "BEN_PRTT_ENRT_RSLT",
+      "column": "ENRT_CVG_THRU_DT",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "EnrtMthdCd",
+      "table": "BEN_PRTT_ENRT_RSLT",
+      "column": "ENRT_MTHD_CD",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "EnrtOvridRsnCd",
+      "table": "BEN_PRTT_ENRT_RSLT",
+      "column": "ENRT_OVRID_RSN_CD",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "EnrtOvridThruDt",
+      "table": "BEN_PRTT_ENRT_RSLT",
+      "column": "ENRT_OVRID_THRU_DT",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "EnrtOvridnFlag",
+      "table": "BEN_PRTT_ENRT_RSLT",
+      "column": "ENRT_OVRIDN_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ErlstDeenrtDt",
+      "table": "BEN_PRTT_ENRT_RSLT",
+      "column": "ERLST_DEENRT_DT",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ImptdIncmCalcCd",
+      "table": "BEN_PRTT_ENRT_RSLT",
+      "column": "IMPTD_INCM_CALC_CD",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InterimFlag",
+      "table": "BEN_PRTT_ENRT_RSLT",
+      "column": "INTERIM_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "JobDefinitionName",
+      "table": "BEN_PRTT_ENRT_RSLT",
+      "column": "JOB_DEFINITION_NAME",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "JobDefinitionPackage",
+      "table": "BEN_PRTT_ENRT_RSLT",
+      "column": "JOB_DEFINITION_PACKAGE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LastUpdateDate",
+      "table": "BEN_PRTT_ENRT_RSLT",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": true
+    },
+    {
+      "name": "LastUpdateDate1",
+      "table": "BEN_PRTT_RT_VAL",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": true
+    },
+    {
+      "name": "LastUpdateLogin",
+      "table": "BEN_PRTT_ENRT_RSLT",
+      "column": "LAST_UPDATE_LOGIN",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LastUpdateLogin1",
+      "table": "BEN_PRTT_RT_VAL",
+      "column": "LAST_UPDATE_LOGIN",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LastUpdatedBy",
+      "table": "BEN_PRTT_ENRT_RSLT",
+      "column": "LAST_UPDATED_BY",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LastUpdatedBy1",
+      "table": "BEN_PRTT_RT_VAL",
+      "column": "LAST_UPDATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LeBenefitGroupId",
+      "table": "BEN_PER_BENEFIT_GROUP_F",
+      "column": "LE_BENEFIT_GROUP_ID",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    },
+    {
+      "name": "LegalEntityId",
+      "table": "BEN_PRTT_ENRT_RSLT",
+      "column": "LEGAL_ENTITY_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LerId",
+      "table": "BEN_PRTT_ENRT_RSLT",
+      "column": "LER_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "MappingId",
+      "table": "BEN_PRTT_RT_VAL",
+      "column": "MAPPING_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "MiscPlnFlag",
+      "table": "BEN_PRTT_ENRT_RSLT",
+      "column": "MISC_PLN_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "MltCd",
+      "table": "BEN_PRTT_RT_VAL",
+      "column": "MLT_CD",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NoLngrEligFlag",
+      "table": "BEN_PRTT_ENRT_RSLT",
+      "column": "NO_LNGR_ELIG_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ObjectVersionNumber",
+      "table": "BEN_PRTT_ENRT_RSLT",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ObjectVersionNumber1",
+      "table": "BEN_PRTT_RT_VAL",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "OiplId",
+      "table": "BEN_PRTT_ENRT_RSLT",
+      "column": "OIPL_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "OiplOrdrNum",
+      "table": "BEN_PRTT_ENRT_RSLT",
+      "column": "OIPL_ORDR_NUM",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "OptId",
+      "table": "BEN_PRTT_ENRT_RSLT",
+      "column": "OPT_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "OrdrNum",
+      "table": "BEN_PRTT_RT_VAL",
+      "column": "ORDR_NUM",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "OrgnlEnrtDt",
+      "table": "BEN_PRTT_ENRT_RSLT",
+      "column": "ORGNL_ENRT_DT",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ParticipantEnrollmentRatePEOConfigChar1",
+      "table": "BEN_PRTT_RT_VAL",
+      "column": "CONFIG_CHAR_1",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ParticipantEnrollmentRatePEOTypeId",
+      "table": "BEN_PRTT_RT_VAL",
+      "column": "TYPE_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PenAttribute1",
+      "table": "BEN_PRTT_ENRT_RSLT",
+      "column": "PEN_ATTRIBUTE1",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PenAttribute10",
+      "table": "BEN_PRTT_ENRT_RSLT",
+      "column": "PEN_ATTRIBUTE10",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PenAttribute11",
+      "table": "BEN_PRTT_ENRT_RSLT",
+      "column": "PEN_ATTRIBUTE11",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PenAttribute12",
+      "table": "BEN_PRTT_ENRT_RSLT",
+      "column": "PEN_ATTRIBUTE12",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PenAttribute13",
+      "table": "BEN_PRTT_ENRT_RSLT",
+      "column": "PEN_ATTRIBUTE13",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PenAttribute14",
+      "table": "BEN_PRTT_ENRT_RSLT",
+      "column": "PEN_ATTRIBUTE14",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PenAttribute15",
+      "table": "BEN_PRTT_ENRT_RSLT",
+      "column": "PEN_ATTRIBUTE15",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PenAttribute16",
+      "table": "BEN_PRTT_ENRT_RSLT",
+      "column": "PEN_ATTRIBUTE16",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PenAttribute17",
+      "table": "BEN_PRTT_ENRT_RSLT",
+      "column": "PEN_ATTRIBUTE17",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PenAttribute18",
+      "table": "BEN_PRTT_ENRT_RSLT",
+      "column": "PEN_ATTRIBUTE18",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PenAttribute19",
+      "table": "BEN_PRTT_ENRT_RSLT",
+      "column": "PEN_ATTRIBUTE19",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PenAttribute2",
+      "table": "BEN_PRTT_ENRT_RSLT",
+      "column": "PEN_ATTRIBUTE2",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PenAttribute20",
+      "table": "BEN_PRTT_ENRT_RSLT",
+      "column": "PEN_ATTRIBUTE20",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PenAttribute21",
+      "table": "BEN_PRTT_ENRT_RSLT",
+      "column": "PEN_ATTRIBUTE21",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PenAttribute22",
+      "table": "BEN_PRTT_ENRT_RSLT",
+      "column": "PEN_ATTRIBUTE22",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PenAttribute23",
+      "table": "BEN_PRTT_ENRT_RSLT",
+      "column": "PEN_ATTRIBUTE23",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PenAttribute24",
+      "table": "BEN_PRTT_ENRT_RSLT",
+      "column": "PEN_ATTRIBUTE24",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PenAttribute25",
+      "table": "BEN_PRTT_ENRT_RSLT",
+      "column": "PEN_ATTRIBUTE25",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PenAttribute26",
+      "table": "BEN_PRTT_ENRT_RSLT",
+      "column": "PEN_ATTRIBUTE26",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PenAttribute27",
+      "table": "BEN_PRTT_ENRT_RSLT",
+      "column": "PEN_ATTRIBUTE27",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PenAttribute28",
+      "table": "BEN_PRTT_ENRT_RSLT",
+      "column": "PEN_ATTRIBUTE28",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PenAttribute29",
+      "table": "BEN_PRTT_ENRT_RSLT",
+      "column": "PEN_ATTRIBUTE29",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PenAttribute3",
+      "table": "BEN_PRTT_ENRT_RSLT",
+      "column": "PEN_ATTRIBUTE3",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PenAttribute30",
+      "table": "BEN_PRTT_ENRT_RSLT",
+      "column": "PEN_ATTRIBUTE30",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PenAttribute4",
+      "table": "BEN_PRTT_ENRT_RSLT",
+      "column": "PEN_ATTRIBUTE4",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PenAttribute5",
+      "table": "BEN_PRTT_ENRT_RSLT",
+      "column": "PEN_ATTRIBUTE5",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PenAttribute6",
+      "table": "BEN_PRTT_ENRT_RSLT",
+      "column": "PEN_ATTRIBUTE6",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PenAttribute7",
+      "table": "BEN_PRTT_ENRT_RSLT",
+      "column": "PEN_ATTRIBUTE7",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PenAttribute8",
+      "table": "BEN_PRTT_ENRT_RSLT",
+      "column": "PEN_ATTRIBUTE8",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PenAttribute9",
+      "table": "BEN_PRTT_ENRT_RSLT",
+      "column": "PEN_ATTRIBUTE9",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PenAttributeCategory",
+      "table": "BEN_PRTT_ENRT_RSLT",
+      "column": "PEN_ATTRIBUTE_CATEGORY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PerInLerId",
+      "table": "BEN_PRTT_ENRT_RSLT",
+      "column": "PER_IN_LER_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PerInLerId1",
+      "table": "BEN_PRTT_RT_VAL",
+      "column": "PER_IN_LER_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonId",
+      "table": "BEN_PRTT_ENRT_RSLT",
+      "column": "PERSON_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonId1",
+      "table": "PER_ALL_PEOPLE_F",
+      "column": "PERSON_ID",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    },
+    {
+      "name": "PgmId",
+      "table": "BEN_PRTT_ENRT_RSLT",
+      "column": "PGM_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PkId",
+      "table": "BEN_PRTT_RT_VAL",
+      "column": "PK_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PkIdTableName",
+      "table": "BEN_PRTT_RT_VAL",
+      "column": "PK_ID_TABLE_NAME",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PlId",
+      "table": "BEN_PRTT_ENRT_RSLT",
+      "column": "PL_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PlOrdrNum",
+      "table": "BEN_PRTT_ENRT_RSLT",
+      "column": "PL_ORDR_NUM",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PlTypId",
+      "table": "BEN_PRTT_ENRT_RSLT",
+      "column": "PL_TYP_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PlipOrdrNum",
+      "table": "BEN_PRTT_ENRT_RSLT",
+      "column": "PLIP_ORDR_NUM",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PpInYrUsedNum",
+      "table": "BEN_PRTT_RT_VAL",
+      "column": "PP_IN_YR_USED_NUM",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PrimaryRel",
+      "table": "BEN_BENEFIT_RELATIONS_F",
+      "column": "PRIMARY_REL",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProgramAppName",
+      "table": "BEN_PRTT_ENRT_RSLT",
+      "column": "PROGRAM_APP_NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProgramName",
+      "table": "BEN_PRTT_ENRT_RSLT",
+      "column": "PROGRAM_NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProgramUpdateDate",
+      "table": "BEN_PRTT_ENRT_RSLT",
+      "column": "PROGRAM_UPDATE_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PrttEnrtRsltId",
+      "table": "BEN_PRTT_ENRT_RSLT",
+      "column": "PRTT_ENRT_RSLT_ID",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    },
+    {
+      "name": "PrttEnrtRsltId1",
+      "table": "BEN_PRTT_RT_VAL",
+      "column": "PRTT_ENRT_RSLT_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PrttEnrtRsltStatCd",
+      "table": "BEN_PRTT_ENRT_RSLT",
+      "column": "PRTT_ENRT_RSLT_STAT_CD",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PrttIsCvrdFlag",
+      "table": "BEN_PRTT_ENRT_RSLT",
+      "column": "PRTT_IS_CVRD_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PrttReimbmtRqstId",
+      "table": "BEN_PRTT_RT_VAL",
+      "column": "PRTT_REIMBMT_RQST_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PrttRmtAprvdFrPymtId",
+      "table": "BEN_PRTT_RT_VAL",
+      "column": "PRTT_RMT_APRVD_FR_PYMT_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PrttRtValId",
+      "table": "BEN_PRTT_RT_VAL",
+      "column": "PRTT_RT_VAL_ID",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    },
+    {
+      "name": "PrttRtValStatCd",
+      "table": "BEN_PRTT_RT_VAL",
+      "column": "PRTT_RT_VAL_STAT_CD",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PrvAttribute1",
+      "table": "BEN_PRTT_RT_VAL",
+      "column": "PRV_ATTRIBUTE1",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PrvAttribute10",
+      "table": "BEN_PRTT_RT_VAL",
+      "column": "PRV_ATTRIBUTE10",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PrvAttribute11",
+      "table": "BEN_PRTT_RT_VAL",
+      "column": "PRV_ATTRIBUTE11",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PrvAttribute12",
+      "table": "BEN_PRTT_RT_VAL",
+      "column": "PRV_ATTRIBUTE12",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PrvAttribute13",
+      "table": "BEN_PRTT_RT_VAL",
+      "column": "PRV_ATTRIBUTE13",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PrvAttribute14",
+      "table": "BEN_PRTT_RT_VAL",
+      "column": "PRV_ATTRIBUTE14",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PrvAttribute15",
+      "table": "BEN_PRTT_RT_VAL",
+      "column": "PRV_ATTRIBUTE15",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PrvAttribute16",
+      "table": "BEN_PRTT_RT_VAL",
+      "column": "PRV_ATTRIBUTE16",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PrvAttribute17",
+      "table": "BEN_PRTT_RT_VAL",
+      "column": "PRV_ATTRIBUTE17",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PrvAttribute18",
+      "table": "BEN_PRTT_RT_VAL",
+      "column": "PRV_ATTRIBUTE18",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PrvAttribute19",
+      "table": "BEN_PRTT_RT_VAL",
+      "column": "PRV_ATTRIBUTE19",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PrvAttribute2",
+      "table": "BEN_PRTT_RT_VAL",
+      "column": "PRV_ATTRIBUTE2",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PrvAttribute20",
+      "table": "BEN_PRTT_RT_VAL",
+      "column": "PRV_ATTRIBUTE20",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PrvAttribute21",
+      "table": "BEN_PRTT_RT_VAL",
+      "column": "PRV_ATTRIBUTE21",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PrvAttribute22",
+      "table": "BEN_PRTT_RT_VAL",
+      "column": "PRV_ATTRIBUTE22",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PrvAttribute23",
+      "table": "BEN_PRTT_RT_VAL",
+      "column": "PRV_ATTRIBUTE23",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PrvAttribute24",
+      "table": "BEN_PRTT_RT_VAL",
+      "column": "PRV_ATTRIBUTE24",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PrvAttribute25",
+      "table": "BEN_PRTT_RT_VAL",
+      "column": "PRV_ATTRIBUTE25",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PrvAttribute26",
+      "table": "BEN_PRTT_RT_VAL",
+      "column": "PRV_ATTRIBUTE26",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PrvAttribute27",
+      "table": "BEN_PRTT_RT_VAL",
+      "column": "PRV_ATTRIBUTE27",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PrvAttribute28",
+      "table": "BEN_PRTT_RT_VAL",
+      "column": "PRV_ATTRIBUTE28",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PrvAttribute29",
+      "table": "BEN_PRTT_RT_VAL",
+      "column": "PRV_ATTRIBUTE29",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PrvAttribute3",
+      "table": "BEN_PRTT_RT_VAL",
+      "column": "PRV_ATTRIBUTE3",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PrvAttribute30",
+      "table": "BEN_PRTT_RT_VAL",
+      "column": "PRV_ATTRIBUTE30",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PrvAttribute4",
+      "table": "BEN_PRTT_RT_VAL",
+      "column": "PRV_ATTRIBUTE4",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PrvAttribute5",
+      "table": "BEN_PRTT_RT_VAL",
+      "column": "PRV_ATTRIBUTE5",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PrvAttribute6",
+      "table": "BEN_PRTT_RT_VAL",
+      "column": "PRV_ATTRIBUTE6",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PrvAttribute7",
+      "table": "BEN_PRTT_RT_VAL",
+      "column": "PRV_ATTRIBUTE7",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PrvAttribute8",
+      "table": "BEN_PRTT_RT_VAL",
+      "column": "PRV_ATTRIBUTE8",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PrvAttribute9",
+      "table": "BEN_PRTT_RT_VAL",
+      "column": "PRV_ATTRIBUTE9",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PrvAttributeCategory",
+      "table": "BEN_PRTT_RT_VAL",
+      "column": "PRV_ATTRIBUTE_CATEGORY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PrvConfigChar10",
+      "table": "BEN_PRTT_RT_VAL",
+      "column": "CONFIG_CHAR_10",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PrvConfigChar6",
+      "table": "BEN_PRTT_RT_VAL",
+      "column": "CONFIG_CHAR_6",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PrvConfigChar7",
+      "table": "BEN_PRTT_RT_VAL",
+      "column": "CONFIG_CHAR_7",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PrvConfigChar8",
+      "table": "BEN_PRTT_RT_VAL",
+      "column": "CONFIG_CHAR_8",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PrvConfigChar9",
+      "table": "BEN_PRTT_RT_VAL",
+      "column": "CONFIG_CHAR_9",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PrvConfigId1",
+      "table": "BEN_PRTT_RT_VAL",
+      "column": "CONFIG_ID_1",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PrvConfigId2",
+      "table": "BEN_PRTT_RT_VAL",
+      "column": "CONFIG_ID_2",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PrvConfigId3",
+      "table": "BEN_PRTT_RT_VAL",
+      "column": "CONFIG_ID_3",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PrvConfigId4",
+      "table": "BEN_PRTT_RT_VAL",
+      "column": "CONFIG_ID_4",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PrvConfigId5",
+      "table": "BEN_PRTT_RT_VAL",
+      "column": "CONFIG_ID_5",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PrvConfigNum10",
+      "table": "BEN_PRTT_RT_VAL",
+      "column": "CONFIG_NUM_10",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PrvConfigNum6",
+      "table": "BEN_PRTT_RT_VAL",
+      "column": "CONFIG_NUM_6",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PrvConfigNum7",
+      "table": "BEN_PRTT_RT_VAL",
+      "column": "CONFIG_NUM_7",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PrvConfigNum8",
+      "table": "BEN_PRTT_RT_VAL",
+      "column": "CONFIG_NUM_8",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PrvConfigNum9",
+      "table": "BEN_PRTT_RT_VAL",
+      "column": "CONFIG_NUM_9",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PrvsCvgStrtDt",
+      "table": "BEN_PRTT_ENRT_RSLT",
+      "column": "PRVS_CVG_STRT_DT",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PrvsCvgThruDt",
+      "table": "BEN_PRTT_ENRT_RSLT",
+      "column": "PRVS_CVG_THRU_DT",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PrvsRateStrtDt",
+      "table": "BEN_PRTT_RT_VAL",
+      "column": "PRVS_RATE_STRT_DT",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PrvsRateThruDt",
+      "table": "BEN_PRTT_RT_VAL",
+      "column": "PRVS_RATE_THRU_DT",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PrvsSspnddFlag",
+      "table": "BEN_PRTT_ENRT_RSLT",
+      "column": "PRVS_SSPNDD_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PtipId",
+      "table": "BEN_PRTT_ENRT_RSLT",
+      "column": "PTIP_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PtipOrdrNum",
+      "table": "BEN_PRTT_ENRT_RSLT",
+      "column": "PTIP_ORDR_NUM",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RateDisplayCd",
+      "table": "BEN_PRTT_RT_VAL",
+      "column": "RATE_DISPLAY_CD",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RcrrgFlag",
+      "table": "BEN_PRTT_RT_VAL",
+      "column": "RCRRG_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RelPrmryAsgId",
+      "table": "BEN_BENEFIT_RELATIONS_F",
+      "column": "REL_PRMRY_ASG_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RequestId",
+      "table": "BEN_PRTT_ENRT_RSLT",
+      "column": "REQUEST_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RplcsSspnddRsltId",
+      "table": "BEN_PRTT_ENRT_RSLT",
+      "column": "RPLCS_SSPNDD_RSLT_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RtEndDt",
+      "table": "BEN_PRTT_RT_VAL",
+      "column": "RT_END_DT",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RtOvridnFlag",
+      "table": "BEN_PRTT_RT_VAL",
+      "column": "RT_OVRIDN_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RtOvridnThruDt",
+      "table": "BEN_PRTT_RT_VAL",
+      "column": "RT_OVRIDN_THRU_DT",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RtStrtDt",
+      "table": "BEN_PRTT_RT_VAL",
+      "column": "RT_STRT_DT",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RtTypCd",
+      "table": "BEN_PRTT_RT_VAL",
+      "column": "RT_TYP_CD",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RtVal",
+      "table": "BEN_PRTT_RT_VAL",
+      "column": "RT_VAL",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SsCategoryCd",
+      "table": "BEN_PRTT_ENRT_RSLT",
+      "column": "SS_CATEGORY_CD",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SspnddFlag",
+      "table": "BEN_PRTT_ENRT_RSLT",
+      "column": "SSPNDD_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "Status",
+      "table": "BEN_BENEFIT_RELATIONS_F",
+      "column": "STATUS",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SvngsPlnFlag",
+      "table": "BEN_PRTT_ENRT_RSLT",
+      "column": "SVNGS_PLN_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TxTypCd",
+      "table": "BEN_PRTT_RT_VAL",
+      "column": "TX_TYP_CD",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TypeId",
+      "table": "BEN_PRTT_ENRT_RSLT",
+      "column": "TYPE_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "Uom",
+      "table": "BEN_PRTT_ENRT_RSLT",
+      "column": "UOM",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ValueDefinitionBaseName",
+      "table": "BEN_PRTT_RT_VAL",
+      "column": "VALUE_DEFINITION_BASE_NAME",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "VdefnDirCardCompDefId",
+      "table": "BEN_PRTT_RT_VAL",
+      "column": "VDEFN_DIR_CARD_COMP_DEF_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "VdefnElementTypeId",
+      "table": "BEN_PRTT_RT_VAL",
+      "column": "VDEFN_ELEMENT_TYPE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    }
+  ],
+  "by_table": {
+    "BEN_PRTT_RT_VAL": [
+      {
+        "attribute": "ActlPremId",
+        "column": "ACTL_PREM_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ActyBaseRtId",
+        "column": "ACTY_BASE_RT_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ActyRefPerdCd",
+        "column": "ACTY_REF_PERD_CD",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ActyTypCd",
+        "column": "ACTY_TYP_CD",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "AnnRtVal",
+        "column": "ANN_RT_VAL",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "BnftRtTypCd",
+        "column": "BNFT_RT_TYP_CD",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "BusinessGroupId1",
+        "column": "BUSINESS_GROUP_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CmcdRefPerdCd",
+        "column": "CMCD_REF_PERD_CD",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CmcdRtVal",
+        "column": "CMCD_RT_VAL",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CompLvlFctrId",
+        "column": "COMP_LVL_FCTR_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CreatedBy1",
+        "column": "CREATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CreationDate1",
+        "column": "CREATION_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CvgAmtCalcMthdId",
+        "column": "CVG_AMT_CALC_MTHD_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "DirCardCompDefId",
+        "column": "DIR_CARD_COMP_DEF_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "DirCardDefinitionId",
+        "column": "DIR_CARD_DEFINITION_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "DsplyOnEnrtFlag",
+        "column": "DSPLY_ON_ENRT_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ElctnsMadeDt",
+        "column": "ELCTNS_MADE_DT",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ElementEntryValueId",
+        "column": "ELEMENT_ENTRY_VALUE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "EndedPerInLerId1",
+        "column": "ENDED_PER_IN_LER_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "EndedRateThruDt",
+        "column": "ENDED_RATE_THRU_DT",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "LastUpdateDate1",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "LastUpdateLogin1",
+        "column": "LAST_UPDATE_LOGIN",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "LastUpdatedBy1",
+        "column": "LAST_UPDATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "MappingId",
+        "column": "MAPPING_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "MltCd",
+        "column": "MLT_CD",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ObjectVersionNumber1",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "OrdrNum",
+        "column": "ORDR_NUM",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ParticipantEnrollmentRatePEOConfigChar1",
+        "column": "CONFIG_CHAR_1",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ParticipantEnrollmentRatePEOTypeId",
+        "column": "TYPE_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PerInLerId1",
+        "column": "PER_IN_LER_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PkId",
+        "column": "PK_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PkIdTableName",
+        "column": "PK_ID_TABLE_NAME",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PpInYrUsedNum",
+        "column": "PP_IN_YR_USED_NUM",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PrttEnrtRsltId1",
+        "column": "PRTT_ENRT_RSLT_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PrttReimbmtRqstId",
+        "column": "PRTT_REIMBMT_RQST_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PrttRmtAprvdFrPymtId",
+        "column": "PRTT_RMT_APRVD_FR_PYMT_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PrttRtValId",
+        "column": "PRTT_RT_VAL_ID",
+        "bicc": true,
+        "pk": true
+      },
+      {
+        "attribute": "PrttRtValStatCd",
+        "column": "PRTT_RT_VAL_STAT_CD",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PrvAttribute1",
+        "column": "PRV_ATTRIBUTE1",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PrvAttribute10",
+        "column": "PRV_ATTRIBUTE10",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PrvAttribute11",
+        "column": "PRV_ATTRIBUTE11",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PrvAttribute12",
+        "column": "PRV_ATTRIBUTE12",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PrvAttribute13",
+        "column": "PRV_ATTRIBUTE13",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PrvAttribute14",
+        "column": "PRV_ATTRIBUTE14",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PrvAttribute15",
+        "column": "PRV_ATTRIBUTE15",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PrvAttribute16",
+        "column": "PRV_ATTRIBUTE16",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PrvAttribute17",
+        "column": "PRV_ATTRIBUTE17",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PrvAttribute18",
+        "column": "PRV_ATTRIBUTE18",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PrvAttribute19",
+        "column": "PRV_ATTRIBUTE19",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PrvAttribute2",
+        "column": "PRV_ATTRIBUTE2",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PrvAttribute20",
+        "column": "PRV_ATTRIBUTE20",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PrvAttribute21",
+        "column": "PRV_ATTRIBUTE21",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PrvAttribute22",
+        "column": "PRV_ATTRIBUTE22",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PrvAttribute23",
+        "column": "PRV_ATTRIBUTE23",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PrvAttribute24",
+        "column": "PRV_ATTRIBUTE24",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PrvAttribute25",
+        "column": "PRV_ATTRIBUTE25",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PrvAttribute26",
+        "column": "PRV_ATTRIBUTE26",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PrvAttribute27",
+        "column": "PRV_ATTRIBUTE27",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PrvAttribute28",
+        "column": "PRV_ATTRIBUTE28",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PrvAttribute29",
+        "column": "PRV_ATTRIBUTE29",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PrvAttribute3",
+        "column": "PRV_ATTRIBUTE3",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PrvAttribute30",
+        "column": "PRV_ATTRIBUTE30",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PrvAttribute4",
+        "column": "PRV_ATTRIBUTE4",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PrvAttribute5",
+        "column": "PRV_ATTRIBUTE5",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PrvAttribute6",
+        "column": "PRV_ATTRIBUTE6",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PrvAttribute7",
+        "column": "PRV_ATTRIBUTE7",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PrvAttribute8",
+        "column": "PRV_ATTRIBUTE8",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PrvAttribute9",
+        "column": "PRV_ATTRIBUTE9",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PrvAttributeCategory",
+        "column": "PRV_ATTRIBUTE_CATEGORY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PrvConfigChar10",
+        "column": "CONFIG_CHAR_10",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PrvConfigChar6",
+        "column": "CONFIG_CHAR_6",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PrvConfigChar7",
+        "column": "CONFIG_CHAR_7",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PrvConfigChar8",
+        "column": "CONFIG_CHAR_8",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PrvConfigChar9",
+        "column": "CONFIG_CHAR_9",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PrvConfigId1",
+        "column": "CONFIG_ID_1",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PrvConfigId2",
+        "column": "CONFIG_ID_2",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PrvConfigId3",
+        "column": "CONFIG_ID_3",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PrvConfigId4",
+        "column": "CONFIG_ID_4",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PrvConfigId5",
+        "column": "CONFIG_ID_5",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PrvConfigNum10",
+        "column": "CONFIG_NUM_10",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PrvConfigNum6",
+        "column": "CONFIG_NUM_6",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PrvConfigNum7",
+        "column": "CONFIG_NUM_7",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PrvConfigNum8",
+        "column": "CONFIG_NUM_8",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PrvConfigNum9",
+        "column": "CONFIG_NUM_9",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PrvsRateStrtDt",
+        "column": "PRVS_RATE_STRT_DT",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PrvsRateThruDt",
+        "column": "PRVS_RATE_THRU_DT",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "RateDisplayCd",
+        "column": "RATE_DISPLAY_CD",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "RcrrgFlag",
+        "column": "RCRRG_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "RtEndDt",
+        "column": "RT_END_DT",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "RtOvridnFlag",
+        "column": "RT_OVRIDN_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "RtOvridnThruDt",
+        "column": "RT_OVRIDN_THRU_DT",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "RtStrtDt",
+        "column": "RT_STRT_DT",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "RtTypCd",
+        "column": "RT_TYP_CD",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "RtVal",
+        "column": "RT_VAL",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TxTypCd",
+        "column": "TX_TYP_CD",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ValueDefinitionBaseName",
+        "column": "VALUE_DEFINITION_BASE_NAME",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "VdefnDirCardCompDefId",
+        "column": "VDEFN_DIR_CARD_COMP_DEF_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "VdefnElementTypeId",
+        "column": "VDEFN_ELEMENT_TYPE_ID",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "BEN_PRTT_ENRT_RSLT": [
+      {
+        "attribute": "AdminCategoryCd",
+        "column": "ADMIN_CATEGORY_CD",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AssignmentId",
+        "column": "ASSIGNMENT_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BenefitRelationId",
+        "column": "BENEFIT_RELATION_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BnftAmt",
+        "column": "BNFT_AMT",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "BnftNnmntryUom",
+        "column": "BNFT_NNMNTRY_UOM",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "BnftOrdrNum",
+        "column": "BNFT_ORDR_NUM",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "BnftTypCd",
+        "column": "BNFT_TYP_CD",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "BusinessGroupId",
+        "column": "BUSINESS_GROUP_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CirBenefitId",
+        "column": "CIR_BENEFIT_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CompLvlCd",
+        "column": "COMP_LVL_CD",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ConfigChar1",
+        "column": "CONFIG_CHAR_1",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ConfigChar10",
+        "column": "CONFIG_CHAR_10",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ConfigChar6",
+        "column": "CONFIG_CHAR_6",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ConfigChar7",
+        "column": "CONFIG_CHAR_7",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ConfigChar8",
+        "column": "CONFIG_CHAR_8",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ConfigChar9",
+        "column": "CONFIG_CHAR_9",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ConfigId1",
+        "column": "CONFIG_ID_1",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ConfigId2",
+        "column": "CONFIG_ID_2",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ConfigId3",
+        "column": "CONFIG_ID_3",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ConfigId4",
+        "column": "CONFIG_ID_4",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ConfigId5",
+        "column": "CONFIG_ID_5",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ConfigNum1",
+        "column": "CONFIG_NUM_1",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ConfigNum10",
+        "column": "CONFIG_NUM_10",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ConfigNum6",
+        "column": "CONFIG_NUM_6",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ConfigNum7",
+        "column": "CONFIG_NUM_7",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ConfigNum8",
+        "column": "CONFIG_NUM_8",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ConfigNum9",
+        "column": "CONFIG_NUM_9",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CreatedBy",
+        "column": "CREATED_BY",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CreationDate",
+        "column": "CREATION_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ElectionDate",
+        "column": "ELECTION_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "EndedCvgThruDt",
+        "column": "ENDED_CVG_THRU_DT",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "EndedPerInLerId",
+        "column": "ENDED_PER_IN_LER_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "EnrtCvgStrtDt",
+        "column": "ENRT_CVG_STRT_DT",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "EnrtCvgThruDt",
+        "column": "ENRT_CVG_THRU_DT",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "EnrtMthdCd",
+        "column": "ENRT_MTHD_CD",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "EnrtOvridRsnCd",
+        "column": "ENRT_OVRID_RSN_CD",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "EnrtOvridThruDt",
+        "column": "ENRT_OVRID_THRU_DT",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "EnrtOvridnFlag",
+        "column": "ENRT_OVRIDN_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ErlstDeenrtDt",
+        "column": "ERLST_DEENRT_DT",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ImptdIncmCalcCd",
+        "column": "IMPTD_INCM_CALC_CD",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InterimFlag",
+        "column": "INTERIM_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "JobDefinitionName",
+        "column": "JOB_DEFINITION_NAME",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "JobDefinitionPackage",
+        "column": "JOB_DEFINITION_PACKAGE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "LastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "LastUpdateLogin",
+        "column": "LAST_UPDATE_LOGIN",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "LastUpdatedBy",
+        "column": "LAST_UPDATED_BY",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "LegalEntityId",
+        "column": "LEGAL_ENTITY_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "LerId",
+        "column": "LER_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "MiscPlnFlag",
+        "column": "MISC_PLN_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NoLngrEligFlag",
+        "column": "NO_LNGR_ELIG_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "OiplId",
+        "column": "OIPL_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "OiplOrdrNum",
+        "column": "OIPL_ORDR_NUM",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "OptId",
+        "column": "OPT_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "OrgnlEnrtDt",
+        "column": "ORGNL_ENRT_DT",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PenAttribute1",
+        "column": "PEN_ATTRIBUTE1",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PenAttribute10",
+        "column": "PEN_ATTRIBUTE10",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PenAttribute11",
+        "column": "PEN_ATTRIBUTE11",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PenAttribute12",
+        "column": "PEN_ATTRIBUTE12",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PenAttribute13",
+        "column": "PEN_ATTRIBUTE13",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PenAttribute14",
+        "column": "PEN_ATTRIBUTE14",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PenAttribute15",
+        "column": "PEN_ATTRIBUTE15",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PenAttribute16",
+        "column": "PEN_ATTRIBUTE16",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PenAttribute17",
+        "column": "PEN_ATTRIBUTE17",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PenAttribute18",
+        "column": "PEN_ATTRIBUTE18",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PenAttribute19",
+        "column": "PEN_ATTRIBUTE19",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PenAttribute2",
+        "column": "PEN_ATTRIBUTE2",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PenAttribute20",
+        "column": "PEN_ATTRIBUTE20",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PenAttribute21",
+        "column": "PEN_ATTRIBUTE21",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PenAttribute22",
+        "column": "PEN_ATTRIBUTE22",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PenAttribute23",
+        "column": "PEN_ATTRIBUTE23",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PenAttribute24",
+        "column": "PEN_ATTRIBUTE24",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PenAttribute25",
+        "column": "PEN_ATTRIBUTE25",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PenAttribute26",
+        "column": "PEN_ATTRIBUTE26",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PenAttribute27",
+        "column": "PEN_ATTRIBUTE27",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PenAttribute28",
+        "column": "PEN_ATTRIBUTE28",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PenAttribute29",
+        "column": "PEN_ATTRIBUTE29",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PenAttribute3",
+        "column": "PEN_ATTRIBUTE3",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PenAttribute30",
+        "column": "PEN_ATTRIBUTE30",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PenAttribute4",
+        "column": "PEN_ATTRIBUTE4",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PenAttribute5",
+        "column": "PEN_ATTRIBUTE5",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PenAttribute6",
+        "column": "PEN_ATTRIBUTE6",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PenAttribute7",
+        "column": "PEN_ATTRIBUTE7",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PenAttribute8",
+        "column": "PEN_ATTRIBUTE8",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PenAttribute9",
+        "column": "PEN_ATTRIBUTE9",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PenAttributeCategory",
+        "column": "PEN_ATTRIBUTE_CATEGORY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PerInLerId",
+        "column": "PER_IN_LER_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PersonId",
+        "column": "PERSON_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PgmId",
+        "column": "PGM_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PlId",
+        "column": "PL_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PlOrdrNum",
+        "column": "PL_ORDR_NUM",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PlTypId",
+        "column": "PL_TYP_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PlipOrdrNum",
+        "column": "PLIP_ORDR_NUM",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ProgramAppName",
+        "column": "PROGRAM_APP_NAME",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ProgramName",
+        "column": "PROGRAM_NAME",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ProgramUpdateDate",
+        "column": "PROGRAM_UPDATE_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PrttEnrtRsltId",
+        "column": "PRTT_ENRT_RSLT_ID",
+        "bicc": true,
+        "pk": true
+      },
+      {
+        "attribute": "PrttEnrtRsltStatCd",
+        "column": "PRTT_ENRT_RSLT_STAT_CD",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PrttIsCvrdFlag",
+        "column": "PRTT_IS_CVRD_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PrvsCvgStrtDt",
+        "column": "PRVS_CVG_STRT_DT",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PrvsCvgThruDt",
+        "column": "PRVS_CVG_THRU_DT",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PrvsSspnddFlag",
+        "column": "PRVS_SSPNDD_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PtipId",
+        "column": "PTIP_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PtipOrdrNum",
+        "column": "PTIP_ORDR_NUM",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "RequestId",
+        "column": "REQUEST_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "RplcsSspnddRsltId",
+        "column": "RPLCS_SSPNDD_RSLT_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "SsCategoryCd",
+        "column": "SS_CATEGORY_CD",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "SspnddFlag",
+        "column": "SSPNDD_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "SvngsPlnFlag",
+        "column": "SVNGS_PLN_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TypeId",
+        "column": "TYPE_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "Uom",
+        "column": "UOM",
+        "bicc": true,
+        "pk": false
+      }
+    ],
+    "BEN_PER_BENEFIT_GROUP_F": [
+      {
+        "attribute": "BenefitGroupId",
+        "column": "BENEFIT_GROUP_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "EffectiveEndDate2",
+        "column": "EFFECTIVE_END_DATE",
+        "bicc": true,
+        "pk": true
+      },
+      {
+        "attribute": "EffectiveEndDate3",
+        "column": "EFFECTIVE_END_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "EffectiveStartDate1",
+        "column": "EFFECTIVE_START_DATE",
+        "bicc": true,
+        "pk": true
+      },
+      {
+        "attribute": "EffectiveStartDate2",
+        "column": "EFFECTIVE_START_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "LeBenefitGroupId",
+        "column": "LE_BENEFIT_GROUP_ID",
+        "bicc": true,
+        "pk": true
+      }
+    ],
+    "BEN_BENEFIT_RELATIONS_F": [
+      {
+        "attribute": "BenefitRelSystemCd",
+        "column": "BENEFIT_REL_SYSTEM_CD",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BenefitRelationId1",
+        "column": "BENEFIT_RELATION_ID",
+        "bicc": true,
+        "pk": true
+      },
+      {
+        "attribute": "BenefitRelationName",
+        "column": "BENEFIT_RELATION_NAME",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "EffectiveEndDate",
+        "column": "EFFECTIVE_END_DATE",
+        "bicc": true,
+        "pk": true
+      },
+      {
+        "attribute": "EffectiveEndDate1",
+        "column": "EFFECTIVE_END_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "EffectiveStartDate",
+        "column": "EFFECTIVE_START_DATE",
+        "bicc": true,
+        "pk": true
+      },
+      {
+        "attribute": "PrimaryRel",
+        "column": "PRIMARY_REL",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "RelPrmryAsgId",
+        "column": "REL_PRMRY_ASG_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "Status",
+        "column": "STATUS",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "PER_ALL_PEOPLE_F": [
+      {
+        "attribute": "EffectiveEndDate4",
+        "column": "EFFECTIVE_END_DATE",
+        "bicc": true,
+        "pk": true
+      },
+      {
+        "attribute": "EffectiveStartDate3",
+        "column": "EFFECTIVE_START_DATE",
+        "bicc": true,
+        "pk": true
+      },
+      {
+        "attribute": "PersonId1",
+        "column": "PERSON_ID",
+        "bicc": true,
+        "pk": true
+      }
+    ]
+  }
+}

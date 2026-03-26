@@ -1,0 +1,2435 @@
+{
+  "meta": {
+    "pvo_name": "BalancePVO",
+    "full_path": "FscmTopModelAM.FinGlInquiryBalancesAM.BalancePVO",
+    "module_path": "FscmTopModelAM.FinGlInquiryBalancesAM",
+    "module_code": "GL",
+    "type": "pvo",
+    "description": "View Object para extração BICC de dados de Balance. Acessa as tabelas: GL_BALANCES, GL_ENCUMBRANCE_TYPES_VL, GL_LEDGERS (+3)."
+  },
+  "stats": {
+    "total_attributes": 171,
+    "tables_count": 6,
+    "bicc_enabled": 31,
+    "bicc_pct": 18,
+    "pk_count": 8
+  },
+  "tables": [
+    "GL_BALANCES",
+    "GL_ENCUMBRANCE_TYPES_VL",
+    "GL_LEDGERS",
+    "GL_LEDGER_SEGMENT_VALUES",
+    "PER_PERSON_NAMES_F_V",
+    "PER_USERS"
+  ],
+  "attributes": [
+    {
+      "name": "ActualFlag",
+      "table": "GL_BALANCES",
+      "column": "ACTUAL_FLAG",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    },
+    {
+      "name": "BeginBalanceCr",
+      "table": "GL_BALANCES",
+      "column": "BEGIN_BALANCE_CR",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BeginBalanceCrBeq",
+      "table": "GL_BALANCES",
+      "column": "BEGIN_BALANCE_CR_BEQ",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BeginBalanceDr",
+      "table": "GL_BALANCES",
+      "column": "BEGIN_BALANCE_DR",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BeginBalanceDrBeq",
+      "table": "GL_BALANCES",
+      "column": "BEGIN_BALANCE_DR_BEQ",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BudgetVersionId",
+      "table": "GL_BALANCES",
+      "column": "BUDGET_VERSION_ID",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    },
+    {
+      "name": "ChartOfAccountsId",
+      "table": "GL_LEDGERS",
+      "column": "CHART_OF_ACCOUNTS_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CodeCombinationId",
+      "table": "GL_BALANCES",
+      "column": "CODE_COMBINATION_ID",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    },
+    {
+      "name": "CurrencyCode",
+      "table": "GL_BALANCES",
+      "column": "CURRENCY_CODE",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    },
+    {
+      "name": "EncumbranceType",
+      "table": "GL_ENCUMBRANCE_TYPES_VL",
+      "column": "ENCUMBRANCE_TYPE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "EncumbranceTypeId",
+      "table": "GL_BALANCES",
+      "column": "ENCUMBRANCE_TYPE_ID",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    },
+    {
+      "name": "GlBalancesEncumbranceDocId",
+      "table": "GL_BALANCES",
+      "column": "ENCUMBRANCE_DOC_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "GlBalancesEncumbranceLineNum",
+      "table": "GL_BALANCES",
+      "column": "ENCUMBRANCE_LINE_NUM",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "GlBalancesObjectVersionNumber",
+      "table": "GL_BALANCES",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "GlBalancesPeriodNum",
+      "table": "GL_BALANCES",
+      "column": "PERIOD_NUM",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "GlBalancesPeriodToDateAdb",
+      "table": "GL_BALANCES",
+      "column": "PERIOD_TO_DATE_ADB",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "GlBalancesPeriodType",
+      "table": "GL_BALANCES",
+      "column": "PERIOD_TYPE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "GlBalancesPeriodYear",
+      "table": "GL_BALANCES",
+      "column": "PERIOD_YEAR",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "GlBalancesProjectToDateAdb",
+      "table": "GL_BALANCES",
+      "column": "PROJECT_TO_DATE_ADB",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "GlBalancesProjectToDateCr",
+      "table": "GL_BALANCES",
+      "column": "PROJECT_TO_DATE_CR",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "GlBalancesProjectToDateCrBeq",
+      "table": "GL_BALANCES",
+      "column": "PROJECT_TO_DATE_CR_BEQ",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "GlBalancesProjectToDateDr",
+      "table": "GL_BALANCES",
+      "column": "PROJECT_TO_DATE_DR",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "GlBalancesProjectToDateDrBeq",
+      "table": "GL_BALANCES",
+      "column": "PROJECT_TO_DATE_DR_BEQ",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "GlBalancesQuarterToDateAdb",
+      "table": "GL_BALANCES",
+      "column": "QUARTER_TO_DATE_ADB",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "GlBalancesQuarterToDateCr",
+      "table": "GL_BALANCES",
+      "column": "QUARTER_TO_DATE_CR",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "GlBalancesQuarterToDateCrBeq",
+      "table": "GL_BALANCES",
+      "column": "QUARTER_TO_DATE_CR_BEQ",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "GlBalancesQuarterToDateDr",
+      "table": "GL_BALANCES",
+      "column": "QUARTER_TO_DATE_DR",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "GlBalancesQuarterToDateDrBeq",
+      "table": "GL_BALANCES",
+      "column": "QUARTER_TO_DATE_DR_BEQ",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "GlBalancesRevaluationStatus",
+      "table": "GL_BALANCES",
+      "column": "REVALUATION_STATUS",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "GlBalancesYearToDateAdb",
+      "table": "GL_BALANCES",
+      "column": "YEAR_TO_DATE_ADB",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "GlLedgerAccountedPeriodType",
+      "table": "GL_LEDGERS",
+      "column": "ACCOUNTED_PERIOD_TYPE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "GlLedgerAlcLedgerTypeCode",
+      "table": "GL_LEDGERS",
+      "column": "ALC_LEDGER_TYPE_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "GlLedgerAllowIntercompanyPostFlag",
+      "table": "GL_LEDGERS",
+      "column": "ALLOW_INTERCOMPANY_POST_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "GlLedgerApDocSequencingOptionFlag",
+      "table": "GL_LEDGERS",
+      "column": "AP_DOC_SEQUENCING_OPTION_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "GlLedgerArDocSequencingOptionFlag",
+      "table": "GL_LEDGERS",
+      "column": "AR_DOC_SEQUENCING_OPTION_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "GlLedgerAttribute1",
+      "table": "GL_LEDGERS",
+      "column": "ATTRIBUTE1",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "GlLedgerAttribute10",
+      "table": "GL_LEDGERS",
+      "column": "ATTRIBUTE10",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "GlLedgerAttribute11",
+      "table": "GL_LEDGERS",
+      "column": "ATTRIBUTE11",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "GlLedgerAttribute12",
+      "table": "GL_LEDGERS",
+      "column": "ATTRIBUTE12",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "GlLedgerAttribute13",
+      "table": "GL_LEDGERS",
+      "column": "ATTRIBUTE13",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "GlLedgerAttribute14",
+      "table": "GL_LEDGERS",
+      "column": "ATTRIBUTE14",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "GlLedgerAttribute15",
+      "table": "GL_LEDGERS",
+      "column": "ATTRIBUTE15",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "GlLedgerAttribute2",
+      "table": "GL_LEDGERS",
+      "column": "ATTRIBUTE2",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "GlLedgerAttribute3",
+      "table": "GL_LEDGERS",
+      "column": "ATTRIBUTE3",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "GlLedgerAttribute4",
+      "table": "GL_LEDGERS",
+      "column": "ATTRIBUTE4",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "GlLedgerAttribute5",
+      "table": "GL_LEDGERS",
+      "column": "ATTRIBUTE5",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "GlLedgerAttribute6",
+      "table": "GL_LEDGERS",
+      "column": "ATTRIBUTE6",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "GlLedgerAttribute7",
+      "table": "GL_LEDGERS",
+      "column": "ATTRIBUTE7",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "GlLedgerAttribute8",
+      "table": "GL_LEDGERS",
+      "column": "ATTRIBUTE8",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "GlLedgerAttribute9",
+      "table": "GL_LEDGERS",
+      "column": "ATTRIBUTE9",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "GlLedgerAttributeCategory",
+      "table": "GL_LEDGERS",
+      "column": "ATTRIBUTE_CATEGORY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "GlLedgerAttributeDate1",
+      "table": "GL_LEDGERS",
+      "column": "ATTRIBUTE_DATE1",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "GlLedgerAttributeDate2",
+      "table": "GL_LEDGERS",
+      "column": "ATTRIBUTE_DATE2",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "GlLedgerAttributeDate3",
+      "table": "GL_LEDGERS",
+      "column": "ATTRIBUTE_DATE3",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "GlLedgerAttributeDate4",
+      "table": "GL_LEDGERS",
+      "column": "ATTRIBUTE_DATE4",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "GlLedgerAttributeDate5",
+      "table": "GL_LEDGERS",
+      "column": "ATTRIBUTE_DATE5",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "GlLedgerAttributeNumber1",
+      "table": "GL_LEDGERS",
+      "column": "ATTRIBUTE_NUMBER1",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "GlLedgerAttributeNumber2",
+      "table": "GL_LEDGERS",
+      "column": "ATTRIBUTE_NUMBER2",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "GlLedgerAttributeNumber3",
+      "table": "GL_LEDGERS",
+      "column": "ATTRIBUTE_NUMBER3",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "GlLedgerAttributeNumber4",
+      "table": "GL_LEDGERS",
+      "column": "ATTRIBUTE_NUMBER4",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "GlLedgerAttributeNumber5",
+      "table": "GL_LEDGERS",
+      "column": "ATTRIBUTE_NUMBER5",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "GlLedgerAutomateSecJrnlRevFlag",
+      "table": "GL_LEDGERS",
+      "column": "AUTOMATE_SEC_JRNL_REV_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "GlLedgerAutomaticallyCreatedFlag",
+      "table": "GL_LEDGERS",
+      "column": "AUTOMATICALLY_CREATED_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "GlLedgerAutorevAfterOpenPrdFlag",
+      "table": "GL_LEDGERS",
+      "column": "AUTOREV_AFTER_OPEN_PRD_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "GlLedgerBalSegColumnName",
+      "table": "GL_LEDGERS",
+      "column": "BAL_SEG_COLUMN_NAME",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "GlLedgerBalSegValueOptionCode",
+      "table": "GL_LEDGERS",
+      "column": "BAL_SEG_VALUE_OPTION_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "GlLedgerBalSegValueSetId",
+      "table": "GL_LEDGERS",
+      "column": "BAL_SEG_VALUE_SET_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "GlLedgerBudgetPeriodAvgRateType",
+      "table": "GL_LEDGERS",
+      "column": "BUDGET_PERIOD_AVG_RATE_TYPE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "GlLedgerBudgetPeriodEndRateType",
+      "table": "GL_LEDGERS",
+      "column": "BUDGET_PERIOD_END_RATE_TYPE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "GlLedgerCompleteFlag",
+      "table": "GL_LEDGERS",
+      "column": "COMPLETE_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "GlLedgerCompletionStatusCode",
+      "table": "GL_LEDGERS",
+      "column": "COMPLETION_STATUS_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "GlLedgerConfigurationId",
+      "table": "GL_LEDGERS",
+      "column": "CONFIGURATION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "GlLedgerConsolidationLedgerFlag",
+      "table": "GL_LEDGERS",
+      "column": "CONSOLIDATION_LEDGER_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "GlLedgerCreateJeFlag",
+      "table": "GL_LEDGERS",
+      "column": "CREATE_JE_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "GlLedgerCreatedBy",
+      "table": "GL_LEDGERS",
+      "column": "CREATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "GlLedgerCreationDate",
+      "table": "GL_LEDGERS",
+      "column": "CREATION_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "GlLedgerCriteriaSetId",
+      "table": "GL_LEDGERS",
+      "column": "CRITERIA_SET_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "GlLedgerCumTransCodeCombinationId",
+      "table": "GL_LEDGERS",
+      "column": "CUM_TRANS_CODE_COMBINATION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "GlLedgerDailyTranslationRateType",
+      "table": "GL_LEDGERS",
+      "column": "DAILY_TRANSLATION_RATE_TYPE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "GlLedgerDescription",
+      "table": "GL_LEDGERS",
+      "column": "DESCRIPTION",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "GlLedgerEnableAutomaticTaxFlag",
+      "table": "GL_LEDGERS",
+      "column": "ENABLE_AUTOMATIC_TAX_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "GlLedgerEnableAverageBalancesFlag",
+      "table": "GL_LEDGERS",
+      "column": "ENABLE_AVERAGE_BALANCES_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "GlLedgerEnableBudgetaryControlFlag",
+      "table": "GL_LEDGERS",
+      "column": "ENABLE_BUDGETARY_CONTROL_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "GlLedgerEnableJeApprovalFlag",
+      "table": "GL_LEDGERS",
+      "column": "ENABLE_JE_APPROVAL_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "GlLedgerEnableReconciliationFlag",
+      "table": "GL_LEDGERS",
+      "column": "ENABLE_RECONCILIATION_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "GlLedgerEnableRevalSsTrackFlag",
+      "table": "GL_LEDGERS",
+      "column": "ENABLE_REVAL_SS_TRACK_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "GlLedgerEnableSecondaryTrackFlag",
+      "table": "GL_LEDGERS",
+      "column": "ENABLE_SECONDARY_TRACK_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "GlLedgerEnfSeqDateCorrelationCode",
+      "table": "GL_LEDGERS",
+      "column": "ENF_SEQ_DATE_CORRELATION_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "GlLedgerFirstLedgerPeriodName",
+      "table": "GL_LEDGERS",
+      "column": "FIRST_LEDGER_PERIOD_NAME",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "GlLedgerFutureEnterablePeriodsLimit",
+      "table": "GL_LEDGERS",
+      "column": "FUTURE_ENTERABLE_PERIODS_LIMIT",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "GlLedgerImplicitAccessSetId",
+      "table": "GL_LEDGERS",
+      "column": "IMPLICIT_ACCESS_SET_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "GlLedgerImplicitLedgerSetId",
+      "table": "GL_LEDGERS",
+      "column": "IMPLICIT_LEDGER_SET_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "GlLedgerIntercoGainLossCcid",
+      "table": "GL_LEDGERS",
+      "column": "INTERCO_GAIN_LOSS_CCID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "GlLedgerJrnlsGroupByDateFlag",
+      "table": "GL_LEDGERS",
+      "column": "JRNLS_GROUP_BY_DATE_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "GlLedgerLastUpdateLogin",
+      "table": "GL_LEDGERS",
+      "column": "LAST_UPDATE_LOGIN",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "GlLedgerLatestEncumbranceYear",
+      "table": "GL_LEDGERS",
+      "column": "LATEST_ENCUMBRANCE_YEAR",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "GlLedgerLatestOpenedPeriodName",
+      "table": "GL_LEDGERS",
+      "column": "LATEST_OPENED_PERIOD_NAME",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "GlLedgerLeLedgerTypeCode",
+      "table": "GL_LEDGERS",
+      "column": "LE_LEDGER_TYPE_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "GlLedgerLedgerAttributes",
+      "table": "GL_LEDGERS",
+      "column": "LEDGER_ATTRIBUTES",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "GlLedgerLedgerId",
+      "table": "GL_LEDGERS",
+      "column": "LEDGER_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "GlLedgerMgtSegColumnName",
+      "table": "GL_LEDGERS",
+      "column": "MGT_SEG_COLUMN_NAME",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "GlLedgerMgtSegValueOptionCode",
+      "table": "GL_LEDGERS",
+      "column": "MGT_SEG_VALUE_OPTION_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "GlLedgerMgtSegValueSetId",
+      "table": "GL_LEDGERS",
+      "column": "MGT_SEG_VALUE_SET_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "GlLedgerName",
+      "table": "GL_LEDGERS",
+      "column": "NAME",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "GlLedgerNetClosingBalFlag",
+      "table": "GL_LEDGERS",
+      "column": "NET_CLOSING_BAL_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "GlLedgerNetIncomeCodeCombinationId",
+      "table": "GL_LEDGERS",
+      "column": "NET_INCOME_CODE_COMBINATION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "GlLedgerObjectTypeCode",
+      "table": "GL_LEDGERS",
+      "column": "OBJECT_TYPE_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "GlLedgerObjectVersionNumber",
+      "table": "GL_LEDGERS",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "GlLedgerPeriodAverageRateType",
+      "table": "GL_LEDGERS",
+      "column": "PERIOD_AVERAGE_RATE_TYPE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "GlLedgerPeriodEndRateType",
+      "table": "GL_LEDGERS",
+      "column": "PERIOD_END_RATE_TYPE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "GlLedgerPeriodSetName",
+      "table": "GL_LEDGERS",
+      "column": "PERIOD_SET_NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "GlLedgerPopUpStatAccountFlag",
+      "table": "GL_LEDGERS",
+      "column": "POP_UP_STAT_ACCOUNT_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "GlLedgerPriorPrdNotificationFlag",
+      "table": "GL_LEDGERS",
+      "column": "PRIOR_PRD_NOTIFICATION_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "GlLedgerRequireBudgetJournalsFlag",
+      "table": "GL_LEDGERS",
+      "column": "REQUIRE_BUDGET_JOURNALS_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "GlLedgerResEncumbCodeCombinationId",
+      "table": "GL_LEDGERS",
+      "column": "RES_ENCUMB_CODE_COMBINATION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "GlLedgerRetEarnCodeCombinationId",
+      "table": "GL_LEDGERS",
+      "column": "RET_EARN_CODE_COMBINATION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "GlLedgerRevalFromPriLgrCurr",
+      "table": "GL_LEDGERS",
+      "column": "REVAL_FROM_PRI_LGR_CURR",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "GlLedgerRoundingCodeCombinationId",
+      "table": "GL_LEDGERS",
+      "column": "ROUNDING_CODE_COMBINATION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "GlLedgerSequencingModeCode",
+      "table": "GL_LEDGERS",
+      "column": "SEQUENCING_MODE_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "GlLedgerShortName",
+      "table": "GL_LEDGERS",
+      "column": "SHORT_NAME",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "GlLedgerSlaAccountingMethodCode",
+      "table": "GL_LEDGERS",
+      "column": "SLA_ACCOUNTING_METHOD_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "GlLedgerSlaAccountingMethodType",
+      "table": "GL_LEDGERS",
+      "column": "SLA_ACCOUNTING_METHOD_TYPE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "GlLedgerSlaBalByLedgerCurrFlag",
+      "table": "GL_LEDGERS",
+      "column": "SLA_BAL_BY_LEDGER_CURR_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "GlLedgerSlaDescriptionLanguage",
+      "table": "GL_LEDGERS",
+      "column": "SLA_DESCRIPTION_LANGUAGE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "GlLedgerSlaEnteredCurBalSusCcid",
+      "table": "GL_LEDGERS",
+      "column": "SLA_ENTERED_CUR_BAL_SUS_CCID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "GlLedgerSlaLedgerCashBasisFlag",
+      "table": "GL_LEDGERS",
+      "column": "SLA_LEDGER_CASH_BASIS_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "GlLedgerSlaLedgerCurBalSusCcid",
+      "table": "GL_LEDGERS",
+      "column": "SLA_LEDGER_CUR_BAL_SUS_CCID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "GlLedgerSlaSequencingFlag",
+      "table": "GL_LEDGERS",
+      "column": "SLA_SEQUENCING_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "GlLedgerSuspenseAllowedFlag",
+      "table": "GL_LEDGERS",
+      "column": "SUSPENSE_ALLOWED_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "GlLedgerThresholdAmount",
+      "table": "GL_LEDGERS",
+      "column": "THRESHOLD_AMOUNT",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "GlLedgerTrackRoundingImbalanceFlag",
+      "table": "GL_LEDGERS",
+      "column": "TRACK_ROUNDING_IMBALANCE_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "GlLedgerTransactionCalendarId",
+      "table": "GL_LEDGERS",
+      "column": "TRANSACTION_CALENDAR_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "GlLedgerTranslateEodFlag",
+      "table": "GL_LEDGERS",
+      "column": "TRANSLATE_EOD_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "GlLedgerTranslateQatdFlag",
+      "table": "GL_LEDGERS",
+      "column": "TRANSLATE_QATD_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "GlLedgerTranslateYatdFlag",
+      "table": "GL_LEDGERS",
+      "column": "TRANSLATE_YATD_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "GlLedgerUssglOptionCode",
+      "table": "GL_LEDGERS",
+      "column": "USSGL_OPTION_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "GlLedgerValidateJournalRefDate",
+      "table": "GL_LEDGERS",
+      "column": "VALIDATE_JOURNAL_REF_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "JournalEncumbranceTypeEncumbranceTypeId",
+      "table": "GL_ENCUMBRANCE_TYPES_VL",
+      "column": "ENCUMBRANCE_TYPE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LastUpdateDateBal",
+      "table": "GL_BALANCES",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": true
+    },
+    {
+      "name": "LastUpdateDateSob",
+      "table": "GL_LEDGERS",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LastUpdatedByBal",
+      "table": "GL_BALANCES",
+      "column": "LAST_UPDATED_BY",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LastUpdatedBySob",
+      "table": "GL_LEDGERS",
+      "column": "LAST_UPDATED_BY",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LastUpdatedByUserCreatedBy",
+      "table": "PER_USERS",
+      "column": "CREATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LastUpdatedByUserCreationDate",
+      "table": "PER_USERS",
+      "column": "CREATION_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LastUpdatedByUserLastUpdateDate",
+      "table": "PER_USERS",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LastUpdatedByUserLastUpdatedBy",
+      "table": "PER_USERS",
+      "column": "LAST_UPDATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LastUpdatedByUserPersonId",
+      "table": "PER_USERS",
+      "column": "PERSON_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LastUpdatedByUserUserId",
+      "table": "PER_USERS",
+      "column": "USER_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LastUpdatedByUserUsername",
+      "table": "PER_USERS",
+      "column": "USERNAME",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LedgerCategoryCode",
+      "table": "GL_LEDGERS",
+      "column": "LEDGER_CATEGORY_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LedgerCurrencyCode",
+      "table": "GL_LEDGERS",
+      "column": "CURRENCY_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LedgerId",
+      "table": "GL_BALANCES",
+      "column": "LEDGER_ID",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    },
+    {
+      "name": "LedgerSegValLedgerId",
+      "table": "GL_LEDGER_SEGMENT_VALUES",
+      "column": "LEDGER_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LedgerSegValLegalEntityId",
+      "table": "GL_LEDGER_SEGMENT_VALUES",
+      "column": "LEGAL_ENTITY_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LedgerSegValSegmentTypeCode",
+      "table": "GL_LEDGER_SEGMENT_VALUES",
+      "column": "SEGMENT_TYPE_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LedgerSegValSegmentValue",
+      "table": "GL_LEDGER_SEGMENT_VALUES",
+      "column": "SEGMENT_VALUE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PeriodName",
+      "table": "GL_BALANCES",
+      "column": "PERIOD_NAME",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    },
+    {
+      "name": "PeriodNetCr",
+      "table": "GL_BALANCES",
+      "column": "PERIOD_NET_CR",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PeriodNetCrBeq",
+      "table": "GL_BALANCES",
+      "column": "PERIOD_NET_CR_BEQ",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PeriodNetDr",
+      "table": "GL_BALANCES",
+      "column": "PERIOD_NET_DR",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PeriodNetDrBeq",
+      "table": "GL_BALANCES",
+      "column": "PERIOD_NET_DR_BEQ",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonUpdatedByCreatedBy",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "CREATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonUpdatedByCreationDate",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "CREATION_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonUpdatedByDisplayName",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "DISPLAY_NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonUpdatedByEffectiveEndDate",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "EFFECTIVE_END_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonUpdatedByEffectiveStartDate",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "EFFECTIVE_START_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonUpdatedByLastUpdateDate",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonUpdatedByLastUpdatedBy",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "LAST_UPDATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonUpdatedByPersonNameId",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "PERSON_NAME_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TemplateId",
+      "table": "GL_BALANCES",
+      "column": "TEMPLATE_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TranslatedFlag",
+      "table": "GL_BALANCES",
+      "column": "TRANSLATED_FLAG",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    }
+  ],
+  "by_table": {
+    "GL_BALANCES": [
+      {
+        "attribute": "ActualFlag",
+        "column": "ACTUAL_FLAG",
+        "bicc": true,
+        "pk": true
+      },
+      {
+        "attribute": "BeginBalanceCr",
+        "column": "BEGIN_BALANCE_CR",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "BeginBalanceCrBeq",
+        "column": "BEGIN_BALANCE_CR_BEQ",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "BeginBalanceDr",
+        "column": "BEGIN_BALANCE_DR",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "BeginBalanceDrBeq",
+        "column": "BEGIN_BALANCE_DR_BEQ",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "BudgetVersionId",
+        "column": "BUDGET_VERSION_ID",
+        "bicc": true,
+        "pk": true
+      },
+      {
+        "attribute": "CodeCombinationId",
+        "column": "CODE_COMBINATION_ID",
+        "bicc": true,
+        "pk": true
+      },
+      {
+        "attribute": "CurrencyCode",
+        "column": "CURRENCY_CODE",
+        "bicc": true,
+        "pk": true
+      },
+      {
+        "attribute": "EncumbranceTypeId",
+        "column": "ENCUMBRANCE_TYPE_ID",
+        "bicc": true,
+        "pk": true
+      },
+      {
+        "attribute": "GlBalancesEncumbranceDocId",
+        "column": "ENCUMBRANCE_DOC_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "GlBalancesEncumbranceLineNum",
+        "column": "ENCUMBRANCE_LINE_NUM",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "GlBalancesObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "GlBalancesPeriodNum",
+        "column": "PERIOD_NUM",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "GlBalancesPeriodToDateAdb",
+        "column": "PERIOD_TO_DATE_ADB",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "GlBalancesPeriodType",
+        "column": "PERIOD_TYPE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "GlBalancesPeriodYear",
+        "column": "PERIOD_YEAR",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "GlBalancesProjectToDateAdb",
+        "column": "PROJECT_TO_DATE_ADB",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "GlBalancesProjectToDateCr",
+        "column": "PROJECT_TO_DATE_CR",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "GlBalancesProjectToDateCrBeq",
+        "column": "PROJECT_TO_DATE_CR_BEQ",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "GlBalancesProjectToDateDr",
+        "column": "PROJECT_TO_DATE_DR",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "GlBalancesProjectToDateDrBeq",
+        "column": "PROJECT_TO_DATE_DR_BEQ",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "GlBalancesQuarterToDateAdb",
+        "column": "QUARTER_TO_DATE_ADB",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "GlBalancesQuarterToDateCr",
+        "column": "QUARTER_TO_DATE_CR",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "GlBalancesQuarterToDateCrBeq",
+        "column": "QUARTER_TO_DATE_CR_BEQ",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "GlBalancesQuarterToDateDr",
+        "column": "QUARTER_TO_DATE_DR",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "GlBalancesQuarterToDateDrBeq",
+        "column": "QUARTER_TO_DATE_DR_BEQ",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "GlBalancesRevaluationStatus",
+        "column": "REVALUATION_STATUS",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "GlBalancesYearToDateAdb",
+        "column": "YEAR_TO_DATE_ADB",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "LastUpdateDateBal",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "LastUpdatedByBal",
+        "column": "LAST_UPDATED_BY",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "LedgerId",
+        "column": "LEDGER_ID",
+        "bicc": true,
+        "pk": true
+      },
+      {
+        "attribute": "PeriodName",
+        "column": "PERIOD_NAME",
+        "bicc": true,
+        "pk": true
+      },
+      {
+        "attribute": "PeriodNetCr",
+        "column": "PERIOD_NET_CR",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PeriodNetCrBeq",
+        "column": "PERIOD_NET_CR_BEQ",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PeriodNetDr",
+        "column": "PERIOD_NET_DR",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PeriodNetDrBeq",
+        "column": "PERIOD_NET_DR_BEQ",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TemplateId",
+        "column": "TEMPLATE_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TranslatedFlag",
+        "column": "TRANSLATED_FLAG",
+        "bicc": true,
+        "pk": true
+      }
+    ],
+    "GL_LEDGERS": [
+      {
+        "attribute": "ChartOfAccountsId",
+        "column": "CHART_OF_ACCOUNTS_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "GlLedgerAccountedPeriodType",
+        "column": "ACCOUNTED_PERIOD_TYPE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "GlLedgerAlcLedgerTypeCode",
+        "column": "ALC_LEDGER_TYPE_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "GlLedgerAllowIntercompanyPostFlag",
+        "column": "ALLOW_INTERCOMPANY_POST_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "GlLedgerApDocSequencingOptionFlag",
+        "column": "AP_DOC_SEQUENCING_OPTION_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "GlLedgerArDocSequencingOptionFlag",
+        "column": "AR_DOC_SEQUENCING_OPTION_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "GlLedgerAttribute1",
+        "column": "ATTRIBUTE1",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "GlLedgerAttribute10",
+        "column": "ATTRIBUTE10",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "GlLedgerAttribute11",
+        "column": "ATTRIBUTE11",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "GlLedgerAttribute12",
+        "column": "ATTRIBUTE12",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "GlLedgerAttribute13",
+        "column": "ATTRIBUTE13",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "GlLedgerAttribute14",
+        "column": "ATTRIBUTE14",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "GlLedgerAttribute15",
+        "column": "ATTRIBUTE15",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "GlLedgerAttribute2",
+        "column": "ATTRIBUTE2",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "GlLedgerAttribute3",
+        "column": "ATTRIBUTE3",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "GlLedgerAttribute4",
+        "column": "ATTRIBUTE4",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "GlLedgerAttribute5",
+        "column": "ATTRIBUTE5",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "GlLedgerAttribute6",
+        "column": "ATTRIBUTE6",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "GlLedgerAttribute7",
+        "column": "ATTRIBUTE7",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "GlLedgerAttribute8",
+        "column": "ATTRIBUTE8",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "GlLedgerAttribute9",
+        "column": "ATTRIBUTE9",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "GlLedgerAttributeCategory",
+        "column": "ATTRIBUTE_CATEGORY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "GlLedgerAttributeDate1",
+        "column": "ATTRIBUTE_DATE1",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "GlLedgerAttributeDate2",
+        "column": "ATTRIBUTE_DATE2",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "GlLedgerAttributeDate3",
+        "column": "ATTRIBUTE_DATE3",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "GlLedgerAttributeDate4",
+        "column": "ATTRIBUTE_DATE4",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "GlLedgerAttributeDate5",
+        "column": "ATTRIBUTE_DATE5",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "GlLedgerAttributeNumber1",
+        "column": "ATTRIBUTE_NUMBER1",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "GlLedgerAttributeNumber2",
+        "column": "ATTRIBUTE_NUMBER2",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "GlLedgerAttributeNumber3",
+        "column": "ATTRIBUTE_NUMBER3",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "GlLedgerAttributeNumber4",
+        "column": "ATTRIBUTE_NUMBER4",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "GlLedgerAttributeNumber5",
+        "column": "ATTRIBUTE_NUMBER5",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "GlLedgerAutomateSecJrnlRevFlag",
+        "column": "AUTOMATE_SEC_JRNL_REV_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "GlLedgerAutomaticallyCreatedFlag",
+        "column": "AUTOMATICALLY_CREATED_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "GlLedgerAutorevAfterOpenPrdFlag",
+        "column": "AUTOREV_AFTER_OPEN_PRD_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "GlLedgerBalSegColumnName",
+        "column": "BAL_SEG_COLUMN_NAME",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "GlLedgerBalSegValueOptionCode",
+        "column": "BAL_SEG_VALUE_OPTION_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "GlLedgerBalSegValueSetId",
+        "column": "BAL_SEG_VALUE_SET_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "GlLedgerBudgetPeriodAvgRateType",
+        "column": "BUDGET_PERIOD_AVG_RATE_TYPE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "GlLedgerBudgetPeriodEndRateType",
+        "column": "BUDGET_PERIOD_END_RATE_TYPE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "GlLedgerCompleteFlag",
+        "column": "COMPLETE_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "GlLedgerCompletionStatusCode",
+        "column": "COMPLETION_STATUS_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "GlLedgerConfigurationId",
+        "column": "CONFIGURATION_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "GlLedgerConsolidationLedgerFlag",
+        "column": "CONSOLIDATION_LEDGER_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "GlLedgerCreateJeFlag",
+        "column": "CREATE_JE_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "GlLedgerCreatedBy",
+        "column": "CREATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "GlLedgerCreationDate",
+        "column": "CREATION_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "GlLedgerCriteriaSetId",
+        "column": "CRITERIA_SET_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "GlLedgerCumTransCodeCombinationId",
+        "column": "CUM_TRANS_CODE_COMBINATION_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "GlLedgerDailyTranslationRateType",
+        "column": "DAILY_TRANSLATION_RATE_TYPE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "GlLedgerDescription",
+        "column": "DESCRIPTION",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "GlLedgerEnableAutomaticTaxFlag",
+        "column": "ENABLE_AUTOMATIC_TAX_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "GlLedgerEnableAverageBalancesFlag",
+        "column": "ENABLE_AVERAGE_BALANCES_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "GlLedgerEnableBudgetaryControlFlag",
+        "column": "ENABLE_BUDGETARY_CONTROL_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "GlLedgerEnableJeApprovalFlag",
+        "column": "ENABLE_JE_APPROVAL_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "GlLedgerEnableReconciliationFlag",
+        "column": "ENABLE_RECONCILIATION_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "GlLedgerEnableRevalSsTrackFlag",
+        "column": "ENABLE_REVAL_SS_TRACK_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "GlLedgerEnableSecondaryTrackFlag",
+        "column": "ENABLE_SECONDARY_TRACK_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "GlLedgerEnfSeqDateCorrelationCode",
+        "column": "ENF_SEQ_DATE_CORRELATION_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "GlLedgerFirstLedgerPeriodName",
+        "column": "FIRST_LEDGER_PERIOD_NAME",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "GlLedgerFutureEnterablePeriodsLimit",
+        "column": "FUTURE_ENTERABLE_PERIODS_LIMIT",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "GlLedgerImplicitAccessSetId",
+        "column": "IMPLICIT_ACCESS_SET_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "GlLedgerImplicitLedgerSetId",
+        "column": "IMPLICIT_LEDGER_SET_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "GlLedgerIntercoGainLossCcid",
+        "column": "INTERCO_GAIN_LOSS_CCID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "GlLedgerJrnlsGroupByDateFlag",
+        "column": "JRNLS_GROUP_BY_DATE_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "GlLedgerLastUpdateLogin",
+        "column": "LAST_UPDATE_LOGIN",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "GlLedgerLatestEncumbranceYear",
+        "column": "LATEST_ENCUMBRANCE_YEAR",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "GlLedgerLatestOpenedPeriodName",
+        "column": "LATEST_OPENED_PERIOD_NAME",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "GlLedgerLeLedgerTypeCode",
+        "column": "LE_LEDGER_TYPE_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "GlLedgerLedgerAttributes",
+        "column": "LEDGER_ATTRIBUTES",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "GlLedgerLedgerId",
+        "column": "LEDGER_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "GlLedgerMgtSegColumnName",
+        "column": "MGT_SEG_COLUMN_NAME",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "GlLedgerMgtSegValueOptionCode",
+        "column": "MGT_SEG_VALUE_OPTION_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "GlLedgerMgtSegValueSetId",
+        "column": "MGT_SEG_VALUE_SET_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "GlLedgerName",
+        "column": "NAME",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "GlLedgerNetClosingBalFlag",
+        "column": "NET_CLOSING_BAL_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "GlLedgerNetIncomeCodeCombinationId",
+        "column": "NET_INCOME_CODE_COMBINATION_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "GlLedgerObjectTypeCode",
+        "column": "OBJECT_TYPE_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "GlLedgerObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "GlLedgerPeriodAverageRateType",
+        "column": "PERIOD_AVERAGE_RATE_TYPE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "GlLedgerPeriodEndRateType",
+        "column": "PERIOD_END_RATE_TYPE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "GlLedgerPeriodSetName",
+        "column": "PERIOD_SET_NAME",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "GlLedgerPopUpStatAccountFlag",
+        "column": "POP_UP_STAT_ACCOUNT_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "GlLedgerPriorPrdNotificationFlag",
+        "column": "PRIOR_PRD_NOTIFICATION_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "GlLedgerRequireBudgetJournalsFlag",
+        "column": "REQUIRE_BUDGET_JOURNALS_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "GlLedgerResEncumbCodeCombinationId",
+        "column": "RES_ENCUMB_CODE_COMBINATION_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "GlLedgerRetEarnCodeCombinationId",
+        "column": "RET_EARN_CODE_COMBINATION_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "GlLedgerRevalFromPriLgrCurr",
+        "column": "REVAL_FROM_PRI_LGR_CURR",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "GlLedgerRoundingCodeCombinationId",
+        "column": "ROUNDING_CODE_COMBINATION_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "GlLedgerSequencingModeCode",
+        "column": "SEQUENCING_MODE_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "GlLedgerShortName",
+        "column": "SHORT_NAME",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "GlLedgerSlaAccountingMethodCode",
+        "column": "SLA_ACCOUNTING_METHOD_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "GlLedgerSlaAccountingMethodType",
+        "column": "SLA_ACCOUNTING_METHOD_TYPE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "GlLedgerSlaBalByLedgerCurrFlag",
+        "column": "SLA_BAL_BY_LEDGER_CURR_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "GlLedgerSlaDescriptionLanguage",
+        "column": "SLA_DESCRIPTION_LANGUAGE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "GlLedgerSlaEnteredCurBalSusCcid",
+        "column": "SLA_ENTERED_CUR_BAL_SUS_CCID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "GlLedgerSlaLedgerCashBasisFlag",
+        "column": "SLA_LEDGER_CASH_BASIS_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "GlLedgerSlaLedgerCurBalSusCcid",
+        "column": "SLA_LEDGER_CUR_BAL_SUS_CCID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "GlLedgerSlaSequencingFlag",
+        "column": "SLA_SEQUENCING_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "GlLedgerSuspenseAllowedFlag",
+        "column": "SUSPENSE_ALLOWED_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "GlLedgerThresholdAmount",
+        "column": "THRESHOLD_AMOUNT",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "GlLedgerTrackRoundingImbalanceFlag",
+        "column": "TRACK_ROUNDING_IMBALANCE_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "GlLedgerTransactionCalendarId",
+        "column": "TRANSACTION_CALENDAR_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "GlLedgerTranslateEodFlag",
+        "column": "TRANSLATE_EOD_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "GlLedgerTranslateQatdFlag",
+        "column": "TRANSLATE_QATD_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "GlLedgerTranslateYatdFlag",
+        "column": "TRANSLATE_YATD_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "GlLedgerUssglOptionCode",
+        "column": "USSGL_OPTION_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "GlLedgerValidateJournalRefDate",
+        "column": "VALIDATE_JOURNAL_REF_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "LastUpdateDateSob",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "LastUpdatedBySob",
+        "column": "LAST_UPDATED_BY",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "LedgerCategoryCode",
+        "column": "LEDGER_CATEGORY_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "LedgerCurrencyCode",
+        "column": "CURRENCY_CODE",
+        "bicc": true,
+        "pk": false
+      }
+    ],
+    "GL_ENCUMBRANCE_TYPES_VL": [
+      {
+        "attribute": "EncumbranceType",
+        "column": "ENCUMBRANCE_TYPE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "JournalEncumbranceTypeEncumbranceTypeId",
+        "column": "ENCUMBRANCE_TYPE_ID",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "PER_USERS": [
+      {
+        "attribute": "LastUpdatedByUserCreatedBy",
+        "column": "CREATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "LastUpdatedByUserCreationDate",
+        "column": "CREATION_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "LastUpdatedByUserLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "LastUpdatedByUserLastUpdatedBy",
+        "column": "LAST_UPDATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "LastUpdatedByUserPersonId",
+        "column": "PERSON_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "LastUpdatedByUserUserId",
+        "column": "USER_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "LastUpdatedByUserUsername",
+        "column": "USERNAME",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "GL_LEDGER_SEGMENT_VALUES": [
+      {
+        "attribute": "LedgerSegValLedgerId",
+        "column": "LEDGER_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "LedgerSegValLegalEntityId",
+        "column": "LEGAL_ENTITY_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "LedgerSegValSegmentTypeCode",
+        "column": "SEGMENT_TYPE_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "LedgerSegValSegmentValue",
+        "column": "SEGMENT_VALUE",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "PER_PERSON_NAMES_F_V": [
+      {
+        "attribute": "PersonUpdatedByCreatedBy",
+        "column": "CREATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PersonUpdatedByCreationDate",
+        "column": "CREATION_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PersonUpdatedByDisplayName",
+        "column": "DISPLAY_NAME",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PersonUpdatedByEffectiveEndDate",
+        "column": "EFFECTIVE_END_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PersonUpdatedByEffectiveStartDate",
+        "column": "EFFECTIVE_START_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PersonUpdatedByLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PersonUpdatedByLastUpdatedBy",
+        "column": "LAST_UPDATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PersonUpdatedByPersonNameId",
+        "column": "PERSON_NAME_ID",
+        "bicc": false,
+        "pk": false
+      }
+    ]
+  }
+}

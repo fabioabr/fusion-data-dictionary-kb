@@ -1,0 +1,397 @@
+{
+  "source": "pon_auc_doctypes_vl.md",
+  "source_hash": "8b3e9ec9cbd49e8ee4ca89b1d7be2743",
+  "translated_at": "2026-03-26",
+  "items": [
+    {
+      "id": 1,
+      "br": "Visão Geral",
+      "en": "Overview",
+      "es": "Vision General"
+    },
+    {
+      "id": 2,
+      "br": "View MLS (Multi-Language Support) que combina os dados base da PON_AUC_DOCTYPES_B com as traduções da PON_AUC_DOCTYPES_TL no idioma da sessão do usuário. Fornece uma visão unificada dos tipos de documento de negociação com nomes e descrições traduzidos, sendo o ponto de acesso recomendado pela Oracle para consultas e relatórios.",
+      "en": "View MLS (Multi-Language Support) that combines the base data from PON_AUC_DOCTYPES_B with the translations from PON_AUC_DOCTYPES_TL in the user's session language. Provides a unified view of negotiation document types with translated names and descriptions, and is the recommended access point by Oracle for queries and reports.",
+      "es": "Ver la vista MLS (Soporte Multilingüe) que combina los datos base de PON_AUC_DOCTYPES_B con las traducciones de PON_AUC_DOCTYPES_TL en el idioma de la sesión del usuario. Proporciona una visión unificada de los tipos de documento de negociación con nombres y descripciones traducidas, siendo el punto de acceso recomendado por Oracle para consultas y generación de informes."
+    },
+    {
+      "id": 3,
+      "br": "Padrão Oracle MLS (_B/_TL/_VL)",
+      "en": "Oracle MLS Standard (_B/_TL/_VL)",
+      "es": "Estándar Oracle MLS (_B/_TL/_VL)"
+    },
+    {
+      "id": 4,
+      "br": "- _B — Dados base independentes de idioma → [[pon_auc_doctypes_b]]",
+      "en": "- _B — Independent language data → [[pon_auc_doctypes_b]]",
+      "es": "- _B — Datos base independientes del idioma → [[pon_auc_doctypes_b]]"
+    },
+    {
+      "id": 5,
+      "br": "- _TL — Traduções por idioma → [[pon_auc_doctypes_tl]]",
+      "en": "- _TL — Translations by language → [[pon_auc_doctypes_tl]]",
+      "es": "- _TL — Traducciones por idioma → [[pon_auc_doctypes_tl]]"
+    },
+    {
+      "id": 6,
+      "br": "- _VL — View combinada (esta view)",
+      "en": "- _VL — Combined view (this view)",
+      "es": "- _VL — Vista combinada (esta vista)"
+    },
+    {
+      "id": 7,
+      "br": "Propósito de Negócio",
+      "en": "Business Purpose",
+      "es": "Proposito de Negocio"
+    },
+    {
+      "id": 8,
+      "br": "Esta view é utilizada nos seguintes processos:",
+      "en": "This view is used in the following processes:",
+      "es": "Esta vista se utiliza en los siguientes procesos:"
+    },
+    {
+      "id": 9,
+      "br": "Ponto de acesso padrão para exibir tipos de documento na interface do Sourcing.",
+      "en": "Standard access point for displaying document types in the Sourcing interface.",
+      "es": "Punto de acceso estándar para mostrar tipos de documento en la interfaz de Sourcing."
+    },
+    {
+      "id": 10,
+      "br": "Fonte recomendada para relatórios que precisam de nomes traduzidos.",
+      "en": "Recommended source for reports that require translated names.",
+      "es": "Fuente recomendada para informes que necesitan nombres traducidos."
+    },
+    {
+      "id": 11,
+      "br": "Popula listas de seleção de tipo de negociação para o usuário.",
+      "en": "Populates negotiation type selection lists for the user.",
+      "es": "Popula listas de selección de tipo de negociación para el usuario."
+    },
+    {
+      "id": 12,
+      "br": "Consumida por web services e APIs que retornam dados localizados.",
+      "en": "Consumed by web services and APIs that return localized data.",
+      "es": "Consumida por servicios web y APIs que devuelven datos localizados."
+    },
+    {
+      "id": 13,
+      "br": "Combina configuração (regras) + apresentação (nomes traduzidos) em uma única fonte.",
+      "en": "Combines configuration (rules) + presentation (translated names) in a single source.",
+      "es": "Combina la configuración (reglas) + la presentación (nombres traducidos) en una única fuente."
+    },
+    {
+      "id": 14,
+      "br": "Colunas Principais",
+      "en": "Key Columns",
+      "es": "Columnas Principales"
+    },
+    {
+      "id": 15,
+      "br": "Confiança",
+      "en": "Confidence",
+      "es": "Confianza"
+    },
+    {
+      "id": 16,
+      "br": "Escala de 0% a 100% — grau de certeza da descrição gerada por IA com base na documentação oficial Oracle (OEDMF/BICC Release 13/25A).",
+      "en": "Scale from 0% to 100% — degree of certainty of the AI-generated description based on official Oracle documentation (OEDMF/BICC Release 13/25A).",
+      "es": "Escala de 0% a 100% — grado de certeza de la descripcion generada por IA basada en la documentacion oficial de Oracle (OEDMF/BICC Release 13/25A)."
+    },
+    {
+      "id": 17,
+      "br": "- 🟢 81–100% — Coluna presente na documentação oficial Oracle; nome, tipo e descrição confirmados.",
+      "en": "- 🟢 81–100% — Column present in official Oracle documentation; name, type, and description confirmed.",
+      "es": "- 🟢 81–100% — Columna presente en la documentacion oficial de Oracle; nombre, tipo y descripcion confirmados."
+    },
+    {
+      "id": 18,
+      "br": "- 🟡 51–80% — Coluna inferida por naming convention ou padrão Oracle; tipo exato pode variar.",
+      "en": "- 🟡 51–80% — Column inferred by naming convention or Oracle standard; exact type may vary.",
+      "es": "- 🟡 51–80% — Columna inferida por convencion de nombres o estandar Oracle; el tipo exacto puede variar."
+    },
+    {
+      "id": 19,
+      "br": "- 🔴 0–50% — Existência ou tipo incertos; pode não existir no release atual; validar no ambiente.",
+      "en": "- 🔴 0–50% — Uncertain existence or type; may not exist in current release; validate in environment.",
+      "es": "- 🔴 0–50% — Existencia o tipo inciertos; puede no existir en el release actual; validar en el ambiente."
+    },
+    {
+      "id": 20,
+      "br": "Coluna",
+      "en": "Column",
+      "es": "Columna"
+    },
+    {
+      "id": 21,
+      "br": "Tipo",
+      "en": "Type",
+      "es": "Tipo"
+    },
+    {
+      "id": 22,
+      "br": "Nulo?",
+      "en": "Nullable?",
+      "es": "Nulo?"
+    },
+    {
+      "id": 23,
+      "br": "Categoria",
+      "en": "Category",
+      "es": "Categoria"
+    },
+    {
+      "id": 24,
+      "br": "Descrição",
+      "en": "Description",
+      "es": "Descripcion"
+    },
+    {
+      "id": 25,
+      "br": "Identificador único do tipo de documento",
+      "en": "Unique document type identifier",
+      "es": "Identificador único del tipo de documento"
+    },
+    {
+      "id": 26,
+      "br": "Classificação",
+      "en": "Classification",
+      "es": "Clasificacion"
+    },
+    {
+      "id": 27,
+      "br": "Grupo funcional: AUCTION, RFQ, RFI, BUYER_AUCTION (da _B)",
+      "en": "Functional group: AUCTION, RFQ, RFI, BUYER_AUCTION (from _B)",
+      "es": "Grupo funcional: AUCTION, RFQ, RFI, BUYER_AUCTION (de _B)"
+    },
+    {
+      "id": 28,
+      "br": "Tipo de transação (da _B)",
+      "en": "Transaction type (from _B)",
+      "es": "Tipo de transacción (de _B)"
+    },
+    {
+      "id": 29,
+      "br": "Resultado esperado: STANDARD_PO, BLANKET, CONTRACT, NONE (da _B)",
+      "en": "Expected result: STANDARD_PO, BLANKET, CONTRACT, NONE (from _B)",
+      "es": "Resultado esperado: STANDARD_PO, BLANKET, CONTRACT, NONE (de _B)"
+    },
+    {
+      "id": 30,
+      "br": "Direção do lance (da _B)",
+      "en": "Bid direction (from _B)",
+      "es": "Dirección de la oferta (de _B)"
+    },
+    {
+      "id": 31,
+      "br": "Identificação",
+      "en": "Identification",
+      "es": "Identificacion"
+    },
+    {
+      "id": 32,
+      "br": "Nome interno não traduzível (da _B)",
+      "en": "Non-translatable internal name (from _B)",
+      "es": "Nombre interno no traducible (de _B)"
+    },
+    {
+      "id": 33,
+      "br": "Flag",
+      "en": "Flag",
+      "es": "Flag"
+    },
+    {
+      "id": 34,
+      "br": "Tipo ativo (da _B)",
+      "en": "Active type (from _B)",
+      "es": "Tipo activo (de _B)"
+    },
+    {
+      "id": 35,
+      "br": "Nome traduzido do tipo de documento (da _TL)",
+      "en": "Translated document type name (from _TL)",
+      "es": "Nombre traducido del tipo de documento (de _TL)"
+    },
+    {
+      "id": 36,
+      "br": "Texto livre",
+      "en": "Free Text",
+      "es": "Texto libre"
+    },
+    {
+      "id": 37,
+      "br": "Descrição traduzida (da _TL)",
+      "en": "Translated description (from _TL)",
+      "es": "Descripción traducida (de _TL)"
+    },
+    {
+      "id": 38,
+      "br": "Permite scoring (da _B)",
+      "en": "Allows scoring (from _B)",
+      "es": "Permite la calificación (de _B)"
+    },
+    {
+      "id": 39,
+      "br": "Regras",
+      "en": "Rules",
+      "es": "Reglas"
+    },
+    {
+      "id": 40,
+      "br": "Critério de ranking (da _B)",
+      "en": "Ranking criterion (from _B)",
+      "es": "Criterio de clasificación (de _B)"
+    },
+    {
+      "id": 41,
+      "br": "Visibilidade de preços (da _B)",
+      "en": "Price visibility (from _B)",
+      "es": "Visibilidad de precios (de _B)"
+    },
+    {
+      "id": 42,
+      "br": "Relacionamentos",
+      "en": "Relationships",
+      "es": "Relaciones"
+    },
+    {
+      "id": 43,
+      "br": "Tabelas-pai (FK de entrada)",
+      "en": "Parent Tables (inbound FK)",
+      "es": "Tablas padre (FK de entrada)"
+    },
+    {
+      "id": 44,
+      "br": "pon_auc_doctypes_b — dados base (colunas de configuração/regras)",
+      "en": "pon_auc_doctypes_b — base data (configuration/rules columns)",
+      "es": "pon_auc_doctypes_b — datos base (columnas de configuración/reglas)"
+    },
+    {
+      "id": 45,
+      "br": "pon_auc_doctypes_tl — traduções (colunas de nome/descrição)",
+      "en": "pon_auc_doctypes_tl — translations (name/description columns)",
+      "es": "pon_auc_doctypes_tl — traducciones (columnas de nombre/descripción)"
+    },
+    {
+      "id": 46,
+      "br": "Tabelas-filha (FK de saída)",
+      "en": "Child Tables (outbound FK)",
+      "es": "Tablas hija (FK de salida)"
+    },
+    {
+      "id": 47,
+      "br": "negociações que referenciam este tipo",
+      "en": "Negotiations that reference this type",
+      "es": "negociaciones que hacen referencia a este tipo"
+    },
+    {
+      "id": 48,
+      "br": "Uso Típico",
+      "en": "Typical Usage",
+      "es": "Uso Tipico"
+    },
+    {
+      "id": 49,
+      "br": "Lista de tipos de documento ativos (traduzidos)",
+      "en": "List of active document types (translated)",
+      "es": "Lista de tipos de documento activos (traducidos)"
+    },
+    {
+      "id": 50,
+      "br": "Tipo de documento de uma negociação específica",
+      "en": "Document type for a specific transaction",
+      "es": "Tipo de documento de una negociación específica"
+    },
+    {
+      "id": 51,
+      "br": "Filtros comuns",
+      "en": "Common Filters",
+      "es": "Filtros comunes"
+    },
+    {
+      "id": 52,
+      "br": "Tipos ativos",
+      "en": "Active types",
+      "es": "Tipos activos"
+    },
+    {
+      "id": 53,
+      "br": "Solicitações de cotação",
+      "en": "Quotation requests",
+      "es": "Solicitudes de cotización"
+    },
+    {
+      "id": 54,
+      "br": "Tipos que geram acordo-quadro",
+      "en": "Types that generate master agreement",
+      "es": "Tipos que generan acuerdos marco"
+    },
+    {
+      "id": 55,
+      "br": "Idioma é filtrado automaticamente pela view (USERENV)",
+      "en": "Language is automatically filtered by the view (USERENV)",
+      "es": "El idioma se filtra automáticamente por la vista (USERENV)"
+    },
+    {
+      "id": 56,
+      "br": "Observações",
+      "en": "Notes",
+      "es": "Observaciones"
+    },
+    {
+      "id": 57,
+      "br": "Esta é uma view, não uma tabela física — não possui storage próprio.",
+      "en": "This is a view, not a physical table — it does not have its own storage.",
+      "es": "Esta es una vista, no una tabla física — no tiene almacenamiento propio."
+    },
+    {
+      "id": 58,
+      "br": "A view filtra automaticamente pelo idioma da sessão (USERENV('LANG')), retornando apenas as traduções relevantes.",
+      "en": "The view automatically filters by the session language (USERENV('LANG')), returning only the relevant translations.",
+      "es": "La vista filtra automáticamente por el idioma de la sesión (USERENV('LANG')), devolviendo solo las traducciones relevantes."
+    },
+    {
+      "id": 59,
+      "br": "Para consultas em idioma específico diferente da sessão, é necessário consultar diretamente _B + _TL.",
+      "en": "For queries in a specific language different from the session, it is necessary to query directly _B + _TL.",
+      "es": "Para consultas en un idioma específico diferente al de la sesión, es necesario consultar directamente _B + _TL."
+    },
+    {
+      "id": 60,
+      "br": "Em relatórios OTBI/BI Publisher, a Oracle recomenda uso da _VL ao invés de joins manuais entre _B e _TL.",
+      "en": "In OTBI/BI Publisher reports, Oracle recommends using _VL instead of manual joins between _B and _TL.",
+      "es": "En los informes OTBI/BI Publisher, Oracle recomienda el uso de _VL en lugar de uniones manuales entre _B y _TL."
+    },
+    {
+      "id": 61,
+      "br": "A view herda todas as colunas da _B e adiciona DOCTYPE_NAME e DESCRIPTION da _TL.",
+      "en": "The view inherits all columns from _B and adds DOCTYPE_NAME and DESCRIPTION from _TL.",
+      "es": "La vista hereda todas las columnas de _B y añade DOCTYPE_NAME y DESCRIPTION de _TL."
+    },
+    {
+      "id": 62,
+      "br": "Para migração/ETL, recomenda-se extrair a _B e _TL separadamente, já que a _VL depende do contexto de sessão.",
+      "en": "For migration/ETL, it is recommended to extract _B and _TL separately, as _VL depends on the session context.",
+      "es": "Para la migración/ETL, se recomienda extraer _B y _TL por separado, ya que _VL depende del contexto de la sesión."
+    },
+    {
+      "id": 63,
+      "br": "Referências",
+      "en": "References",
+      "es": "Referencias"
+    },
+    {
+      "id": 64,
+      "br": "[Oracle Docs — PON_AUC_DOCTYPES_VL](https://docs.oracle.com/en/cloud/saas/procurement/25a/oedmf/ponaucdoctypesvl.html)",
+      "en": "[Oracle Docs — PON_AUC_DOCTYPES_VL](https://docs.oracle.com/en/cloud/saas/procurement/25a/oedmf/ponaucdoctypesvl.html)",
+      "es": "[Oracle Docs — PON_AUC_DOCTYPES_VL](https://docs.oracle.com/en/cloud/saas/procurement/25a/oedmf/ponaucdoctypesvl.html)"
+    },
+    {
+      "id": 65,
+      "br": "po-module-data-dictionary — Dossiê do módulo PO/Procurement",
+      "en": "po-module-data-dictionary — PO/Procurement module dossier",
+      "es": "po-module-data-dictionary — Dossier del modulo PO/Procurement"
+    }
+  ]
+}

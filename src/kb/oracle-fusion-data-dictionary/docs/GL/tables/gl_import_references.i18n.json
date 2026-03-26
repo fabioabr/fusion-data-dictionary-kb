@@ -1,0 +1,433 @@
+{
+  "source": "gl_import_references.md",
+  "source_hash": "69cd412dee08a9971b87d09b01653a7f",
+  "translated_at": "2026-03-25",
+  "items": [
+    {
+      "id": 1,
+      "br": "Visão Geral",
+      "en": "Overview",
+      "es": "Visión general"
+    },
+    {
+      "id": 2,
+      "br": "Armazena as referências de importação que vinculam linhas de lançamentos contábeis (journal lines) aos registros de origem nos subledgers (AP, AR, FA, etc.). Cada registro representa o link de rastreabilidade entre uma linha do GL e a transação original que a gerou, permitindo drill-down do General Ledger para o subledger de origem.",
+      "en": "Stores the import references that link accounting journal lines to the source records in the subledgers (AP, AR, FA, etc.). Each record represents the traceability link between a GL line and the original transaction that generated it, allowing drill-down from the General Ledger to the source subledger.",
+      "es": "Almacena las referencias de importación que vinculan las líneas de asiento contable (journal lines) a los registros de origen en los subregistros (AP, AR, FA, etc.). Cada registro representa el enlace de trazabilidad entre una línea del GL y la transacción original que la generó, permitiendo acceder a la información del General Ledger desde el subregistro de origen."
+    },
+    {
+      "id": 3,
+      "br": "Rastreabilidade Subledger → GL",
+      "en": "Subledger → GL Traceability",
+      "es": "Trazabilidad Subregistro → GL"
+    },
+    {
+      "id": 4,
+      "br": "Esta tabela é a ponte de auditoria entre o subledger e o GL. Sem ela, não é possível rastrear a origem de um lançamento contábil até a transação original (fatura, pagamento, depreciação, etc.).",
+      "en": "This table is the audit bridge between the subledger and the GL. Without it, it is not possible to trace the origin of an accounting entry back to the original transaction (invoice, payment, depreciation, etc.).",
+      "es": "Esta tabla es el puente de auditoría entre el subregistro y el GL. Sin ella, no es posible rastrear el origen de un asiento contable hasta la transacción original (factura, pago, depreciación, etc.)."
+    },
+    {
+      "id": 5,
+      "br": "Propósito de Negócio",
+      "en": "Business Purpose",
+      "es": "Propósito de negocio"
+    },
+    {
+      "id": 6,
+      "br": "Esta tabela é utilizada nos seguintes processos:",
+      "en": "This table is used in the following processes:",
+      "es": "Esta tabla se utiliza en los siguientes procesos:"
+    },
+    {
+      "id": 7,
+      "br": "Navegar de um lançamento no GL até a transação de origem no subledger.",
+      "en": "Navigating from a GL entry to the source transaction in the subledger.",
+      "es": "Navegar de un asiento en el GL hasta la transacción de origen en el subregistro."
+    },
+    {
+      "id": 8,
+      "br": "Verificar que todos os lançamentos importados têm referência cruzada válida.",
+      "en": "Verifying that all imported entries have a valid cross-reference.",
+      "es": "Verificar que todos los asientos importados tienen una referencia cruzada válida."
+    },
+    {
+      "id": 9,
+      "br": "Rastreamento completo da origem de cada valor contabilizado.",
+      "en": "Complete traceability of the origin of each recorded value.",
+      "es": "Trazabilidad completa del origen de cada valor contabilizado."
+    },
+    {
+      "id": 10,
+      "br": "Identificar quais processos de importação geraram determinados lançamentos.",
+      "en": "Identifying which import processes generated specific entries.",
+      "es": "Identificar qué procesos de importación generaron determinados asientos."
+    },
+    {
+      "id": 11,
+      "br": "Diagnosticar discrepâncias entre saldos do GL e dos subledgers.",
+      "en": "Diagnosing discrepancies between GL and subledger balances.",
+      "es": "Diagnosticar discrepancias entre saldos del GL y de los subregistros."
+    },
+    {
+      "id": 12,
+      "br": "Colunas Principais",
+      "en": "Key Columns",
+      "es": "Columnas principales"
+    },
+    {
+      "id": 13,
+      "br": "Confiança",
+      "en": "Confidence",
+      "es": "Confianza"
+    },
+    {
+      "id": 14,
+      "br": "Escala de 0% a 100% — grau de certeza da descrição gerada por IA com base na documentação oficial Oracle (OEDMF/BICC Release 13/25A).",
+      "en": "Scale of 0% to 100% — degree of certainty of the AI-generated description based on Oracle official documentation (OEDMF/BICC Release 13/25A).",
+      "es": "Escala del 0% al 100% — grado de certeza de la descripción generada por IA, basado en la documentación oficial de Oracle (OEDMF/BICC Release 13/25A)."
+    },
+    {
+      "id": 15,
+      "br": "- 🟢 81–100% — Coluna presente na documentação oficial Oracle; nome, tipo e descrição confirmados.",
+      "en": "- 🟢 81–100% — Column present in Oracle official documentation; name, type, and description confirmed.",
+      "es": "- 🟢 81–100% — Columna presente en la documentación oficial de Oracle; nombre, tipo y descripción confirmados."
+    },
+    {
+      "id": 16,
+      "br": "- 🟡 51–80% — Coluna inferida por naming convention ou padrão Oracle; tipo exato pode variar.",
+      "en": "- 🟡 51–80% — Column inferred by naming convention or Oracle standard; exact type may vary.",
+      "es": "- 🟡 51–80% — Columna inferida por convención de nomenclatura o estándar de Oracle; el tipo exacto puede variar."
+    },
+    {
+      "id": 17,
+      "br": "- 🔴 0–50% — Existência ou tipo incertos; pode não existir no release atual; validar no ambiente.",
+      "en": "- 🔴 0–50% — Existence or type uncertain; may not exist in the current release; validate in the environment.",
+      "es": "- 🔴 0–50% — Existencia o tipo inciertos; puede no existir en la versión actual; validar en el entorno."
+    },
+    {
+      "id": 18,
+      "br": "Coluna",
+      "en": "Column",
+      "es": "Columna"
+    },
+    {
+      "id": 19,
+      "br": "Tipo",
+      "en": "Type",
+      "es": "Tipo"
+    },
+    {
+      "id": 20,
+      "br": "Nulo?",
+      "en": "Null?",
+      "es": "¿Nulo?"
+    },
+    {
+      "id": 21,
+      "br": "Categoria",
+      "en": "Category",
+      "es": "Categoría"
+    },
+    {
+      "id": 22,
+      "br": "Descrição",
+      "en": "Description",
+      "es": "Descripción"
+    },
+    {
+      "id": 23,
+      "br": "Identificador único do link subledger-GL",
+      "en": "Unique subledger-GL link identifier",
+      "es": "Identificador único del enlace subregistro-GL"
+    },
+    {
+      "id": 24,
+      "br": "ID do cabeçalho do lançamento contábil",
+      "en": "Accounting journal entry header ID",
+      "es": "ID del encabezado del asiento contable"
+    },
+    {
+      "id": 25,
+      "br": "Número da linha do lançamento",
+      "en": "Line number",
+      "es": "Número de línea del asiento"
+    },
+    {
+      "id": 26,
+      "br": "ID do lote de lançamento",
+      "en": "Batch ID",
+      "es": "ID del lote de registro"
+    },
+    {
+      "id": 27,
+      "br": "Classificação",
+      "en": "Classification",
+      "es": "Clasificación"
+    },
+    {
+      "id": 28,
+      "br": "Tabela de origem do subledger (ex: AP_INVOICE_DISTRIBUTIONS_ALL)",
+      "en": "Subledger source table (e.g., AP_INVOICE_DISTRIBUTIONS_ALL)",
+      "es": "Tabla de origen del subregistro (ej: AP_INVOICE_DISTRIBUTIONS_ALL)"
+    },
+    {
+      "id": 29,
+      "br": "Referência",
+      "en": "Reference",
+      "es": "Referencia"
+    },
+    {
+      "id": 30,
+      "br": "Referência 1 — tipicamente batch_name ou source_name",
+      "en": "Reference 1 — typically batch_name or source_name",
+      "es": "Referencia 1 — típicamente batch_name o source_name"
+    },
+    {
+      "id": 31,
+      "br": "Referência 2 — tipicamente batch_id do subledger",
+      "en": "Reference 2 — typically subledger batch_id",
+      "es": "Referencia 2 — típicamente batch_id del subregistro"
+    },
+    {
+      "id": 32,
+      "br": "Referência 3 — tipicamente header_id do subledger",
+      "en": "Reference 3 — typically subledger header_id",
+      "es": "Referencia 3 — típicamente header_id del subregistro"
+    },
+    {
+      "id": 33,
+      "br": "Referência 4 — tipicamente distribution_id ou line_id",
+      "en": "Reference 4 — typically distribution_id or line_id",
+      "es": "Referencia 4 — típicamente distribution_id o line_id"
+    },
+    {
+      "id": 34,
+      "br": "Referência 5 — informação adicional variável por subledger",
+      "en": "Reference 5 — variable additional information per subledger",
+      "es": "Referencia 5 — información adicional variable por subregistro"
+    },
+    {
+      "id": 35,
+      "br": "Referência 6 — informação adicional",
+      "en": "Reference 6 — additional information",
+      "es": "Referencia 6 — información adicional"
+    },
+    {
+      "id": 36,
+      "br": "Referência 7 — informação adicional",
+      "en": "Reference 7 — additional information",
+      "es": "Referencia 7 — información adicional"
+    },
+    {
+      "id": 37,
+      "br": "Referência 8 — informação adicional",
+      "en": "Reference 8 — additional information",
+      "es": "Referencia 8 — información adicional"
+    },
+    {
+      "id": 38,
+      "br": "Referência 9 — informação adicional",
+      "en": "Reference 9 — additional information",
+      "es": "Referencia 9 — información adicional"
+    },
+    {
+      "id": 39,
+      "br": "Referência 10 — informação adicional",
+      "en": "Reference 10 — additional information",
+      "es": "Referencia 10 — información adicional"
+    },
+    {
+      "id": 40,
+      "br": "Referência cruzada",
+      "en": "Cross-reference",
+      "es": "Referencia cruzada"
+    },
+    {
+      "id": 41,
+      "br": "ID da transação de origem no subledger",
+      "en": "Source transaction ID in the subledger",
+      "es": "ID de la transacción de origen en el subregistro"
+    },
+    {
+      "id": 42,
+      "br": "Tipo da transação de origem",
+      "en": "Source transaction type",
+      "es": "Tipo de transacción de origen"
+    },
+    {
+      "id": 43,
+      "br": "ID da distribuição de origem no subledger",
+      "en": "Source distribution ID in the subledger",
+      "es": "ID de la distribución de origen en el subregistro"
+    },
+    {
+      "id": 44,
+      "br": "Auditoria",
+      "en": "Audit",
+      "es": "Auditoría"
+    },
+    {
+      "id": 45,
+      "br": "Usuário que criou o registro",
+      "en": "User who created the record",
+      "es": "Usuario que creó el registro"
+    },
+    {
+      "id": 46,
+      "br": "Data/hora de criação",
+      "en": "Creation date/time",
+      "es": "Fecha/hora de creación"
+    },
+    {
+      "id": 47,
+      "br": "Último usuário que alterou",
+      "en": "Last user who modified",
+      "es": "Último usuario que modificó"
+    },
+    {
+      "id": 48,
+      "br": "Data/hora da última alteração",
+      "en": "Last modification date/time",
+      "es": "Fecha/hora de la última modificación"
+    },
+    {
+      "id": 49,
+      "br": "Relacionamentos",
+      "en": "Relationships",
+      "es": "Relaciones"
+    },
+    {
+      "id": 50,
+      "br": "Tabelas-pai (FK de entrada)",
+      "en": "Parent tables (FK entry)",
+      "es": "Tablas padre (clave foránea de entrada)"
+    },
+    {
+      "id": 51,
+      "br": "cabeçalho do lançamento",
+      "en": "Transaction header",
+      "es": "encabezado del asiento"
+    },
+    {
+      "id": 52,
+      "br": "gl_je_lines — via JE_HEADER_ID + JE_LINE_NUM (linha do lançamento)",
+      "en": "gl_je_lines — via JE_HEADER_ID + JE_LINE_NUM (transaction line)",
+      "es": "gl_je_lines — a través de JE_HEADER_ID + JE_LINE_NUM (línea del asiento)"
+    },
+    {
+      "id": 53,
+      "br": "lote de lançamento",
+      "en": "Transaction batch",
+      "es": "lote de asientos"
+    },
+    {
+      "id": 54,
+      "br": "Tabelas-filha (FK de saída)",
+      "en": "Child tables (outgoing FK)",
+      "es": "Tablas secundarias (clave foránea de salida)"
+    },
+    {
+      "id": 55,
+      "br": "Nenhuma FK direta — os campos REFERENCE_N apontam para tabelas dos subledgers de origem (AP, AR, FA, etc.).",
+      "en": "No direct FK — REFERENCE_N fields point to tables of source subledgers (AP, AR, FA, etc.)",
+      "es": "Ninguna clave foránea directa — los campos REFERENCE_N apuntan a tablas de las subcuentas de origen (AP, AR, FA, etc.)."
+    },
+    {
+      "id": 56,
+      "br": "Uso Típico",
+      "en": "Typical Use",
+      "es": "Uso típico"
+    },
+    {
+      "id": 57,
+      "br": "Drill-down: GL → Subledger (origem do lançamento)",
+      "en": "Drill-down: GL → Subledger (source of the transaction)",
+      "es": "Desglose: GL → Subcuenta (origen del asiento)"
+    },
+    {
+      "id": 58,
+      "br": "Lançamentos originados de um subledger específico",
+      "en": "Transactions originating from a specific subledger",
+      "es": "Asientos originados de una subcuenta específica"
+    },
+    {
+      "id": 59,
+      "br": "Filtros comuns",
+      "en": "Common filters",
+      "es": "Filtros comunes"
+    },
+    {
+      "id": 60,
+      "br": "Origem: faturas AP",
+      "en": "Source: AP invoices",
+      "es": "Origen: facturas AP"
+    },
+    {
+      "id": 61,
+      "br": "Origem: transações AR",
+      "en": "Source: AR transactions",
+      "es": "Origen: transacciones AR"
+    },
+    {
+      "id": 62,
+      "br": "Origem: ativos fixos",
+      "en": "Source: fixed assets",
+      "es": "Origen: activos fijos"
+    },
+    {
+      "id": 63,
+      "br": "Observações",
+      "en": "Notes",
+      "es": "Observaciones"
+    },
+    {
+      "id": 64,
+      "br": "Os campos REFERENCE_1 a REFERENCE_10 têm significado variável conforme o subledger de origem. Consultar a documentação do subledger específico para interpretação.",
+      "en": "REFERENCE_1 to REFERENCE_10 fields have variable meaning depending on the source subledger. Refer to the specific subledger documentation for interpretation.",
+      "es": "Los campos REFERENCE_1 a REFERENCE_10 tienen un significado variable según la subcuenta de origen. Consultar la documentación de la subcuenta específica para la interpretación."
+    },
+    {
+      "id": 65,
+      "br": "GL_SL_LINK_TABLE indica a tabela do subledger que originou o lançamento — essencial para saber como interpretar os campos REFERENCE.",
+      "en": "GL_SL_LINK_TABLE indicates the subledger table that originated the transaction — essential for understanding the REFERENCE fields.",
+      "es": "gl_sl_link_table indica la tabla de la subcuenta que originó el asiento — esencial para saber cómo interpretar los campos REFERENCE."
+    },
+    {
+      "id": 66,
+      "br": "Esta tabela pode ser volumosa em ambientes com alto volume de transações.",
+      "en": "This table can be large in environments with high transaction volumes.",
+      "es": "Esta tabla puede ser voluminosa en entornos con alto volumen de transacciones."
+    },
+    {
+      "id": 67,
+      "br": "Lançamentos manuais (não importados) podem não ter registros nesta tabela.",
+      "en": "Manual transactions (not imported) may not have records in this table.",
+      "es": "Los asientos manuales (no importados) pueden no tener registros en esta tabla."
+    },
+    {
+      "id": 68,
+      "br": "No Oracle Fusion Cloud, o Subledger Accounting (SLA/XLA) gerencia a criação destes registros automaticamente.",
+      "en": "In Oracle Fusion Cloud, Subledger Accounting (SLA/XLA) automatically manages the creation of these records.",
+      "es": "En Oracle Fusion Cloud, el Subledger Accounting (SLA/XLA) gestiona la creación de estos registros automáticamente."
+    },
+    {
+      "id": 69,
+      "br": "Referências",
+      "en": "References",
+      "es": "Referencias"
+    },
+    {
+      "id": 70,
+      "br": "[Oracle Docs — GL_IMPORT_REFERENCES](https://docs.oracle.com/en/cloud/saas/financials/25a/oedmf/glimportreferences-25780.html)",
+      "en": "[Oracle Docs — GL_IMPORT_REFERENCES](https://docs.oracle.com/en/cloud/saas/financials/25a/oedmf/glimportreferences-25780.html)",
+      "es": "[Oracle Docs — GL_IMPORT_REFERENCES](https://docs.oracle.com/en/cloud/saas/financials/25a/oedmf/glimportreferences-25780.html)"
+    },
+    {
+      "id": 71,
+      "br": "gl-module-data-dictionary — Dossiê do módulo GL",
+      "en": "gl-module-data-dictionary — GL module directory",
+      "es": "gl-module-data-dictionary — Directorio del módulo GL"
+    }
+  ]
+}

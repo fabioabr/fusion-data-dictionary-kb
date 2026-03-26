@@ -1,0 +1,654 @@
+{
+  "meta": {
+    "pvo_name": "CampGoalPVO",
+    "full_path": "HcmTopModelAnalyticsGlobalAM.HcmRecCampaignsAM.CampGoalPVO",
+    "module_path": "HcmTopModelAnalyticsGlobalAM.HcmRecCampaignsAM",
+    "module_code": "HCM",
+    "type": "pvo",
+    "description": "Define metas de campanhas de recrutamento com tipo, respostas e flag de meta primaria. Suporta planejamento e medicao de resultados de campanhas."
+  },
+  "stats": {
+    "total_attributes": 44,
+    "tables_count": 5,
+    "bicc_enabled": 14,
+    "bicc_pct": 32,
+    "pk_count": 1
+  },
+  "tables": [
+    "IRC_CAMPAIGNS_B",
+    "IRC_CAMP_GOALS_B",
+    "IRC_CAMP_GOALS_TL",
+    "IRC_CAMP_GOAL_RESP_B",
+    "IRC_CAMP_GOAL_RESP_TL"
+  ],
+  "attributes": [
+    {
+      "name": "CampGoalBPEOCampaignId",
+      "table": "IRC_CAMP_GOALS_B",
+      "column": "CAMPAIGN_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CampGoalBPEOCreatedBy",
+      "table": "IRC_CAMP_GOALS_B",
+      "column": "CREATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CampGoalBPEOCreationDate",
+      "table": "IRC_CAMP_GOALS_B",
+      "column": "CREATION_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CampGoalBPEOGoalTypeCode",
+      "table": "IRC_CAMP_GOALS_B",
+      "column": "GOAL_TYPE_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CampGoalBPEOLastUpdateDate",
+      "table": "IRC_CAMP_GOALS_B",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": true
+    },
+    {
+      "name": "CampGoalBPEOLastUpdateLogin",
+      "table": "IRC_CAMP_GOALS_B",
+      "column": "LAST_UPDATE_LOGIN",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CampGoalBPEOLastUpdatedBy",
+      "table": "IRC_CAMP_GOALS_B",
+      "column": "LAST_UPDATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CampGoalBPEOObjectVersionNumber",
+      "table": "IRC_CAMP_GOALS_B",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CampGoalBPEOPrimaryGoalFlag",
+      "table": "IRC_CAMP_GOALS_B",
+      "column": "PRIMARY_GOAL_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CampGoalBPEOSystemGoalFlag",
+      "table": "IRC_CAMP_GOALS_B",
+      "column": "SYSTEM_GOAL_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CampGoalRespBPEOCreatedBy1",
+      "table": "IRC_CAMP_GOAL_RESP_B",
+      "column": "CREATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CampGoalRespBPEOCreationDate1",
+      "table": "IRC_CAMP_GOAL_RESP_B",
+      "column": "CREATION_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CampGoalRespBPEODestinationUrl",
+      "table": "IRC_CAMP_GOAL_RESP_B",
+      "column": "DESTINATION_URL",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CampGoalRespBPEOGoalId",
+      "table": "IRC_CAMP_GOAL_RESP_B",
+      "column": "GOAL_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CampGoalRespBPEOGoalResponseId",
+      "table": "IRC_CAMP_GOAL_RESP_B",
+      "column": "GOAL_RESPONSE_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CampGoalRespBPEOIncludeInTargetFlag",
+      "table": "IRC_CAMP_GOAL_RESP_B",
+      "column": "INCLUDE_IN_TARGET_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CampGoalRespBPEOLastUpdateDate1",
+      "table": "IRC_CAMP_GOAL_RESP_B",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": true
+    },
+    {
+      "name": "CampGoalRespBPEOLastUpdateLogin1",
+      "table": "IRC_CAMP_GOAL_RESP_B",
+      "column": "LAST_UPDATE_LOGIN",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CampGoalRespBPEOLastUpdatedBy1",
+      "table": "IRC_CAMP_GOAL_RESP_B",
+      "column": "LAST_UPDATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CampGoalRespBPEOObjectVersionNumber1",
+      "table": "IRC_CAMP_GOAL_RESP_B",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CampGoalRespBPEOUseDefaultUrlFlag",
+      "table": "IRC_CAMP_GOAL_RESP_B",
+      "column": "USE_DEFAULT_URL_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CampGoalRespTranslationPEOCreatedBy2",
+      "table": "IRC_CAMP_GOAL_RESP_TL",
+      "column": "CREATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CampGoalRespTranslationPEOCreationDate2",
+      "table": "IRC_CAMP_GOAL_RESP_TL",
+      "column": "CREATION_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CampGoalRespTranslationPEOGoalResponseId1",
+      "table": "IRC_CAMP_GOAL_RESP_TL",
+      "column": "GOAL_RESPONSE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CampGoalRespTranslationPEOLanguage",
+      "table": "IRC_CAMP_GOAL_RESP_TL",
+      "column": "LANGUAGE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CampGoalRespTranslationPEOLastUpdateDate2",
+      "table": "IRC_CAMP_GOAL_RESP_TL",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": true
+    },
+    {
+      "name": "CampGoalRespTranslationPEOLastUpdateLogin2",
+      "table": "IRC_CAMP_GOAL_RESP_TL",
+      "column": "LAST_UPDATE_LOGIN",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CampGoalRespTranslationPEOLastUpdatedBy2",
+      "table": "IRC_CAMP_GOAL_RESP_TL",
+      "column": "LAST_UPDATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CampGoalRespTranslationPEOObjectVersionNumber2",
+      "table": "IRC_CAMP_GOAL_RESP_TL",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CampGoalRespTranslationPEOResponseLabel",
+      "table": "IRC_CAMP_GOAL_RESP_TL",
+      "column": "RESPONSE_LABEL",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CampGoalRespTranslationPEOSourceLang",
+      "table": "IRC_CAMP_GOAL_RESP_TL",
+      "column": "SOURCE_LANG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CampGoalTranslationPEOCreatedBy3",
+      "table": "IRC_CAMP_GOALS_TL",
+      "column": "CREATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CampGoalTranslationPEOCreationDate3",
+      "table": "IRC_CAMP_GOALS_TL",
+      "column": "CREATION_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CampGoalTranslationPEOGoalId2",
+      "table": "IRC_CAMP_GOALS_TL",
+      "column": "GOAL_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CampGoalTranslationPEOGoalName",
+      "table": "IRC_CAMP_GOALS_TL",
+      "column": "GOAL_NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CampGoalTranslationPEOLanguage1",
+      "table": "IRC_CAMP_GOALS_TL",
+      "column": "LANGUAGE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CampGoalTranslationPEOLastUpdateDate3",
+      "table": "IRC_CAMP_GOALS_TL",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": true
+    },
+    {
+      "name": "CampGoalTranslationPEOLastUpdateLogin3",
+      "table": "IRC_CAMP_GOALS_TL",
+      "column": "LAST_UPDATE_LOGIN",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CampGoalTranslationPEOLastUpdatedBy3",
+      "table": "IRC_CAMP_GOALS_TL",
+      "column": "LAST_UPDATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CampGoalTranslationPEOObjectVersionNumber3",
+      "table": "IRC_CAMP_GOALS_TL",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CampGoalTranslationPEOSourceLang1",
+      "table": "IRC_CAMP_GOALS_TL",
+      "column": "SOURCE_LANG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CampaignBPEOCampaignId",
+      "table": "IRC_CAMPAIGNS_B",
+      "column": "CAMPAIGN_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CampaignBPEOCampaignTypeCode",
+      "table": "IRC_CAMPAIGNS_B",
+      "column": "CAMPAIGN_TYPE_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "GoalId",
+      "table": "IRC_CAMP_GOALS_B",
+      "column": "GOAL_ID",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    }
+  ],
+  "by_table": {
+    "IRC_CAMP_GOALS_B": [
+      {
+        "attribute": "CampGoalBPEOCampaignId",
+        "column": "CAMPAIGN_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CampGoalBPEOCreatedBy",
+        "column": "CREATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CampGoalBPEOCreationDate",
+        "column": "CREATION_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CampGoalBPEOGoalTypeCode",
+        "column": "GOAL_TYPE_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CampGoalBPEOLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CampGoalBPEOLastUpdateLogin",
+        "column": "LAST_UPDATE_LOGIN",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CampGoalBPEOLastUpdatedBy",
+        "column": "LAST_UPDATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CampGoalBPEOObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CampGoalBPEOPrimaryGoalFlag",
+        "column": "PRIMARY_GOAL_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CampGoalBPEOSystemGoalFlag",
+        "column": "SYSTEM_GOAL_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "GoalId",
+        "column": "GOAL_ID",
+        "bicc": true,
+        "pk": true
+      }
+    ],
+    "IRC_CAMP_GOAL_RESP_B": [
+      {
+        "attribute": "CampGoalRespBPEOCreatedBy1",
+        "column": "CREATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CampGoalRespBPEOCreationDate1",
+        "column": "CREATION_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CampGoalRespBPEODestinationUrl",
+        "column": "DESTINATION_URL",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CampGoalRespBPEOGoalId",
+        "column": "GOAL_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CampGoalRespBPEOGoalResponseId",
+        "column": "GOAL_RESPONSE_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CampGoalRespBPEOIncludeInTargetFlag",
+        "column": "INCLUDE_IN_TARGET_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CampGoalRespBPEOLastUpdateDate1",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CampGoalRespBPEOLastUpdateLogin1",
+        "column": "LAST_UPDATE_LOGIN",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CampGoalRespBPEOLastUpdatedBy1",
+        "column": "LAST_UPDATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CampGoalRespBPEOObjectVersionNumber1",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CampGoalRespBPEOUseDefaultUrlFlag",
+        "column": "USE_DEFAULT_URL_FLAG",
+        "bicc": true,
+        "pk": false
+      }
+    ],
+    "IRC_CAMP_GOAL_RESP_TL": [
+      {
+        "attribute": "CampGoalRespTranslationPEOCreatedBy2",
+        "column": "CREATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CampGoalRespTranslationPEOCreationDate2",
+        "column": "CREATION_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CampGoalRespTranslationPEOGoalResponseId1",
+        "column": "GOAL_RESPONSE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CampGoalRespTranslationPEOLanguage",
+        "column": "LANGUAGE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CampGoalRespTranslationPEOLastUpdateDate2",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CampGoalRespTranslationPEOLastUpdateLogin2",
+        "column": "LAST_UPDATE_LOGIN",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CampGoalRespTranslationPEOLastUpdatedBy2",
+        "column": "LAST_UPDATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CampGoalRespTranslationPEOObjectVersionNumber2",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CampGoalRespTranslationPEOResponseLabel",
+        "column": "RESPONSE_LABEL",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CampGoalRespTranslationPEOSourceLang",
+        "column": "SOURCE_LANG",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "IRC_CAMP_GOALS_TL": [
+      {
+        "attribute": "CampGoalTranslationPEOCreatedBy3",
+        "column": "CREATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CampGoalTranslationPEOCreationDate3",
+        "column": "CREATION_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CampGoalTranslationPEOGoalId2",
+        "column": "GOAL_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CampGoalTranslationPEOGoalName",
+        "column": "GOAL_NAME",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CampGoalTranslationPEOLanguage1",
+        "column": "LANGUAGE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CampGoalTranslationPEOLastUpdateDate3",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CampGoalTranslationPEOLastUpdateLogin3",
+        "column": "LAST_UPDATE_LOGIN",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CampGoalTranslationPEOLastUpdatedBy3",
+        "column": "LAST_UPDATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CampGoalTranslationPEOObjectVersionNumber3",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CampGoalTranslationPEOSourceLang1",
+        "column": "SOURCE_LANG",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "IRC_CAMPAIGNS_B": [
+      {
+        "attribute": "CampaignBPEOCampaignId",
+        "column": "CAMPAIGN_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CampaignBPEOCampaignTypeCode",
+        "column": "CAMPAIGN_TYPE_CODE",
+        "bicc": false,
+        "pk": false
+      }
+    ]
+  }
+}

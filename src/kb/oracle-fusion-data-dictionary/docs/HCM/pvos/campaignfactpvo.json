@@ -1,0 +1,197 @@
+{
+  "meta": {
+    "pvo_name": "CampaignFactPVO",
+    "full_path": "HcmTopModelAnalyticsGlobalAM.HcmRecCampaignsAM.CampaignFactPVO",
+    "module_path": "HcmTopModelAnalyticsGlobalAM.HcmRecCampaignsAM",
+    "module_code": "HCM",
+    "type": "pvo",
+    "description": "Relaciona campanhas de recrutamento a requisicoes de vagas. Suporta analise de efetividade e alcance de campanhas por posicao."
+  },
+  "stats": {
+    "total_attributes": 12,
+    "tables_count": 2,
+    "bicc_enabled": 3,
+    "bicc_pct": 25,
+    "pk_count": 1
+  },
+  "tables": [
+    "IRC_CAMPAIGNS_B",
+    "IRC_CAMP_REQUISITIONS"
+  ],
+  "attributes": [
+    {
+      "name": "CampRequisitionId",
+      "table": "IRC_CAMP_REQUISITIONS",
+      "column": "CAMPAIGN_REQUISITION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CampRequisitionPEOCampaignId",
+      "table": "IRC_CAMP_REQUISITIONS",
+      "column": "CAMPAIGN_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CampRequisitionPEOCreatedBy",
+      "table": "IRC_CAMP_REQUISITIONS",
+      "column": "CREATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CampRequisitionPEOCreationDate",
+      "table": "IRC_CAMP_REQUISITIONS",
+      "column": "CREATION_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CampRequisitionPEOLastUpdateDate",
+      "table": "IRC_CAMP_REQUISITIONS",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": true
+    },
+    {
+      "name": "CampRequisitionPEOLastUpdateLogin",
+      "table": "IRC_CAMP_REQUISITIONS",
+      "column": "LAST_UPDATE_LOGIN",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CampRequisitionPEOLastUpdatedBy",
+      "table": "IRC_CAMP_REQUISITIONS",
+      "column": "LAST_UPDATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CampRequisitionPEOObjectVersionNumber",
+      "table": "IRC_CAMP_REQUISITIONS",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CampaignBPEOCampaignCode",
+      "table": "IRC_CAMPAIGNS_B",
+      "column": "CAMPAIGN_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CampaignBPEOCampaignTypeCode",
+      "table": "IRC_CAMPAIGNS_B",
+      "column": "CAMPAIGN_TYPE_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CampaignId",
+      "table": "IRC_CAMPAIGNS_B",
+      "column": "CAMPAIGN_ID",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    },
+    {
+      "name": "RequisitionId",
+      "table": "IRC_CAMP_REQUISITIONS",
+      "column": "REQUISITION_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    }
+  ],
+  "by_table": {
+    "IRC_CAMP_REQUISITIONS": [
+      {
+        "attribute": "CampRequisitionId",
+        "column": "CAMPAIGN_REQUISITION_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CampRequisitionPEOCampaignId",
+        "column": "CAMPAIGN_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CampRequisitionPEOCreatedBy",
+        "column": "CREATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CampRequisitionPEOCreationDate",
+        "column": "CREATION_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CampRequisitionPEOLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CampRequisitionPEOLastUpdateLogin",
+        "column": "LAST_UPDATE_LOGIN",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CampRequisitionPEOLastUpdatedBy",
+        "column": "LAST_UPDATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CampRequisitionPEOObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "RequisitionId",
+        "column": "REQUISITION_ID",
+        "bicc": true,
+        "pk": false
+      }
+    ],
+    "IRC_CAMPAIGNS_B": [
+      {
+        "attribute": "CampaignBPEOCampaignCode",
+        "column": "CAMPAIGN_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CampaignBPEOCampaignTypeCode",
+        "column": "CAMPAIGN_TYPE_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CampaignId",
+        "column": "CAMPAIGN_ID",
+        "bicc": true,
+        "pk": true
+      }
+    ]
+  }
+}

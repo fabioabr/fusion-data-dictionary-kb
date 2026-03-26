@@ -1,0 +1,415 @@
+{
+  "source": "poq_assessments.md",
+  "source_hash": "e1db7b6017708c4d25b242470b047c84",
+  "translated_at": "2026-03-25",
+  "items": [
+    {
+      "id": 1,
+      "br": "Visão Geral",
+      "en": "Overview",
+      "es": "Visión General"
+    },
+    {
+      "id": 2,
+      "br": "Armazena as avaliações de qualificação de fornecedores no módulo Oracle Supplier Qualification Management (SQM). Cada registro representa uma avaliação iniciada contra um fornecedor, que pode englobar múltiplas qualificações (certificações, capacidades, compliance). A avaliação é o processo-pai que coordena o envio de questionários, coleta de respostas e determinação do resultado de qualificação.",
+      "en": "Stores supplier qualification assessments in the Oracle Supplier Qualification Management (SQM) module. Each record represents an assessment initiated against a supplier, which may encompass multiple qualifications (certifications, capabilities, compliance). The assessment is the parent process that coordinates questionnaire distribution, response collection, and qualification result determination.",
+      "es": "Almacena as evaluaciones de calificación de proveedores en el módulo Oracle Supplier Qualification Management (SQM). Cada registro representa una evaluación iniciada contra un proveedor, que puede englobar múltiplas calificaciones (certificaciones, capacidades, compliance). A evaluación é o proceso-padre que coordena o envio de cuestionarios, coleta de respuestas y determinação del resultado de calificación."
+    },
+    {
+      "id": 3,
+      "br": "Módulo POQ",
+      "en": "POQ Module",
+      "es": "Módulo POQ"
+    },
+    {
+      "id": 4,
+      "br": "O prefixo POQ identifica tabelas do submódulo Oracle Supplier Qualification Management, responsável por gerenciar o ciclo de vida de qualificação, certificação e avaliação de fornecedores.",
+      "en": "The POQ prefix identifies tables from the Oracle Supplier Qualification Management submodule, responsible for managing the qualification, certification, and supplier assessment lifecycle.",
+      "es": "O prefixo POQ identifica tablas del submódulo Oracle Supplier Qualification Management, responsable por gerenciar o ciclo de vida de calificación, certificación y evaluación de proveedores."
+    },
+    {
+      "id": 5,
+      "br": "Propósito de Negócio",
+      "en": "Business Purpose",
+      "es": "Propósito de Negocio"
+    },
+    {
+      "id": 6,
+      "br": "Esta tabela é utilizada nos seguintes processos:",
+      "en": "This table is used in the following processes:",
+      "es": "Esta tabla se utiliza en los siguientes procesos:"
+    },
+    {
+      "id": 7,
+      "br": "Gerenciamento do processo de avaliação inicial e periódica de fornecedores.",
+      "en": "Management of the initial and periodic supplier assessment process.",
+      "es": "Gerenciamento del proceso de evaluación inicial y periódica de proveedores."
+    },
+    {
+      "id": 8,
+      "br": "Avaliação de novos fornecedores antes de habilitá-los para transações.",
+      "en": "Assessment of new suppliers before enabling them for transactions.",
+      "es": "Avaliação de nuevos proveedores antes de habilitá-los para transacciones."
+    },
+    {
+      "id": 9,
+      "br": "Controle de avaliações periódicas (anuais, semestrais) para manter qualificações ativas.",
+      "en": "Control of periodic assessments (annual, semi-annual) to maintain active qualifications.",
+      "es": "Control de evaluaciones periódicas (anuais, semestrais) para manter calificaciones activas."
+    },
+    {
+      "id": 10,
+      "br": "Demonstração de due diligence na seleção e monitoramento de fornecedores.",
+      "en": "Demonstration of due diligence in supplier selection and monitoring.",
+      "es": "Demonstração de due diligence en la selección y monitoreo de proveedores."
+    },
+    {
+      "id": 11,
+      "br": "Coordenação do fluxo de aprovação das avaliações (pendente, aprovada, rejeitada).",
+      "en": "Coordination of the assessment approval workflow (pending, approved, rejected).",
+      "es": "Coordenação del fluxo de aprobación de las evaluaciones (pendiente, aprovada, rejeitada)."
+    },
+    {
+      "id": 12,
+      "br": "Colunas Principais",
+      "en": "Key Columns",
+      "es": "Columnas Principales"
+    },
+    {
+      "id": 13,
+      "br": "Confiança",
+      "en": "Confidence",
+      "es": "Confianza"
+    },
+    {
+      "id": 14,
+      "br": "Escala de 0% a 100% — grau de certeza da descrição gerada por IA com base na documentação oficial Oracle (OEDMF/BICC Release 13/25A).",
+      "en": "Scale from 0% to 100% — degree of certainty of the AI-generated description based on official Oracle documentation (OEDMF/BICC Release 13/25A).",
+      "es": "Escala de 0% a 100% — grado de certeza de la descripción generada por IA con base en la documentación oficial Oracle (OEDMF/BICC Release 13/25A)."
+    },
+    {
+      "id": 15,
+      "br": "- 🟢 81–100% — Coluna presente na documentação oficial Oracle; nome, tipo e descrição confirmados.",
+      "en": "- 🟢 81–100% — Column present in official Oracle documentation; name, type, and description confirmed.",
+      "es": "- 🟢 81–100% — Columna presente en la documentación oficial Oracle; nombre, tipo y descripción confirmados."
+    },
+    {
+      "id": 16,
+      "br": "- 🟡 51–80% — Coluna inferida por naming convention ou padrão Oracle; tipo exato pode variar.",
+      "en": "- 🟡 51–80% — Column inferred by naming convention or Oracle standard; exact type may vary.",
+      "es": "- 🟡 51–80% — Columna inferida por naming convention o estándar Oracle; el tipo exacto puede variar."
+    },
+    {
+      "id": 17,
+      "br": "- 🔴 0–50% — Existência ou tipo incertos; pode não existir no release atual; validar no ambiente.",
+      "en": "- 🔴 0–50% — Uncertain existence or type; may not exist in the current release; validate in the environment.",
+      "es": "- 🔴 0–50% — Existencia o tipo inciertos; puede no existir en el release actual; validar en el ambiente."
+    },
+    {
+      "id": 18,
+      "br": "Coluna",
+      "en": "Column",
+      "es": "Columna"
+    },
+    {
+      "id": 19,
+      "br": "Tipo",
+      "en": "Type",
+      "es": "Tipo"
+    },
+    {
+      "id": 20,
+      "br": "Nulo?",
+      "en": "Nullable?",
+      "es": "¿Nulo?"
+    },
+    {
+      "id": 21,
+      "br": "Categoria",
+      "en": "Category",
+      "es": "Categoría"
+    },
+    {
+      "id": 22,
+      "br": "Descrição",
+      "en": "Description",
+      "es": "Descripción"
+    },
+    {
+      "id": 23,
+      "br": "Identificador único da avaliação",
+      "en": "Unique assessment identifier",
+      "es": "Identificador único de la evaluación"
+    },
+    {
+      "id": 24,
+      "br": "Identificação",
+      "en": "Identification",
+      "es": "Identificación"
+    },
+    {
+      "id": 25,
+      "br": "Nome/título da avaliação",
+      "en": "Assessment name/title",
+      "es": "Nome/título de la evaluación"
+    },
+    {
+      "id": 26,
+      "br": "Fornecedor avaliado",
+      "en": "Assessed supplier",
+      "es": "Fornecedor avaliado"
+    },
+    {
+      "id": 27,
+      "br": "Site do fornecedor avaliado",
+      "en": "Assessed supplier site",
+      "es": "Site del proveedor avaliado"
+    },
+    {
+      "id": 28,
+      "br": "Classificação",
+      "en": "Classification",
+      "es": "Clasificación"
+    },
+    {
+      "id": 29,
+      "br": "Tipo da avaliação (INITIAL, PERIODIC, AD_HOC)",
+      "en": "Assessment type (INITIAL, PERIODIC, AD_HOC)",
+      "es": "Tipo de la evaluación (INITIAL, PERIODIC, AD_HOC)"
+    },
+    {
+      "id": 30,
+      "br": "Status da avaliação (DRAFT, IN_PROGRESS, COMPLETED, APPROVED, REJECTED)",
+      "en": "Assessment status (DRAFT, IN_PROGRESS, COMPLETED, APPROVED, REJECTED)",
+      "es": "Status de la evaluación (DRAFT, IN_PROGRESS, COMPLETED, APPROVED, REJECTED)"
+    },
+    {
+      "id": 31,
+      "br": "Data",
+      "en": "Date",
+      "es": "Fecha"
+    },
+    {
+      "id": 32,
+      "br": "Data de início da avaliação",
+      "en": "Assessment start date",
+      "es": "Data de início de la evaluación"
+    },
+    {
+      "id": 33,
+      "br": "Data de conclusão da avaliação",
+      "en": "Assessment completion date",
+      "es": "Data de conclusão de la evaluación"
+    },
+    {
+      "id": 34,
+      "br": "Data limite para conclusão",
+      "en": "Completion deadline",
+      "es": "Data limite para conclusão"
+    },
+    {
+      "id": 35,
+      "br": "Usuário que iniciou a avaliação",
+      "en": "User who initiated the assessment",
+      "es": "Usuário que iniciou a evaluación"
+    },
+    {
+      "id": 36,
+      "br": "Avaliação",
+      "en": "Assessment",
+      "es": "Evaluación"
+    },
+    {
+      "id": 37,
+      "br": "Resultado consolidado (QUALIFIED, NOT_QUALIFIED, CONDITIONALLY_QUALIFIED)",
+      "en": "Consolidated result (QUALIFIED, NOT_QUALIFIED, CONDITIONALLY_QUALIFIED)",
+      "es": "Resultado consolidado (QUALIFIED, NOT_QUALIFIED, CONDITIONALLY_QUALIFIED)"
+    },
+    {
+      "id": 38,
+      "br": "Texto livre",
+      "en": "Free Text",
+      "es": "Texto libre"
+    },
+    {
+      "id": 39,
+      "br": "Comentários gerais sobre a avaliação",
+      "en": "General comments on the assessment",
+      "es": "Comentários gerais sobre a evaluación"
+    },
+    {
+      "id": 40,
+      "br": "Questionário associado à avaliação",
+      "en": "Questionnaire associated with the assessment",
+      "es": "Questionário associado à evaluación"
+    },
+    {
+      "id": 41,
+      "br": "Auditoria",
+      "en": "Audit",
+      "es": "Auditoría"
+    },
+    {
+      "id": 42,
+      "br": "Usuário que criou o registro",
+      "en": "User who created the record",
+      "es": "Usuario que creó el registro"
+    },
+    {
+      "id": 43,
+      "br": "Data/hora de criação",
+      "en": "Creation date/time",
+      "es": "Fecha/hora de creación"
+    },
+    {
+      "id": 44,
+      "br": "Último usuário que alterou",
+      "en": "Last user who modified",
+      "es": "Último usuario que modificó"
+    },
+    {
+      "id": 45,
+      "br": "Data/hora da última alteração",
+      "en": "Last modification date/time",
+      "es": "Fecha/hora de la última modificación"
+    },
+    {
+      "id": 46,
+      "br": "Login da última sessão",
+      "en": "Last session login",
+      "es": "Login de la última sesión"
+    },
+    {
+      "id": 47,
+      "br": "Relacionamentos",
+      "en": "Relationships",
+      "es": "Relaciones"
+    },
+    {
+      "id": 48,
+      "br": "Tabelas-pai (FK de entrada)",
+      "en": "Parent Tables (inbound FK)",
+      "es": "Tablas padre (FK de entrada)"
+    },
+    {
+      "id": 49,
+      "br": "fornecedor avaliado",
+      "en": "assessed supplier",
+      "es": "proveedor avaliado"
+    },
+    {
+      "id": 50,
+      "br": "site do fornecedor",
+      "en": "supplier site",
+      "es": "sitio del proveedor"
+    },
+    {
+      "id": 51,
+      "br": "usuário iniciador",
+      "en": "initiator user",
+      "es": "usuario iniciador"
+    },
+    {
+      "id": 52,
+      "br": "questionário",
+      "en": "questionnaire",
+      "es": "cuestionario"
+    },
+    {
+      "id": 53,
+      "br": "Tabelas-filha (FK de saída)",
+      "en": "Child Tables (outbound FK)",
+      "es": "Tablas hija (FK de salida)"
+    },
+    {
+      "id": 54,
+      "br": "qualificações da avaliação",
+      "en": "assessment qualifications",
+      "es": "calificaciones de la evaluación"
+    },
+    {
+      "id": 55,
+      "br": "Tabelas relacionadas",
+      "en": "Related Tables",
+      "es": "Tablas relacionadas"
+    },
+    {
+      "id": 56,
+      "br": "poq_evaluation_team — equipe de avaliação associada",
+      "en": "poq_evaluation_team — associated evaluation team",
+      "es": "poq_evaluation_team — equipo de evaluación associada"
+    },
+    {
+      "id": 57,
+      "br": "Uso Típico",
+      "en": "Typical Usage",
+      "es": "Uso Típico"
+    },
+    {
+      "id": 58,
+      "br": "Avaliações ativas de um fornecedor",
+      "en": "Active assessments of a supplier",
+      "es": "Avaliações activas de un proveedor"
+    },
+    {
+      "id": 59,
+      "br": "Avaliações pendentes próximas do prazo",
+      "en": "Pending assessments near deadline",
+      "es": "Avaliações pendientes próximas del plazo"
+    },
+    {
+      "id": 60,
+      "br": "Observações",
+      "en": "Notes",
+      "es": "Observaciones"
+    },
+    {
+      "id": 61,
+      "br": "O campo STATUS controla o ciclo de vida da avaliação: DRAFT (rascunho), IN_PROGRESS (em andamento), COMPLETED (concluída aguardando aprovação), APPROVED (aprovada), REJECTED (rejeitada).",
+      "en": "The STATUS field controls the assessment lifecycle: DRAFT (draft), IN_PROGRESS (in progress), COMPLETED (completed awaiting approval), APPROVED (approved), REJECTED (rejected).",
+      "es": "O campo STATUS controla o ciclo de vida de la evaluación: DRAFT (rascunho), IN_PROGRESS (em progreso), COMPLETED (completada aguardando aprobación), APPROVED (aprovada), REJECTED (rejeitada)."
+    },
+    {
+      "id": 62,
+      "br": "O OVERALL_RESULT é determinado após a conclusão de todas as qualificações individuais da avaliação.",
+      "en": "The OVERALL_RESULT is determined after the completion of all individual qualifications in the assessment.",
+      "es": "O OVERALL_RESULT é determinado após a conclusão de todas as calificaciones individuais de la evaluación."
+    },
+    {
+      "id": 63,
+      "br": "Uma avaliação pode conter múltiplas qualificações (via poq_assessment_quals), cada uma com seu próprio resultado.",
+      "en": "An assessment can contain multiple qualifications (via poq_assessment_quals), each with its own result.",
+      "es": "Uma evaluación puede conter múltiplas calificaciones (via poq_assessment_quals), cada una con su próprio resultado."
+    },
+    {
+      "id": 64,
+      "br": "O ASSESSMENT_TYPE diferencia avaliações iniciais (onboarding) de periódicas (renovação) e ad hoc (sob demanda).",
+      "en": "The ASSESSMENT_TYPE differentiates initial assessments (onboarding) from periodic (renewal) and ad hoc (on-demand) assessments.",
+      "es": "O ASSESSMENT_TYPE diferencia evaluaciones iniciais (onboarding) de periódicas (renovación) y ad hoc (sob demanda)."
+    },
+    {
+      "id": 65,
+      "br": "A tabela poq_evaluation_team define quem são os avaliadores responsáveis por cada avaliação.",
+      "en": "The poq_evaluation_team table defines who the responsible assessors are for each assessment.",
+      "es": "A tabla poq_evaluation_team define quién são os evaluadores responsables por cada evaluación."
+    },
+    {
+      "id": 66,
+      "br": "Referências",
+      "en": "References",
+      "es": "Referencias"
+    },
+    {
+      "id": 67,
+      "br": "[Oracle Docs — POQ_ASSESSMENTS](https://docs.oracle.com/en/cloud/saas/procurement/25a/oedmf/poqassessments.html)",
+      "en": "[Oracle Docs — POQ_ASSESSMENTS](https://docs.oracle.com/en/cloud/saas/procurement/25a/oedmf/poqassessments.html)",
+      "es": "[Oracle Docs — POQ_ASSESSMENTS](https://docs.oracle.com/en/cloud/saas/procurement/25a/oedmf/poqassessments.html)"
+    },
+    {
+      "id": 68,
+      "br": "po-module-data-dictionary — Dossiê do módulo Procurement",
+      "en": "po-module-data-dictionary — module dossier for Procurement",
+      "es": "po-module-data-dictionary — Dosier del módulo Procurement"
+    }
+  ]
+}

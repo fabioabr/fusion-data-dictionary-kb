@@ -1,0 +1,541 @@
+{
+  "source": "exm_expenses.md",
+  "source_hash": "54542e3107617e346a66e5ca900754c3",
+  "translated_at": "2026-03-25",
+  "items": [
+    {
+      "id": 1,
+      "br": "Visão Geral",
+      "en": "Overview",
+      "es": "Visión General"
+    },
+    {
+      "id": 2,
+      "br": "Armazena as linhas individuais de despesa dentro de relatórios de despesa (Expense Reports) no módulo de Expense Management do Oracle Fusion. Cada registro representa um item de gasto — viagem, hospedagem, alimentação, combustível, etc. — com valor, data, tipo de despesa, justificativa e referências a projeto/tarefa quando aplicável.",
+      "en": "Stores individual expense lines within expense reports in the Oracle Fusion Expense Management module. Each record represents an expense item — travel, lodging, meals, fuel, etc. — with amount, date, expense type, justification, and references to project/task when applicable.",
+      "es": "Almacena las líneas individuales de gasto dentro de informes de gastos (Expense Reports) en el módulo de Expense Management de Oracle Fusion. Cada registro representa un ítem de gasto — viaje, hospedaje, alimentación, combustible, etc. — con valor, fecha, tipo de gasto, justificación y referencias a proyecto/tarea cuando aplica."
+    },
+    {
+      "id": 3,
+      "br": "Expense Management",
+      "en": "Expense Management",
+      "es": "Expense Management"
+    },
+    {
+      "id": 4,
+      "br": "O módulo EXM (Expense Management) faz parte do Accounts Payable, gerenciando o ciclo de vida de despesas de funcionários: criação → aprovação → reembolso.",
+      "en": "The EXM (Expense Management) module is part of Accounts Payable, managing the employee expense lifecycle: creation → approval → reimbursement.",
+      "es": "El módulo EXM (Expense Management) forma parte de Accounts Payable, gestionando el ciclo de vida de gastos de empleados: creación → aprobación → reembolso."
+    },
+    {
+      "id": 5,
+      "br": "Propósito de Negócio",
+      "en": "Business Purpose",
+      "es": "Propósito de Negocio"
+    },
+    {
+      "id": 6,
+      "br": "Esta tabela é utilizada nos seguintes processos:",
+      "en": "This table is used in the following processes:",
+      "es": "Esta tabla se utiliza en los siguientes procesos:"
+    },
+    {
+      "id": 7,
+      "br": "Detalhamento de cada item de gasto dentro de um relatório de despesa.",
+      "en": "Detail of each expense item within an expense report.",
+      "es": "Detalle de cada ítem de gasto dentro de un informe de gastos."
+    },
+    {
+      "id": 8,
+      "br": "Classificação por tipo de despesa (viagem, alimentação, hospedagem, etc.).",
+      "en": "Classification by expense type (travel, meals, lodging, etc.).",
+      "es": "Clasificación por tipo de gasto (viaje, alimentación, hospedaje, etc.)."
+    },
+    {
+      "id": 9,
+      "br": "Vinculação de despesas a projetos e tarefas para capitalização ou custeio.",
+      "en": "Linking expenses to projects and tasks for capitalization or costing.",
+      "es": "Vinculación de gastos a proyectos y tareas para capitalización o costeo."
+    },
+    {
+      "id": 10,
+      "br": "Verificação de limites por tipo de despesa e categoria.",
+      "en": "Verification of limits by expense type and category.",
+      "es": "Verificación de límites por tipo de gasto y categoría."
+    },
+    {
+      "id": 11,
+      "br": "Base para criação da invoice de reembolso em [[ap_invoices_all]].",
+      "en": "Basis for creating the reimbursement invoice in [[ap_invoices_all]].",
+      "es": "Base para creación de la factura de reembolso en [[ap_invoices_all]]."
+    },
+    {
+      "id": 12,
+      "br": "Rastreamento de recibos, justificativas e comprovantes por linha.",
+      "en": "Tracking of receipts, justifications, and supporting documents per line.",
+      "es": "Rastreo de recibos, justificaciones y comprobantes por línea."
+    },
+    {
+      "id": 13,
+      "br": "Colunas Principais",
+      "en": "Main Columns",
+      "es": "Columnas Principales"
+    },
+    {
+      "id": 14,
+      "br": "Confiança",
+      "en": "Confidence",
+      "es": "Confianza"
+    },
+    {
+      "id": 15,
+      "br": "Escala de 0% a 100% — grau de certeza da descrição gerada por IA com base na documentação oficial Oracle (OEDMF/BICC Release 13/25A).",
+      "en": "Scale from 0% to 100% — degree of certainty of the AI-generated description based on official Oracle documentation (OEDMF/BICC Release 13/25A).",
+      "es": "Escala de 0% a 100% — grado de certeza de la descripción generada por IA con base en la documentación oficial Oracle (OEDMF/BICC Release 13/25A)."
+    },
+    {
+      "id": 16,
+      "br": "- 🟢 81–100% — Coluna presente na documentação oficial Oracle; nome, tipo e descrição confirmados.",
+      "en": "- 🟢 81–100% — Column present in official Oracle documentation; name, type and description confirmed.",
+      "es": "- 🟢 81–100% — Columna presente en la documentación oficial Oracle; nombre, tipo y descripción confirmados."
+    },
+    {
+      "id": 17,
+      "br": "- 🟡 51–80% — Coluna inferida por naming convention ou padrão Oracle; tipo exato pode variar.",
+      "en": "- 🟡 51–80% — Column inferred by naming convention or Oracle standard; exact type may vary.",
+      "es": "- 🟡 51–80% — Columna inferida por naming convention o estándar Oracle; el tipo exacto puede variar."
+    },
+    {
+      "id": 18,
+      "br": "- 🔴 0–50% — Existência ou tipo incertos; pode não existir no release atual; validar no ambiente.",
+      "en": "- 🔴 0–50% — Uncertain existence or type; may not exist in the current release; validate in the environment.",
+      "es": "- 🔴 0–50% — Existencia o tipo inciertos; puede no existir en el release actual; validar en el ambiente."
+    },
+    {
+      "id": 19,
+      "br": "Coluna",
+      "en": "Column",
+      "es": "Columna"
+    },
+    {
+      "id": 20,
+      "br": "Tipo",
+      "en": "Type",
+      "es": "Tipo"
+    },
+    {
+      "id": 21,
+      "br": "Nulo?",
+      "en": "Nullable?",
+      "es": "¿Nulo?"
+    },
+    {
+      "id": 22,
+      "br": "Categoria",
+      "en": "Category",
+      "es": "Categoría"
+    },
+    {
+      "id": 23,
+      "br": "Descrição",
+      "en": "Description",
+      "es": "Descripción"
+    },
+    {
+      "id": 24,
+      "br": "Identificador único da linha de despesa",
+      "en": "Unique expense line identifier",
+      "es": "Identificador único de la línea de gasto"
+    },
+    {
+      "id": 25,
+      "br": "Relatório de despesa ao qual pertence",
+      "en": "Expense report to which it belongs",
+      "es": "Informe de gastos al que pertenece"
+    },
+    {
+      "id": 26,
+      "br": "Tipo/categoria da despesa",
+      "en": "Expense type/category",
+      "es": "Tipo/categoría del gasto"
+    },
+    {
+      "id": 27,
+      "br": "Template de despesa utilizado",
+      "en": "Expense template used",
+      "es": "Template de gasto utilizado"
+    },
+    {
+      "id": 28,
+      "br": "Texto livre",
+      "en": "Free text",
+      "es": "Texto libre"
+    },
+    {
+      "id": 29,
+      "br": "Descrição/justificativa da despesa",
+      "en": "Expense description/justification",
+      "es": "Descripción/justificación del gasto"
+    },
+    {
+      "id": 30,
+      "br": "Data",
+      "en": "Date",
+      "es": "Fecha"
+    },
+    {
+      "id": 31,
+      "br": "Data de início da despesa (ou data do gasto)",
+      "en": "Expense start date (or expense date)",
+      "es": "Fecha de inicio del gasto (o fecha del gasto)"
+    },
+    {
+      "id": 32,
+      "br": "Data de término (para despesas multi-dia como hospedagem)",
+      "en": "End date (for multi-day expenses such as lodging)",
+      "es": "Fecha de término (para gastos multi-día como hospedaje)"
+    },
+    {
+      "id": 33,
+      "br": "Financeiro",
+      "en": "Financial",
+      "es": "Financiero"
+    },
+    {
+      "id": 34,
+      "br": "Valor do recibo na moeda do recibo",
+      "en": "Receipt amount in the receipt currency",
+      "es": "Valor del recibo en la moneda del recibo"
+    },
+    {
+      "id": 35,
+      "br": "Moeda",
+      "en": "Currency",
+      "es": "Moneda"
+    },
+    {
+      "id": 36,
+      "br": "Moeda do recibo",
+      "en": "Receipt currency",
+      "es": "Moneda del recibo"
+    },
+    {
+      "id": 37,
+      "br": "Valor reembolsável na moeda de reembolso",
+      "en": "Reimbursable amount in the reimbursement currency",
+      "es": "Valor reembolsable en la moneda de reembolso"
+    },
+    {
+      "id": 38,
+      "br": "Moeda de reembolso",
+      "en": "Reimbursement currency",
+      "es": "Moneda de reembolso"
+    },
+    {
+      "id": 39,
+      "br": "Taxa de câmbio do recibo para moeda de reembolso",
+      "en": "Exchange rate from receipt currency to reimbursement currency",
+      "es": "Tasa de cambio del recibo a la moneda de reembolso"
+    },
+    {
+      "id": 40,
+      "br": "Localização",
+      "en": "Location",
+      "es": "Localización"
+    },
+    {
+      "id": 41,
+      "br": "Local onde a despesa ocorreu (cidade, país)",
+      "en": "Location where the expense occurred (city, country)",
+      "es": "Lugar donde ocurrió el gasto (ciudad, país)"
+    },
+    {
+      "id": 42,
+      "br": "Fornecedor",
+      "en": "Supplier",
+      "es": "Proveedor"
+    },
+    {
+      "id": 43,
+      "br": "Nome do estabelecimento/fornecedor",
+      "en": "Establishment/supplier name",
+      "es": "Nombre del establecimiento/proveedor"
+    },
+    {
+      "id": 44,
+      "br": "Classificação",
+      "en": "Classification",
+      "es": "Clasificación"
+    },
+    {
+      "id": 45,
+      "br": "Indica se comprovante é obrigatório (Y/N)",
+      "en": "Indicates whether receipt is required (Y/N)",
+      "es": "Indica si el comprobante es obligatorio (Y/N)"
+    },
+    {
+      "id": 46,
+      "br": "Indica se comprovante está ausente (Y/N)",
+      "en": "Indicates whether receipt is missing (Y/N)",
+      "es": "Indica si el comprobante está ausente (Y/N)"
+    },
+    {
+      "id": 47,
+      "br": "Justificativa detalhada para a despesa",
+      "en": "Detailed justification for the expense",
+      "es": "Justificación detallada para el gasto"
+    },
+    {
+      "id": 48,
+      "br": "Projeto associado à despesa",
+      "en": "Project associated with the expense",
+      "es": "Proyecto asociado al gasto"
+    },
+    {
+      "id": 49,
+      "br": "Tarefa do projeto",
+      "en": "Project task",
+      "es": "Tarea del proyecto"
+    },
+    {
+      "id": 50,
+      "br": "Tipo de gasto para contabilidade de projetos",
+      "en": "Expenditure type for project accounting",
+      "es": "Tipo de gasto para contabilidad de proyectos"
+    },
+    {
+      "id": 51,
+      "br": "Referência",
+      "en": "Reference",
+      "es": "Referencia"
+    },
+    {
+      "id": 52,
+      "br": "ID da despesa-pai (para linhas itemizadas/detalhadas)",
+      "en": "Parent expense ID (for itemized/detailed lines)",
+      "es": "ID del gasto padre (para líneas itemizadas/detalladas)"
+    },
+    {
+      "id": 53,
+      "br": "Quantidade",
+      "en": "Quantity",
+      "es": "Cantidad"
+    },
+    {
+      "id": 54,
+      "br": "Número de dias (para per diem)",
+      "en": "Number of days (for per diem)",
+      "es": "Número de días (para per diem)"
+    },
+    {
+      "id": 55,
+      "br": "Valor diário (per diem)",
+      "en": "Daily amount (per diem)",
+      "es": "Valor diario (per diem)"
+    },
+    {
+      "id": 56,
+      "br": "Indica se a despesa é pessoal/não reembolsável (Y/N)",
+      "en": "Indicates whether the expense is personal/non-reimbursable (Y/N)",
+      "es": "Indica si el gasto es personal/no reembolsable (Y/N)"
+    },
+    {
+      "id": 57,
+      "br": "Business unit (multi-org)",
+      "en": "Business unit (multi-org)",
+      "es": "Business unit (multi-org)"
+    },
+    {
+      "id": 58,
+      "br": "Auditoria",
+      "en": "Audit",
+      "es": "Auditoría"
+    },
+    {
+      "id": 59,
+      "br": "Usuário que criou o registro",
+      "en": "User who created the record",
+      "es": "Usuario que creó el registro"
+    },
+    {
+      "id": 60,
+      "br": "Data/hora de criação",
+      "en": "Creation date/time",
+      "es": "Fecha/hora de creación"
+    },
+    {
+      "id": 61,
+      "br": "Último usuário que alterou",
+      "en": "Last user who modified",
+      "es": "Último usuario que modificó"
+    },
+    {
+      "id": 62,
+      "br": "Data/hora da última alteração",
+      "en": "Date/time of last modification",
+      "es": "Fecha/hora de la última modificación"
+    },
+    {
+      "id": 63,
+      "br": "Login da última sessão",
+      "en": "Last session login",
+      "es": "Login de la última sesión"
+    },
+    {
+      "id": 64,
+      "br": "Relacionamentos",
+      "en": "Relationships",
+      "es": "Relaciones"
+    },
+    {
+      "id": 65,
+      "br": "Tabelas-pai (FK de entrada)",
+      "en": "Parent Tables (inbound FK)",
+      "es": "Tablas padre (FK de entrada)"
+    },
+    {
+      "id": 66,
+      "br": "relatório de despesa",
+      "en": "expense report",
+      "es": "informe de gastos"
+    },
+    {
+      "id": 67,
+      "br": "tipo de despesa",
+      "en": "expense type",
+      "es": "tipo de gasto"
+    },
+    {
+      "id": 68,
+      "br": "template utilizado",
+      "en": "template used",
+      "es": "template utilizado"
+    },
+    {
+      "id": 69,
+      "br": "projeto associado",
+      "en": "associated project",
+      "es": "proyecto asociado"
+    },
+    {
+      "id": 70,
+      "br": "tarefa do projeto",
+      "en": "project task",
+      "es": "tarea del proyecto"
+    },
+    {
+      "id": 71,
+      "br": "business unit",
+      "en": "business unit",
+      "es": "business unit"
+    },
+    {
+      "id": 72,
+      "br": "Tabelas-filha (FK de saída)",
+      "en": "Child Tables (outbound FK)",
+      "es": "Tablas hija (FK de salida)"
+    },
+    {
+      "id": 73,
+      "br": "distribuições contábeis da despesa",
+      "en": "expense accounting distributions",
+      "es": "distribuciones contables del gasto"
+    },
+    {
+      "id": 74,
+      "br": "Uso Típico",
+      "en": "Typical Usage",
+      "es": "Uso Típico"
+    },
+    {
+      "id": 75,
+      "br": "Despesas de um relatório com tipo e valor",
+      "en": "Expenses from a report with type and amount",
+      "es": "Gastos de un informe con tipo y valor"
+    },
+    {
+      "id": 76,
+      "br": "Total de despesas por tipo em um período",
+      "en": "Total expenses by type in a period",
+      "es": "Total de gastos por tipo en un período"
+    },
+    {
+      "id": 77,
+      "br": "Filtros comuns",
+      "en": "Common filters",
+      "es": "Filtros comunes"
+    },
+    {
+      "id": 78,
+      "br": "Despesas corporativas (reembolsáveis)",
+      "en": "Corporate expenses (reimbursable)",
+      "es": "Gastos corporativos (reembolsables)"
+    },
+    {
+      "id": 79,
+      "br": "Despesas sem comprovante",
+      "en": "Expenses without receipt",
+      "es": "Gastos sin comprobante"
+    },
+    {
+      "id": 80,
+      "br": "Despesas alocadas a projetos",
+      "en": "Expenses allocated to projects",
+      "es": "Gastos asignados a proyectos"
+    },
+    {
+      "id": 81,
+      "br": "Observações",
+      "en": "Notes",
+      "es": "Observaciones"
+    },
+    {
+      "id": 82,
+      "br": "Cada linha de despesa pode ser itemizada (detalhada em sub-linhas) usando ITEMIZATION_PARENT_ID para vincular sub-itens ao item principal.",
+      "en": "Each expense line can be itemized (detailed into sub-lines) using ITEMIZATION_PARENT_ID to link sub-items to the main item.",
+      "es": "Cada línea de gasto puede ser itemizada (detallada en sublíneas) usando ITEMIZATION_PARENT_ID para vincular subítems al ítem principal."
+    },
+    {
+      "id": 83,
+      "br": "O campo PERSONAL_FLAG = 'Y' indica despesas pessoais incluídas no relatório para transparência, mas que não serão reembolsadas.",
+      "en": "The PERSONAL_FLAG = 'Y' field indicates personal expenses included in the report for transparency, but which will not be reimbursed.",
+      "es": "El campo PERSONAL_FLAG = 'Y' indica gastos personales incluidos en el informe para transparencia, pero que no serán reembolsados."
+    },
+    {
+      "id": 84,
+      "br": "RECEIPT_AMOUNT é na moeda do recibo (local), enquanto REIMBURSABLE_AMOUNT é na moeda de reembolso do funcionário.",
+      "en": "RECEIPT_AMOUNT is in the receipt (local) currency, while REIMBURSABLE_AMOUNT is in the employee's reimbursement currency.",
+      "es": "RECEIPT_AMOUNT es en la moneda del recibo (local), mientras que REIMBURSABLE_AMOUNT es en la moneda de reembolso del empleado."
+    },
+    {
+      "id": 85,
+      "br": "Despesas de per diem utilizam NUMBER_OF_DAYS × DAILY_AMOUNT para cálculo automático.",
+      "en": "Per diem expenses use NUMBER_OF_DAYS × DAILY_AMOUNT for automatic calculation.",
+      "es": "Los gastos de per diem utilizan NUMBER_OF_DAYS × DAILY_AMOUNT para cálculo automático."
+    },
+    {
+      "id": 86,
+      "br": "A tabela exm_expense_dists contém as distribuições contábeis (rateio por CCID, projeto, etc.) para cada linha.",
+      "en": "The exm_expense_dists table contains the accounting distributions (allocation by CCID, project, etc.) for each line.",
+      "es": "La tabla exm_expense_dists contiene las distribuciones contables (prorrateo por CCID, proyecto, etc.) para cada línea."
+    },
+    {
+      "id": 87,
+      "br": "Referências",
+      "en": "References",
+      "es": "Referencias"
+    },
+    {
+      "id": 88,
+      "br": "[Oracle Docs — EXM_EXPENSES](https://docs.oracle.com/en/cloud/saas/financials/25a/oedmf/exmexpenses.html)",
+      "en": "[Oracle Docs — EXM_EXPENSES](https://docs.oracle.com/en/cloud/saas/financials/25a/oedmf/exmexpenses.html)",
+      "es": "[Oracle Docs — EXM_EXPENSES](https://docs.oracle.com/en/cloud/saas/financials/25a/oedmf/exmexpenses.html)"
+    },
+    {
+      "id": 89,
+      "br": "ap-module-data-dictionary — Dossiê do módulo AP",
+      "en": "ap-module-data-dictionary — AP module dossier",
+      "es": "ap-module-data-dictionary — Dosier del módulo AP"
+    }
+  ]
+}

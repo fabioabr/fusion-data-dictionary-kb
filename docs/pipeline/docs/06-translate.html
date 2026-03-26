@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>06 — Traduzir EN/ES — Pipeline de Geração</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet">
+    <style>
+
+:root {
+    --primary: #5BA4D9; --primary-dark: #3182B1; --primary-light: rgba(91, 164, 217, 0.12);
+    --secondary: #5BB8C4; --success: #6ABF3B; --success-light: rgba(106, 191, 59, 0.12); --success-border: rgba(106, 191, 59, 0.3);
+    --warning: #F4AC00; --warning-light: rgba(244, 172, 0, 0.12); --warning-border: rgba(244, 172, 0, 0.3);
+    --danger: #E85D54; --danger-light: rgba(232, 93, 84, 0.12); --danger-border: rgba(232, 93, 84, 0.3);
+    --info: #38BDF8; --info-light: rgba(56, 189, 248, 0.12); --info-border: rgba(56, 189, 248, 0.3);
+    --bg: #0f1319; --card-bg: #1a1f2e; --text: #e2e8f0; --text-muted: #8b9ab5; --border: #2a3244;
+    --purple: #9B96FF; --purple-light: rgba(155, 150, 255, 0.12); --orange: #FF9473; --teal: #2DD4BF;
+    --card-header-bg: #141924; --th-bg: #141924; --th-bg-hover: #1e2638;
+    --card-shadow: 0 2px 12px rgba(91, 164, 217, 0.1), 0 1px 4px rgba(0,0,0,0.3);
+}
+[data-theme="light"] {
+    --primary: #3182B1; --primary-dark: #256a94; --primary-light: rgba(49, 130, 177, 0.1);
+    --secondary: #418F9D; --success: #4C7E1B; --success-light: rgba(76, 126, 27, 0.08); --success-border: rgba(76, 126, 27, 0.25);
+    --warning: #F4AC00; --warning-light: rgba(244, 172, 0, 0.08); --warning-border: rgba(244, 172, 0, 0.25);
+    --danger: #C72F25; --danger-light: rgba(199, 47, 37, 0.08); --danger-border: rgba(199, 47, 37, 0.25);
+    --info: #0EA5E8; --info-light: rgba(14, 165, 232, 0.08); --info-border: rgba(14, 165, 232, 0.25);
+    --bg: #dde2e8; --card-bg: #ffffff; --text: #212B37; --text-muted: #6E829F; --border: #e2e8f0;
+    --purple: #7B76FE; --purple-light: rgba(123, 118, 254, 0.08); --orange: #FE7C58; --teal: #00D8D8;
+    --card-header-bg: rgba(49, 130, 177, 0.2); --th-bg: rgba(49, 130, 177, 0.2); --th-bg-hover: rgba(49, 130, 177, 0.23);
+    --card-shadow: 0 2px 8px rgba(49, 130, 177, 0.24), 0 1px 3px rgba(0,0,0,0.1);
+}
+[data-theme="light"] .search-input { background: #eaf1f7; }
+
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, a, img, ul, ol, li,
+header, footer, nav, section, article, aside, button, input, select, textarea,
+table, tr, td, th, form, label, fieldset, legend { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Poppins', sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; }
+.container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+
+.header { background: linear-gradient(135deg, #1a2332 0%, #15202e 50%, #1a2838 100%); color: white; padding: 36px 0 0; position: relative; overflow: hidden; }
+.header::before { content: ''; position: absolute; top: -50%; right: -10%; width: 500px; height: 500px; background: rgba(255,255,255,0.03); border-radius: 50%; z-index: 0; }
+.header-content { position: relative; z-index: 1; }
+.header-bc-row { display: flex; align-items: center; justify-content: space-between; margin-bottom: 16px; }
+.breadcrumb { font-size: 0.78rem; color: rgba(255,255,255,0.5); }
+.breadcrumb a { color: rgba(255,255,255,0.65); text-decoration: none; }
+.breadcrumb a:hover { color: white; text-decoration: underline; }
+.breadcrumb .sep { margin: 0 6px; opacity: 0.4; }
+.breadcrumb .current { color: rgba(255,255,255,0.9); font-weight: 500; }
+.header-controls { display: flex; align-items: center; gap: 8px; }
+.lang-btn { display: inline-flex; align-items: center; gap: 5px; background: rgba(255,255,255,0.08); border: 2px solid transparent; border-radius: 8px; padding: 4px 10px 4px 8px; font-family: 'Poppins', sans-serif; font-size: 0.72rem; font-weight: 600; letter-spacing: 0.3px; color: rgba(255,255,255,0.55); cursor: pointer; transition: all 0.25s; line-height: 1; }
+.lang-btn svg { flex-shrink: 0; }
+.lang-btn:hover { background: rgba(255,255,255,0.18); color: rgba(255,255,255,0.9); }
+.lang-btn.active { border-color: #ffffff; background: rgba(255,255,255,0.22); color: #ffffff; box-shadow: 0 0 8px rgba(255,255,255,0.25); }
+[data-theme="light"] .header { background: linear-gradient(135deg, #1a2332 0%, #15202e 50%, #1a2838 100%); color: white; }
+[data-theme="light"] .footer { background: linear-gradient(135deg, #1a2332 0%, #15202e 50%, #1a2838 100%); color: white; }
+
+.header-left { display: flex; align-items: center; gap: 16px; }
+.header-logo { height: 40px; }
+.logo-light { display: none; } .logo-dark { display: inline-block; }
+.header h1 { font-size: 1.5rem; font-weight: 700; letter-spacing: -0.5px; }
+.header .subtitle { font-size: 0.95rem; opacity: 0.85; font-weight: 300; margin-top: 2px; }
+.header-badges { display: flex; gap: 8px; align-items: center; margin-top: 10px; flex-wrap: wrap; }
+.header-badge { background: rgba(255,255,255,0.15); padding: 6px 14px; border-radius: 8px; font-size: 0.78rem; display: flex; align-items: center; gap: 6px; backdrop-filter: blur(10px); }
+
+.stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 16px; margin: 28px 0; }
+.stat-card { background: var(--card-bg); border-radius: 12px; padding: 18px 20px; box-shadow: var(--card-shadow); border: 1px solid var(--border); display: flex; align-items: center; gap: 14px; }
+.stat-card-icon { width: 44px; height: 44px; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 1.3rem; color: white; flex-shrink: 0; }
+.stat-card-number { font-size: 1.12rem; font-weight: 700; line-height: 1.1; }
+.stat-card-label { font-size: 0.72rem; color: var(--text-muted); font-weight: 500; text-transform: uppercase; letter-spacing: 0.3px; }
+.bg-primary { background: var(--primary); } .bg-success { background: var(--success); }
+.bg-info { background: var(--info); } .bg-warning { background: var(--warning); }
+.bg-purple { background: var(--purple); } .bg-orange { background: var(--orange); } .bg-teal { background: var(--teal); }
+.bg-danger { background: var(--danger); }
+
+.intro-text { font-size: 0.88rem; color: var(--text-muted); line-height: 1.7; margin-bottom: 28px; padding: 20px 24px; background: var(--card-bg); border-radius: 12px; border: 1px solid var(--border); border-left: 3px solid var(--primary); box-shadow: var(--card-shadow); }
+[data-theme="light"] .intro-text { background: #eaf1f7; }
+
+.section-title { font-size: 1.1rem; font-weight: 600; margin: 32px 0 16px; display: flex; align-items: center; gap: 10px; }
+.section-title i { color: var(--primary); font-size: 1.2rem; }
+
+.pill { display: inline-block; padding: 2px 10px; border-radius: 12px; font-size: 0.68rem; font-weight: 600; }
+.pill-warning { background: var(--warning-light); color: var(--warning); border: 1px solid var(--warning-border); }
+.pill-success { background: var(--success-light); color: var(--success); border: 1px solid var(--success-border); }
+.pill-info { background: var(--info-light); color: var(--info); border: 1px solid var(--info-border); }
+.pill-danger { background: var(--danger-light); color: var(--danger); border: 1px solid var(--danger-border); }
+.pill-purple { background: var(--purple-light); color: var(--purple); border: 1px solid rgba(155, 150, 255, 0.3); }
+
+.footer { background: linear-gradient(135deg, #1a2332 0%, #15202e 50%, #1a2838 100%); color: white; padding: 36px 0; position: relative; overflow: hidden; margin-top: 32px; }
+.footer::before { content: ''; position: absolute; bottom: -50%; left: -10%; width: 500px; height: 500px; background: rgba(255,255,255,0.03); border-radius: 50%; z-index: 0; }
+.footer-content { position: relative; z-index: 1; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 24px; }
+.footer-left { display: flex; align-items: center; gap: 16px; }
+.footer-avatar { width: 48px; height: 48px; border-radius: 12px; background: rgba(255,255,255,0.15); display: flex; align-items: center; justify-content: center; font-size: 1.1rem; font-weight: 700; }
+.footer-author-name { font-size: 0.95rem; font-weight: 600; }
+.footer-author-role { font-size: 0.78rem; opacity: 0.7; }
+.footer-author-email { font-size: 0.72rem; opacity: 0.55; }
+.footer-author-email a { color: rgba(255,255,255,0.55); text-decoration: none; }
+.footer-author-email a:hover { color: white; }
+.footer-right { text-align: right; }
+.footer-doc-title { font-size: 0.85rem; font-weight: 500; opacity: 0.9; }
+.footer-doc-detail { font-size: 0.72rem; opacity: 0.6; }
+.footer-seal { display: flex; align-items: center; gap: 8px; margin-top: 20px; padding-top: 16px; border-top: 1px solid rgba(255,255,255,0.12); font-size: 0.7rem; opacity: 0.5; justify-content: center; }
+.footer-seal i { font-size: 1rem; }
+
+.back-to-top { position: fixed; bottom: 32px; right: 32px; width: 44px; height: 44px; border-radius: 12px; background: var(--primary); color: white; border: none; cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 1.3rem; box-shadow: 0 4px 16px rgba(91,164,217,0.35); opacity: 0; visibility: hidden; transform: translateY(10px); transition: all 0.3s; z-index: 999; }
+.back-to-top.visible { opacity: 1; visibility: visible; transform: translateY(0); }
+.back-to-top:hover { background: var(--primary-dark); }
+
+/* Cards */
+.card { background: var(--card-bg); border-radius: 12px; border: 1px solid var(--border); box-shadow: var(--card-shadow); margin-bottom: 20px; overflow: hidden; }
+.card-header { display: flex; align-items: center; gap: 10px; padding: 14px 18px; border-bottom: 1px solid var(--border); background: var(--card-header-bg); }
+.card-header-icon { width: 32px; height: 32px; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 1rem; color: white; flex-shrink: 0; }
+.card-title { font-weight: 600; font-size: 0.95rem; flex: 1; }
+.card-body { padding: 18px; font-size: 0.85rem; line-height: 1.7; }
+.card-body p { margin-bottom: 12px; }
+
+/* Checklist */
+.checklist { list-style: none; padding: 0; }
+.checklist li { padding: 6px 0; font-size: 0.85rem; display: flex; align-items: flex-start; gap: 8px; }
+.checklist li i { color: var(--success); margin-top: 3px; flex-shrink: 0; }
+
+/* Code blocks */
+.code-block { background: #0d1117; border-radius: 8px; padding: 16px 20px; font-family: 'Courier New', monospace; font-size: 0.78rem; color: #e6edf3; overflow-x: auto; margin: 12px 0; line-height: 1.6; border: 1px solid #30363d; white-space: pre; }
+[data-theme="light"] .code-block { background: #f6f8fa; color: #24292f; border-color: #d0d7de; }
+
+/* Numbered steps */
+.numbered-steps { counter-reset: step; list-style: none; padding: 0; }
+.numbered-steps li { counter-increment: step; padding: 8px 0 8px 36px; position: relative; font-size: 0.85rem; border-left: 2px solid var(--border); margin-left: 14px; }
+.numbered-steps li::before { content: counter(step); position: absolute; left: -15px; top: 6px; width: 28px; height: 28px; border-radius: 50%; background: var(--primary); color: white; display: flex; align-items: center; justify-content: center; font-size: 0.72rem; font-weight: 700; }
+
+/* Alerts */
+.alert { padding: 12px 16px; border-radius: 8px; font-size: 0.82rem; margin-bottom: 10px; border: 1px solid; line-height: 1.6; }
+.alert > i:first-child { font-size: 1.1rem; margin-right: 8px; vertical-align: middle; }
+.alert-info { background: var(--info-light); border-color: var(--info-border); color: #6ecbf5; }
+[data-theme="light"] .alert-info { color: #0878a8; }
+.alert-warning { background: var(--warning-light); border-color: var(--warning-border); color: var(--warning); }
+.alert-success { background: var(--success-light); border-color: var(--success-border); color: var(--success); }
+
+/* File path styling */
+.file-path { font-family: 'Courier New', monospace; font-size: 0.8rem; background: rgba(91,164,217,0.1); padding: 2px 8px; border-radius: 4px; color: var(--primary); word-break: break-all; }
+
+/* Input files table */
+.input-table { width: 100%; border-collapse: collapse; font-size: 0.82rem; }
+.input-table th { background: var(--th-bg); text-align: left; padding: 10px 14px; font-weight: 600; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.3px; color: var(--text-muted); }
+.input-table td { padding: 10px 14px; border-top: 1px solid var(--border); vertical-align: top; }
+.input-table tr:hover td { background: var(--th-bg-hover); }
+
+@media (max-width: 768px) { .stats-grid { grid-template-columns: 1fr 1fr; } }
+
+    </style>
+</head>
+<body>
+
+<header class="header">
+    <div class="container">
+        <div class="header-content">
+            <div class="header-bc-row">
+                <nav class="breadcrumb">
+                    <a href="index.html" data-i18n="bc_home">Pipeline de Geração</a>
+                    <span class="sep">/</span>
+                    <span class="current" data-i18n="bc_current">06 — Traduzir EN/ES</span>
+                </nav>
+                <div class="header-controls">
+                    <button class="lang-btn active" onclick="switchLang('pt')" id="lang-pt"><svg width="20" height="14" viewBox="0 0 20 14"><rect width="20" height="14" rx="1" fill="#009739"/><polygon points="10,1.5 19,7 10,12.5 1,7" fill="#FEDD00"/><circle cx="10" cy="7" r="3.2" fill="#012169"/><rect x="7.8" y="6.2" width="4.4" height="0.4" rx="0.2" fill="#fff" transform="rotate(-8 10 7)"/></svg> <span>PT</span></button>
+                    <button class="lang-btn" onclick="switchLang('en')" id="lang-en"><svg width="20" height="14" viewBox="0 0 20 14"><rect width="20" height="14" rx="1" fill="#B22234"/><rect y="1.08" width="20" height="1.08" fill="#fff"/><rect y="3.23" width="20" height="1.08" fill="#fff"/><rect y="5.38" width="20" height="1.08" fill="#fff"/><rect y="7.54" width="20" height="1.08" fill="#fff"/><rect y="9.69" width="20" height="1.08" fill="#fff"/><rect y="11.85" width="20" height="1.08" fill="#fff"/><rect width="8" height="7.54" fill="#3C3B6E"/></svg> <span>EN</span></button>
+                    <button class="lang-btn" onclick="switchLang('es')" id="lang-es"><svg width="20" height="14" viewBox="0 0 20 14"><rect width="20" height="14" rx="1" fill="#AA151B"/><rect y="3" width="20" height="8" fill="#F1BF00"/></svg> <span>ES</span></button>
+                    <div class="header-badge" style="border:none;cursor:pointer" onclick="toggleTheme()"><i id="theme-icon" class="ri-sun-line"></i></div>
+                </div>
+            </div>
+            <div class="header-left" style="margin-bottom:24px">
+                <img class="header-logo logo-dark" src="../../assets/logos/logo-dark.png" alt="Logo">
+                <img class="header-logo logo-light" src="../../assets/logos/logo-light.png" alt="Logo">
+                <div>
+                    <h1><i class="ri-global-line" style="margin-right:8px"></i> <span data-i18n="title">06 — Traduzir EN/ES</span></h1>
+                    <div class="subtitle" data-i18n="subtitle">i18n.json (pt-BR) → i18n.json (pt-BR + EN + ES)</div>
+                    <div class="header-badges">
+                        <div class="header-badge"><i class="ri-robot-line"></i> <span data-i18n="badge_engine">Ollama ou Opus</span></div>
+                        <div class="header-badge"><i class="ri-timer-line"></i> <span data-i18n="badge_time">~30min Ollama / ~3min Opus</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main class="container">
+
+    <!-- 1. Objetivo -->
+    <div class="section-title"><i class="ri-focus-3-line"></i> <span data-i18n="sec_objetivo">Objetivo</span></div>
+    <div class="intro-text" data-i18n="objetivo_text">
+        Esta etapa preenche os campos <code>en</code> (inglês) e <code>es</code> (espanhol) nos arquivos <code>.i18n.json</code> gerados na etapa 05. Duas estratégias estão disponíveis: <strong>Ollama local</strong> (gratuito, mais lento) ou <strong>Opus paralelo</strong> (via API, mais rápido). Termos técnicos do domínio Oracle Fusion são mantidos em inglês em todas as traduções para preservar a consistência do glossário técnico.
+    </div>
+
+    <!-- 2. DOR -->
+    <div class="section-title"><i class="ri-checkbox-circle-line"></i> <span data-i18n="sec_dor">DOR — Definition of Ready</span></div>
+    <div class="card">
+        <div class="card-header">
+            <div class="card-header-icon bg-warning"><i class="ri-alert-line"></i></div>
+            <div class="card-title" data-i18n="dor_title">Pré-requisitos para executar esta etapa</div>
+        </div>
+        <div class="card-body">
+            <ul class="checklist">
+                <li><i class="ri-checkbox-circle-fill"></i> <span data-i18n="dor_1">Arquivos <code>.i18n.json</code> da etapa 05 existem com campo <code>br</code> preenchido e <code>en</code>/<code>es</code> como <code>null</code></span></li>
+                <li><i class="ri-checkbox-circle-fill"></i> <span data-i18n="dor_2">Ollama rodando localmente com modelo <code>translategemma:4b</code> <strong>OU</strong> API key Anthropic configurada</span></li>
+                <li><i class="ri-checkbox-circle-fill"></i> <span data-i18n="dor_3">Python 3.12+ instalado com <code>requests</code> (para Ollama) ou Claude Code (para Opus)</span></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 3. DOD -->
+    <div class="section-title"><i class="ri-shield-check-line"></i> <span data-i18n="sec_dod">DOD — Definition of Done</span></div>
+    <div class="card">
+        <div class="card-header">
+            <div class="card-header-icon bg-success"><i class="ri-check-double-line"></i></div>
+            <div class="card-title" data-i18n="dod_title">Critérios de aceite para esta etapa</div>
+        </div>
+        <div class="card-body">
+            <ul class="checklist">
+                <li><i class="ri-checkbox-circle-fill"></i> <span data-i18n="dod_1">Todos os campos <code>en</code> e <code>es</code> preenchidos em todos os <code>.i18n.json</code></span></li>
+                <li><i class="ri-checkbox-circle-fill"></i> <span data-i18n="dod_2">Termos técnicos mantidos em inglês (workflow, business unit, subledger, posting, etc.)</span></li>
+                <li><i class="ri-checkbox-circle-fill"></i> <span data-i18n="dod_3">Campo <code>translated_at</code> atualizado com timestamp da tradução</span></li>
+                <li><i class="ri-checkbox-circle-fill"></i> <span data-i18n="dod_4">Nenhum campo <code>en</code> ou <code>es</code> permanece como <code>null</code></span></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 4. Entrada -->
+    <div class="section-title"><i class="ri-inbox-line"></i> <span data-i18n="sec_entrada">Entrada</span></div>
+    <div class="card">
+        <div class="card-header">
+            <div class="card-header-icon bg-primary"><i class="ri-global-line"></i></div>
+            <div class="card-title" data-i18n="entrada_title">Arquivos de Entrada</div>
+        </div>
+        <div class="card-body">
+            <table class="input-table">
+                <thead>
+                    <tr>
+                        <th data-i18n="th_file">Arquivo</th>
+                        <th data-i18n="th_path">Caminho</th>
+                        <th data-i18n="th_desc">Descrição</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><span class="pill pill-info">i18n</span></td>
+                        <td><span class="file-path">src/kb/.../docs/{MOD}/tables/*.i18n.json</span></td>
+                        <td data-i18n="entrada_tables">Arquivos i18n de tabelas com <code>br</code> preenchido, <code>en</code>/<code>es</code> null</td>
+                    </tr>
+                    <tr>
+                        <td><span class="pill pill-purple">i18n</span></td>
+                        <td><span class="file-path">src/kb/.../docs/{MOD}/pvos/*.i18n.json</span></td>
+                        <td data-i18n="entrada_pvos">Arquivos i18n de PVOs com <code>br</code> preenchido, <code>en</code>/<code>es</code> null</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- 5. Saída -->
+    <div class="section-title"><i class="ri-file-text-line"></i> <span data-i18n="sec_saida">Saída</span></div>
+    <div class="card">
+        <div class="card-header">
+            <div class="card-header-icon bg-success"><i class="ri-translate-2"></i></div>
+            <div class="card-title" data-i18n="saida_title">Arquivos Atualizados</div>
+        </div>
+        <div class="card-body">
+            <p data-i18n="saida_desc">Os mesmos <code>.i18n.json</code> são atualizados in-place com <code>en</code> e <code>es</code> preenchidos:</p>
+            <div class="code-block">{
+  "source": "gl_balances.md",
+  "source_hash": "a3f2b8c1d4e5f6a7b8c9d0e1f2a3b4c5",
+  "translated_at": "2026-03-25T14:32:00Z",
+  "items": [
+    {
+      "id": "overview",
+      "br": "Armazena os saldos contábeis por período, ledger e combinação de contas.",
+      "en": "Stores accounting balances by period, ledger, and account combination.",
+      "es": "Almacena los saldos contables por período, ledger y combinación de cuentas."
+    },
+    {
+      "id": "col_ledger_id",
+      "br": "Referência ao ledger (razão contábil) ao qual o saldo pertence.",
+      "en": "Reference to the ledger to which the balance belongs.",
+      "es": "Referencia al ledger al cual pertenece el saldo."
+    }
+  ]
+}</div>
+        </div>
+    </div>
+
+    <!-- 6. Duas Estratégias -->
+    <div class="section-title"><i class="ri-route-line"></i> <span data-i18n="sec_strategies">Duas Estratégias</span></div>
+    <div class="card">
+        <div class="card-header">
+            <div class="card-header-icon bg-info"><i class="ri-git-branch-line"></i></div>
+            <div class="card-title" data-i18n="strategies_title">Ollama Local vs. Opus Paralelo</div>
+        </div>
+        <div class="card-body">
+            <table class="input-table">
+                <thead>
+                    <tr>
+                        <th data-i18n="th_aspect">Aspecto</th>
+                        <th data-i18n="th_ollama">Ollama Local</th>
+                        <th data-i18n="th_opus">Opus Paralelo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td data-i18n="row_script">Script</td>
+                        <td><span class="file-path">translate_json.py --batch</span></td>
+                        <td data-i18n="row_opus_script">Claude Code + Agent tool</td>
+                    </tr>
+                    <tr>
+                        <td data-i18n="row_model">Modelo</td>
+                        <td>translategemma:4b</td>
+                        <td>Claude Opus</td>
+                    </tr>
+                    <tr>
+                        <td data-i18n="row_cost">Custo</td>
+                        <td><span class="pill pill-success">Gratuito</span></td>
+                        <td><span class="pill pill-warning">API tokens</span></td>
+                    </tr>
+                    <tr>
+                        <td data-i18n="row_speed">Velocidade</td>
+                        <td data-i18n="row_ollama_speed">~30 min (2.391 arquivos)</td>
+                        <td data-i18n="row_opus_speed">~3 min (4 agentes paralelos)</td>
+                    </tr>
+                    <tr>
+                        <td data-i18n="row_quality">Qualidade</td>
+                        <td><span class="pill pill-info">Boa</span></td>
+                        <td><span class="pill pill-success">Excelente</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- 7. Como Funciona — Ollama -->
+    <div class="section-title"><i class="ri-settings-3-line"></i> <span data-i18n="sec_ollama">Como Funciona — Ollama</span></div>
+    <div class="card">
+        <div class="card-header">
+            <div class="card-header-icon bg-orange"><i class="ri-server-line"></i></div>
+            <div class="card-title" data-i18n="ollama_title">Tradução via Ollama Local</div>
+        </div>
+        <div class="card-body">
+            <ol class="numbered-steps">
+                <li data-i18n="ollama_1">Coleta todos os <code>.i18n.json</code> que ainda possuem <code>en</code> ou <code>es</code> como <code>null</code></li>
+                <li data-i18n="ollama_2">Agrupa os textos pendentes em batches de 25 itens numerados</li>
+                <li data-i18n="ollama_3">Envia cada batch para o Ollama via REST API (<code>http://localhost:11434/api/generate</code>) com prompt: "Translate each numbered text to {lang}. Keep technical terms in English."</li>
+                <li data-i18n="ollama_4">Recebe a resposta com textos numerados e faz o parse de volta para os itens originais</li>
+                <li data-i18n="ollama_5">Atualiza os campos <code>en</code> e <code>es</code> nos <code>.i18n.json</code> e registra o <code>translated_at</code></li>
+            </ol>
+        </div>
+    </div>
+
+    <!-- 8. Como Funciona — Opus -->
+    <div class="section-title"><i class="ri-rocket-line"></i> <span data-i18n="sec_opus">Como Funciona — Opus</span></div>
+    <div class="card">
+        <div class="card-header">
+            <div class="card-header-icon bg-purple"><i class="ri-speed-up-line"></i></div>
+            <div class="card-title" data-i18n="opus_title">Tradução via Opus Paralelo</div>
+        </div>
+        <div class="card-body">
+            <ol class="numbered-steps">
+                <li data-i18n="opus_1">Consolida todos os itens pendentes (com <code>en</code>/<code>es</code> null) em um único JSON</li>
+                <li data-i18n="opus_2">Divide os itens em 4 chunks balanceados</li>
+                <li data-i18n="opus_3">Lança 4 agentes Opus em paralelo, cada um traduzindo seu chunk para EN e ES simultaneamente</li>
+                <li data-i18n="opus_4">Cada agente retorna um JSON com <code>{id: {en: "...", es: "..."}}</code></li>
+                <li data-i18n="opus_5">Os resultados são consolidados e escritos de volta nos <code>.i18n.json</code> individuais</li>
+            </ol>
+        </div>
+    </div>
+
+    <!-- 9. Termos Técnicos -->
+    <div class="section-title"><i class="ri-bookmark-line"></i> <span data-i18n="sec_termos">Termos Técnicos (manter em inglês)</span></div>
+    <div class="card">
+        <div class="card-header">
+            <div class="card-header-icon bg-teal"><i class="ri-book-mark-line"></i></div>
+            <div class="card-title" data-i18n="termos_title">Glossário de Termos Preservados</div>
+        </div>
+        <div class="card-body">
+            <p data-i18n="termos_desc">Os seguintes termos técnicos são mantidos em inglês em todas as traduções (EN e ES), para preservar a consistência com a documentação Oracle e o glossário corporativo:</p>
+            <p>
+                <span class="pill pill-info">workflow</span>
+                <span class="pill pill-info">business unit</span>
+                <span class="pill pill-info">subledger</span>
+                <span class="pill pill-info">posting</span>
+                <span class="pill pill-info">BICC</span>
+                <span class="pill pill-info">payroll</span>
+                <span class="pill pill-info">HCM</span>
+                <span class="pill pill-info">date-effective</span>
+                <span class="pill pill-info">ledger</span>
+                <span class="pill pill-info">journal</span>
+                <span class="pill pill-info">batch</span>
+                <span class="pill pill-info">invoice</span>
+                <span class="pill pill-info">purchase order</span>
+                <span class="pill pill-info">View Object</span>
+                <span class="pill pill-info">Application Module</span>
+                <span class="pill pill-info">PVO</span>
+                <span class="pill pill-info">flex field</span>
+                <span class="pill pill-info">lookup</span>
+                <span class="pill pill-info">setup</span>
+                <span class="pill pill-info">staging</span>
+                <span class="pill pill-info">interface</span>
+                <span class="pill pill-info">header</span>
+                <span class="pill pill-info">line</span>
+                <span class="pill pill-info">distribution</span>
+            </p>
+        </div>
+    </div>
+
+    <!-- 10. Uso -->
+    <div class="section-title"><i class="ri-terminal-box-line"></i> <span data-i18n="sec_uso">Uso</span></div>
+    <div class="card">
+        <div class="card-header">
+            <div class="card-header-icon bg-primary"><i class="ri-terminal-line"></i></div>
+            <div class="card-title" data-i18n="uso_title">Comandos de Execução</div>
+        </div>
+        <div class="card-body">
+            <p data-i18n="uso_ollama_label"><strong>Via Ollama (recomendado para batch):</strong></p>
+            <div class="code-block"># Traduzir todos os i18n pendentes de um módulo
+cd Pipeline/06-translate/
+python translate_json.py --batch --module GL
+
+# Traduzir todos os módulos
+python translate_json.py --batch --all
+
+# Traduzir apenas EN (pular ES)
+python translate_json.py --batch --module GL --lang en</div>
+
+            <p data-i18n="uso_opus_label" style="margin-top:16px"><strong>Via Opus (mais rápido, usa API):</strong></p>
+            <div class="code-block"># Via Claude Code — traduzir com agentes paralelos
+# (dentro do Claude Code, usar Agent tool)
+
+# Prompt para o agente:
+# "Leia todos os .i18n.json pendentes em src/kb/.../docs/GL/,
+#  traduza os campos br para en e es,
+#  mantendo termos técnicos em inglês,
+#  e atualize os arquivos."</div>
+        </div>
+    </div>
+
+    <!-- 11. Notas -->
+    <div class="section-title"><i class="ri-information-line"></i> <span data-i18n="sec_notas">Notas Importantes</span></div>
+
+    <div class="alert alert-info">
+        <i class="ri-information-line"></i>
+        <span data-i18n="nota_1">Traduções já preenchidas (<code>en</code>/<code>es</code> não-null) são <strong>puladas</strong> por padrão. Use <code>--force</code> para retraduzir tudo.</span>
+    </div>
+    <div class="alert alert-info">
+        <i class="ri-information-line"></i>
+        <span data-i18n="nota_2">O Ollama processa em batches de 25 textos numerados para maximizar throughput sem perder a correlação entrada/saída.</span>
+    </div>
+    <div class="alert alert-warning">
+        <i class="ri-alert-line"></i>
+        <span data-i18n="nota_3">Se o Ollama retornar menos linhas do que o batch enviado, o script identifica os itens faltantes e os reenvia em um batch de retry.</span>
+    </div>
+    <div class="alert alert-success">
+        <i class="ri-checkbox-circle-line"></i>
+        <span data-i18n="nota_4">A estratégia Opus paralela é <strong>~10x mais rápida</strong> que Ollama, mas consome tokens da API. Recomendada para runs iniciais; Ollama para re-traduções pontuais.</span>
+    </div>
+
+    <!-- 12. Métricas -->
+    <div class="section-title"><i class="ri-bar-chart-grouped-line"></i> <span data-i18n="sec_metricas">Métricas do Último Run</span></div>
+
+    <div class="stats-grid">
+        <div class="stat-card">
+            <div class="stat-card-icon bg-info"><i class="ri-file-text-line"></i></div>
+            <div>
+                <div class="stat-card-number" style="color:var(--info)">2.391</div>
+                <div class="stat-card-label" data-i18n="stat_files">Arquivos Traduzidos</div>
+            </div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-card-icon bg-purple"><i class="ri-text"></i></div>
+            <div>
+                <div class="stat-card-number" style="color:var(--purple)">~5.000</div>
+                <div class="stat-card-label" data-i18n="stat_segments">Segmentos de Texto</div>
+            </div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-card-icon bg-success"><i class="ri-global-line"></i></div>
+            <div>
+                <div class="stat-card-number" style="color:var(--success)">2</div>
+                <div class="stat-card-label" data-i18n="stat_langs">Idiomas Adicionados (EN + ES)</div>
+            </div>
+        </div>
+    </div>
+
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-left">
+                <div class="footer-avatar">FR</div>
+                <div>
+                    <div class="footer-author-name">Fabio A. B. Rodrigues</div>
+                    <div class="footer-author-role">Arquitetura e Produtividade Corporativa</div>
+                    <div class="footer-author-email"><a href="mailto:fabio.rodrigues.consult@patria.com">fabio.rodrigues.consult@patria.com</a></div>
+                </div>
+            </div>
+            <div class="footer-right">
+                <div class="footer-doc-title">Patria Investimentos</div>
+                <div class="footer-doc-detail" data-i18n="footer_detail">Pipeline de Geração &middot; 06 — Traduzir EN/ES</div>
+            </div>
+        </div>
+        <div class="footer-seal"><i class="ri-shield-check-line"></i> Oracle Fusion Data Dictionary — Pipeline</div>
+    </div>
+</footer>
+
+<button class="back-to-top" id="backToTop" onclick="window.scrollTo({top:0,behavior:'smooth'})"><i class="ri-arrow-up-line"></i></button>
+
+<script>
+var currentLang = 'pt';
+
+var i18n = {
+    pt: {
+        bc_home: 'Pipeline de Geração',
+        bc_current: '06 — Traduzir EN/ES',
+        title: '06 — Traduzir EN/ES',
+        subtitle: 'i18n.json (pt-BR) → i18n.json (pt-BR + EN + ES)',
+        badge_engine: 'Ollama ou Opus',
+        badge_time: '~30min Ollama / ~3min Opus',
+        sec_objetivo: 'Objetivo',
+        objetivo_text: 'Esta etapa preenche os campos <code>en</code> (inglês) e <code>es</code> (espanhol) nos arquivos <code>.i18n.json</code> gerados na etapa 05. Duas estratégias estão disponíveis: <strong>Ollama local</strong> (gratuito, mais lento) ou <strong>Opus paralelo</strong> (via API, mais rápido). Termos técnicos do domínio Oracle Fusion são mantidos em inglês em todas as traduções para preservar a consistência do glossário técnico.',
+        sec_dor: 'DOR — Definition of Ready',
+        dor_title: 'Pré-requisitos para executar esta etapa',
+        dor_1: 'Arquivos <code>.i18n.json</code> da etapa 05 existem com campo <code>br</code> preenchido e <code>en</code>/<code>es</code> como <code>null</code>',
+        dor_2: 'Ollama rodando localmente com modelo <code>translategemma:4b</code> <strong>OU</strong> API key Anthropic configurada',
+        dor_3: 'Python 3.12+ instalado com <code>requests</code> (para Ollama) ou Claude Code (para Opus)',
+        sec_dod: 'DOD — Definition of Done',
+        dod_title: 'Critérios de aceite para esta etapa',
+        dod_1: 'Todos os campos <code>en</code> e <code>es</code> preenchidos em todos os <code>.i18n.json</code>',
+        dod_2: 'Termos técnicos mantidos em inglês (workflow, business unit, subledger, posting, etc.)',
+        dod_3: 'Campo <code>translated_at</code> atualizado com timestamp da tradução',
+        dod_4: 'Nenhum campo <code>en</code> ou <code>es</code> permanece como <code>null</code>',
+        sec_entrada: 'Entrada',
+        entrada_title: 'Arquivos de Entrada',
+        th_file: 'Arquivo',
+        th_path: 'Caminho',
+        th_desc: 'Descrição',
+        entrada_tables: 'Arquivos i18n de tabelas com <code>br</code> preenchido, <code>en</code>/<code>es</code> null',
+        entrada_pvos: 'Arquivos i18n de PVOs com <code>br</code> preenchido, <code>en</code>/<code>es</code> null',
+        sec_saida: 'Saída',
+        saida_title: 'Arquivos Atualizados',
+        saida_desc: 'Os mesmos <code>.i18n.json</code> são atualizados in-place com <code>en</code> e <code>es</code> preenchidos:',
+        sec_strategies: 'Duas Estratégias',
+        strategies_title: 'Ollama Local vs. Opus Paralelo',
+        th_aspect: 'Aspecto',
+        th_ollama: 'Ollama Local',
+        th_opus: 'Opus Paralelo',
+        row_script: 'Script',
+        row_opus_script: 'Claude Code + Agent tool',
+        row_model: 'Modelo',
+        row_cost: 'Custo',
+        row_speed: 'Velocidade',
+        row_ollama_speed: '~30 min (2.391 arquivos)',
+        row_opus_speed: '~3 min (4 agentes paralelos)',
+        row_quality: 'Qualidade',
+        sec_ollama: 'Como Funciona — Ollama',
+        ollama_title: 'Tradução via Ollama Local',
+        ollama_1: 'Coleta todos os <code>.i18n.json</code> que ainda possuem <code>en</code> ou <code>es</code> como <code>null</code>',
+        ollama_2: 'Agrupa os textos pendentes em batches de 25 itens numerados',
+        ollama_3: 'Envia cada batch para o Ollama via REST API (<code>http://localhost:11434/api/generate</code>) com prompt: "Translate each numbered text to {lang}. Keep technical terms in English."',
+        ollama_4: 'Recebe a resposta com textos numerados e faz o parse de volta para os itens originais',
+        ollama_5: 'Atualiza os campos <code>en</code> e <code>es</code> nos <code>.i18n.json</code> e registra o <code>translated_at</code>',
+        sec_opus: 'Como Funciona — Opus',
+        opus_title: 'Tradução via Opus Paralelo',
+        opus_1: 'Consolida todos os itens pendentes (com <code>en</code>/<code>es</code> null) em um único JSON',
+        opus_2: 'Divide os itens em 4 chunks balanceados',
+        opus_3: 'Lança 4 agentes Opus em paralelo, cada um traduzindo seu chunk para EN e ES simultaneamente',
+        opus_4: 'Cada agente retorna um JSON com <code>{id: {en: "...", es: "..."}}</code>',
+        opus_5: 'Os resultados são consolidados e escritos de volta nos <code>.i18n.json</code> individuais',
+        sec_termos: 'Termos Técnicos (manter em inglês)',
+        termos_title: 'Glossário de Termos Preservados',
+        termos_desc: 'Os seguintes termos técnicos são mantidos em inglês em todas as traduções (EN e ES), para preservar a consistência com a documentação Oracle e o glossário corporativo:',
+        sec_uso: 'Uso',
+        uso_title: 'Comandos de Execução',
+        uso_ollama_label: '<strong>Via Ollama (recomendado para batch):</strong>',
+        uso_opus_label: '<strong>Via Opus (mais rápido, usa API):</strong>',
+        sec_notas: 'Notas Importantes',
+        nota_1: 'Traduções já preenchidas (<code>en</code>/<code>es</code> não-null) são <strong>puladas</strong> por padrão. Use <code>--force</code> para retraduzir tudo.',
+        nota_2: 'O Ollama processa em batches de 25 textos numerados para maximizar throughput sem perder a correlação entrada/saída.',
+        nota_3: 'Se o Ollama retornar menos linhas do que o batch enviado, o script identifica os itens faltantes e os reenvia em um batch de retry.',
+        nota_4: 'A estratégia Opus paralela é <strong>~10x mais rápida</strong> que Ollama, mas consome tokens da API. Recomendada para runs iniciais; Ollama para re-traduções pontuais.',
+        sec_metricas: 'Métricas do Último Run',
+        stat_files: 'Arquivos Traduzidos',
+        stat_segments: 'Segmentos de Texto',
+        stat_langs: 'Idiomas Adicionados (EN + ES)',
+        footer_detail: 'Pipeline de Geração &middot; 06 — Traduzir EN/ES'
+    },
+    en: {
+        bc_home: 'Generation Pipeline',
+        bc_current: '06 — Translate EN/ES',
+        title: '06 — Translate EN/ES',
+        subtitle: 'i18n.json (pt-BR) → i18n.json (pt-BR + EN + ES)',
+        badge_engine: 'Ollama or Opus',
+        badge_time: '~30min Ollama / ~3min Opus',
+        sec_objetivo: 'Objective',
+        objetivo_text: 'This step fills the <code>en</code> (English) and <code>es</code> (Spanish) fields in the <code>.i18n.json</code> files generated in step 05. Two strategies are available: <strong>local Ollama</strong> (free, slower) or <strong>parallel Opus</strong> (via API, faster). Technical terms from the Oracle Fusion domain are kept in English across all translations to preserve glossary consistency.',
+        sec_dor: 'DOR — Definition of Ready',
+        dor_title: 'Prerequisites to run this step',
+        dor_1: '<code>.i18n.json</code> files from step 05 exist with <code>br</code> field filled and <code>en</code>/<code>es</code> as <code>null</code>',
+        dor_2: 'Ollama running locally with <code>translategemma:4b</code> model <strong>OR</strong> Anthropic API key configured',
+        dor_3: 'Python 3.12+ installed with <code>requests</code> (for Ollama) or Claude Code (for Opus)',
+        sec_dod: 'DOD — Definition of Done',
+        dod_title: 'Acceptance criteria for this step',
+        dod_1: 'All <code>en</code> and <code>es</code> fields filled in all <code>.i18n.json</code> files',
+        dod_2: 'Technical terms kept in English (workflow, business unit, subledger, posting, etc.)',
+        dod_3: '<code>translated_at</code> field updated with translation timestamp',
+        dod_4: 'No <code>en</code> or <code>es</code> field remains as <code>null</code>',
+        sec_entrada: 'Input',
+        entrada_title: 'Input Files',
+        th_file: 'File',
+        th_path: 'Path',
+        th_desc: 'Description',
+        entrada_tables: 'Table i18n files with <code>br</code> filled, <code>en</code>/<code>es</code> null',
+        entrada_pvos: 'PVO i18n files with <code>br</code> filled, <code>en</code>/<code>es</code> null',
+        sec_saida: 'Output',
+        saida_title: 'Updated Files',
+        saida_desc: 'The same <code>.i18n.json</code> files are updated in-place with <code>en</code> and <code>es</code> filled:',
+        sec_strategies: 'Two Strategies',
+        strategies_title: 'Local Ollama vs. Parallel Opus',
+        th_aspect: 'Aspect',
+        th_ollama: 'Local Ollama',
+        th_opus: 'Parallel Opus',
+        row_script: 'Script',
+        row_opus_script: 'Claude Code + Agent tool',
+        row_model: 'Model',
+        row_cost: 'Cost',
+        row_speed: 'Speed',
+        row_ollama_speed: '~30 min (2,391 files)',
+        row_opus_speed: '~3 min (4 parallel agents)',
+        row_quality: 'Quality',
+        sec_ollama: 'How It Works — Ollama',
+        ollama_title: 'Translation via Local Ollama',
+        ollama_1: 'Collects all <code>.i18n.json</code> files that still have <code>en</code> or <code>es</code> as <code>null</code>',
+        ollama_2: 'Groups pending texts into batches of 25 numbered items',
+        ollama_3: 'Sends each batch to Ollama via REST API (<code>http://localhost:11434/api/generate</code>) with prompt: "Translate each numbered text to {lang}. Keep technical terms in English."',
+        ollama_4: 'Receives the response with numbered texts and parses them back to the original items',
+        ollama_5: 'Updates the <code>en</code> and <code>es</code> fields in the <code>.i18n.json</code> files and records the <code>translated_at</code>',
+        sec_opus: 'How It Works — Opus',
+        opus_title: 'Translation via Parallel Opus',
+        opus_1: 'Consolidates all pending items (with <code>en</code>/<code>es</code> null) into a single JSON',
+        opus_2: 'Splits items into 4 balanced chunks',
+        opus_3: 'Launches 4 Opus agents in parallel, each translating its chunk to EN and ES simultaneously',
+        opus_4: 'Each agent returns a JSON with <code>{id: {en: "...", es: "..."}}</code>',
+        opus_5: 'Results are consolidated and written back to individual <code>.i18n.json</code> files',
+        sec_termos: 'Technical Terms (keep in English)',
+        termos_title: 'Preserved Terms Glossary',
+        termos_desc: 'The following technical terms are kept in English across all translations (EN and ES), to preserve consistency with Oracle documentation and the corporate glossary:',
+        sec_uso: 'Usage',
+        uso_title: 'Execution Commands',
+        uso_ollama_label: '<strong>Via Ollama (recommended for batch):</strong>',
+        uso_opus_label: '<strong>Via Opus (faster, uses API):</strong>',
+        sec_notas: 'Important Notes',
+        nota_1: 'Already filled translations (<code>en</code>/<code>es</code> non-null) are <strong>skipped</strong> by default. Use <code>--force</code> to retranslate everything.',
+        nota_2: 'Ollama processes in batches of 25 numbered texts to maximize throughput without losing input/output correlation.',
+        nota_3: 'If Ollama returns fewer lines than the sent batch, the script identifies missing items and resends them in a retry batch.',
+        nota_4: 'The parallel Opus strategy is <strong>~10x faster</strong> than Ollama but consumes API tokens. Recommended for initial runs; Ollama for ad-hoc retranslations.',
+        sec_metricas: 'Last Run Metrics',
+        stat_files: 'Translated Files',
+        stat_segments: 'Text Segments',
+        stat_langs: 'Languages Added (EN + ES)',
+        footer_detail: 'Generation Pipeline &middot; 06 — Translate EN/ES'
+    },
+    es: {
+        bc_home: 'Pipeline de Generación',
+        bc_current: '06 — Traducir EN/ES',
+        title: '06 — Traducir EN/ES',
+        subtitle: 'i18n.json (pt-BR) → i18n.json (pt-BR + EN + ES)',
+        badge_engine: 'Ollama o Opus',
+        badge_time: '~30min Ollama / ~3min Opus',
+        sec_objetivo: 'Objetivo',
+        objetivo_text: 'Esta etapa completa los campos <code>en</code> (inglés) y <code>es</code> (español) en los archivos <code>.i18n.json</code> generados en la etapa 05. Dos estrategias están disponibles: <strong>Ollama local</strong> (gratuito, más lento) o <strong>Opus paralelo</strong> (vía API, más rápido). Los términos técnicos del dominio Oracle Fusion se mantienen en inglés en todas las traducciones para preservar la consistencia del glosario técnico.',
+        sec_dor: 'DOR — Definition of Ready',
+        dor_title: 'Prerrequisitos para ejecutar esta etapa',
+        dor_1: 'Archivos <code>.i18n.json</code> de la etapa 05 existen con campo <code>br</code> completado y <code>en</code>/<code>es</code> como <code>null</code>',
+        dor_2: 'Ollama ejecutándose localmente con modelo <code>translategemma:4b</code> <strong>O</strong> API key de Anthropic configurada',
+        dor_3: 'Python 3.12+ instalado con <code>requests</code> (para Ollama) o Claude Code (para Opus)',
+        sec_dod: 'DOD — Definition of Done',
+        dod_title: 'Criterios de aceptación para esta etapa',
+        dod_1: 'Todos los campos <code>en</code> y <code>es</code> completados en todos los <code>.i18n.json</code>',
+        dod_2: 'Términos técnicos mantenidos en inglés (workflow, business unit, subledger, posting, etc.)',
+        dod_3: 'Campo <code>translated_at</code> actualizado con timestamp de la traducción',
+        dod_4: 'Ningún campo <code>en</code> o <code>es</code> permanece como <code>null</code>',
+        sec_entrada: 'Entrada',
+        entrada_title: 'Archivos de Entrada',
+        th_file: 'Archivo',
+        th_path: 'Ruta',
+        th_desc: 'Descripción',
+        entrada_tables: 'Archivos i18n de tablas con <code>br</code> completado, <code>en</code>/<code>es</code> null',
+        entrada_pvos: 'Archivos i18n de PVOs con <code>br</code> completado, <code>en</code>/<code>es</code> null',
+        sec_saida: 'Salida',
+        saida_title: 'Archivos Actualizados',
+        saida_desc: 'Los mismos <code>.i18n.json</code> se actualizan in-place con <code>en</code> y <code>es</code> completados:',
+        sec_strategies: 'Dos Estrategias',
+        strategies_title: 'Ollama Local vs. Opus Paralelo',
+        th_aspect: 'Aspecto',
+        th_ollama: 'Ollama Local',
+        th_opus: 'Opus Paralelo',
+        row_script: 'Script',
+        row_opus_script: 'Claude Code + Agent tool',
+        row_model: 'Modelo',
+        row_cost: 'Costo',
+        row_speed: 'Velocidad',
+        row_ollama_speed: '~30 min (2.391 archivos)',
+        row_opus_speed: '~3 min (4 agentes paralelos)',
+        row_quality: 'Calidad',
+        sec_ollama: 'Cómo Funciona — Ollama',
+        ollama_title: 'Traducción vía Ollama Local',
+        ollama_1: 'Recolecta todos los <code>.i18n.json</code> que aún tienen <code>en</code> o <code>es</code> como <code>null</code>',
+        ollama_2: 'Agrupa los textos pendientes en batches de 25 ítems numerados',
+        ollama_3: 'Envía cada batch a Ollama vía REST API (<code>http://localhost:11434/api/generate</code>) con prompt: "Translate each numbered text to {lang}. Keep technical terms in English."',
+        ollama_4: 'Recibe la respuesta con textos numerados y hace el parse de vuelta a los ítems originales',
+        ollama_5: 'Actualiza los campos <code>en</code> y <code>es</code> en los <code>.i18n.json</code> y registra el <code>translated_at</code>',
+        sec_opus: 'Cómo Funciona — Opus',
+        opus_title: 'Traducción vía Opus Paralelo',
+        opus_1: 'Consolida todos los ítems pendientes (con <code>en</code>/<code>es</code> null) en un único JSON',
+        opus_2: 'Divide los ítems en 4 chunks balanceados',
+        opus_3: 'Lanza 4 agentes Opus en paralelo, cada uno traduciendo su chunk a EN y ES simultáneamente',
+        opus_4: 'Cada agente retorna un JSON con <code>{id: {en: "...", es: "..."}}</code>',
+        opus_5: 'Los resultados se consolidan y se escriben de vuelta en los <code>.i18n.json</code> individuales',
+        sec_termos: 'Términos Técnicos (mantener en inglés)',
+        termos_title: 'Glosario de Términos Preservados',
+        termos_desc: 'Los siguientes términos técnicos se mantienen en inglés en todas las traducciones (EN y ES), para preservar la consistencia con la documentación Oracle y el glosario corporativo:',
+        sec_uso: 'Uso',
+        uso_title: 'Comandos de Ejecución',
+        uso_ollama_label: '<strong>Vía Ollama (recomendado para batch):</strong>',
+        uso_opus_label: '<strong>Vía Opus (más rápido, usa API):</strong>',
+        sec_notas: 'Notas Importantes',
+        nota_1: 'Traducciones ya completadas (<code>en</code>/<code>es</code> no-null) se <strong>omiten</strong> por defecto. Use <code>--force</code> para retraducir todo.',
+        nota_2: 'Ollama procesa en batches de 25 textos numerados para maximizar throughput sin perder la correlación entrada/salida.',
+        nota_3: 'Si Ollama retorna menos líneas de las enviadas en el batch, el script identifica los ítems faltantes y los reenvía en un batch de retry.',
+        nota_4: 'La estrategia Opus paralela es <strong>~10x más rápida</strong> que Ollama, pero consume tokens de la API. Recomendada para runs iniciales; Ollama para re-traducciones puntuales.',
+        sec_metricas: 'Métricas del Último Run',
+        stat_files: 'Archivos Traducidos',
+        stat_segments: 'Segmentos de Texto',
+        stat_langs: 'Idiomas Agregados (EN + ES)',
+        footer_detail: 'Pipeline de Generación &middot; 06 — Traducir EN/ES'
+    }
+};
+
+function switchLang(lang) {
+    currentLang = lang;
+    localStorage.setItem('preferred-lang', lang);
+    document.querySelectorAll('.lang-btn').forEach(function(b) { b.classList.remove('active'); });
+    document.getElementById('lang-' + lang).classList.add('active');
+    document.querySelectorAll('[data-i18n]').forEach(function(el) {
+        var key = el.getAttribute('data-i18n');
+        if (i18n[lang] && i18n[lang][key]) el.innerHTML = i18n[lang][key];
+    });
+}
+
+function toggleTheme() {
+    var c = document.body.getAttribute('data-theme');
+    document.body.setAttribute('data-theme', c === 'light' ? '' : 'light');
+    document.getElementById('theme-icon').className = c === 'light' ? 'ri-sun-line' : 'ri-moon-line';
+    localStorage.setItem('theme', document.body.getAttribute('data-theme') || 'dark');
+}
+
+(function() {
+    var t = localStorage.getItem('theme');
+    if (t === 'light') { document.body.setAttribute('data-theme', 'light'); document.getElementById('theme-icon').className = 'ri-moon-line'; }
+    var ul = new URLSearchParams(window.location.search).get('lang');
+    var tl = ul || localStorage.getItem('preferred-lang');
+    if (tl && tl !== 'pt') switchLang(tl);
+    var btn = document.getElementById('backToTop');
+    window.addEventListener('scroll', function() { btn.classList.toggle('visible', window.scrollY > 300); });
+})();
+</script>
+</body>
+</html>

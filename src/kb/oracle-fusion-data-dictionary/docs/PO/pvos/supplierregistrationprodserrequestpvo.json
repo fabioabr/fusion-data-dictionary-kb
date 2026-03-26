@@ -1,0 +1,267 @@
+{
+  "meta": {
+    "pvo_name": "SupplierRegistrationProdSerRequestPVO",
+    "full_path": "FscmTopModelAM.PrcPozPublicViewAM.SupplierRegistrationProdSerRequestPVO",
+    "module_path": "FscmTopModelAM.PrcPozPublicViewAM",
+    "module_code": "PO",
+    "type": "pvo",
+    "description": "Extrai os produtos e serviços declarados durante o registro de fornecedores, com categorias e atributos. Permite avaliação da capacidade de fornecimento antes da homologação formal."
+  },
+  "stats": {
+    "total_attributes": 17,
+    "tables_count": 2,
+    "bicc_enabled": 5,
+    "bicc_pct": 29,
+    "pk_count": 2
+  },
+  "tables": [
+    "POZ_PRODUCT_SERVICE_REQUESTS",
+    "POZ_SUPP_PROD_SERVICES_ATTR_V"
+  ],
+  "attributes": [
+    {
+      "name": "PsRequestId",
+      "table": "POZ_PRODUCT_SERVICE_REQUESTS",
+      "column": "PS_REQUEST_ID",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    },
+    {
+      "name": "SupplierProdAndServAttrAncestorCategoryDescription",
+      "table": "POZ_SUPP_PROD_SERVICES_ATTR_V",
+      "column": "ANCESTOR_CATEGORY_DESCRIPTION",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SupplierProdAndServAttrAncestorCategoryId",
+      "table": "POZ_SUPP_PROD_SERVICES_ATTR_V",
+      "column": "ANCESTOR_CATEGORY_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SupplierProdAndServAttrAncestorCategoryName",
+      "table": "POZ_SUPP_PROD_SERVICES_ATTR_V",
+      "column": "ANCESTOR_CATEGORY_NAME",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    },
+    {
+      "name": "SupplierProdAndServAttrCalculatedPath",
+      "table": "POZ_SUPP_PROD_SERVICES_ATTR_V",
+      "column": "CALCULATED_PATH",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SupplierProdAndServAttrCategoryId",
+      "table": "POZ_SUPP_PROD_SERVICES_ATTR_V",
+      "column": "CATEGORY_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SupplierRegProdSerReqCategoryId",
+      "table": "POZ_PRODUCT_SERVICE_REQUESTS",
+      "column": "CATEGORY_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SupplierRegProdSerReqCreatedBy",
+      "table": "POZ_PRODUCT_SERVICE_REQUESTS",
+      "column": "CREATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SupplierRegProdSerReqCreationDate",
+      "table": "POZ_PRODUCT_SERVICE_REQUESTS",
+      "column": "CREATION_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SupplierRegProdSerReqLastUpdateDate",
+      "table": "POZ_PRODUCT_SERVICE_REQUESTS",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": true
+    },
+    {
+      "name": "SupplierRegProdSerReqLastUpdateLogin",
+      "table": "POZ_PRODUCT_SERVICE_REQUESTS",
+      "column": "LAST_UPDATE_LOGIN",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SupplierRegProdSerReqLastUpdatedBy",
+      "table": "POZ_PRODUCT_SERVICE_REQUESTS",
+      "column": "LAST_UPDATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SupplierRegProdSerReqMappingId",
+      "table": "POZ_PRODUCT_SERVICE_REQUESTS",
+      "column": "MAPPING_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SupplierRegProdSerReqObjectVersionNumber",
+      "table": "POZ_PRODUCT_SERVICE_REQUESTS",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SupplierRegProdSerReqPurchasingCatFlag",
+      "table": "POZ_PRODUCT_SERVICE_REQUESTS",
+      "column": "PURCHASING_CAT_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SupplierRegProdSerReqRequestStatus",
+      "table": "POZ_PRODUCT_SERVICE_REQUESTS",
+      "column": "REQUEST_STATUS",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SupplierRegProdSerReqRequestType",
+      "table": "POZ_PRODUCT_SERVICE_REQUESTS",
+      "column": "REQUEST_TYPE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    }
+  ],
+  "by_table": {
+    "POZ_PRODUCT_SERVICE_REQUESTS": [
+      {
+        "attribute": "PsRequestId",
+        "column": "PS_REQUEST_ID",
+        "bicc": true,
+        "pk": true
+      },
+      {
+        "attribute": "SupplierRegProdSerReqCategoryId",
+        "column": "CATEGORY_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "SupplierRegProdSerReqCreatedBy",
+        "column": "CREATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "SupplierRegProdSerReqCreationDate",
+        "column": "CREATION_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "SupplierRegProdSerReqLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "SupplierRegProdSerReqLastUpdateLogin",
+        "column": "LAST_UPDATE_LOGIN",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "SupplierRegProdSerReqLastUpdatedBy",
+        "column": "LAST_UPDATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "SupplierRegProdSerReqMappingId",
+        "column": "MAPPING_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "SupplierRegProdSerReqObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "SupplierRegProdSerReqPurchasingCatFlag",
+        "column": "PURCHASING_CAT_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "SupplierRegProdSerReqRequestStatus",
+        "column": "REQUEST_STATUS",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "SupplierRegProdSerReqRequestType",
+        "column": "REQUEST_TYPE",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "POZ_SUPP_PROD_SERVICES_ATTR_V": [
+      {
+        "attribute": "SupplierProdAndServAttrAncestorCategoryDescription",
+        "column": "ANCESTOR_CATEGORY_DESCRIPTION",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "SupplierProdAndServAttrAncestorCategoryId",
+        "column": "ANCESTOR_CATEGORY_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "SupplierProdAndServAttrAncestorCategoryName",
+        "column": "ANCESTOR_CATEGORY_NAME",
+        "bicc": true,
+        "pk": true
+      },
+      {
+        "attribute": "SupplierProdAndServAttrCalculatedPath",
+        "column": "CALCULATED_PATH",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "SupplierProdAndServAttrCategoryId",
+        "column": "CATEGORY_ID",
+        "bicc": false,
+        "pk": false
+      }
+    ]
+  }
+}

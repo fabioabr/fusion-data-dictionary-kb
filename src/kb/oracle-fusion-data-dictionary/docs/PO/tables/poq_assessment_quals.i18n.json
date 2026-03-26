@@ -1,0 +1,421 @@
+{
+  "source": "poq_assessment_quals.md",
+  "source_hash": "b2ef1735963b09051ae2e6d748fa6b29",
+  "translated_at": "2026-03-25",
+  "items": [
+    {
+      "id": 1,
+      "br": "Visão Geral",
+      "en": "Overview",
+      "es": "Visión General"
+    },
+    {
+      "id": 2,
+      "br": "Armazena as qualificações individuais associadas a uma avaliação de fornecedor no módulo Oracle Supplier Qualification Management (SQM). Cada registro representa uma qualificação específica (ex.: ISO 9001, capacidade financeira, compliance ambiental) avaliada no contexto de uma avaliação global do fornecedor, com seu próprio resultado, status e datas de vigência.",
+      "en": "Stores individual qualifications associated with a supplier assessment in the Oracle Supplier Qualification Management (SQM) module. Each record represents a specific qualification (e.g., ISO 9001, financial capability, environmental compliance) evaluated in the context of a global supplier assessment, with its own result, status, and validity dates.",
+      "es": "Almacena as calificaciones individuais associadas a una evaluación de proveedor en el módulo Oracle Supplier Qualification Management (SQM). Cada registro representa una calificación específica (ex.: ISO 9001, capacidade financeira, compliance ambiental) avaliada en el contexto de una evaluación global del proveedor, con su próprio resultado, status y fechas de vigencia."
+    },
+    {
+      "id": 3,
+      "br": "Módulo POQ",
+      "en": "POQ Module",
+      "es": "Módulo POQ"
+    },
+    {
+      "id": 4,
+      "br": "O prefixo POQ identifica tabelas do submódulo Oracle Supplier Qualification Management. Esta tabela é filha de [[poq_assessments]] e detalha cada qualificação avaliada.",
+      "en": "The POQ prefix identifies tables from the Oracle Supplier Qualification Management submodule. This table is a child of [[poq_assessments]] and details each assessed qualification.",
+      "es": "O prefixo POQ identifica tablas del submódulo Oracle Supplier Qualification Management. Esta tabla é hija de [[poq_assessments]] y detalha cada calificación avaliada."
+    },
+    {
+      "id": 5,
+      "br": "Propósito de Negócio",
+      "en": "Business Purpose",
+      "es": "Propósito de Negocio"
+    },
+    {
+      "id": 6,
+      "br": "Esta tabela é utilizada nos seguintes processos:",
+      "en": "This table is used in the following processes:",
+      "es": "Esta tabla se utiliza en los siguientes procesos:"
+    },
+    {
+      "id": 7,
+      "br": "Controle individual de cada tipo de qualificação de um fornecedor (certificações, licenças, compliance).",
+      "en": "Individual control of each supplier qualification type (certifications, licenses, compliance).",
+      "es": "Control individual de cada tipo de calificación de un proveedor (certificaciones, licencias, compliance)."
+    },
+    {
+      "id": 8,
+      "br": "Monitoramento de datas de validade e necessidade de renovação.",
+      "en": "Monitoring of validity dates and renewal needs.",
+      "es": "Monitoreo de fechas de validez y necessidade de renovación."
+    },
+    {
+      "id": 9,
+      "br": "Verificação se o fornecedor possui qualificações ativas e válidas antes de permitir transações.",
+      "en": "Verification that the supplier has active and valid qualifications before allowing transactions.",
+      "es": "Verificación si o proveedor possui calificaciones activas y válidas antes de permitir transacciones."
+    },
+    {
+      "id": 10,
+      "br": "Atribuição de notas e resultados por qualificação individual.",
+      "en": "Score and result assignment per individual qualification.",
+      "es": "Atribuição de notas y resultados por calificación individual."
+    },
+    {
+      "id": 11,
+      "br": "Rastreamento detalhado do resultado de cada qualificação avaliada.",
+      "en": "Detailed tracking of each assessed qualification result.",
+      "es": "Rastreo detallado del resultado de cada calificación avaliada."
+    },
+    {
+      "id": 12,
+      "br": "Colunas Principais",
+      "en": "Key Columns",
+      "es": "Columnas Principales"
+    },
+    {
+      "id": 13,
+      "br": "Confiança",
+      "en": "Confidence",
+      "es": "Confianza"
+    },
+    {
+      "id": 14,
+      "br": "Escala de 0% a 100% — grau de certeza da descrição gerada por IA com base na documentação oficial Oracle (OEDMF/BICC Release 13/25A).",
+      "en": "Scale from 0% to 100% — degree of certainty of the AI-generated description based on official Oracle documentation (OEDMF/BICC Release 13/25A).",
+      "es": "Escala de 0% a 100% — grado de certeza de la descripción generada por IA con base en la documentación oficial Oracle (OEDMF/BICC Release 13/25A)."
+    },
+    {
+      "id": 15,
+      "br": "- 🟢 81–100% — Coluna presente na documentação oficial Oracle; nome, tipo e descrição confirmados.",
+      "en": "- 🟢 81–100% — Column present in official Oracle documentation; name, type, and description confirmed.",
+      "es": "- 🟢 81–100% — Columna presente en la documentación oficial Oracle; nombre, tipo y descripción confirmados."
+    },
+    {
+      "id": 16,
+      "br": "- 🟡 51–80% — Coluna inferida por naming convention ou padrão Oracle; tipo exato pode variar.",
+      "en": "- 🟡 51–80% — Column inferred by naming convention or Oracle standard; exact type may vary.",
+      "es": "- 🟡 51–80% — Columna inferida por naming convention o estándar Oracle; el tipo exacto puede variar."
+    },
+    {
+      "id": 17,
+      "br": "- 🔴 0–50% — Existência ou tipo incertos; pode não existir no release atual; validar no ambiente.",
+      "en": "- 🔴 0–50% — Uncertain existence or type; may not exist in the current release; validate in the environment.",
+      "es": "- 🔴 0–50% — Existencia o tipo inciertos; puede no existir en el release actual; validar en el ambiente."
+    },
+    {
+      "id": 18,
+      "br": "Coluna",
+      "en": "Column",
+      "es": "Columna"
+    },
+    {
+      "id": 19,
+      "br": "Tipo",
+      "en": "Type",
+      "es": "Tipo"
+    },
+    {
+      "id": 20,
+      "br": "Nulo?",
+      "en": "Nullable?",
+      "es": "¿Nulo?"
+    },
+    {
+      "id": 21,
+      "br": "Categoria",
+      "en": "Category",
+      "es": "Categoría"
+    },
+    {
+      "id": 22,
+      "br": "Descrição",
+      "en": "Description",
+      "es": "Descripción"
+    },
+    {
+      "id": 23,
+      "br": "Identificador único da qualificação da avaliação",
+      "en": "Unique assessment qualification identifier",
+      "es": "Identificador único de la calificación de la evaluación"
+    },
+    {
+      "id": 24,
+      "br": "Avaliação-pai",
+      "en": "Parent assessment",
+      "es": "Avaliação-padre"
+    },
+    {
+      "id": 25,
+      "br": "Tipo de qualificação (definição/template)",
+      "en": "Qualification type (definition/template)",
+      "es": "Tipo de calificación (definición/template)"
+    },
+    {
+      "id": 26,
+      "br": "Identificação",
+      "en": "Identification",
+      "es": "Identificación"
+    },
+    {
+      "id": 27,
+      "br": "Nome da qualificação (desnormalizado)",
+      "en": "Qualification name (denormalized)",
+      "es": "Nome de la calificación (desnormalizado)"
+    },
+    {
+      "id": 28,
+      "br": "Avaliação",
+      "en": "Assessment",
+      "es": "Evaluación"
+    },
+    {
+      "id": 29,
+      "br": "Resultado da qualificação (QUALIFIED, NOT_QUALIFIED, CONDITIONALLY_QUALIFIED)",
+      "en": "Qualification result (QUALIFIED, NOT_QUALIFIED, CONDITIONALLY_QUALIFIED)",
+      "es": "Resultado de la calificación (QUALIFIED, NOT_QUALIFIED, CONDITIONALLY_QUALIFIED)"
+    },
+    {
+      "id": 30,
+      "br": "Classificação",
+      "en": "Classification",
+      "es": "Clasificación"
+    },
+    {
+      "id": 31,
+      "br": "Status da qualificação (PENDING, EVALUATED, APPROVED, EXPIRED)",
+      "en": "Qualification status (PENDING, EVALUATED, APPROVED, EXPIRED)",
+      "es": "Status de la calificación (PENDING, EVALUATED, APPROVED, EXPIRED)"
+    },
+    {
+      "id": 32,
+      "br": "Pontuação obtida na qualificação",
+      "en": "Score obtained in the qualification",
+      "es": "Pontuação obtida en la calificación"
+    },
+    {
+      "id": 33,
+      "br": "Pontuação máxima possível",
+      "en": "Maximum possible score",
+      "es": "Pontuação máxima possível"
+    },
+    {
+      "id": 34,
+      "br": "Data",
+      "en": "Date",
+      "es": "Fecha"
+    },
+    {
+      "id": 35,
+      "br": "Data de início da vigência da qualificação",
+      "en": "Qualification effective start date",
+      "es": "Data de início de la vigencia de la calificación"
+    },
+    {
+      "id": 36,
+      "br": "Data de expiração da qualificação",
+      "en": "Qualification expiration date",
+      "es": "Data de expiración de la calificación"
+    },
+    {
+      "id": 37,
+      "br": "Questionário utilizado para avaliar esta qualificação",
+      "en": "Questionnaire used to assess this qualification",
+      "es": "Questionário utilizado para avaliar esta calificación"
+    },
+    {
+      "id": 38,
+      "br": "Texto livre",
+      "en": "Free Text",
+      "es": "Texto libre"
+    },
+    {
+      "id": 39,
+      "br": "Comentários do avaliador sobre a qualificação",
+      "en": "Assessor comments on the qualification",
+      "es": "Comentários del evaluador sobre a calificación"
+    },
+    {
+      "id": 40,
+      "br": "Fornecedor avaliado (desnormalizado)",
+      "en": "Assessed supplier (denormalized)",
+      "es": "Fornecedor avaliado (desnormalizado)"
+    },
+    {
+      "id": 41,
+      "br": "Auditoria",
+      "en": "Audit",
+      "es": "Auditoría"
+    },
+    {
+      "id": 42,
+      "br": "Usuário que criou o registro",
+      "en": "User who created the record",
+      "es": "Usuario que creó el registro"
+    },
+    {
+      "id": 43,
+      "br": "Data/hora de criação",
+      "en": "Creation date/time",
+      "es": "Fecha/hora de creación"
+    },
+    {
+      "id": 44,
+      "br": "Último usuário que alterou",
+      "en": "Last user who modified",
+      "es": "Último usuario que modificó"
+    },
+    {
+      "id": 45,
+      "br": "Data/hora da última alteração",
+      "en": "Last modification date/time",
+      "es": "Fecha/hora de la última modificación"
+    },
+    {
+      "id": 46,
+      "br": "Login da última sessão",
+      "en": "Last session login",
+      "es": "Login de la última sesión"
+    },
+    {
+      "id": 47,
+      "br": "Relacionamentos",
+      "en": "Relationships",
+      "es": "Relaciones"
+    },
+    {
+      "id": 48,
+      "br": "Tabelas-pai (FK de entrada)",
+      "en": "Parent Tables (inbound FK)",
+      "es": "Tablas padre (FK de entrada)"
+    },
+    {
+      "id": 49,
+      "br": "avaliação-pai",
+      "en": "parent assessment",
+      "es": "evaluación-padre"
+    },
+    {
+      "id": 50,
+      "br": "definição/tipo de qualificação",
+      "en": "qualification definition/type",
+      "es": "definición/tipo de calificación"
+    },
+    {
+      "id": 51,
+      "br": "questionário",
+      "en": "questionnaire",
+      "es": "cuestionario"
+    },
+    {
+      "id": 52,
+      "br": "fornecedor",
+      "en": "supplier",
+      "es": "proveedor"
+    },
+    {
+      "id": 53,
+      "br": "Tabelas-filha (FK de saída)",
+      "en": "Child Tables (outbound FK)",
+      "es": "Tablas hija (FK de salida)"
+    },
+    {
+      "id": 54,
+      "br": "Sem tabelas-filha conhecidas diretamente.",
+      "en": "No known child tables directly.",
+      "es": "Sin tablas hija conocidas directamente."
+    },
+    {
+      "id": 55,
+      "br": "Views relacionadas",
+      "en": "Related Views",
+      "es": "Vistas relacionadas"
+    },
+    {
+      "id": 56,
+      "br": "poq_all_resp_repos_values_v — valores de respostas no repositório de qualificação",
+      "en": "poq_all_resp_repos_values_v — response values in the qualification repository",
+      "es": "poq_all_resp_repos_values_v — valores de respuestas en el repositório de calificación"
+    },
+    {
+      "id": 57,
+      "br": "Uso Típico",
+      "en": "Typical Usage",
+      "es": "Uso Típico"
+    },
+    {
+      "id": 58,
+      "br": "Qualificações de uma avaliação",
+      "en": "Qualifications of an assessment",
+      "es": "Qualificações de una evaluación"
+    },
+    {
+      "id": 59,
+      "br": "Qualificações ativas de um fornecedor",
+      "en": "Active qualifications of a supplier",
+      "es": "Qualificações activas de un proveedor"
+    },
+    {
+      "id": 60,
+      "br": "Qualificações próximas da expiração",
+      "en": "Qualifications near expiration",
+      "es": "Qualificações próximas de la expiración"
+    },
+    {
+      "id": 61,
+      "br": "Observações",
+      "en": "Notes",
+      "es": "Observaciones"
+    },
+    {
+      "id": 62,
+      "br": "O RESULT determina se o fornecedor atende à qualificação: QUALIFIED (aprovado), NOT_QUALIFIED (reprovado), CONDITIONALLY_QUALIFIED (aprovado com condições).",
+      "en": "The RESULT determines whether the supplier meets the qualification: QUALIFIED (approved), NOT_QUALIFIED (rejected), CONDITIONALLY_QUALIFIED (conditionally approved).",
+      "es": "O RESULT determina si o proveedor atende à calificación: QUALIFIED (aprobado), NOT_QUALIFIED (rechazado), CONDITIONALLY_QUALIFIED (aprobado con condições)."
+    },
+    {
+      "id": 63,
+      "br": "Os campos EFFECTIVE_FROM e EFFECTIVE_TO controlam a vigência da qualificação — qualificações expiradas podem bloquear automaticamente transações com o fornecedor.",
+      "en": "The EFFECTIVE_FROM and EFFECTIVE_TO fields control the qualification validity — expired qualifications may automatically block transactions with the supplier.",
+      "es": "Os campos EFFECTIVE_FROM y EFFECTIVE_TO controlam a vigencia de la calificación — calificaciones expiradas pueden bloquear automáticamente transacciones con o proveedor."
+    },
+    {
+      "id": 64,
+      "br": "O STATUS controla o ciclo de vida: PENDING (aguardando avaliação), EVALUATED (avaliada), APPROVED (resultado aprovado), EXPIRED (expirada).",
+      "en": "The STATUS controls the lifecycle: PENDING (awaiting assessment), EVALUATED (assessed), APPROVED (result approved), EXPIRED (expired).",
+      "es": "O STATUS controla o ciclo de vida: PENDING (aguardando evaluación), EVALUATED (avaliada), APPROVED (resultado aprobado), EXPIRED (expirada)."
+    },
+    {
+      "id": 65,
+      "br": "Uma avaliação (POQ_ASSESSMENTS) pode conter múltiplas qualificações, cada uma avaliada independentemente.",
+      "en": "An assessment (POQ_ASSESSMENTS) can contain multiple qualifications, each assessed independently.",
+      "es": "Uma evaluación (POQ_ASSESSMENTS) puede conter múltiplas calificaciones, cada una avaliada independentemente."
+    },
+    {
+      "id": 66,
+      "br": "A coluna SCORE permite comparações numéricas entre fornecedores para a mesma qualificação.",
+      "en": "The SCORE column enables numeric comparisons between suppliers for the same qualification.",
+      "es": "A columna SCORE permite comparações numéricas entre proveedores para a mesma calificación."
+    },
+    {
+      "id": 67,
+      "br": "Referências",
+      "en": "References",
+      "es": "Referencias"
+    },
+    {
+      "id": 68,
+      "br": "[Oracle Docs — POQ_ASSESSMENT_QUALS](https://docs.oracle.com/en/cloud/saas/procurement/25a/oedmf/poqassessmentquals.html)",
+      "en": "[Oracle Docs — POQ_ASSESSMENT_QUALS](https://docs.oracle.com/en/cloud/saas/procurement/25a/oedmf/poqassessmentquals.html)",
+      "es": "[Oracle Docs — POQ_ASSESSMENT_QUALS](https://docs.oracle.com/en/cloud/saas/procurement/25a/oedmf/poqassessmentquals.html)"
+    },
+    {
+      "id": 69,
+      "br": "po-module-data-dictionary — Dossiê do módulo Procurement",
+      "en": "po-module-data-dictionary — module dossier for Procurement",
+      "es": "po-module-data-dictionary — Dosier del módulo Procurement"
+    }
+  ]
+}

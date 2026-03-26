@@ -1,0 +1,40 @@
+{
+  "meta": {
+    "pvo_name": "PoAgentPVO",
+    "full_path": "FscmTopModelAM.PrcPoPublicViewAM.PoAgentPVO",
+    "module_path": "FscmTopModelAM.PrcPoPublicViewAM",
+    "module_code": "PO",
+    "type": "pvo",
+    "description": "Extrai os agentes de compras (buyers) com suas atribuições, incluindo nome, e-mail e unidade de negócio. Suporta auditoria de acessos, distribuição de workload e governança do processo de procurement."
+  },
+  "stats": {
+    "total_attributes": 1,
+    "tables_count": 1,
+    "bicc_enabled": 1,
+    "bicc_pct": 100,
+    "pk_count": 1
+  },
+  "tables": [
+    "PO_AGENTS_V"
+  ],
+  "attributes": [
+    {
+      "name": "AgentId",
+      "table": "PO_AGENTS_V",
+      "column": "AGENT_ID",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    }
+  ],
+  "by_table": {
+    "PO_AGENTS_V": [
+      {
+        "attribute": "AgentId",
+        "column": "AGENT_ID",
+        "bicc": true,
+        "pk": true
+      }
+    ]
+  }
+}

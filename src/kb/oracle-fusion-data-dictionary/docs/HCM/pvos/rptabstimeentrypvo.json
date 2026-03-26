@@ -1,0 +1,2661 @@
+{
+  "meta": {
+    "pvo_name": "RptAbsTimeEntryPVO",
+    "full_path": "HcmTopModelAnalyticsGlobalAM.TimeRepositoryAM.RptAbsTimeEntryPVO",
+    "module_path": "HcmTopModelAnalyticsGlobalAM.TimeRepositoryAM",
+    "module_code": "HCM",
+    "type": "pvo",
+    "description": "Extrai entradas de tempo e ausências reportadas com múltiplos status de aprovação. Visão consolidada para análise de horas trabalhadas e absenteísmo."
+  },
+  "stats": {
+    "total_attributes": 182,
+    "tables_count": 30,
+    "bicc_enabled": 105,
+    "bicc_pct": 58,
+    "pk_count": 2
+  },
+  "tables": [
+    "HWM_RP_TM_PERIODS_TL",
+    "HWM_TC_VERSION_STATUS_V",
+    "HWM_TE_VERSION_STATUS_V",
+    "HWM_TM_APPROVED_TS_V",
+    "HWM_TM_A_ANC_APP_STATUS_V",
+    "HWM_TM_A_APP_STATUS_PJC_V",
+    "HWM_TM_A_APP_STATUS_PYR_V",
+    "HWM_TM_A_TE_COMPLETED_V",
+    "HWM_TM_A_TR_ERR_STATUS_V",
+    "HWM_TM_A_USER_STATUS_V",
+    "HWM_TM_D_TM_UI_STATUS_V",
+    "HWM_TM_OPM_MEANING_V",
+    "HWM_TM_REPROCESS_REQUEST",
+    "HWM_TM_REP_M_ANC_ATRBS_V",
+    "HWM_TM_REP_M_COMP_TOIL_ATRBS_V",
+    "HWM_TM_REP_M_PJC_DOC_ATRBS_V",
+    "HWM_TM_REP_M_PJC_EXP_ATRBS_V",
+    "HWM_TM_REP_M_PTT_ATRBS_V",
+    "HWM_TM_REP_S_ABS_HP_ATRBS_V",
+    "HWM_TM_REP_S_ABS_TEP_ATRBS_V",
+    "HWM_TM_REP_S_COMMON_ATRBS_V",
+    "HWM_TM_REP_S_HXT_ATRBS_V",
+    "HWM_TM_REP_S_PJC_ATRBS_V",
+    "HWM_TM_REP_S_SEC_ATRBS_V",
+    "HWM_TM_RPT_ENTRY_V",
+    "HWM_TM_STATUSES",
+    "HWM_TM_SUBMITTED_TS_V",
+    "HXT_TM_HEADER",
+    "PER_ALL_PEOPLE_F",
+    "PER_PERSON_NAMES_F_V"
+  ],
+  "attributes": [
+    {
+      "name": "AncDeleteFlag",
+      "table": "HWM_TM_RPT_ENTRY_V",
+      "column": "ANC_DELETE_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AncLatestVersion",
+      "table": "HWM_TM_RPT_ENTRY_V",
+      "column": "ANC_LATEST_VERSION",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CommonInternalSource",
+      "table": "HWM_TM_REP_S_COMMON_ATRBS_V",
+      "column": "COMMON_INTERNAL_SOURCE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CommonOwner",
+      "table": "HWM_TM_REP_S_COMMON_ATRBS_V",
+      "column": "COMMON_OWNER",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CommonTimeReposAtrbId1",
+      "table": "HWM_TM_REP_S_COMMON_ATRBS_V",
+      "column": "COMMON_TIME_REPOS_ATRB_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "Expedite",
+      "table": "HWM_TM_REP_S_HXT_ATRBS_V",
+      "column": "EXPEDITE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "HxtTimeRepositoryAttributeId",
+      "table": "HWM_TM_REP_S_HXT_ATRBS_V",
+      "column": "HXT_TIME_REPOS_ATRB_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "MasterAbsTypeAttributePEOAncAbsenceType",
+      "table": "HWM_TM_REP_M_ANC_ATRBS_V",
+      "column": "ANC_ABSENCE_TYPE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "MasterAbsTypeAttributePEOAncMasterTimeRepositoryAttributeId",
+      "table": "HWM_TM_REP_M_ANC_ATRBS_V",
+      "column": "ANC_MASTER_TIME_REPOS_ATRB_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "MasterDocTypeAttributePEOPjcDocTypeTimeRepositoryAttributeId",
+      "table": "HWM_TM_REP_M_PJC_DOC_ATRBS_V",
+      "column": "PJC_DOC_TIME_REPOS_ATRB_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "MasterDocTypeAttributePEOPjcDocumentType",
+      "table": "HWM_TM_REP_M_PJC_DOC_ATRBS_V",
+      "column": "PJC_DOCUMENT_TYPE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "MasterExpendTypeAttributePEOPjcExpTypeTimeRepositoryAttributeId",
+      "table": "HWM_TM_REP_M_PJC_EXP_ATRBS_V",
+      "column": "PJC_EXP_TIME_REPOS_ATRB_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "MasterExpendTypeAttributePEOPjcExpenditureType",
+      "table": "HWM_TM_REP_M_PJC_EXP_ATRBS_V",
+      "column": "PJC_EXPENDITURE_TYPE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "MasterPyrTimeTypeAtrbPEOPayPayrollTimeType",
+      "table": "HWM_TM_REP_M_PTT_ATRBS_V",
+      "column": "PAY_PAYROLL_TIME_TYPE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "MasterPyrTimeTypeAtrbPEOPttTimeRepositoryAttributeId",
+      "table": "HWM_TM_REP_M_PTT_ATRBS_V",
+      "column": "PTT_TIME_REPOS_ATRB_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "OverrideCheckPrinter",
+      "table": "HWM_TM_REP_S_HXT_ATRBS_V",
+      "column": "OVERRIDE_CHECK_PRINTER",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "OverridePayMethod",
+      "table": "HWM_TM_REP_S_HXT_ATRBS_V",
+      "column": "OVERRIDE_PAY_METHOD",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "OverridePaymentMethodCode",
+      "table": "HWM_TM_OPM_MEANING_V",
+      "column": "CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "OverridePaymentMethodCodeMeaning",
+      "table": "HWM_TM_OPM_MEANING_V",
+      "column": "MEANING",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonDetailsPEOEffectiveEndDate",
+      "table": "PER_ALL_PEOPLE_F",
+      "column": "EFFECTIVE_END_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonDetailsPEOEffectiveStartDate",
+      "table": "PER_ALL_PEOPLE_F",
+      "column": "EFFECTIVE_START_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonDetailsPEOPersonId",
+      "table": "PER_ALL_PEOPLE_F",
+      "column": "PERSON_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonDetailsPEOPersonNumber",
+      "table": "PER_ALL_PEOPLE_F",
+      "column": "PERSON_NUMBER",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonNamePEOEffectiveEndDate",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "EFFECTIVE_END_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonNamePEOEffectiveStartDate",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "EFFECTIVE_START_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonNamePEOFullName",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "FULL_NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonNamePEOPersonNameId",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "PERSON_NAME_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RepeatingTimePeriodTLDescription",
+      "table": "HWM_RP_TM_PERIODS_TL",
+      "column": "DESCRIPTION",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RepeatingTimePeriodTLLanguage",
+      "table": "HWM_RP_TM_PERIODS_TL",
+      "column": "LANGUAGE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RepeatingTimePeriodTLRepeatingTmPeriodId",
+      "table": "HWM_RP_TM_PERIODS_TL",
+      "column": "REPEATING_TM_PERIOD_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReprocessRequestPEOReprocessReason",
+      "table": "HWM_TM_REPROCESS_REQUEST",
+      "column": "REPROCESS_REASON",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReprocessRequestPEOReprocessStatus",
+      "table": "HWM_TM_REPROCESS_REQUEST",
+      "column": "REPROCESS_STATUS",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReprocessRequestPEOTmReprocessRequestId",
+      "table": "HWM_TM_REPROCESS_REQUEST",
+      "column": "TM_REPROCESS_REQUEST_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RptAbsTimeEntryPEOAncGrpTypeId",
+      "table": "HWM_TM_RPT_ENTRY_V",
+      "column": "ANC_GRP_TYPE_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RptAbsTimeEntryPEOAncTmRecGrpId",
+      "table": "HWM_TM_RPT_ENTRY_V",
+      "column": "ANC_TM_REC_GRP_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RptAbsTimeEntryPEOAncTmRecGrpVersion",
+      "table": "HWM_TM_RPT_ENTRY_V",
+      "column": "ANC_TM_REC_GRP_VERSION",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RptAbsTimeEntryPEODayCommentText",
+      "table": "HWM_TM_RPT_ENTRY_V",
+      "column": "DAY_COMMENT_TEXT",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RptAbsTimeEntryPEODayCreatedBy",
+      "table": "HWM_TM_RPT_ENTRY_V",
+      "column": "DAY_CREATED_BY",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RptAbsTimeEntryPEODayCreationDate",
+      "table": "HWM_TM_RPT_ENTRY_V",
+      "column": "DAY_CREATION_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RptAbsTimeEntryPEODayDateFrom",
+      "table": "HWM_TM_RPT_ENTRY_V",
+      "column": "DAY_DATE_FROM",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RptAbsTimeEntryPEODayDateTo",
+      "table": "HWM_TM_RPT_ENTRY_V",
+      "column": "DAY_DATE_TO",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RptAbsTimeEntryPEODayDeleteFlag",
+      "table": "HWM_TM_RPT_ENTRY_V",
+      "column": "DAY_DELETE_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RptAbsTimeEntryPEODayGrpTypeId",
+      "table": "HWM_TM_RPT_ENTRY_V",
+      "column": "DAY_GRP_TYPE_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RptAbsTimeEntryPEODayLastUpdateDate",
+      "table": "HWM_TM_RPT_ENTRY_V",
+      "column": "DAY_LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": true
+    },
+    {
+      "name": "RptAbsTimeEntryPEODayLastUpdateLogin",
+      "table": "HWM_TM_RPT_ENTRY_V",
+      "column": "DAY_LAST_UPDATE_LOGIN",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RptAbsTimeEntryPEODayLastUpdatedBy",
+      "table": "HWM_TM_RPT_ENTRY_V",
+      "column": "DAY_LAST_UPDATED_BY",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RptAbsTimeEntryPEODayLatestVersion",
+      "table": "HWM_TM_RPT_ENTRY_V",
+      "column": "DAY_LATEST_VERSION",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RptAbsTimeEntryPEODayLayerCode",
+      "table": "HWM_TM_RPT_ENTRY_V",
+      "column": "DAY_LAYER_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RptAbsTimeEntryPEODayStartGmtOffset",
+      "table": "HWM_TM_RPT_ENTRY_V",
+      "column": "DAY_START_GMT_OFFSET",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RptAbsTimeEntryPEODayStartTime",
+      "table": "HWM_TM_RPT_ENTRY_V",
+      "column": "DAY_START_TIME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RptAbsTimeEntryPEODayStartTimezoneCode",
+      "table": "HWM_TM_RPT_ENTRY_V",
+      "column": "DAY_START_TIMEZONE_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RptAbsTimeEntryPEODayStopGmtOffset",
+      "table": "HWM_TM_RPT_ENTRY_V",
+      "column": "DAY_STOP_GMT_OFFSET",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RptAbsTimeEntryPEODayStopTime",
+      "table": "HWM_TM_RPT_ENTRY_V",
+      "column": "DAY_STOP_TIME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RptAbsTimeEntryPEODayStopTimezoneCode",
+      "table": "HWM_TM_RPT_ENTRY_V",
+      "column": "DAY_STOP_TIMEZONE_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RptAbsTimeEntryPEODayTmRecGrpId",
+      "table": "HWM_TM_RPT_ENTRY_V",
+      "column": "DAY_TM_REC_GRP_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RptAbsTimeEntryPEODayTmRecGrpVersion",
+      "table": "HWM_TM_RPT_ENTRY_V",
+      "column": "DAY_TM_REC_GRP_VERSION",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RptAbsTimeEntryPEOTcCommentText",
+      "table": "HWM_TM_RPT_ENTRY_V",
+      "column": "TC_COMMENT_TEXT",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RptAbsTimeEntryPEOTcCommitTimestamp",
+      "table": "HWM_TM_RPT_ENTRY_V",
+      "column": "TC_COMMIT_TIMESTAMP",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RptAbsTimeEntryPEOTcCreatedBy",
+      "table": "HWM_TM_RPT_ENTRY_V",
+      "column": "TC_CREATED_BY",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RptAbsTimeEntryPEOTcCreationDate",
+      "table": "HWM_TM_RPT_ENTRY_V",
+      "column": "TC_CREATION_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RptAbsTimeEntryPEOTcDateFrom",
+      "table": "HWM_TM_RPT_ENTRY_V",
+      "column": "TC_DATE_FROM",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RptAbsTimeEntryPEOTcDateTo",
+      "table": "HWM_TM_RPT_ENTRY_V",
+      "column": "TC_DATE_TO",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RptAbsTimeEntryPEOTcDeleteFlag",
+      "table": "HWM_TM_RPT_ENTRY_V",
+      "column": "TC_DELETE_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RptAbsTimeEntryPEOTcGrpTypeId",
+      "table": "HWM_TM_RPT_ENTRY_V",
+      "column": "TC_GRP_TYPE_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RptAbsTimeEntryPEOTcLastUpdateDate",
+      "table": "HWM_TM_RPT_ENTRY_V",
+      "column": "TC_LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": true
+    },
+    {
+      "name": "RptAbsTimeEntryPEOTcLastUpdateLogin",
+      "table": "HWM_TM_RPT_ENTRY_V",
+      "column": "TC_LAST_UPDATE_LOGIN",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RptAbsTimeEntryPEOTcLastUpdatedBy",
+      "table": "HWM_TM_RPT_ENTRY_V",
+      "column": "TC_LAST_UPDATED_BY",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RptAbsTimeEntryPEOTcLatestVersion",
+      "table": "HWM_TM_RPT_ENTRY_V",
+      "column": "TC_LATEST_VERSION",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RptAbsTimeEntryPEOTcLayerCode",
+      "table": "HWM_TM_RPT_ENTRY_V",
+      "column": "TC_LAYER_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RptAbsTimeEntryPEOTcStartDate",
+      "table": "HWM_TM_RPT_ENTRY_V",
+      "column": "TC_START_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RptAbsTimeEntryPEOTcStartGmtOffset",
+      "table": "HWM_TM_RPT_ENTRY_V",
+      "column": "TC_START_GMT_OFFSET",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RptAbsTimeEntryPEOTcStartTime",
+      "table": "HWM_TM_RPT_ENTRY_V",
+      "column": "TC_START_TIME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RptAbsTimeEntryPEOTcStartTimezoneCode",
+      "table": "HWM_TM_RPT_ENTRY_V",
+      "column": "TC_START_TIMEZONE_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RptAbsTimeEntryPEOTcStopDate",
+      "table": "HWM_TM_RPT_ENTRY_V",
+      "column": "TC_STOP_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RptAbsTimeEntryPEOTcStopGmtOffset",
+      "table": "HWM_TM_RPT_ENTRY_V",
+      "column": "TC_STOP_GMT_OFFSET",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RptAbsTimeEntryPEOTcStopTime",
+      "table": "HWM_TM_RPT_ENTRY_V",
+      "column": "TC_STOP_TIME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RptAbsTimeEntryPEOTcStopTimezoneCode",
+      "table": "HWM_TM_RPT_ENTRY_V",
+      "column": "TC_STOP_TIMEZONE_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RptAbsTimeEntryPEOTcTmRecGrpId",
+      "table": "HWM_TM_RPT_ENTRY_V",
+      "column": "TC_TM_REC_GRP_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RptAbsTimeEntryPEOTcTmRecGrpVersion",
+      "table": "HWM_TM_RPT_ENTRY_V",
+      "column": "TC_TM_REC_GRP_VERSION",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RptAbsTimeEntryPEOTeActivityInId",
+      "table": "HWM_TM_RPT_ENTRY_V",
+      "column": "TE_ACTIVITY_IN_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RptAbsTimeEntryPEOTeActivityOutId",
+      "table": "HWM_TM_RPT_ENTRY_V",
+      "column": "TE_ACTIVITY_OUT_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RptAbsTimeEntryPEOTeCommentText",
+      "table": "HWM_TM_RPT_ENTRY_V",
+      "column": "TE_COMMENT_TEXT",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RptAbsTimeEntryPEOTeCreatedBy",
+      "table": "HWM_TM_RPT_ENTRY_V",
+      "column": "TE_CREATED_BY",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RptAbsTimeEntryPEOTeCreationDate",
+      "table": "HWM_TM_RPT_ENTRY_V",
+      "column": "TE_CREATION_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RptAbsTimeEntryPEOTeDateFrom",
+      "table": "HWM_TM_RPT_ENTRY_V",
+      "column": "TE_DATE_FROM",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RptAbsTimeEntryPEOTeDateTo",
+      "table": "HWM_TM_RPT_ENTRY_V",
+      "column": "TE_DATE_TO",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RptAbsTimeEntryPEOTeDeleteFlag",
+      "table": "HWM_TM_RPT_ENTRY_V",
+      "column": "TE_DELETE_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RptAbsTimeEntryPEOTeLastUpdateDate",
+      "table": "HWM_TM_RPT_ENTRY_V",
+      "column": "TE_LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": true
+    },
+    {
+      "name": "RptAbsTimeEntryPEOTeLastUpdateLogin",
+      "table": "HWM_TM_RPT_ENTRY_V",
+      "column": "TE_LAST_UPDATE_LOGIN",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RptAbsTimeEntryPEOTeLastUpdatedBy",
+      "table": "HWM_TM_RPT_ENTRY_V",
+      "column": "TE_LAST_UPDATED_BY",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RptAbsTimeEntryPEOTeLatestVersion",
+      "table": "HWM_TM_RPT_ENTRY_V",
+      "column": "TE_LATEST_VERSION",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RptAbsTimeEntryPEOTeLayerCode",
+      "table": "HWM_TM_RPT_ENTRY_V",
+      "column": "TE_LAYER_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RptAbsTimeEntryPEOTeMeasure",
+      "table": "HWM_TM_RPT_ENTRY_V",
+      "column": "TE_MEASURE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RptAbsTimeEntryPEOTeMeasureAbsence",
+      "table": "HWM_TM_RPT_ENTRY_V",
+      "column": "TE_MEASURE_ABSENCE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RptAbsTimeEntryPEOTeMeasureAbsenceDay",
+      "table": "HWM_TM_RPT_ENTRY_V",
+      "column": "TE_MEASURE_ABSENCE_DAY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RptAbsTimeEntryPEOTeMeasureLabor",
+      "table": "HWM_TM_RPT_ENTRY_V",
+      "column": "TE_MEASURE_LABOR",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RptAbsTimeEntryPEOTeResourceId",
+      "table": "HWM_TM_RPT_ENTRY_V",
+      "column": "RESOURCE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RptAbsTimeEntryPEOTeStartGmtOffset",
+      "table": "HWM_TM_RPT_ENTRY_V",
+      "column": "TE_START_GMT_OFFSET",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RptAbsTimeEntryPEOTeStartTime",
+      "table": "HWM_TM_RPT_ENTRY_V",
+      "column": "TE_START_TIME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RptAbsTimeEntryPEOTeStartTimezoneCode",
+      "table": "HWM_TM_RPT_ENTRY_V",
+      "column": "TE_START_TIMEZONE_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RptAbsTimeEntryPEOTeStopGmtOffset",
+      "table": "HWM_TM_RPT_ENTRY_V",
+      "column": "TE_STOP_GMT_OFFSET",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RptAbsTimeEntryPEOTeStopTime",
+      "table": "HWM_TM_RPT_ENTRY_V",
+      "column": "TE_STOP_TIME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RptAbsTimeEntryPEOTeStopTimezoneCode",
+      "table": "HWM_TM_RPT_ENTRY_V",
+      "column": "TE_STOP_TIMEZONE_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RptAbsTimeEntryPEOTeSubresourceId",
+      "table": "HWM_TM_RPT_ENTRY_V",
+      "column": "TE_SUBRESOURCE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RptAbsTimeEntryPEOTeTcsmrConfigSetId",
+      "table": "HWM_TM_RPT_ENTRY_V",
+      "column": "TE_TCSMR_CONFIG_SET_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RptAbsTimeEntryPEOTeTcsmrSetId",
+      "table": "HWM_TM_RPT_ENTRY_V",
+      "column": "TE_TCSMR_SET_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RptAbsTimeEntryPEOTeTimeReporterId",
+      "table": "HWM_TM_RPT_ENTRY_V",
+      "column": "TE_TIME_REPORTER_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RptAbsTimeEntryPEOTeTmRecId",
+      "table": "HWM_TM_RPT_ENTRY_V",
+      "column": "TE_TM_REC_ID",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    },
+    {
+      "name": "RptAbsTimeEntryPEOTeTmRecType",
+      "table": "HWM_TM_RPT_ENTRY_V",
+      "column": "TE_TM_REC_TYPE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RptAbsTimeEntryPEOTeTmRecVersion",
+      "table": "HWM_TM_RPT_ENTRY_V",
+      "column": "TE_TM_REC_VERSION",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    },
+    {
+      "name": "RptAbsTimeEntryPEOTeUnitOfMeasure",
+      "table": "HWM_TM_RPT_ENTRY_V",
+      "column": "TE_UNIT_OF_MEASURE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SimpleAbsHeaderParamsAtrbPEOAncAbsenceEntryId",
+      "table": "HWM_TM_REP_S_ABS_HP_ATRBS_V",
+      "column": "ANC_ABSENCE_ENTRY_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SimpleAbsHeaderParamsAtrbPEOAncAttributeCategory",
+      "table": "HWM_TM_REP_S_ABS_HP_ATRBS_V",
+      "column": "ANC_ATTRIBUTE_CATEGORY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SimpleAbsHeaderParamsAtrbPEOAncEndOfBreakdown",
+      "table": "HWM_TM_REP_S_ABS_HP_ATRBS_V",
+      "column": "ANC_END_OF_BREAKDOWN",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SimpleAbsHeaderParamsAtrbPEOAncTimeRepositoryAttributeId",
+      "table": "HWM_TM_REP_S_ABS_HP_ATRBS_V",
+      "column": "ANC_TIME_REPOS_ATRB_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SimpleAbsTeParamsAtrbPEOAncDurationPaid",
+      "table": "HWM_TM_REP_S_ABS_TEP_ATRBS_V",
+      "column": "ANC_DURATION_PAID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SimpleAbsTeParamsAtrbPEOAncTimeRepositoryAttributeId",
+      "table": "HWM_TM_REP_S_ABS_TEP_ATRBS_V",
+      "column": "ANC_TIME_REPOS_ATRB_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SimpleHxtAttributePEOHxtAttributeCategory",
+      "table": "HWM_TM_REP_S_HXT_ATRBS_V",
+      "column": "HXT_ATTRIBUTE_CATEGORY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SimpleHxtAttributePEOHxtDay",
+      "table": "HWM_TM_REP_S_HXT_ATRBS_V",
+      "column": "HXT_DAY",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SimpleHxtAttributePEOHxtResolvedPeriodId",
+      "table": "HWM_TM_REP_S_HXT_ATRBS_V",
+      "column": "HXT_RESOLVED_PERIOD_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SimpleHxtAttributePEOHxtTmReposAtrbId",
+      "table": "HWM_TM_REP_S_HXT_ATRBS_V",
+      "column": "HXT_TIME_REPOS_ATRB_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SimpleProjectsAttributePEOPjcAttributeCategory",
+      "table": "HWM_TM_REP_S_PJC_ATRBS_V",
+      "column": "PJC_ATTRIBUTE_CATEGORY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SimpleProjectsAttributePEOPjcBillableFlag",
+      "table": "HWM_TM_REP_S_PJC_ATRBS_V",
+      "column": "PJC_BILLABLE_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SimpleProjectsAttributePEOPjcCapitalizableFlag",
+      "table": "HWM_TM_REP_S_PJC_ATRBS_V",
+      "column": "PJC_CAPITALIZABLE_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SimpleProjectsAttributePEOPjcContractId",
+      "table": "HWM_TM_REP_S_PJC_ATRBS_V",
+      "column": "PJC_CONTRACT_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SimpleProjectsAttributePEOPjcExpOrganizationId",
+      "table": "HWM_TM_REP_S_PJC_ATRBS_V",
+      "column": "PJC_EXP_ORGANIZATION_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SimpleProjectsAttributePEOPjcFundingSourceId",
+      "table": "HWM_TM_REP_S_PJC_ATRBS_V",
+      "column": "PJC_FUNDING_SOURCE_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SimpleProjectsAttributePEOPjcProjectId",
+      "table": "HWM_TM_REP_S_PJC_ATRBS_V",
+      "column": "PJC_PROJECT_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SimpleProjectsAttributePEOPjcProjectUnit",
+      "table": "HWM_TM_REP_S_PJC_ATRBS_V",
+      "column": "PJC_PROJECT_UNIT",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SimpleProjectsAttributePEOPjcTaskId",
+      "table": "HWM_TM_REP_S_PJC_ATRBS_V",
+      "column": "PJC_TASK_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SimpleProjectsAttributePEOPjcTimeRepositoryAttributeId",
+      "table": "HWM_TM_REP_S_PJC_ATRBS_V",
+      "column": "PJC_TIME_REPOS_ATRB_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SimpleProjectsAttributePEOPjcWorkType",
+      "table": "HWM_TM_REP_S_PJC_ATRBS_V",
+      "column": "PJC_WORK_TYPE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SimpleSecurityAttributePEOSecAttributeCategory",
+      "table": "HWM_TM_REP_S_SEC_ATRBS_V",
+      "column": "SEC_ATTRIBUTE_CATEGORY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SimpleSecurityAttributePEOSecurityBusinessUnit",
+      "table": "HWM_TM_REP_S_SEC_ATRBS_V",
+      "column": "SECURITY_BUSINESS_UNIT",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SimpleSecurityAttributePEOSecurityEnterpriseId",
+      "table": "HWM_TM_REP_S_SEC_ATRBS_V",
+      "column": "SECURITY_ENTERPRISE_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SimpleSecurityAttributePEOSecurityLegislativeDataGroup",
+      "table": "HWM_TM_REP_S_SEC_ATRBS_V",
+      "column": "SECURITY_LEG_DATA_GROUP",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SimpleSecurityAttributePEOSecurityOrganizationId",
+      "table": "HWM_TM_REP_S_SEC_ATRBS_V",
+      "column": "SECURITY_ORGANIZATION_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SimpleSecurityAttributePEOSecurityTimeRepositoryAttributeId",
+      "table": "HWM_TM_REP_S_SEC_ATRBS_V",
+      "column": "SEC_TIME_REPOS_ATRB_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TcSubmittedTimestampPEOStatusId",
+      "table": "HWM_TM_SUBMITTED_TS_V",
+      "column": "STATUS_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TcSubmittedTimestampPEOSubmittedTimestamp",
+      "table": "HWM_TM_SUBMITTED_TS_V",
+      "column": "SUBMITTED_TIMESTAMP",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TcUiTimeStatusPEODateFrom",
+      "table": "HWM_TM_STATUSES",
+      "column": "DATE_FROM",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TcUiTimeStatusPEOStatusId",
+      "table": "HWM_TM_STATUSES",
+      "column": "STATUS_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TcUiTimeStatusPEOStatusValue",
+      "table": "HWM_TM_STATUSES",
+      "column": "STATUS_VALUE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TcUserTimeStatusPEODateFrom",
+      "table": "HWM_TM_STATUSES",
+      "column": "DATE_FROM",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TcUserTimeStatusPEOStatusId",
+      "table": "HWM_TM_STATUSES",
+      "column": "STATUS_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TcUserTimeStatusPEOStatusValue",
+      "table": "HWM_TM_STATUSES",
+      "column": "STATUS_VALUE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TeAppPjcTimeStatusPEOStatusId",
+      "table": "HWM_TM_STATUSES",
+      "column": "STATUS_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TeAppPjcTimeStatusPEOStatusValue",
+      "table": "HWM_TM_STATUSES",
+      "column": "STATUS_VALUE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TeAppPyrTimeStatusPEOStatusId",
+      "table": "HWM_TM_STATUSES",
+      "column": "STATUS_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TeAppPyrTimeStatusPEOStatusValue",
+      "table": "HWM_TM_STATUSES",
+      "column": "STATUS_VALUE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TeCmpTimeStatusPEOStatusId",
+      "table": "HWM_TM_STATUSES",
+      "column": "STATUS_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TeCmpTimeStatusPEOStatusValue",
+      "table": "HWM_TM_STATUSES",
+      "column": "STATUS_VALUE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TeErrTimeStatusPEOStatusId",
+      "table": "HWM_TM_STATUSES",
+      "column": "STATUS_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TeErrTimeStatusPEOStatusValue",
+      "table": "HWM_TM_STATUSES",
+      "column": "STATUS_VALUE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TimeAtomicCompletedStatusPEOStatusId",
+      "table": "HWM_TM_A_TE_COMPLETED_V",
+      "column": "STATUS_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TimeAtomicErrorStatusPEOStatusId",
+      "table": "HWM_TM_A_TR_ERR_STATUS_V",
+      "column": "STATUS_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TimeAtomicUserStatusPEOStatusId",
+      "table": "HWM_TM_A_USER_STATUS_V",
+      "column": "STATUS_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TimeAtomicUserStatusPEOStatusValue",
+      "table": "HWM_TM_A_USER_STATUS_V",
+      "column": "STATUS_VALUE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TimeCardApprovedTimestampPEOApprovedTimestamp",
+      "table": "HWM_TM_APPROVED_TS_V",
+      "column": "APPROVED_TIMESTAMP",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TimeCardApprovedTimestampPEOStatusId",
+      "table": "HWM_TM_APPROVED_TS_V",
+      "column": "STATUS_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TimeCardVersionStatusPEOMaxAUserStatusId",
+      "table": "HWM_TC_VERSION_STATUS_V",
+      "column": "MAX_A_USER_STATUS_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TimeCardVersionStatusPEOMaxDUiStatusId",
+      "table": "HWM_TC_VERSION_STATUS_V",
+      "column": "MAX_D_UI_STATUS_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TimeCardVersionStatusPEOTmBldgBlkId",
+      "table": "HWM_TC_VERSION_STATUS_V",
+      "column": "TM_BLDG_BLK_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TimeCardVersionStatusPEOTmBldgBlkVersion",
+      "table": "HWM_TC_VERSION_STATUS_V",
+      "column": "TM_BLDG_BLK_VERSION",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TimeDerivedUIStatusPEOStatusId",
+      "table": "HWM_TM_D_TM_UI_STATUS_V",
+      "column": "STATUS_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TimeDerivedUIStatusPEOStatusValue",
+      "table": "HWM_TM_D_TM_UI_STATUS_V",
+      "column": "STATUS_VALUE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TimeEntryVersionStatusPEOMaxAAppStatusPjcId",
+      "table": "HWM_TE_VERSION_STATUS_V",
+      "column": "MAX_A_APP_STATUS_PJC_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TimeEntryVersionStatusPEOMaxAAppStatusPyrId",
+      "table": "HWM_TE_VERSION_STATUS_V",
+      "column": "MAX_A_APP_STATUS_PYR_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TimeEntryVersionStatusPEOMaxATeCompletedId",
+      "table": "HWM_TE_VERSION_STATUS_V",
+      "column": "MAX_A_TE_COMPLETED_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TimeEntryVersionStatusPEOMaxATrErrStatusId",
+      "table": "HWM_TE_VERSION_STATUS_V",
+      "column": "MAX_A_TR_ERR_STATUS_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TimeEntryVersionStatusPEOTmBldgBlkId",
+      "table": "HWM_TE_VERSION_STATUS_V",
+      "column": "TM_BLDG_BLK_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TimeEntryVersionStatusPEOTmBldgBlkVersion",
+      "table": "HWM_TE_VERSION_STATUS_V",
+      "column": "TM_BLDG_BLK_VERSION",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TimecardHeaderPEOTclaystId",
+      "table": "HXT_TM_HEADER",
+      "column": "TCLAYST_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TimecardHeaderPEOTimecardHeaderId",
+      "table": "HXT_TM_HEADER",
+      "column": "TM_HEADER_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TmAtomicAbsApprovalStatusPEOStatusId",
+      "table": "HWM_TM_A_ANC_APP_STATUS_V",
+      "column": "STATUS_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TmAtomicAbsApprovalStatusPEOStatusValue",
+      "table": "HWM_TM_A_ANC_APP_STATUS_V",
+      "column": "STATUS_VALUE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TmAtomicPjcApprovalStatusPEOStatusId",
+      "table": "HWM_TM_A_APP_STATUS_PJC_V",
+      "column": "STATUS_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TmAtomicPjcApprovalStatusPEOStatusValue",
+      "table": "HWM_TM_A_APP_STATUS_PJC_V",
+      "column": "STATUS_VALUE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TmAtomicPyrApprovalStatusPEOStatusId",
+      "table": "HWM_TM_A_APP_STATUS_PYR_V",
+      "column": "STATUS_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TmAtomicPyrApprovalStatusPEOStatusValue",
+      "table": "HWM_TM_A_APP_STATUS_PYR_V",
+      "column": "STATUS_VALUE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ToilReposAtrbId",
+      "table": "HWM_TM_REP_M_COMP_TOIL_ATRBS_V",
+      "column": "TOIL_REPOS_ATRB_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ToilTimeType",
+      "table": "HWM_TM_REP_M_COMP_TOIL_ATRBS_V",
+      "column": "TOIL_TIME_TYPE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    }
+  ],
+  "by_table": {
+    "HWM_TM_RPT_ENTRY_V": [
+      {
+        "attribute": "AncDeleteFlag",
+        "column": "ANC_DELETE_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AncLatestVersion",
+        "column": "ANC_LATEST_VERSION",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "RptAbsTimeEntryPEOAncGrpTypeId",
+        "column": "ANC_GRP_TYPE_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "RptAbsTimeEntryPEOAncTmRecGrpId",
+        "column": "ANC_TM_REC_GRP_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "RptAbsTimeEntryPEOAncTmRecGrpVersion",
+        "column": "ANC_TM_REC_GRP_VERSION",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "RptAbsTimeEntryPEODayCommentText",
+        "column": "DAY_COMMENT_TEXT",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "RptAbsTimeEntryPEODayCreatedBy",
+        "column": "DAY_CREATED_BY",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "RptAbsTimeEntryPEODayCreationDate",
+        "column": "DAY_CREATION_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "RptAbsTimeEntryPEODayDateFrom",
+        "column": "DAY_DATE_FROM",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "RptAbsTimeEntryPEODayDateTo",
+        "column": "DAY_DATE_TO",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "RptAbsTimeEntryPEODayDeleteFlag",
+        "column": "DAY_DELETE_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "RptAbsTimeEntryPEODayGrpTypeId",
+        "column": "DAY_GRP_TYPE_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "RptAbsTimeEntryPEODayLastUpdateDate",
+        "column": "DAY_LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "RptAbsTimeEntryPEODayLastUpdateLogin",
+        "column": "DAY_LAST_UPDATE_LOGIN",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "RptAbsTimeEntryPEODayLastUpdatedBy",
+        "column": "DAY_LAST_UPDATED_BY",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "RptAbsTimeEntryPEODayLatestVersion",
+        "column": "DAY_LATEST_VERSION",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "RptAbsTimeEntryPEODayLayerCode",
+        "column": "DAY_LAYER_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "RptAbsTimeEntryPEODayStartGmtOffset",
+        "column": "DAY_START_GMT_OFFSET",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "RptAbsTimeEntryPEODayStartTime",
+        "column": "DAY_START_TIME",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "RptAbsTimeEntryPEODayStartTimezoneCode",
+        "column": "DAY_START_TIMEZONE_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "RptAbsTimeEntryPEODayStopGmtOffset",
+        "column": "DAY_STOP_GMT_OFFSET",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "RptAbsTimeEntryPEODayStopTime",
+        "column": "DAY_STOP_TIME",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "RptAbsTimeEntryPEODayStopTimezoneCode",
+        "column": "DAY_STOP_TIMEZONE_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "RptAbsTimeEntryPEODayTmRecGrpId",
+        "column": "DAY_TM_REC_GRP_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "RptAbsTimeEntryPEODayTmRecGrpVersion",
+        "column": "DAY_TM_REC_GRP_VERSION",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "RptAbsTimeEntryPEOTcCommentText",
+        "column": "TC_COMMENT_TEXT",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "RptAbsTimeEntryPEOTcCommitTimestamp",
+        "column": "TC_COMMIT_TIMESTAMP",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "RptAbsTimeEntryPEOTcCreatedBy",
+        "column": "TC_CREATED_BY",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "RptAbsTimeEntryPEOTcCreationDate",
+        "column": "TC_CREATION_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "RptAbsTimeEntryPEOTcDateFrom",
+        "column": "TC_DATE_FROM",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "RptAbsTimeEntryPEOTcDateTo",
+        "column": "TC_DATE_TO",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "RptAbsTimeEntryPEOTcDeleteFlag",
+        "column": "TC_DELETE_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "RptAbsTimeEntryPEOTcGrpTypeId",
+        "column": "TC_GRP_TYPE_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "RptAbsTimeEntryPEOTcLastUpdateDate",
+        "column": "TC_LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "RptAbsTimeEntryPEOTcLastUpdateLogin",
+        "column": "TC_LAST_UPDATE_LOGIN",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "RptAbsTimeEntryPEOTcLastUpdatedBy",
+        "column": "TC_LAST_UPDATED_BY",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "RptAbsTimeEntryPEOTcLatestVersion",
+        "column": "TC_LATEST_VERSION",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "RptAbsTimeEntryPEOTcLayerCode",
+        "column": "TC_LAYER_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "RptAbsTimeEntryPEOTcStartDate",
+        "column": "TC_START_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "RptAbsTimeEntryPEOTcStartGmtOffset",
+        "column": "TC_START_GMT_OFFSET",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "RptAbsTimeEntryPEOTcStartTime",
+        "column": "TC_START_TIME",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "RptAbsTimeEntryPEOTcStartTimezoneCode",
+        "column": "TC_START_TIMEZONE_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "RptAbsTimeEntryPEOTcStopDate",
+        "column": "TC_STOP_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "RptAbsTimeEntryPEOTcStopGmtOffset",
+        "column": "TC_STOP_GMT_OFFSET",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "RptAbsTimeEntryPEOTcStopTime",
+        "column": "TC_STOP_TIME",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "RptAbsTimeEntryPEOTcStopTimezoneCode",
+        "column": "TC_STOP_TIMEZONE_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "RptAbsTimeEntryPEOTcTmRecGrpId",
+        "column": "TC_TM_REC_GRP_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "RptAbsTimeEntryPEOTcTmRecGrpVersion",
+        "column": "TC_TM_REC_GRP_VERSION",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "RptAbsTimeEntryPEOTeActivityInId",
+        "column": "TE_ACTIVITY_IN_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "RptAbsTimeEntryPEOTeActivityOutId",
+        "column": "TE_ACTIVITY_OUT_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "RptAbsTimeEntryPEOTeCommentText",
+        "column": "TE_COMMENT_TEXT",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "RptAbsTimeEntryPEOTeCreatedBy",
+        "column": "TE_CREATED_BY",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "RptAbsTimeEntryPEOTeCreationDate",
+        "column": "TE_CREATION_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "RptAbsTimeEntryPEOTeDateFrom",
+        "column": "TE_DATE_FROM",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "RptAbsTimeEntryPEOTeDateTo",
+        "column": "TE_DATE_TO",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "RptAbsTimeEntryPEOTeDeleteFlag",
+        "column": "TE_DELETE_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "RptAbsTimeEntryPEOTeLastUpdateDate",
+        "column": "TE_LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "RptAbsTimeEntryPEOTeLastUpdateLogin",
+        "column": "TE_LAST_UPDATE_LOGIN",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "RptAbsTimeEntryPEOTeLastUpdatedBy",
+        "column": "TE_LAST_UPDATED_BY",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "RptAbsTimeEntryPEOTeLatestVersion",
+        "column": "TE_LATEST_VERSION",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "RptAbsTimeEntryPEOTeLayerCode",
+        "column": "TE_LAYER_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "RptAbsTimeEntryPEOTeMeasure",
+        "column": "TE_MEASURE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "RptAbsTimeEntryPEOTeMeasureAbsence",
+        "column": "TE_MEASURE_ABSENCE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "RptAbsTimeEntryPEOTeMeasureAbsenceDay",
+        "column": "TE_MEASURE_ABSENCE_DAY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "RptAbsTimeEntryPEOTeMeasureLabor",
+        "column": "TE_MEASURE_LABOR",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "RptAbsTimeEntryPEOTeResourceId",
+        "column": "RESOURCE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "RptAbsTimeEntryPEOTeStartGmtOffset",
+        "column": "TE_START_GMT_OFFSET",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "RptAbsTimeEntryPEOTeStartTime",
+        "column": "TE_START_TIME",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "RptAbsTimeEntryPEOTeStartTimezoneCode",
+        "column": "TE_START_TIMEZONE_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "RptAbsTimeEntryPEOTeStopGmtOffset",
+        "column": "TE_STOP_GMT_OFFSET",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "RptAbsTimeEntryPEOTeStopTime",
+        "column": "TE_STOP_TIME",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "RptAbsTimeEntryPEOTeStopTimezoneCode",
+        "column": "TE_STOP_TIMEZONE_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "RptAbsTimeEntryPEOTeSubresourceId",
+        "column": "TE_SUBRESOURCE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "RptAbsTimeEntryPEOTeTcsmrConfigSetId",
+        "column": "TE_TCSMR_CONFIG_SET_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "RptAbsTimeEntryPEOTeTcsmrSetId",
+        "column": "TE_TCSMR_SET_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "RptAbsTimeEntryPEOTeTimeReporterId",
+        "column": "TE_TIME_REPORTER_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "RptAbsTimeEntryPEOTeTmRecId",
+        "column": "TE_TM_REC_ID",
+        "bicc": true,
+        "pk": true
+      },
+      {
+        "attribute": "RptAbsTimeEntryPEOTeTmRecType",
+        "column": "TE_TM_REC_TYPE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "RptAbsTimeEntryPEOTeTmRecVersion",
+        "column": "TE_TM_REC_VERSION",
+        "bicc": true,
+        "pk": true
+      },
+      {
+        "attribute": "RptAbsTimeEntryPEOTeUnitOfMeasure",
+        "column": "TE_UNIT_OF_MEASURE",
+        "bicc": true,
+        "pk": false
+      }
+    ],
+    "HWM_TM_REP_S_COMMON_ATRBS_V": [
+      {
+        "attribute": "CommonInternalSource",
+        "column": "COMMON_INTERNAL_SOURCE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CommonOwner",
+        "column": "COMMON_OWNER",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CommonTimeReposAtrbId1",
+        "column": "COMMON_TIME_REPOS_ATRB_ID",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "HWM_TM_REP_S_HXT_ATRBS_V": [
+      {
+        "attribute": "Expedite",
+        "column": "EXPEDITE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "HxtTimeRepositoryAttributeId",
+        "column": "HXT_TIME_REPOS_ATRB_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "OverrideCheckPrinter",
+        "column": "OVERRIDE_CHECK_PRINTER",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "OverridePayMethod",
+        "column": "OVERRIDE_PAY_METHOD",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "SimpleHxtAttributePEOHxtAttributeCategory",
+        "column": "HXT_ATTRIBUTE_CATEGORY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "SimpleHxtAttributePEOHxtDay",
+        "column": "HXT_DAY",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "SimpleHxtAttributePEOHxtResolvedPeriodId",
+        "column": "HXT_RESOLVED_PERIOD_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "SimpleHxtAttributePEOHxtTmReposAtrbId",
+        "column": "HXT_TIME_REPOS_ATRB_ID",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "HWM_TM_REP_M_ANC_ATRBS_V": [
+      {
+        "attribute": "MasterAbsTypeAttributePEOAncAbsenceType",
+        "column": "ANC_ABSENCE_TYPE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "MasterAbsTypeAttributePEOAncMasterTimeRepositoryAttributeId",
+        "column": "ANC_MASTER_TIME_REPOS_ATRB_ID",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "HWM_TM_REP_M_PJC_DOC_ATRBS_V": [
+      {
+        "attribute": "MasterDocTypeAttributePEOPjcDocTypeTimeRepositoryAttributeId",
+        "column": "PJC_DOC_TIME_REPOS_ATRB_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "MasterDocTypeAttributePEOPjcDocumentType",
+        "column": "PJC_DOCUMENT_TYPE",
+        "bicc": true,
+        "pk": false
+      }
+    ],
+    "HWM_TM_REP_M_PJC_EXP_ATRBS_V": [
+      {
+        "attribute": "MasterExpendTypeAttributePEOPjcExpTypeTimeRepositoryAttributeId",
+        "column": "PJC_EXP_TIME_REPOS_ATRB_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "MasterExpendTypeAttributePEOPjcExpenditureType",
+        "column": "PJC_EXPENDITURE_TYPE",
+        "bicc": true,
+        "pk": false
+      }
+    ],
+    "HWM_TM_REP_M_PTT_ATRBS_V": [
+      {
+        "attribute": "MasterPyrTimeTypeAtrbPEOPayPayrollTimeType",
+        "column": "PAY_PAYROLL_TIME_TYPE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "MasterPyrTimeTypeAtrbPEOPttTimeRepositoryAttributeId",
+        "column": "PTT_TIME_REPOS_ATRB_ID",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "HWM_TM_OPM_MEANING_V": [
+      {
+        "attribute": "OverridePaymentMethodCode",
+        "column": "CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "OverridePaymentMethodCodeMeaning",
+        "column": "MEANING",
+        "bicc": true,
+        "pk": false
+      }
+    ],
+    "PER_ALL_PEOPLE_F": [
+      {
+        "attribute": "PersonDetailsPEOEffectiveEndDate",
+        "column": "EFFECTIVE_END_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PersonDetailsPEOEffectiveStartDate",
+        "column": "EFFECTIVE_START_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PersonDetailsPEOPersonId",
+        "column": "PERSON_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PersonDetailsPEOPersonNumber",
+        "column": "PERSON_NUMBER",
+        "bicc": true,
+        "pk": false
+      }
+    ],
+    "PER_PERSON_NAMES_F_V": [
+      {
+        "attribute": "PersonNamePEOEffectiveEndDate",
+        "column": "EFFECTIVE_END_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PersonNamePEOEffectiveStartDate",
+        "column": "EFFECTIVE_START_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PersonNamePEOFullName",
+        "column": "FULL_NAME",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PersonNamePEOPersonNameId",
+        "column": "PERSON_NAME_ID",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "HWM_RP_TM_PERIODS_TL": [
+      {
+        "attribute": "RepeatingTimePeriodTLDescription",
+        "column": "DESCRIPTION",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "RepeatingTimePeriodTLLanguage",
+        "column": "LANGUAGE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "RepeatingTimePeriodTLRepeatingTmPeriodId",
+        "column": "REPEATING_TM_PERIOD_ID",
+        "bicc": true,
+        "pk": false
+      }
+    ],
+    "HWM_TM_REPROCESS_REQUEST": [
+      {
+        "attribute": "ReprocessRequestPEOReprocessReason",
+        "column": "REPROCESS_REASON",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ReprocessRequestPEOReprocessStatus",
+        "column": "REPROCESS_STATUS",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ReprocessRequestPEOTmReprocessRequestId",
+        "column": "TM_REPROCESS_REQUEST_ID",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "HWM_TM_REP_S_ABS_HP_ATRBS_V": [
+      {
+        "attribute": "SimpleAbsHeaderParamsAtrbPEOAncAbsenceEntryId",
+        "column": "ANC_ABSENCE_ENTRY_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "SimpleAbsHeaderParamsAtrbPEOAncAttributeCategory",
+        "column": "ANC_ATTRIBUTE_CATEGORY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "SimpleAbsHeaderParamsAtrbPEOAncEndOfBreakdown",
+        "column": "ANC_END_OF_BREAKDOWN",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "SimpleAbsHeaderParamsAtrbPEOAncTimeRepositoryAttributeId",
+        "column": "ANC_TIME_REPOS_ATRB_ID",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "HWM_TM_REP_S_ABS_TEP_ATRBS_V": [
+      {
+        "attribute": "SimpleAbsTeParamsAtrbPEOAncDurationPaid",
+        "column": "ANC_DURATION_PAID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "SimpleAbsTeParamsAtrbPEOAncTimeRepositoryAttributeId",
+        "column": "ANC_TIME_REPOS_ATRB_ID",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "HWM_TM_REP_S_PJC_ATRBS_V": [
+      {
+        "attribute": "SimpleProjectsAttributePEOPjcAttributeCategory",
+        "column": "PJC_ATTRIBUTE_CATEGORY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "SimpleProjectsAttributePEOPjcBillableFlag",
+        "column": "PJC_BILLABLE_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "SimpleProjectsAttributePEOPjcCapitalizableFlag",
+        "column": "PJC_CAPITALIZABLE_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "SimpleProjectsAttributePEOPjcContractId",
+        "column": "PJC_CONTRACT_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "SimpleProjectsAttributePEOPjcExpOrganizationId",
+        "column": "PJC_EXP_ORGANIZATION_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "SimpleProjectsAttributePEOPjcFundingSourceId",
+        "column": "PJC_FUNDING_SOURCE_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "SimpleProjectsAttributePEOPjcProjectId",
+        "column": "PJC_PROJECT_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "SimpleProjectsAttributePEOPjcProjectUnit",
+        "column": "PJC_PROJECT_UNIT",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "SimpleProjectsAttributePEOPjcTaskId",
+        "column": "PJC_TASK_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "SimpleProjectsAttributePEOPjcTimeRepositoryAttributeId",
+        "column": "PJC_TIME_REPOS_ATRB_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "SimpleProjectsAttributePEOPjcWorkType",
+        "column": "PJC_WORK_TYPE",
+        "bicc": true,
+        "pk": false
+      }
+    ],
+    "HWM_TM_REP_S_SEC_ATRBS_V": [
+      {
+        "attribute": "SimpleSecurityAttributePEOSecAttributeCategory",
+        "column": "SEC_ATTRIBUTE_CATEGORY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "SimpleSecurityAttributePEOSecurityBusinessUnit",
+        "column": "SECURITY_BUSINESS_UNIT",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "SimpleSecurityAttributePEOSecurityEnterpriseId",
+        "column": "SECURITY_ENTERPRISE_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "SimpleSecurityAttributePEOSecurityLegislativeDataGroup",
+        "column": "SECURITY_LEG_DATA_GROUP",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "SimpleSecurityAttributePEOSecurityOrganizationId",
+        "column": "SECURITY_ORGANIZATION_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "SimpleSecurityAttributePEOSecurityTimeRepositoryAttributeId",
+        "column": "SEC_TIME_REPOS_ATRB_ID",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "HWM_TM_SUBMITTED_TS_V": [
+      {
+        "attribute": "TcSubmittedTimestampPEOStatusId",
+        "column": "STATUS_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TcSubmittedTimestampPEOSubmittedTimestamp",
+        "column": "SUBMITTED_TIMESTAMP",
+        "bicc": true,
+        "pk": false
+      }
+    ],
+    "HWM_TM_STATUSES": [
+      {
+        "attribute": "TcUiTimeStatusPEODateFrom",
+        "column": "DATE_FROM",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TcUiTimeStatusPEOStatusId",
+        "column": "STATUS_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TcUiTimeStatusPEOStatusValue",
+        "column": "STATUS_VALUE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TcUserTimeStatusPEODateFrom",
+        "column": "DATE_FROM",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TcUserTimeStatusPEOStatusId",
+        "column": "STATUS_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TcUserTimeStatusPEOStatusValue",
+        "column": "STATUS_VALUE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TeAppPjcTimeStatusPEOStatusId",
+        "column": "STATUS_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TeAppPjcTimeStatusPEOStatusValue",
+        "column": "STATUS_VALUE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TeAppPyrTimeStatusPEOStatusId",
+        "column": "STATUS_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TeAppPyrTimeStatusPEOStatusValue",
+        "column": "STATUS_VALUE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TeCmpTimeStatusPEOStatusId",
+        "column": "STATUS_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TeCmpTimeStatusPEOStatusValue",
+        "column": "STATUS_VALUE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TeErrTimeStatusPEOStatusId",
+        "column": "STATUS_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TeErrTimeStatusPEOStatusValue",
+        "column": "STATUS_VALUE",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "HWM_TM_A_TE_COMPLETED_V": [
+      {
+        "attribute": "TimeAtomicCompletedStatusPEOStatusId",
+        "column": "STATUS_ID",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "HWM_TM_A_TR_ERR_STATUS_V": [
+      {
+        "attribute": "TimeAtomicErrorStatusPEOStatusId",
+        "column": "STATUS_ID",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "HWM_TM_A_USER_STATUS_V": [
+      {
+        "attribute": "TimeAtomicUserStatusPEOStatusId",
+        "column": "STATUS_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TimeAtomicUserStatusPEOStatusValue",
+        "column": "STATUS_VALUE",
+        "bicc": true,
+        "pk": false
+      }
+    ],
+    "HWM_TM_APPROVED_TS_V": [
+      {
+        "attribute": "TimeCardApprovedTimestampPEOApprovedTimestamp",
+        "column": "APPROVED_TIMESTAMP",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TimeCardApprovedTimestampPEOStatusId",
+        "column": "STATUS_ID",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "HWM_TC_VERSION_STATUS_V": [
+      {
+        "attribute": "TimeCardVersionStatusPEOMaxAUserStatusId",
+        "column": "MAX_A_USER_STATUS_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TimeCardVersionStatusPEOMaxDUiStatusId",
+        "column": "MAX_D_UI_STATUS_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TimeCardVersionStatusPEOTmBldgBlkId",
+        "column": "TM_BLDG_BLK_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TimeCardVersionStatusPEOTmBldgBlkVersion",
+        "column": "TM_BLDG_BLK_VERSION",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "HWM_TM_D_TM_UI_STATUS_V": [
+      {
+        "attribute": "TimeDerivedUIStatusPEOStatusId",
+        "column": "STATUS_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TimeDerivedUIStatusPEOStatusValue",
+        "column": "STATUS_VALUE",
+        "bicc": true,
+        "pk": false
+      }
+    ],
+    "HWM_TE_VERSION_STATUS_V": [
+      {
+        "attribute": "TimeEntryVersionStatusPEOMaxAAppStatusPjcId",
+        "column": "MAX_A_APP_STATUS_PJC_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TimeEntryVersionStatusPEOMaxAAppStatusPyrId",
+        "column": "MAX_A_APP_STATUS_PYR_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TimeEntryVersionStatusPEOMaxATeCompletedId",
+        "column": "MAX_A_TE_COMPLETED_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TimeEntryVersionStatusPEOMaxATrErrStatusId",
+        "column": "MAX_A_TR_ERR_STATUS_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TimeEntryVersionStatusPEOTmBldgBlkId",
+        "column": "TM_BLDG_BLK_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TimeEntryVersionStatusPEOTmBldgBlkVersion",
+        "column": "TM_BLDG_BLK_VERSION",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "HXT_TM_HEADER": [
+      {
+        "attribute": "TimecardHeaderPEOTclaystId",
+        "column": "TCLAYST_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TimecardHeaderPEOTimecardHeaderId",
+        "column": "TM_HEADER_ID",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "HWM_TM_A_ANC_APP_STATUS_V": [
+      {
+        "attribute": "TmAtomicAbsApprovalStatusPEOStatusId",
+        "column": "STATUS_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TmAtomicAbsApprovalStatusPEOStatusValue",
+        "column": "STATUS_VALUE",
+        "bicc": true,
+        "pk": false
+      }
+    ],
+    "HWM_TM_A_APP_STATUS_PJC_V": [
+      {
+        "attribute": "TmAtomicPjcApprovalStatusPEOStatusId",
+        "column": "STATUS_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TmAtomicPjcApprovalStatusPEOStatusValue",
+        "column": "STATUS_VALUE",
+        "bicc": true,
+        "pk": false
+      }
+    ],
+    "HWM_TM_A_APP_STATUS_PYR_V": [
+      {
+        "attribute": "TmAtomicPyrApprovalStatusPEOStatusId",
+        "column": "STATUS_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TmAtomicPyrApprovalStatusPEOStatusValue",
+        "column": "STATUS_VALUE",
+        "bicc": true,
+        "pk": false
+      }
+    ],
+    "HWM_TM_REP_M_COMP_TOIL_ATRBS_V": [
+      {
+        "attribute": "ToilReposAtrbId",
+        "column": "TOIL_REPOS_ATRB_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ToilTimeType",
+        "column": "TOIL_TIME_TYPE",
+        "bicc": false,
+        "pk": false
+      }
+    ]
+  }
+}

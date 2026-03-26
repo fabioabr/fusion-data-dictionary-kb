@@ -1,0 +1,624 @@
+{
+  "meta": {
+    "pvo_name": "CandidatePoolMemberPVO",
+    "full_path": "HcmTopModelAnalyticsGlobalAM.HcmRecSourcingCandPoolsAM.CandidatePoolMemberPVO",
+    "module_path": "HcmTopModelAnalyticsGlobalAM.HcmRecSourcingCandPoolsAM",
+    "module_code": "PO",
+    "type": "pvo",
+    "description": "Extrai os membros de pools de candidatos, incluindo perfil, qualificações e status de participação. Permite gestão de banco de talentos para contratação de serviços e sourcing de mão de obra."
+  },
+  "stats": {
+    "total_attributes": 41,
+    "tables_count": 9,
+    "bicc_enabled": 21,
+    "bicc_pct": 51,
+    "pk_count": 1
+  },
+  "tables": [
+    "HRT_POOLS_VL",
+    "HRT_POOL_MEMBERS",
+    "IRC_CAND_POOL_MEMBERS",
+    "IRC_CAND_PROFILE_USAGES_M",
+    "IRC_PHASES_B",
+    "IRC_PHASES_TL",
+    "IRC_POOLMEM_LAST_INTERACTION_V",
+    "IRC_STATES_B",
+    "IRC_STATES_TL"
+  ],
+  "attributes": [
+    {
+      "name": "CandPoolMemLastInteractionPEOInteractionDate",
+      "table": "IRC_POOLMEM_LAST_INTERACTION_V",
+      "column": "INTERACTION_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CandPoolMemLastInteractionPEOInteractionId",
+      "table": "IRC_POOLMEM_LAST_INTERACTION_V",
+      "column": "INTERACTION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CandPoolMemberPEOProcessInstanceId",
+      "table": "IRC_CAND_POOL_MEMBERS",
+      "column": "PROCESS_INSTANCE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CandPoolMemberPEOProcessTemplateId",
+      "table": "IRC_CAND_POOL_MEMBERS",
+      "column": "PROCESS_TEMPLATE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CandProfileUsageId",
+      "table": "IRC_CAND_PROFILE_USAGES_M",
+      "column": "CAND_PROFILE_USAGE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CandProfileUsgsPEOEffectiveEndDate",
+      "table": "IRC_CAND_PROFILE_USAGES_M",
+      "column": "EFFECTIVE_END_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CandProfileUsgsPEOEffectiveLatestChange",
+      "table": "IRC_CAND_PROFILE_USAGES_M",
+      "column": "EFFECTIVE_LATEST_CHANGE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CandProfileUsgsPEOEffectiveSequence",
+      "table": "IRC_CAND_PROFILE_USAGES_M",
+      "column": "EFFECTIVE_SEQUENCE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CandProfileUsgsPEOEffectiveStartDate",
+      "table": "IRC_CAND_PROFILE_USAGES_M",
+      "column": "EFFECTIVE_START_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CandProfileUsgsPEOProfileId",
+      "table": "IRC_CAND_PROFILE_USAGES_M",
+      "column": "PROFILE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "Code",
+      "table": "IRC_PHASES_B",
+      "column": "CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "Code1",
+      "table": "IRC_STATES_B",
+      "column": "CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CreatedBy",
+      "table": "IRC_CAND_POOL_MEMBERS",
+      "column": "CREATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CreationDate",
+      "table": "IRC_CAND_POOL_MEMBERS",
+      "column": "CREATION_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CurrentPhaseId",
+      "table": "IRC_CAND_POOL_MEMBERS",
+      "column": "CURRENT_PHASE_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CurrentStateId",
+      "table": "IRC_CAND_POOL_MEMBERS",
+      "column": "CURRENT_STATE_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "EnterpriseId",
+      "table": "HRT_POOL_MEMBERS",
+      "column": "ENTERPRISE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "EnterpriseId1",
+      "table": "HRT_POOL_MEMBERS",
+      "column": "ENTERPRISE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "Language",
+      "table": "IRC_PHASES_TL",
+      "column": "LANGUAGE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "Language1",
+      "table": "IRC_STATES_TL",
+      "column": "LANGUAGE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LastAddToReqDate",
+      "table": "IRC_CAND_POOL_MEMBERS",
+      "column": "LAST_ADD_TO_REQ_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LastUpdateDate",
+      "table": "IRC_CAND_POOL_MEMBERS",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": true
+    },
+    {
+      "name": "LastUpdateLogin",
+      "table": "IRC_CAND_POOL_MEMBERS",
+      "column": "LAST_UPDATE_LOGIN",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LastUpdatedBy",
+      "table": "IRC_CAND_POOL_MEMBERS",
+      "column": "LAST_UPDATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LastUpdatedByPersonId",
+      "table": "IRC_CAND_POOL_MEMBERS",
+      "column": "LAST_UPDATED_BY_PERSON_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "MemberId",
+      "table": "HRT_POOL_MEMBERS",
+      "column": "MEMBER_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "Name",
+      "table": "IRC_PHASES_TL",
+      "column": "NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "Name1",
+      "table": "IRC_STATES_TL",
+      "column": "NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ObjectVersionNumber",
+      "table": "IRC_CAND_POOL_MEMBERS",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PhaseBPEOSequenceNumber",
+      "table": "IRC_PHASES_B",
+      "column": "SEQUENCE_NUMBER",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PhaseId",
+      "table": "IRC_PHASES_B",
+      "column": "PHASE_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PhaseId1",
+      "table": "IRC_PHASES_TL",
+      "column": "PHASE_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PoolId",
+      "table": "IRC_CAND_POOL_MEMBERS",
+      "column": "POOL_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PoolId1",
+      "table": "HRT_POOLS_VL",
+      "column": "POOL_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PoolMemberId",
+      "table": "IRC_CAND_POOL_MEMBERS",
+      "column": "POOL_MEMBER_ID",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    },
+    {
+      "name": "PoolMemberId1",
+      "table": "HRT_POOL_MEMBERS",
+      "column": "POOL_MEMBER_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "StateId",
+      "table": "IRC_STATES_B",
+      "column": "STATE_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "StateId1",
+      "table": "IRC_STATES_TL",
+      "column": "STATE_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "Status",
+      "table": "HRT_POOL_MEMBERS",
+      "column": "STATUS",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TypeCode",
+      "table": "IRC_PHASES_B",
+      "column": "TYPE_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TypeCode1",
+      "table": "IRC_STATES_B",
+      "column": "TYPE_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    }
+  ],
+  "by_table": {
+    "IRC_POOLMEM_LAST_INTERACTION_V": [
+      {
+        "attribute": "CandPoolMemLastInteractionPEOInteractionDate",
+        "column": "INTERACTION_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CandPoolMemLastInteractionPEOInteractionId",
+        "column": "INTERACTION_ID",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "IRC_CAND_POOL_MEMBERS": [
+      {
+        "attribute": "CandPoolMemberPEOProcessInstanceId",
+        "column": "PROCESS_INSTANCE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CandPoolMemberPEOProcessTemplateId",
+        "column": "PROCESS_TEMPLATE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CreatedBy",
+        "column": "CREATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CreationDate",
+        "column": "CREATION_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CurrentPhaseId",
+        "column": "CURRENT_PHASE_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CurrentStateId",
+        "column": "CURRENT_STATE_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "LastAddToReqDate",
+        "column": "LAST_ADD_TO_REQ_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "LastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "LastUpdateLogin",
+        "column": "LAST_UPDATE_LOGIN",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "LastUpdatedBy",
+        "column": "LAST_UPDATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "LastUpdatedByPersonId",
+        "column": "LAST_UPDATED_BY_PERSON_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PoolId",
+        "column": "POOL_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PoolMemberId",
+        "column": "POOL_MEMBER_ID",
+        "bicc": true,
+        "pk": true
+      }
+    ],
+    "IRC_CAND_PROFILE_USAGES_M": [
+      {
+        "attribute": "CandProfileUsageId",
+        "column": "CAND_PROFILE_USAGE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CandProfileUsgsPEOEffectiveEndDate",
+        "column": "EFFECTIVE_END_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CandProfileUsgsPEOEffectiveLatestChange",
+        "column": "EFFECTIVE_LATEST_CHANGE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CandProfileUsgsPEOEffectiveSequence",
+        "column": "EFFECTIVE_SEQUENCE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CandProfileUsgsPEOEffectiveStartDate",
+        "column": "EFFECTIVE_START_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CandProfileUsgsPEOProfileId",
+        "column": "PROFILE_ID",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "IRC_PHASES_B": [
+      {
+        "attribute": "Code",
+        "column": "CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PhaseBPEOSequenceNumber",
+        "column": "SEQUENCE_NUMBER",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PhaseId",
+        "column": "PHASE_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TypeCode",
+        "column": "TYPE_CODE",
+        "bicc": true,
+        "pk": false
+      }
+    ],
+    "IRC_STATES_B": [
+      {
+        "attribute": "Code1",
+        "column": "CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "StateId",
+        "column": "STATE_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TypeCode1",
+        "column": "TYPE_CODE",
+        "bicc": true,
+        "pk": false
+      }
+    ],
+    "HRT_POOL_MEMBERS": [
+      {
+        "attribute": "EnterpriseId",
+        "column": "ENTERPRISE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "EnterpriseId1",
+        "column": "ENTERPRISE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "MemberId",
+        "column": "MEMBER_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PoolMemberId1",
+        "column": "POOL_MEMBER_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "Status",
+        "column": "STATUS",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "IRC_PHASES_TL": [
+      {
+        "attribute": "Language",
+        "column": "LANGUAGE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "Name",
+        "column": "NAME",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PhaseId1",
+        "column": "PHASE_ID",
+        "bicc": true,
+        "pk": false
+      }
+    ],
+    "IRC_STATES_TL": [
+      {
+        "attribute": "Language1",
+        "column": "LANGUAGE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "Name1",
+        "column": "NAME",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "StateId1",
+        "column": "STATE_ID",
+        "bicc": true,
+        "pk": false
+      }
+    ],
+    "HRT_POOLS_VL": [
+      {
+        "attribute": "PoolId1",
+        "column": "POOL_ID",
+        "bicc": false,
+        "pk": false
+      }
+    ]
+  }
+}

@@ -1,0 +1,735 @@
+{
+  "meta": {
+    "pvo_name": "ContactPersonAddressPVO",
+    "full_path": "HcmTopModelAnalyticsGlobalAM.PersonAM.ContactPersonAddressPVO",
+    "module_path": "HcmTopModelAnalyticsGlobalAM.PersonAM",
+    "module_code": "HCM",
+    "type": "pvo",
+    "description": "Extrai enderecos de contatos/dependentes com vigencia temporal e vinculo de relacionamento. Essencial para correspondencia com beneficiarios e dependentes."
+  },
+  "stats": {
+    "total_attributes": 50,
+    "tables_count": 4,
+    "bicc_enabled": 29,
+    "bicc_pct": 58,
+    "pk_count": 3
+  },
+  "tables": [
+    "PER_ADDRESSES_F",
+    "PER_ALL_PEOPLE_F",
+    "PER_CONTACT_RELSHIPS_F",
+    "PER_PERSON_ADDR_USAGES_F"
+  ],
+  "attributes": [
+    {
+      "name": "AddressId",
+      "table": "PER_ADDRESSES_F",
+      "column": "ADDRESS_ID",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    },
+    {
+      "name": "AddressesPEOAddressLine1",
+      "table": "PER_ADDRESSES_F",
+      "column": "ADDRESS_LINE_1",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AddressesPEOAddressLine2",
+      "table": "PER_ADDRESSES_F",
+      "column": "ADDRESS_LINE_2",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AddressesPEOAddressLine3",
+      "table": "PER_ADDRESSES_F",
+      "column": "ADDRESS_LINE_3",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AddressesPEOAddressLine4",
+      "table": "PER_ADDRESSES_F",
+      "column": "ADDRESS_LINE_4",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AddressesPEOBuilding",
+      "table": "PER_ADDRESSES_F",
+      "column": "BUILDING",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AddressesPEOBusinessGroupId",
+      "table": "PER_ADDRESSES_F",
+      "column": "BUSINESS_GROUP_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AddressesPEOCountry",
+      "table": "PER_ADDRESSES_F",
+      "column": "COUNTRY",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AddressesPEOCreatedBy",
+      "table": "PER_ADDRESSES_F",
+      "column": "CREATED_BY",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AddressesPEOCreationDate",
+      "table": "PER_ADDRESSES_F",
+      "column": "CREATION_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AddressesPEOFloorNumber",
+      "table": "PER_ADDRESSES_F",
+      "column": "FLOOR_NUMBER",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AddressesPEOGeometry",
+      "table": "PER_ADDRESSES_F",
+      "column": "GEOMETRY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AddressesPEOLastUpdateDate",
+      "table": "PER_ADDRESSES_F",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": true
+    },
+    {
+      "name": "AddressesPEOLastUpdateLogin",
+      "table": "PER_ADDRESSES_F",
+      "column": "LAST_UPDATE_LOGIN",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AddressesPEOLastUpdatedBy",
+      "table": "PER_ADDRESSES_F",
+      "column": "LAST_UPDATED_BY",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AddressesPEOLongPostalCode",
+      "table": "PER_ADDRESSES_F",
+      "column": "LONG_POSTAL_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AddressesPEOObjectVersionNumber",
+      "table": "PER_ADDRESSES_F",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AddressesPEOPostalCode",
+      "table": "PER_ADDRESSES_F",
+      "column": "POSTAL_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AddressesPEORegion1",
+      "table": "PER_ADDRESSES_F",
+      "column": "REGION_1",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AddressesPEORegion2",
+      "table": "PER_ADDRESSES_F",
+      "column": "REGION_2",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AddressesPEORegion3",
+      "table": "PER_ADDRESSES_F",
+      "column": "REGION_3",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AddressesPEOTimezoneCode",
+      "table": "PER_ADDRESSES_F",
+      "column": "TIMEZONE_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AddressesPEOTownOrCity",
+      "table": "PER_ADDRESSES_F",
+      "column": "TOWN_OR_CITY",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ContactPersonDetailsPEOEffectiveEndDate",
+      "table": "PER_ALL_PEOPLE_F",
+      "column": "EFFECTIVE_END_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ContactPersonDetailsPEOEffectiveStartDate",
+      "table": "PER_ALL_PEOPLE_F",
+      "column": "EFFECTIVE_START_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ContactPersonDetailsPEOMailingAddressId",
+      "table": "PER_ALL_PEOPLE_F",
+      "column": "MAILING_ADDRESS_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ContactPersonDetailsPEOPersonId",
+      "table": "PER_ALL_PEOPLE_F",
+      "column": "PERSON_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ContactRelshipsPEOContactRelationshipId",
+      "table": "PER_CONTACT_RELSHIPS_F",
+      "column": "CONTACT_RELATIONSHIP_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ContactRelshipsPEOEffectiveEndDate",
+      "table": "PER_CONTACT_RELSHIPS_F",
+      "column": "EFFECTIVE_END_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ContactRelshipsPEOEffectiveStartDate",
+      "table": "PER_CONTACT_RELSHIPS_F",
+      "column": "EFFECTIVE_START_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ContactRelshipsPEOPersonId",
+      "table": "PER_CONTACT_RELSHIPS_F",
+      "column": "PERSON_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "EffectiveEndDate",
+      "table": "PER_ADDRESSES_F",
+      "column": "EFFECTIVE_END_DATE",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    },
+    {
+      "name": "EffectiveStartDate",
+      "table": "PER_ADDRESSES_F",
+      "column": "EFFECTIVE_START_DATE",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    },
+    {
+      "name": "PersonAddressUsagesPEOAddressId",
+      "table": "PER_PERSON_ADDR_USAGES_F",
+      "column": "ADDRESS_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonAddressUsagesPEOAddressType",
+      "table": "PER_PERSON_ADDR_USAGES_F",
+      "column": "ADDRESS_TYPE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonAddressUsagesPEOBusinessGroupId",
+      "table": "PER_PERSON_ADDR_USAGES_F",
+      "column": "BUSINESS_GROUP_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonAddressUsagesPEOCreatedBy",
+      "table": "PER_PERSON_ADDR_USAGES_F",
+      "column": "CREATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonAddressUsagesPEOCreationDate",
+      "table": "PER_PERSON_ADDR_USAGES_F",
+      "column": "CREATION_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonAddressUsagesPEOEffectiveEndDate",
+      "table": "PER_PERSON_ADDR_USAGES_F",
+      "column": "EFFECTIVE_END_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonAddressUsagesPEOEffectiveStartDate",
+      "table": "PER_PERSON_ADDR_USAGES_F",
+      "column": "EFFECTIVE_START_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonAddressUsagesPEOLastUpdateDate",
+      "table": "PER_PERSON_ADDR_USAGES_F",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": true
+    },
+    {
+      "name": "PersonAddressUsagesPEOLastUpdateLogin",
+      "table": "PER_PERSON_ADDR_USAGES_F",
+      "column": "LAST_UPDATE_LOGIN",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonAddressUsagesPEOLastUpdatedBy",
+      "table": "PER_PERSON_ADDR_USAGES_F",
+      "column": "LAST_UPDATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonAddressUsagesPEOObjectVersionNumber",
+      "table": "PER_PERSON_ADDR_USAGES_F",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonAddressUsagesPEOPersonAddrUsageId",
+      "table": "PER_PERSON_ADDR_USAGES_F",
+      "column": "PERSON_ADDR_USAGE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonAddressUsagesPEOPersonId",
+      "table": "PER_PERSON_ADDR_USAGES_F",
+      "column": "PERSON_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonDetailsPEOEffectiveEndDate",
+      "table": "PER_ALL_PEOPLE_F",
+      "column": "EFFECTIVE_END_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonDetailsPEOEffectiveStartDate",
+      "table": "PER_ALL_PEOPLE_F",
+      "column": "EFFECTIVE_START_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonDetailsPEOMailingAddressId",
+      "table": "PER_ALL_PEOPLE_F",
+      "column": "MAILING_ADDRESS_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonDetailsPEOPersonId",
+      "table": "PER_ALL_PEOPLE_F",
+      "column": "PERSON_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    }
+  ],
+  "by_table": {
+    "PER_ADDRESSES_F": [
+      {
+        "attribute": "AddressId",
+        "column": "ADDRESS_ID",
+        "bicc": true,
+        "pk": true
+      },
+      {
+        "attribute": "AddressesPEOAddressLine1",
+        "column": "ADDRESS_LINE_1",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "AddressesPEOAddressLine2",
+        "column": "ADDRESS_LINE_2",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "AddressesPEOAddressLine3",
+        "column": "ADDRESS_LINE_3",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "AddressesPEOAddressLine4",
+        "column": "ADDRESS_LINE_4",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "AddressesPEOBuilding",
+        "column": "BUILDING",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "AddressesPEOBusinessGroupId",
+        "column": "BUSINESS_GROUP_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AddressesPEOCountry",
+        "column": "COUNTRY",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "AddressesPEOCreatedBy",
+        "column": "CREATED_BY",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "AddressesPEOCreationDate",
+        "column": "CREATION_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "AddressesPEOFloorNumber",
+        "column": "FLOOR_NUMBER",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "AddressesPEOGeometry",
+        "column": "GEOMETRY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AddressesPEOLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "AddressesPEOLastUpdateLogin",
+        "column": "LAST_UPDATE_LOGIN",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "AddressesPEOLastUpdatedBy",
+        "column": "LAST_UPDATED_BY",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "AddressesPEOLongPostalCode",
+        "column": "LONG_POSTAL_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "AddressesPEOObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AddressesPEOPostalCode",
+        "column": "POSTAL_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "AddressesPEORegion1",
+        "column": "REGION_1",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "AddressesPEORegion2",
+        "column": "REGION_2",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "AddressesPEORegion3",
+        "column": "REGION_3",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "AddressesPEOTimezoneCode",
+        "column": "TIMEZONE_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "AddressesPEOTownOrCity",
+        "column": "TOWN_OR_CITY",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "EffectiveEndDate",
+        "column": "EFFECTIVE_END_DATE",
+        "bicc": true,
+        "pk": true
+      },
+      {
+        "attribute": "EffectiveStartDate",
+        "column": "EFFECTIVE_START_DATE",
+        "bicc": true,
+        "pk": true
+      }
+    ],
+    "PER_ALL_PEOPLE_F": [
+      {
+        "attribute": "ContactPersonDetailsPEOEffectiveEndDate",
+        "column": "EFFECTIVE_END_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ContactPersonDetailsPEOEffectiveStartDate",
+        "column": "EFFECTIVE_START_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ContactPersonDetailsPEOMailingAddressId",
+        "column": "MAILING_ADDRESS_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ContactPersonDetailsPEOPersonId",
+        "column": "PERSON_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PersonDetailsPEOEffectiveEndDate",
+        "column": "EFFECTIVE_END_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PersonDetailsPEOEffectiveStartDate",
+        "column": "EFFECTIVE_START_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PersonDetailsPEOMailingAddressId",
+        "column": "MAILING_ADDRESS_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PersonDetailsPEOPersonId",
+        "column": "PERSON_ID",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "PER_CONTACT_RELSHIPS_F": [
+      {
+        "attribute": "ContactRelshipsPEOContactRelationshipId",
+        "column": "CONTACT_RELATIONSHIP_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ContactRelshipsPEOEffectiveEndDate",
+        "column": "EFFECTIVE_END_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ContactRelshipsPEOEffectiveStartDate",
+        "column": "EFFECTIVE_START_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ContactRelshipsPEOPersonId",
+        "column": "PERSON_ID",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "PER_PERSON_ADDR_USAGES_F": [
+      {
+        "attribute": "PersonAddressUsagesPEOAddressId",
+        "column": "ADDRESS_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PersonAddressUsagesPEOAddressType",
+        "column": "ADDRESS_TYPE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PersonAddressUsagesPEOBusinessGroupId",
+        "column": "BUSINESS_GROUP_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PersonAddressUsagesPEOCreatedBy",
+        "column": "CREATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PersonAddressUsagesPEOCreationDate",
+        "column": "CREATION_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PersonAddressUsagesPEOEffectiveEndDate",
+        "column": "EFFECTIVE_END_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PersonAddressUsagesPEOEffectiveStartDate",
+        "column": "EFFECTIVE_START_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PersonAddressUsagesPEOLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PersonAddressUsagesPEOLastUpdateLogin",
+        "column": "LAST_UPDATE_LOGIN",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PersonAddressUsagesPEOLastUpdatedBy",
+        "column": "LAST_UPDATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PersonAddressUsagesPEOObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PersonAddressUsagesPEOPersonAddrUsageId",
+        "column": "PERSON_ADDR_USAGE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PersonAddressUsagesPEOPersonId",
+        "column": "PERSON_ID",
+        "bicc": false,
+        "pk": false
+      }
+    ]
+  }
+}

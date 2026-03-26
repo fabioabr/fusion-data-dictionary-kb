@@ -1,0 +1,869 @@
+{
+  "meta": {
+    "pvo_name": "TaxValidation",
+    "full_path": "FscmTopModelAM.FinArCustomersPublicModelAM.TaxValidation",
+    "module_path": "FscmTopModelAM.FinArCustomersPublicModelAM",
+    "module_code": "AR",
+    "type": "pvo",
+    "description": "Extrai as validações de identificação fiscal (CPF/CNPJ, tax IDs) de contas de clientes. Assegura integridade dos dados fiscais cadastrais para conformidade regulatória e prevenção de fraudes."
+  },
+  "stats": {
+    "total_attributes": 60,
+    "tables_count": 2,
+    "bicc_enabled": 10,
+    "bicc_pct": 17,
+    "pk_count": 1
+  },
+  "tables": [
+    "ZX_PARTY_TAXPAYER_IDNTFS",
+    "ZX_PARTY_TAX_PROFILE"
+  ],
+  "attributes": [
+    {
+      "name": "PartyTaxProfileAllowAwtFlag",
+      "table": "ZX_PARTY_TAX_PROFILE",
+      "column": "ALLOW_AWT_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartyTaxProfileAllowOffsetTaxFlag",
+      "table": "ZX_PARTY_TAX_PROFILE",
+      "column": "ALLOW_OFFSET_TAX_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartyTaxProfileAllowZeroAmtWhtInvFlag",
+      "table": "ZX_PARTY_TAX_PROFILE",
+      "column": "ALLOW_ZERO_AMT_WHT_INV_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartyTaxProfileCollectingAuthorityFlag",
+      "table": "ZX_PARTY_TAX_PROFILE",
+      "column": "COLLECTING_AUTHORITY_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartyTaxProfileCountryCode",
+      "table": "ZX_PARTY_TAX_PROFILE",
+      "column": "COUNTRY_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartyTaxProfileCreateAwtDistsTypeCode",
+      "table": "ZX_PARTY_TAX_PROFILE",
+      "column": "CREATE_AWT_DISTS_TYPE_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartyTaxProfileCreateAwtInvoicesTypeCode",
+      "table": "ZX_PARTY_TAX_PROFILE",
+      "column": "CREATE_AWT_INVOICES_TYPE_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartyTaxProfileCreatedBy",
+      "table": "ZX_PARTY_TAX_PROFILE",
+      "column": "CREATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartyTaxProfileCreationDate",
+      "table": "ZX_PARTY_TAX_PROFILE",
+      "column": "CREATION_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartyTaxProfileCustomerFlag",
+      "table": "ZX_PARTY_TAX_PROFILE",
+      "column": "CUSTOMER_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartyTaxProfileEffectiveFromUseLe",
+      "table": "ZX_PARTY_TAX_PROFILE",
+      "column": "EFFECTIVE_FROM_USE_LE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartyTaxProfileFirstPartyLeFlag",
+      "table": "ZX_PARTY_TAX_PROFILE",
+      "column": "FIRST_PARTY_LE_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartyTaxProfileId",
+      "table": "ZX_PARTY_TAX_PROFILE",
+      "column": "PARTY_TAX_PROFILE_ID",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    },
+    {
+      "name": "PartyTaxProfileInclusiveTaxFlag",
+      "table": "ZX_PARTY_TAX_PROFILE",
+      "column": "INCLUSIVE_TAX_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartyTaxProfileLastUpdateDate",
+      "table": "ZX_PARTY_TAX_PROFILE",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": true
+    },
+    {
+      "name": "PartyTaxProfileLastUpdateLogin",
+      "table": "ZX_PARTY_TAX_PROFILE",
+      "column": "LAST_UPDATE_LOGIN",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartyTaxProfileLastUpdatedBy",
+      "table": "ZX_PARTY_TAX_PROFILE",
+      "column": "LAST_UPDATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartyTaxProfileLegalEstablishmentFlag",
+      "table": "ZX_PARTY_TAX_PROFILE",
+      "column": "LEGAL_ESTABLISHMENT_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartyTaxProfileMergedStatusCode",
+      "table": "ZX_PARTY_TAX_PROFILE",
+      "column": "MERGED_STATUS_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartyTaxProfileMergedToPtpId",
+      "table": "ZX_PARTY_TAX_PROFILE",
+      "column": "MERGED_TO_PTP_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartyTaxProfileObjectVersionNumber",
+      "table": "ZX_PARTY_TAX_PROFILE",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartyTaxProfilePartyId",
+      "table": "ZX_PARTY_TAX_PROFILE",
+      "column": "PARTY_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartyTaxProfilePartyTypeCode",
+      "table": "ZX_PARTY_TAX_PROFILE",
+      "column": "PARTY_TYPE_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartyTaxProfileProcessForApplicabilityFlag",
+      "table": "ZX_PARTY_TAX_PROFILE",
+      "column": "PROCESS_FOR_APPLICABILITY_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartyTaxProfileProgramAppName",
+      "table": "ZX_PARTY_TAX_PROFILE",
+      "column": "PROGRAM_APP_NAME",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartyTaxProfileProgramLoginId",
+      "table": "ZX_PARTY_TAX_PROFILE",
+      "column": "PROGRAM_LOGIN_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartyTaxProfileProgramName",
+      "table": "ZX_PARTY_TAX_PROFILE",
+      "column": "PROGRAM_NAME",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartyTaxProfileProviderTypeCode",
+      "table": "ZX_PARTY_TAX_PROFILE",
+      "column": "PROVIDER_TYPE_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartyTaxProfileRecordTypeCode",
+      "table": "ZX_PARTY_TAX_PROFILE",
+      "column": "RECORD_TYPE_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartyTaxProfileRegistrationTypeCode",
+      "table": "ZX_PARTY_TAX_PROFILE",
+      "column": "REGISTRATION_TYPE_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartyTaxProfileRepRegistrationNumber",
+      "table": "ZX_PARTY_TAX_PROFILE",
+      "column": "REP_REGISTRATION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartyTaxProfileReportingAuthorityFlag",
+      "table": "ZX_PARTY_TAX_PROFILE",
+      "column": "REPORTING_AUTHORITY_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartyTaxProfileRequestId",
+      "table": "ZX_PARTY_TAX_PROFILE",
+      "column": "REQUEST_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartyTaxProfileRoundingLevelCode",
+      "table": "ZX_PARTY_TAX_PROFILE",
+      "column": "ROUNDING_LEVEL_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartyTaxProfileRoundingRuleCode",
+      "table": "ZX_PARTY_TAX_PROFILE",
+      "column": "ROUNDING_RULE_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartyTaxProfileSelfAssessFlag",
+      "table": "ZX_PARTY_TAX_PROFILE",
+      "column": "SELF_ASSESS_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartyTaxProfileSiteFlag",
+      "table": "ZX_PARTY_TAX_PROFILE",
+      "column": "SITE_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartyTaxProfileSupplierFlag",
+      "table": "ZX_PARTY_TAX_PROFILE",
+      "column": "SUPPLIER_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartyTaxProfileTaxClassificationCode",
+      "table": "ZX_PARTY_TAX_PROFILE",
+      "column": "TAX_CLASSIFICATION_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartyTaxProfileUseLeAsSubscriberFlag",
+      "table": "ZX_PARTY_TAX_PROFILE",
+      "column": "USE_LE_AS_SUBSCRIBER_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartyTaxProfileWhtDateBasis",
+      "table": "ZX_PARTY_TAX_PROFILE",
+      "column": "WHT_DATE_BASIS",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartyTaxProfileWhtEffectiveFromUseLe",
+      "table": "ZX_PARTY_TAX_PROFILE",
+      "column": "WHT_EFFECTIVE_FROM_USE_LE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartyTaxProfileWhtRoundingLevelCode",
+      "table": "ZX_PARTY_TAX_PROFILE",
+      "column": "WHT_ROUNDING_LEVEL_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartyTaxProfileWhtRoundingRuleCode",
+      "table": "ZX_PARTY_TAX_PROFILE",
+      "column": "WHT_ROUNDING_RULE_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartyTaxProfileWhtUseLeAsSubscriberFlag",
+      "table": "ZX_PARTY_TAX_PROFILE",
+      "column": "WHT_USE_LE_AS_SUBSCRIBER_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartyTaxProfileWithholdingStartDate",
+      "table": "ZX_PARTY_TAX_PROFILE",
+      "column": "WITHHOLDING_START_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartyTaxpayerIdentCountryCode",
+      "table": "ZX_PARTY_TAXPAYER_IDNTFS",
+      "column": "COUNTRY_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartyTaxpayerIdentCreatedBy",
+      "table": "ZX_PARTY_TAXPAYER_IDNTFS",
+      "column": "CREATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartyTaxpayerIdentCreationDate",
+      "table": "ZX_PARTY_TAXPAYER_IDNTFS",
+      "column": "CREATION_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartyTaxpayerIdentEffectiveFrom",
+      "table": "ZX_PARTY_TAXPAYER_IDNTFS",
+      "column": "EFFECTIVE_FROM",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartyTaxpayerIdentEffectiveTo",
+      "table": "ZX_PARTY_TAXPAYER_IDNTFS",
+      "column": "EFFECTIVE_TO",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartyTaxpayerIdentEntityId",
+      "table": "ZX_PARTY_TAXPAYER_IDNTFS",
+      "column": "ENTITY_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartyTaxpayerIdentLastUpdateDate",
+      "table": "ZX_PARTY_TAXPAYER_IDNTFS",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": true
+    },
+    {
+      "name": "PartyTaxpayerIdentLastUpdateLogin",
+      "table": "ZX_PARTY_TAXPAYER_IDNTFS",
+      "column": "LAST_UPDATE_LOGIN",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartyTaxpayerIdentLastUpdatedBy",
+      "table": "ZX_PARTY_TAXPAYER_IDNTFS",
+      "column": "LAST_UPDATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartyTaxpayerIdentObjectVersionNumber",
+      "table": "ZX_PARTY_TAXPAYER_IDNTFS",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartyTaxpayerIdentRecordTypeCode",
+      "table": "ZX_PARTY_TAXPAYER_IDNTFS",
+      "column": "RECORD_TYPE_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartyTaxpayerIdentReportingTypeCode",
+      "table": "ZX_PARTY_TAXPAYER_IDNTFS",
+      "column": "REPORTING_TYPE_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartyTaxpayerIdentTaxPayerNumber",
+      "table": "ZX_PARTY_TAXPAYER_IDNTFS",
+      "column": "TAX_PAYER_NUMBER",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartyTaxpayerIdntfsId",
+      "table": "ZX_PARTY_TAXPAYER_IDNTFS",
+      "column": "PARTY_TAXPAYER_IDNTFS_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    }
+  ],
+  "by_table": {
+    "ZX_PARTY_TAX_PROFILE": [
+      {
+        "attribute": "PartyTaxProfileAllowAwtFlag",
+        "column": "ALLOW_AWT_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PartyTaxProfileAllowOffsetTaxFlag",
+        "column": "ALLOW_OFFSET_TAX_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PartyTaxProfileAllowZeroAmtWhtInvFlag",
+        "column": "ALLOW_ZERO_AMT_WHT_INV_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PartyTaxProfileCollectingAuthorityFlag",
+        "column": "COLLECTING_AUTHORITY_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PartyTaxProfileCountryCode",
+        "column": "COUNTRY_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PartyTaxProfileCreateAwtDistsTypeCode",
+        "column": "CREATE_AWT_DISTS_TYPE_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PartyTaxProfileCreateAwtInvoicesTypeCode",
+        "column": "CREATE_AWT_INVOICES_TYPE_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PartyTaxProfileCreatedBy",
+        "column": "CREATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PartyTaxProfileCreationDate",
+        "column": "CREATION_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PartyTaxProfileCustomerFlag",
+        "column": "CUSTOMER_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PartyTaxProfileEffectiveFromUseLe",
+        "column": "EFFECTIVE_FROM_USE_LE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PartyTaxProfileFirstPartyLeFlag",
+        "column": "FIRST_PARTY_LE_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PartyTaxProfileId",
+        "column": "PARTY_TAX_PROFILE_ID",
+        "bicc": true,
+        "pk": true
+      },
+      {
+        "attribute": "PartyTaxProfileInclusiveTaxFlag",
+        "column": "INCLUSIVE_TAX_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PartyTaxProfileLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PartyTaxProfileLastUpdateLogin",
+        "column": "LAST_UPDATE_LOGIN",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PartyTaxProfileLastUpdatedBy",
+        "column": "LAST_UPDATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PartyTaxProfileLegalEstablishmentFlag",
+        "column": "LEGAL_ESTABLISHMENT_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PartyTaxProfileMergedStatusCode",
+        "column": "MERGED_STATUS_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PartyTaxProfileMergedToPtpId",
+        "column": "MERGED_TO_PTP_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PartyTaxProfileObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PartyTaxProfilePartyId",
+        "column": "PARTY_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PartyTaxProfilePartyTypeCode",
+        "column": "PARTY_TYPE_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PartyTaxProfileProcessForApplicabilityFlag",
+        "column": "PROCESS_FOR_APPLICABILITY_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PartyTaxProfileProgramAppName",
+        "column": "PROGRAM_APP_NAME",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PartyTaxProfileProgramLoginId",
+        "column": "PROGRAM_LOGIN_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PartyTaxProfileProgramName",
+        "column": "PROGRAM_NAME",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PartyTaxProfileProviderTypeCode",
+        "column": "PROVIDER_TYPE_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PartyTaxProfileRecordTypeCode",
+        "column": "RECORD_TYPE_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PartyTaxProfileRegistrationTypeCode",
+        "column": "REGISTRATION_TYPE_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PartyTaxProfileRepRegistrationNumber",
+        "column": "REP_REGISTRATION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PartyTaxProfileReportingAuthorityFlag",
+        "column": "REPORTING_AUTHORITY_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PartyTaxProfileRequestId",
+        "column": "REQUEST_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PartyTaxProfileRoundingLevelCode",
+        "column": "ROUNDING_LEVEL_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PartyTaxProfileRoundingRuleCode",
+        "column": "ROUNDING_RULE_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PartyTaxProfileSelfAssessFlag",
+        "column": "SELF_ASSESS_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PartyTaxProfileSiteFlag",
+        "column": "SITE_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PartyTaxProfileSupplierFlag",
+        "column": "SUPPLIER_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PartyTaxProfileTaxClassificationCode",
+        "column": "TAX_CLASSIFICATION_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PartyTaxProfileUseLeAsSubscriberFlag",
+        "column": "USE_LE_AS_SUBSCRIBER_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PartyTaxProfileWhtDateBasis",
+        "column": "WHT_DATE_BASIS",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PartyTaxProfileWhtEffectiveFromUseLe",
+        "column": "WHT_EFFECTIVE_FROM_USE_LE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PartyTaxProfileWhtRoundingLevelCode",
+        "column": "WHT_ROUNDING_LEVEL_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PartyTaxProfileWhtRoundingRuleCode",
+        "column": "WHT_ROUNDING_RULE_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PartyTaxProfileWhtUseLeAsSubscriberFlag",
+        "column": "WHT_USE_LE_AS_SUBSCRIBER_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PartyTaxProfileWithholdingStartDate",
+        "column": "WITHHOLDING_START_DATE",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "ZX_PARTY_TAXPAYER_IDNTFS": [
+      {
+        "attribute": "PartyTaxpayerIdentCountryCode",
+        "column": "COUNTRY_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PartyTaxpayerIdentCreatedBy",
+        "column": "CREATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PartyTaxpayerIdentCreationDate",
+        "column": "CREATION_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PartyTaxpayerIdentEffectiveFrom",
+        "column": "EFFECTIVE_FROM",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PartyTaxpayerIdentEffectiveTo",
+        "column": "EFFECTIVE_TO",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PartyTaxpayerIdentEntityId",
+        "column": "ENTITY_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PartyTaxpayerIdentLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PartyTaxpayerIdentLastUpdateLogin",
+        "column": "LAST_UPDATE_LOGIN",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PartyTaxpayerIdentLastUpdatedBy",
+        "column": "LAST_UPDATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PartyTaxpayerIdentObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PartyTaxpayerIdentRecordTypeCode",
+        "column": "RECORD_TYPE_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PartyTaxpayerIdentReportingTypeCode",
+        "column": "REPORTING_TYPE_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PartyTaxpayerIdentTaxPayerNumber",
+        "column": "TAX_PAYER_NUMBER",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PartyTaxpayerIdntfsId",
+        "column": "PARTY_TAXPAYER_IDNTFS_ID",
+        "bicc": false,
+        "pk": false
+      }
+    ]
+  }
+}

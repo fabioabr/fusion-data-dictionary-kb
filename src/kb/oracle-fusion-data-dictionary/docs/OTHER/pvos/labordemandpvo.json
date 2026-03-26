@@ -1,0 +1,262 @@
+{
+  "meta": {
+    "pvo_name": "LaborDemandPVO",
+    "full_path": "HcmTopModelAnalyticsGlobalAM.HcmDemandAM.LaborDemandPVO",
+    "module_path": "HcmTopModelAnalyticsGlobalAM.HcmDemandAM",
+    "module_code": "OTHER",
+    "type": "pvo",
+    "description": "View Object para extração BICC de dados de Labor Demand. Acessa as tabelas: HTS_LABOR_DEMAND_VIEW, HWM_GRP_INCL_MEMBERS_VIEW, HXT_SETUP_OPTION_VALS (+2)."
+  },
+  "stats": {
+    "total_attributes": 16,
+    "tables_count": 5,
+    "bicc_enabled": 5,
+    "bicc_pct": 31,
+    "pk_count": 3
+  },
+  "tables": [
+    "HTS_LABOR_DEMAND_VIEW",
+    "HWM_GRP_INCL_MEMBERS_VIEW",
+    "HXT_SETUP_OPTION_VALS",
+    "HXT_SETUP_PROFILES_VL",
+    "HXT_SETUP_PROFILE_ASGS"
+  ],
+  "attributes": [
+    {
+      "name": "AssignTo",
+      "table": "HXT_SETUP_PROFILE_ASGS",
+      "column": "ASSIGN_TO",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "DateFrom",
+      "table": "HXT_SETUP_PROFILE_ASGS",
+      "column": "DATE_FROM",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "DateTo",
+      "table": "HXT_SETUP_PROFILE_ASGS",
+      "column": "DATE_TO",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "DemandDate",
+      "table": "HTS_LABOR_DEMAND_VIEW",
+      "column": "DEMAND_DATE",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    },
+    {
+      "name": "EffectiveEndDate",
+      "table": "HXT_SETUP_OPTION_VALS",
+      "column": "EFFECTIVE_END_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "EffectiveStartDate",
+      "table": "HXT_SETUP_OPTION_VALS",
+      "column": "EFFECTIVE_START_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "GrpId",
+      "table": "HWM_GRP_INCL_MEMBERS_VIEW",
+      "column": "GRP_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "GrpInclMemberId",
+      "table": "HWM_GRP_INCL_MEMBERS_VIEW",
+      "column": "GRP_INCL_MEMBER_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InclMemberId",
+      "table": "HWM_GRP_INCL_MEMBERS_VIEW",
+      "column": "INCL_MEMBER_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ObjectId",
+      "table": "HXT_SETUP_PROFILE_ASGS",
+      "column": "OBJECT_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProductArea",
+      "table": "HXT_SETUP_PROFILES_VL",
+      "column": "PRODUCT_AREA",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ResourcesRequired",
+      "table": "HTS_LABOR_DEMAND_VIEW",
+      "column": "RESOURCES_REQUIRED",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SchedulerProfileId",
+      "table": "HTS_LABOR_DEMAND_VIEW",
+      "column": "SCHEDULER_PROFILE_ID",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    },
+    {
+      "name": "SetupOptionValId",
+      "table": "HXT_SETUP_OPTION_VALS",
+      "column": "SETUP_OPTION_VAL_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SetupProfileAsgId",
+      "table": "HXT_SETUP_PROFILE_ASGS",
+      "column": "SETUP_PROFILE_ASG_ID",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    },
+    {
+      "name": "SetupProfileId",
+      "table": "HXT_SETUP_PROFILES_VL",
+      "column": "SETUP_PROFILE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    }
+  ],
+  "by_table": {
+    "HXT_SETUP_PROFILE_ASGS": [
+      {
+        "attribute": "AssignTo",
+        "column": "ASSIGN_TO",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "DateFrom",
+        "column": "DATE_FROM",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "DateTo",
+        "column": "DATE_TO",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ObjectId",
+        "column": "OBJECT_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "SetupProfileAsgId",
+        "column": "SETUP_PROFILE_ASG_ID",
+        "bicc": true,
+        "pk": true
+      }
+    ],
+    "HTS_LABOR_DEMAND_VIEW": [
+      {
+        "attribute": "DemandDate",
+        "column": "DEMAND_DATE",
+        "bicc": true,
+        "pk": true
+      },
+      {
+        "attribute": "ResourcesRequired",
+        "column": "RESOURCES_REQUIRED",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "SchedulerProfileId",
+        "column": "SCHEDULER_PROFILE_ID",
+        "bicc": true,
+        "pk": true
+      }
+    ],
+    "HXT_SETUP_OPTION_VALS": [
+      {
+        "attribute": "EffectiveEndDate",
+        "column": "EFFECTIVE_END_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "EffectiveStartDate",
+        "column": "EFFECTIVE_START_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "SetupOptionValId",
+        "column": "SETUP_OPTION_VAL_ID",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "HWM_GRP_INCL_MEMBERS_VIEW": [
+      {
+        "attribute": "GrpId",
+        "column": "GRP_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "GrpInclMemberId",
+        "column": "GRP_INCL_MEMBER_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InclMemberId",
+        "column": "INCL_MEMBER_ID",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "HXT_SETUP_PROFILES_VL": [
+      {
+        "attribute": "ProductArea",
+        "column": "PRODUCT_AREA",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "SetupProfileId",
+        "column": "SETUP_PROFILE_ID",
+        "bicc": false,
+        "pk": false
+      }
+    ]
+  }
+}

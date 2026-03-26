@@ -1,0 +1,5758 @@
+{
+  "meta": {
+    "pvo_name": "ProjectAssetLineDetailPVO",
+    "full_path": "FscmTopModelAM.PjcCapitalAM.ProjectAssetLineDetailPVO",
+    "module_path": "FscmTopModelAM.PjcCapitalAM",
+    "module_code": "OTHER",
+    "type": "pvo",
+    "description": "View Object para extração BICC de dados de Project Asset Line Detail. Acessa as tabelas: CST_ALL_TXN_TYPES_V, FUN_ALL_BUSINESS_UNITS_V, HR_ORGANIZATION_INFORMATION_F (+14)."
+  },
+  "stats": {
+    "total_attributes": 406,
+    "tables_count": 17,
+    "bicc_enabled": 143,
+    "bicc_pct": 35,
+    "pk_count": 1
+  },
+  "tables": [
+    "CST_ALL_TXN_TYPES_V",
+    "FUN_ALL_BUSINESS_UNITS_V",
+    "HR_ORGANIZATION_INFORMATION_F",
+    "PJC_COST_DIST_LINES_ALL",
+    "PJC_EXP_COMMENTS",
+    "PJC_EXP_ITEMS_ALL",
+    "PJC_PRJ_ASSET_LNS_ALL",
+    "PJC_PRJ_ASSET_LN_DETS",
+    "PJF_PROJECTS_ALL_B",
+    "PJF_PROJECT_TYPES_B",
+    "PJF_TXN_DOCUMENT_VL",
+    "PJF_TXN_DOC_ENTRY_VL",
+    "PJF_TXN_SOURCES_VL",
+    "WIS_EQUIPMENT_INSTANCES",
+    "WIS_LABOR_INSTANCES",
+    "WIS_RESOURCES_VL",
+    "XLE_ENTITY_PROFILES"
+  ],
+  "attributes": [
+    {
+      "name": "BaseTxnSourceTypeId",
+      "table": "CST_ALL_TXN_TYPES_V",
+      "column": "BASE_TXN_SOURCE_TYPE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BaseTxnTypeId",
+      "table": "CST_ALL_TXN_TYPES_V",
+      "column": "BASE_TXN_TYPE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BaseTxnTypeName",
+      "table": "CST_ALL_TXN_TYPES_V",
+      "column": "BASE_TXN_TYPE_NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CDLBusinessUnitPEOBusinessUnitId",
+      "table": "HR_ORGANIZATION_INFORMATION_F",
+      "column": "ORGANIZATION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CDLBusinessUnitPEOCreatedBy",
+      "table": "HR_ORGANIZATION_INFORMATION_F",
+      "column": "CREATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CDLBusinessUnitPEOCreationDate",
+      "table": "HR_ORGANIZATION_INFORMATION_F",
+      "column": "CREATION_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CDLBusinessUnitPEOEffectiveEndDate",
+      "table": "HR_ORGANIZATION_INFORMATION_F",
+      "column": "EFFECTIVE_END_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CDLBusinessUnitPEOEffectiveStartDate",
+      "table": "HR_ORGANIZATION_INFORMATION_F",
+      "column": "EFFECTIVE_START_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CDLBusinessUnitPEOLastUpdateDate",
+      "table": "HR_ORGANIZATION_INFORMATION_F",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": true
+    },
+    {
+      "name": "CDLBusinessUnitPEOLastUpdateLogin",
+      "table": "HR_ORGANIZATION_INFORMATION_F",
+      "column": "LAST_UPDATE_LOGIN",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CDLBusinessUnitPEOLastUpdatedBy",
+      "table": "HR_ORGANIZATION_INFORMATION_F",
+      "column": "LAST_UPDATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CDLBusinessUnitPEOOrgInformationId",
+      "table": "HR_ORGANIZATION_INFORMATION_F",
+      "column": "ORG_INFORMATION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CDLBusinessUnitPEOPrimaryLedgerId",
+      "table": "HR_ORGANIZATION_INFORMATION_F",
+      "column": "ORG_INFORMATION3",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CDLProjectBasePEOLegalEntityId",
+      "table": "PJF_PROJECTS_ALL_B",
+      "column": "LEGAL_ENTITY_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CDLProjectBasePEOOrgId",
+      "table": "PJF_PROJECTS_ALL_B",
+      "column": "ORG_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CDLProjectBasePEOProjectId",
+      "table": "PJF_PROJECTS_ALL_B",
+      "column": "PROJECT_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CDLProjectBasePEOProjectUnitId",
+      "table": "PJF_PROJECTS_ALL_B",
+      "column": "PROJECT_UNIT_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "DistributionId",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "DISTRIBUTION_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "EquipmentInstancePEOEquipmentInstanceId",
+      "table": "WIS_EQUIPMENT_INSTANCES",
+      "column": "EQUIPMENT_INSTANCE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ExpBUPEOBusinessUnitId",
+      "table": "HR_ORGANIZATION_INFORMATION_F",
+      "column": "ORGANIZATION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ExpBUPEOCreatedBy",
+      "table": "HR_ORGANIZATION_INFORMATION_F",
+      "column": "CREATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ExpBUPEOCreationDate",
+      "table": "HR_ORGANIZATION_INFORMATION_F",
+      "column": "CREATION_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ExpBUPEOEffectiveEndDate",
+      "table": "HR_ORGANIZATION_INFORMATION_F",
+      "column": "EFFECTIVE_END_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ExpBUPEOEffectiveStartDate",
+      "table": "HR_ORGANIZATION_INFORMATION_F",
+      "column": "EFFECTIVE_START_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ExpBUPEOLastUpdateDate",
+      "table": "HR_ORGANIZATION_INFORMATION_F",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": true
+    },
+    {
+      "name": "ExpBUPEOLastUpdateLogin",
+      "table": "HR_ORGANIZATION_INFORMATION_F",
+      "column": "LAST_UPDATE_LOGIN",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ExpBUPEOLastUpdatedBy",
+      "table": "HR_ORGANIZATION_INFORMATION_F",
+      "column": "LAST_UPDATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ExpBUPEOOrgInformationId",
+      "table": "HR_ORGANIZATION_INFORMATION_F",
+      "column": "ORG_INFORMATION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ExpBUPEOPrimaryLedgerId",
+      "table": "HR_ORGANIZATION_INFORMATION_F",
+      "column": "ORG_INFORMATION3",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ExpProjectBasePEOLegalEntityId",
+      "table": "PJF_PROJECTS_ALL_B",
+      "column": "LEGAL_ENTITY_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ExpProjectBasePEOOrgId",
+      "table": "PJF_PROJECTS_ALL_B",
+      "column": "ORG_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ExpProjectBasePEOProjectId",
+      "table": "PJF_PROJECTS_ALL_B",
+      "column": "PROJECT_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ExpProjectBasePEOProjectUnitId",
+      "table": "PJF_PROJECTS_ALL_B",
+      "column": "PROJECT_UNIT_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ExpProjectBusinessUnitPEOBusinessUnitId",
+      "table": "FUN_ALL_BUSINESS_UNITS_V",
+      "column": "BU_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LaborInstancePEOLaborInstanceId",
+      "table": "WIS_LABOR_INSTANCES",
+      "column": "LABOR_INSTANCE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LegalEntityPEOLegalEntityId",
+      "table": "XLE_ENTITY_PROFILES",
+      "column": "LEGAL_ENTITY_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LegalEntityPEOName",
+      "table": "XLE_ENTITY_PROFILES",
+      "column": "NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LegalEntityPEOObjectVersionNumber",
+      "table": "XLE_ENTITY_PROFILES",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjAssetLineDtlUniqId",
+      "table": "PJC_PRJ_ASSET_LN_DETS",
+      "column": "PROJ_ASSET_LINE_DTL_UNIQ_ID",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    },
+    {
+      "name": "ProjectAssetLineDetailPEOCipCost",
+      "table": "PJC_PRJ_ASSET_LN_DETS",
+      "column": "CIP_COST",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectAssetLineDetailPEOCreatedBy",
+      "table": "PJC_PRJ_ASSET_LN_DETS",
+      "column": "CREATED_BY",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectAssetLineDetailPEOCreationDate",
+      "table": "PJC_PRJ_ASSET_LN_DETS",
+      "column": "CREATION_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectAssetLineDetailPEOExpenditureItemId",
+      "table": "PJC_PRJ_ASSET_LN_DETS",
+      "column": "EXPENDITURE_ITEM_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectAssetLineDetailPEOJobDefinitionName",
+      "table": "PJC_PRJ_ASSET_LN_DETS",
+      "column": "JOB_DEFINITION_NAME",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectAssetLineDetailPEOJobDefinitionPackage",
+      "table": "PJC_PRJ_ASSET_LN_DETS",
+      "column": "JOB_DEFINITION_PACKAGE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectAssetLineDetailPEOLastUpdateDate",
+      "table": "PJC_PRJ_ASSET_LN_DETS",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": true
+    },
+    {
+      "name": "ProjectAssetLineDetailPEOLastUpdateLogin",
+      "table": "PJC_PRJ_ASSET_LN_DETS",
+      "column": "LAST_UPDATE_LOGIN",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectAssetLineDetailPEOLastUpdatedBy",
+      "table": "PJC_PRJ_ASSET_LN_DETS",
+      "column": "LAST_UPDATED_BY",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectAssetLineDetailPEOLineNum",
+      "table": "PJC_PRJ_ASSET_LN_DETS",
+      "column": "LINE_NUM",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectAssetLineDetailPEOObjectVersionNumber",
+      "table": "PJC_PRJ_ASSET_LN_DETS",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectAssetLineDetailPEOProjectAssetLineDetailId",
+      "table": "PJC_PRJ_ASSET_LN_DETS",
+      "column": "PROJECT_ASSET_LINE_DETAIL_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectAssetLineDetailPEORequestId",
+      "table": "PJC_PRJ_ASSET_LN_DETS",
+      "column": "REQUEST_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectAssetLineDetailPEOReversedFlag",
+      "table": "PJC_PRJ_ASSET_LN_DETS",
+      "column": "REVERSED_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectAssetLinePEOAmortizeFlag",
+      "table": "PJC_PRJ_ASSET_LNS_ALL",
+      "column": "AMORTIZE_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectAssetLinePEOApDistributionLineNumber",
+      "table": "PJC_PRJ_ASSET_LNS_ALL",
+      "column": "AP_DISTRIBUTION_LINE_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectAssetLinePEOAssetCategoryId",
+      "table": "PJC_PRJ_ASSET_LNS_ALL",
+      "column": "ASSET_CATEGORY_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectAssetLinePEOAssetCostCcid",
+      "table": "PJC_PRJ_ASSET_LNS_ALL",
+      "column": "ASSET_COST_CCID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectAssetLinePEOCapitalEventId",
+      "table": "PJC_PRJ_ASSET_LNS_ALL",
+      "column": "CAPITAL_EVENT_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectAssetLinePEOCipCcid",
+      "table": "PJC_PRJ_ASSET_LNS_ALL",
+      "column": "CIP_CCID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectAssetLinePEOCreatedBy",
+      "table": "PJC_PRJ_ASSET_LNS_ALL",
+      "column": "CREATED_BY",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectAssetLinePEOCreationDate",
+      "table": "PJC_PRJ_ASSET_LNS_ALL",
+      "column": "CREATION_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectAssetLinePEOCurrentAssetCost",
+      "table": "PJC_PRJ_ASSET_LNS_ALL",
+      "column": "CURRENT_ASSET_COST",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectAssetLinePEODescription",
+      "table": "PJC_PRJ_ASSET_LNS_ALL",
+      "column": "DESCRIPTION",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectAssetLinePEOFaPeriodName",
+      "table": "PJC_PRJ_ASSET_LNS_ALL",
+      "column": "FA_PERIOD_NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectAssetLinePEOGlDate",
+      "table": "PJC_PRJ_ASSET_LNS_ALL",
+      "column": "GL_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectAssetLinePEOInvoiceCreatedBy",
+      "table": "PJC_PRJ_ASSET_LNS_ALL",
+      "column": "INVOICE_CREATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectAssetLinePEOInvoiceDate",
+      "table": "PJC_PRJ_ASSET_LNS_ALL",
+      "column": "INVOICE_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectAssetLinePEOInvoiceDistributionId",
+      "table": "PJC_PRJ_ASSET_LNS_ALL",
+      "column": "INVOICE_DISTRIBUTION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectAssetLinePEOInvoiceId",
+      "table": "PJC_PRJ_ASSET_LNS_ALL",
+      "column": "INVOICE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectAssetLinePEOInvoiceLineNumber",
+      "table": "PJC_PRJ_ASSET_LNS_ALL",
+      "column": "INVOICE_LINE_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectAssetLinePEOInvoiceNumber",
+      "table": "PJC_PRJ_ASSET_LNS_ALL",
+      "column": "INVOICE_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectAssetLinePEOInvoiceUpdatedBy",
+      "table": "PJC_PRJ_ASSET_LNS_ALL",
+      "column": "INVOICE_UPDATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectAssetLinePEOJobDefinitionName",
+      "table": "PJC_PRJ_ASSET_LNS_ALL",
+      "column": "JOB_DEFINITION_NAME",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectAssetLinePEOJobDefinitionPackage",
+      "table": "PJC_PRJ_ASSET_LNS_ALL",
+      "column": "JOB_DEFINITION_PACKAGE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectAssetLinePEOLastUpdateDate",
+      "table": "PJC_PRJ_ASSET_LNS_ALL",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": true
+    },
+    {
+      "name": "ProjectAssetLinePEOLastUpdateLogin",
+      "table": "PJC_PRJ_ASSET_LNS_ALL",
+      "column": "LAST_UPDATE_LOGIN",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectAssetLinePEOLastUpdatedBy",
+      "table": "PJC_PRJ_ASSET_LNS_ALL",
+      "column": "LAST_UPDATED_BY",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectAssetLinePEOLineType",
+      "table": "PJC_PRJ_ASSET_LNS_ALL",
+      "column": "LINE_TYPE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectAssetLinePEONewMasterFlag",
+      "table": "PJC_PRJ_ASSET_LNS_ALL",
+      "column": "NEW_MASTER_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectAssetLinePEOObjectVersionNumber",
+      "table": "PJC_PRJ_ASSET_LNS_ALL",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectAssetLinePEOOrgId",
+      "table": "PJC_PRJ_ASSET_LNS_ALL",
+      "column": "ORG_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectAssetLinePEOOriginalAssetCost",
+      "table": "PJC_PRJ_ASSET_LNS_ALL",
+      "column": "ORIGINAL_ASSET_COST",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectAssetLinePEOOriginalAssetId",
+      "table": "PJC_PRJ_ASSET_LNS_ALL",
+      "column": "ORIGINAL_ASSET_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectAssetLinePEOPayablesBatchName",
+      "table": "PJC_PRJ_ASSET_LNS_ALL",
+      "column": "PAYABLES_BATCH_NAME",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectAssetLinePEOPoNumber",
+      "table": "PJC_PRJ_ASSET_LNS_ALL",
+      "column": "PO_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectAssetLinePEOPoVendorId",
+      "table": "PJC_PRJ_ASSET_LNS_ALL",
+      "column": "PO_VENDOR_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectAssetLinePEOProjectAssetId",
+      "table": "PJC_PRJ_ASSET_LNS_ALL",
+      "column": "PROJECT_ASSET_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectAssetLinePEOProjectAssetLineDetailId",
+      "table": "PJC_PRJ_ASSET_LNS_ALL",
+      "column": "PROJECT_ASSET_LINE_DETAIL_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectAssetLinePEOProjectAssetLineId",
+      "table": "PJC_PRJ_ASSET_LNS_ALL",
+      "column": "PROJECT_ASSET_LINE_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectAssetLinePEOProjectId",
+      "table": "PJC_PRJ_ASSET_LNS_ALL",
+      "column": "PROJECT_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectAssetLinePEORequestId",
+      "table": "PJC_PRJ_ASSET_LNS_ALL",
+      "column": "REQUEST_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectAssetLinePEORetAdjustmentTxnId",
+      "table": "PJC_PRJ_ASSET_LNS_ALL",
+      "column": "RET_ADJUSTMENT_TXN_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectAssetLinePEORetirementCostType",
+      "table": "PJC_PRJ_ASSET_LNS_ALL",
+      "column": "RETIREMENT_COST_TYPE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectAssetLinePEORevFromProjAssetLineId",
+      "table": "PJC_PRJ_ASSET_LNS_ALL",
+      "column": "REV_FROM_PROJ_ASSET_LINE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectAssetLinePEORevProjAssetLineId",
+      "table": "PJC_PRJ_ASSET_LNS_ALL",
+      "column": "REV_PROJ_ASSET_LINE_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectAssetLinePEOTaskId",
+      "table": "PJC_PRJ_ASSET_LNS_ALL",
+      "column": "TASK_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectAssetLinePEOTransferRejectionReason",
+      "table": "PJC_PRJ_ASSET_LNS_ALL",
+      "column": "TRANSFER_REJECTION_REASON",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectAssetLinePEOTransferStatusCode",
+      "table": "PJC_PRJ_ASSET_LNS_ALL",
+      "column": "TRANSFER_STATUS_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectAssetLinePEOVendorNumber",
+      "table": "PJC_PRJ_ASSET_LNS_ALL",
+      "column": "VENDOR_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectCostDistributionPEOAccountingStatusCode",
+      "table": "PJC_COST_DIST_LINES_ALL",
+      "column": "ACCOUNTING_STATUS_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectCostDistributionPEOAcctBurdenedCost",
+      "table": "PJC_COST_DIST_LINES_ALL",
+      "column": "ACCT_BURDENED_COST",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectCostDistributionPEOAcctCurrencyCode",
+      "table": "PJC_COST_DIST_LINES_ALL",
+      "column": "ACCT_CURRENCY_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectCostDistributionPEOAcctEventId",
+      "table": "PJC_COST_DIST_LINES_ALL",
+      "column": "ACCT_EVENT_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectCostDistributionPEOAcctExchangeRate",
+      "table": "PJC_COST_DIST_LINES_ALL",
+      "column": "ACCT_EXCHANGE_RATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectCostDistributionPEOAcctRateDate",
+      "table": "PJC_COST_DIST_LINES_ALL",
+      "column": "ACCT_RATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectCostDistributionPEOAcctRateType",
+      "table": "PJC_COST_DIST_LINES_ALL",
+      "column": "ACCT_RATE_TYPE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectCostDistributionPEOAcctRawCost",
+      "table": "PJC_COST_DIST_LINES_ALL",
+      "column": "ACCT_RAW_COST",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectCostDistributionPEOAcctSourceCode",
+      "table": "PJC_COST_DIST_LINES_ALL",
+      "column": "ACCT_SOURCE_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectCostDistributionPEOAccumulatedFlag",
+      "table": "PJC_COST_DIST_LINES_ALL",
+      "column": "ACCUMULATED_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectCostDistributionPEOBillableFlag",
+      "table": "PJC_COST_DIST_LINES_ALL",
+      "column": "BILLABLE_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectCostDistributionPEOBudgetPeriodId",
+      "table": "PJC_COST_DIST_LINES_ALL",
+      "column": "BUDGET_PERIOD_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectCostDistributionPEOBudgetaryControlValStatus",
+      "table": "PJC_COST_DIST_LINES_ALL",
+      "column": "BUDGETARY_CONTROL_VAL_STATUS",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectCostDistributionPEOBurdenCostCrCcid",
+      "table": "PJC_COST_DIST_LINES_ALL",
+      "column": "BURDEN_COST_CR_CCID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectCostDistributionPEOBurdenCostDrCcid",
+      "table": "PJC_COST_DIST_LINES_ALL",
+      "column": "BURDEN_COST_DR_CCID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectCostDistributionPEOBurdenSumRejectionCode",
+      "table": "PJC_COST_DIST_LINES_ALL",
+      "column": "BURDEN_SUM_REJECTION_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectCostDistributionPEOBurdenSumSourceRunId",
+      "table": "PJC_COST_DIST_LINES_ALL",
+      "column": "BURDEN_SUM_SOURCE_RUN_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectCostDistributionPEOBurdenedCostCrCcid",
+      "table": "PJC_COST_DIST_LINES_ALL",
+      "column": "BURDENED_COST_CR_CCID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectCostDistributionPEOBurdenedCostDrCcid",
+      "table": "PJC_COST_DIST_LINES_ALL",
+      "column": "BURDENED_COST_DR_CCID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectCostDistributionPEOCapitalizableFlag",
+      "table": "PJC_COST_DIST_LINES_ALL",
+      "column": "CAPITALIZABLE_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectCostDistributionPEOCompDetailsId",
+      "table": "PJC_COST_DIST_LINES_ALL",
+      "column": "COMP_DETAILS_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectCostDistributionPEOCostScheduleId",
+      "table": "PJC_COST_DIST_LINES_ALL",
+      "column": "COST_SCHEDULE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectCostDistributionPEOCostScheduleLineId",
+      "table": "PJC_COST_DIST_LINES_ALL",
+      "column": "COST_SCHEDULE_LINE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectCostDistributionPEOCreatedBy",
+      "table": "PJC_COST_DIST_LINES_ALL",
+      "column": "CREATED_BY",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectCostDistributionPEOCreationDate",
+      "table": "PJC_COST_DIST_LINES_ALL",
+      "column": "CREATION_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectCostDistributionPEODenomBurdenedCost",
+      "table": "PJC_COST_DIST_LINES_ALL",
+      "column": "DENOM_BURDENED_COST",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectCostDistributionPEODenomCurrencyCode",
+      "table": "PJC_COST_DIST_LINES_ALL",
+      "column": "DENOM_CURRENCY_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectCostDistributionPEODenomRawCost",
+      "table": "PJC_COST_DIST_LINES_ALL",
+      "column": "DENOM_RAW_COST",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectCostDistributionPEOExpenditureItemId",
+      "table": "PJC_COST_DIST_LINES_ALL",
+      "column": "EXPENDITURE_ITEM_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectCostDistributionPEOIndCompiledSetId",
+      "table": "PJC_COST_DIST_LINES_ALL",
+      "column": "IND_COMPILED_SET_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectCostDistributionPEOInterfaceId",
+      "table": "PJC_COST_DIST_LINES_ALL",
+      "column": "INTERFACE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectCostDistributionPEOJobDefinitionName",
+      "table": "PJC_COST_DIST_LINES_ALL",
+      "column": "JOB_DEFINITION_NAME",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectCostDistributionPEOJobDefinitionPackage",
+      "table": "PJC_COST_DIST_LINES_ALL",
+      "column": "JOB_DEFINITION_PACKAGE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectCostDistributionPEOLastUpdateDate",
+      "table": "PJC_COST_DIST_LINES_ALL",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": true
+    },
+    {
+      "name": "ProjectCostDistributionPEOLastUpdateLogin",
+      "table": "PJC_COST_DIST_LINES_ALL",
+      "column": "LAST_UPDATE_LOGIN",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectCostDistributionPEOLastUpdatedBy",
+      "table": "PJC_COST_DIST_LINES_ALL",
+      "column": "LAST_UPDATED_BY",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectCostDistributionPEOLineNum",
+      "table": "PJC_COST_DIST_LINES_ALL",
+      "column": "LINE_NUM",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectCostDistributionPEOLineNumReversed",
+      "table": "PJC_COST_DIST_LINES_ALL",
+      "column": "LINE_NUM_REVERSED",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectCostDistributionPEOLineType",
+      "table": "PJC_COST_DIST_LINES_ALL",
+      "column": "LINE_TYPE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectCostDistributionPEONonLaborResourceId",
+      "table": "PJC_COST_DIST_LINES_ALL",
+      "column": "NON_LABOR_RESOURCE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectCostDistributionPEOObjectVersionNumber",
+      "table": "PJC_COST_DIST_LINES_ALL",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectCostDistributionPEOOrgId",
+      "table": "PJC_COST_DIST_LINES_ALL",
+      "column": "ORG_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectCostDistributionPEOOrgLaborSchRuleId",
+      "table": "PJC_COST_DIST_LINES_ALL",
+      "column": "ORG_LABOR_SCH_RULE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectCostDistributionPEOOrigHistoricalFlag",
+      "table": "PJC_COST_DIST_LINES_ALL",
+      "column": "ORIG_HISTORICAL_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectCostDistributionPEOParentLineNum",
+      "table": "PJC_COST_DIST_LINES_ALL",
+      "column": "PARENT_LINE_NUM",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectCostDistributionPEOPjsSummaryId",
+      "table": "PJC_COST_DIST_LINES_ALL",
+      "column": "PJS_SUMMARY_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectCostDistributionPEOPrcGeneratedFlag",
+      "table": "PJC_COST_DIST_LINES_ALL",
+      "column": "PRC_GENERATED_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectCostDistributionPEOPrevIndCompiledSetId",
+      "table": "PJC_COST_DIST_LINES_ALL",
+      "column": "PREV_IND_COMPILED_SET_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectCostDistributionPEOProjectBurdenedCost",
+      "table": "PJC_COST_DIST_LINES_ALL",
+      "column": "PROJECT_BURDENED_COST",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectCostDistributionPEOProjectCurrencyCode",
+      "table": "PJC_COST_DIST_LINES_ALL",
+      "column": "PROJECT_CURRENCY_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectCostDistributionPEOProjectExchangeRate",
+      "table": "PJC_COST_DIST_LINES_ALL",
+      "column": "PROJECT_EXCHANGE_RATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectCostDistributionPEOProjectId",
+      "table": "PJC_COST_DIST_LINES_ALL",
+      "column": "PROJECT_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectCostDistributionPEOProjectRateDate",
+      "table": "PJC_COST_DIST_LINES_ALL",
+      "column": "PROJECT_RATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectCostDistributionPEOProjectRateType",
+      "table": "PJC_COST_DIST_LINES_ALL",
+      "column": "PROJECT_RATE_TYPE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectCostDistributionPEOProjectRawCost",
+      "table": "PJC_COST_DIST_LINES_ALL",
+      "column": "PROJECT_RAW_COST",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectCostDistributionPEOProjectUnitId",
+      "table": "PJC_COST_DIST_LINES_ALL",
+      "column": "PROJECT_UNIT_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectCostDistributionPEOProjfuncBurdenedCost",
+      "table": "PJC_COST_DIST_LINES_ALL",
+      "column": "PROJFUNC_BURDENED_COST",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectCostDistributionPEOProjfuncCostExchangeRate",
+      "table": "PJC_COST_DIST_LINES_ALL",
+      "column": "PROJFUNC_COST_EXCHANGE_RATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectCostDistributionPEOProjfuncCostRateDate",
+      "table": "PJC_COST_DIST_LINES_ALL",
+      "column": "PROJFUNC_COST_RATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectCostDistributionPEOProjfuncCostRateType",
+      "table": "PJC_COST_DIST_LINES_ALL",
+      "column": "PROJFUNC_COST_RATE_TYPE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectCostDistributionPEOProjfuncCurrencyCode",
+      "table": "PJC_COST_DIST_LINES_ALL",
+      "column": "PROJFUNC_CURRENCY_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectCostDistributionPEOProjfuncRawCost",
+      "table": "PJC_COST_DIST_LINES_ALL",
+      "column": "PROJFUNC_RAW_COST",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectCostDistributionPEOPrvdrGlDate",
+      "table": "PJC_COST_DIST_LINES_ALL",
+      "column": "PRVDR_GL_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectCostDistributionPEOPrvdrGlPeriodName",
+      "table": "PJC_COST_DIST_LINES_ALL",
+      "column": "PRVDR_GL_PERIOD_NAME",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectCostDistributionPEOPrvdrPaDate",
+      "table": "PJC_COST_DIST_LINES_ALL",
+      "column": "PRVDR_PA_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectCostDistributionPEOPrvdrPaPeriodName",
+      "table": "PJC_COST_DIST_LINES_ALL",
+      "column": "PRVDR_PA_PERIOD_NAME",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectCostDistributionPEOQuantity",
+      "table": "PJC_COST_DIST_LINES_ALL",
+      "column": "QUANTITY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectCostDistributionPEORawCostCrCcid",
+      "table": "PJC_COST_DIST_LINES_ALL",
+      "column": "RAW_COST_CR_CCID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectCostDistributionPEORawCostDrCcid",
+      "table": "PJC_COST_DIST_LINES_ALL",
+      "column": "RAW_COST_DR_CCID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectCostDistributionPEORawLineNumReversed",
+      "table": "PJC_COST_DIST_LINES_ALL",
+      "column": "RAW_LINE_NUM_REVERSED",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectCostDistributionPEORecvrGlDate",
+      "table": "PJC_COST_DIST_LINES_ALL",
+      "column": "RECVR_GL_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectCostDistributionPEORecvrGlPeriodName",
+      "table": "PJC_COST_DIST_LINES_ALL",
+      "column": "RECVR_GL_PERIOD_NAME",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectCostDistributionPEORecvrPaDate",
+      "table": "PJC_COST_DIST_LINES_ALL",
+      "column": "RECVR_PA_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectCostDistributionPEORecvrPaPeriodName",
+      "table": "PJC_COST_DIST_LINES_ALL",
+      "column": "RECVR_PA_PERIOD_NAME",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectCostDistributionPEORequestId",
+      "table": "PJC_COST_DIST_LINES_ALL",
+      "column": "REQUEST_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectCostDistributionPEOReversedFlag",
+      "table": "PJC_COST_DIST_LINES_ALL",
+      "column": "REVERSED_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectCostDistributionPEOSiAssetsAdditionFlag",
+      "table": "PJC_COST_DIST_LINES_ALL",
+      "column": "SI_ASSETS_ADDITION_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectCostDistributionPEOTaskId",
+      "table": "PJC_COST_DIST_LINES_ALL",
+      "column": "TASK_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectCostDistributionPEOTransferRejectionReason",
+      "table": "PJC_COST_DIST_LINES_ALL",
+      "column": "TRANSFER_REJECTION_REASON",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectCostDistributionPEOTransferStatusCode",
+      "table": "PJC_COST_DIST_LINES_ALL",
+      "column": "TRANSFER_STATUS_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectCostDistributionPEOTxnAccumHeaderId",
+      "table": "PJC_COST_DIST_LINES_ALL",
+      "column": "TXN_ACCUM_HEADER_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectCostDistributionPEOWorkTypeId",
+      "table": "PJC_COST_DIST_LINES_ALL",
+      "column": "WORK_TYPE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureCommentsPEOExpenditureComment",
+      "table": "PJC_EXP_COMMENTS",
+      "column": "EXPENDITURE_COMMENT",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureCommentsPEOExpenditureItemId",
+      "table": "PJC_EXP_COMMENTS",
+      "column": "EXPENDITURE_ITEM_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureCommentsPEOLineNumber",
+      "table": "PJC_EXP_COMMENTS",
+      "column": "LINE_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureCommentsPEOObjectVersionNumber",
+      "table": "PJC_EXP_COMMENTS",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEOAcctBurdenedCost",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "ACCT_BURDENED_COST",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEOAcctCurrencyCode",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "ACCT_CURRENCY_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEOAcctExchangeRate",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "ACCT_EXCHANGE_RATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEOAcctExchangeRoundingLimit",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "ACCT_EXCHANGE_ROUNDING_LIMIT",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEOAcctRateDate",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "ACCT_RATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEOAcctRateDateType",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "ACCT_RATE_DATE_TYPE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEOAcctRateType",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "ACCT_RATE_TYPE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEOAcctRawCost",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "ACCT_RAW_COST",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEOAcctTpExchangeRate",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "ACCT_TP_EXCHANGE_RATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEOAcctTpRateDate",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "ACCT_TP_RATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEOAcctTpRateType",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "ACCT_TP_RATE_TYPE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEOAcctTransferPrice",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "ACCT_TRANSFER_PRICE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEOAdjustedExpenditureItemId",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "ADJUSTED_EXPENDITURE_ITEM_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEOAdjustmentStatus",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "ADJUSTMENT_STATUS",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEOAdjustmentType",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "ADJUSTMENT_TYPE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEOAttribute1",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "ATTRIBUTE1",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEOAttribute10",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "ATTRIBUTE10",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEOAttribute2",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "ATTRIBUTE2",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEOAttribute3",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "ATTRIBUTE3",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEOAttribute4",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "ATTRIBUTE4",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEOAttribute5",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "ATTRIBUTE5",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEOAttribute6",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "ATTRIBUTE6",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEOAttribute7",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "ATTRIBUTE7",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEOAttribute8",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "ATTRIBUTE8",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEOAttribute9",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "ATTRIBUTE9",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEOAttributeCategory",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "ATTRIBUTE_CATEGORY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEOBillByCostCode",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "BILL_BY_COST_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEOBillHoldFlag",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "BILL_HOLD_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEOBillTransCurrencyCode",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "BILL_TRANS_CURRENCY_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEOBillableFlag",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "BILLABLE_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEOBurdenCostRate",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "BURDEN_COST_RATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEOBurdenSumDestRunId",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "BURDEN_SUM_DEST_RUN_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEOCapitalEventId",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "CAPITAL_EVENT_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEOCapitalizableFlag",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "CAPITALIZABLE_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEOCapitalizationDistFlag",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "CAPITALIZATION_DIST_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEOCcBlDistributedCode",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "CC_BL_DISTRIBUTED_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEOCcCrossChargeCode",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "CC_CROSS_CHARGE_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEOCcCrossChargeType",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "CC_CROSS_CHARGE_TYPE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEOCcMarkupBaseCode",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "CC_MARKUP_BASE_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEOCcProcessedFlag",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "CC_PROCESSED_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEOCcPrvdrCostReclassCode",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "CC_PRVDR_COST_RECLASS_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEOCcPrvdrOrganizationId",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "CC_PRVDR_ORGANIZATION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEOCcRecvrOrganizationId",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "CC_RECVR_ORGANIZATION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEOCcRejectionCode",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "CC_REJECTION_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEOContextCategory",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "CONTEXT_CATEGORY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEOContractId",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "CONTRACT_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEOContractLineId",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "CONTRACT_LINE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEOConvertedFlag",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "CONVERTED_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEOCostAllocationKeyflexId",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "COST_ALLOCATION_KEYFLEX_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEOCostDistWarningCode",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "COST_DIST_WARNING_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEOCostId",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "COST_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEOCostIndCompiledSetId",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "COST_IND_COMPILED_SET_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEOCostJobId",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "COST_JOB_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEOCostScheduleId",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "COST_SCHEDULE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEOCostScheduleLineId",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "COST_SCHEDULE_LINE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEOCreatedBy",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "CREATED_BY",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEOCreationDate",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "CREATION_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEODenomBurdenedCost",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "DENOM_BURDENED_COST",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEODenomCurrencyCode",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "DENOM_CURRENCY_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEODenomRawCost",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "DENOM_RAW_COST",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEODenomTpCurrencyCode",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "DENOM_TP_CURRENCY_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEODenomTransferPrice",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "DENOM_TRANSFER_PRICE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEODocEntryId",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "DOC_ENTRY_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEODocRefId1",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "DOC_REF_ID1",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEODocRefId10",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "DOC_REF_ID10",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEODocRefId2",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "DOC_REF_ID2",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEODocumentDistributionType",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "DOCUMENT_DISTRIBUTION_TYPE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEODocumentId",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "DOCUMENT_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEODocumentType",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "DOCUMENT_TYPE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEOExpGroupId",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "EXP_GROUP_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEOExpenditureEndingDate",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "EXPENDITURE_ENDING_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEOExpenditureItemDate",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "EXPENDITURE_ITEM_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEOExpenditureItemId",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "EXPENDITURE_ITEM_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEOExpenditureOrganizationId",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "EXPENDITURE_ORGANIZATION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEOExpenditureTypeId",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "EXPENDITURE_TYPE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEOHcmAssignmentId",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "HCM_ASSIGNMENT_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEOHistoricalFlag",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "HISTORICAL_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEOIcBillByCostCode",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "IC_BILL_BY_COST_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEOIcBillHoldFlag",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "IC_BILL_HOLD_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEOIcBillableFlag",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "IC_BILLABLE_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEOIcInvoicedFlag",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "IC_INVOICED_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEOIcInvoicedPercentage",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "IC_INVOICED_PERCENTAGE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEOIcLedgerCurrInvAmt",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "IC_LEDGER_CURR_INV_AMT",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEOIcLedgerCurrRevAmt",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "IC_LEDGER_CURR_REV_AMT",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEOIcProjectCurrInvAmt",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "IC_PROJECT_CURR_INV_AMT",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEOIcProjectCurrRevAmt",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "IC_PROJECT_CURR_REV_AMT",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEOIcRbsElementId",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "IC_RBS_ELEMENT_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEOIcRevRecogPercentage",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "IC_REV_RECOG_PERCENTAGE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEOIcRevenueHoldFlag",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "IC_REVENUE_HOLD_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEOIcRevenueRecognizedFlag",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "IC_REVENUE_RECOGNIZED_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEOIcTpAmtTypeCode",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "IC_TP_AMT_TYPE_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEOIcTpBaseCode",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "IC_TP_BASE_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEOIncurredByOrganizationId",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "INCURRED_BY_ORGANIZATION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEOIncurredByPersonId",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "INCURRED_BY_PERSON_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEOInvExcludeFlag",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "INV_EXCLUDE_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEOInventoryItemId",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "INVENTORY_ITEM_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEOInvoiceExceptionFlag",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "INVOICE_EXCEPTION_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEOInvoicedFlag",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "INVOICED_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEOInvoicedPercentage",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "INVOICED_PERCENTAGE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEOJobDefinitionName",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "JOB_DEFINITION_NAME",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEOJobDefinitionPackage",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "JOB_DEFINITION_PACKAGE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEOLaborCostMultiplierName",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "LABOR_COST_MULTIPLIER_NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEOLastUpdateDate",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": true
+    },
+    {
+      "name": "ProjectExpenditureItemPEOLastUpdateLogin",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "LAST_UPDATE_LOGIN",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEOLastUpdatedBy",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "LAST_UPDATED_BY",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEOLdOrigTransactionReference",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "LD_ORIG_TRANSACTION_REFERENCE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEOLedgerCurrInvAmt",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "LEDGER_CURR_INV_AMT",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEOLedgerCurrRevAmt",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "LEDGER_CURR_REV_AMT",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEOManualFlag",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "MANUAL_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEONetZeroAdjustmentFlag",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "NET_ZERO_ADJUSTMENT_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEONonLaborResourceId",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "NON_LABOR_RESOURCE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEONonLaborResourceOrgId",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "NON_LABOR_RESOURCE_ORG_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEOObjectVersionNumber",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEOOrgId",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "ORG_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEOOrigTransactionReference",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "ORIG_TRANSACTION_REFERENCE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEOOriginalDistId",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "ORIGINAL_DIST_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEOOriginalHeaderId",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "ORIGINAL_HEADER_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEOOriginalLineNumber",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "ORIGINAL_LINE_NUMBER",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEOOverrideToOrganizationId",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "OVERRIDE_TO_ORGANIZATION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEOParentDistId",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "PARENT_DIST_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEOParentHeaderId",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "PARENT_HEADER_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEOParentLineNumber",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "PARENT_LINE_NUMBER",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEOPeriodAccrualFlag",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "PERIOD_ACCRUAL_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEOPersonJobId",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "PERSON_JOB_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEOPersonType",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "PERSON_TYPE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEOProjacctTransferPrice",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "PROJACCT_TRANSFER_PRICE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEOProjectBurdenedCost",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "PROJECT_BURDENED_COST",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEOProjectCurrInvAmt",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "PROJECT_CURR_INV_AMT",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEOProjectCurrRevAmt",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "PROJECT_CURR_REV_AMT",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEOProjectCurrencyCode",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "PROJECT_CURRENCY_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEOProjectExchangeRate",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "PROJECT_EXCHANGE_RATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEOProjectId",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "PROJECT_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEOProjectRateDate",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "PROJECT_RATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEOProjectRateDateType",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "PROJECT_RATE_DATE_TYPE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEOProjectRateType",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "PROJECT_RATE_TYPE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEOProjectRawCost",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "PROJECT_RAW_COST",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEOProjectTpExchangeRate",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "PROJECT_TP_EXCHANGE_RATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEOProjectTpRateDate",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "PROJECT_TP_RATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEOProjectTpRateType",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "PROJECT_TP_RATE_TYPE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEOProjectTransferPrice",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "PROJECT_TRANSFER_PRICE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEOProjectUnitId",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "PROJECT_UNIT_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEOProjfuncBurdenedCost",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "PROJFUNC_BURDENED_COST",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEOProjfuncCostExchangeRate",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "PROJFUNC_COST_EXCHANGE_RATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEOProjfuncCostRateDate",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "PROJFUNC_COST_RATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEOProjfuncCostRateType",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "PROJFUNC_COST_RATE_TYPE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEOProjfuncCurrencyCode",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "PROJFUNC_CURRENCY_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEOProjfuncRateDateType",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "PROJFUNC_RATE_DATE_TYPE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEOProjfuncRawCost",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "PROJFUNC_RAW_COST",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEOProjfuncTpExchangeRate",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "PROJFUNC_TP_EXCHANGE_RATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEOProjfuncTpRateDate",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "PROJFUNC_TP_RATE_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEOProjfuncTpRateType",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "PROJFUNC_TP_RATE_TYPE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEOProjfuncTransferPrice",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "PROJFUNC_TRANSFER_PRICE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEOPrvdrAccrualDate",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "PRVDR_ACCRUAL_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEOPrvdrLegalEntityId",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "PRVDR_LEGAL_ENTITY_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEOQuantity",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "QUANTITY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEORawCostRate",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "RAW_COST_RATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEORbsElementId",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "RBS_ELEMENT_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEOReceiptCurrencyAmount",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "RECEIPT_CURRENCY_AMOUNT",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEOReceiptCurrencyCode",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "RECEIPT_CURRENCY_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEOReceiptExchangeRate",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "RECEIPT_EXCHANGE_RATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEORecvrAccrualDate",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "RECVR_ACCRUAL_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEORecvrOrgId",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "RECVR_ORG_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEOReferenceId1",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "REFERENCE_ID1",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEORequestId",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "REQUEST_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEOReservedAttribute1",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "RESERVED_ATTRIBUTE1",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEOReservedAttribute10",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "RESERVED_ATTRIBUTE10",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEOReservedAttribute2",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "RESERVED_ATTRIBUTE2",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEOReservedAttribute3",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "RESERVED_ATTRIBUTE3",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEOReservedAttribute4",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "RESERVED_ATTRIBUTE4",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEOReservedAttribute5",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "RESERVED_ATTRIBUTE5",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEOReservedAttribute6",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "RESERVED_ATTRIBUTE6",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEOReservedAttribute7",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "RESERVED_ATTRIBUTE7",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEOReservedAttribute8",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "RESERVED_ATTRIBUTE8",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEOReservedAttribute9",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "RESERVED_ATTRIBUTE9",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEORevExcludeFlag",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "REV_EXCLUDE_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEORevenueExceptionFlag",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "REVENUE_EXCEPTION_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEORevenueHoldFlag",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "REVENUE_HOLD_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEORevenueRecogPercentage",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "REVENUE_RECOG_PERCENTAGE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEORevenueRecognizedFlag",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "REVENUE_RECOGNIZED_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEOSourceExpenditureItemId",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "SOURCE_EXPENDITURE_ITEM_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEOSrcSystemLinkageFunction",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "SRC_SYSTEM_LINKAGE_FUNCTION",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEOSystemLinkageFunction",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "SYSTEM_LINKAGE_FUNCTION",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEOTaskId",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "TASK_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEOTpAmtTypeCode",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "TP_AMT_TYPE_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEOTpBaseAmount",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "TP_BASE_AMOUNT",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEOTpBillMarkupPercentage",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "TP_BILL_MARKUP_PERCENTAGE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEOTpBillRate",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "TP_BILL_RATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEOTpIndCompiledSetId",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "TP_IND_COMPILED_SET_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEOTpJobId",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "TP_JOB_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEOTpRulePercentage",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "TP_RULE_PERCENTAGE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEOTpScheduleLinePercentage",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "TP_SCHEDULE_LINE_PERCENTAGE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEOTransactionSourceId",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "TRANSACTION_SOURCE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEOTransferredFromExpItemId",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "TRANSFERRED_FROM_EXP_ITEM_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEOTxnAccumHeaderId",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "TXN_ACCUM_HEADER_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEOUnitOfMeasure",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "UNIT_OF_MEASURE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEOUserDefAttribute1",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "USER_DEF_ATTRIBUTE1",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEOUserDefAttribute10",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "USER_DEF_ATTRIBUTE10",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEOUserDefAttribute2",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "USER_DEF_ATTRIBUTE2",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEOUserDefAttribute3",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "USER_DEF_ATTRIBUTE3",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEOUserDefAttribute4",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "USER_DEF_ATTRIBUTE4",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEOUserDefAttribute5",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "USER_DEF_ATTRIBUTE5",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEOUserDefAttribute6",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "USER_DEF_ATTRIBUTE6",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEOUserDefAttribute7",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "USER_DEF_ATTRIBUTE7",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEOUserDefAttribute8",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "USER_DEF_ATTRIBUTE8",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEOUserDefAttribute9",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "USER_DEF_ATTRIBUTE9",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEOVendorId",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "VENDOR_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectExpenditureItemPEOWorkTypeId",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "WORK_TYPE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectTypeBasePEOCapitalCostTypeCode",
+      "table": "PJF_PROJECT_TYPES_B",
+      "column": "CAPITAL_COST_TYPE_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectTypeBasePEOEnableBillingFlag",
+      "table": "PJF_PROJECT_TYPES_B",
+      "column": "ENABLE_BILLING_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectTypeBasePEOEnableCapitalizationFlag",
+      "table": "PJF_PROJECT_TYPES_B",
+      "column": "ENABLE_CAPITALIZATION_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectTypeBasePEOProjectTypeId",
+      "table": "PJF_PROJECT_TYPES_B",
+      "column": "PROJECT_TYPE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SourceTxnQuantity",
+      "table": "PJC_EXP_ITEMS_ALL",
+      "column": "SOURCE_TXN_QUANTITY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TransactionDocEntryPEODocEntryCode",
+      "table": "PJF_TXN_DOC_ENTRY_VL",
+      "column": "DOC_ENTRY_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TransactionDocEntryPEODocEntryId",
+      "table": "PJF_TXN_DOC_ENTRY_VL",
+      "column": "DOC_ENTRY_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TransactionDocumentPEODocumentCode",
+      "table": "PJF_TXN_DOCUMENT_VL",
+      "column": "DOCUMENT_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TransactionDocumentPEODocumentId",
+      "table": "PJF_TXN_DOCUMENT_VL",
+      "column": "DOCUMENT_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TransactionSourcePEOObjectVersionNumber",
+      "table": "PJF_TXN_SOURCES_VL",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TransactionSourcePEOTransactionSource",
+      "table": "PJF_TXN_SOURCES_VL",
+      "column": "TRANSACTION_SOURCE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TransactionSourcePEOTransactionSourceId",
+      "table": "PJF_TXN_SOURCES_VL",
+      "column": "TRANSACTION_SOURCE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TransactionSourcePEOUserTransactionSource",
+      "table": "PJF_TXN_SOURCES_VL",
+      "column": "USER_TRANSACTION_SOURCE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "WisResourcesPEOResourceId",
+      "table": "WIS_RESOURCES_VL",
+      "column": "RESOURCE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    }
+  ],
+  "by_table": {
+    "CST_ALL_TXN_TYPES_V": [
+      {
+        "attribute": "BaseTxnSourceTypeId",
+        "column": "BASE_TXN_SOURCE_TYPE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BaseTxnTypeId",
+        "column": "BASE_TXN_TYPE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BaseTxnTypeName",
+        "column": "BASE_TXN_TYPE_NAME",
+        "bicc": true,
+        "pk": false
+      }
+    ],
+    "HR_ORGANIZATION_INFORMATION_F": [
+      {
+        "attribute": "CDLBusinessUnitPEOBusinessUnitId",
+        "column": "ORGANIZATION_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CDLBusinessUnitPEOCreatedBy",
+        "column": "CREATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CDLBusinessUnitPEOCreationDate",
+        "column": "CREATION_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CDLBusinessUnitPEOEffectiveEndDate",
+        "column": "EFFECTIVE_END_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CDLBusinessUnitPEOEffectiveStartDate",
+        "column": "EFFECTIVE_START_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CDLBusinessUnitPEOLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CDLBusinessUnitPEOLastUpdateLogin",
+        "column": "LAST_UPDATE_LOGIN",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CDLBusinessUnitPEOLastUpdatedBy",
+        "column": "LAST_UPDATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CDLBusinessUnitPEOOrgInformationId",
+        "column": "ORG_INFORMATION_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CDLBusinessUnitPEOPrimaryLedgerId",
+        "column": "ORG_INFORMATION3",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ExpBUPEOBusinessUnitId",
+        "column": "ORGANIZATION_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ExpBUPEOCreatedBy",
+        "column": "CREATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ExpBUPEOCreationDate",
+        "column": "CREATION_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ExpBUPEOEffectiveEndDate",
+        "column": "EFFECTIVE_END_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ExpBUPEOEffectiveStartDate",
+        "column": "EFFECTIVE_START_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ExpBUPEOLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ExpBUPEOLastUpdateLogin",
+        "column": "LAST_UPDATE_LOGIN",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ExpBUPEOLastUpdatedBy",
+        "column": "LAST_UPDATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ExpBUPEOOrgInformationId",
+        "column": "ORG_INFORMATION_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ExpBUPEOPrimaryLedgerId",
+        "column": "ORG_INFORMATION3",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "PJF_PROJECTS_ALL_B": [
+      {
+        "attribute": "CDLProjectBasePEOLegalEntityId",
+        "column": "LEGAL_ENTITY_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CDLProjectBasePEOOrgId",
+        "column": "ORG_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CDLProjectBasePEOProjectId",
+        "column": "PROJECT_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CDLProjectBasePEOProjectUnitId",
+        "column": "PROJECT_UNIT_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ExpProjectBasePEOLegalEntityId",
+        "column": "LEGAL_ENTITY_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ExpProjectBasePEOOrgId",
+        "column": "ORG_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ExpProjectBasePEOProjectId",
+        "column": "PROJECT_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ExpProjectBasePEOProjectUnitId",
+        "column": "PROJECT_UNIT_ID",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "PJC_EXP_ITEMS_ALL": [
+      {
+        "attribute": "DistributionId",
+        "column": "DISTRIBUTION_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEOAcctBurdenedCost",
+        "column": "ACCT_BURDENED_COST",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEOAcctCurrencyCode",
+        "column": "ACCT_CURRENCY_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEOAcctExchangeRate",
+        "column": "ACCT_EXCHANGE_RATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEOAcctExchangeRoundingLimit",
+        "column": "ACCT_EXCHANGE_ROUNDING_LIMIT",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEOAcctRateDate",
+        "column": "ACCT_RATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEOAcctRateDateType",
+        "column": "ACCT_RATE_DATE_TYPE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEOAcctRateType",
+        "column": "ACCT_RATE_TYPE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEOAcctRawCost",
+        "column": "ACCT_RAW_COST",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEOAcctTpExchangeRate",
+        "column": "ACCT_TP_EXCHANGE_RATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEOAcctTpRateDate",
+        "column": "ACCT_TP_RATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEOAcctTpRateType",
+        "column": "ACCT_TP_RATE_TYPE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEOAcctTransferPrice",
+        "column": "ACCT_TRANSFER_PRICE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEOAdjustedExpenditureItemId",
+        "column": "ADJUSTED_EXPENDITURE_ITEM_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEOAdjustmentStatus",
+        "column": "ADJUSTMENT_STATUS",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEOAdjustmentType",
+        "column": "ADJUSTMENT_TYPE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEOAttribute1",
+        "column": "ATTRIBUTE1",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEOAttribute10",
+        "column": "ATTRIBUTE10",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEOAttribute2",
+        "column": "ATTRIBUTE2",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEOAttribute3",
+        "column": "ATTRIBUTE3",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEOAttribute4",
+        "column": "ATTRIBUTE4",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEOAttribute5",
+        "column": "ATTRIBUTE5",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEOAttribute6",
+        "column": "ATTRIBUTE6",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEOAttribute7",
+        "column": "ATTRIBUTE7",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEOAttribute8",
+        "column": "ATTRIBUTE8",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEOAttribute9",
+        "column": "ATTRIBUTE9",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEOAttributeCategory",
+        "column": "ATTRIBUTE_CATEGORY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEOBillByCostCode",
+        "column": "BILL_BY_COST_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEOBillHoldFlag",
+        "column": "BILL_HOLD_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEOBillTransCurrencyCode",
+        "column": "BILL_TRANS_CURRENCY_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEOBillableFlag",
+        "column": "BILLABLE_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEOBurdenCostRate",
+        "column": "BURDEN_COST_RATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEOBurdenSumDestRunId",
+        "column": "BURDEN_SUM_DEST_RUN_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEOCapitalEventId",
+        "column": "CAPITAL_EVENT_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEOCapitalizableFlag",
+        "column": "CAPITALIZABLE_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEOCapitalizationDistFlag",
+        "column": "CAPITALIZATION_DIST_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEOCcBlDistributedCode",
+        "column": "CC_BL_DISTRIBUTED_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEOCcCrossChargeCode",
+        "column": "CC_CROSS_CHARGE_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEOCcCrossChargeType",
+        "column": "CC_CROSS_CHARGE_TYPE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEOCcMarkupBaseCode",
+        "column": "CC_MARKUP_BASE_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEOCcProcessedFlag",
+        "column": "CC_PROCESSED_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEOCcPrvdrCostReclassCode",
+        "column": "CC_PRVDR_COST_RECLASS_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEOCcPrvdrOrganizationId",
+        "column": "CC_PRVDR_ORGANIZATION_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEOCcRecvrOrganizationId",
+        "column": "CC_RECVR_ORGANIZATION_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEOCcRejectionCode",
+        "column": "CC_REJECTION_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEOContextCategory",
+        "column": "CONTEXT_CATEGORY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEOContractId",
+        "column": "CONTRACT_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEOContractLineId",
+        "column": "CONTRACT_LINE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEOConvertedFlag",
+        "column": "CONVERTED_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEOCostAllocationKeyflexId",
+        "column": "COST_ALLOCATION_KEYFLEX_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEOCostDistWarningCode",
+        "column": "COST_DIST_WARNING_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEOCostId",
+        "column": "COST_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEOCostIndCompiledSetId",
+        "column": "COST_IND_COMPILED_SET_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEOCostJobId",
+        "column": "COST_JOB_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEOCostScheduleId",
+        "column": "COST_SCHEDULE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEOCostScheduleLineId",
+        "column": "COST_SCHEDULE_LINE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEOCreatedBy",
+        "column": "CREATED_BY",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEOCreationDate",
+        "column": "CREATION_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEODenomBurdenedCost",
+        "column": "DENOM_BURDENED_COST",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEODenomCurrencyCode",
+        "column": "DENOM_CURRENCY_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEODenomRawCost",
+        "column": "DENOM_RAW_COST",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEODenomTpCurrencyCode",
+        "column": "DENOM_TP_CURRENCY_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEODenomTransferPrice",
+        "column": "DENOM_TRANSFER_PRICE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEODocEntryId",
+        "column": "DOC_ENTRY_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEODocRefId1",
+        "column": "DOC_REF_ID1",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEODocRefId10",
+        "column": "DOC_REF_ID10",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEODocRefId2",
+        "column": "DOC_REF_ID2",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEODocumentDistributionType",
+        "column": "DOCUMENT_DISTRIBUTION_TYPE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEODocumentId",
+        "column": "DOCUMENT_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEODocumentType",
+        "column": "DOCUMENT_TYPE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEOExpGroupId",
+        "column": "EXP_GROUP_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEOExpenditureEndingDate",
+        "column": "EXPENDITURE_ENDING_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEOExpenditureItemDate",
+        "column": "EXPENDITURE_ITEM_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEOExpenditureItemId",
+        "column": "EXPENDITURE_ITEM_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEOExpenditureOrganizationId",
+        "column": "EXPENDITURE_ORGANIZATION_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEOExpenditureTypeId",
+        "column": "EXPENDITURE_TYPE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEOHcmAssignmentId",
+        "column": "HCM_ASSIGNMENT_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEOHistoricalFlag",
+        "column": "HISTORICAL_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEOIcBillByCostCode",
+        "column": "IC_BILL_BY_COST_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEOIcBillHoldFlag",
+        "column": "IC_BILL_HOLD_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEOIcBillableFlag",
+        "column": "IC_BILLABLE_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEOIcInvoicedFlag",
+        "column": "IC_INVOICED_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEOIcInvoicedPercentage",
+        "column": "IC_INVOICED_PERCENTAGE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEOIcLedgerCurrInvAmt",
+        "column": "IC_LEDGER_CURR_INV_AMT",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEOIcLedgerCurrRevAmt",
+        "column": "IC_LEDGER_CURR_REV_AMT",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEOIcProjectCurrInvAmt",
+        "column": "IC_PROJECT_CURR_INV_AMT",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEOIcProjectCurrRevAmt",
+        "column": "IC_PROJECT_CURR_REV_AMT",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEOIcRbsElementId",
+        "column": "IC_RBS_ELEMENT_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEOIcRevRecogPercentage",
+        "column": "IC_REV_RECOG_PERCENTAGE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEOIcRevenueHoldFlag",
+        "column": "IC_REVENUE_HOLD_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEOIcRevenueRecognizedFlag",
+        "column": "IC_REVENUE_RECOGNIZED_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEOIcTpAmtTypeCode",
+        "column": "IC_TP_AMT_TYPE_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEOIcTpBaseCode",
+        "column": "IC_TP_BASE_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEOIncurredByOrganizationId",
+        "column": "INCURRED_BY_ORGANIZATION_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEOIncurredByPersonId",
+        "column": "INCURRED_BY_PERSON_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEOInvExcludeFlag",
+        "column": "INV_EXCLUDE_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEOInventoryItemId",
+        "column": "INVENTORY_ITEM_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEOInvoiceExceptionFlag",
+        "column": "INVOICE_EXCEPTION_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEOInvoicedFlag",
+        "column": "INVOICED_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEOInvoicedPercentage",
+        "column": "INVOICED_PERCENTAGE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEOJobDefinitionName",
+        "column": "JOB_DEFINITION_NAME",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEOJobDefinitionPackage",
+        "column": "JOB_DEFINITION_PACKAGE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEOLaborCostMultiplierName",
+        "column": "LABOR_COST_MULTIPLIER_NAME",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEOLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEOLastUpdateLogin",
+        "column": "LAST_UPDATE_LOGIN",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEOLastUpdatedBy",
+        "column": "LAST_UPDATED_BY",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEOLdOrigTransactionReference",
+        "column": "LD_ORIG_TRANSACTION_REFERENCE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEOLedgerCurrInvAmt",
+        "column": "LEDGER_CURR_INV_AMT",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEOLedgerCurrRevAmt",
+        "column": "LEDGER_CURR_REV_AMT",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEOManualFlag",
+        "column": "MANUAL_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEONetZeroAdjustmentFlag",
+        "column": "NET_ZERO_ADJUSTMENT_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEONonLaborResourceId",
+        "column": "NON_LABOR_RESOURCE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEONonLaborResourceOrgId",
+        "column": "NON_LABOR_RESOURCE_ORG_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEOObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEOOrgId",
+        "column": "ORG_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEOOrigTransactionReference",
+        "column": "ORIG_TRANSACTION_REFERENCE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEOOriginalDistId",
+        "column": "ORIGINAL_DIST_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEOOriginalHeaderId",
+        "column": "ORIGINAL_HEADER_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEOOriginalLineNumber",
+        "column": "ORIGINAL_LINE_NUMBER",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEOOverrideToOrganizationId",
+        "column": "OVERRIDE_TO_ORGANIZATION_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEOParentDistId",
+        "column": "PARENT_DIST_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEOParentHeaderId",
+        "column": "PARENT_HEADER_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEOParentLineNumber",
+        "column": "PARENT_LINE_NUMBER",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEOPeriodAccrualFlag",
+        "column": "PERIOD_ACCRUAL_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEOPersonJobId",
+        "column": "PERSON_JOB_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEOPersonType",
+        "column": "PERSON_TYPE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEOProjacctTransferPrice",
+        "column": "PROJACCT_TRANSFER_PRICE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEOProjectBurdenedCost",
+        "column": "PROJECT_BURDENED_COST",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEOProjectCurrInvAmt",
+        "column": "PROJECT_CURR_INV_AMT",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEOProjectCurrRevAmt",
+        "column": "PROJECT_CURR_REV_AMT",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEOProjectCurrencyCode",
+        "column": "PROJECT_CURRENCY_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEOProjectExchangeRate",
+        "column": "PROJECT_EXCHANGE_RATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEOProjectId",
+        "column": "PROJECT_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEOProjectRateDate",
+        "column": "PROJECT_RATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEOProjectRateDateType",
+        "column": "PROJECT_RATE_DATE_TYPE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEOProjectRateType",
+        "column": "PROJECT_RATE_TYPE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEOProjectRawCost",
+        "column": "PROJECT_RAW_COST",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEOProjectTpExchangeRate",
+        "column": "PROJECT_TP_EXCHANGE_RATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEOProjectTpRateDate",
+        "column": "PROJECT_TP_RATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEOProjectTpRateType",
+        "column": "PROJECT_TP_RATE_TYPE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEOProjectTransferPrice",
+        "column": "PROJECT_TRANSFER_PRICE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEOProjectUnitId",
+        "column": "PROJECT_UNIT_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEOProjfuncBurdenedCost",
+        "column": "PROJFUNC_BURDENED_COST",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEOProjfuncCostExchangeRate",
+        "column": "PROJFUNC_COST_EXCHANGE_RATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEOProjfuncCostRateDate",
+        "column": "PROJFUNC_COST_RATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEOProjfuncCostRateType",
+        "column": "PROJFUNC_COST_RATE_TYPE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEOProjfuncCurrencyCode",
+        "column": "PROJFUNC_CURRENCY_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEOProjfuncRateDateType",
+        "column": "PROJFUNC_RATE_DATE_TYPE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEOProjfuncRawCost",
+        "column": "PROJFUNC_RAW_COST",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEOProjfuncTpExchangeRate",
+        "column": "PROJFUNC_TP_EXCHANGE_RATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEOProjfuncTpRateDate",
+        "column": "PROJFUNC_TP_RATE_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEOProjfuncTpRateType",
+        "column": "PROJFUNC_TP_RATE_TYPE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEOProjfuncTransferPrice",
+        "column": "PROJFUNC_TRANSFER_PRICE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEOPrvdrAccrualDate",
+        "column": "PRVDR_ACCRUAL_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEOPrvdrLegalEntityId",
+        "column": "PRVDR_LEGAL_ENTITY_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEOQuantity",
+        "column": "QUANTITY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEORawCostRate",
+        "column": "RAW_COST_RATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEORbsElementId",
+        "column": "RBS_ELEMENT_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEOReceiptCurrencyAmount",
+        "column": "RECEIPT_CURRENCY_AMOUNT",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEOReceiptCurrencyCode",
+        "column": "RECEIPT_CURRENCY_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEOReceiptExchangeRate",
+        "column": "RECEIPT_EXCHANGE_RATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEORecvrAccrualDate",
+        "column": "RECVR_ACCRUAL_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEORecvrOrgId",
+        "column": "RECVR_ORG_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEOReferenceId1",
+        "column": "REFERENCE_ID1",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEORequestId",
+        "column": "REQUEST_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEOReservedAttribute1",
+        "column": "RESERVED_ATTRIBUTE1",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEOReservedAttribute10",
+        "column": "RESERVED_ATTRIBUTE10",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEOReservedAttribute2",
+        "column": "RESERVED_ATTRIBUTE2",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEOReservedAttribute3",
+        "column": "RESERVED_ATTRIBUTE3",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEOReservedAttribute4",
+        "column": "RESERVED_ATTRIBUTE4",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEOReservedAttribute5",
+        "column": "RESERVED_ATTRIBUTE5",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEOReservedAttribute6",
+        "column": "RESERVED_ATTRIBUTE6",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEOReservedAttribute7",
+        "column": "RESERVED_ATTRIBUTE7",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEOReservedAttribute8",
+        "column": "RESERVED_ATTRIBUTE8",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEOReservedAttribute9",
+        "column": "RESERVED_ATTRIBUTE9",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEORevExcludeFlag",
+        "column": "REV_EXCLUDE_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEORevenueExceptionFlag",
+        "column": "REVENUE_EXCEPTION_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEORevenueHoldFlag",
+        "column": "REVENUE_HOLD_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEORevenueRecogPercentage",
+        "column": "REVENUE_RECOG_PERCENTAGE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEORevenueRecognizedFlag",
+        "column": "REVENUE_RECOGNIZED_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEOSourceExpenditureItemId",
+        "column": "SOURCE_EXPENDITURE_ITEM_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEOSrcSystemLinkageFunction",
+        "column": "SRC_SYSTEM_LINKAGE_FUNCTION",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEOSystemLinkageFunction",
+        "column": "SYSTEM_LINKAGE_FUNCTION",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEOTaskId",
+        "column": "TASK_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEOTpAmtTypeCode",
+        "column": "TP_AMT_TYPE_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEOTpBaseAmount",
+        "column": "TP_BASE_AMOUNT",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEOTpBillMarkupPercentage",
+        "column": "TP_BILL_MARKUP_PERCENTAGE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEOTpBillRate",
+        "column": "TP_BILL_RATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEOTpIndCompiledSetId",
+        "column": "TP_IND_COMPILED_SET_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEOTpJobId",
+        "column": "TP_JOB_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEOTpRulePercentage",
+        "column": "TP_RULE_PERCENTAGE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEOTpScheduleLinePercentage",
+        "column": "TP_SCHEDULE_LINE_PERCENTAGE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEOTransactionSourceId",
+        "column": "TRANSACTION_SOURCE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEOTransferredFromExpItemId",
+        "column": "TRANSFERRED_FROM_EXP_ITEM_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEOTxnAccumHeaderId",
+        "column": "TXN_ACCUM_HEADER_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEOUnitOfMeasure",
+        "column": "UNIT_OF_MEASURE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEOUserDefAttribute1",
+        "column": "USER_DEF_ATTRIBUTE1",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEOUserDefAttribute10",
+        "column": "USER_DEF_ATTRIBUTE10",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEOUserDefAttribute2",
+        "column": "USER_DEF_ATTRIBUTE2",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEOUserDefAttribute3",
+        "column": "USER_DEF_ATTRIBUTE3",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEOUserDefAttribute4",
+        "column": "USER_DEF_ATTRIBUTE4",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEOUserDefAttribute5",
+        "column": "USER_DEF_ATTRIBUTE5",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEOUserDefAttribute6",
+        "column": "USER_DEF_ATTRIBUTE6",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEOUserDefAttribute7",
+        "column": "USER_DEF_ATTRIBUTE7",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEOUserDefAttribute8",
+        "column": "USER_DEF_ATTRIBUTE8",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEOUserDefAttribute9",
+        "column": "USER_DEF_ATTRIBUTE9",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEOVendorId",
+        "column": "VENDOR_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureItemPEOWorkTypeId",
+        "column": "WORK_TYPE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "SourceTxnQuantity",
+        "column": "SOURCE_TXN_QUANTITY",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "WIS_EQUIPMENT_INSTANCES": [
+      {
+        "attribute": "EquipmentInstancePEOEquipmentInstanceId",
+        "column": "EQUIPMENT_INSTANCE_ID",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "FUN_ALL_BUSINESS_UNITS_V": [
+      {
+        "attribute": "ExpProjectBusinessUnitPEOBusinessUnitId",
+        "column": "BU_ID",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "WIS_LABOR_INSTANCES": [
+      {
+        "attribute": "LaborInstancePEOLaborInstanceId",
+        "column": "LABOR_INSTANCE_ID",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "XLE_ENTITY_PROFILES": [
+      {
+        "attribute": "LegalEntityPEOLegalEntityId",
+        "column": "LEGAL_ENTITY_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "LegalEntityPEOName",
+        "column": "NAME",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "LegalEntityPEOObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "PJC_PRJ_ASSET_LN_DETS": [
+      {
+        "attribute": "ProjAssetLineDtlUniqId",
+        "column": "PROJ_ASSET_LINE_DTL_UNIQ_ID",
+        "bicc": true,
+        "pk": true
+      },
+      {
+        "attribute": "ProjectAssetLineDetailPEOCipCost",
+        "column": "CIP_COST",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectAssetLineDetailPEOCreatedBy",
+        "column": "CREATED_BY",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectAssetLineDetailPEOCreationDate",
+        "column": "CREATION_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectAssetLineDetailPEOExpenditureItemId",
+        "column": "EXPENDITURE_ITEM_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectAssetLineDetailPEOJobDefinitionName",
+        "column": "JOB_DEFINITION_NAME",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectAssetLineDetailPEOJobDefinitionPackage",
+        "column": "JOB_DEFINITION_PACKAGE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectAssetLineDetailPEOLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectAssetLineDetailPEOLastUpdateLogin",
+        "column": "LAST_UPDATE_LOGIN",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectAssetLineDetailPEOLastUpdatedBy",
+        "column": "LAST_UPDATED_BY",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectAssetLineDetailPEOLineNum",
+        "column": "LINE_NUM",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectAssetLineDetailPEOObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectAssetLineDetailPEOProjectAssetLineDetailId",
+        "column": "PROJECT_ASSET_LINE_DETAIL_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectAssetLineDetailPEORequestId",
+        "column": "REQUEST_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectAssetLineDetailPEOReversedFlag",
+        "column": "REVERSED_FLAG",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "PJC_PRJ_ASSET_LNS_ALL": [
+      {
+        "attribute": "ProjectAssetLinePEOAmortizeFlag",
+        "column": "AMORTIZE_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectAssetLinePEOApDistributionLineNumber",
+        "column": "AP_DISTRIBUTION_LINE_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectAssetLinePEOAssetCategoryId",
+        "column": "ASSET_CATEGORY_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectAssetLinePEOAssetCostCcid",
+        "column": "ASSET_COST_CCID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectAssetLinePEOCapitalEventId",
+        "column": "CAPITAL_EVENT_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectAssetLinePEOCipCcid",
+        "column": "CIP_CCID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectAssetLinePEOCreatedBy",
+        "column": "CREATED_BY",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectAssetLinePEOCreationDate",
+        "column": "CREATION_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectAssetLinePEOCurrentAssetCost",
+        "column": "CURRENT_ASSET_COST",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectAssetLinePEODescription",
+        "column": "DESCRIPTION",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectAssetLinePEOFaPeriodName",
+        "column": "FA_PERIOD_NAME",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectAssetLinePEOGlDate",
+        "column": "GL_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectAssetLinePEOInvoiceCreatedBy",
+        "column": "INVOICE_CREATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectAssetLinePEOInvoiceDate",
+        "column": "INVOICE_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectAssetLinePEOInvoiceDistributionId",
+        "column": "INVOICE_DISTRIBUTION_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectAssetLinePEOInvoiceId",
+        "column": "INVOICE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectAssetLinePEOInvoiceLineNumber",
+        "column": "INVOICE_LINE_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectAssetLinePEOInvoiceNumber",
+        "column": "INVOICE_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectAssetLinePEOInvoiceUpdatedBy",
+        "column": "INVOICE_UPDATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectAssetLinePEOJobDefinitionName",
+        "column": "JOB_DEFINITION_NAME",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectAssetLinePEOJobDefinitionPackage",
+        "column": "JOB_DEFINITION_PACKAGE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectAssetLinePEOLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectAssetLinePEOLastUpdateLogin",
+        "column": "LAST_UPDATE_LOGIN",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectAssetLinePEOLastUpdatedBy",
+        "column": "LAST_UPDATED_BY",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectAssetLinePEOLineType",
+        "column": "LINE_TYPE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectAssetLinePEONewMasterFlag",
+        "column": "NEW_MASTER_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectAssetLinePEOObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectAssetLinePEOOrgId",
+        "column": "ORG_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectAssetLinePEOOriginalAssetCost",
+        "column": "ORIGINAL_ASSET_COST",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectAssetLinePEOOriginalAssetId",
+        "column": "ORIGINAL_ASSET_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectAssetLinePEOPayablesBatchName",
+        "column": "PAYABLES_BATCH_NAME",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectAssetLinePEOPoNumber",
+        "column": "PO_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectAssetLinePEOPoVendorId",
+        "column": "PO_VENDOR_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectAssetLinePEOProjectAssetId",
+        "column": "PROJECT_ASSET_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectAssetLinePEOProjectAssetLineDetailId",
+        "column": "PROJECT_ASSET_LINE_DETAIL_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectAssetLinePEOProjectAssetLineId",
+        "column": "PROJECT_ASSET_LINE_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectAssetLinePEOProjectId",
+        "column": "PROJECT_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectAssetLinePEORequestId",
+        "column": "REQUEST_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectAssetLinePEORetAdjustmentTxnId",
+        "column": "RET_ADJUSTMENT_TXN_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectAssetLinePEORetirementCostType",
+        "column": "RETIREMENT_COST_TYPE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectAssetLinePEORevFromProjAssetLineId",
+        "column": "REV_FROM_PROJ_ASSET_LINE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectAssetLinePEORevProjAssetLineId",
+        "column": "REV_PROJ_ASSET_LINE_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectAssetLinePEOTaskId",
+        "column": "TASK_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectAssetLinePEOTransferRejectionReason",
+        "column": "TRANSFER_REJECTION_REASON",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectAssetLinePEOTransferStatusCode",
+        "column": "TRANSFER_STATUS_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectAssetLinePEOVendorNumber",
+        "column": "VENDOR_NUMBER",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "PJC_COST_DIST_LINES_ALL": [
+      {
+        "attribute": "ProjectCostDistributionPEOAccountingStatusCode",
+        "column": "ACCOUNTING_STATUS_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectCostDistributionPEOAcctBurdenedCost",
+        "column": "ACCT_BURDENED_COST",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectCostDistributionPEOAcctCurrencyCode",
+        "column": "ACCT_CURRENCY_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectCostDistributionPEOAcctEventId",
+        "column": "ACCT_EVENT_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectCostDistributionPEOAcctExchangeRate",
+        "column": "ACCT_EXCHANGE_RATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectCostDistributionPEOAcctRateDate",
+        "column": "ACCT_RATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectCostDistributionPEOAcctRateType",
+        "column": "ACCT_RATE_TYPE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectCostDistributionPEOAcctRawCost",
+        "column": "ACCT_RAW_COST",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectCostDistributionPEOAcctSourceCode",
+        "column": "ACCT_SOURCE_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectCostDistributionPEOAccumulatedFlag",
+        "column": "ACCUMULATED_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectCostDistributionPEOBillableFlag",
+        "column": "BILLABLE_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectCostDistributionPEOBudgetPeriodId",
+        "column": "BUDGET_PERIOD_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectCostDistributionPEOBudgetaryControlValStatus",
+        "column": "BUDGETARY_CONTROL_VAL_STATUS",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectCostDistributionPEOBurdenCostCrCcid",
+        "column": "BURDEN_COST_CR_CCID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectCostDistributionPEOBurdenCostDrCcid",
+        "column": "BURDEN_COST_DR_CCID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectCostDistributionPEOBurdenSumRejectionCode",
+        "column": "BURDEN_SUM_REJECTION_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectCostDistributionPEOBurdenSumSourceRunId",
+        "column": "BURDEN_SUM_SOURCE_RUN_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectCostDistributionPEOBurdenedCostCrCcid",
+        "column": "BURDENED_COST_CR_CCID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectCostDistributionPEOBurdenedCostDrCcid",
+        "column": "BURDENED_COST_DR_CCID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectCostDistributionPEOCapitalizableFlag",
+        "column": "CAPITALIZABLE_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectCostDistributionPEOCompDetailsId",
+        "column": "COMP_DETAILS_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectCostDistributionPEOCostScheduleId",
+        "column": "COST_SCHEDULE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectCostDistributionPEOCostScheduleLineId",
+        "column": "COST_SCHEDULE_LINE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectCostDistributionPEOCreatedBy",
+        "column": "CREATED_BY",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectCostDistributionPEOCreationDate",
+        "column": "CREATION_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectCostDistributionPEODenomBurdenedCost",
+        "column": "DENOM_BURDENED_COST",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectCostDistributionPEODenomCurrencyCode",
+        "column": "DENOM_CURRENCY_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectCostDistributionPEODenomRawCost",
+        "column": "DENOM_RAW_COST",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectCostDistributionPEOExpenditureItemId",
+        "column": "EXPENDITURE_ITEM_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectCostDistributionPEOIndCompiledSetId",
+        "column": "IND_COMPILED_SET_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectCostDistributionPEOInterfaceId",
+        "column": "INTERFACE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectCostDistributionPEOJobDefinitionName",
+        "column": "JOB_DEFINITION_NAME",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectCostDistributionPEOJobDefinitionPackage",
+        "column": "JOB_DEFINITION_PACKAGE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectCostDistributionPEOLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectCostDistributionPEOLastUpdateLogin",
+        "column": "LAST_UPDATE_LOGIN",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectCostDistributionPEOLastUpdatedBy",
+        "column": "LAST_UPDATED_BY",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectCostDistributionPEOLineNum",
+        "column": "LINE_NUM",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectCostDistributionPEOLineNumReversed",
+        "column": "LINE_NUM_REVERSED",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectCostDistributionPEOLineType",
+        "column": "LINE_TYPE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectCostDistributionPEONonLaborResourceId",
+        "column": "NON_LABOR_RESOURCE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectCostDistributionPEOObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectCostDistributionPEOOrgId",
+        "column": "ORG_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectCostDistributionPEOOrgLaborSchRuleId",
+        "column": "ORG_LABOR_SCH_RULE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectCostDistributionPEOOrigHistoricalFlag",
+        "column": "ORIG_HISTORICAL_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectCostDistributionPEOParentLineNum",
+        "column": "PARENT_LINE_NUM",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectCostDistributionPEOPjsSummaryId",
+        "column": "PJS_SUMMARY_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectCostDistributionPEOPrcGeneratedFlag",
+        "column": "PRC_GENERATED_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectCostDistributionPEOPrevIndCompiledSetId",
+        "column": "PREV_IND_COMPILED_SET_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectCostDistributionPEOProjectBurdenedCost",
+        "column": "PROJECT_BURDENED_COST",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectCostDistributionPEOProjectCurrencyCode",
+        "column": "PROJECT_CURRENCY_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectCostDistributionPEOProjectExchangeRate",
+        "column": "PROJECT_EXCHANGE_RATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectCostDistributionPEOProjectId",
+        "column": "PROJECT_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectCostDistributionPEOProjectRateDate",
+        "column": "PROJECT_RATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectCostDistributionPEOProjectRateType",
+        "column": "PROJECT_RATE_TYPE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectCostDistributionPEOProjectRawCost",
+        "column": "PROJECT_RAW_COST",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectCostDistributionPEOProjectUnitId",
+        "column": "PROJECT_UNIT_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectCostDistributionPEOProjfuncBurdenedCost",
+        "column": "PROJFUNC_BURDENED_COST",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectCostDistributionPEOProjfuncCostExchangeRate",
+        "column": "PROJFUNC_COST_EXCHANGE_RATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectCostDistributionPEOProjfuncCostRateDate",
+        "column": "PROJFUNC_COST_RATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectCostDistributionPEOProjfuncCostRateType",
+        "column": "PROJFUNC_COST_RATE_TYPE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectCostDistributionPEOProjfuncCurrencyCode",
+        "column": "PROJFUNC_CURRENCY_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectCostDistributionPEOProjfuncRawCost",
+        "column": "PROJFUNC_RAW_COST",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectCostDistributionPEOPrvdrGlDate",
+        "column": "PRVDR_GL_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectCostDistributionPEOPrvdrGlPeriodName",
+        "column": "PRVDR_GL_PERIOD_NAME",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectCostDistributionPEOPrvdrPaDate",
+        "column": "PRVDR_PA_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectCostDistributionPEOPrvdrPaPeriodName",
+        "column": "PRVDR_PA_PERIOD_NAME",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectCostDistributionPEOQuantity",
+        "column": "QUANTITY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectCostDistributionPEORawCostCrCcid",
+        "column": "RAW_COST_CR_CCID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectCostDistributionPEORawCostDrCcid",
+        "column": "RAW_COST_DR_CCID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectCostDistributionPEORawLineNumReversed",
+        "column": "RAW_LINE_NUM_REVERSED",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectCostDistributionPEORecvrGlDate",
+        "column": "RECVR_GL_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectCostDistributionPEORecvrGlPeriodName",
+        "column": "RECVR_GL_PERIOD_NAME",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectCostDistributionPEORecvrPaDate",
+        "column": "RECVR_PA_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectCostDistributionPEORecvrPaPeriodName",
+        "column": "RECVR_PA_PERIOD_NAME",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectCostDistributionPEORequestId",
+        "column": "REQUEST_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectCostDistributionPEOReversedFlag",
+        "column": "REVERSED_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectCostDistributionPEOSiAssetsAdditionFlag",
+        "column": "SI_ASSETS_ADDITION_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectCostDistributionPEOTaskId",
+        "column": "TASK_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectCostDistributionPEOTransferRejectionReason",
+        "column": "TRANSFER_REJECTION_REASON",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectCostDistributionPEOTransferStatusCode",
+        "column": "TRANSFER_STATUS_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectCostDistributionPEOTxnAccumHeaderId",
+        "column": "TXN_ACCUM_HEADER_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectCostDistributionPEOWorkTypeId",
+        "column": "WORK_TYPE_ID",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "PJC_EXP_COMMENTS": [
+      {
+        "attribute": "ProjectExpenditureCommentsPEOExpenditureComment",
+        "column": "EXPENDITURE_COMMENT",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureCommentsPEOExpenditureItemId",
+        "column": "EXPENDITURE_ITEM_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureCommentsPEOLineNumber",
+        "column": "LINE_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectExpenditureCommentsPEOObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "PJF_PROJECT_TYPES_B": [
+      {
+        "attribute": "ProjectTypeBasePEOCapitalCostTypeCode",
+        "column": "CAPITAL_COST_TYPE_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectTypeBasePEOEnableBillingFlag",
+        "column": "ENABLE_BILLING_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectTypeBasePEOEnableCapitalizationFlag",
+        "column": "ENABLE_CAPITALIZATION_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectTypeBasePEOProjectTypeId",
+        "column": "PROJECT_TYPE_ID",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "PJF_TXN_DOC_ENTRY_VL": [
+      {
+        "attribute": "TransactionDocEntryPEODocEntryCode",
+        "column": "DOC_ENTRY_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TransactionDocEntryPEODocEntryId",
+        "column": "DOC_ENTRY_ID",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "PJF_TXN_DOCUMENT_VL": [
+      {
+        "attribute": "TransactionDocumentPEODocumentCode",
+        "column": "DOCUMENT_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TransactionDocumentPEODocumentId",
+        "column": "DOCUMENT_ID",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "PJF_TXN_SOURCES_VL": [
+      {
+        "attribute": "TransactionSourcePEOObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TransactionSourcePEOTransactionSource",
+        "column": "TRANSACTION_SOURCE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TransactionSourcePEOTransactionSourceId",
+        "column": "TRANSACTION_SOURCE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TransactionSourcePEOUserTransactionSource",
+        "column": "USER_TRANSACTION_SOURCE",
+        "bicc": true,
+        "pk": false
+      }
+    ],
+    "WIS_RESOURCES_VL": [
+      {
+        "attribute": "WisResourcesPEOResourceId",
+        "column": "RESOURCE_ID",
+        "bicc": false,
+        "pk": false
+      }
+    ]
+  }
+}

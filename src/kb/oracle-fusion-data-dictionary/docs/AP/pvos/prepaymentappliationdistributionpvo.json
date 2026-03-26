@@ -1,0 +1,2801 @@
+{
+  "meta": {
+    "pvo_name": "PrepaymentAppliationDistributionPVO",
+    "full_path": "FscmTopModelAM.FinApInvTransactionsAM.PrepaymentAppliationDistributionPVO",
+    "module_path": "FscmTopModelAM.FinApInvTransactionsAM",
+    "module_code": "AP",
+    "type": "pvo",
+    "description": "Extrai as distribuições contábeis de aplicações de adiantamentos (prepayments) em faturas de fornecedores, incluindo valores aplicados, conta contábil, impostos e referências a pedidos de compra. Essencial para controle de adiantamentos, reconciliação contábil e conformidade fiscal."
+  },
+  "stats": {
+    "total_attributes": 192,
+    "tables_count": 30,
+    "bicc_enabled": 97,
+    "bicc_pct": 51,
+    "pk_count": 1
+  },
+  "tables": [
+    "AP_BATCHES_ALL",
+    "AP_DISTRIBUTION_SETS_ALL",
+    "AP_INVOICES_ALL",
+    "AP_INVOICE_DISTRIBUTIONS_ALL",
+    "AP_INVOICE_LINES_ALL",
+    "AP_INVOICE_PAYMENTS_ALL",
+    "AP_PREPAY_APP_DISTS",
+    "AP_RECON_DIFFERENCE_DETAILS",
+    "FA_BOOK_CONTROLS",
+    "GL_DAILY_CONVERSION_TYPES",
+    "GL_LEDGERS",
+    "HZ_LOCATIONS",
+    "HZ_PARTIES",
+    "HZ_PARTY_SITES",
+    "IBY_EXT_BANK_ACCOUNTS",
+    "IBY_PAYMENT_CODES_VL",
+    "PER_PERSON_NAMES_F_V",
+    "POZ_SUPPLIER_SITES_ALL_M",
+    "PO_DISTRIBUTIONS_ALL",
+    "PO_HEADERS_ALL",
+    "PO_LINES_ALL",
+    "PO_LINE_LOCATIONS_ALL",
+    "RCV_SHIPMENT_HEADERS",
+    "RCV_SHIPMENT_LINES",
+    "RCV_TRANSACTIONS",
+    "ZX_JURISDICTIONS_B",
+    "ZX_LINES_SUMMARY",
+    "ZX_RATES_VL",
+    "ZX_REC_NREC_DIST",
+    "ZX_REGIMES_B"
+  ],
+  "attributes": [
+    {
+      "name": "AwtRelDistInvoiceDistributionId",
+      "table": "AP_INVOICE_DISTRIBUTIONS_ALL",
+      "column": "INVOICE_DISTRIBUTION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AwtRelDistLastUpdateDate",
+      "table": "AP_INVOICE_DISTRIBUTIONS_ALL",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BookControlInvDistBookTypeCode",
+      "table": "FA_BOOK_CONTROLS",
+      "column": "BOOK_TYPE_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BookControlInvDistLastUpdateDate",
+      "table": "FA_BOOK_CONTROLS",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BookControlInvLineBookTypeCode",
+      "table": "FA_BOOK_CONTROLS",
+      "column": "BOOK_TYPE_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BookControlInvLineLastUpdateDate",
+      "table": "FA_BOOK_CONTROLS",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "DetailTaxDistLastUpdateDate",
+      "table": "ZX_REC_NREC_DIST",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "DetailTaxDistRecNrecTaxDistId",
+      "table": "ZX_REC_NREC_DIST",
+      "column": "REC_NREC_TAX_DIST_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "DistSumTaxLineLastUpdateDate",
+      "table": "ZX_LINES_SUMMARY",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "DistSumTaxLineSummaryTaxLineId",
+      "table": "ZX_LINES_SUMMARY",
+      "column": "SUMMARY_TAX_LINE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "DistconversionTypeConversionType",
+      "table": "GL_DAILY_CONVERSION_TYPES",
+      "column": "CONVERSION_TYPE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "DistconversionTypeLastUpdateDate",
+      "table": "GL_DAILY_CONVERSION_TYPES",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "DistributionSetDistributionSetId",
+      "table": "AP_DISTRIBUTION_SETS_ALL",
+      "column": "DISTRIBUTION_SET_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "DistributionSetLastUpdateDate",
+      "table": "AP_DISTRIBUTION_SETS_ALL",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "DistributionSetLineDistributionSetId",
+      "table": "AP_DISTRIBUTION_SETS_ALL",
+      "column": "DISTRIBUTION_SET_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "DistributionSetLineLastUpdateDate",
+      "table": "AP_DISTRIBUTION_SETS_ALL",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "FinalDischargeLocationAddress1",
+      "table": "HZ_LOCATIONS",
+      "column": "ADDRESS1",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "FinalDischargeLocationAddress2",
+      "table": "HZ_LOCATIONS",
+      "column": "ADDRESS2",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "FinalDischargeLocationAddress3",
+      "table": "HZ_LOCATIONS",
+      "column": "ADDRESS3",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "FinalDischargeLocationAddress4",
+      "table": "HZ_LOCATIONS",
+      "column": "ADDRESS4",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "FinalDischargeLocationCity",
+      "table": "HZ_LOCATIONS",
+      "column": "CITY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "FinalDischargeLocationLocationId1",
+      "table": "HZ_LOCATIONS",
+      "column": "LOCATION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "FinalDischargeLocationPostalCode",
+      "table": "HZ_LOCATIONS",
+      "column": "POSTAL_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "FinalDischargeLocationState",
+      "table": "HZ_LOCATIONS",
+      "column": "STATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvExtBnkAcctExtBankAccountId",
+      "table": "IBY_EXT_BANK_ACCOUNTS",
+      "column": "EXT_BANK_ACCOUNT_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvExtBnkAcctLastUpdateDate",
+      "table": "IBY_EXT_BANK_ACCOUNTS",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvParenRevIdInvoiceDistributionId",
+      "table": "AP_INVOICE_DISTRIBUTIONS_ALL",
+      "column": "INVOICE_DISTRIBUTION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvParenRevIdLastUpdateDate",
+      "table": "AP_INVOICE_DISTRIBUTIONS_ALL",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceBatchBatchId",
+      "table": "AP_BATCHES_ALL",
+      "column": "BATCH_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceBatchDistBatchId",
+      "table": "AP_BATCHES_ALL",
+      "column": "BATCH_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceBatchDistLastUpdateDate",
+      "table": "AP_BATCHES_ALL",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceBatchLastUpdateDate",
+      "table": "AP_BATCHES_ALL",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceDistributionAccountingDate",
+      "table": "AP_INVOICE_DISTRIBUTIONS_ALL",
+      "column": "ACCOUNTING_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceDistributionDistCodeCombinationId",
+      "table": "AP_INVOICE_DISTRIBUTIONS_ALL",
+      "column": "DIST_CODE_COMBINATION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceDistributionDistributionLineNumber",
+      "table": "AP_INVOICE_DISTRIBUTIONS_ALL",
+      "column": "DISTRIBUTION_LINE_NUMBER",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceDistributionInvoiceDistributionId",
+      "table": "AP_INVOICE_DISTRIBUTIONS_ALL",
+      "column": "INVOICE_DISTRIBUTION_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceDistributionInvoiceId",
+      "table": "AP_INVOICE_DISTRIBUTIONS_ALL",
+      "column": "INVOICE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceDistributionInvoiceLineNumber",
+      "table": "AP_INVOICE_DISTRIBUTIONS_ALL",
+      "column": "INVOICE_LINE_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceDistributionLastUpdateDate",
+      "table": "AP_INVOICE_DISTRIBUTIONS_ALL",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": true
+    },
+    {
+      "name": "InvoiceDistributionPostedFlag",
+      "table": "AP_INVOICE_DISTRIBUTIONS_ALL",
+      "column": "POSTED_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceDistributionPrepayDistAccountingDate",
+      "table": "AP_INVOICE_DISTRIBUTIONS_ALL",
+      "column": "ACCOUNTING_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceDistributionPrepayDistDistributionLineNumber",
+      "table": "AP_INVOICE_DISTRIBUTIONS_ALL",
+      "column": "DISTRIBUTION_LINE_NUMBER",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceDistributionPrepayDistInvoiceDistributionId",
+      "table": "AP_INVOICE_DISTRIBUTIONS_ALL",
+      "column": "INVOICE_DISTRIBUTION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceDistributionPrepayDistInvoiceLineNumber",
+      "table": "AP_INVOICE_DISTRIBUTIONS_ALL",
+      "column": "INVOICE_LINE_NUMBER",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceDistributionPrepayDistPostedFlag",
+      "table": "AP_INVOICE_DISTRIBUTIONS_ALL",
+      "column": "POSTED_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceDistributionPrepayDistributionId",
+      "table": "AP_INVOICE_DISTRIBUTIONS_ALL",
+      "column": "PREPAY_DISTRIBUTION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceDistributionPrepaymentInvoiceDistributionId",
+      "table": "AP_INVOICE_DISTRIBUTIONS_ALL",
+      "column": "INVOICE_DISTRIBUTION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceDistributionPrepaymentInvoiceId",
+      "table": "AP_INVOICE_DISTRIBUTIONS_ALL",
+      "column": "INVOICE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceHeaderAcctsPayCodeCombinationId",
+      "table": "AP_INVOICES_ALL",
+      "column": "ACCTS_PAY_CODE_COMBINATION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceHeaderInvoiceDate",
+      "table": "AP_INVOICES_ALL",
+      "column": "INVOICE_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceHeaderInvoiceId",
+      "table": "AP_INVOICES_ALL",
+      "column": "INVOICE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceHeaderInvoiceNum",
+      "table": "AP_INVOICES_ALL",
+      "column": "INVOICE_NUM",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceHeaderLastUpdateDate",
+      "table": "AP_INVOICES_ALL",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": true
+    },
+    {
+      "name": "InvoiceHeaderPrtInvInvoiceDate",
+      "table": "AP_INVOICES_ALL",
+      "column": "INVOICE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceHeaderPrtInvInvoiceId",
+      "table": "AP_INVOICES_ALL",
+      "column": "INVOICE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceHeaderSetOfBooksId",
+      "table": "AP_INVOICES_ALL",
+      "column": "SET_OF_BOOKS_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceLineAmount",
+      "table": "AP_INVOICE_LINES_ALL",
+      "column": "AMOUNT",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceLineBaseAmount",
+      "table": "AP_INVOICE_LINES_ALL",
+      "column": "BASE_AMOUNT",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceLineIncludedTaxAmount",
+      "table": "AP_INVOICE_LINES_ALL",
+      "column": "INCLUDED_TAX_AMOUNT",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceLineInvoiceId",
+      "table": "AP_INVOICE_LINES_ALL",
+      "column": "INVOICE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceLineInvoiceIncludesPrepayFlag",
+      "table": "AP_INVOICE_LINES_ALL",
+      "column": "INVOICE_INCLUDES_PREPAY_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceLineLastUpdateDate",
+      "table": "AP_INVOICE_LINES_ALL",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceLineLineNumber",
+      "table": "AP_INVOICE_LINES_ALL",
+      "column": "LINE_NUMBER",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceLineLineTypeLookupCode",
+      "table": "AP_INVOICE_LINES_ALL",
+      "column": "LINE_TYPE_LOOKUP_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceLinePrepayInvoiceId",
+      "table": "AP_INVOICE_LINES_ALL",
+      "column": "PREPAY_INVOICE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceLinePrepayLineNumber",
+      "table": "AP_INVOICE_LINES_ALL",
+      "column": "PREPAY_LINE_NUMBER",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LedgerInvDistChartOfAccountsId",
+      "table": "GL_LEDGERS",
+      "column": "CHART_OF_ACCOUNTS_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LedgerInvDistLedgerId",
+      "table": "GL_LEDGERS",
+      "column": "LEDGER_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PaidDisbursementScheduleInvoicePaymentId",
+      "table": "AP_INVOICE_PAYMENTS_ALL",
+      "column": "INVOICE_PAYMENT_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PaidDisbursementScheduleLastUpdateDate",
+      "table": "AP_INVOICE_PAYMENTS_ALL",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartyLastUpdateDate",
+      "table": "HZ_PARTIES",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartyPartyId",
+      "table": "HZ_PARTIES",
+      "column": "PARTY_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartyPartyName",
+      "table": "HZ_PARTIES",
+      "column": "PARTY_NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartySiteLastUpdateDate",
+      "table": "HZ_PARTY_SITES",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartySitePartySiteId",
+      "table": "HZ_PARTY_SITES",
+      "column": "PARTY_SITE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PayDelcodeLastUpdateDate",
+      "table": "IBY_PAYMENT_CODES_VL",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PayDelcodePaymentCode",
+      "table": "IBY_PAYMENT_CODES_VL",
+      "column": "PAYMENT_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PayDelcodePaymentCodeType",
+      "table": "IBY_PAYMENT_CODES_VL",
+      "column": "PAYMENT_CODE_TYPE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PayReacodeLastUpdateDate",
+      "table": "IBY_PAYMENT_CODES_VL",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PayReacodePaymentCode",
+      "table": "IBY_PAYMENT_CODES_VL",
+      "column": "PAYMENT_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PayReacodePaymentCodeType",
+      "table": "IBY_PAYMENT_CODES_VL",
+      "column": "PAYMENT_CODE_TYPE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonCreatedByDisplayName",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "DISPLAY_NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonCreatedByEffectiveEndDate",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "EFFECTIVE_END_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonCreatedByEffectiveStartDate",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "EFFECTIVE_START_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonCreatedByPersonNameId",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "PERSON_NAME_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonNameEffectiveEndDate",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "EFFECTIVE_END_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonNameEffectiveStartDate",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "EFFECTIVE_START_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonNamePersonNameId",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "PERSON_NAME_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonUpdatedByDisplayName",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "DISPLAY_NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonUpdatedByEffectiveEndDate2",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "EFFECTIVE_END_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonUpdatedByEffectiveStartDate2",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "EFFECTIVE_START_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonUpdatedByPersonNameId",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "PERSON_NAME_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PoDistributionLastUpdateDate",
+      "table": "PO_DISTRIBUTIONS_ALL",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PoDistributionPoDistributionId",
+      "table": "PO_DISTRIBUTIONS_ALL",
+      "column": "PO_DISTRIBUTION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PoHeaderLastUpdateDate",
+      "table": "PO_HEADERS_ALL",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PoHeaderPoHeaderId",
+      "table": "PO_HEADERS_ALL",
+      "column": "PO_HEADER_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PoLineLastUpdateDate",
+      "table": "PO_LINES_ALL",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PoLineLocLastUpdateDate",
+      "table": "PO_LINE_LOCATIONS_ALL",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PoLineLocLineLocationId",
+      "table": "PO_LINE_LOCATIONS_ALL",
+      "column": "LINE_LOCATION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PoLinePoLineId",
+      "table": "PO_LINES_ALL",
+      "column": "PO_LINE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PrepayAppDistId",
+      "table": "AP_PREPAY_APP_DISTS",
+      "column": "PREPAY_APP_DIST_ID",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    },
+    {
+      "name": "PrepayAwtRelDistDistributionLineNumber",
+      "table": "AP_INVOICE_DISTRIBUTIONS_ALL",
+      "column": "DISTRIBUTION_LINE_NUMBER",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PrepayAwtRelDistInvoiceDistributionId",
+      "table": "AP_INVOICE_DISTRIBUTIONS_ALL",
+      "column": "INVOICE_DISTRIBUTION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PrepayClrExchangeRateTypeConversionType",
+      "table": "GL_DAILY_CONVERSION_TYPES",
+      "column": "CONVERSION_TYPE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PrepayClrExchangeRateTypeLastUpdateDate",
+      "table": "GL_DAILY_CONVERSION_TYPES",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PrepayExchangeRateTypeConversionType",
+      "table": "GL_DAILY_CONVERSION_TYPES",
+      "column": "CONVERSION_TYPE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PrepayExchangeRateTypeLastUpdateDate",
+      "table": "GL_DAILY_CONVERSION_TYPES",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PrepayPayExchangeRateTypeConversionType",
+      "table": "GL_DAILY_CONVERSION_TYPES",
+      "column": "CONVERSION_TYPE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PrepayPayExchangeRateTypeLastUpdateDate",
+      "table": "GL_DAILY_CONVERSION_TYPES",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PrepaymentApplicationAccountingEventId",
+      "table": "AP_PREPAY_APP_DISTS",
+      "column": "ACCOUNTING_EVENT_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PrepaymentApplicationAmount",
+      "table": "AP_PREPAY_APP_DISTS",
+      "column": "AMOUNT",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PrepaymentApplicationAmountVariance",
+      "table": "AP_PREPAY_APP_DISTS",
+      "column": "AMOUNT_VARIANCE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PrepaymentApplicationAwtRelatedId",
+      "table": "AP_PREPAY_APP_DISTS",
+      "column": "AWT_RELATED_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PrepaymentApplicationBaseAmount",
+      "table": "AP_PREPAY_APP_DISTS",
+      "column": "BASE_AMOUNT",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PrepaymentApplicationBaseAmtAtPrepayClrXrate",
+      "table": "AP_PREPAY_APP_DISTS",
+      "column": "BASE_AMT_AT_PREPAY_CLR_XRATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PrepaymentApplicationBaseAmtAtPrepayPayXrate",
+      "table": "AP_PREPAY_APP_DISTS",
+      "column": "BASE_AMT_AT_PREPAY_PAY_XRATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PrepaymentApplicationBaseAmtAtPrepayXrate",
+      "table": "AP_PREPAY_APP_DISTS",
+      "column": "BASE_AMT_AT_PREPAY_XRATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PrepaymentApplicationBcEventId",
+      "table": "AP_PREPAY_APP_DISTS",
+      "column": "BC_EVENT_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PrepaymentApplicationCreatedBy",
+      "table": "AP_PREPAY_APP_DISTS",
+      "column": "CREATED_BY",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PrepaymentApplicationCreationDate",
+      "table": "AP_PREPAY_APP_DISTS",
+      "column": "CREATION_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PrepaymentApplicationInvoiceBaseAmtVariance",
+      "table": "AP_PREPAY_APP_DISTS",
+      "column": "INVOICE_BASE_AMT_VARIANCE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PrepaymentApplicationInvoiceBaseQtyVariance",
+      "table": "AP_PREPAY_APP_DISTS",
+      "column": "INVOICE_BASE_QTY_VARIANCE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PrepaymentApplicationInvoiceDistributionId",
+      "table": "AP_PREPAY_APP_DISTS",
+      "column": "INVOICE_DISTRIBUTION_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PrepaymentApplicationLastUpdateDate",
+      "table": "AP_PREPAY_APP_DISTS",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": true
+    },
+    {
+      "name": "PrepaymentApplicationLastUpdateLogin",
+      "table": "AP_PREPAY_APP_DISTS",
+      "column": "LAST_UPDATE_LOGIN",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PrepaymentApplicationLastUpdatedBy",
+      "table": "AP_PREPAY_APP_DISTS",
+      "column": "LAST_UPDATED_BY",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PrepaymentApplicationObjectVersionNumber",
+      "table": "AP_PREPAY_APP_DISTS",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PrepaymentApplicationPaAdditionFlag",
+      "table": "AP_PREPAY_APP_DISTS",
+      "column": "PA_ADDITION_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PrepaymentApplicationPrepayAppDistributionId",
+      "table": "AP_PREPAY_APP_DISTS",
+      "column": "PREPAY_APP_DISTRIBUTION_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PrepaymentApplicationPrepayClrExchangeDate",
+      "table": "AP_PREPAY_APP_DISTS",
+      "column": "PREPAY_CLR_EXCHANGE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PrepaymentApplicationPrepayClrExchangeRate",
+      "table": "AP_PREPAY_APP_DISTS",
+      "column": "PREPAY_CLR_EXCHANGE_RATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PrepaymentApplicationPrepayClrExchangeRateType",
+      "table": "AP_PREPAY_APP_DISTS",
+      "column": "PREPAY_CLR_EXCHANGE_RATE_TYPE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PrepaymentApplicationPrepayDistLookupCode",
+      "table": "AP_PREPAY_APP_DISTS",
+      "column": "PREPAY_DIST_LOOKUP_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PrepaymentApplicationPrepayExchangeDate",
+      "table": "AP_PREPAY_APP_DISTS",
+      "column": "PREPAY_EXCHANGE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PrepaymentApplicationPrepayExchangeRate",
+      "table": "AP_PREPAY_APP_DISTS",
+      "column": "PREPAY_EXCHANGE_RATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PrepaymentApplicationPrepayExchangeRateType",
+      "table": "AP_PREPAY_APP_DISTS",
+      "column": "PREPAY_EXCHANGE_RATE_TYPE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PrepaymentApplicationPrepayHistoryId",
+      "table": "AP_PREPAY_APP_DISTS",
+      "column": "PREPAY_HISTORY_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PrepaymentApplicationPrepayPayExchangeDate",
+      "table": "AP_PREPAY_APP_DISTS",
+      "column": "PREPAY_PAY_EXCHANGE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PrepaymentApplicationPrepayPayExchangeRate",
+      "table": "AP_PREPAY_APP_DISTS",
+      "column": "PREPAY_PAY_EXCHANGE_RATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PrepaymentApplicationPrepayPayExchangeRateType",
+      "table": "AP_PREPAY_APP_DISTS",
+      "column": "PREPAY_PAY_EXCHANGE_RATE_TYPE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PrepaymentApplicationProgramApplicationId",
+      "table": "AP_PREPAY_APP_DISTS",
+      "column": "PROGRAM_APPLICATION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PrepaymentApplicationProgramId",
+      "table": "AP_PREPAY_APP_DISTS",
+      "column": "PROGRAM_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PrepaymentApplicationProgramUpdateDate",
+      "table": "AP_PREPAY_APP_DISTS",
+      "column": "PROGRAM_UPDATE_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PrepaymentApplicationQuantityVariance",
+      "table": "AP_PREPAY_APP_DISTS",
+      "column": "QUANTITY_VARIANCE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PrepaymentApplicationReleaseInvDistDerivedFrom",
+      "table": "AP_PREPAY_APP_DISTS",
+      "column": "RELEASE_INV_DIST_DERIVED_FROM",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PrepaymentApplicationRequestId",
+      "table": "AP_PREPAY_APP_DISTS",
+      "column": "REQUEST_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PrepaymentApplicationReversedPrepayAppDistId",
+      "table": "AP_PREPAY_APP_DISTS",
+      "column": "REVERSED_PREPAY_APP_DIST_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PrepaymentApplicationRoundAmtAtPrepayClrXrate",
+      "table": "AP_PREPAY_APP_DISTS",
+      "column": "ROUND_AMT_AT_PREPAY_CLR_XRATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PrepaymentApplicationRoundAmtAtPrepayPayXrate",
+      "table": "AP_PREPAY_APP_DISTS",
+      "column": "ROUND_AMT_AT_PREPAY_PAY_XRATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PrepaymentApplicationRoundAmtAtPrepayXrate",
+      "table": "AP_PREPAY_APP_DISTS",
+      "column": "ROUND_AMT_AT_PREPAY_XRATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PrepaymentApplicationRoundingAmt",
+      "table": "AP_PREPAY_APP_DISTS",
+      "column": "ROUNDING_AMT",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchaseOrderDistLastUpdateDate",
+      "table": "PO_DISTRIBUTIONS_ALL",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchaseOrderDistPoDistributionId",
+      "table": "PO_DISTRIBUTIONS_ALL",
+      "column": "PO_DISTRIBUTION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchaseOrderLastUpdateDate",
+      "table": "PO_HEADERS_ALL",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchaseOrderPoHeaderId",
+      "table": "PO_HEADERS_ALL",
+      "column": "PO_HEADER_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PurchaseOrderSegment1",
+      "table": "PO_HEADERS_ALL",
+      "column": "SEGMENT1",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RcvShipHeaderInvDistLastUpdateDate",
+      "table": "RCV_SHIPMENT_HEADERS",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RcvShipHeaderInvDistRaDocLastUpdateDate",
+      "table": "RCV_SHIPMENT_HEADERS",
+      "column": "RA_DOC_LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RcvShipHeaderInvDistShipmentHeaderId",
+      "table": "RCV_SHIPMENT_HEADERS",
+      "column": "SHIPMENT_HEADER_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RcvShipHeaderInvLineLastUpdateDate",
+      "table": "RCV_SHIPMENT_HEADERS",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RcvShipHeaderInvLineRaDocLastUpdateDate",
+      "table": "RCV_SHIPMENT_HEADERS",
+      "column": "RA_DOC_LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RcvShipHeaderInvLineShipmentHeaderId",
+      "table": "RCV_SHIPMENT_HEADERS",
+      "column": "SHIPMENT_HEADER_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RcvShipLineLastUpdateDate",
+      "table": "RCV_SHIPMENT_LINES",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RcvShipLineRaDocLineLastUpdateDate",
+      "table": "RCV_SHIPMENT_LINES",
+      "column": "RA_DOC_LINE_LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RcvShipLineShipmentLineId",
+      "table": "RCV_SHIPMENT_LINES",
+      "column": "SHIPMENT_LINE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RcvTransInvDistLastUpdateDate",
+      "table": "RCV_TRANSACTIONS",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RcvTransInvDistTransactionId",
+      "table": "RCV_TRANSACTIONS",
+      "column": "TRANSACTION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RcvTransInvLineLastUpdateDate",
+      "table": "RCV_TRANSACTIONS",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RcvTransInvLineTransactionId",
+      "table": "RCV_TRANSACTIONS",
+      "column": "TRANSACTION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReconDiffAccountingDate",
+      "table": "AP_RECON_DIFFERENCE_DETAILS",
+      "column": "ACCOUNTING_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReconDiffCauseOfDifferenceCode",
+      "table": "AP_RECON_DIFFERENCE_DETAILS",
+      "column": "CAUSE_OF_DIFFERENCE_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReconDiffDocumentDistributionId",
+      "table": "AP_RECON_DIFFERENCE_DETAILS",
+      "column": "DOCUMENT_DISTRIBUTION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReconDiffDocumentId",
+      "table": "AP_RECON_DIFFERENCE_DETAILS",
+      "column": "DOCUMENT_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReconDiffLastUpdateDate",
+      "table": "AP_RECON_DIFFERENCE_DETAILS",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReconDiffReconItemCode",
+      "table": "AP_RECON_DIFFERENCE_DETAILS",
+      "column": "RECON_ITEM_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReconDiffReconTrxId",
+      "table": "AP_RECON_DIFFERENCE_DETAILS",
+      "column": "RECON_TRX_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReconDiffRequestId",
+      "table": "AP_RECON_DIFFERENCE_DETAILS",
+      "column": "REQUEST_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RelDistInvoiceDistributionId",
+      "table": "AP_INVOICE_DISTRIBUTIONS_ALL",
+      "column": "INVOICE_DISTRIBUTION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RelDistLastUpdateDate",
+      "table": "AP_INVOICE_DISTRIBUTIONS_ALL",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ShipFromLocationEffectiveStartDate",
+      "table": "POZ_SUPPLIER_SITES_ALL_M",
+      "column": "EFFECTIVE_START_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ShipFromLocationLastUpdateDate2",
+      "table": "POZ_SUPPLIER_SITES_ALL_M",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ShipFromLocationVendorSiteId",
+      "table": "POZ_SUPPLIER_SITES_ALL_M",
+      "column": "VENDOR_SITE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SumTaxLineLastUpdateDate",
+      "table": "ZX_LINES_SUMMARY",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SumTaxLineSummaryTaxLineId",
+      "table": "ZX_LINES_SUMMARY",
+      "column": "SUMMARY_TAX_LINE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TaxJurisLastUpdateDate",
+      "table": "ZX_JURISDICTIONS_B",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TaxJurisTaxJurisdictionCode",
+      "table": "ZX_JURISDICTIONS_B",
+      "column": "TAX_JURISDICTION_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TaxJurisTaxJurisdictionId",
+      "table": "ZX_JURISDICTIONS_B",
+      "column": "TAX_JURISDICTION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TaxRateLastUpdateDate",
+      "table": "ZX_RATES_VL",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TaxRateTaxRateId",
+      "table": "ZX_RATES_VL",
+      "column": "TAX_RATE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TaxRegimeLastUpdateDate",
+      "table": "ZX_REGIMES_B",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TaxRegimeTaxRegimeCode",
+      "table": "ZX_REGIMES_B",
+      "column": "TAX_REGIME_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TaxRegimeTaxRegimeId",
+      "table": "ZX_REGIMES_B",
+      "column": "TAX_REGIME_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    }
+  ],
+  "by_table": {
+    "AP_INVOICE_DISTRIBUTIONS_ALL": [
+      {
+        "attribute": "AwtRelDistInvoiceDistributionId",
+        "column": "INVOICE_DISTRIBUTION_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AwtRelDistLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "InvParenRevIdInvoiceDistributionId",
+        "column": "INVOICE_DISTRIBUTION_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InvParenRevIdLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceDistributionAccountingDate",
+        "column": "ACCOUNTING_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceDistributionDistCodeCombinationId",
+        "column": "DIST_CODE_COMBINATION_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceDistributionDistributionLineNumber",
+        "column": "DISTRIBUTION_LINE_NUMBER",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceDistributionInvoiceDistributionId",
+        "column": "INVOICE_DISTRIBUTION_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceDistributionInvoiceId",
+        "column": "INVOICE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceDistributionInvoiceLineNumber",
+        "column": "INVOICE_LINE_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceDistributionLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceDistributionPostedFlag",
+        "column": "POSTED_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceDistributionPrepayDistAccountingDate",
+        "column": "ACCOUNTING_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceDistributionPrepayDistDistributionLineNumber",
+        "column": "DISTRIBUTION_LINE_NUMBER",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceDistributionPrepayDistInvoiceDistributionId",
+        "column": "INVOICE_DISTRIBUTION_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceDistributionPrepayDistInvoiceLineNumber",
+        "column": "INVOICE_LINE_NUMBER",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceDistributionPrepayDistPostedFlag",
+        "column": "POSTED_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceDistributionPrepayDistributionId",
+        "column": "PREPAY_DISTRIBUTION_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceDistributionPrepaymentInvoiceDistributionId",
+        "column": "INVOICE_DISTRIBUTION_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceDistributionPrepaymentInvoiceId",
+        "column": "INVOICE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PrepayAwtRelDistDistributionLineNumber",
+        "column": "DISTRIBUTION_LINE_NUMBER",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PrepayAwtRelDistInvoiceDistributionId",
+        "column": "INVOICE_DISTRIBUTION_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "RelDistInvoiceDistributionId",
+        "column": "INVOICE_DISTRIBUTION_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "RelDistLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      }
+    ],
+    "FA_BOOK_CONTROLS": [
+      {
+        "attribute": "BookControlInvDistBookTypeCode",
+        "column": "BOOK_TYPE_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BookControlInvDistLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "BookControlInvLineBookTypeCode",
+        "column": "BOOK_TYPE_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BookControlInvLineLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      }
+    ],
+    "ZX_REC_NREC_DIST": [
+      {
+        "attribute": "DetailTaxDistLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "DetailTaxDistRecNrecTaxDistId",
+        "column": "REC_NREC_TAX_DIST_ID",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "ZX_LINES_SUMMARY": [
+      {
+        "attribute": "DistSumTaxLineLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "DistSumTaxLineSummaryTaxLineId",
+        "column": "SUMMARY_TAX_LINE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "SumTaxLineLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "SumTaxLineSummaryTaxLineId",
+        "column": "SUMMARY_TAX_LINE_ID",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "GL_DAILY_CONVERSION_TYPES": [
+      {
+        "attribute": "DistconversionTypeConversionType",
+        "column": "CONVERSION_TYPE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "DistconversionTypeLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PrepayClrExchangeRateTypeConversionType",
+        "column": "CONVERSION_TYPE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PrepayClrExchangeRateTypeLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PrepayExchangeRateTypeConversionType",
+        "column": "CONVERSION_TYPE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PrepayExchangeRateTypeLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PrepayPayExchangeRateTypeConversionType",
+        "column": "CONVERSION_TYPE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PrepayPayExchangeRateTypeLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      }
+    ],
+    "AP_DISTRIBUTION_SETS_ALL": [
+      {
+        "attribute": "DistributionSetDistributionSetId",
+        "column": "DISTRIBUTION_SET_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "DistributionSetLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "DistributionSetLineDistributionSetId",
+        "column": "DISTRIBUTION_SET_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "DistributionSetLineLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      }
+    ],
+    "HZ_LOCATIONS": [
+      {
+        "attribute": "FinalDischargeLocationAddress1",
+        "column": "ADDRESS1",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "FinalDischargeLocationAddress2",
+        "column": "ADDRESS2",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "FinalDischargeLocationAddress3",
+        "column": "ADDRESS3",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "FinalDischargeLocationAddress4",
+        "column": "ADDRESS4",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "FinalDischargeLocationCity",
+        "column": "CITY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "FinalDischargeLocationLocationId1",
+        "column": "LOCATION_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "FinalDischargeLocationPostalCode",
+        "column": "POSTAL_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "FinalDischargeLocationState",
+        "column": "STATE",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "IBY_EXT_BANK_ACCOUNTS": [
+      {
+        "attribute": "InvExtBnkAcctExtBankAccountId",
+        "column": "EXT_BANK_ACCOUNT_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InvExtBnkAcctLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      }
+    ],
+    "AP_BATCHES_ALL": [
+      {
+        "attribute": "InvoiceBatchBatchId",
+        "column": "BATCH_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceBatchDistBatchId",
+        "column": "BATCH_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceBatchDistLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceBatchLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      }
+    ],
+    "AP_INVOICES_ALL": [
+      {
+        "attribute": "InvoiceHeaderAcctsPayCodeCombinationId",
+        "column": "ACCTS_PAY_CODE_COMBINATION_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceHeaderInvoiceDate",
+        "column": "INVOICE_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceHeaderInvoiceId",
+        "column": "INVOICE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceHeaderInvoiceNum",
+        "column": "INVOICE_NUM",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceHeaderLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceHeaderPrtInvInvoiceDate",
+        "column": "INVOICE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceHeaderPrtInvInvoiceId",
+        "column": "INVOICE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceHeaderSetOfBooksId",
+        "column": "SET_OF_BOOKS_ID",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "AP_INVOICE_LINES_ALL": [
+      {
+        "attribute": "InvoiceLineAmount",
+        "column": "AMOUNT",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceLineBaseAmount",
+        "column": "BASE_AMOUNT",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceLineIncludedTaxAmount",
+        "column": "INCLUDED_TAX_AMOUNT",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceLineInvoiceId",
+        "column": "INVOICE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceLineInvoiceIncludesPrepayFlag",
+        "column": "INVOICE_INCLUDES_PREPAY_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceLineLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceLineLineNumber",
+        "column": "LINE_NUMBER",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceLineLineTypeLookupCode",
+        "column": "LINE_TYPE_LOOKUP_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceLinePrepayInvoiceId",
+        "column": "PREPAY_INVOICE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceLinePrepayLineNumber",
+        "column": "PREPAY_LINE_NUMBER",
+        "bicc": true,
+        "pk": false
+      }
+    ],
+    "GL_LEDGERS": [
+      {
+        "attribute": "LedgerInvDistChartOfAccountsId",
+        "column": "CHART_OF_ACCOUNTS_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "LedgerInvDistLedgerId",
+        "column": "LEDGER_ID",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "AP_INVOICE_PAYMENTS_ALL": [
+      {
+        "attribute": "PaidDisbursementScheduleInvoicePaymentId",
+        "column": "INVOICE_PAYMENT_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PaidDisbursementScheduleLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      }
+    ],
+    "HZ_PARTIES": [
+      {
+        "attribute": "PartyLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PartyPartyId",
+        "column": "PARTY_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PartyPartyName",
+        "column": "PARTY_NAME",
+        "bicc": true,
+        "pk": false
+      }
+    ],
+    "HZ_PARTY_SITES": [
+      {
+        "attribute": "PartySiteLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PartySitePartySiteId",
+        "column": "PARTY_SITE_ID",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "IBY_PAYMENT_CODES_VL": [
+      {
+        "attribute": "PayDelcodeLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PayDelcodePaymentCode",
+        "column": "PAYMENT_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PayDelcodePaymentCodeType",
+        "column": "PAYMENT_CODE_TYPE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PayReacodeLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PayReacodePaymentCode",
+        "column": "PAYMENT_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PayReacodePaymentCodeType",
+        "column": "PAYMENT_CODE_TYPE",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "PER_PERSON_NAMES_F_V": [
+      {
+        "attribute": "PersonCreatedByDisplayName",
+        "column": "DISPLAY_NAME",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PersonCreatedByEffectiveEndDate",
+        "column": "EFFECTIVE_END_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PersonCreatedByEffectiveStartDate",
+        "column": "EFFECTIVE_START_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PersonCreatedByPersonNameId",
+        "column": "PERSON_NAME_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PersonNameEffectiveEndDate",
+        "column": "EFFECTIVE_END_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PersonNameEffectiveStartDate",
+        "column": "EFFECTIVE_START_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PersonNamePersonNameId",
+        "column": "PERSON_NAME_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PersonUpdatedByDisplayName",
+        "column": "DISPLAY_NAME",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PersonUpdatedByEffectiveEndDate2",
+        "column": "EFFECTIVE_END_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PersonUpdatedByEffectiveStartDate2",
+        "column": "EFFECTIVE_START_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PersonUpdatedByPersonNameId",
+        "column": "PERSON_NAME_ID",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "PO_DISTRIBUTIONS_ALL": [
+      {
+        "attribute": "PoDistributionLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PoDistributionPoDistributionId",
+        "column": "PO_DISTRIBUTION_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PurchaseOrderDistLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PurchaseOrderDistPoDistributionId",
+        "column": "PO_DISTRIBUTION_ID",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "PO_HEADERS_ALL": [
+      {
+        "attribute": "PoHeaderLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PoHeaderPoHeaderId",
+        "column": "PO_HEADER_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PurchaseOrderLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PurchaseOrderPoHeaderId",
+        "column": "PO_HEADER_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PurchaseOrderSegment1",
+        "column": "SEGMENT1",
+        "bicc": true,
+        "pk": false
+      }
+    ],
+    "PO_LINES_ALL": [
+      {
+        "attribute": "PoLineLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PoLinePoLineId",
+        "column": "PO_LINE_ID",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "PO_LINE_LOCATIONS_ALL": [
+      {
+        "attribute": "PoLineLocLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PoLineLocLineLocationId",
+        "column": "LINE_LOCATION_ID",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "AP_PREPAY_APP_DISTS": [
+      {
+        "attribute": "PrepayAppDistId",
+        "column": "PREPAY_APP_DIST_ID",
+        "bicc": true,
+        "pk": true
+      },
+      {
+        "attribute": "PrepaymentApplicationAccountingEventId",
+        "column": "ACCOUNTING_EVENT_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PrepaymentApplicationAmount",
+        "column": "AMOUNT",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PrepaymentApplicationAmountVariance",
+        "column": "AMOUNT_VARIANCE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PrepaymentApplicationAwtRelatedId",
+        "column": "AWT_RELATED_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PrepaymentApplicationBaseAmount",
+        "column": "BASE_AMOUNT",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PrepaymentApplicationBaseAmtAtPrepayClrXrate",
+        "column": "BASE_AMT_AT_PREPAY_CLR_XRATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PrepaymentApplicationBaseAmtAtPrepayPayXrate",
+        "column": "BASE_AMT_AT_PREPAY_PAY_XRATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PrepaymentApplicationBaseAmtAtPrepayXrate",
+        "column": "BASE_AMT_AT_PREPAY_XRATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PrepaymentApplicationBcEventId",
+        "column": "BC_EVENT_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PrepaymentApplicationCreatedBy",
+        "column": "CREATED_BY",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PrepaymentApplicationCreationDate",
+        "column": "CREATION_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PrepaymentApplicationInvoiceBaseAmtVariance",
+        "column": "INVOICE_BASE_AMT_VARIANCE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PrepaymentApplicationInvoiceBaseQtyVariance",
+        "column": "INVOICE_BASE_QTY_VARIANCE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PrepaymentApplicationInvoiceDistributionId",
+        "column": "INVOICE_DISTRIBUTION_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PrepaymentApplicationLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PrepaymentApplicationLastUpdateLogin",
+        "column": "LAST_UPDATE_LOGIN",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PrepaymentApplicationLastUpdatedBy",
+        "column": "LAST_UPDATED_BY",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PrepaymentApplicationObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PrepaymentApplicationPaAdditionFlag",
+        "column": "PA_ADDITION_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PrepaymentApplicationPrepayAppDistributionId",
+        "column": "PREPAY_APP_DISTRIBUTION_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PrepaymentApplicationPrepayClrExchangeDate",
+        "column": "PREPAY_CLR_EXCHANGE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PrepaymentApplicationPrepayClrExchangeRate",
+        "column": "PREPAY_CLR_EXCHANGE_RATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PrepaymentApplicationPrepayClrExchangeRateType",
+        "column": "PREPAY_CLR_EXCHANGE_RATE_TYPE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PrepaymentApplicationPrepayDistLookupCode",
+        "column": "PREPAY_DIST_LOOKUP_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PrepaymentApplicationPrepayExchangeDate",
+        "column": "PREPAY_EXCHANGE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PrepaymentApplicationPrepayExchangeRate",
+        "column": "PREPAY_EXCHANGE_RATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PrepaymentApplicationPrepayExchangeRateType",
+        "column": "PREPAY_EXCHANGE_RATE_TYPE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PrepaymentApplicationPrepayHistoryId",
+        "column": "PREPAY_HISTORY_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PrepaymentApplicationPrepayPayExchangeDate",
+        "column": "PREPAY_PAY_EXCHANGE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PrepaymentApplicationPrepayPayExchangeRate",
+        "column": "PREPAY_PAY_EXCHANGE_RATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PrepaymentApplicationPrepayPayExchangeRateType",
+        "column": "PREPAY_PAY_EXCHANGE_RATE_TYPE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PrepaymentApplicationProgramApplicationId",
+        "column": "PROGRAM_APPLICATION_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PrepaymentApplicationProgramId",
+        "column": "PROGRAM_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PrepaymentApplicationProgramUpdateDate",
+        "column": "PROGRAM_UPDATE_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PrepaymentApplicationQuantityVariance",
+        "column": "QUANTITY_VARIANCE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PrepaymentApplicationReleaseInvDistDerivedFrom",
+        "column": "RELEASE_INV_DIST_DERIVED_FROM",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PrepaymentApplicationRequestId",
+        "column": "REQUEST_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PrepaymentApplicationReversedPrepayAppDistId",
+        "column": "REVERSED_PREPAY_APP_DIST_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PrepaymentApplicationRoundAmtAtPrepayClrXrate",
+        "column": "ROUND_AMT_AT_PREPAY_CLR_XRATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PrepaymentApplicationRoundAmtAtPrepayPayXrate",
+        "column": "ROUND_AMT_AT_PREPAY_PAY_XRATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PrepaymentApplicationRoundAmtAtPrepayXrate",
+        "column": "ROUND_AMT_AT_PREPAY_XRATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PrepaymentApplicationRoundingAmt",
+        "column": "ROUNDING_AMT",
+        "bicc": true,
+        "pk": false
+      }
+    ],
+    "RCV_SHIPMENT_HEADERS": [
+      {
+        "attribute": "RcvShipHeaderInvDistLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "RcvShipHeaderInvDistRaDocLastUpdateDate",
+        "column": "RA_DOC_LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "RcvShipHeaderInvDistShipmentHeaderId",
+        "column": "SHIPMENT_HEADER_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "RcvShipHeaderInvLineLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "RcvShipHeaderInvLineRaDocLastUpdateDate",
+        "column": "RA_DOC_LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "RcvShipHeaderInvLineShipmentHeaderId",
+        "column": "SHIPMENT_HEADER_ID",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "RCV_SHIPMENT_LINES": [
+      {
+        "attribute": "RcvShipLineLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "RcvShipLineRaDocLineLastUpdateDate",
+        "column": "RA_DOC_LINE_LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "RcvShipLineShipmentLineId",
+        "column": "SHIPMENT_LINE_ID",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "RCV_TRANSACTIONS": [
+      {
+        "attribute": "RcvTransInvDistLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "RcvTransInvDistTransactionId",
+        "column": "TRANSACTION_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "RcvTransInvLineLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "RcvTransInvLineTransactionId",
+        "column": "TRANSACTION_ID",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "AP_RECON_DIFFERENCE_DETAILS": [
+      {
+        "attribute": "ReconDiffAccountingDate",
+        "column": "ACCOUNTING_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReconDiffCauseOfDifferenceCode",
+        "column": "CAUSE_OF_DIFFERENCE_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReconDiffDocumentDistributionId",
+        "column": "DOCUMENT_DISTRIBUTION_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReconDiffDocumentId",
+        "column": "DOCUMENT_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReconDiffLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReconDiffReconItemCode",
+        "column": "RECON_ITEM_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReconDiffReconTrxId",
+        "column": "RECON_TRX_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReconDiffRequestId",
+        "column": "REQUEST_ID",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "POZ_SUPPLIER_SITES_ALL_M": [
+      {
+        "attribute": "ShipFromLocationEffectiveStartDate",
+        "column": "EFFECTIVE_START_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ShipFromLocationLastUpdateDate2",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ShipFromLocationVendorSiteId",
+        "column": "VENDOR_SITE_ID",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "ZX_JURISDICTIONS_B": [
+      {
+        "attribute": "TaxJurisLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TaxJurisTaxJurisdictionCode",
+        "column": "TAX_JURISDICTION_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TaxJurisTaxJurisdictionId",
+        "column": "TAX_JURISDICTION_ID",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "ZX_RATES_VL": [
+      {
+        "attribute": "TaxRateLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TaxRateTaxRateId",
+        "column": "TAX_RATE_ID",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "ZX_REGIMES_B": [
+      {
+        "attribute": "TaxRegimeLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TaxRegimeTaxRegimeCode",
+        "column": "TAX_REGIME_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TaxRegimeTaxRegimeId",
+        "column": "TAX_REGIME_ID",
+        "bicc": false,
+        "pk": false
+      }
+    ]
+  }
+}

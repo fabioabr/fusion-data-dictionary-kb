@@ -1,0 +1,155 @@
+{
+  "meta": {
+    "pvo_name": "QuestionnaireQuestionSubscriberPVO",
+    "full_path": "HcmTopModelAnalyticsGlobalAM.QuestionnaireAM.QuestionnaireQuestionSubscriberPVO",
+    "module_path": "HcmTopModelAnalyticsGlobalAM.QuestionnaireAM",
+    "module_code": "HCM",
+    "type": "pvo",
+    "description": "Extrai assinantes (subscribers) de questionários com traduções. Define quais módulos ou processos consomem os resultados de questionários específicos."
+  },
+  "stats": {
+    "total_attributes": 9,
+    "tables_count": 2,
+    "bicc_enabled": 8,
+    "bicc_pct": 89,
+    "pk_count": 5
+  },
+  "tables": [
+    "HRQ_SUBSCRIBERS_B",
+    "HRQ_SUBSCRIBERS_TL"
+  ],
+  "attributes": [
+    {
+      "name": "SubscriberBPEOBusinessGroupId",
+      "table": "HRQ_SUBSCRIBERS_B",
+      "column": "BUSINESS_GROUP_ID",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    },
+    {
+      "name": "SubscriberBPEOLastUpdateDate",
+      "table": "HRQ_SUBSCRIBERS_B",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": true
+    },
+    {
+      "name": "SubscriberBPEOSubscriberCode",
+      "table": "HRQ_SUBSCRIBERS_B",
+      "column": "SUBSCRIBER_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SubscriberBPEOSubscriberId",
+      "table": "HRQ_SUBSCRIBERS_B",
+      "column": "SUBSCRIBER_ID",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    },
+    {
+      "name": "SubscriberTranslationPEOBusinessGroupId",
+      "table": "HRQ_SUBSCRIBERS_TL",
+      "column": "BUSINESS_GROUP_ID",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    },
+    {
+      "name": "SubscriberTranslationPEOLanguage",
+      "table": "HRQ_SUBSCRIBERS_TL",
+      "column": "LANGUAGE",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    },
+    {
+      "name": "SubscriberTranslationPEOLastUpdateDate",
+      "table": "HRQ_SUBSCRIBERS_TL",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": true
+    },
+    {
+      "name": "SubscriberTranslationPEOName",
+      "table": "HRQ_SUBSCRIBERS_TL",
+      "column": "NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SubscriberTranslationPEOSubscriberId",
+      "table": "HRQ_SUBSCRIBERS_TL",
+      "column": "SUBSCRIBER_ID",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    }
+  ],
+  "by_table": {
+    "HRQ_SUBSCRIBERS_B": [
+      {
+        "attribute": "SubscriberBPEOBusinessGroupId",
+        "column": "BUSINESS_GROUP_ID",
+        "bicc": true,
+        "pk": true
+      },
+      {
+        "attribute": "SubscriberBPEOLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "SubscriberBPEOSubscriberCode",
+        "column": "SUBSCRIBER_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "SubscriberBPEOSubscriberId",
+        "column": "SUBSCRIBER_ID",
+        "bicc": true,
+        "pk": true
+      }
+    ],
+    "HRQ_SUBSCRIBERS_TL": [
+      {
+        "attribute": "SubscriberTranslationPEOBusinessGroupId",
+        "column": "BUSINESS_GROUP_ID",
+        "bicc": true,
+        "pk": true
+      },
+      {
+        "attribute": "SubscriberTranslationPEOLanguage",
+        "column": "LANGUAGE",
+        "bicc": true,
+        "pk": true
+      },
+      {
+        "attribute": "SubscriberTranslationPEOLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "SubscriberTranslationPEOName",
+        "column": "NAME",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "SubscriberTranslationPEOSubscriberId",
+        "column": "SUBSCRIBER_ID",
+        "bicc": true,
+        "pk": true
+      }
+    ]
+  }
+}

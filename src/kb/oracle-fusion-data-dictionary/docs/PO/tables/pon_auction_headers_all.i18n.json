@@ -1,0 +1,601 @@
+{
+  "source": "pon_auction_headers_all.md",
+  "source_hash": "a5d038576bb4029a715be6a30f077507",
+  "translated_at": "2026-03-26",
+  "items": [
+    {
+      "id": 1,
+      "br": "Visão Geral",
+      "en": "Overview",
+      "es": "Vision General"
+    },
+    {
+      "id": 2,
+      "br": "Armazena os cabeçalhos de todas as negociações do módulo Oracle Sourcing. É a tabela central do Sourcing, contendo informações de alto nível de cada negociação (RFQ, RFI, Auction, Reverse Auction, Blanket Agreement, etc.) — tipo, status, datas, regras de lances, moeda, comprador responsável e parâmetros de configuração.",
+      "en": "Stores the headers of all Oracle Sourcing module transactions. It is the central table for Sourcing, containing high-level information for each transaction (RFQ, RFI, Auction, Reverse Auction, Blanket Agreement, etc.) – type, status, dates, bidding rules, currency, responsible buyer, and configuration parameters.",
+      "es": "Almacena los encabezados de todas las transacciones del módulo Oracle Sourcing. Es la tabla central de Sourcing, que contiene información de alto nivel de cada transacción (RFQ, RFI, Auction, Reverse Auction, Acuerdo por volumen, etc.) – tipo, estado, fechas, reglas de puja, moneda, comprador responsable y parámetros de configuración."
+    },
+    {
+      "id": 3,
+      "br": "Sufixo _ALL",
+      "en": "Suffix _ALL",
+      "es": "Sufijo _ALL"
+    },
+    {
+      "id": 4,
+      "br": "O sufixo _ALL indica que a tabela armazena dados de todas as business units (multi-org). O filtro por ORG_ID é necessário para consultas por organização específica.",
+      "en": "The suffix _ALL indicates that the table stores data for all business units (multi-org). Filtering by ORG_ID is necessary for queries by specific organization.",
+      "es": "El sufijo _ALL indica que la tabla almacena datos de todas las unidades de negocio (multi-org). Se requiere el filtro por ORG_ID para consultas por organización específica."
+    },
+    {
+      "id": 5,
+      "br": "Propósito de Negócio",
+      "en": "Business Purpose",
+      "es": "Proposito de Negocio"
+    },
+    {
+      "id": 6,
+      "br": "Esta tabela é utilizada nos seguintes processos:",
+      "en": "This table is used in the following processes:",
+      "es": "Esta tabla se utiliza en los siguientes procesos:"
+    },
+    {
+      "id": 7,
+      "br": "Tabela mestra que centraliza todas as negociações de Sourcing.",
+      "en": "Master table that centralizes all Sourcing transactions.",
+      "es": "Tabla maestra que centraliza todas las transacciones de Sourcing."
+    },
+    {
+      "id": 8,
+      "br": "Status e datas que governam abertura, fechamento, award e cancelamento.",
+      "en": "Status and dates that govern opening, closing, award, and cancellation.",
+      "es": "Estado y fechas que rigen la apertura, el cierre, la adjudicación y la cancelación."
+    },
+    {
+      "id": 9,
+      "br": "Configuração de decrement mínimo, auto-extend, sealed bidding, etc.",
+      "en": "Configuration of minimum decrement, auto-extend, sealed bidding, etc.",
+      "es": "Configuración de decremento mínimo, auto-extensión, puja cerrada, etc."
+    },
+    {
+      "id": 10,
+      "br": "KPIs de volume, savings, tempo de ciclo e participação de fornecedores.",
+      "en": "KPIs for volume, savings, cycle time, and supplier participation.",
+      "es": "KPIs de volumen, ahorros, tiempo de ciclo y participación de proveedores."
+    },
+    {
+      "id": 11,
+      "br": "Após award, os dados fluem para criação de Purchase Orders ou Blanket Agreements.",
+      "en": "After award, data flows to Purchase Order or Blanket Agreement creation.",
+      "es": "Después de la adjudicación, los datos fluyen para la creación de Órdenes de Compra o Acuerdos por Volumen."
+    },
+    {
+      "id": 12,
+      "br": "Auditoria de quem criou, quando publicou, e qual o outcome de cada negociação.",
+      "en": "Audit of who created, when published, and the outcome of each transaction.",
+      "es": "Auditoría de quién creó, cuándo se publicó y cuál es el resultado de cada transacción."
+    },
+    {
+      "id": 13,
+      "br": "Colunas Principais",
+      "en": "Key Columns",
+      "es": "Columnas Principales"
+    },
+    {
+      "id": 14,
+      "br": "Confiança",
+      "en": "Confidence",
+      "es": "Confianza"
+    },
+    {
+      "id": 15,
+      "br": "Escala de 0% a 100% — grau de certeza da descrição gerada por IA com base na documentação oficial Oracle (OEDMF/BICC Release 13/25A).",
+      "en": "Scale from 0% to 100% — degree of certainty of the AI-generated description based on official Oracle documentation (OEDMF/BICC Release 13/25A).",
+      "es": "Escala de 0% a 100% — grado de certeza de la descripcion generada por IA basada en la documentacion oficial de Oracle (OEDMF/BICC Release 13/25A)."
+    },
+    {
+      "id": 16,
+      "br": "- 🟢 81–100% — Coluna presente na documentação oficial Oracle; nome, tipo e descrição confirmados.",
+      "en": "- 🟢 81–100% — Column present in official Oracle documentation; name, type, and description confirmed.",
+      "es": "- 🟢 81–100% — Columna presente en la documentacion oficial de Oracle; nombre, tipo y descripcion confirmados."
+    },
+    {
+      "id": 17,
+      "br": "- 🟡 51–80% — Coluna inferida por naming convention ou padrão Oracle; tipo exato pode variar.",
+      "en": "- 🟡 51–80% — Column inferred by naming convention or Oracle standard; exact type may vary.",
+      "es": "- 🟡 51–80% — Columna inferida por convencion de nombres o estandar Oracle; el tipo exacto puede variar."
+    },
+    {
+      "id": 18,
+      "br": "- 🔴 0–50% — Existência ou tipo incertos; pode não existir no release atual; validar no ambiente.",
+      "en": "- 🔴 0–50% — Uncertain existence or type; may not exist in current release; validate in environment.",
+      "es": "- 🔴 0–50% — Existencia o tipo inciertos; puede no existir en el release actual; validar en el ambiente."
+    },
+    {
+      "id": 19,
+      "br": "Coluna",
+      "en": "Column",
+      "es": "Columna"
+    },
+    {
+      "id": 20,
+      "br": "Tipo",
+      "en": "Type",
+      "es": "Tipo"
+    },
+    {
+      "id": 21,
+      "br": "Nulo?",
+      "en": "Nullable?",
+      "es": "Nulo?"
+    },
+    {
+      "id": 22,
+      "br": "Categoria",
+      "en": "Category",
+      "es": "Categoria"
+    },
+    {
+      "id": 23,
+      "br": "Descrição",
+      "en": "Description",
+      "es": "Descripcion"
+    },
+    {
+      "id": 24,
+      "br": "Identificador único da negociação",
+      "en": "Unique transaction identifier",
+      "es": "Identificador único de la transacción"
+    },
+    {
+      "id": 25,
+      "br": "Identificação",
+      "en": "Identification",
+      "es": "Identificacion"
+    },
+    {
+      "id": 26,
+      "br": "Número do documento visível ao usuário",
+      "en": "Document number visible to the user",
+      "es": "Número de documento visible para el usuario"
+    },
+    {
+      "id": 27,
+      "br": "Título descritivo da negociação",
+      "en": "Descriptive title of the transaction",
+      "es": "Título descriptivo de la transacción"
+    },
+    {
+      "id": 28,
+      "br": "Status",
+      "en": "Status",
+      "es": "Estado"
+    },
+    {
+      "id": 29,
+      "br": "Status da negociação: DRAFT, ACTIVE, PAUSED, CLOSED, CANCELLED, AMENDED, AWARD_COMPLETED",
+      "en": "Transaction status: DRAFT, ACTIVE, PAUSED, CLOSED, CANCELLED, AMENDED, AWARD_COMPLETED",
+      "es": "Estado de la transacción: DRAFT, ACTIVE, PAUSED, CLOSED, CANCELLED, AMENDED, AWARD_COMPLETED"
+    },
+    {
+      "id": 30,
+      "br": "Classificação",
+      "en": "Classification",
+      "es": "Clasificacion"
+    },
+    {
+      "id": 31,
+      "br": "Tipo: REVERSE_AUCTION, RFQ, RFI, BUYER_AUCTION",
+      "en": "Type: REVERSE_AUCTION, RFQ, RFI, BUYER_AUCTION",
+      "es": "Tipo: REVERSE_AUCTION, RFQ, RFI, BUYER_AUCTION"
+    },
+    {
+      "id": 32,
+      "br": "Tipo de documento de negociação",
+      "en": "Type of transaction document",
+      "es": "Tipo de documento de transacción"
+    },
+    {
+      "id": 33,
+      "br": "Organização compradora (enterprise)",
+      "en": "Buying organization (enterprise)",
+      "es": "Organización compradora (enterprise)"
+    },
+    {
+      "id": 34,
+      "br": "Nome da organização compradora (desnormalizado)",
+      "en": "Name of the buying organization (denormalized)",
+      "es": "Nombre de la organización compradora (desnormalizado)"
+    },
+    {
+      "id": 35,
+      "br": "Contato do comprador responsável",
+      "en": "Responsible buyer contact",
+      "es": "Contacto del comprador responsable"
+    },
+    {
+      "id": 36,
+      "br": "Moeda",
+      "en": "Currency",
+      "es": "Moneda"
+    },
+    {
+      "id": 37,
+      "br": "Código da moeda da negociação (ISO 4217)",
+      "en": "Transaction currency code (ISO 4217)",
+      "es": "Código de la moneda de la transacción (ISO 4217)"
+    },
+    {
+      "id": 38,
+      "br": "Data",
+      "en": "Date",
+      "es": "Fecha"
+    },
+    {
+      "id": 39,
+      "br": "Data/hora de abertura do período de lances",
+      "en": "Date/time of the bidding period opening",
+      "es": "Fecha/hora de apertura del período de puja"
+    },
+    {
+      "id": 40,
+      "br": "Data/hora de encerramento do período de lances",
+      "en": "Date/time of the bidding period closing",
+      "es": "Fecha/hora de cierre del período de puja"
+    },
+    {
+      "id": 41,
+      "br": "Data de publicação da negociação",
+      "en": "Date of transaction publication",
+      "es": "Fecha de publicación de la transacción"
+    },
+    {
+      "id": 42,
+      "br": "Data de conclusão do award",
+      "en": "Date of award completion",
+      "es": "Fecha de finalización de la adjudicación"
+    },
+    {
+      "id": 43,
+      "br": "Resultado da negociação: BLANKET, CONTRACT, STANDARD_PO, NONE",
+      "en": "Transaction result: BLANKET, CONTRACT, STANDARD_PO, NONE",
+      "es": "Resultado de la transacción: BLANKET, CONTRACT, STANDARD_PO, NONE"
+    },
+    {
+      "id": 44,
+      "br": "Tipo de contrato resultante",
+      "en": "Type of resulting contract",
+      "es": "Tipo de contrato resultante"
+    },
+    {
+      "id": 45,
+      "br": "Regras",
+      "en": "Rules",
+      "es": "Reglas"
+    },
+    {
+      "id": 46,
+      "br": "Visibilidade de lances: OPEN, SEALED, PARTIALLY_SEALED",
+      "en": "Bid Visibility: OPEN, SEALED, PARTIALLY_SEALED",
+      "es": "Visibilidad de ofertas: OPEN, SEALED, PARTIALLY_SEALED"
+    },
+    {
+      "id": 47,
+      "br": "Permite retirada de lance (Y/N)",
+      "en": "Allows bid withdrawal (Y/N)",
+      "es": "Permite la retirada de oferta (S/N)"
+    },
+    {
+      "id": 48,
+      "br": "Auto-extensão do prazo se lance recebido nos últimos minutos (Y/N)",
+      "en": "Automatically extends the deadline if a bid is received in the last minutes (Y/N)",
+      "es": "Extensión automática del plazo si se recibe la oferta en los últimos minutos (S/N)"
+    },
+    {
+      "id": 49,
+      "br": "Controle",
+      "en": "Control",
+      "es": "Control"
+    },
+    {
+      "id": 50,
+      "br": "Número da emenda (0 = original)",
+      "en": "Amendment number (0 = original)",
+      "es": "Número de modificación (0 = original)"
+    },
+    {
+      "id": 51,
+      "br": "Status de aprovação do documento",
+      "en": "Document approval status",
+      "es": "Estado de aprobación del documento"
+    },
+    {
+      "id": 52,
+      "br": "Status do award: NO, PARTIAL, COMPLETED",
+      "en": "Award status: NO, PARTIAL, COMPLETED",
+      "es": "Estado de adjudicación: NO, PARCIAL, COMPLETADO"
+    },
+    {
+      "id": 53,
+      "br": "Business unit (multi-org)",
+      "en": "Business unit (multi-org)",
+      "es": "Unidad de negocio (multi-org)"
+    },
+    {
+      "id": 54,
+      "br": "Requisição de compra originadora",
+      "en": "Original purchase requisition",
+      "es": "Solicitud de compra originadora"
+    },
+    {
+      "id": 55,
+      "br": "Ordem de compra gerada após award",
+      "en": "Purchase order generated after award",
+      "es": "Orden de compra generada después de la adjudicación"
+    },
+    {
+      "id": 56,
+      "br": "Auditoria",
+      "en": "Audit",
+      "es": "Auditoria"
+    },
+    {
+      "id": 57,
+      "br": "Usuário que criou o registro",
+      "en": "User who created the record",
+      "es": "Usuario que creo el registro"
+    },
+    {
+      "id": 58,
+      "br": "Data/hora de criação",
+      "en": "Creation date/time",
+      "es": "Fecha/hora de creacion"
+    },
+    {
+      "id": 59,
+      "br": "Último usuário que alterou",
+      "en": "Last user who modified",
+      "es": "Ultimo usuario que modifico"
+    },
+    {
+      "id": 60,
+      "br": "Data/hora da última alteração",
+      "en": "Last modification date/time",
+      "es": "Fecha/hora de la ultima modificacion"
+    },
+    {
+      "id": 61,
+      "br": "Login da última sessão",
+      "en": "Last session login",
+      "es": "Login de la ultima sesion"
+    },
+    {
+      "id": 62,
+      "br": "ATTRIBUTE1–15",
+      "en": "ATTRIBUTE1–15",
+      "es": "ATTRIBUTE1–15"
+    },
+    {
+      "id": 63,
+      "br": "Atributos descritivos customizáveis por implementação",
+      "en": "Customizable descriptive attributes by implementation",
+      "es": "Atributos descriptivos personalizables por implementación"
+    },
+    {
+      "id": 64,
+      "br": "Contexto do Descriptive Flexfield",
+      "en": "Descriptive Flexfield context",
+      "es": "Contexto del Descriptive Flexfield"
+    },
+    {
+      "id": 65,
+      "br": "Relacionamentos",
+      "en": "Relationships",
+      "es": "Relaciones"
+    },
+    {
+      "id": 66,
+      "br": "Tabelas-pai (FK de entrada)",
+      "en": "Parent Tables (inbound FK)",
+      "es": "Tablas padre (FK de entrada)"
+    },
+    {
+      "id": 67,
+      "br": "tipo de documento de negociação",
+      "en": "type of negotiation document",
+      "es": "Tipo de documento de negociación"
+    },
+    {
+      "id": 68,
+      "br": "organização compradora",
+      "en": "purchasing organization",
+      "es": "Organización compradora"
+    },
+    {
+      "id": 69,
+      "br": "contato responsável",
+      "en": "responsible contact",
+      "es": "Contacto responsable"
+    },
+    {
+      "id": 70,
+      "br": "moeda",
+      "en": "currency",
+      "es": "moneda"
+    },
+    {
+      "id": 71,
+      "br": "business unit",
+      "en": "business unit",
+      "es": "unidad de negocio"
+    },
+    {
+      "id": 72,
+      "br": "requisição de origem",
+      "en": "source requisition",
+      "es": "requisicion de origen"
+    },
+    {
+      "id": 73,
+      "br": "Tabelas-filha (FK de saída)",
+      "en": "Child Tables (outbound FK)",
+      "es": "Tablas hija (FK de salida)"
+    },
+    {
+      "id": 74,
+      "br": "linhas de itens/preços",
+      "en": "items/prices lines",
+      "es": "Líneas de artículos/precios"
+    },
+    {
+      "id": 75,
+      "br": "atributos de itens",
+      "en": "item attributes",
+      "es": "Atributos de artículos"
+    },
+    {
+      "id": 76,
+      "br": "seções da negociação",
+      "en": "negotiation sections",
+      "es": "Secciones de la negociación"
+    },
+    {
+      "id": 77,
+      "br": "fornecedores convidados",
+      "en": "invited suppliers",
+      "es": "Proveedores invitados"
+    },
+    {
+      "id": 78,
+      "br": "confirmações de participação",
+      "en": "participation confirmations",
+      "es": "Confirmaciones de participación"
+    },
+    {
+      "id": 79,
+      "br": "histórico de ações",
+      "en": "action history",
+      "es": "Historial de acciones"
+    },
+    {
+      "id": 80,
+      "br": "ordem de compra resultante",
+      "en": "resulting purchase order",
+      "es": "Orden de compra resultante"
+    },
+    {
+      "id": 81,
+      "br": "Uso Típico",
+      "en": "Typical Usage",
+      "es": "Uso Tipico"
+    },
+    {
+      "id": 82,
+      "br": "Negociações ativas por business unit",
+      "en": "Active negotiations by business unit",
+      "es": "Negociaciones activas por unidad de negocio"
+    },
+    {
+      "id": 83,
+      "br": "Negociações concluídas com award",
+      "en": "Completed negotiations with award",
+      "es": "Negociaciones completadas con adjudicación"
+    },
+    {
+      "id": 84,
+      "br": "Filtros comuns",
+      "en": "Common Filters",
+      "es": "Filtros comunes"
+    },
+    {
+      "id": 85,
+      "br": "Negociações em andamento",
+      "en": "Ongoing negotiations",
+      "es": "Negociaciones en curso"
+    },
+    {
+      "id": 86,
+      "br": "Negociações encerradas",
+      "en": "Closed negotiations",
+      "es": "Negociaciones cerradas"
+    },
+    {
+      "id": 87,
+      "br": "Solicitações de cotação",
+      "en": "Quotation requests",
+      "es": "Solicitudes de cotización"
+    },
+    {
+      "id": 88,
+      "br": "Negociações com award finalizado",
+      "en": "Negotiations with final award completed",
+      "es": "Negociaciones con adjudicación finalizada"
+    },
+    {
+      "id": 89,
+      "br": "Documento original (sem emendas)",
+      "en": "Original document (without amendments)",
+      "es": "Documento original (sin modificaciones)"
+    },
+    {
+      "id": 90,
+      "br": "Observações",
+      "en": "Notes",
+      "es": "Observaciones"
+    },
+    {
+      "id": 91,
+      "br": "Esta é a tabela central do módulo Sourcing — todas as demais tabelas PON_* referenciam AUCTION_HEADER_ID.",
+      "en": "This is the central table for the Sourcing module — all other tables PON_* reference AUCTION_HEADER_ID.",
+      "es": "Esta es la tabla central del módulo Sourcing — todas las demás tablas PON_* hacen referencia a AUCTION_HEADER_ID."
+    },
+    {
+      "id": 92,
+      "br": "O campo AUCTION_STATUS controla a máquina de estados: DRAFT → ACTIVE → CLOSED → AWARD_COMPLETED (ou CANCELLED em qualquer ponto).",
+      "en": "The AUCTION_STATUS field controls the state machine: DRAFT → ACTIVE → CLOSED → AWARD_COMPLETED (or CANCELLED at any point).",
+      "es": "El campo AUCTION_STATUS controla la máquina de estados: DRAFT → ACTIVE → CLOSED → AWARD_COMPLETED (o CANCELLED en cualquier momento)."
+    },
+    {
+      "id": 93,
+      "br": "Emendas (amendments) criam novos registros com AMENDMENT_NUMBER > 0, mantendo o mesmo DOCUMENT_NUMBER.",
+      "en": "Amendments create new records with AMENDMENT_NUMBER > 0, while maintaining the same DOCUMENT_NUMBER.",
+      "es": "Las modificaciones crean nuevos registros con AMENDMENT_NUMBER > 0, manteniendo el mismo DOCUMENT_NUMBER."
+    },
+    {
+      "id": 94,
+      "br": "O campo OUTCOME define o tipo de documento gerado após award: BLANKET (acordo-quadro), CONTRACT, STANDARD_PO.",
+      "en": "The OUTCOME field defines the type of document generated after award: BLANKET (master agreement), CONTRACT, STANDARD_PO.",
+      "es": "El campo OUTCOME define el tipo de documento generado después de la adjudicación: BLANKET (acuerdo marco), CONTRACT, STANDARD_PO."
+    },
+    {
+      "id": 95,
+      "br": "Negociações do tipo SEALED (licitação selada) possuem BID_VISIBILITY_CODE = 'SEALED', onde lances só são visíveis após o fechamento.",
+      "en": "Negotiations of the type SEALED (sealed bid) have BID_VISIBILITY_CODE = 'SEALED', where bids are only visible after the closing.",
+      "es": "Las negociaciones del tipo SEALED (licitación cerrada) tienen BID_VISIBILITY_CODE = 'SEALED', donde las ofertas solo son visibles después del cierre."
+    },
+    {
+      "id": 96,
+      "br": "O PO_HEADER_ID é preenchido apenas após a geração automática da ordem de compra via award.",
+      "en": "The PO_HEADER_ID is populated only after the automatic generation of the purchase order via award.",
+      "es": "El PO_HEADER_ID se completa solo después de la generación automática del pedido de compra mediante la adjudicación."
+    },
+    {
+      "id": 97,
+      "br": "Referências",
+      "en": "References",
+      "es": "Referencias"
+    },
+    {
+      "id": 98,
+      "br": "[Oracle Docs — PON_AUCTION_HEADERS_ALL](https://docs.oracle.com/en/cloud/saas/procurement/25a/oedmf/ponauctionheadersall.html)",
+      "en": "[Oracle Docs — PON_AUCTION_HEADERS_ALL](https://docs.oracle.com/en/cloud/saas/procurement/25a/oedmf/ponauctionheadersall.html)",
+      "es": "[Oracle Docs — PON_AUCTION_HEADERS_ALL](https://docs.oracle.com/en/cloud/saas/procurement/25a/oedmf/ponauctionheadersall.html)"
+    },
+    {
+      "id": 99,
+      "br": "po-module-data-dictionary — Dossiê do módulo PO/Procurement",
+      "en": "po-module-data-dictionary — PO/Procurement module dossier",
+      "es": "po-module-data-dictionary — Dossier del modulo PO/Procurement"
+    }
+  ]
+}

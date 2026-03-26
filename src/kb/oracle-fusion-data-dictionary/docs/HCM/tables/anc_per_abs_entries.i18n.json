@@ -1,0 +1,415 @@
+{
+  "source": "anc_per_abs_entries.md",
+  "source_hash": "37186fcbf43c05963f9a4a5734800d8a",
+  "translated_at": "2026-03-26",
+  "items": [
+    {
+      "id": 1,
+      "br": "Visão Geral",
+      "en": "Overview",
+      "es": "Visión General"
+    },
+    {
+      "id": 2,
+      "br": "Armazena as entradas (registros) de ausência dos colaboradores. Cada registro representa uma solicitação de ausência com datas de início/fim, tipo, motivo, status de aprovação e duração. É a tabela transacional principal do módulo Absence Management.",
+      "en": "Stores the absence entries (records) of employees. Each record represents an absence request with start/end dates, type, reason, approval status, and duration. This is the main transactional table of the Absence Management module.",
+      "es": "Almacena las entradas (registros) de ausencia de los colaboradores. Cada registro representa una solicitud de ausencia con fechas de inicio/fin, tipo, motivo, estado de aprobación y duración. Es la tabla transaccional principal del módulo Absence Management."
+    },
+    {
+      "id": 3,
+      "br": "Propósito de Negócio",
+      "en": "Business Purpose",
+      "es": "Propósito de Negocio"
+    },
+    {
+      "id": 4,
+      "br": "Esta tabela é utilizada nos seguintes processos:",
+      "en": "This table is used in the following processes:",
+      "es": "Esta tabla se utiliza en los siguientes procesos:"
+    },
+    {
+      "id": 5,
+      "br": "Tabela central para todas as solicitações de ausência (férias, licenças, faltas, etc.).",
+      "en": "Central table for all absence requests (vacation, leave, absences, etc.).",
+      "es": "Tabla central para todas las solicitudes de ausencia (vacaciones, licencias, faltas, etc.)."
+    },
+    {
+      "id": 6,
+      "br": "Controle do ciclo de vida da solicitação (submetida, aprovada, rejeitada).",
+      "en": "Request lifecycle control (submitted, approved, rejected).",
+      "es": "Control del ciclo de vida de la solicitud (enviada, aprobada, rechazada)."
+    },
+    {
+      "id": 7,
+      "br": "Base para cálculo de impacto salarial das ausências.",
+      "en": "Basis for calculating salary impact of absences.",
+      "es": "Base para cálculo de impacto salarial de las ausencias."
+    },
+    {
+      "id": 8,
+      "br": "Alimenta a visão do colaborador e do gestor.",
+      "en": "Feeds the employee's and manager's view.",
+      "es": "Alimenta la visión del colaborador y del gestor."
+    },
+    {
+      "id": 9,
+      "br": "Tabela principal para análise de ausências.",
+      "en": "Main table for absence analysis.",
+      "es": "Tabla principal para análisis de ausencias."
+    },
+    {
+      "id": 10,
+      "br": "Registro formal de afastamentos.",
+      "en": "Formal record of absences.",
+      "es": "Registro formal de ausencias."
+    },
+    {
+      "id": 11,
+      "br": "Colunas Principais",
+      "en": "Key Columns",
+      "es": "Columnas Principales"
+    },
+    {
+      "id": 12,
+      "br": "Confiança",
+      "en": "Confidence",
+      "es": "Confianza"
+    },
+    {
+      "id": 13,
+      "br": "Escala de 0% a 100% — grau de certeza da descrição gerada por IA com base na documentação oficial Oracle (OEDMF/BICC Release 13/25A).",
+      "en": "Scale from 0% to 100% — degree of certainty of the AI-generated description based on official Oracle documentation (OEDMF/BICC Release 13/25A).",
+      "es": "Escala de 0% a 100% — grado de certeza de la descripción generada por IA con base en la documentación oficial Oracle (OEDMF/BICC Release 13/25A)."
+    },
+    {
+      "id": 14,
+      "br": "- 🟢 81–100% — Coluna presente na documentação oficial Oracle; nome, tipo e descrição confirmados.",
+      "en": "- 🟢 81–100% — Column present in official Oracle documentation; name, type, and description confirmed.",
+      "es": "- 🟢 81–100% — Columna presente en la documentación oficial Oracle; nombre, tipo y descripción confirmados."
+    },
+    {
+      "id": 15,
+      "br": "- 🟡 51–80% — Coluna inferida por naming convention ou padrão Oracle; tipo exato pode variar.",
+      "en": "- 🟡 51–80% — Column inferred by naming convention or Oracle standard; exact type may vary.",
+      "es": "- 🟡 51–80% — Columna inferida por naming convention o estándar Oracle; tipo exacto puede variar."
+    },
+    {
+      "id": 16,
+      "br": "- 🔴 0–50% — Existência ou tipo incertos; pode não existir no release atual; validar no ambiente.",
+      "en": "- 🔴 0–50% — Existence or type uncertain; may not exist in the current release; validate in your environment.",
+      "es": "- 🔴 0–50% — Existencia o tipo inciertos; puede no existir en el release actual; validar en el ambiente."
+    },
+    {
+      "id": 17,
+      "br": "Coluna",
+      "en": "Column",
+      "es": "Columna"
+    },
+    {
+      "id": 18,
+      "br": "Tipo",
+      "en": "Type",
+      "es": "Tipo"
+    },
+    {
+      "id": 19,
+      "br": "Nulo?",
+      "en": "Nullable?",
+      "es": "¿Nulo?"
+    },
+    {
+      "id": 20,
+      "br": "Categoria",
+      "en": "Category",
+      "es": "Categoría"
+    },
+    {
+      "id": 21,
+      "br": "Descrição",
+      "en": "Description",
+      "es": "Descripción"
+    },
+    {
+      "id": 22,
+      "br": "Identificador único da entrada de ausência",
+      "en": "Unique absence entry identifier",
+      "es": "Identificador único de la entrada de ausencia"
+    },
+    {
+      "id": 23,
+      "br": "Colaborador",
+      "en": "Employee",
+      "es": "Colaborador"
+    },
+    {
+      "id": 24,
+      "br": "Tipo de ausência",
+      "en": "Absence type",
+      "es": "Tipo de ausencia"
+    },
+    {
+      "id": 25,
+      "br": "Motivo da ausência",
+      "en": "Absence reason",
+      "es": "Motivo de la ausencia"
+    },
+    {
+      "id": 26,
+      "br": "Classificação",
+      "en": "Classification",
+      "es": "Clasificación"
+    },
+    {
+      "id": 27,
+      "br": "Status (SUBMITTED, APPROVED, REJECTED, SAVED, CANCELLED)",
+      "en": "Status (SUBMITTED, APPROVED, REJECTED, SAVED, CANCELLED)",
+      "es": "Estado (SUBMITTED, APPROVED, REJECTED, SAVED, CANCELLED)"
+    },
+    {
+      "id": 28,
+      "br": "Data",
+      "en": "Date",
+      "es": "Fecha"
+    },
+    {
+      "id": 29,
+      "br": "Data de início da ausência",
+      "en": "Absence start date",
+      "es": "Fecha de inicio de la ausencia"
+    },
+    {
+      "id": 30,
+      "br": "Data de fim da ausência",
+      "en": "Absence end date",
+      "es": "Fecha de fin de la ausencia"
+    },
+    {
+      "id": 31,
+      "br": "Duração",
+      "en": "Duration",
+      "es": "Duración"
+    },
+    {
+      "id": 32,
+      "br": "Duração total da ausência",
+      "en": "Total absence duration",
+      "es": "Duración total de la ausencia"
+    },
+    {
+      "id": 33,
+      "br": "Unidade de medida (DAYS, HOURS)",
+      "en": "Unit of measure (DAYS, HOURS)",
+      "es": "Unidad de medida (DAYS, HOURS)"
+    },
+    {
+      "id": 34,
+      "br": "Texto livre",
+      "en": "Free text",
+      "es": "Texto libre"
+    },
+    {
+      "id": 35,
+      "br": "Comentários do colaborador",
+      "en": "Employee comments",
+      "es": "Comentarios del colaborador"
+    },
+    {
+      "id": 36,
+      "br": "Workflow",
+      "en": "Workflow",
+      "es": "Workflow"
+    },
+    {
+      "id": 37,
+      "br": "Status de aprovação",
+      "en": "Approval status",
+      "es": "Estado de aprobación"
+    },
+    {
+      "id": 38,
+      "br": "Gestor que aprovou",
+      "en": "Approving manager",
+      "es": "Gestor que aprobó"
+    },
+    {
+      "id": 39,
+      "br": "Assignment do colaborador",
+      "en": "Employee assignment",
+      "es": "Assignment del colaborador"
+    },
+    {
+      "id": 40,
+      "br": "Auditoria",
+      "en": "Audit",
+      "es": "Auditoría"
+    },
+    {
+      "id": 41,
+      "br": "Usuário que criou o registro",
+      "en": "User who created the record",
+      "es": "Usuario que creó el registro"
+    },
+    {
+      "id": 42,
+      "br": "Data/hora de criação",
+      "en": "Creation date/time",
+      "es": "Fecha/hora de creación"
+    },
+    {
+      "id": 43,
+      "br": "Último usuário que alterou",
+      "en": "Last user who modified",
+      "es": "Último usuario que modificó"
+    },
+    {
+      "id": 44,
+      "br": "Data/hora da última alteração",
+      "en": "Last modification date/time",
+      "es": "Fecha/hora de la última modificación"
+    },
+    {
+      "id": 45,
+      "br": "Controle",
+      "en": "Control",
+      "es": "Control"
+    },
+    {
+      "id": 46,
+      "br": "Controle de versão otimista",
+      "en": "Optimistic version control",
+      "es": "Control de versión optimista"
+    },
+    {
+      "id": 47,
+      "br": "Relacionamentos",
+      "en": "Relationships",
+      "es": "Relaciones"
+    },
+    {
+      "id": 48,
+      "br": "Tabelas-pai (FK de entrada)",
+      "en": "Parent Tables (Inbound FK)",
+      "es": "Tablas padre (FK de entrada)"
+    },
+    {
+      "id": 49,
+      "br": "Tabelas-filha (FK de saída)",
+      "en": "Child Tables (Outbound FK)",
+      "es": "Tablas hija (FK de salida)"
+    },
+    {
+      "id": 50,
+      "br": "detalhes diários",
+      "en": "daily details",
+      "es": "detalles diarios"
+    },
+    {
+      "id": 51,
+      "br": "detalhes adicionais",
+      "en": "additional details",
+      "es": "detalles adicionales"
+    },
+    {
+      "id": 52,
+      "br": "certificados",
+      "en": "certificates",
+      "es": "certificados"
+    },
+    {
+      "id": 53,
+      "br": "dados de maternidade",
+      "en": "maternity data",
+      "es": "datos de maternidad"
+    },
+    {
+      "id": 54,
+      "br": "Uso Típico",
+      "en": "Typical Usage",
+      "es": "Uso Típico"
+    },
+    {
+      "id": 55,
+      "br": "Ausências aprovadas por período",
+      "en": "Approved absences by period",
+      "es": "Ausencias aprobadas por período"
+    },
+    {
+      "id": 56,
+      "br": "Filtros comuns",
+      "en": "Common Filters",
+      "es": "Filtros comunes"
+    },
+    {
+      "id": 57,
+      "br": "Ausências aprovadas",
+      "en": "Approved absences",
+      "es": "Ausencias aprobadas"
+    },
+    {
+      "id": 58,
+      "br": "Pendentes de aprovação",
+      "en": "Pending approval",
+      "es": "Pendientes de aprobación"
+    },
+    {
+      "id": 59,
+      "br": "Canceladas",
+      "en": "Cancelled",
+      "es": "Canceladas"
+    },
+    {
+      "id": 60,
+      "br": "Ausências de um colaborador específico",
+      "en": "Absences of a specific employee",
+      "es": "Ausencias de un colaborador específico"
+    },
+    {
+      "id": 61,
+      "br": "Observações",
+      "en": "Notes",
+      "es": "Observaciones"
+    },
+    {
+      "id": 62,
+      "br": "Tabela transacional principal do módulo de ausências.",
+      "en": "Main transactional table of the absence module.",
+      "es": "Tabla transaccional principal del módulo de ausencias."
+    },
+    {
+      "id": 63,
+      "br": "O campo ABSENCE_STATUS controla o ciclo de vida da solicitação.",
+      "en": "The ABSENCE_STATUS field controls the request lifecycle.",
+      "es": "El campo ABSENCE_STATUS controla el ciclo de vida de la solicitud."
+    },
+    {
+      "id": 64,
+      "br": "DURATION armazena a duração calculada; os detalhes dia a dia estão em ANC_PER_ABS_DAILY_DTLS.",
+      "en": "DURATION stores the calculated duration; day-by-day details are in ANC_PER_ABS_DAILY_DTLS.",
+      "es": "DURATION almacena la duración calculada; los detalles día a día están en ANC_PER_ABS_DAILY_DTLS."
+    },
+    {
+      "id": 65,
+      "br": "Ausências canceladas (CANCELLED) permanecem no histórico para auditoria.",
+      "en": "Cancelled absences (CANCELLED) remain in the history for audit purposes.",
+      "es": "Ausencias canceladas (CANCELLED) permanecen en el historial para auditoría."
+    },
+    {
+      "id": 66,
+      "br": "Referências",
+      "en": "References",
+      "es": "Referencias"
+    },
+    {
+      "id": 67,
+      "br": "[Oracle Docs — ANC_PER_ABS_ENTRIES](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/ancperabsentries.html)",
+      "en": "[Oracle Docs — ANC_PER_ABS_ENTRIES](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/ancperabsentries.html)",
+      "es": "[Oracle Docs — ANC_PER_ABS_ENTRIES](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/ancperabsentries.html)"
+    },
+    {
+      "id": 68,
+      "br": "Dossiê do módulo HCM",
+      "en": "HCM Module Dossier",
+      "es": "Dossier del módulo HCM"
+    }
+  ]
+}

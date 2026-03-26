@@ -1,0 +1,696 @@
+{
+  "meta": {
+    "pvo_name": "SupplierProfileChangeApprovalHistoryPVO",
+    "full_path": "FscmTopModelAM.PrcPozPublicViewAM.SupplierProfileChangeApprovalHistoryPVO",
+    "module_path": "FscmTopModelAM.PrcPozPublicViewAM",
+    "module_code": "PO",
+    "type": "pvo",
+    "description": "Extrai o histórico de aprovações de alterações de perfil de fornecedores, com aprovador, data e comentários. Garante auditoria completa de quem autorizou cada mudança nos dados cadastrais."
+  },
+  "stats": {
+    "total_attributes": 47,
+    "tables_count": 5,
+    "bicc_enabled": 8,
+    "bicc_pct": 17,
+    "pk_count": 1
+  },
+  "tables": [
+    "FND_LOOKUPS",
+    "HZ_PARTIES",
+    "PER_PERSON_NAMES_F_V",
+    "POZ_APPROVAL_HISTORY",
+    "POZ_BI_APPR_USER_COMMENTS_V"
+  ],
+  "attributes": [
+    {
+      "name": "ActionLookupPEODescription",
+      "table": "FND_LOOKUPS",
+      "column": "DESCRIPTION",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ActionLookupPEOEnabledFlag",
+      "table": "FND_LOOKUPS",
+      "column": "ENABLED_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ActionLookupPEOLookupCode",
+      "table": "FND_LOOKUPS",
+      "column": "LOOKUP_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ActionLookupPEOLookupType",
+      "table": "FND_LOOKUPS",
+      "column": "LOOKUP_TYPE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ActionLookupPEOMeaning",
+      "table": "FND_LOOKUPS",
+      "column": "MEANING",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ApprovalHistoryPEOActionCode",
+      "table": "POZ_APPROVAL_HISTORY",
+      "column": "ACTION_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ApprovalHistoryPEOActionDate",
+      "table": "POZ_APPROVAL_HISTORY",
+      "column": "ACTION_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ApprovalHistoryPEOAdditionalInfo",
+      "table": "POZ_APPROVAL_HISTORY",
+      "column": "ADDITIONAL_INFO",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ApprovalHistoryPEOAmxIdentificationKey",
+      "table": "POZ_APPROVAL_HISTORY",
+      "column": "AMX_IDENTIFICATION_KEY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ApprovalHistoryPEOApprovalFlowCode",
+      "table": "POZ_APPROVAL_HISTORY",
+      "column": "APPROVAL_FLOW_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ApprovalHistoryPEOApprovalHistoryId",
+      "table": "POZ_APPROVAL_HISTORY",
+      "column": "APPROVAL_HISTORY_ID",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    },
+    {
+      "name": "ApprovalHistoryPEOCreatedBy",
+      "table": "POZ_APPROVAL_HISTORY",
+      "column": "CREATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ApprovalHistoryPEOCreationDate",
+      "table": "POZ_APPROVAL_HISTORY",
+      "column": "CREATION_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ApprovalHistoryPEOFlowObjectId",
+      "table": "POZ_APPROVAL_HISTORY",
+      "column": "FLOW_OBJECT_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ApprovalHistoryPEOLastUpdateDate",
+      "table": "POZ_APPROVAL_HISTORY",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ApprovalHistoryPEOLastUpdateLogin",
+      "table": "POZ_APPROVAL_HISTORY",
+      "column": "LAST_UPDATE_LOGIN",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ApprovalHistoryPEOLastUpdatedBy",
+      "table": "POZ_APPROVAL_HISTORY",
+      "column": "LAST_UPDATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ApprovalHistoryPEOObjectVersionNumber",
+      "table": "POZ_APPROVAL_HISTORY",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ApprovalHistoryPEOPerformerId",
+      "table": "POZ_APPROVAL_HISTORY",
+      "column": "PERFORMER_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ApprovalHistoryPEOPerformerType",
+      "table": "POZ_APPROVAL_HISTORY",
+      "column": "PERFORMER_TYPE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ApprovalHistoryPEOSequenceNum",
+      "table": "POZ_APPROVAL_HISTORY",
+      "column": "SEQUENCE_NUM",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ApprovalHistoryPEOVendorId",
+      "table": "POZ_APPROVAL_HISTORY",
+      "column": "VENDOR_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ApprovalUserCommentPEOActionSeqNum",
+      "table": "POZ_BI_APPR_USER_COMMENTS_V",
+      "column": "ACTION_SEQ_NUM",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ApprovalUserCommentPEOAmxIdentificationKey",
+      "table": "POZ_BI_APPR_USER_COMMENTS_V",
+      "column": "AMX_IDENTIFICATION_KEY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ApprovalUserCommentPEOLatestComment",
+      "table": "POZ_BI_APPR_USER_COMMENTS_V",
+      "column": "LATEST_COMMENT",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ApprovalUserCommentPEOPerformerId",
+      "table": "POZ_BI_APPR_USER_COMMENTS_V",
+      "column": "PERFORMER_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PerformedByPartyPEOPartyId",
+      "table": "HZ_PARTIES",
+      "column": "PARTY_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PerformedByPartyPEOPartyName",
+      "table": "HZ_PARTIES",
+      "column": "PARTY_NAME",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PerformedByPartyPEOPartyNumber",
+      "table": "HZ_PARTIES",
+      "column": "PARTY_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PerformedByPartyPEOPartyType",
+      "table": "HZ_PARTIES",
+      "column": "PARTY_TYPE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PerformedByPartyPEOPersonFirstName",
+      "table": "HZ_PARTIES",
+      "column": "PERSON_FIRST_NAME",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PerformedByPartyPEOPersonLastName",
+      "table": "HZ_PARTIES",
+      "column": "PERSON_LAST_NAME",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PerformedByPartyPEOStatus",
+      "table": "HZ_PARTIES",
+      "column": "STATUS",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PerformedByPersonNamePEODisplayName",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "DISPLAY_NAME",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PerformedByPersonNamePEOEffectiveEndDate",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "EFFECTIVE_END_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PerformedByPersonNamePEOEffectiveStartDate",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "EFFECTIVE_START_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PerformedByPersonNamePEOFirstName",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "FIRST_NAME",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PerformedByPersonNamePEOFullName",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "FULL_NAME",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PerformedByPersonNamePEOLastName",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "LAST_NAME",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PerformedByPersonNamePEOListName",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "LIST_NAME",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PerformedByPersonNamePEOPersonId",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "PERSON_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PerformedByPersonNamePEOPersonNameId",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "PERSON_NAME_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PerformerTypeLookupPEODescription",
+      "table": "FND_LOOKUPS",
+      "column": "DESCRIPTION",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PerformerTypeLookupPEOEnabledFlag",
+      "table": "FND_LOOKUPS",
+      "column": "ENABLED_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PerformerTypeLookupPEOLookupCode",
+      "table": "FND_LOOKUPS",
+      "column": "LOOKUP_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PerformerTypeLookupPEOLookupType",
+      "table": "FND_LOOKUPS",
+      "column": "LOOKUP_TYPE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PerformerTypeLookupPEOMeaning",
+      "table": "FND_LOOKUPS",
+      "column": "MEANING",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    }
+  ],
+  "by_table": {
+    "FND_LOOKUPS": [
+      {
+        "attribute": "ActionLookupPEODescription",
+        "column": "DESCRIPTION",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ActionLookupPEOEnabledFlag",
+        "column": "ENABLED_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ActionLookupPEOLookupCode",
+        "column": "LOOKUP_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ActionLookupPEOLookupType",
+        "column": "LOOKUP_TYPE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ActionLookupPEOMeaning",
+        "column": "MEANING",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PerformerTypeLookupPEODescription",
+        "column": "DESCRIPTION",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PerformerTypeLookupPEOEnabledFlag",
+        "column": "ENABLED_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PerformerTypeLookupPEOLookupCode",
+        "column": "LOOKUP_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PerformerTypeLookupPEOLookupType",
+        "column": "LOOKUP_TYPE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PerformerTypeLookupPEOMeaning",
+        "column": "MEANING",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "POZ_APPROVAL_HISTORY": [
+      {
+        "attribute": "ApprovalHistoryPEOActionCode",
+        "column": "ACTION_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ApprovalHistoryPEOActionDate",
+        "column": "ACTION_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ApprovalHistoryPEOAdditionalInfo",
+        "column": "ADDITIONAL_INFO",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ApprovalHistoryPEOAmxIdentificationKey",
+        "column": "AMX_IDENTIFICATION_KEY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ApprovalHistoryPEOApprovalFlowCode",
+        "column": "APPROVAL_FLOW_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ApprovalHistoryPEOApprovalHistoryId",
+        "column": "APPROVAL_HISTORY_ID",
+        "bicc": true,
+        "pk": true
+      },
+      {
+        "attribute": "ApprovalHistoryPEOCreatedBy",
+        "column": "CREATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ApprovalHistoryPEOCreationDate",
+        "column": "CREATION_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ApprovalHistoryPEOFlowObjectId",
+        "column": "FLOW_OBJECT_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ApprovalHistoryPEOLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ApprovalHistoryPEOLastUpdateLogin",
+        "column": "LAST_UPDATE_LOGIN",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ApprovalHistoryPEOLastUpdatedBy",
+        "column": "LAST_UPDATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ApprovalHistoryPEOObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ApprovalHistoryPEOPerformerId",
+        "column": "PERFORMER_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ApprovalHistoryPEOPerformerType",
+        "column": "PERFORMER_TYPE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ApprovalHistoryPEOSequenceNum",
+        "column": "SEQUENCE_NUM",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ApprovalHistoryPEOVendorId",
+        "column": "VENDOR_ID",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "POZ_BI_APPR_USER_COMMENTS_V": [
+      {
+        "attribute": "ApprovalUserCommentPEOActionSeqNum",
+        "column": "ACTION_SEQ_NUM",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ApprovalUserCommentPEOAmxIdentificationKey",
+        "column": "AMX_IDENTIFICATION_KEY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ApprovalUserCommentPEOLatestComment",
+        "column": "LATEST_COMMENT",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ApprovalUserCommentPEOPerformerId",
+        "column": "PERFORMER_ID",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "HZ_PARTIES": [
+      {
+        "attribute": "PerformedByPartyPEOPartyId",
+        "column": "PARTY_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PerformedByPartyPEOPartyName",
+        "column": "PARTY_NAME",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PerformedByPartyPEOPartyNumber",
+        "column": "PARTY_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PerformedByPartyPEOPartyType",
+        "column": "PARTY_TYPE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PerformedByPartyPEOPersonFirstName",
+        "column": "PERSON_FIRST_NAME",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PerformedByPartyPEOPersonLastName",
+        "column": "PERSON_LAST_NAME",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PerformedByPartyPEOStatus",
+        "column": "STATUS",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "PER_PERSON_NAMES_F_V": [
+      {
+        "attribute": "PerformedByPersonNamePEODisplayName",
+        "column": "DISPLAY_NAME",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PerformedByPersonNamePEOEffectiveEndDate",
+        "column": "EFFECTIVE_END_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PerformedByPersonNamePEOEffectiveStartDate",
+        "column": "EFFECTIVE_START_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PerformedByPersonNamePEOFirstName",
+        "column": "FIRST_NAME",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PerformedByPersonNamePEOFullName",
+        "column": "FULL_NAME",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PerformedByPersonNamePEOLastName",
+        "column": "LAST_NAME",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PerformedByPersonNamePEOListName",
+        "column": "LIST_NAME",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PerformedByPersonNamePEOPersonId",
+        "column": "PERSON_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PerformedByPersonNamePEOPersonNameId",
+        "column": "PERSON_NAME_ID",
+        "bicc": false,
+        "pk": false
+      }
+    ]
+  }
+}

@@ -1,0 +1,343 @@
+{
+  "source": "ap_checks_all.md",
+  "source_hash": "504ba5b1169278d5dafffdf95bb3cb3f",
+  "translated_at": "2026-03-25",
+  "items": [
+    {
+      "id": 1,
+      "br": "Visão Geral",
+      "en": "Overview",
+      "es": "Descripción General"
+    },
+    {
+      "id": 2,
+      "br": "Tabela principal de pagamentos emitidos pelo módulo de Contas a Pagar. Apesar do nome legado \"checks\", armazena todos os tipos de pagamento — cheques, transferências bancárias (wire), boletos e pagamentos eletrônicos. Cada registro representa um instrumento de pagamento individual com valor, data, fornecedor e conta bancária associados. Particionada por ORG_ID.",
+      "en": "Main table of payments issued by the Accounts Payable module. Despite the legacy name \"checks\", it stores all payment types — checks, wire transfers, boletos, and electronic payments. Each record represents an individual payment instrument with associated amount, date, supplier, and bank account. Partitioned by ORG_ID.",
+      "es": "Tabla principal de pagos emitidos por el módulo de Cuentas por Pagar. A pesar del nombre legado \"checks\", almacena todos los tipos de pago — cheques, transferencias bancarias (wire), boletos y pagos electrónicos. Cada registro representa un instrumento de pago individual con monto, fecha, proveedor y cuenta bancaria asociados. Particionada por ORG_ID."
+    },
+    {
+      "id": 3,
+      "br": "Propósito de Negócio",
+      "en": "Business Purpose",
+      "es": "Propósito de Negocio"
+    },
+    {
+      "id": 4,
+      "br": "Registra cada desembolso realizado a fornecedores, sendo a tabela central para conciliação bancária, auditoria de pagamentos e controle de fluxo de caixa. No Banco Patria, é fundamental para rastrear pagamentos a prestadores de serviço, fornecedores de tecnologia e obrigações regulatórias, além de alimentar relatórios de conciliação com extratos bancários.",
+      "en": "Records each disbursement made to suppliers, being the central table for bank reconciliation, payment audit, and cash flow control. At Banco Patria, it is fundamental for tracking payments to service providers, technology suppliers, and regulatory obligations, as well as feeding reconciliation reports with bank statements.",
+      "es": "Registra cada desembolso realizado a proveedores, siendo la tabla central para conciliación bancaria, auditoría de pagos y control de flujo de caja. En el Banco Patria, es fundamental para rastrear pagos a prestadores de servicio, proveedores de tecnología y obligaciones regulatorias, además de alimentar informes de conciliación con extractos bancarios."
+    },
+    {
+      "id": 5,
+      "br": "Colunas Principais",
+      "en": "Key Columns",
+      "es": "Columnas Principales"
+    },
+    {
+      "id": 6,
+      "br": "Confiança",
+      "en": "Confidence",
+      "es": "Confianza"
+    },
+    {
+      "id": 7,
+      "br": "Escala de 0% a 100% — grau de certeza da descrição gerada por IA com base na documentação oficial Oracle (OEDMF/BICC Release 13/25A).",
+      "en": "Scale from 0% to 100% — degree of certainty of the AI-generated description based on official Oracle documentation (OEDMF/BICC Release 13/25A).",
+      "es": "Escala de 0% a 100% — grado de certeza de la descripción generada por IA con base en la documentación oficial Oracle (OEDMF/BICC Release 13/25A)."
+    },
+    {
+      "id": 8,
+      "br": "- 🟢 81–100% — Coluna presente na documentação oficial Oracle; nome, tipo e descrição confirmados.",
+      "en": "- 🟢 81–100% — Column present in official Oracle documentation; name, type, and description confirmed.",
+      "es": "- 🟢 81–100% — Columna presente en la documentación oficial Oracle; nombre, tipo y descripción confirmados."
+    },
+    {
+      "id": 9,
+      "br": "- 🟡 51–80% — Coluna inferida por naming convention ou padrão Oracle; tipo exato pode variar.",
+      "en": "- 🟡 51–80% — Column inferred by naming convention or Oracle standard; exact type may vary.",
+      "es": "- 🟡 51–80% — Columna inferida por naming convention o estándar Oracle; el tipo exacto puede variar."
+    },
+    {
+      "id": 10,
+      "br": "- 🔴 0–50% — Existência ou tipo incertos; pode não existir no release atual; validar no ambiente.",
+      "en": "- 🔴 0–50% — Uncertain existence or type; may not exist in the current release; validate in the environment.",
+      "es": "- 🔴 0–50% — Existencia o tipo inciertos; puede no existir en el release actual; validar en el ambiente."
+    },
+    {
+      "id": 11,
+      "br": "Coluna",
+      "en": "Column",
+      "es": "Columna"
+    },
+    {
+      "id": 12,
+      "br": "Tipo",
+      "en": "Type",
+      "es": "Tipo"
+    },
+    {
+      "id": 13,
+      "br": "Nulo?",
+      "en": "Nullable?",
+      "es": "¿Nulo?"
+    },
+    {
+      "id": 14,
+      "br": "Categoria",
+      "en": "Category",
+      "es": "Categoría"
+    },
+    {
+      "id": 15,
+      "br": "Descrição",
+      "en": "Description",
+      "es": "Descripción"
+    },
+    {
+      "id": 16,
+      "br": "Chave primária. Identificador único do pagamento.",
+      "en": "Primary key. Unique identifier of the payment.",
+      "es": "Clave primaria. Identificador único del pago."
+    },
+    {
+      "id": 17,
+      "br": "Negócio",
+      "en": "Business",
+      "es": "Negocio"
+    },
+    {
+      "id": 18,
+      "br": "Número do cheque/pagamento.",
+      "en": "Check/payment number.",
+      "es": "Número del cheque/pago."
+    },
+    {
+      "id": 19,
+      "br": "Data de emissão do pagamento.",
+      "en": "Payment issue date.",
+      "es": "Fecha de emisión del pago."
+    },
+    {
+      "id": 20,
+      "br": "Valor do pagamento.",
+      "en": "Payment amount.",
+      "es": "Monto del pago."
+    },
+    {
+      "id": 21,
+      "br": "Código da moeda do pagamento.",
+      "en": "Payment currency code.",
+      "es": "Código de moneda del pago."
+    },
+    {
+      "id": 22,
+      "br": "Identificador do fornecedor.",
+      "en": "Supplier identifier.",
+      "es": "Identificador del proveedor."
+    },
+    {
+      "id": 23,
+      "br": "Identificador do site do fornecedor.",
+      "en": "Supplier site identifier.",
+      "es": "Identificador del sitio del proveedor."
+    },
+    {
+      "id": 24,
+      "br": "Conta bancária de origem do pagamento.",
+      "en": "Source bank account for the payment.",
+      "es": "Cuenta bancaria de origen del pago."
+    },
+    {
+      "id": 25,
+      "br": "Método de pagamento (CHECK, EFT, WIRE, etc.).",
+      "en": "Payment method (CHECK, EFT, WIRE, etc.).",
+      "es": "Método de pago (CHECK, EFT, WIRE, etc.)."
+    },
+    {
+      "id": 26,
+      "br": "Controle",
+      "en": "Control",
+      "es": "Control"
+    },
+    {
+      "id": 27,
+      "br": "Status do pagamento (NEGOTIABLE, VOIDED, CLEARED, etc.).",
+      "en": "Payment status (NEGOTIABLE, VOIDED, CLEARED, etc.).",
+      "es": "Estado del pago (NEGOTIABLE, VOIDED, CLEARED, etc.)."
+    },
+    {
+      "id": 28,
+      "br": "Data de compensação bancária.",
+      "en": "Bank clearing date.",
+      "es": "Fecha de compensación bancaria."
+    },
+    {
+      "id": 29,
+      "br": "Valor compensado no banco.",
+      "en": "Amount cleared at the bank.",
+      "es": "Monto compensado en el banco."
+    },
+    {
+      "id": 30,
+      "br": "Classificação",
+      "en": "Classification",
+      "es": "Clasificación"
+    },
+    {
+      "id": 31,
+      "br": "Tipo: R (Refund), Q (Quick), A (Regular).",
+      "en": "Type: R (Refund), Q (Quick), A (Regular).",
+      "es": "Tipo: R (Refund), Q (Quick), A (Regular)."
+    },
+    {
+      "id": 32,
+      "br": "Multiorg",
+      "en": "Multiorg",
+      "es": "Multiorg"
+    },
+    {
+      "id": 33,
+      "br": "Identificador da organização (business unit).",
+      "en": "Organization identifier (business unit).",
+      "es": "Identificador de la organización (business unit)."
+    },
+    {
+      "id": 34,
+      "br": "Usuário que criou o registro.",
+      "en": "User who created the record.",
+      "es": "Usuario que creó el registro."
+    },
+    {
+      "id": 35,
+      "br": "Data de criação do registro.",
+      "en": "Record creation date.",
+      "es": "Fecha de creación del registro."
+    },
+    {
+      "id": 36,
+      "br": "Usuário da última atualização.",
+      "en": "User of the last update.",
+      "es": "Usuario de la última actualización."
+    },
+    {
+      "id": 37,
+      "br": "Data da última atualização.",
+      "en": "Last update date.",
+      "es": "Fecha de la última actualización."
+    },
+    {
+      "id": 38,
+      "br": "Relacionamentos",
+      "en": "Relationships",
+      "es": "Relaciones"
+    },
+    {
+      "id": 39,
+      "br": "Tabelas-pai",
+      "en": "Parent Tables",
+      "es": "Tablas Padre"
+    },
+    {
+      "id": 40,
+      "br": "— Fornecedor beneficiário do pagamento (via `VENDOR_ID`).",
+      "en": "— Supplier beneficiary of the payment (via `VENDOR_ID`).",
+      "es": "— Proveedor beneficiario del pago (vía `VENDOR_ID`)."
+    },
+    {
+      "id": 41,
+      "br": "— Site do fornecedor (via `VENDOR_SITE_ID`).",
+      "en": "— Supplier site (via `VENDOR_SITE_ID`).",
+      "es": "— Sitio del proveedor (vía `VENDOR_SITE_ID`)."
+    },
+    {
+      "id": 42,
+      "br": "— Conta bancária de origem (via `BANK_ACCOUNT_ID`).",
+      "en": "— Source bank account (via `BANK_ACCOUNT_ID`).",
+      "es": "— Cuenta bancaria de origen (vía `BANK_ACCOUNT_ID`)."
+    },
+    {
+      "id": 43,
+      "br": "— Organização/business unit (via `ORG_ID`).",
+      "en": "— Organization/business unit (via `ORG_ID`).",
+      "es": "— Organización/business unit (vía `ORG_ID`)."
+    },
+    {
+      "id": 44,
+      "br": "— Moeda do pagamento (via `CURRENCY_CODE`).",
+      "en": "— Payment currency (via `CURRENCY_CODE`).",
+      "es": "— Moneda del pago (vía `CURRENCY_CODE`)."
+    },
+    {
+      "id": 45,
+      "br": "Tabelas-filha",
+      "en": "Child Tables",
+      "es": "Tablas Hija"
+    },
+    {
+      "id": 46,
+      "br": "— Relação pagamento × fatura (N:N via `CHECK_ID`).",
+      "en": "— Payment × invoice relationship (N:N via `CHECK_ID`).",
+      "es": "— Relación pago × factura (N:N vía `CHECK_ID`)."
+    },
+    {
+      "id": 47,
+      "br": "Uso Típico",
+      "en": "Typical Usage",
+      "es": "Uso Típico"
+    },
+    {
+      "id": 48,
+      "br": "Observações",
+      "en": "Notes",
+      "es": "Observaciones"
+    },
+    {
+      "id": 49,
+      "br": "O nome \"checks\" é legado do Oracle E-Business Suite; no Fusion, a tabela armazena todos os tipos de pagamento.",
+      "en": "The name \"checks\" is a legacy from Oracle E-Business Suite; in Fusion, the table stores all payment types.",
+      "es": "El nombre \"checks\" es legado de Oracle E-Business Suite; en Fusion, la tabla almacena todos los tipos de pago."
+    },
+    {
+      "id": 50,
+      "br": "O campo STATUS_LOOKUP_CODE governa o ciclo de vida: NEGOTIABLE → CLEARED → RECONCILED (ou VOIDED).",
+      "en": "The STATUS_LOOKUP_CODE field governs the lifecycle: NEGOTIABLE → CLEARED → RECONCILED (or VOIDED).",
+      "es": "El campo STATUS_LOOKUP_CODE gobierna el ciclo de vida: NEGOTIABLE → CLEARED → RECONCILED (o VOIDED)."
+    },
+    {
+      "id": 51,
+      "br": "Pagamentos voidados (VOIDED) permanecem na tabela para auditoria — não são excluídos fisicamente.",
+      "en": "Voided payments (VOIDED) remain in the table for audit purposes — they are not physically deleted.",
+      "es": "Pagos anulados (VOIDED) permanecen en la tabla para auditoría — no se eliminan físicamente."
+    },
+    {
+      "id": 52,
+      "br": "Sempre filtrar por ORG_ID em consultas para performance e segurança multiorg.",
+      "en": "Always filter by ORG_ID in queries for performance and multiorg security.",
+      "es": "Siempre filtrar por ORG_ID en consultas para rendimiento y seguridad multiorg."
+    },
+    {
+      "id": 53,
+      "br": "Referências",
+      "en": "References",
+      "es": "Referencias"
+    },
+    {
+      "id": 54,
+      "br": "Oracle Fusion Cloud Financials — Accounts Payable Tables (OEDMF Release 13).",
+      "en": "Oracle Fusion Cloud Financials — Accounts Payable Tables (OEDMF Release 13).",
+      "es": "Oracle Fusion Cloud Financials — Accounts Payable Tables (OEDMF Release 13)."
+    },
+    {
+      "id": 55,
+      "br": "Oracle BICC — AP Payments Subject Area Documentation.",
+      "en": "Oracle BICC — AP Payments Subject Area Documentation.",
+      "es": "Oracle BICC — AP Payments Subject Area Documentation."
+    },
+    {
+      "id": 56,
+      "br": "Oracle Fusion Cloud ERP Schema Reference (Release 25A).",
+      "en": "Oracle Fusion Cloud ERP Schema Reference (Release 25A).",
+      "es": "Oracle Fusion Cloud ERP Schema Reference (Release 25A)."
+    }
+  ]
+}

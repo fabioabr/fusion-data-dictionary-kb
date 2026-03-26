@@ -1,0 +1,461 @@
+{
+  "meta": {
+    "pvo_name": "JobReqHistEventPVO",
+    "full_path": "HcmTopModelAnalyticsGlobalAM.HcmRecHiringRequisitionAM.JobReqHistEventPVO",
+    "module_path": "HcmTopModelAnalyticsGlobalAM.HcmRecHiringRequisitionAM",
+    "module_code": "PO",
+    "type": "pvo",
+    "description": "Extrai o histórico de eventos de requisições de contratação (criação, aprovação, preenchimento, cancelamento), com datas e responsáveis. Permite análise de tempo de ciclo e eficiência do processo de hiring."
+  },
+  "stats": {
+    "total_attributes": 30,
+    "tables_count": 6,
+    "bicc_enabled": 28,
+    "bicc_pct": 93,
+    "pk_count": 1
+  },
+  "tables": [
+    "IRC_HIST_EVENT_B",
+    "IRC_LC_HISTORY",
+    "IRC_PHASES_B",
+    "IRC_PROCESSES_B",
+    "IRC_REQUISITIONS_B",
+    "IRC_STATES_B"
+  ],
+  "attributes": [
+    {
+      "name": "HistoryEventId",
+      "table": "IRC_LC_HISTORY",
+      "column": "HISTORY_EVENT_ID",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    },
+    {
+      "name": "HistoryEventTypeBPEOEventTypeCode",
+      "table": "IRC_HIST_EVENT_B",
+      "column": "CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "HistoryEventTypeBPEOEventTypeId",
+      "table": "IRC_HIST_EVENT_B",
+      "column": "EVENT_TYPE_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LCHistoryPEOActionId",
+      "table": "IRC_LC_HISTORY",
+      "column": "ACTION_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LCHistoryPEOCreatedBy",
+      "table": "IRC_LC_HISTORY",
+      "column": "CREATED_BY",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LCHistoryPEOCreationDate",
+      "table": "IRC_LC_HISTORY",
+      "column": "CREATION_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LCHistoryPEOEventDate",
+      "table": "IRC_LC_HISTORY",
+      "column": "EVENT_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LCHistoryPEOEventTypeId",
+      "table": "IRC_LC_HISTORY",
+      "column": "EVENT_TYPE_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LCHistoryPEOLastUpdateDate",
+      "table": "IRC_LC_HISTORY",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": true
+    },
+    {
+      "name": "LCHistoryPEOLastUpdateLogin",
+      "table": "IRC_LC_HISTORY",
+      "column": "LAST_UPDATE_LOGIN",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LCHistoryPEOLastUpdatedBy",
+      "table": "IRC_LC_HISTORY",
+      "column": "LAST_UPDATED_BY",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LCHistoryPEOObjectVersionNumber",
+      "table": "IRC_LC_HISTORY",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LCHistoryPEOPersonId",
+      "table": "IRC_LC_HISTORY",
+      "column": "PERSON_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LCHistoryPEOPhaseId",
+      "table": "IRC_LC_HISTORY",
+      "column": "PHASE_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LCHistoryPEOProcessId",
+      "table": "IRC_LC_HISTORY",
+      "column": "PROCESS_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LCHistoryPEORoutingStepId",
+      "table": "IRC_LC_HISTORY",
+      "column": "ROUTING_STEP_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LCHistoryPEOSourceObjectId",
+      "table": "IRC_LC_HISTORY",
+      "column": "SOURCE_OBJECT_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LCHistoryPEOStateId",
+      "table": "IRC_LC_HISTORY",
+      "column": "STATE_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LCHistoryPEOSubjectId",
+      "table": "IRC_LC_HISTORY",
+      "column": "SUBJECT_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PhaseBPEOCode",
+      "table": "IRC_PHASES_B",
+      "column": "CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PhaseId",
+      "table": "IRC_PHASES_B",
+      "column": "PHASE_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProcessBPEOCode",
+      "table": "IRC_PROCESSES_B",
+      "column": "CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProcessId",
+      "table": "IRC_PROCESSES_B",
+      "column": "PROCESS_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RequisitionBPEOOpenDate",
+      "table": "IRC_REQUISITIONS_B",
+      "column": "OPEN_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RequisitionBPEORequisitionTemplateId",
+      "table": "IRC_REQUISITIONS_B",
+      "column": "REQUISITION_TEMPLATE_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RequisitionId",
+      "table": "IRC_REQUISITIONS_B",
+      "column": "REQUISITION_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "StateBPEOCode",
+      "table": "IRC_STATES_B",
+      "column": "CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "StateId",
+      "table": "IRC_STATES_B",
+      "column": "STATE_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "StepDuration",
+      "table": "IRC_LC_HISTORY",
+      "column": "STEP_DURATION",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TraceLog",
+      "table": "IRC_LC_HISTORY",
+      "column": "TRACE_LOG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    }
+  ],
+  "by_table": {
+    "IRC_LC_HISTORY": [
+      {
+        "attribute": "HistoryEventId",
+        "column": "HISTORY_EVENT_ID",
+        "bicc": true,
+        "pk": true
+      },
+      {
+        "attribute": "LCHistoryPEOActionId",
+        "column": "ACTION_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "LCHistoryPEOCreatedBy",
+        "column": "CREATED_BY",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "LCHistoryPEOCreationDate",
+        "column": "CREATION_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "LCHistoryPEOEventDate",
+        "column": "EVENT_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "LCHistoryPEOEventTypeId",
+        "column": "EVENT_TYPE_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "LCHistoryPEOLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "LCHistoryPEOLastUpdateLogin",
+        "column": "LAST_UPDATE_LOGIN",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "LCHistoryPEOLastUpdatedBy",
+        "column": "LAST_UPDATED_BY",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "LCHistoryPEOObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "LCHistoryPEOPersonId",
+        "column": "PERSON_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "LCHistoryPEOPhaseId",
+        "column": "PHASE_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "LCHistoryPEOProcessId",
+        "column": "PROCESS_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "LCHistoryPEORoutingStepId",
+        "column": "ROUTING_STEP_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "LCHistoryPEOSourceObjectId",
+        "column": "SOURCE_OBJECT_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "LCHistoryPEOStateId",
+        "column": "STATE_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "LCHistoryPEOSubjectId",
+        "column": "SUBJECT_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "StepDuration",
+        "column": "STEP_DURATION",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TraceLog",
+        "column": "TRACE_LOG",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "IRC_HIST_EVENT_B": [
+      {
+        "attribute": "HistoryEventTypeBPEOEventTypeCode",
+        "column": "CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "HistoryEventTypeBPEOEventTypeId",
+        "column": "EVENT_TYPE_ID",
+        "bicc": true,
+        "pk": false
+      }
+    ],
+    "IRC_PHASES_B": [
+      {
+        "attribute": "PhaseBPEOCode",
+        "column": "CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PhaseId",
+        "column": "PHASE_ID",
+        "bicc": true,
+        "pk": false
+      }
+    ],
+    "IRC_PROCESSES_B": [
+      {
+        "attribute": "ProcessBPEOCode",
+        "column": "CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ProcessId",
+        "column": "PROCESS_ID",
+        "bicc": true,
+        "pk": false
+      }
+    ],
+    "IRC_REQUISITIONS_B": [
+      {
+        "attribute": "RequisitionBPEOOpenDate",
+        "column": "OPEN_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "RequisitionBPEORequisitionTemplateId",
+        "column": "REQUISITION_TEMPLATE_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "RequisitionId",
+        "column": "REQUISITION_ID",
+        "bicc": true,
+        "pk": false
+      }
+    ],
+    "IRC_STATES_B": [
+      {
+        "attribute": "StateBPEOCode",
+        "column": "CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "StateId",
+        "column": "STATE_ID",
+        "bicc": true,
+        "pk": false
+      }
+    ]
+  }
+}

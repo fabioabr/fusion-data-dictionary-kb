@@ -1,0 +1,409 @@
+{
+  "source": "gl_daily_rates.md",
+  "source_hash": "54e3b40af28837fc735d8ced05e921a0",
+  "translated_at": null,
+  "items": [
+    {
+      "id": 1,
+      "br": "Visao Geral",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 2,
+      "br": "Armazena as taxas de câmbio diárias entre pares de moedas no General Ledger. Cada registro contém a taxa de conversão de uma moeda de origem para uma moeda de destino em uma data específica, vinculada a um tipo de conversão. É a tabela central de cotação cambial utilizada por todos os módulos financeiros do Oracle Fusion.",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 3,
+      "br": "Alta volumetria",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 4,
+      "br": "Esta tabela cresce diariamente com uma linha para cada combinação de par de moedas × tipo de conversão × data. Em ambientes com múltiplas moedas, o volume pode ser significativo. O Oracle armazena taxas nos dois sentidos (FROM→TO e TO→FROM).",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 5,
+      "br": "Proposito de Negocio",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 6,
+      "br": "Esta tabela é utilizada nos seguintes processos:",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 7,
+      "br": "Fornece a taxa para converter valores de moeda estrangeira para moeda funcional.",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 8,
+      "br": "GL utiliza a taxa da data do lançamento para calcular o valor na moeda funcional.",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 9,
+      "br": "Conversão de faturas em moeda estrangeira no momento do pagamento.",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 10,
+      "br": "Conversão de recebimentos em moeda estrangeira.",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 11,
+      "br": "Base para reavaliação de saldos em moeda estrangeira ao final do período.",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 12,
+      "br": "Conversão de valores para moeda de reporte.",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 13,
+      "br": "Taxas podem ser carregadas via API/interface do mercado (BACEN, ECB, etc.).",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 14,
+      "br": "Colunas Principais",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 15,
+      "br": "Confiança",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 16,
+      "br": "Escala de 0% a 100% — grau de certeza da descrição gerada por IA com base na documentação oficial Oracle (OEDMF/BICC Release 13/25A).",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 17,
+      "br": "- 🟢 81–100% — Coluna presente na documentação oficial Oracle; nome, tipo e descrição confirmados.",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 18,
+      "br": "- 🟡 51–80% — Coluna inferida por naming convention ou padrão Oracle; tipo exato pode variar.",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 19,
+      "br": "- 🔴 0–50% — Existência ou tipo incertos; pode não existir no release atual; validar no ambiente.",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 20,
+      "br": "Coluna",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 21,
+      "br": "Tipo",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 22,
+      "br": "Nulo?",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 23,
+      "br": "Categoria",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 24,
+      "br": "Descrição",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 25,
+      "br": "Código da moeda de origem (ex: USD)",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 26,
+      "br": "Código da moeda de destino (ex: BRL)",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 27,
+      "br": "Data da taxa de conversão",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 28,
+      "br": "Tipo de conversão (ex: Spot, Corporate)",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 29,
+      "br": "Financeiro",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 30,
+      "br": "Taxa de conversão (FROM → TO)",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 31,
+      "br": "Controle",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 32,
+      "br": "Status da taxa: I (informada), D (derivada), O (inversa)",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 33,
+      "br": "ATTRIBUTE1–5",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 34,
+      "br": "Atributos descritivos customizáveis",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 35,
+      "br": "Contexto do Descriptive Flexfield",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 36,
+      "br": "Sistema",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 37,
+      "br": "Controle de versionamento otimista (locking)",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 38,
+      "br": "Auditoria",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 39,
+      "br": "Usuário que criou o registro",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 40,
+      "br": "Data/hora de criação",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 41,
+      "br": "Último usuário que alterou",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 42,
+      "br": "Data/hora da última alteração",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 43,
+      "br": "Login da última sessão",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 44,
+      "br": "Relacionamentos",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 45,
+      "br": "Tabelas-pai (FK de entrada)",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 46,
+      "br": "tipo de conversão",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 47,
+      "br": "e  (moeda de origem da taxa de câmbio diária",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 48,
+      "br": "Tabelas-filha (FK de saída)",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 49,
+      "br": "Nenhuma FK direta — esta é uma tabela de referência consultada por todo o ERP.",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 50,
+      "br": "Uso Tipico",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 51,
+      "br": "Taxa de câmbio USD→BRL em uma data",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 52,
+      "br": "Histórico de taxas por período",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 53,
+      "br": "Verificar taxas faltantes",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 54,
+      "br": "Filtros comuns",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 55,
+      "br": "Taxa corporativa",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 56,
+      "br": "Taxa de mercado",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 57,
+      "br": "Par dólar/real",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 58,
+      "br": "Observacoes",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 59,
+      "br": "A chave primária é composta por FROM_CURRENCY + TO_CURRENCY + CONVERSION_DATE + CONVERSION_TYPE.",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 60,
+      "br": "O Oracle armazena taxas nos dois sentidos (USD→BRL e BRL→USD) — a taxa inversa é calculada automaticamente (1/taxa).",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 61,
+      "br": "Se não houver taxa para uma data específica, o sistema pode retornar erro em transações multi-moeda. É essencial manter as taxas carregadas para todos os dias úteis.",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 62,
+      "br": "O CONVERSION_RATE é multiplicativo: valor_origem × taxa = valor_destino.",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 63,
+      "br": "Para ambientes brasileiros, recomenda-se criar um tipo de conversão \"BACEN\" e carregar a PTAX diariamente.",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 64,
+      "br": "Taxas podem ser carregadas manualmente, via arquivo de importação ou via integração com provedores de dados de mercado.",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 65,
+      "br": "Referencias",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 66,
+      "br": "[Oracle Docs — GL_DAILY_RATES](https://docs.oracle.com/en/cloud/saas/financials/25a/oedmf/gldailyrates-25082.html)",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 67,
+      "br": "Dossiê do módulo GL",
+      "en": null,
+      "es": null
+    }
+  ]
+}

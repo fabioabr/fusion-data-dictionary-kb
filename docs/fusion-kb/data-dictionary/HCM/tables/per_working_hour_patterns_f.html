@@ -1,0 +1,2542 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PER_WORKING_HOUR_PATTERNS_F — Data Dictionary</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet">
+    <style>
+
+/* ====== DESIGN TOKENS (dark — default) ====== */
+:root {
+    --primary: #5BA4D9;
+    --primary-dark: #3182B1;
+    --primary-light: rgba(91, 164, 217, 0.12);
+    --secondary: #5BB8C4;
+    --success: #6ABF3B;
+    --success-light: rgba(106, 191, 59, 0.12);
+    --success-border: rgba(106, 191, 59, 0.3);
+    --warning: #F4AC00;
+    --warning-light: rgba(244, 172, 0, 0.12);
+    --warning-border: rgba(244, 172, 0, 0.3);
+    --danger: #E85D54;
+    --danger-light: rgba(232, 93, 84, 0.12);
+    --danger-border: rgba(232, 93, 84, 0.3);
+    --info: #38BDF8;
+    --info-light: rgba(56, 189, 248, 0.12);
+    --info-border: rgba(56, 189, 248, 0.3);
+    --bg: #0f1319;
+    --card-bg: #1a1f2e;
+    --text: #e2e8f0;
+    --text-muted: #8b9ab5;
+    --border: #2a3244;
+    --purple: #9B96FF;
+    --purple-light: rgba(155, 150, 255, 0.12);
+    --orange: #FF9473;
+    --teal: #2DD4BF;
+    --header-bg: linear-gradient(135deg, #1a2332 0%, #15202e 50%, #1a2838 100%);
+    --card-header-bg: #141924;
+    --th-bg: #141924;
+    --th-bg-hover: #1e2638;
+    --card-shadow: 0 2px 12px rgba(91, 164, 217, 0.1), 0 1px 4px rgba(0,0,0,0.3);
+    --progress-track: #2a3244;
+    --alert-warning-text: #f0c040;
+    --alert-danger-text: #f08a84;
+    --alert-info-text: #6ecbf5;
+    --alert-success-text: #8ad45a;
+    --pill-success-text: #8ad45a;
+    --pill-info-text: #6ecbf5;
+    --pill-warning-text: #f0c040;
+}
+[data-theme="light"] {
+    --primary: #3182B1;
+    --primary-dark: #256a94;
+    --primary-light: rgba(49, 130, 177, 0.1);
+    --secondary: #418F9D;
+    --success: #4C7E1B;
+    --success-light: rgba(76, 126, 27, 0.08);
+    --success-border: rgba(76, 126, 27, 0.25);
+    --warning: #F4AC00;
+    --warning-light: rgba(244, 172, 0, 0.08);
+    --warning-border: rgba(244, 172, 0, 0.25);
+    --danger: #C72F25;
+    --danger-light: rgba(199, 47, 37, 0.08);
+    --danger-border: rgba(199, 47, 37, 0.25);
+    --info: #0EA5E8;
+    --info-light: rgba(14, 165, 232, 0.08);
+    --info-border: rgba(14, 165, 232, 0.25);
+    --bg: #dde2e8;
+    --card-bg: #ffffff;
+    --text: #212B37;
+    --text-muted: #6E829F;
+    --border: #e2e8f0;
+    --purple: #7B76FE;
+    --purple-light: rgba(123, 118, 254, 0.08);
+    --orange: #FE7C58;
+    --teal: #00D8D8;
+    --header-bg: linear-gradient(135deg, #3182B1 0%, #256a94 50%, #418F9D 100%);
+    --card-header-bg: rgba(49, 130, 177, 0.2);
+    --th-bg: rgba(49, 130, 177, 0.2);
+    --th-bg-hover: rgba(49, 130, 177, 0.23);
+    --card-shadow: 0 2px 8px rgba(49, 130, 177, 0.24), 0 1px 3px rgba(0,0,0,0.1);
+    --progress-track: #e9ecef;
+    --alert-warning-text: #8a6600;
+    --alert-danger-text: #a52820;
+    --alert-info-text: #0878a8;
+    --alert-success-text: #3a6112;
+    --pill-success-text: #3a6112;
+    --pill-info-text: #0878a8;
+    --pill-warning-text: #9a6d00;
+}
+[data-theme="light"] .stat-card { background: #eaf1f7; }
+[data-theme="light"] .intro-text { background: #eaf1f7; }
+[data-theme="light"] .search-input { background: #eaf1f7; }
+
+/* ====== RESET ====== */
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, a, img, ul, ol, li,
+header, footer, nav, section, article, aside, button, input, select, textarea,
+table, tr, td, th, form, label, fieldset, legend { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Poppins', sans-serif; background: var(--bg); color: var(--text); line-height: 1.5; }
+.container { max-width: 1400px; margin: 0 auto; padding: 0 24px; }
+main.container { background: var(--card-bg); border-radius: 16px; padding: 0 32px 32px; box-shadow: 0 2px 16px rgba(0,0,0,0.06); margin-top: 30px; margin-bottom: 32px; }
+
+/* ====== HEADER ====== */
+.header { background: linear-gradient(135deg, #1a2332 0%, #15202e 50%, #1a2838 100%); color: white; padding: 36px 0 0; position: relative; overflow: hidden; }
+.header::before { content: ''; position: absolute; top: -50%; right: -10%; width: 500px; height: 500px; background: rgba(255,255,255,0.03); border-radius: 50%; z-index: 0; }
+.header-content { position: relative; z-index: 1; }
+.header-top { display: flex; align-items: flex-start; justify-content: space-between; flex-wrap: wrap; gap: 16px; margin-bottom: 8px; }
+.header-left { display: flex; align-items: center; gap: 16px; }
+.header-logo { height: 40px; }
+.logo-light { display: none; } .logo-dark { display: inline-block; }
+.header h1 { font-size: 1.5rem; font-weight: 700; letter-spacing: -0.5px; }
+.header .subtitle { font-size: 0.95rem; opacity: 0.85; font-weight: 300; margin-top: 2px; }
+.header-badges { display: flex; gap: 8px; align-items: center; margin-top: 10px; }
+/* header-right removed — flags are now in header-breadcrumb-row */
+.header-badge { background: rgba(255,255,255,0.15); padding: 6px 14px; border-radius: 8px; font-size: 0.78rem; display: flex; align-items: center; gap: 6px; backdrop-filter: blur(10px); }
+
+/* ====== LANG SELECTOR ====== */
+.lang-btn { display: inline-flex; align-items: center; gap: 5px; background: rgba(255,255,255,0.08); border: 2px solid transparent; border-radius: 8px; padding: 4px 10px 4px 8px; font-family: 'Poppins', sans-serif; font-size: 0.72rem; font-weight: 600; letter-spacing: 0.3px; color: rgba(255,255,255,0.55); cursor: pointer; transition: all 0.25s; line-height: 1; }
+.lang-btn svg { flex-shrink: 0; }
+.lang-btn:hover { background: rgba(255,255,255,0.18); color: rgba(255,255,255,0.9); }
+.lang-btn.active { border-color: #ffffff; background: rgba(255,255,255,0.22); color: #ffffff; box-shadow: 0 0 8px rgba(255,255,255,0.25); }
+[data-theme="light"] .lang-btn { background: rgba(255,255,255,0.12); color: rgba(255,255,255,0.5); }
+[data-theme="light"] .lang-btn:hover { background: rgba(255,255,255,0.28); color: rgba(255,255,255,0.95); }
+[data-theme="light"] .lang-btn.active { border-color: #ffffff; background: rgba(255,255,255,0.32); color: #ffffff; box-shadow: 0 0 12px rgba(255,255,255,0.4); }
+
+/* ====== TABS ====== */
+.tabs-nav { display: flex; gap: 4px; margin-top: 36px; overflow-x: auto; }
+.tab-btn { padding: 10px 24px; background: rgba(255,255,255,0.1); border: none; border-radius: 10px 10px 0 0; color: rgba(255,255,255,0.7); font-family: 'Poppins', sans-serif; font-size: 0.85rem; font-weight: 500; cursor: pointer; transition: all 0.2s; display: flex; align-items: center; gap: 8px; white-space: nowrap; }
+.tab-btn:hover { background: rgba(255,255,255,0.18); color: white; }
+.tab-btn.active { background: var(--bg); color: var(--primary); font-weight: 600; }
+[data-theme="light"] .header { background: linear-gradient(135deg, #1a2332 0%, #15202e 50%, #1a2838 100%); color: white; }
+[data-theme="light"] .footer { background: linear-gradient(135deg, #1a2332 0%, #15202e 50%, #1a2838 100%); color: white; }
+.tab-btn i { font-size: 1.1rem; }
+.tab-count { background: rgba(255,255,255,0.2); padding: 1px 8px; border-radius: 10px; font-size: 0.68rem; font-weight: 600; }
+.tab-btn.active .tab-count { background: var(--primary-light); color: var(--primary); }
+.tab-content { display: none; padding-top: 24px; padding-bottom: 32px; }
+.tab-content.active { display: block; }
+
+/* ====== STATS ====== */
+.stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; margin-bottom: 28px; }
+.stat-card { background: var(--card-bg); border-radius: 12px; padding: 18px 20px; box-shadow: var(--card-shadow); border: 1px solid var(--border); display: flex; align-items: center; gap: 14px; transition: box-shadow 0.2s, border-color 0.2s, background 0.2s; }
+.stat-card:hover { box-shadow: var(--card-shadow); border-color: var(--primary); background: var(--th-bg-hover); }
+.stat-card-icon { width: 44px; height: 44px; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 1.3rem; color: white; flex-shrink: 0; }
+.stat-card-info { flex: 1; }
+.stat-card-number { font-size: 1.12rem; font-weight: 700; line-height: 1.1; }
+.stat-card-label { font-size: 0.72rem; color: var(--text-muted); font-weight: 500; text-transform: uppercase; letter-spacing: 0.3px; }
+
+/* ====== INTRO TEXT ====== */
+.intro-text { font-size: 0.88rem; color: var(--text-muted); line-height: 1.6; margin-bottom: 24px; padding: 16px 20px; background: var(--card-bg); border-radius: 12px; border: 1px solid var(--border); border-left: 3px solid var(--primary); box-shadow: var(--card-shadow); }
+
+/* ====== CARDS ====== */
+.card { background: var(--card-bg); border-radius: 12px; border: 1px solid var(--border); box-shadow: 0 2px 8px rgba(0,0,0,0.03); overflow: hidden; margin-bottom: 20px; transition: box-shadow 0.2s, border-color 0.2s; }
+.card:hover { box-shadow: var(--card-shadow); border-color: var(--primary); }
+.card:hover > .card-header { background: var(--th-bg-hover); }
+.card-header { display: flex; align-items: center; gap: 10px; padding: 14px 18px; border-bottom: 1px solid var(--border); background: var(--card-header-bg); }
+.card-header-icon { width: 32px; height: 32px; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 1rem; color: white; flex-shrink: 0; }
+.card-title { font-weight: 600; font-size: 0.95rem; flex: 1; }
+.card-badge { padding: 2px 10px; border-radius: 12px; font-size: 0.7rem; font-weight: 600; white-space: nowrap; }
+.card-body { padding: 18px; }
+
+/* ====== ALERTS ====== */
+.alert { padding: 12px 16px; border-radius: 8px; font-size: 0.82rem; margin-bottom: 10px; border: 1px solid; line-height: 1.6; }
+.alert > i:first-child { font-size: 1.1rem; margin-right: 8px; vertical-align: middle; }
+.alert-warning { background: var(--warning-light); border-color: var(--warning-border); color: var(--alert-warning-text); }
+.alert-danger { background: var(--danger-light); border-color: var(--danger-border); color: var(--alert-danger-text); }
+.alert-info { background: var(--info-light); border-color: var(--info-border); color: var(--alert-info-text); }
+.alert-success { background: var(--success-light); border-color: var(--success-border); color: var(--alert-success-text); }
+
+/* ====== PILLS ====== */
+.pill { display: inline-block; padding: 2px 10px; border-radius: 12px; font-size: 0.7rem; font-weight: 600; }
+.pill-success { background: var(--success-light); color: var(--pill-success-text); border: 1px solid var(--success-border); }
+.pill-info { background: var(--info-light); color: var(--pill-info-text); border: 1px solid var(--info-border); }
+.pill-warning { background: var(--warning-light); color: var(--pill-warning-text); border: 1px solid var(--warning-border); }
+.pill-danger { background: var(--danger-light); color: var(--alert-danger-text); border: 1px solid var(--danger-border); }
+
+/* ====== TABLE ====== */
+.table-wrapper { overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; font-size: 0.82rem; }
+th { text-align: left; padding: 10px 14px; background: var(--th-bg); font-weight: 600; border-bottom: 2px solid var(--border); font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.3px; color: var(--text-muted); transition: background 0.2s; }
+thead tr:hover th { background: var(--th-bg-hover); }
+td { padding: 10px 14px; border-bottom: 1px solid var(--border); }
+tr:hover { background: var(--primary-light); }
+code { background: var(--bg); padding: 2px 6px; border-radius: 4px; font-size: 0.78rem; border: 1px solid var(--border); }
+.col-name { font-family: 'Courier New', monospace; font-weight: 600; color: var(--primary); font-size: 0.78rem; }
+.col-type { font-family: 'Courier New', monospace; font-size: 0.72rem; color: var(--text-muted); }
+
+/* ====== SEARCH ====== */
+.search-container { position: relative; margin-bottom: 24px; }
+.search-icon { position: absolute; left: 16px; top: 50%; transform: translateY(-50%); color: var(--text-muted); font-size: 1.1rem; }
+.search-input { width: 100%; padding: 12px 16px 12px 44px; background: var(--card-bg); border: 1px solid var(--border); border-radius: 12px; color: var(--text); font-family: 'Poppins', sans-serif; font-size: 0.88rem; outline: none; transition: border-color 0.2s; }
+.search-input:focus { border-color: var(--primary); }
+.search-input::placeholder { color: var(--text-muted); }
+
+/* ====== WIKILINKS ====== */
+a.wikilink { color: var(--primary); text-decoration: none; border-bottom: 1px dotted var(--primary); transition: all 0.2s; }
+a.wikilink:hover { color: var(--info); border-bottom-style: solid; }
+span.broken-link { color: var(--warning); border-bottom: 1px dashed var(--warning); cursor: help; }
+
+/* ====== RELATIONSHIP CARDS ====== */
+.rel-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 12px; }
+.rel-card { background: var(--card-header-bg); border: 1px solid var(--border); border-radius: 10px; padding: 14px 16px; display: flex; align-items: center; gap: 12px; transition: all 0.2s; text-decoration: none; color: var(--text); }
+.rel-card:hover { border-color: var(--primary); box-shadow: var(--card-shadow); }
+.rel-icon { width: 36px; height: 36px; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 1rem; color: white; flex-shrink: 0; }
+.rel-table { font-weight: 600; font-size: 0.85rem; }
+.rel-col { font-family: 'Courier New', monospace; font-size: 0.72rem; color: var(--text-muted); }
+.rel-desc { font-size: 0.78rem; color: var(--text-muted); margin-top: 2px; }
+
+/* ====== SQL BLOCKS ====== */
+.sql-block { background: var(--card-header-bg); border: 1px solid var(--border); border-radius: 12px; overflow: hidden; margin-bottom: 16px; }
+.sql-header { padding: 10px 16px; border-bottom: 1px solid var(--border); font-size: 0.82rem; font-weight: 600; display: flex; align-items: center; gap: 8px; background: var(--th-bg); }
+.sql-header i { color: var(--purple); }
+pre.sql-code { margin: 0; padding: 16px; font-family: 'Courier New', monospace; font-size: 0.82rem; line-height: 1.6; overflow-x: auto; color: var(--text); white-space: pre; }
+.kw { color: var(--purple); font-weight: 600; }
+.fn { color: var(--warning); }
+.str { color: var(--success); }
+
+/* ====== NOTE ITEMS ====== */
+.note-item { padding: 12px 16px; border-left: 3px solid var(--primary); margin-bottom: 8px; background: var(--card-header-bg); border-radius: 0 8px 8px 0; font-size: 0.82rem; line-height: 1.5; }
+
+/* ====== FILTER LIST ====== */
+.filter-list { list-style: none; }
+.filter-list li { padding: 10px 14px; border-bottom: 1px solid var(--border); font-size: 0.82rem; display: flex; align-items: center; gap: 12px; }
+.filter-list li:last-child { border-bottom: none; }
+
+/* ====== FOOTER ====== */
+.footer { background: linear-gradient(135deg, #1a2332 0%, #15202e 50%, #1a2838 100%); color: white; padding: 36px 0; position: relative; overflow: hidden; margin-top: 0; }
+.footer::before { content: ''; position: absolute; bottom: -50%; left: -10%; width: 500px; height: 500px; background: rgba(255,255,255,0.03); border-radius: 50%; z-index: 0; }
+.footer-content { position: relative; z-index: 1; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 24px; }
+.footer-left { display: flex; align-items: center; gap: 16px; }
+.footer-avatar { width: 48px; height: 48px; border-radius: 12px; background: rgba(255,255,255,0.15); display: flex; align-items: center; justify-content: center; font-size: 1.1rem; font-weight: 700; backdrop-filter: blur(10px); }
+.footer-author-name { font-size: 0.95rem; font-weight: 600; }
+.footer-author-role { font-size: 0.78rem; opacity: 0.7; }
+.footer-author-email { font-size: 0.72rem; opacity: 0.55; }
+.footer-author-email a { color: rgba(255,255,255,0.55); text-decoration: none; }
+.footer-author-email a:hover { color: white; text-decoration: underline; }
+.footer-author-date { font-size: 0.72rem; opacity: 0.55; }
+.footer-right { text-align: right; }
+.footer-doc-title { font-size: 0.85rem; font-weight: 500; opacity: 0.9; }
+.footer-doc-detail { font-size: 0.72rem; opacity: 0.6; margin-top: 2px; }
+.footer-seal { display: flex; align-items: center; gap: 8px; margin-top: 20px; padding-top: 16px; border-top: 1px solid rgba(255,255,255,0.12); font-size: 0.7rem; opacity: 0.5; justify-content: center; }
+.footer-seal i { font-size: 1rem; }
+
+/* ====== BREADCRUMB ROW ====== */
+.header-breadcrumb-row { display: flex; align-items: center; justify-content: space-between; margin-bottom: 16px; }
+.header-right-top { display: flex; align-items: center; }
+.breadcrumb { font-size: 0.78rem; color: rgba(255,255,255,0.5); }
+.breadcrumb a { color: rgba(255,255,255,0.65); text-decoration: none; }
+.breadcrumb a:hover { color: white; text-decoration: underline; }
+.breadcrumb .sep { margin: 0 6px; opacity: 0.4; }
+.breadcrumb .current { color: rgba(255,255,255,0.9); font-weight: 500; }
+
+/* ====== BACK TO TOP ====== */
+.back-to-top { position: fixed; bottom: 32px; right: 32px; width: 44px; height: 44px; border-radius: 12px; background: var(--primary); color: white; border: none; cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 1.3rem; box-shadow: 0 4px 16px rgba(91,164,217,0.35); opacity: 0; visibility: hidden; transform: translateY(10px); transition: opacity 0.3s, visibility 0.3s, transform 0.3s, background 0.2s; z-index: 999; }
+.back-to-top.visible { opacity: 1; visibility: visible; transform: translateY(0); }
+.back-to-top:hover { background: var(--primary-dark); box-shadow: 0 6px 20px rgba(91,164,217,0.5); }
+
+/* ====== UTILITIES ====== */
+.bg-primary { background: var(--primary); } .bg-success { background: var(--success); }
+.bg-info { background: var(--info); } .bg-warning { background: var(--warning); }
+.bg-danger { background: var(--danger); } .bg-purple { background: var(--purple); }
+.bg-orange { background: var(--orange); } .bg-teal { background: var(--teal); }
+.bg-secondary { background: var(--secondary); }
+
+/* ====== RESPONSIVE ====== */
+@media (max-width: 768px) {
+    .stats-grid { grid-template-columns: 1fr; }
+    .header h1 { font-size: 1.2rem; }
+    .tabs-nav { flex-wrap: wrap; }
+    .tab-btn { padding: 8px 14px; font-size: 0.78rem; }
+    .rel-grid { grid-template-columns: 1fr; }
+}
+@media print {
+    body { background: white; color: #212B37; }
+    .header { background: #3182B1 !important; }
+    .tab-btn { display: none; }
+    .tab-content { display: block !important; page-break-inside: avoid; }
+    .card { break-inside: avoid; }
+    .search-container, .back-to-top { display: none; }
+}
+
+    </style>
+</head>
+<body>
+
+<!-- ====== DATA (injected by build script) ====== -->
+<script>
+const DATA = {
+  "meta": {
+    "id": "DOC-HCM-722",
+    "doc_type": "system-doc",
+    "table_name": "PER_WORKING_HOUR_PATTERNS_F",
+    "subtitle": {
+      "pt": "Padrões de Horário de Trabalho"
+    },
+    "system": "Oracle Fusion Cloud HCM",
+    "module": "Human Capital Management",
+    "module_code": "HCM",
+    "status": "draft",
+    "owner": "fabio.patria",
+    "created_at": "2026-03-26",
+    "company": "Patria Investimentos",
+    "author_name": "Fabio A. B. Rodrigues",
+    "author_initials": "FABR",
+    "author_role": "Arquitetura e Produtividade Corporativa",
+    "author_email": "fabio.rodrigues.consult@patria.com",
+    "area": "Arquitetura e Produtividade Corporativa"
+  },
+  "overview": {
+    "pt": "Armazena os <strong>padrões de horário de trabalho</strong> (jornadas) aplicáveis aos colaboradores, incluindo horas diárias/semanais e tipo de regime. Tabela date-effective (_F)."
+  },
+  "alert": null,
+  "business_purpose": {
+    "pt": [
+      "Esta tabela é utilizada nos seguintes processos:",
+      "<strong>Gestão de jornada</strong> — define os padrões de trabalho (integral, parcial, flexível).",
+      "<strong>Cálculo de folha</strong> — base para cálculo de horas normais e extras.",
+      "<strong>Compliance trabalhista</strong> — garante aderência aos limites legais de jornada.",
+      "<strong>Planejamento de escalas</strong> — suporta definição de escalas de trabalho.",
+      "<strong>Relatórios de workforce</strong> — análises de distribuição de jornadas."
+    ]
+  },
+  "columns": [
+    {
+      "num": 1,
+      "name": "WORKING_HOUR_PATTERN_ID",
+      "type": "NUMBER(18)",
+      "nullable": false,
+      "category": {
+        "pt": "PK"
+      },
+      "description": {
+        "pt": "Identificador único do padrão de horário"
+      },
+      "fk": null,
+      "confidence": 85
+    },
+    {
+      "num": 2,
+      "name": "EFFECTIVE_START_DATE",
+      "type": "DATE",
+      "nullable": false,
+      "category": {
+        "pt": "Vigência"
+      },
+      "description": {
+        "pt": "Início da validade do registro"
+      },
+      "fk": null,
+      "confidence": 95
+    },
+    {
+      "num": 3,
+      "name": "EFFECTIVE_END_DATE",
+      "type": "DATE",
+      "nullable": false,
+      "category": {
+        "pt": "Vigência"
+      },
+      "description": {
+        "pt": "Fim da validade do registro"
+      },
+      "fk": null,
+      "confidence": 95
+    },
+    {
+      "num": 4,
+      "name": "ASSIGNMENT_ID",
+      "type": "NUMBER(18)",
+      "nullable": false,
+      "category": {
+        "pt": "FK"
+      },
+      "description": {
+        "pt": "Atribuição do colaborador"
+      },
+      "fk": "PER_ALL_ASSIGNMENTS_M",
+      "confidence": 85
+    },
+    {
+      "num": 5,
+      "name": "WORKING_HOURS",
+      "type": "NUMBER(5,2)",
+      "nullable": true,
+      "category": {
+        "pt": "Dados"
+      },
+      "description": {
+        "pt": "Quantidade de horas de trabalho"
+      },
+      "fk": null,
+      "confidence": 85
+    },
+    {
+      "num": 6,
+      "name": "FREQUENCY",
+      "type": "VARCHAR2(30)",
+      "nullable": true,
+      "category": {
+        "pt": "Classificação"
+      },
+      "description": {
+        "pt": "Frequência (diária, semanal, mensal)"
+      },
+      "fk": null,
+      "confidence": 85
+    },
+    {
+      "num": 7,
+      "name": "WORKING_HOUR_PATTERN",
+      "type": "VARCHAR2(30)",
+      "nullable": true,
+      "category": {
+        "pt": "Classificação"
+      },
+      "description": {
+        "pt": "Tipo do padrão (ex.: STANDARD, FLEXIBLE)"
+      },
+      "fk": null,
+      "confidence": 75
+    },
+    {
+      "num": 8,
+      "name": "CREATED_BY",
+      "type": "VARCHAR2(64)",
+      "nullable": false,
+      "category": {
+        "pt": "Auditoria"
+      },
+      "description": {
+        "pt": "Usuário que criou o registro"
+      },
+      "fk": null,
+      "confidence": 95
+    },
+    {
+      "num": 9,
+      "name": "CREATION_DATE",
+      "type": "TIMESTAMP",
+      "nullable": false,
+      "category": {
+        "pt": "Auditoria"
+      },
+      "description": {
+        "pt": "Data/hora de criação"
+      },
+      "fk": null,
+      "confidence": 95
+    },
+    {
+      "num": 10,
+      "name": "LAST_UPDATED_BY",
+      "type": "VARCHAR2(64)",
+      "nullable": false,
+      "category": {
+        "pt": "Auditoria"
+      },
+      "description": {
+        "pt": "Último usuário que alterou"
+      },
+      "fk": null,
+      "confidence": 95
+    },
+    {
+      "num": 11,
+      "name": "LAST_UPDATE_DATE",
+      "type": "TIMESTAMP",
+      "nullable": false,
+      "category": {
+        "pt": "Auditoria"
+      },
+      "description": {
+        "pt": "Data/hora da última alteração"
+      },
+      "fk": null,
+      "confidence": 95
+    }
+  ],
+  "relationships": {
+    "parents": [
+      {
+        "table": "per_all_assignments_m",
+        "column": "ASSIGNMENT_ID",
+        "desc": {
+          "pt": "atribuição do colaborador"
+        }
+      }
+    ],
+    "children": []
+  },
+  "sql": [
+    {
+      "title": {
+        "pt": "Padrões de horário ativos"
+      },
+      "code": "SELECT whp.WORKING_HOURS, whp.FREQUENCY, whp.WORKING_HOUR_PATTERN,\n       a.ASSIGNMENT_NUMBER\nFROM   PER_WORKING_HOUR_PATTERNS_F whp\nJOIN   PER_ALL_ASSIGNMENTS_M a ON whp.ASSIGNMENT_ID = a.ASSIGNMENT_ID\nWHERE  SYSDATE BETWEEN whp.EFFECTIVE_START_DATE AND whp.EFFECTIVE_END_DATE;"
+    }
+  ],
+  "filters": [
+    {
+      "code": "ASSIGNMENT_ID = :p_assignment_id",
+      "desc": {
+        "pt": "`ASSIGNMENT_ID = :p_assignment_id` — Padrão de um colaborador específico"
+      }
+    },
+    {
+      "code": "FREQUENCY = 'W'",
+      "desc": {
+        "pt": "`FREQUENCY = 'W'` — Padrões semanais"
+      }
+    }
+  ],
+  "notes": {
+    "pt": [
+      "Tabela date-effective (_F) — registros possuem vigência temporal.",
+      "O campo WORKING_HOURS combinado com FREQUENCY define a jornada completa.",
+      "Alterações de jornada geram novos registros com datas de vigência atualizadas.",
+      "Fundamental para cálculos de proporcionalidade em admissões/demissões."
+    ]
+  },
+  "stats": {
+    "avg_confidence": 90,
+    "categories": 6
+  },
+  "table_map": {
+    "GL_ACCESS_SETS": "GL",
+    "GL_ACCESS_SET_ASSIGNMENTS": "GL",
+    "GL_ACCESS_SET_LEDGERS": "GL",
+    "GL_AUTOREV_CRITERIA_SETS": "GL",
+    "GL_BALANCES": "GL",
+    "GL_BUDGET_BALANCES": "GL",
+    "GL_CALENDARS": "GL",
+    "GL_CODE_COMBINATIONS": "GL",
+    "GL_DAILY_CONVERSION_TYPES": "GL",
+    "GL_DAILY_RATES": "GL",
+    "GL_ENCUMBRANCE_TYPES_B": "GL",
+    "GL_ENCUMBRANCE_TYPES_TL": "GL",
+    "GL_ENCUMBRANCE_TYPES_VL": "GL",
+    "GL_FISCAL_DAY_V": "GL",
+    "GL_FISCAL_PERIOD_V": "GL",
+    "GL_FISCAL_QUARTER_V": "GL",
+    "GL_FISCAL_YEAR_V": "GL",
+    "GL_IMPORT_REFERENCES": "GL",
+    "GL_JE_BATCHES": "GL",
+    "GL_JE_CATEGORIES_B": "GL",
+    "GL_JE_CATEGORIES_TL": "GL",
+    "GL_JE_HEADERS": "GL",
+    "GL_JE_LINES": "GL",
+    "GL_JE_LINES_RECON": "GL",
+    "GL_JE_SOURCES_B": "GL",
+    "GL_JE_SOURCES_TL": "GL",
+    "GL_LEDGERS": "GL",
+    "GL_LEDGER_CONFIG_DETAILS": "GL",
+    "GL_LEDGER_SEGMENT_VALUES": "GL",
+    "GL_LEDGER_SET_ASSIGNMENTS": "GL",
+    "GL_LEGAL_ENTITIES_BSVS": "GL",
+    "GL_LOOKUPS": "GL",
+    "GL_PERIOD_STATUSES": "GL",
+    "GL_PERIOD_TYPES": "GL",
+    "GL_RECONCILIATION_RULES": "GL",
+    "GL_SEG_VAL_HIER_CF": "GL",
+    "GL_STAT_ACCOUNT_UOM": "GL",
+    "GL_TRANSACTION_CALENDAR": "GL",
+    "XCC_CONTROL_BUDGETS": "HCM",
+    "AP_AGING_PERIODS": "AP",
+    "AP_AGING_PERIOD_LINES": "AP",
+    "AP_BATCHES_ALL": "AP",
+    "AP_CHECKS_ALL": "AP",
+    "AP_DISCOUNT_OFFERS_TL": "AP",
+    "AP_DISTRIBUTION_SETS_ALL": "AP",
+    "AP_HOLDS_ALL": "AP",
+    "AP_HOLD_CODES": "AP",
+    "AP_INCOME_TAX_REGIONS": "AP",
+    "AP_INCOME_TAX_TYPES": "AP",
+    "AP_INVOICES_ALL": "AP",
+    "AP_INVOICE_DISTRIBUTIONS_ALL": "AP",
+    "AP_INVOICE_LINES_ALL": "AP",
+    "AP_INVOICE_PAYMENTS_ALL": "AP",
+    "AP_INV_APRVL_HIST_ALL": "AP",
+    "AP_INV_SELECTION_CRITERIA_ALL": "AP",
+    "AP_LOOKUP_CODES": "AP",
+    "AP_PAYMENT_HISTORY_ALL": "AP",
+    "AP_PAYMENT_HIST_DISTS": "AP",
+    "AP_PAYMENT_SCHEDULES_ALL": "AP",
+    "AP_PREPAY_APP_DISTS": "AP",
+    "AP_RECON_DIFFERENCE_DETAILS": "AP",
+    "AP_RECON_SUMMARY_DETAILS": "AP",
+    "AP_RECON_SUMMARY_PARAMETERS": "AP",
+    "AP_SELF_ASSESSED_TAX_DIST_ALL": "AP",
+    "AP_SYSTEM_PARAMETERS_ALL": "AP",
+    "AP_TERMS_B": "AP",
+    "AP_TERMS_LINES": "AP",
+    "AP_TERMS_TL": "AP",
+    "AP_TERMS_VL": "AP",
+    "AP_TOLERANCE_TEMPLATES": "AP",
+    "AP_TRIAL_BALANCES": "AP",
+    "EXM_EXPENSES": "AP",
+    "EXM_EXPENSE_DISTS": "AP",
+    "EXM_EXPENSE_REPORTS": "AP",
+    "EXM_EXPENSE_TEMPLATES": "AP",
+    "EXM_EXPENSE_TYPES": "AP",
+    "AR_ADJUSTMENTS_ALL": "AR",
+    "AR_AGING_BUCKETS": "AR",
+    "AR_AGING_BUCKET_LINES_B": "AR",
+    "AR_AGING_BUCKET_LINES_TL": "AR",
+    "AR_APP_EXCEPTION_RULES": "AR",
+    "AR_APP_RULE_SETS": "AR",
+    "AR_APPROVAL_ACTION_HISTORY": "AR",
+    "AR_AUTOCASH_HIERARCHIES": "AR",
+    "AR_AUTOMATCH_RULES": "AR",
+    "AR_BATCHES_ALL": "AR",
+    "AR_CASH_RECEIPTS_ALL": "AR",
+    "AR_CASH_RECEIPT_HISTORY_ALL": "AR",
+    "AR_CASH_REMIT_REFS_ALL": "AR",
+    "AR_CHARGE_SCHEDULES": "AR",
+    "AR_CHARGE_SCHEDULE_HDRS": "AR",
+    "AR_CHARGE_SCHEDULE_LINES": "AR",
+    "AR_COLLECTORS": "AR",
+    "AR_CONS_INV_ALL": "AR",
+    "AR_DEFERRED_LINES_ALL": "AR",
+    "AR_DETAILED_DISTRIBUTIONS_ALL": "AR",
+    "AR_DISPUTE_HISTORY": "AR",
+    "AR_DISTRIBUTIONS_ALL": "AR",
+    "AR_DISTRIBUTION_SETS_ALL": "AR",
+    "AR_INTEREST_HEADERS_ALL": "AR",
+    "AR_INTEREST_LINES_ALL": "AR",
+    "AR_LOOKUPS": "AR",
+    "AR_MEMO_LINES_ALL_B": "AR",
+    "AR_MEMO_LINES_ALL_TL": "AR",
+    "AR_MISC_CASH_DISTRIBUTIONS_ALL": "AR",
+    "AR_PAYMENT_SCHEDULES_ALL": "AR",
+    "AR_RATE_ADJUSTMENTS_ALL": "AR",
+    "AR_RECEIPT_CLASSES": "AR",
+    "AR_RECEIPT_METHODS": "AR",
+    "AR_RECEIPT_METHOD_ACCOUNTS_ALL": "AR",
+    "AR_RECEIVABLES_TRX_ALL": "AR",
+    "AR_RECEIVABLE_APPLICATIONS_ALL": "AR",
+    "AR_RECON_DIFFERENCE_DETAILS": "AR",
+    "AR_RECON_SUMMARY_DETAILS": "AR",
+    "AR_RECON_SUMMARY_PARAMETERS": "AR",
+    "AR_REF_ACCOUNTS_ALL": "AR",
+    "AR_REMIT_TO_LOCS_ALL": "AR",
+    "AR_REVENUE_ADJUSTMENTS_ALL": "AR",
+    "AR_SALES_CREDIT_TYPES": "AR",
+    "AR_STANDARD_TEXT_B": "AR",
+    "AR_STANDARD_TEXT_TL": "AR",
+    "AR_STATEMENT_CYCLES": "AR",
+    "AR_SYSTEM_PARAMETERS_ALL": "AR",
+    "AR_TRANSACTION_HISTORY_ALL": "AR",
+    "AR_TRANSMISSIONS_ALL": "AR",
+    "AR_TRANSMISSION_FORMATS": "AR",
+    "RA_BATCHES_ALL": "AR",
+    "RA_BATCH_SOURCES_ALL": "AR",
+    "RA_CM_REQUESTS_ALL": "AR",
+    "RA_CUSTOMER_TRX_ALL": "AR",
+    "RA_CUSTOMER_TRX_LINES_ALL": "AR",
+    "RA_CUST_RECEIPT_METHODS": "AR",
+    "RA_CUST_TRX_LINE_GL_DIST_ALL": "AR",
+    "RA_CUST_TRX_LINE_SALESREPS_ALL": "AR",
+    "RA_CUST_TRX_TYPES_ALL": "AR",
+    "RA_GROUPING_RULES": "AR",
+    "RA_REMIT_TOS_ALL": "AR",
+    "RA_RULES": "AR",
+    "RA_TERMS_B": "AR",
+    "RA_TERMS_LINES": "AR",
+    "RA_TERMS_TL": "AR",
+    "RA_TERMS_VL": "AR",
+    "PON_ACKNOWLEDGEMENTS": "PO",
+    "PON_ACTION_HISTORY": "PO",
+    "PON_AUCTION_ATTRIBUTES": "PO",
+    "PON_AUCTION_HEADERS_ALL": "PO",
+    "PON_AUCTION_ITEM_PRICES_ALL": "PO",
+    "PON_AUCTION_SECTIONS": "PO",
+    "PON_AUC_DOCTYPES_B": "PO",
+    "PON_AUC_DOCTYPES_TL": "PO",
+    "PON_AUC_DOCTYPES_VL": "PO",
+    "PON_BIDDING_PARTIES": "PO",
+    "PON_BID_ATTRIBUTE_VALUES": "PO",
+    "PON_BID_HEADERS": "PO",
+    "PON_BID_ITEM_PRICES": "PO",
+    "PON_BID_PO_LINES": "PO",
+    "PON_BID_PO_NUMBERS": "PO",
+    "PON_BID_REQUIREMENTS": "PO",
+    "PON_BID_REQUIREMENT_VALUES": "PO",
+    "PON_BID_SECTIONS": "PO",
+    "PON_DOCTYPE_STYLES_B": "PO",
+    "PON_DOCTYPE_STYLES_TL": "PO",
+    "PON_DOCTYPE_STYLES_VL": "PO",
+    "PON_NEGOTIATION_STYLES_B": "PO",
+    "PON_NEGOTIATION_STYLES_TL": "PO",
+    "PON_NEG_AGG_TO_OBJ_OTBI_V": "PO",
+    "PON_NEG_AGG_TO_PROG_OTBI_V": "PO",
+    "PON_NEG_TEAM_MEMBERS": "PO",
+    "PON_OBJECTIVE_NEGOTIATIONS": "PO",
+    "PON_OBJ_AGG_TO_PROG_OTBI_V": "PO",
+    "PON_PROGRAM_HEADERS": "PO",
+    "PON_PROGRAM_OBJECTIVES": "PO",
+    "PON_PROGRAM_TEAM_MEMBERS": "PO",
+    "PON_REQUIREMENTS": "PO",
+    "PON_REQUIREMENT_SCORES": "PO",
+    "PON_REQUIREMENT_SECTIONS": "PO",
+    "PON_SUPPLIER_ACTIVITIES": "PO",
+    "POQ_ALL_QNAIRE_RESP_VALUES_V": "PO",
+    "POQ_ALL_RESP_REPOS_VALUES_V": "PO",
+    "POQ_ASSESSMENTS": "PO",
+    "POQ_ASSESSMENT_QUALS": "PO",
+    "POQ_EVALUATION_TEAM": "PO",
+    "POQ_INITIATIVES": "PO",
+    "POQ_INITIATIVE_SUPPLIERS": "PO",
+    "POQ_QUAL_AREAS_VL": "PO",
+    "POQ_QUAL_AREA_ALL_QUESTIONS_V": "PO",
+    "POQ_QUAL_AREA_OUTCOMES": "PO",
+    "POQ_QUAL_AREA_QUESTIONS": "PO",
+    "POQ_QUAL_ASMT_INIT_V": "PO",
+    "POQ_QUAL_MODELS": "PO",
+    "POQ_QUAL_MODEL_AREAS": "PO",
+    "POQ_QUAL_MODEL_OUTCOMES": "PO",
+    "POQ_QUAL_RESPONSES": "PO",
+    "POQ_QUESTIONS_VL": "PO",
+    "POQ_QUESTION_SCORES": "PO",
+    "POQ_QUESTION_STRUCTURE_V": "PO",
+    "POQ_QUESTNAIRES_VL": "PO",
+    "POQ_QUESTNAIRE_RESPONSES": "PO",
+    "POQ_QUESTNAIRE_RESP_HEADERS": "PO",
+    "POQ_QUESTNAIRE_RESP_SECTIONS": "PO",
+    "POQ_QUES_ACC_RESPONSES_VL": "PO",
+    "POQ_RESPONSE_REPOSITORY": "PO",
+    "POR_BROWSE_CATEGORIES_TL": "PO",
+    "POR_BROWSE_CATEGORIES_VL": "PO",
+    "POR_ITEM_CAT_PARENT_LEVELS": "PO",
+    "POR_LINE_LOCATIONS_SUM_V": "PO",
+    "POR_REQUISITION_HEADERS_ALL": "PO",
+    "POR_REQUISITION_LINES_ALL": "PO",
+    "POR_REQ_DISTRIBUTIONS_ALL": "PO",
+    "POS_USER_ACCESS_VALUES": "PO",
+    "POZ_ADDRESS_REQUESTS": "PO",
+    "POZ_ALL_SUPPLIER_CONTACTS_V": "PO",
+    "POZ_APPROVAL_HISTORY": "PO",
+    "POZ_BI_APPR_USER_COMMENTS_V": "PO",
+    "POZ_BI_HIERARCHY_AP_INV_DIST_V": "PO",
+    "POZ_BI_SUPP_AP_INV_DIST_V": "PO",
+    "POZ_BI_SUPP_REG_BANK_ACCOUNT_V": "PO",
+    "POZ_BI_SUP_SITES_AP_INV_DIST_V": "PO",
+    "POZ_BUSINESS_CLASSIFICATIONS_V": "PO",
+    "POZ_BUS_CLASSIFICATIONS": "PO",
+    "POZ_BUS_CLASS_REQS": "PO",
+    "POZ_CERTIFYING_AGENCIES": "PO",
+    "POZ_CONTACT_ACT_DATA_ACCESS_V": "PO",
+    "POZ_CONTACT_REQUESTS": "PO",
+    "POZ_EXT_BANK_ACCOUNTS_V": "PO",
+    "POZ_PRODUCT_SERVICE_REQUESTS": "PO",
+    "POZ_PROVISIONABLE_ROLES": "PO",
+    "POZ_SITE_ASSIGNMENTS_ALL_M": "PO",
+    "POZ_SPEND_AUTH_REQUESTS": "PO",
+    "POZ_SUPPLIERS": "PO",
+    "POZ_SUPPLIERS_PII": "PO",
+    "POZ_SUPPLIERS_V": "PO",
+    "POZ_SUPPLIER_ADDRESS_V": "PO",
+    "POZ_SUPPLIER_CONTACTS": "PO",
+    "POZ_SUPPLIER_MAPPINGS": "PO",
+    "POZ_SUPPLIER_REGISTRATIONS": "PO",
+    "POZ_SUPPLIER_SITES_ALL_M": "PO",
+    "POZ_SUPPLIER_SITES_PII": "PO",
+    "POZ_SUPP_ACCESS_SITES_V": "PO",
+    "POZ_SUPP_PROD_SERVICES_ATTR_V": "PO",
+    "POZ_SUPP_RELATIONSHIP_VL": "PO",
+    "POZ_SUPP_REQUESTS": "PO",
+    "POZ_SUPP_ROLE_ASSIGNMENTS_V": "PO",
+    "POZ_SUPP_SITES_CONTACTS_V": "PO",
+    "POZ_SUP_PRODUCTS_SERVICES": "PO",
+    "POZ_SUP_REG_PII": "PO",
+    "POZ_SUP_THIRDPARTY_PAYMENT_REL": "PO",
+    "POZ_UP_REQUESTS": "PO",
+    "POZ_UP_ROLE_REQUESTS": "PO",
+    "PO_ACTION_HISTORY": "PO",
+    "PO_AGENTS_V": "PO",
+    "PO_AGENT_ASSIGNMENTS": "PO",
+    "PO_APPROVED_SUPPLIER_LIST": "PO",
+    "PO_ASL_ATTRIBUTES": "PO",
+    "PO_ASL_STATUSES": "PO",
+    "PO_ATTRIBUTE_VALUES": "PO",
+    "PO_ATTRIBUTE_VALUES_TLP": "PO",
+    "PO_DISTRIBUTIONS_ALL": "PO",
+    "PO_DISTRIBUTIONS_DRAFT_ALL": "PO",
+    "PO_DOCUMENT_TYPES_ALL_B": "PO",
+    "PO_DOCUMENT_TYPES_ALL_TL": "PO",
+    "PO_DOCUMENT_TYPES_VL": "PO",
+    "PO_DOC_STYLE_HEADERS": "PO",
+    "PO_DOC_STYLE_LINES_B": "PO",
+    "PO_DOC_STYLE_LINES_TL": "PO",
+    "PO_DOC_STYLE_LINES_VL": "PO",
+    "PO_GA_ORG_ASSIGNMENTS": "PO",
+    "PO_HAZARD_CLASSES_B": "PO",
+    "PO_HAZARD_CLASSES_TL": "PO",
+    "PO_HAZARD_CLASSES_VL": "PO",
+    "PO_HEADERS_ALL": "PO",
+    "PO_HEADERS_ARCHIVE_ALL": "PO",
+    "PO_HEADERS_DRAFT_ALL": "PO",
+    "PO_LINES_ALL": "PO",
+    "PO_LINES_DRAFT_ALL": "PO",
+    "PO_LINE_LOCATIONS_ALL": "PO",
+    "PO_LINE_LOCATIONS_DRAFT_ALL": "PO",
+    "PO_LINE_TYPES_B": "PO",
+    "PO_LINE_TYPES_TL": "PO",
+    "PO_LOOKUP_CODES": "PO",
+    "PO_NOTIFICATION_CONTROLS": "PO",
+    "PO_ORIG_LINE_LOCATIONS_ALL_V": "PO",
+    "PO_SYSTEM_PARAMETERS_ALL": "PO",
+    "PO_UN_NUMBERS_VL": "PO",
+    "PO_VERSIONS": "PO",
+    "PO_VERSIONS_INIT_SEQUENCE_V": "PO",
+    "PO_VERSIONS_UNPROCESSED_V": "PO",
+    "RCV_SHIPMENT_HEADERS": "PO",
+    "RCV_SHIPMENT_LINES": "PO",
+    "RCV_TRANSACTIONS": "PO",
+    "ANC_ABSENCE_CATEGORIES_F": "HCM",
+    "ANC_ABSENCE_CATEGORIES_F_TL": "HCM",
+    "ANC_ABSENCE_PLANS_F": "HCM",
+    "ANC_ABSENCE_PLANS_F_TL": "HCM",
+    "ANC_ABSENCE_REASONS_F": "HCM",
+    "ANC_ABSENCE_REASONS_F_TL": "HCM",
+    "ANC_ABSENCE_TYPES_F": "HCM",
+    "ANC_ABSENCE_TYPES_F_TL": "HCM",
+    "ANC_ABSENCE_TYPE_CATE_F": "HCM",
+    "ANC_ABSENCE_TYPE_REASONS_F": "HCM",
+    "ANC_ABS_CERTIFICATIONS_F_TL": "HCM",
+    "ANC_ACCRUAL_BANDS_F": "HCM",
+    "ANC_PER_ABS_CERTS": "HCM",
+    "ANC_PER_ABS_DAILY_DTLS": "HCM",
+    "ANC_PER_ABS_ENTRIES": "HCM",
+    "ANC_PER_ABS_ENTRY_DTLS": "HCM",
+    "ANC_PER_ABS_MATERNITY": "HCM",
+    "ANC_PER_ABS_PLAN_ENTRIES": "HCM",
+    "ANC_PER_ABS_PLN_SUMM_ENT": "HCM",
+    "ANC_PER_ABS_TYPE_ENTRIES": "HCM",
+    "ANC_PER_ACCRUAL_ENTRIES": "HCM",
+    "ANC_PER_ACRL_ENTRY_DTLS": "HCM",
+    "ANC_PER_PLAN_ENROLLMENT": "HCM",
+    "BEN_ACTN_TYP_VL": "HCM",
+    "BEN_BENEFIT_RELATIONS_F": "HCM",
+    "BEN_BENFTS_GRP": "HCM",
+    "BEN_BILL_CALENDAR": "HCM",
+    "BEN_BILL_CHARGES": "HCM",
+    "BEN_BILL_CHARGE_DETAILS": "HCM",
+    "BEN_BILL_CHARGE_PAYMENTS": "HCM",
+    "BEN_BILL_CYCLE": "HCM",
+    "BEN_BILL_ENRT_RSLT": "HCM",
+    "BEN_BILL_PAYMENTS": "HCM",
+    "BEN_BILL_PER_CREDIT": "HCM",
+    "BEN_CRT_ORDR_F": "HCM",
+    "BEN_CRT_ORDR_PL_DPNT": "HCM",
+    "BEN_DOCS_PRVDD_DTLS": "HCM",
+    "BEN_ELIGY_PRFL": "HCM",
+    "BEN_ELIG_CVRD_DPNT": "HCM",
+    "BEN_ELIG_OBJ_ELIG_PROFL_F": "HCM",
+    "BEN_ELIG_OBJ_F": "HCM",
+    "BEN_ELIG_PERSON_DETAILS_V": "HCM",
+    "BEN_ELIG_RSLT_F": "HCM",
+    "BEN_LEGAL_DISCLAIMER": "HCM",
+    "BEN_LER_F": "HCM",
+    "BEN_OPT_F": "HCM",
+    "BEN_PER_BENEFIT_GROUP_F": "HCM",
+    "BEN_PER_BILL_INFO_F": "HCM",
+    "BEN_PER_BNF_ORG": "HCM",
+    "BEN_PER_IN_LER": "HCM",
+    "BEN_PER_LE_HABITS_COV_F": "HCM",
+    "BEN_PGM_F": "HCM",
+    "BEN_PIL_ELCTBL_CHC_POPL": "HCM",
+    "BEN_PL_BNF": "HCM",
+    "BEN_PL_F": "HCM",
+    "BEN_PL_TYP_F": "HCM",
+    "BEN_PRMRY_CARE_PRVDR": "HCM",
+    "BEN_PROGRAM_HIERARCHY_V": "HCM",
+    "BEN_PRTT_ENRT_ACTN": "HCM",
+    "BEN_PRTT_ENRT_CTFN_PRVDD": "HCM",
+    "BEN_PRTT_ENRT_RSLT": "HCM",
+    "BEN_PRTT_LEG_DISCMR_ACTN": "HCM",
+    "BEN_PRTT_RT_VAL": "HCM",
+    "BEN_PTNL_LER_FOR_PER": "HCM",
+    "CMP_BUDGET_POOLS_B": "HCM",
+    "CMP_BUDGET_POOLS_TL": "HCM",
+    "CMP_CALC_ALERTS_VL": "HCM",
+    "CMP_COMPONENTS_B": "HCM",
+    "CMP_COMPONENTS_TL": "HCM",
+    "CMP_CWB_ALERTS": "HCM",
+    "CMP_CWB_HRCHY_CF_DN": "HCM",
+    "CMP_CWB_HRCHY_V": "HCM",
+    "CMP_CWB_PERF_RATINGS": "HCM",
+    "CMP_CWB_PERSON_INFO": "HCM",
+    "CMP_CWB_PERSON_INFO_V": "HCM",
+    "CMP_CWB_PERSON_RATES": "HCM",
+    "CMP_CWB_PLAN_DEFINITIONS": "HCM",
+    "CMP_CWB_PROMOTIONS": "HCM",
+    "CMP_CWB_XCHG": "HCM",
+    "CMP_PERSON_BUDGETS_V": "HCM",
+    "CMP_PLANS_B": "HCM",
+    "CMP_PLANS_TL": "HCM",
+    "CMP_PLAN_PERIODS": "HCM",
+    "CMP_PRE_SALARY_V": "HCM",
+    "CMP_PROFILE_VALUES": "HCM",
+    "CMP_SALARY": "HCM",
+    "CMP_SALARY_BASES": "HCM",
+    "CMP_SALARY_BASES_TL": "HCM",
+    "CMP_SALARY_COMPONENTS": "HCM",
+    "CMP_SALARY_HISTORY_V": "HCM",
+    "CMP_STOCK_DETAILS": "HCM",
+    "FF_FORMULAS_VL": "HCM",
+    "FF_USER_COLUMNS_VL": "HCM",
+    "FF_USER_COLUMN_INSTANCES_F": "HCM",
+    "FF_USER_ROWS_F": "HCM",
+    "FF_USER_ROWS_TL": "HCM",
+    "FF_USER_TABLES_VL": "HCM",
+    "HNS_ACTIONS": "HCM",
+    "HNS_AIR_QUALITY_EVT_DETAIL": "HCM",
+    "HNS_ERGONOMIC_EVT_DETAIL": "HCM",
+    "HNS_FIRE_INC_EVENT_DETAIL": "HCM",
+    "HNS_INCIDENTS_DETAIL": "HCM",
+    "HNS_INCIDENTS_SUMMARY": "HCM",
+    "HNS_INCIDENT_AGENCIES_DTL": "HCM",
+    "HNS_INJURED_PERSONS": "HCM",
+    "HNS_INJURED_PERSONS_SUMMARY": "HCM",
+    "HNS_INJURED_PERSON_PARTS": "HCM",
+    "HNS_INVESTIGATIONS_SUMMARY": "HCM",
+    "HNS_INVEST_FINDINGS": "HCM",
+    "HNS_INVEST_RECOMMENDS": "HCM",
+    "HNS_ISSUE_EVT_DETAIL": "HCM",
+    "HNS_NEAR_MISS_EVT_DETAIL": "HCM",
+    "HNS_NOTES": "HCM",
+    "HNS_NOTICE_VIO_EVT_DETAIL": "HCM",
+    "HNS_PERSONS": "HCM",
+    "HNS_PROP_DAMAGE_EVT_DETAIL": "HCM",
+    "HNS_SPILL_REL_EVT_DETAIL": "HCM",
+    "HNS_SUGG_IMPROV_EVT_DETAIL": "HCM",
+    "HNS_UNSAFE_ACT_EVT_DETAIL": "HCM",
+    "HNS_UNSAFE_COND_EVT_DETAIL": "HCM",
+    "HNS_VEH_INC_EVENT_DETAIL": "HCM",
+    "HNS_VEH_INC_EVENT_PASSENGERS": "HCM",
+    "HNS_VEH_INC_EVENT_SUMMARY": "HCM",
+    "HMO_MODEL_PLANS_B": "HCM",
+    "HMO_MODEL_PLANS_TL": "HCM",
+    "HMO_MODEL_PLAN_DETAILS": "HCM",
+    "HRA_CHECK_IN_MEETINGS": "HCM",
+    "HRA_CHECK_IN_TMPLS_B": "HCM",
+    "HRA_CHECK_IN_TMPLS_TL": "HCM",
+    "HRA_CHECK_IN_TMPLS_VL": "HCM",
+    "HRA_DOC_TYPES_B": "HCM",
+    "HRA_DOC_TYPES_TL": "HCM",
+    "HRA_EVALUATIONS": "HCM",
+    "HRA_EVAL_ITEMS": "HCM",
+    "HRA_EVAL_PARTICIPANTS": "HCM",
+    "HRA_EVAL_RATINGS": "HCM",
+    "HRA_EVAL_ROLES": "HCM",
+    "HRA_EVAL_ROLE_ACTIONS": "HCM",
+    "HRA_EVAL_SECTIONS": "HCM",
+    "HRA_EVAL_STEPS": "HCM",
+    "HRA_FEEDBACK_REQUEST": "HCM",
+    "HRA_FEEDBACK_REQUEST_OBJECTS": "HCM",
+    "HRA_PF_TASK_ROLES_B": "HCM",
+    "HRA_PF_TASK_ROLES_TL": "HCM",
+    "HRA_ROLE_DEFNS_B": "HCM",
+    "HRA_ROLE_DEFNS_TL": "HCM",
+    "HRA_SECTION_DEFNS_B": "HCM",
+    "HRA_SECTION_DEFNS_TL": "HCM",
+    "HRA_TMPL_DEFNS_B": "HCM",
+    "HRA_TMPL_DEFNS_TL": "HCM",
+    "HRA_TMPL_PERIODS_B": "HCM",
+    "HRA_TMPL_PERIODS_TL": "HCM",
+    "HRA_TMPL_ROLES": "HCM",
+    "HRA_TMPL_SECTIONS": "HCM",
+    "HRC_ARM_PROCESS_VL": "HCM",
+    "HRC_CONSOLE_FAULT_DETAILS_VL": "HCM",
+    "HRC_CONSOLE_ISSUE_ASSIGNMENT": "HCM",
+    "HRC_CONSOLE_ISSUE_COMMENTS": "HCM",
+    "HRC_TXN_CONSOLE_ENTRY": "HCM",
+    "HRC_TXN_DATA": "HCM",
+    "HRC_TXN_FND_BPM_TASK_VL": "HCM",
+    "HRC_TXN_HEADER": "HCM",
+    "HRD_GOAL_INTENTS": "HCM",
+    "HRD_PERSONAL_INTENTS": "HCM",
+    "HRG_GOALS": "HCM",
+    "HRG_GOAL_ACTIONS": "HCM",
+    "HRG_GOAL_ALIGNMENTS": "HCM",
+    "HRG_GOAL_MEASUREMENTS": "HCM",
+    "HRG_GOAL_PLANS_B": "HCM",
+    "HRG_GOAL_PLANS_TL": "HCM",
+    "HRG_GOAL_PLAN_GOALS": "HCM",
+    "HRG_GOAL_PLAN_SETS_B": "HCM",
+    "HRG_GOAL_PLAN_SETS_TL": "HCM",
+    "HRG_GOAL_PLAN_SET_PLANS": "HCM",
+    "HRG_GOAL_PLN_ASSIGNMENTS": "HCM",
+    "HRG_GOAL_TARGET_OUTCOMES": "HCM",
+    "HRM_PLANS_V": "HCM",
+    "HRM_PLAN_CANDIDATES": "HCM",
+    "HRM_PLAN_CANDIDATES_V": "HCM",
+    "HRM_PLAN_OWNERS": "HCM",
+    "HRQ_ALL_QSTN_RESPONSES_V": "HCM",
+    "HRQ_CATEGORIES_B": "HCM",
+    "HRQ_CATEGORIES_TL": "HCM",
+    "HRQ_EVAL_PTCPNT_QUESTIONS_V": "HCM",
+    "HRQ_QSTNR_ANSWERS": "HCM",
+    "HRQ_QSTNR_PARTICIPANTS": "HCM",
+    "HRQ_QSTNR_QUESTIONS": "HCM",
+    "HRQ_QSTNR_RESPONSES": "HCM",
+    "HRQ_QSTNR_SECTIONS_B": "HCM",
+    "HRQ_QSTNR_SECTIONS_TL": "HCM",
+    "HRQ_QSTN_ANSWERS_B": "HCM",
+    "HRQ_QSTN_ANSWERS_TL": "HCM",
+    "HRQ_QSTN_RESPONSES": "HCM",
+    "HRQ_QUESTIONNAIRES_B": "HCM",
+    "HRQ_QUESTIONNAIRES_TL": "HCM",
+    "HRQ_QUESTIONS_B": "HCM",
+    "HRQ_QUESTIONS_TL": "HCM",
+    "HRQ_RESPONSE_TYPES_B": "HCM",
+    "HRQ_RESPONSE_TYPES_TL": "HCM",
+    "HRQ_SUBSCRIBERS_B": "HCM",
+    "HRQ_SUBSCRIBERS_TL": "HCM",
+    "HRR_DASHBOARDS": "HCM",
+    "HRR_DASHBOARD_TMPLS_B": "HCM",
+    "HRR_DASHBOARD_TMPLS_TL": "HCM",
+    "HRR_MEETINGS": "HCM",
+    "HRR_MEETING_FACILITATORS": "HCM",
+    "HRR_MEETING_PARTICIPANTS": "HCM",
+    "HRR_MEETING_REVIEWEES": "HCM",
+    "HRR_MEETING_REVW_CONTENT": "HCM",
+    "HRR_TMPL_ANALYTIC_TYPES_B": "HCM",
+    "HRR_TMPL_ANALYTIC_TYPES_TL": "HCM",
+    "HRR_TMPL_ANLYT_BOX_LBLS_B": "HCM",
+    "HRR_TMPL_ANLYT_BOX_LBLS_TL": "HCM",
+    "HRR_TMPL_ANLYT_BOX_RATINGS": "HCM",
+    "HRR_TMPL_METRIC_CONFIG": "HCM",
+    "HRT_BI_ADV_READINESS_ITEMS_V": "HCM",
+    "HRT_BI_CAREER_POTN_ITEMS_V": "HCM",
+    "HRT_BI_CAREER_PRF_ITEMS_V": "HCM",
+    "HRT_BI_CERTIF_ITEMS_V": "HCM",
+    "HRT_BI_COMPETENCY_ITEMS_V": "HCM",
+    "HRT_BI_CRITICALITY_ITEMS_V": "HCM",
+    "HRT_BI_EDUCATION_ITEMS_V": "HCM",
+    "HRT_BI_HONOR_ITEMS_V": "HCM",
+    "HRT_BI_LANGUAGE_ITEMS_V": "HCM",
+    "HRT_BI_MEMBERSHIP_ITEMS_V": "HCM",
+    "HRT_BI_PERF_RATING_ITEMS_V": "HCM",
+    "HRT_BI_PREV_EMPLOYMENT_ITEMS_V": "HCM",
+    "HRT_BI_RISK_ITEMS_V": "HCM",
+    "HRT_BI_SPECIAL_PRJ_ITEMS_V": "HCM",
+    "HRT_BI_TALENT_RATING_ITEMS_V": "HCM",
+    "HRT_BI_WORK_PREFERENCE_ITEMS_V": "HCM",
+    "HRT_CONTENT_ITEMS_B": "HCM",
+    "HRT_CONTENT_ITEMS_TL": "HCM",
+    "HRT_CONTENT_SOURCE_RLATS": "HCM",
+    "HRT_CONTENT_TYPES_B": "HCM",
+    "HRT_CONTENT_TYPES_TL": "HCM",
+    "HRT_ESTABLISHMENTS_B": "HCM",
+    "HRT_ESTABLISHMENTS_TL": "HCM",
+    "HRT_NOTES": "HCM",
+    "HRT_OBJ_RATING_DIST_B": "HCM",
+    "HRT_POOLS_VL": "HCM",
+    "HRT_POOL_ASSOCIATIONS": "HCM",
+    "HRT_POOL_MEMBERS": "HCM",
+    "HRT_POOL_OWNERS": "HCM",
+    "HRT_PROFILES_B": "HCM",
+    "HRT_PROFILES_TL": "HCM",
+    "HRT_PROFILE_ITEMS": "HCM",
+    "HRT_PROFILE_RELATIONS": "HCM",
+    "HRT_PROFILE_TP_SC_PRP_B": "HCM",
+    "HRT_PROFILE_TP_SC_PRP_TL": "HCM",
+    "HRT_PROFILE_TYPES_B": "HCM",
+    "HRT_PROFILE_TYPES_TL": "HCM",
+    "HRT_PROFILE_TYPE_RELS": "HCM",
+    "HRT_PROFILE_TYP_SECTIONS_TL": "HCM",
+    "HRT_PROFILE_TYP_SECTIONS_VL": "HCM",
+    "HRT_QUALIFIERS_B": "HCM",
+    "HRT_QUALIFIERS_TL": "HCM",
+    "HRT_RATING_CATEGORIES_B": "HCM",
+    "HRT_RATING_CATEGORIES_TL": "HCM",
+    "HRT_RATING_DISTRIBUTIONS": "HCM",
+    "HRT_RATING_LEVELS_B": "HCM",
+    "HRT_RATING_LEVELS_TL": "HCM",
+    "HRT_RATING_MODELS_B": "HCM",
+    "HRT_RATING_MODELS_TL": "HCM",
+    "HRT_RELATION_CONFIG_B": "HCM",
+    "HRT_RELATION_CONFIG_TL": "HCM",
+    "HRT_REVIEW_PERIODS_B": "HCM",
+    "HRT_REVIEW_PERIODS_TL": "HCM",
+    "HRT_SOURCES_B": "HCM",
+    "HRT_SOURCES_TL": "HCM",
+    "HRT_TASK_OBJ_RELATIONS": "HCM",
+    "HRY_PI_INBD_RECORDS": "HCM",
+    "HR_ALL_ORGANIZATION_UNITS_F": "HCM",
+    "HR_ALL_POSITIONS_F": "HCM",
+    "HR_ALL_POSITIONS_F_TL": "HCM",
+    "HR_DOCUMENTS_OF_RECORD": "HCM",
+    "HR_DOCUMENT_TYPES_B": "HCM",
+    "HR_DOCUMENT_TYPES_TL": "HCM",
+    "HR_DOR_REPORTING_LIST_V": "HCM",
+    "HR_ORGANIZATION_INFORMATION_F": "HCM",
+    "HR_ORGANIZATION_UNITS_F_TL": "HCM",
+    "HR_ORG_CLASSIFICATIONS": "HCM",
+    "HR_ORG_CLASSIFICATIONS_TL": "HCM",
+    "HR_ORG_UNIT_CLASSIFICATIONS_F": "HCM",
+    "HTS_LABOR_DEMAND_PRFL_DEFS": "HCM",
+    "HTS_LABOR_DEMAND_PRFL_DEFSETS": "HCM",
+    "HTS_LABOR_DEMAND_PRFL_VALS": "HCM",
+    "HTS_LABOR_DEMAND_VIEW": "HCM",
+    "HTS_SCHEDULES_ATRBS_VIEW": "HCM",
+    "HTS_SCHEDULES_DAY_SHIFT_VIEW": "HCM",
+    "HWM_ALLOCATIONS_HDR_F": "HCM",
+    "HWM_ALLOCATIONS_HDR_TL": "HCM",
+    "HWM_ALLOCATIONS_HDR_VL": "HCM",
+    "HWM_ALLOCATION_LINES_F": "HCM",
+    "HWM_ALLOCATION_LN_ATRBS_F": "HCM",
+    "HWM_ALLOCATION_RULES_F": "HCM",
+    "HWM_DATA_SOURCE_USAGES_V": "HCM",
+    "HWM_FND_MESSAGES_VL": "HCM",
+    "HWM_GRPS_B": "HCM",
+    "HWM_GRPS_TL": "HCM",
+    "HWM_GRPS_VL": "HCM",
+    "HWM_GRP_CRITERIA": "HCM",
+    "HWM_GRP_INCL_MEMBERS_VIEW": "HCM",
+    "HWM_GRP_INCL_OBJECTS_V": "HCM",
+    "HWM_GRP_MEMBERS_F": "HCM",
+    "HWM_GRP_TYPE": "HCM",
+    "HWM_LAYER": "HCM",
+    "HWM_RP_TM_PERIODS_B": "HCM",
+    "HWM_RP_TM_PERIODS_TL": "HCM",
+    "HWM_RP_TM_PERIODS_VL": "HCM",
+    "HWM_RP_TM_RESOLVED": "HCM",
+    "HWM_RULES": "HCM",
+    "HWM_RULE_INPUTS": "HCM",
+    "HWM_RULE_OUTPUTS": "HCM",
+    "HWM_RULE_SETS_F": "HCM",
+    "HWM_RULE_SET_MBRS": "HCM",
+    "HWM_RULE_TMPLTS": "HCM",
+    "HWM_RULE_TMPLTS_TL": "HCM",
+    "HWM_RULE_TMPLT_INPUTS": "HCM",
+    "HWM_RULE_TMPLT_INPUTS_TL": "HCM",
+    "HWM_RULE_TMPLT_USAGES": "HCM",
+    "HWM_RULE_TMPLT_USAGES_TL": "HCM",
+    "HWM_TCATS_B": "HCM",
+    "HWM_TCATS_TL": "HCM",
+    "HWM_TCATS_VL": "HCM",
+    "HWM_TCAT_EXPR_RESULTS_B": "HCM",
+    "HWM_TCAT_EXPR_RESULTS_TL": "HCM",
+    "HWM_TCD_EXP_DATA_DEF_B": "HCM",
+    "HWM_TCD_EXP_DATA_DEF_TL": "HCM",
+    "HWM_TCD_MAPPINGS_B": "HCM",
+    "HWM_TCD_MAPPINGS_TL": "HCM",
+    "HWM_TCD_MAPPING_DTLS": "HCM",
+    "HWM_TCD_MAPPING_SETS_B": "HCM",
+    "HWM_TCD_MAPPING_SETS_TL": "HCM",
+    "HWM_TCD_MAPPING_SET_DTLS": "HCM",
+    "HWM_TCSMRS_B": "HCM",
+    "HWM_TCSMRS_TL": "HCM",
+    "HWM_TCSMRS_VL": "HCM",
+    "HWM_TCSMR_CONFIGS": "HCM",
+    "HWM_TCSMR_CONFIG_SETS_B": "HCM",
+    "HWM_TCSMR_CONFIG_SETS_TL": "HCM",
+    "HWM_TCSMR_XFR_CONFIGS": "HCM",
+    "HWM_TCSMR_XFR_PROCESSES_VL": "HCM",
+    "HWM_TC_VERSION_STATUS_V": "HCM",
+    "HWM_TE_ALT_NAMES": "HCM",
+    "HWM_TE_ALT_NAME_VALS_B": "HCM",
+    "HWM_TE_ALT_NAME_VALS_TL": "HCM",
+    "HWM_TE_ALT_NAME_VALS_VL": "HCM",
+    "HWM_TE_MESSAGES_V": "HCM",
+    "HWM_TE_VERSION_STATUS_V": "HCM",
+    "HWM_TM_ABS_ENTRY_V": "HCM",
+    "HWM_TM_ALLOW_EXPS_V": "HCM",
+    "HWM_TM_APPROVED_TS_V": "HCM",
+    "HWM_TM_ATRB_FLDS_B": "HCM",
+    "HWM_TM_ATRB_FLDS_TL": "HCM",
+    "HWM_TM_ATRB_FLDS_VL": "HCM",
+    "HWM_TM_ATRB_FLD_MSTR_REF_B": "HCM",
+    "HWM_TM_ATRB_FLD_MSTR_REF_TL": "HCM",
+    "HWM_TM_ATRB_FLD_MSTR_REF_VL": "HCM",
+    "HWM_TM_ATRB_FLD_SET_CMPS": "HCM",
+    "HWM_TM_AUDITS": "HCM",
+    "HWM_TM_AUDIT_ATRBS": "HCM",
+    "HWM_TM_A_ANC_APP_STATUS_V": "HCM",
+    "HWM_TM_A_APP_STATUS_PJC_V": "HCM",
+    "HWM_TM_A_APP_STATUS_PYR_V": "HCM",
+    "HWM_TM_A_TE_COMPLETED_V": "HCM",
+    "HWM_TM_A_TR_ERR_STATUS_V": "HCM",
+    "HWM_TM_A_USER_STATUS_V": "HCM",
+    "HWM_TM_A_XFR_STATUS_PJC_V": "HCM",
+    "HWM_TM_A_XFR_STATUS_PYR_V": "HCM",
+    "HWM_TM_COMP_MSGS_V": "HCM",
+    "HWM_TM_D_TM_UI_STATUS_V": "HCM",
+    "HWM_TM_D_XFR_STATUS_PJC_V": "HCM",
+    "HWM_TM_D_XFR_STATUS_PYR_V": "HCM",
+    "HWM_TM_EVENTS_V": "HCM",
+    "HWM_TM_EVENT_ATRBS": "HCM",
+    "HWM_TM_HIS_ABS_ENTRY_V": "HCM",
+    "HWM_TM_HIS_ENTRY_V": "HCM",
+    "HWM_TM_HIS_RPT_ENTRY_V": "HCM",
+    "HWM_TM_OPM_MEANING_V": "HCM",
+    "HWM_TM_REC": "HCM",
+    "HWM_TM_REC_GRP": "HCM",
+    "HWM_TM_REC_GRP_USAGES": "HCM",
+    "HWM_TM_REPROCESS_REQUEST": "HCM",
+    "HWM_TM_REP_ATRBS": "HCM",
+    "HWM_TM_REP_ATRB_DATE_VAL_V": "HCM",
+    "HWM_TM_REP_ATRB_NUM_VAL_V": "HCM",
+    "HWM_TM_REP_ATRB_TS_VAL_V": "HCM",
+    "HWM_TM_REP_ATRB_USAGES": "HCM",
+    "HWM_TM_REP_ATRB_VARCHAR_VAL_V": "HCM",
+    "HWM_TM_REP_MSGS": "HCM",
+    "HWM_TM_REP_M_ANC_ATRBS_V": "HCM",
+    "HWM_TM_REP_M_COMP_TOIL_ATRBS_V": "HCM",
+    "HWM_TM_REP_M_CUST_ATRB_VAL_V": "HCM",
+    "HWM_TM_REP_M_PJC_DOC_ATRBS_V": "HCM",
+    "HWM_TM_REP_M_PJC_EXP_ATRBS_V": "HCM",
+    "HWM_TM_REP_M_PTT_ATRBS_V": "HCM",
+    "HWM_TM_REP_S_ABS_HP_ATRBS_V": "HCM",
+    "HWM_TM_REP_S_ABS_TEP_ATRBS_V": "HCM",
+    "HWM_TM_REP_S_COMMON_ATRBS_V": "HCM",
+    "HWM_TM_REP_S_HXT_ATRBS_V": "HCM",
+    "HWM_TM_REP_S_PJC_ATRBS_V": "HCM",
+    "HWM_TM_REP_S_SEC_ATRBS_V": "HCM",
+    "HWM_TM_RPT_ENTRY_V": "HCM",
+    "HWM_TM_SOURCES": "HCM",
+    "HWM_TM_STATUSES": "HCM",
+    "HWM_TM_STATUS_DEF_B": "HCM",
+    "HWM_TM_STATUS_DEF_TL": "HCM",
+    "HWM_TM_SUBMITTED_TS_V": "HCM",
+    "HXT_SCH_ASGS_DEFAULT_VIEW": "HCM",
+    "HXT_SCH_PROF_DEFAULT_VIEW": "HCM",
+    "HXT_SETUP_OPTION_VALS": "HCM",
+    "HXT_SETUP_PROFILES_B": "HCM",
+    "HXT_SETUP_PROFILES_TL": "HCM",
+    "HXT_SETUP_PROFILES_VL": "HCM",
+    "HXT_SETUP_PROFILE_ASGS": "HCM",
+    "HXT_TCLAYFLD_DEFNS_B": "HCM",
+    "HXT_TCLAYFLD_DEFNS_TL": "HCM",
+    "HXT_TCLAYFLD_DEFNS_VL": "HCM",
+    "HXT_TCLAYST_B": "HCM",
+    "HXT_TCLAYST_PROP": "HCM",
+    "HXT_TCLAYST_TL": "HCM",
+    "HXT_TCLAY_REGION_V": "HCM",
+    "HXT_TCLAY_V": "HCM",
+    "HXT_TM_HEADER": "HCM",
+    "IRC_AF_BLOCKS_B": "HCM",
+    "IRC_AF_BLOCKS_TL": "HCM",
+    "IRC_AF_PAGES_B": "HCM",
+    "IRC_AF_PAGES_TL": "HCM",
+    "IRC_AF_PAGE_BLOCKS_B": "HCM",
+    "IRC_AF_PAGE_BLOCKS_TL": "HCM",
+    "IRC_AF_SECTIONS_B": "HCM",
+    "IRC_AF_SECTIONS_TL": "HCM",
+    "IRC_AF_VERSIONS": "HCM",
+    "IRC_AGENT_REQUISITIONS": "HCM",
+    "IRC_APPLY_FLOWS_B": "HCM",
+    "IRC_APPLY_FLOWS_TL": "HCM",
+    "IRC_ASMT_ACCT_PACKAGES": "HCM",
+    "IRC_ASMT_PACKAGE_RESULTS": "HCM",
+    "IRC_ASMT_PARTNER_CONFIG": "HCM",
+    "IRC_ASMT_REQ_CONFIG": "HCM",
+    "IRC_ASMT_REQ_PACKAGES": "HCM",
+    "IRC_ASMT_RESULTS": "HCM",
+    "IRC_BC_CAND_RESULTS": "HCM",
+    "IRC_BC_CAND_SCREENINGS": "HCM",
+    "IRC_BC_REQ_SP_ASSGMNTS": "HCM",
+    "IRC_CAMPAIGNS_B": "HCM",
+    "IRC_CAMPAIGNS_TL": "HCM",
+    "IRC_CAMP_ASSETS_B": "HCM",
+    "IRC_CAMP_ASSETS_TL": "HCM",
+    "IRC_CAMP_AUDIENCE": "HCM",
+    "IRC_CAMP_CONVERSIONS": "HCM",
+    "IRC_CAMP_GOALS_B": "HCM",
+    "IRC_CAMP_GOALS_TL": "HCM",
+    "IRC_CAMP_GOAL_RESP_B": "HCM",
+    "IRC_CAMP_GOAL_RESP_TL": "HCM",
+    "IRC_CAMP_REQUISITIONS": "HCM",
+    "IRC_CAMP_TRACK_RESPONSE": "HCM",
+    "IRC_CANDIDATES": "HCM",
+    "IRC_CANDIDATE_ADDRESS_V": "HCM",
+    "IRC_CANDIDATE_SEARCH_TRACKING": "HCM",
+    "IRC_CAND_LAST_INTERACTION_V": "HCM",
+    "IRC_CAND_POOL_MEMBERS": "HCM",
+    "IRC_CAND_PREFERENCES": "HCM",
+    "IRC_CAND_PREF_JOB_FAMILY": "HCM",
+    "IRC_CAND_PREF_LOCATIONS": "HCM",
+    "IRC_CAND_PROFILE_USAGES_M": "HCM",
+    "IRC_CMT_LAUNCHES": "HCM",
+    "IRC_CMT_RECIPIENTS": "HCM",
+    "IRC_CX_PAGES_B": "HCM",
+    "IRC_CX_PAGES_TL": "HCM",
+    "IRC_CX_SITES_B": "HCM",
+    "IRC_CX_SITES_TL": "HCM",
+    "IRC_CX_SITE_LANGS": "HCM",
+    "IRC_CX_SITE_TEMPLATES_B": "HCM",
+    "IRC_CX_SITE_TEMPLATES_TL": "HCM",
+    "IRC_CX_SITE_THEMES": "HCM",
+    "IRC_DESCRIPTIONS_B": "HCM",
+    "IRC_DESCRIPTIONS_TL": "HCM",
+    "IRC_DESC_VERSIONS_B": "HCM",
+    "IRC_DESC_VERSIONS_TL": "HCM",
+    "IRC_DIMENSION_DEF_B": "HCM",
+    "IRC_DIMENSION_DEF_TL": "HCM",
+    "IRC_ENDORSEMENTS": "HCM",
+    "IRC_ESIGNATURES": "HCM",
+    "IRC_GEO_HIERARCHIES": "HCM",
+    "IRC_GEO_HIER_NODES": "HCM",
+    "IRC_GEO_LEVEL_MAPPINGS": "HCM",
+    "IRC_HIST_EVENT_B": "HCM",
+    "IRC_HIST_EVENT_TL": "HCM",
+    "IRC_IM_FEEDBACKS": "HCM",
+    "IRC_IM_FEEDBK_PARTCPTS": "HCM",
+    "IRC_IM_FEEDBK_REQUESTS": "HCM",
+    "IRC_IM_FEEDBK_REVIEWS": "HCM",
+    "IRC_IM_REQ_QSTNRS": "HCM",
+    "IRC_INTERACTIONS": "HCM",
+    "IRC_JA_LAST_INTERACTION_V": "HCM",
+    "IRC_JA_SECONDARY_FLOWS": "HCM",
+    "IRC_JD_REQ_POSTINGS": "HCM",
+    "IRC_JD_REQ_POST_HISTORY": "HCM",
+    "IRC_JD_REQ_POST_RESULTS": "HCM",
+    "IRC_LC_ACTIONS_TL": "HCM",
+    "IRC_LC_ACTION_USAGES_B": "HCM",
+    "IRC_LC_ACTION_USAGES_TL": "HCM",
+    "IRC_LC_HISTORY": "HCM",
+    "IRC_LC_REASONS_B": "HCM",
+    "IRC_LC_REASONS_TL": "HCM",
+    "IRC_LC_REASON_GROUPS_TL": "HCM",
+    "IRC_LC_SETTING_ITEMS": "HCM",
+    "IRC_MEDIA_LINKS_B": "HCM",
+    "IRC_MEDIA_LINKS_TL": "HCM",
+    "IRC_MEDIA_LINK_LANGUAGES": "HCM",
+    "IRC_OFFERS": "HCM",
+    "IRC_PHASES_B": "HCM",
+    "IRC_PHASES_TL": "HCM",
+    "IRC_POOLMEM_LAST_INTERACTION_V": "HCM",
+    "IRC_PROCESSES_B": "HCM",
+    "IRC_PROCESSES_TL": "HCM",
+    "IRC_PROSPECTS": "HCM",
+    "IRC_PRSPT_LAST_INTERACTION_V": "HCM",
+    "IRC_REGULATORY_RESPONSES": "HCM",
+    "IRC_REQUISITIONS_B": "HCM",
+    "IRC_REQUISITIONS_TL": "HCM",
+    "IRC_REQ_LANGUAGES": "HCM",
+    "IRC_REQ_LOCATIONS": "HCM",
+    "IRC_REQ_MEDIA_LINKS": "HCM",
+    "IRC_REQ_WORK_LOCATIONS": "HCM",
+    "IRC_RF_REFERRALS": "HCM",
+    "IRC_RF_REQ_HITS": "HCM",
+    "IRC_RF_SHARES": "HCM",
+    "IRC_ROUTING_STEPS_B": "HCM",
+    "IRC_SEARCHES": "HCM",
+    "IRC_SEARCHES_DN": "HCM",
+    "IRC_SEARCH_ACTIONS": "HCM",
+    "IRC_SEARCH_ACTION_DETAILS": "HCM",
+    "IRC_SEARCH_RESULTS": "HCM",
+    "IRC_SOURCE_TRACKING": "HCM",
+    "IRC_STATES_B": "HCM",
+    "IRC_STATES_TL": "HCM",
+    "IRC_SUBMISSIONS": "HCM",
+    "IRC_TEAM_MEMBERS": "HCM",
+    "IRC_TP_CATEGORIES_B": "HCM",
+    "IRC_TP_CATEGORIES_TL": "HCM",
+    "IRC_TP_PARTNERS": "HCM",
+    "IRC_TP_PARTNER_ACCOUNTS": "HCM",
+    "IRC_TP_PARTNER_PROVISNGS": "HCM",
+    "IRC_WFMODEL_REQUISITIONS": "HCM",
+    "PAY_ALL_PAYROLLS_F": "HCM",
+    "PAY_ASSIGNED_PAYROLLS_DN": "HCM",
+    "PAY_ASSIGNED_PAYROLLS_F": "HCM",
+    "PAY_BALANCE_CATEGORIES_F": "HCM",
+    "PAY_BALANCE_CATEGORIES_TL": "HCM",
+    "PAY_BALANCE_CATEGORIES_VL": "HCM",
+    "PAY_BALANCE_DIMENSIONS": "HCM",
+    "PAY_BALANCE_TYPES_TL": "HCM",
+    "PAY_BALANCE_TYPES_VL": "HCM",
+    "PAY_BALANCE_VALIDATION": "HCM",
+    "PAY_CONSOLIDATION_SETS": "HCM",
+    "PAY_COSTS": "HCM",
+    "PAY_DEDUCTION_GROUPS_VL": "HCM",
+    "PAY_DEDUCTION_TYPES": "HCM",
+    "PAY_DEDUCTION_TYPES_TL": "HCM",
+    "PAY_DIR_CARDS_F": "HCM",
+    "PAY_DIR_CARD_COMPONENTS_F": "HCM",
+    "PAY_DIR_CARD_COMP_DEFS_F": "HCM",
+    "PAY_DIR_CARD_COMP_DEFS_VL": "HCM",
+    "PAY_DIR_CARD_DEFINITIONS_VL": "HCM",
+    "PAY_DIR_COMP_DETAILS_F": "HCM",
+    "PAY_ELEMENT_CRITERIA": "HCM",
+    "PAY_ELEMENT_ENTRIES_F": "HCM",
+    "PAY_ELEMENT_ENTRIES_VL": "HCM",
+    "PAY_ELEMENT_ENTRY_VALUES_F": "HCM",
+    "PAY_ELEMENT_TYPES_F": "HCM",
+    "PAY_ELEMENT_TYPES_TL": "HCM",
+    "PAY_ELE_CLASSIFICATIONS": "HCM",
+    "PAY_ELE_CLASSIFICATIONS_TL": "HCM",
+    "PAY_ENTRY_USAGES": "HCM",
+    "PAY_FLOW_TASK_INSTANCES": "HCM",
+    "PAY_INPUT_VALUES_F": "HCM",
+    "PAY_INPUT_VALUES_TL": "HCM",
+    "PAY_ORG_PAY_METHODS_F": "HCM",
+    "PAY_ORG_PAY_METHODS_TL": "HCM",
+    "PAY_ORG_PAY_METHODS_VL": "HCM",
+    "PAY_ORG_PAY_METHOD_USAGES_F": "HCM",
+    "PAY_PAYMENT_COSTS": "HCM",
+    "PAY_PAYMENT_TYPES": "HCM",
+    "PAY_PAYMENT_TYPES_TL": "HCM",
+    "PAY_PAYROLL_ACTIONS": "HCM",
+    "PAY_PAYROLL_REL_ACTIONS": "HCM",
+    "PAY_PAY_RELATIONSHIPS_DN": "HCM",
+    "PAY_PAY_RELATIONSHIPS_F": "HCM",
+    "PAY_PERSON_PAY_METHODS_F": "HCM",
+    "PAY_PRE_PAYMENTS": "HCM",
+    "PAY_REL_GROUPS_DN": "HCM",
+    "PAY_REL_GROUPS_F": "HCM",
+    "PAY_REQUESTS": "HCM",
+    "PAY_RUN_RESULTS": "HCM",
+    "PAY_RUN_TYPES_F": "HCM",
+    "PAY_RUN_TYPES_TL": "HCM",
+    "PAY_TIME_PERIODS": "HCM",
+    "PAY_TIME_PERIOD_TYPES": "HCM",
+    "PER_ABSENCE_ATTENDANCES": "HCM",
+    "PER_ABSENCE_ATTENDANCE_TYPES_B": "HCM",
+    "PER_ABS_ATTENDANCE_REASONS": "HCM",
+    "PER_ABS_ATTENDANCE_TYPES_TL": "HCM",
+    "PER_ACCRUAL_BANDS": "HCM",
+    "PER_ACCRUAL_CALC_RULES": "HCM",
+    "PER_ACCRUAL_PLANS_B": "HCM",
+    "PER_ACCRUAL_PLANS_TL": "HCM",
+    "PER_ACTIONS_B": "HCM",
+    "PER_ACTIONS_TL": "HCM",
+    "PER_ACTION_OCCURRENCES": "HCM",
+    "PER_ACTION_REASONS_B": "HCM",
+    "PER_ACTION_REASONS_TL": "HCM",
+    "PER_ACTION_REASON_USAGES": "HCM",
+    "PER_ACTION_TYPES_B": "HCM",
+    "PER_ACTION_TYPES_TL": "HCM",
+    "PER_ADDRESSES_F": "HCM",
+    "PER_ALLOCATED_CHECKLISTS": "HCM",
+    "PER_ALLOCATED_CHECKLISTS_TL": "HCM",
+    "PER_ALLOCATED_TASKS": "HCM",
+    "PER_ALLOCATED_TASKS_TL": "HCM",
+    "PER_ALLOC_CHKLST_CONTACTS": "HCM",
+    "PER_ALLOC_CHKLST_CONTENTS": "HCM",
+    "PER_ALLOC_TASK_NOTIFS": "HCM",
+    "PER_ALL_ASSIGNMENTS_M": "HCM",
+    "PER_ALL_PEOPLE_F": "HCM",
+    "PER_ASG_ABSENCE_RECORDING": "HCM",
+    "PER_ASG_RESPONSIBILITIES": "HCM",
+    "PER_ASSIGNMENT_DAY_ABSENCES": "HCM",
+    "PER_ASSIGNMENT_EXTRA_INFO_M": "HCM",
+    "PER_ASSIGNMENT_STATUS_TYPES": "HCM",
+    "PER_ASSIGNMENT_STATUS_TYPES_TL": "HCM",
+    "PER_ASSIGNMENT_SUPERVISORS_F": "HCM",
+    "PER_ASSIGN_GRADE_STEPS_F": "HCM",
+    "PER_ASSIGN_WORK_MEASURES_F": "HCM",
+    "PER_CALENDAR_EVENTS": "HCM",
+    "PER_CALENDAR_EVENTS_TL": "HCM",
+    "PER_CHECKLISTS_B": "HCM",
+    "PER_CHECKLISTS_TL": "HCM",
+    "PER_CHECKLIST_CONTACTS": "HCM",
+    "PER_CHECKLIST_CONTENTS": "HCM",
+    "PER_CHK_CONTENT_DEFNS_B": "HCM",
+    "PER_CHK_CONTENT_DEFNS_TL": "HCM",
+    "PER_CITIZENSHIPS": "HCM",
+    "PER_COL_AGREEMENTS_F": "HCM",
+    "PER_COL_AGREEMENTS_F_TL": "HCM",
+    "PER_CONTACT_RELSHIPS_F": "HCM",
+    "PER_CONTRACTS_F": "HCM",
+    "PER_DEPT_TREE_NODE": "HCM",
+    "PER_DEPT_TREE_NODE_CF": "HCM",
+    "PER_DEPT_TREE_NODE_RF": "HCM",
+    "PER_DISABILITIES_F": "HCM",
+    "PER_DRIVERS_LICENSES": "HCM",
+    "PER_DRIVERS_LICENSE_TYPES": "HCM",
+    "PER_EMAIL_ADDRESSES": "HCM",
+    "PER_ETHNICITIES": "HCM",
+    "PER_EXT_APP_IDENTIFIERS": "HCM",
+    "PER_GRADES_F": "HCM",
+    "PER_GRADES_F_TL": "HCM",
+    "PER_GRADES_IN_LADDERS_F": "HCM",
+    "PER_GRADE_LADDERS_F": "HCM",
+    "PER_GRADE_LADDERS_F_TL": "HCM",
+    "PER_GRADE_STEPS_F": "HCM",
+    "PER_GRADE_STEPS_F_TL": "HCM",
+    "PER_JOBS_F": "HCM",
+    "PER_JOBS_F_TL": "HCM",
+    "PER_JOB_EVALUATIONS": "HCM",
+    "PER_JOB_EXTRA_INFO_F": "HCM",
+    "PER_JOB_FAMILY_F": "HCM",
+    "PER_JOB_FAMILY_F_TL": "HCM",
+    "PER_JOB_LEG_F": "HCM",
+    "PER_LEGISLATIVE_DATA_GROUPS": "HCM",
+    "PER_LEGISLATIVE_DATA_GROUPS_TL": "HCM",
+    "PER_LOCATIONS": "HCM",
+    "PER_LOCATION_DETAILS_F": "HCM",
+    "PER_LOCATION_DETAILS_F_TL": "HCM",
+    "PER_LOCATION_DETAILS_F_VL": "HCM",
+    "PER_LOC_ADDRESS_USAGES_F": "HCM",
+    "PER_MANAGER_HRCHY_CF": "HCM",
+    "PER_MANAGER_HRCHY_DN": "HCM",
+    "PER_MANAGER_HRCHY_REPORTEES_DN": "HCM",
+    "PER_NATIONAL_IDENTIFIERS": "HCM",
+    "PER_ORG_TREE_NODE_CF": "HCM",
+    "PER_ORG_TREE_NODE_RF": "HCM",
+    "PER_PASSPORTS": "HCM",
+    "PER_PEOPLE_LEGISLATIVE_F": "HCM",
+    "PER_PERIODS_OF_SERVICE": "HCM",
+    "PER_PERSONS": "HCM",
+    "PER_PERSON_ADDR_USAGES_F": "HCM",
+    "PER_PERSON_DLVRY_METHODS": "HCM",
+    "PER_PERSON_NAMES_F": "HCM",
+    "PER_PERSON_NAMES_F_V": "HCM",
+    "PER_PERSON_TYPES": "HCM",
+    "PER_PERSON_TYPES_TL": "HCM",
+    "PER_PERSON_TYPE_USAGES_M": "HCM",
+    "PER_PHONES": "HCM",
+    "PER_POSITION_HIERARCHY_F": "HCM",
+    "PER_POSITION_HRCHY_RF": "HCM",
+    "PER_POSITION_LEG_F": "HCM",
+    "PER_POS_FUNDING_POSITIONS_F": "HCM",
+    "PER_POS_HRCHY_TOPDOWN_RF_CF_V": "HCM",
+    "PER_POS_TREE_NODE_CF": "HCM",
+    "PER_RATES_F": "HCM",
+    "PER_RATES_F_TL": "HCM",
+    "PER_RATE_VALUES_F": "HCM",
+    "PER_RELIGIONS": "HCM",
+    "PER_REQUISITIONS_INTERFACE_B": "HCM",
+    "PER_REQUISITIONS_INTERFACE_TL": "HCM",
+    "PER_RESOURCE_EXCEPTIONS": "HCM",
+    "PER_ROLES_DN_VL": "HCM",
+    "PER_SCHEDULE_ASSIGNMENTS": "HCM",
+    "PER_SCHEDULE_EXCEPTIONS": "HCM",
+    "PER_TASKS_IN_CHECKLIST_B": "HCM",
+    "PER_TASKS_IN_CHECKLIST_TL": "HCM",
+    "PER_TASK_DEPENDENCIES": "HCM",
+    "PER_TASK_NOTIFICATIONS": "HCM",
+    "PER_USERS": "HCM",
+    "PER_USER_HISTORY": "HCM",
+    "PER_USER_ROLES": "HCM",
+    "PER_VALID_GRADES_F": "HCM",
+    "PER_VISAS_PERMITS_F": "HCM",
+    "PER_WORKING_HOUR_PATTERNS_F": "HCM",
+    "WLF_AR_RELATIONS_F": "HCM",
+    "WLF_ASSIGNMENT_DESTINATIONS_F": "HCM",
+    "WLF_ASSIGNMENT_RECORDS_F": "HCM",
+    "WLF_ASSIGNMENT_RULES": "HCM",
+    "WLF_ASSIGNMENT_TASKS_F": "HCM",
+    "WLF_BI_ANALYSIS_DESTINATIONS": "HCM",
+    "WLF_EVENT_ASSIGNMENTS_F": "HCM",
+    "WLF_EVENT_ASSIGNMENTS_F_TL": "HCM",
+    "WLF_EVENT_ATTEMPTS": "HCM",
+    "WLF_EVENT_INCIDENTS": "HCM",
+    "WLF_EVENT_SOCIAL": "HCM",
+    "WLF_LEARNING_ITEMS_F": "HCM",
+    "WLF_LEARNING_ITEMS_F_TL": "HCM",
+    "WLF_LEARNING_PLANS_F": "HCM",
+    "WLF_LI_ACTIVITIES_F": "HCM",
+    "WLF_LI_CLASSES_F": "HCM",
+    "WLF_LI_CONTENT_F": "HCM",
+    "WLF_LI_COURSES_F": "HCM",
+    "WLF_LI_ELEARNINGS_F": "HCM",
+    "WLF_LI_HIERARCHIES_F": "HCM",
+    "WLF_PLAN_PROFILES_F": "HCM",
+    "WLF_PLAN_RECORDS_F": "HCM",
+    "WLF_PRICING_COMPONENTS_F": "HCM",
+    "WLF_PRICING_RULES_F": "HCM",
+    "WLF_REQUEST_DETAILS": "HCM",
+    "WLF_RESOURCES_B": "HCM",
+    "WLF_RESOURCES_TL": "HCM",
+    "ZMM_SR_PATTERNS_B": "HCM",
+    "ZMM_SR_PATTERNS_TL": "HCM",
+    "ZMM_SR_PATTERN_DTLS": "HCM",
+    "ZMM_SR_SCHEDULES_B": "HCM",
+    "ZMM_SR_SCHEDULES_TL": "HCM",
+    "HZ_ADDTNL_PARTY_NAMES": "HCM",
+    "HZ_CLASS_CATEGORY_CODES_V": "HCM",
+    "HZ_CODE_ASSIGNMENTS": "HCM",
+    "HZ_CONTACT_POINTS": "HCM",
+    "HZ_CUSTOMER_PROFILES_F": "HCM",
+    "HZ_CUST_ACCOUNTS": "HCM",
+    "HZ_CUST_ACCOUNT_ROLES": "HCM",
+    "HZ_CUST_ACCT_SITES_ALL": "HCM",
+    "HZ_CUST_PROFILE_AMTS_F": "HCM",
+    "HZ_CUST_PROFILE_CLASSES": "HCM",
+    "HZ_CUST_SITE_USES_ALL": "HCM",
+    "HZ_GEOGRAPHIES": "HCM",
+    "HZ_GEOGRAPHY_TYPES_B": "HCM",
+    "HZ_GEOGRAPHY_TYPES_TL": "HCM",
+    "HZ_GEO_STRUCTURE_LEVELS": "HCM",
+    "HZ_LOCATIONS": "HCM",
+    "HZ_ORGANIZATION_PROFILES": "HCM",
+    "HZ_ORG_CONTACTS": "HCM",
+    "HZ_ORG_CONTACT_ROLES": "HCM",
+    "HZ_PARTIES": "HCM",
+    "HZ_PARTY_SITES": "HCM",
+    "HZ_PARTY_SITE_USES": "HCM",
+    "HZ_PARTY_USG_ASSIGNMENTS": "HCM",
+    "HZ_RELATIONSHIPS": "HCM",
+    "HZ_RELATIONSHIP_TYPES": "HCM",
+    "IBY_ACCT_PMT_PROFILES_TL": "HCM",
+    "IBY_CREDITCARD": "HCM",
+    "IBY_DEBIT_AUTHORIZATIONS_F": "HCM",
+    "IBY_EXTERNAL_PAYEES_ALL": "HCM",
+    "IBY_EXTERNAL_PAYERS_ALL": "HCM",
+    "IBY_EXT_BANK_ACCOUNTS": "HCM",
+    "IBY_EXT_PARTY_PMT_MTHDS": "HCM",
+    "IBY_FNDCPT_PMT_CHNNLS_VL": "HCM",
+    "IBY_FNDCPT_TX_EXTENSIONS": "HCM",
+    "IBY_PAYMENTS_ALL": "HCM",
+    "IBY_PAYMENT_CODES_VL": "HCM",
+    "IBY_PAYMENT_METHODS_TL": "HCM",
+    "IBY_PAYMENT_METHODS_VL": "HCM",
+    "IBY_PAY_INSTRUCTIONS_ALL": "HCM",
+    "IBY_PMT_INSTR_USES_ALL": "HCM",
+    "IBY_TRXN_SUMMARIES_ALL": "HCM",
+    "ZX_BUCKETS_F": "HCM",
+    "ZX_CONDITION_GROUPS_B": "HCM",
+    "ZX_CONDITION_GROUPS_TL": "HCM",
+    "ZX_CONDITION_GROUPS_VL": "HCM",
+    "ZX_EXEMPTIONS": "HCM",
+    "ZX_FC_BUSINESS_CATEGORIES_V": "HCM",
+    "ZX_FC_CODES_TL": "HCM",
+    "ZX_FC_CODES_VL": "HCM",
+    "ZX_FC_DOCUMENT_FISCAL_V": "HCM",
+    "ZX_FC_INTENDED_USE_V": "HCM",
+    "ZX_FC_PRODUCT_CATEGORIES_V": "HCM",
+    "ZX_FC_PRODUCT_FISCAL_V": "HCM",
+    "ZX_FC_TYPES_VL": "HCM",
+    "ZX_FC_USER_DEFINED_V": "HCM",
+    "ZX_INPUT_CLASSIFICATIONS_V": "HCM",
+    "ZX_JURISDICTIONS_B": "HCM",
+    "ZX_JURISDICTIONS_TL": "HCM",
+    "ZX_JURISDICTIONS_VL": "HCM",
+    "ZX_LINES": "HCM",
+    "ZX_LINES_SUMMARY": "HCM",
+    "ZX_PARTY_TAXPAYER_IDNTFS": "HCM",
+    "ZX_PARTY_TAX_PROFILE": "HCM",
+    "ZX_PRODUCT_TYPES_V": "HCM",
+    "ZX_RATES_TL": "HCM",
+    "ZX_RATES_VL": "HCM",
+    "ZX_REC_NREC_DIST": "HCM",
+    "ZX_REGIMES_B": "HCM",
+    "ZX_REGIMES_TL": "HCM",
+    "ZX_REGIMES_VL": "HCM",
+    "ZX_REGISTRATIONS": "HCM",
+    "ZX_REPORTING_CODES_VL": "HCM",
+    "ZX_REPORTING_TYPES_VL": "HCM",
+    "ZX_REPORT_CODES_ASSOC": "HCM",
+    "ZX_SCO_RATES": "HCM",
+    "ZX_STATUS_B": "HCM",
+    "ZX_STATUS_TL": "HCM",
+    "ZX_TAXES_B": "HCM",
+    "ZX_TAXES_TL": "HCM",
+    "ZX_TAX_SETTLEMENT_AUTHS_F": "HCM",
+    "ZX_WHT_LINES_SUMMARY": "HCM",
+    "ZX_WHT_TAX_CLASSIFICATION_V": "HCM",
+    "XLA_ACCTG_METHODS_B": "HCM",
+    "XLA_ACCTG_METHODS_TL": "HCM",
+    "XLA_EVENTS": "HCM",
+    "XLE_ENTITY_PROFILES": "HCM",
+    "CE_ALL_BANK_BRANCHES_V": "HCM",
+    "CE_BANK_ACCT_USES_ALL": "HCM",
+    "CE_BANK_BRANCHES_V": "HCM",
+    "CE_INTERNAL_BANK_ACCTS_V": "HCM",
+    "CE_PAYMENT_DOCUMENTS": "HCM",
+    "FND_APPL_TAXONOMY_VL": "HCM",
+    "FND_APPLICATION_VL": "HCM",
+    "FND_ATTACHED_DOCUMENTS": "HCM",
+    "FND_BPM_TASK_ASSIGNEE": "HCM",
+    "FND_BPM_TASK_ATTACHMENT": "HCM",
+    "FND_BPM_TASK_COMMENT": "HCM",
+    "FND_BPM_TASK_HISTORY_VL": "HCM",
+    "FND_CAL_DAY": "HCM",
+    "FND_CAL_MONTH": "HCM",
+    "FND_CAL_QUARTER": "HCM",
+    "FND_CAL_WEEK": "HCM",
+    "FND_CAL_YEAR": "HCM",
+    "FND_CONSOLE_ISSUE": "HCM",
+    "FND_CONSOLE_TRANSACTION_INFO": "HCM",
+    "FND_CURRENCIES_B": "HCM",
+    "FND_CURRENCIES_TL": "HCM",
+    "FND_CURRENCIES_VL": "HCM",
+    "FND_DF_CONTEXTS_VL": "HCM",
+    "FND_DOCUMENTS": "HCM",
+    "FND_DOCUMENTS_TL": "HCM",
+    "FND_DOCUMENTS_VL": "HCM",
+    "FND_DOCUMENT_SEQUENCES": "HCM",
+    "FND_DOC_SEQUENCE_CATEGORIES": "HCM",
+    "FND_FLEX_VALUES_VL": "HCM",
+    "FND_KF_STR_INSTANCES_VL": "HCM",
+    "FND_LANGUAGES_VL": "HCM",
+    "FND_LOOKUPS": "HCM",
+    "FND_LOOKUP_VALUES_B": "HCM",
+    "FND_LOOKUP_VALUES_TL": "HCM",
+    "FND_NODE_TL": "HCM",
+    "FND_SETID_SETS_VL": "HCM",
+    "FND_TERRITORIES_B": "HCM",
+    "FND_TERRITORIES_TL": "HCM",
+    "FND_TERRITORIES_VL": "HCM",
+    "FND_TREE_VERSION_TL": "HCM",
+    "FND_TREE_VERSION_VL": "HCM",
+    "FND_TREE_VL": "HCM",
+    "FND_VS_VALUE_SETS": "HCM",
+    "FUN_ALL_BUSINESS_UNITS_V": "HCM",
+    "FUN_BUSINESS_FUNCTIONS_B": "HCM",
+    "FUN_BUSINESS_FUNCTIONS_TL": "HCM",
+    "FUN_BU_PERF_V": "HCM",
+    "FUN_BU_USAGES_V": "HCM",
+    "FUN_SEQ_VERSIONS": "HCM",
+    "FUN_SERVICE_PROVIDER_BU_V": "HCM",
+    "EGP_CATEGORIES_TL": "HCM",
+    "EGP_CATEGORIES_VL": "HCM",
+    "EGP_SYSTEM_ITEMS_B_V": "HCM",
+    "EGP_SYSTEM_ITEMS_VL": "HCM",
+    "INV_CONS_ADVICE_TXNS_V": "HCM",
+    "INV_ORGANIZATION_DEFINITIONS_V": "HCM",
+    "INV_ORG_PARAMETERS": "HCM",
+    "INV_UNITS_OF_MEASURE_B": "HCM",
+    "INV_UNITS_OF_MEASURE_TL": "HCM",
+    "INV_UNITS_OF_MEASURE_VL": "HCM",
+    "JTF_RS_REP_MANAGERS": "HCM",
+    "JTF_RS_RESOURCE_PROFILES": "HCM",
+    "JTF_RS_SALESREPS": "HCM",
+    "FA_BOOK_CONTROLS": "HCM",
+    "GMS_FUNDING_SOURCES_VL": "HCM",
+    "OKC_K_HEADERS_VL": "HCM",
+    "FOS_AGREEMENT_PTR_F": "HCM",
+    "PJF_EXP_TYPES_TL": "HCM",
+    "PJF_PROJECTS_ALL_B": "HCM",
+    "PJF_PROJECTS_ALL_TL": "HCM",
+    "PJF_PROJ_ELEMENTS_B": "HCM",
+    "PJF_PROJ_ELEMENTS_TL": "HCM",
+    "PJF_WORK_TYPES_VL": "HCM"
+  },
+  "i18n": [
+    {
+      "id": 1,
+      "br": "Visão Geral",
+      "en": "Overview",
+      "es": "Visión General"
+    },
+    {
+      "id": 2,
+      "br": "Armazena os padrões de horário de trabalho (jornadas) aplicáveis aos colaboradores, incluindo horas diárias/semanais e tipo de regime. Tabela date-effective (_F).",
+      "en": "Stores work hour patterns (schedules) applicable to employees, including daily/weekly hours and work regime type. Date-effective table (_F).",
+      "es": "Almacena los patrones de horario de trabajo (jornadas) aplicables a los colaboradores, incluyendo horas diarias/semanales y tipo de régimen. Tabla date-effective (_F)."
+    },
+    {
+      "id": 3,
+      "br": "Propósito de Negócio",
+      "en": "Business Purpose",
+      "es": "Propósito de Negocio"
+    },
+    {
+      "id": 4,
+      "br": "Esta tabela é utilizada nos seguintes processos:",
+      "en": "This table is used in the following processes:",
+      "es": "Esta tabela se utiliza en los siguientes procesos:"
+    },
+    {
+      "id": 5,
+      "br": "— define os padrões de trabalho (integral, parcial, flexível).",
+      "en": "— define os patterns de trabalho (integral, parcial, flexível).",
+      "es": "— define os patrones de trabalho (integral, parcial, flexível)."
+    },
+    {
+      "id": 6,
+      "br": "— base para cálculo de horas normais e extras.",
+      "en": "— base para cálculo de horas normais e extras.",
+      "es": "— base para cálculo de horas normais e extras."
+    },
+    {
+      "id": 7,
+      "br": "— garante aderência aos limites legais de jornada.",
+      "en": "— ensures aderência aos limites legais de work schedule.",
+      "es": "— garantiza aderência aos limites legais de jornada."
+    },
+    {
+      "id": 8,
+      "br": "— suporta definição de escalas de trabalho.",
+      "en": "— suporta definição de schedules de trabalho.",
+      "es": "— suporta definição de escalas de trabalho."
+    },
+    {
+      "id": 9,
+      "br": "— análises de distribuição de jornadas.",
+      "en": "— análises de distribuição de jornadas.",
+      "es": "— análises de distribuição de jornadas."
+    },
+    {
+      "id": 10,
+      "br": "Colunas Principais",
+      "en": "Key Columns",
+      "es": "Columnas Principales"
+    },
+    {
+      "id": 11,
+      "br": "Confiança",
+      "en": "Confidence",
+      "es": "Confianza"
+    },
+    {
+      "id": 12,
+      "br": "Escala de 0% a 100% — grau de certeza da descrição gerada por IA com base na documentação oficial Oracle (OEDMF/BICC Release 13/25A).",
+      "en": "Scale from 0% to 100% — confidence level of the AI-generated description based on official Oracle documentation (OEDMF/BICC Release 13/25A).",
+      "es": "Escala de 0% a 100% — grado de certeza de la descripción generada por IA con base en la documentación oficial Oracle (OEDMF/BICC Release 13/25A)."
+    },
+    {
+      "id": 13,
+      "br": "- 🟢 81–100% — Coluna presente na documentação oficial Oracle; nome, tipo e descrição confirmados.",
+      "en": "- 🟢 81–100% — Column present in official Oracle documentation; name, type, and description confirmed.",
+      "es": "- 🟢 81–100% — Columna presente en la documentación oficial Oracle; nombre, tipo y descripción confirmados."
+    },
+    {
+      "id": 14,
+      "br": "- 🟡 51–80% — Coluna inferida por naming convention ou padrão Oracle; tipo exato pode variar.",
+      "en": "- 🟡 51–80% — Column inferred by naming convention or Oracle standard; exact type may vary.",
+      "es": "- 🟡 51–80% — Columna inferida por naming convention o estándar Oracle; el tipo exacto puede variar."
+    },
+    {
+      "id": 15,
+      "br": "- 🔴 0–50% — Existência ou tipo incertos; pode não existir no release atual; validar no ambiente.",
+      "en": "- 🔴 0–50% — Existence or type uncertain; may not exist in the current release; validate in the environment.",
+      "es": "- 🔴 0–50% — Existencia o tipo inciertos; puede no existir en el release actual; validar en el ambiente."
+    },
+    {
+      "id": 16,
+      "br": "Coluna",
+      "en": "Column",
+      "es": "Columna"
+    },
+    {
+      "id": 17,
+      "br": "Tipo",
+      "en": "Type",
+      "es": "Tipo"
+    },
+    {
+      "id": 18,
+      "br": "Nulo?",
+      "en": "Nullable?",
+      "es": "¿Nulo?"
+    },
+    {
+      "id": 19,
+      "br": "Categoria",
+      "en": "Category",
+      "es": "Categoría"
+    },
+    {
+      "id": 20,
+      "br": "Descrição",
+      "en": "Description",
+      "es": "Descripción"
+    },
+    {
+      "id": 21,
+      "br": "Identificador único do padrão de horário",
+      "en": "Identificador único do pattern de horário",
+      "es": "Identificador único do patrón de horário"
+    },
+    {
+      "id": 22,
+      "br": "Vigência",
+      "en": "Validity Period",
+      "es": "Vigencia"
+    },
+    {
+      "id": 23,
+      "br": "Início da validade do registro",
+      "en": "Record validity start date",
+      "es": "Inicio de validez del registro"
+    },
+    {
+      "id": 24,
+      "br": "Fim da validade do registro",
+      "en": "Record validity end date",
+      "es": "Fin de validez del registro"
+    },
+    {
+      "id": 25,
+      "br": "Atribuição do colaborador",
+      "en": "Employee assignment",
+      "es": "Asignación del colaborador"
+    },
+    {
+      "id": 26,
+      "br": "Dados",
+      "en": "Data",
+      "es": "Datos"
+    },
+    {
+      "id": 27,
+      "br": "Quantidade de horas de trabalho",
+      "en": "Quantidade de horas de trabalho",
+      "es": "Quantidade de horas de trabalho"
+    },
+    {
+      "id": 28,
+      "br": "Classificação",
+      "en": "Classification",
+      "es": "Clasificación"
+    },
+    {
+      "id": 29,
+      "br": "Frequência (diária, semanal, mensal)",
+      "en": "Attendance (diária, semanal, mensal)",
+      "es": "Asistencia (diária, semanal, mensal)"
+    },
+    {
+      "id": 30,
+      "br": "Tipo do padrão (ex.: STANDARD, FLEXIBLE)",
+      "en": "Type do pattern (ex.: STANDARD, FLEXIBLE)",
+      "es": "Tipo do patrón (ex.: STANDARD, FLEXIBLE)"
+    },
+    {
+      "id": 31,
+      "br": "Auditoria",
+      "en": "Audit",
+      "es": "Auditoría"
+    },
+    {
+      "id": 32,
+      "br": "Usuário que criou o registro",
+      "en": "User who created the record",
+      "es": "Usuario que creó el registro"
+    },
+    {
+      "id": 33,
+      "br": "Data/hora de criação",
+      "en": "Creation date/time",
+      "es": "Fecha/hora de creación"
+    },
+    {
+      "id": 34,
+      "br": "Último usuário que alterou",
+      "en": "Last user who modified",
+      "es": "Último usuario que modificó"
+    },
+    {
+      "id": 35,
+      "br": "Data/hora da última alteração",
+      "en": "Last modification date/time",
+      "es": "Fecha/hora de la última modificación"
+    },
+    {
+      "id": 36,
+      "br": "Relacionamentos",
+      "en": "Relationships",
+      "es": "Relaciones"
+    },
+    {
+      "id": 37,
+      "br": "Tabelas-pai (FK de entrada)",
+      "en": "Parent Tables (inbound FK)",
+      "es": "Tablas padre (FK de entrada)"
+    },
+    {
+      "id": 38,
+      "br": "atribuição do colaborador",
+      "en": "atribuição do employee",
+      "es": "asignación do colaborador"
+    },
+    {
+      "id": 39,
+      "br": "Tabelas-filha (FK de saída)",
+      "en": "Child Tables (outbound FK)",
+      "es": "Tablas hija (FK de salida)"
+    },
+    {
+      "id": 40,
+      "br": "Nenhuma tabela-filha identificada.",
+      "en": "No child table identified.",
+      "es": "Ninguna tabla hija identificada."
+    },
+    {
+      "id": 41,
+      "br": "Uso Típico",
+      "en": "Typical Usage",
+      "es": "Uso Típico"
+    },
+    {
+      "id": 42,
+      "br": "Padrões de horário ativos",
+      "en": "Patterns de horário ativos",
+      "es": "Patrones de horário ativos"
+    },
+    {
+      "id": 43,
+      "br": "Filtros comuns",
+      "en": "Common Filters",
+      "es": "Filtros comunes"
+    },
+    {
+      "id": 44,
+      "br": "Padrão de um colaborador específico",
+      "en": "Pattern de um employee específico",
+      "es": "Patrón de um colaborador específico"
+    },
+    {
+      "id": 45,
+      "br": "Padrões semanais",
+      "en": "Patterns semanais",
+      "es": "Patrones semanais"
+    },
+    {
+      "id": 46,
+      "br": "Observações",
+      "en": "Notes",
+      "es": "Observaciones"
+    },
+    {
+      "id": 47,
+      "br": "Tabela date-effective (_F) — registros possuem vigência temporal.",
+      "en": "Date-effective table (_F) — records have temporal validity.",
+      "es": "Tabla date-effective (_F) — los registros poseen vigencia temporal."
+    },
+    {
+      "id": 48,
+      "br": "O campo WORKING_HOURS combinado com FREQUENCY define a jornada completa.",
+      "en": "O field WORKING_HOURS combinado com FREQUENCY define a jornada completa.",
+      "es": "El campo WORKING_HOURS combinado com FREQUENCY define a jornada completa."
+    },
+    {
+      "id": 49,
+      "br": "Alterações de jornada geram novos registros com datas de vigência atualizadas.",
+      "en": "Work schedule changes generate new records with updated effective dates.",
+      "es": "Los cambios de jornada generan nuevos registros con fechas de vigencia actualizadas."
+    },
+    {
+      "id": 50,
+      "br": "Fundamental para cálculos de proporcionalidade em admissões/demissões.",
+      "en": "Fundamental para cálculos de proporcionalidade em admissões/demissões.",
+      "es": "Fundamental para cálculos de proporcionalidad em admisiones/despidos."
+    },
+    {
+      "id": 51,
+      "br": "Referências",
+      "en": "References",
+      "es": "Referencias"
+    },
+    {
+      "id": 52,
+      "br": "[Oracle Docs — PER_WORKING_HOUR_PATTERNS_F](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/perworkinghourpatternsf.html)",
+      "en": "[Oracle Docs — PER_WORKING_HOUR_PATTERNS_F](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/perworkinghourpatternsf.html)",
+      "es": "[Oracle Docs — PER_WORKING_HOUR_PATTERNS_F](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/perworkinghourpatternsf.html)"
+    },
+    {
+      "id": 53,
+      "br": "Dossiê do módulo HCM",
+      "en": "HCM Module Dossier",
+      "es": "Dossier del módulo HCM"
+    }
+  ]
+};
+</script>
+
+<!-- ====== HEADER ====== -->
+<header class="header">
+    <div class="container">
+        <div class="header-content">
+            <div class="header-breadcrumb-row">
+                <nav class="breadcrumb" id="breadcrumb"></nav>
+                <div class="header-right-top">
+                    <div style="display:flex; gap:8px; align-items:center;">
+                        <button class="lang-btn active" onclick="switchLang('pt')" id="lang-pt" title="Português">
+                            <svg width="20" height="14" viewBox="0 0 20 14"><rect width="20" height="14" rx="1" fill="#009739"/><polygon points="10,1.5 19,7 10,12.5 1,7" fill="#FEDD00"/><circle cx="10" cy="7" r="3.2" fill="#012169"/><rect x="7.8" y="6.2" width="4.4" height="0.4" rx="0.2" fill="#fff" transform="rotate(-8 10 7)"/></svg>
+                            <span>PT</span>
+                        </button>
+                        <button class="lang-btn" onclick="switchLang('en')" id="lang-en" title="English">
+                            <svg width="20" height="14" viewBox="0 0 20 14"><rect width="20" height="14" rx="1" fill="#B22234"/><rect y="1.08" width="20" height="1.08" fill="#fff"/><rect y="3.23" width="20" height="1.08" fill="#fff"/><rect y="5.38" width="20" height="1.08" fill="#fff"/><rect y="7.54" width="20" height="1.08" fill="#fff"/><rect y="9.69" width="20" height="1.08" fill="#fff"/><rect y="11.85" width="20" height="1.08" fill="#fff"/><rect width="8" height="7.54" fill="#3C3B6E"/></svg>
+                            <span>EN</span>
+                        </button>
+                        <button class="lang-btn" onclick="switchLang('es')" id="lang-es" title="Español">
+                            <svg width="20" height="14" viewBox="0 0 20 14"><rect width="20" height="14" rx="1" fill="#AA151B"/><rect y="3" width="20" height="8" fill="#F1BF00"/></svg>
+                            <span>ES</span>
+                        </button>
+                        <div class="header-badge" style="border:none;cursor:pointer" onclick="toggleTheme()" title="Alternar tema">
+                            <i id="theme-icon" class="ri-sun-line"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-top">
+                <div class="header-left">
+                    <img class="header-logo logo-dark" src="../../../../assets/logos/logo-dark.png" alt="Logo">
+                    <img class="header-logo logo-light" src="../../../../assets/logos/logo-light.png" alt="Logo">
+                    <div>
+                        <h1><i class="ri-database-2-line" style="margin-right:8px"></i><span id="h-title"></span></h1>
+                        <div class="subtitle" id="h-subtitle"></div>
+                        <div class="header-badges" id="h-badges"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="tabs-nav" id="tabs-nav"></div>
+        </div>
+    </div>
+</header>
+
+<!-- ====== MAIN ====== -->
+<main class="container">
+    <div id="tab-overview" class="tab-content active"></div>
+    <div id="tab-columns" class="tab-content"></div>
+    <div id="tab-relationships" class="tab-content"></div>
+    <div id="tab-sql" class="tab-content"></div>
+</main>
+
+<!-- ====== FOOTER ====== -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-left">
+                <div class="footer-avatar" id="f-initials"></div>
+                <div>
+                    <div class="footer-author-name" id="f-name"></div>
+                    <div class="footer-author-role" id="f-role"></div>
+                    <div class="footer-author-email" id="f-email"></div>
+                </div>
+            </div>
+            <div class="footer-right">
+                <div class="footer-doc-title" id="f-doc-title"></div>
+                <div class="footer-doc-detail" id="f-doc-detail"></div>
+            </div>
+        </div>
+        <div class="footer-seal" id="f-seal"></div>
+    </div>
+</footer>
+
+<!-- ====== BACK TO TOP ====== -->
+<button class="back-to-top" id="backToTop" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Voltar ao topo">
+    <i class="ri-arrow-up-line"></i>
+</button>
+
+<script>
+/* ====== i18n ====== */
+// Resolve lang: URL param > localStorage > default
+var _urlLang = new URLSearchParams(window.location.search).get('lang');
+var currentLang = _urlLang || localStorage.getItem('preferred-lang') || 'pt';
+
+// Build i18n lookup map: { "texto br": {en: "...", es: "..."} }
+var _i18nMap = {};
+(DATA.i18n || []).forEach(function(item) {
+    if (item.br) {
+        _i18nMap[item.br] = { en: item.en, es: item.es };
+        // Also index lowercase for fuzzy matching
+        _i18nMap[item.br.toLowerCase()] = { en: item.en, es: item.es };
+    }
+});
+
+function _lookup(text) {
+    if (!text || currentLang === 'pt') return null;
+    // Strip HTML tags for matching
+    var clean = text.replace(/<[^>]+>/g, '').trim();
+    // 1. Exact match
+    var found = _i18nMap[clean] || _i18nMap[clean.toLowerCase()];
+    if (found && found[currentLang]) return found[currentLang];
+    // 2. Substring match — find longest i18n key contained in the text
+    var bestKey = null;
+    var bestLen = 0;
+    for (var key in _i18nMap) {
+        if (key.length > bestLen && clean.indexOf(key) >= 0 && _i18nMap[key][currentLang]) {
+            // Only match if it's a substantial portion (>60% of the text)
+            if (key.length > clean.length * 0.6) {
+                bestKey = key;
+                bestLen = key.length;
+            }
+        }
+    }
+    if (bestKey) return _i18nMap[bestKey][currentLang];
+    return null;
+}
+
+function t(obj) {
+    if (!obj) return '';
+    // If it's an i18n object {pt, en, es}
+    if (typeof obj === 'object' && obj !== null && !Array.isArray(obj)) {
+        // If target lang exists, use it directly
+        if (obj[currentLang]) return obj[currentLang];
+        // Otherwise, take PT value and try i18n lookup
+        var ptVal = obj['pt'] || obj['en'] || '';
+        if (currentLang === 'pt') return ptVal;
+        // Lookup PT value in i18n map
+        var translated = _lookup(ptVal);
+        if (translated) return translated;
+        return _multiReplace(ptVal);
+    }
+    // If it's a string, try lookup in i18n map
+    if (typeof obj === 'string') {
+        if (currentLang === 'pt') return obj;
+        // First try exact lookup
+        var translated = _lookup(obj);
+        if (translated) return translated;
+        // Then try multi-replace: find all i18n keys contained in text and replace
+        return _multiReplace(obj);
+    }
+    return String(obj);
+}
+
+function _multiReplace(text) {
+    if (!text || currentLang === 'pt') return text;
+    var clean = text.replace(/<[^>]+>/g, '');
+    var result = text;
+    // Sort keys by length descending (longest match first)
+    var keys = Object.keys(_i18nMap).filter(function(k) {
+        return k.length > 5 && _i18nMap[k][currentLang] && clean.indexOf(k) >= 0;
+    }).sort(function(a, b) { return b.length - a.length; });
+
+    if (keys.length === 0) return text;
+
+    // For long texts, rebuild by replacing BR segments with translations
+    // Strip HTML, replace, then we lose formatting — acceptable tradeoff
+    var working = clean;
+    keys.forEach(function(key) {
+        var translated = _i18nMap[key][currentLang];
+        if (translated && working.indexOf(key) >= 0) {
+            working = working.replace(key, translated);
+        }
+    });
+
+    // If we made changes, return the translated version (without HTML formatting)
+    if (working !== clean) return working;
+    return text;
+}
+
+function tList(arr) {
+    if (!arr) return [];
+    // If it's an i18n object {pt: [...], en: [...], es: [...]}
+    if (!Array.isArray(arr) && typeof arr === 'object') {
+        var ptList = arr['pt'] || [];
+        if (currentLang === 'pt') return ptList;
+        // Translate each PT item via lookup
+        return ptList.map(function(item) { return t(item); });
+    }
+    // If it's a plain array, translate each item
+    return arr.map(function(item) { return t(item); });
+}
+
+function switchLang(lang) {
+    // Save current active tab before re-render
+    var activeTab = document.querySelector('.tab-btn.active');
+    var activeTabId = activeTab ? activeTab.getAttribute('data-tab') : null;
+
+    currentLang = lang;
+    localStorage.setItem('preferred-lang', lang);
+    document.querySelectorAll('.lang-btn').forEach(function(b) { b.classList.remove('active'); });
+    var btn = document.getElementById('lang-' + lang);
+    if (btn) btn.classList.add('active');
+    render();
+
+    // Restore active tab
+    if (activeTabId) switchTab(activeTabId);
+}
+
+/* ====== THEME ====== */
+function toggleTheme() {
+    var current = document.body.getAttribute('data-theme');
+    document.body.setAttribute('data-theme', current === 'light' ? '' : 'light');
+    document.getElementById('theme-icon').className = current === 'light' ? 'ri-sun-line' : 'ri-moon-line';
+    localStorage.setItem('theme', document.body.getAttribute('data-theme') || 'dark');
+}
+
+/* ====== TABS ====== */
+function switchTab(id) {
+    document.querySelectorAll('.tab-btn').forEach(function(b) { b.classList.remove('active'); });
+    document.querySelectorAll('.tab-content').forEach(function(c) { c.classList.remove('active'); });
+    document.querySelectorAll('.tab-btn').forEach(function(b) {
+        if (b.getAttribute('data-tab') === id) b.classList.add('active');
+    });
+    var el = document.getElementById('tab-' + id);
+    if (el) el.classList.add('active');
+}
+
+/* ====== LINK RESOLVER ====== */
+function resolveLink(tableName, currentModule) {
+    if (!DATA.table_map) return { href: '#', cls: 'broken-link' };
+    var upper = tableName.toUpperCase();
+    var targetModule = DATA.table_map[upper];
+    if (!targetModule) return { href: '#', cls: 'broken-link', title: 'Link não resolvido' };
+    if (targetModule === currentModule) {
+        return { href: './' + tableName.toLowerCase() + '.html', cls: 'wikilink' };
+    }
+    return { href: '../../' + targetModule + '/tables/' + tableName.toLowerCase() + '.html', cls: 'wikilink' };
+}
+
+function langParam() {
+    return currentLang !== 'pt' ? '?lang=' + currentLang : '';
+}
+
+function linkHtml(tableName) {
+    var mod = DATA.meta.module_code || '';
+    var r = resolveLink(tableName, mod);
+    if (r.cls === 'broken-link') {
+        return '<span class="broken-link" title="' + (r.title || '') + '">' + tableName + '</span>';
+    }
+    return '<a href="' + r.href + langParam() + '" class="wikilink">' + tableName + '</a>';
+}
+
+/* ====== CATEGORY STYLING ====== */
+var catColors = {
+    'PK': 'primary', 'FK': 'info', 'Financeiro': 'success', 'Financial': 'success', 'Financiero': 'success',
+    'Classificação': 'purple', 'Classification': 'purple', 'Clasificación': 'purple',
+    'Contabilidade': 'orange', 'Accounting': 'orange', 'Contabilidad': 'orange',
+    'Data': 'teal', 'Date': 'teal', 'Fecha': 'teal',
+    'Texto livre': 'secondary', 'Free Text': 'secondary', 'Texto libre': 'secondary',
+    'Referência cruzada': 'warning', 'Cross-reference': 'warning', 'Referencia cruzada': 'warning',
+    'Identificação': 'info', 'Identification': 'info', 'Identificación': 'info',
+    'Sistema': 'secondary', 'System': 'secondary',
+    'Aprovação': 'warning', 'Approval': 'warning', 'Aprobación': 'warning',
+    'Auditoria': 'secondary', 'Audit': 'secondary', 'Auditoría': 'secondary',
+    'DFF': 'purple', 'Multi-Org': 'orange'
+};
+function catPill(cat) {
+    var c = catColors[cat] || 'info';
+    return '<span class="pill pill-' + (c === 'purple' || c === 'orange' || c === 'teal' || c === 'secondary' ? 'info' : c) + '" style="' +
+        (c === 'purple' ? 'background:var(--purple-light);color:var(--purple);border-color:rgba(155,150,255,0.3)' :
+         c === 'orange' ? 'background:rgba(255,148,115,0.12);color:var(--orange);border-color:rgba(255,148,115,0.3)' :
+         c === 'teal' ? 'background:rgba(45,212,191,0.12);color:var(--teal);border-color:rgba(45,212,191,0.3)' :
+         c === 'secondary' ? 'background:rgba(91,184,196,0.12);color:var(--secondary);border-color:rgba(91,184,196,0.3)' : '') +
+        '">' + cat + '</span>';
+}
+
+function confPill(pct) {
+    if (pct >= 81) return '<span class="pill pill-success">🟢 ' + pct + '%</span>';
+    if (pct >= 51) return '<span class="pill pill-warning">🟡 ' + pct + '%</span>';
+    return '<span class="pill pill-danger">🔴 ' + pct + '%</span>';
+}
+
+/* ====== RENDER ====== */
+function render() {
+    var d = DATA;
+    var m = d.meta;
+
+    // Header
+    document.getElementById('h-title').textContent = m.table_name;
+    document.getElementById('h-subtitle').textContent = t(m.subtitle) + ' — ' + t({pt:'Dicionário de Dados', en:'Data Dictionary', es:'Diccionario de Datos'});
+    document.getElementById('h-badges').innerHTML =
+        '<div class="header-badge"><i class="ri-apps-line"></i> ' + m.module + '</div>' +
+        '<div class="header-badge"><i class="ri-file-list-3-line"></i> ' + m.id + '</div>' +
+        '<div class="header-badge"><i class="ri-calendar-line"></i> ' + m.created_at + '</div>';
+
+    // Tabs
+    var tabLabels = {
+        overview: {pt:'Visão Geral', en:'Overview', es:'Visión General'},
+        columns: {pt:'Colunas', en:'Columns', es:'Columnas'},
+        relationships: {pt:'Relacionamentos', en:'Relationships', es:'Relaciones'},
+        sql: {pt:'SQL', en:'SQL', es:'SQL'}
+    };
+    document.getElementById('tabs-nav').innerHTML =
+        '<button class="tab-btn active" data-tab="overview" onclick="switchTab(\'overview\')"><i class="ri-information-line"></i> ' + t(tabLabels.overview) + '</button>' +
+        '<button class="tab-btn" data-tab="columns" onclick="switchTab(\'columns\')"><i class="ri-table-line"></i> ' + t(tabLabels.columns) + ' <span class="tab-count">' + d.columns.length + '</span></button>' +
+        '<button class="tab-btn" data-tab="relationships" onclick="switchTab(\'relationships\')"><i class="ri-git-branch-line"></i> ' + t(tabLabels.relationships) + ' <span class="tab-count">' + (d.relationships.parents.length + d.relationships.children.length) + '</span></button>' +
+        '<button class="tab-btn" data-tab="sql" onclick="switchTab(\'sql\')"><i class="ri-code-s-slash-line"></i> SQL <span class="tab-count">' + d.sql.length + '</span></button>';
+
+    // Tab 1: Overview
+    var statsHtml =
+        '<div class="stats-grid">' +
+        '<div class="stat-card"><div class="stat-card-icon bg-primary"><i class="ri-table-line"></i></div><div class="stat-card-info"><div class="stat-card-number" style="color:var(--primary)">' + d.columns.length + '</div><div class="stat-card-label">' + t(tabLabels.columns) + '</div></div></div>' +
+        '<div class="stat-card"><div class="stat-card-icon bg-info"><i class="ri-links-line"></i></div><div class="stat-card-info"><div class="stat-card-number" style="color:var(--info)">' + d.relationships.parents.length + '</div><div class="stat-card-label">Foreign Keys</div></div></div>' +
+        '<div class="stat-card"><div class="stat-card-icon bg-success"><i class="ri-shield-check-line"></i></div><div class="stat-card-info"><div class="stat-card-number" style="color:var(--success)">' + d.stats.avg_confidence + '%</div><div class="stat-card-label">' + t({pt:'Confiança Média', en:'Avg Confidence', es:'Confianza Promedio'}) + '</div></div></div>' +
+        '<div class="stat-card"><div class="stat-card-icon bg-purple"><i class="ri-apps-line"></i></div><div class="stat-card-info"><div class="stat-card-number" style="color:var(--purple)">' + d.stats.categories + '</div><div class="stat-card-label">' + t({pt:'Categorias', en:'Categories', es:'Categorías'}) + '</div></div></div>' +
+        '</div>';
+
+    var overviewHtml = statsHtml +
+        '<div class="intro-text">' + t(d.overview) + '</div>';
+
+    if (d.alert) {
+        overviewHtml += '<div class="alert alert-info"><i class="ri-information-line"></i> ' + t(d.alert) + '</div>';
+    }
+
+    // Business purpose
+    if (d.business_purpose) {
+        var bpItems = tList(d.business_purpose);
+        if (Array.isArray(bpItems) && bpItems.length) {
+            overviewHtml += '<div class="card"><div class="card-header"><div class="card-header-icon bg-info"><i class="ri-briefcase-line"></i></div><div class="card-title">' + t({pt:'Propósito de Negócio', en:'Business Purpose', es:'Propósito de Negocio'}) + '</div></div><div class="card-body"><ul style="list-style:none">';
+            bpItems.forEach(function(item) {
+                overviewHtml += '<li style="padding:8px 0;border-bottom:1px solid var(--border);font-size:0.85rem">' + item + '</li>';
+            });
+            overviewHtml += '</ul></div></div>';
+        }
+    }
+
+    // Notes
+    if (d.notes) {
+        var notes = tList(d.notes);
+        if (Array.isArray(notes)) {
+            overviewHtml += '<div class="card"><div class="card-header"><div class="card-header-icon bg-warning"><i class="ri-error-warning-line"></i></div><div class="card-title">' + t({pt:'Observações', en:'Notes', es:'Observaciones'}) + '</div></div><div class="card-body">';
+            notes.forEach(function(n) {
+                overviewHtml += '<div class="note-item">' + n + '</div>';
+            });
+            overviewHtml += '</div></div>';
+        }
+    }
+
+    document.getElementById('tab-overview').innerHTML = overviewHtml;
+
+    // Tab 2: Columns
+    var colHeaders = {pt:['#','Coluna','Tipo','Obrigatório','Categoria','Descrição','FK','Confiança'], en:['#','Column','Type','Required','Category','Description','FK','Confidence'], es:['#','Columna','Tipo','Obligatorio','Categoría','Descripción','FK','Confianza']};
+    var headers = colHeaders[currentLang] || colHeaders['pt'];
+    var colHtml = '<div class="search-container"><i class="ri-search-line search-icon"></i><input class="search-input" type="text" placeholder="' + t({pt:'Filtrar colunas...', en:'Filter columns...', es:'Filtrar columnas...'}) + '" oninput="filterColumns(this.value)"></div>';
+    colHtml += '<div class="table-wrapper"><table id="columns-table"><thead><tr>';
+    headers.forEach(function(h) { colHtml += '<th>' + h + '</th>'; });
+    colHtml += '</tr></thead><tbody>';
+    d.columns.forEach(function(col) {
+        var fkHtml = col.fk ? linkHtml(col.fk) : '—';
+        colHtml += '<tr data-search="' + (col.name + ' ' + t(col.description) + ' ' + t(col.category)).toLowerCase() + '">' +
+            '<td>' + col.num + '</td>' +
+            '<td class="col-name">' + col.name + '</td>' +
+            '<td class="col-type">' + col.type + '</td>' +
+            '<td style="text-align:center">' + (col.nullable ? '' : '<i class="ri-checkbox-circle-fill" style="color:var(--success);font-size:1.1rem" title="' + t({pt:'Obrigatório',en:'Required',es:'Obligatorio'}) + '"></i>') + '</td>' +
+            '<td>' + catPill(t(col.category)) + '</td>' +
+            '<td>' + t(col.description) + '</td>' +
+            '<td>' + fkHtml + '</td>' +
+            '<td>' + confPill(col.confidence) + '</td>' +
+            '</tr>';
+    });
+    colHtml += '</tbody></table></div>';
+    document.getElementById('tab-columns').innerHTML = colHtml;
+
+    // Tab 3: Relationships (table format)
+    var relHtml = '';
+    var relHeaders = {
+        pt: ['Tabela','Coluna (FK)','Descrição','Módulo'],
+        en: ['Table','Column (FK)','Description','Module'],
+        es: ['Tabla','Columna (FK)','Descripción','Módulo']
+    };
+    var rh = relHeaders[currentLang] || relHeaders['pt'];
+
+    function relTable(items, title, iconClass, bgClass) {
+        if (!items.length) return '';
+        var html = '<div class="card"><div class="card-header"><div class="card-header-icon ' + bgClass + '"><i class="' + iconClass + '"></i></div><div class="card-title">' + title + '</div><div class="card-badge pill-info">' + items.length + '</div></div><div class="card-body"><div class="table-wrapper"><table><thead><tr>';
+        rh.forEach(function(h) { html += '<th>' + h + '</th>'; });
+        html += '</tr></thead><tbody>';
+        items.forEach(function(r) {
+            var link = resolveLink(r.table, m.module_code);
+            var mod = DATA.table_map ? (DATA.table_map[r.table.toUpperCase()] || '?') : '?';
+            html += '<tr>' +
+                '<td class="col-name">' + (link.cls === 'wikilink' ? '<a href="' + link.href + langParam() + '" class="wikilink">' + r.table + '</a>' : '<span class="broken-link">' + r.table + '</span>') + '</td>' +
+                '<td>' + (r.column ? '<code>' + r.column + '</code>' : '—') + '</td>' +
+                '<td>' + t(r.desc) + '</td>' +
+                '<td><span class="pill pill-info">' + mod + '</span></td>' +
+                '</tr>';
+        });
+        html += '</tbody></table></div></div></div>';
+        return html;
+    }
+
+    relHtml += relTable(d.relationships.parents,
+        t({pt:'Tabelas-pai (FK de entrada)', en:'Parent Tables (Incoming FK)', es:'Tablas padre (FK de entrada)'}),
+        'ri-arrow-up-line', 'bg-info');
+    relHtml += relTable(d.relationships.children,
+        t({pt:'Tabelas-filha (FK de saída)', en:'Child Tables (Outgoing FK)', es:'Tablas hijo (FK de salida)'}),
+        'ri-arrow-down-line', 'bg-success');
+
+    document.getElementById('tab-relationships').innerHTML = relHtml;
+
+    // Tab 4: SQL
+    var sqlHtml = '';
+    d.sql.forEach(function(q) {
+        sqlHtml += '<div class="sql-block"><div class="sql-header"><i class="ri-code-s-slash-line"></i> ' + t(q.title) + '</div><pre class="sql-code">' + q.code + '</pre></div>';
+    });
+    if (d.filters && d.filters.length) {
+        sqlHtml += '<div class="card"><div class="card-header"><div class="card-header-icon bg-warning"><i class="ri-filter-line"></i></div><div class="card-title">' + t({pt:'Filtros comuns', en:'Common Filters', es:'Filtros comunes'}) + '</div></div><div class="card-body"><ul class="filter-list">';
+        d.filters.forEach(function(f) {
+            sqlHtml += '<li><code>' + f.code + '</code> <span>' + t(f.desc) + '</span></li>';
+        });
+        sqlHtml += '</ul></div></div>';
+    }
+    document.getElementById('tab-sql').innerHTML = sqlHtml;
+
+    // Footer
+    document.getElementById('f-initials').textContent = m.author_initials || '';
+    document.getElementById('f-name').textContent = m.author_name || '';
+    document.getElementById('f-role').textContent = m.author_role || '';
+    var email = m.author_email || '';
+    document.getElementById('f-email').innerHTML = email ? '<a href="mailto:' + email + '">' + email + '</a>' : '';
+    document.getElementById('f-doc-title').textContent = (m.company || '') + ' · ' + m.id;
+    document.getElementById('f-doc-detail').textContent = m.table_name + ' · ' + m.module;
+    document.getElementById('f-seal').innerHTML = '<i class="ri-shield-check-line"></i> ' + t({pt:'Criado por', en:'Created by', es:'Creado por'}) + ' ' + (m.author_name || '') + ' · ' + (m.area || '');
+
+    // Breadcrumb (always in English)
+    var modCode = m.module_code || '';
+    var modName = m.module || '';
+    document.getElementById('breadcrumb').innerHTML =
+        '<a href="../../../index.html">Oracle Fusion Data Dictionary</a><span class="sep">›</span>' +
+        '<a href="../index.html">' + modCode + ' - ' + modName + '</a><span class="sep">›</span>' +
+        '<span class="current">' + m.table_name + '</span>';
+
+    // Convert [[wikilinks]] in all rendered content
+    convertWikilinks();
+}
+
+/* ====== WIKILINK CONVERTER ====== */
+function convertWikilinks() {
+    // Find all [[table_name]] in rendered HTML and convert to <a> links
+    var containers = document.querySelectorAll('.tab-content, .intro-text, .note-item, .card-body');
+    var re = /\[\[([^\]]+)\]\]/g;
+    containers.forEach(function(el) {
+        if (!re.test(el.innerHTML)) return;
+        el.innerHTML = el.innerHTML.replace(re, function(match, name) {
+            var link = resolveLink(name, DATA.meta.module_code || '');
+            if (link.cls === 'broken-link') {
+                return '<span class="broken-link" title="Link not found">' + name + '</span>';
+            }
+            return '<a href="' + link.href + langParam() + '" class="wikilink">' + name + '</a>';
+        });
+    });
+}
+
+/* ====== COLUMN FILTER ====== */
+function filterColumns(query) {
+    var q = query.toLowerCase().trim();
+    var rows = document.querySelectorAll('#columns-table tbody tr');
+    rows.forEach(function(row) {
+        var text = row.getAttribute('data-search') || '';
+        row.style.display = !q || text.indexOf(q) >= 0 ? '' : 'none';
+    });
+}
+
+/* ====== INIT ====== */
+(function() {
+    var savedTheme = localStorage.getItem('theme');
+    if (savedTheme === 'light') {
+        document.body.setAttribute('data-theme', 'light');
+        document.getElementById('theme-icon').className = 'ri-moon-line';
+    }
+
+    // Render first in PT (default)
+    render();
+
+    // Then switch lang if URL param or localStorage says so
+    var urlLang = new URLSearchParams(window.location.search).get('lang');
+    var targetLang = urlLang || localStorage.getItem('preferred-lang');
+    if (targetLang && targetLang !== 'pt') {
+        switchLang(targetLang);
+    }
+
+    // Back to top
+    var btn = document.getElementById('backToTop');
+    window.addEventListener('scroll', function() {
+        btn.classList.toggle('visible', window.scrollY > 300);
+    });
+})();
+</script>
+
+</body>
+</html>

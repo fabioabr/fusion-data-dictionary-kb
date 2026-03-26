@@ -1,0 +1,547 @@
+{
+  "source": "gl_je_batches.md",
+  "source_hash": "52808aa1f62b4f71d85d07a069e7b0ef",
+  "translated_at": null,
+  "items": [
+    {
+      "id": 1,
+      "br": "Visão Geral",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 2,
+      "br": "Armazena os lotes (batches) de lançamentos contábeis do General Ledger. Cada lote agrupa um ou mais journals (cabeçalhos de lançamento) que são submetidos, aprovados e contabilizados como uma unidade. É o nível mais alto da hierarquia de lançamentos: Batch → Header → Lines.",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 3,
+      "br": "Hierarquia de lançamentos",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 4,
+      "br": "A estrutura de lançamentos no GL segue três níveis: GL_JE_BATCHES (lote) → GL_JE_HEADERS (cabeçalho/journal) → GL_JE_LINES (linhas/partidas). Um lote pode conter múltiplos journals.",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 5,
+      "br": "Propósito de Negócio",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 6,
+      "br": "Esta tabela é utilizada nos seguintes processos:",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 7,
+      "br": "Organização de journals em lotes para submissão e aprovação em bloco.",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 8,
+      "br": "Controle de status do lote (não postado, postado, em aprovação).",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 9,
+      "br": "Lotes criados automaticamente pelo processo de Journal Import.",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 10,
+      "br": "O processo de posting opera no nível do lote.",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 11,
+      "br": "Lotes podem ser revertidos integralmente.",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 12,
+      "br": "Rastreamento de quem criou, aprovou e postou o lote.",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 13,
+      "br": "Colunas Principais",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 14,
+      "br": "Confiança",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 15,
+      "br": "Escala de 0% a 100% — grau de certeza da descrição gerada por IA com base na documentação oficial Oracle (OEDMF/BICC Release 13/25A).",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 16,
+      "br": "- 🟢 81–100% — Coluna presente na documentação oficial Oracle; nome, tipo e descrição confirmados.",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 17,
+      "br": "- 🟡 51–80% — Coluna inferida por naming convention ou padrão Oracle; tipo exato pode variar.",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 18,
+      "br": "- 🔴 0–50% — Existência ou tipo incertos; pode não existir no release atual; validar no ambiente.",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 19,
+      "br": "Coluna",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 20,
+      "br": "Tipo",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 21,
+      "br": "Nulo?",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 22,
+      "br": "Categoria",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 23,
+      "br": "Descrição",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 24,
+      "br": "Identificador único do lote de lançamento",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 25,
+      "br": "Identificação",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 26,
+      "br": "Nome do lote (único por ledger/período)",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 27,
+      "br": "Identificador do ledger",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 28,
+      "br": "Classificação",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 29,
+      "br": "Status do lote: U (Unposted), P (Posted), S (Selected for posting), I (In error)",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 30,
+      "br": "Controle",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 31,
+      "br": "Flag de verificação do status",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 32,
+      "br": "Tipo: A (Actual), B (Budget), E (Encumbrance)",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 33,
+      "br": "Período",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 34,
+      "br": "Período contábil padrão do lote",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 35,
+      "br": "Data",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 36,
+      "br": "Data efetiva padrão (GL Date)",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 37,
+      "br": "Data em que o lote foi contabilizado (posted)",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 38,
+      "br": "Financeiro",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 39,
+      "br": "Total acumulado a débito de todas as linhas do lote",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 40,
+      "br": "Total acumulado a crédito de todas as linhas do lote",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 41,
+      "br": "Total acumulado a débito — moeda funcional",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 42,
+      "br": "Total acumulado a crédito — moeda funcional",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 43,
+      "br": "Total de controle informado pelo usuário",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 44,
+      "br": "Aprovação",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 45,
+      "br": "Status de aprovação: A (Approved), J (Rejected), R (Required), Z (Funds checked)",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 46,
+      "br": "Status do controle orçamentário",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 47,
+      "br": "Texto livre",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 48,
+      "br": "Descrição do lote",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 49,
+      "br": "Indica se é um journal de média (Average Daily Balance)",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 50,
+      "br": "Sistema",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 51,
+      "br": "ID da execução de posting",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 52,
+      "br": "ID do request de processamento concorrente",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 53,
+      "br": "Referência cruzada",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 54,
+      "br": "ID do lote pai (em caso de reversão)",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 55,
+      "br": "Business unit",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 56,
+      "br": "Auditoria",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 57,
+      "br": "Usuário que criou o registro",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 58,
+      "br": "Data/hora de criação",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 59,
+      "br": "Último usuário que alterou",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 60,
+      "br": "Data/hora da última alteração",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 61,
+      "br": "Login da última sessão",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 62,
+      "br": "ATTRIBUTE1–15",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 63,
+      "br": "Atributos descritivos customizáveis por implementação",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 64,
+      "br": "Contexto do Descriptive Flexfield",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 65,
+      "br": "Relacionamentos",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 66,
+      "br": "Tabelas-pai (FK de entrada)",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 67,
+      "br": "ledger/livro contábil",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 68,
+      "br": "lote pai em reversões — auto-referência",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 69,
+      "br": "business unit proprietária do lote de lançamentos",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 70,
+      "br": "Tabelas-filha (FK de saída)",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 71,
+      "br": "cabeçalhos de lançamento do lote",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 72,
+      "br": "referências de importação",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 73,
+      "br": "Uso Típico",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 74,
+      "br": "Lotes não postados de um período",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 75,
+      "br": "Lotes postados com totais",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 76,
+      "br": "Filtros comuns",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 77,
+      "br": "Não postados (Unposted)",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 78,
+      "br": "Postados (Posted)",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 79,
+      "br": "Com erro (In error)",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 80,
+      "br": "Lançamentos reais",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 81,
+      "br": "Aprovados",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 82,
+      "br": "Observações",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 83,
+      "br": "O STATUS controla o ciclo de vida: U (não postado) → S (selecionado para posting) → P (postado). I indica erro no posting.",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 84,
+      "br": "PARENT_JE_BATCH_ID é preenchido quando o lote é uma reversão de outro lote.",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 85,
+      "br": "RUNNING_TOTAL_DR e RUNNING_TOTAL_CR devem ser iguais (lote balanceado) antes do posting.",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 86,
+      "br": "O CONTROL_TOTAL é opcional e serve como controle manual — se informado, é comparado com o total real.",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 87,
+      "br": "Lotes importados de subledgers (Journal Import) têm o NAME gerado automaticamente pelo processo.",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 88,
+      "br": "Referências",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 89,
+      "br": "[Oracle Docs — GL_JE_BATCHES](https://docs.oracle.com/en/cloud/saas/financials/25a/oedmf/gljebatches-25714.html)",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 90,
+      "br": "Dossiê do módulo GL",
+      "en": null,
+      "es": null
+    }
+  ]
+}

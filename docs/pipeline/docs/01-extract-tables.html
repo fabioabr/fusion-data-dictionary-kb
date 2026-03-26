@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>01 — Extrair Tabelas — Pipeline de Geração</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet">
+    <style>
+
+:root {
+    --primary: #5BA4D9; --primary-dark: #3182B1; --primary-light: rgba(91, 164, 217, 0.12);
+    --secondary: #5BB8C4; --success: #6ABF3B; --success-light: rgba(106, 191, 59, 0.12); --success-border: rgba(106, 191, 59, 0.3);
+    --warning: #F4AC00; --warning-light: rgba(244, 172, 0, 0.12); --warning-border: rgba(244, 172, 0, 0.3);
+    --danger: #E85D54; --danger-light: rgba(232, 93, 84, 0.12); --danger-border: rgba(232, 93, 84, 0.3);
+    --info: #38BDF8; --info-light: rgba(56, 189, 248, 0.12); --info-border: rgba(56, 189, 248, 0.3);
+    --bg: #0f1319; --card-bg: #1a1f2e; --text: #e2e8f0; --text-muted: #8b9ab5; --border: #2a3244;
+    --purple: #9B96FF; --purple-light: rgba(155, 150, 255, 0.12); --orange: #FF9473; --teal: #2DD4BF;
+    --card-header-bg: #141924; --th-bg: #141924; --th-bg-hover: #1e2638;
+    --card-shadow: 0 2px 12px rgba(91, 164, 217, 0.1), 0 1px 4px rgba(0,0,0,0.3);
+}
+[data-theme="light"] {
+    --primary: #3182B1; --primary-dark: #256a94; --primary-light: rgba(49, 130, 177, 0.1);
+    --secondary: #418F9D; --success: #4C7E1B; --success-light: rgba(76, 126, 27, 0.08); --success-border: rgba(76, 126, 27, 0.25);
+    --warning: #F4AC00; --warning-light: rgba(244, 172, 0, 0.08); --warning-border: rgba(244, 172, 0, 0.25);
+    --danger: #C72F25; --danger-light: rgba(199, 47, 37, 0.08); --danger-border: rgba(199, 47, 37, 0.25);
+    --info: #0EA5E8; --info-light: rgba(14, 165, 232, 0.08); --info-border: rgba(14, 165, 232, 0.25);
+    --bg: #dde2e8; --card-bg: #ffffff; --text: #212B37; --text-muted: #6E829F; --border: #e2e8f0;
+    --purple: #7B76FE; --purple-light: rgba(123, 118, 254, 0.08); --orange: #FE7C58; --teal: #00D8D8;
+    --card-header-bg: rgba(49, 130, 177, 0.2); --th-bg: rgba(49, 130, 177, 0.2); --th-bg-hover: rgba(49, 130, 177, 0.23);
+    --card-shadow: 0 2px 8px rgba(49, 130, 177, 0.24), 0 1px 3px rgba(0,0,0,0.1);
+}
+[data-theme="light"] .search-input { background: #eaf1f7; }
+
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, a, img, ul, ol, li,
+header, footer, nav, section, article, aside, button, input, select, textarea,
+table, tr, td, th, form, label, fieldset, legend { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Poppins', sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; }
+.container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+
+.header { background: linear-gradient(135deg, #1a2332 0%, #15202e 50%, #1a2838 100%); color: white; padding: 36px 0 0; position: relative; overflow: hidden; }
+.header::before { content: ''; position: absolute; top: -50%; right: -10%; width: 500px; height: 500px; background: rgba(255,255,255,0.03); border-radius: 50%; z-index: 0; }
+.header-content { position: relative; z-index: 1; }
+.header-bc-row { display: flex; align-items: center; justify-content: space-between; margin-bottom: 16px; }
+.breadcrumb { font-size: 0.78rem; color: rgba(255,255,255,0.5); }
+.breadcrumb a { color: rgba(255,255,255,0.65); text-decoration: none; }
+.breadcrumb a:hover { color: white; text-decoration: underline; }
+.breadcrumb .sep { margin: 0 6px; opacity: 0.4; }
+.breadcrumb .current { color: rgba(255,255,255,0.9); font-weight: 500; }
+.header-controls { display: flex; align-items: center; gap: 8px; }
+.lang-btn { display: inline-flex; align-items: center; gap: 5px; background: rgba(255,255,255,0.08); border: 2px solid transparent; border-radius: 8px; padding: 4px 10px 4px 8px; font-family: 'Poppins', sans-serif; font-size: 0.72rem; font-weight: 600; letter-spacing: 0.3px; color: rgba(255,255,255,0.55); cursor: pointer; transition: all 0.25s; line-height: 1; }
+.lang-btn svg { flex-shrink: 0; }
+.lang-btn:hover { background: rgba(255,255,255,0.18); color: rgba(255,255,255,0.9); }
+.lang-btn.active { border-color: #ffffff; background: rgba(255,255,255,0.22); color: #ffffff; box-shadow: 0 0 8px rgba(255,255,255,0.25); }
+[data-theme="light"] .header { background: linear-gradient(135deg, #1a2332 0%, #15202e 50%, #1a2838 100%); color: white; }
+[data-theme="light"] .footer { background: linear-gradient(135deg, #1a2332 0%, #15202e 50%, #1a2838 100%); color: white; }
+
+.header-left { display: flex; align-items: center; gap: 16px; }
+.header-logo { height: 40px; }
+.logo-light { display: none; } .logo-dark { display: inline-block; }
+.header h1 { font-size: 1.5rem; font-weight: 700; letter-spacing: -0.5px; }
+.header .subtitle { font-size: 0.95rem; opacity: 0.85; font-weight: 300; margin-top: 2px; }
+.header-badges { display: flex; gap: 8px; align-items: center; margin-top: 10px; flex-wrap: wrap; }
+.header-badge { background: rgba(255,255,255,0.15); padding: 6px 14px; border-radius: 8px; font-size: 0.78rem; display: flex; align-items: center; gap: 6px; backdrop-filter: blur(10px); }
+
+.stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 16px; margin: 28px 0; }
+.stat-card { background: var(--card-bg); border-radius: 12px; padding: 18px 20px; box-shadow: var(--card-shadow); border: 1px solid var(--border); display: flex; align-items: center; gap: 14px; }
+.stat-card-icon { width: 44px; height: 44px; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 1.3rem; color: white; flex-shrink: 0; }
+.stat-card-number { font-size: 1.12rem; font-weight: 700; line-height: 1.1; }
+.stat-card-label { font-size: 0.72rem; color: var(--text-muted); font-weight: 500; text-transform: uppercase; letter-spacing: 0.3px; }
+.bg-primary { background: var(--primary); } .bg-success { background: var(--success); }
+.bg-info { background: var(--info); } .bg-warning { background: var(--warning); }
+.bg-purple { background: var(--purple); } .bg-orange { background: var(--orange); } .bg-teal { background: var(--teal); }
+.bg-danger { background: var(--danger); }
+
+.intro-text { font-size: 0.88rem; color: var(--text-muted); line-height: 1.7; margin-bottom: 28px; padding: 20px 24px; background: var(--card-bg); border-radius: 12px; border: 1px solid var(--border); border-left: 3px solid var(--primary); box-shadow: var(--card-shadow); }
+[data-theme="light"] .intro-text { background: #eaf1f7; }
+
+.section-title { font-size: 1.1rem; font-weight: 600; margin: 32px 0 16px; display: flex; align-items: center; gap: 10px; }
+.section-title i { color: var(--primary); font-size: 1.2rem; }
+
+.pill { display: inline-block; padding: 2px 10px; border-radius: 12px; font-size: 0.68rem; font-weight: 600; }
+.pill-warning { background: var(--warning-light); color: var(--warning); border: 1px solid var(--warning-border); }
+.pill-success { background: var(--success-light); color: var(--success); border: 1px solid var(--success-border); }
+.pill-info { background: var(--info-light); color: var(--info); border: 1px solid var(--info-border); }
+.pill-danger { background: var(--danger-light); color: var(--danger); border: 1px solid var(--danger-border); }
+.pill-purple { background: var(--purple-light); color: var(--purple); border: 1px solid rgba(155, 150, 255, 0.3); }
+
+.footer { background: linear-gradient(135deg, #1a2332 0%, #15202e 50%, #1a2838 100%); color: white; padding: 36px 0; position: relative; overflow: hidden; margin-top: 32px; }
+.footer::before { content: ''; position: absolute; bottom: -50%; left: -10%; width: 500px; height: 500px; background: rgba(255,255,255,0.03); border-radius: 50%; z-index: 0; }
+.footer-content { position: relative; z-index: 1; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 24px; }
+.footer-left { display: flex; align-items: center; gap: 16px; }
+.footer-avatar { width: 48px; height: 48px; border-radius: 12px; background: rgba(255,255,255,0.15); display: flex; align-items: center; justify-content: center; font-size: 1.1rem; font-weight: 700; }
+.footer-author-name { font-size: 0.95rem; font-weight: 600; }
+.footer-author-role { font-size: 0.78rem; opacity: 0.7; }
+.footer-author-email { font-size: 0.72rem; opacity: 0.55; }
+.footer-author-email a { color: rgba(255,255,255,0.55); text-decoration: none; }
+.footer-author-email a:hover { color: white; }
+.footer-right { text-align: right; }
+.footer-doc-title { font-size: 0.85rem; font-weight: 500; opacity: 0.9; }
+.footer-doc-detail { font-size: 0.72rem; opacity: 0.6; }
+.footer-seal { display: flex; align-items: center; gap: 8px; margin-top: 20px; padding-top: 16px; border-top: 1px solid rgba(255,255,255,0.12); font-size: 0.7rem; opacity: 0.5; justify-content: center; }
+.footer-seal i { font-size: 1rem; }
+
+.back-to-top { position: fixed; bottom: 32px; right: 32px; width: 44px; height: 44px; border-radius: 12px; background: var(--primary); color: white; border: none; cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 1.3rem; box-shadow: 0 4px 16px rgba(91,164,217,0.35); opacity: 0; visibility: hidden; transform: translateY(10px); transition: all 0.3s; z-index: 999; }
+.back-to-top.visible { opacity: 1; visibility: visible; transform: translateY(0); }
+.back-to-top:hover { background: var(--primary-dark); }
+
+/* Cards */
+.card { background: var(--card-bg); border-radius: 12px; border: 1px solid var(--border); box-shadow: var(--card-shadow); margin-bottom: 20px; overflow: hidden; }
+.card-header { display: flex; align-items: center; gap: 10px; padding: 14px 18px; border-bottom: 1px solid var(--border); background: var(--card-header-bg); }
+.card-header-icon { width: 32px; height: 32px; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 1rem; color: white; flex-shrink: 0; }
+.card-title { font-weight: 600; font-size: 0.95rem; flex: 1; }
+.card-body { padding: 18px; font-size: 0.85rem; line-height: 1.7; }
+.card-body p { margin-bottom: 12px; }
+
+/* Checklist */
+.checklist { list-style: none; padding: 0; }
+.checklist li { padding: 6px 0; font-size: 0.85rem; display: flex; align-items: flex-start; gap: 8px; }
+.checklist li i { color: var(--success); margin-top: 3px; flex-shrink: 0; }
+
+/* Code blocks */
+.code-block { background: #0d1117; border-radius: 8px; padding: 16px 20px; font-family: 'Courier New', monospace; font-size: 0.78rem; color: #e6edf3; overflow-x: auto; margin: 12px 0; line-height: 1.6; border: 1px solid #30363d; white-space: pre; }
+[data-theme="light"] .code-block { background: #f6f8fa; color: #24292f; border-color: #d0d7de; }
+
+/* Numbered steps */
+.numbered-steps { counter-reset: step; list-style: none; padding: 0; }
+.numbered-steps li { counter-increment: step; padding: 8px 0 8px 36px; position: relative; font-size: 0.85rem; border-left: 2px solid var(--border); margin-left: 14px; }
+.numbered-steps li::before { content: counter(step); position: absolute; left: -15px; top: 6px; width: 28px; height: 28px; border-radius: 50%; background: var(--primary); color: white; display: flex; align-items: center; justify-content: center; font-size: 0.72rem; font-weight: 700; }
+
+/* Alerts */
+.alert { padding: 12px 16px; border-radius: 8px; font-size: 0.82rem; margin-bottom: 10px; border: 1px solid; line-height: 1.6; }
+.alert > i:first-child { font-size: 1.1rem; margin-right: 8px; vertical-align: middle; }
+.alert-info { background: var(--info-light); border-color: var(--info-border); color: #6ecbf5; }
+[data-theme="light"] .alert-info { color: #0878a8; }
+.alert-warning { background: var(--warning-light); border-color: var(--warning-border); color: var(--warning); }
+
+/* File path styling */
+.file-path { font-family: 'Courier New', monospace; font-size: 0.8rem; background: rgba(91,164,217,0.1); padding: 2px 8px; border-radius: 4px; color: var(--primary); word-break: break-all; }
+
+/* Input files table */
+.input-table { width: 100%; border-collapse: collapse; font-size: 0.82rem; }
+.input-table th { background: var(--th-bg); text-align: left; padding: 10px 14px; font-weight: 600; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.3px; color: var(--text-muted); }
+.input-table td { padding: 10px 14px; border-top: 1px solid var(--border); vertical-align: top; }
+.input-table tr:hover td { background: var(--th-bg-hover); }
+
+@media (max-width: 768px) { .stats-grid { grid-template-columns: 1fr 1fr; } }
+
+    </style>
+</head>
+<body>
+
+<header class="header">
+    <div class="container">
+        <div class="header-content">
+            <div class="header-bc-row">
+                <nav class="breadcrumb">
+                    <a href="index.html" data-i18n="bc_home">Pipeline de Geração</a>
+                    <span class="sep">/</span>
+                    <span class="current" data-i18n="bc_current">01 — Extrair Tabelas</span>
+                </nav>
+                <div class="header-controls">
+                    <button class="lang-btn active" onclick="switchLang('pt')" id="lang-pt"><svg width="20" height="14" viewBox="0 0 20 14"><rect width="20" height="14" rx="1" fill="#009739"/><polygon points="10,1.5 19,7 10,12.5 1,7" fill="#FEDD00"/><circle cx="10" cy="7" r="3.2" fill="#012169"/><rect x="7.8" y="6.2" width="4.4" height="0.4" rx="0.2" fill="#fff" transform="rotate(-8 10 7)"/></svg> <span>PT</span></button>
+                    <button class="lang-btn" onclick="switchLang('en')" id="lang-en"><svg width="20" height="14" viewBox="0 0 20 14"><rect width="20" height="14" rx="1" fill="#B22234"/><rect y="1.08" width="20" height="1.08" fill="#fff"/><rect y="3.23" width="20" height="1.08" fill="#fff"/><rect y="5.38" width="20" height="1.08" fill="#fff"/><rect y="7.54" width="20" height="1.08" fill="#fff"/><rect y="9.69" width="20" height="1.08" fill="#fff"/><rect y="11.85" width="20" height="1.08" fill="#fff"/><rect width="8" height="7.54" fill="#3C3B6E"/></svg> <span>EN</span></button>
+                    <button class="lang-btn" onclick="switchLang('es')" id="lang-es"><svg width="20" height="14" viewBox="0 0 20 14"><rect width="20" height="14" rx="1" fill="#AA151B"/><rect y="3" width="20" height="8" fill="#F1BF00"/></svg> <span>ES</span></button>
+                    <div class="header-badge" style="border:none;cursor:pointer" onclick="toggleTheme()"><i id="theme-icon" class="ri-sun-line"></i></div>
+                </div>
+            </div>
+            <div class="header-left" style="margin-bottom:24px">
+                <img class="header-logo logo-dark" src="../../assets/logos/logo-dark.png" alt="Logo">
+                <img class="header-logo logo-light" src="../../assets/logos/logo-light.png" alt="Logo">
+                <div>
+                    <h1><i class="ri-table-line" style="margin-right:8px"></i> <span data-i18n="title">01 — Extrair Tabelas</span></h1>
+                    <div class="subtitle" data-i18n="subtitle">Excel BICC → Markdown Skeleton</div>
+                    <div class="header-badges">
+                        <div class="header-badge"><i class="ri-code-s-slash-line"></i> <span>Script Python</span></div>
+                        <div class="header-badge"><i class="ri-robot-line"></i> <span data-i18n="badge_no_llm">Sem LLM</span></div>
+                        <div class="header-badge"><i class="ri-timer-line"></i> <span data-i18n="badge_time">~5 min por módulo</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main class="container">
+
+    <!-- 1. Objetivo -->
+    <div class="section-title"><i class="ri-focus-3-line"></i> <span data-i18n="sec_objetivo">Objetivo</span></div>
+    <div class="intro-text" data-i18n="objetivo_text">
+        Esta etapa lê os arquivos Excel de <strong>Database Mapping do Oracle BICC</strong> e gera um arquivo <code>.md</code> por tabela, contendo metadados estruturados: front matter YAML, lista de colunas com tipos e flags (PK/FK), e seções vazias para relacionamentos e SQL. <strong>Nenhuma descrição é gerada nesta fase</strong> — apenas a estrutura esquelética. As descrições são preenchidas na etapa 03 (Descrever Tabelas) via LLM.
+    </div>
+
+    <!-- 2. DOR -->
+    <div class="section-title"><i class="ri-checkbox-circle-line"></i> <span data-i18n="sec_dor">DOR — Definition of Ready</span></div>
+    <div class="card">
+        <div class="card-header">
+            <div class="card-header-icon bg-warning"><i class="ri-alert-line"></i></div>
+            <div class="card-title" data-i18n="dor_title">Pré-requisitos para executar esta etapa</div>
+        </div>
+        <div class="card-body">
+            <ul class="checklist">
+                <li><i class="ri-checkbox-circle-fill"></i> <span data-i18n="dor_1">Arquivos Excel BICC existem em <code>src/raw-files/</code> (FSCM e/ou HCM)</span></li>
+                <li><i class="ri-checkbox-circle-fill"></i> <span data-i18n="dor_2">Arquivo <code>table-mappings.txt</code> existe com a classificação de módulos por tabela</span></li>
+                <li><i class="ri-checkbox-circle-fill"></i> <span data-i18n="dor_3">Python 3.12+ instalado com a biblioteca <code>openpyxl</code></span></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 3. DOD -->
+    <div class="section-title"><i class="ri-shield-check-line"></i> <span data-i18n="sec_dod">DOD — Definition of Done</span></div>
+    <div class="card">
+        <div class="card-header">
+            <div class="card-header-icon bg-success"><i class="ri-check-double-line"></i></div>
+            <div class="card-title" data-i18n="dod_title">Critérios de aceite para esta etapa</div>
+        </div>
+        <div class="card-body">
+            <ul class="checklist">
+                <li><i class="ri-checkbox-circle-fill"></i> <span data-i18n="dod_1">Um arquivo <code>.md</code> por tabela criado em <code>src/kb/.../docs/{MOD}/tables/</code></span></li>
+                <li><i class="ri-checkbox-circle-fill"></i> <span data-i18n="dod_2">Front matter com campos: <code>id</code>, <code>doc_type</code>, <code>system</code>, <code>module</code>, <code>title</code>, <code>status</code>, <code>confidentiality</code></span></li>
+                <li><i class="ri-checkbox-circle-fill"></i> <span data-i18n="dod_3">Tabela de colunas com: #, Column, Type, Nullable, Category, Description (vazio), FK, Confidence</span></li>
+                <li><i class="ri-checkbox-circle-fill"></i> <span data-i18n="dod_4">Seções vazias para Relationships, SQL e Filters criadas como placeholder</span></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 4. Entrada -->
+    <div class="section-title"><i class="ri-inbox-line"></i> <span data-i18n="sec_entrada">Entrada</span></div>
+    <div class="card">
+        <div class="card-header">
+            <div class="card-header-icon bg-primary"><i class="ri-file-excel-2-line"></i></div>
+            <div class="card-title" data-i18n="entrada_title">Arquivos de Entrada</div>
+        </div>
+        <div class="card-body">
+            <table class="input-table">
+                <thead>
+                    <tr>
+                        <th data-i18n="th_file">Arquivo</th>
+                        <th data-i18n="th_path">Caminho</th>
+                        <th data-i18n="th_desc">Descrição</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><span class="pill pill-info">FSCM</span></td>
+                        <td><span class="file-path">src/raw-files/Rel13_25A_BICC_FSCM_Database_Mapping_with_ViewObjects.xlsx</span></td>
+                        <td data-i18n="entrada_fscm">Database Mapping de módulos financeiros: GL, AP, AR, PO e outros</td>
+                    </tr>
+                    <tr>
+                        <td><span class="pill pill-purple">HCM</span></td>
+                        <td><span class="file-path">src/raw-files/Rel13_25A_BICC_HCM_Database_Mapping_with_ViewObjects.xlsx</span></td>
+                        <td data-i18n="entrada_hcm">Database Mapping de módulos de recursos humanos: HCM e submodules</td>
+                    </tr>
+                    <tr>
+                        <td><span class="pill pill-success">Mapeamento</span></td>
+                        <td><span class="file-path">src/raw-files/table-mappings.txt</span></td>
+                        <td data-i18n="entrada_map">Classificação tabela → módulo (ex: GL_BALANCES → General Ledger)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- 5. Saída -->
+    <div class="section-title"><i class="ri-file-text-line"></i> <span data-i18n="sec_saida">Saída</span></div>
+    <div class="card">
+        <div class="card-header">
+            <div class="card-header-icon bg-success"><i class="ri-markdown-line"></i></div>
+            <div class="card-title" data-i18n="saida_title">Arquivos Gerados</div>
+        </div>
+        <div class="card-body">
+            <p data-i18n="saida_pattern">Padrão de saída por tabela:</p>
+            <div class="code-block">src/kb/oracle-fusion-data-dictionary/docs/{MOD}/tables/{table_name}.md</div>
+
+            <p data-i18n="saida_example_label">Exemplo completo — <strong>gl_balances.md</strong> (skeleton gerado):</p>
+            <div class="code-block">---
+id: DOC-GL0005
+doc_type: system-doc
+system: Oracle Fusion Cloud
+module: General Ledger
+title: "GL — GL_BALANCES — Saldos Contábeis"
+status: draft
+confidentiality: internal
+created_at: 2025-03-15
+updated_at: 2025-03-15
+owner: Fabio Rodrigues
+team: Arquitetura de Dados
+tags: [oracle-fusion, general-ledger, balances, bicc]
+---
+
+# GL_BALANCES
+
+## Visão Geral
+
+(a ser preenchido na etapa 03)
+
+## Estrutura de Colunas
+
+| # | Coluna             | Tipo          | Nullable | Categoria | Descrição | FK  | Confiança |
+|---|--------------------| --------------|----------|-----------|-----------|-----|-----------|
+| 1 | BALANCE_ID         | NUMBER(18)    | N        |           |           |     | high      |
+| 2 | LEDGER_ID          | NUMBER(18)    | N        |           |           | FK  | high      |
+| 3 | CODE_COMBINATION_ID| NUMBER(18)    | N        |           |           | FK  | high      |
+| 4 | CURRENCY_CODE      | VARCHAR2(15)  | N        |           |           |     | high      |
+| 5 | PERIOD_NAME        | VARCHAR2(15)  | N        |           |           |     | high      |
+| 6 | ACTUAL_FLAG        | VARCHAR2(1)   | N        |           |           |     | high      |
+| 7 | BEGIN_BALANCE_DR   | NUMBER        | Y        |           |           |     | high      |
+| 8 | BEGIN_BALANCE_CR   | NUMBER        | Y        |           |           |     | high      |
+| ...| ...               | ...           | ...      |           |           |     |           |
+
+## Relacionamentos
+
+### Tabelas-pai (FK de entrada)
+(a ser preenchido na etapa 03)
+
+### Tabelas-filha (FK de saída)
+(a ser preenchido na etapa 03)
+
+## Uso Típico
+
+### Consultas SQL Exemplo
+(a ser preenchido na etapa 03)
+
+### Filtros Comuns
+(a ser preenchido na etapa 03)</div>
+        </div>
+    </div>
+
+    <!-- 6. Como Funciona -->
+    <div class="section-title"><i class="ri-settings-3-line"></i> <span data-i18n="sec_como">Como Funciona</span></div>
+    <div class="card">
+        <div class="card-header">
+            <div class="card-header-icon bg-info"><i class="ri-flow-chart"></i></div>
+            <div class="card-title" data-i18n="como_title">Passo a passo interno do script</div>
+        </div>
+        <div class="card-body">
+            <ol class="numbered-steps">
+                <li data-i18n="step_1">Lê as planilhas do Excel (sheets de BI View Object columns) usando <code>openpyxl</code></li>
+                <li data-i18n="step_2">Agrupa as linhas por nome de tabela (coluna <em>Database Table</em>)</li>
+                <li data-i18n="step_3">Consulta a classificação de módulo no arquivo <code>table-mappings.txt</code></li>
+                <li data-i18n="step_4">Para cada tabela, gera o front matter YAML com metadados do módulo (id, doc_type, system, module, title)</li>
+                <li data-i18n="step_5">Cria a tabela de colunas a partir dos dados do Excel (nome, tipo, nullable, flag PK)</li>
+                <li data-i18n="step_6">Detecta colunas FK por convenção de nomes (<code>*_ID</code> referenciando outras tabelas conhecidas)</li>
+                <li data-i18n="step_7">Cria seções vazias de relacionamentos (pai/filha), SQL e filtros como placeholders</li>
+                <li data-i18n="step_8">Grava o arquivo <code>.md</code> no diretório do módulo (pula se já existe, exceto com <code>--force</code>)</li>
+            </ol>
+        </div>
+    </div>
+
+    <!-- 7. Uso -->
+    <div class="section-title"><i class="ri-terminal-box-line"></i> <span data-i18n="sec_uso">Uso</span></div>
+    <div class="card">
+        <div class="card-header">
+            <div class="card-header-icon bg-purple"><i class="ri-terminal-line"></i></div>
+            <div class="card-title" data-i18n="uso_title">Comandos de Execução</div>
+        </div>
+        <div class="card-body">
+            <p data-i18n="uso_desc">Execute o script a partir do diretório da etapa 01:</p>
+            <div class="code-block"># Extrair tabelas de um módulo específico
+cd Pipeline/01-extract-tables/
+python extract_tables.py --module GL
+
+# Extrair tabelas de HCM
+python extract_tables.py --module HCM
+
+# Extrair todas as tabelas de todos os módulos
+python extract_tables.py --all
+
+# Forçar re-extração (sobrescreve .md existentes)
+python extract_tables.py --module GL --force</div>
+        </div>
+    </div>
+
+    <!-- 8. Notas Importantes -->
+    <div class="section-title"><i class="ri-information-line"></i> <span data-i18n="sec_notas">Notas Importantes</span></div>
+
+    <div class="alert alert-info">
+        <i class="ri-information-line"></i>
+        <span data-i18n="nota_1">Esta etapa <strong>NÃO gera descrições</strong> — apenas a estrutura esquelética (colunas, tipos, PKs/FKs). As descrições são preenchidas na etapa 03 via LLM.</span>
+    </div>
+    <div class="alert alert-info">
+        <i class="ri-information-line"></i>
+        <span data-i18n="nota_2">Arquivos <code>.md</code> já existentes <strong>NÃO são sobrescritos</strong> por padrão. Use a flag <code>--force</code> para forçar a re-extração.</span>
+    </div>
+    <div class="alert alert-info">
+        <i class="ri-information-line"></i>
+        <span data-i18n="nota_3">O arquivo <code>table-mappings.txt</code> define qual tabela pertence a qual módulo. Tabelas não mapeadas são ignoradas ou classificadas como "Other".</span>
+    </div>
+    <div class="alert alert-warning">
+        <i class="ri-alert-line"></i>
+        <span data-i18n="nota_4">Os arquivos Excel contêm ~3.400 caminhos PVO, mas esta etapa extrai apenas os metadados de <strong>TABLE</strong> (não PVOs). A extração de PVOs ocorre na etapa 02.</span>
+    </div>
+
+    <!-- 9. Métricas -->
+    <div class="section-title"><i class="ri-bar-chart-grouped-line"></i> <span data-i18n="sec_metricas">Métricas do Último Run</span></div>
+
+    <div class="stats-grid">
+        <div class="stat-card">
+            <div class="stat-card-icon bg-primary"><i class="ri-book-line"></i></div>
+            <div>
+                <div class="stat-card-number" style="color:var(--primary)">39</div>
+                <div class="stat-card-label">General Ledger (GL)</div>
+            </div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-card-icon bg-warning"><i class="ri-money-dollar-circle-line"></i></div>
+            <div>
+                <div class="stat-card-number" style="color:var(--warning)">37</div>
+                <div class="stat-card-label">Accounts Payable (AP)</div>
+            </div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-card-icon bg-success"><i class="ri-exchange-dollar-line"></i></div>
+            <div>
+                <div class="stat-card-number" style="color:var(--success)">66</div>
+                <div class="stat-card-label">Accounts Receivable (AR)</div>
+            </div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-card-icon bg-info"><i class="ri-shopping-cart-line"></i></div>
+            <div>
+                <div class="stat-card-number" style="color:var(--info)">148</div>
+                <div class="stat-card-label">Purchasing (PO)</div>
+            </div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-card-icon bg-purple"><i class="ri-team-line"></i></div>
+            <div>
+                <div class="stat-card-number" style="color:var(--purple)">915</div>
+                <div class="stat-card-label">Human Capital (HCM)</div>
+            </div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-card-icon bg-teal"><i class="ri-database-2-line"></i></div>
+            <div>
+                <div class="stat-card-number" style="color:var(--teal)">1.205</div>
+                <div class="stat-card-label" data-i18n="stat_total">Total de Tabelas</div>
+            </div>
+        </div>
+    </div>
+
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-left">
+                <div class="footer-avatar">FR</div>
+                <div>
+                    <div class="footer-author-name">Fabio A. B. Rodrigues</div>
+                    <div class="footer-author-role">Arquitetura e Produtividade Corporativa</div>
+                    <div class="footer-author-email"><a href="mailto:fabio.rodrigues.consult@patria.com">fabio.rodrigues.consult@patria.com</a></div>
+                </div>
+            </div>
+            <div class="footer-right">
+                <div class="footer-doc-title">Patria Investimentos</div>
+                <div class="footer-doc-detail" data-i18n="footer_detail">Pipeline de Geração &middot; 01 — Extrair Tabelas</div>
+            </div>
+        </div>
+        <div class="footer-seal"><i class="ri-shield-check-line"></i> Oracle Fusion Data Dictionary — Pipeline</div>
+    </div>
+</footer>
+
+<button class="back-to-top" id="backToTop" onclick="window.scrollTo({top:0,behavior:'smooth'})"><i class="ri-arrow-up-line"></i></button>
+
+<script>
+var currentLang = 'pt';
+
+var i18n = {
+    pt: {
+        bc_home: 'Pipeline de Geração',
+        bc_current: '01 — Extrair Tabelas',
+        title: '01 — Extrair Tabelas',
+        subtitle: 'Excel BICC → Markdown Skeleton',
+        badge_no_llm: 'Sem LLM',
+        badge_time: '~5 min por módulo',
+        sec_objetivo: 'Objetivo',
+        objetivo_text: 'Esta etapa lê os arquivos Excel de <strong>Database Mapping do Oracle BICC</strong> e gera um arquivo <code>.md</code> por tabela, contendo metadados estruturados: front matter YAML, lista de colunas com tipos e flags (PK/FK), e seções vazias para relacionamentos e SQL. <strong>Nenhuma descrição é gerada nesta fase</strong> — apenas a estrutura esquelética. As descrições são preenchidas na etapa 03 (Descrever Tabelas) via LLM.',
+        sec_dor: 'DOR — Definition of Ready',
+        dor_title: 'Pré-requisitos para executar esta etapa',
+        dor_1: 'Arquivos Excel BICC existem em <code>src/raw-files/</code> (FSCM e/ou HCM)',
+        dor_2: 'Arquivo <code>table-mappings.txt</code> existe com a classificação de módulos por tabela',
+        dor_3: 'Python 3.12+ instalado com a biblioteca <code>openpyxl</code>',
+        sec_dod: 'DOD — Definition of Done',
+        dod_title: 'Critérios de aceite para esta etapa',
+        dod_1: 'Um arquivo <code>.md</code> por tabela criado em <code>src/kb/.../docs/{MOD}/tables/</code>',
+        dod_2: 'Front matter com campos: <code>id</code>, <code>doc_type</code>, <code>system</code>, <code>module</code>, <code>title</code>, <code>status</code>, <code>confidentiality</code>',
+        dod_3: 'Tabela de colunas com: #, Column, Type, Nullable, Category, Description (vazio), FK, Confidence',
+        dod_4: 'Seções vazias para Relationships, SQL e Filters criadas como placeholder',
+        sec_entrada: 'Entrada',
+        entrada_title: 'Arquivos de Entrada',
+        th_file: 'Arquivo',
+        th_path: 'Caminho',
+        th_desc: 'Descrição',
+        entrada_fscm: 'Database Mapping de módulos financeiros: GL, AP, AR, PO e outros',
+        entrada_hcm: 'Database Mapping de módulos de recursos humanos: HCM e submodules',
+        entrada_map: 'Classificação tabela → módulo (ex: GL_BALANCES → General Ledger)',
+        sec_saida: 'Saída',
+        saida_title: 'Arquivos Gerados',
+        saida_pattern: 'Padrão de saída por tabela:',
+        saida_example_label: 'Exemplo completo — <strong>gl_balances.md</strong> (skeleton gerado):',
+        sec_como: 'Como Funciona',
+        como_title: 'Passo a passo interno do script',
+        step_1: 'Lê as planilhas do Excel (sheets de BI View Object columns) usando <code>openpyxl</code>',
+        step_2: 'Agrupa as linhas por nome de tabela (coluna <em>Database Table</em>)',
+        step_3: 'Consulta a classificação de módulo no arquivo <code>table-mappings.txt</code>',
+        step_4: 'Para cada tabela, gera o front matter YAML com metadados do módulo (id, doc_type, system, module, title)',
+        step_5: 'Cria a tabela de colunas a partir dos dados do Excel (nome, tipo, nullable, flag PK)',
+        step_6: 'Detecta colunas FK por convenção de nomes (<code>*_ID</code> referenciando outras tabelas conhecidas)',
+        step_7: 'Cria seções vazias de relacionamentos (pai/filha), SQL e filtros como placeholders',
+        step_8: 'Grava o arquivo <code>.md</code> no diretório do módulo (pula se já existe, exceto com <code>--force</code>)',
+        sec_uso: 'Uso',
+        uso_title: 'Comandos de Execução',
+        uso_desc: 'Execute o script a partir do diretório da etapa 01:',
+        sec_notas: 'Notas Importantes',
+        nota_1: 'Esta etapa <strong>NÃO gera descrições</strong> — apenas a estrutura esquelética (colunas, tipos, PKs/FKs). As descrições são preenchidas na etapa 03 via LLM.',
+        nota_2: 'Arquivos <code>.md</code> já existentes <strong>NÃO são sobrescritos</strong> por padrão. Use a flag <code>--force</code> para forçar a re-extração.',
+        nota_3: 'O arquivo <code>table-mappings.txt</code> define qual tabela pertence a qual módulo. Tabelas não mapeadas são ignoradas ou classificadas como "Other".',
+        nota_4: 'Os arquivos Excel contêm ~3.400 caminhos PVO, mas esta etapa extrai apenas os metadados de <strong>TABLE</strong> (não PVOs). A extração de PVOs ocorre na etapa 02.',
+        sec_metricas: 'Métricas do Último Run',
+        stat_total: 'Total de Tabelas',
+        footer_detail: 'Pipeline de Geração &middot; 01 — Extrair Tabelas'
+    },
+    en: {
+        bc_home: 'Generation Pipeline',
+        bc_current: '01 — Extract Tables',
+        title: '01 — Extract Tables',
+        subtitle: 'Excel BICC → Markdown Skeleton',
+        badge_no_llm: 'No LLM',
+        badge_time: '~5 min per module',
+        sec_objetivo: 'Objective',
+        objetivo_text: 'This step reads the <strong>Oracle BICC Database Mapping</strong> Excel files and generates one <code>.md</code> file per table, containing structured metadata: YAML front matter, column list with types and flags (PK/FK), and empty sections for relationships and SQL. <strong>No descriptions are generated in this phase</strong> — only the skeletal structure. Descriptions are filled in step 03 (Describe Tables) via LLM.',
+        sec_dor: 'DOR — Definition of Ready',
+        dor_title: 'Prerequisites to run this step',
+        dor_1: 'BICC Excel files exist in <code>src/raw-files/</code> (FSCM and/or HCM)',
+        dor_2: 'File <code>table-mappings.txt</code> exists with module classification per table',
+        dor_3: 'Python 3.12+ installed with the <code>openpyxl</code> library',
+        sec_dod: 'DOD — Definition of Done',
+        dod_title: 'Acceptance criteria for this step',
+        dod_1: 'One <code>.md</code> file per table created in <code>src/kb/.../docs/{MOD}/tables/</code>',
+        dod_2: 'Front matter with fields: <code>id</code>, <code>doc_type</code>, <code>system</code>, <code>module</code>, <code>title</code>, <code>status</code>, <code>confidentiality</code>',
+        dod_3: 'Column table with: #, Column, Type, Nullable, Category, Description (empty), FK, Confidence',
+        dod_4: 'Empty sections for Relationships, SQL, and Filters created as placeholders',
+        sec_entrada: 'Input',
+        entrada_title: 'Input Files',
+        th_file: 'File',
+        th_path: 'Path',
+        th_desc: 'Description',
+        entrada_fscm: 'Database Mapping for financial modules: GL, AP, AR, PO and others',
+        entrada_hcm: 'Database Mapping for human resources modules: HCM and submodules',
+        entrada_map: 'Table → module classification (e.g.: GL_BALANCES → General Ledger)',
+        sec_saida: 'Output',
+        saida_title: 'Generated Files',
+        saida_pattern: 'Output pattern per table:',
+        saida_example_label: 'Complete example — <strong>gl_balances.md</strong> (generated skeleton):',
+        sec_como: 'How It Works',
+        como_title: 'Script internal step-by-step',
+        step_1: 'Reads Excel worksheets (BI View Object columns sheets) using <code>openpyxl</code>',
+        step_2: 'Groups rows by table name (<em>Database Table</em> column)',
+        step_3: 'Looks up the module classification from the <code>table-mappings.txt</code> file',
+        step_4: 'For each table, generates YAML front matter with module metadata (id, doc_type, system, module, title)',
+        step_5: 'Creates the column table from Excel data (name, type, nullable, PK flag)',
+        step_6: 'Detects FK columns by naming convention (<code>*_ID</code> referencing other known tables)',
+        step_7: 'Creates empty relationship sections (parent/child), SQL, and filters as placeholders',
+        step_8: 'Writes the <code>.md</code> file to the module directory (skips if already exists, unless <code>--force</code>)',
+        sec_uso: 'Usage',
+        uso_title: 'Execution Commands',
+        uso_desc: 'Run the script from the step 01 directory:',
+        sec_notas: 'Important Notes',
+        nota_1: 'This step does <strong>NOT generate descriptions</strong> — only the skeletal structure (columns, types, PKs/FKs). Descriptions are filled in step 03 via LLM.',
+        nota_2: 'Existing <code>.md</code> files are <strong>NOT overwritten</strong> by default. Use the <code>--force</code> flag to force re-extraction.',
+        nota_3: 'The <code>table-mappings.txt</code> file defines which table belongs to which module. Unmapped tables are ignored or classified as "Other".',
+        nota_4: 'The Excel files contain ~3,400 PVO paths, but this step only extracts <strong>TABLE</strong> metadata (not PVOs). PVO extraction happens in step 02.',
+        sec_metricas: 'Last Run Metrics',
+        stat_total: 'Total Tables',
+        footer_detail: 'Generation Pipeline &middot; 01 — Extract Tables'
+    },
+    es: {
+        bc_home: 'Pipeline de Generación',
+        bc_current: '01 — Extraer Tablas',
+        title: '01 — Extraer Tablas',
+        subtitle: 'Excel BICC → Markdown Skeleton',
+        badge_no_llm: 'Sin LLM',
+        badge_time: '~5 min por módulo',
+        sec_objetivo: 'Objetivo',
+        objetivo_text: 'Esta etapa lee los archivos Excel de <strong>Database Mapping del Oracle BICC</strong> y genera un archivo <code>.md</code> por tabla, conteniendo metadatos estructurados: front matter YAML, lista de columnas con tipos y flags (PK/FK), y secciones vacías para relaciones y SQL. <strong>No se generan descripciones en esta fase</strong> — solo la estructura esquelética. Las descripciones se completan en la etapa 03 (Describir Tablas) vía LLM.',
+        sec_dor: 'DOR — Definition of Ready',
+        dor_title: 'Prerrequisitos para ejecutar esta etapa',
+        dor_1: 'Archivos Excel BICC existen en <code>src/raw-files/</code> (FSCM y/o HCM)',
+        dor_2: 'Archivo <code>table-mappings.txt</code> existe con la clasificación de módulos por tabla',
+        dor_3: 'Python 3.12+ instalado con la biblioteca <code>openpyxl</code>',
+        sec_dod: 'DOD — Definition of Done',
+        dod_title: 'Criterios de aceptación para esta etapa',
+        dod_1: 'Un archivo <code>.md</code> por tabla creado en <code>src/kb/.../docs/{MOD}/tables/</code>',
+        dod_2: 'Front matter con campos: <code>id</code>, <code>doc_type</code>, <code>system</code>, <code>module</code>, <code>title</code>, <code>status</code>, <code>confidentiality</code>',
+        dod_3: 'Tabla de columnas con: #, Column, Type, Nullable, Category, Description (vacío), FK, Confidence',
+        dod_4: 'Secciones vacías para Relationships, SQL y Filters creadas como placeholder',
+        sec_entrada: 'Entrada',
+        entrada_title: 'Archivos de Entrada',
+        th_file: 'Archivo',
+        th_path: 'Ruta',
+        th_desc: 'Descripción',
+        entrada_fscm: 'Database Mapping de módulos financieros: GL, AP, AR, PO y otros',
+        entrada_hcm: 'Database Mapping de módulos de recursos humanos: HCM y submódulos',
+        entrada_map: 'Clasificación tabla → módulo (ej: GL_BALANCES → General Ledger)',
+        sec_saida: 'Salida',
+        saida_title: 'Archivos Generados',
+        saida_pattern: 'Patrón de salida por tabla:',
+        saida_example_label: 'Ejemplo completo — <strong>gl_balances.md</strong> (skeleton generado):',
+        sec_como: 'Cómo Funciona',
+        como_title: 'Paso a paso interno del script',
+        step_1: 'Lee las hojas del Excel (sheets de BI View Object columns) usando <code>openpyxl</code>',
+        step_2: 'Agrupa las filas por nombre de tabla (columna <em>Database Table</em>)',
+        step_3: 'Consulta la clasificación de módulo en el archivo <code>table-mappings.txt</code>',
+        step_4: 'Para cada tabla, genera el front matter YAML con metadatos del módulo (id, doc_type, system, module, title)',
+        step_5: 'Crea la tabla de columnas a partir de los datos del Excel (nombre, tipo, nullable, flag PK)',
+        step_6: 'Detecta columnas FK por convención de nombres (<code>*_ID</code> referenciando otras tablas conocidas)',
+        step_7: 'Crea secciones vacías de relaciones (padre/hijo), SQL y filtros como placeholders',
+        step_8: 'Graba el archivo <code>.md</code> en el directorio del módulo (omite si ya existe, excepto con <code>--force</code>)',
+        sec_uso: 'Uso',
+        uso_title: 'Comandos de Ejecución',
+        uso_desc: 'Ejecute el script desde el directorio de la etapa 01:',
+        sec_notas: 'Notas Importantes',
+        nota_1: 'Esta etapa <strong>NO genera descripciones</strong> — solo la estructura esquelética (columnas, tipos, PKs/FKs). Las descripciones se completan en la etapa 03 vía LLM.',
+        nota_2: 'Los archivos <code>.md</code> existentes <strong>NO se sobrescriben</strong> por defecto. Use la flag <code>--force</code> para forzar la re-extracción.',
+        nota_3: 'El archivo <code>table-mappings.txt</code> define qué tabla pertenece a qué módulo. Las tablas no mapeadas se ignoran o clasifican como "Other".',
+        nota_4: 'Los archivos Excel contienen ~3.400 rutas PVO, pero esta etapa solo extrae metadatos de <strong>TABLE</strong> (no PVOs). La extracción de PVOs ocurre en la etapa 02.',
+        sec_metricas: 'Métricas del Último Run',
+        stat_total: 'Total de Tablas',
+        footer_detail: 'Pipeline de Generación &middot; 01 — Extraer Tablas'
+    }
+};
+
+function switchLang(lang) {
+    currentLang = lang;
+    localStorage.setItem('preferred-lang', lang);
+    document.querySelectorAll('.lang-btn').forEach(function(b) { b.classList.remove('active'); });
+    document.getElementById('lang-' + lang).classList.add('active');
+    document.querySelectorAll('[data-i18n]').forEach(function(el) {
+        var key = el.getAttribute('data-i18n');
+        if (i18n[lang] && i18n[lang][key]) el.innerHTML = i18n[lang][key];
+    });
+}
+
+function toggleTheme() {
+    var c = document.body.getAttribute('data-theme');
+    document.body.setAttribute('data-theme', c === 'light' ? '' : 'light');
+    document.getElementById('theme-icon').className = c === 'light' ? 'ri-sun-line' : 'ri-moon-line';
+    localStorage.setItem('theme', document.body.getAttribute('data-theme') || 'dark');
+}
+
+(function() {
+    var t = localStorage.getItem('theme');
+    if (t === 'light') { document.body.setAttribute('data-theme', 'light'); document.getElementById('theme-icon').className = 'ri-moon-line'; }
+    var ul = new URLSearchParams(window.location.search).get('lang');
+    var tl = ul || localStorage.getItem('preferred-lang');
+    if (tl && tl !== 'pt') switchLang(tl);
+    var btn = document.getElementById('backToTop');
+    window.addEventListener('scroll', function() { btn.classList.toggle('visible', window.scrollY > 300); });
+})();
+</script>
+</body>
+</html>

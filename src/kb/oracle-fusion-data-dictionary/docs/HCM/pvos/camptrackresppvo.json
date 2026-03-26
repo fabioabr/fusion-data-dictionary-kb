@@ -1,0 +1,259 @@
+{
+  "meta": {
+    "pvo_name": "CampTrackRespPVO",
+    "full_path": "HcmTopModelAnalyticsGlobalAM.HcmRecCampaignsAM.CampTrackRespPVO",
+    "module_path": "HcmTopModelAnalyticsGlobalAM.HcmRecCampaignsAM",
+    "module_code": "HCM",
+    "type": "pvo",
+    "description": "Rastreia respostas a metas de campanhas de recrutamento. Suporta medicao de ROI e efetividade de acoes de employer branding."
+  },
+  "stats": {
+    "total_attributes": 16,
+    "tables_count": 4,
+    "bicc_enabled": 5,
+    "bicc_pct": 31,
+    "pk_count": 4
+  },
+  "tables": [
+    "IRC_CAMPAIGNS_B",
+    "IRC_CAMP_GOALS_B",
+    "IRC_CAMP_GOAL_RESP_B",
+    "IRC_CAMP_TRACK_RESPONSE"
+  ],
+  "attributes": [
+    {
+      "name": "CampGoalBPEOGoalTypeCode",
+      "table": "IRC_CAMP_GOALS_B",
+      "column": "GOAL_TYPE_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CampTrackRespPEOCampaignId",
+      "table": "IRC_CAMP_TRACK_RESPONSE",
+      "column": "CAMPAIGN_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CampTrackRespPEOCreatedBy",
+      "table": "IRC_CAMP_TRACK_RESPONSE",
+      "column": "CREATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CampTrackRespPEOCreationDate",
+      "table": "IRC_CAMP_TRACK_RESPONSE",
+      "column": "CREATION_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CampTrackRespPEOGoalId",
+      "table": "IRC_CAMP_TRACK_RESPONSE",
+      "column": "GOAL_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CampTrackRespPEOGoalResponseId",
+      "table": "IRC_CAMP_TRACK_RESPONSE",
+      "column": "GOAL_RESPONSE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CampTrackRespPEOLastUpdateDate",
+      "table": "IRC_CAMP_TRACK_RESPONSE",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": true
+    },
+    {
+      "name": "CampTrackRespPEOLastUpdateLogin",
+      "table": "IRC_CAMP_TRACK_RESPONSE",
+      "column": "LAST_UPDATE_LOGIN",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CampTrackRespPEOLastUpdatedBy",
+      "table": "IRC_CAMP_TRACK_RESPONSE",
+      "column": "LAST_UPDATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CampTrackRespPEOObjectVersionNumber",
+      "table": "IRC_CAMP_TRACK_RESPONSE",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CampTrackRespPEOPersonId",
+      "table": "IRC_CAMP_TRACK_RESPONSE",
+      "column": "PERSON_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CampaignBPEOPurposeCode",
+      "table": "IRC_CAMPAIGNS_B",
+      "column": "PURPOSE_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CampaignId",
+      "table": "IRC_CAMPAIGNS_B",
+      "column": "CAMPAIGN_ID",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    },
+    {
+      "name": "GoalId",
+      "table": "IRC_CAMP_GOALS_B",
+      "column": "GOAL_ID",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    },
+    {
+      "name": "GoalResponseId",
+      "table": "IRC_CAMP_GOAL_RESP_B",
+      "column": "GOAL_RESPONSE_ID",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    },
+    {
+      "name": "TrackResponseId",
+      "table": "IRC_CAMP_TRACK_RESPONSE",
+      "column": "TRACK_RESPONSE_ID",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    }
+  ],
+  "by_table": {
+    "IRC_CAMP_GOALS_B": [
+      {
+        "attribute": "CampGoalBPEOGoalTypeCode",
+        "column": "GOAL_TYPE_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "GoalId",
+        "column": "GOAL_ID",
+        "bicc": true,
+        "pk": true
+      }
+    ],
+    "IRC_CAMP_TRACK_RESPONSE": [
+      {
+        "attribute": "CampTrackRespPEOCampaignId",
+        "column": "CAMPAIGN_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CampTrackRespPEOCreatedBy",
+        "column": "CREATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CampTrackRespPEOCreationDate",
+        "column": "CREATION_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CampTrackRespPEOGoalId",
+        "column": "GOAL_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CampTrackRespPEOGoalResponseId",
+        "column": "GOAL_RESPONSE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CampTrackRespPEOLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CampTrackRespPEOLastUpdateLogin",
+        "column": "LAST_UPDATE_LOGIN",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CampTrackRespPEOLastUpdatedBy",
+        "column": "LAST_UPDATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CampTrackRespPEOObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CampTrackRespPEOPersonId",
+        "column": "PERSON_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TrackResponseId",
+        "column": "TRACK_RESPONSE_ID",
+        "bicc": true,
+        "pk": true
+      }
+    ],
+    "IRC_CAMPAIGNS_B": [
+      {
+        "attribute": "CampaignBPEOPurposeCode",
+        "column": "PURPOSE_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CampaignId",
+        "column": "CAMPAIGN_ID",
+        "bicc": true,
+        "pk": true
+      }
+    ],
+    "IRC_CAMP_GOAL_RESP_B": [
+      {
+        "attribute": "GoalResponseId",
+        "column": "GOAL_RESPONSE_ID",
+        "bicc": true,
+        "pk": true
+      }
+    ]
+  }
+}

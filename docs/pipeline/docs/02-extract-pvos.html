@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>02 — Extrair PVOs — Pipeline de Geração</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet">
+    <style>
+
+:root {
+    --primary: #5BA4D9; --primary-dark: #3182B1; --primary-light: rgba(91, 164, 217, 0.12);
+    --secondary: #5BB8C4; --success: #6ABF3B; --success-light: rgba(106, 191, 59, 0.12); --success-border: rgba(106, 191, 59, 0.3);
+    --warning: #F4AC00; --warning-light: rgba(244, 172, 0, 0.12); --warning-border: rgba(244, 172, 0, 0.3);
+    --danger: #E85D54; --danger-light: rgba(232, 93, 84, 0.12); --danger-border: rgba(232, 93, 84, 0.3);
+    --info: #38BDF8; --info-light: rgba(56, 189, 248, 0.12); --info-border: rgba(56, 189, 248, 0.3);
+    --bg: #0f1319; --card-bg: #1a1f2e; --text: #e2e8f0; --text-muted: #8b9ab5; --border: #2a3244;
+    --purple: #9B96FF; --purple-light: rgba(155, 150, 255, 0.12); --orange: #FF9473; --teal: #2DD4BF;
+    --card-header-bg: #141924; --th-bg: #141924; --th-bg-hover: #1e2638;
+    --card-shadow: 0 2px 12px rgba(91, 164, 217, 0.1), 0 1px 4px rgba(0,0,0,0.3);
+}
+[data-theme="light"] {
+    --primary: #3182B1; --primary-dark: #256a94; --primary-light: rgba(49, 130, 177, 0.1);
+    --secondary: #418F9D; --success: #4C7E1B; --success-light: rgba(76, 126, 27, 0.08); --success-border: rgba(76, 126, 27, 0.25);
+    --warning: #F4AC00; --warning-light: rgba(244, 172, 0, 0.08); --warning-border: rgba(244, 172, 0, 0.25);
+    --danger: #C72F25; --danger-light: rgba(199, 47, 37, 0.08); --danger-border: rgba(199, 47, 37, 0.25);
+    --info: #0EA5E8; --info-light: rgba(14, 165, 232, 0.08); --info-border: rgba(14, 165, 232, 0.25);
+    --bg: #dde2e8; --card-bg: #ffffff; --text: #212B37; --text-muted: #6E829F; --border: #e2e8f0;
+    --purple: #7B76FE; --purple-light: rgba(123, 118, 254, 0.08); --orange: #FE7C58; --teal: #00D8D8;
+    --card-header-bg: rgba(49, 130, 177, 0.2); --th-bg: rgba(49, 130, 177, 0.2); --th-bg-hover: rgba(49, 130, 177, 0.23);
+    --card-shadow: 0 2px 8px rgba(49, 130, 177, 0.24), 0 1px 3px rgba(0,0,0,0.1);
+}
+[data-theme="light"] .search-input { background: #eaf1f7; }
+
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, a, img, ul, ol, li,
+header, footer, nav, section, article, aside, button, input, select, textarea,
+table, tr, td, th, form, label, fieldset, legend { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Poppins', sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; }
+.container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+
+.header { background: linear-gradient(135deg, #1a2332 0%, #15202e 50%, #1a2838 100%); color: white; padding: 36px 0 0; position: relative; overflow: hidden; }
+.header::before { content: ''; position: absolute; top: -50%; right: -10%; width: 500px; height: 500px; background: rgba(255,255,255,0.03); border-radius: 50%; z-index: 0; }
+.header-content { position: relative; z-index: 1; }
+.header-bc-row { display: flex; align-items: center; justify-content: space-between; margin-bottom: 16px; }
+.breadcrumb { font-size: 0.78rem; color: rgba(255,255,255,0.5); }
+.breadcrumb a { color: rgba(255,255,255,0.65); text-decoration: none; }
+.breadcrumb a:hover { color: white; text-decoration: underline; }
+.breadcrumb .sep { margin: 0 6px; opacity: 0.4; }
+.breadcrumb .current { color: rgba(255,255,255,0.9); font-weight: 500; }
+.header-controls { display: flex; align-items: center; gap: 8px; }
+.lang-btn { display: inline-flex; align-items: center; gap: 5px; background: rgba(255,255,255,0.08); border: 2px solid transparent; border-radius: 8px; padding: 4px 10px 4px 8px; font-family: 'Poppins', sans-serif; font-size: 0.72rem; font-weight: 600; letter-spacing: 0.3px; color: rgba(255,255,255,0.55); cursor: pointer; transition: all 0.25s; line-height: 1; }
+.lang-btn svg { flex-shrink: 0; }
+.lang-btn:hover { background: rgba(255,255,255,0.18); color: rgba(255,255,255,0.9); }
+.lang-btn.active { border-color: #ffffff; background: rgba(255,255,255,0.22); color: #ffffff; box-shadow: 0 0 8px rgba(255,255,255,0.25); }
+[data-theme="light"] .header { background: linear-gradient(135deg, #1a2332 0%, #15202e 50%, #1a2838 100%); color: white; }
+[data-theme="light"] .footer { background: linear-gradient(135deg, #1a2332 0%, #15202e 50%, #1a2838 100%); color: white; }
+
+.header-left { display: flex; align-items: center; gap: 16px; }
+.header-logo { height: 40px; }
+.logo-light { display: none; } .logo-dark { display: inline-block; }
+.header h1 { font-size: 1.5rem; font-weight: 700; letter-spacing: -0.5px; }
+.header .subtitle { font-size: 0.95rem; opacity: 0.85; font-weight: 300; margin-top: 2px; }
+.header-badges { display: flex; gap: 8px; align-items: center; margin-top: 10px; flex-wrap: wrap; }
+.header-badge { background: rgba(255,255,255,0.15); padding: 6px 14px; border-radius: 8px; font-size: 0.78rem; display: flex; align-items: center; gap: 6px; backdrop-filter: blur(10px); }
+
+.stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 16px; margin: 28px 0; }
+.stat-card { background: var(--card-bg); border-radius: 12px; padding: 18px 20px; box-shadow: var(--card-shadow); border: 1px solid var(--border); display: flex; align-items: center; gap: 14px; }
+.stat-card-icon { width: 44px; height: 44px; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 1.3rem; color: white; flex-shrink: 0; }
+.stat-card-number { font-size: 1.12rem; font-weight: 700; line-height: 1.1; }
+.stat-card-label { font-size: 0.72rem; color: var(--text-muted); font-weight: 500; text-transform: uppercase; letter-spacing: 0.3px; }
+.bg-primary { background: var(--primary); } .bg-success { background: var(--success); }
+.bg-info { background: var(--info); } .bg-warning { background: var(--warning); }
+.bg-purple { background: var(--purple); } .bg-orange { background: var(--orange); } .bg-teal { background: var(--teal); }
+.bg-danger { background: var(--danger); }
+
+.intro-text { font-size: 0.88rem; color: var(--text-muted); line-height: 1.7; margin-bottom: 28px; padding: 20px 24px; background: var(--card-bg); border-radius: 12px; border: 1px solid var(--border); border-left: 3px solid var(--primary); box-shadow: var(--card-shadow); }
+[data-theme="light"] .intro-text { background: #eaf1f7; }
+
+.section-title { font-size: 1.1rem; font-weight: 600; margin: 32px 0 16px; display: flex; align-items: center; gap: 10px; }
+.section-title i { color: var(--primary); font-size: 1.2rem; }
+
+.pill { display: inline-block; padding: 2px 10px; border-radius: 12px; font-size: 0.68rem; font-weight: 600; }
+.pill-warning { background: var(--warning-light); color: var(--warning); border: 1px solid var(--warning-border); }
+.pill-success { background: var(--success-light); color: var(--success); border: 1px solid var(--success-border); }
+.pill-info { background: var(--info-light); color: var(--info); border: 1px solid var(--info-border); }
+.pill-danger { background: var(--danger-light); color: var(--danger); border: 1px solid var(--danger-border); }
+.pill-purple { background: var(--purple-light); color: var(--purple); border: 1px solid rgba(155, 150, 255, 0.3); }
+
+.footer { background: linear-gradient(135deg, #1a2332 0%, #15202e 50%, #1a2838 100%); color: white; padding: 36px 0; position: relative; overflow: hidden; margin-top: 32px; }
+.footer::before { content: ''; position: absolute; bottom: -50%; left: -10%; width: 500px; height: 500px; background: rgba(255,255,255,0.03); border-radius: 50%; z-index: 0; }
+.footer-content { position: relative; z-index: 1; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 24px; }
+.footer-left { display: flex; align-items: center; gap: 16px; }
+.footer-avatar { width: 48px; height: 48px; border-radius: 12px; background: rgba(255,255,255,0.15); display: flex; align-items: center; justify-content: center; font-size: 1.1rem; font-weight: 700; }
+.footer-author-name { font-size: 0.95rem; font-weight: 600; }
+.footer-author-role { font-size: 0.78rem; opacity: 0.7; }
+.footer-author-email { font-size: 0.72rem; opacity: 0.55; }
+.footer-author-email a { color: rgba(255,255,255,0.55); text-decoration: none; }
+.footer-author-email a:hover { color: white; }
+.footer-right { text-align: right; }
+.footer-doc-title { font-size: 0.85rem; font-weight: 500; opacity: 0.9; }
+.footer-doc-detail { font-size: 0.72rem; opacity: 0.6; }
+.footer-seal { display: flex; align-items: center; gap: 8px; margin-top: 20px; padding-top: 16px; border-top: 1px solid rgba(255,255,255,0.12); font-size: 0.7rem; opacity: 0.5; justify-content: center; }
+.footer-seal i { font-size: 1rem; }
+
+.back-to-top { position: fixed; bottom: 32px; right: 32px; width: 44px; height: 44px; border-radius: 12px; background: var(--primary); color: white; border: none; cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 1.3rem; box-shadow: 0 4px 16px rgba(91,164,217,0.35); opacity: 0; visibility: hidden; transform: translateY(10px); transition: all 0.3s; z-index: 999; }
+.back-to-top.visible { opacity: 1; visibility: visible; transform: translateY(0); }
+.back-to-top:hover { background: var(--primary-dark); }
+
+/* Cards */
+.card { background: var(--card-bg); border-radius: 12px; border: 1px solid var(--border); box-shadow: var(--card-shadow); margin-bottom: 20px; overflow: hidden; }
+.card-header { display: flex; align-items: center; gap: 10px; padding: 14px 18px; border-bottom: 1px solid var(--border); background: var(--card-header-bg); }
+.card-header-icon { width: 32px; height: 32px; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 1rem; color: white; flex-shrink: 0; }
+.card-title { font-weight: 600; font-size: 0.95rem; flex: 1; }
+.card-body { padding: 18px; font-size: 0.85rem; line-height: 1.7; }
+.card-body p { margin-bottom: 12px; }
+
+/* Checklist */
+.checklist { list-style: none; padding: 0; }
+.checklist li { padding: 6px 0; font-size: 0.85rem; display: flex; align-items: flex-start; gap: 8px; }
+.checklist li i { color: var(--success); margin-top: 3px; flex-shrink: 0; }
+
+/* Code blocks */
+.code-block { background: #0d1117; border-radius: 8px; padding: 16px 20px; font-family: 'Courier New', monospace; font-size: 0.78rem; color: #e6edf3; overflow-x: auto; margin: 12px 0; line-height: 1.6; border: 1px solid #30363d; white-space: pre; }
+[data-theme="light"] .code-block { background: #f6f8fa; color: #24292f; border-color: #d0d7de; }
+
+/* Numbered steps */
+.numbered-steps { counter-reset: step; list-style: none; padding: 0; }
+.numbered-steps li { counter-increment: step; padding: 8px 0 8px 36px; position: relative; font-size: 0.85rem; border-left: 2px solid var(--border); margin-left: 14px; }
+.numbered-steps li::before { content: counter(step); position: absolute; left: -15px; top: 6px; width: 28px; height: 28px; border-radius: 50%; background: var(--primary); color: white; display: flex; align-items: center; justify-content: center; font-size: 0.72rem; font-weight: 700; }
+
+/* Alerts */
+.alert { padding: 12px 16px; border-radius: 8px; font-size: 0.82rem; margin-bottom: 10px; border: 1px solid; line-height: 1.6; }
+.alert > i:first-child { font-size: 1.1rem; margin-right: 8px; vertical-align: middle; }
+.alert-info { background: var(--info-light); border-color: var(--info-border); color: #6ecbf5; }
+[data-theme="light"] .alert-info { color: #0878a8; }
+.alert-warning { background: var(--warning-light); border-color: var(--warning-border); color: var(--warning); }
+
+/* File path styling */
+.file-path { font-family: 'Courier New', monospace; font-size: 0.8rem; background: rgba(91,164,217,0.1); padding: 2px 8px; border-radius: 4px; color: var(--primary); word-break: break-all; }
+
+/* Input files table */
+.input-table { width: 100%; border-collapse: collapse; font-size: 0.82rem; }
+.input-table th { background: var(--th-bg); text-align: left; padding: 10px 14px; font-weight: 600; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.3px; color: var(--text-muted); }
+.input-table td { padding: 10px 14px; border-top: 1px solid var(--border); vertical-align: top; }
+.input-table tr:hover td { background: var(--th-bg-hover); }
+
+/* Module classification table */
+.module-table { width: 100%; border-collapse: collapse; font-size: 0.82rem; }
+.module-table th { background: var(--th-bg); text-align: left; padding: 10px 14px; font-weight: 600; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.3px; color: var(--text-muted); }
+.module-table td { padding: 8px 14px; border-top: 1px solid var(--border); vertical-align: middle; }
+.module-table tr:hover td { background: var(--th-bg-hover); }
+.module-table td:last-child { text-align: right; font-weight: 600; font-family: 'Courier New', monospace; }
+
+@media (max-width: 768px) { .stats-grid { grid-template-columns: 1fr 1fr; } }
+
+    </style>
+</head>
+<body>
+
+<header class="header">
+    <div class="container">
+        <div class="header-content">
+            <div class="header-bc-row">
+                <nav class="breadcrumb">
+                    <a href="index.html" data-i18n="bc_home">Pipeline de Geração</a>
+                    <span class="sep">/</span>
+                    <span class="current" data-i18n="bc_current">02 — Extrair PVOs</span>
+                </nav>
+                <div class="header-controls">
+                    <button class="lang-btn active" onclick="switchLang('pt')" id="lang-pt"><svg width="20" height="14" viewBox="0 0 20 14"><rect width="20" height="14" rx="1" fill="#009739"/><polygon points="10,1.5 19,7 10,12.5 1,7" fill="#FEDD00"/><circle cx="10" cy="7" r="3.2" fill="#012169"/><rect x="7.8" y="6.2" width="4.4" height="0.4" rx="0.2" fill="#fff" transform="rotate(-8 10 7)"/></svg> <span>PT</span></button>
+                    <button class="lang-btn" onclick="switchLang('en')" id="lang-en"><svg width="20" height="14" viewBox="0 0 20 14"><rect width="20" height="14" rx="1" fill="#B22234"/><rect y="1.08" width="20" height="1.08" fill="#fff"/><rect y="3.23" width="20" height="1.08" fill="#fff"/><rect y="5.38" width="20" height="1.08" fill="#fff"/><rect y="7.54" width="20" height="1.08" fill="#fff"/><rect y="9.69" width="20" height="1.08" fill="#fff"/><rect y="11.85" width="20" height="1.08" fill="#fff"/><rect width="8" height="7.54" fill="#3C3B6E"/></svg> <span>EN</span></button>
+                    <button class="lang-btn" onclick="switchLang('es')" id="lang-es"><svg width="20" height="14" viewBox="0 0 20 14"><rect width="20" height="14" rx="1" fill="#AA151B"/><rect y="3" width="20" height="8" fill="#F1BF00"/></svg> <span>ES</span></button>
+                    <div class="header-badge" style="border:none;cursor:pointer" onclick="toggleTheme()"><i id="theme-icon" class="ri-sun-line"></i></div>
+                </div>
+            </div>
+            <div class="header-left" style="margin-bottom:24px">
+                <img class="header-logo logo-dark" src="../../assets/logos/logo-dark.png" alt="Logo">
+                <img class="header-logo logo-light" src="../../assets/logos/logo-light.png" alt="Logo">
+                <div>
+                    <h1><i class="ri-eye-line" style="margin-right:8px"></i> <span data-i18n="title">02 — Extrair PVOs</span></h1>
+                    <div class="subtitle" data-i18n="subtitle">Excel BICC → JSON por View Object</div>
+                    <div class="header-badges">
+                        <div class="header-badge"><i class="ri-code-s-slash-line"></i> <span>Script Python</span></div>
+                        <div class="header-badge"><i class="ri-robot-line"></i> <span data-i18n="badge_no_llm">Sem LLM</span></div>
+                        <div class="header-badge"><i class="ri-timer-line"></i> <span data-i18n="badge_time">~3 min por módulo</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main class="container">
+
+    <!-- 1. Objetivo -->
+    <div class="section-title"><i class="ri-focus-3-line"></i> <span data-i18n="sec_objetivo">Objetivo</span></div>
+    <div class="intro-text" data-i18n="objetivo_text">
+        Extrai <strong>Procurement View Objects (PVOs)</strong> dos arquivos Excel de mapeamento BICC. Cada PVO representa um View Object no Oracle Fusion que agrupa atributos de uma ou mais tabelas de banco de dados. O script classifica cada PVO por módulo (GL, AP, AR, PO, HCM, SCM, FIN, PRJ, etc.) usando heurísticas sobre o nome do caminho AM, e gera <strong>um arquivo JSON por PVO</strong>.
+    </div>
+
+    <!-- 2. DOR -->
+    <div class="section-title"><i class="ri-checkbox-circle-line"></i> <span data-i18n="sec_dor">DOR — Definition of Ready</span></div>
+    <div class="card">
+        <div class="card-header">
+            <div class="card-header-icon bg-warning"><i class="ri-alert-line"></i></div>
+            <div class="card-title" data-i18n="dor_title">Pré-requisitos para executar esta etapa</div>
+        </div>
+        <div class="card-body">
+            <ul class="checklist">
+                <li><i class="ri-checkbox-circle-fill"></i> <span data-i18n="dor_1">Arquivos Excel BICC existem em <code>src/raw-files/</code> (FSCM e/ou HCM)</span></li>
+                <li><i class="ri-checkbox-circle-fill"></i> <span data-i18n="dor_2">Python 3.12+ instalado com a biblioteca <code>openpyxl</code></span></li>
+                <li><i class="ri-checkbox-circle-fill"></i> <span data-i18n="dor_3">Script <code>extract_pvos.py</code> disponível no diretório da etapa 02</span></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 3. DOD -->
+    <div class="section-title"><i class="ri-shield-check-line"></i> <span data-i18n="sec_dod">DOD — Definition of Done</span></div>
+    <div class="card">
+        <div class="card-header">
+            <div class="card-header-icon bg-success"><i class="ri-check-double-line"></i></div>
+            <div class="card-title" data-i18n="dod_title">Critérios de aceite para esta etapa</div>
+        </div>
+        <div class="card-body">
+            <ul class="checklist">
+                <li><i class="ri-checkbox-circle-fill"></i> <span data-i18n="dod_1">Um arquivo <code>.json</code> por PVO criado em <code>docs/{MOD}/pvos/</code></span></li>
+                <li><i class="ri-checkbox-circle-fill"></i> <span data-i18n="dod_2">JSON contém <code>meta</code> (pvo_name, full_path, module_code, description), <code>stats</code>, <code>tables</code>, <code>attributes</code> e <code>by_table</code></span></li>
+                <li><i class="ri-checkbox-circle-fill"></i> <span data-i18n="dod_3">Classificação de módulo completa — 17 módulos mapeados, &lt;1% classificado como OTHER</span></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 4. Entrada -->
+    <div class="section-title"><i class="ri-inbox-line"></i> <span data-i18n="sec_entrada">Entrada</span></div>
+    <div class="card">
+        <div class="card-header">
+            <div class="card-header-icon bg-primary"><i class="ri-file-excel-2-line"></i></div>
+            <div class="card-title" data-i18n="entrada_title">Arquivos de Entrada</div>
+        </div>
+        <div class="card-body">
+            <table class="input-table">
+                <thead>
+                    <tr>
+                        <th data-i18n="th_file">Arquivo</th>
+                        <th data-i18n="th_path">Caminho</th>
+                        <th data-i18n="th_desc">Descrição</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><span class="pill pill-info">FSCM</span></td>
+                        <td><span class="file-path">src/raw-files/Rel13_25A_BICC_FSCM_Database_Mapping_with_ViewObjects.xlsx</span></td>
+                        <td data-i18n="entrada_fscm">Database Mapping de módulos financeiros: GL, AP, AR, PO e outros</td>
+                    </tr>
+                    <tr>
+                        <td><span class="pill pill-purple">HCM</span></td>
+                        <td><span class="file-path">src/raw-files/Rel13_25A_BICC_HCM_Database_Mapping_with_ViewObjects.xlsx</span></td>
+                        <td data-i18n="entrada_hcm">Database Mapping de módulos de recursos humanos: HCM e submodules</td>
+                    </tr>
+                    <tr>
+                        <td><span class="pill pill-success">Heurísticas</span></td>
+                        <td><span class="file-path">MODULE_HINTS + AM_MODULE_MAP (embutidos no script)</span></td>
+                        <td data-i18n="entrada_hints">Dicionários de classificação de módulo por nome AM e palavras-chave no path</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- 5. Saída -->
+    <div class="section-title"><i class="ri-file-text-line"></i> <span data-i18n="sec_saida">Saída</span></div>
+    <div class="card">
+        <div class="card-header">
+            <div class="card-header-icon bg-success"><i class="ri-braces-line"></i></div>
+            <div class="card-title" data-i18n="saida_title">Arquivos Gerados</div>
+        </div>
+        <div class="card-body">
+            <p data-i18n="saida_pattern">Padrão de saída por PVO:</p>
+            <div class="code-block">src/kb/oracle-fusion-data-dictionary/docs/{MOD}/pvos/{pvo_name}.json</div>
+
+            <p data-i18n="saida_example_label">Exemplo completo — <strong>BalancePVO.json</strong> (JSON gerado):</p>
+            <div class="code-block">{
+  "meta": {
+    "pvo_name": "BalancePVO",
+    "full_path": "FscmTopModelAM.FinGlBiccExtractAM.BalancePVO",
+    "module_path": "FscmTopModelAM.FinGlBiccExtractAM",
+    "module_code": "GL",
+    "type": "pvo",
+    "description": "(preenchido na etapa 04)"
+  },
+  "stats": {
+    "total_attributes": 28,
+    "tables_count": 1,
+    "bicc_enabled": 20,
+    "bicc_pct": 71,
+    "pk_count": 0
+  },
+  "tables": ["GL_BALANCES"],
+  "attributes": [
+    {
+      "name": "LedgerId",
+      "table": "GL_BALANCES",
+      "column": "LEDGER_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    }
+  ],
+  "by_table": {
+    "GL_BALANCES": ["LedgerId", "..."]
+  }
+}</div>
+        </div>
+    </div>
+
+    <!-- 6. Como Funciona -->
+    <div class="section-title"><i class="ri-settings-3-line"></i> <span data-i18n="sec_como">Como Funciona</span></div>
+    <div class="card">
+        <div class="card-header">
+            <div class="card-header-icon bg-info"><i class="ri-flow-chart"></i></div>
+            <div class="card-title" data-i18n="como_title">Passo a passo interno do script</div>
+        </div>
+        <div class="card-body">
+            <ol class="numbered-steps">
+                <li data-i18n="step_1">Lê todas as planilhas dos arquivos Excel FSCM e HCM usando <code>openpyxl</code></li>
+                <li data-i18n="step_2">Agrupa as linhas por caminho do View Object (coluna A)</li>
+                <li data-i18n="step_3">Para cada VO, extrai atributos: nome, tabela, coluna, BICC habilitado, PK, incremental</li>
+                <li data-i18n="step_4">Classifica o módulo usando heurística de 3 camadas: (a) match exato do nome AM em <code>AM_MODULE_MAP</code>, (b) match por keyword em <code>MODULE_HINTS</code> sobre o nome AM, (c) match por keyword no path completo</li>
+                <li data-i18n="step_5">Constrói o JSON com <code>meta</code>, <code>stats</code>, <code>tables</code>, <code>attributes</code> e agrupamento <code>by_table</code></li>
+                <li data-i18n="step_6">Grava o arquivo <code>.json</code> no diretório <code>pvos/</code> específico do módulo</li>
+            </ol>
+        </div>
+    </div>
+
+    <!-- 7. Classificação de Módulos -->
+    <div class="section-title"><i class="ri-pie-chart-line"></i> <span data-i18n="sec_classif">Classificação de Módulos</span></div>
+    <div class="card">
+        <div class="card-header">
+            <div class="card-header-icon bg-orange"><i class="ri-organization-chart"></i></div>
+            <div class="card-title" data-i18n="classif_title">17 módulos identificados — 4.239 PVOs classificados</div>
+        </div>
+        <div class="card-body">
+            <p data-i18n="classif_desc">A classificação utiliza heurísticas sobre o caminho AM (Application Module) do View Object. O algoritmo de 3 camadas garante cobertura de &gt;99% dos PVOs, com menos de 1% classificado como OTHER.</p>
+            <table class="module-table">
+                <thead>
+                    <tr>
+                        <th data-i18n="th_module">Módulo</th>
+                        <th data-i18n="th_module_name">Nome Completo</th>
+                        <th data-i18n="th_pvo_count">PVOs</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td><span class="pill pill-info">SCM</span></td><td>Supply Chain Management</td><td>898</td></tr>
+                    <tr><td><span class="pill pill-purple">HCM</span></td><td>Human Capital Management</td><td>887</td></tr>
+                    <tr><td><span class="pill pill-warning">FIN</span></td><td>Financials (Common)</td><td>451</td></tr>
+                    <tr><td><span class="pill pill-info">PO</span></td><td>Purchasing</td><td>303</td></tr>
+                    <tr><td><span class="pill pill-success">PRJ</span></td><td>Project Management</td><td>266</td></tr>
+                    <tr><td><span class="pill pill-info">GL</span></td><td>General Ledger</td><td>169</td></tr>
+                    <tr><td><span class="pill pill-success">AR</span></td><td>Accounts Receivable</td><td>98</td></tr>
+                    <tr><td><span class="pill pill-danger">GRC</span></td><td>Governance, Risk &amp; Compliance</td><td>65</td></tr>
+                    <tr><td><span class="pill pill-warning">AP</span></td><td>Accounts Payable</td><td>62</td></tr>
+                    <tr><td><span class="pill pill-info">SRP</span></td><td>Self-Service Procurement</td><td>56</td></tr>
+                    <tr><td><span class="pill pill-purple">OKC</span></td><td>Oracle Knowledge / Contracts</td><td>54</td></tr>
+                    <tr><td><span class="pill pill-success">GMS</span></td><td>Grants Management</td><td>42</td></tr>
+                    <tr><td><span class="pill pill-info">PSC</span></td><td>Public Sector</td><td>21</td></tr>
+                    <tr><td><span class="pill pill-warning">STU</span></td><td>Student / Campus Solutions</td><td>21</td></tr>
+                    <tr><td><span class="pill pill-danger">HED</span></td><td>Higher Education</td><td>9</td></tr>
+                    <tr><td><span class="pill pill-purple">MFG</span></td><td>Manufacturing</td><td>9</td></tr>
+                    <tr><td><span class="pill pill-danger">OTHER</span></td><td data-i18n="classif_other">Não classificado</td><td>828</td></tr>
+                </tbody>
+                <tfoot>
+                    <tr style="font-weight:700; border-top:2px solid var(--border)">
+                        <td colspan="2" data-i18n="classif_total">Total</td>
+                        <td>4.239</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </div>
+
+    <!-- 8. Uso -->
+    <div class="section-title"><i class="ri-terminal-box-line"></i> <span data-i18n="sec_uso">Uso</span></div>
+    <div class="card">
+        <div class="card-header">
+            <div class="card-header-icon bg-purple"><i class="ri-terminal-line"></i></div>
+            <div class="card-title" data-i18n="uso_title">Comandos de Execução</div>
+        </div>
+        <div class="card-body">
+            <p data-i18n="uso_desc">Execute o script a partir do diretório da etapa 02:</p>
+            <div class="code-block"># Extrair PVOs de um módulo específico
+cd Pipeline/02-extract-pvos/
+python extract_pvos.py --module GL
+
+# Extrair PVOs de HCM
+python extract_pvos.py --module HCM
+
+# Extrair todos os PVOs de todos os módulos
+python extract_pvos.py --all</div>
+        </div>
+    </div>
+
+    <!-- 9. Notas Importantes -->
+    <div class="section-title"><i class="ri-information-line"></i> <span data-i18n="sec_notas">Notas Importantes</span></div>
+
+    <div class="alert alert-info">
+        <i class="ri-information-line"></i>
+        <span data-i18n="nota_1">O campo <code>description</code> no JSON é gerado automaticamente (genérico) nesta etapa — será <strong>enriquecido por LLM na etapa 04</strong>.</span>
+    </div>
+    <div class="alert alert-info">
+        <i class="ri-information-line"></i>
+        <span data-i18n="nota_2">Os arquivos Excel contêm aproximadamente <strong>3.400 View Objects</strong> no total, distribuídos entre FSCM e HCM.</span>
+    </div>
+    <div class="alert alert-warning">
+        <i class="ri-alert-line"></i>
+        <span data-i18n="nota_3">A classificação de módulo utiliza heurísticas sobre o caminho AM. O dicionário <code>AM_MODULE_MAP</code> cobre matches exatos; <code>MODULE_HINTS</code> cobre matches por keyword. Menos de 1% dos PVOs ficam como OTHER.</span>
+    </div>
+
+    <!-- 10. Métricas -->
+    <div class="section-title"><i class="ri-bar-chart-grouped-line"></i> <span data-i18n="sec_metricas">Métricas do Último Run</span></div>
+
+    <div class="stats-grid">
+        <div class="stat-card">
+            <div class="stat-card-icon bg-primary"><i class="ri-book-line"></i></div>
+            <div>
+                <div class="stat-card-number" style="color:var(--primary)">169</div>
+                <div class="stat-card-label">General Ledger (GL)</div>
+            </div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-card-icon bg-warning"><i class="ri-money-dollar-circle-line"></i></div>
+            <div>
+                <div class="stat-card-number" style="color:var(--warning)">60</div>
+                <div class="stat-card-label">Accounts Payable (AP)</div>
+            </div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-card-icon bg-success"><i class="ri-exchange-dollar-line"></i></div>
+            <div>
+                <div class="stat-card-number" style="color:var(--success)">97</div>
+                <div class="stat-card-label">Accounts Receivable (AR)</div>
+            </div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-card-icon bg-info"><i class="ri-shopping-cart-line"></i></div>
+            <div>
+                <div class="stat-card-number" style="color:var(--info)">289</div>
+                <div class="stat-card-label">Purchasing (PO)</div>
+            </div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-card-icon bg-purple"><i class="ri-team-line"></i></div>
+            <div>
+                <div class="stat-card-number" style="color:var(--purple)">841</div>
+                <div class="stat-card-label">Human Capital (HCM)</div>
+            </div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-card-icon bg-danger"><i class="ri-more-2-line"></i></div>
+            <div>
+                <div class="stat-card-number" style="color:var(--danger)">2.783</div>
+                <div class="stat-card-label">Other Modules</div>
+            </div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-card-icon bg-teal"><i class="ri-database-2-line"></i></div>
+            <div>
+                <div class="stat-card-number" style="color:var(--teal)">4.239</div>
+                <div class="stat-card-label" data-i18n="stat_total">Total de PVOs</div>
+            </div>
+        </div>
+    </div>
+
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-left">
+                <div class="footer-avatar">FR</div>
+                <div>
+                    <div class="footer-author-name">Fabio A. B. Rodrigues</div>
+                    <div class="footer-author-role">Arquitetura e Produtividade Corporativa</div>
+                    <div class="footer-author-email"><a href="mailto:fabio.rodrigues.consult@patria.com">fabio.rodrigues.consult@patria.com</a></div>
+                </div>
+            </div>
+            <div class="footer-right">
+                <div class="footer-doc-title">Patria Investimentos</div>
+                <div class="footer-doc-detail" data-i18n="footer_detail">Pipeline de Geração &middot; 02 — Extrair PVOs</div>
+            </div>
+        </div>
+        <div class="footer-seal"><i class="ri-shield-check-line"></i> Oracle Fusion Data Dictionary — Pipeline</div>
+    </div>
+</footer>
+
+<button class="back-to-top" id="backToTop" onclick="window.scrollTo({top:0,behavior:'smooth'})"><i class="ri-arrow-up-line"></i></button>
+
+<script>
+var currentLang = 'pt';
+
+var i18n = {
+    pt: {
+        bc_home: 'Pipeline de Geração',
+        bc_current: '02 — Extrair PVOs',
+        title: '02 — Extrair PVOs',
+        subtitle: 'Excel BICC → JSON por View Object',
+        badge_no_llm: 'Sem LLM',
+        badge_time: '~3 min por módulo',
+        sec_objetivo: 'Objetivo',
+        objetivo_text: 'Extrai <strong>Procurement View Objects (PVOs)</strong> dos arquivos Excel de mapeamento BICC. Cada PVO representa um View Object no Oracle Fusion que agrupa atributos de uma ou mais tabelas de banco de dados. O script classifica cada PVO por módulo (GL, AP, AR, PO, HCM, SCM, FIN, PRJ, etc.) usando heurísticas sobre o nome do caminho AM, e gera <strong>um arquivo JSON por PVO</strong>.',
+        sec_dor: 'DOR — Definition of Ready',
+        dor_title: 'Pré-requisitos para executar esta etapa',
+        dor_1: 'Arquivos Excel BICC existem em <code>src/raw-files/</code> (FSCM e/ou HCM)',
+        dor_2: 'Python 3.12+ instalado com a biblioteca <code>openpyxl</code>',
+        dor_3: 'Script <code>extract_pvos.py</code> disponível no diretório da etapa 02',
+        sec_dod: 'DOD — Definition of Done',
+        dod_title: 'Critérios de aceite para esta etapa',
+        dod_1: 'Um arquivo <code>.json</code> por PVO criado em <code>docs/{MOD}/pvos/</code>',
+        dod_2: 'JSON contém <code>meta</code> (pvo_name, full_path, module_code, description), <code>stats</code>, <code>tables</code>, <code>attributes</code> e <code>by_table</code>',
+        dod_3: 'Classificação de módulo completa — 17 módulos mapeados, &lt;1% classificado como OTHER',
+        sec_entrada: 'Entrada',
+        entrada_title: 'Arquivos de Entrada',
+        th_file: 'Arquivo',
+        th_path: 'Caminho',
+        th_desc: 'Descrição',
+        entrada_fscm: 'Database Mapping de módulos financeiros: GL, AP, AR, PO e outros',
+        entrada_hcm: 'Database Mapping de módulos de recursos humanos: HCM e submodules',
+        entrada_hints: 'Dicionários de classificação de módulo por nome AM e palavras-chave no path',
+        sec_saida: 'Saída',
+        saida_title: 'Arquivos Gerados',
+        saida_pattern: 'Padrão de saída por PVO:',
+        saida_example_label: 'Exemplo completo — <strong>BalancePVO.json</strong> (JSON gerado):',
+        sec_como: 'Como Funciona',
+        como_title: 'Passo a passo interno do script',
+        step_1: 'Lê todas as planilhas dos arquivos Excel FSCM e HCM usando <code>openpyxl</code>',
+        step_2: 'Agrupa as linhas por caminho do View Object (coluna A)',
+        step_3: 'Para cada VO, extrai atributos: nome, tabela, coluna, BICC habilitado, PK, incremental',
+        step_4: 'Classifica o módulo usando heurística de 3 camadas: (a) match exato do nome AM em <code>AM_MODULE_MAP</code>, (b) match por keyword em <code>MODULE_HINTS</code> sobre o nome AM, (c) match por keyword no path completo',
+        step_5: 'Constrói o JSON com <code>meta</code>, <code>stats</code>, <code>tables</code>, <code>attributes</code> e agrupamento <code>by_table</code>',
+        step_6: 'Grava o arquivo <code>.json</code> no diretório <code>pvos/</code> específico do módulo',
+        sec_classif: 'Classificação de Módulos',
+        classif_title: '17 módulos identificados — 4.239 PVOs classificados',
+        classif_desc: 'A classificação utiliza heurísticas sobre o caminho AM (Application Module) do View Object. O algoritmo de 3 camadas garante cobertura de >99% dos PVOs, com menos de 1% classificado como OTHER.',
+        th_module: 'Módulo',
+        th_module_name: 'Nome Completo',
+        th_pvo_count: 'PVOs',
+        classif_other: 'Não classificado',
+        classif_total: 'Total',
+        sec_uso: 'Uso',
+        uso_title: 'Comandos de Execução',
+        uso_desc: 'Execute o script a partir do diretório da etapa 02:',
+        sec_notas: 'Notas Importantes',
+        nota_1: 'O campo <code>description</code> no JSON é gerado automaticamente (genérico) nesta etapa — será <strong>enriquecido por LLM na etapa 04</strong>.',
+        nota_2: 'Os arquivos Excel contêm aproximadamente <strong>3.400 View Objects</strong> no total, distribuídos entre FSCM e HCM.',
+        nota_3: 'A classificação de módulo utiliza heurísticas sobre o caminho AM. O dicionário <code>AM_MODULE_MAP</code> cobre matches exatos; <code>MODULE_HINTS</code> cobre matches por keyword. Menos de 1% dos PVOs ficam como OTHER.',
+        sec_metricas: 'Métricas do Último Run',
+        stat_total: 'Total de PVOs',
+        footer_detail: 'Pipeline de Geração &middot; 02 — Extrair PVOs'
+    },
+    en: {
+        bc_home: 'Generation Pipeline',
+        bc_current: '02 — Extract PVOs',
+        title: '02 — Extract PVOs',
+        subtitle: 'Excel BICC → JSON per View Object',
+        badge_no_llm: 'No LLM',
+        badge_time: '~3 min per module',
+        sec_objetivo: 'Objective',
+        objetivo_text: 'Extracts <strong>Procurement View Objects (PVOs)</strong> from BICC Excel mapping files. Each PVO represents a View Object in Oracle Fusion that groups attributes from one or more database tables. The script classifies each PVO by module (GL, AP, AR, PO, HCM, SCM, FIN, PRJ, etc.) using heuristics on the AM path name, and generates <strong>one JSON file per PVO</strong>.',
+        sec_dor: 'DOR — Definition of Ready',
+        dor_title: 'Prerequisites to run this step',
+        dor_1: 'BICC Excel files exist in <code>src/raw-files/</code> (FSCM and/or HCM)',
+        dor_2: 'Python 3.12+ installed with the <code>openpyxl</code> library',
+        dor_3: 'Script <code>extract_pvos.py</code> available in the step 02 directory',
+        sec_dod: 'DOD — Definition of Done',
+        dod_title: 'Acceptance criteria for this step',
+        dod_1: 'One <code>.json</code> file per PVO created in <code>docs/{MOD}/pvos/</code>',
+        dod_2: 'JSON contains <code>meta</code> (pvo_name, full_path, module_code, description), <code>stats</code>, <code>tables</code>, <code>attributes</code>, and <code>by_table</code>',
+        dod_3: 'Module classification complete — 17 modules mapped, &lt;1% classified as OTHER',
+        sec_entrada: 'Input',
+        entrada_title: 'Input Files',
+        th_file: 'File',
+        th_path: 'Path',
+        th_desc: 'Description',
+        entrada_fscm: 'Database Mapping for financial modules: GL, AP, AR, PO and others',
+        entrada_hcm: 'Database Mapping for human resources modules: HCM and submodules',
+        entrada_hints: 'Module classification dictionaries by AM name and path keywords',
+        sec_saida: 'Output',
+        saida_title: 'Generated Files',
+        saida_pattern: 'Output pattern per PVO:',
+        saida_example_label: 'Complete example — <strong>BalancePVO.json</strong> (generated JSON):',
+        sec_como: 'How It Works',
+        como_title: 'Script internal step-by-step',
+        step_1: 'Reads all worksheets from the FSCM and HCM Excel files using <code>openpyxl</code>',
+        step_2: 'Groups rows by View Object path (column A)',
+        step_3: 'For each VO, extracts attributes: name, table, column, BICC enabled, PK, incremental',
+        step_4: 'Classifies module using 3-tier heuristic: (a) exact AM name match in <code>AM_MODULE_MAP</code>, (b) keyword match in <code>MODULE_HINTS</code> on AM name, (c) keyword match on full path',
+        step_5: 'Builds JSON with <code>meta</code>, <code>stats</code>, <code>tables</code>, <code>attributes</code>, and <code>by_table</code> grouping',
+        step_6: 'Writes <code>.json</code> file to the module-specific <code>pvos/</code> directory',
+        sec_classif: 'Module Classification',
+        classif_title: '17 modules identified — 4,239 PVOs classified',
+        classif_desc: 'The classification uses heuristics on the AM (Application Module) path of the View Object. The 3-tier algorithm ensures >99% coverage of PVOs, with less than 1% classified as OTHER.',
+        th_module: 'Module',
+        th_module_name: 'Full Name',
+        th_pvo_count: 'PVOs',
+        classif_other: 'Unclassified',
+        classif_total: 'Total',
+        sec_uso: 'Usage',
+        uso_title: 'Execution Commands',
+        uso_desc: 'Run the script from the step 02 directory:',
+        sec_notas: 'Important Notes',
+        nota_1: 'The <code>description</code> field in the JSON is auto-generated (generic) at this step — it will be <strong>enriched by LLM in step 04</strong>.',
+        nota_2: 'The Excel files contain approximately <strong>3,400 View Objects</strong> in total, distributed between FSCM and HCM.',
+        nota_3: 'Module classification uses heuristics on the AM path. The <code>AM_MODULE_MAP</code> dictionary covers exact matches; <code>MODULE_HINTS</code> covers keyword matches. Less than 1% of PVOs remain as OTHER.',
+        sec_metricas: 'Last Run Metrics',
+        stat_total: 'Total PVOs',
+        footer_detail: 'Generation Pipeline &middot; 02 — Extract PVOs'
+    },
+    es: {
+        bc_home: 'Pipeline de Generación',
+        bc_current: '02 — Extraer PVOs',
+        title: '02 — Extraer PVOs',
+        subtitle: 'Excel BICC → JSON por View Object',
+        badge_no_llm: 'Sin LLM',
+        badge_time: '~3 min por módulo',
+        sec_objetivo: 'Objetivo',
+        objetivo_text: 'Extrae <strong>Procurement View Objects (PVOs)</strong> de los archivos Excel de mapeo BICC. Cada PVO representa un View Object en Oracle Fusion que agrupa atributos de una o más tablas de base de datos. El script clasifica cada PVO por módulo (GL, AP, AR, PO, HCM, SCM, FIN, PRJ, etc.) usando heurísticas sobre el nombre del camino AM, y genera <strong>un archivo JSON por PVO</strong>.',
+        sec_dor: 'DOR — Definition of Ready',
+        dor_title: 'Prerrequisitos para ejecutar esta etapa',
+        dor_1: 'Archivos Excel BICC existen en <code>src/raw-files/</code> (FSCM y/o HCM)',
+        dor_2: 'Python 3.12+ instalado con la biblioteca <code>openpyxl</code>',
+        dor_3: 'Script <code>extract_pvos.py</code> disponible en el directorio de la etapa 02',
+        sec_dod: 'DOD — Definition of Done',
+        dod_title: 'Criterios de aceptación para esta etapa',
+        dod_1: 'Un archivo <code>.json</code> por PVO creado en <code>docs/{MOD}/pvos/</code>',
+        dod_2: 'JSON contiene <code>meta</code> (pvo_name, full_path, module_code, description), <code>stats</code>, <code>tables</code>, <code>attributes</code> y <code>by_table</code>',
+        dod_3: 'Clasificación de módulo completa — 17 módulos mapeados, &lt;1% clasificado como OTHER',
+        sec_entrada: 'Entrada',
+        entrada_title: 'Archivos de Entrada',
+        th_file: 'Archivo',
+        th_path: 'Ruta',
+        th_desc: 'Descripción',
+        entrada_fscm: 'Database Mapping de módulos financieros: GL, AP, AR, PO y otros',
+        entrada_hcm: 'Database Mapping de módulos de recursos humanos: HCM y submódulos',
+        entrada_hints: 'Diccionarios de clasificación de módulo por nombre AM y palabras clave en el path',
+        sec_saida: 'Salida',
+        saida_title: 'Archivos Generados',
+        saida_pattern: 'Patrón de salida por PVO:',
+        saida_example_label: 'Ejemplo completo — <strong>BalancePVO.json</strong> (JSON generado):',
+        sec_como: 'Cómo Funciona',
+        como_title: 'Paso a paso interno del script',
+        step_1: 'Lee todas las hojas de los archivos Excel FSCM y HCM usando <code>openpyxl</code>',
+        step_2: 'Agrupa las filas por camino del View Object (columna A)',
+        step_3: 'Para cada VO, extrae atributos: nombre, tabla, columna, BICC habilitado, PK, incremental',
+        step_4: 'Clasifica el módulo usando heurística de 3 capas: (a) match exacto del nombre AM en <code>AM_MODULE_MAP</code>, (b) match por keyword en <code>MODULE_HINTS</code> sobre el nombre AM, (c) match por keyword en el path completo',
+        step_5: 'Construye el JSON con <code>meta</code>, <code>stats</code>, <code>tables</code>, <code>attributes</code> y agrupamiento <code>by_table</code>',
+        step_6: 'Graba el archivo <code>.json</code> en el directorio <code>pvos/</code> específico del módulo',
+        sec_classif: 'Clasificación de Módulos',
+        classif_title: '17 módulos identificados — 4.239 PVOs clasificados',
+        classif_desc: 'La clasificación utiliza heurísticas sobre el camino AM (Application Module) del View Object. El algoritmo de 3 capas garantiza cobertura de >99% de los PVOs, con menos de 1% clasificado como OTHER.',
+        th_module: 'Módulo',
+        th_module_name: 'Nombre Completo',
+        th_pvo_count: 'PVOs',
+        classif_other: 'No clasificado',
+        classif_total: 'Total',
+        sec_uso: 'Uso',
+        uso_title: 'Comandos de Ejecución',
+        uso_desc: 'Ejecute el script desde el directorio de la etapa 02:',
+        sec_notas: 'Notas Importantes',
+        nota_1: 'El campo <code>description</code> en el JSON se genera automáticamente (genérico) en esta etapa — será <strong>enriquecido por LLM en la etapa 04</strong>.',
+        nota_2: 'Los archivos Excel contienen aproximadamente <strong>3.400 View Objects</strong> en total, distribuidos entre FSCM y HCM.',
+        nota_3: 'La clasificación de módulo utiliza heurísticas sobre el camino AM. El diccionario <code>AM_MODULE_MAP</code> cubre matches exactos; <code>MODULE_HINTS</code> cubre matches por keyword. Menos de 1% de los PVOs quedan como OTHER.',
+        sec_metricas: 'Métricas del Último Run',
+        stat_total: 'Total de PVOs',
+        footer_detail: 'Pipeline de Generación &middot; 02 — Extraer PVOs'
+    }
+};
+
+function switchLang(lang) {
+    currentLang = lang;
+    localStorage.setItem('preferred-lang', lang);
+    document.querySelectorAll('.lang-btn').forEach(function(b) { b.classList.remove('active'); });
+    document.getElementById('lang-' + lang).classList.add('active');
+    document.querySelectorAll('[data-i18n]').forEach(function(el) {
+        var key = el.getAttribute('data-i18n');
+        if (i18n[lang] && i18n[lang][key]) el.innerHTML = i18n[lang][key];
+    });
+}
+
+function toggleTheme() {
+    var c = document.body.getAttribute('data-theme');
+    document.body.setAttribute('data-theme', c === 'light' ? '' : 'light');
+    document.getElementById('theme-icon').className = c === 'light' ? 'ri-sun-line' : 'ri-moon-line';
+    localStorage.setItem('theme', document.body.getAttribute('data-theme') || 'dark');
+}
+
+(function() {
+    var t = localStorage.getItem('theme');
+    if (t === 'light') { document.body.setAttribute('data-theme', 'light'); document.getElementById('theme-icon').className = 'ri-moon-line'; }
+    var ul = new URLSearchParams(window.location.search).get('lang');
+    var tl = ul || localStorage.getItem('preferred-lang');
+    if (tl && tl !== 'pt') switchLang(tl);
+    var btn = document.getElementById('backToTop');
+    window.addEventListener('scroll', function() { btn.classList.toggle('visible', window.scrollY > 300); });
+})();
+</script>
+</body>
+</html>

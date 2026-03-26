@@ -1,0 +1,523 @@
+{
+  "source": "ra_batch_sources_all.md",
+  "source_hash": "0aafa39007a28b9d5884e61389dba4ec",
+  "translated_at": "2026-03-25",
+  "items": [
+    {
+      "id": 1,
+      "br": "Visão Geral",
+      "en": "Overview",
+      "es": "Visión general"
+    },
+    {
+      "id": 2,
+      "br": "Define as origens (sources) de transações do módulo Accounts Receivable, incluindo faturas, notas de crédito e compromissos. Cada registro contém configurações que controlam a numeração automática de transações e lotes, permissões de duplicidade e comportamento padrão de importação.",
+      "en": "Define the sources of Accounts Receivable transactions, including invoices, credit notes, and commitments. Each record contains settings that control the automatic numbering of transactions and batches, duplication permissions, and default import behavior.",
+      "es": "Define las fuentes de las transacciones del módulo Accounts Receivable, incluyendo facturas, notas de crédito y compromisos. Cada registro contiene configuraciones que controlan la numeración automática de transacciones y lotes, permisos de duplicidad y comportamiento predeterminado de importación."
+    },
+    {
+      "id": 3,
+      "br": "É uma tabela de configuração fundamental — toda transação AR referencia obrigatoriamente um batch source, que determina como o documento será numerado, validado e agrupado.",
+      "en": "This is a fundamental configuration table – every AR transaction must reference a batch source, which determines how the document will be numbered, validated, and grouped.",
+      "es": "Es una tabla de configuración fundamental: cada transacción de AR hace referencia obligatoriamente a una fuente de lote, que determina cómo se numerará, validará y agrupará el documento."
+    },
+    {
+      "id": 4,
+      "br": "Sufixo _ALL",
+      "en": "Suffix _ALL",
+      "es": "Sufijo _ALL"
+    },
+    {
+      "id": 5,
+      "br": "O sufixo _ALL indica que a tabela armazena dados de todas as business units (multi-org). O filtro por ORG_ID é necessário para consultas por organização específica.",
+      "en": "The suffix _ALL indicates that the table stores data for all business units (multi-org). Filtering by ORG_ID is necessary for queries by specific organization.",
+      "es": "El sufijo _ALL indica que la tabla almacena datos de todas las business units (multi-org). Se requiere el filtro por ORG_ID para consultas específicas de organización."
+    },
+    {
+      "id": 6,
+      "br": "Propósito de Negócio",
+      "en": "Business Purpose",
+      "es": "Propósito de negocio"
+    },
+    {
+      "id": 7,
+      "br": "Esta tabela é utilizada nos seguintes processos:",
+      "en": "This table is used in the following processes:",
+      "es": "Esta tabla se utiliza en los siguientes procesos:"
+    },
+    {
+      "id": 8,
+      "br": "Define como faturas manuais, importadas (AutoInvoice) e de outros módulos são registradas no AR.",
+      "en": "Defines how manual, imported (AutoInvoice), and other module invoices are recorded in AR.",
+      "es": "Define cómo se registran las facturas manuales, importadas (AutoInvoice) y de otros módulos en el AR."
+    },
+    {
+      "id": 9,
+      "br": "Controla se o sistema gera números sequenciais para transações e lotes automaticamente.",
+      "en": "Controls whether the system automatically generates sequential numbers for transactions and batches.",
+      "es": "Controla si el sistema genera números secuenciales para transacciones y lotes automáticamente."
+    },
+    {
+      "id": 10,
+      "br": "Permite ou bloqueia transações com números duplicados dentro da mesma fonte.",
+      "en": "Allows or blocks transactions with duplicate numbers within the same source.",
+      "es": "Permite o bloquea transacciones con números duplicados dentro de la misma fuente."
+    },
+    {
+      "id": 11,
+      "br": "Fontes do tipo \"Imported\" alimentam o processo de importação automática de faturas.",
+      "en": "\"Imported\" type sources feed the automatic invoice import process.",
+      "es": "Las fuentes de tipo \"Imported\" alimentan el proceso de importación automática de facturas."
+    },
+    {
+      "id": 12,
+      "br": "Módulos como Projects, Order Management e Subscriptions possuem batch sources dedicados.",
+      "en": "Modules such as Projects, Order Management, and Subscriptions have dedicated batch sources.",
+      "es": "Módulos como Projects, Order Management y Subscriptions tienen fuentes de lote dedicadas."
+    },
+    {
+      "id": 13,
+      "br": "Permite identificar a origem de cada transação para fins de auditoria.",
+      "en": "Allows identifying the source of each transaction for audit purposes.",
+      "es": "Permite identificar la fuente de cada transacción con fines de auditoría."
+    },
+    {
+      "id": 14,
+      "br": "Colunas Principais",
+      "en": "Key Columns",
+      "es": "Columnas principales"
+    },
+    {
+      "id": 15,
+      "br": "Confiança",
+      "en": "Confidence",
+      "es": "Confianza"
+    },
+    {
+      "id": 16,
+      "br": "Escala de 0% a 100% — grau de certeza da descrição gerada por IA com base na documentação oficial Oracle (OEDMF/BICC Release 13/25A).",
+      "en": "Scale of 0% to 100% – degree of certainty of the description generated by AI based on Oracle official documentation (OEDMF/BICC Release 13/25A).",
+      "es": "Escala del 0% al 100% — grado de certeza de la descripción generada por IA, basado en la documentación oficial de Oracle (OEDMF/BICC Release 13/25A)."
+    },
+    {
+      "id": 17,
+      "br": "- 🟢 81–100% — Coluna presente na documentação oficial Oracle; nome, tipo e descrição confirmados.",
+      "en": "- 🟢 81–100% – Column present in Oracle official documentation; name, type, and description confirmed.",
+      "es": "- 🟢 81–100% — Columna presente en la documentación oficial de Oracle; nombre, tipo y descripción confirmados."
+    },
+    {
+      "id": 18,
+      "br": "- 🟡 51–80% — Coluna inferida por naming convention ou padrão Oracle; tipo exato pode variar.",
+      "en": "- 🟡 51–80% – Column inferred by naming convention or Oracle standard; exact type may vary.",
+      "es": "- 🟡 51–80% — Columna inferida por convención de nomenclatura o estándar de Oracle; el tipo exacto puede variar."
+    },
+    {
+      "id": 19,
+      "br": "- 🔴 0–50% — Existência ou tipo incertos; pode não existir no release atual; validar no ambiente.",
+      "en": "- 🔴 0–50% – Existence or type uncertain; may not exist in the current release; validate in the environment.",
+      "es": "- 🔴 0–50% — Existencia o tipo inciertos; puede no existir en la versión actual; validar en el entorno."
+    },
+    {
+      "id": 20,
+      "br": "Coluna",
+      "en": "Column",
+      "es": "Columna"
+    },
+    {
+      "id": 21,
+      "br": "Tipo",
+      "en": "Type",
+      "es": "Tipo"
+    },
+    {
+      "id": 22,
+      "br": "Nulo?",
+      "en": "Null?",
+      "es": "Nulo?"
+    },
+    {
+      "id": 23,
+      "br": "Categoria",
+      "en": "Category",
+      "es": "Categoría"
+    },
+    {
+      "id": 24,
+      "br": "Descrição",
+      "en": "Description",
+      "es": "Descripción"
+    },
+    {
+      "id": 25,
+      "br": "Identificador único da fonte de transação",
+      "en": "Unique transaction source identifier",
+      "es": "Identificador único de la fuente de transacción"
+    },
+    {
+      "id": 26,
+      "br": "Identificação",
+      "en": "Identification",
+      "es": "Identificación"
+    },
+    {
+      "id": 27,
+      "br": "Nome da fonte de transação",
+      "en": "Transaction Source Name",
+      "es": "Nombre de la fuente de transacción"
+    },
+    {
+      "id": 28,
+      "br": "Descrição livre da fonte",
+      "en": "Free Description of Source",
+      "es": "Descripción libre de la fuente"
+    },
+    {
+      "id": 29,
+      "br": "Classificação",
+      "en": "Classification",
+      "es": "Clasificación"
+    },
+    {
+      "id": 30,
+      "br": "Status ativo/inativo (A=Active, I=Inactive)",
+      "en": "Active/Inactive Status (A=Active, I=Inactive)",
+      "es": "Estado activo/inactivo (A=Activo, I=Inactivo)"
+    },
+    {
+      "id": 31,
+      "br": "Tipo da fonte: INV (manual), IMPORTED (AutoInvoice)",
+      "en": "Source Type: INV (manual), IMPORTED (AutoInvoice)",
+      "es": "Tipo de fuente: INV (manual), IMPORTED (AutoInvoice)"
+    },
+    {
+      "id": 32,
+      "br": "Configuração",
+      "en": "Configuration",
+      "es": "Configuración"
+    },
+    {
+      "id": 33,
+      "br": "Numeração automática de transações (Y/N)",
+      "en": "Automatic Transaction Numbering (Y/N)",
+      "es": "Numeración automática de transacciones (Sí/No)"
+    },
+    {
+      "id": 34,
+      "br": "Numeração automática de lotes (Y/N)",
+      "en": "Automatic Batch Numbering (Y/N)",
+      "es": "Numeración automática de lotes (Sí/No)"
+    },
+    {
+      "id": 35,
+      "br": "Controle",
+      "en": "Control",
+      "es": "Control"
+    },
+    {
+      "id": 36,
+      "br": "Último número de lote gerado automaticamente",
+      "en": "Last Automatically Generated Batch Number",
+      "es": "Último número de lote generado automáticamente"
+    },
+    {
+      "id": 37,
+      "br": "Tipo de transação padrão para faturas",
+      "en": "Default Transaction Type for Invoices",
+      "es": "Tipo de transacción predeterminado para facturas"
+    },
+    {
+      "id": 38,
+      "br": "Permite números de transação duplicados (Y/N)",
+      "en": "Allows Duplicate Transaction Numbers (Y/N)",
+      "es": "Permite números de transacción duplicados (Sí/No)"
+    },
+    {
+      "id": 39,
+      "br": "Copia número de sequência de documento para TRX_NUMBER (Y/N)",
+      "en": "Copy Document Sequence Number to TRX_NUMBER (Y/N)",
+      "es": "Copiar el número de secuencia del documento a TRX_NUMBER (Sí/No)"
+    },
+    {
+      "id": 40,
+      "br": "Fonte padrão para notas de crédito geradas a partir desta fonte",
+      "en": "Default Source for Credit Notes Generated from this Source",
+      "es": "Fuente predeterminada para notas de crédito generadas a partir de esta fuente"
+    },
+    {
+      "id": 41,
+      "br": "self",
+      "en": "self",
+      "es": "self"
+    },
+    {
+      "id": 42,
+      "br": "Ação para linhas inválidas no AutoInvoice (REJECT/CREATE)",
+      "en": "Action for Invalid Lines in AutoInvoice (REJECT/CREATE)",
+      "es": "Acción para líneas inválidas en AutoInvoice (REJECT/CREATE)"
+    },
+    {
+      "id": 43,
+      "br": "Ação para taxas de imposto inválidas no AutoInvoice",
+      "en": "Action for Invalid Tax Rates in AutoInvoice",
+      "es": "Acción para tasas de impuestos inválidas en AutoInvoice"
+    },
+    {
+      "id": 44,
+      "br": "Derivar data da transação automaticamente (Y/N)",
+      "en": "Automatically Derive Transaction Date (Y/N)",
+      "es": "Derivar la fecha de la transacción automáticamente (Sí/No)"
+    },
+    {
+      "id": 45,
+      "br": "Opção de tratamento de recebimentos",
+      "en": "Receipt Handling Option",
+      "es": "Opción de tratamiento de cobros"
+    },
+    {
+      "id": 46,
+      "br": "Contabilidade",
+      "en": "Accounting",
+      "es": "Contabilidad"
+    },
+    {
+      "id": 47,
+      "br": "Regra de alocação de receita (AMOUNT/PERCENT)",
+      "en": "Revenue Allocation Rule (AMOUNT/PERCENT)",
+      "es": "Regla de asignación de ingresos (AMOUNT/PERCENT)"
+    },
+    {
+      "id": 48,
+      "br": "Contexto do Global Descriptive Flexfield",
+      "en": "Global Descriptive Flexfield Context",
+      "es": "Contexto del Descriptive Flexfield Global"
+    },
+    {
+      "id": 49,
+      "br": "GLOBAL_ATTRIBUTE1–20",
+      "en": "GLOBAL_ATTRIBUTE1–20",
+      "es": "GLOBAL_ATTRIBUTE1–20"
+    },
+    {
+      "id": 50,
+      "br": "Atributos globais (localizações por país)",
+      "en": "Global Attributes (Locations by Country)",
+      "es": "Atributos globales (ubicaciones por país)"
+    },
+    {
+      "id": 51,
+      "br": "Business unit (multi-org)",
+      "en": "Business unit (multi-org)",
+      "es": "Unidad de negocio (multi-org)"
+    },
+    {
+      "id": 52,
+      "br": "Auditoria",
+      "en": "Auditing",
+      "es": "Auditoría"
+    },
+    {
+      "id": 53,
+      "br": "Usuário que criou o registro",
+      "en": "User who created the record",
+      "es": "Usuario que creó el registro"
+    },
+    {
+      "id": 54,
+      "br": "Data/hora de criação",
+      "en": "Creation date/time",
+      "es": "Fecha/hora de creación"
+    },
+    {
+      "id": 55,
+      "br": "Último usuário que alterou",
+      "en": "Last user who modified",
+      "es": "Último usuario que modificó"
+    },
+    {
+      "id": 56,
+      "br": "Data/hora da última alteração",
+      "en": "Last modification date/time",
+      "es": "Fecha/hora de la última modificación"
+    },
+    {
+      "id": 57,
+      "br": "Login da última sessão",
+      "en": "Last session login",
+      "es": "Inicio de sesión de la última sesión"
+    },
+    {
+      "id": 58,
+      "br": "Contexto do Descriptive Flexfield",
+      "en": "Descriptive Flexfield context",
+      "es": "Contexto del Descriptive Flexfield"
+    },
+    {
+      "id": 59,
+      "br": "ATTRIBUTE1–15",
+      "en": "ATTRIBUTE1–15",
+      "es": "ATTRIBUTE1–15"
+    },
+    {
+      "id": 60,
+      "br": "Atributos descritivos customizáveis por implementação",
+      "en": "Customizable descriptive attributes by implementation",
+      "es": "Atributos descriptivos personalizables por implementación"
+    },
+    {
+      "id": 61,
+      "br": "Relacionamentos",
+      "en": "Relationships",
+      "es": "Relaciones"
+    },
+    {
+      "id": 62,
+      "br": "Tabelas-pai (FK de entrada)",
+      "en": "Parent tables (FK of entry)",
+      "es": "Tablas padre (FK de entrada)"
+    },
+    {
+      "id": 63,
+      "br": "tipo de transação padrão",
+      "en": "Standard transaction type",
+      "es": "tipo de transacción predeterminado"
+    },
+    {
+      "id": 64,
+      "br": "business unit",
+      "en": "business unit",
+      "es": "unidad de negocio"
+    },
+    {
+      "id": 65,
+      "br": "self — via CREDIT_MEMO_BATCH_SOURCE_ID (fonte de credit memo associada)",
+      "en": "self — via CREDIT_MEMO_BATCH_SOURCE_ID (associated credit memo source)",
+      "es": "self — vía CREDIT_MEMO_BATCH_SOURCE_ID (fuente de nota de crédito asociada)"
+    },
+    {
+      "id": 66,
+      "br": "Tabelas-filha (FK de saída)",
+      "en": "Child tables (FK of exit)",
+      "es": "Tablas hijas (FK de salida)"
+    },
+    {
+      "id": 67,
+      "br": "transações que utilizam esta fonte",
+      "en": "Transactions that use this source",
+      "es": "transacciones que utilizan esta fuente"
+    },
+    {
+      "id": 68,
+      "br": "lotes de transações",
+      "en": "Transaction batches",
+      "es": "Lotes de transacciones"
+    },
+    {
+      "id": 69,
+      "br": "linhas de interface AutoInvoice",
+      "en": "AutoInvoice interface lines",
+      "es": "Líneas de interfaz AutoInvoice"
+    },
+    {
+      "id": 70,
+      "br": "Uso Típico",
+      "en": "Typical use",
+      "es": "Uso típico"
+    },
+    {
+      "id": 71,
+      "br": "Consultar fontes ativas com numeração automática",
+      "en": "Query active sources with automatic numbering",
+      "es": "Consultar fuentes activas con numeración automática"
+    },
+    {
+      "id": 72,
+      "br": "Identificar fontes do tipo AutoInvoice (importação)",
+      "en": "Identify AutoInvoice type sources (import)",
+      "es": "Identificar fuentes del tipo AutoInvoice (importación)"
+    },
+    {
+      "id": 73,
+      "br": "Filtros comuns",
+      "en": "Common filters",
+      "es": "Filtros comunes"
+    },
+    {
+      "id": 74,
+      "br": "Apenas fontes ativas",
+      "en": "Only active sources",
+      "es": "Solo fuentes activas"
+    },
+    {
+      "id": 75,
+      "br": "Fontes manuais",
+      "en": "Manual sources",
+      "es": "Fuentes manuales"
+    },
+    {
+      "id": 76,
+      "br": "Fontes para AutoInvoice",
+      "en": "Sources for AutoInvoice",
+      "es": "Fuentes para AutoInvoice"
+    },
+    {
+      "id": 77,
+      "br": "Com numeração automática",
+      "en": "With automatic numbering",
+      "es": "Con numeración automática"
+    },
+    {
+      "id": 78,
+      "br": "Observações",
+      "en": "Notes",
+      "es": "Observaciones"
+    },
+    {
+      "id": 79,
+      "br": "A tabela possui Descriptive Flexfields (DFF) via colunas ATTRIBUTE1–15 para customizações por implementação.",
+      "en": "The table has Descriptive Flexfields (DFF) via columns ATTRIBUTE1–15 for customization by implementation.",
+      "es": "La tabla tiene Descriptive Flexfields (DFF) a través de las columnas ATTRIBUTE1–15 para personalizaciones por implementación."
+    },
+    {
+      "id": 80,
+      "br": "O campo CREDIT_MEMO_BATCH_SOURCE_ID cria um auto-relacionamento (self-reference) que vincula uma fonte de fatura à sua fonte de credit memo padrão.",
+      "en": "The CREDIT_MEMO_BATCH_SOURCE_ID field creates a self-reference that links a invoice source to its standard credit memo source.",
+      "es": "El campo CREDIT_MEMO_BATCH_SOURCE_ID crea una auto-referencia que vincula una fuente de factura a su fuente de nota de crédito estándar."
+    },
+    {
+      "id": 81,
+      "br": "Fontes do tipo IMPORTED são utilizadas pelo AutoInvoice — o processo que converte linhas da RA_INTERFACE_LINES_ALL em transações completas.",
+      "en": "IMPORTED type sources are used by AutoInvoice – the process that converts lines from RA_INTERFACE_LINES_ALL into complete transactions.",
+      "es": "Las fuentes de tipo IMPORTED son utilizadas por AutoInvoice — el proceso que convierte las líneas de RA_INTERFACE_LINES_ALL en transacciones completas."
+    },
+    {
+      "id": 82,
+      "br": "Alterações nesta tabela afetam diretamente o comportamento de numeração de todas as transações futuras naquela fonte.",
+      "en": "Changes in this table directly affect the numbering behavior of all future transactions from that source.",
+      "es": "Los cambios en esta tabla afectan directamente el comportamiento de numeración de todas las transacciones futuras en esa fuente."
+    },
+    {
+      "id": 83,
+      "br": "Em implementações multi-org, cada business unit normalmente possui seu próprio conjunto de batch sources.",
+      "en": "In multi-org implementations, each business unit typically has its own set of batch sources.",
+      "es": "En implementaciones multi-org, cada business unit normalmente tiene su propio conjunto de fuentes de batch."
+    },
+    {
+      "id": 84,
+      "br": "Referências",
+      "en": "References",
+      "es": "Referencias"
+    },
+    {
+      "id": 85,
+      "br": "[Oracle Docs — RA_BATCH_SOURCES_ALL](https://docs.oracle.com/en/cloud/saas/financials/25a/oedmf/rabatchsourcesall-10044.html)",
+      "en": "[Oracle Docs — RA_BATCH_SOURCES_ALL](https://docs.oracle.com/en/cloud/saas/financials/25a/oedmf/rabatchsourcesall-10044.html)",
+      "es": "[Oracle Docs — RA_BATCH_SOURCES_ALL](https://docs.oracle.com/en/cloud/saas/financials/25a/oedmf/rabatchsourcesall-10044.html)"
+    },
+    {
+      "id": 86,
+      "br": "ar-module-data-dictionary — Dossiê do módulo AR",
+      "en": "ar-module-data-dictionary — AR module data dictionary",
+      "es": "ar-module-data-dictionary — Diccionario del módulo AR"
+    }
+  ]
+}

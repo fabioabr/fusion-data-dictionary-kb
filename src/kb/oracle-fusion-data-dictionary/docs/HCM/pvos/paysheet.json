@@ -1,0 +1,1951 @@
+{
+  "meta": {
+    "pvo_name": "Paysheet",
+    "full_path": "FscmTopModelAM.PaysheetAM.Paysheet",
+    "module_path": "FscmTopModelAM.PaysheetAM",
+    "module_code": "HCM",
+    "type": "pvo",
+    "description": "Extrai folhas de pagamento de incentivos (paysheets) com componentes de plano, repositórios e participantes. Suporta detalhamento de cálculos de remuneração variável e comissões."
+  },
+  "stats": {
+    "total_attributes": 136,
+    "tables_count": 8,
+    "bicc_enabled": 89,
+    "bicc_pct": 65,
+    "pk_count": 1
+  },
+  "tables": [
+    "CN_PAY_GROUPS_ALL_B",
+    "CN_PAY_GROUPS_ALL_TL",
+    "CN_PLAN_COMPONENTS_ALL_B",
+    "CN_REPOSITORIES_ALL_B",
+    "CN_SRP_PARTICIPANTS_ALL",
+    "CN_TP_PAYRUNS_ALL",
+    "CN_TP_PAYSHEETS_ALL",
+    "HZ_PARTIES"
+  ],
+  "attributes": [
+    {
+      "name": "ActiveFlag",
+      "table": "CN_SRP_PARTICIPANTS_ALL",
+      "column": "ACTIVE_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AdjustComments",
+      "table": "CN_TP_PAYSHEETS_ALL",
+      "column": "ADJUST_COMMENTS",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AdjustComments1",
+      "table": "CN_TP_PAYRUNS_ALL",
+      "column": "ADJUST_COMMENTS",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AdjustStatus",
+      "table": "CN_TP_PAYSHEETS_ALL",
+      "column": "ADJUST_STATUS",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AdjustStatus1",
+      "table": "CN_TP_PAYRUNS_ALL",
+      "column": "ADJUST_STATUS",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AnalystId",
+      "table": "CN_SRP_PARTICIPANTS_ALL",
+      "column": "ANALYST_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ApExpId",
+      "table": "CN_PLAN_COMPONENTS_ALL_B",
+      "column": "AP_EXP_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ApLiabId",
+      "table": "CN_PLAN_COMPONENTS_ALL_B",
+      "column": "AP_LIAB_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ApprovalStatus",
+      "table": "CN_PLAN_COMPONENTS_ALL_B",
+      "column": "APPROVAL_STATUS",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BbPmtRecoveryPlans",
+      "table": "CN_TP_PAYSHEETS_ALL",
+      "column": "BB_PMT_RECOVERY_PLANS",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BbPriorPeriodAdj",
+      "table": "CN_TP_PAYSHEETS_ALL",
+      "column": "BB_PRIOR_PERIOD_ADJ",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BonusDueBb",
+      "table": "CN_TP_PAYSHEETS_ALL",
+      "column": "BONUS_DUE_BB",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BonusPaid",
+      "table": "CN_TP_PAYSHEETS_ALL",
+      "column": "BONUS_PAID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BonusPtd",
+      "table": "CN_TP_PAYSHEETS_ALL",
+      "column": "BONUS_PTD",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CalcVariableId",
+      "table": "CN_PLAN_COMPONENTS_ALL_B",
+      "column": "CALC_VARIABLE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CalculationPhase",
+      "table": "CN_PLAN_COMPONENTS_ALL_B",
+      "column": "CALCULATION_PHASE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CommDraw",
+      "table": "CN_TP_PAYSHEETS_ALL",
+      "column": "COMM_DRAW",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CommDueBb",
+      "table": "CN_TP_PAYSHEETS_ALL",
+      "column": "COMM_DUE_BB",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CommNrec",
+      "table": "CN_TP_PAYSHEETS_ALL",
+      "column": "COMM_NREC",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CommPaid",
+      "table": "CN_TP_PAYSHEETS_ALL",
+      "column": "COMM_PAID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CommPtd",
+      "table": "CN_TP_PAYSHEETS_ALL",
+      "column": "COMM_PTD",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CompensationEndDate",
+      "table": "CN_SRP_PARTICIPANTS_ALL",
+      "column": "COMPENSATION_END_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CostCenterId",
+      "table": "CN_TP_PAYSHEETS_ALL",
+      "column": "COST_CENTER_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CreatedBy",
+      "table": "CN_TP_PAYSHEETS_ALL",
+      "column": "CREATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CreationDate",
+      "table": "CN_TP_PAYSHEETS_ALL",
+      "column": "CREATION_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CreditTypeId",
+      "table": "CN_TP_PAYSHEETS_ALL",
+      "column": "CREDIT_TYPE_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CurrencyCode",
+      "table": "CN_PLAN_COMPONENTS_ALL_B",
+      "column": "CURRENCY_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CurrentEarnings",
+      "table": "CN_TP_PAYSHEETS_ALL",
+      "column": "CURRENT_EARNINGS",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CurrentEarningsDue",
+      "table": "CN_TP_PAYSHEETS_ALL",
+      "column": "CURRENT_EARNINGS_DUE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "DeleteFlag",
+      "table": "CN_PLAN_COMPONENTS_ALL_B",
+      "column": "DELETE_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "Description",
+      "table": "CN_PAY_GROUPS_ALL_TL",
+      "column": "DESCRIPTION",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "DisplayIdentifier",
+      "table": "CN_SRP_PARTICIPANTS_ALL",
+      "column": "DISPLAY_IDENTIFIER",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "DrawPaid",
+      "table": "CN_TP_PAYSHEETS_ALL",
+      "column": "DRAW_PAID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "EarningTypeId",
+      "table": "CN_PLAN_COMPONENTS_ALL_B",
+      "column": "EARNING_TYPE_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "EmployeeNumber",
+      "table": "CN_TP_PAYSHEETS_ALL",
+      "column": "EMPLOYEE_NUMBER",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "EndDate",
+      "table": "CN_PAY_GROUPS_ALL_B",
+      "column": "END_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "EndDate1",
+      "table": "CN_PLAN_COMPONENTS_ALL_B",
+      "column": "END_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "EndDate2",
+      "table": "CN_SRP_PARTICIPANTS_ALL",
+      "column": "END_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "FunctionalCurrency",
+      "table": "CN_REPOSITORIES_ALL_B",
+      "column": "FUNCTIONAL_CURRENCY",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "HeldAmount",
+      "table": "CN_TP_PAYSHEETS_ALL",
+      "column": "HELD_AMOUNT",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "HoldPaymentFlag",
+      "table": "CN_SRP_PARTICIPANTS_ALL",
+      "column": "HOLD_PAYMENT_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "HoldReason",
+      "table": "CN_SRP_PARTICIPANTS_ALL",
+      "column": "HOLD_REASON",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "HomeCurrencyCode",
+      "table": "CN_TP_PAYSHEETS_ALL",
+      "column": "HOME_CURRENCY_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "HrPersonNumber",
+      "table": "CN_SRP_PARTICIPANTS_ALL",
+      "column": "HR_PERSON_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "HrPrimaryWorkerNumber",
+      "table": "CN_SRP_PARTICIPANTS_ALL",
+      "column": "HR_PRIMARY_WORKER_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "IncentiveType",
+      "table": "CN_PLAN_COMPONENTS_ALL_B",
+      "column": "INCENTIVE_TYPE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "IncentiveTypeCode",
+      "table": "CN_TP_PAYRUNS_ALL",
+      "column": "INCENTIVE_TYPE_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "IncrementalType",
+      "table": "CN_PLAN_COMPONENTS_ALL_B",
+      "column": "INCREMENTAL_TYPE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "IndirectCredit",
+      "table": "CN_PLAN_COMPONENTS_ALL_B",
+      "column": "INDIRECT_CREDIT",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "JobDefinitionName",
+      "table": "CN_SRP_PARTICIPANTS_ALL",
+      "column": "JOB_DEFINITION_NAME",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "JobDefinitionPackage",
+      "table": "CN_SRP_PARTICIPANTS_ALL",
+      "column": "JOB_DEFINITION_PACKAGE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "Language",
+      "table": "CN_PAY_GROUPS_ALL_TL",
+      "column": "LANGUAGE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LastUpdateDate",
+      "table": "CN_TP_PAYSHEETS_ALL",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": true
+    },
+    {
+      "name": "LastUpdateLogin",
+      "table": "CN_TP_PAYSHEETS_ALL",
+      "column": "LAST_UPDATE_LOGIN",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LastUpdatedBy",
+      "table": "CN_TP_PAYSHEETS_ALL",
+      "column": "LAST_UPDATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "MinimumAmount",
+      "table": "CN_TP_PAYSHEETS_ALL",
+      "column": "MINIMUM_AMOUNT",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ObjectStatus",
+      "table": "CN_TP_PAYSHEETS_ALL",
+      "column": "OBJECT_STATUS",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ObjectStatus1",
+      "table": "CN_TP_PAYRUNS_ALL",
+      "column": "OBJECT_STATUS",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ObjectVersionNumber",
+      "table": "CN_TP_PAYSHEETS_ALL",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ObjectVersionNumber1",
+      "table": "CN_SRP_PARTICIPANTS_ALL",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ObjectVersionNumber2",
+      "table": "CN_TP_PAYRUNS_ALL",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ObjectVersionNumber3",
+      "table": "CN_PAY_GROUPS_ALL_B",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ObjectVersionNumber4",
+      "table": "CN_PLAN_COMPONENTS_ALL_B",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ObjectVersionNumber5",
+      "table": "CN_PAY_GROUPS_ALL_TL",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ObjectVersionNumber6",
+      "table": "CN_REPOSITORIES_ALL_B",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "OrgId",
+      "table": "CN_TP_PAYSHEETS_ALL",
+      "column": "ORG_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "OrgId1",
+      "table": "CN_TP_PAYRUNS_ALL",
+      "column": "ORG_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "OrgId2",
+      "table": "CN_PAY_GROUPS_ALL_B",
+      "column": "ORG_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "OrgId3",
+      "table": "CN_PLAN_COMPONENTS_ALL_B",
+      "column": "ORG_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "OrgId4",
+      "table": "CN_PAY_GROUPS_ALL_TL",
+      "column": "ORG_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "OrgId5",
+      "table": "CN_REPOSITORIES_ALL_B",
+      "column": "ORG_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ParticipantFirstName",
+      "table": "HZ_PARTIES",
+      "column": "PERSON_FIRST_NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ParticipantId",
+      "table": "CN_TP_PAYSHEETS_ALL",
+      "column": "PARTICIPANT_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ParticipantId1",
+      "table": "CN_SRP_PARTICIPANTS_ALL",
+      "column": "PARTICIPANT_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ParticipantLastName",
+      "table": "HZ_PARTIES",
+      "column": "PERSON_LAST_NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ParticipantName",
+      "table": "HZ_PARTIES",
+      "column": "PARTY_NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ParticipantPartyPEOPartyId",
+      "table": "HZ_PARTIES",
+      "column": "PARTY_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ParticipantType",
+      "table": "CN_SRP_PARTICIPANTS_ALL",
+      "column": "PARTICIPANT_TYPE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartyId",
+      "table": "CN_SRP_PARTICIPANTS_ALL",
+      "column": "PARTY_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartyNumber",
+      "table": "HZ_PARTIES",
+      "column": "PARTY_NUMBER",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PayAmtAdjFuncCurr",
+      "table": "CN_TP_PAYSHEETS_ALL",
+      "column": "PAY_AMT_ADJ_FUNC_CURR",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PayAmtAdjHomeCurr",
+      "table": "CN_TP_PAYSHEETS_ALL",
+      "column": "PAY_AMT_ADJ_HOME_CURR",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PayAmtAdjPayCurr",
+      "table": "CN_TP_PAYSHEETS_ALL",
+      "column": "PAY_AMT_ADJ_PAY_CURR",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PayCurrencyCode",
+      "table": "CN_TP_PAYSHEETS_ALL",
+      "column": "PAY_CURRENCY_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PayDate",
+      "table": "CN_TP_PAYRUNS_ALL",
+      "column": "PAY_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PayGroupId",
+      "table": "CN_TP_PAYRUNS_ALL",
+      "column": "PAY_GROUP_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PayGroupId1",
+      "table": "CN_PAY_GROUPS_ALL_B",
+      "column": "PAY_GROUP_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PayGroupId2",
+      "table": "CN_PAY_GROUPS_ALL_TL",
+      "column": "PAY_GROUP_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PayGroupName",
+      "table": "CN_PAY_GROUPS_ALL_TL",
+      "column": "PAY_GROUP_NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PayGroupType",
+      "table": "CN_PAY_GROUPS_ALL_B",
+      "column": "PAY_GROUP_TYPE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PayPeriodId",
+      "table": "CN_TP_PAYRUNS_ALL",
+      "column": "PAY_PERIOD_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PayToFuncCurrCnvrt",
+      "table": "CN_TP_PAYSHEETS_ALL",
+      "column": "PAY_TO_FUNC_CURR_CNVRT",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PayToHomeCurrCnvrt",
+      "table": "CN_TP_PAYSHEETS_ALL",
+      "column": "PAY_TO_HOME_CURR_CNVRT",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PayeeBonusDueBb",
+      "table": "CN_TP_PAYSHEETS_ALL",
+      "column": "PAYEE_BONUS_DUE_BB",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PayeeBonusPaid",
+      "table": "CN_TP_PAYSHEETS_ALL",
+      "column": "PAYEE_BONUS_PAID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PayeeBonusPtd",
+      "table": "CN_TP_PAYSHEETS_ALL",
+      "column": "PAYEE_BONUS_PTD",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PayeeCommDueBb",
+      "table": "CN_TP_PAYSHEETS_ALL",
+      "column": "PAYEE_COMM_DUE_BB",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PayeeCommPaid",
+      "table": "CN_TP_PAYSHEETS_ALL",
+      "column": "PAYEE_COMM_PAID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PayeeCommPtd",
+      "table": "CN_TP_PAYSHEETS_ALL",
+      "column": "PAYEE_COMM_PTD",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PayeeOnly",
+      "table": "CN_SRP_PARTICIPANTS_ALL",
+      "column": "PAYEE_ONLY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PaymentDate",
+      "table": "CN_TP_PAYSHEETS_ALL",
+      "column": "ATTRIBUTE14",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PaymentGroupCode",
+      "table": "CN_PLAN_COMPONENTS_ALL_B",
+      "column": "PAYMENT_GROUP_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PaymentMethod",
+      "table": "CN_TP_PAYSHEETS_ALL",
+      "column": "ATTRIBUTE15",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PaymentReferenceNumber",
+      "table": "CN_TP_PAYSHEETS_ALL",
+      "column": "ATTRIBUTE13",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PayrunId",
+      "table": "CN_TP_PAYSHEETS_ALL",
+      "column": "PAYRUN_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PayrunId1",
+      "table": "CN_TP_PAYRUNS_ALL",
+      "column": "PAYRUN_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PayrunMode",
+      "table": "CN_TP_PAYRUNS_ALL",
+      "column": "PAYRUN_MODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PayrunName",
+      "table": "CN_TP_PAYRUNS_ALL",
+      "column": "PAYRUN_NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PaysheetId",
+      "table": "CN_TP_PAYSHEETS_ALL",
+      "column": "PAYSHEET_ID",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    },
+    {
+      "name": "PlanCompStatus",
+      "table": "CN_PLAN_COMPONENTS_ALL_B",
+      "column": "PLAN_COMP_STATUS",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PlanComponentId",
+      "table": "CN_PLAN_COMPONENTS_ALL_B",
+      "column": "PLAN_COMPONENT_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PmtAmountAdjNrec",
+      "table": "CN_TP_PAYSHEETS_ALL",
+      "column": "PMT_AMOUNT_ADJ_NREC",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PmtAmountAdjRec",
+      "table": "CN_TP_PAYSHEETS_ALL",
+      "column": "PMT_AMOUNT_ADJ_REC",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PmtAmountCalc",
+      "table": "CN_TP_PAYSHEETS_ALL",
+      "column": "PMT_AMOUNT_CALC",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PmtAmountRecovery",
+      "table": "CN_TP_PAYSHEETS_ALL",
+      "column": "PMT_AMOUNT_RECOVERY",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "QuotaId",
+      "table": "CN_TP_PAYSHEETS_ALL",
+      "column": "QUOTA_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RegBonusDueBb",
+      "table": "CN_TP_PAYSHEETS_ALL",
+      "column": "REG_BONUS_DUE_BB",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RegBonusPaid",
+      "table": "CN_TP_PAYSHEETS_ALL",
+      "column": "REG_BONUS_PAID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RegBonusPtd",
+      "table": "CN_TP_PAYSHEETS_ALL",
+      "column": "REG_BONUS_PTD",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RegBonusRec",
+      "table": "CN_TP_PAYSHEETS_ALL",
+      "column": "REG_BONUS_REC",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RegBonusToRec",
+      "table": "CN_TP_PAYSHEETS_ALL",
+      "column": "REG_BONUS_TO_REC",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReportGroup",
+      "table": "CN_PLAN_COMPONENTS_ALL_B",
+      "column": "REPORT_GROUP",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RepositoryId",
+      "table": "CN_REPOSITORIES_ALL_B",
+      "column": "REPOSITORY_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RequestId",
+      "table": "CN_SRP_PARTICIPANTS_ALL",
+      "column": "REQUEST_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SalesrepEnddatedFlag",
+      "table": "CN_PLAN_COMPONENTS_ALL_B",
+      "column": "SALESREP_ENDDATED_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SourceLang",
+      "table": "CN_PAY_GROUPS_ALL_TL",
+      "column": "SOURCE_LANG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SourceOrgId",
+      "table": "CN_TP_PAYSHEETS_ALL",
+      "column": "SOURCE_ORG_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SourceSystem",
+      "table": "CN_SRP_PARTICIPANTS_ALL",
+      "column": "SOURCE_SYSTEM",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SourceSystemId",
+      "table": "CN_SRP_PARTICIPANTS_ALL",
+      "column": "SOURCE_SYSTEM_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "StartDate",
+      "table": "CN_PAY_GROUPS_ALL_B",
+      "column": "START_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "StartDate1",
+      "table": "CN_PLAN_COMPONENTS_ALL_B",
+      "column": "START_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "StartDate2",
+      "table": "CN_SRP_PARTICIPANTS_ALL",
+      "column": "START_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ThirdpartyPayeeFlag",
+      "table": "CN_PLAN_COMPONENTS_ALL_B",
+      "column": "THIRDPARTY_PAYEE_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TotalAmtHomeCurrency",
+      "table": "CN_TP_PAYSHEETS_ALL",
+      "column": "TOTAL_AMT_HOME_CURRENCY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TotalAmtPayToHomeCnvrt",
+      "table": "CN_TP_PAYSHEETS_ALL",
+      "column": "TOTAL_AMT_PAY_TO_HOME_CNVRT",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "UserGuid",
+      "table": "HZ_PARTIES",
+      "column": "USER_GUID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    }
+  ],
+  "by_table": {
+    "CN_SRP_PARTICIPANTS_ALL": [
+      {
+        "attribute": "ActiveFlag",
+        "column": "ACTIVE_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "AnalystId",
+        "column": "ANALYST_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CompensationEndDate",
+        "column": "COMPENSATION_END_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "DisplayIdentifier",
+        "column": "DISPLAY_IDENTIFIER",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "EndDate2",
+        "column": "END_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "HoldPaymentFlag",
+        "column": "HOLD_PAYMENT_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "HoldReason",
+        "column": "HOLD_REASON",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "HrPersonNumber",
+        "column": "HR_PERSON_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "HrPrimaryWorkerNumber",
+        "column": "HR_PRIMARY_WORKER_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "JobDefinitionName",
+        "column": "JOB_DEFINITION_NAME",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "JobDefinitionPackage",
+        "column": "JOB_DEFINITION_PACKAGE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ObjectVersionNumber1",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ParticipantId1",
+        "column": "PARTICIPANT_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ParticipantType",
+        "column": "PARTICIPANT_TYPE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PartyId",
+        "column": "PARTY_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PayeeOnly",
+        "column": "PAYEE_ONLY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "RequestId",
+        "column": "REQUEST_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "SourceSystem",
+        "column": "SOURCE_SYSTEM",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "SourceSystemId",
+        "column": "SOURCE_SYSTEM_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "StartDate2",
+        "column": "START_DATE",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "CN_TP_PAYSHEETS_ALL": [
+      {
+        "attribute": "AdjustComments",
+        "column": "ADJUST_COMMENTS",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "AdjustStatus",
+        "column": "ADJUST_STATUS",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "BbPmtRecoveryPlans",
+        "column": "BB_PMT_RECOVERY_PLANS",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "BbPriorPeriodAdj",
+        "column": "BB_PRIOR_PERIOD_ADJ",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "BonusDueBb",
+        "column": "BONUS_DUE_BB",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "BonusPaid",
+        "column": "BONUS_PAID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "BonusPtd",
+        "column": "BONUS_PTD",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CommDraw",
+        "column": "COMM_DRAW",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CommDueBb",
+        "column": "COMM_DUE_BB",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CommNrec",
+        "column": "COMM_NREC",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CommPaid",
+        "column": "COMM_PAID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CommPtd",
+        "column": "COMM_PTD",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CostCenterId",
+        "column": "COST_CENTER_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CreatedBy",
+        "column": "CREATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CreationDate",
+        "column": "CREATION_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CreditTypeId",
+        "column": "CREDIT_TYPE_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CurrentEarnings",
+        "column": "CURRENT_EARNINGS",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CurrentEarningsDue",
+        "column": "CURRENT_EARNINGS_DUE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "DrawPaid",
+        "column": "DRAW_PAID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "EmployeeNumber",
+        "column": "EMPLOYEE_NUMBER",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "HeldAmount",
+        "column": "HELD_AMOUNT",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "HomeCurrencyCode",
+        "column": "HOME_CURRENCY_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "LastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "LastUpdateLogin",
+        "column": "LAST_UPDATE_LOGIN",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "LastUpdatedBy",
+        "column": "LAST_UPDATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "MinimumAmount",
+        "column": "MINIMUM_AMOUNT",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ObjectStatus",
+        "column": "OBJECT_STATUS",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "OrgId",
+        "column": "ORG_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ParticipantId",
+        "column": "PARTICIPANT_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PayAmtAdjFuncCurr",
+        "column": "PAY_AMT_ADJ_FUNC_CURR",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PayAmtAdjHomeCurr",
+        "column": "PAY_AMT_ADJ_HOME_CURR",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PayAmtAdjPayCurr",
+        "column": "PAY_AMT_ADJ_PAY_CURR",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PayCurrencyCode",
+        "column": "PAY_CURRENCY_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PayToFuncCurrCnvrt",
+        "column": "PAY_TO_FUNC_CURR_CNVRT",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PayToHomeCurrCnvrt",
+        "column": "PAY_TO_HOME_CURR_CNVRT",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PayeeBonusDueBb",
+        "column": "PAYEE_BONUS_DUE_BB",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PayeeBonusPaid",
+        "column": "PAYEE_BONUS_PAID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PayeeBonusPtd",
+        "column": "PAYEE_BONUS_PTD",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PayeeCommDueBb",
+        "column": "PAYEE_COMM_DUE_BB",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PayeeCommPaid",
+        "column": "PAYEE_COMM_PAID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PayeeCommPtd",
+        "column": "PAYEE_COMM_PTD",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PaymentDate",
+        "column": "ATTRIBUTE14",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PaymentMethod",
+        "column": "ATTRIBUTE15",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PaymentReferenceNumber",
+        "column": "ATTRIBUTE13",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PayrunId",
+        "column": "PAYRUN_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PaysheetId",
+        "column": "PAYSHEET_ID",
+        "bicc": true,
+        "pk": true
+      },
+      {
+        "attribute": "PmtAmountAdjNrec",
+        "column": "PMT_AMOUNT_ADJ_NREC",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PmtAmountAdjRec",
+        "column": "PMT_AMOUNT_ADJ_REC",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PmtAmountCalc",
+        "column": "PMT_AMOUNT_CALC",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PmtAmountRecovery",
+        "column": "PMT_AMOUNT_RECOVERY",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "QuotaId",
+        "column": "QUOTA_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "RegBonusDueBb",
+        "column": "REG_BONUS_DUE_BB",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "RegBonusPaid",
+        "column": "REG_BONUS_PAID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "RegBonusPtd",
+        "column": "REG_BONUS_PTD",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "RegBonusRec",
+        "column": "REG_BONUS_REC",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "RegBonusToRec",
+        "column": "REG_BONUS_TO_REC",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "SourceOrgId",
+        "column": "SOURCE_ORG_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TotalAmtHomeCurrency",
+        "column": "TOTAL_AMT_HOME_CURRENCY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TotalAmtPayToHomeCnvrt",
+        "column": "TOTAL_AMT_PAY_TO_HOME_CNVRT",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "CN_TP_PAYRUNS_ALL": [
+      {
+        "attribute": "AdjustComments1",
+        "column": "ADJUST_COMMENTS",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AdjustStatus1",
+        "column": "ADJUST_STATUS",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "IncentiveTypeCode",
+        "column": "INCENTIVE_TYPE_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ObjectStatus1",
+        "column": "OBJECT_STATUS",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ObjectVersionNumber2",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "OrgId1",
+        "column": "ORG_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PayDate",
+        "column": "PAY_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PayGroupId",
+        "column": "PAY_GROUP_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PayPeriodId",
+        "column": "PAY_PERIOD_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PayrunId1",
+        "column": "PAYRUN_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PayrunMode",
+        "column": "PAYRUN_MODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PayrunName",
+        "column": "PAYRUN_NAME",
+        "bicc": true,
+        "pk": false
+      }
+    ],
+    "CN_PLAN_COMPONENTS_ALL_B": [
+      {
+        "attribute": "ApExpId",
+        "column": "AP_EXP_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ApLiabId",
+        "column": "AP_LIAB_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ApprovalStatus",
+        "column": "APPROVAL_STATUS",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CalcVariableId",
+        "column": "CALC_VARIABLE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CalculationPhase",
+        "column": "CALCULATION_PHASE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CurrencyCode",
+        "column": "CURRENCY_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "DeleteFlag",
+        "column": "DELETE_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "EarningTypeId",
+        "column": "EARNING_TYPE_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "EndDate1",
+        "column": "END_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "IncentiveType",
+        "column": "INCENTIVE_TYPE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "IncrementalType",
+        "column": "INCREMENTAL_TYPE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "IndirectCredit",
+        "column": "INDIRECT_CREDIT",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ObjectVersionNumber4",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "OrgId3",
+        "column": "ORG_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PaymentGroupCode",
+        "column": "PAYMENT_GROUP_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PlanCompStatus",
+        "column": "PLAN_COMP_STATUS",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PlanComponentId",
+        "column": "PLAN_COMPONENT_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReportGroup",
+        "column": "REPORT_GROUP",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "SalesrepEnddatedFlag",
+        "column": "SALESREP_ENDDATED_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "StartDate1",
+        "column": "START_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ThirdpartyPayeeFlag",
+        "column": "THIRDPARTY_PAYEE_FLAG",
+        "bicc": true,
+        "pk": false
+      }
+    ],
+    "CN_PAY_GROUPS_ALL_TL": [
+      {
+        "attribute": "Description",
+        "column": "DESCRIPTION",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "Language",
+        "column": "LANGUAGE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ObjectVersionNumber5",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "OrgId4",
+        "column": "ORG_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PayGroupId2",
+        "column": "PAY_GROUP_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PayGroupName",
+        "column": "PAY_GROUP_NAME",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "SourceLang",
+        "column": "SOURCE_LANG",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "CN_PAY_GROUPS_ALL_B": [
+      {
+        "attribute": "EndDate",
+        "column": "END_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ObjectVersionNumber3",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "OrgId2",
+        "column": "ORG_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PayGroupId1",
+        "column": "PAY_GROUP_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PayGroupType",
+        "column": "PAY_GROUP_TYPE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "StartDate",
+        "column": "START_DATE",
+        "bicc": true,
+        "pk": false
+      }
+    ],
+    "CN_REPOSITORIES_ALL_B": [
+      {
+        "attribute": "FunctionalCurrency",
+        "column": "FUNCTIONAL_CURRENCY",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ObjectVersionNumber6",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "OrgId5",
+        "column": "ORG_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "RepositoryId",
+        "column": "REPOSITORY_ID",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "HZ_PARTIES": [
+      {
+        "attribute": "ParticipantFirstName",
+        "column": "PERSON_FIRST_NAME",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ParticipantLastName",
+        "column": "PERSON_LAST_NAME",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ParticipantName",
+        "column": "PARTY_NAME",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ParticipantPartyPEOPartyId",
+        "column": "PARTY_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PartyNumber",
+        "column": "PARTY_NUMBER",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "UserGuid",
+        "column": "USER_GUID",
+        "bicc": true,
+        "pk": false
+      }
+    ]
+  }
+}

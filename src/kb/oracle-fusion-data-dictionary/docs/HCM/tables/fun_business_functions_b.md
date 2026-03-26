@@ -1,0 +1,62 @@
+---
+id: DOC-HCM-148
+doc_type: system-doc
+title: "FUN_BUSINESS_FUNCTIONS_B — (título a preencher)"
+system: Oracle Fusion Cloud ERP
+module: Human Capital Management
+domain: Técnico
+owner: fabio.patria
+team: dados
+status: draft
+confidentiality: internal
+tags:
+  - oracle-fusion
+  - human-capital-management
+  - data-dictionary
+aliases:
+  - FUN_BUSINESS_FUNCTIONS_B
+  - fun_business_functions_b
+source_format: markdown
+conversion_pipeline: extract_tables-v1
+qa_score: 0
+qa_status: not_reviewed
+created_at: 2026-03-26
+updated_at: 2026-03-26
+---
+
+# FUN_BUSINESS_FUNCTIONS_B
+
+## 📌 Visão Geral
+
+(a ser preenchido na etapa 03)
+
+---
+
+## ⚙️ Colunas Principais
+
+| # | Coluna | Tipo | Nulo? | Categoria | Descrição | FK | Confiança |
+|---|--------|------|-------|-----------|-----------|-----|-----------|
+| 1 | BUSINESS_FUNCTION_CODE | — | — | — | — | — | — |
+| 2 | BUSINESS_FUNCTION_ID | — | — | — | — | — | — |
+| 3 | CREATED_BY | — | — | — | — | — | — |
+| 4 | CREATION_DATE | — | — | — | — | — | — |
+| 5 | GENERATE_FIN_TXN_FLAG | — | — | — | — | — | — |
+| 6 | LAST_UPDATED_BY | — | — | — | — | — | — |
+| 7 | LAST_UPDATE_DATE | — | — | — | — | — | — |
+| 8 | LAST_UPDATE_LOGIN | — | — | — | — | — | — |
+| 9 | OBJECT_VERSION_NUMBER | — | — | — | — | — | — |
+| 10 | SETUP_API | — | — | — | — | — | — |
+
+---
+
+## 🔗 Relacionamentos
+
+### Tabelas-pai (FK de entrada)
+
+### Tabelas-filha (FK de saída)
+
+---
+
+## 📎 Uso Típico
+
+(a ser preenchido na etapa 03)

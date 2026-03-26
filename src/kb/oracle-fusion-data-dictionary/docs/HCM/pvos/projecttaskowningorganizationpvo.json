@@ -1,0 +1,898 @@
+{
+  "meta": {
+    "pvo_name": "ProjectTaskOwningOrganizationPVO",
+    "full_path": "FscmTopModelAM.OrganizationAM.ProjectTaskOwningOrganizationPVO",
+    "module_path": "FscmTopModelAM.OrganizationAM",
+    "module_code": "HCM",
+    "type": "pvo",
+    "description": "Extrai organizações proprietárias de tarefas de projeto, com classificações e vigência. Utilizado para governança de responsabilidades em projetos corporativos."
+  },
+  "stats": {
+    "total_attributes": 61,
+    "tables_count": 7,
+    "bicc_enabled": 12,
+    "bicc_pct": 20,
+    "pk_count": 3
+  },
+  "tables": [
+    "FND_SETID_SETS_VL",
+    "HR_ALL_ORGANIZATION_UNITS_F",
+    "HR_ORGANIZATION_UNITS_F_TL",
+    "HR_ORG_UNIT_CLASSIFICATIONS_F",
+    "PER_ACTION_OCCURRENCES",
+    "PER_ACTION_REASONS_B",
+    "PER_ACTION_REASONS_TL"
+  ],
+  "attributes": [
+    {
+      "name": "ActionOccurrencesPEOActionOccurrenceId",
+      "table": "PER_ACTION_OCCURRENCES",
+      "column": "ACTION_OCCURRENCE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ActionOccurrencesPEOActionReasonId",
+      "table": "PER_ACTION_OCCURRENCES",
+      "column": "ACTION_REASON_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ActionOccurrencesPEOLastUpdateDate",
+      "table": "PER_ACTION_OCCURRENCES",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ActionReasonsPEOActionReasonId",
+      "table": "PER_ACTION_REASONS_B",
+      "column": "ACTION_REASON_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ActionReasonsPEOLastUpdateDate",
+      "table": "PER_ACTION_REASONS_B",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ActionReasonsTranslationPEOActionReason",
+      "table": "PER_ACTION_REASONS_TL",
+      "column": "ACTION_REASON",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ActionReasonsTranslationPEOActionReasonId",
+      "table": "PER_ACTION_REASONS_TL",
+      "column": "ACTION_REASON_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ActionReasonsTranslationPEOLanguage",
+      "table": "PER_ACTION_REASONS_TL",
+      "column": "LANGUAGE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ActionReasonsTranslationPEOLastUpdateDate",
+      "table": "PER_ACTION_REASONS_TL",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "EffectiveEndDate",
+      "table": "HR_ORG_UNIT_CLASSIFICATIONS_F",
+      "column": "EFFECTIVE_END_DATE",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    },
+    {
+      "name": "EffectiveStartDate",
+      "table": "HR_ORG_UNIT_CLASSIFICATIONS_F",
+      "column": "EFFECTIVE_START_DATE",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    },
+    {
+      "name": "OrgUnitClassificationId",
+      "table": "HR_ORG_UNIT_CLASSIFICATIONS_F",
+      "column": "ORG_UNIT_CLASSIFICATION_ID",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    },
+    {
+      "name": "OrgUnitClassificationPEOActionOccurrenceId",
+      "table": "HR_ORG_UNIT_CLASSIFICATIONS_F",
+      "column": "ACTION_OCCURRENCE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "OrgUnitClassificationPEOBusinessGroupId",
+      "table": "HR_ORG_UNIT_CLASSIFICATIONS_F",
+      "column": "BUSINESS_GROUP_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "OrgUnitClassificationPEOClassificationCode",
+      "table": "HR_ORG_UNIT_CLASSIFICATIONS_F",
+      "column": "CLASSIFICATION_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "OrgUnitClassificationPEOCreatedBy",
+      "table": "HR_ORG_UNIT_CLASSIFICATIONS_F",
+      "column": "CREATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "OrgUnitClassificationPEOCreationDate",
+      "table": "HR_ORG_UNIT_CLASSIFICATIONS_F",
+      "column": "CREATION_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "OrgUnitClassificationPEOLastUpdateDate",
+      "table": "HR_ORG_UNIT_CLASSIFICATIONS_F",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": true
+    },
+    {
+      "name": "OrgUnitClassificationPEOLastUpdateLogin",
+      "table": "HR_ORG_UNIT_CLASSIFICATIONS_F",
+      "column": "LAST_UPDATE_LOGIN",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "OrgUnitClassificationPEOLastUpdatedBy",
+      "table": "HR_ORG_UNIT_CLASSIFICATIONS_F",
+      "column": "LAST_UPDATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "OrgUnitClassificationPEOLegislationCode",
+      "table": "HR_ORG_UNIT_CLASSIFICATIONS_F",
+      "column": "LEGISLATION_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "OrgUnitClassificationPEOObjectVersionNumber",
+      "table": "HR_ORG_UNIT_CLASSIFICATIONS_F",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "OrgUnitClassificationPEOOrganizationId",
+      "table": "HR_ORG_UNIT_CLASSIFICATIONS_F",
+      "column": "ORGANIZATION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "OrgUnitClassificationPEOSetId",
+      "table": "HR_ORG_UNIT_CLASSIFICATIONS_F",
+      "column": "SET_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "OrgUnitClassificationPEOStatus",
+      "table": "HR_ORG_UNIT_CLASSIFICATIONS_F",
+      "column": "STATUS",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "OrganizationUnitPEOActionOccurrenceId",
+      "table": "HR_ALL_ORGANIZATION_UNITS_F",
+      "column": "ACTION_OCCURRENCE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "OrganizationUnitPEOBusinessGroupId",
+      "table": "HR_ALL_ORGANIZATION_UNITS_F",
+      "column": "BUSINESS_GROUP_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "OrganizationUnitPEOCostAllocationKeyflexId",
+      "table": "HR_ALL_ORGANIZATION_UNITS_F",
+      "column": "COST_ALLOCATION_KEYFLEX_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "OrganizationUnitPEOCreatedBy",
+      "table": "HR_ALL_ORGANIZATION_UNITS_F",
+      "column": "CREATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "OrganizationUnitPEOCreationDate",
+      "table": "HR_ALL_ORGANIZATION_UNITS_F",
+      "column": "CREATION_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "OrganizationUnitPEOEffectiveEndDate",
+      "table": "HR_ALL_ORGANIZATION_UNITS_F",
+      "column": "EFFECTIVE_END_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "OrganizationUnitPEOEffectiveStartDate",
+      "table": "HR_ALL_ORGANIZATION_UNITS_F",
+      "column": "EFFECTIVE_START_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "OrganizationUnitPEOEstablishmentId",
+      "table": "HR_ALL_ORGANIZATION_UNITS_F",
+      "column": "ESTABLISHMENT_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "OrganizationUnitPEOInternalAddressLine",
+      "table": "HR_ALL_ORGANIZATION_UNITS_F",
+      "column": "INTERNAL_ADDRESS_LINE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "OrganizationUnitPEOInternalExternalFlag",
+      "table": "HR_ALL_ORGANIZATION_UNITS_F",
+      "column": "INTERNAL_EXTERNAL_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "OrganizationUnitPEOLastUpdateDate",
+      "table": "HR_ALL_ORGANIZATION_UNITS_F",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": true
+    },
+    {
+      "name": "OrganizationUnitPEOLastUpdateLogin",
+      "table": "HR_ALL_ORGANIZATION_UNITS_F",
+      "column": "LAST_UPDATE_LOGIN",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "OrganizationUnitPEOLastUpdatedBy",
+      "table": "HR_ALL_ORGANIZATION_UNITS_F",
+      "column": "LAST_UPDATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "OrganizationUnitPEOLegalEntityId",
+      "table": "HR_ALL_ORGANIZATION_UNITS_F",
+      "column": "LEGAL_ENTITY_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "OrganizationUnitPEOLocationId",
+      "table": "HR_ALL_ORGANIZATION_UNITS_F",
+      "column": "LOCATION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "OrganizationUnitPEOObjectVersionNumber",
+      "table": "HR_ALL_ORGANIZATION_UNITS_F",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "OrganizationUnitPEOOrganizationId",
+      "table": "HR_ALL_ORGANIZATION_UNITS_F",
+      "column": "ORGANIZATION_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "OrganizationUnitPEOOrganizationUnitPEOType",
+      "table": "HR_ALL_ORGANIZATION_UNITS_F",
+      "column": "TYPE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "OrganizationUnitTranslationPEOCreatedBy",
+      "table": "HR_ORGANIZATION_UNITS_F_TL",
+      "column": "CREATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "OrganizationUnitTranslationPEOCreationDate",
+      "table": "HR_ORGANIZATION_UNITS_F_TL",
+      "column": "CREATION_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "OrganizationUnitTranslationPEOEffectiveEndDate",
+      "table": "HR_ORGANIZATION_UNITS_F_TL",
+      "column": "EFFECTIVE_END_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "OrganizationUnitTranslationPEOEffectiveStartDate",
+      "table": "HR_ORGANIZATION_UNITS_F_TL",
+      "column": "EFFECTIVE_START_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "OrganizationUnitTranslationPEOLanguage",
+      "table": "HR_ORGANIZATION_UNITS_F_TL",
+      "column": "LANGUAGE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "OrganizationUnitTranslationPEOLastUpdateDate",
+      "table": "HR_ORGANIZATION_UNITS_F_TL",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": true
+    },
+    {
+      "name": "OrganizationUnitTranslationPEOLastUpdateLogin",
+      "table": "HR_ORGANIZATION_UNITS_F_TL",
+      "column": "LAST_UPDATE_LOGIN",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "OrganizationUnitTranslationPEOLastUpdatedBy",
+      "table": "HR_ORGANIZATION_UNITS_F_TL",
+      "column": "LAST_UPDATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "OrganizationUnitTranslationPEOName",
+      "table": "HR_ORGANIZATION_UNITS_F_TL",
+      "column": "NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "OrganizationUnitTranslationPEOObjectVersionNumber",
+      "table": "HR_ORGANIZATION_UNITS_F_TL",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "OrganizationUnitTranslationPEOOrganizationId",
+      "table": "HR_ORGANIZATION_UNITS_F_TL",
+      "column": "ORGANIZATION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "OrganizationUnitTranslationPEOSourceLang",
+      "table": "HR_ORGANIZATION_UNITS_F_TL",
+      "column": "SOURCE_LANG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "OrganizationUnitTranslationPEOTitle",
+      "table": "HR_ORGANIZATION_UNITS_F_TL",
+      "column": "TITLE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SetIdSetPEODescription",
+      "table": "FND_SETID_SETS_VL",
+      "column": "DESCRIPTION",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SetIdSetPEOLastUpdateDate",
+      "table": "FND_SETID_SETS_VL",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SetIdSetPEOSetCode",
+      "table": "FND_SETID_SETS_VL",
+      "column": "SET_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SetIdSetPEOSetId",
+      "table": "FND_SETID_SETS_VL",
+      "column": "SET_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SetIdSetPEOSetName",
+      "table": "FND_SETID_SETS_VL",
+      "column": "SET_NAME",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    }
+  ],
+  "by_table": {
+    "PER_ACTION_OCCURRENCES": [
+      {
+        "attribute": "ActionOccurrencesPEOActionOccurrenceId",
+        "column": "ACTION_OCCURRENCE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ActionOccurrencesPEOActionReasonId",
+        "column": "ACTION_REASON_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ActionOccurrencesPEOLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "PER_ACTION_REASONS_B": [
+      {
+        "attribute": "ActionReasonsPEOActionReasonId",
+        "column": "ACTION_REASON_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ActionReasonsPEOLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "PER_ACTION_REASONS_TL": [
+      {
+        "attribute": "ActionReasonsTranslationPEOActionReason",
+        "column": "ACTION_REASON",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ActionReasonsTranslationPEOActionReasonId",
+        "column": "ACTION_REASON_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ActionReasonsTranslationPEOLanguage",
+        "column": "LANGUAGE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ActionReasonsTranslationPEOLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "HR_ORG_UNIT_CLASSIFICATIONS_F": [
+      {
+        "attribute": "EffectiveEndDate",
+        "column": "EFFECTIVE_END_DATE",
+        "bicc": true,
+        "pk": true
+      },
+      {
+        "attribute": "EffectiveStartDate",
+        "column": "EFFECTIVE_START_DATE",
+        "bicc": true,
+        "pk": true
+      },
+      {
+        "attribute": "OrgUnitClassificationId",
+        "column": "ORG_UNIT_CLASSIFICATION_ID",
+        "bicc": true,
+        "pk": true
+      },
+      {
+        "attribute": "OrgUnitClassificationPEOActionOccurrenceId",
+        "column": "ACTION_OCCURRENCE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "OrgUnitClassificationPEOBusinessGroupId",
+        "column": "BUSINESS_GROUP_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "OrgUnitClassificationPEOClassificationCode",
+        "column": "CLASSIFICATION_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "OrgUnitClassificationPEOCreatedBy",
+        "column": "CREATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "OrgUnitClassificationPEOCreationDate",
+        "column": "CREATION_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "OrgUnitClassificationPEOLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "OrgUnitClassificationPEOLastUpdateLogin",
+        "column": "LAST_UPDATE_LOGIN",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "OrgUnitClassificationPEOLastUpdatedBy",
+        "column": "LAST_UPDATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "OrgUnitClassificationPEOLegislationCode",
+        "column": "LEGISLATION_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "OrgUnitClassificationPEOObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "OrgUnitClassificationPEOOrganizationId",
+        "column": "ORGANIZATION_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "OrgUnitClassificationPEOSetId",
+        "column": "SET_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "OrgUnitClassificationPEOStatus",
+        "column": "STATUS",
+        "bicc": true,
+        "pk": false
+      }
+    ],
+    "HR_ALL_ORGANIZATION_UNITS_F": [
+      {
+        "attribute": "OrganizationUnitPEOActionOccurrenceId",
+        "column": "ACTION_OCCURRENCE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "OrganizationUnitPEOBusinessGroupId",
+        "column": "BUSINESS_GROUP_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "OrganizationUnitPEOCostAllocationKeyflexId",
+        "column": "COST_ALLOCATION_KEYFLEX_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "OrganizationUnitPEOCreatedBy",
+        "column": "CREATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "OrganizationUnitPEOCreationDate",
+        "column": "CREATION_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "OrganizationUnitPEOEffectiveEndDate",
+        "column": "EFFECTIVE_END_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "OrganizationUnitPEOEffectiveStartDate",
+        "column": "EFFECTIVE_START_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "OrganizationUnitPEOEstablishmentId",
+        "column": "ESTABLISHMENT_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "OrganizationUnitPEOInternalAddressLine",
+        "column": "INTERNAL_ADDRESS_LINE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "OrganizationUnitPEOInternalExternalFlag",
+        "column": "INTERNAL_EXTERNAL_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "OrganizationUnitPEOLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "OrganizationUnitPEOLastUpdateLogin",
+        "column": "LAST_UPDATE_LOGIN",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "OrganizationUnitPEOLastUpdatedBy",
+        "column": "LAST_UPDATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "OrganizationUnitPEOLegalEntityId",
+        "column": "LEGAL_ENTITY_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "OrganizationUnitPEOLocationId",
+        "column": "LOCATION_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "OrganizationUnitPEOObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "OrganizationUnitPEOOrganizationId",
+        "column": "ORGANIZATION_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "OrganizationUnitPEOOrganizationUnitPEOType",
+        "column": "TYPE",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "HR_ORGANIZATION_UNITS_F_TL": [
+      {
+        "attribute": "OrganizationUnitTranslationPEOCreatedBy",
+        "column": "CREATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "OrganizationUnitTranslationPEOCreationDate",
+        "column": "CREATION_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "OrganizationUnitTranslationPEOEffectiveEndDate",
+        "column": "EFFECTIVE_END_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "OrganizationUnitTranslationPEOEffectiveStartDate",
+        "column": "EFFECTIVE_START_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "OrganizationUnitTranslationPEOLanguage",
+        "column": "LANGUAGE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "OrganizationUnitTranslationPEOLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "OrganizationUnitTranslationPEOLastUpdateLogin",
+        "column": "LAST_UPDATE_LOGIN",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "OrganizationUnitTranslationPEOLastUpdatedBy",
+        "column": "LAST_UPDATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "OrganizationUnitTranslationPEOName",
+        "column": "NAME",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "OrganizationUnitTranslationPEOObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "OrganizationUnitTranslationPEOOrganizationId",
+        "column": "ORGANIZATION_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "OrganizationUnitTranslationPEOSourceLang",
+        "column": "SOURCE_LANG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "OrganizationUnitTranslationPEOTitle",
+        "column": "TITLE",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "FND_SETID_SETS_VL": [
+      {
+        "attribute": "SetIdSetPEODescription",
+        "column": "DESCRIPTION",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "SetIdSetPEOLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "SetIdSetPEOSetCode",
+        "column": "SET_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "SetIdSetPEOSetId",
+        "column": "SET_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "SetIdSetPEOSetName",
+        "column": "SET_NAME",
+        "bicc": false,
+        "pk": false
+      }
+    ]
+  }
+}

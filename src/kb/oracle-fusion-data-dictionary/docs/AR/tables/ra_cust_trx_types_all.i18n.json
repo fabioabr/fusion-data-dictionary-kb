@@ -1,0 +1,643 @@
+{
+  "source": "ra_cust_trx_types_all.md",
+  "source_hash": "b8093b72cfaee46b548e7deef1b017a3",
+  "translated_at": "2026-03-25",
+  "items": [
+    {
+      "id": 1,
+      "br": "Visão Geral",
+      "en": "Overview",
+      "es": "Visión general"
+    },
+    {
+      "id": 2,
+      "br": "Define os tipos de transação utilizados para faturas, notas de débito, notas de crédito, depósitos, garantias e duplicatas a receber (bills receivable) no módulo Accounts Receivable. Cada registro inclui configurações de AutoAccounting (contas contábeis padrão), comportamento de impressão, sinais contábeis e valores padrão para criação de transações.",
+      "en": "Defines the types of transactions used for invoices, debit memos, credit memos, deposits, guarantees, and accounts receivable (AR) in the Accounts Receivable module. Each record includes AutoAccounting settings (standard chart of accounts), printing behavior, chart of accounts, and default values for transaction creation.",
+      "es": "Define los tipos de transacción utilizados para facturas, notas de débito, notas de crédito, depósitos, garantías y cuentas por cobrar (accounts receivable) en el módulo de Cuentas por Cobrar. Cada registro incluye configuraciones de AutoAccounting (cuentas contables estándar), comportamiento de impresión, señales contables y valores predeterminados para la creación de transacciones."
+    },
+    {
+      "id": 3,
+      "br": "É a tabela de configuração central do AR — determina como cada transação se comporta contabilmente e operacionalmente.",
+      "en": "This is the central configuration table for AR – it determines how each transaction behaves financially and operationally.",
+      "es": "Es la tabla de configuración central de AR – determina cómo se comporta cada transacción contablemente y operacionalmente."
+    },
+    {
+      "id": 4,
+      "br": "Sufixo _ALL",
+      "en": "_ALL suffix",
+      "es": "Sufijo _ALL"
+    },
+    {
+      "id": 5,
+      "br": "O sufixo _ALL indica que a tabela armazena dados de todas as business units (multi-org). O filtro por ORG_ID é necessário para consultas por organização específica.",
+      "en": "The _ALL suffix indicates that the table stores data for all business units (multi-org). Filtering by ORG_ID is required for queries by specific organization.",
+      "es": "El sufijo _ALL indica que la tabla almacena datos de todas las unidades de negocio (multi-org). Se requiere el filtro por ORG_ID para consultas específicas de organización."
+    },
+    {
+      "id": 6,
+      "br": "Propósito de Negócio",
+      "en": "Business Purpose",
+      "es": "Propósito de negocio"
+    },
+    {
+      "id": 7,
+      "br": "Esta tabela é utilizada nos seguintes processos:",
+      "en": "This table is used in the following processes:",
+      "es": "Esta tabla se utiliza en los siguientes procesos:"
+    },
+    {
+      "id": 8,
+      "br": "Cada transação AR é associada a um tipo que define seu comportamento (fatura, credit memo, debit memo, etc.).",
+      "en": "Each AR transaction is associated with a type that defines its behavior (invoice, credit memo, debit memo, etc.).",
+      "es": "Cada transacción de AR se asocia a un tipo que define su comportamiento (factura, nota de crédito, nota de débito, etc.)."
+    },
+    {
+      "id": 9,
+      "br": "Contas contábeis padrão (receita, recebível, frete, imposto, unbilled, unearned) são definidas por tipo de transação.",
+      "en": "Standard chart of accounts (revenue, receivable, freight, tax, unbilled, unearned) are defined by transaction type.",
+      "es": "Las cuentas contables estándar (ingresos, cuentas por cobrar, flete, impuestos, sin facturar, no ganado) se definen por tipo de transacción."
+    },
+    {
+      "id": 10,
+      "br": "Controla se a transação será postada no GL (`POST_TO_GL`), se afeta saldo contábil, e qual o sinal de criação (positivo/negativo).",
+      "en": "Controls whether the transaction will be posted to the GL (`POST_TO_GL`), whether it affects the accounting balance, and the creation sign (positive/negative).",
+      "es": "Controla si la transacción se registrará en el GL (`POST_TO_GL`), si afecta al saldo contable y cuál es el signo de creación (positivo/negativo)."
+    },
+    {
+      "id": 11,
+      "br": "Define opções padrão de impressão para faturas.",
+      "en": "Defines default printing options for invoices.",
+      "es": "Define opciones de impresión predeterminadas para facturas."
+    },
+    {
+      "id": 12,
+      "br": "Permite segmentar relatórios por tipo de transação (e.g., apenas credit memos).",
+      "en": "Allows reports to be segmented by transaction type (e.g., only credit memos).",
+      "es": "Permite segmentar informes por tipo de transacción (p. ej., solo notas de crédito)."
+    },
+    {
+      "id": 13,
+      "br": "Flags como `ALLOW_FREIGHT_FLAG`, `NATURAL_APPLICATION_ONLY_FLAG` controlam comportamentos específicos por tipo.",
+      "en": "Flags such as `ALLOW_FREIGHT_FLAG`, `NATURAL_APPLICATION_ONLY_FLAG` control specific behaviors by type.",
+      "es": "Las banderas como `ALLOW_FREIGHT_FLAG`, `NATURAL_APPLICATION_ONLY_FLAG` controlan comportamientos específicos por tipo."
+    },
+    {
+      "id": 14,
+      "br": "Colunas Principais",
+      "en": "Key Columns",
+      "es": "Columnas principales"
+    },
+    {
+      "id": 15,
+      "br": "Confiança",
+      "en": "Confidence",
+      "es": "Confianza"
+    },
+    {
+      "id": 16,
+      "br": "Escala de 0% a 100% — grau de certeza da descrição gerada por IA com base na documentação oficial Oracle (OEDMF/BICC Release 13/25A).",
+      "en": "Scale of 0% to 100% – degree of certainty of the description generated by AI based on Oracle official documentation (OEDMF/BICC Release 13/25A).",
+      "es": "Escala del 0% al 100% – grado de certeza de la descripción generada por IA, basado en la documentación oficial de Oracle (OEDMF/BICC Release 13/25A)."
+    },
+    {
+      "id": 17,
+      "br": "- 🟢 81–100% — Coluna presente na documentação oficial Oracle; nome, tipo e descrição confirmados.",
+      "en": "- 🟢 81–100% – Column present in Oracle official documentation; name, type, and description confirmed.",
+      "es": "- 🟢 81–100% – Columna presente en la documentación oficial de Oracle; nombre, tipo y descripción confirmados."
+    },
+    {
+      "id": 18,
+      "br": "- 🟡 51–80% — Coluna inferida por naming convention ou padrão Oracle; tipo exato pode variar.",
+      "en": "- 🟡 51–80% – Column inferred by naming convention or Oracle standard; exact type may vary.",
+      "es": "- 🟡 51–80% – Columna inferida por convención de nomenclatura o estándar de Oracle; el tipo exacto puede variar."
+    },
+    {
+      "id": 19,
+      "br": "- 🔴 0–50% — Existência ou tipo incertos; pode não existir no release atual; validar no ambiente.",
+      "en": "- 🔴 0–50% – Existence or type uncertain; may not exist in the current release; validate in the environment.",
+      "es": "- 🔴 0–50% – Existencia o tipo inciertos; puede no existir en la versión actual; validar en el entorno."
+    },
+    {
+      "id": 20,
+      "br": "Coluna",
+      "en": "Column",
+      "es": "Columna"
+    },
+    {
+      "id": 21,
+      "br": "Tipo",
+      "en": "Type",
+      "es": "Tipo"
+    },
+    {
+      "id": 22,
+      "br": "Nulo?",
+      "en": "Null?",
+      "es": "Nulo?"
+    },
+    {
+      "id": 23,
+      "br": "Categoria",
+      "en": "Category",
+      "es": "Categoría"
+    },
+    {
+      "id": 24,
+      "br": "Descrição",
+      "en": "Description",
+      "es": "Descripción"
+    },
+    {
+      "id": 25,
+      "br": "Identificador único do tipo de transação",
+      "en": "Unique identifier for the transaction type",
+      "es": "Identificador único del tipo de transacción"
+    },
+    {
+      "id": 26,
+      "br": "Identificação",
+      "en": "Identification",
+      "es": "Identificación"
+    },
+    {
+      "id": 27,
+      "br": "Nome do tipo de transação (visível ao usuário)",
+      "en": "Transaction type name (visible to the user)",
+      "es": "Nombre del tipo de transacción (visible para el usuario)"
+    },
+    {
+      "id": 28,
+      "br": "Descrição detalhada do tipo de transação",
+      "en": "Detailed description of the transaction type",
+      "es": "Descripción detallada del tipo de transacción"
+    },
+    {
+      "id": 29,
+      "br": "Classificação",
+      "en": "Classification",
+      "es": "Clasificación"
+    },
+    {
+      "id": 30,
+      "br": "Categoria principal: INV, CM, DM, DEP, GUAR, BR",
+      "en": "Main category: INV, CM, DM, DEP, GUAR, BR",
+      "es": "Categoría principal: INV, CM, DM, DEP, GUAR, BR"
+    },
+    {
+      "id": 31,
+      "br": "Classe da transação (INV, CM, DM, DEP, GUAR, BR)",
+      "en": "Transaction class (INV, CM, DM, DEP, GUAR, BR)",
+      "es": "Clase de la transacción (INV, CM, DM, DEP, GUAR, BR)"
+    },
+    {
+      "id": 32,
+      "br": "Status do tipo (ativo/inativo)",
+      "en": "Status of the type (active/inactive)",
+      "es": "Estado del tipo (activo/inactivo)"
+    },
+    {
+      "id": 33,
+      "br": "Contabilidade",
+      "en": "Accounting",
+      "es": "Contabilidad"
+    },
+    {
+      "id": 34,
+      "br": "Indica se transações deste tipo são postadas no GL (Y/N)",
+      "en": "Indicates whether transactions of this type are posted to the GL (Y/N)",
+      "es": "Indica si las transacciones de este tipo se registran en el GL (Sí/No)"
+    },
+    {
+      "id": 35,
+      "br": "Indica se afeta saldos contábeis (Y/N)",
+      "en": "Indicates whether it affects accounting balances (Y/N)",
+      "es": "Indica si afectan los saldos contables (Sí/No)"
+    },
+    {
+      "id": 36,
+      "br": "Sinal de criação: P (positivo), N (negativo), A (ambos)",
+      "en": "Creation sign: P (positive), N (negative), A (both)",
+      "es": "Signo de creación: P (positivo), N (negativo), A (ambos)"
+    },
+    {
+      "id": 37,
+      "br": "Configuração",
+      "en": "Configuration",
+      "es": "Configuración"
+    },
+    {
+      "id": 38,
+      "br": "Permite linhas de frete (Y/N)",
+      "en": "Allows freight lines (Y/N)",
+      "es": "Permite líneas de transporte (Sí/No)"
+    },
+    {
+      "id": 39,
+      "br": "Permite aplicação acima do saldo (Y/N)",
+      "en": "Allows application above the balance (Y/N)",
+      "es": "Permite aplicar por encima del saldo (Sí/No)"
+    },
+    {
+      "id": 40,
+      "br": "Restringe a aplicações naturais — invoice:receipt, CM:invoice (Y/N)",
+      "en": "Restricts natural applications - invoice:receipt, CM:invoice (Y/N)",
+      "es": "Restringe las aplicaciones naturales — factura:recibo, CM:factura (Sí/No)"
+    },
+    {
+      "id": 41,
+      "br": "Tributação",
+      "en": "Taxation",
+      "es": "Tributación"
+    },
+    {
+      "id": 42,
+      "br": "Indica se calcula imposto automaticamente (Y/N)",
+      "en": "Indicates whether it automatically calculates tax (Y/N)",
+      "es": "Indica si calcula el impuesto automáticamente (Sí/No)"
+    },
+    {
+      "id": 43,
+      "br": "Financeiro",
+      "en": "Finance",
+      "es": "Financiero"
+    },
+    {
+      "id": 44,
+      "br": "Condição de pagamento padrão",
+      "en": "Standard payment condition",
+      "es": "Condición de pago estándar"
+    },
+    {
+      "id": 45,
+      "br": "Impressão",
+      "en": "Printing",
+      "es": "Impresión"
+    },
+    {
+      "id": 46,
+      "br": "Opção de impressão padrão (PRI/NOT)",
+      "en": "Standard printing option (PRI/NOT)",
+      "es": "Opción de impresión estándar (PRI/NO)"
+    },
+    {
+      "id": 47,
+      "br": "Status padrão para novas transações (OP=Open)",
+      "en": "Standard status for new transactions (OP=Open)",
+      "es": "Estado estándar para nuevas transacciones (OP=Abierto)"
+    },
+    {
+      "id": 48,
+      "br": "AutoAccounting",
+      "en": "AutoAccounting",
+      "es": "AutoAccounting"
+    },
+    {
+      "id": 49,
+      "br": "Combinação de contas padrão para Receita",
+      "en": "Standard account combination for Revenue",
+      "es": "Combinación de cuentas estándar para Ingresos"
+    },
+    {
+      "id": 50,
+      "br": "Combinação de contas padrão para Recebível",
+      "en": "Standard account combination for Accounts Receivable",
+      "es": "Combinación de cuentas estándar para Recibos"
+    },
+    {
+      "id": 51,
+      "br": "Combinação de contas padrão para Frete",
+      "en": "Standard account combination for Freight",
+      "es": "Combinación de cuentas estándar para gastos de envío"
+    },
+    {
+      "id": 52,
+      "br": "Combinação de contas padrão para Imposto",
+      "en": "Standard account combination for Tax",
+      "es": "Combinación de cuentas estándar para impuestos"
+    },
+    {
+      "id": 53,
+      "br": "Combinação de contas padrão para Unbilled Receivable",
+      "en": "Standard account combination for Unbilled Receivable",
+      "es": "Combinación de cuentas estándar para cuentas pendientes sin facturar"
+    },
+    {
+      "id": 54,
+      "br": "Combinação de contas padrão para Unearned Revenue",
+      "en": "Standard account combination for Unearned Revenue",
+      "es": "Combinación de cuentas estándar para ingresos no percibidos"
+    },
+    {
+      "id": 55,
+      "br": "Data de inativação do tipo de transação",
+      "en": "Transaction type deactivation date",
+      "es": "Fecha de inactividad del tipo de transacción"
+    },
+    {
+      "id": 56,
+      "br": "Data de ativação do tipo de transação",
+      "en": "Transaction type activation date",
+      "es": "Fecha de activación del tipo de transacción"
+    },
+    {
+      "id": 57,
+      "br": "Referência cruzada",
+      "en": "Cross-reference",
+      "es": "Referencia cruzada"
+    },
+    {
+      "id": 58,
+      "br": "Tipo de credit memo padrão associado",
+      "en": "Standard credit memo type associated",
+      "es": "Tipo de nota de crédito estándar asociado"
+    },
+    {
+      "id": 59,
+      "br": "self",
+      "en": "self",
+      "es": "self"
+    },
+    {
+      "id": 60,
+      "br": "Tipo de transação subsequente (bills receivable)",
+      "en": "Subsequent transaction type (bills receivable)",
+      "es": "Tipo de transacción posterior (facturas pendientes)"
+    },
+    {
+      "id": 61,
+      "br": "Conjunto de regras de aplicação (matching rules)",
+      "en": "Matching rules set",
+      "es": "Conjunto de reglas de correspondencia"
+    },
+    {
+      "id": 62,
+      "br": "Indica se requer assinatura (bills receivable)",
+      "en": "Indicates if signature is required (bills receivable)",
+      "es": "Indica si requiere firma (facturas pendientes)"
+    },
+    {
+      "id": 63,
+      "br": "Indica se emitido pelo sacado (bills receivable)",
+      "en": "Indicates if issued by the payee (bills receivable)",
+      "es": "Indica si fue emitido por el beneficiario (facturas pendientes)"
+    },
+    {
+      "id": 64,
+      "br": "Formato magnético para remessas bancárias",
+      "en": "Magnetic format for bank transfers",
+      "es": "Formato magnético para transferencias bancarias"
+    },
+    {
+      "id": 65,
+      "br": "Ledger contábil (legado)",
+      "en": "Legacy accounting ledger",
+      "es": "Libro mayor (legado)"
+    },
+    {
+      "id": 66,
+      "br": "Business unit (multi-org)",
+      "en": "Business unit (multi-org)",
+      "es": "Unidad de negocio (multi-org)"
+    },
+    {
+      "id": 67,
+      "br": "Auditoria",
+      "en": "Audit",
+      "es": "Auditoría"
+    },
+    {
+      "id": 68,
+      "br": "Usuário que criou o registro",
+      "en": "User who created the record",
+      "es": "Usuario que creó el registro"
+    },
+    {
+      "id": 69,
+      "br": "Data/hora de criação",
+      "en": "Creation date/time",
+      "es": "Fecha/hora de creación"
+    },
+    {
+      "id": 70,
+      "br": "Último usuário que alterou",
+      "en": "Last user who modified",
+      "es": "Último usuario que lo modificó"
+    },
+    {
+      "id": 71,
+      "br": "Data/hora da última alteração",
+      "en": "Last modification date/time",
+      "es": "Fecha/hora de la última modificación"
+    },
+    {
+      "id": 72,
+      "br": "Login da última sessão",
+      "en": "Last session login",
+      "es": "Inicio de sesión de la última sesión"
+    },
+    {
+      "id": 73,
+      "br": "ATTRIBUTE1–15",
+      "en": "ATTRIBUTE1–15",
+      "es": "ATTRIBUTE1–15"
+    },
+    {
+      "id": 74,
+      "br": "Atributos descritivos customizáveis por implementação",
+      "en": "Descriptive Flexfield attributes customizable by implementation",
+      "es": "Atributos descriptivos personalizables por implementación"
+    },
+    {
+      "id": 75,
+      "br": "Contexto do Descriptive Flexfield",
+      "en": "Context of Descriptive Flexfield",
+      "es": "Contexto del Descriptive Flexfield"
+    },
+    {
+      "id": 76,
+      "br": "Relacionamentos",
+      "en": "Relationships",
+      "es": "Relaciones"
+    },
+    {
+      "id": 77,
+      "br": "Tabelas-pai (FK de entrada)",
+      "en": "Parent tables (incoming FK)",
+      "es": "Tablas padre (clave foránea de entrada)"
+    },
+    {
+      "id": 78,
+      "br": "gl_code_combinations — via GL_ID_REV, GL_ID_REC, GL_ID_FREIGHT, GL_ID_TAX, GL_ID_UNBILLED, GL_ID_UNEARNED (contas padrão de AutoAccounting)",
+      "en": "gl_code_combinations — via GL_ID_REV, GL_ID_REC, GL_ID_FREIGHT, GL_ID_TAX, GL_ID_UNBILLED, GL_ID_UNEARNED (standard AutoAccounting accounts)",
+      "es": "gl_code_combinations — a través de GL_ID_REV, GL_ID_REC, GL_ID_FREIGHT, GL_ID_TAX, GL_ID_UNBILLED, GL_ID_UNEARNED (cuentas estándar de AutoAccounting)"
+    },
+    {
+      "id": 79,
+      "br": "condição de pagamento padrão",
+      "en": "Standard payment condition",
+      "es": "Condición de pago estándar"
+    },
+    {
+      "id": 80,
+      "br": "ledger contábil",
+      "en": "General ledger",
+      "es": "Libro mayor"
+    },
+    {
+      "id": 81,
+      "br": "business unit",
+      "en": "business unit",
+      "es": "Unidad de negocio"
+    },
+    {
+      "id": 82,
+      "br": "Tabelas-filha (FK de saída)",
+      "en": "Child tables (outgoing FK)",
+      "es": "Tablas hijas (clave foránea de salida)"
+    },
+    {
+      "id": 83,
+      "br": "transações que utilizam este tipo",
+      "en": "Transactions that use this type",
+      "es": "Transacciones que utilizan este tipo"
+    },
+    {
+      "id": 84,
+      "br": "distribuições contábeis, desnormalizado",
+      "en": "Accounting distributions, unnormalized",
+      "es": "Distribuciones contables, desnormalizadas"
+    },
+    {
+      "id": 85,
+      "br": "Self-references",
+      "en": "Self-references",
+      "es": "Referencias propias"
+    },
+    {
+      "id": 86,
+      "br": "Tipo de credit memo padrão associado a este tipo de fatura",
+      "en": "Standard credit memo type associated with this invoice type",
+      "es": "Tipo de nota de crédito estándar asociado a este tipo de factura"
+    },
+    {
+      "id": 87,
+      "br": "Tipo de transação subsequente (usado em fluxos de bills receivable)",
+      "en": "Subsequent transaction type (used in bills receivable workflows)",
+      "es": "Tipo de transacción posterior (utilizado en flujos de facturas)"
+    },
+    {
+      "id": 88,
+      "br": "Uso Típico",
+      "en": "Typical Usage",
+      "es": "Uso típico"
+    },
+    {
+      "id": 89,
+      "br": "Listar todos os tipos de transação ativos",
+      "en": "List all active transaction types",
+      "es": "Listar todos los tipos de transacción activos"
+    },
+    {
+      "id": 90,
+      "br": "Transações por tipo (volume e valor)",
+      "en": "Transactions by type (volume and value)",
+      "es": "Transacciones por tipo (volumen y valor)"
+    },
+    {
+      "id": 91,
+      "br": "Filtros comuns",
+      "en": "Common filters",
+      "es": "Filtros comunes"
+    },
+    {
+      "id": 92,
+      "br": "Apenas tipos de fatura",
+      "en": "Only invoice types",
+      "es": "Solo tipos de factura"
+    },
+    {
+      "id": 93,
+      "br": "Apenas tipos de credit memo",
+      "en": "Only credit memo types",
+      "es": "Solo tipos de nota de crédito"
+    },
+    {
+      "id": 94,
+      "br": "Apenas tipos de debit memo",
+      "en": "Only debit memo types",
+      "es": "Solo tipos de nota de débito"
+    },
+    {
+      "id": 95,
+      "br": "Apenas tipos de bills receivable",
+      "en": "Only bills receivable types",
+      "es": "Solo tipos de facturas"
+    },
+    {
+      "id": 96,
+      "br": "Tipos que geram lançamento contábil",
+      "en": "Types that generate accounting posting",
+      "es": "Tipos que generan un asiento contable"
+    },
+    {
+      "id": 97,
+      "br": "Observações",
+      "en": "Notes",
+      "es": "Observaciones"
+    },
+    {
+      "id": 98,
+      "br": "A coluna TYPE define a categoria funcional: INV (Invoice), CM (Credit Memo), DM (Debit Memo), DEP (Deposit), GUAR (Guarantee), BR (Bills Receivable).",
+      "en": "The TYPE column defines the functional category: INV (Invoice), CM (Credit Memo), DM (Debit Memo), DEP (Deposit), GUAR (Guarantee), BR (Bills Receivable).",
+      "es": "La columna TYPE define la categoría funcional: INV (Factura), CM (Nota de crédito), DM (Nota de débito), DEP (Depósito), GUAR (Garantía), BR (Facturas)"
+    },
+    {
+      "id": 99,
+      "br": "CREATION_SIGN controla o sinal do valor: P = apenas positivos, N = apenas negativos, A = ambos. Credit memos tipicamente têm CREATION_SIGN = 'A' ou 'N'.",
+      "en": "CREATION_SIGN controls the value sign: P = only positive, N = only negative, A = both. Credit memos typically have CREATION_SIGN = 'A' or 'N'.",
+      "es": "CREATION_SIGN controla el signo del valor: P = solo positivos, N = solo negativos, A = ambos. Las notas de crédito típicamente tienen CREATION_SIGN = 'A' o 'N'."
+    },
+    {
+      "id": 100,
+      "br": "Os campos GL_ID_* definem as contas de AutoAccounting por tipo de transação. Essas contas servem como template para as distribuições contábeis em ra_cust_trx_line_gl_dist_all.",
+      "en": "The GL_ID_* fields define the AutoAccounting accounts by transaction type. These accounts serve as templates for accounting distributions in ra_cust_trx_line_gl_dist_all.",
+      "es": "Los campos GL_ID_* definen las cuentas de AutoAccounting por tipo de transacción. Estas cuentas sirven como plantilla para las distribuciones contables en ra_cust_trx_line_gl_dist_all."
+    },
+    {
+      "id": 101,
+      "br": "O campo CREDIT_MEMO_TYPE_ID permite que um tipo de fatura tenha um tipo de credit memo padrão associado, facilitando a criação de notas de crédito.",
+      "en": "The CREDIT_MEMO_TYPE_ID field allows a bill type to have a default credit memo type associated, making it easier to create credit notes.",
+      "es": "El campo CREDIT_MEMO_TYPE_ID permite que un tipo de factura tenga asociado un tipo de nota de crédito predeterminado, facilitando la creación de notas de crédito."
+    },
+    {
+      "id": 102,
+      "br": "Tipos de Bills Receivable utilizam campos específicos como SIGNED_FLAG, DRAWEE_ISSUED_FLAG e MAGNETIC_FORMAT_CODE para controle de duplicatas bancárias.",
+      "en": "Bill Receivable types use specific fields such as SIGNED_FLAG, DRAWEE_ISSUED_FLAG, and MAGNETIC_FORMAT_CODE for managing bounced checks.",
+      "es": "Los tipos de Facturas Utilizan campos específicos como SIGNED_FLAG, DRAWEE_ISSUED_FLAG y MAGNETIC_FORMAT_CODE para el control de duplicados bancarios."
+    },
+    {
+      "id": 103,
+      "br": "A tabela possui Descriptive Flexfields (DFF) via ATTRIBUTE1–15 para customizações por implementação.",
+      "en": "The table has Descriptive Flexfields (DFFs) via ATTRIBUTE1–15 for customization by implementation.",
+      "es": "La tabla tiene Descriptive Flexfields (DFF) a través de ATTRIBUTE1–15 para personalizaciones por implementación."
+    },
+    {
+      "id": 104,
+      "br": "Referências",
+      "en": "References",
+      "es": "Referencias"
+    },
+    {
+      "id": 105,
+      "br": "[Oracle Docs — RA_CUST_TRX_TYPES_ALL](https://docs.oracle.com/en/cloud/saas/financials/25a/oedmf/racusttrxtypesall-25250.html)",
+      "en": "[Oracle Docs — RA_CUST_TRX_TYPES_ALL](https://docs.oracle.com/en/cloud/saas/financials/25a/oedmf/racusttrxtypesall-25250.html)",
+      "es": "[Oracle Docs — RA_CUST_TRX_TYPES_ALL](https://docs.oracle.com/en/cloud/saas/financials/25a/oedmf/racusttrxtypesall-25250.html)"
+    },
+    {
+      "id": 106,
+      "br": "ar-module-data-dictionary — Dossiê do módulo AR",
+      "en": "ar-module-data-dictionary — AR module data dictionary",
+      "es": "ar-module-data-dictionary — Documento del módulo AR"
+    }
+  ]
+}

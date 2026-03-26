@@ -1,0 +1,379 @@
+{
+  "meta": {
+    "pvo_name": "SupplierSpendAuthorizationRequestsPVO",
+    "full_path": "FscmTopModelAM.PrcPozPublicViewAM.SupplierSpendAuthorizationRequestsPVO",
+    "module_path": "FscmTopModelAM.PrcPozPublicViewAM",
+    "module_code": "PO",
+    "type": "pvo",
+    "description": "Extrai solicitações de autorização de gastos com fornecedores, incluindo valores, unidade de negócio e status. Permite controle de gastos emergenciais e compliance com políticas de procurement."
+  },
+  "stats": {
+    "total_attributes": 25,
+    "tables_count": 2,
+    "bicc_enabled": 10,
+    "bicc_pct": 40,
+    "pk_count": 1
+  },
+  "tables": [
+    "FUN_ALL_BUSINESS_UNITS_V",
+    "POZ_SPEND_AUTH_REQUESTS"
+  ],
+  "attributes": [
+    {
+      "name": "AuthorizationRequestId",
+      "table": "POZ_SPEND_AUTH_REQUESTS",
+      "column": "AUTHORIZATION_REQUEST_ID",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    },
+    {
+      "name": "BUBusinessUnitId",
+      "table": "FUN_ALL_BUSINESS_UNITS_V",
+      "column": "BU_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BUName",
+      "table": "FUN_ALL_BUSINESS_UNITS_V",
+      "column": "BU_NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SupplierSpendAuthRequestApprovalInstanceId",
+      "table": "POZ_SPEND_AUTH_REQUESTS",
+      "column": "APPROVAL_INSTANCE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SupplierSpendAuthRequestApprovedByPersonId",
+      "table": "POZ_SPEND_AUTH_REQUESTS",
+      "column": "APPROVED_BY_PERSON_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SupplierSpendAuthRequestApprovedDate",
+      "table": "POZ_SPEND_AUTH_REQUESTS",
+      "column": "APPROVED_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SupplierSpendAuthRequestAuctionHeaderId",
+      "table": "POZ_SPEND_AUTH_REQUESTS",
+      "column": "AUCTION_HEADER_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SupplierSpendAuthRequestCreationDate",
+      "table": "POZ_SPEND_AUTH_REQUESTS",
+      "column": "CREATION_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SupplierSpendAuthRequestCurrentFlag",
+      "table": "POZ_SPEND_AUTH_REQUESTS",
+      "column": "CURRENT_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SupplierSpendAuthRequestLastUpdateDate",
+      "table": "POZ_SPEND_AUTH_REQUESTS",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": true
+    },
+    {
+      "name": "SupplierSpendAuthRequestLastUpdateLogin",
+      "table": "POZ_SPEND_AUTH_REQUESTS",
+      "column": "LAST_UPDATE_LOGIN",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SupplierSpendAuthRequestLastUpdatedBy",
+      "table": "POZ_SPEND_AUTH_REQUESTS",
+      "column": "LAST_UPDATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SupplierSpendAuthRequestObjectVersionNumber",
+      "table": "POZ_SPEND_AUTH_REQUESTS",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SupplierSpendAuthRequestPrcBuId",
+      "table": "POZ_SPEND_AUTH_REQUESTS",
+      "column": "PRC_BU_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SupplierSpendAuthRequestRejectReason",
+      "table": "POZ_SPEND_AUTH_REQUESTS",
+      "column": "REJECT_REASON",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SupplierSpendAuthRequestRejectedByPersonId",
+      "table": "POZ_SPEND_AUTH_REQUESTS",
+      "column": "REJECTED_BY_PERSON_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SupplierSpendAuthRequestRejectedDate",
+      "table": "POZ_SPEND_AUTH_REQUESTS",
+      "column": "REJECTED_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SupplierSpendAuthRequestRequestNumber",
+      "table": "POZ_SPEND_AUTH_REQUESTS",
+      "column": "REQUEST_NUMBER",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SupplierSpendAuthRequestRequestSource",
+      "table": "POZ_SPEND_AUTH_REQUESTS",
+      "column": "REQUEST_SOURCE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SupplierSpendAuthRequestRequestStatus",
+      "table": "POZ_SPEND_AUTH_REQUESTS",
+      "column": "REQUEST_STATUS",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SupplierSpendAuthRequestRequestedDate",
+      "table": "POZ_SPEND_AUTH_REQUESTS",
+      "column": "REQUESTED_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SupplierSpendAuthRequestRequesterPersonId",
+      "table": "POZ_SPEND_AUTH_REQUESTS",
+      "column": "REQUESTER_PERSON_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SupplierSpendAuthRequestSpendAuthJustification",
+      "table": "POZ_SPEND_AUTH_REQUESTS",
+      "column": "SPEND_AUTH_JUSTIFICATION",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SupplierSpendAuthRequestSupplierSpendAuthRequestCreatedBy",
+      "table": "POZ_SPEND_AUTH_REQUESTS",
+      "column": "CREATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SupplierSpendAuthRequestVendorId",
+      "table": "POZ_SPEND_AUTH_REQUESTS",
+      "column": "VENDOR_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    }
+  ],
+  "by_table": {
+    "POZ_SPEND_AUTH_REQUESTS": [
+      {
+        "attribute": "AuthorizationRequestId",
+        "column": "AUTHORIZATION_REQUEST_ID",
+        "bicc": true,
+        "pk": true
+      },
+      {
+        "attribute": "SupplierSpendAuthRequestApprovalInstanceId",
+        "column": "APPROVAL_INSTANCE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "SupplierSpendAuthRequestApprovedByPersonId",
+        "column": "APPROVED_BY_PERSON_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "SupplierSpendAuthRequestApprovedDate",
+        "column": "APPROVED_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "SupplierSpendAuthRequestAuctionHeaderId",
+        "column": "AUCTION_HEADER_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "SupplierSpendAuthRequestCreationDate",
+        "column": "CREATION_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "SupplierSpendAuthRequestCurrentFlag",
+        "column": "CURRENT_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "SupplierSpendAuthRequestLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "SupplierSpendAuthRequestLastUpdateLogin",
+        "column": "LAST_UPDATE_LOGIN",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "SupplierSpendAuthRequestLastUpdatedBy",
+        "column": "LAST_UPDATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "SupplierSpendAuthRequestObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "SupplierSpendAuthRequestPrcBuId",
+        "column": "PRC_BU_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "SupplierSpendAuthRequestRejectReason",
+        "column": "REJECT_REASON",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "SupplierSpendAuthRequestRejectedByPersonId",
+        "column": "REJECTED_BY_PERSON_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "SupplierSpendAuthRequestRejectedDate",
+        "column": "REJECTED_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "SupplierSpendAuthRequestRequestNumber",
+        "column": "REQUEST_NUMBER",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "SupplierSpendAuthRequestRequestSource",
+        "column": "REQUEST_SOURCE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "SupplierSpendAuthRequestRequestStatus",
+        "column": "REQUEST_STATUS",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "SupplierSpendAuthRequestRequestedDate",
+        "column": "REQUESTED_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "SupplierSpendAuthRequestRequesterPersonId",
+        "column": "REQUESTER_PERSON_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "SupplierSpendAuthRequestSpendAuthJustification",
+        "column": "SPEND_AUTH_JUSTIFICATION",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "SupplierSpendAuthRequestSupplierSpendAuthRequestCreatedBy",
+        "column": "CREATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "SupplierSpendAuthRequestVendorId",
+        "column": "VENDOR_ID",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "FUN_ALL_BUSINESS_UNITS_V": [
+      {
+        "attribute": "BUBusinessUnitId",
+        "column": "BU_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BUName",
+        "column": "BU_NAME",
+        "bicc": true,
+        "pk": false
+      }
+    ]
+  }
+}

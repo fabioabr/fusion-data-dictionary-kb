@@ -1,0 +1,337 @@
+{
+  "source": "anc_accrual_bands_f.md",
+  "source_hash": "8f2491b9c3a41cce3a7711015eea8061",
+  "translated_at": "2026-03-26",
+  "items": [
+    {
+      "id": 1,
+      "br": "Visão Geral",
+      "en": "Overview",
+      "es": "Visión General"
+    },
+    {
+      "id": 2,
+      "br": "Armazena as faixas de acumulação (accrual bands) dos planos de ausência. Define as regras de acumulação progressiva baseadas em tempo de serviço, antiguidade ou outros critérios (ex.: colaboradores com 0-5 anos ganham 20 dias/ano; 5-10 anos ganham 25 dias/ano).",
+      "en": "Stores the accrual bands of absence plans. Defines progressive accrual rules based on length of service, seniority, or other criteria (e.g.: employees with 0-5 years earn 20 days/year; 5-10 years earn 25 days/year).",
+      "es": "Almacena las franjas de acumulación (accrual bands) de los planes de ausencia. Define las reglas de acumulación progresiva basadas en tiempo de servicio, antigüedad u otros criterios (ej.: colaboradores con 0-5 años ganan 20 días/año; 5-10 años ganan 25 días/año)."
+    },
+    {
+      "id": 3,
+      "br": "Sufixo _F",
+      "en": "Suffix _F",
+      "es": "Sufijo _F"
+    },
+    {
+      "id": 4,
+      "br": "O sufixo _F indica tabela date-effective — cada registro possui EFFECTIVE_START_DATE e EFFECTIVE_END_DATE controlando a vigência temporal.",
+      "en": "The _F suffix indicates a date-effective table — each record has EFFECTIVE_START_DATE and EFFECTIVE_END_DATE controlling temporal validity.",
+      "es": "El sufijo _F indica tabla date-effective — cada registro posee EFFECTIVE_START_DATE y EFFECTIVE_END_DATE controlando la vigencia temporal."
+    },
+    {
+      "id": 5,
+      "br": "Propósito de Negócio",
+      "en": "Business Purpose",
+      "es": "Propósito de Negocio"
+    },
+    {
+      "id": 6,
+      "br": "Esta tabela é utilizada nos seguintes processos:",
+      "en": "This table is used in the following processes:",
+      "es": "Esta tabla se utiliza en los siguientes procesos:"
+    },
+    {
+      "id": 7,
+      "br": "Permite configurar taxas de acumulação que aumentam com o tempo de serviço.",
+      "en": "Allows configuring accrual rates that increase with length of service.",
+      "es": "Permite configurar tasas de acumulación que aumentan con el tiempo de servicio."
+    },
+    {
+      "id": 8,
+      "br": "Diferentes faixas para diferentes níveis de antiguidade.",
+      "en": "Different bands for different seniority levels.",
+      "es": "Diferentes franjas para diferentes niveles de antigüedad."
+    },
+    {
+      "id": 9,
+      "br": "Atende legislações que exigem ausências proporcionais ao tempo de empresa.",
+      "en": "Meets legislation requirements for absences proportional to company tenure.",
+      "es": "Atiende legislaciones que exigen ausencias proporcionales al tiempo de empresa."
+    },
+    {
+      "id": 10,
+      "br": "Base para o engine de cálculo de saldos de ausência.",
+      "en": "Basis for the absence balance calculation engine.",
+      "es": "Base para el motor de cálculo de saldos de ausencia."
+    },
+    {
+      "id": 11,
+      "br": "Colunas Principais",
+      "en": "Key Columns",
+      "es": "Columnas Principales"
+    },
+    {
+      "id": 12,
+      "br": "Confiança",
+      "en": "Confidence",
+      "es": "Confianza"
+    },
+    {
+      "id": 13,
+      "br": "Escala de 0% a 100% — grau de certeza da descrição gerada por IA com base na documentação oficial Oracle (OEDMF/BICC Release 13/25A).",
+      "en": "Scale from 0% to 100% — degree of certainty of the AI-generated description based on official Oracle documentation (OEDMF/BICC Release 13/25A).",
+      "es": "Escala de 0% a 100% — grado de certeza de la descripción generada por IA con base en la documentación oficial Oracle (OEDMF/BICC Release 13/25A)."
+    },
+    {
+      "id": 14,
+      "br": "- 🟢 81–100% — Coluna presente na documentação oficial Oracle; nome, tipo e descrição confirmados.",
+      "en": "- 🟢 81–100% — Column present in official Oracle documentation; name, type, and description confirmed.",
+      "es": "- 🟢 81–100% — Columna presente en la documentación oficial Oracle; nombre, tipo y descripción confirmados."
+    },
+    {
+      "id": 15,
+      "br": "- 🟡 51–80% — Coluna inferida por naming convention ou padrão Oracle; tipo exato pode variar.",
+      "en": "- 🟡 51–80% — Column inferred by naming convention or Oracle standard; exact type may vary.",
+      "es": "- 🟡 51–80% — Columna inferida por naming convention o estándar Oracle; tipo exacto puede variar."
+    },
+    {
+      "id": 16,
+      "br": "- 🔴 0–50% — Existência ou tipo incertos; pode não existir no release atual; validar no ambiente.",
+      "en": "- 🔴 0–50% — Existence or type uncertain; may not exist in the current release; validate in your environment.",
+      "es": "- 🔴 0–50% — Existencia o tipo inciertos; puede no existir en el release actual; validar en el ambiente."
+    },
+    {
+      "id": 17,
+      "br": "Coluna",
+      "en": "Column",
+      "es": "Columna"
+    },
+    {
+      "id": 18,
+      "br": "Tipo",
+      "en": "Type",
+      "es": "Tipo"
+    },
+    {
+      "id": 19,
+      "br": "Nulo?",
+      "en": "Nullable?",
+      "es": "¿Nulo?"
+    },
+    {
+      "id": 20,
+      "br": "Categoria",
+      "en": "Category",
+      "es": "Categoría"
+    },
+    {
+      "id": 21,
+      "br": "Descrição",
+      "en": "Description",
+      "es": "Descripción"
+    },
+    {
+      "id": 22,
+      "br": "Identificador único da faixa",
+      "en": "Unique band identifier",
+      "es": "Identificador único de la franja"
+    },
+    {
+      "id": 23,
+      "br": "Plano de ausência associado",
+      "en": "Associated absence plan",
+      "es": "Plan de ausencia asociado"
+    },
+    {
+      "id": 24,
+      "br": "Configuração",
+      "en": "Configuration",
+      "es": "Configuración"
+    },
+    {
+      "id": 25,
+      "br": "Início da faixa (em meses ou anos de serviço)",
+      "en": "Band start (in months or years of service)",
+      "es": "Inicio de la franja (en meses o años de servicio)"
+    },
+    {
+      "id": 26,
+      "br": "Fim da faixa",
+      "en": "Band end",
+      "es": "Fin de la franja"
+    },
+    {
+      "id": 27,
+      "br": "Taxa de acumulação para esta faixa",
+      "en": "Accrual rate for this band",
+      "es": "Tasa de acumulación para esta franja"
+    },
+    {
+      "id": 28,
+      "br": "Teto máximo de acumulação para esta faixa",
+      "en": "Maximum accrual ceiling for this band",
+      "es": "Techo máximo de acumulación para esta franja"
+    },
+    {
+      "id": 29,
+      "br": "Vigência",
+      "en": "Validity Period",
+      "es": "Vigencia"
+    },
+    {
+      "id": 30,
+      "br": "Data de início da vigência",
+      "en": "Validity start date",
+      "es": "Fecha de inicio de la vigencia"
+    },
+    {
+      "id": 31,
+      "br": "Data de fim da vigência",
+      "en": "Validity end date",
+      "es": "Fecha de fin de la vigencia"
+    },
+    {
+      "id": 32,
+      "br": "Auditoria",
+      "en": "Audit",
+      "es": "Auditoría"
+    },
+    {
+      "id": 33,
+      "br": "Usuário que criou o registro",
+      "en": "User who created the record",
+      "es": "Usuario que creó el registro"
+    },
+    {
+      "id": 34,
+      "br": "Data/hora de criação",
+      "en": "Creation date/time",
+      "es": "Fecha/hora de creación"
+    },
+    {
+      "id": 35,
+      "br": "Último usuário que alterou",
+      "en": "Last user who modified",
+      "es": "Último usuario que modificó"
+    },
+    {
+      "id": 36,
+      "br": "Data/hora da última alteração",
+      "en": "Last modification date/time",
+      "es": "Fecha/hora de la última modificación"
+    },
+    {
+      "id": 37,
+      "br": "Controle",
+      "en": "Control",
+      "es": "Control"
+    },
+    {
+      "id": 38,
+      "br": "Controle de versão otimista",
+      "en": "Optimistic version control",
+      "es": "Control de versión optimista"
+    },
+    {
+      "id": 39,
+      "br": "Relacionamentos",
+      "en": "Relationships",
+      "es": "Relaciones"
+    },
+    {
+      "id": 40,
+      "br": "Tabelas-pai (FK de entrada)",
+      "en": "Parent Tables (Inbound FK)",
+      "es": "Tablas padre (FK de entrada)"
+    },
+    {
+      "id": 41,
+      "br": "plano de ausência",
+      "en": "absence plan",
+      "es": "plan de ausencia"
+    },
+    {
+      "id": 42,
+      "br": "Tabelas-filha (FK de saída)",
+      "en": "Child Tables (Outbound FK)",
+      "es": "Tablas hija (FK de salida)"
+    },
+    {
+      "id": 43,
+      "br": "Nenhuma tabela-filha conhecida.",
+      "en": "No known child tables.",
+      "es": "Ninguna tabla hija conocida."
+    },
+    {
+      "id": 44,
+      "br": "Uso Típico",
+      "en": "Typical Usage",
+      "es": "Uso Típico"
+    },
+    {
+      "id": 45,
+      "br": "Faixas de acumulação por plano",
+      "en": "Accrual bands by plan",
+      "es": "Franjas de acumulación por plan"
+    },
+    {
+      "id": 46,
+      "br": "Filtros comuns",
+      "en": "Common Filters",
+      "es": "Filtros comunes"
+    },
+    {
+      "id": 47,
+      "br": "Faixas de um plano específico",
+      "en": "Bands of a specific plan",
+      "es": "Franjas de un plan específico"
+    },
+    {
+      "id": 48,
+      "br": "Vigentes",
+      "en": "Current",
+      "es": "Vigentes"
+    },
+    {
+      "id": 49,
+      "br": "Observações",
+      "en": "Notes",
+      "es": "Observaciones"
+    },
+    {
+      "id": 50,
+      "br": "As faixas são ordenadas por BAND_START e não devem ter gaps ou sobreposições.",
+      "en": "Bands are ordered by BAND_START and must not have gaps or overlaps.",
+      "es": "Las franjas se ordenan por BAND_START y no deben tener gaps o solapamientos."
+    },
+    {
+      "id": 51,
+      "br": "BAND_END nulo na última faixa indica \"de X em diante\" (sem limite superior).",
+      "en": "Null BAND_END in the last band indicates \"from X onwards\" (no upper limit).",
+      "es": "BAND_END nulo en la última franja indica \"de X en adelante\" (sin límite superior)."
+    },
+    {
+      "id": 52,
+      "br": "A taxa de acumulação (ACCRUAL_RATE) é definida por período conforme o ACCRUAL_FREQUENCY do plano.",
+      "en": "The accrual rate (ACCRUAL_RATE) is defined per period according to the plan's ACCRUAL_FREQUENCY.",
+      "es": "La tasa de acumulación (ACCRUAL_RATE) se define por período según el ACCRUAL_FREQUENCY del plan."
+    },
+    {
+      "id": 53,
+      "br": "Referências",
+      "en": "References",
+      "es": "Referencias"
+    },
+    {
+      "id": 54,
+      "br": "[Oracle Docs — ANC_ACCRUAL_BANDS_F](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/ancaccruralbandsf.html)",
+      "en": "[Oracle Docs — ANC_ACCRUAL_BANDS_F](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/ancaccruralbandsf.html)",
+      "es": "[Oracle Docs — ANC_ACCRUAL_BANDS_F](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/ancaccruralbandsf.html)"
+    },
+    {
+      "id": 55,
+      "br": "Dossiê do módulo HCM",
+      "en": "HCM Module Dossier",
+      "es": "Dossier del módulo HCM"
+    }
+  ]
+}

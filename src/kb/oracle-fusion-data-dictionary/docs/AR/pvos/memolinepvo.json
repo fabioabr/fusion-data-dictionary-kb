@@ -1,0 +1,724 @@
+{
+  "meta": {
+    "pvo_name": "MemoLinePVO",
+    "full_path": "FscmTopModelAM.FinArTopPublicModelAM.MemoLinePVO",
+    "module_path": "FscmTopModelAM.FinArTopPublicModelAM",
+    "module_code": "AR",
+    "type": "pvo",
+    "description": "Extrai as linhas de memorando (memo lines) configuradas para uso em notas de débito e crédito, com descrição, classificação fiscal e valores padrão. Padroniza os itens recorrentes utilizados em ajustes e cobranças avulsas."
+  },
+  "stats": {
+    "total_attributes": 49,
+    "tables_count": 5,
+    "bicc_enabled": 18,
+    "bicc_pct": 37,
+    "pk_count": 3
+  },
+  "tables": [
+    "AR_MEMO_LINES_ALL_B",
+    "AR_MEMO_LINES_ALL_TL",
+    "PER_PERSON_NAMES_F_V",
+    "PER_USERS",
+    "ZX_FC_PRODUCT_CATEGORIES_V"
+  ],
+  "attributes": [
+    {
+      "name": "MemoLineBaseAccountingRuleId",
+      "table": "AR_MEMO_LINES_ALL_B",
+      "column": "ACCOUNTING_RULE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "MemoLineBaseCreatedBy",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "DISPLAY_NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "MemoLineBaseCreatedBy1",
+      "table": "AR_MEMO_LINES_ALL_B",
+      "column": "CREATED_BY",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "MemoLineBaseCreationDate",
+      "table": "AR_MEMO_LINES_ALL_B",
+      "column": "CREATION_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "MemoLineBaseDescription",
+      "table": "AR_MEMO_LINES_ALL_B",
+      "column": "DESCRIPTION",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "MemoLineBaseEffectiveEndDate",
+      "table": "AR_MEMO_LINES_ALL_B",
+      "column": "EFFECTIVE_END_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "MemoLineBaseEffectiveStartDate",
+      "table": "AR_MEMO_LINES_ALL_B",
+      "column": "EFFECTIVE_START_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "MemoLineBaseInvoicingRuleId",
+      "table": "AR_MEMO_LINES_ALL_B",
+      "column": "INVOICING_RULE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "MemoLineBaseLastUpdateDate",
+      "table": "AR_MEMO_LINES_ALL_B",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": true
+    },
+    {
+      "name": "MemoLineBaseLastUpdateLogin",
+      "table": "AR_MEMO_LINES_ALL_B",
+      "column": "LAST_UPDATE_LOGIN",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "MemoLineBaseLastUpdatedBy",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "DISPLAY_NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "MemoLineBaseLastUpdatedBy1",
+      "table": "AR_MEMO_LINES_ALL_B",
+      "column": "LAST_UPDATED_BY",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "MemoLineBaseLineType",
+      "table": "AR_MEMO_LINES_ALL_B",
+      "column": "LINE_TYPE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "MemoLineBaseMemoLineId",
+      "table": "AR_MEMO_LINES_ALL_B",
+      "column": "MEMO_LINE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "MemoLineBaseMemoLineSeqId",
+      "table": "AR_MEMO_LINES_ALL_B",
+      "column": "MEMO_LINE_SEQ_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "MemoLineBaseName",
+      "table": "AR_MEMO_LINES_ALL_B",
+      "column": "NAME",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "MemoLineBaseObjectVersionNumber",
+      "table": "AR_MEMO_LINES_ALL_B",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "MemoLineBaseSetId",
+      "table": "AR_MEMO_LINES_ALL_B",
+      "column": "SET_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "MemoLineBaseTaxCode",
+      "table": "AR_MEMO_LINES_ALL_B",
+      "column": "TAX_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "MemoLineBaseTaxProductCategory",
+      "table": "AR_MEMO_LINES_ALL_B",
+      "column": "TAX_PRODUCT_CATEGORY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "MemoLineBaseUnitStdPrice",
+      "table": "AR_MEMO_LINES_ALL_B",
+      "column": "UNIT_STD_PRICE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "MemoLineBaseUomCode",
+      "table": "AR_MEMO_LINES_ALL_B",
+      "column": "UOM_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "MemoLineId",
+      "table": "AR_MEMO_LINES_ALL_TL",
+      "column": "MEMO_LINE_ID",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    },
+    {
+      "name": "MemoLineTranslationCreatedBy",
+      "table": "AR_MEMO_LINES_ALL_TL",
+      "column": "CREATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "MemoLineTranslationCreationDate",
+      "table": "AR_MEMO_LINES_ALL_TL",
+      "column": "CREATION_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "MemoLineTranslationDescription",
+      "table": "AR_MEMO_LINES_ALL_TL",
+      "column": "DESCRIPTION",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "MemoLineTranslationLanguage",
+      "table": "AR_MEMO_LINES_ALL_TL",
+      "column": "LANGUAGE",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    },
+    {
+      "name": "MemoLineTranslationLastUpdateDate",
+      "table": "AR_MEMO_LINES_ALL_TL",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": true
+    },
+    {
+      "name": "MemoLineTranslationLastUpdateLogin",
+      "table": "AR_MEMO_LINES_ALL_TL",
+      "column": "LAST_UPDATE_LOGIN",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "MemoLineTranslationLastUpdatedBy",
+      "table": "AR_MEMO_LINES_ALL_TL",
+      "column": "LAST_UPDATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "MemoLineTranslationName",
+      "table": "AR_MEMO_LINES_ALL_TL",
+      "column": "NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "MemoLineTranslationObjectVersionNumber",
+      "table": "AR_MEMO_LINES_ALL_TL",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "MemoLineTranslationSourceLang",
+      "table": "AR_MEMO_LINES_ALL_TL",
+      "column": "SOURCE_LANG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonCreatedByEffectiveEndDate",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "EFFECTIVE_END_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonCreatedByEffectiveStartDate",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "EFFECTIVE_START_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonCreatedByPersonNameId",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "PERSON_NAME_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonUpdatedByEffectiveEndDate",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "EFFECTIVE_END_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonUpdatedByEffectiveStartDate",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "EFFECTIVE_START_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonUpdatedByPersonNameId",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "PERSON_NAME_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProductCategoriesClassificationCode",
+      "table": "ZX_FC_PRODUCT_CATEGORIES_V",
+      "column": "CLASSIFICATION_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProductCategoriesClassificationId",
+      "table": "ZX_FC_PRODUCT_CATEGORIES_V",
+      "column": "CLASSIFICATION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProductCategoriesClassificationName",
+      "table": "ZX_FC_PRODUCT_CATEGORIES_V",
+      "column": "CLASSIFICATION_NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProductCategoriesConcatLeafName",
+      "table": "ZX_FC_PRODUCT_CATEGORIES_V",
+      "column": "CONCAT_LEAF_NAME",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProductCategoriesCountryCode",
+      "table": "ZX_FC_PRODUCT_CATEGORIES_V",
+      "column": "COUNTRY_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SetId",
+      "table": "AR_MEMO_LINES_ALL_TL",
+      "column": "SET_ID",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    },
+    {
+      "name": "UserCreatedByObjectVersionNumber",
+      "table": "PER_USERS",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "UserCreatedByUserId",
+      "table": "PER_USERS",
+      "column": "USER_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "UserUpdatedByObjectVersionNumber",
+      "table": "PER_USERS",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "UserUpdatedByUserId",
+      "table": "PER_USERS",
+      "column": "USER_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    }
+  ],
+  "by_table": {
+    "AR_MEMO_LINES_ALL_B": [
+      {
+        "attribute": "MemoLineBaseAccountingRuleId",
+        "column": "ACCOUNTING_RULE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "MemoLineBaseCreatedBy1",
+        "column": "CREATED_BY",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "MemoLineBaseCreationDate",
+        "column": "CREATION_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "MemoLineBaseDescription",
+        "column": "DESCRIPTION",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "MemoLineBaseEffectiveEndDate",
+        "column": "EFFECTIVE_END_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "MemoLineBaseEffectiveStartDate",
+        "column": "EFFECTIVE_START_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "MemoLineBaseInvoicingRuleId",
+        "column": "INVOICING_RULE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "MemoLineBaseLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "MemoLineBaseLastUpdateLogin",
+        "column": "LAST_UPDATE_LOGIN",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "MemoLineBaseLastUpdatedBy1",
+        "column": "LAST_UPDATED_BY",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "MemoLineBaseLineType",
+        "column": "LINE_TYPE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "MemoLineBaseMemoLineId",
+        "column": "MEMO_LINE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "MemoLineBaseMemoLineSeqId",
+        "column": "MEMO_LINE_SEQ_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "MemoLineBaseName",
+        "column": "NAME",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "MemoLineBaseObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "MemoLineBaseSetId",
+        "column": "SET_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "MemoLineBaseTaxCode",
+        "column": "TAX_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "MemoLineBaseTaxProductCategory",
+        "column": "TAX_PRODUCT_CATEGORY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "MemoLineBaseUnitStdPrice",
+        "column": "UNIT_STD_PRICE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "MemoLineBaseUomCode",
+        "column": "UOM_CODE",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "PER_PERSON_NAMES_F_V": [
+      {
+        "attribute": "MemoLineBaseCreatedBy",
+        "column": "DISPLAY_NAME",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "MemoLineBaseLastUpdatedBy",
+        "column": "DISPLAY_NAME",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PersonCreatedByEffectiveEndDate",
+        "column": "EFFECTIVE_END_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PersonCreatedByEffectiveStartDate",
+        "column": "EFFECTIVE_START_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PersonCreatedByPersonNameId",
+        "column": "PERSON_NAME_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PersonUpdatedByEffectiveEndDate",
+        "column": "EFFECTIVE_END_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PersonUpdatedByEffectiveStartDate",
+        "column": "EFFECTIVE_START_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PersonUpdatedByPersonNameId",
+        "column": "PERSON_NAME_ID",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "AR_MEMO_LINES_ALL_TL": [
+      {
+        "attribute": "MemoLineId",
+        "column": "MEMO_LINE_ID",
+        "bicc": true,
+        "pk": true
+      },
+      {
+        "attribute": "MemoLineTranslationCreatedBy",
+        "column": "CREATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "MemoLineTranslationCreationDate",
+        "column": "CREATION_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "MemoLineTranslationDescription",
+        "column": "DESCRIPTION",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "MemoLineTranslationLanguage",
+        "column": "LANGUAGE",
+        "bicc": true,
+        "pk": true
+      },
+      {
+        "attribute": "MemoLineTranslationLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "MemoLineTranslationLastUpdateLogin",
+        "column": "LAST_UPDATE_LOGIN",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "MemoLineTranslationLastUpdatedBy",
+        "column": "LAST_UPDATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "MemoLineTranslationName",
+        "column": "NAME",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "MemoLineTranslationObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "MemoLineTranslationSourceLang",
+        "column": "SOURCE_LANG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "SetId",
+        "column": "SET_ID",
+        "bicc": true,
+        "pk": true
+      }
+    ],
+    "ZX_FC_PRODUCT_CATEGORIES_V": [
+      {
+        "attribute": "ProductCategoriesClassificationCode",
+        "column": "CLASSIFICATION_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProductCategoriesClassificationId",
+        "column": "CLASSIFICATION_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProductCategoriesClassificationName",
+        "column": "CLASSIFICATION_NAME",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ProductCategoriesConcatLeafName",
+        "column": "CONCAT_LEAF_NAME",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProductCategoriesCountryCode",
+        "column": "COUNTRY_CODE",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "PER_USERS": [
+      {
+        "attribute": "UserCreatedByObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "UserCreatedByUserId",
+        "column": "USER_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "UserUpdatedByObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "UserUpdatedByUserId",
+        "column": "USER_ID",
+        "bicc": false,
+        "pk": false
+      }
+    ]
+  }
+}

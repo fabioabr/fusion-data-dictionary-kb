@@ -1,0 +1,603 @@
+{
+  "meta": {
+    "pvo_name": "AdjustmentApprovalActionHistoryPVO",
+    "full_path": "FscmTopModelAM.FinArTopPublicModelAM.AdjustmentApprovalActionHistoryPVO",
+    "module_path": "FscmTopModelAM.FinArTopPublicModelAM",
+    "module_code": "AR",
+    "type": "pvo",
+    "description": "Extrai o histórico de ações de aprovação de ajustes em recebíveis, incluindo aprovador, data e decisão. Fornece trilha de auditoria completa para compliance e governança sobre alterações em valores a receber."
+  },
+  "stats": {
+    "total_attributes": 41,
+    "tables_count": 2,
+    "bicc_enabled": 5,
+    "bicc_pct": 12,
+    "pk_count": 1
+  },
+  "tables": [
+    "AR_ADJUSTMENTS_ALL",
+    "AR_APPROVAL_ACTION_HISTORY"
+  ],
+  "attributes": [
+    {
+      "name": "AdjustmentAcctdAmount",
+      "table": "AR_ADJUSTMENTS_ALL",
+      "column": "ACCTD_AMOUNT",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AdjustmentAdjTaxAcctRule",
+      "table": "AR_ADJUSTMENTS_ALL",
+      "column": "ADJ_TAX_ACCT_RULE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AdjustmentAdjustmentId",
+      "table": "AR_ADJUSTMENTS_ALL",
+      "column": "ADJUSTMENT_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AdjustmentAdjustmentNumber",
+      "table": "AR_ADJUSTMENTS_ALL",
+      "column": "ADJUSTMENT_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AdjustmentAdjustmentType",
+      "table": "AR_ADJUSTMENTS_ALL",
+      "column": "ADJUSTMENT_TYPE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AdjustmentAmount",
+      "table": "AR_ADJUSTMENTS_ALL",
+      "column": "AMOUNT",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AdjustmentApplyDate",
+      "table": "AR_ADJUSTMENTS_ALL",
+      "column": "APPLY_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AdjustmentApprovedBy",
+      "table": "AR_ADJUSTMENTS_ALL",
+      "column": "APPROVED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AdjustmentAutomaticallyGenerated",
+      "table": "AR_ADJUSTMENTS_ALL",
+      "column": "AUTOMATICALLY_GENERATED",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AdjustmentAxAccountedFlag",
+      "table": "AR_ADJUSTMENTS_ALL",
+      "column": "AX_ACCOUNTED_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AdjustmentComments",
+      "table": "AR_ADJUSTMENTS_ALL",
+      "column": "COMMENTS",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AdjustmentCreatedFrom",
+      "table": "AR_ADJUSTMENTS_ALL",
+      "column": "CREATED_FROM",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AdjustmentDocSequenceValue",
+      "table": "AR_ADJUSTMENTS_ALL",
+      "column": "DOC_SEQUENCE_VALUE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AdjustmentFreightAdjusted",
+      "table": "AR_ADJUSTMENTS_ALL",
+      "column": "FREIGHT_ADJUSTED",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AdjustmentGlDate",
+      "table": "AR_ADJUSTMENTS_ALL",
+      "column": "GL_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AdjustmentGlPostedDate",
+      "table": "AR_ADJUSTMENTS_ALL",
+      "column": "GL_POSTED_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AdjustmentLineAdjusted",
+      "table": "AR_ADJUSTMENTS_ALL",
+      "column": "LINE_ADJUSTED",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AdjustmentMrcAcctdAmount",
+      "table": "AR_ADJUSTMENTS_ALL",
+      "column": "MRC_ACCTD_AMOUNT",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AdjustmentMrcGlPostedDate",
+      "table": "AR_ADJUSTMENTS_ALL",
+      "column": "MRC_GL_POSTED_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AdjustmentPostable",
+      "table": "AR_ADJUSTMENTS_ALL",
+      "column": "POSTABLE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AdjustmentProgramUpdateDate",
+      "table": "AR_ADJUSTMENTS_ALL",
+      "column": "PROGRAM_UPDATE_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AdjustmentReasonCode",
+      "table": "AR_ADJUSTMENTS_ALL",
+      "column": "REASON_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AdjustmentReceivablesChargesAdjusted",
+      "table": "AR_ADJUSTMENTS_ALL",
+      "column": "RECEIVABLES_CHARGES_ADJUSTED",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AdjustmentStatus",
+      "table": "AR_ADJUSTMENTS_ALL",
+      "column": "STATUS",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AdjustmentTaxAdjusted",
+      "table": "AR_ADJUSTMENTS_ALL",
+      "column": "TAX_ADJUSTED",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AdjustmentType",
+      "table": "AR_ADJUSTMENTS_ALL",
+      "column": "TYPE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AdjustmentUpgradeMethod",
+      "table": "AR_ADJUSTMENTS_ALL",
+      "column": "UPGRADE_METHOD",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AdjustmentUssglTransactionCode",
+      "table": "AR_ADJUSTMENTS_ALL",
+      "column": "USSGL_TRANSACTION_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AdjustmentUssglTransactionCodeContext",
+      "table": "AR_ADJUSTMENTS_ALL",
+      "column": "USSGL_TRANSACTION_CODE_CONTEXT",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ApprovalActionHistoryActionDate",
+      "table": "AR_APPROVAL_ACTION_HISTORY",
+      "column": "ACTION_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ApprovalActionHistoryActionName",
+      "table": "AR_APPROVAL_ACTION_HISTORY",
+      "column": "ACTION_NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ApprovalActionHistoryAdjustmentId",
+      "table": "AR_APPROVAL_ACTION_HISTORY",
+      "column": "ADJUSTMENT_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ApprovalActionHistoryComments",
+      "table": "AR_APPROVAL_ACTION_HISTORY",
+      "column": "COMMENTS",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ApprovalActionHistoryContext",
+      "table": "AR_APPROVAL_ACTION_HISTORY",
+      "column": "CONTEXT",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ApprovalActionHistoryCreatedBy",
+      "table": "AR_APPROVAL_ACTION_HISTORY",
+      "column": "CREATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ApprovalActionHistoryCreationDate",
+      "table": "AR_APPROVAL_ACTION_HISTORY",
+      "column": "CREATION_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ApprovalActionHistoryId",
+      "table": "AR_APPROVAL_ACTION_HISTORY",
+      "column": "APPROVAL_ACTION_HISTORY_ID",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    },
+    {
+      "name": "ApprovalActionHistoryLastUpdateDate",
+      "table": "AR_APPROVAL_ACTION_HISTORY",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": true
+    },
+    {
+      "name": "ApprovalActionHistoryLastUpdateLogin",
+      "table": "AR_APPROVAL_ACTION_HISTORY",
+      "column": "LAST_UPDATE_LOGIN",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ApprovalActionHistoryLastUpdatedBy",
+      "table": "AR_APPROVAL_ACTION_HISTORY",
+      "column": "LAST_UPDATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ApprovalActionHistoryObjectVersionNumber",
+      "table": "AR_APPROVAL_ACTION_HISTORY",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    }
+  ],
+  "by_table": {
+    "AR_ADJUSTMENTS_ALL": [
+      {
+        "attribute": "AdjustmentAcctdAmount",
+        "column": "ACCTD_AMOUNT",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AdjustmentAdjTaxAcctRule",
+        "column": "ADJ_TAX_ACCT_RULE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AdjustmentAdjustmentId",
+        "column": "ADJUSTMENT_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AdjustmentAdjustmentNumber",
+        "column": "ADJUSTMENT_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AdjustmentAdjustmentType",
+        "column": "ADJUSTMENT_TYPE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AdjustmentAmount",
+        "column": "AMOUNT",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AdjustmentApplyDate",
+        "column": "APPLY_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AdjustmentApprovedBy",
+        "column": "APPROVED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AdjustmentAutomaticallyGenerated",
+        "column": "AUTOMATICALLY_GENERATED",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AdjustmentAxAccountedFlag",
+        "column": "AX_ACCOUNTED_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AdjustmentComments",
+        "column": "COMMENTS",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AdjustmentCreatedFrom",
+        "column": "CREATED_FROM",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AdjustmentDocSequenceValue",
+        "column": "DOC_SEQUENCE_VALUE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AdjustmentFreightAdjusted",
+        "column": "FREIGHT_ADJUSTED",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AdjustmentGlDate",
+        "column": "GL_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AdjustmentGlPostedDate",
+        "column": "GL_POSTED_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AdjustmentLineAdjusted",
+        "column": "LINE_ADJUSTED",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AdjustmentMrcAcctdAmount",
+        "column": "MRC_ACCTD_AMOUNT",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AdjustmentMrcGlPostedDate",
+        "column": "MRC_GL_POSTED_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AdjustmentPostable",
+        "column": "POSTABLE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AdjustmentProgramUpdateDate",
+        "column": "PROGRAM_UPDATE_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AdjustmentReasonCode",
+        "column": "REASON_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AdjustmentReceivablesChargesAdjusted",
+        "column": "RECEIVABLES_CHARGES_ADJUSTED",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AdjustmentStatus",
+        "column": "STATUS",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AdjustmentTaxAdjusted",
+        "column": "TAX_ADJUSTED",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AdjustmentType",
+        "column": "TYPE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AdjustmentUpgradeMethod",
+        "column": "UPGRADE_METHOD",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AdjustmentUssglTransactionCode",
+        "column": "USSGL_TRANSACTION_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AdjustmentUssglTransactionCodeContext",
+        "column": "USSGL_TRANSACTION_CODE_CONTEXT",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "AR_APPROVAL_ACTION_HISTORY": [
+      {
+        "attribute": "ApprovalActionHistoryActionDate",
+        "column": "ACTION_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ApprovalActionHistoryActionName",
+        "column": "ACTION_NAME",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ApprovalActionHistoryAdjustmentId",
+        "column": "ADJUSTMENT_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ApprovalActionHistoryComments",
+        "column": "COMMENTS",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ApprovalActionHistoryContext",
+        "column": "CONTEXT",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ApprovalActionHistoryCreatedBy",
+        "column": "CREATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ApprovalActionHistoryCreationDate",
+        "column": "CREATION_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ApprovalActionHistoryId",
+        "column": "APPROVAL_ACTION_HISTORY_ID",
+        "bicc": true,
+        "pk": true
+      },
+      {
+        "attribute": "ApprovalActionHistoryLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ApprovalActionHistoryLastUpdateLogin",
+        "column": "LAST_UPDATE_LOGIN",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ApprovalActionHistoryLastUpdatedBy",
+        "column": "LAST_UPDATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ApprovalActionHistoryObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      }
+    ]
+  }
+}

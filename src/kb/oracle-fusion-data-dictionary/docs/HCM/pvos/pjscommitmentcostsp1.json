@@ -1,0 +1,654 @@
+{
+  "meta": {
+    "pvo_name": "PjsCommitmentCostsP1",
+    "full_path": "FscmTopModelAM.PjsProjectPerformanceAM.PjsCommitmentCostsP1",
+    "module_path": "FscmTopModelAM.PjsProjectPerformanceAM",
+    "module_code": "HCM",
+    "type": "pvo",
+    "description": "Extrai custos comprometidos (commitments) de projetos por período, incluindo ordens de compra e contratos pendentes. Suporta projeção de gastos e gestão de fluxo de caixa de projetos."
+  },
+  "stats": {
+    "total_attributes": 44,
+    "tables_count": 5,
+    "bicc_enabled": 21,
+    "bicc_pct": 48,
+    "pk_count": 8
+  },
+  "tables": [
+    "GL_LEDGERS",
+    "HR_ORGANIZATION_INFORMATION_F",
+    "PJF_BU_IMPL_ALL",
+    "PJF_PROJECTS_ALL_B",
+    "PJS_FP_BASE_CMT"
+  ],
+  "attributes": [
+    {
+      "name": "BUImplOrgPEOObjVerNumber",
+      "table": "PJF_BU_IMPL_ALL",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BUImplOrgPEOOrgId",
+      "table": "PJF_BU_IMPL_ALL",
+      "column": "ORG_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BUImplOrgPEOPrimaryLedgerId",
+      "table": "HR_ORGANIZATION_INFORMATION_F",
+      "column": "ORG_INFORMATION3",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CalendarType",
+      "table": "PJS_FP_BASE_CMT",
+      "column": "CALENDAR_TYPE",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    },
+    {
+      "name": "CmtCostPEOCalendarId",
+      "table": "PJS_FP_BASE_CMT",
+      "column": "CALENDAR_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CmtCostPEOCmtOthQuantity",
+      "table": "PJS_FP_BASE_CMT",
+      "column": "CMT_OTH_QUANTITY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CmtCostPEOCmtPoQuantity",
+      "table": "PJS_FP_BASE_CMT",
+      "column": "CMT_PO_QUANTITY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CmtCostPEOCmtPrQuantity",
+      "table": "PJS_FP_BASE_CMT",
+      "column": "CMT_PR_QUANTITY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CmtCostPEOCmtSIQuantity",
+      "table": "PJS_FP_BASE_CMT",
+      "column": "CMT_SUP_INV_QUANTITY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CmtCostPEOCurrencyCode",
+      "table": "PJS_FP_BASE_CMT",
+      "column": "CURRENCY_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CmtCostPEOOthCmtBrdnCost",
+      "table": "PJS_FP_BASE_CMT",
+      "column": "OTH_CMT_BRDN_COST",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CmtCostPEOOthCmtRawCost",
+      "table": "PJS_FP_BASE_CMT",
+      "column": "OTH_CMT_RAW_COST",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CmtCostPEOPeriodEndDate",
+      "table": "PJS_FP_BASE_CMT",
+      "column": "END_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CmtCostPEOPeriodStartDate",
+      "table": "PJS_FP_BASE_CMT",
+      "column": "START_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CmtCostPEOPoCmtBrdnCost",
+      "table": "PJS_FP_BASE_CMT",
+      "column": "PO_CMT_BRDN_COST",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CmtCostPEOPoCmtRawCost",
+      "table": "PJS_FP_BASE_CMT",
+      "column": "PO_CMT_RAW_COST",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CmtCostPEOPrCmtBrdnCost",
+      "table": "PJS_FP_BASE_CMT",
+      "column": "PR_CMT_BRDN_COST",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CmtCostPEOPrCmtRawCost",
+      "table": "PJS_FP_BASE_CMT",
+      "column": "PR_CMT_RAW_COST",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CmtCostPEOSICmtBrdnCost",
+      "table": "PJS_FP_BASE_CMT",
+      "column": "SUP_INV_CMT_BRDN_COST",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CmtCostPEOSICmtRawCost",
+      "table": "PJS_FP_BASE_CMT",
+      "column": "SUP_INV_CMT_RAW_COST",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CmtCostPEOToCmtBrdnCost",
+      "table": "PJS_FP_BASE_CMT",
+      "column": "TO_CMT_BRDN_COST",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CmtCostPEOToCmtQuantity",
+      "table": "PJS_FP_BASE_CMT",
+      "column": "TO_CMT_QUANTITY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CmtCostPEOToCmtRawCost",
+      "table": "PJS_FP_BASE_CMT",
+      "column": "TO_CMT_RAW_COST",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CmtCostPEOTtlCmtBrdnCost",
+      "table": "PJS_FP_BASE_CMT",
+      "column": "TTL_CMT_BRDN_COST",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CmtCostPEOTtlCmtQuantity",
+      "table": "PJS_FP_BASE_CMT",
+      "column": "TTL_CMT_QUANTITY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CmtCostPEOTtlCmtRawCost",
+      "table": "PJS_FP_BASE_CMT",
+      "column": "TTL_CMT_RAW_COST",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CurrencyType",
+      "table": "PJS_FP_BASE_CMT",
+      "column": "CURRENCY_TYPE",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    },
+    {
+      "name": "GlLedgerPEOAccPeriodType",
+      "table": "GL_LEDGERS",
+      "column": "ACCOUNTED_PERIOD_TYPE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "GlLedgerPEOLedgerId",
+      "table": "GL_LEDGERS",
+      "column": "LEDGER_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "GlLedgerPEOObjectVersionNumber",
+      "table": "GL_LEDGERS",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "GlLedgerPEOPeriodSetName",
+      "table": "GL_LEDGERS",
+      "column": "PERIOD_SET_NAME",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "OrgInfoPEOEffectiveEndDate",
+      "table": "HR_ORGANIZATION_INFORMATION_F",
+      "column": "EFFECTIVE_END_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "OrgInfoPEOEffectiveStartDate",
+      "table": "HR_ORGANIZATION_INFORMATION_F",
+      "column": "EFFECTIVE_START_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "OrgInfoPEOOrgInfoContext",
+      "table": "HR_ORGANIZATION_INFORMATION_F",
+      "column": "ORG_INFORMATION_CONTEXT",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "OrgInfoPEOOrgInformationId",
+      "table": "HR_ORGANIZATION_INFORMATION_F",
+      "column": "ORG_INFORMATION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PeriodName",
+      "table": "PJS_FP_BASE_CMT",
+      "column": "PERIOD_NAME",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    },
+    {
+      "name": "ProjectBasePEOCarryingOutOrgId",
+      "table": "PJF_PROJECTS_ALL_B",
+      "column": "CARRYING_OUT_ORGANIZATION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectBasePEOOrgId",
+      "table": "PJF_PROJECTS_ALL_B",
+      "column": "ORG_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectBasePEOProjectId",
+      "table": "PJF_PROJECTS_ALL_B",
+      "column": "PROJECT_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectId",
+      "table": "PJS_FP_BASE_CMT",
+      "column": "PROJECT_ID",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    },
+    {
+      "name": "ResourceClassId",
+      "table": "PJS_FP_BASE_CMT",
+      "column": "RESOURCE_CLASS_ID",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    },
+    {
+      "name": "TaskId",
+      "table": "PJS_FP_BASE_CMT",
+      "column": "TASK_ID",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    },
+    {
+      "name": "TxnAccumHeaderId",
+      "table": "PJS_FP_BASE_CMT",
+      "column": "TXN_ACCUM_HEADER_ID",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    },
+    {
+      "name": "UomCode",
+      "table": "PJS_FP_BASE_CMT",
+      "column": "UOM_CODE",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    }
+  ],
+  "by_table": {
+    "PJF_BU_IMPL_ALL": [
+      {
+        "attribute": "BUImplOrgPEOObjVerNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BUImplOrgPEOOrgId",
+        "column": "ORG_ID",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "HR_ORGANIZATION_INFORMATION_F": [
+      {
+        "attribute": "BUImplOrgPEOPrimaryLedgerId",
+        "column": "ORG_INFORMATION3",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "OrgInfoPEOEffectiveEndDate",
+        "column": "EFFECTIVE_END_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "OrgInfoPEOEffectiveStartDate",
+        "column": "EFFECTIVE_START_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "OrgInfoPEOOrgInfoContext",
+        "column": "ORG_INFORMATION_CONTEXT",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "OrgInfoPEOOrgInformationId",
+        "column": "ORG_INFORMATION_ID",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "PJS_FP_BASE_CMT": [
+      {
+        "attribute": "CalendarType",
+        "column": "CALENDAR_TYPE",
+        "bicc": true,
+        "pk": true
+      },
+      {
+        "attribute": "CmtCostPEOCalendarId",
+        "column": "CALENDAR_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CmtCostPEOCmtOthQuantity",
+        "column": "CMT_OTH_QUANTITY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CmtCostPEOCmtPoQuantity",
+        "column": "CMT_PO_QUANTITY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CmtCostPEOCmtPrQuantity",
+        "column": "CMT_PR_QUANTITY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CmtCostPEOCmtSIQuantity",
+        "column": "CMT_SUP_INV_QUANTITY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CmtCostPEOCurrencyCode",
+        "column": "CURRENCY_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CmtCostPEOOthCmtBrdnCost",
+        "column": "OTH_CMT_BRDN_COST",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CmtCostPEOOthCmtRawCost",
+        "column": "OTH_CMT_RAW_COST",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CmtCostPEOPeriodEndDate",
+        "column": "END_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CmtCostPEOPeriodStartDate",
+        "column": "START_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CmtCostPEOPoCmtBrdnCost",
+        "column": "PO_CMT_BRDN_COST",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CmtCostPEOPoCmtRawCost",
+        "column": "PO_CMT_RAW_COST",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CmtCostPEOPrCmtBrdnCost",
+        "column": "PR_CMT_BRDN_COST",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CmtCostPEOPrCmtRawCost",
+        "column": "PR_CMT_RAW_COST",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CmtCostPEOSICmtBrdnCost",
+        "column": "SUP_INV_CMT_BRDN_COST",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CmtCostPEOSICmtRawCost",
+        "column": "SUP_INV_CMT_RAW_COST",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CmtCostPEOToCmtBrdnCost",
+        "column": "TO_CMT_BRDN_COST",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CmtCostPEOToCmtQuantity",
+        "column": "TO_CMT_QUANTITY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CmtCostPEOToCmtRawCost",
+        "column": "TO_CMT_RAW_COST",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CmtCostPEOTtlCmtBrdnCost",
+        "column": "TTL_CMT_BRDN_COST",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CmtCostPEOTtlCmtQuantity",
+        "column": "TTL_CMT_QUANTITY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CmtCostPEOTtlCmtRawCost",
+        "column": "TTL_CMT_RAW_COST",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CurrencyType",
+        "column": "CURRENCY_TYPE",
+        "bicc": true,
+        "pk": true
+      },
+      {
+        "attribute": "PeriodName",
+        "column": "PERIOD_NAME",
+        "bicc": true,
+        "pk": true
+      },
+      {
+        "attribute": "ProjectId",
+        "column": "PROJECT_ID",
+        "bicc": true,
+        "pk": true
+      },
+      {
+        "attribute": "ResourceClassId",
+        "column": "RESOURCE_CLASS_ID",
+        "bicc": true,
+        "pk": true
+      },
+      {
+        "attribute": "TaskId",
+        "column": "TASK_ID",
+        "bicc": true,
+        "pk": true
+      },
+      {
+        "attribute": "TxnAccumHeaderId",
+        "column": "TXN_ACCUM_HEADER_ID",
+        "bicc": true,
+        "pk": true
+      },
+      {
+        "attribute": "UomCode",
+        "column": "UOM_CODE",
+        "bicc": true,
+        "pk": true
+      }
+    ],
+    "GL_LEDGERS": [
+      {
+        "attribute": "GlLedgerPEOAccPeriodType",
+        "column": "ACCOUNTED_PERIOD_TYPE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "GlLedgerPEOLedgerId",
+        "column": "LEDGER_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "GlLedgerPEOObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "GlLedgerPEOPeriodSetName",
+        "column": "PERIOD_SET_NAME",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "PJF_PROJECTS_ALL_B": [
+      {
+        "attribute": "ProjectBasePEOCarryingOutOrgId",
+        "column": "CARRYING_OUT_ORGANIZATION_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectBasePEOOrgId",
+        "column": "ORG_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectBasePEOProjectId",
+        "column": "PROJECT_ID",
+        "bicc": false,
+        "pk": false
+      }
+    ]
+  }
+}

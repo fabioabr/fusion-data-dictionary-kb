@@ -1,0 +1,651 @@
+{
+  "meta": {
+    "pvo_name": "CampMsgRecipientPVO",
+    "full_path": "HcmTopModelAnalyticsGlobalAM.HcmRecCampaignsAM.CampMsgRecipientPVO",
+    "module_path": "HcmTopModelAnalyticsGlobalAM.HcmRecCampaignsAM",
+    "module_code": "HCM",
+    "type": "pvo",
+    "description": "Extrai destinatarios de mensagens de campanhas com status de envio. Permite rastreamento de comunicacoes e engajamento em campanhas de recrutamento."
+  },
+  "stats": {
+    "total_attributes": 44,
+    "tables_count": 4,
+    "bicc_enabled": 4,
+    "bicc_pct": 9,
+    "pk_count": 1
+  },
+  "tables": [
+    "IRC_CAMPAIGNS_B",
+    "IRC_CAMP_ASSETS_B",
+    "IRC_CMT_LAUNCHES",
+    "IRC_CMT_RECIPIENTS"
+  ],
+  "attributes": [
+    {
+      "name": "CampAssetBPEOAssetId",
+      "table": "IRC_CAMP_ASSETS_B",
+      "column": "ASSET_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CampMsgLaunchPEOBounceCount",
+      "table": "IRC_CMT_LAUNCHES",
+      "column": "BOUNCE_COUNT",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CampMsgLaunchPEOCreatedBy",
+      "table": "IRC_CMT_LAUNCHES",
+      "column": "CREATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CampMsgLaunchPEOCreationDate",
+      "table": "IRC_CMT_LAUNCHES",
+      "column": "CREATION_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CampMsgLaunchPEOLastUpdateDate",
+      "table": "IRC_CMT_LAUNCHES",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": true
+    },
+    {
+      "name": "CampMsgLaunchPEOLastUpdateLogin",
+      "table": "IRC_CMT_LAUNCHES",
+      "column": "LAST_UPDATE_LOGIN",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CampMsgLaunchPEOLastUpdatedBy",
+      "table": "IRC_CMT_LAUNCHES",
+      "column": "LAST_UPDATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CampMsgLaunchPEOLaunchCompleteTs",
+      "table": "IRC_CMT_LAUNCHES",
+      "column": "LAUNCH_COMPLETE_TS",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CampMsgLaunchPEOLaunchId",
+      "table": "IRC_CMT_LAUNCHES",
+      "column": "LAUNCH_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CampMsgLaunchPEOLaunchStartTs",
+      "table": "IRC_CMT_LAUNCHES",
+      "column": "LAUNCH_START_TS",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CampMsgLaunchPEOLaunchStatusCode",
+      "table": "IRC_CMT_LAUNCHES",
+      "column": "LAUNCH_STATUS_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CampMsgLaunchPEOLaunchTypeCode",
+      "table": "IRC_CMT_LAUNCHES",
+      "column": "LAUNCH_TYPE_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CampMsgLaunchPEOObjectVersionNumber",
+      "table": "IRC_CMT_LAUNCHES",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CampMsgLaunchPEOOpenCount",
+      "table": "IRC_CMT_LAUNCHES",
+      "column": "OPEN_COUNT",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CampMsgLaunchPEOPendingCount",
+      "table": "IRC_CMT_LAUNCHES",
+      "column": "PENDING_COUNT",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CampMsgLaunchPEORecipientCount",
+      "table": "IRC_CMT_LAUNCHES",
+      "column": "RECIPIENT_COUNT",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CampMsgLaunchPEOScheduleDate",
+      "table": "IRC_CMT_LAUNCHES",
+      "column": "SCHEDULE_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CampMsgLaunchPEOSendByDate",
+      "table": "IRC_CMT_LAUNCHES",
+      "column": "SEND_BY_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CampMsgLaunchPEOSubjectId",
+      "table": "IRC_CMT_LAUNCHES",
+      "column": "SUBJECT_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CampMsgLaunchPEOUnsentCount",
+      "table": "IRC_CMT_LAUNCHES",
+      "column": "UNSENT_COUNT",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CampMsgRecipientPEOAddress",
+      "table": "IRC_CMT_RECIPIENTS",
+      "column": "ADDRESS",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CampMsgRecipientPEOAddressId",
+      "table": "IRC_CMT_RECIPIENTS",
+      "column": "ADDRESS_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CampMsgRecipientPEOCreatedBy",
+      "table": "IRC_CMT_RECIPIENTS",
+      "column": "CREATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CampMsgRecipientPEOCreationDate",
+      "table": "IRC_CMT_RECIPIENTS",
+      "column": "CREATION_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CampMsgRecipientPEODeliveryTypeCode",
+      "table": "IRC_CMT_RECIPIENTS",
+      "column": "DELIVERY_TYPE_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CampMsgRecipientPEOLastUpdateDate",
+      "table": "IRC_CMT_RECIPIENTS",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": true
+    },
+    {
+      "name": "CampMsgRecipientPEOLastUpdateLogin",
+      "table": "IRC_CMT_RECIPIENTS",
+      "column": "LAST_UPDATE_LOGIN",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CampMsgRecipientPEOLastUpdatedBy",
+      "table": "IRC_CMT_RECIPIENTS",
+      "column": "LAST_UPDATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CampMsgRecipientPEOLaunchId",
+      "table": "IRC_CMT_RECIPIENTS",
+      "column": "LAUNCH_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CampMsgRecipientPEOMsgBounceReason",
+      "table": "IRC_CMT_RECIPIENTS",
+      "column": "MSG_BOUNCE_REASON",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CampMsgRecipientPEOMsgBounceTs",
+      "table": "IRC_CMT_RECIPIENTS",
+      "column": "MSG_BOUNCE_TS",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CampMsgRecipientPEOMsgBounceTypeCode",
+      "table": "IRC_CMT_RECIPIENTS",
+      "column": "MSG_BOUNCE_TYPE_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CampMsgRecipientPEOMsgDeliveryTs",
+      "table": "IRC_CMT_RECIPIENTS",
+      "column": "MSG_DELIVERY_TS",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CampMsgRecipientPEOMsgOpenTs",
+      "table": "IRC_CMT_RECIPIENTS",
+      "column": "MSG_OPEN_TS",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CampMsgRecipientPEOMsgRetryCount",
+      "table": "IRC_CMT_RECIPIENTS",
+      "column": "MSG_RETRY_COUNT",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CampMsgRecipientPEOMsgSentTs",
+      "table": "IRC_CMT_RECIPIENTS",
+      "column": "MSG_SENT_TS",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CampMsgRecipientPEOMsgStatusCode",
+      "table": "IRC_CMT_RECIPIENTS",
+      "column": "MSG_STATUS_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CampMsgRecipientPEOMsgUnsentTypeCode",
+      "table": "IRC_CMT_RECIPIENTS",
+      "column": "MSG_UNSENT_TYPE_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CampMsgRecipientPEOObjectVersionNumber",
+      "table": "IRC_CMT_RECIPIENTS",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CampMsgRecipientPEOPersonId",
+      "table": "IRC_CMT_RECIPIENTS",
+      "column": "PERSON_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CampMsgRecipientPEORecipientId",
+      "table": "IRC_CMT_RECIPIENTS",
+      "column": "RECIPIENT_ID",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    },
+    {
+      "name": "CampMsgRecipientPEOUmsMsgId",
+      "table": "IRC_CMT_RECIPIENTS",
+      "column": "UMS_MSG_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CampaignBPEOCampaignId",
+      "table": "IRC_CAMPAIGNS_B",
+      "column": "CAMPAIGN_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CampaignBPEOCampaignTypeCode",
+      "table": "IRC_CAMPAIGNS_B",
+      "column": "CAMPAIGN_TYPE_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    }
+  ],
+  "by_table": {
+    "IRC_CAMP_ASSETS_B": [
+      {
+        "attribute": "CampAssetBPEOAssetId",
+        "column": "ASSET_ID",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "IRC_CMT_LAUNCHES": [
+      {
+        "attribute": "CampMsgLaunchPEOBounceCount",
+        "column": "BOUNCE_COUNT",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CampMsgLaunchPEOCreatedBy",
+        "column": "CREATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CampMsgLaunchPEOCreationDate",
+        "column": "CREATION_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CampMsgLaunchPEOLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CampMsgLaunchPEOLastUpdateLogin",
+        "column": "LAST_UPDATE_LOGIN",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CampMsgLaunchPEOLastUpdatedBy",
+        "column": "LAST_UPDATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CampMsgLaunchPEOLaunchCompleteTs",
+        "column": "LAUNCH_COMPLETE_TS",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CampMsgLaunchPEOLaunchId",
+        "column": "LAUNCH_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CampMsgLaunchPEOLaunchStartTs",
+        "column": "LAUNCH_START_TS",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CampMsgLaunchPEOLaunchStatusCode",
+        "column": "LAUNCH_STATUS_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CampMsgLaunchPEOLaunchTypeCode",
+        "column": "LAUNCH_TYPE_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CampMsgLaunchPEOObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CampMsgLaunchPEOOpenCount",
+        "column": "OPEN_COUNT",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CampMsgLaunchPEOPendingCount",
+        "column": "PENDING_COUNT",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CampMsgLaunchPEORecipientCount",
+        "column": "RECIPIENT_COUNT",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CampMsgLaunchPEOScheduleDate",
+        "column": "SCHEDULE_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CampMsgLaunchPEOSendByDate",
+        "column": "SEND_BY_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CampMsgLaunchPEOSubjectId",
+        "column": "SUBJECT_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CampMsgLaunchPEOUnsentCount",
+        "column": "UNSENT_COUNT",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "IRC_CMT_RECIPIENTS": [
+      {
+        "attribute": "CampMsgRecipientPEOAddress",
+        "column": "ADDRESS",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CampMsgRecipientPEOAddressId",
+        "column": "ADDRESS_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CampMsgRecipientPEOCreatedBy",
+        "column": "CREATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CampMsgRecipientPEOCreationDate",
+        "column": "CREATION_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CampMsgRecipientPEODeliveryTypeCode",
+        "column": "DELIVERY_TYPE_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CampMsgRecipientPEOLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CampMsgRecipientPEOLastUpdateLogin",
+        "column": "LAST_UPDATE_LOGIN",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CampMsgRecipientPEOLastUpdatedBy",
+        "column": "LAST_UPDATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CampMsgRecipientPEOLaunchId",
+        "column": "LAUNCH_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CampMsgRecipientPEOMsgBounceReason",
+        "column": "MSG_BOUNCE_REASON",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CampMsgRecipientPEOMsgBounceTs",
+        "column": "MSG_BOUNCE_TS",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CampMsgRecipientPEOMsgBounceTypeCode",
+        "column": "MSG_BOUNCE_TYPE_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CampMsgRecipientPEOMsgDeliveryTs",
+        "column": "MSG_DELIVERY_TS",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CampMsgRecipientPEOMsgOpenTs",
+        "column": "MSG_OPEN_TS",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CampMsgRecipientPEOMsgRetryCount",
+        "column": "MSG_RETRY_COUNT",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CampMsgRecipientPEOMsgSentTs",
+        "column": "MSG_SENT_TS",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CampMsgRecipientPEOMsgStatusCode",
+        "column": "MSG_STATUS_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CampMsgRecipientPEOMsgUnsentTypeCode",
+        "column": "MSG_UNSENT_TYPE_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CampMsgRecipientPEOObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CampMsgRecipientPEOPersonId",
+        "column": "PERSON_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CampMsgRecipientPEORecipientId",
+        "column": "RECIPIENT_ID",
+        "bicc": true,
+        "pk": true
+      },
+      {
+        "attribute": "CampMsgRecipientPEOUmsMsgId",
+        "column": "UMS_MSG_ID",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "IRC_CAMPAIGNS_B": [
+      {
+        "attribute": "CampaignBPEOCampaignId",
+        "column": "CAMPAIGN_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CampaignBPEOCampaignTypeCode",
+        "column": "CAMPAIGN_TYPE_CODE",
+        "bicc": false,
+        "pk": false
+      }
+    ]
+  }
+}

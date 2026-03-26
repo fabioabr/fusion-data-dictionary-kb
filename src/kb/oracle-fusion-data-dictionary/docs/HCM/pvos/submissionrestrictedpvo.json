@@ -1,0 +1,867 @@
+{
+  "meta": {
+    "pvo_name": "SubmissionRestrictedPVO",
+    "full_path": "HcmTopModelAnalyticsGlobalAM.HcmRecSubmissionsAM.SubmissionRestrictedPVO",
+    "module_path": "HcmTopModelAnalyticsGlobalAM.HcmRecSubmissionsAM",
+    "module_code": "HCM",
+    "type": "pvo",
+    "description": "Disponibiliza submissões (candidaturas) com visão restrita por segurança, incluindo ofertas e requisições. Suporta análise controlada do pipeline de candidatos."
+  },
+  "stats": {
+    "total_attributes": 59,
+    "tables_count": 6,
+    "bicc_enabled": 35,
+    "bicc_pct": 59,
+    "pk_count": 1
+  },
+  "tables": [
+    "IRC_JA_LAST_INTERACTION_V",
+    "IRC_OFFERS",
+    "IRC_REQUISITIONS_B",
+    "IRC_SUBMISSIONS",
+    "PER_ALL_PEOPLE_F",
+    "PER_PERSON_NAMES_F_V"
+  ],
+  "attributes": [
+    {
+      "name": "ActiveFlag",
+      "table": "IRC_SUBMISSIONS",
+      "column": "ACTIVE_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AddedByPersonDetailsPEOEffectiveEndDate",
+      "table": "PER_ALL_PEOPLE_F",
+      "column": "EFFECTIVE_END_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AddedByPersonDetailsPEOEffectiveStartDate",
+      "table": "PER_ALL_PEOPLE_F",
+      "column": "EFFECTIVE_START_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AddedByPersonDetailsPEOPersonId",
+      "table": "PER_ALL_PEOPLE_F",
+      "column": "PERSON_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AddedByPersonDetailsPEOPersonNumber",
+      "table": "PER_ALL_PEOPLE_F",
+      "column": "PERSON_NUMBER",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AddedByPersonNamePEOEffectiveEndDate",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "EFFECTIVE_END_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AddedByPersonNamePEOEffectiveStartDate",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "EFFECTIVE_START_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AddedByPersonNamePEOFullName",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "FULL_NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AddedByPersonNamePEOPersonNameId",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "PERSON_NAME_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ConfirmedByPersonId",
+      "table": "IRC_SUBMISSIONS",
+      "column": "CONFIRMED_BY_PERSON_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ConfirmedFlag",
+      "table": "IRC_SUBMISSIONS",
+      "column": "CONFIRMED_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CreatedBy",
+      "table": "IRC_SUBMISSIONS",
+      "column": "CREATED_BY",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CreationDate",
+      "table": "IRC_SUBMISSIONS",
+      "column": "CREATION_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CurrentPhaseId",
+      "table": "IRC_SUBMISSIONS",
+      "column": "CURRENT_PHASE_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CurrentStateId",
+      "table": "IRC_SUBMISSIONS",
+      "column": "CURRENT_STATE_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "DisqualifiedFlag",
+      "table": "IRC_SUBMISSIONS",
+      "column": "DISQUALIFIED_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "EsignDescVersionId",
+      "table": "IRC_SUBMISSIONS",
+      "column": "ESIGN_DESC_VERSION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InternalFlag",
+      "table": "IRC_SUBMISSIONS",
+      "column": "INTERNAL_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "IsCompletedFlag",
+      "table": "IRC_SUBMISSIONS",
+      "column": "IS_COMPLETED_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "IsRestrictedFlag",
+      "table": "IRC_SUBMISSIONS",
+      "column": "IS_RESTRICTED_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "JobAppLastInteractionPEOInteractionDate",
+      "table": "IRC_JA_LAST_INTERACTION_V",
+      "column": "INTERACTION_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "JobAppLastInteractionPEOInteractionId",
+      "table": "IRC_JA_LAST_INTERACTION_V",
+      "column": "INTERACTION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LastUpdateDate",
+      "table": "IRC_SUBMISSIONS",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": true
+    },
+    {
+      "name": "LastUpdateLogin",
+      "table": "IRC_SUBMISSIONS",
+      "column": "LAST_UPDATE_LOGIN",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LastUpdatedBy",
+      "table": "IRC_SUBMISSIONS",
+      "column": "LAST_UPDATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LegalDescVersionId",
+      "table": "IRC_SUBMISSIONS",
+      "column": "LEGAL_DESC_VERSION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ObjectStatus",
+      "table": "IRC_SUBMISSIONS",
+      "column": "OBJECT_STATUS",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ObjectVersionNumber",
+      "table": "IRC_SUBMISSIONS",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "OfferId",
+      "table": "IRC_OFFERS",
+      "column": "OFFER_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonId",
+      "table": "IRC_SUBMISSIONS",
+      "column": "PERSON_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProcessId",
+      "table": "IRC_SUBMISSIONS",
+      "column": "PROCESS_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProfileId",
+      "table": "IRC_SUBMISSIONS",
+      "column": "PROFILE_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PublicStateId",
+      "table": "IRC_SUBMISSIONS",
+      "column": "PUBLIC_STATE_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReqUsageCode",
+      "table": "IRC_REQUISITIONS_B",
+      "column": "REQ_USAGE_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RequisitionBPEOOpenDate",
+      "table": "IRC_REQUISITIONS_B",
+      "column": "OPEN_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RequisitionId",
+      "table": "IRC_SUBMISSIONS",
+      "column": "REQUISITION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RequisitionPEOCreatedBy",
+      "table": "IRC_REQUISITIONS_B",
+      "column": "CREATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RequisitionPEOCreationDate",
+      "table": "IRC_REQUISITIONS_B",
+      "column": "CREATION_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RequisitionPEOHiringManagerId",
+      "table": "IRC_REQUISITIONS_B",
+      "column": "HIRING_MANAGER_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RequisitionPEOLastUpdateDate",
+      "table": "IRC_REQUISITIONS_B",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": true
+    },
+    {
+      "name": "RequisitionPEOLastUpdateLogin",
+      "table": "IRC_REQUISITIONS_B",
+      "column": "LAST_UPDATE_LOGIN",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RequisitionPEOLastUpdatedBy",
+      "table": "IRC_REQUISITIONS_B",
+      "column": "LAST_UPDATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RequisitionPEOManagerAssignmentId",
+      "table": "IRC_REQUISITIONS_B",
+      "column": "MANAGER_ASSIGNMENT_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RequisitionPEORecruiterAssignmentId",
+      "table": "IRC_REQUISITIONS_B",
+      "column": "RECRUITER_ASSIGNMENT_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RequisitionPEORecruiterId",
+      "table": "IRC_REQUISITIONS_B",
+      "column": "RECRUITER_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RequisitionPEORequisitionId",
+      "table": "IRC_REQUISITIONS_B",
+      "column": "REQUISITION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SiteNumber",
+      "table": "IRC_SUBMISSIONS",
+      "column": "SITE_NUMBER",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SubmLastModifiedDate",
+      "table": "IRC_SUBMISSIONS",
+      "column": "SUBM_LAST_MODIFIED_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SubmissionConfirmedDate",
+      "table": "IRC_SUBMISSIONS",
+      "column": "SUBMISSION_CONFIRMED_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SubmissionDate",
+      "table": "IRC_SUBMISSIONS",
+      "column": "SUBMISSION_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SubmissionId",
+      "table": "IRC_SUBMISSIONS",
+      "column": "SUBMISSION_ID",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    },
+    {
+      "name": "SubmissionLanguageCode",
+      "table": "IRC_SUBMISSIONS",
+      "column": "SUBMISSION_LANGUAGE_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SubmissionPEOAddedByContextCode",
+      "table": "IRC_SUBMISSIONS",
+      "column": "ADDED_BY_CONTEXT_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SubmissionPEOAddedByPersonId",
+      "table": "IRC_SUBMISSIONS",
+      "column": "ADDED_BY_PERSON_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SubmissionPEOAfVersionId",
+      "table": "IRC_SUBMISSIONS",
+      "column": "AF_VERSION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SubmissionPEODiscardedFlag",
+      "table": "IRC_SUBMISSIONS",
+      "column": "DISCARDED_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SubmissionPEOMergedFlag",
+      "table": "IRC_SUBMISSIONS",
+      "column": "MERGED_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SubmissionPEOPipelineSubmissionId",
+      "table": "IRC_SUBMISSIONS",
+      "column": "PIPELINE_SUBMISSION_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SubmissionPEOSystemPersonType",
+      "table": "IRC_SUBMISSIONS",
+      "column": "SYSTEM_PERSON_TYPE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    }
+  ],
+  "by_table": {
+    "IRC_SUBMISSIONS": [
+      {
+        "attribute": "ActiveFlag",
+        "column": "ACTIVE_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ConfirmedByPersonId",
+        "column": "CONFIRMED_BY_PERSON_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ConfirmedFlag",
+        "column": "CONFIRMED_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CreatedBy",
+        "column": "CREATED_BY",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CreationDate",
+        "column": "CREATION_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CurrentPhaseId",
+        "column": "CURRENT_PHASE_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CurrentStateId",
+        "column": "CURRENT_STATE_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "DisqualifiedFlag",
+        "column": "DISQUALIFIED_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "EsignDescVersionId",
+        "column": "ESIGN_DESC_VERSION_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InternalFlag",
+        "column": "INTERNAL_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "IsCompletedFlag",
+        "column": "IS_COMPLETED_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "IsRestrictedFlag",
+        "column": "IS_RESTRICTED_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "LastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "LastUpdateLogin",
+        "column": "LAST_UPDATE_LOGIN",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "LastUpdatedBy",
+        "column": "LAST_UPDATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "LegalDescVersionId",
+        "column": "LEGAL_DESC_VERSION_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ObjectStatus",
+        "column": "OBJECT_STATUS",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PersonId",
+        "column": "PERSON_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ProcessId",
+        "column": "PROCESS_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProfileId",
+        "column": "PROFILE_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PublicStateId",
+        "column": "PUBLIC_STATE_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "RequisitionId",
+        "column": "REQUISITION_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "SiteNumber",
+        "column": "SITE_NUMBER",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "SubmLastModifiedDate",
+        "column": "SUBM_LAST_MODIFIED_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "SubmissionConfirmedDate",
+        "column": "SUBMISSION_CONFIRMED_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "SubmissionDate",
+        "column": "SUBMISSION_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "SubmissionId",
+        "column": "SUBMISSION_ID",
+        "bicc": true,
+        "pk": true
+      },
+      {
+        "attribute": "SubmissionLanguageCode",
+        "column": "SUBMISSION_LANGUAGE_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "SubmissionPEOAddedByContextCode",
+        "column": "ADDED_BY_CONTEXT_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "SubmissionPEOAddedByPersonId",
+        "column": "ADDED_BY_PERSON_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "SubmissionPEOAfVersionId",
+        "column": "AF_VERSION_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "SubmissionPEODiscardedFlag",
+        "column": "DISCARDED_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "SubmissionPEOMergedFlag",
+        "column": "MERGED_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "SubmissionPEOPipelineSubmissionId",
+        "column": "PIPELINE_SUBMISSION_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "SubmissionPEOSystemPersonType",
+        "column": "SYSTEM_PERSON_TYPE",
+        "bicc": true,
+        "pk": false
+      }
+    ],
+    "PER_ALL_PEOPLE_F": [
+      {
+        "attribute": "AddedByPersonDetailsPEOEffectiveEndDate",
+        "column": "EFFECTIVE_END_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AddedByPersonDetailsPEOEffectiveStartDate",
+        "column": "EFFECTIVE_START_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "AddedByPersonDetailsPEOPersonId",
+        "column": "PERSON_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AddedByPersonDetailsPEOPersonNumber",
+        "column": "PERSON_NUMBER",
+        "bicc": true,
+        "pk": false
+      }
+    ],
+    "PER_PERSON_NAMES_F_V": [
+      {
+        "attribute": "AddedByPersonNamePEOEffectiveEndDate",
+        "column": "EFFECTIVE_END_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AddedByPersonNamePEOEffectiveStartDate",
+        "column": "EFFECTIVE_START_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "AddedByPersonNamePEOFullName",
+        "column": "FULL_NAME",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "AddedByPersonNamePEOPersonNameId",
+        "column": "PERSON_NAME_ID",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "IRC_JA_LAST_INTERACTION_V": [
+      {
+        "attribute": "JobAppLastInteractionPEOInteractionDate",
+        "column": "INTERACTION_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "JobAppLastInteractionPEOInteractionId",
+        "column": "INTERACTION_ID",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "IRC_OFFERS": [
+      {
+        "attribute": "OfferId",
+        "column": "OFFER_ID",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "IRC_REQUISITIONS_B": [
+      {
+        "attribute": "ReqUsageCode",
+        "column": "REQ_USAGE_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "RequisitionBPEOOpenDate",
+        "column": "OPEN_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "RequisitionPEOCreatedBy",
+        "column": "CREATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "RequisitionPEOCreationDate",
+        "column": "CREATION_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "RequisitionPEOHiringManagerId",
+        "column": "HIRING_MANAGER_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "RequisitionPEOLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "RequisitionPEOLastUpdateLogin",
+        "column": "LAST_UPDATE_LOGIN",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "RequisitionPEOLastUpdatedBy",
+        "column": "LAST_UPDATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "RequisitionPEOManagerAssignmentId",
+        "column": "MANAGER_ASSIGNMENT_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "RequisitionPEORecruiterAssignmentId",
+        "column": "RECRUITER_ASSIGNMENT_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "RequisitionPEORecruiterId",
+        "column": "RECRUITER_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "RequisitionPEORequisitionId",
+        "column": "REQUISITION_ID",
+        "bicc": false,
+        "pk": false
+      }
+    ]
+  }
+}

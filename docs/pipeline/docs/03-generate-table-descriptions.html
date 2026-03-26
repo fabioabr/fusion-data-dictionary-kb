@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>03 — Descrever Tabelas — Pipeline de Geração</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet">
+    <style>
+
+:root {
+    --primary: #5BA4D9; --primary-dark: #3182B1; --primary-light: rgba(91, 164, 217, 0.12);
+    --secondary: #5BB8C4; --success: #6ABF3B; --success-light: rgba(106, 191, 59, 0.12); --success-border: rgba(106, 191, 59, 0.3);
+    --warning: #F4AC00; --warning-light: rgba(244, 172, 0, 0.12); --warning-border: rgba(244, 172, 0, 0.3);
+    --danger: #E85D54; --danger-light: rgba(232, 93, 84, 0.12); --danger-border: rgba(232, 93, 84, 0.3);
+    --info: #38BDF8; --info-light: rgba(56, 189, 248, 0.12); --info-border: rgba(56, 189, 248, 0.3);
+    --bg: #0f1319; --card-bg: #1a1f2e; --text: #e2e8f0; --text-muted: #8b9ab5; --border: #2a3244;
+    --purple: #9B96FF; --purple-light: rgba(155, 150, 255, 0.12); --orange: #FF9473; --teal: #2DD4BF;
+    --card-header-bg: #141924; --th-bg: #141924; --th-bg-hover: #1e2638;
+    --card-shadow: 0 2px 12px rgba(91, 164, 217, 0.1), 0 1px 4px rgba(0,0,0,0.3);
+}
+[data-theme="light"] {
+    --primary: #3182B1; --primary-dark: #256a94; --primary-light: rgba(49, 130, 177, 0.1);
+    --secondary: #418F9D; --success: #4C7E1B; --success-light: rgba(76, 126, 27, 0.08); --success-border: rgba(76, 126, 27, 0.25);
+    --warning: #F4AC00; --warning-light: rgba(244, 172, 0, 0.08); --warning-border: rgba(244, 172, 0, 0.25);
+    --danger: #C72F25; --danger-light: rgba(199, 47, 37, 0.08); --danger-border: rgba(199, 47, 37, 0.25);
+    --info: #0EA5E8; --info-light: rgba(14, 165, 232, 0.08); --info-border: rgba(14, 165, 232, 0.25);
+    --bg: #dde2e8; --card-bg: #ffffff; --text: #212B37; --text-muted: #6E829F; --border: #e2e8f0;
+    --purple: #7B76FE; --purple-light: rgba(123, 118, 254, 0.08); --orange: #FE7C58; --teal: #00D8D8;
+    --card-header-bg: rgba(49, 130, 177, 0.2); --th-bg: rgba(49, 130, 177, 0.2); --th-bg-hover: rgba(49, 130, 177, 0.23);
+    --card-shadow: 0 2px 8px rgba(49, 130, 177, 0.24), 0 1px 3px rgba(0,0,0,0.1);
+}
+[data-theme="light"] .search-input { background: #eaf1f7; }
+
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, a, img, ul, ol, li,
+header, footer, nav, section, article, aside, button, input, select, textarea,
+table, tr, td, th, form, label, fieldset, legend { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Poppins', sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; }
+.container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
+
+.header { background: linear-gradient(135deg, #1a2332 0%, #15202e 50%, #1a2838 100%); color: white; padding: 36px 0 0; position: relative; overflow: hidden; }
+.header::before { content: ''; position: absolute; top: -50%; right: -10%; width: 500px; height: 500px; background: rgba(255,255,255,0.03); border-radius: 50%; z-index: 0; }
+.header-content { position: relative; z-index: 1; }
+.header-bc-row { display: flex; align-items: center; justify-content: space-between; margin-bottom: 16px; }
+.breadcrumb { font-size: 0.78rem; color: rgba(255,255,255,0.5); }
+.breadcrumb a { color: rgba(255,255,255,0.65); text-decoration: none; }
+.breadcrumb a:hover { color: white; text-decoration: underline; }
+.breadcrumb .sep { margin: 0 6px; opacity: 0.4; }
+.breadcrumb .current { color: rgba(255,255,255,0.9); font-weight: 500; }
+.header-controls { display: flex; align-items: center; gap: 8px; }
+.lang-btn { display: inline-flex; align-items: center; gap: 5px; background: rgba(255,255,255,0.08); border: 2px solid transparent; border-radius: 8px; padding: 4px 10px 4px 8px; font-family: 'Poppins', sans-serif; font-size: 0.72rem; font-weight: 600; letter-spacing: 0.3px; color: rgba(255,255,255,0.55); cursor: pointer; transition: all 0.25s; line-height: 1; }
+.lang-btn svg { flex-shrink: 0; }
+.lang-btn:hover { background: rgba(255,255,255,0.18); color: rgba(255,255,255,0.9); }
+.lang-btn.active { border-color: #ffffff; background: rgba(255,255,255,0.22); color: #ffffff; box-shadow: 0 0 8px rgba(255,255,255,0.25); }
+[data-theme="light"] .header { background: linear-gradient(135deg, #1a2332 0%, #15202e 50%, #1a2838 100%); color: white; }
+[data-theme="light"] .footer { background: linear-gradient(135deg, #1a2332 0%, #15202e 50%, #1a2838 100%); color: white; }
+
+.header-left { display: flex; align-items: center; gap: 16px; }
+.header-logo { height: 40px; }
+.logo-light { display: none; } .logo-dark { display: inline-block; }
+.header h1 { font-size: 1.5rem; font-weight: 700; letter-spacing: -0.5px; }
+.header .subtitle { font-size: 0.95rem; opacity: 0.85; font-weight: 300; margin-top: 2px; }
+.header-badges { display: flex; gap: 8px; align-items: center; margin-top: 10px; flex-wrap: wrap; }
+.header-badge { background: rgba(255,255,255,0.15); padding: 6px 14px; border-radius: 8px; font-size: 0.78rem; display: flex; align-items: center; gap: 6px; backdrop-filter: blur(10px); }
+
+.stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 16px; margin: 28px 0; }
+.stat-card { background: var(--card-bg); border-radius: 12px; padding: 18px 20px; box-shadow: var(--card-shadow); border: 1px solid var(--border); display: flex; align-items: center; gap: 14px; }
+.stat-card-icon { width: 44px; height: 44px; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 1.3rem; color: white; flex-shrink: 0; }
+.stat-card-number { font-size: 1.12rem; font-weight: 700; line-height: 1.1; }
+.stat-card-label { font-size: 0.72rem; color: var(--text-muted); font-weight: 500; text-transform: uppercase; letter-spacing: 0.3px; }
+.bg-primary { background: var(--primary); } .bg-success { background: var(--success); }
+.bg-info { background: var(--info); } .bg-warning { background: var(--warning); }
+.bg-purple { background: var(--purple); } .bg-orange { background: var(--orange); } .bg-teal { background: var(--teal); }
+.bg-danger { background: var(--danger); }
+
+.intro-text { font-size: 0.88rem; color: var(--text-muted); line-height: 1.7; margin-bottom: 28px; padding: 20px 24px; background: var(--card-bg); border-radius: 12px; border: 1px solid var(--border); border-left: 3px solid var(--primary); box-shadow: var(--card-shadow); }
+[data-theme="light"] .intro-text { background: #eaf1f7; }
+
+.section-title { font-size: 1.1rem; font-weight: 600; margin: 32px 0 16px; display: flex; align-items: center; gap: 10px; }
+.section-title i { color: var(--primary); font-size: 1.2rem; }
+
+.pill { display: inline-block; padding: 2px 10px; border-radius: 12px; font-size: 0.68rem; font-weight: 600; }
+.pill-warning { background: var(--warning-light); color: var(--warning); border: 1px solid var(--warning-border); }
+.pill-success { background: var(--success-light); color: var(--success); border: 1px solid var(--success-border); }
+.pill-info { background: var(--info-light); color: var(--info); border: 1px solid var(--info-border); }
+.pill-danger { background: var(--danger-light); color: var(--danger); border: 1px solid var(--danger-border); }
+.pill-purple { background: var(--purple-light); color: var(--purple); border: 1px solid rgba(155, 150, 255, 0.3); }
+
+.footer { background: linear-gradient(135deg, #1a2332 0%, #15202e 50%, #1a2838 100%); color: white; padding: 36px 0; position: relative; overflow: hidden; margin-top: 32px; }
+.footer::before { content: ''; position: absolute; bottom: -50%; left: -10%; width: 500px; height: 500px; background: rgba(255,255,255,0.03); border-radius: 50%; z-index: 0; }
+.footer-content { position: relative; z-index: 1; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 24px; }
+.footer-left { display: flex; align-items: center; gap: 16px; }
+.footer-avatar { width: 48px; height: 48px; border-radius: 12px; background: rgba(255,255,255,0.15); display: flex; align-items: center; justify-content: center; font-size: 1.1rem; font-weight: 700; }
+.footer-author-name { font-size: 0.95rem; font-weight: 600; }
+.footer-author-role { font-size: 0.78rem; opacity: 0.7; }
+.footer-author-email { font-size: 0.72rem; opacity: 0.55; }
+.footer-author-email a { color: rgba(255,255,255,0.55); text-decoration: none; }
+.footer-author-email a:hover { color: white; }
+.footer-right { text-align: right; }
+.footer-doc-title { font-size: 0.85rem; font-weight: 500; opacity: 0.9; }
+.footer-doc-detail { font-size: 0.72rem; opacity: 0.6; }
+.footer-seal { display: flex; align-items: center; gap: 8px; margin-top: 20px; padding-top: 16px; border-top: 1px solid rgba(255,255,255,0.12); font-size: 0.7rem; opacity: 0.5; justify-content: center; }
+.footer-seal i { font-size: 1rem; }
+
+.back-to-top { position: fixed; bottom: 32px; right: 32px; width: 44px; height: 44px; border-radius: 12px; background: var(--primary); color: white; border: none; cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 1.3rem; box-shadow: 0 4px 16px rgba(91,164,217,0.35); opacity: 0; visibility: hidden; transform: translateY(10px); transition: all 0.3s; z-index: 999; }
+.back-to-top.visible { opacity: 1; visibility: visible; transform: translateY(0); }
+.back-to-top:hover { background: var(--primary-dark); }
+
+/* Cards */
+.card { background: var(--card-bg); border-radius: 12px; border: 1px solid var(--border); box-shadow: var(--card-shadow); margin-bottom: 20px; overflow: hidden; }
+.card-header { display: flex; align-items: center; gap: 10px; padding: 14px 18px; border-bottom: 1px solid var(--border); background: var(--card-header-bg); }
+.card-header-icon { width: 32px; height: 32px; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 1rem; color: white; flex-shrink: 0; }
+.card-title { font-weight: 600; font-size: 0.95rem; flex: 1; }
+.card-body { padding: 18px; font-size: 0.85rem; line-height: 1.7; }
+.card-body p { margin-bottom: 12px; }
+
+/* Checklist */
+.checklist { list-style: none; padding: 0; }
+.checklist li { padding: 6px 0; font-size: 0.85rem; display: flex; align-items: flex-start; gap: 8px; }
+.checklist li i { color: var(--success); margin-top: 3px; flex-shrink: 0; }
+
+/* Code blocks */
+.code-block { background: #0d1117; border-radius: 8px; padding: 16px 20px; font-family: 'Courier New', monospace; font-size: 0.78rem; color: #e6edf3; overflow-x: auto; margin: 12px 0; line-height: 1.6; border: 1px solid #30363d; white-space: pre; }
+[data-theme="light"] .code-block { background: #f6f8fa; color: #24292f; border-color: #d0d7de; }
+
+/* Numbered steps */
+.numbered-steps { counter-reset: step; list-style: none; padding: 0; }
+.numbered-steps li { counter-increment: step; padding: 8px 0 8px 36px; position: relative; font-size: 0.85rem; border-left: 2px solid var(--border); margin-left: 14px; }
+.numbered-steps li::before { content: counter(step); position: absolute; left: -15px; top: 6px; width: 28px; height: 28px; border-radius: 50%; background: var(--primary); color: white; display: flex; align-items: center; justify-content: center; font-size: 0.72rem; font-weight: 700; }
+
+/* Alerts */
+.alert { padding: 12px 16px; border-radius: 8px; font-size: 0.82rem; margin-bottom: 10px; border: 1px solid; line-height: 1.6; }
+.alert > i:first-child { font-size: 1.1rem; margin-right: 8px; vertical-align: middle; }
+.alert-info { background: var(--info-light); border-color: var(--info-border); color: #6ecbf5; }
+[data-theme="light"] .alert-info { color: #0878a8; }
+.alert-warning { background: var(--warning-light); border-color: var(--warning-border); color: var(--warning); }
+.alert-danger { background: var(--danger-light); border-color: var(--danger-border); color: var(--danger); }
+
+/* File path styling */
+.file-path { font-family: 'Courier New', monospace; font-size: 0.8rem; background: rgba(91,164,217,0.1); padding: 2px 8px; border-radius: 4px; color: var(--primary); word-break: break-all; }
+
+/* Input files table */
+.input-table { width: 100%; border-collapse: collapse; font-size: 0.82rem; }
+.input-table th { background: var(--th-bg); text-align: left; padding: 10px 14px; font-weight: 600; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.3px; color: var(--text-muted); }
+.input-table td { padding: 10px 14px; border-top: 1px solid var(--border); vertical-align: top; }
+.input-table tr:hover td { background: var(--th-bg-hover); }
+
+/* Before/After comparison */
+.comparison { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin: 12px 0; }
+.comparison-col { flex: 1; }
+.comparison-label { font-size: 0.72rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px; }
+.comparison-label.before { color: var(--danger); }
+.comparison-label.after { color: var(--success); }
+@media (max-width: 768px) { .comparison { grid-template-columns: 1fr; } }
+
+@media (max-width: 768px) { .stats-grid { grid-template-columns: 1fr 1fr; } }
+
+    </style>
+</head>
+<body>
+
+<header class="header">
+    <div class="container">
+        <div class="header-content">
+            <div class="header-bc-row">
+                <nav class="breadcrumb">
+                    <a href="index.html" data-i18n="bc_home">Pipeline de Geração</a>
+                    <span class="sep">/</span>
+                    <span class="current" data-i18n="bc_current">03 — Descrever Tabelas</span>
+                </nav>
+                <div class="header-controls">
+                    <button class="lang-btn active" onclick="switchLang('pt')" id="lang-pt"><svg width="20" height="14" viewBox="0 0 20 14"><rect width="20" height="14" rx="1" fill="#009739"/><polygon points="10,1.5 19,7 10,12.5 1,7" fill="#FEDD00"/><circle cx="10" cy="7" r="3.2" fill="#012169"/><rect x="7.8" y="6.2" width="4.4" height="0.4" rx="0.2" fill="#fff" transform="rotate(-8 10 7)"/></svg> <span>PT</span></button>
+                    <button class="lang-btn" onclick="switchLang('en')" id="lang-en"><svg width="20" height="14" viewBox="0 0 20 14"><rect width="20" height="14" rx="1" fill="#B22234"/><rect y="1.08" width="20" height="1.08" fill="#fff"/><rect y="3.23" width="20" height="1.08" fill="#fff"/><rect y="5.38" width="20" height="1.08" fill="#fff"/><rect y="7.54" width="20" height="1.08" fill="#fff"/><rect y="9.69" width="20" height="1.08" fill="#fff"/><rect y="11.85" width="20" height="1.08" fill="#fff"/><rect width="8" height="7.54" fill="#3C3B6E"/></svg> <span>EN</span></button>
+                    <button class="lang-btn" onclick="switchLang('es')" id="lang-es"><svg width="20" height="14" viewBox="0 0 20 14"><rect width="20" height="14" rx="1" fill="#AA151B"/><rect y="3" width="20" height="8" fill="#F1BF00"/></svg> <span>ES</span></button>
+                    <div class="header-badge" style="border:none;cursor:pointer" onclick="toggleTheme()"><i id="theme-icon" class="ri-sun-line"></i></div>
+                </div>
+            </div>
+            <div class="header-left" style="margin-bottom:24px">
+                <img class="header-logo logo-dark" src="../../assets/logos/logo-dark.png" alt="Logo">
+                <img class="header-logo logo-light" src="../../assets/logos/logo-light.png" alt="Logo">
+                <div>
+                    <h1><i class="ri-quill-pen-line" style="margin-right:8px"></i> <span data-i18n="title">03 — Descrever Tabelas</span></h1>
+                    <div class="subtitle" data-i18n="subtitle">.md Skeleton → .md Enriquecido (LLM)</div>
+                    <div class="header-badges">
+                        <div class="header-badge"><i class="ri-robot-2-line"></i> <span>LLM Opus</span></div>
+                        <div class="header-badge"><i class="ri-money-dollar-circle-line"></i> <span data-i18n="badge_cost">~$0.03/tabela</span></div>
+                        <div class="header-badge"><i class="ri-timer-line"></i> <span data-i18n="badge_time">~2h para 1.205 tabelas</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main class="container">
+
+    <!-- 1. Objetivo -->
+    <div class="section-title"><i class="ri-focus-3-line"></i> <span data-i18n="sec_objetivo">Objetivo</span></div>
+    <div class="intro-text" data-i18n="objetivo_text">
+        Esta é a etapa mais rica em conteúdo do pipeline. Um LLM (<strong>Claude Opus</strong>) lê cada <code>.md</code> skeleton gerado na etapa 01 e o enriquece com: parágrafo de visão geral do negócio, descrição para cada coluna, categoria semântica (<span class="pill pill-info">PK</span> <span class="pill pill-purple">FK</span> <span class="pill pill-warning">Amount</span> <span class="pill pill-info">Date</span> <span class="pill pill-success">Status</span> <span class="pill pill-danger">Audit</span> <span class="pill pill-purple">Config</span>), seção de relacionamentos com wikilinks para tabelas pai/filha e colunas FK, exemplos de consultas SQL típicas, e nível de confiança por coluna.
+    </div>
+
+    <!-- 2. DOR -->
+    <div class="section-title"><i class="ri-checkbox-circle-line"></i> <span data-i18n="sec_dor">DOR — Definition of Ready</span></div>
+    <div class="card">
+        <div class="card-header">
+            <div class="card-header-icon bg-warning"><i class="ri-alert-line"></i></div>
+            <div class="card-title" data-i18n="dor_title">Pré-requisitos para executar esta etapa</div>
+        </div>
+        <div class="card-body">
+            <ul class="checklist">
+                <li><i class="ri-checkbox-circle-fill"></i> <span data-i18n="dor_1">Arquivos <code>.md</code> skeleton existem a partir da etapa 01 em <code>src/kb/.../docs/{MOD}/tables/</code></span></li>
+                <li><i class="ri-checkbox-circle-fill"></i> <span data-i18n="dor_2">API key Anthropic configurada (ou sessão ativa no Claude Code)</span></li>
+                <li><i class="ri-checkbox-circle-fill"></i> <span data-i18n="dor_3">Contexto do módulo compreendido (o que cada tabela faz no Oracle Fusion)</span></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 3. DOD -->
+    <div class="section-title"><i class="ri-shield-check-line"></i> <span data-i18n="sec_dod">DOD — Definition of Done</span></div>
+    <div class="card">
+        <div class="card-header">
+            <div class="card-header-icon bg-success"><i class="ri-check-double-line"></i></div>
+            <div class="card-title" data-i18n="dod_title">Critérios de aceite para esta etapa</div>
+        </div>
+        <div class="card-body">
+            <ul class="checklist">
+                <li><i class="ri-checkbox-circle-fill"></i> <span data-i18n="dod_1">Todo <code>.md</code> possui parágrafo de Visão Geral (2-4 sentenças descrevendo o propósito de negócio)</span></li>
+                <li><i class="ri-checkbox-circle-fill"></i> <span data-i18n="dod_2">Todas as colunas possuem descrição preenchida em pt-BR</span></li>
+                <li><i class="ri-checkbox-circle-fill"></i> <span data-i18n="dod_3">Categorias semânticas atribuídas a cada coluna (PK, FK, Amount, Date, Status, Audit, Config)</span></li>
+                <li><i class="ri-checkbox-circle-fill"></i> <span data-i18n="dod_4">Relacionamentos com colunas FK identificados e wikilinks apontando para tabelas corretas</span></li>
+                <li><i class="ri-checkbox-circle-fill"></i> <span data-i18n="dod_5">Pelo menos 2 exemplos de consultas SQL por tabela</span></li>
+                <li><i class="ri-checkbox-circle-fill"></i> <span data-i18n="dod_6">Níveis de confiança marcados por coluna</span></li>
+                <li><i class="ri-checkbox-circle-fill"></i> <span data-i18n="dod_7">Nenhum placeholder "a ser preenchido" restante</span></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 4. Entrada -->
+    <div class="section-title"><i class="ri-inbox-line"></i> <span data-i18n="sec_entrada">Entrada</span></div>
+    <div class="card">
+        <div class="card-header">
+            <div class="card-header-icon bg-primary"><i class="ri-file-text-line"></i></div>
+            <div class="card-title" data-i18n="entrada_title">Arquivos de Entrada</div>
+        </div>
+        <div class="card-body">
+            <table class="input-table">
+                <thead>
+                    <tr>
+                        <th data-i18n="th_file">Arquivo</th>
+                        <th data-i18n="th_path">Caminho</th>
+                        <th data-i18n="th_desc">Descrição</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><span class="pill pill-info">Skeletons</span></td>
+                        <td><span class="file-path">src/kb/oracle-fusion-data-dictionary/docs/{MOD}/tables/*.md</span></td>
+                        <td data-i18n="entrada_skeletons">Arquivos <code>.md</code> skeleton gerados na etapa 01 — contêm front matter, lista de colunas sem descrição e seções vazias</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- 5. Saída -->
+    <div class="section-title"><i class="ri-file-text-line"></i> <span data-i18n="sec_saida">Saída</span></div>
+    <div class="card">
+        <div class="card-header">
+            <div class="card-header-icon bg-success"><i class="ri-markdown-line"></i></div>
+            <div class="card-title" data-i18n="saida_title">Arquivos Enriquecidos</div>
+        </div>
+        <div class="card-body">
+            <p data-i18n="saida_desc">Os mesmos arquivos <code>.md</code> são enriquecidos in-place. Exemplo de antes/depois de uma linha de coluna:</p>
+
+            <div class="comparison">
+                <div class="comparison-col">
+                    <div class="comparison-label before" data-i18n="saida_before_label">ANTES (skeleton da etapa 01)</div>
+                    <div class="code-block">| 1 | LEDGER_ID | NUMBER(15) | NOT NULL | — | — | — | — |</div>
+                </div>
+                <div class="comparison-col">
+                    <div class="comparison-label after" data-i18n="saida_after_label">DEPOIS (enriquecido pela LLM)</div>
+                    <div class="code-block">| 1 | LEDGER_ID | NUMBER(15) | NOT NULL | PK.FK | Identificador do ledger (livro contábil) | [[gl_ledgers]] | 95% |</div>
+                </div>
+            </div>
+
+            <p data-i18n="saida_example_label">Exemplo de seções adicionadas ao <code>.md</code>:</p>
+            <div class="code-block">## Visão Geral
+
+Tabela central do módulo General Ledger que armazena os saldos contábeis
+por período, ledger e combinação de contas. Utilizada em relatórios de
+balancete, DRE e balanço patrimonial.
+
+## Relacionamentos
+
+### Tabelas-pai (FK de entrada)
+- [[gl_ledgers]] — via coluna `LEDGER_ID`
+- [[gl_code_combinations]] — via coluna `CODE_COMBINATION_ID`
+
+### Tabelas-filha (FK de saída)
+- [[gl_je_lines]] — referencia `BALANCE_ID`
+
+## Uso Típico
+
+### Consultas SQL Exemplo
+
+```sql
+-- Saldo por período e ledger
+SELECT PERIOD_NAME, SUM(BEGIN_BALANCE_DR - BEGIN_BALANCE_CR) AS SALDO
+FROM GL_BALANCES
+WHERE LEDGER_ID = :ledger_id
+GROUP BY PERIOD_NAME;
+```</div>
+        </div>
+    </div>
+
+    <!-- 6. Como Funciona -->
+    <div class="section-title"><i class="ri-settings-3-line"></i> <span data-i18n="sec_como">Como Funciona</span></div>
+    <div class="card">
+        <div class="card-header">
+            <div class="card-header-icon bg-info"><i class="ri-flow-chart"></i></div>
+            <div class="card-title" data-i18n="como_title">Passo a passo do processo de enriquecimento</div>
+        </div>
+        <div class="card-body">
+            <ol class="numbered-steps">
+                <li data-i18n="step_1">Lê o arquivo <code>.md</code> skeleton (front matter + tabela de colunas + seções vazias)</li>
+                <li data-i18n="step_2">Envia ao LLM com prompt de contexto: módulo, nome da tabela, lista de colunas e domínio Oracle Fusion</li>
+                <li data-i18n="step_3">LLM retorna: visão geral, descrições de colunas, categorias semânticas, relacionamentos e exemplos SQL</li>
+                <li data-i18n="step_4">Faz o parse da resposta do LLM e atualiza as seções do <code>.md</code></li>
+                <li data-i18n="step_5">Valida: nenhuma descrição vazia, categorias são válidas, wikilinks usam nomes corretos de tabelas</li>
+                <li data-i18n="step_6">Grava o <code>.md</code> enriquecido no mesmo caminho de entrada</li>
+            </ol>
+        </div>
+    </div>
+
+    <!-- 7. Prompt Engineering -->
+    <div class="section-title"><i class="ri-brain-line"></i> <span data-i18n="sec_prompt">Prompt Engineering</span></div>
+    <div class="card">
+        <div class="card-header">
+            <div class="card-header-icon bg-purple"><i class="ri-magic-line"></i></div>
+            <div class="card-title" data-i18n="prompt_title">Estrutura do prompt enviado ao LLM</div>
+        </div>
+        <div class="card-body">
+            <p data-i18n="prompt_desc">O prompt é construído dinamicamente para cada tabela e contém os seguintes blocos:</p>
+            <ul class="checklist">
+                <li><i class="ri-checkbox-circle-fill"></i> <span data-i18n="prompt_1"><strong>Nome da tabela</strong> — ex: <code>GL_BALANCES</code></span></li>
+                <li><i class="ri-checkbox-circle-fill"></i> <span data-i18n="prompt_2"><strong>Contexto do módulo</strong> — ex: "General Ledger do Oracle Fusion Cloud — módulo de contabilidade"</span></li>
+                <li><i class="ri-checkbox-circle-fill"></i> <span data-i18n="prompt_3"><strong>Lista de colunas</strong> — nomes e tipos de dados extraídos do Excel</span></li>
+                <li><i class="ri-checkbox-circle-fill"></i> <span data-i18n="prompt_4"><strong>Instruções de domínio</strong> — conhecimento específico do Oracle Fusion (naming conventions, padrões de FK)</span></li>
+                <li><i class="ri-checkbox-circle-fill"></i> <span data-i18n="prompt_5"><strong>Inferência de FK</strong> — colunas <code>*_ID</code> são inferidas como FK para a tabela-pai correspondente (ex: <code>LEDGER_ID</code> → <code>GL_LEDGERS</code>)</span></li>
+                <li><i class="ri-checkbox-circle-fill"></i> <span data-i18n="prompt_6"><strong>Formato de saída</strong> — template Markdown esperado com seções, tabela de colunas e wikilinks</span></li>
+            </ul>
+            <div class="alert alert-info" style="margin-top:12px">
+                <i class="ri-information-line"></i>
+                <span data-i18n="prompt_note">Relacionamentos são inferidos por convenção de nomenclatura: colunas terminadas em <code>_ID</code> sugerem FK para a tabela-pai. Ex: <code>INVOICE_ID</code> → <code>[[ap_invoices_all]]</code>.</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- 8. Validação de Qualidade -->
+    <div class="section-title"><i class="ri-shield-check-line"></i> <span data-i18n="sec_validacao">Validação de Qualidade</span></div>
+    <div class="card">
+        <div class="card-header">
+            <div class="card-header-icon bg-warning"><i class="ri-bug-line"></i></div>
+            <div class="card-title" data-i18n="validacao_title">Verificações pós-geração</div>
+        </div>
+        <div class="card-body">
+            <p data-i18n="validacao_desc">Após a geração pelo LLM, uma etapa de revisão verifica:</p>
+            <ul class="checklist">
+                <li><i class="ri-checkbox-circle-fill"></i> <span data-i18n="val_1"><strong>Tabelas alucinadas</strong> — nomes de tabelas nos relacionamentos devem existir em <code>table-mappings.txt</code></span></li>
+                <li><i class="ri-checkbox-circle-fill"></i> <span data-i18n="val_2"><strong>Colunas FK válidas</strong> — colunas referenciadas como FK devem existir na lista de colunas da tabela</span></li>
+                <li><i class="ri-checkbox-circle-fill"></i> <span data-i18n="val_3"><strong>Idioma correto</strong> — descrições devem estar em pt-BR</span></li>
+                <li><i class="ri-checkbox-circle-fill"></i> <span data-i18n="val_4"><strong>Confiança realista</strong> — níveis de confiança devem refletir a certeza real da inferência</span></li>
+                <li><i class="ri-checkbox-circle-fill"></i> <span data-i18n="val_5"><strong>Sem placeholders</strong> — nenhum campo com "a ser preenchido" ou "—" pode permanecer</span></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 9. Uso -->
+    <div class="section-title"><i class="ri-terminal-box-line"></i> <span data-i18n="sec_uso">Uso</span></div>
+    <div class="card">
+        <div class="card-header">
+            <div class="card-header-icon bg-purple"><i class="ri-terminal-line"></i></div>
+            <div class="card-title" data-i18n="uso_title">Modos de Execução</div>
+        </div>
+        <div class="card-body">
+            <p data-i18n="uso_desc">A etapa pode ser executada de duas formas:</p>
+            <div class="code-block"># Modo interativo — via sessão Claude Code
+# Abrir sessão e solicitar enriquecimento tabela por tabela
+claude "Enriqueça o arquivo src/kb/.../docs/GL/tables/gl_balances.md"
+
+# Modo batch — via script com API Anthropic
+cd Pipeline/03-generate-table-descriptions/
+python enrich_tables.py --module GL
+
+# Batch completo (todos os módulos)
+python enrich_tables.py --all
+
+# Re-enriquecer tabelas específicas
+python enrich_tables.py --module AP --force --tables ap_invoices_all,ap_checks_all</div>
+        </div>
+    </div>
+
+    <!-- 10. Notas Importantes -->
+    <div class="section-title"><i class="ri-information-line"></i> <span data-i18n="sec_notas">Notas Importantes</span></div>
+
+    <div class="alert alert-warning">
+        <i class="ri-alert-line"></i>
+        <span data-i18n="nota_1">Esta é a etapa mais cara do pipeline em termos de <strong>custo de API</strong> (~$0.03 por tabela). Planeje o orçamento antes de rodar em batch para todos os módulos.</span>
+    </div>
+    <div class="alert alert-danger">
+        <i class="ri-error-warning-line"></i>
+        <span data-i18n="nota_2">Relacionamentos sem colunas FK reais são inválidos e devem ser removidos. Em nossa última limpeza, <strong>455 relacionamentos inválidos</strong> foram removidos — o LLM havia inventado "relacionamentos lógicos" sem FK real.</span>
+    </div>
+    <div class="alert alert-info">
+        <i class="ri-information-line"></i>
+        <span data-i18n="nota_3">O LLM às vezes inventa <strong>relacionamentos lógicos</strong> que não possuem colunas FK no schema. Esses devem ser revisados e removidos na etapa de validação.</span>
+    </div>
+    <div class="alert alert-info">
+        <i class="ri-information-line"></i>
+        <span data-i18n="nota_4">Descrições são geradas em <strong>pt-BR</strong>. A tradução para EN/ES ocorre em etapa separada do pipeline.</span>
+    </div>
+
+    <!-- 11. Métricas -->
+    <div class="section-title"><i class="ri-bar-chart-grouped-line"></i> <span data-i18n="sec_metricas">Métricas do Último Run</span></div>
+
+    <div class="stats-grid">
+        <div class="stat-card">
+            <div class="stat-card-icon bg-primary"><i class="ri-file-text-line"></i></div>
+            <div>
+                <div class="stat-card-number" style="color:var(--primary)">1.205</div>
+                <div class="stat-card-label" data-i18n="stat_described">Tabelas Descritas</div>
+            </div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-card-icon bg-danger"><i class="ri-delete-bin-line"></i></div>
+            <div>
+                <div class="stat-card-number" style="color:var(--danger)">455</div>
+                <div class="stat-card-label" data-i18n="stat_cleaned">Relacionamentos Limpos</div>
+            </div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-card-icon bg-success"><i class="ri-thumb-up-line"></i></div>
+            <div>
+                <div class="stat-card-number" style="color:var(--success)">~90%</div>
+                <div class="stat-card-label" data-i18n="stat_confidence">Confiança Média</div>
+            </div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-card-icon bg-warning"><i class="ri-money-dollar-circle-line"></i></div>
+            <div>
+                <div class="stat-card-number" style="color:var(--warning)">~$36</div>
+                <div class="stat-card-label" data-i18n="stat_cost">Custo Total Estimado</div>
+            </div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-card-icon bg-info"><i class="ri-time-line"></i></div>
+            <div>
+                <div class="stat-card-number" style="color:var(--info)">~2h</div>
+                <div class="stat-card-label" data-i18n="stat_time">Tempo Total</div>
+            </div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-card-icon bg-purple"><i class="ri-robot-2-line"></i></div>
+            <div>
+                <div class="stat-card-number" style="color:var(--purple)">Opus</div>
+                <div class="stat-card-label" data-i18n="stat_model">Modelo Utilizado</div>
+            </div>
+        </div>
+    </div>
+
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-left">
+                <div class="footer-avatar">FR</div>
+                <div>
+                    <div class="footer-author-name">Fabio A. B. Rodrigues</div>
+                    <div class="footer-author-role">Arquitetura e Produtividade Corporativa</div>
+                    <div class="footer-author-email"><a href="mailto:fabio.rodrigues.consult@patria.com">fabio.rodrigues.consult@patria.com</a></div>
+                </div>
+            </div>
+            <div class="footer-right">
+                <div class="footer-doc-title">Patria Investimentos</div>
+                <div class="footer-doc-detail" data-i18n="footer_detail">Pipeline de Geração &middot; 03 — Descrever Tabelas</div>
+            </div>
+        </div>
+        <div class="footer-seal"><i class="ri-shield-check-line"></i> Oracle Fusion Data Dictionary — Pipeline</div>
+    </div>
+</footer>
+
+<button class="back-to-top" id="backToTop" onclick="window.scrollTo({top:0,behavior:'smooth'})"><i class="ri-arrow-up-line"></i></button>
+
+<script>
+var currentLang = 'pt';
+
+var i18n = {
+    pt: {
+        bc_home: 'Pipeline de Geração',
+        bc_current: '03 — Descrever Tabelas',
+        title: '03 — Descrever Tabelas',
+        subtitle: '.md Skeleton → .md Enriquecido (LLM)',
+        badge_cost: '~$0.03/tabela',
+        badge_time: '~2h para 1.205 tabelas',
+        sec_objetivo: 'Objetivo',
+        objetivo_text: 'Esta é a etapa mais rica em conteúdo do pipeline. Um LLM (<strong>Claude Opus</strong>) lê cada <code>.md</code> skeleton gerado na etapa 01 e o enriquece com: parágrafo de visão geral do negócio, descrição para cada coluna, categoria semântica (<span class="pill pill-info">PK</span> <span class="pill pill-purple">FK</span> <span class="pill pill-warning">Amount</span> <span class="pill pill-info">Date</span> <span class="pill pill-success">Status</span> <span class="pill pill-danger">Audit</span> <span class="pill pill-purple">Config</span>), seção de relacionamentos com wikilinks para tabelas pai/filha e colunas FK, exemplos de consultas SQL típicas, e nível de confiança por coluna.',
+        sec_dor: 'DOR — Definition of Ready',
+        dor_title: 'Pré-requisitos para executar esta etapa',
+        dor_1: 'Arquivos <code>.md</code> skeleton existem a partir da etapa 01 em <code>src/kb/.../docs/{MOD}/tables/</code>',
+        dor_2: 'API key Anthropic configurada (ou sessão ativa no Claude Code)',
+        dor_3: 'Contexto do módulo compreendido (o que cada tabela faz no Oracle Fusion)',
+        sec_dod: 'DOD — Definition of Done',
+        dod_title: 'Critérios de aceite para esta etapa',
+        dod_1: 'Todo <code>.md</code> possui parágrafo de Visão Geral (2-4 sentenças descrevendo o propósito de negócio)',
+        dod_2: 'Todas as colunas possuem descrição preenchida em pt-BR',
+        dod_3: 'Categorias semânticas atribuídas a cada coluna (PK, FK, Amount, Date, Status, Audit, Config)',
+        dod_4: 'Relacionamentos com colunas FK identificados e wikilinks apontando para tabelas corretas',
+        dod_5: 'Pelo menos 2 exemplos de consultas SQL por tabela',
+        dod_6: 'Níveis de confiança marcados por coluna',
+        dod_7: 'Nenhum placeholder "a ser preenchido" restante',
+        sec_entrada: 'Entrada',
+        entrada_title: 'Arquivos de Entrada',
+        th_file: 'Arquivo',
+        th_path: 'Caminho',
+        th_desc: 'Descrição',
+        entrada_skeletons: 'Arquivos <code>.md</code> skeleton gerados na etapa 01 — contêm front matter, lista de colunas sem descrição e seções vazias',
+        sec_saida: 'Saída',
+        saida_title: 'Arquivos Enriquecidos',
+        saida_desc: 'Os mesmos arquivos <code>.md</code> são enriquecidos in-place. Exemplo de antes/depois de uma linha de coluna:',
+        saida_before_label: 'ANTES (skeleton da etapa 01)',
+        saida_after_label: 'DEPOIS (enriquecido pela LLM)',
+        saida_example_label: 'Exemplo de seções adicionadas ao <code>.md</code>:',
+        sec_como: 'Como Funciona',
+        como_title: 'Passo a passo do processo de enriquecimento',
+        step_1: 'Lê o arquivo <code>.md</code> skeleton (front matter + tabela de colunas + seções vazias)',
+        step_2: 'Envia ao LLM com prompt de contexto: módulo, nome da tabela, lista de colunas e domínio Oracle Fusion',
+        step_3: 'LLM retorna: visão geral, descrições de colunas, categorias semânticas, relacionamentos e exemplos SQL',
+        step_4: 'Faz o parse da resposta do LLM e atualiza as seções do <code>.md</code>',
+        step_5: 'Valida: nenhuma descrição vazia, categorias são válidas, wikilinks usam nomes corretos de tabelas',
+        step_6: 'Grava o <code>.md</code> enriquecido no mesmo caminho de entrada',
+        sec_prompt: 'Prompt Engineering',
+        prompt_title: 'Estrutura do prompt enviado ao LLM',
+        prompt_desc: 'O prompt é construído dinamicamente para cada tabela e contém os seguintes blocos:',
+        prompt_1: '<strong>Nome da tabela</strong> — ex: <code>GL_BALANCES</code>',
+        prompt_2: '<strong>Contexto do módulo</strong> — ex: "General Ledger do Oracle Fusion Cloud — módulo de contabilidade"',
+        prompt_3: '<strong>Lista de colunas</strong> — nomes e tipos de dados extraídos do Excel',
+        prompt_4: '<strong>Instruções de domínio</strong> — conhecimento específico do Oracle Fusion (naming conventions, padrões de FK)',
+        prompt_5: '<strong>Inferência de FK</strong> — colunas <code>*_ID</code> são inferidas como FK para a tabela-pai correspondente (ex: <code>LEDGER_ID</code> → <code>GL_LEDGERS</code>)',
+        prompt_6: '<strong>Formato de saída</strong> — template Markdown esperado com seções, tabela de colunas e wikilinks',
+        prompt_note: 'Relacionamentos são inferidos por convenção de nomenclatura: colunas terminadas em <code>_ID</code> sugerem FK para a tabela-pai. Ex: <code>INVOICE_ID</code> → <code>[[ap_invoices_all]]</code>.',
+        sec_validacao: 'Validação de Qualidade',
+        validacao_title: 'Verificações pós-geração',
+        validacao_desc: 'Após a geração pelo LLM, uma etapa de revisão verifica:',
+        val_1: '<strong>Tabelas alucinadas</strong> — nomes de tabelas nos relacionamentos devem existir em <code>table-mappings.txt</code>',
+        val_2: '<strong>Colunas FK válidas</strong> — colunas referenciadas como FK devem existir na lista de colunas da tabela',
+        val_3: '<strong>Idioma correto</strong> — descrições devem estar em pt-BR',
+        val_4: '<strong>Confiança realista</strong> — níveis de confiança devem refletir a certeza real da inferência',
+        val_5: '<strong>Sem placeholders</strong> — nenhum campo com "a ser preenchido" ou "—" pode permanecer',
+        sec_uso: 'Uso',
+        uso_title: 'Modos de Execução',
+        uso_desc: 'A etapa pode ser executada de duas formas:',
+        sec_notas: 'Notas Importantes',
+        nota_1: 'Esta é a etapa mais cara do pipeline em termos de <strong>custo de API</strong> (~$0.03 por tabela). Planeje o orçamento antes de rodar em batch para todos os módulos.',
+        nota_2: 'Relacionamentos sem colunas FK reais são inválidos e devem ser removidos. Em nossa última limpeza, <strong>455 relacionamentos inválidos</strong> foram removidos — o LLM havia inventado "relacionamentos lógicos" sem FK real.',
+        nota_3: 'O LLM às vezes inventa <strong>relacionamentos lógicos</strong> que não possuem colunas FK no schema. Esses devem ser revisados e removidos na etapa de validação.',
+        nota_4: 'Descrições são geradas em <strong>pt-BR</strong>. A tradução para EN/ES ocorre em etapa separada do pipeline.',
+        sec_metricas: 'Métricas do Último Run',
+        stat_described: 'Tabelas Descritas',
+        stat_cleaned: 'Relacionamentos Limpos',
+        stat_confidence: 'Confiança Média',
+        stat_cost: 'Custo Total Estimado',
+        stat_time: 'Tempo Total',
+        stat_model: 'Modelo Utilizado',
+        footer_detail: 'Pipeline de Geração &middot; 03 — Descrever Tabelas'
+    },
+    en: {
+        bc_home: 'Generation Pipeline',
+        bc_current: '03 — Describe Tables',
+        title: '03 — Describe Tables',
+        subtitle: '.md Skeleton → Enriched .md (LLM)',
+        badge_cost: '~$0.03/table',
+        badge_time: '~2h for 1,205 tables',
+        sec_objetivo: 'Objective',
+        objetivo_text: 'This is the most content-rich step in the pipeline. An LLM (<strong>Claude Opus</strong>) reads each <code>.md</code> skeleton generated in step 01 and enriches it with: a business overview paragraph, description for each column, semantic category (<span class="pill pill-info">PK</span> <span class="pill pill-purple">FK</span> <span class="pill pill-warning">Amount</span> <span class="pill pill-info">Date</span> <span class="pill pill-success">Status</span> <span class="pill pill-danger">Audit</span> <span class="pill pill-purple">Config</span>), relationships section with wikilinks to parent/child tables and FK columns, typical SQL query examples, and confidence level per column.',
+        sec_dor: 'DOR — Definition of Ready',
+        dor_title: 'Prerequisites to run this step',
+        dor_1: '<code>.md</code> skeleton files exist from step 01 in <code>src/kb/.../docs/{MOD}/tables/</code>',
+        dor_2: 'Anthropic API key configured (or active Claude Code session)',
+        dor_3: 'Module context understood (what each table does in Oracle Fusion)',
+        sec_dod: 'DOD — Definition of Done',
+        dod_title: 'Acceptance criteria for this step',
+        dod_1: 'Every <code>.md</code> has an Overview paragraph (2-4 sentences describing the business purpose)',
+        dod_2: 'All columns have descriptions filled in pt-BR',
+        dod_3: 'Semantic categories assigned to each column (PK, FK, Amount, Date, Status, Audit, Config)',
+        dod_4: 'Relationships with FK columns identified and wikilinks pointing to correct tables',
+        dod_5: 'At least 2 SQL query examples per table',
+        dod_6: 'Confidence levels marked per column',
+        dod_7: 'No "to be filled" placeholders remaining',
+        sec_entrada: 'Input',
+        entrada_title: 'Input Files',
+        th_file: 'File',
+        th_path: 'Path',
+        th_desc: 'Description',
+        entrada_skeletons: '<code>.md</code> skeleton files generated in step 01 — contain front matter, column list without descriptions, and empty sections',
+        sec_saida: 'Output',
+        saida_title: 'Enriched Files',
+        saida_desc: 'The same <code>.md</code> files are enriched in-place. Before/after example of a column row:',
+        saida_before_label: 'BEFORE (skeleton from step 01)',
+        saida_after_label: 'AFTER (enriched by LLM)',
+        saida_example_label: 'Example of sections added to the <code>.md</code>:',
+        sec_como: 'How It Works',
+        como_title: 'Step-by-step enrichment process',
+        step_1: 'Reads the <code>.md</code> skeleton file (front matter + column table + empty sections)',
+        step_2: 'Sends to LLM with context prompt: module, table name, column list, and Oracle Fusion domain knowledge',
+        step_3: 'LLM returns: overview, column descriptions, semantic categories, relationships, and SQL examples',
+        step_4: 'Parses the LLM response and updates the <code>.md</code> sections',
+        step_5: 'Validates: no empty descriptions, categories are valid, wikilinks use correct table names',
+        step_6: 'Writes the enriched <code>.md</code> to the same input path',
+        sec_prompt: 'Prompt Engineering',
+        prompt_title: 'Prompt structure sent to the LLM',
+        prompt_desc: 'The prompt is dynamically built for each table and contains the following blocks:',
+        prompt_1: '<strong>Table name</strong> — e.g.: <code>GL_BALANCES</code>',
+        prompt_2: '<strong>Module context</strong> — e.g.: "General Ledger of Oracle Fusion Cloud — accounting module"',
+        prompt_3: '<strong>Column list</strong> — names and data types extracted from Excel',
+        prompt_4: '<strong>Domain instructions</strong> — Oracle Fusion-specific knowledge (naming conventions, FK patterns)',
+        prompt_5: '<strong>FK inference</strong> — <code>*_ID</code> columns are inferred as FK to the corresponding parent table (e.g.: <code>LEDGER_ID</code> → <code>GL_LEDGERS</code>)',
+        prompt_6: '<strong>Output format</strong> — expected Markdown template with sections, column table, and wikilinks',
+        prompt_note: 'Relationships are inferred by naming convention: columns ending in <code>_ID</code> suggest FK to parent table. E.g.: <code>INVOICE_ID</code> → <code>[[ap_invoices_all]]</code>.',
+        sec_validacao: 'Quality Validation',
+        validacao_title: 'Post-generation checks',
+        validacao_desc: 'After LLM generation, a review step checks:',
+        val_1: '<strong>Hallucinated tables</strong> — table names in relationships must exist in <code>table-mappings.txt</code>',
+        val_2: '<strong>Valid FK columns</strong> — columns referenced as FK must exist in the table\'s column list',
+        val_3: '<strong>Correct language</strong> — descriptions must be in pt-BR',
+        val_4: '<strong>Realistic confidence</strong> — confidence levels must reflect actual inference certainty',
+        val_5: '<strong>No placeholders</strong> — no field with "to be filled" or "—" may remain',
+        sec_uso: 'Usage',
+        uso_title: 'Execution Modes',
+        uso_desc: 'This step can be executed in two ways:',
+        sec_notas: 'Important Notes',
+        nota_1: 'This is the most expensive step in the pipeline in terms of <strong>API cost</strong> (~$0.03 per table). Plan the budget before running in batch for all modules.',
+        nota_2: 'Relationships without real FK columns are invalid and should be removed. In our last cleanup, <strong>455 invalid relationships</strong> were removed — the LLM had invented "logical relationships" without real FKs.',
+        nota_3: 'The LLM sometimes invents <strong>logical relationships</strong> that have no FK columns in the schema. These must be reviewed and removed during validation.',
+        nota_4: 'Descriptions are generated in <strong>pt-BR</strong>. Translation to EN/ES happens in a separate pipeline step.',
+        sec_metricas: 'Last Run Metrics',
+        stat_described: 'Tables Described',
+        stat_cleaned: 'Relationships Cleaned',
+        stat_confidence: 'Average Confidence',
+        stat_cost: 'Estimated Total Cost',
+        stat_time: 'Total Time',
+        stat_model: 'Model Used',
+        footer_detail: 'Generation Pipeline &middot; 03 — Describe Tables'
+    },
+    es: {
+        bc_home: 'Pipeline de Generación',
+        bc_current: '03 — Describir Tablas',
+        title: '03 — Describir Tablas',
+        subtitle: '.md Skeleton → .md Enriquecido (LLM)',
+        badge_cost: '~$0.03/tabla',
+        badge_time: '~2h para 1.205 tablas',
+        sec_objetivo: 'Objetivo',
+        objetivo_text: 'Esta es la etapa más rica en contenido del pipeline. Un LLM (<strong>Claude Opus</strong>) lee cada <code>.md</code> skeleton generado en la etapa 01 y lo enriquece con: párrafo de visión general del negocio, descripción para cada columna, categoría semántica (<span class="pill pill-info">PK</span> <span class="pill pill-purple">FK</span> <span class="pill pill-warning">Amount</span> <span class="pill pill-info">Date</span> <span class="pill pill-success">Status</span> <span class="pill pill-danger">Audit</span> <span class="pill pill-purple">Config</span>), sección de relaciones con wikilinks a tablas padre/hijo y columnas FK, ejemplos de consultas SQL típicas, y nivel de confianza por columna.',
+        sec_dor: 'DOR — Definition of Ready',
+        dor_title: 'Prerrequisitos para ejecutar esta etapa',
+        dor_1: 'Archivos <code>.md</code> skeleton existen desde la etapa 01 en <code>src/kb/.../docs/{MOD}/tables/</code>',
+        dor_2: 'API key de Anthropic configurada (o sesión activa en Claude Code)',
+        dor_3: 'Contexto del módulo comprendido (qué hace cada tabla en Oracle Fusion)',
+        sec_dod: 'DOD — Definition of Done',
+        dod_title: 'Criterios de aceptación para esta etapa',
+        dod_1: 'Todo <code>.md</code> tiene párrafo de Visión General (2-4 oraciones describiendo el propósito de negocio)',
+        dod_2: 'Todas las columnas tienen descripción completada en pt-BR',
+        dod_3: 'Categorías semánticas asignadas a cada columna (PK, FK, Amount, Date, Status, Audit, Config)',
+        dod_4: 'Relaciones con columnas FK identificadas y wikilinks apuntando a tablas correctas',
+        dod_5: 'Al menos 2 ejemplos de consultas SQL por tabla',
+        dod_6: 'Niveles de confianza marcados por columna',
+        dod_7: 'Ningún placeholder "a ser preenchido" restante',
+        sec_entrada: 'Entrada',
+        entrada_title: 'Archivos de Entrada',
+        th_file: 'Archivo',
+        th_path: 'Ruta',
+        th_desc: 'Descripción',
+        entrada_skeletons: 'Archivos <code>.md</code> skeleton generados en la etapa 01 — contienen front matter, lista de columnas sin descripción y secciones vacías',
+        sec_saida: 'Salida',
+        saida_title: 'Archivos Enriquecidos',
+        saida_desc: 'Los mismos archivos <code>.md</code> se enriquecen in-place. Ejemplo de antes/después de una fila de columna:',
+        saida_before_label: 'ANTES (skeleton de la etapa 01)',
+        saida_after_label: 'DESPUÉS (enriquecido por LLM)',
+        saida_example_label: 'Ejemplo de secciones agregadas al <code>.md</code>:',
+        sec_como: 'Cómo Funciona',
+        como_title: 'Paso a paso del proceso de enriquecimiento',
+        step_1: 'Lee el archivo <code>.md</code> skeleton (front matter + tabla de columnas + secciones vacías)',
+        step_2: 'Envía al LLM con prompt de contexto: módulo, nombre de tabla, lista de columnas y dominio Oracle Fusion',
+        step_3: 'LLM retorna: visión general, descripciones de columnas, categorías semánticas, relaciones y ejemplos SQL',
+        step_4: 'Hace el parse de la respuesta del LLM y actualiza las secciones del <code>.md</code>',
+        step_5: 'Valida: ninguna descripción vacía, categorías son válidas, wikilinks usan nombres correctos de tablas',
+        step_6: 'Graba el <code>.md</code> enriquecido en la misma ruta de entrada',
+        sec_prompt: 'Prompt Engineering',
+        prompt_title: 'Estructura del prompt enviado al LLM',
+        prompt_desc: 'El prompt se construye dinámicamente para cada tabla y contiene los siguientes bloques:',
+        prompt_1: '<strong>Nombre de la tabla</strong> — ej: <code>GL_BALANCES</code>',
+        prompt_2: '<strong>Contexto del módulo</strong> — ej: "General Ledger de Oracle Fusion Cloud — módulo de contabilidad"',
+        prompt_3: '<strong>Lista de columnas</strong> — nombres y tipos de datos extraídos del Excel',
+        prompt_4: '<strong>Instrucciones de dominio</strong> — conocimiento específico de Oracle Fusion (convenciones de nombres, patrones de FK)',
+        prompt_5: '<strong>Inferencia de FK</strong> — columnas <code>*_ID</code> se infieren como FK a la tabla padre correspondiente (ej: <code>LEDGER_ID</code> → <code>GL_LEDGERS</code>)',
+        prompt_6: '<strong>Formato de salida</strong> — template Markdown esperado con secciones, tabla de columnas y wikilinks',
+        prompt_note: 'Las relaciones se infieren por convención de nomenclatura: columnas terminadas en <code>_ID</code> sugieren FK a la tabla padre. Ej: <code>INVOICE_ID</code> → <code>[[ap_invoices_all]]</code>.',
+        sec_validacao: 'Validación de Calidad',
+        validacao_title: 'Verificaciones post-generación',
+        validacao_desc: 'Después de la generación por LLM, una etapa de revisión verifica:',
+        val_1: '<strong>Tablas alucinadas</strong> — nombres de tablas en relaciones deben existir en <code>table-mappings.txt</code>',
+        val_2: '<strong>Columnas FK válidas</strong> — columnas referenciadas como FK deben existir en la lista de columnas de la tabla',
+        val_3: '<strong>Idioma correcto</strong> — descripciones deben estar en pt-BR',
+        val_4: '<strong>Confianza realista</strong> — niveles de confianza deben reflejar la certeza real de la inferencia',
+        val_5: '<strong>Sin placeholders</strong> — ningún campo con "a ser preenchido" o "—" puede permanecer',
+        sec_uso: 'Uso',
+        uso_title: 'Modos de Ejecución',
+        uso_desc: 'La etapa puede ejecutarse de dos formas:',
+        sec_notas: 'Notas Importantes',
+        nota_1: 'Esta es la etapa más cara del pipeline en términos de <strong>costo de API</strong> (~$0.03 por tabla). Planifique el presupuesto antes de ejecutar en batch para todos los módulos.',
+        nota_2: 'Relaciones sin columnas FK reales son inválidas y deben eliminarse. En nuestra última limpieza, <strong>455 relaciones inválidas</strong> fueron eliminadas — el LLM había inventado "relaciones lógicas" sin FK real.',
+        nota_3: 'El LLM a veces inventa <strong>relaciones lógicas</strong> que no tienen columnas FK en el schema. Estas deben revisarse y eliminarse en la etapa de validación.',
+        nota_4: 'Las descripciones se generan en <strong>pt-BR</strong>. La traducción a EN/ES ocurre en una etapa separada del pipeline.',
+        sec_metricas: 'Métricas del Último Run',
+        stat_described: 'Tablas Descritas',
+        stat_cleaned: 'Relaciones Limpiadas',
+        stat_confidence: 'Confianza Promedio',
+        stat_cost: 'Costo Total Estimado',
+        stat_time: 'Tiempo Total',
+        stat_model: 'Modelo Utilizado',
+        footer_detail: 'Pipeline de Generación &middot; 03 — Describir Tablas'
+    }
+};
+
+function switchLang(lang) {
+    currentLang = lang;
+    localStorage.setItem('preferred-lang', lang);
+    document.querySelectorAll('.lang-btn').forEach(function(b) { b.classList.remove('active'); });
+    document.getElementById('lang-' + lang).classList.add('active');
+    document.querySelectorAll('[data-i18n]').forEach(function(el) {
+        var key = el.getAttribute('data-i18n');
+        if (i18n[lang] && i18n[lang][key]) el.innerHTML = i18n[lang][key];
+    });
+}
+
+function toggleTheme() {
+    var c = document.body.getAttribute('data-theme');
+    document.body.setAttribute('data-theme', c === 'light' ? '' : 'light');
+    document.getElementById('theme-icon').className = c === 'light' ? 'ri-sun-line' : 'ri-moon-line';
+    localStorage.setItem('theme', document.body.getAttribute('data-theme') || 'dark');
+}
+
+(function() {
+    var t = localStorage.getItem('theme');
+    if (t === 'light') { document.body.setAttribute('data-theme', 'light'); document.getElementById('theme-icon').className = 'ri-moon-line'; }
+    var ul = new URLSearchParams(window.location.search).get('lang');
+    var tl = ul || localStorage.getItem('preferred-lang');
+    if (tl && tl !== 'pt') switchLang(tl);
+    var btn = document.getElementById('backToTop');
+    window.addEventListener('scroll', function() { btn.classList.toggle('visible', window.scrollY > 300); });
+})();
+</script>
+</body>
+</html>

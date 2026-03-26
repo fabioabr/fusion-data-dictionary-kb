@@ -1,0 +1,535 @@
+{
+  "source": "ra_cust_trx_line_salesreps_all.md",
+  "source_hash": "99bb7f02b5d13fc80197b436da0802f6",
+  "translated_at": "2026-03-25",
+  "items": [
+    {
+      "id": 1,
+      "br": "Visão Geral",
+      "en": "Overview",
+      "es": "Visión general"
+    },
+    {
+      "id": 2,
+      "br": "Armazena a atribuição de vendedores (sales credits) às linhas de transação do módulo Accounts Receivable. Permite que uma mesma linha tenha crédito de venda dividido entre múltiplos vendedores, tanto para receita (revenue credit) quanto para crédito não-receita (non-revenue credit, usado em bônus e reconhecimento).",
+      "en": "Stores the assignment of sales credits to the lines of the Accounts Receivable module. Allows a single line to have a sales credit split among multiple vendors, both for revenue credit and non-revenue credit (used for bonuses and recognition).",
+      "es": "Almacena la asignación de créditos de venta a las líneas de transacción del módulo Accounts Receivable. Permite que una misma línea tenga crédito de venta dividido entre múltiples vendedores, tanto para ingresos (revenue credit) como para crédito no-ingresos (non-revenue credit, usado en bonos y reconocimiento)."
+    },
+    {
+      "id": 3,
+      "br": "É a tabela de referência para todo processo de comissionamento e atribuição comercial vinculado a transações AR.",
+      "en": "This is the reference table for all sales commission and assignment processes linked to AR transactions.",
+      "es": "Es la tabla de referencia para todo el proceso de comisionamiento y asignación comercial vinculado a transacciones AR."
+    },
+    {
+      "id": 4,
+      "br": "Sufixo _ALL",
+      "en": "_ALL suffix",
+      "es": "Sufijo _ALL"
+    },
+    {
+      "id": 5,
+      "br": "O sufixo _ALL indica que a tabela armazena dados de todas as business units (multi-org). O filtro por ORG_ID é necessário para consultas por organização específica.",
+      "en": "The _ALL suffix indicates that the table stores data for all business units (multi-org). Filtering by ORG_ID is necessary for queries by specific organization.",
+      "es": "El sufijo _ALL indica que la tabla almacena datos de todas las business units (multi-org). El filtro por ORG_ID es necesario para consultas por organización específica."
+    },
+    {
+      "id": 6,
+      "br": "Propósito de Negócio",
+      "en": "Business Purpose",
+      "es": "Propósito de negocio"
+    },
+    {
+      "id": 7,
+      "br": "Esta tabela é utilizada nos seguintes processos:",
+      "en": "This table is used in the following processes:",
+      "es": "Esta tabla se utiliza en los siguientes procesos:"
+    },
+    {
+      "id": 8,
+      "br": "Base para cálculo de comissões de vendedores, usando `REVENUE_AMOUNT_SPLIT` e `REVENUE_PERCENT_SPLIT`.",
+      "en": "Basis for calculating sales commissions, using `REVENUE_AMOUNT_SPLIT` and `REVENUE_PERCENT_SPLIT`.",
+      "es": "Base para el cálculo de comisiones de vendedores, utilizando `REVENUE_AMOUNT_SPLIT` y `REVENUE_PERCENT_SPLIT`."
+    },
+    {
+      "id": 9,
+      "br": "Associação de faturamento a vendedores individuais para análise de performance comercial.",
+      "en": "Association of invoices to individual vendors for commercial performance analysis.",
+      "es": "Asociación de facturación a vendedores individuales para el análisis de rendimiento comercial."
+    },
+    {
+      "id": 10,
+      "br": "Suporte a cenários onde múltiplos vendedores compartilham crédito sobre a mesma linha de transação.",
+      "en": "Support for scenarios where multiple vendors share a credit on the same transaction line.",
+      "es": "Soporte para escenarios donde múltiples vendedores comparten crédito en la misma línea de transacción."
+    },
+    {
+      "id": 11,
+      "br": "Campos `NON_REVENUE_*` permitem atribuição de crédito para fins de reconhecimento/bônus sem impacto contábil na receita.",
+      "en": "The `NON_REVENUE_*` fields allow the assignment of credit for recognition/bonus purposes without impacting revenue accounting.",
+      "es": "Los campos `NON_REVENUE_*` permiten la asignación de crédito con fines de reconocimiento/bonos sin impacto contable en los ingresos."
+    },
+    {
+      "id": 12,
+      "br": "Campos `REVENUE_SALESGROUP_ID` e `NON_REVENUE_SALESGROUP_ID` associam créditos a equipes/grupos comerciais.",
+      "en": "The `REVENUE_SALESGROUP_ID` and `NON_REVENUE_SALESGROUP_ID` fields associate credits with sales/commercial teams.",
+      "es": "Los campos `REVENUE_SALESGROUP_ID` y `NON_REVENUE_SALESGROUP_ID` asocian créditos a equipos/grupos comerciales."
+    },
+    {
+      "id": 13,
+      "br": "`PREV_CUST_TRX_LINE_SALESREP_ID` mantém o histórico quando créditos são reatribuídos.",
+      "en": "`PREV_CUST_TRX_LINE_SALESREP_ID` maintains the history when credits are re-assigned.",
+      "es": "`PREV_CUST_TRX_LINE_SALESREP_ID` mantiene el historial cuando los créditos se reasignan."
+    },
+    {
+      "id": 14,
+      "br": "Colunas Principais",
+      "en": "Key Columns",
+      "es": "Columnas principales"
+    },
+    {
+      "id": 15,
+      "br": "Confiança",
+      "en": "Confidence",
+      "es": "Confianza"
+    },
+    {
+      "id": 16,
+      "br": "Escala de 0% a 100% — grau de certeza da descrição gerada por IA com base na documentação oficial Oracle (OEDMF/BICC Release 13/25A).",
+      "en": "Scale of 0% to 100% — degree of certainty of the description generated by AI based on Oracle official documentation (OEDMF/BICC Release 13/25A).",
+      "es": "Escala del 0% al 100% — grado de certeza de la descripción generada por IA basada en la documentación oficial de Oracle (OEDMF/BICC Release 13/25A)."
+    },
+    {
+      "id": 17,
+      "br": "- 🟢 81–100% — Coluna presente na documentação oficial Oracle; nome, tipo e descrição confirmados.",
+      "en": "- 🟢 81–100% — Column present in Oracle official documentation; name, type, and description confirmed.",
+      "es": "- 🟢 81–100% — Columna presente en la documentación oficial de Oracle; nombre, tipo y descripción confirmados."
+    },
+    {
+      "id": 18,
+      "br": "- 🟡 51–80% — Coluna inferida por naming convention ou padrão Oracle; tipo exato pode variar.",
+      "en": "- 🟡 51–80% — Column inferred by naming convention or Oracle standard; exact type may vary.",
+      "es": "- 🟡 51–80% — Columna inferida por convención de nomenclatura o estándar de Oracle; el tipo exacto puede variar."
+    },
+    {
+      "id": 19,
+      "br": "- 🔴 0–50% — Existência ou tipo incertos; pode não existir no release atual; validar no ambiente.",
+      "en": "- 🔴 0–50% — Existence or type uncertain; may not exist in the current release; validate in the environment.",
+      "es": "- 🔴 0–50% — Existencia o tipo inciertos; puede no existir en la versión actual; validar en el entorno."
+    },
+    {
+      "id": 20,
+      "br": "Coluna",
+      "en": "Column",
+      "es": "Columna"
+    },
+    {
+      "id": 21,
+      "br": "Tipo",
+      "en": "Type",
+      "es": "Tipo"
+    },
+    {
+      "id": 22,
+      "br": "Nulo?",
+      "en": "Null?",
+      "es": "Nulo?"
+    },
+    {
+      "id": 23,
+      "br": "Categoria",
+      "en": "Category",
+      "es": "Categoría"
+    },
+    {
+      "id": 24,
+      "br": "Descrição",
+      "en": "Description",
+      "es": "Descripción"
+    },
+    {
+      "id": 25,
+      "br": "Identificador único do registro de crédito de venda",
+      "en": "Unique identifier for the sales credit",
+      "es": "Identificador único del registro de crédito de venta"
+    },
+    {
+      "id": 26,
+      "br": "Referência à linha da transação",
+      "en": "Transaction line reference",
+      "es": "Referencia a la línea de la transacción"
+    },
+    {
+      "id": 27,
+      "br": "Referência ao cabeçalho da transação",
+      "en": "Transaction header reference",
+      "es": "Referencia al encabezado de la transacción"
+    },
+    {
+      "id": 28,
+      "br": "Identificador do vendedor/representante",
+      "en": "Seller/representative identifier",
+      "es": "Identificador del vendedor/representante"
+    },
+    {
+      "id": 29,
+      "br": "Financeiro",
+      "en": "Finance",
+      "es": "Financiero"
+    },
+    {
+      "id": 30,
+      "br": "Valor de receita atribuído ao vendedor",
+      "en": "Revenue attributed to the seller",
+      "es": "Valor de ingresos asignado al vendedor"
+    },
+    {
+      "id": 31,
+      "br": "Valor de crédito não-receita atribuído ao vendedor",
+      "en": "Non-revenue credit attributed to the seller",
+      "es": "Valor de crédito no-ingresos asignado al vendedor"
+    },
+    {
+      "id": 32,
+      "br": "Percentual de crédito de receita (0-100)",
+      "en": "Revenue credit percentage (0-100)",
+      "es": "Porcentaje de crédito de ingresos (0-100)"
+    },
+    {
+      "id": 33,
+      "br": "Percentual de crédito não-receita (0-100)",
+      "en": "Non-revenue credit percentage (0-100)",
+      "es": "Porcentaje de crédito no-ingresos (0-100)"
+    },
+    {
+      "id": 34,
+      "br": "Comercial",
+      "en": "Sales",
+      "es": "Comercial"
+    },
+    {
+      "id": 35,
+      "br": "Grupo de vendas para crédito de receita",
+      "en": "Sales group for revenue credit",
+      "es": "Grupo de ventas para crédito de ingresos"
+    },
+    {
+      "id": 36,
+      "br": "Grupo de vendas para crédito não-receita",
+      "en": "Sales group for non-revenue credit",
+      "es": "Grupo de ventas para crédito no-ingresos"
+    },
+    {
+      "id": 37,
+      "br": "Referência cruzada",
+      "en": "Cross-reference",
+      "es": "Referencia cruzada"
+    },
+    {
+      "id": 38,
+      "br": "Registro anterior de crédito (reatribuição/credit memo)",
+      "en": "Previous credit record (reassignment/credit memo)",
+      "es": "Registro previo de crédito (re-asignación/nota de crédito)"
+    },
+    {
+      "id": 39,
+      "br": "self",
+      "en": "self",
+      "es": "self"
+    },
+    {
+      "id": 40,
+      "br": "Registro original de crédito (antes de ajustes)",
+      "en": "Original credit record (before adjustments)",
+      "es": "Registro original de crédito (antes de ajustes)"
+    },
+    {
+      "id": 41,
+      "br": "Base de cálculo do crédito de receita",
+      "en": "Revenue credit calculation basis",
+      "es": "Base de cálculo del crédito de ingresos"
+    },
+    {
+      "id": 42,
+      "br": "Contabilidade",
+      "en": "Accounting",
+      "es": "Contabilidad"
+    },
+    {
+      "id": 43,
+      "br": "ID do ajuste de receita associado",
+      "en": "Associated revenue adjustment ID",
+      "es": "ID del ajuste de ingresos asociado"
+    },
+    {
+      "id": 44,
+      "br": "Contexto do Descriptive Flexfield",
+      "en": "Descriptive Flexfield context",
+      "es": "Contexto del Descriptive Flexfield"
+    },
+    {
+      "id": 45,
+      "br": "Atributo descritivo 1",
+      "en": "Descriptive attribute 1",
+      "es": "Atributo descriptivo 1"
+    },
+    {
+      "id": 46,
+      "br": "Atributo descritivo 2",
+      "en": "Descriptive attribute 2",
+      "es": "Atributo descriptivo 2"
+    },
+    {
+      "id": 47,
+      "br": "Atributo descritivo 3",
+      "en": "Descriptive attribute 3",
+      "es": "Atributo descriptivo 3"
+    },
+    {
+      "id": 48,
+      "br": "Atributo descritivo 4",
+      "en": "Descriptive attribute 4",
+      "es": "Atributo descriptivo 4"
+    },
+    {
+      "id": 49,
+      "br": "Atributo descritivo 5",
+      "en": "Descriptive attribute 5",
+      "es": "Atributo descriptivo 5"
+    },
+    {
+      "id": 50,
+      "br": "ATTRIBUTE6–15",
+      "en": "ATTRIBUTE6–15",
+      "es": "ATTRIBUTE6–15"
+    },
+    {
+      "id": 51,
+      "br": "Atributos descritivos 6 a 15",
+      "en": "6 to 15 Descriptive Attributes",
+      "es": "Atributos descriptivos 6 a 15"
+    },
+    {
+      "id": 52,
+      "br": "Business unit (multi-org)",
+      "en": "Business unit (multi-org)",
+      "es": "Unidad de negocio (multi-org)"
+    },
+    {
+      "id": 53,
+      "br": "Auditoria",
+      "en": "Auditing",
+      "es": "Auditoría"
+    },
+    {
+      "id": 54,
+      "br": "Usuário que criou o registro",
+      "en": "User who created the record",
+      "es": "Usuario que creó el registro"
+    },
+    {
+      "id": 55,
+      "br": "Data/hora de criação",
+      "en": "Creation date/time",
+      "es": "Fecha/hora de creación"
+    },
+    {
+      "id": 56,
+      "br": "Último usuário que alterou",
+      "en": "Last user who modified",
+      "es": "Último usuario que lo modificó"
+    },
+    {
+      "id": 57,
+      "br": "Data/hora da última alteração",
+      "en": "Last modification date/time",
+      "es": "Fecha/hora de la última modificación"
+    },
+    {
+      "id": 58,
+      "br": "Login da última sessão",
+      "en": "Last session login",
+      "es": "Inicio de sesión de la última sesión"
+    },
+    {
+      "id": 59,
+      "br": "Relacionamentos",
+      "en": "Relationships",
+      "es": "Relaciones"
+    },
+    {
+      "id": 60,
+      "br": "Tabelas-pai (FK de entrada)",
+      "en": "Parent tables (FK of entry)",
+      "es": "Tablas padre (clave foránea de entrada)"
+    },
+    {
+      "id": 61,
+      "br": "cabeçalho da transação",
+      "en": "Transaction header",
+      "es": "Encabezado de la transacción"
+    },
+    {
+      "id": 62,
+      "br": "linha da transação",
+      "en": "Transaction line",
+      "es": "Línea de la transacción"
+    },
+    {
+      "id": 63,
+      "br": "vendedor/representante",
+      "en": "Salesperson/representative",
+      "es": "Vendedor/representante"
+    },
+    {
+      "id": 64,
+      "br": "jtf_rs_groups_b — via REVENUE_SALESGROUP_ID, NON_REVENUE_SALESGROUP_ID (grupos de vendas)",
+      "en": "jtf_rs_groups_b — via REVENUE_SALESGROUP_ID, NON_REVENUE_SALESGROUP_ID (sales groups)",
+      "es": "jtf_rs_groups_b — a través de REVENUE_SALESGROUP_ID, NON_REVENUE_SALESGROUP_ID (grupos de ventas)"
+    },
+    {
+      "id": 65,
+      "br": "business unit",
+      "en": "Business unit",
+      "es": "Unidad de negocio"
+    },
+    {
+      "id": 66,
+      "br": "Tabelas-filha (FK de saída)",
+      "en": "Child tables (FK of exit)",
+      "es": "Tablas hijas (clave foránea de salida)"
+    },
+    {
+      "id": 67,
+      "br": "Não possui tabelas-filha diretas. Relaciona-se indiretamente com módulos de comissionamento e incentivos.",
+      "en": "Does not have direct child tables. Indirectly relates to commission and incentive modules.",
+      "es": "No tiene tablas hijas directas. Se relaciona indirectamente con módulos de comisiones e incentivos."
+    },
+    {
+      "id": 68,
+      "br": "Self-references",
+      "en": "Self-references",
+      "es": "Referencias propias"
+    },
+    {
+      "id": 69,
+      "br": "Registro anterior de crédito (quando reatribuído ou originado de credit memo)",
+      "en": "Previous credit record (when reattributed or originating from a credit memo)",
+      "es": "Registro anterior de crédito (cuando se reasigna o se origina de una nota de crédito)"
+    },
+    {
+      "id": 70,
+      "br": "Registro original antes de ajustes de receita",
+      "en": "Original record before revenue adjustments",
+      "es": "Registro original antes de ajustes de ingresos"
+    },
+    {
+      "id": 71,
+      "br": "Uso Típico",
+      "en": "Typical Use",
+      "es": "Uso típico"
+    },
+    {
+      "id": 72,
+      "br": "Relatório de vendas por representante",
+      "en": "Sales report by salesperson",
+      "es": "Informe de ventas por representante"
+    },
+    {
+      "id": 73,
+      "br": "Linhas com crédito dividido entre vendedores",
+      "en": "Lines with credit split between salespeople",
+      "es": "Líneas con crédito dividido entre vendedores"
+    },
+    {
+      "id": 74,
+      "br": "Filtros comuns",
+      "en": "Common filters",
+      "es": "Filtros comunes"
+    },
+    {
+      "id": 75,
+      "br": "Apenas créditos com percentual de receita",
+      "en": "Only credits with revenue percentage",
+      "es": "Solo créditos con porcentaje de ingresos"
+    },
+    {
+      "id": 76,
+      "br": "Apenas créditos não-receita (bônus/reconhecimento)",
+      "en": "Only non-revenue credits (e.g., bonuses/recognition)",
+      "es": "Solo créditos no-ingresos (bonos/reconocimiento)"
+    },
+    {
+      "id": 77,
+      "br": "Filtrar por vendedor específico",
+      "en": "Filter by specific vendor",
+      "es": "Filtrar por vendedor específico"
+    },
+    {
+      "id": 78,
+      "br": "Filtrar por grupo de vendas",
+      "en": "Filter by sales group",
+      "es": "Filtrar por grupo de ventas"
+    },
+    {
+      "id": 79,
+      "br": "Observações",
+      "en": "Notes",
+      "es": "Observaciones"
+    },
+    {
+      "id": 80,
+      "br": "A soma de REVENUE_PERCENT_SPLIT para todas as atribuições de uma mesma linha deve ser 100%. Isso é validado pelo Oracle Fusion ao salvar a transação.",
+      "en": "The sum of REVENUE_PERCENT_SPLIT for all assignments on the same line must be 100%. This is validated by Oracle Fusion when the transaction is saved.",
+      "es": "La suma de REVENUE_PERCENT_SPLIT para todas las asignaciones de la misma línea debe ser 100%. Esto es validado por Oracle Fusion al guardar la transacción."
+    },
+    {
+      "id": 81,
+      "br": "O campo NON_REVENUE_AMOUNT_SPLIT não afeta a contabilidade; é usado apenas para fins de relatório e comissionamento.",
+      "en": "The NON_REVENUE_AMOUNT_SPLIT field does not affect accounting; it is only used for reporting and commission purposes.",
+      "es": "El campo NON_REVENUE_AMOUNT_SPLIT no afecta la contabilidad; se utiliza solo para fines de informe y comisiones."
+    },
+    {
+      "id": 82,
+      "br": "Quando um credit memo é gerado, os créditos de venda são copiados da transação original e PREV_CUST_TRX_LINE_SALESREP_ID aponta para o registro original.",
+      "en": "When a credit memo is generated, the sales credits are copied from the original transaction, and PREV_CUST_TRX_LINE_SALESREP_ID points to the original record.",
+      "es": "Cuando se genera una nota de crédito, los créditos de venta se copian de la transacción original y PREV_CUST_TRX_LINE_SALESREP_ID apunta al registro original."
+    },
+    {
+      "id": 83,
+      "br": "Em cenários de Revenue Adjustment, o REVENUE_ADJUSTMENT_ID conecta a alteração de crédito ao ajuste contábil correspondente.",
+      "en": "In Revenue Adjustment scenarios, REVENUE_ADJUSTMENT_ID connects the credit change to the corresponding accounting adjustment.",
+      "es": "En escenarios de Ajuste de Ingresos, el REVENUE_ADJUSTMENT_ID conecta la modificación de crédito al ajuste contable correspondiente."
+    },
+    {
+      "id": 84,
+      "br": "A tabela possui Descriptive Flexfields (DFF) via ATTRIBUTE1–15 para customizações por implementação.",
+      "en": "The table has Descriptive Flexfields (DFF) via ATTRIBUTE1–15 for customization by implementation.",
+      "es": "La tabla tiene Descriptive Flexfields (DFF) vía ATTRIBUTE1–15 para personalizaciones por implementación."
+    },
+    {
+      "id": 85,
+      "br": "O vendedor padrão da transação é definido em PRIMARY_SALESREP_ID no cabeçalho (ra_customer_trx_all), mas pode ser sobrescrito por linha nesta tabela.",
+      "en": "The default vendor for the transaction is defined in PRIMARY_SALESREP_ID in the header (ra_customer_trx_all), but it can be overridden on the line in this table.",
+      "es": "El vendedor predeterminado de la transacción se define en PRIMARY_SALESREP_ID en el encabezado (ra_customer_trx_all), pero puede ser sobrescrito por línea en esta tabla."
+    },
+    {
+      "id": 86,
+      "br": "Referências",
+      "en": "References",
+      "es": "Referencias"
+    },
+    {
+      "id": 87,
+      "br": "[Oracle Docs — RA_CUST_TRX_LINE_SALESREPS_ALL](https://docs.oracle.com/en/cloud/saas/financials/25a/oedmf/racusttrxlinesalesrepsall-25222.html)",
+      "en": "[Oracle Docs — RA_CUST_TRX_LINE_SALESREPS_ALL](https://docs.oracle.com/en/cloud/saas/financials/25a/oedmf/racusttrxlinesalesrepsall-25222.html)",
+      "es": "[Oracle Docs — RA_CUST_TRX_LINE_SALESREPS_ALL](https://docs.oracle.com/en/cloud/saas/financials/25a/oedmf/racusttrxlinesalesrepsall-25222.html)"
+    },
+    {
+      "id": 88,
+      "br": "ar-module-data-dictionary — Dossiê do módulo AR",
+      "en": "ar-module-data-dictionary — AR module data dictionary",
+      "es": "ar-module-data-dictionary — Documento del módulo AR"
+    }
+  ]
+}

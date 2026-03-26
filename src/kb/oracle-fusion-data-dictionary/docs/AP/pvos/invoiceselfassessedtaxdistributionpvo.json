@@ -1,0 +1,2121 @@
+{
+  "meta": {
+    "pvo_name": "InvoiceSelfAssessedTaxDistributionPVO",
+    "full_path": "FscmTopModelAM.FinApInvTransactionsAM.InvoiceSelfAssessedTaxDistributionPVO",
+    "module_path": "FscmTopModelAM.FinApInvTransactionsAM",
+    "module_code": "AP",
+    "type": "pvo",
+    "description": "Extrai as distribuições de impostos auto-avaliados (self-assessed) em faturas, incluindo regime fiscal, alíquota e valores. Necessário para conformidade com obrigações tributárias de autolancamento, como reverse charge em operações internacionais."
+  },
+  "stats": {
+    "total_attributes": 149,
+    "tables_count": 4,
+    "bicc_enabled": 14,
+    "bicc_pct": 9,
+    "pk_count": 1
+  },
+  "tables": [
+    "AP_SELF_ASSESSED_TAX_DIST_ALL",
+    "FUN_BU_PERF_V",
+    "GL_LEDGERS",
+    "ZX_LINES"
+  ],
+  "attributes": [
+    {
+      "name": "BusinessUnitBusinessUnitId",
+      "table": "FUN_BU_PERF_V",
+      "column": "BU_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "DetailTaxLinePEOCancelFlag",
+      "table": "ZX_LINES",
+      "column": "CANCEL_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "DetailTaxLinePEOIncludedFlag",
+      "table": "ZX_LINES",
+      "column": "TAX_ONLY_LINE_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "DetailTaxLinePEOJurisdictionCode",
+      "table": "ZX_LINES",
+      "column": "TAX_JURISDICTION_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "DetailTaxLinePEOJurisdictionId",
+      "table": "ZX_LINES",
+      "column": "TAX_JURISDICTION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "DetailTaxLinePEOObjectVersionNumber1",
+      "table": "ZX_LINES",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "DetailTaxLinePEOReportingCurrencyCode",
+      "table": "ZX_LINES",
+      "column": "REPORTING_CURRENCY_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "DetailTaxLinePEOSelfAssessedFlag",
+      "table": "ZX_LINES",
+      "column": "SELF_ASSESSED_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "DetailTaxLinePEOTaxAmtFunclCurr",
+      "table": "ZX_LINES",
+      "column": "TAX_AMT_FUNCL_CURR",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "DetailTaxLinePEOTaxCurrencyCode",
+      "table": "ZX_LINES",
+      "column": "TAX_CURRENCY_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "DetailTaxLinePEOTaxId",
+      "table": "ZX_LINES",
+      "column": "TAX_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "DetailTaxLinePEOTaxLineId",
+      "table": "ZX_LINES",
+      "column": "TAX_LINE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "DetailTaxLinePEOTaxRate",
+      "table": "ZX_LINES",
+      "column": "TAX_RATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "DetailTaxLinePEOTaxRateCode",
+      "table": "ZX_LINES",
+      "column": "TAX_RATE_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "DetailTaxLinePEOTaxRateId",
+      "table": "ZX_LINES",
+      "column": "TAX_RATE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "DetailTaxLinePEOTaxRegimeCode",
+      "table": "ZX_LINES",
+      "column": "TAX_REGIME_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "DetailTaxLinePEOTaxRegimeId",
+      "table": "ZX_LINES",
+      "column": "TAX_REGIME_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "DetailTaxLinePEOTaxStatusId",
+      "table": "ZX_LINES",
+      "column": "TAX_STATUS_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "DetailTaxLinePEOTaxonlyLineFlag",
+      "table": "ZX_LINES",
+      "column": "TAX_ONLY_LINE_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceDistributionId",
+      "table": "AP_SELF_ASSESSED_TAX_DIST_ALL",
+      "column": "INVOICE_DISTRIBUTION_ID",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceSelfAssessedTaxChargeApplicableToDistId",
+      "table": "AP_SELF_ASSESSED_TAX_DIST_ALL",
+      "column": "CHARGE_APPLICABLE_TO_DIST_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceSelfAssessedTaxDistAccountingDate",
+      "table": "AP_SELF_ASSESSED_TAX_DIST_ALL",
+      "column": "ACCOUNTING_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceSelfAssessedTaxDistAccountingEventId",
+      "table": "AP_SELF_ASSESSED_TAX_DIST_ALL",
+      "column": "ACCOUNTING_EVENT_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceSelfAssessedTaxDistAdjustmentReason",
+      "table": "AP_SELF_ASSESSED_TAX_DIST_ALL",
+      "column": "ADJUSTMENT_REASON",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceSelfAssessedTaxDistAmount",
+      "table": "AP_SELF_ASSESSED_TAX_DIST_ALL",
+      "column": "AMOUNT",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceSelfAssessedTaxDistAmountVariance",
+      "table": "AP_SELF_ASSESSED_TAX_DIST_ALL",
+      "column": "AMOUNT_VARIANCE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceSelfAssessedTaxDistAssetBookTypeCode",
+      "table": "AP_SELF_ASSESSED_TAX_DIST_ALL",
+      "column": "ASSET_BOOK_TYPE_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceSelfAssessedTaxDistAssetCategoryId",
+      "table": "AP_SELF_ASSESSED_TAX_DIST_ALL",
+      "column": "ASSET_CATEGORY_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceSelfAssessedTaxDistAssetsAdditionFlag",
+      "table": "AP_SELF_ASSESSED_TAX_DIST_ALL",
+      "column": "ASSETS_ADDITION_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceSelfAssessedTaxDistAssetsTrackingFlag",
+      "table": "AP_SELF_ASSESSED_TAX_DIST_ALL",
+      "column": "ASSETS_TRACKING_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceSelfAssessedTaxDistAttributeCategory",
+      "table": "AP_SELF_ASSESSED_TAX_DIST_ALL",
+      "column": "ATTRIBUTE_CATEGORY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceSelfAssessedTaxDistAwardId",
+      "table": "AP_SELF_ASSESSED_TAX_DIST_ALL",
+      "column": "AWARD_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceSelfAssessedTaxDistAwtFlag",
+      "table": "AP_SELF_ASSESSED_TAX_DIST_ALL",
+      "column": "AWT_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceSelfAssessedTaxDistAwtGrossAmount",
+      "table": "AP_SELF_ASSESSED_TAX_DIST_ALL",
+      "column": "AWT_GROSS_AMOUNT",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceSelfAssessedTaxDistAwtGroupId",
+      "table": "AP_SELF_ASSESSED_TAX_DIST_ALL",
+      "column": "AWT_GROUP_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceSelfAssessedTaxDistAwtInvoiceId",
+      "table": "AP_SELF_ASSESSED_TAX_DIST_ALL",
+      "column": "AWT_INVOICE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceSelfAssessedTaxDistAwtInvoicePaymentId",
+      "table": "AP_SELF_ASSESSED_TAX_DIST_ALL",
+      "column": "AWT_INVOICE_PAYMENT_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceSelfAssessedTaxDistAwtOriginGroupId",
+      "table": "AP_SELF_ASSESSED_TAX_DIST_ALL",
+      "column": "AWT_ORIGIN_GROUP_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceSelfAssessedTaxDistAwtTaxRateId",
+      "table": "AP_SELF_ASSESSED_TAX_DIST_ALL",
+      "column": "AWT_TAX_RATE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceSelfAssessedTaxDistAwtWithheldAmt",
+      "table": "AP_SELF_ASSESSED_TAX_DIST_ALL",
+      "column": "AWT_WITHHELD_AMT",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceSelfAssessedTaxDistBaseAmount",
+      "table": "AP_SELF_ASSESSED_TAX_DIST_ALL",
+      "column": "BASE_AMOUNT",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceSelfAssessedTaxDistBaseAmountVariance",
+      "table": "AP_SELF_ASSESSED_TAX_DIST_ALL",
+      "column": "BASE_AMOUNT_VARIANCE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceSelfAssessedTaxDistBaseQuantityVariance",
+      "table": "AP_SELF_ASSESSED_TAX_DIST_ALL",
+      "column": "BASE_QUANTITY_VARIANCE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceSelfAssessedTaxDistBatchId",
+      "table": "AP_SELF_ASSESSED_TAX_DIST_ALL",
+      "column": "BATCH_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceSelfAssessedTaxDistBcEventId",
+      "table": "AP_SELF_ASSESSED_TAX_DIST_ALL",
+      "column": "BC_EVENT_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceSelfAssessedTaxDistCancellationFlag",
+      "table": "AP_SELF_ASSESSED_TAX_DIST_ALL",
+      "column": "CANCELLATION_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceSelfAssessedTaxDistCcReversalFlag",
+      "table": "AP_SELF_ASSESSED_TAX_DIST_ALL",
+      "column": "CC_REVERSAL_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceSelfAssessedTaxDistCompanyPrepaidInvoiceId",
+      "table": "AP_SELF_ASSESSED_TAX_DIST_ALL",
+      "column": "COMPANY_PREPAID_INVOICE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceSelfAssessedTaxDistCorrectedInvoiceDistId",
+      "table": "AP_SELF_ASSESSED_TAX_DIST_ALL",
+      "column": "CORRECTED_INVOICE_DIST_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceSelfAssessedTaxDistCorrectedQuantity",
+      "table": "AP_SELF_ASSESSED_TAX_DIST_ALL",
+      "column": "CORRECTED_QUANTITY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceSelfAssessedTaxDistCountryOfSupply",
+      "table": "AP_SELF_ASSESSED_TAX_DIST_ALL",
+      "column": "COUNTRY_OF_SUPPLY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceSelfAssessedTaxDistCreatedBy",
+      "table": "AP_SELF_ASSESSED_TAX_DIST_ALL",
+      "column": "CREATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceSelfAssessedTaxDistCreationDate",
+      "table": "AP_SELF_ASSESSED_TAX_DIST_ALL",
+      "column": "CREATION_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceSelfAssessedTaxDistCreditCardTrxId",
+      "table": "AP_SELF_ASSESSED_TAX_DIST_ALL",
+      "column": "CREDIT_CARD_TRX_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceSelfAssessedTaxDistCurrencyCode",
+      "table": "AP_SELF_ASSESSED_TAX_DIST_ALL",
+      "column": "RECEIPT_CURRENCY_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceSelfAssessedTaxDistDailyAmount",
+      "table": "AP_SELF_ASSESSED_TAX_DIST_ALL",
+      "column": "DAILY_AMOUNT",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceSelfAssessedTaxDistDescription",
+      "table": "AP_SELF_ASSESSED_TAX_DIST_ALL",
+      "column": "DESCRIPTION",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceSelfAssessedTaxDistDetailTaxDistId",
+      "table": "AP_SELF_ASSESSED_TAX_DIST_ALL",
+      "column": "DETAIL_TAX_DIST_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceSelfAssessedTaxDistDistCodeCombinationId",
+      "table": "AP_SELF_ASSESSED_TAX_DIST_ALL",
+      "column": "DIST_CODE_COMBINATION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceSelfAssessedTaxDistDistMatchType",
+      "table": "AP_SELF_ASSESSED_TAX_DIST_ALL",
+      "column": "DIST_MATCH_TYPE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceSelfAssessedTaxDistDistributionClass",
+      "table": "AP_SELF_ASSESSED_TAX_DIST_ALL",
+      "column": "DISTRIBUTION_CLASS",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceSelfAssessedTaxDistDistributionLineNumber",
+      "table": "AP_SELF_ASSESSED_TAX_DIST_ALL",
+      "column": "DISTRIBUTION_LINE_NUMBER",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceSelfAssessedTaxDistEncumberedFlag",
+      "table": "AP_SELF_ASSESSED_TAX_DIST_ALL",
+      "column": "ENCUMBERED_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceSelfAssessedTaxDistEndExpenseDate",
+      "table": "AP_SELF_ASSESSED_TAX_DIST_ALL",
+      "column": "END_EXPENSE_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceSelfAssessedTaxDistExpenditureItemDate",
+      "table": "AP_SELF_ASSESSED_TAX_DIST_ALL",
+      "column": "EXPENDITURE_ITEM_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceSelfAssessedTaxDistExpenditureOrganizationId",
+      "table": "AP_SELF_ASSESSED_TAX_DIST_ALL",
+      "column": "EXPENDITURE_ORGANIZATION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceSelfAssessedTaxDistExpenditureType",
+      "table": "AP_SELF_ASSESSED_TAX_DIST_ALL",
+      "column": "EXPENDITURE_TYPE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceSelfAssessedTaxDistExpenseGroup",
+      "table": "AP_SELF_ASSESSED_TAX_DIST_ALL",
+      "column": "EXPENSE_GROUP",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceSelfAssessedTaxDistExtraPoErv",
+      "table": "AP_SELF_ASSESSED_TAX_DIST_ALL",
+      "column": "EXTRA_PO_ERV",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceSelfAssessedTaxDistFinalMatchFlag",
+      "table": "AP_SELF_ASSESSED_TAX_DIST_ALL",
+      "column": "FINAL_MATCH_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceSelfAssessedTaxDistGlobalAttributeCategory",
+      "table": "AP_SELF_ASSESSED_TAX_DIST_ALL",
+      "column": "GLOBAL_ATTRIBUTE_CATEGORY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceSelfAssessedTaxDistGmsBurdenableRawCost",
+      "table": "AP_SELF_ASSESSED_TAX_DIST_ALL",
+      "column": "GMS_BURDENABLE_RAW_COST",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceSelfAssessedTaxDistIncomeTaxRegion",
+      "table": "AP_SELF_ASSESSED_TAX_DIST_ALL",
+      "column": "INCOME_TAX_REGION",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceSelfAssessedTaxDistIntendedUse",
+      "table": "AP_SELF_ASSESSED_TAX_DIST_ALL",
+      "column": "INTENDED_USE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceSelfAssessedTaxDistInventoryTransferStatus",
+      "table": "AP_SELF_ASSESSED_TAX_DIST_ALL",
+      "column": "INVENTORY_TRANSFER_STATUS",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceSelfAssessedTaxDistInvoiceLineNumber",
+      "table": "AP_SELF_ASSESSED_TAX_DIST_ALL",
+      "column": "INVOICE_LINE_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceSelfAssessedTaxDistInvoiceSelfAssessedTaxDistParentReversalId",
+      "table": "AP_SELF_ASSESSED_TAX_DIST_ALL",
+      "column": "PARENT_REVERSAL_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceSelfAssessedTaxDistJustification",
+      "table": "AP_SELF_ASSESSED_TAX_DIST_ALL",
+      "column": "JUSTIFICATION",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceSelfAssessedTaxDistLastUpdateDate",
+      "table": "AP_SELF_ASSESSED_TAX_DIST_ALL",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": true
+    },
+    {
+      "name": "InvoiceSelfAssessedTaxDistLastUpdateLogin",
+      "table": "AP_SELF_ASSESSED_TAX_DIST_ALL",
+      "column": "LAST_UPDATE_LOGIN",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceSelfAssessedTaxDistLastUpdatedBy",
+      "table": "AP_SELF_ASSESSED_TAX_DIST_ALL",
+      "column": "LAST_UPDATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceSelfAssessedTaxDistLineTypeLookupCode",
+      "table": "AP_SELF_ASSESSED_TAX_DIST_ALL",
+      "column": "LINE_TYPE_LOOKUP_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceSelfAssessedTaxDistMatchStatusFlag",
+      "table": "AP_SELF_ASSESSED_TAX_DIST_ALL",
+      "column": "MATCH_STATUS_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceSelfAssessedTaxDistMatchedUomLookupCode",
+      "table": "AP_SELF_ASSESSED_TAX_DIST_ALL",
+      "column": "MATCHED_UOM_LOOKUP_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceSelfAssessedTaxDistMerchantDocumentNumber",
+      "table": "AP_SELF_ASSESSED_TAX_DIST_ALL",
+      "column": "MERCHANT_DOCUMENT_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceSelfAssessedTaxDistMerchantName",
+      "table": "AP_SELF_ASSESSED_TAX_DIST_ALL",
+      "column": "MERCHANT_NAME",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceSelfAssessedTaxDistMerchantReference",
+      "table": "AP_SELF_ASSESSED_TAX_DIST_ALL",
+      "column": "MERCHANT_REFERENCE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceSelfAssessedTaxDistMerchantTaxRegNumber",
+      "table": "AP_SELF_ASSESSED_TAX_DIST_ALL",
+      "column": "MERCHANT_TAX_REG_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceSelfAssessedTaxDistMerchantTaxpayerId",
+      "table": "AP_SELF_ASSESSED_TAX_DIST_ALL",
+      "column": "MERCHANT_TAXPAYER_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceSelfAssessedTaxDistObjectVersionNumber",
+      "table": "AP_SELF_ASSESSED_TAX_DIST_ALL",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceSelfAssessedTaxDistOrgId",
+      "table": "AP_SELF_ASSESSED_TAX_DIST_ALL",
+      "column": "ORG_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceSelfAssessedTaxDistPaAdditionFlag",
+      "table": "AP_SELF_ASSESSED_TAX_DIST_ALL",
+      "column": "PA_ADDITION_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceSelfAssessedTaxDistPaCmtXfaceFlag",
+      "table": "AP_SELF_ASSESSED_TAX_DIST_ALL",
+      "column": "PA_CMT_XFACE_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceSelfAssessedTaxDistPaQuantity",
+      "table": "AP_SELF_ASSESSED_TAX_DIST_ALL",
+      "column": "PA_QUANTITY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceSelfAssessedTaxDistPacketId",
+      "table": "AP_SELF_ASSESSED_TAX_DIST_ALL",
+      "column": "PACKET_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceSelfAssessedTaxDistParentInvoiceId",
+      "table": "AP_SELF_ASSESSED_TAX_DIST_ALL",
+      "column": "PARENT_INVOICE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceSelfAssessedTaxDistPeriodName",
+      "table": "AP_SELF_ASSESSED_TAX_DIST_ALL",
+      "column": "PERIOD_NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceSelfAssessedTaxDistPoDistributionId",
+      "table": "AP_SELF_ASSESSED_TAX_DIST_ALL",
+      "column": "PO_DISTRIBUTION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceSelfAssessedTaxDistPostedFlag",
+      "table": "AP_SELF_ASSESSED_TAX_DIST_ALL",
+      "column": "POSTED_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceSelfAssessedTaxDistPrepayAmountRemaining",
+      "table": "AP_SELF_ASSESSED_TAX_DIST_ALL",
+      "column": "PREPAY_AMOUNT_REMAINING",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceSelfAssessedTaxDistPrepayDistributionId",
+      "table": "AP_SELF_ASSESSED_TAX_DIST_ALL",
+      "column": "PREPAY_DISTRIBUTION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceSelfAssessedTaxDistPrepayTaxDiffAmount",
+      "table": "AP_SELF_ASSESSED_TAX_DIST_ALL",
+      "column": "PREPAY_TAX_DIFF_AMOUNT",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceSelfAssessedTaxDistProgramApplicationId",
+      "table": "AP_SELF_ASSESSED_TAX_DIST_ALL",
+      "column": "PROGRAM_APPLICATION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceSelfAssessedTaxDistProgramId",
+      "table": "AP_SELF_ASSESSED_TAX_DIST_ALL",
+      "column": "PROGRAM_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceSelfAssessedTaxDistProgramUpdateDate",
+      "table": "AP_SELF_ASSESSED_TAX_DIST_ALL",
+      "column": "PROGRAM_UPDATE_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceSelfAssessedTaxDistProjectId",
+      "table": "AP_SELF_ASSESSED_TAX_DIST_ALL",
+      "column": "PROJECT_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceSelfAssessedTaxDistQuantityInvoiced",
+      "table": "AP_SELF_ASSESSED_TAX_DIST_ALL",
+      "column": "QUANTITY_INVOICED",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceSelfAssessedTaxDistQuantityVariance",
+      "table": "AP_SELF_ASSESSED_TAX_DIST_ALL",
+      "column": "QUANTITY_VARIANCE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceSelfAssessedTaxDistRcvChargeAdditionFlag",
+      "table": "AP_SELF_ASSESSED_TAX_DIST_ALL",
+      "column": "RCV_CHARGE_ADDITION_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceSelfAssessedTaxDistRcvTransactionId",
+      "table": "AP_SELF_ASSESSED_TAX_DIST_ALL",
+      "column": "RCV_TRANSACTION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceSelfAssessedTaxDistRecNrecRate",
+      "table": "AP_SELF_ASSESSED_TAX_DIST_ALL",
+      "column": "REC_NREC_RATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceSelfAssessedTaxDistReceiptConversionRate",
+      "table": "AP_SELF_ASSESSED_TAX_DIST_ALL",
+      "column": "RECEIPT_CONVERSION_RATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceSelfAssessedTaxDistReceiptCurrencyAmount",
+      "table": "AP_SELF_ASSESSED_TAX_DIST_ALL",
+      "column": "RECEIPT_CURRENCY_AMOUNT",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceSelfAssessedTaxDistReceiptMissingFlag",
+      "table": "AP_SELF_ASSESSED_TAX_DIST_ALL",
+      "column": "RECEIPT_MISSING_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceSelfAssessedTaxDistReceiptRequiredFlag",
+      "table": "AP_SELF_ASSESSED_TAX_DIST_ALL",
+      "column": "RECEIPT_REQUIRED_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceSelfAssessedTaxDistReceiptVerifiedFlag",
+      "table": "AP_SELF_ASSESSED_TAX_DIST_ALL",
+      "column": "RECEIPT_VERIFIED_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceSelfAssessedTaxDistRecoveryRateId",
+      "table": "AP_SELF_ASSESSED_TAX_DIST_ALL",
+      "column": "RECOVERY_RATE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceSelfAssessedTaxDistRecoveryRateName",
+      "table": "AP_SELF_ASSESSED_TAX_DIST_ALL",
+      "column": "RECOVERY_RATE_NAME",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceSelfAssessedTaxDistRecoveryTypeCode",
+      "table": "AP_SELF_ASSESSED_TAX_DIST_ALL",
+      "column": "RECOVERY_TYPE_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceSelfAssessedTaxDistReference1",
+      "table": "AP_SELF_ASSESSED_TAX_DIST_ALL",
+      "column": "REFERENCE_1",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceSelfAssessedTaxDistReference2",
+      "table": "AP_SELF_ASSESSED_TAX_DIST_ALL",
+      "column": "REFERENCE_2",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceSelfAssessedTaxDistRelatedId",
+      "table": "AP_SELF_ASSESSED_TAX_DIST_ALL",
+      "column": "RELATED_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceSelfAssessedTaxDistRequestId",
+      "table": "AP_SELF_ASSESSED_TAX_DIST_ALL",
+      "column": "REQUEST_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceSelfAssessedTaxDistReversalFlag",
+      "table": "AP_SELF_ASSESSED_TAX_DIST_ALL",
+      "column": "REVERSAL_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceSelfAssessedTaxDistRoundingAmt",
+      "table": "AP_SELF_ASSESSED_TAX_DIST_ALL",
+      "column": "ROUNDING_AMT",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceSelfAssessedTaxDistSelfAssessedFlag",
+      "table": "AP_SELF_ASSESSED_TAX_DIST_ALL",
+      "column": "SELF_ASSESSED_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceSelfAssessedTaxDistSelfAssessedTaxLiabCcid",
+      "table": "AP_SELF_ASSESSED_TAX_DIST_ALL",
+      "column": "SELF_ASSESSED_TAX_LIAB_CCID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceSelfAssessedTaxDistSetOfBooksId",
+      "table": "AP_SELF_ASSESSED_TAX_DIST_ALL",
+      "column": "SET_OF_BOOKS_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceSelfAssessedTaxDistStartExpenseDate",
+      "table": "AP_SELF_ASSESSED_TAX_DIST_ALL",
+      "column": "START_EXPENSE_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceSelfAssessedTaxDistStatAmount",
+      "table": "AP_SELF_ASSESSED_TAX_DIST_ALL",
+      "column": "STAT_AMOUNT",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceSelfAssessedTaxDistSummaryTaxLineId",
+      "table": "AP_SELF_ASSESSED_TAX_DIST_ALL",
+      "column": "SUMMARY_TAX_LINE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceSelfAssessedTaxDistTaskId",
+      "table": "AP_SELF_ASSESSED_TAX_DIST_ALL",
+      "column": "TASK_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceSelfAssessedTaxDistTaxAlreadyDistributedFlag",
+      "table": "AP_SELF_ASSESSED_TAX_DIST_ALL",
+      "column": "TAX_ALREADY_DISTRIBUTED_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceSelfAssessedTaxDistTaxCodeId",
+      "table": "AP_SELF_ASSESSED_TAX_DIST_ALL",
+      "column": "TAX_CODE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceSelfAssessedTaxDistTaxRecoverableFlag",
+      "table": "AP_SELF_ASSESSED_TAX_DIST_ALL",
+      "column": "TAX_RECOVERABLE_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceSelfAssessedTaxDistTaxableAmount",
+      "table": "AP_SELF_ASSESSED_TAX_DIST_ALL",
+      "column": "TAXABLE_AMOUNT",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceSelfAssessedTaxDistTaxableBaseAmount",
+      "table": "AP_SELF_ASSESSED_TAX_DIST_ALL",
+      "column": "TAXABLE_BASE_AMOUNT",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceSelfAssessedTaxDistType1099",
+      "table": "AP_SELF_ASSESSED_TAX_DIST_ALL",
+      "column": "TYPE_1099",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceSelfAssessedTaxDistUnitPrice",
+      "table": "AP_SELF_ASSESSED_TAX_DIST_ALL",
+      "column": "UNIT_PRICE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceSelfAssessedTaxDistUpgradeBasePostedAmt",
+      "table": "AP_SELF_ASSESSED_TAX_DIST_ALL",
+      "column": "UPGRADE_BASE_POSTED_AMT",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceSelfAssessedTaxDistUpgradePostedAmt",
+      "table": "AP_SELF_ASSESSED_TAX_DIST_ALL",
+      "column": "UPGRADE_POSTED_AMT",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceSelfAssessedTaxDistUssglTransactionCode",
+      "table": "AP_SELF_ASSESSED_TAX_DIST_ALL",
+      "column": "USSGL_TRANSACTION_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceSelfAssessedTaxDistUssglTrxCodeContext",
+      "table": "AP_SELF_ASSESSED_TAX_DIST_ALL",
+      "column": "USSGL_TRX_CODE_CONTEXT",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceSelfAssessedTaxDistWebParameterId",
+      "table": "AP_SELF_ASSESSED_TAX_DIST_ALL",
+      "column": "WEB_PARAMETER_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceSelfAssessedTaxDistWithholdingTaxCodeId",
+      "table": "AP_SELF_ASSESSED_TAX_DIST_ALL",
+      "column": "WITHHOLDING_TAX_CODE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LedgersChartOfAccountsId",
+      "table": "GL_LEDGERS",
+      "column": "CHART_OF_ACCOUNTS_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LedgersCurrencyCode",
+      "table": "GL_LEDGERS",
+      "column": "CURRENCY_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LedgersLedgerId",
+      "table": "GL_LEDGERS",
+      "column": "LEDGER_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LedgersObjectVersionNumber",
+      "table": "GL_LEDGERS",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    }
+  ],
+  "by_table": {
+    "FUN_BU_PERF_V": [
+      {
+        "attribute": "BusinessUnitBusinessUnitId",
+        "column": "BU_ID",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "ZX_LINES": [
+      {
+        "attribute": "DetailTaxLinePEOCancelFlag",
+        "column": "CANCEL_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "DetailTaxLinePEOIncludedFlag",
+        "column": "TAX_ONLY_LINE_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "DetailTaxLinePEOJurisdictionCode",
+        "column": "TAX_JURISDICTION_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "DetailTaxLinePEOJurisdictionId",
+        "column": "TAX_JURISDICTION_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "DetailTaxLinePEOObjectVersionNumber1",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "DetailTaxLinePEOReportingCurrencyCode",
+        "column": "REPORTING_CURRENCY_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "DetailTaxLinePEOSelfAssessedFlag",
+        "column": "SELF_ASSESSED_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "DetailTaxLinePEOTaxAmtFunclCurr",
+        "column": "TAX_AMT_FUNCL_CURR",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "DetailTaxLinePEOTaxCurrencyCode",
+        "column": "TAX_CURRENCY_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "DetailTaxLinePEOTaxId",
+        "column": "TAX_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "DetailTaxLinePEOTaxLineId",
+        "column": "TAX_LINE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "DetailTaxLinePEOTaxRate",
+        "column": "TAX_RATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "DetailTaxLinePEOTaxRateCode",
+        "column": "TAX_RATE_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "DetailTaxLinePEOTaxRateId",
+        "column": "TAX_RATE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "DetailTaxLinePEOTaxRegimeCode",
+        "column": "TAX_REGIME_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "DetailTaxLinePEOTaxRegimeId",
+        "column": "TAX_REGIME_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "DetailTaxLinePEOTaxStatusId",
+        "column": "TAX_STATUS_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "DetailTaxLinePEOTaxonlyLineFlag",
+        "column": "TAX_ONLY_LINE_FLAG",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "AP_SELF_ASSESSED_TAX_DIST_ALL": [
+      {
+        "attribute": "InvoiceDistributionId",
+        "column": "INVOICE_DISTRIBUTION_ID",
+        "bicc": true,
+        "pk": true
+      },
+      {
+        "attribute": "InvoiceSelfAssessedTaxChargeApplicableToDistId",
+        "column": "CHARGE_APPLICABLE_TO_DIST_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceSelfAssessedTaxDistAccountingDate",
+        "column": "ACCOUNTING_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceSelfAssessedTaxDistAccountingEventId",
+        "column": "ACCOUNTING_EVENT_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceSelfAssessedTaxDistAdjustmentReason",
+        "column": "ADJUSTMENT_REASON",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceSelfAssessedTaxDistAmount",
+        "column": "AMOUNT",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceSelfAssessedTaxDistAmountVariance",
+        "column": "AMOUNT_VARIANCE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceSelfAssessedTaxDistAssetBookTypeCode",
+        "column": "ASSET_BOOK_TYPE_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceSelfAssessedTaxDistAssetCategoryId",
+        "column": "ASSET_CATEGORY_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceSelfAssessedTaxDistAssetsAdditionFlag",
+        "column": "ASSETS_ADDITION_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceSelfAssessedTaxDistAssetsTrackingFlag",
+        "column": "ASSETS_TRACKING_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceSelfAssessedTaxDistAttributeCategory",
+        "column": "ATTRIBUTE_CATEGORY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceSelfAssessedTaxDistAwardId",
+        "column": "AWARD_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceSelfAssessedTaxDistAwtFlag",
+        "column": "AWT_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceSelfAssessedTaxDistAwtGrossAmount",
+        "column": "AWT_GROSS_AMOUNT",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceSelfAssessedTaxDistAwtGroupId",
+        "column": "AWT_GROUP_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceSelfAssessedTaxDistAwtInvoiceId",
+        "column": "AWT_INVOICE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceSelfAssessedTaxDistAwtInvoicePaymentId",
+        "column": "AWT_INVOICE_PAYMENT_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceSelfAssessedTaxDistAwtOriginGroupId",
+        "column": "AWT_ORIGIN_GROUP_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceSelfAssessedTaxDistAwtTaxRateId",
+        "column": "AWT_TAX_RATE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceSelfAssessedTaxDistAwtWithheldAmt",
+        "column": "AWT_WITHHELD_AMT",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceSelfAssessedTaxDistBaseAmount",
+        "column": "BASE_AMOUNT",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceSelfAssessedTaxDistBaseAmountVariance",
+        "column": "BASE_AMOUNT_VARIANCE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceSelfAssessedTaxDistBaseQuantityVariance",
+        "column": "BASE_QUANTITY_VARIANCE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceSelfAssessedTaxDistBatchId",
+        "column": "BATCH_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceSelfAssessedTaxDistBcEventId",
+        "column": "BC_EVENT_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceSelfAssessedTaxDistCancellationFlag",
+        "column": "CANCELLATION_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceSelfAssessedTaxDistCcReversalFlag",
+        "column": "CC_REVERSAL_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceSelfAssessedTaxDistCompanyPrepaidInvoiceId",
+        "column": "COMPANY_PREPAID_INVOICE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceSelfAssessedTaxDistCorrectedInvoiceDistId",
+        "column": "CORRECTED_INVOICE_DIST_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceSelfAssessedTaxDistCorrectedQuantity",
+        "column": "CORRECTED_QUANTITY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceSelfAssessedTaxDistCountryOfSupply",
+        "column": "COUNTRY_OF_SUPPLY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceSelfAssessedTaxDistCreatedBy",
+        "column": "CREATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceSelfAssessedTaxDistCreationDate",
+        "column": "CREATION_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceSelfAssessedTaxDistCreditCardTrxId",
+        "column": "CREDIT_CARD_TRX_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceSelfAssessedTaxDistCurrencyCode",
+        "column": "RECEIPT_CURRENCY_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceSelfAssessedTaxDistDailyAmount",
+        "column": "DAILY_AMOUNT",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceSelfAssessedTaxDistDescription",
+        "column": "DESCRIPTION",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceSelfAssessedTaxDistDetailTaxDistId",
+        "column": "DETAIL_TAX_DIST_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceSelfAssessedTaxDistDistCodeCombinationId",
+        "column": "DIST_CODE_COMBINATION_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceSelfAssessedTaxDistDistMatchType",
+        "column": "DIST_MATCH_TYPE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceSelfAssessedTaxDistDistributionClass",
+        "column": "DISTRIBUTION_CLASS",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceSelfAssessedTaxDistDistributionLineNumber",
+        "column": "DISTRIBUTION_LINE_NUMBER",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceSelfAssessedTaxDistEncumberedFlag",
+        "column": "ENCUMBERED_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceSelfAssessedTaxDistEndExpenseDate",
+        "column": "END_EXPENSE_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceSelfAssessedTaxDistExpenditureItemDate",
+        "column": "EXPENDITURE_ITEM_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceSelfAssessedTaxDistExpenditureOrganizationId",
+        "column": "EXPENDITURE_ORGANIZATION_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceSelfAssessedTaxDistExpenditureType",
+        "column": "EXPENDITURE_TYPE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceSelfAssessedTaxDistExpenseGroup",
+        "column": "EXPENSE_GROUP",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceSelfAssessedTaxDistExtraPoErv",
+        "column": "EXTRA_PO_ERV",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceSelfAssessedTaxDistFinalMatchFlag",
+        "column": "FINAL_MATCH_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceSelfAssessedTaxDistGlobalAttributeCategory",
+        "column": "GLOBAL_ATTRIBUTE_CATEGORY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceSelfAssessedTaxDistGmsBurdenableRawCost",
+        "column": "GMS_BURDENABLE_RAW_COST",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceSelfAssessedTaxDistIncomeTaxRegion",
+        "column": "INCOME_TAX_REGION",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceSelfAssessedTaxDistIntendedUse",
+        "column": "INTENDED_USE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceSelfAssessedTaxDistInventoryTransferStatus",
+        "column": "INVENTORY_TRANSFER_STATUS",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceSelfAssessedTaxDistInvoiceLineNumber",
+        "column": "INVOICE_LINE_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceSelfAssessedTaxDistInvoiceSelfAssessedTaxDistParentReversalId",
+        "column": "PARENT_REVERSAL_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceSelfAssessedTaxDistJustification",
+        "column": "JUSTIFICATION",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceSelfAssessedTaxDistLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceSelfAssessedTaxDistLastUpdateLogin",
+        "column": "LAST_UPDATE_LOGIN",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceSelfAssessedTaxDistLastUpdatedBy",
+        "column": "LAST_UPDATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceSelfAssessedTaxDistLineTypeLookupCode",
+        "column": "LINE_TYPE_LOOKUP_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceSelfAssessedTaxDistMatchStatusFlag",
+        "column": "MATCH_STATUS_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceSelfAssessedTaxDistMatchedUomLookupCode",
+        "column": "MATCHED_UOM_LOOKUP_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceSelfAssessedTaxDistMerchantDocumentNumber",
+        "column": "MERCHANT_DOCUMENT_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceSelfAssessedTaxDistMerchantName",
+        "column": "MERCHANT_NAME",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceSelfAssessedTaxDistMerchantReference",
+        "column": "MERCHANT_REFERENCE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceSelfAssessedTaxDistMerchantTaxRegNumber",
+        "column": "MERCHANT_TAX_REG_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceSelfAssessedTaxDistMerchantTaxpayerId",
+        "column": "MERCHANT_TAXPAYER_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceSelfAssessedTaxDistObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceSelfAssessedTaxDistOrgId",
+        "column": "ORG_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceSelfAssessedTaxDistPaAdditionFlag",
+        "column": "PA_ADDITION_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceSelfAssessedTaxDistPaCmtXfaceFlag",
+        "column": "PA_CMT_XFACE_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceSelfAssessedTaxDistPaQuantity",
+        "column": "PA_QUANTITY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceSelfAssessedTaxDistPacketId",
+        "column": "PACKET_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceSelfAssessedTaxDistParentInvoiceId",
+        "column": "PARENT_INVOICE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceSelfAssessedTaxDistPeriodName",
+        "column": "PERIOD_NAME",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceSelfAssessedTaxDistPoDistributionId",
+        "column": "PO_DISTRIBUTION_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceSelfAssessedTaxDistPostedFlag",
+        "column": "POSTED_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceSelfAssessedTaxDistPrepayAmountRemaining",
+        "column": "PREPAY_AMOUNT_REMAINING",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceSelfAssessedTaxDistPrepayDistributionId",
+        "column": "PREPAY_DISTRIBUTION_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceSelfAssessedTaxDistPrepayTaxDiffAmount",
+        "column": "PREPAY_TAX_DIFF_AMOUNT",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceSelfAssessedTaxDistProgramApplicationId",
+        "column": "PROGRAM_APPLICATION_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceSelfAssessedTaxDistProgramId",
+        "column": "PROGRAM_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceSelfAssessedTaxDistProgramUpdateDate",
+        "column": "PROGRAM_UPDATE_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceSelfAssessedTaxDistProjectId",
+        "column": "PROJECT_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceSelfAssessedTaxDistQuantityInvoiced",
+        "column": "QUANTITY_INVOICED",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceSelfAssessedTaxDistQuantityVariance",
+        "column": "QUANTITY_VARIANCE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceSelfAssessedTaxDistRcvChargeAdditionFlag",
+        "column": "RCV_CHARGE_ADDITION_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceSelfAssessedTaxDistRcvTransactionId",
+        "column": "RCV_TRANSACTION_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceSelfAssessedTaxDistRecNrecRate",
+        "column": "REC_NREC_RATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceSelfAssessedTaxDistReceiptConversionRate",
+        "column": "RECEIPT_CONVERSION_RATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceSelfAssessedTaxDistReceiptCurrencyAmount",
+        "column": "RECEIPT_CURRENCY_AMOUNT",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceSelfAssessedTaxDistReceiptMissingFlag",
+        "column": "RECEIPT_MISSING_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceSelfAssessedTaxDistReceiptRequiredFlag",
+        "column": "RECEIPT_REQUIRED_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceSelfAssessedTaxDistReceiptVerifiedFlag",
+        "column": "RECEIPT_VERIFIED_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceSelfAssessedTaxDistRecoveryRateId",
+        "column": "RECOVERY_RATE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceSelfAssessedTaxDistRecoveryRateName",
+        "column": "RECOVERY_RATE_NAME",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceSelfAssessedTaxDistRecoveryTypeCode",
+        "column": "RECOVERY_TYPE_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceSelfAssessedTaxDistReference1",
+        "column": "REFERENCE_1",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceSelfAssessedTaxDistReference2",
+        "column": "REFERENCE_2",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceSelfAssessedTaxDistRelatedId",
+        "column": "RELATED_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceSelfAssessedTaxDistRequestId",
+        "column": "REQUEST_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceSelfAssessedTaxDistReversalFlag",
+        "column": "REVERSAL_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceSelfAssessedTaxDistRoundingAmt",
+        "column": "ROUNDING_AMT",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceSelfAssessedTaxDistSelfAssessedFlag",
+        "column": "SELF_ASSESSED_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceSelfAssessedTaxDistSelfAssessedTaxLiabCcid",
+        "column": "SELF_ASSESSED_TAX_LIAB_CCID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceSelfAssessedTaxDistSetOfBooksId",
+        "column": "SET_OF_BOOKS_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceSelfAssessedTaxDistStartExpenseDate",
+        "column": "START_EXPENSE_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceSelfAssessedTaxDistStatAmount",
+        "column": "STAT_AMOUNT",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceSelfAssessedTaxDistSummaryTaxLineId",
+        "column": "SUMMARY_TAX_LINE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceSelfAssessedTaxDistTaskId",
+        "column": "TASK_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceSelfAssessedTaxDistTaxAlreadyDistributedFlag",
+        "column": "TAX_ALREADY_DISTRIBUTED_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceSelfAssessedTaxDistTaxCodeId",
+        "column": "TAX_CODE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceSelfAssessedTaxDistTaxRecoverableFlag",
+        "column": "TAX_RECOVERABLE_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceSelfAssessedTaxDistTaxableAmount",
+        "column": "TAXABLE_AMOUNT",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceSelfAssessedTaxDistTaxableBaseAmount",
+        "column": "TAXABLE_BASE_AMOUNT",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceSelfAssessedTaxDistType1099",
+        "column": "TYPE_1099",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceSelfAssessedTaxDistUnitPrice",
+        "column": "UNIT_PRICE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceSelfAssessedTaxDistUpgradeBasePostedAmt",
+        "column": "UPGRADE_BASE_POSTED_AMT",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceSelfAssessedTaxDistUpgradePostedAmt",
+        "column": "UPGRADE_POSTED_AMT",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceSelfAssessedTaxDistUssglTransactionCode",
+        "column": "USSGL_TRANSACTION_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceSelfAssessedTaxDistUssglTrxCodeContext",
+        "column": "USSGL_TRX_CODE_CONTEXT",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceSelfAssessedTaxDistWebParameterId",
+        "column": "WEB_PARAMETER_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceSelfAssessedTaxDistWithholdingTaxCodeId",
+        "column": "WITHHOLDING_TAX_CODE_ID",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "GL_LEDGERS": [
+      {
+        "attribute": "LedgersChartOfAccountsId",
+        "column": "CHART_OF_ACCOUNTS_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "LedgersCurrencyCode",
+        "column": "CURRENCY_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "LedgersLedgerId",
+        "column": "LEDGER_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "LedgersObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      }
+    ]
+  }
+}

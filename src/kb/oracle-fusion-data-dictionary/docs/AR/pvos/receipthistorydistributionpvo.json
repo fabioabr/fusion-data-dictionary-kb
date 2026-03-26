@@ -1,0 +1,6768 @@
+{
+  "meta": {
+    "pvo_name": "ReceiptHistoryDistributionPVO",
+    "full_path": "FscmTopModelAM.FinArTopPublicModelAM.ReceiptHistoryDistributionPVO",
+    "module_path": "FscmTopModelAM.FinArTopPublicModelAM",
+    "module_code": "AR",
+    "type": "pvo",
+    "description": "Extrai as distribuições contábeis do histórico de recebimentos, rastreando como cada mudança de status impactou as contas do GL. Essencial para auditoria contábil e reconstrução do histórico de lançamentos de recebíveis."
+  },
+  "stats": {
+    "total_attributes": 479,
+    "tables_count": 13,
+    "bicc_enabled": 55,
+    "bicc_pct": 11,
+    "pk_count": 1
+  },
+  "tables": [
+    "AR_BATCHES_ALL",
+    "AR_CASH_RECEIPTS_ALL",
+    "AR_CASH_RECEIPT_HISTORY_ALL",
+    "AR_DISTRIBUTIONS_ALL",
+    "AR_PAYMENT_SCHEDULES_ALL",
+    "AR_RECON_DIFFERENCE_DETAILS",
+    "FUN_BU_PERF_V",
+    "GL_DAILY_CONVERSION_TYPES",
+    "GL_LEDGERS",
+    "PER_PERSON_NAMES_F_V",
+    "PER_USERS",
+    "RA_CUSTOMER_TRX_ALL",
+    "RA_CUSTOMER_TRX_LINES_ALL"
+  ],
+  "attributes": [
+    {
+      "name": "AdjustmentDistributionAcctdAmountCr",
+      "table": "AR_DISTRIBUTIONS_ALL",
+      "column": "ACCTD_AMOUNT_CR",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AdjustmentDistributionAcctdAmountDr",
+      "table": "AR_DISTRIBUTIONS_ALL",
+      "column": "ACCTD_AMOUNT_DR",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AdjustmentDistributionActivityBucket",
+      "table": "AR_DISTRIBUTIONS_ALL",
+      "column": "ACTIVITY_BUCKET",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AdjustmentDistributionAmountCr",
+      "table": "AR_DISTRIBUTIONS_ALL",
+      "column": "AMOUNT_CR",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AdjustmentDistributionAmountDr",
+      "table": "AR_DISTRIBUTIONS_ALL",
+      "column": "AMOUNT_DR",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AdjustmentDistributionCodeCombinationId",
+      "table": "AR_DISTRIBUTIONS_ALL",
+      "column": "CODE_COMBINATION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AdjustmentDistributionCreatedBy",
+      "table": "AR_DISTRIBUTIONS_ALL",
+      "column": "CREATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AdjustmentDistributionCreationDate",
+      "table": "AR_DISTRIBUTIONS_ALL",
+      "column": "CREATION_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AdjustmentDistributionCurrencyCode",
+      "table": "AR_DISTRIBUTIONS_ALL",
+      "column": "CURRENCY_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AdjustmentDistributionCurrencyConversionDate",
+      "table": "AR_DISTRIBUTIONS_ALL",
+      "column": "CURRENCY_CONVERSION_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AdjustmentDistributionCurrencyConversionRate",
+      "table": "AR_DISTRIBUTIONS_ALL",
+      "column": "CURRENCY_CONVERSION_RATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AdjustmentDistributionCurrencyConversionType",
+      "table": "AR_DISTRIBUTIONS_ALL",
+      "column": "CURRENCY_CONVERSION_TYPE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AdjustmentDistributionFromAcctdAmountCr",
+      "table": "AR_DISTRIBUTIONS_ALL",
+      "column": "FROM_ACCTD_AMOUNT_CR",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AdjustmentDistributionFromAcctdAmountDr",
+      "table": "AR_DISTRIBUTIONS_ALL",
+      "column": "FROM_ACCTD_AMOUNT_DR",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AdjustmentDistributionFromAmountCr",
+      "table": "AR_DISTRIBUTIONS_ALL",
+      "column": "FROM_AMOUNT_CR",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AdjustmentDistributionFromAmountDr",
+      "table": "AR_DISTRIBUTIONS_ALL",
+      "column": "FROM_AMOUNT_DR",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AdjustmentDistributionLastUpdateDate",
+      "table": "AR_DISTRIBUTIONS_ALL",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": true
+    },
+    {
+      "name": "AdjustmentDistributionLastUpdateLogin",
+      "table": "AR_DISTRIBUTIONS_ALL",
+      "column": "LAST_UPDATE_LOGIN",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AdjustmentDistributionLastUpdatedBy",
+      "table": "AR_DISTRIBUTIONS_ALL",
+      "column": "LAST_UPDATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AdjustmentDistributionLineId",
+      "table": "AR_DISTRIBUTIONS_ALL",
+      "column": "LINE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AdjustmentDistributionLocationSegmentId",
+      "table": "AR_DISTRIBUTIONS_ALL",
+      "column": "LOCATION_SEGMENT_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AdjustmentDistributionObjectVersionNumber",
+      "table": "AR_DISTRIBUTIONS_ALL",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AdjustmentDistributionOrgId",
+      "table": "AR_DISTRIBUTIONS_ALL",
+      "column": "ORG_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AdjustmentDistributionRefAccountClass",
+      "table": "AR_DISTRIBUTIONS_ALL",
+      "column": "REF_ACCOUNT_CLASS",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AdjustmentDistributionRefCustTrxLineGlDistId",
+      "table": "AR_DISTRIBUTIONS_ALL",
+      "column": "REF_CUST_TRX_LINE_GL_DIST_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AdjustmentDistributionRefCustomerTrxLineId",
+      "table": "AR_DISTRIBUTIONS_ALL",
+      "column": "REF_CUSTOMER_TRX_LINE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AdjustmentDistributionRefDistCcid",
+      "table": "AR_DISTRIBUTIONS_ALL",
+      "column": "REF_DIST_CCID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AdjustmentDistributionRefLineId",
+      "table": "AR_DISTRIBUTIONS_ALL",
+      "column": "REF_LINE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AdjustmentDistributionRefMfDistFlag",
+      "table": "AR_DISTRIBUTIONS_ALL",
+      "column": "REF_MF_DIST_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AdjustmentDistributionReversalFlag",
+      "table": "AR_DISTRIBUTIONS_ALL",
+      "column": "REVERSAL_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AdjustmentDistributionReversedSourceId",
+      "table": "AR_DISTRIBUTIONS_ALL",
+      "column": "REVERSED_SOURCE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AdjustmentDistributionSourceId",
+      "table": "AR_DISTRIBUTIONS_ALL",
+      "column": "SOURCE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AdjustmentDistributionSourceIdSecondary",
+      "table": "AR_DISTRIBUTIONS_ALL",
+      "column": "SOURCE_ID_SECONDARY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AdjustmentDistributionSourceTable",
+      "table": "AR_DISTRIBUTIONS_ALL",
+      "column": "SOURCE_TABLE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AdjustmentDistributionSourceTableSecondary",
+      "table": "AR_DISTRIBUTIONS_ALL",
+      "column": "SOURCE_TABLE_SECONDARY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AdjustmentDistributionSourceType",
+      "table": "AR_DISTRIBUTIONS_ALL",
+      "column": "SOURCE_TYPE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AdjustmentDistributionSourceTypeSecondary",
+      "table": "AR_DISTRIBUTIONS_ALL",
+      "column": "SOURCE_TYPE_SECONDARY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AdjustmentDistributionTaxCodeId",
+      "table": "AR_DISTRIBUTIONS_ALL",
+      "column": "TAX_CODE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AdjustmentDistributionTaxGroupCodeId",
+      "table": "AR_DISTRIBUTIONS_ALL",
+      "column": "TAX_GROUP_CODE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AdjustmentDistributionTaxId",
+      "table": "AR_DISTRIBUTIONS_ALL",
+      "column": "TAX_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AdjustmentDistributionTaxLinkId",
+      "table": "AR_DISTRIBUTIONS_ALL",
+      "column": "TAX_LINK_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AdjustmentDistributionTaxableAccountedCr",
+      "table": "AR_DISTRIBUTIONS_ALL",
+      "column": "TAXABLE_ACCOUNTED_CR",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AdjustmentDistributionTaxableAccountedDr",
+      "table": "AR_DISTRIBUTIONS_ALL",
+      "column": "TAXABLE_ACCOUNTED_DR",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AdjustmentDistributionTaxableEnteredCr",
+      "table": "AR_DISTRIBUTIONS_ALL",
+      "column": "TAXABLE_ENTERED_CR",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AdjustmentDistributionTaxableEnteredDr",
+      "table": "AR_DISTRIBUTIONS_ALL",
+      "column": "TAXABLE_ENTERED_DR",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AdjustmentDistributionThirdPartyId",
+      "table": "AR_DISTRIBUTIONS_ALL",
+      "column": "THIRD_PARTY_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AdjustmentDistributionThirdPartySubId",
+      "table": "AR_DISTRIBUTIONS_ALL",
+      "column": "THIRD_PARTY_SUB_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BatchAutoPrintProgramId",
+      "table": "AR_BATCHES_ALL",
+      "column": "AUTO_PRINT_PROGRAM_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BatchAutoTransProgramId",
+      "table": "AR_BATCHES_ALL",
+      "column": "AUTO_TRANS_PROGRAM_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BatchBankDepositNumber",
+      "table": "AR_BATCHES_ALL",
+      "column": "BANK_DEPOSIT_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BatchBatchAppliedStatus",
+      "table": "AR_BATCHES_ALL",
+      "column": "BATCH_APPLIED_STATUS",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BatchBatchDate",
+      "table": "AR_BATCHES_ALL",
+      "column": "BATCH_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BatchBatchId",
+      "table": "AR_BATCHES_ALL",
+      "column": "BATCH_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BatchBatchSourceSeqId",
+      "table": "AR_BATCHES_ALL",
+      "column": "BATCH_SOURCE_SEQ_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BatchClosedDate",
+      "table": "AR_BATCHES_ALL",
+      "column": "CLOSED_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BatchControlAmount",
+      "table": "AR_BATCHES_ALL",
+      "column": "CONTROL_AMOUNT",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BatchControlCount",
+      "table": "AR_BATCHES_ALL",
+      "column": "CONTROL_COUNT",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BatchCreatedBy",
+      "table": "AR_BATCHES_ALL",
+      "column": "CREATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BatchCreationDate",
+      "table": "AR_BATCHES_ALL",
+      "column": "CREATION_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BatchCurrencyCode",
+      "table": "AR_BATCHES_ALL",
+      "column": "CURRENCY_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BatchDepositDate",
+      "table": "AR_BATCHES_ALL",
+      "column": "DEPOSIT_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BatchExchangeDate",
+      "table": "AR_BATCHES_ALL",
+      "column": "EXCHANGE_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BatchExchangeRate",
+      "table": "AR_BATCHES_ALL",
+      "column": "EXCHANGE_RATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BatchExchangeRateType",
+      "table": "AR_BATCHES_ALL",
+      "column": "EXCHANGE_RATE_TYPE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BatchGlDate",
+      "table": "AR_BATCHES_ALL",
+      "column": "GL_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BatchLastUpdateDate",
+      "table": "AR_BATCHES_ALL",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": true
+    },
+    {
+      "name": "BatchLastUpdateLogin",
+      "table": "AR_BATCHES_ALL",
+      "column": "LAST_UPDATE_LOGIN",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BatchLastUpdatedBy",
+      "table": "AR_BATCHES_ALL",
+      "column": "LAST_UPDATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BatchLockboxBatchName",
+      "table": "AR_BATCHES_ALL",
+      "column": "LOCKBOX_BATCH_NAME",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BatchLockboxId",
+      "table": "AR_BATCHES_ALL",
+      "column": "LOCKBOX_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BatchMediaReference",
+      "table": "AR_BATCHES_ALL",
+      "column": "MEDIA_REFERENCE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BatchName",
+      "table": "AR_BATCHES_ALL",
+      "column": "NAME",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BatchObjectVersionNumber",
+      "table": "AR_BATCHES_ALL",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BatchOldRemittanceBankBranchId",
+      "table": "AR_BATCHES_ALL",
+      "column": "OLD_REMITTANCE_BANK_BRANCH_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BatchOperationRequestId",
+      "table": "AR_BATCHES_ALL",
+      "column": "OPERATION_REQUEST_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BatchOrgId",
+      "table": "AR_BATCHES_ALL",
+      "column": "ORG_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BatchProgramApplicationId",
+      "table": "AR_BATCHES_ALL",
+      "column": "PROGRAM_APPLICATION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BatchProgramId",
+      "table": "AR_BATCHES_ALL",
+      "column": "PROGRAM_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BatchProgramUpdateDate",
+      "table": "AR_BATCHES_ALL",
+      "column": "PROGRAM_UPDATE_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BatchPurgedChildrenFlag",
+      "table": "AR_BATCHES_ALL",
+      "column": "PURGED_CHILDREN_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BatchReceiptClassId",
+      "table": "AR_BATCHES_ALL",
+      "column": "RECEIPT_CLASS_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BatchReceiptMethodId",
+      "table": "AR_BATCHES_ALL",
+      "column": "RECEIPT_METHOD_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BatchRemitBankAcctUseId",
+      "table": "AR_BATCHES_ALL",
+      "column": "REMIT_BANK_ACCT_USE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BatchRemitMethodCode",
+      "table": "AR_BATCHES_ALL",
+      "column": "REMIT_METHOD_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BatchRemittanceBankAccountId",
+      "table": "AR_BATCHES_ALL",
+      "column": "REMITTANCE_BANK_ACCOUNT_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BatchRemittanceBankBranchId",
+      "table": "AR_BATCHES_ALL",
+      "column": "REMITTANCE_BANK_BRANCH_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BatchRequestId",
+      "table": "AR_BATCHES_ALL",
+      "column": "REQUEST_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BatchSetOfBooksId",
+      "table": "AR_BATCHES_ALL",
+      "column": "SET_OF_BOOKS_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BatchStatus",
+      "table": "AR_BATCHES_ALL",
+      "column": "STATUS",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BatchTransmissionId",
+      "table": "AR_BATCHES_ALL",
+      "column": "TRANSMISSION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BatchTransmissionRequestId",
+      "table": "AR_BATCHES_ALL",
+      "column": "TRANSMISSION_REQUEST_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BatchType",
+      "table": "AR_BATCHES_ALL",
+      "column": "TYPE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BatchWithRecourseFlag",
+      "table": "AR_BATCHES_ALL",
+      "column": "WITH_RECOURSE_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BusinessUnitBusinessUnitId",
+      "table": "FUN_BU_PERF_V",
+      "column": "BU_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CashDistributionAcctdAmountCr",
+      "table": "AR_DISTRIBUTIONS_ALL",
+      "column": "ACCTD_AMOUNT_CR",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CashDistributionAcctdAmountDr",
+      "table": "AR_DISTRIBUTIONS_ALL",
+      "column": "ACCTD_AMOUNT_DR",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CashDistributionActivityBucket",
+      "table": "AR_DISTRIBUTIONS_ALL",
+      "column": "ACTIVITY_BUCKET",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CashDistributionAmountCr",
+      "table": "AR_DISTRIBUTIONS_ALL",
+      "column": "AMOUNT_CR",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CashDistributionAmountDr",
+      "table": "AR_DISTRIBUTIONS_ALL",
+      "column": "AMOUNT_DR",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CashDistributionCodeCombinationId",
+      "table": "AR_DISTRIBUTIONS_ALL",
+      "column": "CODE_COMBINATION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CashDistributionCreatedBy",
+      "table": "AR_DISTRIBUTIONS_ALL",
+      "column": "CREATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CashDistributionCreationDate",
+      "table": "AR_DISTRIBUTIONS_ALL",
+      "column": "CREATION_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CashDistributionCurrencyCode",
+      "table": "AR_DISTRIBUTIONS_ALL",
+      "column": "CURRENCY_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CashDistributionCurrencyConversionDate",
+      "table": "AR_DISTRIBUTIONS_ALL",
+      "column": "CURRENCY_CONVERSION_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CashDistributionCurrencyConversionRate",
+      "table": "AR_DISTRIBUTIONS_ALL",
+      "column": "CURRENCY_CONVERSION_RATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CashDistributionCurrencyConversionType",
+      "table": "AR_DISTRIBUTIONS_ALL",
+      "column": "CURRENCY_CONVERSION_TYPE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CashDistributionFromAcctdAmountCr",
+      "table": "AR_DISTRIBUTIONS_ALL",
+      "column": "FROM_ACCTD_AMOUNT_CR",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CashDistributionFromAcctdAmountDr",
+      "table": "AR_DISTRIBUTIONS_ALL",
+      "column": "FROM_ACCTD_AMOUNT_DR",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CashDistributionFromAmountCr",
+      "table": "AR_DISTRIBUTIONS_ALL",
+      "column": "FROM_AMOUNT_CR",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CashDistributionFromAmountDr",
+      "table": "AR_DISTRIBUTIONS_ALL",
+      "column": "FROM_AMOUNT_DR",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CashDistributionLastUpdateDate",
+      "table": "AR_DISTRIBUTIONS_ALL",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": true
+    },
+    {
+      "name": "CashDistributionLastUpdateLogin",
+      "table": "AR_DISTRIBUTIONS_ALL",
+      "column": "LAST_UPDATE_LOGIN",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CashDistributionLastUpdatedBy",
+      "table": "AR_DISTRIBUTIONS_ALL",
+      "column": "LAST_UPDATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CashDistributionLocationSegmentId",
+      "table": "AR_DISTRIBUTIONS_ALL",
+      "column": "LOCATION_SEGMENT_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CashDistributionObjectVersionNumber",
+      "table": "AR_DISTRIBUTIONS_ALL",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CashDistributionOrgId",
+      "table": "AR_DISTRIBUTIONS_ALL",
+      "column": "ORG_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CashDistributionRefAccountClass",
+      "table": "AR_DISTRIBUTIONS_ALL",
+      "column": "REF_ACCOUNT_CLASS",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CashDistributionRefCustTrxLineGlDistId",
+      "table": "AR_DISTRIBUTIONS_ALL",
+      "column": "REF_CUST_TRX_LINE_GL_DIST_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CashDistributionRefCustomerTrxLineId",
+      "table": "AR_DISTRIBUTIONS_ALL",
+      "column": "REF_CUSTOMER_TRX_LINE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CashDistributionRefDistCcid",
+      "table": "AR_DISTRIBUTIONS_ALL",
+      "column": "REF_DIST_CCID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CashDistributionRefLineId",
+      "table": "AR_DISTRIBUTIONS_ALL",
+      "column": "REF_LINE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CashDistributionRefMfDistFlag",
+      "table": "AR_DISTRIBUTIONS_ALL",
+      "column": "REF_MF_DIST_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CashDistributionReversalFlag",
+      "table": "AR_DISTRIBUTIONS_ALL",
+      "column": "REVERSAL_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CashDistributionReversedSourceId",
+      "table": "AR_DISTRIBUTIONS_ALL",
+      "column": "REVERSED_SOURCE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CashDistributionSourceId",
+      "table": "AR_DISTRIBUTIONS_ALL",
+      "column": "SOURCE_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CashDistributionSourceIdSecondary",
+      "table": "AR_DISTRIBUTIONS_ALL",
+      "column": "SOURCE_ID_SECONDARY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CashDistributionSourceTable",
+      "table": "AR_DISTRIBUTIONS_ALL",
+      "column": "SOURCE_TABLE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CashDistributionSourceTableSecondary",
+      "table": "AR_DISTRIBUTIONS_ALL",
+      "column": "SOURCE_TABLE_SECONDARY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CashDistributionSourceType",
+      "table": "AR_DISTRIBUTIONS_ALL",
+      "column": "SOURCE_TYPE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CashDistributionSourceTypeSecondary",
+      "table": "AR_DISTRIBUTIONS_ALL",
+      "column": "SOURCE_TYPE_SECONDARY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CashDistributionTaxCodeId",
+      "table": "AR_DISTRIBUTIONS_ALL",
+      "column": "TAX_CODE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CashDistributionTaxGroupCodeId",
+      "table": "AR_DISTRIBUTIONS_ALL",
+      "column": "TAX_GROUP_CODE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CashDistributionTaxId",
+      "table": "AR_DISTRIBUTIONS_ALL",
+      "column": "TAX_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CashDistributionTaxLinkId",
+      "table": "AR_DISTRIBUTIONS_ALL",
+      "column": "TAX_LINK_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CashDistributionTaxableAccountedCr",
+      "table": "AR_DISTRIBUTIONS_ALL",
+      "column": "TAXABLE_ACCOUNTED_CR",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CashDistributionTaxableAccountedDr",
+      "table": "AR_DISTRIBUTIONS_ALL",
+      "column": "TAXABLE_ACCOUNTED_DR",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CashDistributionTaxableEnteredCr",
+      "table": "AR_DISTRIBUTIONS_ALL",
+      "column": "TAXABLE_ENTERED_CR",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CashDistributionTaxableEnteredDr",
+      "table": "AR_DISTRIBUTIONS_ALL",
+      "column": "TAXABLE_ENTERED_DR",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CashDistributionThirdPartyId",
+      "table": "AR_DISTRIBUTIONS_ALL",
+      "column": "THIRD_PARTY_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CashDistributionThirdPartySubId",
+      "table": "AR_DISTRIBUTIONS_ALL",
+      "column": "THIRD_PARTY_SUB_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "DailyConversionTypeConversionType",
+      "table": "GL_DAILY_CONVERSION_TYPES",
+      "column": "CONVERSION_TYPE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "DailyConversionTypeCreatedBy",
+      "table": "GL_DAILY_CONVERSION_TYPES",
+      "column": "CREATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "DailyConversionTypeCreationDate",
+      "table": "GL_DAILY_CONVERSION_TYPES",
+      "column": "CREATION_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "DailyConversionTypeDescription",
+      "table": "GL_DAILY_CONVERSION_TYPES",
+      "column": "DESCRIPTION",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "DailyConversionTypeEnableCrossRateFlag",
+      "table": "GL_DAILY_CONVERSION_TYPES",
+      "column": "ENABLE_CROSS_RATE_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "DailyConversionTypeEnforceInverseRateFlag",
+      "table": "GL_DAILY_CONVERSION_TYPES",
+      "column": "ENFORCE_INVERSE_RATE_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "DailyConversionTypeFemEnabledFlag",
+      "table": "GL_DAILY_CONVERSION_TYPES",
+      "column": "FEM_ENABLED_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "DailyConversionTypeFemRateTypeCode",
+      "table": "GL_DAILY_CONVERSION_TYPES",
+      "column": "FEM_RATE_TYPE_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "DailyConversionTypeFemScenario",
+      "table": "GL_DAILY_CONVERSION_TYPES",
+      "column": "FEM_SCENARIO",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "DailyConversionTypeFemTimeframe",
+      "table": "GL_DAILY_CONVERSION_TYPES",
+      "column": "FEM_TIMEFRAME",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "DailyConversionTypeLastUpdateDate",
+      "table": "GL_DAILY_CONVERSION_TYPES",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "DailyConversionTypeLastUpdateLogin",
+      "table": "GL_DAILY_CONVERSION_TYPES",
+      "column": "LAST_UPDATE_LOGIN",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "DailyConversionTypeLastUpdatedBy",
+      "table": "GL_DAILY_CONVERSION_TYPES",
+      "column": "LAST_UPDATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "DailyConversionTypeObjectVersionNumber",
+      "table": "GL_DAILY_CONVERSION_TYPES",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "DailyConversionTypePivotCurrencyCode",
+      "table": "GL_DAILY_CONVERSION_TYPES",
+      "column": "PIVOT_CURRENCY_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "DailyConversionTypeSecurityFlag",
+      "table": "GL_DAILY_CONVERSION_TYPES",
+      "column": "SECURITY_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "DailyConversionTypeUserConversionType",
+      "table": "GL_DAILY_CONVERSION_TYPES",
+      "column": "USER_CONVERSION_TYPE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "DailyConversionTypeUserOverrideCrossRateFlag",
+      "table": "GL_DAILY_CONVERSION_TYPES",
+      "column": "USER_OVERRIDE_CROSS_RATE_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "HistoryAccountCodeCombinationId",
+      "table": "AR_CASH_RECEIPT_HISTORY_ALL",
+      "column": "ACCOUNT_CODE_COMBINATION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "HistoryAcctdAmount",
+      "table": "AR_CASH_RECEIPT_HISTORY_ALL",
+      "column": "ACCTD_AMOUNT",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "HistoryAcctdFactorDiscountAmount",
+      "table": "AR_CASH_RECEIPT_HISTORY_ALL",
+      "column": "ACCTD_FACTOR_DISCOUNT_AMOUNT",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "HistoryAmount",
+      "table": "AR_CASH_RECEIPT_HISTORY_ALL",
+      "column": "AMOUNT",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "HistoryBankChargeAccountCcid",
+      "table": "AR_CASH_RECEIPT_HISTORY_ALL",
+      "column": "BANK_CHARGE_ACCOUNT_CCID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "HistoryBatchId",
+      "table": "AR_CASH_RECEIPT_HISTORY_ALL",
+      "column": "BATCH_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "HistoryCashReceiptHistoryId",
+      "table": "AR_CASH_RECEIPT_HISTORY_ALL",
+      "column": "CASH_RECEIPT_HISTORY_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "HistoryCashReceiptId",
+      "table": "AR_CASH_RECEIPT_HISTORY_ALL",
+      "column": "CASH_RECEIPT_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "HistoryCreatedBy",
+      "table": "AR_CASH_RECEIPT_HISTORY_ALL",
+      "column": "CREATED_BY",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "HistoryCreatedFrom",
+      "table": "AR_CASH_RECEIPT_HISTORY_ALL",
+      "column": "CREATED_FROM",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "HistoryCreationDate",
+      "table": "AR_CASH_RECEIPT_HISTORY_ALL",
+      "column": "CREATION_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "HistoryCurrentRecordFlag",
+      "table": "AR_CASH_RECEIPT_HISTORY_ALL",
+      "column": "CURRENT_RECORD_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "HistoryDailyRateConversionType",
+      "table": "GL_DAILY_CONVERSION_TYPES",
+      "column": "CONVERSION_TYPE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "HistoryDailyRateCreatedBy",
+      "table": "GL_DAILY_CONVERSION_TYPES",
+      "column": "CREATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "HistoryDailyRateCreationDate",
+      "table": "GL_DAILY_CONVERSION_TYPES",
+      "column": "CREATION_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "HistoryDailyRateDescription",
+      "table": "GL_DAILY_CONVERSION_TYPES",
+      "column": "DESCRIPTION",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "HistoryDailyRateEnableCrossRateFlag",
+      "table": "GL_DAILY_CONVERSION_TYPES",
+      "column": "ENABLE_CROSS_RATE_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "HistoryDailyRateEnforceInverseRateFlag",
+      "table": "GL_DAILY_CONVERSION_TYPES",
+      "column": "ENFORCE_INVERSE_RATE_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "HistoryDailyRateFemEnabledFlag",
+      "table": "GL_DAILY_CONVERSION_TYPES",
+      "column": "FEM_ENABLED_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "HistoryDailyRateFemRateTypeCode",
+      "table": "GL_DAILY_CONVERSION_TYPES",
+      "column": "FEM_RATE_TYPE_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "HistoryDailyRateFemScenario",
+      "table": "GL_DAILY_CONVERSION_TYPES",
+      "column": "FEM_SCENARIO",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "HistoryDailyRateFemTimeframe",
+      "table": "GL_DAILY_CONVERSION_TYPES",
+      "column": "FEM_TIMEFRAME",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "HistoryDailyRateLastUpdateDate",
+      "table": "GL_DAILY_CONVERSION_TYPES",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "HistoryDailyRateLastUpdateLogin",
+      "table": "GL_DAILY_CONVERSION_TYPES",
+      "column": "LAST_UPDATE_LOGIN",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "HistoryDailyRateLastUpdatedBy",
+      "table": "GL_DAILY_CONVERSION_TYPES",
+      "column": "LAST_UPDATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "HistoryDailyRateObjectVersionNumber",
+      "table": "GL_DAILY_CONVERSION_TYPES",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "HistoryDailyRatePivotCurrencyCode",
+      "table": "GL_DAILY_CONVERSION_TYPES",
+      "column": "PIVOT_CURRENCY_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "HistoryDailyRateSecurityFlag",
+      "table": "GL_DAILY_CONVERSION_TYPES",
+      "column": "SECURITY_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "HistoryDailyRateUserConversionType",
+      "table": "GL_DAILY_CONVERSION_TYPES",
+      "column": "USER_CONVERSION_TYPE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "HistoryDailyRateUserOverrideCrossRateFlag",
+      "table": "GL_DAILY_CONVERSION_TYPES",
+      "column": "USER_OVERRIDE_CROSS_RATE_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "HistoryEventId",
+      "table": "AR_CASH_RECEIPT_HISTORY_ALL",
+      "column": "EVENT_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "HistoryExchangeDate",
+      "table": "AR_CASH_RECEIPT_HISTORY_ALL",
+      "column": "EXCHANGE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "HistoryExchangeRate",
+      "table": "AR_CASH_RECEIPT_HISTORY_ALL",
+      "column": "EXCHANGE_RATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "HistoryExchangeRateType",
+      "table": "AR_CASH_RECEIPT_HISTORY_ALL",
+      "column": "EXCHANGE_RATE_TYPE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "HistoryFactorDiscountAmount",
+      "table": "AR_CASH_RECEIPT_HISTORY_ALL",
+      "column": "FACTOR_DISCOUNT_AMOUNT",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "HistoryFactorFlag",
+      "table": "AR_CASH_RECEIPT_HISTORY_ALL",
+      "column": "FACTOR_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "HistoryFirstPostedRecordFlag",
+      "table": "AR_CASH_RECEIPT_HISTORY_ALL",
+      "column": "FIRST_POSTED_RECORD_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "HistoryGlDate",
+      "table": "AR_CASH_RECEIPT_HISTORY_ALL",
+      "column": "GL_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "HistoryGlPostedDate",
+      "table": "AR_CASH_RECEIPT_HISTORY_ALL",
+      "column": "GL_POSTED_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "HistoryLastUpdateDate",
+      "table": "AR_CASH_RECEIPT_HISTORY_ALL",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": true
+    },
+    {
+      "name": "HistoryLastUpdateLogin",
+      "table": "AR_CASH_RECEIPT_HISTORY_ALL",
+      "column": "LAST_UPDATE_LOGIN",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "HistoryLastUpdatedBy",
+      "table": "AR_CASH_RECEIPT_HISTORY_ALL",
+      "column": "LAST_UPDATED_BY",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "HistoryMrcAcctdAmount",
+      "table": "AR_CASH_RECEIPT_HISTORY_ALL",
+      "column": "MRC_ACCTD_AMOUNT",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "HistoryMrcAcctdFactorDiscAmount",
+      "table": "AR_CASH_RECEIPT_HISTORY_ALL",
+      "column": "MRC_ACCTD_FACTOR_DISC_AMOUNT",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "HistoryMrcExchangeDate",
+      "table": "AR_CASH_RECEIPT_HISTORY_ALL",
+      "column": "MRC_EXCHANGE_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "HistoryMrcExchangeRate",
+      "table": "AR_CASH_RECEIPT_HISTORY_ALL",
+      "column": "MRC_EXCHANGE_RATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "HistoryMrcExchangeRateType",
+      "table": "AR_CASH_RECEIPT_HISTORY_ALL",
+      "column": "MRC_EXCHANGE_RATE_TYPE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "HistoryMrcGlPostedDate",
+      "table": "AR_CASH_RECEIPT_HISTORY_ALL",
+      "column": "MRC_GL_POSTED_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "HistoryMrcPostingControlId",
+      "table": "AR_CASH_RECEIPT_HISTORY_ALL",
+      "column": "MRC_POSTING_CONTROL_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "HistoryMrcReversalGlPostedDate",
+      "table": "AR_CASH_RECEIPT_HISTORY_ALL",
+      "column": "MRC_REVERSAL_GL_POSTED_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "HistoryNoteStatus",
+      "table": "AR_CASH_RECEIPT_HISTORY_ALL",
+      "column": "NOTE_STATUS",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "HistoryObjectVersionNumber",
+      "table": "AR_CASH_RECEIPT_HISTORY_ALL",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "HistoryOrgId",
+      "table": "AR_CASH_RECEIPT_HISTORY_ALL",
+      "column": "ORG_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "HistoryPostableFlag",
+      "table": "AR_CASH_RECEIPT_HISTORY_ALL",
+      "column": "POSTABLE_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "HistoryPostingControlId",
+      "table": "AR_CASH_RECEIPT_HISTORY_ALL",
+      "column": "POSTING_CONTROL_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "HistoryProgramApplicationId",
+      "table": "AR_CASH_RECEIPT_HISTORY_ALL",
+      "column": "PROGRAM_APPLICATION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "HistoryProgramId",
+      "table": "AR_CASH_RECEIPT_HISTORY_ALL",
+      "column": "PROGRAM_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "HistoryProgramUpdateDate",
+      "table": "AR_CASH_RECEIPT_HISTORY_ALL",
+      "column": "PROGRAM_UPDATE_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "HistoryPrvStatCashReceiptHistId",
+      "table": "AR_CASH_RECEIPT_HISTORY_ALL",
+      "column": "PRV_STAT_CASH_RECEIPT_HIST_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "HistoryRequestId",
+      "table": "AR_CASH_RECEIPT_HISTORY_ALL",
+      "column": "REQUEST_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "HistoryReversalCashReceiptHistId",
+      "table": "AR_CASH_RECEIPT_HISTORY_ALL",
+      "column": "REVERSAL_CASH_RECEIPT_HIST_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "HistoryReversalCreatedFrom",
+      "table": "AR_CASH_RECEIPT_HISTORY_ALL",
+      "column": "REVERSAL_CREATED_FROM",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "HistoryReversalGlDate",
+      "table": "AR_CASH_RECEIPT_HISTORY_ALL",
+      "column": "REVERSAL_GL_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "HistoryReversalGlPostedDate",
+      "table": "AR_CASH_RECEIPT_HISTORY_ALL",
+      "column": "REVERSAL_GL_POSTED_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "HistoryReversalPostingControlId",
+      "table": "AR_CASH_RECEIPT_HISTORY_ALL",
+      "column": "REVERSAL_POSTING_CONTROL_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "HistoryStatus",
+      "table": "AR_CASH_RECEIPT_HISTORY_ALL",
+      "column": "STATUS",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "HistoryTrxDate",
+      "table": "AR_CASH_RECEIPT_HISTORY_ALL",
+      "column": "TRX_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LedgersChartOfAccountsId",
+      "table": "GL_LEDGERS",
+      "column": "CHART_OF_ACCOUNTS_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LedgersLedgerId",
+      "table": "GL_LEDGERS",
+      "column": "LEDGER_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LineId",
+      "table": "AR_DISTRIBUTIONS_ALL",
+      "column": "LINE_ID",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    },
+    {
+      "name": "ObjectVersionNumber1",
+      "table": "GL_LEDGERS",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PaymentSchedulesDueDate",
+      "table": "AR_PAYMENT_SCHEDULES_ALL",
+      "column": "DUE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PaymentSchedulesPaymentScheduleId",
+      "table": "AR_PAYMENT_SCHEDULES_ALL",
+      "column": "PAYMENT_SCHEDULE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonCreatedByDisplayName",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "DISPLAY_NAME",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonCreatedByEffectiveEndDate",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "EFFECTIVE_END_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonCreatedByEffectiveStartDate",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "EFFECTIVE_START_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonCreatedByPersonId",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "PERSON_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonCreatedByPersonNameId",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "PERSON_NAME_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonUpdatedByDisplayName",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "DISPLAY_NAME",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonUpdatedByEffectiveEndDate",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "EFFECTIVE_END_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonUpdatedByEffectiveStartDate",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "EFFECTIVE_START_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonUpdatedByPersonId",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "PERSON_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonUpdatedByPersonNameId",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "PERSON_NAME_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PrvStatHistoryCashReceiptHistoryId",
+      "table": "AR_CASH_RECEIPT_HISTORY_ALL",
+      "column": "CASH_RECEIPT_HISTORY_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PrvStatHistoryCashReceiptId",
+      "table": "AR_CASH_RECEIPT_HISTORY_ALL",
+      "column": "CASH_RECEIPT_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PrvStatHistoryStatus",
+      "table": "AR_CASH_RECEIPT_HISTORY_ALL",
+      "column": "STATUS",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReceiptActualValueDate",
+      "table": "AR_CASH_RECEIPTS_ALL",
+      "column": "ACTUAL_VALUE_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReceiptAddressVerificationCode",
+      "table": "AR_CASH_RECEIPTS_ALL",
+      "column": "ADDRESS_VERIFICATION_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReceiptAmount",
+      "table": "AR_CASH_RECEIPTS_ALL",
+      "column": "AMOUNT",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReceiptAnticipatedClearingDate",
+      "table": "AR_CASH_RECEIPTS_ALL",
+      "column": "ANTICIPATED_CLEARING_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReceiptApplicationNotes",
+      "table": "AR_CASH_RECEIPTS_ALL",
+      "column": "APPLICATION_NOTES",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReceiptApprovalCode",
+      "table": "AR_CASH_RECEIPTS_ALL",
+      "column": "APPROVAL_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReceiptAttributeCategory",
+      "table": "AR_CASH_RECEIPTS_ALL",
+      "column": "ATTRIBUTE_CATEGORY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReceiptAutoapplyFlag",
+      "table": "AR_CASH_RECEIPTS_ALL",
+      "column": "AUTOAPPLY_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReceiptAutomatchRequestId",
+      "table": "AR_CASH_RECEIPTS_ALL",
+      "column": "AUTOMATCH_REQUEST_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReceiptAxAccountedFlag",
+      "table": "AR_CASH_RECEIPTS_ALL",
+      "column": "AX_ACCOUNTED_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReceiptCashReceiptId",
+      "table": "AR_CASH_RECEIPTS_ALL",
+      "column": "CASH_RECEIPT_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReceiptCcErrorCode",
+      "table": "AR_CASH_RECEIPTS_ALL",
+      "column": "CC_ERROR_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReceiptCcErrorFlag",
+      "table": "AR_CASH_RECEIPTS_ALL",
+      "column": "CC_ERROR_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReceiptCcErrorText",
+      "table": "AR_CASH_RECEIPTS_ALL",
+      "column": "CC_ERROR_TEXT",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReceiptCollectorId",
+      "table": "AR_CASH_RECEIPTS_ALL",
+      "column": "COLLECTOR_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReceiptComments",
+      "table": "AR_CASH_RECEIPTS_ALL",
+      "column": "COMMENTS",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReceiptConfirmedFlag",
+      "table": "AR_CASH_RECEIPTS_ALL",
+      "column": "CONFIRMED_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReceiptCreatedBy",
+      "table": "AR_CASH_RECEIPTS_ALL",
+      "column": "CREATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReceiptCreationDate",
+      "table": "AR_CASH_RECEIPTS_ALL",
+      "column": "CREATION_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReceiptCurrencyCode",
+      "table": "AR_CASH_RECEIPTS_ALL",
+      "column": "CURRENCY_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReceiptCustomerBankAccountId",
+      "table": "AR_CASH_RECEIPTS_ALL",
+      "column": "CUSTOMER_BANK_ACCOUNT_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReceiptCustomerBankBranchId",
+      "table": "AR_CASH_RECEIPTS_ALL",
+      "column": "CUSTOMER_BANK_BRANCH_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReceiptCustomerReceiptReference",
+      "table": "AR_CASH_RECEIPTS_ALL",
+      "column": "CUSTOMER_RECEIPT_REFERENCE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReceiptCustomerSiteUseId",
+      "table": "AR_CASH_RECEIPTS_ALL",
+      "column": "CUSTOMER_SITE_USE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReceiptDepositDate",
+      "table": "AR_CASH_RECEIPTS_ALL",
+      "column": "DEPOSIT_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReceiptDistributionSetId",
+      "table": "AR_CASH_RECEIPTS_ALL",
+      "column": "DISTRIBUTION_SET_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReceiptDocSequenceId",
+      "table": "AR_CASH_RECEIPTS_ALL",
+      "column": "DOC_SEQUENCE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReceiptDocSequenceValue",
+      "table": "AR_CASH_RECEIPTS_ALL",
+      "column": "DOC_SEQUENCE_VALUE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReceiptExchangeDate",
+      "table": "AR_CASH_RECEIPTS_ALL",
+      "column": "EXCHANGE_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReceiptExchangeRate",
+      "table": "AR_CASH_RECEIPTS_ALL",
+      "column": "EXCHANGE_RATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReceiptExchangeRateType",
+      "table": "AR_CASH_RECEIPTS_ALL",
+      "column": "EXCHANGE_RATE_TYPE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReceiptFactorDiscountAmount",
+      "table": "AR_CASH_RECEIPTS_ALL",
+      "column": "FACTOR_DISCOUNT_AMOUNT",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReceiptIssueDate",
+      "table": "AR_CASH_RECEIPTS_ALL",
+      "column": "ISSUE_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReceiptIssuerBankBranchId",
+      "table": "AR_CASH_RECEIPTS_ALL",
+      "column": "ISSUER_BANK_BRANCH_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReceiptIssuerName",
+      "table": "AR_CASH_RECEIPTS_ALL",
+      "column": "ISSUER_NAME",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReceiptLastUpdateDate",
+      "table": "AR_CASH_RECEIPTS_ALL",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReceiptLastUpdateLogin",
+      "table": "AR_CASH_RECEIPTS_ALL",
+      "column": "LAST_UPDATE_LOGIN",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReceiptLastUpdatedBy",
+      "table": "AR_CASH_RECEIPTS_ALL",
+      "column": "LAST_UPDATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReceiptLegalEntityId",
+      "table": "AR_CASH_RECEIPTS_ALL",
+      "column": "LEGAL_ENTITY_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReceiptLogicalGroupReference",
+      "table": "AR_CASH_RECEIPTS_ALL",
+      "column": "LOGICAL_GROUP_REFERENCE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReceiptMiscPaymentSource",
+      "table": "AR_CASH_RECEIPTS_ALL",
+      "column": "MISC_PAYMENT_SOURCE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReceiptObjectVersionNumber",
+      "table": "AR_CASH_RECEIPTS_ALL",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReceiptOldCustomerBankAccountId",
+      "table": "AR_CASH_RECEIPTS_ALL",
+      "column": "OLD_CUSTOMER_BANK_ACCOUNT_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReceiptOldCustomerBankBranchId",
+      "table": "AR_CASH_RECEIPTS_ALL",
+      "column": "OLD_CUSTOMER_BANK_BRANCH_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReceiptOldIssuerBankBranchId",
+      "table": "AR_CASH_RECEIPTS_ALL",
+      "column": "OLD_ISSUER_BANK_BRANCH_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReceiptOrgId",
+      "table": "AR_CASH_RECEIPTS_ALL",
+      "column": "ORG_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReceiptOverrideRemitAccountFlag",
+      "table": "AR_CASH_RECEIPTS_ALL",
+      "column": "OVERRIDE_REMIT_ACCOUNT_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReceiptPayFromCustomer",
+      "table": "AR_CASH_RECEIPTS_ALL",
+      "column": "PAY_FROM_CUSTOMER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReceiptPaymentServerOrderNum",
+      "table": "AR_CASH_RECEIPTS_ALL",
+      "column": "PAYMENT_SERVER_ORDER_NUM",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReceiptPaymentTrxnExtensionId",
+      "table": "AR_CASH_RECEIPTS_ALL",
+      "column": "PAYMENT_TRXN_EXTENSION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReceiptPostmarkDate",
+      "table": "AR_CASH_RECEIPTS_ALL",
+      "column": "POSTMARK_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReceiptProgramApplicationId",
+      "table": "AR_CASH_RECEIPTS_ALL",
+      "column": "PROGRAM_APPLICATION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReceiptProgramId",
+      "table": "AR_CASH_RECEIPTS_ALL",
+      "column": "PROGRAM_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReceiptProgramUpdateDate",
+      "table": "AR_CASH_RECEIPTS_ALL",
+      "column": "PROGRAM_UPDATE_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReceiptPromiseSource",
+      "table": "AR_CASH_RECEIPTS_ALL",
+      "column": "PROMISE_SOURCE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReceiptRecVersionNumber",
+      "table": "AR_CASH_RECEIPTS_ALL",
+      "column": "REC_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReceiptReceiptCodeCombinationId",
+      "table": "AR_CASH_RECEIPTS_ALL",
+      "column": "CODE_COMBINATION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReceiptReceiptDate",
+      "table": "AR_CASH_RECEIPTS_ALL",
+      "column": "RECEIPT_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReceiptReceiptMethodId",
+      "table": "AR_CASH_RECEIPTS_ALL",
+      "column": "RECEIPT_METHOD_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReceiptReceiptNumber",
+      "table": "AR_CASH_RECEIPTS_ALL",
+      "column": "RECEIPT_NUMBER",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReceiptReceiptReceiptBatchId",
+      "table": "AR_CASH_RECEIPTS_ALL",
+      "column": "RECEIPT_BATCH_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReceiptReceivablesTrxId",
+      "table": "AR_CASH_RECEIPTS_ALL",
+      "column": "RECEIVABLES_TRX_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReceiptReconFlag",
+      "table": "AR_CASH_RECEIPTS_ALL",
+      "column": "RECON_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReceiptReferenceId",
+      "table": "AR_CASH_RECEIPTS_ALL",
+      "column": "REFERENCE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReceiptReferenceType",
+      "table": "AR_CASH_RECEIPTS_ALL",
+      "column": "REFERENCE_TYPE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReceiptRemitBankAcctUseId",
+      "table": "AR_CASH_RECEIPTS_ALL",
+      "column": "REMIT_BANK_ACCT_USE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReceiptRemittanceBankAccountId",
+      "table": "AR_CASH_RECEIPTS_ALL",
+      "column": "REMITTANCE_BANK_ACCOUNT_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReceiptRemittanceBatchId",
+      "table": "AR_CASH_RECEIPTS_ALL",
+      "column": "REMITTANCE_BATCH_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReceiptRequestId",
+      "table": "AR_CASH_RECEIPTS_ALL",
+      "column": "REQUEST_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReceiptResourceId",
+      "table": "AR_CASH_RECEIPTS_ALL",
+      "column": "RESOURCE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReceiptReversalCategory",
+      "table": "AR_CASH_RECEIPTS_ALL",
+      "column": "REVERSAL_CATEGORY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReceiptReversalComments",
+      "table": "AR_CASH_RECEIPTS_ALL",
+      "column": "REVERSAL_COMMENTS",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReceiptReversalDate",
+      "table": "AR_CASH_RECEIPTS_ALL",
+      "column": "REVERSAL_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReceiptReversalReasonCode",
+      "table": "AR_CASH_RECEIPTS_ALL",
+      "column": "REVERSAL_REASON_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReceiptSelectedForFactoringFlag",
+      "table": "AR_CASH_RECEIPTS_ALL",
+      "column": "SELECTED_FOR_FACTORING_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReceiptSelectedRemittanceBatchId",
+      "table": "AR_CASH_RECEIPTS_ALL",
+      "column": "SELECTED_REMITTANCE_BATCH_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReceiptSetOfBooksId",
+      "table": "AR_CASH_RECEIPTS_ALL",
+      "column": "SET_OF_BOOKS_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReceiptStatus",
+      "table": "AR_CASH_RECEIPTS_ALL",
+      "column": "STATUS",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReceiptTaxAmount",
+      "table": "AR_CASH_RECEIPTS_ALL",
+      "column": "TAX_AMOUNT",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReceiptTaxRate",
+      "table": "AR_CASH_RECEIPTS_ALL",
+      "column": "TAX_RATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReceiptType",
+      "table": "AR_CASH_RECEIPTS_ALL",
+      "column": "TYPE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReceiptUniqueReference",
+      "table": "AR_CASH_RECEIPTS_ALL",
+      "column": "UNIQUE_REFERENCE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReceiptUssglTransactionCode",
+      "table": "AR_CASH_RECEIPTS_ALL",
+      "column": "USSGL_TRANSACTION_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReceiptUssglTransactionCodeContext",
+      "table": "AR_CASH_RECEIPTS_ALL",
+      "column": "USSGL_TRANSACTION_CODE_CONTEXT",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReceiptVatTaxId",
+      "table": "AR_CASH_RECEIPTS_ALL",
+      "column": "VAT_TAX_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReconDiffAccountedAmount",
+      "table": "AR_RECON_DIFFERENCE_DETAILS",
+      "column": "ACCOUNTED_AMOUNT",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReconDiffAccountingDate",
+      "table": "AR_RECON_DIFFERENCE_DETAILS",
+      "column": "ACCOUNTING_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReconDiffCauseOfDifferenceCode",
+      "table": "AR_RECON_DIFFERENCE_DETAILS",
+      "column": "CAUSE_OF_DIFFERENCE_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReconDiffCreatedBy",
+      "table": "AR_RECON_DIFFERENCE_DETAILS",
+      "column": "CREATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReconDiffCreationDate",
+      "table": "AR_RECON_DIFFERENCE_DETAILS",
+      "column": "CREATION_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReconDiffDocumentDistributionId",
+      "table": "AR_RECON_DIFFERENCE_DETAILS",
+      "column": "DOCUMENT_DISTRIBUTION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReconDiffDocumentId",
+      "table": "AR_RECON_DIFFERENCE_DETAILS",
+      "column": "DOCUMENT_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReconDiffJobDefinitionName",
+      "table": "AR_RECON_DIFFERENCE_DETAILS",
+      "column": "JOB_DEFINITION_NAME",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReconDiffJobDefinitionPackage",
+      "table": "AR_RECON_DIFFERENCE_DETAILS",
+      "column": "JOB_DEFINITION_PACKAGE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReconDiffLastUpdateDate",
+      "table": "AR_RECON_DIFFERENCE_DETAILS",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReconDiffLastUpdateLogin",
+      "table": "AR_RECON_DIFFERENCE_DETAILS",
+      "column": "LAST_UPDATE_LOGIN",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReconDiffLastUpdatedBy",
+      "table": "AR_RECON_DIFFERENCE_DETAILS",
+      "column": "LAST_UPDATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReconDiffObjectVersionNumber",
+      "table": "AR_RECON_DIFFERENCE_DETAILS",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReconDiffOrgId",
+      "table": "AR_RECON_DIFFERENCE_DETAILS",
+      "column": "ORG_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReconDiffReconItemCode",
+      "table": "AR_RECON_DIFFERENCE_DETAILS",
+      "column": "RECON_ITEM_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReconDiffReconTrxId",
+      "table": "AR_RECON_DIFFERENCE_DETAILS",
+      "column": "RECON_TRX_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReconDiffRequestId",
+      "table": "AR_RECON_DIFFERENCE_DETAILS",
+      "column": "REQUEST_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReverseDistributionAcctdAmountCr",
+      "table": "AR_DISTRIBUTIONS_ALL",
+      "column": "ACCTD_AMOUNT_CR",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReverseDistributionAcctdAmountDr",
+      "table": "AR_DISTRIBUTIONS_ALL",
+      "column": "ACCTD_AMOUNT_DR",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReverseDistributionActivityBucket",
+      "table": "AR_DISTRIBUTIONS_ALL",
+      "column": "ACTIVITY_BUCKET",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReverseDistributionAmountCr",
+      "table": "AR_DISTRIBUTIONS_ALL",
+      "column": "AMOUNT_CR",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReverseDistributionAmountDr",
+      "table": "AR_DISTRIBUTIONS_ALL",
+      "column": "AMOUNT_DR",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReverseDistributionCodeCombinationId",
+      "table": "AR_DISTRIBUTIONS_ALL",
+      "column": "CODE_COMBINATION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReverseDistributionCreatedBy",
+      "table": "AR_DISTRIBUTIONS_ALL",
+      "column": "CREATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReverseDistributionCreationDate",
+      "table": "AR_DISTRIBUTIONS_ALL",
+      "column": "CREATION_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReverseDistributionCurrencyCode",
+      "table": "AR_DISTRIBUTIONS_ALL",
+      "column": "CURRENCY_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReverseDistributionCurrencyConversionDate",
+      "table": "AR_DISTRIBUTIONS_ALL",
+      "column": "CURRENCY_CONVERSION_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReverseDistributionCurrencyConversionRate",
+      "table": "AR_DISTRIBUTIONS_ALL",
+      "column": "CURRENCY_CONVERSION_RATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReverseDistributionCurrencyConversionType",
+      "table": "AR_DISTRIBUTIONS_ALL",
+      "column": "CURRENCY_CONVERSION_TYPE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReverseDistributionFromAcctdAmountCr",
+      "table": "AR_DISTRIBUTIONS_ALL",
+      "column": "FROM_ACCTD_AMOUNT_CR",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReverseDistributionFromAcctdAmountDr",
+      "table": "AR_DISTRIBUTIONS_ALL",
+      "column": "FROM_ACCTD_AMOUNT_DR",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReverseDistributionFromAmountCr",
+      "table": "AR_DISTRIBUTIONS_ALL",
+      "column": "FROM_AMOUNT_CR",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReverseDistributionFromAmountDr",
+      "table": "AR_DISTRIBUTIONS_ALL",
+      "column": "FROM_AMOUNT_DR",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReverseDistributionLastUpdateDate",
+      "table": "AR_DISTRIBUTIONS_ALL",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": true
+    },
+    {
+      "name": "ReverseDistributionLastUpdateLogin",
+      "table": "AR_DISTRIBUTIONS_ALL",
+      "column": "LAST_UPDATE_LOGIN",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReverseDistributionLastUpdatedBy",
+      "table": "AR_DISTRIBUTIONS_ALL",
+      "column": "LAST_UPDATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReverseDistributionLineId",
+      "table": "AR_DISTRIBUTIONS_ALL",
+      "column": "LINE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReverseDistributionLocationSegmentId",
+      "table": "AR_DISTRIBUTIONS_ALL",
+      "column": "LOCATION_SEGMENT_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReverseDistributionObjectVersionNumber",
+      "table": "AR_DISTRIBUTIONS_ALL",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReverseDistributionOrgId",
+      "table": "AR_DISTRIBUTIONS_ALL",
+      "column": "ORG_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReverseDistributionRefAccountClass",
+      "table": "AR_DISTRIBUTIONS_ALL",
+      "column": "REF_ACCOUNT_CLASS",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReverseDistributionRefCustTrxLineGlDistId",
+      "table": "AR_DISTRIBUTIONS_ALL",
+      "column": "REF_CUST_TRX_LINE_GL_DIST_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReverseDistributionRefCustomerTrxLineId",
+      "table": "AR_DISTRIBUTIONS_ALL",
+      "column": "REF_CUSTOMER_TRX_LINE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReverseDistributionRefDistCcid",
+      "table": "AR_DISTRIBUTIONS_ALL",
+      "column": "REF_DIST_CCID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReverseDistributionRefLineId",
+      "table": "AR_DISTRIBUTIONS_ALL",
+      "column": "REF_LINE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReverseDistributionRefMfDistFlag",
+      "table": "AR_DISTRIBUTIONS_ALL",
+      "column": "REF_MF_DIST_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReverseDistributionReversalFlag",
+      "table": "AR_DISTRIBUTIONS_ALL",
+      "column": "REVERSAL_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReverseDistributionReversedSourceId",
+      "table": "AR_DISTRIBUTIONS_ALL",
+      "column": "REVERSED_SOURCE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReverseDistributionSourceId",
+      "table": "AR_DISTRIBUTIONS_ALL",
+      "column": "SOURCE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReverseDistributionSourceIdSecondary",
+      "table": "AR_DISTRIBUTIONS_ALL",
+      "column": "SOURCE_ID_SECONDARY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReverseDistributionSourceTable",
+      "table": "AR_DISTRIBUTIONS_ALL",
+      "column": "SOURCE_TABLE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReverseDistributionSourceTableSecondary",
+      "table": "AR_DISTRIBUTIONS_ALL",
+      "column": "SOURCE_TABLE_SECONDARY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReverseDistributionSourceType",
+      "table": "AR_DISTRIBUTIONS_ALL",
+      "column": "SOURCE_TYPE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReverseDistributionSourceTypeSecondary",
+      "table": "AR_DISTRIBUTIONS_ALL",
+      "column": "SOURCE_TYPE_SECONDARY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReverseDistributionTaxCodeId",
+      "table": "AR_DISTRIBUTIONS_ALL",
+      "column": "TAX_CODE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReverseDistributionTaxGroupCodeId",
+      "table": "AR_DISTRIBUTIONS_ALL",
+      "column": "TAX_GROUP_CODE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReverseDistributionTaxId",
+      "table": "AR_DISTRIBUTIONS_ALL",
+      "column": "TAX_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReverseDistributionTaxLinkId",
+      "table": "AR_DISTRIBUTIONS_ALL",
+      "column": "TAX_LINK_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReverseDistributionTaxableAccountedCr",
+      "table": "AR_DISTRIBUTIONS_ALL",
+      "column": "TAXABLE_ACCOUNTED_CR",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReverseDistributionTaxableAccountedDr",
+      "table": "AR_DISTRIBUTIONS_ALL",
+      "column": "TAXABLE_ACCOUNTED_DR",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReverseDistributionTaxableEnteredCr",
+      "table": "AR_DISTRIBUTIONS_ALL",
+      "column": "TAXABLE_ENTERED_CR",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReverseDistributionTaxableEnteredDr",
+      "table": "AR_DISTRIBUTIONS_ALL",
+      "column": "TAXABLE_ENTERED_DR",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReverseDistributionThirdPartyId",
+      "table": "AR_DISTRIBUTIONS_ALL",
+      "column": "THIRD_PARTY_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReverseDistributionThirdPartySubId",
+      "table": "AR_DISTRIBUTIONS_ALL",
+      "column": "THIRD_PARTY_SUB_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TrxLineRefCustAccountingRuleDuration",
+      "table": "RA_CUSTOMER_TRX_LINES_ALL",
+      "column": "ACCOUNTING_RULE_DURATION",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TrxLineRefCustAcctdAmountDueOriginal",
+      "table": "RA_CUSTOMER_TRX_LINES_ALL",
+      "column": "ACCTD_AMOUNT_DUE_ORIGINAL",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TrxLineRefCustAcctdAmountDueRemaining",
+      "table": "RA_CUSTOMER_TRX_LINES_ALL",
+      "column": "ACCTD_AMOUNT_DUE_REMAINING",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TrxLineRefCustAmountDueOriginal",
+      "table": "RA_CUSTOMER_TRX_LINES_ALL",
+      "column": "AMOUNT_DUE_ORIGINAL",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TrxLineRefCustAmountDueRemaining",
+      "table": "RA_CUSTOMER_TRX_LINES_ALL",
+      "column": "AMOUNT_DUE_REMAINING",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TrxLineRefCustAmountIncludesTaxFlag",
+      "table": "RA_CUSTOMER_TRX_LINES_ALL",
+      "column": "AMOUNT_INCLUDES_TAX_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TrxLineRefCustAssessableValue",
+      "table": "RA_CUSTOMER_TRX_LINES_ALL",
+      "column": "ASSESSABLE_VALUE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TrxLineRefCustAutoruleCompleteFlag",
+      "table": "RA_CUSTOMER_TRX_LINES_ALL",
+      "column": "AUTORULE_COMPLETE_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TrxLineRefCustAutoruleDurationProcessed",
+      "table": "RA_CUSTOMER_TRX_LINES_ALL",
+      "column": "AUTORULE_DURATION_PROCESSED",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TrxLineRefCustAutotax",
+      "table": "RA_CUSTOMER_TRX_LINES_ALL",
+      "column": "AUTOTAX",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TrxLineRefCustChrgAcctdAmountRemaining",
+      "table": "RA_CUSTOMER_TRX_LINES_ALL",
+      "column": "CHRG_ACCTD_AMOUNT_REMAINING",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TrxLineRefCustChrgAmountRemaining",
+      "table": "RA_CUSTOMER_TRX_LINES_ALL",
+      "column": "CHRG_AMOUNT_REMAINING",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TrxLineRefCustCustomerTrxLineId",
+      "table": "RA_CUSTOMER_TRX_LINES_ALL",
+      "column": "CUSTOMER_TRX_LINE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TrxLineRefCustDefaultUssglTransactionCode",
+      "table": "RA_CUSTOMER_TRX_LINES_ALL",
+      "column": "DEFAULT_USSGL_TRANSACTION_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TrxLineRefCustDefaultUssglTrxCodeContext",
+      "table": "RA_CUSTOMER_TRX_LINES_ALL",
+      "column": "DEFAULT_USSGL_TRX_CODE_CONTEXT",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TrxLineRefCustDeferralExclusionFlag",
+      "table": "RA_CUSTOMER_TRX_LINES_ALL",
+      "column": "DEFERRAL_EXCLUSION_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TrxLineRefCustDescription",
+      "table": "RA_CUSTOMER_TRX_LINES_ALL",
+      "column": "DESCRIPTION",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TrxLineRefCustExtendedAcctdAmount",
+      "table": "RA_CUSTOMER_TRX_LINES_ALL",
+      "column": "EXTENDED_ACCTD_AMOUNT",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TrxLineRefCustExtendedAmount",
+      "table": "RA_CUSTOMER_TRX_LINES_ALL",
+      "column": "EXTENDED_AMOUNT",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TrxLineRefCustFairMarketValueAmount",
+      "table": "RA_CUSTOMER_TRX_LINES_ALL",
+      "column": "FAIR_MARKET_VALUE_AMOUNT",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TrxLineRefCustFrtAdjAcctdRemaining",
+      "table": "RA_CUSTOMER_TRX_LINES_ALL",
+      "column": "FRT_ADJ_ACCTD_REMAINING",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TrxLineRefCustFrtAdjRemaining",
+      "table": "RA_CUSTOMER_TRX_LINES_ALL",
+      "column": "FRT_ADJ_REMAINING",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TrxLineRefCustFrtEdAcctdAmount",
+      "table": "RA_CUSTOMER_TRX_LINES_ALL",
+      "column": "FRT_ED_ACCTD_AMOUNT",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TrxLineRefCustFrtEdAmount",
+      "table": "RA_CUSTOMER_TRX_LINES_ALL",
+      "column": "FRT_ED_AMOUNT",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TrxLineRefCustFrtUnedAcctdAmount",
+      "table": "RA_CUSTOMER_TRX_LINES_ALL",
+      "column": "FRT_UNED_ACCTD_AMOUNT",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TrxLineRefCustFrtUnedAmount",
+      "table": "RA_CUSTOMER_TRX_LINES_ALL",
+      "column": "FRT_UNED_AMOUNT",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TrxLineRefCustGrossExtendedAmount",
+      "table": "RA_CUSTOMER_TRX_LINES_ALL",
+      "column": "GROSS_EXTENDED_AMOUNT",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TrxLineRefCustGrossUnitSellingPrice",
+      "table": "RA_CUSTOMER_TRX_LINES_ALL",
+      "column": "GROSS_UNIT_SELLING_PRICE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TrxLineRefCustHistoricalFlag",
+      "table": "RA_CUSTOMER_TRX_LINES_ALL",
+      "column": "HISTORICAL_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TrxLineRefCustInvoicedLineAcctgLevel",
+      "table": "RA_CUSTOMER_TRX_LINES_ALL",
+      "column": "INVOICED_LINE_ACCTG_LEVEL",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TrxLineRefCustItemContext",
+      "table": "RA_CUSTOMER_TRX_LINES_ALL",
+      "column": "ITEM_CONTEXT",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TrxLineRefCustLastPeriodToCredit",
+      "table": "RA_CUSTOMER_TRX_LINES_ALL",
+      "column": "LAST_PERIOD_TO_CREDIT",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TrxLineRefCustLineIntendedUse",
+      "table": "RA_CUSTOMER_TRX_LINES_ALL",
+      "column": "LINE_INTENDED_USE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TrxLineRefCustLineNumber",
+      "table": "RA_CUSTOMER_TRX_LINES_ALL",
+      "column": "LINE_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TrxLineRefCustLineRecoverable",
+      "table": "RA_CUSTOMER_TRX_LINES_ALL",
+      "column": "LINE_RECOVERABLE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TrxLineRefCustLineType",
+      "table": "RA_CUSTOMER_TRX_LINES_ALL",
+      "column": "LINE_TYPE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TrxLineRefCustMrcExtendedAcctdAmount",
+      "table": "RA_CUSTOMER_TRX_LINES_ALL",
+      "column": "MRC_EXTENDED_ACCTD_AMOUNT",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TrxLineRefCustOverrideAutoAccountingFlag",
+      "table": "RA_CUSTOMER_TRX_LINES_ALL",
+      "column": "OVERRIDE_AUTO_ACCOUNTING_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TrxLineRefCustProductCategory",
+      "table": "RA_CUSTOMER_TRX_LINES_ALL",
+      "column": "PRODUCT_CATEGORY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TrxLineRefCustProductFiscClassification",
+      "table": "RA_CUSTOMER_TRX_LINES_ALL",
+      "column": "PRODUCT_FISC_CLASSIFICATION",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TrxLineRefCustProductType",
+      "table": "RA_CUSTOMER_TRX_LINES_ALL",
+      "column": "PRODUCT_TYPE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TrxLineRefCustProgramUpdateDate",
+      "table": "RA_CUSTOMER_TRX_LINES_ALL",
+      "column": "PROGRAM_UPDATE_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TrxLineRefCustQuantityCredited",
+      "table": "RA_CUSTOMER_TRX_LINES_ALL",
+      "column": "QUANTITY_CREDITED",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TrxLineRefCustQuantityInvoiced",
+      "table": "RA_CUSTOMER_TRX_LINES_ALL",
+      "column": "QUANTITY_INVOICED",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TrxLineRefCustQuantityOrdered",
+      "table": "RA_CUSTOMER_TRX_LINES_ALL",
+      "column": "QUANTITY_ORDERED",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TrxLineRefCustReasonCode",
+      "table": "RA_CUSTOMER_TRX_LINES_ALL",
+      "column": "REASON_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TrxLineRefCustRevenueAmount",
+      "table": "RA_CUSTOMER_TRX_LINES_ALL",
+      "column": "REVENUE_AMOUNT",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TrxLineRefCustRuleEndDate",
+      "table": "RA_CUSTOMER_TRX_LINES_ALL",
+      "column": "RULE_END_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TrxLineRefCustRuleStartDate",
+      "table": "RA_CUSTOMER_TRX_LINES_ALL",
+      "column": "RULE_START_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TrxLineRefCustSalesOrder",
+      "table": "RA_CUSTOMER_TRX_LINES_ALL",
+      "column": "SALES_ORDER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TrxLineRefCustSalesOrderDate",
+      "table": "RA_CUSTOMER_TRX_LINES_ALL",
+      "column": "SALES_ORDER_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TrxLineRefCustSalesOrderLine",
+      "table": "RA_CUSTOMER_TRX_LINES_ALL",
+      "column": "SALES_ORDER_LINE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TrxLineRefCustSalesOrderRevision",
+      "table": "RA_CUSTOMER_TRX_LINES_ALL",
+      "column": "SALES_ORDER_REVISION",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TrxLineRefCustSalesOrderSource",
+      "table": "RA_CUSTOMER_TRX_LINES_ALL",
+      "column": "SALES_ORDER_SOURCE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TrxLineRefCustSourceDocumentLineNumber",
+      "table": "RA_CUSTOMER_TRX_LINES_ALL",
+      "column": "SOURCE_DOCUMENT_LINE_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TrxLineRefCustTaxAction",
+      "table": "RA_CUSTOMER_TRX_LINES_ALL",
+      "column": "TAX_ACTION",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TrxLineRefCustTaxClassificationCode",
+      "table": "RA_CUSTOMER_TRX_LINES_ALL",
+      "column": "TAX_CLASSIFICATION_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TrxLineRefCustTaxExemptFlag",
+      "table": "RA_CUSTOMER_TRX_LINES_ALL",
+      "column": "TAX_EXEMPT_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TrxLineRefCustTaxExemptNumber",
+      "table": "RA_CUSTOMER_TRX_LINES_ALL",
+      "column": "TAX_EXEMPT_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TrxLineRefCustTaxExemptReasonCode",
+      "table": "RA_CUSTOMER_TRX_LINES_ALL",
+      "column": "TAX_EXEMPT_REASON_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TrxLineRefCustTaxPrecedence",
+      "table": "RA_CUSTOMER_TRX_LINES_ALL",
+      "column": "TAX_PRECEDENCE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TrxLineRefCustTaxRate",
+      "table": "RA_CUSTOMER_TRX_LINES_ALL",
+      "column": "TAX_RATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TrxLineRefCustTaxRecoverable",
+      "table": "RA_CUSTOMER_TRX_LINES_ALL",
+      "column": "TAX_RECOVERABLE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TrxLineRefCustTaxVendorReturnCode",
+      "table": "RA_CUSTOMER_TRX_LINES_ALL",
+      "column": "TAX_VENDOR_RETURN_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TrxLineRefCustTaxableAmount",
+      "table": "RA_CUSTOMER_TRX_LINES_ALL",
+      "column": "TAXABLE_AMOUNT",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TrxLineRefCustTaxableFlag",
+      "table": "RA_CUSTOMER_TRX_LINES_ALL",
+      "column": "TAXABLE_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TrxLineRefCustTranslatedDescription",
+      "table": "RA_CUSTOMER_TRX_LINES_ALL",
+      "column": "TRANSLATED_DESCRIPTION",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TrxLineRefCustTrxBusinessCategory",
+      "table": "RA_CUSTOMER_TRX_LINES_ALL",
+      "column": "TRX_BUSINESS_CATEGORY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TrxLineRefCustUnitSellingPrice",
+      "table": "RA_CUSTOMER_TRX_LINES_ALL",
+      "column": "UNIT_SELLING_PRICE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TrxLineRefCustUnitStandardPrice",
+      "table": "RA_CUSTOMER_TRX_LINES_ALL",
+      "column": "UNIT_STANDARD_PRICE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TrxLineRefCustUomCode",
+      "table": "RA_CUSTOMER_TRX_LINES_ALL",
+      "column": "UOM_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TrxLineRefCustUserDefinedFiscClass",
+      "table": "RA_CUSTOMER_TRX_LINES_ALL",
+      "column": "USER_DEFINED_FISC_CLASS",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TrxLineRefCustWhUpdateDate",
+      "table": "RA_CUSTOMER_TRX_LINES_ALL",
+      "column": "WH_UPDATE_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TrxnHdrComments",
+      "table": "RA_CUSTOMER_TRX_ALL",
+      "column": "COMMENTS",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TrxnHdrCustomerTrxId",
+      "table": "RA_CUSTOMER_TRX_ALL",
+      "column": "CUSTOMER_TRX_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TrxnHdrTrxNumber",
+      "table": "RA_CUSTOMER_TRX_ALL",
+      "column": "TRX_NUMBER",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TrxnLinCustomerTrxLineId",
+      "table": "RA_CUSTOMER_TRX_LINES_ALL",
+      "column": "CUSTOMER_TRX_LINE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TrxnLinDescription",
+      "table": "RA_CUSTOMER_TRX_LINES_ALL",
+      "column": "DESCRIPTION",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TrxnLinLineNumber",
+      "table": "RA_CUSTOMER_TRX_LINES_ALL",
+      "column": "LINE_NUMBER",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "UserCreatedByUserGuid",
+      "table": "PER_USERS",
+      "column": "USER_GUID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "UserCreatedByUserId",
+      "table": "PER_USERS",
+      "column": "USER_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "UserCreatedByUsername",
+      "table": "PER_USERS",
+      "column": "USERNAME",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "UserUpdatedByPersonId",
+      "table": "PER_USERS",
+      "column": "PERSON_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "UserUpdatedByUserGuid",
+      "table": "PER_USERS",
+      "column": "USER_GUID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "UserUpdatedByUserId",
+      "table": "PER_USERS",
+      "column": "USER_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "UserUpdatedByUsername",
+      "table": "PER_USERS",
+      "column": "USERNAME",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    }
+  ],
+  "by_table": {
+    "AR_DISTRIBUTIONS_ALL": [
+      {
+        "attribute": "AdjustmentDistributionAcctdAmountCr",
+        "column": "ACCTD_AMOUNT_CR",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AdjustmentDistributionAcctdAmountDr",
+        "column": "ACCTD_AMOUNT_DR",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AdjustmentDistributionActivityBucket",
+        "column": "ACTIVITY_BUCKET",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AdjustmentDistributionAmountCr",
+        "column": "AMOUNT_CR",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AdjustmentDistributionAmountDr",
+        "column": "AMOUNT_DR",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AdjustmentDistributionCodeCombinationId",
+        "column": "CODE_COMBINATION_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AdjustmentDistributionCreatedBy",
+        "column": "CREATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AdjustmentDistributionCreationDate",
+        "column": "CREATION_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AdjustmentDistributionCurrencyCode",
+        "column": "CURRENCY_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AdjustmentDistributionCurrencyConversionDate",
+        "column": "CURRENCY_CONVERSION_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AdjustmentDistributionCurrencyConversionRate",
+        "column": "CURRENCY_CONVERSION_RATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AdjustmentDistributionCurrencyConversionType",
+        "column": "CURRENCY_CONVERSION_TYPE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AdjustmentDistributionFromAcctdAmountCr",
+        "column": "FROM_ACCTD_AMOUNT_CR",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AdjustmentDistributionFromAcctdAmountDr",
+        "column": "FROM_ACCTD_AMOUNT_DR",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AdjustmentDistributionFromAmountCr",
+        "column": "FROM_AMOUNT_CR",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AdjustmentDistributionFromAmountDr",
+        "column": "FROM_AMOUNT_DR",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AdjustmentDistributionLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "AdjustmentDistributionLastUpdateLogin",
+        "column": "LAST_UPDATE_LOGIN",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AdjustmentDistributionLastUpdatedBy",
+        "column": "LAST_UPDATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AdjustmentDistributionLineId",
+        "column": "LINE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AdjustmentDistributionLocationSegmentId",
+        "column": "LOCATION_SEGMENT_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AdjustmentDistributionObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AdjustmentDistributionOrgId",
+        "column": "ORG_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AdjustmentDistributionRefAccountClass",
+        "column": "REF_ACCOUNT_CLASS",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AdjustmentDistributionRefCustTrxLineGlDistId",
+        "column": "REF_CUST_TRX_LINE_GL_DIST_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AdjustmentDistributionRefCustomerTrxLineId",
+        "column": "REF_CUSTOMER_TRX_LINE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AdjustmentDistributionRefDistCcid",
+        "column": "REF_DIST_CCID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AdjustmentDistributionRefLineId",
+        "column": "REF_LINE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AdjustmentDistributionRefMfDistFlag",
+        "column": "REF_MF_DIST_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AdjustmentDistributionReversalFlag",
+        "column": "REVERSAL_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AdjustmentDistributionReversedSourceId",
+        "column": "REVERSED_SOURCE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AdjustmentDistributionSourceId",
+        "column": "SOURCE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AdjustmentDistributionSourceIdSecondary",
+        "column": "SOURCE_ID_SECONDARY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AdjustmentDistributionSourceTable",
+        "column": "SOURCE_TABLE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AdjustmentDistributionSourceTableSecondary",
+        "column": "SOURCE_TABLE_SECONDARY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AdjustmentDistributionSourceType",
+        "column": "SOURCE_TYPE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AdjustmentDistributionSourceTypeSecondary",
+        "column": "SOURCE_TYPE_SECONDARY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AdjustmentDistributionTaxCodeId",
+        "column": "TAX_CODE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AdjustmentDistributionTaxGroupCodeId",
+        "column": "TAX_GROUP_CODE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AdjustmentDistributionTaxId",
+        "column": "TAX_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AdjustmentDistributionTaxLinkId",
+        "column": "TAX_LINK_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AdjustmentDistributionTaxableAccountedCr",
+        "column": "TAXABLE_ACCOUNTED_CR",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AdjustmentDistributionTaxableAccountedDr",
+        "column": "TAXABLE_ACCOUNTED_DR",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AdjustmentDistributionTaxableEnteredCr",
+        "column": "TAXABLE_ENTERED_CR",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AdjustmentDistributionTaxableEnteredDr",
+        "column": "TAXABLE_ENTERED_DR",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AdjustmentDistributionThirdPartyId",
+        "column": "THIRD_PARTY_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AdjustmentDistributionThirdPartySubId",
+        "column": "THIRD_PARTY_SUB_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CashDistributionAcctdAmountCr",
+        "column": "ACCTD_AMOUNT_CR",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CashDistributionAcctdAmountDr",
+        "column": "ACCTD_AMOUNT_DR",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CashDistributionActivityBucket",
+        "column": "ACTIVITY_BUCKET",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CashDistributionAmountCr",
+        "column": "AMOUNT_CR",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CashDistributionAmountDr",
+        "column": "AMOUNT_DR",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CashDistributionCodeCombinationId",
+        "column": "CODE_COMBINATION_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CashDistributionCreatedBy",
+        "column": "CREATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CashDistributionCreationDate",
+        "column": "CREATION_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CashDistributionCurrencyCode",
+        "column": "CURRENCY_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CashDistributionCurrencyConversionDate",
+        "column": "CURRENCY_CONVERSION_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CashDistributionCurrencyConversionRate",
+        "column": "CURRENCY_CONVERSION_RATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CashDistributionCurrencyConversionType",
+        "column": "CURRENCY_CONVERSION_TYPE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CashDistributionFromAcctdAmountCr",
+        "column": "FROM_ACCTD_AMOUNT_CR",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CashDistributionFromAcctdAmountDr",
+        "column": "FROM_ACCTD_AMOUNT_DR",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CashDistributionFromAmountCr",
+        "column": "FROM_AMOUNT_CR",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CashDistributionFromAmountDr",
+        "column": "FROM_AMOUNT_DR",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CashDistributionLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CashDistributionLastUpdateLogin",
+        "column": "LAST_UPDATE_LOGIN",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CashDistributionLastUpdatedBy",
+        "column": "LAST_UPDATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CashDistributionLocationSegmentId",
+        "column": "LOCATION_SEGMENT_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CashDistributionObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CashDistributionOrgId",
+        "column": "ORG_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CashDistributionRefAccountClass",
+        "column": "REF_ACCOUNT_CLASS",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CashDistributionRefCustTrxLineGlDistId",
+        "column": "REF_CUST_TRX_LINE_GL_DIST_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CashDistributionRefCustomerTrxLineId",
+        "column": "REF_CUSTOMER_TRX_LINE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CashDistributionRefDistCcid",
+        "column": "REF_DIST_CCID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CashDistributionRefLineId",
+        "column": "REF_LINE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CashDistributionRefMfDistFlag",
+        "column": "REF_MF_DIST_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CashDistributionReversalFlag",
+        "column": "REVERSAL_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CashDistributionReversedSourceId",
+        "column": "REVERSED_SOURCE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CashDistributionSourceId",
+        "column": "SOURCE_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CashDistributionSourceIdSecondary",
+        "column": "SOURCE_ID_SECONDARY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CashDistributionSourceTable",
+        "column": "SOURCE_TABLE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CashDistributionSourceTableSecondary",
+        "column": "SOURCE_TABLE_SECONDARY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CashDistributionSourceType",
+        "column": "SOURCE_TYPE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CashDistributionSourceTypeSecondary",
+        "column": "SOURCE_TYPE_SECONDARY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CashDistributionTaxCodeId",
+        "column": "TAX_CODE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CashDistributionTaxGroupCodeId",
+        "column": "TAX_GROUP_CODE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CashDistributionTaxId",
+        "column": "TAX_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CashDistributionTaxLinkId",
+        "column": "TAX_LINK_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CashDistributionTaxableAccountedCr",
+        "column": "TAXABLE_ACCOUNTED_CR",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CashDistributionTaxableAccountedDr",
+        "column": "TAXABLE_ACCOUNTED_DR",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CashDistributionTaxableEnteredCr",
+        "column": "TAXABLE_ENTERED_CR",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CashDistributionTaxableEnteredDr",
+        "column": "TAXABLE_ENTERED_DR",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CashDistributionThirdPartyId",
+        "column": "THIRD_PARTY_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CashDistributionThirdPartySubId",
+        "column": "THIRD_PARTY_SUB_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "LineId",
+        "column": "LINE_ID",
+        "bicc": true,
+        "pk": true
+      },
+      {
+        "attribute": "ReverseDistributionAcctdAmountCr",
+        "column": "ACCTD_AMOUNT_CR",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReverseDistributionAcctdAmountDr",
+        "column": "ACCTD_AMOUNT_DR",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReverseDistributionActivityBucket",
+        "column": "ACTIVITY_BUCKET",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReverseDistributionAmountCr",
+        "column": "AMOUNT_CR",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReverseDistributionAmountDr",
+        "column": "AMOUNT_DR",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReverseDistributionCodeCombinationId",
+        "column": "CODE_COMBINATION_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReverseDistributionCreatedBy",
+        "column": "CREATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReverseDistributionCreationDate",
+        "column": "CREATION_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReverseDistributionCurrencyCode",
+        "column": "CURRENCY_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReverseDistributionCurrencyConversionDate",
+        "column": "CURRENCY_CONVERSION_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReverseDistributionCurrencyConversionRate",
+        "column": "CURRENCY_CONVERSION_RATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReverseDistributionCurrencyConversionType",
+        "column": "CURRENCY_CONVERSION_TYPE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReverseDistributionFromAcctdAmountCr",
+        "column": "FROM_ACCTD_AMOUNT_CR",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReverseDistributionFromAcctdAmountDr",
+        "column": "FROM_ACCTD_AMOUNT_DR",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReverseDistributionFromAmountCr",
+        "column": "FROM_AMOUNT_CR",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReverseDistributionFromAmountDr",
+        "column": "FROM_AMOUNT_DR",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReverseDistributionLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ReverseDistributionLastUpdateLogin",
+        "column": "LAST_UPDATE_LOGIN",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReverseDistributionLastUpdatedBy",
+        "column": "LAST_UPDATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReverseDistributionLineId",
+        "column": "LINE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReverseDistributionLocationSegmentId",
+        "column": "LOCATION_SEGMENT_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReverseDistributionObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReverseDistributionOrgId",
+        "column": "ORG_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReverseDistributionRefAccountClass",
+        "column": "REF_ACCOUNT_CLASS",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReverseDistributionRefCustTrxLineGlDistId",
+        "column": "REF_CUST_TRX_LINE_GL_DIST_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReverseDistributionRefCustomerTrxLineId",
+        "column": "REF_CUSTOMER_TRX_LINE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReverseDistributionRefDistCcid",
+        "column": "REF_DIST_CCID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReverseDistributionRefLineId",
+        "column": "REF_LINE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReverseDistributionRefMfDistFlag",
+        "column": "REF_MF_DIST_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReverseDistributionReversalFlag",
+        "column": "REVERSAL_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReverseDistributionReversedSourceId",
+        "column": "REVERSED_SOURCE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReverseDistributionSourceId",
+        "column": "SOURCE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReverseDistributionSourceIdSecondary",
+        "column": "SOURCE_ID_SECONDARY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReverseDistributionSourceTable",
+        "column": "SOURCE_TABLE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReverseDistributionSourceTableSecondary",
+        "column": "SOURCE_TABLE_SECONDARY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReverseDistributionSourceType",
+        "column": "SOURCE_TYPE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReverseDistributionSourceTypeSecondary",
+        "column": "SOURCE_TYPE_SECONDARY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReverseDistributionTaxCodeId",
+        "column": "TAX_CODE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReverseDistributionTaxGroupCodeId",
+        "column": "TAX_GROUP_CODE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReverseDistributionTaxId",
+        "column": "TAX_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReverseDistributionTaxLinkId",
+        "column": "TAX_LINK_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReverseDistributionTaxableAccountedCr",
+        "column": "TAXABLE_ACCOUNTED_CR",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReverseDistributionTaxableAccountedDr",
+        "column": "TAXABLE_ACCOUNTED_DR",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReverseDistributionTaxableEnteredCr",
+        "column": "TAXABLE_ENTERED_CR",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReverseDistributionTaxableEnteredDr",
+        "column": "TAXABLE_ENTERED_DR",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReverseDistributionThirdPartyId",
+        "column": "THIRD_PARTY_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReverseDistributionThirdPartySubId",
+        "column": "THIRD_PARTY_SUB_ID",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "AR_BATCHES_ALL": [
+      {
+        "attribute": "BatchAutoPrintProgramId",
+        "column": "AUTO_PRINT_PROGRAM_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BatchAutoTransProgramId",
+        "column": "AUTO_TRANS_PROGRAM_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BatchBankDepositNumber",
+        "column": "BANK_DEPOSIT_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BatchBatchAppliedStatus",
+        "column": "BATCH_APPLIED_STATUS",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BatchBatchDate",
+        "column": "BATCH_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BatchBatchId",
+        "column": "BATCH_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BatchBatchSourceSeqId",
+        "column": "BATCH_SOURCE_SEQ_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BatchClosedDate",
+        "column": "CLOSED_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BatchControlAmount",
+        "column": "CONTROL_AMOUNT",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BatchControlCount",
+        "column": "CONTROL_COUNT",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BatchCreatedBy",
+        "column": "CREATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BatchCreationDate",
+        "column": "CREATION_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BatchCurrencyCode",
+        "column": "CURRENCY_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BatchDepositDate",
+        "column": "DEPOSIT_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BatchExchangeDate",
+        "column": "EXCHANGE_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BatchExchangeRate",
+        "column": "EXCHANGE_RATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BatchExchangeRateType",
+        "column": "EXCHANGE_RATE_TYPE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BatchGlDate",
+        "column": "GL_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BatchLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "BatchLastUpdateLogin",
+        "column": "LAST_UPDATE_LOGIN",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BatchLastUpdatedBy",
+        "column": "LAST_UPDATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BatchLockboxBatchName",
+        "column": "LOCKBOX_BATCH_NAME",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BatchLockboxId",
+        "column": "LOCKBOX_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BatchMediaReference",
+        "column": "MEDIA_REFERENCE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BatchName",
+        "column": "NAME",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BatchObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BatchOldRemittanceBankBranchId",
+        "column": "OLD_REMITTANCE_BANK_BRANCH_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BatchOperationRequestId",
+        "column": "OPERATION_REQUEST_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BatchOrgId",
+        "column": "ORG_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BatchProgramApplicationId",
+        "column": "PROGRAM_APPLICATION_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BatchProgramId",
+        "column": "PROGRAM_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BatchProgramUpdateDate",
+        "column": "PROGRAM_UPDATE_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BatchPurgedChildrenFlag",
+        "column": "PURGED_CHILDREN_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BatchReceiptClassId",
+        "column": "RECEIPT_CLASS_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BatchReceiptMethodId",
+        "column": "RECEIPT_METHOD_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BatchRemitBankAcctUseId",
+        "column": "REMIT_BANK_ACCT_USE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BatchRemitMethodCode",
+        "column": "REMIT_METHOD_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BatchRemittanceBankAccountId",
+        "column": "REMITTANCE_BANK_ACCOUNT_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BatchRemittanceBankBranchId",
+        "column": "REMITTANCE_BANK_BRANCH_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BatchRequestId",
+        "column": "REQUEST_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BatchSetOfBooksId",
+        "column": "SET_OF_BOOKS_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BatchStatus",
+        "column": "STATUS",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BatchTransmissionId",
+        "column": "TRANSMISSION_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BatchTransmissionRequestId",
+        "column": "TRANSMISSION_REQUEST_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BatchType",
+        "column": "TYPE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BatchWithRecourseFlag",
+        "column": "WITH_RECOURSE_FLAG",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "FUN_BU_PERF_V": [
+      {
+        "attribute": "BusinessUnitBusinessUnitId",
+        "column": "BU_ID",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "GL_DAILY_CONVERSION_TYPES": [
+      {
+        "attribute": "DailyConversionTypeConversionType",
+        "column": "CONVERSION_TYPE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "DailyConversionTypeCreatedBy",
+        "column": "CREATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "DailyConversionTypeCreationDate",
+        "column": "CREATION_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "DailyConversionTypeDescription",
+        "column": "DESCRIPTION",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "DailyConversionTypeEnableCrossRateFlag",
+        "column": "ENABLE_CROSS_RATE_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "DailyConversionTypeEnforceInverseRateFlag",
+        "column": "ENFORCE_INVERSE_RATE_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "DailyConversionTypeFemEnabledFlag",
+        "column": "FEM_ENABLED_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "DailyConversionTypeFemRateTypeCode",
+        "column": "FEM_RATE_TYPE_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "DailyConversionTypeFemScenario",
+        "column": "FEM_SCENARIO",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "DailyConversionTypeFemTimeframe",
+        "column": "FEM_TIMEFRAME",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "DailyConversionTypeLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "DailyConversionTypeLastUpdateLogin",
+        "column": "LAST_UPDATE_LOGIN",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "DailyConversionTypeLastUpdatedBy",
+        "column": "LAST_UPDATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "DailyConversionTypeObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "DailyConversionTypePivotCurrencyCode",
+        "column": "PIVOT_CURRENCY_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "DailyConversionTypeSecurityFlag",
+        "column": "SECURITY_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "DailyConversionTypeUserConversionType",
+        "column": "USER_CONVERSION_TYPE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "DailyConversionTypeUserOverrideCrossRateFlag",
+        "column": "USER_OVERRIDE_CROSS_RATE_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "HistoryDailyRateConversionType",
+        "column": "CONVERSION_TYPE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "HistoryDailyRateCreatedBy",
+        "column": "CREATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "HistoryDailyRateCreationDate",
+        "column": "CREATION_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "HistoryDailyRateDescription",
+        "column": "DESCRIPTION",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "HistoryDailyRateEnableCrossRateFlag",
+        "column": "ENABLE_CROSS_RATE_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "HistoryDailyRateEnforceInverseRateFlag",
+        "column": "ENFORCE_INVERSE_RATE_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "HistoryDailyRateFemEnabledFlag",
+        "column": "FEM_ENABLED_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "HistoryDailyRateFemRateTypeCode",
+        "column": "FEM_RATE_TYPE_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "HistoryDailyRateFemScenario",
+        "column": "FEM_SCENARIO",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "HistoryDailyRateFemTimeframe",
+        "column": "FEM_TIMEFRAME",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "HistoryDailyRateLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "HistoryDailyRateLastUpdateLogin",
+        "column": "LAST_UPDATE_LOGIN",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "HistoryDailyRateLastUpdatedBy",
+        "column": "LAST_UPDATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "HistoryDailyRateObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "HistoryDailyRatePivotCurrencyCode",
+        "column": "PIVOT_CURRENCY_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "HistoryDailyRateSecurityFlag",
+        "column": "SECURITY_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "HistoryDailyRateUserConversionType",
+        "column": "USER_CONVERSION_TYPE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "HistoryDailyRateUserOverrideCrossRateFlag",
+        "column": "USER_OVERRIDE_CROSS_RATE_FLAG",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "AR_CASH_RECEIPT_HISTORY_ALL": [
+      {
+        "attribute": "HistoryAccountCodeCombinationId",
+        "column": "ACCOUNT_CODE_COMBINATION_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "HistoryAcctdAmount",
+        "column": "ACCTD_AMOUNT",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "HistoryAcctdFactorDiscountAmount",
+        "column": "ACCTD_FACTOR_DISCOUNT_AMOUNT",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "HistoryAmount",
+        "column": "AMOUNT",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "HistoryBankChargeAccountCcid",
+        "column": "BANK_CHARGE_ACCOUNT_CCID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "HistoryBatchId",
+        "column": "BATCH_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "HistoryCashReceiptHistoryId",
+        "column": "CASH_RECEIPT_HISTORY_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "HistoryCashReceiptId",
+        "column": "CASH_RECEIPT_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "HistoryCreatedBy",
+        "column": "CREATED_BY",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "HistoryCreatedFrom",
+        "column": "CREATED_FROM",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "HistoryCreationDate",
+        "column": "CREATION_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "HistoryCurrentRecordFlag",
+        "column": "CURRENT_RECORD_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "HistoryEventId",
+        "column": "EVENT_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "HistoryExchangeDate",
+        "column": "EXCHANGE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "HistoryExchangeRate",
+        "column": "EXCHANGE_RATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "HistoryExchangeRateType",
+        "column": "EXCHANGE_RATE_TYPE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "HistoryFactorDiscountAmount",
+        "column": "FACTOR_DISCOUNT_AMOUNT",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "HistoryFactorFlag",
+        "column": "FACTOR_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "HistoryFirstPostedRecordFlag",
+        "column": "FIRST_POSTED_RECORD_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "HistoryGlDate",
+        "column": "GL_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "HistoryGlPostedDate",
+        "column": "GL_POSTED_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "HistoryLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "HistoryLastUpdateLogin",
+        "column": "LAST_UPDATE_LOGIN",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "HistoryLastUpdatedBy",
+        "column": "LAST_UPDATED_BY",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "HistoryMrcAcctdAmount",
+        "column": "MRC_ACCTD_AMOUNT",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "HistoryMrcAcctdFactorDiscAmount",
+        "column": "MRC_ACCTD_FACTOR_DISC_AMOUNT",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "HistoryMrcExchangeDate",
+        "column": "MRC_EXCHANGE_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "HistoryMrcExchangeRate",
+        "column": "MRC_EXCHANGE_RATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "HistoryMrcExchangeRateType",
+        "column": "MRC_EXCHANGE_RATE_TYPE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "HistoryMrcGlPostedDate",
+        "column": "MRC_GL_POSTED_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "HistoryMrcPostingControlId",
+        "column": "MRC_POSTING_CONTROL_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "HistoryMrcReversalGlPostedDate",
+        "column": "MRC_REVERSAL_GL_POSTED_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "HistoryNoteStatus",
+        "column": "NOTE_STATUS",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "HistoryObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "HistoryOrgId",
+        "column": "ORG_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "HistoryPostableFlag",
+        "column": "POSTABLE_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "HistoryPostingControlId",
+        "column": "POSTING_CONTROL_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "HistoryProgramApplicationId",
+        "column": "PROGRAM_APPLICATION_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "HistoryProgramId",
+        "column": "PROGRAM_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "HistoryProgramUpdateDate",
+        "column": "PROGRAM_UPDATE_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "HistoryPrvStatCashReceiptHistId",
+        "column": "PRV_STAT_CASH_RECEIPT_HIST_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "HistoryRequestId",
+        "column": "REQUEST_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "HistoryReversalCashReceiptHistId",
+        "column": "REVERSAL_CASH_RECEIPT_HIST_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "HistoryReversalCreatedFrom",
+        "column": "REVERSAL_CREATED_FROM",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "HistoryReversalGlDate",
+        "column": "REVERSAL_GL_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "HistoryReversalGlPostedDate",
+        "column": "REVERSAL_GL_POSTED_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "HistoryReversalPostingControlId",
+        "column": "REVERSAL_POSTING_CONTROL_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "HistoryStatus",
+        "column": "STATUS",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "HistoryTrxDate",
+        "column": "TRX_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PrvStatHistoryCashReceiptHistoryId",
+        "column": "CASH_RECEIPT_HISTORY_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PrvStatHistoryCashReceiptId",
+        "column": "CASH_RECEIPT_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PrvStatHistoryStatus",
+        "column": "STATUS",
+        "bicc": true,
+        "pk": false
+      }
+    ],
+    "GL_LEDGERS": [
+      {
+        "attribute": "LedgersChartOfAccountsId",
+        "column": "CHART_OF_ACCOUNTS_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "LedgersLedgerId",
+        "column": "LEDGER_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ObjectVersionNumber1",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "AR_PAYMENT_SCHEDULES_ALL": [
+      {
+        "attribute": "PaymentSchedulesDueDate",
+        "column": "DUE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PaymentSchedulesPaymentScheduleId",
+        "column": "PAYMENT_SCHEDULE_ID",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "PER_PERSON_NAMES_F_V": [
+      {
+        "attribute": "PersonCreatedByDisplayName",
+        "column": "DISPLAY_NAME",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PersonCreatedByEffectiveEndDate",
+        "column": "EFFECTIVE_END_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PersonCreatedByEffectiveStartDate",
+        "column": "EFFECTIVE_START_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PersonCreatedByPersonId",
+        "column": "PERSON_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PersonCreatedByPersonNameId",
+        "column": "PERSON_NAME_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PersonUpdatedByDisplayName",
+        "column": "DISPLAY_NAME",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PersonUpdatedByEffectiveEndDate",
+        "column": "EFFECTIVE_END_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PersonUpdatedByEffectiveStartDate",
+        "column": "EFFECTIVE_START_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PersonUpdatedByPersonId",
+        "column": "PERSON_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PersonUpdatedByPersonNameId",
+        "column": "PERSON_NAME_ID",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "AR_CASH_RECEIPTS_ALL": [
+      {
+        "attribute": "ReceiptActualValueDate",
+        "column": "ACTUAL_VALUE_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReceiptAddressVerificationCode",
+        "column": "ADDRESS_VERIFICATION_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReceiptAmount",
+        "column": "AMOUNT",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReceiptAnticipatedClearingDate",
+        "column": "ANTICIPATED_CLEARING_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReceiptApplicationNotes",
+        "column": "APPLICATION_NOTES",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReceiptApprovalCode",
+        "column": "APPROVAL_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReceiptAttributeCategory",
+        "column": "ATTRIBUTE_CATEGORY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReceiptAutoapplyFlag",
+        "column": "AUTOAPPLY_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReceiptAutomatchRequestId",
+        "column": "AUTOMATCH_REQUEST_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReceiptAxAccountedFlag",
+        "column": "AX_ACCOUNTED_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReceiptCashReceiptId",
+        "column": "CASH_RECEIPT_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReceiptCcErrorCode",
+        "column": "CC_ERROR_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReceiptCcErrorFlag",
+        "column": "CC_ERROR_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReceiptCcErrorText",
+        "column": "CC_ERROR_TEXT",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReceiptCollectorId",
+        "column": "COLLECTOR_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReceiptComments",
+        "column": "COMMENTS",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReceiptConfirmedFlag",
+        "column": "CONFIRMED_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReceiptCreatedBy",
+        "column": "CREATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReceiptCreationDate",
+        "column": "CREATION_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReceiptCurrencyCode",
+        "column": "CURRENCY_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReceiptCustomerBankAccountId",
+        "column": "CUSTOMER_BANK_ACCOUNT_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReceiptCustomerBankBranchId",
+        "column": "CUSTOMER_BANK_BRANCH_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReceiptCustomerReceiptReference",
+        "column": "CUSTOMER_RECEIPT_REFERENCE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReceiptCustomerSiteUseId",
+        "column": "CUSTOMER_SITE_USE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReceiptDepositDate",
+        "column": "DEPOSIT_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReceiptDistributionSetId",
+        "column": "DISTRIBUTION_SET_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReceiptDocSequenceId",
+        "column": "DOC_SEQUENCE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReceiptDocSequenceValue",
+        "column": "DOC_SEQUENCE_VALUE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReceiptExchangeDate",
+        "column": "EXCHANGE_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReceiptExchangeRate",
+        "column": "EXCHANGE_RATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReceiptExchangeRateType",
+        "column": "EXCHANGE_RATE_TYPE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReceiptFactorDiscountAmount",
+        "column": "FACTOR_DISCOUNT_AMOUNT",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReceiptIssueDate",
+        "column": "ISSUE_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReceiptIssuerBankBranchId",
+        "column": "ISSUER_BANK_BRANCH_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReceiptIssuerName",
+        "column": "ISSUER_NAME",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReceiptLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ReceiptLastUpdateLogin",
+        "column": "LAST_UPDATE_LOGIN",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReceiptLastUpdatedBy",
+        "column": "LAST_UPDATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReceiptLegalEntityId",
+        "column": "LEGAL_ENTITY_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReceiptLogicalGroupReference",
+        "column": "LOGICAL_GROUP_REFERENCE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReceiptMiscPaymentSource",
+        "column": "MISC_PAYMENT_SOURCE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReceiptObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReceiptOldCustomerBankAccountId",
+        "column": "OLD_CUSTOMER_BANK_ACCOUNT_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReceiptOldCustomerBankBranchId",
+        "column": "OLD_CUSTOMER_BANK_BRANCH_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReceiptOldIssuerBankBranchId",
+        "column": "OLD_ISSUER_BANK_BRANCH_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReceiptOrgId",
+        "column": "ORG_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReceiptOverrideRemitAccountFlag",
+        "column": "OVERRIDE_REMIT_ACCOUNT_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReceiptPayFromCustomer",
+        "column": "PAY_FROM_CUSTOMER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReceiptPaymentServerOrderNum",
+        "column": "PAYMENT_SERVER_ORDER_NUM",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReceiptPaymentTrxnExtensionId",
+        "column": "PAYMENT_TRXN_EXTENSION_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReceiptPostmarkDate",
+        "column": "POSTMARK_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReceiptProgramApplicationId",
+        "column": "PROGRAM_APPLICATION_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReceiptProgramId",
+        "column": "PROGRAM_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReceiptProgramUpdateDate",
+        "column": "PROGRAM_UPDATE_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReceiptPromiseSource",
+        "column": "PROMISE_SOURCE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReceiptRecVersionNumber",
+        "column": "REC_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReceiptReceiptCodeCombinationId",
+        "column": "CODE_COMBINATION_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReceiptReceiptDate",
+        "column": "RECEIPT_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReceiptReceiptMethodId",
+        "column": "RECEIPT_METHOD_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReceiptReceiptNumber",
+        "column": "RECEIPT_NUMBER",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ReceiptReceiptReceiptBatchId",
+        "column": "RECEIPT_BATCH_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReceiptReceivablesTrxId",
+        "column": "RECEIVABLES_TRX_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReceiptReconFlag",
+        "column": "RECON_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReceiptReferenceId",
+        "column": "REFERENCE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReceiptReferenceType",
+        "column": "REFERENCE_TYPE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReceiptRemitBankAcctUseId",
+        "column": "REMIT_BANK_ACCT_USE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReceiptRemittanceBankAccountId",
+        "column": "REMITTANCE_BANK_ACCOUNT_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReceiptRemittanceBatchId",
+        "column": "REMITTANCE_BATCH_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReceiptRequestId",
+        "column": "REQUEST_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReceiptResourceId",
+        "column": "RESOURCE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReceiptReversalCategory",
+        "column": "REVERSAL_CATEGORY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReceiptReversalComments",
+        "column": "REVERSAL_COMMENTS",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReceiptReversalDate",
+        "column": "REVERSAL_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReceiptReversalReasonCode",
+        "column": "REVERSAL_REASON_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReceiptSelectedForFactoringFlag",
+        "column": "SELECTED_FOR_FACTORING_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReceiptSelectedRemittanceBatchId",
+        "column": "SELECTED_REMITTANCE_BATCH_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReceiptSetOfBooksId",
+        "column": "SET_OF_BOOKS_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReceiptStatus",
+        "column": "STATUS",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReceiptTaxAmount",
+        "column": "TAX_AMOUNT",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReceiptTaxRate",
+        "column": "TAX_RATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReceiptType",
+        "column": "TYPE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ReceiptUniqueReference",
+        "column": "UNIQUE_REFERENCE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReceiptUssglTransactionCode",
+        "column": "USSGL_TRANSACTION_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReceiptUssglTransactionCodeContext",
+        "column": "USSGL_TRANSACTION_CODE_CONTEXT",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReceiptVatTaxId",
+        "column": "VAT_TAX_ID",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "AR_RECON_DIFFERENCE_DETAILS": [
+      {
+        "attribute": "ReconDiffAccountedAmount",
+        "column": "ACCOUNTED_AMOUNT",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReconDiffAccountingDate",
+        "column": "ACCOUNTING_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReconDiffCauseOfDifferenceCode",
+        "column": "CAUSE_OF_DIFFERENCE_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReconDiffCreatedBy",
+        "column": "CREATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReconDiffCreationDate",
+        "column": "CREATION_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReconDiffDocumentDistributionId",
+        "column": "DOCUMENT_DISTRIBUTION_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReconDiffDocumentId",
+        "column": "DOCUMENT_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReconDiffJobDefinitionName",
+        "column": "JOB_DEFINITION_NAME",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReconDiffJobDefinitionPackage",
+        "column": "JOB_DEFINITION_PACKAGE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReconDiffLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReconDiffLastUpdateLogin",
+        "column": "LAST_UPDATE_LOGIN",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReconDiffLastUpdatedBy",
+        "column": "LAST_UPDATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReconDiffObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReconDiffOrgId",
+        "column": "ORG_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReconDiffReconItemCode",
+        "column": "RECON_ITEM_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReconDiffReconTrxId",
+        "column": "RECON_TRX_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReconDiffRequestId",
+        "column": "REQUEST_ID",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "RA_CUSTOMER_TRX_LINES_ALL": [
+      {
+        "attribute": "TrxLineRefCustAccountingRuleDuration",
+        "column": "ACCOUNTING_RULE_DURATION",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TrxLineRefCustAcctdAmountDueOriginal",
+        "column": "ACCTD_AMOUNT_DUE_ORIGINAL",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TrxLineRefCustAcctdAmountDueRemaining",
+        "column": "ACCTD_AMOUNT_DUE_REMAINING",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TrxLineRefCustAmountDueOriginal",
+        "column": "AMOUNT_DUE_ORIGINAL",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TrxLineRefCustAmountDueRemaining",
+        "column": "AMOUNT_DUE_REMAINING",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TrxLineRefCustAmountIncludesTaxFlag",
+        "column": "AMOUNT_INCLUDES_TAX_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TrxLineRefCustAssessableValue",
+        "column": "ASSESSABLE_VALUE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TrxLineRefCustAutoruleCompleteFlag",
+        "column": "AUTORULE_COMPLETE_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TrxLineRefCustAutoruleDurationProcessed",
+        "column": "AUTORULE_DURATION_PROCESSED",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TrxLineRefCustAutotax",
+        "column": "AUTOTAX",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TrxLineRefCustChrgAcctdAmountRemaining",
+        "column": "CHRG_ACCTD_AMOUNT_REMAINING",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TrxLineRefCustChrgAmountRemaining",
+        "column": "CHRG_AMOUNT_REMAINING",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TrxLineRefCustCustomerTrxLineId",
+        "column": "CUSTOMER_TRX_LINE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TrxLineRefCustDefaultUssglTransactionCode",
+        "column": "DEFAULT_USSGL_TRANSACTION_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TrxLineRefCustDefaultUssglTrxCodeContext",
+        "column": "DEFAULT_USSGL_TRX_CODE_CONTEXT",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TrxLineRefCustDeferralExclusionFlag",
+        "column": "DEFERRAL_EXCLUSION_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TrxLineRefCustDescription",
+        "column": "DESCRIPTION",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TrxLineRefCustExtendedAcctdAmount",
+        "column": "EXTENDED_ACCTD_AMOUNT",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TrxLineRefCustExtendedAmount",
+        "column": "EXTENDED_AMOUNT",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TrxLineRefCustFairMarketValueAmount",
+        "column": "FAIR_MARKET_VALUE_AMOUNT",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TrxLineRefCustFrtAdjAcctdRemaining",
+        "column": "FRT_ADJ_ACCTD_REMAINING",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TrxLineRefCustFrtAdjRemaining",
+        "column": "FRT_ADJ_REMAINING",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TrxLineRefCustFrtEdAcctdAmount",
+        "column": "FRT_ED_ACCTD_AMOUNT",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TrxLineRefCustFrtEdAmount",
+        "column": "FRT_ED_AMOUNT",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TrxLineRefCustFrtUnedAcctdAmount",
+        "column": "FRT_UNED_ACCTD_AMOUNT",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TrxLineRefCustFrtUnedAmount",
+        "column": "FRT_UNED_AMOUNT",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TrxLineRefCustGrossExtendedAmount",
+        "column": "GROSS_EXTENDED_AMOUNT",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TrxLineRefCustGrossUnitSellingPrice",
+        "column": "GROSS_UNIT_SELLING_PRICE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TrxLineRefCustHistoricalFlag",
+        "column": "HISTORICAL_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TrxLineRefCustInvoicedLineAcctgLevel",
+        "column": "INVOICED_LINE_ACCTG_LEVEL",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TrxLineRefCustItemContext",
+        "column": "ITEM_CONTEXT",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TrxLineRefCustLastPeriodToCredit",
+        "column": "LAST_PERIOD_TO_CREDIT",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TrxLineRefCustLineIntendedUse",
+        "column": "LINE_INTENDED_USE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TrxLineRefCustLineNumber",
+        "column": "LINE_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TrxLineRefCustLineRecoverable",
+        "column": "LINE_RECOVERABLE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TrxLineRefCustLineType",
+        "column": "LINE_TYPE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TrxLineRefCustMrcExtendedAcctdAmount",
+        "column": "MRC_EXTENDED_ACCTD_AMOUNT",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TrxLineRefCustOverrideAutoAccountingFlag",
+        "column": "OVERRIDE_AUTO_ACCOUNTING_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TrxLineRefCustProductCategory",
+        "column": "PRODUCT_CATEGORY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TrxLineRefCustProductFiscClassification",
+        "column": "PRODUCT_FISC_CLASSIFICATION",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TrxLineRefCustProductType",
+        "column": "PRODUCT_TYPE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TrxLineRefCustProgramUpdateDate",
+        "column": "PROGRAM_UPDATE_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TrxLineRefCustQuantityCredited",
+        "column": "QUANTITY_CREDITED",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TrxLineRefCustQuantityInvoiced",
+        "column": "QUANTITY_INVOICED",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TrxLineRefCustQuantityOrdered",
+        "column": "QUANTITY_ORDERED",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TrxLineRefCustReasonCode",
+        "column": "REASON_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TrxLineRefCustRevenueAmount",
+        "column": "REVENUE_AMOUNT",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TrxLineRefCustRuleEndDate",
+        "column": "RULE_END_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TrxLineRefCustRuleStartDate",
+        "column": "RULE_START_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TrxLineRefCustSalesOrder",
+        "column": "SALES_ORDER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TrxLineRefCustSalesOrderDate",
+        "column": "SALES_ORDER_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TrxLineRefCustSalesOrderLine",
+        "column": "SALES_ORDER_LINE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TrxLineRefCustSalesOrderRevision",
+        "column": "SALES_ORDER_REVISION",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TrxLineRefCustSalesOrderSource",
+        "column": "SALES_ORDER_SOURCE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TrxLineRefCustSourceDocumentLineNumber",
+        "column": "SOURCE_DOCUMENT_LINE_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TrxLineRefCustTaxAction",
+        "column": "TAX_ACTION",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TrxLineRefCustTaxClassificationCode",
+        "column": "TAX_CLASSIFICATION_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TrxLineRefCustTaxExemptFlag",
+        "column": "TAX_EXEMPT_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TrxLineRefCustTaxExemptNumber",
+        "column": "TAX_EXEMPT_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TrxLineRefCustTaxExemptReasonCode",
+        "column": "TAX_EXEMPT_REASON_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TrxLineRefCustTaxPrecedence",
+        "column": "TAX_PRECEDENCE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TrxLineRefCustTaxRate",
+        "column": "TAX_RATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TrxLineRefCustTaxRecoverable",
+        "column": "TAX_RECOVERABLE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TrxLineRefCustTaxVendorReturnCode",
+        "column": "TAX_VENDOR_RETURN_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TrxLineRefCustTaxableAmount",
+        "column": "TAXABLE_AMOUNT",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TrxLineRefCustTaxableFlag",
+        "column": "TAXABLE_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TrxLineRefCustTranslatedDescription",
+        "column": "TRANSLATED_DESCRIPTION",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TrxLineRefCustTrxBusinessCategory",
+        "column": "TRX_BUSINESS_CATEGORY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TrxLineRefCustUnitSellingPrice",
+        "column": "UNIT_SELLING_PRICE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TrxLineRefCustUnitStandardPrice",
+        "column": "UNIT_STANDARD_PRICE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TrxLineRefCustUomCode",
+        "column": "UOM_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TrxLineRefCustUserDefinedFiscClass",
+        "column": "USER_DEFINED_FISC_CLASS",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TrxLineRefCustWhUpdateDate",
+        "column": "WH_UPDATE_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TrxnLinCustomerTrxLineId",
+        "column": "CUSTOMER_TRX_LINE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TrxnLinDescription",
+        "column": "DESCRIPTION",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TrxnLinLineNumber",
+        "column": "LINE_NUMBER",
+        "bicc": true,
+        "pk": false
+      }
+    ],
+    "RA_CUSTOMER_TRX_ALL": [
+      {
+        "attribute": "TrxnHdrComments",
+        "column": "COMMENTS",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TrxnHdrCustomerTrxId",
+        "column": "CUSTOMER_TRX_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TrxnHdrTrxNumber",
+        "column": "TRX_NUMBER",
+        "bicc": true,
+        "pk": false
+      }
+    ],
+    "PER_USERS": [
+      {
+        "attribute": "UserCreatedByUserGuid",
+        "column": "USER_GUID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "UserCreatedByUserId",
+        "column": "USER_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "UserCreatedByUsername",
+        "column": "USERNAME",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "UserUpdatedByPersonId",
+        "column": "PERSON_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "UserUpdatedByUserGuid",
+        "column": "USER_GUID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "UserUpdatedByUserId",
+        "column": "USER_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "UserUpdatedByUsername",
+        "column": "USERNAME",
+        "bicc": false,
+        "pk": false
+      }
+    ]
+  }
+}

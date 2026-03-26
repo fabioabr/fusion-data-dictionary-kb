@@ -1,0 +1,512 @@
+{
+  "meta": {
+    "pvo_name": "ScreeningResultViewAllPVO",
+    "full_path": "HcmTopModelAnalyticsGlobalAM.HcmRecBackgroundCheckAM.ScreeningResultViewAllPVO",
+    "module_path": "HcmTopModelAnalyticsGlobalAM.HcmRecBackgroundCheckAM",
+    "module_code": "AP",
+    "type": "pvo",
+    "description": "Extrai os resultados de screening (verificação de antecedentes) de candidatos, incluindo status, candidatura e oferta vinculada. Permite acompanhar o andamento e resultado das verificações de antecedentes em processos seletivos."
+  },
+  "stats": {
+    "total_attributes": 33,
+    "tables_count": 9,
+    "bicc_enabled": 21,
+    "bicc_pct": 64,
+    "pk_count": 1
+  },
+  "tables": [
+    "IRC_BC_CAND_RESULTS",
+    "IRC_OFFERS",
+    "IRC_REQUISITIONS_B",
+    "IRC_SUBMISSIONS",
+    "IRC_TP_PARTNERS",
+    "IRC_TP_PARTNER_ACCOUNTS",
+    "IRC_TP_PARTNER_PROVISNGS",
+    "PER_PERSON_NAMES_F_V",
+    "PER_USERS"
+  ],
+  "attributes": [
+    {
+      "name": "ObjectVersionNumber1",
+      "table": "IRC_SUBMISSIONS",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "OffersPEOOfferId",
+      "table": "IRC_OFFERS",
+      "column": "OFFER_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartnerAccountPEOAccountId",
+      "table": "IRC_TP_PARTNER_ACCOUNTS",
+      "column": "ACCOUNT_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartnerAccountPEOUsername",
+      "table": "IRC_TP_PARTNER_ACCOUNTS",
+      "column": "USERNAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartnerPEOName",
+      "table": "IRC_TP_PARTNERS",
+      "column": "NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartnerPEOPartnerId",
+      "table": "IRC_TP_PARTNERS",
+      "column": "PARTNER_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartnerProvisionPEOProvisioningId",
+      "table": "IRC_TP_PARTNER_PROVISNGS",
+      "column": "PROVISIONING_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonNamePEODisplayName",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "DISPLAY_NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonNamePEOEffectiveEndDate",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "EFFECTIVE_END_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonNamePEOEffectiveStartDate",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "EFFECTIVE_START_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonNamePEOPersonNameId",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "PERSON_NAME_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RequisitionBPEORequisitionId",
+      "table": "IRC_REQUISITIONS_B",
+      "column": "REQUISITION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RequisitionBPEORequisitionNumber",
+      "table": "IRC_REQUISITIONS_B",
+      "column": "REQUISITION_NUMBER",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ScreeningResultPEOAccountId",
+      "table": "IRC_BC_CAND_RESULTS",
+      "column": "ACCOUNT_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ScreeningResultPEOBcErrorDesc",
+      "table": "IRC_BC_CAND_RESULTS",
+      "column": "BC_ERROR_DESC",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ScreeningResultPEOBcStatusCode",
+      "table": "IRC_BC_CAND_RESULTS",
+      "column": "BC_STATUS_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ScreeningResultPEOCreatedBy",
+      "table": "IRC_BC_CAND_RESULTS",
+      "column": "CREATED_BY",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ScreeningResultPEOCreationDate",
+      "table": "IRC_BC_CAND_RESULTS",
+      "column": "CREATION_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ScreeningResultPEOLastUpdateDate",
+      "table": "IRC_BC_CAND_RESULTS",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": true
+    },
+    {
+      "name": "ScreeningResultPEOLastUpdateLogin",
+      "table": "IRC_BC_CAND_RESULTS",
+      "column": "LAST_UPDATE_LOGIN",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ScreeningResultPEOLastUpdatedBy",
+      "table": "IRC_BC_CAND_RESULTS",
+      "column": "LAST_UPDATED_BY",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ScreeningResultPEOObjectVersionNumber",
+      "table": "IRC_BC_CAND_RESULTS",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ScreeningResultPEOProvisioningId",
+      "table": "IRC_BC_CAND_RESULTS",
+      "column": "PROVISIONING_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ScreeningResultPEORequestDate",
+      "table": "IRC_BC_CAND_RESULTS",
+      "column": "REQUEST_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ScreeningResultPEORequestedBy",
+      "table": "IRC_BC_CAND_RESULTS",
+      "column": "REQUESTED_BY",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ScreeningResultPEOResultId",
+      "table": "IRC_BC_CAND_RESULTS",
+      "column": "RESULT_ID",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    },
+    {
+      "name": "ScreeningResultPEOSubmissionId",
+      "table": "IRC_BC_CAND_RESULTS",
+      "column": "SUBMISSION_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SubmissionPEOPersonId",
+      "table": "IRC_SUBMISSIONS",
+      "column": "PERSON_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SubmissionPEORequisitionId",
+      "table": "IRC_SUBMISSIONS",
+      "column": "REQUISITION_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SubmissionPEOSubmissionId",
+      "table": "IRC_SUBMISSIONS",
+      "column": "SUBMISSION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "UserPEOObjectVersionNumber",
+      "table": "PER_USERS",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "UserPEOPersonId",
+      "table": "PER_USERS",
+      "column": "PERSON_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "UserPEOUserId",
+      "table": "PER_USERS",
+      "column": "USER_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    }
+  ],
+  "by_table": {
+    "IRC_SUBMISSIONS": [
+      {
+        "attribute": "ObjectVersionNumber1",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "SubmissionPEOPersonId",
+        "column": "PERSON_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "SubmissionPEORequisitionId",
+        "column": "REQUISITION_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "SubmissionPEOSubmissionId",
+        "column": "SUBMISSION_ID",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "IRC_OFFERS": [
+      {
+        "attribute": "OffersPEOOfferId",
+        "column": "OFFER_ID",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "IRC_TP_PARTNER_ACCOUNTS": [
+      {
+        "attribute": "PartnerAccountPEOAccountId",
+        "column": "ACCOUNT_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PartnerAccountPEOUsername",
+        "column": "USERNAME",
+        "bicc": true,
+        "pk": false
+      }
+    ],
+    "IRC_TP_PARTNERS": [
+      {
+        "attribute": "PartnerPEOName",
+        "column": "NAME",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PartnerPEOPartnerId",
+        "column": "PARTNER_ID",
+        "bicc": true,
+        "pk": false
+      }
+    ],
+    "IRC_TP_PARTNER_PROVISNGS": [
+      {
+        "attribute": "PartnerProvisionPEOProvisioningId",
+        "column": "PROVISIONING_ID",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "PER_PERSON_NAMES_F_V": [
+      {
+        "attribute": "PersonNamePEODisplayName",
+        "column": "DISPLAY_NAME",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PersonNamePEOEffectiveEndDate",
+        "column": "EFFECTIVE_END_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PersonNamePEOEffectiveStartDate",
+        "column": "EFFECTIVE_START_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PersonNamePEOPersonNameId",
+        "column": "PERSON_NAME_ID",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "IRC_REQUISITIONS_B": [
+      {
+        "attribute": "RequisitionBPEORequisitionId",
+        "column": "REQUISITION_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "RequisitionBPEORequisitionNumber",
+        "column": "REQUISITION_NUMBER",
+        "bicc": true,
+        "pk": false
+      }
+    ],
+    "IRC_BC_CAND_RESULTS": [
+      {
+        "attribute": "ScreeningResultPEOAccountId",
+        "column": "ACCOUNT_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ScreeningResultPEOBcErrorDesc",
+        "column": "BC_ERROR_DESC",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ScreeningResultPEOBcStatusCode",
+        "column": "BC_STATUS_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ScreeningResultPEOCreatedBy",
+        "column": "CREATED_BY",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ScreeningResultPEOCreationDate",
+        "column": "CREATION_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ScreeningResultPEOLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ScreeningResultPEOLastUpdateLogin",
+        "column": "LAST_UPDATE_LOGIN",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ScreeningResultPEOLastUpdatedBy",
+        "column": "LAST_UPDATED_BY",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ScreeningResultPEOObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ScreeningResultPEOProvisioningId",
+        "column": "PROVISIONING_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ScreeningResultPEORequestDate",
+        "column": "REQUEST_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ScreeningResultPEORequestedBy",
+        "column": "REQUESTED_BY",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ScreeningResultPEOResultId",
+        "column": "RESULT_ID",
+        "bicc": true,
+        "pk": true
+      },
+      {
+        "attribute": "ScreeningResultPEOSubmissionId",
+        "column": "SUBMISSION_ID",
+        "bicc": true,
+        "pk": false
+      }
+    ],
+    "PER_USERS": [
+      {
+        "attribute": "UserPEOObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "UserPEOPersonId",
+        "column": "PERSON_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "UserPEOUserId",
+        "column": "USER_ID",
+        "bicc": false,
+        "pk": false
+      }
+    ]
+  }
+}

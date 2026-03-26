@@ -1,0 +1,385 @@
+{
+  "source": "gl_ledger_segment_values.md",
+  "source_hash": "22f42a600241d619e47c7b9aca8c6106",
+  "translated_at": "2026-03-25",
+  "items": [
+    {
+      "id": 1,
+      "br": "Visão Geral",
+      "en": "Overview",
+      "es": "Vision General"
+    },
+    {
+      "id": 2,
+      "br": "Armazena a associação entre valores de segmento contábil (tipicamente o balancing segment / empresa) e ledgers. Define quais valores de segmento estão atribuídos a cada ledger, controlando o escopo de cada livro contábil. Essencial para ambientes multi-empresa onde diferentes entidades legais compartilham o mesmo plano de contas.",
+      "en": "Stores the association between accounting segment values (typically the balancing segment / company) and ledgers. Defines which segment values are assigned to each ledger, controlling the scope of each accounting book. Essential for multi-company environments where different legal entities share the same chart of accounts.",
+      "es": "Almacena la asociacion entre valores de segmento contable (tipicamente el balancing segment / empresa) y ledgers. Define cuales valores de segmento estan asignados a cada ledger, controlando el alcance de cada libro contable. Esencial para ambientes multi-empresa donde diferentes entidades legales comparten el mismo plan de cuentas."
+    },
+    {
+      "id": 3,
+      "br": "Tabela de atribuição de segmentos",
+      "en": "Segment assignment table",
+      "es": "Tabla de asignacion de segmentos"
+    },
+    {
+      "id": 4,
+      "br": "Cada valor de balancing segment (ex: empresa \"01\", \"02\") é atribuído a exatamente um primary ledger. Esta tabela controla o mapeamento empresa → ledger.",
+      "en": "Each balancing segment value (e.g., company \"01\", \"02\") is assigned to exactly one primary ledger. This table controls the company → ledger mapping.",
+      "es": "Cada valor de balancing segment (ej: empresa \"01\", \"02\") se asigna a exactamente un primary ledger. Esta tabla controla el mapeo empresa → ledger."
+    },
+    {
+      "id": 5,
+      "br": "Propósito de Negócio",
+      "en": "Business Purpose",
+      "es": "Proposito de Negocio"
+    },
+    {
+      "id": 6,
+      "br": "Esta tabela é utilizada nos seguintes processos:",
+      "en": "This table is used in the following processes:",
+      "es": "Esta tabla se utiliza en los siguientes procesos:"
+    },
+    {
+      "id": 7,
+      "br": "Definição de quais empresas/entidades pertencem a cada ledger.",
+      "en": "Definition of which companies/entities belong to each ledger.",
+      "es": "Definicion de cuales empresas/entidades pertenecen a cada ledger."
+    },
+    {
+      "id": 8,
+      "br": "Controle de acesso por segmento de balanceamento.",
+      "en": "Access control by balancing segment.",
+      "es": "Control de acceso por segmento de balanceo."
+    },
+    {
+      "id": 9,
+      "br": "Identificação de quais segmentos são consolidados em cada ledger.",
+      "en": "Identification of which segments are consolidated in each ledger.",
+      "es": "Identificacion de cuales segmentos se consolidan en cada ledger."
+    },
+    {
+      "id": 10,
+      "br": "Garantir que journals referenciem apenas segmentos válidos para o ledger.",
+      "en": "Ensure that journals reference only valid segments for the ledger.",
+      "es": "Garantizar que los journals referencien solo segmentos validos para el ledger."
+    },
+    {
+      "id": 11,
+      "br": "Associação de legal entities com seus respectivos ledgers via balancing segment.",
+      "en": "Association of legal entities with their respective ledgers via balancing segment.",
+      "es": "Asociacion de legal entities con sus respectivos ledgers via balancing segment."
+    },
+    {
+      "id": 12,
+      "br": "Colunas Principais",
+      "en": "Key Columns",
+      "es": "Columnas Principales"
+    },
+    {
+      "id": 13,
+      "br": "Confiança",
+      "en": "Confidence",
+      "es": "Confianza"
+    },
+    {
+      "id": 14,
+      "br": "Escala de 0% a 100% — grau de certeza da descrição gerada por IA com base na documentação oficial Oracle (OEDMF/BICC Release 13/25A).",
+      "en": "Scale from 0% to 100% — degree of certainty of the AI-generated description based on official Oracle documentation (OEDMF/BICC Release 13/25A).",
+      "es": "Escala de 0% a 100% — grado de certeza de la descripcion generada por IA con base en la documentacion oficial Oracle (OEDMF/BICC Release 13/25A)."
+    },
+    {
+      "id": 15,
+      "br": "- 🟢 81–100% — Coluna presente na documentação oficial Oracle; nome, tipo e descrição confirmados.",
+      "en": "- 🟢 81–100% — Column present in official Oracle documentation; name, type, and description confirmed.",
+      "es": "- 🟢 81–100% — Columna presente en la documentacion oficial Oracle; nombre, tipo y descripcion confirmados."
+    },
+    {
+      "id": 16,
+      "br": "- 🟡 51–80% — Coluna inferida por naming convention ou padrão Oracle; tipo exato pode variar.",
+      "en": "- 🟡 51–80% — Column inferred by naming convention or Oracle standard; exact type may vary.",
+      "es": "- 🟡 51–80% — Columna inferida por naming convention o estandar Oracle; tipo exacto puede variar."
+    },
+    {
+      "id": 17,
+      "br": "- 🔴 0–50% — Existência ou tipo incertos; pode não existir no release atual; validar no ambiente.",
+      "en": "- 🔴 0–50% — Uncertain existence or type; may not exist in the current release; validate in the environment.",
+      "es": "- 🔴 0–50% — Existencia o tipo inciertos; puede no existir en el release actual; validar en el ambiente."
+    },
+    {
+      "id": 18,
+      "br": "Coluna",
+      "en": "Column",
+      "es": "Columna"
+    },
+    {
+      "id": 19,
+      "br": "Tipo",
+      "en": "Type",
+      "es": "Tipo"
+    },
+    {
+      "id": 20,
+      "br": "Nulo?",
+      "en": "Nullable?",
+      "es": "Nulo?"
+    },
+    {
+      "id": 21,
+      "br": "Categoria",
+      "en": "Category",
+      "es": "Categoria"
+    },
+    {
+      "id": 22,
+      "br": "Descrição",
+      "en": "Description",
+      "es": "Descripcion"
+    },
+    {
+      "id": 23,
+      "br": "FK/PK",
+      "en": "FK/PK",
+      "es": "FK/PK"
+    },
+    {
+      "id": 24,
+      "br": "Identificador do ledger",
+      "en": "Ledger identifier",
+      "es": "Identificador del ledger"
+    },
+    {
+      "id": 25,
+      "br": "Valor do segmento de balanceamento (ex: \"01\", \"02\")",
+      "en": "Balancing segment value (e.g., \"01\", \"02\")",
+      "es": "Valor del segmento de balanceo (ej: \"01\", \"02\")"
+    },
+    {
+      "id": 26,
+      "br": "Classificação",
+      "en": "Classification",
+      "es": "Clasificacion"
+    },
+    {
+      "id": 27,
+      "br": "Tipo de segmento: B (Balancing), M (Management)",
+      "en": "Segment type: B (Balancing), M (Management)",
+      "es": "Tipo de segmento: B (Balancing), M (Management)"
+    },
+    {
+      "id": 28,
+      "br": "Controle",
+      "en": "Control",
+      "es": "Control"
+    },
+    {
+      "id": 29,
+      "br": "Status da atribuição: A (Active), I (Inactive)",
+      "en": "Assignment status: A (Active), I (Inactive)",
+      "es": "Estado de la asignacion: A (Active), I (Inactive)"
+    },
+    {
+      "id": 30,
+      "br": "Data de início de validade da atribuição",
+      "en": "Assignment effective start date",
+      "es": "Fecha de inicio de vigencia de la asignacion"
+    },
+    {
+      "id": 31,
+      "br": "Data de fim de validade da atribuição",
+      "en": "Assignment effective end date",
+      "es": "Fecha de fin de vigencia de la asignacion"
+    },
+    {
+      "id": 32,
+      "br": "ID da entidade legal associada ao segmento",
+      "en": "Legal entity ID associated with the segment",
+      "es": "ID de la entidad legal asociada al segmento"
+    },
+    {
+      "id": 33,
+      "br": "ID do registro pai (para hierarquias de segmento)",
+      "en": "Parent record ID (for segment hierarchies)",
+      "es": "ID del registro padre (para jerarquias de segmento)"
+    },
+    {
+      "id": 34,
+      "br": "Contexto do Descriptive Flexfield",
+      "en": "Descriptive Flexfield context",
+      "es": "Contexto del Descriptive Flexfield"
+    },
+    {
+      "id": 35,
+      "br": "ATTRIBUTE1–15",
+      "en": "ATTRIBUTE1–15",
+      "es": "ATTRIBUTE1–15"
+    },
+    {
+      "id": 36,
+      "br": "Campos de atributo descritivo (DFF) configuráveis",
+      "en": "Configurable descriptive attribute fields (DFF)",
+      "es": "Campos de atributo descriptivo (DFF) configurables"
+    },
+    {
+      "id": 37,
+      "br": "Auditoria",
+      "en": "Audit",
+      "es": "Auditoria"
+    },
+    {
+      "id": 38,
+      "br": "Usuário que criou o registro",
+      "en": "User who created the record",
+      "es": "Usuario que creo el registro"
+    },
+    {
+      "id": 39,
+      "br": "Data/hora de criação",
+      "en": "Creation date/time",
+      "es": "Fecha/hora de creacion"
+    },
+    {
+      "id": 40,
+      "br": "Último usuário que alterou",
+      "en": "Last user who modified",
+      "es": "Ultimo usuario que modifico"
+    },
+    {
+      "id": 41,
+      "br": "Data/hora da última alteração",
+      "en": "Last modification date/time",
+      "es": "Fecha/hora de la ultima modificacion"
+    },
+    {
+      "id": 42,
+      "br": "Relacionamentos",
+      "en": "Relationships",
+      "es": "Relaciones"
+    },
+    {
+      "id": 43,
+      "br": "Tabelas-pai (FK de entrada)",
+      "en": "Parent tables (inbound FK)",
+      "es": "Tablas padre (FK de entrada)"
+    },
+    {
+      "id": 44,
+      "br": "ledger ao qual o segmento está atribuído",
+      "en": "ledger to which the segment is assigned",
+      "es": "ledger al cual el segmento esta asignado"
+    },
+    {
+      "id": 45,
+      "br": "Tabelas-filha (FK de saída)",
+      "en": "Child tables (outbound FK)",
+      "es": "Tablas hija (FK de salida)"
+    },
+    {
+      "id": 46,
+      "br": "gl_legal_entities_bsvs — via LEDGER_ID + SEGMENT_VALUE (BSVs por entidade legal)",
+      "en": "gl_legal_entities_bsvs — via LEDGER_ID + SEGMENT_VALUE (BSVs per legal entity)",
+      "es": "gl_legal_entities_bsvs — via LEDGER_ID + SEGMENT_VALUE (BSVs por entidad legal)"
+    },
+    {
+      "id": 47,
+      "br": "Uso Típico",
+      "en": "Typical Usage",
+      "es": "Uso Tipico"
+    },
+    {
+      "id": 48,
+      "br": "Listar segmentos atribuídos a um ledger",
+      "en": "List segments assigned to a ledger",
+      "es": "Listar segmentos asignados a un ledger"
+    },
+    {
+      "id": 49,
+      "br": "Identificar qual ledger possui um segmento específico",
+      "en": "Identify which ledger has a specific segment",
+      "es": "Identificar cual ledger posee un segmento especifico"
+    },
+    {
+      "id": 50,
+      "br": "Filtros comuns",
+      "en": "Common filters",
+      "es": "Filtros comunes"
+    },
+    {
+      "id": 51,
+      "br": "Balancing segment values (empresa)",
+      "en": "Balancing segment values (company)",
+      "es": "Balancing segment values (empresa)"
+    },
+    {
+      "id": 52,
+      "br": "Management segment values",
+      "en": "Management segment values",
+      "es": "Management segment values"
+    },
+    {
+      "id": 53,
+      "br": "Atribuições ativas",
+      "en": "Active assignments",
+      "es": "Asignaciones activas"
+    },
+    {
+      "id": 54,
+      "br": "Segmentos com entidade legal associada",
+      "en": "Segments with associated legal entity",
+      "es": "Segmentos con entidad legal asociada"
+    },
+    {
+      "id": 55,
+      "br": "Observações",
+      "en": "Notes",
+      "es": "Observaciones"
+    },
+    {
+      "id": 56,
+      "br": "Cada valor de balancing segment deve estar atribuído a exatamente um primary ledger — esta tabela garante essa unicidade.",
+      "en": "Each balancing segment value must be assigned to exactly one primary ledger — this table ensures that uniqueness.",
+      "es": "Cada valor de balancing segment debe estar asignado a exactamente un primary ledger — esta tabla garantiza esa unicidad."
+    },
+    {
+      "id": 57,
+      "br": "O SEGMENT_TYPE_CODE = 'B' refere-se ao balancing segment, que tipicamente é o segmento de empresa/entidade no plano de contas.",
+      "en": "SEGMENT_TYPE_CODE = 'B' refers to the balancing segment, which is typically the company/entity segment in the chart of accounts.",
+      "es": "SEGMENT_TYPE_CODE = 'B' se refiere al balancing segment, que tipicamente es el segmento de empresa/entidad en el plan de cuentas."
+    },
+    {
+      "id": 58,
+      "br": "A associação entre SEGMENT_VALUE e LEGAL_ENTITY_ID é fundamental para o Subledger Accounting — determina qual entidade legal é responsável por cada conjunto de transações.",
+      "en": "The association between SEGMENT_VALUE and LEGAL_ENTITY_ID is fundamental for Subledger Accounting — it determines which legal entity is responsible for each set of transactions.",
+      "es": "La asociacion entre SEGMENT_VALUE y LEGAL_ENTITY_ID es fundamental para el Subledger Accounting — determina cual entidad legal es responsable por cada conjunto de transacciones."
+    },
+    {
+      "id": 59,
+      "br": "Alterar atribuições de segmento em produção pode causar inconsistências contábeis — esta é uma configuração de setup inicial.",
+      "en": "Changing segment assignments in production can cause accounting inconsistencies — this is an initial setup configuration.",
+      "es": "Cambiar asignaciones de segmento en produccion puede causar inconsistencias contables — esta es una configuracion de setup inicial."
+    },
+    {
+      "id": 60,
+      "br": "A coluna BAL_SEG_COLUMN_NAME em gl_ledgers define qual coluna de segmento (SEGMENT1, SEGMENT2 etc.) é o balancing segment.",
+      "en": "The BAL_SEG_COLUMN_NAME column in gl_ledgers defines which segment column (SEGMENT1, SEGMENT2, etc.) is the balancing segment.",
+      "es": "La columna BAL_SEG_COLUMN_NAME en gl_ledgers define cual columna de segmento (SEGMENT1, SEGMENT2, etc.) es el balancing segment."
+    },
+    {
+      "id": 61,
+      "br": "Referências",
+      "en": "References",
+      "es": "Referencias"
+    },
+    {
+      "id": 62,
+      "br": "[Oracle Docs — GL_LEDGER_SEGMENT_VALUES](https://docs.oracle.com/en/cloud/saas/financials/25a/oedmf/glledgersegmentvalues.html)",
+      "en": "[Oracle Docs — GL_LEDGER_SEGMENT_VALUES](https://docs.oracle.com/en/cloud/saas/financials/25a/oedmf/glledgersegmentvalues.html)",
+      "es": "[Oracle Docs — GL_LEDGER_SEGMENT_VALUES](https://docs.oracle.com/en/cloud/saas/financials/25a/oedmf/glledgersegmentvalues.html)"
+    },
+    {
+      "id": 63,
+      "br": "gl-module-data-dictionary — Dossiê do módulo GL",
+      "en": "gl-module-data-dictionary — GL module dossier",
+      "es": "gl-module-data-dictionary — Dossier del modulo GL"
+    }
+  ]
+}

@@ -1,0 +1,676 @@
+{
+  "meta": {
+    "pvo_name": "AvailAssignPVO",
+    "full_path": "FscmTopModelAM.PjrAssignmentAM.AvailAssignPVO",
+    "module_path": "FscmTopModelAM.PjrAssignmentAM",
+    "module_code": "HCM",
+    "type": "pvo",
+    "description": "Relaciona disponibilidade de recursos com assignments em projetos, incluindo percentual faturavel e taxa. Suporta planejamento de capacidade e alocacao."
+  },
+  "stats": {
+    "total_attributes": 46,
+    "tables_count": 3,
+    "bicc_enabled": 10,
+    "bicc_pct": 22,
+    "pk_count": 1
+  },
+  "tables": [
+    "PJF_PROJECTS_ALL_B",
+    "PJR_ASSIGNMENT",
+    "PJR_AVAIL_ASSIGN"
+  ],
+  "attributes": [
+    {
+      "name": "AssignId",
+      "table": "PJR_ASSIGNMENT",
+      "column": "ASSIGN_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AssignmentPEOAssignmentType",
+      "table": "PJR_ASSIGNMENT",
+      "column": "ASSIGNMENT_TYPE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AssignmentPEOBillablePercent",
+      "table": "PJR_ASSIGNMENT",
+      "column": "BILLABLE_PERCENT",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AssignmentPEOBillablePercentReasonCode",
+      "table": "PJR_ASSIGNMENT",
+      "column": "BILLABLE_PERCENT_REASON_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AvailAssignId",
+      "table": "PJR_AVAIL_ASSIGN",
+      "column": "AVAIL_ASSIGN_ID",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    },
+    {
+      "name": "PjrAssignmentPEOAdjustType",
+      "table": "PJR_ASSIGNMENT",
+      "column": "ADJUST_TYPE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PjrAssignmentPEOAssignDetails",
+      "table": "PJR_ASSIGNMENT",
+      "column": "ASSIGN_DETAILS",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PjrAssignmentPEOBillRate",
+      "table": "PJR_ASSIGNMENT",
+      "column": "BILL_RATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PjrAssignmentPEOBillRateCurrCode",
+      "table": "PJR_ASSIGNMENT",
+      "column": "BILL_RATE_CURR_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PjrAssignmentPEOCanceledByResourceId",
+      "table": "PJR_ASSIGNMENT",
+      "column": "CANCELED_BY_RESOURCE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PjrAssignmentPEOCancellationDate",
+      "table": "PJR_ASSIGNMENT",
+      "column": "CANCELLATION_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PjrAssignmentPEOCancellationReason",
+      "table": "PJR_ASSIGNMENT",
+      "column": "CANCELLATION_REASON",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PjrAssignmentPEOCostRate",
+      "table": "PJR_ASSIGNMENT",
+      "column": "COST_RATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PjrAssignmentPEOCostRateCurrCode",
+      "table": "PJR_ASSIGNMENT",
+      "column": "COST_RATE_CURR_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PjrAssignmentPEOCreatedBy",
+      "table": "PJR_ASSIGNMENT",
+      "column": "CREATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PjrAssignmentPEOCreationDate",
+      "table": "PJR_ASSIGNMENT",
+      "column": "CREATION_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PjrAssignmentPEOEndDate",
+      "table": "PJR_ASSIGNMENT",
+      "column": "END_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PjrAssignmentPEOHoursPerDay",
+      "table": "PJR_ASSIGNMENT",
+      "column": "HOURS_PER_DAY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PjrAssignmentPEOLastUpdateDate",
+      "table": "PJR_ASSIGNMENT",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": true
+    },
+    {
+      "name": "PjrAssignmentPEOLastUpdateLogin",
+      "table": "PJR_ASSIGNMENT",
+      "column": "LAST_UPDATE_LOGIN",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PjrAssignmentPEOLastUpdatedBy",
+      "table": "PJR_ASSIGNMENT",
+      "column": "LAST_UPDATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PjrAssignmentPEOLocation",
+      "table": "PJR_ASSIGNMENT",
+      "column": "LOCATION",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PjrAssignmentPEOObjectVersionNumber",
+      "table": "PJR_ASSIGNMENT",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PjrAssignmentPEOProjectId",
+      "table": "PJR_ASSIGNMENT",
+      "column": "PROJECT_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PjrAssignmentPEOProjectRoleId",
+      "table": "PJR_ASSIGNMENT",
+      "column": "PROJECT_ROLE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PjrAssignmentPEORequesterId",
+      "table": "PJR_ASSIGNMENT",
+      "column": "REQUESTER_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PjrAssignmentPEOResourceId",
+      "table": "PJR_ASSIGNMENT",
+      "column": "RESOURCE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PjrAssignmentPEOStaffingOwnerId",
+      "table": "PJR_ASSIGNMENT",
+      "column": "STAFFING_OWNER_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PjrAssignmentPEOStartDate",
+      "table": "PJR_ASSIGNMENT",
+      "column": "START_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PjrAssignmentPEOStatusCode",
+      "table": "PJR_ASSIGNMENT",
+      "column": "STATUS_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PjrAvailAssignPEOAssignId",
+      "table": "PJR_AVAIL_ASSIGN",
+      "column": "ASSIGN_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PjrAvailAssignPEOAvailabilityCacheId",
+      "table": "PJR_AVAIL_ASSIGN",
+      "column": "AVAILABILITY_CACHE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PjrAvailAssignPEOCreatedBy",
+      "table": "PJR_AVAIL_ASSIGN",
+      "column": "CREATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PjrAvailAssignPEOCreationDate",
+      "table": "PJR_AVAIL_ASSIGN",
+      "column": "CREATION_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PjrAvailAssignPEOEntryDay",
+      "table": "PJR_AVAIL_ASSIGN",
+      "column": "ENTRY_DAY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PjrAvailAssignPEOEntryDurationHrs",
+      "table": "PJR_AVAIL_ASSIGN",
+      "column": "ENTRY_DURATION_HRS",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PjrAvailAssignPEOLastUpdateDate",
+      "table": "PJR_AVAIL_ASSIGN",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": true
+    },
+    {
+      "name": "PjrAvailAssignPEOLastUpdateLogin",
+      "table": "PJR_AVAIL_ASSIGN",
+      "column": "LAST_UPDATE_LOGIN",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PjrAvailAssignPEOLastUpdatedBy",
+      "table": "PJR_AVAIL_ASSIGN",
+      "column": "LAST_UPDATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PjrAvailAssignPEOObjectVersionNumber",
+      "table": "PJR_AVAIL_ASSIGN",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PjrAvailAssignPEOResourceId",
+      "table": "PJR_AVAIL_ASSIGN",
+      "column": "RESOURCE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectBasePEOCarryingOutOrganizationId",
+      "table": "PJF_PROJECTS_ALL_B",
+      "column": "CARRYING_OUT_ORGANIZATION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectBasePEOOrgId",
+      "table": "PJF_PROJECTS_ALL_B",
+      "column": "ORG_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectBasePEOProjectId",
+      "table": "PJF_PROJECTS_ALL_B",
+      "column": "PROJECT_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProjectBasePEOProjectUnitId",
+      "table": "PJF_PROJECTS_ALL_B",
+      "column": "PROJECT_UNIT_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "UseProjCalendarHourFlag",
+      "table": "PJR_ASSIGNMENT",
+      "column": "USE_PROJ_CALENDAR_HOUR_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    }
+  ],
+  "by_table": {
+    "PJR_ASSIGNMENT": [
+      {
+        "attribute": "AssignId",
+        "column": "ASSIGN_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AssignmentPEOAssignmentType",
+        "column": "ASSIGNMENT_TYPE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "AssignmentPEOBillablePercent",
+        "column": "BILLABLE_PERCENT",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "AssignmentPEOBillablePercentReasonCode",
+        "column": "BILLABLE_PERCENT_REASON_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PjrAssignmentPEOAdjustType",
+        "column": "ADJUST_TYPE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PjrAssignmentPEOAssignDetails",
+        "column": "ASSIGN_DETAILS",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PjrAssignmentPEOBillRate",
+        "column": "BILL_RATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PjrAssignmentPEOBillRateCurrCode",
+        "column": "BILL_RATE_CURR_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PjrAssignmentPEOCanceledByResourceId",
+        "column": "CANCELED_BY_RESOURCE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PjrAssignmentPEOCancellationDate",
+        "column": "CANCELLATION_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PjrAssignmentPEOCancellationReason",
+        "column": "CANCELLATION_REASON",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PjrAssignmentPEOCostRate",
+        "column": "COST_RATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PjrAssignmentPEOCostRateCurrCode",
+        "column": "COST_RATE_CURR_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PjrAssignmentPEOCreatedBy",
+        "column": "CREATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PjrAssignmentPEOCreationDate",
+        "column": "CREATION_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PjrAssignmentPEOEndDate",
+        "column": "END_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PjrAssignmentPEOHoursPerDay",
+        "column": "HOURS_PER_DAY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PjrAssignmentPEOLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PjrAssignmentPEOLastUpdateLogin",
+        "column": "LAST_UPDATE_LOGIN",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PjrAssignmentPEOLastUpdatedBy",
+        "column": "LAST_UPDATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PjrAssignmentPEOLocation",
+        "column": "LOCATION",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PjrAssignmentPEOObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PjrAssignmentPEOProjectId",
+        "column": "PROJECT_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PjrAssignmentPEOProjectRoleId",
+        "column": "PROJECT_ROLE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PjrAssignmentPEORequesterId",
+        "column": "REQUESTER_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PjrAssignmentPEOResourceId",
+        "column": "RESOURCE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PjrAssignmentPEOStaffingOwnerId",
+        "column": "STAFFING_OWNER_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PjrAssignmentPEOStartDate",
+        "column": "START_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PjrAssignmentPEOStatusCode",
+        "column": "STATUS_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "UseProjCalendarHourFlag",
+        "column": "USE_PROJ_CALENDAR_HOUR_FLAG",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "PJR_AVAIL_ASSIGN": [
+      {
+        "attribute": "AvailAssignId",
+        "column": "AVAIL_ASSIGN_ID",
+        "bicc": true,
+        "pk": true
+      },
+      {
+        "attribute": "PjrAvailAssignPEOAssignId",
+        "column": "ASSIGN_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PjrAvailAssignPEOAvailabilityCacheId",
+        "column": "AVAILABILITY_CACHE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PjrAvailAssignPEOCreatedBy",
+        "column": "CREATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PjrAvailAssignPEOCreationDate",
+        "column": "CREATION_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PjrAvailAssignPEOEntryDay",
+        "column": "ENTRY_DAY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PjrAvailAssignPEOEntryDurationHrs",
+        "column": "ENTRY_DURATION_HRS",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PjrAvailAssignPEOLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PjrAvailAssignPEOLastUpdateLogin",
+        "column": "LAST_UPDATE_LOGIN",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PjrAvailAssignPEOLastUpdatedBy",
+        "column": "LAST_UPDATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PjrAvailAssignPEOObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PjrAvailAssignPEOResourceId",
+        "column": "RESOURCE_ID",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "PJF_PROJECTS_ALL_B": [
+      {
+        "attribute": "ProjectBasePEOCarryingOutOrganizationId",
+        "column": "CARRYING_OUT_ORGANIZATION_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectBasePEOOrgId",
+        "column": "ORG_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectBasePEOProjectId",
+        "column": "PROJECT_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProjectBasePEOProjectUnitId",
+        "column": "PROJECT_UNIT_ID",
+        "bicc": false,
+        "pk": false
+      }
+    ]
+  }
+}

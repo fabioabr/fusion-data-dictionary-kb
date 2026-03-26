@@ -1,0 +1,886 @@
+{
+  "meta": {
+    "pvo_name": "DisbursementHistoryHeaderPVO",
+    "full_path": "FscmTopModelAM.FinApPmtSinglePaymentsAM.DisbursementHistoryHeaderPVO",
+    "module_path": "FscmTopModelAM.FinApPmtSinglePaymentsAM",
+    "module_code": "AP",
+    "type": "pvo",
+    "description": "Extrai o histórico de eventos dos desembolsos (compensação, cancelamento, estorno), incluindo datas, valores e unidade de negócio. Permite rastrear o ciclo de vida completo de cada pagamento e suportar auditorias de tesouraria."
+  },
+  "stats": {
+    "total_attributes": 61,
+    "tables_count": 3,
+    "bicc_enabled": 21,
+    "bicc_pct": 34,
+    "pk_count": 1
+  },
+  "tables": [
+    "AP_PAYMENT_HISTORY_ALL",
+    "AP_SYSTEM_PARAMETERS_ALL",
+    "FUN_BU_PERF_V"
+  ],
+  "attributes": [
+    {
+      "name": "BusinessUnitId",
+      "table": "FUN_BU_PERF_V",
+      "column": "BU_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PaymentHistoryAccountingDate",
+      "table": "AP_PAYMENT_HISTORY_ALL",
+      "column": "ACCOUNTING_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PaymentHistoryAccountingEventId",
+      "table": "AP_PAYMENT_HISTORY_ALL",
+      "column": "ACCOUNTING_EVENT_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PaymentHistoryBankCurrencyCode",
+      "table": "AP_PAYMENT_HISTORY_ALL",
+      "column": "BANK_CURRENCY_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PaymentHistoryBankToBaseXrate",
+      "table": "AP_PAYMENT_HISTORY_ALL",
+      "column": "BANK_TO_BASE_XRATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PaymentHistoryBankToBaseXrateDate",
+      "table": "AP_PAYMENT_HISTORY_ALL",
+      "column": "BANK_TO_BASE_XRATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PaymentHistoryBankToBaseXrateType",
+      "table": "AP_PAYMENT_HISTORY_ALL",
+      "column": "BANK_TO_BASE_XRATE_TYPE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PaymentHistoryChargeAmount",
+      "table": "AP_PAYMENT_HISTORY_ALL",
+      "column": "CHARGE_AMOUNT",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PaymentHistoryChargesBankAmount",
+      "table": "AP_PAYMENT_HISTORY_ALL",
+      "column": "CHARGES_BANK_AMOUNT",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PaymentHistoryChargesBaseAmount",
+      "table": "AP_PAYMENT_HISTORY_ALL",
+      "column": "CHARGES_BASE_AMOUNT",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PaymentHistoryChargesPmtAmount",
+      "table": "AP_PAYMENT_HISTORY_ALL",
+      "column": "CHARGES_PMT_AMOUNT",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PaymentHistoryCheckId",
+      "table": "AP_PAYMENT_HISTORY_ALL",
+      "column": "CHECK_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PaymentHistoryCreatedBy",
+      "table": "AP_PAYMENT_HISTORY_ALL",
+      "column": "CREATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PaymentHistoryCreationDate",
+      "table": "AP_PAYMENT_HISTORY_ALL",
+      "column": "CREATION_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PaymentHistoryCurrencyCode",
+      "table": "AP_PAYMENT_HISTORY_ALL",
+      "column": "CURRENCY_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PaymentHistoryErrorAmount",
+      "table": "AP_PAYMENT_HISTORY_ALL",
+      "column": "ERROR_AMOUNT",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PaymentHistoryErrorsBankAmount",
+      "table": "AP_PAYMENT_HISTORY_ALL",
+      "column": "ERRORS_BANK_AMOUNT",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PaymentHistoryErrorsBaseAmount",
+      "table": "AP_PAYMENT_HISTORY_ALL",
+      "column": "ERRORS_BASE_AMOUNT",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PaymentHistoryErrorsPmtAmount",
+      "table": "AP_PAYMENT_HISTORY_ALL",
+      "column": "ERRORS_PMT_AMOUNT",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PaymentHistoryGainLossIndicator",
+      "table": "AP_PAYMENT_HISTORY_ALL",
+      "column": "GAIN_LOSS_INDICATOR",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PaymentHistoryHistoricalFlag",
+      "table": "AP_PAYMENT_HISTORY_ALL",
+      "column": "HISTORICAL_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PaymentHistoryId",
+      "table": "AP_PAYMENT_HISTORY_ALL",
+      "column": "PAYMENT_HISTORY_ID",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    },
+    {
+      "name": "PaymentHistoryInvoiceAdjustmentEventId",
+      "table": "AP_PAYMENT_HISTORY_ALL",
+      "column": "INVOICE_ADJUSTMENT_EVENT_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PaymentHistoryLastUpdateDate",
+      "table": "AP_PAYMENT_HISTORY_ALL",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": true
+    },
+    {
+      "name": "PaymentHistoryLastUpdateLogin",
+      "table": "AP_PAYMENT_HISTORY_ALL",
+      "column": "LAST_UPDATE_LOGIN",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PaymentHistoryLastUpdatedBy",
+      "table": "AP_PAYMENT_HISTORY_ALL",
+      "column": "LAST_UPDATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PaymentHistoryMatchedFlag",
+      "table": "AP_PAYMENT_HISTORY_ALL",
+      "column": "MATCHED_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PaymentHistoryMrcBankToBaseXrate",
+      "table": "AP_PAYMENT_HISTORY_ALL",
+      "column": "MRC_BANK_TO_BASE_XRATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PaymentHistoryMrcBankToBaseXrateDate",
+      "table": "AP_PAYMENT_HISTORY_ALL",
+      "column": "MRC_BANK_TO_BASE_XRATE_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PaymentHistoryMrcBankToBaseXrateType",
+      "table": "AP_PAYMENT_HISTORY_ALL",
+      "column": "MRC_BANK_TO_BASE_XRATE_TYPE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PaymentHistoryMrcChargesBaseAmount",
+      "table": "AP_PAYMENT_HISTORY_ALL",
+      "column": "MRC_CHARGES_BASE_AMOUNT",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PaymentHistoryMrcErrorsBaseAmount",
+      "table": "AP_PAYMENT_HISTORY_ALL",
+      "column": "MRC_ERRORS_BASE_AMOUNT",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PaymentHistoryMrcExchangeRate",
+      "table": "AP_PAYMENT_HISTORY_ALL",
+      "column": "MRC_EXCHANGE_RATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PaymentHistoryMrcExchangeRateDate",
+      "table": "AP_PAYMENT_HISTORY_ALL",
+      "column": "MRC_EXCHANGE_RATE_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PaymentHistoryMrcExchangeRateType",
+      "table": "AP_PAYMENT_HISTORY_ALL",
+      "column": "MRC_EXCHANGE_RATE_TYPE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PaymentHistoryMrcPmtToBaseXrate",
+      "table": "AP_PAYMENT_HISTORY_ALL",
+      "column": "MRC_PMT_TO_BASE_XRATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PaymentHistoryMrcPmtToBaseXrateDate",
+      "table": "AP_PAYMENT_HISTORY_ALL",
+      "column": "MRC_PMT_TO_BASE_XRATE_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PaymentHistoryMrcPmtToBaseXrateType",
+      "table": "AP_PAYMENT_HISTORY_ALL",
+      "column": "MRC_PMT_TO_BASE_XRATE_TYPE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PaymentHistoryMrcTrxBaseAmount",
+      "table": "AP_PAYMENT_HISTORY_ALL",
+      "column": "MRC_TRX_BASE_AMOUNT",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PaymentHistoryObjectVersionNumber",
+      "table": "AP_PAYMENT_HISTORY_ALL",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PaymentHistoryOrgId",
+      "table": "AP_PAYMENT_HISTORY_ALL",
+      "column": "ORG_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PaymentHistoryPmtCurrencyCode",
+      "table": "AP_PAYMENT_HISTORY_ALL",
+      "column": "PMT_CURRENCY_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PaymentHistoryPmtToBaseXrate",
+      "table": "AP_PAYMENT_HISTORY_ALL",
+      "column": "PMT_TO_BASE_XRATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PaymentHistoryPmtToBaseXrateDate",
+      "table": "AP_PAYMENT_HISTORY_ALL",
+      "column": "PMT_TO_BASE_XRATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PaymentHistoryPmtToBaseXrateType",
+      "table": "AP_PAYMENT_HISTORY_ALL",
+      "column": "PMT_TO_BASE_XRATE_TYPE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PaymentHistoryPostedFlag",
+      "table": "AP_PAYMENT_HISTORY_ALL",
+      "column": "POSTED_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PaymentHistoryProgramApplicationId",
+      "table": "AP_PAYMENT_HISTORY_ALL",
+      "column": "PROGRAM_APPLICATION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PaymentHistoryProgramId",
+      "table": "AP_PAYMENT_HISTORY_ALL",
+      "column": "PROGRAM_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PaymentHistoryProgramUpdateDate",
+      "table": "AP_PAYMENT_HISTORY_ALL",
+      "column": "PROGRAM_UPDATE_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PaymentHistoryRelatedEventId",
+      "table": "AP_PAYMENT_HISTORY_ALL",
+      "column": "RELATED_EVENT_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PaymentHistoryRequestId",
+      "table": "AP_PAYMENT_HISTORY_ALL",
+      "column": "REQUEST_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PaymentHistoryRevPmtHistId",
+      "table": "AP_PAYMENT_HISTORY_ALL",
+      "column": "REV_PMT_HIST_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PaymentHistoryTransactionAmount",
+      "table": "AP_PAYMENT_HISTORY_ALL",
+      "column": "TRANSACTION_AMOUNT",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PaymentHistoryTransactionDate",
+      "table": "AP_PAYMENT_HISTORY_ALL",
+      "column": "TRANSACTION_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PaymentHistoryTransactionType",
+      "table": "AP_PAYMENT_HISTORY_ALL",
+      "column": "TRANSACTION_TYPE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PaymentHistoryTrxBankAmount",
+      "table": "AP_PAYMENT_HISTORY_ALL",
+      "column": "TRX_BANK_AMOUNT",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PaymentHistoryTrxBaseAmount",
+      "table": "AP_PAYMENT_HISTORY_ALL",
+      "column": "TRX_BASE_AMOUNT",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PaymentHistoryTrxPmtAmount",
+      "table": "AP_PAYMENT_HISTORY_ALL",
+      "column": "TRX_PMT_AMOUNT",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SystemOptionObjectVersionNumber",
+      "table": "AP_SYSTEM_PARAMETERS_ALL",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SystemOptionOrgId",
+      "table": "AP_SYSTEM_PARAMETERS_ALL",
+      "column": "ORG_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SystemOptionWhenToAccountPmt",
+      "table": "AP_SYSTEM_PARAMETERS_ALL",
+      "column": "WHEN_TO_ACCOUNT_PMT",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    }
+  ],
+  "by_table": {
+    "FUN_BU_PERF_V": [
+      {
+        "attribute": "BusinessUnitId",
+        "column": "BU_ID",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "AP_PAYMENT_HISTORY_ALL": [
+      {
+        "attribute": "PaymentHistoryAccountingDate",
+        "column": "ACCOUNTING_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PaymentHistoryAccountingEventId",
+        "column": "ACCOUNTING_EVENT_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PaymentHistoryBankCurrencyCode",
+        "column": "BANK_CURRENCY_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PaymentHistoryBankToBaseXrate",
+        "column": "BANK_TO_BASE_XRATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PaymentHistoryBankToBaseXrateDate",
+        "column": "BANK_TO_BASE_XRATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PaymentHistoryBankToBaseXrateType",
+        "column": "BANK_TO_BASE_XRATE_TYPE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PaymentHistoryChargeAmount",
+        "column": "CHARGE_AMOUNT",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PaymentHistoryChargesBankAmount",
+        "column": "CHARGES_BANK_AMOUNT",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PaymentHistoryChargesBaseAmount",
+        "column": "CHARGES_BASE_AMOUNT",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PaymentHistoryChargesPmtAmount",
+        "column": "CHARGES_PMT_AMOUNT",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PaymentHistoryCheckId",
+        "column": "CHECK_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PaymentHistoryCreatedBy",
+        "column": "CREATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PaymentHistoryCreationDate",
+        "column": "CREATION_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PaymentHistoryCurrencyCode",
+        "column": "CURRENCY_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PaymentHistoryErrorAmount",
+        "column": "ERROR_AMOUNT",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PaymentHistoryErrorsBankAmount",
+        "column": "ERRORS_BANK_AMOUNT",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PaymentHistoryErrorsBaseAmount",
+        "column": "ERRORS_BASE_AMOUNT",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PaymentHistoryErrorsPmtAmount",
+        "column": "ERRORS_PMT_AMOUNT",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PaymentHistoryGainLossIndicator",
+        "column": "GAIN_LOSS_INDICATOR",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PaymentHistoryHistoricalFlag",
+        "column": "HISTORICAL_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PaymentHistoryId",
+        "column": "PAYMENT_HISTORY_ID",
+        "bicc": true,
+        "pk": true
+      },
+      {
+        "attribute": "PaymentHistoryInvoiceAdjustmentEventId",
+        "column": "INVOICE_ADJUSTMENT_EVENT_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PaymentHistoryLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PaymentHistoryLastUpdateLogin",
+        "column": "LAST_UPDATE_LOGIN",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PaymentHistoryLastUpdatedBy",
+        "column": "LAST_UPDATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PaymentHistoryMatchedFlag",
+        "column": "MATCHED_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PaymentHistoryMrcBankToBaseXrate",
+        "column": "MRC_BANK_TO_BASE_XRATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PaymentHistoryMrcBankToBaseXrateDate",
+        "column": "MRC_BANK_TO_BASE_XRATE_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PaymentHistoryMrcBankToBaseXrateType",
+        "column": "MRC_BANK_TO_BASE_XRATE_TYPE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PaymentHistoryMrcChargesBaseAmount",
+        "column": "MRC_CHARGES_BASE_AMOUNT",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PaymentHistoryMrcErrorsBaseAmount",
+        "column": "MRC_ERRORS_BASE_AMOUNT",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PaymentHistoryMrcExchangeRate",
+        "column": "MRC_EXCHANGE_RATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PaymentHistoryMrcExchangeRateDate",
+        "column": "MRC_EXCHANGE_RATE_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PaymentHistoryMrcExchangeRateType",
+        "column": "MRC_EXCHANGE_RATE_TYPE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PaymentHistoryMrcPmtToBaseXrate",
+        "column": "MRC_PMT_TO_BASE_XRATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PaymentHistoryMrcPmtToBaseXrateDate",
+        "column": "MRC_PMT_TO_BASE_XRATE_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PaymentHistoryMrcPmtToBaseXrateType",
+        "column": "MRC_PMT_TO_BASE_XRATE_TYPE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PaymentHistoryMrcTrxBaseAmount",
+        "column": "MRC_TRX_BASE_AMOUNT",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PaymentHistoryObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PaymentHistoryOrgId",
+        "column": "ORG_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PaymentHistoryPmtCurrencyCode",
+        "column": "PMT_CURRENCY_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PaymentHistoryPmtToBaseXrate",
+        "column": "PMT_TO_BASE_XRATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PaymentHistoryPmtToBaseXrateDate",
+        "column": "PMT_TO_BASE_XRATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PaymentHistoryPmtToBaseXrateType",
+        "column": "PMT_TO_BASE_XRATE_TYPE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PaymentHistoryPostedFlag",
+        "column": "POSTED_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PaymentHistoryProgramApplicationId",
+        "column": "PROGRAM_APPLICATION_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PaymentHistoryProgramId",
+        "column": "PROGRAM_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PaymentHistoryProgramUpdateDate",
+        "column": "PROGRAM_UPDATE_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PaymentHistoryRelatedEventId",
+        "column": "RELATED_EVENT_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PaymentHistoryRequestId",
+        "column": "REQUEST_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PaymentHistoryRevPmtHistId",
+        "column": "REV_PMT_HIST_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PaymentHistoryTransactionAmount",
+        "column": "TRANSACTION_AMOUNT",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PaymentHistoryTransactionDate",
+        "column": "TRANSACTION_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PaymentHistoryTransactionType",
+        "column": "TRANSACTION_TYPE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PaymentHistoryTrxBankAmount",
+        "column": "TRX_BANK_AMOUNT",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PaymentHistoryTrxBaseAmount",
+        "column": "TRX_BASE_AMOUNT",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PaymentHistoryTrxPmtAmount",
+        "column": "TRX_PMT_AMOUNT",
+        "bicc": true,
+        "pk": false
+      }
+    ],
+    "AP_SYSTEM_PARAMETERS_ALL": [
+      {
+        "attribute": "SystemOptionObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "SystemOptionOrgId",
+        "column": "ORG_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "SystemOptionWhenToAccountPmt",
+        "column": "WHEN_TO_ACCOUNT_PMT",
+        "bicc": false,
+        "pk": false
+      }
+    ]
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "meta": {
+    "pvo_name": "ItemSecurityInstanceGrant",
+    "full_path": "FscmTopModelAM.EgpItemsPublicModelAM.ItemSecurityInstanceGrant",
+    "module_path": "FscmTopModelAM.EgpItemsPublicModelAM",
+    "module_code": "OTHER",
+    "type": "pvo",
+    "description": "View Object para extração BICC de dados de Item Security Instance Grant. Acessa as tabelas: EGP_SYSTEM_ITEMS_B_V, INV_ORG_PARAMETERS."
+  },
+  "stats": {
+    "total_attributes": 3,
+    "tables_count": 2,
+    "bicc_enabled": 2,
+    "bicc_pct": 67,
+    "pk_count": 2
+  },
+  "tables": [
+    "EGP_SYSTEM_ITEMS_B_V",
+    "INV_ORG_PARAMETERS"
+  ],
+  "attributes": [
+    {
+      "name": "InventoryItemId",
+      "table": "EGP_SYSTEM_ITEMS_B_V",
+      "column": "INVENTORY_ITEM_ID",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    },
+    {
+      "name": "ItemOrganizationParameterPEOOrganizationId",
+      "table": "INV_ORG_PARAMETERS",
+      "column": "ORGANIZATION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "OrganizationId",
+      "table": "EGP_SYSTEM_ITEMS_B_V",
+      "column": "ORGANIZATION_ID",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    }
+  ],
+  "by_table": {
+    "EGP_SYSTEM_ITEMS_B_V": [
+      {
+        "attribute": "InventoryItemId",
+        "column": "INVENTORY_ITEM_ID",
+        "bicc": true,
+        "pk": true
+      },
+      {
+        "attribute": "OrganizationId",
+        "column": "ORGANIZATION_ID",
+        "bicc": true,
+        "pk": true
+      }
+    ],
+    "INV_ORG_PARAMETERS": [
+      {
+        "attribute": "ItemOrganizationParameterPEOOrganizationId",
+        "column": "ORGANIZATION_ID",
+        "bicc": false,
+        "pk": false
+      }
+    ]
+  }
+}

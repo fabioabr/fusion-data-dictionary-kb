@@ -1,0 +1,242 @@
+{
+  "meta": {
+    "pvo_name": "RoutingStepStateActionPVO",
+    "full_path": "HcmTopModelAnalyticsGlobalAM.HcmRecProcessLifecycleAM.RoutingStepStateActionPVO",
+    "module_path": "HcmTopModelAnalyticsGlobalAM.HcmRecProcessLifecycleAM",
+    "module_code": "HCM",
+    "type": "pvo",
+    "description": "Extrai ações vinculadas a estados de etapas de roteamento no recrutamento. Define gatilhos automáticos por mudança de estado no ciclo de contratação."
+  },
+  "stats": {
+    "total_attributes": 15,
+    "tables_count": 3,
+    "bicc_enabled": 6,
+    "bicc_pct": 40,
+    "pk_count": 1
+  },
+  "tables": [
+    "IRC_LC_ACTIONS_TL",
+    "IRC_LC_ACTION_USAGES_B",
+    "IRC_LC_ACTION_USAGES_TL"
+  ],
+  "attributes": [
+    {
+      "name": "ActionId",
+      "table": "IRC_LC_ACTION_USAGES_B",
+      "column": "ACTION_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ActionTranslationPEOActionDescription",
+      "table": "IRC_LC_ACTIONS_TL",
+      "column": "ACTION_DESCRIPTION",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ActionTranslationPEOActionId",
+      "table": "IRC_LC_ACTIONS_TL",
+      "column": "ACTION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ActionTranslationPEOActionName",
+      "table": "IRC_LC_ACTIONS_TL",
+      "column": "ACTION_NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ActionTranslationPEOLanguage",
+      "table": "IRC_LC_ACTIONS_TL",
+      "column": "LANGUAGE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ActionUsgTranslatePEOActionDescription",
+      "table": "IRC_LC_ACTION_USAGES_TL",
+      "column": "ACTION_DESCRIPTION",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ActionUsgTranslatePEOActionName",
+      "table": "IRC_LC_ACTION_USAGES_TL",
+      "column": "ACTION_NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ActionUsgTranslatePEOLanguage",
+      "table": "IRC_LC_ACTION_USAGES_TL",
+      "column": "LANGUAGE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ActionUsgTranslatePEOStepActionUsageId",
+      "table": "IRC_LC_ACTION_USAGES_TL",
+      "column": "STEP_ACTION_USAGE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LastExecutionDate",
+      "table": "IRC_LC_ACTION_USAGES_B",
+      "column": "LAST_EXECUTION_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LastExecutionResult",
+      "table": "IRC_LC_ACTION_USAGES_B",
+      "column": "LAST_EXECUTION_RESULT",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RoutingStepId",
+      "table": "IRC_LC_ACTION_USAGES_B",
+      "column": "ROUTING_STEP_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "StepActionUsageCode",
+      "table": "IRC_LC_ACTION_USAGES_B",
+      "column": "STEP_ACTION_USAGE_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "StepActionUsageId",
+      "table": "IRC_LC_ACTION_USAGES_B",
+      "column": "STEP_ACTION_USAGE_ID",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    },
+    {
+      "name": "TriggerEventCode",
+      "table": "IRC_LC_ACTION_USAGES_B",
+      "column": "TRIGGER_EVENT_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    }
+  ],
+  "by_table": {
+    "IRC_LC_ACTION_USAGES_B": [
+      {
+        "attribute": "ActionId",
+        "column": "ACTION_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "LastExecutionDate",
+        "column": "LAST_EXECUTION_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "LastExecutionResult",
+        "column": "LAST_EXECUTION_RESULT",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "RoutingStepId",
+        "column": "ROUTING_STEP_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "StepActionUsageCode",
+        "column": "STEP_ACTION_USAGE_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "StepActionUsageId",
+        "column": "STEP_ACTION_USAGE_ID",
+        "bicc": true,
+        "pk": true
+      },
+      {
+        "attribute": "TriggerEventCode",
+        "column": "TRIGGER_EVENT_CODE",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "IRC_LC_ACTIONS_TL": [
+      {
+        "attribute": "ActionTranslationPEOActionDescription",
+        "column": "ACTION_DESCRIPTION",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ActionTranslationPEOActionId",
+        "column": "ACTION_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ActionTranslationPEOActionName",
+        "column": "ACTION_NAME",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ActionTranslationPEOLanguage",
+        "column": "LANGUAGE",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "IRC_LC_ACTION_USAGES_TL": [
+      {
+        "attribute": "ActionUsgTranslatePEOActionDescription",
+        "column": "ACTION_DESCRIPTION",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ActionUsgTranslatePEOActionName",
+        "column": "ACTION_NAME",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ActionUsgTranslatePEOLanguage",
+        "column": "LANGUAGE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ActionUsgTranslatePEOStepActionUsageId",
+        "column": "STEP_ACTION_USAGE_ID",
+        "bicc": false,
+        "pk": false
+      }
+    ]
+  }
+}

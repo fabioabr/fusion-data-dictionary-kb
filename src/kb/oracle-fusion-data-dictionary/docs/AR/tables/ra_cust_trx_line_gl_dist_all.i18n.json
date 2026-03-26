@@ -1,0 +1,565 @@
+{
+  "source": "ra_cust_trx_line_gl_dist_all.md",
+  "source_hash": "f046e665cd2195896226b117abe05cb6",
+  "translated_at": "2026-03-25",
+  "items": [
+    {
+      "id": 1,
+      "br": "Visão Geral",
+      "en": "Overview",
+      "es": "Visión general"
+    },
+    {
+      "id": 2,
+      "br": "Armazena as distribuições contábeis (accounting distributions) das linhas de transação do módulo Accounts Receivable. Liga cada linha de transação às combinações de contas contábeis do General Ledger, permitindo a reconciliação entre AR e GL. Cada linha de transação pode ter múltiplas distribuições, categorizadas por ACCOUNT_CLASS (receita, recebível, frete, imposto, etc.).",
+      "en": "Stores the accounting distributions of the transaction lines of the Accounts Receivable module. Links each transaction line to the accounting combinations in the General Ledger, enabling reconciliation between AR and GL. Each transaction line can have multiple distributions, categorized by ACCOUNT_CLASS (revenue, receivable, freight, tax, etc.).",
+      "es": "Almacena las distribuciones contables de las líneas de transacción del módulo Accounts Receivable. Vincula cada línea de transacción a las combinaciones de cuentas contables del General Ledger, permitiendo la conciliación entre AR y GL. Cada línea de transacción puede tener múltiples distribuciones, categorizadas por ACCOUNT_CLASS (ingresos, cuentas por cobrar, flete, impuestos, etc.)."
+    },
+    {
+      "id": 3,
+      "br": "É a tabela que faz a ponte entre AR e GL — indispensável para auditoria contábil e reconciliação de saldos.",
+      "en": "This is the table that bridges AR and GL – essential for accounting audit and balance reconciliation.",
+      "es": "Es la tabla que establece la conexión entre AR y GL — indispensable para la auditoría contable y la conciliación de saldos."
+    },
+    {
+      "id": 4,
+      "br": "Sufixo _ALL",
+      "en": "Suffix _ALL",
+      "es": "Sufijo _ALL"
+    },
+    {
+      "id": 5,
+      "br": "O sufixo _ALL indica que a tabela armazena dados de todas as business units (multi-org). O filtro por ORG_ID é necessário para consultas por organização específica.",
+      "en": "The suffix _ALL indicates that the table stores data for all business units (multi-org). Filtering by ORG_ID is necessary for queries by specific organization.",
+      "es": "El sufijo _ALL indica que la tabla almacena datos de todas las business units (multi-org). Se requiere el filtro por ORG_ID para consultas específicas de organización."
+    },
+    {
+      "id": 6,
+      "br": "Propósito de Negócio",
+      "en": "Business Purpose",
+      "es": "Propósito de negocio"
+    },
+    {
+      "id": 7,
+      "br": "Esta tabela é utilizada nos seguintes processos:",
+      "en": "This table is used in the following processes:",
+      "es": "Esta tabla se utiliza en los siguientes procesos:"
+    },
+    {
+      "id": 8,
+      "br": "Cada valor de transação é distribuído para contas contábeis específicas, permitindo conferência entre saldos do subledger e do General Ledger.",
+      "en": "Each transaction value is distributed to specific accounting accounts, enabling comparison between subledger and General Ledger balances.",
+      "es": "Cada valor de transacción se distribuye a cuentas contables específicas, permitiendo la verificación entre los saldos del subledger y del General Ledger."
+    },
+    {
+      "id": 9,
+      "br": "Identificação de receita por centro de custo, departamento ou segmento contábil.",
+      "en": "Identification of revenue by cost center, department, or accounting segment.",
+      "es": "Identificación de ingresos por centro de costos, departamento o segmento contable."
+    },
+    {
+      "id": 10,
+      "br": "Rastreamento completo de quais contas foram impactadas por cada transação.",
+      "en": "Complete tracking of which accounts were impacted by each transaction.",
+      "es": "Seguimiento completo de qué cuentas fueron impactadas por cada transacción."
+    },
+    {
+      "id": 11,
+      "br": "O campo `GL_POSTED_DATE` indica quando a distribuição foi transferida ao General Ledger.",
+      "en": "The `GL_POSTED_DATE` field indicates when the distribution was transferred to the General Ledger.",
+      "es": "El campo `GL_POSTED_DATE` indica cuándo se transfirió la distribución al General Ledger."
+    },
+    {
+      "id": 12,
+      "br": "Distribuições com `ACCOUNT_CLASS = 'UNEARN'` ou `'UNBILL'` suportam reconhecimento de receita diferido.",
+      "en": "Distributions with `ACCOUNT_CLASS = 'UNEARN'` or `'UNBILL'` support deferred revenue recognition.",
+      "es": "Las distribuciones con `ACCOUNT_CLASS = 'UNEARN'` o `'UNBILL'` soportan el reconocimiento de ingresos diferidos."
+    },
+    {
+      "id": 13,
+      "br": "As contas são determinadas automaticamente com base nas regras de AutoAccounting configuradas no tipo de transação.",
+      "en": "Accounts are automatically determined based on the AutoAccounting rules configured in the transaction type.",
+      "es": "Las cuentas se determinan automáticamente en función de las reglas de AutoAccounting configuradas en el tipo de transacción."
+    },
+    {
+      "id": 14,
+      "br": "Colunas Principais",
+      "en": "Key Columns",
+      "es": "Columnas principales"
+    },
+    {
+      "id": 15,
+      "br": "Confiança",
+      "en": "Confidence",
+      "es": "Confianza"
+    },
+    {
+      "id": 16,
+      "br": "Escala de 0% a 100% — grau de certeza da descrição gerada por IA com base na documentação oficial Oracle (OEDMF/BICC Release 13/25A).",
+      "en": "Scale of 0% to 100% – degree of certainty of the description generated by AI based on Oracle official documentation (OEDMF/BICC Release 13/25A).",
+      "es": "Escala del 0% al 100% — grado de certeza de la descripción generada por IA en base a la documentación oficial de Oracle (OEDMF/BICC Release 13/25A)."
+    },
+    {
+      "id": 17,
+      "br": "- 🟢 81–100% — Coluna presente na documentação oficial Oracle; nome, tipo e descrição confirmados.",
+      "en": "- 🟢 81–100% – Column present in Oracle official documentation; name, type, and description confirmed.",
+      "es": "- 🟢 81–100% — Columna presente en la documentación oficial de Oracle; nombre, tipo y descripción confirmados."
+    },
+    {
+      "id": 18,
+      "br": "- 🟡 51–80% — Coluna inferida por naming convention ou padrão Oracle; tipo exato pode variar.",
+      "en": "- 🟡 51–80% – Column inferred by naming convention or Oracle standard; exact type may vary.",
+      "es": "- 🟡 51–80% — Columna inferida por convención de nomenclatura o estándar de Oracle; el tipo exacto puede variar."
+    },
+    {
+      "id": 19,
+      "br": "- 🔴 0–50% — Existência ou tipo incertos; pode não existir no release atual; validar no ambiente.",
+      "en": "- 🔴 0–50% – Existence or type uncertain; may not exist in the current release; validate in the environment.",
+      "es": "- 🔴 0–50% — Existencia o tipo inciertos; puede no existir en la versión actual; validar en el entorno."
+    },
+    {
+      "id": 20,
+      "br": "Coluna",
+      "en": "Column",
+      "es": "Columna"
+    },
+    {
+      "id": 21,
+      "br": "Tipo",
+      "en": "Type",
+      "es": "Tipo"
+    },
+    {
+      "id": 22,
+      "br": "Nulo?",
+      "en": "Null?",
+      "es": "Nulo?"
+    },
+    {
+      "id": 23,
+      "br": "Categoria",
+      "en": "Category",
+      "es": "Categoría"
+    },
+    {
+      "id": 24,
+      "br": "Descrição",
+      "en": "Description",
+      "es": "Descripción"
+    },
+    {
+      "id": 25,
+      "br": "Identificador único da distribuição contábil",
+      "en": "Unique identifier for the accounting distribution",
+      "es": "Identificador único de la distribución contable"
+    },
+    {
+      "id": 26,
+      "br": "Referência à linha da transação",
+      "en": "Transaction line reference",
+      "es": "Referencia a la línea de la transacción"
+    },
+    {
+      "id": 27,
+      "br": "Referência ao cabeçalho da transação",
+      "en": "Transaction header reference",
+      "es": "Referencia al encabezado de la transacción"
+    },
+    {
+      "id": 28,
+      "br": "Contabilidade",
+      "en": "Accounting",
+      "es": "Contabilidad"
+    },
+    {
+      "id": 29,
+      "br": "Combinação de contas contábeis (segmentos GL)",
+      "en": "Accounting account combination (GL segments)",
+      "es": "Combinación de cuentas contables (segmentos GL)"
+    },
+    {
+      "id": 30,
+      "br": "Financeiro",
+      "en": "Finance",
+      "es": "Financiero"
+    },
+    {
+      "id": 31,
+      "br": "Valor da distribuição na moeda da transação",
+      "en": "Distribution value in the transaction currency",
+      "es": "Valor de la distribución en la moneda de la transacción"
+    },
+    {
+      "id": 32,
+      "br": "Valor da distribuição na moeda funcional (ledger)",
+      "en": "Distribution value in the functional currency (ledger)",
+      "es": "Valor de la distribución en la moneda funcional (ledger)"
+    },
+    {
+      "id": 33,
+      "br": "Percentual da distribuição em relação ao total da linha",
+      "en": "Percentage of distribution relative to the line total",
+      "es": "Porcentaje de la distribución en relación con el total de la línea"
+    },
+    {
+      "id": 34,
+      "br": "Classificação",
+      "en": "Classification",
+      "es": "Clasificación"
+    },
+    {
+      "id": 35,
+      "br": "Classe da conta: REV, REC, FREIGHT, TAX, UNBILL, UNEARN, SUSPENSE, ROUND",
+      "en": "Account class: REV, REC, FREIGHT, TAX, UNBILL, UNEARN, SUSPENSE, ROUND",
+      "es": "Clase de la cuenta: REV, REC, FREIGHT, TAX, UNBILL, UNEARN, SUSPENSE, ROUND"
+    },
+    {
+      "id": 36,
+      "br": "Y = modelo de conta (template); N = distribuição real",
+      "en": "Y = account template; N = actual distribution",
+      "es": "Y = plantilla de cuenta; N = distribución real"
+    },
+    {
+      "id": 37,
+      "br": "Data contábil da distribuição (período GL)",
+      "en": "Accounting date of the distribution (GL period)",
+      "es": "Fecha contable de la distribución (período GL)"
+    },
+    {
+      "id": 38,
+      "br": "Data em que foi postada no General Ledger",
+      "en": "Date when posted to the General Ledger",
+      "es": "Fecha en que se registró en el General Ledger"
+    },
+    {
+      "id": 39,
+      "br": "ID do controle de posting (-1 = não postado, -2 = não precisa postar, >0 = postado)",
+      "en": "Posting control ID (-1 = not posted, -2 = no need to post, >0 = posted)",
+      "es": "ID de control de registro (-1 = no registrado, -2 = no necesita registro, >0 = registrado)"
+    },
+    {
+      "id": 40,
+      "br": "Y = distribuição mais recente do recebível (para ACCOUNT_CLASS = REC)",
+      "en": "Y = latest receivable distribution (for ACCOUNT_CLASS = REC)",
+      "es": "Y = distribución más reciente del cobro (para ACCOUNT_CLASS = REC)"
+    },
+    {
+      "id": 41,
+      "br": "Data GL original (antes de repostagem)",
+      "en": "Original GL date (before reposting)",
+      "es": "Fecha GL original (antes de la repetición)"
+    },
+    {
+      "id": 42,
+      "br": "Tipo da transação (desnormalizado do cabeçalho)",
+      "en": "Transaction type (unnormalized from header)",
+      "es": "Tipo de transacción (desnormalizado del encabezado)"
+    },
+    {
+      "id": 43,
+      "br": "Tributação",
+      "en": "Taxation",
+      "es": "Tributación"
+    },
+    {
+      "id": 44,
+      "br": "Combinação de contas para imposto coletado",
+      "en": "Account combination for collected tax",
+      "es": "Combinación de cuentas para el impuesto recaudado"
+    },
+    {
+      "id": 45,
+      "br": "Segmentos concatenados da conta de imposto coletado",
+      "en": "Concatenated segments of the collected tax account",
+      "es": "Segmentos concatenados de la cuenta de impuesto recaudado"
+    },
+    {
+      "id": 46,
+      "br": "ID do ajuste de receita (Revenue Adjustment)",
+      "en": "Revenue Adjustment ID",
+      "es": "ID del ajuste de ingresos (Revenue Adjustment)"
+    },
+    {
+      "id": 47,
+      "br": "Flag de offset do recebível",
+      "en": "Receivable offset flag",
+      "es": "Indicador de compensación del cobro"
+    },
+    {
+      "id": 48,
+      "br": "ID do evento contábil (Subledger Accounting / SLA)",
+      "en": "Accounting event ID (Subledger Accounting / SLA)",
+      "es": "ID del evento contable (Subledger Accounting / SLA)"
+    },
+    {
+      "id": 49,
+      "br": "Y = distribuição criada manualmente pelo usuário",
+      "en": "Y = distribution created manually by the user",
+      "es": "Y = distribución creada manualmente por el usuario"
+    },
+    {
+      "id": 50,
+      "br": "Y = distribuição de correção de arredondamento",
+      "en": "Y = rounding correction distribution",
+      "es": "Y = distribución de corrección de redondeo"
+    },
+    {
+      "id": 51,
+      "br": "Y = conta contábil foi alterada manualmente",
+      "en": "Y = The accounting account was manually changed",
+      "es": "Y = la cuenta contable fue modificada manualmente"
+    },
+    {
+      "id": 52,
+      "br": "Ledger contábil (legado)",
+      "en": "Legacy accounting ledger",
+      "es": "Ledger contable (legado)"
+    },
+    {
+      "id": 53,
+      "br": "Texto livre",
+      "en": "Free text",
+      "es": "Texto libre"
+    },
+    {
+      "id": 54,
+      "br": "Comentários da distribuição",
+      "en": "Distribution comments",
+      "es": "Comentarios de distribución"
+    },
+    {
+      "id": 55,
+      "br": "Business unit (multi-org)",
+      "en": "Business unit (multi-org)",
+      "es": "Business unit (multi-org)"
+    },
+    {
+      "id": 56,
+      "br": "Auditoria",
+      "en": "Audit",
+      "es": "Auditoría"
+    },
+    {
+      "id": 57,
+      "br": "Usuário que criou o registro",
+      "en": "User who created the record",
+      "es": "Usuario que creó el registro"
+    },
+    {
+      "id": 58,
+      "br": "Data/hora de criação",
+      "en": "Creation date/time",
+      "es": "Fecha/hora de creación"
+    },
+    {
+      "id": 59,
+      "br": "Último usuário que alterou",
+      "en": "Last user who modified",
+      "es": "Último usuario que modificó"
+    },
+    {
+      "id": 60,
+      "br": "Data/hora da última alteração",
+      "en": "Last modification date/time",
+      "es": "Fecha/hora de la última modificación"
+    },
+    {
+      "id": 61,
+      "br": "Login da última sessão",
+      "en": "Last session login",
+      "es": "Inicio de sesión de la última sesión"
+    },
+    {
+      "id": 62,
+      "br": "ATTRIBUTE1–15",
+      "en": "ATTRIBUTE1–15",
+      "es": "ATTRIBUTE1–15"
+    },
+    {
+      "id": 63,
+      "br": "Atributos descritivos customizáveis por implementação",
+      "en": "Customizable descriptive attributes by implementation",
+      "es": "Atributos descriptivos personalizables por implementación"
+    },
+    {
+      "id": 64,
+      "br": "Contexto do Descriptive Flexfield",
+      "en": "Context of Descriptive Flexfield",
+      "es": "Contexto del Descriptive Flexfield"
+    },
+    {
+      "id": 65,
+      "br": "Relacionamentos",
+      "en": "Relationships",
+      "es": "Relaciones"
+    },
+    {
+      "id": 66,
+      "br": "Tabelas-pai (FK de entrada)",
+      "en": "Parent tables (incoming FK)",
+      "es": "Tablas padre (FK de entrada)"
+    },
+    {
+      "id": 67,
+      "br": "cabeçalho da transação",
+      "en": "Transaction header",
+      "es": "Encabezado de la transacción"
+    },
+    {
+      "id": 68,
+      "br": "linha da transação",
+      "en": "Transaction line",
+      "es": "Línea de la transacción"
+    },
+    {
+      "id": 69,
+      "br": "conta contábil",
+      "en": "Accounting account",
+      "es": "cuenta contable"
+    },
+    {
+      "id": 70,
+      "br": "tipo da transação",
+      "en": "Transaction type",
+      "es": "tipo de transacción"
+    },
+    {
+      "id": 71,
+      "br": "ledger contábil",
+      "en": "Accounting ledger",
+      "es": "ledger contable"
+    },
+    {
+      "id": 72,
+      "br": "business unit",
+      "en": "Business unit",
+      "es": "business unit"
+    },
+    {
+      "id": 73,
+      "br": "Tabelas-filha (FK de saída)",
+      "en": "Child tables (outgoing FK)",
+      "es": "Tablas hijas (FK de salida)"
+    },
+    {
+      "id": 74,
+      "br": "linhas de diário do Subledger Accounting",
+      "en": "Subledger Accounting journal lines",
+      "es": "líneas del subledger de contabilidad"
+    },
+    {
+      "id": 75,
+      "br": "eventos contábeis SLA",
+      "en": "Accounting SLA events",
+      "es": "eventos contables SLA"
+    },
+    {
+      "id": 76,
+      "br": "Uso Típico",
+      "en": "Typical Use",
+      "es": "Uso típico"
+    },
+    {
+      "id": 77,
+      "br": "Reconciliação AR × GL por conta contábil",
+      "en": "AR × GL reconciliation by accounting account",
+      "es": "Conciliación AR × GL por cuenta contable"
+    },
+    {
+      "id": 78,
+      "br": "Distribuições não postadas no GL",
+      "en": "Unposted distributions",
+      "es": "Distribuciones no registradas en el GL"
+    },
+    {
+      "id": 79,
+      "br": "Filtros comuns",
+      "en": "Common filters",
+      "es": "Filtros comunes"
+    },
+    {
+      "id": 80,
+      "br": "Apenas distribuições reais (excluir templates)",
+      "en": "Only real distributions (exclude templates)",
+      "es": "Solo distribuciones reales (excluir plantillas)"
+    },
+    {
+      "id": 81,
+      "br": "Apenas distribuições de receita",
+      "en": "Only revenue distributions",
+      "es": "Solo distribuciones de ingresos"
+    },
+    {
+      "id": 82,
+      "br": "Apenas distribuições de recebível",
+      "en": "Only receivable distributions",
+      "es": "Solo distribuciones de cuentas por cobrar"
+    },
+    {
+      "id": 83,
+      "br": "Distribuições ainda não postadas no GL",
+      "en": "Distributions not yet posted to the GL",
+      "es": "Distribuciones aún no registradas en el GL"
+    },
+    {
+      "id": 84,
+      "br": "Distribuição de recebível mais recente (evitar duplicidade)",
+      "en": "Most recent receivable distribution (to avoid duplication)",
+      "es": "Distribución de cuentas por cobrar más reciente (evitar duplicidad)"
+    },
+    {
+      "id": 85,
+      "br": "Observações",
+      "en": "Notes",
+      "es": "Observaciones"
+    },
+    {
+      "id": 86,
+      "br": "O campo ACCOUNT_SET_FLAG é crítico: registros com valor 'Y' são templates usados pelo AutoAccounting e não representam valores reais. Sempre filtrar ACCOUNT_SET_FLAG = 'N' em consultas de valores.",
+      "en": "The ACCOUNT_SET_FLAG field is critical: records with a value of 'Y' are templates used by AutoAccounting and do not represent actual values. Always filter ACCOUNT_SET_FLAG = 'N' in value queries.",
+      "es": "El campo ACCOUNT_SET_FLAG es crítico: los registros con valor 'Y' son plantillas utilizadas por AutoAccounting y no representan valores reales. Siempre filtrar ACCOUNT_SET_FLAG = 'N' en consultas de valores."
+    },
+    {
+      "id": 87,
+      "br": "O POSTING_CONTROL_ID segue a convenção: -1 = não postado, -2 = não precisa postar (e.g., tipo de transação com POST_TO_GL = 'N'), valores positivos = ID do batch de posting.",
+      "en": "The POSTING_CONTROL_ID follows the convention: -1 = unposted, -2 = no need to post (e.g., transaction type with POST_TO_GL = 'N'), positive values = posting batch ID.",
+      "es": "El POSTING_CONTROL_ID sigue la convención: -1 = no registrado, -2 = no necesita registro (p. ej., tipo de transacción con POST_TO_GL = 'N'), valores positivos = ID del lote de registro."
+    },
+    {
+      "id": 88,
+      "br": "Para ACCOUNT_CLASS = 'REC', usar LATEST_REC_FLAG = 'Y' para obter apenas a distribuição mais recente do recebível (evita dupla contagem após aplicações parciais).",
+      "en": "For ACCOUNT_CLASS = 'REC', use LATEST_REC_FLAG = 'Y' to obtain only the most recent receivable distribution (avoids double counting after partial applications).",
+      "es": "Para ACCOUNT_CLASS = 'REC', utilizar LATEST_REC_FLAG = 'Y' para obtener solo la distribución más reciente de la cuenta por cobrar (evita doble conteo después de aplicaciones parciales)."
+    },
+    {
+      "id": 89,
+      "br": "Distribuições com ACCOUNT_CLASS em 'UNBILL' ou 'UNEARN' estão relacionadas ao revenue scheduling e devem ser consideradas em análises de receita diferida.",
+      "en": "Distributions with ACCOUNT_CLASS in 'UNBILL' or 'UNEARN' are related to revenue scheduling and should be considered in deferred revenue analysis.",
+      "es": "Las distribuciones con ACCOUNT_CLASS en 'UNBILL' o 'UNEARN' están relacionadas con la programación de ingresos y deben considerarse en análisis de ingresos diferidos."
+    },
+    {
+      "id": 90,
+      "br": "A tabela possui Descriptive Flexfields (DFF) via ATTRIBUTE1–15.",
+      "en": "The table has Descriptive Flexfields (DFF) via ATTRIBUTE1–15.",
+      "es": "La tabla tiene Descriptive Flexfields (DFF) a través de ATTRIBUTE1–15."
+    },
+    {
+      "id": 91,
+      "br": "Referências",
+      "en": "References",
+      "es": "Referencias"
+    },
+    {
+      "id": 92,
+      "br": "[Oracle Docs — RA_CUST_TRX_LINE_GL_DIST_ALL](https://docs.oracle.com/en/cloud/saas/financials/25a/oedmf/racusttrxlinegldistall-25198.html)",
+      "en": "[Oracle Docs — RA_CUST_TRX_LINE_GL_DIST_ALL](https://docs.oracle.com/en/cloud/saas/financials/25a/oedmf/racusttrxlinegldistall-25198.html)",
+      "es": "[Oracle Docs — RA_CUST_TRX_LINE_GL_DIST_ALL](https://docs.oracle.com/en/cloud/saas/financials/25a/oedmf/racusttrxlinegldistall-25198.html)"
+    },
+    {
+      "id": 93,
+      "br": "ar-module-data-dictionary — Dossiê do módulo AR",
+      "en": "ar-module-data-dictionary — AR module data dictionary",
+      "es": "ar-module-data-dictionary — Guía del módulo AR"
+    }
+  ]
+}

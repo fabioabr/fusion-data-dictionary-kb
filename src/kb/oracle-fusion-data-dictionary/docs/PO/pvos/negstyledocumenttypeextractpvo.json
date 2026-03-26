@@ -1,0 +1,886 @@
+{
+  "meta": {
+    "pvo_name": "NegStyleDocumentTypeExtractPVO",
+    "full_path": "FscmTopModelAM.PrcExtractAM.PonBiccExtractAM.NegStyleDocumentTypeExtractPVO",
+    "module_path": "FscmTopModelAM.PrcExtractAM.PonBiccExtractAM",
+    "module_code": "PO",
+    "type": "pvo",
+    "description": "Extrai tipos de documentos por estilo de negociação para carga BICC, mapeando quais documentos de compra resultam de cada configuração de evento de sourcing."
+  },
+  "stats": {
+    "total_attributes": 61,
+    "tables_count": 3,
+    "bicc_enabled": 61,
+    "bicc_pct": 100,
+    "pk_count": 2
+  },
+  "tables": [
+    "PON_AUC_DOCTYPES_B",
+    "PON_DOCTYPE_STYLES_B",
+    "PON_NEGOTIATION_STYLES_B"
+  ],
+  "attributes": [
+    {
+      "name": "DoctypeId",
+      "table": "PON_DOCTYPE_STYLES_B",
+      "column": "DOCTYPE_ID",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationDocumentTypeCreatedBy",
+      "table": "PON_AUC_DOCTYPES_B",
+      "column": "CREATED_BY",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationDocumentTypeCreationDate",
+      "table": "PON_AUC_DOCTYPES_B",
+      "column": "CREATION_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationDocumentTypeDoctypeGroupName",
+      "table": "PON_AUC_DOCTYPES_B",
+      "column": "DOCTYPE_GROUP_NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationDocumentTypeDoctypeId",
+      "table": "PON_AUC_DOCTYPES_B",
+      "column": "DOCTYPE_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationDocumentTypeDocumentSubtype",
+      "table": "PON_AUC_DOCTYPES_B",
+      "column": "DOCUMENT_SUBTYPE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationDocumentTypeDocumentTypeCode",
+      "table": "PON_AUC_DOCTYPES_B",
+      "column": "DOCUMENT_TYPE_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationDocumentTypeInternalName",
+      "table": "PON_AUC_DOCTYPES_B",
+      "column": "INTERNAL_NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationDocumentTypeLastUpdateDate",
+      "table": "PON_AUC_DOCTYPES_B",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationDocumentTypeLastUpdateLogin",
+      "table": "PON_AUC_DOCTYPES_B",
+      "column": "LAST_UPDATE_LOGIN",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationDocumentTypeLastUpdatedBy",
+      "table": "PON_AUC_DOCTYPES_B",
+      "column": "LAST_UPDATED_BY",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationDocumentTypeObjectVersionNumber",
+      "table": "PON_AUC_DOCTYPES_B",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationStyleAbstractEnabledFlag",
+      "table": "PON_NEGOTIATION_STYLES_B",
+      "column": "ABSTRACT_ENABLED_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationStyleAutoExtendEnabledFlag",
+      "table": "PON_NEGOTIATION_STYLES_B",
+      "column": "AUTO_EXTEND_ENABLED_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationStyleContermsEnabledFlag",
+      "table": "PON_NEGOTIATION_STYLES_B",
+      "column": "CONTERMS_ENABLED_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationStyleCoverPageEnabledFlag",
+      "table": "PON_NEGOTIATION_STYLES_B",
+      "column": "COVER_PAGE_ENABLED_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationStyleCreatedBy",
+      "table": "PON_NEGOTIATION_STYLES_B",
+      "column": "CREATED_BY",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationStyleCreationDate",
+      "table": "PON_NEGOTIATION_STYLES_B",
+      "column": "CREATION_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationStyleDocTranslationCreatedBy",
+      "table": "PON_DOCTYPE_STYLES_B",
+      "column": "CREATED_BY",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationStyleDocTranslationCreationDate",
+      "table": "PON_DOCTYPE_STYLES_B",
+      "column": "CREATION_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationStyleDocTranslationDoctypeId",
+      "table": "PON_DOCTYPE_STYLES_B",
+      "column": "DOCTYPE_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationStyleDocTranslationEnabledFlag",
+      "table": "PON_DOCTYPE_STYLES_B",
+      "column": "ENABLED_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationStyleDocTranslationLastUpdateDate",
+      "table": "PON_DOCTYPE_STYLES_B",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationStyleDocTranslationLastUpdateLogin",
+      "table": "PON_DOCTYPE_STYLES_B",
+      "column": "LAST_UPDATE_LOGIN",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationStyleDocTranslationLastUpdatedBy",
+      "table": "PON_DOCTYPE_STYLES_B",
+      "column": "LAST_UPDATED_BY",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationStyleDocTranslationObjectVersionNumber",
+      "table": "PON_DOCTYPE_STYLES_B",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationStyleDocTranslationStyleId",
+      "table": "PON_DOCTYPE_STYLES_B",
+      "column": "STYLE_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationStyleDocumentTypeCreatedBy",
+      "table": "PON_DOCTYPE_STYLES_B",
+      "column": "CREATED_BY",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationStyleDocumentTypeCreationDate",
+      "table": "PON_DOCTYPE_STYLES_B",
+      "column": "CREATION_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationStyleDocumentTypeEnabledFlag",
+      "table": "PON_DOCTYPE_STYLES_B",
+      "column": "ENABLED_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationStyleDocumentTypeLastUpdateDate",
+      "table": "PON_DOCTYPE_STYLES_B",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": true
+    },
+    {
+      "name": "NegotiationStyleDocumentTypeLastUpdateLogin",
+      "table": "PON_DOCTYPE_STYLES_B",
+      "column": "LAST_UPDATE_LOGIN",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationStyleDocumentTypeLastUpdatedBy",
+      "table": "PON_DOCTYPE_STYLES_B",
+      "column": "LAST_UPDATED_BY",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationStyleDocumentTypeObjectVersionNumber",
+      "table": "PON_DOCTYPE_STYLES_B",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationStyleGeneralIntroEnabledFlag",
+      "table": "PON_NEGOTIATION_STYLES_B",
+      "column": "GENERAL_INTRO_ENABLED_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationStyleGroupEnabledFlag",
+      "table": "PON_NEGOTIATION_STYLES_B",
+      "column": "GROUP_ENABLED_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationStyleHdrAttributeEnabledFlag",
+      "table": "PON_NEGOTIATION_STYLES_B",
+      "column": "HDR_ATTRIBUTE_ENABLED_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationStyleLargeNegEnabledFlag",
+      "table": "PON_NEGOTIATION_STYLES_B",
+      "column": "LARGE_NEG_ENABLED_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationStyleLastUpdateDate",
+      "table": "PON_NEGOTIATION_STYLES_B",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationStyleLastUpdateLogin",
+      "table": "PON_NEGOTIATION_STYLES_B",
+      "column": "LAST_UPDATE_LOGIN",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationStyleLastUpdatedBy",
+      "table": "PON_NEGOTIATION_STYLES_B",
+      "column": "LAST_UPDATED_BY",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationStyleLineAttributeEnabledFlag",
+      "table": "PON_NEGOTIATION_STYLES_B",
+      "column": "LINE_ATTRIBUTE_ENABLED_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationStyleLineMasEnabledFlag",
+      "table": "PON_NEGOTIATION_STYLES_B",
+      "column": "LINE_MAS_ENABLED_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationStyleLinesInstrEnabledFlag",
+      "table": "PON_NEGOTIATION_STYLES_B",
+      "column": "LINES_INSTR_ENABLED_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationStyleLotEnabledFlag",
+      "table": "PON_NEGOTIATION_STYLES_B",
+      "column": "LOT_ENABLED_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationStyleNegTeamEnabledFlag",
+      "table": "PON_NEGOTIATION_STYLES_B",
+      "column": "NEG_TEAM_ENABLED_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationStyleObjectVersionNumber",
+      "table": "PON_NEGOTIATION_STYLES_B",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationStylePowerBiddingEnabledFlag",
+      "table": "PON_NEGOTIATION_STYLES_B",
+      "column": "POWER_BIDDING_ENABLED_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationStylePriceElementEnabledFlag",
+      "table": "PON_NEGOTIATION_STYLES_B",
+      "column": "PRICE_ELEMENT_ENABLED_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationStyleProxyBiddingEnabledFlag",
+      "table": "PON_NEGOTIATION_STYLES_B",
+      "column": "PROXY_BIDDING_ENABLED_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationStyleQtyPriceTiersEnabledFlag",
+      "table": "PON_NEGOTIATION_STYLES_B",
+      "column": "QTY_PRICE_TIERS_ENABLED_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationStyleReqmntsInstrEnabledFlag",
+      "table": "PON_NEGOTIATION_STYLES_B",
+      "column": "REQMNTS_INSTR_ENABLED_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationStyleRfiLineEnabledFlag",
+      "table": "PON_NEGOTIATION_STYLES_B",
+      "column": "RFI_LINE_ENABLED_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationStyleStagCloseEnabledFlag",
+      "table": "PON_NEGOTIATION_STYLES_B",
+      "column": "STAG_CLOSE_ENABLED_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationStyleStatus",
+      "table": "PON_NEGOTIATION_STYLES_B",
+      "column": "STATUS",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationStyleStyleId",
+      "table": "PON_NEGOTIATION_STYLES_B",
+      "column": "STYLE_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationStyleSystemFlag",
+      "table": "PON_NEGOTIATION_STYLES_B",
+      "column": "SYSTEM_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationStyleTeamScoringEnabledFlag",
+      "table": "PON_NEGOTIATION_STYLES_B",
+      "column": "TEAM_SCORING_ENABLED_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationStyleTermsInstrEnabledFlag",
+      "table": "PON_NEGOTIATION_STYLES_B",
+      "column": "TERMS_INSTR_ENABLED_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegotiationStyleTwostageEvalEnabledFlag",
+      "table": "PON_NEGOTIATION_STYLES_B",
+      "column": "TWOSTAGE_EVAL_ENABLED_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "StyleId",
+      "table": "PON_DOCTYPE_STYLES_B",
+      "column": "STYLE_ID",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    }
+  ],
+  "by_table": {
+    "PON_DOCTYPE_STYLES_B": [
+      {
+        "attribute": "DoctypeId",
+        "column": "DOCTYPE_ID",
+        "bicc": true,
+        "pk": true
+      },
+      {
+        "attribute": "NegotiationStyleDocTranslationCreatedBy",
+        "column": "CREATED_BY",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationStyleDocTranslationCreationDate",
+        "column": "CREATION_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationStyleDocTranslationDoctypeId",
+        "column": "DOCTYPE_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationStyleDocTranslationEnabledFlag",
+        "column": "ENABLED_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationStyleDocTranslationLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationStyleDocTranslationLastUpdateLogin",
+        "column": "LAST_UPDATE_LOGIN",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationStyleDocTranslationLastUpdatedBy",
+        "column": "LAST_UPDATED_BY",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationStyleDocTranslationObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationStyleDocTranslationStyleId",
+        "column": "STYLE_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationStyleDocumentTypeCreatedBy",
+        "column": "CREATED_BY",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationStyleDocumentTypeCreationDate",
+        "column": "CREATION_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationStyleDocumentTypeEnabledFlag",
+        "column": "ENABLED_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationStyleDocumentTypeLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationStyleDocumentTypeLastUpdateLogin",
+        "column": "LAST_UPDATE_LOGIN",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationStyleDocumentTypeLastUpdatedBy",
+        "column": "LAST_UPDATED_BY",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationStyleDocumentTypeObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "StyleId",
+        "column": "STYLE_ID",
+        "bicc": true,
+        "pk": true
+      }
+    ],
+    "PON_AUC_DOCTYPES_B": [
+      {
+        "attribute": "NegotiationDocumentTypeCreatedBy",
+        "column": "CREATED_BY",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationDocumentTypeCreationDate",
+        "column": "CREATION_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationDocumentTypeDoctypeGroupName",
+        "column": "DOCTYPE_GROUP_NAME",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationDocumentTypeDoctypeId",
+        "column": "DOCTYPE_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationDocumentTypeDocumentSubtype",
+        "column": "DOCUMENT_SUBTYPE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationDocumentTypeDocumentTypeCode",
+        "column": "DOCUMENT_TYPE_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationDocumentTypeInternalName",
+        "column": "INTERNAL_NAME",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationDocumentTypeLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationDocumentTypeLastUpdateLogin",
+        "column": "LAST_UPDATE_LOGIN",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationDocumentTypeLastUpdatedBy",
+        "column": "LAST_UPDATED_BY",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationDocumentTypeObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": true,
+        "pk": false
+      }
+    ],
+    "PON_NEGOTIATION_STYLES_B": [
+      {
+        "attribute": "NegotiationStyleAbstractEnabledFlag",
+        "column": "ABSTRACT_ENABLED_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationStyleAutoExtendEnabledFlag",
+        "column": "AUTO_EXTEND_ENABLED_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationStyleContermsEnabledFlag",
+        "column": "CONTERMS_ENABLED_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationStyleCoverPageEnabledFlag",
+        "column": "COVER_PAGE_ENABLED_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationStyleCreatedBy",
+        "column": "CREATED_BY",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationStyleCreationDate",
+        "column": "CREATION_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationStyleGeneralIntroEnabledFlag",
+        "column": "GENERAL_INTRO_ENABLED_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationStyleGroupEnabledFlag",
+        "column": "GROUP_ENABLED_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationStyleHdrAttributeEnabledFlag",
+        "column": "HDR_ATTRIBUTE_ENABLED_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationStyleLargeNegEnabledFlag",
+        "column": "LARGE_NEG_ENABLED_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationStyleLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationStyleLastUpdateLogin",
+        "column": "LAST_UPDATE_LOGIN",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationStyleLastUpdatedBy",
+        "column": "LAST_UPDATED_BY",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationStyleLineAttributeEnabledFlag",
+        "column": "LINE_ATTRIBUTE_ENABLED_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationStyleLineMasEnabledFlag",
+        "column": "LINE_MAS_ENABLED_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationStyleLinesInstrEnabledFlag",
+        "column": "LINES_INSTR_ENABLED_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationStyleLotEnabledFlag",
+        "column": "LOT_ENABLED_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationStyleNegTeamEnabledFlag",
+        "column": "NEG_TEAM_ENABLED_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationStyleObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationStylePowerBiddingEnabledFlag",
+        "column": "POWER_BIDDING_ENABLED_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationStylePriceElementEnabledFlag",
+        "column": "PRICE_ELEMENT_ENABLED_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationStyleProxyBiddingEnabledFlag",
+        "column": "PROXY_BIDDING_ENABLED_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationStyleQtyPriceTiersEnabledFlag",
+        "column": "QTY_PRICE_TIERS_ENABLED_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationStyleReqmntsInstrEnabledFlag",
+        "column": "REQMNTS_INSTR_ENABLED_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationStyleRfiLineEnabledFlag",
+        "column": "RFI_LINE_ENABLED_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationStyleStagCloseEnabledFlag",
+        "column": "STAG_CLOSE_ENABLED_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationStyleStatus",
+        "column": "STATUS",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationStyleStyleId",
+        "column": "STYLE_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationStyleSystemFlag",
+        "column": "SYSTEM_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationStyleTeamScoringEnabledFlag",
+        "column": "TEAM_SCORING_ENABLED_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationStyleTermsInstrEnabledFlag",
+        "column": "TERMS_INSTR_ENABLED_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegotiationStyleTwostageEvalEnabledFlag",
+        "column": "TWOSTAGE_EVAL_ENABLED_FLAG",
+        "bicc": true,
+        "pk": false
+      }
+    ]
+  }
+}

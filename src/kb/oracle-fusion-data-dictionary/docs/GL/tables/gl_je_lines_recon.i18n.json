@@ -1,0 +1,445 @@
+{
+  "source": "gl_je_lines_recon.md",
+  "source_hash": "fa16747d0a568139e5e80d6239b6b528",
+  "translated_at": null,
+  "items": [
+    {
+      "id": 1,
+      "br": "Visão Geral",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 2,
+      "br": "Armazena informações de reconciliação de linhas de lançamentos contábeis no General Ledger. Esta tabela registra o status e os detalhes de reconciliação de cada linha de journal, permitindo identificar quais linhas já foram reconciliadas, por quem e quando. É utilizada pelo recurso de Journal Reconciliation do Oracle Fusion GL.",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 3,
+      "br": "Tabela auxiliar de reconciliação",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 4,
+      "br": "Nem todas as linhas de journal possuem registro nesta tabela — apenas aquelas cujas contas estão habilitadas para reconciliação (JGZ_RECONCILIATION_FLAG em [[gl_code_combinations]]).",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 5,
+      "br": "Propósito de Negócio",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 6,
+      "br": "Esta tabela é utilizada nos seguintes processos:",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 7,
+      "br": "Marcação de linhas de journal como reconciliadas.",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 8,
+      "br": "Rastreamento de quem reconciliou cada lançamento e quando.",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 9,
+      "br": "Identificação de linhas pendentes de reconciliação no encerramento do período.",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 10,
+      "br": "Monitoramento de contas de compensação (clearing accounts) que devem ter saldo zero.",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 11,
+      "br": "Evidência de revisão contábil para fins regulatórios.",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 12,
+      "br": "Colunas Principais",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 13,
+      "br": "Confiança",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 14,
+      "br": "Escala de 0% a 100% — grau de certeza da descrição gerada por IA com base na documentação oficial Oracle (OEDMF/BICC Release 13/25A).",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 15,
+      "br": "- 🟢 81–100% — Coluna presente na documentação oficial Oracle; nome, tipo e descrição confirmados.",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 16,
+      "br": "- 🟡 51–80% — Coluna inferida por naming convention ou padrão Oracle; tipo exato pode variar.",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 17,
+      "br": "- 🔴 0–50% — Existência ou tipo incertos; pode não existir no release atual; validar no ambiente.",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 18,
+      "br": "Coluna",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 19,
+      "br": "Tipo",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 20,
+      "br": "Nulo?",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 21,
+      "br": "Categoria",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 22,
+      "br": "Descrição",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 23,
+      "br": "FK/PK",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 24,
+      "br": "Identificador do header do journal entry",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 25,
+      "br": "Número sequencial da linha do journal",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 26,
+      "br": "Identificador do ledger",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 27,
+      "br": "Combinação de contas contábeis (CCID)",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 28,
+      "br": "Identificador único da reconciliação",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 29,
+      "br": "Controle",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 30,
+      "br": "Data em que a linha foi reconciliada",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 31,
+      "br": "Status de reconciliação: R (Reconciled), N (Not Reconciled), U (Unreconciled)",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 32,
+      "br": "Referência",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 33,
+      "br": "Referência textual associada à reconciliação",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 34,
+      "br": "Referência de reconciliação (localização/GDF)",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 35,
+      "br": "ID da referência de reconciliação (localização)",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 36,
+      "br": "Período",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 37,
+      "br": "Nome do período contábil",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 38,
+      "br": "Financeiro",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 39,
+      "br": "Valor a débito na moeda da transação",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 40,
+      "br": "Valor a crédito na moeda da transação",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 41,
+      "br": "Valor a débito na moeda funcional",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 42,
+      "br": "Valor a crédito na moeda funcional",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 43,
+      "br": "Classificação",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 44,
+      "br": "Código da moeda da transação",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 45,
+      "br": "Auditoria",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 46,
+      "br": "Usuário que criou o registro",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 47,
+      "br": "Data/hora de criação",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 48,
+      "br": "Último usuário que alterou",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 49,
+      "br": "Data/hora da última alteração",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 50,
+      "br": "Relacionamentos",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 51,
+      "br": "Tabelas-pai (FK de entrada)",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 52,
+      "br": "+  (linha do journal",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 53,
+      "br": "header do journal",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 54,
+      "br": "ledger da linha de reconciliação contábil",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 55,
+      "br": "combinação de contas",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 56,
+      "br": "Tabelas-filha (FK de saída)",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 57,
+      "br": "Nenhuma FK direta — esta é uma tabela auxiliar de reconciliação (leaf table).",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 58,
+      "br": "Uso Típico",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 59,
+      "br": "Linhas pendentes de reconciliação em uma conta",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 60,
+      "br": "Histórico de reconciliação por período",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 61,
+      "br": "Filtros comuns",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 62,
+      "br": "Linhas reconciliadas",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 63,
+      "br": "Linhas não reconciliadas",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 64,
+      "br": "Linhas ainda não processadas",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 65,
+      "br": "Observações",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 66,
+      "br": "Apenas contas habilitadas para reconciliação (flag na gl_code_combinations) geram registros nesta tabela.",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 67,
+      "br": "A reconciliação é tipicamente usada para contas de clearing/compensação e contas intercompany.",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 68,
+      "br": "Os campos JGZZ_* são específicos de localizações regionais (Global Descriptive Flexfield) e podem não estar populados em todas as implementações.",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 69,
+      "br": "O processo de reconciliação pode ser manual (pelo usuário) ou automático (via regras configuradas no GL).",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 70,
+      "br": "Esta tabela é essencial para o processo de fechamento contábil — contas com linhas não reconciliadas podem bloquear o fechamento.",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 71,
+      "br": "Referências",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 72,
+      "br": "[Oracle Docs — GL_JE_LINES_RECON](https://docs.oracle.com/en/cloud/saas/financials/25a/oedmf/gljelinesrecon.html)",
+      "en": null,
+      "es": null
+    },
+    {
+      "id": 73,
+      "br": "Dossiê do módulo GL",
+      "en": null,
+      "es": null
+    }
+  ]
+}

@@ -1,0 +1,433 @@
+{
+  "source": "pon_auc_doctypes_b.md",
+  "source_hash": "dd2c35b4fae3b0670b5bd05d0dc7cfb0",
+  "translated_at": "2026-03-26",
+  "items": [
+    {
+      "id": 1,
+      "br": "Visão Geral",
+      "en": "Overview",
+      "es": "Vision General"
+    },
+    {
+      "id": 2,
+      "br": "Armazena a definição base (não traduzível) dos tipos de documento de negociação do módulo Oracle Sourcing. Cada registro define um tipo de negociação (RFQ, RFI, Auction, Reverse Auction, etc.) com suas regras e comportamentos associados — outcome esperado, regras de lances, scoring, e flags de configuração. É a tabela _B (base) do padrão Oracle MLS (Multi-Language Support).",
+      "en": "Stores the base definition (non-translatable) of the types of documents in the Oracle Sourcing module. Each record defines a type of negotiation (RFQ, RFI, Auction, Reverse Auction, etc.) with its associated rules and behavior — expected outcome, bidding rules, scoring, and configuration flags. This is the _B table of the Oracle MLS (Multi-Language Support) standard.",
+      "es": "Almacena la definición base (no traducible) de los tipos de documento de negociación del módulo Oracle Sourcing. Cada registro define un tipo de negociación (RFQ, RFI, Auction, Reverse Auction, etc.) con sus reglas y comportamientos asociados: resultado esperado, reglas de ofertas, puntuación y marcas de configuración. Es la tabla _B (base) del estándar Oracle MLS (Multi-Language Support)."
+    },
+    {
+      "id": 3,
+      "br": "Padrão Oracle MLS (_B/_TL/_VL)",
+      "en": "Oracle MLS (_B/_TL/_VL) standard",
+      "es": "Estándar Oracle MLS (_B/_TL/_VL)"
+    },
+    {
+      "id": 4,
+      "br": "- _B — Dados base independentes de idioma (esta tabela)",
+      "en": "- _B — Language-independent base data (this table)",
+      "es": "- _B — Datos base independientes del idioma (esta tabla)"
+    },
+    {
+      "id": 5,
+      "br": "- _TL — Traduções (nomes/descrições por idioma) → [[pon_auc_doctypes_tl]]",
+      "en": "- _TL — Translations (names/descriptions by language) → [[pon_auc_doctypes_tl]]",
+      "es": "- _TL — Traducciones (nombres/descripciones por idioma) → [[pon_auc_doctypes_tl]]"
+    },
+    {
+      "id": 6,
+      "br": "- _VL — View que combina _B + _TL para o idioma da sessão → [[pon_auc_doctypes_vl]]",
+      "en": "- _VL — View that combines _B + _TL for the session language → [[pon_auc_doctypes_vl]]",
+      "es": "- _VL — Vista que combina _B + _TL para el idioma de la sesión → [[pon_auc_doctypes_vl]]"
+    },
+    {
+      "id": 7,
+      "br": "Propósito de Negócio",
+      "en": "Business Purpose",
+      "es": "Proposito de Negocio"
+    },
+    {
+      "id": 8,
+      "br": "Esta tabela é utilizada nos seguintes processos:",
+      "en": "This table is used in the following processes:",
+      "es": "Esta tabla se utiliza en los siguientes procesos:"
+    },
+    {
+      "id": 9,
+      "br": "Define quais tipos estão disponíveis para os compradores criarem.",
+      "en": "Defines which types are available for buyers to create.",
+      "es": "Define qué tipos están disponibles para que los compradores los creen."
+    },
+    {
+      "id": 10,
+      "br": "Cada tipo pode ter regras distintas de lance, visibilidade, award e outcome.",
+      "en": "Each type can have distinct bidding, visibility, award, and outcome rules.",
+      "es": "Cada tipo puede tener reglas distintas de ofertas, visibilidad, adjudicación y resultado."
+    },
+    {
+      "id": 11,
+      "br": "Tipos de documento podem ser restritos a determinados compradores ou business units.",
+      "en": "Document types can be restricted to specific buyers or business units.",
+      "es": "Los tipos de documento pueden estar restringidos a determinados compradores o unidades de negocio."
+    },
+    {
+      "id": 12,
+      "br": "O outcome define que tipo de documento é gerado após award (PO, BPA, CPA).",
+      "en": "The outcome defines what type of document is generated after award (PO, BPA, CPA).",
+      "es": "El resultado define qué tipo de documento se genera después de la adjudicación (PO, BPA, CPA)."
+    },
+    {
+      "id": 13,
+      "br": "Tipos padrão são fornecidos pelo Oracle (seed); implementadores podem criar tipos customizados.",
+      "en": "Standard types are provided by Oracle (seed); implementers can create custom types.",
+      "es": "Los tipos estándar se proporcionan por Oracle (semillas); los implementadores pueden crear tipos personalizados."
+    },
+    {
+      "id": 14,
+      "br": "Colunas Principais",
+      "en": "Key Columns",
+      "es": "Columnas Principales"
+    },
+    {
+      "id": 15,
+      "br": "Confiança",
+      "en": "Confidence",
+      "es": "Confianza"
+    },
+    {
+      "id": 16,
+      "br": "Escala de 0% a 100% — grau de certeza da descrição gerada por IA com base na documentação oficial Oracle (OEDMF/BICC Release 13/25A).",
+      "en": "Scale from 0% to 100% — degree of certainty of the AI-generated description based on official Oracle documentation (OEDMF/BICC Release 13/25A).",
+      "es": "Escala de 0% a 100% — grado de certeza de la descripcion generada por IA basada en la documentacion oficial de Oracle (OEDMF/BICC Release 13/25A)."
+    },
+    {
+      "id": 17,
+      "br": "- 🟢 81–100% — Coluna presente na documentação oficial Oracle; nome, tipo e descrição confirmados.",
+      "en": "- 🟢 81–100% — Column present in official Oracle documentation; name, type, and description confirmed.",
+      "es": "- 🟢 81–100% — Columna presente en la documentacion oficial de Oracle; nombre, tipo y descripcion confirmados."
+    },
+    {
+      "id": 18,
+      "br": "- 🟡 51–80% — Coluna inferida por naming convention ou padrão Oracle; tipo exato pode variar.",
+      "en": "- 🟡 51–80% — Column inferred by naming convention or Oracle standard; exact type may vary.",
+      "es": "- 🟡 51–80% — Columna inferida por convencion de nombres o estandar Oracle; el tipo exacto puede variar."
+    },
+    {
+      "id": 19,
+      "br": "- 🔴 0–50% — Existência ou tipo incertos; pode não existir no release atual; validar no ambiente.",
+      "en": "- 🔴 0–50% — Uncertain existence or type; may not exist in current release; validate in environment.",
+      "es": "- 🔴 0–50% — Existencia o tipo inciertos; puede no existir en el release actual; validar en el ambiente."
+    },
+    {
+      "id": 20,
+      "br": "Coluna",
+      "en": "Column",
+      "es": "Columna"
+    },
+    {
+      "id": 21,
+      "br": "Tipo",
+      "en": "Type",
+      "es": "Tipo"
+    },
+    {
+      "id": 22,
+      "br": "Nulo?",
+      "en": "Nullable?",
+      "es": "Nulo?"
+    },
+    {
+      "id": 23,
+      "br": "Categoria",
+      "en": "Category",
+      "es": "Categoria"
+    },
+    {
+      "id": 24,
+      "br": "Descrição",
+      "en": "Description",
+      "es": "Descripcion"
+    },
+    {
+      "id": 25,
+      "br": "Identificador único do tipo de documento",
+      "en": "Unique identifier for the document type",
+      "es": "Identificador único del tipo de documento"
+    },
+    {
+      "id": 26,
+      "br": "Classificação",
+      "en": "Classification",
+      "es": "Clasificacion"
+    },
+    {
+      "id": 27,
+      "br": "Grupo funcional: AUCTION, RFQ, RFI, BUYER_AUCTION",
+      "en": "Functional group: AUCTION, RFQ, RFI, BUYER_AUCTION",
+      "es": "Grupo funcional: AUCTION, RFQ, RFI, BUYER_AUCTION"
+    },
+    {
+      "id": 28,
+      "br": "Tipo de transação associado",
+      "en": "Associated transaction type",
+      "es": "Tipo de transacción asociado"
+    },
+    {
+      "id": 29,
+      "br": "Resultado esperado: STANDARD_PO, BLANKET, CONTRACT, NONE",
+      "en": "Expected result: STANDARD_PO, BLANKET, CONTRACT, NONE",
+      "es": "Resultado esperado: STANDARD_PO, BLANKET, CONTRACT, NONE"
+    },
+    {
+      "id": 30,
+      "br": "Direção do lance: FORWARD (preço sobe), REVERSE (preço cai)",
+      "en": "Bidding direction: FORWARD (price increases), REVERSE (price decreases)",
+      "es": "Dirección de la oferta: FORWARD (el precio sube), REVERSE (el precio baja)"
+    },
+    {
+      "id": 31,
+      "br": "Regras",
+      "en": "Rules",
+      "es": "Reglas"
+    },
+    {
+      "id": 32,
+      "br": "Visibilidade de preços: OPEN, SEALED, PARTIALLY_SEALED",
+      "en": "Price visibility: OPEN, SEALED, PARTIALLY_SEALED",
+      "es": "Visibilidad de precios: OPEN, SEALED, PARTIALLY_SEALED"
+    },
+    {
+      "id": 33,
+      "br": "Flag",
+      "en": "Flag",
+      "es": "Flag"
+    },
+    {
+      "id": 34,
+      "br": "Permite scoring/avaliação multi-critério (Y/N)",
+      "en": "Allows multi-criteria scoring/evaluation (Y/N)",
+      "es": "Permite la puntuación/evaluación multi-criterio (S/N)"
+    },
+    {
+      "id": 35,
+      "br": "Permite múltiplas rodadas de lances (Y/N)",
+      "en": "Allows multiple bidding rounds (Y/N)",
+      "es": "Permite múltiples rondas de ofertas (S/N)"
+    },
+    {
+      "id": 36,
+      "br": "Permite award direto (Y/N)",
+      "en": "Allows direct award (Y/N)",
+      "es": "Permite la adjudicación directa (S/N)"
+    },
+    {
+      "id": 37,
+      "br": "Critério de ranking de lances: PRICE_ONLY, MULTI_ATTRIBUTE_SCORING",
+      "en": "Bidding ranking criterion: PRICE_ONLY, MULTI_ATTRIBUTE_SCORING",
+      "es": "Criterio de clasificación de ofertas: PRICE_ONLY, MULTI_ATTRIBUTE_SCORING"
+    },
+    {
+      "id": 38,
+      "br": "Tipo de documento ativo (Y/N)",
+      "en": "Active document type (Y/N)",
+      "es": "Tipo de documento activo (S/N)"
+    },
+    {
+      "id": 39,
+      "br": "Identificação",
+      "en": "Identification",
+      "es": "Identificacion"
+    },
+    {
+      "id": 40,
+      "br": "Nome interno do tipo (não traduzível)",
+      "en": "Internal name of the type (non-translatable)",
+      "es": "Nombre interno del tipo (no traducible)"
+    },
+    {
+      "id": 41,
+      "br": "Auditoria",
+      "en": "Audit",
+      "es": "Auditoria"
+    },
+    {
+      "id": 42,
+      "br": "Usuário que criou o registro",
+      "en": "User who created the record",
+      "es": "Usuario que creo el registro"
+    },
+    {
+      "id": 43,
+      "br": "Data/hora de criação",
+      "en": "Creation date/time",
+      "es": "Fecha/hora de creacion"
+    },
+    {
+      "id": 44,
+      "br": "Último usuário que alterou",
+      "en": "Last user who modified",
+      "es": "Ultimo usuario que modifico"
+    },
+    {
+      "id": 45,
+      "br": "Data/hora da última alteração",
+      "en": "Last modification date/time",
+      "es": "Fecha/hora de la ultima modificacion"
+    },
+    {
+      "id": 46,
+      "br": "Login da última sessão",
+      "en": "Last session login",
+      "es": "Login de la ultima sesion"
+    },
+    {
+      "id": 47,
+      "br": "Relacionamentos",
+      "en": "Relationships",
+      "es": "Relaciones"
+    },
+    {
+      "id": 48,
+      "br": "Tabelas-pai (FK de entrada)",
+      "en": "Parent Tables (inbound FK)",
+      "es": "Tablas padre (FK de entrada)"
+    },
+    {
+      "id": 49,
+      "br": "Nenhuma tabela-pai direta — tabela de configuração raiz.",
+      "en": "No direct parent table — root configuration table.",
+      "es": "Ninguna tabla padre directa: tabla de configuración raíz."
+    },
+    {
+      "id": 50,
+      "br": "Tabelas-filha (FK de saída)",
+      "en": "Child Tables (outbound FK)",
+      "es": "Tablas hija (FK de salida)"
+    },
+    {
+      "id": 51,
+      "br": "traduções do tipo de documento",
+      "en": "document type translations",
+      "es": "traducciones del tipo de documento"
+    },
+    {
+      "id": 52,
+      "br": "view MLS",
+      "en": "MLS view",
+      "es": "vista MLS"
+    },
+    {
+      "id": 53,
+      "br": "negociações que utilizam este tipo",
+      "en": "negotiations that use this type",
+      "es": "negociaciones que utilizan este tipo"
+    },
+    {
+      "id": 54,
+      "br": "Uso Típico",
+      "en": "Typical Usage",
+      "es": "Uso Tipico"
+    },
+    {
+      "id": 55,
+      "br": "Tipos de documento ativos",
+      "en": "Types of active documents",
+      "es": "Tipos de documento activos"
+    },
+    {
+      "id": 56,
+      "br": "Tipos com avaliação multi-critério",
+      "en": "Types with multi-criteria valuation",
+      "es": "Tipos con valoración multi-criterio"
+    },
+    {
+      "id": 57,
+      "br": "Filtros comuns",
+      "en": "Common Filters",
+      "es": "Filtros comunes"
+    },
+    {
+      "id": 58,
+      "br": "Tipos ativos",
+      "en": "Active types",
+      "es": "Tipos activos"
+    },
+    {
+      "id": 59,
+      "br": "Solicitações de cotação",
+      "en": "Quotation requests",
+      "es": "Solicitudes de cotización"
+    },
+    {
+      "id": 60,
+      "br": "Tipos que geram Blanket Purchase Agreement",
+      "en": "Types that generate Blanket Purchase Agreement",
+      "es": "Tipos que generan Acuerdo de Compra por Volumen"
+    },
+    {
+      "id": 61,
+      "br": "Leilões reversos (preço decresce)",
+      "en": "Reverse auctions (price decreases)",
+      "es": "Subastas inversas (precio disminuye)"
+    },
+    {
+      "id": 62,
+      "br": "Observações",
+      "en": "Notes",
+      "es": "Observaciones"
+    },
+    {
+      "id": 63,
+      "br": "Esta tabela segue o padrão Oracle MLS: dados base (não traduzíveis) ficam na _B; nomes e descrições traduzidos ficam na _TL.",
+      "en": "This table follows the Oracle MLS standard: base data (non-translatable) is in the _B; names and descriptions are in the _TL.",
+      "es": "Esta tabla sigue el estándar Oracle MLS: los datos base (no traducibles) están en _B; los nombres y descripciones traducidos están en _TL."
+    },
+    {
+      "id": 64,
+      "br": "Os tipos padrão (seed) incluem: RFQ, RFI, Reverse Auction, Buyer Auction, Blanket Agreement Negotiation.",
+      "en": "The standard types (seed) include: RFQ, RFI, Reverse Auction, Buyer Auction, Blanket Agreement Negotiation.",
+      "es": "Los tipos estándar (seed) incluyen: RFQ, RFI, Subasta inversa, Subasta del comprador, Negociación de Acuerdo por Volumen."
+    },
+    {
+      "id": 65,
+      "br": "O campo OUTCOME determina que tipo de documento de compra é gerado após o award da negociação.",
+      "en": "The OUTCOME field determines what type of purchase document is generated after the negotiation award.",
+      "es": "El campo OUTCOME determina qué tipo de documento de compra se genera después de la adjudicación de la negociación."
+    },
+    {
+      "id": 66,
+      "br": "DIRECTION = 'REVERSE' é o padrão para compras (fornecedores competem por preço mais baixo); FORWARD é usado em vendas/leilões.",
+      "en": "DIRECTION = 'REVERSE' is the standard for purchases (suppliers compete for the lowest price); FORWARD is used for sales/auctions.",
+      "es": "DIRECTION = 'REVERSE' es el estándar para compras (los proveedores compiten por el precio más bajo); FORWARD se utiliza en ventas/subastas."
+    },
+    {
+      "id": 67,
+      "br": "Tipos com SCORING_FLAG = 'Y' e BID_RANKING = 'MULTI_ATTRIBUTE_SCORING' permitem avaliação ponderada de preço + atributos técnicos.",
+      "en": "Types with SCORING_FLAG = 'Y' and BID_RANKING = 'MULTI_ATTRIBUTE_SCORING' allow for weighted price + technical attribute evaluation.",
+      "es": "Los tipos con SCORING_FLAG = 'Y' y BID_RANKING = 'MULTI_ATTRIBUTE_SCORING' permiten la valoración ponderada del precio + atributos técnicos."
+    },
+    {
+      "id": 68,
+      "br": "A flag ALLOW_MULTIPLE_ROUNDS_FLAG é típica de negociações RFI → RFQ → Auction (processo em etapas).",
+      "en": "The ALLOW_MULTIPLE_ROUNDS_FLAG flag is typical of RFI → RFQ → Auction negotiations (step-by-step process).",
+      "es": "La bandera ALLOW_MULTIPLE_ROUNDS_FLAG es típica de negociaciones RFI → RFQ → Subasta (proceso por etapas)."
+    },
+    {
+      "id": 69,
+      "br": "Referências",
+      "en": "References",
+      "es": "Referencias"
+    },
+    {
+      "id": 70,
+      "br": "[Oracle Docs — PON_AUC_DOCTYPES_B](https://docs.oracle.com/en/cloud/saas/procurement/25a/oedmf/ponaucdoctypesb.html)",
+      "en": "[Oracle Docs — PON_AUC_DOCTYPES_B](https://docs.oracle.com/en/cloud/saas/procurement/25a/oedmf/ponaucdoctypesb.html)",
+      "es": "[Oracle Docs — PON_AUC_DOCTYPES_B](https://docs.oracle.com/en/cloud/saas/procurement/25a/oedmf/ponaucdoctypesb.html)"
+    },
+    {
+      "id": 71,
+      "br": "po-module-data-dictionary — Dossiê do módulo PO/Procurement",
+      "en": "po-module-data-dictionary — PO/Procurement module dossier",
+      "es": "po-module-data-dictionary — Dossier del modulo PO/Procurement"
+    }
+  ]
+}

@@ -1,0 +1,477 @@
+{
+  "meta": {
+    "pvo_name": "PositionRefPVO",
+    "full_path": "HcmTopModelAnalyticsGlobalAM.PositionAM.PositionRefPVO",
+    "module_path": "HcmTopModelAnalyticsGlobalAM.PositionAM",
+    "module_code": "PO",
+    "type": "pvo",
+    "description": "Extrai referências de posições organizacionais, vinculando cargos a nomes e traduções. Suporta análise de estrutura hierárquica e identificação de posições na organização."
+  },
+  "stats": {
+    "total_attributes": 32,
+    "tables_count": 2,
+    "bicc_enabled": 10,
+    "bicc_pct": 31,
+    "pk_count": 3
+  },
+  "tables": [
+    "HR_ALL_POSITIONS_F",
+    "HR_ALL_POSITIONS_F_TL"
+  ],
+  "attributes": [
+    {
+      "name": "EffectiveEndDate",
+      "table": "HR_ALL_POSITIONS_F",
+      "column": "EFFECTIVE_END_DATE",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    },
+    {
+      "name": "EffectiveStartDate",
+      "table": "HR_ALL_POSITIONS_F",
+      "column": "EFFECTIVE_START_DATE",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    },
+    {
+      "name": "PositionId",
+      "table": "HR_ALL_POSITIONS_F",
+      "column": "POSITION_ID",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    },
+    {
+      "name": "PositionPEOActionOccurrenceId",
+      "table": "HR_ALL_POSITIONS_F",
+      "column": "ACTION_OCCURRENCE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PositionPEOActiveStatus",
+      "table": "HR_ALL_POSITIONS_F",
+      "column": "ACTIVE_STATUS",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PositionPEOAttributeCategory",
+      "table": "HR_ALL_POSITIONS_F",
+      "column": "ATTRIBUTE_CATEGORY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PositionPEOBargainingUnitCd",
+      "table": "HR_ALL_POSITIONS_F",
+      "column": "BARGAINING_UNIT_CD",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PositionPEOBusinessGroupId",
+      "table": "HR_ALL_POSITIONS_F",
+      "column": "BUSINESS_GROUP_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PositionPEOBusinessUnitId",
+      "table": "HR_ALL_POSITIONS_F",
+      "column": "BUSINESS_UNIT_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PositionPEOCalculateFte",
+      "table": "HR_ALL_POSITIONS_F",
+      "column": "CALCULATE_FTE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PositionPEOCreatedBy",
+      "table": "HR_ALL_POSITIONS_F",
+      "column": "CREATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PositionPEOCreationDate",
+      "table": "HR_ALL_POSITIONS_F",
+      "column": "CREATION_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PositionPEOJobId",
+      "table": "HR_ALL_POSITIONS_F",
+      "column": "JOB_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PositionPEOLastUpdateDate",
+      "table": "HR_ALL_POSITIONS_F",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": true
+    },
+    {
+      "name": "PositionPEOLastUpdateLogin",
+      "table": "HR_ALL_POSITIONS_F",
+      "column": "LAST_UPDATE_LOGIN",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PositionPEOLastUpdatedBy",
+      "table": "HR_ALL_POSITIONS_F",
+      "column": "LAST_UPDATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PositionPEOLocationId",
+      "table": "HR_ALL_POSITIONS_F",
+      "column": "LOCATION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PositionPEOObjectVersionNumber",
+      "table": "HR_ALL_POSITIONS_F",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PositionPEOOrganizationId",
+      "table": "HR_ALL_POSITIONS_F",
+      "column": "ORGANIZATION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PositionPEOPositionCode",
+      "table": "HR_ALL_POSITIONS_F",
+      "column": "POSITION_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PositionTranslationPEOCreatedBy",
+      "table": "HR_ALL_POSITIONS_F_TL",
+      "column": "CREATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PositionTranslationPEOCreationDate",
+      "table": "HR_ALL_POSITIONS_F_TL",
+      "column": "CREATION_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PositionTranslationPEOEffectiveEndDate",
+      "table": "HR_ALL_POSITIONS_F_TL",
+      "column": "EFFECTIVE_END_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PositionTranslationPEOEffectiveStartDate",
+      "table": "HR_ALL_POSITIONS_F_TL",
+      "column": "EFFECTIVE_START_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PositionTranslationPEOLanguage",
+      "table": "HR_ALL_POSITIONS_F_TL",
+      "column": "LANGUAGE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PositionTranslationPEOLastUpdateDate",
+      "table": "HR_ALL_POSITIONS_F_TL",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": true
+    },
+    {
+      "name": "PositionTranslationPEOLastUpdateLogin",
+      "table": "HR_ALL_POSITIONS_F_TL",
+      "column": "LAST_UPDATE_LOGIN",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PositionTranslationPEOLastUpdatedBy",
+      "table": "HR_ALL_POSITIONS_F_TL",
+      "column": "LAST_UPDATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PositionTranslationPEOName",
+      "table": "HR_ALL_POSITIONS_F_TL",
+      "column": "NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PositionTranslationPEOObjectVersionNumber",
+      "table": "HR_ALL_POSITIONS_F_TL",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PositionTranslationPEOPositionId",
+      "table": "HR_ALL_POSITIONS_F_TL",
+      "column": "POSITION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PositionTranslationPEOSourceLang",
+      "table": "HR_ALL_POSITIONS_F_TL",
+      "column": "SOURCE_LANG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    }
+  ],
+  "by_table": {
+    "HR_ALL_POSITIONS_F": [
+      {
+        "attribute": "EffectiveEndDate",
+        "column": "EFFECTIVE_END_DATE",
+        "bicc": true,
+        "pk": true
+      },
+      {
+        "attribute": "EffectiveStartDate",
+        "column": "EFFECTIVE_START_DATE",
+        "bicc": true,
+        "pk": true
+      },
+      {
+        "attribute": "PositionId",
+        "column": "POSITION_ID",
+        "bicc": true,
+        "pk": true
+      },
+      {
+        "attribute": "PositionPEOActionOccurrenceId",
+        "column": "ACTION_OCCURRENCE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PositionPEOActiveStatus",
+        "column": "ACTIVE_STATUS",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PositionPEOAttributeCategory",
+        "column": "ATTRIBUTE_CATEGORY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PositionPEOBargainingUnitCd",
+        "column": "BARGAINING_UNIT_CD",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PositionPEOBusinessGroupId",
+        "column": "BUSINESS_GROUP_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PositionPEOBusinessUnitId",
+        "column": "BUSINESS_UNIT_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PositionPEOCalculateFte",
+        "column": "CALCULATE_FTE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PositionPEOCreatedBy",
+        "column": "CREATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PositionPEOCreationDate",
+        "column": "CREATION_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PositionPEOJobId",
+        "column": "JOB_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PositionPEOLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PositionPEOLastUpdateLogin",
+        "column": "LAST_UPDATE_LOGIN",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PositionPEOLastUpdatedBy",
+        "column": "LAST_UPDATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PositionPEOLocationId",
+        "column": "LOCATION_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PositionPEOObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PositionPEOOrganizationId",
+        "column": "ORGANIZATION_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PositionPEOPositionCode",
+        "column": "POSITION_CODE",
+        "bicc": true,
+        "pk": false
+      }
+    ],
+    "HR_ALL_POSITIONS_F_TL": [
+      {
+        "attribute": "PositionTranslationPEOCreatedBy",
+        "column": "CREATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PositionTranslationPEOCreationDate",
+        "column": "CREATION_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PositionTranslationPEOEffectiveEndDate",
+        "column": "EFFECTIVE_END_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PositionTranslationPEOEffectiveStartDate",
+        "column": "EFFECTIVE_START_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PositionTranslationPEOLanguage",
+        "column": "LANGUAGE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PositionTranslationPEOLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PositionTranslationPEOLastUpdateLogin",
+        "column": "LAST_UPDATE_LOGIN",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PositionTranslationPEOLastUpdatedBy",
+        "column": "LAST_UPDATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PositionTranslationPEOName",
+        "column": "NAME",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PositionTranslationPEOObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PositionTranslationPEOPositionId",
+        "column": "POSITION_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PositionTranslationPEOSourceLang",
+        "column": "SOURCE_LANG",
+        "bicc": false,
+        "pk": false
+      }
+    ]
+  }
+}

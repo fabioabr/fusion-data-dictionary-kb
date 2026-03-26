@@ -1,0 +1,337 @@
+{
+  "source": "ap_holds_all.md",
+  "source_hash": "1514f9eb7644b1865b5fb4775055537f",
+  "translated_at": "2026-03-25",
+  "items": [
+    {
+      "id": 1,
+      "br": "Visão Geral",
+      "en": "Overview",
+      "es": "Descripción General"
+    },
+    {
+      "id": 2,
+      "br": "Tabela de retenções (holds) aplicadas a faturas de contas a pagar. Cada registro representa um bloqueio que impede a fatura de ser selecionada para pagamento. Os holds podem ser manuais (aplicados por usuários) ou automáticos (aplicados pelo sistema durante validação — ex.: discrepância de matching com PO, variação de preço). Particionada por ORG_ID.",
+      "en": "Table of holds applied to accounts payable invoices. Each record represents a block that prevents the invoice from being selected for payment. Holds can be manual (applied by users) or automatic (applied by the system during validation — e.g., PO matching discrepancy, price variance). Partitioned by ORG_ID.",
+      "es": "Tabla de retenciones (holds) aplicadas a facturas de cuentas por pagar. Cada registro representa un bloqueo que impide que la factura sea seleccionada para pago. Los holds pueden ser manuales (aplicados por usuarios) o automáticos (aplicados por el sistema durante la validación — ej.: discrepancia de matching con PO, variación de precio). Particionada por ORG_ID."
+    },
+    {
+      "id": 3,
+      "br": "Propósito de Negócio",
+      "en": "Business Purpose",
+      "es": "Propósito de Negocio"
+    },
+    {
+      "id": 4,
+      "br": "Os holds são o principal mecanismo de controle de qualidade e compliance na saída de pagamentos. No Banco Patria, garantem que faturas com discrepâncias de preço, quantidade ou documentação não sejam pagas até resolução. São fundamentais para auditoria interna, controle de perdas e conformidade com políticas de aprovação.",
+      "en": "Holds are the primary quality control and compliance mechanism for payment disbursement. At Banco Patria, they ensure that invoices with price, quantity, or documentation discrepancies are not paid until resolution. They are fundamental for internal audit, loss control, and compliance with approval policies.",
+      "es": "Los holds son el principal mecanismo de control de calidad y compliance en la salida de pagos. En el Banco Patria, garantizan que las facturas con discrepancias de precio, cantidad o documentación no sean pagadas hasta su resolución. Son fundamentales para auditoría interna, control de pérdidas y conformidad con políticas de aprobación."
+    },
+    {
+      "id": 5,
+      "br": "Colunas Principais",
+      "en": "Key Columns",
+      "es": "Columnas Principales"
+    },
+    {
+      "id": 6,
+      "br": "Confiança",
+      "en": "Confidence",
+      "es": "Confianza"
+    },
+    {
+      "id": 7,
+      "br": "Escala de 0% a 100% — grau de certeza da descrição gerada por IA com base na documentação oficial Oracle (OEDMF/BICC Release 13/25A).",
+      "en": "Scale from 0% to 100% — degree of certainty of the AI-generated description based on official Oracle documentation (OEDMF/BICC Release 13/25A).",
+      "es": "Escala de 0% a 100% — grado de certeza de la descripción generada por IA con base en la documentación oficial Oracle (OEDMF/BICC Release 13/25A)."
+    },
+    {
+      "id": 8,
+      "br": "- 🟢 81–100% — Coluna presente na documentação oficial Oracle; nome, tipo e descrição confirmados.",
+      "en": "- 🟢 81–100% — Column present in official Oracle documentation; name, type, and description confirmed.",
+      "es": "- 🟢 81–100% — Columna presente en la documentación oficial Oracle; nombre, tipo y descripción confirmados."
+    },
+    {
+      "id": 9,
+      "br": "- 🟡 51–80% — Coluna inferida por naming convention ou padrão Oracle; tipo exato pode variar.",
+      "en": "- 🟡 51–80% — Column inferred by naming convention or Oracle standard; exact type may vary.",
+      "es": "- 🟡 51–80% — Columna inferida por naming convention o estándar Oracle; el tipo exacto puede variar."
+    },
+    {
+      "id": 10,
+      "br": "- 🔴 0–50% — Existência ou tipo incertos; pode não existir no release atual; validar no ambiente.",
+      "en": "- 🔴 0–50% — Uncertain existence or type; may not exist in the current release; validate in the environment.",
+      "es": "- 🔴 0–50% — Existencia o tipo inciertos; puede no existir en el release actual; validar en el ambiente."
+    },
+    {
+      "id": 11,
+      "br": "Coluna",
+      "en": "Column",
+      "es": "Columna"
+    },
+    {
+      "id": 12,
+      "br": "Tipo",
+      "en": "Type",
+      "es": "Tipo"
+    },
+    {
+      "id": 13,
+      "br": "Nulo?",
+      "en": "Nullable?",
+      "es": "¿Nulo?"
+    },
+    {
+      "id": 14,
+      "br": "Categoria",
+      "en": "Category",
+      "es": "Categoría"
+    },
+    {
+      "id": 15,
+      "br": "Descrição",
+      "en": "Description",
+      "es": "Descripción"
+    },
+    {
+      "id": 16,
+      "br": "Chave primária. Identificador único do hold.",
+      "en": "Primary key. Unique identifier of the hold.",
+      "es": "Clave primaria. Identificador único del hold."
+    },
+    {
+      "id": 17,
+      "br": "Identificador da fatura bloqueada.",
+      "en": "Identifier of the blocked invoice.",
+      "es": "Identificador de la factura bloqueada."
+    },
+    {
+      "id": 18,
+      "br": "Referência à linha de PO para holds de matching.",
+      "en": "Reference to the PO line for matching holds.",
+      "es": "Referencia a la línea de PO para holds de matching."
+    },
+    {
+      "id": 19,
+      "br": "Negócio",
+      "en": "Business",
+      "es": "Negocio"
+    },
+    {
+      "id": 20,
+      "br": "Código do tipo de hold (PRICE, QTY_REC, QTY_ORD, etc.).",
+      "en": "Hold type code (PRICE, QTY_REC, QTY_ORD, etc.).",
+      "es": "Código del tipo de hold (PRICE, QTY_REC, QTY_ORD, etc.)."
+    },
+    {
+      "id": 21,
+      "br": "Classificação",
+      "en": "Classification",
+      "es": "Clasificación"
+    },
+    {
+      "id": 22,
+      "br": "Classificação do hold (MATCHING, VARIANCE, MANUAL, etc.).",
+      "en": "Hold classification (MATCHING, VARIANCE, MANUAL, etc.).",
+      "es": "Clasificación del hold (MATCHING, VARIANCE, MANUAL, etc.)."
+    },
+    {
+      "id": 23,
+      "br": "Data em que o hold foi aplicado.",
+      "en": "Date when the hold was applied.",
+      "es": "Fecha en que se aplicó el hold."
+    },
+    {
+      "id": 24,
+      "br": "Motivo textual do hold.",
+      "en": "Text reason for the hold.",
+      "es": "Motivo textual del hold."
+    },
+    {
+      "id": 25,
+      "br": "Código de liberação do hold.",
+      "en": "Hold release code.",
+      "es": "Código de liberación del hold."
+    },
+    {
+      "id": 26,
+      "br": "Motivo da liberação do hold.",
+      "en": "Hold release reason.",
+      "es": "Motivo de la liberación del hold."
+    },
+    {
+      "id": 27,
+      "br": "Controle",
+      "en": "Control",
+      "es": "Control"
+    },
+    {
+      "id": 28,
+      "br": "Status: S (aplicado/ativo), R (released/liberado).",
+      "en": "Status: S (applied/active), R (released).",
+      "es": "Estado: S (aplicado/activo), R (released/liberado)."
+    },
+    {
+      "id": 29,
+      "br": "ID do usuário que aplicou o hold (manual).",
+      "en": "ID of the user who applied the hold (manual).",
+      "es": "ID del usuario que aplicó el hold (manual)."
+    },
+    {
+      "id": 30,
+      "br": "ID do usuário que liberou o hold.",
+      "en": "ID of the user who released the hold.",
+      "es": "ID del usuario que liberó el hold."
+    },
+    {
+      "id": 31,
+      "br": "Data de liberação do hold.",
+      "en": "Hold release date.",
+      "es": "Fecha de liberación del hold."
+    },
+    {
+      "id": 32,
+      "br": "Multiorg",
+      "en": "Multiorg",
+      "es": "Multiorg"
+    },
+    {
+      "id": 33,
+      "br": "Identificador da organização (business unit).",
+      "en": "Organization identifier (business unit).",
+      "es": "Identificador de la organización (business unit)."
+    },
+    {
+      "id": 34,
+      "br": "Usuário que criou o registro.",
+      "en": "User who created the record.",
+      "es": "Usuario que creó el registro."
+    },
+    {
+      "id": 35,
+      "br": "Data de criação do registro.",
+      "en": "Record creation date.",
+      "es": "Fecha de creación del registro."
+    },
+    {
+      "id": 36,
+      "br": "Usuário da última atualização.",
+      "en": "User of the last update.",
+      "es": "Usuario de la última actualización."
+    },
+    {
+      "id": 37,
+      "br": "Data da última atualização.",
+      "en": "Last update date.",
+      "es": "Fecha de la última actualización."
+    },
+    {
+      "id": 38,
+      "br": "Relacionamentos",
+      "en": "Relationships",
+      "es": "Relaciones"
+    },
+    {
+      "id": 39,
+      "br": "Tabelas-pai",
+      "en": "Parent Tables",
+      "es": "Tablas Padre"
+    },
+    {
+      "id": 40,
+      "br": "— Fatura à qual o hold está associado (via `INVOICE_ID`).",
+      "en": "— Invoice to which the hold is associated (via `INVOICE_ID`).",
+      "es": "— Factura a la cual el hold está asociado (vía `INVOICE_ID`)."
+    },
+    {
+      "id": 41,
+      "br": "— Definição do tipo de hold (via `HOLD_LOOKUP_CODE`).",
+      "en": "— Hold type definition (via `HOLD_LOOKUP_CODE`).",
+      "es": "— Definición del tipo de hold (vía `HOLD_LOOKUP_CODE`)."
+    },
+    {
+      "id": 42,
+      "br": "— Linha de PO para holds de matching (via `LINE_LOCATION_ID`).",
+      "en": "— PO line for matching holds (via `LINE_LOCATION_ID`).",
+      "es": "— Línea de PO para holds de matching (vía `LINE_LOCATION_ID`)."
+    },
+    {
+      "id": 43,
+      "br": "— Organização/business unit (via `ORG_ID`).",
+      "en": "— Organization/business unit (via `ORG_ID`).",
+      "es": "— Organización/business unit (vía `ORG_ID`)."
+    },
+    {
+      "id": 44,
+      "br": "Tabelas-filha",
+      "en": "Child Tables",
+      "es": "Tablas Hija"
+    },
+    {
+      "id": 45,
+      "br": "Nenhuma tabela-filha conhecida.",
+      "en": "No known child tables.",
+      "es": "No se conocen tablas hija."
+    },
+    {
+      "id": 46,
+      "br": "Uso Típico",
+      "en": "Typical Usage",
+      "es": "Uso Típico"
+    },
+    {
+      "id": 47,
+      "br": "Observações",
+      "en": "Notes",
+      "es": "Observaciones"
+    },
+    {
+      "id": 48,
+      "br": "Holds com STATUS_FLAG = 'S' são ativos e impedem o pagamento da fatura.",
+      "en": "Holds with STATUS_FLAG = 'S' are active and prevent invoice payment.",
+      "es": "Los holds con STATUS_FLAG = 'S' están activos e impiden el pago de la factura."
+    },
+    {
+      "id": 49,
+      "br": "Holds liberados (STATUS_FLAG = 'R') permanecem na tabela para auditoria com data e motivo de liberação.",
+      "en": "Released holds (STATUS_FLAG = 'R') remain in the table for audit with release date and reason.",
+      "es": "Los holds liberados (STATUS_FLAG = 'R') permanecen en la tabla para auditoría con fecha y motivo de liberación."
+    },
+    {
+      "id": 50,
+      "br": "Holds automáticos de matching são criados pelo processo de validação de faturas e podem ser liberados via tolerâncias configuradas.",
+      "en": "Automatic matching holds are created by the invoice validation process and can be released via configured tolerances.",
+      "es": "Los holds automáticos de matching son creados por el proceso de validación de facturas y pueden ser liberados vía tolerancias configuradas."
+    },
+    {
+      "id": 51,
+      "br": "Uma mesma fatura pode ter múltiplos holds simultâneos — todos devem ser liberados para que o pagamento seja possível.",
+      "en": "A single invoice can have multiple simultaneous holds — all must be released for payment to be possible.",
+      "es": "Una misma factura puede tener múltiples holds simultáneos — todos deben ser liberados para que el pago sea posible."
+    },
+    {
+      "id": 52,
+      "br": "Referências",
+      "en": "References",
+      "es": "Referencias"
+    },
+    {
+      "id": 53,
+      "br": "Oracle Fusion Cloud Financials — Accounts Payable Tables (OEDMF Release 13).",
+      "en": "Oracle Fusion Cloud Financials — Accounts Payable Tables (OEDMF Release 13).",
+      "es": "Oracle Fusion Cloud Financials — Accounts Payable Tables (OEDMF Release 13)."
+    },
+    {
+      "id": 54,
+      "br": "Oracle BICC — AP Holds Subject Area Documentation.",
+      "en": "Oracle BICC — AP Holds Subject Area Documentation.",
+      "es": "Oracle BICC — AP Holds Subject Area Documentation."
+    },
+    {
+      "id": 55,
+      "br": "Oracle Fusion Cloud ERP Schema Reference (Release 25A).",
+      "en": "Oracle Fusion Cloud ERP Schema Reference (Release 25A).",
+      "es": "Oracle Fusion Cloud ERP Schema Reference (Release 25A)."
+    }
+  ]
+}

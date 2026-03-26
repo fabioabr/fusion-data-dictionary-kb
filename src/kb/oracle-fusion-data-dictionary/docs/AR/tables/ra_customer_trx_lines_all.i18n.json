@@ -1,0 +1,697 @@
+{
+  "source": "ra_customer_trx_lines_all.md",
+  "source_hash": "2888d5c4630d4cf662f1e578822e6e67",
+  "translated_at": "2026-03-25",
+  "items": [
+    {
+      "id": 1,
+      "br": "Visão Geral",
+      "en": "Overview",
+      "es": "Visión general"
+    },
+    {
+      "id": 2,
+      "br": "Armazena as linhas de detalhe das transações de clientes no módulo Accounts Receivable, incluindo valores, itens, quantidades e informações de receita. Cada linha pertence a um cabeçalho em ra_customer_trx_all. As linhas podem ser do tipo LINE (item/serviço), TAX (imposto) ou FREIGHT (frete), formando a estrutura granular de cada transação.",
+      "en": "Stores the detailed lines of customer transactions in the Accounts Receivable module, including values, items, quantities, and revenue information. Each line belongs to a header in ra_customer_trx_all. The lines can be of the type LINE (item/service), TAX (tax), or FREIGHT (freight), forming the granular structure of each transaction.",
+      "es": "Almacena las líneas detalladas de las transacciones de clientes en el módulo Accounts Receivable, incluyendo valores, artículos, cantidades e información de ingresos. Cada línea pertenece a un encabezado en ra_customer_trx_all. Las líneas pueden ser del tipo LINE (artículo/servicio), TAX (impuesto) o FREIGHT (flete), formando la estructura granular de cada transacción."
+    },
+    {
+      "id": 3,
+      "br": "É a tabela de detalhamento transacional — toda análise de mix de produtos, receita por item ou reconciliação de valores passa por ela.",
+      "en": "This is the transactional detailing table — all product mix analysis, revenue by item, or value reconciliation passes through it.",
+      "es": "Es la tabla de detalle transaccional: todo análisis de mezcla de productos, ingresos por artículo o conciliación de valores pasa por ella."
+    },
+    {
+      "id": 4,
+      "br": "Sufixo _ALL",
+      "en": "_ALL suffix",
+      "es": "Sufijo _ALL"
+    },
+    {
+      "id": 5,
+      "br": "O sufixo _ALL indica que a tabela armazena dados de todas as business units (multi-org). O filtro por ORG_ID é necessário para consultas por organização específica.",
+      "en": "The _ALL suffix indicates that the table stores data for all business units (multi-org). Filtering by ORG_ID is necessary for queries by specific organization.",
+      "es": "El sufijo _ALL indica que la tabla almacena datos de todas las business units (multi-org). Se requiere el filtro por ORG_ID para consultas específicas de organización."
+    },
+    {
+      "id": 6,
+      "br": "Propósito de Negócio",
+      "en": "Business Purpose",
+      "es": "Propósito de negocio"
+    },
+    {
+      "id": 7,
+      "br": "Esta tabela é utilizada nos seguintes processos:",
+      "en": "This table is used in the following processes:",
+      "es": "Esta tabla se utiliza en los siguientes procesos:"
+    },
+    {
+      "id": 8,
+      "br": "Cada item/serviço faturado é registrado como uma linha individual com quantidade, preço unitário e valor estendido.",
+      "en": "Each invoiced item/service is recorded as an individual line with quantity, unit price, and extended value.",
+      "es": "Cada artículo/servicio facturado se registra como una línea individual con cantidad, precio unitario y valor extendido."
+    },
+    {
+      "id": 9,
+      "br": "Campos como `REVENUE_AMOUNT`, `RULE_START_DATE` e `RULE_END_DATE` suportam reconhecimento de receita ao longo do tempo (revenue scheduling).",
+      "en": "Fields such as `REVENUE_AMOUNT`, `RULE_START_DATE`, and `RULE_END_DATE` support revenue recognition over time (revenue scheduling).",
+      "es": "Campos como `REVENUE_AMOUNT`, `RULE_START_DATE` y `RULE_END_DATE` soportan el reconocimiento de ingresos a lo largo del tiempo (programación de ingresos)."
+    },
+    {
+      "id": 10,
+      "br": "Associação de linhas a `INVENTORY_ITEM_ID` permite análises por produto/serviço.",
+      "en": "Association of lines to `INVENTORY_ITEM_ID` allows for analysis by product/service.",
+      "es": "La asociación de líneas a `INVENTORY_ITEM_ID` permite análisis por producto/servicio."
+    },
+    {
+      "id": 11,
+      "br": "Linhas do tipo TAX vinculam-se às linhas de item para detalhar impostos aplicados.",
+      "en": "TAX type lines link to item lines to detail taxes applied.",
+      "es": "Las líneas del tipo TAX se vinculan a las líneas de artículo para detallar los impuestos aplicados."
+    },
+    {
+      "id": 12,
+      "br": "Linhas do tipo FREIGHT registram custos de transporte associados à transação.",
+      "en": "FREIGHT type lines record transportation costs associated with the transaction.",
+      "es": "Las líneas del tipo FREIGHT registran los costos de transporte asociados a la transacción."
+    },
+    {
+      "id": 13,
+      "br": "Campos `SALES_ORDER` e `SALES_ORDER_LINE` conectam faturamento ao Order Management.",
+      "en": "FIELDS `SALES_ORDER` and `SALES_ORDER_LINE` connect invoicing to Order Management.",
+      "es": "Los campos `SALES_ORDER` y `SALES_ORDER_LINE` conectan la facturación con la gestión de pedidos."
+    },
+    {
+      "id": 14,
+      "br": "Campos `INTERFACE_LINE_ATTRIBUTE1–15` transportam dados da importação via AutoInvoice.",
+      "en": "FIELDS `INTERFACE_LINE_ATTRIBUTE1–15` transport data from import via AutoInvoice.",
+      "es": "Los campos `INTERFACE_LINE_ATTRIBUTE1–15` transportan datos de importación a través de AutoInvoice."
+    },
+    {
+      "id": 15,
+      "br": "Colunas Principais",
+      "en": "Key Columns",
+      "es": "Columnas principales"
+    },
+    {
+      "id": 16,
+      "br": "Confiança",
+      "en": "Confidence",
+      "es": "Confianza"
+    },
+    {
+      "id": 17,
+      "br": "Escala de 0% a 100% — grau de certeza da descrição gerada por IA com base na documentação oficial Oracle (OEDMF/BICC Release 13/25A).",
+      "en": "Scale of 0% to 100% — degree of certainty of the description generated by AI based on Oracle official documentation (OEDMF/BICC Release 13/25A).",
+      "es": "Escala del 0% al 100% — grado de certeza de la descripción generada por IA, basado en la documentación oficial de Oracle (OEDMF/BICC Release 13/25A)."
+    },
+    {
+      "id": 18,
+      "br": "- 🟢 81–100% — Coluna presente na documentação oficial Oracle; nome, tipo e descrição confirmados.",
+      "en": "- 🟢 81–100% — Column present in Oracle official documentation; name, type, and description confirmed.",
+      "es": "- 🟢 81–100% — Columna presente en la documentación oficial de Oracle; nombre, tipo y descripción confirmados."
+    },
+    {
+      "id": 19,
+      "br": "- 🟡 51–80% — Coluna inferida por naming convention ou padrão Oracle; tipo exato pode variar.",
+      "en": "- 🟡 51–80% — Column inferred by naming convention or Oracle standard; exact type may vary.",
+      "es": "- 🟡 51–80% — Columna inferida por convención de nomenclatura o estándar de Oracle; el tipo exacto puede variar."
+    },
+    {
+      "id": 20,
+      "br": "- 🔴 0–50% — Existência ou tipo incertos; pode não existir no release atual; validar no ambiente.",
+      "en": "- 🔴 0–50% — Existence or type uncertain; may not exist in the current release; validate in the environment.",
+      "es": "- 🔴 0–50% — Existencia o tipo inciertos; puede no existir en la versión actual; validar en el entorno."
+    },
+    {
+      "id": 21,
+      "br": "Coluna",
+      "en": "Column",
+      "es": "Columna"
+    },
+    {
+      "id": 22,
+      "br": "Tipo",
+      "en": "Type",
+      "es": "Tipo"
+    },
+    {
+      "id": 23,
+      "br": "Nulo?",
+      "en": "Null?",
+      "es": "Nulo?"
+    },
+    {
+      "id": 24,
+      "br": "Categoria",
+      "en": "Category",
+      "es": "Categoría"
+    },
+    {
+      "id": 25,
+      "br": "Descrição",
+      "en": "Description",
+      "es": "Descripción"
+    },
+    {
+      "id": 26,
+      "br": "Identificador único da linha de transação",
+      "en": "Unique transaction line identifier",
+      "es": "Identificador único de la línea de transacción"
+    },
+    {
+      "id": 27,
+      "br": "Referência ao cabeçalho da transação",
+      "en": "Reference to the transaction header",
+      "es": "Referencia al encabezado de la transacción"
+    },
+    {
+      "id": 28,
+      "br": "Identificação",
+      "en": "Identification",
+      "es": "Identificación"
+    },
+    {
+      "id": 29,
+      "br": "Número sequencial da linha dentro da transação",
+      "en": "Sequential number of the line within the transaction",
+      "es": "Número secuencial de la línea dentro de la transacción"
+    },
+    {
+      "id": 30,
+      "br": "Classificação",
+      "en": "Classification",
+      "es": "Clasificación"
+    },
+    {
+      "id": 31,
+      "br": "Tipo da linha: LINE, TAX, FREIGHT, CHARGES",
+      "en": "Line type: LINE, TAX, FREIGHT, CHARGES",
+      "es": "Tipo de línea: LINE, TAX, FREIGHT, CHARGES"
+    },
+    {
+      "id": 32,
+      "br": "Código do motivo (credit memos)",
+      "en": "Reason code (for credit memos)",
+      "es": "Código del motivo (recibos de crédito)"
+    },
+    {
+      "id": 33,
+      "br": "Produto",
+      "en": "Product",
+      "es": "Producto"
+    },
+    {
+      "id": 34,
+      "br": "ID do item do inventário",
+      "en": "Inventory item ID",
+      "es": "ID del artículo del inventario"
+    },
+    {
+      "id": 35,
+      "br": "Descrição textual da linha",
+      "en": "Textual description of the line",
+      "es": "Descripción textual de la línea"
+    },
+    {
+      "id": 36,
+      "br": "Quantidade",
+      "en": "Quantity",
+      "es": "Cantidad"
+    },
+    {
+      "id": 37,
+      "br": "Quantidade originalmente pedida",
+      "en": "Originally requested quantity",
+      "es": "Cantidad originalmente solicitada"
+    },
+    {
+      "id": 38,
+      "br": "Quantidade efetivamente faturada",
+      "en": "Quantity actually invoiced",
+      "es": "Cantidad efectivamente facturada"
+    },
+    {
+      "id": 39,
+      "br": "Quantidade creditada (credit memos)",
+      "en": "Quantity credited (for credit memos)",
+      "es": "Cantidad acreditada (recibos de crédito)"
+    },
+    {
+      "id": 40,
+      "br": "Financeiro",
+      "en": "Financial",
+      "es": "Financiero"
+    },
+    {
+      "id": 41,
+      "br": "Preço unitário de venda",
+      "en": "Selling unit price",
+      "es": "Precio unitario de venta"
+    },
+    {
+      "id": 42,
+      "br": "Preço unitário de tabela (lista de preços)",
+      "en": "Table price (price list)",
+      "es": "Precio unitario de tabla (lista de precios)"
+    },
+    {
+      "id": 43,
+      "br": "Valor estendido da linha (qty × unit price)",
+      "en": "Line extended value (qty × unit price)",
+      "es": "Valor extendido de la línea (qty × unit price)"
+    },
+    {
+      "id": 44,
+      "br": "Valor de receita reconhecida para a linha",
+      "en": "Revenue recognized for the line",
+      "es": "Valor de ingresos reconocido para la línea"
+    },
+    {
+      "id": 45,
+      "br": "Unidade de medida (Each, Kg, etc.)",
+      "en": "Unit of measure (Each, Kg, etc.)",
+      "es": "Unidad de medida (Each, Kg, etc.)"
+    },
+    {
+      "id": 46,
+      "br": "Tributação",
+      "en": "Tax",
+      "es": "Tributación"
+    },
+    {
+      "id": 47,
+      "br": "Indica se a linha é isenta de imposto (S/E/R)",
+      "en": "Indicates whether the line is tax-exempt (S/E/R)",
+      "es": "Indica si la línea está exenta de impuestos (S/E/R)"
+    },
+    {
+      "id": 48,
+      "br": "Código do motivo de isenção fiscal",
+      "en": "Tax exemption reason code",
+      "es": "Código del motivo de exención fiscal"
+    },
+    {
+      "id": 49,
+      "br": "Taxa de imposto aplicada à linha",
+      "en": "Tax rate applied to the line",
+      "es": "Tasa de impuesto aplicada a la línea"
+    },
+    {
+      "id": 50,
+      "br": "Precedência do imposto (cálculo cascata)",
+      "en": "Tax precedence (cascade calculation)",
+      "es": "Precedencia del impuesto (cálculo en cascada)"
+    },
+    {
+      "id": 51,
+      "br": "Logística",
+      "en": "Logistics",
+      "es": "Logística"
+    },
+    {
+      "id": 52,
+      "br": "Depósito/almoxarifado de expedição",
+      "en": "Shipping/Warehouse",
+      "es": "Almacén/depósito de expedición"
+    },
+    {
+      "id": 53,
+      "br": "Referência cruzada",
+      "en": "Cross-reference",
+      "es": "Referencia cruzada"
+    },
+    {
+      "id": 54,
+      "br": "Número do pedido de venda (Order Management)",
+      "en": "Sales Order Number (Order Management)",
+      "es": "Número del pedido de venta (Order Management)"
+    },
+    {
+      "id": 55,
+      "br": "Linha do pedido de venda",
+      "en": "Sales Order Line",
+      "es": "Línea del pedido de venta"
+    },
+    {
+      "id": 56,
+      "br": "Data do pedido de venda",
+      "en": "Sales Order Date",
+      "es": "Fecha del pedido de venta"
+    },
+    {
+      "id": 57,
+      "br": "Origem do pedido de venda",
+      "en": "Sales Order Source",
+      "es": "Origen del pedido de venta"
+    },
+    {
+      "id": 58,
+      "br": "Contabilidade",
+      "en": "Accounting",
+      "es": "Contabilidad"
+    },
+    {
+      "id": 59,
+      "br": "Regra de reconhecimento de receita",
+      "en": "Revenue Recognition Rule",
+      "es": "Regla de reconocimiento de ingresos"
+    },
+    {
+      "id": 60,
+      "br": "Duração da regra contábil (em períodos)",
+      "en": "Rule Duration (in periods)",
+      "es": "Duración de la regla contable (en períodos)"
+    },
+    {
+      "id": 61,
+      "br": "Data de início do reconhecimento de receita",
+      "en": "Revenue Recognition Start Date",
+      "es": "Fecha de inicio del reconocimiento de ingresos"
+    },
+    {
+      "id": 62,
+      "br": "Data final do reconhecimento de receita",
+      "en": "Revenue Recognition End Date",
+      "es": "Fecha final del reconocimiento de ingresos"
+    },
+    {
+      "id": 63,
+      "br": "Períodos já processados pela regra automática",
+      "en": "Periods already processed by the automatic rule",
+      "es": "Períodos ya procesados por la regla automática"
+    },
+    {
+      "id": 64,
+      "br": "Indica se a regra automática foi totalmente processada (Y/N)",
+      "en": "Indicates whether the automatic rule has been fully processed (Y/N)",
+      "es": "Indica si la regla automática ha sido totalmente procesada (Sí/No)"
+    },
+    {
+      "id": 65,
+      "br": "Referência à linha-pai (TAX/FREIGHT vinculada a LINE)",
+      "en": "Reference to parent line (TAX/FREIGHT linked to LINE)",
+      "es": "Referencia a la línea padre (TAX/FREIGHT vinculada a LINE)"
+    },
+    {
+      "id": 66,
+      "br": "self",
+      "en": "self",
+      "es": "self"
+    },
+    {
+      "id": 67,
+      "br": "Linha original (para credit memos vinculados a linhas)",
+      "en": "Original Line (for credit memos linked to lines)",
+      "es": "Línea original (para notas de crédito vinculadas a líneas)"
+    },
+    {
+      "id": 68,
+      "br": "Contexto do flexfield de interface (AutoInvoice)",
+      "en": "Interface Flexfield Context (AutoInvoice)",
+      "es": "Contexto del flexfield de interfaz (AutoInvoice)"
+    },
+    {
+      "id": 69,
+      "br": "Atributo de interface 1 (tipicamente Sales Order ID)",
+      "en": "Interface Attribute 1 (typically Sales Order ID)",
+      "es": "Atributo de interfaz 1 (típicamente Sales Order ID)"
+    },
+    {
+      "id": 70,
+      "br": "Atributo de interface 2 (tipicamente Line ID)",
+      "en": "Interface Attribute 2 (typically Line ID)",
+      "es": "Atributo de interfaz 2 (típicamente Line ID)"
+    },
+    {
+      "id": 71,
+      "br": "INTERFACE_LINE_ATTRIBUTE3–15",
+      "en": "INTERFACE_LINE_ATTRIBUTE3–15",
+      "es": "INTERFACE_LINE_ATTRIBUTE3–15"
+    },
+    {
+      "id": 72,
+      "br": "Atributos de interface adicionais (3 a 15)",
+      "en": "Additional Interface Attributes (3 to 15)",
+      "es": "Atributos de interfaz adicionales (3 a 15)"
+    },
+    {
+      "id": 73,
+      "br": "Ledger contábil (legado)",
+      "en": "General Ledger (legacy)",
+      "es": "Libro mayor contable (legado)"
+    },
+    {
+      "id": 74,
+      "br": "Business unit (multi-org)",
+      "en": "Business Unit (multi-org)",
+      "es": "Unidad de negocio (multi-org)"
+    },
+    {
+      "id": 75,
+      "br": "Auditoria",
+      "en": "Audit",
+      "es": "Auditoría"
+    },
+    {
+      "id": 76,
+      "br": "Usuário que criou o registro",
+      "en": "User who created the record",
+      "es": "Usuario que creó el registro"
+    },
+    {
+      "id": 77,
+      "br": "Data/hora de criação",
+      "en": "Creation date/time",
+      "es": "Fecha/hora de creación"
+    },
+    {
+      "id": 78,
+      "br": "Último usuário que alterou",
+      "en": "Last user who modified",
+      "es": "Último usuario que lo modificó"
+    },
+    {
+      "id": 79,
+      "br": "Data/hora da última alteração",
+      "en": "Last modification date/time",
+      "es": "Fecha/hora de la última modificación"
+    },
+    {
+      "id": 80,
+      "br": "Login da última sessão",
+      "en": "Login of the last session",
+      "es": "Login de la última sesión"
+    },
+    {
+      "id": 81,
+      "br": "ATTRIBUTE1–15",
+      "en": "ATTRIBUTE1–15",
+      "es": "ATTRIBUTE1–15"
+    },
+    {
+      "id": 82,
+      "br": "Atributos descritivos customizáveis por implementação",
+      "en": "Customizable descriptive attributes by implementation",
+      "es": "Atributos descriptivos personalizables por implementación"
+    },
+    {
+      "id": 83,
+      "br": "Contexto do Descriptive Flexfield",
+      "en": "Context of the Descriptive Flexfield",
+      "es": "Contexto del Descriptive Flexfield"
+    },
+    {
+      "id": 84,
+      "br": "Relacionamentos",
+      "en": "Relationships",
+      "es": "Relaciones"
+    },
+    {
+      "id": 85,
+      "br": "Tabelas-pai (FK de entrada)",
+      "en": "Parent tables (incoming FK)",
+      "es": "Tablas padre (clave foránea de entrada)"
+    },
+    {
+      "id": 86,
+      "br": "cabeçalho da transação",
+      "en": "Transaction header",
+      "es": "Encabezado de la transacción"
+    },
+    {
+      "id": 87,
+      "br": "item do inventário",
+      "en": "Inventory item",
+      "es": "Artículo de inventario"
+    },
+    {
+      "id": 88,
+      "br": "regra de reconhecimento de receita",
+      "en": "Revenue recognition rule",
+      "es": "Regla de reconocimiento de ingresos"
+    },
+    {
+      "id": 89,
+      "br": "ledger contábil",
+      "en": "General Ledger",
+      "es": "Ledger contable"
+    },
+    {
+      "id": 90,
+      "br": "business unit",
+      "en": "Business unit",
+      "es": "business unit"
+    },
+    {
+      "id": 91,
+      "br": "Tabelas-filha (FK de saída)",
+      "en": "Child tables (outgoing FK)",
+      "es": "Tablas hijas (clave foránea de salida)"
+    },
+    {
+      "id": 92,
+      "br": "distribuições contábeis",
+      "en": "Accounting distributions",
+      "es": "Distribuciones contables"
+    },
+    {
+      "id": 93,
+      "br": "créditos de vendas",
+      "en": "Sales credits",
+      "es": "Créditos de ventas"
+    },
+    {
+      "id": 94,
+      "br": "linhas de imposto detalhadas",
+      "en": "Detailed tax lines",
+      "es": "Líneas de impuestos detalladas"
+    },
+    {
+      "id": 95,
+      "br": "Self-references",
+      "en": "Self-references",
+      "es": "Referencias propias"
+    },
+    {
+      "id": 96,
+      "br": "Linha-pai (linhas TAX/FREIGHT vinculadas à LINE correspondente)",
+      "en": "Parent line (TAX/FREIGHT lines linked to the corresponding LINE)",
+      "es": "Línea padre (líneas TAX/FREIGHT vinculadas a la LINE correspondiente)"
+    },
+    {
+      "id": 97,
+      "br": "Linha original (para credit memos que referenciam linhas específicas)",
+      "en": "Original line (for credit memos that reference specific lines)",
+      "es": "Línea original (para notas de crédito que hacen referencia a líneas específicas)"
+    },
+    {
+      "id": 98,
+      "br": "Uso Típico",
+      "en": "Typical Use",
+      "es": "Uso típico"
+    },
+    {
+      "id": 99,
+      "br": "Detalhamento de itens faturados por transação",
+      "en": "Item details billed per transaction",
+      "es": "Detalle de artículos facturados por transacción"
+    },
+    {
+      "id": 100,
+      "br": "Análise de receita por produto",
+      "en": "Revenue analysis by product",
+      "es": "Análisis de ingresos por producto"
+    },
+    {
+      "id": 101,
+      "br": "Filtros comuns",
+      "en": "Common Filters",
+      "es": "Filtros comunes"
+    },
+    {
+      "id": 102,
+      "br": "Apenas linhas de item (excluir TAX/FREIGHT)",
+      "en": "Only item lines (excluding TAX/FREIGHT)",
+      "es": "Solo líneas de artículo (excluir TAX/FREIGHT)"
+    },
+    {
+      "id": 103,
+      "br": "Linhas com reconhecimento de receita diferido",
+      "en": "Lines with deferred revenue recognition",
+      "es": "Líneas con reconocimiento de ingresos diferidos"
+    },
+    {
+      "id": 104,
+      "br": "Linhas originadas de pedidos de venda",
+      "en": "Lines originating from sales orders",
+      "es": "Líneas originadas de pedidos de venta"
+    },
+    {
+      "id": 105,
+      "br": "Identificar origem da importação (AutoInvoice)",
+      "en": "Identify the source of the import (AutoInvoice)",
+      "es": "Identificar origen de la importación (AutoInvoice)"
+    },
+    {
+      "id": 106,
+      "br": "Observações",
+      "en": "Notes",
+      "es": "Observaciones"
+    },
+    {
+      "id": 107,
+      "br": "Linhas do tipo TAX e FREIGHT possuem LINK_TO_CUST_TRX_LINE_ID apontando para a linha de item (LINE) correspondente.",
+      "en": "TAX and FREIGHT type lines have LINK_TO_CUST_TRX_LINE_ID pointing to the corresponding item line (LINE)",
+      "es": "Las líneas de tipo TAX y FREIGHT tienen LINK_TO_CUST_TRX_LINE_ID que apunta a la línea de artículo (LINE) correspondiente."
+    },
+    {
+      "id": 108,
+      "br": "O campo EXTENDED_AMOUNT é calculado como QUANTITY_INVOICED × UNIT_SELLING_PRICE, mas pode ser informado diretamente para linhas sem quantidade.",
+      "en": "The EXTENDED_AMOUNT field is calculated as QUANTITY_INVOICED × UNIT_SELLING_PRICE, but can be entered directly for lines without quantity.",
+      "es": "El campo EXTENDED_AMOUNT se calcula como QUANTITY_INVOICED × UNIT_SELLING_PRICE, pero puede informarse directamente para líneas sin cantidad."
+    },
+    {
+      "id": 109,
+      "br": "Os campos INTERFACE_LINE_ATTRIBUTE1–15 são críticos para rastreabilidade: identificam a origem da linha quando importada via AutoInvoice (e.g., Order Management, Projects).",
+      "en": "INTERFACE_LINE_ATTRIBUTE1–15 fields are critical for traceability: they identify the origin of the line when imported via AutoInvoice (e.g., Order Management, Projects).",
+      "es": "Los campos INTERFACE_LINE_ATTRIBUTE1–15 son críticos para el rastreo: identifican el origen de la línea cuando se importa a través de AutoInvoice (p. ej., Order Management, Projects)."
+    },
+    {
+      "id": 110,
+      "br": "O campo ACCOUNTING_RULE_ID com RULE_START_DATE / RULE_END_DATE ativa o Revenue Scheduling — a receita é distribuída em múltiplos períodos contábeis.",
+      "en": "The ACCOUNTING_RULE_ID with RULE_START_DATE / RULE_END_DATE activates Revenue Scheduling — revenue is distributed across multiple accounting periods.",
+      "es": "El campo ACCOUNTING_RULE_ID con RULE_START_DATE / RULE_END_DATE activa el programado de ingresos — los ingresos se distribuyen en múltiples períodos contables."
+    },
+    {
+      "id": 111,
+      "br": "A tabela possui Descriptive Flexfields (DFF) via ATTRIBUTE1–15 para customizações por implementação.",
+      "en": "The table has Descriptive Flexfields (DFF) via ATTRIBUTE1–15 for customization by implementation.",
+      "es": "La tabla tiene Descriptive Flexfields (DFF) a través de ATTRIBUTE1–15 para personalizaciones por implementación."
+    },
+    {
+      "id": 112,
+      "br": "Para credit memos vinculados a linhas específicas, PREVIOUS_CUSTOMER_TRX_LINE_ID conecta à linha original da fatura.",
+      "en": "For credit memos linked to specific lines, PREVIOUS_CUSTOMER_TRX_LINE_ID connects to the original invoice line.",
+      "es": "Para las facturas de crédito vinculadas a líneas específicas, PREVIOUS_CUSTOMER_TRX_LINE_ID se conecta a la línea original de la factura."
+    },
+    {
+      "id": 113,
+      "br": "Referências",
+      "en": "References",
+      "es": "Referencias"
+    },
+    {
+      "id": 114,
+      "br": "[Oracle Docs — RA_CUSTOMER_TRX_LINES_ALL](https://docs.oracle.com/en/cloud/saas/financials/25a/oedmf/racustomertrxlinesall-25166.html)",
+      "en": "[Oracle Docs — RA_CUSTOMER_TRX_LINES_ALL](https://docs.oracle.com/en/cloud/saas/financials/25a/oedmf/racustomertrxlinesall-25166.html)",
+      "es": "[Oracle Docs — RA_CUSTOMER_TRX_LINES_ALL](https://docs.oracle.com/en/cloud/saas/financials/25a/oedmf/racustomertrxlinesall-25166.html)"
+    },
+    {
+      "id": 115,
+      "br": "ar-module-data-dictionary — Dossiê do módulo AR",
+      "en": "ar-module-data-dictionary — AR module data dictionary",
+      "es": "ar-module-data-dictionary — Documento del módulo AR"
+    }
+  ]
+}

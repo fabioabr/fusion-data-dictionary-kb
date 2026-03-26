@@ -1,0 +1,2596 @@
+{
+  "meta": {
+    "pvo_name": "AssessmentPVO",
+    "full_path": "FscmTopModelAM.GRCTOPBIAM.AssessmentPVO",
+    "module_path": "FscmTopModelAM.GRCTOPBIAM",
+    "module_code": "OTHER",
+    "type": "pvo",
+    "description": "View Object para extração BICC de dados de Assessment. Acessa as tabelas: GRC_ASMT_ASSESSMENT_B, GRC_ASMT_ASSESSMENT_TL, GRC_ASMT_PLAN_B (+10)."
+  },
+  "stats": {
+    "total_attributes": 181,
+    "tables_count": 13,
+    "bicc_enabled": 51,
+    "bicc_pct": 28,
+    "pk_count": 1
+  },
+  "tables": [
+    "GRC_ASMT_ASSESSMENT_B",
+    "GRC_ASMT_ASSESSMENT_TL",
+    "GRC_ASMT_PLAN_B",
+    "GRC_ASMT_PLAN_TL",
+    "GRC_ASMT_TEMPLATE_B",
+    "GRC_ASMT_TEMPLATE_TL",
+    "GTG_SC_FRC_ACCESS_V",
+    "GTG_SC_FRC_SECURITY_V",
+    "GTG_SC_GROUP_VL",
+    "GTG_SC_SECURABLE_TO_PRIV",
+    "GTG_SC_USER_GROUP",
+    "PER_PERSON_NAMES_F_V",
+    "PER_USERS"
+  ],
+  "attributes": [
+    {
+      "name": "AsPersonUpdatedByEffEndDate",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "EFFECTIVE_END_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AsmtPersonUpdatedByDisplayName",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "DISPLAY_NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AsmtPersonUpdatedByEffStartDate",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "EFFECTIVE_START_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AsmtPersonUpdatedByPersonId",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "PERSON_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AsmtPersonUpdatedByPersonNameId",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "PERSON_NAME_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AsmtUpdatedByObjectVerNumber",
+      "table": "PER_USERS",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AsmtUpdatedByPersonId",
+      "table": "PER_USERS",
+      "column": "PERSON_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AsmtUpdatedByUserGuid",
+      "table": "PER_USERS",
+      "column": "USER_GUID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AsmtUpdatedByUserId",
+      "table": "PER_USERS",
+      "column": "USER_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AsmtUpdatedByUsername",
+      "table": "PER_USERS",
+      "column": "USERNAME",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AssessmentBasePEOAllowDuplication",
+      "table": "GRC_ASMT_ASSESSMENT_B",
+      "column": "ALLOW_DUPLICATION",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AssessmentBasePEOAsmtPlanEffseq",
+      "table": "GRC_ASMT_ASSESSMENT_B",
+      "column": "ASMT_PLAN_EFFSEQ",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AssessmentBasePEOAsmtPlanId",
+      "table": "GRC_ASMT_ASSESSMENT_B",
+      "column": "ASMT_PLAN_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AssessmentBasePEOAssessmentCategoryCode",
+      "table": "GRC_ASMT_ASSESSMENT_B",
+      "column": "ASSESSMENT_CATEGORY_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AssessmentBasePEOAssessmentId",
+      "table": "GRC_ASMT_ASSESSMENT_B",
+      "column": "ASSESSMENT_ID",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    },
+    {
+      "name": "AssessmentBasePEOAssessmentInitiateDate",
+      "table": "GRC_ASMT_ASSESSMENT_B",
+      "column": "ASSESSMENT_INITIATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AssessmentBasePEOBusEntityAsmtCode",
+      "table": "GRC_ASMT_ASSESSMENT_B",
+      "column": "BUS_ENTITY_ASMT_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AssessmentBasePEOBusEntityAuditTestCode",
+      "table": "GRC_ASMT_ASSESSMENT_B",
+      "column": "BUS_ENTITY_AUDIT_TEST_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AssessmentBasePEOCompensatingSelectionCode",
+      "table": "GRC_ASMT_ASSESSMENT_B",
+      "column": "COMPENSATING_SELECTION_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AssessmentBasePEOCreatedBy",
+      "table": "GRC_ASMT_ASSESSMENT_B",
+      "column": "CREATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AssessmentBasePEOCreationDate",
+      "table": "GRC_ASMT_ASSESSMENT_B",
+      "column": "CREATION_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AssessmentBasePEODuplication",
+      "table": "GRC_ASMT_ASSESSMENT_B",
+      "column": "DUPLICATION",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AssessmentBasePEOIsSurvMndtry",
+      "table": "GRC_ASMT_ASSESSMENT_B",
+      "column": "IS_SURVEY_MANDATORY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AssessmentBasePEOKeySelectionCode",
+      "table": "GRC_ASMT_ASSESSMENT_B",
+      "column": "KEY_SELECTION_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AssessmentBasePEOLastStateCode",
+      "table": "GRC_ASMT_ASSESSMENT_B",
+      "column": "LAST_STATE_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AssessmentBasePEOLastUpdateDate",
+      "table": "GRC_ASMT_ASSESSMENT_B",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": true
+    },
+    {
+      "name": "AssessmentBasePEOLastUpdateLogin",
+      "table": "GRC_ASMT_ASSESSMENT_B",
+      "column": "LAST_UPDATE_LOGIN",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AssessmentBasePEOLastUpdatedBy",
+      "table": "GRC_ASMT_ASSESSMENT_B",
+      "column": "LAST_UPDATED_BY",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AssessmentBasePEOMitigatingSelectionCode",
+      "table": "GRC_ASMT_ASSESSMENT_B",
+      "column": "MITIGATING_SELECTION_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AssessmentBasePEOMonitoringSelectionCode",
+      "table": "GRC_ASMT_ASSESSMENT_B",
+      "column": "MONITORING_SELECTION_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AssessmentBasePEONoSelectionCode",
+      "table": "GRC_ASMT_ASSESSMENT_B",
+      "column": "NO_SELECTION_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AssessmentBasePEOObjectVersionNumber",
+      "table": "GRC_ASMT_ASSESSMENT_B",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AssessmentBasePEOOtherSelectionCode",
+      "table": "GRC_ASMT_ASSESSMENT_B",
+      "column": "OTHER_SELECTION_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AssessmentBasePEOOwner",
+      "table": "GRC_ASMT_ASSESSMENT_B",
+      "column": "OWNER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AssessmentBasePEOPerspAssociated",
+      "table": "GRC_ASMT_ASSESSMENT_B",
+      "column": "PERSPECTIVE_ASSOCIATED",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AssessmentBasePEOPerspItemId",
+      "table": "GRC_ASMT_ASSESSMENT_B",
+      "column": "PERSP_ITEM_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AssessmentBasePEOPerspTreeEffseq",
+      "table": "GRC_ASMT_ASSESSMENT_B",
+      "column": "PERSP_TREE_EFFSEQ",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AssessmentBasePEOPerspTreeId",
+      "table": "GRC_ASMT_ASSESSMENT_B",
+      "column": "PERSP_TREE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AssessmentBasePEOPrimaryControlsCode",
+      "table": "GRC_ASMT_ASSESSMENT_B",
+      "column": "PRIMARY_CONTROLS_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AssessmentBasePEORedundantSelectionCode",
+      "table": "GRC_ASMT_ASSESSMENT_B",
+      "column": "REDUNDANT_SELECTION_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AssessmentBasePEOResultsEntryCompletionDate",
+      "table": "GRC_ASMT_ASSESSMENT_B",
+      "column": "RESULTS_ENTRY_COMPLETION_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AssessmentBasePEOResultsEntryDueDate",
+      "table": "GRC_ASMT_ASSESSMENT_B",
+      "column": "RESULTS_ENTRY_DUE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AssessmentBasePEOResultsEntryStartDate",
+      "table": "GRC_ASMT_ASSESSMENT_B",
+      "column": "RESULTS_ENTRY_START_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AssessmentBasePEORootObjectTypeCode",
+      "table": "GRC_ASMT_ASSESSMENT_B",
+      "column": "ROOT_OBJECT_TYPE_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AssessmentBasePEOStateCode",
+      "table": "GRC_ASMT_ASSESSMENT_B",
+      "column": "STATE_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AssessmentBasePEOStateDate",
+      "table": "GRC_ASMT_ASSESSMENT_B",
+      "column": "STATE_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AssessmentBasePEOSubordinateControlsCode",
+      "table": "GRC_ASMT_ASSESSMENT_B",
+      "column": "SUBORDINATE_CONTROLS_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AssessmentBasePEOSurveyPrefixName",
+      "table": "GRC_ASMT_ASSESSMENT_B",
+      "column": "SURVEY_PREFIX_NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AssessmentPlanBasePEOApproveCompleteDate",
+      "table": "GRC_ASMT_PLAN_B",
+      "column": "APPROVE_COMPLETE_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AssessmentPlanBasePEOApprovedBy",
+      "table": "GRC_ASMT_PLAN_B",
+      "column": "APPROVED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AssessmentPlanBasePEOApprovedDate",
+      "table": "GRC_ASMT_PLAN_B",
+      "column": "APPROVED_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AssessmentPlanBasePEOAsmtPlanId",
+      "table": "GRC_ASMT_PLAN_B",
+      "column": "ASMT_PLAN_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AssessmentPlanBasePEOAsmtTemplateEffseq",
+      "table": "GRC_ASMT_PLAN_B",
+      "column": "ASMT_TEMPLATE_EFFSEQ",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AssessmentPlanBasePEOAsmtTemplateId",
+      "table": "GRC_ASMT_PLAN_B",
+      "column": "ASMT_TEMPLATE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AssessmentPlanBasePEOAssessedBy",
+      "table": "GRC_ASMT_PLAN_B",
+      "column": "ASSESSED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AssessmentPlanBasePEOAssessedDate",
+      "table": "GRC_ASMT_PLAN_B",
+      "column": "ASSESSED_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AssessmentPlanBasePEOAssessmentCategoryCode",
+      "table": "GRC_ASMT_PLAN_B",
+      "column": "ASSESSMENT_CATEGORY_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AssessmentPlanBasePEOBusEntityAsmtCode",
+      "table": "GRC_ASMT_PLAN_B",
+      "column": "BUS_ENTITY_ASMT_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AssessmentPlanBasePEOBusEntityAuditTestCode",
+      "table": "GRC_ASMT_PLAN_B",
+      "column": "BUS_ENTITY_AUDIT_TEST_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AssessmentPlanBasePEOCompensatingSelectionCode",
+      "table": "GRC_ASMT_PLAN_B",
+      "column": "COMPENSATING_SELECTION_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AssessmentPlanBasePEOCreatedBy",
+      "table": "GRC_ASMT_PLAN_B",
+      "column": "CREATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AssessmentPlanBasePEOCreationDate",
+      "table": "GRC_ASMT_PLAN_B",
+      "column": "CREATION_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AssessmentPlanBasePEOEffectiveSequence",
+      "table": "GRC_ASMT_PLAN_B",
+      "column": "EFFECTIVE_SEQUENCE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AssessmentPlanBasePEOKeySelectionCode",
+      "table": "GRC_ASMT_PLAN_B",
+      "column": "KEY_SELECTION_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AssessmentPlanBasePEOLastStateCode",
+      "table": "GRC_ASMT_PLAN_B",
+      "column": "LAST_STATE_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AssessmentPlanBasePEOLastUpdateDate",
+      "table": "GRC_ASMT_PLAN_B",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": true
+    },
+    {
+      "name": "AssessmentPlanBasePEOLastUpdateLogin",
+      "table": "GRC_ASMT_PLAN_B",
+      "column": "LAST_UPDATE_LOGIN",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AssessmentPlanBasePEOLastUpdatedBy",
+      "table": "GRC_ASMT_PLAN_B",
+      "column": "LAST_UPDATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AssessmentPlanBasePEOMitigatingSelectionCode",
+      "table": "GRC_ASMT_PLAN_B",
+      "column": "MITIGATING_SELECTION_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AssessmentPlanBasePEOMonitoringSelectionCode",
+      "table": "GRC_ASMT_PLAN_B",
+      "column": "MONITORING_SELECTION_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AssessmentPlanBasePEONoSelectionCode",
+      "table": "GRC_ASMT_PLAN_B",
+      "column": "NO_SELECTION_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AssessmentPlanBasePEOObjectVersionNumber",
+      "table": "GRC_ASMT_PLAN_B",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AssessmentPlanBasePEOOtherSelectionCode",
+      "table": "GRC_ASMT_PLAN_B",
+      "column": "OTHER_SELECTION_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AssessmentPlanBasePEOPerspItemId",
+      "table": "GRC_ASMT_PLAN_B",
+      "column": "PERSP_ITEM_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AssessmentPlanBasePEOPerspTreeId",
+      "table": "GRC_ASMT_PLAN_B",
+      "column": "PERSP_TREE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AssessmentPlanBasePEOPrimaryControlsCode",
+      "table": "GRC_ASMT_PLAN_B",
+      "column": "PRIMARY_CONTROLS_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AssessmentPlanBasePEORedundantSelectionCode",
+      "table": "GRC_ASMT_PLAN_B",
+      "column": "REDUNDANT_SELECTION_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AssessmentPlanBasePEOReviewStartDate",
+      "table": "GRC_ASMT_PLAN_B",
+      "column": "REVIEW_START_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AssessmentPlanBasePEOReviewedBy",
+      "table": "GRC_ASMT_PLAN_B",
+      "column": "REVIEWED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AssessmentPlanBasePEOReviewedDate",
+      "table": "GRC_ASMT_PLAN_B",
+      "column": "REVIEWED_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AssessmentPlanBasePEORevisionDate",
+      "table": "GRC_ASMT_PLAN_B",
+      "column": "REVISION_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AssessmentPlanBasePEORevisionNumber",
+      "table": "GRC_ASMT_PLAN_B",
+      "column": "REVISION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AssessmentPlanBasePEORevisionSubmittedBy",
+      "table": "GRC_ASMT_PLAN_B",
+      "column": "REVISION_SUBMITTED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AssessmentPlanBasePEOStartDate",
+      "table": "GRC_ASMT_PLAN_B",
+      "column": "START_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AssessmentPlanBasePEOStateCode",
+      "table": "GRC_ASMT_PLAN_B",
+      "column": "STATE_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AssessmentPlanBasePEOStateDate",
+      "table": "GRC_ASMT_PLAN_B",
+      "column": "STATE_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AssessmentPlanBasePEOStatus",
+      "table": "GRC_ASMT_PLAN_B",
+      "column": "STATUS",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AssessmentPlanBasePEOSubordinateControlsCode",
+      "table": "GRC_ASMT_PLAN_B",
+      "column": "SUBORDINATE_CONTROLS_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AssessmentPlanTranslationPEOAsmtPlanId",
+      "table": "GRC_ASMT_PLAN_TL",
+      "column": "ASMT_PLAN_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AssessmentPlanTranslationPEOCreatedBy",
+      "table": "GRC_ASMT_PLAN_TL",
+      "column": "CREATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AssessmentPlanTranslationPEOCreationDate",
+      "table": "GRC_ASMT_PLAN_TL",
+      "column": "CREATION_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AssessmentPlanTranslationPEODetailedDescr",
+      "table": "GRC_ASMT_PLAN_TL",
+      "column": "DETAILED_DESCRIPTION",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AssessmentPlanTranslationPEOLanguage",
+      "table": "GRC_ASMT_PLAN_TL",
+      "column": "LANGUAGE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AssessmentPlanTranslationPEOLastUpdateDate",
+      "table": "GRC_ASMT_PLAN_TL",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": true
+    },
+    {
+      "name": "AssessmentPlanTranslationPEOLastUpdateLogin",
+      "table": "GRC_ASMT_PLAN_TL",
+      "column": "LAST_UPDATE_LOGIN",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AssessmentPlanTranslationPEOLastUpdatedBy",
+      "table": "GRC_ASMT_PLAN_TL",
+      "column": "LAST_UPDATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AssessmentPlanTranslationPEOName",
+      "table": "GRC_ASMT_PLAN_TL",
+      "column": "NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AssessmentPlanTranslationPEOSourceLang",
+      "table": "GRC_ASMT_PLAN_TL",
+      "column": "SOURCE_LANG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AssessmentTemplateBasePEOApproveCompleteDate",
+      "table": "GRC_ASMT_TEMPLATE_B",
+      "column": "APPROVE_COMPLETE_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AssessmentTemplateBasePEOApprovedBy",
+      "table": "GRC_ASMT_TEMPLATE_B",
+      "column": "APPROVED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AssessmentTemplateBasePEOApprovedDate",
+      "table": "GRC_ASMT_TEMPLATE_B",
+      "column": "APPROVED_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AssessmentTemplateBasePEOAsmtTemplateId",
+      "table": "GRC_ASMT_TEMPLATE_B",
+      "column": "ASMT_TEMPLATE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AssessmentTemplateBasePEOAssessedBy",
+      "table": "GRC_ASMT_TEMPLATE_B",
+      "column": "ASSESSED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AssessmentTemplateBasePEOAssessedDate",
+      "table": "GRC_ASMT_TEMPLATE_B",
+      "column": "ASSESSED_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AssessmentTemplateBasePEOAssessmentTypeCode",
+      "table": "GRC_ASMT_TEMPLATE_B",
+      "column": "ASSESSMENT_TYPE_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AssessmentTemplateBasePEOCreatedBy",
+      "table": "GRC_ASMT_TEMPLATE_B",
+      "column": "CREATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AssessmentTemplateBasePEOCreationDate",
+      "table": "GRC_ASMT_TEMPLATE_B",
+      "column": "CREATION_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AssessmentTemplateBasePEOEffectiveSequence",
+      "table": "GRC_ASMT_TEMPLATE_B",
+      "column": "EFFECTIVE_SEQUENCE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AssessmentTemplateBasePEOLastStateCode",
+      "table": "GRC_ASMT_TEMPLATE_B",
+      "column": "LAST_STATE_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AssessmentTemplateBasePEOLastUpdateDate",
+      "table": "GRC_ASMT_TEMPLATE_B",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": true
+    },
+    {
+      "name": "AssessmentTemplateBasePEOLastUpdateLogin",
+      "table": "GRC_ASMT_TEMPLATE_B",
+      "column": "LAST_UPDATE_LOGIN",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AssessmentTemplateBasePEOLastUpdatedBy",
+      "table": "GRC_ASMT_TEMPLATE_B",
+      "column": "LAST_UPDATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AssessmentTemplateBasePEOObjectVersionNumber",
+      "table": "GRC_ASMT_TEMPLATE_B",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AssessmentTemplateBasePEOPerspTypeCode",
+      "table": "GRC_ASMT_TEMPLATE_B",
+      "column": "PERSP_TYPE_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AssessmentTemplateBasePEOReviewStartDate",
+      "table": "GRC_ASMT_TEMPLATE_B",
+      "column": "REVIEW_START_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AssessmentTemplateBasePEOReviewedBy",
+      "table": "GRC_ASMT_TEMPLATE_B",
+      "column": "REVIEWED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AssessmentTemplateBasePEOReviewedDate",
+      "table": "GRC_ASMT_TEMPLATE_B",
+      "column": "REVIEWED_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AssessmentTemplateBasePEORevisionDate",
+      "table": "GRC_ASMT_TEMPLATE_B",
+      "column": "REVISION_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AssessmentTemplateBasePEORevisionNumber",
+      "table": "GRC_ASMT_TEMPLATE_B",
+      "column": "REVISION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AssessmentTemplateBasePEORevisionSubmittedBy",
+      "table": "GRC_ASMT_TEMPLATE_B",
+      "column": "REVISION_SUBMITTED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AssessmentTemplateBasePEORootObjectTypeCode",
+      "table": "GRC_ASMT_TEMPLATE_B",
+      "column": "ROOT_OBJECT_TYPE_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AssessmentTemplateBasePEOStartDate",
+      "table": "GRC_ASMT_TEMPLATE_B",
+      "column": "START_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AssessmentTemplateBasePEOStateCode",
+      "table": "GRC_ASMT_TEMPLATE_B",
+      "column": "STATE_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AssessmentTemplateBasePEOStateDate",
+      "table": "GRC_ASMT_TEMPLATE_B",
+      "column": "STATE_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AssessmentTemplateBasePEOStatus",
+      "table": "GRC_ASMT_TEMPLATE_B",
+      "column": "STATUS",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AssessmentTemplateTranslationPEOAsmtTemplateId",
+      "table": "GRC_ASMT_TEMPLATE_TL",
+      "column": "ASMT_TEMPLATE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AssessmentTemplateTranslationPEOCreatedBy",
+      "table": "GRC_ASMT_TEMPLATE_TL",
+      "column": "CREATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AssessmentTemplateTranslationPEOCreationDate",
+      "table": "GRC_ASMT_TEMPLATE_TL",
+      "column": "CREATION_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AssessmentTemplateTranslationPEODetailedDescr",
+      "table": "GRC_ASMT_TEMPLATE_TL",
+      "column": "DETAILED_DESCRIPTION",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AssessmentTemplateTranslationPEOLanguage",
+      "table": "GRC_ASMT_TEMPLATE_TL",
+      "column": "LANGUAGE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AssessmentTemplateTranslationPEOLastUpdateDate",
+      "table": "GRC_ASMT_TEMPLATE_TL",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": true
+    },
+    {
+      "name": "AssessmentTemplateTranslationPEOLastUpdateLogin",
+      "table": "GRC_ASMT_TEMPLATE_TL",
+      "column": "LAST_UPDATE_LOGIN",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AssessmentTemplateTranslationPEOLastUpdatedBy",
+      "table": "GRC_ASMT_TEMPLATE_TL",
+      "column": "LAST_UPDATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AssessmentTemplateTranslationPEOName",
+      "table": "GRC_ASMT_TEMPLATE_TL",
+      "column": "NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AssessmentTemplateTranslationPEOSourceLang",
+      "table": "GRC_ASMT_TEMPLATE_TL",
+      "column": "SOURCE_LANG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AssessmentTranslationPEOAssessmentId",
+      "table": "GRC_ASMT_ASSESSMENT_TL",
+      "column": "ASSESSMENT_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AssessmentTranslationPEOCreatedBy",
+      "table": "GRC_ASMT_ASSESSMENT_TL",
+      "column": "CREATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AssessmentTranslationPEOCreationDate",
+      "table": "GRC_ASMT_ASSESSMENT_TL",
+      "column": "CREATION_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AssessmentTranslationPEODetailedDescription",
+      "table": "GRC_ASMT_ASSESSMENT_TL",
+      "column": "DETAILED_DESCRIPTION",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AssessmentTranslationPEOLanguage",
+      "table": "GRC_ASMT_ASSESSMENT_TL",
+      "column": "LANGUAGE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AssessmentTranslationPEOLastUpdateDate",
+      "table": "GRC_ASMT_ASSESSMENT_TL",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": true
+    },
+    {
+      "name": "AssessmentTranslationPEOLastUpdateLogin",
+      "table": "GRC_ASMT_ASSESSMENT_TL",
+      "column": "LAST_UPDATE_LOGIN",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AssessmentTranslationPEOLastUpdatedBy",
+      "table": "GRC_ASMT_ASSESSMENT_TL",
+      "column": "LAST_UPDATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AssessmentTranslationPEOName",
+      "table": "GRC_ASMT_ASSESSMENT_TL",
+      "column": "NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AssessmentTranslationPEOSourceLang",
+      "table": "GRC_ASMT_ASSESSMENT_TL",
+      "column": "SOURCE_LANG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "FRCScSecurityPEOAccessorId",
+      "table": "GTG_SC_FRC_SECURITY_V",
+      "column": "ACCESSOR_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "FRCScSecurityPEOAccessorType",
+      "table": "GTG_SC_FRC_SECURITY_V",
+      "column": "ACCESSOR_TYPE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "FRCScSecurityPEOId",
+      "table": "GTG_SC_FRC_SECURITY_V",
+      "column": "ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "FRCScSecurityPEOIsApprover",
+      "table": "GTG_SC_FRC_SECURITY_V",
+      "column": "IS_APPROVER",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "FRCScSecurityPEOIsAssessor",
+      "table": "GTG_SC_FRC_SECURITY_V",
+      "column": "IS_ASSESSOR",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "FRCScSecurityPEOIsEditor",
+      "table": "GTG_SC_FRC_SECURITY_V",
+      "column": "IS_EDITOR",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "FRCScSecurityPEOIsIssueOwner",
+      "table": "GTG_SC_FRC_SECURITY_V",
+      "column": "IS_ISSUE_OWNER",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "FRCScSecurityPEOIsIssueValidator",
+      "table": "GTG_SC_FRC_SECURITY_V",
+      "column": "IS_ISSUE_VALIDATOR",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "FRCScSecurityPEOIsManager",
+      "table": "GTG_SC_FRC_SECURITY_V",
+      "column": "IS_MANAGER",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "FRCScSecurityPEOIsOwner",
+      "table": "GTG_SC_FRC_SECURITY_V",
+      "column": "IS_OWNER",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "FRCScSecurityPEOIsReviewer",
+      "table": "GTG_SC_FRC_SECURITY_V",
+      "column": "IS_REVIEWER",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "FRCScSecurityPEOIsViewer",
+      "table": "GTG_SC_FRC_SECURITY_V",
+      "column": "IS_VIEWER",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "FRCScSecurityPEORoleBitmap",
+      "table": "GTG_SC_FRC_SECURITY_V",
+      "column": "ROLE_BITMAP",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "FRCScSecurityPEOSecurableId",
+      "table": "GTG_SC_FRC_SECURITY_V",
+      "column": "SECURABLE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "FRCScSecurityPEOSecurableType",
+      "table": "GTG_SC_FRC_SECURITY_V",
+      "column": "SECURABLE_TYPE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "FRCSecurityPEOSecurableId",
+      "table": "GTG_SC_FRC_ACCESS_V",
+      "column": "SECURABLE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "FRCSecurityPEOSecurableType",
+      "table": "GTG_SC_FRC_ACCESS_V",
+      "column": "SECURABLE_TYPE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "FRCSecurityPEOUserId",
+      "table": "GTG_SC_FRC_ACCESS_V",
+      "column": "USER_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ScSecurityPrivPEOId",
+      "table": "GTG_SC_SECURABLE_TO_PRIV",
+      "column": "ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ScSecurityPrivPEOPrivilegeCode",
+      "table": "GTG_SC_SECURABLE_TO_PRIV",
+      "column": "PRIVILEGE_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ScSecurityPrivPEORoleType",
+      "table": "GTG_SC_SECURABLE_TO_PRIV",
+      "column": "ROLE_TYPE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ScSecurityPrivPEOSecurableType",
+      "table": "GTG_SC_SECURABLE_TO_PRIV",
+      "column": "SECURABLE_TYPE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ScSecurityUserGroupPEOCreatedBy",
+      "table": "GTG_SC_USER_GROUP",
+      "column": "CREATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ScSecurityUserGroupPEOCrtnDt",
+      "table": "GTG_SC_USER_GROUP",
+      "column": "CREATION_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ScSecurityUserGroupPEOGroupId",
+      "table": "GTG_SC_USER_GROUP",
+      "column": "GROUP_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ScSecurityUserGroupPEOId",
+      "table": "GTG_SC_USER_GROUP",
+      "column": "ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ScSecurityUserGroupPEOIsOrphan",
+      "table": "GTG_SC_USER_GROUP",
+      "column": "IS_ORPHAN",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ScSecurityUserGroupPEOLstUpdtDt",
+      "table": "GTG_SC_USER_GROUP",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ScSecurityUserGroupPEOLstUpdtLgn",
+      "table": "GTG_SC_USER_GROUP",
+      "column": "LAST_UPDATE_LOGIN",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ScSecurityUserGroupPEOLstUpdtdBy",
+      "table": "GTG_SC_USER_GROUP",
+      "column": "LAST_UPDATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ScSecurityUserGroupPEOUserId",
+      "table": "GTG_SC_USER_GROUP",
+      "column": "USER_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SecurityGroupPEOGroupId",
+      "table": "GTG_SC_GROUP_VL",
+      "column": "GROUP_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SecurityGroupPEOName",
+      "table": "GTG_SC_GROUP_VL",
+      "column": "NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SecurityGroupPEOObjVerNum",
+      "table": "GTG_SC_GROUP_VL",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SecurityGroupPEORoleType",
+      "table": "GTG_SC_GROUP_VL",
+      "column": "ROLE_TYPE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SecurityGroupPEOSecurableType",
+      "table": "GTG_SC_GROUP_VL",
+      "column": "SECURABLE_TYPE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    }
+  ],
+  "by_table": {
+    "PER_PERSON_NAMES_F_V": [
+      {
+        "attribute": "AsPersonUpdatedByEffEndDate",
+        "column": "EFFECTIVE_END_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AsmtPersonUpdatedByDisplayName",
+        "column": "DISPLAY_NAME",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "AsmtPersonUpdatedByEffStartDate",
+        "column": "EFFECTIVE_START_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AsmtPersonUpdatedByPersonId",
+        "column": "PERSON_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AsmtPersonUpdatedByPersonNameId",
+        "column": "PERSON_NAME_ID",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "PER_USERS": [
+      {
+        "attribute": "AsmtUpdatedByObjectVerNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AsmtUpdatedByPersonId",
+        "column": "PERSON_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AsmtUpdatedByUserGuid",
+        "column": "USER_GUID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AsmtUpdatedByUserId",
+        "column": "USER_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AsmtUpdatedByUsername",
+        "column": "USERNAME",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "GRC_ASMT_ASSESSMENT_B": [
+      {
+        "attribute": "AssessmentBasePEOAllowDuplication",
+        "column": "ALLOW_DUPLICATION",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AssessmentBasePEOAsmtPlanEffseq",
+        "column": "ASMT_PLAN_EFFSEQ",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AssessmentBasePEOAsmtPlanId",
+        "column": "ASMT_PLAN_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AssessmentBasePEOAssessmentCategoryCode",
+        "column": "ASSESSMENT_CATEGORY_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "AssessmentBasePEOAssessmentId",
+        "column": "ASSESSMENT_ID",
+        "bicc": true,
+        "pk": true
+      },
+      {
+        "attribute": "AssessmentBasePEOAssessmentInitiateDate",
+        "column": "ASSESSMENT_INITIATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "AssessmentBasePEOBusEntityAsmtCode",
+        "column": "BUS_ENTITY_ASMT_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AssessmentBasePEOBusEntityAuditTestCode",
+        "column": "BUS_ENTITY_AUDIT_TEST_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AssessmentBasePEOCompensatingSelectionCode",
+        "column": "COMPENSATING_SELECTION_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "AssessmentBasePEOCreatedBy",
+        "column": "CREATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AssessmentBasePEOCreationDate",
+        "column": "CREATION_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AssessmentBasePEODuplication",
+        "column": "DUPLICATION",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AssessmentBasePEOIsSurvMndtry",
+        "column": "IS_SURVEY_MANDATORY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AssessmentBasePEOKeySelectionCode",
+        "column": "KEY_SELECTION_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "AssessmentBasePEOLastStateCode",
+        "column": "LAST_STATE_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "AssessmentBasePEOLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "AssessmentBasePEOLastUpdateLogin",
+        "column": "LAST_UPDATE_LOGIN",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AssessmentBasePEOLastUpdatedBy",
+        "column": "LAST_UPDATED_BY",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "AssessmentBasePEOMitigatingSelectionCode",
+        "column": "MITIGATING_SELECTION_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "AssessmentBasePEOMonitoringSelectionCode",
+        "column": "MONITORING_SELECTION_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AssessmentBasePEONoSelectionCode",
+        "column": "NO_SELECTION_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "AssessmentBasePEOObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AssessmentBasePEOOtherSelectionCode",
+        "column": "OTHER_SELECTION_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "AssessmentBasePEOOwner",
+        "column": "OWNER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AssessmentBasePEOPerspAssociated",
+        "column": "PERSPECTIVE_ASSOCIATED",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AssessmentBasePEOPerspItemId",
+        "column": "PERSP_ITEM_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AssessmentBasePEOPerspTreeEffseq",
+        "column": "PERSP_TREE_EFFSEQ",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AssessmentBasePEOPerspTreeId",
+        "column": "PERSP_TREE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AssessmentBasePEOPrimaryControlsCode",
+        "column": "PRIMARY_CONTROLS_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "AssessmentBasePEORedundantSelectionCode",
+        "column": "REDUNDANT_SELECTION_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "AssessmentBasePEOResultsEntryCompletionDate",
+        "column": "RESULTS_ENTRY_COMPLETION_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "AssessmentBasePEOResultsEntryDueDate",
+        "column": "RESULTS_ENTRY_DUE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "AssessmentBasePEOResultsEntryStartDate",
+        "column": "RESULTS_ENTRY_START_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "AssessmentBasePEORootObjectTypeCode",
+        "column": "ROOT_OBJECT_TYPE_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "AssessmentBasePEOStateCode",
+        "column": "STATE_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "AssessmentBasePEOStateDate",
+        "column": "STATE_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AssessmentBasePEOSubordinateControlsCode",
+        "column": "SUBORDINATE_CONTROLS_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "AssessmentBasePEOSurveyPrefixName",
+        "column": "SURVEY_PREFIX_NAME",
+        "bicc": true,
+        "pk": false
+      }
+    ],
+    "GRC_ASMT_PLAN_B": [
+      {
+        "attribute": "AssessmentPlanBasePEOApproveCompleteDate",
+        "column": "APPROVE_COMPLETE_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AssessmentPlanBasePEOApprovedBy",
+        "column": "APPROVED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AssessmentPlanBasePEOApprovedDate",
+        "column": "APPROVED_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AssessmentPlanBasePEOAsmtPlanId",
+        "column": "ASMT_PLAN_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AssessmentPlanBasePEOAsmtTemplateEffseq",
+        "column": "ASMT_TEMPLATE_EFFSEQ",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AssessmentPlanBasePEOAsmtTemplateId",
+        "column": "ASMT_TEMPLATE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AssessmentPlanBasePEOAssessedBy",
+        "column": "ASSESSED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AssessmentPlanBasePEOAssessedDate",
+        "column": "ASSESSED_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AssessmentPlanBasePEOAssessmentCategoryCode",
+        "column": "ASSESSMENT_CATEGORY_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AssessmentPlanBasePEOBusEntityAsmtCode",
+        "column": "BUS_ENTITY_ASMT_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AssessmentPlanBasePEOBusEntityAuditTestCode",
+        "column": "BUS_ENTITY_AUDIT_TEST_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AssessmentPlanBasePEOCompensatingSelectionCode",
+        "column": "COMPENSATING_SELECTION_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AssessmentPlanBasePEOCreatedBy",
+        "column": "CREATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AssessmentPlanBasePEOCreationDate",
+        "column": "CREATION_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AssessmentPlanBasePEOEffectiveSequence",
+        "column": "EFFECTIVE_SEQUENCE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AssessmentPlanBasePEOKeySelectionCode",
+        "column": "KEY_SELECTION_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AssessmentPlanBasePEOLastStateCode",
+        "column": "LAST_STATE_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AssessmentPlanBasePEOLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "AssessmentPlanBasePEOLastUpdateLogin",
+        "column": "LAST_UPDATE_LOGIN",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AssessmentPlanBasePEOLastUpdatedBy",
+        "column": "LAST_UPDATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AssessmentPlanBasePEOMitigatingSelectionCode",
+        "column": "MITIGATING_SELECTION_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AssessmentPlanBasePEOMonitoringSelectionCode",
+        "column": "MONITORING_SELECTION_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AssessmentPlanBasePEONoSelectionCode",
+        "column": "NO_SELECTION_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AssessmentPlanBasePEOObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AssessmentPlanBasePEOOtherSelectionCode",
+        "column": "OTHER_SELECTION_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AssessmentPlanBasePEOPerspItemId",
+        "column": "PERSP_ITEM_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AssessmentPlanBasePEOPerspTreeId",
+        "column": "PERSP_TREE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AssessmentPlanBasePEOPrimaryControlsCode",
+        "column": "PRIMARY_CONTROLS_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AssessmentPlanBasePEORedundantSelectionCode",
+        "column": "REDUNDANT_SELECTION_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AssessmentPlanBasePEOReviewStartDate",
+        "column": "REVIEW_START_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AssessmentPlanBasePEOReviewedBy",
+        "column": "REVIEWED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AssessmentPlanBasePEOReviewedDate",
+        "column": "REVIEWED_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AssessmentPlanBasePEORevisionDate",
+        "column": "REVISION_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AssessmentPlanBasePEORevisionNumber",
+        "column": "REVISION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AssessmentPlanBasePEORevisionSubmittedBy",
+        "column": "REVISION_SUBMITTED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AssessmentPlanBasePEOStartDate",
+        "column": "START_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AssessmentPlanBasePEOStateCode",
+        "column": "STATE_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AssessmentPlanBasePEOStateDate",
+        "column": "STATE_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AssessmentPlanBasePEOStatus",
+        "column": "STATUS",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "AssessmentPlanBasePEOSubordinateControlsCode",
+        "column": "SUBORDINATE_CONTROLS_CODE",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "GRC_ASMT_PLAN_TL": [
+      {
+        "attribute": "AssessmentPlanTranslationPEOAsmtPlanId",
+        "column": "ASMT_PLAN_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AssessmentPlanTranslationPEOCreatedBy",
+        "column": "CREATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AssessmentPlanTranslationPEOCreationDate",
+        "column": "CREATION_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AssessmentPlanTranslationPEODetailedDescr",
+        "column": "DETAILED_DESCRIPTION",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "AssessmentPlanTranslationPEOLanguage",
+        "column": "LANGUAGE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AssessmentPlanTranslationPEOLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "AssessmentPlanTranslationPEOLastUpdateLogin",
+        "column": "LAST_UPDATE_LOGIN",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AssessmentPlanTranslationPEOLastUpdatedBy",
+        "column": "LAST_UPDATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AssessmentPlanTranslationPEOName",
+        "column": "NAME",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "AssessmentPlanTranslationPEOSourceLang",
+        "column": "SOURCE_LANG",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "GRC_ASMT_TEMPLATE_B": [
+      {
+        "attribute": "AssessmentTemplateBasePEOApproveCompleteDate",
+        "column": "APPROVE_COMPLETE_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AssessmentTemplateBasePEOApprovedBy",
+        "column": "APPROVED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AssessmentTemplateBasePEOApprovedDate",
+        "column": "APPROVED_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AssessmentTemplateBasePEOAsmtTemplateId",
+        "column": "ASMT_TEMPLATE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AssessmentTemplateBasePEOAssessedBy",
+        "column": "ASSESSED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AssessmentTemplateBasePEOAssessedDate",
+        "column": "ASSESSED_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AssessmentTemplateBasePEOAssessmentTypeCode",
+        "column": "ASSESSMENT_TYPE_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "AssessmentTemplateBasePEOCreatedBy",
+        "column": "CREATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AssessmentTemplateBasePEOCreationDate",
+        "column": "CREATION_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AssessmentTemplateBasePEOEffectiveSequence",
+        "column": "EFFECTIVE_SEQUENCE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AssessmentTemplateBasePEOLastStateCode",
+        "column": "LAST_STATE_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AssessmentTemplateBasePEOLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "AssessmentTemplateBasePEOLastUpdateLogin",
+        "column": "LAST_UPDATE_LOGIN",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AssessmentTemplateBasePEOLastUpdatedBy",
+        "column": "LAST_UPDATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AssessmentTemplateBasePEOObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AssessmentTemplateBasePEOPerspTypeCode",
+        "column": "PERSP_TYPE_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AssessmentTemplateBasePEOReviewStartDate",
+        "column": "REVIEW_START_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AssessmentTemplateBasePEOReviewedBy",
+        "column": "REVIEWED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AssessmentTemplateBasePEOReviewedDate",
+        "column": "REVIEWED_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AssessmentTemplateBasePEORevisionDate",
+        "column": "REVISION_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AssessmentTemplateBasePEORevisionNumber",
+        "column": "REVISION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AssessmentTemplateBasePEORevisionSubmittedBy",
+        "column": "REVISION_SUBMITTED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AssessmentTemplateBasePEORootObjectTypeCode",
+        "column": "ROOT_OBJECT_TYPE_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AssessmentTemplateBasePEOStartDate",
+        "column": "START_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AssessmentTemplateBasePEOStateCode",
+        "column": "STATE_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AssessmentTemplateBasePEOStateDate",
+        "column": "STATE_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AssessmentTemplateBasePEOStatus",
+        "column": "STATUS",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "GRC_ASMT_TEMPLATE_TL": [
+      {
+        "attribute": "AssessmentTemplateTranslationPEOAsmtTemplateId",
+        "column": "ASMT_TEMPLATE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AssessmentTemplateTranslationPEOCreatedBy",
+        "column": "CREATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AssessmentTemplateTranslationPEOCreationDate",
+        "column": "CREATION_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AssessmentTemplateTranslationPEODetailedDescr",
+        "column": "DETAILED_DESCRIPTION",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "AssessmentTemplateTranslationPEOLanguage",
+        "column": "LANGUAGE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AssessmentTemplateTranslationPEOLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "AssessmentTemplateTranslationPEOLastUpdateLogin",
+        "column": "LAST_UPDATE_LOGIN",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AssessmentTemplateTranslationPEOLastUpdatedBy",
+        "column": "LAST_UPDATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AssessmentTemplateTranslationPEOName",
+        "column": "NAME",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "AssessmentTemplateTranslationPEOSourceLang",
+        "column": "SOURCE_LANG",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "GRC_ASMT_ASSESSMENT_TL": [
+      {
+        "attribute": "AssessmentTranslationPEOAssessmentId",
+        "column": "ASSESSMENT_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AssessmentTranslationPEOCreatedBy",
+        "column": "CREATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AssessmentTranslationPEOCreationDate",
+        "column": "CREATION_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AssessmentTranslationPEODetailedDescription",
+        "column": "DETAILED_DESCRIPTION",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "AssessmentTranslationPEOLanguage",
+        "column": "LANGUAGE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AssessmentTranslationPEOLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "AssessmentTranslationPEOLastUpdateLogin",
+        "column": "LAST_UPDATE_LOGIN",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AssessmentTranslationPEOLastUpdatedBy",
+        "column": "LAST_UPDATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AssessmentTranslationPEOName",
+        "column": "NAME",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "AssessmentTranslationPEOSourceLang",
+        "column": "SOURCE_LANG",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "GTG_SC_FRC_SECURITY_V": [
+      {
+        "attribute": "FRCScSecurityPEOAccessorId",
+        "column": "ACCESSOR_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "FRCScSecurityPEOAccessorType",
+        "column": "ACCESSOR_TYPE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "FRCScSecurityPEOId",
+        "column": "ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "FRCScSecurityPEOIsApprover",
+        "column": "IS_APPROVER",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "FRCScSecurityPEOIsAssessor",
+        "column": "IS_ASSESSOR",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "FRCScSecurityPEOIsEditor",
+        "column": "IS_EDITOR",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "FRCScSecurityPEOIsIssueOwner",
+        "column": "IS_ISSUE_OWNER",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "FRCScSecurityPEOIsIssueValidator",
+        "column": "IS_ISSUE_VALIDATOR",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "FRCScSecurityPEOIsManager",
+        "column": "IS_MANAGER",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "FRCScSecurityPEOIsOwner",
+        "column": "IS_OWNER",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "FRCScSecurityPEOIsReviewer",
+        "column": "IS_REVIEWER",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "FRCScSecurityPEOIsViewer",
+        "column": "IS_VIEWER",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "FRCScSecurityPEORoleBitmap",
+        "column": "ROLE_BITMAP",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "FRCScSecurityPEOSecurableId",
+        "column": "SECURABLE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "FRCScSecurityPEOSecurableType",
+        "column": "SECURABLE_TYPE",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "GTG_SC_FRC_ACCESS_V": [
+      {
+        "attribute": "FRCSecurityPEOSecurableId",
+        "column": "SECURABLE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "FRCSecurityPEOSecurableType",
+        "column": "SECURABLE_TYPE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "FRCSecurityPEOUserId",
+        "column": "USER_ID",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "GTG_SC_SECURABLE_TO_PRIV": [
+      {
+        "attribute": "ScSecurityPrivPEOId",
+        "column": "ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ScSecurityPrivPEOPrivilegeCode",
+        "column": "PRIVILEGE_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ScSecurityPrivPEORoleType",
+        "column": "ROLE_TYPE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ScSecurityPrivPEOSecurableType",
+        "column": "SECURABLE_TYPE",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "GTG_SC_USER_GROUP": [
+      {
+        "attribute": "ScSecurityUserGroupPEOCreatedBy",
+        "column": "CREATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ScSecurityUserGroupPEOCrtnDt",
+        "column": "CREATION_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ScSecurityUserGroupPEOGroupId",
+        "column": "GROUP_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ScSecurityUserGroupPEOId",
+        "column": "ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ScSecurityUserGroupPEOIsOrphan",
+        "column": "IS_ORPHAN",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ScSecurityUserGroupPEOLstUpdtDt",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ScSecurityUserGroupPEOLstUpdtLgn",
+        "column": "LAST_UPDATE_LOGIN",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ScSecurityUserGroupPEOLstUpdtdBy",
+        "column": "LAST_UPDATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ScSecurityUserGroupPEOUserId",
+        "column": "USER_ID",
+        "bicc": true,
+        "pk": false
+      }
+    ],
+    "GTG_SC_GROUP_VL": [
+      {
+        "attribute": "SecurityGroupPEOGroupId",
+        "column": "GROUP_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "SecurityGroupPEOName",
+        "column": "NAME",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "SecurityGroupPEOObjVerNum",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "SecurityGroupPEORoleType",
+        "column": "ROLE_TYPE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "SecurityGroupPEOSecurableType",
+        "column": "SECURABLE_TYPE",
+        "bicc": true,
+        "pk": false
+      }
+    ]
+  }
+}

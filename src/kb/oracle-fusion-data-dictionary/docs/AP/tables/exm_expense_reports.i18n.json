@@ -1,0 +1,523 @@
+{
+  "source": "exm_expense_reports.md",
+  "source_hash": "5d57a2b034bcd3f1a1e3aad9c6debf76",
+  "translated_at": "2026-03-25",
+  "items": [
+    {
+      "id": 1,
+      "br": "Visão Geral",
+      "en": "Overview",
+      "es": "Visión General"
+    },
+    {
+      "id": 2,
+      "br": "Armazena os cabeçalhos de relatórios de despesa (Expense Reports) do módulo Expense Management. Cada registro representa um relatório submetido por um funcionário para reembolso de despesas corporativas, contendo informações gerais como data, propósito da viagem, status de aprovação, totais e referência ao funcionário solicitante.",
+      "en": "Stores the expense report headers from the Expense Management module. Each record represents a report submitted by an employee for corporate expense reimbursement, containing general information such as date, travel purpose, approval status, totals, and reference to the requesting employee.",
+      "es": "Almacena los encabezados de informes de gastos (Expense Reports) del módulo Expense Management. Cada registro representa un informe enviado por un empleado para reembolso de gastos corporativos, conteniendo información general como fecha, propósito del viaje, status de aprobación, totales y referencia al empleado solicitante."
+    },
+    {
+      "id": 3,
+      "br": "Ciclo de vida",
+      "en": "Lifecycle",
+      "es": "Ciclo de vida"
+    },
+    {
+      "id": 4,
+      "br": "O relatório de despesa passa pelas fases: rascunho → submetido → em aprovação → aprovado → pago. O status é rastreado nesta tabela.",
+      "en": "The expense report goes through the phases: draft → submitted → in approval → approved → paid. The status is tracked in this table.",
+      "es": "El informe de gastos pasa por las fases: borrador → enviado → en aprobación → aprobado → pagado. El status se rastrea en esta tabla."
+    },
+    {
+      "id": 5,
+      "br": "Propósito de Negócio",
+      "en": "Business Purpose",
+      "es": "Propósito de Negocio"
+    },
+    {
+      "id": 6,
+      "br": "Esta tabela é utilizada nos seguintes processos:",
+      "en": "This table is used in the following processes:",
+      "es": "Esta tabla se utiliza en los siguientes procesos:"
+    },
+    {
+      "id": 7,
+      "br": "Agrupamento de despesas individuais em um relatório formal para aprovação.",
+      "en": "Grouping of individual expenses into a formal report for approval.",
+      "es": "Agrupación de gastos individuales en un informe formal para aprobación."
+    },
+    {
+      "id": 8,
+      "br": "Controle do ciclo de aprovação hierárquica ou por políticas.",
+      "en": "Control of the hierarchical or policy-based approval cycle.",
+      "es": "Control del ciclo de aprobación jerárquica o por políticas."
+    },
+    {
+      "id": 9,
+      "br": "Após aprovação, o relatório gera uma fatura em [[ap_invoices_all]] para pagamento.",
+      "en": "After approval, the report generates an invoice in [[ap_invoices_all]] for payment.",
+      "es": "Tras la aprobación, el informe genera una factura en [[ap_invoices_all]] para pago."
+    },
+    {
+      "id": 10,
+      "br": "Vinculação a cash advances (adiantamentos) já concedidos ao funcionário.",
+      "en": "Linking to cash advances already granted to the employee.",
+      "es": "Vinculación a cash advances (anticipos) ya concedidos al empleado."
+    },
+    {
+      "id": 11,
+      "br": "Base para dashboards de despesas por funcionário, departamento e período.",
+      "en": "Basis for expense dashboards by employee, department, and period.",
+      "es": "Base para dashboards de gastos por empleado, departamento y período."
+    },
+    {
+      "id": 12,
+      "br": "Rastreamento de aprovações, políticas violadas e exceções.",
+      "en": "Tracking of approvals, violated policies, and exceptions.",
+      "es": "Rastreo de aprobaciones, políticas violadas y excepciones."
+    },
+    {
+      "id": 13,
+      "br": "Colunas Principais",
+      "en": "Main Columns",
+      "es": "Columnas Principales"
+    },
+    {
+      "id": 14,
+      "br": "Confiança",
+      "en": "Confidence",
+      "es": "Confianza"
+    },
+    {
+      "id": 15,
+      "br": "Escala de 0% a 100% — grau de certeza da descrição gerada por IA com base na documentação oficial Oracle (OEDMF/BICC Release 13/25A).",
+      "en": "Scale from 0% to 100% — degree of certainty of the AI-generated description based on official Oracle documentation (OEDMF/BICC Release 13/25A).",
+      "es": "Escala de 0% a 100% — grado de certeza de la descripción generada por IA con base en la documentación oficial Oracle (OEDMF/BICC Release 13/25A)."
+    },
+    {
+      "id": 16,
+      "br": "- 🟢 81–100% — Coluna presente na documentação oficial Oracle; nome, tipo e descrição confirmados.",
+      "en": "- 🟢 81–100% — Column present in official Oracle documentation; name, type and description confirmed.",
+      "es": "- 🟢 81–100% — Columna presente en la documentación oficial Oracle; nombre, tipo y descripción confirmados."
+    },
+    {
+      "id": 17,
+      "br": "- 🟡 51–80% — Coluna inferida por naming convention ou padrão Oracle; tipo exato pode variar.",
+      "en": "- 🟡 51–80% — Column inferred by naming convention or Oracle standard; exact type may vary.",
+      "es": "- 🟡 51–80% — Columna inferida por naming convention o estándar Oracle; el tipo exacto puede variar."
+    },
+    {
+      "id": 18,
+      "br": "- 🔴 0–50% — Existência ou tipo incertos; pode não existir no release atual; validar no ambiente.",
+      "en": "- 🔴 0–50% — Uncertain existence or type; may not exist in the current release; validate in the environment.",
+      "es": "- 🔴 0–50% — Existencia o tipo inciertos; puede no existir en el release actual; validar en el ambiente."
+    },
+    {
+      "id": 19,
+      "br": "Coluna",
+      "en": "Column",
+      "es": "Columna"
+    },
+    {
+      "id": 20,
+      "br": "Tipo",
+      "en": "Type",
+      "es": "Tipo"
+    },
+    {
+      "id": 21,
+      "br": "Nulo?",
+      "en": "Nullable?",
+      "es": "¿Nulo?"
+    },
+    {
+      "id": 22,
+      "br": "Categoria",
+      "en": "Category",
+      "es": "Categoría"
+    },
+    {
+      "id": 23,
+      "br": "Descrição",
+      "en": "Description",
+      "es": "Descripción"
+    },
+    {
+      "id": 24,
+      "br": "Identificador único do relatório de despesa",
+      "en": "Unique expense report identifier",
+      "es": "Identificador único del informe de gastos"
+    },
+    {
+      "id": 25,
+      "br": "Identificação",
+      "en": "Identification",
+      "es": "Identificación"
+    },
+    {
+      "id": 26,
+      "br": "Número do relatório de despesa visível ao usuário",
+      "en": "User-visible expense report number",
+      "es": "Número del informe de gastos visible al usuario"
+    },
+    {
+      "id": 27,
+      "br": "Funcionário que submeteu o relatório",
+      "en": "Employee who submitted the report",
+      "es": "Empleado que envió el informe"
+    },
+    {
+      "id": 28,
+      "br": "Template de despesa utilizado",
+      "en": "Expense template used",
+      "es": "Template de gasto utilizado"
+    },
+    {
+      "id": 29,
+      "br": "Texto livre",
+      "en": "Free text",
+      "es": "Texto libre"
+    },
+    {
+      "id": 30,
+      "br": "Propósito/finalidade do relatório (ex: \"Viagem São Paulo — reunião cliente\")",
+      "en": "Report purpose (e.g.: \"São Paulo trip — client meeting\")",
+      "es": "Propósito/finalidad del informe (ej: \"Viaje São Paulo — reunión cliente\")"
+    },
+    {
+      "id": 31,
+      "br": "Classificação",
+      "en": "Classification",
+      "es": "Clasificación"
+    },
+    {
+      "id": 32,
+      "br": "Status do relatório: SAVED, SUBMITTED, MGRPAYAPPR, INVOICED, PAID, etc.",
+      "en": "Report status: SAVED, SUBMITTED, MGRPAYAPPR, INVOICED, PAID, etc.",
+      "es": "Status del informe: SAVED, SUBMITTED, MGRPAYAPPR, INVOICED, PAID, etc."
+    },
+    {
+      "id": 33,
+      "br": "Status de aprovação: APPROVED, REJECTED, PENDING, etc.",
+      "en": "Approval status: APPROVED, REJECTED, PENDING, etc.",
+      "es": "Status de aprobación: APPROVED, REJECTED, PENDING, etc."
+    },
+    {
+      "id": 34,
+      "br": "Data",
+      "en": "Date",
+      "es": "Fecha"
+    },
+    {
+      "id": 35,
+      "br": "Data de submissão do relatório",
+      "en": "Report submission date",
+      "es": "Fecha de envío del informe"
+    },
+    {
+      "id": 36,
+      "br": "Data do relatório (informada pelo funcionário)",
+      "en": "Report date (entered by the employee)",
+      "es": "Fecha del informe (informada por el empleado)"
+    },
+    {
+      "id": 37,
+      "br": "Financeiro",
+      "en": "Financial",
+      "es": "Financiero"
+    },
+    {
+      "id": 38,
+      "br": "Valor total do relatório na moeda de reembolso",
+      "en": "Total report amount in the reimbursement currency",
+      "es": "Valor total del informe en la moneda de reembolso"
+    },
+    {
+      "id": 39,
+      "br": "Moeda",
+      "en": "Currency",
+      "es": "Moneda"
+    },
+    {
+      "id": 40,
+      "br": "Moeda de reembolso",
+      "en": "Reimbursement currency",
+      "es": "Moneda de reembolso"
+    },
+    {
+      "id": 41,
+      "br": "Valor total na moeda funcional",
+      "en": "Total amount in the functional currency",
+      "es": "Valor total en la moneda funcional"
+    },
+    {
+      "id": 42,
+      "br": "Valor devido ao funcionário (descontados adiantamentos)",
+      "en": "Amount due to the employee (net of advances)",
+      "es": "Valor debido al empleado (descontados anticipos)"
+    },
+    {
+      "id": 43,
+      "br": "Valor devido à empresa de cartão corporativo",
+      "en": "Amount due to the corporate card company",
+      "es": "Valor debido a la empresa de tarjeta corporativa"
+    },
+    {
+      "id": 44,
+      "br": "Valor de adiantamento abatido",
+      "en": "Advance amount applied",
+      "es": "Valor de anticipo aplicado"
+    },
+    {
+      "id": 45,
+      "br": "Aprovador substituto designado",
+      "en": "Designated substitute approver",
+      "es": "Aprobador sustituto designado"
+    },
+    {
+      "id": 46,
+      "br": "Contabilidade",
+      "en": "Accounting",
+      "es": "Contabilidad"
+    },
+    {
+      "id": 47,
+      "br": "Centro de custo padrão do relatório",
+      "en": "Default cost center of the report",
+      "es": "Centro de costo predeterminado del informe"
+    },
+    {
+      "id": 48,
+      "br": "Localização do funcionário",
+      "en": "Employee location",
+      "es": "Localización del empleado"
+    },
+    {
+      "id": 49,
+      "br": "Fatura de reembolso gerada",
+      "en": "Generated reimbursement invoice",
+      "es": "Factura de reembolso generada"
+    },
+    {
+      "id": 50,
+      "br": "Indica se houve violação de política (Y/N)",
+      "en": "Indicates whether there was a policy violation (Y/N)",
+      "es": "Indica si hubo violación de política (Y/N)"
+    },
+    {
+      "id": 51,
+      "br": "Status de comprovantes: REQUIRED, RECEIVED, WAIVED",
+      "en": "Receipt status: REQUIRED, RECEIVED, WAIVED",
+      "es": "Status de comprobantes: REQUIRED, RECEIVED, WAIVED"
+    },
+    {
+      "id": 52,
+      "br": "Business unit (multi-org)",
+      "en": "Business unit (multi-org)",
+      "es": "Business unit (multi-org)"
+    },
+    {
+      "id": 53,
+      "br": "Auditoria",
+      "en": "Audit",
+      "es": "Auditoría"
+    },
+    {
+      "id": 54,
+      "br": "Usuário que criou o registro",
+      "en": "User who created the record",
+      "es": "Usuario que creó el registro"
+    },
+    {
+      "id": 55,
+      "br": "Data/hora de criação",
+      "en": "Creation date/time",
+      "es": "Fecha/hora de creación"
+    },
+    {
+      "id": 56,
+      "br": "Último usuário que alterou",
+      "en": "Last user who modified",
+      "es": "Último usuario que modificó"
+    },
+    {
+      "id": 57,
+      "br": "Data/hora da última alteração",
+      "en": "Date/time of last modification",
+      "es": "Fecha/hora de la última modificación"
+    },
+    {
+      "id": 58,
+      "br": "Login da última sessão",
+      "en": "Last session login",
+      "es": "Login de la última sesión"
+    },
+    {
+      "id": 59,
+      "br": "Relacionamentos",
+      "en": "Relationships",
+      "es": "Relaciones"
+    },
+    {
+      "id": 60,
+      "br": "Tabelas-pai (FK de entrada)",
+      "en": "Parent Tables (inbound FK)",
+      "es": "Tablas padre (FK de entrada)"
+    },
+    {
+      "id": 61,
+      "br": "funcionário solicitante",
+      "en": "requesting employee",
+      "es": "empleado solicitante"
+    },
+    {
+      "id": 62,
+      "br": "template utilizado",
+      "en": "template used",
+      "es": "template utilizado"
+    },
+    {
+      "id": 63,
+      "br": "localização do funcionário",
+      "en": "employee location",
+      "es": "localización del empleado"
+    },
+    {
+      "id": 64,
+      "br": "fatura de reembolso gerada",
+      "en": "generated reimbursement invoice",
+      "es": "factura de reembolso generada"
+    },
+    {
+      "id": 65,
+      "br": "business unit",
+      "en": "business unit",
+      "es": "business unit"
+    },
+    {
+      "id": 66,
+      "br": "Tabelas-filha (FK de saída)",
+      "en": "Child Tables (outbound FK)",
+      "es": "Tablas hija (FK de salida)"
+    },
+    {
+      "id": 67,
+      "br": "linhas de despesa do relatório",
+      "en": "report expense lines",
+      "es": "líneas de gasto del informe"
+    },
+    {
+      "id": 68,
+      "br": "distribuições contábeis",
+      "en": "accounting distributions",
+      "es": "distribuciones contables"
+    },
+    {
+      "id": 69,
+      "br": "Uso Típico",
+      "en": "Typical Usage",
+      "es": "Uso Típico"
+    },
+    {
+      "id": 70,
+      "br": "Relatórios de despesa por funcionário e status",
+      "en": "Expense reports by employee and status",
+      "es": "Informes de gastos por empleado y status"
+    },
+    {
+      "id": 71,
+      "br": "Total de despesas aprovadas por período",
+      "en": "Total approved expenses by period",
+      "es": "Total de gastos aprobados por período"
+    },
+    {
+      "id": 72,
+      "br": "Relatórios com violação de política",
+      "en": "Reports with policy violation",
+      "es": "Informes con violación de política"
+    },
+    {
+      "id": 73,
+      "br": "Filtros comuns",
+      "en": "Common filters",
+      "es": "Filtros comunes"
+    },
+    {
+      "id": 74,
+      "br": "Relatórios submetidos (pendentes de aprovação)",
+      "en": "Submitted reports (pending approval)",
+      "es": "Informes enviados (pendientes de aprobación)"
+    },
+    {
+      "id": 75,
+      "br": "Aprovados pelo gestor",
+      "en": "Approved by manager",
+      "es": "Aprobados por el gestor"
+    },
+    {
+      "id": 76,
+      "br": "Reembolsados",
+      "en": "Reimbursed",
+      "es": "Reembolsados"
+    },
+    {
+      "id": 77,
+      "br": "Com violação de política",
+      "en": "With policy violation",
+      "es": "Con violación de política"
+    },
+    {
+      "id": 78,
+      "br": "Observações",
+      "en": "Notes",
+      "es": "Observaciones"
+    },
+    {
+      "id": 79,
+      "br": "O ciclo de vida do relatório é: SAVED (rascunho) → SUBMITTED (submetido) → MGRPAYAPPR (aprovado) → INVOICED (fatura gerada) → PAID (pago).",
+      "en": "The report lifecycle is: SAVED (draft) → SUBMITTED (submitted) → MGRPAYAPPR (approved) → INVOICED (invoice generated) → PAID (paid).",
+      "es": "El ciclo de vida del informe es: SAVED (borrador) → SUBMITTED (enviado) → MGRPAYAPPR (aprobado) → INVOICED (factura generada) → PAID (pagado)."
+    },
+    {
+      "id": 80,
+      "br": "Quando aprovado, o sistema gera automaticamente uma fatura em ap_invoices_all, cujo INVOICE_ID é gravado nesta tabela.",
+      "en": "When approved, the system automatically generates an invoice in ap_invoices_all, whose INVOICE_ID is recorded in this table.",
+      "es": "Al ser aprobado, el sistema genera automáticamente una factura en ap_invoices_all, cuyo INVOICE_ID se graba en esta tabla."
+    },
+    {
+      "id": 81,
+      "br": "O campo AMOUNT_DUE_EMPLOYEE desconta qualquer adiantamento (ADVANCE_AMOUNT_APPLIED) do total.",
+      "en": "The AMOUNT_DUE_EMPLOYEE field deducts any advance (ADVANCE_AMOUNT_APPLIED) from the total.",
+      "es": "El campo AMOUNT_DUE_EMPLOYEE descuenta cualquier anticipo (ADVANCE_AMOUNT_APPLIED) del total."
+    },
+    {
+      "id": 82,
+      "br": "AMOUNT_DUE_CCARD_COMPANY é usado quando a empresa paga diretamente à operadora de cartão corporativo.",
+      "en": "AMOUNT_DUE_CCARD_COMPANY is used when the company pays directly to the corporate card operator.",
+      "es": "AMOUNT_DUE_CCARD_COMPANY se usa cuando la empresa paga directamente a la operadora de tarjeta corporativa."
+    },
+    {
+      "id": 83,
+      "br": "O OVERRIDE_APPROVER_ID permite designar um aprovador diferente do gestor hierárquico.",
+      "en": "The OVERRIDE_APPROVER_ID allows designating an approver different from the hierarchical manager.",
+      "es": "El OVERRIDE_APPROVER_ID permite designar un aprobador diferente del gestor jerárquico."
+    },
+    {
+      "id": 84,
+      "br": "Referências",
+      "en": "References",
+      "es": "Referencias"
+    },
+    {
+      "id": 85,
+      "br": "[Oracle Docs — EXM_EXPENSE_REPORTS](https://docs.oracle.com/en/cloud/saas/financials/25a/oedmf/exmexpensereports.html)",
+      "en": "[Oracle Docs — EXM_EXPENSE_REPORTS](https://docs.oracle.com/en/cloud/saas/financials/25a/oedmf/exmexpensereports.html)",
+      "es": "[Oracle Docs — EXM_EXPENSE_REPORTS](https://docs.oracle.com/en/cloud/saas/financials/25a/oedmf/exmexpensereports.html)"
+    },
+    {
+      "id": 86,
+      "br": "ap-module-data-dictionary — Dossiê do módulo AP",
+      "en": "ap-module-data-dictionary — AP module dossier",
+      "es": "ap-module-data-dictionary — Dosier del módulo AP"
+    }
+  ]
+}

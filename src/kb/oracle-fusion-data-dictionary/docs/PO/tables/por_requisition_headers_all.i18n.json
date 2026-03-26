@@ -1,0 +1,481 @@
+{
+  "source": "por_requisition_headers_all.md",
+  "source_hash": "2337b4253a11d6e511d9121a68a16b00",
+  "translated_at": "2026-03-25",
+  "items": [
+    {
+      "id": 1,
+      "br": "Visão Geral",
+      "en": "Overview",
+      "es": "Vision General"
+    },
+    {
+      "id": 2,
+      "br": "Armazena os cabeçalhos de requisições de compra do módulo Procurement. Cada registro representa uma requisição de compra com informações de identificação, solicitante, status de aprovação, tipo e datas. É a tabela-mãe das linhas de requisição (POR_REQUISITION_LINES_ALL) e das distribuições (POR_REQ_DISTRIBUTIONS_ALL).",
+      "en": "Stores the purchase requisition headers from the Procurement module. Each record represents a purchase requisition with identification, requester, approval status, type, and date information. It is the parent table of requisition lines (POR_REQUISITION_LINES_ALL) and distributions (POR_REQ_DISTRIBUTIONS_ALL).",
+      "es": "Almacena los encabezados de requisiciones de compra del modulo Procurement. Cada registro representa una requisicion de compra con informacion de identificacion, solicitante, status de aprobacion, tipo y fechas. Es la tabla madre de las lineas de requisicion (POR_REQUISITION_LINES_ALL) y de las distribuciones (POR_REQ_DISTRIBUTIONS_ALL)."
+    },
+    {
+      "id": 3,
+      "br": "Sufixo _ALL",
+      "en": "_ALL Suffix",
+      "es": "Sufijo _ALL"
+    },
+    {
+      "id": 4,
+      "br": "O sufixo _ALL indica que a tabela armazena dados de todas as business units (multi-org). O filtro por REQ_BU_ID é necessário para consultas por organização específica.",
+      "en": "The _ALL suffix indicates that the table stores data from all business units (multi-org). Filtering by REQ_BU_ID is required for organization-specific queries.",
+      "es": "El sufijo _ALL indica que la tabla almacena datos de todas las business units (multi-org). El filtro por REQ_BU_ID es necesario para consultas por organizacion especifica."
+    },
+    {
+      "id": 5,
+      "br": "Propósito de Negócio",
+      "en": "Business Purpose",
+      "es": "Proposito de Negocio"
+    },
+    {
+      "id": 6,
+      "br": "Esta tabela é utilizada nos seguintes processos:",
+      "en": "This table is used in the following processes:",
+      "es": "Esta tabla se utiliza en los siguientes procesos:"
+    },
+    {
+      "id": 7,
+      "br": "Registro do pedido de compra pelo requisitante (self-service ou profissional).",
+      "en": "Recording the purchase request by the requester (self-service or professional).",
+      "es": "Registro del pedido de compra por el solicitante (self-service o profesional)."
+    },
+    {
+      "id": 8,
+      "br": "Controle do ciclo de aprovação da requisição (draft → submitted → approved → ordered).",
+      "en": "Control of the requisition approval cycle (draft -> submitted -> approved -> ordered).",
+      "es": "Control del ciclo de aprobacion de la requisicion (draft -> submitted -> approved -> ordered)."
+    },
+    {
+      "id": 9,
+      "br": "Base para criação automática ou manual de Purchase Orders.",
+      "en": "Base for automatic or manual creation of Purchase Orders.",
+      "es": "Base para creacion automatica o manual de Purchase Orders."
+    },
+    {
+      "id": 10,
+      "br": "Rastreamento do ciclo de vida da requisição até o atendimento completo.",
+      "en": "Tracking the requisition lifecycle until complete fulfillment.",
+      "es": "Rastreo del ciclo de vida de la requisicion hasta la atencion completa."
+    },
+    {
+      "id": 11,
+      "br": "Análises de volume, valor e tempo de ciclo de requisições.",
+      "en": "Analysis of requisition volume, value, and cycle time.",
+      "es": "Analisis de volumen, valor y tiempo de ciclo de requisiciones."
+    },
+    {
+      "id": 12,
+      "br": "Registro completo de quem requisitou, quando e por que.",
+      "en": "Complete record of who requisitioned, when, and why.",
+      "es": "Registro completo de quien requisito, cuando y por que."
+    },
+    {
+      "id": 13,
+      "br": "Colunas Principais",
+      "en": "Key Columns",
+      "es": "Columnas Principales"
+    },
+    {
+      "id": 14,
+      "br": "Confiança",
+      "en": "Confidence",
+      "es": "Confianza"
+    },
+    {
+      "id": 15,
+      "br": "Escala de 0% a 100% — grau de certeza da descrição gerada por IA com base na documentação oficial Oracle (OEDMF/BICC Release 13/25A).",
+      "en": "0% to 100% scale — degree of certainty of the AI-generated description based on official Oracle documentation (OEDMF/BICC Release 13/25A).",
+      "es": "Escala de 0% a 100% — grado de certeza de la descripcion generada por IA basada en la documentacion oficial de Oracle (OEDMF/BICC Release 13/25A)."
+    },
+    {
+      "id": 16,
+      "br": "- 🟢 81–100% — Coluna presente na documentação oficial Oracle; nome, tipo e descrição confirmados.",
+      "en": "- 🟢 81–100% — Column present in official Oracle documentation; name, type, and description confirmed.",
+      "es": "- 🟢 81–100% — Columna presente en la documentacion oficial de Oracle; nombre, tipo y descripcion confirmados."
+    },
+    {
+      "id": 17,
+      "br": "- 🟡 51–80% — Coluna inferida por naming convention ou padrão Oracle; tipo exato pode variar.",
+      "en": "- 🟡 51–80% — Column inferred by naming convention or Oracle pattern; exact type may vary.",
+      "es": "- 🟡 51–80% — Columna inferida por naming convention o patron Oracle; el tipo exacto puede variar."
+    },
+    {
+      "id": 18,
+      "br": "- 🔴 0–50% — Existência ou tipo incertos; pode não existir no release atual; validar no ambiente.",
+      "en": "- 🔴 0–50% — Uncertain existence or type; may not exist in the current release; validate in the environment.",
+      "es": "- 🔴 0–50% — Existencia o tipo inciertos; puede no existir en el release actual; validar en el ambiente."
+    },
+    {
+      "id": 19,
+      "br": "Coluna",
+      "en": "Column",
+      "es": "Columna"
+    },
+    {
+      "id": 20,
+      "br": "Tipo",
+      "en": "Type",
+      "es": "Tipo"
+    },
+    {
+      "id": 21,
+      "br": "Nulo?",
+      "en": "Nullable?",
+      "es": "Nulo?"
+    },
+    {
+      "id": 22,
+      "br": "Categoria",
+      "en": "Category",
+      "es": "Categoria"
+    },
+    {
+      "id": 23,
+      "br": "Descrição",
+      "en": "Description",
+      "es": "Descripcion"
+    },
+    {
+      "id": 24,
+      "br": "Identificador único do cabeçalho da requisição",
+      "en": "Unique identifier of the requisition header",
+      "es": "Identificador unico del encabezado de la requisicion"
+    },
+    {
+      "id": 25,
+      "br": "Identificação",
+      "en": "Identification",
+      "es": "Identificacion"
+    },
+    {
+      "id": 26,
+      "br": "Número visível da requisição",
+      "en": "Visible requisition number",
+      "es": "Numero visible de la requisicion"
+    },
+    {
+      "id": 27,
+      "br": "3",
+      "en": "3",
+      "es": "3"
+    },
+    {
+      "id": 28,
+      "br": "Descrição/justificativa da requisição",
+      "en": "Requisition description/justification",
+      "es": "Descripcion/justificacion de la requisicion"
+    },
+    {
+      "id": 29,
+      "br": "🟢 95%",
+      "en": "🟢 95%",
+      "es": "🟢 95%"
+    },
+    {
+      "id": 30,
+      "br": "Status",
+      "en": "Status",
+      "es": "Status"
+    },
+    {
+      "id": 31,
+      "br": "Status de aprovação: INCOMPLETE, IN PROCESS, PRE-APPROVED, APPROVED, REJECTED, CANCELLED, WITHDRAWN",
+      "en": "Approval status: INCOMPLETE, IN PROCESS, PRE-APPROVED, APPROVED, REJECTED, CANCELLED, WITHDRAWN",
+      "es": "Status de aprobacion: INCOMPLETE, IN PROCESS, PRE-APPROVED, APPROVED, REJECTED, CANCELLED, WITHDRAWN"
+    },
+    {
+      "id": 32,
+      "br": "Classificação",
+      "en": "Classification",
+      "es": "Clasificacion"
+    },
+    {
+      "id": 33,
+      "br": "Tipo da requisição: PURCHASE, INTERNAL",
+      "en": "Requisition type: PURCHASE, INTERNAL",
+      "es": "Tipo de la requisicion: PURCHASE, INTERNAL"
+    },
+    {
+      "id": 34,
+      "br": "Preparador da requisição (pessoa que digitou)",
+      "en": "Requisition preparer (person who entered it)",
+      "es": "Preparador de la requisicion (persona que la digito)"
+    },
+    {
+      "id": 35,
+      "br": "Data",
+      "en": "Date",
+      "es": "Fecha"
+    },
+    {
+      "id": 36,
+      "br": "Data da requisição",
+      "en": "Requisition date",
+      "es": "Fecha de la requisicion"
+    },
+    {
+      "id": 37,
+      "br": "Business unit da requisição",
+      "en": "Requisition business unit",
+      "es": "Business unit de la requisicion"
+    },
+    {
+      "id": 38,
+      "br": "Controle",
+      "en": "Control",
+      "es": "Control"
+    },
+    {
+      "id": 39,
+      "br": "Status de reserva de fundos (budgetary control)",
+      "en": "Fund reservation status (budgetary control)",
+      "es": "Status de reserva de fondos (budgetary control)"
+    },
+    {
+      "id": 40,
+      "br": "Status do documento no ciclo de vida",
+      "en": "Document status in the lifecycle",
+      "es": "Status del documento en el ciclo de vida"
+    },
+    {
+      "id": 41,
+      "br": "Referência",
+      "en": "Reference",
+      "es": "Referencia"
+    },
+    {
+      "id": 42,
+      "br": "Número da PO de emergência associada",
+      "en": "Associated emergency PO number",
+      "es": "Numero de la PO de emergencia asociada"
+    },
+    {
+      "id": 43,
+      "br": "Integração",
+      "en": "Integration",
+      "es": "Integracion"
+    },
+    {
+      "id": 44,
+      "br": "Código da origem (se criada via interface)",
+      "en": "Source code (if created via interface)",
+      "es": "Codigo de la origen (si creada via interfaz)"
+    },
+    {
+      "id": 45,
+      "br": "Data de aprovação final",
+      "en": "Final approval date",
+      "es": "Fecha de aprobacion final"
+    },
+    {
+      "id": 46,
+      "br": "Número de sequência de documento legal",
+      "en": "Legal document sequence number",
+      "es": "Numero de secuencia de documento legal"
+    },
+    {
+      "id": 47,
+      "br": "Auditoria",
+      "en": "Audit",
+      "es": "Auditoria"
+    },
+    {
+      "id": 48,
+      "br": "Usuário que criou o registro",
+      "en": "User who created the record",
+      "es": "Usuario que creo el registro"
+    },
+    {
+      "id": 49,
+      "br": "Data/hora de criação",
+      "en": "Creation date/time",
+      "es": "Fecha/hora de creacion"
+    },
+    {
+      "id": 50,
+      "br": "Último usuário que alterou",
+      "en": "Last user who modified",
+      "es": "Ultimo usuario que modifico"
+    },
+    {
+      "id": 51,
+      "br": "Data/hora da última alteração",
+      "en": "Last modification date/time",
+      "es": "Fecha/hora de la ultima modificacion"
+    },
+    {
+      "id": 52,
+      "br": "Login da última sessão",
+      "en": "Last session login",
+      "es": "Login de la ultima sesion"
+    },
+    {
+      "id": 53,
+      "br": "ATTRIBUTE1–15",
+      "en": "ATTRIBUTE1–15",
+      "es": "ATTRIBUTE1–15"
+    },
+    {
+      "id": 54,
+      "br": "Atributos descritivos customizáveis por implementação",
+      "en": "Customizable descriptive attributes per implementation",
+      "es": "Atributos descriptivos personalizables por implementacion"
+    },
+    {
+      "id": 55,
+      "br": "Contexto do Descriptive Flexfield",
+      "en": "Descriptive Flexfield context",
+      "es": "Contexto del Descriptive Flexfield"
+    },
+    {
+      "id": 56,
+      "br": "Relacionamentos",
+      "en": "Relationships",
+      "es": "Relaciones"
+    },
+    {
+      "id": 57,
+      "br": "Tabelas-pai (FK de entrada)",
+      "en": "Parent Tables (Inbound FK)",
+      "es": "Tablas padre (FK de entrada)"
+    },
+    {
+      "id": 58,
+      "br": "preparador da requisição",
+      "en": "requisition preparer",
+      "es": "preparador de la requisicion"
+    },
+    {
+      "id": 59,
+      "br": "business unit",
+      "en": "business unit",
+      "es": "business unit"
+    },
+    {
+      "id": 60,
+      "br": "Tabelas-filha (FK de saída)",
+      "en": "Child Tables (Outbound FK)",
+      "es": "Tablas hija (FK de salida)"
+    },
+    {
+      "id": 61,
+      "br": "linhas da requisição",
+      "en": "requisition lines",
+      "es": "lineas de la requisicion"
+    },
+    {
+      "id": 62,
+      "br": "distribuições contábeis, indiretamente via linhas",
+      "en": "accounting distributions, indirectly via lines",
+      "es": "distribuciones contables, indirectamente via lineas"
+    },
+    {
+      "id": 63,
+      "br": "locais de entrega sumarizados",
+      "en": "summarized delivery locations",
+      "es": "ubicaciones de entrega resumidas"
+    },
+    {
+      "id": 64,
+      "br": "Uso Típico",
+      "en": "Typical Usage",
+      "es": "Uso Tipico"
+    },
+    {
+      "id": 65,
+      "br": "Requisições aprovadas por período",
+      "en": "Approved requisitions by period",
+      "es": "Requisiciones aprobadas por periodo"
+    },
+    {
+      "id": 66,
+      "br": "Contagem de requisições por status",
+      "en": "Requisition count by status",
+      "es": "Conteo de requisiciones por status"
+    },
+    {
+      "id": 67,
+      "br": "Filtros comuns",
+      "en": "Common filters",
+      "es": "Filtros comunes"
+    },
+    {
+      "id": 68,
+      "br": "Requisições aprovadas",
+      "en": "Approved requisitions",
+      "es": "Requisiciones aprobadas"
+    },
+    {
+      "id": 69,
+      "br": "Em processo de aprovação",
+      "en": "In approval process",
+      "es": "En proceso de aprobacion"
+    },
+    {
+      "id": 70,
+      "br": "Requisições de compra (não internas)",
+      "en": "Purchase requisitions (not internal)",
+      "es": "Requisiciones de compra (no internas)"
+    },
+    {
+      "id": 71,
+      "br": "Observações",
+      "en": "Notes",
+      "es": "Observaciones"
+    },
+    {
+      "id": 72,
+      "br": "O AUTHORIZATION_STATUS controla todo o ciclo de vida: INCOMPLETE → IN PROCESS → PRE-APPROVED → APPROVED → (convertida em PO).",
+      "en": "The AUTHORIZATION_STATUS controls the entire lifecycle: INCOMPLETE -> IN PROCESS -> PRE-APPROVED -> APPROVED -> (converted to PO).",
+      "es": "El AUTHORIZATION_STATUS controla todo el ciclo de vida: INCOMPLETE -> IN PROCESS -> PRE-APPROVED -> APPROVED -> (convertida en PO)."
+    },
+    {
+      "id": 73,
+      "br": "TYPE_LOOKUP_CODE = 'PURCHASE' são requisições externas; INTERNAL são transferências entre organizações.",
+      "en": "TYPE_LOOKUP_CODE = 'PURCHASE' are external requisitions; INTERNAL are inter-organization transfers.",
+      "es": "TYPE_LOOKUP_CODE = 'PURCHASE' son requisiciones externas; INTERNAL son transferencias entre organizaciones."
+    },
+    {
+      "id": 74,
+      "br": "O campo PREPARER_ID referencia quem digitou a requisição, que pode ser diferente do requisitante (requester) nas linhas.",
+      "en": "The PREPARER_ID field references who entered the requisition, which may differ from the requester in the lines.",
+      "es": "El campo PREPARER_ID referencia quien digito la requisicion, que puede ser diferente del solicitante (requester) en las lineas."
+    },
+    {
+      "id": 75,
+      "br": "Requisições canceladas mantêm AUTHORIZATION_STATUS = 'CANCELLED' para histórico.",
+      "en": "Cancelled requisitions maintain AUTHORIZATION_STATUS = 'CANCELLED' for history.",
+      "es": "Requisiciones canceladas mantienen AUTHORIZATION_STATUS = 'CANCELLED' para historico."
+    },
+    {
+      "id": 76,
+      "br": "O FUNDS_STATUS é populado apenas quando budgetary control está habilitado na business unit.",
+      "en": "The FUNDS_STATUS is populated only when budgetary control is enabled in the business unit.",
+      "es": "El FUNDS_STATUS se llena solo cuando budgetary control esta habilitado en la business unit."
+    },
+    {
+      "id": 77,
+      "br": "Referências",
+      "en": "References",
+      "es": "Referencias"
+    },
+    {
+      "id": 78,
+      "br": "[Oracle Docs — POR_REQUISITION_HEADERS_ALL](https://docs.oracle.com/en/cloud/saas/procurement/25a/oedmf/porrequisitionheadersall.html)",
+      "en": "[Oracle Docs — POR_REQUISITION_HEADERS_ALL](https://docs.oracle.com/en/cloud/saas/procurement/25a/oedmf/porrequisitionheadersall.html)",
+      "es": "[Oracle Docs — POR_REQUISITION_HEADERS_ALL](https://docs.oracle.com/en/cloud/saas/procurement/25a/oedmf/porrequisitionheadersall.html)"
+    },
+    {
+      "id": 79,
+      "br": "po-module-data-dictionary — Dossiê do módulo Procurement",
+      "en": "po-module-data-dictionary — Procurement module dossier",
+      "es": "po-module-data-dictionary — Dossier del modulo Procurement"
+    }
+  ]
+}

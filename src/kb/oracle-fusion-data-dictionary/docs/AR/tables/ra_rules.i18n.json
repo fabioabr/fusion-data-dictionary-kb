@@ -1,0 +1,391 @@
+{
+  "source": "ra_rules.md",
+  "source_hash": "deab12ec3a365fc2c3cf52d46e102b13",
+  "translated_at": "2026-03-25",
+  "items": [
+    {
+      "id": 1,
+      "br": "Visão Geral",
+      "en": "Overview",
+      "es": "Visión general"
+    },
+    {
+      "id": 2,
+      "br": "Armazena as regras de reconhecimento de receita (invoicing rules e accounting rules) utilizadas pelo módulo Accounts Receivable. Cada registro define uma regra que determina como e quando a receita é reconhecida contabilmente — por exemplo, reconhecimento imediato no faturamento, rateado ao longo de um período ou diferido até o cumprimento de obrigações de performance.",
+      "en": "Stores the revenue recognition rules (invoicing rules and accounting rules) used by the Accounts Receivable module. Each record defines a rule that determines how and when revenue is recognized accounting-wise – for example, immediate recognition on invoicing, prorated over a period, or deferred until performance obligations are met.",
+      "es": "Almacena las reglas de reconocimiento de ingresos (reglas de facturación y reglas contables) utilizadas por el módulo de facturación. Cada registro define una regla que determina cómo y cuándo se reconoce el ingreso contablemente: por ejemplo, reconocimiento inmediato en la facturación, distribución a lo largo de un período o diferimiento hasta el cumplimiento de obligaciones de rendimiento."
+    },
+    {
+      "id": 3,
+      "br": "Essas regras são referenciadas pelas transações AR (via INVOICING_RULE_ID em ra_customer_trx_all) e controlam a geração de distribuições contábeis e o timing do lançamento no GL.",
+      "en": "These rules are referenced by AR transactions (via INVOICING_RULE_ID in ra_customer_trx_all) and control the generation of accounting entries and the timing of posting to the GL.",
+      "es": "Estas reglas se refieren a las transacciones AR (a través de INVOICING_RULE_ID en ra_customer_trx_all) y controlan la generación de asientos contables y el momento del registro en el GL."
+    },
+    {
+      "id": 4,
+      "br": "Propósito de Negócio",
+      "en": "Business Purpose",
+      "es": "Propósito de negocio"
+    },
+    {
+      "id": 5,
+      "br": "Esta tabela é utilizada nos seguintes processos:",
+      "en": "This table is used in the following processes:",
+      "es": "Esta tabla se utiliza en los siguientes procesos:"
+    },
+    {
+      "id": 6,
+      "br": "Define se a receita é reconhecida antecipadamente (advance), posteriormente (arrears) ou rateada (prorate) ao longo de períodos contábeis.",
+      "en": "Defines whether revenue is recognized in advance, arrears, or prorated over accounting periods.",
+      "es": "Define si el ingreso se reconoce anticipadamente (advance), posteriormente (arrears) o se distribuye (prorate) a lo largo de períodos contables."
+    },
+    {
+      "id": 7,
+      "br": "Suporte às normas ASC 606 (US GAAP) e IFRS 15, garantindo que a receita seja reconhecida de acordo com os critérios de performance obligation.",
+      "en": "Supports ASC 606 (US GAAP) and IFRS 15, ensuring that revenue is recognized according to performance obligation criteria.",
+      "es": "Soporte a las normas ASC 606 (US GAAP) e IFRS 15, garantizando que el ingreso se reconozca de acuerdo con los criterios de obligación de rendimiento."
+    },
+    {
+      "id": 8,
+      "br": "Regras de invoicing (advance/arrears) determinam se a fatura é emitida antes ou depois da entrega do serviço.",
+      "en": "Invoicing rules (advance/arrears) determine whether the invoice is issued before or after the service is delivered.",
+      "es": "Reglas de facturación (advance/arrears) determinan si la factura se emite antes o después de la prestación del servicio."
+    },
+    {
+      "id": 9,
+      "br": "Controle de receita diferida (deferred revenue) quando o faturamento ocorre antes da prestação do serviço.",
+      "en": "Controls deferred revenue when invoicing occurs before the service is provided.",
+      "es": "Control de ingresos diferidos (deferred revenue) cuando la facturación ocurre antes de la prestación del servicio."
+    },
+    {
+      "id": 10,
+      "br": "Base para reconciliação entre receita faturada e receita reconhecida.",
+      "en": "Basis for reconciliation between invoiced revenue and recognized revenue.",
+      "es": "Base para la conciliación entre ingresos facturados e ingresos reconocidos."
+    },
+    {
+      "id": 11,
+      "br": "Colunas Principais",
+      "en": "Key Columns",
+      "es": "Columnas principales"
+    },
+    {
+      "id": 12,
+      "br": "Confiança",
+      "en": "Confidence",
+      "es": "Confianza"
+    },
+    {
+      "id": 13,
+      "br": "Escala de 0% a 100% — grau de certeza da descrição gerada por IA com base na documentação oficial Oracle (OEDMF/BICC Release 13/25A).",
+      "en": "Scale of 0% to 100% – degree of certainty of the AI-generated description based on Oracle official documentation (OEDMF/BICC Release 13/25A).",
+      "es": "Escala del 0% al 100% — grado de certeza de la descripción generada por IA, basado en la documentación oficial de Oracle (OEDMF/BICC Release 13/25A)."
+    },
+    {
+      "id": 14,
+      "br": "- 🟢 81–100% — Coluna presente na documentação oficial Oracle; nome, tipo e descrição confirmados.",
+      "en": "- 🟢 81–100% – Column present in Oracle official documentation; name, type, and description confirmed.",
+      "es": "- 🟢 81–100% — Columna presente en la documentación oficial de Oracle; nombre, tipo y descripción confirmados."
+    },
+    {
+      "id": 15,
+      "br": "- 🟡 51–80% — Coluna inferida por naming convention ou padrão Oracle; tipo exato pode variar.",
+      "en": "- 🟡 51–80% – Column inferred by naming convention or Oracle standard; exact type may vary.",
+      "es": "- 🟡 51–80% — Columna inferida por convención de nomenclatura o estándar de Oracle; el tipo exacto puede variar."
+    },
+    {
+      "id": 16,
+      "br": "- 🔴 0–50% — Existência ou tipo incertos; pode não existir no release atual; validar no ambiente.",
+      "en": "- 🔴 0–50% – Existence or type uncertain; may not exist in the current release; validate in the environment.",
+      "es": "- 🔴 0–50% — Existencia o tipo inciertos; puede no existir en la versión actual; validar en el entorno."
+    },
+    {
+      "id": 17,
+      "br": "Coluna",
+      "en": "Column",
+      "es": "Columna"
+    },
+    {
+      "id": 18,
+      "br": "Tipo",
+      "en": "Type",
+      "es": "Tipo"
+    },
+    {
+      "id": 19,
+      "br": "Nulo?",
+      "en": "Null?",
+      "es": "Nulo?"
+    },
+    {
+      "id": 20,
+      "br": "Categoria",
+      "en": "Category",
+      "es": "Categoría"
+    },
+    {
+      "id": 21,
+      "br": "Descrição",
+      "en": "Description",
+      "es": "Descripción"
+    },
+    {
+      "id": 22,
+      "br": "Identificador único da regra de reconhecimento de receita",
+      "en": "Unique identifier for the revenue recognition rule",
+      "es": "Identificador único de la regla de reconocimiento de ingresos"
+    },
+    {
+      "id": 23,
+      "br": "Identificação",
+      "en": "Identifier",
+      "es": "Identificación"
+    },
+    {
+      "id": 24,
+      "br": "Nome da regra (ex.: ADVANCE INVOICE, ARREARS INVOICE)",
+      "en": "Rule name (e.g., ADVANCE INVOICE, ARREARS INVOICE)",
+      "es": "Nombre de la regla (ej., ADVANCE INVOICE, ARREARS INVOICE)"
+    },
+    {
+      "id": 25,
+      "br": "Descrição textual da regra",
+      "en": "Textual description of the rule",
+      "es": "Descripción textual de la regla"
+    },
+    {
+      "id": 26,
+      "br": "Classificação",
+      "en": "Classification",
+      "es": "Clasificación"
+    },
+    {
+      "id": 27,
+      "br": "Tipo da regra: A=Arrears (pós-entrega), I=Immediate, P=Prorate (rateio por período)",
+      "en": "Rule Type: A=Arrears (post-delivery), I=Immediate, P=Prorate (rate by period)",
+      "es": "Tipo de regla: A=Pendientes (después de la entrega), I=Inmediato, P=Proporcional (por período)"
+    },
+    {
+      "id": 28,
+      "br": "Status da regra: A=Active, I=Inactive",
+      "en": "Rule Status: A=Active, I=Inactive",
+      "es": "Estado de la regla: A=Activo, I=Inactivo"
+    },
+    {
+      "id": 29,
+      "br": "Configuração",
+      "en": "Configuration",
+      "es": "Configuración"
+    },
+    {
+      "id": 30,
+      "br": "Frequência de reconhecimento: DAILY, MONTHLY, SPECIFIC (apenas para accounting rules)",
+      "en": "Recognition Frequency: DAILY, MONTHLY, SPECIFIC (only for accounting rules)",
+      "es": "Frecuencia de reconocimiento: DIARIA, MENSUAL, ESPECÍFICO (solo para reglas contables)"
+    },
+    {
+      "id": 31,
+      "br": "Número de períodos para reconhecimento rateado (usado com TYPE=P)",
+      "en": "Number of periods for prorated recognition (used with TYPE=P)",
+      "es": "Número de períodos para reconocimiento proporcional (se utiliza con TYPE=P)"
+    },
+    {
+      "id": 32,
+      "br": "Contabilidade",
+      "en": "Accounting",
+      "es": "Contabilidad"
+    },
+    {
+      "id": 33,
+      "br": "Indica se a regra gera débito (D) ou crédito (C) no reconhecimento",
+      "en": "Indicates whether the rule generates a debit (D) or credit (C) in the recognition",
+      "es": "Indica si la regla genera débito (D) o crédito (C) en el reconocimiento"
+    },
+    {
+      "id": 34,
+      "br": "Business unit associada à regra",
+      "en": "Business unit associated with the rule",
+      "es": "Unidad de negocio asociada a la regla"
+    },
+    {
+      "id": 35,
+      "br": "Controle",
+      "en": "Control",
+      "es": "Control"
+    },
+    {
+      "id": 36,
+      "br": "Controle de concorrência otimista (OVN)",
+      "en": "Optimistic Locking Control (OVN)",
+      "es": "Control de concurrencia optimista (OVN)"
+    },
+    {
+      "id": 37,
+      "br": "Auditoria",
+      "en": "Audit",
+      "es": "Auditoría"
+    },
+    {
+      "id": 38,
+      "br": "Usuário que criou o registro",
+      "en": "User who created the record",
+      "es": "Usuario que creó el registro"
+    },
+    {
+      "id": 39,
+      "br": "Data/hora de criação",
+      "en": "Creation date/time",
+      "es": "Fecha/hora de creación"
+    },
+    {
+      "id": 40,
+      "br": "Último usuário que alterou",
+      "en": "Last user who modified",
+      "es": "Último usuario que lo modificó"
+    },
+    {
+      "id": 41,
+      "br": "Data/hora da última alteração",
+      "en": "Last modification date/time",
+      "es": "Fecha/hora de la última modificación"
+    },
+    {
+      "id": 42,
+      "br": "Login da última sessão",
+      "en": "Last session login",
+      "es": "Inicio de sesión de la última sesión"
+    },
+    {
+      "id": 43,
+      "br": "Relacionamentos",
+      "en": "Relationships",
+      "es": "Relaciones"
+    },
+    {
+      "id": 44,
+      "br": "Tabelas-pai (FK de entrada)",
+      "en": "Parent tables (FK input)",
+      "es": "Tablas padre (FK de entrada)"
+    },
+    {
+      "id": 45,
+      "br": "business unit",
+      "en": "business unit",
+      "es": "unidad de negocio"
+    },
+    {
+      "id": 46,
+      "br": "Tabelas-filha (FK de saída)",
+      "en": "Child tables (FK output)",
+      "es": "Tablas hijo (FK de salida)"
+    },
+    {
+      "id": 47,
+      "br": "ra_customer_trx_all — via INVOICING_RULE_ID → RULE_ID (transações que usam esta regra de faturamento)",
+      "en": "ra_customer_trx_all — via INVOICING_RULE_ID → RULE_ID (transactions that use this invoicing rule)",
+      "es": "ra_customer_trx_all — a través de INVOICING_RULE_ID → RULE_ID (transacciones que utilizan esta regla de facturación)"
+    },
+    {
+      "id": 48,
+      "br": "ra_customer_trx_lines_all — via ACCOUNTING_RULE_ID → RULE_ID (linhas que usam esta regra de contabilização)",
+      "en": "ra_customer_trx_lines_all — via ACCOUNTING_RULE_ID → RULE_ID (lines that use this accounting rule)",
+      "es": "ra_customer_trx_lines_all — a través de ACCOUNTING_RULE_ID → RULE_ID (líneas que utilizan esta regla de contabilización)"
+    },
+    {
+      "id": 49,
+      "br": "Uso Típico",
+      "en": "Typical Use",
+      "es": "Uso típico"
+    },
+    {
+      "id": 50,
+      "br": "Consultar todas as regras ativas",
+      "en": "Query all active rules",
+      "es": "Consultar todas las reglas activas"
+    },
+    {
+      "id": 51,
+      "br": "Identificar transações por tipo de regra de faturamento",
+      "en": "Identify transactions by invoice rule type",
+      "es": "Identificar transacciones por tipo de regla de facturación"
+    },
+    {
+      "id": 52,
+      "br": "Filtros comuns",
+      "en": "Common filters",
+      "es": "Filtros comunes"
+    },
+    {
+      "id": 53,
+      "br": "Regras de arrears (reconhecimento pós-entrega)",
+      "en": "Invoice rules (post-delivery recognition)",
+      "es": "Reglas de reconocimiento posterior a la entrega"
+    },
+    {
+      "id": 54,
+      "br": "Regras de reconhecimento imediato",
+      "en": "Immediate recognition rules",
+      "es": "Reglas de reconocimiento inmediato"
+    },
+    {
+      "id": 55,
+      "br": "Regras de prorate (rateio por período)",
+      "en": "Prorate rules (period rate)",
+      "es": "Reglas de prorrateo (rateo por período)"
+    },
+    {
+      "id": 56,
+      "br": "Apenas regras ativas",
+      "en": "Only active rules",
+      "es": "Solo reglas activas"
+    },
+    {
+      "id": 57,
+      "br": "Observações",
+      "en": "Notes",
+      "es": "Observaciones"
+    },
+    {
+      "id": 58,
+      "br": "No Oracle Fusion, as regras de faturamento (invoicing rules) e de contabilização (accounting rules) compartilham a mesma tabela, diferenciadas pelo campo TYPE.",
+      "en": "In Oracle Fusion, invoice rules and accounting rules share the same table, differentiated by the TYPE field.",
+      "es": "En Oracle Fusion, las reglas de facturación y las reglas de contabilización comparten la misma tabla, diferenciadas por el campo TYPE."
+    },
+    {
+      "id": 59,
+      "br": "As regras do tipo Arrears (A) e Advance (I) são tipicamente usadas como invoicing rules em RA_CUSTOMER_TRX_ALL.INVOICING_RULE_ID.",
+      "en": "Rules of type Arrears (A) and Advance (I) are typically used as invoice rules in RA_CUSTOMER_TRX_ALL.INVOICING_RULE_ID.",
+      "es": "Las reglas de tipo Arrears (A) y Advance (I) se utilizan típicamente como reglas de facturación en RA_CUSTOMER_TRX_ALL.INVOICING_RULE_ID."
+    },
+    {
+      "id": 60,
+      "br": "As regras do tipo Prorate (P) são tipicamente usadas como accounting rules em RA_CUSTOMER_TRX_LINES_ALL.ACCOUNTING_RULE_ID, com FREQUENCY e OCCURRENCES definindo o cronograma de reconhecimento.",
+      "en": "Rules of type Prorate (P) are typically used as accounting rules in RA_CUSTOMER_TRX_LINES_ALL.ACCOUNTING_RULE_ID, with FREQUENCY and OCCURRENCES defining the recognition schedule.",
+      "es": "Las reglas de tipo Prorate (P) se utilizan típicamente como reglas de contabilización en RA_CUSTOMER_TRX_LINES_ALL.ACCOUNTING_RULE_ID, con FREQUENCY y OCCURRENCES definiendo el calendario de reconocimiento."
+    },
+    {
+      "id": 61,
+      "br": "A tabela é pré-populada com regras seeded pela Oracle (ex.: ADVANCE INVOICE, ARREARS INVOICE). Regras customizadas podem ser criadas via setup.",
+      "en": "The table is pre-populated with rules seeded by Oracle (e.g., ADVANCE INVOICE, ARREARS INVOICE). Custom rules can be created via setup.",
+      "es": "La tabla está pre-poblada con reglas sembradas por Oracle (ej., ADVANCE INVOICE, ARREARS INVOICE). Se pueden crear reglas personalizadas a través de la configuración."
+    },
+    {
+      "id": 62,
+      "br": "Referências",
+      "en": "References",
+      "es": "Referencias"
+    },
+    {
+      "id": 63,
+      "br": "[Oracle Docs — RA_RULES](https://docs.oracle.com/en/cloud/saas/financials/25a/oedmf/rarules-25262.html)",
+      "en": "[Oracle Docs — RA_RULES](https://docs.oracle.com/en/cloud/saas/financials/25a/oedmf/rarules-25262.html)",
+      "es": "[Oracle Docs — RA_RULES](https://docs.oracle.com/en/cloud/saas/financials/25a/oedmf/rarules-25262.html)"
+    },
+    {
+      "id": 64,
+      "br": "ar-module-data-dictionary — Dossiê do módulo AR",
+      "en": "ar-module-data-dictionary — AR module data dictionary",
+      "es": "ar-module-data-dictionary — Diccionario del módulo AR"
+    }
+  ]
+}

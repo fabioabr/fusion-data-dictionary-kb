@@ -1,0 +1,1825 @@
+{
+  "meta": {
+    "pvo_name": "ProficiencyItemRatingPVO",
+    "full_path": "HcmTopModelAnalyticsGlobalAM.HcmPerformanceDocsAM.ProficiencyItemRatingPVO",
+    "module_path": "HcmTopModelAnalyticsGlobalAM.HcmPerformanceDocsAM",
+    "module_code": "HCM",
+    "type": "pvo",
+    "description": "Extrai avaliações de proficiência por item, incluindo notas, participantes e seções de avaliação. Fundamental para análise de desempenho individual e calibração."
+  },
+  "stats": {
+    "total_attributes": 127,
+    "tables_count": 8,
+    "bicc_enabled": 18,
+    "bicc_pct": 14,
+    "pk_count": 6
+  },
+  "tables": [
+    "HRA_EVALUATIONS",
+    "HRA_EVAL_ITEMS",
+    "HRA_EVAL_PARTICIPANTS",
+    "HRA_EVAL_RATINGS",
+    "HRA_EVAL_SECTIONS",
+    "HRA_TMPL_DEFNS_B",
+    "HRA_TMPL_PERIODS_B",
+    "HRT_RATING_LEVELS_B"
+  ],
+  "attributes": [
+    {
+      "name": "CreatedBy",
+      "table": "HRA_EVALUATIONS",
+      "column": "CREATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CreationDate",
+      "table": "HRA_EVALUATIONS",
+      "column": "CREATION_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "EvalItemId",
+      "table": "HRA_EVAL_ITEMS",
+      "column": "EVAL_ITEM_ID",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    },
+    {
+      "name": "EvalItemPEOAchievementDate",
+      "table": "HRA_EVAL_ITEMS",
+      "column": "ACHIEVEMENT_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "EvalItemPEOBusinessGroupId",
+      "table": "HRA_EVAL_ITEMS",
+      "column": "BUSINESS_GROUP_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "EvalItemPEOCriticalFlag",
+      "table": "HRA_EVAL_ITEMS",
+      "column": "CRITICAL_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "EvalItemPEODescription",
+      "table": "HRA_EVAL_ITEMS",
+      "column": "DESCRIPTION",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "EvalItemPEODueDate",
+      "table": "HRA_EVAL_ITEMS",
+      "column": "DUE_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "EvalItemPEOEvalSectionId",
+      "table": "HRA_EVAL_ITEMS",
+      "column": "EVAL_SECTION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "EvalItemPEOEvaluationId",
+      "table": "HRA_EVAL_ITEMS",
+      "column": "EVALUATION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "EvalItemPEOItemName",
+      "table": "HRA_EVAL_ITEMS",
+      "column": "ITEM_NAME",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "EvalItemPEOLastUpdateDate",
+      "table": "HRA_EVAL_ITEMS",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": true
+    },
+    {
+      "name": "EvalItemPEOMandatoryFlag",
+      "table": "HRA_EVAL_ITEMS",
+      "column": "MANDATORY_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "EvalItemPEOMeasurement",
+      "table": "HRA_EVAL_ITEMS",
+      "column": "MEASUREMENT",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "EvalItemPEOMinWeight",
+      "table": "HRA_EVAL_ITEMS",
+      "column": "MIN_WEIGHT",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "EvalItemPEOOwnedBy",
+      "table": "HRA_EVAL_ITEMS",
+      "column": "OWNED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "EvalItemPEOParentItemId",
+      "table": "HRA_EVAL_ITEMS",
+      "column": "PARENT_ITEM_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "EvalItemPEOPercentCompleted",
+      "table": "HRA_EVAL_ITEMS",
+      "column": "PERCENT_COMPLETED",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "EvalItemPEOPerfRatingModelId",
+      "table": "HRA_EVAL_ITEMS",
+      "column": "PERF_RATING_MODEL_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "EvalItemPEOProfRatingModelId",
+      "table": "HRA_EVAL_ITEMS",
+      "column": "PROF_RATING_MODEL_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "EvalItemPEORatingOverideFlag",
+      "table": "HRA_EVAL_ITEMS",
+      "column": "RATING_OVERIDE_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "EvalItemPEOReminderDate",
+      "table": "HRA_EVAL_ITEMS",
+      "column": "REMINDER_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "EvalItemPEOStartDate",
+      "table": "HRA_EVAL_ITEMS",
+      "column": "START_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "EvalItemPEOTargetDate",
+      "table": "HRA_EVAL_ITEMS",
+      "column": "TARGET_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "EvalItemPEOTargetPerfRevRatingId",
+      "table": "HRA_EVAL_ITEMS",
+      "column": "TARGET_PERF_REV_RATING_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "EvalItemPEOTargetProfRevRatingId",
+      "table": "HRA_EVAL_ITEMS",
+      "column": "TARGET_PROF_REV_RATING_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "EvalItemPEOWeight",
+      "table": "HRA_EVAL_ITEMS",
+      "column": "WEIGHT",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "EvalParticipantPEOBusinessGroupId",
+      "table": "HRA_EVAL_PARTICIPANTS",
+      "column": "BUSINESS_GROUP_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "EvalParticipantPEOEvalParticipantId",
+      "table": "HRA_EVAL_PARTICIPANTS",
+      "column": "EVAL_PARTICIPANT_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "EvalParticipantPEOEvalRoleId",
+      "table": "HRA_EVAL_PARTICIPANTS",
+      "column": "EVAL_ROLE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "EvalParticipantPEOEvaluationId",
+      "table": "HRA_EVAL_PARTICIPANTS",
+      "column": "EVALUATION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "EvalParticipantPEOLastUpdateDate",
+      "table": "HRA_EVAL_PARTICIPANTS",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": true
+    },
+    {
+      "name": "EvalParticipantPEOParticipationStatusCode",
+      "table": "HRA_EVAL_PARTICIPANTS",
+      "column": "PARTICIPATION_STATUS_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "EvalParticipantPEOPersonId",
+      "table": "HRA_EVAL_PARTICIPANTS",
+      "column": "PERSON_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "EvalParticipantPEOQuestionnaireId",
+      "table": "HRA_EVAL_PARTICIPANTS",
+      "column": "QUESTIONNAIRE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "EvalParticipantPEORoleTypeCode",
+      "table": "HRA_EVAL_PARTICIPANTS",
+      "column": "ROLE_TYPE_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "EvalRatingId",
+      "table": "HRA_EVAL_RATINGS",
+      "column": "EVAL_RATING_ID",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    },
+    {
+      "name": "EvalRatingProficiencyPEOBusinessGroupId",
+      "table": "HRA_EVAL_RATINGS",
+      "column": "BUSINESS_GROUP_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "EvalRatingProficiencyPEOCalculatedRating",
+      "table": "HRA_EVAL_RATINGS",
+      "column": "CALCULATED_RATING",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "EvalRatingProficiencyPEOCommentText",
+      "table": "HRA_EVAL_RATINGS",
+      "column": "COMMENT_TEXT",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "EvalRatingProficiencyPEOComments",
+      "table": "HRA_EVAL_RATINGS",
+      "column": "COMMENTS",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "EvalRatingProficiencyPEOEvalParticipantId",
+      "table": "HRA_EVAL_RATINGS",
+      "column": "EVAL_PARTICIPANT_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "EvalRatingProficiencyPEOEvaluationId",
+      "table": "HRA_EVAL_RATINGS",
+      "column": "EVALUATION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "EvalRatingProficiencyPEOLastUpdateDate",
+      "table": "HRA_EVAL_RATINGS",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": true
+    },
+    {
+      "name": "EvalRatingProficiencyPEOPerformanceRatingId",
+      "table": "HRA_EVAL_RATINGS",
+      "column": "PERFORMANCE_RATING_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "EvalRatingProficiencyPEOProficiencyRatingId",
+      "table": "HRA_EVAL_RATINGS",
+      "column": "PROFICIENCY_RATING_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "EvalRatingProficiencyPEOReferenceId",
+      "table": "HRA_EVAL_RATINGS",
+      "column": "REFERENCE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "EvalRatingProficiencyPEOReferenceType",
+      "table": "HRA_EVAL_RATINGS",
+      "column": "REFERENCE_TYPE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "EvalRatingProficiencyPEOReviewPoints",
+      "table": "HRA_EVAL_RATINGS",
+      "column": "REVIEW_POINTS",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "EvalRatingProficiencyPEORoleTypeCode",
+      "table": "HRA_EVAL_RATINGS",
+      "column": "ROLE_TYPE_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "EvalSectionId",
+      "table": "HRA_EVAL_SECTIONS",
+      "column": "EVAL_SECTION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "EvalSectionPEOCommentText",
+      "table": "HRA_EVAL_SECTIONS",
+      "column": "COMMENT_TEXT",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "EvalSectionPEOComments",
+      "table": "HRA_EVAL_SECTIONS",
+      "column": "COMMENTS",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "EvalSectionPEOLastUpdateDate",
+      "table": "HRA_EVAL_SECTIONS",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": true
+    },
+    {
+      "name": "EvalSectionPEOSectionTypeCode",
+      "table": "HRA_EVAL_SECTIONS",
+      "column": "SECTION_TYPE_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "EvaluationId",
+      "table": "HRA_EVALUATIONS",
+      "column": "EVALUATION_ID",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    },
+    {
+      "name": "EvaluationPEOBusinessGroupId",
+      "table": "HRA_EVALUATIONS",
+      "column": "BUSINESS_GROUP_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "EvaluationPEOCalculationRatingsFlag",
+      "table": "HRA_EVALUATIONS",
+      "column": "CALCULATION_RATINGS_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "EvaluationPEODecimalPlaces",
+      "table": "HRA_EVALUATIONS",
+      "column": "DECIMAL_PLACES",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "EvaluationPEOEndDate",
+      "table": "HRA_EVALUATIONS",
+      "column": "END_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "EvaluationPEOEvaluationDate",
+      "table": "HRA_EVALUATIONS",
+      "column": "EVALUATION_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "EvaluationPEOLanguageCode",
+      "table": "HRA_EVALUATIONS",
+      "column": "LANGUAGE_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "EvaluationPEOLockedByUserId",
+      "table": "HRA_EVALUATIONS",
+      "column": "LOCKED_BY_USER_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "EvaluationPEOManagerComments",
+      "table": "HRA_EVALUATIONS",
+      "column": "MANAGER_COMMENTS",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "EvaluationPEOManagerId",
+      "table": "HRA_EVALUATIONS",
+      "column": "MANAGER_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "EvaluationPEOMappingMethodCode",
+      "table": "HRA_EVALUATIONS",
+      "column": "MAPPING_METHOD_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "EvaluationPEOMeetingHeldDate",
+      "table": "HRA_EVALUATIONS",
+      "column": "MEETING_HELD_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "EvaluationPEOPrevStatusCode",
+      "table": "HRA_EVALUATIONS",
+      "column": "PREV_STATUS_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "EvaluationPEORoundingRuleCode",
+      "table": "HRA_EVALUATIONS",
+      "column": "ROUNDING_RULE_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "EvaluationPEOSelectManagerAllowedFlag",
+      "table": "HRA_EVALUATIONS",
+      "column": "SELECT_MANAGER_ALLOWED_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "EvaluationPEOStarRatingEnabledFlag",
+      "table": "HRA_EVALUATIONS",
+      "column": "STAR_RATING_ENABLED_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "EvaluationPEOStartDate",
+      "table": "HRA_EVALUATIONS",
+      "column": "START_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "EvaluationPEOStatusCode",
+      "table": "HRA_EVALUATIONS",
+      "column": "STATUS_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "EvaluationPEOTemplateDefnId",
+      "table": "HRA_EVALUATIONS",
+      "column": "TEMPLATE_DEFN_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "EvaluationPEOTmplPeriodId",
+      "table": "HRA_EVALUATIONS",
+      "column": "TMPL_PERIOD_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "EvaluationPEOWorkerComments",
+      "table": "HRA_EVALUATIONS",
+      "column": "WORKER_COMMENTS",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "EvaluationPEOWorkerId",
+      "table": "HRA_EVALUATIONS",
+      "column": "WORKER_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LastUpdateDate",
+      "table": "HRA_EVALUATIONS",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": true
+    },
+    {
+      "name": "LastUpdateLogin",
+      "table": "HRA_EVALUATIONS",
+      "column": "LAST_UPDATE_LOGIN",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LastUpdatedBy",
+      "table": "HRA_EVALUATIONS",
+      "column": "LAST_UPDATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ObjectVersionNumber",
+      "table": "HRA_EVALUATIONS",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RatingLevelBPEOBusinessGroupId",
+      "table": "HRT_RATING_LEVELS_B",
+      "column": "BUSINESS_GROUP_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RatingLevelBPEOCareerStrDev",
+      "table": "HRT_RATING_LEVELS_B",
+      "column": "CAREER_STR_DEV",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RatingLevelBPEODateFrom",
+      "table": "HRT_RATING_LEVELS_B",
+      "column": "DATE_FROM",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RatingLevelBPEODateTo",
+      "table": "HRT_RATING_LEVELS_B",
+      "column": "DATE_TO",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RatingLevelBPEOFromPoints",
+      "table": "HRT_RATING_LEVELS_B",
+      "column": "FROM_POINTS",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RatingLevelBPEOLastUpdateDate",
+      "table": "HRT_RATING_LEVELS_B",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": true
+    },
+    {
+      "name": "RatingLevelBPEOMaxRatingDistribution",
+      "table": "HRT_RATING_LEVELS_B",
+      "column": "MAX_RATING_DISTRIBUTION",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RatingLevelBPEOMinRatingDistribution",
+      "table": "HRT_RATING_LEVELS_B",
+      "column": "MIN_RATING_DISTRIBUTION",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RatingLevelBPEOModuleId",
+      "table": "HRT_RATING_LEVELS_B",
+      "column": "MODULE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RatingLevelBPEONumericRating",
+      "table": "HRT_RATING_LEVELS_B",
+      "column": "NUMERIC_RATING",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RatingLevelBPEORatingLevelCode",
+      "table": "HRT_RATING_LEVELS_B",
+      "column": "RATING_LEVEL_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RatingLevelBPEORatingLevelId",
+      "table": "HRT_RATING_LEVELS_B",
+      "column": "RATING_LEVEL_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RatingLevelBPEORatingModelId",
+      "table": "HRT_RATING_LEVELS_B",
+      "column": "RATING_MODEL_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RatingLevelBPEOReviewPoints",
+      "table": "HRT_RATING_LEVELS_B",
+      "column": "REVIEW_POINTS",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RatingLevelBPEOStarRating",
+      "table": "HRT_RATING_LEVELS_B",
+      "column": "STAR_RATING",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RatingLevelBPEOToPoints",
+      "table": "HRT_RATING_LEVELS_B",
+      "column": "TO_POINTS",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReferenceItemId",
+      "table": "HRA_EVAL_ITEMS",
+      "column": "REFERENCE_ITEM_ID",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    },
+    {
+      "name": "ReferenceSectionId",
+      "table": "HRA_EVAL_SECTIONS",
+      "column": "REFERENCE_SECTION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TemplateDefnBPEOBusinessGroupId",
+      "table": "HRA_TMPL_DEFNS_B",
+      "column": "BUSINESS_GROUP_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TemplateDefnBPEOCalculateRatingsFlag",
+      "table": "HRA_TMPL_DEFNS_B",
+      "column": "CALCULATE_RATINGS_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TemplateDefnBPEODateFrom",
+      "table": "HRA_TMPL_DEFNS_B",
+      "column": "DATE_FROM",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TemplateDefnBPEODateTo",
+      "table": "HRA_TMPL_DEFNS_B",
+      "column": "DATE_TO",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TemplateDefnBPEODecimalPlaces",
+      "table": "HRA_TMPL_DEFNS_B",
+      "column": "DECIMAL_PLACES",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TemplateDefnBPEODocTypeId",
+      "table": "HRA_TMPL_DEFNS_B",
+      "column": "DOC_TYPE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TemplateDefnBPEOLastUpdateDate",
+      "table": "HRA_TMPL_DEFNS_B",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": true
+    },
+    {
+      "name": "TemplateDefnBPEOMappingMethodCode",
+      "table": "HRA_TMPL_DEFNS_B",
+      "column": "MAPPING_METHOD_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TemplateDefnBPEOProcessFlowId",
+      "table": "HRA_TMPL_DEFNS_B",
+      "column": "PROCESS_FLOW_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TemplateDefnBPEORoundingRuleCode",
+      "table": "HRA_TMPL_DEFNS_B",
+      "column": "ROUNDING_RULE_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TemplateDefnBPEOSelectMgrAllowedFlag",
+      "table": "HRA_TMPL_DEFNS_B",
+      "column": "SELECT_MGR_ALLOWED_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TemplateDefnBPEOSetId",
+      "table": "HRA_TMPL_DEFNS_B",
+      "column": "SET_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TemplateDefnBPEOShowParticipantNames",
+      "table": "HRA_TMPL_DEFNS_B",
+      "column": "SHOW_PARTICIPANT_NAMES",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TemplateDefnBPEOStarRatingEnabledFlag",
+      "table": "HRA_TMPL_DEFNS_B",
+      "column": "STAR_RATING_ENABLED_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TemplateDefnBPEOStatusCode",
+      "table": "HRA_TMPL_DEFNS_B",
+      "column": "STATUS_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TemplateDefnBPEOTemplateDefnId",
+      "table": "HRA_TMPL_DEFNS_B",
+      "column": "TEMPLATE_DEFN_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TemplatePeriodBPEOBusinessGroupId",
+      "table": "HRA_TMPL_PERIODS_B",
+      "column": "BUSINESS_GROUP_ID",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    },
+    {
+      "name": "TemplatePeriodBPEOCreatedBy",
+      "table": "HRA_TMPL_PERIODS_B",
+      "column": "CREATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TemplatePeriodBPEOCreationDate",
+      "table": "HRA_TMPL_PERIODS_B",
+      "column": "CREATION_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TemplatePeriodBPEOLastUpdateDate",
+      "table": "HRA_TMPL_PERIODS_B",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": true
+    },
+    {
+      "name": "TemplatePeriodBPEOLastUpdateLogin",
+      "table": "HRA_TMPL_PERIODS_B",
+      "column": "LAST_UPDATE_LOGIN",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TemplatePeriodBPEOLastUpdatedBy",
+      "table": "HRA_TMPL_PERIODS_B",
+      "column": "LAST_UPDATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TemplatePeriodBPEONominalFromDate",
+      "table": "HRA_TMPL_PERIODS_B",
+      "column": "NOMINAL_FROM_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TemplatePeriodBPEONominalToDate",
+      "table": "HRA_TMPL_PERIODS_B",
+      "column": "NOMINAL_TO_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TemplatePeriodBPEOObjectVersionNumber",
+      "table": "HRA_TMPL_PERIODS_B",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TemplatePeriodBPEOReviewPeriodId",
+      "table": "HRA_TMPL_PERIODS_B",
+      "column": "REVIEW_PERIOD_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TemplatePeriodBPEOTemplateDefnId",
+      "table": "HRA_TMPL_PERIODS_B",
+      "column": "TEMPLATE_DEFN_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TemplatePeriodBPEOTmplPeriodId",
+      "table": "HRA_TMPL_PERIODS_B",
+      "column": "TMPL_PERIOD_ID",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    }
+  ],
+  "by_table": {
+    "HRA_EVALUATIONS": [
+      {
+        "attribute": "CreatedBy",
+        "column": "CREATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CreationDate",
+        "column": "CREATION_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "EvaluationId",
+        "column": "EVALUATION_ID",
+        "bicc": true,
+        "pk": true
+      },
+      {
+        "attribute": "EvaluationPEOBusinessGroupId",
+        "column": "BUSINESS_GROUP_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "EvaluationPEOCalculationRatingsFlag",
+        "column": "CALCULATION_RATINGS_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "EvaluationPEODecimalPlaces",
+        "column": "DECIMAL_PLACES",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "EvaluationPEOEndDate",
+        "column": "END_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "EvaluationPEOEvaluationDate",
+        "column": "EVALUATION_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "EvaluationPEOLanguageCode",
+        "column": "LANGUAGE_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "EvaluationPEOLockedByUserId",
+        "column": "LOCKED_BY_USER_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "EvaluationPEOManagerComments",
+        "column": "MANAGER_COMMENTS",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "EvaluationPEOManagerId",
+        "column": "MANAGER_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "EvaluationPEOMappingMethodCode",
+        "column": "MAPPING_METHOD_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "EvaluationPEOMeetingHeldDate",
+        "column": "MEETING_HELD_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "EvaluationPEOPrevStatusCode",
+        "column": "PREV_STATUS_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "EvaluationPEORoundingRuleCode",
+        "column": "ROUNDING_RULE_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "EvaluationPEOSelectManagerAllowedFlag",
+        "column": "SELECT_MANAGER_ALLOWED_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "EvaluationPEOStarRatingEnabledFlag",
+        "column": "STAR_RATING_ENABLED_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "EvaluationPEOStartDate",
+        "column": "START_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "EvaluationPEOStatusCode",
+        "column": "STATUS_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "EvaluationPEOTemplateDefnId",
+        "column": "TEMPLATE_DEFN_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "EvaluationPEOTmplPeriodId",
+        "column": "TMPL_PERIOD_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "EvaluationPEOWorkerComments",
+        "column": "WORKER_COMMENTS",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "EvaluationPEOWorkerId",
+        "column": "WORKER_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "LastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "LastUpdateLogin",
+        "column": "LAST_UPDATE_LOGIN",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "LastUpdatedBy",
+        "column": "LAST_UPDATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "HRA_EVAL_ITEMS": [
+      {
+        "attribute": "EvalItemId",
+        "column": "EVAL_ITEM_ID",
+        "bicc": true,
+        "pk": true
+      },
+      {
+        "attribute": "EvalItemPEOAchievementDate",
+        "column": "ACHIEVEMENT_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "EvalItemPEOBusinessGroupId",
+        "column": "BUSINESS_GROUP_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "EvalItemPEOCriticalFlag",
+        "column": "CRITICAL_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "EvalItemPEODescription",
+        "column": "DESCRIPTION",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "EvalItemPEODueDate",
+        "column": "DUE_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "EvalItemPEOEvalSectionId",
+        "column": "EVAL_SECTION_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "EvalItemPEOEvaluationId",
+        "column": "EVALUATION_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "EvalItemPEOItemName",
+        "column": "ITEM_NAME",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "EvalItemPEOLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "EvalItemPEOMandatoryFlag",
+        "column": "MANDATORY_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "EvalItemPEOMeasurement",
+        "column": "MEASUREMENT",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "EvalItemPEOMinWeight",
+        "column": "MIN_WEIGHT",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "EvalItemPEOOwnedBy",
+        "column": "OWNED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "EvalItemPEOParentItemId",
+        "column": "PARENT_ITEM_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "EvalItemPEOPercentCompleted",
+        "column": "PERCENT_COMPLETED",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "EvalItemPEOPerfRatingModelId",
+        "column": "PERF_RATING_MODEL_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "EvalItemPEOProfRatingModelId",
+        "column": "PROF_RATING_MODEL_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "EvalItemPEORatingOverideFlag",
+        "column": "RATING_OVERIDE_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "EvalItemPEOReminderDate",
+        "column": "REMINDER_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "EvalItemPEOStartDate",
+        "column": "START_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "EvalItemPEOTargetDate",
+        "column": "TARGET_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "EvalItemPEOTargetPerfRevRatingId",
+        "column": "TARGET_PERF_REV_RATING_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "EvalItemPEOTargetProfRevRatingId",
+        "column": "TARGET_PROF_REV_RATING_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "EvalItemPEOWeight",
+        "column": "WEIGHT",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReferenceItemId",
+        "column": "REFERENCE_ITEM_ID",
+        "bicc": true,
+        "pk": true
+      }
+    ],
+    "HRA_EVAL_PARTICIPANTS": [
+      {
+        "attribute": "EvalParticipantPEOBusinessGroupId",
+        "column": "BUSINESS_GROUP_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "EvalParticipantPEOEvalParticipantId",
+        "column": "EVAL_PARTICIPANT_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "EvalParticipantPEOEvalRoleId",
+        "column": "EVAL_ROLE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "EvalParticipantPEOEvaluationId",
+        "column": "EVALUATION_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "EvalParticipantPEOLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "EvalParticipantPEOParticipationStatusCode",
+        "column": "PARTICIPATION_STATUS_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "EvalParticipantPEOPersonId",
+        "column": "PERSON_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "EvalParticipantPEOQuestionnaireId",
+        "column": "QUESTIONNAIRE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "EvalParticipantPEORoleTypeCode",
+        "column": "ROLE_TYPE_CODE",
+        "bicc": true,
+        "pk": false
+      }
+    ],
+    "HRA_EVAL_RATINGS": [
+      {
+        "attribute": "EvalRatingId",
+        "column": "EVAL_RATING_ID",
+        "bicc": true,
+        "pk": true
+      },
+      {
+        "attribute": "EvalRatingProficiencyPEOBusinessGroupId",
+        "column": "BUSINESS_GROUP_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "EvalRatingProficiencyPEOCalculatedRating",
+        "column": "CALCULATED_RATING",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "EvalRatingProficiencyPEOCommentText",
+        "column": "COMMENT_TEXT",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "EvalRatingProficiencyPEOComments",
+        "column": "COMMENTS",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "EvalRatingProficiencyPEOEvalParticipantId",
+        "column": "EVAL_PARTICIPANT_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "EvalRatingProficiencyPEOEvaluationId",
+        "column": "EVALUATION_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "EvalRatingProficiencyPEOLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "EvalRatingProficiencyPEOPerformanceRatingId",
+        "column": "PERFORMANCE_RATING_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "EvalRatingProficiencyPEOProficiencyRatingId",
+        "column": "PROFICIENCY_RATING_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "EvalRatingProficiencyPEOReferenceId",
+        "column": "REFERENCE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "EvalRatingProficiencyPEOReferenceType",
+        "column": "REFERENCE_TYPE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "EvalRatingProficiencyPEOReviewPoints",
+        "column": "REVIEW_POINTS",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "EvalRatingProficiencyPEORoleTypeCode",
+        "column": "ROLE_TYPE_CODE",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "HRA_EVAL_SECTIONS": [
+      {
+        "attribute": "EvalSectionId",
+        "column": "EVAL_SECTION_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "EvalSectionPEOCommentText",
+        "column": "COMMENT_TEXT",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "EvalSectionPEOComments",
+        "column": "COMMENTS",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "EvalSectionPEOLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "EvalSectionPEOSectionTypeCode",
+        "column": "SECTION_TYPE_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReferenceSectionId",
+        "column": "REFERENCE_SECTION_ID",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "HRT_RATING_LEVELS_B": [
+      {
+        "attribute": "RatingLevelBPEOBusinessGroupId",
+        "column": "BUSINESS_GROUP_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "RatingLevelBPEOCareerStrDev",
+        "column": "CAREER_STR_DEV",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "RatingLevelBPEODateFrom",
+        "column": "DATE_FROM",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "RatingLevelBPEODateTo",
+        "column": "DATE_TO",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "RatingLevelBPEOFromPoints",
+        "column": "FROM_POINTS",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "RatingLevelBPEOLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "RatingLevelBPEOMaxRatingDistribution",
+        "column": "MAX_RATING_DISTRIBUTION",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "RatingLevelBPEOMinRatingDistribution",
+        "column": "MIN_RATING_DISTRIBUTION",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "RatingLevelBPEOModuleId",
+        "column": "MODULE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "RatingLevelBPEONumericRating",
+        "column": "NUMERIC_RATING",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "RatingLevelBPEORatingLevelCode",
+        "column": "RATING_LEVEL_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "RatingLevelBPEORatingLevelId",
+        "column": "RATING_LEVEL_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "RatingLevelBPEORatingModelId",
+        "column": "RATING_MODEL_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "RatingLevelBPEOReviewPoints",
+        "column": "REVIEW_POINTS",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "RatingLevelBPEOStarRating",
+        "column": "STAR_RATING",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "RatingLevelBPEOToPoints",
+        "column": "TO_POINTS",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "HRA_TMPL_DEFNS_B": [
+      {
+        "attribute": "TemplateDefnBPEOBusinessGroupId",
+        "column": "BUSINESS_GROUP_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TemplateDefnBPEOCalculateRatingsFlag",
+        "column": "CALCULATE_RATINGS_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TemplateDefnBPEODateFrom",
+        "column": "DATE_FROM",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TemplateDefnBPEODateTo",
+        "column": "DATE_TO",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TemplateDefnBPEODecimalPlaces",
+        "column": "DECIMAL_PLACES",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TemplateDefnBPEODocTypeId",
+        "column": "DOC_TYPE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TemplateDefnBPEOLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TemplateDefnBPEOMappingMethodCode",
+        "column": "MAPPING_METHOD_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TemplateDefnBPEOProcessFlowId",
+        "column": "PROCESS_FLOW_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TemplateDefnBPEORoundingRuleCode",
+        "column": "ROUNDING_RULE_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TemplateDefnBPEOSelectMgrAllowedFlag",
+        "column": "SELECT_MGR_ALLOWED_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TemplateDefnBPEOSetId",
+        "column": "SET_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TemplateDefnBPEOShowParticipantNames",
+        "column": "SHOW_PARTICIPANT_NAMES",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TemplateDefnBPEOStarRatingEnabledFlag",
+        "column": "STAR_RATING_ENABLED_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TemplateDefnBPEOStatusCode",
+        "column": "STATUS_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TemplateDefnBPEOTemplateDefnId",
+        "column": "TEMPLATE_DEFN_ID",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "HRA_TMPL_PERIODS_B": [
+      {
+        "attribute": "TemplatePeriodBPEOBusinessGroupId",
+        "column": "BUSINESS_GROUP_ID",
+        "bicc": true,
+        "pk": true
+      },
+      {
+        "attribute": "TemplatePeriodBPEOCreatedBy",
+        "column": "CREATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TemplatePeriodBPEOCreationDate",
+        "column": "CREATION_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TemplatePeriodBPEOLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TemplatePeriodBPEOLastUpdateLogin",
+        "column": "LAST_UPDATE_LOGIN",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TemplatePeriodBPEOLastUpdatedBy",
+        "column": "LAST_UPDATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TemplatePeriodBPEONominalFromDate",
+        "column": "NOMINAL_FROM_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TemplatePeriodBPEONominalToDate",
+        "column": "NOMINAL_TO_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TemplatePeriodBPEOObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TemplatePeriodBPEOReviewPeriodId",
+        "column": "REVIEW_PERIOD_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TemplatePeriodBPEOTemplateDefnId",
+        "column": "TEMPLATE_DEFN_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TemplatePeriodBPEOTmplPeriodId",
+        "column": "TMPL_PERIOD_ID",
+        "bicc": true,
+        "pk": true
+      }
+    ]
+  }
+}

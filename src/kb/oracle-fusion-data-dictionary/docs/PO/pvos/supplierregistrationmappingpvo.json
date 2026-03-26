@@ -1,0 +1,1018 @@
+{
+  "meta": {
+    "pvo_name": "SupplierRegistrationMappingPVO",
+    "full_path": "FscmTopModelAM.PrcPozPublicViewAM.SupplierRegistrationMappingPVO",
+    "module_path": "FscmTopModelAM.PrcPozPublicViewAM",
+    "module_code": "PO",
+    "type": "pvo",
+    "description": "Extrai o mapeamento entre solicitações de registro e fornecedores efetivados, rastreando a conversão de prospects em fornecedores ativos. Permite análise de funil de cadastramento e taxa de conversão."
+  },
+  "stats": {
+    "total_attributes": 70,
+    "tables_count": 5,
+    "bicc_enabled": 26,
+    "bicc_pct": 37,
+    "pk_count": 2
+  },
+  "tables": [
+    "FND_TERRITORIES_VL",
+    "FUN_ALL_BUSINESS_UNITS_V",
+    "POZ_SUPPLIER_MAPPINGS",
+    "POZ_SUPPLIER_REGISTRATIONS",
+    "POZ_SUP_REG_PII"
+  ],
+  "attributes": [
+    {
+      "name": "BUBusinessUnitId",
+      "table": "FUN_ALL_BUSINESS_UNITS_V",
+      "column": "BU_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BUName",
+      "table": "FUN_ALL_BUSINESS_UNITS_V",
+      "column": "BU_NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "DeniedPartyFlag",
+      "table": "POZ_SUPPLIER_REGISTRATIONS",
+      "column": "DENIED_PARTY_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RejectComments",
+      "table": "POZ_SUPPLIER_REGISTRATIONS",
+      "column": "REJECT_COMMENTS",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RejectReasonCode",
+      "table": "POZ_SUPPLIER_REGISTRATIONS",
+      "column": "REJECT_REASON_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SuppMapMappingId",
+      "table": "POZ_SUPPLIER_MAPPINGS",
+      "column": "MAPPING_ID",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    },
+    {
+      "name": "SuppMapSupplierRegId",
+      "table": "POZ_SUPPLIER_MAPPINGS",
+      "column": "SUPPLIER_REG_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SuppRegPiiIncomeTaxId",
+      "table": "POZ_SUP_REG_PII",
+      "column": "INCOME_TAX_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SuppRegPiiSupplierRegId1",
+      "table": "POZ_SUP_REG_PII",
+      "column": "SUPPLIER_REG_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SuppRegPiiTaxRegistrationNumber",
+      "table": "POZ_SUP_REG_PII",
+      "column": "TAX_REGISTRATION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SupplierRegId",
+      "table": "POZ_SUPPLIER_REGISTRATIONS",
+      "column": "SUPPLIER_REG_ID",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    },
+    {
+      "name": "SupplierRegistrationAddressLine1",
+      "table": "POZ_SUPPLIER_REGISTRATIONS",
+      "column": "ADDRESS_LINE1",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SupplierRegistrationAddressLine2",
+      "table": "POZ_SUPPLIER_REGISTRATIONS",
+      "column": "ADDRESS_LINE2",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SupplierRegistrationAddressLine3",
+      "table": "POZ_SUPPLIER_REGISTRATIONS",
+      "column": "ADDRESS_LINE3",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SupplierRegistrationAddressLine4",
+      "table": "POZ_SUPPLIER_REGISTRATIONS",
+      "column": "ADDRESS_LINE4",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SupplierRegistrationAddressNickname",
+      "table": "POZ_SUPPLIER_REGISTRATIONS",
+      "column": "ADDRESS_NICKNAME",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SupplierRegistrationApprovalInstanceId",
+      "table": "POZ_SUPPLIER_REGISTRATIONS",
+      "column": "APPROVAL_INSTANCE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SupplierRegistrationApprovedDate",
+      "table": "POZ_SUPPLIER_REGISTRATIONS",
+      "column": "APPROVED_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SupplierRegistrationBcNotApplicableFlag",
+      "table": "POZ_SUPPLIER_REGISTRATIONS",
+      "column": "BC_NOT_APPLICABLE_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SupplierRegistrationBusinessRelationshipCode",
+      "table": "POZ_SUPPLIER_REGISTRATIONS",
+      "column": "BUSINESS_RELATIONSHIP_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SupplierRegistrationCity",
+      "table": "POZ_SUPPLIER_REGISTRATIONS",
+      "column": "CITY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SupplierRegistrationCorporateWebsite",
+      "table": "POZ_SUPPLIER_REGISTRATIONS",
+      "column": "CORPORATE_WEBSITE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SupplierRegistrationCountry",
+      "table": "POZ_SUPPLIER_REGISTRATIONS",
+      "column": "COUNTRY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SupplierRegistrationCounty",
+      "table": "POZ_SUPPLIER_REGISTRATIONS",
+      "column": "COUNTY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SupplierRegistrationCreatedBy",
+      "table": "POZ_SUPPLIER_REGISTRATIONS",
+      "column": "CREATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SupplierRegistrationCreationDate",
+      "table": "POZ_SUPPLIER_REGISTRATIONS",
+      "column": "CREATION_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SupplierRegistrationDunsNumber",
+      "table": "POZ_SUPPLIER_REGISTRATIONS",
+      "column": "DUNS_NUMBER",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SupplierRegistrationIncomeTaxIdFlag",
+      "table": "POZ_SUPPLIER_REGISTRATIONS",
+      "column": "INCOME_TAX_ID_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SupplierRegistrationJustification",
+      "table": "POZ_SUPPLIER_REGISTRATIONS",
+      "column": "JUSTIFICATION",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SupplierRegistrationLastUpdateDate",
+      "table": "POZ_SUPPLIER_REGISTRATIONS",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": true
+    },
+    {
+      "name": "SupplierRegistrationLastUpdateLogin",
+      "table": "POZ_SUPPLIER_REGISTRATIONS",
+      "column": "LAST_UPDATE_LOGIN",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SupplierRegistrationLastUpdatedBy",
+      "table": "POZ_SUPPLIER_REGISTRATIONS",
+      "column": "LAST_UPDATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SupplierRegistrationNoteFromSupplier",
+      "table": "POZ_SUPPLIER_REGISTRATIONS",
+      "column": "NOTE_FROM_SUPPLIER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SupplierRegistrationNoteToApprover",
+      "table": "POZ_SUPPLIER_REGISTRATIONS",
+      "column": "NOTE_TO_APPROVER",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SupplierRegistrationNoteToSupplier",
+      "table": "POZ_SUPPLIER_REGISTRATIONS",
+      "column": "NOTE_TO_SUPPLIER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SupplierRegistrationObjectVersionNumber",
+      "table": "POZ_SUPPLIER_REGISTRATIONS",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SupplierRegistrationOrganizationType",
+      "table": "POZ_SUPPLIER_REGISTRATIONS",
+      "column": "ORGANIZATION_TYPE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SupplierRegistrationPostalCode",
+      "table": "POZ_SUPPLIER_REGISTRATIONS",
+      "column": "POSTAL_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SupplierRegistrationPrcBuId",
+      "table": "POZ_SUPPLIER_REGISTRATIONS",
+      "column": "PRC_BU_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SupplierRegistrationProvince",
+      "table": "POZ_SUPPLIER_REGISTRATIONS",
+      "column": "PROVINCE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SupplierRegistrationRegKey",
+      "table": "POZ_SUPPLIER_REGISTRATIONS",
+      "column": "REG_KEY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SupplierRegistrationRegistrationStatus",
+      "table": "POZ_SUPPLIER_REGISTRATIONS",
+      "column": "REGISTRATION_STATUS",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SupplierRegistrationRegistrationType",
+      "table": "POZ_SUPPLIER_REGISTRATIONS",
+      "column": "REGISTRATION_TYPE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SupplierRegistrationRejectionCode",
+      "table": "POZ_SUPPLIER_REGISTRATIONS",
+      "column": "REJECTION_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SupplierRegistrationReqToResubmitReason",
+      "table": "POZ_SUPPLIER_REGISTRATIONS",
+      "column": "REQ_TO_RESUBMIT_REASON",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SupplierRegistrationRequestNumber",
+      "table": "POZ_SUPPLIER_REGISTRATIONS",
+      "column": "REQUEST_NUMBER",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SupplierRegistrationRequestReasonCode",
+      "table": "POZ_SUPPLIER_REGISTRATIONS",
+      "column": "REQUEST_REASON_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SupplierRegistrationRequestedDate",
+      "table": "POZ_SUPPLIER_REGISTRATIONS",
+      "column": "REQUESTED_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SupplierRegistrationRequesterEmailAddress",
+      "table": "POZ_SUPPLIER_REGISTRATIONS",
+      "column": "REQUESTER_EMAIL_ADDRESS",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SupplierRegistrationRequesterFirstName",
+      "table": "POZ_SUPPLIER_REGISTRATIONS",
+      "column": "REQUESTER_FIRST_NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SupplierRegistrationRequesterLanguage",
+      "table": "POZ_SUPPLIER_REGISTRATIONS",
+      "column": "REQUESTER_LANGUAGE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SupplierRegistrationRequesterLastName",
+      "table": "POZ_SUPPLIER_REGISTRATIONS",
+      "column": "REQUESTER_LAST_NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SupplierRegistrationRequesterPersonId",
+      "table": "POZ_SUPPLIER_REGISTRATIONS",
+      "column": "REQUESTER_PERSON_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SupplierRegistrationResubmissionNum",
+      "table": "POZ_SUPPLIER_REGISTRATIONS",
+      "column": "RESUBMISSION_NUM",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SupplierRegistrationState",
+      "table": "POZ_SUPPLIER_REGISTRATIONS",
+      "column": "STATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SupplierRegistrationSupplierCreationStatus",
+      "table": "POZ_SUPPLIER_REGISTRATIONS",
+      "column": "SUPPLIER_CREATION_STATUS",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SupplierRegistrationSupplierName",
+      "table": "POZ_SUPPLIER_REGISTRATIONS",
+      "column": "SUPPLIER_NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SupplierRegistrationSupplierNumber",
+      "table": "POZ_SUPPLIER_REGISTRATIONS",
+      "column": "SUPPLIER_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SupplierRegistrationTaxRegCountryCode",
+      "table": "POZ_SUPPLIER_REGISTRATIONS",
+      "column": "TAX_REG_COUNTRY_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SupplierRegistrationTaxRegNumberFlag",
+      "table": "POZ_SUPPLIER_REGISTRATIONS",
+      "column": "TAX_REG_NUMBER_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SupplierRegistrationTaxRegType",
+      "table": "POZ_SUPPLIER_REGISTRATIONS",
+      "column": "TAX_REG_TYPE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SupplierRegistrationTaxRegistrationNumber",
+      "table": "POZ_SUPPLIER_REGISTRATIONS",
+      "column": "TAX_REGISTRATION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SupplierRegistrationTaxpayerId",
+      "table": "POZ_SUPPLIER_REGISTRATIONS",
+      "column": "TAXPAYER_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SupplierRegistrationUrlValidationParam",
+      "table": "POZ_SUPPLIER_REGISTRATIONS",
+      "column": "URL_VALIDATION_PARAM",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SupplierRegistrationUserRegId",
+      "table": "POZ_SUPPLIER_REGISTRATIONS",
+      "column": "USER_REG_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SupplierRegistrationVendorId",
+      "table": "POZ_SUPPLIER_REGISTRATIONS",
+      "column": "VENDOR_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SupplierRegistrationVendorPartyId",
+      "table": "POZ_SUPPLIER_REGISTRATIONS",
+      "column": "VENDOR_PARTY_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SupplierRegistrationVendorTypeLookupCode",
+      "table": "POZ_SUPPLIER_REGISTRATIONS",
+      "column": "VENDOR_TYPE_LOOKUP_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TerritoryTerritoryCode",
+      "table": "FND_TERRITORIES_VL",
+      "column": "TERRITORY_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TerritoryTerritoryShortName",
+      "table": "FND_TERRITORIES_VL",
+      "column": "TERRITORY_SHORT_NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    }
+  ],
+  "by_table": {
+    "FUN_ALL_BUSINESS_UNITS_V": [
+      {
+        "attribute": "BUBusinessUnitId",
+        "column": "BU_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BUName",
+        "column": "BU_NAME",
+        "bicc": true,
+        "pk": false
+      }
+    ],
+    "POZ_SUPPLIER_REGISTRATIONS": [
+      {
+        "attribute": "DeniedPartyFlag",
+        "column": "DENIED_PARTY_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "RejectComments",
+        "column": "REJECT_COMMENTS",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "RejectReasonCode",
+        "column": "REJECT_REASON_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "SupplierRegId",
+        "column": "SUPPLIER_REG_ID",
+        "bicc": true,
+        "pk": true
+      },
+      {
+        "attribute": "SupplierRegistrationAddressLine1",
+        "column": "ADDRESS_LINE1",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "SupplierRegistrationAddressLine2",
+        "column": "ADDRESS_LINE2",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "SupplierRegistrationAddressLine3",
+        "column": "ADDRESS_LINE3",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "SupplierRegistrationAddressLine4",
+        "column": "ADDRESS_LINE4",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "SupplierRegistrationAddressNickname",
+        "column": "ADDRESS_NICKNAME",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "SupplierRegistrationApprovalInstanceId",
+        "column": "APPROVAL_INSTANCE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "SupplierRegistrationApprovedDate",
+        "column": "APPROVED_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "SupplierRegistrationBcNotApplicableFlag",
+        "column": "BC_NOT_APPLICABLE_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "SupplierRegistrationBusinessRelationshipCode",
+        "column": "BUSINESS_RELATIONSHIP_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "SupplierRegistrationCity",
+        "column": "CITY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "SupplierRegistrationCorporateWebsite",
+        "column": "CORPORATE_WEBSITE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "SupplierRegistrationCountry",
+        "column": "COUNTRY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "SupplierRegistrationCounty",
+        "column": "COUNTY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "SupplierRegistrationCreatedBy",
+        "column": "CREATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "SupplierRegistrationCreationDate",
+        "column": "CREATION_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "SupplierRegistrationDunsNumber",
+        "column": "DUNS_NUMBER",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "SupplierRegistrationIncomeTaxIdFlag",
+        "column": "INCOME_TAX_ID_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "SupplierRegistrationJustification",
+        "column": "JUSTIFICATION",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "SupplierRegistrationLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "SupplierRegistrationLastUpdateLogin",
+        "column": "LAST_UPDATE_LOGIN",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "SupplierRegistrationLastUpdatedBy",
+        "column": "LAST_UPDATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "SupplierRegistrationNoteFromSupplier",
+        "column": "NOTE_FROM_SUPPLIER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "SupplierRegistrationNoteToApprover",
+        "column": "NOTE_TO_APPROVER",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "SupplierRegistrationNoteToSupplier",
+        "column": "NOTE_TO_SUPPLIER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "SupplierRegistrationObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "SupplierRegistrationOrganizationType",
+        "column": "ORGANIZATION_TYPE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "SupplierRegistrationPostalCode",
+        "column": "POSTAL_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "SupplierRegistrationPrcBuId",
+        "column": "PRC_BU_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "SupplierRegistrationProvince",
+        "column": "PROVINCE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "SupplierRegistrationRegKey",
+        "column": "REG_KEY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "SupplierRegistrationRegistrationStatus",
+        "column": "REGISTRATION_STATUS",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "SupplierRegistrationRegistrationType",
+        "column": "REGISTRATION_TYPE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "SupplierRegistrationRejectionCode",
+        "column": "REJECTION_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "SupplierRegistrationReqToResubmitReason",
+        "column": "REQ_TO_RESUBMIT_REASON",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "SupplierRegistrationRequestNumber",
+        "column": "REQUEST_NUMBER",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "SupplierRegistrationRequestReasonCode",
+        "column": "REQUEST_REASON_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "SupplierRegistrationRequestedDate",
+        "column": "REQUESTED_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "SupplierRegistrationRequesterEmailAddress",
+        "column": "REQUESTER_EMAIL_ADDRESS",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "SupplierRegistrationRequesterFirstName",
+        "column": "REQUESTER_FIRST_NAME",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "SupplierRegistrationRequesterLanguage",
+        "column": "REQUESTER_LANGUAGE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "SupplierRegistrationRequesterLastName",
+        "column": "REQUESTER_LAST_NAME",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "SupplierRegistrationRequesterPersonId",
+        "column": "REQUESTER_PERSON_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "SupplierRegistrationResubmissionNum",
+        "column": "RESUBMISSION_NUM",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "SupplierRegistrationState",
+        "column": "STATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "SupplierRegistrationSupplierCreationStatus",
+        "column": "SUPPLIER_CREATION_STATUS",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "SupplierRegistrationSupplierName",
+        "column": "SUPPLIER_NAME",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "SupplierRegistrationSupplierNumber",
+        "column": "SUPPLIER_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "SupplierRegistrationTaxRegCountryCode",
+        "column": "TAX_REG_COUNTRY_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "SupplierRegistrationTaxRegNumberFlag",
+        "column": "TAX_REG_NUMBER_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "SupplierRegistrationTaxRegType",
+        "column": "TAX_REG_TYPE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "SupplierRegistrationTaxRegistrationNumber",
+        "column": "TAX_REGISTRATION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "SupplierRegistrationTaxpayerId",
+        "column": "TAXPAYER_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "SupplierRegistrationUrlValidationParam",
+        "column": "URL_VALIDATION_PARAM",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "SupplierRegistrationUserRegId",
+        "column": "USER_REG_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "SupplierRegistrationVendorId",
+        "column": "VENDOR_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "SupplierRegistrationVendorPartyId",
+        "column": "VENDOR_PARTY_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "SupplierRegistrationVendorTypeLookupCode",
+        "column": "VENDOR_TYPE_LOOKUP_CODE",
+        "bicc": true,
+        "pk": false
+      }
+    ],
+    "POZ_SUPPLIER_MAPPINGS": [
+      {
+        "attribute": "SuppMapMappingId",
+        "column": "MAPPING_ID",
+        "bicc": true,
+        "pk": true
+      },
+      {
+        "attribute": "SuppMapSupplierRegId",
+        "column": "SUPPLIER_REG_ID",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "POZ_SUP_REG_PII": [
+      {
+        "attribute": "SuppRegPiiIncomeTaxId",
+        "column": "INCOME_TAX_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "SuppRegPiiSupplierRegId1",
+        "column": "SUPPLIER_REG_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "SuppRegPiiTaxRegistrationNumber",
+        "column": "TAX_REGISTRATION_NUMBER",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "FND_TERRITORIES_VL": [
+      {
+        "attribute": "TerritoryTerritoryCode",
+        "column": "TERRITORY_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TerritoryTerritoryShortName",
+        "column": "TERRITORY_SHORT_NAME",
+        "bicc": true,
+        "pk": false
+      }
+    ]
+  }
+}

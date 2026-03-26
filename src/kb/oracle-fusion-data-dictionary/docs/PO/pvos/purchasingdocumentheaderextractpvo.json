@@ -1,0 +1,2185 @@
+{
+  "meta": {
+    "pvo_name": "PurchasingDocumentHeaderExtractPVO",
+    "full_path": "FscmTopModelAM.PrcExtractAM.PoBiccExtractAM.PurchasingDocumentHeaderExtractPVO",
+    "module_path": "FscmTopModelAM.PrcExtractAM.PoBiccExtractAM",
+    "module_code": "PO",
+    "type": "pvo",
+    "description": "Extrai os cabeçalhos de ordens de compra (Purchase Orders) para carga BICC, incluindo fornecedor, valor total, moeda, status de aprovação, tipo de documento e parâmetros do sistema. Essencial para análise de compras, acompanhamento de contratos e controle de gastos."
+  },
+  "stats": {
+    "total_attributes": 154,
+    "tables_count": 2,
+    "bicc_enabled": 148,
+    "bicc_pct": 96,
+    "pk_count": 1
+  },
+  "tables": [
+    "PO_HEADERS_ALL",
+    "PO_SYSTEM_PARAMETERS_ALL"
+  ],
+  "attributes": [
+    {
+      "name": "AcceptanceDueDate",
+      "table": "PO_HEADERS_ALL",
+      "column": "ACCEPTANCE_DUE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AcceptanceRequiredFlag",
+      "table": "PO_HEADERS_ALL",
+      "column": "ACCEPTANCE_REQUIRED_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AcceptanceWithinDays",
+      "table": "PO_HEADERS_ALL",
+      "column": "ACCEPTANCE_WITHIN_DAYS",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AdditionalContactEmailAddress",
+      "table": "PO_HEADERS_ALL",
+      "column": "ALT_CONTACT_EMAIL_ADDRESS",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AgentId",
+      "table": "PO_HEADERS_ALL",
+      "column": "AGENT_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AgingOnsetPoint",
+      "table": "PO_HEADERS_ALL",
+      "column": "AGING_ONSET_POINT",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AgingPeriodDays",
+      "table": "PO_HEADERS_ALL",
+      "column": "AGING_PERIOD_DAYS",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllowItemDescUpdateFlag",
+      "table": "PO_SYSTEM_PARAMETERS_ALL",
+      "column": "ALLOW_ITEM_DESC_UPDATE_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllowManulPriceUpdateOrder",
+      "table": "PO_SYSTEM_PARAMETERS_ALL",
+      "column": "ALLOW_MANUL_PRICE_UPDATE_ORDER",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllowMultipleSitesFlag",
+      "table": "PO_HEADERS_ALL",
+      "column": "ALLOW_MULTIPLE_SITES_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AllowRetroPricing",
+      "table": "PO_SYSTEM_PARAMETERS_ALL",
+      "column": "ALLOW_RETRO_PRICING",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AmountLimit",
+      "table": "PO_HEADERS_ALL",
+      "column": "AMOUNT_LIMIT",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AmountReleased",
+      "table": "PO_HEADERS_ALL",
+      "column": "AMOUNT_RELEASED",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ApprovedDate",
+      "table": "PO_HEADERS_ALL",
+      "column": "APPROVED_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ApprovedFlag",
+      "table": "PO_HEADERS_ALL",
+      "column": "APPROVED_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AwardApprovalEnabledFlag",
+      "table": "PO_SYSTEM_PARAMETERS_ALL",
+      "column": "AWARD_APPROVAL_ENABLED_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BccEmailAddress",
+      "table": "PO_HEADERS_ALL",
+      "column": "BCC_EMAIL_ADDRESS",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BillToLocationId",
+      "table": "PO_HEADERS_ALL",
+      "column": "BILL_TO_LOCATION_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BillingCycleClosingDate",
+      "table": "PO_HEADERS_ALL",
+      "column": "BILLING_CYCLE_CLOSING_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BilltoBuId",
+      "table": "PO_HEADERS_ALL",
+      "column": "BILLTO_BU_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BlanketTotalAmount",
+      "table": "PO_HEADERS_ALL",
+      "column": "BLANKET_TOTAL_AMOUNT",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BudgetControlEnabledFlag",
+      "table": "PO_HEADERS_ALL",
+      "column": "BUDGET_CONTROL_ENABLED_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BuyerManagedTransportFlag",
+      "table": "PO_HEADERS_ALL",
+      "column": "BUYER_MANAGED_TRANSPORT_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BypassApprovalFlag",
+      "table": "PO_SYSTEM_PARAMETERS_ALL",
+      "column": "BYPASS_APPROVAL_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CarrierId",
+      "table": "PO_HEADERS_ALL",
+      "column": "CARRIER_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CatAdminAuthEnabledFlag",
+      "table": "PO_HEADERS_ALL",
+      "column": "CAT_ADMIN_AUTH_ENABLED_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CatAdminAuthoringAcceptance",
+      "table": "PO_SYSTEM_PARAMETERS_ALL",
+      "column": "CAT_ADMIN_AUTHORING_ACCEPTANCE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CcEmailAddress",
+      "table": "PO_HEADERS_ALL",
+      "column": "CC_EMAIL_ADDRESS",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ChangeRequestedBy",
+      "table": "PO_HEADERS_ALL",
+      "column": "CHANGE_REQUESTED_BY",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ChangeSummary",
+      "table": "PO_HEADERS_ALL",
+      "column": "CHANGE_SUMMARY",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ChecklistId",
+      "table": "PO_HEADERS_ALL",
+      "column": "CHECKLIST_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ClosedDate",
+      "table": "PO_HEADERS_ALL",
+      "column": "CLOSED_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "Comments",
+      "table": "PO_HEADERS_ALL",
+      "column": "COMMENTS",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ConfirmingOrderFlag",
+      "table": "PO_HEADERS_ALL",
+      "column": "CONFIRMING_ORDER_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ConsumptionAdviceFrequency",
+      "table": "PO_HEADERS_ALL",
+      "column": "CONSUMPTION_ADVICE_FREQUENCY",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ConsumptionAdviceSummary",
+      "table": "PO_HEADERS_ALL",
+      "column": "CONSUMPTION_ADVICE_SUMMARY",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ContermsExistFlag",
+      "table": "PO_HEADERS_ALL",
+      "column": "CONTERMS_EXIST_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CpaReference",
+      "table": "PO_HEADERS_ALL",
+      "column": "CPA_REFERENCE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CreatedBy",
+      "table": "PO_HEADERS_ALL",
+      "column": "CREATED_BY",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CreatedLanguage",
+      "table": "PO_HEADERS_ALL",
+      "column": "CREATED_LANGUAGE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CreationDate",
+      "table": "PO_HEADERS_ALL",
+      "column": "CREATION_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CurrencyCode",
+      "table": "PO_HEADERS_ALL",
+      "column": "CURRENCY_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CurrencyCode1",
+      "table": "PO_SYSTEM_PARAMETERS_ALL",
+      "column": "CURRENCY_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CurrentVersionId",
+      "table": "PO_HEADERS_ALL",
+      "column": "CURRENT_VERSION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "DefaultBuyerId",
+      "table": "PO_SYSTEM_PARAMETERS_ALL",
+      "column": "DEFAULT_BUYER_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "DefaultConsignmentLineFlag",
+      "table": "PO_HEADERS_ALL",
+      "column": "DEFAULT_CONSIGNMENT_LINE_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "DefaultPoTradeOrgId",
+      "table": "PO_HEADERS_ALL",
+      "column": "DEFAULT_PO_TRADE_ORG_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "DefaultPromiseDate",
+      "table": "PO_SYSTEM_PARAMETERS_ALL",
+      "column": "DEFAULT_PROMISE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "DefaultRateType",
+      "table": "PO_SYSTEM_PARAMETERS_ALL",
+      "column": "DEFAULT_RATE_TYPE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "DefaultTaxationCountry",
+      "table": "PO_HEADERS_ALL",
+      "column": "DEFAULT_TAXATION_COUNTRY",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "DoctypeId",
+      "table": "PO_SYSTEM_PARAMETERS_ALL",
+      "column": "DOCTYPE_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "DocumentCreationMethod",
+      "table": "PO_HEADERS_ALL",
+      "column": "DOCUMENT_CREATION_METHOD",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "DocumentStatus",
+      "table": "PO_HEADERS_ALL",
+      "column": "DOCUMENT_STATUS",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "EmailAddress",
+      "table": "PO_HEADERS_ALL",
+      "column": "EMAIL_ADDRESS",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "EmailAttachmentFilename",
+      "table": "PO_SYSTEM_PARAMETERS_ALL",
+      "column": "EMAIL_ATTACHMENT_FILENAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "EnabledFlag",
+      "table": "PO_HEADERS_ALL",
+      "column": "ENABLED_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "EncumbranceRequiredFlag",
+      "table": "PO_HEADERS_ALL",
+      "column": "ENCUMBRANCE_REQUIRED_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "EndDate",
+      "table": "PO_HEADERS_ALL",
+      "column": "END_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "EnforceMinBidPrice",
+      "table": "PO_SYSTEM_PARAMETERS_ALL",
+      "column": "ENFORCE_MIN_BID_PRICE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "EnforceVendorHoldFlag",
+      "table": "PO_SYSTEM_PARAMETERS_ALL",
+      "column": "ENFORCE_VENDOR_HOLD_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "Fax",
+      "table": "PO_HEADERS_ALL",
+      "column": "FAX",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "FirmDate",
+      "table": "PO_HEADERS_ALL",
+      "column": "FIRM_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "FirstPtyRegId",
+      "table": "PO_HEADERS_ALL",
+      "column": "FIRST_PTY_REG_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "FobLookupCode",
+      "table": "PO_HEADERS_ALL",
+      "column": "FOB_LOOKUP_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "FreightTermsLookupCode",
+      "table": "PO_HEADERS_ALL",
+      "column": "FREIGHT_TERMS_LOOKUP_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "FrozenFlag",
+      "table": "PO_HEADERS_ALL",
+      "column": "FROZEN_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "FundsStatus",
+      "table": "PO_HEADERS_ALL",
+      "column": "FUNDS_STATUS",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "GenOrderForNegReqsFlag",
+      "table": "PO_SYSTEM_PARAMETERS_ALL",
+      "column": "GEN_ORDER_FOR_NEG_REQS_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "GenerateOrdersAutomatic",
+      "table": "PO_HEADERS_ALL",
+      "column": "GENERATE_ORDERS_AUTOMATIC",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "GroupRequisitionLines",
+      "table": "PO_HEADERS_ALL",
+      "column": "GROUP_REQUISITION_LINES",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "GroupRequisitions",
+      "table": "PO_HEADERS_ALL",
+      "column": "GROUP_REQUISITIONS",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InterfaceSourceCode",
+      "table": "PO_HEADERS_ALL",
+      "column": "INTERFACE_SOURCE_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InventoryOrganizationId",
+      "table": "PO_SYSTEM_PARAMETERS_ALL",
+      "column": "INVENTORY_ORGANIZATION_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceCloseTolerance",
+      "table": "PO_SYSTEM_PARAMETERS_ALL",
+      "column": "INVOICE_CLOSE_TOLERANCE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LanguageCode",
+      "table": "PO_SYSTEM_PARAMETERS_ALL",
+      "column": "LANGUAGE_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LastBilledDate",
+      "table": "PO_HEADERS_ALL",
+      "column": "LAST_BILLED_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LastReleaseDate",
+      "table": "PO_HEADERS_ALL",
+      "column": "LAST_RELEASE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LastUpdateDate",
+      "table": "PO_HEADERS_ALL",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": true
+    },
+    {
+      "name": "LastUpdatedBy",
+      "table": "PO_HEADERS_ALL",
+      "column": "LAST_UPDATED_BY",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LineTypeId",
+      "table": "PO_SYSTEM_PARAMETERS_ALL",
+      "column": "LINE_TYPE_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ManualReceiptNumType",
+      "table": "PO_SYSTEM_PARAMETERS_ALL",
+      "column": "MANUAL_RECEIPT_NUM_TYPE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "MasterContractId",
+      "table": "PO_HEADERS_ALL",
+      "column": "MASTER_CONTRACT_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "MatchOption",
+      "table": "PO_SYSTEM_PARAMETERS_ALL",
+      "column": "MATCH_OPTION",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "MaxAttachmentSize",
+      "table": "PO_SYSTEM_PARAMETERS_ALL",
+      "column": "MAX_ATTACHMENT_SIZE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "MinReleaseAmount",
+      "table": "PO_HEADERS_ALL",
+      "column": "MIN_RELEASE_AMOUNT",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ModeOfTransport",
+      "table": "PO_HEADERS_ALL",
+      "column": "MODE_OF_TRANSPORT",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ModeOfTransport1",
+      "table": "PO_SYSTEM_PARAMETERS_ALL",
+      "column": "MODE_OF_TRANSPORT",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NegApprovalEnabledFlag",
+      "table": "PO_SYSTEM_PARAMETERS_ALL",
+      "column": "NEG_APPROVAL_ENABLED_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NoteToAuthorizer",
+      "table": "PO_HEADERS_ALL",
+      "column": "NOTE_TO_AUTHORIZER",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NoteToReceiver",
+      "table": "PO_HEADERS_ALL",
+      "column": "NOTE_TO_RECEIVER",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NoteToVendor",
+      "table": "PO_HEADERS_ALL",
+      "column": "NOTE_TO_VENDOR",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ObjectVersionNumber",
+      "table": "PO_HEADERS_ALL",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "OrchestrationOrderFlag",
+      "table": "PO_HEADERS_ALL",
+      "column": "ORCHESTRATION_ORDER_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "OverridingApproverId",
+      "table": "PO_HEADERS_ALL",
+      "column": "OVERRIDING_APPROVER_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PayOnCode",
+      "table": "PO_HEADERS_ALL",
+      "column": "PAY_ON_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PayOnUseFlag",
+      "table": "PO_HEADERS_ALL",
+      "column": "PAY_ON_USE_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PcardId",
+      "table": "PO_HEADERS_ALL",
+      "column": "PCARD_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PendingSignatureFlag",
+      "table": "PO_HEADERS_ALL",
+      "column": "PENDING_SIGNATURE_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PoHeaderId",
+      "table": "PO_HEADERS_ALL",
+      "column": "PO_HEADER_ID",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    },
+    {
+      "name": "PrcBuId",
+      "table": "PO_HEADERS_ALL",
+      "column": "PRC_BU_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PriceBreakLookupCode",
+      "table": "PO_SYSTEM_PARAMETERS_ALL",
+      "column": "PRICE_BREAK_LOOKUP_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PriceChangeAmount",
+      "table": "PO_SYSTEM_PARAMETERS_ALL",
+      "column": "PRICE_CHANGE_AMOUNT",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PriceUpdateTolerance",
+      "table": "PO_HEADERS_ALL",
+      "column": "PRICE_UPDATE_TOLERANCE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProcurementOptionsPrcBuId",
+      "table": "PO_SYSTEM_PARAMETERS_ALL",
+      "column": "PRC_BU_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "Rate",
+      "table": "PO_HEADERS_ALL",
+      "column": "RATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RateDate",
+      "table": "PO_HEADERS_ALL",
+      "column": "RATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RateType",
+      "table": "PO_HEADERS_ALL",
+      "column": "RATE_TYPE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReceiveCloseCode",
+      "table": "PO_SYSTEM_PARAMETERS_ALL",
+      "column": "RECEIVE_CLOSE_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReceiveCloseTolerance",
+      "table": "PO_SYSTEM_PARAMETERS_ALL",
+      "column": "RECEIVE_CLOSE_TOLERANCE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReceivingFlag",
+      "table": "PO_SYSTEM_PARAMETERS_ALL",
+      "column": "RECEIVING_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReferenceNum",
+      "table": "PO_HEADERS_ALL",
+      "column": "REFERENCE_NUM",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReleaseMethod",
+      "table": "PO_HEADERS_ALL",
+      "column": "RELEASE_METHOD",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReqBuId",
+      "table": "PO_HEADERS_ALL",
+      "column": "REQ_BU_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RetroPriceApplyUpdatesFlag",
+      "table": "PO_HEADERS_ALL",
+      "column": "RETRO_PRICE_APPLY_UPDATES_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RetroPriceCommUpdatesFlag",
+      "table": "PO_HEADERS_ALL",
+      "column": "RETRO_PRICE_COMM_UPDATES_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RetroPriceInitApprovalFlag",
+      "table": "PO_HEADERS_ALL",
+      "column": "RETRO_PRICE_INIT_APPROVAL_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RetroPriceOpenOrderFlag",
+      "table": "PO_HEADERS_ALL",
+      "column": "RETRO_PRICE_OPEN_ORDER_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RevisedDate",
+      "table": "PO_HEADERS_ALL",
+      "column": "REVISED_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RevisionNum",
+      "table": "PO_HEADERS_ALL",
+      "column": "REVISION_NUM",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "Segment1",
+      "table": "PO_HEADERS_ALL",
+      "column": "SEGMENT1",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ServiceLevel",
+      "table": "PO_HEADERS_ALL",
+      "column": "SERVICE_LEVEL",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ServiceLevel1",
+      "table": "PO_SYSTEM_PARAMETERS_ALL",
+      "column": "SERVICE_LEVEL",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ShipToLocationId",
+      "table": "PO_HEADERS_ALL",
+      "column": "SHIP_TO_LOCATION_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ShippingControl",
+      "table": "PO_HEADERS_ALL",
+      "column": "SHIPPING_CONTROL",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SignatureRequiredFlag",
+      "table": "PO_HEADERS_ALL",
+      "column": "SIGNATURE_REQUIRED_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SkipElectronicCommFlag",
+      "table": "PO_HEADERS_ALL",
+      "column": "SKIP_ELECTRONIC_COMM_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SoldtoLeId",
+      "table": "PO_HEADERS_ALL",
+      "column": "SOLDTO_LE_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SourcingPriority",
+      "table": "PO_HEADERS_ALL",
+      "column": "SOURCING_PRIORITY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SourcingSuppEligibilityFlag",
+      "table": "PO_SYSTEM_PARAMETERS_ALL",
+      "column": "SOURCING_SUPP_ELIGIBILITY_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SpecialHandlingTypeCode",
+      "table": "PO_HEADERS_ALL",
+      "column": "SPECIAL_HANDLING_TYPE_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "StartDate",
+      "table": "PO_HEADERS_ALL",
+      "column": "START_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "StyleId",
+      "table": "PO_HEADERS_ALL",
+      "column": "STYLE_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "StyleId1",
+      "table": "PO_SYSTEM_PARAMETERS_ALL",
+      "column": "STYLE_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SubmitApprovalAutomatic",
+      "table": "PO_HEADERS_ALL",
+      "column": "SUBMIT_APPROVAL_AUTOMATIC",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SubmitDate",
+      "table": "PO_HEADERS_ALL",
+      "column": "SUBMIT_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SupplierAuthoringAcceptance",
+      "table": "PO_SYSTEM_PARAMETERS_ALL",
+      "column": "SUPPLIER_AUTHORING_ACCEPTANCE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SupplierNotifMethod",
+      "table": "PO_HEADERS_ALL",
+      "column": "SUPPLIER_NOTIF_METHOD",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TaxAttributeUpdateCode",
+      "table": "PO_HEADERS_ALL",
+      "column": "TAX_ATTRIBUTE_UPDATE_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TaxDocumentSubtype",
+      "table": "PO_HEADERS_ALL",
+      "column": "TAX_DOCUMENT_SUBTYPE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TermsId",
+      "table": "PO_HEADERS_ALL",
+      "column": "TERMS_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TermsId1",
+      "table": "PO_SYSTEM_PARAMETERS_ALL",
+      "column": "TERMS_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ThirdPtyRegId",
+      "table": "PO_HEADERS_ALL",
+      "column": "THIRD_PTY_REG_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TypeLookupCode",
+      "table": "PO_HEADERS_ALL",
+      "column": "TYPE_LOOKUP_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "UseNeedByDate",
+      "table": "PO_HEADERS_ALL",
+      "column": "USE_NEED_BY_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "UseSalesOrderNumberFlag",
+      "table": "PO_HEADERS_ALL",
+      "column": "USE_SALES_ORDER_NUMBER_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "UseShipTo",
+      "table": "PO_HEADERS_ALL",
+      "column": "USE_SHIP_TO",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "UseShipToForGroupReqs",
+      "table": "PO_HEADERS_ALL",
+      "column": "USE_SHIP_TO_FOR_GROUP_REQS",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "UseShipToForGroupReqs1",
+      "table": "PO_SYSTEM_PARAMETERS_ALL",
+      "column": "USE_SHIP_TO_FOR_GROUP_REQS",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "UserDefinedReceiptNumCode",
+      "table": "PO_SYSTEM_PARAMETERS_ALL",
+      "column": "USER_DEFINED_RECEIPT_NUM_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "UserDefinedReqNumCode",
+      "table": "PO_SYSTEM_PARAMETERS_ALL",
+      "column": "USER_DEFINED_REQ_NUM_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "VendorContactId",
+      "table": "PO_HEADERS_ALL",
+      "column": "VENDOR_CONTACT_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "VendorId",
+      "table": "PO_HEADERS_ALL",
+      "column": "VENDOR_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "VendorOrderNum",
+      "table": "PO_HEADERS_ALL",
+      "column": "VENDOR_ORDER_NUM",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "VendorSiteId",
+      "table": "PO_HEADERS_ALL",
+      "column": "VENDOR_SITE_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    }
+  ],
+  "by_table": {
+    "PO_HEADERS_ALL": [
+      {
+        "attribute": "AcceptanceDueDate",
+        "column": "ACCEPTANCE_DUE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "AcceptanceRequiredFlag",
+        "column": "ACCEPTANCE_REQUIRED_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "AcceptanceWithinDays",
+        "column": "ACCEPTANCE_WITHIN_DAYS",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "AdditionalContactEmailAddress",
+        "column": "ALT_CONTACT_EMAIL_ADDRESS",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "AgentId",
+        "column": "AGENT_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "AgingOnsetPoint",
+        "column": "AGING_ONSET_POINT",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "AgingPeriodDays",
+        "column": "AGING_PERIOD_DAYS",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "AllowMultipleSitesFlag",
+        "column": "ALLOW_MULTIPLE_SITES_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "AmountLimit",
+        "column": "AMOUNT_LIMIT",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "AmountReleased",
+        "column": "AMOUNT_RELEASED",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ApprovedDate",
+        "column": "APPROVED_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ApprovedFlag",
+        "column": "APPROVED_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "BccEmailAddress",
+        "column": "BCC_EMAIL_ADDRESS",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "BillToLocationId",
+        "column": "BILL_TO_LOCATION_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "BillingCycleClosingDate",
+        "column": "BILLING_CYCLE_CLOSING_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "BilltoBuId",
+        "column": "BILLTO_BU_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "BlanketTotalAmount",
+        "column": "BLANKET_TOTAL_AMOUNT",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "BudgetControlEnabledFlag",
+        "column": "BUDGET_CONTROL_ENABLED_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "BuyerManagedTransportFlag",
+        "column": "BUYER_MANAGED_TRANSPORT_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CarrierId",
+        "column": "CARRIER_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CatAdminAuthEnabledFlag",
+        "column": "CAT_ADMIN_AUTH_ENABLED_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CcEmailAddress",
+        "column": "CC_EMAIL_ADDRESS",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ChangeRequestedBy",
+        "column": "CHANGE_REQUESTED_BY",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ChangeSummary",
+        "column": "CHANGE_SUMMARY",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ChecklistId",
+        "column": "CHECKLIST_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ClosedDate",
+        "column": "CLOSED_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "Comments",
+        "column": "COMMENTS",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ConfirmingOrderFlag",
+        "column": "CONFIRMING_ORDER_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ConsumptionAdviceFrequency",
+        "column": "CONSUMPTION_ADVICE_FREQUENCY",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ConsumptionAdviceSummary",
+        "column": "CONSUMPTION_ADVICE_SUMMARY",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ContermsExistFlag",
+        "column": "CONTERMS_EXIST_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CpaReference",
+        "column": "CPA_REFERENCE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CreatedBy",
+        "column": "CREATED_BY",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CreatedLanguage",
+        "column": "CREATED_LANGUAGE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CreationDate",
+        "column": "CREATION_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CurrencyCode",
+        "column": "CURRENCY_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CurrentVersionId",
+        "column": "CURRENT_VERSION_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "DefaultConsignmentLineFlag",
+        "column": "DEFAULT_CONSIGNMENT_LINE_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "DefaultPoTradeOrgId",
+        "column": "DEFAULT_PO_TRADE_ORG_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "DefaultTaxationCountry",
+        "column": "DEFAULT_TAXATION_COUNTRY",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "DocumentCreationMethod",
+        "column": "DOCUMENT_CREATION_METHOD",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "DocumentStatus",
+        "column": "DOCUMENT_STATUS",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "EmailAddress",
+        "column": "EMAIL_ADDRESS",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "EnabledFlag",
+        "column": "ENABLED_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "EncumbranceRequiredFlag",
+        "column": "ENCUMBRANCE_REQUIRED_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "EndDate",
+        "column": "END_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "Fax",
+        "column": "FAX",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "FirmDate",
+        "column": "FIRM_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "FirstPtyRegId",
+        "column": "FIRST_PTY_REG_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "FobLookupCode",
+        "column": "FOB_LOOKUP_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "FreightTermsLookupCode",
+        "column": "FREIGHT_TERMS_LOOKUP_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "FrozenFlag",
+        "column": "FROZEN_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "FundsStatus",
+        "column": "FUNDS_STATUS",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "GenerateOrdersAutomatic",
+        "column": "GENERATE_ORDERS_AUTOMATIC",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "GroupRequisitionLines",
+        "column": "GROUP_REQUISITION_LINES",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "GroupRequisitions",
+        "column": "GROUP_REQUISITIONS",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "InterfaceSourceCode",
+        "column": "INTERFACE_SOURCE_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "LastBilledDate",
+        "column": "LAST_BILLED_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "LastReleaseDate",
+        "column": "LAST_RELEASE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "LastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "LastUpdatedBy",
+        "column": "LAST_UPDATED_BY",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "MasterContractId",
+        "column": "MASTER_CONTRACT_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "MinReleaseAmount",
+        "column": "MIN_RELEASE_AMOUNT",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ModeOfTransport",
+        "column": "MODE_OF_TRANSPORT",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NoteToAuthorizer",
+        "column": "NOTE_TO_AUTHORIZER",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NoteToReceiver",
+        "column": "NOTE_TO_RECEIVER",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NoteToVendor",
+        "column": "NOTE_TO_VENDOR",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "OrchestrationOrderFlag",
+        "column": "ORCHESTRATION_ORDER_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "OverridingApproverId",
+        "column": "OVERRIDING_APPROVER_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PayOnCode",
+        "column": "PAY_ON_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PayOnUseFlag",
+        "column": "PAY_ON_USE_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PcardId",
+        "column": "PCARD_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PendingSignatureFlag",
+        "column": "PENDING_SIGNATURE_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PoHeaderId",
+        "column": "PO_HEADER_ID",
+        "bicc": true,
+        "pk": true
+      },
+      {
+        "attribute": "PrcBuId",
+        "column": "PRC_BU_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PriceUpdateTolerance",
+        "column": "PRICE_UPDATE_TOLERANCE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "Rate",
+        "column": "RATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "RateDate",
+        "column": "RATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "RateType",
+        "column": "RATE_TYPE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ReferenceNum",
+        "column": "REFERENCE_NUM",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReleaseMethod",
+        "column": "RELEASE_METHOD",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ReqBuId",
+        "column": "REQ_BU_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "RetroPriceApplyUpdatesFlag",
+        "column": "RETRO_PRICE_APPLY_UPDATES_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "RetroPriceCommUpdatesFlag",
+        "column": "RETRO_PRICE_COMM_UPDATES_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "RetroPriceInitApprovalFlag",
+        "column": "RETRO_PRICE_INIT_APPROVAL_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "RetroPriceOpenOrderFlag",
+        "column": "RETRO_PRICE_OPEN_ORDER_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "RevisedDate",
+        "column": "REVISED_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "RevisionNum",
+        "column": "REVISION_NUM",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "Segment1",
+        "column": "SEGMENT1",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ServiceLevel",
+        "column": "SERVICE_LEVEL",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ShipToLocationId",
+        "column": "SHIP_TO_LOCATION_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ShippingControl",
+        "column": "SHIPPING_CONTROL",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "SignatureRequiredFlag",
+        "column": "SIGNATURE_REQUIRED_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "SkipElectronicCommFlag",
+        "column": "SKIP_ELECTRONIC_COMM_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "SoldtoLeId",
+        "column": "SOLDTO_LE_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "SourcingPriority",
+        "column": "SOURCING_PRIORITY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "SpecialHandlingTypeCode",
+        "column": "SPECIAL_HANDLING_TYPE_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "StartDate",
+        "column": "START_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "StyleId",
+        "column": "STYLE_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "SubmitApprovalAutomatic",
+        "column": "SUBMIT_APPROVAL_AUTOMATIC",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "SubmitDate",
+        "column": "SUBMIT_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "SupplierNotifMethod",
+        "column": "SUPPLIER_NOTIF_METHOD",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TaxAttributeUpdateCode",
+        "column": "TAX_ATTRIBUTE_UPDATE_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TaxDocumentSubtype",
+        "column": "TAX_DOCUMENT_SUBTYPE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TermsId",
+        "column": "TERMS_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ThirdPtyRegId",
+        "column": "THIRD_PTY_REG_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TypeLookupCode",
+        "column": "TYPE_LOOKUP_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "UseNeedByDate",
+        "column": "USE_NEED_BY_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "UseSalesOrderNumberFlag",
+        "column": "USE_SALES_ORDER_NUMBER_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "UseShipTo",
+        "column": "USE_SHIP_TO",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "UseShipToForGroupReqs",
+        "column": "USE_SHIP_TO_FOR_GROUP_REQS",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "VendorContactId",
+        "column": "VENDOR_CONTACT_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "VendorId",
+        "column": "VENDOR_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "VendorOrderNum",
+        "column": "VENDOR_ORDER_NUM",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "VendorSiteId",
+        "column": "VENDOR_SITE_ID",
+        "bicc": true,
+        "pk": false
+      }
+    ],
+    "PO_SYSTEM_PARAMETERS_ALL": [
+      {
+        "attribute": "AllowItemDescUpdateFlag",
+        "column": "ALLOW_ITEM_DESC_UPDATE_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "AllowManulPriceUpdateOrder",
+        "column": "ALLOW_MANUL_PRICE_UPDATE_ORDER",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "AllowRetroPricing",
+        "column": "ALLOW_RETRO_PRICING",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "AwardApprovalEnabledFlag",
+        "column": "AWARD_APPROVAL_ENABLED_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "BypassApprovalFlag",
+        "column": "BYPASS_APPROVAL_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CatAdminAuthoringAcceptance",
+        "column": "CAT_ADMIN_AUTHORING_ACCEPTANCE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CurrencyCode1",
+        "column": "CURRENCY_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "DefaultBuyerId",
+        "column": "DEFAULT_BUYER_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "DefaultPromiseDate",
+        "column": "DEFAULT_PROMISE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "DefaultRateType",
+        "column": "DEFAULT_RATE_TYPE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "DoctypeId",
+        "column": "DOCTYPE_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "EmailAttachmentFilename",
+        "column": "EMAIL_ATTACHMENT_FILENAME",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "EnforceMinBidPrice",
+        "column": "ENFORCE_MIN_BID_PRICE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "EnforceVendorHoldFlag",
+        "column": "ENFORCE_VENDOR_HOLD_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "GenOrderForNegReqsFlag",
+        "column": "GEN_ORDER_FOR_NEG_REQS_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "InventoryOrganizationId",
+        "column": "INVENTORY_ORGANIZATION_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceCloseTolerance",
+        "column": "INVOICE_CLOSE_TOLERANCE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "LanguageCode",
+        "column": "LANGUAGE_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "LineTypeId",
+        "column": "LINE_TYPE_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ManualReceiptNumType",
+        "column": "MANUAL_RECEIPT_NUM_TYPE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "MatchOption",
+        "column": "MATCH_OPTION",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "MaxAttachmentSize",
+        "column": "MAX_ATTACHMENT_SIZE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ModeOfTransport1",
+        "column": "MODE_OF_TRANSPORT",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NegApprovalEnabledFlag",
+        "column": "NEG_APPROVAL_ENABLED_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PriceBreakLookupCode",
+        "column": "PRICE_BREAK_LOOKUP_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PriceChangeAmount",
+        "column": "PRICE_CHANGE_AMOUNT",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ProcurementOptionsPrcBuId",
+        "column": "PRC_BU_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ReceiveCloseCode",
+        "column": "RECEIVE_CLOSE_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ReceiveCloseTolerance",
+        "column": "RECEIVE_CLOSE_TOLERANCE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ReceivingFlag",
+        "column": "RECEIVING_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ServiceLevel1",
+        "column": "SERVICE_LEVEL",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "SourcingSuppEligibilityFlag",
+        "column": "SOURCING_SUPP_ELIGIBILITY_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "StyleId1",
+        "column": "STYLE_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "SupplierAuthoringAcceptance",
+        "column": "SUPPLIER_AUTHORING_ACCEPTANCE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TermsId1",
+        "column": "TERMS_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "UseShipToForGroupReqs1",
+        "column": "USE_SHIP_TO_FOR_GROUP_REQS",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "UserDefinedReceiptNumCode",
+        "column": "USER_DEFINED_RECEIPT_NUM_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "UserDefinedReqNumCode",
+        "column": "USER_DEFINED_REQ_NUM_CODE",
+        "bicc": true,
+        "pk": false
+      }
+    ]
+  }
+}

@@ -1,0 +1,481 @@
+{
+  "source": "ap_payment_history_all.md",
+  "source_hash": "00fe5c1dffaa6e98754016383c93c9f5",
+  "translated_at": "2026-03-25",
+  "items": [
+    {
+      "id": 1,
+      "br": "Visão Geral",
+      "en": "Overview",
+      "es": "Vision General"
+    },
+    {
+      "id": 2,
+      "br": "Armazena o histórico de eventos de cada pagamento (check) do módulo Accounts Payable. Cada registro representa um evento no ciclo de vida do pagamento — criação, validação, compensação (clearing), anulação (void), reconciliação, stop — com data, valor e referências contábeis. Permite rastrear toda a evolução de um pagamento desde a emissão até a compensação bancária.",
+      "en": "Stores the event history of each payment (check) in the Accounts Payable module. Each record represents an event in the payment lifecycle — creation, validation, clearing, void, reconciliation, stop — with date, amount, and accounting references. Enables tracking the entire evolution of a payment from issuance to bank clearing.",
+      "es": "Almacena el historico de eventos de cada pago (check) del modulo Accounts Payable. Cada registro representa un evento en el ciclo de vida del pago — creacion, validacion, compensacion (clearing), anulacion (void), reconciliacion, stop — con fecha, valor y referencias contables. Permite rastrear toda la evolucion de un pago desde la emision hasta la compensacion bancaria."
+    },
+    {
+      "id": 3,
+      "br": "Sufixo _ALL",
+      "en": "_ALL Suffix",
+      "es": "Sufijo _ALL"
+    },
+    {
+      "id": 4,
+      "br": "O sufixo _ALL indica que a tabela armazena dados de todas as business units (multi-org). O filtro por ORG_ID é necessário para consultas por organização específica.",
+      "en": "The _ALL suffix indicates that the table stores data from all business units (multi-org). Filtering by ORG_ID is required for organization-specific queries.",
+      "es": "El sufijo _ALL indica que la tabla almacena datos de todas las business units (multi-org). El filtro por ORG_ID es necesario para consultas por organizacion especifica."
+    },
+    {
+      "id": 5,
+      "br": "Propósito de Negócio",
+      "en": "Business Purpose",
+      "es": "Proposito de Negocio"
+    },
+    {
+      "id": 6,
+      "br": "Esta tabela é utilizada nos seguintes processos:",
+      "en": "This table is used in the following processes:",
+      "es": "Esta tabla se utiliza en los siguientes procesos:"
+    },
+    {
+      "id": 7,
+      "br": "Registro de cada transição de status (emissão → compensação → reconciliação).",
+      "en": "Record of each status transition (issuance -> clearing -> reconciliation).",
+      "es": "Registro de cada transicion de status (emision -> compensacion -> reconciliacion)."
+    },
+    {
+      "id": 8,
+      "br": "Evento de clearing registra quando o banco processou o pagamento.",
+      "en": "Clearing event records when the bank processed the payment.",
+      "es": "El evento de clearing registra cuando el banco proceso el pago."
+    },
+    {
+      "id": 9,
+      "br": "Registro do evento de void com data e motivo.",
+      "en": "Record of void event with date and reason.",
+      "es": "Registro del evento de void con fecha y motivo."
+    },
+    {
+      "id": 10,
+      "br": "Base para reconciliar pagamentos emitidos com extratos bancários.",
+      "en": "Basis for reconciling issued payments with bank statements.",
+      "es": "Base para reconciliar pagos emitidos con extractos bancarios."
+    },
+    {
+      "id": 11,
+      "br": "Cada evento pode gerar lançamentos contábeis distintos (ex: clearing cria lançamento de cash para accrual basis).",
+      "en": "Each event may generate distinct accounting entries (e.g., clearing creates a cash entry for accrual basis).",
+      "es": "Cada evento puede generar asientos contables distintos (ej.: clearing crea asiento de cash para accrual basis)."
+    },
+    {
+      "id": 12,
+      "br": "Trilha completa de todos os eventos de pagamento.",
+      "en": "Complete trail of all payment events.",
+      "es": "Pista completa de todos los eventos de pago."
+    },
+    {
+      "id": 13,
+      "br": "Colunas Principais",
+      "en": "Key Columns",
+      "es": "Columnas Principales"
+    },
+    {
+      "id": 14,
+      "br": "Confiança",
+      "en": "Confidence",
+      "es": "Confianza"
+    },
+    {
+      "id": 15,
+      "br": "Escala de 0% a 100% — grau de certeza da descrição gerada por IA com base na documentação oficial Oracle (OEDMF/BICC Release 13/25A).",
+      "en": "Scale from 0% to 100% — degree of certainty of the AI-generated description based on official Oracle documentation (OEDMF/BICC Release 13/25A).",
+      "es": "Escala de 0% a 100% — grado de certeza de la descripcion generada por IA con base en la documentacion oficial Oracle (OEDMF/BICC Release 13/25A)."
+    },
+    {
+      "id": 16,
+      "br": "- 🟢 81–100% — Coluna presente na documentação oficial Oracle; nome, tipo e descrição confirmados.",
+      "en": "- 🟢 81–100% — Column present in official Oracle documentation; name, type, and description confirmed.",
+      "es": "- 🟢 81–100% — Columna presente en la documentacion oficial Oracle; nombre, tipo y descripcion confirmados."
+    },
+    {
+      "id": 17,
+      "br": "- 🟡 51–80% — Coluna inferida por naming convention ou padrão Oracle; tipo exato pode variar.",
+      "en": "- 🟡 51–80% — Column inferred by naming convention or Oracle standard; exact type may vary.",
+      "es": "- 🟡 51–80% — Columna inferida por naming convention o estandar Oracle; tipo exacto puede variar."
+    },
+    {
+      "id": 18,
+      "br": "- 🔴 0–50% — Existência ou tipo incertos; pode não existir no release atual; validar no ambiente.",
+      "en": "- 🔴 0–50% — Existence or type uncertain; may not exist in current release; validate in environment.",
+      "es": "- 🔴 0–50% — Existencia o tipo inciertos; puede no existir en el release actual; validar en el ambiente."
+    },
+    {
+      "id": 19,
+      "br": "Coluna",
+      "en": "Column",
+      "es": "Columna"
+    },
+    {
+      "id": 20,
+      "br": "Tipo",
+      "en": "Type",
+      "es": "Tipo"
+    },
+    {
+      "id": 21,
+      "br": "Nulo?",
+      "en": "Nullable?",
+      "es": "Nulo?"
+    },
+    {
+      "id": 22,
+      "br": "Categoria",
+      "en": "Category",
+      "es": "Categoria"
+    },
+    {
+      "id": 23,
+      "br": "Descrição",
+      "en": "Description",
+      "es": "Descripcion"
+    },
+    {
+      "id": 24,
+      "br": "Identificador único do evento de histórico",
+      "en": "Unique identifier of the history event",
+      "es": "Identificador unico del evento de historico"
+    },
+    {
+      "id": 25,
+      "br": "Identificador do check/pagamento",
+      "en": "Check/payment identifier",
+      "es": "Identificador del check/pago"
+    },
+    {
+      "id": 26,
+      "br": "Classificação",
+      "en": "Classification",
+      "es": "Clasificacion"
+    },
+    {
+      "id": 27,
+      "br": "Tipo do evento (PAYMENT CREATED/PAYMENT CLEARING/PAYMENT VOID/etc.)",
+      "en": "Event type (PAYMENT CREATED/PAYMENT CLEARING/PAYMENT VOID/etc.)",
+      "es": "Tipo del evento (PAYMENT CREATED/PAYMENT CLEARING/PAYMENT VOID/etc.)"
+    },
+    {
+      "id": 28,
+      "br": "Contabilidade",
+      "en": "Accounting",
+      "es": "Contabilidad"
+    },
+    {
+      "id": 29,
+      "br": "Data contábil do evento",
+      "en": "Accounting date of the event",
+      "es": "Fecha contable del evento"
+    },
+    {
+      "id": 30,
+      "br": "Financeiro",
+      "en": "Financial",
+      "es": "Financiero"
+    },
+    {
+      "id": 31,
+      "br": "Valor na moeda do banco",
+      "en": "Amount in bank currency",
+      "es": "Valor en la moneda del banco"
+    },
+    {
+      "id": 32,
+      "br": "Valor na moeda do pagamento",
+      "en": "Amount in payment currency",
+      "es": "Valor en la moneda del pago"
+    },
+    {
+      "id": 33,
+      "br": "Valor na moeda funcional (ledger)",
+      "en": "Amount in functional currency (ledger)",
+      "es": "Valor en la moneda funcional (ledger)"
+    },
+    {
+      "id": 34,
+      "br": "Valor de erro na moeda do banco",
+      "en": "Error amount in bank currency",
+      "es": "Valor de error en la moneda del banco"
+    },
+    {
+      "id": 35,
+      "br": "Valor de erro na moeda do pagamento",
+      "en": "Error amount in payment currency",
+      "es": "Valor de error en la moneda del pago"
+    },
+    {
+      "id": 36,
+      "br": "Valor de erro na moeda funcional",
+      "en": "Error amount in functional currency",
+      "es": "Valor de error en la moneda funcional"
+    },
+    {
+      "id": 37,
+      "br": "Encargos bancários na moeda do banco",
+      "en": "Bank charges in bank currency",
+      "es": "Cargos bancarios en la moneda del banco"
+    },
+    {
+      "id": 38,
+      "br": "Encargos bancários na moeda do pagamento",
+      "en": "Bank charges in payment currency",
+      "es": "Cargos bancarios en la moneda del pago"
+    },
+    {
+      "id": 39,
+      "br": "Encargos bancários na moeda funcional",
+      "en": "Bank charges in functional currency",
+      "es": "Cargos bancarios en la moneda funcional"
+    },
+    {
+      "id": 40,
+      "br": "Status",
+      "en": "Status",
+      "es": "Status"
+    },
+    {
+      "id": 41,
+      "br": "Indica se foi reconciliado com extrato (Y/N)",
+      "en": "Indicates whether reconciled with bank statement (Y/N)",
+      "es": "Indica si fue reconciliado con extracto (Y/N)"
+    },
+    {
+      "id": 42,
+      "br": "Evento contábil do Subledger Accounting",
+      "en": "Subledger Accounting accounting event",
+      "es": "Evento contable del Subledger Accounting"
+    },
+    {
+      "id": 43,
+      "br": "Business unit (multi-org)",
+      "en": "Business unit (multi-org)",
+      "es": "Business unit (multi-org)"
+    },
+    {
+      "id": 44,
+      "br": "Referência cruzada",
+      "en": "Cross-reference",
+      "es": "Referencia cruzada"
+    },
+    {
+      "id": 45,
+      "br": "Evento relacionado (ex: clearing do payment)",
+      "en": "Related event (e.g., payment clearing)",
+      "es": "Evento relacionado (ej.: clearing del payment)"
+    },
+    {
+      "id": 46,
+      "br": "Controle",
+      "en": "Control",
+      "es": "Control"
+    },
+    {
+      "id": 47,
+      "br": "Indica se é registro migrado/histórico (Y/N)",
+      "en": "Indicates whether it is a migrated/historical record (Y/N)",
+      "es": "Indica si es registro migrado/historico (Y/N)"
+    },
+    {
+      "id": 48,
+      "br": "Evento de ajuste de fatura",
+      "en": "Invoice adjustment event",
+      "es": "Evento de ajuste de factura"
+    },
+    {
+      "id": 49,
+      "br": "Auditoria",
+      "en": "Audit",
+      "es": "Auditoria"
+    },
+    {
+      "id": 50,
+      "br": "Usuário que criou o registro",
+      "en": "User who created the record",
+      "es": "Usuario que creo el registro"
+    },
+    {
+      "id": 51,
+      "br": "Data/hora de criação",
+      "en": "Creation date/time",
+      "es": "Fecha/hora de creacion"
+    },
+    {
+      "id": 52,
+      "br": "Último usuário que alterou",
+      "en": "Last user who modified",
+      "es": "Ultimo usuario que modifico"
+    },
+    {
+      "id": 53,
+      "br": "Data/hora da última alteração",
+      "en": "Last modification date/time",
+      "es": "Fecha/hora de la ultima modificacion"
+    },
+    {
+      "id": 54,
+      "br": "Login da última sessão",
+      "en": "Last session login",
+      "es": "Login de la ultima sesion"
+    },
+    {
+      "id": 55,
+      "br": "Relacionamentos",
+      "en": "Relationships",
+      "es": "Relaciones"
+    },
+    {
+      "id": 56,
+      "br": "Tabelas-pai (FK de entrada)",
+      "en": "Parent Tables (inbound FK)",
+      "es": "Tablas padre (FK de entrada)"
+    },
+    {
+      "id": 57,
+      "br": "pagamento/check",
+      "en": "payment/check",
+      "es": "pago/check"
+    },
+    {
+      "id": 58,
+      "br": "evento contábil SLA",
+      "en": "SLA accounting event",
+      "es": "evento contable SLA"
+    },
+    {
+      "id": 59,
+      "br": "business unit",
+      "en": "business unit",
+      "es": "business unit"
+    },
+    {
+      "id": 60,
+      "br": "Tabelas-filha (FK de saída)",
+      "en": "Child Tables (outbound FK)",
+      "es": "Tablas hija (FK de salida)"
+    },
+    {
+      "id": 61,
+      "br": "distribuições do evento",
+      "en": "event distributions",
+      "es": "distribuciones del evento"
+    },
+    {
+      "id": 62,
+      "br": "auto-referência para eventos relacionados",
+      "en": "self-reference for related events",
+      "es": "auto-referencia para eventos relacionados"
+    },
+    {
+      "id": 63,
+      "br": "Uso Típico",
+      "en": "Typical Usage",
+      "es": "Uso Tipico"
+    },
+    {
+      "id": 64,
+      "br": "Histórico de eventos de um pagamento",
+      "en": "Payment event history",
+      "es": "Historico de eventos de un pago"
+    },
+    {
+      "id": 65,
+      "br": "Pagamentos pendentes de clearing",
+      "en": "Payments pending clearing",
+      "es": "Pagos pendientes de clearing"
+    },
+    {
+      "id": 66,
+      "br": "Filtros comuns",
+      "en": "Common Filters",
+      "es": "Filtros comunes"
+    },
+    {
+      "id": 67,
+      "br": "Criação do pagamento",
+      "en": "Payment creation",
+      "es": "Creacion del pago"
+    },
+    {
+      "id": 68,
+      "br": "Compensação bancária",
+      "en": "Bank clearing",
+      "es": "Compensacion bancaria"
+    },
+    {
+      "id": 69,
+      "br": "Anulação do pagamento",
+      "en": "Payment void",
+      "es": "Anulacion del pago"
+    },
+    {
+      "id": 70,
+      "br": "Reconciliado com extrato",
+      "en": "Reconciled with bank statement",
+      "es": "Reconciliado con extracto"
+    },
+    {
+      "id": 71,
+      "br": "Observações",
+      "en": "Notes",
+      "es": "Observaciones"
+    },
+    {
+      "id": 72,
+      "br": "O campo TRANSACTION_TYPE define o evento: PAYMENT CREATED (emissão), PAYMENT CLEARING (compensação), PAYMENT VOID (anulação), PAYMENT MATURITY (vencimento de letra), PAYMENT UNCLEARING (estorno de compensação).",
+      "en": "The TRANSACTION_TYPE field defines the event: PAYMENT CREATED (issuance), PAYMENT CLEARING (clearing), PAYMENT VOID (void), PAYMENT MATURITY (bill maturity), PAYMENT UNCLEARING (clearing reversal).",
+      "es": "El campo TRANSACTION_TYPE define el evento: PAYMENT CREATED (emision), PAYMENT CLEARING (compensacion), PAYMENT VOID (anulacion), PAYMENT MATURITY (vencimiento de letra), PAYMENT UNCLEARING (reversa de compensacion)."
+    },
+    {
+      "id": 73,
+      "br": "Cada evento pode gerar lançamentos contábeis via ACCOUNTING_EVENT_ID no Subledger Accounting (xla_events).",
+      "en": "Each event may generate accounting entries via ACCOUNTING_EVENT_ID in Subledger Accounting (xla_events).",
+      "es": "Cada evento puede generar asientos contables via ACCOUNTING_EVENT_ID en Subledger Accounting (xla_events)."
+    },
+    {
+      "id": 74,
+      "br": "As colunas TRX_*_AMOUNT armazenam o valor em três moedas: banco, pagamento e funcional.",
+      "en": "The TRX_*_AMOUNT columns store the amount in three currencies: bank, payment, and functional.",
+      "es": "Las columnas TRX_*_AMOUNT almacenan el valor en tres monedas: banco, pago y funcional."
+    },
+    {
+      "id": 75,
+      "br": "Os campos ERRORS_* e CHARGES_* capturam diferenças e encargos bancários identificados na reconciliação.",
+      "en": "The ERRORS_* and CHARGES_* fields capture differences and bank charges identified during reconciliation.",
+      "es": "Los campos ERRORS_* y CHARGES_* capturan diferencias y cargos bancarios identificados en la reconciliacion."
+    },
+    {
+      "id": 76,
+      "br": "A tabela é apenas de inserção (append-only) para garantir integridade da trilha de auditoria.",
+      "en": "The table is append-only to ensure audit trail integrity.",
+      "es": "La tabla es solo de insercion (append-only) para garantizar la integridad de la pista de auditoria."
+    },
+    {
+      "id": 77,
+      "br": "Referências",
+      "en": "References",
+      "es": "Referencias"
+    },
+    {
+      "id": 78,
+      "br": "[Oracle Docs — AP_PAYMENT_HISTORY_ALL](https://docs.oracle.com/en/cloud/saas/financials/25a/oedmf/appaymenthistoryall-25730.html)",
+      "en": "[Oracle Docs — AP_PAYMENT_HISTORY_ALL](https://docs.oracle.com/en/cloud/saas/financials/25a/oedmf/appaymenthistoryall-25730.html)",
+      "es": "[Oracle Docs — AP_PAYMENT_HISTORY_ALL](https://docs.oracle.com/en/cloud/saas/financials/25a/oedmf/appaymenthistoryall-25730.html)"
+    },
+    {
+      "id": 79,
+      "br": "ap-module-data-dictionary — Dossiê do módulo AP",
+      "en": "ap-module-data-dictionary — AP module dossier",
+      "es": "ap-module-data-dictionary — Dossier del modulo AP"
+    }
+  ]
+}

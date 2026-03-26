@@ -1,0 +1,2449 @@
+{
+  "meta": {
+    "pvo_name": "AccountCreditCard",
+    "full_path": "FscmTopModelAM.FinArCustomersPublicModelAM.AccountCreditCard",
+    "module_path": "FscmTopModelAM.FinArCustomersPublicModelAM",
+    "module_code": "AR",
+    "type": "pvo",
+    "description": "Extrai os cartões de crédito registrados nas contas de clientes, com dados de endereço de cobrança e instrumentos de pagamento. Viabiliza cobranças automáticas via cartão e reconciliação de pagamentos recorrentes."
+  },
+  "stats": {
+    "total_attributes": 172,
+    "tables_count": 6,
+    "bicc_enabled": 23,
+    "bicc_pct": 13,
+    "pk_count": 1
+  },
+  "tables": [
+    "HZ_LOCATIONS",
+    "HZ_PARTY_SITES",
+    "HZ_PARTY_SITE_USES",
+    "IBY_CREDITCARD",
+    "IBY_EXTERNAL_PAYERS_ALL",
+    "IBY_PMT_INSTR_USES_ALL"
+  ],
+  "attributes": [
+    {
+      "name": "CreditCardAccttypeid",
+      "table": "IBY_CREDITCARD",
+      "column": "ACCTTYPEID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CreditCardAddressid",
+      "table": "IBY_CREDITCARD",
+      "column": "ADDRESSID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CreditCardBillAddrTerritoryCode",
+      "table": "IBY_CREDITCARD",
+      "column": "BILL_ADDR_TERRITORY_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CreditCardBillingAddrPostalCode",
+      "table": "IBY_CREDITCARD",
+      "column": "BILLING_ADDR_POSTAL_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CreditCardCardIssuerCode",
+      "table": "IBY_CREDITCARD",
+      "column": "CARD_ISSUER_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CreditCardCardMaskSetting",
+      "table": "IBY_CREDITCARD",
+      "column": "CARD_MASK_SETTING",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CreditCardCardOwnerId",
+      "table": "IBY_CREDITCARD",
+      "column": "CARD_OWNER_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CreditCardCardPurpose",
+      "table": "IBY_CREDITCARD",
+      "column": "CARD_PURPOSE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CreditCardCardUnmaskLength",
+      "table": "IBY_CREDITCARD",
+      "column": "CARD_UNMASK_LENGTH",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CreditCardCcIssuerRangeId",
+      "table": "IBY_CREDITCARD",
+      "column": "CC_ISSUER_RANGE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CreditCardCcNumSecSegmentId",
+      "table": "IBY_CREDITCARD",
+      "column": "CC_NUM_SEC_SEGMENT_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CreditCardCcNumberHash1",
+      "table": "IBY_CREDITCARD",
+      "column": "CC_NUMBER_HASH1",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CreditCardCcNumberHash2",
+      "table": "IBY_CREDITCARD",
+      "column": "CC_NUMBER_HASH2",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CreditCardCcNumberLength",
+      "table": "IBY_CREDITCARD",
+      "column": "CC_NUMBER_LENGTH",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CreditCardCcnumber",
+      "table": "IBY_CREDITCARD",
+      "column": "CCNUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CreditCardChname",
+      "table": "IBY_CREDITCARD",
+      "column": "CHNAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CreditCardCreatedBy",
+      "table": "IBY_CREDITCARD",
+      "column": "CREATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CreditCardCreationDate",
+      "table": "IBY_CREDITCARD",
+      "column": "CREATION_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CreditCardDescription",
+      "table": "IBY_CREDITCARD",
+      "column": "DESCRIPTION",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CreditCardEncrypted",
+      "table": "IBY_CREDITCARD",
+      "column": "ENCRYPTED",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CreditCardEndDate",
+      "table": "IBY_CREDITCARD",
+      "column": "END_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CreditCardExpirySecSegmentId",
+      "table": "IBY_CREDITCARD",
+      "column": "EXPIRY_SEC_SEGMENT_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CreditCardExpirydate",
+      "table": "IBY_CREDITCARD",
+      "column": "EXPIRYDATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CreditCardFiname",
+      "table": "IBY_CREDITCARD",
+      "column": "FINAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CreditCardInformationOnlyFlag",
+      "table": "IBY_CREDITCARD",
+      "column": "INFORMATION_ONLY_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CreditCardInstrbuf",
+      "table": "IBY_CREDITCARD",
+      "column": "INSTRBUF",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CreditCardInstrid",
+      "table": "IBY_CREDITCARD",
+      "column": "INSTRID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CreditCardInstrname",
+      "table": "IBY_CREDITCARD",
+      "column": "INSTRNAME",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CreditCardInstrumentType",
+      "table": "IBY_CREDITCARD",
+      "column": "INSTRUMENT_TYPE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CreditCardLastUpdateDate",
+      "table": "IBY_CREDITCARD",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": true
+    },
+    {
+      "name": "CreditCardLastUpdateLogin",
+      "table": "IBY_CREDITCARD",
+      "column": "LAST_UPDATE_LOGIN",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CreditCardLastUpdatedBy",
+      "table": "IBY_CREDITCARD",
+      "column": "LAST_UPDATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CreditCardMaskedCcNumber",
+      "table": "IBY_CREDITCARD",
+      "column": "MASKED_CC_NUMBER",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CreditCardObjectVersionNumber",
+      "table": "IBY_CREDITCARD",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CreditCardProgramApplicationId",
+      "table": "IBY_CREDITCARD",
+      "column": "PROGRAM_APPLICATION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CreditCardProgramId",
+      "table": "IBY_CREDITCARD",
+      "column": "PROGRAM_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CreditCardProgramUpdateDate",
+      "table": "IBY_CREDITCARD",
+      "column": "PROGRAM_UPDATE_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CreditCardPurchasecardFlag",
+      "table": "IBY_CREDITCARD",
+      "column": "PURCHASECARD_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CreditCardPurchasecardSubtype",
+      "table": "IBY_CREDITCARD",
+      "column": "PURCHASECARD_SUBTYPE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CreditCardRequestId",
+      "table": "IBY_CREDITCARD",
+      "column": "REQUEST_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CreditCardSecSubkeyId",
+      "table": "IBY_CREDITCARD",
+      "column": "SEC_SUBKEY_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CreditCardSecurityGroupId",
+      "table": "IBY_CREDITCARD",
+      "column": "SECURITY_GROUP_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CreditCardSingleUseFlag",
+      "table": "IBY_CREDITCARD",
+      "column": "SINGLE_USE_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CreditCardStartDate",
+      "table": "IBY_CREDITCARD",
+      "column": "START_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CreditCardSubtype",
+      "table": "IBY_CREDITCARD",
+      "column": "SUBTYPE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CreditCardUpgradeAddressid",
+      "table": "IBY_CREDITCARD",
+      "column": "UPGRADE_ADDRESSID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InstrumentPaymentUseId",
+      "table": "IBY_PMT_INSTR_USES_ALL",
+      "column": "INSTRUMENT_PAYMENT_USE_ID",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    },
+    {
+      "name": "LocationActualContentSource",
+      "table": "HZ_LOCATIONS",
+      "column": "ACTUAL_CONTENT_SOURCE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LocationAddress1",
+      "table": "HZ_LOCATIONS",
+      "column": "ADDRESS1",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LocationAddress2",
+      "table": "HZ_LOCATIONS",
+      "column": "ADDRESS2",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LocationAddress3",
+      "table": "HZ_LOCATIONS",
+      "column": "ADDRESS3",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LocationAddress4",
+      "table": "HZ_LOCATIONS",
+      "column": "ADDRESS4",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LocationAddressEffectiveDate",
+      "table": "HZ_LOCATIONS",
+      "column": "ADDRESS_EFFECTIVE_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LocationAddressExpirationDate",
+      "table": "HZ_LOCATIONS",
+      "column": "ADDRESS_EXPIRATION_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LocationAddressLinesPhonetic",
+      "table": "HZ_LOCATIONS",
+      "column": "ADDRESS_LINES_PHONETIC",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LocationAddressStyle",
+      "table": "HZ_LOCATIONS",
+      "column": "ADDRESS_STYLE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LocationBuilding",
+      "table": "HZ_LOCATIONS",
+      "column": "BUILDING",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LocationCity",
+      "table": "HZ_LOCATIONS",
+      "column": "CITY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LocationClliCode",
+      "table": "HZ_LOCATIONS",
+      "column": "CLLI_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LocationComments",
+      "table": "HZ_LOCATIONS",
+      "column": "COMMENTS",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LocationCountry",
+      "table": "HZ_LOCATIONS",
+      "column": "COUNTRY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LocationCounty",
+      "table": "HZ_LOCATIONS",
+      "column": "COUNTY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LocationCreatedBy",
+      "table": "HZ_LOCATIONS",
+      "column": "CREATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LocationCreatedByModule",
+      "table": "HZ_LOCATIONS",
+      "column": "CREATED_BY_MODULE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LocationCreationDate",
+      "table": "HZ_LOCATIONS",
+      "column": "CREATION_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LocationDateValidated",
+      "table": "HZ_LOCATIONS",
+      "column": "DATE_VALIDATED",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LocationDescription",
+      "table": "HZ_LOCATIONS",
+      "column": "DESCRIPTION",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LocationDoNotValidateFlag",
+      "table": "HZ_LOCATIONS",
+      "column": "DO_NOT_VALIDATE_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LocationFaLocationId",
+      "table": "HZ_LOCATIONS",
+      "column": "FA_LOCATION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LocationFloorNumber",
+      "table": "HZ_LOCATIONS",
+      "column": "FLOOR_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LocationGeometryStatusCode",
+      "table": "HZ_LOCATIONS",
+      "column": "GEOMETRY_STATUS_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LocationHouseType",
+      "table": "HZ_LOCATIONS",
+      "column": "HOUSE_TYPE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LocationInternalFlag",
+      "table": "HZ_LOCATIONS",
+      "column": "INTERNAL_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LocationJobDefinitionName",
+      "table": "HZ_LOCATIONS",
+      "column": "JOB_DEFINITION_NAME",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LocationJobDefinitionPackage",
+      "table": "HZ_LOCATIONS",
+      "column": "JOB_DEFINITION_PACKAGE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LocationLanguage",
+      "table": "HZ_LOCATIONS",
+      "column": "LOCATION_LANGUAGE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LocationLastUpdateDate",
+      "table": "HZ_LOCATIONS",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": true
+    },
+    {
+      "name": "LocationLastUpdateLogin",
+      "table": "HZ_LOCATIONS",
+      "column": "LAST_UPDATE_LOGIN",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LocationLastUpdatedBy",
+      "table": "HZ_LOCATIONS",
+      "column": "LAST_UPDATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LocationLatitude",
+      "table": "HZ_LOCATIONS",
+      "column": "LATITUDE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LocationLocationDirections",
+      "table": "HZ_LOCATIONS",
+      "column": "LOCATION_DIRECTIONS",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LocationLocationId",
+      "table": "HZ_LOCATIONS",
+      "column": "LOCATION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LocationLongitude",
+      "table": "HZ_LOCATIONS",
+      "column": "LONGITUDE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LocationObjectVersionNumber",
+      "table": "HZ_LOCATIONS",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LocationOrigSystemReference",
+      "table": "HZ_LOCATIONS",
+      "column": "ORIG_SYSTEM_REFERENCE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LocationPosition",
+      "table": "HZ_LOCATIONS",
+      "column": "POSITION",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LocationPostalCode",
+      "table": "HZ_LOCATIONS",
+      "column": "POSTAL_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LocationPostalPlus4Code",
+      "table": "HZ_LOCATIONS",
+      "column": "POSTAL_PLUS4_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LocationProvince",
+      "table": "HZ_LOCATIONS",
+      "column": "PROVINCE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LocationSalesTaxGeocode",
+      "table": "HZ_LOCATIONS",
+      "column": "SALES_TAX_GEOCODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LocationSalesTaxInsideCityLimits",
+      "table": "HZ_LOCATIONS",
+      "column": "SALES_TAX_INSIDE_CITY_LIMITS",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LocationShortDescription",
+      "table": "HZ_LOCATIONS",
+      "column": "SHORT_DESCRIPTION",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LocationState",
+      "table": "HZ_LOCATIONS",
+      "column": "STATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LocationStatusFlag",
+      "table": "HZ_LOCATIONS",
+      "column": "STATUS_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LocationTimezoneCode",
+      "table": "HZ_LOCATIONS",
+      "column": "TIMEZONE_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LocationValidatedFlag",
+      "table": "HZ_LOCATIONS",
+      "column": "VALIDATED_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LocationValidationStatusCode",
+      "table": "HZ_LOCATIONS",
+      "column": "VALIDATION_STATUS_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartySiteCreatedBy",
+      "table": "HZ_PARTY_SITES",
+      "column": "CREATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartySiteCreatedByModule",
+      "table": "HZ_PARTY_SITES",
+      "column": "CREATED_BY_MODULE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartySiteCreationDate",
+      "table": "HZ_PARTY_SITES",
+      "column": "CREATION_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartySiteDunsNumberC",
+      "table": "HZ_PARTY_SITES",
+      "column": "DUNS_NUMBER_C",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartySiteEndDateActive",
+      "table": "HZ_PARTY_SITES",
+      "column": "END_DATE_ACTIVE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartySiteGlobalLocationNumber",
+      "table": "HZ_PARTY_SITES",
+      "column": "GLOBAL_LOCATION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartySiteIdentifyingAddressFlag",
+      "table": "HZ_PARTY_SITES",
+      "column": "IDENTIFYING_ADDRESS_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartySiteLanguage",
+      "table": "HZ_PARTY_SITES",
+      "column": "PARTY_SITE_LANGUAGE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartySiteLastUpdateDate",
+      "table": "HZ_PARTY_SITES",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": true
+    },
+    {
+      "name": "PartySiteLastUpdateLogin",
+      "table": "HZ_PARTY_SITES",
+      "column": "LAST_UPDATE_LOGIN",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartySiteLastUpdatedBy",
+      "table": "HZ_PARTY_SITES",
+      "column": "LAST_UPDATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartySiteLocationId",
+      "table": "HZ_PARTY_SITES",
+      "column": "LOCATION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartySiteMailstop",
+      "table": "HZ_PARTY_SITES",
+      "column": "MAILSTOP",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartySiteObjectVersionNumber",
+      "table": "HZ_PARTY_SITES",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartySiteOrigSystemReference",
+      "table": "HZ_PARTY_SITES",
+      "column": "ORIG_SYSTEM_REFERENCE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartySiteOverallPrimaryFlag",
+      "table": "HZ_PARTY_SITES",
+      "column": "OVERALL_PRIMARY_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartySitePartyId",
+      "table": "HZ_PARTY_SITES",
+      "column": "PARTY_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartySitePartyNameDba",
+      "table": "HZ_PARTY_SITES",
+      "column": "PARTY_NAME_DBA",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartySitePartyNameDivision",
+      "table": "HZ_PARTY_SITES",
+      "column": "PARTY_NAME_DIVISION",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartySitePartyNameLegal",
+      "table": "HZ_PARTY_SITES",
+      "column": "PARTY_NAME_LEGAL",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartySitePartySiteId",
+      "table": "HZ_PARTY_SITES",
+      "column": "PARTY_SITE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartySitePartySiteName",
+      "table": "HZ_PARTY_SITES",
+      "column": "PARTY_SITE_NAME",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartySitePartySiteNumber",
+      "table": "HZ_PARTY_SITES",
+      "column": "PARTY_SITE_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartySitePartySiteType",
+      "table": "HZ_PARTY_SITES",
+      "column": "PARTY_SITE_TYPE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartySitePartyUsageCode",
+      "table": "HZ_PARTY_SITES",
+      "column": "PARTY_USAGE_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartySiteRelationshipId",
+      "table": "HZ_PARTY_SITES",
+      "column": "RELATIONSHIP_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartySiteStartDateActive",
+      "table": "HZ_PARTY_SITES",
+      "column": "START_DATE_ACTIVE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartySiteStatus",
+      "table": "HZ_PARTY_SITES",
+      "column": "STATUS",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartySiteUseBeginDate",
+      "table": "HZ_PARTY_SITE_USES",
+      "column": "BEGIN_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartySiteUseComments",
+      "table": "HZ_PARTY_SITE_USES",
+      "column": "COMMENTS",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartySiteUseCreatedBy",
+      "table": "HZ_PARTY_SITE_USES",
+      "column": "CREATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartySiteUseCreatedByModule",
+      "table": "HZ_PARTY_SITE_USES",
+      "column": "CREATED_BY_MODULE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartySiteUseCreationDate",
+      "table": "HZ_PARTY_SITE_USES",
+      "column": "CREATION_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartySiteUseEndDate",
+      "table": "HZ_PARTY_SITE_USES",
+      "column": "END_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartySiteUseLastUpdateDate",
+      "table": "HZ_PARTY_SITE_USES",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": true
+    },
+    {
+      "name": "PartySiteUseLastUpdateLogin",
+      "table": "HZ_PARTY_SITE_USES",
+      "column": "LAST_UPDATE_LOGIN",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartySiteUseLastUpdatedBy",
+      "table": "HZ_PARTY_SITE_USES",
+      "column": "LAST_UPDATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartySiteUseObjectVersionNumber",
+      "table": "HZ_PARTY_SITE_USES",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartySiteUsePartySiteId",
+      "table": "HZ_PARTY_SITE_USES",
+      "column": "PARTY_SITE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartySiteUsePartySiteUseId",
+      "table": "HZ_PARTY_SITE_USES",
+      "column": "PARTY_SITE_USE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartySiteUsePrimaryPerType",
+      "table": "HZ_PARTY_SITE_USES",
+      "column": "PRIMARY_PER_TYPE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartySiteUseSiteUseType",
+      "table": "HZ_PARTY_SITE_USES",
+      "column": "SITE_USE_TYPE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartySiteUseStatus",
+      "table": "HZ_PARTY_SITE_USES",
+      "column": "STATUS",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PayersAcctSiteUseId",
+      "table": "IBY_EXTERNAL_PAYERS_ALL",
+      "column": "ACCT_SITE_USE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PayersBankChargeBearerCode",
+      "table": "IBY_EXTERNAL_PAYERS_ALL",
+      "column": "BANK_CHARGE_BEARER_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PayersCreatedBy",
+      "table": "IBY_EXTERNAL_PAYERS_ALL",
+      "column": "CREATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PayersCreationDate",
+      "table": "IBY_EXTERNAL_PAYERS_ALL",
+      "column": "CREATION_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PayersCustAccountId",
+      "table": "IBY_EXTERNAL_PAYERS_ALL",
+      "column": "CUST_ACCOUNT_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PayersDebitAdviceDeliveryMethod",
+      "table": "IBY_EXTERNAL_PAYERS_ALL",
+      "column": "DEBIT_ADVICE_DELIVERY_METHOD",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PayersDebitAdviceEmail",
+      "table": "IBY_EXTERNAL_PAYERS_ALL",
+      "column": "DEBIT_ADVICE_EMAIL",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PayersDebitAdviceFax",
+      "table": "IBY_EXTERNAL_PAYERS_ALL",
+      "column": "DEBIT_ADVICE_FAX",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PayersDirdebInstructionCode",
+      "table": "IBY_EXTERNAL_PAYERS_ALL",
+      "column": "DIRDEB_INSTRUCTION_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PayersExtPayerId",
+      "table": "IBY_EXTERNAL_PAYERS_ALL",
+      "column": "EXT_PAYER_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PayersLastUpdateDate",
+      "table": "IBY_EXTERNAL_PAYERS_ALL",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": true
+    },
+    {
+      "name": "PayersLastUpdateLogin",
+      "table": "IBY_EXTERNAL_PAYERS_ALL",
+      "column": "LAST_UPDATE_LOGIN",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PayersLastUpdatedBy",
+      "table": "IBY_EXTERNAL_PAYERS_ALL",
+      "column": "LAST_UPDATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PayersObjectVersionNumber",
+      "table": "IBY_EXTERNAL_PAYERS_ALL",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PayersOrgId",
+      "table": "IBY_EXTERNAL_PAYERS_ALL",
+      "column": "ORG_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PayersOrgType",
+      "table": "IBY_EXTERNAL_PAYERS_ALL",
+      "column": "ORG_TYPE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PayersPartyId",
+      "table": "IBY_EXTERNAL_PAYERS_ALL",
+      "column": "PARTY_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PayersPaymentFunction",
+      "table": "IBY_EXTERNAL_PAYERS_ALL",
+      "column": "PAYMENT_FUNCTION",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "UseCreatedBy",
+      "table": "IBY_PMT_INSTR_USES_ALL",
+      "column": "CREATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "UseCreationDate",
+      "table": "IBY_PMT_INSTR_USES_ALL",
+      "column": "CREATION_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "UseEndDate",
+      "table": "IBY_PMT_INSTR_USES_ALL",
+      "column": "END_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "UseExtPmtPartyId",
+      "table": "IBY_PMT_INSTR_USES_ALL",
+      "column": "EXT_PMT_PARTY_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "UseInstrumentId",
+      "table": "IBY_PMT_INSTR_USES_ALL",
+      "column": "INSTRUMENT_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "UseInstrumentType",
+      "table": "IBY_PMT_INSTR_USES_ALL",
+      "column": "INSTRUMENT_TYPE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "UseLastUpdateDate",
+      "table": "IBY_PMT_INSTR_USES_ALL",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": true
+    },
+    {
+      "name": "UseLastUpdateLogin",
+      "table": "IBY_PMT_INSTR_USES_ALL",
+      "column": "LAST_UPDATE_LOGIN",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "UseLastUpdatedBy",
+      "table": "IBY_PMT_INSTR_USES_ALL",
+      "column": "LAST_UPDATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "UseObjectVersionNumber",
+      "table": "IBY_PMT_INSTR_USES_ALL",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "UsePaymentFlow",
+      "table": "IBY_PMT_INSTR_USES_ALL",
+      "column": "PAYMENT_FLOW",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "UsePaymentFunction",
+      "table": "IBY_PMT_INSTR_USES_ALL",
+      "column": "PAYMENT_FUNCTION",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "UsePrimaryFlag",
+      "table": "IBY_PMT_INSTR_USES_ALL",
+      "column": "PRIMARY_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "UseStartDate",
+      "table": "IBY_PMT_INSTR_USES_ALL",
+      "column": "START_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    }
+  ],
+  "by_table": {
+    "IBY_CREDITCARD": [
+      {
+        "attribute": "CreditCardAccttypeid",
+        "column": "ACCTTYPEID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CreditCardAddressid",
+        "column": "ADDRESSID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CreditCardBillAddrTerritoryCode",
+        "column": "BILL_ADDR_TERRITORY_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CreditCardBillingAddrPostalCode",
+        "column": "BILLING_ADDR_POSTAL_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CreditCardCardIssuerCode",
+        "column": "CARD_ISSUER_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CreditCardCardMaskSetting",
+        "column": "CARD_MASK_SETTING",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CreditCardCardOwnerId",
+        "column": "CARD_OWNER_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CreditCardCardPurpose",
+        "column": "CARD_PURPOSE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CreditCardCardUnmaskLength",
+        "column": "CARD_UNMASK_LENGTH",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CreditCardCcIssuerRangeId",
+        "column": "CC_ISSUER_RANGE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CreditCardCcNumSecSegmentId",
+        "column": "CC_NUM_SEC_SEGMENT_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CreditCardCcNumberHash1",
+        "column": "CC_NUMBER_HASH1",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CreditCardCcNumberHash2",
+        "column": "CC_NUMBER_HASH2",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CreditCardCcNumberLength",
+        "column": "CC_NUMBER_LENGTH",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CreditCardCcnumber",
+        "column": "CCNUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CreditCardChname",
+        "column": "CHNAME",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CreditCardCreatedBy",
+        "column": "CREATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CreditCardCreationDate",
+        "column": "CREATION_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CreditCardDescription",
+        "column": "DESCRIPTION",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CreditCardEncrypted",
+        "column": "ENCRYPTED",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CreditCardEndDate",
+        "column": "END_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CreditCardExpirySecSegmentId",
+        "column": "EXPIRY_SEC_SEGMENT_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CreditCardExpirydate",
+        "column": "EXPIRYDATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CreditCardFiname",
+        "column": "FINAME",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CreditCardInformationOnlyFlag",
+        "column": "INFORMATION_ONLY_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CreditCardInstrbuf",
+        "column": "INSTRBUF",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CreditCardInstrid",
+        "column": "INSTRID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CreditCardInstrname",
+        "column": "INSTRNAME",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CreditCardInstrumentType",
+        "column": "INSTRUMENT_TYPE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CreditCardLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CreditCardLastUpdateLogin",
+        "column": "LAST_UPDATE_LOGIN",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CreditCardLastUpdatedBy",
+        "column": "LAST_UPDATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CreditCardMaskedCcNumber",
+        "column": "MASKED_CC_NUMBER",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CreditCardObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CreditCardProgramApplicationId",
+        "column": "PROGRAM_APPLICATION_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CreditCardProgramId",
+        "column": "PROGRAM_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CreditCardProgramUpdateDate",
+        "column": "PROGRAM_UPDATE_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CreditCardPurchasecardFlag",
+        "column": "PURCHASECARD_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CreditCardPurchasecardSubtype",
+        "column": "PURCHASECARD_SUBTYPE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CreditCardRequestId",
+        "column": "REQUEST_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CreditCardSecSubkeyId",
+        "column": "SEC_SUBKEY_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CreditCardSecurityGroupId",
+        "column": "SECURITY_GROUP_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CreditCardSingleUseFlag",
+        "column": "SINGLE_USE_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CreditCardStartDate",
+        "column": "START_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CreditCardSubtype",
+        "column": "SUBTYPE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CreditCardUpgradeAddressid",
+        "column": "UPGRADE_ADDRESSID",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "IBY_PMT_INSTR_USES_ALL": [
+      {
+        "attribute": "InstrumentPaymentUseId",
+        "column": "INSTRUMENT_PAYMENT_USE_ID",
+        "bicc": true,
+        "pk": true
+      },
+      {
+        "attribute": "UseCreatedBy",
+        "column": "CREATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "UseCreationDate",
+        "column": "CREATION_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "UseEndDate",
+        "column": "END_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "UseExtPmtPartyId",
+        "column": "EXT_PMT_PARTY_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "UseInstrumentId",
+        "column": "INSTRUMENT_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "UseInstrumentType",
+        "column": "INSTRUMENT_TYPE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "UseLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "UseLastUpdateLogin",
+        "column": "LAST_UPDATE_LOGIN",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "UseLastUpdatedBy",
+        "column": "LAST_UPDATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "UseObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "UsePaymentFlow",
+        "column": "PAYMENT_FLOW",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "UsePaymentFunction",
+        "column": "PAYMENT_FUNCTION",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "UsePrimaryFlag",
+        "column": "PRIMARY_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "UseStartDate",
+        "column": "START_DATE",
+        "bicc": true,
+        "pk": false
+      }
+    ],
+    "HZ_LOCATIONS": [
+      {
+        "attribute": "LocationActualContentSource",
+        "column": "ACTUAL_CONTENT_SOURCE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "LocationAddress1",
+        "column": "ADDRESS1",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "LocationAddress2",
+        "column": "ADDRESS2",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "LocationAddress3",
+        "column": "ADDRESS3",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "LocationAddress4",
+        "column": "ADDRESS4",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "LocationAddressEffectiveDate",
+        "column": "ADDRESS_EFFECTIVE_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "LocationAddressExpirationDate",
+        "column": "ADDRESS_EXPIRATION_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "LocationAddressLinesPhonetic",
+        "column": "ADDRESS_LINES_PHONETIC",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "LocationAddressStyle",
+        "column": "ADDRESS_STYLE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "LocationBuilding",
+        "column": "BUILDING",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "LocationCity",
+        "column": "CITY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "LocationClliCode",
+        "column": "CLLI_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "LocationComments",
+        "column": "COMMENTS",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "LocationCountry",
+        "column": "COUNTRY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "LocationCounty",
+        "column": "COUNTY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "LocationCreatedBy",
+        "column": "CREATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "LocationCreatedByModule",
+        "column": "CREATED_BY_MODULE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "LocationCreationDate",
+        "column": "CREATION_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "LocationDateValidated",
+        "column": "DATE_VALIDATED",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "LocationDescription",
+        "column": "DESCRIPTION",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "LocationDoNotValidateFlag",
+        "column": "DO_NOT_VALIDATE_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "LocationFaLocationId",
+        "column": "FA_LOCATION_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "LocationFloorNumber",
+        "column": "FLOOR_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "LocationGeometryStatusCode",
+        "column": "GEOMETRY_STATUS_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "LocationHouseType",
+        "column": "HOUSE_TYPE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "LocationInternalFlag",
+        "column": "INTERNAL_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "LocationJobDefinitionName",
+        "column": "JOB_DEFINITION_NAME",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "LocationJobDefinitionPackage",
+        "column": "JOB_DEFINITION_PACKAGE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "LocationLanguage",
+        "column": "LOCATION_LANGUAGE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "LocationLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "LocationLastUpdateLogin",
+        "column": "LAST_UPDATE_LOGIN",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "LocationLastUpdatedBy",
+        "column": "LAST_UPDATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "LocationLatitude",
+        "column": "LATITUDE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "LocationLocationDirections",
+        "column": "LOCATION_DIRECTIONS",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "LocationLocationId",
+        "column": "LOCATION_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "LocationLongitude",
+        "column": "LONGITUDE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "LocationObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "LocationOrigSystemReference",
+        "column": "ORIG_SYSTEM_REFERENCE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "LocationPosition",
+        "column": "POSITION",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "LocationPostalCode",
+        "column": "POSTAL_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "LocationPostalPlus4Code",
+        "column": "POSTAL_PLUS4_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "LocationProvince",
+        "column": "PROVINCE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "LocationSalesTaxGeocode",
+        "column": "SALES_TAX_GEOCODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "LocationSalesTaxInsideCityLimits",
+        "column": "SALES_TAX_INSIDE_CITY_LIMITS",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "LocationShortDescription",
+        "column": "SHORT_DESCRIPTION",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "LocationState",
+        "column": "STATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "LocationStatusFlag",
+        "column": "STATUS_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "LocationTimezoneCode",
+        "column": "TIMEZONE_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "LocationValidatedFlag",
+        "column": "VALIDATED_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "LocationValidationStatusCode",
+        "column": "VALIDATION_STATUS_CODE",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "HZ_PARTY_SITES": [
+      {
+        "attribute": "PartySiteCreatedBy",
+        "column": "CREATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PartySiteCreatedByModule",
+        "column": "CREATED_BY_MODULE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PartySiteCreationDate",
+        "column": "CREATION_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PartySiteDunsNumberC",
+        "column": "DUNS_NUMBER_C",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PartySiteEndDateActive",
+        "column": "END_DATE_ACTIVE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PartySiteGlobalLocationNumber",
+        "column": "GLOBAL_LOCATION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PartySiteIdentifyingAddressFlag",
+        "column": "IDENTIFYING_ADDRESS_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PartySiteLanguage",
+        "column": "PARTY_SITE_LANGUAGE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PartySiteLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PartySiteLastUpdateLogin",
+        "column": "LAST_UPDATE_LOGIN",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PartySiteLastUpdatedBy",
+        "column": "LAST_UPDATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PartySiteLocationId",
+        "column": "LOCATION_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PartySiteMailstop",
+        "column": "MAILSTOP",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PartySiteObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PartySiteOrigSystemReference",
+        "column": "ORIG_SYSTEM_REFERENCE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PartySiteOverallPrimaryFlag",
+        "column": "OVERALL_PRIMARY_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PartySitePartyId",
+        "column": "PARTY_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PartySitePartyNameDba",
+        "column": "PARTY_NAME_DBA",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PartySitePartyNameDivision",
+        "column": "PARTY_NAME_DIVISION",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PartySitePartyNameLegal",
+        "column": "PARTY_NAME_LEGAL",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PartySitePartySiteId",
+        "column": "PARTY_SITE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PartySitePartySiteName",
+        "column": "PARTY_SITE_NAME",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PartySitePartySiteNumber",
+        "column": "PARTY_SITE_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PartySitePartySiteType",
+        "column": "PARTY_SITE_TYPE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PartySitePartyUsageCode",
+        "column": "PARTY_USAGE_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PartySiteRelationshipId",
+        "column": "RELATIONSHIP_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PartySiteStartDateActive",
+        "column": "START_DATE_ACTIVE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PartySiteStatus",
+        "column": "STATUS",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "HZ_PARTY_SITE_USES": [
+      {
+        "attribute": "PartySiteUseBeginDate",
+        "column": "BEGIN_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PartySiteUseComments",
+        "column": "COMMENTS",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PartySiteUseCreatedBy",
+        "column": "CREATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PartySiteUseCreatedByModule",
+        "column": "CREATED_BY_MODULE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PartySiteUseCreationDate",
+        "column": "CREATION_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PartySiteUseEndDate",
+        "column": "END_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PartySiteUseLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PartySiteUseLastUpdateLogin",
+        "column": "LAST_UPDATE_LOGIN",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PartySiteUseLastUpdatedBy",
+        "column": "LAST_UPDATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PartySiteUseObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PartySiteUsePartySiteId",
+        "column": "PARTY_SITE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PartySiteUsePartySiteUseId",
+        "column": "PARTY_SITE_USE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PartySiteUsePrimaryPerType",
+        "column": "PRIMARY_PER_TYPE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PartySiteUseSiteUseType",
+        "column": "SITE_USE_TYPE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PartySiteUseStatus",
+        "column": "STATUS",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "IBY_EXTERNAL_PAYERS_ALL": [
+      {
+        "attribute": "PayersAcctSiteUseId",
+        "column": "ACCT_SITE_USE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PayersBankChargeBearerCode",
+        "column": "BANK_CHARGE_BEARER_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PayersCreatedBy",
+        "column": "CREATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PayersCreationDate",
+        "column": "CREATION_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PayersCustAccountId",
+        "column": "CUST_ACCOUNT_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PayersDebitAdviceDeliveryMethod",
+        "column": "DEBIT_ADVICE_DELIVERY_METHOD",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PayersDebitAdviceEmail",
+        "column": "DEBIT_ADVICE_EMAIL",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PayersDebitAdviceFax",
+        "column": "DEBIT_ADVICE_FAX",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PayersDirdebInstructionCode",
+        "column": "DIRDEB_INSTRUCTION_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PayersExtPayerId",
+        "column": "EXT_PAYER_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PayersLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PayersLastUpdateLogin",
+        "column": "LAST_UPDATE_LOGIN",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PayersLastUpdatedBy",
+        "column": "LAST_UPDATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PayersObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PayersOrgId",
+        "column": "ORG_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PayersOrgType",
+        "column": "ORG_TYPE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PayersPartyId",
+        "column": "PARTY_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PayersPaymentFunction",
+        "column": "PAYMENT_FUNCTION",
+        "bicc": false,
+        "pk": false
+      }
+    ]
+  }
+}

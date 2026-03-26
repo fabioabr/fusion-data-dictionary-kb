@@ -1,0 +1,640 @@
+{
+  "meta": {
+    "pvo_name": "PartnerAccountPVO",
+    "full_path": "HcmTopModelAnalyticsGlobalAM.HcmRecJobDistributionAM.PartnerAccountPVO",
+    "module_path": "HcmTopModelAnalyticsGlobalAM.HcmRecJobDistributionAM",
+    "module_code": "HCM",
+    "type": "pvo",
+    "description": "Extrai contas de parceiros de recrutamento (job boards, agências) com categorias e provisionamentos. Suporta gestão de canais de distribuição de vagas e parcerias de sourcing."
+  },
+  "stats": {
+    "total_attributes": 43,
+    "tables_count": 5,
+    "bicc_enabled": 34,
+    "bicc_pct": 79,
+    "pk_count": 1
+  },
+  "tables": [
+    "IRC_TP_CATEGORIES_B",
+    "IRC_TP_CATEGORIES_TL",
+    "IRC_TP_PARTNERS",
+    "IRC_TP_PARTNER_ACCOUNTS",
+    "IRC_TP_PARTNER_PROVISNGS"
+  ],
+  "attributes": [
+    {
+      "name": "CategoryBPEOCategoryId",
+      "table": "IRC_TP_CATEGORIES_B",
+      "column": "CATEGORY_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CategoryBPEOCode",
+      "table": "IRC_TP_CATEGORIES_B",
+      "column": "CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CategoryTLPEOCategoryId",
+      "table": "IRC_TP_CATEGORIES_TL",
+      "column": "CATEGORY_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CategoryTLPEOCategoryName",
+      "table": "IRC_TP_CATEGORIES_TL",
+      "column": "CATEGORY_NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CategoryTLPEODescription",
+      "table": "IRC_TP_CATEGORIES_TL",
+      "column": "DESCRIPTION",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CategoryTLPEOLanguage",
+      "table": "IRC_TP_CATEGORIES_TL",
+      "column": "LANGUAGE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CategoryTLPEOSubCategoryName",
+      "table": "IRC_TP_CATEGORIES_TL",
+      "column": "SUB_CATEGORY_NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartnerAccountPEOAccountId",
+      "table": "IRC_TP_PARTNER_ACCOUNTS",
+      "column": "ACCOUNT_ID",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    },
+    {
+      "name": "PartnerAccountPEOActiveFlag",
+      "table": "IRC_TP_PARTNER_ACCOUNTS",
+      "column": "ACTIVE_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartnerAccountPEOCreatedBy",
+      "table": "IRC_TP_PARTNER_ACCOUNTS",
+      "column": "CREATED_BY",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartnerAccountPEOCreationDate",
+      "table": "IRC_TP_PARTNER_ACCOUNTS",
+      "column": "CREATION_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartnerAccountPEODefaultFlag",
+      "table": "IRC_TP_PARTNER_ACCOUNTS",
+      "column": "DEFAULT_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartnerAccountPEODescription",
+      "table": "IRC_TP_PARTNER_ACCOUNTS",
+      "column": "DESCRIPTION",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartnerAccountPEOLastUpdateDate",
+      "table": "IRC_TP_PARTNER_ACCOUNTS",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": true
+    },
+    {
+      "name": "PartnerAccountPEOLastUpdateLogin",
+      "table": "IRC_TP_PARTNER_ACCOUNTS",
+      "column": "LAST_UPDATE_LOGIN",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartnerAccountPEOLastUpdatedBy",
+      "table": "IRC_TP_PARTNER_ACCOUNTS",
+      "column": "LAST_UPDATED_BY",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartnerAccountPEOLastValidateDate",
+      "table": "IRC_TP_PARTNER_ACCOUNTS",
+      "column": "LAST_VALIDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartnerAccountPEOObjectVersionNumber",
+      "table": "IRC_TP_PARTNER_ACCOUNTS",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartnerAccountPEOProvisioningId",
+      "table": "IRC_TP_PARTNER_ACCOUNTS",
+      "column": "PROVISIONING_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartnerAccountPEOUserSaltedHash",
+      "table": "IRC_TP_PARTNER_ACCOUNTS",
+      "column": "USER_SALTED_HASH",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartnerAccountPEOUsername",
+      "table": "IRC_TP_PARTNER_ACCOUNTS",
+      "column": "USERNAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartnerAccountPEOValidateFlag",
+      "table": "IRC_TP_PARTNER_ACCOUNTS",
+      "column": "VALIDATE_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartnerPEOCreatedBy",
+      "table": "IRC_TP_PARTNERS",
+      "column": "CREATED_BY",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartnerPEOCreationDate",
+      "table": "IRC_TP_PARTNERS",
+      "column": "CREATION_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartnerPEOLastUpdateDate",
+      "table": "IRC_TP_PARTNERS",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": true
+    },
+    {
+      "name": "PartnerPEOLastUpdateLogin",
+      "table": "IRC_TP_PARTNERS",
+      "column": "LAST_UPDATE_LOGIN",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartnerPEOLastUpdatedBy",
+      "table": "IRC_TP_PARTNERS",
+      "column": "LAST_UPDATED_BY",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartnerPEOLogo",
+      "table": "IRC_TP_PARTNERS",
+      "column": "LOGO",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartnerPEOName",
+      "table": "IRC_TP_PARTNERS",
+      "column": "NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartnerPEOObjectVersionNumber",
+      "table": "IRC_TP_PARTNERS",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartnerPEOPartnerGuid",
+      "table": "IRC_TP_PARTNERS",
+      "column": "PARTNER_GUID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartnerPEOPartnerId",
+      "table": "IRC_TP_PARTNERS",
+      "column": "PARTNER_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartnerProvisionPEOCategoryId",
+      "table": "IRC_TP_PARTNER_PROVISNGS",
+      "column": "CATEGORY_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartnerProvisionPEOClientRefKey",
+      "table": "IRC_TP_PARTNER_PROVISNGS",
+      "column": "CLIENT_REF_KEY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartnerProvisionPEOCreatedBy",
+      "table": "IRC_TP_PARTNER_PROVISNGS",
+      "column": "CREATED_BY",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartnerProvisionPEOCreationDate",
+      "table": "IRC_TP_PARTNER_PROVISNGS",
+      "column": "CREATION_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartnerProvisionPEOLastUpdateDate",
+      "table": "IRC_TP_PARTNER_PROVISNGS",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": true
+    },
+    {
+      "name": "PartnerProvisionPEOLastUpdateLogin",
+      "table": "IRC_TP_PARTNER_PROVISNGS",
+      "column": "LAST_UPDATE_LOGIN",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartnerProvisionPEOLastUpdatedBy",
+      "table": "IRC_TP_PARTNER_PROVISNGS",
+      "column": "LAST_UPDATED_BY",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartnerProvisionPEOObjectVersionNumber",
+      "table": "IRC_TP_PARTNER_PROVISNGS",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartnerProvisionPEOPartnerId",
+      "table": "IRC_TP_PARTNER_PROVISNGS",
+      "column": "PARTNER_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartnerProvisionPEOProvisioningId",
+      "table": "IRC_TP_PARTNER_PROVISNGS",
+      "column": "PROVISIONING_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartnerProvisionPEOStatusCode",
+      "table": "IRC_TP_PARTNER_PROVISNGS",
+      "column": "STATUS_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    }
+  ],
+  "by_table": {
+    "IRC_TP_CATEGORIES_B": [
+      {
+        "attribute": "CategoryBPEOCategoryId",
+        "column": "CATEGORY_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CategoryBPEOCode",
+        "column": "CODE",
+        "bicc": true,
+        "pk": false
+      }
+    ],
+    "IRC_TP_CATEGORIES_TL": [
+      {
+        "attribute": "CategoryTLPEOCategoryId",
+        "column": "CATEGORY_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CategoryTLPEOCategoryName",
+        "column": "CATEGORY_NAME",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CategoryTLPEODescription",
+        "column": "DESCRIPTION",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CategoryTLPEOLanguage",
+        "column": "LANGUAGE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CategoryTLPEOSubCategoryName",
+        "column": "SUB_CATEGORY_NAME",
+        "bicc": true,
+        "pk": false
+      }
+    ],
+    "IRC_TP_PARTNER_ACCOUNTS": [
+      {
+        "attribute": "PartnerAccountPEOAccountId",
+        "column": "ACCOUNT_ID",
+        "bicc": true,
+        "pk": true
+      },
+      {
+        "attribute": "PartnerAccountPEOActiveFlag",
+        "column": "ACTIVE_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PartnerAccountPEOCreatedBy",
+        "column": "CREATED_BY",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PartnerAccountPEOCreationDate",
+        "column": "CREATION_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PartnerAccountPEODefaultFlag",
+        "column": "DEFAULT_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PartnerAccountPEODescription",
+        "column": "DESCRIPTION",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PartnerAccountPEOLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PartnerAccountPEOLastUpdateLogin",
+        "column": "LAST_UPDATE_LOGIN",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PartnerAccountPEOLastUpdatedBy",
+        "column": "LAST_UPDATED_BY",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PartnerAccountPEOLastValidateDate",
+        "column": "LAST_VALIDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PartnerAccountPEOObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PartnerAccountPEOProvisioningId",
+        "column": "PROVISIONING_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PartnerAccountPEOUserSaltedHash",
+        "column": "USER_SALTED_HASH",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PartnerAccountPEOUsername",
+        "column": "USERNAME",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PartnerAccountPEOValidateFlag",
+        "column": "VALIDATE_FLAG",
+        "bicc": true,
+        "pk": false
+      }
+    ],
+    "IRC_TP_PARTNERS": [
+      {
+        "attribute": "PartnerPEOCreatedBy",
+        "column": "CREATED_BY",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PartnerPEOCreationDate",
+        "column": "CREATION_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PartnerPEOLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PartnerPEOLastUpdateLogin",
+        "column": "LAST_UPDATE_LOGIN",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PartnerPEOLastUpdatedBy",
+        "column": "LAST_UPDATED_BY",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PartnerPEOLogo",
+        "column": "LOGO",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PartnerPEOName",
+        "column": "NAME",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PartnerPEOObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PartnerPEOPartnerGuid",
+        "column": "PARTNER_GUID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PartnerPEOPartnerId",
+        "column": "PARTNER_ID",
+        "bicc": true,
+        "pk": false
+      }
+    ],
+    "IRC_TP_PARTNER_PROVISNGS": [
+      {
+        "attribute": "PartnerProvisionPEOCategoryId",
+        "column": "CATEGORY_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PartnerProvisionPEOClientRefKey",
+        "column": "CLIENT_REF_KEY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PartnerProvisionPEOCreatedBy",
+        "column": "CREATED_BY",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PartnerProvisionPEOCreationDate",
+        "column": "CREATION_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PartnerProvisionPEOLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PartnerProvisionPEOLastUpdateLogin",
+        "column": "LAST_UPDATE_LOGIN",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PartnerProvisionPEOLastUpdatedBy",
+        "column": "LAST_UPDATED_BY",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PartnerProvisionPEOObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PartnerProvisionPEOPartnerId",
+        "column": "PARTNER_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PartnerProvisionPEOProvisioningId",
+        "column": "PROVISIONING_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PartnerProvisionPEOStatusCode",
+        "column": "STATUS_CODE",
+        "bicc": true,
+        "pk": false
+      }
+    ]
+  }
+}

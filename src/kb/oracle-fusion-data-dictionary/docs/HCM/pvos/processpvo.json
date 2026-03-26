@@ -1,0 +1,452 @@
+{
+  "meta": {
+    "pvo_name": "ProcessPVO",
+    "full_path": "HcmTopModelAnalyticsGlobalAM.HcmRecProcessLifecycleAM.ProcessPVO",
+    "module_path": "HcmTopModelAnalyticsGlobalAM.HcmRecProcessLifecycleAM",
+    "module_code": "HCM",
+    "type": "pvo",
+    "description": "Extrai processos do ciclo de vida de recrutamento, incluindo código, configuração e datas de criação. Utilizado para gerenciar fluxos de contratação no Oracle Recruiting."
+  },
+  "stats": {
+    "total_attributes": 30,
+    "tables_count": 3,
+    "bicc_enabled": 12,
+    "bicc_pct": 40,
+    "pk_count": 1
+  },
+  "tables": [
+    "IRC_LC_SETTING_ITEMS",
+    "IRC_PROCESSES_B",
+    "IRC_PROCESSES_TL"
+  ],
+  "attributes": [
+    {
+      "name": "Code",
+      "table": "IRC_PROCESSES_B",
+      "column": "CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CreatedBy",
+      "table": "IRC_PROCESSES_B",
+      "column": "CREATED_BY",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CreatedBy1",
+      "table": "IRC_PROCESSES_TL",
+      "column": "CREATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CreationDate",
+      "table": "IRC_PROCESSES_B",
+      "column": "CREATION_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CreationDate1",
+      "table": "IRC_PROCESSES_TL",
+      "column": "CREATION_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "Description",
+      "table": "IRC_PROCESSES_TL",
+      "column": "DESCRIPTION",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "IsActiveFlag",
+      "table": "IRC_PROCESSES_B",
+      "column": "IS_ACTIVE_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "Language1",
+      "table": "IRC_PROCESSES_TL",
+      "column": "LANGUAGE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LastUpdateDate",
+      "table": "IRC_PROCESSES_B",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": true
+    },
+    {
+      "name": "LastUpdateDate1",
+      "table": "IRC_PROCESSES_TL",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": true
+    },
+    {
+      "name": "LastUpdateLogin",
+      "table": "IRC_PROCESSES_B",
+      "column": "LAST_UPDATE_LOGIN",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LastUpdateLogin1",
+      "table": "IRC_PROCESSES_TL",
+      "column": "LAST_UPDATE_LOGIN",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LastUpdatedBy",
+      "table": "IRC_PROCESSES_B",
+      "column": "LAST_UPDATED_BY",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LastUpdatedBy1",
+      "table": "IRC_PROCESSES_TL",
+      "column": "LAST_UPDATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ModuleId",
+      "table": "IRC_PROCESSES_B",
+      "column": "MODULE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "Name",
+      "table": "IRC_PROCESSES_TL",
+      "column": "NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ObjectVersionNumber",
+      "table": "IRC_PROCESSES_B",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ObjectVersionNumber1",
+      "table": "IRC_PROCESSES_TL",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PhaseId",
+      "table": "IRC_PROCESSES_B",
+      "column": "PHASE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProcessId",
+      "table": "IRC_PROCESSES_B",
+      "column": "PROCESS_ID",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    },
+    {
+      "name": "ProcessId1",
+      "table": "IRC_PROCESSES_TL",
+      "column": "PROCESS_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProcessTypeSettingItemPEOItemKeyName",
+      "table": "IRC_LC_SETTING_ITEMS",
+      "column": "ITEM_KEY_NAME",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProcessTypeSettingItemPEOSettingItemId",
+      "table": "IRC_LC_SETTING_ITEMS",
+      "column": "SETTING_ITEM_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProcessTypeSettingItemPEOStringValue",
+      "table": "IRC_LC_SETTING_ITEMS",
+      "column": "STRING_VALUE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SeedDataSource",
+      "table": "IRC_PROCESSES_B",
+      "column": "SEED_DATA_SOURCE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SeedDataSource1",
+      "table": "IRC_PROCESSES_TL",
+      "column": "SEED_DATA_SOURCE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SourceLang1",
+      "table": "IRC_PROCESSES_TL",
+      "column": "SOURCE_LANG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "StatusCode",
+      "table": "IRC_PROCESSES_B",
+      "column": "STATUS_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TypeCode",
+      "table": "IRC_PROCESSES_B",
+      "column": "TYPE_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "UsageCode",
+      "table": "IRC_PROCESSES_B",
+      "column": "USAGE_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    }
+  ],
+  "by_table": {
+    "IRC_PROCESSES_B": [
+      {
+        "attribute": "Code",
+        "column": "CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CreatedBy",
+        "column": "CREATED_BY",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CreationDate",
+        "column": "CREATION_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "IsActiveFlag",
+        "column": "IS_ACTIVE_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "LastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "LastUpdateLogin",
+        "column": "LAST_UPDATE_LOGIN",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "LastUpdatedBy",
+        "column": "LAST_UPDATED_BY",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ModuleId",
+        "column": "MODULE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PhaseId",
+        "column": "PHASE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProcessId",
+        "column": "PROCESS_ID",
+        "bicc": true,
+        "pk": true
+      },
+      {
+        "attribute": "SeedDataSource",
+        "column": "SEED_DATA_SOURCE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "StatusCode",
+        "column": "STATUS_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TypeCode",
+        "column": "TYPE_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "UsageCode",
+        "column": "USAGE_CODE",
+        "bicc": true,
+        "pk": false
+      }
+    ],
+    "IRC_PROCESSES_TL": [
+      {
+        "attribute": "CreatedBy1",
+        "column": "CREATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CreationDate1",
+        "column": "CREATION_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "Description",
+        "column": "DESCRIPTION",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "Language1",
+        "column": "LANGUAGE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "LastUpdateDate1",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "LastUpdateLogin1",
+        "column": "LAST_UPDATE_LOGIN",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "LastUpdatedBy1",
+        "column": "LAST_UPDATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "Name",
+        "column": "NAME",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ObjectVersionNumber1",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProcessId1",
+        "column": "PROCESS_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "SeedDataSource1",
+        "column": "SEED_DATA_SOURCE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "SourceLang1",
+        "column": "SOURCE_LANG",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "IRC_LC_SETTING_ITEMS": [
+      {
+        "attribute": "ProcessTypeSettingItemPEOItemKeyName",
+        "column": "ITEM_KEY_NAME",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProcessTypeSettingItemPEOSettingItemId",
+        "column": "SETTING_ITEM_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ProcessTypeSettingItemPEOStringValue",
+        "column": "STRING_VALUE",
+        "bicc": false,
+        "pk": false
+      }
+    ]
+  }
+}

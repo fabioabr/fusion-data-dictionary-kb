@@ -1,0 +1,508 @@
+{
+  "meta": {
+    "pvo_name": "CandidatePreferencesPVO",
+    "full_path": "HcmTopModelAnalyticsGlobalAM.HcmRecCandidatesAM.CandidatePreferencesPVO",
+    "module_path": "HcmTopModelAnalyticsGlobalAM.HcmRecCandidatesAM",
+    "module_code": "HCM",
+    "type": "pvo",
+    "description": "Extrai preferencias de candidatos incluindo familias de cargo e localizacoes desejadas. Suporta matching entre candidatos e oportunidades disponiveis."
+  },
+  "stats": {
+    "total_attributes": 34,
+    "tables_count": 3,
+    "bicc_enabled": 12,
+    "bicc_pct": 35,
+    "pk_count": 1
+  },
+  "tables": [
+    "IRC_CAND_PREFERENCES",
+    "IRC_CAND_PREF_JOB_FAMILY",
+    "IRC_CAND_PREF_LOCATIONS"
+  ],
+  "attributes": [
+    {
+      "name": "CandPrefId",
+      "table": "IRC_CAND_PREFERENCES",
+      "column": "CAND_PREF_ID",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    },
+    {
+      "name": "CandPrefJobFamilyPEOCandPrefId",
+      "table": "IRC_CAND_PREF_JOB_FAMILY",
+      "column": "CAND_PREF_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CandPrefJobFamilyPEOCreatedBy",
+      "table": "IRC_CAND_PREF_JOB_FAMILY",
+      "column": "CREATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CandPrefJobFamilyPEOCreationDate",
+      "table": "IRC_CAND_PREF_JOB_FAMILY",
+      "column": "CREATION_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CandPrefJobFamilyPEOJobFamilyId",
+      "table": "IRC_CAND_PREF_JOB_FAMILY",
+      "column": "JOB_FAMILY_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CandPrefJobFamilyPEOLastUpdateDate",
+      "table": "IRC_CAND_PREF_JOB_FAMILY",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": true
+    },
+    {
+      "name": "CandPrefJobFamilyPEOLastUpdateLogin",
+      "table": "IRC_CAND_PREF_JOB_FAMILY",
+      "column": "LAST_UPDATE_LOGIN",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CandPrefJobFamilyPEOLastUpdatedBy",
+      "table": "IRC_CAND_PREF_JOB_FAMILY",
+      "column": "LAST_UPDATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CandPrefJobFamilyPEOObjectVersionNumber",
+      "table": "IRC_CAND_PREF_JOB_FAMILY",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CandPrefLocPEOCandPrefId",
+      "table": "IRC_CAND_PREF_LOCATIONS",
+      "column": "CAND_PREF_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CandPrefLocPEOCreatedBy",
+      "table": "IRC_CAND_PREF_LOCATIONS",
+      "column": "CREATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CandPrefLocPEOCreationDate",
+      "table": "IRC_CAND_PREF_LOCATIONS",
+      "column": "CREATION_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CandPrefLocPEOGeographyId",
+      "table": "IRC_CAND_PREF_LOCATIONS",
+      "column": "GEOGRAPHY_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CandPrefLocPEOLastUpdateDate",
+      "table": "IRC_CAND_PREF_LOCATIONS",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": true
+    },
+    {
+      "name": "CandPrefLocPEOLastUpdateLogin",
+      "table": "IRC_CAND_PREF_LOCATIONS",
+      "column": "LAST_UPDATE_LOGIN",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CandPrefLocPEOLastUpdatedBy",
+      "table": "IRC_CAND_PREF_LOCATIONS",
+      "column": "LAST_UPDATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CandPrefLocPEOObjectVersionNumber",
+      "table": "IRC_CAND_PREF_LOCATIONS",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CandPrefPEOCreatedBy",
+      "table": "IRC_CAND_PREFERENCES",
+      "column": "CREATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CandPrefPEOCreationDate",
+      "table": "IRC_CAND_PREFERENCES",
+      "column": "CREATION_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CandPrefPEOLastUpdateDate",
+      "table": "IRC_CAND_PREFERENCES",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": true
+    },
+    {
+      "name": "CandPrefPEOLastUpdateLogin",
+      "table": "IRC_CAND_PREFERENCES",
+      "column": "LAST_UPDATE_LOGIN",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CandPrefPEOLastUpdatedBy",
+      "table": "IRC_CAND_PREFERENCES",
+      "column": "LAST_UPDATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CandPrefPEOObjectVersionNumber",
+      "table": "IRC_CAND_PREFERENCES",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CandPrefPEOOptInTcEmailsDate",
+      "table": "IRC_CAND_PREFERENCES",
+      "column": "OPT_IN_TC_EMAILS_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CandPrefPEOOptInTcEmailsFlag",
+      "table": "IRC_CAND_PREFERENCES",
+      "column": "OPT_IN_TC_EMAILS_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CandPrefPEOPersonId",
+      "table": "IRC_CAND_PREFERENCES",
+      "column": "PERSON_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CandPrefPEOSiteNumber",
+      "table": "IRC_CAND_PREFERENCES",
+      "column": "SITE_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CandPrefPEOTcAfVersionId",
+      "table": "IRC_CAND_PREFERENCES",
+      "column": "TC_AF_VERSION_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CandPrefPEOTcConfirmedByPersonId",
+      "table": "IRC_CAND_PREFERENCES",
+      "column": "TC_CONFIRMED_BY_PERSON_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CandPrefPEOTcConfirmedDate",
+      "table": "IRC_CAND_PREFERENCES",
+      "column": "TC_CONFIRMED_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CandPrefPEOTcConfirmedFlag",
+      "table": "IRC_CAND_PREFERENCES",
+      "column": "TC_CONFIRMED_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CandPrefPEOTcLegalDescVersionId",
+      "table": "IRC_CAND_PREFERENCES",
+      "column": "TC_LEGAL_DESC_VERSION_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PrefJobFamilyId",
+      "table": "IRC_CAND_PREF_JOB_FAMILY",
+      "column": "PREF_JOB_FAMILY_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PrefLocId",
+      "table": "IRC_CAND_PREF_LOCATIONS",
+      "column": "PREF_LOC_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    }
+  ],
+  "by_table": {
+    "IRC_CAND_PREFERENCES": [
+      {
+        "attribute": "CandPrefId",
+        "column": "CAND_PREF_ID",
+        "bicc": true,
+        "pk": true
+      },
+      {
+        "attribute": "CandPrefPEOCreatedBy",
+        "column": "CREATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CandPrefPEOCreationDate",
+        "column": "CREATION_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CandPrefPEOLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CandPrefPEOLastUpdateLogin",
+        "column": "LAST_UPDATE_LOGIN",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CandPrefPEOLastUpdatedBy",
+        "column": "LAST_UPDATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CandPrefPEOObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CandPrefPEOOptInTcEmailsDate",
+        "column": "OPT_IN_TC_EMAILS_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CandPrefPEOOptInTcEmailsFlag",
+        "column": "OPT_IN_TC_EMAILS_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CandPrefPEOPersonId",
+        "column": "PERSON_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CandPrefPEOSiteNumber",
+        "column": "SITE_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CandPrefPEOTcAfVersionId",
+        "column": "TC_AF_VERSION_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CandPrefPEOTcConfirmedByPersonId",
+        "column": "TC_CONFIRMED_BY_PERSON_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CandPrefPEOTcConfirmedDate",
+        "column": "TC_CONFIRMED_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CandPrefPEOTcConfirmedFlag",
+        "column": "TC_CONFIRMED_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CandPrefPEOTcLegalDescVersionId",
+        "column": "TC_LEGAL_DESC_VERSION_ID",
+        "bicc": true,
+        "pk": false
+      }
+    ],
+    "IRC_CAND_PREF_JOB_FAMILY": [
+      {
+        "attribute": "CandPrefJobFamilyPEOCandPrefId",
+        "column": "CAND_PREF_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CandPrefJobFamilyPEOCreatedBy",
+        "column": "CREATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CandPrefJobFamilyPEOCreationDate",
+        "column": "CREATION_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CandPrefJobFamilyPEOJobFamilyId",
+        "column": "JOB_FAMILY_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CandPrefJobFamilyPEOLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CandPrefJobFamilyPEOLastUpdateLogin",
+        "column": "LAST_UPDATE_LOGIN",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CandPrefJobFamilyPEOLastUpdatedBy",
+        "column": "LAST_UPDATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CandPrefJobFamilyPEOObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PrefJobFamilyId",
+        "column": "PREF_JOB_FAMILY_ID",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "IRC_CAND_PREF_LOCATIONS": [
+      {
+        "attribute": "CandPrefLocPEOCandPrefId",
+        "column": "CAND_PREF_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CandPrefLocPEOCreatedBy",
+        "column": "CREATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CandPrefLocPEOCreationDate",
+        "column": "CREATION_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CandPrefLocPEOGeographyId",
+        "column": "GEOGRAPHY_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CandPrefLocPEOLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CandPrefLocPEOLastUpdateLogin",
+        "column": "LAST_UPDATE_LOGIN",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CandPrefLocPEOLastUpdatedBy",
+        "column": "LAST_UPDATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CandPrefLocPEOObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PrefLocId",
+        "column": "PREF_LOC_ID",
+        "bicc": false,
+        "pk": false
+      }
+    ]
+  }
+}

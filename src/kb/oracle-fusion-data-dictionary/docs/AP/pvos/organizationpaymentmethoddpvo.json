@@ -1,0 +1,511 @@
+{
+  "meta": {
+    "pvo_name": "OrganizationPaymentMethodDPVO",
+    "full_path": "HcmTopModelAnalyticsGlobalAM.HcmPayPaymentSetupAM.OrganizationPaymentMethodDPVO",
+    "module_path": "HcmTopModelAnalyticsGlobalAM.HcmPayPaymentSetupAM",
+    "module_code": "AP",
+    "type": "pvo",
+    "description": "Extrai os métodos de pagamento configurados por organização na folha de pagamento, incluindo tipo de pagamento e tradução. Permite mapear as formas de pagamento habilitadas para cada unidade organizacional no processo de folha."
+  },
+  "stats": {
+    "total_attributes": 34,
+    "tables_count": 4,
+    "bicc_enabled": 23,
+    "bicc_pct": 68,
+    "pk_count": 3
+  },
+  "tables": [
+    "PAY_ORG_PAY_METHODS_F",
+    "PAY_ORG_PAY_METHODS_TL",
+    "PAY_PAYMENT_TYPES",
+    "PAY_PAYMENT_TYPES_TL"
+  ],
+  "attributes": [
+    {
+      "name": "EffectiveEndDate",
+      "table": "PAY_ORG_PAY_METHODS_F",
+      "column": "EFFECTIVE_END_DATE",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    },
+    {
+      "name": "EffectiveStartDate",
+      "table": "PAY_ORG_PAY_METHODS_F",
+      "column": "EFFECTIVE_START_DATE",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    },
+    {
+      "name": "OrgPaymentMethodId",
+      "table": "PAY_ORG_PAY_METHODS_F",
+      "column": "ORG_PAYMENT_METHOD_ID",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    },
+    {
+      "name": "OrgnPaymentMethodBaseDPEOBankAccountId",
+      "table": "PAY_ORG_PAY_METHODS_F",
+      "column": "BANK_ACCOUNT_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "OrgnPaymentMethodBaseDPEOBaseOrgPayMethodName",
+      "table": "PAY_ORG_PAY_METHODS_F",
+      "column": "BASE_ORG_PAY_METHOD_NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "OrgnPaymentMethodBaseDPEOCreatedBy",
+      "table": "PAY_ORG_PAY_METHODS_F",
+      "column": "CREATED_BY",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "OrgnPaymentMethodBaseDPEOCreationDate",
+      "table": "PAY_ORG_PAY_METHODS_F",
+      "column": "CREATION_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "OrgnPaymentMethodBaseDPEOCurrencyCode",
+      "table": "PAY_ORG_PAY_METHODS_F",
+      "column": "CURRENCY_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "OrgnPaymentMethodBaseDPEODefinedBalanceId",
+      "table": "PAY_ORG_PAY_METHODS_F",
+      "column": "DEFINED_BALANCE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "OrgnPaymentMethodBaseDPEOLastUpdateDate",
+      "table": "PAY_ORG_PAY_METHODS_F",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": true
+    },
+    {
+      "name": "OrgnPaymentMethodBaseDPEOLastUpdateLogin",
+      "table": "PAY_ORG_PAY_METHODS_F",
+      "column": "LAST_UPDATE_LOGIN",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "OrgnPaymentMethodBaseDPEOLastUpdatedBy",
+      "table": "PAY_ORG_PAY_METHODS_F",
+      "column": "LAST_UPDATED_BY",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "OrgnPaymentMethodBaseDPEOLegislativeDataGroupId",
+      "table": "PAY_ORG_PAY_METHODS_F",
+      "column": "LEGISLATIVE_DATA_GROUP_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "OrgnPaymentMethodBaseDPEOObjectVersionNumber",
+      "table": "PAY_ORG_PAY_METHODS_F",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "OrgnPaymentMethodBaseDPEOOrganizationId",
+      "table": "PAY_ORG_PAY_METHODS_F",
+      "column": "ORGANIZATION_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "OrgnPaymentMethodBaseDPEOParentOrgPayMethodId",
+      "table": "PAY_ORG_PAY_METHODS_F",
+      "column": "PARENT_ORG_PAY_METHOD_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "OrgnPaymentMethodBaseDPEOPaymentTypeId",
+      "table": "PAY_ORG_PAY_METHODS_F",
+      "column": "PAYMENT_TYPE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "OrgnPaymentMethodBaseDPEOTimeDefinitionId",
+      "table": "PAY_ORG_PAY_METHODS_F",
+      "column": "TIME_DEFINITION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "OrgnPaymentMethodBaseDPEOType",
+      "table": "PAY_ORG_PAY_METHODS_F",
+      "column": "TYPE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "OrgnPaymentMethodTrasltnPEOLanguage",
+      "table": "PAY_ORG_PAY_METHODS_TL",
+      "column": "LANGUAGE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "OrgnPaymentMethodTrasltnPEOOrgPaymentMethodId",
+      "table": "PAY_ORG_PAY_METHODS_TL",
+      "column": "ORG_PAYMENT_METHOD_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "OrgnPaymentMethodTrasltnPEOOrgPaymentMethodName",
+      "table": "PAY_ORG_PAY_METHODS_TL",
+      "column": "ORG_PAYMENT_METHOD_NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "OrgnPaymentMethodTrasltnPEOSourceLang",
+      "table": "PAY_ORG_PAY_METHODS_TL",
+      "column": "SOURCE_LANG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PaymentTypeBasePEOAllowAsDefault",
+      "table": "PAY_PAYMENT_TYPES",
+      "column": "ALLOW_AS_DEFAULT",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PaymentTypeBasePEOBasePaymentTypeName",
+      "table": "PAY_PAYMENT_TYPES",
+      "column": "BASE_PAYMENT_TYPE_NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PaymentTypeBasePEOCategory",
+      "table": "PAY_PAYMENT_TYPES",
+      "column": "CATEGORY",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PaymentTypeBasePEOLegislationCode",
+      "table": "PAY_PAYMENT_TYPES",
+      "column": "LEGISLATION_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PaymentTypeBasePEOModuleId",
+      "table": "PAY_PAYMENT_TYPES",
+      "column": "MODULE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PaymentTypeBasePEOPaymentTypeId",
+      "table": "PAY_PAYMENT_TYPES",
+      "column": "PAYMENT_TYPE_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PaymentTypeTranslationPEODescription",
+      "table": "PAY_PAYMENT_TYPES_TL",
+      "column": "DESCRIPTION",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PaymentTypeTranslationPEOLanguage",
+      "table": "PAY_PAYMENT_TYPES_TL",
+      "column": "LANGUAGE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PaymentTypeTranslationPEOPaymentTypeId",
+      "table": "PAY_PAYMENT_TYPES_TL",
+      "column": "PAYMENT_TYPE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PaymentTypeTranslationPEOPaymentTypeName",
+      "table": "PAY_PAYMENT_TYPES_TL",
+      "column": "PAYMENT_TYPE_NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PaymentTypeTranslationPEOSourceLang",
+      "table": "PAY_PAYMENT_TYPES_TL",
+      "column": "SOURCE_LANG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    }
+  ],
+  "by_table": {
+    "PAY_ORG_PAY_METHODS_F": [
+      {
+        "attribute": "EffectiveEndDate",
+        "column": "EFFECTIVE_END_DATE",
+        "bicc": true,
+        "pk": true
+      },
+      {
+        "attribute": "EffectiveStartDate",
+        "column": "EFFECTIVE_START_DATE",
+        "bicc": true,
+        "pk": true
+      },
+      {
+        "attribute": "OrgPaymentMethodId",
+        "column": "ORG_PAYMENT_METHOD_ID",
+        "bicc": true,
+        "pk": true
+      },
+      {
+        "attribute": "OrgnPaymentMethodBaseDPEOBankAccountId",
+        "column": "BANK_ACCOUNT_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "OrgnPaymentMethodBaseDPEOBaseOrgPayMethodName",
+        "column": "BASE_ORG_PAY_METHOD_NAME",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "OrgnPaymentMethodBaseDPEOCreatedBy",
+        "column": "CREATED_BY",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "OrgnPaymentMethodBaseDPEOCreationDate",
+        "column": "CREATION_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "OrgnPaymentMethodBaseDPEOCurrencyCode",
+        "column": "CURRENCY_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "OrgnPaymentMethodBaseDPEODefinedBalanceId",
+        "column": "DEFINED_BALANCE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "OrgnPaymentMethodBaseDPEOLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "OrgnPaymentMethodBaseDPEOLastUpdateLogin",
+        "column": "LAST_UPDATE_LOGIN",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "OrgnPaymentMethodBaseDPEOLastUpdatedBy",
+        "column": "LAST_UPDATED_BY",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "OrgnPaymentMethodBaseDPEOLegislativeDataGroupId",
+        "column": "LEGISLATIVE_DATA_GROUP_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "OrgnPaymentMethodBaseDPEOObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "OrgnPaymentMethodBaseDPEOOrganizationId",
+        "column": "ORGANIZATION_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "OrgnPaymentMethodBaseDPEOParentOrgPayMethodId",
+        "column": "PARENT_ORG_PAY_METHOD_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "OrgnPaymentMethodBaseDPEOPaymentTypeId",
+        "column": "PAYMENT_TYPE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "OrgnPaymentMethodBaseDPEOTimeDefinitionId",
+        "column": "TIME_DEFINITION_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "OrgnPaymentMethodBaseDPEOType",
+        "column": "TYPE",
+        "bicc": true,
+        "pk": false
+      }
+    ],
+    "PAY_ORG_PAY_METHODS_TL": [
+      {
+        "attribute": "OrgnPaymentMethodTrasltnPEOLanguage",
+        "column": "LANGUAGE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "OrgnPaymentMethodTrasltnPEOOrgPaymentMethodId",
+        "column": "ORG_PAYMENT_METHOD_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "OrgnPaymentMethodTrasltnPEOOrgPaymentMethodName",
+        "column": "ORG_PAYMENT_METHOD_NAME",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "OrgnPaymentMethodTrasltnPEOSourceLang",
+        "column": "SOURCE_LANG",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "PAY_PAYMENT_TYPES": [
+      {
+        "attribute": "PaymentTypeBasePEOAllowAsDefault",
+        "column": "ALLOW_AS_DEFAULT",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PaymentTypeBasePEOBasePaymentTypeName",
+        "column": "BASE_PAYMENT_TYPE_NAME",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PaymentTypeBasePEOCategory",
+        "column": "CATEGORY",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PaymentTypeBasePEOLegislationCode",
+        "column": "LEGISLATION_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PaymentTypeBasePEOModuleId",
+        "column": "MODULE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PaymentTypeBasePEOPaymentTypeId",
+        "column": "PAYMENT_TYPE_ID",
+        "bicc": true,
+        "pk": false
+      }
+    ],
+    "PAY_PAYMENT_TYPES_TL": [
+      {
+        "attribute": "PaymentTypeTranslationPEODescription",
+        "column": "DESCRIPTION",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PaymentTypeTranslationPEOLanguage",
+        "column": "LANGUAGE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PaymentTypeTranslationPEOPaymentTypeId",
+        "column": "PAYMENT_TYPE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PaymentTypeTranslationPEOPaymentTypeName",
+        "column": "PAYMENT_TYPE_NAME",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PaymentTypeTranslationPEOSourceLang",
+        "column": "SOURCE_LANG",
+        "bicc": false,
+        "pk": false
+      }
+    ]
+  }
+}

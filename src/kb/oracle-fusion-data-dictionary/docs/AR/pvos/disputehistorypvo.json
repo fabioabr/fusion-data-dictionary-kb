@@ -1,0 +1,242 @@
+{
+  "meta": {
+    "pvo_name": "DisputeHistoryPVO",
+    "full_path": "FscmTopModelAM.FinArTopPublicModelAM.DisputeHistoryPVO",
+    "module_path": "FscmTopModelAM.FinArTopPublicModelAM",
+    "module_code": "AR",
+    "type": "pvo",
+    "description": "Extrai o histórico de disputas (contestações) sobre transações de Contas a Receber, com datas, valores e status. Fundamental para gestão de litígios comerciais, acompanhamento de SLA de resolução e análise de causas raiz de contestações."
+  },
+  "stats": {
+    "total_attributes": 15,
+    "tables_count": 3,
+    "bicc_enabled": 8,
+    "bicc_pct": 53,
+    "pk_count": 3
+  },
+  "tables": [
+    "AR_DISPUTE_HISTORY",
+    "AR_PAYMENT_SCHEDULES_ALL",
+    "RA_CUSTOMER_TRX_ALL"
+  ],
+  "attributes": [
+    {
+      "name": "AmountDueRemaining",
+      "table": "AR_DISPUTE_HISTORY",
+      "column": "AMOUNT_DUE_REMAINING",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AmountInDispute",
+      "table": "AR_DISPUTE_HISTORY",
+      "column": "AMOUNT_IN_DISPUTE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CreatedBy",
+      "table": "AR_DISPUTE_HISTORY",
+      "column": "CREATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CreatedFrom",
+      "table": "AR_DISPUTE_HISTORY",
+      "column": "CREATED_FROM",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "DisputeAmount",
+      "table": "AR_DISPUTE_HISTORY",
+      "column": "DISPUTE_AMOUNT",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "DisputeHistoryId",
+      "table": "AR_DISPUTE_HISTORY",
+      "column": "DISPUTE_HISTORY_ID",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    },
+    {
+      "name": "EndDate",
+      "table": "AR_DISPUTE_HISTORY",
+      "column": "END_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LastUpdateLogin",
+      "table": "AR_DISPUTE_HISTORY",
+      "column": "LAST_UPDATE_LOGIN",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LastUpdatedBy",
+      "table": "AR_DISPUTE_HISTORY",
+      "column": "LAST_UPDATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ObjectVersionNumber",
+      "table": "AR_DISPUTE_HISTORY",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PaymentScheduleId",
+      "table": "AR_DISPUTE_HISTORY",
+      "column": "PAYMENT_SCHEDULE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PaymentSchedulePaymentScheduleId",
+      "table": "AR_PAYMENT_SCHEDULES_ALL",
+      "column": "PAYMENT_SCHEDULE_ID",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    },
+    {
+      "name": "StartDate",
+      "table": "AR_DISPUTE_HISTORY",
+      "column": "START_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TransactionHeaderCustomerTrxId",
+      "table": "RA_CUSTOMER_TRX_ALL",
+      "column": "CUSTOMER_TRX_ID",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    },
+    {
+      "name": "TransactionHeaderSetOfBooksId",
+      "table": "RA_CUSTOMER_TRX_ALL",
+      "column": "SET_OF_BOOKS_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    }
+  ],
+  "by_table": {
+    "AR_DISPUTE_HISTORY": [
+      {
+        "attribute": "AmountDueRemaining",
+        "column": "AMOUNT_DUE_REMAINING",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "AmountInDispute",
+        "column": "AMOUNT_IN_DISPUTE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CreatedBy",
+        "column": "CREATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CreatedFrom",
+        "column": "CREATED_FROM",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "DisputeAmount",
+        "column": "DISPUTE_AMOUNT",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "DisputeHistoryId",
+        "column": "DISPUTE_HISTORY_ID",
+        "bicc": true,
+        "pk": true
+      },
+      {
+        "attribute": "EndDate",
+        "column": "END_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "LastUpdateLogin",
+        "column": "LAST_UPDATE_LOGIN",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "LastUpdatedBy",
+        "column": "LAST_UPDATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PaymentScheduleId",
+        "column": "PAYMENT_SCHEDULE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "StartDate",
+        "column": "START_DATE",
+        "bicc": true,
+        "pk": false
+      }
+    ],
+    "AR_PAYMENT_SCHEDULES_ALL": [
+      {
+        "attribute": "PaymentSchedulePaymentScheduleId",
+        "column": "PAYMENT_SCHEDULE_ID",
+        "bicc": true,
+        "pk": true
+      }
+    ],
+    "RA_CUSTOMER_TRX_ALL": [
+      {
+        "attribute": "TransactionHeaderCustomerTrxId",
+        "column": "CUSTOMER_TRX_ID",
+        "bicc": true,
+        "pk": true
+      },
+      {
+        "attribute": "TransactionHeaderSetOfBooksId",
+        "column": "SET_OF_BOOKS_ID",
+        "bicc": false,
+        "pk": false
+      }
+    ]
+  }
+}

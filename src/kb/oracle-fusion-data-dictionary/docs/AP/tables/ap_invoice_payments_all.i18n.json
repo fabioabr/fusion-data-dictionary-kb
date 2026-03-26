@@ -1,0 +1,517 @@
+{
+  "source": "ap_invoice_payments_all.md",
+  "source_hash": "527cd8ca2b13c45da6eac1571423e627",
+  "translated_at": "2026-03-25",
+  "items": [
+    {
+      "id": 1,
+      "br": "Visão Geral",
+      "en": "Overview",
+      "es": "Vision General"
+    },
+    {
+      "id": 2,
+      "br": "Armazena a relação entre faturas e pagamentos no módulo Accounts Payable. Cada registro representa a aplicação de um pagamento (check) a uma fatura específica, contendo o valor pago, desconto obtido, data e referência ao check ID. Uma fatura pode ter múltiplos pagamentos (pagamento parcial), e um check pode pagar múltiplas faturas.",
+      "en": "Stores the relationship between invoices and payments in the Accounts Payable module. Each record represents the application of a payment (check) to a specific invoice, containing the paid amount, discount obtained, date, and check ID reference. An invoice can have multiple payments (partial payment), and a check can pay multiple invoices.",
+      "es": "Almacena la relación entre facturas y pagos en el módulo Accounts Payable. Cada registro representa la aplicación de un pago (check) a una factura específica, conteniendo el valor pagado, descuento obtenido, fecha y referencia al check ID. Una factura puede tener múltiples pagos (pago parcial), y un check puede pagar múltiples facturas."
+    },
+    {
+      "id": 3,
+      "br": "Sufixo _ALL",
+      "en": "_ALL Suffix",
+      "es": "Sufijo _ALL"
+    },
+    {
+      "id": 4,
+      "br": "O sufixo _ALL indica que a tabela armazena dados de todas as business units (multi-org). O filtro por ORG_ID é necessário para consultas por organização específica.",
+      "en": "The _ALL suffix indicates that the table stores data from all business units (multi-org). Filtering by ORG_ID is required for queries by specific organization.",
+      "es": "El sufijo _ALL indica que la tabla almacena datos de todas las business units (multi-org). El filtro por ORG_ID es necesario para consultas por organización específica."
+    },
+    {
+      "id": 5,
+      "br": "Propósito de Negócio",
+      "en": "Business Purpose",
+      "es": "Proposito de Negocio"
+    },
+    {
+      "id": 6,
+      "br": "Esta tabela é utilizada nos seguintes processos:",
+      "en": "This table is used in the following processes:",
+      "es": "Esta tabla se utiliza en los siguientes procesos:"
+    },
+    {
+      "id": 7,
+      "br": "Vincula cada pagamento emitido à fatura correspondente.",
+      "en": "Links each issued payment to the corresponding invoice.",
+      "es": "Vincula cada pago emitido a la factura correspondiente."
+    },
+    {
+      "id": 8,
+      "br": "Permite rastrear múltiplos pagamentos contra uma mesma fatura.",
+      "en": "Allows tracking multiple payments against the same invoice.",
+      "es": "Permite rastrear múltiples pagos contra una misma factura."
+    },
+    {
+      "id": 9,
+      "br": "Registra descontos obtidos por pagamento antecipado.",
+      "en": "Records discounts obtained for early payment.",
+      "es": "Registra descuentos obtenidos por pago anticipado."
+    },
+    {
+      "id": 10,
+      "br": "Base para reconciliação de pagamentos com extratos bancários.",
+      "en": "Basis for payment reconciliation with bank statements.",
+      "es": "Base para conciliación de pagos con extractos bancarios."
+    },
+    {
+      "id": 11,
+      "br": "Rastreabilidade completa de cada pagamento aplicado a faturas.",
+      "en": "Complete traceability of each payment applied to invoices.",
+      "es": "Trazabilidad completa de cada pago aplicado a facturas."
+    },
+    {
+      "id": 12,
+      "br": "Suporte à análise de faturas pagas vs. pendentes.",
+      "en": "Support for analysis of paid vs. pending invoices.",
+      "es": "Soporte al análisis de facturas pagadas vs. pendientes."
+    },
+    {
+      "id": 13,
+      "br": "Colunas Principais",
+      "en": "Key Columns",
+      "es": "Columnas Principales"
+    },
+    {
+      "id": 14,
+      "br": "Confiança",
+      "en": "Confidence",
+      "es": "Confianza"
+    },
+    {
+      "id": 15,
+      "br": "Escala de 0% a 100% — grau de certeza da descrição gerada por IA com base na documentação oficial Oracle (OEDMF/BICC Release 13/25A).",
+      "en": "Scale from 0% to 100% — degree of certainty of the AI-generated description based on official Oracle documentation (OEDMF/BICC Release 13/25A).",
+      "es": "Escala de 0% a 100% — grado de certeza de la descripción generada por IA con base en la documentación oficial Oracle (OEDMF/BICC Release 13/25A)."
+    },
+    {
+      "id": 16,
+      "br": "- 🟢 81–100% — Coluna presente na documentação oficial Oracle; nome, tipo e descrição confirmados.",
+      "en": "- 🟢 81–100% — Column present in official Oracle documentation; name, type, and description confirmed.",
+      "es": "- 🟢 81–100% — Columna presente en la documentación oficial Oracle; nombre, tipo y descripción confirmados."
+    },
+    {
+      "id": 17,
+      "br": "- 🟡 51–80% — Coluna inferida por naming convention ou padrão Oracle; tipo exato pode variar.",
+      "en": "- 🟡 51–80% — Column inferred by naming convention or Oracle standard; exact type may vary.",
+      "es": "- 🟡 51–80% — Columna inferida por naming convention o estándar Oracle; el tipo exacto puede variar."
+    },
+    {
+      "id": 18,
+      "br": "- 🔴 0–50% — Existência ou tipo incertos; pode não existir no release atual; validar no ambiente.",
+      "en": "- 🔴 0–50% — Uncertain existence or type; may not exist in current release; validate in environment.",
+      "es": "- 🔴 0–50% — Existencia o tipo inciertos; puede no existir en el release actual; validar en el ambiente."
+    },
+    {
+      "id": 19,
+      "br": "Coluna",
+      "en": "Column",
+      "es": "Columna"
+    },
+    {
+      "id": 20,
+      "br": "Tipo",
+      "en": "Type",
+      "es": "Tipo"
+    },
+    {
+      "id": 21,
+      "br": "Nulo?",
+      "en": "Nullable?",
+      "es": "Nulo?"
+    },
+    {
+      "id": 22,
+      "br": "Categoria",
+      "en": "Category",
+      "es": "Categoria"
+    },
+    {
+      "id": 23,
+      "br": "Descrição",
+      "en": "Description",
+      "es": "Descripcion"
+    },
+    {
+      "id": 24,
+      "br": "Identificador único do pagamento da fatura",
+      "en": "Unique invoice payment identifier",
+      "es": "Identificador único del pago de la factura"
+    },
+    {
+      "id": 25,
+      "br": "Fatura paga",
+      "en": "Paid invoice",
+      "es": "Factura pagada"
+    },
+    {
+      "id": 26,
+      "br": "Identificador do check/pagamento",
+      "en": "Check/payment identifier",
+      "es": "Identificador del check/pago"
+    },
+    {
+      "id": 27,
+      "br": "Identificação",
+      "en": "Identification",
+      "es": "Identificacion"
+    },
+    {
+      "id": 28,
+      "br": "Número da parcela paga (payment schedule)",
+      "en": "Paid installment number (payment schedule)",
+      "es": "Número de la cuota pagada (payment schedule)"
+    },
+    {
+      "id": 29,
+      "br": "Financeiro",
+      "en": "Financial",
+      "es": "Financiero"
+    },
+    {
+      "id": 30,
+      "br": "Valor pago na moeda da transação",
+      "en": "Amount paid in transaction currency",
+      "es": "Valor pagado en la moneda de la transacción"
+    },
+    {
+      "id": 31,
+      "br": "Valor pago na moeda funcional (ledger)",
+      "en": "Amount paid in functional currency (ledger)",
+      "es": "Valor pagado en la moneda funcional (ledger)"
+    },
+    {
+      "id": 32,
+      "br": "Desconto financeiro obtido",
+      "en": "Financial discount obtained",
+      "es": "Descuento financiero obtenido"
+    },
+    {
+      "id": 33,
+      "br": "Desconto financeiro perdido (fora do prazo)",
+      "en": "Financial discount lost (past due)",
+      "es": "Descuento financiero perdido (fuera de plazo)"
+    },
+    {
+      "id": 34,
+      "br": "Tipo de taxa de câmbio do pagamento",
+      "en": "Payment exchange rate type",
+      "es": "Tipo de tasa de cambio del pago"
+    },
+    {
+      "id": 35,
+      "br": "Taxa de câmbio aplicada no pagamento",
+      "en": "Exchange rate applied to the payment",
+      "es": "Tasa de cambio aplicada en el pago"
+    },
+    {
+      "id": 36,
+      "br": "Data da taxa de câmbio",
+      "en": "Exchange rate date",
+      "es": "Fecha de la tasa de cambio"
+    },
+    {
+      "id": 37,
+      "br": "Contabilidade",
+      "en": "Accounting",
+      "es": "Contabilidad"
+    },
+    {
+      "id": 38,
+      "br": "Data contábil do pagamento",
+      "en": "Payment accounting date",
+      "es": "Fecha contable del pago"
+    },
+    {
+      "id": 39,
+      "br": "Nome do período contábil",
+      "en": "Accounting period name",
+      "es": "Nombre del período contable"
+    },
+    {
+      "id": 40,
+      "br": "Conta contábil de AP (liability)",
+      "en": "AP accounting account (liability)",
+      "es": "Cuenta contable de AP (liability)"
+    },
+    {
+      "id": 41,
+      "br": "Indica se foi contabilizado no GL (Y/N)",
+      "en": "Indicates whether it was posted to GL (Y/N)",
+      "es": "Indica si fue contabilizado en el GL (Y/N)"
+    },
+    {
+      "id": 42,
+      "br": "Indica se accrual foi lançado (Y/N)",
+      "en": "Indicates whether accrual was posted (Y/N)",
+      "es": "Indica si el accrual fue registrado (Y/N)"
+    },
+    {
+      "id": 43,
+      "br": "Indica se cash basis foi lançado (Y/N)",
+      "en": "Indicates whether cash basis was posted (Y/N)",
+      "es": "Indica si cash basis fue registrado (Y/N)"
+    },
+    {
+      "id": 44,
+      "br": "Status",
+      "en": "Status",
+      "es": "Estado"
+    },
+    {
+      "id": 45,
+      "br": "Indica se é reversão de pagamento (Y/N)",
+      "en": "Indicates whether it is a payment reversal (Y/N)",
+      "es": "Indica si es reversión de pago (Y/N)"
+    },
+    {
+      "id": 46,
+      "br": "Referência cruzada",
+      "en": "Cross-reference",
+      "es": "Referencia cruzada"
+    },
+    {
+      "id": 47,
+      "br": "ID do pagamento original revertido",
+      "en": "ID of the original reversed payment",
+      "es": "ID del pago original revertido"
+    },
+    {
+      "id": 48,
+      "br": "Ledger (set of books)",
+      "en": "Ledger (set of books)",
+      "es": "Ledger (set of books)"
+    },
+    {
+      "id": 49,
+      "br": "Business unit (multi-org)",
+      "en": "Business unit (multi-org)",
+      "es": "Business unit (multi-org)"
+    },
+    {
+      "id": 50,
+      "br": "Auditoria",
+      "en": "Audit",
+      "es": "Auditoria"
+    },
+    {
+      "id": 51,
+      "br": "Usuário que criou o registro",
+      "en": "User who created the record",
+      "es": "Usuario que creó el registro"
+    },
+    {
+      "id": 52,
+      "br": "Data/hora de criação",
+      "en": "Creation date/time",
+      "es": "Fecha/hora de creación"
+    },
+    {
+      "id": 53,
+      "br": "Último usuário que alterou",
+      "en": "Last user who modified",
+      "es": "Último usuario que modificó"
+    },
+    {
+      "id": 54,
+      "br": "Data/hora da última alteração",
+      "en": "Last modification date/time",
+      "es": "Fecha/hora de la última modificación"
+    },
+    {
+      "id": 55,
+      "br": "Login da última sessão",
+      "en": "Last session login",
+      "es": "Login de la última sesión"
+    },
+    {
+      "id": 56,
+      "br": "ATTRIBUTE1–15",
+      "en": "ATTRIBUTE1–15",
+      "es": "ATTRIBUTE1–15"
+    },
+    {
+      "id": 57,
+      "br": "Atributos descritivos customizáveis por implementação",
+      "en": "Customizable descriptive attributes per implementation",
+      "es": "Atributos descriptivos personalizables por implementación"
+    },
+    {
+      "id": 58,
+      "br": "Contexto do Descriptive Flexfield",
+      "en": "Descriptive Flexfield context",
+      "es": "Contexto del Descriptive Flexfield"
+    },
+    {
+      "id": 59,
+      "br": "Relacionamentos",
+      "en": "Relationships",
+      "es": "Relaciones"
+    },
+    {
+      "id": 60,
+      "br": "Tabelas-pai (FK de entrada)",
+      "en": "Parent Tables (inbound FK)",
+      "es": "Tablas padre (FK de entrada)"
+    },
+    {
+      "id": 61,
+      "br": "fatura paga",
+      "en": "paid invoice",
+      "es": "factura pagada"
+    },
+    {
+      "id": 62,
+      "br": "check/pagamento emitido",
+      "en": "issued check/payment",
+      "es": "check/pago emitido"
+    },
+    {
+      "id": 63,
+      "br": "conta contábil",
+      "en": "accounting account",
+      "es": "cuenta contable"
+    },
+    {
+      "id": 64,
+      "br": "tipo de câmbio",
+      "en": "exchange rate type",
+      "es": "tipo de cambio"
+    },
+    {
+      "id": 65,
+      "br": "ledger",
+      "en": "ledger",
+      "es": "ledger"
+    },
+    {
+      "id": 66,
+      "br": "business unit",
+      "en": "business unit",
+      "es": "business unit"
+    },
+    {
+      "id": 67,
+      "br": "Tabelas-filha (FK de saída)",
+      "en": "Child Tables (outbound FK)",
+      "es": "Tablas hija (FK de salida)"
+    },
+    {
+      "id": 68,
+      "br": "auto-referência para reversões",
+      "en": "self-reference for reversals",
+      "es": "auto-referencia para reversiones"
+    },
+    {
+      "id": 69,
+      "br": "histórico do pagamento",
+      "en": "payment history",
+      "es": "historial del pago"
+    },
+    {
+      "id": 70,
+      "br": "Uso Típico",
+      "en": "Typical Usage",
+      "es": "Uso Tipico"
+    },
+    {
+      "id": 71,
+      "br": "Pagamentos de uma fatura",
+      "en": "Payments of an invoice",
+      "es": "Pagos de una factura"
+    },
+    {
+      "id": 72,
+      "br": "Total pago por período",
+      "en": "Total paid per period",
+      "es": "Total pagado por período"
+    },
+    {
+      "id": 73,
+      "br": "Filtros comuns",
+      "en": "Common Filters",
+      "es": "Filtros comunes"
+    },
+    {
+      "id": 74,
+      "br": "Exclui pagamentos revertidos",
+      "en": "Excludes reversed payments",
+      "es": "Excluye pagos revertidos"
+    },
+    {
+      "id": 75,
+      "br": "Já contabilizados no GL",
+      "en": "Already posted to GL",
+      "es": "Ya contabilizados en el GL"
+    },
+    {
+      "id": 76,
+      "br": "Período contábil",
+      "en": "Accounting period",
+      "es": "Período contable"
+    },
+    {
+      "id": 77,
+      "br": "Observações",
+      "en": "Notes",
+      "es": "Observaciones"
+    },
+    {
+      "id": 78,
+      "br": "A tabela implementa o relacionamento N:N entre faturas e checks: uma fatura pode ser paga por múltiplos checks, e um check pode pagar múltiplas faturas.",
+      "en": "The table implements the N:N relationship between invoices and checks: an invoice can be paid by multiple checks, and a check can pay multiple invoices.",
+      "es": "La tabla implementa la relación N:N entre facturas y checks: una factura puede ser pagada por múltiples checks, y un check puede pagar múltiples facturas."
+    },
+    {
+      "id": 79,
+      "br": "O campo REVERSAL_FLAG = 'Y' indica um pagamento revertido (void), com REVERSAL_INV_PMT_ID apontando para o pagamento original.",
+      "en": "The REVERSAL_FLAG = 'Y' field indicates a reversed payment (void), with REVERSAL_INV_PMT_ID pointing to the original payment.",
+      "es": "El campo REVERSAL_FLAG = 'Y' indica un pago revertido (void), con REVERSAL_INV_PMT_ID apuntando al pago original."
+    },
+    {
+      "id": 80,
+      "br": "Os campos DISCOUNT_TAKEN e DISCOUNT_LOST registram descontos financeiros de pagamento antecipado, conforme condições de pagamento.",
+      "en": "The DISCOUNT_TAKEN and DISCOUNT_LOST fields record early payment financial discounts, according to payment terms.",
+      "es": "Los campos DISCOUNT_TAKEN y DISCOUNT_LOST registran descuentos financieros de pago anticipado, según condiciones de pago."
+    },
+    {
+      "id": 81,
+      "br": "A coluna PAYMENT_NUM referencia o número da parcela em ap_payment_schedules_all.",
+      "en": "The PAYMENT_NUM column references the installment number in ap_payment_schedules_all.",
+      "es": "La columna PAYMENT_NUM referencia el número de la cuota en ap_payment_schedules_all."
+    },
+    {
+      "id": 82,
+      "br": "A tabela possui Descriptive Flexfields (DFF) via colunas ATTRIBUTE1–15 para customizações por implementação.",
+      "en": "The table has Descriptive Flexfields (DFF) via ATTRIBUTE1–15 columns for customizations per implementation.",
+      "es": "La tabla posee Descriptive Flexfields (DFF) vía columnas ATTRIBUTE1–15 para personalizaciones por implementación."
+    },
+    {
+      "id": 83,
+      "br": "Referências",
+      "en": "References",
+      "es": "Referencias"
+    },
+    {
+      "id": 84,
+      "br": "[Oracle Docs — AP_INVOICE_PAYMENTS_ALL](https://docs.oracle.com/en/cloud/saas/financials/25a/oedmf/apinvoicepaymentsall-10007.html)",
+      "en": "[Oracle Docs — AP_INVOICE_PAYMENTS_ALL](https://docs.oracle.com/en/cloud/saas/financials/25a/oedmf/apinvoicepaymentsall-10007.html)",
+      "es": "[Oracle Docs — AP_INVOICE_PAYMENTS_ALL](https://docs.oracle.com/en/cloud/saas/financials/25a/oedmf/apinvoicepaymentsall-10007.html)"
+    },
+    {
+      "id": 85,
+      "br": "ap-module-data-dictionary — Dossiê do módulo AP",
+      "en": "ap-module-data-dictionary — AP module dossier",
+      "es": "ap-module-data-dictionary — Dossier del módulo AP"
+    }
+  ]
+}

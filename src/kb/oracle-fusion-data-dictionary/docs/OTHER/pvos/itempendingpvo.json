@@ -1,0 +1,439 @@
+{
+  "meta": {
+    "pvo_name": "ItemPendingPVO",
+    "full_path": "FscmTopModelAM.ChangeObjectsAM.ItemPendingPVO",
+    "module_path": "FscmTopModelAM.ChangeObjectsAM",
+    "module_code": "OTHER",
+    "type": "pvo",
+    "description": "View Object para extração BICC de dados de Item Pending. Acessa as tabelas: EGO_CHANGE_LINES_B, EGP_ITEM_CLASSES_B_V, EGP_ITEM_CLASSES_TL (+5)."
+  },
+  "stats": {
+    "total_attributes": 28,
+    "tables_count": 8,
+    "bicc_enabled": 5,
+    "bicc_pct": 18,
+    "pk_count": 2
+  },
+  "tables": [
+    "EGO_CHANGE_LINES_B",
+    "EGP_ITEM_CLASSES_B_V",
+    "EGP_ITEM_CLASSES_TL",
+    "EGP_PHASES_VL",
+    "EGP_SYSTEM_ITEMS_ALL_V",
+    "EGP_SYSTEM_ITEMS_TL_V",
+    "HR_ALL_ORGANIZATION_UNITS_F",
+    "HR_ORGANIZATION_UNITS_F_TL"
+  ],
+  "attributes": [
+    {
+      "name": "CLBPEOChangeLineId",
+      "table": "EGO_CHANGE_LINES_B",
+      "column": "CHANGE_LINE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CLBPEOImplementationDate1_1",
+      "table": "EGO_CHANGE_LINES_B",
+      "column": "IMPLEMENTATION_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CLBPEOScheduledDate",
+      "table": "EGO_CHANGE_LINES_B",
+      "column": "SCHEDULED_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CurrentPhaseCode",
+      "table": "EGP_SYSTEM_ITEMS_ALL_V",
+      "column": "CURRENT_PHASE_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ImplementationDate",
+      "table": "EGP_SYSTEM_ITEMS_ALL_V",
+      "column": "IMPLEMENTATION_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InventoryItemId",
+      "table": "EGP_SYSTEM_ITEMS_ALL_V",
+      "column": "INVENTORY_ITEM_ID",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    },
+    {
+      "name": "InventoryOrganizationId",
+      "table": "EGP_SYSTEM_ITEMS_ALL_V",
+      "column": "INVENTORY_ORGANIZATION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ItemCatalogGroupId",
+      "table": "EGP_SYSTEM_ITEMS_ALL_V",
+      "column": "ITEM_CATALOG_GROUP_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ItemClassBasePEOItemClassCode2_1",
+      "table": "EGP_ITEM_CLASSES_B_V",
+      "column": "ITEM_CLASS_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ItemClassBasePEOItemClassId",
+      "table": "EGP_ITEM_CLASSES_B_V",
+      "column": "ITEM_CLASS_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ItemClassTranPEOItemClassId1_1",
+      "table": "EGP_ITEM_CLASSES_TL",
+      "column": "ITEM_CLASS_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ItemClassTranPEOItemClassName",
+      "table": "EGP_ITEM_CLASSES_TL",
+      "column": "ITEM_CLASS_NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ItemClassTranPEOLanguage3_1",
+      "table": "EGP_ITEM_CLASSES_TL",
+      "column": "LANGUAGE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ItemTranslationPEOInventoryItemId1_1",
+      "table": "EGP_SYSTEM_ITEMS_TL_V",
+      "column": "INVENTORY_ITEM_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ItemTranslationPEOLanguage",
+      "table": "EGP_SYSTEM_ITEMS_TL_V",
+      "column": "LANGUAGE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ItemTranslationPEOOrganizationId1_1",
+      "table": "EGP_SYSTEM_ITEMS_TL_V",
+      "column": "ORGANIZATION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "OrgUnitTransPEOEffectiveEndDate1_1",
+      "table": "HR_ORGANIZATION_UNITS_F_TL",
+      "column": "EFFECTIVE_END_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "OrgUnitTransPEOEffectiveStartDate1_1",
+      "table": "HR_ORGANIZATION_UNITS_F_TL",
+      "column": "EFFECTIVE_START_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "OrgUnitTransPEOLanguage2_1",
+      "table": "HR_ORGANIZATION_UNITS_F_TL",
+      "column": "LANGUAGE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "OrgUnitTransPEOOrganizationId3_1",
+      "table": "HR_ORGANIZATION_UNITS_F_TL",
+      "column": "ORGANIZATION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "OrganizationId",
+      "table": "EGP_SYSTEM_ITEMS_ALL_V",
+      "column": "ORGANIZATION_ID",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    },
+    {
+      "name": "OrganizationUnitPEOEffectiveEndDate",
+      "table": "HR_ALL_ORGANIZATION_UNITS_F",
+      "column": "EFFECTIVE_END_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "OrganizationUnitPEOEffectiveStartDate",
+      "table": "HR_ALL_ORGANIZATION_UNITS_F",
+      "column": "EFFECTIVE_START_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "OrganizationUnitPEOOrganizationId2_1",
+      "table": "HR_ALL_ORGANIZATION_UNITS_F",
+      "column": "ORGANIZATION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PhasesPEOPhaseCode",
+      "table": "EGP_PHASES_VL",
+      "column": "PHASE_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PhasesPEOPhaseName",
+      "table": "EGP_PHASES_VL",
+      "column": "PHASE_NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "VersionEndDate",
+      "table": "EGP_SYSTEM_ITEMS_ALL_V",
+      "column": "VERSION_END_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "VersionStartDate",
+      "table": "EGP_SYSTEM_ITEMS_ALL_V",
+      "column": "VERSION_START_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    }
+  ],
+  "by_table": {
+    "EGO_CHANGE_LINES_B": [
+      {
+        "attribute": "CLBPEOChangeLineId",
+        "column": "CHANGE_LINE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CLBPEOImplementationDate1_1",
+        "column": "IMPLEMENTATION_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CLBPEOScheduledDate",
+        "column": "SCHEDULED_DATE",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "EGP_SYSTEM_ITEMS_ALL_V": [
+      {
+        "attribute": "CurrentPhaseCode",
+        "column": "CURRENT_PHASE_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ImplementationDate",
+        "column": "IMPLEMENTATION_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InventoryItemId",
+        "column": "INVENTORY_ITEM_ID",
+        "bicc": true,
+        "pk": true
+      },
+      {
+        "attribute": "InventoryOrganizationId",
+        "column": "INVENTORY_ORGANIZATION_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ItemCatalogGroupId",
+        "column": "ITEM_CATALOG_GROUP_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "OrganizationId",
+        "column": "ORGANIZATION_ID",
+        "bicc": true,
+        "pk": true
+      },
+      {
+        "attribute": "VersionEndDate",
+        "column": "VERSION_END_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "VersionStartDate",
+        "column": "VERSION_START_DATE",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "EGP_ITEM_CLASSES_B_V": [
+      {
+        "attribute": "ItemClassBasePEOItemClassCode2_1",
+        "column": "ITEM_CLASS_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ItemClassBasePEOItemClassId",
+        "column": "ITEM_CLASS_ID",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "EGP_ITEM_CLASSES_TL": [
+      {
+        "attribute": "ItemClassTranPEOItemClassId1_1",
+        "column": "ITEM_CLASS_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ItemClassTranPEOItemClassName",
+        "column": "ITEM_CLASS_NAME",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ItemClassTranPEOLanguage3_1",
+        "column": "LANGUAGE",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "EGP_SYSTEM_ITEMS_TL_V": [
+      {
+        "attribute": "ItemTranslationPEOInventoryItemId1_1",
+        "column": "INVENTORY_ITEM_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ItemTranslationPEOLanguage",
+        "column": "LANGUAGE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ItemTranslationPEOOrganizationId1_1",
+        "column": "ORGANIZATION_ID",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "HR_ORGANIZATION_UNITS_F_TL": [
+      {
+        "attribute": "OrgUnitTransPEOEffectiveEndDate1_1",
+        "column": "EFFECTIVE_END_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "OrgUnitTransPEOEffectiveStartDate1_1",
+        "column": "EFFECTIVE_START_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "OrgUnitTransPEOLanguage2_1",
+        "column": "LANGUAGE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "OrgUnitTransPEOOrganizationId3_1",
+        "column": "ORGANIZATION_ID",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "HR_ALL_ORGANIZATION_UNITS_F": [
+      {
+        "attribute": "OrganizationUnitPEOEffectiveEndDate",
+        "column": "EFFECTIVE_END_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "OrganizationUnitPEOEffectiveStartDate",
+        "column": "EFFECTIVE_START_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "OrganizationUnitPEOOrganizationId2_1",
+        "column": "ORGANIZATION_ID",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "EGP_PHASES_VL": [
+      {
+        "attribute": "PhasesPEOPhaseCode",
+        "column": "PHASE_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PhasesPEOPhaseName",
+        "column": "PHASE_NAME",
+        "bicc": true,
+        "pk": false
+      }
+    ]
+  }
+}

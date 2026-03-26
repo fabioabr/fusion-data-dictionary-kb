@@ -1,0 +1,337 @@
+{
+  "meta": {
+    "pvo_name": "PayablesReconciliationSummaryPVO",
+    "full_path": "FscmTopModelAM.FinApReportsReconciliationAM.PayablesReconciliationSummaryPVO",
+    "module_path": "FscmTopModelAM.FinApReportsReconciliationAM",
+    "module_code": "AP",
+    "type": "pvo",
+    "description": "Extrai o resumo consolidado das reconciliações de contas a pagar por ledger, incluindo totais de débito, crédito e diferenças. Fundamental para fechamento contábil, identificação de divergências e validação de saldos de fornecedores."
+  },
+  "stats": {
+    "total_attributes": 22,
+    "tables_count": 2,
+    "bicc_enabled": 8,
+    "bicc_pct": 36,
+    "pk_count": 1
+  },
+  "tables": [
+    "AP_RECON_SUMMARY_DETAILS",
+    "GL_LEDGERS"
+  ],
+  "attributes": [
+    {
+      "name": "LedgersChartOfAccountsId",
+      "table": "GL_LEDGERS",
+      "column": "CHART_OF_ACCOUNTS_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LedgersLedgerId",
+      "table": "GL_LEDGERS",
+      "column": "LEDGER_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReconItemId",
+      "table": "AP_RECON_SUMMARY_DETAILS",
+      "column": "RECON_ITEM_ID",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    },
+    {
+      "name": "ReconciliationSummaryPEOAccountedCr",
+      "table": "AP_RECON_SUMMARY_DETAILS",
+      "column": "ACCOUNTED_CR",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReconciliationSummaryPEOAccountedDr",
+      "table": "AP_RECON_SUMMARY_DETAILS",
+      "column": "ACCOUNTED_DR",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReconciliationSummaryPEOApAcctdAmount",
+      "table": "AP_RECON_SUMMARY_DETAILS",
+      "column": "AP_ACCTD_AMOUNT",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReconciliationSummaryPEOBalancingSegment",
+      "table": "AP_RECON_SUMMARY_DETAILS",
+      "column": "BALANCING_SEGMENT",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReconciliationSummaryPEOBuId",
+      "table": "AP_RECON_SUMMARY_DETAILS",
+      "column": "BU_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReconciliationSummaryPEOCodeCombinationId",
+      "table": "AP_RECON_SUMMARY_DETAILS",
+      "column": "CODE_COMBINATION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReconciliationSummaryPEOCreatedBy",
+      "table": "AP_RECON_SUMMARY_DETAILS",
+      "column": "CREATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReconciliationSummaryPEOCreationDate",
+      "table": "AP_RECON_SUMMARY_DETAILS",
+      "column": "CREATION_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReconciliationSummaryPEODataSource",
+      "table": "AP_RECON_SUMMARY_DETAILS",
+      "column": "DATA_SOURCE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReconciliationSummaryPEOJobDefinitionName",
+      "table": "AP_RECON_SUMMARY_DETAILS",
+      "column": "JOB_DEFINITION_NAME",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReconciliationSummaryPEOJobDefinitionPackage",
+      "table": "AP_RECON_SUMMARY_DETAILS",
+      "column": "JOB_DEFINITION_PACKAGE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReconciliationSummaryPEOLastUpdateDate",
+      "table": "AP_RECON_SUMMARY_DETAILS",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": true
+    },
+    {
+      "name": "ReconciliationSummaryPEOLastUpdateLogin",
+      "table": "AP_RECON_SUMMARY_DETAILS",
+      "column": "LAST_UPDATE_LOGIN",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReconciliationSummaryPEOLastUpdatedBy",
+      "table": "AP_RECON_SUMMARY_DETAILS",
+      "column": "LAST_UPDATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReconciliationSummaryPEOLedgerId",
+      "table": "AP_RECON_SUMMARY_DETAILS",
+      "column": "LEDGER_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReconciliationSummaryPEONaturalAccountSegment",
+      "table": "AP_RECON_SUMMARY_DETAILS",
+      "column": "NATURAL_ACCOUNT_SEGMENT",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReconciliationSummaryPEOReconItemCode",
+      "table": "AP_RECON_SUMMARY_DETAILS",
+      "column": "RECON_ITEM_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReconciliationSummaryPEOReconItemOrder",
+      "table": "AP_RECON_SUMMARY_DETAILS",
+      "column": "RECON_ITEM_ORDER",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReconciliationSummaryPEORequestId",
+      "table": "AP_RECON_SUMMARY_DETAILS",
+      "column": "REQUEST_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    }
+  ],
+  "by_table": {
+    "GL_LEDGERS": [
+      {
+        "attribute": "LedgersChartOfAccountsId",
+        "column": "CHART_OF_ACCOUNTS_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "LedgersLedgerId",
+        "column": "LEDGER_ID",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "AP_RECON_SUMMARY_DETAILS": [
+      {
+        "attribute": "ReconItemId",
+        "column": "RECON_ITEM_ID",
+        "bicc": true,
+        "pk": true
+      },
+      {
+        "attribute": "ReconciliationSummaryPEOAccountedCr",
+        "column": "ACCOUNTED_CR",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ReconciliationSummaryPEOAccountedDr",
+        "column": "ACCOUNTED_DR",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ReconciliationSummaryPEOApAcctdAmount",
+        "column": "AP_ACCTD_AMOUNT",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ReconciliationSummaryPEOBalancingSegment",
+        "column": "BALANCING_SEGMENT",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReconciliationSummaryPEOBuId",
+        "column": "BU_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReconciliationSummaryPEOCodeCombinationId",
+        "column": "CODE_COMBINATION_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReconciliationSummaryPEOCreatedBy",
+        "column": "CREATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReconciliationSummaryPEOCreationDate",
+        "column": "CREATION_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReconciliationSummaryPEODataSource",
+        "column": "DATA_SOURCE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ReconciliationSummaryPEOJobDefinitionName",
+        "column": "JOB_DEFINITION_NAME",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReconciliationSummaryPEOJobDefinitionPackage",
+        "column": "JOB_DEFINITION_PACKAGE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReconciliationSummaryPEOLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ReconciliationSummaryPEOLastUpdateLogin",
+        "column": "LAST_UPDATE_LOGIN",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReconciliationSummaryPEOLastUpdatedBy",
+        "column": "LAST_UPDATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReconciliationSummaryPEOLedgerId",
+        "column": "LEDGER_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReconciliationSummaryPEONaturalAccountSegment",
+        "column": "NATURAL_ACCOUNT_SEGMENT",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReconciliationSummaryPEOReconItemCode",
+        "column": "RECON_ITEM_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ReconciliationSummaryPEOReconItemOrder",
+        "column": "RECON_ITEM_ORDER",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ReconciliationSummaryPEORequestId",
+        "column": "REQUEST_ID",
+        "bicc": false,
+        "pk": false
+      }
+    ]
+  }
+}

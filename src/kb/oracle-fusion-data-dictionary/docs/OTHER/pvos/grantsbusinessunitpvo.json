@@ -1,0 +1,1522 @@
+{
+  "meta": {
+    "pvo_name": "GrantsBusinessUnitPVO",
+    "full_path": "FscmTopModelAM.GmsSetupAM.GrantsBusinessUnitPVO",
+    "module_path": "FscmTopModelAM.GmsSetupAM",
+    "module_code": "OTHER",
+    "type": "pvo",
+    "description": "View Object para extração BICC de dados de Grants Business Unit. Acessa as tabelas: FND_SETID_SETS_VL, GL_LEDGERS, GMS_BUSINESS_UNITS (+16)."
+  },
+  "stats": {
+    "total_attributes": 103,
+    "tables_count": 19,
+    "bicc_enabled": 27,
+    "bicc_pct": 26,
+    "pk_count": 1
+  },
+  "tables": [
+    "FND_SETID_SETS_VL",
+    "GL_LEDGERS",
+    "GMS_BUSINESS_UNITS",
+    "GMS_INSTITUTIONS_B",
+    "GMS_INSTITUTIONS_TL",
+    "HR_ALL_ORGANIZATION_UNITS_F",
+    "HR_ORGANIZATION_INFORMATION_F",
+    "HR_ORGANIZATION_UNITS_F_TL",
+    "HR_ORG_UNIT_CLASSIFICATIONS_F",
+    "OKC_CONTRACT_TYPES_B",
+    "OKC_CONTRACT_TYPES_TL",
+    "PER_LOCATION_DETAILS_F",
+    "PER_LOCATION_DETAILS_F_TL",
+    "PER_PERSON_NAMES_F",
+    "PJB_BILLING_METHODS_TL",
+    "PJB_INVOICE_FORMATS",
+    "PJF_BILLING_CYCLES_TL",
+    "PJF_IND_RATE_SCH_TL",
+    "XLE_ENTITY_PROFILES"
+  ],
+  "attributes": [
+    {
+      "name": "BillingCycleId",
+      "table": "PJF_BILLING_CYCLES_TL",
+      "column": "BILLING_CYCLE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BillingCycleName",
+      "table": "PJF_BILLING_CYCLES_TL",
+      "column": "BILLING_CYCLE_NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BillingCycleTLPEOLanguage",
+      "table": "PJF_BILLING_CYCLES_TL",
+      "column": "LANGUAGE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BuId",
+      "table": "GMS_BUSINESS_UNITS",
+      "column": "BU_ID",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    },
+    {
+      "name": "BurdenScheduleTLPEOLanguage",
+      "table": "PJF_IND_RATE_SCH_TL",
+      "column": "LANGUAGE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BusinessUnitId",
+      "table": "HR_ALL_ORGANIZATION_UNITS_F",
+      "column": "ORGANIZATION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BusinessUnitPEODateFrom",
+      "table": "HR_ALL_ORGANIZATION_UNITS_F",
+      "column": "EFFECTIVE_START_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BusinessUnitPEODateTo",
+      "table": "HR_ALL_ORGANIZATION_UNITS_F",
+      "column": "EFFECTIVE_END_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BusinessUnitPEOName",
+      "table": "HR_ORGANIZATION_UNITS_F_TL",
+      "column": "NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ContractTypePEOContractTypeId",
+      "table": "OKC_CONTRACT_TYPES_B",
+      "column": "CONTRACT_TYPE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ContractTypePEOName",
+      "table": "OKC_CONTRACT_TYPES_TL",
+      "column": "NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ContractTypePEOObjectVersionNumber",
+      "table": "OKC_CONTRACT_TYPES_B",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ContractTypeTranslationPEOContractTypeId",
+      "table": "OKC_CONTRACT_TYPES_TL",
+      "column": "CONTRACT_TYPE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ContractTypeTranslationPEOLanguage",
+      "table": "OKC_CONTRACT_TYPES_TL",
+      "column": "LANGUAGE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ContractTypeTranslationPEOObjectVersionNumber4",
+      "table": "OKC_CONTRACT_TYPES_TL",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "DefaultCurrencyCode",
+      "table": "HR_ORGANIZATION_INFORMATION_F",
+      "column": "ORG_INFORMATION8",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "DefaultLegalEntityName",
+      "table": "XLE_ENTITY_PROFILES",
+      "column": "NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "DefaultSetId",
+      "table": "HR_ORGANIZATION_INFORMATION_F",
+      "column": "ORG_INFORMATION4",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "EventFormatPEOInvoiceFormatId",
+      "table": "PJB_INVOICE_FORMATS",
+      "column": "INVOICE_FORMAT_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "EventFormatPEOName",
+      "table": "PJB_INVOICE_FORMATS",
+      "column": "NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "FinancialsBusinessUnitId",
+      "table": "HR_ORGANIZATION_INFORMATION_F",
+      "column": "ORG_INFORMATION7",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "FinancialsBusinessUnitPEOBusinessUnitId1",
+      "table": "HR_ALL_ORGANIZATION_UNITS_F",
+      "column": "ORGANIZATION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "FinancialsBusinessUnitPEOName",
+      "table": "HR_ORGANIZATION_UNITS_F_TL",
+      "column": "NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "GlLedgersLedgerId",
+      "table": "GL_LEDGERS",
+      "column": "LEDGER_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "GlLedgersName1",
+      "table": "GL_LEDGERS",
+      "column": "NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "GlLedgersObjectVersionNumber",
+      "table": "GL_LEDGERS",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "GrantsBusinessUnitPEOBillingCycleId",
+      "table": "GMS_BUSINESS_UNITS",
+      "column": "BILLING_CYCLE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "GrantsBusinessUnitPEOContractTypeId",
+      "table": "GMS_BUSINESS_UNITS",
+      "column": "CONTRACT_TYPE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "GrantsBusinessUnitPEOCreatedBy",
+      "table": "GMS_BUSINESS_UNITS",
+      "column": "CREATED_BY",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "GrantsBusinessUnitPEOCreationDate",
+      "table": "GMS_BUSINESS_UNITS",
+      "column": "CREATION_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "GrantsBusinessUnitPEODayToClose",
+      "table": "GMS_BUSINESS_UNITS",
+      "column": "DAY_TO_CLOSE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "GrantsBusinessUnitPEOEventFormatId",
+      "table": "GMS_BUSINESS_UNITS",
+      "column": "EVENT_FORMAT_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "GrantsBusinessUnitPEOIndRateSchId",
+      "table": "GMS_BUSINESS_UNITS",
+      "column": "IND_RATE_SCH_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "GrantsBusinessUnitPEOInstitutionId",
+      "table": "GMS_BUSINESS_UNITS",
+      "column": "INSTITUTION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "GrantsBusinessUnitPEOInvoiceMethodId",
+      "table": "GMS_BUSINESS_UNITS",
+      "column": "INVOICE_METHOD_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "GrantsBusinessUnitPEOLaborFormatId",
+      "table": "GMS_BUSINESS_UNITS",
+      "column": "LABOR_FORMAT_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "GrantsBusinessUnitPEOLastUpdateDate",
+      "table": "GMS_BUSINESS_UNITS",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": true
+    },
+    {
+      "name": "GrantsBusinessUnitPEOLastUpdateLogin",
+      "table": "GMS_BUSINESS_UNITS",
+      "column": "LAST_UPDATE_LOGIN",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "GrantsBusinessUnitPEOLastUpdatedBy",
+      "table": "GMS_BUSINESS_UNITS",
+      "column": "LAST_UPDATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "GrantsBusinessUnitPEONonLaborFormatId",
+      "table": "GMS_BUSINESS_UNITS",
+      "column": "NON_LABOR_FORMAT_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "GrantsBusinessUnitPEOObjectVersionNumber",
+      "table": "GMS_BUSINESS_UNITS",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "GrantsBusinessUnitPEOOnTrackPctTo",
+      "table": "GMS_BUSINESS_UNITS",
+      "column": "ON_TRACK_PCT_TO",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "GrantsBusinessUnitPEOOtValueUsedInGraph",
+      "table": "GMS_BUSINESS_UNITS",
+      "column": "OT_VALUE_USED_IN_GRAPH",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "GrantsBusinessUnitPEORevenueMethodId",
+      "table": "GMS_BUSINESS_UNITS",
+      "column": "REVENUE_METHOD_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "GrantsBusinessUnitPEOUnderSpendPctTo",
+      "table": "GMS_BUSINESS_UNITS",
+      "column": "UNDER_SPEND_PCT_TO",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "GrantsBusinessUnitPEOUsValueUsedInGraph",
+      "table": "GMS_BUSINESS_UNITS",
+      "column": "US_VALUE_USED_IN_GRAPH",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InstitutionPEOInstitutionId",
+      "table": "GMS_INSTITUTIONS_B",
+      "column": "INSTITUTION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InstitutionPEOInstitutionName",
+      "table": "GMS_INSTITUTIONS_TL",
+      "column": "INSTITUTION_NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InstitutionTranslationPEOInstitutionId",
+      "table": "GMS_INSTITUTIONS_TL",
+      "column": "INSTITUTION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InstitutionTranslationPEOLanguage",
+      "table": "GMS_INSTITUTIONS_TL",
+      "column": "LANGUAGE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceMethodPEOBillMethodId",
+      "table": "PJB_BILLING_METHODS_TL",
+      "column": "BILL_METHOD_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceMethodPEOBillMethodName",
+      "table": "PJB_BILLING_METHODS_TL",
+      "column": "BILL_METHOD_NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceMethodTLPEOLanguage",
+      "table": "PJB_BILLING_METHODS_TL",
+      "column": "LANGUAGE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LaborFormatPEOInvoiceFormatId",
+      "table": "PJB_INVOICE_FORMATS",
+      "column": "INVOICE_FORMAT_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LaborFormatPEOName",
+      "table": "PJB_INVOICE_FORMATS",
+      "column": "NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LegalEntityId",
+      "table": "HR_ORGANIZATION_INFORMATION_F",
+      "column": "ORG_INFORMATION2",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LocationDPEOEffectiveEndDate",
+      "table": "PER_LOCATION_DETAILS_F",
+      "column": "EFFECTIVE_END_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LocationDPEOEffectiveStartDate",
+      "table": "PER_LOCATION_DETAILS_F",
+      "column": "EFFECTIVE_START_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LocationDPEOLocationId",
+      "table": "PER_LOCATION_DETAILS_F",
+      "column": "LOCATION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LocationDPEOLocationName",
+      "table": "PER_LOCATION_DETAILS_F_TL",
+      "column": "LOCATION_NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LocationDetailsBasePEOLocationDetailsId",
+      "table": "PER_LOCATION_DETAILS_F",
+      "column": "LOCATION_DETAILS_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LocationDetailsTranslationPEOEffectiveEndDate",
+      "table": "PER_LOCATION_DETAILS_F_TL",
+      "column": "EFFECTIVE_END_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LocationDetailsTranslationPEOEffectiveStartDate",
+      "table": "PER_LOCATION_DETAILS_F_TL",
+      "column": "EFFECTIVE_START_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LocationDetailsTranslationPEOLanguage",
+      "table": "PER_LOCATION_DETAILS_F_TL",
+      "column": "LANGUAGE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LocationDetailsTranslationPEOLocationDetailsId",
+      "table": "PER_LOCATION_DETAILS_F_TL",
+      "column": "LOCATION_DETAILS_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LocationId",
+      "table": "HR_ALL_ORGANIZATION_UNITS_F",
+      "column": "LOCATION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ManagerId",
+      "table": "HR_ORGANIZATION_INFORMATION_F",
+      "column": "ORG_INFORMATION1",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NonLaborFormatPEOInvoiceFormatId",
+      "table": "PJB_INVOICE_FORMATS",
+      "column": "INVOICE_FORMAT_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "NonLaborFormatPEOName",
+      "table": "PJB_INVOICE_FORMATS",
+      "column": "NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ObjectVersionNumber",
+      "table": "PJF_BILLING_CYCLES_TL",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "OrgUnitClassificationPEOEffectiveEndDate4",
+      "table": "HR_ORG_UNIT_CLASSIFICATIONS_F",
+      "column": "EFFECTIVE_END_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "OrgUnitClassificationPEOEffectiveStartDate4",
+      "table": "HR_ORG_UNIT_CLASSIFICATIONS_F",
+      "column": "EFFECTIVE_START_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "OrgUnitClassificationPEOOrgUnitClassificationId",
+      "table": "HR_ORG_UNIT_CLASSIFICATIONS_F",
+      "column": "ORG_UNIT_CLASSIFICATION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "OrganizationInformationPEOEffectiveEndDate",
+      "table": "HR_ORGANIZATION_INFORMATION_F",
+      "column": "EFFECTIVE_END_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "OrganizationInformationPEOEffectiveStartDate",
+      "table": "HR_ORGANIZATION_INFORMATION_F",
+      "column": "EFFECTIVE_START_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "OrganizationInformationPEOOrgInformationId",
+      "table": "HR_ORGANIZATION_INFORMATION_F",
+      "column": "ORG_INFORMATION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "OrganizationUnitPEO1EffectiveEndDate",
+      "table": "HR_ALL_ORGANIZATION_UNITS_F",
+      "column": "EFFECTIVE_END_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "OrganizationUnitPEO1EffectiveStartDate",
+      "table": "HR_ALL_ORGANIZATION_UNITS_F",
+      "column": "EFFECTIVE_START_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "OrganizationUnitTranslationP1EffectiveEndDate6",
+      "table": "HR_ORGANIZATION_UNITS_F_TL",
+      "column": "EFFECTIVE_END_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "OrganizationUnitTranslationP1EffectiveStartDate6",
+      "table": "HR_ORGANIZATION_UNITS_F_TL",
+      "column": "EFFECTIVE_START_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "OrganizationUnitTranslationP1Language",
+      "table": "HR_ORGANIZATION_UNITS_F_TL",
+      "column": "LANGUAGE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "OrganizationUnitTranslationP1OrganizationId",
+      "table": "HR_ORGANIZATION_UNITS_F_TL",
+      "column": "ORGANIZATION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "OrganizationUnitTranslationPEffectiveEndDate",
+      "table": "HR_ORGANIZATION_UNITS_F_TL",
+      "column": "EFFECTIVE_END_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "OrganizationUnitTranslationPEffectiveStartDate",
+      "table": "HR_ORGANIZATION_UNITS_F_TL",
+      "column": "EFFECTIVE_START_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "OrganizationUnitTranslationPLanguage",
+      "table": "HR_ORGANIZATION_UNITS_F_TL",
+      "column": "LANGUAGE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "OrganizationUnitTranslationPOrganizationId",
+      "table": "HR_ORGANIZATION_UNITS_F_TL",
+      "column": "ORGANIZATION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonNameDPEODisplayName",
+      "table": "PER_PERSON_NAMES_F",
+      "column": "DISPLAY_NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonNameDPEOEffectiveEndDate1",
+      "table": "PER_PERSON_NAMES_F",
+      "column": "EFFECTIVE_END_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonNameDPEOEffectiveStartDate",
+      "table": "PER_PERSON_NAMES_F",
+      "column": "EFFECTIVE_START_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonNameDPEOObjectVersionNumber",
+      "table": "PER_PERSON_NAMES_F",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonNameDPEOPersonNameId",
+      "table": "PER_PERSON_NAMES_F",
+      "column": "PERSON_NAME_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PjfIndRateSchVlIndRateSchId",
+      "table": "PJF_IND_RATE_SCH_TL",
+      "column": "IND_RATE_SCH_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PjfIndRateSchVlIndSchName",
+      "table": "PJF_IND_RATE_SCH_TL",
+      "column": "IND_SCH_NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PrimaryLedgerId",
+      "table": "HR_ORGANIZATION_INFORMATION_F",
+      "column": "ORG_INFORMATION3",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RevenueMethodPEOBillMethodId",
+      "table": "PJB_BILLING_METHODS_TL",
+      "column": "BILL_METHOD_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RevenueMethodPEOBillMethodName",
+      "table": "PJB_BILLING_METHODS_TL",
+      "column": "BILL_METHOD_NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RevenueMethodTLPEOLanguage",
+      "table": "PJB_BILLING_METHODS_TL",
+      "column": "LANGUAGE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SetIdSetPEOSetCode",
+      "table": "FND_SETID_SETS_VL",
+      "column": "SET_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SetIdSetPEOSetId",
+      "table": "FND_SETID_SETS_VL",
+      "column": "SET_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SetIdSetPEOSetName",
+      "table": "FND_SETID_SETS_VL",
+      "column": "SET_NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "Status",
+      "table": "HR_ORG_UNIT_CLASSIFICATIONS_F",
+      "column": "STATUS",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "XleEntityProfilesLegalEntityId1",
+      "table": "XLE_ENTITY_PROFILES",
+      "column": "LEGAL_ENTITY_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "XleEntityProfilesObjectVersionNumber",
+      "table": "XLE_ENTITY_PROFILES",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    }
+  ],
+  "by_table": {
+    "PJF_BILLING_CYCLES_TL": [
+      {
+        "attribute": "BillingCycleId",
+        "column": "BILLING_CYCLE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BillingCycleName",
+        "column": "BILLING_CYCLE_NAME",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "BillingCycleTLPEOLanguage",
+        "column": "LANGUAGE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "GMS_BUSINESS_UNITS": [
+      {
+        "attribute": "BuId",
+        "column": "BU_ID",
+        "bicc": true,
+        "pk": true
+      },
+      {
+        "attribute": "GrantsBusinessUnitPEOBillingCycleId",
+        "column": "BILLING_CYCLE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "GrantsBusinessUnitPEOContractTypeId",
+        "column": "CONTRACT_TYPE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "GrantsBusinessUnitPEOCreatedBy",
+        "column": "CREATED_BY",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "GrantsBusinessUnitPEOCreationDate",
+        "column": "CREATION_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "GrantsBusinessUnitPEODayToClose",
+        "column": "DAY_TO_CLOSE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "GrantsBusinessUnitPEOEventFormatId",
+        "column": "EVENT_FORMAT_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "GrantsBusinessUnitPEOIndRateSchId",
+        "column": "IND_RATE_SCH_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "GrantsBusinessUnitPEOInstitutionId",
+        "column": "INSTITUTION_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "GrantsBusinessUnitPEOInvoiceMethodId",
+        "column": "INVOICE_METHOD_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "GrantsBusinessUnitPEOLaborFormatId",
+        "column": "LABOR_FORMAT_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "GrantsBusinessUnitPEOLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "GrantsBusinessUnitPEOLastUpdateLogin",
+        "column": "LAST_UPDATE_LOGIN",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "GrantsBusinessUnitPEOLastUpdatedBy",
+        "column": "LAST_UPDATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "GrantsBusinessUnitPEONonLaborFormatId",
+        "column": "NON_LABOR_FORMAT_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "GrantsBusinessUnitPEOObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "GrantsBusinessUnitPEOOnTrackPctTo",
+        "column": "ON_TRACK_PCT_TO",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "GrantsBusinessUnitPEOOtValueUsedInGraph",
+        "column": "OT_VALUE_USED_IN_GRAPH",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "GrantsBusinessUnitPEORevenueMethodId",
+        "column": "REVENUE_METHOD_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "GrantsBusinessUnitPEOUnderSpendPctTo",
+        "column": "UNDER_SPEND_PCT_TO",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "GrantsBusinessUnitPEOUsValueUsedInGraph",
+        "column": "US_VALUE_USED_IN_GRAPH",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "PJF_IND_RATE_SCH_TL": [
+      {
+        "attribute": "BurdenScheduleTLPEOLanguage",
+        "column": "LANGUAGE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PjfIndRateSchVlIndRateSchId",
+        "column": "IND_RATE_SCH_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PjfIndRateSchVlIndSchName",
+        "column": "IND_SCH_NAME",
+        "bicc": true,
+        "pk": false
+      }
+    ],
+    "HR_ALL_ORGANIZATION_UNITS_F": [
+      {
+        "attribute": "BusinessUnitId",
+        "column": "ORGANIZATION_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BusinessUnitPEODateFrom",
+        "column": "EFFECTIVE_START_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "BusinessUnitPEODateTo",
+        "column": "EFFECTIVE_END_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "FinancialsBusinessUnitPEOBusinessUnitId1",
+        "column": "ORGANIZATION_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "LocationId",
+        "column": "LOCATION_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "OrganizationUnitPEO1EffectiveEndDate",
+        "column": "EFFECTIVE_END_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "OrganizationUnitPEO1EffectiveStartDate",
+        "column": "EFFECTIVE_START_DATE",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "HR_ORGANIZATION_UNITS_F_TL": [
+      {
+        "attribute": "BusinessUnitPEOName",
+        "column": "NAME",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "FinancialsBusinessUnitPEOName",
+        "column": "NAME",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "OrganizationUnitTranslationP1EffectiveEndDate6",
+        "column": "EFFECTIVE_END_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "OrganizationUnitTranslationP1EffectiveStartDate6",
+        "column": "EFFECTIVE_START_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "OrganizationUnitTranslationP1Language",
+        "column": "LANGUAGE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "OrganizationUnitTranslationP1OrganizationId",
+        "column": "ORGANIZATION_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "OrganizationUnitTranslationPEffectiveEndDate",
+        "column": "EFFECTIVE_END_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "OrganizationUnitTranslationPEffectiveStartDate",
+        "column": "EFFECTIVE_START_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "OrganizationUnitTranslationPLanguage",
+        "column": "LANGUAGE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "OrganizationUnitTranslationPOrganizationId",
+        "column": "ORGANIZATION_ID",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "OKC_CONTRACT_TYPES_B": [
+      {
+        "attribute": "ContractTypePEOContractTypeId",
+        "column": "CONTRACT_TYPE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ContractTypePEOObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "OKC_CONTRACT_TYPES_TL": [
+      {
+        "attribute": "ContractTypePEOName",
+        "column": "NAME",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ContractTypeTranslationPEOContractTypeId",
+        "column": "CONTRACT_TYPE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ContractTypeTranslationPEOLanguage",
+        "column": "LANGUAGE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ContractTypeTranslationPEOObjectVersionNumber4",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "HR_ORGANIZATION_INFORMATION_F": [
+      {
+        "attribute": "DefaultCurrencyCode",
+        "column": "ORG_INFORMATION8",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "DefaultSetId",
+        "column": "ORG_INFORMATION4",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "FinancialsBusinessUnitId",
+        "column": "ORG_INFORMATION7",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "LegalEntityId",
+        "column": "ORG_INFORMATION2",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ManagerId",
+        "column": "ORG_INFORMATION1",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "OrganizationInformationPEOEffectiveEndDate",
+        "column": "EFFECTIVE_END_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "OrganizationInformationPEOEffectiveStartDate",
+        "column": "EFFECTIVE_START_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "OrganizationInformationPEOOrgInformationId",
+        "column": "ORG_INFORMATION_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PrimaryLedgerId",
+        "column": "ORG_INFORMATION3",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "XLE_ENTITY_PROFILES": [
+      {
+        "attribute": "DefaultLegalEntityName",
+        "column": "NAME",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "XleEntityProfilesLegalEntityId1",
+        "column": "LEGAL_ENTITY_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "XleEntityProfilesObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "PJB_INVOICE_FORMATS": [
+      {
+        "attribute": "EventFormatPEOInvoiceFormatId",
+        "column": "INVOICE_FORMAT_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "EventFormatPEOName",
+        "column": "NAME",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "LaborFormatPEOInvoiceFormatId",
+        "column": "INVOICE_FORMAT_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "LaborFormatPEOName",
+        "column": "NAME",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "NonLaborFormatPEOInvoiceFormatId",
+        "column": "INVOICE_FORMAT_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "NonLaborFormatPEOName",
+        "column": "NAME",
+        "bicc": true,
+        "pk": false
+      }
+    ],
+    "GL_LEDGERS": [
+      {
+        "attribute": "GlLedgersLedgerId",
+        "column": "LEDGER_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "GlLedgersName1",
+        "column": "NAME",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "GlLedgersObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "GMS_INSTITUTIONS_B": [
+      {
+        "attribute": "InstitutionPEOInstitutionId",
+        "column": "INSTITUTION_ID",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "GMS_INSTITUTIONS_TL": [
+      {
+        "attribute": "InstitutionPEOInstitutionName",
+        "column": "INSTITUTION_NAME",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "InstitutionTranslationPEOInstitutionId",
+        "column": "INSTITUTION_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InstitutionTranslationPEOLanguage",
+        "column": "LANGUAGE",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "PJB_BILLING_METHODS_TL": [
+      {
+        "attribute": "InvoiceMethodPEOBillMethodId",
+        "column": "BILL_METHOD_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceMethodPEOBillMethodName",
+        "column": "BILL_METHOD_NAME",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceMethodTLPEOLanguage",
+        "column": "LANGUAGE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "RevenueMethodPEOBillMethodId",
+        "column": "BILL_METHOD_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "RevenueMethodPEOBillMethodName",
+        "column": "BILL_METHOD_NAME",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "RevenueMethodTLPEOLanguage",
+        "column": "LANGUAGE",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "PER_LOCATION_DETAILS_F": [
+      {
+        "attribute": "LocationDPEOEffectiveEndDate",
+        "column": "EFFECTIVE_END_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "LocationDPEOEffectiveStartDate",
+        "column": "EFFECTIVE_START_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "LocationDPEOLocationId",
+        "column": "LOCATION_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "LocationDetailsBasePEOLocationDetailsId",
+        "column": "LOCATION_DETAILS_ID",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "PER_LOCATION_DETAILS_F_TL": [
+      {
+        "attribute": "LocationDPEOLocationName",
+        "column": "LOCATION_NAME",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "LocationDetailsTranslationPEOEffectiveEndDate",
+        "column": "EFFECTIVE_END_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "LocationDetailsTranslationPEOEffectiveStartDate",
+        "column": "EFFECTIVE_START_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "LocationDetailsTranslationPEOLanguage",
+        "column": "LANGUAGE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "LocationDetailsTranslationPEOLocationDetailsId",
+        "column": "LOCATION_DETAILS_ID",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "HR_ORG_UNIT_CLASSIFICATIONS_F": [
+      {
+        "attribute": "OrgUnitClassificationPEOEffectiveEndDate4",
+        "column": "EFFECTIVE_END_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "OrgUnitClassificationPEOEffectiveStartDate4",
+        "column": "EFFECTIVE_START_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "OrgUnitClassificationPEOOrgUnitClassificationId",
+        "column": "ORG_UNIT_CLASSIFICATION_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "Status",
+        "column": "STATUS",
+        "bicc": true,
+        "pk": false
+      }
+    ],
+    "PER_PERSON_NAMES_F": [
+      {
+        "attribute": "PersonNameDPEODisplayName",
+        "column": "DISPLAY_NAME",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PersonNameDPEOEffectiveEndDate1",
+        "column": "EFFECTIVE_END_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PersonNameDPEOEffectiveStartDate",
+        "column": "EFFECTIVE_START_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PersonNameDPEOObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PersonNameDPEOPersonNameId",
+        "column": "PERSON_NAME_ID",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "FND_SETID_SETS_VL": [
+      {
+        "attribute": "SetIdSetPEOSetCode",
+        "column": "SET_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "SetIdSetPEOSetId",
+        "column": "SET_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "SetIdSetPEOSetName",
+        "column": "SET_NAME",
+        "bicc": true,
+        "pk": false
+      }
+    ]
+  }
+}

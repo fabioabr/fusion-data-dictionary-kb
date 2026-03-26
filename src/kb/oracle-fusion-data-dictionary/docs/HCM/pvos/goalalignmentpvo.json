@@ -1,0 +1,82 @@
+{
+  "meta": {
+    "pvo_name": "GoalAlignmentPVO",
+    "full_path": "HcmTopModelAnalyticsGlobalAM.HcmGoalCoreAM.GoalAlignmentPVO",
+    "module_path": "HcmTopModelAnalyticsGlobalAM.HcmGoalCoreAM",
+    "module_code": "HCM",
+    "type": "pvo",
+    "description": "Disponibiliza vínculos de alinhamento entre metas com nome da meta alinhada. Suporta visualização de cascateamento de objetivos na organização."
+  },
+  "stats": {
+    "total_attributes": 4,
+    "tables_count": 1,
+    "bicc_enabled": 2,
+    "bicc_pct": 50,
+    "pk_count": 1
+  },
+  "tables": [
+    "HRG_GOALS"
+  ],
+  "attributes": [
+    {
+      "name": "GoalPEOGoalApprovalState",
+      "table": "HRG_GOALS",
+      "column": "GOAL_APPROVAL_STATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "GoalPEOGoalName",
+      "table": "HRG_GOALS",
+      "column": "GOAL_NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "GoalPEOLongDescription",
+      "table": "HRG_GOALS",
+      "column": "LONG_DESCRIPTION",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "GoalpeogoalId",
+      "table": "HRG_GOALS",
+      "column": "GOAL_ID",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    }
+  ],
+  "by_table": {
+    "HRG_GOALS": [
+      {
+        "attribute": "GoalPEOGoalApprovalState",
+        "column": "GOAL_APPROVAL_STATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "GoalPEOGoalName",
+        "column": "GOAL_NAME",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "GoalPEOLongDescription",
+        "column": "LONG_DESCRIPTION",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "GoalpeogoalId",
+        "column": "GOAL_ID",
+        "bicc": true,
+        "pk": true
+      }
+    ]
+  }
+}

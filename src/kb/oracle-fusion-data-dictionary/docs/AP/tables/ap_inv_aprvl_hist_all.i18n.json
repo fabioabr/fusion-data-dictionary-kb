@@ -1,0 +1,451 @@
+{
+  "source": "ap_inv_aprvl_hist_all.md",
+  "source_hash": "ef5381c29bf04f45c0973bf38abfaa25",
+  "translated_at": "2026-03-25",
+  "items": [
+    {
+      "id": 1,
+      "br": "Visão Geral",
+      "en": "Overview",
+      "es": "Vision General"
+    },
+    {
+      "id": 2,
+      "br": "Armazena o histórico de aprovação de faturas do módulo Accounts Payable. Cada registro representa uma ação no workflow de aprovação (submissão, aprovação, rejeição, escalonamento), contendo o aprovador, a data da ação, o status resultante e comentários. Permite rastrear todo o fluxo de aprovação de uma fatura desde a submissão até a decisão final.",
+      "en": "Stores the invoice approval history for the Accounts Payable module. Each record represents an action in the approval workflow (submission, approval, rejection, escalation), containing the approver, action date, resulting status, and comments. Allows tracking the entire approval flow of an invoice from submission to final decision.",
+      "es": "Almacena el historial de aprobación de facturas del módulo Accounts Payable. Cada registro representa una acción en el workflow de aprobación (envío, aprobación, rechazo, escalamiento), conteniendo el aprobador, la fecha de la acción, el estado resultante y comentarios. Permite rastrear todo el flujo de aprobación de una factura desde el envío hasta la decisión final."
+    },
+    {
+      "id": 3,
+      "br": "Sufixo _ALL",
+      "en": "_ALL Suffix",
+      "es": "Sufijo _ALL"
+    },
+    {
+      "id": 4,
+      "br": "O sufixo _ALL indica que a tabela armazena dados de todas as business units (multi-org). O filtro por ORG_ID é necessário para consultas por organização específica.",
+      "en": "The _ALL suffix indicates that the table stores data from all business units (multi-org). Filtering by ORG_ID is required for queries by specific organization.",
+      "es": "El sufijo _ALL indica que la tabla almacena datos de todas las business units (multi-org). El filtro por ORG_ID es necesario para consultas por organización específica."
+    },
+    {
+      "id": 5,
+      "br": "Propósito de Negócio",
+      "en": "Business Purpose",
+      "es": "Proposito de Negocio"
+    },
+    {
+      "id": 6,
+      "br": "Esta tabela é utilizada nos seguintes processos:",
+      "en": "This table is used in the following processes:",
+      "es": "Esta tabla se utiliza en los siguientes procesos:"
+    },
+    {
+      "id": 7,
+      "br": "Registro completo de todas as ações de aprovação realizadas em cada fatura.",
+      "en": "Complete record of all approval actions performed on each invoice.",
+      "es": "Registro completo de todas las acciones de aprobación realizadas en cada factura."
+    },
+    {
+      "id": 8,
+      "br": "Evidência de que faturas foram aprovadas por pessoas autorizadas antes do pagamento.",
+      "en": "Evidence that invoices were approved by authorized persons before payment.",
+      "es": "Evidencia de que las facturas fueron aprobadas por personas autorizadas antes del pago."
+    },
+    {
+      "id": 9,
+      "br": "Identificação de etapas que demoram no processo de aprovação.",
+      "en": "Identification of stages that take long in the approval process.",
+      "es": "Identificación de etapas que demoran en el proceso de aprobación."
+    },
+    {
+      "id": 10,
+      "br": "Rastreamento de faturas que foram escalonadas no workflow de aprovação.",
+      "en": "Tracking of invoices that were escalated in the approval workflow.",
+      "es": "Rastreo de facturas que fueron escaladas en el workflow de aprobación."
+    },
+    {
+      "id": 11,
+      "br": "Base para dashboards de tempo médio de aprovação e taxa de rejeição.",
+      "en": "Basis for dashboards on average approval time and rejection rate.",
+      "es": "Base para dashboards de tiempo promedio de aprobación y tasa de rechazo."
+    },
+    {
+      "id": 12,
+      "br": "Colunas Principais",
+      "en": "Key Columns",
+      "es": "Columnas Principales"
+    },
+    {
+      "id": 13,
+      "br": "Confiança",
+      "en": "Confidence",
+      "es": "Confianza"
+    },
+    {
+      "id": 14,
+      "br": "Escala de 0% a 100% — grau de certeza da descrição gerada por IA com base na documentação oficial Oracle (OEDMF/BICC Release 13/25A).",
+      "en": "Scale from 0% to 100% — degree of certainty of the AI-generated description based on official Oracle documentation (OEDMF/BICC Release 13/25A).",
+      "es": "Escala de 0% a 100% — grado de certeza de la descripción generada por IA con base en la documentación oficial Oracle (OEDMF/BICC Release 13/25A)."
+    },
+    {
+      "id": 15,
+      "br": "- 🟢 81–100% — Coluna presente na documentação oficial Oracle; nome, tipo e descrição confirmados.",
+      "en": "- 🟢 81–100% — Column present in official Oracle documentation; name, type, and description confirmed.",
+      "es": "- 🟢 81–100% — Columna presente en la documentación oficial Oracle; nombre, tipo y descripción confirmados."
+    },
+    {
+      "id": 16,
+      "br": "- 🟡 51–80% — Coluna inferida por naming convention ou padrão Oracle; tipo exato pode variar.",
+      "en": "- 🟡 51–80% — Column inferred by naming convention or Oracle standard; exact type may vary.",
+      "es": "- 🟡 51–80% — Columna inferida por naming convention o estándar Oracle; el tipo exacto puede variar."
+    },
+    {
+      "id": 17,
+      "br": "- 🔴 0–50% — Existência ou tipo incertos; pode não existir no release atual; validar no ambiente.",
+      "en": "- 🔴 0–50% — Uncertain existence or type; may not exist in current release; validate in environment.",
+      "es": "- 🔴 0–50% — Existencia o tipo inciertos; puede no existir en el release actual; validar en el ambiente."
+    },
+    {
+      "id": 18,
+      "br": "Coluna",
+      "en": "Column",
+      "es": "Columna"
+    },
+    {
+      "id": 19,
+      "br": "Tipo",
+      "en": "Type",
+      "es": "Tipo"
+    },
+    {
+      "id": 20,
+      "br": "Nulo?",
+      "en": "Nullable?",
+      "es": "Nulo?"
+    },
+    {
+      "id": 21,
+      "br": "Categoria",
+      "en": "Category",
+      "es": "Categoria"
+    },
+    {
+      "id": 22,
+      "br": "Descrição",
+      "en": "Description",
+      "es": "Descripcion"
+    },
+    {
+      "id": 23,
+      "br": "Identificador único do registro de aprovação",
+      "en": "Unique identifier of the approval record",
+      "es": "Identificador único del registro de aprobación"
+    },
+    {
+      "id": 24,
+      "br": "Fatura associada",
+      "en": "Associated invoice",
+      "es": "Factura asociada"
+    },
+    {
+      "id": 25,
+      "br": "Controle",
+      "en": "Control",
+      "es": "Control"
+    },
+    {
+      "id": 26,
+      "br": "Número da iteração de aprovação (resubmissões)",
+      "en": "Approval iteration number (resubmissions)",
+      "es": "Número de iteración de aprobación (reenvíos)"
+    },
+    {
+      "id": 27,
+      "br": "Classificação",
+      "en": "Classification",
+      "es": "Clasificacion"
+    },
+    {
+      "id": 28,
+      "br": "Ação tomada (APPROVE/REJECT/ESCALATE/REQUEST_INFO/etc.)",
+      "en": "Action taken (APPROVE/REJECT/ESCALATE/REQUEST_INFO/etc.)",
+      "es": "Acción tomada (APPROVE/REJECT/ESCALATE/REQUEST_INFO/etc.)"
+    },
+    {
+      "id": 29,
+      "br": "Aprovador",
+      "en": "Approver",
+      "es": "Aprobador"
+    },
+    {
+      "id": 30,
+      "br": "ID do aprovador (person)",
+      "en": "Approver ID (person)",
+      "es": "ID del aprobador (person)"
+    },
+    {
+      "id": 31,
+      "br": "Nome do aprovador",
+      "en": "Approver name",
+      "es": "Nombre del aprobador"
+    },
+    {
+      "id": 32,
+      "br": "Status",
+      "en": "Status",
+      "es": "Estado"
+    },
+    {
+      "id": 33,
+      "br": "Status resultante (WFAPPROVED/REJECTED/MANUALLY APPROVED/etc.)",
+      "en": "Resulting status (WFAPPROVED/REJECTED/MANUALLY APPROVED/etc.)",
+      "es": "Estado resultante (WFAPPROVED/REJECTED/MANUALLY APPROVED/etc.)"
+    },
+    {
+      "id": 34,
+      "br": "Financeiro",
+      "en": "Financial",
+      "es": "Financiero"
+    },
+    {
+      "id": 35,
+      "br": "Valor aprovado (pode diferir do valor total em aprovações parciais)",
+      "en": "Approved amount (may differ from total in partial approvals)",
+      "es": "Valor aprobado (puede diferir del valor total en aprobaciones parciales)"
+    },
+    {
+      "id": 36,
+      "br": "Workflow",
+      "en": "Workflow",
+      "es": "Workflow"
+    },
+    {
+      "id": 37,
+      "br": "ID da notificação do workflow",
+      "en": "Workflow notification ID",
+      "es": "ID de la notificación del workflow"
+    },
+    {
+      "id": 38,
+      "br": "Referência cruzada",
+      "en": "Cross-reference",
+      "es": "Referencia cruzada"
+    },
+    {
+      "id": 39,
+      "br": "Número da linha da fatura (se aprovação por linha)",
+      "en": "Invoice line number (if line-level approval)",
+      "es": "Número de la línea de la factura (si aprobación por línea)"
+    },
+    {
+      "id": 40,
+      "br": "Tipo do histórico (APRVLACTION/LINESAPRVL/HOLDRELEASE)",
+      "en": "History type (APRVLACTION/LINESAPRVL/HOLDRELEASE)",
+      "es": "Tipo del histórico (APRVLACTION/LINESAPRVL/HOLDRELEASE)"
+    },
+    {
+      "id": 41,
+      "br": "Texto livre",
+      "en": "Free Text",
+      "es": "Texto libre"
+    },
+    {
+      "id": 42,
+      "br": "Comentários do aprovador",
+      "en": "Approver comments",
+      "es": "Comentarios del aprobador"
+    },
+    {
+      "id": 43,
+      "br": "Auditoria",
+      "en": "Audit",
+      "es": "Auditoria"
+    },
+    {
+      "id": 44,
+      "br": "Data/hora da ação de aprovação",
+      "en": "Approval action date/time",
+      "es": "Fecha/hora de la acción de aprobación"
+    },
+    {
+      "id": 45,
+      "br": "Usuário do sistema que criou o registro",
+      "en": "System user who created the record",
+      "es": "Usuario del sistema que creó el registro"
+    },
+    {
+      "id": 46,
+      "br": "Último usuário que alterou",
+      "en": "Last user who modified",
+      "es": "Último usuario que modificó"
+    },
+    {
+      "id": 47,
+      "br": "Data/hora da última alteração",
+      "en": "Last modification date/time",
+      "es": "Fecha/hora de la última modificación"
+    },
+    {
+      "id": 48,
+      "br": "Login da última sessão",
+      "en": "Last session login",
+      "es": "Login de la última sesión"
+    },
+    {
+      "id": 49,
+      "br": "Business unit (multi-org)",
+      "en": "Business unit (multi-org)",
+      "es": "Business unit (multi-org)"
+    },
+    {
+      "id": 50,
+      "br": "Relacionamentos",
+      "en": "Relationships",
+      "es": "Relaciones"
+    },
+    {
+      "id": 51,
+      "br": "Tabelas-pai (FK de entrada)",
+      "en": "Parent Tables (inbound FK)",
+      "es": "Tablas padre (FK de entrada)"
+    },
+    {
+      "id": 52,
+      "br": "fatura",
+      "en": "invoice",
+      "es": "factura"
+    },
+    {
+      "id": 53,
+      "br": "ap_invoice_lines_all — via INVOICE_ID + LINE_NUMBER (linha da fatura, quando aplicável)",
+      "en": "ap_invoice_lines_all — via INVOICE_ID + LINE_NUMBER (invoice line, when applicable)",
+      "es": "ap_invoice_lines_all — via INVOICE_ID + LINE_NUMBER (línea de la factura, cuando aplicable)"
+    },
+    {
+      "id": 54,
+      "br": "aprovador",
+      "en": "approver",
+      "es": "aprobador"
+    },
+    {
+      "id": 55,
+      "br": "business unit",
+      "en": "business unit",
+      "es": "business unit"
+    },
+    {
+      "id": 56,
+      "br": "Tabelas-filha (FK de saída)",
+      "en": "Child Tables (outbound FK)",
+      "es": "Tablas hija (FK de salida)"
+    },
+    {
+      "id": 57,
+      "br": "Nenhuma tabela-filha direta conhecida.",
+      "en": "No known direct child tables.",
+      "es": "Ninguna tabla hija directa conocida."
+    },
+    {
+      "id": 58,
+      "br": "Uso Típico",
+      "en": "Typical Usage",
+      "es": "Uso Tipico"
+    },
+    {
+      "id": 59,
+      "br": "Histórico de aprovação de uma fatura",
+      "en": "Approval history of an invoice",
+      "es": "Historial de aprobación de una factura"
+    },
+    {
+      "id": 60,
+      "br": "Faturas rejeitadas no período",
+      "en": "Rejected invoices in the period",
+      "es": "Facturas rechazadas en el período"
+    },
+    {
+      "id": 61,
+      "br": "Filtros comuns",
+      "en": "Common Filters",
+      "es": "Filtros comunes"
+    },
+    {
+      "id": 62,
+      "br": "Ações de aprovação",
+      "en": "Approval actions",
+      "es": "Acciones de aprobación"
+    },
+    {
+      "id": 63,
+      "br": "Ações de rejeição",
+      "en": "Rejection actions",
+      "es": "Acciones de rechazo"
+    },
+    {
+      "id": 64,
+      "br": "Ações do workflow de aprovação",
+      "en": "Approval workflow actions",
+      "es": "Acciones del workflow de aprobación"
+    },
+    {
+      "id": 65,
+      "br": "Última iteração de aprovação",
+      "en": "Last approval iteration",
+      "es": "Última iteración de aprobación"
+    },
+    {
+      "id": 66,
+      "br": "Observações",
+      "en": "Notes",
+      "es": "Observaciones"
+    },
+    {
+      "id": 67,
+      "br": "O campo ITERATION incrementa a cada vez que a fatura é resubmetida ao workflow, permitindo identificar quantas rodadas de aprovação foram necessárias.",
+      "en": "The ITERATION field increments each time the invoice is resubmitted to the workflow, allowing identification of how many approval rounds were needed.",
+      "es": "El campo ITERATION se incrementa cada vez que la factura es reenviada al workflow, permitiendo identificar cuántas rondas de aprobación fueron necesarias."
+    },
+    {
+      "id": 68,
+      "br": "O campo RESPONSE contém a ação tomada: APPROVE (aprovar), REJECT (rejeitar), ESCALATE (escalar), REQUEST_INFO (solicitar informação).",
+      "en": "The RESPONSE field contains the action taken: APPROVE, REJECT, ESCALATE, REQUEST_INFO.",
+      "es": "El campo RESPONSE contiene la acción tomada: APPROVE (aprobar), REJECT (rechazar), ESCALATE (escalar), REQUEST_INFO (solicitar información)."
+    },
+    {
+      "id": 69,
+      "br": "O campo HIST_TYPE diferencia tipos de ações: APRVLACTION (ação no workflow), LINESAPRVL (aprovação por linha), HOLDRELEASE (liberação de hold).",
+      "en": "The HIST_TYPE field differentiates action types: APRVLACTION (workflow action), LINESAPRVL (line-level approval), HOLDRELEASE (hold release).",
+      "es": "El campo HIST_TYPE diferencia tipos de acciones: APRVLACTION (acción en el workflow), LINESAPRVL (aprobación por línea), HOLDRELEASE (liberación de hold)."
+    },
+    {
+      "id": 70,
+      "br": "A coluna LINE_NUMBER é preenchida quando a aprovação é feita por linha individual da fatura (line-level approval).",
+      "en": "The LINE_NUMBER column is populated when approval is done per individual invoice line (line-level approval).",
+      "es": "La columna LINE_NUMBER se completa cuando la aprobación se realiza por línea individual de la factura (line-level approval)."
+    },
+    {
+      "id": 71,
+      "br": "Esta tabela é apenas de inserção (append-only) — registros não são alterados após criação.",
+      "en": "This table is append-only — records are not modified after creation.",
+      "es": "Esta tabla es solo de inserción (append-only) — los registros no se modifican después de la creación."
+    },
+    {
+      "id": 72,
+      "br": "Referências",
+      "en": "References",
+      "es": "Referencias"
+    },
+    {
+      "id": 73,
+      "br": "[Oracle Docs — AP_INV_APRVL_HIST_ALL](https://docs.oracle.com/en/cloud/saas/financials/25a/oedmf/apinvaprvlhistall-25758.html)",
+      "en": "[Oracle Docs — AP_INV_APRVL_HIST_ALL](https://docs.oracle.com/en/cloud/saas/financials/25a/oedmf/apinvaprvlhistall-25758.html)",
+      "es": "[Oracle Docs — AP_INV_APRVL_HIST_ALL](https://docs.oracle.com/en/cloud/saas/financials/25a/oedmf/apinvaprvlhistall-25758.html)"
+    },
+    {
+      "id": 74,
+      "br": "ap-module-data-dictionary — Dossiê do módulo AP",
+      "en": "ap-module-data-dictionary — AP module dossier",
+      "es": "ap-module-data-dictionary — Dossier del módulo AP"
+    }
+  ]
+}

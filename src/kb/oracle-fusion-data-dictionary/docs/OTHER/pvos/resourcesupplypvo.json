@@ -1,0 +1,130 @@
+{
+  "meta": {
+    "pvo_name": "ResourceSupplyPVO",
+    "full_path": "FscmTopModelAM.PjrResourceAM.ResourceSupplyPVO",
+    "module_path": "FscmTopModelAM.PjrResourceAM",
+    "module_code": "OTHER",
+    "type": "pvo",
+    "description": "View Object para extração BICC de dados de Resource Supply. Acessa as tabelas: PJT_PRJ_ENTERPRISE_RESOURCE_VL, ZMM_SR_SCHEDULE_DTLS, ZMM_SR_SHIFTS_VL."
+  },
+  "stats": {
+    "total_attributes": 7,
+    "tables_count": 3,
+    "bicc_enabled": 2,
+    "bicc_pct": 29,
+    "pk_count": 1
+  },
+  "tables": [
+    "PJT_PRJ_ENTERPRISE_RESOURCE_VL",
+    "ZMM_SR_SCHEDULE_DTLS",
+    "ZMM_SR_SHIFTS_VL"
+  ],
+  "attributes": [
+    {
+      "name": "ResourceId",
+      "table": "PJT_PRJ_ENTERPRISE_RESOURCE_VL",
+      "column": "RESOURCE_ID",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    },
+    {
+      "name": "ScheduleDetailEOShiftId",
+      "table": "ZMM_SR_SCHEDULE_DTLS",
+      "column": "SHIFT_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ScheduleDetailEOStartDateTime",
+      "table": "ZMM_SR_SCHEDULE_DTLS",
+      "column": "START_DATE_TIME",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ScheduleDetailId",
+      "table": "ZMM_SR_SCHEDULE_DTLS",
+      "column": "SCHEDULE_DETAIL_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ShiftEODurationMsNum",
+      "table": "ZMM_SR_SHIFTS_VL",
+      "column": "DURATION_MS_NUM",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ShiftEOShiftName",
+      "table": "ZMM_SR_SHIFTS_VL",
+      "column": "SHIFT_NAME",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ShiftId",
+      "table": "ZMM_SR_SHIFTS_VL",
+      "column": "SHIFT_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    }
+  ],
+  "by_table": {
+    "PJT_PRJ_ENTERPRISE_RESOURCE_VL": [
+      {
+        "attribute": "ResourceId",
+        "column": "RESOURCE_ID",
+        "bicc": true,
+        "pk": true
+      }
+    ],
+    "ZMM_SR_SCHEDULE_DTLS": [
+      {
+        "attribute": "ScheduleDetailEOShiftId",
+        "column": "SHIFT_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ScheduleDetailEOStartDateTime",
+        "column": "START_DATE_TIME",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ScheduleDetailId",
+        "column": "SCHEDULE_DETAIL_ID",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "ZMM_SR_SHIFTS_VL": [
+      {
+        "attribute": "ShiftEODurationMsNum",
+        "column": "DURATION_MS_NUM",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ShiftEOShiftName",
+        "column": "SHIFT_NAME",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ShiftId",
+        "column": "SHIFT_ID",
+        "bicc": false,
+        "pk": false
+      }
+    ]
+  }
+}

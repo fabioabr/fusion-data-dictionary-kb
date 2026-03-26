@@ -1,0 +1,169 @@
+{
+  "meta": {
+    "pvo_name": "SettingItemReasonGroupPVO",
+    "full_path": "HcmTopModelAnalyticsGlobalAM.HcmRecProcessLifecycleAM.SettingItemReasonGroupPVO",
+    "module_path": "HcmTopModelAnalyticsGlobalAM.HcmRecProcessLifecycleAM",
+    "module_code": "HCM",
+    "type": "pvo",
+    "description": "Extrai grupos de motivo vinculados a itens de configuração de recrutamento. Define conjuntos de razões disponíveis para ações em processos seletivos."
+  },
+  "stats": {
+    "total_attributes": 10,
+    "tables_count": 2,
+    "bicc_enabled": 3,
+    "bicc_pct": 30,
+    "pk_count": 1
+  },
+  "tables": [
+    "IRC_LC_REASON_GROUPS_TL",
+    "IRC_LC_SETTING_ITEMS"
+  ],
+  "attributes": [
+    {
+      "name": "ItemKeyName",
+      "table": "IRC_LC_SETTING_ITEMS",
+      "column": "ITEM_KEY_NAME",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ObjectId",
+      "table": "IRC_LC_SETTING_ITEMS",
+      "column": "OBJECT_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ObjectType",
+      "table": "IRC_LC_SETTING_ITEMS",
+      "column": "OBJECT_TYPE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReasonGroupTranslationPEOLanguage",
+      "table": "IRC_LC_REASON_GROUPS_TL",
+      "column": "LANGUAGE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReasonGroupTranslationPEOReasonGroupId",
+      "table": "IRC_LC_REASON_GROUPS_TL",
+      "column": "REASON_GROUP_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReasonGroupTranslationPEOReasonGroupName",
+      "table": "IRC_LC_REASON_GROUPS_TL",
+      "column": "REASON_GROUP_NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SettingId",
+      "table": "IRC_LC_SETTING_ITEMS",
+      "column": "SETTING_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SettingItemCode",
+      "table": "IRC_LC_SETTING_ITEMS",
+      "column": "SETTING_ITEM_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SettingItemId",
+      "table": "IRC_LC_SETTING_ITEMS",
+      "column": "SETTING_ITEM_ID",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    },
+    {
+      "name": "StringValue",
+      "table": "IRC_LC_SETTING_ITEMS",
+      "column": "STRING_VALUE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    }
+  ],
+  "by_table": {
+    "IRC_LC_SETTING_ITEMS": [
+      {
+        "attribute": "ItemKeyName",
+        "column": "ITEM_KEY_NAME",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ObjectId",
+        "column": "OBJECT_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ObjectType",
+        "column": "OBJECT_TYPE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "SettingId",
+        "column": "SETTING_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "SettingItemCode",
+        "column": "SETTING_ITEM_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "SettingItemId",
+        "column": "SETTING_ITEM_ID",
+        "bicc": true,
+        "pk": true
+      },
+      {
+        "attribute": "StringValue",
+        "column": "STRING_VALUE",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "IRC_LC_REASON_GROUPS_TL": [
+      {
+        "attribute": "ReasonGroupTranslationPEOLanguage",
+        "column": "LANGUAGE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReasonGroupTranslationPEOReasonGroupId",
+        "column": "REASON_GROUP_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ReasonGroupTranslationPEOReasonGroupName",
+        "column": "REASON_GROUP_NAME",
+        "bicc": true,
+        "pk": false
+      }
+    ]
+  }
+}

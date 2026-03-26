@@ -1,0 +1,405 @@
+{
+  "meta": {
+    "pvo_name": "ScreeningPackagePVO",
+    "full_path": "HcmTopModelAnalyticsGlobalAM.HcmRecBackgroundCheckAM.ScreeningPackagePVO",
+    "module_path": "HcmTopModelAnalyticsGlobalAM.HcmRecBackgroundCheckAM",
+    "module_code": "AP",
+    "type": "pvo",
+    "description": "Extrai os pacotes de screening (verificação de antecedentes) configurados para requisições de recrutamento, incluindo parceiros terceirizados e contas. Permite gerenciar a integração com fornecedores de background check no processo seletivo."
+  },
+  "stats": {
+    "total_attributes": 26,
+    "tables_count": 6,
+    "bicc_enabled": 19,
+    "bicc_pct": 73,
+    "pk_count": 1
+  },
+  "tables": [
+    "IRC_BC_REQ_SP_ASSGMNTS",
+    "IRC_REQUISITIONS_B",
+    "IRC_TP_PARTNERS",
+    "IRC_TP_PARTNER_ACCOUNTS",
+    "IRC_TP_PARTNER_PROVISNGS",
+    "PER_USERS"
+  ],
+  "attributes": [
+    {
+      "name": "PartnerAccountPEOAccountId",
+      "table": "IRC_TP_PARTNER_ACCOUNTS",
+      "column": "ACCOUNT_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartnerAccountPEOUsername",
+      "table": "IRC_TP_PARTNER_ACCOUNTS",
+      "column": "USERNAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartnerPEOName",
+      "table": "IRC_TP_PARTNERS",
+      "column": "NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartnerPEOPartnerId",
+      "table": "IRC_TP_PARTNERS",
+      "column": "PARTNER_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartnerProvisionPEOProvisioningId",
+      "table": "IRC_TP_PARTNER_PROVISNGS",
+      "column": "PROVISIONING_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReqSpAssgmntId",
+      "table": "IRC_BC_REQ_SP_ASSGMNTS",
+      "column": "REQ_SP_ASSGMNT_ID",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    },
+    {
+      "name": "RequisitionBPEORequisitionId",
+      "table": "IRC_REQUISITIONS_B",
+      "column": "REQUISITION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RequisitionBPEORequisitionNumber",
+      "table": "IRC_REQUISITIONS_B",
+      "column": "REQUISITION_NUMBER",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ScreeningPackagePEOAccountId",
+      "table": "IRC_BC_REQ_SP_ASSGMNTS",
+      "column": "ACCOUNT_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ScreeningPackagePEOAddedBy",
+      "table": "IRC_BC_REQ_SP_ASSGMNTS",
+      "column": "ADDED_BY",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ScreeningPackagePEOAddedDate",
+      "table": "IRC_BC_REQ_SP_ASSGMNTS",
+      "column": "ADDED_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ScreeningPackagePEOCreatedBy",
+      "table": "IRC_BC_REQ_SP_ASSGMNTS",
+      "column": "CREATED_BY",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ScreeningPackagePEOCreationDate",
+      "table": "IRC_BC_REQ_SP_ASSGMNTS",
+      "column": "CREATION_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ScreeningPackagePEOLastUpdateDate",
+      "table": "IRC_BC_REQ_SP_ASSGMNTS",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": true
+    },
+    {
+      "name": "ScreeningPackagePEOLastUpdateLogin",
+      "table": "IRC_BC_REQ_SP_ASSGMNTS",
+      "column": "LAST_UPDATE_LOGIN",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ScreeningPackagePEOLastUpdatedBy",
+      "table": "IRC_BC_REQ_SP_ASSGMNTS",
+      "column": "LAST_UPDATED_BY",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ScreeningPackagePEOObjectStatus",
+      "table": "IRC_BC_REQ_SP_ASSGMNTS",
+      "column": "OBJECT_STATUS",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ScreeningPackagePEOObjectVersionNumber",
+      "table": "IRC_BC_REQ_SP_ASSGMNTS",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ScreeningPackagePEOProvisioningId",
+      "table": "IRC_BC_REQ_SP_ASSGMNTS",
+      "column": "PROVISIONING_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ScreeningPackagePEORequisitionId",
+      "table": "IRC_BC_REQ_SP_ASSGMNTS",
+      "column": "REQUISITION_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ScreeningPackagePEOScrPkgCode",
+      "table": "IRC_BC_REQ_SP_ASSGMNTS",
+      "column": "SCR_PKG_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ScreeningPackagePEOScrPkgName",
+      "table": "IRC_BC_REQ_SP_ASSGMNTS",
+      "column": "SCR_PKG_NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ScreeningPackagePEOScrSequence",
+      "table": "IRC_BC_REQ_SP_ASSGMNTS",
+      "column": "SCR_SEQUENCE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "UserPEOObjectVersionNumber",
+      "table": "PER_USERS",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "UserPEOPersonId",
+      "table": "PER_USERS",
+      "column": "PERSON_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "UserPEOUserId",
+      "table": "PER_USERS",
+      "column": "USER_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    }
+  ],
+  "by_table": {
+    "IRC_TP_PARTNER_ACCOUNTS": [
+      {
+        "attribute": "PartnerAccountPEOAccountId",
+        "column": "ACCOUNT_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PartnerAccountPEOUsername",
+        "column": "USERNAME",
+        "bicc": true,
+        "pk": false
+      }
+    ],
+    "IRC_TP_PARTNERS": [
+      {
+        "attribute": "PartnerPEOName",
+        "column": "NAME",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PartnerPEOPartnerId",
+        "column": "PARTNER_ID",
+        "bicc": true,
+        "pk": false
+      }
+    ],
+    "IRC_TP_PARTNER_PROVISNGS": [
+      {
+        "attribute": "PartnerProvisionPEOProvisioningId",
+        "column": "PROVISIONING_ID",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "IRC_BC_REQ_SP_ASSGMNTS": [
+      {
+        "attribute": "ReqSpAssgmntId",
+        "column": "REQ_SP_ASSGMNT_ID",
+        "bicc": true,
+        "pk": true
+      },
+      {
+        "attribute": "ScreeningPackagePEOAccountId",
+        "column": "ACCOUNT_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ScreeningPackagePEOAddedBy",
+        "column": "ADDED_BY",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ScreeningPackagePEOAddedDate",
+        "column": "ADDED_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ScreeningPackagePEOCreatedBy",
+        "column": "CREATED_BY",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ScreeningPackagePEOCreationDate",
+        "column": "CREATION_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ScreeningPackagePEOLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ScreeningPackagePEOLastUpdateLogin",
+        "column": "LAST_UPDATE_LOGIN",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ScreeningPackagePEOLastUpdatedBy",
+        "column": "LAST_UPDATED_BY",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ScreeningPackagePEOObjectStatus",
+        "column": "OBJECT_STATUS",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ScreeningPackagePEOObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ScreeningPackagePEOProvisioningId",
+        "column": "PROVISIONING_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ScreeningPackagePEORequisitionId",
+        "column": "REQUISITION_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ScreeningPackagePEOScrPkgCode",
+        "column": "SCR_PKG_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ScreeningPackagePEOScrPkgName",
+        "column": "SCR_PKG_NAME",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ScreeningPackagePEOScrSequence",
+        "column": "SCR_SEQUENCE",
+        "bicc": true,
+        "pk": false
+      }
+    ],
+    "IRC_REQUISITIONS_B": [
+      {
+        "attribute": "RequisitionBPEORequisitionId",
+        "column": "REQUISITION_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "RequisitionBPEORequisitionNumber",
+        "column": "REQUISITION_NUMBER",
+        "bicc": true,
+        "pk": false
+      }
+    ],
+    "PER_USERS": [
+      {
+        "attribute": "UserPEOObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "UserPEOPersonId",
+        "column": "PERSON_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "UserPEOUserId",
+        "column": "USER_ID",
+        "bicc": false,
+        "pk": false
+      }
+    ]
+  }
+}

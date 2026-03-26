@@ -1,0 +1,637 @@
+{
+  "source": "ap_invoice_distributions_all.md",
+  "source_hash": "c97907603e415e51c168e1713d6f35e0",
+  "translated_at": "2026-03-25",
+  "items": [
+    {
+      "id": 1,
+      "br": "Visão Geral",
+      "en": "Overview",
+      "es": "Vision General"
+    },
+    {
+      "id": 2,
+      "br": "Armazena as distribuições contábeis de cada fatura do módulo Accounts Payable. Cada linha representa uma alocação de valor a uma combinação de contas contábeis (code combination), definindo como o valor da fatura será contabilizado no General Ledger. Uma fatura pode ter múltiplas distribuições, permitindo rateio entre centros de custo, projetos ou contas diferentes.",
+      "en": "Stores the accounting distributions for each invoice in the Accounts Payable module. Each line represents a value allocation to an accounting code combination, defining how the invoice amount will be posted to the General Ledger. An invoice can have multiple distributions, allowing allocation across cost centers, projects, or different accounts.",
+      "es": "Almacena las distribuciones contables de cada factura del módulo Accounts Payable. Cada línea representa una asignación de valor a una combinación de cuentas contables (code combination), definiendo cómo el valor de la factura será contabilizado en el General Ledger. Una factura puede tener múltiples distribuciones, permitiendo prorrateo entre centros de costo, proyectos o cuentas diferentes."
+    },
+    {
+      "id": 3,
+      "br": "Sufixo _ALL",
+      "en": "_ALL Suffix",
+      "es": "Sufijo _ALL"
+    },
+    {
+      "id": 4,
+      "br": "O sufixo _ALL indica que a tabela armazena dados de todas as business units (multi-org). O filtro por ORG_ID é necessário para consultas por organização específica.",
+      "en": "The _ALL suffix indicates that the table stores data from all business units (multi-org). Filtering by ORG_ID is required for queries by specific organization.",
+      "es": "El sufijo _ALL indica que la tabla almacena datos de todas las business units (multi-org). El filtro por ORG_ID es necesario para consultas por organización específica."
+    },
+    {
+      "id": 5,
+      "br": "Propósito de Negócio",
+      "en": "Business Purpose",
+      "es": "Proposito de Negocio"
+    },
+    {
+      "id": 6,
+      "br": "Esta tabela é utilizada nos seguintes processos:",
+      "en": "This table is used in the following processes:",
+      "es": "Esta tabla se utiliza en los siguientes procesos:"
+    },
+    {
+      "id": 7,
+      "br": "Define as contas contábeis de débito para cada parcela da fatura, gerando os lançamentos no GL.",
+      "en": "Defines the debit accounting accounts for each invoice portion, generating GL journal entries.",
+      "es": "Define las cuentas contables de débito para cada parcela de la factura, generando los asientos en el GL."
+    },
+    {
+      "id": 8,
+      "br": "Permite distribuir o valor de uma fatura entre múltiplos centros de custo, projetos ou departamentos.",
+      "en": "Allows distributing an invoice amount across multiple cost centers, projects, or departments.",
+      "es": "Permite distribuir el valor de una factura entre múltiples centros de costo, proyectos o departamentos."
+    },
+    {
+      "id": 9,
+      "br": "Vinculação com PO distributions e recebimentos para validação de matching.",
+      "en": "Linking with PO distributions and receipts for matching validation.",
+      "es": "Vinculación con PO distributions y recibos para validación de matching."
+    },
+    {
+      "id": 10,
+      "br": "Suporte a withholding tax com distribuições específicas de tipo TAX e AWT.",
+      "en": "Support for withholding tax with specific TAX and AWT type distributions.",
+      "es": "Soporte a withholding tax con distribuciones específicas de tipo TAX y AWT."
+    },
+    {
+      "id": 11,
+      "br": "Rastreabilidade da alocação contábil de cada fatura até o nível de code combination.",
+      "en": "Traceability of accounting allocation for each invoice down to code combination level.",
+      "es": "Trazabilidad de la asignación contable de cada factura hasta el nivel de code combination."
+    },
+    {
+      "id": 12,
+      "br": "Distribuições podem ser vinculadas a projetos e tarefas para capitalização ou custeio.",
+      "en": "Distributions can be linked to projects and tasks for capitalization or costing.",
+      "es": "Las distribuciones pueden vincularse a proyectos y tareas para capitalización o costeo."
+    },
+    {
+      "id": 13,
+      "br": "Colunas Principais",
+      "en": "Key Columns",
+      "es": "Columnas Principales"
+    },
+    {
+      "id": 14,
+      "br": "Confiança",
+      "en": "Confidence",
+      "es": "Confianza"
+    },
+    {
+      "id": 15,
+      "br": "Escala de 0% a 100% — grau de certeza da descrição gerada por IA com base na documentação oficial Oracle (OEDMF/BICC Release 13/25A).",
+      "en": "Scale from 0% to 100% — degree of certainty of the AI-generated description based on official Oracle documentation (OEDMF/BICC Release 13/25A).",
+      "es": "Escala de 0% a 100% — grado de certeza de la descripción generada por IA con base en la documentación oficial Oracle (OEDMF/BICC Release 13/25A)."
+    },
+    {
+      "id": 16,
+      "br": "- 🟢 81–100% — Coluna presente na documentação oficial Oracle; nome, tipo e descrição confirmados.",
+      "en": "- 🟢 81–100% — Column present in official Oracle documentation; name, type, and description confirmed.",
+      "es": "- 🟢 81–100% — Columna presente en la documentación oficial Oracle; nombre, tipo y descripción confirmados."
+    },
+    {
+      "id": 17,
+      "br": "- 🟡 51–80% — Coluna inferida por naming convention ou padrão Oracle; tipo exato pode variar.",
+      "en": "- 🟡 51–80% — Column inferred by naming convention or Oracle standard; exact type may vary.",
+      "es": "- 🟡 51–80% — Columna inferida por naming convention o estándar Oracle; el tipo exacto puede variar."
+    },
+    {
+      "id": 18,
+      "br": "- 🔴 0–50% — Existência ou tipo incertos; pode não existir no release atual; validar no ambiente.",
+      "en": "- 🔴 0–50% — Uncertain existence or type; may not exist in current release; validate in environment.",
+      "es": "- 🔴 0–50% — Existencia o tipo inciertos; puede no existir en el release actual; validar en el ambiente."
+    },
+    {
+      "id": 19,
+      "br": "Coluna",
+      "en": "Column",
+      "es": "Columna"
+    },
+    {
+      "id": 20,
+      "br": "Tipo",
+      "en": "Type",
+      "es": "Tipo"
+    },
+    {
+      "id": 21,
+      "br": "Nulo?",
+      "en": "Nullable?",
+      "es": "Nulo?"
+    },
+    {
+      "id": 22,
+      "br": "Categoria",
+      "en": "Category",
+      "es": "Categoria"
+    },
+    {
+      "id": 23,
+      "br": "Descrição",
+      "en": "Description",
+      "es": "Descripcion"
+    },
+    {
+      "id": 24,
+      "br": "Identificador único da distribuição",
+      "en": "Unique distribution identifier",
+      "es": "Identificador único de la distribución"
+    },
+    {
+      "id": 25,
+      "br": "Fatura à qual pertence a distribuição",
+      "en": "Invoice to which the distribution belongs",
+      "es": "Factura a la cual pertenece la distribución"
+    },
+    {
+      "id": 26,
+      "br": "Número da linha da fatura",
+      "en": "Invoice line number",
+      "es": "Número de la línea de la factura"
+    },
+    {
+      "id": 27,
+      "br": "Identificação",
+      "en": "Identification",
+      "es": "Identificacion"
+    },
+    {
+      "id": 28,
+      "br": "Número sequencial da distribuição na linha",
+      "en": "Sequential distribution number within the line",
+      "es": "Número secuencial de la distribución en la línea"
+    },
+    {
+      "id": 29,
+      "br": "Classificação",
+      "en": "Classification",
+      "es": "Clasificacion"
+    },
+    {
+      "id": 30,
+      "br": "Tipo da distribuição (ITEM/TAX/FREIGHT/MISCELLANEOUS/AWT)",
+      "en": "Distribution type (ITEM/TAX/FREIGHT/MISCELLANEOUS/AWT)",
+      "es": "Tipo de la distribución (ITEM/TAX/FREIGHT/MISCELLANEOUS/AWT)"
+    },
+    {
+      "id": 31,
+      "br": "Financeiro",
+      "en": "Financial",
+      "es": "Financiero"
+    },
+    {
+      "id": 32,
+      "br": "Valor da distribuição na moeda da transação",
+      "en": "Distribution amount in transaction currency",
+      "es": "Valor de la distribución en la moneda de la transacción"
+    },
+    {
+      "id": 33,
+      "br": "Valor na moeda funcional (ledger)",
+      "en": "Amount in functional currency (ledger)",
+      "es": "Valor en la moneda funcional (ledger)"
+    },
+    {
+      "id": 34,
+      "br": "Contabilidade",
+      "en": "Accounting",
+      "es": "Contabilidad"
+    },
+    {
+      "id": 35,
+      "br": "Conta contábil de débito (code combination)",
+      "en": "Debit accounting account (code combination)",
+      "es": "Cuenta contable de débito (code combination)"
+    },
+    {
+      "id": 36,
+      "br": "Data contábil da distribuição",
+      "en": "Distribution accounting date",
+      "es": "Fecha contable de la distribución"
+    },
+    {
+      "id": 37,
+      "br": "Nome do período contábil",
+      "en": "Accounting period name",
+      "es": "Nombre del período contable"
+    },
+    {
+      "id": 38,
+      "br": "Indica se accrual foi lançado (Y/N)",
+      "en": "Indicates whether accrual was posted (Y/N)",
+      "es": "Indica si el accrual fue registrado (Y/N)"
+    },
+    {
+      "id": 39,
+      "br": "Indica se cash basis foi lançado (Y/N)",
+      "en": "Indicates whether cash basis was posted (Y/N)",
+      "es": "Indica si cash basis fue registrado (Y/N)"
+    },
+    {
+      "id": 40,
+      "br": "Indica se foi contabilizado no GL (Y/N)",
+      "en": "Indicates whether it was posted to GL (Y/N)",
+      "es": "Indica si fue contabilizado en el GL (Y/N)"
+    },
+    {
+      "id": 41,
+      "br": "Status",
+      "en": "Status",
+      "es": "Estado"
+    },
+    {
+      "id": 42,
+      "br": "Status de matching (A=aprovado/T=testado/N=não testado)",
+      "en": "Matching status (A=approved/T=tested/N=not tested)",
+      "es": "Estado de matching (A=aprobado/T=testeado/N=no testeado)"
+    },
+    {
+      "id": 43,
+      "br": "Quantidade",
+      "en": "Quantity",
+      "es": "Cantidad"
+    },
+    {
+      "id": 44,
+      "br": "Quantidade faturada",
+      "en": "Invoiced quantity",
+      "es": "Cantidad facturada"
+    },
+    {
+      "id": 45,
+      "br": "Preço unitário",
+      "en": "Unit price",
+      "es": "Precio unitario"
+    },
+    {
+      "id": 46,
+      "br": "Referência cruzada",
+      "en": "Cross-reference",
+      "es": "Referencia cruzada"
+    },
+    {
+      "id": 47,
+      "br": "Distribuição do PO vinculada (matching)",
+      "en": "Linked PO distribution (matching)",
+      "es": "Distribución del PO vinculada (matching)"
+    },
+    {
+      "id": 48,
+      "br": "Transação de recebimento vinculada",
+      "en": "Linked receipt transaction",
+      "es": "Transacción de recibo vinculada"
+    },
+    {
+      "id": 49,
+      "br": "Controle",
+      "en": "Control",
+      "es": "Control"
+    },
+    {
+      "id": 50,
+      "br": "Rastreamento de ativo fixo (Y/N)",
+      "en": "Fixed asset tracking (Y/N)",
+      "es": "Rastreo de activo fijo (Y/N)"
+    },
+    {
+      "id": 51,
+      "br": "Ativo fixo",
+      "en": "Fixed Asset",
+      "es": "Activo fijo"
+    },
+    {
+      "id": 52,
+      "br": "Livro de ativos para capitalização",
+      "en": "Asset book for capitalization",
+      "es": "Libro de activos para capitalización"
+    },
+    {
+      "id": 53,
+      "br": "Categoria do ativo",
+      "en": "Asset category",
+      "es": "Categoría del activo"
+    },
+    {
+      "id": 54,
+      "br": "Projetos",
+      "en": "Projects",
+      "es": "Proyectos"
+    },
+    {
+      "id": 55,
+      "br": "Projeto vinculado",
+      "en": "Linked project",
+      "es": "Proyecto vinculado"
+    },
+    {
+      "id": 56,
+      "br": "Tarefa do projeto",
+      "en": "Project task",
+      "es": "Tarea del proyecto"
+    },
+    {
+      "id": 57,
+      "br": "Tipo de despesa do projeto",
+      "en": "Project expenditure type",
+      "es": "Tipo de gasto del proyecto"
+    },
+    {
+      "id": 58,
+      "br": "Organização de despesa",
+      "en": "Expenditure organization",
+      "es": "Organización de gasto"
+    },
+    {
+      "id": 59,
+      "br": "Indica se foi transferido para Projects (Y/N/T/Z)",
+      "en": "Indicates whether it was transferred to Projects (Y/N/T/Z)",
+      "es": "Indica si fue transferido a Projects (Y/N/T/Z)"
+    },
+    {
+      "id": 60,
+      "br": "Fiscal",
+      "en": "Tax",
+      "es": "Fiscal"
+    },
+    {
+      "id": 61,
+      "br": "Grupo de withholding tax",
+      "en": "Withholding tax group",
+      "es": "Grupo de withholding tax"
+    },
+    {
+      "id": 62,
+      "br": "Código de retenção fiscal",
+      "en": "Tax withholding code",
+      "es": "Código de retención fiscal"
+    },
+    {
+      "id": 63,
+      "br": "Indica se é distribuição de reversão (Y/N)",
+      "en": "Indicates whether it is a reversal distribution (Y/N)",
+      "es": "Indica si es distribución de reversión (Y/N)"
+    },
+    {
+      "id": 64,
+      "br": "ID da distribuição original revertida",
+      "en": "ID of the original reversed distribution",
+      "es": "ID de la distribución original revertida"
+    },
+    {
+      "id": 65,
+      "br": "Indica se foi cancelada (Y/N)",
+      "en": "Indicates whether it was cancelled (Y/N)",
+      "es": "Indica si fue cancelada (Y/N)"
+    },
+    {
+      "id": 66,
+      "br": "Business unit (multi-org)",
+      "en": "Business unit (multi-org)",
+      "es": "Business unit (multi-org)"
+    },
+    {
+      "id": 67,
+      "br": "Auditoria",
+      "en": "Audit",
+      "es": "Auditoria"
+    },
+    {
+      "id": 68,
+      "br": "Usuário que criou o registro",
+      "en": "User who created the record",
+      "es": "Usuario que creó el registro"
+    },
+    {
+      "id": 69,
+      "br": "Data/hora de criação",
+      "en": "Creation date/time",
+      "es": "Fecha/hora de creación"
+    },
+    {
+      "id": 70,
+      "br": "Último usuário que alterou",
+      "en": "Last user who modified",
+      "es": "Último usuario que modificó"
+    },
+    {
+      "id": 71,
+      "br": "Data/hora da última alteração",
+      "en": "Last modification date/time",
+      "es": "Fecha/hora de la última modificación"
+    },
+    {
+      "id": 72,
+      "br": "Login da última sessão",
+      "en": "Last session login",
+      "es": "Login de la última sesión"
+    },
+    {
+      "id": 73,
+      "br": "ATTRIBUTE1–15",
+      "en": "ATTRIBUTE1–15",
+      "es": "ATTRIBUTE1–15"
+    },
+    {
+      "id": 74,
+      "br": "Atributos descritivos customizáveis por implementação",
+      "en": "Customizable descriptive attributes per implementation",
+      "es": "Atributos descriptivos personalizables por implementación"
+    },
+    {
+      "id": 75,
+      "br": "Contexto do Descriptive Flexfield",
+      "en": "Descriptive Flexfield context",
+      "es": "Contexto del Descriptive Flexfield"
+    },
+    {
+      "id": 76,
+      "br": "Relacionamentos",
+      "en": "Relationships",
+      "es": "Relaciones"
+    },
+    {
+      "id": 77,
+      "br": "Tabelas-pai (FK de entrada)",
+      "en": "Parent Tables (inbound FK)",
+      "es": "Tablas padre (FK de entrada)"
+    },
+    {
+      "id": 78,
+      "br": "fatura",
+      "en": "invoice",
+      "es": "factura"
+    },
+    {
+      "id": 79,
+      "br": "ap_invoice_lines_all — via INVOICE_ID + INVOICE_LINE_NUMBER (linha da fatura)",
+      "en": "ap_invoice_lines_all — via INVOICE_ID + INVOICE_LINE_NUMBER (invoice line)",
+      "es": "ap_invoice_lines_all — via INVOICE_ID + INVOICE_LINE_NUMBER (línea de la factura)"
+    },
+    {
+      "id": 80,
+      "br": "conta contábil",
+      "en": "accounting account",
+      "es": "cuenta contable"
+    },
+    {
+      "id": 81,
+      "br": "distribuição do PO",
+      "en": "PO distribution",
+      "es": "distribución del PO"
+    },
+    {
+      "id": 82,
+      "br": "recebimento",
+      "en": "receipt",
+      "es": "recibo"
+    },
+    {
+      "id": 83,
+      "br": "projeto",
+      "en": "project",
+      "es": "proyecto"
+    },
+    {
+      "id": 84,
+      "br": "tarefa do projeto",
+      "en": "project task",
+      "es": "tarea del proyecto"
+    },
+    {
+      "id": 85,
+      "br": "business unit",
+      "en": "business unit",
+      "es": "business unit"
+    },
+    {
+      "id": 86,
+      "br": "Tabelas-filha (FK de saída)",
+      "en": "Child Tables (outbound FK)",
+      "es": "Tablas hija (FK de salida)"
+    },
+    {
+      "id": 87,
+      "br": "distribuições de pagamento",
+      "en": "payment distributions",
+      "es": "distribuciones de pago"
+    },
+    {
+      "id": 88,
+      "br": "auto-referência para reversões",
+      "en": "self-reference for reversals",
+      "es": "auto-referencia para reversiones"
+    },
+    {
+      "id": 89,
+      "br": "Uso Típico",
+      "en": "Typical Usage",
+      "es": "Uso Tipico"
+    },
+    {
+      "id": 90,
+      "br": "Distribuições de uma fatura",
+      "en": "Distributions of an invoice",
+      "es": "Distribuciones de una factura"
+    },
+    {
+      "id": 91,
+      "br": "Total distribuído por conta contábil",
+      "en": "Total distributed by accounting account",
+      "es": "Total distribuido por cuenta contable"
+    },
+    {
+      "id": 92,
+      "br": "Filtros comuns",
+      "en": "Common Filters",
+      "es": "Filtros comunes"
+    },
+    {
+      "id": 93,
+      "br": "Apenas distribuições de item",
+      "en": "Item distributions only",
+      "es": "Solo distribuciones de item"
+    },
+    {
+      "id": 94,
+      "br": "Já contabilizadas no GL",
+      "en": "Already posted to GL",
+      "es": "Ya contabilizadas en el GL"
+    },
+    {
+      "id": 95,
+      "br": "Aprovadas pelo matching",
+      "en": "Approved by matching",
+      "es": "Aprobadas por matching"
+    },
+    {
+      "id": 96,
+      "br": "Exclui canceladas",
+      "en": "Excludes cancelled",
+      "es": "Excluye canceladas"
+    },
+    {
+      "id": 97,
+      "br": "Observações",
+      "en": "Notes",
+      "es": "Observaciones"
+    },
+    {
+      "id": 98,
+      "br": "O campo LINE_TYPE_LOOKUP_CODE classifica a distribuição: ITEM (valor do item), TAX (imposto), FREIGHT (frete), MISCELLANEOUS (diversos), AWT (withholding tax automático).",
+      "en": "The LINE_TYPE_LOOKUP_CODE field classifies the distribution: ITEM (item value), TAX (tax), FREIGHT (freight), MISCELLANEOUS (miscellaneous), AWT (automatic withholding tax).",
+      "es": "El campo LINE_TYPE_LOOKUP_CODE clasifica la distribución: ITEM (valor del item), TAX (impuesto), FREIGHT (flete), MISCELLANEOUS (diversos), AWT (withholding tax automático)."
+    },
+    {
+      "id": 99,
+      "br": "Cada distribuição aponta para uma combinação de contas (DIST_CODE_COMBINATION_ID) que define onde o valor será debitado no GL.",
+      "en": "Each distribution points to an account combination (DIST_CODE_COMBINATION_ID) that defines where the amount will be debited in the GL.",
+      "es": "Cada distribución apunta a una combinación de cuentas (DIST_CODE_COMBINATION_ID) que define dónde el valor será debitado en el GL."
+    },
+    {
+      "id": 100,
+      "br": "Distribuições vinculadas a PO (PO_DISTRIBUTION_ID) participam do processo de matching (2-way ou 3-way).",
+      "en": "Distributions linked to PO (PO_DISTRIBUTION_ID) participate in the matching process (2-way or 3-way).",
+      "es": "Distribuciones vinculadas a PO (PO_DISTRIBUTION_ID) participan del proceso de matching (2-way o 3-way)."
+    },
+    {
+      "id": 101,
+      "br": "O campo REVERSAL_FLAG = 'Y' indica uma distribuição de reversão, com PARENT_REVERSAL_ID apontando para a distribuição original.",
+      "en": "The REVERSAL_FLAG = 'Y' field indicates a reversal distribution, with PARENT_REVERSAL_ID pointing to the original distribution.",
+      "es": "El campo REVERSAL_FLAG = 'Y' indica una distribución de reversión, con PARENT_REVERSAL_ID apuntando a la distribución original."
+    },
+    {
+      "id": 102,
+      "br": "A tabela possui Descriptive Flexfields (DFF) via colunas ATTRIBUTE1–15 para customizações por implementação.",
+      "en": "The table has Descriptive Flexfields (DFF) via ATTRIBUTE1–15 columns for customizations per implementation.",
+      "es": "La tabla posee Descriptive Flexfields (DFF) vía columnas ATTRIBUTE1–15 para personalizaciones por implementación."
+    },
+    {
+      "id": 103,
+      "br": "Referências",
+      "en": "References",
+      "es": "Referencias"
+    },
+    {
+      "id": 104,
+      "br": "[Oracle Docs — AP_INVOICE_DISTRIBUTIONS_ALL](https://docs.oracle.com/en/cloud/saas/financials/25a/oedmf/apinvoicedistributionsall-10003.html)",
+      "en": "[Oracle Docs — AP_INVOICE_DISTRIBUTIONS_ALL](https://docs.oracle.com/en/cloud/saas/financials/25a/oedmf/apinvoicedistributionsall-10003.html)",
+      "es": "[Oracle Docs — AP_INVOICE_DISTRIBUTIONS_ALL](https://docs.oracle.com/en/cloud/saas/financials/25a/oedmf/apinvoicedistributionsall-10003.html)"
+    },
+    {
+      "id": 105,
+      "br": "ap-module-data-dictionary — Dossiê do módulo AP",
+      "en": "ap-module-data-dictionary — AP module dossier",
+      "es": "ap-module-data-dictionary — Dossier del módulo AP"
+    }
+  ]
+}

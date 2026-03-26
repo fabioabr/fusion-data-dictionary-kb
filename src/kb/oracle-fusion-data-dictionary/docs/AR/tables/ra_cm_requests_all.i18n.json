@@ -1,0 +1,547 @@
+{
+  "source": "ra_cm_requests_all.md",
+  "source_hash": "55ae33e420bf15ed894bc7d671726637",
+  "translated_at": "2026-03-25",
+  "items": [
+    {
+      "id": 1,
+      "br": "Visão Geral",
+      "en": "Overview",
+      "es": "Visión general"
+    },
+    {
+      "id": 2,
+      "br": "Armazena solicitações de notas de crédito (credit memo requests) geradas a partir de disputas comerciais, processos de aprovação ou ajustes em transações do Accounts Receivable. Cada registro representa uma solicitação pendente ou já processada, com valores solicitados, aprovados e o status do workflow de aprovação.",
+      "en": "Stores credit memo requests generated from commercial disputes, approval processes, or adjustments to Accounts Receivable transactions. Each record represents a pending or processed request, with requested, approved, and approval workflow status values.",
+      "es": "Almacena las solicitudes de nota de crédito (credit memo requests) generadas a partir de disputas comerciales, procesos de aprobación o ajustes en transacciones de Accounts Receivable. Cada registro representa una solicitud pendiente o ya procesada, con los valores solicitados, aprobados y el estado del workflow de aprobación."
+    },
+    {
+      "id": 3,
+      "br": "É a tabela de controle do fluxo de aprovação de créditos — conecta a transação original à nota de crédito resultante, mantendo rastreabilidade completa do processo.",
+      "en": "This is the approval workflow control table — connects the original transaction to the resulting credit memo, maintaining complete traceability of the process.",
+      "es": "Es la tabla de control del flujo de aprobación de créditos — conecta la transacción original con la nota de crédito resultante, manteniendo un seguimiento completo del proceso."
+    },
+    {
+      "id": 4,
+      "br": "Sufixo _ALL",
+      "en": "Suffix _ALL",
+      "es": "Sufijo _ALL"
+    },
+    {
+      "id": 5,
+      "br": "O sufixo _ALL indica que a tabela armazena dados de todas as business units (multi-org). O filtro por ORG_ID é necessário para consultas por organização específica.",
+      "en": "The suffix _ALL indicates that the table stores data for all business units (multi-org). Filtering by ORG_ID is required for queries by specific organization.",
+      "es": "El sufijo _ALL indica que la tabla almacena datos de todas las business units (multi-org). Se requiere el filtro por ORG_ID para consultas por organización específica."
+    },
+    {
+      "id": 6,
+      "br": "Propósito de Negócio",
+      "en": "Business Purpose",
+      "es": "Propósito de negocio"
+    },
+    {
+      "id": 7,
+      "br": "Esta tabela é utilizada nos seguintes processos:",
+      "en": "This table is used in the following processes:",
+      "es": "Esta tabla se utiliza en los siguientes procesos:"
+    },
+    {
+      "id": 8,
+      "br": "Rastreamento de solicitações de credit memo desde a criação até a aprovação/rejeição.",
+      "en": "Tracking credit memo requests from creation to approval/rejection.",
+      "es": "Seguimiento de las solicitudes de nota de crédito desde la creación hasta la aprobación/rechazo."
+    },
+    {
+      "id": 9,
+      "br": "Registro de pedidos de estorno originados de reclamações de clientes.",
+      "en": "Recording of chargeback orders originating from customer complaints.",
+      "es": "Registro de pedidos de estorno originados de reclamaciones de clientes."
+    },
+    {
+      "id": 10,
+      "br": "Comparação entre valor solicitado e valor aprovado para análise de governança.",
+      "en": "Comparison between requested and approved values for governance analysis.",
+      "es": "Comparación entre el valor solicitado y el valor aprobado para el análisis de gobernanza."
+    },
+    {
+      "id": 11,
+      "br": "Após aprovação, alimenta a criação da nota de crédito em [[ra_customer_trx_all]].",
+      "en": "After approval, feeds the creation of the credit memo in [[ra_customer_trx_all]].",
+      "es": "Después de la aprobación, alimenta la creación de la nota de crédito en [[ra_customer_trx_all]]."
+    },
+    {
+      "id": 12,
+      "br": "Trilha completa de quem solicitou, quando e por qual motivo.",
+      "en": "Complete trail of who requested, when, and for what reason.",
+      "es": "Rastro completo de quién solicitó, cuándo y por qué motivo."
+    },
+    {
+      "id": 13,
+      "br": "Análise de volume e valor de créditos concedidos por período, cliente e motivo.",
+      "en": "Analysis of volume and value of credits granted by period, customer, and reason.",
+      "es": "Análisis de volumen y valor de créditos concedidos por período, cliente y motivo."
+    },
+    {
+      "id": 14,
+      "br": "Colunas Principais",
+      "en": "Key Columns",
+      "es": "Columnas principales"
+    },
+    {
+      "id": 15,
+      "br": "Confiança",
+      "en": "Confidence",
+      "es": "Confianza"
+    },
+    {
+      "id": 16,
+      "br": "Escala de 0% a 100% — grau de certeza da descrição gerada por IA com base na documentação oficial Oracle (OEDMF/BICC Release 13/25A).",
+      "en": "Scale from 0% to 100% — degree of certainty of the description generated by AI based on official Oracle documentation (OEDMF/BICC Release 13/25A).",
+      "es": "Escala del 0% al 100% — grado de certeza de la descripción generada por IA, basado en la documentación oficial de Oracle (OEDMF/BICC Release 13/25A)."
+    },
+    {
+      "id": 17,
+      "br": "- 🟢 81–100% — Coluna presente na documentação oficial Oracle; nome, tipo e descrição confirmados.",
+      "en": "- 🟢 81–100% — Column present in official Oracle documentation; name, type, and description confirmed.",
+      "es": "- 🟢 81–100% — Columna presente en la documentación oficial de Oracle; nombre, tipo y descripción confirmados."
+    },
+    {
+      "id": 18,
+      "br": "- 🟡 51–80% — Coluna inferida por naming convention ou padrão Oracle; tipo exato pode variar.",
+      "en": "- 🟡 51–80% — Column inferred by naming convention or Oracle standard; exact type may vary.",
+      "es": "- 🟡 51–80% — Columna inferida por convención de nomenclatura o estándar de Oracle; el tipo exacto puede variar."
+    },
+    {
+      "id": 19,
+      "br": "- 🔴 0–50% — Existência ou tipo incertos; pode não existir no release atual; validar no ambiente.",
+      "en": "- 🔴 0–50% — Existence or type uncertain; may not exist in the current release; validate in the environment.",
+      "es": "- 🔴 0–50% — Existencia o tipo inciertos; puede no existir en la versión actual; validar en el entorno."
+    },
+    {
+      "id": 20,
+      "br": "Coluna",
+      "en": "Column",
+      "es": "Columna"
+    },
+    {
+      "id": 21,
+      "br": "Tipo",
+      "en": "Type",
+      "es": "Tipo"
+    },
+    {
+      "id": 22,
+      "br": "Nulo?",
+      "en": "Null?",
+      "es": "Nulo?"
+    },
+    {
+      "id": 23,
+      "br": "Categoria",
+      "en": "Category",
+      "es": "Categoría"
+    },
+    {
+      "id": 24,
+      "br": "Descrição",
+      "en": "Description",
+      "es": "Descripción"
+    },
+    {
+      "id": 25,
+      "br": "Identificador único da solicitação de credit memo",
+      "en": "Unique identifier for the credit memo request",
+      "es": "Identificador único de la solicitud de nota de crédito"
+    },
+    {
+      "id": 26,
+      "br": "Referência",
+      "en": "Reference",
+      "es": "Referência"
+    },
+    {
+      "id": 27,
+      "br": "Transação original contra a qual o crédito é solicitado",
+      "en": "Original transaction against which the credit is requested",
+      "es": "Transacción original contra la cual se solicita el crédito"
+    },
+    {
+      "id": 28,
+      "br": "Linha específica da transação (se aplicável)",
+      "en": "Specific line of the transaction (if applicable)",
+      "es": "Línea específica de la transacción (si aplica)"
+    },
+    {
+      "id": 29,
+      "br": "Transação de credit memo gerada após aprovação",
+      "en": "Credit memo transaction generated after approval",
+      "es": "Transacción de nota de crédito generada después de la aprobación"
+    },
+    {
+      "id": 30,
+      "br": "Classificação",
+      "en": "Classification",
+      "es": "Clasificación"
+    },
+    {
+      "id": 31,
+      "br": "Código do motivo da solicitação (lookup AR_CREDIT_MEMO_REASON)",
+      "en": "Code of the request reason (lookup AR_CREDIT_MEMO_REASON)",
+      "es": "Código del motivo de la solicitud (lookup AR_CREDIT_MEMO_REASON)"
+    },
+    {
+      "id": 32,
+      "br": "Financeiro",
+      "en": "Finance",
+      "es": "Financiero"
+    },
+    {
+      "id": 33,
+      "br": "Valor total solicitado para crédito",
+      "en": "Total amount requested for credit",
+      "es": "Valor total solicitado para el crédito"
+    },
+    {
+      "id": 34,
+      "br": "Valor efetivamente aprovado",
+      "en": "Amount actually approved",
+      "es": "Valor efectivamente aprobado"
+    },
+    {
+      "id": 35,
+      "br": "Valor referente à linha da transação",
+      "en": "Amount related to the transaction line",
+      "es": "Valor correspondiente a la línea de la transacción"
+    },
+    {
+      "id": 36,
+      "br": "Valor referente a impostos",
+      "en": "Amount related to taxes",
+      "es": "Valor correspondiente a impuestos"
+    },
+    {
+      "id": 37,
+      "br": "Valor referente a frete",
+      "en": "Amount related to freight",
+      "es": "Valor correspondiente a flete"
+    },
+    {
+      "id": 38,
+      "br": "Código da moeda (ISO 4217)",
+      "en": "Currency code (ISO 4217)",
+      "es": "Código de la moneda (ISO 4217)"
+    },
+    {
+      "id": 39,
+      "br": "Status da solicitação (PENDING_APPROVAL, APPROVED, REJECTED, COMPLETE)",
+      "en": "Request status (PENDING_APPROVAL, APPROVED, REJECTED, COMPLETE)",
+      "es": "Estado de la solicitud (PENDING_APPROVAL, APPROVED, REJECTED, COMPLETE)"
+    },
+    {
+      "id": 40,
+      "br": "Workflow",
+      "en": "Workflow",
+      "es": "Workflow"
+    },
+    {
+      "id": 41,
+      "br": "Data da aprovação/rejeição",
+      "en": "Approval/rejection date",
+      "es": "Fecha de aprobación/rechazo"
+    },
+    {
+      "id": 42,
+      "br": "ID do aprovador (FND_USER ou pessoa de RH)",
+      "en": "ID of the approver (FND_USER or HR person)",
+      "es": "ID del aprobador (FND_USER o persona de RR. HH.)"
+    },
+    {
+      "id": 43,
+      "br": "ID do solicitante",
+      "en": "ID of the requester",
+      "es": "ID del solicitante"
+    },
+    {
+      "id": 44,
+      "br": "Data da solicitação",
+      "en": "Request date",
+      "es": "Fecha de la solicitud"
+    },
+    {
+      "id": 45,
+      "br": "Texto livre",
+      "en": "Free text",
+      "es": "Texto libre"
+    },
+    {
+      "id": 46,
+      "br": "Observações/justificativa da solicitação",
+      "en": "Notes/justification for the request",
+      "es": "Observaciones/justificación de la solicitud"
+    },
+    {
+      "id": 47,
+      "br": "Data de abertura da disputa (se originada de disputa)",
+      "en": "Date of dispute opening (if originated from a dispute)",
+      "es": "Fecha de apertura del desacuerdo (si originado en un desacuerdo)"
+    },
+    {
+      "id": 48,
+      "br": "Parcela de pagamento associada",
+      "en": "Associated payment installment",
+      "es": "Parche de pago asociado"
+    },
+    {
+      "id": 49,
+      "br": "Motivo informado pelo cliente",
+      "en": "Reason provided by the customer",
+      "es": "Motivo informado por el cliente"
+    },
+    {
+      "id": 50,
+      "br": "Configuração",
+      "en": "Configuration",
+      "es": "Configuración"
+    },
+    {
+      "id": 51,
+      "br": "Fonte de transação para o credit memo gerado",
+      "en": "Source of transaction for the generated credit memo",
+      "es": "Fuente de transacción para el documento de crédito generado"
+    },
+    {
+      "id": 52,
+      "br": "Tipo de transação do credit memo a ser gerado",
+      "en": "Type of transaction for the credit memo to be generated",
+      "es": "Tipo de transacción del documento de crédito a generar"
+    },
+    {
+      "id": 53,
+      "br": "Business unit (multi-org)",
+      "en": "Business unit (multi-org)",
+      "es": "Unidad de negocio (multi-org)"
+    },
+    {
+      "id": 54,
+      "br": "Auditoria",
+      "en": "Audit",
+      "es": "Auditoría"
+    },
+    {
+      "id": 55,
+      "br": "Usuário que criou o registro",
+      "en": "User who created the record",
+      "es": "Usuario que creó el registro"
+    },
+    {
+      "id": 56,
+      "br": "Data/hora de criação",
+      "en": "Creation date/time",
+      "es": "Fecha/hora de creación"
+    },
+    {
+      "id": 57,
+      "br": "Último usuário que alterou",
+      "en": "Last user who modified",
+      "es": "Último usuario que lo modificó"
+    },
+    {
+      "id": 58,
+      "br": "Data/hora da última alteração",
+      "en": "Last modification date/time",
+      "es": "Fecha/hora de la última modificación"
+    },
+    {
+      "id": 59,
+      "br": "Login da última sessão",
+      "en": "Login of the last session",
+      "es": "Inicio de sesión de la última sesión"
+    },
+    {
+      "id": 60,
+      "br": "Contexto do Descriptive Flexfield",
+      "en": "Context of Descriptive Flexfield",
+      "es": "Contexto del Descriptive Flexfield"
+    },
+    {
+      "id": 61,
+      "br": "ATTRIBUTE1–15",
+      "en": "ATTRIBUTE1–15",
+      "es": "ATTRIBUTE1–15"
+    },
+    {
+      "id": 62,
+      "br": "Atributos descritivos customizáveis por implementação",
+      "en": "Customizable descriptive attributes by implementation",
+      "es": "Atributos descriptivos personalizables por implementación"
+    },
+    {
+      "id": 63,
+      "br": "Relacionamentos",
+      "en": "Relationships",
+      "es": "Relaciones"
+    },
+    {
+      "id": 64,
+      "br": "Tabelas-pai (FK de entrada)",
+      "en": "Parent tables (incoming FK)",
+      "es": "Tablas padre (clave foránea de entrada)"
+    },
+    {
+      "id": 65,
+      "br": "transação original",
+      "en": "original transaction",
+      "es": "transacción original"
+    },
+    {
+      "id": 66,
+      "br": "linha específica",
+      "en": "specific line",
+      "es": "línea específica"
+    },
+    {
+      "id": 67,
+      "br": "parcela associada",
+      "en": "associated amount",
+      "es": "parte asociada"
+    },
+    {
+      "id": 68,
+      "br": "fonte de transação",
+      "en": "source of transaction",
+      "es": "fuente de transacción"
+    },
+    {
+      "id": 69,
+      "br": "tipo de transação",
+      "en": "type of transaction",
+      "es": "tipo de transacción"
+    },
+    {
+      "id": 70,
+      "br": "business unit",
+      "en": "business unit",
+      "es": "unidad de negocio"
+    },
+    {
+      "id": 71,
+      "br": "Tabelas-filha (FK de saída)",
+      "en": "Child tables (outgoing FK)",
+      "es": "Tablas hijas (clave foránea de salida)"
+    },
+    {
+      "id": 72,
+      "br": "credit memo gerado após aprovação",
+      "en": "credit memo generated after approval",
+      "es": "documento de crédito generado después de la aprobación"
+    },
+    {
+      "id": 73,
+      "br": "Uso Típico",
+      "en": "Typical Use",
+      "es": "Uso típico"
+    },
+    {
+      "id": 74,
+      "br": "Listar solicitações de crédito pendentes de aprovação",
+      "en": "List pending credit requests for approval",
+      "es": "Listar solicitudes de crédito pendientes de aprobación"
+    },
+    {
+      "id": 75,
+      "br": "Análise de créditos aprovados vs. solicitados",
+      "en": "Analysis of approved vs. requested credits",
+      "es": "Análisis de créditos aprobados vs. solicitados"
+    },
+    {
+      "id": 76,
+      "br": "Filtros comuns",
+      "en": "Common filters",
+      "es": "Filtros comunes"
+    },
+    {
+      "id": 77,
+      "br": "Aguardando aprovação",
+      "en": "Awaiting approval",
+      "es": "Esperando aprobación"
+    },
+    {
+      "id": 78,
+      "br": "Aprovadas",
+      "en": "Approved",
+      "es": "Aprobadas"
+    },
+    {
+      "id": 79,
+      "br": "Rejeitadas",
+      "en": "Rejected",
+      "es": "Rechazadas"
+    },
+    {
+      "id": 80,
+      "br": "Filtrar por motivo do crédito",
+      "en": "Filter by credit reason",
+      "es": "Filtrar por motivo del crédito"
+    },
+    {
+      "id": 81,
+      "br": "Período de aprovação",
+      "en": "Approval period",
+      "es": "Período de aprobación"
+    },
+    {
+      "id": 82,
+      "br": "Observações",
+      "en": "Notes",
+      "es": "Observaciones"
+    },
+    {
+      "id": 83,
+      "br": "A tabela possui Descriptive Flexfields (DFF) via colunas ATTRIBUTE1–15 para customizações por implementação.",
+      "en": "The table has Descriptive Flexfields (DFF) via columns ATTRIBUTE1–15 for customization by implementation.",
+      "es": "La tabla tiene Descriptive Flexfields (DFF) a través de las columnas ATTRIBUTE1–15 para personalizaciones por implementación."
+    },
+    {
+      "id": 84,
+      "br": "O campo LINKED_CM_CUSTOMER_TRX_ID só é preenchido após a aprovação e geração efetiva do credit memo.",
+      "en": "The LINKED_CM_CUSTOMER_TRX_ID field is only populated after approval and effective generation of the credit memo.",
+      "es": "El campo LINKED_CM_CUSTOMER_TRX_ID solo se completa después de la aprobación y la generación efectiva del crédito."
+    },
+    {
+      "id": 85,
+      "br": "O workflow de aprovação pode ser configurado via Oracle BPM com regras de alçada baseadas em valor e motivo.",
+      "en": "The approval workflow can be configured via Oracle BPM with approval rules based on value and reason.",
+      "es": "El flujo de trabajo de aprobación puede configurarse a través de Oracle BPM con reglas de aprobación basadas en valor y motivo."
+    },
+    {
+      "id": 86,
+      "br": "Solicitações rejeitadas permanecem na tabela com STATUS = 'REJECTED' para fins de auditoria — não são excluídas.",
+      "en": "Rejected requests remain in the table with STATUS = 'REJECTED' for audit purposes — they are not deleted.",
+      "es": "Las solicitudes rechazadas permanecen en la tabla con STATUS = 'REJECTED' con fines de auditoría — no se eliminan."
+    },
+    {
+      "id": 87,
+      "br": "A diferença entre REQUEST_AMOUNT e APPROVED_AMOUNT indica ajustes feitos pelo aprovador (aprovação parcial).",
+      "en": "The difference between REQUEST_AMOUNT and APPROVED_AMOUNT indicates adjustments made by the approver (partial approval).",
+      "es": "La diferencia entre REQUEST_AMOUNT y APPROVED_AMOUNT indica ajustes realizados por el aprobador (aprobación parcial)."
+    },
+    {
+      "id": 88,
+      "br": "Referências",
+      "en": "References",
+      "es": "Referencias"
+    },
+    {
+      "id": 89,
+      "br": "[Oracle Docs — RA_CM_REQUESTS_ALL](https://docs.oracle.com/en/cloud/saas/financials/25a/oedmf/racmrequestsall-25087.html)",
+      "en": "[Oracle Docs — RA_CM_REQUESTS_ALL](https://docs.oracle.com/en/cloud/saas/financials/25a/oedmf/racmrequestsall-25087.html)",
+      "es": "[Oracle Docs — RA_CM_REQUESTS_ALL](https://docs.oracle.com/en/cloud/saas/financials/25a/oedmf/racmrequestsall-25087.html)"
+    },
+    {
+      "id": 90,
+      "br": "ar-module-data-dictionary — Dossiê do módulo AR",
+      "en": "ar-module-data-dictionary — AR module dossier",
+      "es": "ar-module-data-dictionary — Directorio del módulo AR"
+    }
+  ]
+}

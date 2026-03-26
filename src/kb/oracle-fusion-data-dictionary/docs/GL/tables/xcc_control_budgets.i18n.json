@@ -1,0 +1,487 @@
+{
+  "source": "xcc_control_budgets.md",
+  "source_hash": "186a9b93eb9ea6ee6e98c8b7a69a1d03",
+  "translated_at": "2026-03-25",
+  "items": [
+    {
+      "id": 1,
+      "br": "Visão Geral",
+      "en": "Overview",
+      "es": "Descripcion General"
+    },
+    {
+      "id": 2,
+      "br": "Armazena a definição dos orçamentos de controle (budgetary control) do Oracle Fusion Cloud. Define os parâmetros de controle orçamentário — quais ledgers, períodos e contas estão sob controle de budget, com que nível de rigor (advisory, absolute, etc.) e quais ações são tomadas quando o orçamento é excedido.",
+      "en": "Stores the definition of control budgets (budgetary control) in Oracle Fusion Cloud. Defines the budgetary control parameters — which ledgers, periods, and accounts are under budget control, with what level of rigor (advisory, absolute, etc.), and what actions are taken when the budget is exceeded.",
+      "es": "Almacena la definicion de los presupuestos de control (budgetary control) de Oracle Fusion Cloud. Define los parametros de control presupuestario — cuales ledgers, periodos y cuentas estan bajo control de budget, con que nivel de rigor (advisory, absolute, etc.) y cuales acciones se toman cuando el presupuesto es excedido."
+    },
+    {
+      "id": 3,
+      "br": "Prefixo XCC",
+      "en": "XCC Prefix",
+      "es": "Prefijo XCC"
+    },
+    {
+      "id": 4,
+      "br": "O prefixo XCC identifica tabelas do módulo Budgetary Control (antigo GL Budget Control no E-Business Suite). No Fusion, o budgetary control é um módulo separado que se integra com GL, AP, PO e Procurement.",
+      "en": "The XCC prefix identifies tables from the Budgetary Control module (formerly GL Budget Control in E-Business Suite). In Fusion, budgetary control is a separate module that integrates with GL, AP, PO, and Procurement.",
+      "es": "El prefijo XCC identifica tablas del modulo Budgetary Control (anteriormente GL Budget Control en E-Business Suite). En Fusion, el budgetary control es un modulo separado que se integra con GL, AP, PO y Procurement."
+    },
+    {
+      "id": 5,
+      "br": "Propósito de Negócio",
+      "en": "Business Purpose",
+      "es": "Proposito de Negocio"
+    },
+    {
+      "id": 6,
+      "br": "Esta tabela é utilizada nos seguintes processos:",
+      "en": "This table is used in the following processes:",
+      "es": "Esta tabla se utiliza en los siguientes procesos:"
+    },
+    {
+      "id": 7,
+      "br": "Definição de regras que validam se há saldo de orçamento disponível antes de aprovar transações (requisições, POs, invoices, journals).",
+      "en": "Definition of rules that validate whether budget balance is available before approving transactions (requisitions, POs, invoices, journals).",
+      "es": "Definicion de reglas que validan si hay saldo de presupuesto disponible antes de aprobar transacciones (requisiciones, POs, invoices, journals)."
+    },
+    {
+      "id": 8,
+      "br": "O processo de validação orçamentária consulta esta tabela para determinar se o controle está ativo e qual o nível de enforcement.",
+      "en": "The budget validation process queries this table to determine whether the control is active and what the enforcement level is.",
+      "es": "El proceso de validacion presupuestaria consulta esta tabla para determinar si el control esta activo y cual es el nivel de enforcement."
+    },
+    {
+      "id": 9,
+      "br": "Configuração de como reservas orçamentárias são criadas e controladas.",
+      "en": "Configuration of how budget reservations are created and controlled.",
+      "es": "Configuracion de como las reservas presupuestarias son creadas y controladas."
+    },
+    {
+      "id": 10,
+      "br": "Definição do período de controle (mensal, trimestral, anual, project-to-date).",
+      "en": "Definition of the control period (monthly, quarterly, annual, project-to-date).",
+      "es": "Definicion del periodo de control (mensual, trimestral, anual, project-to-date)."
+    },
+    {
+      "id": 11,
+      "br": "Implementação de políticas de governança que impedem gastos acima do orçamento aprovado.",
+      "en": "Implementation of governance policies that prevent spending above the approved budget.",
+      "es": "Implementacion de politicas de gobernanza que impiden gastos por encima del presupuesto aprobado."
+    },
+    {
+      "id": 12,
+      "br": "Documentação dos parâmetros de controle orçamentário vigentes.",
+      "en": "Documentation of the current budgetary control parameters.",
+      "es": "Documentacion de los parametros de control presupuestario vigentes."
+    },
+    {
+      "id": 13,
+      "br": "Colunas Principais",
+      "en": "Key Columns",
+      "es": "Columnas Principales"
+    },
+    {
+      "id": 14,
+      "br": "Confiança",
+      "en": "Confidence",
+      "es": "Confianza"
+    },
+    {
+      "id": 15,
+      "br": "Escala de 0% a 100% — grau de certeza da descrição gerada por IA com base na documentação oficial Oracle (OEDMF/BICC Release 13/25A).",
+      "en": "Scale from 0% to 100% — degree of certainty of the AI-generated description based on official Oracle documentation (OEDMF/BICC Release 13/25A).",
+      "es": "Escala de 0% a 100% — grado de certeza de la descripcion generada por IA con base en la documentacion oficial Oracle (OEDMF/BICC Release 13/25A)."
+    },
+    {
+      "id": 16,
+      "br": "- 🟢 81–100% — Coluna presente na documentação oficial Oracle; nome, tipo e descrição confirmados.",
+      "en": "- 🟢 81–100% — Column present in official Oracle documentation; name, type, and description confirmed.",
+      "es": "- 🟢 81–100% — Columna presente en la documentacion oficial Oracle; nombre, tipo y descripcion confirmados."
+    },
+    {
+      "id": 17,
+      "br": "- 🟡 51–80% — Coluna inferida por naming convention ou padrão Oracle; tipo exato pode variar.",
+      "en": "- 🟡 51–80% — Column inferred by naming convention or Oracle standard; exact type may vary.",
+      "es": "- 🟡 51–80% — Columna inferida por naming convention o estandar Oracle; tipo exacto puede variar."
+    },
+    {
+      "id": 18,
+      "br": "- 🔴 0–50% — Existência ou tipo incertos; pode não existir no release atual; validar no ambiente.",
+      "en": "- 🔴 0–50% — Existence or type uncertain; may not exist in the current release; validate in the environment.",
+      "es": "- 🔴 0–50% — Existencia o tipo inciertos; puede no existir en el release actual; validar en el ambiente."
+    },
+    {
+      "id": 19,
+      "br": "Coluna",
+      "en": "Column",
+      "es": "Columna"
+    },
+    {
+      "id": 20,
+      "br": "Tipo",
+      "en": "Type",
+      "es": "Tipo"
+    },
+    {
+      "id": 21,
+      "br": "Nulo?",
+      "en": "Nullable?",
+      "es": "Nulo?"
+    },
+    {
+      "id": 22,
+      "br": "Categoria",
+      "en": "Category",
+      "es": "Categoria"
+    },
+    {
+      "id": 23,
+      "br": "Descrição",
+      "en": "Description",
+      "es": "Descripcion"
+    },
+    {
+      "id": 24,
+      "br": "Identificador único do orçamento de controle",
+      "en": "Unique control budget identifier",
+      "es": "Identificador unico del presupuesto de control"
+    },
+    {
+      "id": 25,
+      "br": "Identificação",
+      "en": "Identification",
+      "es": "Identificacion"
+    },
+    {
+      "id": 26,
+      "br": "Nome do orçamento de controle",
+      "en": "Control budget name",
+      "es": "Nombre del presupuesto de control"
+    },
+    {
+      "id": 27,
+      "br": "Identificador do ledger associado",
+      "en": "Associated ledger identifier",
+      "es": "Identificador del ledger asociado"
+    },
+    {
+      "id": 28,
+      "br": "Identificador da entidade orçamentária",
+      "en": "Budget entity identifier",
+      "es": "Identificador de la entidad presupuestaria"
+    },
+    {
+      "id": 29,
+      "br": "Classificação",
+      "en": "Classification",
+      "es": "Clasificacion"
+    },
+    {
+      "id": 30,
+      "br": "Nível de controle: ABSOLUTE (bloqueia), ADVISORY (alerta), NONE",
+      "en": "Control level: ABSOLUTE (blocks), ADVISORY (alerts), NONE",
+      "es": "Nivel de control: ABSOLUTE (bloquea), ADVISORY (alerta), NONE"
+    },
+    {
+      "id": 31,
+      "br": "Nível de verificação de fundos: MANDATORY, OPTIONAL, NONE",
+      "en": "Funds check level: MANDATORY, OPTIONAL, NONE",
+      "es": "Nivel de verificacion de fondos: MANDATORY, OPTIONAL, NONE"
+    },
+    {
+      "id": 32,
+      "br": "Tipo de orçamento: EXPENSE, REVENUE, ALL",
+      "en": "Budget type: EXPENSE, REVENUE, ALL",
+      "es": "Tipo de presupuesto: EXPENSE, REVENUE, ALL"
+    },
+    {
+      "id": 33,
+      "br": "Tipo de valor controlado: PTD (Period-to-Date), YTD (Year-to-Date), PJTD (Project-to-Date)",
+      "en": "Controlled value type: PTD (Period-to-Date), YTD (Year-to-Date), PJTD (Project-to-Date)",
+      "es": "Tipo de valor controlado: PTD (Period-to-Date), YTD (Year-to-Date), PJTD (Project-to-Date)"
+    },
+    {
+      "id": 34,
+      "br": "Configuração",
+      "en": "Configuration",
+      "es": "Configuracion"
+    },
+    {
+      "id": 35,
+      "br": "Moeda do controle orçamentário",
+      "en": "Budgetary control currency",
+      "es": "Moneda del control presupuestario"
+    },
+    {
+      "id": 36,
+      "br": "Nome do conjunto de períodos (calendário contábil)",
+      "en": "Period set name (accounting calendar)",
+      "es": "Nombre del conjunto de periodos (calendario contable)"
+    },
+    {
+      "id": 37,
+      "br": "Tipo de período do controle",
+      "en": "Control period type",
+      "es": "Tipo de periodo del control"
+    },
+    {
+      "id": 38,
+      "br": "Status",
+      "en": "Status",
+      "es": "Status"
+    },
+    {
+      "id": 39,
+      "br": "Status do orçamento de controle: ACTIVE, INACTIVE, CLOSED",
+      "en": "Control budget status: ACTIVE, INACTIVE, CLOSED",
+      "es": "Status del presupuesto de control: ACTIVE, INACTIVE, CLOSED"
+    },
+    {
+      "id": 40,
+      "br": "Valor de tolerância acima do orçamento (antes de bloquear/alertar)",
+      "en": "Tolerance value above budget (before blocking/alerting)",
+      "es": "Valor de tolerancia por encima del presupuesto (antes de bloquear/alertar)"
+    },
+    {
+      "id": 41,
+      "br": "Percentual de tolerância acima do orçamento",
+      "en": "Tolerance percentage above budget",
+      "es": "Porcentaje de tolerancia por encima del presupuesto"
+    },
+    {
+      "id": 42,
+      "br": "Indica se o controle orçamentário está habilitado (Y/N)",
+      "en": "Indicates whether budgetary control is enabled (Y/N)",
+      "es": "Indica si el control presupuestario esta habilitado (Y/N)"
+    },
+    {
+      "id": 43,
+      "br": "Texto livre",
+      "en": "Free text",
+      "es": "Texto libre"
+    },
+    {
+      "id": 44,
+      "br": "Descrição do orçamento de controle",
+      "en": "Control budget description",
+      "es": "Descripcion del presupuesto de control"
+    },
+    {
+      "id": 45,
+      "br": "Vigência",
+      "en": "Validity",
+      "es": "Vigencia"
+    },
+    {
+      "id": 46,
+      "br": "Data de início da vigência do controle",
+      "en": "Control validity start date",
+      "es": "Fecha de inicio de la vigencia del control"
+    },
+    {
+      "id": 47,
+      "br": "Data de fim da vigência (NULL = sem expiração)",
+      "en": "Validity end date (NULL = no expiration)",
+      "es": "Fecha de fin de la vigencia (NULL = sin expiracion)"
+    },
+    {
+      "id": 48,
+      "br": "Auditoria",
+      "en": "Audit",
+      "es": "Auditoria"
+    },
+    {
+      "id": 49,
+      "br": "Usuário que criou o registro",
+      "en": "User who created the record",
+      "es": "Usuario que creo el registro"
+    },
+    {
+      "id": 50,
+      "br": "Data/hora de criação",
+      "en": "Creation date/time",
+      "es": "Fecha/hora de creacion"
+    },
+    {
+      "id": 51,
+      "br": "Último usuário que alterou",
+      "en": "Last user who modified",
+      "es": "Ultimo usuario que modifico"
+    },
+    {
+      "id": 52,
+      "br": "Data/hora da última alteração",
+      "en": "Last modification date/time",
+      "es": "Fecha/hora de la ultima modificacion"
+    },
+    {
+      "id": 53,
+      "br": "Login da última sessão",
+      "en": "Last session login",
+      "es": "Login de la ultima sesion"
+    },
+    {
+      "id": 54,
+      "br": "Relacionamentos",
+      "en": "Relationships",
+      "es": "Relaciones"
+    },
+    {
+      "id": 55,
+      "br": "Tabelas-pai (FK de entrada)",
+      "en": "Parent tables (inbound FK)",
+      "es": "Tablas padre (FK de entrada)"
+    },
+    {
+      "id": 56,
+      "br": "ledger/livro contábil",
+      "en": "ledger/accounting book",
+      "es": "ledger/libro contable"
+    },
+    {
+      "id": 57,
+      "br": "conjunto de períodos",
+      "en": "period set",
+      "es": "conjunto de periodos"
+    },
+    {
+      "id": 58,
+      "br": "tipo de período",
+      "en": "period type",
+      "es": "tipo de periodo"
+    },
+    {
+      "id": 59,
+      "br": "Tabelas-filha (FK de saída)",
+      "en": "Child tables (outbound FK)",
+      "es": "Tablas hija (FK de salida)"
+    },
+    {
+      "id": 60,
+      "br": "Tabelas de detalhes de budget control (ex: XCC_CONTROL_BUDGET_DETAILS) — contêm os valores orçados por conta/período.",
+      "en": "Budget control detail tables (e.g., XCC_CONTROL_BUDGET_DETAILS) — contain budgeted values per account/period.",
+      "es": "Tablas de detalles de budget control (ej: XCC_CONTROL_BUDGET_DETAILS) — contienen los valores presupuestados por cuenta/periodo."
+    },
+    {
+      "id": 61,
+      "br": "Tabelas de resultados de funds check — armazenam os resultados das validações orçamentárias.",
+      "en": "Funds check result tables — store the results of budget validations.",
+      "es": "Tablas de resultados de funds check — almacenan los resultados de las validaciones presupuestarias."
+    },
+    {
+      "id": 62,
+      "br": "Uso Típico",
+      "en": "Typical Usage",
+      "es": "Uso Tipico"
+    },
+    {
+      "id": 63,
+      "br": "Orçamentos de controle ativos por ledger",
+      "en": "Active control budgets by ledger",
+      "es": "Presupuestos de control activos por ledger"
+    },
+    {
+      "id": 64,
+      "br": "Orçamentos com controle absoluto (bloqueante)",
+      "en": "Budgets with absolute (blocking) control",
+      "es": "Presupuestos con control absoluto (bloqueante)"
+    },
+    {
+      "id": 65,
+      "br": "Filtros comuns",
+      "en": "Common Filters",
+      "es": "Filtros comunes"
+    },
+    {
+      "id": 66,
+      "br": "Orçamentos de controle ativos",
+      "en": "Active control budgets",
+      "es": "Presupuestos de control activos"
+    },
+    {
+      "id": 67,
+      "br": "Controle bloqueante (impede transação sem saldo)",
+      "en": "Blocking control (prevents transaction without balance)",
+      "es": "Control bloqueante (impide transaccion sin saldo)"
+    },
+    {
+      "id": 68,
+      "br": "Controle consultivo (alerta mas permite)",
+      "en": "Advisory control (alerts but allows)",
+      "es": "Control consultivo (alerta pero permite)"
+    },
+    {
+      "id": 69,
+      "br": "Controle acumulado no ano",
+      "en": "Year-to-date accumulated control",
+      "es": "Control acumulado en el ano"
+    },
+    {
+      "id": 70,
+      "br": "Controle orçamentário habilitado",
+      "en": "Budgetary control enabled",
+      "es": "Control presupuestario habilitado"
+    },
+    {
+      "id": 71,
+      "br": "Observações",
+      "en": "Notes",
+      "es": "Observaciones"
+    },
+    {
+      "id": 72,
+      "br": "O CONTROL_LEVEL define o comportamento quando o orçamento é excedido: ABSOLUTE bloqueia a transação, ADVISORY emite alerta mas permite, NONE não valida.",
+      "en": "CONTROL_LEVEL defines the behavior when the budget is exceeded: ABSOLUTE blocks the transaction, ADVISORY issues an alert but allows it, NONE does not validate.",
+      "es": "CONTROL_LEVEL define el comportamiento cuando el presupuesto es excedido: ABSOLUTE bloquea la transaccion, ADVISORY emite alerta pero permite, NONE no valida."
+    },
+    {
+      "id": 73,
+      "br": "O AMOUNT_TYPE determina a janela de validação: PTD valida por período, YTD valida acumulado no ano, PJTD valida acumulado no projeto.",
+      "en": "AMOUNT_TYPE determines the validation window: PTD validates per period, YTD validates year-to-date accumulated, PJTD validates project-to-date accumulated.",
+      "es": "AMOUNT_TYPE determina la ventana de validacion: PTD valida por periodo, YTD valida acumulado en el ano, PJTD valida acumulado en el proyecto."
+    },
+    {
+      "id": 74,
+      "br": "Tolerâncias permitem uma margem antes de acionar o controle — útil para evitar bloqueios por centavos de arredondamento.",
+      "en": "Tolerances allow a margin before triggering the control — useful to avoid blocking due to rounding pennies.",
+      "es": "Tolerancias permiten un margen antes de accionar el control — util para evitar bloqueos por centavos de redondeo."
+    },
+    {
+      "id": 75,
+      "br": "O módulo Budgetary Control (XCC) no Oracle Fusion é separado do GL, mas fortemente integrado. Ele intercepta transações de AP (invoices), PO (purchase orders), Procurement (requisições) e GL (journals manuais).",
+      "en": "The Budgetary Control (XCC) module in Oracle Fusion is separate from GL but tightly integrated. It intercepts transactions from AP (invoices), PO (purchase orders), Procurement (requisitions), and GL (manual journals).",
+      "es": "El modulo Budgetary Control (XCC) en Oracle Fusion es separado del GL, pero fuertemente integrado. Intercepta transacciones de AP (invoices), PO (purchase orders), Procurement (requisiciones) y GL (journals manuales)."
+    },
+    {
+      "id": 76,
+      "br": "Em instituições financeiras, o controle orçamentário é tipicamente usado para despesas administrativas (OPEX), não para operações financeiras (trading, tesouraria).",
+      "en": "In financial institutions, budgetary control is typically used for administrative expenses (OPEX), not for financial operations (trading, treasury).",
+      "es": "En instituciones financieras, el control presupuestario se usa tipicamente para gastos administrativos (OPEX), no para operaciones financieras (trading, tesoreria)."
+    },
+    {
+      "id": 77,
+      "br": "Esta tabela tem confiança moderada (75-80%) em várias colunas porque a documentação oficial do Oracle Fusion para o módulo XCC é menos detalhada que para GL/AP/AR core. Validar estrutura no ambiente real.",
+      "en": "This table has moderate confidence (75-80%) in several columns because official Oracle Fusion documentation for the XCC module is less detailed than for GL/AP/AR core. Validate the structure in the actual environment.",
+      "es": "Esta tabla tiene confianza moderada (75-80%) en varias columnas porque la documentacion oficial de Oracle Fusion para el modulo XCC es menos detallada que para GL/AP/AR core. Validar la estructura en el ambiente real."
+    },
+    {
+      "id": 78,
+      "br": "Referências",
+      "en": "References",
+      "es": "Referencias"
+    },
+    {
+      "id": 79,
+      "br": "[Oracle Docs — Budgetary Control](https://docs.oracle.com/en/cloud/saas/financials/25a/oedmf/)",
+      "en": "[Oracle Docs — Budgetary Control](https://docs.oracle.com/en/cloud/saas/financials/25a/oedmf/)",
+      "es": "[Oracle Docs — Budgetary Control](https://docs.oracle.com/en/cloud/saas/financials/25a/oedmf/)"
+    },
+    {
+      "id": 80,
+      "br": "gl-module-data-dictionary — Dossiê do módulo GL",
+      "en": "gl-module-data-dictionary — GL module dossier",
+      "es": "gl-module-data-dictionary — Dossier del modulo GL"
+    }
+  ]
+}

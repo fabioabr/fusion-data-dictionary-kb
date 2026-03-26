@@ -1,0 +1,656 @@
+{
+  "meta": {
+    "pvo_name": "PurchasingDocumentVersionExtractPVO",
+    "full_path": "FscmTopModelAM.PrcExtractAM.PoBiccExtractAM.PurchasingDocumentVersionExtractPVO",
+    "module_path": "FscmTopModelAM.PrcExtractAM.PoBiccExtractAM",
+    "module_code": "PO",
+    "type": "pvo",
+    "description": "Extrai as versões históricas de documentos de compra para carga BICC, registrando alterações de preço, quantidade e condições. Suporta auditoria de mudanças e análise de renegociações."
+  },
+  "stats": {
+    "total_attributes": 45,
+    "tables_count": 1,
+    "bicc_enabled": 45,
+    "bicc_pct": 100,
+    "pk_count": 1
+  },
+  "tables": [
+    "PO_VERSIONS"
+  ],
+  "attributes": [
+    {
+      "name": "AcceptedDate",
+      "table": "PO_VERSIONS",
+      "column": "ACCEPTED_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ApprovedDate",
+      "table": "PO_VERSIONS",
+      "column": "APPROVED_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "B2bMessageId",
+      "table": "PO_VERSIONS",
+      "column": "B2B_MESSAGE_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BaseVersionId",
+      "table": "PO_VERSIONS",
+      "column": "BASE_VERSION_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CancelBackingReqFlag",
+      "table": "PO_VERSIONS",
+      "column": "CANCEL_BACKING_REQ_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CancelDocFlag",
+      "table": "PO_VERSIONS",
+      "column": "CANCEL_DOC_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ChangeOrderDesc",
+      "table": "PO_VERSIONS",
+      "column": "CHANGE_ORDER_DESC",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ChangeOrderStatus",
+      "table": "PO_VERSIONS",
+      "column": "CHANGE_ORDER_STATUS",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ChangeOrderType",
+      "table": "PO_VERSIONS",
+      "column": "CHANGE_ORDER_TYPE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CoCanceledByRole",
+      "table": "PO_VERSIONS",
+      "column": "CO_CANCELED_BY_ROLE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CoCanceledByUserId",
+      "table": "PO_VERSIONS",
+      "column": "CO_CANCELED_BY_USER_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CoCanceledFlag",
+      "table": "PO_VERSIONS",
+      "column": "CO_CANCELED_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CoNum",
+      "table": "PO_VERSIONS",
+      "column": "CO_NUM",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CoSequence",
+      "table": "PO_VERSIONS",
+      "column": "CO_SEQUENCE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CommunicatedDate",
+      "table": "PO_VERSIONS",
+      "column": "COMMUNICATED_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CommunicatedToSupplier",
+      "table": "PO_VERSIONS",
+      "column": "COMMUNICATED_TO_SUPPLIER",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CounterproposalFlag",
+      "table": "PO_VERSIONS",
+      "column": "COUNTERPROPOSAL_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CreatedBy",
+      "table": "PO_VERSIONS",
+      "column": "CREATED_BY",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CreatedByProgramName",
+      "table": "PO_VERSIONS",
+      "column": "CREATED_BY_PROGRAM_NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CreationDate",
+      "table": "PO_VERSIONS",
+      "column": "CREATION_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "DocumentDate",
+      "table": "PO_VERSIONS",
+      "column": "DOCUMENT_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "EsignEnvOwnerEmailId",
+      "table": "PO_VERSIONS",
+      "column": "ESIGN_ENV_OWNER_EMAIL_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "EsignEnvelopeId",
+      "table": "PO_VERSIONS",
+      "column": "ESIGN_ENVELOPE_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "EsignEnvelopeOwner",
+      "table": "PO_VERSIONS",
+      "column": "ESIGN_ENVELOPE_OWNER",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "EsignEnvelopeStatus",
+      "table": "PO_VERSIONS",
+      "column": "ESIGN_ENVELOPE_STATUS",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ExternalSystemFlag",
+      "table": "PO_VERSIONS",
+      "column": "EXTERNAL_SYSTEM_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "FundsStatus",
+      "table": "PO_VERSIONS",
+      "column": "FUNDS_STATUS",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LastUpdateDate",
+      "table": "PO_VERSIONS",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": true
+    },
+    {
+      "name": "LastUpdateLogin",
+      "table": "PO_VERSIONS",
+      "column": "LAST_UPDATE_LOGIN",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LastUpdatedBy",
+      "table": "PO_VERSIONS",
+      "column": "LAST_UPDATED_BY",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ModifiedFlag",
+      "table": "PO_VERSIONS",
+      "column": "MODIFIED_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ObjectVersionNumber",
+      "table": "PO_VERSIONS",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "OnlineReportId",
+      "table": "PO_VERSIONS",
+      "column": "ONLINE_REPORT_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "OriginatorId",
+      "table": "PO_VERSIONS",
+      "column": "ORIGINATOR_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "OriginatorRole",
+      "table": "PO_VERSIONS",
+      "column": "ORIGINATOR_ROLE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PendingResponseRole",
+      "table": "PO_VERSIONS",
+      "column": "PENDING_RESPONSE_ROLE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PoHeaderId",
+      "table": "PO_VERSIONS",
+      "column": "PO_HEADER_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ProcessedDate",
+      "table": "PO_VERSIONS",
+      "column": "PROCESSED_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RejectedFlag",
+      "table": "PO_VERSIONS",
+      "column": "REJECTED_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RequestDate",
+      "table": "PO_VERSIONS",
+      "column": "REQUEST_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RequestId",
+      "table": "PO_VERSIONS",
+      "column": "REQUEST_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RevisionNum",
+      "table": "PO_VERSIONS",
+      "column": "REVISION_NUM",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SubmittedDate",
+      "table": "PO_VERSIONS",
+      "column": "SUBMITTED_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "VersionId",
+      "table": "PO_VERSIONS",
+      "column": "VERSION_ID",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    },
+    {
+      "name": "WithdrawnFlag",
+      "table": "PO_VERSIONS",
+      "column": "WITHDRAWN_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    }
+  ],
+  "by_table": {
+    "PO_VERSIONS": [
+      {
+        "attribute": "AcceptedDate",
+        "column": "ACCEPTED_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ApprovedDate",
+        "column": "APPROVED_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "B2bMessageId",
+        "column": "B2B_MESSAGE_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "BaseVersionId",
+        "column": "BASE_VERSION_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CancelBackingReqFlag",
+        "column": "CANCEL_BACKING_REQ_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CancelDocFlag",
+        "column": "CANCEL_DOC_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ChangeOrderDesc",
+        "column": "CHANGE_ORDER_DESC",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ChangeOrderStatus",
+        "column": "CHANGE_ORDER_STATUS",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ChangeOrderType",
+        "column": "CHANGE_ORDER_TYPE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CoCanceledByRole",
+        "column": "CO_CANCELED_BY_ROLE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CoCanceledByUserId",
+        "column": "CO_CANCELED_BY_USER_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CoCanceledFlag",
+        "column": "CO_CANCELED_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CoNum",
+        "column": "CO_NUM",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CoSequence",
+        "column": "CO_SEQUENCE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CommunicatedDate",
+        "column": "COMMUNICATED_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CommunicatedToSupplier",
+        "column": "COMMUNICATED_TO_SUPPLIER",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CounterproposalFlag",
+        "column": "COUNTERPROPOSAL_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CreatedBy",
+        "column": "CREATED_BY",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CreatedByProgramName",
+        "column": "CREATED_BY_PROGRAM_NAME",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CreationDate",
+        "column": "CREATION_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "DocumentDate",
+        "column": "DOCUMENT_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "EsignEnvOwnerEmailId",
+        "column": "ESIGN_ENV_OWNER_EMAIL_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "EsignEnvelopeId",
+        "column": "ESIGN_ENVELOPE_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "EsignEnvelopeOwner",
+        "column": "ESIGN_ENVELOPE_OWNER",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "EsignEnvelopeStatus",
+        "column": "ESIGN_ENVELOPE_STATUS",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ExternalSystemFlag",
+        "column": "EXTERNAL_SYSTEM_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "FundsStatus",
+        "column": "FUNDS_STATUS",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "LastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "LastUpdateLogin",
+        "column": "LAST_UPDATE_LOGIN",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "LastUpdatedBy",
+        "column": "LAST_UPDATED_BY",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ModifiedFlag",
+        "column": "MODIFIED_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "OnlineReportId",
+        "column": "ONLINE_REPORT_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "OriginatorId",
+        "column": "ORIGINATOR_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "OriginatorRole",
+        "column": "ORIGINATOR_ROLE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PendingResponseRole",
+        "column": "PENDING_RESPONSE_ROLE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PoHeaderId",
+        "column": "PO_HEADER_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ProcessedDate",
+        "column": "PROCESSED_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "RejectedFlag",
+        "column": "REJECTED_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "RequestDate",
+        "column": "REQUEST_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "RequestId",
+        "column": "REQUEST_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "RevisionNum",
+        "column": "REVISION_NUM",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "SubmittedDate",
+        "column": "SUBMITTED_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "VersionId",
+        "column": "VERSION_ID",
+        "bicc": true,
+        "pk": true
+      },
+      {
+        "attribute": "WithdrawnFlag",
+        "column": "WITHDRAWN_FLAG",
+        "bicc": true,
+        "pk": false
+      }
+    ]
+  }
+}

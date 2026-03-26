@@ -1,0 +1,458 @@
+{
+  "meta": {
+    "pvo_name": "WithholdingBucketPVO",
+    "full_path": "FscmTopModelAM.FinApShrdSetupWithTaxesAM.WithholdingBucketPVO",
+    "module_path": "FscmTopModelAM.FinApShrdSetupWithTaxesAM",
+    "module_code": "AP",
+    "type": "pvo",
+    "description": "Extrai os buckets de retenção de impostos na fonte (withholding tax), incluindo regime fiscal, tipo de imposto, perfil tributário e unidade de negócio. Essencial para controle de retenções fiscais obrigatórias sobre pagamentos a fornecedores."
+  },
+  "stats": {
+    "total_attributes": 30,
+    "tables_count": 5,
+    "bicc_enabled": 10,
+    "bicc_pct": 33,
+    "pk_count": 1
+  },
+  "tables": [
+    "FUN_BU_PERF_V",
+    "ZX_BUCKETS_F",
+    "ZX_PARTY_TAX_PROFILE",
+    "ZX_TAXES_B",
+    "ZX_TAXES_TL"
+  ],
+  "attributes": [
+    {
+      "name": "BusinessUnitBusinessUnitId",
+      "table": "FUN_BU_PERF_V",
+      "column": "BU_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartyTaxProfilePartyId",
+      "table": "ZX_PARTY_TAX_PROFILE",
+      "column": "PARTY_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartyTaxProfilePartyTaxProfileId",
+      "table": "ZX_PARTY_TAX_PROFILE",
+      "column": "PARTY_TAX_PROFILE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartyTaxProfilePartyTypeCode",
+      "table": "ZX_PARTY_TAX_PROFILE",
+      "column": "PARTY_TYPE_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TaxesTLLanguage",
+      "table": "ZX_TAXES_TL",
+      "column": "LANGUAGE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TaxesTLTaxId",
+      "table": "ZX_TAXES_TL",
+      "column": "TAX_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TaxesTaxFullName",
+      "table": "ZX_TAXES_TL",
+      "column": "TAX_FULL_NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TaxesTaxId",
+      "table": "ZX_TAXES_B",
+      "column": "TAX_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "WithholdingBucketAccumulatedTaxAmount",
+      "table": "ZX_BUCKETS_F",
+      "column": "ACCUMULATED_TAX_AMOUNT",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "WithholdingBucketAccumulatedTaxableAmount",
+      "table": "ZX_BUCKETS_F",
+      "column": "ACCUMULATED_TAXABLE_AMOUNT",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "WithholdingBucketBucketType",
+      "table": "ZX_BUCKETS_F",
+      "column": "BUCKET_TYPE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "WithholdingBucketCalendarName",
+      "table": "ZX_BUCKETS_F",
+      "column": "CALENDAR_NAME",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "WithholdingBucketCreatedBy",
+      "table": "ZX_BUCKETS_F",
+      "column": "CREATED_BY",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "WithholdingBucketCreationDate",
+      "table": "ZX_BUCKETS_F",
+      "column": "CREATION_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "WithholdingBucketEffectiveEndDate",
+      "table": "ZX_BUCKETS_F",
+      "column": "EFFECTIVE_END_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "WithholdingBucketEffectiveStartDate",
+      "table": "ZX_BUCKETS_F",
+      "column": "EFFECTIVE_START_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "WithholdingBucketFirstPartyTaxProfileId",
+      "table": "ZX_BUCKETS_F",
+      "column": "FIRST_PARTY_TAX_PROFILE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "WithholdingBucketLastUpdateDate",
+      "table": "ZX_BUCKETS_F",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": true
+    },
+    {
+      "name": "WithholdingBucketLastUpdateLogin",
+      "table": "ZX_BUCKETS_F",
+      "column": "LAST_UPDATE_LOGIN",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "WithholdingBucketLastUpdatedBy",
+      "table": "ZX_BUCKETS_F",
+      "column": "LAST_UPDATED_BY",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "WithholdingBucketObjectVersionNumber",
+      "table": "ZX_BUCKETS_F",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "WithholdingBucketPeriodName",
+      "table": "ZX_BUCKETS_F",
+      "column": "PERIOD_NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "WithholdingBucketRecordTypeCode",
+      "table": "ZX_BUCKETS_F",
+      "column": "RECORD_TYPE_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "WithholdingBucketSupplierId",
+      "table": "ZX_BUCKETS_F",
+      "column": "SUPPLIER_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "WithholdingBucketTax",
+      "table": "ZX_BUCKETS_F",
+      "column": "TAX",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "WithholdingBucketTaxBucketId",
+      "table": "ZX_BUCKETS_F",
+      "column": "TAX_BUCKET_ID",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    },
+    {
+      "name": "WithholdingBucketTaxJurisdictionCode",
+      "table": "ZX_BUCKETS_F",
+      "column": "TAX_JURISDICTION_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "WithholdingBucketTaxRegimeCode",
+      "table": "ZX_BUCKETS_F",
+      "column": "TAX_REGIME_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "WithholdingBucketThirdPtySiteTaxProfId",
+      "table": "ZX_BUCKETS_F",
+      "column": "THIRD_PTY_SITE_TAX_PROF_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "WithholdingBucketThirdPtyTaxProfId",
+      "table": "ZX_BUCKETS_F",
+      "column": "THIRD_PTY_TAX_PROF_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    }
+  ],
+  "by_table": {
+    "FUN_BU_PERF_V": [
+      {
+        "attribute": "BusinessUnitBusinessUnitId",
+        "column": "BU_ID",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "ZX_PARTY_TAX_PROFILE": [
+      {
+        "attribute": "PartyTaxProfilePartyId",
+        "column": "PARTY_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PartyTaxProfilePartyTaxProfileId",
+        "column": "PARTY_TAX_PROFILE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PartyTaxProfilePartyTypeCode",
+        "column": "PARTY_TYPE_CODE",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "ZX_TAXES_TL": [
+      {
+        "attribute": "TaxesTLLanguage",
+        "column": "LANGUAGE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TaxesTLTaxId",
+        "column": "TAX_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TaxesTaxFullName",
+        "column": "TAX_FULL_NAME",
+        "bicc": true,
+        "pk": false
+      }
+    ],
+    "ZX_TAXES_B": [
+      {
+        "attribute": "TaxesTaxId",
+        "column": "TAX_ID",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "ZX_BUCKETS_F": [
+      {
+        "attribute": "WithholdingBucketAccumulatedTaxAmount",
+        "column": "ACCUMULATED_TAX_AMOUNT",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "WithholdingBucketAccumulatedTaxableAmount",
+        "column": "ACCUMULATED_TAXABLE_AMOUNT",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "WithholdingBucketBucketType",
+        "column": "BUCKET_TYPE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "WithholdingBucketCalendarName",
+        "column": "CALENDAR_NAME",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "WithholdingBucketCreatedBy",
+        "column": "CREATED_BY",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "WithholdingBucketCreationDate",
+        "column": "CREATION_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "WithholdingBucketEffectiveEndDate",
+        "column": "EFFECTIVE_END_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "WithholdingBucketEffectiveStartDate",
+        "column": "EFFECTIVE_START_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "WithholdingBucketFirstPartyTaxProfileId",
+        "column": "FIRST_PARTY_TAX_PROFILE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "WithholdingBucketLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "WithholdingBucketLastUpdateLogin",
+        "column": "LAST_UPDATE_LOGIN",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "WithholdingBucketLastUpdatedBy",
+        "column": "LAST_UPDATED_BY",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "WithholdingBucketObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "WithholdingBucketPeriodName",
+        "column": "PERIOD_NAME",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "WithholdingBucketRecordTypeCode",
+        "column": "RECORD_TYPE_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "WithholdingBucketSupplierId",
+        "column": "SUPPLIER_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "WithholdingBucketTax",
+        "column": "TAX",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "WithholdingBucketTaxBucketId",
+        "column": "TAX_BUCKET_ID",
+        "bicc": true,
+        "pk": true
+      },
+      {
+        "attribute": "WithholdingBucketTaxJurisdictionCode",
+        "column": "TAX_JURISDICTION_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "WithholdingBucketTaxRegimeCode",
+        "column": "TAX_REGIME_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "WithholdingBucketThirdPtySiteTaxProfId",
+        "column": "THIRD_PTY_SITE_TAX_PROF_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "WithholdingBucketThirdPtyTaxProfId",
+        "column": "THIRD_PTY_TAX_PROF_ID",
+        "bicc": false,
+        "pk": false
+      }
+    ]
+  }
+}

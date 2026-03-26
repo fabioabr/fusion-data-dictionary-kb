@@ -1,0 +1,1564 @@
+{
+  "meta": {
+    "pvo_name": "FundingPositionPVO",
+    "full_path": "HcmTopModelAnalyticsGlobalAM.PositionAM.FundingPositionPVO",
+    "module_path": "HcmTopModelAnalyticsGlobalAM.PositionAM",
+    "module_code": "PO",
+    "type": "pvo",
+    "description": "Extrai posições de funding (dotação orçamentária) vinculadas a cargos, incluindo organização, incumbente e hierarquia. Essencial para controle orçamentário de posições e planejamento de headcount."
+  },
+  "stats": {
+    "total_attributes": 109,
+    "tables_count": 5,
+    "bicc_enabled": 16,
+    "bicc_pct": 15,
+    "pk_count": 3
+  },
+  "tables": [
+    "HR_ALL_ORGANIZATION_UNITS_F",
+    "HR_ALL_POSITIONS_F",
+    "HR_ALL_POSITIONS_F_TL",
+    "HR_ORGANIZATION_UNITS_F_TL",
+    "PER_POS_FUNDING_POSITIONS_F"
+  ],
+  "attributes": [
+    {
+      "name": "ActionOccurrenceId",
+      "table": "PER_POS_FUNDING_POSITIONS_F",
+      "column": "ACTION_OCCURRENCE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BusinessGroupId",
+      "table": "PER_POS_FUNDING_POSITIONS_F",
+      "column": "BUSINESS_GROUP_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BusinessUnitPEOActionOccurrenceId",
+      "table": "HR_ALL_ORGANIZATION_UNITS_F",
+      "column": "ACTION_OCCURRENCE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BusinessUnitPEOBusinessGroupId",
+      "table": "HR_ALL_ORGANIZATION_UNITS_F",
+      "column": "BUSINESS_GROUP_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BusinessUnitPEOCostAllocationKeyflexId",
+      "table": "HR_ALL_ORGANIZATION_UNITS_F",
+      "column": "COST_ALLOCATION_KEYFLEX_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BusinessUnitPEOCreatedBy",
+      "table": "HR_ALL_ORGANIZATION_UNITS_F",
+      "column": "CREATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BusinessUnitPEOCreationDate",
+      "table": "HR_ALL_ORGANIZATION_UNITS_F",
+      "column": "CREATION_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BusinessUnitPEOEffectiveEndDate",
+      "table": "HR_ALL_ORGANIZATION_UNITS_F",
+      "column": "EFFECTIVE_END_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BusinessUnitPEOEffectiveStartDate",
+      "table": "HR_ALL_ORGANIZATION_UNITS_F",
+      "column": "EFFECTIVE_START_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BusinessUnitPEOEstablishmentId",
+      "table": "HR_ALL_ORGANIZATION_UNITS_F",
+      "column": "ESTABLISHMENT_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BusinessUnitPEOInternalAddressLine",
+      "table": "HR_ALL_ORGANIZATION_UNITS_F",
+      "column": "INTERNAL_ADDRESS_LINE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BusinessUnitPEOInternalExternalFlag",
+      "table": "HR_ALL_ORGANIZATION_UNITS_F",
+      "column": "INTERNAL_EXTERNAL_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BusinessUnitPEOLastUpdateDate",
+      "table": "HR_ALL_ORGANIZATION_UNITS_F",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": true
+    },
+    {
+      "name": "BusinessUnitPEOLastUpdateLogin",
+      "table": "HR_ALL_ORGANIZATION_UNITS_F",
+      "column": "LAST_UPDATE_LOGIN",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BusinessUnitPEOLastUpdatedBy",
+      "table": "HR_ALL_ORGANIZATION_UNITS_F",
+      "column": "LAST_UPDATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BusinessUnitPEOLegalEntityId",
+      "table": "HR_ALL_ORGANIZATION_UNITS_F",
+      "column": "LEGAL_ENTITY_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BusinessUnitPEOLocationId",
+      "table": "HR_ALL_ORGANIZATION_UNITS_F",
+      "column": "LOCATION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BusinessUnitPEOObjectVersionNumber",
+      "table": "HR_ALL_ORGANIZATION_UNITS_F",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BusinessUnitPEOOrganizationId",
+      "table": "HR_ALL_ORGANIZATION_UNITS_F",
+      "column": "ORGANIZATION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BusinessUnitPEOType",
+      "table": "HR_ALL_ORGANIZATION_UNITS_F",
+      "column": "TYPE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BusinessUnitTranslationPEOCreatedBy",
+      "table": "HR_ORGANIZATION_UNITS_F_TL",
+      "column": "CREATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BusinessUnitTranslationPEOCreationDate",
+      "table": "HR_ORGANIZATION_UNITS_F_TL",
+      "column": "CREATION_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BusinessUnitTranslationPEOEffectiveEndDate",
+      "table": "HR_ORGANIZATION_UNITS_F_TL",
+      "column": "EFFECTIVE_END_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BusinessUnitTranslationPEOEffectiveStartDate",
+      "table": "HR_ORGANIZATION_UNITS_F_TL",
+      "column": "EFFECTIVE_START_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BusinessUnitTranslationPEOLanguage",
+      "table": "HR_ORGANIZATION_UNITS_F_TL",
+      "column": "LANGUAGE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BusinessUnitTranslationPEOLastUpdateDate",
+      "table": "HR_ORGANIZATION_UNITS_F_TL",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": true
+    },
+    {
+      "name": "BusinessUnitTranslationPEOLastUpdateLogin",
+      "table": "HR_ORGANIZATION_UNITS_F_TL",
+      "column": "LAST_UPDATE_LOGIN",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BusinessUnitTranslationPEOLastUpdatedBy",
+      "table": "HR_ORGANIZATION_UNITS_F_TL",
+      "column": "LAST_UPDATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BusinessUnitTranslationPEOName",
+      "table": "HR_ORGANIZATION_UNITS_F_TL",
+      "column": "NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BusinessUnitTranslationPEOObjectVersionNumber",
+      "table": "HR_ORGANIZATION_UNITS_F_TL",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BusinessUnitTranslationPEOOrganizationId",
+      "table": "HR_ORGANIZATION_UNITS_F_TL",
+      "column": "ORGANIZATION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BusinessUnitTranslationPEOSourceLang",
+      "table": "HR_ORGANIZATION_UNITS_F_TL",
+      "column": "SOURCE_LANG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CreatedBy",
+      "table": "PER_POS_FUNDING_POSITIONS_F",
+      "column": "CREATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CreationDate",
+      "table": "PER_POS_FUNDING_POSITIONS_F",
+      "column": "CREATION_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "EffectiveEndDate",
+      "table": "PER_POS_FUNDING_POSITIONS_F",
+      "column": "EFFECTIVE_END_DATE",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    },
+    {
+      "name": "EffectiveStartDate",
+      "table": "PER_POS_FUNDING_POSITIONS_F",
+      "column": "EFFECTIVE_START_DATE",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    },
+    {
+      "name": "FundingPositionId",
+      "table": "PER_POS_FUNDING_POSITIONS_F",
+      "column": "FUNDING_POSITION_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "FundingRelationshipId",
+      "table": "PER_POS_FUNDING_POSITIONS_F",
+      "column": "FUNDING_RELATIONSHIP_ID",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    },
+    {
+      "name": "LastUpdateDate",
+      "table": "PER_POS_FUNDING_POSITIONS_F",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": true
+    },
+    {
+      "name": "LastUpdateLogin",
+      "table": "PER_POS_FUNDING_POSITIONS_F",
+      "column": "LAST_UPDATE_LOGIN",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LastUpdatedBy",
+      "table": "PER_POS_FUNDING_POSITIONS_F",
+      "column": "LAST_UPDATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ObjectVersionNumber",
+      "table": "PER_POS_FUNDING_POSITIONS_F",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PositionId",
+      "table": "PER_POS_FUNDING_POSITIONS_F",
+      "column": "POSITION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PositionPEOActionOccurrenceId",
+      "table": "HR_ALL_POSITIONS_F",
+      "column": "ACTION_OCCURRENCE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PositionPEOActiveStatus",
+      "table": "HR_ALL_POSITIONS_F",
+      "column": "ACTIVE_STATUS",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PositionPEOAssignmentCategory",
+      "table": "HR_ALL_POSITIONS_F",
+      "column": "ASSIGNMENT_CATEGORY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PositionPEOBargainingUnitCd",
+      "table": "HR_ALL_POSITIONS_F",
+      "column": "BARGAINING_UNIT_CD",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PositionPEOBudgetAmount",
+      "table": "HR_ALL_POSITIONS_F",
+      "column": "BUDGET_AMOUNT",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PositionPEOBudgetAmountCurrency",
+      "table": "HR_ALL_POSITIONS_F",
+      "column": "BUDGET_AMOUNT_CURRENCY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PositionPEOBudgetedPositionFlag",
+      "table": "HR_ALL_POSITIONS_F",
+      "column": "BUDGETED_POSITION_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PositionPEOBusinessGroupId",
+      "table": "HR_ALL_POSITIONS_F",
+      "column": "BUSINESS_GROUP_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PositionPEOBusinessUnitId",
+      "table": "HR_ALL_POSITIONS_F",
+      "column": "BUSINESS_UNIT_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PositionPEOCategoryCode",
+      "table": "HR_ALL_POSITIONS_F",
+      "column": "CATEGORY_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PositionPEOCollectiveAgreementId",
+      "table": "HR_ALL_POSITIONS_F",
+      "column": "COLLECTIVE_AGREEMENT_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PositionPEOCostCenter",
+      "table": "HR_ALL_POSITIONS_F",
+      "column": "COST_CENTER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PositionPEOCreatedBy",
+      "table": "HR_ALL_POSITIONS_F",
+      "column": "CREATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PositionPEOCreationDate",
+      "table": "HR_ALL_POSITIONS_F",
+      "column": "CREATION_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PositionPEODelegatePositionId",
+      "table": "HR_ALL_POSITIONS_F",
+      "column": "DELEGATE_POSITION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PositionPEOEffectiveEndDate",
+      "table": "HR_ALL_POSITIONS_F",
+      "column": "EFFECTIVE_END_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PositionPEOEffectiveStartDate",
+      "table": "HR_ALL_POSITIONS_F",
+      "column": "EFFECTIVE_START_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PositionPEOEntryGradeId",
+      "table": "HR_ALL_POSITIONS_F",
+      "column": "ENTRY_GRADE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PositionPEOEntryStepId",
+      "table": "HR_ALL_POSITIONS_F",
+      "column": "ENTRY_STEP_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PositionPEOFrequency",
+      "table": "HR_ALL_POSITIONS_F",
+      "column": "FREQUENCY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PositionPEOFte",
+      "table": "HR_ALL_POSITIONS_F",
+      "column": "FTE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PositionPEOFullPartTime",
+      "table": "HR_ALL_POSITIONS_F",
+      "column": "FULL_PART_TIME",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PositionPEOFundedByExistingPosition",
+      "table": "HR_ALL_POSITIONS_F",
+      "column": "FUNDED_BY_EXISTING_POSITION",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PositionPEOGradeLadderId",
+      "table": "HR_ALL_POSITIONS_F",
+      "column": "GRADE_LADDER_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PositionPEOHiringStatus",
+      "table": "HR_ALL_POSITIONS_F",
+      "column": "HIRING_STATUS",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PositionPEOJobId",
+      "table": "HR_ALL_POSITIONS_F",
+      "column": "JOB_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PositionPEOLastUpdateDate",
+      "table": "HR_ALL_POSITIONS_F",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": true
+    },
+    {
+      "name": "PositionPEOLastUpdateLogin",
+      "table": "HR_ALL_POSITIONS_F",
+      "column": "LAST_UPDATE_LOGIN",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PositionPEOLastUpdatedBy",
+      "table": "HR_ALL_POSITIONS_F",
+      "column": "LAST_UPDATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PositionPEOLocationId",
+      "table": "HR_ALL_POSITIONS_F",
+      "column": "LOCATION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PositionPEOMaxPersons",
+      "table": "HR_ALL_POSITIONS_F",
+      "column": "MAX_PERSONS",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PositionPEOObjectVersionNumber",
+      "table": "HR_ALL_POSITIONS_F",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PositionPEOOrganizationId",
+      "table": "HR_ALL_POSITIONS_F",
+      "column": "ORGANIZATION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PositionPEOOverlapAllowed",
+      "table": "HR_ALL_POSITIONS_F",
+      "column": "OVERLAP_ALLOWED",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PositionPEOPermanentTemporaryFlag",
+      "table": "HR_ALL_POSITIONS_F",
+      "column": "PERMANENT_TEMPORARY_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PositionPEOPositionCode",
+      "table": "HR_ALL_POSITIONS_F",
+      "column": "POSITION_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PositionPEOPositionId",
+      "table": "HR_ALL_POSITIONS_F",
+      "column": "POSITION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PositionPEOPositionSynchronizationFlag",
+      "table": "HR_ALL_POSITIONS_F",
+      "column": "POSITION_SYNCHRONIZATION_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PositionPEOPositionType",
+      "table": "HR_ALL_POSITIONS_F",
+      "column": "POSITION_TYPE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PositionPEOProbationPeriod",
+      "table": "HR_ALL_POSITIONS_F",
+      "column": "PROBATION_PERIOD",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PositionPEOProbationPeriodUnitCd",
+      "table": "HR_ALL_POSITIONS_F",
+      "column": "PROBATION_PERIOD_UNIT_CD",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PositionPEORequisitionTemplateId",
+      "table": "HR_ALL_POSITIONS_F",
+      "column": "REQUISITION_TEMPLATE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PositionPEOSeasonalEndDate",
+      "table": "HR_ALL_POSITIONS_F",
+      "column": "SEASONAL_END_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PositionPEOSeasonalFlag",
+      "table": "HR_ALL_POSITIONS_F",
+      "column": "SEASONAL_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PositionPEOSeasonalStartDate",
+      "table": "HR_ALL_POSITIONS_F",
+      "column": "SEASONAL_START_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PositionPEOSecurityClearance",
+      "table": "HR_ALL_POSITIONS_F",
+      "column": "SECURITY_CLEARANCE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PositionPEOStandardWorkingFrequency",
+      "table": "HR_ALL_POSITIONS_F",
+      "column": "STANDARD_WORKING_FREQUENCY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PositionPEOStandardWorkingHours",
+      "table": "HR_ALL_POSITIONS_F",
+      "column": "STANDARD_WORKING_HOURS",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PositionPEOSupervisorAssignmentId",
+      "table": "HR_ALL_POSITIONS_F",
+      "column": "SUPERVISOR_ASSIGNMENT_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PositionPEOSupervisorId",
+      "table": "HR_ALL_POSITIONS_F",
+      "column": "SUPERVISOR_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PositionPEOTimeNormalFinish",
+      "table": "HR_ALL_POSITIONS_F",
+      "column": "TIME_NORMAL_FINISH",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PositionPEOTimeNormalStart",
+      "table": "HR_ALL_POSITIONS_F",
+      "column": "TIME_NORMAL_START",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PositionPEOUnionId",
+      "table": "HR_ALL_POSITIONS_F",
+      "column": "UNION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PositionPEOWorkingHours",
+      "table": "HR_ALL_POSITIONS_F",
+      "column": "WORKING_HOURS",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PositionTranslationPEOCreatedBy",
+      "table": "HR_ALL_POSITIONS_F_TL",
+      "column": "CREATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PositionTranslationPEOCreationDate",
+      "table": "HR_ALL_POSITIONS_F_TL",
+      "column": "CREATION_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PositionTranslationPEOEffectiveEndDate",
+      "table": "HR_ALL_POSITIONS_F_TL",
+      "column": "EFFECTIVE_END_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PositionTranslationPEOEffectiveStartDate",
+      "table": "HR_ALL_POSITIONS_F_TL",
+      "column": "EFFECTIVE_START_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PositionTranslationPEOLanguage",
+      "table": "HR_ALL_POSITIONS_F_TL",
+      "column": "LANGUAGE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PositionTranslationPEOLastUpdateDate",
+      "table": "HR_ALL_POSITIONS_F_TL",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": true
+    },
+    {
+      "name": "PositionTranslationPEOLastUpdateLogin",
+      "table": "HR_ALL_POSITIONS_F_TL",
+      "column": "LAST_UPDATE_LOGIN",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PositionTranslationPEOLastUpdatedBy",
+      "table": "HR_ALL_POSITIONS_F_TL",
+      "column": "LAST_UPDATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PositionTranslationPEOName",
+      "table": "HR_ALL_POSITIONS_F_TL",
+      "column": "NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PositionTranslationPEOObjectVersionNumber",
+      "table": "HR_ALL_POSITIONS_F_TL",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PositionTranslationPEOPositionId",
+      "table": "HR_ALL_POSITIONS_F_TL",
+      "column": "POSITION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PositionTranslationPEOSourceLang",
+      "table": "HR_ALL_POSITIONS_F_TL",
+      "column": "SOURCE_LANG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    }
+  ],
+  "by_table": {
+    "PER_POS_FUNDING_POSITIONS_F": [
+      {
+        "attribute": "ActionOccurrenceId",
+        "column": "ACTION_OCCURRENCE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BusinessGroupId",
+        "column": "BUSINESS_GROUP_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CreatedBy",
+        "column": "CREATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CreationDate",
+        "column": "CREATION_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "EffectiveEndDate",
+        "column": "EFFECTIVE_END_DATE",
+        "bicc": true,
+        "pk": true
+      },
+      {
+        "attribute": "EffectiveStartDate",
+        "column": "EFFECTIVE_START_DATE",
+        "bicc": true,
+        "pk": true
+      },
+      {
+        "attribute": "FundingPositionId",
+        "column": "FUNDING_POSITION_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "FundingRelationshipId",
+        "column": "FUNDING_RELATIONSHIP_ID",
+        "bicc": true,
+        "pk": true
+      },
+      {
+        "attribute": "LastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "LastUpdateLogin",
+        "column": "LAST_UPDATE_LOGIN",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "LastUpdatedBy",
+        "column": "LAST_UPDATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PositionId",
+        "column": "POSITION_ID",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "HR_ALL_ORGANIZATION_UNITS_F": [
+      {
+        "attribute": "BusinessUnitPEOActionOccurrenceId",
+        "column": "ACTION_OCCURRENCE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BusinessUnitPEOBusinessGroupId",
+        "column": "BUSINESS_GROUP_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BusinessUnitPEOCostAllocationKeyflexId",
+        "column": "COST_ALLOCATION_KEYFLEX_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BusinessUnitPEOCreatedBy",
+        "column": "CREATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BusinessUnitPEOCreationDate",
+        "column": "CREATION_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BusinessUnitPEOEffectiveEndDate",
+        "column": "EFFECTIVE_END_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BusinessUnitPEOEffectiveStartDate",
+        "column": "EFFECTIVE_START_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "BusinessUnitPEOEstablishmentId",
+        "column": "ESTABLISHMENT_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BusinessUnitPEOInternalAddressLine",
+        "column": "INTERNAL_ADDRESS_LINE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BusinessUnitPEOInternalExternalFlag",
+        "column": "INTERNAL_EXTERNAL_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BusinessUnitPEOLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "BusinessUnitPEOLastUpdateLogin",
+        "column": "LAST_UPDATE_LOGIN",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BusinessUnitPEOLastUpdatedBy",
+        "column": "LAST_UPDATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BusinessUnitPEOLegalEntityId",
+        "column": "LEGAL_ENTITY_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BusinessUnitPEOLocationId",
+        "column": "LOCATION_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BusinessUnitPEOObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BusinessUnitPEOOrganizationId",
+        "column": "ORGANIZATION_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BusinessUnitPEOType",
+        "column": "TYPE",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "HR_ORGANIZATION_UNITS_F_TL": [
+      {
+        "attribute": "BusinessUnitTranslationPEOCreatedBy",
+        "column": "CREATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BusinessUnitTranslationPEOCreationDate",
+        "column": "CREATION_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BusinessUnitTranslationPEOEffectiveEndDate",
+        "column": "EFFECTIVE_END_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BusinessUnitTranslationPEOEffectiveStartDate",
+        "column": "EFFECTIVE_START_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "BusinessUnitTranslationPEOLanguage",
+        "column": "LANGUAGE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BusinessUnitTranslationPEOLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "BusinessUnitTranslationPEOLastUpdateLogin",
+        "column": "LAST_UPDATE_LOGIN",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BusinessUnitTranslationPEOLastUpdatedBy",
+        "column": "LAST_UPDATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BusinessUnitTranslationPEOName",
+        "column": "NAME",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "BusinessUnitTranslationPEOObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BusinessUnitTranslationPEOOrganizationId",
+        "column": "ORGANIZATION_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BusinessUnitTranslationPEOSourceLang",
+        "column": "SOURCE_LANG",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "HR_ALL_POSITIONS_F": [
+      {
+        "attribute": "PositionPEOActionOccurrenceId",
+        "column": "ACTION_OCCURRENCE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PositionPEOActiveStatus",
+        "column": "ACTIVE_STATUS",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PositionPEOAssignmentCategory",
+        "column": "ASSIGNMENT_CATEGORY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PositionPEOBargainingUnitCd",
+        "column": "BARGAINING_UNIT_CD",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PositionPEOBudgetAmount",
+        "column": "BUDGET_AMOUNT",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PositionPEOBudgetAmountCurrency",
+        "column": "BUDGET_AMOUNT_CURRENCY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PositionPEOBudgetedPositionFlag",
+        "column": "BUDGETED_POSITION_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PositionPEOBusinessGroupId",
+        "column": "BUSINESS_GROUP_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PositionPEOBusinessUnitId",
+        "column": "BUSINESS_UNIT_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PositionPEOCategoryCode",
+        "column": "CATEGORY_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PositionPEOCollectiveAgreementId",
+        "column": "COLLECTIVE_AGREEMENT_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PositionPEOCostCenter",
+        "column": "COST_CENTER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PositionPEOCreatedBy",
+        "column": "CREATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PositionPEOCreationDate",
+        "column": "CREATION_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PositionPEODelegatePositionId",
+        "column": "DELEGATE_POSITION_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PositionPEOEffectiveEndDate",
+        "column": "EFFECTIVE_END_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PositionPEOEffectiveStartDate",
+        "column": "EFFECTIVE_START_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PositionPEOEntryGradeId",
+        "column": "ENTRY_GRADE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PositionPEOEntryStepId",
+        "column": "ENTRY_STEP_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PositionPEOFrequency",
+        "column": "FREQUENCY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PositionPEOFte",
+        "column": "FTE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PositionPEOFullPartTime",
+        "column": "FULL_PART_TIME",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PositionPEOFundedByExistingPosition",
+        "column": "FUNDED_BY_EXISTING_POSITION",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PositionPEOGradeLadderId",
+        "column": "GRADE_LADDER_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PositionPEOHiringStatus",
+        "column": "HIRING_STATUS",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PositionPEOJobId",
+        "column": "JOB_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PositionPEOLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PositionPEOLastUpdateLogin",
+        "column": "LAST_UPDATE_LOGIN",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PositionPEOLastUpdatedBy",
+        "column": "LAST_UPDATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PositionPEOLocationId",
+        "column": "LOCATION_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PositionPEOMaxPersons",
+        "column": "MAX_PERSONS",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PositionPEOObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PositionPEOOrganizationId",
+        "column": "ORGANIZATION_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PositionPEOOverlapAllowed",
+        "column": "OVERLAP_ALLOWED",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PositionPEOPermanentTemporaryFlag",
+        "column": "PERMANENT_TEMPORARY_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PositionPEOPositionCode",
+        "column": "POSITION_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PositionPEOPositionId",
+        "column": "POSITION_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PositionPEOPositionSynchronizationFlag",
+        "column": "POSITION_SYNCHRONIZATION_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PositionPEOPositionType",
+        "column": "POSITION_TYPE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PositionPEOProbationPeriod",
+        "column": "PROBATION_PERIOD",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PositionPEOProbationPeriodUnitCd",
+        "column": "PROBATION_PERIOD_UNIT_CD",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PositionPEORequisitionTemplateId",
+        "column": "REQUISITION_TEMPLATE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PositionPEOSeasonalEndDate",
+        "column": "SEASONAL_END_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PositionPEOSeasonalFlag",
+        "column": "SEASONAL_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PositionPEOSeasonalStartDate",
+        "column": "SEASONAL_START_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PositionPEOSecurityClearance",
+        "column": "SECURITY_CLEARANCE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PositionPEOStandardWorkingFrequency",
+        "column": "STANDARD_WORKING_FREQUENCY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PositionPEOStandardWorkingHours",
+        "column": "STANDARD_WORKING_HOURS",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PositionPEOSupervisorAssignmentId",
+        "column": "SUPERVISOR_ASSIGNMENT_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PositionPEOSupervisorId",
+        "column": "SUPERVISOR_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PositionPEOTimeNormalFinish",
+        "column": "TIME_NORMAL_FINISH",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PositionPEOTimeNormalStart",
+        "column": "TIME_NORMAL_START",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PositionPEOUnionId",
+        "column": "UNION_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PositionPEOWorkingHours",
+        "column": "WORKING_HOURS",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "HR_ALL_POSITIONS_F_TL": [
+      {
+        "attribute": "PositionTranslationPEOCreatedBy",
+        "column": "CREATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PositionTranslationPEOCreationDate",
+        "column": "CREATION_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PositionTranslationPEOEffectiveEndDate",
+        "column": "EFFECTIVE_END_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PositionTranslationPEOEffectiveStartDate",
+        "column": "EFFECTIVE_START_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PositionTranslationPEOLanguage",
+        "column": "LANGUAGE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PositionTranslationPEOLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PositionTranslationPEOLastUpdateLogin",
+        "column": "LAST_UPDATE_LOGIN",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PositionTranslationPEOLastUpdatedBy",
+        "column": "LAST_UPDATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PositionTranslationPEOName",
+        "column": "NAME",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PositionTranslationPEOObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PositionTranslationPEOPositionId",
+        "column": "POSITION_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PositionTranslationPEOSourceLang",
+        "column": "SOURCE_LANG",
+        "bicc": false,
+        "pk": false
+      }
+    ]
+  }
+}

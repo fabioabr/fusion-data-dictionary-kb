@@ -1,0 +1,541 @@
+{
+  "source": "pon_bid_headers.md",
+  "source_hash": "5344e49ff6cbe042e2fb62b2778c0805",
+  "translated_at": "2026-03-26",
+  "items": [
+    {
+      "id": 1,
+      "br": "Visão Geral",
+      "en": "Overview",
+      "es": "Vision General"
+    },
+    {
+      "id": 2,
+      "br": "Armazena os cabeçalhos dos lances (bids/quotes) submetidos por fornecedores em negociações de Sourcing. Cada registro representa uma proposta completa de um fornecedor para uma negociação específica, contendo informações como valor total, status de submissão, moeda, termos de pagamento e dados do fornecedor. É a tabela central do lado da resposta do fornecedor no módulo de Sourcing.",
+      "en": "Stores the headers of bids submitted by suppliers in sourcing negotiations. Each record represents a complete proposal from a supplier for a specific negotiation, containing information such as total value, submission status, currency, payment terms, and supplier data. It is the central table on the supplier's response side in the Sourcing module.",
+      "es": "Almacena los encabezados de las ofertas (quotes) presentadas por proveedores en negociaciones de Sourcing. Cada registro representa una propuesta completa de un proveedor para una negociación específica, que contiene información como el valor total, el estado de presentación, la moneda, los términos de pago y los datos del proveedor. Es la tabla central del lado de la respuesta del proveedor en el módulo de Sourcing."
+    },
+    {
+      "id": 3,
+      "br": "Propósito de Negócio",
+      "en": "Business Purpose",
+      "es": "Proposito de Negocio"
+    },
+    {
+      "id": 4,
+      "br": "Esta tabela é utilizada nos seguintes processos:",
+      "en": "This table is used in the following processes:",
+      "es": "Esta tabla se utiliza en los siguientes procesos:"
+    },
+    {
+      "id": 5,
+      "br": "Registro de cada lance submetido por fornecedor em uma negociação.",
+      "en": "Record of each bid submitted by a supplier in a negotiation.",
+      "es": "Registro de cada oferta presentada por un proveedor en una negociación."
+    },
+    {
+      "id": 6,
+      "br": "Base para classificação de fornecedores por preço e critérios ponderados.",
+      "en": "Basis for classifying suppliers by price and weighted criteria.",
+      "es": "Base para la clasificación de proveedores por precio y criterios ponderados."
+    },
+    {
+      "id": 7,
+      "br": "Identificação do lance vencedor e criação de pedido de compra.",
+      "en": "Identification of the winning bid and creation of a purchase order.",
+      "es": "Identificación de la oferta ganadora y creación de la orden de compra."
+    },
+    {
+      "id": 8,
+      "br": "Controle de múltiplas rodadas de negociação (surrogação de lances).",
+      "en": "Control of multiple rounds of negotiation (bid simulation).",
+      "es": "Control de múltiples rondas de negociación (simulación de ofertas)."
+    },
+    {
+      "id": 9,
+      "br": "Rastreabilidade completa de quem participou, quando e com qual valor.",
+      "en": "Complete traceability of who participated, when, and with what value.",
+      "es": "Seguimiento completo de quién participó, cuándo y con qué valor."
+    },
+    {
+      "id": 10,
+      "br": "Cálculo de saving entre preço de referência e lance vencedor.",
+      "en": "Calculation of savings between reference price and winning bid.",
+      "es": "Cálculo de ahorro entre el precio de referencia y la oferta ganadora."
+    },
+    {
+      "id": 11,
+      "br": "Colunas Principais",
+      "en": "Key Columns",
+      "es": "Columnas Principales"
+    },
+    {
+      "id": 12,
+      "br": "Confiança",
+      "en": "Confidence",
+      "es": "Confianza"
+    },
+    {
+      "id": 13,
+      "br": "Escala de 0% a 100% — grau de certeza da descrição gerada por IA com base na documentação oficial Oracle (OEDMF/BICC Release 13/25A).",
+      "en": "Scale from 0% to 100% — degree of certainty of the AI-generated description based on official Oracle documentation (OEDMF/BICC Release 13/25A).",
+      "es": "Escala de 0% a 100% — grado de certeza de la descripcion generada por IA basada en la documentacion oficial de Oracle (OEDMF/BICC Release 13/25A)."
+    },
+    {
+      "id": 14,
+      "br": "- 🟢 81–100% — Coluna presente na documentação oficial Oracle; nome, tipo e descrição confirmados.",
+      "en": "- 🟢 81–100% — Column present in official Oracle documentation; name, type, and description confirmed.",
+      "es": "- 🟢 81–100% — Columna presente en la documentacion oficial de Oracle; nombre, tipo y descripcion confirmados."
+    },
+    {
+      "id": 15,
+      "br": "- 🟡 51–80% — Coluna inferida por naming convention ou padrão Oracle; tipo exato pode variar.",
+      "en": "- 🟡 51–80% — Column inferred by naming convention or Oracle standard; exact type may vary.",
+      "es": "- 🟡 51–80% — Columna inferida por convencion de nombres o estandar Oracle; el tipo exacto puede variar."
+    },
+    {
+      "id": 16,
+      "br": "- 🔴 0–50% — Existência ou tipo incertos; pode não existir no release atual; validar no ambiente.",
+      "en": "- 🔴 0–50% — Uncertain existence or type; may not exist in current release; validate in environment.",
+      "es": "- 🔴 0–50% — Existencia o tipo inciertos; puede no existir en el release actual; validar en el ambiente."
+    },
+    {
+      "id": 17,
+      "br": "Coluna",
+      "en": "Column",
+      "es": "Columna"
+    },
+    {
+      "id": 18,
+      "br": "Tipo",
+      "en": "Type",
+      "es": "Tipo"
+    },
+    {
+      "id": 19,
+      "br": "Nulo?",
+      "en": "Nullable?",
+      "es": "Nulo?"
+    },
+    {
+      "id": 20,
+      "br": "Categoria",
+      "en": "Category",
+      "es": "Categoria"
+    },
+    {
+      "id": 21,
+      "br": "Descrição",
+      "en": "Description",
+      "es": "Descripcion"
+    },
+    {
+      "id": 22,
+      "br": "Identificador único do lance",
+      "en": "Unique bid identifier",
+      "es": "Identificador único de la oferta"
+    },
+    {
+      "id": 23,
+      "br": "ID da negociação à qual o lance responde",
+      "en": "ID of the negotiation to which the bid responds",
+      "es": "ID de la negociación a la que responde la oferta"
+    },
+    {
+      "id": 24,
+      "br": "Classificação",
+      "en": "Classification",
+      "es": "Clasificacion"
+    },
+    {
+      "id": 25,
+      "br": "Status do lance: ACTIVE, DRAFT, DISQUALIFIED, RESUBMISSION, ARCHIVED",
+      "en": "Bid status: ACTIVE, DRAFT, DISQUALIFIED, RESUBMISSION, ARCHIVED",
+      "es": "Estado de la oferta: ACTIVE, DRAFT, DISQUALIFIED, RESUBMISSION, ARCHIVED"
+    },
+    {
+      "id": 26,
+      "br": "Nome descritivo do status",
+      "en": "Descriptive name of the status",
+      "es": "Nombre descriptivo del estado"
+    },
+    {
+      "id": 27,
+      "br": "Identificador do fornecedor",
+      "en": "Supplier identifier",
+      "es": "Identificador del proveedor"
+    },
+    {
+      "id": 28,
+      "br": "Referência",
+      "en": "Reference",
+      "es": "Referencia"
+    },
+    {
+      "id": 29,
+      "br": "Nome do fornecedor (desnormalizado)",
+      "en": "Supplier name (denormalized)",
+      "es": "Nombre del proveedor (desnormalizado)"
+    },
+    {
+      "id": 30,
+      "br": "Site do fornecedor",
+      "en": "Supplier website",
+      "es": "Sitio web del proveedor"
+    },
+    {
+      "id": 31,
+      "br": "Financeiro",
+      "en": "Financial",
+      "es": "Financiero"
+    },
+    {
+      "id": 32,
+      "br": "Valor total do lance na moeda da negociação",
+      "en": "Total value of the bid in the currency of the negotiation",
+      "es": "Valor total de la oferta en la moneda de la negociación"
+    },
+    {
+      "id": 33,
+      "br": "Código da moeda do lance",
+      "en": "Bid currency code",
+      "es": "Código de la moneda de la oferta"
+    },
+    {
+      "id": 34,
+      "br": "Taxa de conversão da moeda do lance para moeda funcional",
+      "en": "Currency conversion rate from the bid currency to the functional currency",
+      "es": "Tasa de conversión de la moneda de la oferta a la moneda funcional"
+    },
+    {
+      "id": 35,
+      "br": "Data",
+      "en": "Date",
+      "es": "Fecha"
+    },
+    {
+      "id": 36,
+      "br": "Data/hora de publicação/submissão do lance",
+      "en": "Date/time of bid publication/submission",
+      "es": "Fecha/hora de publicación/presentación de la oferta"
+    },
+    {
+      "id": 37,
+      "br": "Status de adjudicação: AWARDED, REJECTED, PENDING",
+      "en": "Award status: AWARDED, REJECTED, PENDING",
+      "es": "Estado de adjudicación: AWARDED, REJECTED, PENDING"
+    },
+    {
+      "id": 38,
+      "br": "Data de adjudicação do lance",
+      "en": "Bid award date",
+      "es": "Fecha de adjudicación de la oferta"
+    },
+    {
+      "id": 39,
+      "br": "Lance incluído na shortlist (Y/N)",
+      "en": "Bid included in the shortlist (Y/N)",
+      "es": "Oferta incluida en la lista corta (Sí/No)"
+    },
+    {
+      "id": 40,
+      "br": "Texto livre",
+      "en": "Free Text",
+      "es": "Texto libre"
+    },
+    {
+      "id": 41,
+      "br": "Motivo da desqualificação do lance",
+      "en": "Reason for bid disqualification",
+      "es": "Motivo de la descalificación de la oferta"
+    },
+    {
+      "id": 42,
+      "br": "Lance submetido em nome do fornecedor (Y/N)",
+      "en": "Bid submitted on behalf of the supplier (Y/N)",
+      "es": "Oferta presentada en nombre del proveedor (Sí/No)"
+    },
+    {
+      "id": 43,
+      "br": "Condição de pagamento proposta",
+      "en": "Proposed payment terms",
+      "es": "Condición de pago propuesta"
+    },
+    {
+      "id": 44,
+      "br": "Termos de frete propostos",
+      "en": "Proposed freight terms",
+      "es": "Términos de envío propuestos"
+    },
+    {
+      "id": 45,
+      "br": "Observação do fornecedor ao comprador",
+      "en": "Supplier observation to buyer",
+      "es": "Observación del proveedor al comprador"
+    },
+    {
+      "id": 46,
+      "br": "Controle",
+      "en": "Control",
+      "es": "Control"
+    },
+    {
+      "id": 47,
+      "br": "Número da revisão do lance (múltiplas submissões)",
+      "en": "Bid revision number (multiple submissions)",
+      "es": "Número de revisión de la oferta (múltiples presentaciones)"
+    },
+    {
+      "id": 48,
+      "br": "Avaliação",
+      "en": "Evaluation",
+      "es": "Evaluacion"
+    },
+    {
+      "id": 49,
+      "br": "Pontuação técnica consolidada do lance",
+      "en": "Consolidated technical score of the bid",
+      "es": "Puntuación técnica consolidada de la oferta"
+    },
+    {
+      "id": 50,
+      "br": "Pontuação comercial consolidada do lance",
+      "en": "Consolidated commercial score of the bid",
+      "es": "Puntuación comercial consolidada de la oferta"
+    },
+    {
+      "id": 51,
+      "br": "Pontuação total ponderada (técnica + comercial)",
+      "en": "Weighted total score (technical + commercial)",
+      "es": "Puntuación total ponderada (técnica + comercial)"
+    },
+    {
+      "id": 52,
+      "br": "Ranking do lance na negociação",
+      "en": "Bid ranking in the negotiation",
+      "es": "Clasificación de la oferta en la negociación"
+    },
+    {
+      "id": 53,
+      "br": "Auditoria",
+      "en": "Audit",
+      "es": "Auditoria"
+    },
+    {
+      "id": 54,
+      "br": "Usuário que criou o registro",
+      "en": "User who created the record",
+      "es": "Usuario que creo el registro"
+    },
+    {
+      "id": 55,
+      "br": "Data/hora de criação",
+      "en": "Creation date/time",
+      "es": "Fecha/hora de creacion"
+    },
+    {
+      "id": 56,
+      "br": "Último usuário que alterou",
+      "en": "Last user who modified",
+      "es": "Ultimo usuario que modifico"
+    },
+    {
+      "id": 57,
+      "br": "Data/hora da última alteração",
+      "en": "Last modification date/time",
+      "es": "Fecha/hora de la ultima modificacion"
+    },
+    {
+      "id": 58,
+      "br": "Login da última sessão",
+      "en": "Last session login",
+      "es": "Login de la ultima sesion"
+    },
+    {
+      "id": 59,
+      "br": "Relacionamentos",
+      "en": "Relationships",
+      "es": "Relaciones"
+    },
+    {
+      "id": 60,
+      "br": "Tabelas-pai (FK de entrada)",
+      "en": "Parent Tables (inbound FK)",
+      "es": "Tablas padre (FK de entrada)"
+    },
+    {
+      "id": 61,
+      "br": "negociação",
+      "en": "negotiation",
+      "es": "negociacion"
+    },
+    {
+      "id": 62,
+      "br": "fornecedor",
+      "en": "supplier",
+      "es": "proveedor"
+    },
+    {
+      "id": 63,
+      "br": "site do fornecedor",
+      "en": "Supplier website",
+      "es": "sitio del proveedor"
+    },
+    {
+      "id": 64,
+      "br": "condição de pagamento",
+      "en": "Payment terms",
+      "es": "condición de pago"
+    },
+    {
+      "id": 65,
+      "br": "Tabelas-filha (FK de saída)",
+      "en": "Child Tables (outbound FK)",
+      "es": "Tablas hija (FK de salida)"
+    },
+    {
+      "id": 66,
+      "br": "preços dos itens do lance",
+      "en": "Item prices in the bid",
+      "es": "precios de los ítems de la oferta"
+    },
+    {
+      "id": 67,
+      "br": "valores de atributos",
+      "en": "Attribute values",
+      "es": "valores de atributos"
+    },
+    {
+      "id": 68,
+      "br": "linhas de PO geradas",
+      "en": "PO lines generated",
+      "es": "líneas de PO generadas"
+    },
+    {
+      "id": 69,
+      "br": "números de PO gerados",
+      "en": "PO numbers generated",
+      "es": "números de PO generados"
+    },
+    {
+      "id": 70,
+      "br": "requisitos do lance",
+      "en": "Bid requirements",
+      "es": "requisitos de la oferta"
+    },
+    {
+      "id": 71,
+      "br": "valores de requisitos",
+      "en": "Requirements values",
+      "es": "valores de requisitos"
+    },
+    {
+      "id": 72,
+      "br": "seções do lance",
+      "en": "Bid sections",
+      "es": "secciones de la oferta"
+    },
+    {
+      "id": 73,
+      "br": "Uso Típico",
+      "en": "Typical Usage",
+      "es": "Uso Tipico"
+    },
+    {
+      "id": 74,
+      "br": "Lances ativos por negociação",
+      "en": "Active bids per negotiation",
+      "es": "Ofertas activas por negociación"
+    },
+    {
+      "id": 75,
+      "br": "Lances adjudicados (vencedores)",
+      "en": "Awarded bids (winners)",
+      "es": "Ofertas adjudicadas (ganadores)"
+    },
+    {
+      "id": 76,
+      "br": "Filtros comuns",
+      "en": "Common Filters",
+      "es": "Filtros comunes"
+    },
+    {
+      "id": 77,
+      "br": "Lances ativos (submetidos)",
+      "en": "Active bids (submitted)",
+      "es": "Ofertas activas (presentadas)"
+    },
+    {
+      "id": 78,
+      "br": "Lances em rascunho (não submetidos)",
+      "en": "Draft bids (not submitted)",
+      "es": "Ofertas en rastro (no presentadas)"
+    },
+    {
+      "id": 79,
+      "br": "Lances vencedores",
+      "en": "Winning bids",
+      "es": "Ofertas ganadoras"
+    },
+    {
+      "id": 80,
+      "br": "Lances submetidos em nome do fornecedor",
+      "en": "Bids submitted on behalf of the supplier",
+      "es": "Ofertas presentadas en nombre del proveedor"
+    },
+    {
+      "id": 81,
+      "br": "Observações",
+      "en": "Notes",
+      "es": "Observaciones"
+    },
+    {
+      "id": 82,
+      "br": "Cada fornecedor pode ter múltiplos registros para a mesma negociação se houver rodadas de re-submissão; o BID_REVISION_NUMBER diferencia as versões.",
+      "en": "Each supplier can have multiple records for the same negotiation if there are rounds of resubmission; the BID_REVISION_NUMBER differentiates the versions.",
+      "es": "Cada proveedor puede tener múltiples registros para la misma negociación si hay rondas de re-presentación; el BID_REVISION_NUMBER diferencia las versiones."
+    },
+    {
+      "id": 83,
+      "br": "O BID_STATUS = 'ACTIVE' identifica o lance mais recente e válido do fornecedor; versões anteriores ficam como ARCHIVED.",
+      "en": "BID_STATUS = 'ACTIVE' identifies the latest and valid bid from the supplier; previous versions are marked as ARCHIVED.",
+      "es": "El BID_STATUS = 'ACTIVE' identifica la oferta más reciente y válida del proveedor; las versiones anteriores quedan como ARCHIVED."
+    },
+    {
+      "id": 84,
+      "br": "O campo SURROG_BID_FLAG indica lances submetidos pelo comprador em nome do fornecedor (surrogate bidding).",
+      "en": "The SURROG_BID_FLAG indicates bids submitted by the buyer on behalf of the supplier (surrogate bidding).",
+      "es": "El campo SURROG_BID_FLAG indica ofertas presentadas por el comprador en nombre del proveedor (oferta sustituta)."
+    },
+    {
+      "id": 85,
+      "br": "O RANK é calculado automaticamente pelo sistema com base nos critérios de avaliação definidos na negociação.",
+      "en": "The RANK is automatically calculated by the system based on the evaluation criteria defined in the negotiation.",
+      "es": "El RANK se calcula automáticamente por el sistema en base a los criterios de evaluación definidos en la negociación."
+    },
+    {
+      "id": 86,
+      "br": "TOTAL_WEIGHTED_SCORE combina TECHNICAL_SCORE e COMMERCIAL_SCORE conforme os pesos definidos na negociação.",
+      "en": "TOTAL_WEIGHTED_SCORE combines TECHNICAL_SCORE and COMMERCIAL_SCORE according to the weights defined in the negotiation.",
+      "es": "El PUNTUACIÓN TOTAL PONDERADA combina la PUNTUACIÓN TÉCNICA y la PUNTUACIÓN COMERCIAL según los pesos definidos en la negociación."
+    },
+    {
+      "id": 87,
+      "br": "Referências",
+      "en": "References",
+      "es": "Referencias"
+    },
+    {
+      "id": 88,
+      "br": "[Oracle Docs — PON_BID_HEADERS](https://docs.oracle.com/en/cloud/saas/procurement/25a/oedmf/ponbidheaders.html)",
+      "en": "[Oracle Docs — PON_BID_HEADERS](https://docs.oracle.com/en/cloud/saas/procurement/25a/oedmf/ponbidheaders.html)",
+      "es": "[Documentos de Oracle — CABECERAS DE OFERTAS (PON)](https://docs.oracle.com/en/cloud/saas/procurement/25a/oedmf/ponbidheaders.html)"
+    },
+    {
+      "id": 89,
+      "br": "po-module-data-dictionary — Dossiê do módulo Procurement",
+      "en": "po-module-data-dictionary — Procurement module dossier",
+      "es": "po-module-data-dictionary — Dossier del modulo Procurement"
+    }
+  ]
+}

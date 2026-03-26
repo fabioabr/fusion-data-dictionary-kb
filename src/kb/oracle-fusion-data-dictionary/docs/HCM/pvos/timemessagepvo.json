@@ -1,0 +1,785 @@
+{
+  "meta": {
+    "pvo_name": "TimeMessagePVO",
+    "full_path": "HcmTopModelAnalyticsGlobalAM.TimeRepositoryAM.TimeMessagePVO",
+    "module_path": "HcmTopModelAnalyticsGlobalAM.TimeRepositoryAM",
+    "module_code": "HCM",
+    "type": "pvo",
+    "description": "Extrai mensagens de tempo com exceções e regras de permissão. Suporta comunicação de alertas e validações no sistema de gestão de jornada."
+  },
+  "stats": {
+    "total_attributes": 54,
+    "tables_count": 2,
+    "bicc_enabled": 26,
+    "bicc_pct": 48,
+    "pk_count": 1
+  },
+  "tables": [
+    "HWM_FND_MESSAGES_VL",
+    "HWM_TM_ALLOW_EXPS_V"
+  ],
+  "attributes": [
+    {
+      "name": "HwmFndMessagesVLPEOApplicationId",
+      "table": "HWM_FND_MESSAGES_VL",
+      "column": "APPLICATION_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "HwmFndMessagesVLPEOApplicationShortName",
+      "table": "HWM_FND_MESSAGES_VL",
+      "column": "APPLICATION_SHORT_NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "HwmFndMessagesVLPEOChangeSinceLastRefresh",
+      "table": "HWM_FND_MESSAGES_VL",
+      "column": "CHANGE_SINCE_LAST_REFRESH",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "HwmFndMessagesVLPEOContext",
+      "table": "HWM_FND_MESSAGES_VL",
+      "column": "CONTEXT",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "HwmFndMessagesVLPEOCreatedBy",
+      "table": "HWM_FND_MESSAGES_VL",
+      "column": "CREATED_BY",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "HwmFndMessagesVLPEOCreationDate",
+      "table": "HWM_FND_MESSAGES_VL",
+      "column": "CREATION_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "HwmFndMessagesVLPEOLastUpdateDate",
+      "table": "HWM_FND_MESSAGES_VL",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": true
+    },
+    {
+      "name": "HwmFndMessagesVLPEOLastUpdateLogin",
+      "table": "HWM_FND_MESSAGES_VL",
+      "column": "LAST_UPDATE_LOGIN",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "HwmFndMessagesVLPEOLastUpdatedBy",
+      "table": "HWM_FND_MESSAGES_VL",
+      "column": "LAST_UPDATED_BY",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "HwmFndMessagesVLPEOLoggableAlertable",
+      "table": "HWM_FND_MESSAGES_VL",
+      "column": "LOGGABLE_ALERTABLE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "HwmFndMessagesVLPEOMessageAdminAction",
+      "table": "HWM_FND_MESSAGES_VL",
+      "column": "MESSAGE_ADMIN_ACTION",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "HwmFndMessagesVLPEOMessageAdminDetails",
+      "table": "HWM_FND_MESSAGES_VL",
+      "column": "MESSAGE_ADMIN_DETAILS",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "HwmFndMessagesVLPEOMessageCategory",
+      "table": "HWM_FND_MESSAGES_VL",
+      "column": "MESSAGE_CATEGORY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "HwmFndMessagesVLPEOMessageCause",
+      "table": "HWM_FND_MESSAGES_VL",
+      "column": "MESSAGE_CAUSE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "HwmFndMessagesVLPEOMessageName",
+      "table": "HWM_FND_MESSAGES_VL",
+      "column": "MESSAGE_NAME",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "HwmFndMessagesVLPEOMessageNumber",
+      "table": "HWM_FND_MESSAGES_VL",
+      "column": "MESSAGE_NUMBER",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "HwmFndMessagesVLPEOMessageSeverity",
+      "table": "HWM_FND_MESSAGES_VL",
+      "column": "MESSAGE_SEVERITY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "HwmFndMessagesVLPEOMessageText",
+      "table": "HWM_FND_MESSAGES_VL",
+      "column": "MESSAGE_TEXT",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "HwmFndMessagesVLPEOMessageUserAction",
+      "table": "HWM_FND_MESSAGES_VL",
+      "column": "MESSAGE_USER_ACTION",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "HwmFndMessagesVLPEOMessageUserDetails",
+      "table": "HWM_FND_MESSAGES_VL",
+      "column": "MESSAGE_USER_DETAILS",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "HwmFndMessagesVLPEOModuleId",
+      "table": "HWM_FND_MESSAGES_VL",
+      "column": "MODULE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "HwmFndMessagesVLPEOType",
+      "table": "HWM_FND_MESSAGES_VL",
+      "column": "TYPE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TimeMessagePEOAllowExCreatedBy",
+      "table": "HWM_TM_ALLOW_EXPS_V",
+      "column": "ALLOWEX_CREATED_BY",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TimeMessagePEOAllowExCreationDate",
+      "table": "HWM_TM_ALLOW_EXPS_V",
+      "column": "ALLOWEX_CREATION_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TimeMessagePEOAllowExLastUpdateDate",
+      "table": "HWM_TM_ALLOW_EXPS_V",
+      "column": "ALLOWEX_LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": true
+    },
+    {
+      "name": "TimeMessagePEOAllowExLastUpdateLogin",
+      "table": "HWM_TM_ALLOW_EXPS_V",
+      "column": "ALLOWEX_LAST_UPDATE_LOGIN",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TimeMessagePEOAllowExLastUpdatedBy",
+      "table": "HWM_TM_ALLOW_EXPS_V",
+      "column": "ALLOWEX_LAST_UPDATED_BY",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TimeMessagePEOAllowException",
+      "table": "HWM_TM_ALLOW_EXPS_V",
+      "column": "ALLOW_EXCEPTION",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TimeMessagePEOAllowExceptionFlag",
+      "table": "HWM_TM_ALLOW_EXPS_V",
+      "column": "ALLOW_EXCEPTION_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TimeMessagePEOApplicationId",
+      "table": "HWM_TM_ALLOW_EXPS_V",
+      "column": "APPLICATION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TimeMessagePEOApplicationShortName",
+      "table": "HWM_TM_ALLOW_EXPS_V",
+      "column": "APPLICATION_SHORT_NAME",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TimeMessagePEOCreatedBy",
+      "table": "HWM_TM_ALLOW_EXPS_V",
+      "column": "CREATED_BY",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TimeMessagePEOCreationDate",
+      "table": "HWM_TM_ALLOW_EXPS_V",
+      "column": "CREATION_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TimeMessagePEODateFrom",
+      "table": "HWM_TM_ALLOW_EXPS_V",
+      "column": "DATE_FROM",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TimeMessagePEODateTo",
+      "table": "HWM_TM_ALLOW_EXPS_V",
+      "column": "DATE_TO",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TimeMessagePEOEnterpriseId",
+      "table": "HWM_TM_ALLOW_EXPS_V",
+      "column": "ENTERPRISE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TimeMessagePEOLastUpdateDate",
+      "table": "HWM_TM_ALLOW_EXPS_V",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": true
+    },
+    {
+      "name": "TimeMessagePEOLastUpdateLogin",
+      "table": "HWM_TM_ALLOW_EXPS_V",
+      "column": "LAST_UPDATE_LOGIN",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TimeMessagePEOLastUpdatedBy",
+      "table": "HWM_TM_ALLOW_EXPS_V",
+      "column": "LAST_UPDATED_BY",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TimeMessagePEOMessageField",
+      "table": "HWM_TM_ALLOW_EXPS_V",
+      "column": "MESSAGE_FIELD",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TimeMessagePEOMessageLevel",
+      "table": "HWM_TM_ALLOW_EXPS_V",
+      "column": "MESSAGE_LEVEL",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TimeMessagePEOMessageName",
+      "table": "HWM_TM_ALLOW_EXPS_V",
+      "column": "MESSAGE_NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TimeMessagePEOObjectVersionNumber",
+      "table": "HWM_TM_ALLOW_EXPS_V",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TimeMessagePEOTmBldgBlkId",
+      "table": "HWM_TM_ALLOW_EXPS_V",
+      "column": "TM_BLDG_BLK_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TimeMessagePEOTmBldgBlkVersion",
+      "table": "HWM_TM_ALLOW_EXPS_V",
+      "column": "TM_BLDG_BLK_VERSION",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TimeMessagePEOTmEventId",
+      "table": "HWM_TM_ALLOW_EXPS_V",
+      "column": "TM_EVENT_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TimeMessagePEOTmRecGrpId",
+      "table": "HWM_TM_ALLOW_EXPS_V",
+      "column": "TM_REC_GRP_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TimeMessagePEOTmRecGrpVersion",
+      "table": "HWM_TM_ALLOW_EXPS_V",
+      "column": "TM_REC_GRP_VERSION",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TimeMessagePEOTmRecId",
+      "table": "HWM_TM_ALLOW_EXPS_V",
+      "column": "TM_REC_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TimeMessagePEOTmRecVersion",
+      "table": "HWM_TM_ALLOW_EXPS_V",
+      "column": "TM_REC_VERSION",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TimeMessagePEOTmRepAllowExpsId",
+      "table": "HWM_TM_ALLOW_EXPS_V",
+      "column": "TM_REP_ALLOW_EXPS_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TimeMessagePEOTmRepAtrbUsageId",
+      "table": "HWM_TM_ALLOW_EXPS_V",
+      "column": "TM_REP_ATRB_USAGE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TimeMessagePEOTmRepMsgsId",
+      "table": "HWM_TM_ALLOW_EXPS_V",
+      "column": "TM_REP_MSGS_ID",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    },
+    {
+      "name": "TimeMessagePEOTrnId",
+      "table": "HWM_TM_ALLOW_EXPS_V",
+      "column": "TRN_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    }
+  ],
+  "by_table": {
+    "HWM_FND_MESSAGES_VL": [
+      {
+        "attribute": "HwmFndMessagesVLPEOApplicationId",
+        "column": "APPLICATION_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "HwmFndMessagesVLPEOApplicationShortName",
+        "column": "APPLICATION_SHORT_NAME",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "HwmFndMessagesVLPEOChangeSinceLastRefresh",
+        "column": "CHANGE_SINCE_LAST_REFRESH",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "HwmFndMessagesVLPEOContext",
+        "column": "CONTEXT",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "HwmFndMessagesVLPEOCreatedBy",
+        "column": "CREATED_BY",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "HwmFndMessagesVLPEOCreationDate",
+        "column": "CREATION_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "HwmFndMessagesVLPEOLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "HwmFndMessagesVLPEOLastUpdateLogin",
+        "column": "LAST_UPDATE_LOGIN",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "HwmFndMessagesVLPEOLastUpdatedBy",
+        "column": "LAST_UPDATED_BY",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "HwmFndMessagesVLPEOLoggableAlertable",
+        "column": "LOGGABLE_ALERTABLE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "HwmFndMessagesVLPEOMessageAdminAction",
+        "column": "MESSAGE_ADMIN_ACTION",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "HwmFndMessagesVLPEOMessageAdminDetails",
+        "column": "MESSAGE_ADMIN_DETAILS",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "HwmFndMessagesVLPEOMessageCategory",
+        "column": "MESSAGE_CATEGORY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "HwmFndMessagesVLPEOMessageCause",
+        "column": "MESSAGE_CAUSE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "HwmFndMessagesVLPEOMessageName",
+        "column": "MESSAGE_NAME",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "HwmFndMessagesVLPEOMessageNumber",
+        "column": "MESSAGE_NUMBER",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "HwmFndMessagesVLPEOMessageSeverity",
+        "column": "MESSAGE_SEVERITY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "HwmFndMessagesVLPEOMessageText",
+        "column": "MESSAGE_TEXT",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "HwmFndMessagesVLPEOMessageUserAction",
+        "column": "MESSAGE_USER_ACTION",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "HwmFndMessagesVLPEOMessageUserDetails",
+        "column": "MESSAGE_USER_DETAILS",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "HwmFndMessagesVLPEOModuleId",
+        "column": "MODULE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "HwmFndMessagesVLPEOType",
+        "column": "TYPE",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "HWM_TM_ALLOW_EXPS_V": [
+      {
+        "attribute": "TimeMessagePEOAllowExCreatedBy",
+        "column": "ALLOWEX_CREATED_BY",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TimeMessagePEOAllowExCreationDate",
+        "column": "ALLOWEX_CREATION_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TimeMessagePEOAllowExLastUpdateDate",
+        "column": "ALLOWEX_LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TimeMessagePEOAllowExLastUpdateLogin",
+        "column": "ALLOWEX_LAST_UPDATE_LOGIN",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TimeMessagePEOAllowExLastUpdatedBy",
+        "column": "ALLOWEX_LAST_UPDATED_BY",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TimeMessagePEOAllowException",
+        "column": "ALLOW_EXCEPTION",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TimeMessagePEOAllowExceptionFlag",
+        "column": "ALLOW_EXCEPTION_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TimeMessagePEOApplicationId",
+        "column": "APPLICATION_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TimeMessagePEOApplicationShortName",
+        "column": "APPLICATION_SHORT_NAME",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TimeMessagePEOCreatedBy",
+        "column": "CREATED_BY",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TimeMessagePEOCreationDate",
+        "column": "CREATION_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TimeMessagePEODateFrom",
+        "column": "DATE_FROM",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TimeMessagePEODateTo",
+        "column": "DATE_TO",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TimeMessagePEOEnterpriseId",
+        "column": "ENTERPRISE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TimeMessagePEOLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TimeMessagePEOLastUpdateLogin",
+        "column": "LAST_UPDATE_LOGIN",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TimeMessagePEOLastUpdatedBy",
+        "column": "LAST_UPDATED_BY",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TimeMessagePEOMessageField",
+        "column": "MESSAGE_FIELD",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TimeMessagePEOMessageLevel",
+        "column": "MESSAGE_LEVEL",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TimeMessagePEOMessageName",
+        "column": "MESSAGE_NAME",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TimeMessagePEOObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TimeMessagePEOTmBldgBlkId",
+        "column": "TM_BLDG_BLK_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TimeMessagePEOTmBldgBlkVersion",
+        "column": "TM_BLDG_BLK_VERSION",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TimeMessagePEOTmEventId",
+        "column": "TM_EVENT_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TimeMessagePEOTmRecGrpId",
+        "column": "TM_REC_GRP_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TimeMessagePEOTmRecGrpVersion",
+        "column": "TM_REC_GRP_VERSION",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TimeMessagePEOTmRecId",
+        "column": "TM_REC_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TimeMessagePEOTmRecVersion",
+        "column": "TM_REC_VERSION",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TimeMessagePEOTmRepAllowExpsId",
+        "column": "TM_REP_ALLOW_EXPS_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TimeMessagePEOTmRepAtrbUsageId",
+        "column": "TM_REP_ATRB_USAGE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TimeMessagePEOTmRepMsgsId",
+        "column": "TM_REP_MSGS_ID",
+        "bicc": true,
+        "pk": true
+      },
+      {
+        "attribute": "TimeMessagePEOTrnId",
+        "column": "TRN_ID",
+        "bicc": false,
+        "pk": false
+      }
+    ]
+  }
+}

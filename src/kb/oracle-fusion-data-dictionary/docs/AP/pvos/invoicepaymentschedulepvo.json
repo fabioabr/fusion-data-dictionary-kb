@@ -1,0 +1,1685 @@
+{
+  "meta": {
+    "pvo_name": "InvoicePaymentSchedulePVO",
+    "full_path": "FscmTopModelAM.FinApInvTransactionsAM.InvoicePaymentSchedulePVO",
+    "module_path": "FscmTopModelAM.FinApInvTransactionsAM",
+    "module_code": "AP",
+    "type": "pvo",
+    "description": "Extrai os cronogramas de pagamento das faturas de fornecedores, incluindo datas de vencimento, valores das parcelas, condições de pagamento e dados bancários. Essencial para projeção de fluxo de caixa, planejamento de tesouraria e gestão de vencimentos."
+  },
+  "stats": {
+    "total_attributes": 117,
+    "tables_count": 8,
+    "bicc_enabled": 78,
+    "bicc_pct": 67,
+    "pk_count": 2
+  },
+  "tables": [
+    "AP_INVOICES_ALL",
+    "AP_PAYMENT_SCHEDULES_ALL",
+    "FUN_BU_PERF_V",
+    "HZ_PARTIES",
+    "IBY_EXT_BANK_ACCOUNTS",
+    "IBY_PAYMENT_CODES_VL",
+    "PER_PERSON_NAMES_F_V",
+    "ZX_CONDITION_GROUPS_VL"
+  ],
+  "attributes": [
+    {
+      "name": "AwtTaxGroupConditionGroupId",
+      "table": "ZX_CONDITION_GROUPS_VL",
+      "column": "CONDITION_GROUP_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AwtTaxGroupConditionGroupName",
+      "table": "ZX_CONDITION_GROUPS_VL",
+      "column": "CONDITION_GROUP_NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BusinessUnitBusinessUnitId",
+      "table": "FUN_BU_PERF_V",
+      "column": "BU_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "DiscountAPR",
+      "table": "AP_PAYMENT_SCHEDULES_ALL",
+      "column": "APR_DISCOUNT_RATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "DiscountOffersTransNameType",
+      "table": "AP_PAYMENT_SCHEDULES_ALL",
+      "column": "ASSIGNMENT_TYPE_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "DiscountOffersTranslationName",
+      "table": "AP_PAYMENT_SCHEDULES_ALL",
+      "column": "CAMPAIGN_NAME",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ExtBnkAcctCheckDigits",
+      "table": "IBY_EXT_BANK_ACCOUNTS",
+      "column": "CHECK_DIGITS",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ExtBnkAcctExtBankAccountId",
+      "table": "IBY_EXT_BANK_ACCOUNTS",
+      "column": "EXT_BANK_ACCOUNT_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ExtBnkAcctMaskedBankAccountNum",
+      "table": "IBY_EXT_BANK_ACCOUNTS",
+      "column": "MASKED_BANK_ACCOUNT_NUM",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ExtBnkAcctObjectVersionNumber",
+      "table": "IBY_EXT_BANK_ACCOUNTS",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvExtBnkAcctExtBankAccountId",
+      "table": "IBY_EXT_BANK_ACCOUNTS",
+      "column": "EXT_BANK_ACCOUNT_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvExtBnkAcctLastUpdateDate",
+      "table": "IBY_EXT_BANK_ACCOUNTS",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvExtBnkAcctObjectVersionNumber",
+      "table": "IBY_EXT_BANK_ACCOUNTS",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceHeaderAcctsPayCodeCombinationId",
+      "table": "AP_INVOICES_ALL",
+      "column": "ACCTS_PAY_CODE_COMBINATION_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceHeaderBankChargeBearer",
+      "table": "AP_INVOICES_ALL",
+      "column": "BANK_CHARGE_BEARER",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceHeaderBudgetDate",
+      "table": "AP_INVOICES_ALL",
+      "column": "BUDGET_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceHeaderCancelledDate",
+      "table": "AP_INVOICES_ALL",
+      "column": "CANCELLED_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceHeaderCorrectionPeriod",
+      "table": "AP_INVOICES_ALL",
+      "column": "CORRECTION_PERIOD",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceHeaderCorrectionYear",
+      "table": "AP_INVOICES_ALL",
+      "column": "CORRECTION_YEAR",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceHeaderCreationDate",
+      "table": "AP_INVOICES_ALL",
+      "column": "CREATION_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceHeaderDescription",
+      "table": "AP_INVOICES_ALL",
+      "column": "DESCRIPTION",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceHeaderDocCategoryCode",
+      "table": "AP_INVOICES_ALL",
+      "column": "DOC_CATEGORY_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceHeaderDocSequenceId",
+      "table": "AP_INVOICES_ALL",
+      "column": "DOC_SEQUENCE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceHeaderEmployeeAddressCode",
+      "table": "AP_INVOICES_ALL",
+      "column": "EMPLOYEE_ADDRESS_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceHeaderExchangeDate",
+      "table": "AP_INVOICES_ALL",
+      "column": "EXCHANGE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceHeaderExchangeRate",
+      "table": "AP_INVOICES_ALL",
+      "column": "EXCHANGE_RATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceHeaderExchangeRateType",
+      "table": "AP_INVOICES_ALL",
+      "column": "EXCHANGE_RATE_TYPE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceHeaderExpenditureItemDate",
+      "table": "AP_INVOICES_ALL",
+      "column": "EXPENDITURE_ITEM_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceHeaderExpenditureOrganizationId",
+      "table": "AP_INVOICES_ALL",
+      "column": "EXPENDITURE_ORGANIZATION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceHeaderExpenditureType",
+      "table": "AP_INVOICES_ALL",
+      "column": "EXPENDITURE_TYPE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceHeaderFundsStatus",
+      "table": "AP_INVOICES_ALL",
+      "column": "FUNDS_STATUS",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceHeaderInvoiceCurrencyCode",
+      "table": "AP_INVOICES_ALL",
+      "column": "INVOICE_CURRENCY_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceHeaderInvoiceDate",
+      "table": "AP_INVOICES_ALL",
+      "column": "INVOICE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceHeaderInvoiceId",
+      "table": "AP_INVOICES_ALL",
+      "column": "INVOICE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceHeaderInvoiceNum",
+      "table": "AP_INVOICES_ALL",
+      "column": "INVOICE_NUM",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceHeaderInvoiceReceivedDate",
+      "table": "AP_INVOICES_ALL",
+      "column": "INVOICE_RECEIVED_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceHeaderInvoiceTypeLookupCode",
+      "table": "AP_INVOICES_ALL",
+      "column": "INVOICE_TYPE_LOOKUP_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceHeaderLastUpdateDate",
+      "table": "AP_INVOICES_ALL",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": true
+    },
+    {
+      "name": "InvoiceHeaderLegalEntityId",
+      "table": "AP_INVOICES_ALL",
+      "column": "LEGAL_ENTITY_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceHeaderObjectVersionNumber",
+      "table": "AP_INVOICES_ALL",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceHeaderOrgId",
+      "table": "AP_INVOICES_ALL",
+      "column": "ORG_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceHeaderPartyId",
+      "table": "AP_INVOICES_ALL",
+      "column": "PARTY_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceHeaderPaymentCurrencyCode",
+      "table": "AP_INVOICES_ALL",
+      "column": "PAYMENT_CURRENCY_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceHeaderPaymentMethodCode",
+      "table": "AP_INVOICES_ALL",
+      "column": "PAYMENT_METHOD_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceHeaderPaymentMethodLookupCode",
+      "table": "AP_INVOICES_ALL",
+      "column": "PAYMENT_METHOD_LOOKUP_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceHeaderPaymentReasonComments",
+      "table": "AP_INVOICES_ALL",
+      "column": "PAYMENT_REASON_COMMENTS",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceHeaderPaymentStatusFlag",
+      "table": "AP_INVOICES_ALL",
+      "column": "PAYMENT_STATUS_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceHeaderProjectId",
+      "table": "AP_INVOICES_ALL",
+      "column": "PROJECT_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceHeaderRelationshipId",
+      "table": "AP_PAYMENT_SCHEDULES_ALL",
+      "column": "RELATIONSHIP_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceHeaderRemitToAddressId",
+      "table": "AP_PAYMENT_SCHEDULES_ALL",
+      "column": "REMIT_TO_ADDRESS_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceHeaderRemitToAddressName",
+      "table": "AP_PAYMENT_SCHEDULES_ALL",
+      "column": "REMIT_TO_ADDRESS_NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceHeaderRemitToSupplierId",
+      "table": "AP_PAYMENT_SCHEDULES_ALL",
+      "column": "REMIT_TO_SUPPLIER_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceHeaderRemitToSupplierName",
+      "table": "AP_PAYMENT_SCHEDULES_ALL",
+      "column": "REMIT_TO_SUPPLIER_NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceHeaderRequesterId",
+      "table": "AP_INVOICES_ALL",
+      "column": "REQUESTER_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceHeaderSetOfBooksId",
+      "table": "AP_INVOICES_ALL",
+      "column": "SET_OF_BOOKS_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceHeaderSource",
+      "table": "AP_INVOICES_ALL",
+      "column": "SOURCE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceHeaderTermsId",
+      "table": "AP_INVOICES_ALL",
+      "column": "TERMS_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceHeaderVendorContactId",
+      "table": "AP_INVOICES_ALL",
+      "column": "VENDOR_CONTACT_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceHeaderVendorId",
+      "table": "AP_INVOICES_ALL",
+      "column": "VENDOR_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceHeaderVendorSiteId",
+      "table": "AP_INVOICES_ALL",
+      "column": "VENDOR_SITE_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceHeaderWfapprovalStatus",
+      "table": "AP_INVOICES_ALL",
+      "column": "WFAPPROVAL_STATUS",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceId",
+      "table": "AP_PAYMENT_SCHEDULES_ALL",
+      "column": "INVOICE_ID",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    },
+    {
+      "name": "PartyLastUpdateDate",
+      "table": "HZ_PARTIES",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartyPartyId",
+      "table": "HZ_PARTIES",
+      "column": "PARTY_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PayDelcodeLastUpdateDate",
+      "table": "IBY_PAYMENT_CODES_VL",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PayDelcodeMeaning",
+      "table": "IBY_PAYMENT_CODES_VL",
+      "column": "MEANING",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PayDelcodePaymentCode",
+      "table": "IBY_PAYMENT_CODES_VL",
+      "column": "PAYMENT_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PayDelcodePaymentCodeType",
+      "table": "IBY_PAYMENT_CODES_VL",
+      "column": "PAYMENT_CODE_TYPE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PayReacodeLastUpdateDate",
+      "table": "IBY_PAYMENT_CODES_VL",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PayReacodeMeaning",
+      "table": "IBY_PAYMENT_CODES_VL",
+      "column": "MEANING",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PayReacodePaymentCode",
+      "table": "IBY_PAYMENT_CODES_VL",
+      "column": "PAYMENT_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PayReacodePaymentCodeType",
+      "table": "IBY_PAYMENT_CODES_VL",
+      "column": "PAYMENT_CODE_TYPE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PaymentNum",
+      "table": "AP_PAYMENT_SCHEDULES_ALL",
+      "column": "PAYMENT_NUM",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    },
+    {
+      "name": "PaymentScheduleAmountRemaining",
+      "table": "AP_PAYMENT_SCHEDULES_ALL",
+      "column": "AMOUNT_REMAINING",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PaymentScheduleCreatedBy",
+      "table": "AP_PAYMENT_SCHEDULES_ALL",
+      "column": "CREATED_BY",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PaymentScheduleCreationDate",
+      "table": "AP_PAYMENT_SCHEDULES_ALL",
+      "column": "CREATION_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PaymentScheduleDiscountAmountAvailable",
+      "table": "AP_PAYMENT_SCHEDULES_ALL",
+      "column": "DISCOUNT_AMOUNT_AVAILABLE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PaymentScheduleDiscountAmountRemaining",
+      "table": "AP_PAYMENT_SCHEDULES_ALL",
+      "column": "DISCOUNT_AMOUNT_REMAINING",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PaymentScheduleDiscountDate",
+      "table": "AP_PAYMENT_SCHEDULES_ALL",
+      "column": "DISCOUNT_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PaymentScheduleDueDate",
+      "table": "AP_PAYMENT_SCHEDULES_ALL",
+      "column": "DUE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PaymentScheduleExternalBankAccountId",
+      "table": "AP_PAYMENT_SCHEDULES_ALL",
+      "column": "EXTERNAL_BANK_ACCOUNT_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PaymentScheduleGrossAmount",
+      "table": "AP_PAYMENT_SCHEDULES_ALL",
+      "column": "GROSS_AMOUNT",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PaymentScheduleHoldDate",
+      "table": "AP_PAYMENT_SCHEDULES_ALL",
+      "column": "HOLD_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PaymentScheduleHoldFlag",
+      "table": "AP_PAYMENT_SCHEDULES_ALL",
+      "column": "HOLD_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PaymentScheduleIbyHoldReason",
+      "table": "AP_PAYMENT_SCHEDULES_ALL",
+      "column": "IBY_HOLD_REASON",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PaymentScheduleInvCurrGrossAmount",
+      "table": "AP_PAYMENT_SCHEDULES_ALL",
+      "column": "INV_CURR_GROSS_AMOUNT",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PaymentScheduleLastUpdateDate",
+      "table": "AP_PAYMENT_SCHEDULES_ALL",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": true
+    },
+    {
+      "name": "PaymentScheduleLastUpdatedBy",
+      "table": "AP_PAYMENT_SCHEDULES_ALL",
+      "column": "LAST_UPDATED_BY",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PaymentScheduleObjectVersionNumber",
+      "table": "AP_PAYMENT_SCHEDULES_ALL",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PaymentScheduleOrgId",
+      "table": "AP_PAYMENT_SCHEDULES_ALL",
+      "column": "ORG_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PaymentSchedulePaymentCrossRate",
+      "table": "AP_PAYMENT_SCHEDULES_ALL",
+      "column": "PAYMENT_CROSS_RATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PaymentSchedulePaymentMethodCode",
+      "table": "AP_PAYMENT_SCHEDULES_ALL",
+      "column": "PAYMENT_METHOD_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PaymentSchedulePaymentPriority",
+      "table": "AP_PAYMENT_SCHEDULES_ALL",
+      "column": "PAYMENT_PRIORITY",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PaymentSchedulePaymentStatusFlag",
+      "table": "AP_PAYMENT_SCHEDULES_ALL",
+      "column": "PAYMENT_STATUS_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PaymentScheduleRelationshipId",
+      "table": "AP_PAYMENT_SCHEDULES_ALL",
+      "column": "RELATIONSHIP_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PaymentScheduleRemitToAddressId",
+      "table": "AP_PAYMENT_SCHEDULES_ALL",
+      "column": "REMIT_TO_ADDRESS_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PaymentScheduleRemitToAddressName",
+      "table": "AP_PAYMENT_SCHEDULES_ALL",
+      "column": "REMIT_TO_ADDRESS_NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PaymentScheduleRemitToSupplierId",
+      "table": "AP_PAYMENT_SCHEDULES_ALL",
+      "column": "REMIT_TO_SUPPLIER_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PaymentScheduleRemitToSupplierName",
+      "table": "AP_PAYMENT_SCHEDULES_ALL",
+      "column": "REMIT_TO_SUPPLIER_NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PaymentScheduleRemittanceMessage1",
+      "table": "AP_PAYMENT_SCHEDULES_ALL",
+      "column": "REMITTANCE_MESSAGE1",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PaymentScheduleRemittanceMessage2",
+      "table": "AP_PAYMENT_SCHEDULES_ALL",
+      "column": "REMITTANCE_MESSAGE2",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PaymentScheduleRemittanceMessage3",
+      "table": "AP_PAYMENT_SCHEDULES_ALL",
+      "column": "REMITTANCE_MESSAGE3",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PaymentScheduleSecondDiscAmtAvailable",
+      "table": "AP_PAYMENT_SCHEDULES_ALL",
+      "column": "SECOND_DISC_AMT_AVAILABLE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PaymentScheduleSecondDiscountDate",
+      "table": "AP_PAYMENT_SCHEDULES_ALL",
+      "column": "SECOND_DISCOUNT_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PaymentScheduleThirdDiscAmtAvailable",
+      "table": "AP_PAYMENT_SCHEDULES_ALL",
+      "column": "THIRD_DISC_AMT_AVAILABLE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PaymentScheduleThirdDiscountDate",
+      "table": "AP_PAYMENT_SCHEDULES_ALL",
+      "column": "THIRD_DISCOUNT_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonCreatedByDisplayName",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "DISPLAY_NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonCreatedByEffectiveEndDate",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "EFFECTIVE_END_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonCreatedByEffectiveStartDate",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "EFFECTIVE_START_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonCreatedByPersonNameId",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "PERSON_NAME_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonNameEffectiveEndDate",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "EFFECTIVE_END_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonNameEffectiveStartDate",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "EFFECTIVE_START_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonNamePersonNameId",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "PERSON_NAME_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonUpdatedByDisplayName",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "DISPLAY_NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonUpdatedByEffectiveEndDate2",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "EFFECTIVE_END_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonUpdatedByEffectiveStartDate2",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "EFFECTIVE_START_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonUpdatedByPersonNameId",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "PERSON_NAME_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    }
+  ],
+  "by_table": {
+    "ZX_CONDITION_GROUPS_VL": [
+      {
+        "attribute": "AwtTaxGroupConditionGroupId",
+        "column": "CONDITION_GROUP_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "AwtTaxGroupConditionGroupName",
+        "column": "CONDITION_GROUP_NAME",
+        "bicc": true,
+        "pk": false
+      }
+    ],
+    "FUN_BU_PERF_V": [
+      {
+        "attribute": "BusinessUnitBusinessUnitId",
+        "column": "BU_ID",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "AP_PAYMENT_SCHEDULES_ALL": [
+      {
+        "attribute": "DiscountAPR",
+        "column": "APR_DISCOUNT_RATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "DiscountOffersTransNameType",
+        "column": "ASSIGNMENT_TYPE_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "DiscountOffersTranslationName",
+        "column": "CAMPAIGN_NAME",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceHeaderRelationshipId",
+        "column": "RELATIONSHIP_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceHeaderRemitToAddressId",
+        "column": "REMIT_TO_ADDRESS_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceHeaderRemitToAddressName",
+        "column": "REMIT_TO_ADDRESS_NAME",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceHeaderRemitToSupplierId",
+        "column": "REMIT_TO_SUPPLIER_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceHeaderRemitToSupplierName",
+        "column": "REMIT_TO_SUPPLIER_NAME",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceId",
+        "column": "INVOICE_ID",
+        "bicc": true,
+        "pk": true
+      },
+      {
+        "attribute": "PaymentNum",
+        "column": "PAYMENT_NUM",
+        "bicc": true,
+        "pk": true
+      },
+      {
+        "attribute": "PaymentScheduleAmountRemaining",
+        "column": "AMOUNT_REMAINING",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PaymentScheduleCreatedBy",
+        "column": "CREATED_BY",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PaymentScheduleCreationDate",
+        "column": "CREATION_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PaymentScheduleDiscountAmountAvailable",
+        "column": "DISCOUNT_AMOUNT_AVAILABLE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PaymentScheduleDiscountAmountRemaining",
+        "column": "DISCOUNT_AMOUNT_REMAINING",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PaymentScheduleDiscountDate",
+        "column": "DISCOUNT_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PaymentScheduleDueDate",
+        "column": "DUE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PaymentScheduleExternalBankAccountId",
+        "column": "EXTERNAL_BANK_ACCOUNT_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PaymentScheduleGrossAmount",
+        "column": "GROSS_AMOUNT",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PaymentScheduleHoldDate",
+        "column": "HOLD_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PaymentScheduleHoldFlag",
+        "column": "HOLD_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PaymentScheduleIbyHoldReason",
+        "column": "IBY_HOLD_REASON",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PaymentScheduleInvCurrGrossAmount",
+        "column": "INV_CURR_GROSS_AMOUNT",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PaymentScheduleLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PaymentScheduleLastUpdatedBy",
+        "column": "LAST_UPDATED_BY",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PaymentScheduleObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PaymentScheduleOrgId",
+        "column": "ORG_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PaymentSchedulePaymentCrossRate",
+        "column": "PAYMENT_CROSS_RATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PaymentSchedulePaymentMethodCode",
+        "column": "PAYMENT_METHOD_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PaymentSchedulePaymentPriority",
+        "column": "PAYMENT_PRIORITY",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PaymentSchedulePaymentStatusFlag",
+        "column": "PAYMENT_STATUS_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PaymentScheduleRelationshipId",
+        "column": "RELATIONSHIP_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PaymentScheduleRemitToAddressId",
+        "column": "REMIT_TO_ADDRESS_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PaymentScheduleRemitToAddressName",
+        "column": "REMIT_TO_ADDRESS_NAME",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PaymentScheduleRemitToSupplierId",
+        "column": "REMIT_TO_SUPPLIER_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PaymentScheduleRemitToSupplierName",
+        "column": "REMIT_TO_SUPPLIER_NAME",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PaymentScheduleRemittanceMessage1",
+        "column": "REMITTANCE_MESSAGE1",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PaymentScheduleRemittanceMessage2",
+        "column": "REMITTANCE_MESSAGE2",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PaymentScheduleRemittanceMessage3",
+        "column": "REMITTANCE_MESSAGE3",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PaymentScheduleSecondDiscAmtAvailable",
+        "column": "SECOND_DISC_AMT_AVAILABLE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PaymentScheduleSecondDiscountDate",
+        "column": "SECOND_DISCOUNT_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PaymentScheduleThirdDiscAmtAvailable",
+        "column": "THIRD_DISC_AMT_AVAILABLE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PaymentScheduleThirdDiscountDate",
+        "column": "THIRD_DISCOUNT_DATE",
+        "bicc": true,
+        "pk": false
+      }
+    ],
+    "IBY_EXT_BANK_ACCOUNTS": [
+      {
+        "attribute": "ExtBnkAcctCheckDigits",
+        "column": "CHECK_DIGITS",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ExtBnkAcctExtBankAccountId",
+        "column": "EXT_BANK_ACCOUNT_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ExtBnkAcctMaskedBankAccountNum",
+        "column": "MASKED_BANK_ACCOUNT_NUM",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ExtBnkAcctObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InvExtBnkAcctExtBankAccountId",
+        "column": "EXT_BANK_ACCOUNT_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InvExtBnkAcctLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "InvExtBnkAcctObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "AP_INVOICES_ALL": [
+      {
+        "attribute": "InvoiceHeaderAcctsPayCodeCombinationId",
+        "column": "ACCTS_PAY_CODE_COMBINATION_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceHeaderBankChargeBearer",
+        "column": "BANK_CHARGE_BEARER",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceHeaderBudgetDate",
+        "column": "BUDGET_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceHeaderCancelledDate",
+        "column": "CANCELLED_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceHeaderCorrectionPeriod",
+        "column": "CORRECTION_PERIOD",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceHeaderCorrectionYear",
+        "column": "CORRECTION_YEAR",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceHeaderCreationDate",
+        "column": "CREATION_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceHeaderDescription",
+        "column": "DESCRIPTION",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceHeaderDocCategoryCode",
+        "column": "DOC_CATEGORY_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceHeaderDocSequenceId",
+        "column": "DOC_SEQUENCE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceHeaderEmployeeAddressCode",
+        "column": "EMPLOYEE_ADDRESS_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceHeaderExchangeDate",
+        "column": "EXCHANGE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceHeaderExchangeRate",
+        "column": "EXCHANGE_RATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceHeaderExchangeRateType",
+        "column": "EXCHANGE_RATE_TYPE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceHeaderExpenditureItemDate",
+        "column": "EXPENDITURE_ITEM_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceHeaderExpenditureOrganizationId",
+        "column": "EXPENDITURE_ORGANIZATION_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceHeaderExpenditureType",
+        "column": "EXPENDITURE_TYPE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceHeaderFundsStatus",
+        "column": "FUNDS_STATUS",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceHeaderInvoiceCurrencyCode",
+        "column": "INVOICE_CURRENCY_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceHeaderInvoiceDate",
+        "column": "INVOICE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceHeaderInvoiceId",
+        "column": "INVOICE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceHeaderInvoiceNum",
+        "column": "INVOICE_NUM",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceHeaderInvoiceReceivedDate",
+        "column": "INVOICE_RECEIVED_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceHeaderInvoiceTypeLookupCode",
+        "column": "INVOICE_TYPE_LOOKUP_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceHeaderLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceHeaderLegalEntityId",
+        "column": "LEGAL_ENTITY_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceHeaderObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceHeaderOrgId",
+        "column": "ORG_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceHeaderPartyId",
+        "column": "PARTY_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceHeaderPaymentCurrencyCode",
+        "column": "PAYMENT_CURRENCY_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceHeaderPaymentMethodCode",
+        "column": "PAYMENT_METHOD_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceHeaderPaymentMethodLookupCode",
+        "column": "PAYMENT_METHOD_LOOKUP_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceHeaderPaymentReasonComments",
+        "column": "PAYMENT_REASON_COMMENTS",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceHeaderPaymentStatusFlag",
+        "column": "PAYMENT_STATUS_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceHeaderProjectId",
+        "column": "PROJECT_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceHeaderRequesterId",
+        "column": "REQUESTER_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceHeaderSetOfBooksId",
+        "column": "SET_OF_BOOKS_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceHeaderSource",
+        "column": "SOURCE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceHeaderTermsId",
+        "column": "TERMS_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceHeaderVendorContactId",
+        "column": "VENDOR_CONTACT_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceHeaderVendorId",
+        "column": "VENDOR_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceHeaderVendorSiteId",
+        "column": "VENDOR_SITE_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "InvoiceHeaderWfapprovalStatus",
+        "column": "WFAPPROVAL_STATUS",
+        "bicc": true,
+        "pk": false
+      }
+    ],
+    "HZ_PARTIES": [
+      {
+        "attribute": "PartyLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PartyPartyId",
+        "column": "PARTY_ID",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "IBY_PAYMENT_CODES_VL": [
+      {
+        "attribute": "PayDelcodeLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PayDelcodeMeaning",
+        "column": "MEANING",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PayDelcodePaymentCode",
+        "column": "PAYMENT_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PayDelcodePaymentCodeType",
+        "column": "PAYMENT_CODE_TYPE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PayReacodeLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PayReacodeMeaning",
+        "column": "MEANING",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PayReacodePaymentCode",
+        "column": "PAYMENT_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PayReacodePaymentCodeType",
+        "column": "PAYMENT_CODE_TYPE",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "PER_PERSON_NAMES_F_V": [
+      {
+        "attribute": "PersonCreatedByDisplayName",
+        "column": "DISPLAY_NAME",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PersonCreatedByEffectiveEndDate",
+        "column": "EFFECTIVE_END_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PersonCreatedByEffectiveStartDate",
+        "column": "EFFECTIVE_START_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PersonCreatedByPersonNameId",
+        "column": "PERSON_NAME_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PersonNameEffectiveEndDate",
+        "column": "EFFECTIVE_END_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PersonNameEffectiveStartDate",
+        "column": "EFFECTIVE_START_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PersonNamePersonNameId",
+        "column": "PERSON_NAME_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PersonUpdatedByDisplayName",
+        "column": "DISPLAY_NAME",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PersonUpdatedByEffectiveEndDate2",
+        "column": "EFFECTIVE_END_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PersonUpdatedByEffectiveStartDate2",
+        "column": "EFFECTIVE_START_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PersonUpdatedByPersonNameId",
+        "column": "PERSON_NAME_ID",
+        "bicc": false,
+        "pk": false
+      }
+    ]
+  }
+}

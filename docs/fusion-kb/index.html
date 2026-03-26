@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oracle Fusion Data Dictionary</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet">
+    <style>
+
+:root {
+    --primary: #5BA4D9;
+    --primary-dark: #3182B1;
+    --primary-light: rgba(91, 164, 217, 0.12);
+    --secondary: #5BB8C4;
+    --success: #6ABF3B;
+    --success-light: rgba(106, 191, 59, 0.12);
+    --success-border: rgba(106, 191, 59, 0.3);
+    --warning: #F4AC00;
+    --warning-light: rgba(244, 172, 0, 0.12);
+    --warning-border: rgba(244, 172, 0, 0.3);
+    --danger: #E85D54;
+    --danger-light: rgba(232, 93, 84, 0.12);
+    --info: #38BDF8;
+    --info-light: rgba(56, 189, 248, 0.12);
+    --info-border: rgba(56, 189, 248, 0.3);
+    --bg: #0f1319;
+    --card-bg: #1a1f2e;
+    --text: #e2e8f0;
+    --text-muted: #8b9ab5;
+    --border: #2a3244;
+    --purple: #9B96FF;
+    --purple-light: rgba(155, 150, 255, 0.12);
+    --orange: #FF9473;
+    --teal: #2DD4BF;
+    --card-header-bg: #141924;
+    --th-bg: #141924;
+    --th-bg-hover: #1e2638;
+    --card-shadow: 0 2px 12px rgba(91, 164, 217, 0.1), 0 1px 4px rgba(0,0,0,0.3);
+}
+[data-theme="light"] {
+    --primary: #3182B1;
+    --primary-dark: #256a94;
+    --primary-light: rgba(49, 130, 177, 0.1);
+    --secondary: #418F9D;
+    --success: #4C7E1B;
+    --success-light: rgba(76, 126, 27, 0.08);
+    --success-border: rgba(76, 126, 27, 0.25);
+    --warning: #F4AC00;
+    --warning-light: rgba(244, 172, 0, 0.08);
+    --warning-border: rgba(244, 172, 0, 0.25);
+    --danger: #C72F25;
+    --danger-light: rgba(199, 47, 37, 0.08);
+    --info: #0EA5E8;
+    --info-light: rgba(14, 165, 232, 0.08);
+    --info-border: rgba(14, 165, 232, 0.25);
+    --bg: #dde2e8;
+    --card-bg: #ffffff;
+    --text: #212B37;
+    --text-muted: #6E829F;
+    --border: #e2e8f0;
+    --purple: #7B76FE;
+    --purple-light: rgba(123, 118, 254, 0.08);
+    --orange: #FE7C58;
+    --teal: #00D8D8;
+    --card-header-bg: rgba(49, 130, 177, 0.2);
+    --th-bg: rgba(49, 130, 177, 0.2);
+    --th-bg-hover: rgba(49, 130, 177, 0.23);
+    --card-shadow: 0 2px 8px rgba(49, 130, 177, 0.24), 0 1px 3px rgba(0,0,0,0.1);
+}
+[data-theme="light"] .stat-card { background: #eaf1f7; }
+[data-theme="light"] .intro-text { background: #eaf1f7; }
+
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, a, img, ul, ol, li,
+header, footer, nav, section, article, aside, button, input, select, textarea,
+table, tr, td, th, form, label, fieldset, legend { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Poppins', sans-serif; background: var(--bg); color: var(--text); line-height: 1.5; }
+.container { max-width: 1400px; margin: 0 auto; padding: 0 24px; }
+
+/* HEADER */
+.header { background: linear-gradient(135deg, #1a2332 0%, #15202e 50%, #1a2838 100%); color: white; padding: 36px 0 36px; position: relative; overflow: hidden; }
+.header::before { content: ''; position: absolute; top: -50%; right: -10%; width: 500px; height: 500px; background: rgba(255,255,255,0.03); border-radius: 50%; z-index: 0; }
+.header-content { position: relative; z-index: 1; }
+.header-top { display: flex; align-items: flex-start; justify-content: space-between; flex-wrap: wrap; gap: 16px; }
+.header-left { display: flex; align-items: center; gap: 16px; }
+.header-logo { height: 40px; }
+.logo-light { display: none; } .logo-dark { display: inline-block; }
+.header h1 { font-size: 1.5rem; font-weight: 700; letter-spacing: -0.5px; }
+.header .subtitle { font-size: 0.95rem; opacity: 0.85; font-weight: 300; margin-top: 2px; }
+.header-badges { display: flex; gap: 8px; align-items: center; margin-top: 10px; }
+.header-badge { background: rgba(255,255,255,0.15); padding: 6px 14px; border-radius: 8px; font-size: 0.78rem; display: flex; align-items: center; gap: 6px; backdrop-filter: blur(10px); }
+.header-right { display: flex; align-items: center; gap: 8px; }
+.lang-btn { display: inline-flex; align-items: center; gap: 5px; background: rgba(255,255,255,0.08); border: 2px solid transparent; border-radius: 8px; padding: 4px 10px 4px 8px; font-family: 'Poppins', sans-serif; font-size: 0.72rem; font-weight: 600; letter-spacing: 0.3px; color: rgba(255,255,255,0.55); cursor: pointer; transition: all 0.25s; line-height: 1; }
+.lang-btn svg { flex-shrink: 0; }
+.lang-btn:hover { background: rgba(255,255,255,0.18); color: rgba(255,255,255,0.9); }
+.lang-btn.active { border-color: #ffffff; background: rgba(255,255,255,0.22); color: #ffffff; box-shadow: 0 0 8px rgba(255,255,255,0.25); }
+[data-theme="light"] .header { background: linear-gradient(135deg, #1a2332 0%, #15202e 50%, #1a2838 100%); color: white; }
+[data-theme="light"] .footer { background: linear-gradient(135deg, #1a2332 0%, #15202e 50%, #1a2838 100%); color: white; }
+
+/* MAIN */
+main.container { padding-top: 32px; padding-bottom: 48px; }
+
+/* STATS */
+.stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; margin-bottom: 28px; }
+.stat-card { background: var(--card-bg); border-radius: 12px; padding: 18px 20px; box-shadow: var(--card-shadow); border: 1px solid var(--border); display: flex; align-items: center; gap: 14px; transition: all 0.2s; }
+.stat-card:hover { border-color: var(--primary); background: var(--th-bg-hover); }
+.stat-card-icon { width: 44px; height: 44px; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 1.3rem; color: white; flex-shrink: 0; }
+.stat-card-info { flex: 1; }
+.stat-card-number { font-size: 1.12rem; font-weight: 700; line-height: 1.1; }
+.stat-card-label { font-size: 0.72rem; color: var(--text-muted); font-weight: 500; text-transform: uppercase; letter-spacing: 0.3px; }
+
+/* INTRO */
+.intro-text { font-size: 0.88rem; color: var(--text-muted); line-height: 1.7; margin-bottom: 28px; padding: 20px 24px; background: var(--card-bg); border-radius: 12px; border: 1px solid var(--border); border-left: 3px solid var(--primary); box-shadow: var(--card-shadow); }
+.intro-text strong { color: var(--text); }
+
+/* MODULE CARDS */
+.module-card { background: var(--card-bg); border-radius: 12px; border: 1px solid var(--border); box-shadow: 0 2px 8px rgba(0,0,0,0.03); overflow: hidden; margin-bottom: 16px; transition: all 0.25s; text-decoration: none; color: var(--text); display: block; }
+.module-card:hover { box-shadow: var(--card-shadow); border-color: var(--primary); transform: translateY(-2px); }
+.module-card-inner { display: flex; align-items: center; gap: 20px; padding: 24px; }
+.module-icon { width: 56px; height: 56px; border-radius: 12px; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; color: white; flex-shrink: 0; }
+.module-info { flex: 1; }
+.module-name { font-size: 1.05rem; font-weight: 700; display: flex; align-items: center; gap: 10px; }
+.module-code { font-size: 0.72rem; font-weight: 600; padding: 2px 8px; border-radius: 6px; background: var(--primary-light); color: var(--primary); }
+.module-desc { font-size: 0.82rem; color: var(--text-muted); margin-top: 6px; line-height: 1.5; }
+.module-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; }
+.module-tag { font-size: 0.65rem; padding: 3px 10px; border-radius: 20px; font-weight: 500; border: 1px solid; }
+.tag-tables { background: var(--info-light); color: var(--info); border-color: var(--info-border); }
+.tag-doc { background: var(--purple-light); color: var(--purple); border-color: rgba(155,150,255,0.3); }
+.tag-status { background: var(--success-light); color: var(--success); border-color: var(--success-border); }
+.tag-pending { background: var(--warning-light); color: var(--warning); border-color: var(--warning-border); }
+.module-arrow { color: var(--text-muted); font-size: 1.3rem; transition: transform 0.2s; }
+.module-card:hover .module-arrow { transform: translateX(4px); color: var(--primary); }
+
+/* PILLS */
+.pill { display: inline-block; padding: 2px 10px; border-radius: 12px; font-size: 0.7rem; font-weight: 600; }
+.pill-success { background: var(--success-light); color: var(--success); border: 1px solid var(--success-border); }
+.pill-warning { background: var(--warning-light); color: var(--warning); border: 1px solid var(--warning-border); }
+
+/* SECTION HEADER */
+.section-header { display: flex; align-items: center; gap: 10px; margin-bottom: 20px; margin-top: 8px; }
+.section-header h2 { font-size: 1.1rem; font-weight: 600; }
+.section-header i { color: var(--primary); font-size: 1.3rem; }
+
+/* FOOTER */
+.footer { background: linear-gradient(135deg, #1a2332 0%, #15202e 50%, #1a2838 100%); color: white; padding: 36px 0; position: relative; overflow: hidden; }
+.footer::before { content: ''; position: absolute; bottom: -50%; left: -10%; width: 500px; height: 500px; background: rgba(255,255,255,0.03); border-radius: 50%; z-index: 0; }
+.footer-content { position: relative; z-index: 1; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 24px; }
+.footer-left { display: flex; align-items: center; gap: 16px; }
+.footer-avatar { width: 48px; height: 48px; border-radius: 12px; background: rgba(255,255,255,0.15); display: flex; align-items: center; justify-content: center; font-size: 1.1rem; font-weight: 700; backdrop-filter: blur(10px); }
+.footer-author-name { font-size: 0.95rem; font-weight: 600; }
+.footer-author-role { font-size: 0.78rem; opacity: 0.7; }
+.footer-author-email { font-size: 0.72rem; opacity: 0.55; }
+.footer-author-email a { color: rgba(255,255,255,0.55); text-decoration: none; }
+.footer-author-email a:hover { color: white; text-decoration: underline; }
+.footer-right { text-align: right; }
+.footer-doc-title { font-size: 0.85rem; font-weight: 500; opacity: 0.9; }
+.footer-doc-detail { font-size: 0.72rem; opacity: 0.6; margin-top: 2px; }
+.footer-seal { display: flex; align-items: center; gap: 8px; margin-top: 20px; padding-top: 16px; border-top: 1px solid rgba(255,255,255,0.12); font-size: 0.7rem; opacity: 0.5; justify-content: center; }
+.footer-seal i { font-size: 1rem; }
+
+/* BG COLORS */
+.bg-primary { background: var(--primary); } .bg-success { background: var(--success); }
+.bg-info { background: var(--info); } .bg-warning { background: var(--warning); }
+.bg-danger { background: var(--danger); } .bg-purple { background: var(--purple); }
+.bg-orange { background: var(--orange); } .bg-teal { background: var(--teal); }
+.bg-secondary { background: var(--secondary); }
+
+/* BACK TO TOP */
+.back-to-top { position: fixed; bottom: 32px; right: 32px; width: 44px; height: 44px; border-radius: 12px; background: var(--primary); color: white; border: none; cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 1.3rem; box-shadow: 0 4px 16px rgba(91,164,217,0.35); opacity: 0; visibility: hidden; transform: translateY(10px); transition: opacity 0.3s, visibility 0.3s, transform 0.3s, background 0.2s; z-index: 999; }
+.back-to-top.visible { opacity: 1; visibility: visible; transform: translateY(0); }
+.back-to-top:hover { background: var(--primary-dark); }
+
+@media (max-width: 768px) {
+    .stats-grid { grid-template-columns: 1fr 1fr; }
+    .module-card-inner { flex-direction: column; align-items: flex-start; }
+    .header h1 { font-size: 1.2rem; }
+}
+@media print {
+    body { background: white; color: #212B37; }
+    .header { background: #3182B1 !important; }
+    .back-to-top { display: none; }
+}
+
+    </style>
+</head>
+<body>
+
+<header class="header">
+    <div class="container">
+        <div class="header-content">
+            <div class="header-top">
+                <div class="header-left">
+                    <img class="header-logo logo-dark" src="../assets/logos/logo-dark.png" alt="Logo">
+                    <img class="header-logo logo-light" src="../assets/logos/logo-light.png" alt="Logo">
+                    <div>
+                        <h1><i class="ri-database-2-line" style="margin-right:8px"></i> Oracle Fusion Data Dictionary</h1>
+                        <div class="subtitle">Dicionário de Dados — BICC Tables & View Objects</div>
+                        <div class="header-badges">
+                            <div class="header-badge"><i class="ri-cloud-line"></i> Oracle Fusion Cloud ERP</div>
+                            <div class="header-badge"><i class="ri-file-list-3-line"></i> Release 13 / 25A</div>
+                            <div class="header-badge"><i class="ri-calendar-line"></i> 2026-03-25</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="header-right">
+                    <button class="lang-btn active" onclick="switchLang('pt')" id="lang-pt">
+                        <svg width="20" height="14" viewBox="0 0 20 14"><rect width="20" height="14" rx="1" fill="#009739"/><polygon points="10,1.5 19,7 10,12.5 1,7" fill="#FEDD00"/><circle cx="10" cy="7" r="3.2" fill="#012169"/><rect x="7.8" y="6.2" width="4.4" height="0.4" rx="0.2" fill="#fff" transform="rotate(-8 10 7)"/></svg>
+                        <span>PT</span>
+                    </button>
+                    <button class="lang-btn" onclick="switchLang('en')" id="lang-en">
+                        <svg width="20" height="14" viewBox="0 0 20 14"><rect width="20" height="14" rx="1" fill="#B22234"/><rect y="1.08" width="20" height="1.08" fill="#fff"/><rect y="3.23" width="20" height="1.08" fill="#fff"/><rect y="5.38" width="20" height="1.08" fill="#fff"/><rect y="7.54" width="20" height="1.08" fill="#fff"/><rect y="9.69" width="20" height="1.08" fill="#fff"/><rect y="11.85" width="20" height="1.08" fill="#fff"/><rect width="8" height="7.54" fill="#3C3B6E"/></svg>
+                        <span>EN</span>
+                    </button>
+                    <button class="lang-btn" onclick="switchLang('es')" id="lang-es">
+                        <svg width="20" height="14" viewBox="0 0 20 14"><rect width="20" height="14" rx="1" fill="#AA151B"/><rect y="3" width="20" height="8" fill="#F1BF00"/></svg>
+                        <span>ES</span>
+                    </button>
+                    <div class="header-badge" style="border:none;cursor:pointer" onclick="toggleTheme()">
+                        <i id="theme-icon" class="ri-sun-line"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main class="container">
+
+    <div class="intro-text" data-i18n="intro">
+        <strong>Objetivo</strong> — Este dicionário documenta as <strong>tabelas e View Objects (PVOs)</strong> do Oracle Fusion Cloud ERP disponíveis para extração via <strong>BICC</strong> (BI Cloud Connector). O objetivo é criar uma base de conhecimento navegável que permita consultar rapidamente a estrutura de dados de cada módulo — colunas, tipos, relacionamentos (FKs), queries de uso típico e observações de negócio. Cada tabela possui documentação em 3 idiomas (PT-BR, EN, ES) e links clicáveis entre tabelas relacionadas.
+    </div>
+
+    <div class="stats-grid">
+        <div class="stat-card">
+            <div class="stat-card-icon bg-primary"><i class="ri-database-2-line"></i></div>
+            <div class="stat-card-info">
+                <div class="stat-card-number" style="color:var(--primary)">1.045</div>
+                <div class="stat-card-label" data-i18n="stat_tables">Core Tables Documentadas</div>
+            </div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-card-icon bg-info"><i class="ri-apps-line"></i></div>
+            <div class="stat-card-info">
+                <div class="stat-card-number" style="color:var(--info)">5</div>
+                <div class="stat-card-label" data-i18n="stat_modules">Módulos ERP</div>
+            </div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-card-icon bg-success"><i class="ri-translate-2"></i></div>
+            <div class="stat-card-info">
+                <div class="stat-card-number" style="color:var(--success)">3</div>
+                <div class="stat-card-label" data-i18n="stat_langs">Idiomas (PT, EN, ES)</div>
+            </div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-card-icon bg-purple"><i class="ri-eye-line"></i></div>
+            <div class="stat-card-info">
+                <div class="stat-card-number" style="color:var(--purple)">1.346</div>
+                <div class="stat-card-label" data-i18n="stat_pvos">View Objects (PVOs)</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section-header">
+        <i class="ri-layout-grid-line"></i>
+        <h2 data-i18n="section_modules">Módulos</h2>
+    </div>
+
+    <!-- GL -->
+    <a href="data-dictionary/GL/index.html" class="module-card">
+        <div class="module-card-inner">
+            <div class="module-icon bg-primary"><i class="ri-book-2-line"></i></div>
+            <div class="module-info">
+                <div class="module-name">General Ledger <span class="module-code">GL</span> <span class="pill pill-success">39 tabelas</span> <span class="pill pill-info">59 PVOs</span></div>
+                <div class="module-desc" data-i18n="gl_desc">Contabilidade geral — razão contábil, lançamentos, saldos, calendários, combinações de contas (CCID), taxas de câmbio e estrutura de ledgers. Base de toda a estrutura financeira do ERP.</div>
+                <div class="module-tags">
+                    <span class="module-tag tag-tables">39 core tables</span>
+                    <span class="module-tag tag-doc"><i class="ri-external-link-line"></i> GL_BALANCES</span>
+                    <span class="module-tag tag-doc"><i class="ri-external-link-line"></i> GL_JE_HEADERS</span>
+                    <span class="module-tag tag-doc"><i class="ri-external-link-line"></i> GL_CODE_COMBINATIONS</span>
+                    <span class="module-tag tag-doc"><i class="ri-external-link-line"></i> GL_LEDGERS</span>
+                </div>
+            </div>
+            <i class="ri-arrow-right-s-line module-arrow"></i>
+        </div>
+    </a>
+
+    <!-- AP -->
+    <a href="data-dictionary/AP/index.html" class="module-card">
+        <div class="module-card-inner">
+            <div class="module-icon bg-warning"><i class="ri-money-dollar-circle-line"></i></div>
+            <div class="module-info">
+                <div class="module-name">Accounts Payable <span class="module-code">AP</span> <span class="pill pill-success">37 tabelas</span> <span class="pill pill-info">60 PVOs</span></div>
+                <div class="module-desc" data-i18n="ap_desc">Contas a pagar — faturas de fornecedores, distribuições contábeis, pagamentos, cheques, retenções (holds), histórico de aprovações e parâmetros do sistema. Integração direta com GL para contabilização.</div>
+                <div class="module-tags">
+                    <span class="module-tag tag-tables">36 core tables</span>
+                    <span class="module-tag tag-doc"><i class="ri-external-link-line"></i> AP_INVOICES_ALL</span>
+                    <span class="module-tag tag-doc"><i class="ri-external-link-line"></i> AP_INVOICE_DISTRIBUTIONS_ALL</span>
+                    <span class="module-tag tag-doc"><i class="ri-external-link-line"></i> AP_CHECKS_ALL</span>
+                    <span class="module-tag tag-doc"><i class="ri-external-link-line"></i> AP_HOLDS_ALL</span>
+                </div>
+            </div>
+            <i class="ri-arrow-right-s-line module-arrow"></i>
+        </div>
+    </a>
+
+    <!-- AR -->
+    <a href="data-dictionary/AR/index.html" class="module-card">
+        <div class="module-card-inner">
+            <div class="module-icon bg-success"><i class="ri-hand-coin-line"></i></div>
+            <div class="module-info">
+                <div class="module-name">Accounts Receivable <span class="module-code">AR</span> <span class="pill pill-success">66 tabelas</span> <span class="pill pill-info">97 PVOs</span></div>
+                <div class="module-desc" data-i18n="ar_desc">Contas a receber — faturas a clientes (invoices, debit/credit memos), recebimentos (cash receipts), ajustes, aplicações de recebimento, schedules de pagamento, aging buckets, cobranças e reconciliação bancária. Inclui tabelas RA_* (transações) e AR_* (operações).</div>
+                <div class="module-tags">
+                    <span class="module-tag tag-tables">66 core tables</span>
+                    <span class="module-tag tag-status"><i class="ri-check-line"></i> Documentado</span>
+                    <span class="module-tag tag-doc"><i class="ri-external-link-line"></i> RA_CUSTOMER_TRX_ALL</span>
+                    <span class="module-tag tag-doc"><i class="ri-external-link-line"></i> AR_CASH_RECEIPTS_ALL</span>
+                    <span class="module-tag tag-doc"><i class="ri-external-link-line"></i> AR_PAYMENT_SCHEDULES_ALL</span>
+                    <span class="module-tag tag-doc"><i class="ri-external-link-line"></i> AR_ADJUSTMENTS_ALL</span>
+                </div>
+            </div>
+            <i class="ri-arrow-right-s-line module-arrow"></i>
+        </div>
+    </a>
+
+    <!-- PO -->
+    <a href="data-dictionary/PO/index.html" class="module-card">
+        <div class="module-card-inner">
+            <div class="module-icon bg-orange"><i class="ri-shopping-cart-2-line"></i></div>
+            <div class="module-info">
+                <div class="module-name">Procurement <span class="module-code">PO</span> <span class="pill pill-success">148 tabelas</span> <span class="pill pill-info">289 PVOs</span></div>
+                <div class="module-desc" data-i18n="po_desc">Compras e procurement — ordens de compra (PO headers/lines/distributions), requisições, recebimentos, fornecedores, contratos, negociações (sourcing), catálogos e aprovações. Abrange os prefixos PO_*, PON_*, POQ_*, POR_* e POZ_*.</div>
+                <div class="module-tags">
+                    <span class="module-tag tag-tables">110 core tables</span>
+                    <span class="module-tag tag-doc"><i class="ri-external-link-line"></i> PO_HEADERS_ALL</span>
+                    <span class="module-tag tag-doc"><i class="ri-external-link-line"></i> PO_LINES_ALL</span>
+                    <span class="module-tag tag-doc"><i class="ri-external-link-line"></i> PO_DISTRIBUTIONS_ALL</span>
+                    <span class="module-tag tag-doc"><i class="ri-external-link-line"></i> PO_REQUISITION_HEADERS_ALL</span>
+                </div>
+            </div>
+            <i class="ri-arrow-right-s-line module-arrow"></i>
+        </div>
+    </a>
+
+    <!-- HCM -->
+    <a href="data-dictionary/HCM/index.html" class="module-card">
+        <div class="module-card-inner">
+            <div class="module-icon bg-teal"><i class="ri-team-line"></i></div>
+            <div class="module-info">
+                <div class="module-name">Human Capital Management <span class="module-code">HCM</span> <span class="pill pill-success">755 tabelas</span> <span class="pill pill-info">841 PVOs</span></div>
+                <div class="module-desc" data-i18n="hcm_desc">Gestão de pessoas — colaboradores, cargos, departamentos, organizações, folha de pagamento, benefícios, ausências, talent management, recrutamento e learning. O maior módulo em volume de tabelas, abrangendo os prefixos PER_*, PAY_*, ANC_*, BEN_*, HRT_*, IRC_* e ORA_HRT_*.</div>
+                <div class="module-tags">
+                    <span class="module-tag tag-tables">804 core tables</span>
+                    <span class="module-tag tag-doc"><i class="ri-external-link-line"></i> PER_ALL_PEOPLE_F</span>
+                    <span class="module-tag tag-doc"><i class="ri-external-link-line"></i> PER_ALL_ASSIGNMENTS_M</span>
+                    <span class="module-tag tag-doc"><i class="ri-external-link-line"></i> HR_ALL_ORGANIZATION_UNITS_F</span>
+                    <span class="module-tag tag-doc"><i class="ri-external-link-line"></i> PAY_PAYROLL_ACTIONS</span>
+                </div>
+            </div>
+            <i class="ri-arrow-right-s-line module-arrow"></i>
+        </div>
+    </a>
+
+</main>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-left">
+                <div class="footer-avatar" id="f-initials">FR</div>
+                <div>
+                    <div class="footer-author-name">Fabio A. B. Rodrigues</div>
+                    <div class="footer-author-role">Arquitetura e Produtividade Corporativa</div>
+                    <div class="footer-author-email"><a href="mailto:fabio.patria@patria.com">fabio.patria@patria.com</a></div>
+                </div>
+            </div>
+            <div class="footer-right">
+                <div class="footer-doc-title">Patria Investimentos</div>
+                <div class="footer-doc-detail">Oracle Fusion Data Dictionary &middot; BICC Release 13/25A</div>
+            </div>
+        </div>
+        <div class="footer-seal"><i class="ri-shield-check-line"></i> Oracle Fusion Data Dictionary</div>
+    </div>
+</footer>
+
+<button class="back-to-top" id="backToTop" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+    <i class="ri-arrow-up-line"></i>
+</button>
+
+<script>
+var currentLang = 'pt';
+
+var translations = {
+    pt: {
+        intro: '<strong>Objetivo</strong> — Este dicionário documenta as <strong>tabelas e View Objects (PVOs)</strong> do Oracle Fusion Cloud ERP disponíveis para extração via <strong>BICC</strong> (BI Cloud Connector). O objetivo é criar uma base de conhecimento navegável que permita consultar rapidamente a estrutura de dados de cada módulo — colunas, tipos, relacionamentos (FKs), queries de uso típico e observações de negócio. Cada tabela possui documentação em 3 idiomas (PT-BR, EN, ES) e links clicáveis entre tabelas relacionadas.',
+        stat_tables: 'Core Tables Documentadas',
+        stat_modules: 'Módulos ERP',
+        stat_langs: 'Idiomas (PT, EN, ES)',
+        stat_pvos: 'View Objects (PVOs)',
+        section_modules: 'Módulos',
+        gl_desc: 'Contabilidade geral — razão contábil, lançamentos, saldos, calendários, combinações de contas (CCID), taxas de câmbio e estrutura de ledgers. Base de toda a estrutura financeira do ERP.',
+        ap_desc: 'Contas a pagar — faturas de fornecedores, distribuições contábeis, pagamentos, cheques, retenções (holds), histórico de aprovações e parâmetros do sistema. Integração direta com GL para contabilização.',
+        ar_desc: 'Contas a receber — faturas a clientes (invoices, debit/credit memos), recebimentos (cash receipts), ajustes, aplicações de recebimento, schedules de pagamento, aging buckets, cobranças e reconciliação bancária. Inclui tabelas RA_* (transações) e AR_* (operações).',
+        po_desc: 'Compras e procurement — ordens de compra (PO headers/lines/distributions), requisições, recebimentos, fornecedores, contratos, negociações (sourcing), catálogos e aprovações. Abrange os prefixos PO_*, PON_*, POQ_*, POR_* e POZ_*.',
+        hcm_desc: 'Gestão de pessoas — colaboradores, cargos, departamentos, organizações, folha de pagamento, benefícios, ausências, talent management, recrutamento e learning. O maior módulo em volume de tabelas, abrangendo os prefixos PER_*, PAY_*, ANC_*, BEN_*, HRT_*, IRC_* e ORA_HRT_*.',
+    },
+    en: {
+        intro: '<strong>Purpose</strong> — This dictionary documents the <strong>tables and View Objects (PVOs)</strong> from Oracle Fusion Cloud ERP available for extraction via <strong>BICC</strong> (BI Cloud Connector). The goal is to create a navigable knowledge base that allows quick lookup of each module\'s data structure — columns, types, relationships (FKs), typical usage queries, and business notes. Each table is documented in 3 languages (PT-BR, EN, ES) with clickable cross-links between related tables.',
+        stat_tables: 'Core Tables Documented',
+        stat_modules: 'ERP Modules',
+        stat_langs: 'Languages (PT, EN, ES)',
+        stat_pvos: 'View Objects (PVOs)',
+        section_modules: 'Modules',
+        gl_desc: 'General accounting — general ledger, journal entries, balances, calendars, account combinations (CCID), exchange rates, and ledger structure. Foundation of the entire ERP financial structure.',
+        ap_desc: 'Accounts payable — supplier invoices, accounting distributions, payments, checks, holds, approval history, and system parameters. Direct integration with GL for posting.',
+        ar_desc: 'Accounts receivable — customer invoices (invoices, debit/credit memos), cash receipts, adjustments, receipt applications, payment schedules, aging buckets, collections, and bank reconciliation. Includes RA_* (transactions) and AR_* (operations) tables.',
+        po_desc: 'Purchasing and procurement — purchase orders (PO headers/lines/distributions), requisitions, receipts, suppliers, contracts, sourcing negotiations, catalogs, and approvals. Covers PO_*, PON_*, POQ_*, POR_*, and POZ_* prefixes.',
+        hcm_desc: 'Human capital management — employees, positions, departments, organizations, payroll, benefits, absences, talent management, recruiting, and learning. The largest module by table count, covering PER_*, PAY_*, ANC_*, BEN_*, HRT_*, IRC_*, and ORA_HRT_* prefixes.',
+    },
+    es: {
+        intro: '<strong>Objetivo</strong> — Este diccionario documenta las <strong>tablas y View Objects (PVOs)</strong> de Oracle Fusion Cloud ERP disponibles para extracción vía <strong>BICC</strong> (BI Cloud Connector). El objetivo es crear una base de conocimiento navegable que permita consultar rápidamente la estructura de datos de cada módulo — columnas, tipos, relaciones (FKs), queries de uso típico y observaciones de negocio. Cada tabla tiene documentación en 3 idiomas (PT-BR, EN, ES) y enlaces clicables entre tablas relacionadas.',
+        stat_tables: 'Core Tables Documentadas',
+        stat_modules: 'Módulos ERP',
+        stat_langs: 'Idiomas (PT, EN, ES)',
+        stat_pvos: 'View Objects (PVOs)',
+        section_modules: 'Módulos',
+        gl_desc: 'Contabilidad general — libro mayor, asientos contables, saldos, calendarios, combinaciones de cuentas (CCID), tipos de cambio y estructura de ledgers. Base de toda la estructura financiera del ERP.',
+        ap_desc: 'Cuentas por pagar — facturas de proveedores, distribuciones contables, pagos, cheques, retenciones (holds), historial de aprobaciones y parámetros del sistema. Integración directa con GL para contabilización.',
+        ar_desc: 'Cuentas por cobrar — facturas a clientes (invoices, notas de débito/crédito), recibos, ajustes, aplicaciones de recibo, calendarios de pago, aging buckets, cobranzas y conciliación bancaria. Incluye tablas RA_* (transacciones) y AR_* (operaciones).',
+        po_desc: 'Compras y procurement — órdenes de compra (PO headers/lines/distributions), requisiciones, recepciones, proveedores, contratos, negociaciones (sourcing), catálogos y aprobaciones. Abarca los prefijos PO_*, PON_*, POQ_*, POR_* y POZ_*.',
+        hcm_desc: 'Gestión de personas — colaboradores, cargos, departamentos, organizaciones, nómina, beneficios, ausencias, talent management, reclutamiento y learning. El módulo más grande en volumen de tablas, abarcando los prefijos PER_*, PAY_*, ANC_*, BEN_*, HRT_*, IRC_* y ORA_HRT_*.',
+    }
+};
+
+function switchLang(lang) {
+    currentLang = lang;
+    localStorage.setItem('preferred-lang', lang);
+    document.querySelectorAll('.lang-btn').forEach(function(b) { b.classList.remove('active'); });
+    document.getElementById('lang-' + lang).classList.add('active');
+    // Apply translations
+    document.querySelectorAll('[data-i18n]').forEach(function(el) {
+        var key = el.getAttribute('data-i18n');
+        if (translations[lang] && translations[lang][key]) {
+            el.innerHTML = translations[lang][key];
+        }
+    });
+    // Update module card links with lang param
+    document.querySelectorAll('.module-card').forEach(function(card) {
+        var href = card.getAttribute('href').split('?')[0];
+        if (lang !== 'pt') href += '?lang=' + lang;
+        card.setAttribute('href', href);
+    });
+}
+
+function toggleTheme() {
+    var current = document.body.getAttribute('data-theme');
+    document.body.setAttribute('data-theme', current === 'light' ? '' : 'light');
+    document.getElementById('theme-icon').className = current === 'light' ? 'ri-sun-line' : 'ri-moon-line';
+    localStorage.setItem('theme', document.body.getAttribute('data-theme') || 'dark');
+}
+
+(function() {
+    var savedTheme = localStorage.getItem('theme');
+    if (savedTheme === 'light') {
+        document.body.setAttribute('data-theme', 'light');
+        document.getElementById('theme-icon').className = 'ri-moon-line';
+    }
+    var urlLang = new URLSearchParams(window.location.search).get('lang');
+    var targetLang = urlLang || localStorage.getItem('preferred-lang');
+    if (targetLang && targetLang !== 'pt') switchLang(targetLang);
+
+    var btn = document.getElementById('backToTop');
+    window.addEventListener('scroll', function() {
+        btn.classList.toggle('visible', window.scrollY > 300);
+    });
+})();
+</script>
+
+</body>
+</html>

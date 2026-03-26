@@ -1,0 +1,3951 @@
+{
+  "meta": {
+    "pvo_name": "BalanceActivityPVO",
+    "full_path": "FscmTopModelAM.FinCcControlEnginePublicModelAM.BalanceActivityPVO",
+    "module_path": "FscmTopModelAM.FinCcControlEnginePublicModelAM",
+    "module_code": "OTHER",
+    "type": "pvo",
+    "description": "View Object para extração BICC de dados de Balance Activity. Acessa as tabelas: FUN_BU_PERF_V, GL_DAILY_CONVERSION_TYPES, GL_LEDGERS (+9)."
+  },
+  "stats": {
+    "total_attributes": 278,
+    "tables_count": 12,
+    "bicc_enabled": 57,
+    "bicc_pct": 21,
+    "pk_count": 3
+  },
+  "tables": [
+    "FUN_BU_PERF_V",
+    "GL_DAILY_CONVERSION_TYPES",
+    "GL_LEDGERS",
+    "INV_UNITS_OF_MEASURE_VL",
+    "PER_PERSON_NAMES_F_V",
+    "PER_USERS",
+    "XCC_BALANCES_V",
+    "XCC_BALANCE_ACTIVITIES",
+    "XCC_CONTROL_BUDGETS",
+    "XCC_DATA_SETS",
+    "XCC_TR_HEADERS",
+    "XCC_TR_LINES"
+  ],
+  "attributes": [
+    {
+      "name": "BalActPersonCreatedByDisplayName",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "DISPLAY_NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BalActPersonCreatedByEffectiveEndDate",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "EFFECTIVE_END_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BalActPersonCreatedByEffectiveStartDate",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "EFFECTIVE_START_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BalActPersonCreatedByPersonId",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "PERSON_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BalActPersonCreatedByPersonNameId",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "PERSON_NAME_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BalActUserCreatedByObjectVersionNumber",
+      "table": "PER_USERS",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BalActUserCreatedByPersonId",
+      "table": "PER_USERS",
+      "column": "PERSON_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BalActUserCreatedByUserGuid",
+      "table": "PER_USERS",
+      "column": "USER_GUID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BalActUserCreatedByUserId",
+      "table": "PER_USERS",
+      "column": "USER_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BalActUserCreatedByUsername",
+      "table": "PER_USERS",
+      "column": "USERNAME",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BalanceActivityActivityTypeCode",
+      "table": "XCC_BALANCE_ACTIVITIES",
+      "column": "ACTIVITY_TYPE_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BalanceActivityActualAmount",
+      "table": "XCC_BALANCE_ACTIVITIES",
+      "column": "ACTUAL_AMOUNT",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BalanceActivityAllocHeaderNum",
+      "table": "XCC_BALANCE_ACTIVITIES",
+      "column": "ALLOC_HEADER_NUM",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BalanceActivityAllocLineNum",
+      "table": "XCC_BALANCE_ACTIVITIES",
+      "column": "ALLOC_LINE_NUM",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BalanceActivityAmount",
+      "table": "XCC_BALANCE_ACTIVITIES",
+      "column": "AMOUNT",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BalanceActivityBackoutHeaderNum",
+      "table": "XCC_BALANCE_ACTIVITIES",
+      "column": "BACKOUT_HEADER_NUM",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BalanceActivityBackoutLineNum",
+      "table": "XCC_BALANCE_ACTIVITIES",
+      "column": "BACKOUT_LINE_NUM",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BalanceActivityBalanceTypeCode",
+      "table": "XCC_BALANCE_ACTIVITIES",
+      "column": "BALANCE_TYPE_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BalanceActivityBudgetAmount",
+      "table": "XCC_BALANCE_ACTIVITIES",
+      "column": "BUDGET_AMOUNT",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BalanceActivityBudgetCcid",
+      "table": "XCC_BALANCE_ACTIVITIES",
+      "column": "BUDGET_CCID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BalanceActivityBudgetDate",
+      "table": "XCC_BALANCE_ACTIVITIES",
+      "column": "BUDGET_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BalanceActivityBurdenLineFlag",
+      "table": "XCC_BALANCE_ACTIVITIES",
+      "column": "BURDEN_LINE_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BalanceActivityCommitmentAmount",
+      "table": "XCC_BALANCE_ACTIVITIES",
+      "column": "COMMITMENT_AMOUNT",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BalanceActivityControlBudgetId",
+      "table": "XCC_BALANCE_ACTIVITIES",
+      "column": "CONTROL_BUDGET_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BalanceActivityControlLevelCode",
+      "table": "XCC_BALANCE_ACTIVITIES",
+      "column": "CONTROL_LEVEL_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BalanceActivityConversionRate",
+      "table": "XCC_BALANCE_ACTIVITIES",
+      "column": "CONVERSION_RATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BalanceActivityConversionTypeCode",
+      "table": "XCC_BALANCE_ACTIVITIES",
+      "column": "CONVERSION_TYPE_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BalanceActivityCreatedBy",
+      "table": "XCC_BALANCE_ACTIVITIES",
+      "column": "CREATED_BY",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BalanceActivityCreationDate",
+      "table": "XCC_BALANCE_ACTIVITIES",
+      "column": "CREATION_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BalanceActivityEnteredAmount",
+      "table": "XCC_BALANCE_ACTIVITIES",
+      "column": "ENTERED_AMOUNT",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BalanceActivityEnteredCurrency",
+      "table": "XCC_BALANCE_ACTIVITIES",
+      "column": "ENTERED_CURRENCY",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BalanceActivityFundsAvailableAmount",
+      "table": "XCC_BALANCE_ACTIVITIES",
+      "column": "FUNDS_AVAILABLE_AMOUNT",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BalanceActivityLastUpdateDate",
+      "table": "XCC_BALANCE_ACTIVITIES",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": true
+    },
+    {
+      "name": "BalanceActivityLastUpdateLogin",
+      "table": "XCC_BALANCE_ACTIVITIES",
+      "column": "LAST_UPDATE_LOGIN",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BalanceActivityLastUpdatedBy",
+      "table": "XCC_BALANCE_ACTIVITIES",
+      "column": "LAST_UPDATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BalanceActivityNetToleranceAmount",
+      "table": "XCC_BALANCE_ACTIVITIES",
+      "column": "NET_TOLERANCE_AMOUNT",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BalanceActivityObligationAmount",
+      "table": "XCC_BALANCE_ACTIVITIES",
+      "column": "OBLIGATION_AMOUNT",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BalanceActivityOtherAmount",
+      "table": "XCC_BALANCE_ACTIVITIES",
+      "column": "OTHER_AMOUNT",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BalanceActivityOtherLinesAmount",
+      "table": "XCC_BALANCE_ACTIVITIES",
+      "column": "OTHER_LINES_AMOUNT",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BalanceActivityOverrideClosedPeriodFlag",
+      "table": "XCC_BALANCE_ACTIVITIES",
+      "column": "OVERRIDE_CLOSED_PERIOD_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BalanceActivityOverrideFundsFlag",
+      "table": "XCC_BALANCE_ACTIVITIES",
+      "column": "OVERRIDE_FUNDS_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BalanceActivityPendingAmount",
+      "table": "XCC_BALANCE_ACTIVITIES",
+      "column": "PENDING_AMOUNT",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BalanceActivityPeriodName",
+      "table": "XCC_BALANCE_ACTIVITIES",
+      "column": "PERIOD_NAME",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BalanceActivityResultCode",
+      "table": "XCC_BALANCE_ACTIVITIES",
+      "column": "RESULT_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BalanceActivitySubBalanceTypeCode",
+      "table": "XCC_BALANCE_ACTIVITIES",
+      "column": "SUB_BALANCE_TYPE_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BalanceActivityToleranceAmount",
+      "table": "XCC_BALANCE_ACTIVITIES",
+      "column": "TOLERANCE_AMOUNT",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BalanceActivityTolerancePercent",
+      "table": "XCC_BALANCE_ACTIVITIES",
+      "column": "TOLERANCE_PERCENT",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BalanceLineOrder",
+      "table": "XCC_BALANCE_ACTIVITIES",
+      "column": "BALANCE_LINE_ORDER",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    },
+    {
+      "name": "BalancesAccountedPayablesAmount",
+      "table": "XCC_BALANCES_V",
+      "column": "ACCOUNTED_PAYABLES_AMOUNT",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BalancesAccountedProjectAmount",
+      "table": "XCC_BALANCES_V",
+      "column": "ACCOUNTED_PROJECT_AMOUNT",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BalancesAccountedReceiptsAmount",
+      "table": "XCC_BALANCES_V",
+      "column": "ACCOUNTED_RECEIPTS_AMOUNT",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BalancesActualAmount",
+      "table": "XCC_BALANCES_V",
+      "column": "ACTUAL_AMOUNT",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BalancesApprovedCommitmentAmount",
+      "table": "XCC_BALANCES_V",
+      "column": "APPROVED_COMMITMENT_AMOUNT",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BalancesApprovedObligationAmount",
+      "table": "XCC_BALANCES_V",
+      "column": "APPROVED_OBLIGATION_AMOUNT",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BalancesApprovedProjectAmount",
+      "table": "XCC_BALANCES_V",
+      "column": "APPROVED_PROJECT_AMOUNT",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BalancesBudgetAmount",
+      "table": "XCC_BALANCES_V",
+      "column": "BUDGET_AMOUNT",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BalancesBudgetCcid",
+      "table": "XCC_BALANCES_V",
+      "column": "BUDGET_CCID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BalancesCommitmentAmount",
+      "table": "XCC_BALANCES_V",
+      "column": "COMMITMENT_AMOUNT",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BalancesControlBudgetId",
+      "table": "XCC_BALANCES_V",
+      "column": "CONTROL_BUDGET_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BalancesCreatedBy",
+      "table": "XCC_BALANCES_V",
+      "column": "CREATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BalancesCreationDate",
+      "table": "XCC_BALANCES_V",
+      "column": "CREATION_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BalancesDetailOtherAmount",
+      "table": "XCC_BALANCES_V",
+      "column": "DETAIL_OTHER_AMOUNT",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BalancesFundsAvailableAmount",
+      "table": "XCC_BALANCES_V",
+      "column": "FUNDS_AVAILABLE_AMOUNT",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BalancesLastUpdateDate",
+      "table": "XCC_BALANCES_V",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": true
+    },
+    {
+      "name": "BalancesLastUpdateLogin",
+      "table": "XCC_BALANCES_V",
+      "column": "LAST_UPDATE_LOGIN",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BalancesLastUpdatedBy",
+      "table": "XCC_BALANCES_V",
+      "column": "LAST_UPDATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BalancesMiscExpendituresAmount",
+      "table": "XCC_BALANCES_V",
+      "column": "MISC_EXPENDITURES_AMOUNT",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BalancesObligationAmount",
+      "table": "XCC_BALANCES_V",
+      "column": "OBLIGATION_AMOUNT",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BalancesOtherAmount",
+      "table": "XCC_BALANCES_V",
+      "column": "OTHER_AMOUNT",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BalancesPeriodName",
+      "table": "XCC_BALANCES_V",
+      "column": "PERIOD_NAME",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BalancesValidatedPayablesAmount",
+      "table": "XCC_BALANCES_V",
+      "column": "VALIDATED_PAYABLES_AMOUNT",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BusinessUnitBuId",
+      "table": "FUN_BU_PERF_V",
+      "column": "BU_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BusinessUnitName",
+      "table": "FUN_BU_PERF_V",
+      "column": "BU_NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ControlBudgetBudgetChartOfAccountsId",
+      "table": "XCC_CONTROL_BUDGETS",
+      "column": "BUDGET_CHART_OF_ACCOUNTS_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ControlBudgetChartOfAccountsId",
+      "table": "XCC_CONTROL_BUDGETS",
+      "column": "CHART_OF_ACCOUNTS_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ControlBudgetControlBudgetId",
+      "table": "XCC_CONTROL_BUDGETS",
+      "column": "CONTROL_BUDGET_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ControlBudgetCurrencyCode",
+      "table": "XCC_CONTROL_BUDGETS",
+      "column": "CURRENCY_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ControlBudgetFundsReleaseTimeframe",
+      "table": "XCC_CONTROL_BUDGETS",
+      "column": "FUNDS_RELEASE_TIMEFRAME",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ControlBudgetLedgerId",
+      "table": "XCC_CONTROL_BUDGETS",
+      "column": "LEDGER_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ControlBudgetName",
+      "table": "XCC_CONTROL_BUDGETS",
+      "column": "NAME",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ControlBudgetObjectVersionNumber",
+      "table": "XCC_CONTROL_BUDGETS",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ControlBudgetPjcContractId",
+      "table": "XCC_CONTROL_BUDGETS",
+      "column": "PJC_CONTRACT_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ControlBudgetProjectId",
+      "table": "XCC_CONTROL_BUDGETS",
+      "column": "PROJECT_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ConversionType",
+      "table": "GL_DAILY_CONVERSION_TYPES",
+      "column": "CONVERSION_TYPE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "GLDailyConversionTypeObjectVersionNumber",
+      "table": "GL_DAILY_CONVERSION_TYPES",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "HeaderNum",
+      "table": "XCC_BALANCE_ACTIVITIES",
+      "column": "HEADER_NUM",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    },
+    {
+      "name": "LedgerCurrencyCode",
+      "table": "GL_LEDGERS",
+      "column": "CURRENCY_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LedgerId",
+      "table": "GL_LEDGERS",
+      "column": "LEDGER_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LedgerObjectVersionNumber",
+      "table": "GL_LEDGERS",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LineNum",
+      "table": "XCC_BALANCE_ACTIVITIES",
+      "column": "LINE_NUM",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    },
+    {
+      "name": "LiquidatedTransactionHeaderHeaderNum",
+      "table": "XCC_TR_HEADERS",
+      "column": "HEADER_NUM",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LiquidatedTransactionHeaderTransactionNumber",
+      "table": "XCC_TR_HEADERS",
+      "column": "TRANSACTION_NUMBER",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LiquidationTransactionAccountingDate",
+      "table": "XCC_TR_LINES",
+      "column": "ACCOUNTING_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LiquidationTransactionBackedOutFlag",
+      "table": "XCC_TR_LINES",
+      "column": "BACKED_OUT_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LiquidationTransactionBudgetCcid",
+      "table": "XCC_TR_LINES",
+      "column": "BUDGET_CCID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LiquidationTransactionBudgetDate",
+      "table": "XCC_TR_LINES",
+      "column": "BUDGET_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LiquidationTransactionBusinessUnitId",
+      "table": "XCC_TR_LINES",
+      "column": "BUSINESS_UNIT_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LiquidationTransactionCodeCombinationId",
+      "table": "XCC_TR_LINES",
+      "column": "CODE_COMBINATION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LiquidationTransactionControlBudgetId",
+      "table": "XCC_TR_LINES",
+      "column": "CONTROL_BUDGET_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LiquidationTransactionConversionDate",
+      "table": "XCC_TR_LINES",
+      "column": "CONVERSION_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LiquidationTransactionConversionTypeCode",
+      "table": "XCC_TR_LINES",
+      "column": "CONVERSION_TYPE_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LiquidationTransactionCreatedBy",
+      "table": "XCC_TR_LINES",
+      "column": "CREATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LiquidationTransactionCreationDate",
+      "table": "XCC_TR_LINES",
+      "column": "CREATION_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LiquidationTransactionDataPurgedFlag",
+      "table": "XCC_TR_LINES",
+      "column": "DATA_PURGED_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LiquidationTransactionDataSetId",
+      "table": "XCC_TR_LINES",
+      "column": "DATA_SET_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LiquidationTransactionDraftFlag",
+      "table": "XCC_TR_LINES",
+      "column": "DRAFT_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LiquidationTransactionEncumbranceTypeCode",
+      "table": "XCC_TR_LINES",
+      "column": "ENCUMBRANCE_TYPE_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LiquidationTransactionEnteredAmount",
+      "table": "XCC_TR_LINES",
+      "column": "ENTERED_AMOUNT",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LiquidationTransactionEnteredCurrency",
+      "table": "XCC_TR_LINES",
+      "column": "ENTERED_CURRENCY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LiquidationTransactionHeaderNum1",
+      "table": "XCC_TR_LINES",
+      "column": "HEADER_NUM",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LiquidationTransactionInventoryItemId",
+      "table": "XCC_TR_LINES",
+      "column": "INVENTORY_ITEM_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LiquidationTransactionJeCategoryCode",
+      "table": "XCC_TR_LINES",
+      "column": "JE_CATEGORY_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LiquidationTransactionJeSourceCode",
+      "table": "XCC_TR_LINES",
+      "column": "JE_SOURCE_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LiquidationTransactionLastUpdateDate",
+      "table": "XCC_TR_LINES",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LiquidationTransactionLastUpdateLogin",
+      "table": "XCC_TR_LINES",
+      "column": "LAST_UPDATE_LOGIN",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LiquidationTransactionLastUpdatedBy",
+      "table": "XCC_TR_LINES",
+      "column": "LAST_UPDATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LiquidationTransactionLedgerAmount",
+      "table": "XCC_TR_LINES",
+      "column": "LEDGER_AMOUNT",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LiquidationTransactionLedgerId1",
+      "table": "XCC_TR_LINES",
+      "column": "LEDGER_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LiquidationTransactionLineGroupCode",
+      "table": "XCC_TR_LINES",
+      "column": "LINE_GROUP_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LiquidationTransactionLineNum1",
+      "table": "XCC_TR_LINES",
+      "column": "LINE_NUM",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LiquidationTransactionLiquidationAmount",
+      "table": "XCC_TR_LINES",
+      "column": "LIQUIDATION_AMOUNT",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LiquidationTransactionLiquidationDate",
+      "table": "XCC_TR_LINES",
+      "column": "LIQUIDATION_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LiquidationTransactionLiquidationDateCode",
+      "table": "XCC_TR_LINES",
+      "column": "LIQUIDATION_DATE_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LiquidationTransactionLiquidationLineId1",
+      "table": "XCC_TR_LINES",
+      "column": "LIQUIDATION_LINE_ID_1",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LiquidationTransactionLiquidationLineId2",
+      "table": "XCC_TR_LINES",
+      "column": "LIQUIDATION_LINE_ID_2",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LiquidationTransactionLiquidationLineId3",
+      "table": "XCC_TR_LINES",
+      "column": "LIQUIDATION_LINE_ID_3",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LiquidationTransactionLiquidationLineId4",
+      "table": "XCC_TR_LINES",
+      "column": "LIQUIDATION_LINE_ID_4",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LiquidationTransactionLiquidationLineId5",
+      "table": "XCC_TR_LINES",
+      "column": "LIQUIDATION_LINE_ID_5",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LiquidationTransactionLiquidationLineId6",
+      "table": "XCC_TR_LINES",
+      "column": "LIQUIDATION_LINE_ID_6",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LiquidationTransactionLiquidationQuantity",
+      "table": "XCC_TR_LINES",
+      "column": "LIQUIDATION_QUANTITY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LiquidationTransactionLiquidationTransTypeCode",
+      "table": "XCC_TR_LINES",
+      "column": "LIQUIDATION_TRANS_TYPE_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LiquidationTransactionNeedsAccountFlag",
+      "table": "XCC_TR_LINES",
+      "column": "NEEDS_ACCOUNT_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LiquidationTransactionNeedsResourceFlag",
+      "table": "XCC_TR_LINES",
+      "column": "NEEDS_RESOURCE_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LiquidationTransactionOrderTypeInfo",
+      "table": "XCC_TR_LINES",
+      "column": "ORDER_TYPE_INFO",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LiquidationTransactionOverridableCode",
+      "table": "XCC_TR_LINES",
+      "column": "OVERRIDABLE_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LiquidationTransactionOverrideFlag",
+      "table": "XCC_TR_LINES",
+      "column": "OVERRIDE_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LiquidationTransactionPartialReservationFlag",
+      "table": "XCC_TR_LINES",
+      "column": "PARTIAL_RESERVATION_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LiquidationTransactionPjcBillableFlag",
+      "table": "XCC_TR_LINES",
+      "column": "PJC_BILLABLE_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LiquidationTransactionPjcCapitalizableFlag",
+      "table": "XCC_TR_LINES",
+      "column": "PJC_CAPITALIZABLE_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LiquidationTransactionPjcContractId",
+      "table": "XCC_TR_LINES",
+      "column": "PJC_CONTRACT_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LiquidationTransactionPjcContractLineId",
+      "table": "XCC_TR_LINES",
+      "column": "PJC_CONTRACT_LINE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LiquidationTransactionPjcExpenditureItemDate",
+      "table": "XCC_TR_LINES",
+      "column": "PJC_EXPENDITURE_ITEM_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LiquidationTransactionPjcExpenditureTypeId",
+      "table": "XCC_TR_LINES",
+      "column": "PJC_EXPENDITURE_TYPE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LiquidationTransactionPjcFundingAllocationId",
+      "table": "XCC_TR_LINES",
+      "column": "PJC_FUNDING_ALLOCATION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LiquidationTransactionPjcOrganizationId",
+      "table": "XCC_TR_LINES",
+      "column": "PJC_ORGANIZATION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LiquidationTransactionPjcProjectId",
+      "table": "XCC_TR_LINES",
+      "column": "PJC_PROJECT_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LiquidationTransactionPjcResourceId",
+      "table": "XCC_TR_LINES",
+      "column": "PJC_RESOURCE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LiquidationTransactionPjcTaskId",
+      "table": "XCC_TR_LINES",
+      "column": "PJC_TASK_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LiquidationTransactionPjcWorkTypeId",
+      "table": "XCC_TR_LINES",
+      "column": "PJC_WORK_TYPE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LiquidationTransactionPrice",
+      "table": "XCC_TR_LINES",
+      "column": "PRICE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LiquidationTransactionQuantity",
+      "table": "XCC_TR_LINES",
+      "column": "QUANTITY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LiquidationTransactionResultCode",
+      "table": "XCC_TR_LINES",
+      "column": "RESULT_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LiquidationTransactionSourceLineId1",
+      "table": "XCC_TR_LINES",
+      "column": "SOURCE_LINE_ID_1",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LiquidationTransactionSourceLineId2",
+      "table": "XCC_TR_LINES",
+      "column": "SOURCE_LINE_ID_2",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LiquidationTransactionSourceLineId3",
+      "table": "XCC_TR_LINES",
+      "column": "SOURCE_LINE_ID_3",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LiquidationTransactionSourceLineId4",
+      "table": "XCC_TR_LINES",
+      "column": "SOURCE_LINE_ID_4",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LiquidationTransactionSourceLineId5",
+      "table": "XCC_TR_LINES",
+      "column": "SOURCE_LINE_ID_5",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LiquidationTransactionSourceLineId6",
+      "table": "XCC_TR_LINES",
+      "column": "SOURCE_LINE_ID_6",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LiquidationTransactionSourceTransactionTypeCode",
+      "table": "XCC_TR_LINES",
+      "column": "SOURCE_TRANSACTION_TYPE_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LiquidationTransactionStatisticalAmount",
+      "table": "XCC_TR_LINES",
+      "column": "STATISTICAL_AMOUNT",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LiquidationTransactionTransactionSubtypeCode",
+      "table": "XCC_TR_LINES",
+      "column": "TRANSACTION_SUBTYPE_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LiquidationTransactionUomCode",
+      "table": "XCC_TR_LINES",
+      "column": "UOM_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LiquidationTransactionVendorId",
+      "table": "XCC_TR_LINES",
+      "column": "VENDOR_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ObjectVersionNumber",
+      "table": "INV_UNITS_OF_MEASURE_VL",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonNameDisplayName",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "DISPLAY_NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonNameEffectiveEndDate",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "EFFECTIVE_END_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonNameEffectiveStartDate",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "EFFECTIVE_START_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonNameObjectVersionNumber",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonNamePersonId",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "PERSON_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonNamePersonNameId",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "PERSON_NAME_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TrHdrPersonCreatedByDisplayName",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "DISPLAY_NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TrHdrPersonCreatedByEffectiveEndDate",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "EFFECTIVE_END_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TrHdrPersonCreatedByEffectiveStartDate",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "EFFECTIVE_START_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TrHdrPersonCreatedByPersonId",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "PERSON_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TrHdrPersonCreatedByPersonNameId",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "PERSON_NAME_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TrHdrUserCreatedByObjectVersionNumber",
+      "table": "PER_USERS",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TrHdrUserCreatedByPersonId",
+      "table": "PER_USERS",
+      "column": "PERSON_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TrHdrUserCreatedByUserGuid",
+      "table": "PER_USERS",
+      "column": "USER_GUID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TrHdrUserCreatedByUserId",
+      "table": "PER_USERS",
+      "column": "USER_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TrHdrUserCreatedByUsername",
+      "table": "PER_USERS",
+      "column": "USERNAME",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TransactionHeaderArrivalOrder",
+      "table": "XCC_TR_HEADERS",
+      "column": "ARRIVAL_ORDER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TransactionHeaderBudgetFlag",
+      "table": "XCC_TR_HEADERS",
+      "column": "BUDGET_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TransactionHeaderBusinessUnitId",
+      "table": "XCC_TR_HEADERS",
+      "column": "BUSINESS_UNIT_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TransactionHeaderCreatedBy",
+      "table": "XCC_TR_HEADERS",
+      "column": "CREATED_BY",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TransactionHeaderCreationDate",
+      "table": "XCC_TR_HEADERS",
+      "column": "CREATION_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TransactionHeaderDataSetId",
+      "table": "XCC_TR_HEADERS",
+      "column": "DATA_SET_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TransactionHeaderDestinationTypeCode",
+      "table": "XCC_TR_HEADERS",
+      "column": "DESTINATION_TYPE_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TransactionHeaderDocumentTypeCode",
+      "table": "XCC_TR_HEADERS",
+      "column": "DOCUMENT_TYPE_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TransactionHeaderDraftFlag",
+      "table": "XCC_TR_HEADERS",
+      "column": "DRAFT_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TransactionHeaderHeaderNum",
+      "table": "XCC_TR_HEADERS",
+      "column": "HEADER_NUM",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TransactionHeaderJeSourceCode",
+      "table": "XCC_TR_HEADERS",
+      "column": "JE_SOURCE_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TransactionHeaderLastUpdateDate",
+      "table": "XCC_TR_HEADERS",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TransactionHeaderLastUpdateLogin",
+      "table": "XCC_TR_HEADERS",
+      "column": "LAST_UPDATE_LOGIN",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TransactionHeaderLastUpdatedBy",
+      "table": "XCC_TR_HEADERS",
+      "column": "LAST_UPDATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TransactionHeaderLedgerId",
+      "table": "XCC_TR_HEADERS",
+      "column": "LEDGER_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TransactionHeaderLiquidationDateCode",
+      "table": "XCC_TR_HEADERS",
+      "column": "LIQUIDATION_DATE_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TransactionHeaderOverrideFlag",
+      "table": "XCC_TR_HEADERS",
+      "column": "OVERRIDE_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TransactionHeaderPartialReservationFlag",
+      "table": "XCC_TR_HEADERS",
+      "column": "PARTIAL_RESERVATION_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TransactionHeaderResultCode",
+      "table": "XCC_TR_HEADERS",
+      "column": "RESULT_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TransactionHeaderSourceActionCode",
+      "table": "XCC_TR_HEADERS",
+      "column": "SOURCE_ACTION_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TransactionHeaderSourceHeaderId1",
+      "table": "XCC_TR_HEADERS",
+      "column": "SOURCE_HEADER_ID_1",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TransactionHeaderSourceHeaderId2",
+      "table": "XCC_TR_HEADERS",
+      "column": "SOURCE_HEADER_ID_2",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TransactionHeaderTransactionNumber",
+      "table": "XCC_TR_HEADERS",
+      "column": "TRANSACTION_NUMBER",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TransactionHeaderTransactionSourceCode",
+      "table": "XCC_TR_HEADERS",
+      "column": "TRANSACTION_SOURCE_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TransactionHeaderTransactionTypeCode",
+      "table": "XCC_TR_HEADERS",
+      "column": "TRANSACTION_TYPE_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TransactionLineAccountingDate",
+      "table": "XCC_TR_LINES",
+      "column": "ACCOUNTING_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TransactionLineBackedOutFlag",
+      "table": "XCC_TR_LINES",
+      "column": "BACKED_OUT_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TransactionLineBudgetCcid",
+      "table": "XCC_TR_LINES",
+      "column": "BUDGET_CCID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TransactionLineBudgetDate",
+      "table": "XCC_TR_LINES",
+      "column": "BUDGET_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TransactionLineBusinessUnitId",
+      "table": "XCC_TR_LINES",
+      "column": "BUSINESS_UNIT_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TransactionLineCodeCombinationId",
+      "table": "XCC_TR_LINES",
+      "column": "CODE_COMBINATION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TransactionLineControlBudgetId",
+      "table": "XCC_TR_LINES",
+      "column": "CONTROL_BUDGET_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TransactionLineConversionDate",
+      "table": "XCC_TR_LINES",
+      "column": "CONVERSION_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TransactionLineConversionTypeCode",
+      "table": "XCC_TR_LINES",
+      "column": "CONVERSION_TYPE_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TransactionLineCreatedBy",
+      "table": "XCC_TR_LINES",
+      "column": "CREATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TransactionLineCreationDate",
+      "table": "XCC_TR_LINES",
+      "column": "CREATION_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TransactionLineDataSetId",
+      "table": "XCC_TR_LINES",
+      "column": "DATA_SET_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TransactionLineDraftFlag",
+      "table": "XCC_TR_LINES",
+      "column": "DRAFT_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TransactionLineEncumbranceTypeCode",
+      "table": "XCC_TR_LINES",
+      "column": "ENCUMBRANCE_TYPE_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TransactionLineEnteredAmount",
+      "table": "XCC_TR_LINES",
+      "column": "ENTERED_AMOUNT",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TransactionLineEnteredCurrency",
+      "table": "XCC_TR_LINES",
+      "column": "ENTERED_CURRENCY",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TransactionLineHeaderNum",
+      "table": "XCC_TR_LINES",
+      "column": "HEADER_NUM",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TransactionLineJeCategoryCode",
+      "table": "XCC_TR_LINES",
+      "column": "JE_CATEGORY_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TransactionLineLastUpdateDate",
+      "table": "XCC_TR_LINES",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TransactionLineLastUpdateLogin",
+      "table": "XCC_TR_LINES",
+      "column": "LAST_UPDATE_LOGIN",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TransactionLineLastUpdatedBy",
+      "table": "XCC_TR_LINES",
+      "column": "LAST_UPDATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TransactionLineLedgerAmount",
+      "table": "XCC_TR_LINES",
+      "column": "LEDGER_AMOUNT",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TransactionLineLedgerId",
+      "table": "XCC_TR_LINES",
+      "column": "LEDGER_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TransactionLineLineGroupCode",
+      "table": "XCC_TR_LINES",
+      "column": "LINE_GROUP_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TransactionLineLineNum",
+      "table": "XCC_TR_LINES",
+      "column": "LINE_NUM",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TransactionLineLiquidationAmount",
+      "table": "XCC_TR_LINES",
+      "column": "LIQUIDATION_AMOUNT",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TransactionLineLiquidationDate",
+      "table": "XCC_TR_LINES",
+      "column": "LIQUIDATION_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TransactionLineLiquidationDateCode",
+      "table": "XCC_TR_LINES",
+      "column": "LIQUIDATION_DATE_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TransactionLineLiquidationLineId1",
+      "table": "XCC_TR_LINES",
+      "column": "LIQUIDATION_LINE_ID_1",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TransactionLineLiquidationLineId2",
+      "table": "XCC_TR_LINES",
+      "column": "LIQUIDATION_LINE_ID_2",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TransactionLineLiquidationLineId3",
+      "table": "XCC_TR_LINES",
+      "column": "LIQUIDATION_LINE_ID_3",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TransactionLineLiquidationLineId4",
+      "table": "XCC_TR_LINES",
+      "column": "LIQUIDATION_LINE_ID_4",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TransactionLineLiquidationLineId5",
+      "table": "XCC_TR_LINES",
+      "column": "LIQUIDATION_LINE_ID_5",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TransactionLineLiquidationLineId6",
+      "table": "XCC_TR_LINES",
+      "column": "LIQUIDATION_LINE_ID_6",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TransactionLineLiquidationQuantity",
+      "table": "XCC_TR_LINES",
+      "column": "LIQUIDATION_QUANTITY",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TransactionLineLiquidationTransTypeCode",
+      "table": "XCC_TR_LINES",
+      "column": "LIQUIDATION_TRANS_TYPE_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TransactionLinePartialReservationFlag",
+      "table": "XCC_TR_LINES",
+      "column": "PARTIAL_RESERVATION_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TransactionLinePjcBillableFlag",
+      "table": "XCC_TR_LINES",
+      "column": "PJC_BILLABLE_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TransactionLinePjcCapitalizableFlag",
+      "table": "XCC_TR_LINES",
+      "column": "PJC_CAPITALIZABLE_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TransactionLinePjcContractId",
+      "table": "XCC_TR_LINES",
+      "column": "PJC_CONTRACT_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TransactionLinePjcContractLineId",
+      "table": "XCC_TR_LINES",
+      "column": "PJC_CONTRACT_LINE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TransactionLinePjcExpenditureItemDate",
+      "table": "XCC_TR_LINES",
+      "column": "PJC_EXPENDITURE_ITEM_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TransactionLinePjcExpenditureTypeId",
+      "table": "XCC_TR_LINES",
+      "column": "PJC_EXPENDITURE_TYPE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TransactionLinePjcFundingAllocationId",
+      "table": "XCC_TR_LINES",
+      "column": "PJC_FUNDING_ALLOCATION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TransactionLinePjcOrganizationId",
+      "table": "XCC_TR_LINES",
+      "column": "PJC_ORGANIZATION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TransactionLinePjcProjectId",
+      "table": "XCC_TR_LINES",
+      "column": "PJC_PROJECT_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TransactionLinePjcResourceId",
+      "table": "XCC_TR_LINES",
+      "column": "PJC_RESOURCE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TransactionLinePjcTaskId",
+      "table": "XCC_TR_LINES",
+      "column": "PJC_TASK_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TransactionLinePjcWorkTypeId",
+      "table": "XCC_TR_LINES",
+      "column": "PJC_WORK_TYPE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TransactionLinePrice",
+      "table": "XCC_TR_LINES",
+      "column": "PRICE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TransactionLineQuantity",
+      "table": "XCC_TR_LINES",
+      "column": "QUANTITY",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TransactionLineResultCode",
+      "table": "XCC_TR_LINES",
+      "column": "RESULT_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TransactionLineSourceLineId1",
+      "table": "XCC_TR_LINES",
+      "column": "SOURCE_LINE_ID_1",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TransactionLineSourceLineId2",
+      "table": "XCC_TR_LINES",
+      "column": "SOURCE_LINE_ID_2",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TransactionLineSourceLineId3",
+      "table": "XCC_TR_LINES",
+      "column": "SOURCE_LINE_ID_3",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TransactionLineSourceLineId4",
+      "table": "XCC_TR_LINES",
+      "column": "SOURCE_LINE_ID_4",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TransactionLineSourceLineId5",
+      "table": "XCC_TR_LINES",
+      "column": "SOURCE_LINE_ID_5",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TransactionLineSourceTransactionTypeCode",
+      "table": "XCC_TR_LINES",
+      "column": "SOURCE_TRANSACTION_TYPE_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TransactionLineStatisticalAmount",
+      "table": "XCC_TR_LINES",
+      "column": "STATISTICAL_AMOUNT",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TransactionLineTransactionSubtypeCode",
+      "table": "XCC_TR_LINES",
+      "column": "TRANSACTION_SUBTYPE_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TransactionLineUomCode",
+      "table": "XCC_TR_LINES",
+      "column": "UOM_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "UnitOfMeasureDescription",
+      "table": "INV_UNITS_OF_MEASURE_VL",
+      "column": "DESCRIPTION",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "UnitOfMeasureUnitOfMeasure",
+      "table": "INV_UNITS_OF_MEASURE_VL",
+      "column": "UNIT_OF_MEASURE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "UnitOfMeasureUomCode",
+      "table": "INV_UNITS_OF_MEASURE_VL",
+      "column": "UOM_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "UserConversionType",
+      "table": "GL_DAILY_CONVERSION_TYPES",
+      "column": "USER_CONVERSION_TYPE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "UserObjectVersionNumber",
+      "table": "PER_USERS",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "UserPersonId",
+      "table": "PER_USERS",
+      "column": "PERSON_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "UserUserGuid",
+      "table": "PER_USERS",
+      "column": "USER_GUID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "UserUserId",
+      "table": "PER_USERS",
+      "column": "USER_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "XccDataSetsDataSetId",
+      "table": "XCC_DATA_SETS",
+      "column": "DATA_SET_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "XccDataSetsOverrideFlag",
+      "table": "XCC_DATA_SETS",
+      "column": "OVERRIDE_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "XccDataSetsOverrideReason",
+      "table": "XCC_DATA_SETS",
+      "column": "OVERRIDE_REASON",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "XccDataSetsOverrideUserGuid",
+      "table": "XCC_DATA_SETS",
+      "column": "OVERRIDE_USER_GUID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    }
+  ],
+  "by_table": {
+    "PER_PERSON_NAMES_F_V": [
+      {
+        "attribute": "BalActPersonCreatedByDisplayName",
+        "column": "DISPLAY_NAME",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "BalActPersonCreatedByEffectiveEndDate",
+        "column": "EFFECTIVE_END_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BalActPersonCreatedByEffectiveStartDate",
+        "column": "EFFECTIVE_START_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BalActPersonCreatedByPersonId",
+        "column": "PERSON_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BalActPersonCreatedByPersonNameId",
+        "column": "PERSON_NAME_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PersonNameDisplayName",
+        "column": "DISPLAY_NAME",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PersonNameEffectiveEndDate",
+        "column": "EFFECTIVE_END_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PersonNameEffectiveStartDate",
+        "column": "EFFECTIVE_START_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PersonNameObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PersonNamePersonId",
+        "column": "PERSON_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PersonNamePersonNameId",
+        "column": "PERSON_NAME_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TrHdrPersonCreatedByDisplayName",
+        "column": "DISPLAY_NAME",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TrHdrPersonCreatedByEffectiveEndDate",
+        "column": "EFFECTIVE_END_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TrHdrPersonCreatedByEffectiveStartDate",
+        "column": "EFFECTIVE_START_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TrHdrPersonCreatedByPersonId",
+        "column": "PERSON_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TrHdrPersonCreatedByPersonNameId",
+        "column": "PERSON_NAME_ID",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "PER_USERS": [
+      {
+        "attribute": "BalActUserCreatedByObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BalActUserCreatedByPersonId",
+        "column": "PERSON_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BalActUserCreatedByUserGuid",
+        "column": "USER_GUID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BalActUserCreatedByUserId",
+        "column": "USER_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BalActUserCreatedByUsername",
+        "column": "USERNAME",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TrHdrUserCreatedByObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TrHdrUserCreatedByPersonId",
+        "column": "PERSON_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TrHdrUserCreatedByUserGuid",
+        "column": "USER_GUID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TrHdrUserCreatedByUserId",
+        "column": "USER_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TrHdrUserCreatedByUsername",
+        "column": "USERNAME",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "UserObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "UserPersonId",
+        "column": "PERSON_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "UserUserGuid",
+        "column": "USER_GUID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "UserUserId",
+        "column": "USER_ID",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "XCC_BALANCE_ACTIVITIES": [
+      {
+        "attribute": "BalanceActivityActivityTypeCode",
+        "column": "ACTIVITY_TYPE_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "BalanceActivityActualAmount",
+        "column": "ACTUAL_AMOUNT",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BalanceActivityAllocHeaderNum",
+        "column": "ALLOC_HEADER_NUM",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BalanceActivityAllocLineNum",
+        "column": "ALLOC_LINE_NUM",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BalanceActivityAmount",
+        "column": "AMOUNT",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "BalanceActivityBackoutHeaderNum",
+        "column": "BACKOUT_HEADER_NUM",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BalanceActivityBackoutLineNum",
+        "column": "BACKOUT_LINE_NUM",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BalanceActivityBalanceTypeCode",
+        "column": "BALANCE_TYPE_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "BalanceActivityBudgetAmount",
+        "column": "BUDGET_AMOUNT",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BalanceActivityBudgetCcid",
+        "column": "BUDGET_CCID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BalanceActivityBudgetDate",
+        "column": "BUDGET_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "BalanceActivityBurdenLineFlag",
+        "column": "BURDEN_LINE_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "BalanceActivityCommitmentAmount",
+        "column": "COMMITMENT_AMOUNT",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BalanceActivityControlBudgetId",
+        "column": "CONTROL_BUDGET_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BalanceActivityControlLevelCode",
+        "column": "CONTROL_LEVEL_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "BalanceActivityConversionRate",
+        "column": "CONVERSION_RATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BalanceActivityConversionTypeCode",
+        "column": "CONVERSION_TYPE_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BalanceActivityCreatedBy",
+        "column": "CREATED_BY",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "BalanceActivityCreationDate",
+        "column": "CREATION_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "BalanceActivityEnteredAmount",
+        "column": "ENTERED_AMOUNT",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "BalanceActivityEnteredCurrency",
+        "column": "ENTERED_CURRENCY",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "BalanceActivityFundsAvailableAmount",
+        "column": "FUNDS_AVAILABLE_AMOUNT",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BalanceActivityLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "BalanceActivityLastUpdateLogin",
+        "column": "LAST_UPDATE_LOGIN",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BalanceActivityLastUpdatedBy",
+        "column": "LAST_UPDATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BalanceActivityNetToleranceAmount",
+        "column": "NET_TOLERANCE_AMOUNT",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BalanceActivityObligationAmount",
+        "column": "OBLIGATION_AMOUNT",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BalanceActivityOtherAmount",
+        "column": "OTHER_AMOUNT",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BalanceActivityOtherLinesAmount",
+        "column": "OTHER_LINES_AMOUNT",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BalanceActivityOverrideClosedPeriodFlag",
+        "column": "OVERRIDE_CLOSED_PERIOD_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "BalanceActivityOverrideFundsFlag",
+        "column": "OVERRIDE_FUNDS_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "BalanceActivityPendingAmount",
+        "column": "PENDING_AMOUNT",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BalanceActivityPeriodName",
+        "column": "PERIOD_NAME",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BalanceActivityResultCode",
+        "column": "RESULT_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "BalanceActivitySubBalanceTypeCode",
+        "column": "SUB_BALANCE_TYPE_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BalanceActivityToleranceAmount",
+        "column": "TOLERANCE_AMOUNT",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "BalanceActivityTolerancePercent",
+        "column": "TOLERANCE_PERCENT",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BalanceLineOrder",
+        "column": "BALANCE_LINE_ORDER",
+        "bicc": true,
+        "pk": true
+      },
+      {
+        "attribute": "HeaderNum",
+        "column": "HEADER_NUM",
+        "bicc": true,
+        "pk": true
+      },
+      {
+        "attribute": "LineNum",
+        "column": "LINE_NUM",
+        "bicc": true,
+        "pk": true
+      }
+    ],
+    "XCC_BALANCES_V": [
+      {
+        "attribute": "BalancesAccountedPayablesAmount",
+        "column": "ACCOUNTED_PAYABLES_AMOUNT",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BalancesAccountedProjectAmount",
+        "column": "ACCOUNTED_PROJECT_AMOUNT",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BalancesAccountedReceiptsAmount",
+        "column": "ACCOUNTED_RECEIPTS_AMOUNT",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BalancesActualAmount",
+        "column": "ACTUAL_AMOUNT",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BalancesApprovedCommitmentAmount",
+        "column": "APPROVED_COMMITMENT_AMOUNT",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BalancesApprovedObligationAmount",
+        "column": "APPROVED_OBLIGATION_AMOUNT",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BalancesApprovedProjectAmount",
+        "column": "APPROVED_PROJECT_AMOUNT",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BalancesBudgetAmount",
+        "column": "BUDGET_AMOUNT",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BalancesBudgetCcid",
+        "column": "BUDGET_CCID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BalancesCommitmentAmount",
+        "column": "COMMITMENT_AMOUNT",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BalancesControlBudgetId",
+        "column": "CONTROL_BUDGET_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BalancesCreatedBy",
+        "column": "CREATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BalancesCreationDate",
+        "column": "CREATION_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BalancesDetailOtherAmount",
+        "column": "DETAIL_OTHER_AMOUNT",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BalancesFundsAvailableAmount",
+        "column": "FUNDS_AVAILABLE_AMOUNT",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BalancesLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "BalancesLastUpdateLogin",
+        "column": "LAST_UPDATE_LOGIN",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BalancesLastUpdatedBy",
+        "column": "LAST_UPDATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BalancesMiscExpendituresAmount",
+        "column": "MISC_EXPENDITURES_AMOUNT",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BalancesObligationAmount",
+        "column": "OBLIGATION_AMOUNT",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BalancesOtherAmount",
+        "column": "OTHER_AMOUNT",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BalancesPeriodName",
+        "column": "PERIOD_NAME",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BalancesValidatedPayablesAmount",
+        "column": "VALIDATED_PAYABLES_AMOUNT",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "FUN_BU_PERF_V": [
+      {
+        "attribute": "BusinessUnitBuId",
+        "column": "BU_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BusinessUnitName",
+        "column": "BU_NAME",
+        "bicc": true,
+        "pk": false
+      }
+    ],
+    "XCC_CONTROL_BUDGETS": [
+      {
+        "attribute": "ControlBudgetBudgetChartOfAccountsId",
+        "column": "BUDGET_CHART_OF_ACCOUNTS_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ControlBudgetChartOfAccountsId",
+        "column": "CHART_OF_ACCOUNTS_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ControlBudgetControlBudgetId",
+        "column": "CONTROL_BUDGET_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ControlBudgetCurrencyCode",
+        "column": "CURRENCY_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ControlBudgetFundsReleaseTimeframe",
+        "column": "FUNDS_RELEASE_TIMEFRAME",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ControlBudgetLedgerId",
+        "column": "LEDGER_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ControlBudgetName",
+        "column": "NAME",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ControlBudgetObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ControlBudgetPjcContractId",
+        "column": "PJC_CONTRACT_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ControlBudgetProjectId",
+        "column": "PROJECT_ID",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "GL_DAILY_CONVERSION_TYPES": [
+      {
+        "attribute": "ConversionType",
+        "column": "CONVERSION_TYPE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "GLDailyConversionTypeObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "UserConversionType",
+        "column": "USER_CONVERSION_TYPE",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "GL_LEDGERS": [
+      {
+        "attribute": "LedgerCurrencyCode",
+        "column": "CURRENCY_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "LedgerId",
+        "column": "LEDGER_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "LedgerObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "XCC_TR_HEADERS": [
+      {
+        "attribute": "LiquidatedTransactionHeaderHeaderNum",
+        "column": "HEADER_NUM",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "LiquidatedTransactionHeaderTransactionNumber",
+        "column": "TRANSACTION_NUMBER",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TransactionHeaderArrivalOrder",
+        "column": "ARRIVAL_ORDER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TransactionHeaderBudgetFlag",
+        "column": "BUDGET_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TransactionHeaderBusinessUnitId",
+        "column": "BUSINESS_UNIT_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TransactionHeaderCreatedBy",
+        "column": "CREATED_BY",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TransactionHeaderCreationDate",
+        "column": "CREATION_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TransactionHeaderDataSetId",
+        "column": "DATA_SET_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TransactionHeaderDestinationTypeCode",
+        "column": "DESTINATION_TYPE_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TransactionHeaderDocumentTypeCode",
+        "column": "DOCUMENT_TYPE_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TransactionHeaderDraftFlag",
+        "column": "DRAFT_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TransactionHeaderHeaderNum",
+        "column": "HEADER_NUM",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TransactionHeaderJeSourceCode",
+        "column": "JE_SOURCE_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TransactionHeaderLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TransactionHeaderLastUpdateLogin",
+        "column": "LAST_UPDATE_LOGIN",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TransactionHeaderLastUpdatedBy",
+        "column": "LAST_UPDATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TransactionHeaderLedgerId",
+        "column": "LEDGER_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TransactionHeaderLiquidationDateCode",
+        "column": "LIQUIDATION_DATE_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TransactionHeaderOverrideFlag",
+        "column": "OVERRIDE_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TransactionHeaderPartialReservationFlag",
+        "column": "PARTIAL_RESERVATION_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TransactionHeaderResultCode",
+        "column": "RESULT_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TransactionHeaderSourceActionCode",
+        "column": "SOURCE_ACTION_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TransactionHeaderSourceHeaderId1",
+        "column": "SOURCE_HEADER_ID_1",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TransactionHeaderSourceHeaderId2",
+        "column": "SOURCE_HEADER_ID_2",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TransactionHeaderTransactionNumber",
+        "column": "TRANSACTION_NUMBER",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TransactionHeaderTransactionSourceCode",
+        "column": "TRANSACTION_SOURCE_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TransactionHeaderTransactionTypeCode",
+        "column": "TRANSACTION_TYPE_CODE",
+        "bicc": true,
+        "pk": false
+      }
+    ],
+    "XCC_TR_LINES": [
+      {
+        "attribute": "LiquidationTransactionAccountingDate",
+        "column": "ACCOUNTING_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "LiquidationTransactionBackedOutFlag",
+        "column": "BACKED_OUT_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "LiquidationTransactionBudgetCcid",
+        "column": "BUDGET_CCID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "LiquidationTransactionBudgetDate",
+        "column": "BUDGET_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "LiquidationTransactionBusinessUnitId",
+        "column": "BUSINESS_UNIT_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "LiquidationTransactionCodeCombinationId",
+        "column": "CODE_COMBINATION_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "LiquidationTransactionControlBudgetId",
+        "column": "CONTROL_BUDGET_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "LiquidationTransactionConversionDate",
+        "column": "CONVERSION_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "LiquidationTransactionConversionTypeCode",
+        "column": "CONVERSION_TYPE_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "LiquidationTransactionCreatedBy",
+        "column": "CREATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "LiquidationTransactionCreationDate",
+        "column": "CREATION_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "LiquidationTransactionDataPurgedFlag",
+        "column": "DATA_PURGED_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "LiquidationTransactionDataSetId",
+        "column": "DATA_SET_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "LiquidationTransactionDraftFlag",
+        "column": "DRAFT_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "LiquidationTransactionEncumbranceTypeCode",
+        "column": "ENCUMBRANCE_TYPE_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "LiquidationTransactionEnteredAmount",
+        "column": "ENTERED_AMOUNT",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "LiquidationTransactionEnteredCurrency",
+        "column": "ENTERED_CURRENCY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "LiquidationTransactionHeaderNum1",
+        "column": "HEADER_NUM",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "LiquidationTransactionInventoryItemId",
+        "column": "INVENTORY_ITEM_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "LiquidationTransactionJeCategoryCode",
+        "column": "JE_CATEGORY_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "LiquidationTransactionJeSourceCode",
+        "column": "JE_SOURCE_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "LiquidationTransactionLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "LiquidationTransactionLastUpdateLogin",
+        "column": "LAST_UPDATE_LOGIN",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "LiquidationTransactionLastUpdatedBy",
+        "column": "LAST_UPDATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "LiquidationTransactionLedgerAmount",
+        "column": "LEDGER_AMOUNT",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "LiquidationTransactionLedgerId1",
+        "column": "LEDGER_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "LiquidationTransactionLineGroupCode",
+        "column": "LINE_GROUP_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "LiquidationTransactionLineNum1",
+        "column": "LINE_NUM",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "LiquidationTransactionLiquidationAmount",
+        "column": "LIQUIDATION_AMOUNT",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "LiquidationTransactionLiquidationDate",
+        "column": "LIQUIDATION_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "LiquidationTransactionLiquidationDateCode",
+        "column": "LIQUIDATION_DATE_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "LiquidationTransactionLiquidationLineId1",
+        "column": "LIQUIDATION_LINE_ID_1",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "LiquidationTransactionLiquidationLineId2",
+        "column": "LIQUIDATION_LINE_ID_2",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "LiquidationTransactionLiquidationLineId3",
+        "column": "LIQUIDATION_LINE_ID_3",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "LiquidationTransactionLiquidationLineId4",
+        "column": "LIQUIDATION_LINE_ID_4",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "LiquidationTransactionLiquidationLineId5",
+        "column": "LIQUIDATION_LINE_ID_5",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "LiquidationTransactionLiquidationLineId6",
+        "column": "LIQUIDATION_LINE_ID_6",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "LiquidationTransactionLiquidationQuantity",
+        "column": "LIQUIDATION_QUANTITY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "LiquidationTransactionLiquidationTransTypeCode",
+        "column": "LIQUIDATION_TRANS_TYPE_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "LiquidationTransactionNeedsAccountFlag",
+        "column": "NEEDS_ACCOUNT_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "LiquidationTransactionNeedsResourceFlag",
+        "column": "NEEDS_RESOURCE_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "LiquidationTransactionOrderTypeInfo",
+        "column": "ORDER_TYPE_INFO",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "LiquidationTransactionOverridableCode",
+        "column": "OVERRIDABLE_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "LiquidationTransactionOverrideFlag",
+        "column": "OVERRIDE_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "LiquidationTransactionPartialReservationFlag",
+        "column": "PARTIAL_RESERVATION_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "LiquidationTransactionPjcBillableFlag",
+        "column": "PJC_BILLABLE_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "LiquidationTransactionPjcCapitalizableFlag",
+        "column": "PJC_CAPITALIZABLE_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "LiquidationTransactionPjcContractId",
+        "column": "PJC_CONTRACT_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "LiquidationTransactionPjcContractLineId",
+        "column": "PJC_CONTRACT_LINE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "LiquidationTransactionPjcExpenditureItemDate",
+        "column": "PJC_EXPENDITURE_ITEM_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "LiquidationTransactionPjcExpenditureTypeId",
+        "column": "PJC_EXPENDITURE_TYPE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "LiquidationTransactionPjcFundingAllocationId",
+        "column": "PJC_FUNDING_ALLOCATION_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "LiquidationTransactionPjcOrganizationId",
+        "column": "PJC_ORGANIZATION_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "LiquidationTransactionPjcProjectId",
+        "column": "PJC_PROJECT_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "LiquidationTransactionPjcResourceId",
+        "column": "PJC_RESOURCE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "LiquidationTransactionPjcTaskId",
+        "column": "PJC_TASK_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "LiquidationTransactionPjcWorkTypeId",
+        "column": "PJC_WORK_TYPE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "LiquidationTransactionPrice",
+        "column": "PRICE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "LiquidationTransactionQuantity",
+        "column": "QUANTITY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "LiquidationTransactionResultCode",
+        "column": "RESULT_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "LiquidationTransactionSourceLineId1",
+        "column": "SOURCE_LINE_ID_1",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "LiquidationTransactionSourceLineId2",
+        "column": "SOURCE_LINE_ID_2",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "LiquidationTransactionSourceLineId3",
+        "column": "SOURCE_LINE_ID_3",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "LiquidationTransactionSourceLineId4",
+        "column": "SOURCE_LINE_ID_4",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "LiquidationTransactionSourceLineId5",
+        "column": "SOURCE_LINE_ID_5",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "LiquidationTransactionSourceLineId6",
+        "column": "SOURCE_LINE_ID_6",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "LiquidationTransactionSourceTransactionTypeCode",
+        "column": "SOURCE_TRANSACTION_TYPE_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "LiquidationTransactionStatisticalAmount",
+        "column": "STATISTICAL_AMOUNT",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "LiquidationTransactionTransactionSubtypeCode",
+        "column": "TRANSACTION_SUBTYPE_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "LiquidationTransactionUomCode",
+        "column": "UOM_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "LiquidationTransactionVendorId",
+        "column": "VENDOR_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TransactionLineAccountingDate",
+        "column": "ACCOUNTING_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TransactionLineBackedOutFlag",
+        "column": "BACKED_OUT_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TransactionLineBudgetCcid",
+        "column": "BUDGET_CCID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TransactionLineBudgetDate",
+        "column": "BUDGET_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TransactionLineBusinessUnitId",
+        "column": "BUSINESS_UNIT_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TransactionLineCodeCombinationId",
+        "column": "CODE_COMBINATION_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TransactionLineControlBudgetId",
+        "column": "CONTROL_BUDGET_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TransactionLineConversionDate",
+        "column": "CONVERSION_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TransactionLineConversionTypeCode",
+        "column": "CONVERSION_TYPE_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TransactionLineCreatedBy",
+        "column": "CREATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TransactionLineCreationDate",
+        "column": "CREATION_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TransactionLineDataSetId",
+        "column": "DATA_SET_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TransactionLineDraftFlag",
+        "column": "DRAFT_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TransactionLineEncumbranceTypeCode",
+        "column": "ENCUMBRANCE_TYPE_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TransactionLineEnteredAmount",
+        "column": "ENTERED_AMOUNT",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TransactionLineEnteredCurrency",
+        "column": "ENTERED_CURRENCY",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TransactionLineHeaderNum",
+        "column": "HEADER_NUM",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TransactionLineJeCategoryCode",
+        "column": "JE_CATEGORY_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TransactionLineLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TransactionLineLastUpdateLogin",
+        "column": "LAST_UPDATE_LOGIN",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TransactionLineLastUpdatedBy",
+        "column": "LAST_UPDATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TransactionLineLedgerAmount",
+        "column": "LEDGER_AMOUNT",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TransactionLineLedgerId",
+        "column": "LEDGER_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TransactionLineLineGroupCode",
+        "column": "LINE_GROUP_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TransactionLineLineNum",
+        "column": "LINE_NUM",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TransactionLineLiquidationAmount",
+        "column": "LIQUIDATION_AMOUNT",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TransactionLineLiquidationDate",
+        "column": "LIQUIDATION_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TransactionLineLiquidationDateCode",
+        "column": "LIQUIDATION_DATE_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TransactionLineLiquidationLineId1",
+        "column": "LIQUIDATION_LINE_ID_1",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TransactionLineLiquidationLineId2",
+        "column": "LIQUIDATION_LINE_ID_2",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TransactionLineLiquidationLineId3",
+        "column": "LIQUIDATION_LINE_ID_3",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TransactionLineLiquidationLineId4",
+        "column": "LIQUIDATION_LINE_ID_4",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TransactionLineLiquidationLineId5",
+        "column": "LIQUIDATION_LINE_ID_5",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TransactionLineLiquidationLineId6",
+        "column": "LIQUIDATION_LINE_ID_6",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TransactionLineLiquidationQuantity",
+        "column": "LIQUIDATION_QUANTITY",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TransactionLineLiquidationTransTypeCode",
+        "column": "LIQUIDATION_TRANS_TYPE_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TransactionLinePartialReservationFlag",
+        "column": "PARTIAL_RESERVATION_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TransactionLinePjcBillableFlag",
+        "column": "PJC_BILLABLE_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TransactionLinePjcCapitalizableFlag",
+        "column": "PJC_CAPITALIZABLE_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TransactionLinePjcContractId",
+        "column": "PJC_CONTRACT_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TransactionLinePjcContractLineId",
+        "column": "PJC_CONTRACT_LINE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TransactionLinePjcExpenditureItemDate",
+        "column": "PJC_EXPENDITURE_ITEM_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TransactionLinePjcExpenditureTypeId",
+        "column": "PJC_EXPENDITURE_TYPE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TransactionLinePjcFundingAllocationId",
+        "column": "PJC_FUNDING_ALLOCATION_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TransactionLinePjcOrganizationId",
+        "column": "PJC_ORGANIZATION_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TransactionLinePjcProjectId",
+        "column": "PJC_PROJECT_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TransactionLinePjcResourceId",
+        "column": "PJC_RESOURCE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TransactionLinePjcTaskId",
+        "column": "PJC_TASK_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TransactionLinePjcWorkTypeId",
+        "column": "PJC_WORK_TYPE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TransactionLinePrice",
+        "column": "PRICE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TransactionLineQuantity",
+        "column": "QUANTITY",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TransactionLineResultCode",
+        "column": "RESULT_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TransactionLineSourceLineId1",
+        "column": "SOURCE_LINE_ID_1",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TransactionLineSourceLineId2",
+        "column": "SOURCE_LINE_ID_2",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TransactionLineSourceLineId3",
+        "column": "SOURCE_LINE_ID_3",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TransactionLineSourceLineId4",
+        "column": "SOURCE_LINE_ID_4",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TransactionLineSourceLineId5",
+        "column": "SOURCE_LINE_ID_5",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TransactionLineSourceTransactionTypeCode",
+        "column": "SOURCE_TRANSACTION_TYPE_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TransactionLineStatisticalAmount",
+        "column": "STATISTICAL_AMOUNT",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TransactionLineTransactionSubtypeCode",
+        "column": "TRANSACTION_SUBTYPE_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TransactionLineUomCode",
+        "column": "UOM_CODE",
+        "bicc": true,
+        "pk": false
+      }
+    ],
+    "INV_UNITS_OF_MEASURE_VL": [
+      {
+        "attribute": "ObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "UnitOfMeasureDescription",
+        "column": "DESCRIPTION",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "UnitOfMeasureUnitOfMeasure",
+        "column": "UNIT_OF_MEASURE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "UnitOfMeasureUomCode",
+        "column": "UOM_CODE",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "XCC_DATA_SETS": [
+      {
+        "attribute": "XccDataSetsDataSetId",
+        "column": "DATA_SET_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "XccDataSetsOverrideFlag",
+        "column": "OVERRIDE_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "XccDataSetsOverrideReason",
+        "column": "OVERRIDE_REASON",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "XccDataSetsOverrideUserGuid",
+        "column": "OVERRIDE_USER_GUID",
+        "bicc": false,
+        "pk": false
+      }
+    ]
+  }
+}

@@ -1,0 +1,865 @@
+{
+  "source": "ra_customer_trx_all.md",
+  "source_hash": "37c9eba086b585f11b7602241b11422a",
+  "translated_at": "2026-03-25",
+  "items": [
+    {
+      "id": 1,
+      "br": "Visão Geral",
+      "en": "Overview",
+      "es": "Visión general"
+    },
+    {
+      "id": 2,
+      "br": "Armazena o cabeçalho de todas as transações do módulo Accounts Receivable: faturas (invoices), notas de débito (debit memos), notas de crédito (credit memos) e duplicatas a receber (bills receivable). Cada registro representa uma transação completa com informações de cliente, tipo de transação, data, moeda, instruções de impressão e referências contábeis.",
+      "en": "Stores the header of all Accounts Receivable module transactions: invoices, debit memos, credit memos, and bills receivable. Each record represents a complete transaction with customer information, transaction type, date, currency, printing instructions, and accounting references.",
+      "es": "Almacena el encabezado de todas las transacciones del módulo de cuentas por cobrar: facturas, notas de débito, notas de crédito y facturas a cobrar. Cada registro representa una transacción completa con información del cliente, tipo de transacción, fecha, moneda, instrucciones de impresión y referencias contables."
+    },
+    {
+      "id": 3,
+      "br": "É a tabela central do AR — praticamente toda consulta ou relatório de contas a receber começa por ela.",
+      "en": "This is the central table for AR – virtually all Accounts Receivable queries or reports start here.",
+      "es": "Es la tabla central de cuentas por cobrar — prácticamente todas las consultas o informes de cuentas por cobrar comienzan por ella."
+    },
+    {
+      "id": 4,
+      "br": "Sufixo _ALL",
+      "en": "_ALL suffix",
+      "es": "Sufijo _ALL"
+    },
+    {
+      "id": 5,
+      "br": "O sufixo _ALL indica que a tabela armazena dados de todas as business units (multi-org). O filtro por ORG_ID é necessário para consultas por organização específica.",
+      "en": "The _ALL suffix indicates that the table stores data for all business units (multi-org). Filtering by ORG_ID is necessary for queries by specific organization.",
+      "es": "El sufijo _ALL indica que la tabla almacena datos de todas las unidades de negocio (multi-org). Se requiere el filtro por ORG_ID para consultas específicas de organización."
+    },
+    {
+      "id": 6,
+      "br": "Propósito de Negócio",
+      "en": "Business Purpose",
+      "es": "Propósito de negocio"
+    },
+    {
+      "id": 7,
+      "br": "Esta tabela é utilizada nos seguintes processos:",
+      "en": "This table is used in the following processes:",
+      "es": "Esta tabla se utiliza en los siguientes procesos:"
+    },
+    {
+      "id": 8,
+      "br": "Registro de toda fatura emitida para clientes, com dados de cobrança, embarque e pagamento.",
+      "en": "Recording of all invoices issued to customers, with billing, shipping, and payment data.",
+      "es": "Registro de todas las facturas emitidas a clientes, con datos de cobranza, embarque y pago."
+    },
+    {
+      "id": 9,
+      "br": "Ajustes comerciais vinculados a transações originais.",
+      "en": "Commercial adjustments linked to original transactions.",
+      "es": "Ajustes comerciales relacionados con transacciones originales."
+    },
+    {
+      "id": 10,
+      "br": "Instrumentos de crédito sacados contra clientes.",
+      "en": "Credit instruments drawn against customers.",
+      "es": "Instrumentos de crédito emitidos contra clientes."
+    },
+    {
+      "id": 11,
+      "br": "Base para cálculo de saldos em aberto por faixa de vencimento.",
+      "en": "Basis for calculating outstanding balances by payment term.",
+      "es": "Base para el cálculo de saldos pendientes por rango de vencimiento."
+    },
+    {
+      "id": 12,
+      "br": "Ponto de partida para conciliação AR × GL via distribuições ([[ra_cust_trx_line_gl_dist_all]]).",
+      "en": "Starting point for AR × GL reconciliation via distributions ([[ra_cust_trx_line_gl_dist_all]]).",
+      "es": "Punto de partida para la conciliación de cuentas por cobrar × libro mayor a través de distribuciones ([[ra_cust_trx_line_gl_dist_all]])."
+    },
+    {
+      "id": 13,
+      "br": "Extração de transações para compliance fiscal e auditoria.",
+      "en": "Extraction of transactions for tax compliance and auditing.",
+      "es": "Extracción de transacciones para el cumplimiento fiscal y auditoría."
+    },
+    {
+      "id": 14,
+      "br": "Colunas Principais",
+      "en": "Key Columns",
+      "es": "Columnas principales"
+    },
+    {
+      "id": 15,
+      "br": "Confiança",
+      "en": "Confidence",
+      "es": "Confianza"
+    },
+    {
+      "id": 16,
+      "br": "Escala de 0% a 100% — grau de certeza da descrição gerada por IA com base na documentação oficial Oracle (OEDMF/BICC Release 13/25A).",
+      "en": "Scale of 0% to 100% – degree of certainty of the description generated by AI based on Oracle official documentation (OEDMF/BICC Release 13/25A).",
+      "es": "Escala del 0% al 100% — grado de certeza de la descripción generada por IA, basado en la documentación oficial de Oracle (OEDMF/BICC Release 13/25A)."
+    },
+    {
+      "id": 17,
+      "br": "- 🟢 81–100% — Coluna presente na documentação oficial Oracle; nome, tipo e descrição confirmados.",
+      "en": "- 🟢 81–100% – Column present in Oracle official documentation; name, type, and description confirmed.",
+      "es": "- 🟢 81–100% — Columna presente en la documentación oficial de Oracle; nombre, tipo y descripción confirmados."
+    },
+    {
+      "id": 18,
+      "br": "- 🟡 51–80% — Coluna inferida por naming convention ou padrão Oracle; tipo exato pode variar.",
+      "en": "- 🟡 51–80% – Column inferred by naming convention or Oracle standard; exact type may vary.",
+      "es": "- 🟡 51–80% — Columna inferida por convención de nomenclatura o estándar de Oracle; el tipo exacto puede variar."
+    },
+    {
+      "id": 19,
+      "br": "- 🔴 0–50% — Existência ou tipo incertos; pode não existir no release atual; validar no ambiente.",
+      "en": "- 🔴 0–50% – Existence or type uncertain; may not exist in the current release; validate in the environment.",
+      "es": "- 🔴 0–50% — Existencia o tipo inciertos; puede no existir en la versión actual; validar en el entorno."
+    },
+    {
+      "id": 20,
+      "br": "Coluna",
+      "en": "Column",
+      "es": "Columna"
+    },
+    {
+      "id": 21,
+      "br": "Tipo",
+      "en": "Type",
+      "es": "Tipo"
+    },
+    {
+      "id": 22,
+      "br": "Nulo?",
+      "en": "Null?",
+      "es": "Nulo?"
+    },
+    {
+      "id": 23,
+      "br": "Categoria",
+      "en": "Category",
+      "es": "Categoría"
+    },
+    {
+      "id": 24,
+      "br": "Descrição",
+      "en": "Description",
+      "es": "Descripción"
+    },
+    {
+      "id": 25,
+      "br": "Identificador único da transação",
+      "en": "Unique transaction identifier",
+      "es": "Identificador único de la transacción"
+    },
+    {
+      "id": 26,
+      "br": "Identificação",
+      "en": "Identification",
+      "es": "Identificación"
+    },
+    {
+      "id": 27,
+      "br": "Número da transação visível ao usuário",
+      "en": "Transaction number visible to the user",
+      "es": "Número de transacción visible para el usuario"
+    },
+    {
+      "id": 28,
+      "br": "Número anterior (se renumerada)",
+      "en": "Previous number (if renumbered)",
+      "es": "Número anterior (si se ha renumarado)"
+    },
+    {
+      "id": 29,
+      "br": "Classificação",
+      "en": "Classification",
+      "es": "Clasificación"
+    },
+    {
+      "id": 30,
+      "br": "Tipo da transação (invoice, credit memo, etc.)",
+      "en": "Transaction type (invoice, credit memo, etc.)",
+      "es": "Tipo de transacción (factura, nota de crédito, etc.)"
+    },
+    {
+      "id": 31,
+      "br": "Data",
+      "en": "Date",
+      "es": "Fecha"
+    },
+    {
+      "id": 32,
+      "br": "Data da transação",
+      "en": "Transaction date",
+      "es": "Fecha de la transacción"
+    },
+    {
+      "id": 33,
+      "br": "Origem/fonte da transação",
+      "en": "Source/origin of the transaction",
+      "es": "Origen/fuente de la transacción"
+    },
+    {
+      "id": 34,
+      "br": "Lote de entrada da transação",
+      "en": "Transaction entry batch",
+      "es": "Lote de entrada de la transacción"
+    },
+    {
+      "id": 35,
+      "br": "Status da transação (OP=Open, CL=Closed, VD=Void)",
+      "en": "Transaction status (OP=Open, CL=Closed, VD=Void)",
+      "es": "Estado de la transacción (OP=Abierto, CL=Cerrado, VD=Anulado)"
+    },
+    {
+      "id": 36,
+      "br": "Indica se a transação está completa (Y/N)",
+      "en": "Indicates if the transaction is complete (Y/N)",
+      "es": "Indica si la transacción está completa (Sí/No)"
+    },
+    {
+      "id": 37,
+      "br": "Código do motivo da transação",
+      "en": "Transaction reason code",
+      "es": "Código del motivo de la transacción"
+    },
+    {
+      "id": 38,
+      "br": "Cliente",
+      "en": "Customer",
+      "es": "Cliente"
+    },
+    {
+      "id": 39,
+      "br": "Conta do cliente de cobrança",
+      "en": "Customer billing account",
+      "es": "Cuenta del cliente para cobros"
+    },
+    {
+      "id": 40,
+      "br": "Site de cobrança do cliente",
+      "en": "Customer billing site",
+      "es": "Sitio de cobros del cliente"
+    },
+    {
+      "id": 41,
+      "br": "Contato de cobrança",
+      "en": "Billing contact",
+      "es": "Contacto de cobros"
+    },
+    {
+      "id": 42,
+      "br": "Conta do cliente de embarque",
+      "en": "Customer shipping account",
+      "es": "Cuenta del cliente para envíos"
+    },
+    {
+      "id": 43,
+      "br": "Site de embarque do cliente",
+      "en": "Customer shipping site",
+      "es": "Sitio de envíos del cliente"
+    },
+    {
+      "id": 44,
+      "br": "Contato de embarque",
+      "en": "Shipping contact",
+      "es": "Contacto de envíos"
+    },
+    {
+      "id": 45,
+      "br": "Conta do cliente comprador (sold-to)",
+      "en": "Customer purchasing account (sold-to)",
+      "es": "Cuenta del cliente comprador (a nombre de)"
+    },
+    {
+      "id": 46,
+      "br": "Conta do cliente pagador",
+      "en": "Customer payment account",
+      "es": "Cuenta del cliente pagador"
+    },
+    {
+      "id": 47,
+      "br": "Site do cliente pagador",
+      "en": "Customer payment site",
+      "es": "Sitio del cliente pagador"
+    },
+    {
+      "id": 48,
+      "br": "Sacado (bills receivable)",
+      "en": "Bill receivable",
+      "es": "Deudor (facturas a cobrar)"
+    },
+    {
+      "id": 49,
+      "br": "Site do sacado",
+      "en": "Bill receivable site",
+      "es": "Sitio del deudor"
+    },
+    {
+      "id": 50,
+      "br": "Financeiro",
+      "en": "Finance",
+      "es": "Financiero"
+    },
+    {
+      "id": 51,
+      "br": "Código da moeda da transação (ISO 4217)",
+      "en": "Transaction currency code (ISO 4217)",
+      "es": "Código de la moneda de la transacción (ISO 4217)"
+    },
+    {
+      "id": 52,
+      "br": "Tipo de taxa de câmbio",
+      "en": "Exchange rate type",
+      "es": "Tipo de tipo de cambio"
+    },
+    {
+      "id": 53,
+      "br": "Taxa de câmbio aplicada",
+      "en": "Applied exchange rate",
+      "es": "Tipo de cambio aplicado"
+    },
+    {
+      "id": 54,
+      "br": "Data da taxa de câmbio",
+      "en": "Exchange rate date",
+      "es": "Fecha del tipo de cambio"
+    },
+    {
+      "id": 55,
+      "br": "Condição de pagamento",
+      "en": "Payment terms",
+      "es": "Condición de pago"
+    },
+    {
+      "id": 56,
+      "br": "Data de vencimento calculada",
+      "en": "Calculated due date",
+      "es": "Fecha de vencimiento calculada"
+    },
+    {
+      "id": 57,
+      "br": "Sujeito a encargos financeiros (Y/N)",
+      "en": "Subject to financial charges (Y/N)",
+      "es": "Sujeto a cargos financieros (Sí/No)"
+    },
+    {
+      "id": 58,
+      "br": "Comercial",
+      "en": "Commercial",
+      "es": "Comercial"
+    },
+    {
+      "id": 59,
+      "br": "Vendedor principal",
+      "en": "Main vendor",
+      "es": "Vendedor principal"
+    },
+    {
+      "id": 60,
+      "br": "Contabilidade",
+      "en": "Accounting",
+      "es": "Contabilidad"
+    },
+    {
+      "id": 61,
+      "br": "Regra de faturamento (advance/arrears)",
+      "en": "Invoice rule (advance/arrears)",
+      "es": "Regla de facturación (anticipo/importe vencido)"
+    },
+    {
+      "id": 62,
+      "br": "Ledger contábil (legado — usar ORG_ID + LEGAL_ENTITY_ID)",
+      "en": "General Ledger (legacy — use ORG_ID + LEGAL_ENTITY_ID)",
+      "es": "Libro mayor (legado — usar ORG_ID + LEGAL_ENTITY_ID)"
+    },
+    {
+      "id": 63,
+      "br": "Recebimento",
+      "en": "Receipt",
+      "es": "Cobro"
+    },
+    {
+      "id": 64,
+      "br": "Método de recebimento padrão",
+      "en": "Standard receipt method",
+      "es": "Método de cobro estándar"
+    },
+    {
+      "id": 65,
+      "br": "Endereço remit-to",
+      "en": "Remit-to address",
+      "es": "Dirección de envío"
+    },
+    {
+      "id": 66,
+      "br": "Código de transação USSGL padrão",
+      "en": "Standard USSGL transaction code",
+      "es": "Código de transacción USSGL estándar"
+    },
+    {
+      "id": 67,
+      "br": "Referência cruzada",
+      "en": "Cross-reference",
+      "es": "Referencia cruzada"
+    },
+    {
+      "id": 68,
+      "br": "Transação original (credit memos vinculados)",
+      "en": "Original transaction (linked credit memos)",
+      "es": "Transacción original (notas de crédito vinculadas)"
+    },
+    {
+      "id": 69,
+      "br": "self",
+      "en": "self",
+      "es": "self"
+    },
+    {
+      "id": 70,
+      "br": "Transação relacionada (bills receivable)",
+      "en": "Related transaction (bills receivable)",
+      "es": "Transacción relacionada (facturas a cobrar)"
+    },
+    {
+      "id": 71,
+      "br": "ID da sequência de documento",
+      "en": "Document sequence ID",
+      "es": "ID de secuencia de documento"
+    },
+    {
+      "id": 72,
+      "br": "Número de sequência de documento legal",
+      "en": "Legal document sequence number",
+      "es": "Número de secuencia de documento legal"
+    },
+    {
+      "id": 73,
+      "br": "Referência externa da transação",
+      "en": "External transaction reference",
+      "es": "Referencia externa de la transacción"
+    },
+    {
+      "id": 74,
+      "br": "Referência externa",
+      "en": "External reference",
+      "es": "Referencia externa"
+    },
+    {
+      "id": 75,
+      "br": "Referência do cliente (PO number, etc.)",
+      "en": "Customer reference (PO number, etc.)",
+      "es": "Referencia del cliente (número de pedido, etc.)"
+    },
+    {
+      "id": 76,
+      "br": "Data da referência do cliente",
+      "en": "Customer reference date",
+      "es": "Fecha de referencia del cliente"
+    },
+    {
+      "id": 77,
+      "br": "Logística",
+      "en": "Logistics",
+      "es": "Logística"
+    },
+    {
+      "id": 78,
+      "br": "Data real de embarque",
+      "en": "Actual shipment date",
+      "es": "Fecha real de embarque"
+    },
+    {
+      "id": 79,
+      "br": "Impressão",
+      "en": "Print",
+      "es": "Impresión"
+    },
+    {
+      "id": 80,
+      "br": "Opção de impressão (PRI=Print, NOT=No Print)",
+      "en": "Print option (PRI=Print, NOT=No Print)",
+      "es": "Opción de impresión (PRI=Imprimir, NOT=No Imprimir)"
+    },
+    {
+      "id": 81,
+      "br": "Número de vezes impresso",
+      "en": "Number of times printed",
+      "es": "Número de veces impreso"
+    },
+    {
+      "id": 82,
+      "br": "Data da primeira impressão",
+      "en": "Date of first print",
+      "es": "Fecha de la primera impresión"
+    },
+    {
+      "id": 83,
+      "br": "Data da última impressão",
+      "en": "Date of last print",
+      "es": "Fecha de la última impresión"
+    },
+    {
+      "id": 84,
+      "br": "Texto livre",
+      "en": "Free text",
+      "es": "Texto libre"
+    },
+    {
+      "id": 85,
+      "br": "Comentários livres da transação",
+      "en": "Transaction free comments",
+      "es": "Comentarios libres de la transacción"
+    },
+    {
+      "id": 86,
+      "br": "Business unit (multi-org)",
+      "en": "Business unit (multi-org)",
+      "es": "Unidad de negocio (multi-org)"
+    },
+    {
+      "id": 87,
+      "br": "Entidade legal",
+      "en": "Legal entity",
+      "es": "Entidad legal"
+    },
+    {
+      "id": 88,
+      "br": "Auditoria",
+      "en": "Audit",
+      "es": "Auditoría"
+    },
+    {
+      "id": 89,
+      "br": "Usuário que criou o registro",
+      "en": "User who created the record",
+      "es": "Usuario que creó el registro"
+    },
+    {
+      "id": 90,
+      "br": "Data/hora de criação",
+      "en": "Creation date/time",
+      "es": "Fecha/hora de creación"
+    },
+    {
+      "id": 91,
+      "br": "Último usuário que alterou",
+      "en": "Last user who modified",
+      "es": "Último usuario que modificó"
+    },
+    {
+      "id": 92,
+      "br": "Data/hora da última alteração",
+      "en": "Last modification date/time",
+      "es": "Fecha/hora de la última modificación"
+    },
+    {
+      "id": 93,
+      "br": "Login da última sessão",
+      "en": "Last session login",
+      "es": "Inicio de sesión de la última sesión"
+    },
+    {
+      "id": 94,
+      "br": "INTERFACE_HEADER_ATTRIBUTE1–15",
+      "en": "INTERFACE_HEADER_ATTRIBUTE1–15",
+      "es": "INTERFACE_HEADER_ATTRIBUTE1–15"
+    },
+    {
+      "id": 95,
+      "br": "Atributos flexíveis de interface (Descriptive Flexfield)",
+      "en": "Interface attributes (Descriptive Flexfield)",
+      "es": "Atributos flexibles de interfaz (Descriptive Flexfield)"
+    },
+    {
+      "id": 96,
+      "br": "ATTRIBUTE1–15",
+      "en": "ATTRIBUTE1–15",
+      "es": "ATTRIBUTE1–15"
+    },
+    {
+      "id": 97,
+      "br": "Atributos descritivos customizáveis por implementação",
+      "en": "Customizable descriptive attributes by implementation",
+      "es": "Atributos descriptivos personalizables por implementación"
+    },
+    {
+      "id": 98,
+      "br": "Contexto do Descriptive Flexfield",
+      "en": "Descriptive Flexfield context",
+      "es": "Contexto del Descriptive Flexfield"
+    },
+    {
+      "id": 99,
+      "br": "GLOBAL_ATTRIBUTE1–20",
+      "en": "GLOBAL_ATTRIBUTE1–20",
+      "es": "GLOBAL_ATTRIBUTE1–20"
+    },
+    {
+      "id": 100,
+      "br": "Atributos globais (localizações por país)",
+      "en": "Global attributes (locations by country)",
+      "es": "Atributos globales (ubicaciones por país)"
+    },
+    {
+      "id": 101,
+      "br": "Contexto do Global Descriptive Flexfield",
+      "en": "Global Descriptive Flexfield Context",
+      "es": "Contexto del Descriptive Flexfield Global"
+    },
+    {
+      "id": 102,
+      "br": "Relacionamentos",
+      "en": "Relationships",
+      "es": "Relaciones"
+    },
+    {
+      "id": 103,
+      "br": "Tabelas-pai (FK de entrada)",
+      "en": "Parent Tables (FK - Input)",
+      "es": "Tablas padre (clave foránea de entrada)"
+    },
+    {
+      "id": 104,
+      "br": "tipo da transação",
+      "en": "Transaction Type",
+      "es": "tipo de transacción"
+    },
+    {
+      "id": 105,
+      "br": "origem da transação",
+      "en": "Transaction Origin",
+      "es": "origen de la transacción"
+    },
+    {
+      "id": 106,
+      "br": "lote de entrada",
+      "en": "Input Batch",
+      "es": "lote de entrada"
+    },
+    {
+      "id": 107,
+      "br": "hz_cust_accounts — via BILL_TO_CUSTOMER_ID, SHIP_TO_CUSTOMER_ID, SOLD_TO_CUSTOMER_ID, PAYING_CUSTOMER_ID, DRAWEE_ID",
+      "en": "hz_cust_accounts — via BILL_TO_CUSTOMER_ID, SHIP_TO_CUSTOMER_ID, SOLD_TO_CUSTOMER_ID, PAYING_CUSTOMER_ID, DRAWEE_ID",
+      "es": "hz_cust_accounts — a través de BILL_TO_CUSTOMER_ID, SHIP_TO_CUSTOMER_ID, SOLD_TO_CUSTOMER_ID, PAYING_CUSTOMER_ID, DRAWEE_ID"
+    },
+    {
+      "id": 108,
+      "br": "hz_cust_site_uses_all — via BILL_TO_SITE_USE_ID, SHIP_TO_SITE_USE_ID, PAYING_SITE_USE_ID, DRAWEE_SITE_USE_ID",
+      "en": "hz_cust_site_uses_all — via BILL_TO_SITE_USE_ID, SHIP_TO_SITE_USE_ID, PAYING_SITE_USE_ID, DRAWEE_SITE_USE_ID",
+      "es": "hz_cust_site_uses_all — a través de BILL_TO_SITE_USE_ID, SHIP_TO_SITE_USE_ID, PAYING_SITE_USE_ID, DRAWEE_SITE_USE_ID"
+    },
+    {
+      "id": 109,
+      "br": "condição de pagamento",
+      "en": "Payment Condition",
+      "es": "condición de pago"
+    },
+    {
+      "id": 110,
+      "br": "regra de faturamento",
+      "en": "Billing Rule",
+      "es": "regla de facturación"
+    },
+    {
+      "id": 111,
+      "br": "ledger contábil",
+      "en": "General Ledger",
+      "es": "libro mayor"
+    },
+    {
+      "id": 112,
+      "br": "tipo de câmbio",
+      "en": "Exchange Rate",
+      "es": "tipo de cambio"
+    },
+    {
+      "id": 113,
+      "br": "ar_receipt_methods — via RECEIPT_METHOD_ID",
+      "en": "ar_receipt_methods — via RECEIPT_METHOD_ID",
+      "es": "ar_receipt_methods — a través de RECEIPT_METHOD_ID"
+    },
+    {
+      "id": 114,
+      "br": "vendedor",
+      "en": "Seller",
+      "es": "vendedor"
+    },
+    {
+      "id": 115,
+      "br": "business unit",
+      "en": "Business Unit",
+      "es": "business unit"
+    },
+    {
+      "id": 116,
+      "br": "entidade legal",
+      "en": "Legal Entity",
+      "es": "entidad legal"
+    },
+    {
+      "id": 117,
+      "br": "Tabelas-filha (FK de saída)",
+      "en": "Child Tables (FK - Output)",
+      "es": "Tablas hijas (clave foránea de salida)"
+    },
+    {
+      "id": 118,
+      "br": "linhas da transação",
+      "en": "Transaction Lines",
+      "es": "líneas de transacción"
+    },
+    {
+      "id": 119,
+      "br": "distribuições contábeis, indireta via lines",
+      "en": "Accounting Distributions, indirect via lines",
+      "es": "distribuciones contables, indirecta a través de las líneas"
+    },
+    {
+      "id": 120,
+      "br": "créditos de vendas",
+      "en": "Sales Credits",
+      "es": "créditos de ventas"
+    },
+    {
+      "id": 121,
+      "br": "parcelas de pagamento",
+      "en": "Payment Installments",
+      "es": "cuotas de pago"
+    },
+    {
+      "id": 122,
+      "br": "aplicações de recebimento",
+      "en": "Receipt Applications",
+      "es": "aplicaciones de cobro"
+    },
+    {
+      "id": 123,
+      "br": "ajustes",
+      "en": "Adjustments",
+      "es": "ajustes"
+    },
+    {
+      "id": 124,
+      "br": "histórico de status",
+      "en": "Status History",
+      "es": "historial de estado"
+    },
+    {
+      "id": 125,
+      "br": "zx_lines — via TRX_ID + APPLICATION_ID (linhas de imposto)",
+      "en": "zx_lines — via TRX_ID + APPLICATION_ID (tax lines)",
+      "es": "zx_lines — a través de TRX_ID + APPLICATION_ID (líneas de impuestos)"
+    },
+    {
+      "id": 126,
+      "br": "Self-references",
+      "en": "Self-references",
+      "es": "Referencias internas"
+    },
+    {
+      "id": 127,
+      "br": "Transação original (para credit memos vinculados)",
+      "en": "Original transaction (for linked credit memos)",
+      "es": "Transacción original (para notas de crédito vinculadas)"
+    },
+    {
+      "id": 128,
+      "br": "Uso Típico",
+      "en": "Typical Use",
+      "es": "Uso típico"
+    },
+    {
+      "id": 129,
+      "br": "Extração de todas as faturas abertas",
+      "en": "Extract all open invoices",
+      "es": "Extracción de todas las facturas abiertas"
+    },
+    {
+      "id": 130,
+      "br": "Join com linhas e distribuições",
+      "en": "Join with lines and distributions",
+      "es": "Combinación de líneas y distribuciones"
+    },
+    {
+      "id": 131,
+      "br": "Filtros comuns",
+      "en": "Common filters",
+      "es": "Filtros comunes"
+    },
+    {
+      "id": 132,
+      "br": "Transações abertas",
+      "en": "Open transactions",
+      "es": "Transacciones abiertas"
+    },
+    {
+      "id": 133,
+      "br": "Apenas transações completas",
+      "en": "Only complete transactions",
+      "es": "Solo transacciones completas"
+    },
+    {
+      "id": 134,
+      "br": "Filtrar por tipo (invoice, credit memo, etc.)",
+      "en": "Filter by type (invoice, credit memo, etc.)",
+      "es": "Filtrar por tipo (factura, nota de crédito, etc.)"
+    },
+    {
+      "id": 135,
+      "br": "Período",
+      "en": "Period",
+      "es": "Período"
+    },
+    {
+      "id": 136,
+      "br": "Observações",
+      "en": "Notes",
+      "es": "Observaciones"
+    },
+    {
+      "id": 137,
+      "br": "A tabela possui Descriptive Flexfields (DFF) via colunas ATTRIBUTE1–15 e INTERFACE_HEADER_ATTRIBUTE1–15 — usados para customizações por implementação.",
+      "en": "The table has Descriptive Flexfields (DFF) via columns ATTRIBUTE1–15 and INTERFACE_HEADER_ATTRIBUTE1–15 — used for customizations by implementation.",
+      "es": "La tabla tiene Descriptive Flexfields (DFF) a través de las columnas ATTRIBUTE1–15 e INTERFACE_HEADER_ATTRIBUTE1–15 — utilizadas para personalizaciones por implementación."
+    },
+    {
+      "id": 138,
+      "br": "O campo SET_OF_BOOKS_ID é legado; em implementações modernas do Fusion, usar LEGAL_ENTITY_ID + ORG_ID para contexto contábil.",
+      "en": "The SET_OF_BOOKS_ID field is legacy; in modern Fusion implementations, use LEGAL_ENTITY_ID + ORG_ID for accounting context.",
+      "es": "El campo SET_OF_BOOKS_ID es de legado; en implementaciones modernas de Fusion, utilizar LEGAL_ENTITY_ID + ORG_ID para el contexto contable."
+    },
+    {
+      "id": 139,
+      "br": "Transações do tipo Bills Receivable usam os campos DRAWEE_* em vez de BILL_TO_*.",
+      "en": "Transactions of the type Bills Receivable use the DRAWEE_* fields instead of BILL_TO_*.",
+      "es": "Las transacciones del tipo \"Bills Receivable\" utilizan los campos DRAWEE_* en lugar de BILL_TO_*."
+    },
+    {
+      "id": 140,
+      "br": "Campos PREVIOUS_CUSTOMER_TRX_ID e RELATED_CUSTOMER_TRX_ID criam uma cadeia de transações (fatura → credit memo → reissue).",
+      "en": "The PREVIOUS_CUSTOMER_TRX_ID and RELATED_CUSTOMER_TRX_ID fields create a chain of transactions (invoice → credit memo → reissue).",
+      "es": "Los campos PREVIOUS_CUSTOMER_TRX_ID y RELATED_CUSTOMER_TRX_ID crean una cadena de transacciones (factura → nota de crédito → reemisión)."
+    },
+    {
+      "id": 141,
+      "br": "Referências",
+      "en": "References",
+      "es": "Referencias"
+    },
+    {
+      "id": 142,
+      "br": "[Oracle Docs — RA_CUSTOMER_TRX_ALL](https://docs.oracle.com/en/cloud/saas/financials/25a/oedmf/racustomertrxall-25138.html)",
+      "en": "[Oracle Docs — RA_CUSTOMER_TRX_ALL](https://docs.oracle.com/en/cloud/saas/financials/25a/oedmf/racustomertrxall-25138.html)",
+      "es": "[Oracle Docs — RA_CUSTOMER_TRX_ALL](https://docs.oracle.com/en/cloud/saas/financials/25a/oedmf/racustomertrxall-25138.html)"
+    },
+    {
+      "id": 143,
+      "br": "ar-module-data-dictionary — Dossiê do módulo AR",
+      "en": "ar-module-data-dictionary — AR module data dictionary",
+      "es": "ar-module-data-dictionary — Diccionario de datos del módulo AR"
+    }
+  ]
+}

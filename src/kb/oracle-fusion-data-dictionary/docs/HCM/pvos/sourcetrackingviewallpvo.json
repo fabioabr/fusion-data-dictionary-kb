@@ -1,0 +1,1078 @@
+{
+  "meta": {
+    "pvo_name": "SourceTrackingViewAllPVO",
+    "full_path": "HcmTopModelAnalyticsGlobalAM.HcmRecSrcTrackingAM.SourceTrackingViewAllPVO",
+    "module_path": "HcmTopModelAnalyticsGlobalAM.HcmRecSrcTrackingAM",
+    "module_code": "HCM",
+    "type": "pvo",
+    "description": "Disponibiliza rastreamento completo de fontes de recrutamento sem restrição de segurança. Integra dados de campanhas, pools e requisições para análise de sourcing."
+  },
+  "stats": {
+    "total_attributes": 73,
+    "tables_count": 11,
+    "bicc_enabled": 40,
+    "bicc_pct": 55,
+    "pk_count": 1
+  },
+  "tables": [
+    "HRT_POOLS_VL",
+    "HRT_POOL_MEMBERS",
+    "IRC_AGENT_REQUISITIONS",
+    "IRC_CAMPAIGNS_B",
+    "IRC_CAMPAIGNS_TL",
+    "IRC_CANDIDATES",
+    "IRC_DIMENSION_DEF_B",
+    "IRC_DIMENSION_DEF_TL",
+    "IRC_REQUISITIONS_B",
+    "IRC_REQUISITIONS_TL",
+    "IRC_SOURCE_TRACKING"
+  ],
+  "attributes": [
+    {
+      "name": "CampaignBPEOCampaignId",
+      "table": "IRC_CAMPAIGNS_B",
+      "column": "CAMPAIGN_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CampaignTranslationPEOCampaignId",
+      "table": "IRC_CAMPAIGNS_TL",
+      "column": "CAMPAIGN_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CampaignTranslationPEOCampaignName",
+      "table": "IRC_CAMPAIGNS_TL",
+      "column": "CAMPAIGN_NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CampaignTranslationPEOLanguage",
+      "table": "IRC_CAMPAIGNS_TL",
+      "column": "LANGUAGE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CandidatePEOCandidateNumber",
+      "table": "IRC_CANDIDATES",
+      "column": "CANDIDATE_NUMBER",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CandidatePEOObjectVersionNumber",
+      "table": "IRC_CANDIDATES",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CandidatePEOPersonId",
+      "table": "IRC_CANDIDATES",
+      "column": "PERSON_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "EnterpriseId",
+      "table": "HRT_POOLS_VL",
+      "column": "ENTERPRISE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "FromPoolPEOPoolId",
+      "table": "HRT_POOLS_VL",
+      "column": "POOL_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "FromPoolPEOPoolName",
+      "table": "HRT_POOLS_VL",
+      "column": "POOL_NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "FromRequisitionBPEORequisitionId",
+      "table": "IRC_REQUISITIONS_B",
+      "column": "REQUISITION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "FromRequisitionBPEORequisitionNumber",
+      "table": "IRC_REQUISITIONS_B",
+      "column": "REQUISITION_NUMBER",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "FromRequisitionTLPEOLanguage",
+      "table": "IRC_REQUISITIONS_TL",
+      "column": "LANGUAGE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "FromRequisitionTLPEORequisitionId",
+      "table": "IRC_REQUISITIONS_TL",
+      "column": "REQUISITION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "FromRequisitionTLPEOTitle",
+      "table": "IRC_REQUISITIONS_TL",
+      "column": "TITLE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "JobRequisitionAgentPEOAgentRequisitionId",
+      "table": "IRC_AGENT_REQUISITIONS",
+      "column": "AGENT_REQUISITION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "JobRequisitionAgentPEOCreationDate",
+      "table": "IRC_AGENT_REQUISITIONS",
+      "column": "CREATION_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "JobRequisitionAgentPEOInvitedFlag",
+      "table": "IRC_AGENT_REQUISITIONS",
+      "column": "INVITED_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "JobRequisitionAgentPEOLastUpdateDate",
+      "table": "IRC_AGENT_REQUISITIONS",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": true
+    },
+    {
+      "name": "ParentSourceDimensionBPEODimensionId",
+      "table": "IRC_DIMENSION_DEF_B",
+      "column": "DIMENSION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ParentSourceDimensionTLPEODimensionId",
+      "table": "IRC_DIMENSION_DEF_TL",
+      "column": "DIMENSION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ParentSourceDimensionTLPEOLanguage",
+      "table": "IRC_DIMENSION_DEF_TL",
+      "column": "LANGUAGE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ParentSourceDimensionTLPEOSourceName",
+      "table": "IRC_DIMENSION_DEF_TL",
+      "column": "SOURCE_NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ParentSourceTrackingPEOSourceTrackingId",
+      "table": "IRC_SOURCE_TRACKING",
+      "column": "SOURCE_TRACKING_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PoolMemberPEOEnterpriseId",
+      "table": "HRT_POOL_MEMBERS",
+      "column": "ENTERPRISE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PoolMemberPEOPoolMemberId",
+      "table": "HRT_POOL_MEMBERS",
+      "column": "POOL_MEMBER_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RequisitionBPEORequisitionId",
+      "table": "IRC_REQUISITIONS_B",
+      "column": "REQUISITION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RequisitionBPEORequisitionNumber",
+      "table": "IRC_REQUISITIONS_B",
+      "column": "REQUISITION_NUMBER",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SourceDimensionBPEOCreatedBy",
+      "table": "IRC_DIMENSION_DEF_B",
+      "column": "CREATED_BY",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SourceDimensionBPEOCreationDate",
+      "table": "IRC_DIMENSION_DEF_B",
+      "column": "CREATION_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SourceDimensionBPEODimensionId",
+      "table": "IRC_DIMENSION_DEF_B",
+      "column": "DIMENSION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SourceDimensionBPEOLastUpdateDate",
+      "table": "IRC_DIMENSION_DEF_B",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": true
+    },
+    {
+      "name": "SourceDimensionBPEOLastUpdateLogin",
+      "table": "IRC_DIMENSION_DEF_B",
+      "column": "LAST_UPDATE_LOGIN",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SourceDimensionBPEOLastUpdatedBy",
+      "table": "IRC_DIMENSION_DEF_B",
+      "column": "LAST_UPDATED_BY",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SourceDimensionBPEOModuleId",
+      "table": "IRC_DIMENSION_DEF_B",
+      "column": "MODULE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SourceDimensionBPEOPriority",
+      "table": "IRC_DIMENSION_DEF_B",
+      "column": "PRIORITY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SourceDimensionBPEOSeedDataSource",
+      "table": "IRC_DIMENSION_DEF_B",
+      "column": "SEED_DATA_SOURCE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SourceDimensionBPEOSequence",
+      "table": "IRC_DIMENSION_DEF_B",
+      "column": "SEQUENCE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SourceDimensionBPEOSourceMedium",
+      "table": "IRC_DIMENSION_DEF_B",
+      "column": "SOURCE_MEDIUM",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SourceDimensionBPEOSourceMediumUrlValue",
+      "table": "IRC_DIMENSION_DEF_B",
+      "column": "SOURCE_MEDIUM_URL_VALUE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SourceDimensionBPEOSourceUrlValue",
+      "table": "IRC_DIMENSION_DEF_B",
+      "column": "SOURCE_URL_VALUE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SourceDimensionBPEOUrlHeaderRegex",
+      "table": "IRC_DIMENSION_DEF_B",
+      "column": "URL_HEADER_REGEX",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SourceDimensionTLPEODimensionId",
+      "table": "IRC_DIMENSION_DEF_TL",
+      "column": "DIMENSION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SourceDimensionTLPEOLanguage",
+      "table": "IRC_DIMENSION_DEF_TL",
+      "column": "LANGUAGE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SourceDimensionTLPEOSourceName",
+      "table": "IRC_DIMENSION_DEF_TL",
+      "column": "SOURCE_NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SourceDisplayName",
+      "table": "IRC_DIMENSION_DEF_TL",
+      "column": "SOURCE_DISPLAY_NAME",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SourceTrackingId",
+      "table": "IRC_SOURCE_TRACKING",
+      "column": "SOURCE_TRACKING_ID",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    },
+    {
+      "name": "SourceTrackingPEOAgencyId",
+      "table": "IRC_SOURCE_TRACKING",
+      "column": "AGENCY_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SourceTrackingPEOAgentId",
+      "table": "IRC_SOURCE_TRACKING",
+      "column": "AGENT_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SourceTrackingPEOCampaignCode",
+      "table": "IRC_SOURCE_TRACKING",
+      "column": "CAMPAIGN_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SourceTrackingPEOCandidateNumber",
+      "table": "IRC_SOURCE_TRACKING",
+      "column": "CANDIDATE_NUMBER",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SourceTrackingPEOCreatedBy",
+      "table": "IRC_SOURCE_TRACKING",
+      "column": "CREATED_BY",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SourceTrackingPEOCreationDate",
+      "table": "IRC_SOURCE_TRACKING",
+      "column": "CREATION_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SourceTrackingPEODimensionId",
+      "table": "IRC_SOURCE_TRACKING",
+      "column": "DIMENSION_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SourceTrackingPEOEventId",
+      "table": "IRC_SOURCE_TRACKING",
+      "column": "EVENT_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SourceTrackingPEOFromPoolId",
+      "table": "IRC_SOURCE_TRACKING",
+      "column": "FROM_POOL_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SourceTrackingPEOFromRequisitionId",
+      "table": "IRC_SOURCE_TRACKING",
+      "column": "FROM_REQUISITION_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SourceTrackingPEOLastUpdateDate",
+      "table": "IRC_SOURCE_TRACKING",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": true
+    },
+    {
+      "name": "SourceTrackingPEOLastUpdateLogin",
+      "table": "IRC_SOURCE_TRACKING",
+      "column": "LAST_UPDATE_LOGIN",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SourceTrackingPEOLastUpdatedBy",
+      "table": "IRC_SOURCE_TRACKING",
+      "column": "LAST_UPDATED_BY",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SourceTrackingPEOObjectVersionNumber",
+      "table": "IRC_SOURCE_TRACKING",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SourceTrackingPEOParentSourceTrackingId",
+      "table": "IRC_SOURCE_TRACKING",
+      "column": "PARENT_SOURCE_TRACKING_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SourceTrackingPEOPoolId",
+      "table": "IRC_SOURCE_TRACKING",
+      "column": "POOL_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SourceTrackingPEOPoolMemberId",
+      "table": "IRC_SOURCE_TRACKING",
+      "column": "POOL_MEMBER_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SourceTrackingPEOProspectId",
+      "table": "IRC_SOURCE_TRACKING",
+      "column": "PROSPECT_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SourceTrackingPEORecruiterId",
+      "table": "IRC_SOURCE_TRACKING",
+      "column": "RECRUITER_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SourceTrackingPEOReferralId",
+      "table": "IRC_SOURCE_TRACKING",
+      "column": "REFERRAL_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SourceTrackingPEOReferredDate",
+      "table": "IRC_SOURCE_TRACKING",
+      "column": "REFERRED_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SourceTrackingPEORequisitionId",
+      "table": "IRC_SOURCE_TRACKING",
+      "column": "REQUISITION_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SourceTrackingPEOShareId",
+      "table": "IRC_SOURCE_TRACKING",
+      "column": "SHARE_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SourceTrackingPEOSourceLevel",
+      "table": "IRC_SOURCE_TRACKING",
+      "column": "SOURCE_LEVEL",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SourceTrackingPEOSubmissionId",
+      "table": "IRC_SOURCE_TRACKING",
+      "column": "SUBMISSION_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "SourceTrackingPEOTokenId",
+      "table": "IRC_SOURCE_TRACKING",
+      "column": "TOKEN_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    }
+  ],
+  "by_table": {
+    "IRC_CAMPAIGNS_B": [
+      {
+        "attribute": "CampaignBPEOCampaignId",
+        "column": "CAMPAIGN_ID",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "IRC_CAMPAIGNS_TL": [
+      {
+        "attribute": "CampaignTranslationPEOCampaignId",
+        "column": "CAMPAIGN_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CampaignTranslationPEOCampaignName",
+        "column": "CAMPAIGN_NAME",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CampaignTranslationPEOLanguage",
+        "column": "LANGUAGE",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "IRC_CANDIDATES": [
+      {
+        "attribute": "CandidatePEOCandidateNumber",
+        "column": "CANDIDATE_NUMBER",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CandidatePEOObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CandidatePEOPersonId",
+        "column": "PERSON_ID",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "HRT_POOLS_VL": [
+      {
+        "attribute": "EnterpriseId",
+        "column": "ENTERPRISE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "FromPoolPEOPoolId",
+        "column": "POOL_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "FromPoolPEOPoolName",
+        "column": "POOL_NAME",
+        "bicc": true,
+        "pk": false
+      }
+    ],
+    "IRC_REQUISITIONS_B": [
+      {
+        "attribute": "FromRequisitionBPEORequisitionId",
+        "column": "REQUISITION_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "FromRequisitionBPEORequisitionNumber",
+        "column": "REQUISITION_NUMBER",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "RequisitionBPEORequisitionId",
+        "column": "REQUISITION_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "RequisitionBPEORequisitionNumber",
+        "column": "REQUISITION_NUMBER",
+        "bicc": true,
+        "pk": false
+      }
+    ],
+    "IRC_REQUISITIONS_TL": [
+      {
+        "attribute": "FromRequisitionTLPEOLanguage",
+        "column": "LANGUAGE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "FromRequisitionTLPEORequisitionId",
+        "column": "REQUISITION_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "FromRequisitionTLPEOTitle",
+        "column": "TITLE",
+        "bicc": true,
+        "pk": false
+      }
+    ],
+    "IRC_AGENT_REQUISITIONS": [
+      {
+        "attribute": "JobRequisitionAgentPEOAgentRequisitionId",
+        "column": "AGENT_REQUISITION_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "JobRequisitionAgentPEOCreationDate",
+        "column": "CREATION_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "JobRequisitionAgentPEOInvitedFlag",
+        "column": "INVITED_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "JobRequisitionAgentPEOLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      }
+    ],
+    "IRC_DIMENSION_DEF_B": [
+      {
+        "attribute": "ParentSourceDimensionBPEODimensionId",
+        "column": "DIMENSION_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "SourceDimensionBPEOCreatedBy",
+        "column": "CREATED_BY",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "SourceDimensionBPEOCreationDate",
+        "column": "CREATION_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "SourceDimensionBPEODimensionId",
+        "column": "DIMENSION_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "SourceDimensionBPEOLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "SourceDimensionBPEOLastUpdateLogin",
+        "column": "LAST_UPDATE_LOGIN",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "SourceDimensionBPEOLastUpdatedBy",
+        "column": "LAST_UPDATED_BY",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "SourceDimensionBPEOModuleId",
+        "column": "MODULE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "SourceDimensionBPEOPriority",
+        "column": "PRIORITY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "SourceDimensionBPEOSeedDataSource",
+        "column": "SEED_DATA_SOURCE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "SourceDimensionBPEOSequence",
+        "column": "SEQUENCE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "SourceDimensionBPEOSourceMedium",
+        "column": "SOURCE_MEDIUM",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "SourceDimensionBPEOSourceMediumUrlValue",
+        "column": "SOURCE_MEDIUM_URL_VALUE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "SourceDimensionBPEOSourceUrlValue",
+        "column": "SOURCE_URL_VALUE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "SourceDimensionBPEOUrlHeaderRegex",
+        "column": "URL_HEADER_REGEX",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "IRC_DIMENSION_DEF_TL": [
+      {
+        "attribute": "ParentSourceDimensionTLPEODimensionId",
+        "column": "DIMENSION_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ParentSourceDimensionTLPEOLanguage",
+        "column": "LANGUAGE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ParentSourceDimensionTLPEOSourceName",
+        "column": "SOURCE_NAME",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "SourceDimensionTLPEODimensionId",
+        "column": "DIMENSION_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "SourceDimensionTLPEOLanguage",
+        "column": "LANGUAGE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "SourceDimensionTLPEOSourceName",
+        "column": "SOURCE_NAME",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "SourceDisplayName",
+        "column": "SOURCE_DISPLAY_NAME",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "IRC_SOURCE_TRACKING": [
+      {
+        "attribute": "ParentSourceTrackingPEOSourceTrackingId",
+        "column": "SOURCE_TRACKING_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "SourceTrackingId",
+        "column": "SOURCE_TRACKING_ID",
+        "bicc": true,
+        "pk": true
+      },
+      {
+        "attribute": "SourceTrackingPEOAgencyId",
+        "column": "AGENCY_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "SourceTrackingPEOAgentId",
+        "column": "AGENT_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "SourceTrackingPEOCampaignCode",
+        "column": "CAMPAIGN_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "SourceTrackingPEOCandidateNumber",
+        "column": "CANDIDATE_NUMBER",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "SourceTrackingPEOCreatedBy",
+        "column": "CREATED_BY",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "SourceTrackingPEOCreationDate",
+        "column": "CREATION_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "SourceTrackingPEODimensionId",
+        "column": "DIMENSION_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "SourceTrackingPEOEventId",
+        "column": "EVENT_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "SourceTrackingPEOFromPoolId",
+        "column": "FROM_POOL_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "SourceTrackingPEOFromRequisitionId",
+        "column": "FROM_REQUISITION_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "SourceTrackingPEOLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "SourceTrackingPEOLastUpdateLogin",
+        "column": "LAST_UPDATE_LOGIN",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "SourceTrackingPEOLastUpdatedBy",
+        "column": "LAST_UPDATED_BY",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "SourceTrackingPEOObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "SourceTrackingPEOParentSourceTrackingId",
+        "column": "PARENT_SOURCE_TRACKING_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "SourceTrackingPEOPoolId",
+        "column": "POOL_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "SourceTrackingPEOPoolMemberId",
+        "column": "POOL_MEMBER_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "SourceTrackingPEOProspectId",
+        "column": "PROSPECT_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "SourceTrackingPEORecruiterId",
+        "column": "RECRUITER_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "SourceTrackingPEOReferralId",
+        "column": "REFERRAL_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "SourceTrackingPEOReferredDate",
+        "column": "REFERRED_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "SourceTrackingPEORequisitionId",
+        "column": "REQUISITION_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "SourceTrackingPEOShareId",
+        "column": "SHARE_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "SourceTrackingPEOSourceLevel",
+        "column": "SOURCE_LEVEL",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "SourceTrackingPEOSubmissionId",
+        "column": "SUBMISSION_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "SourceTrackingPEOTokenId",
+        "column": "TOKEN_ID",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "HRT_POOL_MEMBERS": [
+      {
+        "attribute": "PoolMemberPEOEnterpriseId",
+        "column": "ENTERPRISE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PoolMemberPEOPoolMemberId",
+        "column": "POOL_MEMBER_ID",
+        "bicc": false,
+        "pk": false
+      }
+    ]
+  }
+}

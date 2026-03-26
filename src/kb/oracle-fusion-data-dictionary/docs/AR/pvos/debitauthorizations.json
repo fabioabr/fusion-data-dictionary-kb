@@ -1,0 +1,312 @@
+{
+  "meta": {
+    "pvo_name": "DebitAuthorizations",
+    "full_path": "FscmTopModelAM.FinArCustomersPublicModelAM.DebitAuthorizations",
+    "module_path": "FscmTopModelAM.FinArCustomersPublicModelAM",
+    "module_code": "AR",
+    "type": "pvo",
+    "description": "Extrai as autorizações de débito direto concedidas por clientes, incluindo validade, banco autorizado e entidade legal. Permite controlar as autorizações vigentes para cobranças por débito automático e garantir compliance regulatório."
+  },
+  "stats": {
+    "total_attributes": 20,
+    "tables_count": 3,
+    "bicc_enabled": 14,
+    "bicc_pct": 70,
+    "pk_count": 3
+  },
+  "tables": [
+    "HZ_PARTIES",
+    "IBY_DEBIT_AUTHORIZATIONS_F",
+    "XLE_ENTITY_PROFILES"
+  ],
+  "attributes": [
+    {
+      "name": "DebitAuthorizeAmendmentReasonCode",
+      "table": "IBY_DEBIT_AUTHORIZATIONS_F",
+      "column": "AMENDMENT_REASON_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "DebitAuthorizeAuthCancelDate",
+      "table": "IBY_DEBIT_AUTHORIZATIONS_F",
+      "column": "AUTH_CANCEL_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "DebitAuthorizeAuthSignDate",
+      "table": "IBY_DEBIT_AUTHORIZATIONS_F",
+      "column": "AUTH_SIGN_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "DebitAuthorizeAuthorizationReferenceNumber",
+      "table": "IBY_DEBIT_AUTHORIZATIONS_F",
+      "column": "AUTHORIZATION_REFERENCE_NUMBER",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "DebitAuthorizeAuthorizationRevisionNumber",
+      "table": "IBY_DEBIT_AUTHORIZATIONS_F",
+      "column": "AUTHORIZATION_REVISION_NUMBER",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "DebitAuthorizeCreditorIdentifier",
+      "table": "IBY_DEBIT_AUTHORIZATIONS_F",
+      "column": "CREDITOR_IDENTIFIER",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "DebitAuthorizeDebitAuthMethod",
+      "table": "IBY_DEBIT_AUTHORIZATIONS_F",
+      "column": "DEBIT_AUTH_METHOD",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "DebitAuthorizeDebitAuthorizationId",
+      "table": "IBY_DEBIT_AUTHORIZATIONS_F",
+      "column": "DEBIT_AUTHORIZATION_ID",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    },
+    {
+      "name": "DebitAuthorizeDebtorPartyId",
+      "table": "IBY_DEBIT_AUTHORIZATIONS_F",
+      "column": "DEBTOR_PARTY_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "DebitAuthorizeEffectiveEndDate",
+      "table": "IBY_DEBIT_AUTHORIZATIONS_F",
+      "column": "EFFECTIVE_END_DATE",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    },
+    {
+      "name": "DebitAuthorizeEffectiveStartDate",
+      "table": "IBY_DEBIT_AUTHORIZATIONS_F",
+      "column": "EFFECTIVE_START_DATE",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    },
+    {
+      "name": "DebitAuthorizeExternalBankAccountId",
+      "table": "IBY_DEBIT_AUTHORIZATIONS_F",
+      "column": "EXTERNAL_BANK_ACCOUNT_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "DebitAuthorizePaymentTypeCode",
+      "table": "IBY_DEBIT_AUTHORIZATIONS_F",
+      "column": "PAYMENT_TYPE_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "DebitAuthorizePrimaryFlag",
+      "table": "IBY_DEBIT_AUTHORIZATIONS_F",
+      "column": "PRIMARY_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LegalEntityId",
+      "table": "XLE_ENTITY_PROFILES",
+      "column": "LEGAL_ENTITY_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LegalEntityIdentifier",
+      "table": "XLE_ENTITY_PROFILES",
+      "column": "LEGAL_ENTITY_IDENTIFIER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LegalEntityName",
+      "table": "XLE_ENTITY_PROFILES",
+      "column": "NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LegalEntityObjectVersionNumber",
+      "table": "XLE_ENTITY_PROFILES",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartyId",
+      "table": "HZ_PARTIES",
+      "column": "PARTY_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartyName",
+      "table": "HZ_PARTIES",
+      "column": "PARTY_NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    }
+  ],
+  "by_table": {
+    "IBY_DEBIT_AUTHORIZATIONS_F": [
+      {
+        "attribute": "DebitAuthorizeAmendmentReasonCode",
+        "column": "AMENDMENT_REASON_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "DebitAuthorizeAuthCancelDate",
+        "column": "AUTH_CANCEL_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "DebitAuthorizeAuthSignDate",
+        "column": "AUTH_SIGN_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "DebitAuthorizeAuthorizationReferenceNumber",
+        "column": "AUTHORIZATION_REFERENCE_NUMBER",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "DebitAuthorizeAuthorizationRevisionNumber",
+        "column": "AUTHORIZATION_REVISION_NUMBER",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "DebitAuthorizeCreditorIdentifier",
+        "column": "CREDITOR_IDENTIFIER",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "DebitAuthorizeDebitAuthMethod",
+        "column": "DEBIT_AUTH_METHOD",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "DebitAuthorizeDebitAuthorizationId",
+        "column": "DEBIT_AUTHORIZATION_ID",
+        "bicc": true,
+        "pk": true
+      },
+      {
+        "attribute": "DebitAuthorizeDebtorPartyId",
+        "column": "DEBTOR_PARTY_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "DebitAuthorizeEffectiveEndDate",
+        "column": "EFFECTIVE_END_DATE",
+        "bicc": true,
+        "pk": true
+      },
+      {
+        "attribute": "DebitAuthorizeEffectiveStartDate",
+        "column": "EFFECTIVE_START_DATE",
+        "bicc": true,
+        "pk": true
+      },
+      {
+        "attribute": "DebitAuthorizeExternalBankAccountId",
+        "column": "EXTERNAL_BANK_ACCOUNT_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "DebitAuthorizePaymentTypeCode",
+        "column": "PAYMENT_TYPE_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "DebitAuthorizePrimaryFlag",
+        "column": "PRIMARY_FLAG",
+        "bicc": true,
+        "pk": false
+      }
+    ],
+    "XLE_ENTITY_PROFILES": [
+      {
+        "attribute": "LegalEntityId",
+        "column": "LEGAL_ENTITY_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "LegalEntityIdentifier",
+        "column": "LEGAL_ENTITY_IDENTIFIER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "LegalEntityName",
+        "column": "NAME",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "LegalEntityObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "HZ_PARTIES": [
+      {
+        "attribute": "PartyId",
+        "column": "PARTY_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PartyName",
+        "column": "PARTY_NAME",
+        "bicc": true,
+        "pk": false
+      }
+    ]
+  }
+}

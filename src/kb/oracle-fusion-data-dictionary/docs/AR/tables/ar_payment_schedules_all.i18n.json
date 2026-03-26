@@ -1,0 +1,649 @@
+{
+  "source": "ar_payment_schedules_all.md",
+  "source_hash": "fe0aa04b25b689fb1fee2ed1a274609d",
+  "translated_at": "2026-03-25",
+  "items": [
+    {
+      "id": 1,
+      "br": "Visão Geral",
+      "en": "Overview",
+      "es": "Visión general"
+    },
+    {
+      "id": 2,
+      "br": "Armazena os cronogramas de pagamento de todas as transações e recebimentos do módulo Accounts Receivable. Cada registro representa uma parcela de pagamento com data de vencimento, valor original, saldo remanescente e valores aplicados/creditados/ajustados. É a tabela fundamental para cálculo de aging (envelhecimento de recebíveis), controle de inadimplência e análise de saldos em aberto.",
+      "en": "Stores the payment schedules for all transactions and receipts from the Accounts Receivable module. Each record represents a payment installment with due date, original amount, remaining balance, and amounts applied/credited/adjusted. This is the fundamental table for calculating aging (receivables aging), bad debt control, and outstanding balance analysis.",
+      "es": "Almacena los calendarios de pago de todas las transacciones y cobros del módulo Accounts Receivable. Cada registro representa una parte de pago con fecha de vencimiento, importe original, saldo restante y valores aplicados/créditos/ajustes. Es la tabla fundamental para el cálculo del envejecimiento de los cobros, el control de impagos y el análisis de saldos pendientes."
+    },
+    {
+      "id": 3,
+      "br": "A coluna CLASS distingue o tipo: INV (fatura), CM (credit memo), DM (debit memo), DEP (depósito), GUAR (garantia), BR (bill receivable) e PMT (pagamento/recebimento).",
+      "en": "The CLASS column distinguishes the type: INV (invoice), CM (credit memo), DM (debit memo), DEP (deposit), GUAR (guarantee), BR (bill receivable), and PMT (payment/receipt).",
+      "es": "La columna CLASS distingue el tipo: INV (factura), CM (nota de crédito), DM (nota de débito), DEP (depósito), GUAR (garantía), BR (factura a cobrar) y PMT (pago/cobro)."
+    },
+    {
+      "id": 4,
+      "br": "Sufixo _ALL",
+      "en": "Suffix _ALL",
+      "es": "Sufijo _ALL"
+    },
+    {
+      "id": 5,
+      "br": "O sufixo _ALL indica que a tabela armazena dados de todas as business units (multi-org). O filtro por ORG_ID é necessário para consultas por organização específica.",
+      "en": "The suffix _ALL indicates that the table stores data for all business units (multi-org). Filtering by ORG_ID is necessary for queries by specific organization.",
+      "es": "El sufijo _ALL indica que la tabla almacena datos de todas las business units (multi-org). Se necesita el filtro por ORG_ID para consultas específicas de organización."
+    },
+    {
+      "id": 6,
+      "br": "Propósito de Negócio",
+      "en": "Business Purpose",
+      "es": "Propósito de negocio"
+    },
+    {
+      "id": 7,
+      "br": "Esta tabela é utilizada nos seguintes processos:",
+      "en": "This table is used in the following processes:",
+      "es": "Esta tabla se utiliza en los siguientes procesos:"
+    },
+    {
+      "id": 8,
+      "br": "Cálculo de saldos em aberto por faixa de vencimento (current, 1-30, 31-60, 61-90, 90+).",
+      "en": "Calculation of outstanding balances by payment period (current, 1-30, 31-60, 61-90, 90+).",
+      "es": "Cálculo de saldos pendientes por rango de vencimiento (current, 1-30, 31-60, 61-90, 90+)."
+    },
+    {
+      "id": 9,
+      "br": "Identificação de faturas vencidas via `DUE_DATE` × `AMOUNT_DUE_REMAINING`.",
+      "en": "Identification of overdue invoices via DUE_DATE × AMOUNT_DUE_REMAINING.",
+      "es": "Identificación de facturas pendientes mediante `DUE_DATE` × `AMOUNT_DUE_REMAINING`."
+    },
+    {
+      "id": 10,
+      "br": "Base para processos de dunning — seleção de faturas vencidas por cliente/site.",
+      "en": "Basis for dunning processes — selection of overdue invoices by customer/site.",
+      "es": "Base para procesos de cobranza — selección de facturas pendientes por cliente/sitio."
+    },
+    {
+      "id": 11,
+      "br": "Saldo em aberto (`AMOUNT_DUE_REMAINING`) deve bater com subledger e GL.",
+      "en": "Outstanding balance (AMOUNT_DUE_REMAINING) must match the subledger and GL.",
+      "es": "El saldo pendiente (`AMOUNT_DUE_REMAINING`) debe coincidir con el subledger y el GL."
+    },
+    {
+      "id": 12,
+      "br": "Extração de posição de contas a receber por cliente, moeda, business unit.",
+      "en": "Extraction of accounts receivable position by customer, currency, business unit.",
+      "es": "Extracción de la posición de cuentas a cobrar por cliente, moneda, business unit."
+    },
+    {
+      "id": 13,
+      "br": "Registro de valores em disputa via `AMOUNT_IN_DISPUTE`.",
+      "en": "Recording of disputed amounts via AMOUNT_IN_DISPUTE.",
+      "es": "Registro de valores en disputa mediante `AMOUNT_IN_DISPUTE`."
+    },
+    {
+      "id": 14,
+      "br": "Colunas Principais",
+      "en": "Key Columns",
+      "es": "Columnas principales"
+    },
+    {
+      "id": 15,
+      "br": "Confiança",
+      "en": "Confidence",
+      "es": "Confianza"
+    },
+    {
+      "id": 16,
+      "br": "Escala de 0% a 100% — grau de certeza da descrição gerada por IA com base na documentação oficial Oracle (OEDMF/BICC Release 13/25A).",
+      "en": "Scale from 0% to 100% — degree of certainty of the description generated by AI based on Oracle official documentation (OEDMF/BICC Release 13/25A).",
+      "es": "Escala del 0% al 100% — grado de certeza de la descripción generada por IA en base a la documentación oficial de Oracle (OEDMF/BICC Release 13/25A)."
+    },
+    {
+      "id": 17,
+      "br": "- 🟢 81–100% — Coluna presente na documentação oficial Oracle; nome, tipo e descrição confirmados.",
+      "en": "- 🟢 81–100% — Column present in Oracle official documentation; name, type, and description confirmed.",
+      "es": "- 🟢 81–100% — Columna presente en la documentación oficial de Oracle; nombre, tipo y descripción confirmados."
+    },
+    {
+      "id": 18,
+      "br": "- 🟡 51–80% — Coluna inferida por naming convention ou padrão Oracle; tipo exato pode variar.",
+      "en": "- 🟡 51–80% — Column inferred by naming convention or Oracle standard; exact type may vary.",
+      "es": "- 🟡 51–80% — Columna inferida por convención de nomenclatura o estándar de Oracle; el tipo exacto puede variar."
+    },
+    {
+      "id": 19,
+      "br": "- 🔴 0–50% — Existência ou tipo incertos; pode não existir no release atual; validar no ambiente.",
+      "en": "- 🔴 0–50% — Existence or type uncertain; may not exist in the current release; validate in the environment.",
+      "es": "- 🔴 0–50% — Existencia o tipo inciertos; puede no existir en la versión actual; validar en el entorno."
+    },
+    {
+      "id": 20,
+      "br": "Coluna",
+      "en": "Column",
+      "es": "Columna"
+    },
+    {
+      "id": 21,
+      "br": "Tipo",
+      "en": "Type",
+      "es": "Tipo"
+    },
+    {
+      "id": 22,
+      "br": "Nulo?",
+      "en": "Null?",
+      "es": "Nulo?"
+    },
+    {
+      "id": 23,
+      "br": "Categoria",
+      "en": "Category",
+      "es": "Categoría"
+    },
+    {
+      "id": 24,
+      "br": "Descrição",
+      "en": "Description",
+      "es": "Descripción"
+    },
+    {
+      "id": 25,
+      "br": "Identificador único do schedule de pagamento",
+      "en": "Unique identifier for the payment schedule",
+      "es": "Identificador único del schedule de pago"
+    },
+    {
+      "id": 26,
+      "br": "Transação associada (faturas, CMs, DMs)",
+      "en": "Associated transaction (invoices, CMs, DMs)",
+      "es": "Transacción asociada (facturas, CMs, DMs)"
+    },
+    {
+      "id": 27,
+      "br": "Recebimento associado",
+      "en": "Associated receipt",
+      "es": "Recibo asociado"
+    },
+    {
+      "id": 28,
+      "br": "Classificação",
+      "en": "Classification",
+      "es": "Clasificación"
+    },
+    {
+      "id": 29,
+      "br": "Tipo: INV/CM/DM/DEP/GUAR/BR/PMT",
+      "en": "Type: INV/CM/DM/DEP/GUAR/BR/PMT",
+      "es": "Tipo: INV/CM/DM/DEP/GUAR/BR/PMT"
+    },
+    {
+      "id": 30,
+      "br": "Status: OP (aberto) ou CL (fechado)",
+      "en": "Status: OP (open) or CL (closed)",
+      "es": "Estado: OP (abierto) o CL (cerrado)"
+    },
+    {
+      "id": 31,
+      "br": "Data",
+      "en": "Date",
+      "es": "Fecha"
+    },
+    {
+      "id": 32,
+      "br": "Data de vencimento da parcela",
+      "en": "Due date of installment",
+      "es": "Fecha de vencimiento de la cuota"
+    },
+    {
+      "id": 33,
+      "br": "Financeiro",
+      "en": "Financial",
+      "es": "Financiero"
+    },
+    {
+      "id": 34,
+      "br": "Valor original da parcela",
+      "en": "Original installment amount",
+      "es": "Valor original de la cuota"
+    },
+    {
+      "id": 35,
+      "br": "Saldo remanescente (valor em aberto)",
+      "en": "Remaining balance (amount outstanding)",
+      "es": "Saldo restante (valor pendiente)"
+    },
+    {
+      "id": 36,
+      "br": "Total aplicado (recebimentos + credit memos)",
+      "en": "Total applied (receipts + credit memos)",
+      "es": "Total aplicado (recibos + memos de crédito)"
+    },
+    {
+      "id": 37,
+      "br": "Total creditado via credit memos",
+      "en": "Total credited via credit memos",
+      "es": "Total acreditado a través de memos de crédito"
+    },
+    {
+      "id": 38,
+      "br": "Total ajustado (write-offs, reclassificações)",
+      "en": "Adjusted total (write-offs, reclassifications)",
+      "es": "Total ajustado (deducciones, reclasificaciones)"
+    },
+    {
+      "id": 39,
+      "br": "Valor em disputa",
+      "en": "Amount in dispute",
+      "es": "Valor en disputa"
+    },
+    {
+      "id": 40,
+      "br": "Valor original de itens de linha",
+      "en": "Original line item amount",
+      "es": "Valor original de ítems de línea"
+    },
+    {
+      "id": 41,
+      "br": "Valor original de imposto",
+      "en": "Original tax amount",
+      "es": "Valor original de impuestos"
+    },
+    {
+      "id": 42,
+      "br": "Saldo remanescente de imposto",
+      "en": "Remaining tax balance",
+      "es": "Saldo restante de impuestos"
+    },
+    {
+      "id": 43,
+      "br": "Valor original de frete",
+      "en": "Original shipping amount",
+      "es": "Valor original de flete"
+    },
+    {
+      "id": 44,
+      "br": "Saldo remanescente de frete",
+      "en": "Remaining shipping amount",
+      "es": "Saldo restante de flete"
+    },
+    {
+      "id": 45,
+      "br": "Número total de parcelas da transação",
+      "en": "Total number of installments of the transaction",
+      "es": "Número total de cuotas de la transacción"
+    },
+    {
+      "id": 46,
+      "br": "Número sequencial da parcela nos termos de pagamento",
+      "en": "Sequential number of installment in payment terms",
+      "es": "Número secuencial de la cuota en los términos de pago"
+    },
+    {
+      "id": 47,
+      "br": "Cliente",
+      "en": "Customer",
+      "es": "Cliente"
+    },
+    {
+      "id": 48,
+      "br": "Conta do cliente",
+      "en": "Customer account",
+      "es": "Cuenta del cliente"
+    },
+    {
+      "id": 49,
+      "br": "Site de uso do cliente",
+      "en": "Customer's usage site",
+      "es": "Sitio de uso del cliente"
+    },
+    {
+      "id": 50,
+      "br": "Código da moeda (ISO 4217)",
+      "en": "Currency code (ISO 4217)",
+      "es": "Código de la moneda (ISO 4217)"
+    },
+    {
+      "id": 51,
+      "br": "Tipo de taxa de câmbio",
+      "en": "Exchange rate type",
+      "es": "Tipo de tasa de cambio"
+    },
+    {
+      "id": 52,
+      "br": "Taxa de câmbio aplicada",
+      "en": "Applied exchange rate",
+      "es": "Tasa de cambio aplicada"
+    },
+    {
+      "id": 53,
+      "br": "Data da taxa de câmbio",
+      "en": "Exchange rate date",
+      "es": "Fecha de la tasa de cambio"
+    },
+    {
+      "id": 54,
+      "br": "Contabilidade",
+      "en": "Accounting",
+      "es": "Contabilidad"
+    },
+    {
+      "id": 55,
+      "br": "Data contábil (General Ledger)",
+      "en": "Accounting date (General Ledger)",
+      "es": "Fecha contable (General Ledger)"
+    },
+    {
+      "id": 56,
+      "br": "Data contábil de fechamento",
+      "en": "Closing date",
+      "es": "Fecha contable de cierre"
+    },
+    {
+      "id": 57,
+      "br": "Data real de fechamento do schedule",
+      "en": "Actual closing date of the schedule",
+      "es": "Fecha real de cierre del schedule"
+    },
+    {
+      "id": 58,
+      "br": "Identificação",
+      "en": "Identification",
+      "es": "Identificación"
+    },
+    {
+      "id": 59,
+      "br": "Número da transação (denormalizado)",
+      "en": "Transaction number (denormalized)",
+      "es": "Número de transacción (denormalizado)"
+    },
+    {
+      "id": 60,
+      "br": "Data da transação (denormalizado)",
+      "en": "Transaction date (denormalized)",
+      "es": "Fecha de la transacción (denormalizado)"
+    },
+    {
+      "id": 61,
+      "br": "Tipo de transação",
+      "en": "Transaction type",
+      "es": "Tipo de transacción"
+    },
+    {
+      "id": 62,
+      "br": "Condição de pagamento",
+      "en": "Payment condition",
+      "es": "Condición de pago"
+    },
+    {
+      "id": 63,
+      "br": "Data limite para desconto",
+      "en": "Discount deadline",
+      "es": "Fecha límite para descuento"
+    },
+    {
+      "id": 64,
+      "br": "Valor do desconto disponível",
+      "en": "Available discount amount",
+      "es": "Valor del descuento disponible"
+    },
+    {
+      "id": 65,
+      "br": "Desconto concedido aproveitado",
+      "en": "Discount granted utilized",
+      "es": "Descuento concedido aplicado"
+    },
+    {
+      "id": 66,
+      "br": "Desconto não-concedido aproveitado",
+      "en": "Unutilized discount",
+      "es": "Descuento no concedido aplicado"
+    },
+    {
+      "id": 67,
+      "br": "Controle",
+      "en": "Control",
+      "es": "Control"
+    },
+    {
+      "id": 68,
+      "br": "Lote de recebimento em que o schedule foi selecionado",
+      "en": "Receipt batch in which the schedule was selected",
+      "es": "Lote de recepción en el que se seleccionó el schedule"
+    },
+    {
+      "id": 69,
+      "br": "Data da disputa",
+      "en": "Dispute date",
+      "es": "Fecha de la disputa"
+    },
+    {
+      "id": 70,
+      "br": "Business unit (multi-org)",
+      "en": "Business unit (multi-org)",
+      "es": "Business unit (multi-org)"
+    },
+    {
+      "id": 71,
+      "br": "Auditoria",
+      "en": "Audit",
+      "es": "Auditoría"
+    },
+    {
+      "id": 72,
+      "br": "Usuário que criou o registro",
+      "en": "User who created the record",
+      "es": "Usuario que creó el registro"
+    },
+    {
+      "id": 73,
+      "br": "Data/hora de criação",
+      "en": "Creation date/time",
+      "es": "Fecha/hora de creación"
+    },
+    {
+      "id": 74,
+      "br": "Último usuário que alterou",
+      "en": "Last user who modified",
+      "es": "Último usuario que modificó"
+    },
+    {
+      "id": 75,
+      "br": "Data/hora da última alteração",
+      "en": "Last modification date/time",
+      "es": "Fecha/hora de la última modificación"
+    },
+    {
+      "id": 76,
+      "br": "Login da última sessão",
+      "en": "Last session login",
+      "es": "Sesión de inicio de sesión"
+    },
+    {
+      "id": 77,
+      "br": "Relacionamentos",
+      "en": "Relationships",
+      "es": "Relaciones"
+    },
+    {
+      "id": 78,
+      "br": "Tabelas-pai (FK de entrada)",
+      "en": "Parent tables (incoming FK)",
+      "es": "Tablas padre (clave foránea de entrada)"
+    },
+    {
+      "id": 79,
+      "br": "transação",
+      "en": "transaction",
+      "es": "transacción"
+    },
+    {
+      "id": 80,
+      "br": "recebimento",
+      "en": "receipt",
+      "es": "recepción"
+    },
+    {
+      "id": 81,
+      "br": "cliente",
+      "en": "customer",
+      "es": "cliente"
+    },
+    {
+      "id": 82,
+      "br": "site do cliente",
+      "en": "customer website",
+      "es": "sitio web del cliente"
+    },
+    {
+      "id": 83,
+      "br": "tipo de transação",
+      "en": "transaction type",
+      "es": "tipo de transacción"
+    },
+    {
+      "id": 84,
+      "br": "condição de pagamento",
+      "en": "payment terms",
+      "es": "condición de pago"
+    },
+    {
+      "id": 85,
+      "br": "tipo de câmbio",
+      "en": "exchange rate",
+      "es": "tipo de cambio"
+    },
+    {
+      "id": 86,
+      "br": "business unit",
+      "en": "business unit",
+      "es": "business unit"
+    },
+    {
+      "id": 87,
+      "br": "Tabelas-filha (FK de saída)",
+      "en": "Child tables (outgoing FK)",
+      "es": "Tablas hijas (clave foránea de salida)"
+    },
+    {
+      "id": 88,
+      "br": "ar_receivable_applications_all — via APPLIED_PAYMENT_SCHEDULE_ID e PAYMENT_SCHEDULE_ID (aplicações)",
+      "en": "ar_receivable_applications_all — via APPLIED_PAYMENT_SCHEDULE_ID and PAYMENT_SCHEDULE_ID (applications)",
+      "es": "ar_receivable_applications_all — a través de APPLIED_PAYMENT_SCHEDULE_ID y PAYMENT_SCHEDULE_ID (aplicaciones)"
+    },
+    {
+      "id": 89,
+      "br": "ajustes",
+      "en": "adjustments",
+      "es": "ajustes"
+    },
+    {
+      "id": 90,
+      "br": "Uso Típico",
+      "en": "Typical Use",
+      "es": "Uso típico"
+    },
+    {
+      "id": 91,
+      "br": "Saldo em aberto por cliente (aging)",
+      "en": "Outstanding balance per customer (aging)",
+      "es": "Saldo pendiente por cliente (envejecimiento)"
+    },
+    {
+      "id": 92,
+      "br": "Faturas vencidas há mais de 90 dias",
+      "en": "Invoices overdue by more than 90 days",
+      "es": "Facturas vencidas hace más de 90 días"
+    },
+    {
+      "id": 93,
+      "br": "Filtros comuns",
+      "en": "Common filters",
+      "es": "Filtros comunes"
+    },
+    {
+      "id": 94,
+      "br": "Schedules em aberto",
+      "en": "Open schedules",
+      "es": "Schedules pendientes"
+    },
+    {
+      "id": 95,
+      "br": "Schedules fechados",
+      "en": "Closed schedules",
+      "es": "Schedules cerrados"
+    },
+    {
+      "id": 96,
+      "br": "Apenas faturas",
+      "en": "Only invoices",
+      "es": "Solo facturas"
+    },
+    {
+      "id": 97,
+      "br": "Apenas recebimentos",
+      "en": "Only receipts",
+      "es": "Solo recepciones"
+    },
+    {
+      "id": 98,
+      "br": "Com saldo remanescente",
+      "en": "With remaining balance",
+      "es": "Con saldo pendiente"
+    },
+    {
+      "id": 99,
+      "br": "Observações",
+      "en": "Notes",
+      "es": "Observaciones"
+    },
+    {
+      "id": 100,
+      "br": "A relação AMOUNT_DUE_REMAINING = AMOUNT_DUE_ORIGINAL - AMOUNT_APPLIED - AMOUNT_CREDITED - AMOUNT_ADJUSTED deve ser sempre consistente.",
+      "en": "The relationship AMOUNT_DUE_REMAINING = AMOUNT_DUE_ORIGINAL - AMOUNT_APPLIED - AMOUNT_CREDITED - AMOUNT_ADJUSTED must always be consistent.",
+      "es": "La relación AMOUNT_DUE_REMAINING = AMOUNT_DUE_ORIGINAL - AMOUNT_APPLIED - AMOUNT_CREDITED - AMOUNT_ADJUSTED debe ser siempre consistente."
+    },
+    {
+      "id": 101,
+      "br": "Um registro existe para cada parcela — transações com condição de pagamento parcelada geram múltiplos schedules (e.g., 30/60/90 dias gera 3 registros).",
+      "en": "There is a record for each installment – transactions with installment payment terms generate multiple schedules (e.g., 30/60/90 days generates 3 records).",
+      "es": "Existe un registro para cada cuota: las transacciones con condición de pago en cuotas generan múltiples horarios (por ejemplo, 30/60/90 días genera 3 registros)."
+    },
+    {
+      "id": 102,
+      "br": "O campo CLASS = 'PMT' indica um schedule de recebimento (cash receipt) — o saldo remanescente negativo indica valor não-aplicado.",
+      "en": "The CLASS = 'PMT' field indicates a cash receipt schedule – the remaining negative balance indicates unapplied amount.",
+      "es": "El campo CLASS = 'PMT' indica un horario de recepción (cash receipt): el saldo restante negativo indica valor no aplicado."
+    },
+    {
+      "id": 103,
+      "br": "Os campos GL_DATE_CLOSED e ACTUAL_DATE_CLOSED são preenchidos quando STATUS muda para 'CL'.",
+      "en": "The fields GL_DATE_CLOSED and ACTUAL_DATE_CLOSED are populated when the STATUS changes to 'CL'.",
+      "es": "Los campos GL_DATE_CLOSED y ACTUAL_DATE_CLOSED se completan cuando el ESTADO cambia a 'CL'."
+    },
+    {
+      "id": 104,
+      "br": "Os campos TAX_ORIGINAL, TAX_REMAINING, FREIGHT_ORIGINAL, FREIGHT_REMAINING são denormalizados para performance em relatórios de aging.",
+      "en": "The fields TAX_ORIGINAL, TAX_REMAINING, FREIGHT_ORIGINAL, FREIGHT_REMAINING are denormalized for performance in aging reports.",
+      "es": "Los campos TAX_ORIGINAL, TAX_REMAINING, FREIGHT_ORIGINAL, FREIGHT_REMAINING se denormalizan para mejorar el rendimiento en los informes de antigüedad."
+    },
+    {
+      "id": 105,
+      "br": "Referências",
+      "en": "References",
+      "es": "Referencias"
+    },
+    {
+      "id": 106,
+      "br": "[Oracle Docs — AR_PAYMENT_SCHEDULES_ALL](https://docs.oracle.com/en/cloud/saas/financials/25a/oedmf/arpaymentschedulesall-10053.html)",
+      "en": "[Oracle Docs — AR_PAYMENT_SCHEDULES_ALL](https://docs.oracle.com/en/cloud/saas/financials/25a/oedmf/arpaymentschedulesall-10053.html)",
+      "es": "[Oracle Docs — AR_PAYMENT_SCHEDULES_ALL](https://docs.oracle.com/en/cloud/saas/financials/25a/oedmf/arpaymentschedulesall-10053.html)"
+    },
+    {
+      "id": 107,
+      "br": "ar-module-data-dictionary — Dossiê do módulo AR",
+      "en": "ar-module-data-dictionary — AR module data dictionary",
+      "es": "gl-module-data-dictionary — Diccionario del módulo AR"
+    }
+  ]
+}

@@ -1,0 +1,553 @@
+{
+  "source": "ra_batches_all.md",
+  "source_hash": "86cff9c53eb9793bb34bded990454609",
+  "translated_at": "2026-03-25",
+  "items": [
+    {
+      "id": 1,
+      "br": "Visão Geral",
+      "en": "Overview",
+      "es": "Visión general"
+    },
+    {
+      "id": 2,
+      "br": "Armazena informações sobre lotes de transações (batches) do módulo Accounts Receivable. Cada lote agrupa transações criadas em conjunto para processamento, permitindo controle de volume e valor esperado versus realizado. Lotes são criados tanto por entrada manual quanto por processos de importação em massa (AutoInvoice).",
+      "en": "Stores information about transaction batches (from the Accounts Receivable module). Each batch groups transactions created together for processing, allowing for volume and expected versus actual value control. Batches are created both manually and through mass import processes (AutoInvoice).",
+      "es": "Almacena información sobre lotes de transacciones (batches) del módulo Accounts Receivable. Cada lote agrupa transacciones creadas en conjunto para su procesamiento, permitiendo el control del volumen y el valor esperado versus el realizado. Los lotes se crean tanto mediante entrada manual como mediante procesos de importación masiva (AutoInvoice)."
+    },
+    {
+      "id": 3,
+      "br": "É a tabela de controle de agrupamento — usada para rastreamento de importações, validação de totais e organização de entrada de dados.",
+      "en": "This is the grouping control table – used for import tracking, total validation, and data entry organization.",
+      "es": "Es la tabla de control de agrupación — utilizada para el seguimiento de importaciones, la validación de totales y la organización de la entrada de datos."
+    },
+    {
+      "id": 4,
+      "br": "Sufixo _ALL",
+      "en": "Suffix _ALL",
+      "es": "Sufijo _ALL"
+    },
+    {
+      "id": 5,
+      "br": "O sufixo _ALL indica que a tabela armazena dados de todas as business units (multi-org). O filtro por ORG_ID é necessário para consultas por organização específica.",
+      "en": "The suffix _ALL indicates that the table stores data for all business units (multi-org). Filtering by ORG_ID is required for queries by specific organization.",
+      "es": "El sufijo _ALL indica que la tabla almacena datos de todas las business units (multi-org). Se requiere el filtro por ORG_ID para consultas específicas de organización."
+    },
+    {
+      "id": 6,
+      "br": "Propósito de Negócio",
+      "en": "Business Purpose",
+      "es": "Propósito de negocio"
+    },
+    {
+      "id": 7,
+      "br": "Esta tabela é utilizada nos seguintes processos:",
+      "en": "This table is used in the following processes:",
+      "es": "Esta tabla se utiliza en los siguientes procesos:"
+    },
+    {
+      "id": 8,
+      "br": "Agrupamento de faturas criadas manualmente em lotes para conferência (contagem e valor de controle vs. real).",
+      "en": "Grouping of invoices created manually into batches for review (counting and control value versus actual).",
+      "es": "Agrupamiento de facturas creadas manualmente en lotes para su revisión (conteo y valor de control versus el real)."
+    },
+    {
+      "id": 9,
+      "br": "Lotes criados pelo AutoInvoice ou por integrações externas são registrados aqui para rastreabilidade.",
+      "en": "Batches created by AutoInvoice or external integrations are recorded here for traceability.",
+      "es": "Los lotes creados por AutoInvoice o por integraciones externas se registran aquí para el seguimiento."
+    },
+    {
+      "id": 10,
+      "br": "Campos `CONTROL_COUNT`/`CONTROL_AMOUNT` vs. `ACTUAL_COUNT`/`ACTUAL_AMOUNT` permitem conferência de integridade.",
+      "en": "The `CONTROL_COUNT`/`CONTROL_AMOUNT` vs. `ACTUAL_COUNT`/`ACTUAL_AMOUNT` fields allow for integrity checking.",
+      "es": "Los campos `CONTROL_COUNT`/`CONTROL_AMOUNT` versus `ACTUAL_COUNT`/`ACTUAL_AMOUNT` permiten la verificación de integridad."
+    },
+    {
+      "id": 11,
+      "br": "O campo `PURGED_CHILDREN_FLAG` indica se as transações filhas foram expurgadas, mantendo o registro do lote para auditoria.",
+      "en": "The `PURGED_CHILDREN_FLAG` indicates whether child transactions have been purged, maintaining the batch record for auditing.",
+      "es": "El campo `PURGED_CHILDREN_FLAG` indica si las transacciones hijas han sido eliminadas, manteniendo el registro del lote para auditoría."
+    },
+    {
+      "id": 12,
+      "br": "Usuários podem agrupar transações por critério funcional (data, origem, tipo) para facilitar revisão e aprovação.",
+      "en": "Users can group transactions by functional criteria (date, origin, type) to facilitate review and approval.",
+      "es": "Los usuarios pueden agrupar transacciones según criterios funcionales (fecha, origen, tipo) para facilitar la revisión y la aprobación."
+    },
+    {
+      "id": 13,
+      "br": "Colunas Principais",
+      "en": "Key Columns",
+      "es": "Columnas principales"
+    },
+    {
+      "id": 14,
+      "br": "Confiança",
+      "en": "Confidence",
+      "es": "Confianza"
+    },
+    {
+      "id": 15,
+      "br": "Escala de 0% a 100% — grau de certeza da descrição gerada por IA com base na documentação oficial Oracle (OEDMF/BICC Release 13/25A).",
+      "en": "Scale of 0% to 100% – degree of certainty of the description generated by AI based on official Oracle documentation (OEDMF/BICC Release 13/25A).",
+      "es": "Escala del 0% al 100% — grado de certeza de la descripción generada por IA, basado en la documentación oficial de Oracle (OEDMF/BICC Release 13/25A)."
+    },
+    {
+      "id": 16,
+      "br": "- 🟢 81–100% — Coluna presente na documentação oficial Oracle; nome, tipo e descrição confirmados.",
+      "en": "- 🟢 81–100% – Column present in official Oracle documentation; name, type, and description confirmed.",
+      "es": "- 🟢 81–100% — Columna presente en la documentación oficial de Oracle; nombre, tipo y descripción confirmados."
+    },
+    {
+      "id": 17,
+      "br": "- 🟡 51–80% — Coluna inferida por naming convention ou padrão Oracle; tipo exato pode variar.",
+      "en": "- 🟡 51–80% – Column inferred by naming convention or Oracle standard; exact type may vary.",
+      "es": "- 🟡 51–80% — Columna inferida por convenciones de nomenclatura o estándares de Oracle; el tipo exacto puede variar."
+    },
+    {
+      "id": 18,
+      "br": "- 🔴 0–50% — Existência ou tipo incertos; pode não existir no release atual; validar no ambiente.",
+      "en": "- 🔴 0–50% – Existence or type uncertain; may not exist in the current release; validate in the environment.",
+      "es": "- 🔴 0–50% — Existencia o tipo inciertos; puede no existir en la versión actual; validar en el entorno."
+    },
+    {
+      "id": 19,
+      "br": "Coluna",
+      "en": "Column",
+      "es": "Columna"
+    },
+    {
+      "id": 20,
+      "br": "Tipo",
+      "en": "Type",
+      "es": "Tipo"
+    },
+    {
+      "id": 21,
+      "br": "Nulo?",
+      "en": "Null?",
+      "es": "Nulo?"
+    },
+    {
+      "id": 22,
+      "br": "Categoria",
+      "en": "Category",
+      "es": "Categoría"
+    },
+    {
+      "id": 23,
+      "br": "Descrição",
+      "en": "Description",
+      "es": "Descripción"
+    },
+    {
+      "id": 24,
+      "br": "Identificador único do lote",
+      "en": "Unique Batch Identifier",
+      "es": "Identificador único del lote"
+    },
+    {
+      "id": 25,
+      "br": "Identificação",
+      "en": "Identification",
+      "es": "Identificación"
+    },
+    {
+      "id": 26,
+      "br": "Nome do lote (visível ao usuário)",
+      "en": "Batch name (visible to the user)",
+      "es": "Nombre del lote (visible para el usuario)"
+    },
+    {
+      "id": 27,
+      "br": "Origem/fonte do lote (manual, AutoInvoice, etc.)",
+      "en": "Source/source of the batch (manual, AutoInvoice, etc.)",
+      "es": "Origen/fuente del lote (manual, AutoInvoice, etc.)"
+    },
+    {
+      "id": 28,
+      "br": "Data",
+      "en": "Date",
+      "es": "Fecha"
+    },
+    {
+      "id": 29,
+      "br": "Data do lote",
+      "en": "Batch date",
+      "es": "Fecha del lote"
+    },
+    {
+      "id": 30,
+      "br": "Classificação",
+      "en": "Classification",
+      "es": "Clasificación"
+    },
+    {
+      "id": 31,
+      "br": "Status do lote (CL=Closed, OP=Open)",
+      "en": "Batch status (CL=Closed, OP=Open)",
+      "es": "Estado del lote (CL=Cerrado, OP=Abierto)"
+    },
+    {
+      "id": 32,
+      "br": "Controle",
+      "en": "Control",
+      "es": "Control"
+    },
+    {
+      "id": 33,
+      "br": "Quantidade esperada de transações no lote (informada pelo usuário)",
+      "en": "Expected number of transactions in the batch (provided by the user)",
+      "es": "Cantidad esperada de transacciones en el lote (informada por el usuario)"
+    },
+    {
+      "id": 34,
+      "br": "Valor total esperado do lote (informado pelo usuário)",
+      "en": "Expected total value of the batch (provided by the user)",
+      "es": "Valor total esperado del lote (informado por el usuario)"
+    },
+    {
+      "id": 35,
+      "br": "Quantidade real de transações criadas no lote",
+      "en": "Actual number of transactions created in the batch",
+      "es": "Cantidad real de transacciones creadas en el lote"
+    },
+    {
+      "id": 36,
+      "br": "Valor real total das transações no lote",
+      "en": "Actual total value of transactions in the batch",
+      "es": "Valor total real de las transacciones en el lote"
+    },
+    {
+      "id": 37,
+      "br": "Tipo do lote (INV, CM, DM)",
+      "en": "Batch type (INV, CM, DM)",
+      "es": "Tipo de lote (INV, CM, DM)"
+    },
+    {
+      "id": 38,
+      "br": "Financeiro",
+      "en": "Finance",
+      "es": "Financiero"
+    },
+    {
+      "id": 39,
+      "br": "Moeda do lote (ISO 4217)",
+      "en": "Batch currency (ISO 4217)",
+      "es": "Moneda del lote (ISO 4217)"
+    },
+    {
+      "id": 40,
+      "br": "Tipo de taxa de câmbio padrão para o lote",
+      "en": "Standard exchange rate type for the batch",
+      "es": "Tipo de tasa de cambio estándar para el lote"
+    },
+    {
+      "id": 41,
+      "br": "Data da taxa de câmbio padrão",
+      "en": "Standard exchange rate date",
+      "es": "Fecha de la tasa de cambio estándar"
+    },
+    {
+      "id": 42,
+      "br": "Contabilidade",
+      "en": "Accounting",
+      "es": "Contabilidad"
+    },
+    {
+      "id": 43,
+      "br": "Data GL padrão para transações do lote",
+      "en": "Standard GL date for batch transactions",
+      "es": "Fecha GL estándar para transacciones del lote"
+    },
+    {
+      "id": 44,
+      "br": "Texto livre",
+      "en": "Free text",
+      "es": "Texto libre"
+    },
+    {
+      "id": 45,
+      "br": "Comentários do lote",
+      "en": "Batch comments",
+      "es": "Comentarios del lote"
+    },
+    {
+      "id": 46,
+      "br": "Y = transações filhas foram expurgadas (purge)",
+      "en": "Y = child transactions purged",
+      "es": "Y = transacciones secundarias han sido eliminadas (purge)"
+    },
+    {
+      "id": 47,
+      "br": "Cliente",
+      "en": "Customer",
+      "es": "Cliente"
+    },
+    {
+      "id": 48,
+      "br": "Cliente padrão do lote (sold-to)",
+      "en": "Standard batch customer (sold-to)",
+      "es": "Cliente estándar del lote (cliente de facturación)"
+    },
+    {
+      "id": 49,
+      "br": "Ledger contábil (legado)",
+      "en": "General Ledger (legacy)",
+      "es": "Libro mayor contable (legado)"
+    },
+    {
+      "id": 50,
+      "br": "Data de emissão (bills receivable batches)",
+      "en": "Issue date (bills receivable batches)",
+      "es": "Fecha de emisión (batches de facturas a cobrar)"
+    },
+    {
+      "id": 51,
+      "br": "Data de vencimento (bills receivable batches)",
+      "en": "Due date (bills receivable batches)",
+      "es": "Fecha de vencimiento (grupos de facturas pendientes)"
+    },
+    {
+      "id": 52,
+      "br": "Instruções especiais para o lote",
+      "en": "Special instructions for the batch",
+      "es": "Instrucciones especiales para el grupo"
+    },
+    {
+      "id": 53,
+      "br": "Status do processamento do lote",
+      "en": "Batch processing status",
+      "es": "Estado del procesamiento del grupo"
+    },
+    {
+      "id": 54,
+      "br": "Business unit (multi-org)",
+      "en": "Business unit (multi-org)",
+      "es": "Unidad de negocio (multi-org)"
+    },
+    {
+      "id": 55,
+      "br": "Auditoria",
+      "en": "Audit",
+      "es": "Auditoría"
+    },
+    {
+      "id": 56,
+      "br": "Usuário que criou o registro",
+      "en": "User who created the record",
+      "es": "Usuario que creó el registro"
+    },
+    {
+      "id": 57,
+      "br": "Data/hora de criação",
+      "en": "Creation date/time",
+      "es": "Fecha/hora de creación"
+    },
+    {
+      "id": 58,
+      "br": "Último usuário que alterou",
+      "en": "Last user who modified",
+      "es": "Último usuario que lo modificó"
+    },
+    {
+      "id": 59,
+      "br": "Data/hora da última alteração",
+      "en": "Last modification date/time",
+      "es": "Fecha/hora de la última modificación"
+    },
+    {
+      "id": 60,
+      "br": "Login da última sessão",
+      "en": "Last session login",
+      "es": "Inicio de sesión de la última sesión"
+    },
+    {
+      "id": 61,
+      "br": "ATTRIBUTE1–15",
+      "en": "ATTRIBUTE1–15",
+      "es": "ATTRIBUTE1–15"
+    },
+    {
+      "id": 62,
+      "br": "Atributos descritivos customizáveis por implementação",
+      "en": "Customizable descriptive flexfields by implementation",
+      "es": "Atributos descriptivos personalizables por implementación"
+    },
+    {
+      "id": 63,
+      "br": "Contexto do Descriptive Flexfield",
+      "en": "Context of Descriptive Flexfield",
+      "es": "Contexto del Descriptive Flexfield"
+    },
+    {
+      "id": 64,
+      "br": "Relacionamentos",
+      "en": "Relationships",
+      "es": "Relaciones"
+    },
+    {
+      "id": 65,
+      "br": "Tabelas-pai (FK de entrada)",
+      "en": "Parent tables (FK input)",
+      "es": "Tablas padre (clave foránea de entrada)"
+    },
+    {
+      "id": 66,
+      "br": "origem/fonte do lote",
+      "en": "Batch origin/source",
+      "es": "origen/fuente del grupo"
+    },
+    {
+      "id": 67,
+      "br": "tipo de câmbio",
+      "en": "Exchange rate",
+      "es": "tipo de cambio"
+    },
+    {
+      "id": 68,
+      "br": "cliente padrão",
+      "en": "Standard customer",
+      "es": "cliente estándar"
+    },
+    {
+      "id": 69,
+      "br": "ledger contábil",
+      "en": "General Ledger",
+      "es": "libro mayor"
+    },
+    {
+      "id": 70,
+      "br": "business unit",
+      "en": "Business unit",
+      "es": "unidad de negocio"
+    },
+    {
+      "id": 71,
+      "br": "Tabelas-filha (FK de saída)",
+      "en": "Child tables (FK output)",
+      "es": "Tablas hijas (clave foránea de salida)"
+    },
+    {
+      "id": 72,
+      "br": "transações pertencentes ao lote",
+      "en": "Transactions belonging to the batch",
+      "es": "transacciones pertenecientes al grupo"
+    },
+    {
+      "id": 73,
+      "br": "Uso Típico",
+      "en": "Typical use",
+      "es": "Uso típico"
+    },
+    {
+      "id": 74,
+      "br": "Lotes com divergência entre controle e real",
+      "en": "Batches with discrepancy between control and actual",
+      "es": "Grupos con discrepancia entre control y real"
+    },
+    {
+      "id": 75,
+      "br": "Transações por lote",
+      "en": "Transactions per batch",
+      "es": "Transacciones por grupo"
+    },
+    {
+      "id": 76,
+      "br": "Filtros comuns",
+      "en": "Common Filters",
+      "es": "Filtros comunes"
+    },
+    {
+      "id": 77,
+      "br": "Lotes abertos (ainda recebendo transações)",
+      "en": "Open Batches (still receiving transactions)",
+      "es": "Lotes abiertos (todavía recibiendo transacciones)"
+    },
+    {
+      "id": 78,
+      "br": "Lotes fechados",
+      "en": "Closed Batches",
+      "es": "Lotes cerrados"
+    },
+    {
+      "id": 79,
+      "br": "Lotes cujas transações foram expurgadas",
+      "en": "Batches with purged transactions",
+      "es": "Lotes cuyas transacciones han sido eliminadas"
+    },
+    {
+      "id": 80,
+      "br": "Filtrar por origem do lote",
+      "en": "Filter by batch origin",
+      "es": "Filtrar por origen del lote"
+    },
+    {
+      "id": 81,
+      "br": "Período",
+      "en": "Period",
+      "es": "Período"
+    },
+    {
+      "id": 82,
+      "br": "Observações",
+      "en": "Notes",
+      "es": "Observaciones"
+    },
+    {
+      "id": 83,
+      "br": "Os campos CONTROL_COUNT e CONTROL_AMOUNT são opcionais e preenchidos manualmente pelo usuário no momento da criação do lote. Servem como mecanismo de conferência.",
+      "en": "The CONTROL_COUNT and CONTROL_AMOUNT fields are optional and must be manually entered by the user when creating the batch. They serve as a verification mechanism.",
+      "es": "Los campos CONTROL_COUNT y CONTROL_AMOUNT son opcionales y se completan manualmente por el usuario al crear el lote. Sirven como mecanismo de verificación."
+    },
+    {
+      "id": 84,
+      "br": "Quando PURGED_CHILDREN_FLAG = 'Y', o lote existe apenas como registro histórico — suas transações foram removidas por processo de purge.",
+      "en": "When PURGED_CHILDREN_FLAG = 'Y', the batch only exists as a historical record – its transactions have been removed through a purge process.",
+      "es": "Cuando PURGED_CHILDREN_FLAG = 'Y', el lote existe solo como registro histórico: sus transacciones han sido eliminadas mediante el proceso de eliminación."
+    },
+    {
+      "id": 85,
+      "br": "O BATCH_SOURCE_ID referencia ra_batch_sources_all, que define se a origem é manual, AutoInvoice, ou integração específica.",
+      "en": "The BATCH_SOURCE_ID references ra_batch_sources_all, which defines whether the source is manual, AutoInvoice, or a specific integration.",
+      "es": "BATCH_SOURCE_ID referencia ra_batch_sources_all, que define si la fuente es manual, AutoInvoice o integración específica."
+    },
+    {
+      "id": 86,
+      "br": "Nem toda transação pertence a um lote; o campo BATCH_ID em ra_customer_trx_all pode ser NULL para transações criadas individualmente.",
+      "en": "Not all transactions belong to a batch; the BATCH_ID field in ra_customer_trx_all can be NULL for transactions created individually.",
+      "es": "No todas las transacciones pertenecen a un lote; el campo BATCH_ID en ra_customer_trx_all puede ser NULL para transacciones creadas individualmente."
+    },
+    {
+      "id": 87,
+      "br": "Campos ISSUE_DATE e MATURITY_DATE são utilizados apenas em lotes de Bills Receivable.",
+      "en": "The ISSUE_DATE and MATURITY_DATE fields are only used in Bills Receivable batches.",
+      "es": "Los campos ISSUE_DATE y MATURITY_DATE se utilizan únicamente en lotes de Accounts Receivable."
+    },
+    {
+      "id": 88,
+      "br": "A tabela possui Descriptive Flexfields (DFF) via ATTRIBUTE1–15 para customizações por implementação.",
+      "en": "The table has Descriptive Flexfields (DFF) via ATTRIBUTE1–15 for customization by implementation.",
+      "es": "La tabla tiene Descriptive Flexfields (DFF) a través de ATTRIBUTE1–15 para personalizaciones por implementación."
+    },
+    {
+      "id": 89,
+      "br": "Referências",
+      "en": "References",
+      "es": "Referencias"
+    },
+    {
+      "id": 90,
+      "br": "[Oracle Docs — RA_BATCHES_ALL](https://docs.oracle.com/en/cloud/saas/financials/25a/oedmf/rabatchesall-24880.html)",
+      "en": "[Oracle Docs — RA_BATCHES_ALL](https://docs.oracle.com/en/cloud/saas/financials/25a/oedmf/rabatchesall-24880.html)",
+      "es": "[Oracle Docs — RA_BATCHES_ALL](https://docs.oracle.com/en/cloud/saas/financials/25a/oedmf/rabatchesall-24880.html)"
+    },
+    {
+      "id": 91,
+      "br": "ar-module-data-dictionary — Dossiê do módulo AR",
+      "en": "ar-module-data-dictionary — AR module data dictionary",
+      "es": "ar-module-data-dictionary — Directorio del módulo AR"
+    }
+  ]
+}

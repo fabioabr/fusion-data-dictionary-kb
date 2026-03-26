@@ -1,0 +1,444 @@
+{
+  "meta": {
+    "pvo_name": "PaymentBatch",
+    "full_path": "FscmTopModelAM.PayrunAM.PaymentBatch",
+    "module_path": "FscmTopModelAM.PayrunAM",
+    "module_code": "HCM",
+    "type": "pvo",
+    "description": "Extrai lotes de pagamento de incentivos (Incentive Compensation) com grupos, períodos e status. Suporta gestão de ciclos de pagamento de comissões e bonificações variáveis."
+  },
+  "stats": {
+    "total_attributes": 29,
+    "tables_count": 5,
+    "bicc_enabled": 13,
+    "bicc_pct": 45,
+    "pk_count": 1
+  },
+  "tables": [
+    "CN_PAY_GROUPS_ALL_TL",
+    "CN_PERIODS_TL",
+    "CN_PRD_STATUSES_ALL",
+    "CN_TP_PAYRUNS_ALL",
+    "FUN_ALL_BUSINESS_UNITS_V"
+  ],
+  "attributes": [
+    {
+      "name": "AdjustComments",
+      "table": "CN_TP_PAYRUNS_ALL",
+      "column": "ADJUST_COMMENTS",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AdjustStatus",
+      "table": "CN_TP_PAYRUNS_ALL",
+      "column": "ADJUST_STATUS",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BusinessUnitId",
+      "table": "FUN_ALL_BUSINESS_UNITS_V",
+      "column": "BU_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CalendarId",
+      "table": "CN_PERIODS_TL",
+      "column": "CALENDAR_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CreatedBy",
+      "table": "CN_TP_PAYRUNS_ALL",
+      "column": "CREATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CreationDate",
+      "table": "CN_TP_PAYRUNS_ALL",
+      "column": "CREATION_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "IncentiveTypeCode",
+      "table": "CN_TP_PAYRUNS_ALL",
+      "column": "INCENTIVE_TYPE_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "Language",
+      "table": "CN_PERIODS_TL",
+      "column": "LANGUAGE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "Language1",
+      "table": "CN_PAY_GROUPS_ALL_TL",
+      "column": "LANGUAGE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LastUpdateDate",
+      "table": "CN_TP_PAYRUNS_ALL",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": true
+    },
+    {
+      "name": "LastUpdateLogin",
+      "table": "CN_TP_PAYRUNS_ALL",
+      "column": "LAST_UPDATE_LOGIN",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LastUpdatedBy",
+      "table": "CN_TP_PAYRUNS_ALL",
+      "column": "LAST_UPDATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "Name",
+      "table": "FUN_ALL_BUSINESS_UNITS_V",
+      "column": "BU_NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ObjectStatus",
+      "table": "CN_TP_PAYRUNS_ALL",
+      "column": "OBJECT_STATUS",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ObjectVersionNumber",
+      "table": "CN_TP_PAYRUNS_ALL",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ObjectVersionNumber1",
+      "table": "CN_PAY_GROUPS_ALL_TL",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "OrgId",
+      "table": "CN_TP_PAYRUNS_ALL",
+      "column": "ORG_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PayDate",
+      "table": "CN_TP_PAYRUNS_ALL",
+      "column": "PAY_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PayGroupId",
+      "table": "CN_TP_PAYRUNS_ALL",
+      "column": "PAY_GROUP_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PayGroupId1",
+      "table": "CN_PAY_GROUPS_ALL_TL",
+      "column": "PAY_GROUP_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PayGroupName",
+      "table": "CN_PAY_GROUPS_ALL_TL",
+      "column": "PAY_GROUP_NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PayPeriodId",
+      "table": "CN_TP_PAYRUNS_ALL",
+      "column": "PAY_PERIOD_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PayrunId",
+      "table": "CN_TP_PAYRUNS_ALL",
+      "column": "PAYRUN_ID",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    },
+    {
+      "name": "PayrunMode",
+      "table": "CN_TP_PAYRUNS_ALL",
+      "column": "PAYRUN_MODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PayrunName",
+      "table": "CN_TP_PAYRUNS_ALL",
+      "column": "PAYRUN_NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PeriodId",
+      "table": "CN_PERIODS_TL",
+      "column": "PERIOD_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PeriodName",
+      "table": "CN_PERIODS_TL",
+      "column": "PERIOD_NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PeriodStatusPEOOrgId",
+      "table": "CN_PRD_STATUSES_ALL",
+      "column": "ORG_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PeriodStatusPEOPeriodId",
+      "table": "CN_PRD_STATUSES_ALL",
+      "column": "PERIOD_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    }
+  ],
+  "by_table": {
+    "CN_TP_PAYRUNS_ALL": [
+      {
+        "attribute": "AdjustComments",
+        "column": "ADJUST_COMMENTS",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "AdjustStatus",
+        "column": "ADJUST_STATUS",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CreatedBy",
+        "column": "CREATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CreationDate",
+        "column": "CREATION_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "IncentiveTypeCode",
+        "column": "INCENTIVE_TYPE_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "LastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "LastUpdateLogin",
+        "column": "LAST_UPDATE_LOGIN",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "LastUpdatedBy",
+        "column": "LAST_UPDATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ObjectStatus",
+        "column": "OBJECT_STATUS",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "OrgId",
+        "column": "ORG_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PayDate",
+        "column": "PAY_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PayGroupId",
+        "column": "PAY_GROUP_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PayPeriodId",
+        "column": "PAY_PERIOD_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PayrunId",
+        "column": "PAYRUN_ID",
+        "bicc": true,
+        "pk": true
+      },
+      {
+        "attribute": "PayrunMode",
+        "column": "PAYRUN_MODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PayrunName",
+        "column": "PAYRUN_NAME",
+        "bicc": true,
+        "pk": false
+      }
+    ],
+    "FUN_ALL_BUSINESS_UNITS_V": [
+      {
+        "attribute": "BusinessUnitId",
+        "column": "BU_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "Name",
+        "column": "BU_NAME",
+        "bicc": true,
+        "pk": false
+      }
+    ],
+    "CN_PERIODS_TL": [
+      {
+        "attribute": "CalendarId",
+        "column": "CALENDAR_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "Language",
+        "column": "LANGUAGE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PeriodId",
+        "column": "PERIOD_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PeriodName",
+        "column": "PERIOD_NAME",
+        "bicc": true,
+        "pk": false
+      }
+    ],
+    "CN_PAY_GROUPS_ALL_TL": [
+      {
+        "attribute": "Language1",
+        "column": "LANGUAGE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ObjectVersionNumber1",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PayGroupId1",
+        "column": "PAY_GROUP_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PayGroupName",
+        "column": "PAY_GROUP_NAME",
+        "bicc": true,
+        "pk": false
+      }
+    ],
+    "CN_PRD_STATUSES_ALL": [
+      {
+        "attribute": "PeriodStatusPEOOrgId",
+        "column": "ORG_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PeriodStatusPEOPeriodId",
+        "column": "PERIOD_ID",
+        "bicc": false,
+        "pk": false
+      }
+    ]
+  }
+}

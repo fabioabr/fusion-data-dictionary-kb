@@ -1,0 +1,433 @@
+{
+  "source": "pon_action_history.md",
+  "source_hash": "f3289ee768824351bf412d6b9632ddd2",
+  "translated_at": "2026-03-26",
+  "items": [
+    {
+      "id": 1,
+      "br": "Visão Geral",
+      "en": "Overview",
+      "es": "Vision General"
+    },
+    {
+      "id": 2,
+      "br": "Armazena o histórico completo de ações executadas em negociações do módulo Oracle Sourcing. Cada registro representa uma ação de workflow (criação, submissão, aprovação, rejeição, cancelamento, etc.) realizada por um usuário ou processo automático sobre uma negociação, fornecendo trilha de auditoria completa.",
+      "en": "Stores the complete history of actions executed in Oracle Sourcing module negotiations. Each record represents a workflow action (creation, submission, approval, rejection, cancellation, etc.) performed by a user or automated process on a negotiation, providing complete audit trail.",
+      "es": "Almacena el historial completo de las acciones ejecutadas en las negociaciones del módulo Oracle Sourcing. Cada registro representa una acción de flujo de trabajo (creación, envío, aprobación, rechazo, cancelación, etc.) realizada por un usuario o proceso automático en una negociación, proporcionando un registro de auditoría completo."
+    },
+    {
+      "id": 3,
+      "br": "Módulo Sourcing (PON)",
+      "en": "Sourcing Module (PON)",
+      "es": "Modulo Sourcing (PON)"
+    },
+    {
+      "id": 4,
+      "br": "O prefixo PON identifica tabelas do módulo Procurement Sourcing (Oracle Negotiation). Esta tabela é a principal fonte de auditoria para o ciclo de vida das negociações.",
+      "en": "The PON prefix identifies tables in the Procurement Sourcing (Oracle Negotiation) module. This table is the primary audit source for the negotiation lifecycle.",
+      "es": "El prefijo PON identifica las tablas del módulo Procurement Sourcing (Oracle Negotiation). Esta tabla es la principal fuente de auditoría para el ciclo de vida de las negociaciones."
+    },
+    {
+      "id": 5,
+      "br": "Propósito de Negócio",
+      "en": "Business Purpose",
+      "es": "Proposito de Negocio"
+    },
+    {
+      "id": 6,
+      "br": "Esta tabela é utilizada nos seguintes processos:",
+      "en": "This table is used in the following processes:",
+      "es": "Esta tabla se utiliza en los siguientes procesos:"
+    },
+    {
+      "id": 7,
+      "br": "Trilha completa de todas as ações realizadas em cada negociação.",
+      "en": "Complete audit trail of all actions performed on each negotiation.",
+      "es": "Registro completo de todas las acciones realizadas en cada negociación."
+    },
+    {
+      "id": 8,
+      "br": "Registro de quem aprovou/rejeitou em cada etapa do fluxo.",
+      "en": "Record of who approved/rejected at each stage of the workflow.",
+      "es": "Registro de quién aprobó/rechazó en cada etapa del flujo."
+    },
+    {
+      "id": 9,
+      "br": "Evidência de segregação de funções e controles de acesso.",
+      "en": "Evidence of segregation of duties and access controls.",
+      "es": "Evidencia de segregación de funciones y controles de acceso."
+    },
+    {
+      "id": 10,
+      "br": "Medição de tempo entre ações (criação→submissão→aprovação→publicação).",
+      "en": "Measurement of time between actions (creation→submission→approval→publication).",
+      "es": "Medición del tiempo entre acciones (creación→envío→aprobación→publicación)."
+    },
+    {
+      "id": 11,
+      "br": "Diagnóstico de negociações travadas ou em estado inconsistente.",
+      "en": "Diagnosis of stalled or inconsistent negotiations.",
+      "es": "Diagnóstico de negociaciones bloqueadas o en estado inconsistente."
+    },
+    {
+      "id": 12,
+      "br": "Dashboards de volume e tempo de processamento por aprovador.",
+      "en": "Dashboards of volume and processing time by approver.",
+      "es": "Paneles de control de volumen y tiempo de procesamiento por aprobador."
+    },
+    {
+      "id": 13,
+      "br": "Colunas Principais",
+      "en": "Key Columns",
+      "es": "Columnas Principales"
+    },
+    {
+      "id": 14,
+      "br": "Confiança",
+      "en": "Confidence",
+      "es": "Confianza"
+    },
+    {
+      "id": 15,
+      "br": "Escala de 0% a 100% — grau de certeza da descrição gerada por IA com base na documentação oficial Oracle (OEDMF/BICC Release 13/25A).",
+      "en": "Scale from 0% to 100% — degree of certainty of the AI-generated description based on official Oracle documentation (OEDMF/BICC Release 13/25A).",
+      "es": "Escala de 0% a 100% — grado de certeza de la descripcion generada por IA basada en la documentacion oficial de Oracle (OEDMF/BICC Release 13/25A)."
+    },
+    {
+      "id": 16,
+      "br": "- 🟢 81–100% — Coluna presente na documentação oficial Oracle; nome, tipo e descrição confirmados.",
+      "en": "- 🟢 81–100% — Column present in official Oracle documentation; name, type, and description confirmed.",
+      "es": "- 🟢 81–100% — Columna presente en la documentacion oficial de Oracle; nombre, tipo y descripcion confirmados."
+    },
+    {
+      "id": 17,
+      "br": "- 🟡 51–80% — Coluna inferida por naming convention ou padrão Oracle; tipo exato pode variar.",
+      "en": "- 🟡 51–80% — Column inferred by naming convention or Oracle standard; exact type may vary.",
+      "es": "- 🟡 51–80% — Columna inferida por convencion de nombres o estandar Oracle; el tipo exacto puede variar."
+    },
+    {
+      "id": 18,
+      "br": "- 🔴 0–50% — Existência ou tipo incertos; pode não existir no release atual; validar no ambiente.",
+      "en": "- 🔴 0–50% — Uncertain existence or type; may not exist in current release; validate in environment.",
+      "es": "- 🔴 0–50% — Existencia o tipo inciertos; puede no existir en el release actual; validar en el ambiente."
+    },
+    {
+      "id": 19,
+      "br": "Coluna",
+      "en": "Column",
+      "es": "Columna"
+    },
+    {
+      "id": 20,
+      "br": "Tipo",
+      "en": "Type",
+      "es": "Tipo"
+    },
+    {
+      "id": 21,
+      "br": "Nulo?",
+      "en": "Nullable?",
+      "es": "Nulo?"
+    },
+    {
+      "id": 22,
+      "br": "Categoria",
+      "en": "Category",
+      "es": "Categoria"
+    },
+    {
+      "id": 23,
+      "br": "Descrição",
+      "en": "Description",
+      "es": "Descripcion"
+    },
+    {
+      "id": 24,
+      "br": "Identificador único do registro de ação",
+      "en": "Unique identifier for the action record",
+      "es": "Identificador único del registro de acción"
+    },
+    {
+      "id": 25,
+      "br": "ID do objeto (negociação) associado",
+      "en": "ID of the object (negotiation) associated",
+      "es": "ID del objeto (negociación) asociado"
+    },
+    {
+      "id": 26,
+      "br": "Classificação",
+      "en": "Classification",
+      "es": "Clasificacion"
+    },
+    {
+      "id": 27,
+      "br": "Tipo do objeto: NEGOTIATION, AMENDMENT, etc.",
+      "en": "Object type: NEGOTIATION, AMENDMENT, etc.",
+      "es": "Tipo de objeto: NEGOTIATION, AMENDMENT, etc."
+    },
+    {
+      "id": 28,
+      "br": "Controle",
+      "en": "Control",
+      "es": "Control"
+    },
+    {
+      "id": 29,
+      "br": "Número de sequência da ação dentro da negociação",
+      "en": "Sequence number of the action within the negotiation",
+      "es": "Número de secuencia de la acción dentro de la negociación"
+    },
+    {
+      "id": 30,
+      "br": "Tipo da ação: SUBMIT, APPROVE, REJECT, CANCEL, PUBLISH, AWARD, CLOSE",
+      "en": "Action type: SUBMIT, APPROVE, REJECT, CANCEL, PUBLISH, AWARD, CLOSE",
+      "es": "Tipo de acción: SUBMIT, APPROVE, REJECT, CANCEL, PUBLISH, AWARD, CLOSE"
+    },
+    {
+      "id": 31,
+      "br": "Data",
+      "en": "Date",
+      "es": "Fecha"
+    },
+    {
+      "id": 32,
+      "br": "Data/hora da execução da ação",
+      "en": "Date/time of action execution",
+      "es": "Fecha/hora de ejecución de la acción"
+    },
+    {
+      "id": 33,
+      "br": "Usuário que executou a ação",
+      "en": "User who executed the action",
+      "es": "Usuario que ejecutó la acción"
+    },
+    {
+      "id": 34,
+      "br": "Identificação",
+      "en": "Identification",
+      "es": "Identificacion"
+    },
+    {
+      "id": 35,
+      "br": "Nome do usuário que executou a ação (desnormalizado)",
+      "en": "User name who executed the action (denormalized)",
+      "es": "Nombre del usuario que ejecutó la acción (desnormalizado)"
+    },
+    {
+      "id": 36,
+      "br": "Texto livre",
+      "en": "Free Text",
+      "es": "Texto libre"
+    },
+    {
+      "id": 37,
+      "br": "Nota/comentário associado à ação",
+      "en": "Note/comment associated with the action",
+      "es": "Nota/comentario asociado a la acción"
+    },
+    {
+      "id": 38,
+      "br": "Status",
+      "en": "Status",
+      "es": "Estado"
+    },
+    {
+      "id": 39,
+      "br": "Status anterior à ação",
+      "en": "Status prior to the action",
+      "es": "Estado anterior a la acción"
+    },
+    {
+      "id": 40,
+      "br": "Status resultante após a ação",
+      "en": "Resulting status after the action",
+      "es": "Estado resultante después de la acción"
+    },
+    {
+      "id": 41,
+      "br": "Número da versão do objeto (controle de concorrência)",
+      "en": "Version number of the object (concurrency control)",
+      "es": "Número de versión del objeto (control de concurrencia)"
+    },
+    {
+      "id": 42,
+      "br": "Referência direta ao cabeçalho da negociação",
+      "en": "Direct reference to the negotiation header",
+      "es": "Referencia directa al encabezado de la negociación"
+    },
+    {
+      "id": 43,
+      "br": "Auditoria",
+      "en": "Audit",
+      "es": "Auditoria"
+    },
+    {
+      "id": 44,
+      "br": "Usuário que criou o registro",
+      "en": "User who created the record",
+      "es": "Usuario que creo el registro"
+    },
+    {
+      "id": 45,
+      "br": "Data/hora de criação",
+      "en": "Creation date/time",
+      "es": "Fecha/hora de creacion"
+    },
+    {
+      "id": 46,
+      "br": "Último usuário que alterou",
+      "en": "Last user who modified",
+      "es": "Ultimo usuario que modifico"
+    },
+    {
+      "id": 47,
+      "br": "Data/hora da última alteração",
+      "en": "Last modification date/time",
+      "es": "Fecha/hora de la ultima modificacion"
+    },
+    {
+      "id": 48,
+      "br": "Login da última sessão",
+      "en": "Last session login",
+      "es": "Login de la ultima sesion"
+    },
+    {
+      "id": 49,
+      "br": "Relacionamentos",
+      "en": "Relationships",
+      "es": "Relaciones"
+    },
+    {
+      "id": 50,
+      "br": "Tabelas-pai (FK de entrada)",
+      "en": "Parent Tables (inbound FK)",
+      "es": "Tablas padre (FK de entrada)"
+    },
+    {
+      "id": 51,
+      "br": "pon_auction_headers_all — via OBJECT_ID / AUCTION_HEADER_ID (negociação)",
+      "en": "pon_auction_headers_all — via OBJECT_ID / AUCTION_HEADER_ID (negotiation)",
+      "es": "pon_auction_headers_all — a través de OBJECT_ID / AUCTION_HEADER_ID (negociación)"
+    },
+    {
+      "id": 52,
+      "br": "usuário que executou a ação",
+      "en": "user who executed the action",
+      "es": "usuario que ejecutó la acción"
+    },
+    {
+      "id": 53,
+      "br": "Tabelas-filha (FK de saída)",
+      "en": "Child Tables (outbound FK)",
+      "es": "Tablas hija (FK de salida)"
+    },
+    {
+      "id": 54,
+      "br": "Nenhuma tabela-filha conhecida — tabela terminal de registro de auditoria.",
+      "en": "No known child table — terminal audit record table.",
+      "es": "Ninguna tabla hija conocida — tabla terminal de registro de auditoría."
+    },
+    {
+      "id": 55,
+      "br": "Uso Típico",
+      "en": "Typical Usage",
+      "es": "Uso Tipico"
+    },
+    {
+      "id": 56,
+      "br": "Histórico completo de uma negociação",
+      "en": "Complete history of a negotiation",
+      "es": "Historial completo de una negociación"
+    },
+    {
+      "id": 57,
+      "br": "Tempo médio de aprovação",
+      "en": "Average approval time",
+      "es": "Tiempo promedio de aprobación"
+    },
+    {
+      "id": 58,
+      "br": "Filtros comuns",
+      "en": "Common Filters",
+      "es": "Filtros comunes"
+    },
+    {
+      "id": 59,
+      "br": "Ações de aprovação",
+      "en": "Approval actions",
+      "es": "Acciones de aprobación"
+    },
+    {
+      "id": 60,
+      "br": "Rejeições",
+      "en": "Rejections",
+      "es": "Rechazos"
+    },
+    {
+      "id": 61,
+      "br": "Submissões para aprovação",
+      "en": "Submissions for approval",
+      "es": "Presentaciones para aprobación"
+    },
+    {
+      "id": 62,
+      "br": "Ações sobre negociações (excluindo amendments)",
+      "en": "Actions on negotiations (excluding amendments)",
+      "es": "Acciones sobre negociaciones (excluyendo modificaciones)"
+    },
+    {
+      "id": 63,
+      "br": "Observações",
+      "en": "Notes",
+      "es": "Observaciones"
+    },
+    {
+      "id": 64,
+      "br": "A tabela funciona como audit trail imutável — registros não são deletados ou alterados após a criação.",
+      "en": "The table functions as an immutable audit trail — records are not deleted or modified after creation.",
+      "es": "La tabla funciona como un registro de auditoría inmutable: los registros no se eliminan ni modifican después de su creación."
+    },
+    {
+      "id": 65,
+      "br": "O campo SEQUENCE_NUM garante a ordenação cronológica dentro de uma mesma negociação.",
+      "en": "The SEQUENCE_NUM field ensures chronological ordering within the same negotiation.",
+      "es": "El campo SEQUENCE_NUM garantiza el orden cronológico dentro de la misma negociación."
+    },
+    {
+      "id": 66,
+      "br": "Os campos FROM_STATUS_CODE e TO_STATUS_CODE permitem reconstruir a máquina de estados da negociação.",
+      "en": "The FROM_STATUS_CODE and TO_STATUS_CODE fields allow reconstruction of the negotiation's state machine.",
+      "es": "Los campos FROM_STATUS_CODE y TO_STATUS_CODE permiten reconstruir la máquina de estados de la negociación."
+    },
+    {
+      "id": 67,
+      "br": "O ACTION_USER_NAME é desnormalizado para performance em relatórios; o ACTION_USER_ID é a referência canônica.",
+      "en": "ACTION_USER_NAME is denormalized for reporting performance; ACTION_USER_ID is the canonical reference.",
+      "es": "El ACTION_USER_NAME se desnormaliza para mejorar el rendimiento en los informes; ACTION_USER_ID es la referencia canónica."
+    },
+    {
+      "id": 68,
+      "br": "Negociações com amendments geram registros adicionais com OBJECT_TYPE_CODE = 'AMENDMENT'.",
+      "en": "Negotiations with amendments generate additional records with OBJECT_TYPE_CODE = 'AMENDMENT'.",
+      "es": "Las negociaciones con modificaciones generan registros adicionales con OBJECT_TYPE_CODE = 'AMENDMENT'."
+    },
+    {
+      "id": 69,
+      "br": "Referências",
+      "en": "References",
+      "es": "Referencias"
+    },
+    {
+      "id": 70,
+      "br": "[Oracle Docs — PON_ACTION_HISTORY](https://docs.oracle.com/en/cloud/saas/procurement/25a/oedmf/ponactionhistory.html)",
+      "en": "[Oracle Docs — PON_ACTION_HISTORY](https://docs.oracle.com/en/cloud/saas/procurement/25a/oedmf/ponactionhistory.html)",
+      "es": "[Oracle Docs — PON_ACTION_HISTORY](https://docs.oracle.com/en/cloud/saas/procurement/25a/oedmf/ponactionhistory.html)"
+    },
+    {
+      "id": 71,
+      "br": "po-module-data-dictionary — Dossiê do módulo PO/Procurement",
+      "en": "po-module-data-dictionary — PO/Procurement module dossier",
+      "es": "po-module-data-dictionary — Dossier del modulo PO/Procurement"
+    }
+  ]
+}

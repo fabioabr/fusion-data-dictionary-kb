@@ -1,0 +1,256 @@
+{
+  "meta": {
+    "pvo_name": "CampConverApplyPVO",
+    "full_path": "HcmTopModelAnalyticsGlobalAM.HcmRecCampaignsAM.CampConverApplyPVO",
+    "module_path": "HcmTopModelAnalyticsGlobalAM.HcmRecCampaignsAM",
+    "module_code": "OTHER",
+    "type": "pvo",
+    "description": "View Object para extração BICC de dados de Camp Conver Apply. Acessa as tabelas: IRC_CAMPAIGNS_B, IRC_CAMP_CONVERSIONS, IRC_CAMP_GOALS_B."
+  },
+  "stats": {
+    "total_attributes": 16,
+    "tables_count": 3,
+    "bicc_enabled": 5,
+    "bicc_pct": 31,
+    "pk_count": 3
+  },
+  "tables": [
+    "IRC_CAMPAIGNS_B",
+    "IRC_CAMP_CONVERSIONS",
+    "IRC_CAMP_GOALS_B"
+  ],
+  "attributes": [
+    {
+      "name": "CampGoalBPEOGoalTypeCode",
+      "table": "IRC_CAMP_GOALS_B",
+      "column": "GOAL_TYPE_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CampaignBPEOCampaignCode",
+      "table": "IRC_CAMPAIGNS_B",
+      "column": "CAMPAIGN_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CampaignBPEOPurposeCode",
+      "table": "IRC_CAMPAIGNS_B",
+      "column": "PURPOSE_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CampaignId",
+      "table": "IRC_CAMPAIGNS_B",
+      "column": "CAMPAIGN_ID",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    },
+    {
+      "name": "CampconversionPEOCampaignId",
+      "table": "IRC_CAMP_CONVERSIONS",
+      "column": "CAMPAIGN_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CampconversionPEOCreatedBy",
+      "table": "IRC_CAMP_CONVERSIONS",
+      "column": "CREATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CampconversionPEOCreationDate",
+      "table": "IRC_CAMP_CONVERSIONS",
+      "column": "CREATION_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CampconversionPEOGoalId",
+      "table": "IRC_CAMP_CONVERSIONS",
+      "column": "GOAL_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CampconversionPEOGoalTypeCode",
+      "table": "IRC_CAMP_CONVERSIONS",
+      "column": "GOAL_TYPE_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CampconversionPEOLastUpdateDate",
+      "table": "IRC_CAMP_CONVERSIONS",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": true
+    },
+    {
+      "name": "CampconversionPEOLastUpdateLogin",
+      "table": "IRC_CAMP_CONVERSIONS",
+      "column": "LAST_UPDATE_LOGIN",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CampconversionPEOLastUpdatedBy",
+      "table": "IRC_CAMP_CONVERSIONS",
+      "column": "LAST_UPDATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CampconversionPEOObjectId",
+      "table": "IRC_CAMP_CONVERSIONS",
+      "column": "OBJECT_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CampconversionPEOObjectVersionNumber",
+      "table": "IRC_CAMP_CONVERSIONS",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ConversionId",
+      "table": "IRC_CAMP_CONVERSIONS",
+      "column": "CONVERSION_ID",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    },
+    {
+      "name": "GoalId",
+      "table": "IRC_CAMP_GOALS_B",
+      "column": "GOAL_ID",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    }
+  ],
+  "by_table": {
+    "IRC_CAMP_GOALS_B": [
+      {
+        "attribute": "CampGoalBPEOGoalTypeCode",
+        "column": "GOAL_TYPE_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "GoalId",
+        "column": "GOAL_ID",
+        "bicc": true,
+        "pk": true
+      }
+    ],
+    "IRC_CAMPAIGNS_B": [
+      {
+        "attribute": "CampaignBPEOCampaignCode",
+        "column": "CAMPAIGN_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CampaignBPEOPurposeCode",
+        "column": "PURPOSE_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CampaignId",
+        "column": "CAMPAIGN_ID",
+        "bicc": true,
+        "pk": true
+      }
+    ],
+    "IRC_CAMP_CONVERSIONS": [
+      {
+        "attribute": "CampconversionPEOCampaignId",
+        "column": "CAMPAIGN_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CampconversionPEOCreatedBy",
+        "column": "CREATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CampconversionPEOCreationDate",
+        "column": "CREATION_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CampconversionPEOGoalId",
+        "column": "GOAL_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CampconversionPEOGoalTypeCode",
+        "column": "GOAL_TYPE_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CampconversionPEOLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CampconversionPEOLastUpdateLogin",
+        "column": "LAST_UPDATE_LOGIN",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CampconversionPEOLastUpdatedBy",
+        "column": "LAST_UPDATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CampconversionPEOObjectId",
+        "column": "OBJECT_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CampconversionPEOObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ConversionId",
+        "column": "CONVERSION_ID",
+        "bicc": true,
+        "pk": true
+      }
+    ]
+  }
+}

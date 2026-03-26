@@ -1,0 +1,841 @@
+{
+  "meta": {
+    "pvo_name": "OriginatingElement",
+    "full_path": "HcmTopModelAnalyticsGlobalAM.HcmElementSetupAM.OriginatingElement",
+    "module_path": "HcmTopModelAnalyticsGlobalAM.HcmElementSetupAM",
+    "module_code": "HCM",
+    "type": "pvo",
+    "description": "Extrai tipos de elementos de folha de pagamento (earnings, deductions) com classificação e vigência. Base para configuração e análise de componentes remuneratórios no Payroll."
+  },
+  "stats": {
+    "total_attributes": 58,
+    "tables_count": 2,
+    "bicc_enabled": 16,
+    "bicc_pct": 28,
+    "pk_count": 3
+  },
+  "tables": [
+    "PAY_ELEMENT_TYPES_F",
+    "PAY_ELEMENT_TYPES_TL"
+  ],
+  "attributes": [
+    {
+      "name": "EffectiveEndDate",
+      "table": "PAY_ELEMENT_TYPES_F",
+      "column": "EFFECTIVE_END_DATE",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    },
+    {
+      "name": "EffectiveStartDate",
+      "table": "PAY_ELEMENT_TYPES_F",
+      "column": "EFFECTIVE_START_DATE",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    },
+    {
+      "name": "ElementTypeAdditionalEntryAllowedFlag",
+      "table": "PAY_ELEMENT_TYPES_F",
+      "column": "ADDITIONAL_ENTRY_ALLOWED_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ElementTypeAdjustmentOnlyFlag",
+      "table": "PAY_ELEMENT_TYPES_F",
+      "column": "ADJUSTMENT_ONLY_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ElementTypeAttributeCategory",
+      "table": "PAY_ELEMENT_TYPES_F",
+      "column": "ATTRIBUTE_CATEGORY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ElementTypeBaseElementName",
+      "table": "PAY_ELEMENT_TYPES_F",
+      "column": "BASE_ELEMENT_NAME",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ElementTypeCalculationFormulaId",
+      "table": "PAY_ELEMENT_TYPES_F",
+      "column": "CALCULATION_FORMULA_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ElementTypeClassificationId",
+      "table": "PAY_ELEMENT_TYPES_F",
+      "column": "CLASSIFICATION_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ElementTypeClosedForEntryFlag",
+      "table": "PAY_ELEMENT_TYPES_F",
+      "column": "CLOSED_FOR_ENTRY_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ElementTypeCreatedBy",
+      "table": "PAY_ELEMENT_TYPES_F",
+      "column": "CREATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ElementTypeCreationDate",
+      "table": "PAY_ELEMENT_TYPES_F",
+      "column": "CREATION_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ElementTypeCreatorType",
+      "table": "PAY_ELEMENT_TYPES_F",
+      "column": "CREATOR_TYPE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ElementTypeDeductionOrExemption",
+      "table": "PAY_ELEMENT_TYPES_F",
+      "column": "DEDUCTION_OR_EXEMPTION",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ElementTypeDeductionTypeId",
+      "table": "PAY_ELEMENT_TYPES_F",
+      "column": "DEDUCTION_TYPE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ElementTypeDefaultingFormulaId",
+      "table": "PAY_ELEMENT_TYPES_F",
+      "column": "DEFAULTING_FORMULA_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ElementTypeElementInformationCategory",
+      "table": "PAY_ELEMENT_TYPES_F",
+      "column": "ELEMENT_INFORMATION_CATEGORY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ElementTypeEndingTimeDefId",
+      "table": "PAY_ELEMENT_TYPES_F",
+      "column": "ENDING_TIME_DEF_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ElementTypeFormulaId",
+      "table": "PAY_ELEMENT_TYPES_F",
+      "column": "FORMULA_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ElementTypeGrossupFlag",
+      "table": "PAY_ELEMENT_TYPES_F",
+      "column": "GROSSUP_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ElementTypeId",
+      "table": "PAY_ELEMENT_TYPES_F",
+      "column": "ELEMENT_TYPE_ID",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    },
+    {
+      "name": "ElementTypeIndirectOnlyFlag",
+      "table": "PAY_ELEMENT_TYPES_F",
+      "column": "INDIRECT_ONLY_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ElementTypeInputCurrencyCode",
+      "table": "PAY_ELEMENT_TYPES_F",
+      "column": "INPUT_CURRENCY_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ElementTypeIterativeFlag",
+      "table": "PAY_ELEMENT_TYPES_F",
+      "column": "ITERATIVE_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ElementTypeIterativeFormulaId",
+      "table": "PAY_ELEMENT_TYPES_F",
+      "column": "ITERATIVE_FORMULA_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ElementTypeIterativePriority",
+      "table": "PAY_ELEMENT_TYPES_F",
+      "column": "ITERATIVE_PRIORITY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ElementTypeLastUpdateDate",
+      "table": "PAY_ELEMENT_TYPES_F",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": true
+    },
+    {
+      "name": "ElementTypeLastUpdateLogin",
+      "table": "PAY_ELEMENT_TYPES_F",
+      "column": "LAST_UPDATE_LOGIN",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ElementTypeLastUpdatedBy",
+      "table": "PAY_ELEMENT_TYPES_F",
+      "column": "LAST_UPDATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ElementTypeLegislationCode",
+      "table": "PAY_ELEMENT_TYPES_F",
+      "column": "LEGISLATION_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ElementTypeLegislativeDataGroupId",
+      "table": "PAY_ELEMENT_TYPES_F",
+      "column": "LEGISLATIVE_DATA_GROUP_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ElementTypeModuleId",
+      "table": "PAY_ELEMENT_TYPES_F",
+      "column": "MODULE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ElementTypeMultipleEntriesAllowedFlag",
+      "table": "PAY_ELEMENT_TYPES_F",
+      "column": "MULTIPLE_ENTRIES_ALLOWED_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ElementTypeObjectVersionNumber",
+      "table": "PAY_ELEMENT_TYPES_F",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ElementTypeOnceEachPeriodFlag",
+      "table": "PAY_ELEMENT_TYPES_F",
+      "column": "ONCE_EACH_PERIOD_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ElementTypeOutputCurrencyCode",
+      "table": "PAY_ELEMENT_TYPES_F",
+      "column": "OUTPUT_CURRENCY_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ElementTypeProcessInRunFlag",
+      "table": "PAY_ELEMENT_TYPES_F",
+      "column": "PROCESS_IN_RUN_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ElementTypeProcessMode",
+      "table": "PAY_ELEMENT_TYPES_F",
+      "column": "PROCESS_MODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ElementTypeProcessingPriority",
+      "table": "PAY_ELEMENT_TYPES_F",
+      "column": "PROCESSING_PRIORITY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ElementTypeProcessingType",
+      "table": "PAY_ELEMENT_TYPES_F",
+      "column": "PROCESSING_TYPE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ElementTypeProrationFormulaId",
+      "table": "PAY_ELEMENT_TYPES_F",
+      "column": "PRORATION_FORMULA_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ElementTypeProrationGroupId",
+      "table": "PAY_ELEMENT_TYPES_F",
+      "column": "PRORATION_GROUP_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ElementTypeRecalcEventGroupId",
+      "table": "PAY_ELEMENT_TYPES_F",
+      "column": "RECALC_EVENT_GROUP_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ElementTypeSecondaryClassificationId",
+      "table": "PAY_ELEMENT_TYPES_F",
+      "column": "SECONDARY_CLASSIFICATION_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ElementTypeStandardLinkFlag",
+      "table": "PAY_ELEMENT_TYPES_F",
+      "column": "STANDARD_LINK_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ElementTypeStartingTimeDefId",
+      "table": "PAY_ELEMENT_TYPES_F",
+      "column": "STARTING_TIME_DEF_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ElementTypeTimeDefinitionId",
+      "table": "PAY_ELEMENT_TYPES_F",
+      "column": "TIME_DEFINITION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ElementTypeTimeDefinitionType",
+      "table": "PAY_ELEMENT_TYPES_F",
+      "column": "TIME_DEFINITION_TYPE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ElementTypeTranslationDescription",
+      "table": "PAY_ELEMENT_TYPES_TL",
+      "column": "DESCRIPTION",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ElementTypeTranslationElementName",
+      "table": "PAY_ELEMENT_TYPES_TL",
+      "column": "ELEMENT_NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ElementTypeTranslationElementTypeId",
+      "table": "PAY_ELEMENT_TYPES_TL",
+      "column": "ELEMENT_TYPE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ElementTypeTranslationLanguage",
+      "table": "PAY_ELEMENT_TYPES_TL",
+      "column": "LANGUAGE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ElementTypeTranslationReportingName",
+      "table": "PAY_ELEMENT_TYPES_TL",
+      "column": "REPORTING_NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ElementTypeTranslationSourceLang",
+      "table": "PAY_ELEMENT_TYPES_TL",
+      "column": "SOURCE_LANG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ElementTypeUseAtAsgLevel",
+      "table": "PAY_ELEMENT_TYPES_F",
+      "column": "USE_AT_ASG_LEVEL",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ElementTypeUseAtRelLevel",
+      "table": "PAY_ELEMENT_TYPES_F",
+      "column": "USE_AT_REL_LEVEL",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ElementTypeUseAtTermLevel",
+      "table": "PAY_ELEMENT_TYPES_F",
+      "column": "USE_AT_TERM_LEVEL",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ElementTypeValidationFormulaId",
+      "table": "PAY_ELEMENT_TYPES_F",
+      "column": "VALIDATION_FORMULA_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ElementTypeValidationOverrideMessage",
+      "table": "PAY_ELEMENT_TYPES_F",
+      "column": "VALIDATION_OVERRIDE_MESSAGE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    }
+  ],
+  "by_table": {
+    "PAY_ELEMENT_TYPES_F": [
+      {
+        "attribute": "EffectiveEndDate",
+        "column": "EFFECTIVE_END_DATE",
+        "bicc": true,
+        "pk": true
+      },
+      {
+        "attribute": "EffectiveStartDate",
+        "column": "EFFECTIVE_START_DATE",
+        "bicc": true,
+        "pk": true
+      },
+      {
+        "attribute": "ElementTypeAdditionalEntryAllowedFlag",
+        "column": "ADDITIONAL_ENTRY_ALLOWED_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ElementTypeAdjustmentOnlyFlag",
+        "column": "ADJUSTMENT_ONLY_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ElementTypeAttributeCategory",
+        "column": "ATTRIBUTE_CATEGORY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ElementTypeBaseElementName",
+        "column": "BASE_ELEMENT_NAME",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ElementTypeCalculationFormulaId",
+        "column": "CALCULATION_FORMULA_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ElementTypeClassificationId",
+        "column": "CLASSIFICATION_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ElementTypeClosedForEntryFlag",
+        "column": "CLOSED_FOR_ENTRY_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ElementTypeCreatedBy",
+        "column": "CREATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ElementTypeCreationDate",
+        "column": "CREATION_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ElementTypeCreatorType",
+        "column": "CREATOR_TYPE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ElementTypeDeductionOrExemption",
+        "column": "DEDUCTION_OR_EXEMPTION",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ElementTypeDeductionTypeId",
+        "column": "DEDUCTION_TYPE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ElementTypeDefaultingFormulaId",
+        "column": "DEFAULTING_FORMULA_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ElementTypeElementInformationCategory",
+        "column": "ELEMENT_INFORMATION_CATEGORY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ElementTypeEndingTimeDefId",
+        "column": "ENDING_TIME_DEF_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ElementTypeFormulaId",
+        "column": "FORMULA_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ElementTypeGrossupFlag",
+        "column": "GROSSUP_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ElementTypeId",
+        "column": "ELEMENT_TYPE_ID",
+        "bicc": true,
+        "pk": true
+      },
+      {
+        "attribute": "ElementTypeIndirectOnlyFlag",
+        "column": "INDIRECT_ONLY_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ElementTypeInputCurrencyCode",
+        "column": "INPUT_CURRENCY_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ElementTypeIterativeFlag",
+        "column": "ITERATIVE_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ElementTypeIterativeFormulaId",
+        "column": "ITERATIVE_FORMULA_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ElementTypeIterativePriority",
+        "column": "ITERATIVE_PRIORITY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ElementTypeLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ElementTypeLastUpdateLogin",
+        "column": "LAST_UPDATE_LOGIN",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ElementTypeLastUpdatedBy",
+        "column": "LAST_UPDATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ElementTypeLegislationCode",
+        "column": "LEGISLATION_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ElementTypeLegislativeDataGroupId",
+        "column": "LEGISLATIVE_DATA_GROUP_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ElementTypeModuleId",
+        "column": "MODULE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ElementTypeMultipleEntriesAllowedFlag",
+        "column": "MULTIPLE_ENTRIES_ALLOWED_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ElementTypeObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ElementTypeOnceEachPeriodFlag",
+        "column": "ONCE_EACH_PERIOD_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ElementTypeOutputCurrencyCode",
+        "column": "OUTPUT_CURRENCY_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ElementTypeProcessInRunFlag",
+        "column": "PROCESS_IN_RUN_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ElementTypeProcessMode",
+        "column": "PROCESS_MODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ElementTypeProcessingPriority",
+        "column": "PROCESSING_PRIORITY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ElementTypeProcessingType",
+        "column": "PROCESSING_TYPE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ElementTypeProrationFormulaId",
+        "column": "PRORATION_FORMULA_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ElementTypeProrationGroupId",
+        "column": "PRORATION_GROUP_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ElementTypeRecalcEventGroupId",
+        "column": "RECALC_EVENT_GROUP_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ElementTypeSecondaryClassificationId",
+        "column": "SECONDARY_CLASSIFICATION_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ElementTypeStandardLinkFlag",
+        "column": "STANDARD_LINK_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ElementTypeStartingTimeDefId",
+        "column": "STARTING_TIME_DEF_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ElementTypeTimeDefinitionId",
+        "column": "TIME_DEFINITION_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ElementTypeTimeDefinitionType",
+        "column": "TIME_DEFINITION_TYPE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ElementTypeUseAtAsgLevel",
+        "column": "USE_AT_ASG_LEVEL",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ElementTypeUseAtRelLevel",
+        "column": "USE_AT_REL_LEVEL",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ElementTypeUseAtTermLevel",
+        "column": "USE_AT_TERM_LEVEL",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ElementTypeValidationFormulaId",
+        "column": "VALIDATION_FORMULA_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ElementTypeValidationOverrideMessage",
+        "column": "VALIDATION_OVERRIDE_MESSAGE",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "PAY_ELEMENT_TYPES_TL": [
+      {
+        "attribute": "ElementTypeTranslationDescription",
+        "column": "DESCRIPTION",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ElementTypeTranslationElementName",
+        "column": "ELEMENT_NAME",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ElementTypeTranslationElementTypeId",
+        "column": "ELEMENT_TYPE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ElementTypeTranslationLanguage",
+        "column": "LANGUAGE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ElementTypeTranslationReportingName",
+        "column": "REPORTING_NAME",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ElementTypeTranslationSourceLang",
+        "column": "SOURCE_LANG",
+        "bicc": false,
+        "pk": false
+      }
+    ]
+  }
+}

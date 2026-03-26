@@ -1,0 +1,858 @@
+{
+  "meta": {
+    "pvo_name": "SiteContactPoint",
+    "full_path": "FscmTopModelAM.FinArCustomersPublicModelAM.SiteContactPoint",
+    "module_path": "FscmTopModelAM.FinArCustomersPublicModelAM",
+    "module_code": "AR",
+    "type": "pvo",
+    "description": "Extrai os pontos de contato (telefone, e-mail) associados a sites de clientes. Complementa os dados de contato para comunicações operacionais de cobrança e envio de documentos fiscais por localidade."
+  },
+  "stats": {
+    "total_attributes": 59,
+    "tables_count": 3,
+    "bicc_enabled": 8,
+    "bicc_pct": 14,
+    "pk_count": 1
+  },
+  "tables": [
+    "HZ_CONTACT_POINTS",
+    "HZ_RELATIONSHIPS",
+    "HZ_RELATIONSHIP_TYPES"
+  ],
+  "attributes": [
+    {
+      "name": "ContactPointActualContentSource",
+      "table": "HZ_CONTACT_POINTS",
+      "column": "ACTUAL_CONTENT_SOURCE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ContactPointContactPointPurpose",
+      "table": "HZ_CONTACT_POINTS",
+      "column": "CONTACT_POINT_PURPOSE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ContactPointContactPointType",
+      "table": "HZ_CONTACT_POINTS",
+      "column": "CONTACT_POINT_TYPE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ContactPointCreatedBy",
+      "table": "HZ_CONTACT_POINTS",
+      "column": "CREATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ContactPointCreatedByModule",
+      "table": "HZ_CONTACT_POINTS",
+      "column": "CREATED_BY_MODULE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ContactPointCreationDate",
+      "table": "HZ_CONTACT_POINTS",
+      "column": "CREATION_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ContactPointEndDate",
+      "table": "HZ_CONTACT_POINTS",
+      "column": "END_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ContactPointId",
+      "table": "HZ_CONTACT_POINTS",
+      "column": "CONTACT_POINT_ID",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    },
+    {
+      "name": "ContactPointLastUpdateDate",
+      "table": "HZ_CONTACT_POINTS",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": true
+    },
+    {
+      "name": "ContactPointLastUpdateLogin",
+      "table": "HZ_CONTACT_POINTS",
+      "column": "LAST_UPDATE_LOGIN",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ContactPointLastUpdatedBy",
+      "table": "HZ_CONTACT_POINTS",
+      "column": "LAST_UPDATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ContactPointOrigSystemReference",
+      "table": "HZ_CONTACT_POINTS",
+      "column": "ORIG_SYSTEM_REFERENCE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ContactPointOverallPrimaryFlag",
+      "table": "HZ_CONTACT_POINTS",
+      "column": "OVERALL_PRIMARY_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ContactPointOwnerTableId",
+      "table": "HZ_CONTACT_POINTS",
+      "column": "OWNER_TABLE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ContactPointOwnerTableName",
+      "table": "HZ_CONTACT_POINTS",
+      "column": "OWNER_TABLE_NAME",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ContactPointPartyUsageCode",
+      "table": "HZ_CONTACT_POINTS",
+      "column": "PARTY_USAGE_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ContactPointPrimaryByPurpose",
+      "table": "HZ_CONTACT_POINTS",
+      "column": "PRIMARY_BY_PURPOSE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ContactPointPrimaryFlag",
+      "table": "HZ_CONTACT_POINTS",
+      "column": "PRIMARY_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ContactPointRelationshipId",
+      "table": "HZ_CONTACT_POINTS",
+      "column": "RELATIONSHIP_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ContactPointStartDate",
+      "table": "HZ_CONTACT_POINTS",
+      "column": "START_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ContactPointStatus",
+      "table": "HZ_CONTACT_POINTS",
+      "column": "STATUS",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RelationshipHeadOfHouseholdFlag",
+      "table": "HZ_RELATIONSHIPS",
+      "column": "HEAD_OF_HOUSEHOLD_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RelationshipLastUpdateDate",
+      "table": "HZ_RELATIONSHIPS",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": true
+    },
+    {
+      "name": "RelationshipLastUpdateLogin",
+      "table": "HZ_RELATIONSHIPS",
+      "column": "LAST_UPDATE_LOGIN",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RelationshipLastUpdatedBy",
+      "table": "HZ_RELATIONSHIPS",
+      "column": "LAST_UPDATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RelationshipObjectId",
+      "table": "HZ_RELATIONSHIPS",
+      "column": "OBJECT_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RelationshipObjectTableName",
+      "table": "HZ_RELATIONSHIPS",
+      "column": "OBJECT_TABLE_NAME",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RelationshipObjectType",
+      "table": "HZ_RELATIONSHIPS",
+      "column": "OBJECT_TYPE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RelationshipObjectUsageCode",
+      "table": "HZ_RELATIONSHIPS",
+      "column": "OBJECT_USAGE_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RelationshipObjectVersionNumber",
+      "table": "HZ_RELATIONSHIPS",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RelationshipPercentageOwnership",
+      "table": "HZ_RELATIONSHIPS",
+      "column": "PERCENTAGE_OWNERSHIP",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RelationshipRelationshipCode",
+      "table": "HZ_RELATIONSHIPS",
+      "column": "RELATIONSHIP_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RelationshipRelationshipId",
+      "table": "HZ_RELATIONSHIPS",
+      "column": "RELATIONSHIP_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RelationshipRelationshipRecId",
+      "table": "HZ_RELATIONSHIPS",
+      "column": "RELATIONSHIP_REC_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RelationshipRelationshipType",
+      "table": "HZ_RELATIONSHIPS",
+      "column": "RELATIONSHIP_TYPE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RelationshipStartDate",
+      "table": "HZ_RELATIONSHIPS",
+      "column": "START_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RelationshipStatus",
+      "table": "HZ_RELATIONSHIPS",
+      "column": "STATUS",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RelationshipSubjectId",
+      "table": "HZ_RELATIONSHIPS",
+      "column": "SUBJECT_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RelationshipSubjectTableName",
+      "table": "HZ_RELATIONSHIPS",
+      "column": "SUBJECT_TABLE_NAME",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RelationshipSubjectType",
+      "table": "HZ_RELATIONSHIPS",
+      "column": "SUBJECT_TYPE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RelationshipSubjectUsageCode",
+      "table": "HZ_RELATIONSHIPS",
+      "column": "SUBJECT_USAGE_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RelationshipTypeAllowCircularRelationships",
+      "table": "HZ_RELATIONSHIP_TYPES",
+      "column": "ALLOW_CIRCULAR_RELATIONSHIPS",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RelationshipTypeAllowRelateToSelfFlag",
+      "table": "HZ_RELATIONSHIP_TYPES",
+      "column": "ALLOW_RELATE_TO_SELF_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RelationshipTypeBackwardRelCode",
+      "table": "HZ_RELATIONSHIP_TYPES",
+      "column": "BACKWARD_REL_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RelationshipTypeCreatedBy",
+      "table": "HZ_RELATIONSHIP_TYPES",
+      "column": "CREATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RelationshipTypeCreatedByModule",
+      "table": "HZ_RELATIONSHIP_TYPES",
+      "column": "CREATED_BY_MODULE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RelationshipTypeCreationDate",
+      "table": "HZ_RELATIONSHIP_TYPES",
+      "column": "CREATION_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RelationshipTypeDirectionCode",
+      "table": "HZ_RELATIONSHIP_TYPES",
+      "column": "DIRECTION_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RelationshipTypeForwardRelCode",
+      "table": "HZ_RELATIONSHIP_TYPES",
+      "column": "FORWARD_REL_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RelationshipTypeLastUpdateDate",
+      "table": "HZ_RELATIONSHIP_TYPES",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": true
+    },
+    {
+      "name": "RelationshipTypeLastUpdateLogin",
+      "table": "HZ_RELATIONSHIP_TYPES",
+      "column": "LAST_UPDATE_LOGIN",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RelationshipTypeLastUpdatedBy",
+      "table": "HZ_RELATIONSHIP_TYPES",
+      "column": "LAST_UPDATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RelationshipTypeObjectType",
+      "table": "HZ_RELATIONSHIP_TYPES",
+      "column": "OBJECT_TYPE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RelationshipTypeObjectVersionNumber",
+      "table": "HZ_RELATIONSHIP_TYPES",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RelationshipTypeRelationshipType",
+      "table": "HZ_RELATIONSHIP_TYPES",
+      "column": "RELATIONSHIP_TYPE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RelationshipTypeRelationshipTypeId",
+      "table": "HZ_RELATIONSHIP_TYPES",
+      "column": "RELATIONSHIP_TYPE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RelationshipTypeRole",
+      "table": "HZ_RELATIONSHIP_TYPES",
+      "column": "ROLE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RelationshipTypeStatus",
+      "table": "HZ_RELATIONSHIP_TYPES",
+      "column": "STATUS",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RelationshipTypeSubjectType",
+      "table": "HZ_RELATIONSHIP_TYPES",
+      "column": "SUBJECT_TYPE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    }
+  ],
+  "by_table": {
+    "HZ_CONTACT_POINTS": [
+      {
+        "attribute": "ContactPointActualContentSource",
+        "column": "ACTUAL_CONTENT_SOURCE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ContactPointContactPointPurpose",
+        "column": "CONTACT_POINT_PURPOSE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ContactPointContactPointType",
+        "column": "CONTACT_POINT_TYPE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ContactPointCreatedBy",
+        "column": "CREATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ContactPointCreatedByModule",
+        "column": "CREATED_BY_MODULE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ContactPointCreationDate",
+        "column": "CREATION_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ContactPointEndDate",
+        "column": "END_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ContactPointId",
+        "column": "CONTACT_POINT_ID",
+        "bicc": true,
+        "pk": true
+      },
+      {
+        "attribute": "ContactPointLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ContactPointLastUpdateLogin",
+        "column": "LAST_UPDATE_LOGIN",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ContactPointLastUpdatedBy",
+        "column": "LAST_UPDATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ContactPointOrigSystemReference",
+        "column": "ORIG_SYSTEM_REFERENCE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ContactPointOverallPrimaryFlag",
+        "column": "OVERALL_PRIMARY_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ContactPointOwnerTableId",
+        "column": "OWNER_TABLE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ContactPointOwnerTableName",
+        "column": "OWNER_TABLE_NAME",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ContactPointPartyUsageCode",
+        "column": "PARTY_USAGE_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ContactPointPrimaryByPurpose",
+        "column": "PRIMARY_BY_PURPOSE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ContactPointPrimaryFlag",
+        "column": "PRIMARY_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ContactPointRelationshipId",
+        "column": "RELATIONSHIP_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ContactPointStartDate",
+        "column": "START_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ContactPointStatus",
+        "column": "STATUS",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "HZ_RELATIONSHIPS": [
+      {
+        "attribute": "RelationshipHeadOfHouseholdFlag",
+        "column": "HEAD_OF_HOUSEHOLD_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "RelationshipLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "RelationshipLastUpdateLogin",
+        "column": "LAST_UPDATE_LOGIN",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "RelationshipLastUpdatedBy",
+        "column": "LAST_UPDATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "RelationshipObjectId",
+        "column": "OBJECT_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "RelationshipObjectTableName",
+        "column": "OBJECT_TABLE_NAME",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "RelationshipObjectType",
+        "column": "OBJECT_TYPE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "RelationshipObjectUsageCode",
+        "column": "OBJECT_USAGE_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "RelationshipObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "RelationshipPercentageOwnership",
+        "column": "PERCENTAGE_OWNERSHIP",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "RelationshipRelationshipCode",
+        "column": "RELATIONSHIP_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "RelationshipRelationshipId",
+        "column": "RELATIONSHIP_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "RelationshipRelationshipRecId",
+        "column": "RELATIONSHIP_REC_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "RelationshipRelationshipType",
+        "column": "RELATIONSHIP_TYPE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "RelationshipStartDate",
+        "column": "START_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "RelationshipStatus",
+        "column": "STATUS",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "RelationshipSubjectId",
+        "column": "SUBJECT_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "RelationshipSubjectTableName",
+        "column": "SUBJECT_TABLE_NAME",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "RelationshipSubjectType",
+        "column": "SUBJECT_TYPE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "RelationshipSubjectUsageCode",
+        "column": "SUBJECT_USAGE_CODE",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "HZ_RELATIONSHIP_TYPES": [
+      {
+        "attribute": "RelationshipTypeAllowCircularRelationships",
+        "column": "ALLOW_CIRCULAR_RELATIONSHIPS",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "RelationshipTypeAllowRelateToSelfFlag",
+        "column": "ALLOW_RELATE_TO_SELF_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "RelationshipTypeBackwardRelCode",
+        "column": "BACKWARD_REL_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "RelationshipTypeCreatedBy",
+        "column": "CREATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "RelationshipTypeCreatedByModule",
+        "column": "CREATED_BY_MODULE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "RelationshipTypeCreationDate",
+        "column": "CREATION_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "RelationshipTypeDirectionCode",
+        "column": "DIRECTION_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "RelationshipTypeForwardRelCode",
+        "column": "FORWARD_REL_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "RelationshipTypeLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "RelationshipTypeLastUpdateLogin",
+        "column": "LAST_UPDATE_LOGIN",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "RelationshipTypeLastUpdatedBy",
+        "column": "LAST_UPDATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "RelationshipTypeObjectType",
+        "column": "OBJECT_TYPE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "RelationshipTypeObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "RelationshipTypeRelationshipType",
+        "column": "RELATIONSHIP_TYPE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "RelationshipTypeRelationshipTypeId",
+        "column": "RELATIONSHIP_TYPE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "RelationshipTypeRole",
+        "column": "ROLE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "RelationshipTypeStatus",
+        "column": "STATUS",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "RelationshipTypeSubjectType",
+        "column": "SUBJECT_TYPE",
+        "bicc": false,
+        "pk": false
+      }
+    ]
+  }
+}

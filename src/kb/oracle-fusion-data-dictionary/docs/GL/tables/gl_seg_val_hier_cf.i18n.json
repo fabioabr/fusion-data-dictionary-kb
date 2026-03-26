@@ -1,0 +1,409 @@
+{
+  "source": "gl_seg_val_hier_cf.md",
+  "source_hash": "ed0af85626a6de0445ca799d3029258b",
+  "translated_at": "2026-03-25",
+  "items": [
+    {
+      "id": 1,
+      "br": "Visão Geral",
+      "en": "Overview",
+      "es": "Descripcion General"
+    },
+    {
+      "id": 2,
+      "br": "Armazena as hierarquias (rollup) de valores de segmento do plano de contas contábil. Define a estrutura pai-filho (parent-child) dos valores de cada segmento, permitindo a construção de árvores hierárquicas para relatórios agregados — por exemplo, agrupar contas analíticas em contas sintéticas, ou centros de custo em departamentos e divisões.",
+      "en": "Stores the hierarchies (rollup) of chart of accounts segment values. Defines the parent-child structure of each segment's values, enabling the construction of hierarchical trees for aggregated reporting — for example, grouping detail accounts into summary accounts, or cost centers into departments and divisions.",
+      "es": "Almacena las jerarquias (rollup) de valores de segmento del plan de cuentas contable. Define la estructura padre-hijo (parent-child) de los valores de cada segmento, permitiendo la construccion de arboles jerarquicos para reportes agregados — por ejemplo, agrupar cuentas analiticas en cuentas sinteticas, o centros de costo en departamentos y divisiones."
+    },
+    {
+      "id": 3,
+      "br": "Sufixo _CF",
+      "en": "_CF Suffix",
+      "es": "Sufijo _CF"
+    },
+    {
+      "id": 4,
+      "br": "O sufixo _CF indica uma tabela \"Cross-Reference/Flattened\" — armazena a hierarquia de forma desnormalizada para facilitar consultas de rollup sem navegação recursiva.",
+      "en": "The _CF suffix indicates a \"Cross-Reference/Flattened\" table — it stores the hierarchy in a denormalized form to facilitate rollup queries without recursive navigation.",
+      "es": "El sufijo _CF indica una tabla \"Cross-Reference/Flattened\" — almacena la jerarquia de forma desnormalizada para facilitar consultas de rollup sin navegacion recursiva."
+    },
+    {
+      "id": 5,
+      "br": "Propósito de Negócio",
+      "en": "Business Purpose",
+      "es": "Proposito de Negocio"
+    },
+    {
+      "id": 6,
+      "br": "Esta tabela é utilizada nos seguintes processos:",
+      "en": "This table is used in the following processes:",
+      "es": "Esta tabla se utiliza en los siguientes procesos:"
+    },
+    {
+      "id": 7,
+      "br": "Agregação de saldos contábeis por hierarquia (ex: saldo de uma divisão = soma de todos os centros de custo filhos).",
+      "en": "Aggregation of accounting balances by hierarchy (e.g., a division's balance = sum of all child cost centers).",
+      "es": "Agregacion de saldos contables por jerarquia (ej: saldo de una division = suma de todos los centros de costo hijos)."
+    },
+    {
+      "id": 8,
+      "br": "O Oracle Financial Reporting Studio utiliza estas hierarquias para drill-down/drill-up em relatórios.",
+      "en": "Oracle Financial Reporting Studio uses these hierarchies for drill-down/drill-up in reports.",
+      "es": "Oracle Financial Reporting Studio utiliza estas jerarquias para drill-down/drill-up en reportes."
+    },
+    {
+      "id": 9,
+      "br": "Distribuição (top-down) e consolidação (bottom-up) de budget por hierarquia.",
+      "en": "Top-down distribution and bottom-up consolidation of budget by hierarchy.",
+      "es": "Distribucion (top-down) y consolidacion (bottom-up) de budget por jerarquia."
+    },
+    {
+      "id": 10,
+      "br": "Controle de acesso baseado em nós da hierarquia (ex: gestor vê apenas seu departamento e filhos).",
+      "en": "Access control based on hierarchy nodes (e.g., a manager sees only their department and children).",
+      "es": "Control de acceso basado en nodos de la jerarquia (ej: gestor ve solo su departamento e hijos)."
+    },
+    {
+      "id": 11,
+      "br": "Regras de alocação que distribuem valores entre nós filhos.",
+      "en": "Allocation rules that distribute values among child nodes.",
+      "es": "Reglas de asignacion que distribuyen valores entre nodos hijos."
+    },
+    {
+      "id": 12,
+      "br": "Consultas que utilizam hierarquias para agrupamento dinâmico.",
+      "en": "Queries that use hierarchies for dynamic grouping.",
+      "es": "Consultas que utilizan jerarquias para agrupamiento dinamico."
+    },
+    {
+      "id": 13,
+      "br": "Colunas Principais",
+      "en": "Key Columns",
+      "es": "Columnas Principales"
+    },
+    {
+      "id": 14,
+      "br": "Confiança",
+      "en": "Confidence",
+      "es": "Confianza"
+    },
+    {
+      "id": 15,
+      "br": "Escala de 0% a 100% — grau de certeza da descrição gerada por IA com base na documentação oficial Oracle (OEDMF/BICC Release 13/25A).",
+      "en": "Scale from 0% to 100% — degree of certainty of the AI-generated description based on official Oracle documentation (OEDMF/BICC Release 13/25A).",
+      "es": "Escala de 0% a 100% — grado de certeza de la descripcion generada por IA con base en la documentacion oficial Oracle (OEDMF/BICC Release 13/25A)."
+    },
+    {
+      "id": 16,
+      "br": "- 🟢 81–100% — Coluna presente na documentação oficial Oracle; nome, tipo e descrição confirmados.",
+      "en": "- 🟢 81–100% — Column present in official Oracle documentation; name, type, and description confirmed.",
+      "es": "- 🟢 81–100% — Columna presente en la documentacion oficial Oracle; nombre, tipo y descripcion confirmados."
+    },
+    {
+      "id": 17,
+      "br": "- 🟡 51–80% — Coluna inferida por naming convention ou padrão Oracle; tipo exato pode variar.",
+      "en": "- 🟡 51–80% — Column inferred by naming convention or Oracle standard; exact type may vary.",
+      "es": "- 🟡 51–80% — Columna inferida por naming convention o estandar Oracle; tipo exacto puede variar."
+    },
+    {
+      "id": 18,
+      "br": "- 🔴 0–50% — Existência ou tipo incertos; pode não existir no release atual; validar no ambiente.",
+      "en": "- 🔴 0–50% — Existence or type uncertain; may not exist in the current release; validate in the environment.",
+      "es": "- 🔴 0–50% — Existencia o tipo inciertos; puede no existir en el release actual; validar en el ambiente."
+    },
+    {
+      "id": 19,
+      "br": "Coluna",
+      "en": "Column",
+      "es": "Columna"
+    },
+    {
+      "id": 20,
+      "br": "Tipo",
+      "en": "Type",
+      "es": "Tipo"
+    },
+    {
+      "id": 21,
+      "br": "Nulo?",
+      "en": "Nullable?",
+      "es": "Nulo?"
+    },
+    {
+      "id": 22,
+      "br": "Categoria",
+      "en": "Category",
+      "es": "Categoria"
+    },
+    {
+      "id": 23,
+      "br": "Descrição",
+      "en": "Description",
+      "es": "Descripcion"
+    },
+    {
+      "id": 24,
+      "br": "Código da estrutura de árvore (tree structure)",
+      "en": "Tree structure code",
+      "es": "Codigo de la estructura de arbol (tree structure)"
+    },
+    {
+      "id": 25,
+      "br": "Código da árvore/hierarquia específica",
+      "en": "Specific tree/hierarchy code",
+      "es": "Codigo del arbol/jerarquia especifica"
+    },
+    {
+      "id": 26,
+      "br": "Versão da árvore (múltiplas versões podem coexistir)",
+      "en": "Tree version (multiple versions can coexist)",
+      "es": "Version del arbol (multiples versiones pueden coexistir)"
+    },
+    {
+      "id": 27,
+      "br": "Hierarquia",
+      "en": "Hierarchy",
+      "es": "Jerarquia"
+    },
+    {
+      "id": 28,
+      "br": "Valor do segmento pai (nó agrupador)",
+      "en": "Parent segment value (grouping node)",
+      "es": "Valor del segmento padre (nodo agrupador)"
+    },
+    {
+      "id": 29,
+      "br": "Profundidade do nó pai na árvore (0 = raiz)",
+      "en": "Parent node depth in the tree (0 = root)",
+      "es": "Profundidad del nodo padre en el arbol (0 = raiz)"
+    },
+    {
+      "id": 30,
+      "br": "Valor do segmento filho",
+      "en": "Child segment value",
+      "es": "Valor del segmento hijo"
+    },
+    {
+      "id": 31,
+      "br": "Profundidade do nó filho na árvore",
+      "en": "Child node depth in the tree",
+      "es": "Profundidad del nodo hijo en el arbol"
+    },
+    {
+      "id": 32,
+      "br": "ID do value set do valor filho",
+      "en": "Value set ID for the child value",
+      "es": "ID del value set del valor hijo"
+    },
+    {
+      "id": 33,
+      "br": "ID do value set do valor pai",
+      "en": "Value set ID for the parent value",
+      "es": "ID del value set del valor padre"
+    },
+    {
+      "id": 34,
+      "br": "Filtro",
+      "en": "Filter",
+      "es": "Filtro"
+    },
+    {
+      "id": 35,
+      "br": "Valor inicial do range de filhos (para nós tipo range)",
+      "en": "Starting value of the child range (for range-type nodes)",
+      "es": "Valor inicial del rango de hijos (para nodos tipo range)"
+    },
+    {
+      "id": 36,
+      "br": "Valor final do range de filhos",
+      "en": "Ending value of the child range",
+      "es": "Valor final del rango de hijos"
+    },
+    {
+      "id": 37,
+      "br": "Classificação",
+      "en": "Classification",
+      "es": "Clasificacion"
+    },
+    {
+      "id": 38,
+      "br": "Indica se o nó filho é uma folha (Y) ou nó intermediário (N)",
+      "en": "Indicates whether the child node is a leaf (Y) or intermediate node (N)",
+      "es": "Indica si el nodo hijo es una hoja (Y) o nodo intermedio (N)"
+    },
+    {
+      "id": 39,
+      "br": "Status",
+      "en": "Status",
+      "es": "Status"
+    },
+    {
+      "id": 40,
+      "br": "Indica se o relacionamento está ativo (Y/N)",
+      "en": "Indicates whether the relationship is active (Y/N)",
+      "es": "Indica si la relacion esta activa (Y/N)"
+    },
+    {
+      "id": 41,
+      "br": "Auditoria",
+      "en": "Audit",
+      "es": "Auditoria"
+    },
+    {
+      "id": 42,
+      "br": "Usuário que criou o registro",
+      "en": "User who created the record",
+      "es": "Usuario que creo el registro"
+    },
+    {
+      "id": 43,
+      "br": "Data/hora de criação",
+      "en": "Creation date/time",
+      "es": "Fecha/hora de creacion"
+    },
+    {
+      "id": 44,
+      "br": "Último usuário que alterou",
+      "en": "Last user who modified",
+      "es": "Ultimo usuario que modifico"
+    },
+    {
+      "id": 45,
+      "br": "Data/hora da última alteração",
+      "en": "Last modification date/time",
+      "es": "Fecha/hora de la ultima modificacion"
+    },
+    {
+      "id": 46,
+      "br": "Relacionamentos",
+      "en": "Relationships",
+      "es": "Relaciones"
+    },
+    {
+      "id": 47,
+      "br": "Tabelas-pai (FK de entrada)",
+      "en": "Parent tables (inbound FK)",
+      "es": "Tablas padre (FK de entrada)"
+    },
+    {
+      "id": 48,
+      "br": "fnd_flex_value_sets — via CHILD_VALUE_SET_ID e PARENT_VALUE_SET_ID (value sets dos segmentos)",
+      "en": "fnd_flex_value_sets — via CHILD_VALUE_SET_ID and PARENT_VALUE_SET_ID (segment value sets)",
+      "es": "fnd_flex_value_sets — via CHILD_VALUE_SET_ID y PARENT_VALUE_SET_ID (value sets de los segmentos)"
+    },
+    {
+      "id": 49,
+      "br": "Tabelas-filha (FK de saída)",
+      "en": "Child tables (outbound FK)",
+      "es": "Tablas hija (FK de salida)"
+    },
+    {
+      "id": 50,
+      "br": "Nenhuma FK direta — esta é uma tabela de hierarquia consumida por relatórios e processos de rollup.",
+      "en": "No direct FK — this is a hierarchy table consumed by reports and rollup processes.",
+      "es": "Ninguna FK directa — esta es una tabla de jerarquia consumida por reportes y procesos de rollup."
+    },
+    {
+      "id": 51,
+      "br": "Uso Típico",
+      "en": "Typical Usage",
+      "es": "Uso Tipico"
+    },
+    {
+      "id": 52,
+      "br": "Filhos diretos de um nó pai",
+      "en": "Direct children of a parent node",
+      "es": "Hijos directos de un nodo padre"
+    },
+    {
+      "id": 53,
+      "br": "Todos os nós folha de uma hierarquia",
+      "en": "All leaf nodes of a hierarchy",
+      "es": "Todos los nodos hoja de una jerarquia"
+    },
+    {
+      "id": 54,
+      "br": "Saldo consolidado por nó da hierarquia",
+      "en": "Consolidated balance by hierarchy node",
+      "es": "Saldo consolidado por nodo de la jerarquia"
+    },
+    {
+      "id": 55,
+      "br": "Filtros comuns",
+      "en": "Common Filters",
+      "es": "Filtros comunes"
+    },
+    {
+      "id": 56,
+      "br": "Apenas nós folha (valores analíticos)",
+      "en": "Leaf nodes only (detail values)",
+      "es": "Solo nodos hoja (valores analiticos)"
+    },
+    {
+      "id": 57,
+      "br": "Apenas relacionamentos ativos",
+      "en": "Active relationships only",
+      "es": "Solo relaciones activas"
+    },
+    {
+      "id": 58,
+      "br": "Selecionar hierarquia específica (pode haver múltiplas por segmento)",
+      "en": "Select specific hierarchy (there may be multiple per segment)",
+      "es": "Seleccionar jerarquia especifica (puede haber multiples por segmento)"
+    },
+    {
+      "id": 59,
+      "br": "Observações",
+      "en": "Notes",
+      "es": "Observaciones"
+    },
+    {
+      "id": 60,
+      "br": "A tabela é desnormalizada (flattened) — cada par pai-filho é uma linha, facilitando JOINs diretos sem recursão. Para hierarquias profundas, um mesmo valor folha pode aparecer múltiplas vezes (uma para cada ancestral).",
+      "en": "The table is denormalized (flattened) — each parent-child pair is a row, facilitating direct JOINs without recursion. For deep hierarchies, the same leaf value may appear multiple times (once for each ancestor).",
+      "es": "La tabla es desnormalizada (flattened) — cada par padre-hijo es una fila, facilitando JOINs directos sin recursion. Para jerarquias profundas, un mismo valor hoja puede aparecer multiples veces (una por cada ancestro)."
+    },
+    {
+      "id": 61,
+      "br": "O Oracle Fusion utiliza o framework Tree Management para gerenciar hierarquias. As árvores são versionadas (TREE_VERSION_ID), permitindo manter hierarquias históricas.",
+      "en": "Oracle Fusion uses the Tree Management framework to manage hierarchies. Trees are versioned (TREE_VERSION_ID), allowing historical hierarchies to be maintained.",
+      "es": "Oracle Fusion utiliza el framework Tree Management para gestionar jerarquias. Los arboles son versionados (TREE_VERSION_ID), permitiendo mantener jerarquias historicas."
+    },
+    {
+      "id": 62,
+      "br": "O TREE_STRUCTURE_CODE identifica o tipo de estrutura (ex: GL_ACCT_FLEX para plano de contas). O TREE_CODE identifica a hierarquia específica dentro dessa estrutura.",
+      "en": "TREE_STRUCTURE_CODE identifies the structure type (e.g., GL_ACCT_FLEX for chart of accounts). TREE_CODE identifies the specific hierarchy within that structure.",
+      "es": "TREE_STRUCTURE_CODE identifica el tipo de estructura (ej: GL_ACCT_FLEX para plan de cuentas). TREE_CODE identifica la jerarquia especifica dentro de esa estructura."
+    },
+    {
+      "id": 63,
+      "br": "Nós do tipo range (RANGE_LOW / RANGE_HIGH) incluem todos os valores dentro do intervalo como filhos, sem necessidade de listá-los individualmente.",
+      "en": "Range-type nodes (RANGE_LOW / RANGE_HIGH) include all values within the interval as children, without needing to list them individually.",
+      "es": "Nodos tipo range (RANGE_LOW / RANGE_HIGH) incluyen todos los valores dentro del intervalo como hijos, sin necesidad de listarlos individualmente."
+    },
+    {
+      "id": 64,
+      "br": "Hierarquias são fundamentais para o Financial Reporting Studio e para a segurança por dados (Data Access Sets) do Oracle Fusion.",
+      "en": "Hierarchies are fundamental for Financial Reporting Studio and for data security (Data Access Sets) in Oracle Fusion.",
+      "es": "Las jerarquias son fundamentales para Financial Reporting Studio y para la seguridad por datos (Data Access Sets) de Oracle Fusion."
+    },
+    {
+      "id": 65,
+      "br": "Referências",
+      "en": "References",
+      "es": "Referencias"
+    },
+    {
+      "id": 66,
+      "br": "[Oracle Docs — GL Segment Value Hierarchies](https://docs.oracle.com/en/cloud/saas/financials/25a/oedmf/)",
+      "en": "[Oracle Docs — GL Segment Value Hierarchies](https://docs.oracle.com/en/cloud/saas/financials/25a/oedmf/)",
+      "es": "[Oracle Docs — GL Segment Value Hierarchies](https://docs.oracle.com/en/cloud/saas/financials/25a/oedmf/)"
+    },
+    {
+      "id": 67,
+      "br": "gl-module-data-dictionary — Dossiê do módulo GL",
+      "en": "gl-module-data-dictionary — GL module dossier",
+      "es": "gl-module-data-dictionary — Dossier del modulo GL"
+    }
+  ]
+}

@@ -1,0 +1,457 @@
+{
+  "source": "per_all_assignments_m.md",
+  "source_hash": "cc2d3698e9b761fa58ff58fc3ce4fc6e",
+  "translated_at": "2026-03-26",
+  "items": [
+    {
+      "id": 1,
+      "br": "Visão Geral",
+      "en": "Overview",
+      "es": "Visión General"
+    },
+    {
+      "id": 2,
+      "br": "Tabela materializada que armazena todas as atribuições (assignments) de colaboradores. Contém informações sobre cargo, departamento, localização, grade, gerente e status de cada designação. É a tabela central para dados de workforce.",
+      "en": "Materialized table that stores all employee assignments. Contains information about job, department, location, grade, manager, and status of each assignment. It is the central table for workforce data.",
+      "es": "Tabla materializada que almacena todas las asignaciones (assignments) de colaboradores. Contiene información sobre cargo, departamento, ubicación, grade, gerente y status de cada asignación. É la tabla central para dados de workforce."
+    },
+    {
+      "id": 3,
+      "br": "Sufixo _M",
+      "en": "Suffix _M",
+      "es": "Sufijo _M"
+    },
+    {
+      "id": 4,
+      "br": "O sufixo _M indica tabela materializada — combina dados de múltiplas fontes para otimização de consultas.",
+      "en": "The _M suffix indicates a materialized table — combines data from multiple sources for query optimization.",
+      "es": "El sufijo _M indica tabla materializada — combina datos de múltiples fuentes para optimización de consultas."
+    },
+    {
+      "id": 5,
+      "br": "Propósito de Negócio",
+      "en": "Business Purpose",
+      "es": "Propósito de Negocio"
+    },
+    {
+      "id": 6,
+      "br": "Esta tabela é utilizada nos seguintes processos:",
+      "en": "This table is used in the following processes:",
+      "es": "Esta tabla se utiliza en los siguientes procesos:"
+    },
+    {
+      "id": 7,
+      "br": "— dados centrais de cada vínculo empregatício/designação.",
+      "en": "— dados centrais of each employment bond/assignment.",
+      "es": "— dados centrais de cada vínculo empregatício/asignación."
+    },
+    {
+      "id": 8,
+      "br": "— relaciona colaborador com departamento, cargo e gerente.",
+      "en": "— relates employee to department, job, and manager.",
+      "es": "— relaciona colaborador con departamento, cargo y gerente."
+    },
+    {
+      "id": 9,
+      "br": "— base para cálculos de remuneração por assignment.",
+      "en": "— basis for compensation calculations per assignment.",
+      "es": "— base para cálculos de remuneración por assignment."
+    },
+    {
+      "id": 10,
+      "br": "— fonte principal para contagem de colaboradores.",
+      "en": "— fonte principal for count of employeees.",
+      "es": "— fonte principal para conteo de colaboradores."
+    },
+    {
+      "id": 11,
+      "br": "— histórico completo de mudanças no assignment do colaborador.",
+      "en": "— histórico complete of mudanças in the assignment of the employee.",
+      "es": "— histórico completo de cambios en el assignment del colaborador."
+    },
+    {
+      "id": 12,
+      "br": "Colunas Principais",
+      "en": "Key Columns",
+      "es": "Columnas Principales"
+    },
+    {
+      "id": 13,
+      "br": "Confiança",
+      "en": "Confidence",
+      "es": "Confianza"
+    },
+    {
+      "id": 14,
+      "br": "Escala de 0% a 100% — grau de certeza da descrição gerada por IA com base na documentação oficial Oracle (OEDMF/BICC Release 13/25A).",
+      "en": "Scale from 0% to 100% — degree of certainty of the AI-generated description based on official Oracle documentation (OEDMF/BICC Release 13/25A).",
+      "es": "Escala de 0% a 100% — grado de certeza de la descripción generada por IA basada en la documentación oficial Oracle (OEDMF/BICC Release 13/25A)."
+    },
+    {
+      "id": 15,
+      "br": "- 🟢 81–100% — Coluna presente na documentação oficial Oracle; nome, tipo e descrição confirmados.",
+      "en": "- 🟢 81–100% — Column present in official Oracle documentation; name, type and description confirmed.",
+      "es": "- 🟢 81–100% — Columna presente en la documentación oficial Oracle; nombre, tipo y descripción confirmados."
+    },
+    {
+      "id": 16,
+      "br": "- 🟡 51–80% — Coluna inferida por naming convention ou padrão Oracle; tipo exato pode variar.",
+      "en": "- 🟡 51–80% — Column inferred by naming convention or Oracle standard; exact type may vary.",
+      "es": "- 🟡 51–80% — Columna inferida por naming convention o estándar Oracle; el tipo exacto puede variar."
+    },
+    {
+      "id": 17,
+      "br": "- 🔴 0–50% — Existência ou tipo incertos; pode não existir no release atual; validar no ambiente.",
+      "en": "- 🔴 0–50% — Uncertain existence or type; may not exist in the current release; validate in the environment.",
+      "es": "- 🔴 0–50% — Existencia o tipo inciertos; puede no existir en el release actual; validar en el ambiente."
+    },
+    {
+      "id": 18,
+      "br": "Coluna",
+      "en": "Column",
+      "es": "Columna"
+    },
+    {
+      "id": 19,
+      "br": "Tipo",
+      "en": "Type",
+      "es": "Tipo"
+    },
+    {
+      "id": 20,
+      "br": "Nulo?",
+      "en": "Nullable?",
+      "es": "¿Nulo?"
+    },
+    {
+      "id": 21,
+      "br": "Categoria",
+      "en": "Category",
+      "es": "Categoría"
+    },
+    {
+      "id": 22,
+      "br": "Descrição",
+      "en": "Description",
+      "es": "Descripción"
+    },
+    {
+      "id": 23,
+      "br": "Identificador único do assignment",
+      "en": "Identificador único of the assignment",
+      "es": "Identificador único del assignment"
+    },
+    {
+      "id": 24,
+      "br": "Colaborador",
+      "en": "Employee",
+      "es": "Colaborador"
+    },
+    {
+      "id": 25,
+      "br": "Vigência",
+      "en": "Effective Date",
+      "es": "Vigencia"
+    },
+    {
+      "id": 26,
+      "br": "Data de início da vigência do registro",
+      "en": "Record effective start date",
+      "es": "Fecha de inicio de vigencia del registro"
+    },
+    {
+      "id": 27,
+      "br": "Data de fim da vigência do registro",
+      "en": "Record effective end date",
+      "es": "Fecha de fin de vigencia del registro"
+    },
+    {
+      "id": 28,
+      "br": "Identificação",
+      "en": "Identification",
+      "es": "Identificación"
+    },
+    {
+      "id": 29,
+      "br": "Número do assignment (ex.: E12345)",
+      "en": "Número of the assignment (e.g.: E12345)",
+      "es": "Número del assignment (ex.: E12345)"
+    },
+    {
+      "id": 30,
+      "br": "Classificação",
+      "en": "Classification",
+      "es": "Clasificación"
+    },
+    {
+      "id": 31,
+      "br": "Tipo (E=Employee, C=Contingent, N=Non-worker)",
+      "en": "Tipo (E=Employee, C=Contingent, N=Non-worker)",
+      "es": "Tipo (E=Employee, C=Contingent, N=Non-worker)"
+    },
+    {
+      "id": 32,
+      "br": "Status do assignment",
+      "en": "Status of the assignment",
+      "es": "Estado del assignment"
+    },
+    {
+      "id": 33,
+      "br": "Departamento/Organização",
+      "en": "Departamento/Organizaction",
+      "es": "Departamento/Organização"
+    },
+    {
+      "id": 34,
+      "br": "Cargo (Job)",
+      "en": "Cargo (Job)",
+      "es": "Cargo (Job)"
+    },
+    {
+      "id": 35,
+      "br": "Posição",
+      "en": "Posição",
+      "es": "Posición"
+    },
+    {
+      "id": 36,
+      "br": "Grade salarial",
+      "en": "Grade salarial",
+      "es": "Grado salarial"
+    },
+    {
+      "id": 37,
+      "br": "Localização",
+      "en": "Localizaction",
+      "es": "Localização"
+    },
+    {
+      "id": 38,
+      "br": "Gerente direto",
+      "en": "Gerente direto",
+      "es": "Gerente direto"
+    },
+    {
+      "id": 39,
+      "br": "Entidade legal",
+      "en": "Entidade legal",
+      "es": "Entidade legal"
+    },
+    {
+      "id": 40,
+      "br": "Unidade de negócio",
+      "en": "Unidade of negócio",
+      "es": "Unidade de negócio"
+    },
+    {
+      "id": 41,
+      "br": "Auditoria",
+      "en": "Audit",
+      "es": "Auditoría"
+    },
+    {
+      "id": 42,
+      "br": "Usuário que criou o registro",
+      "en": "User who created the record",
+      "es": "Usuario que creó el registro"
+    },
+    {
+      "id": 43,
+      "br": "Data/hora de criação",
+      "en": "Creation date/time",
+      "es": "Fecha/hora de creación"
+    },
+    {
+      "id": 44,
+      "br": "Último usuário que alterou",
+      "en": "Last user who modified",
+      "es": "Último usuario que modificó"
+    },
+    {
+      "id": 45,
+      "br": "Data/hora da última alteração",
+      "en": "Last modification date/time",
+      "es": "Fecha/hora de la última modificación"
+    },
+    {
+      "id": 46,
+      "br": "Controle",
+      "en": "Control",
+      "es": "Control"
+    },
+    {
+      "id": 47,
+      "br": "Controle de versão otimista do registro",
+      "en": "Optimistic version control of the record",
+      "es": "Control de versión optimista del registro"
+    },
+    {
+      "id": 48,
+      "br": "Relacionamentos",
+      "en": "Relationships",
+      "es": "Relaciones"
+    },
+    {
+      "id": 49,
+      "br": "Tabelas-pai (FK de entrada)",
+      "en": "Parent Tables (Inbound FK)",
+      "es": "Tablas padre (FK de entrada)"
+    },
+    {
+      "id": 50,
+      "br": "colaborador",
+      "en": "employee",
+      "es": "colaborador"
+    },
+    {
+      "id": 51,
+      "br": "status",
+      "en": "status",
+      "es": "status"
+    },
+    {
+      "id": 52,
+      "br": "cargo",
+      "en": "cargo",
+      "es": "cargo"
+    },
+    {
+      "id": 53,
+      "br": "grade salarial",
+      "en": "salary grade",
+      "es": "grado salarial"
+    },
+    {
+      "id": 54,
+      "br": "localização",
+      "en": "location",
+      "es": "ubicación"
+    },
+    {
+      "id": 55,
+      "br": "Tabelas-filha (FK de saída)",
+      "en": "Child Tables (Outbound FK)",
+      "es": "Tablas hija (FK de salida)"
+    },
+    {
+      "id": 56,
+      "br": "informações extras",
+      "en": "informactions extras",
+      "es": "información adicional"
+    },
+    {
+      "id": 57,
+      "br": "responsabilidades",
+      "en": "responsibilitys",
+      "es": "responsabilidades"
+    },
+    {
+      "id": 58,
+      "br": "supervisores",
+      "en": "supervisors",
+      "es": "supervisores"
+    },
+    {
+      "id": 59,
+      "br": "steps de grade",
+      "en": "grade steps",
+      "es": "steps de grade"
+    },
+    {
+      "id": 60,
+      "br": "medidas de trabalho",
+      "en": "medidas of trabalho",
+      "es": "medidas de trabajo"
+    },
+    {
+      "id": 61,
+      "br": "Uso Típico",
+      "en": "Typical Usage",
+      "es": "Uso Típico"
+    },
+    {
+      "id": 62,
+      "br": "Colaboradores ativos com cargo e departamento",
+      "en": "Active employees with job and department",
+      "es": "Colaboradores ativos con cargo y departamento"
+    },
+    {
+      "id": 63,
+      "br": "Filtros comuns",
+      "en": "Common Filters",
+      "es": "Filtros comunes"
+    },
+    {
+      "id": 64,
+      "br": "Empregados",
+      "en": "Empregados",
+      "es": "Empleados"
+    },
+    {
+      "id": 65,
+      "br": "Registros vigentes",
+      "en": "Registros current",
+      "es": "Registros vigentes"
+    },
+    {
+      "id": 66,
+      "br": "ASSIGNMENT_STATUS_TYPE_ID com status ACTIVE_ASSIGN — Assignments ativos",
+      "en": "ASSIGNMENT_STATUS_TYPE_ID with status ACTIVE_ASSIGN — Active assignments",
+      "es": "ASSIGNMENT_STATUS_TYPE_ID con status ACTIVE_ASSIGN — Assignments ativos"
+    },
+    {
+      "id": 67,
+      "br": "Observações",
+      "en": "Notes",
+      "es": "Observaciones"
+    },
+    {
+      "id": 68,
+      "br": "Tabela materializada (_M) — combina dados de múltiplas fontes para performance.",
+      "en": "Materialized table (_M) — combines data from multiple sources for performance.",
+      "es": "Tabla materializada (_M) — combina datos de múltiples fuentes para rendimiento."
+    },
+    {
+      "id": 69,
+      "br": "É a tabela mais consultada do HCM — base para praticamente todos os relatórios de workforce.",
+      "en": "It is the most queried HCM table — the basis for virtually all workforce reports.",
+      "es": "Es la tabla más consultada del HCM — base para prácticamente todos los informes de workforce."
+    },
+    {
+      "id": 70,
+      "br": "Um colaborador pode ter múltiplos assignments simultaneamente (ex.: empregado + consultor).",
+      "en": "An employee can have multiple simultaneous assignments (e.g.: employee + consultant).",
+      "es": "Un colaborador pode ter múltiplos assignments simultaneamente (ex.: empleado + consultor)."
+    },
+    {
+      "id": 71,
+      "br": "O ASSIGNMENT_TYPE é fundamental: E=Employee, C=Contingent Worker, N=Non-Worker.",
+      "en": "The ASSIGNMENT_TYPE is essential: E=Employee, C=Contingent Worker, N=Non-Worker.",
+      "es": "El ASSIGNMENT_TYPE é fundamental: E=Employee, C=Contingent Worker, N=Non-Worker."
+    },
+    {
+      "id": 72,
+      "br": "Sempre filtrar por vigência para obter o assignment corrente.",
+      "en": "Always filter by effective date to get the current assignment.",
+      "es": "Siempre filtrar por vigencia para obter el assignment corrente."
+    },
+    {
+      "id": 73,
+      "br": "Referências",
+      "en": "References",
+      "es": "Referencias"
+    },
+    {
+      "id": 74,
+      "br": "[Oracle Docs — PER_ALL_ASSIGNMENTS_M](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/perallassignmentsm.html)",
+      "en": "[Oracle Docs — PER_ALL_ASSIGNMENTS_M](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/perallassignmentsm.html)",
+      "es": "[Oracle Docs — PER_ALL_ASSIGNMENTS_M](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/perallassignmentsm.html)"
+    },
+    {
+      "id": 75,
+      "br": "Dossiê do módulo HCM",
+      "en": "HCM Module Dossier",
+      "es": "Dossier del módulo HCM"
+    }
+  ]
+}

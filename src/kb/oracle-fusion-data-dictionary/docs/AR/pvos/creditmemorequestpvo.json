@@ -1,0 +1,906 @@
+{
+  "meta": {
+    "pvo_name": "CreditMemoRequestPVO",
+    "full_path": "FscmTopModelAM.FinArTopPublicModelAM.CreditMemoRequestPVO",
+    "module_path": "FscmTopModelAM.FinArTopPublicModelAM",
+    "module_code": "AR",
+    "type": "pvo",
+    "description": "Extrai as solicitações de notas de crédito (credit memo requests), com motivo, valor, status de aprovação e transação de origem. Viabiliza o controle do fluxo de aprovação de créditos e análise de motivos de concessão (devoluções, bonificações, correções)."
+  },
+  "stats": {
+    "total_attributes": 62,
+    "tables_count": 5,
+    "bicc_enabled": 15,
+    "bicc_pct": 24,
+    "pk_count": 2
+  },
+  "tables": [
+    "FUN_BU_PERF_V",
+    "PER_PERSON_NAMES_F_V",
+    "PER_USERS",
+    "RA_CM_REQUESTS_ALL",
+    "RA_CUSTOMER_TRX_ALL"
+  ],
+  "attributes": [
+    {
+      "name": "ActivitiesUrl",
+      "table": "RA_CM_REQUESTS_ALL",
+      "column": "ACTIVITIES_URL",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ApprovalDate",
+      "table": "RA_CM_REQUESTS_ALL",
+      "column": "APPROVAL_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BusinessUnitBusinessUnitId",
+      "table": "FUN_BU_PERF_V",
+      "column": "BU_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "BusinessUnitName",
+      "table": "FUN_BU_PERF_V",
+      "column": "BU_NAME",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CmCustomerTrxId",
+      "table": "RA_CM_REQUESTS_ALL",
+      "column": "CM_CUSTOMER_TRX_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CmReasonCode",
+      "table": "RA_CM_REQUESTS_ALL",
+      "column": "CM_REASON_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CreatedBy",
+      "table": "RA_CM_REQUESTS_ALL",
+      "column": "CREATED_BY",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CreationDate",
+      "table": "RA_CM_REQUESTS_ALL",
+      "column": "CREATION_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustomerTrxId",
+      "table": "RA_CM_REQUESTS_ALL",
+      "column": "CUSTOMER_TRX_ID",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    },
+    {
+      "name": "FreightAmount",
+      "table": "RA_CM_REQUESTS_ALL",
+      "column": "FREIGHT_AMOUNT",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InterfaceHeaderAttribute1",
+      "table": "RA_CM_REQUESTS_ALL",
+      "column": "INTERFACE_HEADER_ATTRIBUTE1",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InterfaceHeaderAttribute10",
+      "table": "RA_CM_REQUESTS_ALL",
+      "column": "INTERFACE_HEADER_ATTRIBUTE10",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InterfaceHeaderAttribute11",
+      "table": "RA_CM_REQUESTS_ALL",
+      "column": "INTERFACE_HEADER_ATTRIBUTE11",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InterfaceHeaderAttribute12",
+      "table": "RA_CM_REQUESTS_ALL",
+      "column": "INTERFACE_HEADER_ATTRIBUTE12",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InterfaceHeaderAttribute13",
+      "table": "RA_CM_REQUESTS_ALL",
+      "column": "INTERFACE_HEADER_ATTRIBUTE13",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InterfaceHeaderAttribute14",
+      "table": "RA_CM_REQUESTS_ALL",
+      "column": "INTERFACE_HEADER_ATTRIBUTE14",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InterfaceHeaderAttribute15",
+      "table": "RA_CM_REQUESTS_ALL",
+      "column": "INTERFACE_HEADER_ATTRIBUTE15",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InterfaceHeaderAttribute2",
+      "table": "RA_CM_REQUESTS_ALL",
+      "column": "INTERFACE_HEADER_ATTRIBUTE2",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InterfaceHeaderAttribute3",
+      "table": "RA_CM_REQUESTS_ALL",
+      "column": "INTERFACE_HEADER_ATTRIBUTE3",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InterfaceHeaderAttribute4",
+      "table": "RA_CM_REQUESTS_ALL",
+      "column": "INTERFACE_HEADER_ATTRIBUTE4",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InterfaceHeaderAttribute5",
+      "table": "RA_CM_REQUESTS_ALL",
+      "column": "INTERFACE_HEADER_ATTRIBUTE5",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InterfaceHeaderAttribute6",
+      "table": "RA_CM_REQUESTS_ALL",
+      "column": "INTERFACE_HEADER_ATTRIBUTE6",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InterfaceHeaderAttribute7",
+      "table": "RA_CM_REQUESTS_ALL",
+      "column": "INTERFACE_HEADER_ATTRIBUTE7",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InterfaceHeaderAttribute8",
+      "table": "RA_CM_REQUESTS_ALL",
+      "column": "INTERFACE_HEADER_ATTRIBUTE8",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InterfaceHeaderAttribute9",
+      "table": "RA_CM_REQUESTS_ALL",
+      "column": "INTERFACE_HEADER_ATTRIBUTE9",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InterfaceHeaderContext",
+      "table": "RA_CM_REQUESTS_ALL",
+      "column": "INTERFACE_HEADER_CONTEXT",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LastUpdateDate",
+      "table": "RA_CM_REQUESTS_ALL",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": true
+    },
+    {
+      "name": "LastUpdateLogin",
+      "table": "RA_CM_REQUESTS_ALL",
+      "column": "LAST_UPDATE_LOGIN",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LastUpdatedBy",
+      "table": "RA_CM_REQUESTS_ALL",
+      "column": "LAST_UPDATED_BY",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LineAmount",
+      "table": "RA_CM_REQUESTS_ALL",
+      "column": "LINE_AMOUNT",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LineCreditsFlag",
+      "table": "RA_CM_REQUESTS_ALL",
+      "column": "LINE_CREDITS_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ObjectVersionNumber",
+      "table": "RA_CM_REQUESTS_ALL",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "OrgId",
+      "table": "RA_CM_REQUESTS_ALL",
+      "column": "ORG_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "OrigTrxNumber",
+      "table": "RA_CM_REQUESTS_ALL",
+      "column": "ORIG_TRX_NUMBER",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonCreatedByDisplayName",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "DISPLAY_NAME",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonCreatedByEffectiveEndDate",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "EFFECTIVE_END_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonCreatedByEffectiveStartDate",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "EFFECTIVE_START_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonCreatedByPersonId",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "PERSON_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonCreatedByPersonNameId",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "PERSON_NAME_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonUpdatedByDisplayName",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "DISPLAY_NAME",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonUpdatedByEffectiveEndDate",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "EFFECTIVE_END_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonUpdatedByEffectiveStartDate",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "EFFECTIVE_START_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonUpdatedByPersonId",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "PERSON_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonUpdatedByPersonNameId",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "PERSON_NAME_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RequestId",
+      "table": "RA_CM_REQUESTS_ALL",
+      "column": "REQUEST_ID",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    },
+    {
+      "name": "Status",
+      "table": "RA_CM_REQUESTS_ALL",
+      "column": "STATUS",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TaxAmount",
+      "table": "RA_CM_REQUESTS_ALL",
+      "column": "TAX_AMOUNT",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TaxExCertNum",
+      "table": "RA_CM_REQUESTS_ALL",
+      "column": "TAX_EX_CERT_NUM",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TermsSequenceNumber",
+      "table": "RA_CM_REQUESTS_ALL",
+      "column": "TERMS_SEQUENCE_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TotalAmount",
+      "table": "RA_CM_REQUESTS_ALL",
+      "column": "TOTAL_AMOUNT",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TransactionHeaderCustomerTrxId",
+      "table": "RA_CUSTOMER_TRX_ALL",
+      "column": "CUSTOMER_TRX_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TransactionHeaderSetOfBooksId",
+      "table": "RA_CUSTOMER_TRX_ALL",
+      "column": "SET_OF_BOOKS_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TransactionUrl",
+      "table": "RA_CM_REQUESTS_ALL",
+      "column": "TRANSACTION_URL",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "Url",
+      "table": "RA_CM_REQUESTS_ALL",
+      "column": "URL",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "UserCreatedByPersonId",
+      "table": "PER_USERS",
+      "column": "PERSON_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "UserCreatedByUserGuid",
+      "table": "PER_USERS",
+      "column": "USER_GUID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "UserCreatedByUserId",
+      "table": "PER_USERS",
+      "column": "USER_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "UserCreatedByUsername",
+      "table": "PER_USERS",
+      "column": "USERNAME",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "UserUpdatedByPersonId",
+      "table": "PER_USERS",
+      "column": "PERSON_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "UserUpdatedByUserGuid",
+      "table": "PER_USERS",
+      "column": "USER_GUID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "UserUpdatedByUserId",
+      "table": "PER_USERS",
+      "column": "USER_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "UserUpdatedByUsername",
+      "table": "PER_USERS",
+      "column": "USERNAME",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    }
+  ],
+  "by_table": {
+    "RA_CM_REQUESTS_ALL": [
+      {
+        "attribute": "ActivitiesUrl",
+        "column": "ACTIVITIES_URL",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ApprovalDate",
+        "column": "APPROVAL_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CmCustomerTrxId",
+        "column": "CM_CUSTOMER_TRX_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CmReasonCode",
+        "column": "CM_REASON_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CreatedBy",
+        "column": "CREATED_BY",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CreationDate",
+        "column": "CREATION_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "CustomerTrxId",
+        "column": "CUSTOMER_TRX_ID",
+        "bicc": true,
+        "pk": true
+      },
+      {
+        "attribute": "FreightAmount",
+        "column": "FREIGHT_AMOUNT",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "InterfaceHeaderAttribute1",
+        "column": "INTERFACE_HEADER_ATTRIBUTE1",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InterfaceHeaderAttribute10",
+        "column": "INTERFACE_HEADER_ATTRIBUTE10",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InterfaceHeaderAttribute11",
+        "column": "INTERFACE_HEADER_ATTRIBUTE11",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InterfaceHeaderAttribute12",
+        "column": "INTERFACE_HEADER_ATTRIBUTE12",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InterfaceHeaderAttribute13",
+        "column": "INTERFACE_HEADER_ATTRIBUTE13",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InterfaceHeaderAttribute14",
+        "column": "INTERFACE_HEADER_ATTRIBUTE14",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InterfaceHeaderAttribute15",
+        "column": "INTERFACE_HEADER_ATTRIBUTE15",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InterfaceHeaderAttribute2",
+        "column": "INTERFACE_HEADER_ATTRIBUTE2",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InterfaceHeaderAttribute3",
+        "column": "INTERFACE_HEADER_ATTRIBUTE3",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InterfaceHeaderAttribute4",
+        "column": "INTERFACE_HEADER_ATTRIBUTE4",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InterfaceHeaderAttribute5",
+        "column": "INTERFACE_HEADER_ATTRIBUTE5",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InterfaceHeaderAttribute6",
+        "column": "INTERFACE_HEADER_ATTRIBUTE6",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InterfaceHeaderAttribute7",
+        "column": "INTERFACE_HEADER_ATTRIBUTE7",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InterfaceHeaderAttribute8",
+        "column": "INTERFACE_HEADER_ATTRIBUTE8",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InterfaceHeaderAttribute9",
+        "column": "INTERFACE_HEADER_ATTRIBUTE9",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InterfaceHeaderContext",
+        "column": "INTERFACE_HEADER_CONTEXT",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "LastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "LastUpdateLogin",
+        "column": "LAST_UPDATE_LOGIN",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "LastUpdatedBy",
+        "column": "LAST_UPDATED_BY",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "LineAmount",
+        "column": "LINE_AMOUNT",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "LineCreditsFlag",
+        "column": "LINE_CREDITS_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "OrgId",
+        "column": "ORG_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "OrigTrxNumber",
+        "column": "ORIG_TRX_NUMBER",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "RequestId",
+        "column": "REQUEST_ID",
+        "bicc": true,
+        "pk": true
+      },
+      {
+        "attribute": "Status",
+        "column": "STATUS",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TaxAmount",
+        "column": "TAX_AMOUNT",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TaxExCertNum",
+        "column": "TAX_EX_CERT_NUM",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TermsSequenceNumber",
+        "column": "TERMS_SEQUENCE_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TotalAmount",
+        "column": "TOTAL_AMOUNT",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TransactionUrl",
+        "column": "TRANSACTION_URL",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "Url",
+        "column": "URL",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "FUN_BU_PERF_V": [
+      {
+        "attribute": "BusinessUnitBusinessUnitId",
+        "column": "BU_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "BusinessUnitName",
+        "column": "BU_NAME",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "PER_PERSON_NAMES_F_V": [
+      {
+        "attribute": "PersonCreatedByDisplayName",
+        "column": "DISPLAY_NAME",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PersonCreatedByEffectiveEndDate",
+        "column": "EFFECTIVE_END_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PersonCreatedByEffectiveStartDate",
+        "column": "EFFECTIVE_START_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PersonCreatedByPersonId",
+        "column": "PERSON_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PersonCreatedByPersonNameId",
+        "column": "PERSON_NAME_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PersonUpdatedByDisplayName",
+        "column": "DISPLAY_NAME",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PersonUpdatedByEffectiveEndDate",
+        "column": "EFFECTIVE_END_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PersonUpdatedByEffectiveStartDate",
+        "column": "EFFECTIVE_START_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PersonUpdatedByPersonId",
+        "column": "PERSON_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PersonUpdatedByPersonNameId",
+        "column": "PERSON_NAME_ID",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "RA_CUSTOMER_TRX_ALL": [
+      {
+        "attribute": "TransactionHeaderCustomerTrxId",
+        "column": "CUSTOMER_TRX_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TransactionHeaderSetOfBooksId",
+        "column": "SET_OF_BOOKS_ID",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "PER_USERS": [
+      {
+        "attribute": "UserCreatedByPersonId",
+        "column": "PERSON_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "UserCreatedByUserGuid",
+        "column": "USER_GUID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "UserCreatedByUserId",
+        "column": "USER_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "UserCreatedByUsername",
+        "column": "USERNAME",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "UserUpdatedByPersonId",
+        "column": "PERSON_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "UserUpdatedByUserGuid",
+        "column": "USER_GUID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "UserUpdatedByUserId",
+        "column": "USER_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "UserUpdatedByUsername",
+        "column": "USERNAME",
+        "bicc": false,
+        "pk": false
+      }
+    ]
+  }
+}

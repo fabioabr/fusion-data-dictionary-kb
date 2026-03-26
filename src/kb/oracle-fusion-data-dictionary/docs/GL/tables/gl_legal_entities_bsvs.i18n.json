@@ -1,0 +1,385 @@
+{
+  "source": "gl_legal_entities_bsvs.md",
+  "source_hash": "dac542718f01a66ea2b2b367b22bea93",
+  "translated_at": "2026-03-25",
+  "items": [
+    {
+      "id": 1,
+      "br": "Visão Geral",
+      "en": "Overview",
+      "es": "Vision General"
+    },
+    {
+      "id": 2,
+      "br": "Armazena a associação entre entidades legais (legal entities) e seus balancing segment values (BSVs) no General Ledger. Define quais valores do segmento de balanceamento (tipicamente o segmento de empresa) pertencem a cada entidade legal. Esta associação é fundamental para o Subledger Accounting determinar a entidade legal responsável por cada transação.",
+      "en": "Stores the association between legal entities and their balancing segment values (BSVs) in the General Ledger. Defines which balancing segment values (typically the company segment) belong to each legal entity. This association is fundamental for Subledger Accounting to determine the legal entity responsible for each transaction.",
+      "es": "Almacena la asociacion entre entidades legales (legal entities) y sus balancing segment values (BSVs) en el General Ledger. Define cuales valores del segmento de balanceo (tipicamente el segmento de empresa) pertenecen a cada entidad legal. Esta asociacion es fundamental para que el Subledger Accounting determine la entidad legal responsable por cada transaccion."
+    },
+    {
+      "id": 3,
+      "br": "Tabela de mapeamento LE → BSV",
+      "en": "LE → BSV mapping table",
+      "es": "Tabla de mapeo LE → BSV"
+    },
+    {
+      "id": 4,
+      "br": "Cada entidade legal pode ter um ou mais balancing segment values associados. Esta associação é configurada durante o setup inicial e raramente alterada em produção.",
+      "en": "Each legal entity can have one or more associated balancing segment values. This association is configured during initial setup and rarely changed in production.",
+      "es": "Cada entidad legal puede tener uno o mas balancing segment values asociados. Esta asociacion se configura durante el setup inicial y raramente se altera en produccion."
+    },
+    {
+      "id": 5,
+      "br": "Propósito de Negócio",
+      "en": "Business Purpose",
+      "es": "Proposito de Negocio"
+    },
+    {
+      "id": 6,
+      "br": "Esta tabela é utilizada nos seguintes processos:",
+      "en": "This table is used in the following processes:",
+      "es": "Esta tabla se utiliza en los siguientes procesos:"
+    },
+    {
+      "id": 7,
+      "br": "Determinação da entidade legal responsável por cada transação contábil.",
+      "en": "Determination of the legal entity responsible for each accounting transaction.",
+      "es": "Determinacion de la entidad legal responsable por cada transaccion contable."
+    },
+    {
+      "id": 8,
+      "br": "Geração de demonstrativos financeiros por entidade legal.",
+      "en": "Generation of financial statements by legal entity.",
+      "es": "Generacion de estados financieros por entidad legal."
+    },
+    {
+      "id": 9,
+      "br": "Identificação de transações entre entidades legais distintas.",
+      "en": "Identification of transactions between different legal entities.",
+      "es": "Identificacion de transacciones entre entidades legales distintas."
+    },
+    {
+      "id": 10,
+      "br": "Associação de obrigações fiscais à entidade legal correta.",
+      "en": "Association of tax obligations with the correct legal entity.",
+      "es": "Asociacion de obligaciones fiscales a la entidad legal correcta."
+    },
+    {
+      "id": 11,
+      "br": "Mapeamento de empresas para fins de eliminação e consolidação.",
+      "en": "Mapping of companies for elimination and consolidation purposes.",
+      "es": "Mapeo de empresas para fines de eliminacion y consolidacion."
+    },
+    {
+      "id": 12,
+      "br": "Rastreamento de qual entidade legal é responsável por cada BSV.",
+      "en": "Tracking of which legal entity is responsible for each BSV.",
+      "es": "Rastreo de cual entidad legal es responsable por cada BSV."
+    },
+    {
+      "id": 13,
+      "br": "Colunas Principais",
+      "en": "Key Columns",
+      "es": "Columnas Principales"
+    },
+    {
+      "id": 14,
+      "br": "Confiança",
+      "en": "Confidence",
+      "es": "Confianza"
+    },
+    {
+      "id": 15,
+      "br": "Escala de 0% a 100% — grau de certeza da descrição gerada por IA com base na documentação oficial Oracle (OEDMF/BICC Release 13/25A).",
+      "en": "Scale from 0% to 100% — degree of certainty of the AI-generated description based on official Oracle documentation (OEDMF/BICC Release 13/25A).",
+      "es": "Escala de 0% a 100% — grado de certeza de la descripcion generada por IA con base en la documentacion oficial Oracle (OEDMF/BICC Release 13/25A)."
+    },
+    {
+      "id": 16,
+      "br": "- 🟢 81–100% — Coluna presente na documentação oficial Oracle; nome, tipo e descrição confirmados.",
+      "en": "- 🟢 81–100% — Column present in official Oracle documentation; name, type, and description confirmed.",
+      "es": "- 🟢 81–100% — Columna presente en la documentacion oficial Oracle; nombre, tipo y descripcion confirmados."
+    },
+    {
+      "id": 17,
+      "br": "- 🟡 51–80% — Coluna inferida por naming convention ou padrão Oracle; tipo exato pode variar.",
+      "en": "- 🟡 51–80% — Column inferred by naming convention or Oracle standard; exact type may vary.",
+      "es": "- 🟡 51–80% — Columna inferida por naming convention o estandar Oracle; tipo exacto puede variar."
+    },
+    {
+      "id": 18,
+      "br": "- 🔴 0–50% — Existência ou tipo incertos; pode não existir no release atual; validar no ambiente.",
+      "en": "- 🔴 0–50% — Uncertain existence or type; may not exist in the current release; validate in the environment.",
+      "es": "- 🔴 0–50% — Existencia o tipo inciertos; puede no existir en el release actual; validar en el ambiente."
+    },
+    {
+      "id": 19,
+      "br": "Coluna",
+      "en": "Column",
+      "es": "Columna"
+    },
+    {
+      "id": 20,
+      "br": "Tipo",
+      "en": "Type",
+      "es": "Tipo"
+    },
+    {
+      "id": 21,
+      "br": "Nulo?",
+      "en": "Nullable?",
+      "es": "Nulo?"
+    },
+    {
+      "id": 22,
+      "br": "Categoria",
+      "en": "Category",
+      "es": "Categoria"
+    },
+    {
+      "id": 23,
+      "br": "Descrição",
+      "en": "Description",
+      "es": "Descripcion"
+    },
+    {
+      "id": 24,
+      "br": "FK/PK",
+      "en": "FK/PK",
+      "es": "FK/PK"
+    },
+    {
+      "id": 25,
+      "br": "Identificador da entidade legal",
+      "en": "Legal entity identifier",
+      "es": "Identificador de la entidad legal"
+    },
+    {
+      "id": 26,
+      "br": "Identificador do ledger",
+      "en": "Ledger identifier",
+      "es": "Identificador del ledger"
+    },
+    {
+      "id": 27,
+      "br": "Valor do balancing segment associado à LE (ex: \"01\", \"02\")",
+      "en": "Balancing segment value associated with the LE (e.g., \"01\", \"02\")",
+      "es": "Valor del balancing segment asociado a la LE (ej: \"01\", \"02\")"
+    },
+    {
+      "id": 28,
+      "br": "Controle",
+      "en": "Control",
+      "es": "Control"
+    },
+    {
+      "id": 29,
+      "br": "Data de início de validade da associação",
+      "en": "Association effective start date",
+      "es": "Fecha de inicio de vigencia de la asociacion"
+    },
+    {
+      "id": 30,
+      "br": "Data de fim de validade da associação",
+      "en": "Association effective end date",
+      "es": "Fecha de fin de vigencia de la asociacion"
+    },
+    {
+      "id": 31,
+      "br": "Status: A (Active), I (Inactive)",
+      "en": "Status: A (Active), I (Inactive)",
+      "es": "Estado: A (Active), I (Inactive)"
+    },
+    {
+      "id": 32,
+      "br": "Contexto do Descriptive Flexfield",
+      "en": "Descriptive Flexfield context",
+      "es": "Contexto del Descriptive Flexfield"
+    },
+    {
+      "id": 33,
+      "br": "ATTRIBUTE1–15",
+      "en": "ATTRIBUTE1–15",
+      "es": "ATTRIBUTE1–15"
+    },
+    {
+      "id": 34,
+      "br": "Campos de atributo descritivo (DFF) configuráveis",
+      "en": "Configurable descriptive attribute fields (DFF)",
+      "es": "Campos de atributo descriptivo (DFF) configurables"
+    },
+    {
+      "id": 35,
+      "br": "Auditoria",
+      "en": "Audit",
+      "es": "Auditoria"
+    },
+    {
+      "id": 36,
+      "br": "Usuário que criou o registro",
+      "en": "User who created the record",
+      "es": "Usuario que creo el registro"
+    },
+    {
+      "id": 37,
+      "br": "Data/hora de criação",
+      "en": "Creation date/time",
+      "es": "Fecha/hora de creacion"
+    },
+    {
+      "id": 38,
+      "br": "Último usuário que alterou",
+      "en": "Last user who modified",
+      "es": "Ultimo usuario que modifico"
+    },
+    {
+      "id": 39,
+      "br": "Data/hora da última alteração",
+      "en": "Last modification date/time",
+      "es": "Fecha/hora de la ultima modificacion"
+    },
+    {
+      "id": 40,
+      "br": "Relacionamentos",
+      "en": "Relationships",
+      "es": "Relaciones"
+    },
+    {
+      "id": 41,
+      "br": "Tabelas-pai (FK de entrada)",
+      "en": "Parent tables (inbound FK)",
+      "es": "Tablas padre (FK de entrada)"
+    },
+    {
+      "id": 42,
+      "br": "ledger ao qual a LE está associada",
+      "en": "ledger to which the LE is associated",
+      "es": "ledger al cual la LE esta asociada"
+    },
+    {
+      "id": 43,
+      "br": "gl_ledger_segment_values — via LEDGER_ID + FLEX_SEGMENT_VALUE (valor de segmento do ledger)",
+      "en": "gl_ledger_segment_values — via LEDGER_ID + FLEX_SEGMENT_VALUE (ledger segment value)",
+      "es": "gl_ledger_segment_values — via LEDGER_ID + FLEX_SEGMENT_VALUE (valor de segmento del ledger)"
+    },
+    {
+      "id": 44,
+      "br": "Tabelas-filha (FK de saída)",
+      "en": "Child tables (outbound FK)",
+      "es": "Tablas hija (FK de salida)"
+    },
+    {
+      "id": 45,
+      "br": "Nenhuma FK direta — esta é uma tabela de associação (junction table).",
+      "en": "No direct FK — this is a junction table.",
+      "es": "Sin FK directa — esta es una tabla de asociacion (junction table)."
+    },
+    {
+      "id": 46,
+      "br": "Uso Típico",
+      "en": "Typical Usage",
+      "es": "Uso Tipico"
+    },
+    {
+      "id": 47,
+      "br": "Listar BSVs de uma entidade legal",
+      "en": "List BSVs of a legal entity",
+      "es": "Listar BSVs de una entidad legal"
+    },
+    {
+      "id": 48,
+      "br": "Identificar a entidade legal de um BSV",
+      "en": "Identify the legal entity of a BSV",
+      "es": "Identificar la entidad legal de un BSV"
+    },
+    {
+      "id": 49,
+      "br": "Mapa completo LE → BSV → Ledger",
+      "en": "Complete LE → BSV → Ledger map",
+      "es": "Mapa completo LE → BSV → Ledger"
+    },
+    {
+      "id": 50,
+      "br": "Filtros comuns",
+      "en": "Common filters",
+      "es": "Filtros comunes"
+    },
+    {
+      "id": 51,
+      "br": "Associações ativas",
+      "en": "Active associations",
+      "es": "Asociaciones activas"
+    },
+    {
+      "id": 52,
+      "br": "BSVs de uma LE específica",
+      "en": "BSVs of a specific LE",
+      "es": "BSVs de una LE especifica"
+    },
+    {
+      "id": 53,
+      "br": "Entidade legal de um BSV específico",
+      "en": "Legal entity of a specific BSV",
+      "es": "Entidad legal de un BSV especifico"
+    },
+    {
+      "id": 54,
+      "br": "Observações",
+      "en": "Notes",
+      "es": "Observaciones"
+    },
+    {
+      "id": 55,
+      "br": "A PK composta é tipicamente LEGAL_ENTITY_ID + LEDGER_ID + FLEX_SEGMENT_VALUE.",
+      "en": "The composite PK is typically LEGAL_ENTITY_ID + LEDGER_ID + FLEX_SEGMENT_VALUE.",
+      "es": "La PK compuesta es tipicamente LEGAL_ENTITY_ID + LEDGER_ID + FLEX_SEGMENT_VALUE."
+    },
+    {
+      "id": 56,
+      "br": "Cada BSV deve estar associado a no máximo uma entidade legal por ledger — garantindo unicidade na determinação da LE.",
+      "en": "Each BSV must be associated with at most one legal entity per ledger — ensuring uniqueness in LE determination.",
+      "es": "Cada BSV debe estar asociado a como maximo una entidad legal por ledger — garantizando unicidad en la determinacion de la LE."
+    },
+    {
+      "id": 57,
+      "br": "O FLEX_SEGMENT_VALUE corresponde ao valor do balancing segment definido em gl_ledgers (BAL_SEG_COLUMN_NAME).",
+      "en": "FLEX_SEGMENT_VALUE corresponds to the balancing segment value defined in gl_ledgers (BAL_SEG_COLUMN_NAME).",
+      "es": "FLEX_SEGMENT_VALUE corresponde al valor del balancing segment definido en gl_ledgers (BAL_SEG_COLUMN_NAME)."
+    },
+    {
+      "id": 58,
+      "br": "Esta tabela é configurada durante o setup do Accounting Configuration e referenciada pelo Subledger Accounting (SLA) em runtime.",
+      "en": "This table is configured during Accounting Configuration setup and referenced by Subledger Accounting (SLA) at runtime.",
+      "es": "Esta tabla se configura durante el setup del Accounting Configuration y es referenciada por el Subledger Accounting (SLA) en runtime."
+    },
+    {
+      "id": 59,
+      "br": "Em cenários de reorganização societária, atualizações nesta tabela devem ser sincronizadas com gl_ledger_segment_values.",
+      "en": "In corporate reorganization scenarios, updates to this table must be synchronized with gl_ledger_segment_values.",
+      "es": "En escenarios de reorganizacion societaria, actualizaciones en esta tabla deben sincronizarse con gl_ledger_segment_values."
+    },
+    {
+      "id": 60,
+      "br": "A associação LE → BSV é essencial para relatórios fiscais e obrigações acessórias no Brasil (SPED, ECF etc.).",
+      "en": "The LE → BSV association is essential for tax reports and ancillary obligations in Brazil (SPED, ECF, etc.).",
+      "es": "La asociacion LE → BSV es esencial para reportes fiscales y obligaciones accesorias en Brasil (SPED, ECF, etc.)."
+    },
+    {
+      "id": 61,
+      "br": "Referências",
+      "en": "References",
+      "es": "Referencias"
+    },
+    {
+      "id": 62,
+      "br": "[Oracle Docs — GL_LEGAL_ENTITIES_BSVS](https://docs.oracle.com/en/cloud/saas/financials/25a/oedmf/gllegaleentitiesbsvs.html)",
+      "en": "[Oracle Docs — GL_LEGAL_ENTITIES_BSVS](https://docs.oracle.com/en/cloud/saas/financials/25a/oedmf/gllegaleentitiesbsvs.html)",
+      "es": "[Oracle Docs — GL_LEGAL_ENTITIES_BSVS](https://docs.oracle.com/en/cloud/saas/financials/25a/oedmf/gllegaleentitiesbsvs.html)"
+    },
+    {
+      "id": 63,
+      "br": "gl-module-data-dictionary — Dossiê do módulo GL",
+      "en": "gl-module-data-dictionary — GL module dossier",
+      "es": "gl-module-data-dictionary — Dossier del modulo GL"
+    }
+  ]
+}

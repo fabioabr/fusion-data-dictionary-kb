@@ -1,0 +1,517 @@
+{
+  "source": "poz_supplier_sites_all_m.md",
+  "source_hash": "2b3a514a6dd4043f1badc1b59b7e8107",
+  "translated_at": "2026-03-25",
+  "items": [
+    {
+      "id": 1,
+      "br": "Visão Geral",
+      "en": "Overview",
+      "es": "Vision General"
+    },
+    {
+      "id": 2,
+      "br": "Tabela que armazena os sites (endereços operacionais) de fornecedores no Oracle Fusion Procurement. Cada site representa uma localização física do fornecedor (matriz, filial, fábrica, depósito) com configurações específicas de pagamento, impostos, moeda e condições comerciais. É a segunda tabela mais importante do cadastro de fornecedores, depois de POZ_SUPPLIERS.",
+      "en": "Table that stores supplier sites (operational addresses) in Oracle Fusion Procurement. Each site represents a physical supplier location (headquarters, branch, factory, warehouse) with specific payment, tax, currency, and commercial terms configurations. It is the second most important table in supplier registration, after POZ_SUPPLIERS.",
+      "es": "Table that stores supplier sites (operational addresses) in Oracle Fusion Procurement. Each site represents a physical supplier location (headquarters, branch, factory, warehouse) with specific payment, tax, currency, and commercial terms configurations. It is the second most important table in supplier registration, after POZ_SUPPLIERS."
+    },
+    {
+      "id": 3,
+      "br": "Sufixos _ALL_M",
+      "en": "_ALL_M Suffixes",
+      "es": "Sufijos _ALL_M"
+    },
+    {
+      "id": 4,
+      "br": "O sufixo _ALL indica dados de todas as business units (multi-org). O sufixo _M indica tabela merge (suporta operações de merge/upsert no ETL).",
+      "en": "The _ALL suffix indicates data from all business units (multi-org). The _M suffix indicates a merge table (supports merge/upsert operations in ETL).",
+      "es": "The _ALL suffix indicates data from all business units (multi-org). The _M suffix indicates a merge table (supports merge/upsert operations in ETL)."
+    },
+    {
+      "id": 5,
+      "br": "Propósito de Negócio",
+      "en": "Business Purpose",
+      "es": "Proposito de Negocio"
+    },
+    {
+      "id": 6,
+      "br": "Esta tabela é utilizada nos seguintes processos:",
+      "en": "This table is used in the following processes:",
+      "es": "Esta tabla se utiliza en los siguientes procesos:"
+    },
+    {
+      "id": 7,
+      "br": "Registro de todas as localizações operacionais do fornecedor (matriz, filiais, fábricas).",
+      "en": "Registration of all supplier operational locations (headquarters, branches, factories).",
+      "es": "Registration of all supplier operational locations (headquarters, branches, factories)."
+    },
+    {
+      "id": 8,
+      "br": "Referência obrigatória — cada PO é associado a um site específico do fornecedor.",
+      "en": "Mandatory reference — each PO is associated with a specific supplier site.",
+      "es": "Mandatory reference — each PO is associated with a specific supplier site."
+    },
+    {
+      "id": 9,
+      "br": "Configurações de pagamento (termos, moeda, método) são definidas por site.",
+      "en": "Payment configurations (terms, currency, method) are defined per site.",
+      "es": "Payment configurations (terms, currency, method) are defined per site."
+    },
+    {
+      "id": 10,
+      "br": "Configurações fiscais por site (regime tributário, retenções).",
+      "en": "Tax configurations per site (tax regime, withholdings).",
+      "es": "Tax configurations per site (tax regime, withholdings)."
+    },
+    {
+      "id": 11,
+      "br": "Endereço de origem (Ship-From) para recebimento de materiais.",
+      "en": "Origin address (Ship-From) for material receiving.",
+      "es": "Origin address (Ship-From) for material receiving."
+    },
+    {
+      "id": 12,
+      "br": "Permite configurações diferentes do mesmo fornecedor por business unit.",
+      "en": "Allows different configurations of the same supplier per business unit.",
+      "es": "Allows different configurations of the same supplier per business unit."
+    },
+    {
+      "id": 13,
+      "br": "Colunas Principais",
+      "en": "Key Columns",
+      "es": "Columnas Principales"
+    },
+    {
+      "id": 14,
+      "br": "Confiança",
+      "en": "Confidence",
+      "es": "Confianza"
+    },
+    {
+      "id": 15,
+      "br": "Escala de 0% a 100% — grau de certeza da descrição gerada por IA com base na documentação oficial Oracle (OEDMF/BICC Release 13/25A).",
+      "en": "Scale from 0% to 100% — degree of certainty of the AI-generated description based on official Oracle documentation (OEDMF/BICC Release 13/25A).",
+      "es": "Escala de 0% a 100% — grado de certeza de la descripcion generada por IA basada en la documentacion oficial Oracle (OEDMF/BICC Release 13/25A)."
+    },
+    {
+      "id": 16,
+      "br": "- 🟢 81–100% — Coluna presente na documentação oficial Oracle; nome, tipo e descrição confirmados.",
+      "en": "- 🟢 81–100% — Column present in official Oracle documentation; name, type and description confirmed.",
+      "es": "- 🟢 81–100% — Columna presente en la documentacion oficial Oracle; nombre, tipo y descripcion confirmados."
+    },
+    {
+      "id": 17,
+      "br": "- 🟡 51–80% — Coluna inferida por naming convention ou padrão Oracle; tipo exato pode variar.",
+      "en": "- 🟡 51–80% — Column inferred by naming convention or Oracle standard; exact type may vary.",
+      "es": "- 🟡 51–80% — Columna inferida por naming convention o estandar Oracle; tipo exacto puede variar."
+    },
+    {
+      "id": 18,
+      "br": "- 🔴 0–50% — Existência ou tipo incertos; pode não existir no release atual; validar no ambiente.",
+      "en": "- 🔴 0–50% — Uncertain existence or type; may not exist in current release; validate in environment.",
+      "es": "- 🔴 0–50% — Existencia o tipo inciertos; puede no existir en el release actual; validar en el ambiente."
+    },
+    {
+      "id": 19,
+      "br": "Coluna",
+      "en": "Column",
+      "es": "Columna"
+    },
+    {
+      "id": 20,
+      "br": "Tipo",
+      "en": "Type",
+      "es": "Tipo"
+    },
+    {
+      "id": 21,
+      "br": "Nulo?",
+      "en": "Nullable?",
+      "es": "Nulo?"
+    },
+    {
+      "id": 22,
+      "br": "Categoria",
+      "en": "Category",
+      "es": "Categoria"
+    },
+    {
+      "id": 23,
+      "br": "Descrição",
+      "en": "Description",
+      "es": "Descripcion"
+    },
+    {
+      "id": 24,
+      "br": "Identificador único do site do fornecedor",
+      "en": "Unique supplier site identifier",
+      "es": "Unique supplier site identifier"
+    },
+    {
+      "id": 25,
+      "br": "Identificador do fornecedor",
+      "en": "Supplier identifier",
+      "es": "Identificador del proveedor"
+    },
+    {
+      "id": 26,
+      "br": "Identificação",
+      "en": "Identification",
+      "es": "Identificacion"
+    },
+    {
+      "id": 27,
+      "br": "Código do site (visível ao usuário, ex.: SEDE, FILIAL-SP)",
+      "en": "Site code (visible to user, e.g., SEDE, FILIAL-SP)",
+      "es": "Site code (visible to user, e.g., SEDE, FILIAL-SP)"
+    },
+    {
+      "id": 28,
+      "br": "Party site no TCA",
+      "en": "Party site in TCA",
+      "es": "Party site in TCA"
+    },
+    {
+      "id": 29,
+      "br": "Localização (TCA)",
+      "en": "Location (TCA)",
+      "es": "Location (TCA)"
+    },
+    {
+      "id": 30,
+      "br": "Configuração",
+      "en": "Configuration",
+      "es": "Configuracion"
+    },
+    {
+      "id": 31,
+      "br": "Site habilitado para compras (Y/N)",
+      "en": "Site enabled for purchasing (Y/N)",
+      "es": "Site enabled for purchasing (Y/N)"
+    },
+    {
+      "id": 32,
+      "br": "Site habilitado para pagamento (Y/N)",
+      "en": "Site enabled for payment (Y/N)",
+      "es": "Site enabled for payment (Y/N)"
+    },
+    {
+      "id": 33,
+      "br": "Site apenas para cotações/RFQ (Y/N)",
+      "en": "Site for quotations/RFQ only (Y/N)",
+      "es": "Site for quotations/RFQ only (Y/N)"
+    },
+    {
+      "id": 34,
+      "br": "Financeiro",
+      "en": "Financial",
+      "es": "Financiero"
+    },
+    {
+      "id": 35,
+      "br": "Moeda de pagamento padrão",
+      "en": "Default payment currency",
+      "es": "Default payment currency"
+    },
+    {
+      "id": 36,
+      "br": "Moeda de faturamento padrão",
+      "en": "Default invoicing currency",
+      "es": "Default invoicing currency"
+    },
+    {
+      "id": 37,
+      "br": "Pagamento",
+      "en": "Payment",
+      "es": "Pago"
+    },
+    {
+      "id": 38,
+      "br": "Método de pagamento padrão (CHECK, EFT, WIRE)",
+      "en": "Default payment method (CHECK, EFT, WIRE)",
+      "es": "Default payment method (CHECK, EFT, WIRE)"
+    },
+    {
+      "id": 39,
+      "br": "Grupo de pagamento",
+      "en": "Payment group",
+      "es": "Payment group"
+    },
+    {
+      "id": 40,
+      "br": "Condição de pagamento padrão",
+      "en": "Default payment terms",
+      "es": "Default payment terms"
+    },
+    {
+      "id": 41,
+      "br": "Vigência",
+      "en": "Validity Period",
+      "es": "Vigencia"
+    },
+    {
+      "id": 42,
+      "br": "Data de inativação do site",
+      "en": "Site inactivation date",
+      "es": "Site inactivation date"
+    },
+    {
+      "id": 43,
+      "br": "Localização",
+      "en": "Location",
+      "es": "Ubicacion"
+    },
+    {
+      "id": 44,
+      "br": "País de origem (ISO)",
+      "en": "Country of origin (ISO)",
+      "es": "Country of origin (ISO)"
+    },
+    {
+      "id": 45,
+      "br": "Site aceita Procurement Card (Y/N)",
+      "en": "Site accepts Procurement Card (Y/N)",
+      "es": "Site accepts Procurement Card (Y/N)"
+    },
+    {
+      "id": 46,
+      "br": "Opção de match: P (Purchase Order), R (Receipt)",
+      "en": "Match option: P (Purchase Order), R (Receipt)",
+      "es": "Match option: P (Purchase Order), R (Receipt)"
+    },
+    {
+      "id": 47,
+      "br": "Auditoria",
+      "en": "Audit",
+      "es": "Auditoria"
+    },
+    {
+      "id": 48,
+      "br": "Usuário que criou o registro",
+      "en": "User who created the record",
+      "es": "Usuario que creo el registro"
+    },
+    {
+      "id": 49,
+      "br": "Data/hora de criação",
+      "en": "Creation date/time",
+      "es": "Fecha/hora de creacion"
+    },
+    {
+      "id": 50,
+      "br": "Último usuário que alterou",
+      "en": "Last user who modified",
+      "es": "Ultimo usuario que modifico"
+    },
+    {
+      "id": 51,
+      "br": "Data/hora da última alteração",
+      "en": "Last modification date/time",
+      "es": "Fecha/hora de la ultima modificacion"
+    },
+    {
+      "id": 52,
+      "br": "Relacionamentos",
+      "en": "Relationships",
+      "es": "Relaciones"
+    },
+    {
+      "id": 53,
+      "br": "Tabelas-pai (FK de entrada)",
+      "en": "Parent Tables (Inbound FK)",
+      "es": "Tablas padre (FK de entrada)"
+    },
+    {
+      "id": 54,
+      "br": "fornecedor proprietário",
+      "en": "owner supplier",
+      "es": "owner supplier"
+    },
+    {
+      "id": 55,
+      "br": "localização TCA",
+      "en": "TCA location",
+      "es": "TCA location"
+    },
+    {
+      "id": 56,
+      "br": "endereço TCA",
+      "en": "TCA address",
+      "es": "TCA address"
+    },
+    {
+      "id": 57,
+      "br": "condição de pagamento",
+      "en": "payment terms",
+      "es": "payment terms"
+    },
+    {
+      "id": 58,
+      "br": "Tabelas-filha (FK de saída)",
+      "en": "Child Tables (Outbound FK)",
+      "es": "Tablas hija (FK de salida)"
+    },
+    {
+      "id": 59,
+      "br": "poz_site_assignments_all_m — Atribuições do site a BUs",
+      "en": "poz_site_assignments_all_m — Site assignments to BUs",
+      "es": "poz_site_assignments_all_m — Site assignments to BUs"
+    },
+    {
+      "id": 60,
+      "br": "poz_supplier_sites_pii — Dados PII por site",
+      "en": "poz_supplier_sites_pii — PII data per site",
+      "es": "poz_supplier_sites_pii — PII data per site"
+    },
+    {
+      "id": 61,
+      "br": "poz_supplier_contacts — Contatos vinculados ao site",
+      "en": "poz_supplier_contacts — Contacts linked to the site",
+      "es": "poz_supplier_contacts — Contacts linked to the site"
+    },
+    {
+      "id": 62,
+      "br": "po_headers_all — Pedidos de compra que referenciam o site",
+      "en": "po_headers_all — Purchase orders referencing the site",
+      "es": "po_headers_all — Purchase orders referencing the site"
+    },
+    {
+      "id": 63,
+      "br": "ap_invoices_all — Faturas associadas ao site",
+      "en": "ap_invoices_all — Invoices associated with the site",
+      "es": "ap_invoices_all — Invoices associated with the site"
+    },
+    {
+      "id": 64,
+      "br": "poz_ext_bank_accounts_v — Contas bancárias do site",
+      "en": "poz_ext_bank_accounts_v — Site bank accounts",
+      "es": "poz_ext_bank_accounts_v — Site bank accounts"
+    },
+    {
+      "id": 65,
+      "br": "Views",
+      "en": "Views",
+      "es": "Vistas"
+    },
+    {
+      "id": 66,
+      "br": "poz_supplier_address_v — Endereço do site",
+      "en": "poz_supplier_address_v — Site address",
+      "es": "poz_supplier_address_v — Site address"
+    },
+    {
+      "id": 67,
+      "br": "Uso Típico",
+      "en": "Typical Usage",
+      "es": "Uso Tipico"
+    },
+    {
+      "id": 68,
+      "br": "Sites ativos de um fornecedor",
+      "en": "Active sites of a supplier",
+      "es": "Active sites of a supplier"
+    },
+    {
+      "id": 69,
+      "br": "Sites habilitados para compras e pagamento",
+      "en": "Sites enabled for purchasing and payment",
+      "es": "Sites enabled for purchasing and payment"
+    },
+    {
+      "id": 70,
+      "br": "Filtros comuns",
+      "en": "Common Filters",
+      "es": "Filtros comunes"
+    },
+    {
+      "id": 71,
+      "br": "Sites habilitados para compras",
+      "en": "Sites enabled for purchasing",
+      "es": "Sites enabled for purchasing"
+    },
+    {
+      "id": 72,
+      "br": "Sites habilitados para pagamento",
+      "en": "Sites enabled for payment",
+      "es": "Sites enabled for payment"
+    },
+    {
+      "id": 73,
+      "br": "Sites apenas para cotação",
+      "en": "Sites for quotation only",
+      "es": "Sites for quotation only"
+    },
+    {
+      "id": 74,
+      "br": "Match por Purchase Order",
+      "en": "Match by Purchase Order",
+      "es": "Match by Purchase Order"
+    },
+    {
+      "id": 75,
+      "br": "Observações",
+      "en": "Notes",
+      "es": "Observaciones"
+    },
+    {
+      "id": 76,
+      "br": "Cada fornecedor deve ter pelo menos um site para ser utilizado em transações.",
+      "en": "Each supplier must have at least one site to be used in transactions.",
+      "es": "Each supplier must have at least one site to be used in transactions."
+    },
+    {
+      "id": 77,
+      "br": "O VENDOR_SITE_CODE é o identificador visível ao usuário (ex.: \"SEDE\", \"FILIAL-SP\", \"DEPOSITO-RJ\").",
+      "en": "The VENDOR_SITE_CODE is the user-visible identifier (e.g., \"SEDE\", \"FILIAL-SP\", \"DEPOSITO-RJ\").",
+      "es": "The VENDOR_SITE_CODE is the user-visible identifier (e.g., \"SEDE\", \"FILIAL-SP\", \"DEPOSITO-RJ\")."
+    },
+    {
+      "id": 78,
+      "br": "As flags PURCHASING_SITE_FLAG e PAY_SITE_FLAG controlam se o site pode ser usado em POs e/ou pagamentos.",
+      "en": "The PURCHASING_SITE_FLAG and PAY_SITE_FLAG flags control whether the site can be used in POs and/or payments.",
+      "es": "The PURCHASING_SITE_FLAG and PAY_SITE_FLAG flags control whether the site can be used in POs and/or payments."
+    },
+    {
+      "id": 79,
+      "br": "O MATCH_OPTION define se a validação de faturas é feita contra o PO (P) ou contra o recebimento (R).",
+      "en": "The MATCH_OPTION defines whether invoice validation is done against the PO (P) or against the receipt (R).",
+      "es": "The MATCH_OPTION defines whether invoice validation is done against the PO (P) or against the receipt (R)."
+    },
+    {
+      "id": 80,
+      "br": "O campo TERMS_ID define a condição de pagamento padrão do site; pode ser sobrescrito na transação individual.",
+      "en": "The TERMS_ID field defines the site default payment terms; it can be overridden on individual transactions.",
+      "es": "The TERMS_ID field defines the site default payment terms; it can be overridden on individual transactions."
+    },
+    {
+      "id": 81,
+      "br": "A atribuição do site a BUs é feita via POZ_SITE_ASSIGNMENTS_ALL_M; sem atribuição, o site não é utilizável na BU.",
+      "en": "Site assignment to BUs is done via POZ_SITE_ASSIGNMENTS_ALL_M; without assignment, the site is not usable in the BU.",
+      "es": "Site assignment to BUs is done via POZ_SITE_ASSIGNMENTS_ALL_M; without assignment, the site is not usable in the BU."
+    },
+    {
+      "id": 82,
+      "br": "Sites com INACTIVE_DATE preenchido não são elegíveis para novas transações.",
+      "en": "Sites with INACTIVE_DATE populated are not eligible for new transactions.",
+      "es": "Sites with INACTIVE_DATE populated are not eligible for new transactions."
+    },
+    {
+      "id": 83,
+      "br": "Referências",
+      "en": "References",
+      "es": "Referencias"
+    },
+    {
+      "id": 84,
+      "br": "[Oracle Docs — POZ_SUPPLIER_SITES_ALL_M](https://docs.oracle.com/en/cloud/saas/procurement/25a/oedmf/pozsuppliersitesallm-25319.html)",
+      "en": "[Oracle Docs — POZ_SUPPLIER_SITES_ALL_M](https://docs.oracle.com/en/cloud/saas/procurement/25a/oedmf/pozsuppliersitesallm-25319.html)",
+      "es": "[Oracle Docs — POZ_SUPPLIER_SITES_ALL_M](https://docs.oracle.com/en/cloud/saas/procurement/25a/oedmf/pozsuppliersitesallm-25319.html)"
+    },
+    {
+      "id": 85,
+      "br": "po-module-data-dictionary — Dossiê do módulo Procurement",
+      "en": "po-module-data-dictionary — Procurement module dossier",
+      "es": "po-module-data-dictionary — Dossier del modulo Procurement"
+    }
+  ]
+}

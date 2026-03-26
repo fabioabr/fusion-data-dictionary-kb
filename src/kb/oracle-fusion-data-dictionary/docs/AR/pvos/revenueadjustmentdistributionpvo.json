@@ -1,0 +1,1618 @@
+{
+  "meta": {
+    "pvo_name": "RevenueAdjustmentDistributionPVO",
+    "full_path": "FscmTopModelAM.FinArTopPublicModelAM.RevenueAdjustmentDistributionPVO",
+    "module_path": "FscmTopModelAM.FinArTopPublicModelAM",
+    "module_code": "AR",
+    "type": "pvo",
+    "description": "Extrai as distribuições contábeis dos ajustes de receita, detalhando o impacto por conta do GL, item e organização. Fundamental para auditoria do reconhecimento de receita e conformidade com ASC 606/IFRS 15."
+  },
+  "stats": {
+    "total_attributes": 112,
+    "tables_count": 9,
+    "bicc_enabled": 34,
+    "bicc_pct": 30,
+    "pk_count": 1
+  },
+  "tables": [
+    "AR_REVENUE_ADJUSTMENTS_ALL",
+    "EGP_CATEGORIES_VL",
+    "EGP_SYSTEM_ITEMS_VL",
+    "FUN_BU_PERF_V",
+    "GL_LEDGERS",
+    "HR_ALL_ORGANIZATION_UNITS_F_VL",
+    "PER_PERSON_NAMES_F_V",
+    "PER_USERS",
+    "RA_CUST_TRX_LINE_GL_DIST_ALL"
+  ],
+  "attributes": [
+    {
+      "name": "BusinessUnitBusinessUnitId",
+      "table": "FUN_BU_PERF_V",
+      "column": "BU_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CategoryCategoryId",
+      "table": "EGP_CATEGORIES_VL",
+      "column": "CATEGORY_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CategoryCategoryName",
+      "table": "EGP_CATEGORIES_VL",
+      "column": "CATEGORY_NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "CustTrxLineGlDistId",
+      "table": "RA_CUST_TRX_LINE_GL_DIST_ALL",
+      "column": "CUST_TRX_LINE_GL_DIST_ID",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    },
+    {
+      "name": "ItemDescription",
+      "table": "EGP_SYSTEM_ITEMS_VL",
+      "column": "DESCRIPTION",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ItemInventoryItemId",
+      "table": "EGP_SYSTEM_ITEMS_VL",
+      "column": "INVENTORY_ITEM_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ItemItemNumber",
+      "table": "EGP_SYSTEM_ITEMS_VL",
+      "column": "ITEM_NUMBER",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ItemOrganizationId",
+      "table": "EGP_SYSTEM_ITEMS_VL",
+      "column": "ORGANIZATION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LedgersChartOfAccountsId",
+      "table": "GL_LEDGERS",
+      "column": "CHART_OF_ACCOUNTS_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LedgersLedgerId",
+      "table": "GL_LEDGERS",
+      "column": "LEDGER_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ObjectVersionNumber",
+      "table": "PER_USERS",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ObjectVersionNumber1",
+      "table": "PER_USERS",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "OrgUnitFrmSalesGrpEffectiveEndDate",
+      "table": "HR_ALL_ORGANIZATION_UNITS_F_VL",
+      "column": "EFFECTIVE_END_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "OrgUnitFrmSalesGrpEffectiveStartDate",
+      "table": "HR_ALL_ORGANIZATION_UNITS_F_VL",
+      "column": "EFFECTIVE_START_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "OrgUnitFrmSalesGrpName",
+      "table": "HR_ALL_ORGANIZATION_UNITS_F_VL",
+      "column": "NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "OrgUnitFrmSalesGrpOrganizationId",
+      "table": "HR_ALL_ORGANIZATION_UNITS_F_VL",
+      "column": "ORGANIZATION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "OrgUnitToSalesGrpEffectiveEndDate",
+      "table": "HR_ALL_ORGANIZATION_UNITS_F_VL",
+      "column": "EFFECTIVE_END_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "OrgUnitToSalesGrpEffectiveStartDate",
+      "table": "HR_ALL_ORGANIZATION_UNITS_F_VL",
+      "column": "EFFECTIVE_START_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "OrgUnitToSalesGrpName",
+      "table": "HR_ALL_ORGANIZATION_UNITS_F_VL",
+      "column": "NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "OrgUnitToSalesGrpOrganizationId",
+      "table": "HR_ALL_ORGANIZATION_UNITS_F_VL",
+      "column": "ORGANIZATION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonCreatedByDisplayName",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "DISPLAY_NAME",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonCreatedByEffectiveEndDate",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "EFFECTIVE_END_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonCreatedByEffectiveStartDate",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "EFFECTIVE_START_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonCreatedByPersonId",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "PERSON_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonCreatedByPersonNameId",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "PERSON_NAME_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonUpdatedByDisplayName",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "DISPLAY_NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonUpdatedByEffectiveEndDate",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "EFFECTIVE_END_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonUpdatedByEffectiveStartDate",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "EFFECTIVE_START_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonUpdatedByPersonId",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "PERSON_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonUpdatedByPersonNameId",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "PERSON_NAME_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RevAdjustmentAmount",
+      "table": "AR_REVENUE_ADJUSTMENTS_ALL",
+      "column": "AMOUNT",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RevAdjustmentAmountMode",
+      "table": "AR_REVENUE_ADJUSTMENTS_ALL",
+      "column": "AMOUNT_MODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RevAdjustmentApplicationDate",
+      "table": "AR_REVENUE_ADJUSTMENTS_ALL",
+      "column": "APPLICATION_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RevAdjustmentComments",
+      "table": "AR_REVENUE_ADJUSTMENTS_ALL",
+      "column": "COMMENTS",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RevAdjustmentCreatedBy",
+      "table": "AR_REVENUE_ADJUSTMENTS_ALL",
+      "column": "CREATED_BY",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RevAdjustmentCreationDate",
+      "table": "AR_REVENUE_ADJUSTMENTS_ALL",
+      "column": "CREATION_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RevAdjustmentCustomerTrxId",
+      "table": "AR_REVENUE_ADJUSTMENTS_ALL",
+      "column": "CUSTOMER_TRX_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RevAdjustmentFromCategoryId",
+      "table": "AR_REVENUE_ADJUSTMENTS_ALL",
+      "column": "FROM_CATEGORY_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RevAdjustmentFromCustTrxLineId",
+      "table": "AR_REVENUE_ADJUSTMENTS_ALL",
+      "column": "FROM_CUST_TRX_LINE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RevAdjustmentFromInventoryItemId",
+      "table": "AR_REVENUE_ADJUSTMENTS_ALL",
+      "column": "FROM_INVENTORY_ITEM_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RevAdjustmentFromResourceSalesrepId",
+      "table": "AR_REVENUE_ADJUSTMENTS_ALL",
+      "column": "FROM_RESOURCE_SALESREP_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RevAdjustmentFromSalesgroupId",
+      "table": "AR_REVENUE_ADJUSTMENTS_ALL",
+      "column": "FROM_SALESGROUP_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RevAdjustmentGlDate",
+      "table": "AR_REVENUE_ADJUSTMENTS_ALL",
+      "column": "GL_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RevAdjustmentLastUpdateDate",
+      "table": "AR_REVENUE_ADJUSTMENTS_ALL",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": true
+    },
+    {
+      "name": "RevAdjustmentLastUpdateLogin",
+      "table": "AR_REVENUE_ADJUSTMENTS_ALL",
+      "column": "LAST_UPDATE_LOGIN",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RevAdjustmentLastUpdatedBy",
+      "table": "AR_REVENUE_ADJUSTMENTS_ALL",
+      "column": "LAST_UPDATED_BY",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RevAdjustmentLineSelectionMode",
+      "table": "AR_REVENUE_ADJUSTMENTS_ALL",
+      "column": "LINE_SELECTION_MODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RevAdjustmentObjectVersionNumber",
+      "table": "AR_REVENUE_ADJUSTMENTS_ALL",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RevAdjustmentOrgId",
+      "table": "AR_REVENUE_ADJUSTMENTS_ALL",
+      "column": "ORG_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RevAdjustmentPercent",
+      "table": "AR_REVENUE_ADJUSTMENTS_ALL",
+      "column": "PERCENT",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RevAdjustmentProgramApplicationId",
+      "table": "AR_REVENUE_ADJUSTMENTS_ALL",
+      "column": "PROGRAM_APPLICATION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RevAdjustmentProgramId",
+      "table": "AR_REVENUE_ADJUSTMENTS_ALL",
+      "column": "PROGRAM_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RevAdjustmentProgramUpdateDate",
+      "table": "AR_REVENUE_ADJUSTMENTS_ALL",
+      "column": "PROGRAM_UPDATE_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RevAdjustmentReasonCode",
+      "table": "AR_REVENUE_ADJUSTMENTS_ALL",
+      "column": "REASON_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RevAdjustmentRequestId",
+      "table": "AR_REVENUE_ADJUSTMENTS_ALL",
+      "column": "REQUEST_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RevAdjustmentRevenueAdjustmentId",
+      "table": "AR_REVENUE_ADJUSTMENTS_ALL",
+      "column": "REVENUE_ADJUSTMENT_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RevAdjustmentRevenueAdjustmentNumber",
+      "table": "AR_REVENUE_ADJUSTMENTS_ALL",
+      "column": "REVENUE_ADJUSTMENT_NUMBER",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RevAdjustmentSalesCreditType",
+      "table": "AR_REVENUE_ADJUSTMENTS_ALL",
+      "column": "SALES_CREDIT_TYPE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RevAdjustmentStatus",
+      "table": "AR_REVENUE_ADJUSTMENTS_ALL",
+      "column": "STATUS",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RevAdjustmentToCategoryId",
+      "table": "AR_REVENUE_ADJUSTMENTS_ALL",
+      "column": "TO_CATEGORY_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RevAdjustmentToCustTrxLineId",
+      "table": "AR_REVENUE_ADJUSTMENTS_ALL",
+      "column": "TO_CUST_TRX_LINE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RevAdjustmentToInventoryItemId",
+      "table": "AR_REVENUE_ADJUSTMENTS_ALL",
+      "column": "TO_INVENTORY_ITEM_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RevAdjustmentToResourceSalesrepId",
+      "table": "AR_REVENUE_ADJUSTMENTS_ALL",
+      "column": "TO_RESOURCE_SALESREP_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RevAdjustmentToSalesgroupId",
+      "table": "AR_REVENUE_ADJUSTMENTS_ALL",
+      "column": "TO_SALESGROUP_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "RevAdjustmentType",
+      "table": "AR_REVENUE_ADJUSTMENTS_ALL",
+      "column": "TYPE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TrxDistributionAccountClass",
+      "table": "RA_CUST_TRX_LINE_GL_DIST_ALL",
+      "column": "ACCOUNT_CLASS",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TrxDistributionAccountSetFlag",
+      "table": "RA_CUST_TRX_LINE_GL_DIST_ALL",
+      "column": "ACCOUNT_SET_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TrxDistributionAcctdAmount",
+      "table": "RA_CUST_TRX_LINE_GL_DIST_ALL",
+      "column": "ACCTD_AMOUNT",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TrxDistributionAmount",
+      "table": "RA_CUST_TRX_LINE_GL_DIST_ALL",
+      "column": "AMOUNT",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TrxDistributionCodeCombinationId",
+      "table": "RA_CUST_TRX_LINE_GL_DIST_ALL",
+      "column": "CODE_COMBINATION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TrxDistributionCollectedTaxCcid",
+      "table": "RA_CUST_TRX_LINE_GL_DIST_ALL",
+      "column": "COLLECTED_TAX_CCID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TrxDistributionCollectedTaxConcatSeg",
+      "table": "RA_CUST_TRX_LINE_GL_DIST_ALL",
+      "column": "COLLECTED_TAX_CONCAT_SEG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TrxDistributionComments",
+      "table": "RA_CUST_TRX_LINE_GL_DIST_ALL",
+      "column": "COMMENTS",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TrxDistributionConcatenatedSegments",
+      "table": "RA_CUST_TRX_LINE_GL_DIST_ALL",
+      "column": "CONCATENATED_SEGMENTS",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TrxDistributionCreatedBy",
+      "table": "RA_CUST_TRX_LINE_GL_DIST_ALL",
+      "column": "CREATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TrxDistributionCreationDate",
+      "table": "RA_CUST_TRX_LINE_GL_DIST_ALL",
+      "column": "CREATION_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TrxDistributionCustTrxLineSalesrepId",
+      "table": "RA_CUST_TRX_LINE_GL_DIST_ALL",
+      "column": "CUST_TRX_LINE_SALESREP_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TrxDistributionCustomerTrxId",
+      "table": "RA_CUST_TRX_LINE_GL_DIST_ALL",
+      "column": "CUSTOMER_TRX_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TrxDistributionCustomerTrxLineId",
+      "table": "RA_CUST_TRX_LINE_GL_DIST_ALL",
+      "column": "CUSTOMER_TRX_LINE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TrxDistributionEventId",
+      "table": "RA_CUST_TRX_LINE_GL_DIST_ALL",
+      "column": "EVENT_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TrxDistributionGlDate",
+      "table": "RA_CUST_TRX_LINE_GL_DIST_ALL",
+      "column": "GL_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TrxDistributionGlPostedDate",
+      "table": "RA_CUST_TRX_LINE_GL_DIST_ALL",
+      "column": "GL_POSTED_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TrxDistributionLastUpdateDate",
+      "table": "RA_CUST_TRX_LINE_GL_DIST_ALL",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": true
+    },
+    {
+      "name": "TrxDistributionLastUpdateLogin",
+      "table": "RA_CUST_TRX_LINE_GL_DIST_ALL",
+      "column": "LAST_UPDATE_LOGIN",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TrxDistributionLastUpdatedBy",
+      "table": "RA_CUST_TRX_LINE_GL_DIST_ALL",
+      "column": "LAST_UPDATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TrxDistributionLatestRecFlag",
+      "table": "RA_CUST_TRX_LINE_GL_DIST_ALL",
+      "column": "LATEST_REC_FLAG",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TrxDistributionObjectVersionNumber",
+      "table": "RA_CUST_TRX_LINE_GL_DIST_ALL",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TrxDistributionOrgId",
+      "table": "RA_CUST_TRX_LINE_GL_DIST_ALL",
+      "column": "ORG_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TrxDistributionOriginalGlDate",
+      "table": "RA_CUST_TRX_LINE_GL_DIST_ALL",
+      "column": "ORIGINAL_GL_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TrxDistributionPercent",
+      "table": "RA_CUST_TRX_LINE_GL_DIST_ALL",
+      "column": "PERCENT",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TrxDistributionPostRequestId",
+      "table": "RA_CUST_TRX_LINE_GL_DIST_ALL",
+      "column": "POST_REQUEST_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TrxDistributionPostingControlId",
+      "table": "RA_CUST_TRX_LINE_GL_DIST_ALL",
+      "column": "POSTING_CONTROL_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TrxDistributionProgramApplicationId",
+      "table": "RA_CUST_TRX_LINE_GL_DIST_ALL",
+      "column": "PROGRAM_APPLICATION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TrxDistributionProgramId",
+      "table": "RA_CUST_TRX_LINE_GL_DIST_ALL",
+      "column": "PROGRAM_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TrxDistributionProgramUpdateDate",
+      "table": "RA_CUST_TRX_LINE_GL_DIST_ALL",
+      "column": "PROGRAM_UPDATE_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TrxDistributionRaPostLoopNumber",
+      "table": "RA_CUST_TRX_LINE_GL_DIST_ALL",
+      "column": "RA_POST_LOOP_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TrxDistributionRecOffsetFlag",
+      "table": "RA_CUST_TRX_LINE_GL_DIST_ALL",
+      "column": "REC_OFFSET_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TrxDistributionRequestId",
+      "table": "RA_CUST_TRX_LINE_GL_DIST_ALL",
+      "column": "REQUEST_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TrxDistributionRevAdjClassTemp",
+      "table": "RA_CUST_TRX_LINE_GL_DIST_ALL",
+      "column": "REV_ADJ_CLASS_TEMP",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TrxDistributionRevenueAdjustmentId",
+      "table": "RA_CUST_TRX_LINE_GL_DIST_ALL",
+      "column": "REVENUE_ADJUSTMENT_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TrxDistributionRoundingCorrectionFlag",
+      "table": "RA_CUST_TRX_LINE_GL_DIST_ALL",
+      "column": "ROUNDING_CORRECTION_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TrxDistributionSetOfBooksId",
+      "table": "RA_CUST_TRX_LINE_GL_DIST_ALL",
+      "column": "SET_OF_BOOKS_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TrxDistributionTransferToCosting",
+      "table": "RA_CUST_TRX_LINE_GL_DIST_ALL",
+      "column": "TRANSFER_TO_COSTING",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TrxDistributionUserGeneratedFlag",
+      "table": "RA_CUST_TRX_LINE_GL_DIST_ALL",
+      "column": "USER_GENERATED_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "UserCreatedByPersonId",
+      "table": "PER_USERS",
+      "column": "PERSON_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "UserCreatedByUserGuid",
+      "table": "PER_USERS",
+      "column": "USER_GUID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "UserCreatedByUserId",
+      "table": "PER_USERS",
+      "column": "USER_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "UserCreatedByUsername",
+      "table": "PER_USERS",
+      "column": "USERNAME",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "UserUpdatedByPersonId",
+      "table": "PER_USERS",
+      "column": "PERSON_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "UserUpdatedByUserGuid",
+      "table": "PER_USERS",
+      "column": "USER_GUID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "UserUpdatedByUserId",
+      "table": "PER_USERS",
+      "column": "USER_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "UserUpdatedByUsername",
+      "table": "PER_USERS",
+      "column": "USERNAME",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    }
+  ],
+  "by_table": {
+    "FUN_BU_PERF_V": [
+      {
+        "attribute": "BusinessUnitBusinessUnitId",
+        "column": "BU_ID",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "EGP_CATEGORIES_VL": [
+      {
+        "attribute": "CategoryCategoryId",
+        "column": "CATEGORY_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "CategoryCategoryName",
+        "column": "CATEGORY_NAME",
+        "bicc": true,
+        "pk": false
+      }
+    ],
+    "RA_CUST_TRX_LINE_GL_DIST_ALL": [
+      {
+        "attribute": "CustTrxLineGlDistId",
+        "column": "CUST_TRX_LINE_GL_DIST_ID",
+        "bicc": true,
+        "pk": true
+      },
+      {
+        "attribute": "TrxDistributionAccountClass",
+        "column": "ACCOUNT_CLASS",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TrxDistributionAccountSetFlag",
+        "column": "ACCOUNT_SET_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TrxDistributionAcctdAmount",
+        "column": "ACCTD_AMOUNT",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TrxDistributionAmount",
+        "column": "AMOUNT",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TrxDistributionCodeCombinationId",
+        "column": "CODE_COMBINATION_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TrxDistributionCollectedTaxCcid",
+        "column": "COLLECTED_TAX_CCID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TrxDistributionCollectedTaxConcatSeg",
+        "column": "COLLECTED_TAX_CONCAT_SEG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TrxDistributionComments",
+        "column": "COMMENTS",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TrxDistributionConcatenatedSegments",
+        "column": "CONCATENATED_SEGMENTS",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TrxDistributionCreatedBy",
+        "column": "CREATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TrxDistributionCreationDate",
+        "column": "CREATION_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TrxDistributionCustTrxLineSalesrepId",
+        "column": "CUST_TRX_LINE_SALESREP_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TrxDistributionCustomerTrxId",
+        "column": "CUSTOMER_TRX_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TrxDistributionCustomerTrxLineId",
+        "column": "CUSTOMER_TRX_LINE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TrxDistributionEventId",
+        "column": "EVENT_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TrxDistributionGlDate",
+        "column": "GL_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TrxDistributionGlPostedDate",
+        "column": "GL_POSTED_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TrxDistributionLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TrxDistributionLastUpdateLogin",
+        "column": "LAST_UPDATE_LOGIN",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TrxDistributionLastUpdatedBy",
+        "column": "LAST_UPDATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TrxDistributionLatestRecFlag",
+        "column": "LATEST_REC_FLAG",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TrxDistributionObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TrxDistributionOrgId",
+        "column": "ORG_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TrxDistributionOriginalGlDate",
+        "column": "ORIGINAL_GL_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TrxDistributionPercent",
+        "column": "PERCENT",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TrxDistributionPostRequestId",
+        "column": "POST_REQUEST_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TrxDistributionPostingControlId",
+        "column": "POSTING_CONTROL_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TrxDistributionProgramApplicationId",
+        "column": "PROGRAM_APPLICATION_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TrxDistributionProgramId",
+        "column": "PROGRAM_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TrxDistributionProgramUpdateDate",
+        "column": "PROGRAM_UPDATE_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TrxDistributionRaPostLoopNumber",
+        "column": "RA_POST_LOOP_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TrxDistributionRecOffsetFlag",
+        "column": "REC_OFFSET_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TrxDistributionRequestId",
+        "column": "REQUEST_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TrxDistributionRevAdjClassTemp",
+        "column": "REV_ADJ_CLASS_TEMP",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TrxDistributionRevenueAdjustmentId",
+        "column": "REVENUE_ADJUSTMENT_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TrxDistributionRoundingCorrectionFlag",
+        "column": "ROUNDING_CORRECTION_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TrxDistributionSetOfBooksId",
+        "column": "SET_OF_BOOKS_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TrxDistributionTransferToCosting",
+        "column": "TRANSFER_TO_COSTING",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TrxDistributionUserGeneratedFlag",
+        "column": "USER_GENERATED_FLAG",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "EGP_SYSTEM_ITEMS_VL": [
+      {
+        "attribute": "ItemDescription",
+        "column": "DESCRIPTION",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ItemInventoryItemId",
+        "column": "INVENTORY_ITEM_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ItemItemNumber",
+        "column": "ITEM_NUMBER",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ItemOrganizationId",
+        "column": "ORGANIZATION_ID",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "GL_LEDGERS": [
+      {
+        "attribute": "LedgersChartOfAccountsId",
+        "column": "CHART_OF_ACCOUNTS_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "LedgersLedgerId",
+        "column": "LEDGER_ID",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "PER_USERS": [
+      {
+        "attribute": "ObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ObjectVersionNumber1",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "UserCreatedByPersonId",
+        "column": "PERSON_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "UserCreatedByUserGuid",
+        "column": "USER_GUID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "UserCreatedByUserId",
+        "column": "USER_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "UserCreatedByUsername",
+        "column": "USERNAME",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "UserUpdatedByPersonId",
+        "column": "PERSON_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "UserUpdatedByUserGuid",
+        "column": "USER_GUID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "UserUpdatedByUserId",
+        "column": "USER_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "UserUpdatedByUsername",
+        "column": "USERNAME",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "HR_ALL_ORGANIZATION_UNITS_F_VL": [
+      {
+        "attribute": "OrgUnitFrmSalesGrpEffectiveEndDate",
+        "column": "EFFECTIVE_END_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "OrgUnitFrmSalesGrpEffectiveStartDate",
+        "column": "EFFECTIVE_START_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "OrgUnitFrmSalesGrpName",
+        "column": "NAME",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "OrgUnitFrmSalesGrpOrganizationId",
+        "column": "ORGANIZATION_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "OrgUnitToSalesGrpEffectiveEndDate",
+        "column": "EFFECTIVE_END_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "OrgUnitToSalesGrpEffectiveStartDate",
+        "column": "EFFECTIVE_START_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "OrgUnitToSalesGrpName",
+        "column": "NAME",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "OrgUnitToSalesGrpOrganizationId",
+        "column": "ORGANIZATION_ID",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "PER_PERSON_NAMES_F_V": [
+      {
+        "attribute": "PersonCreatedByDisplayName",
+        "column": "DISPLAY_NAME",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PersonCreatedByEffectiveEndDate",
+        "column": "EFFECTIVE_END_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PersonCreatedByEffectiveStartDate",
+        "column": "EFFECTIVE_START_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PersonCreatedByPersonId",
+        "column": "PERSON_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PersonCreatedByPersonNameId",
+        "column": "PERSON_NAME_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PersonUpdatedByDisplayName",
+        "column": "DISPLAY_NAME",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PersonUpdatedByEffectiveEndDate",
+        "column": "EFFECTIVE_END_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PersonUpdatedByEffectiveStartDate",
+        "column": "EFFECTIVE_START_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PersonUpdatedByPersonId",
+        "column": "PERSON_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PersonUpdatedByPersonNameId",
+        "column": "PERSON_NAME_ID",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "AR_REVENUE_ADJUSTMENTS_ALL": [
+      {
+        "attribute": "RevAdjustmentAmount",
+        "column": "AMOUNT",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "RevAdjustmentAmountMode",
+        "column": "AMOUNT_MODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "RevAdjustmentApplicationDate",
+        "column": "APPLICATION_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "RevAdjustmentComments",
+        "column": "COMMENTS",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "RevAdjustmentCreatedBy",
+        "column": "CREATED_BY",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "RevAdjustmentCreationDate",
+        "column": "CREATION_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "RevAdjustmentCustomerTrxId",
+        "column": "CUSTOMER_TRX_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "RevAdjustmentFromCategoryId",
+        "column": "FROM_CATEGORY_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "RevAdjustmentFromCustTrxLineId",
+        "column": "FROM_CUST_TRX_LINE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "RevAdjustmentFromInventoryItemId",
+        "column": "FROM_INVENTORY_ITEM_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "RevAdjustmentFromResourceSalesrepId",
+        "column": "FROM_RESOURCE_SALESREP_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "RevAdjustmentFromSalesgroupId",
+        "column": "FROM_SALESGROUP_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "RevAdjustmentGlDate",
+        "column": "GL_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "RevAdjustmentLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "RevAdjustmentLastUpdateLogin",
+        "column": "LAST_UPDATE_LOGIN",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "RevAdjustmentLastUpdatedBy",
+        "column": "LAST_UPDATED_BY",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "RevAdjustmentLineSelectionMode",
+        "column": "LINE_SELECTION_MODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "RevAdjustmentObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "RevAdjustmentOrgId",
+        "column": "ORG_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "RevAdjustmentPercent",
+        "column": "PERCENT",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "RevAdjustmentProgramApplicationId",
+        "column": "PROGRAM_APPLICATION_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "RevAdjustmentProgramId",
+        "column": "PROGRAM_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "RevAdjustmentProgramUpdateDate",
+        "column": "PROGRAM_UPDATE_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "RevAdjustmentReasonCode",
+        "column": "REASON_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "RevAdjustmentRequestId",
+        "column": "REQUEST_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "RevAdjustmentRevenueAdjustmentId",
+        "column": "REVENUE_ADJUSTMENT_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "RevAdjustmentRevenueAdjustmentNumber",
+        "column": "REVENUE_ADJUSTMENT_NUMBER",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "RevAdjustmentSalesCreditType",
+        "column": "SALES_CREDIT_TYPE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "RevAdjustmentStatus",
+        "column": "STATUS",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "RevAdjustmentToCategoryId",
+        "column": "TO_CATEGORY_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "RevAdjustmentToCustTrxLineId",
+        "column": "TO_CUST_TRX_LINE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "RevAdjustmentToInventoryItemId",
+        "column": "TO_INVENTORY_ITEM_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "RevAdjustmentToResourceSalesrepId",
+        "column": "TO_RESOURCE_SALESREP_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "RevAdjustmentToSalesgroupId",
+        "column": "TO_SALESGROUP_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "RevAdjustmentType",
+        "column": "TYPE",
+        "bicc": true,
+        "pk": false
+      }
+    ]
+  }
+}

@@ -1,0 +1,553 @@
+{
+  "source": "ap_payment_schedules_all.md",
+  "source_hash": "7c3347ca5caf420316e2921a723e69dd",
+  "translated_at": "2026-03-25",
+  "items": [
+    {
+      "id": 1,
+      "br": "Visão Geral",
+      "en": "Overview",
+      "es": "Vision General"
+    },
+    {
+      "id": 2,
+      "br": "Armazena as parcelas de pagamento (payment schedules) de cada fatura do módulo Accounts Payable. Cada registro representa um vencimento (due date) com valor bruto, valor remanescente, descontos disponíveis e status de pagamento. Uma fatura pode ter uma ou mais parcelas, conforme a condição de pagamento (payment terms) aplicada. É a tabela central para gestão de vencimentos e seleção de faturas para pagamento.",
+      "en": "Stores the payment schedules of each invoice in the Accounts Payable module. Each record represents a due date with gross amount, remaining amount, available discounts, and payment status. An invoice may have one or more installments, depending on the payment terms applied. It is the central table for due date management and invoice selection for payment.",
+      "es": "Almacena las cuotas de pago (payment schedules) de cada factura del modulo Accounts Payable. Cada registro representa un vencimiento (due date) con valor bruto, valor remanente, descuentos disponibles y status de pago. Una factura puede tener una o mas cuotas, segun la condicion de pago (payment terms) aplicada. Es la tabla central para gestion de vencimientos y seleccion de facturas para pago."
+    },
+    {
+      "id": 3,
+      "br": "Sufixo _ALL",
+      "en": "_ALL Suffix",
+      "es": "Sufijo _ALL"
+    },
+    {
+      "id": 4,
+      "br": "O sufixo _ALL indica que a tabela armazena dados de todas as business units (multi-org). O filtro por ORG_ID é necessário para consultas por organização específica.",
+      "en": "The _ALL suffix indicates that the table stores data from all business units (multi-org). Filtering by ORG_ID is required for organization-specific queries.",
+      "es": "El sufijo _ALL indica que la tabla almacena datos de todas las business units (multi-org). El filtro por ORG_ID es necesario para consultas por organizacion especifica."
+    },
+    {
+      "id": 5,
+      "br": "Propósito de Negócio",
+      "en": "Business Purpose",
+      "es": "Proposito de Negocio"
+    },
+    {
+      "id": 6,
+      "br": "Esta tabela é utilizada nos seguintes processos:",
+      "en": "This table is used in the following processes:",
+      "es": "Esta tabla se utiliza en los siguientes procesos:"
+    },
+    {
+      "id": 7,
+      "br": "Cada parcela contém a data de vencimento calculada a partir da condição de pagamento.",
+      "en": "Each installment contains the due date calculated from the payment terms.",
+      "es": "Cada cuota contiene la fecha de vencimiento calculada a partir de la condicion de pago."
+    },
+    {
+      "id": 8,
+      "br": "O Payment Process Request consulta esta tabela para identificar parcelas elegíveis.",
+      "en": "The Payment Process Request queries this table to identify eligible installments.",
+      "es": "El Payment Process Request consulta esta tabla para identificar cuotas elegibles."
+    },
+    {
+      "id": 9,
+      "br": "Base para relatórios de aging (30/60/90/120 dias) por data de vencimento.",
+      "en": "Basis for aging reports (30/60/90/120 days) by due date.",
+      "es": "Base para reportes de aging (30/60/90/120 dias) por fecha de vencimiento."
+    },
+    {
+      "id": 10,
+      "br": "Armazena datas e percentuais de desconto por pagamento antecipado.",
+      "en": "Stores early payment discount dates and percentages.",
+      "es": "Almacena fechas y porcentajes de descuento por pago anticipado."
+    },
+    {
+      "id": 11,
+      "br": "O campo `AMOUNT_REMAINING` é atualizado a cada pagamento parcial ou total.",
+      "en": "The `AMOUNT_REMAINING` field is updated with each partial or full payment.",
+      "es": "El campo `AMOUNT_REMAINING` se actualiza con cada pago parcial o total."
+    },
+    {
+      "id": 12,
+      "br": "Base para projeção de desembolsos futuros por data de vencimento.",
+      "en": "Basis for projecting future disbursements by due date.",
+      "es": "Base para proyeccion de desembolsos futuros por fecha de vencimiento."
+    },
+    {
+      "id": 13,
+      "br": "Colunas Principais",
+      "en": "Key Columns",
+      "es": "Columnas Principales"
+    },
+    {
+      "id": 14,
+      "br": "Confiança",
+      "en": "Confidence",
+      "es": "Confianza"
+    },
+    {
+      "id": 15,
+      "br": "Escala de 0% a 100% — grau de certeza da descrição gerada por IA com base na documentação oficial Oracle (OEDMF/BICC Release 13/25A).",
+      "en": "Scale from 0% to 100% — degree of certainty of the AI-generated description based on official Oracle documentation (OEDMF/BICC Release 13/25A).",
+      "es": "Escala de 0% a 100% — grado de certeza de la descripcion generada por IA con base en la documentacion oficial Oracle (OEDMF/BICC Release 13/25A)."
+    },
+    {
+      "id": 16,
+      "br": "- 🟢 81–100% — Coluna presente na documentação oficial Oracle; nome, tipo e descrição confirmados.",
+      "en": "- 🟢 81–100% — Column present in official Oracle documentation; name, type, and description confirmed.",
+      "es": "- 🟢 81–100% — Columna presente en la documentacion oficial Oracle; nombre, tipo y descripcion confirmados."
+    },
+    {
+      "id": 17,
+      "br": "- 🟡 51–80% — Coluna inferida por naming convention ou padrão Oracle; tipo exato pode variar.",
+      "en": "- 🟡 51–80% — Column inferred by naming convention or Oracle standard; exact type may vary.",
+      "es": "- 🟡 51–80% — Columna inferida por naming convention o estandar Oracle; tipo exacto puede variar."
+    },
+    {
+      "id": 18,
+      "br": "- 🔴 0–50% — Existência ou tipo incertos; pode não existir no release atual; validar no ambiente.",
+      "en": "- 🔴 0–50% — Existence or type uncertain; may not exist in current release; validate in environment.",
+      "es": "- 🔴 0–50% — Existencia o tipo inciertos; puede no existir en el release actual; validar en el ambiente."
+    },
+    {
+      "id": 19,
+      "br": "Coluna",
+      "en": "Column",
+      "es": "Columna"
+    },
+    {
+      "id": 20,
+      "br": "Tipo",
+      "en": "Type",
+      "es": "Tipo"
+    },
+    {
+      "id": 21,
+      "br": "Nulo?",
+      "en": "Nullable?",
+      "es": "Nulo?"
+    },
+    {
+      "id": 22,
+      "br": "Categoria",
+      "en": "Category",
+      "es": "Categoria"
+    },
+    {
+      "id": 23,
+      "br": "Descrição",
+      "en": "Description",
+      "es": "Descripcion"
+    },
+    {
+      "id": 24,
+      "br": "PK/FK",
+      "en": "PK/FK",
+      "es": "PK/FK"
+    },
+    {
+      "id": 25,
+      "br": "Fatura à qual pertence a parcela",
+      "en": "Invoice to which the installment belongs",
+      "es": "Factura a la que pertenece la cuota"
+    },
+    {
+      "id": 26,
+      "br": "Número sequencial da parcela",
+      "en": "Installment sequential number",
+      "es": "Numero secuencial de la cuota"
+    },
+    {
+      "id": 27,
+      "br": "Data",
+      "en": "Date",
+      "es": "Fecha"
+    },
+    {
+      "id": 28,
+      "br": "Data de vencimento da parcela",
+      "en": "Installment due date",
+      "es": "Fecha de vencimiento de la cuota"
+    },
+    {
+      "id": 29,
+      "br": "Financeiro",
+      "en": "Financial",
+      "es": "Financiero"
+    },
+    {
+      "id": 30,
+      "br": "Valor bruto da parcela",
+      "en": "Gross installment amount",
+      "es": "Valor bruto de la cuota"
+    },
+    {
+      "id": 31,
+      "br": "Valor remanescente (não pago)",
+      "en": "Remaining amount (unpaid)",
+      "es": "Valor remanente (no pagado)"
+    },
+    {
+      "id": 32,
+      "br": "Status",
+      "en": "Status",
+      "es": "Status"
+    },
+    {
+      "id": 33,
+      "br": "Status do pagamento (Y=pago/N=pendente/P=parcial)",
+      "en": "Payment status (Y=paid/N=pending/P=partial)",
+      "es": "Status del pago (Y=pagado/N=pendiente/P=parcial)"
+    },
+    {
+      "id": 34,
+      "br": "Pagamento",
+      "en": "Payment",
+      "es": "Pago"
+    },
+    {
+      "id": 35,
+      "br": "Método de pagamento",
+      "en": "Payment method",
+      "es": "Metodo de pago"
+    },
+    {
+      "id": 36,
+      "br": "Prioridade de pagamento (1=alta, 99=baixa)",
+      "en": "Payment priority (1=high, 99=low)",
+      "es": "Prioridad de pago (1=alta, 99=baja)"
+    },
+    {
+      "id": 37,
+      "br": "Controle",
+      "en": "Control",
+      "es": "Control"
+    },
+    {
+      "id": 38,
+      "br": "Indica se a parcela está em hold (Y/N)",
+      "en": "Indicates whether the installment is on hold (Y/N)",
+      "es": "Indica si la cuota esta en hold (Y/N)"
+    },
+    {
+      "id": 39,
+      "br": "Desconto",
+      "en": "Discount",
+      "es": "Descuento"
+    },
+    {
+      "id": 40,
+      "br": "Data limite para desconto (1o nível)",
+      "en": "Discount deadline (1st tier)",
+      "es": "Fecha limite para descuento (1er nivel)"
+    },
+    {
+      "id": 41,
+      "br": "Valor de desconto disponível (1o nível)",
+      "en": "Available discount amount (1st tier)",
+      "es": "Valor de descuento disponible (1er nivel)"
+    },
+    {
+      "id": 42,
+      "br": "Data limite para desconto (2o nível)",
+      "en": "Discount deadline (2nd tier)",
+      "es": "Fecha limite para descuento (2do nivel)"
+    },
+    {
+      "id": 43,
+      "br": "Valor de desconto disponível (2o nível)",
+      "en": "Available discount amount (2nd tier)",
+      "es": "Valor de descuento disponible (2do nivel)"
+    },
+    {
+      "id": 44,
+      "br": "Data limite para desconto (3o nível)",
+      "en": "Discount deadline (3rd tier)",
+      "es": "Fecha limite para descuento (3er nivel)"
+    },
+    {
+      "id": 45,
+      "br": "Valor de desconto disponível (3o nível)",
+      "en": "Available discount amount (3rd tier)",
+      "es": "Valor de descuento disponible (3er nivel)"
+    },
+    {
+      "id": 46,
+      "br": "Valor de desconto remanescente",
+      "en": "Remaining discount amount",
+      "es": "Valor de descuento remanente"
+    },
+    {
+      "id": 47,
+      "br": "Valor bruto na moeda da fatura",
+      "en": "Gross amount in invoice currency",
+      "es": "Valor bruto en la moneda de la factura"
+    },
+    {
+      "id": 48,
+      "br": "Taxa de conversão entre moeda da fatura e pagamento",
+      "en": "Exchange rate between invoice and payment currency",
+      "es": "Tasa de conversion entre moneda de la factura y pago"
+    },
+    {
+      "id": 49,
+      "br": "Data de vencimento para future-dated payment",
+      "en": "Due date for future-dated payment",
+      "es": "Fecha de vencimiento para future-dated payment"
+    },
+    {
+      "id": 50,
+      "br": "Bancário",
+      "en": "Banking",
+      "es": "Bancario"
+    },
+    {
+      "id": 51,
+      "br": "Conta bancária do fornecedor (para EFT)",
+      "en": "Supplier bank account (for EFT)",
+      "es": "Cuenta bancaria del proveedor (para EFT)"
+    },
+    {
+      "id": 52,
+      "br": "Motivo de hold do Oracle Payments",
+      "en": "Oracle Payments hold reason",
+      "es": "Motivo de hold del Oracle Payments"
+    },
+    {
+      "id": 53,
+      "br": "Fornecedor",
+      "en": "Supplier",
+      "es": "Proveedor"
+    },
+    {
+      "id": 54,
+      "br": "Nome do fornecedor de remessa",
+      "en": "Remittance supplier name",
+      "es": "Nombre del proveedor de remesa"
+    },
+    {
+      "id": 55,
+      "br": "Site do fornecedor de remessa",
+      "en": "Remittance supplier site",
+      "es": "Site del proveedor de remesa"
+    },
+    {
+      "id": 56,
+      "br": "Business unit (multi-org)",
+      "en": "Business unit (multi-org)",
+      "es": "Business unit (multi-org)"
+    },
+    {
+      "id": 57,
+      "br": "Auditoria",
+      "en": "Audit",
+      "es": "Auditoria"
+    },
+    {
+      "id": 58,
+      "br": "Usuário que criou o registro",
+      "en": "User who created the record",
+      "es": "Usuario que creo el registro"
+    },
+    {
+      "id": 59,
+      "br": "Data/hora de criação",
+      "en": "Creation date/time",
+      "es": "Fecha/hora de creacion"
+    },
+    {
+      "id": 60,
+      "br": "Último usuário que alterou",
+      "en": "Last user who modified",
+      "es": "Ultimo usuario que modifico"
+    },
+    {
+      "id": 61,
+      "br": "Data/hora da última alteração",
+      "en": "Last modification date/time",
+      "es": "Fecha/hora de la ultima modificacion"
+    },
+    {
+      "id": 62,
+      "br": "Login da última sessão",
+      "en": "Last session login",
+      "es": "Login de la ultima sesion"
+    },
+    {
+      "id": 63,
+      "br": "ATTRIBUTE1–15",
+      "en": "ATTRIBUTE1–15",
+      "es": "ATTRIBUTE1–15"
+    },
+    {
+      "id": 64,
+      "br": "Atributos descritivos customizáveis por implementação",
+      "en": "Customizable descriptive attributes per implementation",
+      "es": "Atributos descriptivos personalizables por implementacion"
+    },
+    {
+      "id": 65,
+      "br": "Contexto do Descriptive Flexfield",
+      "en": "Descriptive Flexfield context",
+      "es": "Contexto del Descriptive Flexfield"
+    },
+    {
+      "id": 66,
+      "br": "Relacionamentos",
+      "en": "Relationships",
+      "es": "Relaciones"
+    },
+    {
+      "id": 67,
+      "br": "Tabelas-pai (FK de entrada)",
+      "en": "Parent Tables (inbound FK)",
+      "es": "Tablas padre (FK de entrada)"
+    },
+    {
+      "id": 68,
+      "br": "fatura",
+      "en": "invoice",
+      "es": "factura"
+    },
+    {
+      "id": 69,
+      "br": "método de pagamento",
+      "en": "payment method",
+      "es": "metodo de pago"
+    },
+    {
+      "id": 70,
+      "br": "conta bancária do fornecedor",
+      "en": "supplier bank account",
+      "es": "cuenta bancaria del proveedor"
+    },
+    {
+      "id": 71,
+      "br": "business unit",
+      "en": "business unit",
+      "es": "business unit"
+    },
+    {
+      "id": 72,
+      "br": "Tabelas-filha (FK de saída)",
+      "en": "Child Tables (outbound FK)",
+      "es": "Tablas hija (FK de salida)"
+    },
+    {
+      "id": 73,
+      "br": "ap_invoice_payments_all — via INVOICE_ID + PAYMENT_NUM (pagamentos aplicados à parcela)",
+      "en": "ap_invoice_payments_all — via INVOICE_ID + PAYMENT_NUM (payments applied to installment)",
+      "es": "ap_invoice_payments_all — via INVOICE_ID + PAYMENT_NUM (pagos aplicados a la cuota)"
+    },
+    {
+      "id": 74,
+      "br": "Uso Típico",
+      "en": "Typical Usage",
+      "es": "Uso Tipico"
+    },
+    {
+      "id": 75,
+      "br": "Parcelas pendentes por data de vencimento",
+      "en": "Pending installments by due date",
+      "es": "Cuotas pendientes por fecha de vencimiento"
+    },
+    {
+      "id": 76,
+      "br": "Aging de contas a pagar",
+      "en": "Accounts payable aging",
+      "es": "Aging de cuentas por pagar"
+    },
+    {
+      "id": 77,
+      "br": "Filtros comuns",
+      "en": "Common Filters",
+      "es": "Filtros comunes"
+    },
+    {
+      "id": 78,
+      "br": "Parcelas não pagas",
+      "en": "Unpaid installments",
+      "es": "Cuotas no pagadas"
+    },
+    {
+      "id": 79,
+      "br": "Pendentes (inclui parcial)",
+      "en": "Pending (includes partial)",
+      "es": "Pendientes (incluye parcial)"
+    },
+    {
+      "id": 80,
+      "br": "Vencidas",
+      "en": "Overdue",
+      "es": "Vencidas"
+    },
+    {
+      "id": 81,
+      "br": "Sem hold",
+      "en": "No hold",
+      "es": "Sin hold"
+    },
+    {
+      "id": 82,
+      "br": "Observações",
+      "en": "Notes",
+      "es": "Observaciones"
+    },
+    {
+      "id": 83,
+      "br": "A PK composta é INVOICE_ID + PAYMENT_NUM.",
+      "en": "The composite PK is INVOICE_ID + PAYMENT_NUM.",
+      "es": "La PK compuesta es INVOICE_ID + PAYMENT_NUM."
+    },
+    {
+      "id": 84,
+      "br": "O campo AMOUNT_REMAINING é atualizado automaticamente a cada pagamento parcial ou total, refletindo o saldo em aberto.",
+      "en": "The AMOUNT_REMAINING field is automatically updated with each partial or full payment, reflecting the outstanding balance.",
+      "es": "El campo AMOUNT_REMAINING se actualiza automaticamente con cada pago parcial o total, reflejando el saldo pendiente."
+    },
+    {
+      "id": 85,
+      "br": "A tabela suporta até três níveis de desconto financeiro com datas e valores específicos (DISCOUNT_DATE, SECOND_DISCOUNT_DATE, THIRD_DISCOUNT_DATE).",
+      "en": "The table supports up to three tiers of financial discount with specific dates and amounts (DISCOUNT_DATE, SECOND_DISCOUNT_DATE, THIRD_DISCOUNT_DATE).",
+      "es": "La tabla soporta hasta tres niveles de descuento financiero con fechas y valores especificos (DISCOUNT_DATE, SECOND_DISCOUNT_DATE, THIRD_DISCOUNT_DATE)."
+    },
+    {
+      "id": 86,
+      "br": "O campo HOLD_FLAG = 'Y' impede que a parcela seja selecionada no Payment Process Request.",
+      "en": "The HOLD_FLAG = 'Y' field prevents the installment from being selected in the Payment Process Request.",
+      "es": "El campo HOLD_FLAG = 'Y' impide que la cuota sea seleccionada en el Payment Process Request."
+    },
+    {
+      "id": 87,
+      "br": "A coluna PAYMENT_PRIORITY influencia a ordem de seleção no PPR — valores menores = prioridade maior.",
+      "en": "The PAYMENT_PRIORITY column influences the selection order in PPR — lower values = higher priority.",
+      "es": "La columna PAYMENT_PRIORITY influencia el orden de seleccion en el PPR — valores menores = mayor prioridad."
+    },
+    {
+      "id": 88,
+      "br": "A tabela possui Descriptive Flexfields (DFF) via colunas ATTRIBUTE1–15 para customizações por implementação.",
+      "en": "The table has Descriptive Flexfields (DFF) via ATTRIBUTE1–15 columns for per-implementation customizations.",
+      "es": "La tabla posee Descriptive Flexfields (DFF) via columnas ATTRIBUTE1–15 para personalizaciones por implementacion."
+    },
+    {
+      "id": 89,
+      "br": "Referências",
+      "en": "References",
+      "es": "Referencias"
+    },
+    {
+      "id": 90,
+      "br": "[Oracle Docs — AP_PAYMENT_SCHEDULES_ALL](https://docs.oracle.com/en/cloud/saas/financials/25a/oedmf/appaymentschedulesall-10047.html)",
+      "en": "[Oracle Docs — AP_PAYMENT_SCHEDULES_ALL](https://docs.oracle.com/en/cloud/saas/financials/25a/oedmf/appaymentschedulesall-10047.html)",
+      "es": "[Oracle Docs — AP_PAYMENT_SCHEDULES_ALL](https://docs.oracle.com/en/cloud/saas/financials/25a/oedmf/appaymentschedulesall-10047.html)"
+    },
+    {
+      "id": 91,
+      "br": "ap-module-data-dictionary — Dossiê do módulo AP",
+      "en": "ap-module-data-dictionary — AP module dossier",
+      "es": "ap-module-data-dictionary — Dossier del modulo AP"
+    }
+  ]
+}

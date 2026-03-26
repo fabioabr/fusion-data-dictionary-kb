@@ -1,0 +1,1371 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playground de Componentes — Design System v2</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet">
+    <style>
+
+/* ====== DESIGN TOKENS (dark — default) ====== */
+:root {
+    --primary: #5BA4D9;
+    --primary-dark: #3182B1;
+    --primary-light: rgba(91, 164, 217, 0.12);
+    --secondary: #5BB8C4;
+    --success: #6ABF3B;
+    --success-light: rgba(106, 191, 59, 0.12);
+    --success-border: rgba(106, 191, 59, 0.3);
+    --warning: #F4AC00;
+    --warning-light: rgba(244, 172, 0, 0.12);
+    --warning-border: rgba(244, 172, 0, 0.3);
+    --danger: #E85D54;
+    --danger-light: rgba(232, 93, 84, 0.12);
+    --danger-border: rgba(232, 93, 84, 0.3);
+    --info: #38BDF8;
+    --info-light: rgba(56, 189, 248, 0.12);
+    --info-border: rgba(56, 189, 248, 0.3);
+    --bg: #0f1319;
+    --card-bg: #1a1f2e;
+    --text: #e2e8f0;
+    --text-muted: #8b9ab5;
+    --border: #2a3244;
+    --purple: #9B96FF;
+    --purple-light: rgba(155, 150, 255, 0.12);
+    --orange: #FF9473;
+    --teal: #2DD4BF;
+    --header-bg: linear-gradient(135deg, #1a2332 0%, #15202e 50%, #1a2838 100%);
+    --card-header-bg: #141924;
+    --th-bg: #141924;
+    --th-bg-hover: #1e2638;
+    --card-shadow: 0 2px 12px rgba(91, 164, 217, 0.1), 0 1px 4px rgba(0,0,0,0.3);
+    --progress-track: #2a3244;
+    --alert-warning-text: #f0c040;
+    --alert-danger-text: #f08a84;
+    --alert-info-text: #6ecbf5;
+    --alert-success-text: #8ad45a;
+    --pill-success-text: #8ad45a;
+    --pill-info-text: #6ecbf5;
+    --pill-warning-text: #f0c040;
+}
+
+/* ====== LIGHT THEME ====== */
+[data-theme="light"] {
+    --primary: #3182B1;
+    --primary-dark: #256a94;
+    --primary-light: rgba(49, 130, 177, 0.1);
+    --secondary: #418F9D;
+    --success: #4C7E1B;
+    --success-light: rgba(76, 126, 27, 0.08);
+    --success-border: rgba(76, 126, 27, 0.25);
+    --warning: #F4AC00;
+    --warning-light: rgba(244, 172, 0, 0.08);
+    --warning-border: rgba(244, 172, 0, 0.25);
+    --danger: #C72F25;
+    --danger-light: rgba(199, 47, 37, 0.08);
+    --danger-border: rgba(199, 47, 37, 0.25);
+    --info: #0EA5E8;
+    --info-light: rgba(14, 165, 232, 0.08);
+    --info-border: rgba(14, 165, 232, 0.25);
+    --bg: #dde2e8;
+    --card-bg: #ffffff;
+    --text: #212B37;
+    --text-muted: #6E829F;
+    --border: #e2e8f0;
+    --purple: #7B76FE;
+    --purple-light: rgba(123, 118, 254, 0.08);
+    --orange: #FE7C58;
+    --teal: #00D8D8;
+    --header-bg: linear-gradient(135deg, #3182B1 0%, #256a94 50%, #418F9D 100%);
+    --card-header-bg: rgba(49, 130, 177, 0.2);
+    --th-bg: rgba(49, 130, 177, 0.2);
+    --th-bg-hover: rgba(49, 130, 177, 0.23);
+    --card-shadow: 0 2px 8px rgba(49, 130, 177, 0.24), 0 1px 3px rgba(0,0,0,0.1);
+    --progress-track: #e9ecef;
+    --alert-warning-text: #8a6600;
+    --alert-danger-text: #a52820;
+    --alert-info-text: #0878a8;
+    --alert-success-text: #3a6112;
+    --pill-success-text: #3a6112;
+    --pill-info-text: #0878a8;
+    --pill-warning-text: #9a6d00;
+}
+
+/* ====== RESET ====== */
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, a, img, ul, ol, li,
+header, footer, nav, section, article, aside, button, input, select, textarea,
+table, tr, td, th, form, label, fieldset, legend { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Poppins', sans-serif; background: var(--bg); color: var(--text); line-height: 1.5; }
+.container { max-width: 1400px; margin: 0 auto; padding: 0 24px; }
+
+/* ====== HEADER ====== */
+.header { background: linear-gradient(135deg, #1a2332 0%, #15202e 50%, #1a2838 100%); color: white; padding: 36px 0 0; position: relative; overflow: hidden; }
+.header::before { content: ''; position: absolute; top: -50%; right: -10%; width: 500px; height: 500px; background: rgba(255,255,255,0.03); border-radius: 50%; z-index: 0; }
+.header-content { position: relative; z-index: 1; }
+.header-top { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 16px; margin-bottom: 8px; }
+.header-left { display: flex; align-items: center; gap: 16px; }
+.header-logo { height: 40px; }
+.logo-light { display: none; }
+.logo-dark { display: inline-block; }
+.header h1 { font-size: 1.5rem; font-weight: 700; letter-spacing: -0.5px; }
+.header .subtitle { font-size: 0.95rem; opacity: 0.85; font-weight: 300; margin-top: 2px; }
+.header-right { display: flex; flex-direction: column; align-items: flex-end; gap: 8px; }
+.header-badge { background: rgba(255,255,255,0.15); padding: 6px 14px; border-radius: 8px; font-size: 0.78rem; display: flex; align-items: center; gap: 6px; backdrop-filter: blur(10px); color: white; }
+
+/* ====== LANGUAGE SELECTOR ====== */
+.lang-btn { display: inline-flex; align-items: center; gap: 5px; background: rgba(255,255,255,0.08); border: 2px solid transparent; border-radius: 8px; padding: 4px 10px 4px 8px; font-family: 'Poppins', sans-serif; font-size: 0.72rem; font-weight: 600; letter-spacing: 0.3px; color: rgba(255,255,255,0.55); cursor: pointer; transition: all 0.25s; line-height: 1; }
+.lang-btn svg { flex-shrink: 0; }
+.lang-btn:hover { background: rgba(255,255,255,0.18); color: rgba(255,255,255,0.9); }
+.lang-btn.active { border-color: #ffffff; background: rgba(255,255,255,0.22); color: #ffffff; box-shadow: 0 0 8px rgba(255,255,255,0.25); }
+[data-theme="light"] .lang-btn { background: rgba(255,255,255,0.12); color: rgba(255,255,255,0.5); }
+[data-theme="light"] .lang-btn:hover { background: rgba(255,255,255,0.28); color: rgba(255,255,255,0.95); }
+[data-theme="light"] .lang-btn.active { border-color: #ffffff; background: rgba(255,255,255,0.32); color: #ffffff; box-shadow: 0 0 12px rgba(255,255,255,0.4); }
+[data-theme="light"] .stat-card { background: #eaf1f7; }
+[data-theme="light"] .intro-text { background: #eaf1f7; }
+[data-theme="light"] .search-input { background: #eaf1f7; }
+
+/* ====== TABS ====== */
+.tabs-nav { display: flex; gap: 4px; margin-top: 36px; overflow-x: auto; }
+.tab-btn { padding: 10px 24px; background: rgba(255,255,255,0.1); border: none; border-radius: 10px 10px 0 0; color: rgba(255,255,255,0.7); font-family: 'Poppins', sans-serif; font-size: 0.85rem; font-weight: 500; cursor: pointer; transition: all 0.2s; display: flex; align-items: center; gap: 8px; white-space: nowrap; }
+.tab-btn:hover { background: rgba(255,255,255,0.18); color: white; }
+.tab-btn.active { background: var(--bg); color: var(--primary); font-weight: 600; }
+.tab-btn i { font-size: 1.1rem; }
+.tab-count { background: rgba(255,255,255,0.2); padding: 1px 8px; border-radius: 10px; font-size: 0.68rem; font-weight: 600; }
+.tab-btn.active .tab-count { background: var(--primary-light); color: var(--primary); }
+.tab-content { display: none; padding-top: 24px; padding-bottom: 32px; }
+.tab-content.active { display: block; }
+
+/* ====== STAT CARDS ====== */
+.stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; margin-bottom: 28px; }
+.stat-card { background: var(--card-bg); border-radius: 12px; padding: 18px 20px; box-shadow: var(--card-shadow); border: 1px solid var(--border); display: flex; align-items: center; gap: 14px; transition: box-shadow 0.2s, border-color 0.2s, background 0.2s; }
+.stat-card:hover { box-shadow: var(--card-shadow); border-color: var(--primary); background: var(--th-bg-hover); }
+.stat-card-icon { width: 44px; height: 44px; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 1.3rem; color: white; flex-shrink: 0; }
+.stat-card-info { flex: 1; }
+.stat-card-number { font-size: 1.12rem; font-weight: 700; line-height: 1.1; }
+.stat-card-label { font-size: 0.72rem; color: var(--text-muted); font-weight: 500; text-transform: uppercase; letter-spacing: 0.3px; }
+
+/* ====== INTRO TEXT ====== */
+.intro-text { font-size: 0.88rem; color: var(--text-muted); line-height: 1.6; margin-bottom: 24px; padding: 16px 20px; background: var(--card-bg); border-radius: 12px; border: 1px solid var(--border); border-left: 3px solid var(--primary); box-shadow: var(--card-shadow); }
+
+/* ====== CARDS ====== */
+.card { background: var(--card-bg); border-radius: 12px; border: 1px solid var(--border); box-shadow: 0 2px 8px rgba(0,0,0,0.03); overflow: hidden; margin-bottom: 20px; transition: box-shadow 0.2s, border-color 0.2s; }
+.card:hover { box-shadow: var(--card-shadow); border-color: var(--primary); }
+.card:hover > .card-header { background: var(--th-bg-hover); }
+.card-header { display: flex; align-items: center; gap: 10px; padding: 14px 18px; border-bottom: 1px solid var(--border); background: var(--card-header-bg); }
+.card-header-icon { width: 32px; height: 32px; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 1rem; color: white; flex-shrink: 0; }
+.card-title { font-weight: 600; font-size: 0.95rem; flex: 1; }
+.card-badge { padding: 2px 10px; border-radius: 12px; font-size: 0.7rem; font-weight: 600; white-space: nowrap; }
+.card-body { padding: 18px; }
+.card-body.collapsed { display: none; }
+
+/* ====== ALERTS ====== */
+.alert { padding: 12px 16px; border-radius: 8px; font-size: 0.82rem; display: flex; align-items: center; gap: 10px; margin-bottom: 10px; border: 1px solid; }
+.alert i { font-size: 1.1rem; flex-shrink: 0; }
+.alert-warning { background: var(--warning-light); border-color: var(--warning-border); color: var(--alert-warning-text); }
+.alert-danger { background: var(--danger-light); border-color: var(--danger-border); color: var(--alert-danger-text); }
+.alert-info { background: var(--info-light); border-color: var(--info-border); color: var(--alert-info-text); }
+.alert-success { background: var(--success-light); border-color: var(--success-border); color: var(--alert-success-text); }
+
+/* ====== PILLS ====== */
+.pill { display: inline-block; padding: 2px 10px; border-radius: 12px; font-size: 0.7rem; font-weight: 600; }
+.pill-success { background: var(--success-light); color: var(--pill-success-text); border: 1px solid var(--success-border); }
+.pill-info { background: var(--info-light); color: var(--pill-info-text); border: 1px solid var(--info-border); }
+.pill-warning { background: var(--warning-light); color: var(--pill-warning-text); border: 1px solid var(--warning-border); }
+.pill-danger { background: var(--danger-light); color: var(--alert-danger-text); border: 1px solid var(--danger-border); }
+
+/* ====== TABLES ====== */
+.table-wrapper { overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; font-size: 0.82rem; }
+th { text-align: left; padding: 10px 14px; background: var(--th-bg); font-weight: 600; border-bottom: 2px solid var(--border); font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.3px; color: var(--text-muted); transition: background 0.2s; }
+thead tr:hover th { background: var(--th-bg-hover); }
+td { padding: 10px 14px; border-bottom: 1px solid var(--border); }
+tr:hover { background: var(--primary-light); }
+code { background: var(--bg); padding: 2px 6px; border-radius: 4px; font-size: 0.78rem; border: 1px solid var(--border); }
+
+/* ====== PHASE FLOW ====== */
+.phase-flow { display: flex; align-items: center; justify-content: center; flex-wrap: wrap; gap: 8px; padding: 24px 0; }
+.phase-box { padding: 14px 22px; border-radius: 10px; font-weight: 600; font-size: 0.85rem; text-align: center; min-width: 140px; }
+.phase-arrow { font-size: 1.4rem; color: var(--text-muted); }
+
+/* ====== SEARCH / FILTER ====== */
+.search-container { position: relative; margin-bottom: 24px; }
+.search-icon { position: absolute; left: 16px; top: 50%; transform: translateY(-50%); color: var(--text-muted); font-size: 1.1rem; }
+.search-input { width: 100%; padding: 12px 16px 12px 44px; background: var(--card-bg); border: 1px solid var(--border); border-radius: 12px; color: var(--text); font-family: 'Poppins', sans-serif; font-size: 0.88rem; outline: none; transition: border-color 0.2s; }
+.search-input:focus { border-color: var(--primary); }
+.search-input::placeholder { color: var(--text-muted); }
+
+/* ====== NO RESULTS ====== */
+.no-results { text-align: center; padding: 48px 24px; color: var(--text-muted); font-size: 0.9rem; }
+.no-results i { font-size: 2.5rem; display: block; margin-bottom: 12px; }
+
+/* ====== BG UTILITY CLASSES ====== */
+.bg-primary { background: var(--primary); }
+.bg-success { background: var(--success); }
+.bg-info { background: var(--info); }
+.bg-warning { background: var(--warning); }
+.bg-danger { background: var(--danger); }
+.bg-secondary { background: var(--secondary); }
+.bg-purple { background: var(--purple); }
+.bg-orange { background: var(--orange); }
+.bg-teal { background: var(--teal); }
+
+/* ====== SECTION HEADERS ====== */
+.section { margin-top: 32px; }
+.section-header { display: flex; align-items: center; gap: 12px; margin-bottom: 20px; padding-bottom: 12px; border-bottom: 2px solid var(--border); }
+.section-icon { width: 36px; height: 36px; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 1.1rem; color: white; flex-shrink: 0; }
+.section-title { font-size: 1.15rem; font-weight: 600; }
+.section-count { background: var(--bg); padding: 4px 12px; border-radius: 20px; font-size: 0.78rem; font-weight: 600; color: var(--text-muted); }
+
+/* ====== FOOTER ====== */
+.footer { background: linear-gradient(135deg, #1a2332 0%, #15202e 50%, #1a2838 100%); color: white; padding: 36px 0; position: relative; overflow: hidden; margin-top: 0; }
+.footer::before { content: ''; position: absolute; bottom: -50%; left: -10%; width: 500px; height: 500px; background: rgba(255,255,255,0.03); border-radius: 50%; z-index: 0; }
+.footer-content { position: relative; z-index: 1; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 24px; }
+.footer-left { display: flex; align-items: center; gap: 16px; }
+.footer-avatar { width: 48px; height: 48px; border-radius: 12px; background: rgba(255,255,255,0.15); display: flex; align-items: center; justify-content: center; font-size: 1.1rem; font-weight: 700; backdrop-filter: blur(10px); }
+.footer-author-name { font-size: 0.95rem; font-weight: 600; }
+.footer-author-role { font-size: 0.78rem; opacity: 0.7; }
+.footer-author-date { font-size: 0.72rem; opacity: 0.55; }
+.footer-right { text-align: right; }
+.footer-doc-title { font-size: 0.85rem; font-weight: 500; opacity: 0.9; }
+.footer-doc-detail { font-size: 0.72rem; opacity: 0.6; margin-top: 2px; }
+.footer-seal { display: flex; align-items: center; gap: 8px; margin-top: 20px; padding-top: 16px; border-top: 1px solid rgba(255,255,255,0.12); font-size: 0.7rem; opacity: 0.5; justify-content: center; }
+.footer-seal i { font-size: 1rem; }
+
+/* ====== PLAYGROUND-SPECIFIC ====== */
+.playground-section { margin-bottom: 36px; }
+.playground-label { font-size: 0.72rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; color: var(--text-muted); margin-bottom: 10px; padding: 4px 10px; background: var(--bg); display: inline-block; border-radius: 6px; border: 1px dashed var(--border); }
+.grid-2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+.color-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); gap: 12px; }
+.color-swatch { border-radius: 10px; overflow: hidden; border: 1px solid var(--border); background: var(--card-bg); }
+.color-swatch-block { height: 60px; }
+.color-swatch-info { padding: 8px 10px; }
+.color-swatch-name { font-size: 0.75rem; font-weight: 600; }
+.color-swatch-hex { font-size: 0.65rem; color: var(--text-muted); font-family: monospace; }
+
+/* ====== BACK TO TOP ====== */
+.back-to-top {
+    position: fixed;
+    bottom: 32px;
+    right: 32px;
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    background: var(--primary);
+    color: white;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    box-shadow: 0 4px 16px rgba(91, 164, 217, 0.35);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: opacity 0.3s, visibility 0.3s, transform 0.3s, background 0.2s;
+    z-index: 999;
+}
+.back-to-top.visible {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+.back-to-top:hover {
+    background: var(--primary-dark);
+    box-shadow: 0 6px 20px rgba(91, 164, 217, 0.5);
+}
+
+/* ====== PRINT ====== */
+@media print {
+    body { background: white; color: #212B37; }
+    .header { background: #3182B1 !important; }
+    .tab-btn { display: none; }
+    .tab-content { display: block !important; page-break-inside: avoid; }
+    .card { break-inside: avoid; }
+    .card-body.collapsed { display: block !important; }
+    .search-container { display: none; }
+}
+@media (max-width: 768px) {
+    .stats-grid { grid-template-columns: 1fr; }
+    .header h1 { font-size: 1.2rem; }
+    .tabs-nav { flex-wrap: wrap; }
+    .tab-btn { padding: 8px 14px; font-size: 0.78rem; }
+    .phase-flow { flex-direction: column; }
+    .grid-2 { grid-template-columns: 1fr; }
+}
+
+    </style>
+</head>
+<body>
+
+<!-- ============================================================ -->
+<!-- HEADER                                                        -->
+<!-- ============================================================ -->
+<header class="header">
+    <div class="container">
+        <div class="header-content">
+            <div class="header-top">
+                <div class="header-left">
+                    <img class="header-logo logo-dark" src="../../../assets/main/logos/logo-dark.png" alt="Logo">
+                    <img class="header-logo logo-light" src="../../../assets/main/logos/logo-light.png" alt="Logo">
+                    <div>
+                        <h1><i class="ri-palette-line" style="margin-right:8px"></i><span data-i18n="header_title">Playground de Componentes — Design System v2</span></h1>
+                        <div class="subtitle" data-i18n="header_subtitle">Catalogo visual de referencia dos componentes HTML do Banco Patria</div>
+                        <div style="display:flex; gap:8px; align-items:center; margin-top:10px;">
+                            <div class="header-badge"><i class="ri-code-s-slash-line"></i> Design System v2</div>
+                            <div class="header-badge"><i class="ri-calendar-line"></i> 25/03/2026</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="header-right">
+                    <div style="display:flex; gap:8px; align-items:center;">
+                        <button class="lang-btn active" onclick="switchLang('pt')" id="lang-pt" title="Portugues (BR)">
+                            <svg width="20" height="14" viewBox="0 0 20 14"><rect width="20" height="14" rx="1" fill="#009739"/><polygon points="10,1.5 19,7 10,12.5 1,7" fill="#FEDD00"/><circle cx="10" cy="7" r="3.2" fill="#012169"/><rect x="7.8" y="6.2" width="4.4" height="0.4" rx="0.2" fill="#fff" transform="rotate(-8 10 7)"/></svg>
+                            <span>PT</span>
+                        </button>
+                        <button class="lang-btn" onclick="switchLang('en')" id="lang-en" title="English (US)">
+                            <svg width="20" height="14" viewBox="0 0 20 14"><rect width="20" height="14" rx="1" fill="#B22234"/><rect y="1.08" width="20" height="1.08" fill="#fff"/><rect y="3.23" width="20" height="1.08" fill="#fff"/><rect y="5.38" width="20" height="1.08" fill="#fff"/><rect y="7.54" width="20" height="1.08" fill="#fff"/><rect y="9.69" width="20" height="1.08" fill="#fff"/><rect y="11.85" width="20" height="1.08" fill="#fff"/><rect width="8" height="7.54" fill="#3C3B6E"/></svg>
+                            <span>EN</span>
+                        </button>
+                        <button class="lang-btn" onclick="switchLang('es')" id="lang-es" title="Espanol">
+                            <svg width="20" height="14" viewBox="0 0 20 14"><rect width="20" height="14" rx="1" fill="#AA151B"/><rect y="3" width="20" height="8" fill="#F1BF00"/></svg>
+                            <span>ES</span>
+                        </button>
+                        <div class="header-badge" style="border:none;cursor:pointer" onclick="toggleTheme()" title="Alternar tema">
+                            <i id="theme-icon" class="ri-sun-line"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Tabs -->
+            <div class="tabs-nav">
+                <button class="tab-btn active" onclick="switchTab('tokens')"><i class="ri-palette-line"></i> <span data-i18n="tab_tokens">Tokens &amp; Cores</span></button>
+                <button class="tab-btn" onclick="switchTab('header-nav')"><i class="ri-layout-top-line"></i> <span data-i18n="tab_header">Header &amp; Nav</span></button>
+                <button class="tab-btn" onclick="switchTab('cards')"><i class="ri-layout-card-line"></i> <span data-i18n="tab_cards">Cards &amp; Conteudo</span> <span class="tab-count">6</span></button>
+                <button class="tab-btn" onclick="switchTab('busca')"><i class="ri-search-line"></i> <span data-i18n="tab_search">Busca &amp; Filtros</span></button>
+                <button class="tab-btn" onclick="switchTab('phase')"><i class="ri-flow-chart"></i> <span data-i18n="tab_phase">Phase Flow</span></button>
+                <button class="tab-btn" onclick="switchTab('footer-tab')"><i class="ri-layout-bottom-line"></i> Footer</button>
+                <button class="tab-btn" onclick="switchTab('i18n')"><i class="ri-translate-2"></i> i18n</button>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- ============================================================ -->
+<!-- MAIN CONTENT                                                  -->
+<!-- ============================================================ -->
+<div class="container" style="padding-top:0; padding-bottom:32px;">
+
+<!-- ================================================================== -->
+<!-- ABA 1: TOKENS & CORES                                              -->
+<!-- ================================================================== -->
+<div id="tab-tokens" class="tab-content active">
+
+    <!-- COLOR PALETTE -->
+    <div class="playground-section">
+        <div class="playground-label">Referencia: Paleta de Cores (Design Tokens)</div>
+        <div class="color-grid">
+            <div class="color-swatch">
+                <div class="color-swatch-block" style="background: var(--primary);"></div>
+                <div class="color-swatch-info"><div class="color-swatch-name">Primary</div><div class="color-swatch-hex">--primary</div></div>
+            </div>
+            <div class="color-swatch">
+                <div class="color-swatch-block" style="background: var(--primary-dark);"></div>
+                <div class="color-swatch-info"><div class="color-swatch-name">Primary Dark</div><div class="color-swatch-hex">--primary-dark</div></div>
+            </div>
+            <div class="color-swatch">
+                <div class="color-swatch-block" style="background: var(--secondary);"></div>
+                <div class="color-swatch-info"><div class="color-swatch-name">Secondary</div><div class="color-swatch-hex">--secondary</div></div>
+            </div>
+            <div class="color-swatch">
+                <div class="color-swatch-block" style="background: var(--success);"></div>
+                <div class="color-swatch-info"><div class="color-swatch-name">Success</div><div class="color-swatch-hex">--success</div></div>
+            </div>
+            <div class="color-swatch">
+                <div class="color-swatch-block" style="background: var(--warning);"></div>
+                <div class="color-swatch-info"><div class="color-swatch-name">Warning</div><div class="color-swatch-hex">--warning</div></div>
+            </div>
+            <div class="color-swatch">
+                <div class="color-swatch-block" style="background: var(--danger);"></div>
+                <div class="color-swatch-info"><div class="color-swatch-name">Danger</div><div class="color-swatch-hex">--danger</div></div>
+            </div>
+            <div class="color-swatch">
+                <div class="color-swatch-block" style="background: var(--info);"></div>
+                <div class="color-swatch-info"><div class="color-swatch-name">Info</div><div class="color-swatch-hex">--info</div></div>
+            </div>
+            <div class="color-swatch">
+                <div class="color-swatch-block" style="background: var(--purple);"></div>
+                <div class="color-swatch-info"><div class="color-swatch-name">Purple</div><div class="color-swatch-hex">--purple</div></div>
+            </div>
+            <div class="color-swatch">
+                <div class="color-swatch-block" style="background: var(--orange);"></div>
+                <div class="color-swatch-info"><div class="color-swatch-name">Orange</div><div class="color-swatch-hex">--orange</div></div>
+            </div>
+            <div class="color-swatch">
+                <div class="color-swatch-block" style="background: var(--teal);"></div>
+                <div class="color-swatch-info"><div class="color-swatch-name">Teal</div><div class="color-swatch-hex">--teal</div></div>
+            </div>
+            <div class="color-swatch">
+                <div class="color-swatch-block" style="background: var(--card-bg);"></div>
+                <div class="color-swatch-info"><div class="color-swatch-name">Card BG</div><div class="color-swatch-hex">--card-bg</div></div>
+            </div>
+            <div class="color-swatch">
+                <div class="color-swatch-block" style="background: var(--bg);"></div>
+                <div class="color-swatch-info"><div class="color-swatch-name">Background</div><div class="color-swatch-hex">--bg</div></div>
+            </div>
+            <div class="color-swatch">
+                <div class="color-swatch-block" style="background: var(--card-header-bg);"></div>
+                <div class="color-swatch-info"><div class="color-swatch-name">Card Header BG</div><div class="color-swatch-hex">--card-header-bg</div></div>
+            </div>
+            <div class="color-swatch">
+                <div class="color-swatch-block" style="background: var(--th-bg);"></div>
+                <div class="color-swatch-info"><div class="color-swatch-name">Table Header BG</div><div class="color-swatch-hex">--th-bg</div></div>
+            </div>
+            <div class="color-swatch">
+                <div class="color-swatch-block" style="background: var(--th-bg-hover);"></div>
+                <div class="color-swatch-info"><div class="color-swatch-name">Table Header Hover</div><div class="color-swatch-hex">--th-bg-hover</div></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- BG HELPER CLASSES -->
+    <div class="playground-section">
+        <div class="playground-label">Classes utilitarias .bg-*</div>
+        <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+            <div style="padding: 10px 18px; border-radius: 8px; font-size: 0.75rem; font-weight: 600; color: white;" class="bg-primary">.bg-primary</div>
+            <div style="padding: 10px 18px; border-radius: 8px; font-size: 0.75rem; font-weight: 600; color: white;" class="bg-success">.bg-success</div>
+            <div style="padding: 10px 18px; border-radius: 8px; font-size: 0.75rem; font-weight: 600; color: white;" class="bg-info">.bg-info</div>
+            <div style="padding: 10px 18px; border-radius: 8px; font-size: 0.75rem; font-weight: 600; color: white;" class="bg-warning">.bg-warning</div>
+            <div style="padding: 10px 18px; border-radius: 8px; font-size: 0.75rem; font-weight: 600; color: white;" class="bg-danger">.bg-danger</div>
+            <div style="padding: 10px 18px; border-radius: 8px; font-size: 0.75rem; font-weight: 600; color: white;" class="bg-secondary">.bg-secondary</div>
+            <div style="padding: 10px 18px; border-radius: 8px; font-size: 0.75rem; font-weight: 600; color: white;" class="bg-purple">.bg-purple</div>
+            <div style="padding: 10px 18px; border-radius: 8px; font-size: 0.75rem; font-weight: 600; color: white;" class="bg-orange">.bg-orange</div>
+            <div style="padding: 10px 18px; border-radius: 8px; font-size: 0.75rem; font-weight: 600; color: white;" class="bg-teal">.bg-teal</div>
+        </div>
+    </div>
+
+    <!-- CARD SHADOW TOKEN -->
+    <div class="playground-section">
+        <div class="playground-label">Token: --card-shadow (hover nos cards para ver)</div>
+        <div class="grid-2">
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-header-icon bg-primary"><i class="ri-eye-line"></i></div>
+                    <div class="card-title">Passe o mouse aqui</div>
+                </div>
+                <div class="card-body">
+                    <p style="font-size:0.82rem;color:var(--text-muted)">O card usa <code>--card-shadow</code> no hover e <code>--card-header-bg</code> no header.</p>
+                </div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-card-icon bg-info"><i class="ri-flashlight-line"></i></div>
+                <div class="stat-card-info">
+                    <div class="stat-card-number" style="color:var(--info)">Hover</div>
+                    <div class="stat-card-label">Stat card com --card-shadow</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ================================================================== -->
+<!-- ABA 2: HEADER & NAV                                                -->
+<!-- ================================================================== -->
+<div id="tab-header-nav" class="tab-content">
+
+    <!-- HEADER ANATOMY -->
+    <div class="playground-section">
+        <div class="playground-label">Componente: Header (anatomia)</div>
+        <div class="intro-text">
+            O header utiliza <code>--header-bg</code> (gradiente), contem o titulo (<code>h1</code>), subtitulo (<code>.subtitle</code>),
+            badges (<code>.header-badge</code>), seletor de idioma (<code>.lang-btn</code>) e tabs (<code>.tab-btn</code>) com contadores (<code>.tab-count</code>).
+            O circulo decorativo usa <code>::before</code> com <code>rgba(255,255,255,0.03)</code>.
+        </div>
+    </div>
+
+    <!-- HEADER BADGES -->
+    <div class="playground-section">
+        <div class="playground-label">Componente: Header Badges</div>
+        <div class="card">
+            <div class="card-body" style="display:flex;gap:12px;flex-wrap:wrap;background:var(--card-header-bg);">
+                <div class="header-badge" style="color:var(--text)"><i class="ri-flow-chart"></i> Badge com icone</div>
+                <div class="header-badge" style="color:var(--text)"><i class="ri-file-list-3-line"></i> Versao 2.0</div>
+                <div class="header-badge" style="color:var(--text)"><i class="ri-calendar-line"></i> 25/03/2026</div>
+                <div class="header-badge" style="color:var(--text);border:none;cursor:pointer"><i class="ri-sun-line"></i></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- LANGUAGE SELECTOR -->
+    <div class="playground-section">
+        <div class="playground-label">Componente: Language Selector (.lang-btn)</div>
+        <div class="card">
+            <div class="card-body" style="display:flex;gap:12px;flex-wrap:wrap;background:var(--card-header-bg);">
+                <button class="lang-btn active" style="color:white;border-color:var(--primary)">
+                    <svg width="20" height="14" viewBox="0 0 20 14"><rect width="20" height="14" rx="1" fill="#009739"/><polygon points="10,1.5 19,7 10,12.5 1,7" fill="#FEDD00"/><circle cx="10" cy="7" r="3.2" fill="#012169"/><rect x="7.8" y="6.2" width="4.4" height="0.4" rx="0.2" fill="#fff" transform="rotate(-8 10 7)"/></svg>
+                    <span>PT (ativo)</span>
+                </button>
+                <button class="lang-btn" style="color:var(--text-muted)">
+                    <svg width="20" height="14" viewBox="0 0 20 14"><rect width="20" height="14" rx="1" fill="#B22234"/><rect y="1.08" width="20" height="1.08" fill="#fff"/><rect y="3.23" width="20" height="1.08" fill="#fff"/><rect y="5.38" width="20" height="1.08" fill="#fff"/><rect y="7.54" width="20" height="1.08" fill="#fff"/><rect y="9.69" width="20" height="1.08" fill="#fff"/><rect y="11.85" width="20" height="1.08" fill="#fff"/><rect width="8" height="7.54" fill="#3C3B6E"/></svg>
+                    <span>EN (inativo)</span>
+                </button>
+                <button class="lang-btn" style="color:var(--text-muted)">
+                    <svg width="20" height="14" viewBox="0 0 20 14"><rect width="20" height="14" rx="1" fill="#AA151B"/><rect y="3" width="20" height="8" fill="#F1BF00"/></svg>
+                    <span>ES (inativo)</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- TABS -->
+    <div class="playground-section">
+        <div class="playground-label">Componente: Tabs (.tab-btn + .tab-count)</div>
+        <div class="card">
+            <div class="card-body" style="background:var(--card-header-bg);display:flex;gap:4px;flex-wrap:wrap;">
+                <button class="tab-btn active" style="background:var(--bg);color:var(--primary)"><i class="ri-information-line"></i> Aba Ativa</button>
+                <button class="tab-btn" style="color:var(--text-muted)"><i class="ri-book-2-line"></i> Modulo <span class="tab-count" style="background:var(--border)">27</span></button>
+                <button class="tab-btn" style="color:var(--text-muted)"><i class="ri-money-dollar-circle-line"></i> Financeiro <span class="tab-count" style="background:var(--border)">58</span></button>
+                <button class="tab-btn" style="color:var(--text-muted)"><i class="ri-team-line"></i> RH <span class="tab-count" style="background:var(--border)">925</span></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- SECTION HEADERS -->
+    <div class="playground-section">
+        <div class="playground-label">Componente: Section Headers</div>
+        <div class="section" style="margin-top: 0;">
+            <div class="section-header">
+                <div class="section-icon bg-primary"><i class="ri-dashboard-3-line"></i></div>
+                <div class="section-title">Secao com icone Primary</div>
+                <div class="section-count">12 itens</div>
+            </div>
+        </div>
+        <div class="section" style="margin-top: 16px;">
+            <div class="section-header">
+                <div class="section-icon bg-warning"><i class="ri-error-warning-line"></i></div>
+                <div class="section-title">Secao com icone Warning</div>
+                <div class="section-count">5 pendencias</div>
+            </div>
+        </div>
+        <div class="section" style="margin-top: 16px;">
+            <div class="section-header">
+                <div class="section-icon bg-danger"><i class="ri-bug-line"></i></div>
+                <div class="section-title">Secao com icone Danger</div>
+                <div class="section-count">2 criticos</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ================================================================== -->
+<!-- ABA 3: CARDS & CONTEUDO                                            -->
+<!-- ================================================================== -->
+<div id="tab-cards" class="tab-content">
+
+    <!-- STAT CARDS -->
+    <div class="playground-section">
+        <div class="playground-label">Componente: Stat Cards (.stat-card)</div>
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-card-icon bg-primary"><i class="ri-database-2-line"></i></div>
+                <div class="stat-card-info">
+                    <div class="stat-card-number" style="color:var(--primary)">1285</div>
+                    <div class="stat-card-label">Total de Registros</div>
+                </div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-card-icon bg-info"><i class="ri-apps-line"></i></div>
+                <div class="stat-card-info">
+                    <div class="stat-card-number" style="color:var(--info)">5</div>
+                    <div class="stat-card-label">Modulos Ativos</div>
+                </div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-card-icon bg-success"><i class="ri-shield-check-line"></i></div>
+                <div class="stat-card-info">
+                    <div class="stat-card-number" style="color:var(--success)">77%</div>
+                    <div class="stat-card-label">Confianca Media</div>
+                </div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-card-icon bg-warning"><i class="ri-error-warning-line"></i></div>
+                <div class="stat-card-info">
+                    <div class="stat-card-number" style="color:var(--warning)">3</div>
+                    <div class="stat-card-label">Itens com Atencao</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- INTRO TEXT -->
+    <div class="playground-section">
+        <div class="playground-label">Componente: Intro Text (.intro-text)</div>
+        <div class="intro-text">
+            <strong>Sobre este componente</strong> &mdash; O <code>.intro-text</code> e um card com borda lateral esquerda acentuada (<code>border-left: 3px solid var(--primary)</code>).
+            Usado para introducoes e contextualizacoes no topo de secoes. Combina com <code>data-i18n</code> para traducao automatica.
+        </div>
+    </div>
+
+    <!-- CARDS -->
+    <div class="playground-section">
+        <div class="playground-label">Componente: Cards (.card) com variantes de badge</div>
+        <div class="grid-2">
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-header-icon bg-success"><i class="ri-shield-check-line"></i></div>
+                    <div class="card-title">Card com Badge de Sucesso</div>
+                    <div class="card-badge" style="background: var(--success-light); color: var(--success);">Aprovado</div>
+                </div>
+                <div class="card-body">
+                    <p style="font-size: 0.85rem; color: var(--text-muted);">Conteudo de exemplo dentro de um card. O header usa <code>--card-header-bg</code> e no hover muda para <code>--th-bg-hover</code>.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <div class="card-header-icon bg-danger"><i class="ri-alarm-warning-line"></i></div>
+                    <div class="card-title">Card com Badge de Perigo</div>
+                    <div class="card-badge" style="background: var(--danger-light); color: var(--danger);">Critico</div>
+                </div>
+                <div class="card-body">
+                    <p style="font-size: 0.85rem; color: var(--text-muted);">Exemplo de card com variacao de cor no badge e icone do header. As combinacoes sao livres entre os tokens disponiveis.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- BADGE VARIANTS -->
+    <div class="playground-section">
+        <div class="playground-label">Referencia: Todas as variantes de Card Badge</div>
+        <div class="card">
+            <div class="card-body">
+                <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+                    <span class="card-badge" style="background: var(--primary-light); color: var(--primary);">Primary</span>
+                    <span class="card-badge" style="background: var(--success-light); color: var(--success);">Success</span>
+                    <span class="card-badge" style="background: var(--warning-light); color: var(--warning);">Warning</span>
+                    <span class="card-badge" style="background: var(--danger-light); color: var(--danger);">Danger</span>
+                    <span class="card-badge" style="background: var(--info-light); color: var(--info);">Info</span>
+                    <span class="card-badge" style="background: var(--purple-light); color: var(--purple);">Purple</span>
+                    <span class="card-badge" style="background: rgba(255,148,115,0.12); color: var(--orange);">Orange</span>
+                    <span class="card-badge" style="background: rgba(45,212,191,0.12); color: var(--teal);">Teal</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ALERTS -->
+    <div class="playground-section">
+        <div class="playground-label">Componente: Alertas (.alert-*)</div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-header-icon bg-warning"><i class="ri-alarm-warning-line"></i></div>
+                <div class="card-title">Alertas e Notificacoes</div>
+            </div>
+            <div class="card-body">
+                <div class="alert alert-success">
+                    <i class="ri-checkbox-circle-line"></i>
+                    <span><strong>Sucesso:</strong> Deploy realizado com exito no ambiente de homologacao.</span>
+                </div>
+                <div class="alert alert-info">
+                    <i class="ri-information-line"></i>
+                    <span><strong>Info:</strong> Nova versao da API disponivel para testes — v2.4.0.</span>
+                </div>
+                <div class="alert alert-warning">
+                    <i class="ri-error-warning-line"></i>
+                    <span><strong>Atencao:</strong> 3 dependencias estao com versao desatualizada ha mais de 60 dias.</span>
+                </div>
+                <div class="alert alert-danger">
+                    <i class="ri-close-circle-line"></i>
+                    <span><strong>Critico:</strong> Pipeline de CI/CD falhando no stage de integracao desde 15/03.</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PILLS -->
+    <div class="playground-section">
+        <div class="playground-label">Componente: Pills (.pill-*)</div>
+        <div class="card">
+            <div class="card-body">
+                <div style="display: flex; gap: 10px; flex-wrap: wrap; align-items: center;">
+                    <span class="pill pill-success">Alta Confianca</span>
+                    <span class="pill pill-info">Media Confianca</span>
+                    <span class="pill pill-warning">Baixa Confianca</span>
+                    <span class="pill pill-danger">Muito Baixa</span>
+                </div>
+                <p style="font-size:0.78rem;color:var(--text-muted);margin-top:12px">
+                    Pills sao badges inline com <code>.pill</code> + <code>.pill-success</code>, <code>.pill-info</code>, <code>.pill-warning</code> ou <code>.pill-danger</code>.
+                    Usadas para indicadores de confianca, status inline e contadores adicionais (ex: <span class="pill pill-info">+3</span>).
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- TABLE -->
+    <div class="playground-section">
+        <div class="playground-label">Componente: Table (.table-wrapper + table)</div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-header-icon bg-primary"><i class="ri-table-line"></i></div>
+                <div class="card-title">Tabela de Exemplo</div>
+                <div class="card-badge" style="background:var(--primary-light);color:var(--primary)">5 registros</div>
+            </div>
+            <div class="card-body">
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th style="width:25%">Nome do Objeto</th>
+                                <th style="width:35%">Descricao</th>
+                                <th style="width:10%">Confianca</th>
+                                <th style="width:20%">Tabelas</th>
+                                <th style="width:10%">Atributos</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><div style="font-weight:600;color:var(--primary);font-size:0.85rem">JournalHeaderPVO</div><div style="font-size:0.68rem;color:var(--text-muted)">FscmTopModelAM.FinGl...</div></td>
+                                <td style="color:var(--text-muted);font-size:0.82rem">Cabecalho de lancamentos contabeis</td>
+                                <td style="text-align:center"><span class="pill pill-success">90%</span></td>
+                                <td><span style="font-size:0.72rem;color:var(--text-muted);font-family:monospace">GL_JE_HEADERS, GL_JE_BATCHES</span></td>
+                                <td style="text-align:center">95</td>
+                            </tr>
+                            <tr>
+                                <td><div style="font-weight:600;color:var(--primary);font-size:0.85rem">InvoiceHeaderPVO</div><div style="font-size:0.68rem;color:var(--text-muted)">FscmTopModelAM.FinAp...</div></td>
+                                <td style="color:var(--text-muted);font-size:0.82rem">Faturas de fornecedores (cabecalho)</td>
+                                <td style="text-align:center"><span class="pill pill-success">88%</span></td>
+                                <td><span style="font-size:0.72rem;color:var(--text-muted);font-family:monospace">AP_INVOICES_ALL <span class="pill pill-info">+2</span></span></td>
+                                <td style="text-align:center">142</td>
+                            </tr>
+                            <tr>
+                                <td><div style="font-weight:600;color:var(--primary);font-size:0.85rem">EncumbrancePVO</div><div style="font-size:0.68rem;color:var(--text-muted)">FscmTopModelAM.FinGl...</div></td>
+                                <td style="color:var(--text-muted);font-size:0.82rem">Tipos de encumbrance (reserva orcamentaria)</td>
+                                <td style="text-align:center"><span class="pill pill-info">75%</span></td>
+                                <td><span style="font-size:0.72rem;color:var(--text-muted);font-family:monospace">GL_ENCUMBRANCE_TYPES_B</span></td>
+                                <td style="text-align:center">26</td>
+                            </tr>
+                            <tr>
+                                <td><div style="font-weight:600;color:var(--primary);font-size:0.85rem">PaymentBatchPVO</div><div style="font-size:0.68rem;color:var(--text-muted)">FscmTopModelAM.FinAp...</div></td>
+                                <td style="color:var(--text-muted);font-size:0.82rem">Lotes de pagamento — contas a pagar</td>
+                                <td style="text-align:center"><span class="pill pill-warning">60%</span></td>
+                                <td><span style="font-size:0.72rem;color:var(--text-muted);font-family:monospace">AP_PAYMENT_BATCHES</span></td>
+                                <td style="text-align:center">38</td>
+                            </tr>
+                            <tr>
+                                <td><div style="font-weight:600;color:var(--primary);font-size:0.85rem">CustomLookupPVO</div><div style="font-size:0.68rem;color:var(--text-muted)">FscmTopModelAM.Setup...</div></td>
+                                <td style="color:var(--text-muted);font-size:0.82rem">Lookup generico — nome tecnico ambiguo</td>
+                                <td style="text-align:center"><span class="pill pill-danger">45%</span></td>
+                                <td><span style="font-size:0.72rem;color:var(--text-muted);font-family:monospace">FND_LOOKUPS</span></td>
+                                <td style="text-align:center">12</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ================================================================== -->
+<!-- ABA 4: BUSCA & FILTROS                                             -->
+<!-- ================================================================== -->
+<div id="tab-busca" class="tab-content">
+
+    <!-- SEARCH INPUT -->
+    <div class="playground-section">
+        <div class="playground-label">Componente: Search (.search-container)</div>
+        <div class="search-container">
+            <i class="ri-search-line search-icon"></i>
+            <input type="text" class="search-input" placeholder="Buscar PVO, tabela ou descricao..." oninput="filterPlayground(this.value)" id="search-playground">
+        </div>
+    </div>
+
+    <!-- GROUP CARDS (expandido) -->
+    <div class="playground-section" id="playground-groups">
+        <div class="playground-label">Componente: Group Card (.group-card) — expansivel</div>
+
+        <div class="card group-card" data-group="Lancamentos Contabeis">
+            <div class="card-header" onclick="toggleGroup(this)" style="cursor:pointer">
+                <div class="card-header-icon bg-primary"><i class="ri-folder-3-line"></i></div>
+                <div class="card-title">Lancamentos Contabeis</div>
+                <div class="card-badge" style="background:var(--primary-light);color:var(--primary)">8 PVOs</div>
+                <i class="ri-arrow-down-s-line group-toggle" style="color:var(--text-muted);font-size:1.2rem;transition:transform 0.2s;"></i>
+            </div>
+            <div class="card-body">
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th style="width:30%">View Object (PVO)</th>
+                                <th style="width:40%">Descricao</th>
+                                <th style="width:10%">Conf.</th>
+                                <th style="width:20%">Tabelas</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="vo-row" data-vo="JournalBatchPVO" data-tables="GL_JE_BATCHES" data-desc="Lotes de lancamentos contabeis">
+                                <td><div style="font-weight:600;color:var(--primary);font-size:0.85rem">JournalBatchPVO</div></td>
+                                <td style="color:var(--text-muted);font-size:0.82rem">Lotes de lancamentos contabeis</td>
+                                <td style="text-align:center"><span class="pill pill-success">90%</span></td>
+                                <td><span style="font-size:0.72rem;color:var(--text-muted);font-family:monospace">GL_JE_BATCHES</span></td>
+                            </tr>
+                            <tr class="vo-row" data-vo="JournalHeaderPVO" data-tables="GL_JE_HEADERS" data-desc="Cabecalho de lancamentos">
+                                <td><div style="font-weight:600;color:var(--primary);font-size:0.85rem">JournalHeaderPVO</div></td>
+                                <td style="color:var(--text-muted);font-size:0.82rem">Cabecalho de lancamentos</td>
+                                <td style="text-align:center"><span class="pill pill-success">88%</span></td>
+                                <td><span style="font-size:0.72rem;color:var(--text-muted);font-family:monospace">GL_JE_HEADERS</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="card group-card" data-group="Plano de Contas">
+            <div class="card-header" onclick="toggleGroup(this)" style="cursor:pointer">
+                <div class="card-header-icon bg-success"><i class="ri-folder-3-line"></i></div>
+                <div class="card-title">Plano de Contas</div>
+                <div class="card-badge" style="background:var(--success-light);color:var(--success)">4 PVOs</div>
+                <i class="ri-arrow-down-s-line group-toggle" style="color:var(--text-muted);font-size:1.2rem;transition:transform 0.2s;transform:rotate(-90deg)"></i>
+            </div>
+            <div class="card-body collapsed">
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th style="width:30%">View Object (PVO)</th>
+                                <th style="width:40%">Descricao</th>
+                                <th style="width:10%">Conf.</th>
+                                <th style="width:20%">Tabelas</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="vo-row" data-vo="ChartOfAccountsPVO" data-tables="GL_CODE_COMBINATIONS" data-desc="Estrutura do plano de contas">
+                                <td><div style="font-weight:600;color:var(--primary);font-size:0.85rem">ChartOfAccountsPVO</div></td>
+                                <td style="color:var(--text-muted);font-size:0.82rem">Estrutura do plano de contas</td>
+                                <td style="text-align:center"><span class="pill pill-info">75%</span></td>
+                                <td><span style="font-size:0.72rem;color:var(--text-muted);font-family:monospace">GL_CODE_COMBINATIONS</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="card group-card" data-group="Lookups e Configuracao">
+            <div class="card-header" onclick="toggleGroup(this)" style="cursor:pointer">
+                <div class="card-header-icon bg-warning"><i class="ri-folder-3-line"></i></div>
+                <div class="card-title">Lookups e Configuracao</div>
+                <div class="card-badge" style="background:var(--warning-light);color:var(--warning)">2 PVOs</div>
+                <i class="ri-arrow-down-s-line group-toggle" style="color:var(--text-muted);font-size:1.2rem;transition:transform 0.2s;transform:rotate(-90deg)"></i>
+            </div>
+            <div class="card-body collapsed">
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th style="width:30%">View Object (PVO)</th>
+                                <th style="width:40%">Descricao</th>
+                                <th style="width:10%">Conf.</th>
+                                <th style="width:20%">Tabelas</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="vo-row" data-vo="SetupLookupPVO" data-tables="FND_LOOKUPS" data-desc="Tabela de lookups genericos">
+                                <td><div style="font-weight:600;color:var(--primary);font-size:0.85rem">SetupLookupPVO</div></td>
+                                <td style="color:var(--text-muted);font-size:0.82rem">Tabela de lookups genericos</td>
+                                <td style="text-align:center"><span class="pill pill-danger">45%</span></td>
+                                <td><span style="font-size:0.72rem;color:var(--text-muted);font-family:monospace">FND_LOOKUPS</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- NO RESULTS -->
+    <div class="playground-section">
+        <div class="playground-label">Componente: No Results (.no-results)</div>
+        <div class="no-results" id="no-results-playground" style="display:none">
+            <i class="ri-search-line"></i>
+            <div data-i18n="no_results">Nenhum resultado encontrado</div>
+        </div>
+        <div class="card">
+            <div class="card-body">
+                <p style="font-size:0.82rem;color:var(--text-muted)">O componente <code>.no-results</code> aparece quando a busca nao retorna resultados. Digite algo na busca acima que nao exista para ve-lo em acao.</p>
+                <div class="no-results" style="border:1px dashed var(--border);border-radius:12px;margin-top:12px">
+                    <i class="ri-search-line"></i>
+                    <div>Nenhum resultado encontrado (preview estatico)</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ================================================================== -->
+<!-- ABA 5: PHASE FLOW                                                  -->
+<!-- ================================================================== -->
+<div id="tab-phase" class="tab-content">
+
+    <!-- PHASE FLOW -->
+    <div class="playground-section">
+        <div class="playground-label">Componente: Phase Flow (.phase-flow + .phase-box + .phase-arrow)</div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-header-icon bg-purple"><i class="ri-flow-chart"></i></div>
+                <div class="card-title">Pipeline de Extracao</div>
+                <div class="card-badge" style="background:var(--purple-light);color:var(--purple)">4 fases</div>
+            </div>
+            <div class="card-body">
+                <div class="phase-flow">
+                    <div class="phase-box" style="background:var(--primary-light);color:var(--primary);border:1px solid var(--primary)">
+                        <i class="ri-cloud-line"></i><br>Oracle Fusion<br><span style="font-size:0.7rem;font-weight:400">SaaS</span>
+                    </div>
+                    <div class="phase-arrow">&rarr;</div>
+                    <div class="phase-box" style="background:var(--info-light);color:var(--info);border:1px solid var(--info)">
+                        <i class="ri-database-2-line"></i><br>BICC Extract<br><span style="font-size:0.7rem;font-weight:400">PVOs &rarr; CSV</span>
+                    </div>
+                    <div class="phase-arrow">&rarr;</div>
+                    <div class="phase-box" style="background:var(--purple-light);color:var(--purple);border:1px solid var(--purple)">
+                        <i class="ri-folders-line"></i><br>Cloud Storage<br><span style="font-size:0.7rem;font-weight:400">GCS Bucket</span>
+                    </div>
+                    <div class="phase-arrow">&rarr;</div>
+                    <div class="phase-box" style="background:var(--success-light);color:var(--success);border:1px solid var(--success)">
+                        <i class="ri-bar-chart-box-line"></i><br>BigQuery<br><span style="font-size:0.7rem;font-weight:400">Bronze Layer</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PHASE FLOW - PIPELINE ADR -->
+    <div class="playground-section">
+        <div class="playground-label">Exemplo: Pipeline de Amadurecimento de Documentos</div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-header-icon bg-success"><i class="ri-file-transfer-line"></i></div>
+                <div class="card-title">Pipeline de Documentos (ADR-001)</div>
+                <div class="card-badge" style="background:var(--success-light);color:var(--success)">4 fases</div>
+            </div>
+            <div class="card-body">
+                <div class="phase-flow">
+                    <div class="phase-box" style="background:var(--warning-light);color:var(--warning);border:1px solid var(--warning)">
+                        <i class="ri-draft-line"></i><br>.txt<br><span style="font-size:0.7rem;font-weight:400">Draft</span>
+                    </div>
+                    <div class="phase-arrow">&rarr;</div>
+                    <div class="phase-box" style="background:var(--info-light);color:var(--info);border:1px solid var(--info)">
+                        <i class="ri-file-edit-line"></i><br>.beta.md<br><span style="font-size:0.7rem;font-weight:400">Front matter leve</span>
+                    </div>
+                    <div class="phase-arrow">&rarr;</div>
+                    <div class="phase-box" style="background:var(--primary-light);color:var(--primary);border:1px solid var(--primary)">
+                        <i class="ri-file-text-line"></i><br>.md<br><span style="font-size:0.7rem;font-weight:400">Front matter rico</span>
+                    </div>
+                    <div class="phase-arrow">&rarr;</div>
+                    <div class="phase-box" style="background:var(--success-light);color:var(--success);border:1px solid var(--success)">
+                        <i class="ri-presentation-line"></i><br>.html<br><span style="font-size:0.7rem;font-weight:400">Apresentacao</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ================================================================== -->
+<!-- ABA 6: FOOTER                                                      -->
+<!-- ================================================================== -->
+<div id="tab-footer-tab" class="tab-content">
+
+    <div class="playground-section">
+        <div class="playground-label">Componente: Footer (.footer + .footer-content + .footer-seal)</div>
+        <div class="intro-text">
+            O footer utiliza o mesmo gradiente do header (<code>--header-bg</code>) e possui tres areas: <code>.footer-left</code> (avatar + autor),
+            <code>.footer-right</code> (titulo do doc + detalhes) e <code>.footer-seal</code> (linha inferior com selo).
+        </div>
+    </div>
+
+    <div class="playground-section">
+        <div class="playground-label">Preview: Footer completo</div>
+        <!-- Embedded footer preview -->
+        <div class="footer" style="border-radius:12px;overflow:hidden;">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-left">
+                        <div class="footer-avatar">
+                            <i class="ri-user-line"></i>
+                        </div>
+                        <div>
+                            <div class="footer-author-name" data-i18n="footer_author">Equipe de Dados &amp; Arquitetura</div>
+                            <div class="footer-author-role" data-i18n="footer_role">Data Engineering &bull; Patria Investimentos</div>
+                            <div class="footer-author-date" data-i18n="footer_date">Gerado em 25/03/2026</div>
+                        </div>
+                    </div>
+                    <div class="footer-right">
+                        <div class="footer-doc-title" data-i18n="footer_doc_title">Playground de Componentes — Design System v2</div>
+                        <div class="footer-doc-detail" data-i18n="footer_doc_detail">Catalogo de referencia visual &mdash; Banco Patria</div>
+                    </div>
+                </div>
+                <div class="footer-seal">
+                    <i class="ri-shield-check-line"></i>
+                    <span data-i18n="footer_seal">Documento gerado automaticamente &mdash; Design System v2 &mdash; Banco Patria</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ================================================================== -->
+<!-- ABA 7: i18n                                                        -->
+<!-- ================================================================== -->
+<div id="tab-i18n" class="tab-content">
+
+    <div class="playground-section">
+        <div class="playground-label">Sistema: i18n (data-i18n + switchLang)</div>
+        <div class="intro-text">
+            O sistema de traducao usa atributos <code>data-i18n</code> nos elementos HTML e um dicionario JS (<code>T</code>) com chaves para cada idioma (pt, en, es).
+            A funcao <code>switchLang(lang)</code> percorre todos os elementos com <code>data-i18n</code> e atualiza o <code>innerHTML</code>.
+            Placeholders usam <code>data-i18n-placeholder</code> e tooltips usam <code>data-i18n-title</code>.
+        </div>
+    </div>
+
+    <div class="playground-section">
+        <div class="playground-label">Exemplo: Elementos traduzidos (use o seletor de idioma no header)</div>
+        <div class="card">
+            <div class="card-header">
+                <div class="card-header-icon bg-info"><i class="ri-translate-2"></i></div>
+                <div class="card-title">Exemplos de data-i18n</div>
+            </div>
+            <div class="card-body">
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Atributo</th>
+                                <th>Chave</th>
+                                <th>Resultado (troque o idioma para ver)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><code>data-i18n</code></td>
+                                <td><code>i18n_example_title</code></td>
+                                <td><span data-i18n="i18n_example_title">Titulo do Documento</span></td>
+                            </tr>
+                            <tr>
+                                <td><code>data-i18n</code></td>
+                                <td><code>i18n_example_desc</code></td>
+                                <td><span data-i18n="i18n_example_desc">Esta descricao muda conforme o idioma selecionado no header.</span></td>
+                            </tr>
+                            <tr>
+                                <td><code>data-i18n-placeholder</code></td>
+                                <td><code>search_placeholder</code></td>
+                                <td><input type="text" class="search-input" style="max-width:300px;padding-left:12px" data-i18n-placeholder="search_placeholder" placeholder="Buscar PVO, tabela ou descricao..." readonly></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="alert alert-info" style="margin-top:16px">
+                    <i class="ri-information-line"></i>
+                    <span>
+                        <strong>Como usar:</strong> Adicione <code>data-i18n="chave"</code> no elemento HTML.
+                        No JS, adicione a chave no dicionario <code>T</code> com traducoes para <code>pt</code>, <code>en</code> e <code>es</code>.
+                        Chame <code>switchLang('en')</code> para trocar o idioma.
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</div><!-- /.container -->
+
+<!-- ============================================================ -->
+<!-- FOOTER REAL                                                    -->
+<!-- ============================================================ -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-left">
+                <div class="footer-avatar">
+                    <i class="ri-user-line"></i>
+                </div>
+                <div>
+                    <div class="footer-author-name" data-i18n="footer_author">Equipe de Dados &amp; Arquitetura</div>
+                    <div class="footer-author-role" data-i18n="footer_role">Data Engineering &bull; Patria Investimentos</div>
+                    <div class="footer-author-date" data-i18n="footer_date">Gerado em 25/03/2026</div>
+                </div>
+            </div>
+            <div class="footer-right">
+                <div class="footer-doc-title" data-i18n="footer_doc_title">Playground de Componentes — Design System v2</div>
+                <div class="footer-doc-detail" data-i18n="footer_doc_detail">Catalogo de referencia visual &mdash; Banco Patria</div>
+            </div>
+        </div>
+        <div class="footer-seal">
+            <i class="ri-shield-check-line"></i>
+            <span data-i18n="footer_seal">Documento gerado automaticamente &mdash; Design System v2 &mdash; Banco Patria</span>
+        </div>
+    </div>
+</footer>
+
+<script>
+// ============================================================
+// i18n TRANSLATIONS
+// ============================================================
+var T = {
+    header_title: {
+        pt: 'Playground de Componentes &mdash; Design System v2',
+        en: 'Component Playground &mdash; Design System v2',
+        es: 'Playground de Componentes &mdash; Design System v2'
+    },
+    header_subtitle: {
+        pt: 'Cat&aacute;logo visual de refer&ecirc;ncia dos componentes HTML do Banco Patria',
+        en: 'Visual reference catalog of Banco Patria HTML components',
+        es: 'Cat&aacute;logo visual de referencia de los componentes HTML del Banco Patria'
+    },
+    tab_tokens: {
+        pt: 'Tokens &amp; Cores',
+        en: 'Tokens &amp; Colors',
+        es: 'Tokens &amp; Colores'
+    },
+    tab_header: {
+        pt: 'Header &amp; Nav',
+        en: 'Header &amp; Nav',
+        es: 'Header &amp; Nav'
+    },
+    tab_cards: {
+        pt: 'Cards &amp; Conte&uacute;do',
+        en: 'Cards &amp; Content',
+        es: 'Cards &amp; Contenido'
+    },
+    tab_search: {
+        pt: 'Busca &amp; Filtros',
+        en: 'Search &amp; Filters',
+        es: 'B&uacute;squeda &amp; Filtros'
+    },
+    tab_phase: {
+        pt: 'Phase Flow',
+        en: 'Phase Flow',
+        es: 'Phase Flow'
+    },
+    search_placeholder: {
+        pt: 'Buscar PVO, tabela ou descri&ccedil;&atilde;o...',
+        en: 'Search PVO, table, or description...',
+        es: 'Buscar PVO, tabla o descripci&oacute;n...'
+    },
+    no_results: {
+        pt: 'Nenhum resultado encontrado',
+        en: 'No results found',
+        es: 'Ning&uacute;n resultado encontrado'
+    },
+    footer_author: {
+        pt: 'Equipe de Dados &amp; Arquitetura',
+        en: 'Data &amp; Architecture Team',
+        es: 'Equipo de Datos &amp; Arquitectura'
+    },
+    footer_role: {
+        pt: 'Data Engineering &bull; Patria Investimentos',
+        en: 'Data Engineering &bull; Patria Investimentos',
+        es: 'Data Engineering &bull; Patria Investimentos'
+    },
+    footer_date: {
+        pt: 'Gerado em 25/03/2026',
+        en: 'Generated on 2026-03-25',
+        es: 'Generado el 25/03/2026'
+    },
+    footer_doc_title: {
+        pt: 'Playground de Componentes &mdash; Design System v2',
+        en: 'Component Playground &mdash; Design System v2',
+        es: 'Playground de Componentes &mdash; Design System v2'
+    },
+    footer_doc_detail: {
+        pt: 'Cat&aacute;logo de refer&ecirc;ncia visual &mdash; Banco Patria',
+        en: 'Visual reference catalog &mdash; Banco Patria',
+        es: 'Cat&aacute;logo de referencia visual &mdash; Banco Patria'
+    },
+    footer_seal: {
+        pt: 'Documento gerado automaticamente &mdash; Design System v2 &mdash; Banco Patria',
+        en: 'Automatically generated document &mdash; Design System v2 &mdash; Banco Patria',
+        es: 'Documento generado autom&aacute;ticamente &mdash; Design System v2 &mdash; Banco Patria'
+    },
+    i18n_example_title: {
+        pt: 'T&iacute;tulo do Documento',
+        en: 'Document Title',
+        es: 'T&iacute;tulo del Documento'
+    },
+    i18n_example_desc: {
+        pt: 'Esta descri&ccedil;&atilde;o muda conforme o idioma selecionado no header.',
+        en: 'This description changes according to the language selected in the header.',
+        es: 'Esta descripci&oacute;n cambia seg&uacute;n el idioma seleccionado en el header.'
+    }
+};
+
+var currentLang = localStorage.getItem('playgroundLang') || 'pt';
+
+// ============================================================
+// switchLang — updates all data-i18n / data-i18n-placeholder / data-i18n-title
+// ============================================================
+function switchLang(lang) {
+    currentLang = lang;
+    localStorage.setItem('playgroundLang', lang);
+
+    // Update lang button active state
+    document.querySelectorAll('.lang-btn').forEach(function(b) { b.classList.remove('active'); });
+    var btn = document.getElementById('lang-' + lang);
+    if (btn) btn.classList.add('active');
+
+    // Update html lang attribute
+    document.documentElement.lang = lang === 'pt' ? 'pt-BR' : lang === 'es' ? 'es' : 'en';
+
+    // Update all data-i18n elements
+    document.querySelectorAll('[data-i18n]').forEach(function(el) {
+        var key = el.getAttribute('data-i18n');
+        if (T[key] && T[key][lang]) {
+            el.innerHTML = T[key][lang];
+        }
+    });
+
+    // Update all data-i18n-placeholder elements
+    document.querySelectorAll('[data-i18n-placeholder]').forEach(function(el) {
+        var key = el.getAttribute('data-i18n-placeholder');
+        if (T[key] && T[key][lang]) {
+            var tmp = document.createElement('div');
+            tmp.innerHTML = T[key][lang];
+            el.placeholder = tmp.textContent || tmp.innerText;
+        }
+    });
+
+    // Update all data-i18n-title elements
+    document.querySelectorAll('[data-i18n-title]').forEach(function(el) {
+        var key = el.getAttribute('data-i18n-title');
+        if (T[key] && T[key][lang]) {
+            el.title = T[key][lang];
+        }
+    });
+}
+
+// Apply saved language on load
+if (currentLang !== 'pt') {
+    switchLang(currentLang);
+} else {
+    switchLang('pt');
+}
+
+// ============================================================
+// TABS
+// ============================================================
+function switchTab(id) {
+    document.querySelectorAll('.tab-btn').forEach(function(b) { b.classList.remove('active'); });
+    document.querySelectorAll('.tab-content').forEach(function(c) { c.classList.remove('active'); });
+    document.querySelectorAll('.tab-btn').forEach(function(b) {
+        if (b.getAttribute('onclick') && b.getAttribute('onclick').indexOf("'" + id + "'") >= 0) b.classList.add('active');
+    });
+    var el = document.getElementById('tab-' + id);
+    if (el) el.classList.add('active');
+}
+
+// ============================================================
+// THEME TOGGLE
+// ============================================================
+function toggleTheme() {
+    var html = document.documentElement;
+    var icon = document.getElementById('theme-icon');
+    if (html.getAttribute('data-theme') === 'light') {
+        html.removeAttribute('data-theme');
+        icon.className = 'ri-sun-line';
+        localStorage.setItem('playground-theme', 'dark');
+    } else {
+        html.setAttribute('data-theme', 'light');
+        icon.className = 'ri-moon-line';
+        localStorage.setItem('playground-theme', 'light');
+    }
+}
+
+// Restore saved theme
+(function() {
+    var saved = localStorage.getItem('playground-theme');
+    if (saved === 'light') {
+        document.documentElement.setAttribute('data-theme', 'light');
+        document.addEventListener('DOMContentLoaded', function() {
+            document.getElementById('theme-icon').className = 'ri-moon-line';
+        });
+    }
+})();
+
+// ============================================================
+// GROUP CARD TOGGLE
+// ============================================================
+function toggleGroup(headerEl) {
+    var body = headerEl.nextElementSibling;
+    body.classList.toggle('collapsed');
+    var icon = headerEl.querySelector('.group-toggle');
+    if (icon) icon.style.transform = body.classList.contains('collapsed') ? 'rotate(-90deg)' : 'rotate(0deg)';
+}
+
+// ============================================================
+// SEARCH / FILTER (playground demo)
+// ============================================================
+function filterPlayground(query) {
+    var container = document.getElementById('playground-groups');
+    var q = query.toLowerCase().trim();
+    var cards = container.querySelectorAll('.group-card');
+    var anyVisible = false;
+
+    cards.forEach(function(card) {
+        var groupName = (card.getAttribute('data-group') || '').toLowerCase();
+        var rows = card.querySelectorAll('.vo-row');
+        var cardVisible = false;
+
+        if (!q) {
+            card.style.display = '';
+            rows.forEach(function(r) { r.style.display = ''; });
+            cardVisible = true;
+        } else if (groupName.indexOf(q) >= 0) {
+            card.style.display = '';
+            rows.forEach(function(r) { r.style.display = ''; });
+            card.querySelector('.card-body').classList.remove('collapsed');
+            var icon = card.querySelector('.group-toggle');
+            if (icon) icon.style.transform = 'rotate(0deg)';
+            cardVisible = true;
+        } else {
+            rows.forEach(function(row) {
+                var vo = (row.getAttribute('data-vo') || '').toLowerCase();
+                var tables = (row.getAttribute('data-tables') || '').toLowerCase();
+                var desc = (row.getAttribute('data-desc') || '').toLowerCase();
+                var match = vo.indexOf(q) >= 0 || tables.indexOf(q) >= 0 || desc.indexOf(q) >= 0;
+                row.style.display = match ? '' : 'none';
+                if (match) cardVisible = true;
+            });
+            card.style.display = cardVisible ? '' : 'none';
+            if (cardVisible) {
+                card.querySelector('.card-body').classList.remove('collapsed');
+                var icon = card.querySelector('.group-toggle');
+                if (icon) icon.style.transform = 'rotate(0deg)';
+            }
+        }
+        if (cardVisible) anyVisible = true;
+    });
+
+    document.getElementById('no-results-playground').style.display = (!anyVisible && q) ? '' : 'none';
+}
+</script>
+<!-- Back to Top -->
+<button class="back-to-top" id="backToTop" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Voltar ao topo">
+    <i class="ri-arrow-up-line"></i>
+</button>
+
+<script>
+(function(){
+    var btn = document.getElementById('backToTop');
+    window.addEventListener('scroll', function(){
+        if (window.scrollY > 300) {
+            btn.classList.add('visible');
+        } else {
+            btn.classList.remove('visible');
+        }
+    });
+})();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,760 @@
+{
+  "meta": {
+    "pvo_name": "ReceiptMethodPVO",
+    "full_path": "FscmTopModelAM.FinArTopPublicModelAM.ReceiptMethodPVO",
+    "module_path": "FscmTopModelAM.FinArTopPublicModelAM",
+    "module_code": "AR",
+    "type": "pvo",
+    "description": "Extrai os métodos de recebimento configurados no sistema (boleto, TED, cartão, cheque, débito automático), com classes e canais de pagamento. Define os meios de cobrança disponíveis e suas regras de processamento."
+  },
+  "stats": {
+    "total_attributes": 52,
+    "tables_count": 3,
+    "bicc_enabled": 16,
+    "bicc_pct": 31,
+    "pk_count": 1
+  },
+  "tables": [
+    "AR_RECEIPT_CLASSES",
+    "AR_RECEIPT_METHODS",
+    "IBY_FNDCPT_PMT_CHNNLS_VL"
+  ],
+  "attributes": [
+    {
+      "name": "IbyFndcptPmtChnnlsDescription",
+      "table": "IBY_FNDCPT_PMT_CHNNLS_VL",
+      "column": "DESCRIPTION",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "IbyFndcptPmtChnnlsEndDate",
+      "table": "IBY_FNDCPT_PMT_CHNNLS_VL",
+      "column": "END_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "IbyFndcptPmtChnnlsFormatValue",
+      "table": "IBY_FNDCPT_PMT_CHNNLS_VL",
+      "column": "FORMAT_VALUE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "IbyFndcptPmtChnnlsInactiveDate",
+      "table": "IBY_FNDCPT_PMT_CHNNLS_VL",
+      "column": "INACTIVE_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "IbyFndcptPmtChnnlsInstrumentType",
+      "table": "IBY_FNDCPT_PMT_CHNNLS_VL",
+      "column": "INSTRUMENT_TYPE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "IbyFndcptPmtChnnlsPaymentChannelCode",
+      "table": "IBY_FNDCPT_PMT_CHNNLS_VL",
+      "column": "PAYMENT_CHANNEL_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "IbyFndcptPmtChnnlsPaymentChannelName",
+      "table": "IBY_FNDCPT_PMT_CHNNLS_VL",
+      "column": "PAYMENT_CHANNEL_NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "IbyFndcptPmtChnnlsSeededFlag",
+      "table": "IBY_FNDCPT_PMT_CHNNLS_VL",
+      "column": "SEEDED_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "IbyFndcptPmtChnnlsStartDate",
+      "table": "IBY_FNDCPT_PMT_CHNNLS_VL",
+      "column": "START_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReceiptClassBillOfExchangeFlag",
+      "table": "AR_RECEIPT_CLASSES",
+      "column": "BILL_OF_EXCHANGE_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReceiptClassClearFlag",
+      "table": "AR_RECEIPT_CLASSES",
+      "column": "CLEAR_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReceiptClassConfirmFlag",
+      "table": "AR_RECEIPT_CLASSES",
+      "column": "CONFIRM_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReceiptClassCreatedBy",
+      "table": "AR_RECEIPT_CLASSES",
+      "column": "CREATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReceiptClassCreationDate",
+      "table": "AR_RECEIPT_CLASSES",
+      "column": "CREATION_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReceiptClassCreationMethodCode",
+      "table": "AR_RECEIPT_CLASSES",
+      "column": "CREATION_METHOD_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReceiptClassCreationStatus",
+      "table": "AR_RECEIPT_CLASSES",
+      "column": "CREATION_STATUS",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReceiptClassLastUpdateDate",
+      "table": "AR_RECEIPT_CLASSES",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": true
+    },
+    {
+      "name": "ReceiptClassLastUpdateLogin",
+      "table": "AR_RECEIPT_CLASSES",
+      "column": "LAST_UPDATE_LOGIN",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReceiptClassLastUpdatedBy",
+      "table": "AR_RECEIPT_CLASSES",
+      "column": "LAST_UPDATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReceiptClassName",
+      "table": "AR_RECEIPT_CLASSES",
+      "column": "NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReceiptClassNotesReceivable",
+      "table": "AR_RECEIPT_CLASSES",
+      "column": "NOTES_RECEIVABLE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReceiptClassObjectVersionNumber",
+      "table": "AR_RECEIPT_CLASSES",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReceiptClassReceiptClassId",
+      "table": "AR_RECEIPT_CLASSES",
+      "column": "RECEIPT_CLASS_ID",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReceiptClassRemitFlag",
+      "table": "AR_RECEIPT_CLASSES",
+      "column": "REMIT_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReceiptClassRemitMethodCode",
+      "table": "AR_RECEIPT_CLASSES",
+      "column": "REMIT_METHOD_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReceiptMethodAutoPrintProgramId",
+      "table": "AR_RECEIPT_METHODS",
+      "column": "AUTO_PRINT_PROGRAM_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReceiptMethodAutoTransProgramId",
+      "table": "AR_RECEIPT_METHODS",
+      "column": "AUTO_TRANS_PROGRAM_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReceiptMethodBrCustTrxTypeId",
+      "table": "AR_RECEIPT_METHODS",
+      "column": "BR_CUST_TRX_TYPE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReceiptMethodBrInheritInvNumFlag",
+      "table": "AR_RECEIPT_METHODS",
+      "column": "BR_INHERIT_INV_NUM_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReceiptMethodBrMaxAcctdAmount",
+      "table": "AR_RECEIPT_METHODS",
+      "column": "BR_MAX_ACCTD_AMOUNT",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReceiptMethodBrMinAcctdAmount",
+      "table": "AR_RECEIPT_METHODS",
+      "column": "BR_MIN_ACCTD_AMOUNT",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReceiptMethodCreatedBy",
+      "table": "AR_RECEIPT_METHODS",
+      "column": "CREATED_BY",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReceiptMethodCreationDate",
+      "table": "AR_RECEIPT_METHODS",
+      "column": "CREATION_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReceiptMethodDmInheritReceiptNumFlag",
+      "table": "AR_RECEIPT_METHODS",
+      "column": "DM_INHERIT_RECEIPT_NUM_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReceiptMethodEndDate",
+      "table": "AR_RECEIPT_METHODS",
+      "column": "END_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReceiptMethodId",
+      "table": "AR_RECEIPT_METHODS",
+      "column": "RECEIPT_METHOD_ID",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    },
+    {
+      "name": "ReceiptMethodLastUpdateDate",
+      "table": "AR_RECEIPT_METHODS",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": true
+    },
+    {
+      "name": "ReceiptMethodLastUpdateLogin",
+      "table": "AR_RECEIPT_METHODS",
+      "column": "LAST_UPDATE_LOGIN",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReceiptMethodLastUpdatedBy",
+      "table": "AR_RECEIPT_METHODS",
+      "column": "LAST_UPDATED_BY",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReceiptMethodLeadDays",
+      "table": "AR_RECEIPT_METHODS",
+      "column": "LEAD_DAYS",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReceiptMethodMaturityDateRuleCode",
+      "table": "AR_RECEIPT_METHODS",
+      "column": "MATURITY_DATE_RULE_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReceiptMethodMerchantId",
+      "table": "AR_RECEIPT_METHODS",
+      "column": "MERCHANT_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReceiptMethodMerchantRef",
+      "table": "AR_RECEIPT_METHODS",
+      "column": "MERCHANT_REF",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReceiptMethodName",
+      "table": "AR_RECEIPT_METHODS",
+      "column": "NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReceiptMethodObjectVersionNumber",
+      "table": "AR_RECEIPT_METHODS",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReceiptMethodPaymentChannelCode",
+      "table": "AR_RECEIPT_METHODS",
+      "column": "PAYMENT_CHANNEL_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReceiptMethodPaymentTypeCode",
+      "table": "AR_RECEIPT_METHODS",
+      "column": "PAYMENT_TYPE_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReceiptMethodPrintedName",
+      "table": "AR_RECEIPT_METHODS",
+      "column": "PRINTED_NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReceiptMethodReceiptClassId",
+      "table": "AR_RECEIPT_METHODS",
+      "column": "RECEIPT_CLASS_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReceiptMethodReceiptCreationRuleCode",
+      "table": "AR_RECEIPT_METHODS",
+      "column": "RECEIPT_CREATION_RULE_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReceiptMethodReceiptInheritInvNumFlag",
+      "table": "AR_RECEIPT_METHODS",
+      "column": "RECEIPT_INHERIT_INV_NUM_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ReceiptMethodStartDate",
+      "table": "AR_RECEIPT_METHODS",
+      "column": "START_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    }
+  ],
+  "by_table": {
+    "IBY_FNDCPT_PMT_CHNNLS_VL": [
+      {
+        "attribute": "IbyFndcptPmtChnnlsDescription",
+        "column": "DESCRIPTION",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "IbyFndcptPmtChnnlsEndDate",
+        "column": "END_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "IbyFndcptPmtChnnlsFormatValue",
+        "column": "FORMAT_VALUE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "IbyFndcptPmtChnnlsInactiveDate",
+        "column": "INACTIVE_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "IbyFndcptPmtChnnlsInstrumentType",
+        "column": "INSTRUMENT_TYPE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "IbyFndcptPmtChnnlsPaymentChannelCode",
+        "column": "PAYMENT_CHANNEL_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "IbyFndcptPmtChnnlsPaymentChannelName",
+        "column": "PAYMENT_CHANNEL_NAME",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "IbyFndcptPmtChnnlsSeededFlag",
+        "column": "SEEDED_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "IbyFndcptPmtChnnlsStartDate",
+        "column": "START_DATE",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "AR_RECEIPT_CLASSES": [
+      {
+        "attribute": "ReceiptClassBillOfExchangeFlag",
+        "column": "BILL_OF_EXCHANGE_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReceiptClassClearFlag",
+        "column": "CLEAR_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReceiptClassConfirmFlag",
+        "column": "CONFIRM_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReceiptClassCreatedBy",
+        "column": "CREATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReceiptClassCreationDate",
+        "column": "CREATION_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReceiptClassCreationMethodCode",
+        "column": "CREATION_METHOD_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ReceiptClassCreationStatus",
+        "column": "CREATION_STATUS",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ReceiptClassLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ReceiptClassLastUpdateLogin",
+        "column": "LAST_UPDATE_LOGIN",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReceiptClassLastUpdatedBy",
+        "column": "LAST_UPDATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReceiptClassName",
+        "column": "NAME",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ReceiptClassNotesReceivable",
+        "column": "NOTES_RECEIVABLE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReceiptClassObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReceiptClassReceiptClassId",
+        "column": "RECEIPT_CLASS_ID",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ReceiptClassRemitFlag",
+        "column": "REMIT_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReceiptClassRemitMethodCode",
+        "column": "REMIT_METHOD_CODE",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "AR_RECEIPT_METHODS": [
+      {
+        "attribute": "ReceiptMethodAutoPrintProgramId",
+        "column": "AUTO_PRINT_PROGRAM_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReceiptMethodAutoTransProgramId",
+        "column": "AUTO_TRANS_PROGRAM_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReceiptMethodBrCustTrxTypeId",
+        "column": "BR_CUST_TRX_TYPE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReceiptMethodBrInheritInvNumFlag",
+        "column": "BR_INHERIT_INV_NUM_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReceiptMethodBrMaxAcctdAmount",
+        "column": "BR_MAX_ACCTD_AMOUNT",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReceiptMethodBrMinAcctdAmount",
+        "column": "BR_MIN_ACCTD_AMOUNT",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReceiptMethodCreatedBy",
+        "column": "CREATED_BY",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ReceiptMethodCreationDate",
+        "column": "CREATION_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ReceiptMethodDmInheritReceiptNumFlag",
+        "column": "DM_INHERIT_RECEIPT_NUM_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReceiptMethodEndDate",
+        "column": "END_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ReceiptMethodId",
+        "column": "RECEIPT_METHOD_ID",
+        "bicc": true,
+        "pk": true
+      },
+      {
+        "attribute": "ReceiptMethodLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ReceiptMethodLastUpdateLogin",
+        "column": "LAST_UPDATE_LOGIN",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReceiptMethodLastUpdatedBy",
+        "column": "LAST_UPDATED_BY",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ReceiptMethodLeadDays",
+        "column": "LEAD_DAYS",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReceiptMethodMaturityDateRuleCode",
+        "column": "MATURITY_DATE_RULE_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReceiptMethodMerchantId",
+        "column": "MERCHANT_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReceiptMethodMerchantRef",
+        "column": "MERCHANT_REF",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReceiptMethodName",
+        "column": "NAME",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ReceiptMethodObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReceiptMethodPaymentChannelCode",
+        "column": "PAYMENT_CHANNEL_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReceiptMethodPaymentTypeCode",
+        "column": "PAYMENT_TYPE_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ReceiptMethodPrintedName",
+        "column": "PRINTED_NAME",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ReceiptMethodReceiptClassId",
+        "column": "RECEIPT_CLASS_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReceiptMethodReceiptCreationRuleCode",
+        "column": "RECEIPT_CREATION_RULE_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReceiptMethodReceiptInheritInvNumFlag",
+        "column": "RECEIPT_INHERIT_INV_NUM_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ReceiptMethodStartDate",
+        "column": "START_DATE",
+        "bicc": false,
+        "pk": false
+      }
+    ]
+  }
+}

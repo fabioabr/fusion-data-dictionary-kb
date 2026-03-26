@@ -1,0 +1,788 @@
+{
+  "meta": {
+    "pvo_name": "SupplierSiteAddressPVO",
+    "full_path": "FscmTopModelAM.FinApInvTransactionsAM.SupplierSiteAddressPVO",
+    "module_path": "FscmTopModelAM.FinApInvTransactionsAM",
+    "module_code": "AP",
+    "type": "pvo",
+    "description": "Extrai os endereços dos sites de fornecedores, incluindo logradouro, cidade, estado, país, CEP e pontos de contato (telefone, e-mail, fax). Essencial para cadastro de fornecedores, emissão de documentos fiscais e comunicação com a cadeia de suprimentos."
+  },
+  "stats": {
+    "total_attributes": 54,
+    "tables_count": 3,
+    "bicc_enabled": 19,
+    "bicc_pct": 35,
+    "pk_count": 3
+  },
+  "tables": [
+    "HZ_CONTACT_POINTS",
+    "HZ_LOCATIONS",
+    "HZ_PARTY_SITES"
+  ],
+  "attributes": [
+    {
+      "name": "ContactPointContactPointId",
+      "table": "HZ_CONTACT_POINTS",
+      "column": "CONTACT_POINT_ID",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    },
+    {
+      "name": "ContactPointContactPointType",
+      "table": "HZ_CONTACT_POINTS",
+      "column": "CONTACT_POINT_TYPE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ContactPointEmailAddress",
+      "table": "HZ_CONTACT_POINTS",
+      "column": "EMAIL_ADDRESS",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ContactPointPhoneAreaCode",
+      "table": "HZ_CONTACT_POINTS",
+      "column": "PHONE_AREA_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ContactPointPhoneCountryCode",
+      "table": "HZ_CONTACT_POINTS",
+      "column": "PHONE_COUNTRY_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ContactPointPhoneExtension",
+      "table": "HZ_CONTACT_POINTS",
+      "column": "PHONE_EXTENSION",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ContactPointPhoneLineType",
+      "table": "HZ_CONTACT_POINTS",
+      "column": "PHONE_LINE_TYPE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ContactPointPhoneNumber",
+      "table": "HZ_CONTACT_POINTS",
+      "column": "PHONE_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "ContactPointPrimaryFlag",
+      "table": "HZ_CONTACT_POINTS",
+      "column": "PRIMARY_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LocationAddress1",
+      "table": "HZ_LOCATIONS",
+      "column": "ADDRESS1",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LocationAddress2",
+      "table": "HZ_LOCATIONS",
+      "column": "ADDRESS2",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LocationAddress3",
+      "table": "HZ_LOCATIONS",
+      "column": "ADDRESS3",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LocationAddress4",
+      "table": "HZ_LOCATIONS",
+      "column": "ADDRESS4",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LocationAddressEffectiveDate",
+      "table": "HZ_LOCATIONS",
+      "column": "ADDRESS_EFFECTIVE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LocationAddressExpirationDate",
+      "table": "HZ_LOCATIONS",
+      "column": "ADDRESS_EXPIRATION_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LocationCity",
+      "table": "HZ_LOCATIONS",
+      "column": "CITY",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LocationCountry",
+      "table": "HZ_LOCATIONS",
+      "column": "COUNTRY",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LocationCounty",
+      "table": "HZ_LOCATIONS",
+      "column": "COUNTY",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LocationLocationId",
+      "table": "HZ_LOCATIONS",
+      "column": "LOCATION_ID",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    },
+    {
+      "name": "LocationPostalCode",
+      "table": "HZ_LOCATIONS",
+      "column": "POSTAL_CODE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LocationProvince",
+      "table": "HZ_LOCATIONS",
+      "column": "PROVINCE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "LocationState",
+      "table": "HZ_LOCATIONS",
+      "column": "STATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartySitePEOActualContentSource",
+      "table": "HZ_PARTY_SITES",
+      "column": "ACTUAL_CONTENT_SOURCE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartySitePEOAddressee",
+      "table": "HZ_PARTY_SITES",
+      "column": "ADDRESSEE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartySitePEOAttributeCategory",
+      "table": "HZ_PARTY_SITES",
+      "column": "ATTRIBUTE_CATEGORY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartySitePEOComments",
+      "table": "HZ_PARTY_SITES",
+      "column": "COMMENTS",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartySitePEOCreatedBy",
+      "table": "HZ_PARTY_SITES",
+      "column": "CREATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartySitePEOCreatedByModule",
+      "table": "HZ_PARTY_SITES",
+      "column": "CREATED_BY_MODULE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartySitePEOCreationDate",
+      "table": "HZ_PARTY_SITES",
+      "column": "CREATION_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartySitePEODunsNumberC",
+      "table": "HZ_PARTY_SITES",
+      "column": "DUNS_NUMBER_C",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartySitePEOEndDateActive",
+      "table": "HZ_PARTY_SITES",
+      "column": "END_DATE_ACTIVE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartySitePEOGlobalLocationNumber",
+      "table": "HZ_PARTY_SITES",
+      "column": "GLOBAL_LOCATION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartySitePEOIdentifyingAddressFlag",
+      "table": "HZ_PARTY_SITES",
+      "column": "IDENTIFYING_ADDRESS_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartySitePEOLanguage",
+      "table": "HZ_PARTY_SITES",
+      "column": "PARTY_SITE_LANGUAGE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartySitePEOLastUpdateDate",
+      "table": "HZ_PARTY_SITES",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartySitePEOLastUpdateLogin",
+      "table": "HZ_PARTY_SITES",
+      "column": "LAST_UPDATE_LOGIN",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartySitePEOLastUpdatedBy",
+      "table": "HZ_PARTY_SITES",
+      "column": "LAST_UPDATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartySitePEOLocationId",
+      "table": "HZ_PARTY_SITES",
+      "column": "LOCATION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartySitePEOMailstop",
+      "table": "HZ_PARTY_SITES",
+      "column": "MAILSTOP",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartySitePEOObjectVersionNumber",
+      "table": "HZ_PARTY_SITES",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartySitePEOOrigSystemReference",
+      "table": "HZ_PARTY_SITES",
+      "column": "ORIG_SYSTEM_REFERENCE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartySitePEOOverallPrimaryFlag",
+      "table": "HZ_PARTY_SITES",
+      "column": "OVERALL_PRIMARY_FLAG",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartySitePEOPartyId",
+      "table": "HZ_PARTY_SITES",
+      "column": "PARTY_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartySitePEOPartyNameDba",
+      "table": "HZ_PARTY_SITES",
+      "column": "PARTY_NAME_DBA",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartySitePEOPartyNameDivision",
+      "table": "HZ_PARTY_SITES",
+      "column": "PARTY_NAME_DIVISION",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartySitePEOPartyNameLegal",
+      "table": "HZ_PARTY_SITES",
+      "column": "PARTY_NAME_LEGAL",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartySitePEOPartySiteId",
+      "table": "HZ_PARTY_SITES",
+      "column": "PARTY_SITE_ID",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    },
+    {
+      "name": "PartySitePEOPartySiteName",
+      "table": "HZ_PARTY_SITES",
+      "column": "PARTY_SITE_NAME",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartySitePEOPartySiteNumber",
+      "table": "HZ_PARTY_SITES",
+      "column": "PARTY_SITE_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartySitePEOPartySiteType",
+      "table": "HZ_PARTY_SITES",
+      "column": "PARTY_SITE_TYPE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartySitePEOPartyUsageCode",
+      "table": "HZ_PARTY_SITES",
+      "column": "PARTY_USAGE_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartySitePEORelationshipId",
+      "table": "HZ_PARTY_SITES",
+      "column": "RELATIONSHIP_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartySitePEOStartDateActive",
+      "table": "HZ_PARTY_SITES",
+      "column": "START_DATE_ACTIVE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartySitePEOStatus",
+      "table": "HZ_PARTY_SITES",
+      "column": "STATUS",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    }
+  ],
+  "by_table": {
+    "HZ_CONTACT_POINTS": [
+      {
+        "attribute": "ContactPointContactPointId",
+        "column": "CONTACT_POINT_ID",
+        "bicc": true,
+        "pk": true
+      },
+      {
+        "attribute": "ContactPointContactPointType",
+        "column": "CONTACT_POINT_TYPE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ContactPointEmailAddress",
+        "column": "EMAIL_ADDRESS",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ContactPointPhoneAreaCode",
+        "column": "PHONE_AREA_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ContactPointPhoneCountryCode",
+        "column": "PHONE_COUNTRY_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ContactPointPhoneExtension",
+        "column": "PHONE_EXTENSION",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "ContactPointPhoneLineType",
+        "column": "PHONE_LINE_TYPE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ContactPointPhoneNumber",
+        "column": "PHONE_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "ContactPointPrimaryFlag",
+        "column": "PRIMARY_FLAG",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "HZ_LOCATIONS": [
+      {
+        "attribute": "LocationAddress1",
+        "column": "ADDRESS1",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "LocationAddress2",
+        "column": "ADDRESS2",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "LocationAddress3",
+        "column": "ADDRESS3",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "LocationAddress4",
+        "column": "ADDRESS4",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "LocationAddressEffectiveDate",
+        "column": "ADDRESS_EFFECTIVE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "LocationAddressExpirationDate",
+        "column": "ADDRESS_EXPIRATION_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "LocationCity",
+        "column": "CITY",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "LocationCountry",
+        "column": "COUNTRY",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "LocationCounty",
+        "column": "COUNTY",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "LocationLocationId",
+        "column": "LOCATION_ID",
+        "bicc": true,
+        "pk": true
+      },
+      {
+        "attribute": "LocationPostalCode",
+        "column": "POSTAL_CODE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "LocationProvince",
+        "column": "PROVINCE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "LocationState",
+        "column": "STATE",
+        "bicc": true,
+        "pk": false
+      }
+    ],
+    "HZ_PARTY_SITES": [
+      {
+        "attribute": "PartySitePEOActualContentSource",
+        "column": "ACTUAL_CONTENT_SOURCE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PartySitePEOAddressee",
+        "column": "ADDRESSEE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PartySitePEOAttributeCategory",
+        "column": "ATTRIBUTE_CATEGORY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PartySitePEOComments",
+        "column": "COMMENTS",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PartySitePEOCreatedBy",
+        "column": "CREATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PartySitePEOCreatedByModule",
+        "column": "CREATED_BY_MODULE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PartySitePEOCreationDate",
+        "column": "CREATION_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PartySitePEODunsNumberC",
+        "column": "DUNS_NUMBER_C",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PartySitePEOEndDateActive",
+        "column": "END_DATE_ACTIVE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PartySitePEOGlobalLocationNumber",
+        "column": "GLOBAL_LOCATION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PartySitePEOIdentifyingAddressFlag",
+        "column": "IDENTIFYING_ADDRESS_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PartySitePEOLanguage",
+        "column": "PARTY_SITE_LANGUAGE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PartySitePEOLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PartySitePEOLastUpdateLogin",
+        "column": "LAST_UPDATE_LOGIN",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PartySitePEOLastUpdatedBy",
+        "column": "LAST_UPDATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PartySitePEOLocationId",
+        "column": "LOCATION_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PartySitePEOMailstop",
+        "column": "MAILSTOP",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PartySitePEOObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PartySitePEOOrigSystemReference",
+        "column": "ORIG_SYSTEM_REFERENCE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PartySitePEOOverallPrimaryFlag",
+        "column": "OVERALL_PRIMARY_FLAG",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PartySitePEOPartyId",
+        "column": "PARTY_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PartySitePEOPartyNameDba",
+        "column": "PARTY_NAME_DBA",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PartySitePEOPartyNameDivision",
+        "column": "PARTY_NAME_DIVISION",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PartySitePEOPartyNameLegal",
+        "column": "PARTY_NAME_LEGAL",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PartySitePEOPartySiteId",
+        "column": "PARTY_SITE_ID",
+        "bicc": true,
+        "pk": true
+      },
+      {
+        "attribute": "PartySitePEOPartySiteName",
+        "column": "PARTY_SITE_NAME",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PartySitePEOPartySiteNumber",
+        "column": "PARTY_SITE_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PartySitePEOPartySiteType",
+        "column": "PARTY_SITE_TYPE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PartySitePEOPartyUsageCode",
+        "column": "PARTY_USAGE_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PartySitePEORelationshipId",
+        "column": "RELATIONSHIP_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PartySitePEOStartDateActive",
+        "column": "START_DATE_ACTIVE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PartySitePEOStatus",
+        "column": "STATUS",
+        "bicc": false,
+        "pk": false
+      }
+    ]
+  }
+}

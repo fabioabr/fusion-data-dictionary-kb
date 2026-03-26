@@ -1,0 +1,433 @@
+{
+  "source": "gl_period_statuses.md",
+  "source_hash": "3a009788ee448f8f8114fd72308f810f",
+  "translated_at": "2026-03-25",
+  "items": [
+    {
+      "id": 1,
+      "br": "Visão Geral",
+      "en": "Overview",
+      "es": "Descripcion General"
+    },
+    {
+      "id": 2,
+      "br": "Armazena o status de cada período contábil por ledger e application (módulo). Controla se um período está aberto, fechado, nunca aberto ou permanentemente fechado para lançamentos. É a tabela que governa a janela temporal de contabilização — nenhum lançamento pode ser feito em um período que não esteja com status \"Open\" (O).",
+      "en": "Stores the status of each accounting period per ledger and application (module). Controls whether a period is open, closed, never opened, or permanently closed for journal entries. This is the table that governs the accounting posting time window — no journal entry can be made in a period that does not have status \"Open\" (O).",
+      "es": "Almacena el status de cada periodo contable por ledger y application (modulo). Controla si un periodo esta abierto, cerrado, nunca abierto o permanentemente cerrado para asientos contables. Es la tabla que gobierna la ventana temporal de contabilizacion — ningun asiento puede realizarse en un periodo que no tenga status \"Open\" (O)."
+    },
+    {
+      "id": 3,
+      "br": "Granularidade por Application",
+      "en": "Granularity by Application",
+      "es": "Granularidad por Application"
+    },
+    {
+      "id": 4,
+      "br": "O status do período é controlado por aplicação (Application ID). Um mesmo período pode estar aberto para o GL e fechado para o AP, por exemplo. Isso permite controle granular de fechamento por módulo.",
+      "en": "The period status is controlled per application (Application ID). The same period can be open for GL and closed for AP, for example. This allows granular closing control per module.",
+      "es": "El status del periodo se controla por aplicacion (Application ID). Un mismo periodo puede estar abierto para GL y cerrado para AP, por ejemplo. Esto permite control granular de cierre por modulo."
+    },
+    {
+      "id": 5,
+      "br": "Propósito de Negócio",
+      "en": "Business Purpose",
+      "es": "Proposito de Negocio"
+    },
+    {
+      "id": 6,
+      "br": "Esta tabela é utilizada nos seguintes processos:",
+      "en": "This table is used in the following processes:",
+      "es": "Esta tabla se utiliza en los siguientes procesos:"
+    },
+    {
+      "id": 7,
+      "br": "Transição de \"Never Opened\" para \"Open\" para permitir lançamentos.",
+      "en": "Transition from \"Never Opened\" to \"Open\" to allow journal entries.",
+      "es": "Transicion de \"Never Opened\" a \"Open\" para permitir asientos contables."
+    },
+    {
+      "id": 8,
+      "br": "Transição de \"Open\" para \"Closed\" no processo de month-end close.",
+      "en": "Transition from \"Open\" to \"Closed\" in the month-end close process.",
+      "es": "Transicion de \"Open\" a \"Closed\" en el proceso de month-end close."
+    },
+    {
+      "id": 9,
+      "br": "O processo de contabilização valida se o período está aberto antes de aceitar journals.",
+      "en": "The posting process validates whether the period is open before accepting journals.",
+      "es": "El proceso de contabilizacion valida si el periodo esta abierto antes de aceptar journals."
+    },
+    {
+      "id": 10,
+      "br": "Reabertura de períodos já fechados para ajustes (requer permissão especial).",
+      "en": "Reopening of previously closed periods for adjustments (requires special permission).",
+      "es": "Reapertura de periodos ya cerrados para ajustes (requiere permiso especial)."
+    },
+    {
+      "id": 11,
+      "br": "Rastreamento de quem abriu/fechou cada período e quando.",
+      "en": "Tracking of who opened/closed each period and when.",
+      "es": "Rastreo de quien abrio/cerro cada periodo y cuando."
+    },
+    {
+      "id": 12,
+      "br": "Os subledgers consultam esta tabela para validar se podem transferir journals ao GL.",
+      "en": "Subledgers query this table to validate whether they can transfer journals to the GL.",
+      "es": "Los subledgers consultan esta tabla para validar si pueden transferir journals al GL."
+    },
+    {
+      "id": 13,
+      "br": "Colunas Principais",
+      "en": "Key Columns",
+      "es": "Columnas Principales"
+    },
+    {
+      "id": 14,
+      "br": "Confiança",
+      "en": "Confidence",
+      "es": "Confianza"
+    },
+    {
+      "id": 15,
+      "br": "Escala de 0% a 100% — grau de certeza da descrição gerada por IA com base na documentação oficial Oracle (OEDMF/BICC Release 13/25A).",
+      "en": "Scale from 0% to 100% — degree of certainty of the AI-generated description based on official Oracle documentation (OEDMF/BICC Release 13/25A).",
+      "es": "Escala de 0% a 100% — grado de certeza de la descripcion generada por IA con base en la documentacion oficial Oracle (OEDMF/BICC Release 13/25A)."
+    },
+    {
+      "id": 16,
+      "br": "- 🟢 81–100% — Coluna presente na documentação oficial Oracle; nome, tipo e descrição confirmados.",
+      "en": "- 🟢 81–100% — Column present in official Oracle documentation; name, type, and description confirmed.",
+      "es": "- 🟢 81–100% — Columna presente en la documentacion oficial Oracle; nombre, tipo y descripcion confirmados."
+    },
+    {
+      "id": 17,
+      "br": "- 🟡 51–80% — Coluna inferida por naming convention ou padrão Oracle; tipo exato pode variar.",
+      "en": "- 🟡 51–80% — Column inferred by naming convention or Oracle standard; exact type may vary.",
+      "es": "- 🟡 51–80% — Columna inferida por naming convention o estandar Oracle; tipo exacto puede variar."
+    },
+    {
+      "id": 18,
+      "br": "- 🔴 0–50% — Existência ou tipo incertos; pode não existir no release atual; validar no ambiente.",
+      "en": "- 🔴 0–50% — Existence or type uncertain; may not exist in the current release; validate in the environment.",
+      "es": "- 🔴 0–50% — Existencia o tipo inciertos; puede no existir en el release actual; validar en el ambiente."
+    },
+    {
+      "id": 19,
+      "br": "Coluna",
+      "en": "Column",
+      "es": "Columna"
+    },
+    {
+      "id": 20,
+      "br": "Tipo",
+      "en": "Type",
+      "es": "Tipo"
+    },
+    {
+      "id": 21,
+      "br": "Nulo?",
+      "en": "Nullable?",
+      "es": "Nulo?"
+    },
+    {
+      "id": 22,
+      "br": "Categoria",
+      "en": "Category",
+      "es": "Categoria"
+    },
+    {
+      "id": 23,
+      "br": "Descrição",
+      "en": "Description",
+      "es": "Descripcion"
+    },
+    {
+      "id": 24,
+      "br": "Identificador do ledger (livro contábil)",
+      "en": "Ledger identifier (accounting book)",
+      "es": "Identificador del ledger (libro contable)"
+    },
+    {
+      "id": 25,
+      "br": "Identificador da aplicação/módulo Oracle (101=GL, 200=AP, 222=AR)",
+      "en": "Oracle application/module identifier (101=GL, 200=AP, 222=AR)",
+      "es": "Identificador de la application/modulo Oracle (101=GL, 200=AP, 222=AR)"
+    },
+    {
+      "id": 26,
+      "br": "Nome do período contábil (ex: JAN-26, FEB-26)",
+      "en": "Accounting period name (e.g., JAN-26, FEB-26)",
+      "es": "Nombre del periodo contable (ej: JAN-26, FEB-26)"
+    },
+    {
+      "id": 27,
+      "br": "Período",
+      "en": "Period",
+      "es": "Periodo"
+    },
+    {
+      "id": 28,
+      "br": "Ano do período contábil",
+      "en": "Accounting period year",
+      "es": "Ano del periodo contable"
+    },
+    {
+      "id": 29,
+      "br": "Número sequencial do período no ano",
+      "en": "Sequential period number within the year",
+      "es": "Numero secuencial del periodo en el ano"
+    },
+    {
+      "id": 30,
+      "br": "Tipo do período (Month, Quarter, Year)",
+      "en": "Period type (Month, Quarter, Year)",
+      "es": "Tipo del periodo (Month, Quarter, Year)"
+    },
+    {
+      "id": 31,
+      "br": "Status",
+      "en": "Status",
+      "es": "Status"
+    },
+    {
+      "id": 32,
+      "br": "Status do período: O (Open), C (Closed), F (Future Enterable), N (Never Opened), P (Permanently Closed)",
+      "en": "Period status: O (Open), C (Closed), F (Future Enterable), N (Never Opened), P (Permanently Closed)",
+      "es": "Status del periodo: O (Open), C (Closed), F (Future Enterable), N (Never Opened), P (Permanently Closed)"
+    },
+    {
+      "id": 33,
+      "br": "Data",
+      "en": "Date",
+      "es": "Fecha"
+    },
+    {
+      "id": 34,
+      "br": "Data de início do período",
+      "en": "Period start date",
+      "es": "Fecha de inicio del periodo"
+    },
+    {
+      "id": 35,
+      "br": "Data de fim do período",
+      "en": "Period end date",
+      "es": "Fecha de fin del periodo"
+    },
+    {
+      "id": 36,
+      "br": "Número efetivo do período (para ordenação cross-year)",
+      "en": "Effective period number (for cross-year sorting)",
+      "es": "Numero efectivo del periodo (para ordenacion cross-year)"
+    },
+    {
+      "id": 37,
+      "br": "Classificação",
+      "en": "Classification",
+      "es": "Clasificacion"
+    },
+    {
+      "id": 38,
+      "br": "Indica se é um período de ajuste (Y/N) — usado no fechamento anual",
+      "en": "Indicates whether it is an adjustment period (Y/N) — used in year-end closing",
+      "es": "Indica si es un periodo de ajuste (Y/N) — usado en el cierre anual"
+    },
+    {
+      "id": 39,
+      "br": "Controle",
+      "en": "Control",
+      "es": "Control"
+    },
+    {
+      "id": 40,
+      "br": "Indica se eliminações intercompany foram confirmadas (Y/N)",
+      "en": "Indicates whether intercompany eliminations have been confirmed (Y/N)",
+      "es": "Indica si las eliminaciones intercompany fueron confirmadas (Y/N)"
+    },
+    {
+      "id": 41,
+      "br": "Auditoria",
+      "en": "Audit",
+      "es": "Auditoria"
+    },
+    {
+      "id": 42,
+      "br": "Usuário que criou o registro",
+      "en": "User who created the record",
+      "es": "Usuario que creo el registro"
+    },
+    {
+      "id": 43,
+      "br": "Data/hora de criação",
+      "en": "Creation date/time",
+      "es": "Fecha/hora de creacion"
+    },
+    {
+      "id": 44,
+      "br": "Último usuário que alterou",
+      "en": "Last user who modified",
+      "es": "Ultimo usuario que modifico"
+    },
+    {
+      "id": 45,
+      "br": "Data/hora da última alteração",
+      "en": "Last modification date/time",
+      "es": "Fecha/hora de la ultima modificacion"
+    },
+    {
+      "id": 46,
+      "br": "Login da última sessão",
+      "en": "Last session login",
+      "es": "Login de la ultima sesion"
+    },
+    {
+      "id": 47,
+      "br": "Relacionamentos",
+      "en": "Relationships",
+      "es": "Relaciones"
+    },
+    {
+      "id": 48,
+      "br": "Tabelas-pai (FK de entrada)",
+      "en": "Parent tables (inbound FK)",
+      "es": "Tablas padre (FK de entrada)"
+    },
+    {
+      "id": 49,
+      "br": "ledger/livro contábil",
+      "en": "ledger/accounting book",
+      "es": "ledger/libro contable"
+    },
+    {
+      "id": 50,
+      "br": "aplicação/módulo Oracle",
+      "en": "Oracle application/module",
+      "es": "application/modulo Oracle"
+    },
+    {
+      "id": 51,
+      "br": "tipo de período",
+      "en": "period type",
+      "es": "tipo de periodo"
+    },
+    {
+      "id": 52,
+      "br": "Tabelas-filha (FK de saída)",
+      "en": "Child tables (outbound FK)",
+      "es": "Tablas hija (FK de salida)"
+    },
+    {
+      "id": 53,
+      "br": "Nenhuma FK direta — esta é uma tabela de controle/status consultada por validação.",
+      "en": "No direct FK — this is a control/status table queried for validation.",
+      "es": "Ninguna FK directa — esta es una tabla de control/status consultada para validacion."
+    },
+    {
+      "id": 54,
+      "br": "Uso Típico",
+      "en": "Typical Usage",
+      "es": "Uso Tipico"
+    },
+    {
+      "id": 55,
+      "br": "Períodos abertos para o GL",
+      "en": "Open periods for GL",
+      "es": "Periodos abiertos para el GL"
+    },
+    {
+      "id": 56,
+      "br": "Histórico de status por período",
+      "en": "Status history by period",
+      "es": "Historico de status por periodo"
+    },
+    {
+      "id": 57,
+      "br": "Filtros comuns",
+      "en": "Common Filters",
+      "es": "Filtros comunes"
+    },
+    {
+      "id": 58,
+      "br": "Períodos abertos para lançamento",
+      "en": "Periods open for posting",
+      "es": "Periodos abiertos para contabilizacion"
+    },
+    {
+      "id": 59,
+      "br": "Períodos fechados",
+      "en": "Closed periods",
+      "es": "Periodos cerrados"
+    },
+    {
+      "id": 60,
+      "br": "Períodos nunca abertos",
+      "en": "Never opened periods",
+      "es": "Periodos nunca abiertos"
+    },
+    {
+      "id": 61,
+      "br": "General Ledger",
+      "en": "General Ledger",
+      "es": "General Ledger"
+    },
+    {
+      "id": 62,
+      "br": "Períodos de ajuste (13º período)",
+      "en": "Adjustment periods (13th period)",
+      "es": "Periodos de ajuste (13o periodo)"
+    },
+    {
+      "id": 63,
+      "br": "Observações",
+      "en": "Notes",
+      "es": "Observaciones"
+    },
+    {
+      "id": 64,
+      "br": "A chave composta é LEDGER_ID + APPLICATION_ID + PERIOD_NAME — o mesmo período pode ter status diferentes por aplicação.",
+      "en": "The composite key is LEDGER_ID + APPLICATION_ID + PERIOD_NAME — the same period can have different statuses per application.",
+      "es": "La clave compuesta es LEDGER_ID + APPLICATION_ID + PERIOD_NAME — el mismo periodo puede tener status diferentes por application."
+    },
+    {
+      "id": 65,
+      "br": "O fluxo normal de status é: N (Never Opened) → F (Future Enterable) → O (Open) → C (Closed). O status P (Permanently Closed) impede reabertura.",
+      "en": "The normal status flow is: N (Never Opened) → F (Future Enterable) → O (Open) → C (Closed). Status P (Permanently Closed) prevents reopening.",
+      "es": "El flujo normal de status es: N (Never Opened) → F (Future Enterable) → O (Open) → C (Closed). El status P (Permanently Closed) impide la reapertura."
+    },
+    {
+      "id": 66,
+      "br": "Períodos de ajuste (ADJUSTMENT_PERIOD_FLAG = 'Y') são usados para lançamentos de fechamento anual e não aparecem em relatórios mensais regulares.",
+      "en": "Adjustment periods (ADJUSTMENT_PERIOD_FLAG = 'Y') are used for year-end closing entries and do not appear in regular monthly reports.",
+      "es": "Periodos de ajuste (ADJUSTMENT_PERIOD_FLAG = 'Y') se usan para asientos de cierre anual y no aparecen en reportes mensuales regulares."
+    },
+    {
+      "id": 67,
+      "br": "O APPLICATION_ID = 101 é o General Ledger. Para verificar se um subledger pode postar, consultar com o APPLICATION_ID correspondente (200=AP, 222=AR, etc.).",
+      "en": "APPLICATION_ID = 101 is the General Ledger. To check whether a subledger can post, query with the corresponding APPLICATION_ID (200=AP, 222=AR, etc.).",
+      "es": "APPLICATION_ID = 101 es el General Ledger. Para verificar si un subledger puede contabilizar, consultar con el APPLICATION_ID correspondiente (200=AP, 222=AR, etc.)."
+    },
+    {
+      "id": 68,
+      "br": "O processo de \"Close Period\" no Oracle Fusion altera o CLOSING_STATUS e atualiza LAST_UPDATE_DATE — útil para rastrear quando cada período foi fechado.",
+      "en": "The \"Close Period\" process in Oracle Fusion changes the CLOSING_STATUS and updates LAST_UPDATE_DATE — useful for tracking when each period was closed.",
+      "es": "El proceso de \"Close Period\" en Oracle Fusion cambia el CLOSING_STATUS y actualiza LAST_UPDATE_DATE — util para rastrear cuando cada periodo fue cerrado."
+    },
+    {
+      "id": 69,
+      "br": "Referências",
+      "en": "References",
+      "es": "Referencias"
+    },
+    {
+      "id": 70,
+      "br": "[Oracle Docs — GL_PERIOD_STATUSES](https://docs.oracle.com/en/cloud/saas/financials/25a/oedmf/glperiodstatuses-25788.html)",
+      "en": "[Oracle Docs — GL_PERIOD_STATUSES](https://docs.oracle.com/en/cloud/saas/financials/25a/oedmf/glperiodstatuses-25788.html)",
+      "es": "[Oracle Docs — GL_PERIOD_STATUSES](https://docs.oracle.com/en/cloud/saas/financials/25a/oedmf/glperiodstatuses-25788.html)"
+    },
+    {
+      "id": 71,
+      "br": "gl-module-data-dictionary — Dossiê do módulo GL",
+      "en": "gl-module-data-dictionary — GL module dossier",
+      "es": "gl-module-data-dictionary — Dossier del modulo GL"
+    }
+  ]
+}

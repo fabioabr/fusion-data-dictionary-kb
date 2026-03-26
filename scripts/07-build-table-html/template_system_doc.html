@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{PAGE_TITLE}}</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css" rel="stylesheet">
+    <style>
+
+/* ====== DESIGN TOKENS (dark — default) ====== */
+:root {
+    --primary: #5BA4D9;
+    --primary-dark: #3182B1;
+    --primary-light: rgba(91, 164, 217, 0.12);
+    --secondary: #5BB8C4;
+    --success: #6ABF3B;
+    --success-light: rgba(106, 191, 59, 0.12);
+    --success-border: rgba(106, 191, 59, 0.3);
+    --warning: #F4AC00;
+    --warning-light: rgba(244, 172, 0, 0.12);
+    --warning-border: rgba(244, 172, 0, 0.3);
+    --danger: #E85D54;
+    --danger-light: rgba(232, 93, 84, 0.12);
+    --danger-border: rgba(232, 93, 84, 0.3);
+    --info: #38BDF8;
+    --info-light: rgba(56, 189, 248, 0.12);
+    --info-border: rgba(56, 189, 248, 0.3);
+    --bg: #0f1319;
+    --card-bg: #1a1f2e;
+    --text: #e2e8f0;
+    --text-muted: #8b9ab5;
+    --border: #2a3244;
+    --purple: #9B96FF;
+    --purple-light: rgba(155, 150, 255, 0.12);
+    --orange: #FF9473;
+    --teal: #2DD4BF;
+    --header-bg: linear-gradient(135deg, #1a2332 0%, #15202e 50%, #1a2838 100%);
+    --card-header-bg: #141924;
+    --th-bg: #141924;
+    --th-bg-hover: #1e2638;
+    --card-shadow: 0 2px 12px rgba(91, 164, 217, 0.1), 0 1px 4px rgba(0,0,0,0.3);
+    --progress-track: #2a3244;
+    --alert-warning-text: #f0c040;
+    --alert-danger-text: #f08a84;
+    --alert-info-text: #6ecbf5;
+    --alert-success-text: #8ad45a;
+    --pill-success-text: #8ad45a;
+    --pill-info-text: #6ecbf5;
+    --pill-warning-text: #f0c040;
+}
+[data-theme="light"] {
+    --primary: #3182B1;
+    --primary-dark: #256a94;
+    --primary-light: rgba(49, 130, 177, 0.1);
+    --secondary: #418F9D;
+    --success: #4C7E1B;
+    --success-light: rgba(76, 126, 27, 0.08);
+    --success-border: rgba(76, 126, 27, 0.25);
+    --warning: #F4AC00;
+    --warning-light: rgba(244, 172, 0, 0.08);
+    --warning-border: rgba(244, 172, 0, 0.25);
+    --danger: #C72F25;
+    --danger-light: rgba(199, 47, 37, 0.08);
+    --danger-border: rgba(199, 47, 37, 0.25);
+    --info: #0EA5E8;
+    --info-light: rgba(14, 165, 232, 0.08);
+    --info-border: rgba(14, 165, 232, 0.25);
+    --bg: #dde2e8;
+    --card-bg: #ffffff;
+    --text: #212B37;
+    --text-muted: #6E829F;
+    --border: #e2e8f0;
+    --purple: #7B76FE;
+    --purple-light: rgba(123, 118, 254, 0.08);
+    --orange: #FE7C58;
+    --teal: #00D8D8;
+    --header-bg: linear-gradient(135deg, #3182B1 0%, #256a94 50%, #418F9D 100%);
+    --card-header-bg: rgba(49, 130, 177, 0.2);
+    --th-bg: rgba(49, 130, 177, 0.2);
+    --th-bg-hover: rgba(49, 130, 177, 0.23);
+    --card-shadow: 0 2px 8px rgba(49, 130, 177, 0.24), 0 1px 3px rgba(0,0,0,0.1);
+    --progress-track: #e9ecef;
+    --alert-warning-text: #8a6600;
+    --alert-danger-text: #a52820;
+    --alert-info-text: #0878a8;
+    --alert-success-text: #3a6112;
+    --pill-success-text: #3a6112;
+    --pill-info-text: #0878a8;
+    --pill-warning-text: #9a6d00;
+}
+[data-theme="light"] .stat-card { background: #eaf1f7; }
+[data-theme="light"] .intro-text { background: #eaf1f7; }
+[data-theme="light"] .search-input { background: #eaf1f7; }
+
+/* ====== RESET ====== */
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, a, img, ul, ol, li,
+header, footer, nav, section, article, aside, button, input, select, textarea,
+table, tr, td, th, form, label, fieldset, legend { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Poppins', sans-serif; background: var(--bg); color: var(--text); line-height: 1.5; }
+.container { max-width: 1400px; margin: 0 auto; padding: 0 24px; }
+main.container { background: var(--card-bg); border-radius: 16px; padding: 0 32px 32px; box-shadow: 0 2px 16px rgba(0,0,0,0.06); margin-top: 30px; margin-bottom: 32px; }
+
+/* ====== HEADER ====== */
+.header { background: linear-gradient(135deg, #1a2332 0%, #15202e 50%, #1a2838 100%); color: white; padding: 36px 0 0; position: relative; overflow: hidden; }
+.header::before { content: ''; position: absolute; top: -50%; right: -10%; width: 500px; height: 500px; background: rgba(255,255,255,0.03); border-radius: 50%; z-index: 0; }
+.header-content { position: relative; z-index: 1; }
+.header-top { display: flex; align-items: flex-start; justify-content: space-between; flex-wrap: wrap; gap: 16px; margin-bottom: 8px; }
+.header-left { display: flex; align-items: center; gap: 16px; }
+.header-logo { height: 40px; }
+.logo-light { display: none; } .logo-dark { display: inline-block; }
+.header h1 { font-size: 1.5rem; font-weight: 700; letter-spacing: -0.5px; }
+.header .subtitle { font-size: 0.95rem; opacity: 0.85; font-weight: 300; margin-top: 2px; }
+.header-badges { display: flex; gap: 8px; align-items: center; margin-top: 10px; }
+/* header-right removed — flags are now in header-breadcrumb-row */
+.header-badge { background: rgba(255,255,255,0.15); padding: 6px 14px; border-radius: 8px; font-size: 0.78rem; display: flex; align-items: center; gap: 6px; backdrop-filter: blur(10px); }
+
+/* ====== LANG SELECTOR ====== */
+.lang-btn { display: inline-flex; align-items: center; gap: 5px; background: rgba(255,255,255,0.08); border: 2px solid transparent; border-radius: 8px; padding: 4px 10px 4px 8px; font-family: 'Poppins', sans-serif; font-size: 0.72rem; font-weight: 600; letter-spacing: 0.3px; color: rgba(255,255,255,0.55); cursor: pointer; transition: all 0.25s; line-height: 1; }
+.lang-btn svg { flex-shrink: 0; }
+.lang-btn:hover { background: rgba(255,255,255,0.18); color: rgba(255,255,255,0.9); }
+.lang-btn.active { border-color: #ffffff; background: rgba(255,255,255,0.22); color: #ffffff; box-shadow: 0 0 8px rgba(255,255,255,0.25); }
+[data-theme="light"] .lang-btn { background: rgba(255,255,255,0.12); color: rgba(255,255,255,0.5); }
+[data-theme="light"] .lang-btn:hover { background: rgba(255,255,255,0.28); color: rgba(255,255,255,0.95); }
+[data-theme="light"] .lang-btn.active { border-color: #ffffff; background: rgba(255,255,255,0.32); color: #ffffff; box-shadow: 0 0 12px rgba(255,255,255,0.4); }
+
+/* ====== TABS ====== */
+.tabs-nav { display: flex; gap: 4px; margin-top: 36px; overflow-x: auto; }
+.tab-btn { padding: 10px 24px; background: rgba(255,255,255,0.1); border: none; border-radius: 10px 10px 0 0; color: rgba(255,255,255,0.7); font-family: 'Poppins', sans-serif; font-size: 0.85rem; font-weight: 500; cursor: pointer; transition: all 0.2s; display: flex; align-items: center; gap: 8px; white-space: nowrap; }
+.tab-btn:hover { background: rgba(255,255,255,0.18); color: white; }
+.tab-btn.active { background: var(--bg); color: var(--primary); font-weight: 600; }
+[data-theme="light"] .header { background: linear-gradient(135deg, #1a2332 0%, #15202e 50%, #1a2838 100%); color: white; }
+[data-theme="light"] .footer { background: linear-gradient(135deg, #1a2332 0%, #15202e 50%, #1a2838 100%); color: white; }
+.tab-btn i { font-size: 1.1rem; }
+.tab-count { background: rgba(255,255,255,0.2); padding: 1px 8px; border-radius: 10px; font-size: 0.68rem; font-weight: 600; }
+.tab-btn.active .tab-count { background: var(--primary-light); color: var(--primary); }
+.tab-content { display: none; padding-top: 24px; padding-bottom: 32px; }
+.tab-content.active { display: block; }
+
+/* ====== STATS ====== */
+.stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; margin-bottom: 28px; }
+.stat-card { background: var(--card-bg); border-radius: 12px; padding: 18px 20px; box-shadow: var(--card-shadow); border: 1px solid var(--border); display: flex; align-items: center; gap: 14px; transition: box-shadow 0.2s, border-color 0.2s, background 0.2s; }
+.stat-card:hover { box-shadow: var(--card-shadow); border-color: var(--primary); background: var(--th-bg-hover); }
+.stat-card-icon { width: 44px; height: 44px; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 1.3rem; color: white; flex-shrink: 0; }
+.stat-card-info { flex: 1; }
+.stat-card-number { font-size: 1.12rem; font-weight: 700; line-height: 1.1; }
+.stat-card-label { font-size: 0.72rem; color: var(--text-muted); font-weight: 500; text-transform: uppercase; letter-spacing: 0.3px; }
+
+/* ====== INTRO TEXT ====== */
+.intro-text { font-size: 0.88rem; color: var(--text-muted); line-height: 1.6; margin-bottom: 24px; padding: 16px 20px; background: var(--card-bg); border-radius: 12px; border: 1px solid var(--border); border-left: 3px solid var(--primary); box-shadow: var(--card-shadow); }
+
+/* ====== CARDS ====== */
+.card { background: var(--card-bg); border-radius: 12px; border: 1px solid var(--border); box-shadow: 0 2px 8px rgba(0,0,0,0.03); overflow: hidden; margin-bottom: 20px; transition: box-shadow 0.2s, border-color 0.2s; }
+.card:hover { box-shadow: var(--card-shadow); border-color: var(--primary); }
+.card:hover > .card-header { background: var(--th-bg-hover); }
+.card-header { display: flex; align-items: center; gap: 10px; padding: 14px 18px; border-bottom: 1px solid var(--border); background: var(--card-header-bg); }
+.card-header-icon { width: 32px; height: 32px; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 1rem; color: white; flex-shrink: 0; }
+.card-title { font-weight: 600; font-size: 0.95rem; flex: 1; }
+.card-badge { padding: 2px 10px; border-radius: 12px; font-size: 0.7rem; font-weight: 600; white-space: nowrap; }
+.card-body { padding: 18px; }
+
+/* ====== ALERTS ====== */
+.alert { padding: 12px 16px; border-radius: 8px; font-size: 0.82rem; margin-bottom: 10px; border: 1px solid; line-height: 1.6; }
+.alert > i:first-child { font-size: 1.1rem; margin-right: 8px; vertical-align: middle; }
+.alert-warning { background: var(--warning-light); border-color: var(--warning-border); color: var(--alert-warning-text); }
+.alert-danger { background: var(--danger-light); border-color: var(--danger-border); color: var(--alert-danger-text); }
+.alert-info { background: var(--info-light); border-color: var(--info-border); color: var(--alert-info-text); }
+.alert-success { background: var(--success-light); border-color: var(--success-border); color: var(--alert-success-text); }
+
+/* ====== PILLS ====== */
+.pill { display: inline-block; padding: 2px 10px; border-radius: 12px; font-size: 0.7rem; font-weight: 600; }
+.pill-success { background: var(--success-light); color: var(--pill-success-text); border: 1px solid var(--success-border); }
+.pill-info { background: var(--info-light); color: var(--pill-info-text); border: 1px solid var(--info-border); }
+.pill-warning { background: var(--warning-light); color: var(--pill-warning-text); border: 1px solid var(--warning-border); }
+.pill-danger { background: var(--danger-light); color: var(--alert-danger-text); border: 1px solid var(--danger-border); }
+
+/* ====== TABLE ====== */
+.table-wrapper { overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; font-size: 0.82rem; }
+th { text-align: left; padding: 10px 14px; background: var(--th-bg); font-weight: 600; border-bottom: 2px solid var(--border); font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.3px; color: var(--text-muted); transition: background 0.2s; }
+thead tr:hover th { background: var(--th-bg-hover); }
+td { padding: 10px 14px; border-bottom: 1px solid var(--border); }
+tr:hover { background: var(--primary-light); }
+code { background: var(--bg); padding: 2px 6px; border-radius: 4px; font-size: 0.78rem; border: 1px solid var(--border); }
+.col-name { font-family: 'Courier New', monospace; font-weight: 600; color: var(--primary); font-size: 0.78rem; }
+.col-type { font-family: 'Courier New', monospace; font-size: 0.72rem; color: var(--text-muted); }
+
+/* ====== SEARCH ====== */
+.search-container { position: relative; margin-bottom: 24px; }
+.search-icon { position: absolute; left: 16px; top: 50%; transform: translateY(-50%); color: var(--text-muted); font-size: 1.1rem; }
+.search-input { width: 100%; padding: 12px 16px 12px 44px; background: var(--card-bg); border: 1px solid var(--border); border-radius: 12px; color: var(--text); font-family: 'Poppins', sans-serif; font-size: 0.88rem; outline: none; transition: border-color 0.2s; }
+.search-input:focus { border-color: var(--primary); }
+.search-input::placeholder { color: var(--text-muted); }
+
+/* ====== WIKILINKS ====== */
+a.wikilink { color: var(--primary); text-decoration: none; border-bottom: 1px dotted var(--primary); transition: all 0.2s; }
+a.wikilink:hover { color: var(--info); border-bottom-style: solid; }
+span.broken-link { color: var(--warning); border-bottom: 1px dashed var(--warning); cursor: help; }
+
+/* ====== RELATIONSHIP CARDS ====== */
+.rel-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 12px; }
+.rel-card { background: var(--card-header-bg); border: 1px solid var(--border); border-radius: 10px; padding: 14px 16px; display: flex; align-items: center; gap: 12px; transition: all 0.2s; text-decoration: none; color: var(--text); }
+.rel-card:hover { border-color: var(--primary); box-shadow: var(--card-shadow); }
+.rel-icon { width: 36px; height: 36px; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 1rem; color: white; flex-shrink: 0; }
+.rel-table { font-weight: 600; font-size: 0.85rem; }
+.rel-col { font-family: 'Courier New', monospace; font-size: 0.72rem; color: var(--text-muted); }
+.rel-desc { font-size: 0.78rem; color: var(--text-muted); margin-top: 2px; }
+
+/* ====== SQL BLOCKS ====== */
+.sql-block { background: var(--card-header-bg); border: 1px solid var(--border); border-radius: 12px; overflow: hidden; margin-bottom: 16px; }
+.sql-header { padding: 10px 16px; border-bottom: 1px solid var(--border); font-size: 0.82rem; font-weight: 600; display: flex; align-items: center; gap: 8px; background: var(--th-bg); }
+.sql-header i { color: var(--purple); }
+pre.sql-code { margin: 0; padding: 16px; font-family: 'Courier New', monospace; font-size: 0.82rem; line-height: 1.6; overflow-x: auto; color: var(--text); white-space: pre; }
+.kw { color: var(--purple); font-weight: 600; }
+.fn { color: var(--warning); }
+.str { color: var(--success); }
+
+/* ====== NOTE ITEMS ====== */
+.note-item { padding: 12px 16px; border-left: 3px solid var(--primary); margin-bottom: 8px; background: var(--card-header-bg); border-radius: 0 8px 8px 0; font-size: 0.82rem; line-height: 1.5; }
+
+/* ====== FILTER LIST ====== */
+.filter-list { list-style: none; }
+.filter-list li { padding: 10px 14px; border-bottom: 1px solid var(--border); font-size: 0.82rem; display: flex; align-items: center; gap: 12px; }
+.filter-list li:last-child { border-bottom: none; }
+
+/* ====== FOOTER ====== */
+.footer { background: linear-gradient(135deg, #1a2332 0%, #15202e 50%, #1a2838 100%); color: white; padding: 36px 0; position: relative; overflow: hidden; margin-top: 0; }
+.footer::before { content: ''; position: absolute; bottom: -50%; left: -10%; width: 500px; height: 500px; background: rgba(255,255,255,0.03); border-radius: 50%; z-index: 0; }
+.footer-content { position: relative; z-index: 1; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 24px; }
+.footer-left { display: flex; align-items: center; gap: 16px; }
+.footer-avatar { width: 48px; height: 48px; border-radius: 12px; background: rgba(255,255,255,0.15); display: flex; align-items: center; justify-content: center; font-size: 1.1rem; font-weight: 700; backdrop-filter: blur(10px); }
+.footer-author-name { font-size: 0.95rem; font-weight: 600; }
+.footer-author-role { font-size: 0.78rem; opacity: 0.7; }
+.footer-author-email { font-size: 0.72rem; opacity: 0.55; }
+.footer-author-email a { color: rgba(255,255,255,0.55); text-decoration: none; }
+.footer-author-email a:hover { color: white; text-decoration: underline; }
+.footer-author-date { font-size: 0.72rem; opacity: 0.55; }
+.footer-right { text-align: right; }
+.footer-doc-title { font-size: 0.85rem; font-weight: 500; opacity: 0.9; }
+.footer-doc-detail { font-size: 0.72rem; opacity: 0.6; margin-top: 2px; }
+.footer-seal { display: flex; align-items: center; gap: 8px; margin-top: 20px; padding-top: 16px; border-top: 1px solid rgba(255,255,255,0.12); font-size: 0.7rem; opacity: 0.5; justify-content: center; }
+.footer-seal i { font-size: 1rem; }
+
+/* ====== BREADCRUMB ROW ====== */
+.header-breadcrumb-row { display: flex; align-items: center; justify-content: space-between; margin-bottom: 16px; }
+.header-right-top { display: flex; align-items: center; }
+.breadcrumb { font-size: 0.78rem; color: rgba(255,255,255,0.5); }
+.breadcrumb a { color: rgba(255,255,255,0.65); text-decoration: none; }
+.breadcrumb a:hover { color: white; text-decoration: underline; }
+.breadcrumb .sep { margin: 0 6px; opacity: 0.4; }
+.breadcrumb .current { color: rgba(255,255,255,0.9); font-weight: 500; }
+
+/* ====== BACK TO TOP ====== */
+.back-to-top { position: fixed; bottom: 32px; right: 32px; width: 44px; height: 44px; border-radius: 12px; background: var(--primary); color: white; border: none; cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 1.3rem; box-shadow: 0 4px 16px rgba(91,164,217,0.35); opacity: 0; visibility: hidden; transform: translateY(10px); transition: opacity 0.3s, visibility 0.3s, transform 0.3s, background 0.2s; z-index: 999; }
+.back-to-top.visible { opacity: 1; visibility: visible; transform: translateY(0); }
+.back-to-top:hover { background: var(--primary-dark); box-shadow: 0 6px 20px rgba(91,164,217,0.5); }
+
+/* ====== UTILITIES ====== */
+.bg-primary { background: var(--primary); } .bg-success { background: var(--success); }
+.bg-info { background: var(--info); } .bg-warning { background: var(--warning); }
+.bg-danger { background: var(--danger); } .bg-purple { background: var(--purple); }
+.bg-orange { background: var(--orange); } .bg-teal { background: var(--teal); }
+.bg-secondary { background: var(--secondary); }
+
+/* ====== RESPONSIVE ====== */
+@media (max-width: 768px) {
+    .stats-grid { grid-template-columns: 1fr; }
+    .header h1 { font-size: 1.2rem; }
+    .tabs-nav { flex-wrap: wrap; }
+    .tab-btn { padding: 8px 14px; font-size: 0.78rem; }
+    .rel-grid { grid-template-columns: 1fr; }
+}
+@media print {
+    body { background: white; color: #212B37; }
+    .header { background: #3182B1 !important; }
+    .tab-btn { display: none; }
+    .tab-content { display: block !important; page-break-inside: avoid; }
+    .card { break-inside: avoid; }
+    .search-container, .back-to-top { display: none; }
+}
+
+    </style>
+</head>
+<body>
+
+<!-- ====== DATA (injected by build script) ====== -->
+<script>
+const DATA = {{DATA_JSON}};
+</script>
+
+<!-- ====== HEADER ====== -->
+<header class="header">
+    <div class="container">
+        <div class="header-content">
+            <div class="header-breadcrumb-row">
+                <nav class="breadcrumb" id="breadcrumb"></nav>
+                <div class="header-right-top">
+                    <div style="display:flex; gap:8px; align-items:center;">
+                        <button class="lang-btn active" onclick="switchLang('pt')" id="lang-pt" title="Português">
+                            <svg width="20" height="14" viewBox="0 0 20 14"><rect width="20" height="14" rx="1" fill="#009739"/><polygon points="10,1.5 19,7 10,12.5 1,7" fill="#FEDD00"/><circle cx="10" cy="7" r="3.2" fill="#012169"/><rect x="7.8" y="6.2" width="4.4" height="0.4" rx="0.2" fill="#fff" transform="rotate(-8 10 7)"/></svg>
+                            <span>PT</span>
+                        </button>
+                        <button class="lang-btn" onclick="switchLang('en')" id="lang-en" title="English">
+                            <svg width="20" height="14" viewBox="0 0 20 14"><rect width="20" height="14" rx="1" fill="#B22234"/><rect y="1.08" width="20" height="1.08" fill="#fff"/><rect y="3.23" width="20" height="1.08" fill="#fff"/><rect y="5.38" width="20" height="1.08" fill="#fff"/><rect y="7.54" width="20" height="1.08" fill="#fff"/><rect y="9.69" width="20" height="1.08" fill="#fff"/><rect y="11.85" width="20" height="1.08" fill="#fff"/><rect width="8" height="7.54" fill="#3C3B6E"/></svg>
+                            <span>EN</span>
+                        </button>
+                        <button class="lang-btn" onclick="switchLang('es')" id="lang-es" title="Español">
+                            <svg width="20" height="14" viewBox="0 0 20 14"><rect width="20" height="14" rx="1" fill="#AA151B"/><rect y="3" width="20" height="8" fill="#F1BF00"/></svg>
+                            <span>ES</span>
+                        </button>
+                        <div class="header-badge" style="border:none;cursor:pointer" onclick="toggleTheme()" title="Alternar tema">
+                            <i id="theme-icon" class="ri-sun-line"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-top">
+                <div class="header-left">
+                    <img class="header-logo logo-dark" src="{{LOGO_DARK_PATH}}" alt="Logo">
+                    <img class="header-logo logo-light" src="{{LOGO_LIGHT_PATH}}" alt="Logo">
+                    <div>
+                        <h1><i class="ri-database-2-line" style="margin-right:8px"></i><span id="h-title"></span></h1>
+                        <div class="subtitle" id="h-subtitle"></div>
+                        <div class="header-badges" id="h-badges"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="tabs-nav" id="tabs-nav"></div>
+        </div>
+    </div>
+</header>
+
+<!-- ====== MAIN ====== -->
+<main class="container">
+    <div id="tab-overview" class="tab-content active"></div>
+    <div id="tab-columns" class="tab-content"></div>
+    <div id="tab-relationships" class="tab-content"></div>
+    <div id="tab-sql" class="tab-content"></div>
+</main>
+
+<!-- ====== FOOTER ====== -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-left">
+                <div class="footer-avatar" id="f-initials"></div>
+                <div>
+                    <div class="footer-author-name" id="f-name"></div>
+                    <div class="footer-author-role" id="f-role"></div>
+                    <div class="footer-author-email" id="f-email"></div>
+                </div>
+            </div>
+            <div class="footer-right">
+                <div class="footer-doc-title" id="f-doc-title"></div>
+                <div class="footer-doc-detail" id="f-doc-detail"></div>
+            </div>
+        </div>
+        <div class="footer-seal" id="f-seal"></div>
+    </div>
+</footer>
+
+<!-- ====== BACK TO TOP ====== -->
+<button class="back-to-top" id="backToTop" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Voltar ao topo">
+    <i class="ri-arrow-up-line"></i>
+</button>
+
+<script>
+/* ====== i18n ====== */
+// Resolve lang: URL param > localStorage > default
+var _urlLang = new URLSearchParams(window.location.search).get('lang');
+var currentLang = _urlLang || localStorage.getItem('preferred-lang') || 'pt';
+
+// Build i18n lookup map: { "texto br": {en: "...", es: "..."} }
+var _i18nMap = {};
+(DATA.i18n || []).forEach(function(item) {
+    if (item.br) {
+        _i18nMap[item.br] = { en: item.en, es: item.es };
+        // Also index lowercase for fuzzy matching
+        _i18nMap[item.br.toLowerCase()] = { en: item.en, es: item.es };
+    }
+});
+
+function _lookup(text) {
+    if (!text || currentLang === 'pt') return null;
+    // Strip HTML tags for matching
+    var clean = text.replace(/<[^>]+>/g, '').trim();
+    // 1. Exact match
+    var found = _i18nMap[clean] || _i18nMap[clean.toLowerCase()];
+    if (found && found[currentLang]) return found[currentLang];
+    // 2. Substring match — find longest i18n key contained in the text
+    var bestKey = null;
+    var bestLen = 0;
+    for (var key in _i18nMap) {
+        if (key.length > bestLen && clean.indexOf(key) >= 0 && _i18nMap[key][currentLang]) {
+            // Only match if it's a substantial portion (>60% of the text)
+            if (key.length > clean.length * 0.6) {
+                bestKey = key;
+                bestLen = key.length;
+            }
+        }
+    }
+    if (bestKey) return _i18nMap[bestKey][currentLang];
+    return null;
+}
+
+function t(obj) {
+    if (!obj) return '';
+    // If it's an i18n object {pt, en, es}
+    if (typeof obj === 'object' && obj !== null && !Array.isArray(obj)) {
+        // If target lang exists, use it directly
+        if (obj[currentLang]) return obj[currentLang];
+        // Otherwise, take PT value and try i18n lookup
+        var ptVal = obj['pt'] || obj['en'] || '';
+        if (currentLang === 'pt') return ptVal;
+        // Lookup PT value in i18n map
+        var translated = _lookup(ptVal);
+        if (translated) return translated;
+        return _multiReplace(ptVal);
+    }
+    // If it's a string, try lookup in i18n map
+    if (typeof obj === 'string') {
+        if (currentLang === 'pt') return obj;
+        // First try exact lookup
+        var translated = _lookup(obj);
+        if (translated) return translated;
+        // Then try multi-replace: find all i18n keys contained in text and replace
+        return _multiReplace(obj);
+    }
+    return String(obj);
+}
+
+function _multiReplace(text) {
+    if (!text || currentLang === 'pt') return text;
+    var clean = text.replace(/<[^>]+>/g, '');
+    var result = text;
+    // Sort keys by length descending (longest match first)
+    var keys = Object.keys(_i18nMap).filter(function(k) {
+        return k.length > 5 && _i18nMap[k][currentLang] && clean.indexOf(k) >= 0;
+    }).sort(function(a, b) { return b.length - a.length; });
+
+    if (keys.length === 0) return text;
+
+    // For long texts, rebuild by replacing BR segments with translations
+    // Strip HTML, replace, then we lose formatting — acceptable tradeoff
+    var working = clean;
+    keys.forEach(function(key) {
+        var translated = _i18nMap[key][currentLang];
+        if (translated && working.indexOf(key) >= 0) {
+            working = working.replace(key, translated);
+        }
+    });
+
+    // If we made changes, return the translated version (without HTML formatting)
+    if (working !== clean) return working;
+    return text;
+}
+
+function tList(arr) {
+    if (!arr) return [];
+    // If it's an i18n object {pt: [...], en: [...], es: [...]}
+    if (!Array.isArray(arr) && typeof arr === 'object') {
+        var ptList = arr['pt'] || [];
+        if (currentLang === 'pt') return ptList;
+        // Translate each PT item via lookup
+        return ptList.map(function(item) { return t(item); });
+    }
+    // If it's a plain array, translate each item
+    return arr.map(function(item) { return t(item); });
+}
+
+function switchLang(lang) {
+    // Save current active tab before re-render
+    var activeTab = document.querySelector('.tab-btn.active');
+    var activeTabId = activeTab ? activeTab.getAttribute('data-tab') : null;
+
+    currentLang = lang;
+    localStorage.setItem('preferred-lang', lang);
+    document.querySelectorAll('.lang-btn').forEach(function(b) { b.classList.remove('active'); });
+    var btn = document.getElementById('lang-' + lang);
+    if (btn) btn.classList.add('active');
+    render();
+
+    // Restore active tab
+    if (activeTabId) switchTab(activeTabId);
+}
+
+/* ====== THEME ====== */
+function toggleTheme() {
+    var current = document.body.getAttribute('data-theme');
+    document.body.setAttribute('data-theme', current === 'light' ? '' : 'light');
+    document.getElementById('theme-icon').className = current === 'light' ? 'ri-sun-line' : 'ri-moon-line';
+    localStorage.setItem('theme', document.body.getAttribute('data-theme') || 'dark');
+}
+
+/* ====== TABS ====== */
+function switchTab(id) {
+    document.querySelectorAll('.tab-btn').forEach(function(b) { b.classList.remove('active'); });
+    document.querySelectorAll('.tab-content').forEach(function(c) { c.classList.remove('active'); });
+    document.querySelectorAll('.tab-btn').forEach(function(b) {
+        if (b.getAttribute('data-tab') === id) b.classList.add('active');
+    });
+    var el = document.getElementById('tab-' + id);
+    if (el) el.classList.add('active');
+}
+
+/* ====== LINK RESOLVER ====== */
+function resolveLink(tableName, currentModule) {
+    if (!DATA.table_map) return { href: '#', cls: 'broken-link' };
+    var upper = tableName.toUpperCase();
+    var targetModule = DATA.table_map[upper];
+    if (!targetModule) return { href: '#', cls: 'broken-link', title: 'Link não resolvido' };
+    if (targetModule === currentModule) {
+        return { href: './' + tableName.toLowerCase() + '.html', cls: 'wikilink' };
+    }
+    return { href: '../../' + targetModule + '/tables/' + tableName.toLowerCase() + '.html', cls: 'wikilink' };
+}
+
+function langParam() {
+    return currentLang !== 'pt' ? '?lang=' + currentLang : '';
+}
+
+function linkHtml(tableName) {
+    var mod = DATA.meta.module_code || '';
+    var r = resolveLink(tableName, mod);
+    if (r.cls === 'broken-link') {
+        return '<span class="broken-link" title="' + (r.title || '') + '">' + tableName + '</span>';
+    }
+    return '<a href="' + r.href + langParam() + '" class="wikilink">' + tableName + '</a>';
+}
+
+/* ====== CATEGORY STYLING ====== */
+var catColors = {
+    'PK': 'primary', 'FK': 'info', 'Financeiro': 'success', 'Financial': 'success', 'Financiero': 'success',
+    'Classificação': 'purple', 'Classification': 'purple', 'Clasificación': 'purple',
+    'Contabilidade': 'orange', 'Accounting': 'orange', 'Contabilidad': 'orange',
+    'Data': 'teal', 'Date': 'teal', 'Fecha': 'teal',
+    'Texto livre': 'secondary', 'Free Text': 'secondary', 'Texto libre': 'secondary',
+    'Referência cruzada': 'warning', 'Cross-reference': 'warning', 'Referencia cruzada': 'warning',
+    'Identificação': 'info', 'Identification': 'info', 'Identificación': 'info',
+    'Sistema': 'secondary', 'System': 'secondary',
+    'Aprovação': 'warning', 'Approval': 'warning', 'Aprobación': 'warning',
+    'Auditoria': 'secondary', 'Audit': 'secondary', 'Auditoría': 'secondary',
+    'DFF': 'purple', 'Multi-Org': 'orange'
+};
+function catPill(cat) {
+    var c = catColors[cat] || 'info';
+    return '<span class="pill pill-' + (c === 'purple' || c === 'orange' || c === 'teal' || c === 'secondary' ? 'info' : c) + '" style="' +
+        (c === 'purple' ? 'background:var(--purple-light);color:var(--purple);border-color:rgba(155,150,255,0.3)' :
+         c === 'orange' ? 'background:rgba(255,148,115,0.12);color:var(--orange);border-color:rgba(255,148,115,0.3)' :
+         c === 'teal' ? 'background:rgba(45,212,191,0.12);color:var(--teal);border-color:rgba(45,212,191,0.3)' :
+         c === 'secondary' ? 'background:rgba(91,184,196,0.12);color:var(--secondary);border-color:rgba(91,184,196,0.3)' : '') +
+        '">' + cat + '</span>';
+}
+
+function confPill(pct) {
+    if (pct >= 81) return '<span class="pill pill-success">🟢 ' + pct + '%</span>';
+    if (pct >= 51) return '<span class="pill pill-warning">🟡 ' + pct + '%</span>';
+    return '<span class="pill pill-danger">🔴 ' + pct + '%</span>';
+}
+
+/* ====== RENDER ====== */
+function render() {
+    var d = DATA;
+    var m = d.meta;
+
+    // Header
+    document.getElementById('h-title').textContent = m.table_name;
+    document.getElementById('h-subtitle').textContent = t(m.subtitle) + ' — ' + t({pt:'Dicionário de Dados', en:'Data Dictionary', es:'Diccionario de Datos'});
+    document.getElementById('h-badges').innerHTML =
+        '<div class="header-badge"><i class="ri-apps-line"></i> ' + m.module + '</div>' +
+        '<div class="header-badge"><i class="ri-file-list-3-line"></i> ' + m.id + '</div>' +
+        '<div class="header-badge"><i class="ri-calendar-line"></i> ' + m.created_at + '</div>';
+
+    // Tabs
+    var tabLabels = {
+        overview: {pt:'Visão Geral', en:'Overview', es:'Visión General'},
+        columns: {pt:'Colunas', en:'Columns', es:'Columnas'},
+        relationships: {pt:'Relacionamentos', en:'Relationships', es:'Relaciones'},
+        sql: {pt:'SQL', en:'SQL', es:'SQL'}
+    };
+    document.getElementById('tabs-nav').innerHTML =
+        '<button class="tab-btn active" data-tab="overview" onclick="switchTab(\'overview\')"><i class="ri-information-line"></i> ' + t(tabLabels.overview) + '</button>' +
+        '<button class="tab-btn" data-tab="columns" onclick="switchTab(\'columns\')"><i class="ri-table-line"></i> ' + t(tabLabels.columns) + ' <span class="tab-count">' + d.columns.length + '</span></button>' +
+        '<button class="tab-btn" data-tab="relationships" onclick="switchTab(\'relationships\')"><i class="ri-git-branch-line"></i> ' + t(tabLabels.relationships) + ' <span class="tab-count">' + (d.relationships.parents.length + d.relationships.children.length) + '</span></button>' +
+        '<button class="tab-btn" data-tab="sql" onclick="switchTab(\'sql\')"><i class="ri-code-s-slash-line"></i> SQL <span class="tab-count">' + d.sql.length + '</span></button>';
+
+    // Tab 1: Overview
+    var statsHtml =
+        '<div class="stats-grid">' +
+        '<div class="stat-card"><div class="stat-card-icon bg-primary"><i class="ri-table-line"></i></div><div class="stat-card-info"><div class="stat-card-number" style="color:var(--primary)">' + d.columns.length + '</div><div class="stat-card-label">' + t(tabLabels.columns) + '</div></div></div>' +
+        '<div class="stat-card"><div class="stat-card-icon bg-info"><i class="ri-links-line"></i></div><div class="stat-card-info"><div class="stat-card-number" style="color:var(--info)">' + d.relationships.parents.length + '</div><div class="stat-card-label">Foreign Keys</div></div></div>' +
+        '<div class="stat-card"><div class="stat-card-icon bg-success"><i class="ri-shield-check-line"></i></div><div class="stat-card-info"><div class="stat-card-number" style="color:var(--success)">' + d.stats.avg_confidence + '%</div><div class="stat-card-label">' + t({pt:'Confiança Média', en:'Avg Confidence', es:'Confianza Promedio'}) + '</div></div></div>' +
+        '<div class="stat-card"><div class="stat-card-icon bg-purple"><i class="ri-apps-line"></i></div><div class="stat-card-info"><div class="stat-card-number" style="color:var(--purple)">' + d.stats.categories + '</div><div class="stat-card-label">' + t({pt:'Categorias', en:'Categories', es:'Categorías'}) + '</div></div></div>' +
+        '</div>';
+
+    var overviewHtml = statsHtml +
+        '<div class="intro-text">' + t(d.overview) + '</div>';
+
+    if (d.alert) {
+        overviewHtml += '<div class="alert alert-info"><i class="ri-information-line"></i> ' + t(d.alert) + '</div>';
+    }
+
+    // Business purpose
+    if (d.business_purpose) {
+        var bpItems = tList(d.business_purpose);
+        if (Array.isArray(bpItems) && bpItems.length) {
+            overviewHtml += '<div class="card"><div class="card-header"><div class="card-header-icon bg-info"><i class="ri-briefcase-line"></i></div><div class="card-title">' + t({pt:'Propósito de Negócio', en:'Business Purpose', es:'Propósito de Negocio'}) + '</div></div><div class="card-body"><ul style="list-style:none">';
+            bpItems.forEach(function(item) {
+                overviewHtml += '<li style="padding:8px 0;border-bottom:1px solid var(--border);font-size:0.85rem">' + item + '</li>';
+            });
+            overviewHtml += '</ul></div></div>';
+        }
+    }
+
+    // Notes
+    if (d.notes) {
+        var notes = tList(d.notes);
+        if (Array.isArray(notes)) {
+            overviewHtml += '<div class="card"><div class="card-header"><div class="card-header-icon bg-warning"><i class="ri-error-warning-line"></i></div><div class="card-title">' + t({pt:'Observações', en:'Notes', es:'Observaciones'}) + '</div></div><div class="card-body">';
+            notes.forEach(function(n) {
+                overviewHtml += '<div class="note-item">' + n + '</div>';
+            });
+            overviewHtml += '</div></div>';
+        }
+    }
+
+    document.getElementById('tab-overview').innerHTML = overviewHtml;
+
+    // Tab 2: Columns
+    var colHeaders = {pt:['#','Coluna','Tipo','Obrigatório','Categoria','Descrição','FK','Confiança'], en:['#','Column','Type','Required','Category','Description','FK','Confidence'], es:['#','Columna','Tipo','Obligatorio','Categoría','Descripción','FK','Confianza']};
+    var headers = colHeaders[currentLang] || colHeaders['pt'];
+    var colHtml = '<div class="search-container"><i class="ri-search-line search-icon"></i><input class="search-input" type="text" placeholder="' + t({pt:'Filtrar colunas...', en:'Filter columns...', es:'Filtrar columnas...'}) + '" oninput="filterColumns(this.value)"></div>';
+    colHtml += '<div class="table-wrapper"><table id="columns-table"><thead><tr>';
+    headers.forEach(function(h) { colHtml += '<th>' + h + '</th>'; });
+    colHtml += '</tr></thead><tbody>';
+    d.columns.forEach(function(col) {
+        var fkHtml = col.fk ? linkHtml(col.fk) : '—';
+        colHtml += '<tr data-search="' + (col.name + ' ' + t(col.description) + ' ' + t(col.category)).toLowerCase() + '">' +
+            '<td>' + col.num + '</td>' +
+            '<td class="col-name">' + col.name + '</td>' +
+            '<td class="col-type">' + col.type + '</td>' +
+            '<td style="text-align:center">' + (col.nullable ? '' : '<i class="ri-checkbox-circle-fill" style="color:var(--success);font-size:1.1rem" title="' + t({pt:'Obrigatório',en:'Required',es:'Obligatorio'}) + '"></i>') + '</td>' +
+            '<td>' + catPill(t(col.category)) + '</td>' +
+            '<td>' + t(col.description) + '</td>' +
+            '<td>' + fkHtml + '</td>' +
+            '<td>' + confPill(col.confidence) + '</td>' +
+            '</tr>';
+    });
+    colHtml += '</tbody></table></div>';
+    document.getElementById('tab-columns').innerHTML = colHtml;
+
+    // Tab 3: Relationships (table format)
+    var relHtml = '';
+    var relHeaders = {
+        pt: ['Tabela','Coluna (FK)','Descrição','Módulo'],
+        en: ['Table','Column (FK)','Description','Module'],
+        es: ['Tabla','Columna (FK)','Descripción','Módulo']
+    };
+    var rh = relHeaders[currentLang] || relHeaders['pt'];
+
+    function relTable(items, title, iconClass, bgClass) {
+        if (!items.length) return '';
+        var html = '<div class="card"><div class="card-header"><div class="card-header-icon ' + bgClass + '"><i class="' + iconClass + '"></i></div><div class="card-title">' + title + '</div><div class="card-badge pill-info">' + items.length + '</div></div><div class="card-body"><div class="table-wrapper"><table><thead><tr>';
+        rh.forEach(function(h) { html += '<th>' + h + '</th>'; });
+        html += '</tr></thead><tbody>';
+        items.forEach(function(r) {
+            var link = resolveLink(r.table, m.module_code);
+            var mod = DATA.table_map ? (DATA.table_map[r.table.toUpperCase()] || '?') : '?';
+            html += '<tr>' +
+                '<td class="col-name">' + (link.cls === 'wikilink' ? '<a href="' + link.href + langParam() + '" class="wikilink">' + r.table + '</a>' : '<span class="broken-link">' + r.table + '</span>') + '</td>' +
+                '<td>' + (r.column ? '<code>' + r.column + '</code>' : '—') + '</td>' +
+                '<td>' + t(r.desc) + '</td>' +
+                '<td><span class="pill pill-info">' + mod + '</span></td>' +
+                '</tr>';
+        });
+        html += '</tbody></table></div></div></div>';
+        return html;
+    }
+
+    relHtml += relTable(d.relationships.parents,
+        t({pt:'Tabelas-pai (FK de entrada)', en:'Parent Tables (Incoming FK)', es:'Tablas padre (FK de entrada)'}),
+        'ri-arrow-up-line', 'bg-info');
+    relHtml += relTable(d.relationships.children,
+        t({pt:'Tabelas-filha (FK de saída)', en:'Child Tables (Outgoing FK)', es:'Tablas hijo (FK de salida)'}),
+        'ri-arrow-down-line', 'bg-success');
+
+    document.getElementById('tab-relationships').innerHTML = relHtml;
+
+    // Tab 4: SQL
+    var sqlHtml = '';
+    d.sql.forEach(function(q) {
+        sqlHtml += '<div class="sql-block"><div class="sql-header"><i class="ri-code-s-slash-line"></i> ' + t(q.title) + '</div><pre class="sql-code">' + q.code + '</pre></div>';
+    });
+    if (d.filters && d.filters.length) {
+        sqlHtml += '<div class="card"><div class="card-header"><div class="card-header-icon bg-warning"><i class="ri-filter-line"></i></div><div class="card-title">' + t({pt:'Filtros comuns', en:'Common Filters', es:'Filtros comunes'}) + '</div></div><div class="card-body"><ul class="filter-list">';
+        d.filters.forEach(function(f) {
+            sqlHtml += '<li><code>' + f.code + '</code> <span>' + t(f.desc) + '</span></li>';
+        });
+        sqlHtml += '</ul></div></div>';
+    }
+    document.getElementById('tab-sql').innerHTML = sqlHtml;
+
+    // Footer
+    document.getElementById('f-initials').textContent = m.author_initials || '';
+    document.getElementById('f-name').textContent = m.author_name || '';
+    document.getElementById('f-role').textContent = m.author_role || '';
+    var email = m.author_email || '';
+    document.getElementById('f-email').innerHTML = email ? '<a href="mailto:' + email + '">' + email + '</a>' : '';
+    document.getElementById('f-doc-title').textContent = (m.company || '') + ' · ' + m.id;
+    document.getElementById('f-doc-detail').textContent = m.table_name + ' · ' + m.module;
+    document.getElementById('f-seal').innerHTML = '<i class="ri-shield-check-line"></i> ' + t({pt:'Criado por', en:'Created by', es:'Creado por'}) + ' ' + (m.author_name || '') + ' · ' + (m.area || '');
+
+    // Breadcrumb (always in English)
+    var modCode = m.module_code || '';
+    var modName = m.module || '';
+    document.getElementById('breadcrumb').innerHTML =
+        '<a href="../../../index.html">Oracle Fusion Data Dictionary</a><span class="sep">›</span>' +
+        '<a href="../index.html">' + modCode + ' - ' + modName + '</a><span class="sep">›</span>' +
+        '<span class="current">' + m.table_name + '</span>';
+
+    // Convert [[wikilinks]] in all rendered content
+    convertWikilinks();
+}
+
+/* ====== WIKILINK CONVERTER ====== */
+function convertWikilinks() {
+    // Find all [[table_name]] in rendered HTML and convert to <a> links
+    var containers = document.querySelectorAll('.tab-content, .intro-text, .note-item, .card-body');
+    var re = /\[\[([^\]]+)\]\]/g;
+    containers.forEach(function(el) {
+        if (!re.test(el.innerHTML)) return;
+        el.innerHTML = el.innerHTML.replace(re, function(match, name) {
+            var link = resolveLink(name, DATA.meta.module_code || '');
+            if (link.cls === 'broken-link') {
+                return '<span class="broken-link" title="Link not found">' + name + '</span>';
+            }
+            return '<a href="' + link.href + langParam() + '" class="wikilink">' + name + '</a>';
+        });
+    });
+}
+
+/* ====== COLUMN FILTER ====== */
+function filterColumns(query) {
+    var q = query.toLowerCase().trim();
+    var rows = document.querySelectorAll('#columns-table tbody tr');
+    rows.forEach(function(row) {
+        var text = row.getAttribute('data-search') || '';
+        row.style.display = !q || text.indexOf(q) >= 0 ? '' : 'none';
+    });
+}
+
+/* ====== INIT ====== */
+(function() {
+    var savedTheme = localStorage.getItem('theme');
+    if (savedTheme === 'light') {
+        document.body.setAttribute('data-theme', 'light');
+        document.getElementById('theme-icon').className = 'ri-moon-line';
+    }
+
+    // Render first in PT (default)
+    render();
+
+    // Then switch lang if URL param or localStorage says so
+    var urlLang = new URLSearchParams(window.location.search).get('lang');
+    var targetLang = urlLang || localStorage.getItem('preferred-lang');
+    if (targetLang && targetLang !== 'pt') {
+        switchLang(targetLang);
+    }
+
+    // Back to top
+    var btn = document.getElementById('backToTop');
+    window.addEventListener('scroll', function() {
+        btn.classList.toggle('visible', window.scrollY > 300);
+    });
+})();
+</script>
+
+</body>
+</html>

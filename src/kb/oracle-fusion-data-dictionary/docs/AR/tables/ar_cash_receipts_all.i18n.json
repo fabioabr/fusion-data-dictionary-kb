@@ -1,0 +1,673 @@
+{
+  "source": "ar_cash_receipts_all.md",
+  "source_hash": "aafb4a6761ebaa04269d56a0941f45ba",
+  "translated_at": "2026-03-25",
+  "items": [
+    {
+      "id": 1,
+      "br": "Visão Geral",
+      "en": "Overview",
+      "es": "Visión general"
+    },
+    {
+      "id": 2,
+      "br": "Armazena um registro para cada recebimento (receipt) do módulo Accounts Receivable. Cada linha representa um recebimento individual, contendo valor, moeda, data, status do ciclo de vida (APP, UNAPP, UNID, NSF, REV, STOP) e referência ao cliente pagador. É a tabela central para rastreamento de todos os recebimentos de caixa, sejam eles manuais, automáticos ou importados via interface.",
+      "en": "Stores a record for each receipt from the Accounts Receivable module. Each row represents an individual receipt, containing value, currency, date, status (APP, UNAPP, UNID, NSF, REV, STOP) and reference to the payer customer. It is the central table for tracking all cash receipts, whether manual, automatic or imported via interface.",
+      "es": "Almacena un registro para cada cobro del módulo Accounts Receivable. Cada fila representa un cobro individual, que contiene valor, moneda, fecha, estado del ciclo de vida (APP, UNAPP, UNID, NSF, REV, STOP) y referencia al cliente pagador. Es la tabla central para el seguimiento de todos los cobros de efectivo, ya sean manuales, automáticos o importados a través de la interfaz."
+    },
+    {
+      "id": 3,
+      "br": "Sufixo _ALL",
+      "en": "_ALL suffix",
+      "es": "Sufijo _ALL"
+    },
+    {
+      "id": 4,
+      "br": "O sufixo _ALL indica que a tabela armazena dados de todas as business units (multi-org). O filtro por ORG_ID é necessário para consultas por organização específica.",
+      "en": "The _ALL suffix indicates that the table stores data for all business units (multi-org). Filtering by ORG_ID is necessary for queries by specific organization.",
+      "es": "El sufijo _ALL indica que la tabla almacena datos de todas las business units (multi-org). Se requiere el filtro por ORG_ID para consultas específicas de organización."
+    },
+    {
+      "id": 5,
+      "br": "Propósito de Negócio",
+      "en": "Business Purpose",
+      "es": "Propósito de negocio"
+    },
+    {
+      "id": 6,
+      "br": "Esta tabela é utilizada nos seguintes processos:",
+      "en": "This table is used in the following processes:",
+      "es": "Esta tabla se utiliza en los siguientes procesos:"
+    },
+    {
+      "id": 7,
+      "br": "Cada pagamento recebido de clientes gera um registro nesta tabela, incluindo recebimentos manuais, automáticos e por lockbox.",
+      "en": "Each payment received from customers generates a record in this table, including manual, automatic and lockbox receipts.",
+      "es": "Cada pago recibido de clientes genera un registro en esta tabla, incluyendo cobros manuales, automáticos y por lockbox."
+    },
+    {
+      "id": 8,
+      "br": "Rastreamento do ciclo de vida do recebimento — aplicado, não-aplicado, não-identificado, NSF, revertido ou parado.",
+      "en": "Tracking the receipt lifecycle - applied, unapplied, unidentified, NSF, reversed or stopped.",
+      "es": "Seguimiento del ciclo de vida del cobro: aplicado, no aplicado, no identificado, NSF, revertido o detenido."
+    },
+    {
+      "id": 9,
+      "br": "Vinculação de recebimentos a contas bancárias de remessa para reconciliação.",
+      "en": "Linking receipts to remittance bank accounts for reconciliation.",
+      "es": "Vinculación de cobros a cuentas bancarias de remesa para la conciliación."
+    },
+    {
+      "id": 10,
+      "br": "Base para análise de recebimentos não-aplicados por faixa de data.",
+      "en": "Basis for analysis of unapplied receipts by date range.",
+      "es": "Base para el análisis de cobros no aplicados por rango de fecha."
+    },
+    {
+      "id": 11,
+      "br": "Rastreabilidade completa de cada recebimento com sequência de documento e WHO columns.",
+      "en": "Complete traceability of each receipt with document sequence and WHO columns.",
+      "es": "Rastreabilidad completa de cada cobro con columnas de secuencia de documento y WHO."
+    },
+    {
+      "id": 12,
+      "br": "Suporte a recebimentos em moeda estrangeira com taxa de conversão.",
+      "en": "Support for foreign currency receipts with conversion rate.",
+      "es": "Soporte para cobros en moneda extranjera con tasa de conversión."
+    },
+    {
+      "id": 13,
+      "br": "Colunas Principais",
+      "en": "Key Columns",
+      "es": "Columnas principales"
+    },
+    {
+      "id": 14,
+      "br": "Confiança",
+      "en": "Confidence",
+      "es": "Confianza"
+    },
+    {
+      "id": 15,
+      "br": "Escala de 0% a 100% — grau de certeza da descrição gerada por IA com base na documentação oficial Oracle (OEDMF/BICC Release 13/25A).",
+      "en": "Scale of 0% to 100% - degree of certainty of the description generated by AI based on Oracle official documentation (OEDMF/BICC Release 13/25A).",
+      "es": "Escala del 0% al 100% — grado de certeza de la descripción generada por IA, basado en la documentación oficial de Oracle (OEDMF/BICC Release 13/25A)."
+    },
+    {
+      "id": 16,
+      "br": "- 🟢 81–100% — Coluna presente na documentação oficial Oracle; nome, tipo e descrição confirmados.",
+      "en": "- 🟢 81–100% - Column present in Oracle official documentation; name, type and description confirmed.",
+      "es": "- 🟢 81–100% — Columna presente en la documentación oficial de Oracle; nombre, tipo y descripción confirmados."
+    },
+    {
+      "id": 17,
+      "br": "- 🟡 51–80% — Coluna inferida por naming convention ou padrão Oracle; tipo exato pode variar.",
+      "en": "- 🟡 51–80% - Column inferred by naming convention or Oracle standard; exact type may vary.",
+      "es": "- 🟡 51–80% — Columna inferida por convención de nomenclatura o estándar de Oracle; el tipo exacto puede variar."
+    },
+    {
+      "id": 18,
+      "br": "- 🔴 0–50% — Existência ou tipo incertos; pode não existir no release atual; validar no ambiente.",
+      "en": "- 🔴 0–50% - Existence or type uncertain; may not exist in the current release; validate in the environment.",
+      "es": "- 🔴 0–50% — Existencia o tipo inciertos; puede no existir en la versión actual; validar en el entorno."
+    },
+    {
+      "id": 19,
+      "br": "Coluna",
+      "en": "Column",
+      "es": "Columna"
+    },
+    {
+      "id": 20,
+      "br": "Tipo",
+      "en": "Type",
+      "es": "Tipo"
+    },
+    {
+      "id": 21,
+      "br": "Nulo?",
+      "en": "Null?",
+      "es": "¿Nulo?"
+    },
+    {
+      "id": 22,
+      "br": "Categoria",
+      "en": "Category",
+      "es": "Categoría"
+    },
+    {
+      "id": 23,
+      "br": "Descrição",
+      "en": "Description",
+      "es": "Descripción"
+    },
+    {
+      "id": 24,
+      "br": "Identificador único do recebimento",
+      "en": "Unique receipt identifier",
+      "es": "Identificador único del cobro"
+    },
+    {
+      "id": 25,
+      "br": "Identificação",
+      "en": "Identification",
+      "es": "Identificación"
+    },
+    {
+      "id": 26,
+      "br": "Número do recebimento visível ao usuário",
+      "en": "Receipt number visible to the user",
+      "es": "Número de recibo visible para el usuario"
+    },
+    {
+      "id": 27,
+      "br": "Financeiro",
+      "en": "Financial",
+      "es": "Financiero"
+    },
+    {
+      "id": 28,
+      "br": "Valor do recebimento na moeda da transação",
+      "en": "Receipt value in the transaction currency",
+      "es": "Valor del recibo en la moneda de la transacción"
+    },
+    {
+      "id": 29,
+      "br": "Código da moeda do recebimento (ISO 4217)",
+      "en": "Receipt currency code (ISO 4217)",
+      "es": "Código de la moneda del recibo (ISO 4217)"
+    },
+    {
+      "id": 30,
+      "br": "Data",
+      "en": "Date",
+      "es": "Fecha"
+    },
+    {
+      "id": 31,
+      "br": "Data do recebimento",
+      "en": "Receipt date",
+      "es": "Fecha del recibo"
+    },
+    {
+      "id": 32,
+      "br": "Classificação",
+      "en": "Classification",
+      "es": "Clasificación"
+    },
+    {
+      "id": 33,
+      "br": "Status do recebimento (APP/UNAPP/UNID/NSF/REV/STOP)",
+      "en": "Receipt status (APP/UNAPP/UNID/NSF/REV/STOP)",
+      "es": "Estado del recibo (APP/UNAPP/UNID/NSF/REV/STOP)"
+    },
+    {
+      "id": 34,
+      "br": "Tipo do recebimento (CASH/MISC)",
+      "en": "Receipt type (CASH/MISC)",
+      "es": "Tipo de recibo (CASH/MISC)"
+    },
+    {
+      "id": 35,
+      "br": "Cliente",
+      "en": "Customer",
+      "es": "Cliente"
+    },
+    {
+      "id": 36,
+      "br": "Conta do cliente pagador",
+      "en": "Customer payer account",
+      "es": "Cuenta del cliente pagador"
+    },
+    {
+      "id": 37,
+      "br": "Site de uso do cliente",
+      "en": "Customer usage site",
+      "es": "Sitio de uso del cliente"
+    },
+    {
+      "id": 38,
+      "br": "Método de recebimento utilizado",
+      "en": "Receipt method used",
+      "es": "Método de cobro utilizado"
+    },
+    {
+      "id": 39,
+      "br": "Bancário",
+      "en": "Bank",
+      "es": "Bancario"
+    },
+    {
+      "id": 40,
+      "br": "Conta bancária de remessa",
+      "en": "Remittance bank account",
+      "es": "Cuenta bancaria de cobro"
+    },
+    {
+      "id": 41,
+      "br": "ID da sequência de documento",
+      "en": "Document sequence ID",
+      "es": "ID de secuencia de documento"
+    },
+    {
+      "id": 42,
+      "br": "Número de sequência de documento legal",
+      "en": "Legal document sequence number",
+      "es": "Número de secuencia de documento legal"
+    },
+    {
+      "id": 43,
+      "br": "Tipo de taxa de câmbio",
+      "en": "Exchange rate type",
+      "es": "Tipo de tasa de cambio"
+    },
+    {
+      "id": 44,
+      "br": "Taxa de câmbio aplicada",
+      "en": "Applied exchange rate",
+      "es": "Tasa de cambio aplicada"
+    },
+    {
+      "id": 45,
+      "br": "Data da taxa de câmbio",
+      "en": "Exchange rate date",
+      "es": "Fecha de la tasa de cambio"
+    },
+    {
+      "id": 46,
+      "br": "Data do depósito bancário",
+      "en": "Bank deposit date",
+      "es": "Fecha del depósito bancario"
+    },
+    {
+      "id": 47,
+      "br": "Contabilidade",
+      "en": "Accounting",
+      "es": "Contabilidad"
+    },
+    {
+      "id": 48,
+      "br": "Data contábil (General Ledger)",
+      "en": "Accounting date (General Ledger)",
+      "es": "Fecha contable (General Ledger)"
+    },
+    {
+      "id": 49,
+      "br": "Data de reversão do recebimento",
+      "en": "Receipt reversal date",
+      "es": "Fecha de reversión del recibo"
+    },
+    {
+      "id": 50,
+      "br": "Motivo da reversão",
+      "en": "Reason for reversal",
+      "es": "Motivo de la reversión"
+    },
+    {
+      "id": 51,
+      "br": "Categoria da reversão (NSF/DEBIT/REV)",
+      "en": "Write-off category (NSF/DEBIT/REV)",
+      "es": "Categoría de la reversión (NSF/DEBIT/REV)"
+    },
+    {
+      "id": 52,
+      "br": "Referência cruzada",
+      "en": "Cross-reference",
+      "es": "Referencia cruzada"
+    },
+    {
+      "id": 53,
+      "br": "Registro atual do histórico",
+      "en": "Current record in the history",
+      "es": "Registro actual del historial"
+    },
+    {
+      "id": 54,
+      "br": "Texto livre",
+      "en": "Free text",
+      "es": "Texto libre"
+    },
+    {
+      "id": 55,
+      "br": "Comentários livres sobre o recebimento",
+      "en": "Free comments about receipt",
+      "es": "Comentarios libres sobre el cobro"
+    },
+    {
+      "id": 56,
+      "br": "Referência externa",
+      "en": "External reference",
+      "es": "Referencia externa"
+    },
+    {
+      "id": 57,
+      "br": "Referência do cliente para o pagamento",
+      "en": "Customer reference for payment",
+      "es": "Referencia del cliente para el pago"
+    },
+    {
+      "id": 58,
+      "br": "Data prevista de compensação",
+      "en": "Expected compensation date",
+      "es": "Fecha prevista de compensación"
+    },
+    {
+      "id": 59,
+      "br": "Status",
+      "en": "Status",
+      "es": "Estado"
+    },
+    {
+      "id": 60,
+      "br": "Indica se recebimento foi confirmado (Y/N)",
+      "en": "Indicates if receipt has been confirmed (Y/N)",
+      "es": "Indica si el cobro ha sido confirmado (Y/N)"
+    },
+    {
+      "id": 61,
+      "br": "Controle",
+      "en": "Control",
+      "es": "Control"
+    },
+    {
+      "id": 62,
+      "br": "Conta de remessa sobrescrita manualmente (Y/N)",
+      "en": "Manually overwritten remittance account (Y/N)",
+      "es": "Cuenta de remisión sobrescrita manualmente (Y/N)"
+    },
+    {
+      "id": 63,
+      "br": "Origem de recebimentos avulsos",
+      "en": "Source of miscellaneous receipts",
+      "es": "Origen de cobros individuales"
+    },
+    {
+      "id": 64,
+      "br": "Conjunto de distribuição para misc receipts",
+      "en": "Distribution set for miscellaneous receipts",
+      "es": "Conjunto de distribución para cobros diversos"
+    },
+    {
+      "id": 65,
+      "br": "Business unit (multi-org)",
+      "en": "Business unit (multi-org)",
+      "es": "Business unit (multi-org)"
+    },
+    {
+      "id": 66,
+      "br": "Entidade legal",
+      "en": "Legal entity",
+      "es": "Entidad legal"
+    },
+    {
+      "id": 67,
+      "br": "Auditoria",
+      "en": "Audit",
+      "es": "Auditoría"
+    },
+    {
+      "id": 68,
+      "br": "Usuário que criou o registro",
+      "en": "User who created the record",
+      "es": "Usuario que creó el registro"
+    },
+    {
+      "id": 69,
+      "br": "Data/hora de criação",
+      "en": "Creation date/time",
+      "es": "Fecha/hora de creación"
+    },
+    {
+      "id": 70,
+      "br": "Último usuário que alterou",
+      "en": "Last user who modified",
+      "es": "Último usuario que lo modificó"
+    },
+    {
+      "id": 71,
+      "br": "Data/hora da última alteração",
+      "en": "Last modification date/time",
+      "es": "Fecha/hora de la última modificación"
+    },
+    {
+      "id": 72,
+      "br": "Login da última sessão",
+      "en": "Last session login",
+      "es": "Inicio de sesión de la última sesión"
+    },
+    {
+      "id": 73,
+      "br": "ATTRIBUTE1–15",
+      "en": "ATTRIBUTE1–15",
+      "es": "ATTRIBUTE1–15"
+    },
+    {
+      "id": 74,
+      "br": "Atributos descritivos customizáveis por implementação",
+      "en": "Customizable descriptive attributes by implementation",
+      "es": "Atributos descriptivos personalizables por implementación"
+    },
+    {
+      "id": 75,
+      "br": "Contexto do Descriptive Flexfield",
+      "en": "Context of Descriptive Flexfield",
+      "es": "Contexto del Descriptive Flexfield"
+    },
+    {
+      "id": 76,
+      "br": "GLOBAL_ATTRIBUTE1–20",
+      "en": "GLOBAL_ATTRIBUTE1–20",
+      "es": "GLOBAL_ATTRIBUTE1–20"
+    },
+    {
+      "id": 77,
+      "br": "Atributos globais (localizações por país)",
+      "en": "Global attributes (locations by country)",
+      "es": "Atributos globales (localizaciones por país)"
+    },
+    {
+      "id": 78,
+      "br": "Contexto do Global Descriptive Flexfield",
+      "en": "Context of the Global Descriptive Flexfield",
+      "es": "Contexto del Descriptive Flexfield global"
+    },
+    {
+      "id": 79,
+      "br": "Relacionamentos",
+      "en": "Relationships",
+      "es": "Relaciones"
+    },
+    {
+      "id": 80,
+      "br": "Tabelas-pai (FK de entrada)",
+      "en": "Parent tables (FK of entry)",
+      "es": "Tablas padre (clave foránea de entrada)"
+    },
+    {
+      "id": 81,
+      "br": "cliente pagador",
+      "en": "payer customer",
+      "es": "cliente pagador"
+    },
+    {
+      "id": 82,
+      "br": "site do cliente",
+      "en": "customer site",
+      "es": "sitio del cliente"
+    },
+    {
+      "id": 83,
+      "br": "método de recebimento",
+      "en": "receipt method",
+      "es": "método de recepción"
+    },
+    {
+      "id": 84,
+      "br": "conta bancária",
+      "en": "bank account",
+      "es": "cuenta bancaria"
+    },
+    {
+      "id": 85,
+      "br": "distribuição para misc receipts",
+      "en": "distribution for miscellaneous receipts",
+      "es": "distribución para recibos diversos"
+    },
+    {
+      "id": 86,
+      "br": "tipo de câmbio",
+      "en": "exchange rate",
+      "es": "tipo de cambio"
+    },
+    {
+      "id": 87,
+      "br": "business unit",
+      "en": "business unit",
+      "es": "business unit"
+    },
+    {
+      "id": 88,
+      "br": "entidade legal",
+      "en": "legal entity",
+      "es": "entidad legal"
+    },
+    {
+      "id": 89,
+      "br": "Tabelas-filha (FK de saída)",
+      "en": "Child tables (FK of exit)",
+      "es": "Tablas hijas (clave foránea de salida)"
+    },
+    {
+      "id": 90,
+      "br": "histórico do recebimento",
+      "en": "receipt history",
+      "es": "historial de recepción"
+    },
+    {
+      "id": 91,
+      "br": "aplicações",
+      "en": "applications",
+      "es": "aplicaciones"
+    },
+    {
+      "id": 92,
+      "br": "schedule de pagamento",
+      "en": "payment schedule",
+      "es": "calendario de pago"
+    },
+    {
+      "id": 93,
+      "br": "distribuições de misc receipts",
+      "en": "distribution of miscellaneous receipts",
+      "es": "distribuciones de recibos diversos"
+    },
+    {
+      "id": 94,
+      "br": "referências de remessa",
+      "en": "remittance references",
+      "es": "referencias de envío"
+    },
+    {
+      "id": 95,
+      "br": "Uso Típico",
+      "en": "Typical Use",
+      "es": "Uso típico"
+    },
+    {
+      "id": 96,
+      "br": "Listar recebimentos não-aplicados",
+      "en": "List unapplied receipts",
+      "es": "Listar recibos no aplicados"
+    },
+    {
+      "id": 97,
+      "br": "Recebimentos com dados do cliente",
+      "en": "Receipts with customer data",
+      "es": "Recibos con datos del cliente"
+    },
+    {
+      "id": 98,
+      "br": "Filtros comuns",
+      "en": "Common filters",
+      "es": "Filtros comunes"
+    },
+    {
+      "id": 99,
+      "br": "Recebimentos aplicados",
+      "en": "Applied receipts",
+      "es": "Recibos aplicados"
+    },
+    {
+      "id": 100,
+      "br": "Recebimentos não-aplicados",
+      "en": "Unapplied receipts",
+      "es": "Recibos no aplicados"
+    },
+    {
+      "id": 101,
+      "br": "Apenas recebimentos de caixa (exclui misc)",
+      "en": "Only cash receipts (excluding misc)",
+      "es": "Solo ingresos en efectivo (excluye otros)"
+    },
+    {
+      "id": 102,
+      "br": "Período",
+      "en": "Period",
+      "es": "Período"
+    },
+    {
+      "id": 103,
+      "br": "Observações",
+      "en": "Notes",
+      "es": "Observaciones"
+    },
+    {
+      "id": 104,
+      "br": "O campo STATUS controla o ciclo de vida: APP (aplicado), UNAPP (não-aplicado), UNID (não-identificado), NSF (sem fundos), REV (revertido), STOP (parado).",
+      "en": "The STATUS field controls the lifecycle: APP (applied), UNAPP (unapplied), UNID (unidentified), NSF (non-sufficient funds), REV (reversed), STOP (stopped)",
+      "es": "El campo STATUS controla el ciclo de vida: APP (aplicado), UNAPP (no aplicado), UNID (no identificado), NSF (sin fondos), REV (revertido), STOP (parado)."
+    },
+    {
+      "id": 105,
+      "br": "Recebimentos do tipo MISC (avulsos) utilizam DISTRIBUTION_SET_ID para contabilização direta, sem vinculação a faturas.",
+      "en": "MISC type receipts use DISTRIBUTION_SET_ID for direct accounting, without linking to invoices.",
+      "es": "Los ingresos del tipo MISC (aviso) utilizan DISTRIBUTION_SET_ID para la contabilización directa, sin vinculación a facturas."
+    },
+    {
+      "id": 106,
+      "br": "A coluna CASH_RECEIPT_HISTORY_ID aponta para o registro mais recente do histórico em ar_cash_receipt_history_all.",
+      "en": "The CASH_RECEIPT_HISTORY_ID column points to the most recent record in ar_cash_receipt_history_all.",
+      "es": "La columna CASH_RECEIPT_HISTORY_ID apunta al registro más reciente del historial en ar_cash_receipt_history_all."
+    },
+    {
+      "id": 107,
+      "br": "Campos REVERSAL_* são preenchidos apenas quando o recebimento é revertido.",
+      "en": "REVERSAL_* fields are only populated when the receipt is reversed.",
+      "es": "Los campos REVERSAL_* se completan solo cuando el ingreso se revierte."
+    },
+    {
+      "id": 108,
+      "br": "A tabela possui Descriptive Flexfields (DFF) via colunas ATTRIBUTE1–15 para customizações por implementação.",
+      "en": "The table has Descriptive Flexfields (DFF) via columns ATTRIBUTE1–15 for customization by implementation.",
+      "es": "La tabla tiene Descriptive Flexfields (DFF) a través de las columnas ATTRIBUTE1–15 para personalizaciones por implementación."
+    },
+    {
+      "id": 109,
+      "br": "Referências",
+      "en": "References",
+      "es": "Referencias"
+    },
+    {
+      "id": 110,
+      "br": "[Oracle Docs — AR_CASH_RECEIPTS_ALL](https://docs.oracle.com/en/cloud/saas/financials/25a/oedmf/arcashreceiptsall-10044.html)",
+      "en": "[Oracle Docs — AR_CASH_RECEIPTS_ALL](https://docs.oracle.com/en/cloud/saas/financials/25a/oedmf/arcashreceiptsall-10044.html)",
+      "es": "[Oracle Docs — AR_CASH_RECEIPTS_ALL](https://docs.oracle.com/en/cloud/saas/financials/25a/oedmf/arcashreceiptsall-10044.html)"
+    },
+    {
+      "id": 111,
+      "br": "ar-module-data-dictionary — Dossiê do módulo AR",
+      "en": "ar-module-data-dictionary — AR module dossier",
+      "es": "ar-module-data-dictionary — Directorio del módulo AR"
+    }
+  ]
+}

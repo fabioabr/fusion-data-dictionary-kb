@@ -1,0 +1,361 @@
+{
+  "source": "gl_access_set_assignments.md",
+  "source_hash": "1c7162e071b3384868a1cf8a92f8b7a7",
+  "translated_at": "2026-03-25",
+  "items": [
+    {
+      "id": 1,
+      "br": "Visao Geral",
+      "en": "Overview",
+      "es": "Visão General"
+    },
+    {
+      "id": 2,
+      "br": "Armazena as atribuições de conjuntos de acesso (Data Access Sets) a ledgers específicos, definindo o nível de privilégio (leitura, leitura/escrita) que cada conjunto concede sobre cada ledger. Funciona como a tabela de interseção entre conjuntos de acesso e os ledgers que eles permitem acessar, com granularidade de permissão.",
+      "en": "Stores the assignments of access sets (Data Access Sets) to specific ledgers, defining the level of privilege (read, read/write) that each set grants over each ledger. It functions as the intersection table between access sets and the ledgers they allow to access, with permission granularity.",
+      "es": "Almacena las asignaciones de conjuntos de acceso (Data Access Sets) a libros contables específicos, definiendo el nivel de privilegio (lectura, lectura/escritura) que cada conjunto otorga sobre cada libro contable. Funciona como la tabla de intersección entre conjuntos de acceso y los libros contables que permiten acceder, con granularidad de permiso."
+    },
+    {
+      "id": 3,
+      "br": "Relação com segurança",
+      "en": "Relationship with security",
+      "es": "Relación con la seguridad"
+    },
+    {
+      "id": 4,
+      "br": "Esta tabela complementa [[gl_access_sets]] e [[gl_access_set_ledgers]], detalhando as atribuições efetivas que controlam quem pode lançar ou apenas consultar dados em cada ledger.",
+      "en": "This table complements [[gl_access_sets]] and [[gl_access_set_ledgers]], detailing the effective assignments that control who can post or only view data in each ledger.",
+      "es": "Esta tabla complementa [[gl_access_sets]] y [[gl_access_set_ledgers]], detallando las asignaciones efectivas que controlan quién puede registrar o consultar únicamente datos en cada libro contable."
+    },
+    {
+      "id": 5,
+      "br": "Proposito de Negocio",
+      "en": "Business Purpose",
+      "es": "Propósito de negocio"
+    },
+    {
+      "id": 6,
+      "br": "Esta tabela é utilizada nos seguintes processos:",
+      "en": "This table is used in the following processes:",
+      "es": "Esta tabla se utiliza en los siguientes procesos:"
+    },
+    {
+      "id": 7,
+      "br": "Define se um conjunto de acesso permite apenas leitura ou leitura/escrita em cada ledger.",
+      "en": "Defines whether an access set allows only read or read/write access to each ledger.",
+      "es": "Define si un conjunto de acceso permite únicamente la lectura o la lectura/escritura en cada libro contable."
+    },
+    {
+      "id": 8,
+      "br": "Garante que equipes específicas só possam lançar em ledgers autorizados.",
+      "en": "Ensures that specific teams can only post to authorized ledgers.",
+      "es": "Garantiza que equipos específicos solo puedan registrar en libros contables autorizados."
+    },
+    {
+      "id": 9,
+      "br": "Base para configuração de acesso ao criar ou alterar perfis de usuários financeiros.",
+      "en": "Basis for configuring access when creating or modifying financial user profiles.",
+      "es": "Base para la configuración de acceso al crear o modificar perfiles de usuarios financieros."
+    },
+    {
+      "id": 10,
+      "br": "Rastreamento de quais permissões foram concedidas a cada conjunto de acesso.",
+      "en": "Tracks which permissions have been granted to each access set.",
+      "es": "Seguimiento de qué permisos se han otorgado a cada conjunto de acceso."
+    },
+    {
+      "id": 11,
+      "br": "Permite que um mesmo conjunto acesse múltiplos ledgers com diferentes níveis de permissão.",
+      "en": "Allows a single set to access multiple ledgers with different permission levels.",
+      "es": "Permite que un mismo conjunto acceda a múltiples libros contables con diferentes niveles de permiso."
+    },
+    {
+      "id": 12,
+      "br": "Colunas Principais",
+      "en": "Key Columns",
+      "es": "Columnas principales"
+    },
+    {
+      "id": 13,
+      "br": "Confiança",
+      "en": "Confidence",
+      "es": "Confianza"
+    },
+    {
+      "id": 14,
+      "br": "Escala de 0% a 100% — grau de certeza da descrição gerada por IA com base na documentação oficial Oracle (OEDMF/BICC Release 13/25A).",
+      "en": "Scale from 0% to 100% — degree of certainty of the AI-generated description based on Oracle official documentation (OEDMF/BICC Release 13/25A).",
+      "es": "Escala del 0% al 100% — grado de certeza de la descripción generada por IA basada en la documentación oficial de Oracle (OEDMF/BICC Release 13/25A)."
+    },
+    {
+      "id": 15,
+      "br": "- 🟢 81–100% — Coluna presente na documentação oficial Oracle; nome, tipo e descrição confirmados.",
+      "en": "- 🟢 81–100% — Column present in Oracle official documentation; name, type, and description confirmed.",
+      "es": "- 🟢 81–100% — Columna presente en la documentación oficial de Oracle; nombre, tipo y descripción confirmados."
+    },
+    {
+      "id": 16,
+      "br": "- 🟡 51–80% — Coluna inferida por naming convention ou padrão Oracle; tipo exato pode variar.",
+      "en": "- 🟡 51–80% — Column inferred by naming convention or Oracle standard; exact type may vary.",
+      "es": "- 🟡 51–80% — Columna inferida por convención de nomenclatura o estándar de Oracle; el tipo exacto puede variar."
+    },
+    {
+      "id": 17,
+      "br": "- 🔴 0–50% — Existência ou tipo incertos; pode não existir no release atual; validar no ambiente.",
+      "en": "- 🔴 0–50% — Existence or type uncertain; may not exist in the current release; validate in the environment.",
+      "es": "- 🔴 0–50% — Existencia o tipo inciertos; puede no existir en la versión actual; validar en el entorno."
+    },
+    {
+      "id": 18,
+      "br": "Coluna",
+      "en": "Column",
+      "es": "Columna"
+    },
+    {
+      "id": 19,
+      "br": "Tipo",
+      "en": "Type",
+      "es": "Tipo"
+    },
+    {
+      "id": 20,
+      "br": "Nulo?",
+      "en": "Null?",
+      "es": "Nulo?"
+    },
+    {
+      "id": 21,
+      "br": "Categoria",
+      "en": "Category",
+      "es": "Categoría"
+    },
+    {
+      "id": 22,
+      "br": "Descrição",
+      "en": "Description",
+      "es": "Descripción"
+    },
+    {
+      "id": 23,
+      "br": "FK/PK",
+      "en": "FK/PK",
+      "es": "FK/PK"
+    },
+    {
+      "id": 24,
+      "br": "Identificador do conjunto de acesso",
+      "en": "Access Set Identifier",
+      "es": "Identificador del conjunto de acceso"
+    },
+    {
+      "id": 25,
+      "br": "Identificador do ledger atribuído",
+      "en": "Assigned Ledger Identifier",
+      "es": "Identificador del libro contable asignado"
+    },
+    {
+      "id": 26,
+      "br": "Classificação",
+      "en": "Classification",
+      "es": "Clasificación"
+    },
+    {
+      "id": 27,
+      "br": "Nível de acesso: READ_ONLY, READ_AND_WRITE, etc.",
+      "en": "Access level: READ_ONLY, READ_AND_WRITE, etc.",
+      "es": "Nivel de acceso: READ_ONLY, READ_AND_WRITE, etc."
+    },
+    {
+      "id": 28,
+      "br": "Data",
+      "en": "Date",
+      "es": "Fecha"
+    },
+    {
+      "id": 29,
+      "br": "Data de início da atribuição",
+      "en": "Date of assignment start",
+      "es": "Fecha de inicio de la asignación"
+    },
+    {
+      "id": 30,
+      "br": "Data de fim da atribuição (NULL = sem expiração)",
+      "en": "Date of assignment end (NULL = no expiration)",
+      "es": "Fecha de fin de la asignación (NULL = sin fecha de expiración)"
+    },
+    {
+      "id": 31,
+      "br": "Sistema",
+      "en": "System",
+      "es": "Sistema"
+    },
+    {
+      "id": 32,
+      "br": "Controle de versionamento otimista (locking)",
+      "en": "Optimistic locking (version control)",
+      "es": "Control de versionamiento optimista (bloqueo)"
+    },
+    {
+      "id": 33,
+      "br": "Auditoria",
+      "en": "Audit",
+      "es": "Auditoría"
+    },
+    {
+      "id": 34,
+      "br": "Usuário que criou o registro",
+      "en": "User who created the record",
+      "es": "Usuario que creó el registro"
+    },
+    {
+      "id": 35,
+      "br": "Data/hora de criação",
+      "en": "Creation date/time",
+      "es": "Fecha/hora de creación"
+    },
+    {
+      "id": 36,
+      "br": "Último usuário que alterou",
+      "en": "Last user who modified",
+      "es": "Último usuario que modificó"
+    },
+    {
+      "id": 37,
+      "br": "Data/hora da última alteração",
+      "en": "Last modification date/time",
+      "es": "Fecha/hora de la última modificación"
+    },
+    {
+      "id": 38,
+      "br": "Login da última sessão",
+      "en": "Last session login",
+      "es": "Inicio de sesión de la última sesión"
+    },
+    {
+      "id": 39,
+      "br": "Relacionamentos",
+      "en": "Relationships",
+      "es": "Relaciones"
+    },
+    {
+      "id": 40,
+      "br": "Tabelas-pai (FK de entrada)",
+      "en": "Parent tables (incoming FK)",
+      "es": "Tablas padre (FK de entrada)"
+    },
+    {
+      "id": 41,
+      "br": "conjunto de acesso",
+      "en": "Access group",
+      "es": "conjunto de acceso"
+    },
+    {
+      "id": 42,
+      "br": "ledger atribuído",
+      "en": "Assigned ledger",
+      "es": "libro mayor asignado"
+    },
+    {
+      "id": 43,
+      "br": "Tabelas-filha (FK de saída)",
+      "en": "Child tables (outgoing FK)",
+      "es": "Tablas hijas (FK de salida)"
+    },
+    {
+      "id": 44,
+      "br": "Nenhuma FK direta — esta é uma tabela de interseção (leaf table).",
+      "en": "No direct FK - this is an intersection table (leaf table)",
+      "es": "Ningún FK directo — esta es una tabla de intersección (tabla hoja)"
+    },
+    {
+      "id": 45,
+      "br": "Uso Tipico",
+      "en": "Typical Use",
+      "es": "Uso típico"
+    },
+    {
+      "id": 46,
+      "br": "Listar atribuições de um conjunto de acesso",
+      "en": "List assignments for an access group",
+      "es": "Listar asignaciones de un conjunto de acceso"
+    },
+    {
+      "id": 47,
+      "br": "Ledgers com acesso de escrita",
+      "en": "Ledgers with write access",
+      "es": "Libros mayores con acceso de escritura"
+    },
+    {
+      "id": 48,
+      "br": "Filtros comuns",
+      "en": "Common filters",
+      "es": "Filtros comunes"
+    },
+    {
+      "id": 49,
+      "br": "Acesso somente leitura",
+      "en": "Read-only access",
+      "es": "Acceso de solo lectura"
+    },
+    {
+      "id": 50,
+      "br": "Acesso de leitura e escrita",
+      "en": "Read and write access",
+      "es": "Acceso de lectura y escritura"
+    },
+    {
+      "id": 51,
+      "br": "Atribuições sem data de expiração (permanentes)",
+      "en": "Assignments without an expiration date (permanent)",
+      "es": "Asignaciones sin fecha de vencimiento (permanentes)"
+    },
+    {
+      "id": 52,
+      "br": "Observacoes",
+      "en": "Observations",
+      "es": "Observaciones"
+    },
+    {
+      "id": 53,
+      "br": "A chave primária é composta por ACCESS_SET_ID + LEDGER_ID — cada ledger aparece no máximo uma vez por conjunto de acesso.",
+      "en": "The primary key is composed of ACCESS_SET_ID + LEDGER_ID — each ledger appears at most once per access set.",
+      "es": "La clave primaria está compuesta por ACCESS_SET_ID + LEDGER_ID — cada ledger aparece como máximo una vez por conjunto de acceso."
+    },
+    {
+      "id": 54,
+      "br": "O ACCESS_PRIVILEGE_CODE controla se o usuário pode apenas consultar dados (READ_ONLY) ou também lançar/alterar (READ_AND_WRITE).",
+      "en": "The ACCESS_PRIVILEGE_CODE controls whether the user can only view data (READ_ONLY) or also post/modify (READ_AND_WRITE).",
+      "es": "El ACCESS_PRIVILEGE_CODE controla si el usuario solo puede consultar datos (READ_ONLY) o también realizar/modificar (READ_AND_WRITE)."
+    },
+    {
+      "id": 55,
+      "br": "Atribuições com END_DATE preenchida são temporárias e deixam de valer após a data informada.",
+      "en": "Assignments with an END_DATE filled in are temporary and cease to be valid after the specified date.",
+      "es": "Las asignaciones con END_DATE completado son temporales y dejan de ser válidas después de la fecha indicada."
+    },
+    {
+      "id": 56,
+      "br": "Esta tabela é consultada em tempo real pelo GL para validar se o usuário tem permissão para executar operações em um ledger específico.",
+      "en": "This table is consulted in real-time by the GL to validate whether the user has permission to perform operations on a specific ledger.",
+      "es": "Esta tabla es consultada en tiempo real por el GL para validar si el usuario tiene permiso para ejecutar operaciones en un ledger específico."
+    },
+    {
+      "id": 57,
+      "br": "Referencias",
+      "en": "References",
+      "es": "Referencias"
+    },
+    {
+      "id": 58,
+      "br": "[Oracle Docs — GL_ACCESS_SET_ASSIGNMENTS](https://docs.oracle.com/en/cloud/saas/financials/25a/oedmf/glaccesssetassignments-25064.html)",
+      "en": "[Oracle Docs — GL_ACCESS_SET_ASSIGNMENTS](https://docs.oracle.com/en/cloud/saas/financials/25a/oedmf/glaccesssetassignments-25064.html)",
+      "es": "[Oracle Docs — GL_ACCESS_SET_ASSIGNMENTS](https://docs.oracle.com/en/cloud/saas/financials/25a/oedmf/glaccesssetassignments-25064.html)"
+    },
+    {
+      "id": 59,
+      "br": "gl-module-data-dictionary — Dossiê do módulo GL",
+      "en": "gl-module-data-dictionary — GL module data dictionary",
+      "es": "gl-module-data-dictionary — Diccionario de datos del módulo GL"
+    }
+  ]
+}

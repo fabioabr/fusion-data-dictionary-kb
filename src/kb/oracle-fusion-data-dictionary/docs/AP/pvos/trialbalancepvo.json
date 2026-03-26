@@ -1,0 +1,587 @@
+{
+  "meta": {
+    "pvo_name": "TrialBalancePVO",
+    "full_path": "FscmTopModelAM.FinApSharedCoreAM.TrialBalancePVO",
+    "module_path": "FscmTopModelAM.FinApSharedCoreAM",
+    "module_code": "AP",
+    "type": "pvo",
+    "description": "Extrai o balancete de verificação do contas a pagar, incluindo débitos e créditos contabilizados por fornecedor, conta contábil e fatura. Fundamental para fechamento contábil, conciliação de saldos de fornecedores e validação dos lançamentos de contas a pagar."
+  },
+  "stats": {
+    "total_attributes": 39,
+    "tables_count": 6,
+    "bicc_enabled": 15,
+    "bicc_pct": 38,
+    "pk_count": 4
+  },
+  "tables": [
+    "AP_INVOICES_ALL",
+    "AP_TRIAL_BALANCES",
+    "FUN_BU_PERF_V",
+    "HZ_PARTIES",
+    "HZ_PARTY_SITES",
+    "PER_PERSON_NAMES_F_V"
+  ],
+  "attributes": [
+    {
+      "name": "AccountingDate",
+      "table": "AP_TRIAL_BALANCES",
+      "column": "ACCOUNTING_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "AeHeaderId",
+      "table": "AP_TRIAL_BALANCES",
+      "column": "AE_HEADER_ID",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    },
+    {
+      "name": "BusinessUnitBusinessUnitId",
+      "table": "FUN_BU_PERF_V",
+      "column": "BU_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvHdrInvoiceId",
+      "table": "AP_INVOICES_ALL",
+      "column": "INVOICE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvHdrLegalEntityId",
+      "table": "AP_INVOICES_ALL",
+      "column": "LEGAL_ENTITY_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "InvoiceId",
+      "table": "AP_TRIAL_BALANCES",
+      "column": "INVOICE_ID",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    },
+    {
+      "name": "PartyPartyId",
+      "table": "HZ_PARTIES",
+      "column": "PARTY_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartyPartyName",
+      "table": "HZ_PARTIES",
+      "column": "PARTY_NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartySitePartySiteId",
+      "table": "HZ_PARTY_SITES",
+      "column": "PARTY_SITE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PartySitePartySiteName",
+      "table": "HZ_PARTY_SITES",
+      "column": "PARTY_SITE_NAME",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonCreatedByDisplayName1",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "DISPLAY_NAME",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonCreatedByEffectiveEndDate",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "EFFECTIVE_END_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonCreatedByEffectiveStartDate",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "EFFECTIVE_START_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "PersonCreatedByPersonNameId",
+      "table": "PER_PERSON_NAMES_F_V",
+      "column": "PERSON_NAME_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TrialBalanceAccountedCr",
+      "table": "AP_TRIAL_BALANCES",
+      "column": "ACCOUNTED_CR",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TrialBalanceAccountedDr",
+      "table": "AP_TRIAL_BALANCES",
+      "column": "ACCOUNTED_DR",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TrialBalanceAccountingClassCode",
+      "table": "AP_TRIAL_BALANCES",
+      "column": "ACCOUNTING_CLASS_CODE",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    },
+    {
+      "name": "TrialBalanceBusinessUnitId",
+      "table": "AP_TRIAL_BALANCES",
+      "column": "BUSINESS_UNIT_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TrialBalanceCodeCombinationId",
+      "table": "AP_TRIAL_BALANCES",
+      "column": "CODE_COMBINATION_ID",
+      "bicc": true,
+      "pk": true,
+      "incremental": false
+    },
+    {
+      "name": "TrialBalanceCreatedBy",
+      "table": "AP_TRIAL_BALANCES",
+      "column": "CREATED_BY",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TrialBalanceCreationDate",
+      "table": "AP_TRIAL_BALANCES",
+      "column": "CREATION_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TrialBalanceEnteredCr",
+      "table": "AP_TRIAL_BALANCES",
+      "column": "ENTERED_CR",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TrialBalanceEnteredDr",
+      "table": "AP_TRIAL_BALANCES",
+      "column": "ENTERED_DR",
+      "bicc": true,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TrialBalanceJobDefinitionName",
+      "table": "AP_TRIAL_BALANCES",
+      "column": "JOB_DEFINITION_NAME",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TrialBalanceJobDefinitionPackage",
+      "table": "AP_TRIAL_BALANCES",
+      "column": "JOB_DEFINITION_PACKAGE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TrialBalanceLastUpdateDate",
+      "table": "AP_TRIAL_BALANCES",
+      "column": "LAST_UPDATE_DATE",
+      "bicc": true,
+      "pk": false,
+      "incremental": true
+    },
+    {
+      "name": "TrialBalanceLastUpdateLogin",
+      "table": "AP_TRIAL_BALANCES",
+      "column": "LAST_UPDATE_LOGIN",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TrialBalanceLastUpdatedBy",
+      "table": "AP_TRIAL_BALANCES",
+      "column": "LAST_UPDATED_BY",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TrialBalanceLedgerId",
+      "table": "AP_TRIAL_BALANCES",
+      "column": "LEDGER_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TrialBalanceObjectVersionNumber",
+      "table": "AP_TRIAL_BALANCES",
+      "column": "OBJECT_VERSION_NUMBER",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TrialBalancePartyId",
+      "table": "AP_TRIAL_BALANCES",
+      "column": "PARTY_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TrialBalancePartySiteId",
+      "table": "AP_TRIAL_BALANCES",
+      "column": "PARTY_SITE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TrialBalanceProgramApplicationId",
+      "table": "AP_TRIAL_BALANCES",
+      "column": "PROGRAM_APPLICATION_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TrialBalanceProgramId",
+      "table": "AP_TRIAL_BALANCES",
+      "column": "PROGRAM_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TrialBalanceProgramUpdateDate",
+      "table": "AP_TRIAL_BALANCES",
+      "column": "PROGRAM_UPDATE_DATE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TrialBalanceRequestId",
+      "table": "AP_TRIAL_BALANCES",
+      "column": "REQUEST_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TrialBalanceTrxCurrencyCode",
+      "table": "AP_TRIAL_BALANCES",
+      "column": "TRX_CURRENCY_CODE",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TrialBalanceVendorId",
+      "table": "AP_TRIAL_BALANCES",
+      "column": "VENDOR_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    },
+    {
+      "name": "TrialBalanceVendorSiteId",
+      "table": "AP_TRIAL_BALANCES",
+      "column": "VENDOR_SITE_ID",
+      "bicc": false,
+      "pk": false,
+      "incremental": false
+    }
+  ],
+  "by_table": {
+    "AP_TRIAL_BALANCES": [
+      {
+        "attribute": "AccountingDate",
+        "column": "ACCOUNTING_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "AeHeaderId",
+        "column": "AE_HEADER_ID",
+        "bicc": true,
+        "pk": true
+      },
+      {
+        "attribute": "InvoiceId",
+        "column": "INVOICE_ID",
+        "bicc": true,
+        "pk": true
+      },
+      {
+        "attribute": "TrialBalanceAccountedCr",
+        "column": "ACCOUNTED_CR",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TrialBalanceAccountedDr",
+        "column": "ACCOUNTED_DR",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TrialBalanceAccountingClassCode",
+        "column": "ACCOUNTING_CLASS_CODE",
+        "bicc": true,
+        "pk": true
+      },
+      {
+        "attribute": "TrialBalanceBusinessUnitId",
+        "column": "BUSINESS_UNIT_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TrialBalanceCodeCombinationId",
+        "column": "CODE_COMBINATION_ID",
+        "bicc": true,
+        "pk": true
+      },
+      {
+        "attribute": "TrialBalanceCreatedBy",
+        "column": "CREATED_BY",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TrialBalanceCreationDate",
+        "column": "CREATION_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TrialBalanceEnteredCr",
+        "column": "ENTERED_CR",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TrialBalanceEnteredDr",
+        "column": "ENTERED_DR",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TrialBalanceJobDefinitionName",
+        "column": "JOB_DEFINITION_NAME",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TrialBalanceJobDefinitionPackage",
+        "column": "JOB_DEFINITION_PACKAGE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TrialBalanceLastUpdateDate",
+        "column": "LAST_UPDATE_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "TrialBalanceLastUpdateLogin",
+        "column": "LAST_UPDATE_LOGIN",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TrialBalanceLastUpdatedBy",
+        "column": "LAST_UPDATED_BY",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TrialBalanceLedgerId",
+        "column": "LEDGER_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TrialBalanceObjectVersionNumber",
+        "column": "OBJECT_VERSION_NUMBER",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TrialBalancePartyId",
+        "column": "PARTY_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TrialBalancePartySiteId",
+        "column": "PARTY_SITE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TrialBalanceProgramApplicationId",
+        "column": "PROGRAM_APPLICATION_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TrialBalanceProgramId",
+        "column": "PROGRAM_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TrialBalanceProgramUpdateDate",
+        "column": "PROGRAM_UPDATE_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TrialBalanceRequestId",
+        "column": "REQUEST_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TrialBalanceTrxCurrencyCode",
+        "column": "TRX_CURRENCY_CODE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TrialBalanceVendorId",
+        "column": "VENDOR_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "TrialBalanceVendorSiteId",
+        "column": "VENDOR_SITE_ID",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "FUN_BU_PERF_V": [
+      {
+        "attribute": "BusinessUnitBusinessUnitId",
+        "column": "BU_ID",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "AP_INVOICES_ALL": [
+      {
+        "attribute": "InvHdrInvoiceId",
+        "column": "INVOICE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "InvHdrLegalEntityId",
+        "column": "LEGAL_ENTITY_ID",
+        "bicc": false,
+        "pk": false
+      }
+    ],
+    "HZ_PARTIES": [
+      {
+        "attribute": "PartyPartyId",
+        "column": "PARTY_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PartyPartyName",
+        "column": "PARTY_NAME",
+        "bicc": true,
+        "pk": false
+      }
+    ],
+    "HZ_PARTY_SITES": [
+      {
+        "attribute": "PartySitePartySiteId",
+        "column": "PARTY_SITE_ID",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PartySitePartySiteName",
+        "column": "PARTY_SITE_NAME",
+        "bicc": true,
+        "pk": false
+      }
+    ],
+    "PER_PERSON_NAMES_F_V": [
+      {
+        "attribute": "PersonCreatedByDisplayName1",
+        "column": "DISPLAY_NAME",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PersonCreatedByEffectiveEndDate",
+        "column": "EFFECTIVE_END_DATE",
+        "bicc": false,
+        "pk": false
+      },
+      {
+        "attribute": "PersonCreatedByEffectiveStartDate",
+        "column": "EFFECTIVE_START_DATE",
+        "bicc": true,
+        "pk": false
+      },
+      {
+        "attribute": "PersonCreatedByPersonNameId",
+        "column": "PERSON_NAME_ID",
+        "bicc": false,
+        "pk": false
+      }
+    ]
+  }
+}
