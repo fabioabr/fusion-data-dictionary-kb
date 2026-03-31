@@ -123,3 +123,14 @@ WHERE  sm.VENDOR_ID = :p_vendor_id
 
 - [Oracle Docs — Supplier Mappings](https://docs.oracle.com/en/cloud/saas/procurement/25a/oedmf/poz-tables.html)
 - [[po-module-data-dictionary]] — Dossiê do módulo Procurement
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[supplierregistrationmappingpvo|SupplierRegistrationMappingPVO]] (PO · BICC: 1/2)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| MAPPING_ID | SuppMapMappingId | ✅ |
+| SUPPLIER_REG_ID | SuppMapSupplierRegId | — |

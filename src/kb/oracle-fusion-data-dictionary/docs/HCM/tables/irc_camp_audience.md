@@ -106,3 +106,24 @@ WHERE  ca.CAMPAIGN_ID = :p_campaign_id;
 
 - [Oracle Docs -- IRC_CAMP_AUDIENCE](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/irccampaudience.html)
 - [[hcm-module-data-dictionary]] -- Dossie do modulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[campaudiencepvo|CampAudiencePVO]] (HCM · BICC: 5/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| AUDIENCE_ID | AudienceId | ✅ |
+| AUDIENCE_TYPE_CODE | CampAudiencePEOAudienceTypeCode | ✅ |
+| CAMPAIGN_ID | CampAudiencePEOCampaignId | — |
+| CREATED_BY | CampAudiencePEOCreatedBy | — |
+| CREATION_DATE | CampAudiencePEOCreationDate | — |
+| LAST_UPDATE_DATE | CampAudiencePEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | CampAudiencePEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | CampAudiencePEOLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | CampAudiencePEOObjectVersionNumber | — |
+| PERSON_ID | CampAudiencePEOPersonId | ✅ |
+| UNSUBSCRIBED_FLAG | CampAudiencePEOUnsubscribedFlag | ✅ |
+| UNSUBSCRIBED_TOKEN_ID | CampAudiencePEOUnsubscribedTokenId | — |

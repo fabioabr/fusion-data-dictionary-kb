@@ -81,6 +81,198 @@ SELECT c.COLLECTOR_ID,
 - A associação com `EMPLOYEE_ID` permite rastrear o funcionário responsável no HCM.
 - `RESOURCE_ID` e `RESOURCE_TYPE` integram com o framework JTF Resources do Oracle.
 
+## 🔗 PVOs Relacionados
+
+### [[collectorextractpvo|CollectorExtractPVO]] (OTHER · BICC: 18/34)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ALIAS | ArCollectorAlias | ✅ |
+| ATTRIBUTE1 | ArCollectorAttribute1 | — |
+| ATTRIBUTE10 | ArCollectorAttribute10 | — |
+| ATTRIBUTE11 | ArCollectorAttribute11 | — |
+| ATTRIBUTE12 | ArCollectorAttribute12 | — |
+| ATTRIBUTE13 | ArCollectorAttribute13 | — |
+| ATTRIBUTE14 | ArCollectorAttribute14 | — |
+| ATTRIBUTE15 | ArCollectorAttribute15 | — |
+| ATTRIBUTE2 | ArCollectorAttribute2 | — |
+| ATTRIBUTE3 | ArCollectorAttribute3 | — |
+| ATTRIBUTE4 | ArCollectorAttribute4 | — |
+| ATTRIBUTE5 | ArCollectorAttribute5 | — |
+| ATTRIBUTE6 | ArCollectorAttribute6 | — |
+| ATTRIBUTE7 | ArCollectorAttribute7 | — |
+| ATTRIBUTE8 | ArCollectorAttribute8 | — |
+| ATTRIBUTE9 | ArCollectorAttribute9 | — |
+| ATTRIBUTE_CATEGORY | ArCollectorAttributeCategory | — |
+| COLLECTOR_ID | ArCollectorCollectorId | ✅ |
+| CREATED_BY | ArCollectorCreatedBy | ✅ |
+| CREATION_DATE | ArCollectorCreationDate | ✅ |
+| DESCRIPTION | ArCollectorDescription | ✅ |
+| EMPLOYEE_ID | ArCollectorEmployeeId | ✅ |
+| INACTIVE_DATE | ArCollectorInactiveDate | ✅ |
+| LAST_UPDATE_DATE | ArCollectorLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ArCollectorLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | ArCollectorLastUpdatedBy | ✅ |
+| NAME | ArCollectorName | ✅ |
+| OBJECT_VERSION_NUMBER | ArCollectorObjectVersionNumber | ✅ |
+| RESOURCE_ID | ArCollectorResourceId | ✅ |
+| RESOURCE_TYPE | ArCollectorResourceType | ✅ |
+| SEED_DATA_SOURCE | ArCollectorSeedDataSource | ✅ |
+| SET_ID | ArCollectorSetId | ✅ |
+| STATUS | ArCollectorStatus | ✅ |
+| TELEPHONE_NUMBER | ArCollectorTelephoneNumber | ✅ |
+
+### [[customerfinancialprofilepvo|CustomerFinancialProfilePVO]] (AR · BICC: 2/17)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ALIAS | CollectorsAlias | — |
+| COLLECTOR_ID | CollectorsCollectorId | — |
+| CREATED_BY | CollectorsCreatedBy | — |
+| CREATION_DATE | CollectorsCreationDate | — |
+| DESCRIPTION | CollectorsDescription | — |
+| EMPLOYEE_ID | CollectorsEmployeeId | — |
+| INACTIVE_DATE | CollectorsInactiveDate | — |
+| LAST_UPDATE_DATE | CollectorsLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | CollectorsLastUpdateLogin | — |
+| LAST_UPDATED_BY | CollectorsLastUpdatedBy | — |
+| NAME | CollectorsName | ✅ |
+| OBJECT_VERSION_NUMBER | CollectorsObjectVersionNumber | — |
+| RESOURCE_ID | CollectorsResourceId | — |
+| RESOURCE_TYPE | CollectorsResourceType | — |
+| SET_ID | CollectorsSetId | — |
+| STATUS | CollectorsStatus | — |
+| TELEPHONE_NUMBER | CollectorsTelephoneNumber | — |
+
+### [[customerprofile|CustomerProfile]] (AR · BICC: 6/18)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ALIAS | CollectorsAlias | — |
+| ATTRIBUTE_CATEGORY | CollectorsAttributeCategory | — |
+| COLLECTOR_ID | CollectorsCollectorId | — |
+| CREATED_BY | CollectorsCreatedBy | ✅ |
+| CREATION_DATE | CollectorsCreationDate | ✅ |
+| DESCRIPTION | CollectorsDescription | — |
+| EMPLOYEE_ID | CollectorsEmployeeId | — |
+| INACTIVE_DATE | CollectorsInactiveDate | — |
+| LAST_UPDATE_DATE | CollectorsLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | CollectorsLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | CollectorsLastUpdatedBy | ✅ |
+| NAME | CollectorsName | ✅ |
+| OBJECT_VERSION_NUMBER | CollectorsObjectVersionNumber | — |
+| RESOURCE_ID | CollectorsResourceId | — |
+| RESOURCE_TYPE | CollectorsResourceType | — |
+| SET_ID | CollectorsSetId | — |
+| STATUS | CollectorsStatus | — |
+| TELEPHONE_NUMBER | CollectorsTelephoneNumber | — |
+
+### [[customersiteprofile|CustomerSiteProfile]] (AR · BICC: 6/18)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ALIAS | CollectorsAlias | — |
+| ATTRIBUTE_CATEGORY | CollectorsAttributeCategory | — |
+| COLLECTOR_ID | CollectorsCollectorId | — |
+| CREATED_BY | CollectorsCreatedBy | ✅ |
+| CREATION_DATE | CollectorsCreationDate | ✅ |
+| DESCRIPTION | CollectorsDescription | — |
+| EMPLOYEE_ID | CollectorsEmployeeId | — |
+| INACTIVE_DATE | CollectorsInactiveDate | — |
+| LAST_UPDATE_DATE | CollectorsLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | CollectorsLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | CollectorsLastUpdatedBy | ✅ |
+| NAME | CollectorsName | ✅ |
+| OBJECT_VERSION_NUMBER | CollectorsObjectVersionNumber | — |
+| RESOURCE_ID | CollectorsResourceId | — |
+| RESOURCE_TYPE | CollectorsResourceType | — |
+| SET_ID | CollectorsSetId | — |
+| STATUS | CollectorsStatus | — |
+| TELEPHONE_NUMBER | CollectorsTelephoneNumber | — |
+
+### [[miscreceiptdistributionpvo|MiscReceiptDistributionPVO]] (AR)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ALIAS | CollectorsAlias | — |
+| COLLECTOR_ID | CollectorsCollectorId | — |
+| DESCRIPTION | CollectorsDescription | — |
+| EMPLOYEE_ID | CollectorsEmployeeId | — |
+| INACTIVE_DATE | CollectorsInactiveDate | — |
+| NAME | CollectorsName | — |
+| RESOURCE_ID | CollectorsResourceId | — |
+| RESOURCE_TYPE | CollectorsResourceType | — |
+| SET_ID | CollectorsSetId | — |
+| STATUS | CollectorsStatus | — |
+| TELEPHONE_NUMBER | CollectorsTelephoneNumber | — |
+
+### [[receiptapplicationdistributionpvo|ReceiptApplicationDistributionPVO]] (AR)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ALIAS | CollectorsAlias | — |
+| COLLECTOR_ID | CollectorsCollectorId | — |
+| DESCRIPTION | CollectorsDescription | — |
+| EMPLOYEE_ID | CollectorsEmployeeId | — |
+| INACTIVE_DATE | CollectorsInactiveDate | — |
+| NAME | CollectorsName | — |
+| RESOURCE_ID | CollectorsResourceId | — |
+| RESOURCE_TYPE | CollectorsResourceType | — |
+| SET_ID | CollectorsSetId | — |
+| STATUS | CollectorsStatus | — |
+| TELEPHONE_NUMBER | CollectorsTelephoneNumber | — |
+
+### [[receiptapplicationdistributionvc|ReceiptApplicationDistributionVC]] (AR · BICC: 1/11)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ALIAS | CollectorsAlias | — |
+| COLLECTOR_ID | CollectorsCollectorId | — |
+| DESCRIPTION | CollectorsDescription | — |
+| EMPLOYEE_ID | CollectorsEmployeeId | — |
+| INACTIVE_DATE | CollectorsInactiveDate | — |
+| NAME | CollectorsName | ✅ |
+| RESOURCE_ID | CollectorsResourceId | — |
+| RESOURCE_TYPE | CollectorsResourceType | — |
+| SET_ID | CollectorsSetId | — |
+| STATUS | CollectorsStatus | — |
+| TELEPHONE_NUMBER | CollectorsTelephoneNumber | — |
+
+### [[receiptapplicationpvo|ReceiptApplicationPVO]] (AR · BICC: 1/11)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ALIAS | CollectorsAlias | — |
+| COLLECTOR_ID | CollectorsCollectorId | — |
+| DESCRIPTION | CollectorsDescription | — |
+| EMPLOYEE_ID | CollectorsEmployeeId | — |
+| INACTIVE_DATE | CollectorsInactiveDate | — |
+| NAME | CollectorsName | ✅ |
+| RESOURCE_ID | CollectorsResourceId | — |
+| RESOURCE_TYPE | CollectorsResourceType | — |
+| SET_ID | CollectorsSetId | — |
+| STATUS | CollectorsStatus | — |
+| TELEPHONE_NUMBER | CollectorsTelephoneNumber | — |
+
+### [[receiptheaderpvo|ReceiptHeaderPVO]] (AR · BICC: 1/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ALIAS | CollectorsAlias | — |
+| COLLECTOR_ID | CollectorsCollectorId | — |
+| DESCRIPTION | CollectorsDescription | — |
+| EMPLOYEE_ID | CollectorsEmployeeId | — |
+| INACTIVE_DATE | CollectorsInactiveDate | — |
+| NAME | CollectorsName | ✅ |
+| OBJECT_VERSION_NUMBER | CollectorsObjectVersionNumber | — |
+| RESOURCE_ID | CollectorsResourceId | — |
+| RESOURCE_TYPE | CollectorsResourceType | — |
+| SET_ID | CollectorsSetId | — |
+| STATUS | CollectorsStatus | — |
+| TELEPHONE_NUMBER | CollectorsTelephoneNumber | — |
+
+---
+
 ## 📚 Referências
 
 - Oracle Fusion Cloud Financials — Accounts Receivable Tables (OEDMF Release 13).

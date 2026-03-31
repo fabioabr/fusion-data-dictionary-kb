@@ -41,7 +41,6 @@ Armazena as **traducoes dos tipos de linha de PO**.
 > [!note] Sufixo _TL
 > O sufixo `_TL` indica a **tabela de traducoes**. Contem versoes traduzidas dos campos descritivos da tabela `_B` correspondente.
 
-
 ---
 
 ## 🧠 Propósito de Negócio
@@ -93,13 +92,58 @@ FROM   PO_LINE_TYPES_TL
 WHERE  LINE_TYPE_ID = :p_id;
 ```
 
-
 ---
 
 ## 🔒 Observações
 
 - Uma linha por idioma.
 - Complementa a tabela base.
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[purchasinglinetypebp|PurchasingLineTypeBP]] (PO · BICC: 2/5)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| DESCRIPTION | POLineTypeTransDescription | ✅ |
+| LANGUAGE | POLineTypeTransLanguage | — |
+| LINE_TYPE | POLineTypeTransLineType | ✅ |
+| LINE_TYPE_ID | POLineTypeTransLineTypeId | — |
+| SOURCE_LANG | POLineTypeTransSourceLang | — |
+
+### [[purchasinglinetypetranslationextractpvo|PurchasingLineTypeTranslationExtractPVO]] (PO · BICC: 11/11)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | POLineTypeTransCreatedBy | ✅ |
+| CREATION_DATE | POLineTypeTransCreationDate | ✅ |
+| DESCRIPTION | POLineTypeTransDescription | ✅ |
+| LANGUAGE | Language | ✅ |
+| LAST_UPDATE_DATE | POLineTypeTransLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | POLineTypeTransLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | POLineTypeTransLastUpdatedBy | ✅ |
+| LINE_TYPE | POLineTypeTransLineType | ✅ |
+| LINE_TYPE_ID | LineTypeId | ✅ |
+| OBJECT_VERSION_NUMBER | POLineTypeTransObjectVersionNumber | ✅ |
+| SOURCE_LANG | POLineTypeTransSourceLang | ✅ |
+
+### [[purchasinglinetypetranslationp|PurchasingLineTypeTranslationP]] (PO · BICC: 9/11)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | POLineTypeTransCreatedBy | ✅ |
+| CREATION_DATE | POLineTypeTransCreationDate | ✅ |
+| DESCRIPTION | POLineTypeTransDescription | ✅ |
+| LANGUAGE | Language | ✅ |
+| LAST_UPDATE_DATE | POLineTypeTransLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | POLineTypeTransLastUpdateLogin | — |
+| LAST_UPDATED_BY | POLineTypeTransLastUpdatedBy | ✅ |
+| LINE_TYPE | POLineTypeTransLineType | ✅ |
+| LINE_TYPE_ID | LineTypeId | ✅ |
+| OBJECT_VERSION_NUMBER | POLineTypeTransObjectVersionNumber | — |
+| SOURCE_LANG | POLineTypeTransSourceLang | ✅ |
 
 ---
 

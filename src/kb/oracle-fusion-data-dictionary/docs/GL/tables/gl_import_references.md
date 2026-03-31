@@ -142,6 +142,66 @@ WHERE  ir.GL_SL_LINK_TABLE = 'AP_INVOICE_DISTRIBUTIONS_ALL'
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[journalimportreferenceextractpvo|JournalImportReferenceExtractPVO]] (OTHER · BICC: 23/23)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | GlImportReferencesCreatedBy | ✅ |
+| CREATION_DATE | GlImportReferencesCreationDate | ✅ |
+| GL_SL_LINK_ID | GlImportReferencesGlSlLinkId | ✅ |
+| GL_SL_LINK_TABLE | GlImportReferencesGlSlLinkTable | ✅ |
+| JE_BATCH_ID | GlImportReferencesJeBatchId | ✅ |
+| JE_HEADER_ID | GlImportReferencesJeHeaderId | ✅ |
+| JE_LINE_NUM | GlImportReferencesJeLineNum | ✅ |
+| LAST_UPDATE_DATE | GlImportReferencesLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | GlImportReferencesLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | GlImportReferencesLastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | GlImportReferencesObjectVersionNumber | ✅ |
+| REFERENCE_1 | GlImportReferencesReference1 | ✅ |
+| REFERENCE_10 | GlImportReferencesReference10 | ✅ |
+| REFERENCE_2 | GlImportReferencesReference2 | ✅ |
+| REFERENCE_3 | GlImportReferencesReference3 | ✅ |
+| REFERENCE_4 | GlImportReferencesReference4 | ✅ |
+| REFERENCE_5 | GlImportReferencesReference5 | ✅ |
+| REFERENCE_6 | GlImportReferencesReference6 | ✅ |
+| REFERENCE_7 | GlImportReferencesReference7 | ✅ |
+| REFERENCE_8 | GlImportReferencesReference8 | ✅ |
+| REFERENCE_9 | GlImportReferencesReference9 | ✅ |
+| SUBLEDGER_DOC_SEQUENCE_ID | GlImportReferencesSubledgerDocSequenceId | ✅ |
+| SUBLEDGER_DOC_SEQUENCE_VALUE | GlImportReferencesSubledgerDocSequenceValue | ✅ |
+
+### [[journalimportreferencepvo|JournalImportReferencePVO]] (GL · BICC: 6/23)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | CreatedBy | — |
+| CREATION_DATE | CreationDate | ✅ |
+| GL_SL_LINK_ID | GlSlLinkId | ✅ |
+| GL_SL_LINK_TABLE | GlSlLinkTable | ✅ |
+| JE_BATCH_ID | JeBatchId | — |
+| JE_HEADER_ID | JeHeaderId | ✅ |
+| JE_LINE_NUM | JeLineNum | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | — |
+| LAST_UPDATED_BY | LastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | — |
+| REFERENCE_1 | Reference1 | — |
+| REFERENCE_10 | Reference10 | — |
+| REFERENCE_2 | Reference2 | — |
+| REFERENCE_3 | Reference3 | — |
+| REFERENCE_4 | Reference4 | — |
+| REFERENCE_5 | Reference5 | — |
+| REFERENCE_6 | Reference6 | — |
+| REFERENCE_7 | Reference7 | — |
+| REFERENCE_8 | Reference8 | — |
+| REFERENCE_9 | Reference9 | — |
+| SUBLEDGER_DOC_SEQUENCE_ID | SubledgerDocSequenceId | — |
+| SUBLEDGER_DOC_SEQUENCE_VALUE | SubledgerDocSequenceValue | — |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — GL_IMPORT_REFERENCES](https://docs.oracle.com/en/cloud/saas/financials/25a/oedmf/glimportreferences-25780.html)

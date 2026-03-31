@@ -98,6 +98,55 @@ WHERE  tl.ELEMENT_TYPE_ID = :p_element_type_id
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[bielementtypetrans|BIElementTypeTrans]] (HCM · BICC: 12/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | ElementTypeTranslationPEOCreatedBy | ✅ |
+| CREATION_DATE | ElementTypeTranslationPEOCreationDate | ✅ |
+| DESCRIPTION | ElementTypeTranslationPEODescription | ✅ |
+| ELEMENT_NAME | ElementTypeTranslationPEOElementName | ✅ |
+| ELEMENT_TYPE_ID | ElementTypeTranslationPEOElementTypeId | ✅ |
+| LANGUAGE | ElementTypeTranslationPEOLanguage | ✅ |
+| LAST_UPDATE_DATE | ElementTypeTranslationPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ElementTypeTranslationPEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | ElementTypeTranslationPEOLastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | ElementTypeTranslationPEOObjectVersionNumber | ✅ |
+| REPORTING_NAME | ElementTypeTranslationPEOReportingName | ✅ |
+| SOURCE_LANG | ElementTypeTranslationPEOSourceLang | ✅ |
+
+### [[elementtypestranslation|ElementTypesTranslation]] (HCM · BICC: 3/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | ElementTypeTranslationCreatedBy | — |
+| CREATION_DATE | ElementTypeTranslationCreationDate | — |
+| DESCRIPTION | ElementTypeTranslationDescription | — |
+| ELEMENT_NAME | ElementTypeTranslationElementName | — |
+| ELEMENT_TYPE_ID | ElementTypeId | ✅ |
+| LANGUAGE | Language | ✅ |
+| LAST_UPDATE_DATE | ElementTypeTranslationLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ElementTypeTranslationLastUpdateLogin | — |
+| LAST_UPDATED_BY | ElementTypeTranslationLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | ElementTypeTranslationObjectVersionNumber | — |
+| REPORTING_NAME | ElementTypeTranslationReportingName | — |
+| SOURCE_LANG | ElementTypeTranslationSourceLang | — |
+
+### [[originatingelement|OriginatingElement]] (HCM · BICC: 4/6)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| DESCRIPTION | ElementTypeTranslationDescription | ✅ |
+| ELEMENT_NAME | ElementTypeTranslationElementName | ✅ |
+| ELEMENT_TYPE_ID | ElementTypeTranslationElementTypeId | — |
+| LANGUAGE | ElementTypeTranslationLanguage | ✅ |
+| REPORTING_NAME | ElementTypeTranslationReportingName | ✅ |
+| SOURCE_LANG | ElementTypeTranslationSourceLang | — |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — PAY_ELEMENT_TYPES_TL](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/payelementtypestl.html)

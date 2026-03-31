@@ -105,6 +105,33 @@ ORDER BY DECODE(e.PRIORITY, 'HIGH', 1, 'MEDIUM', 2, 'LOW', 3);
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[transactionconsolep1|TransactionConsoleP1]] (AP · BICC: 4/18)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CHANGE_EFFECTIVE_DATE | ConsoleEntryPEOChangeEffectiveDate | ✅ |
+| CONSOLE_ENTRY_ID | ConsoleEntryPEOConsoleEntryId | — |
+| CONSOLE_TXN_STATUS | ConsoleEntryPEOConsoleTxnStatus | ✅ |
+| CREATED_BY | ConsoleEntryPEOCreatedBy | — |
+| CREATION_DATE | ConsoleEntryPEOCreationDate | — |
+| LAST_UPDATE_DATE | ConsoleEntryPEOLastUpdateDate | — |
+| LAST_UPDATE_LOGIN | ConsoleEntryPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | ConsoleEntryPEOLastUpdatedBy | — |
+| OBJECT_NAME | ConsoleEntryPEOObjectName | — |
+| OBJECT_VERSION_NUMBER | ConsoleEntryPEOObjectVersionNumber | — |
+| PROCESS_CATEGORY | ConsoleEntryPEOProcessCategory | ✅ |
+| SR_NUMBER | ConsoleEntryPEOSrNumber | — |
+| STATUS_CATEGORY | ConsoleEntryPEOStatusCategory | ✅ |
+| TASK_APPROVERS | ConsoleEntryPEOTaskApprovers | — |
+| TASK_ID | ConsoleEntryPEOTaskId | — |
+| TASK_OUTCOME | ConsoleEntryPEOTaskOutcome | — |
+| TASK_STATE | ConsoleEntryPEOTaskState | — |
+| TRANSACTION_ID | ConsoleEntryPEOTransactionId | — |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Fusion HCM Tables and Views](https://docs.oracle.com/en/cloud/saas/human-resources/25a/)

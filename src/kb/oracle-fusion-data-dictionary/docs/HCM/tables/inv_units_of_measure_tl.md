@@ -61,3 +61,102 @@ updated_at: 2026-03-26
 ## 📎 Uso Típico
 
 (a ser preenchido na etapa 03)
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[invoicelinepvo|InvoiceLinePVO]] (AP · BICC: 2/4)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| DESCRIPTION | UomDescription | ✅ |
+| LANGUAGE | UomTLLanguage | — |
+| UNIT_OF_MEASURE | UomUnitOfMeasure | ✅ |
+| UNIT_OF_MEASURE_ID | UomTLUnitOfMeasureId | — |
+
+### [[invunitsofmeasuretranslationpvo|InvUnitsOfMeasureTranslationPVO]] (OTHER · BICC: 11/11)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | CreatedBy | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| DESCRIPTION | Description | ✅ |
+| LANGUAGE | Language | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | LastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | ✅ |
+| SOURCE_LANG | SourceLang | ✅ |
+| UNIT_OF_MEASURE | UnitOfMeasure | ✅ |
+| UNIT_OF_MEASURE_ID | UnitOfMeasureId | ✅ |
+
+### [[invuompvo|InvUomPVO]] (OTHER · BICC: 6/11)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | InvUomTLPEOCreatedBy | — |
+| CREATION_DATE | InvUomTLPEOCreationDate | — |
+| DESCRIPTION | InvUomTLPEODescription | ✅ |
+| LANGUAGE | InvUomTLPEOLanguage | ✅ |
+| LAST_UPDATE_DATE | InvUomTLPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | InvUomTLPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | InvUomTLPEOLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | InvUomTLPEOObjectVersionNumber | — |
+| SOURCE_LANG | InvUomTLPEOSourceLang | ✅ |
+| UNIT_OF_MEASURE | InvUomTLPEOUnitOfMeasure | ✅ |
+| UNIT_OF_MEASURE_ID | InvUomTLPEOUnitOfMeasureId | ✅ |
+
+### [[linesalescreditpvo|LineSalesCreditPVO]] (AR · BICC: 2/4)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| DESCRIPTION | UomDescription | ✅ |
+| LANGUAGE | UomTLLanguage | — |
+| UNIT_OF_MEASURE | UomUnitOfMeasure | ✅ |
+| UNIT_OF_MEASURE_ID | UomTLUnitOfMeasureId | — |
+
+### [[transactionhistorydistributionpvo|TransactionHistoryDistributionPVO]] (AR)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| DESCRIPTION | UomDescription | — |
+| LANGUAGE | UomTLLanguage | — |
+| UNIT_OF_MEASURE | UomUnitOfMeasure | — |
+| UNIT_OF_MEASURE_ID | UomTLUnitOfMeasureId | — |
+
+### [[transactionhistorypvo|TransactionHistoryPVO]] (AR)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| DESCRIPTION | UomDescription | — |
+| LANGUAGE | UomTLLanguage | — |
+| UNIT_OF_MEASURE | UomUnitOfMeasure | — |
+| UNIT_OF_MEASURE_ID | UomTLUnitOfMeasureId | — |
+
+### [[transactionlinebillsreceivablepvo|TransactionLineBillsReceivablePVO]] (AR)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| DESCRIPTION | UomDescription | — |
+| LANGUAGE | UomTLLanguage | — |
+| UNIT_OF_MEASURE | UomUnitOfMeasure | — |
+| UNIT_OF_MEASURE_ID | UomTLUnitOfMeasureId | — |
+
+### [[transactionlinedistributionpvo|TransactionLineDistributionPVO]] (AR · BICC: 2/4)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| DESCRIPTION | UomDescription | ✅ |
+| LANGUAGE | UomTLLanguage | — |
+| UNIT_OF_MEASURE | UomUnitOfMeasure | ✅ |
+| UNIT_OF_MEASURE_ID | UomTLUnitOfMeasureId | — |
+
+### [[transactionlinepvo|TransactionLinePVO]] (AR · BICC: 2/4)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| DESCRIPTION | UomDescription | ✅ |
+| LANGUAGE | UomTLLanguage | — |
+| UNIT_OF_MEASURE | UomUnitOfMeasure | ✅ |
+| UNIT_OF_MEASURE_ID | UomTLUnitOfMeasureId | — |

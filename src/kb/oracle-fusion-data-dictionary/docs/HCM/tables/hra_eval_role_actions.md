@@ -114,6 +114,37 @@ WHERE  r.PERSON_ID = :p_person_id;
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[evalroleactionextractpvo|EvalRoleActionExtractPVO]] (HCM · BICC: 22/22)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | BusinessGroupId | ✅ |
+| CREATED_BY | CreatedBy | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| EVAL_ROLE_ACTION_ID | EvalRoleActionId | ✅ |
+| EVAL_ROLE_ID | EvalRoleId | ✅ |
+| EVAL_SECTION_ID | EvalSectionId | ✅ |
+| EVALUATION_ID | EvaluationId | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | LastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | ✅ |
+| PCPN_ENTER_WRK_CMTS_FLAG | PcpnEnterWrkCmtsFlag | ✅ |
+| PERSON_PROFILE_TYPE_ID | PersonProfileTypeId | ✅ |
+| QUALIFIER_ID | QualifierId | ✅ |
+| SHARE_COMMENTS_FLAG | ShareCommentsFlag | ✅ |
+| SHARE_RATINGS_FLAG | ShareRatingsFlag | ✅ |
+| UPDATE_PROFILE_FLAG | UpdateProfileFlag | ✅ |
+| VIEW_MGR_QSTNR_FLAG | ViewMgrQstnrFlag | ✅ |
+| VIEW_PCPN_NAME_FLAG | ViewPcpnNameFlag | ✅ |
+| VIEW_PCPN_QSTNR_FLAG | ViewPcpnQstnrFlag | ✅ |
+| VIEW_PCPN_ROLE_FLAG | ViewPcpnRoleFlag | ✅ |
+| VIEW_WRK_QSTNR_FLAG | ViewWrkQstnrFlag | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — HRA_EVAL_ROLE_ACTIONS](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/hraevalroleactions.html)

@@ -38,7 +38,6 @@ updated_at: 2026-03-25
 
 Armazena os **produtos e servicos oferecidos por fornecedores** cadastrados. Vincula fornecedores a categorias de produto/servico (UNSPSC), permitindo busca por capacidade de fornecimento.
 
-
 ---
 
 ## 🧠 Propósito de Negócio
@@ -95,7 +94,6 @@ FROM   POZ_SUP_PRODUCTS_SERVICES
 WHERE  VENDOR_ID = :p_vendor_id AND STATUS = 'ACTIVE';
 ```
 
-
 ---
 
 ## 🔒 Observações
@@ -103,6 +101,42 @@ WHERE  VENDOR_ID = :p_vendor_id AND STATUS = 'ACTIVE';
 - Categorizacao segue UNSPSC por padrao; customizavel por implementacao.
 - Registros inativos devem ser filtrados.
 - Populada durante qualificacao/onboarding.
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[supplierproductsandservicesextractpvo|SupplierProductsAndServicesExtractPVO]] (PO · BICC: 11/11)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CATEGORY_ID | CategoryId | ✅ |
+| CLASSIFICATION_ID | ClassificationId | ✅ |
+| CREATED_BY | CreatedBy | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | LastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | ✅ |
+| PURCHASING_CAT_FLAG | PurchasingCatFlag | ✅ |
+| STATUS | Status | ✅ |
+| VENDOR_ID | VendorId | ✅ |
+
+### [[supplierproductsservicespvo|SupplierProductsServicesPVO]] (PO · BICC: 2/11)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CATEGORY_ID | SupplierProductsServicesCategoryId | — |
+| CLASSIFICATION_ID | ClassificationId | ✅ |
+| CREATED_BY | SupplierProductsServicesCreatedBy | — |
+| CREATION_DATE | SupplierProductsServicesCreationDate | — |
+| LAST_UPDATE_DATE | SupplierProductsServicesLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | SupplierProductsServicesLastUpdateLogin | — |
+| LAST_UPDATED_BY | SupplierProductsServicesLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | SupplierProductsServicesObjectVersionNumber | — |
+| PURCHASING_CAT_FLAG | SupplierProductsServicesPurchasingCatFlag | — |
+| STATUS | SupplierProductsServicesStatus | — |
+| VENDOR_ID | SupplierProductsServicesVendorId | — |
 
 ---
 

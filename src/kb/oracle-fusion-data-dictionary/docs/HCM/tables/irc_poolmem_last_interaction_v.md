@@ -99,3 +99,14 @@ WHERE  pm.DAYS_SINCE_INTERACTION > 60;
 
 - [Oracle Docs -- IRC_POOLMEM_LAST_INTERACTION_V](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/ircpoolmemlastinteractionv.html)
 - [[hcm-module-data-dictionary]] -- Dossie do modulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[candidatepoolmemberpvo|CandidatePoolMemberPVO]] (PO)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| INTERACTION_DATE | CandPoolMemLastInteractionPEOInteractionDate | — |
+| INTERACTION_ID | CandPoolMemLastInteractionPEOInteractionId | — |

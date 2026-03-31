@@ -113,6 +113,60 @@ WHERE  tl.LANGUAGE = 'PT'
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[absenceplanpvo|AbsencePlanPVO]] (GL · BICC: 11/15)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ABSENCE_PLAN_ID | AbsencePlanId1 | ✅ |
+| CREATED_BY | CreatedBy1 | ✅ |
+| CREATION_DATE | CreationDate1 | ✅ |
+| DESCRIPTION | Description | ✅ |
+| EFFECTIVE_END_DATE | EffectiveEndDate1 | ✅ |
+| EFFECTIVE_START_DATE | EffectiveStartDate1 | ✅ |
+| ENTERPRISE_ID | EnterpriseId1 | — |
+| LANGUAGE | Language | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate1 | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin1 | — |
+| LAST_UPDATED_BY | LastUpdatedBy1 | ✅ |
+| MODULE_ID | ModuleId1 | — |
+| NAME | Name | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber1 | — |
+| SOURCE_LANG | SourceLang | ✅ |
+
+### [[accrualplanpvo|AccrualPlanPVO]] (GL · BICC: 3/15)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ABSENCE_PLAN_ID | AbsencePlanId1 | — |
+| CREATED_BY | CreatedBy1 | — |
+| CREATION_DATE | CreationDate1 | — |
+| DESCRIPTION | Description | — |
+| EFFECTIVE_END_DATE | EffectiveEndDate1 | — |
+| EFFECTIVE_START_DATE | EffectiveStartDate1 | ✅ |
+| ENTERPRISE_ID | EnterpriseId1 | — |
+| LANGUAGE | Language | — |
+| LAST_UPDATE_DATE | LastUpdateDate1 | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin1 | — |
+| LAST_UPDATED_BY | LastUpdatedBy1 | — |
+| MODULE_ID | ModuleId1 | — |
+| NAME | Name | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber1 | — |
+| SOURCE_LANG | SourceLang | — |
+
+### [[personabscertificationspvo|PersonAbsCertificationsPVO]] (GL · BICC: 2/5)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ABSENCE_PLAN_ID | AbsencePlanId | — |
+| EFFECTIVE_END_DATE | EffectiveEndDate1 | — |
+| EFFECTIVE_START_DATE | EffectiveStartDate1 | ✅ |
+| LANGUAGE | Language1 | — |
+| NAME | AbsenceTargetPlanName | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — ANC_ABSENCE_PLANS_F_TL](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/ancabsenceplansftl.html)

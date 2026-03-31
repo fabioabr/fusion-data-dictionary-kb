@@ -152,3 +152,41 @@ ORDER BY aq.EFFECTIVE_TO;
 
 - [Oracle Docs — POQ_ASSESSMENT_QUALS](https://docs.oracle.com/en/cloud/saas/procurement/25a/oedmf/poqassessmentquals.html)
 - [[po-module-data-dictionary]] — Dossiê do módulo Procurement
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[assessmentqualificationextractpvo|AssessmentQualificationExtractPVO]] (PO · BICC: 12/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ASSESSMENT_ID | AssessmentId | ✅ |
+| ASSESSMENT_QUAL_ID | AssessmentQualId | ✅ |
+| CREATED_BY | CreatedBy | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| EVALUATION_NOTE | EvaluationNote | ✅ |
+| INITIATIVE_ID | InitiativeId | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | LastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | ✅ |
+| QUALIFICATION_ID | QualificationId | ✅ |
+| REUSED_FLAG | ReusedFlag | ✅ |
+
+### [[assessmentqualpvo|AssessmentQualPVO]] (PO · BICC: 12/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ASSESSMENT_ID | AssessmentQualAssessmentId | ✅ |
+| ASSESSMENT_QUAL_ID | AssessmentQualAssessmentQualId | ✅ |
+| CREATED_BY | AssessmentQualCreatedBy | ✅ |
+| CREATION_DATE | AssessmentQualCreationDate | ✅ |
+| EVALUATION_NOTE | AssessmentQualEvaluationNote | ✅ |
+| INITIATIVE_ID | AssessmentQualInitiativeId | ✅ |
+| LAST_UPDATE_DATE | AssessmentQualLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | AssessmentQualLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | AssessmentQualLastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | AssessmentQualObjectVersionNumber | ✅ |
+| QUALIFICATION_ID | AssessmentQualQualificationId | ✅ |
+| REUSED_FLAG | AssessmentQualReusedFlag | ✅ |

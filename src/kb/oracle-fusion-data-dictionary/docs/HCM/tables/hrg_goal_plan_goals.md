@@ -97,6 +97,325 @@ ORDER BY gpg.SEQUENCE_NUMBER;
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[careerdevgoalpvo|CareerDevGoalPVO]] (HCM · BICC: 4/9)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| DISPLAY_SEQUENCE | GoalPlanGoalPEODisplaySequence | — |
+| EFFECTIVE_END_DATE | GoalPlanGoalPEOEffectiveEndDate | — |
+| EFFECTIVE_START_DATE | GoalPlanGoalPEOEffectiveStartDate | ✅ |
+| GOAL_PLAN_GOAL_ID | GoalPlanGoalPEOGoalPlanGoalId | — |
+| GOAL_PLAN_ID | GoalPlanGoalPEOGoalPlanId | ✅ |
+| GOAL_PLAN_SET_ID | GoalPlanGoalPEOGoalPlanSetId | — |
+| LAST_UPDATE_DATE | GoalPlanGoalPEOLastUpdateDate | ✅ |
+| REVIEW_PERIOD_ID | GoalPlanGoalPEOReviewPeriodId | — |
+| WEIGHTING | GoalPlanGoalPEOWeighting | ✅ |
+
+### [[careerdevgoalpvoviewall|CareerDevGoalPVOViewAll]] (HCM · BICC: 4/9)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| DISPLAY_SEQUENCE | GoalPlanGoalPEODisplaySequence | — |
+| EFFECTIVE_END_DATE | GoalPlanGoalPEOEffectiveEndDate | — |
+| EFFECTIVE_START_DATE | GoalPlanGoalPEOEffectiveStartDate | ✅ |
+| GOAL_PLAN_GOAL_ID | GoalPlanGoalPEOGoalPlanGoalId | — |
+| GOAL_PLAN_ID | GoalPlanGoalPEOGoalPlanId | ✅ |
+| GOAL_PLAN_SET_ID | GoalPlanGoalPEOGoalPlanSetId | — |
+| LAST_UPDATE_DATE | GoalPlanGoalPEOLastUpdateDate | ✅ |
+| REVIEW_PERIOD_ID | GoalPlanGoalPEOReviewPeriodId | — |
+| WEIGHTING | GoalPlanGoalPEOWeighting | ✅ |
+
+### [[careerdevgoalversionpvo|CareerDevGoalVersionPVO]] (HCM · BICC: 4/9)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| DISPLAY_SEQUENCE | GoalPlanGoalPEODisplaySequence | — |
+| EFFECTIVE_END_DATE | GoalPlanGoalPEOEffectiveEndDate | — |
+| EFFECTIVE_START_DATE | GoalPlanGoalPEOEffectiveStartDate | ✅ |
+| GOAL_PLAN_GOAL_ID | GoalPlanGoalPEOGoalPlanGoalId | — |
+| GOAL_PLAN_ID | GoalPlanGoalPEOGoalPlanId | ✅ |
+| GOAL_PLAN_SET_ID | GoalPlanGoalPEOGoalPlanSetId | — |
+| LAST_UPDATE_DATE | GoalPlanGoalPEOLastUpdateDate | ✅ |
+| REVIEW_PERIOD_ID | GoalPlanGoalPEOReviewPeriodId | — |
+| WEIGHTING | GoalPlanGoalPEOWeighting | ✅ |
+
+### [[careerdevgoalversionpvoviewall|CareerDevGoalVersionPVOViewAll]] (HCM · BICC: 4/9)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| DISPLAY_SEQUENCE | GoalPlanGoalPEODisplaySequence | — |
+| EFFECTIVE_END_DATE | GoalPlanGoalPEOEffectiveEndDate | — |
+| EFFECTIVE_START_DATE | GoalPlanGoalPEOEffectiveStartDate | ✅ |
+| GOAL_PLAN_GOAL_ID | GoalPlanGoalPEOGoalPlanGoalId | — |
+| GOAL_PLAN_ID | GoalPlanGoalPEOGoalPlanId | ✅ |
+| GOAL_PLAN_SET_ID | GoalPlanGoalPEOGoalPlanSetId | — |
+| LAST_UPDATE_DATE | GoalPlanGoalPEOLastUpdateDate | ✅ |
+| REVIEW_PERIOD_ID | GoalPlanGoalPEOReviewPeriodId | — |
+| WEIGHTING | GoalPlanGoalPEOWeighting | ✅ |
+
+### [[careerdevpvo|CareerDevPVO]] (HCM · BICC: 5/17)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | GoalPlanGoalPEOBusinessGroupId | — |
+| CREATED_BY | GoalPlanGoalPEOCreatedBy | — |
+| CREATION_DATE | GoalPlanGoalPEOCreationDate | — |
+| DISPLAY_SEQUENCE | GoalPlanGoalPEODisplaySequence | — |
+| EFFECTIVE_END_DATE | GoalPlanGoalPEOEffectiveEndDate | — |
+| EFFECTIVE_START_DATE | GoalPlanGoalPEOEffectiveStartDate | ✅ |
+| GOAL_ID | GoalPlanGoalPEOGoalId | ✅ |
+| GOAL_PLAN_GOAL_ID | GoalPlanGoalId | ✅ |
+| GOAL_PLAN_ID | GoalPlanGoalPEOGoalPlanId | ✅ |
+| GOAL_PLAN_SET_ID | GoalPlanGoalPEOGoalPlanSetId1 | — |
+| LAST_UPDATE_DATE | GoalPlanGoalPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | GoalPlanGoalPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | GoalPlanGoalPEOLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | GoalPlanGoalPEOObjectVersionNumber | — |
+| PRIORITY_CODE | GoalPlanGoalPEOPriorityCode | — |
+| REVIEW_PERIOD_ID | GoalPlanGoalPEOReviewPeriodId | — |
+| WEIGHTING | GoalPlanGoalPEOWeighting | — |
+
+### [[careerdevversionpvo|CareerDevVersionPVO]] (HCM · BICC: 5/17)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | GoalPlanGoalPEOBusinessGroupId | — |
+| CREATED_BY | GoalPlanGoalPEOCreatedBy | — |
+| CREATION_DATE | GoalPlanGoalPEOCreationDate | — |
+| DISPLAY_SEQUENCE | GoalPlanGoalPEODisplaySequence | — |
+| EFFECTIVE_END_DATE | GoalPlanGoalPEOEffectiveEndDate | — |
+| EFFECTIVE_START_DATE | GoalPlanGoalPEOEffectiveStartDate | ✅ |
+| GOAL_ID | GoalPlanGoalPEOGoalId | ✅ |
+| GOAL_PLAN_GOAL_ID | GoalPlanGoalId | ✅ |
+| GOAL_PLAN_ID | GoalPlanGoalPEOGoalPlanId | ✅ |
+| GOAL_PLAN_SET_ID | GoalPlanGoalPEOGoalPlanSetId1 | — |
+| LAST_UPDATE_DATE | GoalPlanGoalPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | GoalPlanGoalPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | GoalPlanGoalPEOLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | GoalPlanGoalPEOObjectVersionNumber | — |
+| PRIORITY_CODE | GoalPlanGoalPEOPriorityCode | — |
+| REVIEW_PERIOD_ID | GoalPlanGoalPEOReviewPeriodId | — |
+| WEIGHTING | GoalPlanGoalPEOWeighting | — |
+
+### [[developmentgoalpvo|DevelopmentGoalPVO]] (HCM · BICC: 4/9)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| DISPLAY_SEQUENCE | GoalPlanGoalPEODisplaySequence | — |
+| EFFECTIVE_END_DATE | GoalPlanGoalPEOEffectiveEndDate | — |
+| EFFECTIVE_START_DATE | GoalPlanGoalPEOEffectiveStartDate | ✅ |
+| GOAL_PLAN_GOAL_ID | GoalPlanGoalPEOGoalPlanGoalId | — |
+| GOAL_PLAN_ID | GoalPlanGoalPEOGoalPlanId | ✅ |
+| GOAL_PLAN_SET_ID | GoalPlanGoalPEOGoalPlanSetId | — |
+| LAST_UPDATE_DATE | GoalPlanGoalPEOLastUpdateDate | ✅ |
+| REVIEW_PERIOD_ID | GoalPlanGoalPEOReviewPeriodId | — |
+| WEIGHTING | GoalPlanGoalPEOWeighting | ✅ |
+
+### [[developmentgoalpvoviewall|DevelopmentGoalPVOViewAll]] (HCM · BICC: 4/9)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| DISPLAY_SEQUENCE | GoalPlanGoalPEODisplaySequence | — |
+| EFFECTIVE_END_DATE | GoalPlanGoalPEOEffectiveEndDate | — |
+| EFFECTIVE_START_DATE | GoalPlanGoalPEOEffectiveStartDate | ✅ |
+| GOAL_PLAN_GOAL_ID | GoalPlanGoalPEOGoalPlanGoalId | — |
+| GOAL_PLAN_ID | GoalPlanGoalPEOGoalPlanId | ✅ |
+| GOAL_PLAN_SET_ID | GoalPlanGoalPEOGoalPlanSetId | — |
+| LAST_UPDATE_DATE | GoalPlanGoalPEOLastUpdateDate | ✅ |
+| REVIEW_PERIOD_ID | GoalPlanGoalPEOReviewPeriodId | — |
+| WEIGHTING | GoalPlanGoalPEOWeighting | ✅ |
+
+### [[goalplangoalpvo|GoalPlanGoalPVO]] (HCM · BICC: 7/18)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ASSIGNMENT_ID | GoalPlanGoalPEOAssignmentId | — |
+| BUSINESS_GROUP_ID | GoalPlanGoalPEOBusinessGroupId | — |
+| CREATED_BY | GoalPlanGoalPEOCreatedBy | — |
+| CREATION_DATE | GoalPlanGoalPEOCreationDate | — |
+| DISPLAY_SEQUENCE | GoalPlanGoalPEODisplaySequence | — |
+| EFFECTIVE_END_DATE | GoalPlanGoalPEOEffectiveEndDate | ✅ |
+| EFFECTIVE_START_DATE | GoalPlanGoalPEOEffectiveStartDate | ✅ |
+| GOAL_ID | GoalPlanGoalPEOGoalId | — |
+| GOAL_PLAN_GOAL_ID | GoalPlanGoalId | ✅ |
+| GOAL_PLAN_ID | GoalPlanGoalPEOGoalPlanId | ✅ |
+| GOAL_PLAN_SET_ID | GoalPlanGoalPEOGoalPlanSetId | — |
+| LAST_UPDATE_DATE | GoalPlanGoalPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | GoalPlanGoalPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | GoalPlanGoalPEOLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | GoalPlanGoalPEOObjectVersionNumber | — |
+| PRIORITY_CODE | GoalPlanGoalPEOPriorityCode | ✅ |
+| REVIEW_PERIOD_ID | GoalPlanGoalPEORevPeriodId | — |
+| WEIGHTING | GoalPlanGoalPEOWeighting | ✅ |
+
+### [[goalppvo1|GoalPPVO1]] (HCM · BICC: 2/9)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| DISPLAY_SEQUENCE | GoalPlanGoalPEODisplaySequence | — |
+| EFFECTIVE_END_DATE | GoalPlanGoalPEOEffectiveEndDate | — |
+| EFFECTIVE_START_DATE | GoalPlanGoalPEOEffectiveStartDate | ✅ |
+| GOAL_PLAN_GOAL_ID | GoalPlanGoalPEOGoalPlanGoalId | — |
+| GOAL_PLAN_ID | GoalPlanGoalPEOGoalPlanId | — |
+| GOAL_PLAN_SET_ID | GoalPlanGoalPEOGoalPlanSetId | — |
+| LAST_UPDATE_DATE | GoalPlanGoalPEOLastUpdateDate | ✅ |
+| REVIEW_PERIOD_ID | GoalPlanGoalPEOReviewPeriodId | — |
+| WEIGHTING | GoalPlanGoalPEOWeighting | — |
+
+### [[goalpvo_copy|GoalPVO_Copy]] (HCM · BICC: 2/8)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| DISPLAY_SEQUENCE | GoalPlanGoalPEODisplaySequence | — |
+| EFFECTIVE_END_DATE | GoalPlanGoalPEOEffectiveEndDate | — |
+| EFFECTIVE_START_DATE | GoalPlanGoalPEOEffectiveStartDate | ✅ |
+| GOAL_PLAN_GOAL_ID | GoalPlanGoalPEOGoalPlanGoalId | — |
+| GOAL_PLAN_ID | GoalPlanGoalPEOGoalPlanId | — |
+| GOAL_PLAN_SET_ID | GoalPlanGoalPEOGoalPlanSetId | — |
+| LAST_UPDATE_DATE | GoalPlanGoalPEOLastUpdateDate | ✅ |
+| WEIGHTING | GoalPlanGoalPEOWeighting | — |
+
+### [[goalstatusoverviewpvo|GoalStatusOverviewPVO]] (HCM · BICC: 5/17)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | GoalPlanGoalPEOBusinessGroupId | — |
+| CREATED_BY | GoalPlanGoalPEOCreatedBy | — |
+| CREATION_DATE | GoalPlanGoalPEOCreationDate | — |
+| DISPLAY_SEQUENCE | GoalPlanGoalPEODisplaySequence | — |
+| EFFECTIVE_END_DATE | GoalPlanGoalPEOEffectiveEndDate | — |
+| EFFECTIVE_START_DATE | GoalPlanGoalPEOEffectiveStartDate | ✅ |
+| GOAL_ID | GoalPlanGoalPEOGoalId | — |
+| GOAL_PLAN_GOAL_ID | GoalPlanGoalId | ✅ |
+| GOAL_PLAN_ID | GoalPlanGoalPEOGoalPlanId | ✅ |
+| GOAL_PLAN_SET_ID | GoalPlanGoalPEOGoalPlanSetId1 | ✅ |
+| LAST_UPDATE_DATE | GoalPlanGoalPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | GoalPlanGoalPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | GoalPlanGoalPEOLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | GoalPlanGoalPEOObjectVersionNumber | — |
+| PRIORITY_CODE | GoalPlanGoalPEOPriorityCode | — |
+| REVIEW_PERIOD_ID | GoalPlanGoalPEOReviewPeriodId | — |
+| WEIGHTING | GoalPlanGoalPEOWeighting | — |
+
+### [[goalversionstatusoverviewpvo|GoalVersionStatusOverviewPVO]] (HCM · BICC: 5/17)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | GoalPlanGoalPEOBusinessGroupId | — |
+| CREATED_BY | GoalPlanGoalPEOCreatedBy | — |
+| CREATION_DATE | GoalPlanGoalPEOCreationDate | — |
+| DISPLAY_SEQUENCE | GoalPlanGoalPEODisplaySequence | — |
+| EFFECTIVE_END_DATE | GoalPlanGoalPEOEffectiveEndDate | — |
+| EFFECTIVE_START_DATE | GoalPlanGoalPEOEffectiveStartDate | ✅ |
+| GOAL_ID | GoalPlanGoalPEOGoalId | — |
+| GOAL_PLAN_GOAL_ID | GoalPlanGoalId | ✅ |
+| GOAL_PLAN_ID | GoalPlanGoalPEOGoalPlanId | ✅ |
+| GOAL_PLAN_SET_ID | GoalPlanGoalPEOGoalPlanSetId1 | ✅ |
+| LAST_UPDATE_DATE | GoalPlanGoalPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | GoalPlanGoalPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | GoalPlanGoalPEOLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | GoalPlanGoalPEOObjectVersionNumber | — |
+| PRIORITY_CODE | GoalPlanGoalPEOPriorityCode | — |
+| REVIEW_PERIOD_ID | GoalPlanGoalPEORevPeriodId | — |
+| WEIGHTING | GoalPlanGoalPEOWeighting | — |
+
+### [[organizationgoalpvo|OrganizationGoalPVO]] (HCM · BICC: 1/18)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | BusinessGroupId | — |
+| CREATED_BY | CreatedBy | — |
+| CREATION_DATE | CreationDate | — |
+| DISPLAY_SEQUENCE | GoalPlanGoalPEODisplaySequence | — |
+| EFFECTIVE_END_DATE | EffectiveEndDate1 | — |
+| EFFECTIVE_START_DATE | EffectiveStartDate1 | — |
+| GOAL_ID | GoalPlanGoalPEOGoalId | — |
+| GOAL_PLAN_GOAL_ID | GoalPlanGoalId | — |
+| GOAL_PLAN_ID | GoalPEOGoalPlanId | ✅ |
+| GOAL_PLAN_SET_ID | GoalPlanSetId | — |
+| GOAL_PLAN_SET_ID | GoalPlanSetId1 | — |
+| LAST_UPDATE_DATE | LastUpdateDate | — |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | — |
+| LAST_UPDATED_BY | LastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | — |
+| PRIORITY_CODE | PriorityCode | — |
+| REVIEW_PERIOD_ID | GoalPlanGoalPEORevPeriodId | — |
+| WEIGHTING | GoalPEOWeighting | — |
+
+### [[performancegoalpvo|PerformanceGoalPVO]] (HCM · BICC: 4/9)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| DISPLAY_SEQUENCE | GoalPlanGoalPEODisplaySequence | — |
+| EFFECTIVE_END_DATE | GoalPlanGoalPEOEffectiveEndDate | — |
+| EFFECTIVE_START_DATE | GoalPlanGoalPEOEffectiveStartDate | ✅ |
+| GOAL_PLAN_GOAL_ID | GoalPlanGoalPEOGoalPlanGoalId | — |
+| GOAL_PLAN_ID | GoalPlanGoalPEOGoalPlanId | ✅ |
+| GOAL_PLAN_SET_ID | GoalPlanGoalPEOGoalPlanSetId | — |
+| LAST_UPDATE_DATE | GoalPlanGoalPEOLastUpdateDate | ✅ |
+| REVIEW_PERIOD_ID | GoalPlanGoalPEOReviewPeriodId | — |
+| WEIGHTING | GoalPlanGoalPEOWeighting | ✅ |
+
+### [[performancegoalpvoviewall|PerformanceGoalPVOViewAll]] (HCM · BICC: 4/9)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| DISPLAY_SEQUENCE | GoalPlanGoalPEODisplaySequence | — |
+| EFFECTIVE_END_DATE | GoalPlanGoalPEOEffectiveEndDate | — |
+| EFFECTIVE_START_DATE | GoalPlanGoalPEOEffectiveStartDate | ✅ |
+| GOAL_PLAN_GOAL_ID | GoalPlanGoalPEOGoalPlanGoalId | — |
+| GOAL_PLAN_ID | GoalPlanGoalPEOGoalPlanId | ✅ |
+| GOAL_PLAN_SET_ID | GoalPlanGoalPEOGoalPlanSetId | — |
+| LAST_UPDATE_DATE | GoalPlanGoalPEOLastUpdateDate | ✅ |
+| REVIEW_PERIOD_ID | GoalPlanGoalPEOReviewPeriodId | — |
+| WEIGHTING | GoalPlanGoalPEOWeighting | ✅ |
+
+### [[performancegoalversionpvo|PerformanceGoalVersionPVO]] (HCM · BICC: 3/9)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| DISPLAY_SEQUENCE | GoalPlanGoalPEODisplaySequence | — |
+| EFFECTIVE_END_DATE | GoalPlanGoalPEOEffectiveEndDate | — |
+| EFFECTIVE_START_DATE | GoalPlanGoalPEOEffectiveStartDate | ✅ |
+| GOAL_PLAN_GOAL_ID | GoalPlanGoalPEOGoalPlanGoalId | — |
+| GOAL_PLAN_ID | GoalPlanGoalPEOGoalPlanId | — |
+| GOAL_PLAN_SET_ID | GoalPlanGoalPEOGoalPlanSetId | — |
+| LAST_UPDATE_DATE | GoalPlanGoalPEOLastUpdateDate | ✅ |
+| REVIEW_PERIOD_ID | GoalPlanGoalPEOReviewPeriodId | — |
+| WEIGHTING | GoalPlanGoalPEOWeighting | ✅ |
+
+### [[performancegoalversionpvoviewall|PerformanceGoalVersionPVOViewAll]] (HCM · BICC: 3/9)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| DISPLAY_SEQUENCE | GoalPlanGoalPEODisplaySequence | — |
+| EFFECTIVE_END_DATE | GoalPlanGoalPEOEffectiveEndDate | — |
+| EFFECTIVE_START_DATE | GoalPlanGoalPEOEffectiveStartDate | ✅ |
+| GOAL_PLAN_GOAL_ID | GoalPlanGoalPEOGoalPlanGoalId | — |
+| GOAL_PLAN_ID | GoalPlanGoalPEOGoalPlanId | — |
+| GOAL_PLAN_SET_ID | GoalPlanGoalPEOGoalPlanSetId | — |
+| LAST_UPDATE_DATE | GoalPlanGoalPEOLastUpdateDate | ✅ |
+| REVIEW_PERIOD_ID | GoalPlanGoalPEOReviewPeriodId | — |
+| WEIGHTING | GoalPlanGoalPEOWeighting | ✅ |
+
+### [[personalgoalpvo|PersonalGoalPVO]] (HCM · BICC: 2/9)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| DISPLAY_SEQUENCE | GoalPlanGoalPEODisplaySequence | — |
+| EFFECTIVE_END_DATE | GoalPlanGoalPEOEffectiveEndDate | — |
+| EFFECTIVE_START_DATE | GoalPlanGoalPEOEffectiveStartDate | ✅ |
+| GOAL_PLAN_GOAL_ID | GoalPlanGoalPEOGoalPlanGoalId | — |
+| GOAL_PLAN_ID | GoalPlanGoalPEOGoalPlanId | — |
+| GOAL_PLAN_SET_ID | GoalPlanGoalPEOGoalPlanSetId | — |
+| LAST_UPDATE_DATE | GoalPlanGoalPEOLastUpdateDate | ✅ |
+| REVIEW_PERIOD_ID | GoalPlanGoalPEOReviewPeriodId | — |
+| WEIGHTING | GoalPlanGoalPEOWeighting | — |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Fusion HCM Tables and Views](https://docs.oracle.com/en/cloud/saas/human-resources/25a/)

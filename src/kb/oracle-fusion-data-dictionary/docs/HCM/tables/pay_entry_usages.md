@@ -99,6 +99,45 @@ WHERE  eu.ELEMENT_ENTRY_ID = :p_entry_id;
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[bientryusagepvo|BIEntryUsagePVO]] (HCM · BICC: 16/16)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ASSIGNED_PAYROLL_ID | EntryUsagePEOAssignedPayrollId | ✅ |
+| CREATED_BY | EntryUsagePEOCreatedBy | ✅ |
+| CREATION_DATE | EntryUsagePEOCreationDate | ✅ |
+| DATE_FROM | EntryUsagePEODateFrom | ✅ |
+| DATE_TO | EntryUsagePEODateTo | ✅ |
+| ELEMENT_ENTRY_ID | EntryUsagePEOElementEntryId | ✅ |
+| ENTERPRISE_ID | EntryUsagePEOEnterpriseId | ✅ |
+| ENTRY_USAGE_ID | EntryUsagePEOEntryUsageId | ✅ |
+| LAST_UPDATE_DATE | EntryUsagePEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | EntryUsagePEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | EntryUsagePEOLastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | EntryUsagePEOObjectVersionNumber | ✅ |
+| PAYROLL_ASSIGNMENT_ID | EntryUsagePEOPayrollAssignmentId | ✅ |
+| PAYROLL_RELATIONSHIP_ID | EntryUsagePEOPayrollRelationshipId | ✅ |
+| PAYROLL_TERM_ID | EntryUsagePEOPayrollTermId | ✅ |
+| USAGE_LEVEL | EntryUsagePEOUsageLevel | ✅ |
+
+### [[retroelemententry|RetroElementEntry]] (HCM · BICC: 2/9)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ASSIGNED_PAYROLL_ID | EntryUsagePEOAssignedPayrollId | — |
+| DATE_FROM | EntryUsagePEODateFrom | — |
+| DATE_TO | EntryUsagePEODateTo | — |
+| ELEMENT_ENTRY_ID | EntryUsagePEOElementEntryId | — |
+| ENTRY_USAGE_ID | EntryUsagePEOEntryUsageId | — |
+| PAYROLL_ASSIGNMENT_ID | EntryUsagePEOPayrollAssignmentId | ✅ |
+| PAYROLL_RELATIONSHIP_ID | EntryUsagePEOPayrollRelationshipId | — |
+| PAYROLL_TERM_ID | EntryUsagePEOPayrollTermId | ✅ |
+| USAGE_LEVEL | EntryUsagePEOUsageLevel | — |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — PAY_ENTRY_USAGES](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/payentryusages.html)

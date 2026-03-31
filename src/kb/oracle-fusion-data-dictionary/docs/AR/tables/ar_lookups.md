@@ -101,6 +101,348 @@ SELECT ct.trx_number,
 - O campo `TAG` é utilizado para filtragem contextual — por exemplo, filtrar lookup values que se aplicam apenas a determinados tipos de transação.
 - Em migrações, é fundamental validar que os lookup codes utilizados nos dados de origem existem no ambiente de destino.
 
+## 🔗 PVOs Relacionados
+
+### [[arlookupadjstatusvc|ArLookupAdjStatusVC]] (AR · BICC: 5/13)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | CreatedBy | — |
+| CREATION_DATE | CreationDate | — |
+| DESCRIPTION | Description | ✅ |
+| ENABLED_FLAG | EnabledFlag | — |
+| END_DATE_ACTIVE | EndDateActive | — |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | — |
+| LAST_UPDATED_BY | LastUpdatedBy | — |
+| LOOKUP_CODE | LookupCode | ✅ |
+| LOOKUP_TYPE | LookupType | ✅ |
+| MEANING | Meaning | ✅ |
+| START_DATE_ACTIVE | StartDateActive | — |
+| TAG | Tag | — |
+
+### [[arlookupappstatusvc|ArLookupAppStatusVC]] (AR · BICC: 5/13)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | CreatedBy | — |
+| CREATION_DATE | CreationDate | — |
+| DESCRIPTION | Description | ✅ |
+| ENABLED_FLAG | EnabledFlag | — |
+| END_DATE_ACTIVE | EndDateActive | — |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | — |
+| LAST_UPDATED_BY | LastUpdatedBy | — |
+| LOOKUP_CODE | LookupCode | ✅ |
+| LOOKUP_TYPE | LookupType | ✅ |
+| MEANING | Meaning | ✅ |
+| START_DATE_ACTIVE | StartDateActive | — |
+| TAG | Tag | — |
+
+### [[arlookuparaccountingclassvc|ArLookupArAccountingClassVC]] (AR · BICC: 5/13)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | CreatedBy | — |
+| CREATION_DATE | CreationDate | — |
+| DESCRIPTION | Description | ✅ |
+| ENABLED_FLAG | EnabledFlag | — |
+| END_DATE_ACTIVE | EndDateActive | — |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | — |
+| LAST_UPDATED_BY | LastUpdatedBy | — |
+| LOOKUP_CODE | LookupCode | ✅ |
+| LOOKUP_TYPE | LookupType | ✅ |
+| MEANING | Meaning | ✅ |
+| START_DATE_ACTIVE | StartDateActive | — |
+| TAG | Tag | — |
+
+### [[arlookupcrdmemoreqstatusvc|ArLookupCrdMemoReqStatusVC]] (AR · BICC: 5/13)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | CreatedBy | — |
+| CREATION_DATE | CreationDate | — |
+| DESCRIPTION | Description | ✅ |
+| ENABLED_FLAG | EnabledFlag | — |
+| END_DATE_ACTIVE | EndDateActive | — |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | — |
+| LAST_UPDATED_BY | LastUpdatedBy | — |
+| LOOKUP_CODE | LookupCode | ✅ |
+| LOOKUP_TYPE | LookupType | ✅ |
+| MEANING | Meaning | ✅ |
+| START_DATE_ACTIVE | StartDateActive | — |
+| TAG | Tag | — |
+
+### [[arlookuppmntschstatusvc|ArLookupPmntSchStatusVC]] (AR · BICC: 5/13)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | CreatedBy | — |
+| CREATION_DATE | CreationDate | — |
+| DESCRIPTION | Description | ✅ |
+| ENABLED_FLAG | EnabledFlag | — |
+| END_DATE_ACTIVE | EndDateActive | — |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | — |
+| LAST_UPDATED_BY | LastUpdatedBy | — |
+| LOOKUP_CODE | LookupCode | ✅ |
+| LOOKUP_TYPE | LookupType | ✅ |
+| MEANING | Meaning | ✅ |
+| START_DATE_ACTIVE | StartDateActive | — |
+| TAG | Tag | — |
+
+### [[arlookuprcpthistorystatusvc|ArLookupRcptHistoryStatusVC]] (AR · BICC: 5/13)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | CreatedBy | — |
+| CREATION_DATE | CreationDate | — |
+| DESCRIPTION | Description | ✅ |
+| ENABLED_FLAG | EnabledFlag | — |
+| END_DATE_ACTIVE | EndDateActive | — |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | — |
+| LAST_UPDATED_BY | LastUpdatedBy | — |
+| LOOKUP_CODE | LookupCode | ✅ |
+| LOOKUP_TYPE | LookupType | ✅ |
+| MEANING | Meaning | ✅ |
+| START_DATE_ACTIVE | StartDateActive | — |
+| TAG | Tag | — |
+
+### [[arlookuprcptstatusvc|ArLookupRcptStatusVC]] (AR · BICC: 5/13)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | CreatedBy | — |
+| CREATION_DATE | CreationDate | — |
+| DESCRIPTION | Description | ✅ |
+| ENABLED_FLAG | EnabledFlag | — |
+| END_DATE_ACTIVE | EndDateActive | — |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | — |
+| LAST_UPDATED_BY | LastUpdatedBy | — |
+| LOOKUP_CODE | LookupCode | ✅ |
+| LOOKUP_TYPE | LookupType | ✅ |
+| MEANING | Meaning | ✅ |
+| START_DATE_ACTIVE | StartDateActive | — |
+| TAG | Tag | — |
+
+### [[arlookupreconitemvc|ArLookupReconItemVC]] (AR · BICC: 5/13)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | CreatedBy | — |
+| CREATION_DATE | CreationDate | — |
+| DESCRIPTION | Description | — |
+| ENABLED_FLAG | EnabledFlag | ✅ |
+| END_DATE_ACTIVE | EndDateActive | — |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | — |
+| LAST_UPDATED_BY | LastUpdatedBy | — |
+| LOOKUP_CODE | LookupCode | ✅ |
+| LOOKUP_TYPE | LookupType | ✅ |
+| MEANING | Meaning | ✅ |
+| START_DATE_ACTIVE | StartDateActive | — |
+| TAG | Tag | — |
+
+### [[arlookuprevenueadjstatusvc|ArLookupRevenueAdjStatusVC]] (AR · BICC: 5/13)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | CreatedBy | — |
+| CREATION_DATE | CreationDate | — |
+| DESCRIPTION | Description | ✅ |
+| ENABLED_FLAG | EnabledFlag | — |
+| END_DATE_ACTIVE | EndDateActive | — |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | — |
+| LAST_UPDATED_BY | LastUpdatedBy | — |
+| LOOKUP_CODE | LookupCode | ✅ |
+| LOOKUP_TYPE | LookupType | ✅ |
+| MEANING | Meaning | ✅ |
+| START_DATE_ACTIVE | StartDateActive | — |
+| TAG | Tag | — |
+
+### [[arlookuptransclassvc|ArLookupTransClassVC]] (AR · BICC: 5/13)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | CreatedBy | — |
+| CREATION_DATE | CreationDate | — |
+| DESCRIPTION | Description | ✅ |
+| ENABLED_FLAG | EnabledFlag | — |
+| END_DATE_ACTIVE | EndDateActive | — |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | — |
+| LAST_UPDATED_BY | LastUpdatedBy | — |
+| LOOKUP_CODE | LookupCode | ✅ |
+| LOOKUP_TYPE | LookupType | ✅ |
+| MEANING | Meaning | ✅ |
+| START_DATE_ACTIVE | StartDateActive | — |
+| TAG | Tag | — |
+
+### [[headersalescreditpvo|HeaderSalesCreditPVO]] (AR · BICC: 1/4)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| DESCRIPTION | TrxClassDescription | — |
+| LOOKUP_CODE | TrxClassLookupCode | — |
+| LOOKUP_TYPE | TrxClassLookupType | — |
+| MEANING | TrxClassMeaning | ✅ |
+
+### [[linesalescreditpvo|LineSalesCreditPVO]] (AR · BICC: 1/4)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| DESCRIPTION | TrxClassDescription | — |
+| LOOKUP_CODE | TrxClassLookupCode | — |
+| LOOKUP_TYPE | TrxClassLookupType | — |
+| MEANING | TrxClassMeaning | ✅ |
+
+### [[paymentschedulepvo|PaymentSchedulePVO]] (AR · BICC: 1/13)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | ArLookupCreatedBy | — |
+| CREATION_DATE | ArLookupCreationDate | — |
+| DESCRIPTION | ArLookupDescription | — |
+| ENABLED_FLAG | ArLookupEnabledFlag | — |
+| END_DATE_ACTIVE | ArLookupEndDateActive | — |
+| LAST_UPDATE_DATE | ArLookupLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ArLookupLastUpdateLogin | — |
+| LAST_UPDATED_BY | ArLookupLastUpdatedBy | — |
+| LOOKUP_CODE | ArLookupLookupCode | — |
+| LOOKUP_TYPE | ArLookupLookupType | — |
+| MEANING | ArLookupMeaning | — |
+| START_DATE_ACTIVE | ArLookupStartDateActive | — |
+| TAG | ArLookupTag | — |
+
+### [[receiptapplicationdistributionpvo|ReceiptApplicationDistributionPVO]] (AR · BICC: 1/13)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | ArLookupCreatedBy | — |
+| CREATION_DATE | ArLookupCreationDate | — |
+| DESCRIPTION | ArLookupDescription | — |
+| ENABLED_FLAG | ArLookupEnabledFlag | — |
+| END_DATE_ACTIVE | ArLookupEndDateActive | — |
+| LAST_UPDATE_DATE | ArLookupLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ArLookupLastUpdateLogin | — |
+| LAST_UPDATED_BY | ArLookupLastUpdatedBy | — |
+| LOOKUP_CODE | ArLookupLookupCode | — |
+| LOOKUP_TYPE | ArLookupLookupType | — |
+| MEANING | ArLookupMeaning | — |
+| START_DATE_ACTIVE | ArLookupStartDateActive | — |
+| TAG | ArLookupTag | — |
+
+### [[receiptapplicationdistributionvc|ReceiptApplicationDistributionVC]] (AR · BICC: 1/13)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | ArLookupCreatedBy | — |
+| CREATION_DATE | ArLookupCreationDate | — |
+| DESCRIPTION | ArLookupDescription | — |
+| ENABLED_FLAG | ArLookupEnabledFlag | — |
+| END_DATE_ACTIVE | ArLookupEndDateActive | — |
+| LAST_UPDATE_DATE | ArLookupLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ArLookupLastUpdateLogin | — |
+| LAST_UPDATED_BY | ArLookupLastUpdatedBy | — |
+| LOOKUP_CODE | ArLookupLookupCode | — |
+| LOOKUP_TYPE | ArLookupLookupType | — |
+| MEANING | ArLookupMeaning | — |
+| START_DATE_ACTIVE | ArLookupStartDateActive | — |
+| TAG | ArLookupTag | — |
+
+### [[transactionheaderbillsreceivablepvo|TransactionHeaderBillsReceivablePVO]] (AR)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| DESCRIPTION | TrxClassDescription | — |
+| LOOKUP_CODE | TrxClassLookupCode | — |
+| LOOKUP_TYPE | TrxClassLookupType | — |
+| MEANING | TrxClassMeaning | — |
+
+### [[transactionheadernovcpvo|TransactionHeaderNoVCPVO]] (AR · BICC: 2/4)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| DESCRIPTION | TrxClassDescription | — |
+| LOOKUP_CODE | TrxClassLookupCode | ✅ |
+| LOOKUP_TYPE | TrxClassLookupType | — |
+| MEANING | TrxClassMeaning | ✅ |
+
+### [[transactionheaderpvo|TransactionHeaderPVO]] (AR · BICC: 2/4)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| DESCRIPTION | TrxClassDescription | — |
+| LOOKUP_CODE | TrxClassLookupCode | ✅ |
+| LOOKUP_TYPE | TrxClassLookupType | — |
+| MEANING | TrxClassMeaning | ✅ |
+
+### [[transactionhistorydistributionpvo|TransactionHistoryDistributionPVO]] (AR)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| LOOKUP_CODE | TrxClassLookupCode | — |
+| LOOKUP_TYPE | TrxClassLookupType | — |
+
+### [[transactionhistorypvo|TransactionHistoryPVO]] (AR)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| LOOKUP_CODE | TrxClassLookupCode | — |
+| LOOKUP_TYPE | TrxClassLookupType | — |
+
+### [[transactionlinebillsreceivablepvo|TransactionLineBillsReceivablePVO]] (AR)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| DESCRIPTION | TrxClassDescription | — |
+| LOOKUP_CODE | TrxClassLookupCode | — |
+| LOOKUP_TYPE | TrxClassLookupType | — |
+| MEANING | TrxClassMeaning | — |
+
+### [[transactionlinedistributionpvo|TransactionLineDistributionPVO]] (AR · BICC: 1/4)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| DESCRIPTION | TrxClassDescription | — |
+| LOOKUP_CODE | TrxClassLookupCode | — |
+| LOOKUP_TYPE | TrxClassLookupType | — |
+| MEANING | TrxClassMeaning | ✅ |
+
+### [[transactionlinepvo|TransactionLinePVO]] (AR · BICC: 1/4)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| DESCRIPTION | TrxClassDescription | — |
+| LOOKUP_CODE | TrxClassLookupCode | — |
+| LOOKUP_TYPE | TrxClassLookupType | — |
+| MEANING | TrxClassMeaning | ✅ |
+
+### [[transactiontypepvo|TransactionTypePVO]] (AR · BICC: 4/13)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | ArLookupCreatedBy | — |
+| CREATION_DATE | ArLookupCreationDate | ✅ |
+| DESCRIPTION | ArLookupDescription | ✅ |
+| ENABLED_FLAG | ArLookupEnabledFlag | — |
+| END_DATE_ACTIVE | ArLookupEndDateActive | — |
+| LAST_UPDATE_DATE | ArLookupLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ArLookupLastUpdateLogin | — |
+| LAST_UPDATED_BY | ArLookupLastUpdatedBy | — |
+| LOOKUP_CODE | ArLookupLookupCode | — |
+| LOOKUP_TYPE | ArLookupLookupType | — |
+| MEANING | ArLookupMeaning | ✅ |
+| START_DATE_ACTIVE | ArLookupStartDateActive | — |
+| TAG | ArLookupTag | — |
+
+---
+
 ## 📚 Referências
 
 - Oracle Fusion Cloud Financials — Accounts Receivable Tables (OEDMF Release 13)

@@ -99,6 +99,21 @@ WHERE  pt.TERRITORY_CODE = 'BR';
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[organizationpaymentmethoddpvo|OrganizationPaymentMethodDPVO]] (AP · BICC: 5/6)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ALLOW_AS_DEFAULT | PaymentTypeBasePEOAllowAsDefault | ✅ |
+| BASE_PAYMENT_TYPE_NAME | PaymentTypeBasePEOBasePaymentTypeName | ✅ |
+| CATEGORY | PaymentTypeBasePEOCategory | ✅ |
+| LEGISLATION_CODE | PaymentTypeBasePEOLegislationCode | ✅ |
+| MODULE_ID | PaymentTypeBasePEOModuleId | — |
+| PAYMENT_TYPE_ID | PaymentTypeBasePEOPaymentTypeId | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — PAY_PAYMENT_TYPES](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/paypaymenttypes.html)

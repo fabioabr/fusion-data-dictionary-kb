@@ -100,3 +100,14 @@ WHERE  sf.JOB_APPLICATION_ID = :p_id AND sf.FLOW_STATUS = 'ACTIVE';
 
 - [Oracle Docs -- IRC_JA_SECONDARY_FLOWS](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/ircjasecondaryflows.html)
 - [[hcm-module-data-dictionary]] -- Dossie do modulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[esignaturepvo|ESignaturePVO]] (HCM · BICC: 1/2)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| AF_VERSION_ID | JASecondaryFlowsPEOAfVersionId | ✅ |
+| SECONDARY_FLOW_ID | JASecondaryFlowsPEOSecondaryFlowId | — |

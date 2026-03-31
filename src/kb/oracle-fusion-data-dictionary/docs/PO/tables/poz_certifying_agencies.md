@@ -121,6 +121,26 @@ WHERE  bc.CERTIFYING_AGENCY_ID = :p_agency_id
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[supplierbusinessclassificationextractpvo|SupplierBusinessClassificationExtractPVO]] (PO · BICC: 4/4)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| AGENCY_ID | CertifyingAgencyAgencyId | ✅ |
+| DESCRIPTION | CertifyingAgencyDescription | ✅ |
+| END_DATE | CertifyingAgencyEndDate | ✅ |
+| NAME | CertifyingAgencyName | ✅ |
+
+### [[supplierregistrationbusclassreqpvo|SupplierRegistrationBusClassReqPVO]] (PO · BICC: 1/2)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| AGENCY_ID | SupplierCertifyingAgenciesAgencyId | — |
+| NAME | SupplierCertifyingAgenciesName | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — POZ_CERTIFYING_AGENCIES](https://docs.oracle.com/en/cloud/saas/procurement/25a/oedmf/pozcertifyingagencies.html)

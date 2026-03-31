@@ -119,3 +119,32 @@ WHERE  pr.PERSON_ID = :p_person_id
 
 - [Oracle Docs — WLF_PLAN_RECORDS_F](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/wlfplanrecordsf.html)
 - [[hcm-module-data-dictionary]] — Dossiê do módulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[learningplanrecordspvo|LearningPlanRecordsPVO]] (HCM · BICC: 7/20)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| AREC_EFFECTIVE_DATE | PlanRecordsDEOArecEffectiveDate | — |
+| AREC_STATE_ON_EXECUTE | PlanRecordsDEOArecStateOnExecute | — |
+| ASSIGNMENT_RECORD_ID | PlanRecordsDEOAssignmentRecordId | — |
+| CREATED_BY | PlanRecordsDEOCreatedBy | — |
+| CREATION_DATE | PlanRecordsDEOCreationDate | — |
+| EFFECTIVE_END_DATE | PlanRecordsDEOEffectiveEndDate | ✅ |
+| EFFECTIVE_START_DATE | PlanRecordsDEOEffectiveStartDate | ✅ |
+| ENTERPRISE_ID | PlanRecordsDEOEnterpriseId | — |
+| LAST_UPDATE_DATE | PlanRecordsDEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | PlanRecordsDEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | PlanRecordsDEOLastUpdatedBy | — |
+| LEARNING_PLAN_ID | PlanRecordsDEOLearningPlanId | — |
+| OBJECT_VERSION_NUMBER | PlanRecordsDEOObjectVersionNumber | — |
+| PLAN_PROFILE_ID | PlanRecordsDEOPlanProfileId | — |
+| PLAN_RECORD_ID | PlanRecordsDEOPlanRecordId | ✅ |
+| PRICING_RULE_ID | PlanRecordsDEOPricingRuleId | — |
+| PRICING_RULE_LOCK_DATE | PlanRecordsDEOPricingRuleLockDate | — |
+| STATUS | PlanRecordsDEOStatus | ✅ |
+| WAGE_COST | PlanRecordsDEOWageCost | ✅ |
+| WAGE_COST_CURRENCY | PlanRecordsDEOWageCostCurrency | ✅ |

@@ -96,6 +96,546 @@ WHERE  d.STATUS_CODE = 'ACTIVE';
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[competenciescalbratingpvo|CompetenciesCalbRatingPVO]] (HCM · BICC: 2/29)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| AGE_GROUP_VALUE | DashboardPEOAgeGroupValue | — |
+| ASSIGNMENT_ID | DashboardPEOAssignmentId | — |
+| BU_LEADER_DIRECT_ID | DashboardPEOBuLeaderDirectId | — |
+| BUSINESS_GROUP_ID | DashboardPEOBusinessGroupId1 | — |
+| CREATED_BY | DashboardPEOCreatedBy1 | — |
+| CREATION_DATE | DashboardPEOCreationDate1 | — |
+| DASHBOARD_ID | DashboardPEODashboardId | ✅ |
+| EXTN_METRIC_CALIB_VALUE1 | DashboardPEOExtnMetricCalibValue1 | — |
+| EXTN_METRIC_CALIB_VALUE2 | DashboardPEOExtnMetricCalibValue2 | — |
+| EXTN_METRIC_VALUE1 | DashboardPEOExtnMetricValue1 | — |
+| EXTN_METRIC_VALUE2 | DashboardPEOExtnMetricValue2 | — |
+| IMPACT_LOSS_CALB_RT_LVL_ID | DashboardPEOImpactLossCalbRtLvlId | — |
+| IMPACT_LOSS_RT_LVL_ID | DashboardPEOImpactLossRtLvlId | — |
+| LAST_UPDATE_DATE | DashboardPEOLastUpdateDate1 | ✅ |
+| LAST_UPDATE_LOGIN | DashboardPEOLastUpdateLogin1 | — |
+| LAST_UPDATED_BY | DashboardPEOLastUpdatedBy1 | — |
+| MEETING_ID | DashboardPEOMeetingId | — |
+| MOBILITY_CALIB_VALUE | DashboardPEOMobilityCalibValue | — |
+| MOBILITY_VALUE | DashboardPEOMobilityValue | — |
+| OBJECT_VERSION_NUMBER | DashboardPEOObjectVersionNumber1 | — |
+| PERF_CALIB_RT_LVL_ID | DashboardPEOPerfCalibRtLvlId | — |
+| PERF_RT_LVL_ID | DashboardPEOPerfRtLvlId | — |
+| PERSON_ID | DashboardPEOPersonId1 | — |
+| POT_CALIB_RT_LVL_ID | DashboardPEOPotCalibRtLvlId | — |
+| POT_RT_LVL_ID | DashboardPEOPotRtLvlId | — |
+| RISK_LOSS_CALIB_RT_LVL_ID | DashboardPEORiskLossCalibRtLvlId | — |
+| RISK_LOSS_RT_LVL_ID | DashboardPEORiskLossRtLvlId | — |
+| TALENT_SCOR_CALB_RT_LVL_ID | DashboardPEOTalentScorCalbRtLvlId | — |
+| TALENT_SCORE_RT_LVL_ID | DashboardPEOTalentScoreRtLvlId | — |
+
+### [[competenciescalbratingpvo_viewall|CompetenciesCalbRatingPVO_ViewAll]] (HCM · BICC: 2/29)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| AGE_GROUP_VALUE | DashboardPEOAgeGroupValue | — |
+| ASSIGNMENT_ID | DashboardPEOAssignmentId | — |
+| BU_LEADER_DIRECT_ID | DashboardPEOBuLeaderDirectId | — |
+| BUSINESS_GROUP_ID | DashboardPEOBusinessGroupId1 | — |
+| CREATED_BY | DashboardPEOCreatedBy1 | — |
+| CREATION_DATE | DashboardPEOCreationDate1 | — |
+| DASHBOARD_ID | DashboardPEODashboardId | ✅ |
+| EXTN_METRIC_CALIB_VALUE1 | DashboardPEOExtnMetricCalibValue1 | — |
+| EXTN_METRIC_CALIB_VALUE2 | DashboardPEOExtnMetricCalibValue2 | — |
+| EXTN_METRIC_VALUE1 | DashboardPEOExtnMetricValue1 | — |
+| EXTN_METRIC_VALUE2 | DashboardPEOExtnMetricValue2 | — |
+| IMPACT_LOSS_CALB_RT_LVL_ID | DashboardPEOImpactLossCalbRtLvlId | — |
+| IMPACT_LOSS_RT_LVL_ID | DashboardPEOImpactLossRtLvlId | — |
+| LAST_UPDATE_DATE | DashboardPEOLastUpdateDate1 | ✅ |
+| LAST_UPDATE_LOGIN | DashboardPEOLastUpdateLogin1 | — |
+| LAST_UPDATED_BY | DashboardPEOLastUpdatedBy1 | — |
+| MEETING_ID | DashboardPEOMeetingId | — |
+| MOBILITY_CALIB_VALUE | DashboardPEOMobilityCalibValue | — |
+| MOBILITY_VALUE | DashboardPEOMobilityValue | — |
+| OBJECT_VERSION_NUMBER | DashboardPEOObjectVersionNumber1 | — |
+| PERF_CALIB_RT_LVL_ID | DashboardPEOPerfCalibRtLvlId | — |
+| PERF_RT_LVL_ID | DashboardPEOPerfRtLvlId | — |
+| PERSON_ID | DashboardPEOPersonId1 | — |
+| POT_CALIB_RT_LVL_ID | DashboardPEOPotCalibRtLvlId | — |
+| POT_RT_LVL_ID | DashboardPEOPotRtLvlId | — |
+| RISK_LOSS_CALIB_RT_LVL_ID | DashboardPEORiskLossCalibRtLvlId | — |
+| RISK_LOSS_RT_LVL_ID | DashboardPEORiskLossRtLvlId | — |
+| TALENT_SCOR_CALB_RT_LVL_ID | DashboardPEOTalentScorCalbRtLvlId | — |
+| TALENT_SCORE_RT_LVL_ID | DashboardPEOTalentScoreRtLvlId | — |
+
+### [[dashboardpvo|DashboardPVO]] (HCM · BICC: 25/25)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| AGE_GROUP_VALUE | AgeGroupValue | ✅ |
+| ASSIGNMENT_ID | AssignmentId | ✅ |
+| BU_LEADER_DIRECT_ID | BuLeaderDirectId | ✅ |
+| BUSINESS_GROUP_ID | BusinessGroupId | ✅ |
+| CREATED_BY | CreatedBy | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| DASHBOARD_ID | DashboardId | ✅ |
+| IMPACT_LOSS_CALB_RT_LVL_ID | ImpactLossCalbRtLvlId | ✅ |
+| IMPACT_LOSS_RT_LVL_ID | ImpactLossRtLvlId | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | LastUpdatedBy | ✅ |
+| MEETING_ID | MeetingId | ✅ |
+| MOBILITY_CALIB_VALUE | MobilityCalibValue | ✅ |
+| MOBILITY_VALUE | MobilityValue | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | ✅ |
+| PERF_CALIB_RT_LVL_ID | PerfCalibRtLvlId | ✅ |
+| PERF_RT_LVL_ID | PerfRtLvlId | ✅ |
+| PERSON_ID | PersonId | ✅ |
+| POT_CALIB_RT_LVL_ID | PotCalibRtLvlId | ✅ |
+| POT_RT_LVL_ID | PotRtLvlId | ✅ |
+| RISK_LOSS_CALIB_RT_LVL_ID | RiskLossCalibRtLvlId | ✅ |
+| RISK_LOSS_RT_LVL_ID | RiskLossRtLvlId | ✅ |
+| TALENT_SCOR_CALB_RT_LVL_ID | TalentScorCalbRtLvlId | ✅ |
+| TALENT_SCORE_RT_LVL_ID | TalentScoreRtLvlId | ✅ |
+
+### [[goalscalibratingpvo|GoalsCalibRatingPVO]] (HCM · BICC: 2/29)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| AGE_GROUP_VALUE | DashboardPEOAgeGroupValue | — |
+| ASSIGNMENT_ID | DashboardPEOAssignmentId | — |
+| BU_LEADER_DIRECT_ID | DashboardPEOBuLeaderDirectId | — |
+| BUSINESS_GROUP_ID | DashboardPEOBusinessGroupId1 | — |
+| CREATED_BY | DashboardPEOCreatedBy1 | — |
+| CREATION_DATE | DashboardPEOCreationDate1 | — |
+| DASHBOARD_ID | DashboardPEODashboardId | ✅ |
+| EXTN_METRIC_CALIB_VALUE1 | DashboardPEOExtnMetricCalibValue1 | — |
+| EXTN_METRIC_CALIB_VALUE2 | DashboardPEOExtnMetricCalibValue2 | — |
+| EXTN_METRIC_VALUE1 | DashboardPEOExtnMetricValue1 | — |
+| EXTN_METRIC_VALUE2 | DashboardPEOExtnMetricValue2 | — |
+| IMPACT_LOSS_CALB_RT_LVL_ID | DashboardPEOImpactLossCalbRtLvlId | — |
+| IMPACT_LOSS_RT_LVL_ID | DashboardPEOImpactLossRtLvlId | — |
+| LAST_UPDATE_DATE | DashboardPEOLastUpdateDate1 | ✅ |
+| LAST_UPDATE_LOGIN | DashboardPEOLastUpdateLogin1 | — |
+| LAST_UPDATED_BY | DashboardPEOLastUpdatedBy1 | — |
+| MEETING_ID | DashboardPEOMeetingId | — |
+| MOBILITY_CALIB_VALUE | DashboardPEOMobilityCalibValue | — |
+| MOBILITY_VALUE | DashboardPEOMobilityValue | — |
+| OBJECT_VERSION_NUMBER | DashboardPEOObjectVersionNumber1 | — |
+| PERF_CALIB_RT_LVL_ID | DashboardPEOPerfCalibRtLvlId | — |
+| PERF_RT_LVL_ID | DashboardPEOPerfRtLvlId | — |
+| PERSON_ID | DashboardPEOPersonId1 | — |
+| POT_CALIB_RT_LVL_ID | DashboardPEOPotCalibRtLvlId | — |
+| POT_RT_LVL_ID | DashboardPEOPotRtLvlId | — |
+| RISK_LOSS_CALIB_RT_LVL_ID | DashboardPEORiskLossCalibRtLvlId | — |
+| RISK_LOSS_RT_LVL_ID | DashboardPEORiskLossRtLvlId | — |
+| TALENT_SCOR_CALB_RT_LVL_ID | DashboardPEOTalentScorCalbRtLvlId | — |
+| TALENT_SCORE_RT_LVL_ID | DashboardPEOTalentScoreRtLvlId | — |
+
+### [[goalscalibratingpvo_viewall|GoalsCalibRatingPVO_ViewAll]] (HCM · BICC: 2/29)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| AGE_GROUP_VALUE | DashboardPEOAgeGroupValue | — |
+| ASSIGNMENT_ID | DashboardPEOAssignmentId | — |
+| BU_LEADER_DIRECT_ID | DashboardPEOBuLeaderDirectId | — |
+| BUSINESS_GROUP_ID | DashboardPEOBusinessGroupId1 | — |
+| CREATED_BY | DashboardPEOCreatedBy1 | — |
+| CREATION_DATE | DashboardPEOCreationDate1 | — |
+| DASHBOARD_ID | DashboardPEODashboardId | ✅ |
+| EXTN_METRIC_CALIB_VALUE1 | DashboardPEOExtnMetricCalibValue1 | — |
+| EXTN_METRIC_CALIB_VALUE2 | DashboardPEOExtnMetricCalibValue2 | — |
+| EXTN_METRIC_VALUE1 | DashboardPEOExtnMetricValue1 | — |
+| EXTN_METRIC_VALUE2 | DashboardPEOExtnMetricValue2 | — |
+| IMPACT_LOSS_CALB_RT_LVL_ID | DashboardPEOImpactLossCalbRtLvlId | — |
+| IMPACT_LOSS_RT_LVL_ID | DashboardPEOImpactLossRtLvlId | — |
+| LAST_UPDATE_DATE | DashboardPEOLastUpdateDate1 | ✅ |
+| LAST_UPDATE_LOGIN | DashboardPEOLastUpdateLogin1 | — |
+| LAST_UPDATED_BY | DashboardPEOLastUpdatedBy1 | — |
+| MEETING_ID | DashboardPEOMeetingId | — |
+| MOBILITY_CALIB_VALUE | DashboardPEOMobilityCalibValue | — |
+| MOBILITY_VALUE | DashboardPEOMobilityValue | — |
+| OBJECT_VERSION_NUMBER | DashboardPEOObjectVersionNumber1 | — |
+| PERF_CALIB_RT_LVL_ID | DashboardPEOPerfCalibRtLvlId | — |
+| PERF_RT_LVL_ID | DashboardPEOPerfRtLvlId | — |
+| PERSON_ID | DashboardPEOPersonId1 | — |
+| POT_CALIB_RT_LVL_ID | DashboardPEOPotCalibRtLvlId | — |
+| POT_RT_LVL_ID | DashboardPEOPotRtLvlId | — |
+| RISK_LOSS_CALIB_RT_LVL_ID | DashboardPEORiskLossCalibRtLvlId | — |
+| RISK_LOSS_RT_LVL_ID | DashboardPEORiskLossRtLvlId | — |
+| TALENT_SCOR_CALB_RT_LVL_ID | DashboardPEOTalentScorCalbRtLvlId | — |
+| TALENT_SCORE_RT_LVL_ID | DashboardPEOTalentScoreRtLvlId | — |
+
+### [[impactoflosscalibratingpvo|ImpactOfLossCalibRatingPVO]] (HCM · BICC: 2/29)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| AGE_GROUP_VALUE | DashboardPEOAgeGroupValue | — |
+| ASSIGNMENT_ID | DashboardPEOAssignmentId | — |
+| BU_LEADER_DIRECT_ID | DashboardPEOBuLeaderDirectId | — |
+| BUSINESS_GROUP_ID | DashboardPEOBusinessGroupId1 | — |
+| CREATED_BY | DashboardPEOCreatedBy1 | — |
+| CREATION_DATE | DashboardPEOCreationDate1 | — |
+| DASHBOARD_ID | DashboardPEODashboardId | ✅ |
+| EXTN_METRIC_CALIB_VALUE1 | DashboardPEOExtnMetricCalibValue1 | — |
+| EXTN_METRIC_CALIB_VALUE2 | DashboardPEOExtnMetricCalibValue2 | — |
+| EXTN_METRIC_VALUE1 | DashboardPEOExtnMetricValue1 | — |
+| EXTN_METRIC_VALUE2 | DashboardPEOExtnMetricValue2 | — |
+| IMPACT_LOSS_CALB_RT_LVL_ID | DashboardPEOImpactLossCalbRtLvlId | — |
+| IMPACT_LOSS_RT_LVL_ID | DashboardPEOImpactLossRtLvlId | — |
+| LAST_UPDATE_DATE | DashboardPEOLastUpdateDate1 | ✅ |
+| LAST_UPDATE_LOGIN | DashboardPEOLastUpdateLogin1 | — |
+| LAST_UPDATED_BY | DashboardPEOLastUpdatedBy1 | — |
+| MEETING_ID | DashboardPEOMeetingId | — |
+| MOBILITY_CALIB_VALUE | DashboardPEOMobilityCalibValue | — |
+| MOBILITY_VALUE | DashboardPEOMobilityValue | — |
+| OBJECT_VERSION_NUMBER | DashboardPEOObjectVersionNumber1 | — |
+| PERF_CALIB_RT_LVL_ID | DashboardPEOPerfCalibRtLvlId | — |
+| PERF_RT_LVL_ID | DashboardPEOPerfRtLvlId | — |
+| PERSON_ID | DashboardPEOPersonId1 | — |
+| POT_CALIB_RT_LVL_ID | DashboardPEOPotCalibRtLvlId | — |
+| POT_RT_LVL_ID | DashboardPEOPotRtLvlId | — |
+| RISK_LOSS_CALIB_RT_LVL_ID | DashboardPEORiskLossCalibRtLvlId | — |
+| RISK_LOSS_RT_LVL_ID | DashboardPEORiskLossRtLvlId | — |
+| TALENT_SCOR_CALB_RT_LVL_ID | DashboardPEOTalentScorCalbRtLvlId | — |
+| TALENT_SCORE_RT_LVL_ID | DashboardPEOTalentScoreRtLvlId | — |
+
+### [[impactoflosscalibratingpvo_viewall|ImpactOfLossCalibRatingPVO_ViewAll]] (HCM · BICC: 2/29)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| AGE_GROUP_VALUE | DashboardPEOAgeGroupValue | — |
+| ASSIGNMENT_ID | DashboardPEOAssignmentId | — |
+| BU_LEADER_DIRECT_ID | DashboardPEOBuLeaderDirectId | — |
+| BUSINESS_GROUP_ID | DashboardPEOBusinessGroupId1 | — |
+| CREATED_BY | DashboardPEOCreatedBy1 | — |
+| CREATION_DATE | DashboardPEOCreationDate1 | — |
+| DASHBOARD_ID | DashboardPEODashboardId | ✅ |
+| EXTN_METRIC_CALIB_VALUE1 | DashboardPEOExtnMetricCalibValue1 | — |
+| EXTN_METRIC_CALIB_VALUE2 | DashboardPEOExtnMetricCalibValue2 | — |
+| EXTN_METRIC_VALUE1 | DashboardPEOExtnMetricValue1 | — |
+| EXTN_METRIC_VALUE2 | DashboardPEOExtnMetricValue2 | — |
+| IMPACT_LOSS_CALB_RT_LVL_ID | DashboardPEOImpactLossCalbRtLvlId | — |
+| IMPACT_LOSS_RT_LVL_ID | DashboardPEOImpactLossRtLvlId | — |
+| LAST_UPDATE_DATE | DashboardPEOLastUpdateDate1 | ✅ |
+| LAST_UPDATE_LOGIN | DashboardPEOLastUpdateLogin1 | — |
+| LAST_UPDATED_BY | DashboardPEOLastUpdatedBy1 | — |
+| MEETING_ID | DashboardPEOMeetingId | — |
+| MOBILITY_CALIB_VALUE | DashboardPEOMobilityCalibValue | — |
+| MOBILITY_VALUE | DashboardPEOMobilityValue | — |
+| OBJECT_VERSION_NUMBER | DashboardPEOObjectVersionNumber1 | — |
+| PERF_CALIB_RT_LVL_ID | DashboardPEOPerfCalibRtLvlId | — |
+| PERF_RT_LVL_ID | DashboardPEOPerfRtLvlId | — |
+| PERSON_ID | DashboardPEOPersonId1 | — |
+| POT_CALIB_RT_LVL_ID | DashboardPEOPotCalibRtLvlId | — |
+| POT_RT_LVL_ID | DashboardPEOPotRtLvlId | — |
+| RISK_LOSS_CALIB_RT_LVL_ID | DashboardPEORiskLossCalibRtLvlId | — |
+| RISK_LOSS_RT_LVL_ID | DashboardPEORiskLossRtLvlId | — |
+| TALENT_SCOR_CALB_RT_LVL_ID | DashboardPEOTalentScorCalbRtLvlId | — |
+| TALENT_SCORE_RT_LVL_ID | DashboardPEOTalentScoreRtLvlId | — |
+
+### [[meetingnotepvo|MeetingNotePVO]] (HCM · BICC: 5/25)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| AGE_GROUP_VALUE | AgeGroupValue | — |
+| ASSIGNMENT_ID | AssignmentId | — |
+| BU_LEADER_DIRECT_ID | BuLeaderDirectId | — |
+| BUSINESS_GROUP_ID | BusinessGroupId | ✅ |
+| CREATED_BY | CreatedBy | — |
+| CREATION_DATE | CreationDate | — |
+| DASHBOARD_ID | DashboardId | ✅ |
+| IMPACT_LOSS_CALB_RT_LVL_ID | ImpactLossCalbRtLvlId | — |
+| IMPACT_LOSS_RT_LVL_ID | ImpactLossRtLvlId | — |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | — |
+| LAST_UPDATED_BY | LastUpdatedBy | — |
+| MEETING_ID | MeetingId | ✅ |
+| MOBILITY_CALIB_VALUE | MobilityCalibValue | — |
+| MOBILITY_VALUE | MobilityValue | — |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | — |
+| PERF_CALIB_RT_LVL_ID | PerfCalibRtLvlId | — |
+| PERF_RT_LVL_ID | PerfRtLvlId | — |
+| PERSON_ID | PersonId | ✅ |
+| POT_CALIB_RT_LVL_ID | PotCalibRtLvlId | — |
+| POT_RT_LVL_ID | PotRtLvlId | — |
+| RISK_LOSS_CALIB_RT_LVL_ID | RiskLossCalibRtLvlId | — |
+| RISK_LOSS_RT_LVL_ID | RiskLossRtLvlId | — |
+| TALENT_SCOR_CALB_RT_LVL_ID | TalentScorCalbRtLvlId | — |
+| TALENT_SCORE_RT_LVL_ID | TalentScoreRtLvlId | — |
+
+### [[performancecalibratedratingvo|PerformanceCalibratedRatingVO]] (HCM · BICC: 2/29)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| AGE_GROUP_VALUE | DashboardPEOAgeGroupValue | — |
+| ASSIGNMENT_ID | DashboardPEOAssignmentId | — |
+| BU_LEADER_DIRECT_ID | DashboardPEOBuLeaderDirectId | — |
+| BUSINESS_GROUP_ID | DashboardPEOBusinessGroupId1 | — |
+| CREATED_BY | DashboardPEOCreatedBy1 | — |
+| CREATION_DATE | DashboardPEOCreationDate1 | — |
+| DASHBOARD_ID | DashboardPEODashboardId | ✅ |
+| EXTN_METRIC_CALIB_VALUE1 | DashboardPEOExtnMetricCalibValue1 | — |
+| EXTN_METRIC_CALIB_VALUE2 | DashboardPEOExtnMetricCalibValue2 | — |
+| EXTN_METRIC_VALUE1 | DashboardPEOExtnMetricValue1 | — |
+| EXTN_METRIC_VALUE2 | DashboardPEOExtnMetricValue2 | — |
+| IMPACT_LOSS_CALB_RT_LVL_ID | DashboardPEOImpactLossCalbRtLvlId | — |
+| IMPACT_LOSS_RT_LVL_ID | DashboardPEOImpactLossRtLvlId | — |
+| LAST_UPDATE_DATE | DashboardPEOLastUpdateDate1 | ✅ |
+| LAST_UPDATE_LOGIN | DashboardPEOLastUpdateLogin1 | — |
+| LAST_UPDATED_BY | DashboardPEOLastUpdatedBy1 | — |
+| MEETING_ID | DashboardPEOMeetingId | — |
+| MOBILITY_CALIB_VALUE | DashboardPEOMobilityCalibValue | — |
+| MOBILITY_VALUE | DashboardPEOMobilityValue | — |
+| OBJECT_VERSION_NUMBER | DashboardPEOObjectVersionNumber1 | — |
+| PERF_CALIB_RT_LVL_ID | DashboardPEOPerfCalibRtLvlId | — |
+| PERF_RT_LVL_ID | DashboardPEOPerfRtLvlId | — |
+| PERSON_ID | DashboardPEOPersonId1 | — |
+| POT_CALIB_RT_LVL_ID | DashboardPEOPotCalibRtLvlId | — |
+| POT_RT_LVL_ID | DashboardPEOPotRtLvlId | — |
+| RISK_LOSS_CALIB_RT_LVL_ID | DashboardPEORiskLossCalibRtLvlId | — |
+| RISK_LOSS_RT_LVL_ID | DashboardPEORiskLossRtLvlId | — |
+| TALENT_SCOR_CALB_RT_LVL_ID | DashboardPEOTalentScorCalbRtLvlId | — |
+| TALENT_SCORE_RT_LVL_ID | DashboardPEOTalentScoreRtLvlId | — |
+
+### [[performancecalibratedratingvo_viewall|PerformanceCalibratedRatingVO_ViewAll]] (HCM · BICC: 2/29)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| AGE_GROUP_VALUE | DashboardPEOAgeGroupValue | — |
+| ASSIGNMENT_ID | DashboardPEOAssignmentId | — |
+| BU_LEADER_DIRECT_ID | DashboardPEOBuLeaderDirectId | — |
+| BUSINESS_GROUP_ID | DashboardPEOBusinessGroupId1 | — |
+| CREATED_BY | DashboardPEOCreatedBy1 | — |
+| CREATION_DATE | DashboardPEOCreationDate1 | — |
+| DASHBOARD_ID | DashboardPEODashboardId | ✅ |
+| EXTN_METRIC_CALIB_VALUE1 | DashboardPEOExtnMetricCalibValue1 | — |
+| EXTN_METRIC_CALIB_VALUE2 | DashboardPEOExtnMetricCalibValue2 | — |
+| EXTN_METRIC_VALUE1 | DashboardPEOExtnMetricValue1 | — |
+| EXTN_METRIC_VALUE2 | DashboardPEOExtnMetricValue2 | — |
+| IMPACT_LOSS_CALB_RT_LVL_ID | DashboardPEOImpactLossCalbRtLvlId | — |
+| IMPACT_LOSS_RT_LVL_ID | DashboardPEOImpactLossRtLvlId | — |
+| LAST_UPDATE_DATE | DashboardPEOLastUpdateDate1 | ✅ |
+| LAST_UPDATE_LOGIN | DashboardPEOLastUpdateLogin1 | — |
+| LAST_UPDATED_BY | DashboardPEOLastUpdatedBy1 | — |
+| MEETING_ID | DashboardPEOMeetingId | — |
+| MOBILITY_CALIB_VALUE | DashboardPEOMobilityCalibValue | — |
+| MOBILITY_VALUE | DashboardPEOMobilityValue | — |
+| OBJECT_VERSION_NUMBER | DashboardPEOObjectVersionNumber1 | — |
+| PERF_CALIB_RT_LVL_ID | DashboardPEOPerfCalibRtLvlId | — |
+| PERF_RT_LVL_ID | DashboardPEOPerfRtLvlId | — |
+| PERSON_ID | DashboardPEOPersonId1 | — |
+| POT_CALIB_RT_LVL_ID | DashboardPEOPotCalibRtLvlId | — |
+| POT_RT_LVL_ID | DashboardPEOPotRtLvlId | — |
+| RISK_LOSS_CALIB_RT_LVL_ID | DashboardPEORiskLossCalibRtLvlId | — |
+| RISK_LOSS_RT_LVL_ID | DashboardPEORiskLossRtLvlId | — |
+| TALENT_SCOR_CALB_RT_LVL_ID | DashboardPEOTalentScorCalbRtLvlId | — |
+| TALENT_SCORE_RT_LVL_ID | DashboardPEOTalentScoreRtLvlId | — |
+
+### [[potentialcalibratedratingvo|PotentialCalibratedRatingVO]] (HCM · BICC: 2/29)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| AGE_GROUP_VALUE | DashboardPEOAgeGroupValue | — |
+| ASSIGNMENT_ID | DashboardPEOAssignmentId | — |
+| BU_LEADER_DIRECT_ID | DashboardPEOBuLeaderDirectId | — |
+| BUSINESS_GROUP_ID | DashboardPEOBusinessGroupId1 | — |
+| CREATED_BY | DashboardPEOCreatedBy1 | — |
+| CREATION_DATE | DashboardPEOCreationDate1 | — |
+| DASHBOARD_ID | DashboardPEODashboardId | ✅ |
+| EXTN_METRIC_CALIB_VALUE1 | DashboardPEOExtnMetricCalibValue1 | — |
+| EXTN_METRIC_CALIB_VALUE2 | DashboardPEOExtnMetricCalibValue2 | — |
+| EXTN_METRIC_VALUE1 | DashboardPEOExtnMetricValue1 | — |
+| EXTN_METRIC_VALUE2 | DashboardPEOExtnMetricValue2 | — |
+| IMPACT_LOSS_CALB_RT_LVL_ID | DashboardPEOImpactLossCalbRtLvlId | — |
+| IMPACT_LOSS_RT_LVL_ID | DashboardPEOImpactLossRtLvlId | — |
+| LAST_UPDATE_DATE | DashboardPEOLastUpdateDate1 | ✅ |
+| LAST_UPDATE_LOGIN | DashboardPEOLastUpdateLogin1 | — |
+| LAST_UPDATED_BY | DashboardPEOLastUpdatedBy1 | — |
+| MEETING_ID | DashboardPEOMeetingId | — |
+| MOBILITY_CALIB_VALUE | DashboardPEOMobilityCalibValue | — |
+| MOBILITY_VALUE | DashboardPEOMobilityValue | — |
+| OBJECT_VERSION_NUMBER | DashboardPEOObjectVersionNumber1 | — |
+| PERF_CALIB_RT_LVL_ID | DashboardPEOPerfCalibRtLvlId | — |
+| PERF_RT_LVL_ID | DashboardPEOPerfRtLvlId | — |
+| PERSON_ID | DashboardPEOPersonId1 | — |
+| POT_CALIB_RT_LVL_ID | DashboardPEOPotCalibRtLvlId | — |
+| POT_RT_LVL_ID | DashboardPEOPotRtLvlId | — |
+| RISK_LOSS_CALIB_RT_LVL_ID | DashboardPEORiskLossCalibRtLvlId | — |
+| RISK_LOSS_RT_LVL_ID | DashboardPEORiskLossRtLvlId | — |
+| TALENT_SCOR_CALB_RT_LVL_ID | DashboardPEOTalentScorCalbRtLvlId | — |
+| TALENT_SCORE_RT_LVL_ID | DashboardPEOTalentScoreRtLvlId | — |
+
+### [[potentialcalibratedratingvo_viewall|PotentialCalibratedRatingVO_ViewAll]] (HCM · BICC: 2/29)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| AGE_GROUP_VALUE | DashboardPEOAgeGroupValue | — |
+| ASSIGNMENT_ID | DashboardPEOAssignmentId | — |
+| BU_LEADER_DIRECT_ID | DashboardPEOBuLeaderDirectId | — |
+| BUSINESS_GROUP_ID | DashboardPEOBusinessGroupId1 | — |
+| CREATED_BY | DashboardPEOCreatedBy1 | — |
+| CREATION_DATE | DashboardPEOCreationDate1 | — |
+| DASHBOARD_ID | DashboardPEODashboardId | ✅ |
+| EXTN_METRIC_CALIB_VALUE1 | DashboardPEOExtnMetricCalibValue1 | — |
+| EXTN_METRIC_CALIB_VALUE2 | DashboardPEOExtnMetricCalibValue2 | — |
+| EXTN_METRIC_VALUE1 | DashboardPEOExtnMetricValue1 | — |
+| EXTN_METRIC_VALUE2 | DashboardPEOExtnMetricValue2 | — |
+| IMPACT_LOSS_CALB_RT_LVL_ID | DashboardPEOImpactLossCalbRtLvlId | — |
+| IMPACT_LOSS_RT_LVL_ID | DashboardPEOImpactLossRtLvlId | — |
+| LAST_UPDATE_DATE | DashboardPEOLastUpdateDate1 | ✅ |
+| LAST_UPDATE_LOGIN | DashboardPEOLastUpdateLogin1 | — |
+| LAST_UPDATED_BY | DashboardPEOLastUpdatedBy1 | — |
+| MEETING_ID | DashboardPEOMeetingId | — |
+| MOBILITY_CALIB_VALUE | DashboardPEOMobilityCalibValue | — |
+| MOBILITY_VALUE | DashboardPEOMobilityValue | — |
+| OBJECT_VERSION_NUMBER | DashboardPEOObjectVersionNumber1 | — |
+| PERF_CALIB_RT_LVL_ID | DashboardPEOPerfCalibRtLvlId | — |
+| PERF_RT_LVL_ID | DashboardPEOPerfRtLvlId | — |
+| PERSON_ID | DashboardPEOPersonId1 | — |
+| POT_CALIB_RT_LVL_ID | DashboardPEOPotCalibRtLvlId | — |
+| POT_RT_LVL_ID | DashboardPEOPotRtLvlId | — |
+| RISK_LOSS_CALIB_RT_LVL_ID | DashboardPEORiskLossCalibRtLvlId | — |
+| RISK_LOSS_RT_LVL_ID | DashboardPEORiskLossRtLvlId | — |
+| TALENT_SCOR_CALB_RT_LVL_ID | DashboardPEOTalentScorCalbRtLvlId | — |
+| TALENT_SCORE_RT_LVL_ID | DashboardPEOTalentScoreRtLvlId | — |
+
+### [[riskoflosscalibratingpvo|RiskOfLossCalibRatingPVO]] (HCM · BICC: 2/29)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| AGE_GROUP_VALUE | DashboardPEOAgeGroupValue | — |
+| ASSIGNMENT_ID | DashboardPEOAssignmentId | — |
+| BU_LEADER_DIRECT_ID | DashboardPEOBuLeaderDirectId | — |
+| BUSINESS_GROUP_ID | DashboardPEOBusinessGroupId1 | — |
+| CREATED_BY | DashboardPEOCreatedBy1 | — |
+| CREATION_DATE | DashboardPEOCreationDate1 | — |
+| DASHBOARD_ID | DashboardPEODashboardId | ✅ |
+| EXTN_METRIC_CALIB_VALUE1 | DashboardPEOExtnMetricCalibValue1 | — |
+| EXTN_METRIC_CALIB_VALUE2 | DashboardPEOExtnMetricCalibValue2 | — |
+| EXTN_METRIC_VALUE1 | DashboardPEOExtnMetricValue1 | — |
+| EXTN_METRIC_VALUE2 | DashboardPEOExtnMetricValue2 | — |
+| IMPACT_LOSS_CALB_RT_LVL_ID | DashboardPEOImpactLossCalbRtLvlId | — |
+| IMPACT_LOSS_RT_LVL_ID | DashboardPEOImpactLossRtLvlId | — |
+| LAST_UPDATE_DATE | DashboardPEOLastUpdateDate1 | ✅ |
+| LAST_UPDATE_LOGIN | DashboardPEOLastUpdateLogin1 | — |
+| LAST_UPDATED_BY | DashboardPEOLastUpdatedBy1 | — |
+| MEETING_ID | DashboardPEOMeetingId | — |
+| MOBILITY_CALIB_VALUE | DashboardPEOMobilityCalibValue | — |
+| MOBILITY_VALUE | DashboardPEOMobilityValue | — |
+| OBJECT_VERSION_NUMBER | DashboardPEOObjectVersionNumber1 | — |
+| PERF_CALIB_RT_LVL_ID | DashboardPEOPerfCalibRtLvlId | — |
+| PERF_RT_LVL_ID | DashboardPEOPerfRtLvlId | — |
+| PERSON_ID | DashboardPEOPersonId1 | — |
+| POT_CALIB_RT_LVL_ID | DashboardPEOPotCalibRtLvlId | — |
+| POT_RT_LVL_ID | DashboardPEOPotRtLvlId | — |
+| RISK_LOSS_CALIB_RT_LVL_ID | DashboardPEORiskLossCalibRtLvlId | — |
+| RISK_LOSS_RT_LVL_ID | DashboardPEORiskLossRtLvlId | — |
+| TALENT_SCOR_CALB_RT_LVL_ID | DashboardPEOTalentScorCalbRtLvlId | — |
+| TALENT_SCORE_RT_LVL_ID | DashboardPEOTalentScoreRtLvlId | — |
+
+### [[riskoflosscalibratingpvo_viewall|RiskOfLossCalibRatingPVO_ViewAll]] (HCM · BICC: 2/29)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| AGE_GROUP_VALUE | DashboardPEOAgeGroupValue | — |
+| ASSIGNMENT_ID | DashboardPEOAssignmentId | — |
+| BU_LEADER_DIRECT_ID | DashboardPEOBuLeaderDirectId | — |
+| BUSINESS_GROUP_ID | DashboardPEOBusinessGroupId1 | — |
+| CREATED_BY | DashboardPEOCreatedBy1 | — |
+| CREATION_DATE | DashboardPEOCreationDate1 | — |
+| DASHBOARD_ID | DashboardPEODashboardId | ✅ |
+| EXTN_METRIC_CALIB_VALUE1 | DashboardPEOExtnMetricCalibValue1 | — |
+| EXTN_METRIC_CALIB_VALUE2 | DashboardPEOExtnMetricCalibValue2 | — |
+| EXTN_METRIC_VALUE1 | DashboardPEOExtnMetricValue1 | — |
+| EXTN_METRIC_VALUE2 | DashboardPEOExtnMetricValue2 | — |
+| IMPACT_LOSS_CALB_RT_LVL_ID | DashboardPEOImpactLossCalbRtLvlId | — |
+| IMPACT_LOSS_RT_LVL_ID | DashboardPEOImpactLossRtLvlId | — |
+| LAST_UPDATE_DATE | DashboardPEOLastUpdateDate1 | ✅ |
+| LAST_UPDATE_LOGIN | DashboardPEOLastUpdateLogin1 | — |
+| LAST_UPDATED_BY | DashboardPEOLastUpdatedBy1 | — |
+| MEETING_ID | DashboardPEOMeetingId | — |
+| MOBILITY_CALIB_VALUE | DashboardPEOMobilityCalibValue | — |
+| MOBILITY_VALUE | DashboardPEOMobilityValue | — |
+| OBJECT_VERSION_NUMBER | DashboardPEOObjectVersionNumber1 | — |
+| PERF_CALIB_RT_LVL_ID | DashboardPEOPerfCalibRtLvlId | — |
+| PERF_RT_LVL_ID | DashboardPEOPerfRtLvlId | — |
+| PERSON_ID | DashboardPEOPersonId1 | — |
+| POT_CALIB_RT_LVL_ID | DashboardPEOPotCalibRtLvlId | — |
+| POT_RT_LVL_ID | DashboardPEOPotRtLvlId | — |
+| RISK_LOSS_CALIB_RT_LVL_ID | DashboardPEORiskLossCalibRtLvlId | — |
+| RISK_LOSS_RT_LVL_ID | DashboardPEORiskLossRtLvlId | — |
+| TALENT_SCOR_CALB_RT_LVL_ID | DashboardPEOTalentScorCalbRtLvlId | — |
+| TALENT_SCORE_RT_LVL_ID | DashboardPEOTalentScoreRtLvlId | — |
+
+### [[talentscorecalibratingpvo|TalentScoreCalibRatingPVO]] (HCM · BICC: 2/29)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| AGE_GROUP_VALUE | DashboardPEOAgeGroupValue | — |
+| ASSIGNMENT_ID | DashboardPEOAssignmentId | — |
+| BU_LEADER_DIRECT_ID | DashboardPEOBuLeaderDirectId | — |
+| BUSINESS_GROUP_ID | DashboardPEOBusinessGroupId1 | — |
+| CREATED_BY | DashboardPEOCreatedBy1 | — |
+| CREATION_DATE | DashboardPEOCreationDate1 | — |
+| DASHBOARD_ID | DashboardPEODashboardId | ✅ |
+| EXTN_METRIC_CALIB_VALUE1 | DashboardPEOExtnMetricCalibValue1 | — |
+| EXTN_METRIC_CALIB_VALUE2 | DashboardPEOExtnMetricCalibValue2 | — |
+| EXTN_METRIC_VALUE1 | DashboardPEOExtnMetricValue1 | — |
+| EXTN_METRIC_VALUE2 | DashboardPEOExtnMetricValue2 | — |
+| IMPACT_LOSS_CALB_RT_LVL_ID | DashboardPEOImpactLossCalbRtLvlId | — |
+| IMPACT_LOSS_RT_LVL_ID | DashboardPEOImpactLossRtLvlId | — |
+| LAST_UPDATE_DATE | DashboardPEOLastUpdateDate1 | ✅ |
+| LAST_UPDATE_LOGIN | DashboardPEOLastUpdateLogin1 | — |
+| LAST_UPDATED_BY | DashboardPEOLastUpdatedBy1 | — |
+| MEETING_ID | DashboardPEOMeetingId | — |
+| MOBILITY_CALIB_VALUE | DashboardPEOMobilityCalibValue | — |
+| MOBILITY_VALUE | DashboardPEOMobilityValue | — |
+| OBJECT_VERSION_NUMBER | DashboardPEOObjectVersionNumber1 | — |
+| PERF_CALIB_RT_LVL_ID | DashboardPEOPerfCalibRtLvlId | — |
+| PERF_RT_LVL_ID | DashboardPEOPerfRtLvlId | — |
+| PERSON_ID | DashboardPEOPersonId1 | — |
+| POT_CALIB_RT_LVL_ID | DashboardPEOPotCalibRtLvlId | — |
+| POT_RT_LVL_ID | DashboardPEOPotRtLvlId | — |
+| RISK_LOSS_CALIB_RT_LVL_ID | DashboardPEORiskLossCalibRtLvlId | — |
+| RISK_LOSS_RT_LVL_ID | DashboardPEORiskLossRtLvlId | — |
+| TALENT_SCOR_CALB_RT_LVL_ID | DashboardPEOTalentScorCalbRtLvlId | — |
+| TALENT_SCORE_RT_LVL_ID | DashboardPEOTalentScoreRtLvlId | — |
+
+### [[talentscorecalibratingpvo_viewall|TalentScoreCalibRatingPVO_ViewAll]] (HCM · BICC: 2/29)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| AGE_GROUP_VALUE | DashboardPEOAgeGroupValue | — |
+| ASSIGNMENT_ID | DashboardPEOAssignmentId | — |
+| BU_LEADER_DIRECT_ID | DashboardPEOBuLeaderDirectId | — |
+| BUSINESS_GROUP_ID | DashboardPEOBusinessGroupId1 | — |
+| CREATED_BY | DashboardPEOCreatedBy1 | — |
+| CREATION_DATE | DashboardPEOCreationDate1 | — |
+| DASHBOARD_ID | DashboardPEODashboardId | ✅ |
+| EXTN_METRIC_CALIB_VALUE1 | DashboardPEOExtnMetricCalibValue1 | — |
+| EXTN_METRIC_CALIB_VALUE2 | DashboardPEOExtnMetricCalibValue2 | — |
+| EXTN_METRIC_VALUE1 | DashboardPEOExtnMetricValue1 | — |
+| EXTN_METRIC_VALUE2 | DashboardPEOExtnMetricValue2 | — |
+| IMPACT_LOSS_CALB_RT_LVL_ID | DashboardPEOImpactLossCalbRtLvlId | — |
+| IMPACT_LOSS_RT_LVL_ID | DashboardPEOImpactLossRtLvlId | — |
+| LAST_UPDATE_DATE | DashboardPEOLastUpdateDate1 | ✅ |
+| LAST_UPDATE_LOGIN | DashboardPEOLastUpdateLogin1 | — |
+| LAST_UPDATED_BY | DashboardPEOLastUpdatedBy1 | — |
+| MEETING_ID | DashboardPEOMeetingId | — |
+| MOBILITY_CALIB_VALUE | DashboardPEOMobilityCalibValue | — |
+| MOBILITY_VALUE | DashboardPEOMobilityValue | — |
+| OBJECT_VERSION_NUMBER | DashboardPEOObjectVersionNumber1 | — |
+| PERF_CALIB_RT_LVL_ID | DashboardPEOPerfCalibRtLvlId | — |
+| PERF_RT_LVL_ID | DashboardPEOPerfRtLvlId | — |
+| PERSON_ID | DashboardPEOPersonId1 | — |
+| POT_CALIB_RT_LVL_ID | DashboardPEOPotCalibRtLvlId | — |
+| POT_RT_LVL_ID | DashboardPEOPotRtLvlId | — |
+| RISK_LOSS_CALIB_RT_LVL_ID | DashboardPEORiskLossCalibRtLvlId | — |
+| RISK_LOSS_RT_LVL_ID | DashboardPEORiskLossRtLvlId | — |
+| TALENT_SCOR_CALB_RT_LVL_ID | DashboardPEOTalentScorCalbRtLvlId | — |
+| TALENT_SCORE_RT_LVL_ID | DashboardPEOTalentScoreRtLvlId | — |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Fusion HCM Tables and Views](https://docs.oracle.com/en/cloud/saas/human-resources/25a/)

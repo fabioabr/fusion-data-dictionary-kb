@@ -90,6 +90,40 @@ Facilitadores conduzem a reunião.
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[meetingfacilitatorpvo|MeetingFacilitatorPVO]] (HCM · BICC: 5/10)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | CreatedBy | — |
+| CREATION_DATE | CreationDate | — |
+| ENTERPRISE_ID | EnterpriseId | ✅ |
+| FACILITATOR_PERSON_ID | FacilitatorPersonId | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | — |
+| LAST_UPDATED_BY | LastUpdatedBy | — |
+| MEETING_FACILITATOR_ID | MeetingFacilitatorId | ✅ |
+| MEETING_ID | MeetingId | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | — |
+
+### [[meetingfactpvo|MeetingFactPVO]] (HCM · BICC: 2/10)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | MeetingFacilitatorPEOCreatedBy | — |
+| CREATION_DATE | MeetingFacilitatorPEOCreationDate | — |
+| ENTERPRISE_ID | MeetingFacilitatorPEOEnterpriseId | — |
+| FACILITATOR_PERSON_ID | MeetingFacilitatorPEOFacilitatorPersonId | ✅ |
+| LAST_UPDATE_DATE | MeetingFacilitatorPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | MeetingFacilitatorPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | MeetingFacilitatorPEOLastUpdatedBy | — |
+| MEETING_FACILITATOR_ID | MeetingFacilitorPEOMeetingFacilitatorId | — |
+| MEETING_ID | MeetingFacilitatorPEOMeetingId | — |
+| OBJECT_VERSION_NUMBER | MeetingFacilitatorPEOObjectVersionNumber | — |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Fusion HCM Tables and Views](https://docs.oracle.com/en/cloud/saas/human-resources/25a/)

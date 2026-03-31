@@ -38,7 +38,6 @@ updated_at: 2026-03-25
 
 Armazena os **ciclos de cobrança** (billing cycles) que definem a periodicidade e as regras de processamento de cobranças de benefícios.
 
-
 ---
 
 ## 🧠 Propósito de Negócio
@@ -100,6 +99,66 @@ WHERE  bc.CYCLE_STATUS = 'ACTIVE';
 
 - Define a periodicidade de processamento de cobranças.
 - Vinculado ao calendário de cobrança para determinar datas específicas.
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[billcalendarpvo|BillCalendarPVO]] (HCM · BICC: 9/51)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BCL_ATTRIBUTE1 | BclAttribute1 | — |
+| BCL_ATTRIBUTE10 | BclAttribute10 | — |
+| BCL_ATTRIBUTE2 | BclAttribute2 | — |
+| BCL_ATTRIBUTE3 | BclAttribute3 | — |
+| BCL_ATTRIBUTE4 | BclAttribute4 | — |
+| BCL_ATTRIBUTE5 | BclAttribute5 | — |
+| BCL_ATTRIBUTE6 | BclAttribute6 | — |
+| BCL_ATTRIBUTE7 | BclAttribute7 | — |
+| BCL_ATTRIBUTE8 | BclAttribute8 | — |
+| BCL_ATTRIBUTE9 | BclAttribute9 | — |
+| BCL_ATTRIBUTE_CATEGORY | BclAttributeCategory | — |
+| BCL_ATTRIBUTE_DATE1 | BclAttributeDate1 | — |
+| BCL_ATTRIBUTE_DATE2 | BclAttributeDate2 | — |
+| BCL_ATTRIBUTE_DATE3 | BclAttributeDate3 | — |
+| BCL_ATTRIBUTE_DATE4 | BclAttributeDate4 | — |
+| BCL_ATTRIBUTE_DATE5 | BclAttributeDate5 | — |
+| BCL_ATTRIBUTE_NUMBER1 | BclAttributeNumber1 | — |
+| BCL_ATTRIBUTE_NUMBER2 | BclAttributeNumber2 | — |
+| BCL_ATTRIBUTE_NUMBER3 | BclAttributeNumber3 | — |
+| BCL_ATTRIBUTE_NUMBER4 | BclAttributeNumber4 | — |
+| BCL_ATTRIBUTE_NUMBER5 | BclAttributeNumber5 | — |
+| BILL_CYCLE_ID | BillCyclePEOBillCycleId | ✅ |
+| BILL_FREQ | BillFreq | ✅ |
+| BILLING_DAY | BillingDay | ✅ |
+| BUSINESS_GROUP_ID | BusinessGroupId1 | — |
+| CONFIG_CHAR_1 | ConfigChar11 | — |
+| CONFIG_CHAR_2 | ConfigChar21 | — |
+| CONFIG_CHAR_3 | ConfigChar31 | — |
+| CONFIG_CHAR_4 | ConfigChar41 | — |
+| CONFIG_CHAR_5 | ConfigChar51 | — |
+| CONFIG_DATE_1 | ConfigDate11 | — |
+| CONFIG_DATE_2 | ConfigDate21 | — |
+| CONFIG_DATE_3 | ConfigDate31 | — |
+| CONFIG_DATE_4 | ConfigDate41 | — |
+| CONFIG_DATE_5 | ConfigDate51 | — |
+| CONFIG_NUM_1 | ConfigNum11 | — |
+| CONFIG_NUM_2 | ConfigNum21 | — |
+| CONFIG_NUM_3 | ConfigNum31 | — |
+| CONFIG_NUM_4 | ConfigNum41 | — |
+| CONFIG_NUM_5 | ConfigNum51 | — |
+| CREATED_BY | CreatedBy1 | — |
+| CREATION_DATE | CreationDate1 | — |
+| DAYS_OVERDUE | DaysOverdue | ✅ |
+| DESCRIPTION | Description | ✅ |
+| DUE_DAY | DueDay | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate1 | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin1 | — |
+| LAST_UPDATED_BY | LastUpdatedBy1 | — |
+| NAME | Name | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber1 | — |
+| TYPE | Type | ✅ |
 
 ---
 

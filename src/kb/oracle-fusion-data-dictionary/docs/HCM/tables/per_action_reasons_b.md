@@ -107,6 +107,210 @@ WHERE  par.ACTIVE_STATUS = 'Y';
 - A análise de motivos de desligamento é crítica para estratégias de retenção.
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[actionoccurrencespvo|ActionOccurrencesPVO]] (GL · BICC: 1/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_REASON_CODE | ActionReasonsPEOActionReasonCode | — |
+| ACTION_REASON_ID | ActionReasonsPEOActionReasonId | — |
+| BUSINESS_GROUP_ID | ActionReasonsPEOBusinessGroupId | — |
+| CREATED_BY | ActionReasonsPEOCreatedBy | — |
+| CREATION_DATE | ActionReasonsPEOCreationDate | — |
+| END_DATE | ActionReasonsPEOEndDate | — |
+| LAST_UPDATE_DATE | ActionReasonsPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ActionReasonsPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | ActionReasonsPEOLastUpdatedBy | — |
+| MODULE_ID | ActionReasonsPEOModuleId | — |
+| OBJECT_VERSION_NUMBER | ActionReasonsPEOObjectVersionNumber | — |
+| START_DATE | ActionReasonsPEOStartDate | — |
+
+### [[actionreasonspvo|ActionReasonsPVO]] (GL · BICC: 9/14)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_REASON_CODE | ActionReasonsPEOActionReasonCode | ✅ |
+| ACTION_REASON_ID | ActionReasonId | ✅ |
+| BUSINESS_GROUP_ID | ActionReasonsPEOBusinessGroupId | ✅ |
+| CREATED_BY | ActionReasonsPEOCreatedBy | ✅ |
+| CREATION_DATE | ActionReasonsPEOCreationDate | ✅ |
+| END_DATE | ActionReasonsPEOEndDate | ✅ |
+| LAST_UPDATE_DATE | ActionReasonsPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ActionReasonsPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | ActionReasonsPEOLastUpdatedBy | ✅ |
+| MODULE_ID | ActionReasonsPEOModuleId | — |
+| OBJECT_VERSION_NUMBER | ActionReasonsPEOObjectVersionNumber | — |
+| SEED_DATA_SOURCE | ActionReasonsPEOSeedDataSource | — |
+| SGUID | ActionReasonsPEOSguid | — |
+| START_DATE | ActionReasonsPEOStartDate | ✅ |
+
+### [[businessunitpvo|BusinessUnitPVO]] (HCM · BICC: 1/2)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_REASON_ID | ActionReasonsPEOActionReasonId | — |
+| LAST_UPDATE_DATE | ActionReasonsPEOLastUpdateDate | ✅ |
+
+### [[departmentpvo|DepartmentPVO]] (HCM · BICC: 1/2)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_REASON_ID | ActionReasonsPEOActionReasonId | — |
+| LAST_UPDATE_DATE | ActionReasonsPEOLastUpdateDate | ✅ |
+
+### [[departmentpvoviewall|DepartmentPVOViewAll]] (HCM · BICC: 1/2)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_REASON_ID | ActionReasonsPEOActionReasonId | — |
+| LAST_UPDATE_DATE | ActionReasonsPEOLastUpdateDate | ✅ |
+
+### [[enterprisepvo|EnterprisePVO]] (HCM)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_REASON_ID | ActionReasonsPEOActionReasonId | — |
+| LAST_UPDATE_DATE | ActionReasonsPEOLastUpdateDate | — |
+
+### [[gradeladderpvo|GradeLadderPVO]] (GL · BICC: 1/2)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_REASON_ID | ProgressionActionReasonsPEOActionReasonId | — |
+| LAST_UPDATE_DATE | ProgressionActionReasonsPEOLastUpdateDate | ✅ |
+
+### [[gradepvo|GradePVO]] (GL)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_REASON_CODE | ActionReasonsPEOActionReasonCode | — |
+| ACTION_REASON_ID | ActionReasonsPEOActionReasonId | — |
+
+### [[gradesteppvo|GradeStepPVO]] (GL)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_REASON_CODE | ActionReasonsPEOActionReasonCode | — |
+| ACTION_REASON_ID | ActionReasonsPEOActionReasonId | — |
+| BUSINESS_GROUP_ID | ActionReasonsPEOBusinessGroupId | — |
+| END_DATE | ActionReasonsPEOEndDate | — |
+| START_DATE | ActionReasonsPEOStartDate | — |
+
+### [[hrlocationsbasepvo|HRLocationsBasePVO]] (HCM · BICC: 1/2)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_REASON_ID | ActionReasonPEOActionReasonId | — |
+| LAST_UPDATE_DATE | ActionReasonsPEOLastUpdateDate | ✅ |
+
+### [[hrlocationsbasepvoviewall|HRLocationsBasePVOViewAll]] (HCM · BICC: 1/2)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_REASON_ID | ActionReasonPEOActionReasonId | — |
+| LAST_UPDATE_DATE | ActionReasonsPEOLastUpdateDate | ✅ |
+
+### [[hrlocationspvo|HRLocationsPVO]] (HCM · BICC: 2/2)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_REASON_ID | ActionReasonPEOActionReasonId | ✅ |
+| LAST_UPDATE_DATE | ActionReasonsPEOLastUpdateDate | ✅ |
+
+### [[hrlocationspvoviewall|HRLocationsPVOViewAll]] (HCM · BICC: 1/2)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_REASON_ID | ActionReasonPEOActionReasonId | — |
+| LAST_UPDATE_DATE | ActionReasonsPEOLastUpdateDate | ✅ |
+
+### [[legalemployerpvo|LegalEmployerPVO]] (HCM · BICC: 1/2)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_REASON_ID | ActionReasonsPEOActionReasonId | — |
+| LAST_UPDATE_DATE | ActionReasonsPEOLastUpdateDate | ✅ |
+
+### [[organizationpvo|OrganizationPVO]] (HCM)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_REASON_ID | ActionReasonsPEOActionReasonId | — |
+| LAST_UPDATE_DATE | ActionReasonsPEOLastUpdateDate | — |
+
+### [[payrollstatutoryunitpvo|PayrollStatutoryUnitPVO]] (HCM)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_REASON_ID | ActionReasonsPEOActionReasonId | — |
+| LAST_UPDATE_DATE | ActionReasonsPEOLastUpdateDate | — |
+
+### [[positionpvo|PositionPVO]] (PO · BICC: 1/2)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_REASON_ID | ActionReasonsPEOActionReasonId | — |
+| LAST_UPDATE_DATE | ActionReasonsPEOLastUpdateDate | ✅ |
+
+### [[positionpvoviewall|PositionPVOViewAll]] (PO · BICC: 1/2)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_REASON_ID | ActionReasonsPEOActionReasonId | — |
+| LAST_UPDATE_DATE | ActionReasonsPEOLastUpdateDate | ✅ |
+
+### [[projectexpenditureorganizationpvo|ProjectExpenditureOrganizationPVO]] (HCM)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_REASON_ID | ActionReasonsPEOActionReasonId | — |
+| LAST_UPDATE_DATE | ActionReasonsPEOLastUpdateDate | — |
+
+### [[projecttaskowningorganizationpvo|ProjectTaskOwningOrganizationPVO]] (HCM)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_REASON_ID | ActionReasonsPEOActionReasonId | — |
+| LAST_UPDATE_DATE | ActionReasonsPEOLastUpdateDate | — |
+
+### [[projectunitclassificationpvo|ProjectUnitClassificationPVO]] (HCM)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_REASON_ID | ActionReasonsPEOActionReasonId | — |
+| LAST_UPDATE_DATE | ActionReasonsPEOLastUpdateDate | — |
+
+### [[reportingestablishmentpvo|ReportingEstablishmentPVO]] (HCM)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_REASON_ID | ActionReasonsPEOActionReasonId | — |
+| LAST_UPDATE_DATE | ActionReasonsPEOLastUpdateDate | — |
+
+### [[reportingestablishmentpvoviewall|ReportingEstablishmentPVOViewAll]] (HCM)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_REASON_ID | ActionReasonsPEOActionReasonId | — |
+| LAST_UPDATE_DATE | ActionReasonsPEOLastUpdateDate | — |
+
+### [[taxreportingunitpvo|TaxReportingUnitPVO]] (HCM)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_REASON_ID | ActionReasonsPEOActionReasonId | — |
+| LAST_UPDATE_DATE | ActionReasonsPEOLastUpdateDate | — |
+
+### [[unionpvo|UnionPVO]] (HCM · BICC: 1/2)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_REASON_ID | ActionReasonsPEOActionReasonId | — |
+| LAST_UPDATE_DATE | ActionReasonsPEOLastUpdateDate | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — PER_ACTION_REASONS_B](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/peractionreasonsb.html)

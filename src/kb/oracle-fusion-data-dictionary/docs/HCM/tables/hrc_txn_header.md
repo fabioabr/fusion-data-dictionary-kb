@@ -107,6 +107,35 @@ ORDER BY h.SUBMITTED_DATE;
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[transactionconsolep1|TransactionConsoleP1]] (AP · BICC: 4/20)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| APPLICATION_ID | HrcTxnHeaderPEOApplicationId | — |
+| CREATED_BY | HrcTxnHeaderPEOCreatedBy | — |
+| CREATION_DATE | HrcTxnHeaderPEOCreationDate | — |
+| INITIATOR_USER_ID | HrcTxnHeaderPEOInitiatorUserId | — |
+| LAST_UPDATE_DATE | HrcTxnHeaderPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | HrcTxnHeaderPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | HrcTxnHeaderPEOLastUpdatedBy | — |
+| MODULE_GROUP | HrcTxnHeaderPEOModuleGroup | — |
+| MODULE_IDENTIFIER | HrcTxnHeaderPEOModuleIdentifier | — |
+| OBJECT | HrcTxnHeaderPEOObject | — |
+| OBJECT_ID | HrcTxnHeaderPEOObjectId | ✅ |
+| OBJECT_VERSION_NUMBER | HrcTxnHeaderPEOObjectVersionNumber | — |
+| PARENT_TRANSACTION_ID | HrcTxnHeaderPEOParentTransactionId | — |
+| PROCESS_ID | HrcTxnHeaderPEOProcessId | — |
+| PROCESS_OWNER | HrcTxnHeaderPEOProcessOwner | — |
+| REENTRY_FUNCTION | HrcTxnHeaderPEOReentryFunction | — |
+| SECTION_DISPLAY_NAME | HrcTxnHeaderPEOSectionDisplayName | — |
+| SUBJECT | HrcTxnHeaderPEOSubject | — |
+| SUBJECT_ID | HrcTxnHeaderPEOSubjectId | ✅ |
+| TRANSACTION_ID | HrcTxnHeaderPEOTransactionId | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Fusion HCM Tables and Views](https://docs.oracle.com/en/cloud/saas/human-resources/25a/)

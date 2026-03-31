@@ -111,3 +111,51 @@ WHERE  tl.TCLAYST_ID = :p_layout_id;
 
 - [Oracle Docs — HXT_TCLAYST_TL](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/hxttclaysttl.html)
 - [[hcm-module-data-dictionary]] — Dossie do modulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[timecardlayoutcomppvo|TimecardLayoutCompPVO]] (GL · BICC: 2/4)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| DESCRIPTION | TclaystTLPEODescription | ✅ |
+| LANGUAGE | TclaystTLPEOLanguage | — |
+| NAME | TclaystTLPEOName | ✅ |
+| TCLAYST_ID | TclaystTLPEOTimecardLayoutSetId | — |
+
+### [[timecardlayoutpvo|TimecardLayoutPVO]] (GL · BICC: 2/4)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| DESCRIPTION | TclaystTLPEODescription | ✅ |
+| LANGUAGE | TclaystTLPEOLanguage | — |
+| NAME | TclaystTLPEOName | ✅ |
+| TCLAYST_ID | TclaystTLPEOTimecardLayoutSetId | — |
+
+### [[timecardlayoutregionpvo|TimecardLayoutRegionPVO]] (GL · BICC: 2/4)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| DESCRIPTION | TclaystTLPEODescription | ✅ |
+| LANGUAGE | TclaystTLPEOLanguage | — |
+| NAME | TclaystTLPEOName | ✅ |
+| TCLAYST_ID | TclaystTLPEOTimecardLayoutSetId | — |
+
+### [[timecardlayoutsetpvo|TimecardLayoutSetPVO]] (GL · BICC: 12/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | TclaystTLPEOCreatedBy | ✅ |
+| CREATION_DATE | TclaystTLPEOCreationDate | ✅ |
+| DESCRIPTION | TclaystTLPEODescription | ✅ |
+| ENTERPRISE_ID | TclaystTLPEOEnterpriseId | ✅ |
+| LANGUAGE | TclaystTLPEOLanguage | ✅ |
+| LAST_UPDATE_DATE | TclaystTLPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | TclaystTLPEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | TclaystTLPEOLastUpdatedBy | ✅ |
+| NAME | TclaystTLPEOName | ✅ |
+| OBJECT_VERSION_NUMBER | TclaystTLPEOObjectVersionNumber | ✅ |
+| SOURCE_LANG | TclaystTLPEOSourceLang | ✅ |
+| TCLAYST_ID | TclaystTLPEOTimecardLayoutSetId | ✅ |

@@ -40,7 +40,6 @@ View que lista as entradas de tempo completadas e disponíveis para aprovação,
 > [!note] Sufixo _V
 > O sufixo `_V` indica **view** — objeto somente leitura que consolida dados de uma ou mais tabelas para facilitar consultas.
 
-
 ---
 
 ## 🧠 Propósito de Negócio
@@ -102,6 +101,36 @@ WHERE  ROWNUM <= 100
 
 - View somente leitura: não permite INSERT, UPDATE ou DELETE direto.
 - Área funcional: Time Management dentro do Oracle Fusion Cloud HCM.
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[historicreportedtimeentrypvo|HistoricReportedTimeEntryPVO]] (HCM)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| STATUS_ID | TimeEntryCompletedStatusId | — |
+| STATUS_VALUE | TimeEntryCompletedStatusValue | — |
+
+### [[historicrptabstimeentrypvo|HistoricRptAbsTimeEntryPVO]] (HCM)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| STATUS_ID | TimeAtomicCompletedStatusPEOStatusId | — |
+
+### [[reportedtimeentrypvo|ReportedTimeEntryPVO]] (HCM)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| STATUS_ID | TimeEntryCompletedStatusId | — |
+| STATUS_VALUE | TimeEntryCompletedStatusValue | — |
+
+### [[rptabstimeentrypvo|RptAbsTimeEntryPVO]] (HCM)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| STATUS_ID | TimeAtomicCompletedStatusPEOStatusId | — |
 
 ---
 

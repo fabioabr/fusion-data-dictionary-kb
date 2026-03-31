@@ -79,3 +79,75 @@ updated_at: 2026-03-26
 ## 📎 Uso Típico
 
 (a ser preenchido na etapa 03)
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[sitetaxreportingcode|SiteTaxReportingCode]] (AR · BICC: 3/29)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| COUNTRY_CODE | TaxReportingTypeCountryCode | — |
+| CREATED_BY | TaxReportingTypeCreatedBy | — |
+| CREATION_DATE | TaxReportingTypeCreationDate | — |
+| EFFECTIVE_FROM | TaxReportingTypeEffectiveFrom | — |
+| EFFECTIVE_TO | TaxReportingTypeEffectiveTo | — |
+| FORMAT_MASK | TaxReportingTypeFormatMask | — |
+| HAS_REPORTING_CODES_FLAG | TaxReportingTypeHasReportingCodesFlag | — |
+| LAST_UPDATE_DATE | TaxReportingTypeLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | TaxReportingTypeLastUpdateLogin | — |
+| LAST_UPDATED_BY | TaxReportingTypeLastUpdatedBy | — |
+| LEGAL_MESSAGE_FLAG | TaxReportingTypeLegalMessageFlag | — |
+| MAX_LENGTH | TaxReportingTypeMaxLength | — |
+| MIN_LENGTH | TaxReportingTypeMinLength | — |
+| OBJECT_VERSION_NUMBER | TaxReportingTypeObjectVersionNumber | — |
+| PROGRAM_APP_NAME | TaxReportingTypeProgramAppName | — |
+| PROGRAM_LOGIN_ID | TaxReportingTypeProgramLoginId | — |
+| PROGRAM_NAME | TaxReportingTypeProgramName | — |
+| RECORD_TYPE_CODE | TaxReportingTypeRecordTypeCode | — |
+| REGISTRATION_TYPE | TaxReportingTypeRegistrationType | — |
+| REPORTING_TYPE_CODE | TaxReportingTypeReportingTypeCode | ✅ |
+| REPORTING_TYPE_DATATYPE_CODE | TaxReportingTypeReportingTypeDatatypeCode | ✅ |
+| REPORTING_TYPE_ID | TaxReportingTypeReportingTypeId | — |
+| REPORTING_TYPE_NAME | TaxReportingTypeReportingTypeName | — |
+| REQUEST_ID | TaxReportingTypeRequestId | — |
+| TAX | TaxReportingTypeTax | — |
+| TAX_REGIME_CODE | TaxReportingTypeTaxRegimeCode | — |
+| UNIQUENESS_VALIDATION_LEVEL | TaxReportingTypeUniquenessValidationLevel | — |
+| VALIDATION_LEVEL | TaxReportingTypeValidationLevel | — |
+| VALIDATION_ROUTINE | TaxReportingTypeValidationRoutine | — |
+
+### [[taxreportingcode|TaxReportingCode]] (AR · BICC: 3/29)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| COUNTRY_CODE | TaxReportingTypeCountryCode | — |
+| CREATED_BY | TaxReportingTypeCreatedBy | — |
+| CREATION_DATE | TaxReportingTypeCreationDate | — |
+| EFFECTIVE_FROM | TaxReportingTypeEffectiveFrom | — |
+| EFFECTIVE_TO | TaxReportingTypeEffectiveTo | — |
+| FORMAT_MASK | TaxReportingTypeFormatMask | — |
+| HAS_REPORTING_CODES_FLAG | TaxReportingTypeHasReportingCodesFlag | — |
+| LAST_UPDATE_DATE | TaxReportingTypeLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | TaxReportingTypeLastUpdateLogin | — |
+| LAST_UPDATED_BY | TaxReportingTypeLastUpdatedBy | — |
+| LEGAL_MESSAGE_FLAG | TaxReportingTypeLegalMessageFlag | — |
+| MAX_LENGTH | TaxReportingTypeMaxLength | — |
+| MIN_LENGTH | TaxReportingTypeMinLength | — |
+| OBJECT_VERSION_NUMBER | TaxReportingTypeObjectVersionNumber | — |
+| PROGRAM_APP_NAME | TaxReportingTypeProgramAppName | — |
+| PROGRAM_LOGIN_ID | TaxReportingTypeProgramLoginId | — |
+| PROGRAM_NAME | TaxReportingTypeProgramName | — |
+| RECORD_TYPE_CODE | TaxReportingTypeRecordTypeCode | — |
+| REGISTRATION_TYPE | TaxReportingTypeRegistrationType | — |
+| REPORTING_TYPE_CODE | TaxReportingTypeReportingTypeCode | ✅ |
+| REPORTING_TYPE_DATATYPE_CODE | TaxReportingTypeReportingTypeDatatypeCode | ✅ |
+| REPORTING_TYPE_ID | TaxReportingTypeReportingTypeId | — |
+| REPORTING_TYPE_NAME | TaxReportingTypeReportingTypeName | — |
+| REQUEST_ID | TaxReportingTypeRequestId | — |
+| TAX | TaxReportingTypeTax | — |
+| TAX_REGIME_CODE | TaxReportingTypeTaxRegimeCode | — |
+| UNIQUENESS_VALIDATION_LEVEL | TaxReportingTypeUniquenessValidationLevel | — |
+| VALIDATION_LEVEL | TaxReportingTypeValidationLevel | — |
+| VALIDATION_ROUTINE | TaxReportingTypeValidationRoutine | — |

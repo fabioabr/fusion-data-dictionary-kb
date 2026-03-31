@@ -134,3 +134,64 @@ WHERE  sa.VENDOR_ID = :p_vendor_id
 
 - [Oracle Docs — POZ_SITE_ASSIGNMENTS_ALL_M](https://docs.oracle.com/en/cloud/saas/procurement/25a/oedmf/poz-tables.html)
 - [[po-module-data-dictionary]] — Dossiê do módulo Procurement
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[suppliersiteassignmentextractpvo|SupplierSiteAssignmentExtractPVO]] (PO · BICC: 19/19)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACCTS_PAY_CODE_COMBINATION_ID | AcctsPayCodeCombinationId | ✅ |
+| ALLOW_AWT_FLAG | AllowAwtFlag | ✅ |
+| ASSIGNMENT_ID | AssignmentId | ✅ |
+| AWT_GROUP_ID | AwtGroupId | ✅ |
+| BILL_TO_BU_ID | BillToBuId | ✅ |
+| BILL_TO_LOCATION_ID | BillToLocationId | ✅ |
+| BU_ID | BuId | ✅ |
+| CREATED_BY | CreatedBy | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| DISTRIBUTION_SET_ID | DistributionSetId | ✅ |
+| FUTURE_DATED_PAYMENT_CCID | FutureDatedPaymentCcid | ✅ |
+| INACTIVE_DATE | InactiveDate | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | LastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | ✅ |
+| PREPAY_CODE_COMBINATION_ID | PrepayCodeCombinationId | ✅ |
+| SHIP_TO_LOCATION_ID | ShipToLocationId | ✅ |
+| VENDOR_SITE_ID | VendorSiteId | ✅ |
+
+### [[suppliersiteassignmentspvo|SupplierSiteAssignmentsPVO]] (PO · BICC: 28/28)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACCTS_PAY_CODE_COMBINATION_ID | SupplierSiteAssignmentsAcctsPayCodeCombinationId | ✅ |
+| ALLOW_AWT_FLAG | SupplierSiteAssignmentsAllowAwtFlag | ✅ |
+| ASSIGNMENT_ID | AssignmentId | ✅ |
+| ASSIGNMENT_SPK_ID | SupplierSiteAssignmentsAssignmentSpkId | ✅ |
+| AWT_GROUP_ID | SupplierSiteAssignmentsAwtGroupId | ✅ |
+| BILL_TO_BU_ID | SupplierSiteAssignmentsBillToBuId | ✅ |
+| BILL_TO_LOCATION_ID | SupplierSiteAssignmentsBillToLocationId | ✅ |
+| BU_ID | SupplierSiteAssignmentsBuId | ✅ |
+| CREATED_BY | SupplierSiteAssignmentsCreatedBy | ✅ |
+| CREATION_DATE | SupplierSiteAssignmentsCreationDate | ✅ |
+| DISTRIBUTION_SET_ID | SupplierSiteAssignmentsDistributionSetId | ✅ |
+| EFFECTIVE_END_DATE | SupplierSiteAssignmentsEffectiveEndDate | ✅ |
+| EFFECTIVE_SEQUENCE | SupplierSiteAssignmentsEffectiveSequence | ✅ |
+| EFFECTIVE_START_DATE | SupplierSiteAssignmentsEffectiveStartDate | ✅ |
+| FUTURE_DATED_PAYMENT_CCID | SupplierSiteAssignmentsFutureDatedPaymentCcid | ✅ |
+| INACTIVE_DATE | SupplierSiteAssignmentsInactiveDate | ✅ |
+| JOB_DEFINITION_NAME | SupplierSiteAssignmentsJobDefinitionName | ✅ |
+| JOB_DEFINITION_PACKAGE | SupplierSiteAssignmentsJobDefinitionPackage | ✅ |
+| JOB_SUBMISSION_DATE | SupplierSiteAssignmentsJobSubmissionDate | ✅ |
+| LAST_UPDATE_DATE | SupplierSiteAssignmentsLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | SupplierSiteAssignmentsLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | SupplierSiteAssignmentsLastUpdatedBy | ✅ |
+| MERGE_REQUEST_ID | SupplierSiteAssignmentsMergeRequestId | ✅ |
+| OBJECT_VERSION_NUMBER | SupplierSiteAssignmentsObjectVersionNumber | ✅ |
+| PREPAY_CODE_COMBINATION_ID | SupplierSiteAssignmentsPrepayCodeCombinationId | ✅ |
+| REQUEST_ID | SupplierSiteAssignmentsRequestId | ✅ |
+| SHIP_TO_LOCATION_ID | SupplierSiteAssignmentsShipToLocationId | ✅ |
+| VENDOR_SITE_ID | SupplierSiteAssignmentsVendorSiteId | ✅ |

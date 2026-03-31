@@ -105,6 +105,128 @@ SELECT amr.match_by,
 - `THRESHOLD_AMOUNT` e `THRESHOLD_PERCENT` definem a tolerância: se o valor do receipt difere da fatura dentro desse limite, o match é aceito.
 - A combinação de `MATCH_BY` + `STRING_MATCH_TYPE` permite matches flexíveis (ex: número parcial da fatura).
 
+## 🔗 PVOs Relacionados
+
+### [[automatchruleextractpvo|AutomatchRuleExtractPVO]] (OTHER · BICC: 27/27)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTIVE_FLAG | ArAutomationRuleActiveFlag | ✅ |
+| AMOUNT_WEIGHT | ArAutomationRuleAmountWeight | ✅ |
+| AUTOMATCH_RULE_ID | ArAutomationRuleAutomatchRuleId | ✅ |
+| CREATED_BY | ArAutomationRuleCreatedBy | ✅ |
+| CREATION_DATE | ArAutomationRuleCreationDate | ✅ |
+| CUSTOMER_THRESHOLD | ArAutomationRuleCustomerThreshold | ✅ |
+| CUSTOMER_WEIGHT | ArAutomationRuleCustomerWeight | ✅ |
+| DESCRIPTION | ArAutomationRuleDescription | ✅ |
+| END_DATE | ArAutomationRuleEndDate | ✅ |
+| LAST_UPDATE_DATE | ArAutomationRuleLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ArAutomationRuleLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | ArAutomationRuleLastUpdatedBy | ✅ |
+| MIN_MATCH_THRESHOLD | ArAutomationRuleMinMatchThreshold | ✅ |
+| NAME | ArAutomationRuleName | ✅ |
+| NET_FREIGHT_WEIGHT | ArAutomationRuleNetFreightWeight | ✅ |
+| NET_TAX_FREIGHT_WEIGHT | ArAutomationRuleNetTaxFreightWeight | ✅ |
+| NET_TAX_WEIGHT | ArAutomationRuleNetTaxWeight | ✅ |
+| NET_UNDISC_WEIGHT | ArAutomationRuleNetUndiscWeight | ✅ |
+| NUMBER_OF_DAYS_CLOSED | ArAutomationRuleNumberOfDaysClosed | ✅ |
+| OBJECT_VERSION_NUMBER | ArAutomationRuleObjectVersionNumber | ✅ |
+| REMITTANCE_REGEXP | ArAutomationRuleRemittanceRegexp | ✅ |
+| SEED_DATA_SOURCE | ArAutomationRuleSeedDataSource | ✅ |
+| SET_ID | ArAutomationRuleSetId | ✅ |
+| START_DATE | ArAutomationRuleStartDate | ✅ |
+| TRANSACTION_REGEXP | ArAutomationRuleTransactionRegexp | ✅ |
+| TRANSACTION_THRESHOLD | ArAutomationRuleTransactionThreshold | ✅ |
+| TRANSACTION_WEIGHT | ArAutomationRuleTransactionWeight | ✅ |
+
+### [[customerfinancialprofilepvo|CustomerFinancialProfilePVO]] (AR)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTIVE_FLAG | AutoMatchRuleActiveFlag | — |
+| AMOUNT_WEIGHT | AutoMatchRuleAmountWeight | — |
+| AUTOMATCH_RULE_ID | AutoMatchRuleAutomatchRuleId | — |
+| CUSTOMER_THRESHOLD | AutoMatchRuleCustomerThreshold | — |
+| CUSTOMER_WEIGHT | AutoMatchRuleCustomerWeight | — |
+| DESCRIPTION | AutoMatchRuleDescription | — |
+| END_DATE | AutoMatchRuleEndDate | — |
+| MIN_MATCH_THRESHOLD | AutoMatchRuleMinMatchThreshold | — |
+| NAME | AutoMatchRuleName | — |
+| NET_FREIGHT_WEIGHT | AutoMatchRuleNetFreightWeight | — |
+| NET_TAX_FREIGHT_WEIGHT | AutoMatchRuleNetTaxFreightWeight | — |
+| NET_TAX_WEIGHT | AutoMatchRuleNetTaxWeight | — |
+| NET_UNDISC_WEIGHT | AutoMatchRuleNetUndiscWeight | — |
+| NUMBER_OF_DAYS_CLOSED | AutoMatchRuleNumberOfDaysClosed | — |
+| REMITTANCE_REGEXP | AutoMatchRuleRemittanceRegexp | — |
+| START_DATE | AutoMatchRuleStartDate | — |
+| TRANSACTION_REGEXP | AutoMatchRuleTransactionRegexp | — |
+| TRANSACTION_THRESHOLD | AutoMatchRuleTransactionThreshold | — |
+| TRANSACTION_WEIGHT | AutoMatchRuleTransactionWeight | — |
+
+### [[customerprofile|CustomerProfile]] (AR · BICC: 2/26)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTIVE_FLAG | AutomatchRuleActiveFlag | — |
+| AMOUNT_WEIGHT | AutomatchRuleAmountWeight | — |
+| AUTOMATCH_RULE_ID | AutomatchRuleAutomatchRuleId | — |
+| CREATED_BY | AutomatchRuleCreatedBy | — |
+| CREATION_DATE | AutomatchRuleCreationDate | — |
+| CUSTOMER_THRESHOLD | AutomatchRuleCustomerThreshold | — |
+| CUSTOMER_WEIGHT | AutomatchRuleCustomerWeight | — |
+| DESCRIPTION | AutomatchRuleDescription | — |
+| END_DATE | AutomatchRuleEndDate | — |
+| LAST_UPDATE_DATE | AutomatchRuleLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | AutomatchRuleLastUpdateLogin | — |
+| LAST_UPDATED_BY | AutomatchRuleLastUpdatedBy | — |
+| MIN_MATCH_THRESHOLD | AutomatchRuleMinMatchThreshold | — |
+| NAME | AutomatchRuleName | ✅ |
+| NET_FREIGHT_WEIGHT | AutomatchRuleNetFreightWeight | — |
+| NET_TAX_FREIGHT_WEIGHT | AutomatchRuleNetTaxFreightWeight | — |
+| NET_TAX_WEIGHT | AutomatchRuleNetTaxWeight | — |
+| NET_UNDISC_WEIGHT | AutomatchRuleNetUndiscWeight | — |
+| NUMBER_OF_DAYS_CLOSED | AutomatchRuleNumberOfDaysClosed | — |
+| OBJECT_VERSION_NUMBER | AutomatchRuleObjectVersionNumber | — |
+| REMITTANCE_REGEXP | AutomatchRuleRemittanceRegexp | — |
+| SET_ID | AutomatchRuleSetId | — |
+| START_DATE | AutomatchRuleStartDate | — |
+| TRANSACTION_REGEXP | AutomatchRuleTransactionRegexp | — |
+| TRANSACTION_THRESHOLD | AutomatchRuleTransactionThreshold | — |
+| TRANSACTION_WEIGHT | AutomatchRuleTransactionWeight | — |
+
+### [[customersiteprofile|CustomerSiteProfile]] (AR · BICC: 2/26)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTIVE_FLAG | AutomatchRuleActiveFlag | — |
+| AMOUNT_WEIGHT | AutomatchRuleAmountWeight | — |
+| AUTOMATCH_RULE_ID | AutomatchRuleAutomatchRuleId | — |
+| CREATED_BY | AutomatchRuleCreatedBy | — |
+| CREATION_DATE | AutomatchRuleCreationDate | — |
+| CUSTOMER_THRESHOLD | AutomatchRuleCustomerThreshold | — |
+| CUSTOMER_WEIGHT | AutomatchRuleCustomerWeight | — |
+| DESCRIPTION | AutomatchRuleDescription | — |
+| END_DATE | AutomatchRuleEndDate | — |
+| LAST_UPDATE_DATE | AutomatchRuleLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | AutomatchRuleLastUpdateLogin | — |
+| LAST_UPDATED_BY | AutomatchRuleLastUpdatedBy | — |
+| MIN_MATCH_THRESHOLD | AutomatchRuleMinMatchThreshold | — |
+| NAME | AutomatchRuleName | ✅ |
+| NET_FREIGHT_WEIGHT | AutomatchRuleNetFreightWeight | — |
+| NET_TAX_FREIGHT_WEIGHT | AutomatchRuleNetTaxFreightWeight | — |
+| NET_TAX_WEIGHT | AutomatchRuleNetTaxWeight | — |
+| NET_UNDISC_WEIGHT | AutomatchRuleNetUndiscWeight | — |
+| NUMBER_OF_DAYS_CLOSED | AutomatchRuleNumberOfDaysClosed | — |
+| OBJECT_VERSION_NUMBER | AutomatchRuleObjectVersionNumber | — |
+| REMITTANCE_REGEXP | AutomatchRuleRemittanceRegexp | — |
+| SET_ID | AutomatchRuleSetId | — |
+| START_DATE | AutomatchRuleStartDate | — |
+| TRANSACTION_REGEXP | AutomatchRuleTransactionRegexp | — |
+| TRANSACTION_THRESHOLD | AutomatchRuleTransactionThreshold | — |
+| TRANSACTION_WEIGHT | AutomatchRuleTransactionWeight | — |
+
+---
+
 ## 📚 Referências
 
 - Oracle Fusion Cloud Financials — Accounts Receivable Tables (OEDMF Release 13)

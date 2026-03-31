@@ -60,3 +60,47 @@ updated_at: 2026-03-26
 ## 📎 Uso Típico
 
 (a ser preenchido na etapa 03)
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[legislationpvo|LegislationPVO]] (HCM · BICC: 4/10)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | LegislationTranslationPEOCreatedBy | — |
+| CREATION_DATE | LegislationTranslationPEOCreationDate | — |
+| DESCRIPTION | LegislationTranslationPEODescription | ✅ |
+| LANGUAGE | LegislationTranslationPEOLanguage | ✅ |
+| LAST_UPDATE_DATE | LegislationTranslationPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LegislationTranslationPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | LegislationTranslationPEOLastUpdatedBy | — |
+| SOURCE_LANG | LegislationTranslationPEOSourceLang | — |
+| TERRITORY_CODE | LegislationTranslationPEOTerritoryCode | — |
+| TERRITORY_SHORT_NAME | LegislationTranslationPEOTerritoryShortName | ✅ |
+
+### [[territoriespvo|TerritoriesPVO]] (HCM · BICC: 4/5)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| DESCRIPTION | Description | ✅ |
+| LANGUAGE | Language | ✅ |
+| SOURCE_LANG | SourceLang | ✅ |
+| TERRITORY_CODE | TerritoryCode1 | — |
+| TERRITORY_SHORT_NAME | TerritoryShortName | ✅ |
+
+### [[territoriestlpvo|TerritoriesTLPVO]] (HCM · BICC: 4/10)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | CreatedBy | — |
+| CREATION_DATE | CreationDate | — |
+| DESCRIPTION | Description | — |
+| LANGUAGE | Language | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | — |
+| LAST_UPDATED_BY | LastUpdatedBy | — |
+| SOURCE_LANG | SourceLang | — |
+| TERRITORY_CODE | TerritoryCode | ✅ |
+| TERRITORY_SHORT_NAME | TerritoryShortName | ✅ |

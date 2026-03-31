@@ -86,3 +86,58 @@ updated_at: 2026-03-26
 ## 📎 Uso Típico
 
 (a ser preenchido na etapa 03)
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[attacheddocumentspvo|AttachedDocumentsPVO]] (OTHER · BICC: 5/5)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| DESCRIPTION | Description1 | ✅ |
+| DOCUMENT_ID | DocumentId2 | ✅ |
+| FILE_NAME | FileName | ✅ |
+| LANGUAGE | Language1 | ✅ |
+| URL | Url | ✅ |
+
+### [[fnddocumenttranslationextractpvo|FndDocumentTranslationExtractPVO]] (HCM · BICC: 36/36)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CEC_FILE_ID | CecFileId | ✅ |
+| CEC_PARENT_ID | CecParentId | ✅ |
+| CREATED_BY | CreatedBy | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| DESCRIPTION | Description | ✅ |
+| DM_DOCUMENT_ID | DmDocumentId | ✅ |
+| DM_FOLDER_PATH | DmFolderPath | ✅ |
+| DM_NODE | DmNode | ✅ |
+| DM_REPOSITORY | DmRepository | ✅ |
+| DM_TYPE | DmType | ✅ |
+| DM_VERSION_NUMBER | DmVersionNumber | ✅ |
+| DOCUMENT_ID | DocumentId | ✅ |
+| DOWNLOAD_STATUS | DownloadStatus | ✅ |
+| ENT_APP_SHORT_NAME | EntAppShortName | ✅ |
+| ENTERPRISE_ID | EnterpriseId | ✅ |
+| FILE_NAME | FileName | ✅ |
+| LANGUAGE | Language | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | LastUpdatedBy | ✅ |
+| OBJECT_BUCKET | ObjectBucket | ✅ |
+| OBJECT_CONTENT_TYPE | ObjectContentType | ✅ |
+| OBJECT_NAME | ObjectName | ✅ |
+| OBJECT_SIZE | ObjectSize | ✅ |
+| PROGRAM_APPLICATION_ID | ProgramApplicationId | ✅ |
+| PROGRAM_ID | ProgramId | ✅ |
+| PROGRAM_UPDATE_DATE | ProgramUpdateDate | ✅ |
+| REQUEST_ID | RequestId | ✅ |
+| SOURCE_CONTENT_TYPE | SourceContentType | ✅ |
+| SOURCE_LANG | SourceLang | ✅ |
+| STATUS | Status | ✅ |
+| TITLE | Title | ✅ |
+| TRACKER_ID | TrackerId | ✅ |
+| TRUSTED_FLAG | TrustedFlag | ✅ |
+| URI | Uri | ✅ |
+| URL | Url | ✅ |

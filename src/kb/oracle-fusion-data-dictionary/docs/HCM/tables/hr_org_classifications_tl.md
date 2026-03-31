@@ -104,3 +104,15 @@ WHERE  tl.ORG_CLASSIFICATION_ID = :p_id
 
 - [Oracle Docs — HR_ORG_CLASSIFICATIONS_TL](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/hrorgclassificationstl.html)
 - [[hcm-module-data-dictionary]] — Dossie do modulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[orgunitclassificationpvo|OrgUnitClassificationPVO]] (HCM)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CLASSIFICATION_CODE | OrgClassificationTLPEOClassificationCode | — |
+| CLASSIFICATION_NAME | OrgClassificationTLPEOClassificationName | — |
+| LANGUAGE | OrgClassificationTLPEOLanguage | — |

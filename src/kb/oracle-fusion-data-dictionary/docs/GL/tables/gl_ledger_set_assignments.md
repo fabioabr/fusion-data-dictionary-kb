@@ -133,6 +133,42 @@ ORDER BY gls.NAME;
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[ledgersetassignmentextractpvo|LedgerSetAssignmentExtractPVO]] (OTHER · BICC: 11/11)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | LedgerSetAsgmtCreatedBy | ✅ |
+| CREATION_DATE | LedgerSetAsgmtCreationDate | ✅ |
+| END_DATE | LedgerSetAsgmtEndDate | ✅ |
+| LAST_UPDATE_DATE | LedgerSetAsgmtLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LedgerSetAsgmtLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | LedgerSetAsgmtLastUpdatedBy | ✅ |
+| LEDGER_ID | LedgerSetAsgmtLedgerId | ✅ |
+| LEDGER_SET_ID | LedgerSetAsgmtLedgerSetId | ✅ |
+| OBJECT_VERSION_NUMBER | LedgerSetAsgmtObjectVersionNumber | ✅ |
+| START_DATE | LedgerSetAsgmtStartDate | ✅ |
+| STATUS_CODE | LedgerSetAsgmtStatusCode | ✅ |
+
+### [[ledgersetpvo|LedgerSetPVO]] (GL · BICC: 3/11)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | LedgerSetAssignmentCreatedBy | — |
+| CREATION_DATE | LedgerSetAssignmentCreationDate | — |
+| END_DATE | LedgerSetAssignmentEndDate | ✅ |
+| LAST_UPDATE_DATE | LedgerSetAssignmentLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LedgerSetAssignmentLastUpdateLogin | — |
+| LAST_UPDATED_BY | LedgerSetAssignmentLastUpdatedBy | — |
+| LEDGER_ID | LedgerSetAssignmentLedgerId | — |
+| LEDGER_SET_ID | LedgerSetAssignmentLedgerSetId | — |
+| OBJECT_VERSION_NUMBER | LedgerSetAssignmentObjectVersionNumber | — |
+| START_DATE | LedgerSetAssignmentStartDate | ✅ |
+| STATUS_CODE | LedgerSetAssignmentStatusCode | — |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — GL_LEDGER_SET_ASSIGNMENTS](https://docs.oracle.com/en/cloud/saas/financials/25a/oedmf/glledgersetassignments.html)

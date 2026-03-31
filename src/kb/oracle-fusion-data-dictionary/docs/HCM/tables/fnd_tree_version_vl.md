@@ -73,3 +73,314 @@ updated_at: 2026-03-26
 ## 📎 Uso Típico
 
 (a ser preenchido na etapa 03)
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[depttreebicvo|DeptTreeBICVO]] (HCM · BICC: 5/23)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CHANGED_SINCE_VALIDATION | FndTreeVersionEffDateEOChangedSinceValidation | — |
+| CREATED_BY | FndTreeVersionEffDateEOCreatedBy | — |
+| CREATION_DATE | FndTreeVersionEffDateEOCreationDate | — |
+| DESCRIPTION | FndTreeVersionEffDateEODescription | — |
+| EFFECTIVE_END_DATE | FndTreeVersionEffDateEOEffectiveEndDate | ✅ |
+| EFFECTIVE_START_DATE | FndTreeVersionEffDateEOEffectiveStartDate | ✅ |
+| LAST_UPDATE_DATE | FndTreeVersionEffDateEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | FndTreeVersionEffDateEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | FndTreeVersionEffDateEOLastUpdatedBy | — |
+| LAST_VALIDATION_DATE | FndTreeVersionEffDateEOLastValidationDate | — |
+| LAST_VALIDATION_RESULT | FndTreeVersionEffDateEOLastValidationResult | — |
+| LAST_VALIDATION_RESULT_ID | FndTreeVersionEffDateEOLastValidationResultId | — |
+| LEVEL_COUNT | FndTreeVersionEffDateEOLevelCount | — |
+| LOCK_DATE | FndTreeVersionEffDateEOLockDate | — |
+| LOCKED_BY | FndTreeVersionEffDateEOLockedBy | — |
+| NODE_COUNT | FndTreeVersionEffDateEONodeCount | — |
+| SOURCE_TREE_VERSION_ID | FndTreeVersionEffDateEOSourceTreeVersionId | — |
+| STATUS | FndTreeVersionEffDateEOStatus | ✅ |
+| TREE_CODE | FndTreeVersionEffDateEOTreeCode | — |
+| TREE_STRUCTURE_CODE | FndTreeVersionEffDateEOTreeStructureCode | — |
+| TREE_VERSION_ID | FndTreeVersionEffDateEOTreeVersionId | — |
+| TREE_VERSION_NAME | FndTreeVersionEffDateEOTreeVersionName | ✅ |
+| VERSION_COMMENT | FndTreeVersionEffDateEOVersionComment | — |
+
+### [[flex_treecode_vs_fa_cost_ctr_vi|FLEX_TREECODE_VS_FA_COST_CTR_VI]] (OTHER)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | VersionCreatedBy | — |
+| CREATION_DATE | VersionCreationDate | — |
+| DESCRIPTION | VersionDescription | — |
+| EFFECTIVE_END_DATE | VersionEffectiveEndDate | — |
+| EFFECTIVE_START_DATE | VersionEffectiveStartDate | — |
+| LAST_UPDATE_DATE | VersionLastUpdateDate | — |
+| LAST_UPDATE_LOGIN | VersionLastUpdateLogin | — |
+| LAST_UPDATED_BY | VersionLastUpdatedBy | — |
+| STATUS | VersionStatus | — |
+| TREE_CODE | VersionTreeCode | — |
+| TREE_STRUCTURE_CODE | VersionTreeStructureCode | — |
+| TREE_VERSION_ID | TreeVersionId | — |
+| TREE_VERSION_NAME | VersionName | — |
+
+### [[flex_treecode_vs_gl_account_vi|FLEX_TREECODE_VS_GL_ACCOUNT_VI]] (OTHER)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | VersionCreatedBy | — |
+| CREATION_DATE | VersionCreationDate | — |
+| DESCRIPTION | VersionDescription | — |
+| EFFECTIVE_END_DATE | VersionEffectiveEndDate | — |
+| EFFECTIVE_START_DATE | VersionEffectiveStartDate | — |
+| LAST_UPDATE_DATE | VersionLastUpdateDate | — |
+| LAST_UPDATE_LOGIN | VersionLastUpdateLogin | — |
+| LAST_UPDATED_BY | VersionLastUpdatedBy | — |
+| STATUS | VersionStatus | — |
+| TREE_CODE | VersionTreeCode | — |
+| TREE_STRUCTURE_CODE | VersionTreeStructureCode | — |
+| TREE_VERSION_ID | TreeVersionId | — |
+| TREE_VERSION_NAME | VersionName | — |
+
+### [[flex_treecode_vs_gl_balancing_vi|FLEX_TREECODE_VS_GL_BALANCING_VI]] (OTHER)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | VersionCreatedBy | — |
+| CREATION_DATE | VersionCreationDate | — |
+| DESCRIPTION | VersionDescription | — |
+| EFFECTIVE_END_DATE | VersionEffectiveEndDate | — |
+| EFFECTIVE_START_DATE | VersionEffectiveStartDate | — |
+| LAST_UPDATE_DATE | VersionLastUpdateDate | — |
+| LAST_UPDATE_LOGIN | VersionLastUpdateLogin | — |
+| LAST_UPDATED_BY | VersionLastUpdatedBy | — |
+| STATUS | VersionStatus | — |
+| TREE_CODE | VersionTreeCode | — |
+| TREE_STRUCTURE_CODE | VersionTreeStructureCode | — |
+| TREE_VERSION_ID | TreeVersionId | — |
+| TREE_VERSION_NAME | VersionName | — |
+
+### [[fndtreeandversionvo|FndTreeAndVersionVO]] (HCM · BICC: 13/13)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | VersionCreatedBy | ✅ |
+| CREATION_DATE | VersionCreationDate | ✅ |
+| DESCRIPTION | VersionDescription | ✅ |
+| EFFECTIVE_END_DATE | VersionEffectiveEndDate | ✅ |
+| EFFECTIVE_START_DATE | VersionEffectiveStartDate | ✅ |
+| LAST_UPDATE_DATE | VersionLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | VersionLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | VersionLastUpdatedBy | ✅ |
+| STATUS | VersionStatus | ✅ |
+| TREE_CODE | VersionTreeCode | ✅ |
+| TREE_STRUCTURE_CODE | VersionTreeStructureCode | ✅ |
+| TREE_VERSION_ID | TreeVersionId | ✅ |
+| TREE_VERSION_NAME | VersionName | ✅ |
+
+### [[fndtreeversiondeptvo|FndTreeVersionDeptVO]] (HCM · BICC: 6/23)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CHANGED_SINCE_VALIDATION | ChangedSinceValidation | — |
+| CREATED_BY | CreatedBy | — |
+| CREATION_DATE | CreationDate | — |
+| DESCRIPTION | Description | — |
+| EFFECTIVE_END_DATE | EffectiveEndDate | ✅ |
+| EFFECTIVE_START_DATE | EffectiveStartDate | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | — |
+| LAST_UPDATED_BY | LastUpdatedBy | — |
+| LAST_VALIDATION_DATE | LastValidationDate | — |
+| LAST_VALIDATION_RESULT | LastValidationResult | — |
+| LAST_VALIDATION_RESULT_ID | LastValidationResultId | — |
+| LEVEL_COUNT | LevelCount | — |
+| LOCK_DATE | LockDate | — |
+| LOCKED_BY | LockedBy | — |
+| NODE_COUNT | NodeCount | — |
+| SOURCE_TREE_VERSION_ID | SourceTreeVersionId | — |
+| STATUS | Status | — |
+| TREE_CODE | TreeCode | ✅ |
+| TREE_STRUCTURE_CODE | TreeStructureCode | ✅ |
+| TREE_VERSION_ID | TreeVersionId | ✅ |
+| TREE_VERSION_NAME | TreeVersionName | — |
+| VERSION_COMMENT | VersionComment | — |
+
+### [[fndtreeversionorgvo|FndTreeVersionOrgVO]] (HCM · BICC: 6/23)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CHANGED_SINCE_VALIDATION | ChangedSinceValidation | — |
+| CREATED_BY | CreatedBy | — |
+| CREATION_DATE | CreationDate | — |
+| DESCRIPTION | Description | — |
+| EFFECTIVE_END_DATE | EffectiveEndDate | ✅ |
+| EFFECTIVE_START_DATE | EffectiveStartDate | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | — |
+| LAST_UPDATED_BY | LastUpdatedBy | — |
+| LAST_VALIDATION_DATE | LastValidationDate | — |
+| LAST_VALIDATION_RESULT | LastValidationResult | — |
+| LAST_VALIDATION_RESULT_ID | LastValidationResultId | — |
+| LEVEL_COUNT | LevelCount | — |
+| LOCK_DATE | LockDate | — |
+| LOCKED_BY | LockedBy | — |
+| NODE_COUNT | NodeCount | — |
+| SOURCE_TREE_VERSION_ID | SourceTreeVersionId | — |
+| STATUS | Status | — |
+| TREE_CODE | TreeCode | ✅ |
+| TREE_STRUCTURE_CODE | TreeStructureCode | ✅ |
+| TREE_VERSION_ID | TreeVersionId | ✅ |
+| TREE_VERSION_NAME | TreeVersionName | — |
+| VERSION_COMMENT | VersionComment | — |
+
+### [[fndtreeversionvlextractpvo|FndTreeVersionVLExtractPVO]] (OTHER · BICC: 23/23)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CHANGED_SINCE_VALIDATION | ChangedSinceValidation | ✅ |
+| CREATED_BY | CreatedBy | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| DESCRIPTION | Description | ✅ |
+| EFFECTIVE_END_DATE | EffectiveEndDate | ✅ |
+| EFFECTIVE_START_DATE | EffectiveStartDate | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | LastUpdatedBy | ✅ |
+| LAST_VALIDATION_DATE | LastValidationDate | ✅ |
+| LAST_VALIDATION_RESULT | LastValidationResult | ✅ |
+| LAST_VALIDATION_RESULT_ID | LastValidationResultId | ✅ |
+| LEVEL_COUNT | LevelCount | ✅ |
+| LOCK_DATE | LockDate | ✅ |
+| LOCKED_BY | LockedBy | ✅ |
+| NODE_COUNT | NodeCount | ✅ |
+| SOURCE_TREE_VERSION_ID | SourceTreeVersionId | ✅ |
+| STATUS | Status | ✅ |
+| TREE_CODE | TreeCode | ✅ |
+| TREE_STRUCTURE_CODE | TreeStructureCode | ✅ |
+| TREE_VERSION_ID | TreeVersionId | ✅ |
+| TREE_VERSION_NAME | TreeVersionName | ✅ |
+| VERSION_COMMENT | VersionComment | ✅ |
+
+### [[fndtreeversionvo|FndTreeVersionVO]] (HCM · BICC: 23/23)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CHANGED_SINCE_VALIDATION | ChangedSinceValidation | ✅ |
+| CREATED_BY | CreatedBy | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| DESCRIPTION | Description | ✅ |
+| EFFECTIVE_END_DATE | EffectiveEndDate | ✅ |
+| EFFECTIVE_START_DATE | EffectiveStartDate | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | LastUpdatedBy | ✅ |
+| LAST_VALIDATION_DATE | LastValidationDate | ✅ |
+| LAST_VALIDATION_RESULT | LastValidationResult | ✅ |
+| LAST_VALIDATION_RESULT_ID | LastValidationResultId | ✅ |
+| LEVEL_COUNT | LevelCount | ✅ |
+| LOCK_DATE | LockDate | ✅ |
+| LOCKED_BY | LockedBy | ✅ |
+| NODE_COUNT | NodeCount | ✅ |
+| SOURCE_TREE_VERSION_ID | SourceTreeVersionId | ✅ |
+| STATUS | Status | ✅ |
+| TREE_CODE | TreeCode | ✅ |
+| TREE_STRUCTURE_CODE | TreeStructureCode | ✅ |
+| TREE_VERSION_ID | TreeVersionId | ✅ |
+| TREE_VERSION_NAME | TreeVersionName | ✅ |
+| VERSION_COMMENT | VersionComment | ✅ |
+
+### [[orgtreebicvo|OrgTreeBICVO]] (HCM · BICC: 5/23)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CHANGED_SINCE_VALIDATION | FndTreeVersionEffDateEOChangedSinceValidation | — |
+| CREATED_BY | FndTreeVersionEffDateEOCreatedBy | — |
+| CREATION_DATE | FndTreeVersionEffDateEOCreationDate | — |
+| DESCRIPTION | FndTreeVersionEffDateEODescription | — |
+| EFFECTIVE_END_DATE | FndTreeVersionEffDateEOEffectiveEndDate | ✅ |
+| EFFECTIVE_START_DATE | FndTreeVersionEffDateEOEffectiveStartDate | ✅ |
+| LAST_UPDATE_DATE | FndTreeVersionEffDateEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | FndTreeVersionEffDateEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | FndTreeVersionEffDateEOLastUpdatedBy | — |
+| LAST_VALIDATION_DATE | FndTreeVersionEffDateEOLastValidationDate | — |
+| LAST_VALIDATION_RESULT | FndTreeVersionEffDateEOLastValidationResult | — |
+| LAST_VALIDATION_RESULT_ID | FndTreeVersionEffDateEOLastValidationResultId | — |
+| LEVEL_COUNT | FndTreeVersionEffDateEOLevelCount | — |
+| LOCK_DATE | FndTreeVersionEffDateEOLockDate | — |
+| LOCKED_BY | FndTreeVersionEffDateEOLockedBy | — |
+| NODE_COUNT | FndTreeVersionEffDateEONodeCount | — |
+| SOURCE_TREE_VERSION_ID | FndTreeVersionEffDateEOSourceTreeVersionId | — |
+| STATUS | FndTreeVersionEffDateEOStatus | ✅ |
+| TREE_CODE | FndTreeVersionEffDateEOTreeCode | — |
+| TREE_STRUCTURE_CODE | FndTreeVersionEffDateEOTreeStructureCode | — |
+| TREE_VERSION_ID | FndTreeVersionEffDateEOTreeVersionId | — |
+| TREE_VERSION_NAME | FndTreeVersionEffDateEOTreeVersionName | ✅ |
+| VERSION_COMMENT | FndTreeVersionEffDateEOVersionComment | — |
+
+### [[orgtreebirvoforfscm|OrgTreeBIRVOForFscm]] (HCM)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CHANGED_SINCE_VALIDATION | FndTreeVersionEffDateEOChangedSinceValidation | — |
+| CREATED_BY | FndTreeVersionEffDateEOCreatedBy | — |
+| CREATION_DATE | FndTreeVersionEffDateEOCreationDate | — |
+| DESCRIPTION | FndTreeVersionEffDateEODescription | — |
+| EFFECTIVE_END_DATE | FndTreeVersionEffDateEOEffectiveEndDate | — |
+| EFFECTIVE_START_DATE | FndTreeVersionEffDateEOEffectiveStartDate | — |
+| LAST_UPDATE_DATE | FndTreeVersionEffDateEOLastUpdateDate | — |
+| LAST_UPDATE_LOGIN | FndTreeVersionEffDateEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | FndTreeVersionEffDateEOLastUpdatedBy | — |
+| LAST_VALIDATION_DATE | FndTreeVersionEffDateEOLastValidationDate | — |
+| LAST_VALIDATION_RESULT | FndTreeVersionEffDateEOLastValidationResult | — |
+| LAST_VALIDATION_RESULT_ID | FndTreeVersionEffDateEOLastValidationResultId | — |
+| LEVEL_COUNT | FndTreeVersionEffDateEOLevelCount | — |
+| LOCK_DATE | FndTreeVersionEffDateEOLockDate | — |
+| LOCKED_BY | FndTreeVersionEffDateEOLockedBy | — |
+| NODE_COUNT | FndTreeVersionEffDateEONodeCount | — |
+| SOURCE_TREE_VERSION_ID | FndTreeVersionEffDateEOSourceTreeVersionId | — |
+| STATUS | FndTreeVersionEffDateEOStatus | — |
+| TREE_CODE | FndTreeVersionEffDateEOTreeCode | — |
+| TREE_STRUCTURE_CODE | FndTreeVersionEffDateEOTreeStructureCode | — |
+| TREE_VERSION_ID | FndTreeVersionEffDateEOTreeVersionId | — |
+| TREE_VERSION_NAME | FndTreeVersionEffDateEOTreeVersionName | — |
+| VERSION_COMMENT | FndTreeVersionEffDateEOVersionComment | — |
+
+### [[positiontreebicvo|PositionTreeBICVO]] (PO · BICC: 3/23)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CHANGED_SINCE_VALIDATION | FndTreeVersionEffDateEOChangedSinceValidation | — |
+| CREATED_BY | FndTreeVersionEffDateEOCreatedBy | — |
+| CREATION_DATE | FndTreeVersionEffDateEOCreationDate | — |
+| DESCRIPTION | FndTreeVersionEffDateEODescription | — |
+| EFFECTIVE_END_DATE | FndTreeVersionEffDateEOEffectiveEndDate | — |
+| EFFECTIVE_START_DATE | FndTreeVersionEffDateEOEffectiveStartDate | ✅ |
+| LAST_UPDATE_DATE | FndTreeVersionEffDateEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | FndTreeVersionEffDateEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | FndTreeVersionEffDateEOLastUpdatedBy | — |
+| LAST_VALIDATION_DATE | FndTreeVersionEffDateEOLastValidationDate | — |
+| LAST_VALIDATION_RESULT | FndTreeVersionEffDateEOLastValidationResult | — |
+| LAST_VALIDATION_RESULT_ID | FndTreeVersionEffDateEOLastValidationResultId | — |
+| LEVEL_COUNT | FndTreeVersionEffDateEOLevelCount | — |
+| LOCK_DATE | FndTreeVersionEffDateEOLockDate | — |
+| LOCKED_BY | FndTreeVersionEffDateEOLockedBy | — |
+| NODE_COUNT | FndTreeVersionEffDateEONodeCount | — |
+| SOURCE_TREE_VERSION_ID | FndTreeVersionEffDateEOSourceTreeVersionId | — |
+| STATUS | FndTreeVersionEffDateEOStatus | ✅ |
+| TREE_CODE | FndTreeVersionEffDateEOTreeCode | — |
+| TREE_STRUCTURE_CODE | FndTreeVersionEffDateEOTreeStructureCode | — |
+| TREE_VERSION_ID | FndTreeVersionEffDateEOTreeVersionId | — |
+| TREE_VERSION_NAME | FndTreeVersionEffDateEOTreeVersionName | — |
+| VERSION_COMMENT | FndTreeVersionEffDateEOVersionComment | — |
+
+### [[resourcepartnerpvo|ResourcePartnerPVO]] (OTHER)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| EFFECTIVE_END_DATE | EffectiveEndDate | — |
+| EFFECTIVE_START_DATE | EffectiveStartDate | — |
+| STATUS | FndTreeVerStatus | — |
+| TREE_CODE | TreeCode | — |
+| TREE_STRUCTURE_CODE | TreeStructureCode | — |
+| TREE_VERSION_ID | TreeVersionId | — |

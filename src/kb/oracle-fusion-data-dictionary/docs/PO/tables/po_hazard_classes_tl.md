@@ -41,7 +41,6 @@ Armazena as **traducoes das classes de risco**.
 > [!note] Sufixo _TL
 > O sufixo `_TL` indica a **tabela de traducoes**. Contem versoes traduzidas dos campos descritivos da tabela `_B` correspondente.
 
-
 ---
 
 ## 🧠 Propósito de Negócio
@@ -92,13 +91,48 @@ FROM   PO_HAZARD_CLASSES_TL
 WHERE  HAZARD_CLASS_ID = :p_id;
 ```
 
-
 ---
 
 ## 🔒 Observações
 
 - Uma linha por idioma.
 - Usada pela view `PO_HAZARD_CLASSES_VL`.
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[purchasinghazardclassextractpvo|PurchasingHazardClassExtractPVO]] (PO · BICC: 11/11)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | PurchasingHazardClsTLCreatedBy | ✅ |
+| CREATION_DATE | PurchasingHazardClsTLCreationDate | ✅ |
+| DESCRIPTION | PurchasingHazardClsTLDescription | ✅ |
+| HAZARD_CLASS | PurchasingHazardClsTLHazardClass | ✅ |
+| HAZARD_CLASS_ID | PurchasingHazardClsTLHazardClassId | ✅ |
+| LANGUAGE | PurchasingHazardClsTLLanguage | ✅ |
+| LAST_UPDATE_DATE | PurchasingHazardClsTLLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | PurchasingHazardClsTLLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | PurchasingHazardClsTLLastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | PurchasingHazardClsTLObjectVersionNumber | ✅ |
+| SOURCE_LANG | PurchasingHazardClsTLSourceLang | ✅ |
+
+### [[purchasinghazardclasspvo|PurchasingHazardClassPVO]] (PO · BICC: 8/11)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | PurchasingHazardClsTLCreatedBy | ✅ |
+| CREATION_DATE | PurchasingHazardClsTLCreationDate | ✅ |
+| DESCRIPTION | PurchasingHazardClsTLDescription | ✅ |
+| HAZARD_CLASS | PurchasingHazardClsTLHazardClass | ✅ |
+| HAZARD_CLASS_ID | PurchasingHazardClsTLHazardClassId | — |
+| LANGUAGE | PurchasingHazardClsTLLanguage | ✅ |
+| LAST_UPDATE_DATE | PurchasingHazardClsTLLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | PurchasingHazardClsTLLastUpdateLogin | — |
+| LAST_UPDATED_BY | PurchasingHazardClsTLLastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | PurchasingHazardClsTLObjectVersionNumber | — |
+| SOURCE_LANG | PurchasingHazardClsTLSourceLang | ✅ |
 
 ---
 

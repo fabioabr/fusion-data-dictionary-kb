@@ -133,6 +133,121 @@ WHERE  tl.LANGUAGE <> tl.SOURCE_LANG;
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[customerprofile|CustomerProfile]] (AR · BICC: 2/24)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | LatePaymentTermTranslCreatedBy | — |
+| CREATED_BY | PaymentTermTranslationCreatedBy | — |
+| CREATION_DATE | LatePaymentTermTranslCreationDate | — |
+| CREATION_DATE | PaymentTermTranslationCreationDate | — |
+| DESCRIPTION | LatePaymentTermTranslDescription | — |
+| DESCRIPTION | PaymentTermTranslationDescription | — |
+| LANGUAGE | LatePaymentTermTranslLanguage | — |
+| LANGUAGE | PaymentTermTranslationLanguage | — |
+| LAST_UPDATE_DATE | LatePaymentTermTranslLastUpdateDate | ✅ |
+| LAST_UPDATE_DATE | PaymentTermTranslationLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LatePaymentTermTranslLastUpdateLogin | — |
+| LAST_UPDATE_LOGIN | PaymentTermTranslationLastUpdateLogin | — |
+| LAST_UPDATED_BY | LatePaymentTermTranslLastUpdatedBy | — |
+| LAST_UPDATED_BY | PaymentTermTranslationLastUpdatedBy | — |
+| NAME | LatePaymentTermTranslName | — |
+| NAME | PaymentTermTranslationName | — |
+| OBJECT_VERSION_NUMBER | LatePaymentTermTranslObjVerNumber | — |
+| OBJECT_VERSION_NUMBER | PayTermTransObjectVersionNumber | — |
+| SET_ID | LatePaymentTermTranslSetId | — |
+| SET_ID | PaymentTermTranslationSetId | — |
+| SOURCE_LANG | LatePaymentTermTranslSourceLang | — |
+| SOURCE_LANG | PaymentTermTranslationSourceLang | — |
+| TERM_ID | LatePaymentTermTranslTermId | — |
+| TERM_ID | PaymentTermTranslationTermId | — |
+
+### [[customersiteprofile|CustomerSiteProfile]] (AR · BICC: 2/24)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | LatePaymentTermTranslCreatedBy | — |
+| CREATED_BY | PaymentTermTranslationCreatedBy | — |
+| CREATION_DATE | LatePaymentTermTranslCreationDate | — |
+| CREATION_DATE | PaymentTermTranslationCreationDate | — |
+| DESCRIPTION | LatePaymentTermTranslDescription | — |
+| DESCRIPTION | PaymentTermTranslationDescription | — |
+| LANGUAGE | LatePaymentTermTranslLanguage | — |
+| LANGUAGE | PaymentTermTranslationLanguage | — |
+| LAST_UPDATE_DATE | LatePaymentTermTranslLastUpdateDate | ✅ |
+| LAST_UPDATE_DATE | PaymentTermTranslationLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LatePaymentTermTranslLastUpdateLogin | — |
+| LAST_UPDATE_LOGIN | PaymentTermTranslationLastUpdateLogin | — |
+| LAST_UPDATED_BY | LatePaymentTermTranslLastUpdatedBy | — |
+| LAST_UPDATED_BY | PaymentTermTranslationLastUpdatedBy | — |
+| NAME | LatePaymentTermTranslName | — |
+| NAME | PaymentTermTranslationName | — |
+| OBJECT_VERSION_NUMBER | LatePaymentTermTranslObjVerNumber | — |
+| OBJECT_VERSION_NUMBER | PayTermTransObjectVersionNumber | — |
+| SET_ID | LatePaymentTermTranslSetId | — |
+| SET_ID | PaymentTermTranslationSetId | — |
+| SOURCE_LANG | LatePaymentTermTranslSourceLang | — |
+| SOURCE_LANG | PaymentTermTranslationSourceLang | — |
+| TERM_ID | LatePaymentTermTranslTermId | — |
+| TERM_ID | PaymentTermTranslationTermId | — |
+
+### [[paymenttermextractpvo|PaymentTermExtractPVO]] (OTHER · BICC: 13/13)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | RaTermTLCreatedBy | ✅ |
+| CREATION_DATE | RaTermTLCreationDate | ✅ |
+| DESCRIPTION | RaTermTLDescription | ✅ |
+| LANGUAGE | RaTermTLLanguage | ✅ |
+| LAST_UPDATE_DATE | RaTermTLLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | RaTermTLLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | RaTermTLLastUpdatedBy | ✅ |
+| NAME | RaTermTLName | ✅ |
+| OBJECT_VERSION_NUMBER | RaTermTLObjectVersionNumber | ✅ |
+| SEED_DATA_SOURCE | RaTermTLSeedDataSource | ✅ |
+| SET_ID | RaTermTLSetId | ✅ |
+| SOURCE_LANG | RaTermTLSourceLang | ✅ |
+| TERM_ID | RaTermTLTermId | ✅ |
+
+### [[paymenttermtlextractpvo|PaymentTermTLExtractPVO]] (OTHER · BICC: 13/13)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | RaTermTLCreatedBy | ✅ |
+| CREATION_DATE | RaTermTLCreationDate | ✅ |
+| DESCRIPTION | RaTermTLDescription | ✅ |
+| LANGUAGE | RaTermTLLanguage | ✅ |
+| LAST_UPDATE_DATE | RaTermTLLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | RaTermTLLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | RaTermTLLastUpdatedBy | ✅ |
+| NAME | RaTermTLName | ✅ |
+| OBJECT_VERSION_NUMBER | RaTermTLObjectVersionNumber | ✅ |
+| SEED_DATA_SOURCE | RaTermTLSeedDataSource | ✅ |
+| SET_ID | RaTermTLSetId | ✅ |
+| SOURCE_LANG | RaTermTLSourceLang | ✅ |
+| TERM_ID | RaTermTLTermId | ✅ |
+
+### [[paymenttermtranslationpvo|PaymentTermTranslationPVO]] (AR · BICC: 11/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | CreatedBy | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| DESCRIPTION | Description | ✅ |
+| LANGUAGE | Language | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | LastUpdatedBy | ✅ |
+| NAME | Name | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | — |
+| SET_ID | SetId | ✅ |
+| SOURCE_LANG | SourceLang | ✅ |
+| TERM_ID | TermId | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — RA_TERMS_TL](https://docs.oracle.com/en/cloud/saas/financials/25a/oedmf/ratermstl-10077.html)

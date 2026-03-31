@@ -111,3 +111,22 @@ ORDER BY tl.LANGUAGE;
 
 - [Oracle Docs — WLF_LEARNING_ITEMS_F_TL](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/wlflearningitemsftl.html)
 - [[hcm-module-data-dictionary]] — Dossiê do módulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[learningitempvo|LearningItemPVO]] (HCM · BICC: 3/10)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| DESCRIPTION | LearningItemTranslationDEODescription | ✅ |
+| DESCRIPTION_LONG | LearningItemTranslationDEODescriptionLong | — |
+| EFFECTIVE_END_DATE | LearningItemTranslationDEOEffectiveEndDate | — |
+| EFFECTIVE_START_DATE | LearningItemTranslationDEOEffectiveStartDate | ✅ |
+| ENTERPRISE_ID | LearningItemTranslationDEOEnterpriseId | — |
+| LANGUAGE | LearningItemTranslationDEOLanguage | — |
+| LEARNING_ITEM_ID | LearningItemTranslationDEOLearningItemId | — |
+| NAME | LearningItemTranslationDEOName | ✅ |
+| OBJECT_VERSION_NUMBER | LearningItemTranslationDEOObjectVersionNumber | — |
+| SOURCE_LANG | LearningItemTranslationDEOSourceLang | — |

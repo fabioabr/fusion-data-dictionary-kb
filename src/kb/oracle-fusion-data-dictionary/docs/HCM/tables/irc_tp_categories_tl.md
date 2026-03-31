@@ -98,6 +98,30 @@ WHERE  tl.CATEGORY_ID = :p_category_id
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[partneraccountpvo|PartnerAccountPVO]] (HCM · BICC: 3/5)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CATEGORY_ID | CategoryTLPEOCategoryId | — |
+| CATEGORY_NAME | CategoryTLPEOCategoryName | ✅ |
+| DESCRIPTION | CategoryTLPEODescription | ✅ |
+| LANGUAGE | CategoryTLPEOLanguage | — |
+| SUB_CATEGORY_NAME | CategoryTLPEOSubCategoryName | ✅ |
+
+### [[partnerprovisionpvo|PartnerProvisionPVO]] (HCM · BICC: 3/5)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CATEGORY_ID | CategoryTLPEOCategoryId | — |
+| CATEGORY_NAME | CategoryTLPEOCategoryName | ✅ |
+| DESCRIPTION | CategoryTLPEODescription | ✅ |
+| LANGUAGE | CategoryTLPEOLanguage | — |
+| SUB_CATEGORY_NAME | CategoryTLPEOSubCategoryName | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — IRC_TP_CATEGORIES_TL](https://docs.oracle.com/en/cloud/saas/talent-management/25a/oedmf/irctpcategoriestl.html)

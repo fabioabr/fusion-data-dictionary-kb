@@ -113,3 +113,28 @@ ORDER BY v.VERSION_NUMBER DESC;
 
 - [Oracle Docs — IRC_AF_VERSIONS](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/ircafversions.html)
 - [[hcm-module-data-dictionary]] — Dossie do modulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[applyflowversionpvo|ApplyFlowVersionPVO]] (HCM · BICC: 11/16)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| AF_VERSION_ID | AfVersionId | ✅ |
+| APPLY_FLOW_ID | ApplyflowVersionPEOApplyFlowId | ✅ |
+| CREATED_BY | ApplyflowVersionPEOCreatedBy | — |
+| CREATION_DATE | ApplyflowVersionPEOCreationDate | — |
+| ESIGN_ENABLED_FLAG | ApplyflowVersionPEOEsignEnabledFlag | ✅ |
+| LAST_UPDATE_DATE | ApplyflowVersionPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ApplyflowVersionPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | ApplyflowVersionPEOLastUpdatedBy | — |
+| LEGAL_ENABLED_FLAG | ApplyflowVersionPEOLegalEnabledFlag | ✅ |
+| OBJECT_VERSION_NUMBER | ApplyflowVersionPEOObjectVersionNumber | — |
+| OPTIN_ENABLED_FLAG | ApplyflowVersionPEOOptinEnabledFlag | ✅ |
+| SINGLE_CLICK_APPLY_FLAG | ApplyflowVersionPEOSingleClickApplyFlag | ✅ |
+| TC_OPTIN_ENABLED_FLAG | ApplyFlowVersionPEOTcOptinEnabledFlag | ✅ |
+| VERSION_NAME | ApplyflowVersionPEOVersionName | ✅ |
+| VERSION_START_DATE | ApplyflowVersionPEOVersionStartDate | ✅ |
+| VERSION_STATUS_CODE | ApplyflowVersionPEOVersionStatusCode | ✅ |

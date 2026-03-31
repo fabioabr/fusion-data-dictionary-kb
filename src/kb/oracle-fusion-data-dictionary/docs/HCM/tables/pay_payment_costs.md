@@ -99,6 +99,25 @@ WHERE  pc.PRE_PAYMENT_ID = :p_pre_payment_id;
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[prepaymentcosting|PrePaymentCosting]] (GL · BICC: 7/10)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACCOUNT_TYPE | PaymentCostAccountType | ✅ |
+| ACCOUNTING_DATE | PaymentCostAccountingDate | ✅ |
+| COST_ALLOCATION_KEYFLEX_ID | PaymentCostCostAllocationKeyflexId | — |
+| CURRENCY_CODE | PaymentCostCurrencyCode | ✅ |
+| DEBIT_OR_CREDIT | PaymentCostDebitOrCredit | ✅ |
+| PAYMENT_COST_ID | PaymentCostId | ✅ |
+| PRE_PAYMENT_ID | PaymentCostPrePaymentId | — |
+| SOURCE_ACTION_ID | PaymentCostSourceActionId | — |
+| SOURCE_TYPE | PaymentCostSourceType | ✅ |
+| VALUE | PaymentCostValue | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — PAY_PAYMENT_COSTS](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/paypaymentcosts.html)

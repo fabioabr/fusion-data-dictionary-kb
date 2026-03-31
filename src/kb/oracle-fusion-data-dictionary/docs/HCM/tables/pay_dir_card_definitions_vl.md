@@ -97,6 +97,28 @@ WHERE  vl.LEGISLATIVE_DATA_GROUP_ID = :p_ldg_id;
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[calculationcomponentpvo|CalculationComponentPVO]] (HCM · BICC: 4/13)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ASSOCIABLE_TERM | DIRCardDefinitionPEOAssociableTerm | — |
+| ASSOCIABLE_TRU | DIRCardDefinitionPEOAssociableTru | — |
+| AUTO_GENERATE | DIRCardDefinitionPEOAutoGenerate | — |
+| BASE_DISPLAY_NAME | DIRCardDefinitionPEOBaseDisplayName | ✅ |
+| BREAKDOWN_COMPONENT_FLAG | DIRCardDefinitionPEOBreakdownComponentFlag | — |
+| DATE_MODE | DIRCardDefinitionPEODateMode | — |
+| DEFAULTING_TRU_FLAG | DIRCardDefinitionPEODefaultingTruFlag | — |
+| DESCRIPTION | DIRCardDefinitionPEODescription | ✅ |
+| DIR_CARD_DEFINITION_ID | DIRCardDefinitionPEODirCardDefinitionId | ✅ |
+| DISPLAY_NAME | DIRCardDefinitionPEODisplayName | ✅ |
+| LEGISLATION_CODE | DIRCardDefinitionPEOLegislationCode | — |
+| LEGISLATIVE_DATA_GROUP_ID | DIRCardDefinitionPEOLegislativeDataGroupId | — |
+| OBJECT_VERSION_NUMBER | DIRCardDefinitionPEOObjectVersionNumber | — |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — PAY_DIR_CARD_DEFINITIONS_VL](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/paydircarddefinitionsvl.html)

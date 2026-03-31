@@ -142,3 +142,86 @@ ORDER BY attr.LINE_NUMBER, attr.SEQUENCE_NUMBER;
 
 - [Oracle Docs — PON_AUCTION_ATTRIBUTES](https://docs.oracle.com/en/cloud/saas/procurement/25a/oedmf/ponauctionattributes.html)
 - [[po-module-data-dictionary]] — Dossiê do módulo PO/Procurement
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[negotiationresponserequirementandattributepvo|NegotiationResponseRequirementAndAttributePVO]] (PO · BICC: 5/35)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ATTR_DISP_SEQ_NUMBER | NegReqAttrAttrDispSeqNumber | ✅ |
+| ATTR_GROUP_SEQ_NUMBER | NegReqAttrAttrGroupSeqNumber | ✅ |
+| ATTR_LEVEL | NegReqAttrAttrLevel | — |
+| ATTR_MAX_SCORE | NegReqAttrAttrMaxScore | — |
+| ATTRIBUTE_LIST_ID | NegReqAttrAttributeListId | — |
+| ATTRIBUTE_NAME | NegReqAttrAttributeName | — |
+| AUCTION_HEADER_ID | NegReqAttrAuctionHeaderId | — |
+| CREATED_BY | NegReqAttrCreatedBy | — |
+| CREATION_DATE | NegReqAttrCreationDate | — |
+| DATATYPE | NegReqAttrDatatype | — |
+| DATE_VALUE | NegReqAttrDateValue | — |
+| DISPLAY_TARGET_FLAG | NegReqAttrDisplayTargetFlag | — |
+| IP_CATEGORY_ID | NegReqAttrIpCategoryId | — |
+| IP_DESCRIPTOR_ID | NegReqAttrIpDescriptorId | — |
+| KNOCKOUT_SCORE | NegReqAttrKnockoutScore | — |
+| LAST_AMENDMENT_UPDATE | NegReqAttrLastAmendmentUpdate | — |
+| LAST_UPDATE_DATE | NegReqAttrLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | NegReqAttrLastUpdateLogin | — |
+| LAST_UPDATED_BY | NegReqAttrLastUpdatedBy | — |
+| LINE_NUMBER | NegReqAttrLineNumber1 | — |
+| MODIFIED_DATE | NegReqAttrModifiedDate | — |
+| MODIFIED_FLAG | NegReqAttrModifiedFlag | — |
+| NUMBER_VALUE | NegReqAttrNumberValue | — |
+| OBJECT_VERSION_NUMBER | NegReqAttrObjectVersionNumber1 | — |
+| PROGRAM_APP_NAME | NegReqAttrProgramAppName | — |
+| PROGRAM_NAME | NegReqAttrProgramName | — |
+| REQUEST_ID | NegReqAttrRequestId | — |
+| RESPONSE_TYPE | NegReqAttrResponseType | ✅ |
+| SCORING_METHOD | NegReqAttrScoringMethod | — |
+| SCORING_TYPE | NegReqAttrScoringType | — |
+| SECTION_ID | NegReqAttrSectionId | — |
+| SECTION_NAME | NegReqAttrSectionName | ✅ |
+| SEQUENCE_NUMBER | NegReqAttrSequenceNumber1 | — |
+| TEXT_VALUE | NegReqAttrTextValue | — |
+| WEIGHT | NegReqAttrWeight | — |
+
+### [[sourcingrequirementandattributepvo|SourcingRequirementAndAttributePVO]] (PO · BICC: 25/34)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ATTR_DISP_SEQ_NUMBER | SourcingReqAttAttrDispSeqNumber | ✅ |
+| ATTR_GROUP_SEQ_NUMBER | SourcingReqAttAttrGroupSeqNumber | ✅ |
+| ATTR_LEVEL | SourcingReqAttAttrLevel | ✅ |
+| ATTR_MAX_SCORE | SourcingReqAttAttrMaxScore | ✅ |
+| ATTRIBUTE_LIST_ID | AttributeListId | ✅ |
+| ATTRIBUTE_NAME | SourcingReqAttAttributeName | ✅ |
+| AUCTION_HEADER_ID | AuctionHeaderId | ✅ |
+| CREATED_BY | SourcingReqAttCreatedBy | ✅ |
+| CREATION_DATE | SourcingReqAttCreationDate | ✅ |
+| DATATYPE | SourcingReqAttDatatype | ✅ |
+| DATE_VALUE | SourcingReqAttDateValue | ✅ |
+| DISPLAY_TARGET_FLAG | SourcingReqAttDisplayTargetFlag | ✅ |
+| IP_CATEGORY_ID | SourcingReqAttIpCategoryId | ✅ |
+| IP_DESCRIPTOR_ID | SourcingReqAttIpDescriptorId | ✅ |
+| KNOCKOUT_SCORE | SourcingReqAttKnockoutScore | ✅ |
+| LAST_AMENDMENT_UPDATE | SourcingReqAttLastAmendmentUpdate | — |
+| LAST_UPDATE_DATE | SourcingReqAttLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | SourcingReqAttLastUpdateLogin | — |
+| LAST_UPDATED_BY | SourcingReqAttLastUpdatedBy | — |
+| LINE_NUMBER | LineNumber | ✅ |
+| MODIFIED_DATE | SourcingReqAttModifiedDate | — |
+| MODIFIED_FLAG | SourcingReqAttModifiedFlag | — |
+| NUMBER_VALUE | SourcingReqAttNumberValue | ✅ |
+| OBJECT_VERSION_NUMBER | SourcingReqAttObjectVersionNumber | — |
+| PROGRAM_APP_NAME | SourcingReqAttProgramAppName | — |
+| PROGRAM_NAME | SourcingReqAttProgramName | — |
+| REQUEST_ID | SourcingReqAttRequestId | — |
+| RESPONSE_TYPE | SourcingReqAttResponseType | ✅ |
+| SCORING_METHOD | SourcingReqAttScoringMethod | ✅ |
+| SCORING_TYPE | SourcingReqAttScoringType | ✅ |
+| SECTION_NAME | SourcingReqAttSectionName | ✅ |
+| SEQUENCE_NUMBER | SequenceNumber | ✅ |
+| TEXT_VALUE | SourcingReqAttTextValue | ✅ |
+| WEIGHT | SourcingReqAttWeight | ✅ |

@@ -99,6 +99,132 @@ WHERE  p.PARTNER_STATUS = 'ACTIVE';
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[asmtpackageresultviewallpvo|AsmtPackageResultViewAllPVO]] (HCM · BICC: 2/2)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| NAME | PartnerPEOName | ✅ |
+| PARTNER_ID | PartnerPEOPartnerId | ✅ |
+
+### [[asmtreqpackageviewallpvo|AsmtReqPackageViewAllPVO]] (HCM · BICC: 2/2)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| NAME | PartnerPEOName | ✅ |
+| PARTNER_ID | PartnerPEOPartnerId | ✅ |
+
+### [[jobposthistorypvo|JobPostHistoryPVO]] (HCM · BICC: 2/2)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| NAME | PartnerPEOName | ✅ |
+| PARTNER_ID | PartnerPEOPartnerId | ✅ |
+
+### [[jobposthistoryviewallpvo|JobPostHistoryViewAllPVO]] (HCM · BICC: 2/2)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| NAME | PartnerPEOName | ✅ |
+| PARTNER_ID | PartnerPEOPartnerId | ✅ |
+
+### [[jobpostingpvo|JobPostingPVO]] (HCM · BICC: 2/2)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| NAME | PartnerPEOName | ✅ |
+| PARTNER_ID | PartnerPEOPartnerId | ✅ |
+
+### [[jobpostingviewallpvo|JobPostingViewAllPVO]] (HCM · BICC: 2/2)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| NAME | PartnerPEOName | ✅ |
+| PARTNER_ID | PartnerPEOPartnerId | ✅ |
+
+### [[jobpostresultpvo|JobPostResultPVO]] (HCM · BICC: 2/2)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| NAME | PartnerPEOName | ✅ |
+| PARTNER_ID | PatnerPEOPartnerId | ✅ |
+
+### [[jobpostresultviewallpvo|JobPostResultViewAllPVO]] (HCM · BICC: 2/2)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| NAME | PartnerPEOName | ✅ |
+| PARTNER_ID | PatnerPEOPartnerId | ✅ |
+
+### [[partneraccountpvo|PartnerAccountPVO]] (HCM · BICC: 8/10)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | PartnerPEOCreatedBy | ✅ |
+| CREATION_DATE | PartnerPEOCreationDate | ✅ |
+| LAST_UPDATE_DATE | PartnerPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | PartnerPEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | PartnerPEOLastUpdatedBy | ✅ |
+| LOGO | PartnerPEOLogo | — |
+| NAME | PartnerPEOName | ✅ |
+| OBJECT_VERSION_NUMBER | PartnerPEOObjectVersionNumber | — |
+| PARTNER_GUID | PartnerPEOPartnerGuid | ✅ |
+| PARTNER_ID | PartnerPEOPartnerId | ✅ |
+
+### [[partnerprovisionpvo|PartnerProvisionPVO]] (HCM · BICC: 8/10)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | PartnerPEOCreatedBy | ✅ |
+| CREATION_DATE | PartnerPEOCreationDate | ✅ |
+| LAST_UPDATE_DATE | PartnerPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | PartnerPEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | PartnerPEOLastUpdatedBy | ✅ |
+| LOGO | PartnerPEOLogo | — |
+| NAME | PartnerPEOName | ✅ |
+| OBJECT_VERSION_NUMBER | PartnerPEOObjectVersionNumber | — |
+| PARTNER_GUID | PartnerPEOPartnerGuid | ✅ |
+| PARTNER_ID | PartnerPEOPartnerId | ✅ |
+
+### [[partnerpvo|PartnerPVO]] (HCM · BICC: 8/10)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | PartnerPEOCreatedBy | ✅ |
+| CREATION_DATE | PartnerPEOCreationDate | ✅ |
+| LAST_UPDATE_DATE | PartnerPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | PartnerPEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | PartnerPEOLastUpdatedBy | ✅ |
+| LOGO | PartnerPEOLogo | — |
+| NAME | PartnerPEOName | ✅ |
+| OBJECT_VERSION_NUMBER | PartnerPEOObjectVersionNumber | — |
+| PARTNER_GUID | PartnerPEOPartnerGuid | ✅ |
+| PARTNER_ID | PartnerId | ✅ |
+
+### [[screeningpackagepvo|ScreeningPackagePVO]] (AP · BICC: 2/2)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| NAME | PartnerPEOName | ✅ |
+| PARTNER_ID | PartnerPEOPartnerId | ✅ |
+
+### [[screeningresultviewallpvo|ScreeningResultViewAllPVO]] (AP · BICC: 2/2)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| NAME | PartnerPEOName | ✅ |
+| PARTNER_ID | PartnerPEOPartnerId | ✅ |
+
+### [[screeningviewallpvo|ScreeningViewAllPVO]] (AP · BICC: 2/2)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| NAME | PartnerPEOName | ✅ |
+| PARTNER_ID | PartnerPEOPartnerId | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — IRC_TP_PARTNERS](https://docs.oracle.com/en/cloud/saas/talent-management/25a/oedmf/irctppartners.html)

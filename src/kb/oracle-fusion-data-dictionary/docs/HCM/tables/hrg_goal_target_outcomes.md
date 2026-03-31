@@ -96,6 +96,34 @@ WHERE  t.GOAL_ID = :p_goal_id;
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[contentitemvaluepvo|ContentItemValuePVO]] (HCM · BICC: 9/19)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| APPROVED_RATING_ID | GoalTargetOutcomePEOApprovedRatingId | — |
+| APPROVED_RATING_ID2 | GoalTargetOutcomePEOApprovedRatingId2 | — |
+| APPROVED_RATING_ID3 | GoalTargetOutcomePEOApprovedRatingId3 | — |
+| BUSINESS_GROUP_ID | GoalTargetOutcomePEOBusinessGroupId | — |
+| COMMENTS | GoalTargetOutcomePEOComments | ✅ |
+| CONTENT_ITEM_ID | GoalTargetOutcomePEOContentItemId | — |
+| CONTENT_ITEM_TYPE_ID | GoalTargetOutcomePEOContentItemTypeId | — |
+| CONTENT_SOURCE_CODE | GoalTargetOutcomePEOContentSourceCode | ✅ |
+| CREATED_BY | GoalTargetOutcomePEOCreatedBy | ✅ |
+| CREATION_DATE | GoalTargetOutcomePEOCreationDate | ✅ |
+| GOAL_ID | GoalTargetOutcomePEOGoalId | — |
+| GOAL_TARGET_OUTCOME_ID | GoalTargetOutcomeId | ✅ |
+| LAST_UPDATE_DATE | GoalTargetOutcomePEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | GoalTargetOutcomePEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | GoalTargetOutcomePEOLastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | GoalTargetOutcomePEOObjectVersionNumber | ✅ |
+| TARGET_RATING_LEVEL_ID | GoalTargetOutcomePEOTargetRatingLevelId | — |
+| TARGET_RATING_LEVEL_ID2 | GoalTargetOutcomePEOTargetRatingLevelId2 | — |
+| TARGET_RATING_LEVEL_ID3 | GoalTargetOutcomePEOTargetRatingLevelId3 | — |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Fusion HCM Tables and Views](https://docs.oracle.com/en/cloud/saas/human-resources/25a/)

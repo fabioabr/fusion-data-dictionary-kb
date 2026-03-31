@@ -99,6 +99,19 @@ WHERE  cd.DIR_CARD_COMP_ID = :p_comp_id
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[dircomponentdetailpvo|DIRComponentDetailPVO]] (HCM · BICC: 3/4)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| DIR_CARD_COMP_ID | DIRComponentDetailDPEODirCardCompId | — |
+| DIR_COMP_DETAIL_ID | DIRComponentDetailDPEODirCompDetailId | ✅ |
+| EFFECTIVE_END_DATE | DIRComponentDetailDPEOEffectiveEndDate | ✅ |
+| EFFECTIVE_START_DATE | DIRComponentDetailDPEOEffectiveStartDate | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — PAY_DIR_COMP_DETAILS_F](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/paydircompdetailsf.html)

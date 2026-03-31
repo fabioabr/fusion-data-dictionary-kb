@@ -39,7 +39,6 @@ View que consolida os eventos do módulo de Time Management, incluindo submissõ
 > [!note] Sufixo _V
 > O sufixo `_V` indica **view** — objeto somente leitura que consolida dados de uma ou mais tabelas para facilitar consultas.
 
-
 ---
 
 ## 🧠 Propósito de Negócio
@@ -102,6 +101,43 @@ ORDER BY t.EVENT_DATE DESC
 
 - View somente leitura: não permite INSERT, UPDATE ou DELETE direto.
 - Área funcional: Time Management dentro do Oracle Fusion Cloud HCM.
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[deviceeventpvo|DeviceEventPVO]] (GL · BICC: 26/28)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CORR_ASSIGNMENT_ID | DeviceEventPEOCorrAssignmentId | ✅ |
+| CORR_BADGE_ID | DeviceEventPEOCorrBadgeId | ✅ |
+| CORR_CREATED_BY | DeviceEventPEOCorrCreatedBy | ✅ |
+| CORR_CREATION_DATE | DeviceEventPEOCorrCreationDate | ✅ |
+| CORR_LAST_UPDATE_DATE | DeviceEventPEOCorrLastUpdateDate | ✅ |
+| CORR_LAST_UPDATE_LOGIN | DeviceEventPEOCorrLastUpdateLogin | ✅ |
+| CORR_LAST_UPDATED_BY | DeviceEventPEOCorrLastUpdatedBy | ✅ |
+| CORR_PERSON_ID | DeviceEventPEOCorrPersonId | ✅ |
+| CREATED_BY | DeviceEventPEOCreatedBy | ✅ |
+| CREATION_DATE | DeviceEventPEOCreationDate | ✅ |
+| DEVICE_ID | DeviceEventPEODeviceId | ✅ |
+| EVENT_STATUS | DeviceEventPEOEventStatus | ✅ |
+| EVENT_TIME_REAL | DeviceEventPEOEventTimeReal | ✅ |
+| EVENT_TIME_STRING | DeviceEventPEOEventTimeString | ✅ |
+| EVENT_TYPE | DeviceEventPEOEventType | ✅ |
+| LAST_UPDATE_DATE | DeviceEventPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | DeviceEventPEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | DeviceEventPEOLastUpdatedBy | ✅ |
+| PERSON_ID | DeviceEventPEOPersonId | ✅ |
+| REF_TIMEZONE_ID | DeviceEventPEORefTimezoneId | ✅ |
+| REPORTER_ID | DeviceEventPEOReporterId | ✅ |
+| REPORTER_ID_TYPE | DeviceEventPEOReporterIdType | ✅ |
+| RESOURCE_ID | DeviceEventPEOResourceId | ✅ |
+| STATUS | DeviceEventPEOStatus | — |
+| TIMEZONE_OFFSET | DeviceEventPEOTimezoneOffset | — |
+| TM_EVENT_CORRECTION_ID | DeviceEventPEOTmEventCorrectionId | ✅ |
+| TM_EVENT_ID | DeviceEventPEOTmEventId | ✅ |
+| TM_EVENT_REQ_ID | DeviceEventPEOTmEventReqId | ✅ |
 
 ---
 

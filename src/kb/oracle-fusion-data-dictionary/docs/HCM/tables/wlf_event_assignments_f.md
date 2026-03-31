@@ -119,3 +119,53 @@ WHERE  ea.LEARNING_ITEM_ID = :p_learning_item_id
 
 - [Oracle Docs — WLF_EVENT_ASSIGNMENTS_F](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/wlfeventassignmentsf.html)
 - [[hcm-module-data-dictionary]] — Dossiê do módulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[eventassignmentpvo|EventAssignmentPVO]] (HCM · BICC: 5/18)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ASSIGNMENT_PROFILE_NUMBER | EventAssignmentDEOAssignmentProfileNumber | — |
+| ASSIGNMENT_RULE_ID | EventAssignmentDEOAssignmentRuleId | — |
+| ASSIGNMENT_START_DATE | EventAssignmentDEOAssignmentStartDate | — |
+| COMMENTS | EventAssignmentDEOComments | — |
+| CREATED_BY | EventAssignmentDEOCreatedBy | — |
+| CREATION_DATE | EventAssignmentDEOCreationDate | — |
+| EFFECTIVE_END_DATE | EventAssignmentDEOEffectiveEndDate | ✅ |
+| EFFECTIVE_START_DATE | EventAssignmentDEOEffectiveStartDate | ✅ |
+| ENTERPRISE_ID | EventAssignmentDEOEnterpriseId | — |
+| EVENT_ASSIGNMENT_ID | EventAssignmentDEOEventAssignmentId | ✅ |
+| EVENT_ID | EventAssignmentDEOEventId | — |
+| LAST_UPDATE_DATE | EventAssignmentDEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | EventAssignmentDEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | EventAssignmentDEOLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | EventAssignmentDEOObjectVersionNumber | — |
+| PROCESSED_DATE | EventAssignmentDEOProcessedDate | — |
+| REQUEST_DETAIL_ID | EventAssignmentDEORequestDetailId | — |
+| STATUS | EventAssignmentDEOStatus | ✅ |
+
+### [[eventassignmentrecordpvo|EventAssignmentRecordPVO]] (HCM · BICC: 6/18)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ASSIGNMENT_PROFILE_NUMBER | EventAssignmentDEOAssignmentProfileNumber | ✅ |
+| ASSIGNMENT_RULE_ID | EventAssignmentDEOAssignmentRuleId | ✅ |
+| ASSIGNMENT_START_DATE | EventAssignmentDEOAssignmentStartDate | — |
+| COMMENTS | EventAssignmentDEOComments | — |
+| CREATED_BY | EventAssignmentDEOCreatedBy | — |
+| CREATION_DATE | EventAssignmentDEOCreationDate | — |
+| EFFECTIVE_END_DATE | EventAssignmentDEOEffectiveEndDate | — |
+| EFFECTIVE_START_DATE | EventAssignmentDEOEffectiveStartDate | — |
+| ENTERPRISE_ID | EventAssignmentDEOEnterpriseId | — |
+| EVENT_ASSIGNMENT_ID | EventAssignmentDEOEventAssignmentId | ✅ |
+| EVENT_ID | EventAssignmentDEOEventId | ✅ |
+| LAST_UPDATE_DATE | EventAssignmentDEOLastUpdateDate | — |
+| LAST_UPDATE_LOGIN | EventAssignmentDEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | EventAssignmentDEOLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | EventAssignmentDEOObjectVersionNumber | — |
+| PROCESSED_DATE | EventAssignmentDEOProcessedDate | ✅ |
+| REQUEST_DETAIL_ID | EventAssignmentDEORequestDetailId | — |
+| STATUS | EventAssignmentDEOStatus | ✅ |

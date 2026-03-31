@@ -120,6 +120,87 @@ WHERE  d.INCIDENT_DATE BETWEEN :p_start AND :p_end;
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[hnsinjuredpersonspvo|HNSInjuredPersonsPVO]] (HCM · BICC: 70/72)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CASE_NUMBER | HNSInjuredPersonsPEOCaseNum | ✅ |
+| CLASSIFICATION_CODE | HNSInjuredPersonsPEOClassificationCode | ✅ |
+| CREATED_BY | HNSInjuredPersonsPEOCreatedBy | ✅ |
+| CREATION_DATE | HNSInjuredPersonsPEOCreationDate | ✅ |
+| DAYS_AWAY_FROM_WRK | HNSInjuredPersonsPEODysAwyFrmWrk | ✅ |
+| DELETED_FLAG | HNSInjuredPersonsPEODeletedFlag | ✅ |
+| DESCRIPTION_OF_TREATMENT | HNSInjuredPersonsPEODescrOfTrtmnt | ✅ |
+| DISAB_DAYS_AWY_FRM_WRK_DT | HNSInjuredPersonsPEODsbDysAwyFrmWrkDt | ✅ |
+| EMP_RTN_TO_WRK_FLAG | HNSInjuredPersonsPEOEmpRtnToWrkFlag | ✅ |
+| FACILITY_ADDRESS_LINE1 | HNSInjuredPersonsPEOFacilityAddressLine1 | ✅ |
+| FACILITY_ADDRESS_LINE2 | HNSInjuredPersonsPEOFacilityAddressLine2 | ✅ |
+| FACILITY_CITY | HNSInjuredPersonsPEOFacilityCity | ✅ |
+| FACILITY_COUNTRY | HNSInjuredPersonsPEOFacilityCountry | ✅ |
+| FACILITY_NAME | HNSInjuredPersonsPEOFacilityName | ✅ |
+| FACILITY_STATE | HNSInjuredPersonsPEOFacilityState | ✅ |
+| FACILITY_ZIP_CODE | HNSInjuredPersonsPEOFacilityZipCode | ✅ |
+| FATALITY_DATE | HNSInjuredPersonsPEOFatalityDate | ✅ |
+| HRS_AT_WRK_BEFORE_INJ_ILL | HNSInjuredPersonsPEOHrsAtWrkBfrInjIll | ✅ |
+| ILLNESS_NATURE_CODE | HNSInjuredPersonsPEOIllnessNatureCode | ✅ |
+| INCI_INJ_PERSON_ASSIGN_ID | HNSInjuredPersonsPEOInciInjPerAsnId | — |
+| INCI_INJ_PERSON_ID | HNSInjuredPersonsPEOInciInjPersonId | ✅ |
+| INCIDENT_DETAIL_ID | HNSInjuredPersonsPEOIncidentDetailId | — |
+| INJ_ILL_DEV_OVER_TIME_FLAG | HNSInjuredPersonsPEOInjIllDevOvrTmFlg | ✅ |
+| INJ_ILL_INFRMD_BY_PER_NAME | HNSInjuredPersonsPEOInjIllInfrmdByPerNm | ✅ |
+| INJ_ILL_OCCURED_DATE | HNSInjuredPersonsPEOInjIllOccuredDate | ✅ |
+| INJ_PER_NONEMP_TYPE_CD | HNSInjuredPersonsPEOInjPerNonempTypeCd | ✅ |
+| INJ_PERSON_TYPE_CODE | HNSInjuredPersonsPEOInjPersonTypeCode | ✅ |
+| INJURED_AREA_CODE | HNSInjuredPersonsPEOInjuredAreaCode | ✅ |
+| INJURED_COUNTRY_CODE_NUM | HNSInjuredPersonsPEOInjurdCountryCodNum | ✅ |
+| INJURED_EMAIL | HNSInjuredPersonsPEOInjuredEmail | ✅ |
+| INJURED_NAME | HNSInjuredPersonsPEOInjuredName | ✅ |
+| INJURED_PERSON_ID | HNSInjuredPersonsPEOInjuredPersonId | ✅ |
+| INJURED_PHONENO | HNSInjuredPersonsPEOInjuredPhoneno | ✅ |
+| INJURY_MECHANISM_CODE | HNSInjuredPersonsPEOInjuryMechCode | ✅ |
+| INJURY_MECHANISM_LVL2_CODE | HNSInjuredPersonsPEOInjuryMcnsmLvl2Cd | ✅ |
+| INJURY_MECHANISM_LVL3_CODE | HNSInjuredPersonsPEOInjuryMcnsmLvl3Cd | ✅ |
+| INJURY_MECHANISM_LVL4_CODE | HNSInjuredPersonsPEOInjuryMcnsmLvl4Cd | ✅ |
+| JOB_TRANSFER_FLAG | HNSInjuredPersonsPEOJobTransferFlag | ✅ |
+| LAST_UPDATE_DATE | HNSInjuredPersonsPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | HNSInjuredPersonsPEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | HNSInjuredPersonsPEOLastUpdatedBy | ✅ |
+| LOST_TIME_IN_HRS | HNSInjuredPersonsPEOLostTimeInHrs | ✅ |
+| LOSTTIME_FLAG | HNSInjuredPersonsPEOLosttimeFlag | ✅ |
+| MED_PROF_NAME | HNSInjuredPersonsPEOMedProfName | ✅ |
+| MOD_DUTIES_RESTRICTN_DESCR | HNSInjuredPersonsPEOModDtsRstrctnDescr | ✅ |
+| OBJECT_VERSION_NUMBER | HNSInjuredPersonsPEOObjectVersionNumber | ✅ |
+| PER_INFORMED_INJ_ILL_DATE | HNSInjuredPersonsPEOPerInfrmdInjIllDt | ✅ |
+| PER_UNABLE_TO_WRK_FLAG | HNSInjuredPersonsPEOPerUnblToWrkFlag | ✅ |
+| PERSON_ACTIVITY_DESCR | HNSInjuredPersonsPEOPersonActivityDescr | ✅ |
+| PREV_INJ_ILL_DATE | HNSInjuredPersonsPEOPrevInjIllDate | ✅ |
+| RECORDABLE_FLAG | HNSInjuredPersonsPEORecordableFlag | ✅ |
+| RECORDABLE_TYPE_CD | HNSInjuredPersonsPEORcrdblTypeCd | ✅ |
+| RECURRING_FLAG | HNSInjuredPersonsPEORecurringFlag | ✅ |
+| REGULATOR_NOTIFIED_BY | HNSInjuredPersonsPEORgltrNtfdBy | ✅ |
+| REGULATOR_NOTIFIED_DATE | HNSInjuredPersonsPEORgltrNtfdDt | ✅ |
+| REGULATOR_NOTIFIED_FLAG | HNSInjuredPersonsPEORgltrNtfdFlg | ✅ |
+| REGULATR_NOTIFIED_MEDIUM_CD | HNSInjuredPersonsPEORgltrNtfdMdmCd | ✅ |
+| REPORTABLE_FLAG | HNSInjuredPersonsPEOReportableFlag | ✅ |
+| RTN_TO_WRK_DATE | HNSInjuredPersonsPEORtnToWrkDt | ✅ |
+| RTN_TO_WRK_TYPE_CD | HNSInjuredPersonsPEORtnToWrkTypCd | ✅ |
+| SOURCE_OF_INJURY_CODE | HNSInjuredPersonsPEOSrcOfInjuryCode | ✅ |
+| SOURCE_OF_INJURY_LVL2_CODE | HNSInjuredPersonsPEOSrcOfInjryLvl2Cd | ✅ |
+| SOURCE_OF_INJURY_LVL3_CODE | HNSInjuredPersonsPEOSrcOfInjryLvl3Cd | ✅ |
+| SOURCE_OF_INJURY_LVL4_CODE | HNSInjuredPersonsPEOSrcOfInjryLvl4Cd | ✅ |
+| SYM_FIRST_NOTICED_DATE | HNSInjuredPersonsPEOSymFrstNtcdDt | ✅ |
+| TIME_FINISHED_WORK | HNSInjuredPersonsPEOTimeFnshdWrk | ✅ |
+| TIME_STARTED_WORK | HNSInjuredPersonsPEOTimeStartedWork | ✅ |
+| TREATMENT_FLAG | HNSInjuredPersonsPEOTreatmentFlag | ✅ |
+| TREATMENT_TYPE_CODE | HNSInjuredPersonsPEOTreatmentTypeCode | ✅ |
+| TX_FACILITY_ZIP_CODE | HNSInjuredPersonsPEOTxFacZipCd | ✅ |
+| WORKRELATED_FLAG | HNSInjuredPersonsPEOWorkrelatedFlag | ✅ |
+| XFR_RESTRICTN_DAYS | HNSInjuredPersonsPEOXfrRestrctnDays | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — HNS_INJURED_PERSONS](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/hnsinjuredpersons.html)

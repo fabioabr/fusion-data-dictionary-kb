@@ -109,6 +109,29 @@ ORDER BY pgil.SEQUENCE;
 - Uma grade pode pertencer a múltiplas escadas.
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[gradesinladderpvo|GradesInLadderPVO]] (GL · BICC: 6/14)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_OCCURRENCE_ID | ActionOccurrenceId | — |
+| BUSINESS_GROUP_ID | BusinessGroupId | — |
+| CREATED_BY | CreatedBy | — |
+| CREATION_DATE | CreationDate | — |
+| EFFECTIVE_END_DATE | EffectiveEndDate | ✅ |
+| EFFECTIVE_START_DATE | EffectiveStartDate | ✅ |
+| GRADE_ID | GradeId | ✅ |
+| GRADE_LADDER_ID | GradeLadderId | — |
+| GRADES_IN_LADDER_ID | GradesInLadderId | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | — |
+| LAST_UPDATED_BY | LastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | — |
+| SEQUENCE | Sequence | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — PER_GRADES_IN_LADDERS_F](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/pergradesinladdersf.html)

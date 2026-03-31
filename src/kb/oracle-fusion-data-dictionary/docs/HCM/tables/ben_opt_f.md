@@ -103,6 +103,72 @@ WHERE  ROWNUM <= 100;
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[optionpvo|OptionPVO]] (HCM · BICC: 21/57)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | BusinessGroupId | — |
+| CARRIER_OPT_NAME | CarrierOptName | ✅ |
+| CMBN_PTIP_OPT_ID | CmbnPtipOptId | — |
+| COMPONENT_REASON | ComponentReason | ✅ |
+| CREATED_BY | CreatedBy | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| EFFECTIVE_END_DATE | EffectiveEndDate | ✅ |
+| EFFECTIVE_START_DATE | EffectiveStartDate | ✅ |
+| GLOBAL_FLAG | GlobalFlag | ✅ |
+| GROUP_OPT_ID | GroupOptId | — |
+| INVK_WV_OPT_FLAG | InvkWvOptFlag | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | LastUpdatedBy | ✅ |
+| LEGISLATION_CODE | LegislationCode | ✅ |
+| LEGISLATION_SUBGROUP | LegislationSubgroup | ✅ |
+| MAPPING_TABLE_NAME | MappingTableName | ✅ |
+| MAPPING_TABLE_PK_ID | MappingTablePkId | — |
+| NAME | Name | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | — |
+| OPT_ATTRIBUTE1 | OptAttribute1 | — |
+| OPT_ATTRIBUTE10 | OptAttribute10 | — |
+| OPT_ATTRIBUTE11 | OptAttribute11 | — |
+| OPT_ATTRIBUTE12 | OptAttribute12 | — |
+| OPT_ATTRIBUTE13 | OptAttribute13 | — |
+| OPT_ATTRIBUTE14 | OptAttribute14 | — |
+| OPT_ATTRIBUTE15 | OptAttribute15 | — |
+| OPT_ATTRIBUTE16 | OptAttribute16 | — |
+| OPT_ATTRIBUTE17 | OptAttribute17 | — |
+| OPT_ATTRIBUTE18 | OptAttribute18 | — |
+| OPT_ATTRIBUTE19 | OptAttribute19 | — |
+| OPT_ATTRIBUTE2 | OptAttribute2 | — |
+| OPT_ATTRIBUTE20 | OptAttribute20 | — |
+| OPT_ATTRIBUTE21 | OptAttribute21 | — |
+| OPT_ATTRIBUTE22 | OptAttribute22 | — |
+| OPT_ATTRIBUTE23 | OptAttribute23 | — |
+| OPT_ATTRIBUTE24 | OptAttribute24 | — |
+| OPT_ATTRIBUTE25 | OptAttribute25 | — |
+| OPT_ATTRIBUTE26 | OptAttribute26 | — |
+| OPT_ATTRIBUTE27 | OptAttribute27 | — |
+| OPT_ATTRIBUTE28 | OptAttribute28 | — |
+| OPT_ATTRIBUTE29 | OptAttribute29 | — |
+| OPT_ATTRIBUTE3 | OptAttribute3 | — |
+| OPT_ATTRIBUTE30 | OptAttribute30 | — |
+| OPT_ATTRIBUTE4 | OptAttribute4 | — |
+| OPT_ATTRIBUTE5 | OptAttribute5 | — |
+| OPT_ATTRIBUTE6 | OptAttribute6 | — |
+| OPT_ATTRIBUTE7 | OptAttribute7 | — |
+| OPT_ATTRIBUTE8 | OptAttribute8 | — |
+| OPT_ATTRIBUTE9 | OptAttribute9 | — |
+| OPT_ATTRIBUTE_CATEGORY | OptAttributeCategory | ✅ |
+| OPT_ID | OptId | ✅ |
+| RQD_PERD_ENRT_NENRT_RL | RqdPerdEnrtNenrtRl | — |
+| RQD_PERD_ENRT_NENRT_UOM | RqdPerdEnrtNenrtUom | ✅ |
+| RQD_PERD_ENRT_NENRT_VAL | RqdPerdEnrtNenrtVal | ✅ |
+| SHORT_CODE | ShortCode | ✅ |
+| SHORT_NAME | ShortName | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — BEN_OPT_F](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/benoptf.html)

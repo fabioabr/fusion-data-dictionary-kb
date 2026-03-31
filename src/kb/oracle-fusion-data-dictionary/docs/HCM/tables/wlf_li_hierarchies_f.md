@@ -119,3 +119,56 @@ ORDER BY lh.SEQUENCE;
 
 - [Oracle Docs — WLF_LI_HIERARCHIES_F](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/wlflihierarchiesf.html)
 - [[hcm-module-data-dictionary]] — Dossiê do módulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[coursepvo|CoursePVO]] (HCM · BICC: 8/8)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CHILD_LEARNING_ITEM_ID | LearningItemHierarchyDEOChildLearningItemId | ✅ |
+| EFFECTIVE_END_DATE | LearningItemHierarchyDEOEffectiveEndDate | ✅ |
+| EFFECTIVE_START_DATE | LearningItemHierarchyDEOEffectiveStartDate | ✅ |
+| HIERARCHY_ID | LearningItemHierarchyDEOHierarchyId | ✅ |
+| LEARNING_ITEM_ID | LearningItemHierarchyDEOLearningItemId | ✅ |
+| MANDATORY_FLAG | LearningItemHierarchyDEOMandatoryFlag | ✅ |
+| OBJECT_VERSION_NUMBER | LearningItemHierarchyDEOObjectVersionNumber | ✅ |
+| POSITION | LearningItemHierarchyDEOPosition | ✅ |
+
+### [[hierarchygrandparenttochildpvo|HierarchyGrandParentToChildPVO]] (HCM · BICC: 6/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CHILD_LEARNING_ITEM_ID | ChildLearningItemHierarchyEOChildLearningItemId | ✅ |
+| CHILD_LEARNING_ITEM_ID | GParentLearningItemHierarchyChildLearningItemId | ✅ |
+| EFFECTIVE_END_DATE | ChildLearningItemHierarchyEOEffectiveEndDate | — |
+| EFFECTIVE_END_DATE | GParentLearningItemHierarchyEffectiveEndDate | ✅ |
+| EFFECTIVE_START_DATE | ChildLearningItemHierarchyEOEffectiveStartDate | ✅ |
+| EFFECTIVE_START_DATE | GParentLearningItemHierarchyEffectiveStartDate | ✅ |
+| HIERARCHY_ID | ChildLearningItemHierarchyEOHierarchyId | — |
+| HIERARCHY_ID | GParentLearningItemHierarchyHierarchyId | ✅ |
+| LEARNING_ITEM_ID | ChildLearningItemHierarchyEOLearningItemId | — |
+| LEARNING_ITEM_ID | GParentLearningItemHierarchyLearningItemId | — |
+| OBJECT_VERSION_NUMBER | ChildLearningItemHierarchyEOObjectVersionNumber | — |
+| OBJECT_VERSION_NUMBER | GParentLearningItemHierarchyObjectVersionNumber | — |
+
+### [[sectionhierarchypvo|SectionHierarchyPVO]] (HCM · BICC: 5/14)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CHILD_LEARNING_ITEM_ID | LearningItemHierarchyDEOChildLearningItemId | ✅ |
+| CREATED_BY | LearningItemHierarchyDEOCreatedBy | — |
+| CREATION_DATE | LearningItemHierarchyDEOCreationDate | — |
+| EFFECTIVE_END_DATE | LearningItemHierarchyDEOEffectiveEndDate | ✅ |
+| EFFECTIVE_START_DATE | LearningItemHierarchyDEOEffectiveStartDate | ✅ |
+| ENTERPRISE_ID | LearningItemHierarchyDEOEnterpriseId | — |
+| HIERARCHY_ID | LearningItemHierarchyDEOHierarchyId | ✅ |
+| LAST_UPDATE_DATE | LearningItemHierarchyDEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LearningItemHierarchyDEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | LearningItemHierarchyDEOLastUpdatedBy | — |
+| LEARNING_ITEM_ID | LearningItemHierarchyDEOLearningItemId | — |
+| MANDATORY_FLAG | LearningItemHierarchyDEOMandatoryFlag | — |
+| OBJECT_VERSION_NUMBER | LearningItemHierarchyDEOObjectVersionNumber | — |
+| POSITION | LearningItemHierarchyDEOPosition | — |

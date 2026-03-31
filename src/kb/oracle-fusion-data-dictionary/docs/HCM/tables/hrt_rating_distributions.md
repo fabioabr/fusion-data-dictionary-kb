@@ -107,3 +107,16 @@ WHERE  rd.RATING_MODEL_ID = :p_rating_model_id;
 
 - [Oracle Docs — HRT_RATING_DISTRIBUTIONS](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/hrtratingdistributions.html)
 - [[hcm-module-data-dictionary]] — Dossie do modulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[performancedocratingdistributionpvo|PerformanceDocRatingDistributionPVO]] (HCM · BICC: 2/4)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| DISTRIBUTION_PCT | RatingDistributionPEODistributionPct | ✅ |
+| OBJ_RATING_DIST_ID | RatingDistributionPEOObjRatingDistId | — |
+| RATING_DISTRIBUTION_ID | RatingDistributionPEORatingDistributionId | — |
+| RATING_LEVEL_ID | RatingDistributionPEORatingLevelId | ✅ |

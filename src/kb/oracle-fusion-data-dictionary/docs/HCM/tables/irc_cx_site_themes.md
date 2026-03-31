@@ -104,3 +104,41 @@ WHERE  t.THEME_STATUS = 'ACTIVE';
 
 - [Oracle Docs -- IRC_CX_SITE_THEMES](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/irccxsitethemes.html)
 - [[hcm-module-data-dictionary]] -- Dossie do modulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[careersitepagepvo|CareerSitePagePVO]] (HCM · BICC: 3/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | SiteThemePEOCreatedBy | — |
+| CREATION_DATE | SiteThemePEOCreationDate | — |
+| FOOTER_MODE | SiteThemePEOFooterMode | — |
+| HEADER_MODE | SiteThemePEOHeaderMode | — |
+| LAST_UPDATE_DATE | SiteThemePEOLastUpdateDate | — |
+| LAST_UPDATE_LOGIN | SiteThemePEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | SiteThemePEOLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | SiteThemePEOObjectVersionNumber | — |
+| TEMPLATE_ID | SiteThemePEOTemplateId | — |
+| THEME_ID | SiteThemePEOThemeId | ✅ |
+| THEME_NAME | SiteThemePEOThemeName | ✅ |
+| THEME_NUMBER | SiteThemePEOThemeNumber | ✅ |
+
+### [[careersitepvo|CareerSitePVO]] (HCM · BICC: 3/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | SiteThemePEOCreatedBy | — |
+| CREATION_DATE | SiteThemePEOCreationDate | — |
+| FOOTER_MODE | SiteThemePEOFooterMode | — |
+| HEADER_MODE | SiteThemePEOHeaderMode | — |
+| LAST_UPDATE_DATE | SiteThemePEOLastUpdateDate | — |
+| LAST_UPDATE_LOGIN | SiteThemePEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | SiteThemePEOLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | SiteThemePEOObjectVersionNumber | — |
+| TEMPLATE_ID | SiteThemePEOTemplateId | — |
+| THEME_ID | SiteThemePEOThemeId | ✅ |
+| THEME_NAME | SiteThemePEOThemeName | ✅ |
+| THEME_NUMBER | SiteThemePEOThemeNumber | ✅ |

@@ -64,3 +64,64 @@ updated_at: 2026-03-26
 ## 📎 Uso Típico
 
 (a ser preenchido na etapa 03)
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[supplieraddressbankaccountpvo|SupplierAddressBankAccountPVO]] (PO · BICC: 3/14)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | PartyPayMethodCreatedBy | — |
+| CREATION_DATE | PartyPayMethodCreationDate | — |
+| END_DATE | PartyPayMethodEndDate | ✅ |
+| EXT_PARTY_PMT_MTHD_ID | PartyPayMethodExtPartyPmtMthdId | — |
+| EXT_PMT_PARTY_ID | PartyPayMethodExtPmtPartyId | — |
+| LAST_UPDATE_DATE | PartyPayMethodLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | PartyPayMethodLastUpdateLogin | — |
+| LAST_UPDATED_BY | PartyPayMethodLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | PartyPayMethodObjectVersionNumber | — |
+| PAYMENT_FLOW | PartyPayMethodPaymentFlow | — |
+| PAYMENT_FUNCTION | PartyPayMethodPaymentFunction | — |
+| PAYMENT_METHOD_CODE | PartyPayMethodPaymentMethodCode | — |
+| PRIMARY_FLAG | PartyPayMethodPrimaryFlag | — |
+| START_DATE | PartyPayMethodStartDate | ✅ |
+
+### [[supplierbankaccountpvo|SupplierBankAccountPVO]] (PO · BICC: 3/14)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | PartyPayMethodCreatedBy | — |
+| CREATION_DATE | PartyPayMethodCreationDate | — |
+| END_DATE | PartyPayMethodEndDate | ✅ |
+| EXT_PARTY_PMT_MTHD_ID | PartyPayMethodExtPartyPmtMthdId | — |
+| EXT_PMT_PARTY_ID | PartyPayMethodExtPmtPartyId | — |
+| LAST_UPDATE_DATE | PartyPayMethodLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | PartyPayMethodLastUpdateLogin | — |
+| LAST_UPDATED_BY | PartyPayMethodLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | PartyPayMethodObjectVersionNumber | — |
+| PAYMENT_FLOW | PartyPayMethodPaymentFlow | — |
+| PAYMENT_FUNCTION | PartyPayMethodPaymentFunction | — |
+| PAYMENT_METHOD_CODE | PartyPayMethodPaymentMethodCode | — |
+| PRIMARY_FLAG | PartyPayMethodPrimaryFlag | — |
+| START_DATE | PartyPayMethodStartDate | ✅ |
+
+### [[suppliersitebankaccountpvo|SupplierSiteBankAccountPVO]] (PO · BICC: 3/14)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | PartyPayMethodCreatedBy | — |
+| CREATION_DATE | PartyPayMethodCreationDate | — |
+| END_DATE | PartyPayMethodEndDate | ✅ |
+| EXT_PARTY_PMT_MTHD_ID | PartyPayMethodExtPartyPmtMthdId | — |
+| EXT_PMT_PARTY_ID | PartyPayMethodExtPmtPartyId | — |
+| LAST_UPDATE_DATE | PartyPayMethodLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | PartyPayMethodLastUpdateLogin | — |
+| LAST_UPDATED_BY | PartyPayMethodLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | PartyPayMethodObjectVersionNumber | — |
+| PAYMENT_FLOW | PartyPayMethodPaymentFlow | — |
+| PAYMENT_FUNCTION | PartyPayMethodPaymentFunction | — |
+| PAYMENT_METHOD_CODE | PartyPayMethodPaymentMethodCode | — |
+| PRIMARY_FLAG | PartyPayMethodPrimaryFlag | — |
+| START_DATE | PartyPayMethodStartDate | ✅ |

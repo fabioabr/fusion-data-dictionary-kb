@@ -71,3 +71,151 @@ updated_at: 2026-03-26
 ## 📎 Uso Típico
 
 (a ser preenchido na etapa 03)
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[accountbankaccount|AccountBankAccount]] (AR · BICC: 6/21)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACCT_SITE_USE_ID | PayersAcctSiteUseId | — |
+| BANK_CHARGE_BEARER_CODE | PayersBankChargeBearerCode | ✅ |
+| CREATED_BY | PayersCreatedBy | — |
+| CREATION_DATE | PayersCreationDate | — |
+| CUST_ACCOUNT_ID | PayersCustAccountId | — |
+| DEBIT_ADVICE_DELIVERY_METHOD | PayersDebitAdviceDeliveryMethod | — |
+| DEBIT_ADVICE_EMAIL | PayersDebitAdviceEmail | — |
+| DEBIT_ADVICE_FAX | PayersDebitAdviceFax | — |
+| DIRDEB_INSTRUCTION_CODE | PayersDirdebInstructionCode | ✅ |
+| EXT_PAYER_ID | PayersExtPayerId | — |
+| LAST_UPDATE_DATE | PayersLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | PayersLastUpdateLogin | — |
+| LAST_UPDATED_BY | PayersLastUpdatedBy | — |
+| LOCALINSTR | PayersLocalinstr | ✅ |
+| OBJECT_VERSION_NUMBER | PayersObjectVersionNumber | — |
+| ORG_ID | PayersOrgId | — |
+| ORG_TYPE | PayersOrgType | — |
+| PARTY_ID | PayersPartyId | — |
+| PAYMENT_FUNCTION | PayersPaymentFunction | — |
+| PURPOSE_CODE | PayersPurposeCode | ✅ |
+| SERVICE_LEVEL | PayersServiceLevel | ✅ |
+
+### [[accountcreditcard|AccountCreditCard]] (AR · BICC: 1/18)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACCT_SITE_USE_ID | PayersAcctSiteUseId | — |
+| BANK_CHARGE_BEARER_CODE | PayersBankChargeBearerCode | — |
+| CREATED_BY | PayersCreatedBy | — |
+| CREATION_DATE | PayersCreationDate | — |
+| CUST_ACCOUNT_ID | PayersCustAccountId | — |
+| DEBIT_ADVICE_DELIVERY_METHOD | PayersDebitAdviceDeliveryMethod | — |
+| DEBIT_ADVICE_EMAIL | PayersDebitAdviceEmail | — |
+| DEBIT_ADVICE_FAX | PayersDebitAdviceFax | — |
+| DIRDEB_INSTRUCTION_CODE | PayersDirdebInstructionCode | — |
+| EXT_PAYER_ID | PayersExtPayerId | — |
+| LAST_UPDATE_DATE | PayersLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | PayersLastUpdateLogin | — |
+| LAST_UPDATED_BY | PayersLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | PayersObjectVersionNumber | — |
+| ORG_ID | PayersOrgId | — |
+| ORG_TYPE | PayersOrgType | — |
+| PARTY_ID | PayersPartyId | — |
+| PAYMENT_FUNCTION | PayersPaymentFunction | — |
+
+### [[accountpaymentnotification|AccountPaymentNotification]] (AR · BICC: 5/18)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACCT_SITE_USE_ID | PayersAcctSiteUseId | — |
+| BANK_CHARGE_BEARER_CODE | PayersBankChargeBearerCode | — |
+| CREATED_BY | PayersCreatedBy | — |
+| CREATION_DATE | PayersCreationDate | — |
+| CUST_ACCOUNT_ID | PayersCustAccountId | — |
+| DEBIT_ADVICE_DELIVERY_METHOD | PayersDebitAdviceDeliveryMethod | ✅ |
+| DEBIT_ADVICE_EMAIL | PayersDebitAdviceEmail | ✅ |
+| DEBIT_ADVICE_FAX | PayersDebitAdviceFax | ✅ |
+| DIRDEB_INSTRUCTION_CODE | PayersDirdebInstructionCode | — |
+| EXT_PAYER_ID | ExtPayerId | ✅ |
+| LAST_UPDATE_DATE | PayersLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | PayersLastUpdateLogin | — |
+| LAST_UPDATED_BY | PayersLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | PayersObjectVersionNumber | — |
+| ORG_ID | PayersOrgId | — |
+| ORG_TYPE | PayersOrgType | — |
+| PARTY_ID | PayersPartyId | — |
+| PAYMENT_FUNCTION | PayersPaymentFunction | — |
+
+### [[sitebankaccount|SiteBankAccount]] (AR · BICC: 6/21)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACCT_SITE_USE_ID | PayersAcctSiteUseId | — |
+| BANK_CHARGE_BEARER_CODE | PayersBankChargeBearerCode | ✅ |
+| CREATED_BY | PayersCreatedBy | — |
+| CREATION_DATE | PayersCreationDate | — |
+| CUST_ACCOUNT_ID | PayersCustAccountId | — |
+| DEBIT_ADVICE_DELIVERY_METHOD | PayersDebitAdviceDeliveryMethod | — |
+| DEBIT_ADVICE_EMAIL | PayersDebitAdviceEmail | — |
+| DEBIT_ADVICE_FAX | PayersDebitAdviceFax | — |
+| DIRDEB_INSTRUCTION_CODE | PayersDirdebInstructionCode | ✅ |
+| EXT_PAYER_ID | PayersExtPayerId | — |
+| LAST_UPDATE_DATE | PayersLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | PayersLastUpdateLogin | — |
+| LAST_UPDATED_BY | PayersLastUpdatedBy | — |
+| LOCALINSTR | PayersLocalinstr | ✅ |
+| OBJECT_VERSION_NUMBER | PayersObjectVersionNumber | — |
+| ORG_ID | PayersOrgId | — |
+| ORG_TYPE | PayersOrgType | — |
+| PARTY_ID | PayersPartyId | — |
+| PAYMENT_FUNCTION | PayersPaymentFunction | — |
+| PURPOSE_CODE | PayersPurposeCode | ✅ |
+| SERVICE_LEVEL | PayersServiceLevel | ✅ |
+
+### [[sitecreditcard|SiteCreditCard]] (AR · BICC: 1/18)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACCT_SITE_USE_ID | PayersAcctSiteUseId | — |
+| BANK_CHARGE_BEARER_CODE | PayersBankChargeBearerCode | — |
+| CREATED_BY | PayersCreatedBy | — |
+| CREATION_DATE | PayersCreationDate | — |
+| CUST_ACCOUNT_ID | PayersCustAccountId | — |
+| DEBIT_ADVICE_DELIVERY_METHOD | PayersDebitAdviceDeliveryMethod | — |
+| DEBIT_ADVICE_EMAIL | PayersDebitAdviceEmail | — |
+| DEBIT_ADVICE_FAX | PayersDebitAdviceFax | — |
+| DIRDEB_INSTRUCTION_CODE | PayersDirdebInstructionCode | — |
+| EXT_PAYER_ID | PayersExtPayerId | — |
+| LAST_UPDATE_DATE | PayersLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | PayersLastUpdateLogin | — |
+| LAST_UPDATED_BY | PayersLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | PayersObjectVersionNumber | — |
+| ORG_ID | PayersOrgId | — |
+| ORG_TYPE | PayersOrgType | — |
+| PARTY_ID | PayersPartyId | — |
+| PAYMENT_FUNCTION | PayersPaymentFunction | — |
+
+### [[sitepaymentnotification|SitePaymentNotification]] (AR · BICC: 5/18)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACCT_SITE_USE_ID | PayersAcctSiteUseId | — |
+| BANK_CHARGE_BEARER_CODE | PayersBankChargeBearerCode | — |
+| CREATED_BY | PayersCreatedBy | — |
+| CREATION_DATE | PayersCreationDate | — |
+| CUST_ACCOUNT_ID | PayersCustAccountId | — |
+| DEBIT_ADVICE_DELIVERY_METHOD | PayersDebitAdviceDeliveryMethod | ✅ |
+| DEBIT_ADVICE_EMAIL | PayersDebitAdviceEmail | ✅ |
+| DEBIT_ADVICE_FAX | PayersDebitAdviceFax | ✅ |
+| DIRDEB_INSTRUCTION_CODE | PayersDirdebInstructionCode | — |
+| EXT_PAYER_ID | ExtPayerId | ✅ |
+| LAST_UPDATE_DATE | PayersLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | PayersLastUpdateLogin | — |
+| LAST_UPDATED_BY | PayersLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | PayersObjectVersionNumber | — |
+| ORG_ID | PayersOrgId | — |
+| ORG_TYPE | PayersOrgType | — |
+| PARTY_ID | PayersPartyId | — |
+| PAYMENT_FUNCTION | PayersPaymentFunction | — |

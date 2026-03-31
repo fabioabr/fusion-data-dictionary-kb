@@ -64,3 +64,26 @@ updated_at: 2026-03-26
 ## 📎 Uso Típico
 
 (a ser preenchido na etapa 03)
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[hcmapprovalstaskp1|HcmApprovalsTaskP1]] (AP · BICC: 6/14)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ASSIGNEE | FndBpmTaskAssigneePEOAssignee | ✅ |
+| ASSIGNEE_GROUP_OR_ROLE | FndBpmTaskAssigneePEOAssigneeGroupOrRole | ✅ |
+| ASSIGNEE_TYPE | FndBpmTaskAssigneePEOAssigneeType | ✅ |
+| CREATED_BY | FndBpmTaskAssigneePEOCreatedBy4 | — |
+| CREATION_DATE | FndBpmTaskAssigneePEOCreationDate4 | — |
+| DOMAIN | FndBpmTaskAssigneePEODomain5 | — |
+| INITIATED_DATE | FndBpmTaskAssigneePEOInitiatedDate5 | — |
+| LAST_UPDATE_DATE | FndBpmTaskAssigneePEOLastUpdateDate4 | ✅ |
+| LAST_UPDATE_LOGIN | FndBpmTaskAssigneePEOLastUpdateLogin4 | — |
+| LAST_UPDATED_BY | FndBpmTaskAssigneePEOLastUpdatedBy4 | — |
+| ORIGINAL_ASSIGNEE_USER | FndBpmTaskAssigneePEOOriginalAssigneeUser | ✅ |
+| SEQUENCE | FndBpmTaskAssigneePEOSequence | ✅ |
+| TASK_ID | FndBpmTaskAssigneePEOTaskId5 | — |
+| VERSION | FndBpmTaskAssigneePEOVersion1 | — |

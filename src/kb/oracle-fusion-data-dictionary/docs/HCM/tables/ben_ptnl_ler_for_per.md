@@ -38,7 +38,6 @@ updated_at: 2026-03-25
 
 Armazena os **eventos de vida potenciais** detectados para cada pessoa que ainda não foram processados ou confirmados.
 
-
 ---
 
 ## 🧠 Propósito de Negócio
@@ -98,6 +97,90 @@ WHERE  ROWNUM <= 100;
 
 - Consultar documentação oficial Oracle para detalhes de uso.
 - Tabela do módulo Benefits (Eventos de Vida Potenciais por Pessoa).
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[personpotentiallifeeventpvo|PersonPotentialLifeEventPVO]] (HCM · BICC: 18/32)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BENEFIT_RELATION_ID | BenefitRelationId | — |
+| BUSINESS_GROUP_ID | BusinessGroupId | — |
+| CREATED_BY | CreatedBy | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| CSD_BY_PTNL_LER_FOR_PER_ID | CsdByPtnlLerForPerId | — |
+| DTCTD_DT | DtctdDt | ✅ |
+| ENRT_PERD_ID | EnrtPerdId | — |
+| JOB_DEFINITION_NAME | JobDefinitionName | — |
+| JOB_DEFINITION_PACKAGE | JobDefinitionPackage | — |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | LastUpdatedBy | ✅ |
+| LER_ID | LerId | ✅ |
+| LER_TYPE_CD | LerTypeCd | ✅ |
+| LF_EVT_OCRD_DT | LfEvtOcrdDt | ✅ |
+| MNL_DT | MnlDt | ✅ |
+| MNLO_DT | MnloDt | — |
+| NTFN_DT | NtfnDt | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | — |
+| PERSON_ID | PersonId | — |
+| PROCD_DT | ProcdDt | ✅ |
+| PROD_CD | ProdCd | ✅ |
+| PROGRAM_APP_NAME | ProgramAppName | — |
+| PROGRAM_NAME | ProgramName | — |
+| PROGRAM_UPDATE_DATE | ProgramUpdateDate | — |
+| PTNL_LER_FOR_PER_ID | PtnlLerForPerId | ✅ |
+| PTNL_LER_FOR_PER_SRC_CD | PtnlLerForPerSrcCd | ✅ |
+| PTNL_LER_FOR_PER_STAT_CD | PtnlLerForPerStatCd | ✅ |
+| REQUEST_ID | RequestId | — |
+| TRGR_TABLE_PK_ID | TrgrTablePkId | — |
+| UNPROCD_DT | UnprocdDt | ✅ |
+| VOIDD_DT | VoiddDt | ✅ |
+
+### [[potentiallifeeventsextractpvo|PotentialLifeEventsExtractPVO]] (HCM · BICC: 38/38)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BENEFIT_RELATION_ID | BenefitRelationId | ✅ |
+| BUSINESS_GROUP_ID | BusinessGroupId | ✅ |
+| CLPSED_BY | ClpsedBy | ✅ |
+| CREATED_BY | CreatedBy | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| CSD_BY_PTNL_LER_FOR_PER_ID | CsdByPtnlLerForPerId | ✅ |
+| DTCTD_DT | DtctdDt | ✅ |
+| ENRT_PERD_ID | EnrtPerdId | ✅ |
+| JOB_DEFINITION_NAME | JobDefinitionName | ✅ |
+| JOB_DEFINITION_PACKAGE | JobDefinitionPackage | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | LastUpdatedBy | ✅ |
+| LEGAL_ENTITY_ID | LegalEntityId | ✅ |
+| LER_ID | LerId | ✅ |
+| LER_TYPE_CD | LerTypeCd | ✅ |
+| LF_EVT_OCRD_DT | LfEvtOcrdDt | ✅ |
+| MNL_DT | MnlDt | ✅ |
+| MNLO_DT | MnloDt | ✅ |
+| NTFN_DT | NtfnDt | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | ✅ |
+| PERSON_ID | PersonId | ✅ |
+| PROCD_DT | ProcdDt | ✅ |
+| PROD_CD | ProdCd | ✅ |
+| PROGRAM_APP_NAME | ProgramAppName | ✅ |
+| PROGRAM_NAME | ProgramName | ✅ |
+| PROGRAM_UPDATE_DATE | ProgramUpdateDate | ✅ |
+| PTNL_ADDNL_CHAR1 | PtnlAddnlChar1 | ✅ |
+| PTNL_ADDNL_CHAR2 | PtnlAddnlChar2 | ✅ |
+| PTNL_ADDNL_CHAR3 | PtnlAddnlChar3 | ✅ |
+| PTNL_ADDNL_NUMBER1 | PtnlAddnlNumber1 | ✅ |
+| PTNL_LER_FOR_PER_ID | PtnlLerForPerId | ✅ |
+| PTNL_LER_FOR_PER_SRC_CD | PtnlLerForPerSrcCd | ✅ |
+| PTNL_LER_FOR_PER_STAT_CD | PtnlLerForPerStatCd | ✅ |
+| REQUEST_ID | RequestId | ✅ |
+| TRGR_TABLE_PK_ID | TrgrTablePkId | ✅ |
+| UNPROCD_DT | UnprocdDt | ✅ |
+| VOIDD_DT | VoiddDt | ✅ |
 
 ---
 

@@ -101,6 +101,18 @@ WHERE  rr.PAYROLL_REL_ACTION_ID = :p_rel_action_id;
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[payrollruncosting|PayrollRunCosting]] (GL)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CALC_BREAKDOWN_ID | RunResultPEOCalcBreakdownId | — |
+| RUN_RESULT_ID | RunResultPEORunResultId | — |
+| TAX_UNIT_ID | RunResultPEOTaxUnitId | — |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — PAY_RUN_RESULTS](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/payrunresults.html)

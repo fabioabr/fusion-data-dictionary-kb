@@ -39,7 +39,6 @@ Tabela base que armazena os valores associados aos nomes alternativos de entrada
 > [!note] Sufixo _B
 > O sufixo `_B` indica tabela **base** — contém os dados não traduzíveis. A tabela correspondente `_TL` armazena as traduções.
 
-
 ---
 
 ## 🧠 Propósito de Negócio
@@ -105,6 +104,65 @@ WHERE  NVL(t.ENABLED_FLAG, 'Y') = 'Y'
 
 - Tabela base: contém dados não traduzíveis. Utilize a view `_VL` correspondente para consultas com tradução.
 - Área funcional: Time Entry dentro do Oracle Fusion Cloud HCM.
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[templatelayoutcompdisplayvaluepvo|TemplateLayoutCompDisplayValuePVO]] (GL · BICC: 41/50)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ATTRIBUTE1 | AltNameValsBPEOAttribute1 | ✅ |
+| ATTRIBUTE10 | AltNameValsBPEOAttribute10 | ✅ |
+| ATTRIBUTE11 | AltNameValsBPEOAttribute11 | ✅ |
+| ATTRIBUTE12 | AltNameValsBPEOAttribute12 | ✅ |
+| ATTRIBUTE13 | AltNameValsBPEOAttribute13 | ✅ |
+| ATTRIBUTE14 | AltNameValsBPEOAttribute14 | ✅ |
+| ATTRIBUTE15 | AltNameValsBPEOAttribute15 | ✅ |
+| ATTRIBUTE16 | AltNameValsBPEOAttribute16 | ✅ |
+| ATTRIBUTE17 | AltNameValsBPEOAttribute17 | ✅ |
+| ATTRIBUTE18 | AltNameValsBPEOAttribute18 | ✅ |
+| ATTRIBUTE19 | AltNameValsBPEOAttribute19 | ✅ |
+| ATTRIBUTE2 | AltNameValsBPEOAttribute2 | ✅ |
+| ATTRIBUTE20 | AltNameValsBPEOAttribute20 | ✅ |
+| ATTRIBUTE21 | AltNameValsBPEOAttribute21 | ✅ |
+| ATTRIBUTE22 | AltNameValsBPEOAttribute22 | ✅ |
+| ATTRIBUTE23 | AltNameValsBPEOAttribute23 | ✅ |
+| ATTRIBUTE24 | AltNameValsBPEOAttribute24 | ✅ |
+| ATTRIBUTE25 | AltNameValsBPEOAttribute25 | ✅ |
+| ATTRIBUTE26 | AltNameValsBPEOAttribute26 | ✅ |
+| ATTRIBUTE27 | AltNameValsBPEOAttribute27 | ✅ |
+| ATTRIBUTE28 | AltNameValsBPEOAttribute28 | ✅ |
+| ATTRIBUTE29 | AltNameValsBPEOAttribute29 | ✅ |
+| ATTRIBUTE3 | AltNameValsBPEOAttribute3 | ✅ |
+| ATTRIBUTE30 | AltNameValsBPEOAttribute30 | ✅ |
+| ATTRIBUTE4 | AltNameValsBPEOAttribute4 | ✅ |
+| ATTRIBUTE5 | AltNameValsBPEOAttribute5 | ✅ |
+| ATTRIBUTE6 | AltNameValsBPEOAttribute6 | ✅ |
+| ATTRIBUTE7 | AltNameValsBPEOAttribute7 | ✅ |
+| ATTRIBUTE8 | AltNameValsBPEOAttribute8 | ✅ |
+| ATTRIBUTE9 | AltNameValsBPEOAttribute9 | ✅ |
+| CREATED_BY | AltNameValsBPEOCreatedBy | ✅ |
+| CREATION_DATE | AltNameValsBPEOCreationDate | ✅ |
+| DATE_FROM | AltNameValsBPEODateFrom | — |
+| DATE_TO | AltNameValsBPEODateTo | — |
+| DISPLAY_SEQUENCE | TeAltNameValsBPEODisplaySequence | ✅ |
+| ENABLED_FLAG | AltNameValsBPEOEnabledFlag | ✅ |
+| ENTERPRISE_ID | AltNameValsBPEOEnterpriseId | — |
+| EXISTING_FLAG | AltNameValsBPEOExistingFlag | — |
+| LAST_UPDATE_DATE | AltNameValsBPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | AltNameValsBPEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | AltNameValsBPEOLastUpdatedBy | ✅ |
+| MANAGER_ACTION_CD | TeAltNameValsBPEOManagerActionCd | ✅ |
+| MODULE_ID | AltNameValsBPEOModuleId | — |
+| NAME | AltNameValsBPEOName | — |
+| OBJECT_VERSION_NUMBER | AltNameValsBPEOObjectVersionNumber | — |
+| SEED_DATA_SOURCE | AltNameValsBPEOSeedDataSource | — |
+| TE_ALT_NAME_ID | AltNameValsBPEOTeAltNameId | — |
+| TE_ALT_NAME_VAL_ID | AltNameValsBPEOTeAltNameValId | ✅ |
+| WFM_EVENT_IN_OUT | AltNameValsBPEOWfmEventInOut | ✅ |
+| WORKER_ACTION_CD | TeAltNameValsBPEOWorkerActionCd | ✅ |
 
 ---
 

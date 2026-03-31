@@ -116,6 +116,87 @@ WHERE  ed.INCIDENT_ID = :p_incident_id;
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[hnsspillreleventpvo|HNSSpillRelEventPVO]] (HCM · BICC: 21/72)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| AMOUNT_RECOVERED | HNSSpillRelEventPEOAmountRecovrd | ✅ |
+| AMOUNT_RECOVERED_UNIT_CD | HNSSpillRelEventPEOAmntRcvrdUntCd | ✅ |
+| AMOUNT_SPILLED | HNSSpillRelEventPEOAmountSpilled | ✅ |
+| AMOUNT_SPILLED_UNIT_CD | HNSSpillRelEventPEOAmntSplldUntCd | ✅ |
+| ATTRIBUTE1 | HNSSpillRelEventPEOAttribute1 | — |
+| ATTRIBUTE10 | HNSSpillRelEventPEOAttribute10 | — |
+| ATTRIBUTE11 | HNSSpillRelEventPEOAttribute11 | — |
+| ATTRIBUTE12 | HNSSpillRelEventPEOAttribute12 | — |
+| ATTRIBUTE13 | HNSSpillRelEventPEOAttribute13 | — |
+| ATTRIBUTE14 | HNSSpillRelEventPEOAttribute14 | — |
+| ATTRIBUTE15 | HNSSpillRelEventPEOAttribute15 | — |
+| ATTRIBUTE16 | HNSSpillRelEventPEOAttribute16 | — |
+| ATTRIBUTE17 | HNSSpillRelEventPEOAttribute17 | — |
+| ATTRIBUTE18 | HNSSpillRelEventPEOAttribute18 | — |
+| ATTRIBUTE19 | HNSSpillRelEventPEOAttribute19 | — |
+| ATTRIBUTE2 | HNSSpillRelEventPEOAttribute2 | — |
+| ATTRIBUTE20 | HNSSpillRelEventPEOAttribute20 | — |
+| ATTRIBUTE21 | HNSSpillRelEventPEOAttribute21 | — |
+| ATTRIBUTE22 | HNSSpillRelEventPEOAttribute22 | — |
+| ATTRIBUTE23 | HNSSpillRelEventPEOAttribute23 | — |
+| ATTRIBUTE24 | HNSSpillRelEventPEOAttribute24 | — |
+| ATTRIBUTE25 | HNSSpillRelEventPEOAttribute25 | — |
+| ATTRIBUTE26 | HNSSpillRelEventPEOAttribute26 | — |
+| ATTRIBUTE27 | HNSSpillRelEventPEOAttribute27 | — |
+| ATTRIBUTE28 | HNSSpillRelEventPEOAttribute28 | — |
+| ATTRIBUTE29 | HNSSpillRelEventPEOAttribute29 | — |
+| ATTRIBUTE3 | HNSSpillRelEventPEOAttribute3 | — |
+| ATTRIBUTE30 | HNSSpillRelEventPEOAttribute30 | — |
+| ATTRIBUTE4 | HNSSpillRelEventPEOAttribute4 | — |
+| ATTRIBUTE5 | HNSSpillRelEventPEOAttribute5 | — |
+| ATTRIBUTE6 | HNSSpillRelEventPEOAttribute6 | — |
+| ATTRIBUTE7 | HNSSpillRelEventPEOAttribute7 | — |
+| ATTRIBUTE8 | HNSSpillRelEventPEOAttribute8 | — |
+| ATTRIBUTE9 | HNSSpillRelEventPEOAttribute9 | — |
+| ATTRIBUTE_CATEGORY | HNSSpillRelEventPEOAttrCategory | — |
+| ATTRIBUTE_NUMBER1 | HNSSpillRelEventPEOAttrNumber1 | — |
+| ATTRIBUTE_NUMBER10 | HNSSpillRelEventPEOAttrNumber10 | — |
+| ATTRIBUTE_NUMBER2 | HNSSpillRelEventPEOAttrNumber2 | — |
+| ATTRIBUTE_NUMBER3 | HNSSpillRelEventPEOAttrNumber3 | — |
+| ATTRIBUTE_NUMBER4 | HNSSpillRelEventPEOAttrNumber4 | — |
+| ATTRIBUTE_NUMBER5 | HNSSpillRelEventPEOAttrNumber5 | — |
+| ATTRIBUTE_NUMBER6 | HNSSpillRelEventPEOAttrNumber6 | — |
+| ATTRIBUTE_NUMBER7 | HNSSpillRelEventPEOAttrNumber7 | — |
+| ATTRIBUTE_NUMBER8 | HNSSpillRelEventPEOAttrNumber8 | — |
+| ATTRIBUTE_NUMBER9 | HNSSpillRelEventPEOAttrNumber9 | — |
+| ATTRIBUTE_TIMESTAMP1 | HNSSpillRelEventPEOAttrTimestamp1 | — |
+| ATTRIBUTE_TIMESTAMP10 | HNSSpillRelEventPEOAttrTimestamp10 | — |
+| ATTRIBUTE_TIMESTAMP2 | HNSSpillRelEventPEOAttrTimestamp2 | — |
+| ATTRIBUTE_TIMESTAMP3 | HNSSpillRelEventPEOAttrTimestamp3 | — |
+| ATTRIBUTE_TIMESTAMP4 | HNSSpillRelEventPEOAttrTimestamp4 | — |
+| ATTRIBUTE_TIMESTAMP5 | HNSSpillRelEventPEOAttrTimestamp5 | — |
+| ATTRIBUTE_TIMESTAMP6 | HNSSpillRelEventPEOAttrTimestamp6 | — |
+| ATTRIBUTE_TIMESTAMP7 | HNSSpillRelEventPEOAttrTimestamp7 | — |
+| ATTRIBUTE_TIMESTAMP8 | HNSSpillRelEventPEOAttrTimestamp8 | — |
+| ATTRIBUTE_TIMESTAMP9 | HNSSpillRelEventPEOAttrTimestamp9 | — |
+| CLEANUP_TEAM_NOTIFIED | HNSSpillRelEventPEOClnupTeamNtfd | ✅ |
+| CLEANUP_TEAM_NOTIFIED_AT | HNSSpillRelEventPEOClnupTeamNtfdAt | ✅ |
+| CREATED_BY | HNSSpillRelEventPEOCreatedBy | ✅ |
+| CREATION_DATE | HNSSpillRelEventPEOCreationDate | ✅ |
+| DELETED_FLAG | HNSSpillRelEventPEODeletedFlag | ✅ |
+| INCIDENT_DETAIL_ID | HNSSpillRelEventPEOIncDetailId | ✅ |
+| LAST_UPDATE_DATE | HNSSpillRelEventPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | HNSSpillRelEventPEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | HNSSpillRelEventPEOLastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | HNSSpillRelEventPEOObjVerNumber | ✅ |
+| REPLN_SPILL_KIT_FLAG | HNSSpillRelEventPEOReplnSpillKitFlg | ✅ |
+| SPILL_POSSIBLE_CAUSE_CODE | HNSSpillRelEventPEOSpillPsblCauseCode | ✅ |
+| SPILL_REL_EVT_DETAIL_ID | HNSSpillRelEventPEOSplRelEvtDtlId | ✅ |
+| SPILL_RELEASE_CODE | HNSSpillRelEventPEOSplReleaseCode | ✅ |
+| SPILL_SOURCE_CODE | HNSSpillRelEventPEOSpillSrcCode | ✅ |
+| SPILLKIT_DEPLOYED_FLAG | HNSSpillRelEventPEOSpillkitDeplFlag | ✅ |
+| WHAT_WAS_SPILLED_OR_RELEASED | HNSSpillRelEventPEOWhatWasSpldOrRlsd | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — HNS_SPILL_REL_EVT_DETAIL](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/hnsspillrelevtdetail.html)

@@ -232,3 +232,659 @@ updated_at: 2026-03-26
 ## 📎 Uso Típico
 
 (a ser preenchido na etapa 03)
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[actualhourspvo|ActualHoursPVO]] (OTHER)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CARRYING_OUT_ORGANIZATION_ID | ProjectBasePEOCarryingOutOrganizationId | — |
+| ORG_ID | ProjectBasePEOOrgId | — |
+| PROJECT_ID | ProjectBasePEOProjectId | — |
+| PROJECT_UNIT_ID | ProjectBasePEOProjectUnitId | — |
+
+### [[availassignpvo|AvailAssignPVO]] (HCM)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CARRYING_OUT_ORGANIZATION_ID | ProjectBasePEOCarryingOutOrganizationId | — |
+| ORG_ID | ProjectBasePEOOrgId | — |
+| PROJECT_ID | ProjectBasePEOProjectId | — |
+| PROJECT_UNIT_ID | ProjectBasePEOProjectUnitId | — |
+
+### [[contractheaderlinesall|ContractHeaderLinesAll]] (OTHER)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| PROJECT_ID | ProjectBasePEOProjectId | — |
+| SEGMENT1 | ProjectBasePEOSegment1 | — |
+
+### [[contractheaderlinesallunsec|ContractHeaderLinesAllUnsec]] (OTHER)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| PROJECT_ID | ProjectBasePEOProjectId | — |
+| SEGMENT1 | ProjectBasePEOSegment1 | — |
+
+### [[contractheaderlinesp|ContractHeaderLinesP]] (OTHER · BICC: 1/2)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| PROJECT_ID | ProjectBasePEOProjectId | — |
+| SEGMENT1 | ProjectBasePEOSegment1 | ✅ |
+
+### [[contractheaderlinesrefp|ContractHeaderLinesRefP]] (OTHER · BICC: 1/2)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| PROJECT_ID | ProjectBasePEOProjectId | — |
+| SEGMENT1 | ProjectBasePEOSegment1 | ✅ |
+
+### [[controlbudgetpvo|ControlBudgetPVO]] (OTHER)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| PROJECT_ID | ProjectBaseProjectId | — |
+| SEGMENT1 | ProjectBaseSegment1 | — |
+
+### [[epsfactpvo|EPSFactPVO]] (OTHER)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CARRYING_OUT_ORGANIZATION_ID | CarryingOutOrganizationId | — |
+| ORG_ID | OrgId | — |
+| PROJECT_ID | ProjectId | — |
+
+### [[expenditureitempvo|ExpenditureItemPVO]] (OTHER · BICC: 1/10)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CARRYING_OUT_ORGANIZATION_ID | ProjectBasePEOCarryingOutOrganizationId | — |
+| CREATED_BY | ProjectBasePEOCreatedBy | — |
+| CREATION_DATE | ProjectBasePEOCreationDate | — |
+| LAST_UPDATE_DATE | ProjectBasePEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ProjectBasePEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | ProjectBasePEOLastUpdatedBy | — |
+| LEGAL_ENTITY_ID | ProjectBasePEOLegalEntityId | — |
+| ORG_ID | ProjectBasePEOOrgId | — |
+| PROJECT_ID | ProjectBasePEOProjectId | — |
+| PROJECT_UNIT_ID | ProjectBasePEOProjectUnitId | — |
+
+### [[expenditureitemrefpvo|ExpenditureItemRefPVO]] (OTHER · BICC: 1/10)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CARRYING_OUT_ORGANIZATION_ID | ProjectBasePEOCarryingOutOrganizationId | — |
+| CREATED_BY | ProjectBasePEOCreatedBy | — |
+| CREATION_DATE | ProjectBasePEOCreationDate | — |
+| LAST_UPDATE_DATE | ProjectBasePEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ProjectBasePEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | ProjectBasePEOLastUpdatedBy | — |
+| LEGAL_ENTITY_ID | ProjectBasePEOLegalEntityId | — |
+| ORG_ID | ProjectBasePEOOrgId | — |
+| PROJECT_ID | ProjectBasePEOProjectId | — |
+| PROJECT_UNIT_ID | ProjectBasePEOProjectUnitId | — |
+
+### [[invoicedistributionpvo|InvoiceDistributionPVO]] (AP)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CARRYING_OUT_ORGANIZATION_ID | TransProjectPEOCarryingOutOrganizationId | — |
+| ORG_ID | TransProjectPEOOrgId | — |
+| PROJECT_ID | TransProjectPEOProjectId | — |
+| PROJECT_UNIT_ID | TransProjectPEOProjectUnitId | — |
+
+### [[invoicelinepvo|InvoiceLinePVO]] (AP · BICC: 1/2)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| PROJECT_ID | ProjectProjectId | — |
+| SEGMENT1 | ProjectSegment1 | ✅ |
+
+### [[pjeissue|PjeIssue]] (OTHER)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CARRYING_OUT_ORGANIZATION_ID | ProjectBasePEOCarryingOutOrganizationId | — |
+| ORG_ID | ProjectBasePEOOrgId | — |
+| PROJECT_ID | ProjectBasePEOProjectId | — |
+| PROJECT_UNIT_ID | ProjectBasePEOProjectUnitId | — |
+
+### [[pjsactualcostsp1|PjsActualCostsP1]] (HCM)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CARRYING_OUT_ORGANIZATION_ID | ProjectPEOCarryingOutOrgId | — |
+| ORG_ID | ProjectPEOOrgId | — |
+| PROJECT_ID | ProjectPEOProjectId | — |
+
+### [[pjscommitmentcostsp1|PjsCommitmentCostsP1]] (HCM)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CARRYING_OUT_ORGANIZATION_ID | ProjectBasePEOCarryingOutOrgId | — |
+| ORG_ID | ProjectBasePEOOrgId | — |
+| PROJECT_ID | ProjectBasePEOProjectId | — |
+
+### [[pjsrbselementscfp1|PjsRbsElementsCFP1]] (HCM)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| PROJECT_ID | ProjectBasePEOProjectId | — |
+
+### [[project|Project]] (OTHER · BICC: 40/92)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTUAL_AS_OF_DATE | ProjectBasePEOActualAsOfDate | — |
+| ACTUAL_DURATION | ProjectBasePEOActualDuration | — |
+| ACTUAL_FINISH_DATE | ProjectBasePEOActualFinishDate | — |
+| ACTUAL_START_DATE | ProjectBasePEOActualStartDate | ✅ |
+| ALLOW_CROSS_CHARGE_FLAG | ProjectBasePEOAllowCrossChargeFlag | ✅ |
+| ASSET_ALLOCATION_METHOD | ProjectBasePEOAssetAllocationMethod | ✅ |
+| BASELINE_AS_OF_DATE | ProjectBasePEOBaselineAsOfDate | — |
+| BASELINE_DURATION | ProjectBasePEOBaselineDuration | — |
+| BASELINE_FINISH_DATE | ProjectBasePEOBaselineFinishDate | — |
+| BASELINE_START_DATE | ProjectBasePEOBaselineStartDate | — |
+| BUDGETARY_CONTROL_FLAG | ProjectBasePEOBudgetaryControlFlag | ✅ |
+| CAPITAL_EVENT_PROCESSING | ProjectBasePEOCapitalEventProcessing | ✅ |
+| CARRYING_OUT_ORGANIZATION_ID | ProjectBasePEOCarryingOutOrganizationId | ✅ |
+| CC_PROCESS_LABOR_FLAG | ProjectBasePEOCcProcessLaborFlag | ✅ |
+| CC_PROCESS_NL_FLAG | ProjectBasePEOCcProcessNlFlag | ✅ |
+| CINT_ELIGIBLE_FLAG | ProjectBasePEOCintEligibleFlag | ✅ |
+| CINT_RATE_SCH_ID | ProjectBasePEOCintRateSchId | — |
+| CINT_STOP_DATE | ProjectBasePEOCintStopDate | — |
+| CLIN_LINKED_CODE | ProjectBasePEOClinLinkedCode | ✅ |
+| CLOSED_DATE | ProjectBasePEOClosedDate | ✅ |
+| COMPLETION_DATE | ProjectBasePEOCompletionDate | ✅ |
+| COST_IND_RATE_SCH_ID | ProjectBasePEOCostIndRateSchId | — |
+| COST_IND_SCH_FIXED_DATE | ProjectBasePEOCostIndSchFixedDate | — |
+| CREATED_BY | ProjectBasePEOCreatedBy | ✅ |
+| CREATED_FROM_PROJECT_ID | ProjectBasePEOCreatedFromProjectId | — |
+| CREATION_DATE | ProjectBasePEOCreationDate | ✅ |
+| CURRENCY_CONV_DATE | ProjectBasePEOCurrencyConvDate | — |
+| CURRENCY_CONV_DATE_TYPE_CODE | ProjectBasePEOCurrencyConvDateTypeCode | — |
+| CURRENCY_CONV_RATE_TYPE | ProjectBasePEOCurrencyConvRateType | ✅ |
+| EARLY_FINISH_DATE | ProjectBasePEOEarlyFinishDate | — |
+| EARLY_START_DATE | ProjectBasePEOEarlyStartDate | — |
+| ENABLED_FLAG | ProjectBasePEOEnabledFlag | — |
+| EXPECTED_APPROVAL_DATE | ProjectBasePEOExpectedApprovalDate | — |
+| EXTERNAL_PROJECT_ID | ProjectBasePEOExternalProjectId | ✅ |
+| HOURS_PER_DAY | ProjectBasePEOHoursPerDay | ✅ |
+| IC_CLIN_LINKED_CODE | ProjectBasePEOIcClinLinkedCode | — |
+| INTEGRATED_PRODUCT_CODE | ProjectBasePEOIntegratedProductCode | — |
+| INTEGRATED_PROJECT_REFERENCE | ProjectBasePEOIntegratedProjectReference | — |
+| KPI_NOTIFICATION_ENABLED | ProjectBasePEOKpiNotificationEnabled | — |
+| KPI_NOTIFICATION_INCLUDE_NOTES | ProjectBasePEOKpiNotificationIncludeNotes | — |
+| KPI_NOTIFICATION_RECIPIENTS | ProjectBasePEOKpiNotificationRecipients | — |
+| LABOR_TP_FIXED_DATE | ProjectBasePEOLaborTpFixedDate | — |
+| LABOR_TP_SCHEDULE_ID | ProjectBasePEOLaborTpScheduleId | — |
+| LAST_UPDATE_DATE | ProjectBasePEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ProjectBasePEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | ProjectBasePEOLastUpdatedBy | ✅ |
+| LATE_FINISH_DATE | ProjectBasePEOLateFinishDate | — |
+| LATE_START_DATE | ProjectBasePEOLateStartDate | — |
+| LEGAL_ENTITY_ID | ProjectBasePEOLegalEntityId | ✅ |
+| LIMIT_TO_TXN_CONTROLS_FLAG | ProjectBasePEOLimitToTxnControlsFlag | ✅ |
+| NL_TP_FIXED_DATE | ProjectBasePEONlTpFixedDate | — |
+| NL_TP_SCHEDULE_ID | ProjectBasePEONlTpScheduleId | — |
+| OBJECT_VERSION_NUMBER | ProjectBasePEOObjectVersionNumber | — |
+| ORG_ID | ProjectBasePEOOrgId | ✅ |
+| OUTLINE_LEVEL | ProjectBasePEOOutlineLevel | — |
+| OVR_COST_IND_RATE_SCH_ID | ProjectBasePEOOvrCostIndRateSchId | — |
+| PLANNING_PROJECT_FLAG | ProjectBasePEOPlanningProjectFlag | — |
+| PM_PRODUCT_CODE | ProjectBasePEOPmProductCode | ✅ |
+| PM_PROJECT_REFERENCE | ProjectBasePEOPmProjectReference | ✅ |
+| PRIORITY_CODE | ProjectBasePEOPriorityCode | ✅ |
+| PROGRAM_APPLICATION_ID | ProjectBasePEOProgramApplicationId | — |
+| PROGRAM_ID | ProjectBasePEOProgramId | — |
+| PROGRAM_UPDATE_DATE | ProjectBasePEOProgramUpdateDate | — |
+| PROJECT_CALENDAR_ID | ProjectBasePEOProjectCalendarId | ✅ |
+| PROJECT_CATEGORY | ProjectBasePEOProjectCategory | ✅ |
+| PROJECT_CURRENCY_CODE | ProjectBasePEOProjectCurrencyCode | ✅ |
+| PROJECT_ID | ProjectBaseCreatedFromPEOProjectId | — |
+| PROJECT_ID | ProjectId | ✅ |
+| PROJECT_STATUS_CODE | ProjectBasePEOProjectStatusCode | ✅ |
+| PROJECT_TYPE_ID | ProjectBasePEOProjectTypeId | ✅ |
+| PROJECT_UNIT_ID | ProjectBasePEOProjectUnitId | ✅ |
+| PROJECT_VALUE | ProjectBasePEOProjectValue | ✅ |
+| PROJFUNC_CURRENCY_CODE | ProjectBasePEOProjfuncCurrencyCode | ✅ |
+| PUBLIC_SECTOR_FLAG | ProjectBasePEOPublicSectorFlag | ✅ |
+| REQUEST_ID | ProjectBasePEORequestId | — |
+| SCHEDULED_AS_OF_DATE | ProjectBasePEOScheduledAsOfDate | — |
+| SCHEDULED_DURATION | ProjectBasePEOScheduledDuration | — |
+| SCHEDULED_FINISH_DATE | ProjectBasePEOScheduledFinishDate | — |
+| SCHEDULED_START_DATE | ProjectBasePEOScheduledStartDate | — |
+| SEGMENT1 | ProjectBaseCreatedFromPEOSegment1 | ✅ |
+| SEGMENT1 | ProjectBasePEOSegment1 | ✅ |
+| SERVICE_TYPE_CODE | ProjectBasePEOServiceTypeCode | ✅ |
+| START_DATE | ProjectBasePEOStartDate | ✅ |
+| STRUCTURE_SHARING_CODE | ProjectBasePEOStructureSharingCode | — |
+| SUMMARY_FLAG | ProjectBasePEOSummaryFlag | — |
+| TARGET_FINISH_DATE | ProjectBasePEOTargetFinishDate | — |
+| TARGET_START_DATE | ProjectBasePEOTargetStartDate | — |
+| TEMPLATE_END_DATE_ACTIVE | ProjectBasePEOTemplateEndDateActive | — |
+| TEMPLATE_FLAG | ProjectBasePEOTemplateFlag | ✅ |
+| TEMPLATE_START_DATE_ACTIVE | ProjectBasePEOTemplateStartDateActive | — |
+| VERIFICATION_DATE | ProjectBasePEOVerificationDate | — |
+| WORK_TYPE_ID | ProjectBasePEOWorkTypeId | — |
+
+### [[projectassetlinedetailpvo|ProjectAssetLineDetailPVO]] (OTHER)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| LEGAL_ENTITY_ID | CDLProjectBasePEOLegalEntityId | — |
+| LEGAL_ENTITY_ID | ExpProjectBasePEOLegalEntityId | — |
+| ORG_ID | CDLProjectBasePEOOrgId | — |
+| ORG_ID | ExpProjectBasePEOOrgId | — |
+| PROJECT_ID | CDLProjectBasePEOProjectId | — |
+| PROJECT_ID | ExpProjectBasePEOProjectId | — |
+| PROJECT_UNIT_ID | CDLProjectBasePEOProjectUnitId | — |
+| PROJECT_UNIT_ID | ExpProjectBasePEOProjectUnitId | — |
+
+### [[projectassetlinepvo|ProjectAssetLinePVO]] (OTHER)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| PROJECT_ID | ProjectBasePEOProjectId | — |
+| PROJFUNC_CURRENCY_CODE | ProjectBasePEOProjfuncCurrencyCode | — |
+
+### [[projectassetpvo|ProjectAssetPVO]] (OTHER · BICC: 1/2)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| PROJECT_ID | ProjectBasePEOProjectId | — |
+| PROJFUNC_CURRENCY_CODE | ProjectBasePEOProjfuncCurrencyCode | ✅ |
+
+### [[projectcommitmentpvo|ProjectCommitmentPVO]] (OTHER · BICC: 1/8)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CARRYING_OUT_ORGANIZATION_ID | ProjectBasePEOCarryingOutOrganizationId | — |
+| CREATED_BY | ProjectBasePEOCreatedBy | — |
+| CREATION_DATE | ProjectBasePEOCreationDate | — |
+| LAST_UPDATE_DATE | ProjectBasePEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ProjectBasePEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | ProjectBasePEOLastUpdatedBy | — |
+| ORG_ID | ProjectBasePEOOrgId | — |
+| PROJECT_ID | ProjectBasePEOProjectId | — |
+
+### [[projectcostdistributionpvo|ProjectCostDistributionPVO]] (OTHER · BICC: 1/9)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CARRYING_OUT_ORGANIZATION_ID | ProjectBasePEOCarryingOutOrganizationId | — |
+| CREATED_BY | ProjectBasePEOCreatedBy | — |
+| CREATION_DATE | ProjectBasePEOCreationDate | — |
+| LAST_UPDATE_DATE | ProjectBasePEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ProjectBasePEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | ProjectBasePEOLastUpdatedBy | — |
+| LEGAL_ENTITY_ID | ProjectBasePEOLegalEntityId | — |
+| ORG_ID | ProjectBasePEOOrgId | — |
+| PROJECT_ID | ProjectBasePEOProjectId | — |
+
+### [[projectexec|ProjectExec]] (OTHER · BICC: 35/92)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTUAL_AS_OF_DATE | ProjectBasePEOActualAsOfDate | — |
+| ACTUAL_DURATION | ProjectBasePEOActualDuration | — |
+| ACTUAL_FINISH_DATE | ProjectBasePEOActualFinishDate | — |
+| ACTUAL_START_DATE | ProjectBasePEOActualStartDate | — |
+| ALLOW_CROSS_CHARGE_FLAG | ProjectBasePEOAllowCrossChargeFlag | ✅ |
+| ASSET_ALLOCATION_METHOD | ProjectBasePEOAssetAllocationMethod | ✅ |
+| BASELINE_AS_OF_DATE | ProjectBasePEOBaselineAsOfDate | — |
+| BASELINE_DURATION | ProjectBasePEOBaselineDuration | — |
+| BASELINE_FINISH_DATE | ProjectBasePEOBaselineFinishDate | — |
+| BASELINE_START_DATE | ProjectBasePEOBaselineStartDate | — |
+| BUDGETARY_CONTROL_FLAG | ProjectBasePEOBudgetaryControlFlag | ✅ |
+| CAPITAL_EVENT_PROCESSING | ProjectBasePEOCapitalEventProcessing | ✅ |
+| CARRYING_OUT_ORGANIZATION_ID | ProjectBasePEOCarryingOutOrganizationId | ✅ |
+| CC_PROCESS_LABOR_FLAG | ProjectBasePEOCcProcessLaborFlag | ✅ |
+| CC_PROCESS_NL_FLAG | ProjectBasePEOCcProcessNlFlag | ✅ |
+| CINT_ELIGIBLE_FLAG | ProjectBasePEOCintEligibleFlag | ✅ |
+| CINT_RATE_SCH_ID | ProjectBasePEOCintRateSchId | — |
+| CINT_STOP_DATE | ProjectBasePEOCintStopDate | — |
+| CLIN_LINKED_CODE | ProjectBasePEOClinLinkedCode | ✅ |
+| CLOSED_DATE | ProjectBasePEOClosedDate | ✅ |
+| COMPLETION_DATE | ProjectBasePEOCompletionDate | ✅ |
+| COST_IND_RATE_SCH_ID | ProjectBasePEOCostIndRateSchId | — |
+| COST_IND_SCH_FIXED_DATE | ProjectBasePEOCostIndSchFixedDate | — |
+| CREATED_BY | ProjectBasePEOCreatedBy | ✅ |
+| CREATED_FROM_PROJECT_ID | ProjectBasePEOCreatedFromProjectId | ✅ |
+| CREATION_DATE | ProjectBasePEOCreationDate | ✅ |
+| CURRENCY_CONV_DATE | ProjectBasePEOCurrencyConvDate | — |
+| CURRENCY_CONV_DATE_TYPE_CODE | ProjectBasePEOCurrencyConvDateTypeCode | — |
+| CURRENCY_CONV_RATE_TYPE | ProjectBasePEOCurrencyConvRateType | — |
+| EARLY_FINISH_DATE | ProjectBasePEOEarlyFinishDate | — |
+| EARLY_START_DATE | ProjectBasePEOEarlyStartDate | — |
+| ENABLED_FLAG | ProjectBasePEOEnabledFlag | — |
+| EXPECTED_APPROVAL_DATE | ProjectBasePEOExpectedApprovalDate | — |
+| EXTERNAL_PROJECT_ID | ProjectBasePEOExternalProjectId | ✅ |
+| HOURS_PER_DAY | ProjectBasePEOHoursPerDay | ✅ |
+| IC_CLIN_LINKED_CODE | ProjectBasePEOIcClinLinkedCode | — |
+| INTEGRATED_PRODUCT_CODE | ProjectBasePEOIntegratedProductCode | — |
+| INTEGRATED_PROJECT_REFERENCE | ProjectBasePEOIntegratedProjectReference | — |
+| KPI_NOTIFICATION_ENABLED | ProjectBasePEOKpiNotificationEnabled | — |
+| KPI_NOTIFICATION_INCLUDE_NOTES | ProjectBasePEOKpiNotificationIncludeNotes | — |
+| KPI_NOTIFICATION_RECIPIENTS | ProjectBasePEOKpiNotificationRecipients | — |
+| LABOR_TP_FIXED_DATE | ProjectBasePEOLaborTpFixedDate | — |
+| LABOR_TP_SCHEDULE_ID | ProjectBasePEOLaborTpScheduleId | — |
+| LAST_UPDATE_DATE | ProjectBasePEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ProjectBasePEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | ProjectBasePEOLastUpdatedBy | ✅ |
+| LATE_FINISH_DATE | ProjectBasePEOLateFinishDate | — |
+| LATE_START_DATE | ProjectBasePEOLateStartDate | — |
+| LEGAL_ENTITY_ID | ProjectBasePEOLegalEntityId | — |
+| LIMIT_TO_TXN_CONTROLS_FLAG | ProjectBasePEOLimitToTxnControlsFlag | ✅ |
+| NL_TP_FIXED_DATE | ProjectBasePEONlTpFixedDate | — |
+| NL_TP_SCHEDULE_ID | ProjectBasePEONlTpScheduleId | — |
+| OBJECT_VERSION_NUMBER | ProjectBasePEOObjectVersionNumber | — |
+| ORG_ID | ProjectBasePEOOrgId | — |
+| OUTLINE_LEVEL | ProjectBasePEOOutlineLevel | — |
+| OVR_COST_IND_RATE_SCH_ID | ProjectBasePEOOvrCostIndRateSchId | — |
+| PLANNING_PROJECT_FLAG | ProjectBasePEOPlanningProjectFlag | — |
+| PM_PRODUCT_CODE | ProjectBasePEOPmProductCode | ✅ |
+| PM_PROJECT_REFERENCE | ProjectBasePEOPmProjectReference | ✅ |
+| PRIORITY_CODE | ProjectBasePEOPriorityCode | ✅ |
+| PROGRAM_APPLICATION_ID | ProjectBasePEOProgramApplicationId | — |
+| PROGRAM_ID | ProjectBasePEOProgramId | — |
+| PROGRAM_UPDATE_DATE | ProjectBasePEOProgramUpdateDate | — |
+| PROJECT_CALENDAR_ID | ProjectBasePEOProjectCalendarId | ✅ |
+| PROJECT_CATEGORY | ProjectBasePEOProjectCategory | ✅ |
+| PROJECT_CURRENCY_CODE | ProjectBasePEOProjectCurrencyCode | ✅ |
+| PROJECT_ID | ProjectBaseCreatedFromPEOProjectId | — |
+| PROJECT_ID | ProjectId | ✅ |
+| PROJECT_STATUS_CODE | ProjectBasePEOProjectStatusCode | ✅ |
+| PROJECT_TYPE_ID | ProjectBasePEOProjectTypeId | ✅ |
+| PROJECT_UNIT_ID | ProjectBasePEOProjectUnitId | — |
+| PROJECT_VALUE | ProjectBasePEOProjectValue | ✅ |
+| PROJFUNC_CURRENCY_CODE | ProjectBasePEOProjfuncCurrencyCode | ✅ |
+| PUBLIC_SECTOR_FLAG | ProjectBasePEOPublicSectorFlag | ✅ |
+| REQUEST_ID | ProjectBasePEORequestId | — |
+| SCHEDULED_AS_OF_DATE | ProjectBasePEOScheduledAsOfDate | — |
+| SCHEDULED_DURATION | ProjectBasePEOScheduledDuration | — |
+| SCHEDULED_FINISH_DATE | ProjectBasePEOScheduledFinishDate | — |
+| SCHEDULED_START_DATE | ProjectBasePEOScheduledStartDate | — |
+| SEGMENT1 | ProjectBaseCreatedFromPEOSegment1 | — |
+| SEGMENT1 | ProjectBasePEOSegment1 | ✅ |
+| SERVICE_TYPE_CODE | ProjectBasePEOServiceTypeCode | ✅ |
+| START_DATE | ProjectBasePEOStartDate | ✅ |
+| STRUCTURE_SHARING_CODE | ProjectBasePEOStructureSharingCode | — |
+| SUMMARY_FLAG | ProjectBasePEOSummaryFlag | — |
+| TARGET_FINISH_DATE | ProjectBasePEOTargetFinishDate | — |
+| TARGET_START_DATE | ProjectBasePEOTargetStartDate | — |
+| TEMPLATE_END_DATE_ACTIVE | ProjectBasePEOTemplateEndDateActive | — |
+| TEMPLATE_FLAG | ProjectBasePEOTemplateFlag | ✅ |
+| TEMPLATE_START_DATE_ACTIVE | ProjectBasePEOTemplateStartDateActive | — |
+| VERIFICATION_DATE | ProjectBasePEOVerificationDate | — |
+| WORK_TYPE_ID | ProjectBasePEOWorkTypeId | — |
+
+### [[projectplanlinebudgetpvo|ProjectPlanLineBudgetPVO]] (OTHER)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CARRYING_OUT_ORGANIZATION_ID | ProjectBasePEOCarryingOutOrganizationId | — |
+| ORG_ID | ProjectBasePEOOrgId | — |
+| PROJECT_CATEGORY | ProjectBasePEOProjectCategory | — |
+| PROJECT_CURRENCY_CODE | ProjectBasePEOProjectCurrencyCode | — |
+| PROJECT_ID | ProjectBasePEOProjectId | — |
+| PROJECT_UNIT_ID | ProjectBasePEOProjectUnitId | — |
+| PROJFUNC_CURRENCY_CODE | ProjectBasePEOProjfuncCurrencyCode | — |
+| SEGMENT1 | ProjectBasePEOSegment1 | — |
+
+### [[projectplanlinedetailbudgetpvo|ProjectPlanLineDetailBudgetPVO]] (OTHER)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CARRYING_OUT_ORGANIZATION_ID | ProjectBasePEOCarryingOutOrganizationId | — |
+| ORG_ID | ProjectBasePEOOrgId | — |
+| PROJECT_CATEGORY | ProjectBasePEOProjectCategory | — |
+| PROJECT_CURRENCY_CODE | ProjectBasePEOProjectCurrencyCode | — |
+| PROJECT_ID | ProjectBasePEOProjectId | — |
+| PROJECT_UNIT_ID | ProjectBasePEOProjectUnitId | — |
+| PROJFUNC_CURRENCY_CODE | ProjectBasePEOProjfuncCurrencyCode | — |
+| SEGMENT1 | ProjectBasePEOSegment1 | — |
+
+### [[projectplanlineforecastpvo|ProjectPlanLineForecastPVO]] (OTHER)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CARRYING_OUT_ORGANIZATION_ID | ProjectBasePEOCarryingOutOrganizationId | — |
+| ORG_ID | ProjectBasePEOOrgId | — |
+| PROJECT_CATEGORY | ProjectBasePEOProjectCategory | — |
+| PROJECT_CURRENCY_CODE | ProjectBasePEOProjectCurrencyCode | — |
+| PROJECT_ID | ProjectBasePEOProjectId | — |
+| PROJECT_UNIT_ID | ProjectBasePEOProjectUnitId | — |
+| PROJFUNC_CURRENCY_CODE | ProjectBasePEOProjfuncCurrencyCode | — |
+| SEGMENT1 | ProjectBasePEOSegment1 | — |
+
+### [[projectplanversionbudgetpvo|ProjectPlanVersionBudgetPVO]] (OTHER · BICC: 1/8)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CARRYING_OUT_ORGANIZATION_ID | ProjectBasePEOCarryingOutOrganizationId | — |
+| ORG_ID | ProjectBasePEOOrgId | — |
+| PROJECT_CATEGORY | ProjectBasePEOProjectCategory | — |
+| PROJECT_CURRENCY_CODE | ProjectBasePEOProjectCurrencyCode | — |
+| PROJECT_ID | ProjectBasePEOProjectId | — |
+| PROJECT_UNIT_ID | ProjectBasePEOProjectUnitId | — |
+| PROJFUNC_CURRENCY_CODE | ProjectBasePEOProjfuncCurrencyCode | — |
+| SEGMENT1 | ProjectBasePEOSegment1 | ✅ |
+
+### [[projectplanversionforecastpvo|ProjectPlanVersionForecastPVO]] (OTHER · BICC: 1/8)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CARRYING_OUT_ORGANIZATION_ID | ProjectBasePEOCarryingOutOrganizationId | — |
+| ORG_ID | ProjectBasePEOOrgId | — |
+| PROJECT_CATEGORY | ProjectBasePEOProjectCategory | — |
+| PROJECT_CURRENCY_CODE | ProjectBasePEOProjectCurrencyCode | — |
+| PROJECT_ID | ProjectBasePEOProjectId | — |
+| PROJECT_UNIT_ID | ProjectBasePEOProjectUnitId | — |
+| PROJFUNC_CURRENCY_CODE | ProjectBasePEOProjfuncCurrencyCode | — |
+| SEGMENT1 | ProjectBasePEOSegment1 | ✅ |
+
+### [[projectprogresspvo|ProjectProgressPVO]] (OTHER)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CARRYING_OUT_ORGANIZATION_ID | ProjectBasePEOCarryingOutOrganizationId | — |
+| ORG_ID | ProjectBasePEOOrgId | — |
+| PROJECT_CURRENCY_CODE | ProjectBasePEOProjectCurrencyCode | — |
+| PROJECT_ID | ProjectBasePEOProjectId | — |
+| PROJECT_UNIT_ID | ProjectBasePEOProjectUnitId | — |
+| PROJFUNC_CURRENCY_CODE | ProjectBasePEOProjfuncCurrencyCode | — |
+
+### [[projectrefpvo|ProjectRefPVO]] (OTHER · BICC: 36/92)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTUAL_AS_OF_DATE | ProjectBasePEOActualAsOfDate | — |
+| ACTUAL_DURATION | ProjectBasePEOActualDuration | — |
+| ACTUAL_FINISH_DATE | ProjectBasePEOActualFinishDate | — |
+| ACTUAL_START_DATE | ProjectBasePEOActualStartDate | — |
+| ALLOW_CROSS_CHARGE_FLAG | ProjectBasePEOAllowCrossChargeFlag | ✅ |
+| ASSET_ALLOCATION_METHOD | ProjectBasePEOAssetAllocationMethod | ✅ |
+| BASELINE_AS_OF_DATE | ProjectBasePEOBaselineAsOfDate | — |
+| BASELINE_DURATION | ProjectBasePEOBaselineDuration | — |
+| BASELINE_FINISH_DATE | ProjectBasePEOBaselineFinishDate | — |
+| BASELINE_START_DATE | ProjectBasePEOBaselineStartDate | — |
+| BUDGETARY_CONTROL_FLAG | ProjectBasePEOBudgetaryControlFlag | ✅ |
+| CAPITAL_EVENT_PROCESSING | ProjectBasePEOCapitalEventProcessing | ✅ |
+| CARRYING_OUT_ORGANIZATION_ID | ProjectBasePEOCarryingOutOrganizationId | ✅ |
+| CC_PROCESS_LABOR_FLAG | ProjectBasePEOCcProcessLaborFlag | ✅ |
+| CC_PROCESS_NL_FLAG | ProjectBasePEOCcProcessNlFlag | ✅ |
+| CINT_ELIGIBLE_FLAG | ProjectBasePEOCintEligibleFlag | ✅ |
+| CINT_RATE_SCH_ID | ProjectBasePEOCintRateSchId | — |
+| CINT_STOP_DATE | ProjectBasePEOCintStopDate | — |
+| CLIN_LINKED_CODE | ProjectBasePEOClinLinkedCode | ✅ |
+| CLOSED_DATE | ProjectBasePEOClosedDate | ✅ |
+| COMPLETION_DATE | ProjectBasePEOCompletionDate | ✅ |
+| COST_IND_RATE_SCH_ID | ProjectBasePEOCostIndRateSchId | — |
+| COST_IND_SCH_FIXED_DATE | ProjectBasePEOCostIndSchFixedDate | — |
+| CREATED_BY | ProjectBasePEOCreatedBy | ✅ |
+| CREATED_FROM_PROJECT_ID | ProjectBasePEOCreatedFromProjectId | — |
+| CREATION_DATE | ProjectBasePEOCreationDate | ✅ |
+| CURRENCY_CONV_DATE | ProjectBasePEOCurrencyConvDate | — |
+| CURRENCY_CONV_DATE_TYPE_CODE | ProjectBasePEOCurrencyConvDateTypeCode | — |
+| CURRENCY_CONV_RATE_TYPE | ProjectBasePEOCurrencyConvRateType | — |
+| EARLY_FINISH_DATE | ProjectBasePEOEarlyFinishDate | — |
+| EARLY_START_DATE | ProjectBasePEOEarlyStartDate | — |
+| ENABLED_FLAG | ProjectBasePEOEnabledFlag | — |
+| EXPECTED_APPROVAL_DATE | ProjectBasePEOExpectedApprovalDate | — |
+| EXTERNAL_PROJECT_ID | ProjectBasePEOExternalProjectId | ✅ |
+| HOURS_PER_DAY | ProjectBasePEOHoursPerDay | ✅ |
+| IC_CLIN_LINKED_CODE | ProjectBasePEOIcClinLinkedCode | — |
+| INTEGRATED_PRODUCT_CODE | ProjectBasePEOIntegratedProductCode | — |
+| INTEGRATED_PROJECT_REFERENCE | ProjectBasePEOIntegratedProjectReference | — |
+| KPI_NOTIFICATION_ENABLED | ProjectBasePEOKpiNotificationEnabled | — |
+| KPI_NOTIFICATION_INCLUDE_NOTES | ProjectBasePEOKpiNotificationIncludeNotes | — |
+| KPI_NOTIFICATION_RECIPIENTS | ProjectBasePEOKpiNotificationRecipients | — |
+| LABOR_TP_FIXED_DATE | ProjectBasePEOLaborTpFixedDate | — |
+| LABOR_TP_SCHEDULE_ID | ProjectBasePEOLaborTpScheduleId | — |
+| LAST_UPDATE_DATE | ProjectBasePEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ProjectBasePEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | ProjectBasePEOLastUpdatedBy | ✅ |
+| LATE_FINISH_DATE | ProjectBasePEOLateFinishDate | — |
+| LATE_START_DATE | ProjectBasePEOLateStartDate | — |
+| LEGAL_ENTITY_ID | ProjectBasePEOLegalEntityId | — |
+| LIMIT_TO_TXN_CONTROLS_FLAG | ProjectBasePEOLimitToTxnControlsFlag | ✅ |
+| NL_TP_FIXED_DATE | ProjectBasePEONlTpFixedDate | — |
+| NL_TP_SCHEDULE_ID | ProjectBasePEONlTpScheduleId | — |
+| OBJECT_VERSION_NUMBER | ProjectBasePEOObjectVersionNumber | — |
+| ORG_ID | ProjectBasePEOOrgId | ✅ |
+| OUTLINE_LEVEL | ProjectBasePEOOutlineLevel | — |
+| OVR_COST_IND_RATE_SCH_ID | ProjectBasePEOOvrCostIndRateSchId | — |
+| PLANNING_PROJECT_FLAG | ProjectBasePEOPlanningProjectFlag | — |
+| PM_PRODUCT_CODE | ProjectBasePEOPmProductCode | ✅ |
+| PM_PROJECT_REFERENCE | ProjectBasePEOPmProjectReference | ✅ |
+| PRIORITY_CODE | ProjectBasePEOPriorityCode | ✅ |
+| PROGRAM_APPLICATION_ID | ProjectBasePEOProgramApplicationId | — |
+| PROGRAM_ID | ProjectBasePEOProgramId | — |
+| PROGRAM_UPDATE_DATE | ProjectBasePEOProgramUpdateDate | — |
+| PROJECT_CALENDAR_ID | ProjectBasePEOProjectCalendarId | ✅ |
+| PROJECT_CATEGORY | ProjectBasePEOProjectCategory | ✅ |
+| PROJECT_CURRENCY_CODE | ProjectBasePEOProjectCurrencyCode | ✅ |
+| PROJECT_ID | ProjectBaseCreatedFromPEOProjectId | — |
+| PROJECT_ID | ProjectId | ✅ |
+| PROJECT_STATUS_CODE | ProjectBasePEOProjectStatusCode | ✅ |
+| PROJECT_TYPE_ID | ProjectBasePEOProjectTypeId | ✅ |
+| PROJECT_UNIT_ID | ProjectBasePEOProjectUnitId | — |
+| PROJECT_VALUE | ProjectBasePEOProjectValue | ✅ |
+| PROJFUNC_CURRENCY_CODE | ProjectBasePEOProjfuncCurrencyCode | ✅ |
+| PUBLIC_SECTOR_FLAG | ProjectBasePEOPublicSectorFlag | ✅ |
+| REQUEST_ID | ProjectBasePEORequestId | — |
+| SCHEDULED_AS_OF_DATE | ProjectBasePEOScheduledAsOfDate | — |
+| SCHEDULED_DURATION | ProjectBasePEOScheduledDuration | — |
+| SCHEDULED_FINISH_DATE | ProjectBasePEOScheduledFinishDate | — |
+| SCHEDULED_START_DATE | ProjectBasePEOScheduledStartDate | — |
+| SEGMENT1 | ProjectBaseCreatedFromPEOSegment1 | ✅ |
+| SEGMENT1 | ProjectBasePEOSegment1 | ✅ |
+| SERVICE_TYPE_CODE | ProjectBasePEOServiceTypeCode | ✅ |
+| START_DATE | ProjectBasePEOStartDate | ✅ |
+| STRUCTURE_SHARING_CODE | ProjectBasePEOStructureSharingCode | — |
+| SUMMARY_FLAG | ProjectBasePEOSummaryFlag | — |
+| TARGET_FINISH_DATE | ProjectBasePEOTargetFinishDate | — |
+| TARGET_START_DATE | ProjectBasePEOTargetStartDate | — |
+| TEMPLATE_END_DATE_ACTIVE | ProjectBasePEOTemplateEndDateActive | — |
+| TEMPLATE_FLAG | ProjectBasePEOTemplateFlag | ✅ |
+| TEMPLATE_START_DATE_ACTIVE | ProjectBasePEOTemplateStartDateActive | — |
+| VERIFICATION_DATE | ProjectBasePEOVerificationDate | — |
+| WORK_TYPE_ID | ProjectBasePEOWorkTypeId | — |
+
+### [[projectresourcepvo|ProjectResourcePVO]] (OTHER · BICC: 1/4)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CARRYING_OUT_ORGANIZATION_ID | CarryingOutOrganizationId | — |
+| HOURS_PER_DAY | HoursPerDay | ✅ |
+| ORG_ID | OrgId | — |
+| PROJECT_ID | ProjectId1 | — |
+
+### [[projectunprocessedcosttransactionpvo|ProjectUnprocessedCostTransactionPVO]] (OTHER · BICC: 1/9)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CARRYING_OUT_ORGANIZATION_ID | ProjectBasePEOCarryingOutOrganizationId | — |
+| CREATED_BY | ProjectBasePEOCreatedBy | — |
+| CREATION_DATE | ProjectBasePEOCreationDate | — |
+| LAST_UPDATE_DATE | ProjectBasePEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ProjectBasePEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | ProjectBasePEOLastUpdatedBy | — |
+| ORG_ID | ProjectBasePEOOrgId | — |
+| PROJECT_ID | ProjectBasePEOProjectId | — |
+| PROJECT_UNIT_ID | ProjectBasePEOProjectUnitId | — |
+
+### [[projectview|ProjectView]] (OTHER · BICC: 1/2)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| PROJECT_ID | ProjectBaseCreatedFromPEOProjectId | — |
+| SEGMENT1 | ProjectBaseCreatedFromPEOSegment1 | ✅ |
+
+### [[projplanlinedetailforecastpvo|ProjPlanLineDetailForecastPVO]] (OTHER)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CARRYING_OUT_ORGANIZATION_ID | ProjectBasePEOCarryingOutOrganizationId | — |
+| ORG_ID | ProjectBasePEOOrgId | — |
+| PROJECT_CATEGORY | ProjectBasePEOProjectCategory | — |
+| PROJECT_CURRENCY_CODE | ProjectBasePEOProjectCurrencyCode | — |
+| PROJECT_ID | ProjectBasePEOProjectId | — |
+| PROJECT_UNIT_ID | ProjectBasePEOProjectUnitId | — |
+| PROJFUNC_CURRENCY_CODE | ProjectBasePEOProjfuncCurrencyCode | — |
+| SEGMENT1 | ProjectBasePEOSegment1 | — |
+
+### [[resourcerequestpvo|ResourceRequestPVO]] (OTHER)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CARRYING_OUT_ORGANIZATION_ID | ProjectBasePEOCarryingOutOrganizationId | — |
+| ORG_ID | ProjectBasePEOOrgId | — |
+| PROJECT_ID | ProjectBasePEOProjectId | — |
+| PROJECT_UNIT_ID | ProjectBasePEOProjectUnitId | — |
+
+### [[revenuedistributionpvo|RevenueDistributionPVO]] (AR)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CARRYING_OUT_ORGANIZATION_ID | TransProjectPEOCarryingOutOrganizationId | — |
+| ORG_ID | TransProjectPEOOrgId | — |
+| PROJECT_ID | TransProjectPEOProjectId | — |
+| PROJECT_UNIT_ID | TransProjectPEOProjectUnitId | — |
+
+### [[taskmspvo|TaskMSPVO]] (OTHER)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| PROJECT_CATEGORY | ProjectBasePEOProjectCategory | — |
+| PROJECT_ID | ProjectBasePEOProjectId | — |
+| SEGMENT1 | ProjectBasePEOSegment1 | — |
+
+### [[taskmsvlpvo|TaskMSVLPVO]] (OTHER)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| PROJECT_CATEGORY | ProjectBasePEOProjectCategory | — |
+| PROJECT_ID | ProjectBasePEOProjectId | — |
+| SEGMENT1 | ProjectBasePEOSegment1 | — |
+
+### [[taskrefpvo|TaskRefPVO]] (OTHER · BICC: 2/3)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| PROJECT_CATEGORY | ProjectBasePEOProjectCategory | — |
+| PROJECT_ID | ProjectBasePEOProjectId | ✅ |
+| SEGMENT1 | ProjectBasePEOSegment1 | ✅ |
+
+### [[taskvlpvo|TaskVLPVO]] (OTHER · BICC: 2/3)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| PROJECT_CATEGORY | ProjectBasePEOProjectCategory | — |
+| PROJECT_ID | ProjectBasePEOProjectId | ✅ |
+| SEGMENT1 | ProjectBasePEOSegment1 | ✅ |

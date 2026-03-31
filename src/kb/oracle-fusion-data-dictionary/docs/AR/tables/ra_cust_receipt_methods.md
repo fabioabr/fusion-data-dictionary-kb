@@ -145,6 +145,92 @@ WHERE  crm.PRIMARY_FLAG = 'Y'
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[customeraccountreceiptmethod|CustomerAccountReceiptMethod]] (AR · BICC: 9/17)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | CustReceiptMethodCreatedBy | ✅ |
+| CREATION_DATE | CustReceiptMethodCreationDate | ✅ |
+| CUST_RECEIPT_METHOD_ID | CustReceiptMethodId | ✅ |
+| CUSTOMER_ID | CustReceiptMethodCustomerId | — |
+| END_DATE | CustReceiptMethodEndDate | ✅ |
+| LAST_UPDATE_DATE | CustReceiptMethodLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | CustReceiptMethodLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | CustReceiptMethodLastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | CustReceiptMethodObjectVersionNumber | — |
+| PRIMARY_FLAG | CustReceiptMethodPrimaryFlag | ✅ |
+| PROGRAM_APPLICATION_ID | CustReceiptMethodProgramApplicationId | — |
+| PROGRAM_ID | CustReceiptMethodProgramId | — |
+| PROGRAM_UPDATE_DATE | CustReceiptMethodProgramUpdateDate | — |
+| RECEIPT_METHOD_ID | CustReceiptMethodReceiptMethodId | — |
+| REQUEST_ID | CustReceiptMethodRequestId | — |
+| SITE_USE_ID | CustReceiptMethodSiteUseId | — |
+| START_DATE | CustReceiptMethodStartDate | ✅ |
+
+### [[customeraccountsitereceiptmethod|CustomerAccountSiteReceiptMethod]] (AR · BICC: 9/17)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | CustReceiptMethodCreatedBy | ✅ |
+| CREATION_DATE | CustReceiptMethodCreationDate | ✅ |
+| CUST_RECEIPT_METHOD_ID | CustReceiptMethodId | ✅ |
+| CUSTOMER_ID | CustReceiptMethodCustomerId | — |
+| END_DATE | CustReceiptMethodEndDate | ✅ |
+| LAST_UPDATE_DATE | CustReceiptMethodLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | CustReceiptMethodLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | CustReceiptMethodLastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | CustReceiptMethodObjectVersionNumber | — |
+| PRIMARY_FLAG | CustReceiptMethodPrimaryFlag | ✅ |
+| PROGRAM_APPLICATION_ID | CustReceiptMethodProgramApplicationId | — |
+| PROGRAM_ID | CustReceiptMethodProgramId | — |
+| PROGRAM_UPDATE_DATE | CustReceiptMethodProgramUpdateDate | — |
+| RECEIPT_METHOD_ID | CustReceiptMethodReceiptMethodId | — |
+| REQUEST_ID | CustReceiptMethodRequestId | — |
+| SITE_USE_ID | CustReceiptMethodSiteUseId | — |
+| START_DATE | CustReceiptMethodStartDate | ✅ |
+
+### [[customerreceiptmethodextractpvo|CustomerReceiptMethodExtractPVO]] (OTHER · BICC: 17/33)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ATTRIBUTE1 | RaCustReceiptMethodAttribute1 | — |
+| ATTRIBUTE10 | RaCustReceiptMethodAttribute10 | — |
+| ATTRIBUTE11 | RaCustReceiptMethodAttribute11 | — |
+| ATTRIBUTE12 | RaCustReceiptMethodAttribute12 | — |
+| ATTRIBUTE13 | RaCustReceiptMethodAttribute13 | — |
+| ATTRIBUTE14 | RaCustReceiptMethodAttribute14 | — |
+| ATTRIBUTE15 | RaCustReceiptMethodAttribute15 | — |
+| ATTRIBUTE2 | RaCustReceiptMethodAttribute2 | — |
+| ATTRIBUTE3 | RaCustReceiptMethodAttribute3 | — |
+| ATTRIBUTE4 | RaCustReceiptMethodAttribute4 | — |
+| ATTRIBUTE5 | RaCustReceiptMethodAttribute5 | — |
+| ATTRIBUTE6 | RaCustReceiptMethodAttribute6 | — |
+| ATTRIBUTE7 | RaCustReceiptMethodAttribute7 | — |
+| ATTRIBUTE8 | RaCustReceiptMethodAttribute8 | — |
+| ATTRIBUTE9 | RaCustReceiptMethodAttribute9 | — |
+| ATTRIBUTE_CATEGORY | RaCustReceiptMethodAttributeCategory | — |
+| CREATED_BY | RaCustReceiptMethodCreatedBy | ✅ |
+| CREATION_DATE | RaCustReceiptMethodCreationDate | ✅ |
+| CUST_RECEIPT_METHOD_ID | RaCustReceiptMethodCustReceiptMethodId | ✅ |
+| CUSTOMER_ID | RaCustReceiptMethodCustomerId | ✅ |
+| END_DATE | RaCustReceiptMethodEndDate | ✅ |
+| LAST_UPDATE_DATE | RaCustReceiptMethodLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | RaCustReceiptMethodLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | RaCustReceiptMethodLastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | RaCustReceiptMethodObjectVersionNumber | ✅ |
+| PRIMARY_FLAG | RaCustReceiptMethodPrimaryFlag | ✅ |
+| PROGRAM_APPLICATION_ID | RaCustReceiptMethodProgramApplicationId | ✅ |
+| PROGRAM_ID | RaCustReceiptMethodProgramId | ✅ |
+| PROGRAM_UPDATE_DATE | RaCustReceiptMethodProgramUpdateDate | ✅ |
+| RECEIPT_METHOD_ID | RaCustReceiptMethodReceiptMethodId | ✅ |
+| REQUEST_ID | RaCustReceiptMethodRequestId | ✅ |
+| SITE_USE_ID | RaCustReceiptMethodSiteUseId | ✅ |
+| START_DATE | RaCustReceiptMethodStartDate | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — RA_CUST_RECEIPT_METHODS](https://docs.oracle.com/en/cloud/saas/financials/25a/oedmf/racustreceiptmethods-10081.html)

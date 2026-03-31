@@ -168,6 +168,285 @@ GROUP BY CASE
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[fiscaldocheadersp|FiscalDocHeadersP]] (OTHER)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| RELATIONSHIP_ID | ApInvoicesAllRelationshipId | — |
+| REMIT_TO_ADDRESS_ID | ApInvoicesAllRemitToAddressId | — |
+| REMIT_TO_ADDRESS_NAME | ApInvoicesAllRemitToAddressName | — |
+| REMIT_TO_SUPPLIER_ID | ApInvoicesAllRemitToSupplierId | — |
+| REMIT_TO_SUPPLIER_NAME | ApInvoicesAllRemitToSupplierName | — |
+
+### [[fiscaldocumentchargeassocp|FiscalDocumentChargeAssocP]] (OTHER)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| RELATIONSHIP_ID | ApInvoicesAllRelationshipId | — |
+| REMIT_TO_ADDRESS_ID | ApInvoicesAllRemitToAddressId | — |
+| REMIT_TO_ADDRESS_NAME | ApInvoicesAllRemitToAddressName | — |
+| REMIT_TO_SUPPLIER_ID | ApInvoicesAllRemitToSupplierId | — |
+| REMIT_TO_SUPPLIER_NAME | ApInvoicesAllRemitToSupplierName | — |
+
+### [[fiscaldocumentlinesp|FiscalDocumentLinesP]] (OTHER)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| RELATIONSHIP_ID | ApInvoicesAllRelationshipId | — |
+| REMIT_TO_ADDRESS_ID | ApInvoicesAllRemitToAddressId | — |
+| REMIT_TO_ADDRESS_NAME | ApInvoicesAllRemitToAddressName | — |
+| REMIT_TO_SUPPLIER_ID | ApInvoicesAllRemitToSupplierId | — |
+| REMIT_TO_SUPPLIER_NAME | ApInvoicesAllRemitToSupplierName | — |
+
+### [[fiscaldocumentrcvchargeallocsp|FiscalDocumentRcvChargeAllocsP]] (OTHER)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| RELATIONSHIP_ID | ApInvoicesAllRelationshipId | — |
+| REMIT_TO_ADDRESS_ID | ApInvoicesAllRemitToAddressId | — |
+| REMIT_TO_ADDRESS_NAME | ApInvoicesAllRemitToAddressName | — |
+| REMIT_TO_SUPPLIER_ID | ApInvoicesAllRemitToSupplierId | — |
+| REMIT_TO_SUPPLIER_NAME | ApInvoicesAllRemitToSupplierName | — |
+
+### [[fiscaldocumentschedulesp|FiscalDocumentSchedulesP]] (OTHER)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| RELATIONSHIP_ID | ApInvoicesAllRelationshipId | — |
+| REMIT_TO_ADDRESS_ID | ApInvoicesAllRemitToAddressId | — |
+| REMIT_TO_ADDRESS_NAME | ApInvoicesAllRemitToAddressName | — |
+| REMIT_TO_SUPPLIER_ID | ApInvoicesAllRemitToSupplierId | — |
+| REMIT_TO_SUPPLIER_NAME | ApInvoicesAllRemitToSupplierName | — |
+
+### [[invoiceheaderholdspvo|InvoiceHeaderHoldsPVO]] (AP)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| REMIT_TO_SUPPLIER_ID | InvoiceHeaderRemitToSupplierId | — |
+
+### [[invoiceheaderpvo|InvoiceHeaderPVO]] (AP)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| RELATIONSHIP_ID | InvoiceHeaderRelationshipId | — |
+| REMIT_TO_ADDRESS_ID | InvoiceHeaderRemitToAddressId | — |
+| REMIT_TO_ADDRESS_NAME | InvoiceHeaderRemitToAddressName | — |
+| REMIT_TO_SUPPLIER_ID | InvoiceHeaderRemitToSupplierId | — |
+| REMIT_TO_SUPPLIER_NAME | InvoiceHeaderRemitToSupplierName | — |
+
+### [[invoiceholdpvo|InvoiceHoldPVO]] (AP · BICC: 1/1)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| REMIT_TO_SUPPLIER_ID | InvoiceHeaderRemitToSupplierId | ✅ |
+
+### [[invoiceholdpvoactiveholds|InvoiceHoldPVOActiveHolds]] (AP)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| REMIT_TO_SUPPLIER_ID | InvoiceHeaderRemitToSupplierId | — |
+
+### [[invoicelineholdspvo|InvoiceLineHoldsPVO]] (AP)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| REMIT_TO_SUPPLIER_ID | InvoiceHeaderRemitToSupplierId | — |
+
+### [[invoicepaymentscheduleextractpvo|InvoicePaymentScheduleExtractPVO]] (OTHER · BICC: 40/97)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| AMOUNT_REMAINING | ApPaymentSchedulesAllAmountRemaining | ✅ |
+| ATTRIBUTE1 | ApPaymentSchedulesAllAttribute1 | — |
+| ATTRIBUTE10 | ApPaymentSchedulesAllAttribute10 | — |
+| ATTRIBUTE11 | ApPaymentSchedulesAllAttribute11 | — |
+| ATTRIBUTE12 | ApPaymentSchedulesAllAttribute12 | — |
+| ATTRIBUTE13 | ApPaymentSchedulesAllAttribute13 | — |
+| ATTRIBUTE14 | ApPaymentSchedulesAllAttribute14 | — |
+| ATTRIBUTE15 | ApPaymentSchedulesAllAttribute15 | — |
+| ATTRIBUTE2 | ApPaymentSchedulesAllAttribute2 | — |
+| ATTRIBUTE3 | ApPaymentSchedulesAllAttribute3 | — |
+| ATTRIBUTE4 | ApPaymentSchedulesAllAttribute4 | — |
+| ATTRIBUTE5 | ApPaymentSchedulesAllAttribute5 | — |
+| ATTRIBUTE6 | ApPaymentSchedulesAllAttribute6 | — |
+| ATTRIBUTE7 | ApPaymentSchedulesAllAttribute7 | — |
+| ATTRIBUTE8 | ApPaymentSchedulesAllAttribute8 | — |
+| ATTRIBUTE9 | ApPaymentSchedulesAllAttribute9 | — |
+| ATTRIBUTE_CATEGORY | ApPaymentSchedulesAllAttributeCategory | — |
+| ATTRIBUTE_DATE1 | ApPaymentSchedulesAllAttributeDate1 | — |
+| ATTRIBUTE_DATE2 | ApPaymentSchedulesAllAttributeDate2 | — |
+| ATTRIBUTE_DATE3 | ApPaymentSchedulesAllAttributeDate3 | — |
+| ATTRIBUTE_DATE4 | ApPaymentSchedulesAllAttributeDate4 | — |
+| ATTRIBUTE_DATE5 | ApPaymentSchedulesAllAttributeDate5 | — |
+| ATTRIBUTE_NUMBER1 | ApPaymentSchedulesAllAttributeNumber1 | — |
+| ATTRIBUTE_NUMBER2 | ApPaymentSchedulesAllAttributeNumber2 | — |
+| ATTRIBUTE_NUMBER3 | ApPaymentSchedulesAllAttributeNumber3 | — |
+| ATTRIBUTE_NUMBER4 | ApPaymentSchedulesAllAttributeNumber4 | — |
+| ATTRIBUTE_NUMBER5 | ApPaymentSchedulesAllAttributeNumber5 | — |
+| BATCH_ID | ApPaymentSchedulesAllBatchId | ✅ |
+| CHECKRUN_ID | ApPaymentSchedulesAllCheckrunId | ✅ |
+| CREATED_BY | ApPaymentSchedulesAllCreatedBy | ✅ |
+| CREATION_DATE | ApPaymentSchedulesAllCreationDate | ✅ |
+| DISCOUNT_AMOUNT_AVAILABLE | ApPaymentSchedulesAllDiscountAmountAvailable | ✅ |
+| DISCOUNT_AMOUNT_REMAINING | ApPaymentSchedulesAllDiscountAmountRemaining | ✅ |
+| DISCOUNT_DATE | ApPaymentSchedulesAllDiscountDate | ✅ |
+| DUE_DATE | ApPaymentSchedulesAllDueDate | ✅ |
+| EXTERNAL_BANK_ACCOUNT_ID | ApPaymentSchedulesAllExternalBankAccountId | ✅ |
+| GLOBAL_ATTRIBUTE1 | ApPaymentSchedulesAllGlobalAttribute1 | — |
+| GLOBAL_ATTRIBUTE10 | ApPaymentSchedulesAllGlobalAttribute10 | — |
+| GLOBAL_ATTRIBUTE11 | ApPaymentSchedulesAllGlobalAttribute11 | — |
+| GLOBAL_ATTRIBUTE12 | ApPaymentSchedulesAllGlobalAttribute12 | — |
+| GLOBAL_ATTRIBUTE13 | ApPaymentSchedulesAllGlobalAttribute13 | — |
+| GLOBAL_ATTRIBUTE14 | ApPaymentSchedulesAllGlobalAttribute14 | — |
+| GLOBAL_ATTRIBUTE15 | ApPaymentSchedulesAllGlobalAttribute15 | — |
+| GLOBAL_ATTRIBUTE16 | ApPaymentSchedulesAllGlobalAttribute16 | — |
+| GLOBAL_ATTRIBUTE17 | ApPaymentSchedulesAllGlobalAttribute17 | — |
+| GLOBAL_ATTRIBUTE18 | ApPaymentSchedulesAllGlobalAttribute18 | — |
+| GLOBAL_ATTRIBUTE19 | ApPaymentSchedulesAllGlobalAttribute19 | — |
+| GLOBAL_ATTRIBUTE2 | ApPaymentSchedulesAllGlobalAttribute2 | — |
+| GLOBAL_ATTRIBUTE20 | ApPaymentSchedulesAllGlobalAttribute20 | — |
+| GLOBAL_ATTRIBUTE3 | ApPaymentSchedulesAllGlobalAttribute3 | — |
+| GLOBAL_ATTRIBUTE4 | ApPaymentSchedulesAllGlobalAttribute4 | — |
+| GLOBAL_ATTRIBUTE5 | ApPaymentSchedulesAllGlobalAttribute5 | — |
+| GLOBAL_ATTRIBUTE6 | ApPaymentSchedulesAllGlobalAttribute6 | — |
+| GLOBAL_ATTRIBUTE7 | ApPaymentSchedulesAllGlobalAttribute7 | — |
+| GLOBAL_ATTRIBUTE8 | ApPaymentSchedulesAllGlobalAttribute8 | — |
+| GLOBAL_ATTRIBUTE9 | ApPaymentSchedulesAllGlobalAttribute9 | — |
+| GLOBAL_ATTRIBUTE_CATEGORY | ApPaymentSchedulesAllGlobalAttributeCategory | — |
+| GLOBAL_ATTRIBUTE_DATE1 | ApPaymentSchedulesAllGlobalAttributeDate1 | — |
+| GLOBAL_ATTRIBUTE_DATE2 | ApPaymentSchedulesAllGlobalAttributeDate2 | — |
+| GLOBAL_ATTRIBUTE_DATE3 | ApPaymentSchedulesAllGlobalAttributeDate3 | — |
+| GLOBAL_ATTRIBUTE_DATE4 | ApPaymentSchedulesAllGlobalAttributeDate4 | — |
+| GLOBAL_ATTRIBUTE_DATE5 | ApPaymentSchedulesAllGlobalAttributeDate5 | — |
+| GLOBAL_ATTRIBUTE_NUMBER1 | ApPaymentSchedulesAllGlobalAttributeNumber1 | — |
+| GLOBAL_ATTRIBUTE_NUMBER2 | ApPaymentSchedulesAllGlobalAttributeNumber2 | — |
+| GLOBAL_ATTRIBUTE_NUMBER3 | ApPaymentSchedulesAllGlobalAttributeNumber3 | — |
+| GLOBAL_ATTRIBUTE_NUMBER4 | ApPaymentSchedulesAllGlobalAttributeNumber4 | — |
+| GLOBAL_ATTRIBUTE_NUMBER5 | ApPaymentSchedulesAllGlobalAttributeNumber5 | — |
+| GROSS_AMOUNT | ApPaymentSchedulesAllGrossAmount | ✅ |
+| HELD_BY | ApPaymentSchedulesAllHeldBy | ✅ |
+| HOLD_DATE | ApPaymentSchedulesAllHoldDate | ✅ |
+| HOLD_FLAG | ApPaymentSchedulesAllHoldFlag | ✅ |
+| IBY_HOLD_REASON | ApPaymentSchedulesAllIbyHoldReason | ✅ |
+| INV_CURR_GROSS_AMOUNT | ApPaymentSchedulesAllInvCurrGrossAmount | ✅ |
+| INVOICE_ID | ApPaymentSchedulesAllInvoiceId | ✅ |
+| LAST_UPDATE_DATE | ApPaymentSchedulesAllLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ApPaymentSchedulesAllLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | ApPaymentSchedulesAllLastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | ApPaymentSchedulesAllObjectVersionNumber | ✅ |
+| ORG_ID | ApPaymentSchedulesAllOrgId | ✅ |
+| PAYMENT_CROSS_RATE | ApPaymentSchedulesAllPaymentCrossRate | ✅ |
+| PAYMENT_METHOD_CODE | ApPaymentSchedulesAllPaymentMethodCode | ✅ |
+| PAYMENT_METHOD_LOOKUP_CODE | ApPaymentSchedulesAllPaymentMethodLookupCode | ✅ |
+| PAYMENT_NUM | ApPaymentSchedulesAllPaymentNum | ✅ |
+| PAYMENT_PRIORITY | ApPaymentSchedulesAllPaymentPriority | ✅ |
+| PAYMENT_STATUS_FLAG | ApPaymentSchedulesAllPaymentStatusFlag | ✅ |
+| RELATIONSHIP_ID | ApPaymentSchedulesAllRelationshipId | ✅ |
+| REMIT_TO_ADDRESS_ID | ApPaymentSchedulesAllRemitToAddressId | ✅ |
+| REMIT_TO_ADDRESS_NAME | ApPaymentSchedulesAllRemitToAddressName | ✅ |
+| REMIT_TO_SUPPLIER_ID | ApPaymentSchedulesAllRemitToSupplierId | ✅ |
+| REMIT_TO_SUPPLIER_NAME | ApPaymentSchedulesAllRemitToSupplierName | ✅ |
+| REMITTANCE_MESSAGE1 | ApPaymentSchedulesAllRemittanceMessage1 | ✅ |
+| REMITTANCE_MESSAGE2 | ApPaymentSchedulesAllRemittanceMessage2 | ✅ |
+| REMITTANCE_MESSAGE3 | ApPaymentSchedulesAllRemittanceMessage3 | ✅ |
+| SECOND_DISC_AMT_AVAILABLE | ApPaymentSchedulesAllSecondDiscAmtAvailable | ✅ |
+| SECOND_DISCOUNT_DATE | ApPaymentSchedulesAllSecondDiscountDate | ✅ |
+| THIRD_DISC_AMT_AVAILABLE | ApPaymentSchedulesAllThirdDiscAmtAvailable | ✅ |
+| THIRD_DISCOUNT_DATE | ApPaymentSchedulesAllThirdDiscountDate | ✅ |
+
+### [[invoicepaymentschedulepvo|InvoicePaymentSchedulePVO]] (AP · BICC: 38/43)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| AMOUNT_REMAINING | PaymentScheduleAmountRemaining | ✅ |
+| APR_DISCOUNT_RATE | DiscountAPR | — |
+| ASSIGNMENT_TYPE_CODE | DiscountOffersTransNameType | — |
+| CAMPAIGN_NAME | DiscountOffersTranslationName | — |
+| CREATED_BY | PaymentScheduleCreatedBy | ✅ |
+| CREATION_DATE | PaymentScheduleCreationDate | ✅ |
+| DISCOUNT_AMOUNT_AVAILABLE | PaymentScheduleDiscountAmountAvailable | ✅ |
+| DISCOUNT_AMOUNT_REMAINING | PaymentScheduleDiscountAmountRemaining | ✅ |
+| DISCOUNT_DATE | PaymentScheduleDiscountDate | ✅ |
+| DUE_DATE | PaymentScheduleDueDate | ✅ |
+| EXTERNAL_BANK_ACCOUNT_ID | PaymentScheduleExternalBankAccountId | ✅ |
+| GROSS_AMOUNT | PaymentScheduleGrossAmount | ✅ |
+| HOLD_DATE | PaymentScheduleHoldDate | ✅ |
+| HOLD_FLAG | PaymentScheduleHoldFlag | ✅ |
+| IBY_HOLD_REASON | PaymentScheduleIbyHoldReason | ✅ |
+| INV_CURR_GROSS_AMOUNT | PaymentScheduleInvCurrGrossAmount | ✅ |
+| INVOICE_ID | InvoiceId | ✅ |
+| LAST_UPDATE_DATE | PaymentScheduleLastUpdateDate | ✅ |
+| LAST_UPDATED_BY | PaymentScheduleLastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | PaymentScheduleObjectVersionNumber | — |
+| ORG_ID | PaymentScheduleOrgId | — |
+| PAYMENT_CROSS_RATE | PaymentSchedulePaymentCrossRate | ✅ |
+| PAYMENT_METHOD_CODE | PaymentSchedulePaymentMethodCode | ✅ |
+| PAYMENT_NUM | PaymentNum | ✅ |
+| PAYMENT_PRIORITY | PaymentSchedulePaymentPriority | ✅ |
+| PAYMENT_STATUS_FLAG | PaymentSchedulePaymentStatusFlag | ✅ |
+| RELATIONSHIP_ID | InvoiceHeaderRelationshipId | ✅ |
+| RELATIONSHIP_ID | PaymentScheduleRelationshipId | ✅ |
+| REMIT_TO_ADDRESS_ID | InvoiceHeaderRemitToAddressId | ✅ |
+| REMIT_TO_ADDRESS_ID | PaymentScheduleRemitToAddressId | ✅ |
+| REMIT_TO_ADDRESS_NAME | InvoiceHeaderRemitToAddressName | ✅ |
+| REMIT_TO_ADDRESS_NAME | PaymentScheduleRemitToAddressName | ✅ |
+| REMIT_TO_SUPPLIER_ID | InvoiceHeaderRemitToSupplierId | ✅ |
+| REMIT_TO_SUPPLIER_ID | PaymentScheduleRemitToSupplierId | ✅ |
+| REMIT_TO_SUPPLIER_NAME | InvoiceHeaderRemitToSupplierName | ✅ |
+| REMIT_TO_SUPPLIER_NAME | PaymentScheduleRemitToSupplierName | ✅ |
+| REMITTANCE_MESSAGE1 | PaymentScheduleRemittanceMessage1 | ✅ |
+| REMITTANCE_MESSAGE2 | PaymentScheduleRemittanceMessage2 | ✅ |
+| REMITTANCE_MESSAGE3 | PaymentScheduleRemittanceMessage3 | ✅ |
+| SECOND_DISC_AMT_AVAILABLE | PaymentScheduleSecondDiscAmtAvailable | ✅ |
+| SECOND_DISCOUNT_DATE | PaymentScheduleSecondDiscountDate | ✅ |
+| THIRD_DISC_AMT_AVAILABLE | PaymentScheduleThirdDiscAmtAvailable | ✅ |
+| THIRD_DISCOUNT_DATE | PaymentScheduleThirdDiscountDate | ✅ |
+
+### [[paiddisbursementschedulepvo|PaidDisbursementSchedulePVO]] (AP · BICC: 1/3)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| DUE_DATE | PaymentScheduleDueDate | ✅ |
+| INVOICE_ID | PaymentScheduleInvoiceId | — |
+| PAYMENT_NUM | PaymentSchedulePaymentNum | — |
+
+### [[paymenthistorydistributionpvo|PaymentHistoryDistributionPVO]] (AP · BICC: 6/8)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| DUE_DATE | PaymentScheduleDueDate | ✅ |
+| INVOICE_ID | PaymentScheduleInvoiceId | — |
+| LAST_UPDATE_DATE | PaymentScheduleLastUpdateDate | ✅ |
+| ORG_ID | PaymentScheduleOrgId | — |
+| PAYMENT_METHOD_CODE | PaymentSchedulePaymentMethodCode | ✅ |
+| PAYMENT_NUM | PaymentSchedulePaymentNum | ✅ |
+| PAYMENT_STATUS_FLAG | PaymentSchedulePaymentStatusFlag | ✅ |
+| REMIT_TO_SUPPLIER_ID | InvoiceHeaderRemitToSupplierId | ✅ |
+
+### [[receiptaccountingtxnp1|ReceiptAccountingTxnP1]] (AR)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| RELATIONSHIP_ID | ApInvoicesAllRelationshipId | — |
+| REMIT_TO_ADDRESS_ID | ApInvoicesAllRemitToAddressId | — |
+| REMIT_TO_ADDRESS_NAME | ApInvoicesAllRemitToAddressName | — |
+| REMIT_TO_SUPPLIER_ID | ApInvoicesAllRemitToSupplierId | — |
+| REMIT_TO_SUPPLIER_NAME | ApInvoicesAllRemitToSupplierName | — |
+
+### [[receiptaccountingtxnrefpvo|ReceiptAccountingTxnRefPVO]] (AR)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| RELATIONSHIP_ID | ApInvoicesAllRelationshipId | — |
+| REMIT_TO_ADDRESS_ID | ApInvoicesAllRemitToAddressId | — |
+| REMIT_TO_ADDRESS_NAME | ApInvoicesAllRemitToAddressName | — |
+| REMIT_TO_SUPPLIER_ID | ApInvoicesAllRemitToSupplierId | — |
+| REMIT_TO_SUPPLIER_NAME | ApInvoicesAllRemitToSupplierName | — |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — AP_PAYMENT_SCHEDULES_ALL](https://docs.oracle.com/en/cloud/saas/financials/25a/oedmf/appaymentschedulesall-10047.html)

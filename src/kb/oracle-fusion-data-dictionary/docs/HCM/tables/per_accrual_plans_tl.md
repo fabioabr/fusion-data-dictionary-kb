@@ -103,6 +103,26 @@ WHERE  tl.LANGUAGE = 'PTB';
 - Sempre usar JOIN com a tabela _B para obter dados completos do plano.
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[accrualplantranslationpvo|AccrualPlanTranslationPVO]] (GL · BICC: 3/11)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACCRUAL_PLAN_ID | AccrualPlanId | ✅ |
+| ACCRUAL_PLAN_NAME | AccrualPlanTranslationPEOAccrualPlanName | — |
+| CREATED_BY | AccrualPlanTranslationPEOCreatedBy | — |
+| CREATION_DATE | AccrualPlanTranslationPEOCreationDate | — |
+| DESCRIPTION | AccrualPlanTranslationPEODescription | — |
+| LANGUAGE | Language | ✅ |
+| LAST_UPDATE_DATE | AccrualPlanTranslationPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | AccrualPlanTranslationPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | AccrualPlanTranslationPEOLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | AccrualPlanTranslationPEOObjectVersionNumber | — |
+| SOURCE_LANG | AccrualPlanTranslationPEOSourceLang | — |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — PER_ACCRUAL_PLANS_TL](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/peraccrualplanstl.html)

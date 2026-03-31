@@ -101,3 +101,59 @@ SELECT tb.TERM_ID,
 - Oracle Fusion Cloud Financials — Accounts Payable Tables (OEDMF Release 13).
 - Oracle Fusion Cloud — Payment Terms Setup Documentation.
 - Oracle Fusion Cloud ERP Schema Reference (Release 25A).
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[paymenttermheaderbpvo|PaymentTermHeaderBPVO]] (AP · BICC: 7/13)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | CreatedBy | — |
+| CREATION_DATE | CreationDate | — |
+| DUE_CUTOFF_DAY | DueCutoffDay | ✅ |
+| ENABLED_FLAG | EnabledFlag | — |
+| END_DATE_ACTIVE | EndDateActive | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | — |
+| LAST_UPDATED_BY | LastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | — |
+| RANK | Rank | ✅ |
+| START_DATE_ACTIVE | StartDateActive | ✅ |
+| TERM_ID | TermId | ✅ |
+| TYPE | Type | ✅ |
+
+### [[paymenttermheaderextractpvo|PaymentTermHeaderExtractPVO]] (OTHER · BICC: 13/29)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ATTRIBUTE1 | PaymentTermHeaderBPEOAttribute1 | — |
+| ATTRIBUTE10 | PaymentTermHeaderBPEOAttribute10 | — |
+| ATTRIBUTE11 | PaymentTermHeaderBPEOAttribute11 | — |
+| ATTRIBUTE12 | PaymentTermHeaderBPEOAttribute12 | — |
+| ATTRIBUTE13 | PaymentTermHeaderBPEOAttribute13 | — |
+| ATTRIBUTE14 | PaymentTermHeaderBPEOAttribute14 | — |
+| ATTRIBUTE15 | PaymentTermHeaderBPEOAttribute15 | — |
+| ATTRIBUTE2 | PaymentTermHeaderBPEOAttribute2 | — |
+| ATTRIBUTE3 | PaymentTermHeaderBPEOAttribute3 | — |
+| ATTRIBUTE4 | PaymentTermHeaderBPEOAttribute4 | — |
+| ATTRIBUTE5 | PaymentTermHeaderBPEOAttribute5 | — |
+| ATTRIBUTE6 | PaymentTermHeaderBPEOAttribute6 | — |
+| ATTRIBUTE7 | PaymentTermHeaderBPEOAttribute7 | — |
+| ATTRIBUTE8 | PaymentTermHeaderBPEOAttribute8 | — |
+| ATTRIBUTE9 | PaymentTermHeaderBPEOAttribute9 | — |
+| ATTRIBUTE_CATEGORY | PaymentTermHeaderBPEOAttributeCategory | — |
+| CREATED_BY | PaymentTermHeaderBPEOCreatedBy | ✅ |
+| CREATION_DATE | PaymentTermHeaderBPEOCreationDate | ✅ |
+| DUE_CUTOFF_DAY | PaymentTermHeaderBPEODueCutoffDay | ✅ |
+| ENABLED_FLAG | PaymentTermHeaderBPEOEnabledFlag | ✅ |
+| END_DATE_ACTIVE | PaymentTermHeaderBPEOEndDateActive | ✅ |
+| LAST_UPDATE_DATE | PaymentTermHeaderBPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | PaymentTermHeaderBPEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | PaymentTermHeaderBPEOLastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | PaymentTermHeaderBPEOObjectVersionNumber | ✅ |
+| RANK | PaymentTermHeaderBPEORank | ✅ |
+| START_DATE_ACTIVE | PaymentTermHeaderBPEOStartDateActive | ✅ |
+| TERM_ID | PaymentTermHeaderBPEOTermId | ✅ |
+| TYPE | PaymentTermHeaderBPEOType | ✅ |

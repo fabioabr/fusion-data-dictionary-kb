@@ -103,3 +103,88 @@ WHERE  tl.QUALIFIER_ID = :p_id
 
 - [Oracle Docs — HRT_QUALIFIERS_TL](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/hrtqualifierstl.html)
 - [[hcm-module-data-dictionary]] — Dossie do modulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[competencypvo|CompetencyPVO]] (HCM · BICC: 3/6)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | QualifierTLPEOBusinessGroup | — |
+| DESCRIPTION | QualifiersTLPEODescription | ✅ |
+| LANGUAGE | QualifiersTLPEOLanguage1 | ✅ |
+| LAST_UPDATE_DATE | QualifiersTLPEOLastUpdateDate | ✅ |
+| QUALIFIER_ID | QualifiersTLPEOQualifierId | — |
+| SOURCE_LANG | QualifiersTLPEOSourceLang | — |
+
+### [[potentialpvo|PotentialPVO]] (HCM · BICC: 2/5)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | STLBusinessGroupId | — |
+| DESCRIPTION | STLSourceDescription | ✅ |
+| LANGUAGE | STLLanguage | — |
+| LAST_UPDATE_DATE | SourcesTranslationPEOLastUpdateDate | ✅ |
+| QUALIFIER_ID | STLSourceId2 | — |
+
+### [[potentialpvo_viewall|PotentialPVO_Viewall]] (HCM · BICC: 2/5)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | STLBusinessGroupId | — |
+| DESCRIPTION | STLSourceDescription | ✅ |
+| LANGUAGE | STLLanguage | — |
+| LAST_UPDATE_DATE | SourcesTranslationPEOLastUpdateDate | ✅ |
+| QUALIFIER_ID | STLSourceId2 | — |
+
+### [[qualifierspvo|QualifiersPVO]] (HCM · BICC: 3/11)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | QualifiersTranslationPEOBusinessGroupId | — |
+| CREATED_BY | QualifiersTranslationPEOCreatedBy | — |
+| CREATION_DATE | QualifiersTranslationPEOCreationDate | — |
+| DESCRIPTION | QualifiersTranslationPEODescription | ✅ |
+| LANGUAGE | QualifiersTranslationPEOLanguage | ✅ |
+| LAST_UPDATE_DATE | QualifiersTranslationPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | QualifiersTranslationPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | QualifiersTranslationPEOLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | QualifiersTranslationPEOObjectVersionNumber | — |
+| QUALIFIER_ID | QualifiersTranslationPEOQualifierId | — |
+| SOURCE_LANG | SourceLang | — |
+
+### [[riskpvo|RiskPVO]] (HCM · BICC: 2/5)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | STLBusinessGroupId | — |
+| DESCRIPTION | STLSourceDescription | ✅ |
+| LANGUAGE | STLLanguage | — |
+| LAST_UPDATE_DATE | SourcesTranslationPEOLastUpdateDate | ✅ |
+| QUALIFIER_ID | STLSourceId2 | — |
+
+### [[riskpvo_viewall|RiskPVO_Viewall]] (HCM · BICC: 2/5)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | STLBusinessGroupId | — |
+| DESCRIPTION | STLSourceDescription | ✅ |
+| LANGUAGE | STLLanguage | — |
+| LAST_UPDATE_DATE | SourcesTranslationPEOLastUpdateDate | ✅ |
+| QUALIFIER_ID | STLSourceId2 | — |
+
+### [[talentscorepvo|TalentScorePVO]] (HCM · BICC: 2/9)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | QTLBusinessGroupId1 | — |
+| BUSINESS_GROUP_ID | STLBusinessGroupId | — |
+| DESCRIPTION | QualifiersTLPEODescription | ✅ |
+| DESCRIPTION | STLSourceDescription | ✅ |
+| LANGUAGE | QTLLanguage | — |
+| LANGUAGE | STLLanguage | — |
+| QUALIFIER_ID | QTLQualifierId1 | — |
+| QUALIFIER_ID | STLSourceId | — |
+| SOURCE_LANG | STLSourceLang | — |

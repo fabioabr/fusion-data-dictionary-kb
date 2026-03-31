@@ -141,6 +141,89 @@ ORDER BY lcd.CONFIGURATION_ID;
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[ledgerconfigdetailextractpvo|LedgerConfigDetailExtractPVO]] (OTHER · BICC: 15/15)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CONFIGURATION_ID | GLConfigDetailsConfigurationId | ✅ |
+| CREATED_BY | GLConfigDetailsCreatedBy | ✅ |
+| CREATION_DATE | GLConfigDetailsCreationDate | ✅ |
+| LAST_UPDATE_DATE | GLConfigDetailsLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | GLConfigDetailsLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | GLConfigDetailsLastUpdatedBy | ✅ |
+| NEXT_ACTION_CODE | GLConfigDetailsNextActionCode | ✅ |
+| OBJECT_ID | GLConfigDetailsObjectId | ✅ |
+| OBJECT_NAME | GLConfigDetailsObjectName | ✅ |
+| OBJECT_TYPE_CODE | GLConfigDetailsObjectTypeCode | ✅ |
+| OBJECT_VERSION_NUMBER | GLConfigDetailsObjectVersionNumber | ✅ |
+| SETUP_STEP_CODE | GLConfigDetailsSetupStepCode | ✅ |
+| STATUS_CODE | GLConfigDetailsStatusCode | ✅ |
+| TAX_DEFAULT_LE_FLAG | GLConfigDetailsTaxDefaultLeFlag | ✅ |
+| TIME_ZONE_DEFAULT_LE_FLAG | GLConfigDetailsTimeZoneDefaultLeFlag | ✅ |
+
+### [[legalentitybalancingsegmentvaluespvo|LegalEntityBalancingSegmentValuesPVO]] (GL · BICC: 5/26)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CONFIGURATION_ID | ConfigurationId | ✅ |
+| CONFIGURATION_ID | LeLedgerConfigDtlsConfigurationId | — |
+| CREATED_BY | GlLedgerConfigDetailsCreatedBy | — |
+| CREATED_BY | LeLedgerConfigDtlsCreatedBy | — |
+| LAST_UPDATE_LOGIN | GlLedgerConfigDetailsLastUpdateLogin | — |
+| LAST_UPDATE_LOGIN | LeLedgerConfigDtlsLastUpdateLogin | — |
+| LAST_UPDATED_BY | GlLedgerConfigDetailsLastUpdatedBy | — |
+| LAST_UPDATED_BY | LeLedgerConfigDtlsLastUpdatedBy | — |
+| NEXT_ACTION_CODE | GlLedgerConfigDetailsNextActionCode | — |
+| NEXT_ACTION_CODE | LeLedgerConfigDtlsNextActionCode | — |
+| OBJECT_ID | LeLedgerConfigDtlsObjectId | ✅ |
+| OBJECT_ID | ObjectId | ✅ |
+| OBJECT_NAME | GlLedgerConfigDetailsObjectName | — |
+| OBJECT_NAME | LeLedgerConfigDtlsObjectName | — |
+| OBJECT_TYPE_CODE | LeLedgerConfigDtlsObjectTypeCode | — |
+| OBJECT_TYPE_CODE | ObjectTypeCode | ✅ |
+| OBJECT_VERSION_NUMBER | GlLedgerConfigDetailsObjectVersionNumber | — |
+| OBJECT_VERSION_NUMBER | LeLedgerConfigDtlsObjectVersionNumber | — |
+| SETUP_STEP_CODE | LeLedgerConfigDtlsSetupStepCode | — |
+| SETUP_STEP_CODE | SetupStepCode | ✅ |
+| STATUS_CODE | GlLedgerConfigDetailsStatusCode | — |
+| STATUS_CODE | LeLedgerConfigDtlsStatusCode | — |
+| TAX_DEFAULT_LE_FLAG | GlLedgerConfigDetailsTaxDefaultLeFlag | — |
+| TAX_DEFAULT_LE_FLAG | LeLedgerConfigDtlsTaxDefaultLeFlag | — |
+| TIME_ZONE_DEFAULT_LE_FLAG | GlLedgerConfigDetailsTimeZoneDefaultLeFlag | — |
+| TIME_ZONE_DEFAULT_LE_FLAG | LeLedgerConfigDtlsTimeZoneDefaultLeFlag | — |
+
+### [[legalentityprimaryledgerpvo|LegalEntityPrimaryLedgerPVO]] (OTHER)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CONFIGURATION_ID | GlLedConfDetConfigurationId | — |
+| NEXT_ACTION_CODE | GlLedConfDetNextActionCode | — |
+| OBJECT_ID | GlLedConfDetObjectId | — |
+| OBJECT_NAME | GlLedConfDetObjectName | — |
+| OBJECT_TYPE_CODE | GlLedConfDetObjectTypeCode | — |
+| SETUP_STEP_CODE | GlLedConfDetSetupStepCode | — |
+| STATUS_CODE | GlLedConfDetStatusCode | — |
+| TAX_DEFAULT_LE_FLAG | GlLedConfDetTaxDefaultLeFlag | — |
+| TIME_ZONE_DEFAULT_LE_FLAG | GlLedConfDetTimeZoneDefaultLeFlag | — |
+
+### [[legalentitypvo|LegalEntityPVO]] (OTHER)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CONFIGURATION_ID | GlLedConfDetConfigurationId | — |
+| NEXT_ACTION_CODE | GlLedConfDetNextActionCode | — |
+| OBJECT_ID | GlLedConfDetObjectId | — |
+| OBJECT_NAME | GlLedConfDetObjectName | — |
+| OBJECT_TYPE_CODE | GlLedConfDetObjectTypeCode | — |
+| SETUP_STEP_CODE | GlLedConfDetSetupStepCode | — |
+| STATUS_CODE | GlLedConfDetStatusCode | — |
+| TAX_DEFAULT_LE_FLAG | GlLedConfDetTaxDefaultLeFlag | — |
+| TIME_ZONE_DEFAULT_LE_FLAG | GlLedConfDetTimeZoneDefaultLeFlag | — |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — GL_LEDGER_CONFIG_DETAILS](https://docs.oracle.com/en/cloud/saas/financials/25a/oedmf/glledgerconfigdetails.html)

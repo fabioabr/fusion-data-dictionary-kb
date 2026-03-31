@@ -94,6 +94,45 @@ WHERE  SYSDATE BETWEEN vl.EFFECTIVE_START_DATE AND vl.EFFECTIVE_END_DATE;
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[payrolldpvo|PayrollDPVO]] (HCM · BICC: 1/5)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BASE_ORG_PAY_METHOD_NAME | BaseOrgPayMethodName | ✅ |
+| EFFECTIVE_END_DATE | EffectiveEndDate1 | — |
+| EFFECTIVE_START_DATE | EffectiveStartDate1 | — |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | — |
+| ORG_PAYMENT_METHOD_ID | OrgPaymentMethodId | — |
+
+### [[payrollpvo|PayrollPVO]] (HCM · BICC: 1/5)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BASE_ORG_PAY_METHOD_NAME | BaseOrgPayMethodName | ✅ |
+| EFFECTIVE_END_DATE | EffectiveEndDate | — |
+| EFFECTIVE_START_DATE | EffectiveStartDate | — |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | — |
+| ORG_PAYMENT_METHOD_ID | OrgPaymentMethodId | — |
+
+### [[personalpaymentmethoddetailsdpvo|PersonalPaymentMethodDetailsDPVO]] (AP · BICC: 2/10)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BANK_ACCOUNT_ID | PaymentSourceDPEOBankAccountId | — |
+| CURRENCY_CODE | OrganizationPaymentMethodDPECurrencyCode | — |
+| EFFECTIVE_END_DATE | OrganizationPaymentMethodDPEEffectiveEndDate | — |
+| EFFECTIVE_END_DATE | PaymentSourceDPEOEffectiveEndDate | — |
+| EFFECTIVE_START_DATE | OrganizationPaymentMethodDPEEffectiveStartDate | ✅ |
+| EFFECTIVE_START_DATE | PaymentSourceDPEOEffectiveStartDate | ✅ |
+| OBJECT_VERSION_NUMBER | OrganizationPaymentMethodDPEObjectVersionNumber | — |
+| OBJECT_VERSION_NUMBER | PaymentSourceDPEOObjectVersionNumber | — |
+| ORG_PAYMENT_METHOD_ID | OrganizationPaymentMethodDPEOrgPaymentMethodId | — |
+| ORG_PAYMENT_METHOD_ID | PaymentSourceDPEOOrgPaymentMethodId | — |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — PAY_ORG_PAY_METHODS_VL](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/payorgpaymethodsvl.html)

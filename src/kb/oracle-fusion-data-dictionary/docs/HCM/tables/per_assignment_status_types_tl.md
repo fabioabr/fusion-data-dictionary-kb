@@ -101,6 +101,62 @@ WHERE  tl.LANGUAGE = 'PTB';
 - Tabela de traduções (_TL) — chave composta por `ASSIGNMENT_STATUS_TYPE_ID` + `LANGUAGE`.
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[assignmentstatustypespvo|AssignmentStatusTypesPVO]] (HCM)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ASSIGNMENT_STATUS_TYPE_ID | AssignmentStatusTypesTransPEOAssignmentStatusTypeId | — |
+| CREATED_BY | AssignmentStatusTypesTransPEOCreatedBy | — |
+| CREATION_DATE | AssignmentStatusTypesTransPEOCreationDate | — |
+| EXTERNAL_STATUS | AssignmentStatusTypesTransPEOExternalStatus | — |
+| LANGUAGE | AssignmentStatusTypesTransPEOLanguage | — |
+| LAST_UPDATE_DATE | AssignmentStatusTypesTransPEOLastUpdateDate | — |
+| LAST_UPDATE_LOGIN | AssignmentStatusTypesTransPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | AssignmentStatusTypesTransPEOLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | AssignmentStatusTypesTransPEOObjectVersionNumber | — |
+| SOURCE_LANG | AssignmentStatusTypesTransPEOSourceLang | — |
+| USER_STATUS | AssignmentStatusTypesTransPEOUserStatus | — |
+
+### [[assignmentstatustypestranslationpvo|AssignmentStatusTypesTranslationPVO]] (HCM · BICC: 4/11)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ASSIGNMENT_STATUS_TYPE_ID | AssignmentStatusTypeId | ✅ |
+| CREATED_BY | AssignmentStatusTranslationCreatedBy | — |
+| CREATION_DATE | AssignmentStatusTranslationCreationDate | — |
+| EXTERNAL_STATUS | AssignmentStatusTranslationExternalStatus | — |
+| LANGUAGE | Language | ✅ |
+| LAST_UPDATE_DATE | AssignmentStatusTranslationLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | AssignmentStatusTranslationLastUpdateLogin | — |
+| LAST_UPDATED_BY | AssignmentStatusTranslationLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | AssignmentStatusTranslationObjectVersionNumber | — |
+| SOURCE_LANG | AssignmentStatusTranslationSourceLang | — |
+| USER_STATUS | AssignmentStatusTranslationUserStatus | ✅ |
+
+### [[globalpersonpvo|GlobalPersonPVO]] (HCM)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ASSIGNMENT_STATUS_TYPE_ID | AssginmentStatusTypesTLPEOAssignmentStatusTypeId | — |
+| LANGUAGE | AssginmentStatusTypesTLPEOLanguage | — |
+| LAST_UPDATE_DATE | AssginmentStatusTypesTLPEOLastUpdateDate | — |
+| SOURCE_LANG | AssginmentStatusTypesTLPEOSourceLang | — |
+| USER_STATUS | AssginmentStatusTypesTLPEOUserStatus | — |
+
+### [[globalpersonpvoviewall|GlobalPersonPVOViewAll]] (HCM)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ASSIGNMENT_STATUS_TYPE_ID | AssginmentStatusTypesTLPEOAssignmentStatusTypeId | — |
+| LANGUAGE | AssginmentStatusTypesTLPEOLanguage | — |
+| LAST_UPDATE_DATE | AssginmentStatusTypesTLPEOLastUpdateDate | — |
+| SOURCE_LANG | AssginmentStatusTypesTLPEOSourceLang | — |
+| USER_STATUS | AssginmentStatusTypesTLPEOUserStatus | — |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — PER_ASSIGNMENT_STATUS_TYPES_TL](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/perassignmentstatustypestl.html)

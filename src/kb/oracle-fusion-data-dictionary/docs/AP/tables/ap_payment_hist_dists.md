@@ -143,6 +143,92 @@ ORDER BY aph.ACCOUNTING_DATE, phd.PAYMENT_HIST_DIST_ID;
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[paymenthistorydistributionextractpvo|PaymentHistoryDistributionExtractPVO]] (OTHER · BICC: 36/36)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACCOUNTING_EVENT_ID | ApPaymentHistDistsAccountingEventId | ✅ |
+| AMOUNT | ApPaymentHistDistsAmount | ✅ |
+| AMOUNT_VARIANCE | ApPaymentHistDistsAmountVariance | ✅ |
+| AWT_RELATED_ID | ApPaymentHistDistsAwtRelatedId | ✅ |
+| BANK_CURR_AMOUNT | ApPaymentHistDistsBankCurrAmount | ✅ |
+| CLEARED_BASE_AMOUNT | ApPaymentHistDistsClearedBaseAmount | ✅ |
+| CREATED_BY | ApPaymentHistDistsCreatedBy | ✅ |
+| CREATION_DATE | ApPaymentHistDistsCreationDate | ✅ |
+| HISTORICAL_FLAG | ApPaymentHistDistsHistoricalFlag | ✅ |
+| INVOICE_ADJUSTMENT_EVENT_ID | ApPaymentHistDistsInvoiceAdjustmentEventId | ✅ |
+| INVOICE_BASE_AMT_VARIANCE | ApPaymentHistDistsInvoiceBaseAmtVariance | ✅ |
+| INVOICE_BASE_QTY_VARIANCE | ApPaymentHistDistsInvoiceBaseQtyVariance | ✅ |
+| INVOICE_DIST_AMOUNT | ApPaymentHistDistsInvoiceDistAmount | ✅ |
+| INVOICE_DIST_BASE_AMOUNT | ApPaymentHistDistsInvoiceDistBaseAmount | ✅ |
+| INVOICE_DISTRIBUTION_ID | ApPaymentHistDistsInvoiceDistributionId | ✅ |
+| INVOICE_PAYMENT_ID | ApPaymentHistDistsInvoicePaymentId | ✅ |
+| LAST_UPDATE_DATE | ApPaymentHistDistsLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ApPaymentHistDistsLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | ApPaymentHistDistsLastUpdatedBy | ✅ |
+| MATURED_BASE_AMOUNT | ApPaymentHistDistsMaturedBaseAmount | ✅ |
+| OBJECT_VERSION_NUMBER | ApPaymentHistDistsObjectVersionNumber | ✅ |
+| PA_ADDITION_FLAG | ApPaymentHistDistsPaAdditionFlag | ✅ |
+| PAID_BASE_AMOUNT | ApPaymentHistDistsPaidBaseAmount | ✅ |
+| PAY_DIST_LOOKUP_CODE | ApPaymentHistDistsPayDistLookupCode | ✅ |
+| PAYMENT_HIST_DIST_ID | ApPaymentHistDistsPaymentHistDistId | ✅ |
+| PAYMENT_HISTORY_ID | ApPaymentHistDistsPaymentHistoryId | ✅ |
+| PROGRAM_APPLICATION_ID | ApPaymentHistDistsProgramApplicationId | ✅ |
+| PROGRAM_ID | ApPaymentHistDistsProgramId | ✅ |
+| PROGRAM_LOGIN_ID | ApPaymentHistDistsProgramLoginId | ✅ |
+| PROGRAM_UPDATE_DATE | ApPaymentHistDistsProgramUpdateDate | ✅ |
+| QUANTITY_VARIANCE | ApPaymentHistDistsQuantityVariance | ✅ |
+| RELEASE_INV_DIST_DERIVED_FROM | ApPaymentHistDistsReleaseInvDistDerivedFrom | ✅ |
+| REQUEST_ID | ApPaymentHistDistsRequestId | ✅ |
+| REVERSAL_FLAG | ApPaymentHistDistsReversalFlag | ✅ |
+| REVERSED_PAY_HIST_DIST_ID | ApPaymentHistDistsReversedPayHistDistId | ✅ |
+| ROUNDING_AMT | ApPaymentHistDistsRoundingAmt | ✅ |
+
+### [[paymenthistorydistributionpvo|PaymentHistoryDistributionPVO]] (AP · BICC: 16/36)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACCOUNTING_EVENT_ID | PaymentHistDistsAccountingEventId | — |
+| AMOUNT | PaymentHistDistsAmount | ✅ |
+| AMOUNT_VARIANCE | PaymentHistDistsAmountVariance | ✅ |
+| AWT_RELATED_ID | PaymentHistDistsAwtRelatedId | — |
+| BANK_CURR_AMOUNT | PaymentHistDistsBankCurrAmount | ✅ |
+| CLEARED_BASE_AMOUNT | PaymentHistDistsClearedBaseAmount | ✅ |
+| CREATED_BY | PaymentHistDistsCreatedBy | — |
+| CREATION_DATE | PaymentHistDistsCreationDate | ✅ |
+| HISTORICAL_FLAG | PaymentHistDistsHistoricalFlag | — |
+| INVOICE_ADJUSTMENT_EVENT_ID | PaymentHistDistsInvoiceAdjustmentEventId | — |
+| INVOICE_BASE_AMT_VARIANCE | PaymentHistDistsInvoiceBaseAmtVariance | ✅ |
+| INVOICE_BASE_QTY_VARIANCE | PaymentHistDistsInvoiceBaseQtyVariance | — |
+| INVOICE_DIST_AMOUNT | PaymentHistDistsInvoiceDistAmount | ✅ |
+| INVOICE_DIST_BASE_AMOUNT | PaymentHistDistsInvoiceDistBaseAmount | ✅ |
+| INVOICE_DISTRIBUTION_ID | PaymentHistDistsInvoiceDistributionId | ✅ |
+| INVOICE_PAYMENT_ID | PaymentHistDistsInvoicePaymentId | — |
+| LAST_UPDATE_DATE | PaymentHistDistsLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | PaymentHistDistsLastUpdateLogin | — |
+| LAST_UPDATED_BY | PaymentHistDistsLastUpdatedBy | — |
+| MATURED_BASE_AMOUNT | PaymentHistDistsMaturedBaseAmount | ✅ |
+| OBJECT_VERSION_NUMBER | PaymentHistDistsObjectVersionNumber | — |
+| PA_ADDITION_FLAG | PaymentHistDistsPaAdditionFlag | — |
+| PAID_BASE_AMOUNT | PaymentHistDistsPaidBaseAmount | ✅ |
+| PAY_DIST_LOOKUP_CODE | PaymentHistDistsPayDistLookupCode | ✅ |
+| PAYMENT_HIST_DIST_ID | PaymentHistDistId | ✅ |
+| PAYMENT_HISTORY_ID | PaymentHistDistsPaymentHistoryId | — |
+| PROGRAM_APPLICATION_ID | PaymentHistDistsProgramApplicationId | — |
+| PROGRAM_ID | PaymentHistDistsProgramId | — |
+| PROGRAM_LOGIN_ID | PaymentHistDistsProgramLoginId | — |
+| PROGRAM_UPDATE_DATE | PaymentHistDistsProgramUpdateDate | — |
+| QUANTITY_VARIANCE | PaymentHistDistsQuantityVariance | — |
+| RELEASE_INV_DIST_DERIVED_FROM | PaymentHistDistsReleaseInvDistDerivedFrom | — |
+| REQUEST_ID | PaymentHistDistsRequestId | — |
+| REVERSAL_FLAG | PaymentHistDistsReversalFlag | — |
+| REVERSED_PAY_HIST_DIST_ID | PaymentHistDistsReversedPayHistDistId | ✅ |
+| ROUNDING_AMT | PaymentHistDistsRoundingAmt | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — AP_PAYMENT_HIST_DISTS](https://docs.oracle.com/en/cloud/saas/financials/25a/oedmf/appaymenthistdists-25734.html)

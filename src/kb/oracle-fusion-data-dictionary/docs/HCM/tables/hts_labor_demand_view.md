@@ -104,3 +104,15 @@ WHERE  ld.REQUIRED_COUNT > NVL(ld.FILLED_COUNT, 0);
 
 - [Oracle Docs — HTS_LABOR_DEMAND_VIEW](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/htslabordemandview.html)
 - [[hcm-module-data-dictionary]] — Dossie do modulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[labordemandpvo|LaborDemandPVO]] (HCM · BICC: 3/3)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| DEMAND_DATE | DemandDate | ✅ |
+| RESOURCES_REQUIRED | ResourcesRequired | ✅ |
+| SCHEDULER_PROFILE_ID | SchedulerProfileId | ✅ |

@@ -97,6 +97,44 @@ Performance + potencial = 9-Box.
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[meetingfactpvo|MeetingFactPVO]] (HCM · BICC: 3/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | MeetingRevieweePEOBusinessGroupId | — |
+| CREATED_BY | MeetingRevieweePEOCreatedBy | — |
+| CREATION_DATE | MeetingRevieweePEOCreationDate | — |
+| LAST_UPDATE_DATE | MeetingRevieweePEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | MeetingRevieweePEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | MeetingRevieweePEOLastUpdatedBy | — |
+| MEETING_ID | MeetingRevieweePEOMeetingId | — |
+| MEETING_REVIEWEE_ID | MeetingRevieweeId | — |
+| OBJECT_VERSION_NUMBER | MeetingRevieweePEOObjectVersionNumber | — |
+| REVIEWEE_ASSIGNMENT_ID | RevieweeAssignmentId | ✅ |
+| REVIEWEE_PERSON_ID | RevieweePersonId | ✅ |
+| REVIEWER_PERSON_ID | ReviewerPersonId | — |
+
+### [[meetingrevieweepvo|MeetingRevieweePVO]] (HCM · BICC: 12/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | BusinessGroupId | ✅ |
+| CREATED_BY | CreatedBy | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | LastUpdatedBy | ✅ |
+| MEETING_ID | MeetingId | ✅ |
+| MEETING_REVIEWEE_ID | MeetingRevieweeId | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | ✅ |
+| REVIEWEE_ASSIGNMENT_ID | RevieweeAssignmentId | ✅ |
+| REVIEWEE_PERSON_ID | RevieweePersonId | ✅ |
+| REVIEWER_PERSON_ID | ReviewerPersonId | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Fusion HCM Tables and Views](https://docs.oracle.com/en/cloud/saas/human-resources/25a/)

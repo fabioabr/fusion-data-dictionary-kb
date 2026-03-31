@@ -99,6 +99,37 @@ WHERE  cdf.DIR_CARD_DEFINITION_ID = :p_def_id
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[dircardcompdefdpvo|DIRCardCompDefDPVO]] (HCM · BICC: 14/22)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ASSOCIABLE_TERM | DIRCardCompDefBaseDPEOAssociableTerm | ✅ |
+| ASSOCIABLE_TRU | DIRCardCompDefBaseDPEOAssociableTru | ✅ |
+| BASE_COMPONENT_NAME | DIRCardCompDefBaseDPEOBaseComponentName | ✅ |
+| BREAKDOWN_COMPONENT_FLAG | DIRCardCompDefBaseDPEOBreakdownComponentFlag | ✅ |
+| CREATED_BY | DIRCardCompDefBaseDPEOCreatedBy | — |
+| CREATION_DATE | DIRCardCompDefBaseDPEOCreationDate | — |
+| DEDUCTION_GROUP_ID | DIRCardCompDefBaseDPEODeductionGroupId | — |
+| DEDUCTION_TYPE_ID | DIRCardCompDefBaseDPEODeductionTypeId | ✅ |
+| DEFAULTING_TRU_COMP_FLAG | DIRCardCompDefBaseDPEODefaultingTruCompFlag | ✅ |
+| DIR_CARD_COMP_DEF_ID | DirCardCompDefId | ✅ |
+| DIR_CARD_DEFINITION_ID | DIRCardCompDefBaseDPEODirCardDefinitionId | ✅ |
+| EFFECTIVE_END_DATE | EffectiveEndDate | ✅ |
+| EFFECTIVE_START_DATE | EffectiveStartDate | ✅ |
+| ELEMENT_TYPE_ID | DIRCardCompDefBaseDPEOElementTypeId | ✅ |
+| LAST_UPDATE_DATE | DIRCardCompDefBaseDPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | DIRCardCompDefBaseDPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | DIRCardCompDefBaseDPEOLastUpdatedBy | — |
+| LEGISLATION_CODE | DIRCardCompDefBaseDPEOLegislationCode | ✅ |
+| LEGISLATIVE_DATA_GROUP_ID | DIRCardCompDefBaseDPEOLegislativeDataGroupId | ✅ |
+| MULTIPLE_ALLOWED | DIRCardCompDefBaseDPEOMultipleAllowed | — |
+| OBJECT_VERSION_NUMBER | DIRCardCompDefBaseDPEOObjectVersionNumber | — |
+| REQUIRED | DIRCardCompDefBaseDPEORequired | — |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — PAY_DIR_CARD_COMP_DEFS_F](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/paydircardcompdefsf.html)

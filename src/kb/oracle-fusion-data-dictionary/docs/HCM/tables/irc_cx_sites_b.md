@@ -107,3 +107,43 @@ WHERE  s.SITE_STATUS = 'ACTIVE';
 
 - [Oracle Docs -- IRC_CX_SITES_B](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/irccxsitesb.html)
 - [[hcm-module-data-dictionary]] -- Dossie do modulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[careersitepagepvo|CareerSitePagePVO]] (HCM · BICC: 9/13)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTIVE_THEME_ID | SitesBPEOActiveThemeId | — |
+| CREATED_BY | SitesBPEOCreatedBy | ✅ |
+| CREATION_DATE | SitesBPEOCreationDate | ✅ |
+| DEFAULT_LANG | SitesBPEODefaultLang | ✅ |
+| LAST_UPDATE_DATE | SitesBPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | SitesBPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | SitesBPEOLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | SitesBPEOObjectVersionNumber | — |
+| SEQUENCE_NUMBER | SitesBPEOSequenceNumber | ✅ |
+| SITE_CODE | SitesBPEOSiteCode | ✅ |
+| SITE_ID | SiteId | ✅ |
+| SITE_NUMBER | SitesBPEOSiteNumber | ✅ |
+| STATUS_CODE | SitesBPEOStatusCode | ✅ |
+
+### [[careersitepvo|CareerSitePVO]] (HCM · BICC: 9/13)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTIVE_THEME_ID | SiteBPEOActiveThemeId | — |
+| CREATED_BY | SiteBPEOCreatedBy | ✅ |
+| CREATION_DATE | SiteBPEOCreationDate | ✅ |
+| DEFAULT_LANG | SiteBPEODefaultLang | ✅ |
+| LAST_UPDATE_DATE | SiteBPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | SiteBPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | SiteBPEOLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | SiteBPEOObjectVersionNumber | — |
+| SEQUENCE_NUMBER | SiteBPEOSequenceNumber | ✅ |
+| SITE_CODE | SiteBPEOSiteCode | ✅ |
+| SITE_ID | SiteId | ✅ |
+| SITE_NUMBER | SiteBPEOSiteNumber | ✅ |
+| STATUS_CODE | SiteBPEOStatusCode | ✅ |

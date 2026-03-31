@@ -93,6 +93,91 @@ WHERE  spp.GOAL_PLAN_SET_ID = :p_id;
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[careerdevpvo|CareerDevPVO]] (HCM · BICC: 1/11)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | GoalPlanSetPlanPEOCreatedBy1 | — |
+| CREATION_DATE | GoalPlanSetPlanPEOCreationDate1 | — |
+| GOAL_PLAN_ID | GoalPlanSetPlanPEOGoalPlanId | — |
+| GOAL_PLAN_SET_ID | GoalPlanSetPlanPEOGoalPlanSetId | — |
+| GOAL_PLAN_SET_PLAN_ID | GoalPlanSetPlanPEOGoalPlanSetPlanId | — |
+| LAST_UPDATE_DATE | GoalPlanSetPlanPEOLastUpdateDate1 | ✅ |
+| LAST_UPDATE_LOGIN | GoalPlanSetPlanPEOLastUpdateLogin1 | — |
+| LAST_UPDATED_BY | GoalPlanSetPlanPEOLastUpdatedBy1 | — |
+| MASS_REQUEST_ID | GoalPlanSetPlanPEOMassRequestId | — |
+| OBJECT_VERSION_NUMBER | GoalPlanSetPlanPEOObjectVersionNumber1 | — |
+| WEIGHTING | GoalPlanSetPlanPEOWeighting | — |
+
+### [[careerdevversionpvo|CareerDevVersionPVO]] (HCM · BICC: 1/11)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | GoalPlanSetPlanPEOCreatedBy1 | — |
+| CREATION_DATE | GoalPlanSetPlanPEOCreationDate1 | — |
+| GOAL_PLAN_ID | GoalPlanSetPlanPEOGoalPlanId | — |
+| GOAL_PLAN_SET_ID | GoalPlanSetPlanPEOGoalPlanSetId | — |
+| GOAL_PLAN_SET_PLAN_ID | GoalPlanSetPlanPEOGoalPlanSetPlanId | — |
+| LAST_UPDATE_DATE | GoalPlanSetPlanPEOLastUpdateDate1 | ✅ |
+| LAST_UPDATE_LOGIN | GoalPlanSetPlanPEOLastUpdateLogin1 | — |
+| LAST_UPDATED_BY | GoalPlanSetPlanPEOLastUpdatedBy1 | — |
+| MASS_REQUEST_ID | GoalPlanSetPlanPEOMassRequestId | — |
+| OBJECT_VERSION_NUMBER | GoalPlanSetPlanPEOObjectVersionNumber1 | — |
+| WEIGHTING | GoalPlanSetPlanPEOWeighting | — |
+
+### [[goalplansetplanpvo|GoalPlanSetPlanPVO]] (HCM · BICC: 4/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | GoalPlanSetPlanPEOBusinessGroupId | — |
+| CREATED_BY | GoalPlanSetPlanPEOCreatedBy | — |
+| CREATION_DATE | GoalPlanSetPlanPEOCreationDate | — |
+| GOAL_PLAN_ID | GoalPlanSetPlanPEOGoalPlanId | — |
+| GOAL_PLAN_SET_ID | GoalPlanSetPlanPEOGoalPlanSetId | — |
+| GOAL_PLAN_SET_PLAN_ID | GoalPlanSetPlanId | ✅ |
+| LAST_UPDATE_DATE | GoalPlanSetPlanPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | GoalPlanSetPlanPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | GoalPlanSetPlanPEOLastUpdatedBy | — |
+| MASS_REQUEST_ID | GoalPlanSetPlanPEOMassRequestId | ✅ |
+| OBJECT_VERSION_NUMBER | GoalPlanSetPlanPEOObjectVersionNumber | — |
+| WEIGHTING | GoalPlanSetPlanPEOWeighting | ✅ |
+
+### [[goalstatusoverviewpvo|GoalStatusOverviewPVO]] (HCM · BICC: 1/11)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | GoalPlanSetPlanPEOCreatedBy1 | — |
+| CREATION_DATE | GoalPlanSetPlanPEOCreationDate1 | — |
+| GOAL_PLAN_ID | GoalPlanSetPlanPEOGoalPlanId | — |
+| GOAL_PLAN_SET_ID | GoalPlanSetPlanPEOGoalPlanSetId | — |
+| GOAL_PLAN_SET_PLAN_ID | GoalPlanSetPlanPEOGoalPlanSetPlanId | — |
+| LAST_UPDATE_DATE | GoalPlanSetPlanPEOLastUpdateDate1 | ✅ |
+| LAST_UPDATE_LOGIN | GoalPlanSetPlanPEOLastUpdateLogin1 | — |
+| LAST_UPDATED_BY | GoalPlanSetPlanPEOLastUpdatedBy1 | — |
+| MASS_REQUEST_ID | GoalPlanSetPlanPEOMassRequestId | — |
+| OBJECT_VERSION_NUMBER | GoalPlanSetPlanPEOObjectVersionNumber1 | — |
+| WEIGHTING | GoalPlanSetPlanPEOWeighting | — |
+
+### [[goalversionstatusoverviewpvo|GoalVersionStatusOverviewPVO]] (HCM · BICC: 1/11)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | GoalPlanSetPlanPEOCreatedBy1 | — |
+| CREATION_DATE | GoalPlanSetPlanPEOCreationDate1 | — |
+| GOAL_PLAN_ID | GoalPlanSetPlanPEOGoalPlanId | — |
+| GOAL_PLAN_SET_ID | GoalPlanSetPlanPEOGoalPlanSetId | — |
+| GOAL_PLAN_SET_PLAN_ID | GoalPlanSetPlanPEOGoalPlanSetPlanId | — |
+| LAST_UPDATE_DATE | GoalPlanSetPlanPEOLastUpdateDate1 | ✅ |
+| LAST_UPDATE_LOGIN | GoalPlanSetPlanPEOLastUpdateLogin1 | — |
+| LAST_UPDATED_BY | GoalPlanSetPlanPEOLastUpdatedBy1 | — |
+| MASS_REQUEST_ID | GoalPlanSetPlanPEOMassRequestId | — |
+| OBJECT_VERSION_NUMBER | GoalPlanSetPlanPEOObjectVersionNumber1 | — |
+| WEIGHTING | GoalPlanSetPlanPEOWeighting | — |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Fusion HCM Tables and Views](https://docs.oracle.com/en/cloud/saas/human-resources/25a/)

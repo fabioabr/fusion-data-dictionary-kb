@@ -94,6 +94,42 @@ WHERE  tl.BOX_LABEL_ID = :p_id AND tl.LANGUAGE = USERENV('LANG');
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[boxlabellookuppvo|BoxLabelLookupPVO]] (HCM · BICC: 3/11)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ANALYTIC_BOX_LABEL_ID | TmplAnylBoxLblTLPEOAnalyticBoxLabelId | — |
+| BOX_LABEL | BoxLabel | ✅ |
+| BUSINESS_GROUP_ID | TmplAnylBoxLblTLPEOBusinessGroupId | — |
+| CREATED_BY | TmplAnylBoxLblTLPEOCreatedBy | — |
+| CREATION_DATE | TmplAnylBoxLblTLPEOCreationDate | — |
+| LANGUAGE | TmplAnylBoxLblTLPEOLanguage | ✅ |
+| LAST_UPDATE_DATE | TmplAnylBoxLblTLPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | TmplAnylBoxLblTLPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | TmplAnylBoxLblTLPEOLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | TmplAnylBoxLblTLPEOObjectVersionNumber | — |
+| SOURCE_LANG | TmplAnylBoxLblTLPEOSourceLang | — |
+
+### [[nboxlabelpvo|NBoxLabelPVO]] (HCM · BICC: 3/11)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ANALYTIC_BOX_LABEL_ID | TmplAnylBoxLblTLPEOAnalyticBoxLabelId | — |
+| BOX_LABEL | BoxLabel | ✅ |
+| BUSINESS_GROUP_ID | TmplAnylBoxLblTLPEOBusinessGroupId | — |
+| CREATED_BY | TmplAnylBoxLblTLPEOCreatedBy | — |
+| CREATION_DATE | TmplAnylBoxLblTLPEOCreationDate | — |
+| LANGUAGE | TmplAnylBoxLblTLPEOLanguage | ✅ |
+| LAST_UPDATE_DATE | TmplAnylBoxLblTLPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | TmplAnylBoxLblTLPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | TmplAnylBoxLblTLPEOLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | TmplAnylBoxLblTLPEOObjectVersionNumber | — |
+| SOURCE_LANG | TmplAnylBoxLblTLPEOSourceLang | — |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Fusion HCM Tables and Views](https://docs.oracle.com/en/cloud/saas/human-resources/25a/)

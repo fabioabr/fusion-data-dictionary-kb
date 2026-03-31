@@ -103,6 +103,46 @@ WHERE  pc.PERSON_ID = :p_person_id;
 - Dados sensíveis sujeitos a LGPD — acesso deve ser controlado.
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[citizenshippvo|CitizenshipPVO]] (HCM · BICC: 13/13)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | CitizenshipPEOBusinessGroupId | ✅ |
+| CITIZENSHIP_ID | CitizenshipId | ✅ |
+| CITIZENSHIP_STATUS | CitizenshipPEOCitizenshipStatus | ✅ |
+| CREATED_BY | CitizenshipPEOCreatedBy | ✅ |
+| CREATION_DATE | CitizenshipPEOCreationDate | ✅ |
+| DATE_FROM | CitizenshipPEODateFrom | ✅ |
+| DATE_TO | CitizenshipPEODateTo | ✅ |
+| LAST_UPDATE_DATE | CitizenshipPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | CitizenshipPEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | CitizenshipPEOLastUpdatedBy | ✅ |
+| LEGISLATION_CODE | CitizenshipPEOLegislationCode | ✅ |
+| OBJECT_VERSION_NUMBER | CitizenshipPEOObjectVersionNumber | ✅ |
+| PERSON_ID | CitizenshipPEOPersonId | ✅ |
+
+### [[citizenshippvoviewall|CitizenshipPVOViewAll]] (HCM · BICC: 10/13)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | CitizenshipPEOBusinessGroupId | — |
+| CITIZENSHIP_ID | CitizenshipId | ✅ |
+| CITIZENSHIP_STATUS | CitizenshipPEOCitizenshipStatus | ✅ |
+| CREATED_BY | CitizenshipPEOCreatedBy | ✅ |
+| CREATION_DATE | CitizenshipPEOCreationDate | ✅ |
+| DATE_FROM | CitizenshipPEODateFrom | ✅ |
+| DATE_TO | CitizenshipPEODateTo | ✅ |
+| LAST_UPDATE_DATE | CitizenshipPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | CitizenshipPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | CitizenshipPEOLastUpdatedBy | ✅ |
+| LEGISLATION_CODE | CitizenshipPEOLegislationCode | ✅ |
+| OBJECT_VERSION_NUMBER | CitizenshipPEOObjectVersionNumber | — |
+| PERSON_ID | CitizenshipPEOPersonId | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — PER_CITIZENSHIPS](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/percitizenships.html)

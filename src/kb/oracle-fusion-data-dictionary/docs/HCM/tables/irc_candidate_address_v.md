@@ -107,3 +107,14 @@ WHERE  ca.PRIMARY_FLAG = 'Y'
 
 - [Oracle Docs -- IRC_CANDIDATE_ADDRESS_V](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/irccandidateaddressv.html)
 - [[hcm-module-data-dictionary]] -- Dossie do modulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[candidateaddressespvo|CandidateAddressesPVO]] (HCM · BICC: 1/2)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ADDRESS_ID | CandidateAddressPEOAddressId | — |
+| PERSON_ID | PersonId | ✅ |

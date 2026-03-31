@@ -41,7 +41,6 @@ Armazena as **configuracoes de linha** dos estilos de documento de compras (tabe
 > [!note] Sufixo _B
 > O sufixo `_B` indica a **tabela base** (idioma base). Traducoes ficam na tabela correspondente `_TL`.
 
-
 ---
 
 ## 🧠 Propósito de Negócio
@@ -94,13 +93,44 @@ FROM   PO_DOC_STYLE_LINES_B
 WHERE  STYLE_ID = :p_style_id;
 ```
 
-
 ---
 
 ## 🔒 Observações
 
 - Cada estilo pode ter multiplas config de linha.
 - Tabela complementar ao cabecalho do estilo.
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[purchasingdocumentstylelinebextractpvo|PurchasingDocumentStyleLineBExtractPVO]] (PO · BICC: 9/9)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | PODocumentStyleLineBCreatedBy | ✅ |
+| CREATION_DATE | PODocumentStyleLineBCreationDate | ✅ |
+| DOCUMENT_SUBTYPE | DocumentSubtype | ✅ |
+| ENABLED_FLAG | PODocumentStyleLineBEnabledFlag | ✅ |
+| LAST_UPDATE_DATE | PODocumentStyleLineBLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | PODocumentStyleLineBLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | PODocumentStyleLineBLastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | PODocumentStyleLineBObjectVersionNumber | ✅ |
+| STYLE_ID | StyleId | ✅ |
+
+### [[purchasingdocumentstylelinebp|PurchasingDocumentStyleLineBP]] (PO · BICC: 4/9)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | PODocumentStyleLineBCreatedBy | — |
+| CREATION_DATE | PODocumentStyleLineBCreationDate | ✅ |
+| DOCUMENT_SUBTYPE | DocumentSubtype | ✅ |
+| ENABLED_FLAG | PODocumentStyleLineBEnabledFlag | — |
+| LAST_UPDATE_DATE | PODocumentStyleLineBLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | PODocumentStyleLineBLastUpdateLogin | — |
+| LAST_UPDATED_BY | PODocumentStyleLineBLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | PODocumentStyleLineBObjectVersionNumber | — |
+| STYLE_ID | StyleId | ✅ |
 
 ---
 

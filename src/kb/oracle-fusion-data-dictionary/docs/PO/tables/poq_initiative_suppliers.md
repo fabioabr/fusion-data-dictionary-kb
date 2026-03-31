@@ -134,6 +134,49 @@ WHERE  isup.INITIATIVE_ID = :p_initiative_id
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[initiativesupplierextractpvo|InitiativeSupplierExtractPVO]] (PO · BICC: 14/14)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | CreatedBy | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| INIT_SUPPLIER_ID | InitSupplierId | ✅ |
+| INITIATIVE_ID | InitiativeId | ✅ |
+| INTERNAL_RESPONDER_ID | InternalResponderId | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | LastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | ✅ |
+| SEND_INT_QNNAIRE_FLAG | SendIntQnnaireFlag | ✅ |
+| SEND_SUPP_QNNAIRE_FLAG | SendSuppQnnaireFlag | ✅ |
+| SUPP_CONTACT_PARTY_ID | SuppContactPartyId | ✅ |
+| SUPPLIER_ID | SupplierId | ✅ |
+| SUPPLIER_SITE_ID | SupplierSiteId | ✅ |
+
+### [[initiativesupplierpvo|InitiativeSupplierPVO]] (PO · BICC: 15/15)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | InitiativeSupplierCreatedBy | ✅ |
+| CREATION_DATE | InitiativeSupplierCreationDate | ✅ |
+| INIT_SUPPLIER_ID | InitSupplierId | ✅ |
+| INITIATIVE_ID | InitiativeSupplierInitiativeId | ✅ |
+| INTERNAL_RESPONDER_ID | InitiativeSupplierInternalResponderId | ✅ |
+| LAST_UPDATE_DATE | InitiativeSupplierLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | InitiativeSupplierLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | InitiativeSupplierLastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | InitiativeSupplierObjectVersionNumber | ✅ |
+| RESPONSE_PULLED_FLAG | InitiativeSupplierResponsePulledFlag | ✅ |
+| SEND_INT_QNNAIRE_FLAG | InitiativeSupplierSendIntQnnaireFlag | ✅ |
+| SEND_SUPP_QNNAIRE_FLAG | InitiativeSupplierSendSuppQnnaireFlag | ✅ |
+| SUPP_CONTACT_PARTY_ID | InitiativeSupplierSuppContactPartyId | ✅ |
+| SUPPLIER_ID | InitiativeSupplierSupplierId | ✅ |
+| SUPPLIER_SITE_ID | InitiativeSupplierSupplierSiteId | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — Supplier Qualification Management](https://docs.oracle.com/en/cloud/saas/procurement/25a/oedmf/)

@@ -39,7 +39,6 @@ updated_at: 2026-03-25
 
 Armazena os **ratings de performance** dos colaboradores utilizados no Compensation Workbench para orientar decisões de compensação. Vincula avaliações de desempenho ao ciclo de compensação.
 
-
 ---
 
 ## 🧠 Propósito de Negócio
@@ -107,6 +106,50 @@ ORDER BY pr.PERFORMANCE_RATING;
 - Ratings são importados do módulo de Performance Management.
 - O rating orienta a matriz de merit increase (rating x compa-ratio).
 - Contém dados sensíveis — classificar como `restricted`.
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[performanceratingpvo|PerformanceRatingPVO]] (HCM · BICC: 14/15)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ASSIGNMENT_ID | PerformanceRatingPEOAssignmentId | ✅ |
+| CREATED_BY | PerformanceRatingPEOCreatedBy | ✅ |
+| CREATION_DATE | PerformanceRatingPEOCreationDate | ✅ |
+| LAST_UPDATE_DATE | PerformanceRatingPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | PerformanceRatingPEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | PerformanceRatingPEOLastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | PerformanceRatingPEOObjectVersionNumber | ✅ |
+| PERF_COMMENTS | PerformanceRatingPEOPerfComments | — |
+| PERF_DATE | PerformanceRatingPEOPerfDate | ✅ |
+| PERF_ORIG_UPDATED_BY | PerformanceRatingPerfOrigUpdatedBy | ✅ |
+| PERF_RATING | PerformanceRatingPEOPerfRating | ✅ |
+| PERF_RATING_ID | PerfRatingId | ✅ |
+| PERF_UPDATE_DATE | PerformanceRatingPEOPerfUpdateDate | ✅ |
+| PERF_UPDATED_BY | PerformanceRatingPEOPerfUpdatedBy | ✅ |
+| PERSON_ID | PerformanceRatingPEOPersonId | ✅ |
+
+### [[performanceratingpvoviewall|PerformanceRatingPVOViewAll]] (HCM · BICC: 14/15)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ASSIGNMENT_ID | PerformanceRatingPEOAssignmentId | ✅ |
+| CREATED_BY | PerformanceRatingPEOCreatedBy | ✅ |
+| CREATION_DATE | PerformanceRatingPEOCreationDate | ✅ |
+| LAST_UPDATE_DATE | PerformanceRatingPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | PerformanceRatingPEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | PerformanceRatingPEOLastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | PerformanceRatingPEOObjectVersionNumber | ✅ |
+| PERF_COMMENTS | PerformanceRatingPEOPerfComments | — |
+| PERF_DATE | PerformanceRatingPEOPerfDate | ✅ |
+| PERF_ORIG_UPDATED_BY | PerformanceRatingPerfOrigUpdatedBy | ✅ |
+| PERF_RATING | PerformanceRatingPEOPerfRating | ✅ |
+| PERF_RATING_ID | PerfRatingId | ✅ |
+| PERF_UPDATE_DATE | PerformanceRatingPEOPerfUpdateDate | ✅ |
+| PERF_UPDATED_BY | PerformanceRatingPEOPerfUpdatedBy | ✅ |
+| PERSON_ID | PerformanceRatingPEOPersonId | ✅ |
 
 ---
 

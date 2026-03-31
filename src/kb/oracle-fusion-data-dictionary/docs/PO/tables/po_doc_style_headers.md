@@ -38,7 +38,6 @@ updated_at: 2026-03-25
 
 Armazena os **estilos de documento de compras** (Document Styles). Define templates de comportamento para POs controlando campos e funcionalidades habilitados.
 
-
 ---
 
 ## 🧠 Propósito de Negócio
@@ -93,7 +92,6 @@ FROM   PO_DOC_STYLE_HEADERS
 WHERE  STATUS = 'ACTIVE';
 ```
 
-
 ---
 
 ## 🔒 Observações
@@ -101,6 +99,168 @@ WHERE  STATUS = 'ACTIVE';
 - Estilo atribuido ao PO na criacao e controla comportamento.
 - Flags controlam funcionalidades disponiveis.
 - Tabela de configuracao; poucas linhas.
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[draftpurchasingdocumentheaderpvo|DraftPurchasingDocumentHeaderPVO]] (PO · BICC: 1/18)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ADVANCES_FLAG | DocStyleAdvancesFlag | — |
+| CONTRACT_FINANCING_FLAG | DocStyleContractFinancingFlag | — |
+| CREATED_BY | DocStyleCreatedBy | — |
+| CREATION_DATE | DocStyleCreationDate | — |
+| LAST_UPDATE_DATE | DocStyleLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | DocStyleLastUpdateLogin | — |
+| LAST_UPDATED_BY | DocStyleLastUpdatedBy | — |
+| LINE_TYPE_ALLOWED | DocStyleLineTypeAllowed | — |
+| OBJECT_VERSION_NUMBER | DocStyleObjectVersionNumber | — |
+| PRICE_BREAKS_FLAG | DocStylePriceBreaksFlag | — |
+| PRICE_DIFFERENTIALS_FLAG | DocStylePriceDifferentialsFlag | — |
+| PROGRESS_PAYMENT_FLAG | DocStyleProgressPaymentFlag | — |
+| RETAINAGE_FLAG | DocStyleRetainageFlag | — |
+| STATUS | DocStyleStatus | — |
+| STYLE_DESCRIPTION | DocStyleStyleDescription | — |
+| STYLE_ID | DocStyleStyleId | — |
+| STYLE_NAME | DocStyleStyleName | — |
+| STYLE_TYPE | DocStyleStyleType | — |
+
+### [[draftpurchasingdocumentlinelocationpvo|DraftPurchasingDocumentLineLocationPVO]] (PO · BICC: 1/18)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ADVANCES_FLAG | DocStyleAdvancesFlag | — |
+| CONTRACT_FINANCING_FLAG | DocStyleContractFinancingFlag | — |
+| CREATED_BY | DocStyleCreatedBy | — |
+| CREATION_DATE | DocStyleCreationDate | — |
+| LAST_UPDATE_DATE | DocStyleLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | DocStyleLastUpdateLogin | — |
+| LAST_UPDATED_BY | DocStyleLastUpdatedBy | — |
+| LINE_TYPE_ALLOWED | DocStyleLineTypeAllowed | — |
+| OBJECT_VERSION_NUMBER | DocStyleObjectVersionNumber | — |
+| PRICE_BREAKS_FLAG | DocStylePriceBreaksFlag | — |
+| PRICE_DIFFERENTIALS_FLAG | DocStylePriceDifferentialsFlag | — |
+| PROGRESS_PAYMENT_FLAG | DocStyleProgressPaymentFlag | — |
+| RETAINAGE_FLAG | DocStyleRetainageFlag | — |
+| STATUS | DocStyleStatus | — |
+| STYLE_DESCRIPTION | DocStyleStyleDescription | — |
+| STYLE_ID | DocStyleStyleId | — |
+| STYLE_NAME | DocStyleStyleName | — |
+| STYLE_TYPE | DocStyleStyleType | — |
+
+### [[draftpurchasingdocumentlinepvo|DraftPurchasingDocumentLinePVO]] (PO · BICC: 1/18)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ADVANCES_FLAG | DocStyleAdvancesFlag | — |
+| CONTRACT_FINANCING_FLAG | DocStyleContractFinancingFlag | — |
+| CREATED_BY | DocStyleCreatedBy | — |
+| CREATION_DATE | DocStyleCreationDate | — |
+| LAST_UPDATE_DATE | DocStyleLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | DocStyleLastUpdateLogin | — |
+| LAST_UPDATED_BY | DocStyleLastUpdatedBy | — |
+| LINE_TYPE_ALLOWED | DocStyleLineTypeAllowed | — |
+| OBJECT_VERSION_NUMBER | DocStyleObjectVersionNumber | — |
+| PRICE_BREAKS_FLAG | DocStylePriceBreaksFlag | — |
+| PRICE_DIFFERENTIALS_FLAG | DocStylePriceDifferentialsFlag | — |
+| PROGRESS_PAYMENT_FLAG | DocStyleProgressPaymentFlag | — |
+| RETAINAGE_FLAG | DocStyleRetainageFlag | — |
+| STATUS | DocStyleStatus | — |
+| STYLE_DESCRIPTION | DocStyleStyleDescription | — |
+| STYLE_ID | DocStyleStyleId | — |
+| STYLE_NAME | DocStyleStyleName | — |
+| STYLE_TYPE | DocStyleStyleType | — |
+
+### [[purchasingdocumentstyleheaderextractpvo|PurchasingDocumentStyleHeaderExtractPVO]] (PO · BICC: 17/21)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ADVANCES_FLAG | AdvancesFlag | — |
+| CONFIGURED_ITEM_FLAG | ConfiguredItemFlag | ✅ |
+| CONSIGNED_ITEMS_FLAG | ConsignedItemsFlag | ✅ |
+| CONTRACT_FINANCING_FLAG | ContractFinancingFlag | ✅ |
+| CREATED_BY | CreatedBy | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | LastUpdatedBy | ✅ |
+| LINE_TYPE_ALLOWED | LineTypeAllowed | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | ✅ |
+| OUTSIDE_PROCESSING_FLAG | OutsideProcessingFlag | ✅ |
+| PRICE_BREAKS_FLAG | PriceBreaksFlag | ✅ |
+| PRICE_DIFFERENTIALS_FLAG | PriceDifferentialsFlag | — |
+| PROGRESS_PAYMENT_FLAG | ProgressPaymentFlag | — |
+| RETAINAGE_FLAG | RetainageFlag | — |
+| STATUS | Status | ✅ |
+| STYLE_DESCRIPTION | StyleDescription | ✅ |
+| STYLE_ID | StyleId | ✅ |
+| STYLE_NAME | StyleName | ✅ |
+| STYLE_TYPE | StyleType | ✅ |
+
+### [[purchasingdocumentstylelinebextractpvo|PurchasingDocumentStyleLineBExtractPVO]] (PO · BICC: 15/15)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ADVANCES_FLAG | PODocumentStyleHeaderAdvancesFlag | ✅ |
+| CONSIGNED_ITEMS_FLAG | PODocumentStyleHeaderConsignedItemsFlag | ✅ |
+| CONTRACT_FINANCING_FLAG | PODocumentStyleHeaderContractFinancingFlag | ✅ |
+| CREATION_DATE | PODocumentStyleHeaderCreationDate | ✅ |
+| LAST_UPDATE_DATE | PODocumentStyleHeaderLastUpdateDate | ✅ |
+| LINE_TYPE_ALLOWED | PODocumentStyleHeaderLineTypeAllowed | ✅ |
+| PRICE_BREAKS_FLAG | PODocumentStyleHeaderPriceBreaksFlag | ✅ |
+| PRICE_DIFFERENTIALS_FLAG | PODocumentStyleHeaderPriceDifferentialsFlag | ✅ |
+| PROGRESS_PAYMENT_FLAG | PODocumentStyleHeaderProgressPaymentFlag | ✅ |
+| RETAINAGE_FLAG | PODocumentStyleHeaderRetainageFlag | ✅ |
+| STATUS | PODocumentStyleHeaderStatus | ✅ |
+| STYLE_DESCRIPTION | PODocumentStyleHeaderStyleDescription | ✅ |
+| STYLE_ID | PODocumentStyleHeaderStyleId | ✅ |
+| STYLE_NAME | PODocumentStyleHeaderStyleName | ✅ |
+| STYLE_TYPE | PODocumentStyleHeaderStyleType | ✅ |
+
+### [[purchasingdocumentstylelinebp|PurchasingDocumentStyleLineBP]] (PO · BICC: 8/15)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ADVANCES_FLAG | PODocumentStyleHeaderAdvancesFlag | — |
+| CONSIGNED_ITEMS_FLAG | PODocumentStyleHeaderConsignedItemsFlag | ✅ |
+| CONTRACT_FINANCING_FLAG | PODocumentStyleHeaderContractFinancingFlag | — |
+| CREATION_DATE | PODocumentStyleHeaderCreationDate | — |
+| LAST_UPDATE_DATE | PODocumentStyleHeaderLastUpdateDate | ✅ |
+| LINE_TYPE_ALLOWED | PODocumentStyleHeaderLineTypeAllowed | ✅ |
+| PRICE_BREAKS_FLAG | PODocumentStyleHeaderPriceBreaksFlag | — |
+| PRICE_DIFFERENTIALS_FLAG | PODocumentStyleHeaderPriceDifferentialsFlag | — |
+| PROGRESS_PAYMENT_FLAG | PODocumentStyleHeaderProgressPaymentFlag | ✅ |
+| RETAINAGE_FLAG | PODocumentStyleHeaderRetainageFlag | — |
+| STATUS | PODocumentStyleHeaderStatus | ✅ |
+| STYLE_DESCRIPTION | PODocumentStyleHeaderStyleDescription | ✅ |
+| STYLE_ID | PODocumentStyleHeaderStyleId | — |
+| STYLE_NAME | PODocumentStyleHeaderStyleName | ✅ |
+| STYLE_TYPE | PODocumentStyleHeaderStyleType | ✅ |
+
+### [[purchasingdocumentversionpvo|PurchasingDocumentVersionPVO]] (PO · BICC: 2/18)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ADVANCES_FLAG | DocStyleAdvancesFlag | — |
+| CONTRACT_FINANCING_FLAG | DocStyleContractFinancingFlag | — |
+| CREATED_BY | DocStyleCreatedBy | — |
+| CREATION_DATE | DocStyleCreationDate | — |
+| LAST_UPDATE_DATE | DocStyleLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | DocStyleLastUpdateLogin | — |
+| LAST_UPDATED_BY | DocStyleLastUpdatedBy | — |
+| LINE_TYPE_ALLOWED | DocStyleLineTypeAllowed | — |
+| OBJECT_VERSION_NUMBER | DocStyleObjectVersionNumber | — |
+| PRICE_BREAKS_FLAG | DocStylePriceBreaksFlag | — |
+| PRICE_DIFFERENTIALS_FLAG | DocStylePriceDifferentialsFlag | — |
+| PROGRESS_PAYMENT_FLAG | DocStyleProgressPaymentFlag | — |
+| RETAINAGE_FLAG | DocStyleRetainageFlag | — |
+| STATUS | DocStyleStatus | — |
+| STYLE_DESCRIPTION | DocStyleStyleDescription | — |
+| STYLE_ID | DocStyleStyleId | ✅ |
+| STYLE_NAME | DocStyleStyleName | — |
+| STYLE_TYPE | DocStyleStyleType | — |
 
 ---
 

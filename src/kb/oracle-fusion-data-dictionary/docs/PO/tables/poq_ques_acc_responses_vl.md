@@ -128,6 +128,63 @@ WHERE  ar.ACCEPTABLE_FLAG = 'Y'
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[questionacceptableresponsespvo|QuestionAcceptableResponsesPVO]] (PO · BICC: 21/23)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACC_RESPONSE_ID | AccResponseId | ✅ |
+| ATTACHMENT_ALLOWED_CODE | QuestionAcceptableResponseAttachmentAllowedCode | ✅ |
+| ATTRIBUTE_CODE | QuestionAcceptableResponseAttributeCode | ✅ |
+| ATTRIBUTE_CODE2 | QuestionAcceptableResponseAttributeCode2 | ✅ |
+| ATTRIBUTE_ID | QuestionAcceptableResponseAttributeId | ✅ |
+| CATEGORY_ID | QuestionAcceptableResponseCategoryId | ✅ |
+| CATEGORY_NAME | QuestionAcceptableResponseCategoryName | ✅ |
+| CREATED_BY | QuestionAcceptableResponseCreatedBy | ✅ |
+| CREATION_DATE | QuestionAcceptableResponseCreationDate | ✅ |
+| CRITICAL_RESPONSE_FLAG | CriticalResponseFlag | — |
+| DISPLAY_SEQUENCE | QuestionAcceptableResponseDisplaySequence | ✅ |
+| EXCLUDE_SCORING_FLAG | ExcludeScoringFlag | — |
+| LAST_UPDATE_DATE | QuestionAcceptableResponseLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | QuestionAcceptableResponseLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | QuestionAcceptableResponseLastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | QuestionAcceptableResponseObjectVersionNumber | ✅ |
+| ORIGINAL_ACC_RESPONSE_ID | QuestionAcceptableResponseOriginalAccResponseId | ✅ |
+| PARENT_CATEGORY_ID | QuestionAcceptableResponseParentCategoryId | ✅ |
+| PREFERRED_RESPONSE_FLAG | QuestionAcceptableResponsePreferredResponseFlag | ✅ |
+| PURCHASING_CAT_FLAG | QuestionAcceptableResponsePurchasingCatFlag | ✅ |
+| QUESTION_ID | QuestionAcceptableResponseQuestionId | ✅ |
+| RESPONSE_TEXT | QuestionAcceptableResponseResponseText | ✅ |
+| SCORE | QuestionAcceptableResponseScore | ✅ |
+
+### [[questionnaireresponsevaluespvo|QuestionnaireResponseValuesPVO]] (PO · BICC: 20/20)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACC_RESPONSE_ID | QuestionAccResponseAccResponseId | ✅ |
+| ATTACHMENT_ALLOWED_CODE | QuestionAccResponseAttachmentAllowedCode | ✅ |
+| ATTRIBUTE_CODE | QuestionAccResponseAttributeCode | ✅ |
+| ATTRIBUTE_CODE2 | QuestionAccResponseAttributeCode2 | ✅ |
+| ATTRIBUTE_ID | QuestionAccResponseAttributeId | ✅ |
+| CATEGORY_ID | QuestionAccResponseCategoryId | ✅ |
+| CATEGORY_NAME | QuestionAccResponseCategoryName | ✅ |
+| CREATED_BY | QuestionAccResponseCreatedBy | ✅ |
+| CREATION_DATE | QuestionAccResponseCreationDate | ✅ |
+| DISPLAY_SEQUENCE | QuestionAccResponseDisplaySequence | ✅ |
+| LAST_UPDATE_DATE | QuestionAccResponseLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | QuestionAccResponseLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | QuestionAccResponseLastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | QuestionAccResponseObjectVersionNumber | ✅ |
+| ORIGINAL_ACC_RESPONSE_ID | QuestionAccResponseOriginalAccResponseId | ✅ |
+| PARENT_CATEGORY_ID | QuestionAccResponseParentCategoryId | ✅ |
+| PREFERRED_RESPONSE_FLAG | QuestionAccResponsePreferredResponseFlag | ✅ |
+| PURCHASING_CAT_FLAG | QuestionAccResponsePurchasingCatFlag | ✅ |
+| QUESTION_ID | QuestionAccResponseQuestionId | ✅ |
+| RESPONSE_TEXT | QuestionAccResponseResponseText | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — Supplier Qualification Management](https://docs.oracle.com/en/cloud/saas/procurement/25a/oedmf/)

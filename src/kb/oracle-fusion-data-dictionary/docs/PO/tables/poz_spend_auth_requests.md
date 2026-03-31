@@ -129,3 +129,42 @@ GROUP BY sar.ORG_ID;
 
 - [Oracle Docs — Spend Authorization](https://docs.oracle.com/en/cloud/saas/procurement/25a/oedmf/poz-tables.html)
 - [[po-module-data-dictionary]] — Dossiê do módulo Procurement
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[supplierpvo|SupplierPVO]] (PO · BICC: 1/2)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| AUTHORIZATION_REQUEST_ID | SpendAuthReqAuthorizationRequestId | — |
+| SPEND_AUTH_JUSTIFICATION | SpendAuthReqSpendAuthJustification | ✅ |
+
+### [[supplierspendauthorizationrequestspvo|SupplierSpendAuthorizationRequestsPVO]] (PO · BICC: 9/23)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| APPROVAL_INSTANCE_ID | SupplierSpendAuthRequestApprovalInstanceId | — |
+| APPROVED_BY_PERSON_ID | SupplierSpendAuthRequestApprovedByPersonId | — |
+| APPROVED_DATE | SupplierSpendAuthRequestApprovedDate | ✅ |
+| AUCTION_HEADER_ID | SupplierSpendAuthRequestAuctionHeaderId | — |
+| AUTHORIZATION_REQUEST_ID | AuthorizationRequestId | ✅ |
+| CREATED_BY | SupplierSpendAuthRequestSupplierSpendAuthRequestCreatedBy | — |
+| CREATION_DATE | SupplierSpendAuthRequestCreationDate | — |
+| CURRENT_FLAG | SupplierSpendAuthRequestCurrentFlag | — |
+| LAST_UPDATE_DATE | SupplierSpendAuthRequestLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | SupplierSpendAuthRequestLastUpdateLogin | — |
+| LAST_UPDATED_BY | SupplierSpendAuthRequestLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | SupplierSpendAuthRequestObjectVersionNumber | — |
+| PRC_BU_ID | SupplierSpendAuthRequestPrcBuId | — |
+| REJECT_REASON | SupplierSpendAuthRequestRejectReason | ✅ |
+| REJECTED_BY_PERSON_ID | SupplierSpendAuthRequestRejectedByPersonId | — |
+| REJECTED_DATE | SupplierSpendAuthRequestRejectedDate | — |
+| REQUEST_NUMBER | SupplierSpendAuthRequestRequestNumber | ✅ |
+| REQUEST_SOURCE | SupplierSpendAuthRequestRequestSource | ✅ |
+| REQUEST_STATUS | SupplierSpendAuthRequestRequestStatus | ✅ |
+| REQUESTED_DATE | SupplierSpendAuthRequestRequestedDate | ✅ |
+| REQUESTER_PERSON_ID | SupplierSpendAuthRequestRequesterPersonId | — |
+| SPEND_AUTH_JUSTIFICATION | SupplierSpendAuthRequestSpendAuthJustification | ✅ |
+| VENDOR_ID | SupplierSpendAuthRequestVendorId | — |

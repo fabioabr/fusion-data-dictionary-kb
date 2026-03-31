@@ -35,8 +35,6 @@ updated_at: 2026-03-25
 
 Define os parâmetros de entrada (inputs) para as regras de workforce management, especificando quais dados são necessários para a execução de cada regra.
 
-
-
 ---
 
 ## 🧠 Propósito de Negócio
@@ -101,6 +99,37 @@ WHERE  t.RULE_ID = :p_rule_id
 ## 🔒 Observações
 
 - Área funcional: Rules Engine dentro do Oracle Fusion Cloud HCM.
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[ruleinputpvo|RuleInputPVO]] (GL · BICC: 20/22)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | RuleInputPEOCreatedBy | ✅ |
+| CREATION_DATE | RuleInputPEOCreationDate | ✅ |
+| DISPLAY_SEQUENCE | RuleInputPEODisplaySequence | ✅ |
+| DISPLAY_TYPE | RuleInputPEODisplayType | ✅ |
+| DISPLAY_VALUE | RuleInputPEODisplayValue | ✅ |
+| ENTERPRISE_ID | RuleInputPEOEnterpriseId | — |
+| INPUT_NAME | RuleInputPEOInputName | ✅ |
+| LAST_UPDATE_DATE | RuleInputPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | RuleInputPEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | RuleInputPEOLastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | RuleInputPEOObjectVersionNumber | — |
+| PARM_VALUE_REQUIRED | RuleInputPEOParmValueRequired | ✅ |
+| RULE_ID | RuleInputPEORuleId | ✅ |
+| RULE_INPUT_ID | RuleInputPEORuleInputId | ✅ |
+| RULE_PARAMETER_TYPE | RuleInputPEORuleParameterType | ✅ |
+| RULE_TMPLT_INPUT_ID | RuleInputPEORuleTmpltInputId | ✅ |
+| TCAT_ID | RuleInputPEOTcatId | ✅ |
+| USER_DEFINED_NAME | RuleInputPEOUserDefinedName | ✅ |
+| VALUE_DATE | RuleInputPEOValueDate | ✅ |
+| VALUE_NUMBER | RuleInputPEOValueNumber | ✅ |
+| VALUE_SET_ID | RuleInputPEOValueSetId | ✅ |
+| VALUE_TEXT | RuleInputPEOValueText | ✅ |
 
 ---
 

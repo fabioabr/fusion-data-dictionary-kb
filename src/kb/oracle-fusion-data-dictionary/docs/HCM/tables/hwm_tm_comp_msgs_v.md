@@ -39,7 +39,6 @@ View que exibe mensagens de compliance e conformidade geradas durante o processa
 > [!note] Sufixo _V
 > O sufixo `_V` indica **view** — objeto somente leitura que consolida dados de uma ou mais tabelas para facilitar consultas.
 
-
 ---
 
 ## 🧠 Propósito de Negócio
@@ -101,6 +100,54 @@ WHERE  t.MESSAGE_TYPE = 'ERROR'
 
 - View somente leitura: não permite INSERT, UPDATE ou DELETE direto.
 - Área funcional: Time Management dentro do Oracle Fusion Cloud HCM.
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[timecompliancemessagepvo|TimeComplianceMessagePVO]] (HCM · BICC: 22/39)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| APPLICATION_SHORT_NAME | TimeComplianceMessagePEOApplicationShortName | ✅ |
+| COMPLIANCE_COMMIT_TIMESTAMP | TimeComplianceMessagePEOComplianceCommitTimestamp | ✅ |
+| COMPLIANCE_CREATED_BY | TimeComplianceMessagePEOComplianceCreatedBy | ✅ |
+| COMPLIANCE_CREATION_DATE | TimeComplianceMessagePEOComplianceCreationDate | ✅ |
+| COMPLIANCE_DELETE_FLAG | TimeComplianceMessagePEOComplianceDeleteFlag | — |
+| COMPLIANCE_GRP_TYPE_ID | TimeComplianceMessagePEOComplianceGrpTypeId | — |
+| COMPLIANCE_ID | TimeComplianceMessagePEOComplianceId | ✅ |
+| COMPLIANCE_LAST_UPDATE_DATE | TimeComplianceMessagePEOComplianceLastUpdateDate | ✅ |
+| COMPLIANCE_LAST_UPDATE_LOGIN | TimeComplianceMessagePEOComplianceLastUpdateLogin | ✅ |
+| COMPLIANCE_LAST_UPDATED_BY | TimeComplianceMessagePEOComplianceLastUpdatedBy | ✅ |
+| COMPLIANCE_LATEST_VERSION | TimeComplianceMessagePEOComplianceLatestVersion | — |
+| COMPLIANCE_START_TIME | TimeComplianceMessagePEOComplianceStartTime | ✅ |
+| COMPLIANCE_STOP_TIME | TimeComplianceMessagePEOComplianceStopTime | ✅ |
+| COMPLIANCE_SUBRESOURCE_ID | TimeComplianceMessagePEOComplianceSubresourceId | — |
+| CREATED_BY | TimeComplianceMessagePEOCreatedBy | ✅ |
+| CREATION_DATE | TimeComplianceMessagePEOCreationDate | ✅ |
+| DATE_FROM | TimeComplianceMessagePEODateFrom | ✅ |
+| DATE_TO | TimeComplianceMessagePEODateTo | ✅ |
+| DAY_DELETE_FLAG | TimeComplianceMessagePEODayDeleteFlag | — |
+| DAY_LATEST_VERSION | TimeComplianceMessagePEODayLatestVersion | — |
+| DAY_TM_REC_GRP_ID | TimeComplianceMessagePEODayTmRecGrpId | — |
+| DAY_TM_REC_GRP_VERSION | TimeComplianceMessagePEODayTmRecGrpVersion | — |
+| LAST_UPDATE_DATE | TimeComplianceMessagePEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | TimeComplianceMessagePEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | TimeComplianceMessagePEOLastUpdatedBy | ✅ |
+| MESSAGE_LEVEL | TimeComplianceMessagePEOMessageLevel | ✅ |
+| MESSAGE_NAME | TimeComplianceMessagePEOMessageName | ✅ |
+| RESOURCE_ID | TimeComplianceMessagePEOResourceId | — |
+| TC_DELETE_FLAG | TimeComplianceMessagePEOTcDeleteFlag | — |
+| TC_LATEST_VERSION | TimeComplianceMessagePEOTcLatestVersion | — |
+| TC_TM_REC_GRP_ID | TimeComplianceMessagePEOTcTmRecGrpId | — |
+| TC_TM_REC_GRP_VERSION | TimeComplianceMessagePEOTcTmRecGrpVersion | — |
+| TE_DELETE_FLAG | TimeComplianceMessagePEOTeDeleteFlag | — |
+| TE_LATEST_VERSION | TimeComplianceMessagePEOTeLatestVersion | — |
+| TE_TM_REC_ID | TimeComplianceMessagePEOTeTmRecId | ✅ |
+| TE_TM_REC_VERSION | TimeComplianceMessagePEOTeTmRecVersion | ✅ |
+| TM_BLDG_BLK_ID | TimeComplianceMessagePEOTmBldgBlkId | — |
+| TM_BLDG_BLK_VERSION | TimeComplianceMessagePEOTmBldgBlkVersion | — |
+| TM_REP_MSGS_ID | TimeComplianceMessagePEOTmRepMsgsId | ✅ |
 
 ---
 

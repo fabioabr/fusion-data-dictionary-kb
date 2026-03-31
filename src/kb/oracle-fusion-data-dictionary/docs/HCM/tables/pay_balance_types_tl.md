@@ -97,6 +97,26 @@ WHERE  tl.BALANCE_TYPE_ID = :p_balance_type_id
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[balancetypetranslation|BalanceTypeTranslation]] (GL · BICC: 8/11)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BALANCE_NAME | BalanceTypeTranslationPEOBalanceName | ✅ |
+| BALANCE_TYPE_ID | BalanceTypeId | ✅ |
+| CREATED_BY | BalanceTypeTranslationPEOCreatedBy | ✅ |
+| CREATION_DATE | BalanceTypeTranslationPEOCreationDate | ✅ |
+| LANGUAGE | Language | ✅ |
+| LAST_UPDATE_DATE | BalanceTypeTranslationPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | BalanceTypeTranslationPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | BalanceTypeTranslationPEOLastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | BalanceTypeTranslationPEOObjectVersionNumber | — |
+| REPORTING_NAME | BalanceTypeTranslationPEOReportingName | — |
+| SOURCE_LANG | BalanceTypeTranslationPEOSourceLang | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — PAY_BALANCE_TYPES_TL](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/paybalancetypestl.html)

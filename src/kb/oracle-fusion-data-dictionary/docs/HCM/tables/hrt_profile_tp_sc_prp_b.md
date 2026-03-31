@@ -102,3 +102,164 @@ WHERE  p.PROFILE_TYPE_SECTION_ID = :p_section_id;
 
 - [Oracle Docs — HRT_PROFILE_TP_SC_PRP_B](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/hrtprofiletpscprpb.html)
 - [[hcm-module-data-dictionary]] — Dossie do modulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[competencycontentitemratingpvo|CompetencyContentItemRatingPVO]] (HCM · BICC: 2/14)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | ProfileTpScPrpBPEOBusinessGroupId | — |
+| COLUMN_NAME | ProfileTpScPrpBPEOColumnName | — |
+| DEFAULT_VALUE | ProfileTpScPrpBPEODefaultValue | — |
+| DISPLAY_FLAG | DisplayFlag | — |
+| FIELD_NAME | FieldName | — |
+| LAST_UPDATE_DATE | ProfileTpScPrpBPEOLastUpdateDate | ✅ |
+| MODULE_ID | ProfileTpScPrpBPEOModuleId | — |
+| PROPERTY_SOURCE | PropertySource | — |
+| REQUIRED_FLAG | RequiredFlag | — |
+| SEARCH_FLAG | SearchFlag | — |
+| SECTION_ID | ProfileTpScPrpBPEOSectionId | — |
+| SECTION_PROP_ID | ProfileTpScPrpBPEOSectionPropId | ✅ |
+| VALUE_SET_NAME | ValueSetName | — |
+| VIEW_ATTRB_NAME | ViewAttrbName | — |
+
+### [[impactratinglevelpvo|ImpactRatingLevelPVO]] (HCM · BICC: 2/14)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | ProfileTpScPrpBPEOBusinessGroupId | — |
+| COLUMN_NAME | ProfileTpScPrpBPEOColumnName | — |
+| DEFAULT_VALUE | ProfileTpScPrpBPEODefaultValue | — |
+| DISPLAY_FLAG | DisplayFlag | — |
+| FIELD_NAME | FieldName | — |
+| LAST_UPDATE_DATE | ProfileTpScPrpBPEOLastUpdateDate | ✅ |
+| MODULE_ID | ProfileTpScPrpBPEOModuleId | — |
+| PROPERTY_SOURCE | PropertySource | — |
+| REQUIRED_FLAG | RequiredFlag | — |
+| SEARCH_FLAG | SearchFlag | — |
+| SECTION_ID | ProfileTpScPrpBPEOSectionId | — |
+| SECTION_PROP_ID | ProfileTpScPrpBPEOSectionPropId | ✅ |
+| VALUE_SET_NAME | ValueSetName | — |
+| VIEW_ATTRB_NAME | ViewAttrbName | — |
+
+### [[potentialratinglevelpvo|PotentialRatingLevelPVO]] (HCM · BICC: 3/14)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | ProfileTpScPrpBPEOBusinessGroupId | ✅ |
+| COLUMN_NAME | ProfileTpScPrpBPEOColumnName | — |
+| DEFAULT_VALUE | ProfileTpScPrpBPEODefaultValue | — |
+| DISPLAY_FLAG | DisplayFlag | — |
+| FIELD_NAME | FieldName | — |
+| LAST_UPDATE_DATE | ProfileTpScPrpBPEOLastUpdateDate | ✅ |
+| MODULE_ID | ProfileTpScPrpBPEOModuleId | — |
+| PROPERTY_SOURCE | PropertySource | — |
+| REQUIRED_FLAG | RequiredFlag | — |
+| SEARCH_FLAG | SearchFlag | — |
+| SECTION_ID | ProfileTpScPrpBPEOSectionId | — |
+| SECTION_PROP_ID | ProfileTpScPrpBPEOSectionPropId | ✅ |
+| VALUE_SET_NAME | ValueSetName | — |
+| VIEW_ATTRB_NAME | ViewAttrbName | — |
+
+### [[profiletypesectionpropertypvo|ProfileTypeSectionPropertyPVO]] (HCM · BICC: 3/19)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | ProfileTypeSectionPropertyBPEOBusinessGroupId | ✅ |
+| COLUMN_NAME | ProfileTypeSectionPropertyBPEOColumnName | — |
+| CREATED_BY | ProfileTypeSectionPropertyBPEOCreatedBy | — |
+| CREATION_DATE | ProfileTypeSectionPropertyBPEOCreationDate | — |
+| DEFAULT_VALUE | ProfileTypeSectionPropertyBPEODefaultValue | — |
+| DISPLAY_FLAG | ProfileTypeSectionPropertyBPEODisplayFlag | — |
+| FIELD_NAME | ProfileTypeSectionPropertyBPEOFieldName | — |
+| LAST_UPDATE_DATE | ProfileTypeSectionPropertyBPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ProfileTypeSectionPropertyBPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | ProfileTypeSectionPropertyBPEOLastUpdatedBy | — |
+| MODULE_ID | ProfileTypeSectionPropertyBPEOModuleId | — |
+| OBJECT_VERSION_NUMBER | ProfileTypeSectionPropertyBPEOObjectVersionNumber | — |
+| PROPERTY_SOURCE | ProfileTypeSectionPropertyBPEOPropertySource | — |
+| REQUIRED_FLAG | ProfileTypeSectionPropertyBPEORequiredFlag | — |
+| SEARCH_FLAG | ProfileTypeSectionPropertyBPEOSearchFlag | — |
+| SECTION_ID | ProfileTypeSectionPropertyBPEOSectionId | — |
+| SECTION_PROP_ID | ProfileTypeSectionPropertyBPEOSectionPropId | ✅ |
+| VALUE_SET_NAME | ProfileTypeSectionPropertyBPEOValueSetName | — |
+| VIEW_ATTRB_NAME | ProfileTypeSectionPropertyBPEOViewAttrbName | — |
+
+### [[readingratinglevelpvo|ReadingRatingLevelPVO]] (HCM · BICC: 1/14)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | ProfileTpScPrpBPEOBusinessGroupId | — |
+| COLUMN_NAME | ProfileTpScPrpBPEOColumnName | — |
+| DEFAULT_VALUE | ProfileTpScPrpBPEODefaultValue | — |
+| DISPLAY_FLAG | DisplayFlag | — |
+| FIELD_NAME | FieldName | — |
+| LAST_UPDATE_DATE | ProfileTpScPrpBPEOLastUpdateDate | ✅ |
+| MODULE_ID | ProfileTpScPrpBPEOModuleId | — |
+| PROPERTY_SOURCE | PropertySource | — |
+| REQUIRED_FLAG | RequiredFlag | — |
+| SEARCH_FLAG | SearchFlag | — |
+| SECTION_ID | ProfileTpScPrpBPEOSectionId | — |
+| SECTION_PROP_ID | ProfileTpScPrpBPEOSectionPropId | — |
+| VALUE_SET_NAME | ValueSetName | — |
+| VIEW_ATTRB_NAME | ViewAttrbName | — |
+
+### [[riskratinglevelpvo|RiskRatingLevelPVO]] (HCM · BICC: 2/14)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | ProfileTpScPrpBPEOBusinessGroupId | — |
+| COLUMN_NAME | ProfileTpScPrpBPEOColumnName | — |
+| DEFAULT_VALUE | ProfileTpScPrpBPEODefaultValue | — |
+| DISPLAY_FLAG | DisplayFlag | — |
+| FIELD_NAME | FieldName | — |
+| LAST_UPDATE_DATE | ProfileTpScPrpBPEOLastUpdateDate | ✅ |
+| MODULE_ID | ProfileTpScPrpBPEOModuleId | — |
+| PROPERTY_SOURCE | PropertySource | — |
+| REQUIRED_FLAG | RequiredFlag | — |
+| SEARCH_FLAG | SearchFlag | — |
+| SECTION_ID | ProfileTpScPrpBPEOSectionId | — |
+| SECTION_PROP_ID | ProfileTpScPrpBPEOSectionPropId | ✅ |
+| VALUE_SET_NAME | ValueSetName | — |
+| VIEW_ATTRB_NAME | ViewAttrbName | — |
+
+### [[speakingratinglevelpvo|SpeakingRatingLevelPVO]] (HCM · BICC: 1/14)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | ProfileTpScPrpBPEOBusinessGroupId | — |
+| COLUMN_NAME | ProfileTpScPrpBPEOColumnName | — |
+| DEFAULT_VALUE | ProfileTpScPrpBPEODefaultValue | — |
+| DISPLAY_FLAG | DisplayFlag | — |
+| FIELD_NAME | FieldName | — |
+| LAST_UPDATE_DATE | ProfileTpScPrpBPEOLastUpdateDate | ✅ |
+| MODULE_ID | ProfileTpScPrpBPEOModuleId | — |
+| PROPERTY_SOURCE | PropertySource | — |
+| REQUIRED_FLAG | RequiredFlag | — |
+| SEARCH_FLAG | SearchFlag | — |
+| SECTION_ID | ProfileTpScPrpBPEOSectionId | — |
+| SECTION_PROP_ID | ProfileTpScPrpBPEOSectionPropId | — |
+| VALUE_SET_NAME | ValueSetName | — |
+| VIEW_ATTRB_NAME | ViewAttrbName | — |
+
+### [[writingratinglevelpvo|WritingRatingLevelPVO]] (HCM · BICC: 1/14)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | ProfileTpScPrpBPEOBusinessGroupId | — |
+| COLUMN_NAME | ProfileTpScPrpBPEOColumnName | — |
+| DEFAULT_VALUE | ProfileTpScPrpBPEODefaultValue | — |
+| DISPLAY_FLAG | DisplayFlag | — |
+| FIELD_NAME | FieldName | — |
+| LAST_UPDATE_DATE | ProfileTpScPrpBPEOLastUpdateDate | ✅ |
+| MODULE_ID | ProfileTpScPrpBPEOModuleId | — |
+| PROPERTY_SOURCE | PropertySource | — |
+| REQUIRED_FLAG | RequiredFlag | — |
+| SEARCH_FLAG | SearchFlag | — |
+| SECTION_ID | ProfileTpScPrpBPEOSectionId | — |
+| SECTION_PROP_ID | ProfileTpScPrpBPEOSectionPropId | — |
+| VALUE_SET_NAME | ValueSetName | — |
+| VIEW_ATTRB_NAME | ViewAttrbName | — |

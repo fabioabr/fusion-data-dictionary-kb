@@ -116,6 +116,76 @@ WHERE  ed.INCIDENT_ID = :p_incident_id;
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[hnsnearmisseventpvo|HNSNearMissEventPVO]] (HCM · BICC: 10/61)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ATTRIBUTE1 | HNSNearMissEventPEOAttribute1 | — |
+| ATTRIBUTE10 | HNSNearMissEventPEOAttribute10 | — |
+| ATTRIBUTE11 | HNSNearMissEventPEOAttribute11 | — |
+| ATTRIBUTE12 | HNSNearMissEventPEOAttribute12 | — |
+| ATTRIBUTE13 | HNSNearMissEventPEOAttribute13 | — |
+| ATTRIBUTE14 | HNSNearMissEventPEOAttribute14 | — |
+| ATTRIBUTE15 | HNSNearMissEventPEOAttribute15 | — |
+| ATTRIBUTE16 | HNSNearMissEventPEOAttribute16 | — |
+| ATTRIBUTE17 | HNSNearMissEventPEOAttribute17 | — |
+| ATTRIBUTE18 | HNSNearMissEventPEOAttribute18 | — |
+| ATTRIBUTE19 | HNSNearMissEventPEOAttribute19 | — |
+| ATTRIBUTE2 | HNSNearMissEventPEOAttribute2 | — |
+| ATTRIBUTE20 | HNSNearMissEventPEOAttribute20 | — |
+| ATTRIBUTE21 | HNSNearMissEventPEOAttribute21 | — |
+| ATTRIBUTE22 | HNSNearMissEventPEOAttribute22 | — |
+| ATTRIBUTE23 | HNSNearMissEventPEOAttribute23 | — |
+| ATTRIBUTE24 | HNSNearMissEventPEOAttribute24 | — |
+| ATTRIBUTE25 | HNSNearMissEventPEOAttribute25 | — |
+| ATTRIBUTE26 | HNSNearMissEventPEOAttribute26 | — |
+| ATTRIBUTE27 | HNSNearMissEventPEOAttribute27 | — |
+| ATTRIBUTE28 | HNSNearMissEventPEOAttribute28 | — |
+| ATTRIBUTE29 | HNSNearMissEventPEOAttribute29 | — |
+| ATTRIBUTE3 | HNSNearMissEventPEOAttribute3 | — |
+| ATTRIBUTE30 | HNSNearMissEventPEOAttribute30 | — |
+| ATTRIBUTE4 | HNSNearMissEventPEOAttribute4 | — |
+| ATTRIBUTE5 | HNSNearMissEventPEOAttribute5 | — |
+| ATTRIBUTE6 | HNSNearMissEventPEOAttribute6 | — |
+| ATTRIBUTE7 | HNSNearMissEventPEOAttribute7 | — |
+| ATTRIBUTE8 | HNSNearMissEventPEOAttribute8 | — |
+| ATTRIBUTE9 | HNSNearMissEventPEOAttribute9 | — |
+| ATTRIBUTE_CATEGORY | HNSNearMissEventPEOAttrCategory | — |
+| ATTRIBUTE_NUMBER1 | HNSNearMissEventPEOAttrNumber1 | — |
+| ATTRIBUTE_NUMBER10 | HNSNearMissEventPEOAttrNumber10 | — |
+| ATTRIBUTE_NUMBER2 | HNSNearMissEventPEOAttNumber2 | — |
+| ATTRIBUTE_NUMBER3 | HNSNearMissEventPEOAttrNumber3 | — |
+| ATTRIBUTE_NUMBER4 | HNSNearMissEventPEOAttrNumber4 | — |
+| ATTRIBUTE_NUMBER5 | HNSNearMissEventPEOAttrNumber5 | — |
+| ATTRIBUTE_NUMBER6 | HNSNearMissEventPEOAttrNumber6 | — |
+| ATTRIBUTE_NUMBER7 | HNSNearMissEventPEOAttrNumber7 | — |
+| ATTRIBUTE_NUMBER8 | HNSNearMissEventPEOAttrNumber8 | — |
+| ATTRIBUTE_NUMBER9 | HNSNearMissEventPEOAttrNumber9 | — |
+| ATTRIBUTE_TIMESTAMP1 | HNSNearMissEventPEOAttrTimestamp1 | — |
+| ATTRIBUTE_TIMESTAMP10 | HNSNearMissEventPEOAttrTimestamp10 | — |
+| ATTRIBUTE_TIMESTAMP2 | HNSNearMissEventPEOAttrTimestamp2 | — |
+| ATTRIBUTE_TIMESTAMP3 | HNSNearMissEventPEOAttrTimestamp3 | — |
+| ATTRIBUTE_TIMESTAMP4 | HNSNearMissEventPEOAttrTimestamp4 | — |
+| ATTRIBUTE_TIMESTAMP5 | HNSNearMissEventPEOAttrTimestamp5 | — |
+| ATTRIBUTE_TIMESTAMP6 | HNSNearMissEventPEOAttrTimestamp6 | — |
+| ATTRIBUTE_TIMESTAMP7 | HNSNearMissEventPEOAttrTimestamp7 | — |
+| ATTRIBUTE_TIMESTAMP8 | HNSNearMissEventPEOAttrTimestamp8 | — |
+| ATTRIBUTE_TIMESTAMP9 | HNSNearMissEventPEOAttrTimestamp9 | — |
+| CREATED_BY | HNSNearMissEventPEOCreatedBy | ✅ |
+| CREATION_DATE | HNSNearMissEventPEOCreationDate | ✅ |
+| DELETED_FLAG | HNSNearMissEventPEODeletedFlag | ✅ |
+| INCIDENT_DETAIL_ID | HNSNearMissEventPEOIncDetailId | ✅ |
+| LAST_UPDATE_DATE | HNSNearMissEventPEOLastUpdateDt | ✅ |
+| LAST_UPDATE_LOGIN | HNSNearMissEventPEOLastUpdateLgn | ✅ |
+| LAST_UPDATED_BY | HNSNearMissEventPEOLastUpdateBy | ✅ |
+| NEAR_MISS_CODE | HNSNearMissEventPEONearMissCode | ✅ |
+| NEAR_MISS_EVT_DETAIL_ID | HNSNearMissEventPEONearMissEvtDtlId | ✅ |
+| OBJECT_VERSION_NUMBER | HNSNearMissEventPEOObjVerNumber | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — HNS_NEAR_MISS_EVT_DETAIL](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/hnsnearmissevtdetail.html)

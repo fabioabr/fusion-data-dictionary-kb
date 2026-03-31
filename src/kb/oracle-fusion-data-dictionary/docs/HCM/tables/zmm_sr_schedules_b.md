@@ -119,6 +119,80 @@ GROUP BY s.SCHEDULE_TYPE;
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[scheduleassignmentpvo|ScheduleAssignmentPVO]] (GL · BICC: 1/14)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ASSIGNMENT_NUM | SchedulePEOAssignmentNum | — |
+| CATEGORY_CODE | SchedulePEOCategoryCode | — |
+| CREATED_BY | SchedulePEOCreatedBy | — |
+| CREATION_DATE | SchedulePEOCreationDate | — |
+| DELETED_FLAG | SchedulePEODeletedFlag | — |
+| EFFECTIVE_FROM_DATE | SchedulePEOEffectiveFromDate | — |
+| EFFECTIVE_TO_DATE | SchedulePEOEffectiveToDate | — |
+| LAST_UPDATE_DATE | SchedulePEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | SchedulePEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | SchedulePEOLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | SchedulePEOObjectVersionNumber | — |
+| QTRLY_TYPE_CODE | SchedulePEOQtrlyTypeCode | — |
+| SCHEDULE_ID | SchedulePEOScheduleId | — |
+| SCHEDULE_TYPE_CODE | SchedulePEOScheduleTypeCode | — |
+
+### [[scheduleextractpvo|ScheduleExtractPVO]] (OTHER · BICC: 46/46)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ASSIGNMENT_NUM | SchedulePEOAssignmentNum | ✅ |
+| ATTRIBUTE1 | SchedulePEOAttribute1 | ✅ |
+| ATTRIBUTE10 | SchedulePEOAttribute10 | ✅ |
+| ATTRIBUTE11 | SchedulePEOAttribute11 | ✅ |
+| ATTRIBUTE12 | SchedulePEOAttribute12 | ✅ |
+| ATTRIBUTE13 | SchedulePEOAttribute13 | ✅ |
+| ATTRIBUTE14 | SchedulePEOAttribute14 | ✅ |
+| ATTRIBUTE15 | SchedulePEOAttribute15 | ✅ |
+| ATTRIBUTE16 | SchedulePEOAttribute16 | ✅ |
+| ATTRIBUTE17 | SchedulePEOAttribute17 | ✅ |
+| ATTRIBUTE18 | SchedulePEOAttribute18 | ✅ |
+| ATTRIBUTE19 | SchedulePEOAttribute19 | ✅ |
+| ATTRIBUTE2 | SchedulePEOAttribute2 | ✅ |
+| ATTRIBUTE20 | SchedulePEOAttribute20 | ✅ |
+| ATTRIBUTE21 | SchedulePEOAttribute21 | ✅ |
+| ATTRIBUTE22 | SchedulePEOAttribute22 | ✅ |
+| ATTRIBUTE23 | SchedulePEOAttribute23 | ✅ |
+| ATTRIBUTE24 | SchedulePEOAttribute24 | ✅ |
+| ATTRIBUTE25 | SchedulePEOAttribute25 | ✅ |
+| ATTRIBUTE26 | SchedulePEOAttribute26 | ✅ |
+| ATTRIBUTE27 | SchedulePEOAttribute27 | ✅ |
+| ATTRIBUTE28 | SchedulePEOAttribute28 | ✅ |
+| ATTRIBUTE29 | SchedulePEOAttribute29 | ✅ |
+| ATTRIBUTE3 | SchedulePEOAttribute3 | ✅ |
+| ATTRIBUTE30 | SchedulePEOAttribute30 | ✅ |
+| ATTRIBUTE4 | SchedulePEOAttribute4 | ✅ |
+| ATTRIBUTE5 | SchedulePEOAttribute5 | ✅ |
+| ATTRIBUTE6 | SchedulePEOAttribute6 | ✅ |
+| ATTRIBUTE7 | SchedulePEOAttribute7 | ✅ |
+| ATTRIBUTE8 | SchedulePEOAttribute8 | ✅ |
+| ATTRIBUTE9 | SchedulePEOAttribute9 | ✅ |
+| ATTRIBUTE_CATEGORY | SchedulePEOAttributeCategory | ✅ |
+| CATEGORY_CODE | SchedulePEOCategoryCode | ✅ |
+| CREATED_BY | SchedulePEOCreatedBy | ✅ |
+| CREATION_DATE | SchedulePEOCreationDate | ✅ |
+| DELETED_FLAG | SchedulePEODeletedFlag | ✅ |
+| EFFECTIVE_FROM_DATE | SchedulePEOEffectiveFromDate | ✅ |
+| EFFECTIVE_TO_DATE | SchedulePEOEffectiveToDate | ✅ |
+| LAST_UPDATE_DATE | SchedulePEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | SchedulePEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | SchedulePEOLastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | SchedulePEOObjectVersionNumber | ✅ |
+| QTRLY_TYPE_CODE | SchedulePEOQtrlyTypeCode | ✅ |
+| SCHEDULE_ID | ScheduleId | ✅ |
+| SCHEDULE_TYPE_CODE | SchedulePEOScheduleTypeCode | ✅ |
+| WEEK_START_CODE | SchedulePEOWeekStartCode | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Fusion HCM Tables and Views](https://docs.oracle.com/en/cloud/saas/human-resources/25a/)

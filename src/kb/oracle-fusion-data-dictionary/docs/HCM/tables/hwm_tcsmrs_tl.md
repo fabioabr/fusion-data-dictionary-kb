@@ -38,7 +38,6 @@ Tabela de traduções dos resumos de cartão de ponto, contendo nomes e descriç
 > [!note] Sufixo _TL
 > O sufixo `_TL` indica tabela de **traduções** — armazena textos traduzidos por idioma. Chave composta: PK da tabela `_B` + `LANGUAGE`.
 
-
 ---
 
 ## 🧠 Propósito de Negócio
@@ -104,6 +103,26 @@ WHERE  t.LANGUAGE = USERENV('LANG')
 - Tabela de traduções: não utilizar diretamente em relatórios; preferir a view `_VL` correspondente.
 - Chave composta: PK do registro base + LANGUAGE.
 - Área funcional: Time Card Summary dentro do Oracle Fusion Cloud HCM.
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[timeconsumertranslationpvo|TimeConsumerTranslationPVO]] (GL · BICC: 11/11)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | CreatedBy | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| ENTERPRISE_ID | EnterpriseId | ✅ |
+| LANGUAGE | Language | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | LastUpdatedBy | ✅ |
+| NAME | Name | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | ✅ |
+| SOURCE_LANG | SourceLang | ✅ |
+| TCSMRS_ID | TimeConsumersId | ✅ |
 
 ---
 

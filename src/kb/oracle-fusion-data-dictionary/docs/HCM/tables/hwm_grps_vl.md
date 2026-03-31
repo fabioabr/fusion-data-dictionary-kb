@@ -37,7 +37,6 @@ Visão consolidada que combina dados base e traduções dos grupos de workforce 
 > [!note] Sufixo _VL
 > O sufixo `_VL` indica **view consolidada** que combina automaticamente a tabela `_B` (dados base) com a `_TL` (traduções) para o idioma da sessão.
 
-
 ---
 
 ## 🧠 Propósito de Negócio
@@ -105,6 +104,35 @@ WHERE  t.LANGUAGE = USERENV('LANG')
 
 - View consolidada: combina automaticamente dados base (`_B`) e traduções (`_TL`). Preferir em consultas de leitura.
 - Área funcional: Workforce Management dentro do Oracle Fusion Cloud HCM.
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[groupinclobjectspvo|GroupInclObjectsPVO]] (GL · BICC: 1/2)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| GROUP_NAME | GroupsVLPEOGroupName | ✅ |
+| GRP_ID | GroupsVLPEOGrpId | — |
+
+### [[setupprofileasgpvo|SetupProfileAsgPVO]] (GL · BICC: 2/4)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| GROUP_NAME | MgrGroupPEOGroupName | ✅ |
+| GROUP_NAME | SchGroupPEOGroupName | ✅ |
+| GRP_ID | MgrGroupPEOGrpId | — |
+| GRP_ID | SchGroupPEOGrpId | — |
+
+### [[setupprofilepvo|SetupProfilePVO]] (GL · BICC: 2/4)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| GROUP_NAME | MgrGroupPEOGroupName | ✅ |
+| GROUP_NAME | SchGroupPEOGroupName | ✅ |
+| GRP_ID | MgrGroupPEOGrpId | — |
+| GRP_ID | SchGroupPEOGrpId | — |
 
 ---
 

@@ -93,6 +93,28 @@ WHERE  qa.QUESTIONNAIRE_ID = :p_id;
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[questionnaireanswerpvo|QuestionnaireAnswerPVO]] (HCM · BICC: 13/13)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ANSWER_ID | QuestionnaireAnswerPEOAnswerId | ✅ |
+| BUSINESS_GROUP_ID | QuestionnaireAnswerPEOBusinessGroupId | ✅ |
+| CREATED_BY | QuestionnaireAnswerPEOCreatedBy | ✅ |
+| CREATION_DATE | QuestionnaireAnswerPEOCreationDate | ✅ |
+| LAST_UPDATE_DATE | QuestionnaireAnswerPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | QuestionnaireAnswerPEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | QuestionnaireAnswerPEOLastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | QuestionnaireAnswerPEOObjectVersionNumber | ✅ |
+| QSTNR_ANSWER_ID | QuestionnaireAnswerPEOQstnrAnswerId | ✅ |
+| QSTNR_QUESTION_ID | QuestionnaireAnswerPEOQstnrQuestionId | ✅ |
+| RATING_LEVEL_ID | QuestionnaireAnswerPEORatingLevelId | ✅ |
+| SCORE | QuestionnaireAnswerPEOScore | ✅ |
+| SUB_QUESTION_ID | QuestionnaireAnswerPEOSubQuestionId | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Fusion HCM Tables and Views](https://docs.oracle.com/en/cloud/saas/human-resources/25a/)

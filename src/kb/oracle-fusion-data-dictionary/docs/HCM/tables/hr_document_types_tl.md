@@ -104,3 +104,49 @@ WHERE  tl.DOCUMENT_TYPE_ID = :p_id
 
 - [Oracle Docs — HR_DOCUMENT_TYPES_TL](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/hrdocumenttypestl.html)
 - [[hcm-module-data-dictionary]] — Dossie do modulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[allocatedchecklisttaskspvo|AllocatedChecklistTasksPVO]] (HCM · BICC: 1/3)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| DOCUMENT_TYPE | DocumentTypesTranslationPEODocumentType | ✅ |
+| DOCUMENT_TYPE_ID | DocumentTypesTranslationPEODocumentTypeId | — |
+| LANGUAGE | DocumentTypesTranslationPEOLanguage | — |
+
+### [[checklisttasktemplatepvo|ChecklistTaskTemplatePVO]] (HCM · BICC: 1/3)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| DOCUMENT_TYPE | DocumentTypesTranslationPEODocumentType | ✅ |
+| DOCUMENT_TYPE_ID | DocumentTypesTranslationPEODocumentTypeId | — |
+| LANGUAGE | DocumentTypesTranslationPEOLanguage | — |
+
+### [[documenttypespvo|DocumentTypesPVO]] (GL · BICC: 4/21)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| COMMENTS_LABEL | DocumentTypesTranslationPEOCommentsLabel | — |
+| CREATED_BY | DocumentTypesTranslationPEOCreatedBy1 | — |
+| CREATION_DATE | DocumentTypesTranslationPEOCreationDate1 | — |
+| DATE_FROM_LABEL | DocumentTypesTranslationPEODateFromLabel | — |
+| DATE_TO_LABEL | DocumentTypesTranslationPEODateToLabel | — |
+| DESCRIPTION | DocumentTypesTranslationPEODescription | ✅ |
+| DOCUMENT_NAME_LABEL | DocumentTypesTranslationPEODocumentNameLabel | — |
+| DOCUMENT_NUMBER_LABEL | DocumentTypesTranslationPEODocumentNumberLabel | — |
+| DOCUMENT_TYPE | DocumentTypesTranslationPEODocumentType | ✅ |
+| DOCUMENT_TYPE_ID | DocumentTypesTranslationPEODocumentTypeId1 | — |
+| ENTERPRISE_ID | DocumentTypesTranslationPEOEnterpriseId1 | — |
+| ISSUED_DATE_LABEL | DocumentTypesTranslationPEOIssuedDateLabel | — |
+| ISSUING_AUTHORITY_LABEL | DocumentTypesTranslationPEOIssuingAuthorityLabel | — |
+| ISSUING_COUNTRY_LABEL | DocumentTypesTranslationPEOIssuingCountryLabel | — |
+| ISSUING_LOCATION_LABEL | DocumentTypesTranslationPEOIssuingLocationLabel | — |
+| LANGUAGE | DocumentTypesTranslationPEOLanguage | ✅ |
+| LAST_UPDATE_DATE | DocumentTypesTranslationPEOLastUpdateDate1 | ✅ |
+| LAST_UPDATE_LOGIN | DocumentTypesTranslationPEOLastUpdateLogin1 | — |
+| LAST_UPDATED_BY | DocumentTypesTranslationPEOLastUpdatedBy1 | — |
+| OBJECT_VERSION_NUMBER | DocumentTypesTranslationPEOObjectVersionNumber1 | — |
+| SOURCE_LANG | DocumentTypesTranslationPEOSourceLang | — |

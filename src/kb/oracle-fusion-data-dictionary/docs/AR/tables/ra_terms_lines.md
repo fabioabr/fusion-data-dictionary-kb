@@ -147,6 +147,82 @@ ORDER BY l.SEQUENCE_NUM;
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[adjustmentdistributionpvo|AdjustmentDistributionPVO]] (AR · BICC: 1/4)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| OBJECT_VERSION_NUMBER | PaymentTermLineObjectVersionNumber9 | — |
+| SEQUENCE_NUM | PaymentTermLineSequenceNum | ✅ |
+| TERM_ID | PaymentTermBPEOTermId | — |
+| TERM_ID | PaymentTermLineTermId1 | — |
+
+### [[adjustmentpvo|AdjustmentPVO]] (AR · BICC: 1/3)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| OBJECT_VERSION_NUMBER | PaymentTermLineObjectVersionNumber6 | — |
+| SEQUENCE_NUM | PaymentTermLineSequenceNum | ✅ |
+| TERM_ID | PaymentTermBPEOTermId | — |
+
+### [[paymenttermlineextractpvo|PaymentTermLineExtractPVO]] (OTHER · BICC: 15/31)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ATTRIBUTE1 | RaTermsLineAttribute1 | — |
+| ATTRIBUTE10 | RaTermsLineAttribute10 | — |
+| ATTRIBUTE11 | RaTermsLineAttribute11 | — |
+| ATTRIBUTE12 | RaTermsLineAttribute12 | — |
+| ATTRIBUTE13 | RaTermsLineAttribute13 | — |
+| ATTRIBUTE14 | RaTermsLineAttribute14 | — |
+| ATTRIBUTE15 | RaTermsLineAttribute15 | — |
+| ATTRIBUTE2 | RaTermsLineAttribute2 | — |
+| ATTRIBUTE3 | RaTermsLineAttribute3 | — |
+| ATTRIBUTE4 | RaTermsLineAttribute4 | — |
+| ATTRIBUTE5 | RaTermsLineAttribute5 | — |
+| ATTRIBUTE6 | RaTermsLineAttribute6 | — |
+| ATTRIBUTE7 | RaTermsLineAttribute7 | — |
+| ATTRIBUTE8 | RaTermsLineAttribute8 | — |
+| ATTRIBUTE9 | RaTermsLineAttribute9 | — |
+| ATTRIBUTE_CATEGORY | RaTermsLineAttributeCategory | — |
+| CREATED_BY | RaTermsLineCreatedBy | ✅ |
+| CREATION_DATE | RaTermsLineCreationDate | ✅ |
+| DUE_DATE | RaTermsLineDueDate | ✅ |
+| DUE_DAY_OF_MONTH | RaTermsLineDueDayOfMonth | ✅ |
+| DUE_DAYS | RaTermsLineDueDays | ✅ |
+| DUE_MONTHS_FORWARD | RaTermsLineDueMonthsForward | ✅ |
+| LAST_UPDATE_DATE | RaTermsLineLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | RaTermsLineLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | RaTermsLineLastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | RaTermsLineObjectVersionNumber | ✅ |
+| RELATIVE_AMOUNT | RaTermsLineRelativeAmount | ✅ |
+| SEED_DATA_SOURCE | RaTermsLineSeedDataSource | ✅ |
+| SEQUENCE_NUM | RaTermsLineSequenceNum | ✅ |
+| SET_ID | RaTermsLineSetId | ✅ |
+| TERM_ID | RaTermsLineTermId | ✅ |
+
+### [[paymenttermlinepvo|PaymentTermLinePVO]] (AR · BICC: 8/14)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | PaymentTermLineCreatedBy | — |
+| CREATION_DATE | PaymentTermLineCreationDate | — |
+| DUE_DATE | PaymentTermLineDueDate | — |
+| DUE_DAY_OF_MONTH | PaymentTermLineDueDayOfMonth | ✅ |
+| DUE_DAYS | PaymentTermLineDueDays | ✅ |
+| DUE_MONTHS_FORWARD | PaymentTermLineDueMonthsForward | ✅ |
+| LAST_UPDATE_DATE | PaymentTermLineLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | PaymentTermLineLastUpdateLogin | — |
+| LAST_UPDATED_BY | PaymentTermLineLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | PaymentTermLineObjectVersionNumber | — |
+| RELATIVE_AMOUNT | PaymentTermLineRelativeAmount | ✅ |
+| SEQUENCE_NUM | SequenceNum | ✅ |
+| SET_ID | PaymentTermLineSetId | ✅ |
+| TERM_ID | TermId | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — RA_TERMS_LINES](https://docs.oracle.com/en/cloud/saas/financials/25a/oedmf/ratermslines-25284.html)

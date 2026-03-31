@@ -108,6 +108,26 @@ WHERE  tl.LANGUAGE = 'PT';
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[budgetpoolpvo|BudgetPoolPVO]] (HCM · BICC: 11/11)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | BudgetPoolTLPEOCreatedBy | ✅ |
+| CREATION_DATE | BudgetPoolTLPEOCreationDate | ✅ |
+| LANGUAGE | BudgetPoolTLPEOLanguage | ✅ |
+| LAST_UPDATE_DATE | BudgetPoolTLPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | BudgetPoolTLPEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | BudgetPoolTLPEOLastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | BudgetPoolTLPEOObjectVersionNumber | ✅ |
+| PLAN_ID | PlanId | ✅ |
+| POOL_ID | BudgetPoolTLPEOPoolId1 | ✅ |
+| POOL_NAME | BudgetPoolTLPEOPoolName | ✅ |
+| SOURCE_LANG | BudgetPoolTLPEOSourceLang | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — CMP_BUDGET_POOLS_TL](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/cmpbudgetpoolstl.html)

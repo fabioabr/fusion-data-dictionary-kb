@@ -115,3 +115,32 @@ ORDER BY dn.MANAGER_LEVEL;
 
 - [Oracle Docs — PER_MANAGER_HRCHY_DN](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/permanagerhrchydn.html)
 - [[hcm-module-data-dictionary]] — Dossiê do módulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[managerhierarchydnpvolinemanager|ManagerHierarchyDNPVOLineManager]] (HCM · BICC: 9/20)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ASSIGNMENT_ID | AssignmentId | ✅ |
+| BUSINESS_GROUP_ID | BusinessGroupId | — |
+| CREATED_BY | CreatedBy | — |
+| CREATION_DATE | CreationDate | — |
+| EFFECTIVE_END_DATE | EffectiveEndDate | ✅ |
+| EFFECTIVE_START_DATE | EffectiveStartDate | ✅ |
+| IMMEDIATE_REPORTEE_ASG_ID | ImmediateReporteeAsgId | — |
+| JOB_DEFINITION_NAME | JobDefinitionName | — |
+| JOB_DEFINITION_PACKAGE | JobDefinitionPackage | — |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | — |
+| LAST_UPDATED_BY | LastUpdatedBy | — |
+| MANAGER_ASSIGNMENT_ID | ManagerAssignmentId | ✅ |
+| MANAGER_ID | ManagerId | ✅ |
+| MANAGER_LEVEL | ManagerLevel | ✅ |
+| MANAGER_TYPE | ManagerType | ✅ |
+| PERSON_ID | PersonId | ✅ |
+| PRIMARY_ASSIGNMENT_FLAG | PrimaryAssignmentFlag | — |
+| PRIMARY_MANAGER_FLAG | PrimaryManagerFlag | — |
+| REQUEST_ID | RequestId | — |

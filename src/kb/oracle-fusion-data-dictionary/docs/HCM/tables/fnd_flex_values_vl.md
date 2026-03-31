@@ -122,3 +122,84 @@ updated_at: 2026-03-26
 ## 📎 Uso Típico
 
 (a ser preenchido na etapa 03)
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[fndflexvaluespvo|FndFlexValuesPVO]] (GL · BICC: 3/72)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ATTRIBUTE1 | Attribute1 | — |
+| ATTRIBUTE10 | Attribute10 | — |
+| ATTRIBUTE11 | Attribute11 | — |
+| ATTRIBUTE12 | Attribute12 | — |
+| ATTRIBUTE13 | Attribute13 | — |
+| ATTRIBUTE14 | Attribute14 | — |
+| ATTRIBUTE15 | Attribute15 | — |
+| ATTRIBUTE16 | Attribute16 | — |
+| ATTRIBUTE17 | Attribute17 | — |
+| ATTRIBUTE18 | Attribute18 | — |
+| ATTRIBUTE19 | Attribute19 | — |
+| ATTRIBUTE2 | Attribute2 | — |
+| ATTRIBUTE20 | Attribute20 | — |
+| ATTRIBUTE21 | Attribute21 | — |
+| ATTRIBUTE22 | Attribute22 | — |
+| ATTRIBUTE23 | Attribute23 | — |
+| ATTRIBUTE24 | Attribute24 | — |
+| ATTRIBUTE25 | Attribute25 | — |
+| ATTRIBUTE26 | Attribute26 | — |
+| ATTRIBUTE27 | Attribute27 | — |
+| ATTRIBUTE28 | Attribute28 | — |
+| ATTRIBUTE29 | Attribute29 | — |
+| ATTRIBUTE3 | Attribute3 | — |
+| ATTRIBUTE30 | Attribute30 | — |
+| ATTRIBUTE31 | Attribute31 | — |
+| ATTRIBUTE32 | Attribute32 | — |
+| ATTRIBUTE33 | Attribute33 | — |
+| ATTRIBUTE34 | Attribute34 | — |
+| ATTRIBUTE35 | Attribute35 | — |
+| ATTRIBUTE36 | Attribute36 | — |
+| ATTRIBUTE37 | Attribute37 | — |
+| ATTRIBUTE38 | Attribute38 | — |
+| ATTRIBUTE39 | Attribute39 | — |
+| ATTRIBUTE4 | Attribute4 | — |
+| ATTRIBUTE40 | Attribute40 | — |
+| ATTRIBUTE41 | Attribute41 | — |
+| ATTRIBUTE42 | Attribute42 | — |
+| ATTRIBUTE43 | Attribute43 | — |
+| ATTRIBUTE44 | Attribute44 | — |
+| ATTRIBUTE45 | Attribute45 | — |
+| ATTRIBUTE46 | Attribute46 | — |
+| ATTRIBUTE47 | Attribute47 | — |
+| ATTRIBUTE48 | Attribute48 | — |
+| ATTRIBUTE49 | Attribute49 | — |
+| ATTRIBUTE5 | Attribute5 | — |
+| ATTRIBUTE50 | Attribute50 | — |
+| ATTRIBUTE6 | Attribute6 | — |
+| ATTRIBUTE7 | Attribute7 | — |
+| ATTRIBUTE8 | Attribute8 | — |
+| ATTRIBUTE9 | Attribute9 | — |
+| ATTRIBUTE_SORT_ORDER | AttributeSortOrder | — |
+| COMPILED_VALUE_ATTRIBUTES | CompiledValueAttributes | — |
+| CREATED_BY | CreatedBy | — |
+| CREATION_DATE | CreationDate | — |
+| DESCRIPTION | Description | — |
+| ENABLED_FLAG | EnabledFlag | — |
+| END_DATE_ACTIVE | EndDateActive | — |
+| FLEX_VALUE | FlexValue | ✅ |
+| FLEX_VALUE_ID | FlexValueId | ✅ |
+| FLEX_VALUE_MEANING | FlexValueMeaning | — |
+| FLEX_VALUE_SET_ID | FlexValueSetId | — |
+| HIERARCHY_LEVEL | HierarchyLevel | — |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | — |
+| LAST_UPDATED_BY | LastUpdatedBy | — |
+| PARENT_FLEX_VALUE_HIGH | ParentFlexValueHigh | — |
+| PARENT_FLEX_VALUE_LOW | ParentFlexValueLow | — |
+| ROW_ID | RowId1 | — |
+| START_DATE_ACTIVE | StartDateActive | — |
+| STRUCTURED_HIERARCHY_LEVEL | StructuredHierarchyLevel | — |
+| SUMMARY_FLAG | SummaryFlag | — |
+| VALUE_CATEGORY | ValueCategory | — |

@@ -41,7 +41,6 @@ View que consolida os **contatos associados a sites de fornecedores**. Apresenta
 > [!note] Sufixo _V
 > O sufixo `_V` indica que este objeto e uma **view**, projetada para simplificar consultas.
 
-
 ---
 
 ## 🧠 Propósito de Negócio
@@ -104,7 +103,6 @@ WHERE  VENDOR_SITE_ID = :p_site_id
   AND  (INACTIVE_DATE IS NULL OR INACTIVE_DATE > SYSDATE);
 ```
 
-
 ---
 
 ## 🔒 Observações
@@ -112,6 +110,22 @@ WHERE  VENDOR_SITE_ID = :p_site_id
 - Dados de contato podem conter PII; aplicar filtros de confidencialidade (LGPD).
 - Campo `INACTIVE_DATE` controla validade do contato.
 - View sem indices proprios.
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[supplierfactlessfactpvo|SupplierFactLessFactPVO]] (PO · BICC: 7/7)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CARRIER_ID | CarrierId | ✅ |
+| PARTY_SITE_ID | PartySiteId | ✅ |
+| PERSON_PARTY_ID | PersonPartyId | ✅ |
+| PRC_BU_ID | PrcBuId | ✅ |
+| SUPP_PARTY_ID | SuppPartyId | ✅ |
+| VENDOR_ID | VendorId | ✅ |
+| VENDOR_SITE_ID | VendorSiteId | ✅ |
 
 ---
 

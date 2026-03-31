@@ -137,6 +137,56 @@ WHERE  ds.DOCTYPE_ID = :p_doctype_id
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[negotiationstyledocumenttypepvo|NegotiationStyleDocumentTypePVO]] (PO · BICC: 7/18)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | NegotiationStyleDocTranslationCreatedBy | — |
+| CREATED_BY | NegotiationStyleDocumentTypeCreatedBy | ✅ |
+| CREATION_DATE | NegotiationStyleDocTranslationCreationDate | — |
+| CREATION_DATE | NegotiationStyleDocumentTypeCreationDate | ✅ |
+| DOCTYPE_ID | DoctypeId | ✅ |
+| DOCTYPE_ID | NegotiationStyleDocTranslationDoctypeId | — |
+| ENABLED_FLAG | NegotiationStyleDocTranslationEnabledFlag | — |
+| ENABLED_FLAG | NegotiationStyleDocumentTypeEnabledFlag | — |
+| LAST_UPDATE_DATE | NegotiationStyleDocTranslationLastUpdateDate | ✅ |
+| LAST_UPDATE_DATE | NegotiationStyleDocumentTypeLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | NegotiationStyleDocTranslationLastUpdateLogin | — |
+| LAST_UPDATE_LOGIN | NegotiationStyleDocumentTypeLastUpdateLogin | — |
+| LAST_UPDATED_BY | NegotiationStyleDocTranslationLastUpdatedBy | — |
+| LAST_UPDATED_BY | NegotiationStyleDocumentTypeLastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | NegotiationStyleDocTranslationObjectVersionNumber | — |
+| OBJECT_VERSION_NUMBER | NegotiationStyleDocumentTypeObjectVersionNumber | — |
+| STYLE_ID | NegotiationStyleDocTranslationStyleId | — |
+| STYLE_ID | StyleId | ✅ |
+
+### [[negstyledocumenttypeextractpvo|NegStyleDocumentTypeExtractPVO]] (PO · BICC: 18/18)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | NegotiationStyleDocTranslationCreatedBy | ✅ |
+| CREATED_BY | NegotiationStyleDocumentTypeCreatedBy | ✅ |
+| CREATION_DATE | NegotiationStyleDocTranslationCreationDate | ✅ |
+| CREATION_DATE | NegotiationStyleDocumentTypeCreationDate | ✅ |
+| DOCTYPE_ID | DoctypeId | ✅ |
+| DOCTYPE_ID | NegotiationStyleDocTranslationDoctypeId | ✅ |
+| ENABLED_FLAG | NegotiationStyleDocTranslationEnabledFlag | ✅ |
+| ENABLED_FLAG | NegotiationStyleDocumentTypeEnabledFlag | ✅ |
+| LAST_UPDATE_DATE | NegotiationStyleDocTranslationLastUpdateDate | ✅ |
+| LAST_UPDATE_DATE | NegotiationStyleDocumentTypeLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | NegotiationStyleDocTranslationLastUpdateLogin | ✅ |
+| LAST_UPDATE_LOGIN | NegotiationStyleDocumentTypeLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | NegotiationStyleDocTranslationLastUpdatedBy | ✅ |
+| LAST_UPDATED_BY | NegotiationStyleDocumentTypeLastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | NegotiationStyleDocTranslationObjectVersionNumber | ✅ |
+| OBJECT_VERSION_NUMBER | NegotiationStyleDocumentTypeObjectVersionNumber | ✅ |
+| STYLE_ID | NegotiationStyleDocTranslationStyleId | ✅ |
+| STYLE_ID | StyleId | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — PON_DOCTYPE_STYLES_B](https://docs.oracle.com/en/cloud/saas/procurement/25a/oedmf/pondoctypestylesb.html)

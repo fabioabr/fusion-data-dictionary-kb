@@ -125,6 +125,30 @@ WHERE  bpl.BID_NUMBER = :p_bid_number;
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[negotiationresponsepurchaseorderlinepvo|NegotiationResponsePurchaseOrderLinePVO]] (PO · BICC: 5/15)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| AUCTION_HEADER_ID | ResponsePOLineAuctionHeaderId | — |
+| AUCTION_LINE_NUMBER | AuctionLineNumber | — |
+| BID_NUMBER | BidNumber | ✅ |
+| CREATED_BY | ResponsePOLineCreatedBy | — |
+| CREATION_DATE | ResponsePOLineCreationDate | — |
+| ITEM_DESCRIPTION | ItemDescription | — |
+| ITEM_ID | ItemId | — |
+| ITEM_REVISION | ItemRevision | — |
+| LAST_UPDATE_DATE | ResponsePOLineLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ResponsePOLineLastUpdateLogin | — |
+| LAST_UPDATED_BY | ResponsePOLineLastUpdatedBy | — |
+| LINE_NUMBER | LineNumber | ✅ |
+| OBJECT_VERSION_NUMBER | ResponsePOLineObjectVersionNumber | — |
+| QUANTITY | ResponsePOLineQuantity | ✅ |
+| SEQUENCE_NUMBER | SequenceNumber | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — PON_BID_PO_LINES](https://docs.oracle.com/en/cloud/saas/procurement/25a/oedmf/ponbidpolines.html)

@@ -107,6 +107,80 @@ WHERE  pags.ASSIGNMENT_ID = :p_assignment_id
 - Integra-se com PER_GRADE_STEPS_F para obter o valor monetário do step.
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[assignmentdatefilterpvo|AssignmentDateFilterPVO]] (HCM)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ASSIGN_GRADE_STEP_ID | AssignmentGradeStepPEOAssignGradeStepId | — |
+| EFFECTIVE_END_DATE | AssignmentGradeStepPEOEffectiveEndDate | — |
+| EFFECTIVE_START_DATE | AssignmentGradeStepPEOEffectiveStartDate | — |
+| GRADE_STEP_ID | AssignmentGradeStepPEOGradeStepId | — |
+
+### [[assignmentgradesteppvo|AssignmentGradeStepPVO]] (HCM · BICC: 20/20)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_OCCURRENCE_ID | AssignmentGradeStepPEOActionOccurrenceId | ✅ |
+| ASSIGN_GRADE_STEP_ID | AssignGradeStepId | ✅ |
+| ASSIGNMENT_ID | AssignmentGradeStepPEOAssignmentId | ✅ |
+| AUTO_INCREMENT_FLAG | AssignmentGradeStepPEOAutoIncrementFlag | ✅ |
+| BUSINESS_GROUP_ID | AssignmentGradeStepPEOBusinessGroupId | ✅ |
+| CREATED_BY | AssignmentGradeStepPEOCreatedBy | ✅ |
+| CREATION_DATE | AssignmentGradeStepPEOCreationDate | ✅ |
+| EFFECTIVE_END_DATE | EffectiveEndDate | ✅ |
+| EFFECTIVE_START_DATE | EffectiveStartDate | ✅ |
+| GRADE_STEP_ID | AssignmentGradeStepPEOGradeStepId | ✅ |
+| INCREMENT_NUMBER | AssignmentGradeStepPEOIncrementNumber | ✅ |
+| JOB_DEFINITION_NAME | AssignmentGradeStepPEOJobDefinitionName | ✅ |
+| JOB_DEFINITION_PACKAGE | AssignmentGradeStepPEOJobDefinitionPackage | ✅ |
+| LAST_UPDATE_DATE | AssignmentGradeStepPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | AssignmentGradeStepPEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | AssignmentGradeStepPEOLastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | AssignmentGradeStepPEOObjectVersionNumber | ✅ |
+| PAY_SCALE_ID | AssignmentGradeStepPEOPayScaleId | ✅ |
+| REASON | AssignmentGradeStepPEOReason | ✅ |
+| REQUEST_ID | AssignmentGradeStepPEORequestId | ✅ |
+
+### [[assignmentpvo|AssignmentPVO]] (HCM)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ASSIGN_GRADE_STEP_ID | AssignmentGradeStepPEOAssignGradeStepId | — |
+| EFFECTIVE_END_DATE | AssignmentGradeStepPEOEffectiveEndDate | — |
+| EFFECTIVE_START_DATE | AssignmentGradeStepPEOEffectiveStartDate | — |
+| GRADE_STEP_ID | AssignmentGradeStepPEOGradeStepId | — |
+
+### [[assignmentpvoeffectivelatestchange|AssignmentPVOEffectiveLatestChange]] (HCM)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ASSIGN_GRADE_STEP_ID | AssignmentGradeStepPEOAssignGradeStepId | — |
+| EFFECTIVE_END_DATE | AssignmentGradeStepPEOEffectiveEndDate | — |
+| EFFECTIVE_START_DATE | AssignmentGradeStepPEOEffectiveStartDate | — |
+| GRADE_STEP_ID | AssignmentGradeStepPEOGradeStepId | — |
+
+### [[assignmentpvotermsrow|AssignmentPVOTermsRow]] (HCM)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ASSIGN_GRADE_STEP_ID | AssignmentGradeStepPEOAssignGradeStepId | — |
+| EFFECTIVE_END_DATE | AssignmentGradeStepPEOEffectiveEndDate | — |
+| EFFECTIVE_START_DATE | AssignmentGradeStepPEOEffectiveStartDate | — |
+| GRADE_STEP_ID | AssignmentGradeStepPEOGradeStepId | — |
+
+### [[primaryassignmentpvo|PrimaryAssignmentPVO]] (HCM)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ASSIGN_GRADE_STEP_ID | AssignmentGradeStepPEOAssignGradeStepId | — |
+| EFFECTIVE_END_DATE | AssignmentGradeStepPEOEffectiveEndDate | — |
+| EFFECTIVE_START_DATE | AssignmentGradeStepPEOEffectiveStartDate | — |
+| GRADE_STEP_ID | AssignmentGradeStepPEOGradeStepId | — |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — PER_ASSIGN_GRADE_STEPS_F](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/perassigngradestepsf.html)

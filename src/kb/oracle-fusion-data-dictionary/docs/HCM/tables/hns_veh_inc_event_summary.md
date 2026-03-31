@@ -117,6 +117,90 @@ WHERE  d.INCIDENT_DATE BETWEEN :p_start AND :p_end;
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[hnsvehicleeventpvo|HNSVehicleEventPVO]] (HCM · BICC: 24/75)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ATTRIBUTE1 | HnsVehIncEventSummaryPEOAttribute1 | — |
+| ATTRIBUTE10 | HnsVehIncEventSummaryPEOAttribute10 | — |
+| ATTRIBUTE11 | HnsVehIncEventSummaryPEOAttribute11 | — |
+| ATTRIBUTE12 | HnsVehIncEventSummaryPEOAttribute12 | — |
+| ATTRIBUTE13 | HnsVehIncEventSummaryPEOAttribute13 | — |
+| ATTRIBUTE14 | HnsVehIncEventSummaryPEOAttribute14 | — |
+| ATTRIBUTE15 | HnsVehIncEventSummaryPEOAttribute15 | — |
+| ATTRIBUTE16 | HnsVehIncEventSummaryPEOAttribute16 | — |
+| ATTRIBUTE17 | HnsVehIncEventSummaryPEOAttribute17 | — |
+| ATTRIBUTE18 | HnsVehIncEventSummaryPEOAttribute18 | — |
+| ATTRIBUTE19 | HnsVehIncEventSummaryPEOAttribute19 | — |
+| ATTRIBUTE2 | HnsVehIncEventSummaryPEOAttribute2 | — |
+| ATTRIBUTE20 | HnsVehIncEventSummaryPEOAttribute20 | — |
+| ATTRIBUTE21 | HnsVehIncEventSummaryPEOAttribute21 | — |
+| ATTRIBUTE22 | HnsVehIncEventSummaryPEOAttribute22 | — |
+| ATTRIBUTE23 | HnsVehIncEventSummaryPEOAttribute23 | — |
+| ATTRIBUTE24 | HnsVehIncEventSummaryPEOAttribute24 | — |
+| ATTRIBUTE25 | HnsVehIncEventSummaryPEOAttribute25 | — |
+| ATTRIBUTE26 | HnsVehIncEventSummaryPEOAttribute26 | — |
+| ATTRIBUTE27 | HnsVehIncEventSummaryPEOAttribute27 | — |
+| ATTRIBUTE28 | HnsVehIncEventSummaryPEOAttribute28 | — |
+| ATTRIBUTE29 | HnsVehIncEventSummaryPEOAttribute29 | — |
+| ATTRIBUTE3 | HnsVehIncEventSummaryPEOAttribute3 | — |
+| ATTRIBUTE30 | HnsVehIncEventSummaryPEOAttribute30 | — |
+| ATTRIBUTE4 | HnsVehIncEventSummaryPEOAttribute4 | — |
+| ATTRIBUTE5 | HnsVehIncEventSummaryPEOAttribute5 | — |
+| ATTRIBUTE6 | HnsVehIncEventSummaryPEOAttribute6 | — |
+| ATTRIBUTE7 | HnsVehIncEventSummaryPEOAttribute7 | — |
+| ATTRIBUTE8 | HnsVehIncEventSummaryPEOAttribute8 | — |
+| ATTRIBUTE9 | HnsVehIncEventSummaryPEOAttribute9 | — |
+| ATTRIBUTE_CATEGORY | HnsVehIncEventSummaryPEOAttrCat | — |
+| ATTRIBUTE_NUMBER1 | HnsVehIncEventSummaryPEOAttrNumber1 | — |
+| ATTRIBUTE_NUMBER10 | HnsVehIncEventSummaryPEOAttrNumber10 | — |
+| ATTRIBUTE_NUMBER2 | HnsVehIncEventSummaryPEOAttrNumber2 | — |
+| ATTRIBUTE_NUMBER3 | HnsVehIncEventSummaryPEOAttrNumber3 | — |
+| ATTRIBUTE_NUMBER4 | HnsVehIncEventSummaryPEOAttrNumber4 | — |
+| ATTRIBUTE_NUMBER5 | HnsVehIncEventSummaryPEOAttrNumber5 | — |
+| ATTRIBUTE_NUMBER6 | HnsVehIncEventSummaryPEOAttrNumber6 | — |
+| ATTRIBUTE_NUMBER7 | HnsVehIncEventSummaryPEOAttrNumber7 | — |
+| ATTRIBUTE_NUMBER8 | HnsVehIncEventSummaryPEOAttrNumber8 | — |
+| ATTRIBUTE_NUMBER9 | HnsVehIncEventSummaryPEOAttrNumber9 | — |
+| ATTRIBUTE_TIMESTAMP1 | HnsVehIncEventSummaryPEOAttrTimestamp1 | — |
+| ATTRIBUTE_TIMESTAMP10 | HnsVehIncEventSummaryPEOAttrTimestamp10 | — |
+| ATTRIBUTE_TIMESTAMP2 | HnsVehIncEventSummaryPEOAttrTimestamp2 | — |
+| ATTRIBUTE_TIMESTAMP3 | HnsVehIncEventSummaryPEOAttrTimestamp3 | — |
+| ATTRIBUTE_TIMESTAMP4 | HnsVehIncEventSummaryPEOAttrTimestamp4 | — |
+| ATTRIBUTE_TIMESTAMP5 | HnsVehIncEventSummaryPEOAttrTimestamp5 | — |
+| ATTRIBUTE_TIMESTAMP6 | HnsVehIncEventSummaryPEOAttrTimestamp6 | — |
+| ATTRIBUTE_TIMESTAMP7 | HnsVehIncEventSummaryPEOAttrTimestamp7 | — |
+| ATTRIBUTE_TIMESTAMP8 | HnsVehIncEventSummaryPEOAttrTimestamp8 | — |
+| ATTRIBUTE_TIMESTAMP9 | HnsVehIncEventSummaryPEOAttrTimestamp9 | — |
+| CITATION_NUM | HnsVehIncEventSummaryPEOCitationNum | ✅ |
+| CREATED_BY | HnsVehIncEventSummaryPEOCreatedBy | ✅ |
+| CREATION_DATE | HnsVehIncEventSummaryPEOCreationDate | ✅ |
+| DELETED_FLAG | HnsVehIncEventSummaryPEODeletedFlag | ✅ |
+| INCIDENT_DETAIL_ID | HnsVehIncEventSummaryPEOIncDetailId | ✅ |
+| LAST_UPDATE_DATE | HnsVehIncEventSummaryPEOLstUpdtDt | ✅ |
+| LAST_UPDATE_LOGIN | HnsVehIncEventSummaryPEOLatUpdtLgn | ✅ |
+| LAST_UPDATED_BY | HnsVehIncEventSummaryPEOLastUpdatedBy | ✅ |
+| LIGHT_CONDITION_CODE | HnsVehIncEventSummaryPEOLightCondCd | ✅ |
+| OBJECT_VERSION_NUMBER | HnsVehIncEventSummaryPEOObjVerNum | ✅ |
+| POLICE_AGENCY_LOCATION | HnsVehIncEventSummaryPEOPoliceAgncLoc | ✅ |
+| POLICE_BADGE_NUM | HnsVehIncEventSummaryPEOPoliceBadgeNum | ✅ |
+| POLICE_REPORT_FLAG | HnsVehIncEventSummaryPEOPoliceReportFlag | ✅ |
+| ROAD_CONDITION_CODE | HnsVehIncEventSummaryPEORoadCondCd | ✅ |
+| TRAFFIC_CONDITION_CODE | HnsVehIncEventSummaryPEOTrafCondCd | ✅ |
+| TRAFFIC_CONTROLS_CODE | HnsVehIncEventSummaryPEOTrafCtrlsCd | ✅ |
+| VEH_INC_EVT_SUMMARY_ID | HnsVehIncEventSummaryPEOVehIncEvtSumId | ✅ |
+| VEHICLE_ACC_CATEGORY_CODE | VehicleAccCategoryCode | ✅ |
+| VEHICLE_COLLISION_TYPE_CODE | HnsVehIncEventSummaryPEOVehClsnTypCd | ✅ |
+| VEHICLE_SPEED_LIMIT | HnsVehIncEventSummaryPEOVehSpeedLmt | ✅ |
+| VEHICLE_SPEED_UNIT_CD | HnsVehIncEventSummaryPEOVehSpeedUntCd | ✅ |
+| VEHICLE_STRUCK_BY_CODE | VehicleStruckByCode | ✅ |
+| VEHICLE_STRUCK_CODE | HnsVehIncEventSummaryPEOVehStruckCode | ✅ |
+| WEATHER_CONDITION_CODE | HnsVehIncEventSummaryPEOWeatherCondCd | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — HNS_VEH_INC_EVENT_SUMMARY](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/hnsvehincsummary.html)

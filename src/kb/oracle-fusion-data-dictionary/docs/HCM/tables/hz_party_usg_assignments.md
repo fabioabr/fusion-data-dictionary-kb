@@ -65,3 +65,71 @@ updated_at: 2026-03-26
 ## 📎 Uso Típico
 
 (a ser preenchido na etapa 03)
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[customer|Customer]] (HCM)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| COMMENTS | Comments1 | — |
+| CREATED_BY | CreatedBy1 | — |
+| CREATED_BY_MODULE | CreatedByModule1 | — |
+| CREATION_DATE | CreationDate1 | — |
+| EFFECTIVE_END_DATE | EffectiveEndDate | — |
+| EFFECTIVE_START_DATE | EffectiveStartDate | — |
+| LAST_UPDATE_DATE | LastUpdateDate1 | — |
+| LAST_UPDATE_LOGIN | LastUpdateLogin1 | — |
+| LAST_UPDATED_BY | LastUpdatedBy1 | — |
+| OWNER_TABLE_ID | OwnerTableId | — |
+| OWNER_TABLE_NAME | OwnerTableName | — |
+| PARTY_USAGE_CODE | PartyUsageCode | — |
+| PARTY_USG_ASSIGNMENT_ID | PartyUsgAssignmentId | — |
+| STATUS_FLAG | StatusFlag | — |
+
+### [[partyusage|PartyUsage]] (HCM · BICC: 3/14)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| COMMENTS | PartyAssignmentComments | — |
+| CREATED_BY_MODULE | PartyAssignmentCreatedByModule | — |
+| CREATION_DATE | PartyAssignmentCreationDate | — |
+| EFFECTIVE_END_DATE | EffectiveEndDate | — |
+| EFFECTIVE_START_DATE | EffectiveStartDate | ✅ |
+| LAST_UPDATE_DATE | PartyAssignmentLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | PartyAssignmentLastUpdateLogin | — |
+| LAST_UPDATED_BY | PartyAssignmentLastUpdatedBy | — |
+| OWNER_TABLE_ID | OwnerTableId | — |
+| OWNER_TABLE_NAME | OwnerTableName | — |
+| PARTY_ID | PartyAssignmentPartyId | — |
+| PARTY_USAGE_CODE | PartyUsageCode | — |
+| PARTY_USG_ASSIGNMENT_ID | PartyUsgAssignmentId | ✅ |
+| STATUS_FLAG | PartyEOStatusFlag | — |
+
+### [[persondetailsrefpvo|PersonDetailsRefPVO]] (OTHER · BICC: 2/5)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| EFFECTIVE_END_DATE | EffectiveEndDate | — |
+| EFFECTIVE_START_DATE | EffectiveStartDate | — |
+| PARTY_USAGE_CODE | USGAssPEOPartyUsageCode | ✅ |
+| PARTY_USG_ASSIGNMENT_ID | USGAssPEOPartyUsgAssignmentId | ✅ |
+| STATUS_FLAG | StatusFlag | — |
+
+### [[resourcep|ResourceP]] (OTHER · BICC: 4/4)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| PARTY_ID | PartyUsageAssignmentPEOPartyId | ✅ |
+| PARTY_USAGE_CODE | PartyUsageCode | ✅ |
+| PARTY_USG_ASSIGNMENT_ID | PartyUsgAssignmentId | ✅ |
+| STATUS_FLAG | StatusFlag | ✅ |
+
+### [[resourcepartnerpvo|ResourcePartnerPVO]] (OTHER · BICC: 1/2)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| PARTY_USAGE_CODE | PartyUsageCode | — |
+| PARTY_USG_ASSIGNMENT_ID | PartyUsgAssignmentId | ✅ |

@@ -107,6 +107,59 @@ SELECT aah.adjustment_id,
 - Em ambientes com SOX compliance, esta tabela é frequentemente incluída em relatórios de auditoria para evidenciar segregação de funções.
 - Registros com `ADJUSTMENT_ID` nulo podem estar associados a outros tipos de aprovação (ex: credit memos, write-offs de transações).
 
+## 🔗 PVOs Relacionados
+
+### [[adjustmentapprovalactionhistoryextractpvo|AdjustmentApprovalActionHistoryExtractPVO]] (OTHER · BICC: 11/27)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_DATE | ArApprovalActionHistoryActionDate | ✅ |
+| ACTION_NAME | ArApprovalActionHistoryActionName | ✅ |
+| ADJUSTMENT_ID | ArApprovalActionHistoryAdjustmentId | ✅ |
+| APPROVAL_ACTION_HISTORY_ID | ArApprovalActionHistoryApprovalActionHistoryId | ✅ |
+| ATTRIBUTE1 | ArApprovalActionHistoryAttribute1 | — |
+| ATTRIBUTE10 | ArApprovalActionHistoryAttribute10 | — |
+| ATTRIBUTE11 | ArApprovalActionHistoryAttribute11 | — |
+| ATTRIBUTE12 | ArApprovalActionHistoryAttribute12 | — |
+| ATTRIBUTE13 | ArApprovalActionHistoryAttribute13 | — |
+| ATTRIBUTE14 | ArApprovalActionHistoryAttribute14 | — |
+| ATTRIBUTE15 | ArApprovalActionHistoryAttribute15 | — |
+| ATTRIBUTE2 | ArApprovalActionHistoryAttribute2 | — |
+| ATTRIBUTE3 | ArApprovalActionHistoryAttribute3 | — |
+| ATTRIBUTE4 | ArApprovalActionHistoryAttribute4 | — |
+| ATTRIBUTE5 | ArApprovalActionHistoryAttribute5 | — |
+| ATTRIBUTE6 | ArApprovalActionHistoryAttribute6 | — |
+| ATTRIBUTE7 | ArApprovalActionHistoryAttribute7 | — |
+| ATTRIBUTE8 | ArApprovalActionHistoryAttribute8 | — |
+| ATTRIBUTE9 | ArApprovalActionHistoryAttribute9 | — |
+| ATTRIBUTE_CATEGORY | ArApprovalActionHistoryAttributeCategory | — |
+| COMMENTS | ArApprovalActionHistoryComments | ✅ |
+| CREATED_BY | ArApprovalActionHistoryCreatedBy | ✅ |
+| CREATION_DATE | ArApprovalActionHistoryCreationDate | ✅ |
+| LAST_UPDATE_DATE | ArApprovalActionHistoryLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ArApprovalActionHistoryLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | ArApprovalActionHistoryLastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | ArApprovalActionHistoryObjectVersionNumber | ✅ |
+
+### [[adjustmentapprovalactionhistorypvo|AdjustmentApprovalActionHistoryPVO]] (AR · BICC: 5/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_DATE | ApprovalActionHistoryActionDate | ✅ |
+| ACTION_NAME | ApprovalActionHistoryActionName | ✅ |
+| ADJUSTMENT_ID | ApprovalActionHistoryAdjustmentId | — |
+| APPROVAL_ACTION_HISTORY_ID | ApprovalActionHistoryId | ✅ |
+| COMMENTS | ApprovalActionHistoryComments | ✅ |
+| CONTEXT | ApprovalActionHistoryContext | — |
+| CREATED_BY | ApprovalActionHistoryCreatedBy | — |
+| CREATION_DATE | ApprovalActionHistoryCreationDate | — |
+| LAST_UPDATE_DATE | ApprovalActionHistoryLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ApprovalActionHistoryLastUpdateLogin | — |
+| LAST_UPDATED_BY | ApprovalActionHistoryLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | ApprovalActionHistoryObjectVersionNumber | — |
+
+---
+
 ## 📚 Referências
 
 - Oracle Fusion Cloud Financials — Accounts Receivable Tables (OEDMF Release 13)

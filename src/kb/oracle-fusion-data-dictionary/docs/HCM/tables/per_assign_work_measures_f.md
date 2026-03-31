@@ -111,6 +111,101 @@ WHERE  pawm.ASSIGNMENT_ID = :p_assignment_id
 - Fundamental para relatórios de planejamento de workforce.
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[assignmentfactpvo|AssignmentFactPVO]] (HCM · BICC: 4/17)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_OCCURRENCE_ID | AssignmentWorkMeasurePEOActionOccurrenceId | — |
+| ADDS_TO_BUDGET | AssignmentWorkMeasurePEOAddsToBudget | — |
+| ASSIGN_WORK_MEASURE_ID | AssignmentWorkMeasurePEOAssignWorkMeasureId | — |
+| ASSIGNMENT_ID | AssignmentWorkMeasurePEOAssignmentId | — |
+| BUSINESS_GROUP_ID | AssignmentWorkMeasurePEOBusinessGroupId | — |
+| CREATED_BY | AssignmentWorkMeasurePEOCreatedBy | — |
+| CREATION_DATE | AssignmentWorkMeasurePEOCreationDate | — |
+| EFFECTIVE_END_DATE | AssignmentWorkMeasurePEOEffectiveEndDate | — |
+| EFFECTIVE_START_DATE | AssignmentWorkMeasurePEOEffectiveStartDate | ✅ |
+| FREEZE_START_DATE | AssignmentWorkMeasurePEOFreezeStartDate | — |
+| FREEZE_UNTIL_DATE | AssignmentWorkMeasurePEOFreezeUntilDate | — |
+| LAST_UPDATE_DATE | AssignmentWorkMeasurePEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | AssignmentWorkMeasurePEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | AssignmentWorkMeasurePEOLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | AssignmentWorkMeasurePEOObjectVersionNumber | — |
+| UNIT | AssignmentWorkMeasurePEOUnit | ✅ |
+| VALUE | AssignmentWorkMeasurePEOValue | ✅ |
+
+### [[assignmentworkmeasurepvo|AssignmentWorkMeasurePVO]] (HCM · BICC: 14/19)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_OCCURRENCE_ID | AssignmentWorkMeasurePEOActionOccurrenceId | ✅ |
+| ADDS_TO_BUDGET | AssignmentWorkMeasurePEOAddsToBudget | — |
+| ASSIGN_WORK_MEASURE_ID | AssignWorkMeasureId | ✅ |
+| ASSIGNMENT_ID | AssignmentWorkMeasurePEOAssignmentId | ✅ |
+| BUSINESS_GROUP_ID | AssignmentWorkMeasurePEOBusinessGroupId | ✅ |
+| CALCULATE_WORKMEASURE_FLAG | AssignmentWorkMeasurePEOCalcWMFlag | — |
+| CREATED_BY | AssignmentWorkMeasurePEOCreatedBy | ✅ |
+| CREATION_DATE | AssignmentWorkMeasurePEOCreationDate | ✅ |
+| EFFECTIVE_END_DATE | EffectiveEndDate | ✅ |
+| EFFECTIVE_START_DATE | EffectiveStartDate | ✅ |
+| FREEZE_START_DATE | AssignmentWorkMeasurePEOFreezeStartDate | ✅ |
+| FREEZE_UNTIL_DATE | AssignmentWorkMeasurePEOFreezeUntilDate | ✅ |
+| LAST_UPDATE_DATE | AssignmentWorkMeasurePEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | AssignmentWorkMeasurePEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | AssignmentWorkMeasurePEOLastUpdatedBy | ✅ |
+| LEGISLATION_CODE | AssignmentWorkMeasurePEOLegislationCode | — |
+| OBJECT_VERSION_NUMBER | AssignmentWorkMeasurePEOObjectVersionNumber | — |
+| UNIT | AssignmentWorkMeasurePEOUnit | ✅ |
+| VALUE | AssignmentWorkMeasurePEOValue | ✅ |
+
+### [[perassignftecountpvo|PerAssignFTECountPVO]] (HCM · BICC: 7/18)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_OCCURRENCE_ID | PerAssignFTECountPEOActionOccurrenceId | — |
+| ADDS_TO_BUDGET | PerAssignFTECountPEOAddsToBudget | — |
+| ASSIGN_WORK_MEASURE_ID | AssignWorkMeasureId | ✅ |
+| ASSIGNMENT_ID | PerAssignFTECountPEOAssignmentId | — |
+| BUSINESS_GROUP_ID | PerAssignFTECountPEOBusinessGroupId | — |
+| CALCULATE_WORKMEASURE_FLAG | PerAssignFTECountPEOCalcWMFlag | ✅ |
+| CREATED_BY | PerAssignFTECountPEOCreatedBy | ✅ |
+| CREATION_DATE | PerAssignFTECountPEOCreationDate | — |
+| EFFECTIVE_END_DATE | EffectiveEndDate | ✅ |
+| EFFECTIVE_START_DATE | EffectiveStartDate | ✅ |
+| FREEZE_START_DATE | PerAssignFTECountPEOFreezeStartDate | — |
+| FREEZE_UNTIL_DATE | PerAssignFTECountPEOFreezeUntilDate | — |
+| LAST_UPDATE_DATE | PerAssignFTECountPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | PerAssignFTECountPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | PerAssignFTECountPEOLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | PerAssignFTECountPEOObjectVersionNumber | — |
+| UNIT | PerAssignFTECountPEOUnit | — |
+| VALUE | PerAssignFTECountPEOValue | ✅ |
+
+### [[perassignheadcountpvo|PerAssignHeadCountPVO]] (HCM · BICC: 5/17)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_OCCURRENCE_ID | PerAssignHeadCountPEOActionOccurrenceId | — |
+| ADDS_TO_BUDGET | PerAssignHeadCountPEOAddsToBudget | — |
+| ASSIGN_WORK_MEASURE_ID | AssignWorkMeasureId | ✅ |
+| ASSIGNMENT_ID | PerAssignHeadCountPEOAssignmentId | — |
+| BUSINESS_GROUP_ID | PerAssignHeadCountPEOBusinessGroupId | — |
+| CREATED_BY | PerAssignHeadCountPEOCreatedBy | — |
+| CREATION_DATE | PerAssignHeadCountPEOCreationDate | — |
+| EFFECTIVE_END_DATE | EffectiveEndDate | ✅ |
+| EFFECTIVE_START_DATE | EffectiveStartDate | ✅ |
+| FREEZE_START_DATE | PerAssignHeadCountPEOFreezeStartDate | — |
+| FREEZE_UNTIL_DATE | PerAssignHeadCountPEOFreezeUntilDate | — |
+| LAST_UPDATE_DATE | PerAssignHeadCountPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | PerAssignHeadCountPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | PerAssignHeadCountPEOLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | PerAssignHeadCountPEOObjectVersionNumber | — |
+| UNIT | PerAssignHeadCountPEOUnit | — |
+| VALUE | PerAssignHeadCountPEOValue | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — PER_ASSIGN_WORK_MEASURES_F](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/perassignworkmeasuresf.html)

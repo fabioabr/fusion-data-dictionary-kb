@@ -99,3 +99,32 @@ SELECT rsd.RECON_ID,
 - Oracle Fusion Cloud Financials — Accounts Payable Tables (OEDMF Release 13).
 - Oracle Fusion Cloud — Subledger to GL Reconciliation Documentation.
 - Oracle Fusion Cloud ERP Schema Reference (Release 25A).
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[payablesreconciliationsummarypvo|PayablesReconciliationSummaryPVO]] (AP · BICC: 8/20)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACCOUNTED_CR | ReconciliationSummaryPEOAccountedCr | ✅ |
+| ACCOUNTED_DR | ReconciliationSummaryPEOAccountedDr | ✅ |
+| AP_ACCTD_AMOUNT | ReconciliationSummaryPEOApAcctdAmount | ✅ |
+| BALANCING_SEGMENT | ReconciliationSummaryPEOBalancingSegment | — |
+| BU_ID | ReconciliationSummaryPEOBuId | — |
+| CODE_COMBINATION_ID | ReconciliationSummaryPEOCodeCombinationId | — |
+| CREATED_BY | ReconciliationSummaryPEOCreatedBy | — |
+| CREATION_DATE | ReconciliationSummaryPEOCreationDate | — |
+| DATA_SOURCE | ReconciliationSummaryPEODataSource | ✅ |
+| JOB_DEFINITION_NAME | ReconciliationSummaryPEOJobDefinitionName | — |
+| JOB_DEFINITION_PACKAGE | ReconciliationSummaryPEOJobDefinitionPackage | — |
+| LAST_UPDATE_DATE | ReconciliationSummaryPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ReconciliationSummaryPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | ReconciliationSummaryPEOLastUpdatedBy | — |
+| LEDGER_ID | ReconciliationSummaryPEOLedgerId | — |
+| NATURAL_ACCOUNT_SEGMENT | ReconciliationSummaryPEONaturalAccountSegment | — |
+| RECON_ITEM_CODE | ReconciliationSummaryPEOReconItemCode | ✅ |
+| RECON_ITEM_ID | ReconItemId | ✅ |
+| RECON_ITEM_ORDER | ReconciliationSummaryPEOReconItemOrder | ✅ |
+| REQUEST_ID | ReconciliationSummaryPEORequestId | — |

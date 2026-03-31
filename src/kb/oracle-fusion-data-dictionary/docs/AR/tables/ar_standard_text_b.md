@@ -96,6 +96,22 @@ SELECT standard_text_id,
 - Textos padrão são **compartilhados** entre todas as BUs (não particionados por ORG_ID).
 - Desativar um texto (`END_DATE` no passado) impede novos usos mas não afeta documentos já gerados.
 
+## 🔗 PVOs Relacionados
+
+### [[customerfinancialprofilepvo|CustomerFinancialProfilePVO]] (AR)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| END_DATE | StdTxtBaseEndDate | — |
+| NAME | StdTxtBaseName | — |
+| STANDARD_TEXT_ID | StdTxtBaseStandardTextId | — |
+| START_DATE | StdTxtBaseStartDate | — |
+| TEXT | StdTxtBaseText | — |
+| TEXT_TYPE | StdTxtBaseTextType | — |
+| TEXT_USE_TYPE | StdTxtBaseTextUseType | — |
+
+---
+
 ## 📚 Referências
 
 - Oracle Fusion Cloud Financials — Accounts Receivable Tables (OEDMF Release 13)

@@ -147,3 +147,47 @@ GROUP BY sr.REQUEST_TYPE;
 
 - [Oracle Docs — Supplier Requests](https://docs.oracle.com/en/cloud/saas/procurement/25a/oedmf/poz-tables.html)
 - [[po-module-data-dictionary]] — Dossiê do módulo Procurement
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[supplierprofilechangerequestpvo|SupplierProfileChangeRequestPVO]] (PO · BICC: 14/35)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_BY_PARTY_ID | ChangeRequestPEOActionByPartyId | — |
+| ACTION_BY_PERSON_ID | ChangeRequestPEOActionByPersonId | — |
+| ACTION_DATE | ChangeRequestPEOActionDate | — |
+| ACTION_REASON | ChangeRequestPEOActionReason | — |
+| APPROVAL_INSTANCE_ID | ChangeRequestPEOApprovalInstanceId | — |
+| BC_NOT_APPLICABLE_NEW_FLAG | ChangeRequestPEOBcNotApplicableNewFlag | — |
+| BC_NOT_APPLICABLE_OLD_FLAG | ChangeRequestPEOBcNotApplicableOldFlag | — |
+| CHANGE_DESCRIPTION | ChangeRequestPEOChangeDescription | ✅ |
+| CHANGE_REQ_NUMBER | ChangeRequestPEOChangeReqNumber | ✅ |
+| CHANGE_REQ_SUBMISSION_DATE | ChangeRequestPEOChangeReqSubmissionDate | ✅ |
+| CHANGED_ADDRESSES_FLAG | ChangeRequestPEOChangedAddressesFlag | ✅ |
+| CHANGED_BANK_ACCOUNTS_FLAG | ChangeRequestPEOChangedBankAccountsFlag | ✅ |
+| CHANGED_BUS_CLASS_DETAILS_FLAG | ChangeRequestPEOChangedBusClassDetailsFlag | ✅ |
+| CHANGED_CONTACTS_FLAG | ChangeRequestPEOChangedContactsFlag | ✅ |
+| CHANGED_ORG_DETAILS_FLAG | ChangeRequestPEOChangedOrgDetailsFlag | ✅ |
+| CHANGED_PAYMENT_METHOD_FLAG | ChangeRequestPEOChangedPaymentMethodFlag | ✅ |
+| CHANGED_PROD_SERV_FLAG | ChangeRequestPEOChangedProdServFlag | ✅ |
+| CHANGED_SITES_FLAG | ChangeRequestPEOChangedSitesFlag | ✅ |
+| CHANGED_TAX_DETAILS_FLAG | ChangeRequestPEOChangedTaxDetailsFlag | ✅ |
+| CHANGED_USER_ACCOUNT_FLAG | ChangeRequestPEOChangedUserAccountFlag | ✅ |
+| CREATED_BY | ChangeRequestPEOCreatedBy | — |
+| CREATION_DATE | ChangeRequestPEOCreationDate | — |
+| LAST_UPDATE_DATE | ChangeRequestPEOLastUpdateDate | — |
+| LAST_UPDATE_LOGIN | ChangeRequestPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | ChangeRequestPEOLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | ChangeRequestPEOObjectVersionNumber | — |
+| REQUEST_BY_PARTY_ID | ChangeRequestPEORequestByPartyId | — |
+| REQUEST_BY_PERSON_ID | ChangeRequestPEORequestByPersonId | — |
+| REQUEST_SOURCE_CODE | ChangeRequestPEORequestSourceCode | — |
+| REQUEST_STATUS_CODE | ChangeRequestPEORequestStatusCode | — |
+| RESUBMISSION_NUM | ChangeRequestPEOResubmissionNum | — |
+| SOURCE_DOCUMENT_NUMBER | ChangeRequestPEOSourceDocumentNumber | — |
+| SOURCING_BATCH_ID | ChangeRequestPEOSourcingBatchId | — |
+| SUPP_REQUEST_ID | ChangeRequestPEOSuppRequestId | ✅ |
+| VENDOR_ID | ChangeRequestPEOVendorId | — |

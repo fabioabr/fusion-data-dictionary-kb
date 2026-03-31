@@ -103,3 +103,24 @@ WHERE  tl.LANGUAGE = 'PT' AND b.VERSION_STATUS = 'CURRENT';
 
 - [Oracle Docs -- IRC_DESC_VERSIONS_TL](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/ircdescversionstl.html)
 - [[hcm-module-data-dictionary]] -- Dossie do modulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[descriptionversionpvo|DescriptionVersionPVO]] (HCM · BICC: 4/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | CreatedBy1 | — |
+| CREATION_DATE | CreationDate1 | — |
+| DESC_VERSION_ID | DescVersionId1 | — |
+| DESCRIPTION | Description | ✅ |
+| LANGUAGE | Language1 | — |
+| LAST_UPDATE_DATE | LastUpdateDate1 | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin1 | — |
+| LAST_UPDATED_BY | LastUpdatedBy1 | — |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber1 | — |
+| SHORT_DESCRIPTION | ShortDescription | ✅ |
+| SOURCE_LANG | SourceLang | — |
+| TXT_DESCRIPTION | DescVerTranslPEOTxtDecsription | ✅ |

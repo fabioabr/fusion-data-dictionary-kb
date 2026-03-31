@@ -98,6 +98,19 @@ WHERE  tl.BALANCE_CATEGORY_ID = :p_category_id
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[balancecategory|BalanceCategory]] (GL · BICC: 2/4)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BALANCE_CATEGORY_ID | BalanceCategoryBaseDPEOBalanceCategoryId | — |
+| LANGUAGE | BalanceCategoryBaseDPEOLanguage | ✅ |
+| SOURCE_LANG | BalanceCategoryBaseDPEOSourceLang | ✅ |
+| USER_CATEGORY_NAME | BalanceCategoryBaseDPEOUserCategoryName | — |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — PAY_BALANCE_CATEGORIES_TL](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/paybalancecategoriestl.html)

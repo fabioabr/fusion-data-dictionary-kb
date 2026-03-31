@@ -118,6 +118,70 @@ WHERE  s.STATUS = 'COMPLETED'
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[hnsinvestigationpvo|HNSInvestigationPVO]] (HCM · BICC: 33/55)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_REQUIRED_FLAG | HNSInvestigationsSummaryPEOActionRequirdFlag | ✅ |
+| ACTUAL_COMPLETION_DATE | HNSInvestigationsSummaryPEOActComDate | ✅ |
+| ATTRIBUTE1 | HNSInvestigationsSummaryPEOAttribute1 | — |
+| ATTRIBUTE10 | HNSInvestigationsSummaryPEOAttribute10 | — |
+| ATTRIBUTE2 | HNSInvestigationsSummaryPEOAttribute2 | — |
+| ATTRIBUTE3 | HNSInvestigationsSummaryPEOAttribute3 | — |
+| ATTRIBUTE4 | HNSInvestigationsSummaryPEOAttribute4 | — |
+| ATTRIBUTE5 | HNSInvestigationsSummaryPEOAttribute5 | — |
+| ATTRIBUTE6 | HNSInvestigationsSummaryPEOAttribute6 | — |
+| ATTRIBUTE7 | HNSInvestigationsSummaryPEOAttribute7 | — |
+| ATTRIBUTE8 | HNSInvestigationsSummaryPEOAttribute8 | — |
+| ATTRIBUTE9 | HNSInvestigationsSummaryPEOAttribute9 | — |
+| ATTRIBUTE_CATEGORY | HNSInvestigationsSummaryPEOAttrCategory | — |
+| ATTRIBUTE_NUMBER1 | HNSInvestigationsSummaryPEOAttrNumber1 | — |
+| ATTRIBUTE_NUMBER2 | HNSInvestigationsSummaryPEOAttrNumber2 | — |
+| ATTRIBUTE_NUMBER3 | HNSInvestigationsSummaryPEOAttrNumber3 | — |
+| ATTRIBUTE_NUMBER4 | HNSInvestigationsSummaryPEOAttrNumber4 | — |
+| ATTRIBUTE_NUMBER5 | HNSInvestigationsSummaryPEOAttrNumber5 | — |
+| ATTRIBUTE_TIMESTAMP1 | HNSInvestigationsSummaryPEOAttrTimestamp1 | — |
+| ATTRIBUTE_TIMESTAMP2 | HNSInvestigationsSummaryPEOAttrTimestamp2 | — |
+| ATTRIBUTE_TIMESTAMP3 | HNSInvestigationsSummaryPEOAttrTimestamp3 | — |
+| ATTRIBUTE_TIMESTAMP4 | HNSInvestigationsSummaryPEOAttrTimestamp4 | — |
+| ATTRIBUTE_TIMESTAMP5 | HNSInvestigationsSummaryPEOAttrTimestamp5 | — |
+| CASUAL_FACTORS_CODE | HNSInvestigationsSummaryPEOCslFctCd | ✅ |
+| COMPLETED_FLAG | HNSInvestigationsSummaryPEOCompletedFlag | ✅ |
+| CONTRIBUTING_FACTORS_CODE | HNSInvestigationsSummaryPEOContFctCd | ✅ |
+| CREATED_BY | HNSInvestigationsSummaryPEOCreatedBy | ✅ |
+| CREATION_DATE | HNSInvestigationsSummaryPEOCreationDate | ✅ |
+| DELETED_FLAG | HNSInvestigationsSummaryPEODeletedFlag | ✅ |
+| FINDING_COMMENT | HNSInvestigationsSummaryPEOFindingComnt | ✅ |
+| FINDING_FINAL_RESPONSE | HNSInvestigationsSummaryPEOFindFinalResp | ✅ |
+| IMMEDIATE_CAUSE_CODE | HNSInvestigationsSummaryPEOImdtCseCd | ✅ |
+| INCIDENT_DETAIL_ID | HNSInvestigationsSummaryPEOIncdntDetId | ✅ |
+| INCIDENT_ID | HNSInvestigationsSummaryPEOIncidentId | ✅ |
+| INVEST_APPROVER_EMAIL_FLAG | HNSInvestigationsSummaryPEOInvAprEmlFlg | ✅ |
+| INVEST_OWNER_ASSIGN_ID | HNSInvestigationsSummaryPEOInvOwnAsnId | — |
+| INVEST_PRECOM_EMAIL_FLAG | HNSInvestigationsSummaryPEOInvPreEmlFlg | ✅ |
+| INVEST_REVIEWER_EMAIL_FLAG | HNSInvestigationsSummaryPEOInvRevEmlFlg | ✅ |
+| INVEST_STATUS_CODE | HNSInvestigationsSummaryPEOInvestStatCd | ✅ |
+| INVESTIGATE_DATE | HNSInvestigationsSummaryPEOInvestigateDt | ✅ |
+| INVESTIGATE_DESCRIPTION | HNSInvestigationsSummaryPEOInvestigateDescr | ✅ |
+| INVESTIGATE_ID | HNSInvestigationsSummaryPEOInvestigateId | ✅ |
+| INVESTIGATE_NO | HNSInvestigationsSummaryPEOInvestigateNo | ✅ |
+| INVESTIGATE_OWNER_ID | HNSInvestigationsSummaryPEOInvestOwnerId | ✅ |
+| INVESTIGATE_SUMMARY | HNSInvestigationsSummaryPEOInvSummary | ✅ |
+| INVESTIGATE_TYPE_CODE | HNSInvestigationsSummaryPEOInvTypeCode | ✅ |
+| LAST_UPDATE_DATE | HNSInvestigationsSummaryPEOLastUpdateDt | ✅ |
+| LAST_UPDATE_LOGIN | HNSInvestigationsSummaryPEOLastUpdtLog | ✅ |
+| LAST_UPDATED_BY | HNSInvestigationsSummaryPEOLastUpdatedBy | ✅ |
+| LESSONS_LEARNED | HNSInvestigationsSummaryPEOLsnsLearned | ✅ |
+| OBJECT_VERSION_NUMBER | HNSInvestigationsSummaryPEOObjVerNum | ✅ |
+| QUESTIONNAIRE_ID | HNSInvestigationsSummaryPEOQuestionId | ✅ |
+| ROOT_CAUSE_CODE | HNSInvestigationsSummaryPEORtCseCd | ✅ |
+| TARGET_COMPLETION_DATE | HNSInvestigationsSummaryPEOTarCompDate | ✅ |
+| UNDERLYING_FACTORS_CODE | HNSInvestigationsSummaryPEOUndFctCd | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — HNS_INVESTIGATIONS_SUMMARY](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/hnsinvestigationssummary.html)

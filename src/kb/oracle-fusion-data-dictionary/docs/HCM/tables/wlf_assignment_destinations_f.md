@@ -112,3 +112,26 @@ WHERE  ad.EVENT_ASSIGNMENT_ID = :p_event_assignment_id
 
 - [Oracle Docs — WLF_ASSIGNMENT_DESTINATIONS_F](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/wlfassignmentdestinationsf.html)
 - [[hcm-module-data-dictionary]] — Dossiê do módulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[eventassignmentdestinationpvo|EventAssignmentDestinationPVO]] (HCM · BICC: 6/14)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ASSIGNED_TO_ID | EventAssignmentDestinationDEOAssignedToId | — |
+| ASSIGNED_TO_TYPE | EventAssignmentDestinationDEOAssignedToType | ✅ |
+| ASSIGNMENT_DESTINATION_ID | EventAssignmentDestinationDEOAssignmentDestinationId | ✅ |
+| CREATED_BY | EventAssignmentDestinationDEOCreatedBy | — |
+| CREATION_DATE | EventAssignmentDestinationDEOCreationDate | — |
+| EFFECTIVE_END_DATE | EventAssignmentDestinationDEOEffectiveEndDate | ✅ |
+| EFFECTIVE_START_DATE | EventAssignmentDestinationDEOEffectiveStartDate | ✅ |
+| ENTERPRISE_ID | EventAssignmentDestinationDEOEnterpriseId | — |
+| EVENT_ASSIGNMENT_ID | EventAssignmentDestinationDEOEventAssignmentId | — |
+| LAST_UPDATE_DATE | EventAssignmentDestinationDEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | EventAssignmentDestinationDEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | EventAssignmentDestinationDEOLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | EventAssignmentDestinationDEOObjectVersionNumber | — |
+| OPERATION | EventAssignmentDestinationDEOOperation | ✅ |

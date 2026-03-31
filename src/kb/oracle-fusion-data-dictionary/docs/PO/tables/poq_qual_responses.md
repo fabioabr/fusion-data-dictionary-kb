@@ -127,6 +127,46 @@ GROUP BY qr.QUESTIONNAIRE_RESPONSE_ID;
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[qualificationresponseextractpvo|QualificationResponseExtractPVO]] (PO · BICC: 13/13)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | CreatedBy | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | LastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | ✅ |
+| QUAL_RESPONSE_ID | QualResponseId | ✅ |
+| QUALIFICATION_ID | QualificationId | ✅ |
+| QUESTION_ID | QuestionId | ✅ |
+| QUESTION_RESP_NOTES | QuestionRespNotes | ✅ |
+| QUESTION_RESP_SCORE | QuestionRespScore | ✅ |
+| REASSIGNED_WEIGHT | ReassignedWeight | ✅ |
+| RESPONSE_REPOSITORY_ID | ResponseRepositoryId | ✅ |
+
+### [[qualificationresponsespvo|QualificationResponsesPVO]] (PO · BICC: 12/13)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | QualificationResponseCreatedBy | ✅ |
+| CREATION_DATE | QualificationResponseCreationDate | ✅ |
+| LAST_UPDATE_DATE | QualificationResponseLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | QualificationResponseLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | QualificationResponseLastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | QualificationResponseObjectVersionNumber | ✅ |
+| QUAL_RESPONSE_ID | QualResponseId | ✅ |
+| QUALIFICATION_ID | QualificationResponseQualificationId | ✅ |
+| QUESTION_ID | QualificationResponseQuestionId | ✅ |
+| QUESTION_RESP_NOTES | QualificationResponseQuestionRespNotes | ✅ |
+| QUESTION_RESP_SCORE | QualificationResponseQuestionRespScore | ✅ |
+| REASSIGNED_WEIGHT | ReassignedWeight | — |
+| RESPONSE_REPOSITORY_ID | QualificationResponseResponseRepositoryId | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — Supplier Qualification Management](https://docs.oracle.com/en/cloud/saas/procurement/25a/oedmf/)

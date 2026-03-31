@@ -75,3 +75,37 @@ updated_at: 2026-03-26
 ## 📎 Uso Típico
 
 (a ser preenchido na etapa 03)
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[hcmapprovalstaskp1|HcmApprovalsTaskP1]] (AP · BICC: 13/25)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACQUIRED_BY | FndBpmTaskHistoryPEOAcquiredBy | ✅ |
+| COMPLETED_DATE | FndBpmTaskHistoryPEOCompletedDate2 | — |
+| CREATED_BY | FndBpmTaskHistoryPEOCreatedBy3 | — |
+| CREATION_DATE | FndBpmTaskHistoryPEOCreationDate3 | — |
+| DOMAIN | FndBpmTaskHistoryPEODomain4 | — |
+| FROM_USER | FndBpmTaskHistoryPEOFromUser | ✅ |
+| IDENTIFICATION_KEY | FndBpmTaskHistoryPEOIdentificationKey1 | — |
+| INITIATED_DATE | FndBpmTaskHistoryPEOInitiatedDate4 | — |
+| LAST_UPDATE_DATE | FndBpmTaskHistoryPEOLastUpdateDate3 | ✅ |
+| LAST_UPDATE_LOGIN | FndBpmTaskHistoryPEOLastUpdateLogin3 | — |
+| LAST_UPDATED_BY | FndBpmTaskHistoryPEOLastUpdatedBy3 | — |
+| OUTCOME | FndBpmTaskHistoryPEOOutcome1 | ✅ |
+| OUTCOME_CODE | FndBpmTaskHistoryPEOOutcomeCode1 | ✅ |
+| PARENT_TASK_ID | FndBpmTaskHistoryPEOParentTaskId1 | — |
+| PARTICIPANT | FndBpmTaskHistoryPEOParticipant | ✅ |
+| PARTICIPANT_CODE | FndBpmTaskHistoryPEOParticipantCode | ✅ |
+| ROOT_TASK_ID | FndBpmTaskHistoryPEORootTaskId3 | — |
+| STAGE | FndBpmTaskHistoryPEOStage | ✅ |
+| STAGE_CODE | FndBpmTaskHistoryPEOStageCode | ✅ |
+| STATUS_CODE | FndBpmTaskHistoryPEOStatusCode1 | ✅ |
+| TASK_ID | FndBpmTaskHistoryPEOTaskId4 | — |
+| TASK_NUMBER | FndBpmTaskHistoryPEOTaskNumber1 | ✅ |
+| VERSION | FndBpmTaskHistoryPEOVersion | ✅ |
+| VERSION_REASON | FndBpmTaskHistoryPEOVersionReason | ✅ |
+| WORKFLOWPATTERN_CODE | FndBpmTaskHistoryPEOWorkflowpatternCode | — |

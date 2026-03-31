@@ -104,3 +104,274 @@ WHERE  tl.RATING_LEVEL_ID = :p_id
 
 - [Oracle Docs — HRT_RATING_LEVELS_TL](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/hrtratinglevelstl.html)
 - [[hcm-module-data-dictionary]] — Dossie do modulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[competencypvo|CompetencyPVO]] (HCM · BICC: 8/29)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | BusinessGroupId1 | — |
+| BUSINESS_GROUP_ID | BusinessGroupId6 | — |
+| BUSINESS_GROUP_ID | RLvlTLPEOprofBusinessGroupId2 | — |
+| LANGUAGE | Language | — |
+| LANGUAGE | RLvlTLPEOprofLanguage | — |
+| LANGUAGE | RtgLvlTLPEOPerfLanguage2 | — |
+| LAST_UPDATE_DATE | RLvlTLPEOInterLastUpdateDate | ✅ |
+| LAST_UPDATE_DATE | RLvlTLPEOprofLastUpdateDate | ✅ |
+| LAST_UPDATE_DATE | RtgLvlTLPEOPerfLastUpdateDate | ✅ |
+| RATING_DESCRIPTION | RLvlTLPEOInterRtgDescription | — |
+| RATING_DESCRIPTION | RLvlTLPEOprofRtgDescription | ✅ |
+| RATING_DESCRIPTION | RLvlTLPEOprofRtgDescriptionM | ✅ |
+| RATING_DESCRIPTION | RtgLvlTLPEOPerfRtgDescriptioM | ✅ |
+| RATING_DESCRIPTION | RtgLvlTLPEOPerfRtgDescription | ✅ |
+| RATING_LEVEL_ID | RLvlTLPEOInterRatingLevelId | — |
+| RATING_LEVEL_ID | RLvlTLPEOprofRatingLevelId1 | — |
+| RATING_LEVEL_ID | RtgLvlTLPEOPerfRatingLevelId3 | — |
+| RATING_SHORT_DESCR | RLvlTLPEOInterRtgShortDescr | ✅ |
+| RATING_SHORT_DESCR | RLvlTLPEOprofRatingShortDescM | — |
+| RATING_SHORT_DESCR | RLvlTLPEOprofRatingShortDescr | — |
+| RATING_SHORT_DESCR | RtgLvlTLPEOPerfRtgShortDesc | — |
+| RATING_SHORT_DESCR | RtgLvlTLPEOPerfRtgShortDescrM | — |
+| REVIEW_RATING_DESCR | RLvlTLPEOInterReviewRtgDescr | — |
+| REVIEW_RATING_DESCR | RLvlTLPEOprofReviewRtgDescr | — |
+| REVIEW_RATING_DESCR | RLvlTLPEOprofReviewRtgDescrM | — |
+| REVIEW_RATING_DESCR | RtgLvlTLPEOPerfReviewRtgDescM | — |
+| REVIEW_RATING_DESCR | RtgLvlTLPEOPerfReviewRtgDescr | — |
+| SOURCE_LANG | RLvlTLPEOInterSourceLang | — |
+| SOURCE_LANG | RLvlTLPEOprofSourceLang | — |
+
+### [[criticalityprofileitempvo|CriticalityProfileItemPVO]] (HCM)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | RTLBusinessGroupId1 | — |
+| LANGUAGE | RTLLanguage | — |
+| RATING_DESCRIPTION | RTLRatingDescription | — |
+| RATING_LEVEL_ID | RTLRatingLevelId | — |
+| RATING_SHORT_DESCR | RTLRatingShortDescr | — |
+| REVIEW_RATING_DESCR | RTLReviewRatingDescr | — |
+
+### [[languagepvo|LanguagePVO]] (HCM · BICC: 10/22)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | RLTLReadBusinessGroupId3 | — |
+| BUSINESS_GROUP_ID | RLTLSpeakBusinessGroupId3 | — |
+| BUSINESS_GROUP_ID | RLTLWriteBusinessGroupId | — |
+| LANGUAGE | RLTLReadLanguage1 | — |
+| LANGUAGE | RLTLSpeakLanguage1 | — |
+| LANGUAGE | RLTLWriteLanguage1 | — |
+| LAST_UPDATE_DATE | RtgLvlTLReadingLastUpdateDate | ✅ |
+| LAST_UPDATE_DATE | RtgLvlTLSpeakingLastUpdateDate | ✅ |
+| LAST_UPDATE_DATE | RtgLvlTLWritingLastUpdateDate | ✅ |
+| RATING_DESCRIPTION | RLTLReadRatingDescription | ✅ |
+| RATING_DESCRIPTION | RLTLSpeakRatingDescription | ✅ |
+| RATING_DESCRIPTION | RLTLWriteRatingDescription | ✅ |
+| RATING_LEVEL_ID | RLTLReadRatingLevelId | — |
+| RATING_LEVEL_ID | RLTLSpeakRatingLevelId | — |
+| RATING_LEVEL_ID | RLTLWriteRatingLevelId | — |
+| RATING_SHORT_DESCR | RLTLReadRatingShortDescr | ✅ |
+| RATING_SHORT_DESCR | RLTLSpeakRatingShortDescr | ✅ |
+| RATING_SHORT_DESCR | RLTLWriteRatingShortDescr | ✅ |
+| REVIEW_RATING_DESCR | RLTLReadReviewRatingDescr | — |
+| REVIEW_RATING_DESCR | RLTLSpeakReviewRatingDescr | ✅ |
+| REVIEW_RATING_DESCR | RLTLWriteReviewRatingDescr | — |
+| SOURCE_LANG | RLTLReadSourceLang | — |
+
+### [[performancedocratinglevelpvo|PerformanceDocRatingLevelPVO]] (HCM · BICC: 4/7)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | RatingLevelTranslationPEOBusinessGroupId | — |
+| LANGUAGE | Language | ✅ |
+| RATING_DESCRIPTION | RatingLevelTranslationPEORatingDescription | ✅ |
+| RATING_LEVEL_ID | RatingLevelTranslationPEORatingLevelId | — |
+| RATING_SHORT_DESCR | RatingLevelTranslationPEORatingShortDescr | ✅ |
+| REVIEW_RATING_DESCR | RatingLevelTranslationPEOReviewRatingDescr | ✅ |
+| SOURCE_LANG | SourceLang | — |
+
+### [[personprofileperformanceratingpvo|PersonProfilePerformanceRatingPVO]] (HCM · BICC: 1/7)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | RtgLvlTLBusinessGroupId1 | — |
+| LANGUAGE | RtgLvlTLLanguage2 | — |
+| LAST_UPDATE_DATE | RtgLvlTranslationPEOLastUpdateDate | ✅ |
+| RATING_DESCRIPTION | RTgLvlTLRatingDescription | — |
+| RATING_LEVEL_ID | RtgLvlTLRatingLevelId | — |
+| RATING_SHORT_DESCR | RtgLvlTLRatingShortDescr | — |
+| REVIEW_RATING_DESCR | RtgLvlTLReviewRatingDescr | — |
+
+### [[potentialpvo|PotentialPVO]] (HCM · BICC: 3/7)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | RtgLvlTLPotBusinessGroupId | — |
+| LANGUAGE | RtgLvlTLPotLanguage | — |
+| LAST_UPDATE_DATE | RtgLvlTranslationPEOLastUpdateDate | ✅ |
+| RATING_DESCRIPTION | RtgLvlTLPotRatingDescription | ✅ |
+| RATING_LEVEL_ID | RtgLvlTLPotRatingLevelId | — |
+| RATING_SHORT_DESCR | RtgLvlTLPotRatingShortDescr | ✅ |
+| REVIEW_RATING_DESCR | RtgLvlTLPotReviewRatingDescr | — |
+
+### [[potentialpvo_viewall|PotentialPVO_Viewall]] (HCM · BICC: 3/7)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | RtgLvlTLPotBusinessGroupId | — |
+| LANGUAGE | RtgLvlTLPotLanguage | — |
+| LAST_UPDATE_DATE | RtgLvlTranslationPEOLastUpdateDate | ✅ |
+| RATING_DESCRIPTION | RtgLvlTLPotRatingDescription | ✅ |
+| RATING_LEVEL_ID | RtgLvlTLPotRatingLevelId | — |
+| RATING_SHORT_DESCR | RtgLvlTLPotRatingShortDescr | ✅ |
+| REVIEW_RATING_DESCR | RtgLvlTLPotReviewRatingDescr | — |
+
+### [[ratinglevelfirstlangpvo|RatingLevelFirstLangPVO]] (HCM · BICC: 3/8)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | RatingLevelTranslationPEOBusinessGroupId | — |
+| LANGUAGE | Language | — |
+| LAST_UPDATE_DATE | RatingLevelTranslationPEOLastUpdateDate | ✅ |
+| RATING_DESCRIPTION | RatingLevelTranslationPEORatingDescription | ✅ |
+| RATING_LEVEL_ID | RatingLevelTranslationPEORatingLevelId | — |
+| RATING_SHORT_DESCR | RatingLevelTranslationPEORatingShortDescr | ✅ |
+| REVIEW_RATING_DESCR | RatingLevelTranslationPEOReviewRatingDescr | — |
+| SOURCE_LANG | SourceLang | — |
+
+### [[ratinglevelfirstlangtranslationpvo|RatingLevelFirstLangTranslationPVO]] (HCM · BICC: 13/13)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | BusinessGroupId | ✅ |
+| CREATED_BY | CreatedBy | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| LANGUAGE | Language | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | LastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | ✅ |
+| RATING_DESCRIPTION | RatingDescription | ✅ |
+| RATING_LEVEL_ID | RatingLevelId | ✅ |
+| RATING_SHORT_DESCR | RatingShortDescr | ✅ |
+| REVIEW_RATING_DESCR | ReviewRatingDescr | ✅ |
+| SOURCE_LANG | SourceLang | ✅ |
+
+### [[ratinglevelfirstpvo|RatingLevelFirstPVO]] (HCM · BICC: 6/8)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | RatingLevelTranslationPEOBusinessGroupId | — |
+| LANGUAGE | Language | ✅ |
+| LAST_UPDATE_DATE | RatingLevelTranslationPEOLastUpdateDate | ✅ |
+| RATING_DESCRIPTION | RatingLevelTranslationPEORatingDescription | ✅ |
+| RATING_LEVEL_ID | RatingLevelTranslationPEORatingLevelId | — |
+| RATING_SHORT_DESCR | RatingLevelTranslationPEORatingShortDescr | ✅ |
+| REVIEW_RATING_DESCR | RatingLevelTranslationPEOReviewRatingDescr | ✅ |
+| SOURCE_LANG | SourceLang | ✅ |
+
+### [[ratinglevelinterestpvo|RatingLevelInterestPVO]] (HCM · BICC: 2/13)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | RatingLevelTranslationPEOBusinessGroupId | — |
+| CREATED_BY | RatingLevelTranslationPEOCreatedBy | — |
+| CREATION_DATE | RatingLevelTranslationPEOCreationDate | — |
+| LANGUAGE | RatingLevelTranslationPEOLanguage | — |
+| LAST_UPDATE_DATE | RatingLevelTranslationPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | RatingLevelTranslationPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | RatingLevelTranslationPEOLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | RatingLevelTranslationPEOObjectVersionNumber | — |
+| RATING_DESCRIPTION | RatingLevelTranslationPEORatingDescription | — |
+| RATING_LEVEL_ID | RatingLevelTranslationPEORatingLevelId | — |
+| RATING_SHORT_DESCR | RatingLevelTranslationPEORatingShortDescr | ✅ |
+| REVIEW_RATING_DESCR | RatingLevelTranslationPEOReviewRatingDescr | — |
+| SOURCE_LANG | RatingLevelTranslationPEOSourceLang | — |
+
+### [[ratinglevelsecondpvo|RatingLevelSecondPVO]] (HCM · BICC: 7/8)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | RatingLevelTranslationPEOBusinessGroupId | — |
+| LANGUAGE | Language | ✅ |
+| LAST_UPDATE_DATE | RatingLevelTranslationPEOLastUpdateDate | ✅ |
+| RATING_DESCRIPTION | RatingLevelTranslationPEORatingDescription | ✅ |
+| RATING_LEVEL_ID | RatingLevelTranslationPEORatingLevelId | ✅ |
+| RATING_SHORT_DESCR | RatingLevelTranslationPEORatingShortDescr | ✅ |
+| REVIEW_RATING_DESCR | RatingLevelTranslationPEOReviewRatingDescr | ✅ |
+| SOURCE_LANG | SourceLang | ✅ |
+
+### [[ratinglevelthirdpvo|RatingLevelThirdPVO]] (HCM · BICC: 7/8)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | RatingLevelTranslationPEOBusinessGroupId | — |
+| LANGUAGE | Language | ✅ |
+| LAST_UPDATE_DATE | RatingLevelTranslationPEOLastUpdateDate | ✅ |
+| RATING_DESCRIPTION | RatingLevelTranslationPEORatingDescription | ✅ |
+| RATING_LEVEL_ID | RatingLevelTranslationPEORatingLevelId | ✅ |
+| RATING_SHORT_DESCR | RatingLevelTranslationPEORatingShortDescr | ✅ |
+| REVIEW_RATING_DESCR | RatingLevelTranslationPEOReviewRatingDescr | ✅ |
+| SOURCE_LANG | SourceLang | ✅ |
+
+### [[riskpvo|RiskPVO]] (HCM · BICC: 6/14)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | RLTLImpactBusinessGroupId | — |
+| BUSINESS_GROUP_ID | RLTLRISKBusinessGroupId | — |
+| LANGUAGE | RLTLImpactLanguage | — |
+| LANGUAGE | RLTLRISKLanguage | — |
+| LAST_UPDATE_DATE | RtgLvlImpactTranslationPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_DATE | RtgLvlRiskTranslationPEOLastUpdateDate | ✅ |
+| RATING_DESCRIPTION | RLTLImpactRatingDescription | ✅ |
+| RATING_DESCRIPTION | RLTLRISKRatingDescription | ✅ |
+| RATING_LEVEL_ID | RLTLImpactRatingLevelId | — |
+| RATING_LEVEL_ID | RLTLRISKRatingLevelId | — |
+| RATING_SHORT_DESCR | RLTLImpactRatingShortDescr | ✅ |
+| RATING_SHORT_DESCR | RLTLRISKRatingShortDescr | ✅ |
+| REVIEW_RATING_DESCR | RLTLImpactReviewRatingDescr | — |
+| REVIEW_RATING_DESCR | RLTLRISKReviewRatingDescr | — |
+
+### [[riskpvo_viewall|RiskPVO_Viewall]] (HCM · BICC: 6/14)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | RLTLImpactBusinessGroupId | — |
+| BUSINESS_GROUP_ID | RLTLRISKBusinessGroupId | — |
+| LANGUAGE | RLTLImpactLanguage | — |
+| LANGUAGE | RLTLRISKLanguage | — |
+| LAST_UPDATE_DATE | RtgLvlImpactTranslationPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_DATE | RtgLvlRiskTranslationPEOLastUpdateDate | ✅ |
+| RATING_DESCRIPTION | RLTLImpactRatingDescription | ✅ |
+| RATING_DESCRIPTION | RLTLRISKRatingDescription | ✅ |
+| RATING_LEVEL_ID | RLTLImpactRatingLevelId | — |
+| RATING_LEVEL_ID | RLTLRISKRatingLevelId | — |
+| RATING_SHORT_DESCR | RLTLImpactRatingShortDescr | ✅ |
+| RATING_SHORT_DESCR | RLTLRISKRatingShortDescr | ✅ |
+| REVIEW_RATING_DESCR | RLTLImpactReviewRatingDescr | — |
+| REVIEW_RATING_DESCR | RLTLRISKReviewRatingDescr | — |
+
+### [[talentscoreboxlabellookuppvo|TalentScoreBoxLabelLookupPVO]] (HCM · BICC: 4/5)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | BusinessGroupId4 | ✅ |
+| LANGUAGE | Language | ✅ |
+| RATING_DESCRIPTION | RatingDescription | ✅ |
+| RATING_LEVEL_ID | RatingLevelId1 | ✅ |
+| RATING_SHORT_DESCR | RatingShortDescr | — |
+
+### [[talentscorepvo|TalentScorePVO]] (HCM · BICC: 2/6)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | TSBusinessGroupId | — |
+| LANGUAGE | TSLanguage | — |
+| RATING_DESCRIPTION | TSRatingDescription | ✅ |
+| RATING_LEVEL_ID | TSRatingLevelId | — |
+| RATING_SHORT_DESCR | TSRatingShortDescr | ✅ |
+| REVIEW_RATING_DESCR | TSReviewRatingDescr | — |

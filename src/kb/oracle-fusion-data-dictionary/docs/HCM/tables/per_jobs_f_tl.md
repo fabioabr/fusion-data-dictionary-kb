@@ -101,6 +101,161 @@ WHERE  tl.LANGUAGE = 'PTB';
 - Tabela de traduções (_TL) — chave composta por `JOB_ID` + `LANGUAGE`.
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[allbuyerpvo|AllBuyerPVO]] (PO · BICC: 2/5)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| EFFECTIVE_END_DATE | JobTranslationPEOEffectiveEndDate | — |
+| EFFECTIVE_START_DATE | JobTranslationPEOEffectiveStartDate | ✅ |
+| JOB_ID | JobTranslationPEOJobId | — |
+| LANGUAGE | JobTranslationPEOLanguage | — |
+| NAME | JobTranslationPEOName | ✅ |
+
+### [[globalpersonpvo|GlobalPersonPVO]] (HCM · BICC: 6/6)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| EFFECTIVE_END_DATE | JobMgrTranslationPEOEffectiveEndDate | ✅ |
+| EFFECTIVE_START_DATE | JobMgrTranslationPEOEffectiveStartDate | ✅ |
+| JOB_ID | JobMgrTranslationPEOJobId | ✅ |
+| LANGUAGE | JobMgrTranslationPEOLanguage | ✅ |
+| LAST_UPDATE_DATE | JobMgrTranslationPEOLastUpdateDate | ✅ |
+| NAME | JobMgrTranslationPEOName | ✅ |
+
+### [[globalpersonpvoviewall|GlobalPersonPVOViewAll]] (HCM · BICC: 3/6)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| EFFECTIVE_END_DATE | JobMgrTranslationPEOEffectiveEndDate | — |
+| EFFECTIVE_START_DATE | JobMgrTranslationPEOEffectiveStartDate | ✅ |
+| JOB_ID | JobMgrTranslationPEOJobId | — |
+| LANGUAGE | JobMgrTranslationPEOLanguage | — |
+| LAST_UPDATE_DATE | JobMgrTranslationPEOLastUpdateDate | ✅ |
+| NAME | JobMgrTranslationPEOName | ✅ |
+
+### [[jobextractpvo|JobExtractPVO]] (HCM · BICC: 12/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | JobTranslationPEOCreatedBy | ✅ |
+| CREATION_DATE | JobTranslationPEOCreationDate | ✅ |
+| EFFECTIVE_END_DATE | JobTranslationPEOEffectiveEndDate | ✅ |
+| EFFECTIVE_START_DATE | JobTranslationPEOEffectiveStartDate | ✅ |
+| JOB_ID | JobTranslationPEOJobId | ✅ |
+| LANGUAGE | JobTranslationPEOLanguage | ✅ |
+| LAST_UPDATE_DATE | JobTranslationPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | JobTranslationPEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | JobTranslationPEOLastUpdatedBy | ✅ |
+| NAME | JobTranslationPEOName | ✅ |
+| OBJECT_VERSION_NUMBER | JobTranslationPEOObjectVersionNumber | ✅ |
+| SOURCE_LANG | JobTranslationPEOSourceLang | ✅ |
+
+### [[jobpvo|JobPVO]] (HCM · BICC: 10/24)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | JobTranslationPEOCreatedBy | — |
+| CREATION_DATE | JobTranslationPEOCreationDate | — |
+| EFFECTIVE_END_DATE | BenchmarkJobTranslationPEOEffectiveEndDate | — |
+| EFFECTIVE_END_DATE | JobTranslationPEOEffectiveEndDate | — |
+| EFFECTIVE_END_DATE | ProgressionJobTranslationPEOEffectiveEndDate | — |
+| EFFECTIVE_START_DATE | BenchmarkJobTranslationPEOEffectiveStartDate | ✅ |
+| EFFECTIVE_START_DATE | JobTranslationPEOEffectiveStartDate | ✅ |
+| EFFECTIVE_START_DATE | ProgressionJobTranslationPEOEffectiveStartDate | ✅ |
+| JOB_ID | BenchmarkJobTranslationPEOJobId | — |
+| JOB_ID | JobTranslationPEOJobId | — |
+| JOB_ID | ProgressionJobTranslationPEOJobId | — |
+| LANGUAGE | BenchmarkJobTranslationPEOLanguage | — |
+| LANGUAGE | JobTranslationPEOLanguage | ✅ |
+| LANGUAGE | ProgressionJobTranslationPEOLanguage | — |
+| LAST_UPDATE_DATE | BenchmarkJobTranslationPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_DATE | JobTranslationPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_DATE | ProgressionJobTranslationPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | JobTranslationPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | JobTranslationPEOLastUpdatedBy | — |
+| NAME | BenchmarkJobTranslationPEOName | ✅ |
+| NAME | JobTranslationPEOName | ✅ |
+| NAME | ProgressionJobTranslationPEOName | ✅ |
+| OBJECT_VERSION_NUMBER | JobTranslationPEOObjectVersionNumber | — |
+| SOURCE_LANG | JobTranslationPEOSourceLang | — |
+
+### [[jobpvoviewall|JobPVOViewAll]] (HCM · BICC: 7/24)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | JobTranslationPEOCreatedBy | — |
+| CREATION_DATE | JobTranslationPEOCreationDate | — |
+| EFFECTIVE_END_DATE | BenchmarkJobTranslationPEOEffectiveEndDate | — |
+| EFFECTIVE_END_DATE | JobTranslationPEOEffectiveEndDate | — |
+| EFFECTIVE_END_DATE | ProgressionJobTranslationPEOEffectiveEndDate | — |
+| EFFECTIVE_START_DATE | BenchmarkJobTranslationPEOEffectiveStartDate | ✅ |
+| EFFECTIVE_START_DATE | JobTranslationPEOEffectiveStartDate | ✅ |
+| EFFECTIVE_START_DATE | ProgressionJobTranslationPEOEffectiveStartDate | ✅ |
+| JOB_ID | BenchmarkJobTranslationPEOJobId | — |
+| JOB_ID | JobTranslationPEOJobId | — |
+| JOB_ID | ProgressionJobTranslationPEOJobId | — |
+| LANGUAGE | BenchmarkJobTranslationPEOLanguage | — |
+| LANGUAGE | JobTranslationPEOLanguage | — |
+| LANGUAGE | ProgressionJobTranslationPEOLanguage | — |
+| LAST_UPDATE_DATE | BenchmarkJobTranslationPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_DATE | JobTranslationPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_DATE | ProgressionJobTranslationPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | JobTranslationPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | JobTranslationPEOLastUpdatedBy | — |
+| NAME | BenchmarkJobTranslationPEOName | — |
+| NAME | JobTranslationPEOName | ✅ |
+| NAME | ProgressionJobTranslationPEOName | — |
+| OBJECT_VERSION_NUMBER | JobTranslationPEOObjectVersionNumber | — |
+| SOURCE_LANG | JobTranslationPEOSourceLang | — |
+
+### [[jobrefpvo|JobRefPVO]] (HCM · BICC: 4/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | JobTranslationPEOCreatedBy | — |
+| CREATION_DATE | JobTranslationPEOCreationDate | — |
+| EFFECTIVE_END_DATE | JobTranslationPEOEffectiveEndDate | — |
+| EFFECTIVE_START_DATE | JobTranslationPEOEffectiveStartDate | ✅ |
+| JOB_ID | JobTranslationPEOJobId | — |
+| LANGUAGE | JobTranslationPEOLanguage | ✅ |
+| LAST_UPDATE_DATE | JobTranslationPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | JobTranslationPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | JobTranslationPEOLastUpdatedBy | — |
+| NAME | JobTranslationPEOName | ✅ |
+| OBJECT_VERSION_NUMBER | JobTranslationPEOObjectVersionNumber | — |
+| SOURCE_LANG | JobTranslationPEOSourceLang | — |
+
+### [[jobtranslationpvo|JobTranslationPVO]] (HCM · BICC: 10/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | JobTranslationPEOCreatedBy | ✅ |
+| CREATION_DATE | JobTranslationPEOCreationDate | ✅ |
+| EFFECTIVE_END_DATE | EffectiveEndDate | ✅ |
+| EFFECTIVE_START_DATE | EffectiveStartDate | ✅ |
+| JOB_ID | JobId | ✅ |
+| LANGUAGE | Language | ✅ |
+| LAST_UPDATE_DATE | JobTranslationPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | JobTranslationPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | JobTranslationPEOLastUpdatedBy | ✅ |
+| NAME | JobTranslationPEOName | ✅ |
+| OBJECT_VERSION_NUMBER | JobTranslationPEOObjectVersionNumber | — |
+| SOURCE_LANG | JobTranslationPEOSourceLang | ✅ |
+
+### [[personrefpvo|PersonRefPVO]] (HCM · BICC: 2/5)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| EFFECTIVE_END_DATE | JobTranslationMgrPEOEffectiveEndDate | — |
+| EFFECTIVE_START_DATE | JobTranslationMgrPEOEffectiveStartDate | ✅ |
+| JOB_ID | JobTranslationMgrPEOJobId | — |
+| LANGUAGE | JobTranslationMgrPEOLanguage | — |
+| NAME | JobTranslationMgrPEOName | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — PER_JOBS_F_TL](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/perjobsftl.html)

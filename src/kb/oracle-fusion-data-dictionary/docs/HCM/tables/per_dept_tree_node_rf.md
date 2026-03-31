@@ -98,6 +98,43 @@ WHERE  prf.TREE_NODE_ID = :p_tree_node_id;
 - Utilizada para associar nós da árvore com entidades de outros módulos.
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[depttreenoderfextractpvo|DeptTreeNodeRFExtractPVO]] (HCM · BICC: 28/28)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ANCESTOR_DATA_SOURCE_ID | AncestorDataSourceId | ✅ |
+| ANCESTOR_PK1_VALUE | AncestorPk1Value | ✅ |
+| ANCESTOR_PK2_VALUE | AncestorPk2Value | ✅ |
+| ANCESTOR_PK3_VALUE | AncestorPk3Value | ✅ |
+| ANCESTOR_PK4_VALUE | AncestorPk4Value | ✅ |
+| ANCESTOR_PK5_VALUE | AncestorPk5Value | ✅ |
+| ANCESTOR_TREE_LABEL_ID | AncestorTreeLabelId | ✅ |
+| ANCESTOR_TREE_NODE_ID | AncestorTreeNodeId | ✅ |
+| CREATED_BY | CreatedBy | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| DATA_SOURCE_ID | DataSourceId | ✅ |
+| DISTANCE | Distance | ✅ |
+| ENTERPRISE_ID | EnterpriseId | ✅ |
+| IS_LEAF | IsLeaf | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | LastUpdatedBy | ✅ |
+| PK1_VALUE | Pk1Value | ✅ |
+| PK2_VALUE | Pk2Value | ✅ |
+| PK3_VALUE | Pk3Value | ✅ |
+| PK4_VALUE | Pk4Value | ✅ |
+| PK5_VALUE | Pk5Value | ✅ |
+| RF_TREE_NODE_ID | RfTreeNodeId | ✅ |
+| TREE_CODE | TreeCode | ✅ |
+| TREE_LABEL_ID | TreeLabelId | ✅ |
+| TREE_NODE_ID | TreeNodeId | ✅ |
+| TREE_STRUCTURE_CODE | TreeStructureCode | ✅ |
+| TREE_VERSION_ID | TreeVersionId | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — PER_DEPT_TREE_NODE_RF](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/perdeptreenoderf.html)

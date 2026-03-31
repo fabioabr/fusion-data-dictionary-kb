@@ -103,6 +103,72 @@ WHERE  SYSDATE BETWEEN p.EFFECTIVE_START_DATE AND p.EFFECTIVE_END_DATE;
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[payrolldpvo|PayrollDPVO]] (HCM · BICC: 20/26)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CONSOLIDATION_SET_ID | PayrollDPEOConsolidationSetId | — |
+| CREATED_BY | PayrollDPEOCreatedBy | ✅ |
+| CREATION_DATE | PayrollDPEOCreationDate | ✅ |
+| CUT_OFF_DATE_OFFSET | PayrollDPEOCutOffDateOffset | ✅ |
+| DEFAULT_PAYDATE_OFFSET | PayrollDPEODefaultPaydateOffset | ✅ |
+| DEFAULT_PAYMENT_METHOD_ID | PayrollDPEODefaultPaymentMethodId | — |
+| EFFECTIVE_END_DATE | EffectiveEndDate | ✅ |
+| EFFECTIVE_START_DATE | EffectiveStartDate | ✅ |
+| FIRST_PERIOD_END_DATE | PayrollDPEOFirstPeriodEndDate | ✅ |
+| FIXED_DATE | FixedDate | ✅ |
+| GL_SET_OF_BOOKS_ID | PayrollDPEOGlSetOfBooksId | — |
+| LAST_UPDATE_DATE | PayrollDPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | PayrollDPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | PayrollDPEOLastUpdatedBy | ✅ |
+| LEGISLATIVE_DATA_GROUP_ID | PayrollDPEOLegislativeDataGroupId | ✅ |
+| NEGATIVE_PAY_ALLOWED_FLAG | PayrollDPEONegativePayAllowedFlag | ✅ |
+| NUMBER_OF_YEARS | PayrollDPEONumberOfYears | ✅ |
+| OBJECT_VERSION_NUMBER | PayrollDPEOObjectVersionNumber | — |
+| PAYROLL_ID | PayrollId | ✅ |
+| PAYROLL_NAME | PayrollDPEOPayrollName | ✅ |
+| PAYSLIP_VIEW_DATE_OFFSET | PayrollDPEOPayslipViewDateOffset | ✅ |
+| PERIOD_RESET_YEARS | PayrollDPEOPeriodResetYears | ✅ |
+| PERIOD_TYPE | PayrollDPEOPeriodType | ✅ |
+| REGULAR_EARN_DATE_OFFSET | PayrollDPEORegularEarnDateOffset | ✅ |
+| REGULAR_PROCESS_DATE_OFFSET | PayrollDPEORegularProcessDateOffset | ✅ |
+| TIME_DEFINITION_ID | PayrollDPEOTimeDefinitionId | — |
+
+### [[payrollpvo|PayrollPVO]] (HCM · BICC: 19/26)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CONSOLIDATION_SET_ID | PayrollPEOConsolidationSetId | — |
+| CREATED_BY | PayrollPEOCreatedBy | ✅ |
+| CREATION_DATE | PayrollPEOCreationDate | ✅ |
+| CUT_OFF_DATE_OFFSET | PayrollPEOCutOffDateOffset | ✅ |
+| DEFAULT_PAYDATE_OFFSET | PayrollPEODefaultPaydateOffset | ✅ |
+| DEFAULT_PAYMENT_METHOD_ID | PayrollPEODefaultPaymentMethodId | — |
+| EFFECTIVE_END_DATE | PayrollPEOEffectiveEndDate | ✅ |
+| EFFECTIVE_START_DATE | PayrollPEOEffectiveStartDate | ✅ |
+| FIRST_PERIOD_END_DATE | PayrollPEOFirstPeriodEndDate | ✅ |
+| FIXED_DATE | PayrollPEOFixedDate | ✅ |
+| GL_SET_OF_BOOKS_ID | PayrollPEOGlSetOfBooksId | — |
+| LAST_UPDATE_DATE | PayrollPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | PayrollPEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | PayrollPEOLastUpdatedBy | — |
+| LEGISLATIVE_DATA_GROUP_ID | PayrollPEOLegislativeDataGroupId | — |
+| NEGATIVE_PAY_ALLOWED_FLAG | PayrollPEONegativePayAllowedFlag | ✅ |
+| NUMBER_OF_YEARS | PayrollPEONumberOfYears | ✅ |
+| OBJECT_VERSION_NUMBER | PayrollPEOObjectVersionNumber | — |
+| PAYROLL_ID | PayrollId | ✅ |
+| PAYROLL_NAME | PayrollPEOPayrollName | ✅ |
+| PAYSLIP_VIEW_DATE_OFFSET | PayrollPEOPayslipViewDateOffset | ✅ |
+| PERIOD_RESET_YEARS | PayrollPEOPeriodResetYears | ✅ |
+| PERIOD_TYPE | PayrollPEOPeriodType | ✅ |
+| REGULAR_EARN_DATE_OFFSET | PayrollPEORegularEarnDateOffset | ✅ |
+| REGULAR_PROCESS_DATE_OFFSET | PayrollPEORegularProcessDateOffset | ✅ |
+| TIME_DEFINITION_ID | PayrollPEOTimeDefinitionId | — |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — PAY_ALL_PAYROLLS_F](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/payallpayrollsf.html)

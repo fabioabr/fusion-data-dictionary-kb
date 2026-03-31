@@ -99,6 +99,66 @@ WHERE  tl.STATE_ID = :p_state_id
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[asmtreqpackageviewallpvo|AsmtReqPackageViewAllPVO]] (HCM · BICC: 1/3)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| LANGUAGE | StateTranslationPEOLanguage | — |
+| NAME | StateTranslationPEOName | ✅ |
+| STATE_ID | StateTranslationPEOStateId | — |
+
+### [[candidatepoolmemberpvo|CandidatePoolMemberPVO]] (PO · BICC: 3/3)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| LANGUAGE | Language1 | ✅ |
+| NAME | Name1 | ✅ |
+| STATE_ID | StateId1 | ✅ |
+
+### [[routingstepstatepvo|RoutingStepStatePVO]] (HCM · BICC: 3/10)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| DESCRIPTION | PublicStateTranslationPEOActionDescription | — |
+| DESCRIPTION | StateTranslationPEODescription | ✅ |
+| LANGUAGE | PublicStateTranslationPEOLanguage | — |
+| LANGUAGE | StateTranslationPEOLanguage | — |
+| NAME | PublicStateTranslationPEOName | ✅ |
+| NAME | StateTranslationPEOName | ✅ |
+| SOURCE_LANG | PublicStateTranslationPEOSourceLang | — |
+| SOURCE_LANG | StateTranslationPEOSourceLang | — |
+| STATE_ID | PublicStateTranslationPEOStateId | — |
+| STATE_ID | StateTranslationPEOStateId | — |
+
+### [[statepvo|StatePVO]] (HCM · BICC: 12/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | CreatedBy1 | ✅ |
+| CREATION_DATE | CreationDate1 | ✅ |
+| DESCRIPTION | Description | ✅ |
+| LANGUAGE | Language | ✅ |
+| LANGUAGE | Language1 | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate1 | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin1 | ✅ |
+| LAST_UPDATED_BY | LastUpdatedBy1 | ✅ |
+| NAME | Name | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber1 | ✅ |
+| SOURCE_LANG | SourceLang | ✅ |
+| STATE_ID | StateId1 | ✅ |
+
+### [[wfmodelrequisitionpvo|WfModelRequisitionPVO]] (HCM)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| LANGUAGE | StateTranslationLanguage | — |
+| NAME | StateTranslationPEOName | — |
+| STATE_ID | StateTranslationStateId | — |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — IRC_STATES_TL](https://docs.oracle.com/en/cloud/saas/talent-management/25a/oedmf/ircstatestl.html)

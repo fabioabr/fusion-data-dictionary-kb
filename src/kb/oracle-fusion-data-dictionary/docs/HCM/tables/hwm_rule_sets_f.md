@@ -38,7 +38,6 @@ Tabela date-effective que agrupa regras relacionadas em conjuntos para aplicaç�
 > [!note] Sufixo _F
 > O sufixo `_F` indica tabela **date-effective** — cada registro possui `EFFECTIVE_START_DATE` e `EFFECTIVE_END_DATE` controlando a vigência temporal.
 
-
 ---
 
 ## 🧠 Propósito de Negócio
@@ -104,6 +103,182 @@ WHERE  SYSDATE BETWEEN t.EFFECTIVE_START_DATE AND t.EFFECTIVE_END_DATE
 
 - Tabela date-effective: sempre filtrar por vigência para obter o registro corrente.
 - Área funcional: Rules Engine dentro do Oracle Fusion Cloud HCM.
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[rulesetdpvo|RuleSetDPVO]] (GL · BICC: 12/23)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | RuleSetDPEOCreatedBy | ✅ |
+| CREATION_DATE | RuleSetDPEOCreationDate | ✅ |
+| DESCRIPTION | RuleSetDPEODescription | ✅ |
+| EFFECTIVE_END_DATE | RuleSetDPEOEffectiveEndDate | ✅ |
+| EFFECTIVE_START_DATE | RuleSetDPEOEffectiveStartDate | ✅ |
+| ENTERPRISE_ID | RuleSetDPEOEnterpriseId | — |
+| LAST_UPDATE_DATE | RuleSetDPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | RuleSetDPEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | RuleSetDPEOLastUpdatedBy | ✅ |
+| MODULE_ID | RuleSetDPEOModuleId | — |
+| OBJECT_VERSION_NUMBER | RuleSetDPEOObjectVersionNumber | — |
+| RULE_SET_ID | RuleSetDPEORuleSetId | ✅ |
+| RULE_SET_NAME | RuleSetDPEORuleSetName | ✅ |
+| RULE_SET_UNQ_ID | RuleSetDPEORuleSetUnqId | ✅ |
+| RULE_TYPE | RuleSetDPEORuleType | ✅ |
+| SORT_ATTRIBUTE1 | RuleSetDPEOSortAttribute1 | — |
+| SORT_ATTRIBUTE2 | RuleSetDPEOSortAttribute2 | — |
+| SORT_ATTRIBUTE3 | RuleSetDPEOSortAttribute3 | — |
+| SORT_ATTRIBUTE4 | RuleSetDPEOSortAttribute4 | — |
+| SORT_ATTRIBUTE5 | RuleSetDPEOSortAttribute5 | — |
+| SORT_ATTRIBUTE6 | RuleSetDPEOSortAttribute6 | — |
+| SORT_DURATION | RuleSetDPEOSortDuration | — |
+| SORT_ENTRY_TYPE | RuleSetDPEOSortEntryType | — |
+
+### [[rulesetmemberpvo|RuleSetMemberPVO]] (GL · BICC: 13/27)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | RuleSetDPEOCreatedBy | ✅ |
+| CREATION_DATE | RuleSetDPEOCreationDate | ✅ |
+| DESCRIPTION | RuleSetDPEODescription | ✅ |
+| EFFECTIVE_END_DATE | MemberRuleSetDPEOEffectiveEndDate | — |
+| EFFECTIVE_END_DATE | RuleSetDPEOEffectiveEndDate | — |
+| EFFECTIVE_START_DATE | MemberRuleSetDPEOEffectiveStartDate | ✅ |
+| EFFECTIVE_START_DATE | RuleSetDPEOEffectiveStartDate | ✅ |
+| ENTERPRISE_ID | RuleSetDPEOEnterpriseId | — |
+| LAST_UPDATE_DATE | RuleSetDPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | RuleSetDPEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | RuleSetDPEOLastUpdatedBy | ✅ |
+| MODULE_ID | RuleSetDPEOModuleId | — |
+| OBJECT_VERSION_NUMBER | RuleSetDPEOObjectVersionNumber | — |
+| RULE_SET_ID | MemberRuleSetDPEORuleSetId | — |
+| RULE_SET_ID | RuleSetDPEORuleSetId | ✅ |
+| RULE_SET_NAME | MemberRuleSetDPEORuleSetName | ✅ |
+| RULE_SET_NAME | RuleSetDPEORuleSetName | ✅ |
+| RULE_SET_UNQ_ID | RuleSetDPEORuleSetUnqId | ✅ |
+| RULE_TYPE | RuleSetDPEORuleType | ✅ |
+| SORT_ATTRIBUTE1 | RuleSetDPEOSortAttribute1 | — |
+| SORT_ATTRIBUTE2 | RuleSetDPEOSortAttribute2 | — |
+| SORT_ATTRIBUTE3 | RuleSetDPEOSortAttribute3 | — |
+| SORT_ATTRIBUTE4 | RuleSetDPEOSortAttribute4 | — |
+| SORT_ATTRIBUTE5 | RuleSetDPEOSortAttribute5 | — |
+| SORT_ATTRIBUTE6 | RuleSetDPEOSortAttribute6 | — |
+| SORT_DURATION | RuleSetDPEOSortDuration | — |
+| SORT_ENTRY_TYPE | RuleSetDPEOSortEntryType | — |
+
+### [[tcrrulesetdpvo|TCRRuleSetDPVO]] (GL · BICC: 11/23)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | RuleSetDPEOCreatedBy | ✅ |
+| CREATION_DATE | RuleSetDPEOCreationDate | ✅ |
+| DESCRIPTION | RuleSetDPEODescription | ✅ |
+| EFFECTIVE_END_DATE | RuleSetDPEOEffectiveEndDate | ✅ |
+| EFFECTIVE_START_DATE | RuleSetDPEOEffectiveStartDate | ✅ |
+| ENTERPRISE_ID | RuleSetDPEOEnterpriseId | — |
+| LAST_UPDATE_DATE | RuleSetDPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | RuleSetDPEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | RuleSetDPEOLastUpdatedBy | ✅ |
+| MODULE_ID | RuleSetDPEOModuleId | — |
+| OBJECT_VERSION_NUMBER | RuleSetDPEOObjectVersionNumber | — |
+| RULE_SET_ID | RuleSetDPEORuleSetId | ✅ |
+| RULE_SET_NAME | RuleSetDPEORuleSetName | ✅ |
+| RULE_SET_UNQ_ID | RuleSetDPEORuleSetUnqId | ✅ |
+| RULE_TYPE | RuleSetDPEORuleType | — |
+| SORT_ATTRIBUTE1 | RuleSetDPEOSortAttribute1 | — |
+| SORT_ATTRIBUTE2 | RuleSetDPEOSortAttribute2 | — |
+| SORT_ATTRIBUTE3 | RuleSetDPEOSortAttribute3 | — |
+| SORT_ATTRIBUTE4 | RuleSetDPEOSortAttribute4 | — |
+| SORT_ATTRIBUTE5 | RuleSetDPEOSortAttribute5 | — |
+| SORT_ATTRIBUTE6 | RuleSetDPEOSortAttribute6 | — |
+| SORT_DURATION | RuleSetDPEOSortDuration | — |
+| SORT_ENTRY_TYPE | RuleSetDPEOSortEntryType | — |
+
+### [[tdrrulesetdpvo|TDRRuleSetDPVO]] (GL · BICC: 11/23)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | RuleSetDPEOCreatedBy | ✅ |
+| CREATION_DATE | RuleSetDPEOCreationDate | ✅ |
+| DESCRIPTION | RuleSetDPEODescription | ✅ |
+| EFFECTIVE_END_DATE | RuleSetDPEOEffectiveEndDate | ✅ |
+| EFFECTIVE_START_DATE | RuleSetDPEOEffectiveStartDate | ✅ |
+| ENTERPRISE_ID | RuleSetDPEOEnterpriseId | — |
+| LAST_UPDATE_DATE | RuleSetDPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | RuleSetDPEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | RuleSetDPEOLastUpdatedBy | ✅ |
+| MODULE_ID | RuleSetDPEOModuleId | — |
+| OBJECT_VERSION_NUMBER | RuleSetDPEOObjectVersionNumber | — |
+| RULE_SET_ID | RuleSetDPEORuleSetId | ✅ |
+| RULE_SET_NAME | RuleSetDPEORuleSetName | ✅ |
+| RULE_SET_UNQ_ID | RuleSetDPEORuleSetUnqId | ✅ |
+| RULE_TYPE | RuleSetDPEORuleType | — |
+| SORT_ATTRIBUTE1 | RuleSetDPEOSortAttribute1 | — |
+| SORT_ATTRIBUTE2 | RuleSetDPEOSortAttribute2 | — |
+| SORT_ATTRIBUTE3 | RuleSetDPEOSortAttribute3 | — |
+| SORT_ATTRIBUTE4 | RuleSetDPEOSortAttribute4 | — |
+| SORT_ATTRIBUTE5 | RuleSetDPEOSortAttribute5 | — |
+| SORT_ATTRIBUTE6 | RuleSetDPEOSortAttribute6 | — |
+| SORT_DURATION | RuleSetDPEOSortDuration | — |
+| SORT_ENTRY_TYPE | RuleSetDPEOSortEntryType | — |
+
+### [[terrulesetdpvo|TERRuleSetDPVO]] (GL · BICC: 11/23)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | RuleSetDPEOCreatedBy | ✅ |
+| CREATION_DATE | RuleSetDPEOCreationDate | ✅ |
+| DESCRIPTION | RuleSetDPEODescription | ✅ |
+| EFFECTIVE_END_DATE | RuleSetDPEOEffectiveEndDate | ✅ |
+| EFFECTIVE_START_DATE | RuleSetDPEOEffectiveStartDate | ✅ |
+| ENTERPRISE_ID | RuleSetDPEOEnterpriseId | — |
+| LAST_UPDATE_DATE | RuleSetDPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | RuleSetDPEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | RuleSetDPEOLastUpdatedBy | ✅ |
+| MODULE_ID | RuleSetDPEOModuleId | — |
+| OBJECT_VERSION_NUMBER | RuleSetDPEOObjectVersionNumber | — |
+| RULE_SET_ID | RuleSetDPEORuleSetId | ✅ |
+| RULE_SET_NAME | RuleSetDPEORuleSetName | ✅ |
+| RULE_SET_UNQ_ID | RuleSetDPEORuleSetUnqId | ✅ |
+| RULE_TYPE | RuleSetDPEORuleType | — |
+| SORT_ATTRIBUTE1 | RuleSetDPEOSortAttribute1 | — |
+| SORT_ATTRIBUTE2 | RuleSetDPEOSortAttribute2 | — |
+| SORT_ATTRIBUTE3 | RuleSetDPEOSortAttribute3 | — |
+| SORT_ATTRIBUTE4 | RuleSetDPEOSortAttribute4 | — |
+| SORT_ATTRIBUTE5 | RuleSetDPEOSortAttribute5 | — |
+| SORT_ATTRIBUTE6 | RuleSetDPEOSortAttribute6 | — |
+| SORT_DURATION | RuleSetDPEOSortDuration | — |
+| SORT_ENTRY_TYPE | RuleSetDPEOSortEntryType | — |
+
+### [[tsrrulesetdpvo|TSRRuleSetDPVO]] (GL · BICC: 11/23)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | RuleSetDPEOCreatedBy | ✅ |
+| CREATION_DATE | RuleSetDPEOCreationDate | ✅ |
+| DESCRIPTION | RuleSetDPEODescription | ✅ |
+| EFFECTIVE_END_DATE | RuleSetDPEOEffectiveEndDate | ✅ |
+| EFFECTIVE_START_DATE | RuleSetDPEOEffectiveStartDate | ✅ |
+| ENTERPRISE_ID | RuleSetDPEOEnterpriseId | — |
+| LAST_UPDATE_DATE | RuleSetDPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | RuleSetDPEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | RuleSetDPEOLastUpdatedBy | ✅ |
+| MODULE_ID | RuleSetDPEOModuleId | — |
+| OBJECT_VERSION_NUMBER | RuleSetDPEOObjectVersionNumber | — |
+| RULE_SET_ID | RuleSetDPEORuleSetId | ✅ |
+| RULE_SET_NAME | RuleSetDPEORuleSetName | ✅ |
+| RULE_SET_UNQ_ID | RuleSetDPEORuleSetUnqId | ✅ |
+| RULE_TYPE | RuleSetDPEORuleType | — |
+| SORT_ATTRIBUTE1 | RuleSetDPEOSortAttribute1 | — |
+| SORT_ATTRIBUTE2 | RuleSetDPEOSortAttribute2 | — |
+| SORT_ATTRIBUTE3 | RuleSetDPEOSortAttribute3 | — |
+| SORT_ATTRIBUTE4 | RuleSetDPEOSortAttribute4 | — |
+| SORT_ATTRIBUTE5 | RuleSetDPEOSortAttribute5 | — |
+| SORT_ATTRIBUTE6 | RuleSetDPEOSortAttribute6 | — |
+| SORT_DURATION | RuleSetDPEOSortDuration | — |
+| SORT_ENTRY_TYPE | RuleSetDPEOSortEntryType | — |
 
 ---
 

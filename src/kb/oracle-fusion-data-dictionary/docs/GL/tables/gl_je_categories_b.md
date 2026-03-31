@@ -133,6 +133,43 @@ ORDER BY total_debito DESC;
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[journalcategorybpvo|JournalCategoryBPVO]] (GL · BICC: 3/9)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CONSOLIDATION_FLAG | JrnlCatConsolidationFlag | — |
+| CREATED_BY | JrnlCatCreatedBy | — |
+| CREATION_DATE | JrnlCatCreationDate | — |
+| JE_CATEGORY_KEY | JrnlCatJeCategoryKey | ✅ |
+| JE_CATEGORY_NAME | JeCategoryName | ✅ |
+| LAST_UPDATE_DATE | JrnlCatLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | JrnlCatLastUpdateLogin | — |
+| LAST_UPDATED_BY | JrnlCatLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | JrnlCatObjectVersionNumber | — |
+
+### [[journalcategoryextractpvo|JournalCategoryExtractPVO]] (OTHER · BICC: 8/14)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ATTRIBUTE1 | JournalCategoryAttribute1 | — |
+| ATTRIBUTE2 | JournalCategoryAttribute2 | — |
+| ATTRIBUTE3 | JournalCategoryAttribute3 | — |
+| ATTRIBUTE4 | JournalCategoryAttribute4 | — |
+| ATTRIBUTE5 | JournalCategoryAttribute5 | — |
+| ATTRIBUTE_CATEGORY | JournalCategoryAttrCategory | — |
+| CREATED_BY | JournalCategoryCreatedBy | ✅ |
+| CREATION_DATE | JournalCategoryCreationDate | ✅ |
+| JE_CATEGORY_KEY | JournalCategoryJeCategoryKey | ✅ |
+| JE_CATEGORY_NAME | JournalCategoryJeCategoryName | ✅ |
+| LAST_UPDATE_DATE | JournalCategoryLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | JournalCategoryLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | JournalCategoryLastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | JournalCategoryObjectVerNum | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — GL_JE_CATEGORIES](https://docs.oracle.com/en/cloud/saas/financials/25a/oedmf/gljecategories-25720.html)

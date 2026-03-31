@@ -102,6 +102,28 @@ WHERE  ROWNUM <= 100;
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[eligibilityobjecteligprofileextractpvo|EligibilityObjectEligProfileExtractPVO]] (HCM · BICC: 13/13)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | BusinessGroupId | ✅ |
+| CREATED_BY | CreatedBy | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| EFFECTIVE_END_DATE | EffectiveEndDate | ✅ |
+| EFFECTIVE_START_DATE | EffectiveStartDate | ✅ |
+| ELIG_OBJ_ELIG_PRFL_ID | EligObjEligPrflId | ✅ |
+| ELIG_OBJ_ID | EligObjId | ✅ |
+| ELIG_PRFL_ID | EligPrflId | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | LastUpdatedBy | ✅ |
+| MNDTRY_FLAG | MndtryFlag | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — BEN_ELIG_OBJ_ELIG_PROFL_F](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/beneligobjeligproflf.html)

@@ -104,3 +104,28 @@ FROM   IRC_ESIGNATURES es WHERE es.SIGNATURE_STATUS = 'PENDING';
 
 - [Oracle Docs -- IRC_ESIGNATURES](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/ircesignatures.html)
 - [[hcm-module-data-dictionary]] -- Dossie do modulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[esignaturepvo|ESignaturePVO]] (HCM · BICC: 14/16)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | CreatedBy | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| DISCRIMINANT_OBJECT_ID | ESignaturePEODiscriminantObjectId | — |
+| DISCRIMINANT_OBJECT_TYPE | ESignaturePEODiscriminantObjectType | — |
+| ESIGNATURE_ID | EsignatureId | ✅ |
+| FULL_NAME | FullName | ✅ |
+| IP_ADDRESS | IpAddress | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | LastUpdatedBy | ✅ |
+| OBJECT_ID | ObjectId | ✅ |
+| OBJECT_TYPE | ObjectType | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | ✅ |
+| PERSON_ID | PersonId | ✅ |
+| SIGNATURE_DATE | SignatureDate | ✅ |
+| VALUE_HASH | ValueHash | ✅ |

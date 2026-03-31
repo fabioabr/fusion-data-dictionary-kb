@@ -83,6 +83,64 @@ SELECT csh.SCHEDULE_HEADER_NAME,
 - A associação com `AGING_BUCKET_ID` permite escalonamento automático de encargos por tempo de atraso.
 - Cronogramas inativos no cabeçalho não devem ser processados.
 
+## 🔗 PVOs Relacionados
+
+### [[chargescheduleextractpvo|ChargeScheduleExtractPVO]] (OTHER · BICC: 9/25)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ATTRIBUTE1 | ArChargeScheduleAttribute1 | — |
+| ATTRIBUTE10 | ArChargeScheduleAttribute10 | — |
+| ATTRIBUTE11 | ArChargeScheduleAttribute11 | — |
+| ATTRIBUTE12 | ArChargeScheduleAttribute12 | — |
+| ATTRIBUTE13 | ArChargeScheduleAttribute13 | — |
+| ATTRIBUTE14 | ArChargeScheduleAttribute14 | — |
+| ATTRIBUTE15 | ArChargeScheduleAttribute15 | — |
+| ATTRIBUTE2 | ArChargeScheduleAttribute2 | — |
+| ATTRIBUTE3 | ArChargeScheduleAttribute3 | — |
+| ATTRIBUTE4 | ArChargeScheduleAttribute4 | — |
+| ATTRIBUTE5 | ArChargeScheduleAttribute5 | — |
+| ATTRIBUTE6 | ArChargeScheduleAttribute6 | — |
+| ATTRIBUTE7 | ArChargeScheduleAttribute7 | — |
+| ATTRIBUTE8 | ArChargeScheduleAttribute8 | — |
+| ATTRIBUTE9 | ArChargeScheduleAttribute9 | — |
+| ATTRIBUTE_CATEGORY | ArChargeScheduleAttributeCategory | — |
+| CREATED_BY | ArChargeScheduleCreatedBy | ✅ |
+| CREATION_DATE | ArChargeScheduleCreationDate | ✅ |
+| LAST_UPDATE_DATE | ArChargeScheduleLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ArChargeScheduleLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | ArChargeScheduleLastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | ArChargeScheduleObjectVersionNumber | ✅ |
+| SCHEDULE_DESCRIPTION | ArChargeScheduleScheduleDescription | ✅ |
+| SCHEDULE_ID | ArChargeScheduleScheduleId | ✅ |
+| SCHEDULE_NAME | ArChargeScheduleScheduleName | ✅ |
+
+### [[customerfinancialprofilepvo|CustomerFinancialProfilePVO]] (AR)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| SCHEDULE_DESCRIPTION | ChargeScheduleScheduleDescription | — |
+| SCHEDULE_ID | ChargeScheduleScheduleId | — |
+| SCHEDULE_NAME | ChargeScheduleScheduleName | — |
+
+### [[customerprofile|CustomerProfile]] (AR · BICC: 1/3)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| SCHEDULE_DESCRIPTION | ChargeSchedulesScheduleDescription | — |
+| SCHEDULE_ID | ChargeSchedulesScheduleId | — |
+| SCHEDULE_NAME | ChargeSchedulesScheduleName | ✅ |
+
+### [[customersiteprofile|CustomerSiteProfile]] (AR · BICC: 1/3)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| SCHEDULE_DESCRIPTION | ChargeSchedulesScheduleDescription | — |
+| SCHEDULE_ID | ChargeSchedulesScheduleId | — |
+| SCHEDULE_NAME | ChargeSchedulesScheduleName | ✅ |
+
+---
+
 ## 📚 Referências
 
 - Oracle Fusion Cloud Financials — Accounts Receivable Tables (OEDMF Release 13).

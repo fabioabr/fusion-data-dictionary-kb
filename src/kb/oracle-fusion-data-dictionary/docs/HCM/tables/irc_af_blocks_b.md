@@ -117,3 +117,23 @@ ORDER BY b.DISPLAY_SEQUENCE;
 
 - [Oracle Docs — IRC_AF_BLOCKS_B](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/ircafblocksb.html)
 - [[hcm-module-data-dictionary]] — Dossie do modulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[applyflowpageblockpvo|ApplyFlowPageBlockPVO]] (HCM · BICC: 2/11)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BLOCK_CODE | BlockCode | — |
+| BLOCK_ID | BlockId | ✅ |
+| BLOCK_TYPE_CODE | BlockTypeCode | — |
+| BLOCK_USAGE_CODE | BlockUsageCode | — |
+| CREATED_BY | ApplyFlowBlockBPEOCreatedBy | — |
+| CREATION_DATE | ApplyFlowBlockBPEOCreationDate | — |
+| LAST_UPDATE_DATE | ApplyFlowBlockBPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ApplyFlowBlockBPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | ApplyFlowBlockBPEOLastUpdatedBy | — |
+| PROFILE_CONTENT_TYPE_ID | ApplyFlowBlockBPEOProfileContentTypeId | — |
+| SEED_DATA_SOURCE | ApplyFlowBlockBPEOSeedDataSource | — |

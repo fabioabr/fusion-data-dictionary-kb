@@ -114,6 +114,141 @@ ORDER BY tl.LANGUAGE;
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[browsingcategoryhierarchypvo|BrowsingCategoryHierarchyPVO]] (PO · BICC: 30/110)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CATEGORY_DESCRIPTION | Level10CategoryDescription | ✅ |
+| CATEGORY_DESCRIPTION | Level1CategoryDescription | ✅ |
+| CATEGORY_DESCRIPTION | Level2CategoryDescription | ✅ |
+| CATEGORY_DESCRIPTION | Level3CategoryDescription | ✅ |
+| CATEGORY_DESCRIPTION | Level4CategoryDescription | ✅ |
+| CATEGORY_DESCRIPTION | Level5CategoryDescription | ✅ |
+| CATEGORY_DESCRIPTION | Level6CategoryDescription | ✅ |
+| CATEGORY_DESCRIPTION | Level7CategoryDescription | ✅ |
+| CATEGORY_DESCRIPTION | Level8CategoryDescription | ✅ |
+| CATEGORY_DESCRIPTION | Level9CategoryDescription | ✅ |
+| CATEGORY_ID | Level10CategoryId | — |
+| CATEGORY_ID | Level1CategoryId | — |
+| CATEGORY_ID | Level2CategoryId | — |
+| CATEGORY_ID | Level3CategoryId | — |
+| CATEGORY_ID | Level4CategoryId | — |
+| CATEGORY_ID | Level5CategoryId | — |
+| CATEGORY_ID | Level6CategoryId | — |
+| CATEGORY_ID | Level7CategoryId | — |
+| CATEGORY_ID | Level8CategoryId | — |
+| CATEGORY_ID | Level9CategoryId | — |
+| CATEGORY_NAME | Level10CategoryName | ✅ |
+| CATEGORY_NAME | Level1CategoryName | ✅ |
+| CATEGORY_NAME | Level2CategoryName | ✅ |
+| CATEGORY_NAME | Level3CategoryName | ✅ |
+| CATEGORY_NAME | Level4CategoryName | ✅ |
+| CATEGORY_NAME | Level5CategoryName | ✅ |
+| CATEGORY_NAME | Level6CategoryName | ✅ |
+| CATEGORY_NAME | Level7CategoryName | ✅ |
+| CATEGORY_NAME | Level8CategoryName | ✅ |
+| CATEGORY_NAME | Level9CategoryName | ✅ |
+| CREATED_BY | CreatedBy1 | — |
+| CREATED_BY | CreatedBy10 | — |
+| CREATED_BY | CreatedBy2 | — |
+| CREATED_BY | CreatedBy3 | — |
+| CREATED_BY | CreatedBy4 | — |
+| CREATED_BY | CreatedBy5 | — |
+| CREATED_BY | CreatedBy6 | — |
+| CREATED_BY | CreatedBy7 | — |
+| CREATED_BY | CreatedBy8 | — |
+| CREATED_BY | CreatedBy9 | — |
+| CREATION_DATE | CreationDate1 | — |
+| CREATION_DATE | CreationDate10 | — |
+| CREATION_DATE | CreationDate2 | — |
+| CREATION_DATE | CreationDate3 | — |
+| CREATION_DATE | CreationDate4 | — |
+| CREATION_DATE | CreationDate5 | — |
+| CREATION_DATE | CreationDate6 | — |
+| CREATION_DATE | CreationDate7 | — |
+| CREATION_DATE | CreationDate8 | — |
+| CREATION_DATE | CreationDate9 | — |
+| LANGUAGE | Level10Language | — |
+| LANGUAGE | Level1Language | — |
+| LANGUAGE | Level2Language | — |
+| LANGUAGE | Level3Language | — |
+| LANGUAGE | Level4Language | — |
+| LANGUAGE | Level5Language | — |
+| LANGUAGE | Level6Language | — |
+| LANGUAGE | Level7Language | — |
+| LANGUAGE | Level8Language | — |
+| LANGUAGE | Level9Language | — |
+| LAST_UPDATE_DATE | LastUpdateDate1 | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate10 | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate2 | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate3 | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate4 | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate5 | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate6 | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate7 | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate8 | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate9 | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin1 | — |
+| LAST_UPDATE_LOGIN | LastUpdateLogin10 | — |
+| LAST_UPDATE_LOGIN | LastUpdateLogin2 | — |
+| LAST_UPDATE_LOGIN | LastUpdateLogin3 | — |
+| LAST_UPDATE_LOGIN | LastUpdateLogin4 | — |
+| LAST_UPDATE_LOGIN | LastUpdateLogin5 | — |
+| LAST_UPDATE_LOGIN | LastUpdateLogin6 | — |
+| LAST_UPDATE_LOGIN | LastUpdateLogin7 | — |
+| LAST_UPDATE_LOGIN | LastUpdateLogin8 | — |
+| LAST_UPDATE_LOGIN | LastUpdateLogin9 | — |
+| LAST_UPDATED_BY | LastUpdatedBy1 | — |
+| LAST_UPDATED_BY | LastUpdatedBy10 | — |
+| LAST_UPDATED_BY | LastUpdatedBy2 | — |
+| LAST_UPDATED_BY | LastUpdatedBy3 | — |
+| LAST_UPDATED_BY | LastUpdatedBy4 | — |
+| LAST_UPDATED_BY | LastUpdatedBy5 | — |
+| LAST_UPDATED_BY | LastUpdatedBy6 | — |
+| LAST_UPDATED_BY | LastUpdatedBy7 | — |
+| LAST_UPDATED_BY | LastUpdatedBy8 | — |
+| LAST_UPDATED_BY | LastUpdatedBy9 | — |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber1 | — |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber10 | — |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber2 | — |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber3 | — |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber4 | — |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber5 | — |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber6 | — |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber7 | — |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber8 | — |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber9 | — |
+| SOURCE_LANG | Level10SourceLang | — |
+| SOURCE_LANG | Level1SourceLang | — |
+| SOURCE_LANG | Level2SourceLang | — |
+| SOURCE_LANG | Level3SourceLang | — |
+| SOURCE_LANG | Level4SourceLang | — |
+| SOURCE_LANG | Level5SourceLang | — |
+| SOURCE_LANG | Level6SourceLang | — |
+| SOURCE_LANG | Level7SourceLang | — |
+| SOURCE_LANG | Level8SourceLang | — |
+| SOURCE_LANG | Level9SourceLang | — |
+
+### [[browsingcategorytranslationextractpvo|BrowsingCategoryTranslationExtractPVO]] (PO · BICC: 11/11)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CATEGORY_DESCRIPTION | CategoryDescription | ✅ |
+| CATEGORY_ID | CategoryId | ✅ |
+| CATEGORY_NAME | CategoryName | ✅ |
+| CREATED_BY | CreatedBy | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| LANGUAGE | Language | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | LastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | ✅ |
+| SOURCE_LANG | SourceLang | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — POR Tables](https://docs.oracle.com/en/cloud/saas/procurement/25a/oedmf/portables.html)

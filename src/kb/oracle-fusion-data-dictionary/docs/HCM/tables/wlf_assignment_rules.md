@@ -115,3 +115,67 @@ ORDER BY ar.RULE_NAME;
 
 - [Oracle Docs — WLF_ASSIGNMENT_RULES](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/wlfassignmentrules.html)
 - [[hcm-module-data-dictionary]] — Dossiê do módulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[assignmentrulespvo|AssignmentRulesPVO]] (HCM · BICC: 14/24)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ASSIGNMENT_RULE_ID | AssignmentRulePEOAssignmentRuleId | ✅ |
+| CREATED_BY | AssignmentRulePEOCreatedBy | — |
+| CREATION_DATE | AssignmentRulePEOCreationDate | — |
+| DYN_DUE_DATE | AssignmentRulePEODynDueDate | — |
+| DYN_DUE_DATE_OPTION | AssignmentRulePEODynDueDateOption | — |
+| DYN_DUE_IN_DAYS | AssignmentRulePEODynDueInDays | — |
+| DYN_ENABLED | AssignmentRulePEODynEnabled | ✅ |
+| DYN_STOP_NEW_DATE | AssignmentRulePEODynStopNewDate | — |
+| DYN_STOP_WITHDRAW_DATE | AssignmentRulePEODynStopWithdrawDate | — |
+| DYN_WITHDRAW_OPTION | AssignmentRulePEODynWithdrawOption | ✅ |
+| EXPIRY_DATE | AssignmentRulePEOExpiryDate | ✅ |
+| EXPIRY_IN_DAYS | AssignmentRulePEOExpiryInDays | ✅ |
+| EXPIRY_IN_NUM_YRS | AssignmentRulePEOExpiryInNumYrs | ✅ |
+| EXPIRY_OPTION | AssignmentRulePEOExpiryOption | ✅ |
+| INITIAL_DUE_DATE | AssignmentRulePEOInitialDueDate | ✅ |
+| INITIAL_DUE_DATE_OPTION | AssignmentRulePEOInitialDueDateOption | — |
+| INITIAL_DUE_IN_DAYS | AssignmentRulePEOInitialDueInDays | ✅ |
+| LAST_UPDATE_DATE | AssignmentRulePEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | AssignmentRulePEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | AssignmentRulePEOLastUpdatedBy | — |
+| LEARNING_ITEM_EFFECTIVITY | AssignmentRulePEOLearningItemEffectivity | ✅ |
+| RENEWAL_BEFORE_EXPIRY_DAYS | AssignmentRulePEORenewalBeforeExpiryDays | ✅ |
+| RENEWAL_OPTIONS | AssignmentRulePEORenewalOptions | ✅ |
+| VALIDITY_OPTION | AssignmentRulePEOValidityOption | ✅ |
+
+### [[eventassignmentrecordpvo|EventAssignmentRecordPVO]] (HCM · BICC: 15/26)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ASSIGNMENT_RULE_ID | AssignmentRulePEOAssignmentRuleId | ✅ |
+| CREATED_BY | AssignmentRulePEOCreatedBy | — |
+| CREATION_DATE | AssignmentRulePEOCreationDate | — |
+| DYN_DUE_DATE | AssignmentRulePEODynDueDate | — |
+| DYN_DUE_DATE_OPTION | AssignmentRulePEODynDueDateOption | — |
+| DYN_DUE_IN_DAYS | AssignmentRulePEODynDueInDays | — |
+| DYN_ENABLED | AssignmentRulePEODynEnabled | ✅ |
+| DYN_STOP_NEW_DATE | AssignmentRulePEODynStopNewDate | — |
+| DYN_STOP_WITHDRAW_DATE | AssignmentRulePEODynStopWithdrawDate | — |
+| DYN_WITHDRAW_OPTION | AssignmentRulePEODynWithdrawOption | ✅ |
+| ENTERPRISE_ID | AssignmentRulePEOEnterpriseId | — |
+| EXPIRY_DATE | AssignmentRulePEOExpiryDate | ✅ |
+| EXPIRY_IN_DAYS | AssignmentRulePEOExpiryInDays | ✅ |
+| EXPIRY_IN_NUM_YRS | AssignmentRulePEOExpiryInNumYrs | ✅ |
+| EXPIRY_OPTION | AssignmentRulePEOExpiryOption | ✅ |
+| INITIAL_DUE_DATE | AssignmentRulePEOInitialDueDate | ✅ |
+| INITIAL_DUE_DATE_OPTION | AssignmentRulePEOInitialDueDateOption | ✅ |
+| INITIAL_DUE_IN_DAYS | AssignmentRulePEOInitialDueInDays | ✅ |
+| LAST_UPDATE_DATE | AssignmentRulePEOLastUpdateDate | — |
+| LAST_UPDATE_LOGIN | AssignmentRulePEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | AssignmentRulePEOLastUpdatedBy | — |
+| LEARNING_ITEM_EFFECTIVITY | AssignmentRulePEOLearningItemEffectivity | ✅ |
+| OBJECT_VERSION_NUMBER | AssignmentRulePEOObjectVersionNumber | ✅ |
+| RENEWAL_BEFORE_EXPIRY_DAYS | AssignmentRulePEORenewalBeforeExpiryDays | ✅ |
+| RENEWAL_OPTIONS | AssignmentRulePEORenewalOptions | ✅ |
+| VALIDITY_OPTION | AssignmentRulePEOValidityOption | ✅ |

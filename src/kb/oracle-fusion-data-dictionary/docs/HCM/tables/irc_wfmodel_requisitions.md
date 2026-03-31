@@ -98,6 +98,40 @@ WHERE  wr.REQUISITION_ID = :p_requisition_id;
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[wfmodelrequisitionpvo|WfModelRequisitionPVO]] (HCM · BICC: 7/25)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| COMMENTS | Comments | — |
+| CREATED_BY | CreatedBy | — |
+| CREATION_DATE | CreationDate | — |
+| GEOGRAPHY_NODE_ID | GeographyNodeId | — |
+| HIRING_MANAGER_ID | HiringManagerId | — |
+| JUSTIFICATION_CODE | JustificationCode | — |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | — |
+| LAST_UPDATED_BY | LastUpdatedBy | — |
+| MANAGER_ASSIGNMENT_ID | ManagerAssignmentId | — |
+| MANAGER_TITLE | ManagerTitle | ✅ |
+| NUMBER_TO_HIRE | NumberToHire | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | — |
+| PHASE_ID | PhaseId | — |
+| RECRUITER_ASSIGNMENT_ID | RecruiterAssignmentId | — |
+| RECRUITER_ID | RecruiterId | — |
+| RECRUITING_TYPE_CODE | RecruitingTypeCode | — |
+| REQUISITION_LANGUAGE | RequisitionLanguage | — |
+| REQUISITION_NUMBER | RequisitionNumber | ✅ |
+| SOURCE_REQUISITION_ID | SourceRequisitionId | — |
+| STATE_ID | StateId | — |
+| TITLE | Title | ✅ |
+| UNLIMITED_HIRE_FLAG | UnlimitedHireFlag | ✅ |
+| WF_MODEL_ID | WfModelId | — |
+| WF_MODEL_REQUISITION_ID | WfModelRequisitionId | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — IRC_WFMODEL_REQUISITIONS](https://docs.oracle.com/en/cloud/saas/talent-management/25a/oedmf/ircwfmodelrequisitions.html)

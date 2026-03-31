@@ -98,6 +98,26 @@ WHERE  sad.SEARCH_ACTION_ID = :p_action_id;
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[searchactiondetailpvo|SearchActionDetailPVO]] (PO · BICC: 3/11)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_DETAIL_ID | ActionDetailId | ✅ |
+| ACTION_ID | SearchActionDetailPEOActionId | — |
+| CREATED_BY | SearchActionDetailPEOCreatedBy | — |
+| CREATION_DATE | SearchActionDetailPEOCreationDate | — |
+| LAST_UPDATE_DATE | SearchActionDetailPEOLastUpdateDate | — |
+| LAST_UPDATE_LOGIN | SearchActionDetailPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | SearchActionDetailPEOLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | SearchActionDetailPEOObjectVersionNumber | — |
+| SEARCH_ID | SearchActionDetailPEOSearchId | — |
+| SELECTED_ENTITY_ID | SearchActionDetailPEOSelectedEntityId | ✅ |
+| TARGET_ENTITY_ID | SearchActionDetailPEOTargetEntityId | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — IRC_SEARCH_ACTION_DETAILS](https://docs.oracle.com/en/cloud/saas/talent-management/25a/oedmf/ircsearchactiondetails.html)

@@ -98,6 +98,42 @@ WHERE  sa.SEARCH_ID = :p_search_id;
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[searchactiondetailpvo|SearchActionDetailPVO]] (PO · BICC: 2/11)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION | SearchActionPEOAction | ✅ |
+| ACTION_ID | ActionId | ✅ |
+| CREATED_BY | SearchActionPEOCreatedBy | — |
+| CREATION_DATE | SearchActionPEOCreationDate | — |
+| ENTITY_IDS | SearchActionPEOEntityIds | — |
+| LAST_UPDATE_DATE | SearchActionPEOLastUpdateDate | — |
+| LAST_UPDATE_LOGIN | SearchActionPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | SearchActionPEOLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | SearchActionPEOObjectVersionNumber | — |
+| SEARCH_ID | SearchActionPEOSearchId | — |
+| SELECTED_CANDIDATES | SearchActionPEOSelectedCandidates | — |
+
+### [[searchactionpvo|SearchActionPVO]] (PO · BICC: 2/11)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION | SearchActionPEOAction | ✅ |
+| ACTION_ID | ActionId | ✅ |
+| CREATED_BY | SearchActionPEOCreatedBy | — |
+| CREATION_DATE | SearchActionPEOCreationDate | — |
+| ENTITY_IDS | SearchActionPEOEntityIds | — |
+| LAST_UPDATE_DATE | SearchActionPEOLastUpdateDate | — |
+| LAST_UPDATE_LOGIN | SearchActionPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | SearchActionPEOLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | SearchActionPEOObjectVersionNumber | — |
+| SEARCH_ID | SearchActionPEOSearchId | — |
+| SELECTED_CANDIDATES | SearchActionPEOSelectedCandidates | — |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — IRC_SEARCH_ACTIONS](https://docs.oracle.com/en/cloud/saas/talent-management/25a/oedmf/ircsearchactions.html)

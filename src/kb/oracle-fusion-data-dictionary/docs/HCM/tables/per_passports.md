@@ -117,3 +117,76 @@ WHERE  p.PERSON_ID = :p_person_id
 
 - [Oracle Docs — PER_PASSPORTS](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/perpassports.html)
 - [[hcm-module-data-dictionary]] — Dossiê do módulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[contactpassportspvo|ContactPassportsPVO]] (HCM · BICC: 15/18)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | PassportsPEOBusinessGroupId | — |
+| CREATED_BY | PassportsPEOCreatedBy | ✅ |
+| CREATION_DATE | PassportsPEOCreationDate | ✅ |
+| EXPIRATION_DATE | PassportsPEOExpirationDate | ✅ |
+| ISSUE_DATE | PassportsPEOIssueDate | ✅ |
+| ISSUING_AUTHORITY | PassportsPEOIssuingAuthority | ✅ |
+| ISSUING_COUNTRY | PassportsPEOIssuingCountry | ✅ |
+| ISSUING_LOCATION | PassportsPEOIssuingLocation | ✅ |
+| LAST_UPDATE_DATE | PassportsPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | PassportsPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | PassportsPEOLastUpdatedBy | ✅ |
+| LEGISLATION_CODE | PassportsPEOLegislationCode | ✅ |
+| OBJECT_VERSION_NUMBER | PassportsPEOObjectVersionNumber | — |
+| PASSPORT_ID | PassportId | ✅ |
+| PASSPORT_NUMBER | PassportsPEOPassportNumber | ✅ |
+| PASSPORT_TYPE | PassportsPEOPassportType | ✅ |
+| PERSON_ID | PassportsPEOPersonId | ✅ |
+| PROFESSION | PassportsPEOProfession | ✅ |
+
+### [[passportspvo|PassportsPVO]] (HCM · BICC: 15/18)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | PassportsPEOBusinessGroupId | — |
+| CREATED_BY | PassportsPEOCreatedBy | ✅ |
+| CREATION_DATE | PassportsPEOCreationDate | ✅ |
+| EXPIRATION_DATE | PassportsPEOExpirationDate | ✅ |
+| ISSUE_DATE | PassportsPEOIssueDate | ✅ |
+| ISSUING_AUTHORITY | PassportsPEOIssuingAuthority | ✅ |
+| ISSUING_COUNTRY | PassportsPEOIssuingCountry | ✅ |
+| ISSUING_LOCATION | PassportsPEOIssuingLocation | ✅ |
+| LAST_UPDATE_DATE | PassportsPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | PassportsPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | PassportsPEOLastUpdatedBy | ✅ |
+| LEGISLATION_CODE | PassportsPEOLegislationCode | ✅ |
+| OBJECT_VERSION_NUMBER | PassportsPEOObjectVersionNumber | — |
+| PASSPORT_ID | PassportId | ✅ |
+| PASSPORT_NUMBER | PassportsPEOPassportNumber | ✅ |
+| PASSPORT_TYPE | PassportsPEOPassportType | ✅ |
+| PERSON_ID | PassportsPEOPersonId | ✅ |
+| PROFESSION | PassportsPEOProfession | ✅ |
+
+### [[passportspvoviewall|PassportsPVOViewAll]] (HCM · BICC: 15/18)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | PassportsPEOBusinessGroupId | — |
+| CREATED_BY | PassportsPEOCreatedBy | ✅ |
+| CREATION_DATE | PassportsPEOCreationDate | ✅ |
+| EXPIRATION_DATE | PassportsPEOExpirationDate | ✅ |
+| ISSUE_DATE | PassportsPEOIssueDate | ✅ |
+| ISSUING_AUTHORITY | PassportsPEOIssuingAuthority | ✅ |
+| ISSUING_COUNTRY | PassportsPEOIssuingCountry | ✅ |
+| ISSUING_LOCATION | PassportsPEOIssuingLocation | ✅ |
+| LAST_UPDATE_DATE | PassportsPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | PassportsPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | PassportsPEOLastUpdatedBy | ✅ |
+| LEGISLATION_CODE | PassportsPEOLegislationCode | ✅ |
+| OBJECT_VERSION_NUMBER | PassportsPEOObjectVersionNumber | — |
+| PASSPORT_ID | PassportId | ✅ |
+| PASSPORT_NUMBER | PassportsPEOPassportNumber | ✅ |
+| PASSPORT_TYPE | PassportsPEOPassportType | ✅ |
+| PERSON_ID | PassportsPEOPersonId | ✅ |
+| PROFESSION | PassportsPEOProfession | ✅ |

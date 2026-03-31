@@ -76,6 +76,61 @@ SELECT bl.BUCKET_SEQUENCE_NUM,
 - Quando `SOURCE_LANG` difere de `LANGUAGE`, indica que a tradução não foi fornecida e o sistema utiliza o idioma base.
 - Padrão Oracle MLS (Multi-Language Support): toda tabela `_TL` segue esta estrutura.
 
+## 🔗 PVOs Relacionados
+
+### [[agingbucketlinesextractpvo|AgingBucketLinesExtractPVO]] (OTHER · BICC: 12/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| AGING_BUCKET_LINE_ID | ArAgingBucketLinesTLAgingBucketLineId1 | ✅ |
+| CREATED_BY | ArAgingBucketLinesTLCreatedBy | ✅ |
+| CREATION_DATE | ArAgingBucketLinesTLCreationDate | ✅ |
+| LANGUAGE | ArAgingBucketLinesTLLanguage | ✅ |
+| LAST_UPDATE_DATE | ArAgingBucketLinesTLLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ArAgingBucketLinesTLLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | ArAgingBucketLinesTLLastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | ArAgingBucketLinesTLObjectVersionNumber | ✅ |
+| REPORT_HEADING1 | ArAgingBucketLinesTLReportHeading1 | ✅ |
+| REPORT_HEADING2 | ArAgingBucketLinesTLReportHeading2 | ✅ |
+| SET_ID | ArAgingBucketLinesTLSetId | ✅ |
+| SOURCE_LANG | ArAgingBucketLinesTLSourceLang | ✅ |
+
+### [[agingbucketlinestlextractpvo|AgingBucketLinesTLExtractPVO]] (OTHER · BICC: 12/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| AGING_BUCKET_LINE_ID | AgingBucketLineId | ✅ |
+| CREATED_BY | CreatedBy | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| LANGUAGE | Language | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | LastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | ✅ |
+| REPORT_HEADING1 | ReportHeading1 | ✅ |
+| REPORT_HEADING2 | ReportHeading2 | ✅ |
+| SET_ID | SetId | ✅ |
+| SOURCE_LANG | SourceLang | ✅ |
+
+### [[agingbucketlinestranslationpvo|AgingBucketLinesTranslationPVO]] (OTHER · BICC: 9/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| AGING_BUCKET_LINE_ID | AgingBucketLineId | ✅ |
+| CREATED_BY | CreatedBy | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| LANGUAGE | Language | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | — |
+| LAST_UPDATED_BY | LastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | — |
+| REPORT_HEADING1 | ReportHeading1 | ✅ |
+| REPORT_HEADING2 | ReportHeading2 | ✅ |
+| SET_ID | SetId | — |
+| SOURCE_LANG | SourceLang | ✅ |
+
+---
+
 ## 📚 Referências
 
 - Oracle Fusion Cloud Financials — Accounts Receivable Tables (OEDMF Release 13).

@@ -61,3 +61,48 @@ updated_at: 2026-03-26
 ## 📎 Uso Típico
 
 (a ser preenchido na etapa 03)
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[accountingmethodextractpvo|AccountingMethodExtractPVO]] (OTHER · BICC: 10/10)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACCOUNTING_COA_ID | AcctgMethodBaseAccountingCoaId | ✅ |
+| ACCOUNTING_METHOD_CODE | AcctgMethodBaseAccountingMethodCode | ✅ |
+| ACCOUNTING_METHOD_TYPE_CODE | AcctgMethodBaseAccountingMethodTypeCode | ✅ |
+| CREATED_BY | AcctgMethodBaseCreatedBy | ✅ |
+| CREATION_DATE | AcctgMethodBaseCreationDate | ✅ |
+| ENABLED_FLAG | AcctgMethodBaseEnabledFlag | ✅ |
+| LAST_UPDATE_DATE | AcctgMethodBaseLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | AcctgMethodBaseLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | AcctgMethodBaseLastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | AcctgMethodBaseObjectVersionNumber | ✅ |
+
+### [[acctgmethodpvo|AcctgMethodPVO]] (OTHER · BICC: 11/11)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACCOUNTING_COA_ID | AcctgMethodBaseAccountingCoaId | ✅ |
+| ACCOUNTING_METHOD_CODE | AccountingMethodCode | ✅ |
+| ACCOUNTING_METHOD_TYPE_CODE | AccountingMethodTypeCode | ✅ |
+| CREATED_BY | AcctgMethodBaseCreatedBy | ✅ |
+| CREATION_DATE | AcctgMethodBaseCreationDate | ✅ |
+| ENABLED_FLAG | AcctgMethodBaseEnabledFlag | ✅ |
+| LAST_UPDATE_DATE | AcctgMethodBaseLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | AcctgMethodBaseLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | AcctgMethodBaseLastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | AcctgMethodBaseObjectVersionNumber | ✅ |
+| TRANSACTION_COA_ID | AcctgMethodBaseTransactionCoaId | ✅ |
+
+### [[ledgerpvo|LedgerPVO]] (GL · BICC: 2/5)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACCOUNTING_COA_ID | AcctgMethodAccountingCoaId | — |
+| ACCOUNTING_METHOD_CODE | AcctgMethodAccountingMethodCode | ✅ |
+| ACCOUNTING_METHOD_TYPE_CODE | AcctgMethodAccountingMethodTypeCode | ✅ |
+| ENABLED_FLAG | AcctgMethodEnabledFlag | — |
+| TRANSACTION_COA_ID | AcctgMethodTransactionCoaId | — |

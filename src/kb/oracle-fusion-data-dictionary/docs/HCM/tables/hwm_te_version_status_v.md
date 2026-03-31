@@ -39,7 +39,6 @@ View que exibe o status atual de cada versão de entrada de tempo, incluindo est
 > [!note] Sufixo _V
 > O sufixo `_V` indica **view** — objeto somente leitura que consolida dados de uma ou mais tabelas para facilitar consultas.
 
-
 ---
 
 ## 🧠 Propósito de Negócio
@@ -102,6 +101,54 @@ WHERE  t.STATUS_CODE = 'APPROVED'
 
 - View somente leitura: não permite INSERT, UPDATE ou DELETE direto.
 - Área funcional: Time Entry dentro do Oracle Fusion Cloud HCM.
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[historicprocessedtimeentrypvo|HistoricProcessedTimeEntryPVO]] (HCM)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| MAX_A_XFR_STATUS_PJC_ID | TimeEntryVersionStatusPEOMaxAXfrStatusPjcId | — |
+| MAX_A_XFR_STATUS_PYR_ID | TimeEntryVersionStatusPEOMaxAXfrStatusPyrId | — |
+| MAX_D_READY_XFR_STATUS_PJC_ID | TimeEntryVersionStatusPEOMaxDReadyXfrStatusPjcId | — |
+| MAX_D_READY_XFR_STATUS_PYR_ID | TimeEntryVersionStatusPEOMaxDReadyXfrStatusPyrId | — |
+| TM_BLDG_BLK_ID | TimeEntryVersionStatusPEOTmBldgBlkId | — |
+| TM_BLDG_BLK_VERSION | TimeEntryVersionStatusPEOTmBldgBlkVersion | — |
+
+### [[historicrptabstimeentrypvo|HistoricRptAbsTimeEntryPVO]] (HCM)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| MAX_A_APP_STATUS_PJC_ID | TimeEntryVersionStatusPEOMaxAAppStatusPjcId | — |
+| MAX_A_APP_STATUS_PYR_ID | TimeEntryVersionStatusPEOMaxAAppStatusPyrId | — |
+| MAX_A_TE_COMPLETED_ID | TimeEntryVersionStatusPEOMaxATeCompletedId | — |
+| MAX_A_TR_ERR_STATUS_ID | TimeEntryVersionStatusPEOMaxATrErrStatusId | — |
+| TM_BLDG_BLK_ID | TimeEntryVersionStatusPEOTmBldgBlkId | — |
+| TM_BLDG_BLK_VERSION | TimeEntryVersionStatusPEOTmBldgBlkVersion | — |
+
+### [[processedtimeentrypvo|ProcessedTimeEntryPVO]] (HCM)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| MAX_A_XFR_STATUS_PJC_ID | TimeEntryVersionStatusPEOMaxAXfrStatusPjcId | — |
+| MAX_A_XFR_STATUS_PYR_ID | TimeEntryVersionStatusPEOMaxAXfrStatusPyrId | — |
+| MAX_D_READY_XFR_STATUS_PJC_ID | TimeEntryVersionStatusPEOMaxDReadyXfrStatusPjcId | — |
+| MAX_D_READY_XFR_STATUS_PYR_ID | TimeEntryVersionStatusPEOMaxDReadyXfrStatusPyrId | — |
+| TM_BLDG_BLK_ID | TimeEntryVersionStatusPEOTmBldgBlkId | — |
+| TM_BLDG_BLK_VERSION | TimeEntryVersionStatusPEOTmBldgBlkVersion | — |
+
+### [[rptabstimeentrypvo|RptAbsTimeEntryPVO]] (HCM)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| MAX_A_APP_STATUS_PJC_ID | TimeEntryVersionStatusPEOMaxAAppStatusPjcId | — |
+| MAX_A_APP_STATUS_PYR_ID | TimeEntryVersionStatusPEOMaxAAppStatusPyrId | — |
+| MAX_A_TE_COMPLETED_ID | TimeEntryVersionStatusPEOMaxATeCompletedId | — |
+| MAX_A_TR_ERR_STATUS_ID | TimeEntryVersionStatusPEOMaxATrErrStatusId | — |
+| TM_BLDG_BLK_ID | TimeEntryVersionStatusPEOTmBldgBlkId | — |
+| TM_BLDG_BLK_VERSION | TimeEntryVersionStatusPEOTmBldgBlkVersion | — |
 
 ---
 

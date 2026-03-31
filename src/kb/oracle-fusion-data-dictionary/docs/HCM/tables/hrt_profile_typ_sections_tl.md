@@ -104,3 +104,15 @@ WHERE  tl.PROFILE_TYPE_SECTION_ID = :p_id
 
 - [Oracle Docs — HRT_PROFILE_TYP_SECTIONS_TL](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/hrtprofiletypsectionstl.html)
 - [[hcm-module-data-dictionary]] — Dossie do modulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[profiletypesectionpvo|ProfileTypeSectionPVO]] (HCM)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | BusinessGroupId1 | — |
+| LANGUAGE | Language | — |
+| SECTION_ID | SectionId1 | — |

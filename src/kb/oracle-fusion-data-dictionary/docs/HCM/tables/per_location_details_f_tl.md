@@ -111,3 +111,495 @@ WHERE  tl.LOCATION_DETAILS_ID = :p_location_details_id
 
 - [Oracle Docs — PER_LOCATION_DETAILS_F_TL](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/perlocationdetailsftl.html)
 - [[hcm-module-data-dictionary]] — Dossiê do módulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[careerpreferencelocationpvo|CareerPreferenceLocationPVO]] (HCM · BICC: 4/10)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| AC_LOCATION_CODE | LocationDetailsTranslationPEOAcLocationCode | — |
+| DESCRIPTION | LocationDetailsTranslationPEODescription | — |
+| EFFECTIVE_END_DATE | LocationDetailsTranslationPEOEffectiveEndDate | — |
+| EFFECTIVE_START_DATE | LocationDetailsTranslationPEOEffectiveStartDate | ✅ |
+| LANGUAGE | LocationDetailsTranslationPEOLanguage | ✅ |
+| LAST_UPDATE_DATE | LocationDetailsTranslationPEOLastUpdateDate | ✅ |
+| LOCATION_CODE | LocationDetailsTranslationPEOLocationCode | — |
+| LOCATION_DETAILS_ID | LocationDetailsTranslationPEOLocationDetailsId | — |
+| LOCATION_NAME | LocationDetailsTranslationPEOLocationName | ✅ |
+| SOURCE_LANG | LocationDetailsTranslationPEOSourceLang | — |
+
+### [[careerpreferencelocationpvo_viewall|CareerPreferenceLocationPVO_Viewall]] (HCM · BICC: 4/10)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| AC_LOCATION_CODE | LocationDetailsTranslationPEOAcLocationCode | — |
+| DESCRIPTION | LocationDetailsTranslationPEODescription | — |
+| EFFECTIVE_END_DATE | LocationDetailsTranslationPEOEffectiveEndDate | — |
+| EFFECTIVE_START_DATE | LocationDetailsTranslationPEOEffectiveStartDate | ✅ |
+| LANGUAGE | LocationDetailsTranslationPEOLanguage | — |
+| LAST_UPDATE_DATE | LocationDetailsTranslationPEOLastUpdateDate | ✅ |
+| LOCATION_CODE | LocationDetailsTranslationPEOLocationCode | ✅ |
+| LOCATION_DETAILS_ID | LocationDetailsTranslationPEOLocationDetailsId | — |
+| LOCATION_NAME | LocationDetailsTranslationPEOLocationName | ✅ |
+| SOURCE_LANG | LocationDetailsTranslationPEOSourceLang | — |
+
+### [[employeeexpensebusinessunitpvo|EmployeeExpenseBusinessUnitPVO]] (OTHER)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| DESCRIPTION | LocDetailsDescription | — |
+| EFFECTIVE_END_DATE | LocDetailsTLEffectiveEndDate | — |
+| EFFECTIVE_START_DATE | LocDetailsTLEffectiveStartDate | — |
+| LANGUAGE | LocDetailsTLLanguage | — |
+| LOCATION_CODE | LocDetailsLocationCode | — |
+| LOCATION_DETAILS_ID | LocDetailsTLLocationDetailsId | — |
+| LOCATION_NAME | LocDetailsLocationName | — |
+
+### [[excludedlocation1pvo|ExcludedLocation1PVO]] (HCM · BICC: 4/10)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| AC_LOCATION_CODE | LocationDetailsTranslationPEOAcLocationCode | — |
+| DESCRIPTION | LocationDetailsTranslationPEODescription | — |
+| EFFECTIVE_END_DATE | LocationDetailsTranslationPEOEffectiveEndDate | — |
+| EFFECTIVE_START_DATE | LocationDetailsTranslationPEOEffectiveStartDate | ✅ |
+| LANGUAGE | LocationDetailsTranslationPEOLanguage | ✅ |
+| LAST_UPDATE_DATE | LocationDetailsTranslationPEOLastUpdateDate | ✅ |
+| LOCATION_CODE | LocationDetailsTranslationPEOLocationCode | — |
+| LOCATION_DETAILS_ID | LocationDetailsTranslationPEOLocationDetailsId | — |
+| LOCATION_NAME | LocationDetailsTranslationPEOLocationName | ✅ |
+| SOURCE_LANG | LocationDetailsTranslationPEOSourceLang | — |
+
+### [[excludedlocation1pvo_viewall|ExcludedLocation1PVO_Viewall]] (HCM · BICC: 4/10)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| AC_LOCATION_CODE | LocationDetailsTranslationPEOAcLocationCode | — |
+| DESCRIPTION | LocationDetailsTranslationPEODescription | — |
+| EFFECTIVE_END_DATE | LocationDetailsTranslationPEOEffectiveEndDate | — |
+| EFFECTIVE_START_DATE | LocationDetailsTranslationPEOEffectiveStartDate | ✅ |
+| LANGUAGE | LocationDetailsTranslationPEOLanguage | ✅ |
+| LAST_UPDATE_DATE | LocationDetailsTranslationPEOLastUpdateDate | ✅ |
+| LOCATION_CODE | LocationDetailsTranslationPEOLocationCode | — |
+| LOCATION_DETAILS_ID | LocationDetailsTranslationPEOLocationDetailsId | — |
+| LOCATION_NAME | LocationDetailsTranslationPEOLocationName | ✅ |
+| SOURCE_LANG | LocationDetailsTranslationPEOSourceLang | — |
+
+### [[excludedlocation2pvo|ExcludedLocation2PVO]] (HCM · BICC: 4/10)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| AC_LOCATION_CODE | LocationDetailsTranslationPEOAcLocationCode | — |
+| DESCRIPTION | LocationDetailsTranslationPEODescription | — |
+| EFFECTIVE_END_DATE | LocationDetailsTranslationPEOEffectiveEndDate | — |
+| EFFECTIVE_START_DATE | LocationDetailsTranslationPEOEffectiveStartDate | ✅ |
+| LANGUAGE | LocationDetailsTranslationPEOLanguage | ✅ |
+| LAST_UPDATE_DATE | LocationDetailsTranslationPEOLastUpdateDate | ✅ |
+| LOCATION_CODE | LocationDetailsTranslationPEOLocationCode | — |
+| LOCATION_DETAILS_ID | LocationDetailsTranslationPEOLocationDetailsId | — |
+| LOCATION_NAME | LocationDetailsTranslationPEOLocationName | ✅ |
+| SOURCE_LANG | LocationDetailsTranslationPEOSourceLang | — |
+
+### [[excludedlocation2pvo_viewall|ExcludedLocation2PVO_Viewall]] (HCM · BICC: 4/10)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| AC_LOCATION_CODE | LocationDetailsTranslationPEOAcLocationCode | — |
+| DESCRIPTION | LocationDetailsTranslationPEODescription | — |
+| EFFECTIVE_END_DATE | LocationDetailsTranslationPEOEffectiveEndDate | — |
+| EFFECTIVE_START_DATE | LocationDetailsTranslationPEOEffectiveStartDate | ✅ |
+| LANGUAGE | LocationDetailsTranslationPEOLanguage | ✅ |
+| LAST_UPDATE_DATE | LocationDetailsTranslationPEOLastUpdateDate | ✅ |
+| LOCATION_CODE | LocationDetailsTranslationPEOLocationCode | — |
+| LOCATION_DETAILS_ID | LocationDetailsTranslationPEOLocationDetailsId | — |
+| LOCATION_NAME | LocationDetailsTranslationPEOLocationName | ✅ |
+| SOURCE_LANG | LocationDetailsTranslationPEOSourceLang | — |
+
+### [[excludedlocation3pvo|ExcludedLocation3PVO]] (HCM · BICC: 4/10)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| AC_LOCATION_CODE | LocationDetailsTranslationPEOAcLocationCode | — |
+| DESCRIPTION | LocationDetailsTranslationPEODescription | — |
+| EFFECTIVE_END_DATE | LocationDetailsTranslationPEOEffectiveEndDate | — |
+| EFFECTIVE_START_DATE | LocationDetailsTranslationPEOEffectiveStartDate | ✅ |
+| LANGUAGE | LocationDetailsTranslationPEOLanguage | ✅ |
+| LAST_UPDATE_DATE | LocationDetailsTranslationPEOLastUpdateDate | ✅ |
+| LOCATION_CODE | LocationDetailsTranslationPEOLocationCode | — |
+| LOCATION_DETAILS_ID | LocationDetailsTranslationPEOLocationDetailsId | — |
+| LOCATION_NAME | LocationDetailsTranslationPEOLocationName | ✅ |
+| SOURCE_LANG | LocationDetailsTranslationPEOSourceLang | — |
+
+### [[excludedlocation3pvo_viewall|ExcludedLocation3PVO_Viewall]] (HCM · BICC: 4/10)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| AC_LOCATION_CODE | LocationDetailsTranslationPEOAcLocationCode | — |
+| DESCRIPTION | LocationDetailsTranslationPEODescription | — |
+| EFFECTIVE_END_DATE | LocationDetailsTranslationPEOEffectiveEndDate | — |
+| EFFECTIVE_START_DATE | LocationDetailsTranslationPEOEffectiveStartDate | ✅ |
+| LANGUAGE | LocationDetailsTranslationPEOLanguage | ✅ |
+| LAST_UPDATE_DATE | LocationDetailsTranslationPEOLastUpdateDate | ✅ |
+| LOCATION_CODE | LocationDetailsTranslationPEOLocationCode | — |
+| LOCATION_DETAILS_ID | LocationDetailsTranslationPEOLocationDetailsId | — |
+| LOCATION_NAME | LocationDetailsTranslationPEOLocationName | ✅ |
+| SOURCE_LANG | LocationDetailsTranslationPEOSourceLang | — |
+
+### [[excludedlocation4pvo|ExcludedLocation4PVO]] (HCM · BICC: 4/10)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| AC_LOCATION_CODE | LocationDetailsTranslationPEOAcLocationCode | — |
+| DESCRIPTION | LocationDetailsTranslationPEODescription | — |
+| EFFECTIVE_END_DATE | LocationDetailsTranslationPEOEffectiveEndDate | — |
+| EFFECTIVE_START_DATE | LocationDetailsTranslationPEOEffectiveStartDate | ✅ |
+| LANGUAGE | LocationDetailsTranslationPEOLanguage | ✅ |
+| LAST_UPDATE_DATE | LocationDetailsTranslationPEOLastUpdateDate | ✅ |
+| LOCATION_CODE | LocationDetailsTranslationPEOLocationCode | — |
+| LOCATION_DETAILS_ID | LocationDetailsTranslationPEOLocationDetailsId | — |
+| LOCATION_NAME | LocationDetailsTranslationPEOLocationName | ✅ |
+| SOURCE_LANG | LocationDetailsTranslationPEOSourceLang | — |
+
+### [[excludedlocation4pvo_viewall|ExcludedLocation4PVO_Viewall]] (HCM · BICC: 4/10)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| AC_LOCATION_CODE | LocationDetailsTranslationPEOAcLocationCode | — |
+| DESCRIPTION | LocationDetailsTranslationPEODescription | — |
+| EFFECTIVE_END_DATE | LocationDetailsTranslationPEOEffectiveEndDate | — |
+| EFFECTIVE_START_DATE | LocationDetailsTranslationPEOEffectiveStartDate | ✅ |
+| LANGUAGE | LocationDetailsTranslationPEOLanguage | ✅ |
+| LAST_UPDATE_DATE | LocationDetailsTranslationPEOLastUpdateDate | ✅ |
+| LOCATION_CODE | LocationDetailsTranslationPEOLocationCode | — |
+| LOCATION_DETAILS_ID | LocationDetailsTranslationPEOLocationDetailsId | — |
+| LOCATION_NAME | LocationDetailsTranslationPEOLocationName | ✅ |
+| SOURCE_LANG | LocationDetailsTranslationPEOSourceLang | — |
+
+### [[grantsbusinessunitpvo|GrantsBusinessUnitPVO]] (OTHER · BICC: 1/5)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| EFFECTIVE_END_DATE | LocationDetailsTranslationPEOEffectiveEndDate | — |
+| EFFECTIVE_START_DATE | LocationDetailsTranslationPEOEffectiveStartDate | — |
+| LANGUAGE | LocationDetailsTranslationPEOLanguage | — |
+| LOCATION_DETAILS_ID | LocationDetailsTranslationPEOLocationDetailsId | — |
+| LOCATION_NAME | LocationDPEOLocationName | ✅ |
+
+### [[hrlocationsbasepvo|HRLocationsBasePVO]] (HCM · BICC: 5/15)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| AC_LOCATION_CODE | LocationDetailsTranslationPEOAcLocationCode | — |
+| CREATED_BY | LocationDetailsTranslationPEOCreatedBy | — |
+| CREATION_DATE | LocationDetailsTranslationPEOCreationDate | — |
+| DESCRIPTION | LocationDetailsTranslationPEODescription | ✅ |
+| EFFECTIVE_END_DATE | LocationDetailsTranslationPEOEffectiveEndDate | — |
+| EFFECTIVE_START_DATE | LocationDetailsTranslationPEOEffectiveStartDate | ✅ |
+| LANGUAGE | LocationDetailsTranslationPEOLanguage | — |
+| LAST_UPDATE_DATE | LocationDetailsTranslationPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LocationDetailsTranslationPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | LocationDetailsTranslationPEOLastUpdatedBy | — |
+| LOCATION_CODE | LocationDetailsTranslationPEOLocationCode | ✅ |
+| LOCATION_DETAILS_ID | LocationDetailsTranslationPEOLocationDetailsId | — |
+| LOCATION_NAME | LocationDetailsTranslationPEOLocationName | ✅ |
+| OBJECT_VERSION_NUMBER | LocationDetailsTranslationPEOObjectVersionNumber | — |
+| SOURCE_LANG | LocationDetailsTranslationPEOSourceLang | — |
+
+### [[hrlocationsbasepvoviewall|HRLocationsBasePVOViewAll]] (HCM · BICC: 5/15)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| AC_LOCATION_CODE | LocationDetailsTranslationPEOAcLocationCode | — |
+| CREATED_BY | LocationDetailsTranslationPEOCreatedBy | — |
+| CREATION_DATE | LocationDetailsTranslationPEOCreationDate | — |
+| DESCRIPTION | LocationDetailsTranslationPEODescription | ✅ |
+| EFFECTIVE_END_DATE | LocationDetailsTranslationPEOEffectiveEndDate | — |
+| EFFECTIVE_START_DATE | LocationDetailsTranslationPEOEffectiveStartDate | ✅ |
+| LANGUAGE | LocationDetailsTranslationPEOLanguage | — |
+| LAST_UPDATE_DATE | LocationDetailsTranslationPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LocationDetailsTranslationPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | LocationDetailsTranslationPEOLastUpdatedBy | — |
+| LOCATION_CODE | LocationDetailsTranslationPEOLocationCode | ✅ |
+| LOCATION_DETAILS_ID | LocationDetailsTranslationPEOLocationDetailsId | — |
+| LOCATION_NAME | LocationDetailsTranslationPEOLocationName | ✅ |
+| OBJECT_VERSION_NUMBER | LocationDetailsTranslationPEOObjectVersionNumber | — |
+| SOURCE_LANG | LocationDetailsTranslationPEOSourceLang | — |
+
+### [[locationdetailstranslationpvo|LocationDetailsTranslationPVO]] (HCM · BICC: 12/15)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| AC_LOCATION_CODE | LocationDetailsTranslationPEOAcLocationCode | — |
+| CREATED_BY | LocationDetailsTranslationPEOCreatedBy | ✅ |
+| CREATION_DATE | LocationDetailsTranslationPEOCreationDate | ✅ |
+| DESCRIPTION | LocationDetailsTranslationPEODescription | ✅ |
+| EFFECTIVE_END_DATE | EffectiveEndDate | ✅ |
+| EFFECTIVE_START_DATE | EffectiveStartDate | ✅ |
+| LANGUAGE | Language | ✅ |
+| LAST_UPDATE_DATE | LocationDetailsTranslationPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LocationDetailsTranslationPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | LocationDetailsTranslationPEOLastUpdatedBy | ✅ |
+| LOCATION_CODE | LocationDetailsTranslationPEOLocationCode | ✅ |
+| LOCATION_DETAILS_ID | LocationDetailsId | ✅ |
+| LOCATION_NAME | LocationDetailsTranslationPEOLocationName | ✅ |
+| OBJECT_VERSION_NUMBER | LocationDetailsTranslationPEOObjectVersionNumber | — |
+| SOURCE_LANG | LocationDetailsTranslationPEOSourceLang | ✅ |
+
+### [[locationdetailstranslationpvoviewall|LocationDetailsTranslationPVOViewAll]] (HCM · BICC: 7/15)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| AC_LOCATION_CODE | LocationDetailsTranslationPEOAcLocationCode | — |
+| CREATED_BY | LocationDetailsTranslationPEOCreatedBy | — |
+| CREATION_DATE | LocationDetailsTranslationPEOCreationDate | — |
+| DESCRIPTION | LocationDetailsTranslationPEODescription | — |
+| EFFECTIVE_END_DATE | EffectiveEndDate | ✅ |
+| EFFECTIVE_START_DATE | EffectiveStartDate | ✅ |
+| LANGUAGE | Language | ✅ |
+| LAST_UPDATE_DATE | LocationDetailsTranslationPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LocationDetailsTranslationPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | LocationDetailsTranslationPEOLastUpdatedBy | — |
+| LOCATION_CODE | LocationDetailsTranslationPEOLocationCode | ✅ |
+| LOCATION_DETAILS_ID | LocationDetailsId | ✅ |
+| LOCATION_NAME | LocationDetailsTranslationPEOLocationName | ✅ |
+| OBJECT_VERSION_NUMBER | LocationDetailsTranslationPEOObjectVersionNumber | — |
+| SOURCE_LANG | LocationDetailsTranslationPEOSourceLang | — |
+
+### [[locationrefpvo|LocationRefPVO]] (HCM · BICC: 6/15)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| AC_LOCATION_CODE | LocationDetailsTranslationPEOAcLocationCode | — |
+| CREATED_BY | LocationDetailsTranslationPEOCreatedBy | — |
+| CREATION_DATE | LocationDetailsTranslationPEOCreationDate | — |
+| DESCRIPTION | LocationDetailsTranslationPEODescription | — |
+| EFFECTIVE_END_DATE | EffectiveEndDate | ✅ |
+| EFFECTIVE_START_DATE | EffectiveStartDate | ✅ |
+| LANGUAGE | Language | ✅ |
+| LAST_UPDATE_DATE | LocationDetailsTranslationPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LocationDetailsTranslationPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | LocationDetailsTranslationPEOLastUpdatedBy | — |
+| LOCATION_CODE | LocationDetailsTranslationPEOLocationCode | — |
+| LOCATION_DETAILS_ID | LocationDetailsId | ✅ |
+| LOCATION_NAME | LocationDetailsTranslationPEOLocationName | ✅ |
+| OBJECT_VERSION_NUMBER | LocationDetailsTranslationPEOObjectVersionNumber | — |
+| SOURCE_LANG | LocationDetailsTranslationPEOSourceLang | — |
+
+### [[orderbusinessunitpvo|OrderBusinessUnitPVO]] (OTHER · BICC: 3/7)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| DESCRIPTION | LocDetailsDescription | ✅ |
+| EFFECTIVE_END_DATE | LocDetailsTLEffectiveEndDate | — |
+| EFFECTIVE_START_DATE | LocDetailsTLEffectiveStartDate | — |
+| LANGUAGE | LocDetailsTLLanguage | — |
+| LOCATION_CODE | LocDetailsLocationCode | ✅ |
+| LOCATION_DETAILS_ID | LocDetailsTLLocationDetailsId | — |
+| LOCATION_NAME | LocDetailsLocationName | ✅ |
+
+### [[outstandingcardtransactionbusinessunitpvo|OutstandingCardTransactionBusinessUnitPVO]] (OTHER)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| DESCRIPTION | LocDetailsDescription | — |
+| EFFECTIVE_END_DATE | LocDetailsTLEffectiveEndDate | — |
+| EFFECTIVE_START_DATE | LocDetailsTLEffectiveStartDate | — |
+| LANGUAGE | LocDetailsTLLanguage | — |
+| LOCATION_CODE | LocDetailsLocationCode | — |
+| LOCATION_DETAILS_ID | LocDetailsTLLocationDetailsId | — |
+| LOCATION_NAME | LocDetailsLocationName | — |
+
+### [[payablebusinessunitpvo|PayableBusinessUnitPVO]] (OTHER)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| DESCRIPTION | LocDetailsDescription | — |
+| EFFECTIVE_END_DATE | LocDetailsTLEffectiveEndDate | — |
+| EFFECTIVE_START_DATE | LocDetailsTLEffectiveStartDate | — |
+| LANGUAGE | LocDetailsTLLanguage | — |
+| LOCATION_CODE | LocDetailsLocationCode | — |
+| LOCATION_DETAILS_ID | LocDetailsTLLocationDetailsId | — |
+| LOCATION_NAME | LocDetailsLocationName | — |
+
+### [[preferredlocation1pvo|PreferredLocation1PVO]] (HCM · BICC: 4/10)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| AC_LOCATION_CODE | LocationDetailsTranslationPEOAcLocationCode | — |
+| DESCRIPTION | LocationDetailsTranslationPEODescription | — |
+| EFFECTIVE_END_DATE | LocationDetailsTranslationPEOEffectiveEndDate | — |
+| EFFECTIVE_START_DATE | LocationDetailsTranslationPEOEffectiveStartDate | ✅ |
+| LANGUAGE | LocationDetailsTranslationPEOLanguage | ✅ |
+| LAST_UPDATE_DATE | LocationDetailsTranslationPEOLastUpdateDate | ✅ |
+| LOCATION_CODE | LocationDetailsTranslationPEOLocationCode | — |
+| LOCATION_DETAILS_ID | LocationDetailsTranslationPEOLocationDetailsId | — |
+| LOCATION_NAME | LocationDetailsTranslationPEOLocationName | ✅ |
+| SOURCE_LANG | LocationDetailsTranslationPEOSourceLang | — |
+
+### [[preferredlocation1pvo_viewall|PreferredLocation1PVO_Viewall]] (HCM · BICC: 4/10)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| AC_LOCATION_CODE | LocationDetailsTranslationPEOAcLocationCode | — |
+| DESCRIPTION | LocationDetailsTranslationPEODescription | — |
+| EFFECTIVE_END_DATE | LocationDetailsTranslationPEOEffectiveEndDate | — |
+| EFFECTIVE_START_DATE | LocationDetailsTranslationPEOEffectiveStartDate | ✅ |
+| LANGUAGE | LocationDetailsTranslationPEOLanguage | ✅ |
+| LAST_UPDATE_DATE | LocationDetailsTranslationPEOLastUpdateDate | ✅ |
+| LOCATION_CODE | LocationDetailsTranslationPEOLocationCode | — |
+| LOCATION_DETAILS_ID | LocationDetailsTranslationPEOLocationDetailsId | — |
+| LOCATION_NAME | LocationDetailsTranslationPEOLocationName | ✅ |
+| SOURCE_LANG | LocationDetailsTranslationPEOSourceLang | — |
+
+### [[preferredlocation2pvo|PreferredLocation2PVO]] (HCM · BICC: 4/10)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| AC_LOCATION_CODE | LocationDetailsTranslationPEOAcLocationCode | — |
+| DESCRIPTION | LocationDetailsTranslationPEODescription | — |
+| EFFECTIVE_END_DATE | LocationDetailsTranslationPEOEffectiveEndDate | — |
+| EFFECTIVE_START_DATE | LocationDetailsTranslationPEOEffectiveStartDate | ✅ |
+| LANGUAGE | LocationDetailsTranslationPEOLanguage | ✅ |
+| LAST_UPDATE_DATE | LocationDetailsTranslationPEOLastUpdateDate | ✅ |
+| LOCATION_CODE | LocationDetailsTranslationPEOLocationCode | — |
+| LOCATION_DETAILS_ID | LocationDetailsTranslationPEOLocationDetailsId | — |
+| LOCATION_NAME | LocationDetailsTranslationPEOLocationName | ✅ |
+| SOURCE_LANG | LocationDetailsTranslationPEOSourceLang | — |
+
+### [[preferredlocation2pvo_viewall|PreferredLocation2PVO_Viewall]] (HCM · BICC: 4/10)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| AC_LOCATION_CODE | LocationDetailsTranslationPEOAcLocationCode | — |
+| DESCRIPTION | LocationDetailsTranslationPEODescription | — |
+| EFFECTIVE_END_DATE | LocationDetailsTranslationPEOEffectiveEndDate | — |
+| EFFECTIVE_START_DATE | LocationDetailsTranslationPEOEffectiveStartDate | ✅ |
+| LANGUAGE | LocationDetailsTranslationPEOLanguage | ✅ |
+| LAST_UPDATE_DATE | LocationDetailsTranslationPEOLastUpdateDate | ✅ |
+| LOCATION_CODE | LocationDetailsTranslationPEOLocationCode | — |
+| LOCATION_DETAILS_ID | LocationDetailsTranslationPEOLocationDetailsId | — |
+| LOCATION_NAME | LocationDetailsTranslationPEOLocationName | ✅ |
+| SOURCE_LANG | LocationDetailsTranslationPEOSourceLang | — |
+
+### [[preferredlocation3pvo|PreferredLocation3PVO]] (HCM · BICC: 4/10)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| AC_LOCATION_CODE | LocationDetailsTranslationPEOAcLocationCode | — |
+| DESCRIPTION | LocationDetailsTranslationPEODescription | — |
+| EFFECTIVE_END_DATE | LocationDetailsTranslationPEOEffectiveEndDate | — |
+| EFFECTIVE_START_DATE | LocationDetailsTranslationPEOEffectiveStartDate | ✅ |
+| LANGUAGE | LocationDetailsTranslationPEOLanguage | ✅ |
+| LAST_UPDATE_DATE | LocationDetailsTranslationPEOLastUpdateDate | ✅ |
+| LOCATION_CODE | LocationDetailsTranslationPEOLocationCode | — |
+| LOCATION_DETAILS_ID | LocationDetailsTranslationPEOLocationDetailsId | — |
+| LOCATION_NAME | LocationDetailsTranslationPEOLocationName | ✅ |
+| SOURCE_LANG | LocationDetailsTranslationPEOSourceLang | — |
+
+### [[preferredlocation3pvo_viewall|PreferredLocation3PVO_Viewall]] (HCM · BICC: 4/10)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| AC_LOCATION_CODE | LocationDetailsTranslationPEOAcLocationCode | — |
+| DESCRIPTION | LocationDetailsTranslationPEODescription | — |
+| EFFECTIVE_END_DATE | LocationDetailsTranslationPEOEffectiveEndDate | — |
+| EFFECTIVE_START_DATE | LocationDetailsTranslationPEOEffectiveStartDate | ✅ |
+| LANGUAGE | LocationDetailsTranslationPEOLanguage | ✅ |
+| LAST_UPDATE_DATE | LocationDetailsTranslationPEOLastUpdateDate | ✅ |
+| LOCATION_CODE | LocationDetailsTranslationPEOLocationCode | — |
+| LOCATION_DETAILS_ID | LocationDetailsTranslationPEOLocationDetailsId | — |
+| LOCATION_NAME | LocationDetailsTranslationPEOLocationName | ✅ |
+| SOURCE_LANG | LocationDetailsTranslationPEOSourceLang | — |
+
+### [[preferredlocation4pvo|PreferredLocation4PVO]] (HCM · BICC: 4/10)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| AC_LOCATION_CODE | LocationDetailsTranslationPEOAcLocationCode | — |
+| DESCRIPTION | LocationDetailsTranslationPEODescription | — |
+| EFFECTIVE_END_DATE | LocationDetailsTranslationPEOEffectiveEndDate | — |
+| EFFECTIVE_START_DATE | LocationDetailsTranslationPEOEffectiveStartDate | ✅ |
+| LANGUAGE | LocationDetailsTranslationPEOLanguage | ✅ |
+| LAST_UPDATE_DATE | LocationDetailsTranslationPEOLastUpdateDate | ✅ |
+| LOCATION_CODE | LocationDetailsTranslationPEOLocationCode | — |
+| LOCATION_DETAILS_ID | LocationDetailsTranslationPEOLocationDetailsId | — |
+| LOCATION_NAME | LocationDetailsTranslationPEOLocationName | ✅ |
+| SOURCE_LANG | LocationDetailsTranslationPEOSourceLang | — |
+
+### [[preferredlocation4pvo_viewall|PreferredLocation4PVO_Viewall]] (HCM · BICC: 4/10)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| AC_LOCATION_CODE | LocationDetailsTranslationPEOAcLocationCode | — |
+| DESCRIPTION | LocationDetailsTranslationPEODescription | — |
+| EFFECTIVE_END_DATE | LocationDetailsTranslationPEOEffectiveEndDate | — |
+| EFFECTIVE_START_DATE | LocationDetailsTranslationPEOEffectiveStartDate | ✅ |
+| LANGUAGE | LocationDetailsTranslationPEOLanguage | ✅ |
+| LAST_UPDATE_DATE | LocationDetailsTranslationPEOLastUpdateDate | ✅ |
+| LOCATION_CODE | LocationDetailsTranslationPEOLocationCode | — |
+| LOCATION_DETAILS_ID | LocationDetailsTranslationPEOLocationDetailsId | — |
+| LOCATION_NAME | LocationDetailsTranslationPEOLocationName | ✅ |
+| SOURCE_LANG | LocationDetailsTranslationPEOSourceLang | — |
+
+### [[projectcontractbusinessunitpvo|ProjectContractBusinessUnitPVO]] (OTHER)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| DESCRIPTION | LocDetailsDescription | — |
+| EFFECTIVE_END_DATE | LocDetailsTLEffectiveEndDate | — |
+| EFFECTIVE_START_DATE | LocDetailsTLEffectiveStartDate | — |
+| LANGUAGE | LocDetailsTLLanguage | — |
+| LOCATION_CODE | LocDetailsLocationCode | — |
+| LOCATION_DETAILS_ID | LocDetailsTLLocationDetailsId | — |
+| LOCATION_NAME | LocDetailsLocationName | — |
+
+### [[projectcostingbusinessunitpvo|ProjectCostingBusinessUnitPVO]] (OTHER)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| DESCRIPTION | LocDetailsDescription | — |
+| EFFECTIVE_END_DATE | LocDetailsTLEffectiveEndDate | — |
+| EFFECTIVE_START_DATE | LocDetailsTLEffectiveStartDate | — |
+| LANGUAGE | LocDetailsTLLanguage | — |
+| LOCATION_CODE | LocDetailsLocationCode | — |
+| LOCATION_DETAILS_ID | LocDetailsTLLocationDetailsId | — |
+| LOCATION_NAME | LocDetailsLocationName | — |
+
+### [[projectinvoicingbusinessunitpvo|ProjectInvoicingBusinessUnitPVO]] (OTHER)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| DESCRIPTION | LocDetailsDescription | — |
+| EFFECTIVE_END_DATE | LocDetailsTLEffectiveEndDate | — |
+| EFFECTIVE_START_DATE | LocDetailsTLEffectiveStartDate | — |
+| LANGUAGE | LocDetailsTLLanguage | — |
+| LOCATION_CODE | LocDetailsLocationCode | — |
+| LOCATION_DETAILS_ID | LocDetailsTLLocationDetailsId | — |
+| LOCATION_NAME | LocDetailsLocationName | — |
+
+### [[projectrevenuebusinessunitpvo|ProjectRevenueBusinessUnitPVO]] (OTHER)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| DESCRIPTION | LocDetailsDescription | — |
+| EFFECTIVE_END_DATE | LocDetailsTLEffectiveEndDate | — |
+| EFFECTIVE_START_DATE | LocDetailsTLEffectiveStartDate | — |
+| LANGUAGE | LocDetailsTLLanguage | — |
+| LOCATION_CODE | LocDetailsLocationCode | — |
+| LOCATION_DETAILS_ID | LocDetailsTLLocationDetailsId | — |
+| LOCATION_NAME | LocDetailsLocationName | — |
+
+### [[receivablebusinessunitpvo|ReceivableBusinessUnitPVO]] (OTHER)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| DESCRIPTION | LocDetailsDescription | — |
+| EFFECTIVE_END_DATE | LocDetailsTLEffectiveEndDate | — |
+| EFFECTIVE_START_DATE | LocDetailsTLEffectiveStartDate | — |
+| LANGUAGE | LocDetailsTLLanguage | — |
+| LOCATION_CODE | LocDetailsLocationCode | — |
+| LOCATION_DETAILS_ID | LocDetailsTLLocationDetailsId | — |
+| LOCATION_NAME | LocDetailsLocationName | — |

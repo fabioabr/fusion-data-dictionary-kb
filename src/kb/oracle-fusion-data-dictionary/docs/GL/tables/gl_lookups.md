@@ -157,6 +157,34 @@ ORDER BY gl.LOOKUP_TYPE;
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[approvalstatuslookuppvo|ApprovalStatusLookupPVO]] (GL · BICC: 4/7)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| DESCRIPTION | Description | ✅ |
+| ENABLED_FLAG | EnabledFlag | — |
+| END_DATE_ACTIVE | EndDateActive | — |
+| LOOKUP_CODE | LookupCode | ✅ |
+| LOOKUP_TYPE | LookupType | ✅ |
+| MEANING | Meaning | ✅ |
+| START_DATE_ACTIVE | StartDateActive | — |
+
+### [[postingstatuslookuppvo|PostingStatusLookupPVO]] (GL · BICC: 4/7)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| DESCRIPTION | Description | ✅ |
+| ENABLED_FLAG | EnabledFlag | — |
+| END_DATE_ACTIVE | EndDateActive | — |
+| LOOKUP_CODE | LookupCode | ✅ |
+| LOOKUP_TYPE | LookupType | ✅ |
+| MEANING | Meaning | ✅ |
+| START_DATE_ACTIVE | StartDateActive | — |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — GL_LOOKUPS](https://docs.oracle.com/en/cloud/saas/financials/25a/oedmf/gllookups.html)

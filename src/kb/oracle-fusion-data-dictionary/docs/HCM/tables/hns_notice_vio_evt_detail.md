@@ -116,6 +116,76 @@ WHERE  ed.INCIDENT_ID = :p_incident_id;
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[hnsnoticevioeventpvo|HNSNoticeVioEventPVO]] (HCM · BICC: 10/61)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ATTRIBUTE1 | HNSNoticeVioEventPEOAttribute1 | — |
+| ATTRIBUTE10 | HNSNoticeVioEventPEOAttribute10 | — |
+| ATTRIBUTE11 | HNSNoticeVioEventPEOAttribute11 | — |
+| ATTRIBUTE12 | HNSNoticeVioEventPEOAttribute12 | — |
+| ATTRIBUTE13 | HNSNoticeVioEventPEOAttribute13 | — |
+| ATTRIBUTE14 | HNSNoticeVioEventPEOAttribute14 | — |
+| ATTRIBUTE15 | HNSNoticeVioEventPEOAttribute15 | — |
+| ATTRIBUTE16 | HNSNoticeVioEventPEOAttribute16 | — |
+| ATTRIBUTE17 | HNSNoticeVioEventPEOAttribute17 | — |
+| ATTRIBUTE18 | HNSNoticeVioEventPEOAttribute18 | — |
+| ATTRIBUTE19 | HNSNoticeVioEventPEOAttribute19 | — |
+| ATTRIBUTE2 | HNSNoticeVioEventPEOAttribute2 | — |
+| ATTRIBUTE20 | HNSNoticeVioEventPEOAttribute20 | — |
+| ATTRIBUTE21 | HNSNoticeVioEventPEOAttribute21 | — |
+| ATTRIBUTE22 | HNSNoticeVioEventPEOAttribute22 | — |
+| ATTRIBUTE23 | HNSNoticeVioEventPEOAttribute23 | — |
+| ATTRIBUTE24 | HNSNoticeVioEventPEOAttribute24 | — |
+| ATTRIBUTE25 | HNSNoticeVioEventPEOAttribute25 | — |
+| ATTRIBUTE26 | HNSNoticeVioEventPEOAttribute26 | — |
+| ATTRIBUTE27 | HNSNoticeVioEventPEOAttribute27 | — |
+| ATTRIBUTE28 | HNSNoticeVioEventPEOAttribute28 | — |
+| ATTRIBUTE29 | HNSNoticeVioEventPEOAttribute29 | — |
+| ATTRIBUTE3 | HNSNoticeVioEventPEOAttribute3 | — |
+| ATTRIBUTE30 | HNSNoticeVioEventPEOAttribute30 | — |
+| ATTRIBUTE4 | HNSNoticeVioEventPEOAttribute4 | — |
+| ATTRIBUTE5 | HNSNoticeVioEventPEOAttribute5 | — |
+| ATTRIBUTE6 | HNSNoticeVioEventPEOAttribute6 | — |
+| ATTRIBUTE7 | HNSNoticeVioEventPEOAttribute7 | — |
+| ATTRIBUTE8 | HNSNoticeVioEventPEOAttribute8 | — |
+| ATTRIBUTE9 | HNSNoticeVioEventPEOAttribute9 | — |
+| ATTRIBUTE_CATEGORY | HNSNoticeVioEventPEOAttrCategory | — |
+| ATTRIBUTE_NUMBER1 | HNSNoticeVioEventPEOAttrNumber1 | — |
+| ATTRIBUTE_NUMBER10 | HNSNoticeVioEventPEOAttrNumber10 | — |
+| ATTRIBUTE_NUMBER2 | HNSNoticeVioEventPEOAttrNumber2 | — |
+| ATTRIBUTE_NUMBER3 | HNSNoticeVioEventPEOAttrNumber3 | — |
+| ATTRIBUTE_NUMBER4 | HNSNoticeVioEventPEOAttrNumber4 | — |
+| ATTRIBUTE_NUMBER5 | HNSNoticeVioEventPEOAttrNumber5 | — |
+| ATTRIBUTE_NUMBER6 | HNSNoticeVioEventPEOAttrNumber6 | — |
+| ATTRIBUTE_NUMBER7 | HNSNoticeVioEventPEOAttrNumber7 | — |
+| ATTRIBUTE_NUMBER8 | HNSNoticeVioEventPEOAttrNumber8 | — |
+| ATTRIBUTE_NUMBER9 | HNSNoticeVioEventPEOAttrNumber9 | — |
+| ATTRIBUTE_TIMESTAMP1 | HNSNoticeVioEventPEOAttrTimestamp1 | — |
+| ATTRIBUTE_TIMESTAMP10 | HNSNoticeVioEventPEOAttrTimestamp10 | — |
+| ATTRIBUTE_TIMESTAMP2 | HNSNoticeVioEventPEOAttrTimestamp2 | — |
+| ATTRIBUTE_TIMESTAMP3 | HNSNoticeVioEventPEOAttrTimestamp3 | — |
+| ATTRIBUTE_TIMESTAMP4 | HNSNoticeVioEventPEOAttrTimestamp4 | — |
+| ATTRIBUTE_TIMESTAMP5 | HNSNoticeVioEventPEOAttrTimestamp5 | — |
+| ATTRIBUTE_TIMESTAMP6 | HNSNoticeVioEventPEOAttrTimestamp6 | — |
+| ATTRIBUTE_TIMESTAMP7 | HNSNoticeVioEventPEOAttrTimestamp7 | — |
+| ATTRIBUTE_TIMESTAMP8 | HNSNoticeVioEventPEOAttrTimestamp8 | — |
+| ATTRIBUTE_TIMESTAMP9 | HNSNoticeVioEventPEOAttrTimestamp9 | — |
+| CREATED_BY | HNSNoticeVioEventPEOCreatedBy | ✅ |
+| CREATION_DATE | HNSNoticeVioEventPEOCreationDate | ✅ |
+| DELETED_FLAG | HNSNoticeVioEventPEODeletedFlag | ✅ |
+| INCIDENT_DETAIL_ID | HNSNoticeVioEventPEOIncDetailId | ✅ |
+| LAST_UPDATE_DATE | HNSNoticeVioEventPEOLastUpdateDt | ✅ |
+| LAST_UPDATE_LOGIN | HNSNoticeVioEventPEOLastUpdateLgn | ✅ |
+| LAST_UPDATED_BY | HNSNoticeVioEventPEOLastUpdatedBy | ✅ |
+| NOTICE_OF_VIOLATION_CD | HNSNoticeVioEventPEONotOfVltnCd | ✅ |
+| NOTICE_VIO_EVT_DETAIL_ID | HNSNoticeVioEventPEONotVioEvtDtlId | ✅ |
+| OBJECT_VERSION_NUMBER | HNSNoticeVioEventPEOObjVerNumber | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — HNS_NOTICE_VIO_EVT_DETAIL](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/hnsnoticevioevtdetail.html)

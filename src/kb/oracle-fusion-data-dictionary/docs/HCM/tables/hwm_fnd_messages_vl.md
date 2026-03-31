@@ -101,3 +101,34 @@ WHERE  m.MESSAGE_TYPE = 'ERROR';
 
 - [Oracle Docs — HWM_FND_MESSAGES_VL](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/hwmfndmessagesvl.html)
 - [[hcm-module-data-dictionary]] — Dossie do modulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[timemessagepvo|TimeMessagePVO]] (HCM · BICC: 9/22)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| APPLICATION_ID | HwmFndMessagesVLPEOApplicationId | ✅ |
+| APPLICATION_SHORT_NAME | HwmFndMessagesVLPEOApplicationShortName | ✅ |
+| CHANGE_SINCE_LAST_REFRESH | HwmFndMessagesVLPEOChangeSinceLastRefresh | — |
+| CONTEXT | HwmFndMessagesVLPEOContext | — |
+| CREATED_BY | HwmFndMessagesVLPEOCreatedBy | ✅ |
+| CREATION_DATE | HwmFndMessagesVLPEOCreationDate | ✅ |
+| LAST_UPDATE_DATE | HwmFndMessagesVLPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | HwmFndMessagesVLPEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | HwmFndMessagesVLPEOLastUpdatedBy | ✅ |
+| LOGGABLE_ALERTABLE | HwmFndMessagesVLPEOLoggableAlertable | — |
+| MESSAGE_ADMIN_ACTION | HwmFndMessagesVLPEOMessageAdminAction | — |
+| MESSAGE_ADMIN_DETAILS | HwmFndMessagesVLPEOMessageAdminDetails | — |
+| MESSAGE_CATEGORY | HwmFndMessagesVLPEOMessageCategory | — |
+| MESSAGE_CAUSE | HwmFndMessagesVLPEOMessageCause | — |
+| MESSAGE_NAME | HwmFndMessagesVLPEOMessageName | — |
+| MESSAGE_NUMBER | HwmFndMessagesVLPEOMessageNumber | ✅ |
+| MESSAGE_SEVERITY | HwmFndMessagesVLPEOMessageSeverity | — |
+| MESSAGE_TEXT | HwmFndMessagesVLPEOMessageText | ✅ |
+| MESSAGE_USER_ACTION | HwmFndMessagesVLPEOMessageUserAction | — |
+| MESSAGE_USER_DETAILS | HwmFndMessagesVLPEOMessageUserDetails | — |
+| MODULE_ID | HwmFndMessagesVLPEOModuleId | — |
+| TYPE | HwmFndMessagesVLPEOType | — |

@@ -167,6 +167,419 @@ WHERE  dist.POSTING_CONTROL_ID = -1
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[completedtrxrevadjdistributionpvo|CompletedTrxRevAdjDistributionPVO]] (AR · BICC: 4/74)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACCOUNT_CLASS | RefCustTrxDistAccountClass | ✅ |
+| ACCOUNT_CLASS | TransactionLineDistributionAccountClass | — |
+| ACCOUNT_SET_FLAG | RefCustTrxDistAccountSetFlag | — |
+| ACCOUNT_SET_FLAG | TransactionLineDistributionAccountSetFlag | — |
+| ACCTD_AMOUNT | RefCustTrxDistAcctdAmount | — |
+| ACCTD_AMOUNT | TransactionLineDistributionAcctdAmount | — |
+| AMOUNT | RefCustTrxDistAmount | — |
+| AMOUNT | TransactionLineDistributionAmount | — |
+| CODE_COMBINATION_ID | RefCustTrxDistCodeCombinationId | — |
+| CODE_COMBINATION_ID | TransactionLineDistributionCodeCombinationId | — |
+| COLLECTED_TAX_CCID | RefCustTrxDistCollectedTaxCcid | — |
+| COLLECTED_TAX_CCID | TransactionLineDistributionCollectedTaxCcid | — |
+| COLLECTED_TAX_CONCAT_SEG | RefCustTrxDistCollectedTaxConcatSeg | — |
+| COLLECTED_TAX_CONCAT_SEG | TransactionLineDistributionCollectedTaxConcatSeg | — |
+| COMMENTS | RefCustTrxDistComments | — |
+| COMMENTS | TransactionLineDistributionComments | — |
+| CONCATENATED_SEGMENTS | RefCustTrxDistConcatenatedSegments | — |
+| CONCATENATED_SEGMENTS | TransactionLineDistributionConcatenatedSegments | — |
+| CREATED_BY | RefCustTrxDistCreatedBy | — |
+| CREATION_DATE | RefCustTrxDistCreationDate | — |
+| CUST_TRX_LINE_GL_DIST_ID | RefCustTrxDistCustTrxLineGlDistId | ✅ |
+| CUST_TRX_LINE_GL_DIST_ID | TransactionLineDistributionCustTrxLineGlDistId | ✅ |
+| CUST_TRX_LINE_SALESREP_ID | RefCustTrxDistCustTrxLineSalesrepId | — |
+| CUST_TRX_LINE_SALESREP_ID | TransactionLineDistributionCustTrxLineSalesrepId | — |
+| CUSTOMER_TRX_ID | RefCustTrxDistCustomerTrxId | — |
+| CUSTOMER_TRX_ID | TransactionLineDistributionCustomerTrxId | — |
+| CUSTOMER_TRX_LINE_ID | RefCustTrxDistCustomerTrxLineId | — |
+| CUSTOMER_TRX_LINE_ID | TransactionLineDistributionCustomerTrxLineId | — |
+| EVENT_ID | RefCustTrxDistEventId | — |
+| EVENT_ID | TransactionLineDistributionEventId | — |
+| GL_DATE | RefCustTrxDistGlDate | — |
+| GL_DATE | TransactionLineDistributionGlDate | — |
+| GL_POSTED_DATE | RefCustTrxDistGlPostedDate | — |
+| GL_POSTED_DATE | TransactionLineDistributionGlPostedDate | — |
+| LAST_UPDATE_DATE | RefCustTrxDistLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | RefCustTrxDistLastUpdateLogin | — |
+| LAST_UPDATED_BY | RefCustTrxDistLastUpdatedBy | — |
+| LATEST_REC_FLAG | RefCustTrxDistLatestRecFlag | — |
+| LATEST_REC_FLAG | TransactionLineDistributionLatestRecFlag | — |
+| OBJECT_VERSION_NUMBER | RefCustTrxDistObjectVersionNumber | — |
+| ORG_ID | RefCustTrxDistOrgId | — |
+| ORG_ID | TransactionLineDistributionOrgId | — |
+| ORIGINAL_GL_DATE | RefCustTrxDistOriginalGlDate | — |
+| ORIGINAL_GL_DATE | TransactionLineDistributionOriginalGlDate | — |
+| PERCENT | RefCustTrxDistPercent | — |
+| PERCENT | TransactionLineDistributionPercent | — |
+| POST_REQUEST_ID | RefCustTrxDistPostRequestId | — |
+| POST_REQUEST_ID | TransactionLineDistributionPostRequestId | — |
+| POSTING_CONTROL_ID | RefCustTrxDistPostingControlId | — |
+| POSTING_CONTROL_ID | TransactionLineDistributionPostingControlId | — |
+| PROGRAM_APPLICATION_ID | RefCustTrxDistProgramApplicationId | — |
+| PROGRAM_APPLICATION_ID | TransactionLineDistributionProgramApplicationId | — |
+| PROGRAM_ID | RefCustTrxDistProgramId | — |
+| PROGRAM_ID | TransactionLineDistributionProgramId | — |
+| PROGRAM_UPDATE_DATE | RefCustTrxDistProgramUpdateDate | — |
+| PROGRAM_UPDATE_DATE | TransactionLineDistributionProgramUpdateDate | — |
+| RA_POST_LOOP_NUMBER | RefCustTrxDistRaPostLoopNumber | — |
+| RA_POST_LOOP_NUMBER | TransactionLineDistributionRaPostLoopNumber | — |
+| REC_OFFSET_FLAG | RefCustTrxDistRecOffsetFlag | — |
+| REC_OFFSET_FLAG | TransactionLineDistributionRecOffsetFlag | — |
+| REQUEST_ID | RefCustTrxDistRequestId | — |
+| REQUEST_ID | TransactionLineDistributionRequestId | — |
+| REV_ADJ_CLASS_TEMP | RefCustTrxDistRevAdjClassTemp | — |
+| REV_ADJ_CLASS_TEMP | TransactionLineDistributionRevAdjClassTemp | — |
+| REVENUE_ADJUSTMENT_ID | RefCustTrxDistRevenueAdjustmentId | — |
+| REVENUE_ADJUSTMENT_ID | TransactionLineDistributionRevenueAdjustmentId | — |
+| ROUNDING_CORRECTION_FLAG | RefCustTrxDistRoundingCorrectionFlag | — |
+| ROUNDING_CORRECTION_FLAG | TransactionLineDistributionRoundingCorrectionFlag | — |
+| SET_OF_BOOKS_ID | RefCustTrxDistSetOfBooksId | — |
+| SET_OF_BOOKS_ID | TransactionLineDistributionSetOfBooksId | — |
+| TRANSFER_TO_COSTING | RefCustTrxDistTransferToCosting | — |
+| TRANSFER_TO_COSTING | TransactionLineDistributionTransferToCosting | — |
+| USER_GENERATED_FLAG | RefCustTrxDistUserGeneratedFlag | — |
+| USER_GENERATED_FLAG | TransactionLineDistributionUserGeneratedFlag | — |
+
+### [[completedtrxrevenuedistributionpvo|CompletedTrxRevenueDistributionPVO]] (AR · BICC: 10/40)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACCOUNT_CLASS | TransactionLineDistributionAccountClass | ✅ |
+| ACCOUNT_SET_FLAG | TransactionLineDistributionAccountSetFlag | ✅ |
+| ACCTD_AMOUNT | TransactionLineDistributionAcctdAmount | ✅ |
+| AMOUNT | TransactionLineDistributionAmount | ✅ |
+| CODE_COMBINATION_ID | TransactionLineDistributionCodeCombinationId | ✅ |
+| COLLECTED_TAX_CCID | TransactionLineDistributionCollectedTaxCcid | — |
+| COLLECTED_TAX_CONCAT_SEG | TransactionLineDistributionCollectedTaxConcatSeg | — |
+| COMMENTS | TransactionLineDistributionComments | — |
+| CONCATENATED_SEGMENTS | TransactionLineDistributionConcatenatedSegments | — |
+| CREATED_BY | TransactionLineDistributionCreatedBy | — |
+| CREATION_DATE | TransactionLineDistributionCreationDate | — |
+| CUST_TRX_LINE_GL_DIST_ID | CustTrxLineGlDistId | ✅ |
+| CUST_TRX_LINE_SALESREP_ID | TransactionLineDistributionCustTrxLineSalesrepId | — |
+| CUSTOMER_TRX_ID | TransactionLineDistributionCustomerTrxId | — |
+| CUSTOMER_TRX_LINE_ID | TransactionLineDistributionCustomerTrxLineId | — |
+| EVENT_ID | TransactionLineDistributionEventId | — |
+| GL_DATE | TransactionLineDistributionGlDate | ✅ |
+| GL_POSTED_DATE | TransactionLineDistributionGlPostedDate | ✅ |
+| LAST_UPDATE_DATE | TransactionLineDistributionLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | TransactionLineDistributionLastUpdateLogin | — |
+| LAST_UPDATED_BY | TransactionLineDistributionLastUpdatedBy | — |
+| LATEST_REC_FLAG | TransactionLineDistributionLatestRecFlag | — |
+| OBJECT_VERSION_NUMBER | TransactionLineDistributionObjectVersionNumber | — |
+| ORG_ID | TransactionLineDistributionOrgId | — |
+| ORIGINAL_GL_DATE | TransactionLineDistributionOriginalGlDate | — |
+| PERCENT | TransactionLineDistributionPercent | — |
+| POST_REQUEST_ID | TransactionLineDistributionPostRequestId | — |
+| POSTING_CONTROL_ID | TransactionLineDistributionPostingControlId | — |
+| PROGRAM_APPLICATION_ID | TransactionLineDistributionProgramApplicationId | — |
+| PROGRAM_ID | TransactionLineDistributionProgramId | — |
+| PROGRAM_UPDATE_DATE | TransactionLineDistributionProgramUpdateDate | — |
+| RA_POST_LOOP_NUMBER | TransactionLineDistributionRaPostLoopNumber | — |
+| REC_OFFSET_FLAG | TransactionLineDistributionRecOffsetFlag | — |
+| REQUEST_ID | TransactionLineDistributionRequestId | — |
+| REV_ADJ_CLASS_TEMP | TransactionLineDistributionRevAdjClassTemp | — |
+| REVENUE_ADJUSTMENT_ID | TransactionLineDistributionRevenueAdjustmentId | — |
+| ROUNDING_CORRECTION_FLAG | TransactionLineDistributionRoundingCorrectionFlag | — |
+| SET_OF_BOOKS_ID | TransactionLineDistributionSetOfBooksId | ✅ |
+| TRANSFER_TO_COSTING | TransactionLineDistributionTransferToCosting | — |
+| USER_GENERATED_FLAG | TransactionLineDistributionUserGeneratedFlag | — |
+
+### [[paymentschedulepvo|PaymentSchedulePVO]] (AR · BICC: 11/40)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACCOUNT_CLASS | TransactionDistributionAccountClass | ✅ |
+| ACCOUNT_SET_FLAG | TransactionDistributionAccountSetFlag | — |
+| ACCTD_AMOUNT | TransactionDistributionAcctdAmount | ✅ |
+| AMOUNT | TransactionDistributionAmount | ✅ |
+| CODE_COMBINATION_ID | TransactionDistributionCodeCombinationId | ✅ |
+| COLLECTED_TAX_CCID | TransactionDistributionCollectedTaxCcid | — |
+| COLLECTED_TAX_CONCAT_SEG | TransactionDistributionCollectedTaxConcatSeg | — |
+| COMMENTS | TransactionDistributionComments | — |
+| CONCATENATED_SEGMENTS | TransactionDistributionConcatenatedSegments | — |
+| CREATED_BY | TransactionDistributionCreatedBy | — |
+| CREATION_DATE | TransactionDistributionCreationDate | — |
+| CUST_TRX_LINE_GL_DIST_ID | TransactionDistributionCustTrxLineGlDistId | ✅ |
+| CUST_TRX_LINE_SALESREP_ID | TransactionDistributionCustTrxLineSalesrepId | — |
+| CUSTOMER_TRX_ID | TransactionDistributionCustomerTrxId | ✅ |
+| CUSTOMER_TRX_LINE_ID | TransactionDistributionCustomerTrxLineId | — |
+| EVENT_ID | TransactionDistributionEventId | — |
+| GL_DATE | TransactionDistributionGlDate | ✅ |
+| GL_POSTED_DATE | TransactionDistributionGlPostedDate | ✅ |
+| LAST_UPDATE_DATE | TransactionDistributionLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | TransactionDistributionLastUpdateLogin | — |
+| LAST_UPDATED_BY | TransactionDistributionLastUpdatedBy | — |
+| LATEST_REC_FLAG | TransactionDistributionLatestRecFlag | ✅ |
+| OBJECT_VERSION_NUMBER | TransactionDistributionObjectVersionNumber | — |
+| ORG_ID | TransactionDistributionOrgId | — |
+| ORIGINAL_GL_DATE | TransactionDistributionOriginalGlDate | — |
+| PERCENT | TransactionDistributionPercent | — |
+| POST_REQUEST_ID | TransactionDistributionPostRequestId | — |
+| POSTING_CONTROL_ID | TransactionDistributionPostingControlId | — |
+| PROGRAM_APPLICATION_ID | TransactionDistributionProgramApplicationId | — |
+| PROGRAM_ID | TransactionDistributionProgramId | — |
+| PROGRAM_UPDATE_DATE | TransactionDistributionProgramUpdateDate | — |
+| RA_POST_LOOP_NUMBER | TransactionDistributionRaPostLoopNumber | — |
+| REC_OFFSET_FLAG | TransactionDistributionRecOffsetFlag | — |
+| REQUEST_ID | TransactionDistributionRequestId | — |
+| REV_ADJ_CLASS_TEMP | TransactionDistributionRevAdjClassTemp | — |
+| REVENUE_ADJUSTMENT_ID | TransactionDistributionRevenueAdjustmentId | — |
+| ROUNDING_CORRECTION_FLAG | TransactionDistributionRoundingCorrectionFlag | — |
+| SET_OF_BOOKS_ID | TransactionDistributionSetOfBooksId | ✅ |
+| TRANSFER_TO_COSTING | TransactionDistributionTransferToCosting | — |
+| USER_GENERATED_FLAG | TransactionDistributionUserGeneratedFlag | — |
+
+### [[receiptapplicationdistributionpvo|ReceiptApplicationDistributionPVO]] (AR)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACCOUNT_CLASS | TransactionDistributionAccountClass | — |
+| ACCOUNT_SET_FLAG | TransactionDistributionAccountSetFlag | — |
+| ACCTD_AMOUNT | TransactionDistributionAcctdAmount | — |
+| AMOUNT | TransactionDistributionAmount | — |
+| CODE_COMBINATION_ID | TransactionDistributionCodeCombinationId | — |
+| COLLECTED_TAX_CCID | TransactionDistributionCollectedTaxCcid | — |
+| COLLECTED_TAX_CONCAT_SEG | TransactionDistributionCollectedTaxConcatSeg | — |
+| COMMENTS | TransactionDistributionComments | — |
+| CONCATENATED_SEGMENTS | TransactionDistributionConcatenatedSegments | — |
+| CREATED_BY | TransactionDistributionCreatedBy | — |
+| CREATION_DATE | TransactionDistributionCreationDate | — |
+| CUST_TRX_LINE_GL_DIST_ID | TransactionDistributionCustTrxLineGlDistId | — |
+| CUST_TRX_LINE_SALESREP_ID | TransactionDistributionCustTrxLineSalesrepId | — |
+| CUSTOMER_TRX_ID | TransactionDistributionCustomerTrxId | — |
+| CUSTOMER_TRX_LINE_ID | TransactionDistributionCustomerTrxLineId | — |
+| EVENT_ID | TransactionDistributionEventId | — |
+| GL_DATE | TransactionDistributionGlDate | — |
+| GL_POSTED_DATE | TransactionDistributionGlPostedDate | — |
+| LAST_UPDATE_DATE | TransactionDistributionLastUpdateDate | — |
+| LAST_UPDATE_LOGIN | TransactionDistributionLastUpdateLogin | — |
+| LAST_UPDATED_BY | TransactionDistributionLastUpdatedBy | — |
+| LATEST_REC_FLAG | TransactionDistributionLatestRecFlag | — |
+| OBJECT_VERSION_NUMBER | TransactionDistributionObjectVersionNumber | — |
+| ORG_ID | TransactionDistributionOrgId | — |
+| ORIGINAL_GL_DATE | TransactionDistributionOriginalGlDate | — |
+| PERCENT | TransactionDistributionPercent | — |
+| POST_REQUEST_ID | TransactionDistributionPostRequestId | — |
+| POSTING_CONTROL_ID | TransactionDistributionPostingControlId | — |
+| PROGRAM_APPLICATION_ID | TransactionDistributionProgramApplicationId | — |
+| PROGRAM_ID | TransactionDistributionProgramId | — |
+| PROGRAM_UPDATE_DATE | TransactionDistributionProgramUpdateDate | — |
+| RA_POST_LOOP_NUMBER | TransactionDistributionRaPostLoopNumber | — |
+| REC_OFFSET_FLAG | TransactionDistributionRecOffsetFlag | — |
+| REQUEST_ID | TransactionDistributionRequestId | — |
+| REV_ADJ_CLASS_TEMP | TransactionDistributionRevAdjClassTemp | — |
+| REVENUE_ADJUSTMENT_ID | TransactionDistributionRevenueAdjustmentId | — |
+| ROUNDING_CORRECTION_FLAG | TransactionDistributionRoundingCorrectionFlag | — |
+| SET_OF_BOOKS_ID | TransactionDistributionSetOfBooksId | — |
+| TRANSFER_TO_COSTING | TransactionDistributionTransferToCosting | — |
+| USER_GENERATED_FLAG | TransactionDistributionUserGeneratedFlag | — |
+
+### [[receiptapplicationdistributionvc|ReceiptApplicationDistributionVC]] (AR)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACCOUNT_CLASS | TransactionDistributionAccountClass | — |
+| ACCOUNT_SET_FLAG | TransactionDistributionAccountSetFlag | — |
+| ACCTD_AMOUNT | TransactionDistributionAcctdAmount | — |
+| AMOUNT | TransactionDistributionAmount | — |
+| CODE_COMBINATION_ID | TransactionDistributionCodeCombinationId | — |
+| COLLECTED_TAX_CCID | TransactionDistributionCollectedTaxCcid | — |
+| COLLECTED_TAX_CONCAT_SEG | TransactionDistributionCollectedTaxConcatSeg | — |
+| COMMENTS | TransactionDistributionComments | — |
+| CONCATENATED_SEGMENTS | TransactionDistributionConcatenatedSegments | — |
+| CREATED_BY | TransactionDistributionCreatedBy | — |
+| CREATION_DATE | TransactionDistributionCreationDate | — |
+| CUST_TRX_LINE_GL_DIST_ID | TransactionDistributionCustTrxLineGlDistId | — |
+| CUST_TRX_LINE_SALESREP_ID | TransactionDistributionCustTrxLineSalesrepId | — |
+| CUSTOMER_TRX_ID | TransactionDistributionCustomerTrxId | — |
+| CUSTOMER_TRX_LINE_ID | TransactionDistributionCustomerTrxLineId | — |
+| EVENT_ID | TransactionDistributionEventId | — |
+| GL_DATE | TransactionDistributionGlDate | — |
+| GL_POSTED_DATE | TransactionDistributionGlPostedDate | — |
+| LAST_UPDATE_DATE | TransactionDistributionLastUpdateDate | — |
+| LAST_UPDATE_LOGIN | TransactionDistributionLastUpdateLogin | — |
+| LAST_UPDATED_BY | TransactionDistributionLastUpdatedBy | — |
+| LATEST_REC_FLAG | TransactionDistributionLatestRecFlag | — |
+| OBJECT_VERSION_NUMBER | TransactionDistributionObjectVersionNumber | — |
+| ORG_ID | TransactionDistributionOrgId | — |
+| ORIGINAL_GL_DATE | TransactionDistributionOriginalGlDate | — |
+| PERCENT | TransactionDistributionPercent | — |
+| POST_REQUEST_ID | TransactionDistributionPostRequestId | — |
+| POSTING_CONTROL_ID | TransactionDistributionPostingControlId | — |
+| PROGRAM_APPLICATION_ID | TransactionDistributionProgramApplicationId | — |
+| PROGRAM_ID | TransactionDistributionProgramId | — |
+| PROGRAM_UPDATE_DATE | TransactionDistributionProgramUpdateDate | — |
+| RA_POST_LOOP_NUMBER | TransactionDistributionRaPostLoopNumber | — |
+| REC_OFFSET_FLAG | TransactionDistributionRecOffsetFlag | — |
+| REQUEST_ID | TransactionDistributionRequestId | — |
+| REV_ADJ_CLASS_TEMP | TransactionDistributionRevAdjClassTemp | — |
+| REVENUE_ADJUSTMENT_ID | TransactionDistributionRevenueAdjustmentId | — |
+| ROUNDING_CORRECTION_FLAG | TransactionDistributionRoundingCorrectionFlag | — |
+| SET_OF_BOOKS_ID | TransactionDistributionSetOfBooksId | — |
+| TRANSFER_TO_COSTING | TransactionDistributionTransferToCosting | — |
+| USER_GENERATED_FLAG | TransactionDistributionUserGeneratedFlag | — |
+
+### [[revenueadjustmentdistributionpvo|RevenueAdjustmentDistributionPVO]] (AR · BICC: 14/40)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACCOUNT_CLASS | TrxDistributionAccountClass | — |
+| ACCOUNT_SET_FLAG | TrxDistributionAccountSetFlag | — |
+| ACCTD_AMOUNT | TrxDistributionAcctdAmount | ✅ |
+| AMOUNT | TrxDistributionAmount | ✅ |
+| CODE_COMBINATION_ID | TrxDistributionCodeCombinationId | — |
+| COLLECTED_TAX_CCID | TrxDistributionCollectedTaxCcid | — |
+| COLLECTED_TAX_CONCAT_SEG | TrxDistributionCollectedTaxConcatSeg | ✅ |
+| COMMENTS | TrxDistributionComments | ✅ |
+| CONCATENATED_SEGMENTS | TrxDistributionConcatenatedSegments | ✅ |
+| CREATED_BY | TrxDistributionCreatedBy | — |
+| CREATION_DATE | TrxDistributionCreationDate | — |
+| CUST_TRX_LINE_GL_DIST_ID | CustTrxLineGlDistId | ✅ |
+| CUST_TRX_LINE_SALESREP_ID | TrxDistributionCustTrxLineSalesrepId | — |
+| CUSTOMER_TRX_ID | TrxDistributionCustomerTrxId | — |
+| CUSTOMER_TRX_LINE_ID | TrxDistributionCustomerTrxLineId | — |
+| EVENT_ID | TrxDistributionEventId | ✅ |
+| GL_DATE | TrxDistributionGlDate | ✅ |
+| GL_POSTED_DATE | TrxDistributionGlPostedDate | ✅ |
+| LAST_UPDATE_DATE | TrxDistributionLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | TrxDistributionLastUpdateLogin | — |
+| LAST_UPDATED_BY | TrxDistributionLastUpdatedBy | — |
+| LATEST_REC_FLAG | TrxDistributionLatestRecFlag | ✅ |
+| OBJECT_VERSION_NUMBER | TrxDistributionObjectVersionNumber | — |
+| ORG_ID | TrxDistributionOrgId | — |
+| ORIGINAL_GL_DATE | TrxDistributionOriginalGlDate | ✅ |
+| PERCENT | TrxDistributionPercent | ✅ |
+| POST_REQUEST_ID | TrxDistributionPostRequestId | — |
+| POSTING_CONTROL_ID | TrxDistributionPostingControlId | ✅ |
+| PROGRAM_APPLICATION_ID | TrxDistributionProgramApplicationId | — |
+| PROGRAM_ID | TrxDistributionProgramId | — |
+| PROGRAM_UPDATE_DATE | TrxDistributionProgramUpdateDate | — |
+| RA_POST_LOOP_NUMBER | TrxDistributionRaPostLoopNumber | — |
+| REC_OFFSET_FLAG | TrxDistributionRecOffsetFlag | — |
+| REQUEST_ID | TrxDistributionRequestId | — |
+| REV_ADJ_CLASS_TEMP | TrxDistributionRevAdjClassTemp | — |
+| REVENUE_ADJUSTMENT_ID | TrxDistributionRevenueAdjustmentId | — |
+| ROUNDING_CORRECTION_FLAG | TrxDistributionRoundingCorrectionFlag | — |
+| SET_OF_BOOKS_ID | TrxDistributionSetOfBooksId | — |
+| TRANSFER_TO_COSTING | TrxDistributionTransferToCosting | — |
+| USER_GENERATED_FLAG | TrxDistributionUserGeneratedFlag | — |
+
+### [[transactiondistributionextractpvo|TransactionDistributionExtractPVO]] (OTHER · BICC: 39/55)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACCOUNT_CLASS | RaCustTrxLineGlDistAccountClass | ✅ |
+| ACCOUNT_SET_FLAG | RaCustTrxLineGlDistAccountSetFlag | ✅ |
+| ACCTD_AMOUNT | RaCustTrxLineGlDistAcctdAmount | ✅ |
+| AMOUNT | RaCustTrxLineGlDistAmount | ✅ |
+| ATTRIBUTE1 | RaCustTrxLineGlDistAttribute1 | — |
+| ATTRIBUTE10 | RaCustTrxLineGlDistAttribute10 | — |
+| ATTRIBUTE11 | RaCustTrxLineGlDistAttribute11 | — |
+| ATTRIBUTE12 | RaCustTrxLineGlDistAttribute12 | — |
+| ATTRIBUTE13 | RaCustTrxLineGlDistAttribute13 | — |
+| ATTRIBUTE14 | RaCustTrxLineGlDistAttribute14 | — |
+| ATTRIBUTE15 | RaCustTrxLineGlDistAttribute15 | — |
+| ATTRIBUTE2 | RaCustTrxLineGlDistAttribute2 | — |
+| ATTRIBUTE3 | RaCustTrxLineGlDistAttribute3 | — |
+| ATTRIBUTE4 | RaCustTrxLineGlDistAttribute4 | — |
+| ATTRIBUTE5 | RaCustTrxLineGlDistAttribute5 | — |
+| ATTRIBUTE6 | RaCustTrxLineGlDistAttribute6 | — |
+| ATTRIBUTE7 | RaCustTrxLineGlDistAttribute7 | — |
+| ATTRIBUTE8 | RaCustTrxLineGlDistAttribute8 | — |
+| ATTRIBUTE9 | RaCustTrxLineGlDistAttribute9 | — |
+| ATTRIBUTE_CATEGORY | RaCustTrxLineGlDistAttributeCategory | — |
+| CODE_COMBINATION_ID | RaCustTrxLineGlDistCodeCombinationId | ✅ |
+| COLLECTED_TAX_CCID | RaCustTrxLineGlDistCollectedTaxCcid | ✅ |
+| COLLECTED_TAX_CONCAT_SEG | RaCustTrxLineGlDistCollectedTaxConcatSeg | ✅ |
+| COMMENTS | RaCustTrxLineGlDistComments | ✅ |
+| CONCATENATED_SEGMENTS | RaCustTrxLineGlDistConcatenatedSegments | ✅ |
+| CREATED_BY | RaCustTrxLineGlDistCreatedBy | ✅ |
+| CREATION_DATE | RaCustTrxLineGlDistCreationDate | ✅ |
+| CUST_TRX_LINE_GL_DIST_ID | RaCustTrxLineGlDistCustTrxLineGlDistId | ✅ |
+| CUST_TRX_LINE_SALESREP_ID | RaCustTrxLineGlDistCustTrxLineSalesrepId | ✅ |
+| CUSTOMER_TRX_ID | RaCustTrxLineGlDistCustomerTrxId | ✅ |
+| CUSTOMER_TRX_LINE_ID | RaCustTrxLineGlDistCustomerTrxLineId | ✅ |
+| EVENT_ID | RaCustTrxLineGlDistEventId | ✅ |
+| GL_DATE | RaCustTrxLineGlDistGlDate | ✅ |
+| GL_POSTED_DATE | RaCustTrxLineGlDistGlPostedDate | ✅ |
+| LAST_UPDATE_DATE | RaCustTrxLineGlDistLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | RaCustTrxLineGlDistLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | RaCustTrxLineGlDistLastUpdatedBy | ✅ |
+| LATEST_REC_FLAG | RaCustTrxLineGlDistLatestRecFlag | ✅ |
+| OBJECT_VERSION_NUMBER | RaCustTrxLineGlDistObjectVersionNumber | ✅ |
+| ORG_ID | RaCustTrxLineGlDistOrgId | ✅ |
+| ORIGINAL_GL_DATE | RaCustTrxLineGlDistOriginalGlDate | ✅ |
+| PERCENT | RaCustTrxLineGlDistPercent | ✅ |
+| POST_REQUEST_ID | RaCustTrxLineGlDistPostRequestId | ✅ |
+| POSTING_CONTROL_ID | RaCustTrxLineGlDistPostingControlId | ✅ |
+| PROGRAM_APPLICATION_ID | RaCustTrxLineGlDistProgramApplicationId | ✅ |
+| PROGRAM_ID | RaCustTrxLineGlDistProgramId | ✅ |
+| PROGRAM_UPDATE_DATE | RaCustTrxLineGlDistProgramUpdateDate | ✅ |
+| REC_OFFSET_FLAG | RaCustTrxLineGlDistRecOffsetFlag | ✅ |
+| REQUEST_ID | RaCustTrxLineGlDistRequestId | ✅ |
+| REV_ADJ_CLASS_TEMP | RaCustTrxLineGlDistRevAdjClassTemp | ✅ |
+| REVENUE_ADJUSTMENT_ID | RaCustTrxLineGlDistRevenueAdjustmentId | ✅ |
+| ROUNDING_CORRECTION_FLAG | RaCustTrxLineGlDistRoundingCorrectionFlag | ✅ |
+| SET_OF_BOOKS_ID | RaCustTrxLineGlDistSetOfBooksId | ✅ |
+| TRANSFER_TO_COSTING | RaCustTrxLineGlDistTransferToCosting | ✅ |
+| USER_GENERATED_FLAG | RaCustTrxLineGlDistUserGeneratedFlag | ✅ |
+
+### [[transactionlinedistributionpvo|TransactionLineDistributionPVO]] (AR · BICC: 19/40)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACCOUNT_CLASS | TransactionLineDistributionAccountClass | ✅ |
+| ACCOUNT_SET_FLAG | TransactionLineDistributionAccountSetFlag | ✅ |
+| ACCTD_AMOUNT | TransactionLineDistributionAcctdAmount | ✅ |
+| AMOUNT | TransactionLineDistributionAmount | ✅ |
+| CODE_COMBINATION_ID | TransactionLineDistributionCodeCombinationId | — |
+| COLLECTED_TAX_CCID | TransactionLineDistributionCollectedTaxCcid | — |
+| COLLECTED_TAX_CONCAT_SEG | TransactionLineDistributionCollectedTaxConcatSeg | ✅ |
+| COMMENTS | TransactionLineDistributionComments | ✅ |
+| CONCATENATED_SEGMENTS | TransactionLineDistributionConcatenatedSegments | ✅ |
+| CREATED_BY | TransactionLineDistributionCreatedBy | — |
+| CREATION_DATE | TransactionLineDistributionCreationDate | — |
+| CUST_TRX_LINE_GL_DIST_ID | CustTrxLineGlDistId | ✅ |
+| CUST_TRX_LINE_SALESREP_ID | TransactionLineDistributionCustTrxLineSalesrepId | ✅ |
+| CUSTOMER_TRX_ID | TransactionLineDistributionCustomerTrxId | ✅ |
+| CUSTOMER_TRX_LINE_ID | TransactionLineDistributionCustomerTrxLineId | ✅ |
+| EVENT_ID | TransactionLineDistributionEventId | ✅ |
+| GL_DATE | TransactionLineDistributionGlDate | ✅ |
+| GL_POSTED_DATE | TransactionLineDistributionGlPostedDate | ✅ |
+| LAST_UPDATE_DATE | TransactionLineDistributionLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | TransactionLineDistributionLastUpdateLogin | — |
+| LAST_UPDATED_BY | TransactionLineDistributionLastUpdatedBy | — |
+| LATEST_REC_FLAG | TransactionLineDistributionLatestRecFlag | ✅ |
+| OBJECT_VERSION_NUMBER | TransactionLineDistributionObjectVersionNumber | — |
+| ORG_ID | TransactionLineDistributionOrgId | — |
+| ORIGINAL_GL_DATE | TransactionLineDistributionOriginalGlDate | ✅ |
+| PERCENT | TransactionLineDistributionPercent | ✅ |
+| POST_REQUEST_ID | TransactionLineDistributionPostRequestId | — |
+| POSTING_CONTROL_ID | TransactionLineDistributionPostingControlId | ✅ |
+| PROGRAM_APPLICATION_ID | TransactionLineDistributionProgramApplicationId | — |
+| PROGRAM_ID | TransactionLineDistributionProgramId | — |
+| PROGRAM_UPDATE_DATE | TransactionLineDistributionProgramUpdateDate | — |
+| RA_POST_LOOP_NUMBER | TransactionLineDistributionRaPostLoopNumber | — |
+| REC_OFFSET_FLAG | TransactionLineDistributionRecOffsetFlag | — |
+| REQUEST_ID | TransactionLineDistributionRequestId | — |
+| REV_ADJ_CLASS_TEMP | TransactionLineDistributionRevAdjClassTemp | — |
+| REVENUE_ADJUSTMENT_ID | TransactionLineDistributionRevenueAdjustmentId | — |
+| ROUNDING_CORRECTION_FLAG | TransactionLineDistributionRoundingCorrectionFlag | — |
+| SET_OF_BOOKS_ID | TransactionLineDistributionSetOfBooksId | — |
+| TRANSFER_TO_COSTING | TransactionLineDistributionTransferToCosting | — |
+| USER_GENERATED_FLAG | TransactionLineDistributionUserGeneratedFlag | — |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — RA_CUST_TRX_LINE_GL_DIST_ALL](https://docs.oracle.com/en/cloud/saas/financials/25a/oedmf/racusttrxlinegldistall-25198.html)

@@ -108,3 +108,26 @@ ORDER BY p.DISPLAY_ORDER;
 
 - [Oracle Docs -- IRC_CX_PAGES_B](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/irccxpagesb.html)
 - [[hcm-module-data-dictionary]] -- Dossie do modulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[careersitepagepvo|CareerSitePagePVO]] (HCM · BICC: 7/14)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | SitePageBPEOCreatedBy | ✅ |
+| CREATION_DATE | SitePageBPEOCreationDate | ✅ |
+| ELEMENT_ID | SitePageBPEOElementId | — |
+| ELEMENT_TYPE | SitePageBPEOElementType | — |
+| LAST_UPDATE_DATE | SitePageBPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | SitePageBPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | SitePageBPEOLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | SitePageBPEOObjectVersionNumber | — |
+| PAGE_CODE | SitePageBPEOPageCode | ✅ |
+| PAGE_ID | PageId | ✅ |
+| PUBLISHED_DATE | SitePageBPEOPublishedDate | ✅ |
+| SITE_CODE | SitePageBPEOSiteCode | — |
+| SITE_NUMBER | SitePageBPEOSiteNumber | — |
+| STATUS_CODE | SitePageBPEOStatusCode | ✅ |

@@ -156,3 +156,68 @@ WHERE  NOT EXISTS (
 
 - [Oracle Docs — GL_DAILY_RATES](https://docs.oracle.com/en/cloud/saas/financials/25a/oedmf/gldailyrates-25082.html)
 - [[gl-module-data-dictionary]] — Dossiê do módulo GL
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[dailyrateextractpvo|DailyRateExtractPVO]] (OTHER · BICC: 12/38)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ATTRIBUTE1 | DailyRateAttribute1 | — |
+| ATTRIBUTE10 | DailyRateAttribute10 | — |
+| ATTRIBUTE11 | DailyRateAttribute11 | — |
+| ATTRIBUTE12 | DailyRateAttribute12 | — |
+| ATTRIBUTE13 | DailyRateAttribute13 | — |
+| ATTRIBUTE14 | DailyRateAttribute14 | — |
+| ATTRIBUTE15 | DailyRateAttribute15 | — |
+| ATTRIBUTE2 | DailyRateAttribute2 | — |
+| ATTRIBUTE3 | DailyRateAttribute3 | — |
+| ATTRIBUTE4 | DailyRateAttribute4 | — |
+| ATTRIBUTE5 | DailyRateAttribute5 | — |
+| ATTRIBUTE6 | DailyRateAttribute6 | — |
+| ATTRIBUTE7 | DailyRateAttribute7 | — |
+| ATTRIBUTE8 | DailyRateAttribute8 | — |
+| ATTRIBUTE9 | DailyRateAttribute9 | — |
+| ATTRIBUTE_CATEGORY | DailyRateAttributeCategory | — |
+| ATTRIBUTE_DATE1 | DailyRateAttributeDate1 | — |
+| ATTRIBUTE_DATE2 | DailyRateAttributeDate2 | — |
+| ATTRIBUTE_DATE3 | DailyRateAttributeDate3 | — |
+| ATTRIBUTE_DATE4 | DailyRateAttributeDate4 | — |
+| ATTRIBUTE_DATE5 | DailyRateAttributeDate5 | — |
+| ATTRIBUTE_NUMBER1 | DailyRateAttributeNumber1 | — |
+| ATTRIBUTE_NUMBER2 | DailyRateAttributeNumber2 | — |
+| ATTRIBUTE_NUMBER3 | DailyRateAttributeNumber3 | — |
+| ATTRIBUTE_NUMBER4 | DailyRateAttributeNumber4 | — |
+| ATTRIBUTE_NUMBER5 | DailyRateAttributeNumber5 | — |
+| CONVERSION_DATE | DailyRateConversionDate | ✅ |
+| CONVERSION_RATE | DailyRateConversionRate | ✅ |
+| CONVERSION_TYPE | DailyRateConversionType | ✅ |
+| CREATED_BY | DailyRateCreatedBy | ✅ |
+| CREATION_DATE | DailyRateCreationDate | ✅ |
+| FROM_CURRENCY | DailyRateFromCurrency | ✅ |
+| LAST_UPDATE_DATE | DailyRateLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | DailyRateLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | DailyRateLastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | DailyRateObjectVersionNumber | ✅ |
+| STATUS_CODE | DailyRateStatusCode | ✅ |
+| TO_CURRENCY | DailyRateToCurrency | ✅ |
+
+### [[dailyratepvo|DailyRatePVO]] (GL · BICC: 9/13)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CONVERSION_DATE | ConversionDate | ✅ |
+| CONVERSION_RATE | DailyRateConversionRate | ✅ |
+| CONVERSION_TYPE | ConversionType | ✅ |
+| CREATED_BY | DailyRateCreatedBy | ✅ |
+| CREATION_DATE | DailyRateCreationDate | ✅ |
+| FROM_CURRENCY | FromCurrency | ✅ |
+| LAST_UPDATE_DATE | DailyRateLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | DailyRateLastUpdateLogin | — |
+| LAST_UPDATED_BY | DailyRateLastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | DailyRateObjectVersionNumber | — |
+| RATE_SOURCE_CODE | DailyRateRateSourceCode | — |
+| STATUS_CODE | DailyRateStatusCode | — |
+| TO_CURRENCY | ToCurrency | ✅ |

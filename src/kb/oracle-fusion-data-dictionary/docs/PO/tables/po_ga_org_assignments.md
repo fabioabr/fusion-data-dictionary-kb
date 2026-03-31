@@ -38,7 +38,6 @@ updated_at: 2026-03-25
 
 Armazena as **atribuicoes de organizacoes (BUs) a Global Agreements**. Define quais BUs podem fazer releases contra um Global Blanket Purchase Agreement.
 
-
 ---
 
 ## 🧠 Propósito de Negócio
@@ -94,13 +93,58 @@ FROM   PO_GA_ORG_ASSIGNMENTS
 WHERE  PO_HEADER_ID = :p_ga_id AND ENABLED_FLAG = 'Y';
 ```
 
-
 ---
 
 ## 🔒 Observações
 
 - Cada GA pode ser compartilhado entre multiplas BUs.
 - Necessario para procurement centralizado com execucao descentralizada.
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[purchasingagreementbuaccesspvo|PurchasingAgreementBuAccessPVO]] (PO · BICC: 5/16)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BILL_TO_LOCATION_ID | BillToLocationId | ✅ |
+| BILLTO_BU_ID | BilltoBuId | — |
+| CREATED_BY | CreatedBy | — |
+| CREATION_DATE | CreationDate | — |
+| ENABLED_FLAG | EnabledFlag | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | — |
+| LAST_UPDATED_BY | LastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | — |
+| ORDERED_LOCALLY_FLAG | PurchasingAgreementBuAccessOrderedLocallyFlag | ✅ |
+| ORG_ASSIGNMENT_ID | OrgAssignmentId | ✅ |
+| PO_HEADER_ID | PoHeaderId | — |
+| PRC_BU_ID | PrcBuId | — |
+| REQ_BU_ID | ReqBuId | — |
+| SHIP_TO_LOCATION_ID | ShipToLocationId | — |
+| VENDOR_SITE_ID | VendorSiteId | — |
+
+### [[purchasinggaorgassignmentsextractpvo|PurchasingGaOrgAssignmentsExtractPVO]] (PO · BICC: 16/16)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BILL_TO_LOCATION_ID | BillToLocationId | ✅ |
+| BILLTO_BU_ID | BilltoBuId | ✅ |
+| CREATED_BY | CreatedBy | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| ENABLED_FLAG | EnabledFlag | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | LastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | ✅ |
+| ORDERED_LOCALLY_FLAG | OrderedLocallyFlag | ✅ |
+| ORG_ASSIGNMENT_ID | OrgAssignmentId | ✅ |
+| PO_HEADER_ID | PoHeaderId | ✅ |
+| PRC_BU_ID | PrcBuId | ✅ |
+| REQ_BU_ID | ReqBuId | ✅ |
+| SHIP_TO_LOCATION_ID | ShipToLocationId | ✅ |
+| VENDOR_SITE_ID | VendorSiteId | ✅ |
 
 ---
 

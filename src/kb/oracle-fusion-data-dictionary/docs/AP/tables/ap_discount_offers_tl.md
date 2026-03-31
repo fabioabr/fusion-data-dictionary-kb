@@ -87,3 +87,23 @@ SELECT dob.DISCOUNT_OFFER_ID,
 - Oracle Fusion Cloud Financials — Accounts Payable Tables (OEDMF Release 13).
 - Oracle Fusion Cloud Multilingual Architecture — TL Pattern Documentation.
 - Oracle Fusion Cloud ERP Schema Reference (Release 25A).
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[paiddisbursementschedulepvo|PaidDisbursementSchedulePVO]] (AP · BICC: 1/3)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| DISCOUNT_OFFER_ID | DiscOfferTransDiscountOfferId | — |
+| LANGUAGE | DiscOfferTransLanguage | — |
+| NAME | DiscountOffersTranslationName | ✅ |
+
+### [[paymenthistorydistributionpvo|PaymentHistoryDistributionPVO]] (AP · BICC: 1/3)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| DISCOUNT_OFFER_ID | DiscOfferTransDiscountOfferId | — |
+| LANGUAGE | DiscOfferTransLanguage | — |
+| NAME | DiscountOffersTranslationName | ✅ |

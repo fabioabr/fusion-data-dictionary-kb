@@ -53,3 +53,31 @@ updated_at: 2026-03-26
 ## 📎 Uso Típico
 
 (a ser preenchido na etapa 03)
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[requisitiondistributionp1|RequisitionDistributionP1]] (PO)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| LOOKUP_CODE | InputTaxClassificationsLookupCode | — |
+| MEANING | InputTaxClassificationsMeaning | — |
+| SET_ID | InputTaxClassificationsSetId | — |
+
+### [[requisitiondistributionrefpvo|RequisitionDistributionRefPVO]] (PO)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| LOOKUP_CODE | InputTaxClassificationsLookupCode | — |
+| MEANING | InputTaxClassificationsMeaning | — |
+| SET_ID | InputTaxClassificationsSetId | — |
+
+### [[requisitionlinep1|RequisitionLineP1]] (PO)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| LOOKUP_CODE | InputTaxClassificationsLookupCode | — |
+| MEANING | InputTaxClassificationsMeaning | — |
+| SET_ID | InputTaxClassificationsSetId | — |

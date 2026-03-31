@@ -69,3 +69,55 @@ updated_at: 2026-03-26
 ## 📎 Uso Típico
 
 (a ser preenchido na etapa 03)
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[sitetaxreportingcode|SiteTaxReportingCode]] (AR · BICC: 4/19)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | TaxReportCodeAssocCreatedBy | — |
+| CREATION_DATE | TaxReportCodeAssocCreationDate | — |
+| DATA_FILE | TaxReportCodeAssocDataFile | — |
+| EFFECTIVE_FROM | TaxReportCodeAssocEffectiveFrom | ✅ |
+| EFFECTIVE_TO | TaxReportCodeAssocEffectiveTo | ✅ |
+| ENTITY_CODE | TaxReportCodeAssocEntityCode | — |
+| ENTITY_ID | TaxReportCodeAssocEntityId | — |
+| EXCEPTION_CODE | TaxReportCodeAssocExceptionCode | — |
+| LAST_UPDATE_DATE | TaxReportCodeAssocLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | TaxReportCodeAssocLastUpdateLogin | — |
+| LAST_UPDATED_BY | TaxReportCodeAssocLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | TaxReportCodeAssocObjectVersionNumber | — |
+| PROCESS_FILE_ID | TaxReportCodeAssocProcessFileId | — |
+| REPORTING_CODE_ASSOC_ID | TaxReportCodeAssocReportingCodeAssocId | — |
+| REPORTING_CODE_CHAR_VALUE | TaxReportCodeAssocReportingCodeCharValue | ✅ |
+| REPORTING_CODE_DATE_VALUE | TaxReportCodeAssocReportCodeDateValue | — |
+| REPORTING_CODE_ID | TaxReportCodeAssocReportingCodeId | — |
+| REPORTING_CODE_NUM_VALUE | TaxReportCodeAssocReportingCodeNumValue | — |
+| REPORTING_TYPE_ID | TaxReportCodeAssocReportingTypeId | — |
+
+### [[taxreportingcode|TaxReportingCode]] (AR · BICC: 4/19)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | TaxReportCodeAssocCreatedBy | — |
+| CREATION_DATE | TaxReportCodeAssocCreationDate | — |
+| DATA_FILE | TaxReportCodeAssocDataFile | — |
+| EFFECTIVE_FROM | TaxReportCodeAssocEffectiveFrom | ✅ |
+| EFFECTIVE_TO | TaxReportCodeAssocEffectiveTo | ✅ |
+| ENTITY_CODE | TaxReportCodeAssocEntityCode | — |
+| ENTITY_ID | TaxReportCodeAssocEntityId | — |
+| EXCEPTION_CODE | TaxReportCodeAssocExceptionCode | — |
+| LAST_UPDATE_DATE | TaxReportCodeAssocLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | TaxReportCodeAssocLastUpdateLogin | — |
+| LAST_UPDATED_BY | TaxReportCodeAssocLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | TaxReportCodeAssocObjectVersionNumber | — |
+| PROCESS_FILE_ID | TaxReportCodeAssocProcessFileId | — |
+| REPORTING_CODE_ASSOC_ID | TaxReportCodeAssocReportingCodeAssocId | — |
+| REPORTING_CODE_CHAR_VALUE | TaxReportCodeAssocReportingCodeCharValue | ✅ |
+| REPORTING_CODE_DATE_VALUE | TaxReportCodeAssocReportCodeDateValue | — |
+| REPORTING_CODE_ID | TaxReportCodeAssocReportingCodeId | — |
+| REPORTING_CODE_NUM_VALUE | TaxReportCodeAssocReportingCodeNumValue | — |
+| REPORTING_TYPE_ID | TaxReportCodeAssocReportingTypeId | — |

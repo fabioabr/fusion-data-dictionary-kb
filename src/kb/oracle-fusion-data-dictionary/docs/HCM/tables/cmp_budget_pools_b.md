@@ -115,6 +115,33 @@ WHERE  bp.POOL_STATUS = 'ACTIVE';
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[budgetpoolpvo|BudgetPoolPVO]] (HCM · BICC: 18/18)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| AUTO_ISSUE_FLAG | BudgetPoolPEOAutoIssueFlag | ✅ |
+| BUDGETING_STYLE | BudgetPoolPEOBudgetingStyle | ✅ |
+| CREATED_BY | BudgetPoolPEOCreatedBy | ✅ |
+| CREATION_DATE | BudgetPoolPEOCreationDate | ✅ |
+| LAST_UPDATE_DATE | BudgetPoolPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | BudgetPoolPEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | BudgetPoolPEOLastUpdatedBy | ✅ |
+| NON_MONETARY_UOM | BudgetPoolPEONonMonetaryUom | ✅ |
+| OBJECT_VERSION_NUMBER | BudgetPoolPEOObjectVersionNumber | ✅ |
+| ORDER_NUM | BudgetPoolPEOOrderNum | ✅ |
+| OVER_ALLOCATE_TOLERANCE | BudgetPoolPEOOverAllocateTolerance | ✅ |
+| OVER_BUDGET_TOLERANCE | BudgetPoolPEOOverBudgetTolerance | ✅ |
+| PLAN_ID | BudgetPoolPEOPlanId | ✅ |
+| POOL_ID | PoolId | ✅ |
+| PREVENT_OVER_ALLOCATE_FLAG | BudgetPoolPEOPreventOverAllocateFlag | ✅ |
+| PREVENT_OVER_BUDGET_FLAG | BudgetPoolPEOPreventOverBudgetFlag | ✅ |
+| PRIMARY_COMPONENT_ID | BudgetPoolPEOPrimaryComponentId | ✅ |
+| SYSTEM_ORDER_NUM | BudgetPoolPEOSystemOrderNum | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — CMP_BUDGET_POOLS_B](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/cmpbudgetpoolsb.html)

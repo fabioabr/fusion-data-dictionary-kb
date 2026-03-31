@@ -117,3 +117,29 @@ ORDER BY es.INTERACTION_DATE DESC;
 
 - [Oracle Docs — WLF_EVENT_SOCIAL](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/wlfeventsocial.html)
 - [[hcm-module-data-dictionary]] — Dossiê do módulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[eventsocialpvo|EventSocialPVO]] (HCM · BICC: 6/17)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| COMMENTS | EventSocialPEOComments | ✅ |
+| CREATED_BY | EventSocialPEOCreatedBy | — |
+| CREATION_DATE | EventSocialPEOCreationDate | — |
+| DATA | EventSocialPEOData | — |
+| ENTERPRISE_ID | EventSocialPEOEnterpriseId | — |
+| EVENT_ID | EventSocialPEOEventId | — |
+| EVENT_SOCIAL_ID | EventSocialPEOEventSocialId | ✅ |
+| LAST_UPDATE_DATE | EventSocialPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | EventSocialPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | EventSocialPEOLastUpdatedBy | — |
+| LATEST_SOCIAL_INTERACTION_ID | EventSocialPEOLatestSocialInteractionId | — |
+| OBJECT_ID | EventSocialPEOObjectId | — |
+| OBJECT_TYPE | EventSocialPEOObjectType | — |
+| OBJECT_VERSION_NUMBER | EventSocialPEOObjectVersionNumber | — |
+| RATING | EventSocialPEORating | ✅ |
+| RATING_DATE | EventSocialPEORatingDate | ✅ |
+| STATUS | EventSocialPEOStatus | ✅ |

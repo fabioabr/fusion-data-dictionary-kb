@@ -80,6 +80,60 @@ SELECT b.BUCKET_NAME,
 - Alterações nas faixas afetam todos os relatórios de aging que as utilizam.
 - É recomendável não desativar buckets que estejam em uso por relatórios agendados.
 
+## 🔗 PVOs Relacionados
+
+### [[agingbucketlinesbasepvo|AgingBucketLinesBasePVO]] (OTHER · BICC: 4/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| AGING_BUCKET_ID | AgingBucketsAgingBucketId | — |
+| AGING_TYPE | AgingBucketsAgingType | ✅ |
+| BUCKET_NAME | AgingBucketsBucketName | ✅ |
+| CREATED_BY | AgingBucketsCreatedBy | — |
+| CREATION_DATE | AgingBucketsCreationDate | — |
+| DESCRIPTION | AgingBucketsDescription | — |
+| LAST_UPDATE_DATE | AgingBucketsLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | AgingBucketsLastUpdateLogin | — |
+| LAST_UPDATED_BY | AgingBucketsLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | AgingBucketsObjectVersionNumber | — |
+| SET_ID | AgingBucketsSetId | — |
+| STATUS | AgingBucketsStatus | ✅ |
+
+### [[agingbucketsextractpvo|AgingBucketsExtractPVO]] (OTHER · BICC: 12/28)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| AGING_BUCKET_ID | ArAgingBucketsAgingBucketId | ✅ |
+| AGING_TYPE | ArAgingBucketsAgingType | ✅ |
+| ATTRIBUTE1 | ArAgingBucketsAttribute1 | — |
+| ATTRIBUTE10 | ArAgingBucketsAttribute10 | — |
+| ATTRIBUTE11 | ArAgingBucketsAttribute11 | — |
+| ATTRIBUTE12 | ArAgingBucketsAttribute12 | — |
+| ATTRIBUTE13 | ArAgingBucketsAttribute13 | — |
+| ATTRIBUTE14 | ArAgingBucketsAttribute14 | — |
+| ATTRIBUTE15 | ArAgingBucketsAttribute15 | — |
+| ATTRIBUTE2 | ArAgingBucketsAttribute2 | — |
+| ATTRIBUTE3 | ArAgingBucketsAttribute3 | — |
+| ATTRIBUTE4 | ArAgingBucketsAttribute4 | — |
+| ATTRIBUTE5 | ArAgingBucketsAttribute5 | — |
+| ATTRIBUTE6 | ArAgingBucketsAttribute6 | — |
+| ATTRIBUTE7 | ArAgingBucketsAttribute7 | — |
+| ATTRIBUTE8 | ArAgingBucketsAttribute8 | — |
+| ATTRIBUTE9 | ArAgingBucketsAttribute9 | — |
+| ATTRIBUTE_CATEGORY | ArAgingBucketsAttributeCategory | — |
+| BUCKET_NAME | ArAgingBucketsBucketName | ✅ |
+| CREATED_BY | ArAgingBucketsCreatedBy | ✅ |
+| CREATION_DATE | ArAgingBucketsCreationDate | ✅ |
+| DESCRIPTION | ArAgingBucketsDescription | ✅ |
+| LAST_UPDATE_DATE | ArAgingBucketsLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ArAgingBucketsLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | ArAgingBucketsLastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | ArAgingBucketsObjectVersionNumber | ✅ |
+| SET_ID | ArAgingBucketsSetId | ✅ |
+| STATUS | ArAgingBucketsStatus | ✅ |
+
+---
+
 ## 📚 Referências
 
 - Oracle Fusion Cloud Financials — Accounts Receivable Tables (OEDMF Release 13).

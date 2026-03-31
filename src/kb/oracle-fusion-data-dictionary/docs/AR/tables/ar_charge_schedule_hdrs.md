@@ -81,6 +81,44 @@ SELECT csh.SCHEDULE_HEADER_ID,
 - O `SCHEDULE_HEADER_TYPE` determina como os valores nas linhas devem ser interpretados (percentual vs. valor fixo).
 - Não é recomendável excluir cabeçalhos que já foram utilizados em cálculos históricos; prefira inativar.
 
+## 🔗 PVOs Relacionados
+
+### [[chargeschedulehdrextractpvo|ChargeScheduleHDRExtractPVO]] (OTHER · BICC: 13/29)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| AGING_BUCKET_ID | ArChargeScheduleHDRAgingBucketId | ✅ |
+| ATTRIBUTE1 | ArChargeScheduleHDRAttribute1 | — |
+| ATTRIBUTE10 | ArChargeScheduleHDRAttribute10 | — |
+| ATTRIBUTE11 | ArChargeScheduleHDRAttribute11 | — |
+| ATTRIBUTE12 | ArChargeScheduleHDRAttribute12 | — |
+| ATTRIBUTE13 | ArChargeScheduleHDRAttribute13 | — |
+| ATTRIBUTE14 | ArChargeScheduleHDRAttribute14 | — |
+| ATTRIBUTE15 | ArChargeScheduleHDRAttribute15 | — |
+| ATTRIBUTE2 | ArChargeScheduleHDRAttribute2 | — |
+| ATTRIBUTE3 | ArChargeScheduleHDRAttribute3 | — |
+| ATTRIBUTE4 | ArChargeScheduleHDRAttribute4 | — |
+| ATTRIBUTE5 | ArChargeScheduleHDRAttribute5 | — |
+| ATTRIBUTE6 | ArChargeScheduleHDRAttribute6 | — |
+| ATTRIBUTE7 | ArChargeScheduleHDRAttribute7 | — |
+| ATTRIBUTE8 | ArChargeScheduleHDRAttribute8 | — |
+| ATTRIBUTE9 | ArChargeScheduleHDRAttribute9 | — |
+| ATTRIBUTE_CATEGORY | ArChargeScheduleHDRAttributeCategory | — |
+| CREATED_BY | ArChargeScheduleHDRCreatedBy | ✅ |
+| CREATION_DATE | ArChargeScheduleHDRCreationDate | ✅ |
+| END_DATE | ArChargeScheduleHDREndDate | ✅ |
+| LAST_UPDATE_DATE | ArChargeScheduleHDRLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ArChargeScheduleHDRLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | ArChargeScheduleHDRLastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | ArChargeScheduleHDRObjectVersionNumber | ✅ |
+| SCHEDULE_HEADER_ID | ArChargeScheduleHDRScheduleHeaderId | ✅ |
+| SCHEDULE_HEADER_TYPE | ArChargeScheduleHDRScheduleHeaderType | ✅ |
+| SCHEDULE_ID | ArChargeScheduleHDRScheduleId | ✅ |
+| START_DATE | ArChargeScheduleHDRStartDate | ✅ |
+| STATUS | ArChargeScheduleHDRStatus | ✅ |
+
+---
+
 ## 📚 Referências
 
 - Oracle Fusion Cloud Financials — Accounts Receivable Tables (OEDMF Release 13).

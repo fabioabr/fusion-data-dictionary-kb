@@ -93,6 +93,55 @@ SELECT tl.standard_text_id,
 - O campo `TEXT` pode conter **variáveis de substituição** — as mesmas variáveis da tabela base [[ar_standard_text_b]] devem ser mantidas nas traduções.
 - Em migrações, carregar **ambas as tabelas** (`_B` e `_TL`) para garantir integridade multilíngue.
 
+## 🔗 PVOs Relacionados
+
+### [[customerprofile|CustomerProfile]] (AR · BICC: 2/10)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | StdTextTransTLCreatedBy | — |
+| CREATION_DATE | StdTextTransTLCreationDate | — |
+| LANGUAGE | StdTextTransTLLanguage | — |
+| LAST_UPDATE_DATE | StdTextTransTLLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | StdTextTransTLLastUpdateLogin | — |
+| LAST_UPDATED_BY | StdTextTransTLLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | StdTextTransTLObjectVersionNumber | — |
+| SOURCE_LANG | StdTextTransTLSourceLang | — |
+| STANDARD_TEXT_ID | StdTextTransTLStandardTextId | — |
+| TEXT | StdTextTransTLText | ✅ |
+
+### [[customersiteprofile|CustomerSiteProfile]] (AR · BICC: 2/10)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | StdTextTransTLCreatedBy | — |
+| CREATION_DATE | StdTextTransTLCreationDate | — |
+| LANGUAGE | StdTextTransTLLanguage | — |
+| LAST_UPDATE_DATE | StdTextTransTLLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | StdTextTransTLLastUpdateLogin | — |
+| LAST_UPDATED_BY | StdTextTransTLLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | StdTextTransTLObjectVersionNumber | — |
+| SOURCE_LANG | StdTextTransTLSourceLang | — |
+| STANDARD_TEXT_ID | StdTextTransTLStandardTextId | — |
+| TEXT | StdTextTransTLText | ✅ |
+
+### [[standardtexttranslationextractpvo|StandardTextTranslationExtractPVO]] (OTHER · BICC: 10/10)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | ArStandardTextTLCreatedBy | ✅ |
+| CREATION_DATE | ArStandardTextTLCreationDate | ✅ |
+| LANGUAGE | ArStandardTextTLLanguage | ✅ |
+| LAST_UPDATE_DATE | ArStandardTextTLLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ArStandardTextTLLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | ArStandardTextTLLastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | ArStandardTextTLObjectVersionNumber | ✅ |
+| SOURCE_LANG | ArStandardTextTLSourceLang | ✅ |
+| STANDARD_TEXT_ID | ArStandardTextTLStandardTextId | ✅ |
+| TEXT | ArStandardTextTLText | ✅ |
+
+---
+
 ## 📚 Referências
 
 - Oracle Fusion Cloud Financials — Accounts Receivable Tables (OEDMF Release 13)

@@ -98,6 +98,85 @@ SELECT sct.name AS tipo_credito,
 - A tabela é **compartilhada** entre todas as BUs (não particionada por ORG_ID).
 - O tipo `R` (Revenue) é o padrão seeded pelo Oracle na instalação. Tipos adicionais podem ser criados conforme necessidade.
 
+## 🔗 PVOs Relacionados
+
+### [[salescreditp|SalesCreditP]] (OTHER · BICC: 5/5)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| DESCRIPTION | SalesCreditTypePEODescription | ✅ |
+| ENABLED_FLAG | SalesCreditTypePEOEnabledFlag | ✅ |
+| NAME | SalesCreditTypePEOName | ✅ |
+| QUOTA_FLAG | SalesCreditTypePEOQuotaFlag | ✅ |
+| SALES_CREDIT_TYPE_ID | SalesCreditTypeSalesCreditTypeId | ✅ |
+
+### [[salescredittypeextractpvo|SalesCreditTypeExtractPVO]] (OTHER · BICC: 12/28)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ATTRIBUTE1 | ArSalesCreditTypeAttribute1 | — |
+| ATTRIBUTE10 | ArSalesCreditTypeAttribute10 | — |
+| ATTRIBUTE11 | ArSalesCreditTypeAttribute11 | — |
+| ATTRIBUTE12 | ArSalesCreditTypeAttribute12 | — |
+| ATTRIBUTE13 | ArSalesCreditTypeAttribute13 | — |
+| ATTRIBUTE14 | ArSalesCreditTypeAttribute14 | — |
+| ATTRIBUTE15 | ArSalesCreditTypeAttribute15 | — |
+| ATTRIBUTE2 | ArSalesCreditTypeAttribute2 | — |
+| ATTRIBUTE3 | ArSalesCreditTypeAttribute3 | — |
+| ATTRIBUTE4 | ArSalesCreditTypeAttribute4 | — |
+| ATTRIBUTE5 | ArSalesCreditTypeAttribute5 | — |
+| ATTRIBUTE6 | ArSalesCreditTypeAttribute6 | — |
+| ATTRIBUTE7 | ArSalesCreditTypeAttribute7 | — |
+| ATTRIBUTE8 | ArSalesCreditTypeAttribute8 | — |
+| ATTRIBUTE9 | ArSalesCreditTypeAttribute9 | — |
+| ATTRIBUTE_CATEGORY | ArSalesCreditTypeAttributeCategory | — |
+| CREATED_BY | ArSalesCreditTypeCreatedBy | ✅ |
+| CREATION_DATE | ArSalesCreditTypeCreationDate | ✅ |
+| DESCRIPTION | ArSalesCreditTypeDescription | ✅ |
+| LAST_UPDATE_DATE | ArSalesCreditTypeLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ArSalesCreditTypeLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | ArSalesCreditTypeLastUpdatedBy | ✅ |
+| MODULE_ID | ArSalesCreditTypeModuleId | ✅ |
+| NAME | ArSalesCreditTypeName | ✅ |
+| OBJECT_VERSION_NUMBER | ArSalesCreditTypeObjectVersionNumber | ✅ |
+| QUOTA_FLAG | ArSalesCreditTypeQuotaFlag | ✅ |
+| SALES_CREDIT_TYPE_ID | ArSalesCreditTypeSalesCreditTypeId | ✅ |
+| SEED_DATA_SOURCE | ArSalesCreditTypeSeedDataSource | ✅ |
+
+### [[salesrep|SalesRep]] (OTHER · BICC: 1/27)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ATTRIBUTE1 | Attribute1 | — |
+| ATTRIBUTE10 | Attribute10 | — |
+| ATTRIBUTE11 | Attribute11 | — |
+| ATTRIBUTE12 | Attribute12 | — |
+| ATTRIBUTE13 | Attribute13 | — |
+| ATTRIBUTE14 | Attribute14 | — |
+| ATTRIBUTE15 | Attribute15 | — |
+| ATTRIBUTE2 | Attribute2 | — |
+| ATTRIBUTE3 | Attribute3 | — |
+| ATTRIBUTE4 | Attribute4 | — |
+| ATTRIBUTE5 | Attribute5 | — |
+| ATTRIBUTE6 | Attribute6 | — |
+| ATTRIBUTE7 | Attribute7 | — |
+| ATTRIBUTE8 | Attribute8 | — |
+| ATTRIBUTE9 | Attribute9 | — |
+| CONTEXT | Context | — |
+| CREATED_BY | SCTPEOCreatedBy | — |
+| CREATION_DATE | SCTPEOCreationDate | — |
+| DESCRIPTION | Description | — |
+| ENABLED_FLAG | EnabledFlag | — |
+| LAST_UPDATE_DATE | SCTPEOLastUpdateDate | — |
+| LAST_UPDATE_LOGIN | SCTPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | SCTPEOLastUpdatedBy | — |
+| NAME | SalesCreditTypeName | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | — |
+| QUOTA_FLAG | QuotaFlag | — |
+| SALES_CREDIT_TYPE_ID | SCTPEOSalesCreditTypeId | — |
+
+---
+
 ## 📚 Referências
 
 - Oracle Fusion Cloud Financials — Accounts Receivable Tables (OEDMF Release 13)

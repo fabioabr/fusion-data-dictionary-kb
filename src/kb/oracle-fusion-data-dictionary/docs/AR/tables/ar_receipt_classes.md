@@ -105,6 +105,98 @@ SELECT name,
 - O `CREATION_STATUS` determina em qual estado contábil o receipt é criado — essencial para automação via lockbox.
 - Esta tabela **não é particionada por ORG_ID** — classes são compartilhadas entre Business Units.
 
+## 🔗 PVOs Relacionados
+
+### [[receiptmethodextractpvo|ReceiptMethodExtractPVO]] (OTHER · BICC: 15/62)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ATTRIBUTE1 | ArReceiptClassAttribute1 | — |
+| ATTRIBUTE10 | ArReceiptClassAttribute10 | — |
+| ATTRIBUTE11 | ArReceiptClassAttribute11 | — |
+| ATTRIBUTE12 | ArReceiptClassAttribute12 | — |
+| ATTRIBUTE13 | ArReceiptClassAttribute13 | — |
+| ATTRIBUTE14 | ArReceiptClassAttribute14 | — |
+| ATTRIBUTE15 | ArReceiptClassAttribute15 | — |
+| ATTRIBUTE2 | ArReceiptClassAttribute2 | — |
+| ATTRIBUTE3 | ArReceiptClassAttribute3 | — |
+| ATTRIBUTE4 | ArReceiptClassAttribute4 | — |
+| ATTRIBUTE5 | ArReceiptClassAttribute5 | — |
+| ATTRIBUTE6 | ArReceiptClassAttribute6 | — |
+| ATTRIBUTE7 | ArReceiptClassAttribute7 | — |
+| ATTRIBUTE8 | ArReceiptClassAttribute8 | — |
+| ATTRIBUTE9 | ArReceiptClassAttribute9 | — |
+| ATTRIBUTE_CATEGORY | ArReceiptClassAttributeCategory | — |
+| BILL_OF_EXCHANGE_FLAG | ArReceiptClassBillOfExchangeFlag | ✅ |
+| CLEAR_FLAG | ArReceiptClassClearFlag | ✅ |
+| CONFIRM_FLAG | ArReceiptClassConfirmFlag | ✅ |
+| CREATED_BY | ArReceiptClassCreatedBy | ✅ |
+| CREATION_DATE | ArReceiptClassCreationDate | ✅ |
+| CREATION_METHOD_CODE | ArReceiptClassCreationMethodCode | ✅ |
+| CREATION_STATUS | ArReceiptClassCreationStatus | ✅ |
+| GLOBAL_ATTRIBUTE1 | ArReceiptClassGlobalAttribute1 | — |
+| GLOBAL_ATTRIBUTE10 | ArReceiptClassGlobalAttribute10 | — |
+| GLOBAL_ATTRIBUTE11 | ArReceiptClassGlobalAttribute11 | — |
+| GLOBAL_ATTRIBUTE12 | ArReceiptClassGlobalAttribute12 | — |
+| GLOBAL_ATTRIBUTE13 | ArReceiptClassGlobalAttribute13 | — |
+| GLOBAL_ATTRIBUTE14 | ArReceiptClassGlobalAttribute14 | — |
+| GLOBAL_ATTRIBUTE15 | ArReceiptClassGlobalAttribute15 | — |
+| GLOBAL_ATTRIBUTE16 | ArReceiptClassGlobalAttribute16 | — |
+| GLOBAL_ATTRIBUTE17 | ArReceiptClassGlobalAttribute17 | — |
+| GLOBAL_ATTRIBUTE18 | ArReceiptClassGlobalAttribute18 | — |
+| GLOBAL_ATTRIBUTE19 | ArReceiptClassGlobalAttribute19 | — |
+| GLOBAL_ATTRIBUTE2 | ArReceiptClassGlobalAttribute2 | — |
+| GLOBAL_ATTRIBUTE20 | ArReceiptClassGlobalAttribute20 | — |
+| GLOBAL_ATTRIBUTE3 | ArReceiptClassGlobalAttribute3 | — |
+| GLOBAL_ATTRIBUTE4 | ArReceiptClassGlobalAttribute4 | — |
+| GLOBAL_ATTRIBUTE5 | ArReceiptClassGlobalAttribute5 | — |
+| GLOBAL_ATTRIBUTE6 | ArReceiptClassGlobalAttribute6 | — |
+| GLOBAL_ATTRIBUTE7 | ArReceiptClassGlobalAttribute7 | — |
+| GLOBAL_ATTRIBUTE8 | ArReceiptClassGlobalAttribute8 | — |
+| GLOBAL_ATTRIBUTE9 | ArReceiptClassGlobalAttribute9 | — |
+| GLOBAL_ATTRIBUTE_CATEGORY | ArReceiptClassGlobalAttributeCategory | — |
+| GLOBAL_ATTRIBUTE_DATE1 | ArReceiptClassGlobalAttributeDate1 | — |
+| GLOBAL_ATTRIBUTE_DATE2 | ArReceiptClassGlobalAttributeDate2 | — |
+| GLOBAL_ATTRIBUTE_DATE3 | ArReceiptClassGlobalAttributeDate3 | — |
+| GLOBAL_ATTRIBUTE_DATE4 | ArReceiptClassGlobalAttributeDate4 | — |
+| GLOBAL_ATTRIBUTE_DATE5 | ArReceiptClassGlobalAttributeDate5 | — |
+| GLOBAL_ATTRIBUTE_NUMBER1 | ArReceiptClassGlobalAttributeNumber1 | — |
+| GLOBAL_ATTRIBUTE_NUMBER2 | ArReceiptClassGlobalAttributeNumber2 | — |
+| GLOBAL_ATTRIBUTE_NUMBER3 | ArReceiptClassGlobalAttributeNumber3 | — |
+| GLOBAL_ATTRIBUTE_NUMBER4 | ArReceiptClassGlobalAttributeNumber4 | — |
+| GLOBAL_ATTRIBUTE_NUMBER5 | ArReceiptClassGlobalAttributeNumber5 | — |
+| LAST_UPDATE_DATE | ArReceiptClassLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ArReceiptClassLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | ArReceiptClassLastUpdatedBy | ✅ |
+| NAME | ArReceiptClassName | ✅ |
+| OBJECT_VERSION_NUMBER | ArReceiptClassObjectVersionNumber | ✅ |
+| RECEIPT_CLASS_ID | ArReceiptClassReceiptClassId | ✅ |
+| REMIT_FLAG | ArReceiptClassRemitFlag | ✅ |
+| REMIT_METHOD_CODE | RemitMethodCode | ✅ |
+
+### [[receiptmethodpvo|ReceiptMethodPVO]] (AR · BICC: 5/16)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BILL_OF_EXCHANGE_FLAG | ReceiptClassBillOfExchangeFlag | — |
+| CLEAR_FLAG | ReceiptClassClearFlag | — |
+| CONFIRM_FLAG | ReceiptClassConfirmFlag | — |
+| CREATED_BY | ReceiptClassCreatedBy | — |
+| CREATION_DATE | ReceiptClassCreationDate | — |
+| CREATION_METHOD_CODE | ReceiptClassCreationMethodCode | ✅ |
+| CREATION_STATUS | ReceiptClassCreationStatus | ✅ |
+| LAST_UPDATE_DATE | ReceiptClassLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ReceiptClassLastUpdateLogin | — |
+| LAST_UPDATED_BY | ReceiptClassLastUpdatedBy | — |
+| NAME | ReceiptClassName | ✅ |
+| NOTES_RECEIVABLE | ReceiptClassNotesReceivable | — |
+| OBJECT_VERSION_NUMBER | ReceiptClassObjectVersionNumber | — |
+| RECEIPT_CLASS_ID | ReceiptClassReceiptClassId | ✅ |
+| REMIT_FLAG | ReceiptClassRemitFlag | — |
+| REMIT_METHOD_CODE | ReceiptClassRemitMethodCode | — |
+
+---
+
 ## 📚 Referências
 
 - Oracle Fusion Cloud Financials — Accounts Receivable Tables (OEDMF Release 13)

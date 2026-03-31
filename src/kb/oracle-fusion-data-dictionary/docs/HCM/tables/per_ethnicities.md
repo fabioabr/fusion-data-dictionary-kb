@@ -104,6 +104,46 @@ WHERE  pe.PERSON_ID = :p_person_id;
 - Utilizada na declaração RAIS obrigatória no Brasil.
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[personethinicitypvo|PersonEthinicityPVO]] (HCM · BICC: 13/13)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | EthnicityPEOBusinessGroupId | ✅ |
+| CREATED_BY | EthnicityPEOCreatedBy | ✅ |
+| CREATION_DATE | EthnicityPEOCreationDate | ✅ |
+| DECLARER_ID | EthnicityPEODeclarerId | ✅ |
+| ETHNICITY | EthnicityPEOEthnicity | ✅ |
+| ETHNICITY_ID | EthnicityId | ✅ |
+| LAST_UPDATE_DATE | EthnicityPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | EthnicityPEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | EthnicityPEOLastUpdatedBy | ✅ |
+| LEGISLATION_CODE | EthnicityPEOLegislationCode | ✅ |
+| OBJECT_VERSION_NUMBER | EthnicityPEOObjectVersionNumber | ✅ |
+| PERSON_ID | EthnicityPEOPersonId | ✅ |
+| PRIMARY_FLAG | EthnicityPEOPrimaryFlag | ✅ |
+
+### [[personethinicitypvoviewall|PersonEthinicityPVOViewAll]] (HCM · BICC: 9/13)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | EthnicityPEOBusinessGroupId | — |
+| CREATED_BY | EthnicityPEOCreatedBy | ✅ |
+| CREATION_DATE | EthnicityPEOCreationDate | ✅ |
+| DECLARER_ID | EthnicityPEODeclarerId | — |
+| ETHNICITY | EthnicityPEOEthnicity | ✅ |
+| ETHNICITY_ID | EthnicityId | ✅ |
+| LAST_UPDATE_DATE | EthnicityPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | EthnicityPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | EthnicityPEOLastUpdatedBy | ✅ |
+| LEGISLATION_CODE | EthnicityPEOLegislationCode | ✅ |
+| OBJECT_VERSION_NUMBER | EthnicityPEOObjectVersionNumber | — |
+| PERSON_ID | EthnicityPEOPersonId | ✅ |
+| PRIMARY_FLAG | EthnicityPEOPrimaryFlag | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — PER_ETHNICITIES](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/perethnicities.html)

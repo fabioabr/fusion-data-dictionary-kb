@@ -109,3 +109,40 @@ WHERE  pt.ACTIVE_FLAG = 'Y';
 
 - [Oracle Docs — PER_PERSON_TYPES](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/perpersontypes.html)
 - [[hcm-module-data-dictionary]] — Dossiê do módulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[persontypesextractpvo|PersonTypesExtractPVO]] (HCM · BICC: 12/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTIVE_FLAG | ActiveFlag | ✅ |
+| BUSINESS_GROUP_ID | BusinessGroupId | ✅ |
+| CREATED_BY | CreatedBy | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| DEFAULT_FLAG | DefaultFlag | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | LastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | ✅ |
+| PERSON_TYPE_ID | PersonTypeId | ✅ |
+| SEEDED_PERSON_TYPE_KEY | SeededPersonTypeKey | ✅ |
+| SYSTEM_PERSON_TYPE | SystemPersonType | ✅ |
+
+### [[persontypespvo|PersonTypesPVO]] (HCM · BICC: 8/11)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTIVE_FLAG | PersonTypesPEOActiveFlag | ✅ |
+| BUSINESS_GROUP_ID | PersonTypesPEOBusinessGroupId | — |
+| CREATED_BY | PersonTypesPEOCreatedBy | ✅ |
+| CREATION_DATE | PersonTypesPEOCreationDate | ✅ |
+| DEFAULT_FLAG | PersonTypesPEODefaultFlag | ✅ |
+| LAST_UPDATE_DATE | PersonTypesPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | PersonTypesPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | PersonTypesPEOLastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | PersonTypesPEOObjectVersionNumber | — |
+| PERSON_TYPE_ID | PersonTypeId | ✅ |
+| SYSTEM_PERSON_TYPE | PersonTypesPEOSystemPersonType | ✅ |

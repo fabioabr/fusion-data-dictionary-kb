@@ -97,6 +97,102 @@ SELECT rs.name AS conjunto,
 - Inativar um conjunto (`STATUS = 'I'`) desabilita todas as regras de exceção associadas.
 - A tabela é relativamente simples — o comportamento complexo está nas regras filhas.
 
+## 🔗 PVOs Relacionados
+
+### [[applicationrulesetextractpvo|ApplicationRuleSetExtractPVO]] (OTHER · BICC: 13/29)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ATTRIBUTE1 | ArAppRuleSetAttribute1 | — |
+| ATTRIBUTE10 | ArAppRuleSetAttribute10 | — |
+| ATTRIBUTE11 | ArAppRuleSetAttribute11 | — |
+| ATTRIBUTE12 | ArAppRuleSetAttribute12 | — |
+| ATTRIBUTE13 | ArAppRuleSetAttribute13 | — |
+| ATTRIBUTE14 | ArAppRuleSetAttribute14 | — |
+| ATTRIBUTE15 | ArAppRuleSetAttribute15 | — |
+| ATTRIBUTE2 | ArAppRuleSetAttribute2 | — |
+| ATTRIBUTE3 | ArAppRuleSetAttribute3 | — |
+| ATTRIBUTE4 | ArAppRuleSetAttribute4 | — |
+| ATTRIBUTE5 | ArAppRuleSetAttribute5 | — |
+| ATTRIBUTE6 | ArAppRuleSetAttribute6 | — |
+| ATTRIBUTE7 | ArAppRuleSetAttribute7 | — |
+| ATTRIBUTE8 | ArAppRuleSetAttribute8 | — |
+| ATTRIBUTE9 | ArAppRuleSetAttribute9 | — |
+| ATTRIBUTE_CATEGORY | ArAppRuleSetAttributeCategory | — |
+| CREATED_BY | ArAppRuleSetCreatedBy | ✅ |
+| CREATION_DATE | ArAppRuleSetCreationDate | ✅ |
+| DESCRIPTION | ArAppRuleSetDescription | ✅ |
+| FREEZE_FLAG | ArAppRuleSetFreezeFlag | ✅ |
+| LAST_UPDATE_DATE | ArAppRuleSetLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ArAppRuleSetLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | ArAppRuleSetLastUpdatedBy | ✅ |
+| MODULE_ID | ArAppRuleSetModuleId | ✅ |
+| OBJECT_VERSION_NUMBER | ArAppRuleSetObjectVersionNumber | ✅ |
+| RULE_SET_ID | ArAppRuleSetRuleSetId | ✅ |
+| RULE_SET_NAME | ArAppRuleSetRuleSetName | ✅ |
+| RULE_SOURCE | ArAppRuleSetRuleSource | ✅ |
+| SEED_DATA_SOURCE | ArAppRuleSetSeedDataSource | ✅ |
+
+### [[creditmemoapplicationdistributionpvo|CreditMemoApplicationDistributionPVO]] (AR · BICC: 1/3)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| DESCRIPTION | AppRuleSetDescription | — |
+| RULE_SET_ID | AppRuleSetRuleSetId | — |
+| RULE_SET_NAME | AppRuleSetRuleSetName | ✅ |
+
+### [[creditmemoapplicationpvo|CreditMemoApplicationPVO]] (AR · BICC: 1/6)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| DESCRIPTION | AppRuleSetDescription | — |
+| FREEZE_FLAG | AppRuleSetFreezeFlag | — |
+| MODULE_ID | AppRuleSetModuleId | — |
+| RULE_SET_ID | AppRuleSetRuleSetId | — |
+| RULE_SET_NAME | AppRuleSetRuleSetName | ✅ |
+| RULE_SOURCE | AppRuleSetRuleSource | — |
+
+### [[receiptapplicationdistributionpvo|ReceiptApplicationDistributionPVO]] (AR)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| DESCRIPTION | AppRuleSetDescription | — |
+| FREEZE_FLAG | AppRuleSetFreezeFlag | — |
+| MODULE_ID | AppRuleSetModuleId | — |
+| RULE_SET_ID | AppRuleSetRuleSetId | — |
+| RULE_SET_NAME | AppRuleSetRuleSetName | — |
+| RULE_SOURCE | AppRuleSetRuleSource | — |
+
+### [[receiptapplicationdistributionvc|ReceiptApplicationDistributionVC]] (AR · BICC: 1/6)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| DESCRIPTION | AppRuleSetDescription | — |
+| FREEZE_FLAG | AppRuleSetFreezeFlag | — |
+| MODULE_ID | AppRuleSetModuleId | — |
+| RULE_SET_ID | AppRuleSetRuleSetId | — |
+| RULE_SET_NAME | AppRuleSetRuleSetName | ✅ |
+| RULE_SOURCE | AppRuleSetRuleSource | — |
+
+### [[receiptapplicationpvo|ReceiptApplicationPVO]] (AR · BICC: 2/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | AppRuleSetCreatedBy | — |
+| CREATION_DATE | AppRuleSetCreationDate | — |
+| DESCRIPTION | AppRuleSetDescription | — |
+| FREEZE_FLAG | AppRuleSetFreezeFlag | — |
+| LAST_UPDATE_DATE | AppRuleSetLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | AppRuleSetLastUpdateLogin | — |
+| LAST_UPDATED_BY | AppRuleSetLastUpdatedBy | — |
+| MODULE_ID | AppRuleSetModuleId | — |
+| OBJECT_VERSION_NUMBER | AppRuleSetObjectVersionNumber | — |
+| RULE_SET_ID | AppRuleSetRuleSetId | — |
+| RULE_SET_NAME | AppRuleSetRuleSetName | ✅ |
+| RULE_SOURCE | AppRuleSetRuleSource | — |
+
+---
+
 ## 📚 Referências
 
 - Oracle Fusion Cloud Financials — Accounts Receivable Tables (OEDMF Release 13)

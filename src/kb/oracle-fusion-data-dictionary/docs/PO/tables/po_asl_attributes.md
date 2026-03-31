@@ -38,7 +38,6 @@ updated_at: 2026-03-25
 
 Armazena os **atributos detalhados das entradas ASL**, incluindo lead times, quantidades minimas/maximas e regras de sourcing.
 
-
 ---
 
 ## 🧠 Propósito de Negócio
@@ -99,7 +98,6 @@ FROM   PO_ASL_ATTRIBUTES
 WHERE  ASL_ID = :p_asl_id;
 ```
 
-
 ---
 
 ## 🔒 Observações
@@ -107,6 +105,38 @@ WHERE  ASL_ID = :p_asl_id;
 - Cada ASL pode ter multiplos registros de atributos (um por org).
 - Atributos alimentam MRP/Planning para lead times.
 - O `DOCUMENT_HEADER_ID` referencia Blanket Agreement.
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[purchasingaslextractpvo|PurchasingASLExtractPVO]] (PO · BICC: 9/9)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ASL_ID | AttrAslId | ✅ |
+| CREATED_BY | AttrCreatedBy | ✅ |
+| CREATION_DATE | AttrCreationDate | ✅ |
+| FIXED_LOT_MULTIPLE | FixedLotMultiple | ✅ |
+| LAST_UPDATE_DATE | AttrLastUpdateDate | ✅ |
+| LAST_UPDATED_BY | AttrLastUpdatedBy | ✅ |
+| MIN_ORDER_QTY | MinOrderQty | ✅ |
+| UOM_CODE | UomCode | ✅ |
+| USING_ORGANIZATION_ID | AttrUsingOrganizationId | ✅ |
+
+### [[purchasingaslpvo|PurchasingASLPVO]] (PO · BICC: 9/9)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ASL_ID | AttrAslId | ✅ |
+| CREATED_BY | AttrCreatedBy | ✅ |
+| CREATION_DATE | AttrCreationDate | ✅ |
+| FIXED_LOT_MULTIPLE | FixedLotMultiple | ✅ |
+| LAST_UPDATE_DATE | AttrLastUpdateDate | ✅ |
+| LAST_UPDATED_BY | AttrLastUpdatedBy | ✅ |
+| MIN_ORDER_QTY | MinOrderQty | ✅ |
+| UOM_CODE | UomCode | ✅ |
+| USING_ORGANIZATION_ID | AttrUsingOrganizationId | ✅ |
 
 ---
 

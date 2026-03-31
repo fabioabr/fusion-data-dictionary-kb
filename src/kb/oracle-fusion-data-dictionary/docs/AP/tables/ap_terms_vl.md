@@ -97,3 +97,26 @@ SELECT tv.TERM_ID,
 - Oracle Fusion Cloud Financials — Accounts Payable Tables (OEDMF Release 13).
 - Oracle Fusion Cloud — Multi-Language Support (MLS) Architecture.
 - Oracle Fusion Cloud ERP Schema Reference (Release 25A).
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[paymenttermlinepvo|PaymentTermLinePVO]] (AP · BICC: 6/14)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | PaymentTermHeaderCreatedBy | ✅ |
+| CREATION_DATE | PaymentTermHeaderCreationDate | ✅ |
+| DESCRIPTION | PaymentTermHeaderDescription | — |
+| DUE_CUTOFF_DAY | PaymentTermHeaderDueCutoffDay | — |
+| ENABLED_FLAG | PaymentTermHeaderEnabledFlag | ✅ |
+| END_DATE_ACTIVE | PaymentTermHeaderEndDateActive | — |
+| LAST_UPDATE_DATE | PaymentTermHeaderLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | PaymentTermHeaderLastUpdateLogin | — |
+| LAST_UPDATED_BY | PaymentTermHeaderLastUpdatedBy | ✅ |
+| NAME | PaymentTermHeaderName | — |
+| RANK | PaymentTermHeaderRank | — |
+| START_DATE_ACTIVE | PaymentTermHeaderStartDateActive | — |
+| TERM_ID | PaymentTermHeaderTermId | ✅ |
+| TYPE | PaymentTermHeaderType | — |

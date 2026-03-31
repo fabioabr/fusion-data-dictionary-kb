@@ -84,6 +84,56 @@ SELECT rtl.REMIT_TO_LOC_ID,
 - Alterações no endereço de remessa afetam apenas novas faturas; faturas já emitidas mantêm o endereço original.
 - Filtrar sempre por `ORG_ID` para garantir contexto correto de business unit.
 
+## 🔗 PVOs Relacionados
+
+### [[remittolocationextractpvo|RemitToLocationExtractPVO]] (OTHER · BICC: 10/41)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ADDRESS_LOC_SEQ_ID | ArRemitToLocAddressLocSeqId | ✅ |
+| CREATED_BY | ArRemitToLocCreatedBy | ✅ |
+| CREATION_DATE | ArRemitToLocCreationDate | ✅ |
+| GLOBAL_ATTRIBUTE1 | ArRemitToLocGlobalAttribute1 | — |
+| GLOBAL_ATTRIBUTE10 | ArRemitToLocGlobalAttribute10 | — |
+| GLOBAL_ATTRIBUTE11 | ArRemitToLocGlobalAttribute11 | — |
+| GLOBAL_ATTRIBUTE12 | ArRemitToLocGlobalAttribute12 | — |
+| GLOBAL_ATTRIBUTE13 | ArRemitToLocGlobalAttribute13 | — |
+| GLOBAL_ATTRIBUTE14 | ArRemitToLocGlobalAttribute14 | — |
+| GLOBAL_ATTRIBUTE15 | ArRemitToLocGlobalAttribute15 | — |
+| GLOBAL_ATTRIBUTE16 | ArRemitToLocGlobalAttribute16 | — |
+| GLOBAL_ATTRIBUTE17 | ArRemitToLocGlobalAttribute17 | — |
+| GLOBAL_ATTRIBUTE18 | ArRemitToLocGlobalAttribute18 | — |
+| GLOBAL_ATTRIBUTE19 | ArRemitToLocGlobalAttribute19 | — |
+| GLOBAL_ATTRIBUTE2 | ArRemitToLocGlobalAttribute2 | — |
+| GLOBAL_ATTRIBUTE20 | ArRemitToLocGlobalAttribute20 | — |
+| GLOBAL_ATTRIBUTE3 | ArRemitToLocGlobalAttribute3 | — |
+| GLOBAL_ATTRIBUTE4 | ArRemitToLocGlobalAttribute4 | — |
+| GLOBAL_ATTRIBUTE5 | ArRemitToLocGlobalAttribute5 | — |
+| GLOBAL_ATTRIBUTE6 | ArRemitToLocGlobalAttribute6 | — |
+| GLOBAL_ATTRIBUTE7 | ArRemitToLocGlobalAttribute7 | — |
+| GLOBAL_ATTRIBUTE8 | ArRemitToLocGlobalAttribute8 | — |
+| GLOBAL_ATTRIBUTE9 | ArRemitToLocGlobalAttribute9 | — |
+| GLOBAL_ATTRIBUTE_CATEGORY | ArRemitToLocGlobalAttributeCategory | — |
+| GLOBAL_ATTRIBUTE_DATE1 | ArRemitToLocGlobalAttributeDate1 | — |
+| GLOBAL_ATTRIBUTE_DATE2 | ArRemitToLocGlobalAttributeDate2 | — |
+| GLOBAL_ATTRIBUTE_DATE3 | ArRemitToLocGlobalAttributeDate3 | — |
+| GLOBAL_ATTRIBUTE_DATE4 | ArRemitToLocGlobalAttributeDate4 | — |
+| GLOBAL_ATTRIBUTE_DATE5 | ArRemitToLocGlobalAttributeDate5 | — |
+| GLOBAL_ATTRIBUTE_NUMBER1 | ArRemitToLocGlobalAttributeNumber1 | — |
+| GLOBAL_ATTRIBUTE_NUMBER2 | ArRemitToLocGlobalAttributeNumber2 | — |
+| GLOBAL_ATTRIBUTE_NUMBER3 | ArRemitToLocGlobalAttributeNumber3 | — |
+| GLOBAL_ATTRIBUTE_NUMBER4 | ArRemitToLocGlobalAttributeNumber4 | — |
+| GLOBAL_ATTRIBUTE_NUMBER5 | ArRemitToLocGlobalAttributeNumber5 | — |
+| LAST_UPDATE_DATE | ArRemitToLocLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ArRemitToLocLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | ArRemitToLocLastUpdatedBy | ✅ |
+| LOCATION_ID | ArRemitToLocLocationId | ✅ |
+| OBJECT_VERSION_NUMBER | ArRemitToLocObjectVersionNumber | ✅ |
+| ORG_ID | ArRemitToLocOrgId | ✅ |
+| SET_ID | ArRemitToLocSetId | ✅ |
+
+---
+
 ## 📚 Referências
 
 - Oracle Fusion Cloud Financials — Accounts Receivable Tables (OEDMF Release 13).

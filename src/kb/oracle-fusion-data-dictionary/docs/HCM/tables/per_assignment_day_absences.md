@@ -105,6 +105,33 @@ ORDER BY pada.ABSENCE_DATE;
 - Integra-se com o calendário de trabalho para ignorar feriados e finais de semana.
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[absenceeventfactpvo|AbsenceEventFactPVO]] (HCM · BICC: 3/18)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ABSENCE_ATTENDANCE_ID | AbsenseDailyBreakUpPEOAbsenceAttendanceId | ✅ |
+| ABSENCE_DATE | AbsenseDailyBreakUpPEOAbsenceDate | — |
+| ABSENCE_DURATION_DAYS | AbsenseDailyBreakUpPEOAbsenceDurationDays | — |
+| ABSENCE_DURATION_HOURS | AbsenseDailyBreakUpPEOAbsenceDurationHours | — |
+| ASG_ABSENCE_RECORDING_ID | AbsenseDailyBreakUpPEOAsgAbsenceRecordingId | — |
+| ASSIGNMENT_DAY_ABSENCE_ID | AssignmentDayAbsenceId | ✅ |
+| ASSIGNMENT_ID | AbsenseDailyBreakUpPEOAssignmentId | — |
+| CALENDAR_EVENT_DURATION | AbsenseDailyBreakUpPEOCalendarEventDuration | — |
+| CREATED_BY | AbsenseDailyBreakUpPEOCreatedBy | — |
+| CREATION_DATE | AbsenseDailyBreakUpPEOCreationDate | — |
+| DAY_TYPE | AbsenseDailyBreakUpPEODayType | — |
+| LAST_UPDATE_DATE | AbsenseDailyBreakUpPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | AbsenseDailyBreakUpPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | AbsenseDailyBreakUpPEOLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | AbsenseDailyBreakUpPEOObjectVersionNumber | — |
+| PERSON_ID | AbsenseDailyBreakUpPEOPersonId | — |
+| SCHEDULE_WORK_DURATION | AbsenseDailyBreakUpPEOScheduleWorkDuration | — |
+| WORK_SCHEDULE_UNIT | AbsenseDailyBreakUpPEOWorkScheduleUnit | — |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — PER_ASSIGNMENT_DAY_ABSENCES](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/perassignmentdayabsences.html)

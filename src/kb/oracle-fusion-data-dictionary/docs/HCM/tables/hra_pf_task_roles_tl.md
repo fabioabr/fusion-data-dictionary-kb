@@ -114,6 +114,43 @@ WHERE  tl.LANGUAGE = USERENV('LANG');
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[processtaskrolepvo|ProcessTaskRolePVO]] (HCM · BICC: 3/6)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | ProcessTaskRoleTransPEOBusinessGroupId | — |
+| LANGUAGE | Language | ✅ |
+| MGR_TASK_NAME | ProcessTaskRoleTransPEOMgrTaskName | ✅ |
+| PROCESS_TASK_ROLE_ID | ProcessTaskRoleTransPEOProcessTaskRoleId | — |
+| SOURCE_LANG | SourceLang | — |
+| WKR_TASK_NAME | ProcessTaskRoleTransPEOWkrTaskName | ✅ |
+
+### [[subtaskstatuspvo|SubTaskStatusPVO]] (HCM · BICC: 3/6)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | ProcessTaskRoleTransPEOBusinessGroupId | — |
+| LANGUAGE | Language | ✅ |
+| MGR_TASK_NAME | ProcessTaskRoleTransPEOMgrTaskName | ✅ |
+| PROCESS_TASK_ROLE_ID | ProcessTaskRoleTransPEOProcessTaskRoleId | — |
+| SOURCE_LANG | SourceLang | — |
+| WKR_TASK_NAME | ProcessTaskRoleTransPEOWkrTaskName | ✅ |
+
+### [[taskstatuspvo|TaskStatusPVO]] (HCM · BICC: 3/6)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | ProcessTaskRoleTransPEOBusinessGroupId | — |
+| LANGUAGE | Language | ✅ |
+| MGR_TASK_NAME | ProcessTaskRoleTransPEOMgrTaskName | ✅ |
+| PROCESS_TASK_ROLE_ID | ProcessTaskRoleTransPEOProcessTaskRoleId | — |
+| SOURCE_LANG | SourceLang | — |
+| WKR_TASK_NAME | ProcessTaskRoleTransPEOWkrTaskName | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — HRA_PF_TASK_ROLES_TL](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/hrapftaskrolestl.html)

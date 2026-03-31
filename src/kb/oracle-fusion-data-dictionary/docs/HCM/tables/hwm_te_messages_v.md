@@ -39,7 +39,6 @@ View que exibe as mensagens de validação, erro e informação associadas a ent
 > [!note] Sufixo _V
 > O sufixo `_V` indica **view** — objeto somente leitura que consolida dados de uma ou mais tabelas para facilitar consultas.
 
-
 ---
 
 ## 🧠 Propósito de Negócio
@@ -101,6 +100,28 @@ WHERE  ROWNUM <= 100
 
 - View somente leitura: não permite INSERT, UPDATE ou DELETE direto.
 - Área funcional: Time Entry dentro do Oracle Fusion Cloud HCM.
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[timeentrymessagepvo|TimeEntryMessagePVO]] (HCM · BICC: 11/13)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| APPLICATION_ID | TimeEntryMessagePEOApplicationId | ✅ |
+| APPLICATION_SHORT_NAME | TimeEntryMessagePEOApplicationShortName | ✅ |
+| CONTEXT | TimeEntryMessagePEOContext | — |
+| CREATED_BY | TimeEntryMessagePEOCreatedBy | ✅ |
+| CREATION_DATE | TimeEntryMessagePEOCreationDate | ✅ |
+| LAST_UPDATE_DATE | TimeEntryMessagePEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | TimeEntryMessagePEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | TimeEntryMessagePEOLastUpdatedBy | ✅ |
+| MESSAGE_LEVEL | TimeEntryMessagePEOMessageLevel | ✅ |
+| MESSAGE_NAME | TimeEntryMessagePEOMessageName | ✅ |
+| MESSAGE_NUMBER | TimeEntryMessagePEOMessageNumber | ✅ |
+| MESSAGE_TEXT | TimeEntryMessagePEOMessageText | ✅ |
+| MESSAGE_USER_DETAILS | TimeEntryMessagePEOMessageUserDetails | — |
 
 ---
 

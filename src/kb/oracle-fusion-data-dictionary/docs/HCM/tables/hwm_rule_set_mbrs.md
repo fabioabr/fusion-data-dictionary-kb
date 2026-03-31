@@ -35,8 +35,6 @@ updated_at: 2026-03-25
 
 Armazena a associação de regras individuais como membros de conjuntos de regras, definindo a composição e ordem de execução dentro de cada conjunto.
 
-
-
 ---
 
 ## 🧠 Propósito de Negócio
@@ -102,6 +100,31 @@ ORDER BY m.SEQUENCE_NUMBER
 ## 🔒 Observações
 
 - Área funcional: Rules Engine dentro do Oracle Fusion Cloud HCM.
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[rulesetmemberpvo|RuleSetMemberPVO]] (GL · BICC: 12/16)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | RuleSetMemberPEOCreatedBy | ✅ |
+| CREATION_DATE | RuleSetMemberPEOCreationDate | ✅ |
+| ENTERPRISE_ID | RuleSetMemberPEOEnterpriseId | — |
+| LAST_UPDATE_DATE | RuleSetMemberPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | RuleSetMemberPEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | RuleSetMemberPEOLastUpdatedBy | ✅ |
+| MBR_CNDL_RULE_ID | RuleSetMemberPEOMbrCndlRuleId | — |
+| MBR_RULE_ID | RuleSetMemberPEOMbrRuleId | ✅ |
+| MBR_RULE_SET_ID | RuleSetMemberPEOMbrRuleSetId | ✅ |
+| MEMBER_TYPE | RuleSetMemberPEOMemberType | ✅ |
+| OBJECT_VERSION_NUMBER | RuleSetMemberPEOObjectVersionNumber | — |
+| PROCESSING_ORDER | RuleSetMemberPEOProcessingOrder | ✅ |
+| RULE_SET_ID | RuleSetMemberPEORuleSetId | ✅ |
+| RULE_SET_MBRS_ID | RuleSetMemberPEORuleSetMbrsId | ✅ |
+| RULE_SET_UNQ_ID | RuleSetMemberPEORuleSetUnqId | — |
+| TCAT_ID | RuleSetMemberPEOTcatId | ✅ |
 
 ---
 

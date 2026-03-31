@@ -111,3 +111,49 @@ WHERE  v.PERSON_ID = :p_person_id;
 
 - [Oracle Docs — HWM_TM_REP_M_PTT_ATRBS_V](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/hwmtmrepmpttatrbsv.html)
 - [[hcm-module-data-dictionary]] — Dossie do modulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[historicprocessedtimeentrypvo|HistoricProcessedTimeEntryPVO]] (HCM · BICC: 1/2)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| PAY_PAYROLL_TIME_TYPE | PayPayrollTimeType | ✅ |
+| PTT_TIME_REPOS_ATRB_ID | PttTimeRepositoryAttributeId | — |
+
+### [[historicreportedtimeentrypvo|HistoricReportedTimeEntryPVO]] (HCM · BICC: 1/2)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| PAY_PAYROLL_TIME_TYPE | PayPayrollTimeType | ✅ |
+| PTT_TIME_REPOS_ATRB_ID | PttTimeRepositoryAttributeId | — |
+
+### [[historicrptabstimeentrypvo|HistoricRptAbsTimeEntryPVO]] (HCM · BICC: 1/2)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| PAY_PAYROLL_TIME_TYPE | MasterPyrTimeTypeAtrbPEOPayPayrollTimeType | ✅ |
+| PTT_TIME_REPOS_ATRB_ID | MasterPyrTimeTypeAtrbPEOPttTimeRepositoryAttributeId | — |
+
+### [[processedtimeentrypvo|ProcessedTimeEntryPVO]] (HCM · BICC: 1/2)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| PAY_PAYROLL_TIME_TYPE | PayPayrollTimeType | ✅ |
+| PTT_TIME_REPOS_ATRB_ID | PttTimeRepositoryAttributeId | — |
+
+### [[reportedtimeentrypvo|ReportedTimeEntryPVO]] (HCM · BICC: 1/2)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| PAY_PAYROLL_TIME_TYPE | PayPayrollTimeType | ✅ |
+| PTT_TIME_REPOS_ATRB_ID | PttTimeRepositoryAttributeId | — |
+
+### [[rptabstimeentrypvo|RptAbsTimeEntryPVO]] (HCM · BICC: 1/2)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| PAY_PAYROLL_TIME_TYPE | MasterPyrTimeTypeAtrbPEOPayPayrollTimeType | ✅ |
+| PTT_TIME_REPOS_ATRB_ID | MasterPyrTimeTypeAtrbPEOPttTimeRepositoryAttributeId | — |

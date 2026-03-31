@@ -104,6 +104,26 @@ WHERE  ea.EVENT_ID = :p_event_id;
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[eventattributepvo|EventAttributePVO]] (GL · BICC: 4/11)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | EventAttributePEOCreatedBy | — |
+| CREATION_DATE | EventAttributePEOCreationDate | — |
+| ENTERPRISE_ID | EventAttributePEOEnterpriseId | — |
+| LAST_UPDATE_DATE | EventAttributePEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | EventAttributePEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | EventAttributePEOLastUpdatedBy | — |
+| NAME | EventAttributePEOName | ✅ |
+| OBJECT_VERSION_NUMBER | EventAttributePEOObjectVersionNumber | — |
+| TM_EVENT_ATRB_ID | EventAttributePEOTmEventAtrbId | ✅ |
+| TM_EVENT_ID | EventAttributePEOTmEventId | — |
+| VALUE | EventAttributePEOValue | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — HWM_TM_EVENT_ATRBS](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/hwmtmeventatrbs.html)

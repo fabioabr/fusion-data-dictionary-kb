@@ -93,6 +93,98 @@ WHERE  qr.QUESTION_ID = :p_id;
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[participantquestionnairequestionresponsepvo|ParticipantQuestionnaireQuestionResponsePVO]] (HCM · BICC: 3/17)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ANSWER_CLOB | QstnResponsePEOAnswerClob | ✅ |
+| ANSWER_COMMENTS | QstnResponsePEOAnswerComments | — |
+| ANSWER_LIST | QstnResponsePEOAnswerList | — |
+| ANSWER_TEXT | QstnResponsePEOAnswerText | — |
+| BUSINESS_GROUP_ID | QstnResponsePEOBusinessGroupId | — |
+| CREATED_BY | QstnResponsePEOCreatedBy | — |
+| CREATION_DATE | QstnResponsePEOCreationDate | — |
+| LAST_UPDATE_DATE | QstnResponsePEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | QstnResponsePEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | QstnResponsePEOLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | QstnResponsePEOObjectVersionNumber | — |
+| QSTN_ANSWER_ID | QstnResponsePEOQstnAnswerId | — |
+| QSTN_RESPONSE_ID | QstnResponsePEOQstnResponseId | — |
+| QSTNR_QUESTION_ID | QstnResponsePEOQstnrQuestionId | — |
+| QSTNR_RESPONSE_ID | QstnResponsePEOQstnrResponseId | — |
+| SCORE | QstnResponsePEOScore | ✅ |
+| SUB_QUESTION_ID | QstnResponsePEOSubQuestionId | — |
+
+### [[participantresponsepvo|ParticipantResponsePVO]] (HCM · BICC: 5/17)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ANSWER_CLOB | QstnResponsePEOAnswerClob | — |
+| ANSWER_COMMENTS | QstnResponsePEOAnswerComments | — |
+| ANSWER_LIST | QstnResponsePEOAnswerList | — |
+| ANSWER_TEXT | QstnResponsePEOAnswerText | — |
+| BUSINESS_GROUP_ID | QstnResponsePEOBusinessGroupId | — |
+| CREATED_BY | QstnResponsePEOCreatedBy | ✅ |
+| CREATION_DATE | QstnResponsePEOCreationDate | ✅ |
+| LAST_UPDATE_DATE | QstnResponsePEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | QstnResponsePEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | QstnResponsePEOLastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | QstnResponsePEOObjectVersionNumber | — |
+| QSTN_ANSWER_ID | QstnResponsePEOQstnAnswerId | — |
+| QSTN_RESPONSE_ID | QstnResponsePEOQstnResponseId | — |
+| QSTNR_QUESTION_ID | QstnResponsePEOQstnrQuestionId | — |
+| QSTNR_RESPONSE_ID | QstnResponsePEOQstnrResponseId | — |
+| SCORE | QstnResponsePEOScore | ✅ |
+| SUB_QUESTION_ID | QstnResponsePEOSubQuestionId | — |
+
+### [[questionnairequestionresponsepvo|QuestionnaireQuestionResponsePVO]] (HCM · BICC: 2/17)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ANSWER_CLOB | QstnResponsePEOAnswerClob | — |
+| ANSWER_COMMENTS | QstnResponsePEOAnswerComments | — |
+| ANSWER_LIST | QstnResponsePEOAnswerList | — |
+| ANSWER_TEXT | QstnResponsePEOAnswerText | — |
+| BUSINESS_GROUP_ID | QstnResponsePEOBusinessGroupId | — |
+| CREATED_BY | QstnResponsePEOCreatedBy | — |
+| CREATION_DATE | QstnResponsePEOCreationDate | — |
+| LAST_UPDATE_DATE | QstnResponsePEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | QstnResponsePEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | QstnResponsePEOLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | QstnResponsePEOObjectVersionNumber | — |
+| QSTN_ANSWER_ID | QstnResponsePEOQstnAnswerId | — |
+| QSTN_RESPONSE_ID | QstnResponsePEOQstnResponseId | ✅ |
+| QSTNR_QUESTION_ID | QstnResponsePEOQstnrQuestionId | — |
+| QSTNR_RESPONSE_ID | QstnResponsePEOQstnrResponseId | — |
+| SCORE | QstnResponsePEOScore | — |
+| SUB_QUESTION_ID | QstnResponsePEOSubQuestionId | — |
+
+### [[questionresponse|QuestionResponse]] (HCM · BICC: 17/17)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ANSWER_CLOB | AnswerClob | ✅ |
+| ANSWER_LIST | AnswerList | ✅ |
+| ANSWER_TEXT | AnswerText | ✅ |
+| BUSINESS_GROUP_ID | BusinessGroupId | ✅ |
+| CHOICE_LIST | ChoiceList | ✅ |
+| CREATED_BY | CreatedBy | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | LastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | ✅ |
+| QSTN_ANSWER_ID | QstnAnswerId | ✅ |
+| QSTN_RESPONSE_ID | QstnResponseId | ✅ |
+| QSTNR_QUESTION_ID | QstnrQuestionId | ✅ |
+| QSTNR_RESPONSE_ID | QstnrResponseId | ✅ |
+| SCORE | Score | ✅ |
+| SUB_QUESTION_ID | SubQuestionId | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Fusion HCM Tables and Views](https://docs.oracle.com/en/cloud/saas/human-resources/25a/)

@@ -82,6 +82,66 @@ SELECT bl.BUCKET_SEQUENCE_NUM,
 - O par (`AGING_BUCKET_ID`, `BUCKET_SEQUENCE_NUM`) deve ser único.
 - Intervalos de dias (`DAYS_START`, `DAYS_TO`) não devem se sobrepor dentro do mesmo bucket.
 
+## 🔗 PVOs Relacionados
+
+### [[agingbucketlinesbasepvo|AgingBucketLinesBasePVO]] (OTHER · BICC: 8/15)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| AGING_BUCKET_ID | AgingBucketsLinesAgingBucketId | — |
+| AGING_BUCKET_LINE_ID | AgingBucketLineId | ✅ |
+| BUCKET_SEQUENCE_NUM | AgingBucketsLinesBucketSequenceNum | ✅ |
+| CREATED_BY | AgingBucketsLinesCreatedBy | ✅ |
+| CREATION_DATE | AgingBucketsLinesCreationDate | ✅ |
+| DAYS_START | AgingBucketsLinesDaysStart | ✅ |
+| DAYS_TO | AgingBucketsLinesDaysTo | ✅ |
+| LAST_UPDATE_DATE | AgingBucketsLinesLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | AgingBucketsLinesLastUpdateLogin | — |
+| LAST_UPDATED_BY | AgingBucketsLinesLastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | AgingBucketsLinesObjectVersionNumber | — |
+| REPORT_HEADING1 | AgingBucketsLinesReportHeading1 | — |
+| REPORT_HEADING2 | AgingBucketsLinesReportHeading2 | — |
+| SET_ID | AgingBucketsLinesSetId | — |
+| TYPE | AgingBucketsLinesType | — |
+
+### [[agingbucketlinesextractpvo|AgingBucketLinesExtractPVO]] (OTHER · BICC: 15/31)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| AGING_BUCKET_ID | ArAgingBucketLinesBAgingBucketId | ✅ |
+| AGING_BUCKET_LINE_ID | ArAgingBucketLinesBAgingBucketLineId | ✅ |
+| ATTRIBUTE1 | ArAgingBucketLinesBAttribute1 | — |
+| ATTRIBUTE10 | ArAgingBucketLinesBAttribute10 | — |
+| ATTRIBUTE11 | ArAgingBucketLinesBAttribute11 | — |
+| ATTRIBUTE12 | ArAgingBucketLinesBAttribute12 | — |
+| ATTRIBUTE13 | ArAgingBucketLinesBAttribute13 | — |
+| ATTRIBUTE14 | ArAgingBucketLinesBAttribute14 | — |
+| ATTRIBUTE15 | ArAgingBucketLinesBAttribute15 | — |
+| ATTRIBUTE2 | ArAgingBucketLinesBAttribute2 | — |
+| ATTRIBUTE3 | ArAgingBucketLinesBAttribute3 | — |
+| ATTRIBUTE4 | ArAgingBucketLinesBAttribute4 | — |
+| ATTRIBUTE5 | ArAgingBucketLinesBAttribute5 | — |
+| ATTRIBUTE6 | ArAgingBucketLinesBAttribute6 | — |
+| ATTRIBUTE7 | ArAgingBucketLinesBAttribute7 | — |
+| ATTRIBUTE8 | ArAgingBucketLinesBAttribute8 | — |
+| ATTRIBUTE9 | ArAgingBucketLinesBAttribute9 | — |
+| ATTRIBUTE_CATEGORY | ArAgingBucketLinesBAttributeCategory | — |
+| BUCKET_SEQUENCE_NUM | ArAgingBucketLinesBBucketSequenceNum | ✅ |
+| CREATED_BY | ArAgingBucketLinesBCreatedBy | ✅ |
+| CREATION_DATE | ArAgingBucketLinesBCreationDate | ✅ |
+| DAYS_START | ArAgingBucketLinesBDaysStart | ✅ |
+| DAYS_TO | ArAgingBucketLinesBDaysTo | ✅ |
+| LAST_UPDATE_DATE | ArAgingBucketLinesBLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ArAgingBucketLinesBLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | ArAgingBucketLinesBLastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | ArAgingBucketLinesBObjectVersionNumber | ✅ |
+| REPORT_HEADING1 | ArAgingBucketLinesBReportHeading1 | ✅ |
+| REPORT_HEADING2 | ArAgingBucketLinesBReportHeading2 | ✅ |
+| SET_ID | ArAgingBucketLinesBSetId | ✅ |
+| TYPE | ArAgingBucketLinesBType | ✅ |
+
+---
+
 ## 📚 Referências
 
 - Oracle Fusion Cloud Financials — Accounts Receivable Tables (OEDMF Release 13).

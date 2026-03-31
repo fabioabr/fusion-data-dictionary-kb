@@ -142,3 +142,31 @@ WHERE  submit.ACTION_TYPE = 'SUBMIT'
 
 - [Oracle Docs — PON_ACTION_HISTORY](https://docs.oracle.com/en/cloud/saas/procurement/25a/oedmf/ponactionhistory.html)
 - [[po-module-data-dictionary]] — Dossiê do módulo PO/Procurement
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[negdocumentnegotiationlinepvo|NegDocumentNegotiationLinePVO]] (PO)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_TYPE | NegotiationActionHistoryActionType | — |
+| APPROVAL_IDENTIFICATION_KEY | NegotiationActionHistoryApprovalIdentificationKey | — |
+| CREATION_DATE | NegotiationActionHistoryCreationDate | — |
+| OBJECT_ID | NegotiationActionHistoryObjectId | — |
+| OBJECT_ID2 | NegotiationActionHistoryObjectId2 | — |
+| OBJECT_TYPE_CODE | NegotiationActionHistoryObjectTypeCode | — |
+| SEQUENCE_NUM | NegotiationActionHistorySequenceNum | — |
+
+### [[negdocumentsourcingnegotiationandtemplatepvo|NegDocumentSourcingNegotiationAndTemplatePVO]] (PO · BICC: 6/7)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_TYPE | NegotiationActionHistoryActionType | ✅ |
+| APPROVAL_IDENTIFICATION_KEY | NegotiationActionHistoryApprovalIdentificationKey | — |
+| CREATION_DATE | NegotiationActionHistoryCreationDate | ✅ |
+| OBJECT_ID | NegotiationActionHistoryObjectId | ✅ |
+| OBJECT_ID2 | NegotiationActionHistoryObjectId2 | ✅ |
+| OBJECT_TYPE_CODE | NegotiationActionHistoryObjectTypeCode | ✅ |
+| SEQUENCE_NUM | NegotiationActionHistorySequenceNum | ✅ |

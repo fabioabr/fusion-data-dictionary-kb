@@ -39,7 +39,6 @@ Tabela base que agrupa mapeamentos de cartão de ponto em conjuntos, permitindo 
 > [!note] Sufixo _B
 > O sufixo `_B` indica tabela **base** — contém os dados não traduzíveis. A tabela correspondente `_TL` armazena as traduções.
 
-
 ---
 
 ## 🧠 Propósito de Negócio
@@ -105,6 +104,42 @@ WHERE  NVL(t.ENABLED_FLAG, 'Y') = 'Y'
 
 - Tabela base: contém dados não traduzíveis. Utilize a view `_VL` correspondente para consultas com tradução.
 - Área funcional: Time Card Export dentro do Oracle Fusion Cloud HCM.
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[tcdmappingsetdetailpvo|TcdMappingSetDetailPVO]] (GL · BICC: 7/11)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | TcdMappingSetBPEOCreatedBy | ✅ |
+| CREATION_DATE | TcdMappingSetBPEOCreationDate | ✅ |
+| ENTERPRISE_ID | TcdMappingSetBPEOEnterpriseId | — |
+| LAST_UPDATE_DATE | TcdMappingSetBPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | TcdMappingSetBPEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | TcdMappingSetBPEOLastUpdatedBy | ✅ |
+| MODULE_ID | TcdMappingSetBPEOModuleId | — |
+| OBJECT_VERSION_NUMBER | TcdMappingSetBPEOObjectVersionNumber | — |
+| SEED_DATA_SOURCE | TcdMappingSetBPEOSeedDataSource | — |
+| TCD_MAPPING_SET_CD | TcdMappingSetBPEOTcdMappingSetCd | ✅ |
+| TCD_MAPPING_SET_ID | TcdMappingSetBPEOTcdMappingSetId | ✅ |
+
+### [[tcdmappingsetpvo|TcdMappingSetPVO]] (GL · BICC: 7/11)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | TcdMappingSetBPEOCreatedBy | ✅ |
+| CREATION_DATE | TcdMappingSetBPEOCreationDate | ✅ |
+| ENTERPRISE_ID | TcdMappingSetBPEOEnterpriseId | — |
+| LAST_UPDATE_DATE | TcdMappingSetBPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | TcdMappingSetBPEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | TcdMappingSetBPEOLastUpdatedBy | ✅ |
+| MODULE_ID | TcdMappingSetBPEOModuleId | — |
+| OBJECT_VERSION_NUMBER | TcdMappingSetBPEOObjectVersionNumber | — |
+| SEED_DATA_SOURCE | TcdMappingSetBPEOSeedDataSource | — |
+| TCD_MAPPING_SET_CD | TcdMappingSetBPEOTcdMappingSetCd | ✅ |
+| TCD_MAPPING_SET_ID | TcdMappingSetBPEOTcdMappingSetId | ✅ |
 
 ---
 

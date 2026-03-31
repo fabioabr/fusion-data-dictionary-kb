@@ -39,7 +39,6 @@ Visão consolidada que combina dados base e traduções dos campos de atributos 
 > [!note] Sufixo _VL
 > O sufixo `_VL` indica **view consolidada** que combina automaticamente a tabela `_B` (dados base) com a `_TL` (traduções) para o idioma da sessão.
 
-
 ---
 
 ## 🧠 Propósito de Negócio
@@ -104,6 +103,191 @@ WHERE  t.LANGUAGE = USERENV('LANG')
 
 - View consolidada: combina automaticamente dados base (`_B`) e traduções (`_TL`). Preferir em consultas de leitura.
 - Área funcional: Time Management dentro do Oracle Fusion Cloud HCM.
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[changeauditattributepvo|ChangeAuditAttributePVO]] (HCM · BICC: 1/2)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| NAME | TmAtrbFieldVLPEOName | ✅ |
+| TM_ATRB_FLD_ID | TmAtrbFieldVLPEOTmAtrbFldId1 | — |
+
+### [[eventattributepvo|EventAttributePVO]] (GL · BICC: 4/24)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ALLOWED_SCOPE | TimeAttributeFieldVLPEOAllowedScope | — |
+| ATTRIBUTE_CATEGORY | TimeAttributeFieldVLPEOAttributeCategory | — |
+| ATTRIBUTE_GROUP | TimeAttributeFieldVLPEOAttributeGroup | — |
+| ATTRIBUTE_TYPE | TimeAttributeFieldVLPEOAttributeType | — |
+| CLASS | TimeAttributeFieldVLPEOClass11 | — |
+| COMP_DISP_CODE | TimeAttributeFieldVLPEOComponentDisplayCode | — |
+| CREATED_BY | TimeAttributeFieldVLPEOCreatedBy | — |
+| CREATION_DATE | TimeAttributeFieldVLPEOCreationDate | — |
+| DESCRIPTION | TimeAttributeFieldVLPEODescription | — |
+| DISPLAY_NAME | TimeAttributeFieldVLPEODisplayName | ✅ |
+| ENTERPRISE_ID | TimeAttributeFieldVLPEOEnterpriseId | — |
+| GLOBAL_TM_ATRB_FLD_ID | TimeAttributeFieldVLPEOGlobalTimeAttributeFieldId | — |
+| LAST_UPDATE_DATE | TimeAttributeFieldVLPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | TimeAttributeFieldVLPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | TimeAttributeFieldVLPEOLastUpdatedBy | — |
+| MANDATORY_FOR_TCSMRS | TimeAttributeFieldVLPEOMandatoryForTimeConsumers | — |
+| MODULE_ID | TimeAttributeFieldVLPEOModuleId | — |
+| NAME | TimeAttributeFieldVLPEOName | ✅ |
+| OBJECT_VERSION_NUMBER | TimeAttributeFieldVLPEOObjectVersionNumber | — |
+| PARENT_TM_ATRB_FLD_ID | TimeAttributeFieldVLPEOParentTimeAttributeFieldId | — |
+| TCSMRS_ID | TimeAttributeFieldVLPEOTimeConsumersId | — |
+| TM_ATRB_FLD_ID | TimeAttributeFieldVLPEOTimeAttributeFieldId | ✅ |
+| VALUE_LOCATION | TimeAttributeFieldVLPEOValueLocation | — |
+| VALUE_SET_ID | TimeAttributeFieldVLPEOValueSetId | — |
+
+### [[tcdmappingdetailpvo|TcdMappingDetailPVO]] (GL · BICC: 4/6)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| DISPLAY_NAME | ParentTmAtrbFldVLPEODisplayName | ✅ |
+| DISPLAY_NAME | TmAtrbFldVLPEODisplayName | ✅ |
+| NAME | ParentTmAtrbFldVLPEOName | ✅ |
+| NAME | TmAtrbFldVLPEOName | ✅ |
+| TM_ATRB_FLD_ID | ParentTmAtrbFldVLPEOTimeAttributeFieldId | — |
+| TM_ATRB_FLD_ID | TmAtrbFldVLPEOTimeAttributeFieldId | — |
+
+### [[templatelayoutcompdisplayvaluepvo|TemplateLayoutCompDisplayValuePVO]] (GL · BICC: 24/36)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| DISPLAY_NAME | DepTCFParentAtrbPEODisplayName | ✅ |
+| DISPLAY_NAME | DflParamTimeAtrbPEODisplayName | ✅ |
+| DISPLAY_NAME | FilterAtrbPEO10DisplayName | ✅ |
+| DISPLAY_NAME | FilterAtrbPEO1DisplayName | ✅ |
+| DISPLAY_NAME | FilterAtrbPEO2DisplayName | ✅ |
+| DISPLAY_NAME | FilterAtrbPEO3DisplayName | ✅ |
+| DISPLAY_NAME | FilterAtrbPEO4DisplayName | ✅ |
+| DISPLAY_NAME | FilterAtrbPEO5DisplayName | ✅ |
+| DISPLAY_NAME | FilterAtrbPEO6DisplayName | ✅ |
+| DISPLAY_NAME | FilterAtrbPEO7DisplayName | ✅ |
+| DISPLAY_NAME | FilterAtrbPEO8DisplayName | ✅ |
+| DISPLAY_NAME | FilterAtrbPEO9DisplayName | ✅ |
+| NAME | DepTCFParentAtrbPEOName | ✅ |
+| NAME | DflParamTimeAtrbPEOName | ✅ |
+| NAME | FilterAtrbPEO10Name | ✅ |
+| NAME | FilterAtrbPEO1Name | ✅ |
+| NAME | FilterAtrbPEO2Name | ✅ |
+| NAME | FilterAtrbPEO3Name | ✅ |
+| NAME | FilterAtrbPEO4Name | ✅ |
+| NAME | FilterAtrbPEO5Name | ✅ |
+| NAME | FilterAtrbPEO6Name | ✅ |
+| NAME | FilterAtrbPEO7Name | ✅ |
+| NAME | FilterAtrbPEO8Name | ✅ |
+| NAME | FilterAtrbPEO9Name | ✅ |
+| TM_ATRB_FLD_ID | DepTCFParentAtrbPEOTmAtrbFldId | — |
+| TM_ATRB_FLD_ID | DflParamTimeAtrbPEOTmAtrbFldId | — |
+| TM_ATRB_FLD_ID | FilterAtrbPEO10TmAtrbFldId | — |
+| TM_ATRB_FLD_ID | FilterAtrbPEO1TmAtrbFldId | — |
+| TM_ATRB_FLD_ID | FilterAtrbPEO2TmAtrbFldId | — |
+| TM_ATRB_FLD_ID | FilterAtrbPEO3TmAtrbFldId | — |
+| TM_ATRB_FLD_ID | FilterAtrbPEO4TmAtrbFldId | — |
+| TM_ATRB_FLD_ID | FilterAtrbPEO5TmAtrbFldId | — |
+| TM_ATRB_FLD_ID | FilterAtrbPEO6TmAtrbFldId | — |
+| TM_ATRB_FLD_ID | FilterAtrbPEO7TmAtrbFldId | — |
+| TM_ATRB_FLD_ID | FilterAtrbPEO8TmAtrbFldId | — |
+| TM_ATRB_FLD_ID | FilterAtrbPEO9TmAtrbFldId | — |
+
+### [[templatelayoutcomponentpvo|TemplateLayoutComponentPVO]] (GL · BICC: 24/36)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| DISPLAY_NAME | DepTCFParentAtrbPEODisplayName | ✅ |
+| DISPLAY_NAME | DflParamTimeAtrbPEODisplayName | ✅ |
+| DISPLAY_NAME | FilterAtrbPEO10DisplayName | ✅ |
+| DISPLAY_NAME | FilterAtrbPEO1DisplayName | ✅ |
+| DISPLAY_NAME | FilterAtrbPEO2DisplayName | ✅ |
+| DISPLAY_NAME | FilterAtrbPEO3DisplayName | ✅ |
+| DISPLAY_NAME | FilterAtrbPEO4DisplayName | ✅ |
+| DISPLAY_NAME | FilterAtrbPEO5DisplayName | ✅ |
+| DISPLAY_NAME | FilterAtrbPEO6DisplayName | ✅ |
+| DISPLAY_NAME | FilterAtrbPEO7DisplayName | ✅ |
+| DISPLAY_NAME | FilterAtrbPEO8DisplayName | ✅ |
+| DISPLAY_NAME | FilterAtrbPEO9DisplayName | ✅ |
+| NAME | DepTCFParentAtrbPEOName | ✅ |
+| NAME | DflParamTimeAtrbPEOName | ✅ |
+| NAME | FilterAtrbPEO10Name | ✅ |
+| NAME | FilterAtrbPEO1Name | ✅ |
+| NAME | FilterAtrbPEO2Name | ✅ |
+| NAME | FilterAtrbPEO3Name | ✅ |
+| NAME | FilterAtrbPEO4Name | ✅ |
+| NAME | FilterAtrbPEO5Name | ✅ |
+| NAME | FilterAtrbPEO6Name | ✅ |
+| NAME | FilterAtrbPEO7Name | ✅ |
+| NAME | FilterAtrbPEO8Name | ✅ |
+| NAME | FilterAtrbPEO9Name | ✅ |
+| TM_ATRB_FLD_ID | DepTCFParentAtrbPEOTmAtrbFldId | — |
+| TM_ATRB_FLD_ID | DflParamTimeAtrbPEOTmAtrbFldId | — |
+| TM_ATRB_FLD_ID | FilterAtrbPEO10TmAtrbFldId | — |
+| TM_ATRB_FLD_ID | FilterAtrbPEO1TmAtrbFldId | — |
+| TM_ATRB_FLD_ID | FilterAtrbPEO2TmAtrbFldId | — |
+| TM_ATRB_FLD_ID | FilterAtrbPEO3TmAtrbFldId | — |
+| TM_ATRB_FLD_ID | FilterAtrbPEO4TmAtrbFldId | — |
+| TM_ATRB_FLD_ID | FilterAtrbPEO5TmAtrbFldId | — |
+| TM_ATRB_FLD_ID | FilterAtrbPEO6TmAtrbFldId | — |
+| TM_ATRB_FLD_ID | FilterAtrbPEO7TmAtrbFldId | — |
+| TM_ATRB_FLD_ID | FilterAtrbPEO8TmAtrbFldId | — |
+| TM_ATRB_FLD_ID | FilterAtrbPEO9TmAtrbFldId | — |
+
+### [[timeattributefieldallocationpvo|TimeAttributeFieldAllocationPVO]] (GL)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| DISPLAY_NAME | GlobalTmAtrbFldVLPEODisplayName | — |
+| DISPLAY_NAME | ParentTmAtrbFldVLPEODisplayName | — |
+| NAME | GlobalTmAtrbFldVLPEOName | — |
+| NAME | ParentTmAtrbFldVLPEOName | — |
+| TM_ATRB_FLD_ID | GlobalTmAtrbFldVLPEOTimeAttributeFieldId | — |
+| TM_ATRB_FLD_ID | ParentTmAtrbFldVLPEOTimeAttributeFieldId | — |
+
+### [[timeattributefieldcomponentpvo|TimeAttributeFieldComponentPVO]] (GL)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| DISPLAY_NAME | GlobalTmAtrbFldVLPEODisplayName | — |
+| DISPLAY_NAME | ParentTmAtrbFldVLPEODisplayName | — |
+| NAME | GlobalTmAtrbFldVLPEOName | — |
+| NAME | ParentTmAtrbFldVLPEOName | — |
+| TM_ATRB_FLD_ID | GlobalTmAtrbFldVLPEOTimeAttributeFieldId | — |
+| TM_ATRB_FLD_ID | ParentTmAtrbFldVLPEOTimeAttributeFieldId | — |
+
+### [[timeattributefieldcustompvo|TimeAttributeFieldCustomPVO]] (GL · BICC: 4/6)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| DISPLAY_NAME | GlobalTmAtrbFldVLPEODisplayName | ✅ |
+| DISPLAY_NAME | ParentTmAtrbFldVLPEODisplayName | ✅ |
+| NAME | GlobalTmAtrbFldVLPEOName | ✅ |
+| NAME | ParentTmAtrbFldVLPEOName | ✅ |
+| TM_ATRB_FLD_ID | GlobalTmAtrbFldVLPEOTimeAttributeFieldId | — |
+| TM_ATRB_FLD_ID | ParentTmAtrbFldVLPEOTimeAttributeFieldId | — |
+
+### [[timeattributefieldpvo|TimeAttributeFieldPVO]] (GL)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| DISPLAY_NAME | GlobalTmAtrbFldVLPEODisplayName | — |
+| DISPLAY_NAME | ParentTmAtrbFldVLPEODisplayName | — |
+| NAME | GlobalTmAtrbFldVLPEOName | — |
+| NAME | ParentTmAtrbFldVLPEOName | — |
+| TM_ATRB_FLD_ID | GlobalTmAtrbFldVLPEOTimeAttributeFieldId | — |
+| TM_ATRB_FLD_ID | ParentTmAtrbFldVLPEOTimeAttributeFieldId | — |
+
+### [[timecategoryexprresultp|TimeCategoryExprResultP]] (GL · BICC: 2/3)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| DISPLAY_NAME | TimeAttributeFieldVLPEODisplayName | ✅ |
+| NAME | TimeAttributeFieldVLPEOName | ✅ |
+| TM_ATRB_FLD_ID | TimeAttributeFieldVLPEOTimeAttributeFieldId | — |
 
 ---
 

@@ -132,3 +132,20 @@ WHERE  sr.RELATIONSHIP_TYPE = 'PARENT_SUBSIDIARY'
 
 - [Oracle Docs — Supplier Relationships](https://docs.oracle.com/en/cloud/saas/procurement/25a/oedmf/poz-tables.html)
 - [[po-module-data-dictionary]] — Dossiê do módulo Procurement
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[supplierrelationshippvo|SupplierRelationshipPVO]] (PO · BICC: 8/8)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| DESCRIPTION | Description | ✅ |
+| EFFECTIVE_END_DATE | EffectiveEndDate | ✅ |
+| EFFECTIVE_START_DATE | EffectiveStartDate | ✅ |
+| PARTY_ID | PartyId | ✅ |
+| PARTY_USAGE_CODE | PartyUsageCode | ✅ |
+| PARTY_USAGE_NAME | PartyUsageName | ✅ |
+| PARTY_USAGE_TYPE | PartyUsageType | ✅ |
+| STATUS_FLAG | StatusFlag | ✅ |

@@ -119,6 +119,42 @@ ORDER BY bcr.CREATION_DATE DESC;
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[supplierregistrationbusclassreqpvo|SupplierRegistrationBusClassReqPVO]] (PO · BICC: 9/27)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUS_CLASS_REQUEST_ID | BusClassRequestId | ✅ |
+| CERTIFICATION_AGENCY | SupplierRegBusClassReqCertificationAgency | — |
+| CERTIFICATION_NO | SupplierRegBusClassReqCertificationNo | ✅ |
+| CERTIFYING_AGENCY_ID | SupplierRegBusClassReqCertifyingAgencyId | — |
+| CLASSIFICATION_ID | SupplierRegBusClassReqClassificationId | — |
+| CLASSIFICATION_ID_ORIGINAL | SupplierRegBusClassReqClassificationIdOriginal | — |
+| CONFIRMED_ON | SupplierRegBusClassReqConfirmedOn | — |
+| CREATED_BY | SupplierRegBusClassReqCreatedBy | — |
+| CREATION_DATE | SupplierRegBusClassReqCreationDate | — |
+| DUP_OF_BC_REQ_ID | SupplierRegBusClassReqDupOfBcReqId | — |
+| EXPIRATION_DATE | SupplierRegBusClassReqExpirationDate | ✅ |
+| EXT_ATTR_1 | SupplierRegBusClassReqExtAttr1 | ✅ |
+| LAST_UPDATE_DATE | SupplierRegBusClassReqLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | SupplierRegBusClassReqLastUpdateLogin | — |
+| LAST_UPDATED_BY | SupplierRegBusClassReqLastUpdatedBy | — |
+| LOOKUP_CODE | SupplierRegBusClassReqLookupCode | ✅ |
+| MAPPING_ID | SupplierRegBusClassReqMappingId | — |
+| NOTES | SupplierRegBusClassReqNotes | ✅ |
+| OBJECT_VERSION_NUMBER | SupplierRegBusClassReqObjectVersionNumber | — |
+| OTHER_CERTIFYING_AGENCY | SupplierRegBusClassReqOtherCertifyingAgency | ✅ |
+| PROCESS_STATUS | SupplierRegBusClassReqProcessStatus | — |
+| PROVIDED_BY_CONTACT_ID | SupplierRegBusClassReqProvidedByContactId | — |
+| REQUEST_STATUS | SupplierRegBusClassReqRequestStatus | — |
+| REQUEST_TYPE | SupplierRegBusClassReqRequestType | — |
+| ROW_STATUS | SupplierRegBusClassReqRowStatus | — |
+| START_DATE | SupplierRegBusClassReqStartDate | ✅ |
+| STATUS | SupplierRegBusClassReqStatus | — |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — POZ Tables](https://docs.oracle.com/en/cloud/saas/procurement/25a/oedmf/poztables.html)

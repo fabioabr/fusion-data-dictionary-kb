@@ -107,3 +107,38 @@ WHERE  pi.BATCH_ID = :p_batch_id
 
 - [Oracle Docs — HRY_PI_INBD_RECORDS](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/hrypiinbdrecords.html)
 - [[hcm-module-data-dictionary]] — Dossie do modulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[inboundrecordpvo|InboundRecordPVO]] (HCM · BICC: 25/26)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BATCH_CODE | InboundRecordPEOBatchCode | ✅ |
+| BATCH_DATE | InboundRecordPEOBatchDate | ✅ |
+| CATEGORY_CODE | InboundRecordPEOCategoryCode | ✅ |
+| CREATED_BY | InboundRecordPEOCreatedBy | ✅ |
+| CREATION_DATE | InboundRecordPEOCreationDate | ✅ |
+| DOCUMENTS_OF_RECORD_ID | InboundRecordPEODocumentsOfRecordId | ✅ |
+| END_DATE | InboundRecordPEOEndDate | ✅ |
+| ENTERPRISE_ID | InboundRecordPEOEnterpriseId | ✅ |
+| ENTITY_IDENTIFIER | InboundRecordPEOEntityIdentifier | ✅ |
+| FUNCTIONAL_CATEGORY | InboundRecordPEOFunctionalCategory | ✅ |
+| INBD_RECORD_ID | InbdRecordId | ✅ |
+| LAST_UPDATE_DATE | InboundRecordPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | InboundRecordPEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | InboundRecordPEOLastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | InboundRecordPEOObjectVersionNumber | ✅ |
+| PAYROLL_ASSIGNMENT_ID | InboundRecordPEOPayrollAssignmentId | ✅ |
+| PAYROLL_ID | InboundRecordPEOPayrollId | ✅ |
+| PAYROLL_RELATIONSHIP_ID | InboundRecordPEOPayrollRelationshipId | — |
+| PAYROLL_TERM_ID | InboundRecordPEOPayrollTermId | ✅ |
+| PERSON_ID | InboundRecordPEOPersonId | ✅ |
+| RECORD_TYPE | InboundRecordPEORecordType | ✅ |
+| SOURCE_ID | InboundRecordPEOSourceId | ✅ |
+| SOURCE_TYPE | InboundRecordPEOSourceType | ✅ |
+| START_DATE | InboundRecordPEOStartDate | ✅ |
+| TIME_PERIOD_ID | InboundRecordPEOTimePeriodId | ✅ |
+| VENDOR_CODE | InboundRecordPEOVendorCode | ✅ |

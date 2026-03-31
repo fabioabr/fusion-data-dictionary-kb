@@ -112,3 +112,26 @@ WHERE  pc.ENABLED_FLAG = 'Y';
 
 - [Oracle Docs — IRC_ASMT_PARTNER_CONFIG](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/ircasmtpartnerconfig.html)
 - [[hcm-module-data-dictionary]] — Dossie do modulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[asmtpartnerconfigpvo|AsmtPartnerConfigPVO]] (HCM · BICC: 8/14)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CLIENT_ID | AsmtPartnerConfigPEOClientId | ✅ |
+| CLIENT_SECRET | AsmtPartnerConfigPEOClientSecret | ✅ |
+| CREATED_BY | AsmtPartnerConfigPEOCreatedBy | — |
+| CREATION_DATE | AsmtPartnerConfigPEOCreationDate | — |
+| LAST_UPDATE_DATE | AsmtPartnerConfigPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | AsmtPartnerConfigPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | AsmtPartnerConfigPEOLastUpdatedBy | — |
+| MULTI_PHASE_FLAG | AsmtPartnerConfigPEOMultiPhaseFlag | ✅ |
+| OBJECT_VERSION_NUMBER | AsmtPartnerConfigPEOObjectVersionNumber | — |
+| PARTNER_CONFIG_ID | PartnerConfigId | ✅ |
+| PHASE_COUNT | AsmtPartnerConfigPEOPhaseCount | ✅ |
+| PROVISIONING_ID | AsmtPartnerConfigPEOProvisioningId | — |
+| SHARE_FLAG | AsmtPartnerConfigPEOShareFlag | ✅ |
+| VALIDITY_PERIOD | AsmtPartnerConfigPEOValidityPeriod | ✅ |

@@ -98,6 +98,27 @@ WHERE  rml.REQUISITION_ID = :p_requisition_id;
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[requisitionmedialinkpvo|RequisitionMediaLinkPVO]] (PO · BICC: 10/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | CreatedBy | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | — |
+| LAST_UPDATED_BY | LastUpdatedBy | ✅ |
+| MEDIA_LINK_ID | MediaLinkId | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | — |
+| REQ_MEDIA_LINK_ID | ReqMediaLinkId | ✅ |
+| REQUISITION_ID | RequisitionId | ✅ |
+| SEQUENCE_NUMBER | SequenceNumber | ✅ |
+| SHOW_ON_OFFERS_FLAG | ShowOnOffersFlag | ✅ |
+| VISIBILITY_CODE | VisibilityCode | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — IRC_REQ_MEDIA_LINKS](https://docs.oracle.com/en/cloud/saas/talent-management/25a/oedmf/ircreqmedialinks.html)

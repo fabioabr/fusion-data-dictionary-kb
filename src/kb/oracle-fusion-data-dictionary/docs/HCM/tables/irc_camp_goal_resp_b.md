@@ -108,3 +108,29 @@ WHERE  g.CAMPAIGN_ID = :p_campaign_id;
 
 - [Oracle Docs -- IRC_CAMP_GOAL_RESP_B](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/irccampgoalrespb.html)
 - [[hcm-module-data-dictionary]] -- Dossie do modulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[campgoalpvo|CampGoalPVO]] (HCM · BICC: 5/11)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | CampGoalRespBPEOCreatedBy1 | — |
+| CREATION_DATE | CampGoalRespBPEOCreationDate1 | — |
+| DESTINATION_URL | CampGoalRespBPEODestinationUrl | ✅ |
+| GOAL_ID | CampGoalRespBPEOGoalId | — |
+| GOAL_RESPONSE_ID | CampGoalRespBPEOGoalResponseId | ✅ |
+| INCLUDE_IN_TARGET_FLAG | CampGoalRespBPEOIncludeInTargetFlag | ✅ |
+| LAST_UPDATE_DATE | CampGoalRespBPEOLastUpdateDate1 | ✅ |
+| LAST_UPDATE_LOGIN | CampGoalRespBPEOLastUpdateLogin1 | — |
+| LAST_UPDATED_BY | CampGoalRespBPEOLastUpdatedBy1 | — |
+| OBJECT_VERSION_NUMBER | CampGoalRespBPEOObjectVersionNumber1 | — |
+| USE_DEFAULT_URL_FLAG | CampGoalRespBPEOUseDefaultUrlFlag | ✅ |
+
+### [[camptrackresppvo|CampTrackRespPVO]] (HCM · BICC: 1/1)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| GOAL_RESPONSE_ID | GoalResponseId | ✅ |

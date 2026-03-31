@@ -115,3 +115,91 @@ WHERE  t.ENABLED_FLAG = 'Y';
 
 - [Oracle Docs — HXT_TCLAYST_B](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/hxttclaystb.html)
 - [[hcm-module-data-dictionary]] — Dossie do modulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[timecardlayoutcomppvo|TimecardLayoutCompPVO]] (GL · BICC: 7/16)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ANS_SET_ID | TclaystPEOAnswerSetId | — |
+| AUDIT_USAGE_FLAG | TclaystPEOAuditUsageFlag | — |
+| COMPLETION_STATUS | TclaystPEOCompletionStatus | — |
+| CREATED_BY | TclaystPEOCreatedBy | ✅ |
+| CREATION_DATE | TclaystPEOCreationDate | ✅ |
+| DEFAULT_AUDIT_CONFIG_FLAG | TclaystPEODefaultAuditConfigFlag | — |
+| ENTERPRISE_ID | TclaystPEOEnterpriseId | — |
+| LAST_UPDATE_DATE | TclaystPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | TclaystPEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | TclaystPEOLastUpdatedBy | ✅ |
+| MODULE_ID | TclaystPEOModuleId | — |
+| OBJECT_VERSION_NUMBER | TclaystPEOObjectVersionNumber | — |
+| OWNER | TclaystPEOOwner | — |
+| SHORT_CODE | TclaystPEOShortCode | ✅ |
+| TCLAYST_ID | TclaystPEOTimecardLayoutSetId | — |
+| TCSMR_SET_ID | TclaystPEOTimeConsumerSetId | ✅ |
+
+### [[timecardlayoutpvo|TimecardLayoutPVO]] (GL · BICC: 8/16)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ANS_SET_ID | TclaystPEOAnswerSetId | — |
+| AUDIT_USAGE_FLAG | TclaystPEOAuditUsageFlag | — |
+| COMPLETION_STATUS | TclaystPEOCompletionStatus | — |
+| CREATED_BY | TclaystPEOCreatedBy | ✅ |
+| CREATION_DATE | TclaystPEOCreationDate | ✅ |
+| DEFAULT_AUDIT_CONFIG_FLAG | TclaystPEODefaultAuditConfigFlag | — |
+| ENTERPRISE_ID | TclaystPEOEnterpriseId | — |
+| LAST_UPDATE_DATE | TclaystPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | TclaystPEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | TclaystPEOLastUpdatedBy | ✅ |
+| MODULE_ID | TclaystPEOModuleId | — |
+| OBJECT_VERSION_NUMBER | TclaystPEOObjectVersionNumber | — |
+| OWNER | TclaystPEOOwner | — |
+| SHORT_CODE | TclaystPEOShortCode | ✅ |
+| TCLAYST_ID | TclaystPEOTimecardLayoutSetId | ✅ |
+| TCSMR_SET_ID | TclaystPEOTimeConsumerSetId | ✅ |
+
+### [[timecardlayoutregionpvo|TimecardLayoutRegionPVO]] (GL · BICC: 7/16)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ANS_SET_ID | TclaystPEOAnswerSetId | — |
+| AUDIT_USAGE_FLAG | TclaystPEOAuditUsageFlag | — |
+| COMPLETION_STATUS | TclaystPEOCompletionStatus | — |
+| CREATED_BY | TclaystPEOCreatedBy | ✅ |
+| CREATION_DATE | TclaystPEOCreationDate | ✅ |
+| DEFAULT_AUDIT_CONFIG_FLAG | TclaystPEODefaultAuditConfigFlag | — |
+| ENTERPRISE_ID | TclaystPEOEnterpriseId | — |
+| LAST_UPDATE_DATE | TclaystPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | TclaystPEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | TclaystPEOLastUpdatedBy | ✅ |
+| MODULE_ID | TclaystPEOModuleId | — |
+| OBJECT_VERSION_NUMBER | TclaystPEOObjectVersionNumber | — |
+| OWNER | TclaystPEOOwner | — |
+| SHORT_CODE | TclaystPEOShortCode | ✅ |
+| TCLAYST_ID | TclaystPEOTimecardLayoutSetId | — |
+| TCSMR_SET_ID | TclaystPEOTimeConsumerSetId | ✅ |
+
+### [[timecardlayoutsetpvo|TimecardLayoutSetPVO]] (GL · BICC: 16/16)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ANS_SET_ID | TclaystPEOAnswerSetId | ✅ |
+| AUDIT_USAGE_FLAG | TclaystPEOAuditUsageFlag | ✅ |
+| COMPLETION_STATUS | TclaystPEOCompletionStatus | ✅ |
+| CREATED_BY | TclaystPEOCreatedBy | ✅ |
+| CREATION_DATE | TclaystPEOCreationDate | ✅ |
+| DEFAULT_AUDIT_CONFIG_FLAG | TclaystPEODefaultAuditConfigFlag | ✅ |
+| ENTERPRISE_ID | TclaystPEOEnterpriseId | ✅ |
+| LAST_UPDATE_DATE | TclaystPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | TclaystPEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | TclaystPEOLastUpdatedBy | ✅ |
+| MODULE_ID | TclaystPEOModuleId | ✅ |
+| OBJECT_VERSION_NUMBER | TclaystPEOObjectVersionNumber | ✅ |
+| OWNER | TclaystPEOOwner | ✅ |
+| SHORT_CODE | TclaystPEOShortCode | ✅ |
+| TCLAYST_ID | TclaystPEOTimecardLayoutSetId | ✅ |
+| TCSMR_SET_ID | TclaystPEOTimeConsumerSetId | ✅ |

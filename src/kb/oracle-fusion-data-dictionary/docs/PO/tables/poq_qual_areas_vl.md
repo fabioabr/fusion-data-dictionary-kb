@@ -128,6 +128,185 @@ WHERE  qma.QUAL_MODEL_ID = :p_model_id;
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[qualareaquestionpvo|QualAreaQuestionPVO]] (PO · BICC: 23/24)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTIVATION_DATE | QualAreaActivationDate | ✅ |
+| CREATED_BY | QualAreaCreatedBy | ✅ |
+| CREATION_DATE | QualAreaCreationDate | ✅ |
+| EXPIRATION_REMINDER_PERIOD | QualAreaExpirationReminderPeriod | ✅ |
+| EXPIRATION_REMINDER_TYPE | QualAreaExpirationReminderType | ✅ |
+| GLOBAL_FLAG | QualAreaGlobalFlag | ✅ |
+| INFORMATION_ONLY_FLAG | QualAreaInformationOnlyFlag | ✅ |
+| LAST_UPDATE_DATE | QualAreaLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | QualAreaLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | QualAreaLastUpdatedBy | ✅ |
+| LATEST_REVISION_FLAG | QualAreaLatestRevisionFlag | ✅ |
+| OBJECT_VERSION_NUMBER | QualAreaObjectVersionNumber | ✅ |
+| ORIGINAL_QUAL_AREA_ID | QualAreaOriginalQualAreaId | ✅ |
+| OWNER_ID | QualAreaOwnerId1 | ✅ |
+| PRC_BU_ID | QualAreaPrcBuId | ✅ |
+| QUAL_AREA_DESCRIPTION | QualAreaQualAreaDescription | ✅ |
+| QUAL_AREA_ID | QualAreaQualAreaId | ✅ |
+| QUAL_AREA_LEVEL | QualAreaQualAreaLevel | ✅ |
+| QUAL_AREA_NAME | QualAreaQualAreaName | ✅ |
+| QUAL_AREA_STATUS | QualAreaQualAreaStatus | ✅ |
+| QUAL_AREA_USAGE_CODE | QualAreaUsageCode | — |
+| REVISION_NUMBER | QualAreaRevisionNumber | ✅ |
+| STDS_ORG_CODE | QualAreaStdsOrgCode | ✅ |
+| SUBJECT_CODE | QualAreaSubjectCode | ✅ |
+
+### [[qualarearepositoryresponsepvo|QualAreaRepositoryResponsePVO]] (PO · BICC: 23/23)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTIVATION_DATE | QualAreaActivationDate | ✅ |
+| CREATED_BY | QualAreaCreatedBy | ✅ |
+| CREATION_DATE | QualAreaCreationDate | ✅ |
+| EXPIRATION_REMINDER_PERIOD | QualAreaExpirationReminderPeriod | ✅ |
+| EXPIRATION_REMINDER_TYPE | QualAreaExpirationReminderType | ✅ |
+| GLOBAL_FLAG | QualAreaGlobalFlag | ✅ |
+| INFORMATION_ONLY_FLAG | QualAreaInformationOnlyFlag | ✅ |
+| LAST_UPDATE_DATE | QualAreaLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | QualAreaLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | QualAreaLastUpdatedBy | ✅ |
+| LATEST_REVISION_FLAG | QualAreaLatestRevisionFlag | ✅ |
+| OBJECT_VERSION_NUMBER | QualAreaObjectVersionNumber | ✅ |
+| ORIGINAL_QUAL_AREA_ID | QualAreaOriginalQualAreaId | ✅ |
+| OWNER_ID | QualAreaOwnerId | ✅ |
+| PRC_BU_ID | QualAreaPrcBuId | ✅ |
+| QUAL_AREA_DESCRIPTION | QualAreaQualAreaDescription | ✅ |
+| QUAL_AREA_ID | QualAreaQualAreaId | ✅ |
+| QUAL_AREA_LEVEL | QualAreaQualAreaLevel | ✅ |
+| QUAL_AREA_NAME | QualAreaQualAreaName | ✅ |
+| QUAL_AREA_STATUS | QualAreaQualAreaStatus | ✅ |
+| REVISION_NUMBER | QualAreaRevisionNumber | ✅ |
+| STDS_ORG_CODE | QualAreaStdsOrgCode | ✅ |
+| SUBJECT_CODE | QualAreaSubjectCode | ✅ |
+
+### [[qualificationareapvo|QualificationAreaPVO]] (PO · BICC: 36/41)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTIVATION_DATE | QualificationAreaActivationDate | ✅ |
+| AUTO_ACCEPT_RESPONSES_FLAG | QualificationAreaAutoAcceptResponsesFlag | ✅ |
+| AUTO_EVALUATE_QUAL_FLAG | QualificationAreaAutoEvaluateQualFlag | ✅ |
+| AUTO_POPULATE_RESPONSES_FLAG | QualificationAreaAutoPopulateResponsesFlag | ✅ |
+| CREATED_BY | QualificationAreaCreatedBy | ✅ |
+| CREATION_DATE | QualificationAreaCreationDate | ✅ |
+| DEFAULT_QUAL_OWNER_FLAG | QualificationAreaDefaultQualOwnerFlag | — |
+| ENABLE_SCORING_FLAG | QualificationAreaEnableScoringFlag | ✅ |
+| EXPIRATION_REMINDER_PERIOD | QualificationAreaExpirationReminderPeriod | ✅ |
+| EXPIRATION_REMINDER_TYPE | QualificationAreaExpirationReminderType | ✅ |
+| GLOBAL_FLAG | QualificationAreaGlobalFlag | ✅ |
+| INFORMATION_ONLY_FLAG | QualificationAreaInformationOnlyFlag | ✅ |
+| LAST_UPDATE_DATE | QualificationAreaLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | QualificationAreaLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | QualificationAreaLastUpdatedBy | ✅ |
+| LATEST_REVISION_FLAG | QualificationAreaLatestRevisionFlag | ✅ |
+| NOTE_TO_SUPPLIER | QualificationAreaNoteToSupplier | ✅ |
+| OBJECT_VERSION_NUMBER | QualificationAreaObjectVersionNumber | ✅ |
+| ORIGINAL_QUAL_AREA_ID | QualificationAreaOriginalQualAreaId | ✅ |
+| OWNER_ID | QualificationAreaOwnerId | ✅ |
+| PRC_BU_ID | QualificationAreaPrcBuId | ✅ |
+| QUAL_AREA_DESCRIPTION | QualificationAreaQualAreaDescription | ✅ |
+| QUAL_AREA_ID | QualAreaId | ✅ |
+| QUAL_AREA_LEVEL | QualificationAreaQualAreaLevel | ✅ |
+| QUAL_AREA_NAME | QualificationAreaQualAreaName | ✅ |
+| QUAL_AREA_STATUS | QualificationAreaQualAreaStatus | ✅ |
+| QUAL_AREA_SURVEY_FLAG | QualAreaSurveyFlag | ✅ |
+| QUAL_AREA_USAGE_CODE | QualAreaUsageCode | — |
+| QUALIFICATION_DURATION | QualificationAreaQualificationDuration | ✅ |
+| QUALIFICATION_DURATION_TYPE | QualificationAreaQualificationDurationType | ✅ |
+| QUALIFICATION_OWNER_ID | QualificationAreaQualificationOwnerId | — |
+| REQUALIFY_EXPIRATION_FLAG | QualificationAreaRequalifyExpirationFlag | ✅ |
+| REQUALIFY_RESPONSE_FLAG | QualificationAreaRequalifyResponseFlag | ✅ |
+| REVISION_NUMBER | QualificationAreaRevisionNumber | ✅ |
+| SECTION_NAME | SectionName | — |
+| SHOW_QUAL_INTER_RESP_FLAG | QualificationAreaShowQualInterRespFlag | ✅ |
+| SHOW_QUAL_SUPP_RESP_FLAG | QualificationAreaShowQualSuppRespFlag | ✅ |
+| SHOW_QUAL_TO_SUPPLIER_FLAG | QualificationAreaShowQualToSupplierFlag | ✅ |
+| SINGLE_QUAL_AUTO_INIT_FLAG | QualificationAreaSingleQualAutoInitFlag | — |
+| STDS_ORG_CODE | QualificationAreaStdsOrgCode | ✅ |
+| SUBJECT_CODE | QualificationAreaSubjectCode | ✅ |
+
+### [[qualificationmodelareaspvo|QualificationModelAreasPVO]] (PO · BICC: 36/39)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTIVATION_DATE | QualAreaActivationDate | ✅ |
+| AUTO_ACCEPT_RESPONSES_FLAG | QualAreaAutoAcceptResponsesFlag | ✅ |
+| AUTO_EVALUATE_QUAL_FLAG | QualAreaAutoEvaluateQualFlag | ✅ |
+| AUTO_POPULATE_RESPONSES_FLAG | QualAreaAutoPopulateResponsesFlag | ✅ |
+| CREATED_BY | QualAreaCreatedBy | ✅ |
+| CREATION_DATE | QualAreaCreationDate | ✅ |
+| DEFAULT_QUAL_OWNER_FLAG | QualAreaDefaultQualOwnerFlag | — |
+| ENABLE_SCORING_FLAG | QualAreaEnableScoringFlag | ✅ |
+| EXPIRATION_REMINDER_PERIOD | QualAreaExpirationReminderPeriod | ✅ |
+| EXPIRATION_REMINDER_TYPE | QualAreaExpirationReminderType | ✅ |
+| GLOBAL_FLAG | QualAreaGlobalFlag | ✅ |
+| INFORMATION_ONLY_FLAG | QualAreaInformationOnlyFlag | ✅ |
+| LAST_UPDATE_DATE | QualAreaLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | QualAreaLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | QualAreaLastUpdatedBy | ✅ |
+| LATEST_REVISION_FLAG | QualAreaLatestRevisionFlag | ✅ |
+| NOTE_TO_SUPPLIER | QualAreaNoteToSupplier | ✅ |
+| OBJECT_VERSION_NUMBER | QualAreaObjectVersionNumber | ✅ |
+| ORIGINAL_QUAL_AREA_ID | QualAreaOriginalQualAreaId | ✅ |
+| OWNER_ID | QualAreaOwnerId | ✅ |
+| PRC_BU_ID | QualAreaPrcBuId | ✅ |
+| QUAL_AREA_DESCRIPTION | QualAreaQualAreaDescription | ✅ |
+| QUAL_AREA_ID | QualAreaQualAreaId | ✅ |
+| QUAL_AREA_LEVEL | QualAreaQualAreaLevel | ✅ |
+| QUAL_AREA_NAME | QualAreaQualAreaName | ✅ |
+| QUAL_AREA_STATUS | QualAreaQualAreaStatus | ✅ |
+| QUAL_AREA_SURVEY_FLAG | QualAreaSurveyFlag | ✅ |
+| QUALIFICATION_DURATION | QualAreaQualificationDuration | ✅ |
+| QUALIFICATION_DURATION_TYPE | QualAreaQualificationDurationType | ✅ |
+| QUALIFICATION_OWNER_ID | QualAreaQualificationOwnerId | — |
+| REQUALIFY_EXPIRATION_FLAG | QualAreaRequalifyExpirationFlag | ✅ |
+| REQUALIFY_RESPONSE_FLAG | QualAreaRequalifyResponseFlag | ✅ |
+| REVISION_NUMBER | QualAreaRevisionNumber | ✅ |
+| SHOW_QUAL_INTER_RESP_FLAG | QualAreaShowQualInterRespFlag | ✅ |
+| SHOW_QUAL_SUPP_RESP_FLAG | QualAreaShowQualSuppRespFlag | ✅ |
+| SHOW_QUAL_TO_SUPPLIER_FLAG | QualAreaShowQualToSupplierFlag | ✅ |
+| SINGLE_QUAL_AUTO_INIT_FLAG | QualAreaSingleQualAutoInitFlag | — |
+| STDS_ORG_CODE | QualAreaStdsOrgCode | ✅ |
+| SUBJECT_CODE | QualAreaSubjectCode | ✅ |
+
+### [[responserepositoryvaluespvo|ResponseRepositoryValuesPVO]] (PO · BICC: 23/23)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTIVATION_DATE | QualAreaActivationDate | ✅ |
+| CREATED_BY | QualAreaCreatedBy | ✅ |
+| CREATION_DATE | QualAreaCreationDate | ✅ |
+| EXPIRATION_REMINDER_PERIOD | QualAreaExpirationReminderPeriod | ✅ |
+| EXPIRATION_REMINDER_TYPE | QualAreaExpirationReminderType | ✅ |
+| GLOBAL_FLAG | QualAreaGlobalFlag | ✅ |
+| INFORMATION_ONLY_FLAG | QualAreaInformationOnlyFlag | ✅ |
+| LAST_UPDATE_DATE | QualAreaLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | QualAreaLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | QualAreaLastUpdatedBy | ✅ |
+| LATEST_REVISION_FLAG | QualAreaLatestRevisionFlag | ✅ |
+| OBJECT_VERSION_NUMBER | QualAreaObjectVersionNumber | ✅ |
+| ORIGINAL_QUAL_AREA_ID | QualAreaOriginalQualAreaId | ✅ |
+| OWNER_ID | QualAreaOwnerId | ✅ |
+| PRC_BU_ID | QualAreaPrcBuId | ✅ |
+| QUAL_AREA_DESCRIPTION | QualAreaQualAreaDescription | ✅ |
+| QUAL_AREA_ID | QualAreaQualAreaId | ✅ |
+| QUAL_AREA_LEVEL | QualAreaQualAreaLevel | ✅ |
+| QUAL_AREA_NAME | QualAreaQualAreaName | ✅ |
+| QUAL_AREA_STATUS | QualAreaQualAreaStatus | ✅ |
+| REVISION_NUMBER | QualAreaRevisionNumber | ✅ |
+| STDS_ORG_CODE | QualAreaStdsOrgCode | ✅ |
+| SUBJECT_CODE | QualAreaSubjectCode | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — Supplier Qualification Management](https://docs.oracle.com/en/cloud/saas/procurement/25a/oedmf/)

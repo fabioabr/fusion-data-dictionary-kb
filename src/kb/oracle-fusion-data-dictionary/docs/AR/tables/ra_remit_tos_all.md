@@ -146,6 +146,47 @@ WHERE  ct.ORG_ID = :p_org_id
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[remittoaddressextractpvo|RemitToAddressExtractPVO]] (OTHER · BICC: 16/32)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ADDRESS_ID | RaRemitToAddressId | ✅ |
+| ADDRESS_LOC_SEQ_ID | RaRemitToAddressLocSeqId | ✅ |
+| ADDRESS_SEQ_ID | RaRemitToAddressSeqId | ✅ |
+| ATTRIBUTE1 | RaRemitToAttribute1 | — |
+| ATTRIBUTE10 | RaRemitToAttribute10 | — |
+| ATTRIBUTE11 | RaRemitToAttribute11 | — |
+| ATTRIBUTE12 | RaRemitToAttribute12 | — |
+| ATTRIBUTE13 | RaRemitToAttribute13 | — |
+| ATTRIBUTE14 | RaRemitToAttribute14 | — |
+| ATTRIBUTE15 | RaRemitToAttribute15 | — |
+| ATTRIBUTE2 | RaRemitToAttribute2 | — |
+| ATTRIBUTE3 | RaRemitToAttribute3 | — |
+| ATTRIBUTE4 | RaRemitToAttribute4 | — |
+| ATTRIBUTE5 | RaRemitToAttribute5 | — |
+| ATTRIBUTE6 | RaRemitToAttribute6 | — |
+| ATTRIBUTE7 | RaRemitToAttribute7 | — |
+| ATTRIBUTE8 | RaRemitToAttribute8 | — |
+| ATTRIBUTE9 | RaRemitToAttribute9 | — |
+| ATTRIBUTE_CATEGORY | RaRemitToAttributeCategory | — |
+| COUNTRY | RaRemitToCountry | ✅ |
+| CREATED_BY | RaRemitToCreatedBy | ✅ |
+| CREATION_DATE | RaRemitToCreationDate | ✅ |
+| LAST_UPDATE_DATE | RaRemitToLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | RaRemitToLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | RaRemitToLastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | RaRemitToObjectVersionNumber | ✅ |
+| ORG_ID | RaRemitToOrgId | ✅ |
+| POSTAL_CODE_HIGH | RaRemitToPostalCodeHigh | ✅ |
+| POSTAL_CODE_LOW | RaRemitToPostalCodeLow | ✅ |
+| SET_ID | RaRemitToSetId | ✅ |
+| STATE | RaRemitToState | ✅ |
+| STATUS | RaRemitToStatus | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — RA_REMIT_TOS_ALL](https://docs.oracle.com/en/cloud/saas/financials/25a/oedmf/raremittosall-25268.html)

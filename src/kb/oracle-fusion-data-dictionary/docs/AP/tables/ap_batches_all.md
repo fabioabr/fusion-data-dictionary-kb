@@ -95,3 +95,90 @@ SELECT ab.BATCH_NAME,
 - Oracle Fusion Cloud Financials — Accounts Payable Tables (OEDMF Release 13).
 - Oracle BICC — AP Invoice Batches Subject Area Documentation.
 - Oracle Fusion Cloud ERP Schema Reference (Release 25A).
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[expensedistributionpvo|ExpenseDistributionPVO]] (OTHER · BICC: 1/25)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTUAL_INVOICE_COUNT | InvoiceBatchActualInvoiceCount | — |
+| ACTUAL_INVOICE_TOTAL | InvoiceBatchActualInvoiceTotal | — |
+| BATCH_CODE_COMBINATION_ID | InvoiceBatchBatchCodeCombinationId | — |
+| BATCH_DATE | InvoiceBatchBatchDate | — |
+| BATCH_ID | InvoiceBatchBatchId | — |
+| BATCH_NAME | InvoiceBatchBatchName | — |
+| CONTROL_INVOICE_COUNT | InvoiceBatchControlInvoiceCount | — |
+| CONTROL_INVOICE_TOTAL | InvoiceBatchControlInvoiceTotal | — |
+| CREATED_BY | InvoiceBatchCreatedBy | — |
+| CREATION_DATE | InvoiceBatchCreationDate | — |
+| DOC_CATEGORY_CODE | InvoiceBatchDocCategoryCode | — |
+| GL_DATE | InvoiceBatchGlDate | — |
+| HOLD_LOOKUP_CODE | InvoiceBatchHoldLookupCode | — |
+| HOLD_REASON | InvoiceBatchHoldReason | — |
+| INVOICE_CURRENCY_CODE | InvoiceBatchInvoiceCurrencyCode | — |
+| INVOICE_TYPE_LOOKUP_CODE | InvoiceBatchInvoiceTypeLookupCode | — |
+| LAST_UPDATE_DATE | InvoiceBatchLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | InvoiceBatchLastUpdateLogin | — |
+| LAST_UPDATED_BY | InvoiceBatchLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | InvoiceBatchObjectVersionNumber | — |
+| ORG_ID | InvoiceBatchOrgId | — |
+| PAY_GROUP_LOOKUP_CODE | InvoiceBatchPayGroupLookupCode | — |
+| PAYMENT_CURRENCY_CODE | InvoiceBatchPaymentCurrencyCode | — |
+| PAYMENT_PRIORITY | InvoiceBatchPaymentPriority | — |
+| TERMS_ID | InvoiceBatchTermsId | — |
+
+### [[invoicebatchextractpvo|InvoiceBatchExtractPVO]] (OTHER · BICC: 10/10)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BATCH_DATE | ApBatchesAllBatchDate | ✅ |
+| BATCH_ID | ApBatchesAllBatchId | ✅ |
+| BATCH_NAME | ApBatchesAllBatchName | ✅ |
+| CREATED_BY | ApBatchesAllCreatedBy | ✅ |
+| CREATION_DATE | ApBatchesAllCreationDate | ✅ |
+| LAST_UPDATE_DATE | ApBatchesAllLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ApBatchesAllLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | ApBatchesAllLastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | ApBatchesAllObjectVersionNumber | ✅ |
+| ORG_ID | ApBatchesAllOrgId | ✅ |
+
+### [[invoiceheaderpvo|InvoiceHeaderPVO]] (AP · BICC: 2/2)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BATCH_ID | InvoiceBatchBatchId | ✅ |
+| BATCH_NAME | InvoiceBatchBatchName | ✅ |
+
+### [[invoicelinepvo|InvoiceLinePVO]] (AP · BICC: 2/2)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BATCH_ID | InvoiceBatchBatchId | ✅ |
+| BATCH_NAME | InvoiceBatchBatchName | ✅ |
+
+### [[paiddisbursementschedulepvo|PaidDisbursementSchedulePVO]] (AP · BICC: 1/2)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BATCH_ID | InvoiceBatchBatchId | — |
+| BATCH_NAME | InvoiceBatchBatchName | ✅ |
+
+### [[paymenthistorydistributionpvo|PaymentHistoryDistributionPVO]] (AP · BICC: 2/3)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BATCH_ID | InvoiceBatchBatchId | — |
+| BATCH_NAME | InvoiceBatchBatchName | ✅ |
+| LAST_UPDATE_DATE | InvoiceBatchLastUpdateDate | ✅ |
+
+### [[prepaymentappliationdistributionpvo|PrepaymentAppliationDistributionPVO]] (AP · BICC: 2/4)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BATCH_ID | InvoiceBatchBatchId | — |
+| BATCH_ID | InvoiceBatchDistBatchId | — |
+| LAST_UPDATE_DATE | InvoiceBatchDistLastUpdateDate | ✅ |
+| LAST_UPDATE_DATE | InvoiceBatchLastUpdateDate | ✅ |

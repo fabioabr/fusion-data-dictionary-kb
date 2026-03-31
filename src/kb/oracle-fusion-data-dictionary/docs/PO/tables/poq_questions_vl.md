@@ -134,6 +134,294 @@ WHERE  q.MANDATORY_FLAG = 'Y'
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[qualareaquestionpvo|QualAreaQuestionPVO]] (PO · BICC: 75/77)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTIVATION_DATE | ChildQuestionActivationDate | ✅ |
+| ACTIVATION_DATE | QuestionActivationDate | ✅ |
+| ALLOW_RESP_COMMENT_FLAG | ChildQuestionAllowRespCommentFlag | ✅ |
+| ALLOW_RESP_COMMENT_FLAG | QuestionAllowRespCommentFlag | ✅ |
+| ATTACHMENT_ALLOWED_CODE | ChildQuestionAttachmentAllowedCode | ✅ |
+| ATTACHMENT_ALLOWED_CODE | QuestionAttachmentAllowedCode | ✅ |
+| CREATED_BY | ChildQuestionCreatedBy | ✅ |
+| CREATED_BY | QuestionCreatedBy | ✅ |
+| CREATION_DATE | ChildQuestionCreationDate | ✅ |
+| CREATION_DATE | QuestionCreationDate | ✅ |
+| CREATION_SOURCE | ChildQuestionCreationSource | — |
+| CREATION_SOURCE | CreationSource | — |
+| CRITICAL_QUESTION_FLAG | ChildQuestionCriticalQuestionFlag | ✅ |
+| CRITICAL_QUESTION_FLAG | QuestionCriticalQuestionFlag | ✅ |
+| DISPLAY_PREFERRED_RESP_FLAG | ChildQuestionDisplayPreferredRespFlag | ✅ |
+| DISPLAY_PREFERRED_RESP_FLAG | QuestionDisplayPreferredRespFlag | ✅ |
+| LAST_UPDATE_DATE | ChildQuestionLastUpdateDate | ✅ |
+| LAST_UPDATE_DATE | QuestionLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ChildQuestionLastUpdateLogin | ✅ |
+| LAST_UPDATE_LOGIN | QuestionLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | ChildQuestionLastUpdatedBy | ✅ |
+| LAST_UPDATED_BY | QuestionLastUpdatedBy | ✅ |
+| LATEST_REVISION_FLAG | ChildQuestionLatestRevisionFlag | ✅ |
+| LATEST_REVISION_FLAG | QuestionLatestRevisionFlag | ✅ |
+| MAXIMUM_SCORE | ChildQuestionMaximumScore | ✅ |
+| MAXIMUM_SCORE | QuestionMaximumScore | ✅ |
+| OBJECT_VERSION_NUMBER | ChildQuestionObjectVersionNumber | ✅ |
+| OBJECT_VERSION_NUMBER | QuestionObjectVersionNumber | ✅ |
+| ORIGINAL_QUESTION_ID | ChildQuestionOriginalQuestionId | ✅ |
+| ORIGINAL_QUESTION_ID | QuestionOriginalQuestionId | ✅ |
+| OWNER_ID | ChildQuestionOwnerId | ✅ |
+| OWNER_ID | QuestionOwnerId | ✅ |
+| PREFERRED_RESPONSE_DATE | ChildQuestionPreferredResponseDate | ✅ |
+| PREFERRED_RESPONSE_DATE | QuestionPreferredResponseDate | ✅ |
+| PREFERRED_RESPONSE_DATETIME | ChildQuestionPreferredResponseDatetime | ✅ |
+| PREFERRED_RESPONSE_DATETIME | QuestionPreferredResponseDatetime | ✅ |
+| PREFERRED_RESPONSE_NUMBER | ChildQuestionPreferredResponseNumber | ✅ |
+| PREFERRED_RESPONSE_NUMBER | QuestionPreferredResponseNumber | ✅ |
+| PREFERRED_RESPONSE_TEXT | ChildQuestionPreferredResponseText | ✅ |
+| PREFERRED_RESPONSE_TEXT | QuestionPreferredResponseText | ✅ |
+| QUESTION_HINT | ChildQuestionQuestionHint | ✅ |
+| QUESTION_HINT | QuestionQuestionHint | ✅ |
+| QUESTION_ID | ChildQuestionQuestionId | ✅ |
+| QUESTION_ID | QuestionQuestionId | ✅ |
+| QUESTION_LEVEL | ChildQuestionQuestionLevel | ✅ |
+| QUESTION_LEVEL | QuestionQuestionLevel | ✅ |
+| QUESTION_NAME | ChildQuestionQuestionName | ✅ |
+| QUESTION_NAME | QuestionQuestionName | ✅ |
+| QUESTION_STATUS | ChildQuestionQuestionStatus | ✅ |
+| QUESTION_STATUS | QuestionQuestionStatus | ✅ |
+| QUESTION_SURVEY_FLAG | QuestionSurveyFlag | ✅ |
+| QUESTION_TEXT | ChildQuestionQuestionText | ✅ |
+| QUESTION_TEXT | QuestionQuestionText | ✅ |
+| QUESTION_TYPE | ChildQuestionQuestionType | ✅ |
+| QUESTION_TYPE | QuestionQuestionType | ✅ |
+| RESPONDER_TYPE | ChildQuestionResponderType | ✅ |
+| RESPONDER_TYPE | QuestionResponderType | ✅ |
+| RESPONSE_REQUIRED_FLAG | ChildQuestionResponseRequiredFlag | ✅ |
+| RESPONSE_REQUIRED_FLAG | QuestionResponseRequiredFlag | ✅ |
+| RESPONSE_TYPE | ChildQuestionResponseType | ✅ |
+| RESPONSE_TYPE | QuestionResponseType | ✅ |
+| REVISION_NUMBER | ChildQuestionRevisionNumber | ✅ |
+| REVISION_NUMBER | QuestionRevisionNumber | ✅ |
+| SCORE_FOR_NO_RESPONSE | ChildQuestionScoreForNoResponse | ✅ |
+| SCORE_FOR_NO_RESPONSE | QuestionScoreForNoResponse | ✅ |
+| SCORING_APPROACH | ChildQuestionScoringApproach | ✅ |
+| SCORING_APPROACH | QuestionScoringApproach | ✅ |
+| SCORING_METHOD | ChildQuestionScoringMethod | ✅ |
+| SCORING_METHOD | QuestionScoringMethod | ✅ |
+| STDS_ORG_CODE | ChildQuestionStdsOrgCode | ✅ |
+| STDS_ORG_CODE | QuestionStdsOrgCode | ✅ |
+| SUBJECT_CODE | ChildQuestionSubjectCode | ✅ |
+| SUBJECT_CODE | QuestionSubjectCode | ✅ |
+| SUPPLIER_ATTRIBUTE_CODE | ChildQuestionSupplierAttributeCode | ✅ |
+| SUPPLIER_ATTRIBUTE_CODE | QuestionSupplierAttributeCode | ✅ |
+| SUPPLIER_ATTRIBUTE_FLAG | ChildQuestionSupplierAttributeFlag | ✅ |
+| SUPPLIER_ATTRIBUTE_FLAG | QuestionSupplierAttributeFlag | ✅ |
+
+### [[qualarearepositoryresponsepvo|QualAreaRepositoryResponsePVO]] (PO · BICC: 33/33)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTIVATION_DATE | QuestionActivationDate | ✅ |
+| ALLOW_RESP_COMMENT_FLAG | QuestionAllowRespCommentFlag | ✅ |
+| ATTACHMENT_ALLOWED_CODE | QuestionAttachmentAllowedCode | ✅ |
+| CREATED_BY | QuestionCreatedBy | ✅ |
+| CREATION_DATE | QuestionCreationDate | ✅ |
+| CRITICAL_QUESTION_FLAG | QuestionCriticalQuestionFlag | ✅ |
+| DISPLAY_PREFERRED_RESP_FLAG | QuestionDisplayPreferredRespFlag | ✅ |
+| LAST_UPDATE_DATE | QuestionLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | QuestionLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | QuestionLastUpdatedBy | ✅ |
+| LATEST_REVISION_FLAG | QuestionLatestRevisionFlag | ✅ |
+| OBJECT_VERSION_NUMBER | QuestionObjectVersionNumber | ✅ |
+| ORIGINAL_QUESTION_ID | QuestionOriginalQuestionId | ✅ |
+| OWNER_ID | QuestionOwnerId | ✅ |
+| PREFERRED_RESPONSE_DATE | QuestionPreferredResponseDate | ✅ |
+| PREFERRED_RESPONSE_DATETIME | QuestionPreferredResponseDatetime | ✅ |
+| PREFERRED_RESPONSE_NUMBER | QuestionPreferredResponseNumber | ✅ |
+| PREFERRED_RESPONSE_TEXT | QuestionPreferredResponseText | ✅ |
+| QUESTION_HINT | QuestionQuestionHint | ✅ |
+| QUESTION_ID | QuestionQuestionId | ✅ |
+| QUESTION_LEVEL | QuestionQuestionLevel | ✅ |
+| QUESTION_NAME | QuestionQuestionName | ✅ |
+| QUESTION_STATUS | QuestionQuestionStatus | ✅ |
+| QUESTION_TEXT | QuestionQuestionText | ✅ |
+| QUESTION_TYPE | QuestionQuestionType | ✅ |
+| RESPONDER_TYPE | QuestionResponderType | ✅ |
+| RESPONSE_REQUIRED_FLAG | QuestionResponseRequiredFlag | ✅ |
+| RESPONSE_TYPE | QuestionResponseType | ✅ |
+| REVISION_NUMBER | QuestionRevisionNumber | ✅ |
+| STDS_ORG_CODE | QuestionStdsOrgCode | ✅ |
+| SUBJECT_CODE | QuestionSubjectCode | ✅ |
+| SUPPLIER_ATTRIBUTE_CODE | QuestionSupplierAttributeCode | ✅ |
+| SUPPLIER_ATTRIBUTE_FLAG | QuestionSupplierAttributeFlag | ✅ |
+
+### [[questionacceptableresponsespvo|QuestionAcceptableResponsesPVO]] (PO · BICC: 33/34)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTIVATION_DATE | QuestionActivationDate | ✅ |
+| ALLOW_RESP_COMMENT_FLAG | QuestionAllowRespCommentFlag | ✅ |
+| ATTACHMENT_ALLOWED_CODE | QuestionAttachmentAllowedCode | ✅ |
+| CREATED_BY | QuestionCreatedBy | ✅ |
+| CREATION_DATE | QuestionCreationDate | ✅ |
+| CRITICAL_QUESTION_FLAG | QuestionCriticalQuestionFlag | ✅ |
+| DISPLAY_PREFERRED_RESP_FLAG | QuestionDisplayPreferredRespFlag | ✅ |
+| LAST_UPDATE_DATE | QuestionLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | QuestionLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | QuestionLastUpdatedBy | ✅ |
+| LATEST_REVISION_FLAG | QuestionLatestRevisionFlag | ✅ |
+| OBJECT_VERSION_NUMBER | QuestionObjectVersionNumber | ✅ |
+| ORIGINAL_QUESTION_ID | QuestionOriginalQuestionId | ✅ |
+| OWNER_ID | QuestionOwnerId | ✅ |
+| PREFERRED_RESPONSE_DATE | QuestionPreferredResponseDate | ✅ |
+| PREFERRED_RESPONSE_DATETIME | QuestionPreferredResponseDatetime | ✅ |
+| PREFERRED_RESPONSE_NUMBER | QuestionPreferredResponseNumber | ✅ |
+| PREFERRED_RESPONSE_TEXT | QuestionPreferredResponseText | ✅ |
+| QUESTION_HINT | QuestionQuestionHint | ✅ |
+| QUESTION_ID | QuestionQuestionId | ✅ |
+| QUESTION_LEVEL | QuestionQuestionLevel | ✅ |
+| QUESTION_NAME | QuestionQuestionName | ✅ |
+| QUESTION_STATUS | QuestionQuestionStatus | ✅ |
+| QUESTION_TEXT | QuestionQuestionText | ✅ |
+| QUESTION_TYPE | QuestionQuestionType | ✅ |
+| QUESTION_USAGE_CODE | QuestionUsageCode | — |
+| RESPONDER_TYPE | QuestionResponderType | ✅ |
+| RESPONSE_REQUIRED_FLAG | QuestionResponseRequiredFlag | ✅ |
+| RESPONSE_TYPE | QuestionResponseType | ✅ |
+| REVISION_NUMBER | QuestionRevisionNumber | ✅ |
+| STDS_ORG_CODE | QuestionStdsOrgCode | ✅ |
+| SUBJECT_CODE | QuestionSubjectCode | ✅ |
+| SUPPLIER_ATTRIBUTE_CODE | QuestionSupplierAttributeCode | ✅ |
+| SUPPLIER_ATTRIBUTE_FLAG | QuestionSupplierAttributeFlag | ✅ |
+
+### [[questionpvo|QuestionPVO]] (PO · BICC: 75/78)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTIVATION_DATE | ChildQuestionActivationDate | ✅ |
+| ACTIVATION_DATE | QuestionActivationDate | ✅ |
+| ALLOW_RESP_COMMENT_FLAG | ChildQuestionAllowRespCommentFlag | ✅ |
+| ALLOW_RESP_COMMENT_FLAG | QuestionAllowRespCommentFlag | ✅ |
+| ATTACHMENT_ALLOWED_CODE | ChildQuestionAttachmentAllowedCode | ✅ |
+| ATTACHMENT_ALLOWED_CODE | QuestionAttachmentAllowedCode | ✅ |
+| CREATED_BY | ChildQuestionCreatedBy | ✅ |
+| CREATED_BY | QuestionCreatedBy | ✅ |
+| CREATION_DATE | ChildQuestionCreationDate | ✅ |
+| CREATION_DATE | QuestionCreationDate | ✅ |
+| CREATION_SOURCE | ChildQuestionCreationSource | — |
+| CREATION_SOURCE | CreationSource | — |
+| CRITICAL_QUESTION_FLAG | ChildQuestionCriticalQuestionFlag | ✅ |
+| CRITICAL_QUESTION_FLAG | QuestionCriticalQuestionFlag | ✅ |
+| DISPLAY_PREFERRED_RESP_FLAG | ChildQuestionDisplayPreferredRespFlag | ✅ |
+| DISPLAY_PREFERRED_RESP_FLAG | QuestionDisplayPreferredRespFlag | ✅ |
+| LAST_UPDATE_DATE | ChildQuestionLastUpdateDate | ✅ |
+| LAST_UPDATE_DATE | QuestionLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ChildQuestionLastUpdateLogin | ✅ |
+| LAST_UPDATE_LOGIN | QuestionLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | ChildQuestionLastUpdatedBy | ✅ |
+| LAST_UPDATED_BY | QuestionLastUpdatedBy | ✅ |
+| LATEST_REVISION_FLAG | ChildQuestionLatestRevisionFlag | ✅ |
+| LATEST_REVISION_FLAG | QuestionLatestRevisionFlag | ✅ |
+| MAXIMUM_SCORE | ChildQuestionMaximumScore | ✅ |
+| MAXIMUM_SCORE | QuestionMaximumScore | ✅ |
+| OBJECT_VERSION_NUMBER | ChildQuestionObjectVersionNumber | ✅ |
+| OBJECT_VERSION_NUMBER | QuestionObjectVersionNumber | ✅ |
+| ORIGINAL_QUESTION_ID | ChildQuestionOriginalQuestionId | ✅ |
+| ORIGINAL_QUESTION_ID | QuestionOriginalQuestionId | ✅ |
+| OWNER_ID | ChildQuestionOwnerId | ✅ |
+| OWNER_ID | QuestionOwnerId | ✅ |
+| PREFERRED_RESPONSE_DATE | ChildQuestionPreferredResponseDate | ✅ |
+| PREFERRED_RESPONSE_DATE | QuestionPreferredResponseDate | ✅ |
+| PREFERRED_RESPONSE_DATETIME | ChildQuestionPreferredResponseDatetime | ✅ |
+| PREFERRED_RESPONSE_DATETIME | QuestionPreferredResponseDatetime | ✅ |
+| PREFERRED_RESPONSE_NUMBER | ChildQuestionPreferredResponseNumber | ✅ |
+| PREFERRED_RESPONSE_NUMBER | QuestionPreferredResponseNumber | ✅ |
+| PREFERRED_RESPONSE_TEXT | ChildQuestionPreferredResponseText | ✅ |
+| PREFERRED_RESPONSE_TEXT | QuestionPreferredResponseText | ✅ |
+| QUESTION_HINT | ChildQuestionQuestionHint | ✅ |
+| QUESTION_HINT | QuestionQuestionHint | ✅ |
+| QUESTION_ID | QuestionId | ✅ |
+| QUESTION_ID | QuestionId1 | ✅ |
+| QUESTION_LEVEL | ChildQuestionQuestionLevel | ✅ |
+| QUESTION_LEVEL | QuestionQuestionLevel | ✅ |
+| QUESTION_NAME | ChildQuestionQuestionName | ✅ |
+| QUESTION_NAME | QuestionQuestionName | ✅ |
+| QUESTION_STATUS | ChildQuestionQuestionStatus | ✅ |
+| QUESTION_STATUS | QuestionQuestionStatus | ✅ |
+| QUESTION_SURVEY_FLAG | QuestionSurveyFlag | ✅ |
+| QUESTION_TEXT | ChildQuestionQuestionText | ✅ |
+| QUESTION_TEXT | QuestionQuestionText | ✅ |
+| QUESTION_TYPE | ChildQuestionQuestionType | ✅ |
+| QUESTION_TYPE | QuestionQuestionType | ✅ |
+| QUESTION_USAGE_CODE | QuestionUsageCode | — |
+| RESPONDER_TYPE | ChildQuestionResponderType | ✅ |
+| RESPONDER_TYPE | QuestionResponderType | ✅ |
+| RESPONSE_REQUIRED_FLAG | ChildQuestionResponseRequiredFlag | ✅ |
+| RESPONSE_REQUIRED_FLAG | QuestionResponseRequiredFlag | ✅ |
+| RESPONSE_TYPE | ChildQuestionResponseType | ✅ |
+| RESPONSE_TYPE | QuestionResponseType | ✅ |
+| REVISION_NUMBER | ChildQuestionRevisionNumber | ✅ |
+| REVISION_NUMBER | QuestionRevisionNumber | ✅ |
+| SCORE_FOR_NO_RESPONSE | ChildQuestionScoreForNoResponse | ✅ |
+| SCORE_FOR_NO_RESPONSE | QuestionScoreForNoResponse | ✅ |
+| SCORING_APPROACH | ChildQuestionScoringApproach | ✅ |
+| SCORING_APPROACH | QuestionScoringApproach | ✅ |
+| SCORING_METHOD | ChildQuestionScoringMethod | ✅ |
+| SCORING_METHOD | QuestionScoringMethod | ✅ |
+| STDS_ORG_CODE | ChildQuestionStdsOrgCode | ✅ |
+| STDS_ORG_CODE | QuestionStdsOrgCode | ✅ |
+| SUBJECT_CODE | ChildQuestionSubjectCode | ✅ |
+| SUBJECT_CODE | QuestionSubjectCode | ✅ |
+| SUPPLIER_ATTRIBUTE_CODE | ChildQuestionSupplierAttributeCode | ✅ |
+| SUPPLIER_ATTRIBUTE_CODE | QuestionSupplierAttributeCode | ✅ |
+| SUPPLIER_ATTRIBUTE_FLAG | ChildQuestionSupplierAttributeFlag | ✅ |
+| SUPPLIER_ATTRIBUTE_FLAG | QuestionSupplierAttributeFlag | ✅ |
+
+### [[responserepositoryvaluespvo|ResponseRepositoryValuesPVO]] (PO · BICC: 37/37)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTIVATION_DATE | QuestionActivationDate | ✅ |
+| ALLOW_RESP_COMMENT_FLAG | QuestionAllowRespCommentFlag | ✅ |
+| ATTACHMENT_ALLOWED_CODE | QuestionAttachmentAllowedCode | ✅ |
+| CREATED_BY | QuestionCreatedBy | ✅ |
+| CREATION_DATE | QuestionCreationDate | ✅ |
+| CRITICAL_QUESTION_FLAG | QuestionCriticalQuestionFlag | ✅ |
+| DISPLAY_PREFERRED_RESP_FLAG | QuestionDisplayPreferredRespFlag | ✅ |
+| LAST_UPDATE_DATE | QuestionLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | QuestionLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | QuestionLastUpdatedBy | ✅ |
+| LATEST_REVISION_FLAG | QuestionLatestRevisionFlag | ✅ |
+| MAXIMUM_SCORE | QuestionMaximumScore | ✅ |
+| OBJECT_VERSION_NUMBER | QuestionObjectVersionNumber | ✅ |
+| ORIGINAL_QUESTION_ID | QuestionOriginalQuestionId | ✅ |
+| OWNER_ID | QuestionOwnerId | ✅ |
+| PREFERRED_RESPONSE_DATE | QuestionPreferredResponseDate | ✅ |
+| PREFERRED_RESPONSE_DATETIME | QuestionPreferredResponseDatetime | ✅ |
+| PREFERRED_RESPONSE_NUMBER | QuestionPreferredResponseNumber | ✅ |
+| PREFERRED_RESPONSE_TEXT | QuestionPreferredResponseText | ✅ |
+| QUESTION_HINT | QuestionQuestionHint | ✅ |
+| QUESTION_ID | QuestionQuestionId | ✅ |
+| QUESTION_LEVEL | QuestionQuestionLevel | ✅ |
+| QUESTION_NAME | QuestionQuestionName | ✅ |
+| QUESTION_STATUS | QuestionQuestionStatus | ✅ |
+| QUESTION_TEXT | QuestionQuestionText | ✅ |
+| QUESTION_TYPE | QuestionQuestionType | ✅ |
+| RESPONDER_TYPE | QuestionResponderType | ✅ |
+| RESPONSE_REQUIRED_FLAG | QuestionResponseRequiredFlag | ✅ |
+| RESPONSE_TYPE | QuestionResponseType | ✅ |
+| REVISION_NUMBER | QuestionRevisionNumber | ✅ |
+| SCORE_FOR_NO_RESPONSE | QuestionScoreForNoResponse | ✅ |
+| SCORING_APPROACH | QuestionScoringApproach | ✅ |
+| SCORING_METHOD | QuestionScoringMethod | ✅ |
+| STDS_ORG_CODE | QuestionStdsOrgCode | ✅ |
+| SUBJECT_CODE | QuestionSubjectCode | ✅ |
+| SUPPLIER_ATTRIBUTE_CODE | QuestionSupplierAttributeCode | ✅ |
+| SUPPLIER_ATTRIBUTE_FLAG | QuestionSupplierAttributeFlag | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — Supplier Qualification Management](https://docs.oracle.com/en/cloud/saas/procurement/25a/oedmf/)

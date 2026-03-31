@@ -38,7 +38,6 @@ Tabela base que armazena os períodos de tempo utilizados para geração de rela
 > [!note] Sufixo _B
 > O sufixo `_B` indica tabela **base** — contém os dados não traduzíveis. A tabela correspondente `_TL` armazena as traduções.
 
-
 ---
 
 ## 🧠 Propósito de Negócio
@@ -102,6 +101,160 @@ WHERE  NVL(t.ENABLED_FLAG, 'Y') = 'Y'
 
 - Tabela base: contém dados não traduzíveis. Utilize a view `_VL` correspondente para consultas com tradução.
 - Área funcional: Time and Reporting dentro do Oracle Fusion Cloud HCM.
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[approvaltimeperiod|ApprovalTimePeriod]] (GL · BICC: 15/25)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACCRUAL_USAGE | RepeatingTimePeriodPEOAccrualUsage | — |
+| APPROVAL_USAGE | RepeatingTimePeriodPEOApprovalUsage | — |
+| BALANCE_USAGE | RepeatingTimePeriodPEOBalanceUsage | — |
+| CREATED_BY | RepeatingTimePeriodPEOCreatedBy | ✅ |
+| CREATION_DATE | RepeatingTimePeriodPEOCreationDate | ✅ |
+| ENTERPRISE_ID | RepeatingTimePeriodPEOEnterpriseId | — |
+| LAST_UPDATE_DATE | RepeatingTimePeriodPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | RepeatingTimePeriodPEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | RepeatingTimePeriodPEOLastUpdatedBy | ✅ |
+| MODULE_ID | RepeatingTimePeriodPEOModuleId | — |
+| MONTH_TYPE | RepeatingTimePeriodPEOMonthType | ✅ |
+| MULTIPLE | RepeatingTimePeriodPEOMultiple | ✅ |
+| OBJECT_VERSION_NUMBER | RepeatingTimePeriodPEOObjectVersionNumber | — |
+| ONE_OR_MANY | RepeatingTimePeriodPEOOneOrMany | ✅ |
+| OVERTIME_USAGE | RepeatingTimePeriodPEOOvertimeUsage | — |
+| PERIOD_CD | RepeatingTimePeriodPEOPeriodCd | ✅ |
+| PERIOD_CLASS | RepeatingTimePeriodPEOPeriodClass | ✅ |
+| PERIOD_LENGTH | RepeatingTimePeriodPEOPeriodLength | ✅ |
+| PERIOD_START_DATE | RepeatingTimePeriodPEOPeriodStartDate | ✅ |
+| PERIOD_TYPE | RepeatingTimePeriodPEOPeriodType | — |
+| REFERENCE_DATE | RepeatingTimePeriodPEOReferenceDate | ✅ |
+| REPEATING_TM_PERIOD_ID | RepeatingTimePeriodPEORepeatingTmPeriodId | ✅ |
+| RULE_USAGE | RepeatingTimePeriodPEORuleUsage | — |
+| TIME_ENTRY_USAGE | RepeatingTimePeriodPEOTimeEntryUsage | — |
+| WEEK_TYPE | RepeatingTimePeriodPEOWeekType | ✅ |
+
+### [[overtimetimeperiod|OvertimeTimePeriod]] (GL · BICC: 15/25)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACCRUAL_USAGE | RepeatingTimePeriodPEOAccrualUsage | — |
+| APPROVAL_USAGE | RepeatingTimePeriodPEOApprovalUsage | — |
+| BALANCE_USAGE | RepeatingTimePeriodPEOBalanceUsage | — |
+| CREATED_BY | RepeatingTimePeriodPEOCreatedBy | ✅ |
+| CREATION_DATE | RepeatingTimePeriodPEOCreationDate | ✅ |
+| ENTERPRISE_ID | RepeatingTimePeriodPEOEnterpriseId | — |
+| LAST_UPDATE_DATE | RepeatingTimePeriodPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | RepeatingTimePeriodPEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | RepeatingTimePeriodPEOLastUpdatedBy | ✅ |
+| MODULE_ID | RepeatingTimePeriodPEOModuleId | — |
+| MONTH_TYPE | RepeatingTimePeriodPEOMonthType | ✅ |
+| MULTIPLE | RepeatingTimePeriodPEOMultiple | ✅ |
+| OBJECT_VERSION_NUMBER | RepeatingTimePeriodPEOObjectVersionNumber | — |
+| ONE_OR_MANY | RepeatingTimePeriodPEOOneOrMany | ✅ |
+| OVERTIME_USAGE | RepeatingTimePeriodPEOOvertimeUsage | — |
+| PERIOD_CD | RepeatingTimePeriodPEOPeriodCd | ✅ |
+| PERIOD_CLASS | RepeatingTimePeriodPEOPeriodClass | ✅ |
+| PERIOD_LENGTH | RepeatingTimePeriodPEOPeriodLength | ✅ |
+| PERIOD_START_DATE | RepeatingTimePeriodPEOPeriodStartDate | ✅ |
+| PERIOD_TYPE | RepeatingTimePeriodPEOPeriodType | — |
+| REFERENCE_DATE | RepeatingTimePeriodPEOReferenceDate | ✅ |
+| REPEATING_TM_PERIOD_ID | RepeatingTimePeriodPEORepeatingTmPeriodId | ✅ |
+| RULE_USAGE | RepeatingTimePeriodPEORuleUsage | — |
+| TIME_ENTRY_USAGE | RepeatingTimePeriodPEOTimeEntryUsage | — |
+| WEEK_TYPE | RepeatingTimePeriodPEOWeekType | ✅ |
+
+### [[repeatingtimeperiod|RepeatingTimePeriod]] (GL · BICC: 25/25)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACCRUAL_USAGE | RepeatingTimePeriodPEOAccrualUsage | ✅ |
+| APPROVAL_USAGE | RepeatingTimePeriodPEOApprovalUsage | ✅ |
+| BALANCE_USAGE | RepeatingTimePeriodPEOBalanceUsage | ✅ |
+| CREATED_BY | RepeatingTimePeriodPEOCreatedBy | ✅ |
+| CREATION_DATE | RepeatingTimePeriodPEOCreationDate | ✅ |
+| ENTERPRISE_ID | RepeatingTimePeriodPEOEnterpriseId | ✅ |
+| LAST_UPDATE_DATE | RepeatingTimePeriodPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | RepeatingTimePeriodPEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | RepeatingTimePeriodPEOLastUpdatedBy | ✅ |
+| MODULE_ID | RepeatingTimePeriodPEOModuleId | ✅ |
+| MONTH_TYPE | RepeatingTimePeriodPEOMonthType | ✅ |
+| MULTIPLE | RepeatingTimePeriodPEOMultiple | ✅ |
+| OBJECT_VERSION_NUMBER | RepeatingTimePeriodPEOObjectVersionNumber | ✅ |
+| ONE_OR_MANY | RepeatingTimePeriodPEOOneOrMany | ✅ |
+| OVERTIME_USAGE | RepeatingTimePeriodPEOOvertimeUsage | ✅ |
+| PERIOD_CD | RepeatingTimePeriodPEOPeriodCd | ✅ |
+| PERIOD_CLASS | RepeatingTimePeriodPEOPeriodClass | ✅ |
+| PERIOD_LENGTH | RepeatingTimePeriodPEOPeriodLength | ✅ |
+| PERIOD_START_DATE | RepeatingTimePeriodPEOPeriodStartDate | ✅ |
+| PERIOD_TYPE | RepeatingTimePeriodPEOPeriodType | ✅ |
+| REFERENCE_DATE | RepeatingTimePeriodPEOReferenceDate | ✅ |
+| REPEATING_TM_PERIOD_ID | RepeatingTimePeriodPEORepeatingTmPeriodId | ✅ |
+| RULE_USAGE | RepeatingTimePeriodPEORuleUsage | ✅ |
+| TIME_ENTRY_USAGE | RepeatingTimePeriodPEOTimeEntryUsage | ✅ |
+| WEEK_TYPE | RepeatingTimePeriodPEOWeekType | ✅ |
+
+### [[resolvedtimeperiod|ResolvedTimePeriod]] (GL · BICC: 20/25)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACCRUAL_USAGE | RepeatingTimePeriodPEOAccrualUsage | ✅ |
+| APPROVAL_USAGE | RepeatingTimePeriodPEOApprovalUsage | ✅ |
+| BALANCE_USAGE | RepeatingTimePeriodPEOBalanceUsage | ✅ |
+| CREATED_BY | RepeatingTimePeriodPEOCreatedBy1 | ✅ |
+| CREATION_DATE | RepeatingTimePeriodPEOCreationDate1 | ✅ |
+| ENTERPRISE_ID | RepeatingTimePeriodPEOnterpriseId1 | — |
+| LAST_UPDATE_DATE | RepeatingTimePeriodPEOLastUpdateDate1 | ✅ |
+| LAST_UPDATE_LOGIN | RepeatingTimePeriodPEOLastUpdateLogin1 | ✅ |
+| LAST_UPDATED_BY | RepeatingTimePeriodPEOLastUpdatedBy1 | ✅ |
+| MODULE_ID | RepeatingTimePeriodPEOModuleId | — |
+| MONTH_TYPE | RepeatingTimePeriodPEOMonthType | ✅ |
+| MULTIPLE | RepeatingTimePeriodPEOMultiple | ✅ |
+| OBJECT_VERSION_NUMBER | RepeatingTimePeriodPEOObjectVersionNumber1 | — |
+| ONE_OR_MANY | RepeatingTimePeriodPEOOneOrMany | ✅ |
+| OVERTIME_USAGE | RepeatingTimePeriodPEOOvertimeUsage | ✅ |
+| PERIOD_CD | RepeatingTimePeriodPEOPeriodCd | ✅ |
+| PERIOD_CLASS | RepeatingTimePeriodPEOPeriodClass | ✅ |
+| PERIOD_LENGTH | RepeatingTimePeriodPEOPeriodLength | ✅ |
+| PERIOD_START_DATE | RepeatingTimePeriodPEOPeriodStartDate | ✅ |
+| PERIOD_TYPE | RepeatingTimePeriodPEOPeriodType | — |
+| REFERENCE_DATE | RepeatingTimePeriodPEOReferenceDate | ✅ |
+| REPEATING_TM_PERIOD_ID | RepeatingTimePeriodPEORepeatingTmPeriodId1 | — |
+| RULE_USAGE | RepeatingTimePeriodPEORuleUsage | ✅ |
+| TIME_ENTRY_USAGE | RepeatingTimePeriodPEOTimeEntryUsage | ✅ |
+| WEEK_TYPE | RepeatingTimePeriodPEOWeekType | ✅ |
+
+### [[timecardtimeperiod|TimecardTimePeriod]] (GL · BICC: 15/25)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACCRUAL_USAGE | RepeatingTimePeriodPEOAccrualUsage | — |
+| APPROVAL_USAGE | RepeatingTimePeriodPEOApprovalUsage | — |
+| BALANCE_USAGE | RepeatingTimePeriodPEOBalanceUsage | — |
+| CREATED_BY | RepeatingTimePeriodPEOCreatedBy | ✅ |
+| CREATION_DATE | RepeatingTimePeriodPEOCreationDate | ✅ |
+| ENTERPRISE_ID | RepeatingTimePeriodPEOEnterpriseId | — |
+| LAST_UPDATE_DATE | RepeatingTimePeriodPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | RepeatingTimePeriodPEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | RepeatingTimePeriodPEOLastUpdatedBy | ✅ |
+| MODULE_ID | RepeatingTimePeriodPEOModuleId | — |
+| MONTH_TYPE | RepeatingTimePeriodPEOMonthType | ✅ |
+| MULTIPLE | RepeatingTimePeriodPEOMultiple | ✅ |
+| OBJECT_VERSION_NUMBER | RepeatingTimePeriodPEOObjectVersionNumber | — |
+| ONE_OR_MANY | RepeatingTimePeriodPEOOneOrMany | ✅ |
+| OVERTIME_USAGE | RepeatingTimePeriodPEOOvertimeUsage | — |
+| PERIOD_CD | RepeatingTimePeriodPEOPeriodCd | ✅ |
+| PERIOD_CLASS | RepeatingTimePeriodPEOPeriodClass | ✅ |
+| PERIOD_LENGTH | RepeatingTimePeriodPEOPeriodLength | ✅ |
+| PERIOD_START_DATE | RepeatingTimePeriodPEOPeriodStartDate | ✅ |
+| PERIOD_TYPE | RepeatingTimePeriodPEOPeriodType | — |
+| REFERENCE_DATE | RepeatingTimePeriodPEOReferenceDate | ✅ |
+| REPEATING_TM_PERIOD_ID | RepeatingTimePeriodPEORepeatingTmPeriodId | ✅ |
+| RULE_USAGE | RepeatingTimePeriodPEORuleUsage | — |
+| TIME_ENTRY_USAGE | RepeatingTimePeriodPEOTimeEntryUsage | — |
+| WEEK_TYPE | RepeatingTimePeriodPEOWeekType | ✅ |
 
 ---
 

@@ -115,3 +115,88 @@ ORDER BY la.SEQUENCE;
 
 - [Oracle Docs — WLF_LI_ACTIVITIES_F](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/wlfliactivitiesf.html)
 - [[hcm-module-data-dictionary]] — Dossiê do módulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[activitiespvo|ActivitiesPVO]] (HCM · BICC: 13/76)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACT_ATTRIBUTE1 | ActivitiesDEOActAttribute1 | — |
+| ACT_ATTRIBUTE10 | ActivitiesDEOActAttribute10 | — |
+| ACT_ATTRIBUTE11 | ActivitiesDEOActAttribute11 | — |
+| ACT_ATTRIBUTE12 | ActivitiesDEOActAttribute12 | — |
+| ACT_ATTRIBUTE13 | ActivitiesDEOActAttribute13 | — |
+| ACT_ATTRIBUTE14 | ActivitiesDEOActAttribute14 | — |
+| ACT_ATTRIBUTE15 | ActivitiesDEOActAttribute15 | — |
+| ACT_ATTRIBUTE16 | ActivitiesDEOActAttribute16 | — |
+| ACT_ATTRIBUTE17 | ActivitiesDEOActAttribute17 | — |
+| ACT_ATTRIBUTE18 | ActivitiesDEOActAttribute18 | — |
+| ACT_ATTRIBUTE19 | ActivitiesDEOActAttribute19 | — |
+| ACT_ATTRIBUTE2 | ActivitiesDEOActAttribute2 | — |
+| ACT_ATTRIBUTE20 | ActivitiesDEOActAttribute20 | — |
+| ACT_ATTRIBUTE3 | ActivitiesDEOActAttribute3 | — |
+| ACT_ATTRIBUTE4 | ActivitiesDEOActAttribute4 | — |
+| ACT_ATTRIBUTE5 | ActivitiesDEOActAttribute5 | — |
+| ACT_ATTRIBUTE6 | ActivitiesDEOActAttribute6 | — |
+| ACT_ATTRIBUTE7 | ActivitiesDEOActAttribute7 | — |
+| ACT_ATTRIBUTE8 | ActivitiesDEOActAttribute8 | — |
+| ACT_ATTRIBUTE9 | ActivitiesDEOActAttribute9 | — |
+| ACT_ATTRIBUTE_CATEGORY | ActivitiesDEOActAttributeCategory | — |
+| ACT_ATTRIBUTE_DATE1 | ActivitiesDEOActAttributeDate1 | — |
+| ACT_ATTRIBUTE_DATE10 | ActivitiesDEOActAttributeDate10 | — |
+| ACT_ATTRIBUTE_DATE11 | ActivitiesDEOActAttributeDate11 | — |
+| ACT_ATTRIBUTE_DATE12 | ActivitiesDEOActAttributeDate12 | — |
+| ACT_ATTRIBUTE_DATE13 | ActivitiesDEOActAttributeDate13 | — |
+| ACT_ATTRIBUTE_DATE14 | ActivitiesDEOActAttributeDate14 | — |
+| ACT_ATTRIBUTE_DATE15 | ActivitiesDEOActAttributeDate15 | — |
+| ACT_ATTRIBUTE_DATE2 | ActivitiesDEOActAttributeDate2 | — |
+| ACT_ATTRIBUTE_DATE3 | ActivitiesDEOActAttributeDate3 | — |
+| ACT_ATTRIBUTE_DATE4 | ActivitiesDEOActAttributeDate4 | — |
+| ACT_ATTRIBUTE_DATE5 | ActivitiesDEOActAttributeDate5 | — |
+| ACT_ATTRIBUTE_DATE6 | ActivitiesDEOActAttributeDate6 | — |
+| ACT_ATTRIBUTE_DATE7 | ActivitiesDEOActAttributeDate7 | — |
+| ACT_ATTRIBUTE_DATE8 | ActivitiesDEOActAttributeDate8 | — |
+| ACT_ATTRIBUTE_DATE9 | ActivitiesDEOActAttributeDate9 | — |
+| ACT_ATTRIBUTE_NUMBER1 | ActivitiesDEOActAttributeNumber1 | — |
+| ACT_ATTRIBUTE_NUMBER10 | ActivitiesDEOActAttributeNumber10 | — |
+| ACT_ATTRIBUTE_NUMBER11 | ActivitiesDEOActAttributeNumber11 | — |
+| ACT_ATTRIBUTE_NUMBER12 | ActivitiesDEOActAttributeNumber12 | — |
+| ACT_ATTRIBUTE_NUMBER13 | ActivitiesDEOActAttributeNumber13 | — |
+| ACT_ATTRIBUTE_NUMBER14 | ActivitiesDEOActAttributeNumber14 | — |
+| ACT_ATTRIBUTE_NUMBER15 | ActivitiesDEOActAttributeNumber15 | — |
+| ACT_ATTRIBUTE_NUMBER16 | ActivitiesDEOActAttributeNumber16 | — |
+| ACT_ATTRIBUTE_NUMBER17 | ActivitiesDEOActAttributeNumber17 | — |
+| ACT_ATTRIBUTE_NUMBER18 | ActivitiesDEOActAttributeNumber18 | — |
+| ACT_ATTRIBUTE_NUMBER19 | ActivitiesDEOActAttributeNumber19 | — |
+| ACT_ATTRIBUTE_NUMBER2 | ActivitiesDEOActAttributeNumber2 | — |
+| ACT_ATTRIBUTE_NUMBER20 | ActivitiesDEOActAttributeNumber20 | — |
+| ACT_ATTRIBUTE_NUMBER3 | ActivitiesDEOActAttributeNumber3 | — |
+| ACT_ATTRIBUTE_NUMBER4 | ActivitiesDEOActAttributeNumber4 | — |
+| ACT_ATTRIBUTE_NUMBER5 | ActivitiesDEOActAttributeNumber5 | — |
+| ACT_ATTRIBUTE_NUMBER6 | ActivitiesDEOActAttributeNumber6 | — |
+| ACT_ATTRIBUTE_NUMBER7 | ActivitiesDEOActAttributeNumber7 | — |
+| ACT_ATTRIBUTE_NUMBER8 | ActivitiesDEOActAttributeNumber8 | — |
+| ACT_ATTRIBUTE_NUMBER9 | ActivitiesDEOActAttributeNumber9 | — |
+| ACTIVITY_ID | ActivitiesDEOActivityId | ✅ |
+| ACTIVITY_TYPE | ActivitiesDEOActivityType | ✅ |
+| COMPLETION_TYPE | ActivitiesDEOCompletionType | ✅ |
+| CONTENT_TYPE | ActivitiesDEOContentType | ✅ |
+| CREATED_BY | ActivitiesDEOCreatedBy | — |
+| CREATION_DATE | ActivitiesDEOCreationDate | — |
+| DUE_DATE | ActivitiesDEODueDate | ✅ |
+| EFFECTIVE_END_DATE | ActivitiesDEOEffectiveEndDate | ✅ |
+| EFFECTIVE_START_DATE | ActivitiesDEOEffectiveStartDate | ✅ |
+| ENTERPRISE_ID | ActivitiesDEOEnterpriseId | — |
+| LAST_UPDATE_DATE | ActivitiesDEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ActivitiesDEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | ActivitiesDEOLastUpdatedBy | — |
+| LEARNING_ITEM_ID | ActivitiesDEOLearningItemId | ✅ |
+| OBJECT_VERSION_NUMBER | ActivitiesDEOObjectVersionNumber | — |
+| PARENT_LEARNING_ITEM_ID | ActivitiesDEOParentLearningItemId | — |
+| RELATED_CONTENT_ID | ActivitiesDEORelatedContentId | ✅ |
+| SELF_COMPLETE_FLAG | ActivitiesDEOSelfCompleteFlag | ✅ |
+| TIME_ZONE | ActivitiesDEOTimeZone | ✅ |
+| VIRTUAL_CLASSROOM_URL | ActivitiesDEOVirtualClassroomUrl | ✅ |

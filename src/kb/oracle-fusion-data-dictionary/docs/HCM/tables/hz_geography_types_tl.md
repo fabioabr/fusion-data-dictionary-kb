@@ -61,3 +61,23 @@ updated_at: 2026-03-26
 ## 📎 Uso Típico
 
 (a ser preenchido na etapa 03)
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[hzgeotypepvo|HZGeoTypePVO]] (HCM · BICC: 2/11)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | HZGeoTypeTranslationPEOCreatedBy | — |
+| CREATION_DATE | HZGeoTypeTranslationPEOCreationDate | — |
+| GEOGRAPHY_TYPE | HZGeoTypeTranslationPEOGeographyType | — |
+| GEOGRAPHY_TYPE_NAME | HZGeoTypeTranslationPEOGeographyTypeName | ✅ |
+| LANGUAGE | HZGeoTypeTranslationPEOLanguage | — |
+| LAST_UPDATE_DATE | HZGeoTypeTranslationPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | HZGeoTypeTranslationPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | HZGeoTypeTranslationPEOLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | HZGeoTypeTranslationPEOObjectVersionNumber | — |
+| SEED_DATA_SOURCE | HZGeoTypeTranslationPEOSeedDataSource | — |
+| SOURCE_LANG | HZGeoTypeTranslationPEOSourceLang | — |

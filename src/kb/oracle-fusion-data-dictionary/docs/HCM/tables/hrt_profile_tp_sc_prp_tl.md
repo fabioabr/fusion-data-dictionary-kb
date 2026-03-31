@@ -103,3 +103,23 @@ WHERE  tl.PROFILE_TP_SC_PRP_ID = :p_id
 
 - [Oracle Docs — HRT_PROFILE_TP_SC_PRP_TL](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/hrtprofiletpscprptl.html)
 - [[hcm-module-data-dictionary]] — Dossie do modulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[profiletypesectionpropertypvo|ProfileTypeSectionPropertyPVO]] (HCM · BICC: 1/11)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ATTRIBUTE_LABEL | ProfileTypeSectionPropertyTrPEOAttributeLabel | — |
+| BUSINESS_GROUP_ID | ProfileTypeSectionPropertyTrPEOBusinessGroupId | — |
+| CREATED_BY | ProfileTypeSectionPropertyTrPEOCreatedBy | — |
+| CREATION_DATE | ProfileTypeSectionPropertyTrPEOCreationDate | — |
+| LANGUAGE | ProfileTypeSectionPropertyTrPEOLanguage | — |
+| LAST_UPDATE_DATE | ProfileTypeSectionPropertyTrPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ProfileTypeSectionPropertyTrPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | ProfileTypeSectionPropertyTrPEOLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | ProfileTypeSectionPropertyTrPEOObjectVersionNumber | — |
+| SECTION_PROP_ID | ProfileTypeSectionPropertyTrPEOSectionPropId | — |
+| SOURCE_LANG | SourceLang | — |

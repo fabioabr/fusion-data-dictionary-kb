@@ -104,6 +104,81 @@ WHERE  ROWNUM <= 100;
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[lifeeventpvo|LifeEventPVO]] (HCM · BICC: 11/66)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | BusinessGroupId | — |
+| CK_RLTD_PER_ELIG_FLAG | CkRltdPerEligFlag | — |
+| CM_APLY_FLAG | CmAplyFlag | — |
+| CONFIG_CHAR_1 | ConfigChar1 | — |
+| CREATED_BY | CreatedBy | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| DESC_TXT | DescTxt | ✅ |
+| EFFECTIVE_END_DATE | EffectiveEndDate | ✅ |
+| EFFECTIVE_START_DATE | EffectiveStartDate | ✅ |
+| GLOBAL_FLAG | GlobalFlag | — |
+| INSTRUCTION_TEXT | InstructionText | — |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | LastUpdatedBy | ✅ |
+| LER_ATTRIBUTE1 | LerAttribute1 | — |
+| LER_ATTRIBUTE10 | LerAttribute10 | — |
+| LER_ATTRIBUTE11 | LerAttribute11 | — |
+| LER_ATTRIBUTE12 | LerAttribute12 | — |
+| LER_ATTRIBUTE13 | LerAttribute13 | — |
+| LER_ATTRIBUTE14 | LerAttribute14 | — |
+| LER_ATTRIBUTE15 | LerAttribute15 | — |
+| LER_ATTRIBUTE16 | LerAttribute16 | — |
+| LER_ATTRIBUTE17 | LerAttribute17 | — |
+| LER_ATTRIBUTE18 | LerAttribute18 | — |
+| LER_ATTRIBUTE19 | LerAttribute19 | — |
+| LER_ATTRIBUTE2 | LerAttribute2 | — |
+| LER_ATTRIBUTE20 | LerAttribute20 | — |
+| LER_ATTRIBUTE21 | LerAttribute21 | — |
+| LER_ATTRIBUTE22 | LerAttribute22 | — |
+| LER_ATTRIBUTE23 | LerAttribute23 | — |
+| LER_ATTRIBUTE24 | LerAttribute24 | — |
+| LER_ATTRIBUTE25 | LerAttribute25 | — |
+| LER_ATTRIBUTE26 | LerAttribute26 | — |
+| LER_ATTRIBUTE27 | LerAttribute27 | — |
+| LER_ATTRIBUTE28 | LerAttribute28 | — |
+| LER_ATTRIBUTE29 | LerAttribute29 | — |
+| LER_ATTRIBUTE3 | LerAttribute3 | — |
+| LER_ATTRIBUTE30 | LerAttribute30 | — |
+| LER_ATTRIBUTE4 | LerAttribute4 | — |
+| LER_ATTRIBUTE5 | LerAttribute5 | — |
+| LER_ATTRIBUTE6 | LerAttribute6 | — |
+| LER_ATTRIBUTE7 | LerAttribute7 | — |
+| LER_ATTRIBUTE8 | LerAttribute8 | — |
+| LER_ATTRIBUTE9 | LerAttribute9 | — |
+| LER_ATTRIBUTE_CATEGORY | LerAttributeCategory | — |
+| LER_EVAL_RL | LerEvalRl | — |
+| LER_ID | LerId | ✅ |
+| LER_STAT_CD | LerStatCd | — |
+| LF_EVT_OPER_CD | LfEvtOperCd | — |
+| NAME | Name | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | — |
+| OCRD_DT_DET_CD | OcrdDtDetCd | — |
+| OVRIDG_LE_FLAG | OvridgLeFlag | ✅ |
+| PROD_CD | ProdCd | — |
+| PTNL_LER_TRTMT_CD | PtnlLerTrtmtCd | — |
+| QUALG_EVT_FLAG | QualgEvtFlag | — |
+| SELF_ASSIGNED_EVENT_FLAG | SelfAssignedEventFlag | — |
+| SHORT_CODE | ShortCode | — |
+| SHORT_NAME | ShortName | — |
+| SLCTBL_SLF_SVC_CD | SlctblSlfSvcCd | — |
+| TMLNS_DYS_NUM | TmlnsDysNum | — |
+| TMLNS_EVAL_CD | TmlnsEvalCd | — |
+| TMLNS_PERD_CD | TmlnsPerdCd | — |
+| TMLNS_PERD_RL | TmlnsPerdRl | — |
+| TYP_CD | TypCd | — |
+| WHN_TO_PRCS_CD | WhnToPrcsCd | — |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — BEN_LER_F](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/benlerf.html)

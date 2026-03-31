@@ -59,3 +59,57 @@ updated_at: 2026-03-26
 ## 📎 Uso Típico
 
 (a ser preenchido na etapa 03)
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[invoicelinepvo|InvoiceLinePVO]] (AP · BICC: 1/3)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| LANGUAGE | TaxJurisTLLanguage | — |
+| TAX_JURISDICTION_ID | TaxJurisTLTaxJurisdictionId | — |
+| TAX_JURISDICTION_NAME | TaxJurisTaxJurisdictionName | ✅ |
+
+### [[taxjurisdictionextractpvo|TaxJurisdictionExtractPVO]] (OTHER · BICC: 9/9)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | TaxJurisdictionTLCreatedBy1 | ✅ |
+| CREATION_DATE | TaxJurisdictionTLCreationDate1 | ✅ |
+| LANGUAGE | TaxJurisdictionTLLanguage | ✅ |
+| LAST_UPDATE_DATE | TaxJurisdictionTLLastUpdateDate1 | ✅ |
+| LAST_UPDATE_LOGIN | TaxJurisdictionTLLastUpdateLogin1 | ✅ |
+| LAST_UPDATED_BY | TaxJurisdictionTLLastUpdatedBy1 | ✅ |
+| SOURCE_LANG | TaxJurisdictionTLSourceLang | ✅ |
+| TAX_JURISDICTION_ID | TaxJurisdictionTLTaxJurisdictionId | ✅ |
+| TAX_JURISDICTION_NAME | TaxJurisdictionTLTaxJurisdictionName | ✅ |
+
+### [[taxjurisdictiontlextractpvo|TaxJurisdictionTLExtractPVO]] (OTHER · BICC: 9/9)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | TaxJurisdictionTLCreatedBy | ✅ |
+| CREATION_DATE | TaxJurisdictionTLCreationDate | ✅ |
+| LANGUAGE | TaxJurisdictionTLLanguage | ✅ |
+| LAST_UPDATE_DATE | TaxJurisdictionTLLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | TaxJurisdictionTLLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | TaxJurisdictionTLLastUpdatedBy | ✅ |
+| SOURCE_LANG | TaxJurisdictionTLSourceLang | ✅ |
+| TAX_JURISDICTION_ID | TaxJurisdictionTLTaxJurisdictionId | ✅ |
+| TAX_JURISDICTION_NAME | TaxJurisdictionTLTaxJurisdictionName | ✅ |
+
+### [[taxjurisdictiontranslationpvo|TaxJurisdictionTranslationPVO]] (AP · BICC: 4/9)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | TaxJurisdictionTLPEOCreatedBy | — |
+| CREATION_DATE | TaxJurisdictionTLPEOCreationDate | — |
+| LANGUAGE | Language | ✅ |
+| LAST_UPDATE_DATE | TaxJurisdictionTLPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | TaxJurisdictionTLPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | TaxJurisdictionTLPEOLastUpdatedBy | — |
+| SOURCE_LANG | TaxJurisdictionTLPEOSourceLang | — |
+| TAX_JURISDICTION_ID | TaxJurisdictionId | ✅ |
+| TAX_JURISDICTION_NAME | TaxJurisdictionTLPEOTaxJurisdictionName | ✅ |

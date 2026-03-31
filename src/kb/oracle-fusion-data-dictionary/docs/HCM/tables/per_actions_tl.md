@@ -103,6 +103,87 @@ WHERE  tl.LANGUAGE = 'PTB';
 - Sempre usar JOIN com a tabela _B para obter dados completos.
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[actionspvo|ActionsPVO]] (GL · BICC: 4/13)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_ID | ActionTranslationPEOActionId | — |
+| ACTION_NAME | ActionTranslationPEOActionName | ✅ |
+| BUSINESS_GROUP_ID | ActionTranslationPEOBusinessGroupId | — |
+| CREATED_BY | ActionTranslationPEOCreatedBy | — |
+| CREATION_DATE | ActionTranslationPEOCreationDate | — |
+| DESCRIPTION | ActionTranslationPEODescription | ✅ |
+| LANGUAGE | ActionTranslationPEOLanguage | ✅ |
+| LAST_UPDATE_DATE | ActionTranslationPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ActionTranslationPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | ActionTranslationPEOLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | ActionTranslationPEOObjectVersionNumber | — |
+| SEED_DATA_SOURCE | ActionTranslationPEOSeedDataSource | — |
+| SOURCE_LANG | ActionTranslationPEOSourceLang | — |
+
+### [[actionstranslationpvo|ActionsTranslationPVO]] (GL · BICC: 11/13)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_ID | ActionId | ✅ |
+| ACTION_NAME | ActionTranslationPEOActionName | ✅ |
+| BUSINESS_GROUP_ID | ActionTranslationPEOBusinessGroupId | — |
+| CREATED_BY | ActionTranslationPEOCreatedBy | ✅ |
+| CREATION_DATE | ActionTranslationPEOCreationDate | ✅ |
+| DESCRIPTION | ActionTranslationPEODescription | ✅ |
+| LANGUAGE | Language | ✅ |
+| LAST_UPDATE_DATE | ActionTranslationPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ActionTranslationPEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | ActionTranslationPEOLastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | ActionTranslationPEOObjectVersionNumber | ✅ |
+| SEED_DATA_SOURCE | ActionTranslationPEOSeedDataSource | — |
+| SOURCE_LANG | ActionTranslationPEOSourceLang | ✅ |
+
+### [[checklisttasktemplatepvo|ChecklistTaskTemplatePVO]] (HCM · BICC: 1/3)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_ID | ActionTranslationPEOActionId | — |
+| ACTION_NAME | ActionTranslationPEOPEOActionName | ✅ |
+| LANGUAGE | ActionTranslationPEOLanguage | — |
+
+### [[checklisttemplatepvo|ChecklistTemplatePVO]] (HCM · BICC: 1/3)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_ID | ActionTranslationPEOActionId | — |
+| ACTION_NAME | ActionTranslationPEOActionName | ✅ |
+| LANGUAGE | ActionTranslationPEOLanguage | — |
+
+### [[contractpvo|ContractPVO]] (HCM · BICC: 1/3)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_ID | ActionTranslationPEOActionId | — |
+| ACTION_NAME | ActionTranslationPEOActionName | ✅ |
+| LANGUAGE | ActionTranslationPEOLanguage | — |
+
+### [[contractpvoviewall|ContractPVOViewAll]] (HCM)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_ID | ActionTranslationPEOActionId | — |
+| ACTION_NAME | ActionTranslationPEOActionName | — |
+| LANGUAGE | ActionTranslationPEOLanguage | — |
+
+### [[gradeladderpvo|GradeLadderPVO]] (GL · BICC: 2/4)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_ID | ProgressionActionTranslationPEOActionId | — |
+| ACTION_NAME | ProgressionActionTranslationPEOActionName | ✅ |
+| LANGUAGE | ProgressionActionTranslationPEOLanguage | — |
+| LAST_UPDATE_DATE | ProgressionActionTranslationPEOLastUpdateDate | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — PER_ACTIONS_TL](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/peractionstl.html)

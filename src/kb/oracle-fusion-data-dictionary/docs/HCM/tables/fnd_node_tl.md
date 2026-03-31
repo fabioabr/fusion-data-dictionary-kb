@@ -61,3 +61,23 @@ updated_at: 2026-03-26
 ## 📎 Uso Típico
 
 (a ser preenchido na etapa 03)
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[fndnodetlvo|FndNodeTLVO]] (HCM · BICC: 11/11)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | CreatedBy | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| DESCRIPTION | Description | ✅ |
+| LANGUAGE | Language | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | LastUpdatedBy | ✅ |
+| NODE_ID | NodeId | ✅ |
+| NODE_NAME | NodeName | ✅ |
+| SOURCE_LANG | SourceLang | ✅ |
+| TREE_STRUCTURE_CODE | TreeStructureCode | ✅ |

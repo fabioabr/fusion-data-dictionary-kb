@@ -38,7 +38,6 @@ updated_at: 2026-03-25
 
 Armazena os **eventos de vida** ocorridos para cada pessoa, vinculando o colaborador ao motivo do evento de vida que dispara reavaliação de elegibilidade.
 
-
 ---
 
 ## 🧠 Propósito de Negócio
@@ -98,6 +97,259 @@ WHERE  ROWNUM <= 100;
 
 - Consultar documentação oficial Oracle para detalhes de uso.
 - Tabela do módulo Benefits (Pessoa em Evento de Vida).
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[coveredbeneficiariespvo|CoveredBeneficiariesPVO]] (HCM · BICC: 1/65)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ASSIGNMENT_ID | PersonLifeEventPEOAssignmentId | — |
+| BCKT_DT | PersonLifeEventPEOBcktDt | — |
+| BCKT_PER_IN_LER_ID | PersonLifeEventPEOBcktPerInLerId | — |
+| BENEFIT_RELATION_ID | PersonLifeEventPEOBenefitRelationId | — |
+| BUSINESS_GROUP_ID | PersonLifeEventPEOBusinessGroupId | — |
+| CLSD_DT | PersonLifeEventPEOClsdDt | — |
+| CREATED_BY | PersonLifeEventPEOCreatedBy | — |
+| CREATION_DATE | PersonLifeEventPEOCreationDate | — |
+| GROUP_PL_ID | PersonLifeEventPEOGroupPlId | — |
+| JOB_DEFINITION_NAME | PersonLifeEventPEOJobDefinitionName | — |
+| JOB_DEFINITION_PACKAGE | PersonLifeEventPEOJobDefinitionPackage | — |
+| LAST_UPDATE_DATE | PersonLifeEventPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | PersonLifeEventPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | PersonLifeEventPEOLastUpdatedBy | — |
+| LEGAL_ENTITY_ID | PersonLifeEventPEOLegalEntityId | — |
+| LER_ID | PersonLifeEventPEOLerId | — |
+| LER_TYPE_CD | PersonLifeEventPEOLerTypeCd | — |
+| LF_EVT_OCRD_DT | PersonLifeEventPEOLfEvtOcrdDt | — |
+| NTFN_DT | PersonLifeEventPEONtfnDt | — |
+| OBJECT_VERSION_NUMBER | PersonLifeEventPEOObjectVersionNumber | — |
+| PER_IN_LER_ID | PersonLifeEventPEOPerInLerId | — |
+| PER_IN_LER_STAT_CD | PersonLifeEventPEOPerInLerStatCd | — |
+| PERSON_ID | PersonLifeEventPEOPersonId | — |
+| PIL_ATTRIBUTE1 | PersonLifeEventPEOPilAttribute1 | — |
+| PIL_ATTRIBUTE10 | PersonLifeEventPEOPilAttribute10 | — |
+| PIL_ATTRIBUTE11 | PersonLifeEventPEOPilAttribute11 | — |
+| PIL_ATTRIBUTE12 | PersonLifeEventPEOPilAttribute12 | — |
+| PIL_ATTRIBUTE13 | PersonLifeEventPEOPilAttribute13 | — |
+| PIL_ATTRIBUTE14 | PersonLifeEventPEOPilAttribute14 | — |
+| PIL_ATTRIBUTE15 | PersonLifeEventPEOPilAttribute15 | — |
+| PIL_ATTRIBUTE16 | PersonLifeEventPEOPilAttribute16 | — |
+| PIL_ATTRIBUTE17 | PersonLifeEventPEOPilAttribute17 | — |
+| PIL_ATTRIBUTE18 | PersonLifeEventPEOPilAttribute18 | — |
+| PIL_ATTRIBUTE19 | PersonLifeEventPEOPilAttribute19 | — |
+| PIL_ATTRIBUTE2 | PersonLifeEventPEOPilAttribute2 | — |
+| PIL_ATTRIBUTE20 | PersonLifeEventPEOPilAttribute20 | — |
+| PIL_ATTRIBUTE21 | PersonLifeEventPEOPilAttribute21 | — |
+| PIL_ATTRIBUTE22 | PersonLifeEventPEOPilAttribute22 | — |
+| PIL_ATTRIBUTE23 | PersonLifeEventPEOPilAttribute23 | — |
+| PIL_ATTRIBUTE24 | PersonLifeEventPEOPilAttribute24 | — |
+| PIL_ATTRIBUTE25 | PersonLifeEventPEOPilAttribute25 | — |
+| PIL_ATTRIBUTE26 | PersonLifeEventPEOPilAttribute26 | — |
+| PIL_ATTRIBUTE27 | PersonLifeEventPEOPilAttribute27 | — |
+| PIL_ATTRIBUTE28 | PersonLifeEventPEOPilAttribute28 | — |
+| PIL_ATTRIBUTE29 | PersonLifeEventPEOPilAttribute29 | — |
+| PIL_ATTRIBUTE3 | PersonLifeEventPEOPilAttribute3 | — |
+| PIL_ATTRIBUTE30 | PersonLifeEventPEOPilAttribute30 | — |
+| PIL_ATTRIBUTE4 | PersonLifeEventPEOPilAttribute4 | — |
+| PIL_ATTRIBUTE5 | PersonLifeEventPEOPilAttribute5 | — |
+| PIL_ATTRIBUTE6 | PersonLifeEventPEOPilAttribute6 | — |
+| PIL_ATTRIBUTE7 | PersonLifeEventPEOPilAttribute7 | — |
+| PIL_ATTRIBUTE8 | PersonLifeEventPEOPilAttribute8 | — |
+| PIL_ATTRIBUTE9 | PersonLifeEventPEOPilAttribute9 | — |
+| PIL_ATTRIBUTE_CATEGORY | PersonLifeEventPEOPilAttributeCategory | — |
+| PROCD_DT | PersonLifeEventPEOProcdDt | — |
+| PROD_CD | PersonLifeEventPEOProdCd | — |
+| PROGRAM_APP_NAME | PersonLifeEventPEOProgramAppName | — |
+| PROGRAM_NAME | PersonLifeEventPEOProgramName | — |
+| PROGRAM_UPDATE_DATE | PersonLifeEventPEOProgramUpdateDate | — |
+| PRVS_STAT_CD | PersonLifeEventPEOPrvsStatCd | — |
+| PTNL_LER_FOR_PER_ID | PersonLifeEventPEOPtnlLerForPerId | — |
+| REQUEST_ID | PersonLifeEventPEORequestId | — |
+| STRTD_DT | PersonLifeEventPEOStrtdDt | — |
+| TRGR_TABLE_PK_ID | PersonLifeEventPEOTrgrTablePkId | — |
+| VOIDD_DT | PersonLifeEventPEOVoiddDt | — |
+
+### [[covereddependentspvo|CoveredDependentsPVO]] (HCM · BICC: 2/65)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ASSIGNMENT_ID | PersonLifeEventPEOAssignmentId | — |
+| BCKT_DT | PersonLifeEventPEOBcktDt | — |
+| BCKT_PER_IN_LER_ID | PersonLifeEventPEOBcktPerInLerId | — |
+| BENEFIT_RELATION_ID | PersonLifeEventPEOBenefitRelationId | — |
+| BUSINESS_GROUP_ID | PersonLifeEventPEOBusinessGroupId | — |
+| CLSD_DT | PersonLifeEventPEOClsdDt | — |
+| CREATED_BY | PersonLifeEventPEOCreatedBy | — |
+| CREATION_DATE | PersonLifeEventPEOCreationDate1 | — |
+| GROUP_PL_ID | PersonLifeEventPEOGroupPlId | — |
+| JOB_DEFINITION_NAME | PersonLifeEventPEOJobDefinitionName | — |
+| JOB_DEFINITION_PACKAGE | PersonLifeEventPEOJobDefinitionPackage | — |
+| LAST_UPDATE_DATE | PersonLifeEventPEOLastUpdateDate1 | ✅ |
+| LAST_UPDATE_LOGIN | PersonLifeEventPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | PersonLifeEventPEOLastUpdatedBy1 | — |
+| LEGAL_ENTITY_ID | PersonLifeEventPEOLegalEntityId | — |
+| LER_ID | PersonLifeEventPEOLerId | ✅ |
+| LER_TYPE_CD | PersonLifeEventPEOLerTypeCd | — |
+| LF_EVT_OCRD_DT | PersonLifeEventPEOLfEvtOcrdDt | — |
+| NTFN_DT | PersonLifeEventPEONtfnDt | — |
+| OBJECT_VERSION_NUMBER | PersonLifeEventPEOObjectVersionNumber | — |
+| PER_IN_LER_ID | PersonLifeEventPEOPerInLerId | — |
+| PER_IN_LER_STAT_CD | PersonLifeEventPEOPerInLerStatCd | — |
+| PERSON_ID | PersonLifeEventPEOPersonId | — |
+| PIL_ATTRIBUTE1 | PersonLifeEventPEOPilAttribute1 | — |
+| PIL_ATTRIBUTE10 | PersonLifeEventPEOPilAttribute10 | — |
+| PIL_ATTRIBUTE11 | PersonLifeEventPEOPilAttribute11 | — |
+| PIL_ATTRIBUTE12 | PersonLifeEventPEOPilAttribute12 | — |
+| PIL_ATTRIBUTE13 | PersonLifeEventPEOPilAttribute13 | — |
+| PIL_ATTRIBUTE14 | PersonLifeEventPEOPilAttribute14 | — |
+| PIL_ATTRIBUTE15 | PersonLifeEventPEOPilAttribute15 | — |
+| PIL_ATTRIBUTE16 | PersonLifeEventPEOPilAttribute16 | — |
+| PIL_ATTRIBUTE17 | PersonLifeEventPEOPilAttribute17 | — |
+| PIL_ATTRIBUTE18 | PersonLifeEventPEOPilAttribute18 | — |
+| PIL_ATTRIBUTE19 | PersonLifeEventPEOPilAttribute19 | — |
+| PIL_ATTRIBUTE2 | PersonLifeEventPEOPilAttribute2 | — |
+| PIL_ATTRIBUTE20 | PersonLifeEventPEOPilAttribute20 | — |
+| PIL_ATTRIBUTE21 | PersonLifeEventPEOPilAttribute21 | — |
+| PIL_ATTRIBUTE22 | PersonLifeEventPEOPilAttribute22 | — |
+| PIL_ATTRIBUTE23 | PersonLifeEventPEOPilAttribute23 | — |
+| PIL_ATTRIBUTE24 | PersonLifeEventPEOPilAttribute24 | — |
+| PIL_ATTRIBUTE25 | PersonLifeEventPEOPilAttribute25 | — |
+| PIL_ATTRIBUTE26 | PersonLifeEventPEOPilAttribute26 | — |
+| PIL_ATTRIBUTE27 | PersonLifeEventPEOPilAttribute27 | — |
+| PIL_ATTRIBUTE28 | PersonLifeEventPEOPilAttribute28 | — |
+| PIL_ATTRIBUTE29 | PersonLifeEventPEOPilAttribute29 | — |
+| PIL_ATTRIBUTE3 | PersonLifeEventPEOPilAttribute3 | — |
+| PIL_ATTRIBUTE30 | PersonLifeEventPEOPilAttribute30 | — |
+| PIL_ATTRIBUTE4 | PersonLifeEventPEOPilAttribute4 | — |
+| PIL_ATTRIBUTE5 | PersonLifeEventPEOPilAttribute5 | — |
+| PIL_ATTRIBUTE6 | PersonLifeEventPEOPilAttribute6 | — |
+| PIL_ATTRIBUTE7 | PersonLifeEventPEOPilAttribute7 | — |
+| PIL_ATTRIBUTE8 | PersonLifeEventPEOPilAttribute8 | — |
+| PIL_ATTRIBUTE9 | PersonLifeEventPEOPilAttribute9 | — |
+| PIL_ATTRIBUTE_CATEGORY | PersonLifeEventPEOPilAttributeCategory | — |
+| PROCD_DT | PersonLifeEventPEOProcdDt | — |
+| PROD_CD | PersonLifeEventPEOProdCd | — |
+| PROGRAM_APP_NAME | PersonLifeEventPEOProgramAppName | — |
+| PROGRAM_NAME | PersonLifeEventPEOProgramName | — |
+| PROGRAM_UPDATE_DATE | PersonLifeEventPEOProgramUpdateDate | — |
+| PRVS_STAT_CD | PersonLifeEventPEOPrvsStatCd | — |
+| PTNL_LER_FOR_PER_ID | PersonLifeEventPEOPtnlLerForPerId | — |
+| REQUEST_ID | PersonLifeEventPEORequestId | — |
+| STRTD_DT | PersonLifeEventPEOStrtdDt | — |
+| TRGR_TABLE_PK_ID | PersonLifeEventPEOTrgrTablePkId | — |
+| VOIDD_DT | PersonLifeEventPEOVoiddDt | — |
+
+### [[personlifeeventpvo|PersonLifeEventPVO]] (HCM · BICC: 15/65)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ASSIGNMENT_ID | AssignmentId | — |
+| BCKT_DT | BcktDt | ✅ |
+| BCKT_PER_IN_LER_ID | BcktPerInLerId | — |
+| BENEFIT_RELATION_ID | BenefitRelationId | — |
+| BUSINESS_GROUP_ID | BusinessGroupId | — |
+| CLSD_DT | ClsdDt | ✅ |
+| CREATED_BY | CreatedBy | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| GROUP_PL_ID | GroupPlId | — |
+| JOB_DEFINITION_NAME | JobDefinitionName | — |
+| JOB_DEFINITION_PACKAGE | JobDefinitionPackage | — |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | LastUpdatedBy | ✅ |
+| LEGAL_ENTITY_ID | LegalEntityId | — |
+| LER_ID | LerId | ✅ |
+| LER_TYPE_CD | LerTypeCd | — |
+| LF_EVT_OCRD_DT | LfEvtOcrdDt | ✅ |
+| NTFN_DT | NtfnDt | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | — |
+| PER_IN_LER_ID | PerInLerId | ✅ |
+| PER_IN_LER_STAT_CD | PerInLerStatCd | ✅ |
+| PERSON_ID | PersonId | — |
+| PIL_ATTRIBUTE1 | PilAttribute1 | — |
+| PIL_ATTRIBUTE10 | PilAttribute10 | — |
+| PIL_ATTRIBUTE11 | PilAttribute11 | — |
+| PIL_ATTRIBUTE12 | PilAttribute12 | — |
+| PIL_ATTRIBUTE13 | PilAttribute13 | — |
+| PIL_ATTRIBUTE14 | PilAttribute14 | — |
+| PIL_ATTRIBUTE15 | PilAttribute15 | — |
+| PIL_ATTRIBUTE16 | PilAttribute16 | — |
+| PIL_ATTRIBUTE17 | PilAttribute17 | — |
+| PIL_ATTRIBUTE18 | PilAttribute18 | — |
+| PIL_ATTRIBUTE19 | PilAttribute19 | — |
+| PIL_ATTRIBUTE2 | PilAttribute2 | — |
+| PIL_ATTRIBUTE20 | PilAttribute20 | — |
+| PIL_ATTRIBUTE21 | PilAttribute21 | — |
+| PIL_ATTRIBUTE22 | PilAttribute22 | — |
+| PIL_ATTRIBUTE23 | PilAttribute23 | — |
+| PIL_ATTRIBUTE24 | PilAttribute24 | — |
+| PIL_ATTRIBUTE25 | PilAttribute25 | — |
+| PIL_ATTRIBUTE26 | PilAttribute26 | — |
+| PIL_ATTRIBUTE27 | PilAttribute27 | — |
+| PIL_ATTRIBUTE28 | PilAttribute28 | — |
+| PIL_ATTRIBUTE29 | PilAttribute29 | — |
+| PIL_ATTRIBUTE3 | PilAttribute3 | — |
+| PIL_ATTRIBUTE30 | PilAttribute30 | — |
+| PIL_ATTRIBUTE4 | PilAttribute4 | — |
+| PIL_ATTRIBUTE5 | PilAttribute5 | — |
+| PIL_ATTRIBUTE6 | PilAttribute6 | — |
+| PIL_ATTRIBUTE7 | PilAttribute7 | — |
+| PIL_ATTRIBUTE8 | PilAttribute8 | — |
+| PIL_ATTRIBUTE9 | PilAttribute9 | — |
+| PIL_ATTRIBUTE_CATEGORY | PilAttributeCategory | — |
+| PROCD_DT | ProcdDt | ✅ |
+| PROD_CD | ProdCd | — |
+| PROGRAM_APP_NAME | ProgramAppName | — |
+| PROGRAM_NAME | ProgramName | — |
+| PROGRAM_UPDATE_DATE | ProgramUpdateDate | — |
+| PRVS_STAT_CD | PrvsStatCd | — |
+| PTNL_LER_FOR_PER_ID | PtnlLerForPerId | — |
+| REQUEST_ID | RequestId | — |
+| STRTD_DT | StrtdDt | ✅ |
+| TRGR_TABLE_PK_ID | TrgrTablePkId | — |
+| VOIDD_DT | VoiddDt | ✅ |
+
+### [[personlifeeventsextractpvo|PersonLifeEventsExtractPVO]] (HCM · BICC: 34/34)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ASSIGNMENT_ID | AssignmentId | ✅ |
+| BCKT_DT | BcktDt | ✅ |
+| BCKT_PER_IN_LER_ID | BcktPerInLerId | ✅ |
+| BENEFIT_RELATION_ID | BenefitRelationId | ✅ |
+| BUSINESS_GROUP_ID | BusinessGroupId | ✅ |
+| CLSD_DT | ClsdDt | ✅ |
+| CREATED_BY | CreatedBy | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| GROUP_PL_ID | GroupPlId | ✅ |
+| JOB_DEFINITION_NAME | JobDefinitionName | ✅ |
+| JOB_DEFINITION_PACKAGE | JobDefinitionPackage | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | LastUpdatedBy | ✅ |
+| LEGAL_ENTITY_ID | LegalEntityId | ✅ |
+| LER_ID | LerId | ✅ |
+| LER_TYPE_CD | LerTypeCd | ✅ |
+| LF_EVT_OCRD_DT | LfEvtOcrdDt | ✅ |
+| NTFN_DT | NtfnDt | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | ✅ |
+| PER_IN_LER_ID | PerInLerId | ✅ |
+| PER_IN_LER_STAT_CD | PerInLerStatCd | ✅ |
+| PERSON_ID | PersonId | ✅ |
+| PROCD_DT | ProcdDt | ✅ |
+| PROD_CD | ProdCd | ✅ |
+| PROGRAM_APP_NAME | ProgramAppName | ✅ |
+| PROGRAM_NAME | ProgramName | ✅ |
+| PROGRAM_UPDATE_DATE | ProgramUpdateDate | ✅ |
+| PRVS_STAT_CD | PrvsStatCd | ✅ |
+| PTNL_LER_FOR_PER_ID | PtnlLerForPerId | ✅ |
+| REQUEST_ID | RequestId | ✅ |
+| STRTD_DT | StrtdDt | ✅ |
+| TRGR_TABLE_PK_ID | TrgrTablePkId | ✅ |
+| VOIDD_DT | VoiddDt | ✅ |
 
 ---
 

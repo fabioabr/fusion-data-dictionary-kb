@@ -118,3 +118,93 @@ ORDER BY lp.PLAN_NAME;
 
 - [Oracle Docs — WLF_LEARNING_PLANS_F](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/wlflearningplansf.html)
 - [[hcm-module-data-dictionary]] — Dossiê do módulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[learningplanspvo|LearningPlansPVO]] (HCM · BICC: 7/81)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | LearningPlanDEOCreatedBy | — |
+| CREATION_DATE | LearningPlanDEOCreationDate | — |
+| EFFECTIVE_END_DATE | LearningPlanDEOEffectiveEndDate | ✅ |
+| EFFECTIVE_START_DATE | LearningPlanDEOEffectiveStartDate | ✅ |
+| ENTERPRISE_ID | LearningPlanDEOEnterpriseId | — |
+| LAST_UPDATE_DATE | LearningPlanDEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LearningPlanDEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | LearningPlanDEOLastUpdatedBy | — |
+| LEARNING_ITEM_ID | LearningPlanDEOLearningItemId | — |
+| LEARNING_PLAN_ID | LearningPlanDEOLearningPlanId | ✅ |
+| MONETARY_BUDGET | LearningPlanDEOMonetaryBudget | ✅ |
+| MONETARY_CURRENCY_CODE | LearningPlanDEOMonetaryCurrencyCode | ✅ |
+| OBJECT_VERSION_NUMBER | LearningPlanDEOObjectVersionNumber | — |
+| PLN_ATTRIBUTE1 | LearningPlanDEOPlnAttribute1 | — |
+| PLN_ATTRIBUTE10 | LearningPlanDEOPlnAttribute10 | — |
+| PLN_ATTRIBUTE11 | LearningPlanDEOPlnAttribute11 | — |
+| PLN_ATTRIBUTE12 | LearningPlanDEOPlnAttribute12 | — |
+| PLN_ATTRIBUTE13 | LearningPlanDEOPlnAttribute13 | — |
+| PLN_ATTRIBUTE14 | LearningPlanDEOPlnAttribute14 | — |
+| PLN_ATTRIBUTE15 | LearningPlanDEOPlnAttribute15 | — |
+| PLN_ATTRIBUTE16 | LearningPlanDEOPlnAttribute16 | — |
+| PLN_ATTRIBUTE17 | LearningPlanDEOPlnAttribute17 | — |
+| PLN_ATTRIBUTE18 | LearningPlanDEOPlnAttribute18 | — |
+| PLN_ATTRIBUTE19 | LearningPlanDEOPlnAttribute19 | — |
+| PLN_ATTRIBUTE2 | LearningPlanDEOPlnAttribute2 | — |
+| PLN_ATTRIBUTE20 | LearningPlanDEOPlnAttribute20 | — |
+| PLN_ATTRIBUTE21 | LearningPlanDEOPlnAttribute21 | — |
+| PLN_ATTRIBUTE22 | LearningPlanDEOPlnAttribute22 | — |
+| PLN_ATTRIBUTE23 | LearningPlanDEOPlnAttribute23 | — |
+| PLN_ATTRIBUTE24 | LearningPlanDEOPlnAttribute24 | — |
+| PLN_ATTRIBUTE25 | LearningPlanDEOPlnAttribute25 | — |
+| PLN_ATTRIBUTE26 | LearningPlanDEOPlnAttribute26 | — |
+| PLN_ATTRIBUTE27 | LearningPlanDEOPlnAttribute27 | — |
+| PLN_ATTRIBUTE28 | LearningPlanDEOPlnAttribute28 | — |
+| PLN_ATTRIBUTE29 | LearningPlanDEOPlnAttribute29 | — |
+| PLN_ATTRIBUTE3 | LearningPlanDEOPlnAttribute3 | — |
+| PLN_ATTRIBUTE30 | LearningPlanDEOPlnAttribute30 | — |
+| PLN_ATTRIBUTE4 | LearningPlanDEOPlnAttribute4 | — |
+| PLN_ATTRIBUTE5 | LearningPlanDEOPlnAttribute5 | — |
+| PLN_ATTRIBUTE6 | LearningPlanDEOPlnAttribute6 | — |
+| PLN_ATTRIBUTE7 | LearningPlanDEOPlnAttribute7 | — |
+| PLN_ATTRIBUTE8 | LearningPlanDEOPlnAttribute8 | — |
+| PLN_ATTRIBUTE9 | LearningPlanDEOPlnAttribute9 | — |
+| PLN_ATTRIBUTE_CATEGORY | LearningPlanDEOPlnAttributeCategory | — |
+| PLN_ATTRIBUTE_DATE1 | LearningPlanDEOPlnAttributeDate1 | — |
+| PLN_ATTRIBUTE_DATE10 | LearningPlanDEOPlnAttributeDate10 | — |
+| PLN_ATTRIBUTE_DATE11 | LearningPlanDEOPlnAttributeDate11 | — |
+| PLN_ATTRIBUTE_DATE12 | LearningPlanDEOPlnAttributeDate12 | — |
+| PLN_ATTRIBUTE_DATE13 | LearningPlanDEOPlnAttributeDate13 | — |
+| PLN_ATTRIBUTE_DATE14 | LearningPlanDEOPlnAttributeDate14 | — |
+| PLN_ATTRIBUTE_DATE15 | LearningPlanDEOPlnAttributeDate15 | — |
+| PLN_ATTRIBUTE_DATE2 | LearningPlanDEOPlnAttributeDate2 | — |
+| PLN_ATTRIBUTE_DATE3 | LearningPlanDEOPlnAttributeDate3 | — |
+| PLN_ATTRIBUTE_DATE4 | LearningPlanDEOPlnAttributeDate4 | — |
+| PLN_ATTRIBUTE_DATE5 | LearningPlanDEOPlnAttributeDate5 | — |
+| PLN_ATTRIBUTE_DATE6 | LearningPlanDEOPlnAttributeDate6 | — |
+| PLN_ATTRIBUTE_DATE7 | LearningPlanDEOPlnAttributeDate7 | — |
+| PLN_ATTRIBUTE_DATE8 | LearningPlanDEOPlnAttributeDate8 | — |
+| PLN_ATTRIBUTE_DATE9 | LearningPlanDEOPlnAttributeDate9 | — |
+| PLN_ATTRIBUTE_NUMBER1 | LearningPlanDEOPlnAttributeNumber1 | — |
+| PLN_ATTRIBUTE_NUMBER10 | LearningPlanDEOPlnAttributeNumber10 | — |
+| PLN_ATTRIBUTE_NUMBER11 | LearningPlanDEOPlnAttributeNumber11 | — |
+| PLN_ATTRIBUTE_NUMBER12 | LearningPlanDEOPlnAttributeNumber12 | — |
+| PLN_ATTRIBUTE_NUMBER13 | LearningPlanDEOPlnAttributeNumber13 | — |
+| PLN_ATTRIBUTE_NUMBER14 | LearningPlanDEOPlnAttributeNumber14 | — |
+| PLN_ATTRIBUTE_NUMBER15 | LearningPlanDEOPlnAttributeNumber15 | — |
+| PLN_ATTRIBUTE_NUMBER16 | LearningPlanDEOPlnAttributeNumber16 | — |
+| PLN_ATTRIBUTE_NUMBER17 | LearningPlanDEOPlnAttributeNumber17 | — |
+| PLN_ATTRIBUTE_NUMBER18 | LearningPlanDEOPlnAttributeNumber18 | — |
+| PLN_ATTRIBUTE_NUMBER19 | LearningPlanDEOPlnAttributeNumber19 | — |
+| PLN_ATTRIBUTE_NUMBER2 | LearningPlanDEOPlnAttributeNumber2 | — |
+| PLN_ATTRIBUTE_NUMBER20 | LearningPlanDEOPlnAttributeNumber20 | — |
+| PLN_ATTRIBUTE_NUMBER3 | LearningPlanDEOPlnAttributeNumber3 | — |
+| PLN_ATTRIBUTE_NUMBER4 | LearningPlanDEOPlnAttributeNumber4 | — |
+| PLN_ATTRIBUTE_NUMBER5 | LearningPlanDEOPlnAttributeNumber5 | — |
+| PLN_ATTRIBUTE_NUMBER6 | LearningPlanDEOPlnAttributeNumber6 | — |
+| PLN_ATTRIBUTE_NUMBER7 | LearningPlanDEOPlnAttributeNumber7 | — |
+| PLN_ATTRIBUTE_NUMBER8 | LearningPlanDEOPlnAttributeNumber8 | — |
+| PLN_ATTRIBUTE_NUMBER9 | LearningPlanDEOPlnAttributeNumber9 | — |
+| TIME_BUDGET | LearningPlanDEOTimeBudget | ✅ |
+| WAGE_RATE_FF | LearningPlanDEOWageRateFf | — |

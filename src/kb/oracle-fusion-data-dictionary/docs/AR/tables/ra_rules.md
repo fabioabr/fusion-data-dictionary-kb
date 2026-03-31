@@ -128,6 +128,250 @@ GROUP BY r.NAME, r.TYPE;
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[adjustmentdistributionpvo|AdjustmentDistributionPVO]] (AR · BICC: 1/3)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| NAME | InvDistRuleName | ✅ |
+| OBJECT_VERSION_NUMBER | InvDistRuleObjectVersionNumber7 | — |
+| RULE_ID | InvDistRuleRuleId | — |
+
+### [[adjustmentpvo|AdjustmentPVO]] (AR · BICC: 1/3)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| NAME | InvDistRuleName | ✅ |
+| OBJECT_VERSION_NUMBER | InvDistRuleObjectVersionNumber3 | — |
+| RULE_ID | InvDistRuleRuleId | — |
+
+### [[distributionruleextractpvo|DistributionRuleExtractPVO]] (OTHER · BICC: 17/33)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ATTRIBUTE1 | DistributionRuleAttribute1 | — |
+| ATTRIBUTE10 | DistributionRuleAttribute10 | — |
+| ATTRIBUTE11 | DistributionRuleAttribute11 | — |
+| ATTRIBUTE12 | DistributionRuleAttribute12 | — |
+| ATTRIBUTE13 | DistributionRuleAttribute13 | — |
+| ATTRIBUTE14 | DistributionRuleAttribute14 | — |
+| ATTRIBUTE15 | DistributionRuleAttribute15 | — |
+| ATTRIBUTE2 | DistributionRuleAttribute2 | — |
+| ATTRIBUTE3 | DistributionRuleAttribute3 | — |
+| ATTRIBUTE4 | DistributionRuleAttribute4 | — |
+| ATTRIBUTE5 | DistributionRuleAttribute5 | — |
+| ATTRIBUTE6 | DistributionRuleAttribute6 | — |
+| ATTRIBUTE7 | DistributionRuleAttribute7 | — |
+| ATTRIBUTE8 | DistributionRuleAttribute8 | — |
+| ATTRIBUTE9 | DistributionRuleAttribute9 | — |
+| ATTRIBUTE_CATEGORY | DistributionRuleAttributeCategory | — |
+| CREATED_BY | DistributionRuleCreatedBy | ✅ |
+| CREATION_DATE | DistributionRuleCreationDate | ✅ |
+| DEFERRED_REVENUE_FLAG | DistributionRuleDeferredRevenueFlag | ✅ |
+| DESCRIPTION | DistributionRuleDescription | ✅ |
+| FREQUENCY | DistributionRuleFrequency | ✅ |
+| LAST_UPDATE_DATE | DistributionRuleLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | DistributionRuleLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | DistributionRuleLastUpdatedBy | ✅ |
+| MODULE_ID | DistributionRuleModuleId | ✅ |
+| NAME | DistributionRuleName | ✅ |
+| OBJECT_VERSION_NUMBER | DistributionRuleObjectVersionNumber | ✅ |
+| OCCURRENCES | DistributionRuleOccurrences | ✅ |
+| RULE_ID | DistributionRuleRuleId | ✅ |
+| SEED_DATA_SOURCE | DistributionRuleSeedDataSource | ✅ |
+| SET_ID | DistributionRuleSetId | ✅ |
+| STATUS | DistributionRuleStatus | ✅ |
+| TYPE | DistributionRuleType | ✅ |
+
+### [[distributionrulepvo|DistributionRulePVO]] (AR · BICC: 3/16)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CALENDAR_ID | CalendarId | — |
+| CREATED_BY | CreatedBy | — |
+| CREATION_DATE | CreationDate | — |
+| DEFERRED_REVENUE_FLAG | DeferredRevenueFlag | — |
+| DESCRIPTION | Description | — |
+| FREQUENCY | Frequency | — |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | — |
+| LAST_UPDATED_BY | LastUpdatedBy | — |
+| NAME | Name | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | — |
+| OCCURRENCES | Occurrences | — |
+| RULE_ID | RuleId | ✅ |
+| SET_ID | SetId | — |
+| STATUS | Status | — |
+| TYPE | Type | — |
+
+### [[headersalescreditpvo|HeaderSalesCreditPVO]] (AR · BICC: 1/4)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| DESCRIPTION | InvDistRuleDescription | — |
+| NAME | InvDistRuleName | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | — |
+| RULE_ID | InvDistRuleRuleId | — |
+
+### [[implperfobligtlinespvo|ImplPerfObligTlinesPVO]] (OTHER · BICC: 1/3)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| NAME | RaRulesPEOName | ✅ |
+| OBJECT_VERSION_NUMBER | RaRulesPEOObjectVersionNumber | — |
+| RULE_ID | RaRulesPEORuleId | — |
+
+### [[inventoryitem|InventoryItem]] (OTHER)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| NAME | DistributionRulePEOAccountingName | — |
+| NAME | DistributionRulePEOInvoicingName | — |
+| OBJECT_VERSION_NUMBER | DistributionRulePEOAccountingObjectVersionNumber | — |
+| OBJECT_VERSION_NUMBER | DistributionRulePEOInvoicingObjectVersionNumber | — |
+| RULE_ID | DistributionRulePEOAccountingRuleId | — |
+| RULE_ID | DistributionRulePEOInvoicingRuleId | — |
+
+### [[inventoryitemref|InventoryItemRef]] (OTHER · BICC: 2/6)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| NAME | DistributionRulePEOAccountingName | ✅ |
+| NAME | DistributionRulePEOInvoicingName | ✅ |
+| OBJECT_VERSION_NUMBER | DistributionRulePEOAccountingObjectVersionNumber | — |
+| OBJECT_VERSION_NUMBER | DistributionRulePEOInvoicingObjectVersionNumber | — |
+| RULE_ID | DistributionRulePEOAccountingRuleId | — |
+| RULE_ID | DistributionRulePEOInvoicingRuleId | — |
+
+### [[item|Item]] (OTHER)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| NAME | DistributionRulePEOAccountingName | — |
+| NAME | DistributionRulePEOInvoicingName | — |
+| OBJECT_VERSION_NUMBER | DistributionRulePEOAccountingObjectVersionNumber | — |
+| OBJECT_VERSION_NUMBER | DistributionRulePEOInvoicingObjectVersionNumber | — |
+| RULE_ID | DistributionRulePEOAccountingRuleId | — |
+| RULE_ID | DistributionRulePEOInvoicingRuleId | — |
+
+### [[itemref|ItemRef]] (OTHER · BICC: 6/6)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| NAME | DistributionRulePEOAccountingName | ✅ |
+| NAME | DistributionRulePEOInvoicingName | ✅ |
+| OBJECT_VERSION_NUMBER | DistributionRulePEOAccountingObjectVersionNumber | ✅ |
+| OBJECT_VERSION_NUMBER | DistributionRulePEOInvoicingObjectVersionNumber | ✅ |
+| RULE_ID | DistributionRulePEOAccountingRuleId | ✅ |
+| RULE_ID | DistributionRulePEOInvoicingRuleId | ✅ |
+
+### [[linesalescreditpvo|LineSalesCreditPVO]] (AR · BICC: 1/4)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| DESCRIPTION | InvDistRuleDescription | — |
+| NAME | InvDistRuleName | ✅ |
+| OBJECT_VERSION_NUMBER | InvDistRuleObjectVersionNumber | — |
+| RULE_ID | InvDistRuleRuleId | — |
+
+### [[raruleschedulespvo|RaRuleSchedulesPVO]] (OTHER · BICC: 7/18)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ATTRIBUTE_CATEGORY | RaRulesAttributeCategory | — |
+| CALENDAR_ID | RaRulesCalendarId | — |
+| CREATED_BY | RaRulesCreatedBy | — |
+| CREATION_DATE | RaRulesCreationDate | — |
+| DEFERRED_REVENUE_FLAG | RaRulesDeferredRevenueFlag | — |
+| DESCRIPTION | RaRulesDescription | ✅ |
+| FREQUENCY | RaRulesFrequency | ✅ |
+| LAST_UPDATE_DATE | RaRulesLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | RaRulesLastUpdateLogin | — |
+| LAST_UPDATED_BY | RaRulesLastUpdatedBy | — |
+| MODULE_ID | RaRulesModuleId | — |
+| NAME | RaRulesName | ✅ |
+| OBJECT_VERSION_NUMBER | RaRulesObjectVersionNumber | — |
+| OCCURRENCES | RaRulesOccurrences | ✅ |
+| RULE_ID | RaRulesRuleId | — |
+| SET_ID | RaRulesSetId | — |
+| STATUS | RaRulesStatus | ✅ |
+| TYPE | RaRulesType | ✅ |
+
+### [[transactionheaderbillsreceivablepvo|TransactionHeaderBillsReceivablePVO]] (AR)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| DESCRIPTION | InvDistRuleDescription | — |
+| NAME | InvDistRuleName | — |
+| OBJECT_VERSION_NUMBER | InvDistRuleObjectVersionNumber | — |
+| RULE_ID | InvDistRuleRuleId | — |
+
+### [[transactionheadernovcpvo|TransactionHeaderNoVCPVO]] (AR)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| DESCRIPTION | InvDistRuleDescription | — |
+| NAME | InvDistRuleName | — |
+| OBJECT_VERSION_NUMBER | InvDistRuleObjectVersionNumber | — |
+| RULE_ID | InvDistRuleRuleId | — |
+
+### [[transactionheaderpvo|TransactionHeaderPVO]] (AR · BICC: 1/4)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| DESCRIPTION | InvDistRuleDescription | — |
+| NAME | InvDistRuleName | ✅ |
+| OBJECT_VERSION_NUMBER | InvDistRuleObjectVersionNumber | — |
+| RULE_ID | InvDistRuleRuleId | — |
+
+### [[transactionhistorydistributionpvo|TransactionHistoryDistributionPVO]] (AR)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| DESCRIPTION | InvDistRuleDescription | — |
+| NAME | InvDistRuleName | — |
+| OBJECT_VERSION_NUMBER | InvDistRuleObjectVersionNumber4 | — |
+| RULE_ID | InvDistRuleRuleId | — |
+
+### [[transactionhistorypvo|TransactionHistoryPVO]] (AR)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| DESCRIPTION | InvDistRuleDescription | — |
+| NAME | InvDistRuleName | — |
+| OBJECT_VERSION_NUMBER | InvDistRuleObjectVersionNumber4 | — |
+| RULE_ID | InvDistRuleRuleId | — |
+
+### [[transactionlinebillsreceivablepvo|TransactionLineBillsReceivablePVO]] (AR)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| DESCRIPTION | InvDistRuleDescription | — |
+| NAME | InvDistRuleName | — |
+| OBJECT_VERSION_NUMBER | InvDistRuleObjectVersionNumber | — |
+| RULE_ID | InvDistRuleRuleId | — |
+
+### [[transactionlinedistributionpvo|TransactionLineDistributionPVO]] (AR · BICC: 1/4)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| DESCRIPTION | InvDistRuleDescription | — |
+| NAME | InvDistRuleName | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | — |
+| RULE_ID | InvDistRuleRuleId | — |
+
+### [[transactionlinepvo|TransactionLinePVO]] (AR · BICC: 1/4)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| DESCRIPTION | InvDistRuleDescription | — |
+| NAME | InvDistRuleName | ✅ |
+| OBJECT_VERSION_NUMBER | InvDistRuleObjectVersionNumber | — |
+| RULE_ID | InvDistRuleRuleId | — |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — RA_RULES](https://docs.oracle.com/en/cloud/saas/financials/25a/oedmf/rarules-25262.html)

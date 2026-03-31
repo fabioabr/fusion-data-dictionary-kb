@@ -115,3 +115,26 @@ WHERE  se.SCHEDULE_ID = :p_schedule_id
 
 - [Oracle Docs — PER_SCHEDULE_EXCEPTIONS](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/perscheduleexceptions.html)
 - [[hcm-module-data-dictionary]] — Dossiê do módulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[scheduleexceptionpvo|ScheduleExceptionPVO]] (GL · BICC: 5/14)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| AVAILABILITY_CODE | ScheduleExceptionPEOAvailabilityCode | ✅ |
+| CREATED_BY | ScheduleExceptionPEOCreatedBy | — |
+| CREATION_DATE | ScheduleExceptionPEOCreationDate | — |
+| ENTERPRISE_ID | ScheduleExceptionPEOEnterpriseId | — |
+| EXCEPTION_CODE | ScheduleExceptionPEOExceptionCode | ✅ |
+| EXCEPTION_ID | ScheduleExceptionPEOExceptionId | — |
+| EXCEPTION_TYPE | ScheduleExceptionPEOExceptionType | ✅ |
+| LAST_UPDATE_DATE | ScheduleExceptionPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ScheduleExceptionPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | ScheduleExceptionPEOLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | ScheduleExceptionPEOObjectVersionNumber | — |
+| SCHEDULE_ASSIGNMENT_ID | ScheduleExceptionPEOScheduleAssignmentId | — |
+| SCHEDULE_EXCEPTION_ID | ScheduleExceptionPEOScheduleExceptionId | ✅ |
+| SCHEDULE_ID | ScheduleExceptionPEOScheduleId | — |

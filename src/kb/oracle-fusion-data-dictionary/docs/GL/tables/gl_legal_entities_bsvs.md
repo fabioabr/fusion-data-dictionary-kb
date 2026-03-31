@@ -148,6 +148,42 @@ ORDER BY leb.LEGAL_ENTITY_ID, leb.FLEX_SEGMENT_VALUE;
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[legalentitybalancingsegmentvaluespvo|LegalEntityBalancingSegmentValuesPVO]] (GL · BICC: 2/11)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | GlLegalEntitiesBsvsCreatedBy | — |
+| CREATION_DATE | GlLegalEntitiesBsvsCreationDate | — |
+| END_DATE | GlLegalEntitiesBsvsEndDate | — |
+| FLEX_SEGMENT_VALUE | GlLegalEntitiesBsvsFlexSegmentValue | ✅ |
+| FLEX_VALUE_SET_ID | GlLegalEntitiesBsvsFlexValueSetId | — |
+| LAST_UPDATE_DATE | GlLegalEntitiesBsvsLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | GlLegalEntitiesBsvsLastUpdateLogin | — |
+| LAST_UPDATED_BY | GlLegalEntitiesBsvsLastUpdatedBy | — |
+| LEGAL_ENTITY_ID | GlLegalEntitiesBsvsLegalEntityId | — |
+| OBJECT_VERSION_NUMBER | GlLegalEntitiesBsvsObjectVersionNumber | — |
+| START_DATE | GlLegalEntitiesBsvsStartDate | — |
+
+### [[legalentitybsvassgmtextractpvo|LegalEntityBSVAssgmtExtractPVO]] (OTHER · BICC: 11/11)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | GlLegalEntitiesBsvsCreatedBy | ✅ |
+| CREATION_DATE | GlLegalEntitiesBsvsCreationDate | ✅ |
+| END_DATE | GlLegalEntitiesBsvsEndDate | ✅ |
+| FLEX_SEGMENT_VALUE | GlLegalEntitiesBsvsFlexSegmentValue | ✅ |
+| FLEX_VALUE_SET_ID | GlLegalEntitiesBsvsFlexValueSetId | ✅ |
+| LAST_UPDATE_DATE | GlLegalEntitiesBsvsLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | GlLegalEntitiesBsvsLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | GlLegalEntitiesBsvsLastUpdatedBy | ✅ |
+| LEGAL_ENTITY_ID | GlLegalEntitiesBsvsLegalEntityId | ✅ |
+| OBJECT_VERSION_NUMBER | GlLegalEntitiesBsvsObjectVersionNumber | ✅ |
+| START_DATE | GlLegalEntitiesBsvsStartDate | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — GL_LEGAL_ENTITIES_BSVS](https://docs.oracle.com/en/cloud/saas/financials/25a/oedmf/gllegaleentitiesbsvs.html)

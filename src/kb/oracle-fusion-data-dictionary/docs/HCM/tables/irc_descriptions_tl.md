@@ -102,3 +102,30 @@ FROM   IRC_DESCRIPTIONS_TL tl WHERE tl.LANGUAGE = 'PT';
 
 - [Oracle Docs -- IRC_DESCRIPTIONS_TL](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/ircdescriptionstl.html)
 - [[hcm-module-data-dictionary]] -- Dossie do modulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[descriptionpvo|DescriptionPVO]] (HCM · BICC: 2/10)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | CreatedBy1 | — |
+| CREATION_DATE | CreationDate1 | — |
+| DESCRIPTION_ID | DescriptionId1 | — |
+| LANGUAGE | Language | — |
+| LAST_UPDATE_DATE | LastUpdateDate1 | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin1 | — |
+| LAST_UPDATED_BY | LastUpdatedBy1 | — |
+| NAME | Name | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber1 | — |
+| SOURCE_LANG | SourceLang | — |
+
+### [[offerpvo|OfferPVO]] (HCM)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| DESCRIPTION_ID | DescriptionTranslationPEODescriptionId | — |
+| LANGUAGE | DescriptionTranslationPEOLanguage | — |
+| NAME | DescriptionTranslationPEOName | — |

@@ -40,7 +40,6 @@ updated_at: 2026-03-25
 
 Armazena os **certificados/atestados fornecidos pelos colaboradores** para comprovar ausências. Cada registro vincula um documento comprobatório a uma entrada de ausência específica.
 
-
 ---
 
 ## 🧠 Propósito de Negócio
@@ -111,6 +110,50 @@ WHERE  pc.ABSENCE_ENTRY_ID = :p_absence_entry_id;
 - Vinculada a entradas de ausência específicas (`ANC_PER_ABS_ENTRIES`).
 - O status do certificado pode impactar a aprovação ou rejeição da ausência.
 - Documentos físicos ou digitais podem ser anexados via integração com UCM (Universal Content Management).
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[personabscertificationspvo|PersonAbsCertificationsPVO]] (GL · BICC: 25/35)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ABSENCE_CERTIFICATION_ID | AbsenceCertificationId | — |
+| ACCEPTED_BY | AcceptedBy | ✅ |
+| ACCEPTED_DATE | AcceptedDate | ✅ |
+| ACCEPTED_YN | AcceptedYn | ✅ |
+| CASE_ID | PersonAbsCertificationsPEOCaseId | — |
+| CERT_CREATION_DATE | CertCreationDate | ✅ |
+| COMMENTS | Comments | ✅ |
+| COMPLETE_YN | CompleteYn | ✅ |
+| COMPLETED_DATE | CompletedDate | ✅ |
+| CONFIRM_RSN_CD | ConfirmRsnCd | ✅ |
+| CREATED_BY | CreatedBy | — |
+| CREATION_DATE | CreationDate | — |
+| CTFN_CREATION_MODE | CtfnCreationMode | ✅ |
+| ENTERPRISE_ID | EnterpriseId | — |
+| EVIDENCE_SOURCE | EvidenceSource | — |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | — |
+| LAST_UPDATED_BY | LastUpdatedBy | — |
+| LATE_REASON | LateReason | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | — |
+| PER_ABSENCE_ENTRY_ID | PerAbsenceEntryId | — |
+| PER_CERT_ID | PerCertId | ✅ |
+| RECEIVED_DATE | ReceivedDate | ✅ |
+| RECEIVED_LATE_YN | ReceivedLateYn | ✅ |
+| RECEIVED_YN | ReceivedYn | ✅ |
+| REQUIRED_BY_DATE | RequiredByDate | ✅ |
+| REV_PAY_END_DT | RevPayEndDt | ✅ |
+| REV_PAY_PCT | RevPayPct | ✅ |
+| REV_PAY_START_DT | RevPayStartDt | ✅ |
+| STATUS | Status | ✅ |
+| TARGET_PLAN_ID | TargetPlanId | ✅ |
+| VALID_UPTO_DATE | ValidUptoDate | ✅ |
+| VOID_RSN_CD | VoidRsnCd | ✅ |
+| VOID_YN | VoidYn | ✅ |
+| VOIDED_DATE | VoidedDate | ✅ |
 
 ---
 

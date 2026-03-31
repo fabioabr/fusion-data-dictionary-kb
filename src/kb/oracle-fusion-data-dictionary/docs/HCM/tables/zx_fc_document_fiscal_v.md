@@ -58,3 +58,135 @@ updated_at: 2026-03-26
 ## 📎 Uso Típico
 
 (a ser preenchido na etapa 03)
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[agreementheaderpvo|AgreementHeaderPVO]] (PO)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CLASSIFICATION_CODE | DocFisClassificationClassificationCode | — |
+| CLASSIFICATION_ID | DocFisClassificationClassificationId | — |
+| CLASSIFICATION_NAME | DocFisClassificationClassificationName | — |
+| CONCAT_CLASSIF_CODE | DocFisClassificationConcatClassifCode | — |
+| CONCAT_CLASSIF_NAME | DocFisClassificationConcatClassifName | — |
+| COUNTRY_CODE | DocFisClassificationCountryCode | — |
+| EFFECTIVE_FROM | DocFisClassificationEffectiveFrom | — |
+| EFFECTIVE_TO | DocFisClassificationEffectiveTo | — |
+
+### [[agreementlinepvo|AgreementLinePVO]] (PO)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CLASSIFICATION_CODE | DocFisClassificationClassificationCode | — |
+| CLASSIFICATION_ID | DocFisClassificationClassificationId | — |
+| CLASSIFICATION_NAME | DocFisClassificationClassificationName | — |
+| CONCAT_CLASSIF_CODE | DocFisClassificationConcatClassifCode | — |
+| CONCAT_CLASSIF_NAME | DocFisClassificationConcatClassifName | — |
+| COUNTRY_CODE | DocFisClassificationCountryCode | — |
+| EFFECTIVE_FROM | DocFisClassificationEffectiveFrom | — |
+| EFFECTIVE_TO | DocFisClassificationEffectiveTo | — |
+
+### [[agreementpricebreakpvo|AgreementPriceBreakPVO]] (PO)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CLASSIFICATION_CODE | DocFisClassificationClassificationCode | — |
+| CLASSIFICATION_ID | DocFisClassificationClassificationId | — |
+| CLASSIFICATION_NAME | DocFisClassificationClassificationName | — |
+| CONCAT_CLASSIF_CODE | DocFisClassificationConcatClassifCode | — |
+| CONCAT_CLASSIF_NAME | DocFisClassificationConcatClassifName | — |
+| COUNTRY_CODE | DocFisClassificationCountryCode | — |
+| EFFECTIVE_FROM | DocFisClassificationEffectiveFrom | — |
+| EFFECTIVE_TO | DocFisClassificationEffectiveTo | — |
+
+### [[purchasingdocumentlinepvo|PurchasingDocumentLinePVO]] (PO)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CLASSIFICATION_CODE | DocFisClassificationClassificationCode | — |
+| CLASSIFICATION_ID | DocFisClassificationClassificationId | — |
+| CLASSIFICATION_NAME | DocFisClassificationClassificationName | — |
+| CONCAT_CLASSIF_CODE | DocFisClassificationConcatClassifCode | — |
+| CONCAT_CLASSIF_NAME | DocFisClassificationConcatClassifName | — |
+| COUNTRY_CODE | DocFisClassificationCountryCode | — |
+| EFFECTIVE_FROM | DocFisClassificationEffectiveFrom | — |
+| EFFECTIVE_TO | DocFisClassificationEffectiveTo | — |
+
+### [[requisitiondistributionp1|RequisitionDistributionP1]] (PO · BICC: 1/3)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CLASSIFICATION_CODE | DocFisClassificationClassificationCode | — |
+| CLASSIFICATION_ID | DocFisClassificationClassificationId | — |
+| CLASSIFICATION_NAME | DocFisClassificationClassificationName | ✅ |
+
+### [[requisitiondistributionrefpvo|RequisitionDistributionRefPVO]] (PO)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CLASSIFICATION_CODE | DocFisClassificationClassificationCode | — |
+| CLASSIFICATION_ID | DocFisClassificationClassificationId | — |
+| CLASSIFICATION_NAME | DocFisClassificationClassificationName | — |
+
+### [[requisitionlinep1|RequisitionLineP1]] (PO · BICC: 1/3)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CLASSIFICATION_CODE | DocFisClassificationClassificationCode | — |
+| CLASSIFICATION_ID | DocFisClassificationClassificationId | — |
+| CLASSIFICATION_NAME | DocFisClassificationClassificationName | ✅ |
+
+### [[standarddistributionpvo|StandardDistributionPVO]] (PO)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CLASSIFICATION_CODE | DocFisClassificationClassificationCode | — |
+| CLASSIFICATION_ID | DocFisClassificationClassificationId | — |
+| CLASSIFICATION_NAME | DocFisClassificationClassificationName | — |
+| CONCAT_CLASSIF_CODE | DocFisClassificationConcatClassifCode | — |
+| CONCAT_CLASSIF_NAME | DocFisClassificationConcatClassifName | — |
+| COUNTRY_CODE | DocFisClassificationCountryCode | — |
+| EFFECTIVE_FROM | DocFisClassificationEffectiveFrom | — |
+| EFFECTIVE_TO | DocFisClassificationEffectiveTo | — |
+
+### [[standardheaderpvo|StandardHeaderPVO]] (PO · BICC: 1/8)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CLASSIFICATION_CODE | DocFisClassificationClassificationCode | — |
+| CLASSIFICATION_ID | DocFisClassificationClassificationId | — |
+| CLASSIFICATION_NAME | DocFisClassificationClassificationName | — |
+| CONCAT_CLASSIF_CODE | DocFisClassificationConcatClassifCode | — |
+| CONCAT_CLASSIF_NAME | DocFisClassificationConcatClassifName | ✅ |
+| COUNTRY_CODE | DocFisClassificationCountryCode | — |
+| EFFECTIVE_FROM | DocFisClassificationEffectiveFrom | — |
+| EFFECTIVE_TO | DocFisClassificationEffectiveTo | — |
+
+### [[standardlinepvo|StandardLinePVO]] (PO · BICC: 1/8)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CLASSIFICATION_CODE | DocFisClassificationClassificationCode | — |
+| CLASSIFICATION_ID | DocFisClassificationClassificationId | — |
+| CLASSIFICATION_NAME | DocFisClassificationClassificationName | — |
+| CONCAT_CLASSIF_CODE | DocFisClassificationConcatClassifCode | — |
+| CONCAT_CLASSIF_NAME | DocFisClassificationConcatClassifName | ✅ |
+| COUNTRY_CODE | DocFisClassificationCountryCode | — |
+| EFFECTIVE_FROM | DocFisClassificationEffectiveFrom | — |
+| EFFECTIVE_TO | DocFisClassificationEffectiveTo | — |
+
+### [[standardshipmentpvo|StandardShipmentPVO]] (PO · BICC: 1/8)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CLASSIFICATION_CODE | DocFisClassificationClassificationCode | — |
+| CLASSIFICATION_ID | DocFisClassificationClassificationId | — |
+| CLASSIFICATION_NAME | DocFisClassificationClassificationName | — |
+| CONCAT_CLASSIF_CODE | DocFisClassificationConcatClassifCode | — |
+| CONCAT_CLASSIF_NAME | DocFisClassificationConcatClassifName | ✅ |
+| COUNTRY_CODE | DocFisClassificationCountryCode | — |
+| EFFECTIVE_FROM | DocFisClassificationEffectiveFrom | — |
+| EFFECTIVE_TO | DocFisClassificationEffectiveTo | — |

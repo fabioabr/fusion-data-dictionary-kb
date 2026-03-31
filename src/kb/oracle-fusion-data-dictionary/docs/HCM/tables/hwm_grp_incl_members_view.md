@@ -38,7 +38,6 @@ View que exibe os membros explicitamente incluídos em grupos de workforce. Dife
 > [!note] Sufixo _VIEW
 > O sufixo `_VIEW` indica **view** — objeto somente leitura que consolida dados de uma ou mais tabelas para facilitar consultas.
 
-
 ---
 
 ## 🧠 Propósito de Negócio
@@ -102,6 +101,32 @@ WHERE  ROWNUM <= 100
 
 - View somente leitura: não permite INSERT, UPDATE ou DELETE direto.
 - Área funcional: Workforce Management dentro do Oracle Fusion Cloud HCM.
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[groupinclmemberspvo|GroupInclMembersPVO]] (GL · BICC: 8/9)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | CreatedBy | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| GRP_ID | GrpId | ✅ |
+| GRP_INCL_MEMBER_ID | GrpInclMemberId | ✅ |
+| INCL_FLAG | InclFlag | — |
+| INCL_MEMBER_ID | InclMemberId | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | LastUpdatedBy | ✅ |
+
+### [[labordemandpvo|LaborDemandPVO]] (HCM)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| GRP_ID | GrpId | — |
+| GRP_INCL_MEMBER_ID | GrpInclMemberId | — |
+| INCL_MEMBER_ID | InclMemberId | — |
 
 ---
 

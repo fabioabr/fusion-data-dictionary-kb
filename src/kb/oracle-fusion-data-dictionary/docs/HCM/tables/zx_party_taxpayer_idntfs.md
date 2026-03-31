@@ -64,3 +64,45 @@ updated_at: 2026-03-26
 ## 📎 Uso Típico
 
 (a ser preenchido na etapa 03)
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[sitetaxvalidation|SiteTaxValidation]] (AR · BICC: 5/14)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| COUNTRY_CODE | PartyTaxpayerIdentCountryCode | — |
+| CREATED_BY | PartyTaxpayerIdentCreatedBy | — |
+| CREATION_DATE | PartyTaxpayerIdentCreationDate | — |
+| EFFECTIVE_FROM | PartyTaxpayerIdentEffectiveFrom | ✅ |
+| EFFECTIVE_TO | PartyTaxpayerIdentEffectiveTo | ✅ |
+| ENTITY_ID | PartyTaxpayerIdentEntityId | — |
+| LAST_UPDATE_DATE | PartyTaxpayerIdentLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | PartyTaxpayerIdentLastUpdateLogin | — |
+| LAST_UPDATED_BY | PartyTaxpayerIdentLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | PartyTaxpayerIdentObjectVersionNumber | — |
+| PARTY_TAXPAYER_IDNTFS_ID | PartyTaxpayerIdntfsId | — |
+| RECORD_TYPE_CODE | PartyTaxpayerIdentRecordTypeCode | — |
+| REPORTING_TYPE_CODE | PartyTaxpayerIdentReportingTypeCode | ✅ |
+| TAX_PAYER_NUMBER | PartyTaxpayerIdentTaxPayerNumber | ✅ |
+
+### [[taxvalidation|TaxValidation]] (AR · BICC: 5/14)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| COUNTRY_CODE | PartyTaxpayerIdentCountryCode | — |
+| CREATED_BY | PartyTaxpayerIdentCreatedBy | — |
+| CREATION_DATE | PartyTaxpayerIdentCreationDate | — |
+| EFFECTIVE_FROM | PartyTaxpayerIdentEffectiveFrom | ✅ |
+| EFFECTIVE_TO | PartyTaxpayerIdentEffectiveTo | ✅ |
+| ENTITY_ID | PartyTaxpayerIdentEntityId | — |
+| LAST_UPDATE_DATE | PartyTaxpayerIdentLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | PartyTaxpayerIdentLastUpdateLogin | — |
+| LAST_UPDATED_BY | PartyTaxpayerIdentLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | PartyTaxpayerIdentObjectVersionNumber | — |
+| PARTY_TAXPAYER_IDNTFS_ID | PartyTaxpayerIdntfsId | — |
+| RECORD_TYPE_CODE | PartyTaxpayerIdentRecordTypeCode | — |
+| REPORTING_TYPE_CODE | PartyTaxpayerIdentReportingTypeCode | ✅ |
+| TAX_PAYER_NUMBER | PartyTaxpayerIdentTaxPayerNumber | ✅ |

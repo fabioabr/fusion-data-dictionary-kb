@@ -117,3 +117,21 @@ ORDER BY s.DISPLAY_SEQUENCE;
 
 - [Oracle Docs — IRC_AF_SECTIONS_B](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/ircafsectionsb.html)
 - [[hcm-module-data-dictionary]] — Dossie do modulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[applyflowsectionpagepvo|ApplyFlowSectionPagePVO]] (HCM · BICC: 3/9)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| AF_VERSION_ID | AfVersionId | — |
+| CREATED_BY | CreatedBy | — |
+| CREATION_DATE | CreationDate | — |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | — |
+| LAST_UPDATED_BY | LastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | — |
+| SECTION_ID | SectionId | ✅ |
+| SECTION_SEQ_NUM | SectionSeqNum | ✅ |

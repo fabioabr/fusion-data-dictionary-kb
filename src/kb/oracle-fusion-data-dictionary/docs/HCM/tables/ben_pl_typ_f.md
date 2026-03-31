@@ -103,6 +103,74 @@ WHERE  ROWNUM <= 100;
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[plantypepvo|PlanTypePVO]] (HCM · BICC: 21/59)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ADMIN_CATEGORY_CD | AdminCategoryCd | — |
+| BUSINESS_GROUP_ID | BusinessGroupId | — |
+| CARRIER_PLAN_TYPE_NAME | CarrierPlanTypeName | ✅ |
+| COMP_TYP_CD | CompTypCd | — |
+| CREATED_BY | CreatedBy | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| EFFECTIVE_END_DATE | EffectiveEndDate | ✅ |
+| EFFECTIVE_START_DATE | EffectiveStartDate | ✅ |
+| GLOBAL_FLAG | GlobalFlag | ✅ |
+| IVR_IDENT | IvrIdent | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | LastUpdatedBy | ✅ |
+| LEGISLATION_CODE | LegislationCode | ✅ |
+| LEGISLATION_SUBGROUP | LegislationSubgroup | ✅ |
+| MN_ENRL_RQD_NUM | MnEnrlRqdNum | ✅ |
+| MX_ENRL_ALWD_NUM | MxEnrlAlwdNum | ✅ |
+| NAME | Name | ✅ |
+| NO_MN_ENRL_NUM_DFND_FLAG | NoMnEnrlNumDfndFlag | ✅ |
+| NO_MX_ENRL_NUM_DFND_FLAG | NoMxEnrlNumDfndFlag | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | — |
+| OPT_DSPLY_FMT_CD | OptDsplyFmtCd | — |
+| OPT_TYP_CD | OptTypCd | ✅ |
+| PL_TYP_ID | PlTypId | ✅ |
+| PL_TYP_STAT_CD | PlTypStatCd | ✅ |
+| PTP_ATTRIBUTE1 | PtpAttribute1 | — |
+| PTP_ATTRIBUTE10 | PtpAttribute10 | — |
+| PTP_ATTRIBUTE11 | PtpAttribute11 | — |
+| PTP_ATTRIBUTE12 | PtpAttribute12 | — |
+| PTP_ATTRIBUTE13 | PtpAttribute13 | — |
+| PTP_ATTRIBUTE14 | PtpAttribute14 | — |
+| PTP_ATTRIBUTE15 | PtpAttribute15 | — |
+| PTP_ATTRIBUTE16 | PtpAttribute16 | — |
+| PTP_ATTRIBUTE17 | PtpAttribute17 | — |
+| PTP_ATTRIBUTE18 | PtpAttribute18 | — |
+| PTP_ATTRIBUTE19 | PtpAttribute19 | — |
+| PTP_ATTRIBUTE2 | PtpAttribute2 | — |
+| PTP_ATTRIBUTE20 | PtpAttribute20 | — |
+| PTP_ATTRIBUTE21 | PtpAttribute21 | — |
+| PTP_ATTRIBUTE22 | PtpAttribute22 | — |
+| PTP_ATTRIBUTE23 | PtpAttribute23 | — |
+| PTP_ATTRIBUTE24 | PtpAttribute24 | — |
+| PTP_ATTRIBUTE25 | PtpAttribute25 | — |
+| PTP_ATTRIBUTE26 | PtpAttribute26 | — |
+| PTP_ATTRIBUTE27 | PtpAttribute27 | — |
+| PTP_ATTRIBUTE28 | PtpAttribute28 | — |
+| PTP_ATTRIBUTE29 | PtpAttribute29 | — |
+| PTP_ATTRIBUTE3 | PtpAttribute3 | — |
+| PTP_ATTRIBUTE30 | PtpAttribute30 | — |
+| PTP_ATTRIBUTE4 | PtpAttribute4 | — |
+| PTP_ATTRIBUTE5 | PtpAttribute5 | — |
+| PTP_ATTRIBUTE6 | PtpAttribute6 | — |
+| PTP_ATTRIBUTE7 | PtpAttribute7 | — |
+| PTP_ATTRIBUTE8 | PtpAttribute8 | — |
+| PTP_ATTRIBUTE9 | PtpAttribute9 | — |
+| PTP_ATTRIBUTE_CATEGORY | PtpAttributeCategory | ✅ |
+| SHORT_CODE | ShortCode | — |
+| SHORT_NAME | ShortName | — |
+| SS_CATEGORY_CD | SsCategoryCd | — |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — BEN_PL_TYP_F](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/benpltypf.html)

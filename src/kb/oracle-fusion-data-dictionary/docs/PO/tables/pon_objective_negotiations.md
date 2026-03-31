@@ -125,6 +125,32 @@ GROUP BY on2.OBJECTIVE_ID;
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[sourcingobjectivenegotiationpvo|SourcingObjectiveNegotiationPVO]] (PO · BICC: 4/17)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| AUCTION_HEADER_ID | ObjectiveNegotiationPEOAuctionHeaderId | ✅ |
+| AWARD_AMOUNT | ObjectiveNegotiationPEOAwardAmount | ✅ |
+| CREATED_BY | ObjectiveNegotiationPEOCreatedBy | — |
+| CREATION_DATE | ObjectiveNegotiationPEOCreationDate | — |
+| LAST_UPDATE_DATE | ObjectiveNegotiationPEOLastUpdateDate | — |
+| LAST_UPDATE_LOGIN | ObjectiveNegotiationPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | ObjectiveNegotiationPEOLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | ObjectiveNegotiationPEOObjectVersionNumber | — |
+| OBJECTIVE_HEADER_ID | ObjectiveNegotiationPEOObjectiveHeaderId | — |
+| OBJECTIVE_NEGOTIATION_ID | ObjectiveNegotiationPEOObjectiveNegotiationId | ✅ |
+| OVERRIDE_FLAG | ObjectiveNegotiationPEOOverrideFlag | — |
+| PLANNED_CURRENT_SPEND | ObjectiveNegotiationPEOPlannedCurrentSpend | — |
+| PLANNED_SAVINGS | ObjectiveNegotiationPEOPlannedSavings | — |
+| PLANNED_SAVINGS_PERCENT | ObjectiveNegotiationPEOPlannedSavingsPercent | — |
+| PLANNED_TARGET_SPEND | ObjectiveNegotiationPEOPlannedTargetSpend | — |
+| PLANNED_TITLE | ObjectiveNegotiationPEOPlannedTitle | ✅ |
+| PROGRAM_HEADER_ID | ObjectiveNegotiationPEOProgramHeaderId | — |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — Sourcing Tables](https://docs.oracle.com/en/cloud/saas/procurement/25a/oedmf/pon-tables.html)

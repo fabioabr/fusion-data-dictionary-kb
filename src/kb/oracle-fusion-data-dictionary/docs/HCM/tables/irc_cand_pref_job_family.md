@@ -102,3 +102,21 @@ WHERE  cp.CANDIDATE_ID = :p_candidate_id;
 
 - [Oracle Docs -- IRC_CAND_PREF_JOB_FAMILY](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/irccandprefjobfamily.html)
 - [[hcm-module-data-dictionary]] -- Dossie do modulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[candidatepreferencespvo|CandidatePreferencesPVO]] (HCM · BICC: 2/9)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CAND_PREF_ID | CandPrefJobFamilyPEOCandPrefId | — |
+| CREATED_BY | CandPrefJobFamilyPEOCreatedBy | — |
+| CREATION_DATE | CandPrefJobFamilyPEOCreationDate | — |
+| JOB_FAMILY_ID | CandPrefJobFamilyPEOJobFamilyId | ✅ |
+| LAST_UPDATE_DATE | CandPrefJobFamilyPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | CandPrefJobFamilyPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | CandPrefJobFamilyPEOLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | CandPrefJobFamilyPEOObjectVersionNumber | — |
+| PREF_JOB_FAMILY_ID | PrefJobFamilyId | — |

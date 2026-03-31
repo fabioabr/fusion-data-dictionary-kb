@@ -116,3 +116,232 @@ WHERE  ph.PERSON_ID = :p_person_id
 
 - [Oracle Docs — PER_PHONES](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/perphones.html)
 - [[hcm-module-data-dictionary]] — Dossiê do módulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[allbuyerpvo|AllBuyerPVO]] (PO · BICC: 2/20)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| AREA_CODE | PhoneAreaCode | — |
+| BUSINESS_GROUP_ID | PhoneBusinessGroupId | — |
+| COUNTRY_CODE_NUMBER | PhoneCountryCodeNumber | — |
+| CREATED_BY | PhoneCreatedBy | — |
+| CREATION_DATE | PhoneCreationDate | — |
+| DATE_FROM | PhoneDateFrom | — |
+| DATE_TO | PhoneDateTo | — |
+| EXTENSION | PhoneExtension | — |
+| LAST_UPDATE_DATE | PhoneLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | PhoneLastUpdateLogin | — |
+| LAST_UPDATED_BY | PhoneLastUpdatedBy | — |
+| LEGISLATION_CODE | PhoneLegislationCode | — |
+| OBJECT_VERSION_NUMBER | PhoneObjectVersionNumber | — |
+| PERSON_ID | PhonePersonId | — |
+| PHONE_ID | PhonePhoneId | — |
+| PHONE_NUMBER | PhonePhoneNumber | ✅ |
+| PHONE_TYPE | PhonePhoneType | — |
+| SEARCH_PHONE_NUMBER | PhoneSearchPhoneNumber | — |
+| SPEED_DIAL_NUMBER | PhoneSpeedDialNumber | — |
+| VALIDITY | PhoneValidity | — |
+
+### [[candidatephonespvo|CandidatePhonesPVO]] (HCM · BICC: 6/20)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| AREA_CODE | PhonesEOAreaCode | ✅ |
+| BUSINESS_GROUP_ID | PhonesEOBusinessGroupId | — |
+| COUNTRY_CODE_NUMBER | PhonesEOCountryCodeNumber | ✅ |
+| CREATED_BY | PhonesEOCreatedBy | — |
+| CREATION_DATE | PhonesEOCreationDate | — |
+| DATE_FROM | PhonesEODateFrom | — |
+| DATE_TO | PhonesEODateTo | — |
+| EXTENSION | PhonesEOExtension | — |
+| LAST_UPDATE_DATE | PhonesEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | PhonesEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | PhonesEOLastUpdatedBy | — |
+| LEGISLATION_CODE | PhonesEOLegislationCode | — |
+| OBJECT_VERSION_NUMBER | PhonesEOObjectVersionNumber | — |
+| PERSON_ID | PhonesEOPersonId | ✅ |
+| PHONE_ID | PhoneId | — |
+| PHONE_NUMBER | PhonesEOPhoneNumber | ✅ |
+| PHONE_TYPE | PhonesEOPhoneType | ✅ |
+| SEARCH_PHONE_NUMBER | PhonesEOSearchPhoneNumber | — |
+| SPEED_DIAL_NUMBER | PhonesEOSpeedDialNumber | — |
+| VALIDITY | Validity | — |
+
+### [[contactphonespvo|ContactPhonesPVO]] (HCM · BICC: 16/20)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| AREA_CODE | PhonesEOAreaCode | ✅ |
+| BUSINESS_GROUP_ID | PhonesEOBusinessGroupId | — |
+| COUNTRY_CODE_NUMBER | PhonesEOCountryCodeNumber | ✅ |
+| CREATED_BY | PhonesEOCreatedBy | ✅ |
+| CREATION_DATE | PhonesEOCreationDate | ✅ |
+| DATE_FROM | PhonesEODateFrom | ✅ |
+| DATE_TO | PhonesEODateTo | ✅ |
+| EXTENSION | PhonesEOExtension | ✅ |
+| LAST_UPDATE_DATE | PhonesEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | PhonesEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | PhonesEOLastUpdatedBy | ✅ |
+| LEGISLATION_CODE | PhonesEOLegislationCode | ✅ |
+| OBJECT_VERSION_NUMBER | PhonesEOObjectVersionNumber | — |
+| PERSON_ID | PhonesEOPersonId | ✅ |
+| PHONE_ID | PhoneId | ✅ |
+| PHONE_NUMBER | PhonesEOPhoneNumber | ✅ |
+| PHONE_TYPE | PhonesEOPhoneType | ✅ |
+| SEARCH_PHONE_NUMBER | PhonesEOSearchPhoneNumber | — |
+| SPEED_DIAL_NUMBER | PhonesEOSpeedDialNumber | ✅ |
+| VALIDITY | PhonesEOValidity | ✅ |
+
+### [[globalpersonpvo|GlobalPersonPVO]] (HCM · BICC: 19/26)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| AREA_CODE | PhonesEOAreaCode | ✅ |
+| BUSINESS_GROUP_ID | PhonesEOBusinessGroupId | ✅ |
+| COUNTRY_CODE_NUMBER | PhonesEOCountryCodeNumber | ✅ |
+| COUNTRY_CODE_NUMBER | WorkPhonePEOCountryCodeNumber | — |
+| CREATED_BY | PhonesEOCreatedBy | ✅ |
+| CREATION_DATE | PhonesEOCreationDate | ✅ |
+| DATE_FROM | PhonesEODateFrom | ✅ |
+| DATE_TO | PhonesEODateTo | ✅ |
+| EXTENSION | PhonesEOExtension | ✅ |
+| EXTENSION | WorkPhonePEOExtension | — |
+| LAST_UPDATE_DATE | PhonesEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | PhonesEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | PhonesEOLastUpdatedBy | ✅ |
+| LEGISLATION_CODE | PhonesEOLegislationCode | ✅ |
+| LEGISLATION_CODE | WorkPhonePEOLegislationCode | — |
+| OBJECT_VERSION_NUMBER | PhonesEOObjectVersionNumber | ✅ |
+| OBJECT_VERSION_NUMBER | WorkPhonePEOObjectVersionNumber | — |
+| PERSON_ID | PhonesEOPersonId | ✅ |
+| PERSON_ID | WorkPhonePEOPersonId | — |
+| PHONE_ID | PhonesEOPhoneId | ✅ |
+| PHONE_ID | WorkPhonePEOPhoneId | — |
+| PHONE_NUMBER | PhonesEOPhoneNumber | ✅ |
+| PHONE_NUMBER | WorkPhonePEOPhoneNumber | — |
+| PHONE_TYPE | PhonesEOPhoneType | ✅ |
+| SPEED_DIAL_NUMBER | PhonesEOSpeedDialNumber | ✅ |
+| VALIDITY | PhonesEOValidity | ✅ |
+
+### [[globalpersonpvoviewall|GlobalPersonPVOViewAll]] (HCM · BICC: 8/26)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| AREA_CODE | PhonesEOAreaCode | ✅ |
+| BUSINESS_GROUP_ID | PhonesEOBusinessGroupId | — |
+| COUNTRY_CODE_NUMBER | PhonesEOCountryCodeNumber | ✅ |
+| COUNTRY_CODE_NUMBER | WorkPhonePEOCountryCodeNumber | — |
+| CREATED_BY | PhonesEOCreatedBy | — |
+| CREATION_DATE | PhonesEOCreationDate | — |
+| DATE_FROM | PhonesEODateFrom | — |
+| DATE_TO | PhonesEODateTo | — |
+| EXTENSION | PhonesEOExtension | ✅ |
+| EXTENSION | WorkPhonePEOExtension | — |
+| LAST_UPDATE_DATE | PhonesEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | PhonesEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | PhonesEOLastUpdatedBy | — |
+| LEGISLATION_CODE | PhonesEOLegislationCode | — |
+| LEGISLATION_CODE | WorkPhonePEOLegislationCode | — |
+| OBJECT_VERSION_NUMBER | PhonesEOObjectVersionNumber | — |
+| OBJECT_VERSION_NUMBER | WorkPhonePEOObjectVersionNumber | — |
+| PERSON_ID | PhonesEOPersonId | — |
+| PERSON_ID | WorkPhonePEOPersonId | — |
+| PHONE_ID | PhonesEOPhoneId | — |
+| PHONE_ID | WorkPhonePEOPhoneId | — |
+| PHONE_NUMBER | PhonesEOPhoneNumber | ✅ |
+| PHONE_NUMBER | WorkPhonePEOPhoneNumber | — |
+| PHONE_TYPE | PhonesEOPhoneType | ✅ |
+| SPEED_DIAL_NUMBER | PhonesEOSpeedDialNumber | ✅ |
+| VALIDITY | PhonesEOValidity | ✅ |
+
+### [[personphonepvo|PersonPhonePVO]] (HCM · BICC: 10/20)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| AREA_CODE | PhonesEOAreaCode | ✅ |
+| BUSINESS_GROUP_ID | PhonesEOBusinessGroupId | — |
+| COUNTRY_CODE_NUMBER | PhonesEOCountryCodeNumber | ✅ |
+| CREATED_BY | PhonesEOCreatedBy | — |
+| CREATION_DATE | PhonesEOCreationDate | ✅ |
+| DATE_FROM | PhonesEODateFrom | ✅ |
+| DATE_TO | PhonesEODateTo | ✅ |
+| EXTENSION | PhonesEOExtension | — |
+| LAST_UPDATE_DATE | PhonesEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | PhonesEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | PhonesEOLastUpdatedBy | — |
+| LEGISLATION_CODE | PhonesEOLegislationCode | — |
+| OBJECT_VERSION_NUMBER | PhonesEOObjectVersionNumber | — |
+| PERSON_ID | PhonesEOPersonId | ✅ |
+| PHONE_ID | PhoneId | ✅ |
+| PHONE_NUMBER | PhonesEOPhoneNumber | ✅ |
+| PHONE_TYPE | PhonesEOPhoneType | ✅ |
+| SEARCH_PHONE_NUMBER | PhonesEOSearchPhoneNumber | — |
+| SPEED_DIAL_NUMBER | PhonesEOSpeedDialNumber | — |
+| VALIDITY | PhonesEOValidity | — |
+
+### [[personrefpvo|PersonRefPVO]] (HCM)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| COUNTRY_CODE_NUMBER | PhonesEOCountryCodeNumber | — |
+| EXTENSION | PhonesEOExtension | — |
+| PHONE_ID | PhonesEOPhoneId | — |
+| PHONE_NUMBER | PhonesEOPhoneNumber | — |
+| PHONE_TYPE | PhonesEOPhoneType | — |
+| SEARCH_PHONE_NUMBER | PhonesEOSearchPhoneNumber | — |
+| SPEED_DIAL_NUMBER | PhonesEOSpeedDialNumber | — |
+| VALIDITY | PhonesEOValidity | — |
+
+### [[phonespvo|PhonesPVO]] (HCM · BICC: 17/20)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| AREA_CODE | PhonesEOAreaCode | ✅ |
+| BUSINESS_GROUP_ID | PhonesEOBusinessGroupId | — |
+| COUNTRY_CODE_NUMBER | PhonesEOCountryCodeNumber | ✅ |
+| CREATED_BY | PhonesEOCreatedBy | ✅ |
+| CREATION_DATE | PhonesEOCreationDate | ✅ |
+| DATE_FROM | PhonesEODateFrom | ✅ |
+| DATE_TO | PhonesEODateTo | ✅ |
+| EXTENSION | PhonesEOExtension | ✅ |
+| LAST_UPDATE_DATE | PhonesEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | PhonesEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | PhonesEOLastUpdatedBy | ✅ |
+| LEGISLATION_CODE | PhonesEOLegislationCode | ✅ |
+| OBJECT_VERSION_NUMBER | PhonesEOObjectVersionNumber | — |
+| PERSON_ID | PhonesEOPersonId | ✅ |
+| PHONE_ID | PhoneId | ✅ |
+| PHONE_NUMBER | PhonesEOPhoneNumber | ✅ |
+| PHONE_TYPE | PhonesEOPhoneType | ✅ |
+| SEARCH_PHONE_NUMBER | PhonesEOSearchPhoneNumber | ✅ |
+| SPEED_DIAL_NUMBER | PhonesEOSpeedDialNumber | ✅ |
+| VALIDITY | PhonesEOValidity | ✅ |
+
+### [[phonespvoviewall|PhonesPVOViewAll]] (HCM · BICC: 16/20)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| AREA_CODE | PhonesEOAreaCode | ✅ |
+| BUSINESS_GROUP_ID | PhonesEOBusinessGroupId | — |
+| COUNTRY_CODE_NUMBER | PhonesEOCountryCodeNumber | ✅ |
+| CREATED_BY | PhonesEOCreatedBy | ✅ |
+| CREATION_DATE | PhonesEOCreationDate | ✅ |
+| DATE_FROM | PhonesEODateFrom | ✅ |
+| DATE_TO | PhonesEODateTo | ✅ |
+| EXTENSION | PhonesEOExtension | ✅ |
+| LAST_UPDATE_DATE | PhonesEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | PhonesEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | PhonesEOLastUpdatedBy | ✅ |
+| LEGISLATION_CODE | PhonesEOLegislationCode | ✅ |
+| OBJECT_VERSION_NUMBER | PhonesEOObjectVersionNumber | — |
+| PERSON_ID | PhonesEOPersonId | ✅ |
+| PHONE_ID | PhoneId | ✅ |
+| PHONE_NUMBER | PhonesEOPhoneNumber | ✅ |
+| PHONE_TYPE | PhonesEOPhoneType | ✅ |
+| SEARCH_PHONE_NUMBER | PhonesEOSearchPhoneNumber | — |
+| SPEED_DIAL_NUMBER | PhonesEOSpeedDialNumber | ✅ |
+| VALIDITY | PhonesEOValidity | ✅ |

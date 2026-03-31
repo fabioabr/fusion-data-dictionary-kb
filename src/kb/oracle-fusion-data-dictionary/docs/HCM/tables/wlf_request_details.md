@@ -122,3 +122,87 @@ ORDER BY rd.REQUEST_DATE;
 
 - [Oracle Docs — WLF_REQUEST_DETAILS](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/wlfrequestdetails.html)
 - [[hcm-module-data-dictionary]] — Dossiê do módulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[learningrequestdetailspvo|LearningRequestDetailsPVO]] (HCM · BICC: 4/75)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CA_ATTRIBUTE1 | LearningRequestDetailsPEOCaAttribute1 | — |
+| CA_ATTRIBUTE10 | LearningRequestDetailsPEOCaAttribute10 | — |
+| CA_ATTRIBUTE11 | LearningRequestDetailsPEOCaAttribute11 | — |
+| CA_ATTRIBUTE12 | LearningRequestDetailsPEOCaAttribute12 | — |
+| CA_ATTRIBUTE13 | LearningRequestDetailsPEOCaAttribute13 | — |
+| CA_ATTRIBUTE14 | LearningRequestDetailsPEOCaAttribute14 | — |
+| CA_ATTRIBUTE15 | LearningRequestDetailsPEOCaAttribute15 | — |
+| CA_ATTRIBUTE16 | LearningRequestDetailsPEOCaAttribute16 | — |
+| CA_ATTRIBUTE17 | LearningRequestDetailsPEOCaAttribute17 | — |
+| CA_ATTRIBUTE18 | LearningRequestDetailsPEOCaAttribute18 | — |
+| CA_ATTRIBUTE19 | LearningRequestDetailsPEOCaAttribute19 | — |
+| CA_ATTRIBUTE2 | LearningRequestDetailsPEOCaAttribute2 | — |
+| CA_ATTRIBUTE20 | LearningRequestDetailsPEOCaAttribute20 | — |
+| CA_ATTRIBUTE21 | LearningRequestDetailsPEOCaAttribute21 | — |
+| CA_ATTRIBUTE22 | LearningRequestDetailsPEOCaAttribute22 | — |
+| CA_ATTRIBUTE23 | LearningRequestDetailsPEOCaAttribute23 | — |
+| CA_ATTRIBUTE24 | LearningRequestDetailsPEOCaAttribute24 | — |
+| CA_ATTRIBUTE25 | LearningRequestDetailsPEOCaAttribute25 | — |
+| CA_ATTRIBUTE26 | LearningRequestDetailsPEOCaAttribute26 | — |
+| CA_ATTRIBUTE27 | LearningRequestDetailsPEOCaAttribute27 | — |
+| CA_ATTRIBUTE28 | LearningRequestDetailsPEOCaAttribute28 | — |
+| CA_ATTRIBUTE29 | LearningRequestDetailsPEOCaAttribute29 | — |
+| CA_ATTRIBUTE3 | LearningRequestDetailsPEOCaAttribute3 | — |
+| CA_ATTRIBUTE30 | LearningRequestDetailsPEOCaAttribute30 | — |
+| CA_ATTRIBUTE4 | LearningRequestDetailsPEOCaAttribute4 | — |
+| CA_ATTRIBUTE5 | LearningRequestDetailsPEOCaAttribute5 | — |
+| CA_ATTRIBUTE6 | LearningRequestDetailsPEOCaAttribute6 | — |
+| CA_ATTRIBUTE7 | LearningRequestDetailsPEOCaAttribute7 | — |
+| CA_ATTRIBUTE8 | LearningRequestDetailsPEOCaAttribute8 | — |
+| CA_ATTRIBUTE9 | LearningRequestDetailsPEOCaAttribute9 | — |
+| CA_ATTRIBUTE_CATEGORY | LearningRequestDetailsPEOCaAttributeCategory | — |
+| CA_ATTRIBUTE_DATE1 | LearningRequestDetailsPEOCaAttributeDate1 | — |
+| CA_ATTRIBUTE_DATE10 | LearningRequestDetailsPEOCaAttributeDate10 | — |
+| CA_ATTRIBUTE_DATE11 | LearningRequestDetailsPEOCaAttributeDate11 | — |
+| CA_ATTRIBUTE_DATE12 | LearningRequestDetailsPEOCaAttributeDate12 | — |
+| CA_ATTRIBUTE_DATE13 | LearningRequestDetailsPEOCaAttributeDate13 | — |
+| CA_ATTRIBUTE_DATE14 | LearningRequestDetailsPEOCaAttributeDate14 | — |
+| CA_ATTRIBUTE_DATE15 | LearningRequestDetailsPEOCaAttributeDate15 | — |
+| CA_ATTRIBUTE_DATE2 | LearningRequestDetailsPEOCaAttributeDate2 | — |
+| CA_ATTRIBUTE_DATE3 | LearningRequestDetailsPEOCaAttributeDate3 | — |
+| CA_ATTRIBUTE_DATE4 | LearningRequestDetailsPEOCaAttributeDate4 | — |
+| CA_ATTRIBUTE_DATE5 | LearningRequestDetailsPEOCaAttributeDate5 | — |
+| CA_ATTRIBUTE_DATE6 | LearningRequestDetailsPEOCaAttributeDate6 | — |
+| CA_ATTRIBUTE_DATE7 | LearningRequestDetailsPEOCaAttributeDate7 | — |
+| CA_ATTRIBUTE_DATE8 | LearningRequestDetailsPEOCaAttributeDate8 | — |
+| CA_ATTRIBUTE_DATE9 | LearningRequestDetailsPEOCaAttributeDate9 | — |
+| CA_ATTRIBUTE_NUMBER1 | LearningRequestDetailsPEOCaAttributeNumber1 | — |
+| CA_ATTRIBUTE_NUMBER10 | LearningRequestDetailsPEOCaAttributeNumber10 | — |
+| CA_ATTRIBUTE_NUMBER11 | LearningRequestDetailsPEOCaAttributeNumber11 | — |
+| CA_ATTRIBUTE_NUMBER12 | LearningRequestDetailsPEOCaAttributeNumber12 | — |
+| CA_ATTRIBUTE_NUMBER13 | LearningRequestDetailsPEOCaAttributeNumber13 | — |
+| CA_ATTRIBUTE_NUMBER14 | LearningRequestDetailsPEOCaAttributeNumber14 | — |
+| CA_ATTRIBUTE_NUMBER15 | LearningRequestDetailsPEOCaAttributeNumber15 | — |
+| CA_ATTRIBUTE_NUMBER16 | LearningRequestDetailsPEOCaAttributeNumber16 | — |
+| CA_ATTRIBUTE_NUMBER17 | LearningRequestDetailsPEOCaAttributeNumber17 | — |
+| CA_ATTRIBUTE_NUMBER18 | LearningRequestDetailsPEOCaAttributeNumber18 | — |
+| CA_ATTRIBUTE_NUMBER19 | LearningRequestDetailsPEOCaAttributeNumber19 | — |
+| CA_ATTRIBUTE_NUMBER2 | LearningRequestDetailsPEOCaAttributeNumber2 | — |
+| CA_ATTRIBUTE_NUMBER20 | LearningRequestDetailsPEOCaAttributeNumber20 | — |
+| CA_ATTRIBUTE_NUMBER3 | LearningRequestDetailsPEOCaAttributeNumber3 | — |
+| CA_ATTRIBUTE_NUMBER4 | LearningRequestDetailsPEOCaAttributeNumber4 | — |
+| CA_ATTRIBUTE_NUMBER5 | LearningRequestDetailsPEOCaAttributeNumber5 | — |
+| CA_ATTRIBUTE_NUMBER6 | LearningRequestDetailsPEOCaAttributeNumber6 | — |
+| CA_ATTRIBUTE_NUMBER7 | LearningRequestDetailsPEOCaAttributeNumber7 | — |
+| CA_ATTRIBUTE_NUMBER8 | LearningRequestDetailsPEOCaAttributeNumber8 | — |
+| CA_ATTRIBUTE_NUMBER9 | LearningRequestDetailsPEOCaAttributeNumber9 | — |
+| CREATED_BY | LearningRequestDetailsPEOCreatedBy | — |
+| CREATION_DATE | LearningRequestDetailsPEOCreationDate | — |
+| JUSTIFICATION | LearningRequestDetailsPEOJustification | ✅ |
+| LAST_UPDATE_DATE | LearningRequestDetailsPEOLastUpdateDate | — |
+| LAST_UPDATE_LOGIN | LearningRequestDetailsPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | LearningRequestDetailsPEOLastUpdatedBy | — |
+| REQUEST_COMPLETION_DATE | LearningRequestDetailsPEORequestCompletionDate | ✅ |
+| REQUEST_DETAIL_ID | LearningRequestDetailsPEORequestDetailId | ✅ |
+| REQUEST_START_DATE | LearningRequestDetailsPEORequestStartDate | ✅ |

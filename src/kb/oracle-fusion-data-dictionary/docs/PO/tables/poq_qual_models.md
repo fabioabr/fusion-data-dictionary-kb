@@ -139,6 +139,72 @@ ORDER  BY qma.WEIGHT_PERCENT DESC;
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[qualificationmodelareaspvo|QualificationModelAreasPVO]] (PO · BICC: 19/20)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | QualModelCreatedBy | ✅ |
+| CREATION_DATE | QualModelCreationDate | ✅ |
+| GLOBAL_FLAG | QualModelGlobalFlag | ✅ |
+| LAST_UPDATE_DATE | QualModelLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | QualModelLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | QualModelLastUpdatedBy | ✅ |
+| LATEST_REVISION_FLAG | QualModelLatestRevisionFlag | ✅ |
+| OBJECT_VERSION_NUMBER | QualModelObjectVersionNumber | ✅ |
+| ORIGINAL_QUAL_MODEL_ID | QualModelOriginalQualModelId | ✅ |
+| OWNER_ID | QualModelOwnerId | ✅ |
+| PRC_BU_ID | QualModelPrcBuId | ✅ |
+| QUAL_MODEL_DESCRIPTION | QualModelQualModelDescription | ✅ |
+| QUAL_MODEL_ID | QualModelQualModelId | ✅ |
+| QUAL_MODEL_LEVEL | QualModelQualModelLevel | ✅ |
+| QUAL_MODEL_NAME | QualModelQualModelName | ✅ |
+| QUAL_MODEL_STATUS | QualModelQualModelStatus | ✅ |
+| QUAL_MODEL_USAGE_CODE | QualModelUsageCode | — |
+| REVISION_NUMBER | QualModelRevisionNumber | ✅ |
+| STDS_ORG_CODE | QualModelStdsOrgCode | ✅ |
+| SUBJECT_CODE | QualModelSubjectCode | ✅ |
+
+### [[qualificationmodelpvo|QualificationModelPVO]] (PO · BICC: 27/32)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTIVATION_DATE | QualificationModelActivationDate | ✅ |
+| ASSESSMENT_OWNER_ID | QualificationModelAssessmentOwnerId | — |
+| AUTO_EVAL_ASSESSMENT_FLAG | QualificationModelAutoEvalAssessmentFlag | ✅ |
+| CREATED_BY | QualificationModelCreatedBy | ✅ |
+| CREATION_DATE | QualificationModelCreationDate | ✅ |
+| DEFAULT_ASSESSMT_OWNER_FLAG | QualificationModelDefaultAssessmtOwnerFlag | — |
+| ENABLE_SCORING_FLAG | QualificationModelEnableScoringFlag | ✅ |
+| EXPIRATION_REMINDER_PERIOD | QualificationModelExpirationReminderPeriod | ✅ |
+| EXPIRATION_REMINDER_TYPE | QualificationModelExpirationReminderType | ✅ |
+| GLOBAL_FLAG | QualificationModelGlobalFlag | ✅ |
+| LAST_UPDATE_DATE | QualificationModelLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | QualificationModelLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | QualificationModelLastUpdatedBy | ✅ |
+| LATEST_REVISION_FLAG | QualificationModelLatestRevisionFlag | ✅ |
+| NOTE_TO_SUPPLIER | QualificationModelNoteToSupplier | ✅ |
+| OBJECT_VERSION_NUMBER | QualificationModelObjectVersionNumber | ✅ |
+| ORIGINAL_QUAL_MODEL_ID | QualificationModelOriginalQualModelId | ✅ |
+| OWNER_ID | QualificationModelOwnerId | ✅ |
+| PRC_BU_ID | QualificationModelPrcBuId | ✅ |
+| QUAL_MODEL_DESCRIPTION | QualificationModelQualModelDescription | ✅ |
+| QUAL_MODEL_ID | QualModelId | ✅ |
+| QUAL_MODEL_LEVEL | QualificationModelQualModelLevel | ✅ |
+| QUAL_MODEL_NAME | QualificationModelQualModelName | ✅ |
+| QUAL_MODEL_STATUS | QualificationModelQualModelStatus | ✅ |
+| QUAL_MODEL_USAGE_CODE | QualModelUsageCode | — |
+| REVISION_NUMBER | QualificationModelRevisionNumber | ✅ |
+| SHOW_ASSESSMENT_QUAL_FLAG | QualificationModelShowAssessmentQualFlag | ✅ |
+| SHOW_ASSESSMT_TO_SUPP_FLAG | QualificationModelShowAssessmtToSuppFlag | ✅ |
+| SOURCING_ELIGIBLE_FLAG | QualificationModelSourcingEligibleFlag | — |
+| SOURCING_SHARE_ELIG_FLAG | QualificationModelSourcingShareEligFlag | — |
+| STDS_ORG_CODE | QualificationModelStdsOrgCode | ✅ |
+| SUBJECT_CODE | QualificationModelSubjectCode | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — Supplier Qualification Management](https://docs.oracle.com/en/cloud/saas/procurement/25a/oedmf/)

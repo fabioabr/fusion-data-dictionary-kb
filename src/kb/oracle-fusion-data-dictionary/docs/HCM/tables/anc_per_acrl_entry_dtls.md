@@ -38,7 +38,6 @@ updated_at: 2026-03-25
 
 Armazena os **detalhes das entradas de acumulação** de ausência. Contém informações adicionais sobre cada movimentação de saldo (ex.: base de cálculo, faixa aplicada, fator proporcional).
 
-
 ---
 
 ## 🧠 Propósito de Negócio
@@ -104,6 +103,156 @@ WHERE  d.PER_ACCRUAL_ENTRY_ID = :p_accrual_entry_id;
 - Contém o detalhamento do cálculo de cada movimentação de saldo.
 - O campo `ACCRUAL_BAND_ID` indica qual faixa de acumulação foi utilizada no cálculo.
 - `RATE_APPLIED` mostra a taxa efetiva aplicada ao cálculo.
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[personaccrualentrydtlextractpvo|PersonAccrualEntryDtlExtractPVO]] (HCM · BICC: 38/40)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ADJ_EXP_DT | AdjExpDt | ✅ |
+| ADJ_EXP_DT_REASON_CD | AdjExpDtReasonCd | ✅ |
+| ADJUSTMENT_REASON | AdjustmentReason | ✅ |
+| APPROVAL_STATUS_CD | ApprovalStatusCd | ✅ |
+| ASSIGNMENT_ID | AssignmentId | ✅ |
+| BEN_DISB_PROC_ERROR | BenDisbProcError | ✅ |
+| COMP_ADJ_REASON_CD | CompAdjReasonCd | ✅ |
+| COVR_ENTRY_DTL_ID | CovrEntryDtlId | — |
+| CREATED_BY | CreatedBy | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| ELECTED_AMT | ElectedAmt | ✅ |
+| ELECTION_DT | ElectionDt | ✅ |
+| ENTERPRISE_ID | EnterpriseId | ✅ |
+| EXP_DISB_PAY_PUSH | ExpDisbPayPush | ✅ |
+| EXP_DT | ExpDt | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | LastUpdatedBy | ✅ |
+| LEGAL_EMPLOYER_ID | LegalEmployerId | ✅ |
+| LOADER_REF_ID | LoaderRefId | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | ✅ |
+| PER_ABS_TYPE_ENTRY_ID | PerAbsTypeEntryId | — |
+| PER_ABSENCE_ENTRY_ID | PerAbsenceEntryId | ✅ |
+| PER_ACCRUAL_ENTRY_DTL_ID | PerAccrualEntryDtlId | ✅ |
+| PER_ACCRUAL_ENTRY_ID | PerAccrualEntryId | ✅ |
+| PER_EVENT_ID | PerEventId | ✅ |
+| PER_PLAN_ENRT_ID | PerPlanEnrtId | ✅ |
+| PERSON_ID | PersonId | ✅ |
+| PL_ID | PlId | ✅ |
+| PROC_STATUS_CD | ProcStatusCd | ✅ |
+| PROCD_DATE | ProcdDate | ✅ |
+| REF_ID | RefId | ✅ |
+| REFERENCE_DATE | ReferenceDate | ✅ |
+| SOURCE | Source | ✅ |
+| TIME_CARD_ID | TimeCardId | ✅ |
+| TIME_CARD_VERSION | TimeCardVersion | ✅ |
+| TYPE | Type | ✅ |
+| VALUE | Value | ✅ |
+| VOIDED_ACRL | VoidedAcrl | ✅ |
+| WORK_TERM_ASG_ID | WorkTermAsgId | ✅ |
+
+### [[personaccrualentrydtlpvo|PersonAccrualEntryDtlPVO]] (GL · BICC: 25/41)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ADJ_EXP_DT | AdjExpDt | ✅ |
+| ADJ_EXP_DT_REASON_CD | AdjExpDtReasonCd | ✅ |
+| ADJUSTMENT_REASON | AdjustmentReason | ✅ |
+| APPROVAL_STATUS_CD | ApprovalStatusCd | ✅ |
+| ASSIGNMENT_ID | AssignmentId | ✅ |
+| BEN_DISB_PROC_ERROR | BenDisbProcError | ✅ |
+| COMP_ADJ_REASON_CD | CompAdjReasonCd | ✅ |
+| CREATED_BY | CreatedBy | — |
+| CREATION_DATE | CreationDate | — |
+| DON_POOL_PLAN_ID | PersonAccrualEntryDtlPEODonPoolPlanId | — |
+| DON_TYPE | PersonAccrualEntryDtlPEODonType | — |
+| ELECTED_AMT | ElectedAmt | ✅ |
+| ELECTION_DT | ElectionDt | ✅ |
+| ENTERPRISE_ID | EnterpriseId | — |
+| EXP_DISB_PAY_PUSH | ExpDisbPayPush | ✅ |
+| EXP_DT | ExpDt | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | — |
+| LAST_UPDATED_BY | LastUpdatedBy | — |
+| LEGAL_EMPLOYER_ID | LegalEmployerId | — |
+| LOADER_REF_ID | LoaderRefId | — |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | — |
+| PER_ABSENCE_ENTRY_ID | PerAbsenceEntryId | — |
+| PER_ACCRUAL_ENTRY_DTL_ID | PerAccrualEntryDtlId | ✅ |
+| PER_ACCRUAL_ENTRY_ID | PerAccrualEntryId | ✅ |
+| PER_EVENT_ID | PerEventId | — |
+| PER_PLAN_ENRT_ID | PerPlanEnrtId | ✅ |
+| PERSON_ID | PersonId | ✅ |
+| PL_ID | PlId | ✅ |
+| PROC_STATUS_CD | ProcStatusCd | ✅ |
+| PROCD_DATE | ProcdDate | ✅ |
+| RECIPIENT_PLAN_ENRT_ID | PersonAccrualEntryDtlPEORecipientPlanEnrtId | — |
+| REF_ID | RefId | — |
+| REFERENCE_DATE | ReferenceDate | ✅ |
+| SOURCE | Source | ✅ |
+| TIME_CARD_ID | TimeCardId | — |
+| TIME_CARD_VERSION | TimeCardVersion | — |
+| TYPE | Type | ✅ |
+| VALUE | Value | ✅ |
+| VOIDED_ACRL | VoidedAcrl | ✅ |
+| WORK_TERM_ASG_ID | WorkTermAsgId | ✅ |
+
+### [[persondonationentrydtlpvo|PersonDonationEntryDtlPVO]] (GL · BICC: 17/50)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ADJ_EXP_DT | AdjExpDt | — |
+| ADJ_EXP_DT_REASON_CD | AdjExpDtReasonCd | — |
+| ADJUSTMENT_REASON | AdjustmentReason | — |
+| ANC_PER_ACRL_ENTRY_DTLS_ALTCD | AncPerAcrlEntryDtlsAltcd | — |
+| ANC_PER_BEN_ELCTD_DISB_ID | AncPerBenElctdDisbId | — |
+| APPROVAL_STATUS_CD | ApprovalStatusCd | ✅ |
+| APPROVAL_SUBMITTED_DATE | ApprovalSubmittedDate | ✅ |
+| ASSIGNMENT_ID | AssignmentId | ✅ |
+| BEN_DISB_FIXED | BenDisbFixed | — |
+| BEN_DISB_PROC_ERROR | BenDisbProcError | — |
+| BEN_DISB_PROCESSED | BenDisbProcessed | — |
+| COMP_ADJ_REASON_CD | CompAdjReasonCd | — |
+| COVR_ENTRY_DTL_ID | CovrEntryDtlId | — |
+| CREATED_BY | CreatedBy | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| ELECTED_AMT | ElectedAmt | — |
+| ELECTION_DT | ElectionDt | — |
+| ENTERPRISE_ID | EnterpriseId | — |
+| EXP_DISB_PAY_PUSH | ExpDisbPayPush | — |
+| EXP_DT | ExpDt | — |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | — |
+| LAST_UPDATED_BY | LastUpdatedBy | ✅ |
+| LEGAL_EMPLOYER_ID | LegalEmployerId | — |
+| LOADER_REF_ID | LoaderRefId | — |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | — |
+| PER_ABS_TYPE_ENTRY_ID | PerAbsTypeEntryId | — |
+| PER_ABSENCE_ENTRY_ID | PerAbsenceEntryId | — |
+| PER_ACCRUAL_ENTRY_DTL_ID | PerAccrualEntryDtlId | ✅ |
+| PER_ACCRUAL_ENTRY_ID | PerAccrualEntryId | — |
+| PER_EVENT_ID | PerEventId | — |
+| PER_PLAN_ENRT_ID | PerPlanEnrtId | ✅ |
+| PERSON_ID | PersonId | ✅ |
+| PL_ID | PlId | ✅ |
+| PROC_STATUS_CD | ProcStatusCd | ✅ |
+| PROCD_DATE | ProcdDate | ✅ |
+| RECIPIENT_PLAN_ENRT_ID | RecipientPlanEnrtId | ✅ |
+| REF_ID | RefId | — |
+| REFERENCE_DATE | ReferenceDate | — |
+| REPROCESS_REQUIRED | ReprocessRequired | — |
+| SOURCE | Source | — |
+| TIME_CARD_ID | TimeCardId | — |
+| TIME_CARD_VERSION | TimeCardVersion | — |
+| TYPE | Type | ✅ |
+| USER_MODE | UserMode | — |
+| VALUE | Value | ✅ |
+| VOIDED_ACRL | VoidedAcrl | — |
+| VOIDED_BY | VoidedBy | — |
+| VOIDED_DATETIME | VoidedDatetime | — |
+| WORK_TERM_ASG_ID | WorkTermAsgId | ✅ |
 
 ---
 

@@ -117,3 +117,40 @@ ORDER BY ea.ATTEMPT_NUMBER;
 
 - [Oracle Docs — WLF_EVENT_ATTEMPTS](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/wlfeventattempts.html)
 - [[hcm-module-data-dictionary]] — Dossiê do módulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[eventattemptpvo|EventAttemptPVO]] (HCM · BICC: 3/28)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ATTEMPT_END_DATE | EventAttemptPEOAttemptEndDate | — |
+| AVAILABLE_CHILDREN | EventAttemptPEOAvailableChildren | — |
+| COMMENTS | EventAttemptPEOComments | — |
+| COMPLETION_DATE | EventAttemptPEOCompletionDate | — |
+| COMPLETION_MASTERY_SCORE | EventAttemptPEOCompletionMasteryScore | — |
+| COMPLETION_SCORE | EventAttemptPEOCompletionScore | — |
+| COMPLETION_STATUS | EventAttemptPEOCompletionStatus | ✅ |
+| CREATED_BY | EventAttemptPEOCreatedBy | — |
+| CREATION_DATE | EventAttemptPEOCreationDate | — |
+| ENTERPRISE_ID | EventAttemptPEOEnterpriseId | — |
+| EVENT_ATTEMPT_ID | EventAttemptPEOEventAttemptId | ✅ |
+| EVENT_ID | EventAttemptPEOEventId | — |
+| LAST_UPDATE_DATE | EventAttemptPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | EventAttemptPEOLastUpdateLogin | — |
+| LAST_UPDATE_METHOD | EventAttemptPEOLastUpdateMethod | — |
+| LAST_UPDATED_BY | EventAttemptPEOLastUpdatedBy | — |
+| LATEST_ATTEMPT_INTERACTION_ID | EventAttemptPEOLatestAttemptInteractionId | — |
+| LOCATION | EventAttemptPEOLocation | — |
+| NEEDS_STATUS_ROLLUP | EventAttemptPEONeedsStatusRollup | — |
+| NEEDS_TIME_ROLLUP | EventAttemptPEONeedsTimeRollup | — |
+| OBJ_STATUS_CALC_METHOD | EventAttemptPEOObjStatusCalcMethod | — |
+| OBJECT_VERSION_NUMBER | EventAttemptPEOObjectVersionNumber | — |
+| OBJECTIVE_MASTERY_SCORE | EventAttemptPEOObjectiveMasteryScore | — |
+| OBJECTIVE_SCORE | EventAttemptPEOObjectiveScore | — |
+| OBJECTIVE_STATUS | EventAttemptPEOObjectiveStatus | — |
+| PROGRESS_MEASURE | EventAttemptPEOProgressMeasure | — |
+| ROOT_ATTEMPT_ID | EventAttemptPEORootAttemptId | — |
+| TOTAL_TIME | TotalTime | — |

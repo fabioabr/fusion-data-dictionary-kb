@@ -93,3 +93,75 @@ SELECT ds.DISTRIBUTION_SET_NAME,
 - Oracle Fusion Cloud Financials — Accounts Payable Tables (OEDMF Release 13).
 - Oracle BICC — AP Distribution Subject Area Documentation.
 - Oracle Fusion Cloud ERP Schema Reference (Release 25A).
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[expensedistributionpvo|ExpenseDistributionPVO]] (OTHER · BICC: 1/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | DistributionSetCreatedBy | — |
+| CREATION_DATE | DistributionSetCreationDate | — |
+| DESCRIPTION | DistributionSetDescription | — |
+| DISTRIBUTION_SET_ID | DistributionSetDistributionSetId | — |
+| DISTRIBUTION_SET_NAME | DistributionSetDistributionSetName | — |
+| INACTIVE_DATE | DistributionSetInactiveDate | — |
+| LAST_UPDATE_DATE | DistributionSetLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | DistributionSetLastUpdateLogin | — |
+| LAST_UPDATED_BY | DistributionSetLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | DistributionSetObjectVersionNumber | — |
+| ORG_ID | DistributionSetOrgId | — |
+| TOTAL_PERCENT_DISTRIBUTION | DistributionSetTotalPercentDistribution | — |
+
+### [[invoiceheaderpvo|InvoiceHeaderPVO]] (AP · BICC: 1/2)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| DISTRIBUTION_SET_ID | DistributionSetDistributionSetId | — |
+| ORG_ID | DistributionSetOrgId | ✅ |
+
+### [[invoicelinepvo|InvoiceLinePVO]] (AP · BICC: 2/6)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| DISTRIBUTION_SET_ID | DistributionSetDistributionSetId | — |
+| DISTRIBUTION_SET_ID | DistributionSetLineDistributionSetId | — |
+| DISTRIBUTION_SET_NAME | DistributionSetDistributionSetName | ✅ |
+| DISTRIBUTION_SET_NAME | DistributionSetLineDistributionSetName | ✅ |
+| ORG_ID | DistributionSetLineOrgId | — |
+| ORG_ID | DistributionSetOrgId | — |
+
+### [[paymenthistorydistributionpvo|PaymentHistoryDistributionPVO]] (AP · BICC: 1/2)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| DISTRIBUTION_SET_ID | DistributionSetDistributionSetId | — |
+| LAST_UPDATE_DATE | DistributionSetLastUpdateDate | ✅ |
+
+### [[prepaymentappliationdistributionpvo|PrepaymentAppliationDistributionPVO]] (AP · BICC: 2/4)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| DISTRIBUTION_SET_ID | DistributionSetDistributionSetId | — |
+| DISTRIBUTION_SET_ID | DistributionSetLineDistributionSetId | — |
+| LAST_UPDATE_DATE | DistributionSetLastUpdateDate | ✅ |
+| LAST_UPDATE_DATE | DistributionSetLineLastUpdateDate | ✅ |
+
+### [[suppliersiteassignmentspvo|SupplierSiteAssignmentsPVO]] (PO · BICC: 12/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | ApDistributionSetsAllCreatedBy | ✅ |
+| CREATION_DATE | ApDistributionSetsAllCreationDate | ✅ |
+| DESCRIPTION | ApDistributionSetsAllDescription | ✅ |
+| DISTRIBUTION_SET_ID | ApDistributionSetsAllDistributionSetId | ✅ |
+| DISTRIBUTION_SET_NAME | ApDistributionSetsAllDistributionSetName | ✅ |
+| INACTIVE_DATE | ApDistributionSetsAllInactiveDate | ✅ |
+| LAST_UPDATE_DATE | ApDistributionSetsAllLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ApDistributionSetsAllLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | ApDistributionSetsAllLastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | ApDistributionSetsAllObjectVersionNumber | ✅ |
+| ORG_ID | ApDistributionSetsAllOrgId | ✅ |
+| TOTAL_PERCENT_DISTRIBUTION | ApDistributionSetsAllTotalPercentDistribution | ✅ |

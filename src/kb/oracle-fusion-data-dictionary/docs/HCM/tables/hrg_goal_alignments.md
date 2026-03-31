@@ -98,6 +98,142 @@ WHERE  a.ALIGNED_GOAL_ID = :p_org_goal_id;
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[careerdevgoalpvo|CareerDevGoalPVO]] (HCM · BICC: 1/4)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ALIGNED_GOAL_ID | GoalAlignmentPEOAlignedGoalId | — |
+| GOAL_ALIGNMENT_ID | GoalAlignmentPEOGoalAlignmentId | — |
+| GOAL_ID | GoalAlignmentPEOGoalId1 | — |
+| LAST_UPDATE_DATE | GoalAlignmentPEOLastUpdateDate | ✅ |
+
+### [[careerdevgoalpvoviewall|CareerDevGoalPVOViewAll]] (HCM · BICC: 1/4)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ALIGNED_GOAL_ID | GoalAlignmentPEOAlignedGoalId | — |
+| GOAL_ALIGNMENT_ID | GoalAlignmentPEOGoalAlignmentId | — |
+| GOAL_ID | GoalAlignmentPEOGoalId1 | — |
+| LAST_UPDATE_DATE | GoalAlignmentPEOLastUpdateDate | ✅ |
+
+### [[careerdevgoalversionpvo|CareerDevGoalVersionPVO]] (HCM · BICC: 1/4)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ALIGNED_GOAL_ID | GoalAlignmentPEOAlignedGoalId | — |
+| GOAL_ALIGNMENT_ID | GoalAlignmentPEOGoalAlignmentId | — |
+| GOAL_ID | GoalAlignmentPEOGoalId1 | — |
+| LAST_UPDATE_DATE | GoalAlignmentPEOLastUpdateDate | ✅ |
+
+### [[careerdevgoalversionpvoviewall|CareerDevGoalVersionPVOViewAll]] (HCM · BICC: 1/4)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ALIGNED_GOAL_ID | GoalAlignmentPEOAlignedGoalId | — |
+| GOAL_ALIGNMENT_ID | GoalAlignmentPEOGoalAlignmentId | — |
+| GOAL_ID | GoalAlignmentPEOGoalId1 | — |
+| LAST_UPDATE_DATE | GoalAlignmentPEOLastUpdateDate | ✅ |
+
+### [[developmentgoalpvo|DevelopmentGoalPVO]] (HCM · BICC: 1/4)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ALIGNED_GOAL_ID | GoalAlignmentPEOAlignedGoalId | — |
+| GOAL_ALIGNMENT_ID | GoalAlignmentPEOGoalAlignmentId | — |
+| GOAL_ID | GoalAlignmentPEOGoalId1 | — |
+| LAST_UPDATE_DATE | GoalAlignmentPEOLastUpdateDate | ✅ |
+
+### [[developmentgoalpvoviewall|DevelopmentGoalPVOViewAll]] (HCM · BICC: 1/4)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ALIGNED_GOAL_ID | GoalAlignmentPEOAlignedGoalId | — |
+| GOAL_ALIGNMENT_ID | GoalAlignmentPEOGoalAlignmentId | — |
+| GOAL_ID | GoalAlignmentPEOGoalId1 | — |
+| LAST_UPDATE_DATE | GoalAlignmentPEOLastUpdateDate | ✅ |
+
+### [[goalalignmentextractpvo|GoalAlignmentExtractPVO]] (HCM · BICC: 10/10)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ALIGNED_GOAL_ID | AlignedGoalId | ✅ |
+| BUSINESS_GROUP_ID | BusinessGroupId | ✅ |
+| CREATED_BY | CreatedBy | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| GOAL_ALIGNMENT_ID | GoalAlignmentId | ✅ |
+| GOAL_ID | GoalId | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | LastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | ✅ |
+
+### [[goalppvo1|GoalPPVO1]] (HCM · BICC: 1/4)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ALIGNED_GOAL_ID | GoalAlignmentPEOAlignedGoalId | — |
+| GOAL_ALIGNMENT_ID | GoalAlignmentPEOGoalAlignmentId | — |
+| GOAL_ID | GoalAlignmentPEOGoalId1 | — |
+| LAST_UPDATE_DATE | GoalAlignmentPEOLastUpdateDate | ✅ |
+
+### [[goalpvo_copy|GoalPVO_Copy]] (HCM · BICC: 1/4)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ALIGNED_GOAL_ID | GoalAlignmentPEOAlignedGoalId | — |
+| GOAL_ALIGNMENT_ID | GoalAlignmentPEOGoalAlignmentId | — |
+| GOAL_ID | GoalAlignmentPEOGoalId1 | — |
+| LAST_UPDATE_DATE | GoalAlignmentPEOLastUpdateDate | ✅ |
+
+### [[performancegoalpvo|PerformanceGoalPVO]] (HCM · BICC: 1/4)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ALIGNED_GOAL_ID | GoalAlignmentPEOAlignedGoalId | — |
+| GOAL_ALIGNMENT_ID | GoalAlignmentPEOGoalAlignmentId | — |
+| GOAL_ID | GoalAlignmentPEOGoalId1 | — |
+| LAST_UPDATE_DATE | GoalAlignmentPEOLastUpdateDate | ✅ |
+
+### [[performancegoalpvoviewall|PerformanceGoalPVOViewAll]] (HCM · BICC: 1/4)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ALIGNED_GOAL_ID | GoalAlignmentPEOAlignedGoalId | — |
+| GOAL_ALIGNMENT_ID | GoalAlignmentPEOGoalAlignmentId | — |
+| GOAL_ID | GoalAlignmentPEOGoalId1 | — |
+| LAST_UPDATE_DATE | GoalAlignmentPEOLastUpdateDate | ✅ |
+
+### [[performancegoalversionpvo|PerformanceGoalVersionPVO]] (HCM · BICC: 1/4)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ALIGNED_GOAL_ID | GoalAlignmentPEOAlignedGoalId | — |
+| GOAL_ALIGNMENT_ID | GoalAlignmentPEOGoalAlignmentId | — |
+| GOAL_ID | GoalAlignmentPEOGoalId1 | — |
+| LAST_UPDATE_DATE | GoalAlignmentPEOLastUpdateDate | ✅ |
+
+### [[performancegoalversionpvoviewall|PerformanceGoalVersionPVOViewAll]] (HCM · BICC: 1/4)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ALIGNED_GOAL_ID | GoalAlignmentPEOAlignedGoalId | — |
+| GOAL_ALIGNMENT_ID | GoalAlignmentPEOGoalAlignmentId | — |
+| GOAL_ID | GoalAlignmentPEOGoalId1 | — |
+| LAST_UPDATE_DATE | GoalAlignmentPEOLastUpdateDate | ✅ |
+
+### [[personalgoalpvo|PersonalGoalPVO]] (HCM · BICC: 1/4)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ALIGNED_GOAL_ID | GoalAlignmentPEOAlignedGoalId | — |
+| GOAL_ALIGNMENT_ID | GoalAlignmentPEOGoalAlignmentId | — |
+| GOAL_ID | GoalAlignmentPEOGoalId1 | — |
+| LAST_UPDATE_DATE | GoalAlignmentPEOLastUpdateDate | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Fusion HCM Tables and Views](https://docs.oracle.com/en/cloud/saas/human-resources/25a/)

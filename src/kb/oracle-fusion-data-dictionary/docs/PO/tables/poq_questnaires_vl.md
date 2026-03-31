@@ -133,6 +133,100 @@ ORDER BY q.QUESTIONNAIRE_NAME;
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[questionnaireextractpvo|QuestionnaireExtractPVO]] (PO · BICC: 18/19)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| AUTO_CREATE_QUAL_FLAG | AutoCreateQualFlag | ✅ |
+| CREATED_BY | CreatedBy | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| DUE_DATE | DueDate | ✅ |
+| INITIATIVE_ID | InitiativeId | ✅ |
+| INTRODUCTION | Introduction | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | LastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | ✅ |
+| PRC_BU_ID | PrcBuId | ✅ |
+| QUESTNAIRE_CUSTOM | QuestnaireCustom | ✅ |
+| QUESTNAIRE_ID | QuestnaireId | ✅ |
+| QUESTNAIRE_STATUS | QuestnaireStatus | ✅ |
+| QUESTNAIRE_TITLE | QuestnaireTitle | ✅ |
+| QUESTNAIRE_TYPE | QuestnaireType | ✅ |
+| QUESTNAIRE_USAGE_CODE | QuestnaireUsageCode | — |
+| SUPPLIER_REG_ID | SupplierRegId | ✅ |
+| USE_QUESTION_BRANCH_FLAG | UseQuestionBranchFlag | ✅ |
+
+### [[questionnaireresponseheaderspvo|QuestionnaireResponseHeadersPVO]] (PO · BICC: 16/17)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | QuestionnaireCreatedBy | ✅ |
+| CREATION_DATE | QuestionnaireCreationDate | ✅ |
+| DUE_DATE | QuestionnaireDueDate | ✅ |
+| INITIATIVE_ID | QuestionnaireInitiativeId | ✅ |
+| INTRODUCTION | QuestionnaireIntroduction | — |
+| LAST_UPDATE_DATE | QuestionnaireLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | QuestionnaireLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | QuestionnaireLastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | QuestionnaireObjectVersionNumber | ✅ |
+| PRC_BU_ID | QuestionnairePrcBuId | ✅ |
+| QUESTNAIRE_CUSTOM | QuestionnaireQuestnaireCustom | ✅ |
+| QUESTNAIRE_ID | QuestionnaireQuestnaireId | ✅ |
+| QUESTNAIRE_STATUS | QuestionnaireQuestnaireStatus | ✅ |
+| QUESTNAIRE_TITLE | QuestionnaireQuestnaireTitle | ✅ |
+| QUESTNAIRE_TYPE | QuestionnaireQuestnaireType | ✅ |
+| SUPPLIER_REG_ID | QuestionnaireSupplierRegId | ✅ |
+| USE_QUESTION_BRANCH_FLAG | QuestionnaireUseQuestionBranchFlag | ✅ |
+
+### [[questionnaireresponsespvo|QuestionnaireResponsesPVO]] (PO · BICC: 16/17)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | QuestionnaireCreatedBy | ✅ |
+| CREATION_DATE | QuestionnaireCreationDate | ✅ |
+| DUE_DATE | QuestionnaireDueDate | ✅ |
+| INITIATIVE_ID | QuestionnaireInitiativeId | ✅ |
+| INTRODUCTION | QuestionnaireIntroduction | — |
+| LAST_UPDATE_DATE | QuestionnaireLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | QuestionnaireLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | QuestionnaireLastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | QuestionnaireObjectVersionNumber | ✅ |
+| PRC_BU_ID | QuestionnairePrcBuId | ✅ |
+| QUESTNAIRE_CUSTOM | QuestionnaireQuestnaireCustom | ✅ |
+| QUESTNAIRE_ID | QuestionnaireQuestnaireId | ✅ |
+| QUESTNAIRE_STATUS | QuestionnaireQuestnaireStatus | ✅ |
+| QUESTNAIRE_TITLE | QuestionnaireQuestnaireTitle | ✅ |
+| QUESTNAIRE_TYPE | QuestionnaireQuestnaireType | ✅ |
+| SUPPLIER_REG_ID | QuestionnaireSupplierRegId | ✅ |
+| USE_QUESTION_BRANCH_FLAG | QuestionnaireUseQuestionBranchFlag | ✅ |
+
+### [[questionnaireresponsevaluespvo|QuestionnaireResponseValuesPVO]] (PO · BICC: 16/17)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | QuestnaireCreatedBy | ✅ |
+| CREATION_DATE | QuestnaireCreationDate | ✅ |
+| DUE_DATE | QuestnaireDueDate | ✅ |
+| INITIATIVE_ID | QuestnaireInitiativeId | ✅ |
+| INTRODUCTION | QuestnaireIntroduction | — |
+| LAST_UPDATE_DATE | QuestnaireLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | QuestnaireLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | QuestnaireLastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | QuestnaireObjectVersionNumber | ✅ |
+| PRC_BU_ID | QuestnairePrcBuId | ✅ |
+| QUESTNAIRE_CUSTOM | QuestnaireQuestnaireCustom | ✅ |
+| QUESTNAIRE_ID | QuestnaireQuestnaireId | ✅ |
+| QUESTNAIRE_STATUS | QuestnaireQuestnaireStatus | ✅ |
+| QUESTNAIRE_TITLE | QuestnaireQuestnaireTitle | ✅ |
+| QUESTNAIRE_TYPE | QuestnaireQuestnaireType | ✅ |
+| SUPPLIER_REG_ID | QuestnaireSupplierRegId | ✅ |
+| USE_QUESTION_BRANCH_FLAG | QuestnaireUseQuestionBranchFlag | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — Supplier Qualification Management](https://docs.oracle.com/en/cloud/saas/procurement/25a/oedmf/)

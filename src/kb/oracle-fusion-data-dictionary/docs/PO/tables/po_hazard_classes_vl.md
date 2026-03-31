@@ -41,7 +41,6 @@ View que combina `PO_HAZARD_CLASSES_B` e `PO_HAZARD_CLASSES_TL` para **classes c
 > [!note] Sufixo _VL
 > O sufixo `_VL` combina a tabela base `_B` com traducoes `_TL` em uma view multilingue.
 
-
 ---
 
 ## 🧠 Propósito de Negócio
@@ -88,13 +87,217 @@ FROM   PO_HAZARD_CLASSES_VL
 WHERE  INACTIVE_DATE IS NULL OR INACTIVE_DATE > SYSDATE;
 ```
 
-
 ---
 
 ## 🔒 Observações
 
 - View de conveniencia.
 - Retorna traducao do idioma da sessao.
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[agreementlinepvo|AgreementLinePVO]] (PO · BICC: 3/11)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | HazardClassCreatedBy | — |
+| CREATION_DATE | HazardClassCreationDate | — |
+| DESCRIPTION | HazardClassDescription | ✅ |
+| HAZARD_CLASS | PurchasingHazardClass | ✅ |
+| HAZARD_CLASS_CODE | HazardClassCode | — |
+| HAZARD_CLASS_ID | HazardClassId | — |
+| INACTIVE_DATE | HazardClassInactiveDate | — |
+| LAST_UPDATE_DATE | HazardClassLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | HazardClassLastUpdateLogin | — |
+| LAST_UPDATED_BY | HazardClassLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | HazardClassObjectVersionNumber | — |
+
+### [[agreementpricebreakpvo|AgreementPriceBreakPVO]] (PO · BICC: 3/11)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | HazardClassCreatedBy | — |
+| CREATION_DATE | HazardClassCreationDate | — |
+| DESCRIPTION | HazardClassDescription | ✅ |
+| HAZARD_CLASS | HazardClassVA | ✅ |
+| HAZARD_CLASS_CODE | HazardClassCode | — |
+| HAZARD_CLASS_ID | HazardClassId | — |
+| INACTIVE_DATE | HazardClassInactiveDate | — |
+| LAST_UPDATE_DATE | HazardClassLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | HazardClassLastUpdateLogin | — |
+| LAST_UPDATED_BY | HazardClassLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | HazardClassObjectVersionNumber | — |
+
+### [[draftpurchaseorderdistributionpvo|DraftPurchaseOrderDistributionPVO]] (PO · BICC: 1/11)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | HazardClassCreatedBy | — |
+| CREATION_DATE | HazardClassCreationDate | — |
+| DESCRIPTION | HazardClassDescription | — |
+| HAZARD_CLASS | PurchasingHazardClass | — |
+| HAZARD_CLASS_CODE | HazardClassCode | — |
+| HAZARD_CLASS_ID | HazardClassId | — |
+| INACTIVE_DATE | HazardClassInactiveDate | — |
+| LAST_UPDATE_DATE | HazardClassLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | HazardClassLastUpdateLogin | — |
+| LAST_UPDATED_BY | HazardClassLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | HazardClassObjectVersionNumber | — |
+
+### [[draftpurchaseorderdistributionrefpvo|DraftPurchaseOrderDistributionRefPVO]] (PO · BICC: 1/11)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | HazardClassCreatedBy | — |
+| CREATION_DATE | HazardClassCreationDate | — |
+| DESCRIPTION | HazardClassDescription | — |
+| HAZARD_CLASS | PurchasingHazardClass | — |
+| HAZARD_CLASS_CODE | HazardClassCode | — |
+| HAZARD_CLASS_ID | HazardClassId | — |
+| INACTIVE_DATE | HazardClassInactiveDate | — |
+| LAST_UPDATE_DATE | HazardClassLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | HazardClassLastUpdateLogin | — |
+| LAST_UPDATED_BY | HazardClassLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | HazardClassObjectVersionNumber | — |
+
+### [[draftpurchasingdocumentlinelocationpvo|DraftPurchasingDocumentLineLocationPVO]] (PO · BICC: 1/11)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | HazardClassCreatedBy | — |
+| CREATION_DATE | HazardClassCreationDate | — |
+| DESCRIPTION | HazardClassDescription | — |
+| HAZARD_CLASS | PurchasingHazardClass | — |
+| HAZARD_CLASS_CODE | HazardClassCode | — |
+| HAZARD_CLASS_ID | HazardClassId | — |
+| INACTIVE_DATE | HazardClassInactiveDate | — |
+| LAST_UPDATE_DATE | HazardClassLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | HazardClassLastUpdateLogin | — |
+| LAST_UPDATED_BY | HazardClassLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | HazardClassObjectVersionNumber | — |
+
+### [[draftpurchasingdocumentlinepvo|DraftPurchasingDocumentLinePVO]] (PO · BICC: 1/11)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | HazardClassCreatedBy | — |
+| CREATION_DATE | HazardClassCreationDate | — |
+| DESCRIPTION | HazardClassDescription | — |
+| HAZARD_CLASS | PurchasingHazardClass | — |
+| HAZARD_CLASS_CODE | HazardClassCode | — |
+| HAZARD_CLASS_ID | HazardClassId | — |
+| INACTIVE_DATE | HazardClassInactiveDate | — |
+| LAST_UPDATE_DATE | HazardClassLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | HazardClassLastUpdateLogin | — |
+| LAST_UPDATED_BY | HazardClassLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | HazardClassObjectVersionNumber | — |
+
+### [[purchasingdocumentlinepvo|PurchasingDocumentLinePVO]] (PO · BICC: 1/11)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | HazardClassCreatedBy | — |
+| CREATION_DATE | HazardClassCreationDate | — |
+| DESCRIPTION | HazardClassDescription | — |
+| HAZARD_CLASS | PurchasingHazardClass | — |
+| HAZARD_CLASS_CODE | HazardClassCode | — |
+| HAZARD_CLASS_ID | HazardClassId | — |
+| INACTIVE_DATE | HazardClassInactiveDate | — |
+| LAST_UPDATE_DATE | HazardClassLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | HazardClassLastUpdateLogin | — |
+| LAST_UPDATED_BY | HazardClassLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | HazardClassObjectVersionNumber | — |
+
+### [[requisitiondistributionp1|RequisitionDistributionP1]] (PO · BICC: 1/6)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| DESCRIPTION | PurchasingHazardClassDescription | — |
+| HAZARD_CLASS | PurchasingHazardClassHazardClass | ✅ |
+| HAZARD_CLASS_CODE | PurchasingHazardClassHazardClassCode | — |
+| HAZARD_CLASS_ID | PurchasingHazardClassHazardClassId | — |
+| INACTIVE_DATE | PurchasingHazardClassInactiveDate | — |
+| OBJECT_VERSION_NUMBER | PurchasingHazardClassObjectVersionNumber | — |
+
+### [[requisitiondistributionrefpvo|RequisitionDistributionRefPVO]] (PO)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| DESCRIPTION | PurchasingHazardClassDescription | — |
+| HAZARD_CLASS | PurchasingHazardClassHazardClass | — |
+| HAZARD_CLASS_CODE | PurchasingHazardClassHazardClassCode | — |
+| HAZARD_CLASS_ID | PurchasingHazardClassHazardClassId | — |
+| INACTIVE_DATE | PurchasingHazardClassInactiveDate | — |
+| OBJECT_VERSION_NUMBER | PurchasingHazardClassObjectVersionNumber | — |
+
+### [[requisitionlinep1|RequisitionLineP1]] (PO · BICC: 1/6)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| DESCRIPTION | PurchasingHazardClassDescription | — |
+| HAZARD_CLASS | PurchasingHazardClassHazardClass | ✅ |
+| HAZARD_CLASS_CODE | PurchasingHazardClassHazardClassCode | — |
+| HAZARD_CLASS_ID | PurchasingHazardClassHazardClassId | — |
+| INACTIVE_DATE | PurchasingHazardClassInactiveDate | — |
+| OBJECT_VERSION_NUMBER | PurchasingHazardClassObjectVersionNumber | — |
+
+### [[standarddistributionpvo|StandardDistributionPVO]] (PO)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | HazardClassCreatedBy | — |
+| CREATION_DATE | HazardClassCreationDate | — |
+| DESCRIPTION | HazardClassDescription | — |
+| HAZARD_CLASS | PurchasingHazardClass | — |
+| HAZARD_CLASS_CODE | HazardClassCode | — |
+| HAZARD_CLASS_ID | HazardClassId | — |
+| INACTIVE_DATE | HazardClassInactiveDate | — |
+| LAST_UPDATE_DATE | HazardClassLastUpdateDate | — |
+| LAST_UPDATE_LOGIN | HazardClassLastUpdateLogin | — |
+| LAST_UPDATED_BY | HazardClassLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | HazardClassObjectVersionNumber | — |
+
+### [[standardlinepvo|StandardLinePVO]] (PO · BICC: 3/11)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | HazardClassCreatedBy | — |
+| CREATION_DATE | HazardClassCreationDate | — |
+| DESCRIPTION | HazardClassDescription | ✅ |
+| HAZARD_CLASS | PurchasingHazardClass | ✅ |
+| HAZARD_CLASS_CODE | HazardClassCode | — |
+| HAZARD_CLASS_ID | HazardClassId | — |
+| INACTIVE_DATE | HazardClassInactiveDate | — |
+| LAST_UPDATE_DATE | HazardClassLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | HazardClassLastUpdateLogin | — |
+| LAST_UPDATED_BY | HazardClassLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | HazardClassObjectVersionNumber | — |
+
+### [[standardshipmentpvo|StandardShipmentPVO]] (PO · BICC: 2/11)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | HazardClassCreatedBy | — |
+| CREATION_DATE | HazardClassCreationDate | — |
+| DESCRIPTION | HazardClassDescription | ✅ |
+| HAZARD_CLASS | HazardClassVA | ✅ |
+| HAZARD_CLASS_CODE | HazardClassCode | — |
+| HAZARD_CLASS_ID | HazardClassId | — |
+| INACTIVE_DATE | HazardClassInactiveDate | — |
+| LAST_UPDATE_DATE | HazardClassLastUpdateDate | — |
+| LAST_UPDATE_LOGIN | HazardClassLastUpdateLogin | — |
+| LAST_UPDATED_BY | HazardClassLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | HazardClassObjectVersionNumber | — |
+
+### [[unnumberhazardclass1|UNNumberHazardClass1]] (OTHER)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| HAZARD_CLASS | HazardClass | — |
+| HAZARD_CLASS_ID | HazardClassId | — |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber1 | — |
 
 ---
 

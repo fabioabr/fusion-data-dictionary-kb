@@ -41,7 +41,6 @@ Armazena **informacoes de identificacao pessoal (PII)** coletadas durante o regi
 > [!warning] Dados Sensiveis
 > Esta tabela contem **PII**. Acesso deve ser restrito conforme LGPD.
 
-
 ---
 
 ## 🧠 Propósito de Negócio
@@ -97,7 +96,6 @@ FROM   POZ_SUP_REG_PII
 WHERE  SUPPLIER_REG_ID = :p_reg_id;
 ```
 
-
 ---
 
 ## 🔒 Observações
@@ -105,6 +103,18 @@ WHERE  SUPPLIER_REG_ID = :p_reg_id;
 - **LGPD/GDPR:** Requer politicas de retencao e anonimizacao.
 - Acesso controlado por Oracle Data Masking ou roles especificas.
 - Em nao-producao, dados devem ser obrigatoriamente mascarados.
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[supplierregistrationmappingpvo|SupplierRegistrationMappingPVO]] (PO · BICC: 1/3)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| INCOME_TAX_ID | SuppRegPiiIncomeTaxId | ✅ |
+| SUPPLIER_REG_ID | SuppRegPiiSupplierRegId1 | — |
+| TAX_REGISTRATION_NUMBER | SuppRegPiiTaxRegistrationNumber | — |
 
 ---
 

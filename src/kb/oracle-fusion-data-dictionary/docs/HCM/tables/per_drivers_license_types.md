@@ -100,6 +100,40 @@ ORDER BY pdlt.LICENSE_TYPE;
 - No Brasil: A (moto), B (carro), C (caminhão), D (ônibus), E (veículos articulados).
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[driverslicensespvo|DriversLicensesPVO]] (HCM · BICC: 2/10)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | DriversLicenseTypesPEOBusinessGroupId | — |
+| CREATED_BY | DriversLicenseTypesPEOCreatedBy | — |
+| CREATION_DATE | DriversLicenseTypesPEOCreationDate | — |
+| DRIVERS_LICENSE_ID | DriversLicenseTypesPEODriversLicenseId | — |
+| DRIVERS_LICENSE_TYPE_ID | DriversLicenseTypesPEODriversLicenseTypeId | — |
+| LAST_UPDATE_DATE | DriversLicenseTypesPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | DriversLicenseTypesPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | DriversLicenseTypesPEOLastUpdatedBy | — |
+| LICENSE_TYPE | DriversLicenseTypesPEOLicenseType | ✅ |
+| OBJECT_VERSION_NUMBER | DriversLicenseTypesPEOObjectVersionNumber | — |
+
+### [[driverslicensespvoviewall|DriversLicensesPVOViewAll]] (HCM · BICC: 2/10)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | DriversLicenseTypesPEOBusinessGroupId | — |
+| CREATED_BY | DriversLicenseTypesPEOCreatedBy | — |
+| CREATION_DATE | DriversLicenseTypesPEOCreationDate | — |
+| DRIVERS_LICENSE_ID | DriversLicenseTypesPEODriversLicenseId | — |
+| DRIVERS_LICENSE_TYPE_ID | DriversLicenseTypesPEODriversLicenseTypeId | — |
+| LAST_UPDATE_DATE | DriversLicenseTypesPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | DriversLicenseTypesPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | DriversLicenseTypesPEOLastUpdatedBy | — |
+| LICENSE_TYPE | DriversLicenseTypesPEOLicenseType | ✅ |
+| OBJECT_VERSION_NUMBER | DriversLicenseTypesPEOObjectVersionNumber | — |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — PER_DRIVERS_LICENSE_TYPES](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/perdriverslicensetypes.html)

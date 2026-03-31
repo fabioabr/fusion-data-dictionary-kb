@@ -137,3 +137,22 @@ WHERE  asl.ALL_SEGMENT_VALUES_FLAG = 'N';
 
 - [Oracle Docs — GL_ACCESS_SET_LEDGERS](https://docs.oracle.com/en/cloud/saas/financials/25a/oedmf/glaccesssetledgers-25068.html)
 - [[gl-module-data-dictionary]] — Dossiê do módulo GL
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[dataaccesssetledgerpvo|DataAccessSetLedgerPVO]] (GL · BICC: 3/10)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACCESS_PRIVILEGE_CODE | DasLedgerAccessPrivilegeCode | — |
+| ACCESS_SET_ID | AccessSetId | ✅ |
+| CREATED_BY | DasLedgerCreatedBy | — |
+| CREATION_DATE | DasLedgerCreationDate | — |
+| END_DATE | DasLedgerEndDate | — |
+| LAST_UPDATE_DATE | DasLedgerLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | DasLedgerLastUpdateLogin | — |
+| LAST_UPDATED_BY | DasLedgerLastUpdatedBy | — |
+| LEDGER_ID | LedgerId | ✅ |
+| START_DATE | DasLedgerStartDate | — |

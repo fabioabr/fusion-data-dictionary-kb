@@ -103,3 +103,19 @@ WHERE  ld.STATUS = 'ACTIVE';
 
 - [Oracle Docs — HTS_LABOR_DEMAND_PRFL_DEFS](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/htslabordemandprfldefs.html)
 - [[hcm-module-data-dictionary]] — Dossie do modulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[setupprofileasgpvo|SetupProfileAsgPVO]] (GL · BICC: 1/1)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| LBR_DMD_PRFL_DEF_ID | LbrDmdPrflDefPEOLbrDmdPrflDefId | ✅ |
+
+### [[setupprofilepvo|SetupProfilePVO]] (GL · BICC: 1/1)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| LBR_DMD_PRFL_DEF_ID | LbrDmdPrflDefPEOLbrDmdPrflDefId | ✅ |

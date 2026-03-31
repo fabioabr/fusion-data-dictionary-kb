@@ -99,3 +99,34 @@ SELECT tl.USAGE_NAME FROM IRC_LC_ACTION_USAGES_TL tl WHERE tl.LANGUAGE = 'PT';
 
 - [Oracle Docs -- IRC_LC_ACTION_USAGES_TL](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/irclcactionusagestl.html)
 - [[hcm-module-data-dictionary]] -- Dossie do modulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[routingstependactionpvo|RoutingStepEndActionPVO]] (HCM · BICC: 2/4)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_DESCRIPTION | ActionUsgTranslatePEOActionDescription | ✅ |
+| ACTION_NAME | ActionUsgTranslatePEOActionName | ✅ |
+| LANGUAGE | ActionUsgTranslatePEOLanguage | — |
+| STEP_ACTION_USAGE_ID | ActionUsgTranslatePEOStepActionUsageId | — |
+
+### [[routingstepstartactionpvo|RoutingStepStartActionPVO]] (HCM · BICC: 2/4)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_DESCRIPTION | ActionUsgTranslatePEOActionDescription | ✅ |
+| ACTION_NAME | ActionUsgTranslatePEOActionName | ✅ |
+| LANGUAGE | ActionUsgTranslatePEOLanguage | — |
+| STEP_ACTION_USAGE_ID | ActionUsgTranslatePEOStepActionUsageId | — |
+
+### [[routingstepstateactionpvo|RoutingStepStateActionPVO]] (HCM · BICC: 2/4)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_DESCRIPTION | ActionUsgTranslatePEOActionDescription | ✅ |
+| ACTION_NAME | ActionUsgTranslatePEOActionName | ✅ |
+| LANGUAGE | ActionUsgTranslatePEOLanguage | — |
+| STEP_ACTION_USAGE_ID | ActionUsgTranslatePEOStepActionUsageId | — |

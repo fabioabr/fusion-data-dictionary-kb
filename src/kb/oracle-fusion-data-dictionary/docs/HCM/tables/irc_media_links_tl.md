@@ -100,3 +100,16 @@ SELECT tl.MEDIA_TITLE FROM IRC_MEDIA_LINKS_TL tl WHERE tl.LANGUAGE = 'PT';
 
 - [Oracle Docs -- IRC_MEDIA_LINKS_TL](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/ircmedialinkstl.html)
 - [[hcm-module-data-dictionary]] -- Dossie do modulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[requisitionmedialinkpvo|RequisitionMediaLinkPVO]] (PO · BICC: 3/4)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| LANGUAGE | Language | ✅ |
+| MEDIA_LINK_ID | MediaLinkId1 | — |
+| SOURCE_LANG | SourceLang | ✅ |
+| TITLE | Title | ✅ |

@@ -103,6 +103,135 @@ WHERE  ROWNUM <= 100;
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[checkintemplateeligibilitypvo|CheckinTemplateEligibilityPVO]] (HCM · BICC: 14/20)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ASSIGNMENT_ID | EligibilityResultPEOAssignmentId | ✅ |
+| BUSINESS_GROUP_ID | EligibilityResultPEOBusinessGroupId | ✅ |
+| CREATED_BY | EligibilityResultPEOCreatedBy | ✅ |
+| CREATION_DATE | EligibilityResultPEOCreationDate | ✅ |
+| EFFECTIVE_END_DATE | EligibilityResultPEOEffectiveEndDate | ✅ |
+| EFFECTIVE_START_DATE | EligibilityResultPEOEffectiveStartDate | ✅ |
+| ELIG_FLAG | EligibilityResultPEOEligFlag | ✅ |
+| ELIG_OBJ_ID | EligibilityResultPEOEligObjId | — |
+| ELIG_RSLT_ID | EligibilityResultPEOEligRsltId | ✅ |
+| INELG_RSN_CD | EligibilityResultPEOInelgRsnCd | ✅ |
+| JOB_DEFINITION_NAME | EligibilityResultPEOJobDefinitionName | — |
+| JOB_DEFINITION_PACKAGE | EligibilityResultPEOJobDefinitionPackage | — |
+| LAST_UPDATE_DATE | EligibilityResultPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | EligibilityResultPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | EligibilityResultPEOLastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | EligibilityResultPEOObjectVersionNumber | — |
+| OVERRIDE_FLAG | EligibilityResultPEOOverrideFlag | ✅ |
+| OVERRIDE_THRU_DATE | EligibilityResultPEOOverrideThruDate | ✅ |
+| PERSON_ID | EligibilityResultPEOPersonId | ✅ |
+| REQUEST_ID | EligibilityResultPEORequestId | — |
+
+### [[eligibilityresultpvo|EligibilityResultPVO]] (HCM · BICC: 5/20)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ASSIGNMENT_ID | EligibilityResultPEOAssignmentId | — |
+| BUSINESS_GROUP_ID | EligibilityResultPEOBusinessGroupId | ✅ |
+| CREATED_BY | EligibilityResultPEOCreatedBy | — |
+| CREATION_DATE | EligibilityResultPEOCreationDate | — |
+| EFFECTIVE_END_DATE | EligibilityResultPEOEffectiveEndDate | ✅ |
+| EFFECTIVE_START_DATE | EligibilityResultPEOEffectiveStartDate | ✅ |
+| ELIG_FLAG | EligibilityResultPEOEligFlag | — |
+| ELIG_OBJ_ID | EligibilityResultPEOEligObjId | — |
+| ELIG_RSLT_ID | EligibilityResultPEOEligRsltId | ✅ |
+| INELG_RSN_CD | EligibilityResultPEOInelgRsnCd | — |
+| JOB_DEFINITION_NAME | EligibilityResultPEOJobDefinitionName | — |
+| JOB_DEFINITION_PACKAGE | EligibilityResultPEOJobDefinitionPackage | — |
+| LAST_UPDATE_DATE | EligibilityResultPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | EligibilityResultPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | EligibilityResultPEOLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | EligibilityResultPEOObjectVersionNumber | — |
+| OVERRIDE_FLAG | EligibilityResultPEOOverrideFlag | — |
+| OVERRIDE_THRU_DATE | EligibilityResultPEOOverrideThruDate | — |
+| PERSON_ID | EligibilityResultPEOPersonId | — |
+| REQUEST_ID | EligibilityResultPEORequestId | — |
+
+### [[eligibilityresultsdetailspvo|EligibilityResultsDetailsPVO]] (HCM · BICC: 13/20)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ASSIGNMENT_ID | EligibilityResultPEOAssignmentId | — |
+| BUSINESS_GROUP_ID | EligibilityResultPEOBusinessGroupId | ✅ |
+| CREATED_BY | EligibilityResultPEOCreatedBy | ✅ |
+| CREATION_DATE | EligibilityResultPEOCreationDate | ✅ |
+| EFFECTIVE_END_DATE | EligibilityResultPEOEffectiveEndDate | ✅ |
+| EFFECTIVE_START_DATE | EligibilityResultPEOEffectiveStartDate | ✅ |
+| ELIG_FLAG | EligibilityResultPEOEligFlag | ✅ |
+| ELIG_OBJ_ID | EligibilityResultPEOEligObjId | ✅ |
+| ELIG_RSLT_ID | EligibilityResultPEOEligRsltId | ✅ |
+| INELG_RSN_CD | EligibilityResultPEOInelgRsnCd | ✅ |
+| JOB_DEFINITION_NAME | EligibilityResultPEOJobDefinitionName | — |
+| JOB_DEFINITION_PACKAGE | EligibilityResultPEOJobDefinitionPackage | — |
+| LAST_UPDATE_DATE | EligibilityResultPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | EligibilityResultPEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | EligibilityResultPEOLastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | EligibilityResultPEOObjectVersionNumber | — |
+| OVERRIDE_FLAG | EligibilityResultPEOOverrideFlag | ✅ |
+| OVERRIDE_THRU_DATE | EligibilityResultPEOOverrideThruDate | — |
+| PERSON_ID | EligibilityResultPEOPersonId | — |
+| REQUEST_ID | EligibilityResultPEORequestId | — |
+
+### [[eligibilityresultsextractpvo|EligibilityResultsExtractPVO]] (HCM · BICC: 21/21)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ASSIGNMENT_ID | AssignmentId | ✅ |
+| BUSINESS_GROUP_ID | BusinessGroupId | ✅ |
+| CREATED_BY | CreatedBy | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| EFFECTIVE_END_DATE | EffectiveEndDate | ✅ |
+| EFFECTIVE_START_DATE | EffectiveStartDate | ✅ |
+| ELIG_FLAG | EligFlag | ✅ |
+| ELIG_OBJ_ID | EligObjId | ✅ |
+| ELIG_OBJ_TYPE | EligObjType | ✅ |
+| ELIG_RSLT_ID | EligRsltId | ✅ |
+| INELG_RSN_CD | InelgRsnCd | ✅ |
+| JOB_DEFINITION_NAME | JobDefinitionName | ✅ |
+| JOB_DEFINITION_PACKAGE | JobDefinitionPackage | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | LastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | ✅ |
+| OVERRIDE_FLAG | OverrideFlag | ✅ |
+| OVERRIDE_THRU_DATE | OverrideThruDate | ✅ |
+| PERSON_ID | PersonId | ✅ |
+| REQUEST_ID | RequestId | ✅ |
+
+### [[templateperiodpersoneligibilityresultpvo|TemplatePeriodPersonEligibilityResultPVO]] (HCM · BICC: 5/19)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ASSIGNMENT_ID | AssignmentId | — |
+| CREATED_BY | EligibilityResultPEOCreatedBy | — |
+| CREATION_DATE | EligibilityResultPEOCreationDate | — |
+| EFFECTIVE_END_DATE | EffectiveEndDate | ✅ |
+| EFFECTIVE_START_DATE | EffectiveStartDate | ✅ |
+| ELIG_FLAG | EligFlag | ✅ |
+| ELIG_OBJ_ID | EligObjId | — |
+| ELIG_RSLT_ID | EligRsltId | ✅ |
+| ELIG_RSLT_ID | EligRsltId1 | ✅ |
+| INELG_RSN_CD | InelgRsnCd | — |
+| JOB_DEFINITION_NAME | JobDefinitionName | — |
+| JOB_DEFINITION_PACKAGE | JobDefinitionPackage | — |
+| LAST_UPDATE_DATE | EligibilityResultPEOLastUpdateDate | — |
+| LAST_UPDATE_LOGIN | EligibilityResultPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | EligibilityResultPEOLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | EligibilityResultPEOObjectVersionNumber | — |
+| OVERRIDE_FLAG | OverrideFlag | — |
+| OVERRIDE_THRU_DATE | OverrideThruDate | — |
+| PERSON_ID | PersonId | — |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — BEN_ELIG_RSLT_F](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/beneligrsltf.html)

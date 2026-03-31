@@ -56,3 +56,27 @@ updated_at: 2026-03-26
 ## 📎 Uso Típico
 
 (a ser preenchido na etapa 03)
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[invoicelinepvo|InvoiceLinePVO]] (AP · BICC: 5/8)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| DESCRIPTION | WhtRatesDescription | ✅ |
+| LAST_UPDATE_DATE | TaxRateLastUpdateDate | ✅ |
+| LAST_UPDATED_BY | TaxRateLastUpdatedBy | — |
+| TAX_RATE_CODE | WhtRatesTaxRateCode | ✅ |
+| TAX_RATE_ID | TaxRateTaxRateId | — |
+| TAX_RATE_ID | WhtRatesTaxRateId | — |
+| TAX_RATE_NAME | TaxRateTaxRateName | ✅ |
+| TAX_RATE_NAME | WhtRatesTaxRateName | ✅ |
+
+### [[prepaymentappliationdistributionpvo|PrepaymentAppliationDistributionPVO]] (AP · BICC: 1/2)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| LAST_UPDATE_DATE | TaxRateLastUpdateDate | ✅ |
+| TAX_RATE_ID | TaxRateTaxRateId | — |

@@ -114,6 +114,21 @@ WHERE  tl.LANGUAGE = USERENV('LANG');
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[checkintemplatepvo|CheckInTemplatePVO]] (HCM · BICC: 2/6)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | CheckInTemplateTranslationPEOBusinessGroupId | — |
+| CHECK_IN_TEMPLATE_ID | CheckInTemplateTranslationPEOCheckInTemplateId | — |
+| COMMENTS | CheckInTemplateTranslationPEOComments | ✅ |
+| LANGUAGE | CheckInTemplateTranslationPEOLanguage | — |
+| NAME | CheckInTemplateTranslationPEOName | ✅ |
+| SOURCE_LANG | CheckInTemplateTranslationPEOSourceLang | — |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — HRA_CHECK_IN_TMPLS_TL](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/hracheckintmplstl.html)

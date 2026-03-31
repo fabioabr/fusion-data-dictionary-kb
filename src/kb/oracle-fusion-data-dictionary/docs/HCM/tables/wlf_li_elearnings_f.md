@@ -118,3 +118,26 @@ WHERE  le.PLAYER_TYPE = 'SCORM'
 
 - [Oracle Docs — WLF_LI_ELEARNINGS_F](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/wlflielearningsf.html)
 - [[hcm-module-data-dictionary]] — Dossiê do módulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[sectionhierarchypvo|SectionHierarchyPVO]] (HCM · BICC: 4/14)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | ELearningDEOCreatedBy | — |
+| CREATED_BY_ID | ELearningDEOCreatedById | — |
+| CREATION_DATE | ELearningDEOCreationDate | — |
+| EFFECTIVE_END_DATE | ELearningDEOEffectiveEndDate | ✅ |
+| EFFECTIVE_START_DATE | ELearningDEOEffectiveStartDate | ✅ |
+| ELEARNING_ID | ELearningDEOElearningId | ✅ |
+| ELEARNING_TYPE | ELearningDEOElearningType | — |
+| ENTERPRISE_ID | ELearningDEOEnterpriseId | — |
+| LAST_UPDATE_DATE | ELearningDEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ELearningDEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | ELearningDEOLastUpdatedBy | — |
+| LEARNING_ITEM_ID | ELearningDEOLearningItemId | — |
+| OBJECT_VERSION_NUMBER | ELearningDEOObjectVersionNumber | — |
+| RELATED_CONTENT_ID | ELearningDEORelatedContentId | — |

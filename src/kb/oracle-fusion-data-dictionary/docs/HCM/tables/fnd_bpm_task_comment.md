@@ -64,3 +64,26 @@ updated_at: 2026-03-26
 ## 📎 Uso Típico
 
 (a ser preenchido na etapa 03)
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[hcmapprovalstaskcommentsp1|HCMApprovalsTaskCommentsP1]] (AP · BICC: 6/14)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| COMMENT_BY | FndBpmTaskCommentPEOCommentBy | ✅ |
+| COMMENT_DATE | FndBpmTaskCommentPEOCommentDate | ✅ |
+| COMMENT_ID | FndBpmTaskCommentPEOCommentId | ✅ |
+| COMMENT_TEXT | FndBpmTaskCommentPEOCommentText | ✅ |
+| COMMENT_VERSION | FndBpmTaskCommentPEOCommentVersion | ✅ |
+| CREATED_BY | FndBpmTaskCommentPEOCreatedBy | — |
+| CREATION_DATE | FndBpmTaskCommentPEOCreationDate | — |
+| DOMAIN | FndBpmTaskCommentPEODomain | — |
+| INITIATED_DATE | FndBpmTaskCommentPEOInitiatedDate | — |
+| LAST_UPDATE_DATE | FndBpmTaskCommentPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | FndBpmTaskCommentPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | FndBpmTaskCommentPEOLastUpdatedBy | — |
+| ROOT_TASK_ID | FndBpmTaskCommentPEORootTaskId | — |
+| TASK_ID | FndBpmTaskCommentPEOTaskId | — |

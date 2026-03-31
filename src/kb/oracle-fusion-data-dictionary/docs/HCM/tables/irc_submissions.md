@@ -105,6 +105,160 @@ WHERE  s.REQUISITION_ID = :p_requisition_id;
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[asmtpackageresultviewallpvo|AsmtPackageResultViewAllPVO]] (HCM · BICC: 2/4)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| OBJECT_VERSION_NUMBER | SubmissionPEOObjectVersionNumber | — |
+| PERSON_ID | SubmissionPEOPersonId | ✅ |
+| REQUISITION_ID | SubmissionPEORequisitionId | — |
+| SUBMISSION_ID | SubmissionPEOSubmissionId | ✅ |
+
+### [[jobapphisteventpvo|JobAppHistEventPVO]] (HCM · BICC: 2/5)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATION_DATE | SubmissionPEOCreationDate | ✅ |
+| OBJECT_VERSION_NUMBER | SubmissionPEOObjectVersionNumber | — |
+| PERSON_ID | SubmissionPEOPersonId | — |
+| REQUISITION_ID | SubmissionPEORequisitionId | — |
+| SUBMISSION_ID | SubmissionId | ✅ |
+
+### [[prospectspvo|ProspectsPVO]] (HCM · BICC: 5/5)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTIVE_FLAG | SubmissionPEOActiveFlag | ✅ |
+| CREATION_DATE | SubmissionPEOCreationDate | ✅ |
+| OBJECT_VERSION_NUMBER | SubmissionPEOObjectVersionNum | ✅ |
+| SUBMISSION_DATE | SubmissionPEOSubmissionDate | ✅ |
+| SUBMISSION_ID | SubmissionPEOSubmissionId | ✅ |
+
+### [[prospectsviewallpvo|ProspectsViewAllPVO]] (HCM)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTIVE_FLAG | SubmissionPEOActiveFlag | — |
+| CREATION_DATE | SubmissionPEOCreationDate | — |
+| OBJECT_VERSION_NUMBER | SubmissionPEOObjectVersionNum | — |
+| SUBMISSION_DATE | SubmissionPEOSubmissionDate | — |
+| SUBMISSION_ID | SubmissionPEOSubmissionId | — |
+
+### [[screeningresultviewallpvo|ScreeningResultViewAllPVO]] (AP · BICC: 2/4)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber1 | — |
+| PERSON_ID | SubmissionPEOPersonId | ✅ |
+| REQUISITION_ID | SubmissionPEORequisitionId | ✅ |
+| SUBMISSION_ID | SubmissionPEOSubmissionId | — |
+
+### [[screeningviewallpvo|ScreeningViewAllPVO]] (AP · BICC: 2/4)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | — |
+| PERSON_ID | SubmissionPEOPersonId | ✅ |
+| REQUISITION_ID | SubmissionPEORequisitionId | ✅ |
+| SUBMISSION_ID | SubmissionPEOSubmissionId | — |
+
+### [[submissionqstnrsviewallpvo|SubmissionQstnrsViewAllPVO]] (PO · BICC: 2/6)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATION_DATE | CreationDate | — |
+| INTERNAL_FLAG | SubmissionPEOInternalFlag | — |
+| OBJECT_VERSION_NUMBER | SubmissionPEOObjectVersionNumber | — |
+| PERSON_ID | SubmissionPEOPersonId | — |
+| QSTNR_SCORE | SubmissionPEOQstnrScore | ✅ |
+| SUBMISSION_ID | SubmissionPEOSubmissionId | ✅ |
+
+### [[submissionrestrictedpvo|SubmissionRestrictedPVO]] (HCM · BICC: 27/36)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTIVE_FLAG | ActiveFlag | ✅ |
+| ADDED_BY_CONTEXT_CODE | SubmissionPEOAddedByContextCode | ✅ |
+| ADDED_BY_PERSON_ID | SubmissionPEOAddedByPersonId | ✅ |
+| AF_VERSION_ID | SubmissionPEOAfVersionId | — |
+| CONFIRMED_BY_PERSON_ID | ConfirmedByPersonId | ✅ |
+| CONFIRMED_FLAG | ConfirmedFlag | ✅ |
+| CREATED_BY | CreatedBy | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| CURRENT_PHASE_ID | CurrentPhaseId | ✅ |
+| CURRENT_STATE_ID | CurrentStateId | ✅ |
+| DISCARDED_FLAG | SubmissionPEODiscardedFlag | — |
+| DISQUALIFIED_FLAG | DisqualifiedFlag | ✅ |
+| ESIGN_DESC_VERSION_ID | EsignDescVersionId | — |
+| INTERNAL_FLAG | InternalFlag | ✅ |
+| IS_COMPLETED_FLAG | IsCompletedFlag | ✅ |
+| IS_RESTRICTED_FLAG | IsRestrictedFlag | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | — |
+| LAST_UPDATED_BY | LastUpdatedBy | — |
+| LEGAL_DESC_VERSION_ID | LegalDescVersionId | — |
+| MERGED_FLAG | SubmissionPEOMergedFlag | ✅ |
+| OBJECT_STATUS | ObjectStatus | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | — |
+| PERSON_ID | PersonId | ✅ |
+| PIPELINE_SUBMISSION_ID | SubmissionPEOPipelineSubmissionId | ✅ |
+| PROCESS_ID | ProcessId | — |
+| PROFILE_ID | ProfileId | ✅ |
+| PUBLIC_STATE_ID | PublicStateId | ✅ |
+| REQUISITION_ID | RequisitionId | — |
+| SITE_NUMBER | SiteNumber | ✅ |
+| SUBM_LAST_MODIFIED_DATE | SubmLastModifiedDate | ✅ |
+| SUBMISSION_CONFIRMED_DATE | SubmissionConfirmedDate | ✅ |
+| SUBMISSION_DATE | SubmissionDate | ✅ |
+| SUBMISSION_ID | SubmissionId | ✅ |
+| SUBMISSION_LANGUAGE_CODE | SubmissionLanguageCode | ✅ |
+| SYSTEM_PERSON_TYPE | SubmissionPEOSystemPersonType | ✅ |
+
+### [[submissionviewallpvo|SubmissionViewAllPVO]] (HCM · BICC: 27/36)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTIVE_FLAG | ActiveFlag | ✅ |
+| ADDED_BY_CONTEXT_CODE | SubmissionPEOAddedByContextCode | ✅ |
+| ADDED_BY_PERSON_ID | SubmissionPEOAddedByPersonId | ✅ |
+| AF_VERSION_ID | SubmissionPEOAfVersionId | — |
+| CONFIRMED_BY_PERSON_ID | ConfirmedByPersonId | ✅ |
+| CONFIRMED_FLAG | ConfirmedFlag | ✅ |
+| CREATED_BY | CreatedBy | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| CURRENT_PHASE_ID | CurrentPhaseId | ✅ |
+| CURRENT_STATE_ID | CurrentStateId | ✅ |
+| DISCARDED_FLAG | SubmissionPEODiscardedFlag | — |
+| DISQUALIFIED_FLAG | DisqualifiedFlag | ✅ |
+| ESIGN_DESC_VERSION_ID | EsignDescVersionId | — |
+| INTERNAL_FLAG | InternalFlag | ✅ |
+| IS_COMPLETED_FLAG | IsCompletedFlag | ✅ |
+| IS_RESTRICTED_FLAG | IsRestrictedFlag | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | — |
+| LAST_UPDATED_BY | LastUpdatedBy | — |
+| LEGAL_DESC_VERSION_ID | LegalDescVersionId | — |
+| MERGED_FLAG | SubmissionPEOMergedFlag | ✅ |
+| OBJECT_STATUS | ObjectStatus | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | — |
+| PERSON_ID | PersonId | ✅ |
+| PIPELINE_SUBMISSION_ID | SubmissionPEOPipelineSubmissionId | ✅ |
+| PROCESS_ID | ProcessId | — |
+| PROFILE_ID | ProfileId | ✅ |
+| PUBLIC_STATE_ID | PublicStateId | ✅ |
+| REQUISITION_ID | RequisitionId | — |
+| SITE_NUMBER | SiteNumber | ✅ |
+| SUBM_LAST_MODIFIED_DATE | SubmLastModifiedDate | ✅ |
+| SUBMISSION_CONFIRMED_DATE | SubmissionConfirmedDate | ✅ |
+| SUBMISSION_DATE | SubmissionDate | ✅ |
+| SUBMISSION_ID | SubmissionId | ✅ |
+| SUBMISSION_LANGUAGE_CODE | SubmissionLanguageCode | ✅ |
+| SYSTEM_PERSON_TYPE | SubmissionPEOSystemPersonType | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — IRC_SUBMISSIONS](https://docs.oracle.com/en/cloud/saas/talent-management/25a/oedmf/ircsubmissions.html)

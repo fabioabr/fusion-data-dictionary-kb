@@ -87,3 +87,91 @@ updated_at: 2026-03-26
 ## 📎 Uso Típico
 
 (a ser preenchido na etapa 03)
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[sitetaxexemption|SiteTaxExemption]] (AR · BICC: 12/37)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CONTENT_OWNER_ID | TaxExemptionContentOwnerId | — |
+| CREATED_BY | TaxExemptionCreatedBy | — |
+| CREATION_DATE | TaxExemptionCreationDate | ✅ |
+| CUST_ACCOUNT_ID | TaxExemptionCustAccountId | — |
+| DET_FACTOR_TEMPL_CODE | TaxExemptionDetFactorTemplCode | — |
+| DUPLICATE_EXEMPTION | TaxExemptionDuplicateExemption | — |
+| EFFECTIVE_FROM | TaxExemptionEffectiveFrom | ✅ |
+| EFFECTIVE_TO | TaxExemptionEffectiveTo | ✅ |
+| EXEMPT_CERTIFICATE_NUMBER | TaxExemptionExemptCertificateNumber | ✅ |
+| EXEMPT_REASON_CODE | TaxExemptionExemptReasonCode | ✅ |
+| EXEMPTION_STATUS_CODE | TaxExemptionExemptionStatusCode | — |
+| EXEMPTION_TYPE_CODE | TaxExemptionExemptionTypeCode | ✅ |
+| EXEMPTION_USAGE_CODE | TaxExemptionExemptionUsageCode | — |
+| INVENTORY_ORG_ID | TaxExemptionInventoryOrgId | — |
+| ISSUE_FLAG | TaxExemptionIssueFlag | — |
+| ISSUING_TAX_AUTHORITY_ID | TaxExemptionIssuingTaxAuthorityId | — |
+| LAST_UPDATE_DATE | TaxExemptionLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | TaxExemptionLastUpdateLogin | — |
+| LAST_UPDATED_BY | TaxExemptionLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | TaxExemptionObjectVersionNumber | — |
+| PARTY_TAX_PROFILE_ID | TaxExemptionPartyTaxProfileId | — |
+| PRINT_FLAG | TaxExemptionPrintFlag | — |
+| PRODUCT_ID | TaxExemptionProductId | — |
+| PROGRAM_APP_NAME | TaxExemptionProgramAppName | — |
+| PROGRAM_LOGIN_ID | TaxExemptionProgramLoginId | — |
+| PROGRAM_NAME | TaxExemptionProgramName | — |
+| PROTOCOL_NUMBER_SEQ | TaxExemptionProtocolNumberSeq | — |
+| RATE_MODIFIER | TaxExemptionRateModifier | ✅ |
+| RECORD_TYPE_CODE | TaxExemptionRecordTypeCode | — |
+| REQUEST_ID | TaxExemptionRequestId | — |
+| SITE_USE_ID | TaxExemptionSiteUseId | — |
+| TAX | TaxExemptionTax | ✅ |
+| TAX_EXEMPTION_ID | TaxExemptionId | — |
+| TAX_JURISDICTION_ID | TaxExemptionTaxJurisdictionId | — |
+| TAX_RATE_CODE | TaxExemptionTaxRateCode | ✅ |
+| TAX_REGIME_CODE | TaxExemptionTaxRegimeCode | ✅ |
+| TAX_STATUS_CODE | TaxExemptionTaxStatusCode | ✅ |
+
+### [[taxexemption|TaxExemption]] (AR · BICC: 13/37)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CONTENT_OWNER_ID | TaxExemptionContentOwnerId | — |
+| CREATED_BY | TaxExemptionCreatedBy | — |
+| CREATION_DATE | TaxExemptionCreationDate | ✅ |
+| CUST_ACCOUNT_ID | TaxExemptionCustAccountId | — |
+| DET_FACTOR_TEMPL_CODE | TaxExemptionDetFactorTemplCode | — |
+| DUPLICATE_EXEMPTION | TaxExemptionDuplicateExemption | — |
+| EFFECTIVE_FROM | TaxExemptionEffectiveFrom | ✅ |
+| EFFECTIVE_TO | TaxExemptionEffectiveTo | ✅ |
+| EXEMPT_CERTIFICATE_NUMBER | TaxExemptionExemptCertificateNumber | ✅ |
+| EXEMPT_REASON_CODE | TaxExemptionExemptReasonCode | ✅ |
+| EXEMPTION_STATUS_CODE | TaxExemptionExemptionStatusCode | ✅ |
+| EXEMPTION_TYPE_CODE | TaxExemptionExemptionTypeCode | ✅ |
+| EXEMPTION_USAGE_CODE | TaxExemptionExemptionUsageCode | — |
+| INVENTORY_ORG_ID | TaxExemptionInventoryOrgId | — |
+| ISSUE_FLAG | TaxExemptionIssueFlag | — |
+| ISSUING_TAX_AUTHORITY_ID | TaxExemptionIssuingTaxAuthorityId | — |
+| LAST_UPDATE_DATE | TaxExemptionLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | TaxExemptionLastUpdateLogin | — |
+| LAST_UPDATED_BY | TaxExemptionLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | TaxExemptionObjectVersionNumber | — |
+| PARTY_TAX_PROFILE_ID | TaxExemptionPartyTaxProfileId | — |
+| PRINT_FLAG | TaxExemptionPrintFlag | — |
+| PRODUCT_ID | TaxExemptionProductId | — |
+| PROGRAM_APP_NAME | TaxExemptionProgramAppName | — |
+| PROGRAM_LOGIN_ID | TaxExemptionProgramLoginId | — |
+| PROGRAM_NAME | TaxExemptionProgramName | — |
+| PROTOCOL_NUMBER_SEQ | TaxExemptionProtocolNumberSeq | — |
+| RATE_MODIFIER | TaxExemptionRateModifier | ✅ |
+| RECORD_TYPE_CODE | TaxExemptionRecordTypeCode | — |
+| REQUEST_ID | TaxExemptionRequestId | — |
+| SITE_USE_ID | TaxExemptionSiteUseId | — |
+| TAX | TaxExemptionTax | ✅ |
+| TAX_EXEMPTION_ID | TaxExemptionId | — |
+| TAX_JURISDICTION_ID | TaxExemptionTaxJurisdictionId | — |
+| TAX_RATE_CODE | TaxExemptionTaxRateCode | ✅ |
+| TAX_REGIME_CODE | TaxExemptionTaxRegimeCode | ✅ |
+| TAX_STATUS_CODE | TaxExemptionTaxStatusCode | ✅ |

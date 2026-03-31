@@ -127,3 +127,25 @@ WHERE  s.ENABLED_FLAG = 'Y'
 
 - [Oracle Docs — POZ_SUPPLIERS_PII](https://docs.oracle.com/en/cloud/saas/procurement/25a/oedmf/poz-tables.html)
 - [[po-module-data-dictionary]] — Dossiê do módulo Procurement
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[supplierextractpvo|SupplierExtractPVO]] (PO · BICC: 3/3)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| INCOME_TAX_ID | IncomeTaxId | ✅ |
+| NI_NUMBER | NiNumber | ✅ |
+| VENDOR_ID | VendorId1 | ✅ |
+
+### [[supplierpvo|SupplierPVO]] (PO · BICC: 1/5)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| DF_INCOME_TAX_ID | DfIncomeTaxId | ✅ |
+| INCOME_TAX_ID | SupplierPIIIncomeTaxId | — |
+| NI_NUMBER | SupplierPIINiNumber | — |
+| VAT_REGISTRATION_NUM | SupplierPIIVatRegistrationNum | — |
+| VENDOR_ID | SupplierPIIVendorId | — |

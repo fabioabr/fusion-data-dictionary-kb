@@ -39,7 +39,6 @@ Visão consolidada que combina dados base e traduções dos valores de nomes alt
 > [!note] Sufixo _VL
 > O sufixo `_VL` indica **view consolidada** que combina automaticamente a tabela `_B` (dados base) com a `_TL` (traduções) para o idioma da sessão.
 
-
 ---
 
 ## 🧠 Propósito de Negócio
@@ -105,6 +104,24 @@ WHERE  t.LANGUAGE = USERENV('LANG')
 
 - View consolidada: combina automaticamente dados base (`_B`) e traduções (`_TL`). Preferir em consultas de leitura.
 - Área funcional: Time Entry dentro do Oracle Fusion Cloud HCM.
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[templatelayoutcompdisplayvaluepvo|TemplateLayoutCompDisplayValuePVO]] (GL · BICC: 1/2)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ALT_NAME_VALUE | DflAltNameValsPEOAltNameValue | ✅ |
+| TE_ALT_NAME_VAL_ID | DflAltNameValsPEOTeAltNameValId | — |
+
+### [[templatelayoutcomponentpvo|TemplateLayoutComponentPVO]] (GL · BICC: 1/2)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ALT_NAME_VALUE | DflAltNameValsPEOAltNameValue | ✅ |
+| TE_ALT_NAME_VAL_ID | DflAltNameValsPEOTeAltNameValId | — |
 
 ---
 

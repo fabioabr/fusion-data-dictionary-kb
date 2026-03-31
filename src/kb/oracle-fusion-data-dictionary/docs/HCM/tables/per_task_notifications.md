@@ -115,3 +115,64 @@ ORDER BY tcb.SEQUENCE;
 
 - [Oracle Docs — PER_TASK_NOTIFICATIONS](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/pertasknotifications.html)
 - [[hcm-module-data-dictionary]] — Dossiê do módulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[checklisttasktemplatepvo|ChecklistTaskTemplatePVO]] (HCM · BICC: 12/52)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | ChecklistTaskNotificationPEO1CreatedBy | — |
+| CREATED_BY | ChecklistTaskNotificationPEO2CreatedBy | — |
+| CREATED_BY | ChecklistTaskNotificationPEO3CreatedBy | — |
+| CREATED_BY | ChecklistTaskNotificationPEOCreatedBy | — |
+| CREATION_DATE | ChecklistTaskNotificationPEO1CreationDate | — |
+| CREATION_DATE | ChecklistTaskNotificationPEO2CreationDate | — |
+| CREATION_DATE | ChecklistTaskNotificationPEO3CreationDate | — |
+| CREATION_DATE | ChecklistTaskNotificationPEOCreationDate | — |
+| ENTERPRISE_ID | ChecklistTaskNotificationPEO1EnterpriseId | — |
+| ENTERPRISE_ID | ChecklistTaskNotificationPEO2EnterpriseId | — |
+| ENTERPRISE_ID | ChecklistTaskNotificationPEO3EnterpriseId | — |
+| ENTERPRISE_ID | ChecklistTaskNotificationPEOEnterpriseId | — |
+| LAST_UPDATE_DATE | ChecklistTaskNotificationPEO1LastUpdateDate | — |
+| LAST_UPDATE_DATE | ChecklistTaskNotificationPEO2LastUpdateDate | — |
+| LAST_UPDATE_DATE | ChecklistTaskNotificationPEO3LastUpdateDate | — |
+| LAST_UPDATE_DATE | ChecklistTaskNotificationPEOLastUpdateDate | — |
+| LAST_UPDATE_LOGIN | ChecklistTaskNotificationPEO1LastUpdateLogin | — |
+| LAST_UPDATE_LOGIN | ChecklistTaskNotificationPEO2LastUpdateLogin | — |
+| LAST_UPDATE_LOGIN | ChecklistTaskNotificationPEO3LastUpdateLogin | — |
+| LAST_UPDATE_LOGIN | ChecklistTaskNotificationPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | ChecklistTaskNotificationPEO1LastUpdatedBy | — |
+| LAST_UPDATED_BY | ChecklistTaskNotificationPEO2LastUpdatedBy | — |
+| LAST_UPDATED_BY | ChecklistTaskNotificationPEO3LastUpdatedBy | — |
+| LAST_UPDATED_BY | ChecklistTaskNotificationPEOLastUpdatedBy | — |
+| NOTIFY_OWNER | ChecklistTaskNotificationPEO1NotifyOwner | ✅ |
+| NOTIFY_OWNER | ChecklistTaskNotificationPEO2NotifyOwner | ✅ |
+| NOTIFY_OWNER | ChecklistTaskNotificationPEO3NotifyOwner | ✅ |
+| NOTIFY_OWNER | ChecklistTaskNotificationPEONotifyOwner | ✅ |
+| NOTIFY_PERFORMER | ChecklistTaskNotificationPEO1NotifyPerformer | ✅ |
+| NOTIFY_PERFORMER | ChecklistTaskNotificationPEO2NotifyPerformer | ✅ |
+| NOTIFY_PERFORMER | ChecklistTaskNotificationPEO3NotifyPerformer | ✅ |
+| NOTIFY_PERFORMER | ChecklistTaskNotificationPEONotifyPerformer | ✅ |
+| OBJECT_VERSION_NUMBER | ChecklistTaskNotificationPEO1ObjectVersionNumber | — |
+| OBJECT_VERSION_NUMBER | ChecklistTaskNotificationPEO2ObjectVersionNumber | — |
+| OBJECT_VERSION_NUMBER | ChecklistTaskNotificationPEO3ObjectVersionNumber | — |
+| OBJECT_VERSION_NUMBER | ChecklistTaskNotificationPEOObjectVersionNumber | — |
+| SEED_DATA_SOURCE | ChecklistTaskNotificationPEO1SeedDataSource | — |
+| SEED_DATA_SOURCE | ChecklistTaskNotificationPEO2SeedDataSource | — |
+| SEED_DATA_SOURCE | ChecklistTaskNotificationPEO3SeedDataSource | — |
+| SEED_DATA_SOURCE | ChecklistTaskNotificationPEOSeedDataSource | — |
+| TASK_EVENT | ChecklistTaskNotificationPEO1TaskEvent | ✅ |
+| TASK_EVENT | ChecklistTaskNotificationPEO2TaskEvent | ✅ |
+| TASK_EVENT | ChecklistTaskNotificationPEO3TaskEvent | ✅ |
+| TASK_EVENT | ChecklistTaskNotificationPEOTaskEvent | ✅ |
+| TASK_IN_CHECKLIST_ID | ChecklistTaskNotificationPEO1TaskInChecklistId | — |
+| TASK_IN_CHECKLIST_ID | ChecklistTaskNotificationPEO2TaskInChecklistId | — |
+| TASK_IN_CHECKLIST_ID | ChecklistTaskNotificationPEO3TaskInChecklistId | — |
+| TASK_IN_CHECKLIST_ID | ChecklistTaskNotificationPEOTaskInChecklistId | — |
+| TASK_NOTIFICATION_ID | ChecklistTaskNotificationPEO1TaskNotificationId | — |
+| TASK_NOTIFICATION_ID | ChecklistTaskNotificationPEO2TaskNotificationId | — |
+| TASK_NOTIFICATION_ID | ChecklistTaskNotificationPEO3TaskNotificationId | — |
+| TASK_NOTIFICATION_ID | ChecklistTaskNotificationPEOTaskNotificationId | — |

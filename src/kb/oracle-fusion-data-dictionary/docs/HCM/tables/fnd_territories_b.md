@@ -68,3 +68,53 @@ updated_at: 2026-03-26
 ## 📎 Uso Típico
 
 (a ser preenchido na etapa 03)
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[legislationpvo|LegislationPVO]] (HCM · BICC: 18/18)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ADDRESS_STYLE | LegislationPEOAddressStyle | ✅ |
+| ADDRESS_VALIDATION | LegislationPEOAddressValidation | ✅ |
+| ALTERNATE_TERRITORY_CODE | LegislationPEOAlternateTerritoryCode | ✅ |
+| BANK_INFO_STYLE | LegislationPEOBankInfoStyle | ✅ |
+| BANK_INFO_VALIDATION | LegislationPEOBankInfoValidation | ✅ |
+| CREATED_BY | LegislationPEOCreatedBy | ✅ |
+| CREATION_DATE | LegislationPEOCreationDate | ✅ |
+| CURRENCY_CODE | LegislationPEOCurrencyCode | ✅ |
+| ENABLED_FLAG | LegislationPEOEnabledFlag | ✅ |
+| EU_CODE | LegislationPEOEuCode | ✅ |
+| ISO_NUMERIC_CODE | LegislationPEOIsoNumericCode | ✅ |
+| ISO_TERRITORY_CODE | LegislationPEOIsoTerritoryCode | ✅ |
+| LAST_UPDATE_DATE | LegislationPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LegislationPEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | LegislationPEOLastUpdatedBy | ✅ |
+| NLS_TERRITORY | LegislationPEONlsTerritory | ✅ |
+| OBSOLETE_FLAG | LegislationPEOObsoleteFlag | ✅ |
+| TERRITORY_CODE | TerritoryCode | ✅ |
+
+### [[territoriespvo|TerritoriesPVO]] (HCM · BICC: 5/18)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ADDRESS_STYLE | AddressStyle | — |
+| ADDRESS_VALIDATION | AddressValidation | — |
+| ALTERNATE_TERRITORY_CODE | AlternateTerritoryCode | — |
+| BANK_INFO_STYLE | BankInfoStyle | — |
+| BANK_INFO_VALIDATION | BankInfoValidation | — |
+| CREATED_BY | CreatedBy | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| CURRENCY_CODE | CurrencyCode | — |
+| ENABLED_FLAG | EnabledFlag | — |
+| EU_CODE | EuCode | — |
+| ISO_NUMERIC_CODE | IsoNumericCode | — |
+| ISO_TERRITORY_CODE | IsoTerritoryCode | — |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | — |
+| LAST_UPDATED_BY | LastUpdatedBy | ✅ |
+| NLS_TERRITORY | NlsTerritory | — |
+| OBSOLETE_FLAG | ObsoleteFlag | — |
+| TERRITORY_CODE | TerritoryCode | ✅ |

@@ -98,6 +98,31 @@ WHERE  SYSDATE BETWEEN bc.EFFECTIVE_START_DATE AND bc.EFFECTIVE_END_DATE;
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[balancecategory|BalanceCategory]] (GL · BICC: 9/16)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BALANCE_CATEGORY_ID | BalanceCategoryId | ✅ |
+| BASE_BALANCE_CATEGORY_ID | BalanceCategoryBaseDPEOBaseBalanceCategoryId | ✅ |
+| BASE_CATEGORY_NAME | BalanceCategoryBaseDPEOBaseCategoryName | ✅ |
+| CREATED_BY | BalanceCategoryBaseDPEOCreatedBy | ✅ |
+| CREATION_DATE | BalanceCategoryBaseDPEOCreationDate | ✅ |
+| EFFECTIVE_END_DATE | EffectiveEndDate | ✅ |
+| EFFECTIVE_START_DATE | EffectiveStartDate | ✅ |
+| LAST_UPDATE_DATE | BalanceCategoryBaseDPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | BalanceCategoryBaseDPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | BalanceCategoryBaseDPEOLastUpdatedBy | ✅ |
+| LEGISLATION_CODE | BalanceCategoryBaseDPEOLegislationCode | — |
+| LEGISLATIVE_DATA_GROUP_ID | BalanceCategoryBaseDPEOLegislativeDataGroupId | — |
+| MODULE_ID | BalanceCategoryBaseDPEOModuleId | — |
+| OBJECT_VERSION_NUMBER | BalanceCategoryBaseDPEOObjectVersionNumber | — |
+| PBC_INFORMATION_CATEGORY | BalanceCategoryBaseDPEOPbcInformationCategory | — |
+| SAVE_RUN_BALANCE_ENABLED | BalanceCategoryBaseDPEOSaveRunBalanceEnabled | — |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — PAY_BALANCE_CATEGORIES_F](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/paybalancecategoriesf.html)

@@ -93,6 +93,123 @@ WHERE  tl.ANSWER_ID = :p_id AND tl.LANGUAGE = USERENV('LANG');
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[managerquestionnairequestionpvo|ManagerQuestionnaireQuestionPVO]] (HCM)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | ConditionQstnAnswerTLPEOBusinessGroupId | — |
+| LANGUAGE | ConditionQstnAnswerTLPEOLanguage | — |
+| LONG_TEXT | ConditionQstnAnswerTLPEOLongText | — |
+| QSTN_ANSWER_ID | ConditionQstnAnswerTLPEOQstnAnswerId | — |
+| SHORT_TEXT | ConditionQstnAnswerTLPEOShortText | — |
+
+### [[participantquestionnairequestionpvo|ParticipantQuestionnaireQuestionPVO]] (HCM)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | ConditionQstnAnswerTLPEOBusinessGroupId | — |
+| LANGUAGE | ConditionQstnAnswerTLPEOLanguage | — |
+| LONG_TEXT | ConditionQstnAnswerTLPEOLongText | — |
+| QSTN_ANSWER_ID | ConditionQstnAnswerTLPEOQstnAnswerId | — |
+| SHORT_TEXT | ConditionQstnAnswerTLPEOShortText | — |
+
+### [[participantquestionnairequestionpvoforpotentialassessement|ParticipantQuestionnaireQuestionPVOForPotentialAssessement]] (HCM)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | ConditionQstnAnswerTLPEOBusinessGroupId | — |
+| LANGUAGE | ConditionQstnAnswerTLPEOLanguage | — |
+| LONG_TEXT | ConditionQstnAnswerTLPEOLongText | — |
+| QSTN_ANSWER_ID | ConditionQstnAnswerTLPEOQstnAnswerId | — |
+| SHORT_TEXT | ConditionQstnAnswerTLPEOShortText | — |
+
+### [[participantquestionnairequestionresponselistpvo|ParticipantQuestionnaireQuestionResponseListPVO]] (HCM · BICC: 5/5)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | QuestionAnswerTranslationPEOBusinessGroupId | ✅ |
+| LANGUAGE | QuestionAnswerTranslationPEOLanguage | ✅ |
+| LONG_TEXT | QuestionAnswerTranslationPEOLongText | ✅ |
+| QSTN_ANSWER_ID | QuestionAnswerTranslationPEOQstnAnswerId | ✅ |
+| SHORT_TEXT | QuestionAnswerTranslationPEOShortText | ✅ |
+
+### [[questionanswerpvo|QuestionAnswerPVO]] (HCM · BICC: 7/14)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | QuestionAnswerTranslationPEOBusinessGroupId | ✅ |
+| CREATED_BY | QuestionAnswerTranslationPEOCreatedBy | — |
+| CREATION_DATE | QuestionAnswerTranslationPEOCreationDate | — |
+| LANGUAGE | QuestionAnswerTranslationPEOLanguage | ✅ |
+| LAST_UPDATE_DATE | QuestionAnswerTranslationPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | QuestionAnswerTranslationPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | QuestionAnswerTranslationPEOLastUpdatedBy | — |
+| LONG_TEXT | QuestionAnswerTranslationPEOLongText | ✅ |
+| OBJECT_VERSION_NUMBER | QuestionAnswerTranslationPEOObjectVersionNumber | — |
+| QSTN_ANSWER_ID | QuestionAnswerTranslationPEOQstnAnswerId | ✅ |
+| RESPONSE_FEEDBACK | QuestionAnswerTranslationPEOResponseFeedback | ✅ |
+| SEED_DATA_SOURCE | QuestionAnswerTranslationPEOSeedDataSource | — |
+| SHORT_TEXT | QuestionAnswerTranslationPEOShortText | ✅ |
+| SOURCE_LANG | QuestionAnswerTranslationPEOSourceLang | — |
+
+### [[questionnaireallquestionsp1|QuestionnaireAllQuestionsP1]] (HCM · BICC: 5/19)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | ConditionQstnAnswerTLPEOBusinessGroupId | — |
+| BUSINESS_GROUP_ID | QuestionAnswerTranslationPEOBusinessGroupId | — |
+| CREATED_BY | QuestionAnswerTranslationPEOCreatedBy | — |
+| CREATION_DATE | QuestionAnswerTranslationPEOCreationDate | — |
+| LANGUAGE | ConditionQstnAnswerTLPEOLanguage | — |
+| LANGUAGE | QuestionAnswerTranslationPEOLanguage | — |
+| LAST_UPDATE_DATE | QuestionAnswerTranslationPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | QuestionAnswerTranslationPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | QuestionAnswerTranslationPEOLastUpdatedBy | — |
+| LONG_TEXT | ConditionQstnAnswerTLPEOLongText | — |
+| LONG_TEXT | QuestionAnswerTranslationPEOLongText | ✅ |
+| OBJECT_VERSION_NUMBER | QuestionAnswerTranslationPEOObjectVersionNumber | — |
+| QSTN_ANSWER_ID | ConditionQstnAnswerTLPEOQstnAnswerId | — |
+| QSTN_ANSWER_ID | QuestionAnswerTranslationPEOQstnAnswerId | ✅ |
+| RESPONSE_FEEDBACK | QuestionAnswerTranslationPEOResponseFeedback | ✅ |
+| SEED_DATA_SOURCE | QuestionAnswerTranslationPEOSeedDataSource | — |
+| SHORT_TEXT | ConditionQstnAnswerTLPEOShortText | — |
+| SHORT_TEXT | QuestionAnswerTranslationPEOShortText | ✅ |
+| SOURCE_LANG | QuestionAnswerTranslationPEOSourceLang | — |
+
+### [[questionnairequestionpvo|QuestionnaireQuestionPVO]] (HCM)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | ConditionQstnAnswerTLPEOBusinessGroupId | — |
+| LANGUAGE | ConditionQstnAnswerTLPEOLanguage | — |
+| LONG_TEXT | ConditionQstnAnswerTLPEOLongText | — |
+| QSTN_ANSWER_ID | ConditionQstnAnswerTLPEOQstnAnswerId | — |
+| SHORT_TEXT | ConditionQstnAnswerTLPEOShortText | — |
+
+### [[questionnairequestionresponselistpvo|QuestionnaireQuestionResponseListPVO]] (HCM · BICC: 5/5)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | QuestionAnswerTranslationPEOBusinessGroupId | ✅ |
+| LANGUAGE | QuestionAnswerTranslationPEOLanguage | ✅ |
+| LONG_TEXT | QuestionAnswerTranslationPEOLongText | ✅ |
+| QSTN_ANSWER_ID | QuestionAnswerTranslationPEOQstnAnswerId | ✅ |
+| SHORT_TEXT | QuestionAnswerTranslationPEOShortText | ✅ |
+
+### [[workerquestionnairequestionpvo|WorkerQuestionnaireQuestionPVO]] (HCM)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | ConditionQstnAnswerTLPEOBusinessGroupId | — |
+| LANGUAGE | ConditionQstnAnswerTLPEOLanguage | — |
+| LONG_TEXT | ConditionQstnAnswerTLPEOLongText | — |
+| QSTN_ANSWER_ID | ConditionQstnAnswerTLPEOQstnAnswerId | — |
+| SHORT_TEXT | ConditionQstnAnswerTLPEOShortText | — |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Fusion HCM Tables and Views](https://docs.oracle.com/en/cloud/saas/human-resources/25a/)

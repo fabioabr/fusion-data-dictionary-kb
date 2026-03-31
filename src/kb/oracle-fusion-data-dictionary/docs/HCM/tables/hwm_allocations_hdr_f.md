@@ -111,3 +111,61 @@ WHERE  ah.PERSON_ID = :p_person_id
 
 - [Oracle Docs — HWM_ALLOCATIONS_HDR_F](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/hwmallocationshdrf.html)
 - [[hcm-module-data-dictionary]] — Dossie do modulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[allocationlinespvo|AllocationLinesPVO]] (GL · BICC: 7/13)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ALLOCATION_ID | AllocHdrBPEOAllocationId | — |
+| ALLOCATION_NAME | AllocHdrBPEOAllocationName | ✅ |
+| CREATED_BY | AllocHdrBPEOCreatedBy | ✅ |
+| CREATION_DATE | AllocHdrBPEOCreationDate | ✅ |
+| DATA_LEVEL | AllocHdrBPEODataLevel | — |
+| EFFECTIVE_END_DATE | AllocHdrBPEOEffectiveEndDate | — |
+| EFFECTIVE_START_DATE | AllocHdrBPEOEffectiveStartDate | ✅ |
+| ENTERPRISE_ID | AllocHdrBPEOEnterpriseId | — |
+| LAST_UPDATE_DATE | AllocHdrBPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | AllocHdrBPEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | AllocHdrBPEOLastUpdatedBy | ✅ |
+| MODULE_ID | AllocHdrBPEOModuleId | — |
+| OBJECT_VERSION_NUMBER | AllocHdrBPEOObjectVersionNum | — |
+
+### [[allocationrulespvo|AllocationRulesPVO]] (GL · BICC: 7/13)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ALLOCATION_ID | AllocHdrBPEOAllocationId | — |
+| ALLOCATION_NAME | AllocHdrBPEOAllocationName | ✅ |
+| CREATED_BY | AllocHdrBPEOCreatedBy | ✅ |
+| CREATION_DATE | AllocHdrBPEOCreationDate | ✅ |
+| DATA_LEVEL | AllocHdrBPEODataLevel | — |
+| EFFECTIVE_END_DATE | AllocHdrBPEOEffectiveEndDate | — |
+| EFFECTIVE_START_DATE | AllocHdrBPEOEffectiveStartDate | ✅ |
+| ENTERPRISE_ID | AllocHdrBPEOEnterpriseId | — |
+| LAST_UPDATE_DATE | AllocHdrBPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | AllocHdrBPEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | AllocHdrBPEOLastUpdatedBy | ✅ |
+| MODULE_ID | AllocHdrBPEOModuleId | — |
+| OBJECT_VERSION_NUMBER | AllocHdrBPEOObjectVersionNum | — |
+
+### [[allocationshdrpvo|AllocationsHdrPVO]] (GL · BICC: 9/13)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ALLOCATION_ID | AllocHdrBPEOAllocationId | ✅ |
+| ALLOCATION_NAME | AllocHdrBPEOAllocationName | ✅ |
+| CREATED_BY | AllocHdrBPEOCreatedBy | ✅ |
+| CREATION_DATE | AllocHdrBPEOCreationDate | ✅ |
+| DATA_LEVEL | AllocHdrBPEODataLevel | — |
+| EFFECTIVE_END_DATE | AllocHdrBPEOEffectiveEndDate | ✅ |
+| EFFECTIVE_START_DATE | AllocHdrBPEOEffectiveStartDate | ✅ |
+| ENTERPRISE_ID | AllocHdrBPEOEnterpriseId | — |
+| LAST_UPDATE_DATE | AllocHdrBPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | AllocHdrBPEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | AllocHdrBPEOLastUpdatedBy | ✅ |
+| MODULE_ID | AllocHdrBPEOModuleId | — |
+| OBJECT_VERSION_NUMBER | AllocHdrBPEOObjectVersionNumber | — |

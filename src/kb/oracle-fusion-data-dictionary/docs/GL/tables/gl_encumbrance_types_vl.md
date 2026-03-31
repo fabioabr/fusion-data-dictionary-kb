@@ -126,6 +126,45 @@ WHERE  b.ACTUAL_FLAG = 'E'
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[balancepvo|BalancePVO]] (GL · BICC: 1/2)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ENCUMBRANCE_TYPE | EncumbranceType | ✅ |
+| ENCUMBRANCE_TYPE_ID | JournalEncumbranceTypeEncumbranceTypeId | — |
+
+### [[journalentrylinepvo|JournalEntryLinePVO]] (GL · BICC: 1/2)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ENCUMBRANCE_TYPE | JournalEncumbranceTypeEncumbranceType | ✅ |
+| ENCUMBRANCE_TYPE_ID | JournalEncumbranceTypeEncumbranceTypeId | — |
+
+### [[journalheaderpvo|JournalHeaderPVO]] (GL · BICC: 2/2)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ENCUMBRANCE_TYPE | JournalEncumbranceTypeEncumbranceType | ✅ |
+| ENCUMBRANCE_TYPE_ID | JournalEncumbranceTypeEncumbranceTypeId | ✅ |
+
+### [[journallinepvo|JournalLinePVO]] (GL · BICC: 2/2)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ENCUMBRANCE_TYPE | JournalEncumbranceTypeEncumbranceType | ✅ |
+| ENCUMBRANCE_TYPE_ID | JournalEncumbranceTypeEncumbranceTypeId | ✅ |
+
+### [[subledgerjournaldistributionpvo|SubledgerJournalDistributionPVO]] (GL)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ENCUMBRANCE_TYPE | JournalEncumbranceTypeEncumbranceType | — |
+| ENCUMBRANCE_TYPE_ID | JournalEncumbranceTypeEncumbranceTypeId | — |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — GL_ENCUMBRANCE_TYPES](https://docs.oracle.com/en/cloud/saas/financials/25a/oedmf/glencumbrancetypes-25766.html)

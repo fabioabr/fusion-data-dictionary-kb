@@ -137,3 +137,257 @@ ORDER BY r.SEQUENCE_NUMBER;
 
 - [Oracle Docs — PON_REQUIREMENTS](https://docs.oracle.com/en/cloud/saas/procurement/25a/oedmf/ponrequirements.html)
 - [[po-module-data-dictionary]] — Dossiê do módulo Procurement
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[negotiationrequirementandscoringpvo|NegotiationRequirementAndScoringPVO]] (PO · BICC: 26/45)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ABSOLUTE_SECTION_SEQUENCE | NegotiationRequirementAbsoluteSectionSequence | ✅ |
+| ALLOW_ATTACHMENT_CODE | NegotiationRequirementAllowAttachmentCode | ✅ |
+| ALLOW_COMMENTS | NegotiationRequirementAllowComments | ✅ |
+| AUCTION_HEADER_ID | NegotiationRequirementAuctionHeaderId | — |
+| CATEGORY_CODE | NegotiationRequirementCategoryCode | — |
+| CREATED_BY | NegotiationRequirementCreatedBy | ✅ |
+| CREATION_DATE | NegotiationRequirementCreationDate | ✅ |
+| DATATYPE | NegotiationRequirementDatatype | ✅ |
+| DATE_VALUE | NegotiationRequirementDateValue | ✅ |
+| DATETIME_VALUE | NegotiationRequirementDatetimeValue | ✅ |
+| DISP_SEQ_NUMBER | NegotiationRequirementDispSeqNumber | — |
+| DISPLAY_TARGET_FLAG | NegotiationRequirementDisplayTargetFlag | ✅ |
+| HINT | NegotiationRequirementHint | ✅ |
+| IS_QUESTION_BRANCH | NegotiationRequirementIsQuestionBranch | — |
+| KNOCKOUT_SCORE | NegotiationRequirementKnockoutScore | ✅ |
+| LAST_AMENDMENT_UPDATE | NegotiationRequirementLastAmendmentUpdate | — |
+| LAST_UPDATE_DATE | NegotiationRequirementLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | NegotiationRequirementLastUpdateLogin | — |
+| LAST_UPDATED_BY | NegotiationRequirementLastUpdatedBy | — |
+| MAX_SCORE | NegotiationRequirementMaxScore | ✅ |
+| MODIFIED_DATE | NegotiationRequirementModifiedDate | — |
+| MODIFIED_FLAG | NegotiationRequirementModifiedFlag | — |
+| NUMBER_VALUE | NegotiationRequirementNumberValue | ✅ |
+| OBJECT_VERSION_NUMBER | NegotiationRequirementObjectVersionNumber | — |
+| PARENT_LEVEL | NegotiationRequirementParentLevel | — |
+| PARENT_REQUIREMENT_ID | NegotiationRequirementParentRequirementId | — |
+| PREVIOUS_REQUIREMENT_ID | NegotiationRequirementPreviousRequirementId | — |
+| QUESTION_ID | NegotiationRequirementQuestionId | ✅ |
+| REQ_DISPLAY_NUMBER | NegotiationRequirementReqDisplayNumber | ✅ |
+| REQUIREMENT_ID | NegotiationRequirementRequirementId | ✅ |
+| REQUIREMENT_NAME | NegotiationRequirementRequirementName | ✅ |
+| REQUIREMENT_TEXT | NegotiationRequirementRequirementText | ✅ |
+| REQUIREMENT_TREE_LEVEL | NegotiationRequirementRequirementTreeLevel | — |
+| REQUIREMENT_TYPE | NegotiationRequirementRequirementType | ✅ |
+| RESPONSE_TYPE | NegotiationRequirementResponseType | ✅ |
+| REVISION_NUMBER | NegotiationRequirementRevisionNumber | ✅ |
+| ROOT_REQUIREMENT_ID | NegotiationRequirementRootRequirementId | — |
+| SCORE_ID | NegotiationRequirementScoreId | — |
+| SCORING_METHOD | NegotiationRequirementScoringMethod | ✅ |
+| SCORING_TYPE | NegotiationRequirementScoringType | — |
+| SECTION_ID | NegotiationRequirementSectionId | — |
+| SEQUENCE_NUMBER | NegotiationRequirementSequenceNumber | — |
+| SUPPLIER_LEVEL | NegotiationRequirementSupplierLevel | ✅ |
+| TEXT_VALUE | NegotiationRequirementTextValue | ✅ |
+| WEIGHT | NegotiationRequirementWeight | ✅ |
+
+### [[negotiationrequirementextractpvo|NegotiationRequirementExtractPVO]] (PO · BICC: 45/45)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ABSOLUTE_SECTION_SEQUENCE | AbsoluteSectionSequence | ✅ |
+| ALLOW_ATTACHMENT_CODE | AllowAttachmentCode | ✅ |
+| ALLOW_COMMENTS | AllowComments | ✅ |
+| AUCTION_HEADER_ID | AuctionHeaderId | ✅ |
+| CATEGORY_CODE | CategoryCode | ✅ |
+| CREATED_BY | CreatedBy | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| DATATYPE | Datatype | ✅ |
+| DATE_VALUE | DateValue | ✅ |
+| DATETIME_VALUE | DatetimeValue | ✅ |
+| DISP_SEQ_NUMBER | DispSeqNumber | ✅ |
+| DISPLAY_TARGET_FLAG | DisplayTargetFlag | ✅ |
+| HINT | Hint | ✅ |
+| IS_QUESTION_BRANCH | IsQuestionBranch | ✅ |
+| KNOCKOUT_SCORE | KnockoutScore | ✅ |
+| LAST_AMENDMENT_UPDATE | LastAmendmentUpdate | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | LastUpdatedBy | ✅ |
+| MAX_SCORE | MaxScore | ✅ |
+| MODIFIED_DATE | ModifiedDate | ✅ |
+| MODIFIED_FLAG | ModifiedFlag | ✅ |
+| NUMBER_VALUE | NumberValue | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | ✅ |
+| PARENT_LEVEL | ParentLevel | ✅ |
+| PARENT_REQUIREMENT_ID | ParentRequirementId | ✅ |
+| PREVIOUS_REQUIREMENT_ID | PreviousRequirementId | ✅ |
+| QUESTION_ID | QuestionId | ✅ |
+| REQ_DISPLAY_NUMBER | ReqDisplayNumber | ✅ |
+| REQUIREMENT_ID | RequirementId | ✅ |
+| REQUIREMENT_NAME | RequirementName | ✅ |
+| REQUIREMENT_TEXT | RequirementText | ✅ |
+| REQUIREMENT_TREE_LEVEL | RequirementTreeLevel | ✅ |
+| REQUIREMENT_TYPE | RequirementType | ✅ |
+| RESPONSE_TYPE | ResponseType | ✅ |
+| REVISION_NUMBER | RevisionNumber | ✅ |
+| ROOT_REQUIREMENT_ID | RootRequirementId | ✅ |
+| SCORE_ID | ScoreId | ✅ |
+| SCORING_METHOD | ScoringMethod | ✅ |
+| SCORING_TYPE | ScoringType | ✅ |
+| SECTION_ID | SectionId | ✅ |
+| SEQUENCE_NUMBER | SequenceNumber | ✅ |
+| SUPPLIER_LEVEL | SupplierLevel | ✅ |
+| TEXT_VALUE | TextValue | ✅ |
+| WEIGHT | Weight | ✅ |
+
+### [[negotiationrequirementpvo|NegotiationRequirementPVO]] (PO · BICC: 26/45)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ABSOLUTE_SECTION_SEQUENCE | NegotiationRequirementAbsoluteSectionSequence | ✅ |
+| ALLOW_ATTACHMENT_CODE | NegotiationRequirementAllowAttachmentCode | ✅ |
+| ALLOW_COMMENTS | NegotiationRequirementAllowComments | ✅ |
+| AUCTION_HEADER_ID | NegotiationRequirementAuctionHeaderId | — |
+| CATEGORY_CODE | NegotiationRequirementCategoryCode | — |
+| CREATED_BY | NegotiationRequirementCreatedBy | ✅ |
+| CREATION_DATE | NegotiationRequirementCreationDate | ✅ |
+| DATATYPE | NegotiationRequirementDatatype | ✅ |
+| DATE_VALUE | NegotiationRequirementDateValue | ✅ |
+| DATETIME_VALUE | NegotiationRequirementDatetimeValue | ✅ |
+| DISP_SEQ_NUMBER | NegotiationRequirementDispSeqNumber | — |
+| DISPLAY_TARGET_FLAG | NegotiationRequirementDisplayTargetFlag | ✅ |
+| HINT | NegotiationRequirementHint | ✅ |
+| IS_QUESTION_BRANCH | NegotiationRequirementIsQuestionBranch | — |
+| KNOCKOUT_SCORE | NegotiationRequirementKnockoutScore | ✅ |
+| LAST_AMENDMENT_UPDATE | NegotiationRequirementLastAmendmentUpdate | — |
+| LAST_UPDATE_DATE | NegotiationRequirementLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | NegotiationRequirementLastUpdateLogin | — |
+| LAST_UPDATED_BY | NegotiationRequirementLastUpdatedBy | — |
+| MAX_SCORE | NegotiationRequirementMaxScore | ✅ |
+| MODIFIED_DATE | NegotiationRequirementModifiedDate | — |
+| MODIFIED_FLAG | NegotiationRequirementModifiedFlag | — |
+| NUMBER_VALUE | NegotiationRequirementNumberValue | ✅ |
+| OBJECT_VERSION_NUMBER | NegotiationRequirementObjectVersionNumber | — |
+| PARENT_LEVEL | NegotiationRequirementParentLevel | — |
+| PARENT_REQUIREMENT_ID | NegotiationRequirementParentRequirementId | — |
+| PREVIOUS_REQUIREMENT_ID | NegotiationRequirementPreviousRequirementId | — |
+| QUESTION_ID | NegotiationRequirementQuestionId | ✅ |
+| REQ_DISPLAY_NUMBER | NegotiationRequirementReqDisplayNumber | ✅ |
+| REQUIREMENT_ID | RequirementId | ✅ |
+| REQUIREMENT_NAME | NegotiationRequirementRequirementName | ✅ |
+| REQUIREMENT_TEXT | NegotiationRequirementRequirementText | ✅ |
+| REQUIREMENT_TREE_LEVEL | NegotiationRequirementRequirementTreeLevel | — |
+| REQUIREMENT_TYPE | NegotiationRequirementRequirementType | ✅ |
+| RESPONSE_TYPE | NegotiationRequirementResponseType | ✅ |
+| REVISION_NUMBER | NegotiationRequirementRevisionNumber | ✅ |
+| ROOT_REQUIREMENT_ID | NegotiationRequirementRootRequirementId | — |
+| SCORE_ID | NegotiationRequirementScoreId | — |
+| SCORING_METHOD | NegotiationRequirementScoringMethod | ✅ |
+| SCORING_TYPE | NegotiationRequirementScoringType | — |
+| SECTION_ID | NegotiationRequirementSectionId | — |
+| SEQUENCE_NUMBER | NegotiationRequirementSequenceNumber | — |
+| SUPPLIER_LEVEL | NegotiationRequirementSupplierLevel | ✅ |
+| TEXT_VALUE | NegotiationRequirementTextValue | ✅ |
+| WEIGHT | NegotiationRequirementWeight | ✅ |
+
+### [[negotiationresprequirementandvaluespvo|NegotiationRespRequirementAndValuesPVO]] (PO · BICC: 13/45)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ABSOLUTE_SECTION_SEQUENCE | NegotiationRequirementAbsoluteSectionSequence | ✅ |
+| ALLOW_ATTACHMENT_CODE | NegotiationRequirementAllowAttachmentCode | — |
+| ALLOW_COMMENTS | NegotiationRequirementAllowComments | — |
+| AUCTION_HEADER_ID | NegotiationRequirementAuctionHeaderId2 | — |
+| CATEGORY_CODE | NegotiationRequirementCategoryCode | — |
+| CREATED_BY | NegotiationRequirementCreatedBy2 | — |
+| CREATION_DATE | NegotiationRequirementCreationDate2 | — |
+| DATATYPE | NegotiationRequirementDatatype | ✅ |
+| DATE_VALUE | NegotiationRequirementDateValue1 | — |
+| DATETIME_VALUE | NegotiationRequirementDatetimeValue1 | — |
+| DISP_SEQ_NUMBER | NegotiationRequirementDispSeqNumber1 | — |
+| DISPLAY_TARGET_FLAG | NegotiationRequirementDisplayTargetFlag | — |
+| HINT | NegotiationRequirementHint | — |
+| IS_QUESTION_BRANCH | NegotiationRequirementIsQuestionBranch | — |
+| KNOCKOUT_SCORE | NegotiationRequirementKnockoutScore | — |
+| LAST_AMENDMENT_UPDATE | NegotiationRequirementLastAmendmentUpdate1 | — |
+| LAST_UPDATE_DATE | NegotiationRequirementLastUpdateDate2 | ✅ |
+| LAST_UPDATE_LOGIN | NegotiationRequirementLastUpdateLogin2 | — |
+| LAST_UPDATED_BY | NegotiationRequirementLastUpdatedBy2 | — |
+| MAX_SCORE | NegotiationRequirementMaxScore | — |
+| MODIFIED_DATE | NegotiationRequirementModifiedDate | — |
+| MODIFIED_FLAG | NegotiationRequirementModifiedFlag1 | — |
+| NUMBER_VALUE | NegotiationRequirementNumberValue1 | — |
+| OBJECT_VERSION_NUMBER | NegotiationRequirementObjectVersionNumber2 | — |
+| PARENT_LEVEL | NegotiationRequirementParentLevel | — |
+| PARENT_REQUIREMENT_ID | NegotiationRequirementParentRequirementId | — |
+| PREVIOUS_REQUIREMENT_ID | NegotiationRequirementPreviousRequirementId | — |
+| QUESTION_ID | NegotiationRequirementQuestionId | ✅ |
+| REQ_DISPLAY_NUMBER | NegotiationRequirementReqDisplayNumber | ✅ |
+| REQUIREMENT_ID | NegotiationRequirementRequirementId1 | ✅ |
+| REQUIREMENT_NAME | NegotiationRequirementRequirementName | ✅ |
+| REQUIREMENT_TEXT | NegotiationRequirementRequirementText | ✅ |
+| REQUIREMENT_TREE_LEVEL | NegotiationRequirementRequirementTreeLevel | — |
+| REQUIREMENT_TYPE | NegotiationRequirementRequirementType | ✅ |
+| RESPONSE_TYPE | NegotiationRequirementResponseType | ✅ |
+| REVISION_NUMBER | NegotiationRequirementRevisionNumber | ✅ |
+| ROOT_REQUIREMENT_ID | NegotiationRequirementRootRequirementId | — |
+| SCORE_ID | NegotiationRequirementScoreId1 | — |
+| SCORING_METHOD | NegotiationRequirementScoringMethod | ✅ |
+| SCORING_TYPE | NegotiationRequirementScoringType | — |
+| SECTION_ID | NegotiationRequirementSectionId1 | — |
+| SEQUENCE_NUMBER | NegotiationRequirementSequenceNumber | — |
+| SUPPLIER_LEVEL | NegotiationRequirementSupplierLevel | ✅ |
+| TEXT_VALUE | NegotiationRequirementTextValue1 | — |
+| WEIGHT | NegotiationRequirementWeight | — |
+
+### [[negotiationresprequirementpvo|NegotiationRespRequirementPVO]] (PO · BICC: 13/45)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ABSOLUTE_SECTION_SEQUENCE | NegotiationRequirementAbsoluteSectionSequence | ✅ |
+| ALLOW_ATTACHMENT_CODE | NegotiationRequirementAllowAttachmentCode | — |
+| ALLOW_COMMENTS | NegotiationRequirementAllowComments | — |
+| AUCTION_HEADER_ID | NegotiationRequirementAuctionHeaderId5 | — |
+| CATEGORY_CODE | NegotiationRequirementCategoryCode | — |
+| CREATED_BY | NegotiationRequirementCreatedBy5 | — |
+| CREATION_DATE | NegotiationRequirementCreationDate5 | — |
+| DATATYPE | NegotiationRequirementDatatype | ✅ |
+| DATE_VALUE | NegotiationRequirementDateValue | — |
+| DATETIME_VALUE | NegotiationRequirementDatetimeValue | — |
+| DISP_SEQ_NUMBER | NegotiationRequirementDispSeqNumber1 | — |
+| DISPLAY_TARGET_FLAG | NegotiationRequirementDisplayTargetFlag | — |
+| HINT | NegotiationRequirementHint | — |
+| IS_QUESTION_BRANCH | NegotiationRequirementIsQuestionBranch | — |
+| KNOCKOUT_SCORE | NegotiationRequirementKnockoutScore | — |
+| LAST_AMENDMENT_UPDATE | NegotiationRequirementLastAmendmentUpdate1 | — |
+| LAST_UPDATE_DATE | NegotiationRequirementLastUpdateDate5 | ✅ |
+| LAST_UPDATE_LOGIN | NegotiationRequirementLastUpdateLogin5 | — |
+| LAST_UPDATED_BY | NegotiationRequirementLastUpdatedBy5 | — |
+| MAX_SCORE | NegotiationRequirementMaxScore | — |
+| MODIFIED_DATE | NegotiationRequirementModifiedDate | — |
+| MODIFIED_FLAG | NegotiationRequirementModifiedFlag1 | — |
+| NUMBER_VALUE | NegotiationRequirementNumberValue | — |
+| OBJECT_VERSION_NUMBER | NegotiationRequirementObjectVersionNumber5 | — |
+| PARENT_LEVEL | NegotiationRequirementParentLevel | — |
+| PARENT_REQUIREMENT_ID | NegotiationRequirementParentRequirementId | — |
+| PREVIOUS_REQUIREMENT_ID | NegotiationRequirementPreviousRequirementId | — |
+| QUESTION_ID | NegotiationRequirementQuestionId | ✅ |
+| REQ_DISPLAY_NUMBER | NegotiationRequirementReqDisplayNumber | ✅ |
+| REQUIREMENT_ID | NegotiationRequirementRequirementId1 | ✅ |
+| REQUIREMENT_NAME | NegotiationRequirementRequirementName | ✅ |
+| REQUIREMENT_TEXT | NegotiationRequirementRequirementText | ✅ |
+| REQUIREMENT_TREE_LEVEL | NegotiationRequirementRequirementTreeLevel | — |
+| REQUIREMENT_TYPE | NegotiationRequirementRequirementType | ✅ |
+| RESPONSE_TYPE | NegotiationRequirementResponseType | ✅ |
+| REVISION_NUMBER | NegotiationRequirementRevisionNumber | ✅ |
+| ROOT_REQUIREMENT_ID | NegotiationRequirementRootRequirementId | — |
+| SCORE_ID | NegotiationRequirementScoreId | — |
+| SCORING_METHOD | NegotiationRequirementScoringMethod | ✅ |
+| SCORING_TYPE | NegotiationRequirementScoringType | — |
+| SECTION_ID | NegotiationRequirementSectionId3 | — |
+| SEQUENCE_NUMBER | NegotiationRequirementSequenceNumber1 | — |
+| SUPPLIER_LEVEL | NegotiationRequirementSupplierLevel | ✅ |
+| TEXT_VALUE | NegotiationRequirementTextValue | — |
+| WEIGHT | NegotiationRequirementWeight | — |

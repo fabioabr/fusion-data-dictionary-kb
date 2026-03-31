@@ -98,6 +98,31 @@ WHERE  ec.ELEMENT_TYPE_ID = :p_element_type_id;
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[retroelemententry|RetroElementEntry]] (HCM)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| COLLECTIVE_AGREEMENT_ID | ElementCriteriaCollectiveAgreementId | — |
+| CRITERIA_TYPE | ElementCriteriaCriteriaType | — |
+| ELEMENT_CRITERIA_ID | ElementCriteriaElementCriteriaId | — |
+| EMPLOYMENT_CATEGORY | ElementCriteriaEmploymentCategory | — |
+| GRADE_ID | ElementCriteriaGradeId | — |
+| JOB_ID | ElementCriteriaJobId | — |
+| LEGAL_EMPLOYER_ID | ElementCriteriaLegalEmployerId | — |
+| LINK_LEVEL | ElementCriteriaLinkLevel | — |
+| LINK_TO_ALL_PAYROLLS_FLAG | ElementCriteriaLinkToAllPayrollsFlag | — |
+| LOCATION_ID | ElementCriteriaLocationId | — |
+| ORGANIZATION_ID | ElementCriteriaOrganizationId | — |
+| PAYROLL_ID | ElementCriteriaPayrollId | — |
+| PAYROLL_STAT_UNIT_ID | ElementCriteriaPayrollStatUnitId | — |
+| PEOPLE_GROUP_ID | ElementCriteriaPeopleGroupId | — |
+| POSITION_ID | ElementCriteriaPositionId | — |
+| RELATIONSHIP_TYPE_ID | ElementCriteriaRelationshipTypeId | — |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — PAY_ELEMENT_CRITERIA](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/payelementcriteria.html)

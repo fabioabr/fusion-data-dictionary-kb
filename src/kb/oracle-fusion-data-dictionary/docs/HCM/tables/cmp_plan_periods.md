@@ -118,6 +118,49 @@ ORDER BY pp.START_DATE DESC;
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[planperiodpvo|PlanPeriodPVO]] (HCM · BICC: 34/34)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ASSIGNMENT_CHANGE_DATE | PlanPeriodPEOAssignmentChangeDate | ✅ |
+| AVAIL_END_DATE | PlanPeriodPEOAvailEndDate | ✅ |
+| AVAIL_START_DATE | PlanPeriodPEOAvailStartDate | ✅ |
+| COMP_TYPE | CompType | ✅ |
+| CREATED_BY | PlanPeriodPEOCreatedBy | ✅ |
+| CREATION_DATE | PlanPeriodPEOCreationDate | ✅ |
+| DEFAULT_DUE_DATE | PlanPeriodPEODefaultDueDate | ✅ |
+| DISPLAY_NAME | PlanPeriodPEODisplayName | ✅ |
+| ELIGIBILITY_DATE | PlanPeriodPEOEligibilityDate | ✅ |
+| END_DATE | PlanPeriodPEOEndDate | ✅ |
+| EXCHANGE_RATE_DATE | PlanPeriodPEOExchangeRateDate | ✅ |
+| FREEZE_DATE | PlanPeriodPEOFreezeDate | ✅ |
+| LAST_UPDATE_DATE | PlanPeriodPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | PlanPeriodPEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | PlanPeriodPEOLastUpdatedBy | ✅ |
+| LVL_1_DEFAULT_DUE_DATE | PlanPeriodPEOLvl1DefaultDueDate | ✅ |
+| LVL_2_DEFAULT_DUE_DATE | PlanPeriodPEOLvl2DefaultDueDate | ✅ |
+| LVL_3_DEFAULT_DUE_DATE | PlanPeriodPEOLvl3DefaultDueDate | ✅ |
+| LVL_4_DEFAULT_DUE_DATE | PlanPeriodPEOLvl4DefaultDueDate | ✅ |
+| LVL_5_DEFAULT_DUE_DATE | PlanPeriodPEOLvl5DefaultDueDate | ✅ |
+| LVL_6_DEFAULT_DUE_DATE | PlanPeriodPEOLvl6DefaultDueDate | ✅ |
+| LVL_7_DEFAULT_DUE_DATE | PlanPeriodPEOLvl7DefaultDueDate | ✅ |
+| MGR_UPD_DUE_DATE_FLAG | PlanPeriodPEOMgrUpdDueDateFlag | ✅ |
+| OBJECT_VERSION_NUMBER | PlanPeriodPEOObjectVersionNumber | ✅ |
+| PERFORMANCE_DATE | PlanPeriodPEOPerformanceDate | ✅ |
+| PERIOD_ID | PeriodId | ✅ |
+| PERIOD_NAME | PlanPeriodPEOPeriodName | ✅ |
+| PERIOD_TYPE | PlanPeriodPEOPeriodType | ✅ |
+| PLAN_ACCESS_ID | PlanPeriodPEOPlanAccessId | ✅ |
+| PLAN_ID | PlanPeriodPEOPlanId | ✅ |
+| START_DATE | PlanPeriodPEOStartDate | ✅ |
+| TOP_MGR_DEFAULT_DUE_DATE | PlanPeriodPEOTopMgrDefaultDueDate | ✅ |
+| UPDATE_END_DATE | PlanPeriodPEOUpdateEndDate | ✅ |
+| UPDATE_START_DATE | PlanPeriodPEOUpdateStartDate | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — CMP_PLAN_PERIODS](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/cmpplanperiods.html)

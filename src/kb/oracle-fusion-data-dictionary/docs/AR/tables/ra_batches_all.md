@@ -160,6 +160,724 @@ ORDER BY b.BATCH_DATE DESC, ct.TRX_NUMBER;
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[adjustmentdistributionpvo|AdjustmentDistributionPVO]] (AR · BICC: 1/33)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BATCH_DATE | TransactionBatchBatchDate | — |
+| BATCH_ID | TransactionBatchBatchId | — |
+| BATCH_PROCESS_STATUS | TransactionBatchBatchProcessStatus | — |
+| BATCH_SOURCE_ID | TransactionBatchBatchSourceId | — |
+| BATCH_SOURCE_SEQ_ID | TransactionBatchBatchSourceSeqId | — |
+| COMMENTS | TransactionBatchComments | — |
+| CONTROL_AMOUNT | TransactionBatchControlAmount | — |
+| CONTROL_COUNT | TransactionBatchControlCount | — |
+| CREATED_BY | TransactionBatchCreatedBy | — |
+| CREATION_DATE | TransactionBatchCreationDate | — |
+| CURRENCY_CODE | TransactionBatchCurrencyCode | — |
+| EXCHANGE_DATE | TransactionBatchExchangeDate | — |
+| EXCHANGE_RATE | TransactionBatchExchangeRate | — |
+| EXCHANGE_RATE_TYPE | TransactionBatchExchangeRateType | — |
+| GL_DATE | TransactionBatchGlDate | — |
+| ISSUE_DATE | TransactionBatchIssueDate | — |
+| LAST_UPDATE_DATE | TransactionBatchLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | TransactionBatchLastUpdateLogin | — |
+| LAST_UPDATED_BY | TransactionBatchLastUpdatedBy | — |
+| MATURITY_DATE | TransactionBatchMaturityDate | — |
+| NAME | TransactionBatchName | — |
+| OBJECT_VERSION_NUMBER | TransactionBatchObjectVersionNumber | — |
+| ORG_ID | TransactionBatchOrgId | — |
+| PROGRAM_APPLICATION_ID | TransactionBatchProgramApplicationId | — |
+| PROGRAM_ID | TransactionBatchProgramId | — |
+| PROGRAM_UPDATE_DATE | TransactionBatchProgramUpdateDate | — |
+| PURGED_CHILDREN_FLAG | TransactionBatchPurgedChildrenFlag | — |
+| REQUEST_ID | TransactionBatchRequestId | — |
+| SELECTION_CRITERIA_ID | TransactionBatchSelectionCriteriaId | — |
+| SET_OF_BOOKS_ID | TransactionBatchSetOfBooksId | — |
+| SPECIAL_INSTRUCTIONS | TransactionBatchSpecialInstructions | — |
+| STATUS | TransactionBatchStatus | — |
+| TYPE | TransactionBatchType | — |
+
+### [[completedtrxrevadjdistributionpvo|CompletedTrxRevAdjDistributionPVO]] (AR)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BATCH_DATE | TransactionBatchBatchDate | — |
+| BATCH_ID | TransactionBatchBatchId | — |
+| BATCH_PROCESS_STATUS | TransactionBatchBatchProcessStatus | — |
+| BATCH_SOURCE_ID | TransactionBatchBatchSourceId | — |
+| BATCH_SOURCE_SEQ_ID | TransactionBatchBatchSourceSeqId | — |
+| COMMENTS | TransactionBatchComments | — |
+| CONTROL_AMOUNT | TransactionBatchControlAmount | — |
+| CONTROL_COUNT | TransactionBatchControlCount | — |
+| CURRENCY_CODE | TransactionBatchCurrencyCode | — |
+| EXCHANGE_DATE | TransactionBatchExchangeDate | — |
+| EXCHANGE_RATE | TransactionBatchExchangeRate | — |
+| EXCHANGE_RATE_TYPE | TransactionBatchExchangeRateType | — |
+| GL_DATE | TransactionBatchGlDate | — |
+| ISSUE_DATE | TransactionBatchIssueDate | — |
+| MATURITY_DATE | TransactionBatchMaturityDate | — |
+| NAME | TransactionBatchName | — |
+| ORG_ID | TransactionBatchOrgId | — |
+| PROGRAM_APPLICATION_ID | TransactionBatchProgramApplicationId | — |
+| PROGRAM_ID | TransactionBatchProgramId | — |
+| PROGRAM_UPDATE_DATE | TransactionBatchProgramUpdateDate | — |
+| PURGED_CHILDREN_FLAG | TransactionBatchPurgedChildrenFlag | — |
+| REQUEST_ID | TransactionBatchRequestId | — |
+| SELECTION_CRITERIA_ID | TransactionBatchSelectionCriteriaId | — |
+| SET_OF_BOOKS_ID | TransactionBatchSetOfBooksId | — |
+| SPECIAL_INSTRUCTIONS | TransactionBatchSpecialInstructions | — |
+| STATUS | TransactionBatchStatus | — |
+| TYPE | TransactionBatchType | — |
+
+### [[completedtrxrevenuedistributionpvo|CompletedTrxRevenueDistributionPVO]] (AR)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BATCH_DATE | TransactionBatchBatchDate | — |
+| BATCH_ID | TransactionBatchBatchId | — |
+| BATCH_PROCESS_STATUS | TransactionBatchBatchProcessStatus | — |
+| BATCH_SOURCE_ID | TransactionBatchBatchSourceId | — |
+| BATCH_SOURCE_SEQ_ID | TransactionBatchBatchSourceSeqId | — |
+| COMMENTS | TransactionBatchComments | — |
+| CONTROL_AMOUNT | TransactionBatchControlAmount | — |
+| CONTROL_COUNT | TransactionBatchControlCount | — |
+| CURRENCY_CODE | TransactionBatchCurrencyCode | — |
+| EXCHANGE_DATE | TransactionBatchExchangeDate | — |
+| EXCHANGE_RATE | TransactionBatchExchangeRate | — |
+| EXCHANGE_RATE_TYPE | TransactionBatchExchangeRateType | — |
+| GL_DATE | TransactionBatchGlDate | — |
+| ISSUE_DATE | TransactionBatchIssueDate | — |
+| MATURITY_DATE | TransactionBatchMaturityDate | — |
+| NAME | TransactionBatchName | — |
+| ORG_ID | TransactionBatchOrgId | — |
+| PROGRAM_APPLICATION_ID | TransactionBatchProgramApplicationId | — |
+| PROGRAM_ID | TransactionBatchProgramId | — |
+| PROGRAM_UPDATE_DATE | TransactionBatchProgramUpdateDate | — |
+| PURGED_CHILDREN_FLAG | TransactionBatchPurgedChildrenFlag | — |
+| REQUEST_ID | TransactionBatchRequestId | — |
+| SELECTION_CRITERIA_ID | TransactionBatchSelectionCriteriaId | — |
+| SET_OF_BOOKS_ID | TransactionBatchSetOfBooksId | — |
+| SPECIAL_INSTRUCTIONS | TransactionBatchSpecialInstructions | — |
+| STATUS | TransactionBatchStatus | — |
+| TYPE | TransactionBatchType | — |
+
+### [[creditmemoapplicationdistributionpvo|CreditMemoApplicationDistributionPVO]] (AR · BICC: 1/33)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BATCH_DATE | TransactionBatchBatchDate | — |
+| BATCH_ID | TransactionBatchBatchId | — |
+| BATCH_PROCESS_STATUS | TransactionBatchBatchProcessStatus | — |
+| BATCH_SOURCE_ID | TransactionBatchBatchSourceId | — |
+| BATCH_SOURCE_SEQ_ID | TransactionBatchBatchSourceSeqId | — |
+| COMMENTS | TransactionBatchComments | — |
+| CONTROL_AMOUNT | TransactionBatchControlAmount | — |
+| CONTROL_COUNT | TransactionBatchControlCount | — |
+| CREATED_BY | TransactionBatchCreatedBy | — |
+| CREATION_DATE | TransactionBatchCreationDate | — |
+| CURRENCY_CODE | TransactionBatchCurrencyCode | — |
+| EXCHANGE_DATE | TransactionBatchExchangeDate | — |
+| EXCHANGE_RATE | TransactionBatchExchangeRate | — |
+| EXCHANGE_RATE_TYPE | TransactionBatchExchangeRateType | — |
+| GL_DATE | TransactionBatchGlDate | — |
+| ISSUE_DATE | TransactionBatchIssueDate | — |
+| LAST_UPDATE_DATE | TransactionBatchLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | TransactionBatchLastUpdateLogin | — |
+| LAST_UPDATED_BY | TransactionBatchLastUpdatedBy | — |
+| MATURITY_DATE | TransactionBatchMaturityDate | — |
+| NAME | TransactionBatchName | — |
+| OBJECT_VERSION_NUMBER | TransactionBatchObjectVersionNumber | — |
+| ORG_ID | TransactionBatchOrgId | — |
+| PROGRAM_APPLICATION_ID | TransactionBatchProgramApplicationId | — |
+| PROGRAM_ID | TransactionBatchProgramId | — |
+| PROGRAM_UPDATE_DATE | TransactionBatchProgramUpdateDate | — |
+| PURGED_CHILDREN_FLAG | TransactionBatchPurgedChildrenFlag | — |
+| REQUEST_ID | TransactionBatchRequestId | — |
+| SELECTION_CRITERIA_ID | TransactionBatchSelectionCriteriaId | — |
+| SET_OF_BOOKS_ID | TransactionBatchSetOfBooksId | — |
+| SPECIAL_INSTRUCTIONS | TransactionBatchSpecialInstructions | — |
+| STATUS | TransactionBatchStatus | — |
+| TYPE | TransactionBatchType | — |
+
+### [[headersalescreditpvo|HeaderSalesCreditPVO]] (AR · BICC: 1/33)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BATCH_DATE | TransactionBatchBatchDate | — |
+| BATCH_ID | TransactionBatchBatchId | — |
+| BATCH_PROCESS_STATUS | TransactionBatchBatchProcessStatus | — |
+| BATCH_SOURCE_ID | TransactionBatchBatchSourceId | — |
+| BATCH_SOURCE_SEQ_ID | TransactionBatchBatchSourceSeqId | — |
+| COMMENTS | TransactionBatchComments | — |
+| CONTROL_AMOUNT | TransactionBatchControlAmount | — |
+| CONTROL_COUNT | TransactionBatchControlCount | — |
+| CREATED_BY | TransactionBatchCreatedBy | — |
+| CREATION_DATE | TransactionBatchCreationDate | — |
+| CURRENCY_CODE | TransactionBatchCurrencyCode | — |
+| EXCHANGE_DATE | TransactionBatchExchangeDate | — |
+| EXCHANGE_RATE | TransactionBatchExchangeRate | — |
+| EXCHANGE_RATE_TYPE | TransactionBatchExchangeRateType | — |
+| GL_DATE | TransactionBatchGlDate | — |
+| ISSUE_DATE | TransactionBatchIssueDate | — |
+| LAST_UPDATE_DATE | TransactionBatchLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | TransactionBatchLastUpdateLogin | — |
+| LAST_UPDATED_BY | TransactionBatchLastUpdatedBy | — |
+| MATURITY_DATE | TransactionBatchMaturityDate | — |
+| NAME | TransactionBatchName | — |
+| OBJECT_VERSION_NUMBER | TransactionBatchObjectVersionNumber | — |
+| ORG_ID | TransactionBatchOrgId | — |
+| PROGRAM_APPLICATION_ID | TransactionBatchProgramApplicationId | — |
+| PROGRAM_ID | TransactionBatchProgramId | — |
+| PROGRAM_UPDATE_DATE | TransactionBatchProgramUpdateDate | — |
+| PURGED_CHILDREN_FLAG | TransactionBatchPurgedChildrenFlag | — |
+| REQUEST_ID | TransactionBatchRequestId | — |
+| SELECTION_CRITERIA_ID | TransactionBatchSelectionCriteriaId | — |
+| SET_OF_BOOKS_ID | TransactionBatchSetOfBooksId | — |
+| SPECIAL_INSTRUCTIONS | TransactionBatchSpecialInstructions | — |
+| STATUS | TransactionBatchStatus | — |
+| TYPE | TransactionBatchType | — |
+
+### [[linesalescreditpvo|LineSalesCreditPVO]] (AR · BICC: 1/33)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BATCH_DATE | TransactionBatchBatchDate | — |
+| BATCH_ID | TransactionBatchBatchId | — |
+| BATCH_PROCESS_STATUS | TransactionBatchBatchProcessStatus | — |
+| BATCH_SOURCE_ID | TransactionBatchBatchSourceId | — |
+| BATCH_SOURCE_SEQ_ID | TransactionBatchBatchSourceSeqId | — |
+| COMMENTS | TransactionBatchComments | — |
+| CONTROL_AMOUNT | TransactionBatchControlAmount | — |
+| CONTROL_COUNT | TransactionBatchControlCount | — |
+| CREATED_BY | TransactionBatchCreatedBy | — |
+| CREATION_DATE | TransactionBatchCreationDate | — |
+| CURRENCY_CODE | TransactionBatchCurrencyCode | — |
+| EXCHANGE_DATE | TransactionBatchExchangeDate | — |
+| EXCHANGE_RATE | TransactionBatchExchangeRate | — |
+| EXCHANGE_RATE_TYPE | TransactionBatchExchangeRateType | — |
+| GL_DATE | TransactionBatchGlDate | — |
+| ISSUE_DATE | TransactionBatchIssueDate | — |
+| LAST_UPDATE_DATE | TransactionBatchLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | TransactionBatchLastUpdateLogin | — |
+| LAST_UPDATED_BY | TransactionBatchLastUpdatedBy | — |
+| MATURITY_DATE | TransactionBatchMaturityDate | — |
+| NAME | TransactionBatchName | — |
+| OBJECT_VERSION_NUMBER | TransactionBatchObjectVersionNumber | — |
+| ORG_ID | TransactionBatchOrgId | — |
+| PROGRAM_APPLICATION_ID | TransactionBatchProgramApplicationId | — |
+| PROGRAM_ID | TransactionBatchProgramId | — |
+| PROGRAM_UPDATE_DATE | TransactionBatchProgramUpdateDate | — |
+| PURGED_CHILDREN_FLAG | TransactionBatchPurgedChildrenFlag | — |
+| REQUEST_ID | TransactionBatchRequestId | — |
+| SELECTION_CRITERIA_ID | TransactionBatchSelectionCriteriaId | — |
+| SET_OF_BOOKS_ID | TransactionBatchSetOfBooksId | — |
+| SPECIAL_INSTRUCTIONS | TransactionBatchSpecialInstructions | — |
+| STATUS | TransactionBatchStatus | — |
+| TYPE | TransactionBatchType | — |
+
+### [[paymentschedulepvo|PaymentSchedulePVO]] (AR · BICC: 1/33)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BATCH_DATE | TransactionBatchBatchDate | — |
+| BATCH_ID | TransactionBatchBatchId | — |
+| BATCH_PROCESS_STATUS | TransactionBatchBatchProcessStatus | — |
+| BATCH_SOURCE_ID | TransactionBatchBatchSourceId | — |
+| BATCH_SOURCE_SEQ_ID | TransactionBatchBatchSourceSeqId | — |
+| COMMENTS | TransactionBatchComments | — |
+| CONTROL_AMOUNT | TransactionBatchControlAmount | — |
+| CONTROL_COUNT | TransactionBatchControlCount | — |
+| CREATED_BY | TransactionBatchCreatedBy | — |
+| CREATION_DATE | TransactionBatchCreationDate | — |
+| CURRENCY_CODE | TransactionBatchCurrencyCode | — |
+| EXCHANGE_DATE | TransactionBatchExchangeDate | — |
+| EXCHANGE_RATE | TransactionBatchExchangeRate | — |
+| EXCHANGE_RATE_TYPE | TransactionBatchExchangeRateType | — |
+| GL_DATE | TransactionBatchGlDate | — |
+| ISSUE_DATE | TransactionBatchIssueDate | — |
+| LAST_UPDATE_DATE | TransactionBatchLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | TransactionBatchLastUpdateLogin | — |
+| LAST_UPDATED_BY | TransactionBatchLastUpdatedBy | — |
+| MATURITY_DATE | TransactionBatchMaturityDate | — |
+| NAME | TransactionBatchName | — |
+| OBJECT_VERSION_NUMBER | TransactionBatchObjectVersionNumber | — |
+| ORG_ID | TransactionBatchOrgId | — |
+| PROGRAM_APPLICATION_ID | TransactionBatchProgramApplicationId | — |
+| PROGRAM_ID | TransactionBatchProgramId | — |
+| PROGRAM_UPDATE_DATE | TransactionBatchProgramUpdateDate | — |
+| PURGED_CHILDREN_FLAG | TransactionBatchPurgedChildrenFlag | — |
+| REQUEST_ID | TransactionBatchRequestId | — |
+| SELECTION_CRITERIA_ID | TransactionBatchSelectionCriteriaId | — |
+| SET_OF_BOOKS_ID | TransactionBatchSetOfBooksId | — |
+| SPECIAL_INSTRUCTIONS | TransactionBatchSpecialInstructions | — |
+| STATUS | TransactionBatchStatus | — |
+| TYPE | TransactionBatchType | — |
+
+### [[receiptapplicationdistributionpvo|ReceiptApplicationDistributionPVO]] (AR · BICC: 1/33)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BATCH_DATE | TransactionBatchBatchDate | — |
+| BATCH_ID | TransactionBatchBatchId | — |
+| BATCH_PROCESS_STATUS | TransactionBatchBatchProcessStatus | — |
+| BATCH_SOURCE_ID | TransactionBatchBatchSourceId | — |
+| BATCH_SOURCE_SEQ_ID | TransactionBatchBatchSourceSeqId | — |
+| COMMENTS | TransactionBatchComments | — |
+| CONTROL_AMOUNT | TransactionBatchControlAmount | — |
+| CONTROL_COUNT | TransactionBatchControlCount | — |
+| CREATED_BY | TransactionBatchCreatedBy | — |
+| CREATION_DATE | TransactionBatchCreationDate | — |
+| CURRENCY_CODE | TransactionBatchCurrencyCode | — |
+| EXCHANGE_DATE | TransactionBatchExchangeDate | — |
+| EXCHANGE_RATE | TransactionBatchExchangeRate | — |
+| EXCHANGE_RATE_TYPE | TransactionBatchExchangeRateType | — |
+| GL_DATE | TransactionBatchGlDate | — |
+| ISSUE_DATE | TransactionBatchIssueDate | — |
+| LAST_UPDATE_DATE | TransactionBatchLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | TransactionBatchLastUpdateLogin | — |
+| LAST_UPDATED_BY | TransactionBatchLastUpdatedBy | — |
+| MATURITY_DATE | TransactionBatchMaturityDate | — |
+| NAME | TransactionBatchName | — |
+| OBJECT_VERSION_NUMBER | TransactionBatchObjectVersionNumber | — |
+| ORG_ID | TransactionBatchOrgId | — |
+| PROGRAM_APPLICATION_ID | TransactionBatchProgramApplicationId | — |
+| PROGRAM_ID | TransactionBatchProgramId | — |
+| PROGRAM_UPDATE_DATE | TransactionBatchProgramUpdateDate | — |
+| PURGED_CHILDREN_FLAG | TransactionBatchPurgedChildrenFlag | — |
+| REQUEST_ID | TransactionBatchRequestId | — |
+| SELECTION_CRITERIA_ID | TransactionBatchSelectionCriteriaId | — |
+| SET_OF_BOOKS_ID | TransactionBatchSetOfBooksId | — |
+| SPECIAL_INSTRUCTIONS | TransactionBatchSpecialInstructions | — |
+| STATUS | TransactionBatchStatus | — |
+| TYPE | TransactionBatchType | — |
+
+### [[receiptapplicationdistributionvc|ReceiptApplicationDistributionVC]] (AR · BICC: 1/33)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BATCH_DATE | TransactionBatchBatchDate | — |
+| BATCH_ID | TransactionBatchBatchId | — |
+| BATCH_PROCESS_STATUS | TransactionBatchBatchProcessStatus | — |
+| BATCH_SOURCE_ID | TransactionBatchBatchSourceId | — |
+| BATCH_SOURCE_SEQ_ID | TransactionBatchBatchSourceSeqId | — |
+| COMMENTS | TransactionBatchComments | — |
+| CONTROL_AMOUNT | TransactionBatchControlAmount | — |
+| CONTROL_COUNT | TransactionBatchControlCount | — |
+| CREATED_BY | TransactionBatchCreatedBy | — |
+| CREATION_DATE | TransactionBatchCreationDate | — |
+| CURRENCY_CODE | TransactionBatchCurrencyCode | — |
+| EXCHANGE_DATE | TransactionBatchExchangeDate | — |
+| EXCHANGE_RATE | TransactionBatchExchangeRate | — |
+| EXCHANGE_RATE_TYPE | TransactionBatchExchangeRateType | — |
+| GL_DATE | TransactionBatchGlDate | — |
+| ISSUE_DATE | TransactionBatchIssueDate | — |
+| LAST_UPDATE_DATE | TransactionBatchLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | TransactionBatchLastUpdateLogin | — |
+| LAST_UPDATED_BY | TransactionBatchLastUpdatedBy | — |
+| MATURITY_DATE | TransactionBatchMaturityDate | — |
+| NAME | TransactionBatchName | — |
+| OBJECT_VERSION_NUMBER | TransactionBatchObjectVersionNumber | — |
+| ORG_ID | TransactionBatchOrgId | — |
+| PROGRAM_APPLICATION_ID | TransactionBatchProgramApplicationId | — |
+| PROGRAM_ID | TransactionBatchProgramId | — |
+| PROGRAM_UPDATE_DATE | TransactionBatchProgramUpdateDate | — |
+| PURGED_CHILDREN_FLAG | TransactionBatchPurgedChildrenFlag | — |
+| REQUEST_ID | TransactionBatchRequestId | — |
+| SELECTION_CRITERIA_ID | TransactionBatchSelectionCriteriaId | — |
+| SET_OF_BOOKS_ID | TransactionBatchSetOfBooksId | — |
+| SPECIAL_INSTRUCTIONS | TransactionBatchSpecialInstructions | — |
+| STATUS | TransactionBatchStatus | — |
+| TYPE | TransactionBatchType | — |
+
+### [[salesinvoicecustomertrxlinespvo|SalesInvoiceCustomerTrxLinesPVO]] (AR)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BATCH_DATE | TransactionBatchBatchDate | — |
+| BATCH_ID | TransactionBatchBatchId | — |
+| BATCH_PROCESS_STATUS | TransactionBatchBatchProcessStatus | — |
+| BATCH_SOURCE_ID | TransactionBatchBatchSourceId | — |
+| BATCH_SOURCE_SEQ_ID | TransactionBatchBatchSourceSeqId | — |
+| COMMENTS | TransactionBatchComments | — |
+| CONTROL_AMOUNT | TransactionBatchControlAmount | — |
+| CONTROL_COUNT | TransactionBatchControlCount | — |
+| CURRENCY_CODE | TransactionBatchCurrencyCode | — |
+| EXCHANGE_DATE | TransactionBatchExchangeDate | — |
+| EXCHANGE_RATE | TransactionBatchExchangeRate | — |
+| EXCHANGE_RATE_TYPE | TransactionBatchExchangeRateType | — |
+| GL_DATE | TransactionBatchGlDate | — |
+| ISSUE_DATE | TransactionBatchIssueDate | — |
+| MATURITY_DATE | TransactionBatchMaturityDate | — |
+| NAME | TransactionBatchName | — |
+| ORG_ID | TransactionBatchOrgId | — |
+| PROGRAM_APPLICATION_ID | TransactionBatchProgramApplicationId | — |
+| PROGRAM_ID | TransactionBatchProgramId | — |
+| PROGRAM_UPDATE_DATE | TransactionBatchProgramUpdateDate | — |
+| PURGED_CHILDREN_FLAG | TransactionBatchPurgedChildrenFlag | — |
+| REQUEST_ID | TransactionBatchRequestId | — |
+| SELECTION_CRITERIA_ID | TransactionBatchSelectionCriteriaId | — |
+| SET_OF_BOOKS_ID | TransactionBatchSetOfBooksId | — |
+| SPECIAL_INSTRUCTIONS | TransactionBatchSpecialInstructions | — |
+| STATUS | TransactionBatchStatus | — |
+| TYPE | TransactionBatchType | — |
+
+### [[transactionbatchextractpvo|TransactionBatchExtractPVO]] (OTHER · BICC: 33/49)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ATTRIBUTE1 | RaBatchAttribute1 | — |
+| ATTRIBUTE10 | RaBatchAttribute10 | — |
+| ATTRIBUTE11 | RaBatchAttribute11 | — |
+| ATTRIBUTE12 | RaBatchAttribute12 | — |
+| ATTRIBUTE13 | RaBatchAttribute13 | — |
+| ATTRIBUTE14 | RaBatchAttribute14 | — |
+| ATTRIBUTE15 | RaBatchAttribute15 | — |
+| ATTRIBUTE2 | RaBatchAttribute2 | — |
+| ATTRIBUTE3 | RaBatchAttribute3 | — |
+| ATTRIBUTE4 | RaBatchAttribute4 | — |
+| ATTRIBUTE5 | RaBatchAttribute5 | — |
+| ATTRIBUTE6 | RaBatchAttribute6 | — |
+| ATTRIBUTE7 | RaBatchAttribute7 | — |
+| ATTRIBUTE8 | RaBatchAttribute8 | — |
+| ATTRIBUTE9 | RaBatchAttribute9 | — |
+| ATTRIBUTE_CATEGORY | RaBatchAttributeCategory | — |
+| BATCH_DATE | RaBatchBatchDate | ✅ |
+| BATCH_ID | RaBatchBatchId | ✅ |
+| BATCH_PROCESS_STATUS | RaBatchBatchProcessStatus | ✅ |
+| BATCH_SOURCE_ID | RaBatchBatchSourceId | ✅ |
+| BATCH_SOURCE_SEQ_ID | RaBatchBatchSourceSeqId | ✅ |
+| COMMENTS | RaBatchComments | ✅ |
+| CONTROL_AMOUNT | RaBatchControlAmount | ✅ |
+| CONTROL_COUNT | RaBatchControlCount | ✅ |
+| CREATED_BY | RaBatchCreatedBy | ✅ |
+| CREATION_DATE | RaBatchCreationDate | ✅ |
+| CURRENCY_CODE | RaBatchCurrencyCode | ✅ |
+| EXCHANGE_DATE | RaBatchExchangeDate | ✅ |
+| EXCHANGE_RATE | RaBatchExchangeRate | ✅ |
+| EXCHANGE_RATE_TYPE | RaBatchExchangeRateType | ✅ |
+| GL_DATE | RaBatchGlDate | ✅ |
+| ISSUE_DATE | RaBatchIssueDate | ✅ |
+| LAST_UPDATE_DATE | RaBatchLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | RaBatchLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | RaBatchLastUpdatedBy | ✅ |
+| MATURITY_DATE | RaBatchMaturityDate | ✅ |
+| NAME | RaBatchName | ✅ |
+| OBJECT_VERSION_NUMBER | RaBatchObjectVersionNumber | ✅ |
+| ORG_ID | RaBatchOrgId | ✅ |
+| PROGRAM_APPLICATION_ID | RaBatchProgramApplicationId | ✅ |
+| PROGRAM_ID | RaBatchProgramId | ✅ |
+| PROGRAM_UPDATE_DATE | RaBatchProgramUpdateDate | ✅ |
+| PURGED_CHILDREN_FLAG | RaBatchPurgedChildrenFlag | ✅ |
+| REQUEST_ID | RaBatchRequestId | ✅ |
+| SELECTION_CRITERIA_ID | RaBatchSelectionCriteriaId | ✅ |
+| SET_OF_BOOKS_ID | RaBatchSetOfBooksId | ✅ |
+| SPECIAL_INSTRUCTIONS | RaBatchSpecialInstructions | ✅ |
+| STATUS | RaBatchStatus | ✅ |
+| TYPE | RaBatchType | ✅ |
+
+### [[transactionheaderbillsreceivablepvo|TransactionHeaderBillsReceivablePVO]] (AR)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BATCH_DATE | TransactionBatchBatchDate | — |
+| BATCH_ID | TransactionBatchBatchId | — |
+| BATCH_PROCESS_STATUS | TransactionBatchBatchProcessStatus | — |
+| BATCH_SOURCE_ID | TransactionBatchBatchSourceId | — |
+| BATCH_SOURCE_SEQ_ID | TransactionBatchBatchSourceSeqId | — |
+| COMMENTS | TransactionBatchComments | — |
+| CONTROL_AMOUNT | TransactionBatchControlAmount | — |
+| CONTROL_COUNT | TransactionBatchControlCount | — |
+| CURRENCY_CODE | TransactionBatchCurrencyCode | — |
+| EXCHANGE_DATE | TransactionBatchExchangeDate | — |
+| EXCHANGE_RATE | TransactionBatchExchangeRate | — |
+| EXCHANGE_RATE_TYPE | TransactionBatchExchangeRateType | — |
+| GL_DATE | TransactionBatchGlDate | — |
+| ISSUE_DATE | TransactionBatchIssueDate | — |
+| MATURITY_DATE | TransactionBatchMaturityDate | — |
+| NAME | TransactionBatchName | — |
+| ORG_ID | TransactionBatchOrgId | — |
+| PROGRAM_APPLICATION_ID | TransactionBatchProgramApplicationId | — |
+| PROGRAM_ID | TransactionBatchProgramId | — |
+| PROGRAM_UPDATE_DATE | TransactionBatchProgramUpdateDate | — |
+| PURGED_CHILDREN_FLAG | TransactionBatchPurgedChildrenFlag | — |
+| REQUEST_ID | TransactionBatchRequestId | — |
+| SELECTION_CRITERIA_ID | TransactionBatchSelectionCriteriaId | — |
+| SET_OF_BOOKS_ID | TransactionBatchSetOfBooksId | — |
+| SPECIAL_INSTRUCTIONS | TransactionBatchSpecialInstructions | — |
+| STATUS | TransactionBatchStatus | — |
+| TYPE | TransactionBatchType | — |
+
+### [[transactionheadernovcpvo|TransactionHeaderNoVCPVO]] (AR)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BATCH_DATE | TransactionBatchBatchDate | — |
+| BATCH_ID | TransactionBatchBatchId | — |
+| BATCH_PROCESS_STATUS | TransactionBatchBatchProcessStatus | — |
+| BATCH_SOURCE_ID | TransactionBatchBatchSourceId | — |
+| BATCH_SOURCE_SEQ_ID | TransactionBatchBatchSourceSeqId | — |
+| COMMENTS | TransactionBatchComments | — |
+| CONTROL_AMOUNT | TransactionBatchControlAmount | — |
+| CONTROL_COUNT | TransactionBatchControlCount | — |
+| CURRENCY_CODE | TransactionBatchCurrencyCode | — |
+| EXCHANGE_DATE | TransactionBatchExchangeDate | — |
+| EXCHANGE_RATE | TransactionBatchExchangeRate | — |
+| EXCHANGE_RATE_TYPE | TransactionBatchExchangeRateType | — |
+| GL_DATE | TransactionBatchGlDate | — |
+| ISSUE_DATE | TransactionBatchIssueDate | — |
+| MATURITY_DATE | TransactionBatchMaturityDate | — |
+| NAME | TransactionBatchName | — |
+| ORG_ID | TransactionBatchOrgId | — |
+| PROGRAM_APPLICATION_ID | TransactionBatchProgramApplicationId | — |
+| PROGRAM_ID | TransactionBatchProgramId | — |
+| PROGRAM_UPDATE_DATE | TransactionBatchProgramUpdateDate | — |
+| PURGED_CHILDREN_FLAG | TransactionBatchPurgedChildrenFlag | — |
+| REQUEST_ID | TransactionBatchRequestId | — |
+| SELECTION_CRITERIA_ID | TransactionBatchSelectionCriteriaId | — |
+| SET_OF_BOOKS_ID | TransactionBatchSetOfBooksId | — |
+| SPECIAL_INSTRUCTIONS | TransactionBatchSpecialInstructions | — |
+| STATUS | TransactionBatchStatus | — |
+| TYPE | TransactionBatchType | — |
+
+### [[transactionheaderpvo|TransactionHeaderPVO]] (AR)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BATCH_DATE | TransactionBatchBatchDate | — |
+| BATCH_ID | TransactionBatchBatchId | — |
+| BATCH_PROCESS_STATUS | TransactionBatchBatchProcessStatus | — |
+| BATCH_SOURCE_ID | TransactionBatchBatchSourceId | — |
+| BATCH_SOURCE_SEQ_ID | TransactionBatchBatchSourceSeqId | — |
+| COMMENTS | TransactionBatchComments | — |
+| CONTROL_AMOUNT | TransactionBatchControlAmount | — |
+| CONTROL_COUNT | TransactionBatchControlCount | — |
+| CURRENCY_CODE | TransactionBatchCurrencyCode | — |
+| EXCHANGE_DATE | TransactionBatchExchangeDate | — |
+| EXCHANGE_RATE | TransactionBatchExchangeRate | — |
+| EXCHANGE_RATE_TYPE | TransactionBatchExchangeRateType | — |
+| GL_DATE | TransactionBatchGlDate | — |
+| ISSUE_DATE | TransactionBatchIssueDate | — |
+| MATURITY_DATE | TransactionBatchMaturityDate | — |
+| NAME | TransactionBatchName | — |
+| ORG_ID | TransactionBatchOrgId | — |
+| PROGRAM_APPLICATION_ID | TransactionBatchProgramApplicationId | — |
+| PROGRAM_ID | TransactionBatchProgramId | — |
+| PROGRAM_UPDATE_DATE | TransactionBatchProgramUpdateDate | — |
+| PURGED_CHILDREN_FLAG | TransactionBatchPurgedChildrenFlag | — |
+| REQUEST_ID | TransactionBatchRequestId | — |
+| SELECTION_CRITERIA_ID | TransactionBatchSelectionCriteriaId | — |
+| SET_OF_BOOKS_ID | TransactionBatchSetOfBooksId | — |
+| SPECIAL_INSTRUCTIONS | TransactionBatchSpecialInstructions | — |
+| STATUS | TransactionBatchStatus | — |
+| TYPE | TransactionBatchType | — |
+
+### [[transactionhistorydistributionpvo|TransactionHistoryDistributionPVO]] (AR · BICC: 4/39)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BATCH_DATE | TransactionBatchBatchDate | — |
+| BATCH_ID | TransactionBatchBatchBatchId | — |
+| BATCH_ID | TransactionBatchBatchId | ✅ |
+| BATCH_PROCESS_STATUS | TransactionBatchBatchBatchProcessStatus | — |
+| BATCH_PROCESS_STATUS | TransactionBatchBatchProcessStatus | — |
+| BATCH_SOURCE_ID | TransactionBatchBatchSourceId | — |
+| BATCH_SOURCE_SEQ_ID | TransactionBatchBatchSourceSeqId | — |
+| COMMENTS | TransactionBatchComments | — |
+| CONTROL_AMOUNT | TransactionBatchControlAmount | — |
+| CONTROL_COUNT | TransactionBatchControlCount | — |
+| CREATED_BY | TransactionBatchCreatedBy | — |
+| CREATION_DATE | TransactionBatchCreationDate | — |
+| CURRENCY_CODE | TransactionBatchBatchCurrencyCode | — |
+| CURRENCY_CODE | TransactionBatchCurrencyCode | — |
+| EXCHANGE_DATE | TransactionBatchExchangeDate | — |
+| EXCHANGE_RATE | TransactionBatchExchangeRate | — |
+| EXCHANGE_RATE_TYPE | TransactionBatchExchangeRateType | — |
+| GL_DATE | TransactionBatchGlDate | — |
+| ISSUE_DATE | TransactionBatchIssueDate | — |
+| LAST_UPDATE_DATE | TransactionBatchLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | TransactionBatchLastUpdateLogin | — |
+| LAST_UPDATED_BY | TransactionBatchLastUpdatedBy | — |
+| MATURITY_DATE | TransactionBatchMaturityDate | — |
+| NAME | TransactionBatchBatchName | — |
+| NAME | TransactionBatchName | ✅ |
+| OBJECT_VERSION_NUMBER | TransactionBatchObjectVersionNumber | — |
+| ORG_ID | TransactionBatchOrgId | — |
+| PROGRAM_APPLICATION_ID | TransactionBatchProgramApplicationId | — |
+| PROGRAM_ID | TransactionBatchProgramId | — |
+| PROGRAM_UPDATE_DATE | TransactionBatchProgramUpdateDate | — |
+| PURGED_CHILDREN_FLAG | TransactionBatchPurgedChildrenFlag | — |
+| REQUEST_ID | TransactionBatchRequestId | — |
+| SELECTION_CRITERIA_ID | TransactionBatchSelectionCriteriaId | — |
+| SET_OF_BOOKS_ID | TransactionBatchSetOfBooksId | — |
+| SPECIAL_INSTRUCTIONS | TransactionBatchSpecialInstructions | — |
+| STATUS | TransactionBatchBatchStatus | — |
+| STATUS | TransactionBatchStatus | ✅ |
+| TYPE | TransactionBatchBatchType | — |
+| TYPE | TransactionBatchType | — |
+
+### [[transactionhistorypvo|TransactionHistoryPVO]] (AR · BICC: 4/39)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BATCH_DATE | TransactionBatchBatchDate | — |
+| BATCH_ID | TransactionBatchBatchBatchId | — |
+| BATCH_ID | TransactionBatchBatchId | ✅ |
+| BATCH_PROCESS_STATUS | TransactionBatchBatchBatchProcessStatus | — |
+| BATCH_PROCESS_STATUS | TransactionBatchBatchProcessStatus | — |
+| BATCH_SOURCE_ID | TransactionBatchBatchSourceId | — |
+| BATCH_SOURCE_SEQ_ID | TransactionBatchBatchSourceSeqId | — |
+| COMMENTS | TransactionBatchComments | — |
+| CONTROL_AMOUNT | TransactionBatchControlAmount | — |
+| CONTROL_COUNT | TransactionBatchControlCount | — |
+| CREATED_BY | TransactionBatchCreatedBy | — |
+| CREATION_DATE | TransactionBatchCreationDate | — |
+| CURRENCY_CODE | TransactionBatchBatchCurrencyCode | — |
+| CURRENCY_CODE | TransactionBatchCurrencyCode | — |
+| EXCHANGE_DATE | TransactionBatchExchangeDate | — |
+| EXCHANGE_RATE | TransactionBatchExchangeRate | — |
+| EXCHANGE_RATE_TYPE | TransactionBatchExchangeRateType | — |
+| GL_DATE | TransactionBatchGlDate | — |
+| ISSUE_DATE | TransactionBatchIssueDate | — |
+| LAST_UPDATE_DATE | TransactionBatchLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | TransactionBatchLastUpdateLogin | — |
+| LAST_UPDATED_BY | TransactionBatchLastUpdatedBy | — |
+| MATURITY_DATE | TransactionBatchMaturityDate | — |
+| NAME | TransactionBatchBatchName | — |
+| NAME | TransactionBatchName | ✅ |
+| OBJECT_VERSION_NUMBER | TransactionBatchObjectVersionNumber | — |
+| ORG_ID | TransactionBatchOrgId | — |
+| PROGRAM_APPLICATION_ID | TransactionBatchProgramApplicationId | — |
+| PROGRAM_ID | TransactionBatchProgramId | — |
+| PROGRAM_UPDATE_DATE | TransactionBatchProgramUpdateDate | — |
+| PURGED_CHILDREN_FLAG | TransactionBatchPurgedChildrenFlag | — |
+| REQUEST_ID | TransactionBatchRequestId | — |
+| SELECTION_CRITERIA_ID | TransactionBatchSelectionCriteriaId | — |
+| SET_OF_BOOKS_ID | TransactionBatchSetOfBooksId | — |
+| SPECIAL_INSTRUCTIONS | TransactionBatchSpecialInstructions | — |
+| STATUS | TransactionBatchBatchStatus | — |
+| STATUS | TransactionBatchStatus | ✅ |
+| TYPE | TransactionBatchBatchType | — |
+| TYPE | TransactionBatchType | — |
+
+### [[transactionlinebillsreceivablepvo|TransactionLineBillsReceivablePVO]] (AR · BICC: 1/33)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BATCH_DATE | TransactionBatchBatchDate | — |
+| BATCH_ID | TransactionBatchBatchId | — |
+| BATCH_PROCESS_STATUS | TransactionBatchBatchProcessStatus | — |
+| BATCH_SOURCE_ID | TransactionBatchBatchSourceId | — |
+| BATCH_SOURCE_SEQ_ID | TransactionBatchBatchSourceSeqId | — |
+| COMMENTS | TransactionBatchComments | — |
+| CONTROL_AMOUNT | TransactionBatchControlAmount | — |
+| CONTROL_COUNT | TransactionBatchControlCount | — |
+| CREATED_BY | TransactionBatchCreatedBy | — |
+| CREATION_DATE | TransactionBatchCreationDate | — |
+| CURRENCY_CODE | TransactionBatchCurrencyCode | — |
+| EXCHANGE_DATE | TransactionBatchExchangeDate | — |
+| EXCHANGE_RATE | TransactionBatchExchangeRate | — |
+| EXCHANGE_RATE_TYPE | TransactionBatchExchangeRateType | — |
+| GL_DATE | TransactionBatchGlDate | — |
+| ISSUE_DATE | TransactionBatchIssueDate | — |
+| LAST_UPDATE_DATE | TransactionBatchLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | TransactionBatchLastUpdateLogin | — |
+| LAST_UPDATED_BY | TransactionBatchLastUpdatedBy | — |
+| MATURITY_DATE | TransactionBatchMaturityDate | — |
+| NAME | TransactionBatchName | — |
+| OBJECT_VERSION_NUMBER | TransactionBatchObjectVersionNumber | — |
+| ORG_ID | TransactionBatchOrgId | — |
+| PROGRAM_APPLICATION_ID | TransactionBatchProgramApplicationId | — |
+| PROGRAM_ID | TransactionBatchProgramId | — |
+| PROGRAM_UPDATE_DATE | TransactionBatchProgramUpdateDate | — |
+| PURGED_CHILDREN_FLAG | TransactionBatchPurgedChildrenFlag | — |
+| REQUEST_ID | TransactionBatchRequestId | — |
+| SELECTION_CRITERIA_ID | TransactionBatchSelectionCriteriaId | — |
+| SET_OF_BOOKS_ID | TransactionBatchSetOfBooksId | — |
+| SPECIAL_INSTRUCTIONS | TransactionBatchSpecialInstructions | — |
+| STATUS | TransactionBatchStatus | — |
+| TYPE | TransactionBatchType | — |
+
+### [[transactionlinedistributionpvo|TransactionLineDistributionPVO]] (AR · BICC: 1/33)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BATCH_DATE | TransactionBatchBatchDate | — |
+| BATCH_ID | TransactionBatchBatchId | — |
+| BATCH_PROCESS_STATUS | TransactionBatchBatchProcessStatus | — |
+| BATCH_SOURCE_ID | TransactionBatchBatchSourceId | — |
+| BATCH_SOURCE_SEQ_ID | TransactionBatchBatchSourceSeqId | — |
+| COMMENTS | TransactionBatchComments | — |
+| CONTROL_AMOUNT | TransactionBatchControlAmount | — |
+| CONTROL_COUNT | TransactionBatchControlCount | — |
+| CREATED_BY | TransactionBatchCreatedBy | — |
+| CREATION_DATE | TransactionBatchCreationDate | — |
+| CURRENCY_CODE | TransactionBatchCurrencyCode | — |
+| EXCHANGE_DATE | TransactionBatchExchangeDate | — |
+| EXCHANGE_RATE | TransactionBatchExchangeRate | — |
+| EXCHANGE_RATE_TYPE | TransactionBatchExchangeRateType | — |
+| GL_DATE | TransactionBatchGlDate | — |
+| ISSUE_DATE | TransactionBatchIssueDate | — |
+| LAST_UPDATE_DATE | TransactionBatchLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | TransactionBatchLastUpdateLogin | — |
+| LAST_UPDATED_BY | TransactionBatchLastUpdatedBy | — |
+| MATURITY_DATE | TransactionBatchMaturityDate | — |
+| NAME | TransactionBatchName | — |
+| OBJECT_VERSION_NUMBER | TransactionBatchObjectVersionNumber | — |
+| ORG_ID | TransactionBatchOrgId | — |
+| PROGRAM_APPLICATION_ID | TransactionBatchProgramApplicationId | — |
+| PROGRAM_ID | TransactionBatchProgramId | — |
+| PROGRAM_UPDATE_DATE | TransactionBatchProgramUpdateDate | — |
+| PURGED_CHILDREN_FLAG | TransactionBatchPurgedChildrenFlag | — |
+| REQUEST_ID | TransactionBatchRequestId | — |
+| SELECTION_CRITERIA_ID | TransactionBatchSelectionCriteriaId | — |
+| SET_OF_BOOKS_ID | TransactionBatchSetOfBooksId | — |
+| SPECIAL_INSTRUCTIONS | TransactionBatchSpecialInstructions | — |
+| STATUS | TransactionBatchStatus | — |
+| TYPE | TransactionBatchType | — |
+
+### [[transactionlinepvo|TransactionLinePVO]] (AR · BICC: 1/33)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BATCH_DATE | TransactionBatchBatchDate | — |
+| BATCH_ID | TransactionBatchBatchId | — |
+| BATCH_PROCESS_STATUS | TransactionBatchBatchProcessStatus | — |
+| BATCH_SOURCE_ID | TransactionBatchBatchSourceId | — |
+| BATCH_SOURCE_SEQ_ID | TransactionBatchBatchSourceSeqId | — |
+| COMMENTS | TransactionBatchComments | — |
+| CONTROL_AMOUNT | TransactionBatchControlAmount | — |
+| CONTROL_COUNT | TransactionBatchControlCount | — |
+| CREATED_BY | TransactionBatchCreatedBy | — |
+| CREATION_DATE | TransactionBatchCreationDate | — |
+| CURRENCY_CODE | TransactionBatchCurrencyCode | — |
+| EXCHANGE_DATE | TransactionBatchExchangeDate | — |
+| EXCHANGE_RATE | TransactionBatchExchangeRate | — |
+| EXCHANGE_RATE_TYPE | TransactionBatchExchangeRateType | — |
+| GL_DATE | TransactionBatchGlDate | — |
+| ISSUE_DATE | TransactionBatchIssueDate | — |
+| LAST_UPDATE_DATE | TransactionBatchLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | TransactionBatchLastUpdateLogin | — |
+| LAST_UPDATED_BY | TransactionBatchLastUpdatedBy | — |
+| MATURITY_DATE | TransactionBatchMaturityDate | — |
+| NAME | TransactionBatchName | — |
+| OBJECT_VERSION_NUMBER | TransactionBatchObjectVersionNumber | — |
+| ORG_ID | TransactionBatchOrgId | — |
+| PROGRAM_APPLICATION_ID | TransactionBatchProgramApplicationId | — |
+| PROGRAM_ID | TransactionBatchProgramId | — |
+| PROGRAM_UPDATE_DATE | TransactionBatchProgramUpdateDate | — |
+| PURGED_CHILDREN_FLAG | TransactionBatchPurgedChildrenFlag | — |
+| REQUEST_ID | TransactionBatchRequestId | — |
+| SELECTION_CRITERIA_ID | TransactionBatchSelectionCriteriaId | — |
+| SET_OF_BOOKS_ID | TransactionBatchSetOfBooksId | — |
+| SPECIAL_INSTRUCTIONS | TransactionBatchSpecialInstructions | — |
+| STATUS | TransactionBatchStatus | — |
+| TYPE | TransactionBatchType | — |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — RA_BATCHES_ALL](https://docs.oracle.com/en/cloud/saas/financials/25a/oedmf/rabatchesall-24880.html)

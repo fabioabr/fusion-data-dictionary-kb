@@ -113,6 +113,29 @@ WHERE  SYSDATE BETWEEN ar.EFFECTIVE_START_DATE AND ar.EFFECTIVE_END_DATE
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[absencereasonpvo|AbsenceReasonPVO]] (GL · BICC: 11/14)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ABSENCE_REASON_ID | AbsenceReasonId | ✅ |
+| ANC_ABS_REASONS_F_ALTCD | AncAbsReasonsFAltcd | — |
+| CREATED_BY | CreatedBy | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| EFFECTIVE_END_DATE | EffectiveEndDate | ✅ |
+| EFFECTIVE_START_DATE | EffectiveStartDate | ✅ |
+| ENTERPRISE_ID | EnterpriseId | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | — |
+| LAST_UPDATED_BY | LastUpdatedBy | ✅ |
+| LEGISLATION_CODE | LegislationCode | ✅ |
+| MODULE_ID | ModuleId | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | — |
+| STATUS | Status | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — ANC_ABSENCE_REASONS_F](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/ancabsencereasonsf.html)

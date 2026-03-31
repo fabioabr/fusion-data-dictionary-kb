@@ -115,6 +115,217 @@ WHERE  p.PERSON_ID = :p_person_id;
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[hnsincidentactionapproverpvo|HNSIncidentActionApproverPVO]] (HCM · BICC: 17/18)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_REQUIRED_FLAG | HNSPersonsPEOActionReqFlag | ✅ |
+| ACTUAL_COMPLETION_DATE | HNSPersonsPEOActualCompletionDate | ✅ |
+| COMPLETED_FLAG | HNSPersonsPEOCompletedFlag | ✅ |
+| CREATED_BY | HNSPersonsPEOCreatedBy | ✅ |
+| CREATION_DATE | HNSPersonsPEOCreationDate | ✅ |
+| DELETED_FLAG | HNSPersonsPEODeletedFlag | ✅ |
+| EMPLOYEE_ID | HNSPersonsPEOEmployeeId | ✅ |
+| LAST_UPDATE_DATE | HNSPersonsPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | HNSPersonsPEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | HNSPersonsPEOLastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | HNSPersonsPEOObjectVersionNumber | ✅ |
+| PERSON_ASSIGN_ID | HNSPersonsPEOPerAssignId | — |
+| PERSON_ID | HNSPersonsPEOPersonId | ✅ |
+| RESULT_CODE | HNSPersonsPEOResultCode | ✅ |
+| ROLE_CODE | HNSPersonsPEORoleCode | ✅ |
+| TARGET_COMPLETION_DATE | HNSPersonsPEOTargetCompletionDate | ✅ |
+| TASK_ID | HNSPersonsPEOTaskId | ✅ |
+| TASK_TYPE_CODE | HNSPersonsPEOTaskTypeCode | ✅ |
+
+### [[hnsincidentactionownerpvo|HNSIncidentActionOwnerPVO]] (HCM · BICC: 17/18)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_REQUIRED_FLAG | HNSPersonsPEOActionReqFlag | ✅ |
+| ACTUAL_COMPLETION_DATE | HNSPersonsPEOActualCompletionDate | ✅ |
+| COMPLETED_FLAG | HNSPersonsPEOCompletedFlag | ✅ |
+| CREATED_BY | HNSPersonsPEOCreatedBy | ✅ |
+| CREATION_DATE | HNSPersonsPEOCreationDate | ✅ |
+| DELETED_FLAG | HNSPersonsPEODeletedFlag | ✅ |
+| EMPLOYEE_ID | HNSPersonsPEOEmployeeId | ✅ |
+| LAST_UPDATE_DATE | HNSPersonsPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | HNSPersonsPEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | HNSPersonsPEOLastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | HNSPersonsPEOObjectVersionNumber | ✅ |
+| PERSON_ASSIGN_ID | HNSPersonsPEOPerAssignId | — |
+| PERSON_ID | HNSPersonsPEOPersonId | ✅ |
+| RESULT_CODE | HNSPersonsPEOResultCode | ✅ |
+| ROLE_CODE | HNSPersonsPEORoleCode | ✅ |
+| TARGET_COMPLETION_DATE | HNSPersonsPEOTargetCompletionDate | ✅ |
+| TASK_ID | HNSPersonsPEOTaskId | ✅ |
+| TASK_TYPE_CODE | HNSPersonsPEOTaskTypeCode | ✅ |
+
+### [[hnsincidentactionpreapproverpvo|HNSIncidentActionPreApproverPVO]] (HCM · BICC: 17/18)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_REQUIRED_FLAG | HNSPersonsPEOActionReqFlag | ✅ |
+| ACTUAL_COMPLETION_DATE | HNSPersonsPEOActualCompletionDate | ✅ |
+| COMPLETED_FLAG | HNSPersonsPEOCompletedFlag | ✅ |
+| CREATED_BY | HNSPersonsPEOCreatedBy | ✅ |
+| CREATION_DATE | HNSPersonsPEOCreationDate | ✅ |
+| DELETED_FLAG | HNSPersonsPEODeletedFlag | ✅ |
+| EMPLOYEE_ID | HNSPersonsPEOEmployeeId | ✅ |
+| LAST_UPDATE_DATE | HNSPersonsPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | HNSPersonsPEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | HNSPersonsPEOLastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | HNSPersonsPEOObjectVersionNumber | ✅ |
+| PERSON_ASSIGN_ID | HNSPersonsPEOPerAssignId | — |
+| PERSON_ID | HNSPersonsPEOPersonId | ✅ |
+| RESULT_CODE | HNSPersonsPEOResultCode | ✅ |
+| ROLE_CODE | HNSPersonsPEORoleCode | ✅ |
+| TARGET_COMPLETION_DATE | HNSPersonsPEOTargetCompletionDate | ✅ |
+| TASK_ID | HNSPersonsPEOTaskId | ✅ |
+| TASK_TYPE_CODE | HNSPersonsPEOTaskTypeCode | ✅ |
+
+### [[hnsincidentactionreviewerpvo|HNSIncidentActionReviewerPVO]] (HCM · BICC: 17/18)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_REQUIRED_FLAG | HNSPersonsPEOActionReqFlag | ✅ |
+| ACTUAL_COMPLETION_DATE | HNSPersonsPEOActualCompletionDate | ✅ |
+| COMPLETED_FLAG | HNSPersonsPEOCompletedFlag | ✅ |
+| CREATED_BY | HNSPersonsPEOCreatedBy | ✅ |
+| CREATION_DATE | HNSPersonsPEOCreationDate | ✅ |
+| DELETED_FLAG | HNSPersonsPEODeletedFlag | ✅ |
+| EMPLOYEE_ID | HNSPersonsPEOEmployeeId | ✅ |
+| LAST_UPDATE_DATE | HNSPersonsPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | HNSPersonsPEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | HNSPersonsPEOLastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | HNSPersonsPEOObjectVersionNumber | ✅ |
+| PERSON_ASSIGN_ID | HNSPersonsPEOPerAssignId | — |
+| PERSON_ID | HNSPersonsPEOPersonId | ✅ |
+| RESULT_CODE | HNSPersonsPEOResultCode | ✅ |
+| ROLE_CODE | HNSPersonsPEORoleCode | ✅ |
+| TARGET_COMPLETION_DATE | HNSPersonsPEOTargetCompletionDate | ✅ |
+| TASK_ID | HNSPersonsPEOTaskId | ✅ |
+| TASK_TYPE_CODE | HNSPersonsPEOTaskTypeCode | ✅ |
+
+### [[hnsincidentinvestapproverpvo|HNSIncidentInvestApproverPVO]] (HCM · BICC: 17/18)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_REQUIRED_FLAG | HNSPersonsPEOActionReqFlag | ✅ |
+| ACTUAL_COMPLETION_DATE | HNSPersonsPEOActualCompletionDate | ✅ |
+| COMPLETED_FLAG | HNSPersonsPEOCompletedFlag | ✅ |
+| CREATED_BY | HNSPersonsPEOCreatedBy | ✅ |
+| CREATION_DATE | HNSPersonsPEOCreationDate | ✅ |
+| DELETED_FLAG | HNSPersonsPEODeletedFlag | ✅ |
+| EMPLOYEE_ID | HNSPersonsPEOEmployeeId | ✅ |
+| LAST_UPDATE_DATE | HNSPersonsPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | HNSPersonsPEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | HNSPersonsPEOLastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | HNSPersonsPEOObjectVersionNumber | ✅ |
+| PERSON_ASSIGN_ID | HNSPersonsPEOPerAssignId | — |
+| PERSON_ID | HNSPersonsPEOPersonId | ✅ |
+| RESULT_CODE | HNSPersonsPEOResultCode | ✅ |
+| ROLE_CODE | HNSPersonsPEORoleCode | ✅ |
+| TARGET_COMPLETION_DATE | HNSPersonsPEOTargetCompletionDate | ✅ |
+| TASK_ID | HNSPersonsPEOTaskId | ✅ |
+| TASK_TYPE_CODE | HNSPersonsPEOTaskTypeCode | ✅ |
+
+### [[hnsincidentinvestownerpvo|HNSIncidentInvestOwnerPVO]] (HCM · BICC: 17/18)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_REQUIRED_FLAG | HNSPersonsPEOActionReqFlag | ✅ |
+| ACTUAL_COMPLETION_DATE | HNSPersonsPEOActualCompletionDate | ✅ |
+| COMPLETED_FLAG | HNSPersonsPEOCompletedFlag | ✅ |
+| CREATED_BY | HNSPersonsPEOCreatedBy | ✅ |
+| CREATION_DATE | HNSPersonsPEOCreationDate | ✅ |
+| DELETED_FLAG | HNSPersonsPEODeletedFlag | ✅ |
+| EMPLOYEE_ID | HNSPersonsPEOEmployeeId | ✅ |
+| LAST_UPDATE_DATE | HNSPersonsPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | HNSPersonsPEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | HNSPersonsPEOLastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | HNSPersonsPEOObjectVersionNumber | ✅ |
+| PERSON_ASSIGN_ID | HNSPersonsPEOPerAssignId | — |
+| PERSON_ID | HNSPersonsPEOPersonId | ✅ |
+| RESULT_CODE | HNSPersonsPEOResultCode | ✅ |
+| ROLE_CODE | HNSPersonsPEORoleCode | ✅ |
+| TARGET_COMPLETION_DATE | HNSPersonsPEOTargetCompletionDate | ✅ |
+| TASK_ID | HNSPersonsPEOTaskId | ✅ |
+| TASK_TYPE_CODE | HNSPersonsPEOTaskTypeCode | ✅ |
+
+### [[hnsincidentinvestpreapproverpvo|HNSIncidentInvestPreApproverPVO]] (HCM · BICC: 17/18)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_REQUIRED_FLAG | HNSPersonsPEOActionReqFlag | ✅ |
+| ACTUAL_COMPLETION_DATE | HNSPersonsPEOActualCompletionDate | ✅ |
+| COMPLETED_FLAG | HNSPersonsPEOCompletedFlag | ✅ |
+| CREATED_BY | HNSPersonsPEOCreatedBy | ✅ |
+| CREATION_DATE | HNSPersonsPEOCreationDate | ✅ |
+| DELETED_FLAG | HNSPersonsPEODeletedFlag | ✅ |
+| EMPLOYEE_ID | HNSPersonsPEOEmployeeId | ✅ |
+| LAST_UPDATE_DATE | HNSPersonsPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | HNSPersonsPEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | HNSPersonsPEOLastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | HNSPersonsPEOObjectVersionNumber | ✅ |
+| PERSON_ASSIGN_ID | HNSPersonsPEOPerAssignId | — |
+| PERSON_ID | HNSPersonsPEOPersonId | ✅ |
+| RESULT_CODE | HNSPersonsPEOResultCode | ✅ |
+| ROLE_CODE | HNSPersonsPEORoleCode | ✅ |
+| TARGET_COMPLETION_DATE | HNSPersonsPEOTargetCompletionDate | ✅ |
+| TASK_ID | HNSPersonsPEOTaskId | ✅ |
+| TASK_TYPE_CODE | HNSPersonsPEOTaskTypeCode | ✅ |
+
+### [[hnsincidentinvestreviewerpvo|HNSIncidentInvestReviewerPVO]] (HCM · BICC: 17/18)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_REQUIRED_FLAG | HNSPersonsPEOActionReqFlag | ✅ |
+| ACTUAL_COMPLETION_DATE | HNSPersonsPEOActualCompletionDate | ✅ |
+| COMPLETED_FLAG | HNSPersonsPEOCompletedFlag | ✅ |
+| CREATED_BY | HNSPersonsPEOCreatedBy | ✅ |
+| CREATION_DATE | HNSPersonsPEOCreationDate | ✅ |
+| DELETED_FLAG | HNSPersonsPEODeletedFlag | ✅ |
+| EMPLOYEE_ID | HNSPersonsPEOEmployeeId | ✅ |
+| LAST_UPDATE_DATE | HNSPersonsPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | HNSPersonsPEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | HNSPersonsPEOLastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | HNSPersonsPEOObjectVersionNumber | ✅ |
+| PERSON_ASSIGN_ID | HNSPersonsPEOPerAssignId | — |
+| PERSON_ID | HNSPersonsPEOPersonId | ✅ |
+| RESULT_CODE | HNSPersonsPEOResultCode | ✅ |
+| ROLE_CODE | HNSPersonsPEORoleCode | ✅ |
+| TARGET_COMPLETION_DATE | HNSPersonsPEOTargetCompletionDate | ✅ |
+| TASK_ID | HNSPersonsPEOTaskId | ✅ |
+| TASK_TYPE_CODE | HNSPersonsPEOTaskTypeCode | ✅ |
+
+### [[hnspersonspvo|HNSPersonsPVO]] (HCM · BICC: 17/18)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_REQUIRED_FLAG | HNSPersonsPEOActionReqFlag | ✅ |
+| ACTUAL_COMPLETION_DATE | HNSPersonsPEOActualCompletionDate | ✅ |
+| COMPLETED_FLAG | HNSPersonsPEOCompletedFlag | ✅ |
+| CREATED_BY | HNSPersonsPEOCreatedBy | ✅ |
+| CREATION_DATE | HNSPersonsPEOCreationDate | ✅ |
+| DELETED_FLAG | HNSPersonsPEODeletedFlag | ✅ |
+| EMPLOYEE_ID | HNSPersonsPEOEmployeeId | ✅ |
+| LAST_UPDATE_DATE | HNSPersonsPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | HNSPersonsPEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | HNSPersonsPEOLastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | HNSPersonsPEOObjectVersionNumber | ✅ |
+| PERSON_ASSIGN_ID | HNSPersonsPEOPerAssignId | — |
+| PERSON_ID | HNSPersonsPEOPersonId | ✅ |
+| RESULT_CODE | HNSPersonsPEOResultCode | ✅ |
+| ROLE_CODE | HNSPersonsPEORoleCode | ✅ |
+| TARGET_COMPLETION_DATE | HNSPersonsPEOTargetCompletionDate | ✅ |
+| TASK_ID | HNSPersonsPEOTaskId | ✅ |
+| TASK_TYPE_CODE | HNSPersonsPEOTaskTypeCode | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — HNS_PERSONS](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/hnspersons.html)

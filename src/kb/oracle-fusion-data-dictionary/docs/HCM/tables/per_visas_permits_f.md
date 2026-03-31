@@ -120,3 +120,97 @@ WHERE  vp.EXPIRATION_DATE BETWEEN SYSDATE AND SYSDATE + 90
 
 - [Oracle Docs — PER_VISAS_PERMITS_F](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/pervisaspermitsf.html)
 - [[hcm-module-data-dictionary]] — Dossiê do módulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[contactvisapermitpvo|ContactVisaPermitPVO]] (HCM · BICC: 22/25)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | VisaPermitPEOBusinessGroupId | — |
+| CREATED_BY | VisaPermitPEOCreatedBy | ✅ |
+| CREATION_DATE | VisaPermitPEOCreationDate | ✅ |
+| CURRENT_VISA_PERMIT | VisaPermitPEOCurrentVisaPermit | ✅ |
+| EFFECTIVE_END_DATE | EffectiveEndDate | ✅ |
+| EFFECTIVE_START_DATE | EffectiveStartDate | ✅ |
+| ENTRY_DATE | VisaPermitPEOEntryDate | ✅ |
+| EXPIRATION_DATE | VisaPermitPEOExpirationDate | ✅ |
+| ISSUE_DATE | VisaPermitPEOIssueDate | ✅ |
+| ISSUING_AUTHORITY | VisaPermitPEOIssuingAuthority | ✅ |
+| ISSUING_COUNTRY | VisaPermitPEOIssuingCountry | ✅ |
+| ISSUING_LOCATION | IssuingLocation | ✅ |
+| LAST_UPDATE_DATE | VisaPermitPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | VisaPermitPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | VisaPermitPEOLastUpdatedBy | ✅ |
+| LEGISLATION_CODE | VisaPermitPEOLegislationCode | ✅ |
+| OBJECT_VERSION_NUMBER | VisaPermitPEOObjectVersionNumber | — |
+| PERSON_ID | VisaPermitPEOPersonId | ✅ |
+| PROFESSION | VisaPermitPEOProfession | ✅ |
+| VISA_PERMIT_CATEGORY | VisaPermitPEOVisaPermitCategory | ✅ |
+| VISA_PERMIT_ID | VisaPermitId | ✅ |
+| VISA_PERMIT_NUMBER | VisaPermitPEOVisaPermitNumber | ✅ |
+| VISA_PERMIT_STATUS | VisaPermitPEOVisaPermitStatus | ✅ |
+| VISA_PERMIT_STATUS_DATE | VisaPermitPEOVisaPermitStatusDate | ✅ |
+| VISA_PERMIT_TYPE | VisaPermitPEOVisaPermitType | ✅ |
+
+### [[visapermitpvo|VisaPermitPVO]] (HCM · BICC: 25/25)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | VisaPermitPEOBusinessGroupId | ✅ |
+| CREATED_BY | VisaPermitPEOCreatedBy | ✅ |
+| CREATION_DATE | VisaPermitPEOCreationDate | ✅ |
+| CURRENT_VISA_PERMIT | VisaPermitPEOCurrentVisaPermit | ✅ |
+| EFFECTIVE_END_DATE | EffectiveEndDate | ✅ |
+| EFFECTIVE_START_DATE | EffectiveStartDate | ✅ |
+| ENTRY_DATE | VisaPermitPEOEntryDate | ✅ |
+| EXPIRATION_DATE | VisaPermitPEOExpirationDate | ✅ |
+| ISSUE_DATE | VisaPermitPEOIssueDate | ✅ |
+| ISSUING_AUTHORITY | VisaPermitPEOIssuingAuthority | ✅ |
+| ISSUING_COUNTRY | VisaPermitPEOIssuingCountry | ✅ |
+| ISSUING_LOCATION | IssuingLocation | ✅ |
+| LAST_UPDATE_DATE | VisaPermitPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | VisaPermitPEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | VisaPermitPEOLastUpdatedBy | ✅ |
+| LEGISLATION_CODE | VisaPermitPEOLegislationCode | ✅ |
+| OBJECT_VERSION_NUMBER | VisaPermitPEOObjectVersionNumber | ✅ |
+| PERSON_ID | VisaPermitPEOPersonId | ✅ |
+| PROFESSION | VisaPermitPEOProfession | ✅ |
+| VISA_PERMIT_CATEGORY | VisaPermitPEOVisaPermitCategory | ✅ |
+| VISA_PERMIT_ID | VisaPermitId | ✅ |
+| VISA_PERMIT_NUMBER | VisaPermitPEOVisaPermitNumber | ✅ |
+| VISA_PERMIT_STATUS | VisaPermitPEOVisaPermitStatus | ✅ |
+| VISA_PERMIT_STATUS_DATE | VisaPermitPEOVisaPermitStatusDate | ✅ |
+| VISA_PERMIT_TYPE | VisaPermitPEOVisaPermitType | ✅ |
+
+### [[visapermitpvoviewall|VisaPermitPVOViewAll]] (HCM · BICC: 22/25)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | VisaPermitPEOBusinessGroupId | — |
+| CREATED_BY | VisaPermitPEOCreatedBy | ✅ |
+| CREATION_DATE | VisaPermitPEOCreationDate | ✅ |
+| CURRENT_VISA_PERMIT | VisaPermitPEOCurrentVisaPermit | ✅ |
+| EFFECTIVE_END_DATE | EffectiveEndDate | ✅ |
+| EFFECTIVE_START_DATE | EffectiveStartDate | ✅ |
+| ENTRY_DATE | VisaPermitPEOEntryDate | ✅ |
+| EXPIRATION_DATE | VisaPermitPEOExpirationDate | ✅ |
+| ISSUE_DATE | VisaPermitPEOIssueDate | ✅ |
+| ISSUING_AUTHORITY | VisaPermitPEOIssuingAuthority | ✅ |
+| ISSUING_COUNTRY | VisaPermitPEOIssuingCountry | ✅ |
+| ISSUING_LOCATION | IssuingLocation | ✅ |
+| LAST_UPDATE_DATE | VisaPermitPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | VisaPermitPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | VisaPermitPEOLastUpdatedBy | ✅ |
+| LEGISLATION_CODE | VisaPermitPEOLegislationCode | ✅ |
+| OBJECT_VERSION_NUMBER | VisaPermitPEOObjectVersionNumber | — |
+| PERSON_ID | VisaPermitPEOPersonId | ✅ |
+| PROFESSION | VisaPermitPEOProfession | ✅ |
+| VISA_PERMIT_CATEGORY | VisaPermitPEOVisaPermitCategory | ✅ |
+| VISA_PERMIT_ID | VisaPermitId | ✅ |
+| VISA_PERMIT_NUMBER | VisaPermitPEOVisaPermitNumber | ✅ |
+| VISA_PERMIT_STATUS | VisaPermitPEOVisaPermitStatus | ✅ |
+| VISA_PERMIT_STATUS_DATE | VisaPermitPEOVisaPermitStatusDate | ✅ |
+| VISA_PERMIT_TYPE | VisaPermitPEOVisaPermitType | ✅ |

@@ -114,6 +114,18 @@ WHERE  tl.LANGUAGE = USERENV('LANG');
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[userrowdpvo|UserRowDPVO]] (GL · BICC: 3/3)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| LANGUAGE | Language | ✅ |
+| ROW_NAME | UserRowTranslationDPEOUserRowName | ✅ |
+| USER_ROW_ID | UserRowId | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — FF_USER_ROWS_TL](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/ffuserrowstl.html)

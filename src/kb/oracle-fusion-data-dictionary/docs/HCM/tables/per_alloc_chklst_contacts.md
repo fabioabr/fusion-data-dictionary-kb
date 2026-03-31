@@ -104,6 +104,50 @@ WHERE  pcc.ALLOCATED_CHECKLIST_ID = :p_checklist_id
 - Os contatos são específicos por instância de checklist, não pelo template.
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[allocatedchecklistspvo|AllocatedChecklistsPVO]] (HCM · BICC: 5/15)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ADHOC_USER_GUID | AllocatedChecklistContactsPEAdhocUserGuid | ✅ |
+| ALLOC_CHKLST_CONTACT_ID | AllocatedChecklistContactsPEAllocChklstContactId | — |
+| ALLOCATED_CHECKLIST_ID | AllocatedChecklistContactsPEAllocatedChecklistId | — |
+| CHECKLIST_CONTACT_ID | AllocatedChecklistContactsPEChecklistContactId | — |
+| CONTACT_TITLE_CODE | AllocatedChecklistContactsPEContactTitleCode | ✅ |
+| CONTACT_TYPE | AllocatedChecklistContactsPEContactType | ✅ |
+| CREATED_BY | AllocatedChecklistContactsPECreatedBy | — |
+| CREATION_DATE | AllocatedChecklistContactsPECreationDate | — |
+| CUSTOM_CONTACT | AllocatedChecklistContactsPECustomContact | ✅ |
+| ENTERPRISE_ID | AllocatedChecklistContactsPEEnterpriseId | — |
+| LAST_UPDATE_DATE | AllocatedChecklistContactsPELastUpdateDate | — |
+| LAST_UPDATE_LOGIN | AllocatedChecklistContactsPELastUpdateLogin | — |
+| LAST_UPDATED_BY | AllocatedChecklistContactsPELastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | AllocatedChecklistContactsPEObjectVersionNumber | — |
+| RESPONSIBILITY_TYPE | AllocatedChecklistContactsPEResponsibilityType | ✅ |
+
+### [[allocatedchecklisttaskspvo|AllocatedChecklistTasksPVO]] (HCM · BICC: 5/15)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ADHOC_USER_GUID | AllocatedChecklistContactsPEAdhocUserGuid | ✅ |
+| ALLOC_CHKLST_CONTACT_ID | AllocatedChecklistContactsPEAllocChklstContactId | — |
+| ALLOCATED_CHECKLIST_ID | AllocatedChecklistContactsPEAllocatedChecklistId | — |
+| CHECKLIST_CONTACT_ID | AllocatedChecklistContactsPEChecklistContactId | — |
+| CONTACT_TITLE_CODE | AllocatedChecklistContactsPEContactTitleCode | ✅ |
+| CONTACT_TYPE | AllocatedChecklistContactsPEContactType | ✅ |
+| CREATED_BY | AllocatedChecklistContactsPECreatedBy | — |
+| CREATION_DATE | AllocatedChecklistContactsPECreationDate | — |
+| CUSTOM_CONTACT | AllocatedChecklistContactsPECustomContact | ✅ |
+| ENTERPRISE_ID | AllocatedChecklistContactsPEEnterpriseId | — |
+| LAST_UPDATE_DATE | AllocatedChecklistContactsPELastUpdateDate | — |
+| LAST_UPDATE_LOGIN | AllocatedChecklistContactsPELastUpdateLogin | — |
+| LAST_UPDATED_BY | AllocatedChecklistContactsPELastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | AllocatedChecklistContactsPEObjectVersionNumber | — |
+| RESPONSIBILITY_TYPE | AllocatedChecklistContactsPEResponsibilityType | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — PER_ALLOC_CHKLST_CONTACTS](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/perallocchklstcontacts.html)

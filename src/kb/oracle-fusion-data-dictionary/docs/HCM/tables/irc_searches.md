@@ -101,6 +101,44 @@ ORDER BY s.CREATION_DATE DESC;
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[searchpvo|SearchPVO]] (PO · BICC: 3/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CANDIDATE_TRACKING_UPDATED | SearchPEOCandidateTrackingUpdated | — |
+| CREATED_BY | SearchPEOCreatedBy | — |
+| CREATION_DATE | SearchPEOCreationDate | ✅ |
+| DENORMALIZATION_COMPLETED | SearchPEODenormalizationCompleted | — |
+| LAST_UPDATE_DATE | SearchPEOLastUpdateDate | — |
+| LAST_UPDATE_LOGIN | SearchPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | SearchPEOLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | SearchPEOObjectVersionNumber | — |
+| OWNER_PERSON_ID | SearchPEOOwnerPersonId | ✅ |
+| SEARCH_ID | SearchId | ✅ |
+| SEARCH_QUERY | SearchPEOSearchQuery | — |
+| SEARCH_RESULT | SearchPEOSearchResult | — |
+
+### [[searchresultpvo|SearchResultPVO]] (PO · BICC: 3/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CANDIDATE_TRACKING_UPDATED | SearchPEOCandidateTrackingUpdated | — |
+| CREATED_BY | SearchPEOCreatedBy | — |
+| CREATION_DATE | SearchPEOCreationDate | ✅ |
+| DENORMALIZATION_COMPLETED | SearchPEODenormalizationCompleted | — |
+| LAST_UPDATE_DATE | SearchPEOLastUpdateDate | — |
+| LAST_UPDATE_LOGIN | SearchPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | SearchPEOLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | SearchPEOObjectVersionNumber | — |
+| OWNER_PERSON_ID | SearchPEOOwnerPersonId | ✅ |
+| SEARCH_ID | SearchId | ✅ |
+| SEARCH_QUERY | SearchPEOSearchQuery | — |
+| SEARCH_RESULT | SearchPEOSearchResult | — |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — IRC_SEARCHES](https://docs.oracle.com/en/cloud/saas/talent-management/25a/oedmf/ircsearches.html)

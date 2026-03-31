@@ -140,6 +140,62 @@ WHERE  aah.RESPONSE = 'REJECT'
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[invoiceapprovalhistoryextractpvo|InvoiceApprovalHistoryExtractPVO]] (OTHER · BICC: 19/19)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| AMOUNT_APPROVED | ApInvAprvlHistAllAmountApproved | ✅ |
+| APPROVAL_HISTORY_ID | ApInvAprvlHistAllApprovalHistoryId | ✅ |
+| APPROVER_COMMENTS | ApInvAprvlHistAllApproverComments | ✅ |
+| APPROVER_ID | ApInvAprvlHistAllApproverId | ✅ |
+| CREATED_BY | ApInvAprvlHistAllCreatedBy | ✅ |
+| CREATION_DATE | ApInvAprvlHistAllCreationDate | ✅ |
+| HISTORY_TYPE | ApInvAprvlHistAllHistoryType | ✅ |
+| HOLD_ID | ApInvAprvlHistAllHoldId | ✅ |
+| INVOICE_ID | ApInvAprvlHistAllInvoiceId | ✅ |
+| ITERATION | ApInvAprvlHistAllIteration | ✅ |
+| LAST_UPDATE_DATE | ApInvAprvlHistAllLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ApInvAprvlHistAllLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | ApInvAprvlHistAllLastUpdatedBy | ✅ |
+| LINE_NUMBER | ApInvAprvlHistAllLineNumber | ✅ |
+| NOTIFICATION_ORDER | ApInvAprvlHistAllNotificationOrder | ✅ |
+| OBJECT_VERSION_NUMBER | ApInvAprvlHistAllObjectVersionNumber | ✅ |
+| ORG_ID | ApInvAprvlHistAllOrgId | ✅ |
+| ORIG_SYSTEM | ApInvAprvlHistAllOrigSystem | ✅ |
+| RESPONSE | ApInvAprvlHistAllResponse | ✅ |
+
+### [[invoiceheaderpvo|InvoiceHeaderPVO]] (AP)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| AMOUNT_APPROVED | InvAprvlHistAllAmountApproved | — |
+| APPROVAL_HISTORY_ID | InvAprvlHistAllApprovalHistoryId | — |
+| APPROVER_ID | InvAprvlHistAllApproverId | — |
+| CREATION_DATE | InvAprvlHistAllCreationDate | — |
+| HISTORY_TYPE | InvAprvlHistAllHistoryType | — |
+| RESPONSE | InvAprvlHistAllResponse | — |
+
+### [[invoicelinepvo|InvoiceLinePVO]] (AP)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| AMOUNT_APPROVED | InvAprvlHistAllAmountApproved | — |
+| AMOUNT_APPROVED | InvLineAprvlHistAllAmountApproved | — |
+| APPROVAL_HISTORY_ID | InvAprvlHistAllApprovalHistoryId | — |
+| APPROVAL_HISTORY_ID | InvLineAprvlHistId | — |
+| APPROVER_ID | ApInvLineAprvlHistAllApproverId | — |
+| APPROVER_ID | InvAprvlHistAllApproverId | — |
+| CREATION_DATE | InvAprvlHistAllCreationDate | — |
+| CREATION_DATE | InvLineAprvlHistAllCreationDate | — |
+| HISTORY_TYPE | InvAprvlHistAllHistoryType | — |
+| HISTORY_TYPE | InvLineAprvlHistAllHistoryType | — |
+| RESPONSE | InvAprvlHistAllResponse | — |
+| RESPONSE | InvLineAprvlHistAllResponse | — |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — AP_INV_APRVL_HIST_ALL](https://docs.oracle.com/en/cloud/saas/financials/25a/oedmf/apinvaprvlhistall-25758.html)

@@ -148,6 +148,189 @@ WHERE  rr.SUPPLIER_ID = :p_supplier_id
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[qualarearepositoryresponsepvo|QualAreaRepositoryResponsePVO]] (PO · BICC: 31/31)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACCEPTANCE_DATE | ResponseRepositoryAcceptanceDate | ✅ |
+| ACCEPTANCE_NOTE | ResponseRepositoryAcceptanceNote | ✅ |
+| ACCEPTED_BY | ResponseRepositoryAcceptedBy | ✅ |
+| AGGREGATE_RESPONSE_FLAG | AggregateResponseFlag | ✅ |
+| BATCH_ID | ResponseRepositoryBatchId | ✅ |
+| CREATED_BY | ResponseRepositoryCreatedBy | ✅ |
+| CREATION_DATE | ResponseRepositoryCreationDate | ✅ |
+| DATA_SOURCE_ID | ResponseRepositoryDataSourceId | ✅ |
+| DATA_SOURCE_TYPE | ResponseRepositoryDataSourceType | ✅ |
+| FIRST_SUBMISSION_DATE | ResponseRepositoryFirstSubmissionDate | ✅ |
+| INTERNAL_RESPONDENT_ID | ResponseRepositoryInternalRespondentId | ✅ |
+| LAST_UPDATE_DATE | ResponseRepositoryLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ResponseRepositoryLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | ResponseRepositoryLastUpdatedBy | ✅ |
+| MERGE_REQUEST_ID | ResponseRepositoryMergeRequestId | ✅ |
+| OBJECT_VERSION_NUMBER | ResponseRepositoryObjectVersionNumber | ✅ |
+| ORIGINAL_QUESTION_ID | ResponseRepositoryOriginalQuestionId | ✅ |
+| QUESTION_ID | ResponseRepositoryQuestionId | ✅ |
+| REQUEST_ID | ResponseRepositoryRequestId | ✅ |
+| RESPONDER_TYPE | ResponseRepositoryResponderType | ✅ |
+| RESPONSE_ARCHIVE_DATE | ResponseRepositoryResponseArchiveDate | ✅ |
+| RESPONSE_COMMENTS | ResponseRepositoryResponseComments | ✅ |
+| RESPONSE_REPOSITORY_ID | ResponseRepositoryId | ✅ |
+| RESPONSE_STATUS | ResponseRepositoryResponseStatus | ✅ |
+| RESPONSE_SUBMISSION_DATE | ResponseRepositoryResponseSubmissionDate | ✅ |
+| SUPPLIER_CONTACT_PARTY_ID | ResponseRepositorySupplierContactPartyId | ✅ |
+| SUPPLIER_ID | ResponseRepositorySupplierId | ✅ |
+| SUPPLIER_SITE_ID | ResponseRepositorySupplierSiteId | ✅ |
+| SURROG_ENTERED_BY | ResponseRepositorySurrogEnteredBy | ✅ |
+| SURROG_ENTRY_DATE | ResponseRepositorySurrogEntryDate | ✅ |
+| SURROG_RESPONSE_FLAG | ResponseRepositorySurrogResponseFlag | ✅ |
+
+### [[qualificationresponsespvo|QualificationResponsesPVO]] (PO · BICC: 29/31)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACCEPTANCE_DATE | RespRepAcceptanceDate | ✅ |
+| ACCEPTANCE_NOTE | RespRepAcceptanceNote | ✅ |
+| ACCEPTED_BY | RespRepAcceptedBy | ✅ |
+| AGGREGATE_RESPONSE_FLAG | AggregateResponseFlag | — |
+| BATCH_ID | RespRepBatchId | ✅ |
+| CREATED_BY | RespRepCreatedBy | ✅ |
+| CREATION_DATE | RespRepCreationDate | ✅ |
+| DATA_SOURCE_ID | RespRepDataSourceId | ✅ |
+| DATA_SOURCE_TYPE | RespRepDataSourceType | ✅ |
+| FIRST_SUBMISSION_DATE | RespRepFirstSubmissionDate | ✅ |
+| INTERNAL_RESPONDENT_ID | RespRepInternalRespondentId | ✅ |
+| LAST_UPDATE_DATE | RespRepLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | RespRepLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | RespRepLastUpdatedBy | ✅ |
+| MERGE_REQUEST_ID | RespRepMergeRequestId | ✅ |
+| OBJECT_VERSION_NUMBER | RespRepObjectVersionNumber | ✅ |
+| ORIGINAL_QUESTION_ID | RespRepOriginalQuestionId | ✅ |
+| QUESTION_ID | RespRepQuestionId | ✅ |
+| REQUEST_ID | RespRepRequestId | ✅ |
+| RESPONDER_TYPE | RespRepResponderType | ✅ |
+| RESPONSE_ARCHIVE_DATE | RespRepResponseArchiveDate | ✅ |
+| RESPONSE_COMMENTS | RespRepResponseComments | ✅ |
+| RESPONSE_REPOSITORY_ID | RespRepResponseRepositoryId | ✅ |
+| RESPONSE_STATUS | RespRepResponseStatus | ✅ |
+| RESPONSE_SUBMISSION_DATE | RespRepResponseSubmissionDate | ✅ |
+| SUPPLIER_CONTACT_PARTY_ID | RespRepSupplierContactPartyId | ✅ |
+| SUPPLIER_ID | RespRepSupplierId | ✅ |
+| SUPPLIER_SITE_ID | RespRepSupplierSiteId | ✅ |
+| SURROG_ENTERED_BY | RespRepSurrogEnteredBy | — |
+| SURROG_ENTRY_DATE | RespRepSurrogEntryDate | ✅ |
+| SURROG_RESPONSE_FLAG | RespRepSurrogResponseFlag | ✅ |
+
+### [[repositoryresponseextractpvo|RepositoryResponseExtractPVO]] (PO · BICC: 30/30)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACCEPTANCE_DATE | AcceptanceDate | ✅ |
+| ACCEPTANCE_NOTE | AcceptanceNote | ✅ |
+| ACCEPTED_BY | AcceptedBy | ✅ |
+| BATCH_ID | BatchId | ✅ |
+| CREATED_BY | CreatedBy | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| DATA_SOURCE_ID | DataSourceId | ✅ |
+| DATA_SOURCE_TYPE | DataSourceType | ✅ |
+| FIRST_SUBMISSION_DATE | FirstSubmissionDate | ✅ |
+| INTERNAL_RESPONDENT_ID | InternalRespondentId | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | LastUpdatedBy | ✅ |
+| MERGE_REQUEST_ID | MergeRequestId | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | ✅ |
+| ORIGINAL_QUESTION_ID | OriginalQuestionId | ✅ |
+| QUESTION_ID | QuestionId | ✅ |
+| REQUEST_ID | RequestId | ✅ |
+| RESPONDER_TYPE | ResponderType | ✅ |
+| RESPONSE_ARCHIVE_DATE | ResponseArchiveDate | ✅ |
+| RESPONSE_COMMENTS | ResponseComments | ✅ |
+| RESPONSE_REPOSITORY_ID | ResponseRepositoryId | ✅ |
+| RESPONSE_STATUS | ResponseStatus | ✅ |
+| RESPONSE_SUBMISSION_DATE | ResponseSubmissionDate | ✅ |
+| SUPPLIER_CONTACT_PARTY_ID | SupplierContactPartyId | ✅ |
+| SUPPLIER_ID | SupplierId | ✅ |
+| SUPPLIER_SITE_ID | SupplierSiteId | ✅ |
+| SURROG_ENTERED_BY | SurrogEnteredBy | ✅ |
+| SURROG_ENTRY_DATE | SurrogEntryDate | ✅ |
+| SURROG_RESPONSE_FLAG | SurrogResponseFlag | ✅ |
+
+### [[repositoryresponsepvo|RepositoryResponsePVO]] (PO · BICC: 31/31)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACCEPTANCE_DATE | ResponseRepositoryAcceptanceDate | ✅ |
+| ACCEPTANCE_NOTE | ResponseRepositoryAcceptanceNote | ✅ |
+| ACCEPTED_BY | ResponseRepositoryAcceptedBy | ✅ |
+| AGGREGATE_RESPONSE_FLAG | AggregateResponseFlag | ✅ |
+| BATCH_ID | ResponseRepositoryBatchId | ✅ |
+| CREATED_BY | ResponseRepositoryCreatedBy | ✅ |
+| CREATION_DATE | ResponseRepositoryCreationDate | ✅ |
+| DATA_SOURCE_ID | ResponseRepositoryDataSourceId | ✅ |
+| DATA_SOURCE_TYPE | ResponseRepositoryDataSourceType | ✅ |
+| FIRST_SUBMISSION_DATE | ResponseRepositoryFirstSubmissionDate | ✅ |
+| INTERNAL_RESPONDENT_ID | ResponseRepositoryInternalRespondentId | ✅ |
+| LAST_UPDATE_DATE | ResponseRepositoryLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ResponseRepositoryLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | ResponseRepositoryLastUpdatedBy | ✅ |
+| MERGE_REQUEST_ID | ResponseRepositoryMergeRequestId | ✅ |
+| OBJECT_VERSION_NUMBER | ResponseRepositoryObjectVersionNumber | ✅ |
+| ORIGINAL_QUESTION_ID | ResponseRepositoryOriginalQuestionId | ✅ |
+| QUESTION_ID | ResponseRepositoryQuestionId | ✅ |
+| REQUEST_ID | ResponseRepositoryRequestId | ✅ |
+| RESPONDER_TYPE | ResponseRepositoryResponderType | ✅ |
+| RESPONSE_ARCHIVE_DATE | ResponseRepositoryResponseArchiveDate | ✅ |
+| RESPONSE_COMMENTS | ResponseRepositoryResponseComments | ✅ |
+| RESPONSE_REPOSITORY_ID | ResponseRepositoryId | ✅ |
+| RESPONSE_STATUS | ResponseRepositoryResponseStatus | ✅ |
+| RESPONSE_SUBMISSION_DATE | ResponseRepositoryResponseSubmissionDate | ✅ |
+| SUPPLIER_CONTACT_PARTY_ID | ResponseRepositorySupplierContactPartyId | ✅ |
+| SUPPLIER_ID | ResponseRepositorySupplierId | ✅ |
+| SUPPLIER_SITE_ID | ResponseRepositorySupplierSiteId | ✅ |
+| SURROG_ENTERED_BY | ResponseRepositorySurrogEnteredBy | ✅ |
+| SURROG_ENTRY_DATE | ResponseRepositorySurrogEntryDate | ✅ |
+| SURROG_RESPONSE_FLAG | ResponseRepositorySurrogResponseFlag | ✅ |
+
+### [[responserepositoryvaluespvo|ResponseRepositoryValuesPVO]] (PO · BICC: 31/31)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACCEPTANCE_DATE | RepResponseAcceptanceDate | ✅ |
+| ACCEPTANCE_NOTE | RepResponseAcceptanceNote | ✅ |
+| ACCEPTED_BY | RepResponseAcceptedBy | ✅ |
+| AGGREGATE_RESPONSE_FLAG | AggregateResponseFlag | ✅ |
+| BATCH_ID | RepResponseBatchId | ✅ |
+| CREATED_BY | RepResponseCreatedBy | ✅ |
+| CREATION_DATE | RepResponseCreationDate | ✅ |
+| DATA_SOURCE_ID | RepResponseDataSourceId | ✅ |
+| DATA_SOURCE_TYPE | RepResponseDataSourceType | ✅ |
+| FIRST_SUBMISSION_DATE | RepResponseFirstSubmissionDate | ✅ |
+| INTERNAL_RESPONDENT_ID | RepResponseInternalRespondentId | ✅ |
+| LAST_UPDATE_DATE | RepResponseLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | RepResponseLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | RepResponseLastUpdatedBy | ✅ |
+| MERGE_REQUEST_ID | RepResponseMergeRequestId | ✅ |
+| OBJECT_VERSION_NUMBER | RepResponseObjectVersionNumber | ✅ |
+| ORIGINAL_QUESTION_ID | RepResponseOriginalQuestionId | ✅ |
+| QUESTION_ID | RepResponseQuestionId | ✅ |
+| REQUEST_ID | RepResponseRequestId | ✅ |
+| RESPONDER_TYPE | RepResponseResponderType | ✅ |
+| RESPONSE_ARCHIVE_DATE | RepResponseResponseArchiveDate | ✅ |
+| RESPONSE_COMMENTS | RepResponseResponseComments | ✅ |
+| RESPONSE_REPOSITORY_ID | RepResponseResponseRepositoryId | ✅ |
+| RESPONSE_STATUS | RepResponseResponseStatus | ✅ |
+| RESPONSE_SUBMISSION_DATE | RepResponseResponseSubmissionDate | ✅ |
+| SUPPLIER_CONTACT_PARTY_ID | RepResponseSupplierContactPartyId | ✅ |
+| SUPPLIER_ID | RepResponseSupplierId | ✅ |
+| SUPPLIER_SITE_ID | RepResponseSupplierSiteId | ✅ |
+| SURROG_ENTERED_BY | RepResponseSurrogEnteredBy | ✅ |
+| SURROG_ENTRY_DATE | RepResponseSurrogEntryDate | ✅ |
+| SURROG_RESPONSE_FLAG | RepResponseSurrogResponseFlag | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — Supplier Qualification Management](https://docs.oracle.com/en/cloud/saas/procurement/25a/oedmf/)

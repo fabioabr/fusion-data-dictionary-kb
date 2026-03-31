@@ -80,3 +80,57 @@ updated_at: 2026-03-26
 ## 📎 Uso Típico
 
 (a ser preenchido na etapa 03)
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[invoicelinepvo|InvoiceLinePVO]] (AP)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| TAX_JURISDICTION_CODE | TaxJurisTaxJurisdictionCode | — |
+| TAX_JURISDICTION_ID | TaxJurisTaxJurisdictionId | — |
+
+### [[prepaymentappliationdistributionpvo|PrepaymentAppliationDistributionPVO]] (AP · BICC: 1/3)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| LAST_UPDATE_DATE | TaxJurisLastUpdateDate | ✅ |
+| TAX_JURISDICTION_CODE | TaxJurisTaxJurisdictionCode | — |
+| TAX_JURISDICTION_ID | TaxJurisTaxJurisdictionId | — |
+
+### [[taxjurisdictionextractpvo|TaxJurisdictionExtractPVO]] (OTHER · BICC: 29/30)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ALLOW_TAX_REGISTRATIONS_FLAG | TaxJurisdictionAllowTaxRegistrationsFlag | ✅ |
+| ATTRIBUTE_CATEGORY | TaxJurisdictionAttributeCategory | — |
+| COLL_TAX_AUTHORITY_ID | TaxJurisdictionCollTaxAuthorityId | ✅ |
+| CREATED_BY | TaxJurisdictionCreatedBy | ✅ |
+| CREATION_DATE | TaxJurisdictionCreationDate | ✅ |
+| DEFAULT_FLG_EFFECTIVE_FROM | TaxJurisdictionDefaultFlgEffectiveFrom | ✅ |
+| DEFAULT_FLG_EFFECTIVE_TO | TaxJurisdictionDefaultFlgEffectiveTo | ✅ |
+| DEFAULT_JURISDICTION_FLAG | TaxJurisdictionDefaultJurisdictionFlag | ✅ |
+| EFFECTIVE_FROM | TaxJurisdictionEffectiveFrom | ✅ |
+| EFFECTIVE_TO | TaxJurisdictionEffectiveTo | ✅ |
+| INNER_CITY_JURISDICTION_FLAG | TaxJurisdictionInnerCityJurisdictionFlag | ✅ |
+| LAST_UPDATE_DATE | TaxJurisdictionLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | TaxJurisdictionLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | TaxJurisdictionLastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | TaxJurisdictionObjectVersionNumber | ✅ |
+| PRECEDENCE_LEVEL | TaxJurisdictionPrecedenceLevel | ✅ |
+| RECORD_TYPE_CODE | TaxJurisdictionRecordTypeCode | ✅ |
+| REP_TAX_AUTHORITY_ID | TaxJurisdictionRepTaxAuthorityId | ✅ |
+| TAX | TaxJurisdictionTax | ✅ |
+| TAX_ACCT_SRC_JURISDICT_ID | TaxJurisdictionTaxAcctSrcJurisdictId | ✅ |
+| TAX_EXMPT_SRC_JURISDICT_ID | TaxJurisdictionTaxExmptSrcJurisdictId | ✅ |
+| TAX_JURISDICTION_CODE | TaxJurisdictionTaxJurisdictionCode | ✅ |
+| TAX_JURISDICTION_ID | TaxJurisdictionTaxJurisdictionId | ✅ |
+| TAX_REGIME_CODE | TaxJurisdictionTaxRegimeCode | ✅ |
+| THRSHLD_SCHEDULE_GRP_LVL_FLAG | TaxJurisdictionThrshldScheduleGrpLvlFlag | ✅ |
+| UNIQUENESS_VALIDATION_LEVEL | TaxJurisdictionUniquenessValidationLevel | ✅ |
+| VALIDATION_LEVEL | TaxJurisdictionValidationLevel | ✅ |
+| VALIDATION_TYPE | TaxJurisdictionValidationType | ✅ |
+| WHT_BUCKET_LEVEL_FLAG | TaxJurisdictionWhtBucketLevelFlag | ✅ |
+| ZONE_GEOGRAPHY_ID | TaxJurisdictionZoneGeographyId | ✅ |

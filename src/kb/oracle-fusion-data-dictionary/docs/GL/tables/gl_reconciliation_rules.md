@@ -142,6 +142,17 @@ WHERE  rr.LEDGER_ID = :p_ledger_id
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[journallinepvo|JournalLinePVO]] (GL · BICC: 1/2)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| RECON_RULE_ID | GlReconciliationRulesPEOReconRuleId | — |
+| RECON_RULE_NAME | GlReconciliationRulesPEOReconRuleName | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — GL Reconciliation](https://docs.oracle.com/en/cloud/saas/financials/25a/oedmf/)

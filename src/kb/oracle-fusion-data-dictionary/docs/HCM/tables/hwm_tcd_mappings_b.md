@@ -38,7 +38,6 @@ Tabela base que define os mapeamentos de campos do cartão de ponto para sistema
 > [!note] Sufixo _B
 > O sufixo `_B` indica tabela **base** — contém os dados não traduzíveis. A tabela correspondente `_TL` armazena as traduções.
 
-
 ---
 
 ## 🧠 Propósito de Negócio
@@ -104,6 +103,48 @@ WHERE  NVL(t.ENABLED_FLAG, 'Y') = 'Y'
 
 - Tabela base: contém dados não traduzíveis. Utilize a view `_VL` correspondente para consultas com tradução.
 - Área funcional: Time Card Export dentro do Oracle Fusion Cloud HCM.
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[tcdmappingdetailpvo|TcdMappingDetailPVO]] (GL · BICC: 10/14)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | TcdMappingBPEOCreatedBy | ✅ |
+| CREATION_DATE | TcdMappingBPEOCreationDate | ✅ |
+| ENTERPRISE_ID | TcdMappingBPEOEnterpriseId | — |
+| LAST_UPDATE_DATE | TcdMappingBPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | TcdMappingBPEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | TcdMappingBPEOLastUpdatedBy | ✅ |
+| MODULE_ID | TcdMappingBPEOModuleId | — |
+| OBJECT_VERSION_NUMBER | TcdMappingBPEOObjectVersionNumber | — |
+| SEED_DATA_SOURCE | TcdMappingBPEOSeedDataSource | — |
+| TCD_EVENT_CD | TcdMappingBPEOTcdEventCd | ✅ |
+| TCD_MAPPING_CD | TcdMappingBPEOTcdMappingCd | ✅ |
+| TCD_MAPPING_ID | TcdMappingBPEOTcdMappingId | ✅ |
+| VENDOR_CD | TcdMappingBPEOVendorCd | ✅ |
+| WFM_EVENT_IN_OUT | TcdMappingBPEOWfmEventInOut | ✅ |
+
+### [[tcdmappingpvo|TcdMappingPVO]] (GL · BICC: 10/14)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | TcdMappingBPEOCreatedBy | ✅ |
+| CREATION_DATE | TcdMappingBPEOCreationDate | ✅ |
+| ENTERPRISE_ID | TcdMappingBPEOEnterpriseId | — |
+| LAST_UPDATE_DATE | TcdMappingBPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | TcdMappingBPEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | TcdMappingBPEOLastUpdatedBy | ✅ |
+| MODULE_ID | TcdMappingBPEOModuleId | — |
+| OBJECT_VERSION_NUMBER | TcdMappingBPEOObjectVersionNumber | — |
+| SEED_DATA_SOURCE | TcdMappingBPEOSeedDataSource | — |
+| TCD_EVENT_CD | TcdMappingBPEOTcdEventCd | ✅ |
+| TCD_MAPPING_CD | TcdMappingBPEOTcdMappingCd | ✅ |
+| TCD_MAPPING_ID | TcdMappingBPEOTcdMappingId | ✅ |
+| VENDOR_CD | TcdMappingBPEOVendorCd | ✅ |
+| WFM_EVENT_IN_OUT | TcdMappingBPEOWfmEventInOut | ✅ |
 
 ---
 

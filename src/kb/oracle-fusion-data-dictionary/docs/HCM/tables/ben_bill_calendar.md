@@ -38,7 +38,6 @@ updated_at: 2026-03-25
 
 Armazena os **calendários de cobrança** (billing) dos benefícios. Define os períodos e datas de cobrança para premiações e contribuições de benefícios.
 
-
 ---
 
 ## 🧠 Propósito de Negócio
@@ -102,6 +101,72 @@ WHERE  bc.END_DATE IS NULL OR bc.END_DATE > SYSDATE;
 
 - Define os períodos de cobrança para contribuições de benefícios.
 - A frequência de cobrança pode ser mensal, trimestral, semestral ou anual.
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[billcalendarpvo|BillCalendarPVO]] (HCM · BICC: 12/57)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BBC_ATTRIBUTE1 | BbcAttribute1 | — |
+| BBC_ATTRIBUTE10 | BbcAttribute10 | — |
+| BBC_ATTRIBUTE2 | BbcAttribute2 | — |
+| BBC_ATTRIBUTE3 | BbcAttribute3 | — |
+| BBC_ATTRIBUTE4 | BbcAttribute4 | — |
+| BBC_ATTRIBUTE5 | BbcAttribute5 | — |
+| BBC_ATTRIBUTE6 | BbcAttribute6 | — |
+| BBC_ATTRIBUTE7 | BbcAttribute7 | — |
+| BBC_ATTRIBUTE8 | BbcAttribute8 | — |
+| BBC_ATTRIBUTE9 | BbcAttribute9 | — |
+| BBC_ATTRIBUTE_CATEGORY | BbcAttributeCategory | — |
+| BBC_ATTRIBUTE_DATE1 | BbcAttributeDate1 | — |
+| BBC_ATTRIBUTE_DATE2 | BbcAttributeDate2 | — |
+| BBC_ATTRIBUTE_DATE3 | BbcAttributeDate3 | — |
+| BBC_ATTRIBUTE_DATE4 | BbcAttributeDate4 | — |
+| BBC_ATTRIBUTE_DATE5 | BbcAttributeDate5 | — |
+| BBC_ATTRIBUTE_NUMBER1 | BbcAttributeNumber1 | — |
+| BBC_ATTRIBUTE_NUMBER2 | BbcAttributeNumber2 | — |
+| BBC_ATTRIBUTE_NUMBER3 | BbcAttributeNumber3 | — |
+| BBC_ATTRIBUTE_NUMBER4 | BbcAttributeNumber4 | — |
+| BBC_ATTRIBUTE_NUMBER5 | BbcAttributeNumber5 | — |
+| BILL_CAL_ID | BillCalId | ✅ |
+| BILL_CAL_SOURCE | BillCalSource | ✅ |
+| BILL_CALC_RUN | BillCalcRun | ✅ |
+| BILL_CYCLE_ID | BillCalendarPEOBillCycleId | — |
+| BILL_YEAR | BillYear | ✅ |
+| BILLING_DATE | BillingDate | ✅ |
+| BUSINESS_GROUP_ID | BusinessGroupId | — |
+| COMMENTS | Comments | ✅ |
+| CONFIG_CHAR_1 | ConfigChar1 | — |
+| CONFIG_CHAR_2 | ConfigChar2 | — |
+| CONFIG_CHAR_3 | ConfigChar3 | — |
+| CONFIG_CHAR_4 | ConfigChar4 | — |
+| CONFIG_CHAR_5 | ConfigChar5 | — |
+| CONFIG_DATE_1 | ConfigDate1 | — |
+| CONFIG_DATE_2 | ConfigDate2 | — |
+| CONFIG_DATE_3 | ConfigDate3 | — |
+| CONFIG_DATE_4 | ConfigDate4 | — |
+| CONFIG_DATE_5 | ConfigDate5 | — |
+| CONFIG_NUM_1 | ConfigNum1 | — |
+| CONFIG_NUM_2 | ConfigNum2 | — |
+| CONFIG_NUM_3 | ConfigNum3 | — |
+| CONFIG_NUM_4 | ConfigNum4 | — |
+| CONFIG_NUM_5 | ConfigNum5 | — |
+| CREATED_BY | CreatedBy | — |
+| CREATION_DATE | CreationDate | — |
+| END_DATE | EndDate | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | — |
+| LAST_UPDATED_BY | LastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | — |
+| PAY_TIME_PERIOD_ID | PayTimePeriodId | — |
+| PAYROLL_ID | PayrollId | — |
+| PERIOD_NAME | PeriodName | ✅ |
+| PYMNT_DUE_DT | PymntDueDt | ✅ |
+| PYMNT_OVERDUE_DT | PymntOverdueDt | ✅ |
+| START_DATE | StartDate | ✅ |
 
 ---
 

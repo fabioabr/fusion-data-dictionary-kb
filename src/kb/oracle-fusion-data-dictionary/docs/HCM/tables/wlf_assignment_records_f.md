@@ -118,3 +118,57 @@ WHERE  ar.PERSON_ID = :p_person_id
 
 - [Oracle Docs — WLF_ASSIGNMENT_RECORDS_F](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/wlfassignmentrecordsf.html)
 - [[hcm-module-data-dictionary]] — Dossiê do módulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[eventassignmentrecordpvo|EventAssignmentRecordPVO]] (HCM · BICC: 36/45)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ASSIGNED_ON_DATE | AssignmentRecordDEOAssignedOnDate | ✅ |
+| ASSIGNMENT_RECORD_ID | AssignmentRecordDEOAssignmentRecordId | ✅ |
+| ASSIGNMENT_RECORD_NUMBER | AssignmentRecordDEOAssignmentRecordNumber | ✅ |
+| ASSIGNMENT_RULE_ID | AssignmentRecordDEOAssignmentRuleId | ✅ |
+| ATTACHMENT_ID | AssignmentRecordDEOAttachmentId | ✅ |
+| ATTRIBUTION_ID | AssignmentRecordDEOAttributionId | ✅ |
+| ATTRIBUTION_LOOKUP_CODE | AssignmentRecordDEOAttributionLookupCode | — |
+| ATTRIBUTION_TYPE | AssignmentRecordDEOAttributionType | ✅ |
+| CALCULATED_DUE_DATE | AssignmentRecordDEOCalculatedDueDate | ✅ |
+| COMPLETION_DATE | AssignmentRecordDEOCompletionDate | ✅ |
+| CREATED_BY | AssignmentRecordDEOCreatedBy | ✅ |
+| CREATION_DATE | AssignmentRecordDEOCreationDate | ✅ |
+| DATE_STATUS_CHANGED | AssignmentRecordDEODateStatusChanged | ✅ |
+| EFFECTIVE_END_DATE | AssignmentRecordDEOEffectiveEndDate | ✅ |
+| EFFECTIVE_START_DATE | AssignmentRecordDEOEffectiveStartDate | ✅ |
+| ENTERPRISE_ID | AssignmentRecordDEOEnterpriseId | ✅ |
+| EVENT_ASSIGNMENT_ID | AssignmentRecordDEOEventAssignmentId | ✅ |
+| EVENT_CREATED_BY_ID | AssignmentRecordDEOEventCreatedById | — |
+| EVENT_SUB_TYPE | AssignmentRecordDEOEventSubType | — |
+| EVENT_TYPE | AssignmentRecordDEOEventType | — |
+| EXPIRATION_DATE | AssignmentRecordDEOExpirationDate | ✅ |
+| IS_HISTORY_FLAG | AssignmentRecordDEOIsHistoryFlag | ✅ |
+| LAST_UPDATE_DATE | AssignmentRecordDEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | AssignmentRecordDEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | AssignmentRecordDEOLastUpdatedBy | ✅ |
+| LEARNER_ID | AssignmentRecordDEOLearnerId | ✅ |
+| LEARNING_ITEM_ID | AssignmentRecordDEOLearningItemId | — |
+| LI_EFFECTIVE_DATE | AssignmentRecordDEOLiEffectiveDate | ✅ |
+| NOTIFICATION_STATUS | AssignmentRecordDEONotificationStatus | ✅ |
+| OBJECT_VERSION_NUMBER | AssignmentRecordDEOObjectVersionNumber | ✅ |
+| PRE_ASSIGNMENT_RECORD_ID | AssignmentRecordDEOPreAssignmentRecordId | — |
+| PRICING_RULE_ID | AssignmentRecordDEOPricingRuleId | — |
+| REASON_CODE | AssignmentRecordDEOReasonCode | ✅ |
+| REQUEST_DETAIL_ID | AssignmentRecordDEORequestDetailId | — |
+| SOURCE_ID | AssignmentRecordDEOSourceId | ✅ |
+| SOURCE_INFO | AssignmentRecordDEOSourceInfo | ✅ |
+| SOURCE_TYPE | AssignmentRecordDEOSourceType | ✅ |
+| STATUS | AssignmentRecordDEOStatus | ✅ |
+| STATUS_CHANGE_COMMENT | AssignmentRecordDEOStatusChangeComment | ✅ |
+| STATUS_CHANGE_TYPE | AssignmentRecordDEOStatusChangeType | ✅ |
+| SUB_STATUS | AssignmentRecordDEOSubStatus | ✅ |
+| SUCC_ASSIGNMENT_RECORD_ID | AssignmentRecordDEOSuccAssignmentRecordId | — |
+| TOTAL_LEARNING_TIME | AssignmentRecordDEOTotalLearningTime | ✅ |
+| TRANSACTION_DETAILS_RULE_ID | AssignmentRecordDEOTransactionDetailsRuleId | ✅ |
+| VALIDITY_DATE | AssignmentRecordDEOValidityDate | ✅ |

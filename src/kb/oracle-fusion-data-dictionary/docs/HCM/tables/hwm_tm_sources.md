@@ -107,3 +107,22 @@ WHERE  s.ENABLED_FLAG = 'Y';
 
 - [Oracle Docs — HWM_TM_SOURCES](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/hwmtmsources.html)
 - [[hcm-module-data-dictionary]] — Dossie do modulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[timesourcepvo|TimeSourcePVO]] (GL · BICC: 2/10)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | CreatedBy | — |
+| CREATION_DATE | CreationDate | — |
+| ENTERPRISE_ID | EnterpriseId | — |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | — |
+| LAST_UPDATED_BY | LastUpdatedBy | — |
+| MODULE_ID | ModuleId | — |
+| NAME | Name | — |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | — |
+| TM_SOURCE_ID | TimeSourceId | ✅ |

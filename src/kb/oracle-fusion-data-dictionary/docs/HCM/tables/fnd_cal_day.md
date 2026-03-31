@@ -61,3 +61,23 @@ updated_at: 2026-03-26
 ## 📎 Uso Típico
 
 (a ser preenchido na etapa 03)
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[fndcalday|FndCalDay]] (GL · BICC: 6/11)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | CreatedBy | — |
+| CREATION_DATE | CreationDate | — |
+| DAY_OF_MONTH | DayOfMonth | ✅ |
+| DAY_OF_WEEK | DayOfWeek | ✅ |
+| DAY_OF_YEAR | DayOfYear | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | — |
+| LAST_UPDATED_BY | LastUpdatedBy | — |
+| PARENT_MONTH | ParentMonth | ✅ |
+| PARENT_WEEK | ParentWeek | — |
+| REPORT_DATE | ReportDate | ✅ |

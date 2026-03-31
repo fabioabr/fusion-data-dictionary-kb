@@ -101,3 +101,37 @@ SELECT tl.SITE_NAME FROM IRC_CX_SITES_TL tl WHERE tl.LANGUAGE = 'PT';
 
 - [Oracle Docs -- IRC_CX_SITES_TL](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/irccxsitestl.html)
 - [[hcm-module-data-dictionary]] -- Dossie do modulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[careersitepagepvo|CareerSitePagePVO]] (HCM · BICC: 1/10)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | SiteTranslationPEOCreatedBy | — |
+| CREATION_DATE | SiteTranslationPEOCreationDate | — |
+| LANGUAGE | SiteTranslationPEOLanguage | — |
+| LAST_UPDATE_DATE | SiteTranslationPEOLastUpdateDate | — |
+| LAST_UPDATE_LOGIN | SiteTranslationPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | SiteTranslationPEOLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | SiteTranslationPEOObjectVersionNumber | — |
+| SITE_ID | SiteTranslationPEOSiteId | — |
+| SITE_NAME | SiteTranslationPEOSiteName | ✅ |
+| SOURCE_LANG | SiteTranslationPEOSourceLang | — |
+
+### [[careersitepvo|CareerSitePVO]] (HCM · BICC: 1/10)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | SiteTranslationPEOCreatedBy | — |
+| CREATION_DATE | SiteTranslationPEOCreationDate | — |
+| LANGUAGE | SiteTranslationPEOLanguage | — |
+| LAST_UPDATE_DATE | SiteTranslationPEOLastUpdateDate | — |
+| LAST_UPDATE_LOGIN | SiteTranslationPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | SiteTranslationPEOLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | SiteTranslationPEOObjectVersionNumber | — |
+| SITE_ID | SiteTranslationPEOSiteId | — |
+| SITE_NAME | SiteTranslationPEOSiteName | ✅ |
+| SOURCE_LANG | SiteTranslationPEOSourceLang | — |

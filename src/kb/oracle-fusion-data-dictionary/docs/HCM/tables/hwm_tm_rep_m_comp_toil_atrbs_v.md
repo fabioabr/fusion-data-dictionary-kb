@@ -111,3 +111,49 @@ WHERE  v.PERSON_ID = :p_person_id;
 
 - [Oracle Docs — HWM_TM_REP_M_COMP_TOIL_ATRBS_V](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/hwmtmrepmcomptoilatrbsv.html)
 - [[hcm-module-data-dictionary]] — Dossie do modulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[historicprocessedtimeentrypvo|HistoricProcessedTimeEntryPVO]] (HCM)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| TOIL_REPOS_ATRB_ID | ToilReposAtrbId | — |
+| TOIL_TIME_TYPE | ToilTimeType | — |
+
+### [[historicreportedtimeentrypvo|HistoricReportedTimeEntryPVO]] (HCM)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| TOIL_REPOS_ATRB_ID | ToilReposAtrbId | — |
+| TOIL_TIME_TYPE | ToilTimeType | — |
+
+### [[historicrptabstimeentrypvo|HistoricRptAbsTimeEntryPVO]] (HCM)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| TOIL_REPOS_ATRB_ID | ToilReposAtrbId | — |
+| TOIL_TIME_TYPE | ToilTimeType | — |
+
+### [[processedtimeentrypvo|ProcessedTimeEntryPVO]] (HCM)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| TOIL_REPOS_ATRB_ID | ToilReposAtrbId | — |
+| TOIL_TIME_TYPE | ToilTimeType | — |
+
+### [[reportedtimeentrypvo|ReportedTimeEntryPVO]] (HCM)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| TOIL_REPOS_ATRB_ID | ToilReposAtrbId | — |
+| TOIL_TIME_TYPE | ToilTimeType | — |
+
+### [[rptabstimeentrypvo|RptAbsTimeEntryPVO]] (HCM)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| TOIL_REPOS_ATRB_ID | ToilReposAtrbId | — |
+| TOIL_TIME_TYPE | ToilTimeType | — |

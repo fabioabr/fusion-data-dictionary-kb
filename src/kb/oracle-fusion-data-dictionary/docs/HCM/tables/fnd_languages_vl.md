@@ -68,3 +68,30 @@ updated_at: 2026-03-26
 ## 📎 Uso Típico
 
 (a ser preenchido na etapa 03)
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[supplieraddresspvo|SupplierAddressPVO]] (PO · BICC: 3/18)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | LanguageCreatedBy | — |
+| CREATION_DATE | LanguageCreationDate | — |
+| DESCRIPTION | LanguageDescription | ✅ |
+| INSTALLED_FLAG | LanguageInstalledFlag | — |
+| ISO_LANGUAGE | LanguageIsoLanguage | — |
+| ISO_LANGUAGE_3 | LanguageIsoLanguage3 | — |
+| ISO_TERRITORY | LanguageIsoTerritory | — |
+| LANG_DB2 | LanguageLangDb2 | — |
+| LANG_SQLSERVER | LanguageLangSqlserver | — |
+| LANGUAGE_CODE | LanguageLanguageCode | ✅ |
+| LANGUAGE_ID | LanguageLanguageId | — |
+| LANGUAGE_TAG | LanguageLanguageTag | — |
+| LAST_UPDATE_DATE | LanguageLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LanguageLastUpdateLogin | — |
+| LAST_UPDATED_BY | LanguageLastUpdatedBy | — |
+| NLS_CODESET | LanguageNlsCodeset | — |
+| NLS_LANGUAGE | LanguageNlsLanguage | — |
+| NLS_TERRITORY | LanguageNlsTerritory | — |

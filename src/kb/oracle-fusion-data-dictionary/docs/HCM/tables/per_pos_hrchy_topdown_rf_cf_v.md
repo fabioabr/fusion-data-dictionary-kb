@@ -111,3 +111,32 @@ ORDER BY v.DEPTH, v.POSITION_ID;
 
 - [Oracle Docs — PER_POS_HRCHY_TOPDOWN_RF_CF_V](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/perposhrhytopdownrfcfv.html)
 - [[hcm-module-data-dictionary]] — Dossiê do módulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[poshrchytopdownrfcfpvo|PosHrchyTopDownRFCFPVO]] (PO · BICC: 20/20)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CHILD_LEVEL | ChildLevel | ✅ |
+| CHILD_POS_ID1 | ChildPosId1 | ✅ |
+| CHILD_POS_ID10 | ChildPosId10 | ✅ |
+| CHILD_POS_ID11 | ChildPosId11 | ✅ |
+| CHILD_POS_ID12 | ChildPosId12 | ✅ |
+| CHILD_POS_ID13 | ChildPosId13 | ✅ |
+| CHILD_POS_ID14 | ChildPosId14 | ✅ |
+| CHILD_POS_ID15 | ChildPosId15 | ✅ |
+| CHILD_POS_ID2 | ChildPosId2 | ✅ |
+| CHILD_POS_ID3 | ChildPosId3 | ✅ |
+| CHILD_POS_ID4 | ChildPosId4 | ✅ |
+| CHILD_POS_ID5 | ChildPosId5 | ✅ |
+| CHILD_POS_ID6 | ChildPosId6 | ✅ |
+| CHILD_POS_ID7 | ChildPosId7 | ✅ |
+| CHILD_POS_ID8 | ChildPosId8 | ✅ |
+| CHILD_POS_ID9 | ChildPosId9 | ✅ |
+| EFFECTIVE_END_DATE | EffectiveEndDate | ✅ |
+| EFFECTIVE_START_DATE | EffectiveStartDate | ✅ |
+| NONNULL_CHILD_POS_ID15 | NonnullChildPosId15 | ✅ |
+| POSITION_ID | PositionId | ✅ |

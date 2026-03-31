@@ -102,6 +102,63 @@ WHERE  d.TXN_ID = :p_txn_id;
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[transactionconsolep1|TransactionConsoleP1]] (AP · BICC: 5/48)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ATTRIBUTE1 | HrcTxnDataPEOAttribute1 | — |
+| ATTRIBUTE10 | HrcTxnDataPEOAttribute10 | — |
+| ATTRIBUTE11 | HrcTxnDataPEOAttribute11 | — |
+| ATTRIBUTE12 | HrcTxnDataPEOAttribute12 | — |
+| ATTRIBUTE13 | HrcTxnDataPEOAttribute13 | — |
+| ATTRIBUTE14 | HrcTxnDataPEOAttribute14 | — |
+| ATTRIBUTE15 | HrcTxnDataPEOAttribute15 | — |
+| ATTRIBUTE16 | HrcTxnDataPEOAttribute16 | — |
+| ATTRIBUTE17 | HrcTxnDataPEOAttribute17 | — |
+| ATTRIBUTE18 | HrcTxnDataPEOAttribute18 | — |
+| ATTRIBUTE19 | HrcTxnDataPEOAttribute19 | — |
+| ATTRIBUTE2 | HrcTxnDataPEOAttribute2 | — |
+| ATTRIBUTE20 | HrcTxnDataPEOAttribute20 | — |
+| ATTRIBUTE21 | HrcTxnDataPEOAttribute21 | — |
+| ATTRIBUTE22 | HrcTxnDataPEOAttribute22 | — |
+| ATTRIBUTE23 | HrcTxnDataPEOAttribute23 | — |
+| ATTRIBUTE24 | HrcTxnDataPEOAttribute24 | — |
+| ATTRIBUTE25 | HrcTxnDataPEOAttribute25 | — |
+| ATTRIBUTE26 | HrcTxnDataPEOAttribute26 | — |
+| ATTRIBUTE27 | HrcTxnDataPEOAttribute27 | — |
+| ATTRIBUTE28 | HrcTxnDataPEOAttribute28 | — |
+| ATTRIBUTE29 | HrcTxnDataPEOAttribute29 | — |
+| ATTRIBUTE3 | HrcTxnDataPEOAttribute3 | — |
+| ATTRIBUTE30 | HrcTxnDataPEOAttribute30 | — |
+| ATTRIBUTE4 | HrcTxnDataPEOAttribute4 | — |
+| ATTRIBUTE5 | HrcTxnDataPEOAttribute5 | — |
+| ATTRIBUTE6 | HrcTxnDataPEOAttribute6 | — |
+| ATTRIBUTE7 | HrcTxnDataPEOAttribute7 | — |
+| ATTRIBUTE8 | HrcTxnDataPEOAttribute8 | — |
+| ATTRIBUTE9 | HrcTxnDataPEOAttribute9 | — |
+| ATTRIBUTE_CATEGORY | HrcTxnDataPEOAttributeCategory | — |
+| COMPLETED_DATE | HrcTxnDataPEOCompletedDate | ✅ |
+| CREATED_BY | HrcTxnDataPEOCreatedBy1 | — |
+| CREATION_DATE | HrcTxnDataPEOCreationDate1 | — |
+| CURRENT_APPROVER | HrcTxnDataPEOCurrentApprover | — |
+| ECID | HrcTxnDataPEOEcid | — |
+| ENTERPRISE_ID | HrcTxnDataPEOEnterpriseId | — |
+| LAST_UPDATE_DATE | HrcTxnDataPEOLastUpdateDate1 | ✅ |
+| LAST_UPDATE_LOGIN | HrcTxnDataPEOLastUpdateLogin1 | — |
+| LAST_UPDATED_BY | HrcTxnDataPEOLastUpdatedBy1 | — |
+| OBJECT_VERSION_NUMBER | HrcTxnDataPEOObjectVersionNumber1 | — |
+| STATE | HrcTxnDataPEOState | ✅ |
+| STATUS | HrcTxnDataPEOStatus | ✅ |
+| SUBMITTED_BY | HrcTxnDataPEOSubmittedBy | ✅ |
+| SUBMITTED_DATE | HrcTxnDataPEOSubmittedDate | — |
+| TASK_ID | HrcTxnDataPEOTaskId | — |
+| TRANSACTION_DATA_ID | HrcTxnDataPEOTransactionDataId | — |
+| TRANSACTION_ID | HrcTxnDataPEOTransactionId1 | — |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Fusion HCM Tables and Views](https://docs.oracle.com/en/cloud/saas/human-resources/25a/)

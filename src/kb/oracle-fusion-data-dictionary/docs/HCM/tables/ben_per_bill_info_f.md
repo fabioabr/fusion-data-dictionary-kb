@@ -103,6 +103,142 @@ WHERE  ROWNUM <= 100;
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[billchargedetailspvo|BillChargeDetailsPVO]] (HCM · BICC: 16/61)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ADDRESS_LINE1 | AddressLine1 | ✅ |
+| ADDRESS_LINE2 | AddressLine2 | ✅ |
+| ADDRESS_LINE3 | AddressLine3 | ✅ |
+| ADDRESS_LINE4 | AddressLine4 | ✅ |
+| BUSINESS_GROUP_ID | BusinessGroupId2 | — |
+| CITY | City | ✅ |
+| COMMENTS | Comments1 | ✅ |
+| CONFIG_CHAR_1 | ConfigChar12 | — |
+| CONFIG_CHAR_2 | ConfigChar22 | — |
+| CONFIG_CHAR_3 | ConfigChar32 | — |
+| CONFIG_CHAR_4 | ConfigChar42 | — |
+| CONFIG_CHAR_5 | ConfigChar52 | — |
+| CONFIG_DATE_1 | ConfigDate12 | — |
+| CONFIG_DATE_2 | ConfigDate22 | — |
+| CONFIG_DATE_3 | ConfigDate32 | — |
+| CONFIG_DATE_4 | ConfigDate42 | — |
+| CONFIG_DATE_5 | ConfigDate52 | — |
+| CONFIG_NUM_1 | ConfigNum12 | — |
+| CONFIG_NUM_2 | ConfigNum22 | — |
+| CONFIG_NUM_3 | ConfigNum32 | — |
+| CONFIG_NUM_4 | ConfigNum42 | — |
+| CONFIG_NUM_5 | ConfigNum52 | — |
+| COUNTRY | Country | ✅ |
+| CREATED_BY | CreatedBy2 | — |
+| CREATION_DATE | CreationDate2 | — |
+| EFFECTIVE_END_DATE | EffectiveEndDate | ✅ |
+| EFFECTIVE_START_DATE | EffectiveStartDate | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate2 | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin2 | — |
+| LAST_UPDATED_BY | LastUpdatedBy2 | — |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber2 | — |
+| PBI_ATTRIBUTE1 | PbiAttribute1 | — |
+| PBI_ATTRIBUTE10 | PbiAttribute10 | — |
+| PBI_ATTRIBUTE2 | PbiAttribute2 | — |
+| PBI_ATTRIBUTE3 | PbiAttribute3 | — |
+| PBI_ATTRIBUTE4 | PbiAttribute4 | — |
+| PBI_ATTRIBUTE5 | PbiAttribute5 | — |
+| PBI_ATTRIBUTE6 | PbiAttribute6 | — |
+| PBI_ATTRIBUTE7 | PbiAttribute7 | — |
+| PBI_ATTRIBUTE8 | PbiAttribute8 | — |
+| PBI_ATTRIBUTE9 | PbiAttribute9 | — |
+| PBI_ATTRIBUTE_CATEGORY | PbiAttributeCategory | — |
+| PBI_ATTRIBUTE_DATE1 | PbiAttributeDate1 | — |
+| PBI_ATTRIBUTE_DATE2 | PbiAttributeDate2 | — |
+| PBI_ATTRIBUTE_DATE3 | PbiAttributeDate3 | — |
+| PBI_ATTRIBUTE_DATE4 | PbiAttributeDate4 | — |
+| PBI_ATTRIBUTE_DATE5 | PbiAttributeDate5 | — |
+| PBI_ATTRIBUTE_NUMBER1 | PbiAttributeNumber1 | — |
+| PBI_ATTRIBUTE_NUMBER2 | PbiAttributeNumber2 | — |
+| PBI_ATTRIBUTE_NUMBER3 | PbiAttributeNumber3 | — |
+| PBI_ATTRIBUTE_NUMBER4 | PbiAttributeNumber4 | — |
+| PBI_ATTRIBUTE_NUMBER5 | PbiAttributeNumber5 | — |
+| PER_ACCT_NUM | PerAcctNum1 | ✅ |
+| PER_BILL_INFO_ID | PerBillInfoId1 | — |
+| PERSON_ID | PersonId1 | — |
+| PREF_COMM_MODE | PrefCommMode | — |
+| PRMRY_EMAIL_ID | PrmryEmailId | ✅ |
+| PRMRY_MAIL_ADDRESS_ID | PrmryMailAddressId | ✅ |
+| STATE | State | ✅ |
+| STOP_BILL_FLAG | StopBillFlag | ✅ |
+| ZIP_CODE | ZipCode | ✅ |
+
+### [[billchargespvo|BillChargesPVO]] (HCM · BICC: 15/61)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ADDRESS_LINE1 | AddressLine1 | ✅ |
+| ADDRESS_LINE2 | AddressLine2 | ✅ |
+| ADDRESS_LINE3 | AddressLine3 | ✅ |
+| ADDRESS_LINE4 | AddressLine4 | ✅ |
+| BUSINESS_GROUP_ID | BusinessGroupId1 | — |
+| CITY | City | ✅ |
+| COMMENTS | Comments1 | ✅ |
+| CONFIG_CHAR_1 | ConfigChar11 | — |
+| CONFIG_CHAR_2 | ConfigChar21 | — |
+| CONFIG_CHAR_3 | ConfigChar31 | — |
+| CONFIG_CHAR_4 | ConfigChar41 | — |
+| CONFIG_CHAR_5 | ConfigChar51 | — |
+| CONFIG_DATE_1 | ConfigDate11 | — |
+| CONFIG_DATE_2 | ConfigDate21 | — |
+| CONFIG_DATE_3 | ConfigDate31 | — |
+| CONFIG_DATE_4 | ConfigDate41 | — |
+| CONFIG_DATE_5 | ConfigDate51 | — |
+| CONFIG_NUM_1 | ConfigNum11 | — |
+| CONFIG_NUM_2 | ConfigNum21 | — |
+| CONFIG_NUM_3 | ConfigNum31 | — |
+| CONFIG_NUM_4 | ConfigNum41 | — |
+| CONFIG_NUM_5 | ConfigNum51 | — |
+| COUNTRY | Country | ✅ |
+| CREATED_BY | CreatedBy1 | — |
+| CREATION_DATE | CreationDate1 | — |
+| EFFECTIVE_END_DATE | EffectiveEndDate | ✅ |
+| EFFECTIVE_START_DATE | EffectiveStartDate | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate1 | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin1 | — |
+| LAST_UPDATED_BY | LastUpdatedBy1 | — |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber1 | — |
+| PBI_ATTRIBUTE1 | PbiAttribute1 | — |
+| PBI_ATTRIBUTE10 | PbiAttribute10 | — |
+| PBI_ATTRIBUTE2 | PbiAttribute2 | — |
+| PBI_ATTRIBUTE3 | PbiAttribute3 | — |
+| PBI_ATTRIBUTE4 | PbiAttribute4 | — |
+| PBI_ATTRIBUTE5 | PbiAttribute5 | — |
+| PBI_ATTRIBUTE6 | PbiAttribute6 | — |
+| PBI_ATTRIBUTE7 | PbiAttribute7 | — |
+| PBI_ATTRIBUTE8 | PbiAttribute8 | — |
+| PBI_ATTRIBUTE9 | PbiAttribute9 | — |
+| PBI_ATTRIBUTE_CATEGORY | PbiAttributeCategory | — |
+| PBI_ATTRIBUTE_DATE1 | PbiAttributeDate1 | — |
+| PBI_ATTRIBUTE_DATE2 | PbiAttributeDate2 | — |
+| PBI_ATTRIBUTE_DATE3 | PbiAttributeDate3 | — |
+| PBI_ATTRIBUTE_DATE4 | PbiAttributeDate4 | — |
+| PBI_ATTRIBUTE_DATE5 | PbiAttributeDate5 | — |
+| PBI_ATTRIBUTE_NUMBER1 | PbiAttributeNumber1 | — |
+| PBI_ATTRIBUTE_NUMBER2 | PbiAttributeNumber2 | — |
+| PBI_ATTRIBUTE_NUMBER3 | PbiAttributeNumber3 | — |
+| PBI_ATTRIBUTE_NUMBER4 | PbiAttributeNumber4 | — |
+| PBI_ATTRIBUTE_NUMBER5 | PbiAttributeNumber5 | — |
+| PER_ACCT_NUM | PerAcctNum1 | — |
+| PER_BILL_INFO_ID | PerBillInfoId1 | — |
+| PERSON_ID | PersonId1 | — |
+| PREF_COMM_MODE | PrefCommMode | — |
+| PRMRY_EMAIL_ID | PrmryEmailId | ✅ |
+| PRMRY_MAIL_ADDRESS_ID | PrmryMailAddressId | ✅ |
+| STATE | State | ✅ |
+| STOP_BILL_FLAG | StopBillFlag | ✅ |
+| ZIP_CODE | ZipCode | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — BEN_PER_BILL_INFO_F](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/benperbillinfof.html)

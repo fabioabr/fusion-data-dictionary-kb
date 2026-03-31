@@ -115,3 +115,950 @@ WHERE  p.PROFILE_USAGE_CODE = 'PERSON'
 
 - [Oracle Docs — HRT_PROFILES_B](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/hrtprofilesb.html)
 - [[hcm-module-data-dictionary]] — Dossie do modulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[advancementreadinesspvo|AdvancementReadinessPVO]] (HCM · BICC: 1/9)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | ProfileBPEOBusinessGroupId | — |
+| LAST_UPDATE_DATE | ProfileBPEOLastUpdateDate | ✅ |
+| OWNER_PERSON_ID | ProfileBPEOOwnerPersonId | — |
+| PARTY_ID | ProfileBPEOPartyId | — |
+| PERSON_ID | ProfileBPEOPersonId | — |
+| PROFILE_CODE | ProfileBPEOProfileCode | — |
+| PROFILE_ID | ProfileBPEOProfileId | — |
+| PROFILE_TYPE_ID | ProfileBPEOProfileTypeId | — |
+| PROFILE_USAGE_CODE | ProfileBPEOProfileUsageCode | — |
+
+### [[advancementreadinesspvo_viewall|AdvancementReadinessPVO_Viewall]] (HCM · BICC: 1/9)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | ProfileBPEOBusinessGroupId | — |
+| LAST_UPDATE_DATE | ProfileBPEOLastUpdateDate | ✅ |
+| OWNER_PERSON_ID | ProfileBPEOOwnerPersonId | — |
+| PARTY_ID | ProfileBPEOPartyId | — |
+| PERSON_ID | ProfileBPEOPersonId | — |
+| PROFILE_CODE | ProfileBPEOProfileCode | — |
+| PROFILE_ID | ProfileBPEOProfileId | — |
+| PROFILE_TYPE_ID | ProfileBPEOProfileTypeId | — |
+| PROFILE_USAGE_CODE | ProfileBPEOProfileUsageCode | — |
+
+### [[calibratedoverallcompetenciespvo|CalibratedOverallCompetenciesPVO]] (HCM · BICC: 2/14)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | ProfileBPEOBusinessGroupId | — |
+| CREATED_BY | ProfileBPEOCreatedBy | — |
+| CREATION_DATE | ProfileBPEOCreationDate | — |
+| LAST_UPDATE_DATE | ProfileBPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ProfileBPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | ProfileBPEOLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | ProfileBPEOObjectVersionNumber | — |
+| OWNER_PERSON_ID | ProfileBPEOOwnerPersonId | — |
+| PARTY_ID | ProfileBPEOPartyId | — |
+| PERSON_ID | ProfileBPEOPersonId | — |
+| PROFILE_CODE | ProfileBPEOProfileCode | — |
+| PROFILE_ID | ProfileBPEOProfileId | ✅ |
+| PROFILE_TYPE_ID | ProfileBPEOProfileTypeId | — |
+| PROFILE_USAGE_CODE | ProfileBPEOProfileUsageCode | — |
+
+### [[calibratedoverallgoalpvo|CalibratedOverallGoalPVO]] (HCM · BICC: 2/14)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | ProfileBPEOBusinessGroupId | — |
+| CREATED_BY | ProfileBPEOCreatedBy | — |
+| CREATION_DATE | ProfileBPEOCreationDate | — |
+| LAST_UPDATE_DATE | ProfileBPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ProfileBPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | ProfileBPEOLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | ProfileBPEOObjectVersionNumber | — |
+| OWNER_PERSON_ID | ProfileBPEOOwnerPersonId | — |
+| PARTY_ID | ProfileBPEOPartyId | — |
+| PERSON_ID | ProfileBPEOPersonId | — |
+| PROFILE_CODE | ProfileBPEOProfileCode | — |
+| PROFILE_ID | ProfileBPEOProfileId | ✅ |
+| PROFILE_TYPE_ID | ProfileBPEOProfileTypeId | — |
+| PROFILE_USAGE_CODE | ProfileBPEOProfileUsageCode | — |
+
+### [[calibratedperformancepvo|CalibratedPerformancePVO]] (HCM · BICC: 2/14)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | ProfileBPEOBusinessGroupId | — |
+| CREATED_BY | ProfileBPEOCreatedBy | — |
+| CREATION_DATE | ProfileBPEOCreationDate | — |
+| LAST_UPDATE_DATE | ProfileBPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ProfileBPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | ProfileBPEOLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | ProfileBPEOObjectVersionNumber | — |
+| OWNER_PERSON_ID | ProfileBPEOOwnerPersonId | — |
+| PARTY_ID | ProfileBPEOPartyId | — |
+| PERSON_ID | ProfileBPEOPersonId | — |
+| PROFILE_CODE | ProfileBPEOProfileCode | — |
+| PROFILE_ID | ProfileBPEOProfileId | ✅ |
+| PROFILE_TYPE_ID | ProfileBPEOProfileTypeId | — |
+| PROFILE_USAGE_CODE | ProfileBPEOProfileUsageCode | — |
+
+### [[calibratedperformancepvo_viewall|CalibratedPerformancePVO_Viewall]] (HCM · BICC: 2/14)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | ProfileBPEOBusinessGroupId | — |
+| CREATED_BY | ProfileBPEOCreatedBy | — |
+| CREATION_DATE | ProfileBPEOCreationDate | — |
+| LAST_UPDATE_DATE | ProfileBPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ProfileBPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | ProfileBPEOLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | ProfileBPEOObjectVersionNumber | — |
+| OWNER_PERSON_ID | ProfileBPEOOwnerPersonId | — |
+| PARTY_ID | ProfileBPEOPartyId | — |
+| PERSON_ID | ProfileBPEOPersonId | — |
+| PROFILE_CODE | ProfileBPEOProfileCode | — |
+| PROFILE_ID | ProfileBPEOProfileId | ✅ |
+| PROFILE_TYPE_ID | ProfileBPEOProfileTypeId | — |
+| PROFILE_USAGE_CODE | ProfileBPEOProfileUsageCode | — |
+
+### [[calibratedpotentialpvo|CalibratedPotentialPVO]] (HCM · BICC: 2/14)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | ProfileBPEOBusinessGroupId | — |
+| CREATED_BY | ProfileBPEOCreatedBy | — |
+| CREATION_DATE | ProfileBPEOCreationDate | — |
+| LAST_UPDATE_DATE | ProfileBPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ProfileBPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | ProfileBPEOLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | ProfileBPEOObjectVersionNumber | — |
+| OWNER_PERSON_ID | ProfileBPEOOwnerPersonId | — |
+| PARTY_ID | ProfileBPEOPartyId | — |
+| PERSON_ID | ProfileBPEOPersonId | — |
+| PROFILE_CODE | ProfileBPEOProfileCode | — |
+| PROFILE_ID | ProfileBPEOProfileId | ✅ |
+| PROFILE_TYPE_ID | ProfileBPEOProfileTypeId | — |
+| PROFILE_USAGE_CODE | ProfileBPEOProfileUsageCode | — |
+
+### [[calibratedpotentialpvo_viewall|CalibratedPotentialPVO_Viewall]] (HCM · BICC: 2/14)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | ProfileBPEOBusinessGroupId | — |
+| CREATED_BY | ProfileBPEOCreatedBy | — |
+| CREATION_DATE | ProfileBPEOCreationDate | — |
+| LAST_UPDATE_DATE | ProfileBPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ProfileBPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | ProfileBPEOLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | ProfileBPEOObjectVersionNumber | — |
+| OWNER_PERSON_ID | ProfileBPEOOwnerPersonId | — |
+| PARTY_ID | ProfileBPEOPartyId | — |
+| PERSON_ID | ProfileBPEOPersonId | — |
+| PROFILE_CODE | ProfileBPEOProfileCode | — |
+| PROFILE_ID | ProfileBPEOProfileId | ✅ |
+| PROFILE_TYPE_ID | ProfileBPEOProfileTypeId | — |
+| PROFILE_USAGE_CODE | ProfileBPEOProfileUsageCode | — |
+
+### [[calibratedriskpvo|CalibratedRiskPVO]] (HCM · BICC: 2/14)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | ProfileBPEOBusinessGroupId | — |
+| CREATED_BY | ProfileBPEOCreatedBy | — |
+| CREATION_DATE | ProfileBPEOCreationDate | — |
+| LAST_UPDATE_DATE | ProfileBPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ProfileBPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | ProfileBPEOLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | ProfileBPEOObjectVersionNumber | — |
+| OWNER_PERSON_ID | ProfileBPEOOwnerPersonId | — |
+| PARTY_ID | ProfileBPEOPartyId | — |
+| PERSON_ID | ProfileBPEOPersonId | — |
+| PROFILE_CODE | ProfileBPEOProfileCode | — |
+| PROFILE_ID | ProfileBPEOProfileId | ✅ |
+| PROFILE_TYPE_ID | ProfileBPEOProfileTypeId | — |
+| PROFILE_USAGE_CODE | ProfileBPEOProfileUsageCode | — |
+
+### [[calibratedriskpvo_viewall|CalibratedRiskPVO_Viewall]] (HCM · BICC: 2/14)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | ProfileBPEOBusinessGroupId | — |
+| CREATED_BY | ProfileBPEOCreatedBy | — |
+| CREATION_DATE | ProfileBPEOCreationDate | — |
+| LAST_UPDATE_DATE | ProfileBPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ProfileBPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | ProfileBPEOLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | ProfileBPEOObjectVersionNumber | — |
+| OWNER_PERSON_ID | ProfileBPEOOwnerPersonId | — |
+| PARTY_ID | ProfileBPEOPartyId | — |
+| PERSON_ID | ProfileBPEOPersonId | — |
+| PROFILE_CODE | ProfileBPEOProfileCode | — |
+| PROFILE_ID | ProfileBPEOProfileId | ✅ |
+| PROFILE_TYPE_ID | ProfileBPEOProfileTypeId | — |
+| PROFILE_USAGE_CODE | ProfileBPEOProfileUsageCode | — |
+
+### [[calibratedtalentscorepvo|CalibratedTalentScorePVO]] (HCM · BICC: 2/14)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | ProfileBPEOBusinessGroupId | — |
+| CREATED_BY | ProfileBPEOCreatedBy | — |
+| CREATION_DATE | ProfileBPEOCreationDate | — |
+| LAST_UPDATE_DATE | ProfileBPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ProfileBPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | ProfileBPEOLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | ProfileBPEOObjectVersionNumber | — |
+| OWNER_PERSON_ID | ProfileBPEOOwnerPersonId | — |
+| PARTY_ID | ProfileBPEOPartyId | — |
+| PERSON_ID | ProfileBPEOPersonId | — |
+| PROFILE_CODE | ProfileBPEOProfileCode | — |
+| PROFILE_ID | ProfileBPEOProfileId | ✅ |
+| PROFILE_TYPE_ID | ProfileBPEOProfileTypeId | — |
+| PROFILE_USAGE_CODE | ProfileBPEOProfileUsageCode | — |
+
+### [[calibratedtalentscorepvo_viewall|CalibratedTalentScorePVO_Viewall]] (HCM · BICC: 2/14)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | ProfileBPEOBusinessGroupId | — |
+| CREATED_BY | ProfileBPEOCreatedBy | — |
+| CREATION_DATE | ProfileBPEOCreationDate | — |
+| LAST_UPDATE_DATE | ProfileBPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ProfileBPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | ProfileBPEOLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | ProfileBPEOObjectVersionNumber | — |
+| OWNER_PERSON_ID | ProfileBPEOOwnerPersonId | — |
+| PARTY_ID | ProfileBPEOPartyId | — |
+| PERSON_ID | ProfileBPEOPersonId | — |
+| PROFILE_CODE | ProfileBPEOProfileCode | — |
+| PROFILE_ID | ProfileBPEOProfileId | ✅ |
+| PROFILE_TYPE_ID | ProfileBPEOProfileTypeId | — |
+| PROFILE_USAGE_CODE | ProfileBPEOProfileUsageCode | — |
+
+### [[competenciescalbratingpvo|CompetenciesCalbRatingPVO]] (HCM · BICC: 2/14)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | ProfileBPEOBusinessGroupId | — |
+| CREATED_BY | ProfileBPEOCreatedBy | — |
+| CREATION_DATE | ProfileBPEOCreationDate | — |
+| LAST_UPDATE_DATE | ProfileBPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ProfileBPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | ProfileBPEOLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | ProfileBPEOObjectVersionNumber | — |
+| OWNER_PERSON_ID | ProfileBPEOOwnerPersonId | — |
+| PARTY_ID | ProfileBPEOPartyId | — |
+| PERSON_ID | ProfileBPEOPersonId | — |
+| PROFILE_CODE | ProfileBPEOProfileCode | — |
+| PROFILE_ID | ProfileBPEOProfileId | ✅ |
+| PROFILE_TYPE_ID | ProfileBPEOProfileTypeId | — |
+| PROFILE_USAGE_CODE | ProfileBPEOProfileUsageCode | — |
+
+### [[competenciescalbratingpvo_viewall|CompetenciesCalbRatingPVO_ViewAll]] (HCM · BICC: 2/14)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | ProfileBPEOBusinessGroupId | — |
+| CREATED_BY | ProfileBPEOCreatedBy | — |
+| CREATION_DATE | ProfileBPEOCreationDate | — |
+| LAST_UPDATE_DATE | ProfileBPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ProfileBPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | ProfileBPEOLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | ProfileBPEOObjectVersionNumber | — |
+| OWNER_PERSON_ID | ProfileBPEOOwnerPersonId | — |
+| PARTY_ID | ProfileBPEOPartyId | — |
+| PERSON_ID | ProfileBPEOPersonId | — |
+| PROFILE_CODE | ProfileBPEOProfileCode | — |
+| PROFILE_ID | ProfileBPEOProfileId | ✅ |
+| PROFILE_TYPE_ID | ProfileBPEOProfileTypeId | — |
+| PROFILE_USAGE_CODE | ProfileBPEOProfileUsageCode | — |
+
+### [[criticalityprofileitempvo|CriticalityProfileItemPVO]] (HCM · BICC: 2/14)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | ProfileBPEOBusinessGroupId | — |
+| CREATED_BY | CreatedBy | — |
+| CREATION_DATE | CreationDate | — |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | — |
+| LAST_UPDATED_BY | LastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | — |
+| OWNER_PERSON_ID | ProfileBPEOOwnerPersonId | — |
+| PARTY_ID | ProfileBPEOPartyId | — |
+| PERSON_ID | ProfileBPEOPersonId | — |
+| PROFILE_CODE | ProfileBPEOProfileCode | — |
+| PROFILE_ID | ProfileBPEOProfileId | ✅ |
+| PROFILE_TYPE_ID | ProfileBPEOProfileTypeId | — |
+| PROFILE_USAGE_CODE | ProfileBPEOProfileUsageCode | — |
+
+### [[customcontentprofilepvo|CustomContentProfilePVO]] (HCM · BICC: 7/14)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | ProfileBPEOBusinessGroupId | ✅ |
+| CREATED_BY | CreatedBy | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | — |
+| LAST_UPDATED_BY | LastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | ✅ |
+| OWNER_PERSON_ID | ProfileBPEOOwnerPersonId | — |
+| PARTY_ID | ProfileBPEOPartyId | — |
+| PERSON_ID | ProfileBPEOPersonId | — |
+| PROFILE_CODE | ProfileBPEOProfileCode | ✅ |
+| PROFILE_ID | ProfileBPEOProfileId | ✅ |
+| PROFILE_TYPE_ID | ProfileBPEOProfileTypeId | — |
+| PROFILE_USAGE_CODE | ProfileBPEOProfileUsageCode | — |
+
+### [[customcontentprofilepvo_viewall|CustomContentProfilePVO_Viewall]] (HCM · BICC: 7/14)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | ProfileBPEOBusinessGroupId | ✅ |
+| CREATED_BY | CreatedBy | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | — |
+| LAST_UPDATED_BY | LastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | ✅ |
+| OWNER_PERSON_ID | ProfileBPEOOwnerPersonId | — |
+| PARTY_ID | ProfileBPEOPartyId | — |
+| PERSON_ID | ProfileBPEOPersonId | — |
+| PROFILE_CODE | ProfileBPEOProfileCode | ✅ |
+| PROFILE_ID | ProfileBPEOProfileId | ✅ |
+| PROFILE_TYPE_ID | ProfileBPEOProfileTypeId | — |
+| PROFILE_USAGE_CODE | ProfileBPEOProfileUsageCode | — |
+
+### [[genericprofilepvo|GenericProfilePVO]] (HCM · BICC: 2/14)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | ProfileBPEOBusinessGroupId | — |
+| CREATED_BY | CreatedBy | — |
+| CREATION_DATE | CreationDate | — |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | — |
+| LAST_UPDATED_BY | LastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | — |
+| OWNER_PERSON_ID | ProfileBPEOOwnerPersonId | — |
+| PARTY_ID | ProfileBPEOPartyId | — |
+| PERSON_ID | ProfileBPEOPersonId | — |
+| PROFILE_CODE | ProfileBPEOProfileCode | — |
+| PROFILE_ID | ProfileBPEOProfileId | ✅ |
+| PROFILE_TYPE_ID | ProfileBPEOProfileTypeId | — |
+| PROFILE_USAGE_CODE | ProfileBPEOProfileUsageCode | — |
+
+### [[goalscalibratingpvo|GoalsCalibRatingPVO]] (HCM · BICC: 2/14)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | ProfileBPEOBusinessGroupId | — |
+| CREATED_BY | ProfileBPEOCreatedBy | — |
+| CREATION_DATE | ProfileBPEOCreationDate | — |
+| LAST_UPDATE_DATE | ProfileBPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ProfileBPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | ProfileBPEOLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | ProfileBPEOObjectVersionNumber | — |
+| OWNER_PERSON_ID | ProfileBPEOOwnerPersonId | — |
+| PARTY_ID | ProfileBPEOPartyId | — |
+| PERSON_ID | ProfileBPEOPersonId | — |
+| PROFILE_CODE | ProfileBPEOProfileCode | — |
+| PROFILE_ID | ProfileBPEOProfileId | ✅ |
+| PROFILE_TYPE_ID | ProfileBPEOProfileTypeId | — |
+| PROFILE_USAGE_CODE | ProfileBPEOProfileUsageCode | — |
+
+### [[goalscalibratingpvo_viewall|GoalsCalibRatingPVO_ViewAll]] (HCM · BICC: 2/14)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | ProfileBPEOBusinessGroupId | — |
+| CREATED_BY | ProfileBPEOCreatedBy | — |
+| CREATION_DATE | ProfileBPEOCreationDate | — |
+| LAST_UPDATE_DATE | ProfileBPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ProfileBPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | ProfileBPEOLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | ProfileBPEOObjectVersionNumber | — |
+| OWNER_PERSON_ID | ProfileBPEOOwnerPersonId | — |
+| PARTY_ID | ProfileBPEOPartyId | — |
+| PERSON_ID | ProfileBPEOPersonId | — |
+| PROFILE_CODE | ProfileBPEOProfileCode | — |
+| PROFILE_ID | ProfileBPEOProfileId | ✅ |
+| PROFILE_TYPE_ID | ProfileBPEOProfileTypeId | — |
+| PROFILE_USAGE_CODE | ProfileBPEOProfileUsageCode | — |
+
+### [[goaltargetoutcomeprofilespvo|GoalTargetOutcomeProfilesPVO]] (HCM · BICC: 1/1)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| PROFILE_ID | ProfileId | ✅ |
+
+### [[impactoflosscalibratingpvo|ImpactOfLossCalibRatingPVO]] (HCM · BICC: 2/14)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | ProfileBPEOBusinessGroupId | — |
+| CREATED_BY | ProfileBPEOCreatedBy | — |
+| CREATION_DATE | ProfileBPEOCreationDate | — |
+| LAST_UPDATE_DATE | ProfileBPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ProfileBPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | ProfileBPEOLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | ProfileBPEOObjectVersionNumber | — |
+| OWNER_PERSON_ID | ProfileBPEOOwnerPersonId | — |
+| PARTY_ID | ProfileBPEOPartyId | — |
+| PERSON_ID | ProfileBPEOPersonId | — |
+| PROFILE_CODE | ProfileBPEOProfileCode | — |
+| PROFILE_ID | ProfileBPEOProfileId | ✅ |
+| PROFILE_TYPE_ID | ProfileBPEOProfileTypeId | — |
+| PROFILE_USAGE_CODE | ProfileBPEOProfileUsageCode | — |
+
+### [[impactoflosscalibratingpvo_viewall|ImpactOfLossCalibRatingPVO_ViewAll]] (HCM · BICC: 2/14)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | ProfileBPEOBusinessGroupId | — |
+| CREATED_BY | ProfileBPEOCreatedBy | — |
+| CREATION_DATE | ProfileBPEOCreationDate | — |
+| LAST_UPDATE_DATE | ProfileBPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ProfileBPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | ProfileBPEOLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | ProfileBPEOObjectVersionNumber | — |
+| OWNER_PERSON_ID | ProfileBPEOOwnerPersonId | — |
+| PARTY_ID | ProfileBPEOPartyId | — |
+| PERSON_ID | ProfileBPEOPersonId | — |
+| PROFILE_CODE | ProfileBPEOProfileCode | — |
+| PROFILE_ID | ProfileBPEOProfileId | ✅ |
+| PROFILE_TYPE_ID | ProfileBPEOProfileTypeId | — |
+| PROFILE_USAGE_CODE | ProfileBPEOProfileUsageCode | — |
+
+### [[jobprofilepvo|JobProfilePVO]] (HCM · BICC: 2/15)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | ProfileBPEOBusinessGroupId | — |
+| CREATED_BY | ProfileBPEOCreatedBy | — |
+| CREATION_DATE | ProfileBPEOCreationDate | — |
+| LAST_UPDATE_DATE | ProfileBPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ProfileBPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | ProfileBPEOLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | ProfileBPEOObjectVersionNumber | — |
+| OWNER_PERSON_ID | ProfileBPEOOwnerPersonId | — |
+| PARTY_ID | ProfileBPEOPartyId | — |
+| PERSON_ID | ProfileBPEOPersonId | — |
+| PROFILE_CODE | ProfileBPEOProfileCode | — |
+| PROFILE_ID | ProfileBPEOProfileId | ✅ |
+| PROFILE_TYPE_ID | ProfileBPEOProfileTypeId | — |
+| PROFILE_USAGE_CODE | ProfileBPEOProfileUsageCode | — |
+| REVIEW_REQD_FLAG | ProfileBPEOReviewRequiredFlag | — |
+
+### [[meetingfactpvo|MeetingFactPVO]] (HCM · BICC: 2/14)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | ProfileBPEOBusinessGroupId | — |
+| CREATED_BY | ProfileBPEOCreatedBy | — |
+| CREATION_DATE | ProfileBPEOCreationDate | — |
+| LAST_UPDATE_DATE | ProfileBPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ProfileBPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | ProfileBPEOLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | ProfileBPEOObjectVersionNumber | — |
+| OWNER_PERSON_ID | OwnerPersonId | — |
+| PARTY_ID | PartyId | — |
+| PERSON_ID | PersonId | — |
+| PROFILE_CODE | ProfileCode | — |
+| PROFILE_ID | ProfileId | ✅ |
+| PROFILE_TYPE_ID | ProfileTypeId | — |
+| PROFILE_USAGE_CODE | ProfileUsageCode | — |
+
+### [[modelprofileitempvo|ModelProfileItemPVO]] (HCM · BICC: 12/15)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | ProfileBPEOBusinessGroupId | ✅ |
+| CREATED_BY | CreatedBy | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | LastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | — |
+| OWNER_PERSON_ID | ProfileBPEOOwnerPersonId | ✅ |
+| PARTY_ID | ProfileBPEOPartyId | — |
+| PERSON_ID | ProfileBPEOPersonId | ✅ |
+| PROFILE_CODE | ProfileBPEOProfileCode | ✅ |
+| PROFILE_ID | ProfileBPEOProfileId | ✅ |
+| PROFILE_TYPE_ID | ProfileBPEOProfileTypeId | ✅ |
+| PROFILE_USAGE_CODE | ProfileBPEOProfileUsageCode | ✅ |
+| REVIEW_REQD_FLAG | ProfileBPEOReviewReqdFlag | — |
+
+### [[modelprofilepvo|ModelProfilePVO]] (HCM · BICC: 14/15)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | ProfileBPEOBusinessGroupId | ✅ |
+| CREATED_BY | CreatedBy | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | LastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | ✅ |
+| OWNER_PERSON_ID | ProfileBPEOOwnerPersonId | ✅ |
+| PARTY_ID | ProfileBPEOPartyId | ✅ |
+| PERSON_ID | ProfileBPEOPersonId | ✅ |
+| PROFILE_CODE | ProfileBPEOProfileCode | ✅ |
+| PROFILE_ID | ProfileBPEOProfileId | ✅ |
+| PROFILE_TYPE_ID | ProfileBPEOProfileTypeId | ✅ |
+| PROFILE_USAGE_CODE | ProfileBPEOProfileUsageCode | ✅ |
+| REVIEW_REQD_FLAG | ProfileBPEOReviewRequiredFlag | — |
+
+### [[nboxdimensionpvo|NBoxDimensionPVO]] (HCM · BICC: 3/14)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | ProfileBPEOBusinessGroupId | — |
+| CREATED_BY | ProfileBPEOCreatedBy | — |
+| CREATION_DATE | ProfileBPEOCreationDate | — |
+| LAST_UPDATE_DATE | ProfileBPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ProfileBPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | ProfileBPEOLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | ProfileBPEOObjectVersionNumber | — |
+| OWNER_PERSON_ID | ProfileBPEOOwnerPersonId | — |
+| PARTY_ID | ProfileBPEOPartyId | — |
+| PERSON_ID | ProfileBPEOPersonId | ✅ |
+| PROFILE_CODE | ProfileBPEOProfileCode | — |
+| PROFILE_ID | ProfileId | ✅ |
+| PROFILE_TYPE_ID | ProfileBPEOProfileTypeId | — |
+| PROFILE_USAGE_CODE | ProfileBPEOProfileUsageCode | — |
+
+### [[performancecalibratedratingvo|PerformanceCalibratedRatingVO]] (HCM · BICC: 2/14)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | ProfileBPEOBusinessGroupId | — |
+| CREATED_BY | ProfileBPEOCreatedBy | — |
+| CREATION_DATE | ProfileBPEOCreationDate | — |
+| LAST_UPDATE_DATE | ProfileBPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ProfileBPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | ProfileBPEOLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | ProfileBPEOObjectVersionNumber | — |
+| OWNER_PERSON_ID | ProfileBPEOOwnerPersonId | — |
+| PARTY_ID | ProfileBPEOPartyId | — |
+| PERSON_ID | ProfileBPEOPersonId | — |
+| PROFILE_CODE | ProfileBPEOProfileCode | — |
+| PROFILE_ID | ProfileBPEOProfileId | ✅ |
+| PROFILE_TYPE_ID | ProfileBPEOProfileTypeId | — |
+| PROFILE_USAGE_CODE | ProfileBPEOProfileUsageCode | — |
+
+### [[performancecalibratedratingvo_viewall|PerformanceCalibratedRatingVO_ViewAll]] (HCM · BICC: 2/14)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | ProfileBPEOBusinessGroupId | — |
+| CREATED_BY | ProfileBPEOCreatedBy | — |
+| CREATION_DATE | ProfileBPEOCreationDate | — |
+| LAST_UPDATE_DATE | ProfileBPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ProfileBPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | ProfileBPEOLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | ProfileBPEOObjectVersionNumber | — |
+| OWNER_PERSON_ID | ProfileBPEOOwnerPersonId | — |
+| PARTY_ID | ProfileBPEOPartyId | — |
+| PERSON_ID | ProfileBPEOPersonId | — |
+| PROFILE_CODE | ProfileBPEOProfileCode | — |
+| PROFILE_ID | ProfileBPEOProfileId | ✅ |
+| PROFILE_TYPE_ID | ProfileBPEOProfileTypeId | — |
+| PROFILE_USAGE_CODE | ProfileBPEOProfileUsageCode | — |
+
+### [[performancepotentialboxsequencepvo|PerformancePotentialBoxSequencePVO]] (HCM · BICC: 4/14)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | ProfileBPEOBusinessGroupId | ✅ |
+| CREATED_BY | CreatedBy | — |
+| CREATION_DATE | CreationDate | — |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | — |
+| LAST_UPDATED_BY | LastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | — |
+| OWNER_PERSON_ID | ProfileBPEOOwnerPersonId | — |
+| PARTY_ID | ProfileBPEOPartyId | — |
+| PERSON_ID | ProfileBPEOPersonId | ✅ |
+| PROFILE_CODE | ProfileBPEOProfileCode | — |
+| PROFILE_ID | ProfileBPEOProfileId | ✅ |
+| PROFILE_TYPE_ID | ProfileBPEOProfileTypeId | — |
+| PROFILE_USAGE_CODE | ProfileBPEOProfileUsageCode | — |
+
+### [[performancepotentialboxsequencepvo_viewall|PerformancePotentialBoxSequencePVO_Viewall]] (HCM · BICC: 4/14)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | ProfileBPEOBusinessGroupId | ✅ |
+| CREATED_BY | CreatedBy | — |
+| CREATION_DATE | CreationDate | — |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | — |
+| LAST_UPDATED_BY | LastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | — |
+| OWNER_PERSON_ID | ProfileBPEOOwnerPersonId | — |
+| PARTY_ID | ProfileBPEOPartyId | — |
+| PERSON_ID | ProfileBPEOPersonId | ✅ |
+| PROFILE_CODE | ProfileBPEOProfileCode | — |
+| PROFILE_ID | ProfileBPEOProfileId | ✅ |
+| PROFILE_TYPE_ID | ProfileBPEOProfileTypeId | — |
+| PROFILE_USAGE_CODE | ProfileBPEOProfileUsageCode | — |
+
+### [[personprofileitempvo|PersonProfileItemPVO]] (HCM · BICC: 7/14)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | ProfileBPEOBusinessGroupId | ✅ |
+| CREATED_BY | CreatedBy | — |
+| CREATION_DATE | CreationDate | — |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | — |
+| LAST_UPDATED_BY | LastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | — |
+| OWNER_PERSON_ID | ProfileBPEOOwnerPersonId | — |
+| PARTY_ID | ProfileBPEOPartyId | ✅ |
+| PERSON_ID | ProfileBPEOPersonId | ✅ |
+| PROFILE_CODE | ProfileBPEOProfileCode | ✅ |
+| PROFILE_ID | ProfileBPEOProfileId | ✅ |
+| PROFILE_TYPE_ID | ProfileBPEOProfileTypeId | — |
+| PROFILE_USAGE_CODE | ProfileBPEOProfileUsageCode | ✅ |
+
+### [[personprofileperformanceratingpvo|PersonProfilePerformanceRatingPVO]] (HCM · BICC: 2/14)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | ProfileBPEOBusinessGroupId | — |
+| CREATED_BY | CreatedBy | — |
+| CREATION_DATE | CreationDate | — |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | — |
+| LAST_UPDATED_BY | LastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | — |
+| OWNER_PERSON_ID | ProfileBPEOOwnerPersonId | — |
+| PARTY_ID | ProfileBPEOPartyId | — |
+| PERSON_ID | ProfileBPEOPersonId | — |
+| PROFILE_CODE | ProfileBPEOProfileCode | — |
+| PROFILE_ID | ProfileBPEOProfileId | ✅ |
+| PROFILE_TYPE_ID | ProfileBPEOProfileTypeId | — |
+| PROFILE_USAGE_CODE | ProfileBPEOProfileUsageCode | — |
+
+### [[personprofilepvo|PersonProfilePVO]] (HCM · BICC: 14/14)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | ProfileBPEOBusinessGroupId | ✅ |
+| CREATED_BY | CreatedBy | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | LastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | ✅ |
+| OWNER_PERSON_ID | ProfileBPEOOwnerPersonId | ✅ |
+| PARTY_ID | ProfileBPEOPartyId | ✅ |
+| PERSON_ID | ProfileBPEOPersonId | ✅ |
+| PROFILE_CODE | ProfileBPEOProfileCode | ✅ |
+| PROFILE_ID | ProfileBPEOProfileId | ✅ |
+| PROFILE_TYPE_ID | ProfileBPEOProfileTypeId | ✅ |
+| PROFILE_USAGE_CODE | ProfileBPEOProfileUsageCode | ✅ |
+
+### [[planreadinesspvo|PlanReadinessPVO]] (HCM · BICC: 8/9)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | ProfileBPEOBusinessGroupId | ✅ |
+| LAST_UPDATE_DATE | ProfileBPEOLastUpdateDate | — |
+| OWNER_PERSON_ID | ProfileBPEOOwnerPersonId | ✅ |
+| PARTY_ID | ProfileBPEOPartyId | ✅ |
+| PERSON_ID | ProfileBPEOPersonId | ✅ |
+| PROFILE_CODE | ProfileBPEOProfileCode | ✅ |
+| PROFILE_ID | ProfileBPEOProfileId | ✅ |
+| PROFILE_TYPE_ID | ProfileBPEOProfileTypeId | ✅ |
+| PROFILE_USAGE_CODE | ProfileBPEOProfileUsageCode | ✅ |
+
+### [[potentialcalibratedratingvo|PotentialCalibratedRatingVO]] (HCM · BICC: 2/14)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | ProfileBPEOBusinessGroupId | — |
+| CREATED_BY | ProfileBPEOCreatedBy | — |
+| CREATION_DATE | ProfileBPEOCreationDate | — |
+| LAST_UPDATE_DATE | ProfileBPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ProfileBPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | ProfileBPEOLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | ProfileBPEOObjectVersionNumber | — |
+| OWNER_PERSON_ID | ProfileBPEOOwnerPersonId | — |
+| PARTY_ID | ProfileBPEOPartyId | — |
+| PERSON_ID | ProfileBPEOPersonId | — |
+| PROFILE_CODE | ProfileBPEOProfileCode | — |
+| PROFILE_ID | ProfileBPEOProfileId | ✅ |
+| PROFILE_TYPE_ID | ProfileBPEOProfileTypeId | — |
+| PROFILE_USAGE_CODE | ProfileBPEOProfileUsageCode | — |
+
+### [[potentialcalibratedratingvo_viewall|PotentialCalibratedRatingVO_ViewAll]] (HCM · BICC: 2/14)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | ProfileBPEOBusinessGroupId | — |
+| CREATED_BY | ProfileBPEOCreatedBy | — |
+| CREATION_DATE | ProfileBPEOCreationDate | — |
+| LAST_UPDATE_DATE | ProfileBPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ProfileBPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | ProfileBPEOLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | ProfileBPEOObjectVersionNumber | — |
+| OWNER_PERSON_ID | ProfileBPEOOwnerPersonId | — |
+| PARTY_ID | ProfileBPEOPartyId | — |
+| PERSON_ID | ProfileBPEOPersonId | — |
+| PROFILE_CODE | ProfileBPEOProfileCode | — |
+| PROFILE_ID | ProfileBPEOProfileId | ✅ |
+| PROFILE_TYPE_ID | ProfileBPEOProfileTypeId | — |
+| PROFILE_USAGE_CODE | ProfileBPEOProfileUsageCode | — |
+
+### [[potentialpvo|PotentialPVO]] (HCM · BICC: 9/9)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | ProfileBPEOBusinessGroupId | ✅ |
+| LAST_UPDATE_DATE | ProfileBPEOLastUpdateDate | ✅ |
+| OWNER_PERSON_ID | ProfileBPEOOwnerPersonId | ✅ |
+| PARTY_ID | ProfileBPEOPartyId | ✅ |
+| PERSON_ID | ProfileBPEOPersonId | ✅ |
+| PROFILE_CODE | ProfileBPEOProfileCode | ✅ |
+| PROFILE_ID | ProfileBPEOProfileId | ✅ |
+| PROFILE_TYPE_ID | ProfileBPEOProfileTypeId | ✅ |
+| PROFILE_USAGE_CODE | ProfileBPEOProfileUsageCode | ✅ |
+
+### [[potentialpvo_viewall|PotentialPVO_Viewall]] (HCM · BICC: 1/9)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | ProfileBPEOBusinessGroupId | — |
+| LAST_UPDATE_DATE | ProfileBPEOLastUpdateDate | ✅ |
+| OWNER_PERSON_ID | ProfileBPEOOwnerPersonId | — |
+| PARTY_ID | ProfileBPEOPartyId | — |
+| PERSON_ID | ProfileBPEOPersonId | — |
+| PROFILE_CODE | ProfileBPEOProfileCode | — |
+| PROFILE_ID | ProfileBPEOProfileId | — |
+| PROFILE_TYPE_ID | ProfileBPEOProfileTypeId | — |
+| PROFILE_USAGE_CODE | ProfileBPEOProfileUsageCode | — |
+
+### [[previousemploymentprofilepvo|PreviousEmploymentProfilePVO]] (HCM · BICC: 2/14)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | ProfileBPEOBusinessGroupId | — |
+| CREATED_BY | CreatedBy | — |
+| CREATION_DATE | CreationDate | — |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | — |
+| LAST_UPDATED_BY | LastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | — |
+| OWNER_PERSON_ID | ProfileBPEOOwnerPersonId | — |
+| PARTY_ID | ProfileBPEOPartyId | — |
+| PERSON_ID | ProfileBPEOPersonId | — |
+| PROFILE_CODE | ProfileBPEOProfileCode | — |
+| PROFILE_ID | ProfileBPEOProfileId | ✅ |
+| PROFILE_TYPE_ID | ProfileBPEOProfileTypeId | — |
+| PROFILE_USAGE_CODE | ProfileBPEOProfileUsageCode | — |
+
+### [[previousemploymentpvo|PreviousEmploymentPVO]] (HCM · BICC: 2/14)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | ProfileBPEOBusinessGroupId | — |
+| CREATED_BY | CreatedBy | — |
+| CREATION_DATE | CreationDate | — |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | — |
+| LAST_UPDATED_BY | LastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | — |
+| OWNER_PERSON_ID | ProfileBPEOOwnerPersonId | — |
+| PARTY_ID | ProfileBPEOPartyId | — |
+| PERSON_ID | ProfileBPEOPersonId | — |
+| PROFILE_CODE | ProfileBPEOProfileCode | — |
+| PROFILE_ID | ProfileBPEOProfileId | ✅ |
+| PROFILE_TYPE_ID | ProfileBPEOProfileTypeId | — |
+| PROFILE_USAGE_CODE | ProfileBPEOProfileUsageCode | — |
+
+### [[riskoflosscalibratingpvo|RiskOfLossCalibRatingPVO]] (HCM · BICC: 2/14)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | ProfileBPEOBusinessGroupId | — |
+| CREATED_BY | ProfileBPEOCreatedBy | — |
+| CREATION_DATE | ProfileBPEOCreationDate | — |
+| LAST_UPDATE_DATE | ProfileBPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ProfileBPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | ProfileBPEOLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | ProfileBPEOObjectVersionNumber | — |
+| OWNER_PERSON_ID | ProfileBPEOOwnerPersonId | — |
+| PARTY_ID | ProfileBPEOPartyId | — |
+| PERSON_ID | ProfileBPEOPersonId | — |
+| PROFILE_CODE | ProfileBPEOProfileCode | — |
+| PROFILE_ID | ProfileBPEOProfileId | ✅ |
+| PROFILE_TYPE_ID | ProfileBPEOProfileTypeId | — |
+| PROFILE_USAGE_CODE | ProfileBPEOProfileUsageCode | — |
+
+### [[riskoflosscalibratingpvo_viewall|RiskOfLossCalibRatingPVO_ViewAll]] (HCM · BICC: 2/14)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | ProfileBPEOBusinessGroupId | — |
+| CREATED_BY | ProfileBPEOCreatedBy | — |
+| CREATION_DATE | ProfileBPEOCreationDate | — |
+| LAST_UPDATE_DATE | ProfileBPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ProfileBPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | ProfileBPEOLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | ProfileBPEOObjectVersionNumber | — |
+| OWNER_PERSON_ID | ProfileBPEOOwnerPersonId | — |
+| PARTY_ID | ProfileBPEOPartyId | — |
+| PERSON_ID | ProfileBPEOPersonId | — |
+| PROFILE_CODE | ProfileBPEOProfileCode | — |
+| PROFILE_ID | ProfileBPEOProfileId | ✅ |
+| PROFILE_TYPE_ID | ProfileBPEOProfileTypeId | — |
+| PROFILE_USAGE_CODE | ProfileBPEOProfileUsageCode | — |
+
+### [[riskpvo|RiskPVO]] (HCM · BICC: 1/9)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | ProfileBPEOBusinessGroupId | — |
+| LAST_UPDATE_DATE | ProfileBPEOLastUpdateDate | ✅ |
+| OWNER_PERSON_ID | ProfileBPEOOwnerPersonId | — |
+| PARTY_ID | ProfileBPEOPartyId | — |
+| PERSON_ID | ProfileBPEOPersonId | — |
+| PROFILE_CODE | ProfileBPEOProfileCode | — |
+| PROFILE_ID | ProfileBPEOProfileId | — |
+| PROFILE_TYPE_ID | ProfileBPEOProfileTypeId | — |
+| PROFILE_USAGE_CODE | ProfileBPEOProfileUsageCode | — |
+
+### [[riskpvo_viewall|RiskPVO_Viewall]] (HCM · BICC: 1/9)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | ProfileBPEOBusinessGroupId | — |
+| LAST_UPDATE_DATE | ProfileBPEOLastUpdateDate | ✅ |
+| OWNER_PERSON_ID | ProfileBPEOOwnerPersonId | — |
+| PARTY_ID | ProfileBPEOPartyId | — |
+| PERSON_ID | ProfileBPEOPersonId | — |
+| PROFILE_CODE | ProfileBPEOProfileCode | — |
+| PROFILE_ID | ProfileBPEOProfileId | — |
+| PROFILE_TYPE_ID | ProfileBPEOProfileTypeId | — |
+| PROFILE_USAGE_CODE | ProfileBPEOProfileUsageCode | — |
+
+### [[talentscoreboxsequencepvo|TalentScoreBoxSequencePVO]] (HCM · BICC: 4/14)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | ProfileBPEOBusinessGroupId | ✅ |
+| CREATED_BY | CreatedBy | — |
+| CREATION_DATE | CreationDate | — |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | — |
+| LAST_UPDATED_BY | LastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | — |
+| OWNER_PERSON_ID | ProfileBPEOOwnerPersonId | — |
+| PARTY_ID | ProfileBPEOPartyId | — |
+| PERSON_ID | ProfileBPEOPersonId | ✅ |
+| PROFILE_CODE | ProfileBPEOProfileCode | — |
+| PROFILE_ID | ProfileBPEOProfileId | ✅ |
+| PROFILE_TYPE_ID | ProfileBPEOProfileTypeId | — |
+| PROFILE_USAGE_CODE | ProfileBPEOProfileUsageCode | — |
+
+### [[talentscoreboxsequencepvo_viewall|TalentScoreBoxSequencePVO_Viewall]] (HCM · BICC: 4/14)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | ProfileBPEOBusinessGroupId | ✅ |
+| CREATED_BY | CreatedBy | — |
+| CREATION_DATE | CreationDate | — |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | — |
+| LAST_UPDATED_BY | LastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | — |
+| OWNER_PERSON_ID | ProfileBPEOOwnerPersonId | — |
+| PARTY_ID | ProfileBPEOPartyId | — |
+| PERSON_ID | ProfileBPEOPersonId | ✅ |
+| PROFILE_CODE | ProfileBPEOProfileCode | — |
+| PROFILE_ID | ProfileBPEOProfileId | ✅ |
+| PROFILE_TYPE_ID | ProfileBPEOProfileTypeId | — |
+| PROFILE_USAGE_CODE | ProfileBPEOProfileUsageCode | — |
+
+### [[talentscorecalibratingpvo|TalentScoreCalibRatingPVO]] (HCM · BICC: 2/14)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | ProfileBPEOBusinessGroupId | — |
+| CREATED_BY | ProfileBPEOCreatedBy | — |
+| CREATION_DATE | ProfileBPEOCreationDate | — |
+| LAST_UPDATE_DATE | ProfileBPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ProfileBPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | ProfileBPEOLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | ProfileBPEOObjectVersionNumber | — |
+| OWNER_PERSON_ID | ProfileBPEOOwnerPersonId | — |
+| PARTY_ID | ProfileBPEOPartyId | — |
+| PERSON_ID | ProfileBPEOPersonId | — |
+| PROFILE_CODE | ProfileBPEOProfileCode | — |
+| PROFILE_ID | ProfileBPEOProfileId | ✅ |
+| PROFILE_TYPE_ID | ProfileBPEOProfileTypeId | — |
+| PROFILE_USAGE_CODE | ProfileBPEOProfileUsageCode | — |
+
+### [[talentscorecalibratingpvo_viewall|TalentScoreCalibRatingPVO_ViewAll]] (HCM · BICC: 2/14)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | ProfileBPEOBusinessGroupId | — |
+| CREATED_BY | ProfileBPEOCreatedBy | — |
+| CREATION_DATE | ProfileBPEOCreationDate | — |
+| LAST_UPDATE_DATE | ProfileBPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ProfileBPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | ProfileBPEOLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | ProfileBPEOObjectVersionNumber | — |
+| OWNER_PERSON_ID | ProfileBPEOOwnerPersonId | — |
+| PARTY_ID | ProfileBPEOPartyId | — |
+| PERSON_ID | ProfileBPEOPersonId | — |
+| PROFILE_CODE | ProfileBPEOProfileCode | — |
+| PROFILE_ID | ProfileBPEOProfileId | ✅ |
+| PROFILE_TYPE_ID | ProfileBPEOProfileTypeId | — |
+| PROFILE_USAGE_CODE | ProfileBPEOProfileUsageCode | — |
+
+### [[talentscorepvo|TalentScorePVO]] (HCM · BICC: 2/14)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | PrfBusinessGroupId | — |
+| CREATED_BY | PrfCreatedBy | — |
+| CREATION_DATE | PrfCreationDate | — |
+| LAST_UPDATE_DATE | PrfLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | PrfLastUpdateLogin | — |
+| LAST_UPDATED_BY | PrfLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | PrfObjectVersionNumber | — |
+| OWNER_PERSON_ID | PrfOwnerPersonId | — |
+| PARTY_ID | PrfPartyId | — |
+| PERSON_ID | PrfPersonId | — |
+| PROFILE_CODE | PrfProfileCode | — |
+| PROFILE_ID | PrfProfileId | ✅ |
+| PROFILE_TYPE_ID | PrfProfileTypeId | — |
+| PROFILE_USAGE_CODE | PrfProfileUsageCode | — |
+
+### [[technicalpostpvo|TechnicalPostPVO]] (HCM · BICC: 2/14)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | ProfileBPEOBusinessGroupId | — |
+| CREATED_BY | CreatedBy | — |
+| CREATION_DATE | CreationDate | — |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | — |
+| LAST_UPDATED_BY | LastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | — |
+| OWNER_PERSON_ID | ProfileBPEOOwnerPersonId | — |
+| PARTY_ID | ProfileBPEOPartyId | — |
+| PERSON_ID | ProfileBPEOPersonId | — |
+| PROFILE_CODE | ProfileBPEOProfileCode | — |
+| PROFILE_ID | ProfileBPEOProfileId | ✅ |
+| PROFILE_TYPE_ID | ProfileBPEOProfileTypeId | — |
+| PROFILE_USAGE_CODE | ProfileBPEOProfileUsageCode | — |

@@ -40,7 +40,6 @@ updated_at: 2026-03-25
 
 Armazena as **informações consolidadas de compensação por pessoa** no Compensation Workbench. Contém salário atual, salário proposto, bônus, budget alocado e outros dados do ciclo de revisão. É a **tabela transacional principal** do CWB.
 
-
 ---
 
 ## 🧠 Propósito de Negócio
@@ -119,6 +118,26 @@ WHERE  pi.MANAGER_ID = :p_manager_id
 - `COMPA_RATIO` = salário / midpoint da faixa salarial (< 1.0 = abaixo do midpoint).
 - Classificar como `restricted` ou `confidential` no Neo4j.
 - O ciclo de vida: DRAFT → SUBMITTED → APPROVED/REJECTED.
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[managerbudgetspvo|ManagerBudgetsPVO]] (HCM)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ASSIGNMENT_ID | PersonInfoPEOAssignmentId | — |
+| PERSON_EVENT_ID | PersonInfoPEOPersonEventId | — |
+| PERSON_ID | PersonInfoPEOPersonId | — |
+
+### [[managerbudgetspvoviewall|ManagerBudgetsPVOViewAll]] (HCM)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ASSIGNMENT_ID | PersonInfoPEOAssignmentId | — |
+| PERSON_EVENT_ID | PersonInfoPEOPersonEventId | — |
+| PERSON_ID | PersonInfoPEOPersonId | — |
 
 ---
 

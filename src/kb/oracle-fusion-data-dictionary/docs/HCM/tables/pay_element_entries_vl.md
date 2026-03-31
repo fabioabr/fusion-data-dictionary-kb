@@ -96,6 +96,90 @@ WHERE  vl.PAYROLL_RELATIONSHIP_ID = :p_rel_id
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[elemententry|ElementEntry]] (HCM · BICC: 28/36)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ADDITIONAL_FLAG | AdditionalFlag | — |
+| ADJUST_FLAG | AdjustFlag | — |
+| ASSIGNED_PAYROLL_ID | ElementEntryUsagesPEOAssignedPayrollId | ✅ |
+| ASSIGNMENT_ID | AssignmentId | — |
+| CREATED_BY | CreatedBy | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| CREATOR_ID | ElementEntryDPEOCreatorId | — |
+| CREATOR_TYPE | CreatorTypeLookupPEOCreatorType | ✅ |
+| CREATOR_TYPE_CODE | ElementEntryDPEOCreatorTypeCode | ✅ |
+| DATE_FROM | ElementEntryUsagesPEODateFrom | ✅ |
+| DATE_TO | ElementEntryUsagesPEODateTo | ✅ |
+| EFFECTIVE_END_DATE | EffectiveEndDate | ✅ |
+| EFFECTIVE_END_DATE1 | EffectiveEndDate1 | — |
+| EFFECTIVE_START_DATE | EffectiveStartDate | ✅ |
+| EFFECTIVE_START_DATE1 | EffectiveStartDate1 | — |
+| ELEMENT_ENTRY_ID | ElementEntryId | ✅ |
+| ELEMENT_TYPE_ID | ElementEntryDPEOElementTypeId | ✅ |
+| ENTRY_TYPE | EntryTypeLookupPEOEntryType | ✅ |
+| ENTRY_TYPE_CODE | ElementEntryDPEOEntryTypeCode | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATED_BY | LastUpdatedBy | ✅ |
+| LEGISLATIVE_DATA_GROUP_ID | LegislativeDataGroupId | — |
+| MULTIPLE_ENTRY_COUNT | EntrySequenceNumber | ✅ |
+| PAYROLL_ASSIGNMENT_ID | ElementEntryUsagesPEOPayrollAssignmentId | ✅ |
+| PAYROLL_ID | PayAssignedPayrollPEOPayrollId | ✅ |
+| PAYROLL_RELATIONSHIP_ID | ElementEntryUsagesPEOPayrollRelationshipId | ✅ |
+| PAYROLL_TERM_ID | ElementEntryUsagesPEOPayrollTermId | ✅ |
+| PERSON_ID | ElementEntryDPEOPersonId | ✅ |
+| PROCESSED_FLAG | ProcessedFlag | ✅ |
+| REASON | ElementEntryDPEOReasonCode | ✅ |
+| REASON_LOOKUP_MEANING | EntryReasonLookupPEOReason | — |
+| RETRO_FLAG | RetroFlag | ✅ |
+| STANDARD_LINK_FLAG | StandardLinkFlag | ✅ |
+| SUBPRIORITY | ElementEntryDPEOSubpriority | ✅ |
+| USAGE_LEVEL | EntryUsagesLookupPEOUsageLevel | ✅ |
+| USAGE_LEVEL_CODE | ElementEntryUsagesPEOUsageLevelCode | ✅ |
+
+### [[elemententrypvo|ElementEntryPVO]] (HCM · BICC: 29/34)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ADDITIONAL_FLAG | AdditionalFlag | — |
+| ADJUST_FLAG | AdjustFlag | — |
+| ASSIGNED_PAYROLL_ID | ElementEntryUsagesPEOAssignedPayrollId | ✅ |
+| ASSIGNMENT_ID | AssignmentId | — |
+| CREATED_BY | CreatedBy | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| CREATOR_ID | ElementEntryPEOCreatorId | — |
+| CREATOR_TYPE | CreatorTypeLookupPEOCreatorType | ✅ |
+| CREATOR_TYPE_CODE | ElementEntryPEOCreatorTypeCode | ✅ |
+| DATE_FROM | ElementEntryUsagesPEODateFrom | ✅ |
+| DATE_TO | ElementEntryUsagesPEODateTo | ✅ |
+| EFFECTIVE_END_DATE | EffectiveEndDate | ✅ |
+| EFFECTIVE_START_DATE | EffectiveStartDate | ✅ |
+| ELEMENT_ENTRY_ID | ElementEntryId | ✅ |
+| ELEMENT_TYPE_ID | ElementEntryPEOElementTypeId | ✅ |
+| ENTRY_TYPE | EntryTypeLookupPEOEntryType | ✅ |
+| ENTRY_TYPE_CODE | ElementEntryPEOEntryTypeCode | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATED_BY | LastUpdatedBy | ✅ |
+| LEGISLATIVE_DATA_GROUP_ID | LegislativeDataGroupId | — |
+| MULTIPLE_ENTRY_COUNT | EntrySequenceNumber | ✅ |
+| PAYROLL_ASSIGNMENT_ID | ElementEntryUsagesPEOPayrollAssignmentId | ✅ |
+| PAYROLL_ID | PayAssignedPayrollPEOPayrollId | ✅ |
+| PAYROLL_RELATIONSHIP_ID | ElementEntryUsagesPEOPayrollRelationshipId | ✅ |
+| PAYROLL_TERM_ID | ElementEntryUsagesPEOPayrollTermId | ✅ |
+| PERSON_ID | ElementEntryPEOPersonId | ✅ |
+| PROCESSED_FLAG | ProcessedFlag | ✅ |
+| REASON | ElementEntryDPEOReasonCode | ✅ |
+| REASON_LOOKUP_MEANING | EntryReasonLookupPEOReason | ✅ |
+| RETRO_FLAG | RetroFlag | ✅ |
+| STANDARD_LINK_FLAG | StandardLinkFlag | ✅ |
+| SUBPRIORITY | ElementEntryPEOSubpriority | ✅ |
+| USAGE_LEVEL | EntryUsagesLookupPEOUsageLevel | ✅ |
+| USAGE_LEVEL_CODE | ElementEntryUsagesPEOUsageLevelCode | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — PAY_ELEMENT_ENTRIES_VL](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/payelemententriesvl.html)

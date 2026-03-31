@@ -100,6 +100,27 @@ WHERE  tl.LANGUAGE = 'PTB';
 - Tabela de traduções (_TL) — chave composta por `GRADE_STEP_ID` + `LANGUAGE`.
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[gradesteppvo|GradeStepPVO]] (GL · BICC: 4/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | GradeStepTranslationPEOCreatedBy | — |
+| CREATION_DATE | GradeStepTranslationPEOCreationDate | — |
+| EFFECTIVE_END_DATE | GradeStepTranslationPEOEffectiveEndDate | — |
+| EFFECTIVE_START_DATE | GradeStepTranslationPEOEffectiveStartDate | ✅ |
+| GRADE_STEP_ID | GradeStepTranslationPEOGradeStepId | — |
+| LANGUAGE | GradeStepTranslationPEOLanguage | ✅ |
+| LAST_UPDATE_DATE | GradeStepTranslationPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | GradeStepTranslationPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | GradeStepTranslationPEOLastUpdatedBy | — |
+| NAME | GradeStepTranslationPEOName | ✅ |
+| OBJECT_VERSION_NUMBER | GradeStepTranslationPEOObjectVersionNumber | — |
+| SOURCE_LANG | GradeStepTranslationPEOSourceLang | — |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — PER_GRADE_STEPS_F_TL](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/pergradestepsftl.html)

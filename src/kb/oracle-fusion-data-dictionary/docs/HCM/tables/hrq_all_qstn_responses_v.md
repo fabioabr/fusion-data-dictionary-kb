@@ -93,6 +93,49 @@ WHERE  r.QUESTIONNAIRE_ID = :p_id;
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[participantquestionnairequestionresponsepvo|ParticipantQuestionnaireQuestionResponsePVO]] (HCM · BICC: 8/8)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ANSWER_CLOB | QuestionResponsePEOAnswerClob | ✅ |
+| ANSWER_ID | QuestionResponsePEOAnswerId | ✅ |
+| ANSWER_TEXT | QuestionResponsePEOAnswerText | ✅ |
+| ANSWER_TYPE | QuestionResponsePEOAnswerType | ✅ |
+| BUSINESS_GROUP_ID | QuestionResponsePEOBusinessGroupId | ✅ |
+| QSTN_RESPONSE_ID | QuestionResponsePEOQstnResponseId | ✅ |
+| QSTNR_QUESTION_ID | QuestionResponsePEOQstnrQuestionId | ✅ |
+| QSTNR_RESPONSE_ID | QuestionResponsePEOQstnrResponseId | ✅ |
+
+### [[participantresponsepvo|ParticipantResponsePVO]] (HCM · BICC: 5/8)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ANSWER_CLOB | QuestionResponsePEOAnswerClob | ✅ |
+| ANSWER_ID | QuestionResponsePEOAnswerId | ✅ |
+| ANSWER_TEXT | QuestionResponsePEOAnswerText | — |
+| ANSWER_TYPE | QuestionResponsePEOAnswerType | — |
+| BUSINESS_GROUP_ID | QuestionResponsePEOBusinessGroupId | ✅ |
+| QSTN_RESPONSE_ID | QuestionResponsePEOQstnResponseId | ✅ |
+| QSTNR_QUESTION_ID | QuestionResponsePEOQstnrQuestionId | ✅ |
+| QSTNR_RESPONSE_ID | QuestionResponsePEOQstnrResponseId | — |
+
+### [[questionnairequestionresponsepvo|QuestionnaireQuestionResponsePVO]] (HCM · BICC: 6/8)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ANSWER_CLOB | QuestionResponsePEOAnswerClob | ✅ |
+| ANSWER_ID | QuestionResponsePEOAnswerId | ✅ |
+| ANSWER_TEXT | QuestionResponsePEOAnswerText | — |
+| ANSWER_TYPE | QuestionResponsePEOAnswerType | ✅ |
+| BUSINESS_GROUP_ID | QuestionResponsePEOBusinessGroupId | ✅ |
+| QSTN_RESPONSE_ID | QuestionResponsePEOQstnResponseId | ✅ |
+| QSTNR_QUESTION_ID | QuestionResponsePEOQstnrQuestionId | ✅ |
+| QSTNR_RESPONSE_ID | QuestionResponsePEOQstnrResponseId | — |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Fusion HCM Tables and Views](https://docs.oracle.com/en/cloud/saas/human-resources/25a/)

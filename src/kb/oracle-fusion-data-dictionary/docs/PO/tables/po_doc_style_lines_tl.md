@@ -41,7 +41,6 @@ Armazena as **traducoes das configuracoes de linha** dos estilos de documento.
 > [!note] Sufixo _TL
 > O sufixo `_TL` indica a **tabela de traducoes**. Contem versoes traduzidas dos campos descritivos da tabela `_B` correspondente.
 
-
 ---
 
 ## 🧠 Propósito de Negócio
@@ -92,13 +91,68 @@ FROM   PO_DOC_STYLE_LINES_TL
 WHERE  DOC_STYLE_LINE_ID = :p_id;
 ```
 
-
 ---
 
 ## 🔒 Observações
 
 - Uma linha por idioma instalado.
 - Usada pela view `PO_DOC_STYLE_LINES_VL`.
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[purchasingdocumentstylelinebextractpvo|PurchasingDocumentStyleLineBExtractPVO]] (PO · BICC: 5/5)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| DISPLAY_NAME | PODocumentStyleLineTransDisplayName | ✅ |
+| DOCUMENT_SUBTYPE | PODocumentStyleLineTransDocumentSubtype | ✅ |
+| LANGUAGE | PODocumentStyleLineTransLanguage | ✅ |
+| SOURCE_LANG | PODocumentStyleLineTransSourceLang | ✅ |
+| STYLE_ID | PODocumentStyleLineTransStyleId | ✅ |
+
+### [[purchasingdocumentstylelinebp|PurchasingDocumentStyleLineBP]] (PO · BICC: 1/5)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| DISPLAY_NAME | PODocumentStyleLineTransDisplayName | ✅ |
+| DOCUMENT_SUBTYPE | PODocumentStyleLineTransDocumentSubtype | — |
+| LANGUAGE | PODocumentStyleLineTransLanguage | — |
+| SOURCE_LANG | PODocumentStyleLineTransSourceLang | — |
+| STYLE_ID | PODocumentStyleLineTransStyleId | — |
+
+### [[purchasingdocumentstylelinetranslationextractpvo|PurchasingDocumentStyleLineTranslationExtractPVO]] (PO · BICC: 11/11)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | PODocumentStyleLineTransCreatedBy | ✅ |
+| CREATION_DATE | PODocumentStyleLineTransCreationDate | ✅ |
+| DISPLAY_NAME | PODocumentStyleLineTransDisplayName | ✅ |
+| DOCUMENT_SUBTYPE | DocumentSubtype | ✅ |
+| LANGUAGE | Language | ✅ |
+| LAST_UPDATE_DATE | PODocumentStyleLineTransLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | PODocumentStyleLineTransLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | PODocumentStyleLineTransLastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | PODocumentStyleLineTransObjectVersionNumber | ✅ |
+| SOURCE_LANG | PODocumentStyleLineTransSourceLang | ✅ |
+| STYLE_ID | StyleId | ✅ |
+
+### [[purchasingdocumentstylelinetranslationp|PurchasingDocumentStyleLineTranslationP]] (PO · BICC: 9/11)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | PODocumentStyleLineTransCreatedBy | ✅ |
+| CREATION_DATE | PODocumentStyleLineTransCreationDate | ✅ |
+| DISPLAY_NAME | PODocumentStyleLineTransDisplayName | ✅ |
+| DOCUMENT_SUBTYPE | DocumentSubtype | ✅ |
+| LANGUAGE | Language | ✅ |
+| LAST_UPDATE_DATE | PODocumentStyleLineTransLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | PODocumentStyleLineTransLastUpdateLogin | — |
+| LAST_UPDATED_BY | PODocumentStyleLineTransLastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | PODocumentStyleLineTransObjectVersionNumber | — |
+| SOURCE_LANG | PODocumentStyleLineTransSourceLang | ✅ |
+| STYLE_ID | StyleId | ✅ |
 
 ---
 

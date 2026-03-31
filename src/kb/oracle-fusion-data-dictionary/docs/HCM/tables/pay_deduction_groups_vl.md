@@ -97,6 +97,26 @@ WHERE  vl.LEGISLATIVE_DATA_GROUP_ID = :p_ldg_id;
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[deductiongrouppvo|DeductionGroupPVO]] (HCM · BICC: 9/11)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BASE_DEDUCTION_GROUP_ID | DeductionGroupPEOBaseDeductionGroupId | — |
+| BASE_NAME | DeductionGroupPEOBaseName | ✅ |
+| CREATED_BY | DeductionGroupPEOCreatedBy | ✅ |
+| CREATION_DATE | DeductionGroupPEOCreationDate | ✅ |
+| DEDUCTION_GROUP_ID | DeductionGroupPEODeductionGroupId | ✅ |
+| LAST_UPDATE_DATE | DeductionGroupPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | DeductionGroupPEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | DeductionGroupPEOLastUpdatedBy | ✅ |
+| LEGISLATION_CODE | DeductionGroupPEOLegislationCode | ✅ |
+| MODULE_ID | DeductionGroupPEOModuleId | — |
+| NAME | DeductionGroupPEOName | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — PAY_DEDUCTION_GROUPS_VL](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/paydeductiongroupsvl.html)

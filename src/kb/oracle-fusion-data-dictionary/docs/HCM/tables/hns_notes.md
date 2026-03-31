@@ -115,6 +115,82 @@ FETCH FIRST 20 ROWS ONLY;
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[hnsactionnotespvo|HNSActionNotesPVO]] (HCM · BICC: 13/13)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| AUTHOR_ID | HNSNotesPEOAuthorId | ✅ |
+| CREATED_BY | HNSNotesPEOCreatedBy | ✅ |
+| CREATION_DATE | HNSNotesPEOCreationDate | ✅ |
+| LAST_UPDATE_DATE | HNSNotesPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | HNSNotesPEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | HNSNotesPEOLastUpdatedBy | ✅ |
+| NOTES | HNSNotesPEONotes | ✅ |
+| NOTES_ID | HNSNotesPEONotesId | ✅ |
+| OBJECT_VERSION_NUMBER | HNSNotesPEOObjectVersionNumber | ✅ |
+| TASK_ID | HNSNotesPEOTaskId | ✅ |
+| TASK_TYPE_CODE | HNSNotesPEOTaskTypeCode | ✅ |
+| UPDATED_BY | HNSNotesPEOUpdatedBy | ✅ |
+| UPDATED_DATE | HNSNotesPEOUpdatedDate | ✅ |
+
+### [[hnsincidenteventnotespvo|HNSIncidentEventNotesPVO]] (HCM · BICC: 13/13)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| AUTHOR_ID | HNSNotesPEOAuthorId | ✅ |
+| CREATED_BY | HNSNotesPEOCreatedBy | ✅ |
+| CREATION_DATE | HNSNotesPEOCreationDate | ✅ |
+| LAST_UPDATE_DATE | HNSNotesPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | HNSNotesPEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | HNSNotesPEOLastUpdatedBy | ✅ |
+| NOTES | HNSNotesPEONotes | ✅ |
+| NOTES_ID | HNSNotesPEONotesId | ✅ |
+| OBJECT_VERSION_NUMBER | HNSNotesPEOObjectVersionNumber | ✅ |
+| TASK_ID | HNSNotesPEOTaskId | ✅ |
+| TASK_TYPE_CODE | HNSNotesPEOTaskTypeCode | ✅ |
+| UPDATED_BY | HNSNotesPEOUpdatedBy | ✅ |
+| UPDATED_DATE | HNSNotesPEOUpdatedDate | ✅ |
+
+### [[hnsincidentnotespvo|HNSIncidentNotesPVO]] (HCM · BICC: 13/13)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| AUTHOR_ID | HNSNotesPEOAuthorId | ✅ |
+| CREATED_BY | HNSNotesPEOCreatedBy | ✅ |
+| CREATION_DATE | HNSNotesPEOCreationDate | ✅ |
+| LAST_UPDATE_DATE | HNSNotesPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | HNSNotesPEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | HNSNotesPEOLastUpdatedBy | ✅ |
+| NOTES | HNSNotesPEONotes | ✅ |
+| NOTES_ID | HNSNotesPEONotesId | ✅ |
+| OBJECT_VERSION_NUMBER | HNSNotesPEOObjectVersionNumber | ✅ |
+| TASK_ID | HNSNotesPEOTaskId | ✅ |
+| TASK_TYPE_CODE | HNSNotesPEOTaskTypeCode | ✅ |
+| UPDATED_BY | HNSNotesPEOUpdatedBy | ✅ |
+| UPDATED_DATE | HNSNotesPEOUpdatedDate | ✅ |
+
+### [[hnsinvestigationnotespvo|HNSInvestigationNotesPVO]] (HCM · BICC: 13/13)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| AUTHOR_ID | HNSNotesPEOAuthorId | ✅ |
+| CREATED_BY | HNSNotesPEOCreatedBy | ✅ |
+| CREATION_DATE | HNSNotesPEOCreationDate | ✅ |
+| LAST_UPDATE_DATE | HNSNotesPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | HNSNotesPEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | HNSNotesPEOLastUpdatedBy | ✅ |
+| NOTES | HNSNotesPEONotes | ✅ |
+| NOTES_ID | HNSNotesPEONotesId | ✅ |
+| OBJECT_VERSION_NUMBER | HNSNotesPEOObjectVersionNumber | ✅ |
+| TASK_ID | HNSNotesPEOTaskId | ✅ |
+| TASK_TYPE_CODE | HNSNotesPEOTaskTypeCode | ✅ |
+| UPDATED_BY | HNSNotesPEOUpdatedBy | ✅ |
+| UPDATED_DATE | HNSNotesPEOUpdatedDate | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — HNS_NOTES](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/hnsnotes.html)

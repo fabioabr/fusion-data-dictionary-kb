@@ -117,3 +117,28 @@ ORDER BY pc.COMPONENT_TYPE;
 
 - [Oracle Docs — WLF_PRICING_COMPONENTS_F](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/wlfpricingcomponentsf.html)
 - [[hcm-module-data-dictionary]] — Dossiê do módulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[learningpricingcomponentspvo|LearningPricingComponentsPVO]] (HCM · BICC: 7/16)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | LearningPricingComponentsDEOCreatedBy | — |
+| CREATION_DATE | LearningPricingComponentsDEOCreationDate | — |
+| EFFECTIVE_END_DATE | LearningPricingComponentsDEOEffectiveEndDate | ✅ |
+| EFFECTIVE_START_DATE | LearningPricingComponentsDEOEffectiveStartDate | ✅ |
+| ENTERPRISE_ID | LearningPricingComponentsDEOEnterpriseId | — |
+| IS_ADJUSTMENT | LearningPricingComponentsDEOIsAdjustment | — |
+| IS_REQUIRED | LearningPricingComponentsDEOIsRequired | — |
+| LAST_UPDATE_DATE | LearningPricingComponentsDEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LearningPricingComponentsDEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | LearningPricingComponentsDEOLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | LearningPricingComponentsDEOObjectVersionNumber | — |
+| PRICE | LearningPricingComponentsDEOPrice | ✅ |
+| PRICING_COMPONENT_ID | LearningPricingComponentsDEOPricingComponentId | ✅ |
+| PRICING_RULE_ID | LearningPricingComponentsDEOPricingRuleId | — |
+| PRICING_TYPE | LearningPricingComponentsDEOPricingType | ✅ |
+| USED_IN_CALC | LearningPricingComponentsDEOUsedInCalc | ✅ |

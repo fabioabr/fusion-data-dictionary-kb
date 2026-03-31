@@ -113,3 +113,15 @@ ORDER BY bad.ANALYSIS_NAME;
 
 - [Oracle Docs — WLF_BI_ANALYSIS_DESTINATIONS](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/wlfbianalysisdestinations.html)
 - [[hcm-module-data-dictionary]] — Dossiê do módulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[eventassignmentdestinationpvo|EventAssignmentDestinationPVO]] (HCM · BICC: 2/3)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ANALYSIS_REPORT_ID | BIAnalysisDestinationsPEOAnalysisReportId | — |
+| REPORT_NAME | BIAnalysisDestinationsPEOReportName | ✅ |
+| REPORT_PATH | BIAnalysisDestinationsPEOReportPath | ✅ |

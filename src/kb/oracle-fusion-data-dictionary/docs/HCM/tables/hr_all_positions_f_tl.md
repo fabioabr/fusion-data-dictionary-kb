@@ -104,3 +104,150 @@ WHERE  tl.POSITION_ID = :p_id
 
 - [Oracle Docs — HR_ALL_POSITIONS_F_TL](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/hrallpositionsftl.html)
 - [[hcm-module-data-dictionary]] — Dossie do modulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[fundingpositionpvo|FundingPositionPVO]] (PO · BICC: 3/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | PositionTranslationPEOCreatedBy | — |
+| CREATION_DATE | PositionTranslationPEOCreationDate | — |
+| EFFECTIVE_END_DATE | PositionTranslationPEOEffectiveEndDate | — |
+| EFFECTIVE_START_DATE | PositionTranslationPEOEffectiveStartDate | ✅ |
+| LANGUAGE | PositionTranslationPEOLanguage | — |
+| LAST_UPDATE_DATE | PositionTranslationPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | PositionTranslationPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | PositionTranslationPEOLastUpdatedBy | — |
+| NAME | PositionTranslationPEOName | ✅ |
+| OBJECT_VERSION_NUMBER | PositionTranslationPEOObjectVersionNumber | — |
+| POSITION_ID | PositionTranslationPEOPositionId | — |
+| SOURCE_LANG | PositionTranslationPEOSourceLang | — |
+
+### [[globalpersonpvo|GlobalPersonPVO]] (HCM · BICC: 12/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | PositionTranslationMgrPEOCreatedBy | ✅ |
+| CREATION_DATE | PositionTranslationMgrPEOCreationDate | ✅ |
+| EFFECTIVE_END_DATE | PositionTranslationMgrPEOEffectiveEndDate | ✅ |
+| EFFECTIVE_START_DATE | PositionTranslationMgrPEOEffectiveStartDate | ✅ |
+| LANGUAGE | PositionTranslationMgrPEOLanguage1 | ✅ |
+| LAST_UPDATE_DATE | PositionTranslationMgrPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | PositionTranslationMgrPEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | PositionTranslationMgrPEOLastUpdatedBy | ✅ |
+| NAME | PositionTranslationMgrPEOName | ✅ |
+| OBJECT_VERSION_NUMBER | PositionTranslationMgrPEOObjectVersionNumber | ✅ |
+| POSITION_ID | PositionTranslationMgrPEOPositionId | ✅ |
+| SOURCE_LANG | PositionTranslationMgrPEOSourceLang | ✅ |
+
+### [[globalpersonpvoviewall|GlobalPersonPVOViewAll]] (HCM · BICC: 3/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | PositionTranslationMgrPEOCreatedBy | — |
+| CREATION_DATE | PositionTranslationMgrPEOCreationDate | — |
+| EFFECTIVE_END_DATE | PositionTranslationMgrPEOEffectiveEndDate | — |
+| EFFECTIVE_START_DATE | PositionTranslationMgrPEOEffectiveStartDate | ✅ |
+| LANGUAGE | PositionTranslationMgrPEOLanguage1 | — |
+| LAST_UPDATE_DATE | PositionTranslationMgrPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | PositionTranslationMgrPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | PositionTranslationMgrPEOLastUpdatedBy | — |
+| NAME | PositionTranslationMgrPEOName | ✅ |
+| OBJECT_VERSION_NUMBER | PositionTranslationMgrPEOObjectVersionNumber | — |
+| POSITION_ID | PositionTranslationMgrPEOPositionId | — |
+| SOURCE_LANG | PositionTranslationMgrPEOSourceLang | — |
+
+### [[positionpvo|PositionPVO]] (PO · BICC: 10/24)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | PositionTranslationPEOCreatedBy | — |
+| CREATION_DATE | PositionTranslationPEOCreationDate | — |
+| EFFECTIVE_END_DATE | DelegatePositionTranslationPEOEffectiveEndDate | — |
+| EFFECTIVE_END_DATE | ParentPositionTranslationPEOEffectiveEndDate | — |
+| EFFECTIVE_END_DATE | PositionTranslationPEOEffectiveEndDate | — |
+| EFFECTIVE_START_DATE | DelegatePositionTranslationPEOEffectiveStartDate | ✅ |
+| EFFECTIVE_START_DATE | ParentPositionTranslationPEOEffectiveStartDate | ✅ |
+| EFFECTIVE_START_DATE | PositionTranslationPEOEffectiveStartDate | ✅ |
+| LANGUAGE | DelegatePositionTranslationPEOLanguage | — |
+| LANGUAGE | ParentPositionTranslationPEOLanguage | — |
+| LANGUAGE | PositionTranslationPEOLanguage | ✅ |
+| LAST_UPDATE_DATE | DelegatePositionTranslationPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_DATE | ParentPositionTranslationPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_DATE | PositionTranslationPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | PositionTranslationPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | PositionTranslationPEOLastUpdatedBy | — |
+| NAME | DelegatePositionTranslationPEOName | ✅ |
+| NAME | ParentPositionTranslationPEOName | ✅ |
+| NAME | PositionTranslationPEOName | ✅ |
+| OBJECT_VERSION_NUMBER | PositionTranslationPEOObjectVersionNumber | — |
+| POSITION_ID | DelegatePositionTranslationPEOPositionId | — |
+| POSITION_ID | ParentPositionTranslationPEOPositionId | — |
+| POSITION_ID | PositionTranslationPEOPositionId | — |
+| SOURCE_LANG | PositionTranslationPEOSourceLang | — |
+
+### [[positionpvoviewall|PositionPVOViewAll]] (PO · BICC: 10/24)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | PositionTranslationPEOCreatedBy | — |
+| CREATION_DATE | PositionTranslationPEOCreationDate | — |
+| EFFECTIVE_END_DATE | DelegatePositionTranslationPEOEffectiveEndDate | — |
+| EFFECTIVE_END_DATE | ParentPositionTranslationPEOEffectiveEndDate | — |
+| EFFECTIVE_END_DATE | PositionTranslationPEOEffectiveEndDate | — |
+| EFFECTIVE_START_DATE | DelegatePositionTranslationPEOEffectiveStartDate | ✅ |
+| EFFECTIVE_START_DATE | ParentPositionTranslationPEOEffectiveStartDate | ✅ |
+| EFFECTIVE_START_DATE | PositionTranslationPEOEffectiveStartDate | ✅ |
+| LANGUAGE | DelegatePositionTranslationPEOLanguage | — |
+| LANGUAGE | ParentPositionTranslationPEOLanguage | — |
+| LANGUAGE | PositionTranslationPEOLanguage | ✅ |
+| LAST_UPDATE_DATE | DelegatePositionTranslationPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_DATE | ParentPositionTranslationPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_DATE | PositionTranslationPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | PositionTranslationPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | PositionTranslationPEOLastUpdatedBy | — |
+| NAME | DelegatePositionTranslationPEOName | ✅ |
+| NAME | ParentPositionTranslationPEOName | ✅ |
+| NAME | PositionTranslationPEOName | ✅ |
+| OBJECT_VERSION_NUMBER | PositionTranslationPEOObjectVersionNumber | — |
+| POSITION_ID | DelegatePositionTranslationPEOPositionId | — |
+| POSITION_ID | ParentPositionTranslationPEOPositionId | — |
+| POSITION_ID | PositionTranslationPEOPositionId | — |
+| SOURCE_LANG | PositionTranslationPEOSourceLang | — |
+
+### [[positionrefpvo|PositionRefPVO]] (PO · BICC: 4/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | PositionTranslationPEOCreatedBy | — |
+| CREATION_DATE | PositionTranslationPEOCreationDate | — |
+| EFFECTIVE_END_DATE | PositionTranslationPEOEffectiveEndDate | — |
+| EFFECTIVE_START_DATE | PositionTranslationPEOEffectiveStartDate | ✅ |
+| LANGUAGE | PositionTranslationPEOLanguage | ✅ |
+| LAST_UPDATE_DATE | PositionTranslationPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | PositionTranslationPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | PositionTranslationPEOLastUpdatedBy | — |
+| NAME | PositionTranslationPEOName | ✅ |
+| OBJECT_VERSION_NUMBER | PositionTranslationPEOObjectVersionNumber | — |
+| POSITION_ID | PositionTranslationPEOPositionId | — |
+| SOURCE_LANG | PositionTranslationPEOSourceLang | — |
+
+### [[positiontranslationpvo|PositionTranslationPVO]] (PO · BICC: 10/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | PositionTranslationPEOCreatedBy | ✅ |
+| CREATION_DATE | PositionTranslationPEOCreationDate | ✅ |
+| EFFECTIVE_END_DATE | EffectiveEndDate | ✅ |
+| EFFECTIVE_START_DATE | EffectiveStartDate | ✅ |
+| LANGUAGE | Language | ✅ |
+| LAST_UPDATE_DATE | PositionTranslationPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | PositionTranslationPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | PositionTranslationPEOLastUpdatedBy | ✅ |
+| NAME | PositionTranslationPEOName | ✅ |
+| OBJECT_VERSION_NUMBER | PositionTranslationPEOObjectVersionNumber | — |
+| POSITION_ID | PositionId | ✅ |
+| SOURCE_LANG | PositionTranslationPEOSourceLang | ✅ |

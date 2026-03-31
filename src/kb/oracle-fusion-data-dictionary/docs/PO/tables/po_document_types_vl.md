@@ -41,7 +41,6 @@ View que combina `PO_DOCUMENT_TYPES_ALL_B` e `PO_DOCUMENT_TYPES_ALL_TL` para **t
 > [!note] Sufixo _VL
 > O sufixo `_VL` combina a tabela base `_B` com traducoes `_TL` em uma view multilingue.
 
-
 ---
 
 ## 🧠 Propósito de Negócio
@@ -90,13 +89,238 @@ FROM   PO_DOCUMENT_TYPES_VL
 WHERE  ORG_ID = :p_org_id AND ENABLED_FLAG = 'Y';
 ```
 
-
 ---
 
 ## 🔒 Observações
 
 - Preferir sobre consultas diretas _B/_TL.
 - Retorna traducao do idioma da sessao.
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[agreementlinepvo|AgreementLinePVO]] (PO · BICC: 2/32)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ATTRIBUTE_CATEGORY | FromBlanketDocumentTypeAttributeCategory | — |
+| ATTRIBUTE_CATEGORY | FromContractDocumentTypeAttributeCategory | — |
+| CO_CONT_TERMS_LAYOUT_CODE | FromBlanketDocumentTypeCoContTermsLayoutCode | — |
+| CO_CONT_TERMS_LAYOUT_CODE | FromContractDocumentTypeCoContTermsLayoutCode | — |
+| CO_LAYOUT_TEMPLATE | FromBlanketDocumentTypeCoLayoutTemplate | — |
+| CO_LAYOUT_TEMPLATE | FromContractDocumentTypeCoLayoutTemplate | — |
+| CO_TEMPLATE_ID | FromBlanketDocumentTypeCoTemplateId | — |
+| CO_TEMPLATE_ID | FromContractDocumentTypeCoTemplateId | — |
+| CONTRACT_TEMPLATE_CODE | FromBlanketDocumentTypeContractTemplateCode | — |
+| CONTRACT_TEMPLATE_CODE | FromContractDocumentTypeContractTemplateCode | — |
+| CREATED_BY | FromBlanketDocumentTypeCreatedBy | — |
+| CREATED_BY | FromContractDocumentTypeCreatedBy | — |
+| CREATION_DATE | FromBlanketDocumentTypeCreationDate | — |
+| CREATION_DATE | FromContractDocumentTypeCreationDate | — |
+| DOCUMENT_SUBTYPE | FromBlanketDocumentTypeDocumentSubtype | — |
+| DOCUMENT_SUBTYPE | FromContractDocumentTypeDocumentSubtype | — |
+| DOCUMENT_TEMPLATE_CODE | FromBlanketDocumentTypeDocumentTemplateCode | — |
+| DOCUMENT_TEMPLATE_CODE | FromContractDocumentTypeDocumentTemplateCode | — |
+| DOCUMENT_TYPE_CODE | FromBlanketDocumentTypeDocumentTypeCode | — |
+| DOCUMENT_TYPE_CODE | FromContractDocumentTypeDocumentTypeCode | — |
+| LAST_UPDATE_DATE | FromBlanketDocumentTypeLastUpdateDate | ✅ |
+| LAST_UPDATE_DATE | FromContractDocumentTypeLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | FromBlanketDocumentTypeLastUpdateLogin | — |
+| LAST_UPDATE_LOGIN | FromContractDocumentTypeLastUpdateLogin | — |
+| LAST_UPDATED_BY | FromBlanketDocumentTypeLastUpdatedBy | — |
+| LAST_UPDATED_BY | FromContractDocumentTypeLastUpdatedBy | — |
+| PRC_BU_ID | FromBlanketDocumentTypePrcBuId | — |
+| PRC_BU_ID | FromContractDocumentTypePrcBuId | — |
+| RESPONSE_TEMPLATE_CODE | FromBlanketDocumentTypeResponseTemplateCode | — |
+| RESPONSE_TEMPLATE_CODE | FromContractDocumentTypeResponseTemplateCode | — |
+| TYPE_NAME | FromBlanketDocumentTypeTypeName | — |
+| TYPE_NAME | FromContractDocumentTypeTypeName | — |
+
+### [[agreementpricebreakpvo|AgreementPriceBreakPVO]] (PO · BICC: 2/32)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ATTRIBUTE_CATEGORY | FromBlanketDocumentTypeAttributeCategory | — |
+| ATTRIBUTE_CATEGORY | FromContractDocumentTypeAttributeCategory | — |
+| CO_CONT_TERMS_LAYOUT_CODE | FromBlanketDocumentTypeCoContTermsLayoutCode | — |
+| CO_CONT_TERMS_LAYOUT_CODE | FromContractDocumentTypeCoContTermsLayoutCode | — |
+| CO_LAYOUT_TEMPLATE | FromBlanketDocumentTypeCoLayoutTemplate | — |
+| CO_LAYOUT_TEMPLATE | FromContractDocumentTypeCoLayoutTemplate | — |
+| CO_TEMPLATE_ID | FromBlanketDocumentTypeCoTemplateId | — |
+| CO_TEMPLATE_ID | FromContractDocumentTypeCoTemplateId | — |
+| CONTRACT_TEMPLATE_CODE | FromBlanketDocumentTypeContractTemplateCode | — |
+| CONTRACT_TEMPLATE_CODE | FromContractDocumentTypeContractTemplateCode | — |
+| CREATED_BY | FromBlanketDocumentTypeCreatedBy | — |
+| CREATED_BY | FromContractDocumentTypeCreatedBy | — |
+| CREATION_DATE | FromBlanketDocumentTypeCreationDate | — |
+| CREATION_DATE | FromContractDocumentTypeCreationDate | — |
+| DOCUMENT_SUBTYPE | FromBlanketDocumentTypeDocumentSubtype | — |
+| DOCUMENT_SUBTYPE | FromContractDocumentTypeDocumentSubtype | — |
+| DOCUMENT_TEMPLATE_CODE | FromBlanketDocumentTypeDocumentTemplateCode | — |
+| DOCUMENT_TEMPLATE_CODE | FromContractDocumentTypeDocumentTemplateCode | — |
+| DOCUMENT_TYPE_CODE | FromBlanketDocumentTypeDocumentTypeCode | — |
+| DOCUMENT_TYPE_CODE | FromContractDocumentTypeDocumentTypeCode | — |
+| LAST_UPDATE_DATE | FromBlanketDocumentTypeLastUpdateDate | ✅ |
+| LAST_UPDATE_DATE | FromContractDocumentTypeLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | FromBlanketDocumentTypeLastUpdateLogin | — |
+| LAST_UPDATE_LOGIN | FromContractDocumentTypeLastUpdateLogin | — |
+| LAST_UPDATED_BY | FromBlanketDocumentTypeLastUpdatedBy | — |
+| LAST_UPDATED_BY | FromContractDocumentTypeLastUpdatedBy | — |
+| PRC_BU_ID | FromBlanketDocumentTypePrcBuId | — |
+| PRC_BU_ID | FromContractDocumentTypePrcBuId | — |
+| RESPONSE_TEMPLATE_CODE | FromBlanketDocumentTypeResponseTemplateCode | — |
+| RESPONSE_TEMPLATE_CODE | FromContractDocumentTypeResponseTemplateCode | — |
+| TYPE_NAME | FromBlanketDocumentTypeTypeName | — |
+| TYPE_NAME | FromContractDocumentTypeTypeName | — |
+
+### [[purchasingdocumentlinepvo|PurchasingDocumentLinePVO]] (PO · BICC: 2/32)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ATTRIBUTE_CATEGORY | FromBlanketDocumentTypeAttributeCategory | — |
+| ATTRIBUTE_CATEGORY | FromContractDocumentTypeAttributeCategory | — |
+| CO_CONT_TERMS_LAYOUT_CODE | FromBlanketDocumentTypeCoContTermsLayoutCode | — |
+| CO_CONT_TERMS_LAYOUT_CODE | FromContractDocumentTypeCoContTermsLayoutCode | — |
+| CO_LAYOUT_TEMPLATE | FromBlanketDocumentTypeCoLayoutTemplate | — |
+| CO_LAYOUT_TEMPLATE | FromContractDocumentTypeCoLayoutTemplate | — |
+| CO_TEMPLATE_ID | FromBlanketDocumentTypeCoTemplateId | — |
+| CO_TEMPLATE_ID | FromContractDocumentTypeCoTemplateId | — |
+| CONTRACT_TEMPLATE_CODE | FromBlanketDocumentTypeContractTemplateCode | — |
+| CONTRACT_TEMPLATE_CODE | FromContractDocumentTypeContractTemplateCode | — |
+| CREATED_BY | FromBlanketDocumentTypeCreatedBy | — |
+| CREATED_BY | FromContractDocumentTypeCreatedBy | — |
+| CREATION_DATE | FromBlanketDocumentTypeCreationDate | — |
+| CREATION_DATE | FromContractDocumentTypeCreationDate | — |
+| DOCUMENT_SUBTYPE | FromBlanketDocumentTypeDocumentSubtype | — |
+| DOCUMENT_SUBTYPE | FromContractDocumentTypeDocumentSubtype | — |
+| DOCUMENT_TEMPLATE_CODE | FromBlanketDocumentTypeDocumentTemplateCode | — |
+| DOCUMENT_TEMPLATE_CODE | FromContractDocumentTypeDocumentTemplateCode | — |
+| DOCUMENT_TYPE_CODE | FromBlanketDocumentTypeDocumentTypeCode | — |
+| DOCUMENT_TYPE_CODE | FromContractDocumentTypeDocumentTypeCode | — |
+| LAST_UPDATE_DATE | FromBlanketDocumentTypeLastUpdateDate | ✅ |
+| LAST_UPDATE_DATE | FromContractDocumentTypeLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | FromBlanketDocumentTypeLastUpdateLogin | — |
+| LAST_UPDATE_LOGIN | FromContractDocumentTypeLastUpdateLogin | — |
+| LAST_UPDATED_BY | FromBlanketDocumentTypeLastUpdatedBy | — |
+| LAST_UPDATED_BY | FromContractDocumentTypeLastUpdatedBy | — |
+| PRC_BU_ID | FromBlanketDocumentTypePrcBuId | — |
+| PRC_BU_ID | FromContractDocumentTypePrcBuId | — |
+| RESPONSE_TEMPLATE_CODE | FromBlanketDocumentTypeResponseTemplateCode | — |
+| RESPONSE_TEMPLATE_CODE | FromContractDocumentTypeResponseTemplateCode | — |
+| TYPE_NAME | FromBlanketDocumentTypeTypeName | — |
+| TYPE_NAME | FromContractDocumentTypeTypeName | — |
+
+### [[standarddistributionpvo|StandardDistributionPVO]] (PO)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ATTRIBUTE_CATEGORY | FromBlanketDocumentTypeAttributeCategory | — |
+| ATTRIBUTE_CATEGORY | FromContractDocumentTypeAttributeCategory | — |
+| CO_CONT_TERMS_LAYOUT_CODE | FromBlanketDocumentTypeCoContTermsLayoutCode | — |
+| CO_CONT_TERMS_LAYOUT_CODE | FromContractDocumentTypeCoContTermsLayoutCode | — |
+| CO_LAYOUT_TEMPLATE | FromBlanketDocumentTypeCoLayoutTemplate | — |
+| CO_LAYOUT_TEMPLATE | FromContractDocumentTypeCoLayoutTemplate | — |
+| CO_TEMPLATE_ID | FromBlanketDocumentTypeCoTemplateId | — |
+| CO_TEMPLATE_ID | FromContractDocumentTypeCoTemplateId | — |
+| CONTRACT_TEMPLATE_CODE | FromBlanketDocumentTypeContractTemplateCode | — |
+| CONTRACT_TEMPLATE_CODE | FromContractDocumentTypeContractTemplateCode | — |
+| CREATED_BY | FromBlanketDocumentTypeCreatedBy | — |
+| CREATED_BY | FromContractDocumentTypeCreatedBy | — |
+| CREATION_DATE | FromBlanketDocumentTypeCreationDate | — |
+| CREATION_DATE | FromContractDocumentTypeCreationDate | — |
+| DOCUMENT_SUBTYPE | FromBlanketDocumentTypeDocumentSubtype | — |
+| DOCUMENT_SUBTYPE | FromContractDocumentTypeDocumentSubtype | — |
+| DOCUMENT_TEMPLATE_CODE | FromBlanketDocumentTypeDocumentTemplateCode | — |
+| DOCUMENT_TEMPLATE_CODE | FromContractDocumentTypeDocumentTemplateCode | — |
+| DOCUMENT_TYPE_CODE | FromBlanketDocumentTypeDocumentTypeCode | — |
+| DOCUMENT_TYPE_CODE | FromContractDocumentTypeDocumentTypeCode | — |
+| LAST_UPDATE_DATE | FromBlanketDocumentTypeLastUpdateDate | — |
+| LAST_UPDATE_DATE | FromContractDocumentTypeLastUpdateDate | — |
+| LAST_UPDATE_LOGIN | FromBlanketDocumentTypeLastUpdateLogin | — |
+| LAST_UPDATE_LOGIN | FromContractDocumentTypeLastUpdateLogin | — |
+| LAST_UPDATED_BY | FromBlanketDocumentTypeLastUpdatedBy | — |
+| LAST_UPDATED_BY | FromContractDocumentTypeLastUpdatedBy | — |
+| PRC_BU_ID | FromBlanketDocumentTypePrcBuId | — |
+| PRC_BU_ID | FromContractDocumentTypePrcBuId | — |
+| RESPONSE_TEMPLATE_CODE | FromBlanketDocumentTypeResponseTemplateCode | — |
+| RESPONSE_TEMPLATE_CODE | FromContractDocumentTypeResponseTemplateCode | — |
+| TYPE_NAME | FromBlanketDocumentTypeTypeName | — |
+| TYPE_NAME | FromContractDocumentTypeTypeName | — |
+
+### [[standardlinepvo|StandardLinePVO]] (PO · BICC: 4/32)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ATTRIBUTE_CATEGORY | FromBlanketDocumentTypeAttributeCategory | — |
+| ATTRIBUTE_CATEGORY | FromContractDocumentTypeAttributeCategory | — |
+| CO_CONT_TERMS_LAYOUT_CODE | FromBlanketDocumentTypeCoContTermsLayoutCode | — |
+| CO_CONT_TERMS_LAYOUT_CODE | FromContractDocumentTypeCoContTermsLayoutCode | — |
+| CO_LAYOUT_TEMPLATE | FromBlanketDocumentTypeCoLayoutTemplate | — |
+| CO_LAYOUT_TEMPLATE | FromContractDocumentTypeCoLayoutTemplate | — |
+| CO_TEMPLATE_ID | FromBlanketDocumentTypeCoTemplateId | — |
+| CO_TEMPLATE_ID | FromContractDocumentTypeCoTemplateId | — |
+| CONTRACT_TEMPLATE_CODE | FromBlanketDocumentTypeContractTemplateCode | — |
+| CONTRACT_TEMPLATE_CODE | FromContractDocumentTypeContractTemplateCode | — |
+| CREATED_BY | FromBlanketDocumentTypeCreatedBy | — |
+| CREATED_BY | FromContractDocumentTypeCreatedBy | — |
+| CREATION_DATE | FromBlanketDocumentTypeCreationDate | — |
+| CREATION_DATE | FromContractDocumentTypeCreationDate | — |
+| DOCUMENT_SUBTYPE | FromBlanketDocumentTypeDocumentSubtype | — |
+| DOCUMENT_SUBTYPE | FromContractDocumentTypeDocumentSubtype | — |
+| DOCUMENT_TEMPLATE_CODE | FromBlanketDocumentTypeDocumentTemplateCode | — |
+| DOCUMENT_TEMPLATE_CODE | FromContractDocumentTypeDocumentTemplateCode | — |
+| DOCUMENT_TYPE_CODE | FromBlanketDocumentTypeDocumentTypeCode | — |
+| DOCUMENT_TYPE_CODE | FromContractDocumentTypeDocumentTypeCode | — |
+| LAST_UPDATE_DATE | FromBlanketDocumentTypeLastUpdateDate | ✅ |
+| LAST_UPDATE_DATE | FromContractDocumentTypeLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | FromBlanketDocumentTypeLastUpdateLogin | — |
+| LAST_UPDATE_LOGIN | FromContractDocumentTypeLastUpdateLogin | — |
+| LAST_UPDATED_BY | FromBlanketDocumentTypeLastUpdatedBy | — |
+| LAST_UPDATED_BY | FromContractDocumentTypeLastUpdatedBy | — |
+| PRC_BU_ID | FromBlanketDocumentTypePrcBuId | — |
+| PRC_BU_ID | FromContractDocumentTypePrcBuId | — |
+| RESPONSE_TEMPLATE_CODE | FromBlanketDocumentTypeResponseTemplateCode | — |
+| RESPONSE_TEMPLATE_CODE | FromContractDocumentTypeResponseTemplateCode | — |
+| TYPE_NAME | FromBlanketDocumentTypeTypeName | ✅ |
+| TYPE_NAME | FromContractDocumentTypeTypeName | ✅ |
+
+### [[standardshipmentpvo|StandardShipmentPVO]] (PO · BICC: 2/32)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ATTRIBUTE_CATEGORY | FromBlanketDocumentTypeAttributeCategory | — |
+| ATTRIBUTE_CATEGORY | FromContractDocumentTypeAttributeCategory | — |
+| CO_CONT_TERMS_LAYOUT_CODE | FromBlanketDocumentTypeCoContTermsLayoutCode | — |
+| CO_CONT_TERMS_LAYOUT_CODE | FromContractDocumentTypeCoContTermsLayoutCode | — |
+| CO_LAYOUT_TEMPLATE | FromBlanketDocumentTypeCoLayoutTemplate | — |
+| CO_LAYOUT_TEMPLATE | FromContractDocumentTypeCoLayoutTemplate | — |
+| CO_TEMPLATE_ID | FromBlanketDocumentTypeCoTemplateId | — |
+| CO_TEMPLATE_ID | FromContractDocumentTypeCoTemplateId | — |
+| CONTRACT_TEMPLATE_CODE | FromBlanketDocumentTypeContractTemplateCode | — |
+| CONTRACT_TEMPLATE_CODE | FromContractDocumentTypeContractTemplateCode | — |
+| CREATED_BY | FromBlanketDocumentTypeCreatedBy | — |
+| CREATED_BY | FromContractDocumentTypeCreatedBy | — |
+| CREATION_DATE | FromBlanketDocumentTypeCreationDate | — |
+| CREATION_DATE | FromContractDocumentTypeCreationDate | — |
+| DOCUMENT_SUBTYPE | FromBlanketDocumentTypeDocumentSubtype | — |
+| DOCUMENT_SUBTYPE | FromContractDocumentTypeDocumentSubtype | — |
+| DOCUMENT_TEMPLATE_CODE | FromBlanketDocumentTypeDocumentTemplateCode | — |
+| DOCUMENT_TEMPLATE_CODE | FromContractDocumentTypeDocumentTemplateCode | — |
+| DOCUMENT_TYPE_CODE | FromBlanketDocumentTypeDocumentTypeCode | — |
+| DOCUMENT_TYPE_CODE | FromContractDocumentTypeDocumentTypeCode | — |
+| LAST_UPDATE_DATE | FromBlanketDocumentTypeLastUpdateDate | — |
+| LAST_UPDATE_DATE | FromContractDocumentTypeLastUpdateDate | — |
+| LAST_UPDATE_LOGIN | FromBlanketDocumentTypeLastUpdateLogin | — |
+| LAST_UPDATE_LOGIN | FromContractDocumentTypeLastUpdateLogin | — |
+| LAST_UPDATED_BY | FromBlanketDocumentTypeLastUpdatedBy | — |
+| LAST_UPDATED_BY | FromContractDocumentTypeLastUpdatedBy | — |
+| PRC_BU_ID | FromBlanketDocumentTypePrcBuId | — |
+| PRC_BU_ID | FromContractDocumentTypePrcBuId | — |
+| RESPONSE_TEMPLATE_CODE | FromBlanketDocumentTypeResponseTemplateCode | — |
+| RESPONSE_TEMPLATE_CODE | FromContractDocumentTypeResponseTemplateCode | — |
+| TYPE_NAME | FromBlanketDocumentTypeTypeName | ✅ |
+| TYPE_NAME | FromContractDocumentTypeTypeName | ✅ |
 
 ---
 

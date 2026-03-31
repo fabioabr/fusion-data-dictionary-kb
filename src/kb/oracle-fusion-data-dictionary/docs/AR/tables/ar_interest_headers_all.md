@@ -94,6 +94,860 @@ SELECT ih.CUSTOMER_ID,
 - A coluna `DISPLAY_FLAG` permite ocultar cobranças de teste ou canceladas.
 - Filtrar sempre por `ORG_ID` para garantir contexto correto de business unit.
 
+## 🔗 PVOs Relacionados
+
+### [[adjustmentdistributionpvo|AdjustmentDistributionPVO]] (AR)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CHARGE_BEGIN_DATE | IntrstHdrChargeBeginDate | — |
+| CHARGE_BEGIN_DATE | IntrstHdrTrxHdrChargeBeginDate | — |
+| CHARGE_ON_FINANCE_CHARGE_FLAG | IntrstHdrChargeOnFinanceChargeFlag | — |
+| CHARGE_ON_FINANCE_CHARGE_FLAG | IntrstHdrTrxHdrChargeOnFinanceChargeFlag | — |
+| CREDIT_ITEMS_FLAG | IntrstHdrCreditItemsFlag | — |
+| CREDIT_ITEMS_FLAG | IntrstHdrTrxHdrCreditItemsFlag | — |
+| CURRENCY_CODE | IntrstHdrCurrencyCode | — |
+| CURRENCY_CODE | IntrstHdrTrxHdrCurrencyCode | — |
+| DISPLAY_FLAG | IntrstHdrDisplayFlag | — |
+| DISPLAY_FLAG | IntrstHdrTrxHdrDisplayFlag | — |
+| DISPUTED_TRANSACTIONS_FLAG | IntrstHdrDisputedTransactionsFlag | — |
+| DISPUTED_TRANSACTIONS_FLAG | IntrstHdrTrxHdrDisputedTransactionsFlag | — |
+| EXCHANGE_RATE | IntrstHdrExchangeRate | — |
+| EXCHANGE_RATE | IntrstHdrTrxHdrExchangeRate | — |
+| EXCHANGE_RATE_TYPE | IntrstHdrExchangeRateType | — |
+| EXCHANGE_RATE_TYPE | IntrstHdrTrxHdrExchangeRateType | — |
+| FINANCE_CHARGE_DATE | IntrstHdrFinanceChargeDate | — |
+| FINANCE_CHARGE_DATE | IntrstHdrTrxHdrFinanceChargeDate | — |
+| HEADER_TYPE | IntrstHdrHeaderType | — |
+| HEADER_TYPE | IntrstHdrTrxHdrHeaderType | — |
+| HOLD_CHARGED_INVOICES_FLAG | IntrstHdrHoldChargedInvoicesFlag | — |
+| HOLD_CHARGED_INVOICES_FLAG | IntrstHdrTrxHdrHoldChargedInvoicesFlag | — |
+| INTEREST_CALCULATION_PERIOD | IntrstHdrInterestCalculationPeriod | — |
+| INTEREST_CALCULATION_PERIOD | IntrstHdrTrxHdrInterestCalculationPeriod | — |
+| INTEREST_FIXED_AMOUNT | IntrstHdrInterestFixedAmount | — |
+| INTEREST_FIXED_AMOUNT | IntrstHdrTrxHdrInterestFixedAmount | — |
+| INTEREST_HEADER_ID | IntrstHdrInterestHeaderId | — |
+| INTEREST_HEADER_ID | IntrstHdrTrxHdrInterestHeaderId | — |
+| INTEREST_PERIOD_DAYS | IntrstHdrInterestPeriodDays | — |
+| INTEREST_PERIOD_DAYS | IntrstHdrTrxHdrInterestPeriodDays | — |
+| INTEREST_RATE | IntrstHdrInterestRate | — |
+| INTEREST_RATE | IntrstHdrTrxHdrInterestRate | — |
+| INTEREST_TYPE | IntrstHdrInterestType | — |
+| INTEREST_TYPE | IntrstHdrTrxHdrInterestType | — |
+| LAST_ACCRUE_CHARGE_DATE | IntrstHdrLastAccrueChargeDate | — |
+| LAST_ACCRUE_CHARGE_DATE | IntrstHdrTrxHdrLastAccrueChargeDate | — |
+| LATE_CHARGE_CALCULATION_TRX | IntrstHdrLateChargeCalculationTrx | — |
+| LATE_CHARGE_CALCULATION_TRX | IntrstHdrTrxHdrLateChargeCalculationTrx | — |
+| MAX_INTEREST_CHARGE | IntrstHdrMaxInterestCharge | — |
+| MAX_INTEREST_CHARGE | IntrstHdrTrxHdrMaxInterestCharge | — |
+| MIN_FC_BALANCE_AMOUNT | IntrstHdrMinFcBalanceAmount | — |
+| MIN_FC_BALANCE_AMOUNT | IntrstHdrTrxHdrMinFcBalanceAmount | — |
+| MIN_FC_BALANCE_OVERDUE_TYPE | IntrstHdrMinFcBalanceOverdueType | — |
+| MIN_FC_BALANCE_OVERDUE_TYPE | IntrstHdrTrxHdrMinFcBalanceOverdueType | — |
+| MIN_FC_BALANCE_PERCENT | IntrstHdrMinFcBalancePercent | — |
+| MIN_FC_BALANCE_PERCENT | IntrstHdrTrxHdrMinFcBalancePercent | — |
+| MIN_FC_INVOICE_AMOUNT | IntrstHdrMinFcInvoiceAmount | — |
+| MIN_FC_INVOICE_AMOUNT | IntrstHdrTrxHdrMinFcInvoiceAmount | — |
+| MIN_FC_INVOICE_OVERDUE_TYPE | IntrstHdrMinFcInvoiceOverdueType | — |
+| MIN_FC_INVOICE_OVERDUE_TYPE | IntrstHdrTrxHdrMinFcInvoiceOverdueType | — |
+| MIN_FC_INVOICE_PERCENT | IntrstHdrMinFcInvoicePercent | — |
+| MIN_FC_INVOICE_PERCENT | IntrstHdrTrxHdrMinFcInvoicePercent | — |
+| MIN_INTEREST_CHARGE | IntrstHdrMinInterestCharge | — |
+| MIN_INTEREST_CHARGE | IntrstHdrTrxHdrMinInterestCharge | — |
+| MULTIPLE_INTEREST_RATES_FLAG | IntrstHdrMultipleInterestRatesFlag | — |
+| MULTIPLE_INTEREST_RATES_FLAG | IntrstHdrTrxHdrMultipleInterestRatesFlag | — |
+| PAYMENT_GRACE_DAYS | IntrstHdrPaymentGraceDays | — |
+| PAYMENT_GRACE_DAYS | IntrstHdrTrxHdrPaymentGraceDays | — |
+| PENALTY_FIXED_AMOUNT | IntrstHdrPenaltyFixedAmount | — |
+| PENALTY_FIXED_AMOUNT | IntrstHdrTrxHdrPenaltyFixedAmount | — |
+| PENALTY_RATE | IntrstHdrPenaltyRate | — |
+| PENALTY_RATE | IntrstHdrTrxHdrPenaltyRate | — |
+| PENALTY_TYPE | IntrstHdrPenaltyType | — |
+| PENALTY_TYPE | IntrstHdrTrxHdrPenaltyType | — |
+| PROCESS_MESSAGE | IntrstHdrProcessMessage | — |
+| PROCESS_MESSAGE | IntrstHdrTrxHdrProcessMessage | — |
+| PROCESS_STATUS | IntrstHdrProcessStatus | — |
+| PROCESS_STATUS | IntrstHdrTrxHdrProcessStatus | — |
+| WORKER_NUM | IntrstHdrTrxHdrWorkerNum | — |
+| WORKER_NUM | IntrstHdrWorkerNum | — |
+
+### [[adjustmentpvo|AdjustmentPVO]] (AR)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CHARGE_BEGIN_DATE | IntrstHdrChargeBeginDate | — |
+| CHARGE_ON_FINANCE_CHARGE_FLAG | IntrstHdrChargeOnFinanceChargeFlag | — |
+| CREDIT_ITEMS_FLAG | IntrstHdrCreditItemsFlag | — |
+| CURRENCY_CODE | IntrstHdrCurrencyCode | — |
+| DISPLAY_FLAG | IntrstHdrDisplayFlag | — |
+| DISPUTED_TRANSACTIONS_FLAG | IntrstHdrDisputedTransactionsFlag | — |
+| EXCHANGE_RATE | IntrstHdrExchangeRate | — |
+| EXCHANGE_RATE_TYPE | IntrstHdrExchangeRateType | — |
+| FINANCE_CHARGE_DATE | IntrstHdrFinanceChargeDate | — |
+| HEADER_TYPE | IntrstHdrHeaderType | — |
+| HOLD_CHARGED_INVOICES_FLAG | IntrstHdrHoldChargedInvoicesFlag | — |
+| INTEREST_CALCULATION_PERIOD | IntrstHdrInterestCalculationPeriod | — |
+| INTEREST_FIXED_AMOUNT | IntrstHdrInterestFixedAmount | — |
+| INTEREST_HEADER_ID | IntrstHdrInterestHeaderId | — |
+| INTEREST_PERIOD_DAYS | IntrstHdrInterestPeriodDays | — |
+| INTEREST_RATE | IntrstHdrInterestRate | — |
+| INTEREST_TYPE | IntrstHdrInterestType | — |
+| LAST_ACCRUE_CHARGE_DATE | IntrstHdrLastAccrueChargeDate | — |
+| LATE_CHARGE_CALCULATION_TRX | IntrstHdrLateChargeCalculationTrx | — |
+| MAX_INTEREST_CHARGE | IntrstHdrMaxInterestCharge | — |
+| MIN_FC_BALANCE_AMOUNT | IntrstHdrMinFcBalanceAmount | — |
+| MIN_FC_BALANCE_OVERDUE_TYPE | IntrstHdrMinFcBalanceOverdueType | — |
+| MIN_FC_BALANCE_PERCENT | IntrstHdrMinFcBalancePercent | — |
+| MIN_FC_INVOICE_AMOUNT | IntrstHdrMinFcInvoiceAmount | — |
+| MIN_FC_INVOICE_OVERDUE_TYPE | IntrstHdrMinFcInvoiceOverdueType | — |
+| MIN_FC_INVOICE_PERCENT | IntrstHdrMinFcInvoicePercent | — |
+| MIN_INTEREST_CHARGE | IntrstHdrMinInterestCharge | — |
+| MULTIPLE_INTEREST_RATES_FLAG | IntrstHdrMultipleInterestRatesFlag | — |
+| PAYMENT_GRACE_DAYS | IntrstHdrPaymentGraceDays | — |
+| PENALTY_FIXED_AMOUNT | IntrstHdrPenaltyFixedAmount | — |
+| PENALTY_RATE | IntrstHdrPenaltyRate | — |
+| PENALTY_TYPE | IntrstHdrPenaltyType | — |
+| PROCESS_MESSAGE | IntrstHdrProcessMessage | — |
+| PROCESS_STATUS | IntrstHdrProcessStatus | — |
+| WORKER_NUM | IntrstHdrWorkerNum | — |
+
+### [[completedtrxrevadjdistributionpvo|CompletedTrxRevAdjDistributionPVO]] (AR)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CHARGE_BEGIN_DATE | IntrstHdrTrxHdrChargeBeginDate | — |
+| CHARGE_ON_FINANCE_CHARGE_FLAG | IntrstHdrTrxHdrChargeOnFinanceChargeFlag | — |
+| CREDIT_ITEMS_FLAG | IntrstHdrTrxHdrCreditItemsFlag | — |
+| CURRENCY_CODE | IntrstHdrTrxHdrCurrencyCode | — |
+| DISPLAY_FLAG | IntrstHdrTrxHdrDisplayFlag | — |
+| DISPUTED_TRANSACTIONS_FLAG | IntrstHdrTrxHdrDisputedTransactionsFlag | — |
+| EXCHANGE_RATE | IntrstHdrTrxHdrExchangeRate | — |
+| EXCHANGE_RATE_TYPE | IntrstHdrTrxHdrExchangeRateType | — |
+| FINANCE_CHARGE_DATE | IntrstHdrTrxHdrFinanceChargeDate | — |
+| HEADER_TYPE | IntrstHdrTrxHdrHeaderType | — |
+| HOLD_CHARGED_INVOICES_FLAG | IntrstHdrTrxHdrHoldChargedInvoicesFlag | — |
+| INTEREST_CALCULATION_PERIOD | IntrstHdrTrxHdrInterestCalculationPeriod | — |
+| INTEREST_FIXED_AMOUNT | IntrstHdrTrxHdrInterestFixedAmount | — |
+| INTEREST_HEADER_ID | IntrstHdrTrxHdrInterestHeaderId | — |
+| INTEREST_PERIOD_DAYS | IntrstHdrTrxHdrInterestPeriodDays | — |
+| INTEREST_RATE | IntrstHdrTrxHdrInterestRate | — |
+| INTEREST_TYPE | IntrstHdrTrxHdrInterestType | — |
+| LAST_ACCRUE_CHARGE_DATE | IntrstHdrTrxHdrLastAccrueChargeDate | — |
+| LATE_CHARGE_CALCULATION_TRX | IntrstHdrTrxHdrLateChargeCalculationTrx | — |
+| MAX_INTEREST_CHARGE | IntrstHdrTrxHdrMaxInterestCharge | — |
+| MIN_FC_BALANCE_AMOUNT | IntrstHdrTrxHdrMinFcBalanceAmount | — |
+| MIN_FC_BALANCE_OVERDUE_TYPE | IntrstHdrTrxHdrMinFcBalanceOverdueType | — |
+| MIN_FC_BALANCE_PERCENT | IntrstHdrTrxHdrMinFcBalancePercent | — |
+| MIN_FC_INVOICE_AMOUNT | IntrstHdrTrxHdrMinFcInvoiceAmount | — |
+| MIN_FC_INVOICE_OVERDUE_TYPE | IntrstHdrTrxHdrMinFcInvoiceOverdueType | — |
+| MIN_FC_INVOICE_PERCENT | IntrstHdrTrxHdrMinFcInvoicePercent | — |
+| MIN_INTEREST_CHARGE | IntrstHdrTrxHdrMinInterestCharge | — |
+| MULTIPLE_INTEREST_RATES_FLAG | IntrstHdrTrxHdrMultipleInterestRatesFlag | — |
+| PAYMENT_GRACE_DAYS | IntrstHdrTrxHdrPaymentGraceDays | — |
+| PENALTY_FIXED_AMOUNT | IntrstHdrTrxHdrPenaltyFixedAmount | — |
+| PENALTY_RATE | IntrstHdrTrxHdrPenaltyRate | — |
+| PENALTY_TYPE | IntrstHdrTrxHdrPenaltyType | — |
+| PROCESS_MESSAGE | IntrstHdrTrxHdrProcessMessage | — |
+| PROCESS_STATUS | IntrstHdrTrxHdrProcessStatus | — |
+| WORKER_NUM | IntrstHdrTrxHdrWorkerNum | — |
+
+### [[completedtrxrevenuedistributionpvo|CompletedTrxRevenueDistributionPVO]] (AR)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CHARGE_BEGIN_DATE | IntrstHdrTrxHdrChargeBeginDate | — |
+| CHARGE_ON_FINANCE_CHARGE_FLAG | IntrstHdrTrxHdrChargeOnFinanceChargeFlag | — |
+| CREDIT_ITEMS_FLAG | IntrstHdrTrxHdrCreditItemsFlag | — |
+| CURRENCY_CODE | IntrstHdrTrxHdrCurrencyCode | — |
+| DISPLAY_FLAG | IntrstHdrTrxHdrDisplayFlag | — |
+| DISPUTED_TRANSACTIONS_FLAG | IntrstHdrTrxHdrDisputedTransactionsFlag | — |
+| EXCHANGE_RATE | IntrstHdrTrxHdrExchangeRate | — |
+| EXCHANGE_RATE_TYPE | IntrstHdrTrxHdrExchangeRateType | — |
+| FINANCE_CHARGE_DATE | IntrstHdrTrxHdrFinanceChargeDate | — |
+| HEADER_TYPE | IntrstHdrTrxHdrHeaderType | — |
+| HOLD_CHARGED_INVOICES_FLAG | IntrstHdrTrxHdrHoldChargedInvoicesFlag | — |
+| INTEREST_CALCULATION_PERIOD | IntrstHdrTrxHdrInterestCalculationPeriod | — |
+| INTEREST_FIXED_AMOUNT | IntrstHdrTrxHdrInterestFixedAmount | — |
+| INTEREST_HEADER_ID | IntrstHdrTrxHdrInterestHeaderId | — |
+| INTEREST_PERIOD_DAYS | IntrstHdrTrxHdrInterestPeriodDays | — |
+| INTEREST_RATE | IntrstHdrTrxHdrInterestRate | — |
+| INTEREST_TYPE | IntrstHdrTrxHdrInterestType | — |
+| LAST_ACCRUE_CHARGE_DATE | IntrstHdrTrxHdrLastAccrueChargeDate | — |
+| LATE_CHARGE_CALCULATION_TRX | IntrstHdrTrxHdrLateChargeCalculationTrx | — |
+| MAX_INTEREST_CHARGE | IntrstHdrTrxHdrMaxInterestCharge | — |
+| MIN_FC_BALANCE_AMOUNT | IntrstHdrTrxHdrMinFcBalanceAmount | — |
+| MIN_FC_BALANCE_OVERDUE_TYPE | IntrstHdrTrxHdrMinFcBalanceOverdueType | — |
+| MIN_FC_BALANCE_PERCENT | IntrstHdrTrxHdrMinFcBalancePercent | — |
+| MIN_FC_INVOICE_AMOUNT | IntrstHdrTrxHdrMinFcInvoiceAmount | — |
+| MIN_FC_INVOICE_OVERDUE_TYPE | IntrstHdrTrxHdrMinFcInvoiceOverdueType | — |
+| MIN_FC_INVOICE_PERCENT | IntrstHdrTrxHdrMinFcInvoicePercent | — |
+| MIN_INTEREST_CHARGE | IntrstHdrTrxHdrMinInterestCharge | — |
+| MULTIPLE_INTEREST_RATES_FLAG | IntrstHdrTrxHdrMultipleInterestRatesFlag | — |
+| PAYMENT_GRACE_DAYS | IntrstHdrTrxHdrPaymentGraceDays | — |
+| PENALTY_FIXED_AMOUNT | IntrstHdrTrxHdrPenaltyFixedAmount | — |
+| PENALTY_RATE | IntrstHdrTrxHdrPenaltyRate | — |
+| PENALTY_TYPE | IntrstHdrTrxHdrPenaltyType | — |
+| PROCESS_MESSAGE | IntrstHdrTrxHdrProcessMessage | — |
+| PROCESS_STATUS | IntrstHdrTrxHdrProcessStatus | — |
+| WORKER_NUM | IntrstHdrTrxHdrWorkerNum | — |
+
+### [[creditmemoapplicationdistributionpvo|CreditMemoApplicationDistributionPVO]] (AR)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CHARGE_BEGIN_DATE | IntrstHdrTrxHdrAlyChargeBeginDate | — |
+| CHARGE_BEGIN_DATE | IntrstHdrTrxHdrChargeBeginDate | — |
+| CHARGE_ON_FINANCE_CHARGE_FLAG | IntrstHdrTrxHdrAlyChargeOnFinanceChargeFlag | — |
+| CHARGE_ON_FINANCE_CHARGE_FLAG | IntrstHdrTrxHdrChargeOnFinanceChargeFlag | — |
+| CREDIT_ITEMS_FLAG | IntrstHdrTrxHdrAlyCreditItemsFlag | — |
+| CREDIT_ITEMS_FLAG | IntrstHdrTrxHdrCreditItemsFlag | — |
+| CURRENCY_CODE | IntrstHdrTrxHdrAlyCurrencyCode | — |
+| CURRENCY_CODE | IntrstHdrTrxHdrCurrencyCode | — |
+| DISPLAY_FLAG | IntrstHdrTrxHdrAlyDisplayFlag | — |
+| DISPLAY_FLAG | IntrstHdrTrxHdrDisplayFlag | — |
+| DISPUTED_TRANSACTIONS_FLAG | IntrstHdrTrxHdrAlyDisputedTransactionsFlag | — |
+| DISPUTED_TRANSACTIONS_FLAG | IntrstHdrTrxHdrDisputedTransactionsFlag | — |
+| EXCHANGE_RATE | IntrstHdrTrxHdrAlyExchangeRate | — |
+| EXCHANGE_RATE | IntrstHdrTrxHdrExchangeRate | — |
+| EXCHANGE_RATE_TYPE | IntrstHdrTrxHdrAlyExchangeRateType | — |
+| EXCHANGE_RATE_TYPE | IntrstHdrTrxHdrExchangeRateType | — |
+| FINANCE_CHARGE_DATE | IntrstHdrTrxHdrAlyFinanceChargeDate | — |
+| FINANCE_CHARGE_DATE | IntrstHdrTrxHdrFinanceChargeDate | — |
+| HEADER_TYPE | IntrstHdrTrxHdrAlyHeaderType | — |
+| HEADER_TYPE | IntrstHdrTrxHdrHeaderType | — |
+| HOLD_CHARGED_INVOICES_FLAG | IntrstHdrTrxHdrAlyHoldChargedInvoicesFlag | — |
+| HOLD_CHARGED_INVOICES_FLAG | IntrstHdrTrxHdrHoldChargedInvoicesFlag | — |
+| INTEREST_CALCULATION_PERIOD | IntrstHdrTrxHdrAlyInterestCalculationPeriod | — |
+| INTEREST_CALCULATION_PERIOD | IntrstHdrTrxHdrInterestCalculationPeriod | — |
+| INTEREST_FIXED_AMOUNT | IntrstHdrTrxHdrAlyInterestFixedAmount | — |
+| INTEREST_FIXED_AMOUNT | IntrstHdrTrxHdrInterestFixedAmount | — |
+| INTEREST_HEADER_ID | IntrstHdrTrxHdrAlyInterestHeaderId | — |
+| INTEREST_HEADER_ID | IntrstHdrTrxHdrInterestHeaderId | — |
+| INTEREST_PERIOD_DAYS | IntrstHdrTrxHdrAlyInterestPeriodDays | — |
+| INTEREST_PERIOD_DAYS | IntrstHdrTrxHdrInterestPeriodDays | — |
+| INTEREST_RATE | IntrstHdrTrxHdrAlyInterestRate | — |
+| INTEREST_RATE | IntrstHdrTrxHdrInterestRate | — |
+| INTEREST_TYPE | IntrstHdrTrxHdrAlyInterestType | — |
+| INTEREST_TYPE | IntrstHdrTrxHdrInterestType | — |
+| LAST_ACCRUE_CHARGE_DATE | IntrstHdrTrxHdrAlyLastAccrueChargeDate | — |
+| LAST_ACCRUE_CHARGE_DATE | IntrstHdrTrxHdrLastAccrueChargeDate | — |
+| LATE_CHARGE_CALCULATION_TRX | IntrstHdrTrxHdrAlyLateChargeCalculationTrx | — |
+| LATE_CHARGE_CALCULATION_TRX | IntrstHdrTrxHdrLateChargeCalculationTrx | — |
+| MAX_INTEREST_CHARGE | IntrstHdrTrxHdrAlyMaxInterestCharge | — |
+| MAX_INTEREST_CHARGE | IntrstHdrTrxHdrMaxInterestCharge | — |
+| MIN_FC_BALANCE_AMOUNT | IntrstHdrTrxHdrAlyMinFcBalanceAmount | — |
+| MIN_FC_BALANCE_AMOUNT | IntrstHdrTrxHdrMinFcBalanceAmount | — |
+| MIN_FC_BALANCE_OVERDUE_TYPE | IntrstHdrTrxHdrAlyMinFcBalanceOverdueType | — |
+| MIN_FC_BALANCE_OVERDUE_TYPE | IntrstHdrTrxHdrMinFcBalanceOverdueType | — |
+| MIN_FC_BALANCE_PERCENT | IntrstHdrTrxHdrAlyMinFcBalancePercent | — |
+| MIN_FC_BALANCE_PERCENT | IntrstHdrTrxHdrMinFcBalancePercent | — |
+| MIN_FC_INVOICE_AMOUNT | IntrstHdrTrxHdrAlyMinFcInvoiceAmount | — |
+| MIN_FC_INVOICE_AMOUNT | IntrstHdrTrxHdrMinFcInvoiceAmount | — |
+| MIN_FC_INVOICE_OVERDUE_TYPE | IntrstHdrTrxHdrAlyMinFcInvoiceOverdueType | — |
+| MIN_FC_INVOICE_OVERDUE_TYPE | IntrstHdrTrxHdrMinFcInvoiceOverdueType | — |
+| MIN_FC_INVOICE_PERCENT | IntrstHdrTrxHdrAlyMinFcInvoicePercent | — |
+| MIN_FC_INVOICE_PERCENT | IntrstHdrTrxHdrMinFcInvoicePercent | — |
+| MIN_INTEREST_CHARGE | IntrstHdrTrxHdrAlyMinInterestCharge | — |
+| MIN_INTEREST_CHARGE | IntrstHdrTrxHdrMinInterestCharge | — |
+| MULTIPLE_INTEREST_RATES_FLAG | IntrstHdrTrxHdrAlyMultipleInterestRatesFlag | — |
+| MULTIPLE_INTEREST_RATES_FLAG | IntrstHdrTrxHdrMultipleInterestRatesFlag | — |
+| PAYMENT_GRACE_DAYS | IntrstHdrTrxHdrAlyPaymentGraceDays | — |
+| PAYMENT_GRACE_DAYS | IntrstHdrTrxHdrPaymentGraceDays | — |
+| PENALTY_FIXED_AMOUNT | IntrstHdrTrxHdrAlyPenaltyFixedAmount | — |
+| PENALTY_FIXED_AMOUNT | IntrstHdrTrxHdrPenaltyFixedAmount | — |
+| PENALTY_RATE | IntrstHdrTrxHdrAlyPenaltyRate | — |
+| PENALTY_RATE | IntrstHdrTrxHdrPenaltyRate | — |
+| PENALTY_TYPE | IntrstHdrTrxHdrAlyPenaltyType | — |
+| PENALTY_TYPE | IntrstHdrTrxHdrPenaltyType | — |
+| PROCESS_MESSAGE | IntrstHdrTrxHdrAlyProcessMessage | — |
+| PROCESS_MESSAGE | IntrstHdrTrxHdrProcessMessage | — |
+| PROCESS_STATUS | IntrstHdrTrxHdrAlyProcessStatus | — |
+| PROCESS_STATUS | IntrstHdrTrxHdrProcessStatus | — |
+| WORKER_NUM | IntrstHdrTrxHdrAlyWorkerNum | — |
+| WORKER_NUM | IntrstHdrTrxHdrWorkerNum | — |
+
+### [[headersalescreditpvo|HeaderSalesCreditPVO]] (AR)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CHARGE_BEGIN_DATE | IntrstHdrTrxHdrChargeBeginDate | — |
+| CHARGE_ON_FINANCE_CHARGE_FLAG | IntrstHdrTrxHdrChargeOnFinanceChargeFlag | — |
+| CREDIT_ITEMS_FLAG | IntrstHdrTrxHdrCreditItemsFlag | — |
+| CURRENCY_CODE | IntrstHdrTrxHdrCurrencyCode | — |
+| DISPLAY_FLAG | IntrstHdrTrxHdrDisplayFlag | — |
+| DISPUTED_TRANSACTIONS_FLAG | IntrstHdrTrxHdrDisputedTransactionsFlag | — |
+| EXCHANGE_RATE | IntrstHdrTrxHdrExchangeRate | — |
+| EXCHANGE_RATE_TYPE | IntrstHdrTrxHdrExchangeRateType | — |
+| FINANCE_CHARGE_DATE | IntrstHdrTrxHdrFinanceChargeDate | — |
+| HEADER_TYPE | IntrstHdrTrxHdrHeaderType | — |
+| HOLD_CHARGED_INVOICES_FLAG | IntrstHdrTrxHdrHoldChargedInvoicesFlag | — |
+| INTEREST_CALCULATION_PERIOD | IntrstHdrTrxHdrInterestCalculationPeriod | — |
+| INTEREST_FIXED_AMOUNT | IntrstHdrTrxHdrInterestFixedAmount | — |
+| INTEREST_HEADER_ID | IntrstHdrTrxHdrInterestHeaderId | — |
+| INTEREST_PERIOD_DAYS | IntrstHdrTrxHdrInterestPeriodDays | — |
+| INTEREST_RATE | IntrstHdrTrxHdrInterestRate | — |
+| INTEREST_TYPE | IntrstHdrTrxHdrInterestType | — |
+| LAST_ACCRUE_CHARGE_DATE | IntrstHdrTrxHdrLastAccrueChargeDate | — |
+| LATE_CHARGE_CALCULATION_TRX | IntrstHdrTrxHdrLateChargeCalculationTrx | — |
+| MAX_INTEREST_CHARGE | IntrstHdrTrxHdrMaxInterestCharge | — |
+| MIN_FC_BALANCE_AMOUNT | IntrstHdrTrxHdrMinFcBalanceAmount | — |
+| MIN_FC_BALANCE_OVERDUE_TYPE | IntrstHdrTrxHdrMinFcBalanceOverdueType | — |
+| MIN_FC_BALANCE_PERCENT | IntrstHdrTrxHdrMinFcBalancePercent | — |
+| MIN_FC_INVOICE_AMOUNT | IntrstHdrTrxHdrMinFcInvoiceAmount | — |
+| MIN_FC_INVOICE_OVERDUE_TYPE | IntrstHdrTrxHdrMinFcInvoiceOverdueType | — |
+| MIN_FC_INVOICE_PERCENT | IntrstHdrTrxHdrMinFcInvoicePercent | — |
+| MIN_INTEREST_CHARGE | IntrstHdrTrxHdrMinInterestCharge | — |
+| MULTIPLE_INTEREST_RATES_FLAG | IntrstHdrTrxHdrMultipleInterestRatesFlag | — |
+| PAYMENT_GRACE_DAYS | IntrstHdrTrxHdrPaymentGraceDays | — |
+| PENALTY_FIXED_AMOUNT | IntrstHdrTrxHdrPenaltyFixedAmount | — |
+| PENALTY_RATE | IntrstHdrTrxHdrPenaltyRate | — |
+| PENALTY_TYPE | IntrstHdrTrxHdrPenaltyType | — |
+| PROCESS_MESSAGE | IntrstHdrTrxHdrProcessMessage | — |
+| PROCESS_STATUS | IntrstHdrTrxHdrProcessStatus | — |
+| WORKER_NUM | IntrstHdrTrxHdrWorkerNum | — |
+
+### [[interestheaderextractpvo|InterestHeaderExtractPVO]] (OTHER · BICC: 55/55)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CHARGE_BEGIN_DATE | ArInterestHeaderChargeBeginDate | ✅ |
+| CHARGE_ON_FINANCE_CHARGE_FLAG | ArInterestHeaderChargeOnFinanceChargeFlag | ✅ |
+| COLLECTOR_ID | ArInterestHeaderCollectorId | ✅ |
+| CREATED_BY | ArInterestHeaderCreatedBy | ✅ |
+| CREATION_DATE | ArInterestHeaderCreationDate | ✅ |
+| CREDIT_ITEMS_FLAG | ArInterestHeaderCreditItemsFlag | ✅ |
+| CURRENCY_CODE | ArInterestHeaderCurrencyCode | ✅ |
+| CUST_ACCT_PROFILE_AMT_ID | ArInterestHeaderCustAcctProfileAmtId | ✅ |
+| CUST_TRX_TYPE_SEQ_ID | ArInterestHeaderCustTrxTypeSeqId | ✅ |
+| CUSTOMER_ID | ArInterestHeaderCustomerId | ✅ |
+| CUSTOMER_PROFILE_ID | ArInterestHeaderCustomerProfileId | ✅ |
+| CUSTOMER_SITE_USE_ID | ArInterestHeaderCustomerSiteUseId | ✅ |
+| DISPLAY_FLAG | ArInterestHeaderDisplayFlag | ✅ |
+| DISPUTED_TRANSACTIONS_FLAG | ArInterestHeaderDisputedTransactionsFlag | ✅ |
+| EXCHANGE_RATE | ArInterestHeaderExchangeRate | ✅ |
+| EXCHANGE_RATE_TYPE | ArInterestHeaderExchangeRateType | ✅ |
+| FINANCE_CHARGE_DATE | ArInterestHeaderFinanceChargeDate | ✅ |
+| HEADER_TYPE | ArInterestHeaderHeaderType | ✅ |
+| HOLD_CHARGED_INVOICES_FLAG | ArInterestHeaderHoldChargedInvoicesFlag | ✅ |
+| INTEREST_BATCH_ID | ArInterestHeaderInterestBatchId | ✅ |
+| INTEREST_CALCULATION_PERIOD | ArInterestHeaderInterestCalculationPeriod | ✅ |
+| INTEREST_FIXED_AMOUNT | ArInterestHeaderInterestFixedAmount | ✅ |
+| INTEREST_HEADER_ID | ArInterestHeaderInterestHeaderId | ✅ |
+| INTEREST_PERIOD_DAYS | ArInterestHeaderInterestPeriodDays | ✅ |
+| INTEREST_RATE | ArInterestHeaderInterestRate | ✅ |
+| INTEREST_SCHEDULE_ID | ArInterestHeaderInterestScheduleId | ✅ |
+| INTEREST_TYPE | ArInterestHeaderInterestType | ✅ |
+| LAST_ACCRUE_CHARGE_DATE | ArInterestHeaderLastAccrueChargeDate | ✅ |
+| LAST_UPDATE_DATE | ArInterestHeaderLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ArInterestHeaderLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | ArInterestHeaderLastUpdatedBy | ✅ |
+| LATE_CHARGE_CALCULATION_TRX | ArInterestHeaderLateChargeCalculationTrx | ✅ |
+| LATE_CHARGE_TERM_ID | ArInterestHeaderLateChargeTermId | ✅ |
+| LEGAL_ENTITY_ID | ArInterestHeaderLegalEntityId | ✅ |
+| MAX_INTEREST_CHARGE | ArInterestHeaderMaxInterestCharge | ✅ |
+| MESSAGE_TEXT_ID | ArInterestHeaderMessageTextId | ✅ |
+| MIN_FC_BALANCE_AMOUNT | ArInterestHeaderMinFcBalanceAmount | ✅ |
+| MIN_FC_BALANCE_OVERDUE_TYPE | ArInterestHeaderMinFcBalanceOverdueType | ✅ |
+| MIN_FC_BALANCE_PERCENT | ArInterestHeaderMinFcBalancePercent | ✅ |
+| MIN_FC_INVOICE_AMOUNT | ArInterestHeaderMinFcInvoiceAmount | ✅ |
+| MIN_FC_INVOICE_OVERDUE_TYPE | ArInterestHeaderMinFcInvoiceOverdueType | ✅ |
+| MIN_FC_INVOICE_PERCENT | ArInterestHeaderMinFcInvoicePercent | ✅ |
+| MIN_INTEREST_CHARGE | ArInterestHeaderMinInterestCharge | ✅ |
+| MULTIPLE_INTEREST_RATES_FLAG | ArInterestHeaderMultipleInterestRatesFlag | ✅ |
+| OBJECT_VERSION_NUMBER | ArInterestHeaderObjectVersionNumber | ✅ |
+| ORG_ID | ArInterestHeaderOrgId | ✅ |
+| PAYMENT_GRACE_DAYS | ArInterestHeaderPaymentGraceDays | ✅ |
+| PENALTY_FIXED_AMOUNT | ArInterestHeaderPenaltyFixedAmount | ✅ |
+| PENALTY_RATE | ArInterestHeaderPenaltyRate | ✅ |
+| PENALTY_SCHEDULE_ID | ArInterestHeaderPenaltyScheduleId | ✅ |
+| PENALTY_TYPE | ArInterestHeaderPenaltyType | ✅ |
+| PROCESS_MESSAGE | ArInterestHeaderProcessMessage | ✅ |
+| PROCESS_STATUS | ArInterestHeaderProcessStatus | ✅ |
+| REQUEST_ID | ArInterestHeaderRequestId | ✅ |
+| WORKER_NUM | ArInterestHeaderWorkerNum | ✅ |
+
+### [[linesalescreditpvo|LineSalesCreditPVO]] (AR)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CHARGE_BEGIN_DATE | IntrstHdrTrxHdrChargeBeginDate | — |
+| CHARGE_ON_FINANCE_CHARGE_FLAG | IntrstHdrTrxHdrChargeOnFinanceChargeFlag | — |
+| CREDIT_ITEMS_FLAG | IntrstHdrTrxHdrCreditItemsFlag | — |
+| CURRENCY_CODE | IntrstHdrTrxHdrCurrencyCode | — |
+| DISPLAY_FLAG | IntrstHdrTrxHdrDisplayFlag | — |
+| DISPUTED_TRANSACTIONS_FLAG | IntrstHdrTrxHdrDisputedTransactionsFlag | — |
+| EXCHANGE_RATE | IntrstHdrTrxHdrExchangeRate | — |
+| EXCHANGE_RATE_TYPE | IntrstHdrTrxHdrExchangeRateType | — |
+| FINANCE_CHARGE_DATE | IntrstHdrTrxHdrFinanceChargeDate | — |
+| HEADER_TYPE | IntrstHdrTrxHdrHeaderType | — |
+| HOLD_CHARGED_INVOICES_FLAG | IntrstHdrTrxHdrHoldChargedInvoicesFlag | — |
+| INTEREST_CALCULATION_PERIOD | IntrstHdrTrxHdrInterestCalculationPeriod | — |
+| INTEREST_FIXED_AMOUNT | IntrstHdrTrxHdrInterestFixedAmount | — |
+| INTEREST_HEADER_ID | IntrstHdrTrxHdrInterestHeaderId | — |
+| INTEREST_PERIOD_DAYS | IntrstHdrTrxHdrInterestPeriodDays | — |
+| INTEREST_RATE | IntrstHdrTrxHdrInterestRate | — |
+| INTEREST_TYPE | IntrstHdrTrxHdrInterestType | — |
+| LAST_ACCRUE_CHARGE_DATE | IntrstHdrTrxHdrLastAccrueChargeDate | — |
+| LATE_CHARGE_CALCULATION_TRX | IntrstHdrTrxHdrLateChargeCalculationTrx | — |
+| MAX_INTEREST_CHARGE | IntrstHdrTrxHdrMaxInterestCharge | — |
+| MIN_FC_BALANCE_AMOUNT | IntrstHdrTrxHdrMinFcBalanceAmount | — |
+| MIN_FC_BALANCE_OVERDUE_TYPE | IntrstHdrTrxHdrMinFcBalanceOverdueType | — |
+| MIN_FC_BALANCE_PERCENT | IntrstHdrTrxHdrMinFcBalancePercent | — |
+| MIN_FC_INVOICE_AMOUNT | IntrstHdrTrxHdrMinFcInvoiceAmount | — |
+| MIN_FC_INVOICE_OVERDUE_TYPE | IntrstHdrTrxHdrMinFcInvoiceOverdueType | — |
+| MIN_FC_INVOICE_PERCENT | IntrstHdrTrxHdrMinFcInvoicePercent | — |
+| MIN_INTEREST_CHARGE | IntrstHdrTrxHdrMinInterestCharge | — |
+| MULTIPLE_INTEREST_RATES_FLAG | IntrstHdrTrxHdrMultipleInterestRatesFlag | — |
+| PAYMENT_GRACE_DAYS | IntrstHdrTrxHdrPaymentGraceDays | — |
+| PENALTY_FIXED_AMOUNT | IntrstHdrTrxHdrPenaltyFixedAmount | — |
+| PENALTY_RATE | IntrstHdrTrxHdrPenaltyRate | — |
+| PENALTY_TYPE | IntrstHdrTrxHdrPenaltyType | — |
+| PROCESS_MESSAGE | IntrstHdrTrxHdrProcessMessage | — |
+| PROCESS_STATUS | IntrstHdrTrxHdrProcessStatus | — |
+| WORKER_NUM | IntrstHdrTrxHdrWorkerNum | — |
+
+### [[paymentschedulepvo|PaymentSchedulePVO]] (AR)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CHARGE_BEGIN_DATE | IntrstHdrTrxHdrChargeBeginDate | — |
+| CHARGE_ON_FINANCE_CHARGE_FLAG | IntrstHdrTrxHdrChargeOnFinanceChargeFlag | — |
+| CREDIT_ITEMS_FLAG | IntrstHdrTrxHdrCreditItemsFlag | — |
+| CURRENCY_CODE | IntrstHdrTrxHdrCurrencyCode | — |
+| DISPLAY_FLAG | IntrstHdrTrxHdrDisplayFlag | — |
+| DISPUTED_TRANSACTIONS_FLAG | IntrstHdrTrxHdrDisputedTransactionsFlag | — |
+| EXCHANGE_RATE | IntrstHdrTrxHdrExchangeRate | — |
+| EXCHANGE_RATE_TYPE | IntrstHdrTrxHdrExchangeRateType | — |
+| FINANCE_CHARGE_DATE | IntrstHdrTrxHdrFinanceChargeDate | — |
+| HEADER_TYPE | IntrstHdrTrxHdrHeaderType | — |
+| HOLD_CHARGED_INVOICES_FLAG | IntrstHdrTrxHdrHoldChargedInvoicesFlag | — |
+| INTEREST_CALCULATION_PERIOD | IntrstHdrTrxHdrInterestCalculationPeriod | — |
+| INTEREST_FIXED_AMOUNT | IntrstHdrTrxHdrInterestFixedAmount | — |
+| INTEREST_HEADER_ID | IntrstHdrTrxHdrInterestHeaderId | — |
+| INTEREST_PERIOD_DAYS | IntrstHdrTrxHdrInterestPeriodDays | — |
+| INTEREST_RATE | IntrstHdrTrxHdrInterestRate | — |
+| INTEREST_TYPE | IntrstHdrTrxHdrInterestType | — |
+| LAST_ACCRUE_CHARGE_DATE | IntrstHdrTrxHdrLastAccrueChargeDate | — |
+| LATE_CHARGE_CALCULATION_TRX | IntrstHdrTrxHdrLateChargeCalculationTrx | — |
+| MAX_INTEREST_CHARGE | IntrstHdrTrxHdrMaxInterestCharge | — |
+| MIN_FC_BALANCE_AMOUNT | IntrstHdrTrxHdrMinFcBalanceAmount | — |
+| MIN_FC_BALANCE_OVERDUE_TYPE | IntrstHdrTrxHdrMinFcBalanceOverdueType | — |
+| MIN_FC_BALANCE_PERCENT | IntrstHdrTrxHdrMinFcBalancePercent | — |
+| MIN_FC_INVOICE_AMOUNT | IntrstHdrTrxHdrMinFcInvoiceAmount | — |
+| MIN_FC_INVOICE_OVERDUE_TYPE | IntrstHdrTrxHdrMinFcInvoiceOverdueType | — |
+| MIN_FC_INVOICE_PERCENT | IntrstHdrTrxHdrMinFcInvoicePercent | — |
+| MIN_INTEREST_CHARGE | IntrstHdrTrxHdrMinInterestCharge | — |
+| MULTIPLE_INTEREST_RATES_FLAG | IntrstHdrTrxHdrMultipleInterestRatesFlag | — |
+| PAYMENT_GRACE_DAYS | IntrstHdrTrxHdrPaymentGraceDays | — |
+| PENALTY_FIXED_AMOUNT | IntrstHdrTrxHdrPenaltyFixedAmount | — |
+| PENALTY_RATE | IntrstHdrTrxHdrPenaltyRate | — |
+| PENALTY_TYPE | IntrstHdrTrxHdrPenaltyType | — |
+| PROCESS_MESSAGE | IntrstHdrTrxHdrProcessMessage | — |
+| PROCESS_STATUS | IntrstHdrTrxHdrProcessStatus | — |
+| WORKER_NUM | IntrstHdrTrxHdrWorkerNum | — |
+
+### [[salesinvoicecustomertrxlinesalescreditpvo|SalesInvoiceCustomerTrxLineSalesCreditPVO]] (AR)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CHARGE_BEGIN_DATE | IntrstHdrTrxHdrChargeBeginDate | — |
+| CHARGE_ON_FINANCE_CHARGE_FLAG | IntrstHdrTrxHdrChargeOnFinanceChargeFlag | — |
+| CREDIT_ITEMS_FLAG | IntrstHdrTrxHdrCreditItemsFlag | — |
+| CURRENCY_CODE | IntrstHdrTrxHdrCurrencyCode | — |
+| DISPLAY_FLAG | IntrstHdrTrxHdrDisplayFlag | — |
+| DISPUTED_TRANSACTIONS_FLAG | IntrstHdrTrxHdrDisputedTransactionsFlag | — |
+| EXCHANGE_RATE | IntrstHdrTrxHdrExchangeRate | — |
+| EXCHANGE_RATE_TYPE | IntrstHdrTrxHdrExchangeRateType | — |
+| FINANCE_CHARGE_DATE | IntrstHdrTrxHdrFinanceChargeDate | — |
+| HEADER_TYPE | IntrstHdrTrxHdrHeaderType | — |
+| HOLD_CHARGED_INVOICES_FLAG | IntrstHdrTrxHdrHoldChargedInvoicesFlag | — |
+| INTEREST_CALCULATION_PERIOD | IntrstHdrTrxHdrInterestCalculationPeriod | — |
+| INTEREST_FIXED_AMOUNT | IntrstHdrTrxHdrInterestFixedAmount | — |
+| INTEREST_HEADER_ID | IntrstHdrTrxHdrInterestHeaderId | — |
+| INTEREST_PERIOD_DAYS | IntrstHdrTrxHdrInterestPeriodDays | — |
+| INTEREST_RATE | IntrstHdrTrxHdrInterestRate | — |
+| INTEREST_TYPE | IntrstHdrTrxHdrInterestType | — |
+| LAST_ACCRUE_CHARGE_DATE | IntrstHdrTrxHdrLastAccrueChargeDate | — |
+| LATE_CHARGE_CALCULATION_TRX | IntrstHdrTrxHdrLateChargeCalculationTrx | — |
+| MAX_INTEREST_CHARGE | IntrstHdrTrxHdrMaxInterestCharge | — |
+| MIN_FC_BALANCE_AMOUNT | IntrstHdrTrxHdrMinFcBalanceAmount | — |
+| MIN_FC_BALANCE_OVERDUE_TYPE | IntrstHdrTrxHdrMinFcBalanceOverdueType | — |
+| MIN_FC_BALANCE_PERCENT | IntrstHdrTrxHdrMinFcBalancePercent | — |
+| MIN_FC_INVOICE_AMOUNT | IntrstHdrTrxHdrMinFcInvoiceAmount | — |
+| MIN_FC_INVOICE_OVERDUE_TYPE | IntrstHdrTrxHdrMinFcInvoiceOverdueType | — |
+| MIN_FC_INVOICE_PERCENT | IntrstHdrTrxHdrMinFcInvoicePercent | — |
+| MIN_INTEREST_CHARGE | IntrstHdrTrxHdrMinInterestCharge | — |
+| MULTIPLE_INTEREST_RATES_FLAG | IntrstHdrTrxHdrMultipleInterestRatesFlag | — |
+| PAYMENT_GRACE_DAYS | IntrstHdrTrxHdrPaymentGraceDays | — |
+| PENALTY_FIXED_AMOUNT | IntrstHdrTrxHdrPenaltyFixedAmount | — |
+| PENALTY_RATE | IntrstHdrTrxHdrPenaltyRate | — |
+| PENALTY_TYPE | IntrstHdrTrxHdrPenaltyType | — |
+| PROCESS_MESSAGE | IntrstHdrTrxHdrProcessMessage | — |
+| PROCESS_STATUS | IntrstHdrTrxHdrProcessStatus | — |
+| WORKER_NUM | IntrstHdrTrxHdrWorkerNum | — |
+
+### [[salesinvoicecustomertrxlinespvo|SalesInvoiceCustomerTrxLinesPVO]] (AR)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CHARGE_BEGIN_DATE | IntrstHdrTrxHdrChargeBeginDate | — |
+| CHARGE_ON_FINANCE_CHARGE_FLAG | IntrstHdrTrxHdrChargeOnFinanceChargeFlag | — |
+| CREDIT_ITEMS_FLAG | IntrstHdrTrxHdrCreditItemsFlag | — |
+| CURRENCY_CODE | IntrstHdrTrxHdrCurrencyCode | — |
+| DISPLAY_FLAG | IntrstHdrTrxHdrDisplayFlag | — |
+| DISPUTED_TRANSACTIONS_FLAG | IntrstHdrTrxHdrDisputedTransactionsFlag | — |
+| EXCHANGE_RATE | IntrstHdrTrxHdrExchangeRate | — |
+| EXCHANGE_RATE_TYPE | IntrstHdrTrxHdrExchangeRateType | — |
+| FINANCE_CHARGE_DATE | IntrstHdrTrxHdrFinanceChargeDate | — |
+| HEADER_TYPE | IntrstHdrTrxHdrHeaderType | — |
+| HOLD_CHARGED_INVOICES_FLAG | IntrstHdrTrxHdrHoldChargedInvoicesFlag | — |
+| INTEREST_CALCULATION_PERIOD | IntrstHdrTrxHdrInterestCalculationPeriod | — |
+| INTEREST_FIXED_AMOUNT | IntrstHdrTrxHdrInterestFixedAmount | — |
+| INTEREST_HEADER_ID | IntrstHdrTrxHdrInterestHeaderId | — |
+| INTEREST_PERIOD_DAYS | IntrstHdrTrxHdrInterestPeriodDays | — |
+| INTEREST_RATE | IntrstHdrTrxHdrInterestRate | — |
+| INTEREST_TYPE | IntrstHdrTrxHdrInterestType | — |
+| LAST_ACCRUE_CHARGE_DATE | IntrstHdrTrxHdrLastAccrueChargeDate | — |
+| LATE_CHARGE_CALCULATION_TRX | IntrstHdrTrxHdrLateChargeCalculationTrx | — |
+| MAX_INTEREST_CHARGE | IntrstHdrTrxHdrMaxInterestCharge | — |
+| MIN_FC_BALANCE_AMOUNT | IntrstHdrTrxHdrMinFcBalanceAmount | — |
+| MIN_FC_BALANCE_OVERDUE_TYPE | IntrstHdrTrxHdrMinFcBalanceOverdueType | — |
+| MIN_FC_BALANCE_PERCENT | IntrstHdrTrxHdrMinFcBalancePercent | — |
+| MIN_FC_INVOICE_AMOUNT | IntrstHdrTrxHdrMinFcInvoiceAmount | — |
+| MIN_FC_INVOICE_OVERDUE_TYPE | IntrstHdrTrxHdrMinFcInvoiceOverdueType | — |
+| MIN_FC_INVOICE_PERCENT | IntrstHdrTrxHdrMinFcInvoicePercent | — |
+| MIN_INTEREST_CHARGE | IntrstHdrTrxHdrMinInterestCharge | — |
+| MULTIPLE_INTEREST_RATES_FLAG | IntrstHdrTrxHdrMultipleInterestRatesFlag | — |
+| PAYMENT_GRACE_DAYS | IntrstHdrTrxHdrPaymentGraceDays | — |
+| PENALTY_FIXED_AMOUNT | IntrstHdrTrxHdrPenaltyFixedAmount | — |
+| PENALTY_RATE | IntrstHdrTrxHdrPenaltyRate | — |
+| PENALTY_TYPE | IntrstHdrTrxHdrPenaltyType | — |
+| PROCESS_MESSAGE | IntrstHdrTrxHdrProcessMessage | — |
+| PROCESS_STATUS | IntrstHdrTrxHdrProcessStatus | — |
+| WORKER_NUM | IntrstHdrTrxHdrWorkerNum | — |
+
+### [[transactionheaderbillsreceivablepvo|TransactionHeaderBillsReceivablePVO]] (AR)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CHARGE_BEGIN_DATE | IntrstHdrTrxHdrChargeBeginDate | — |
+| CHARGE_ON_FINANCE_CHARGE_FLAG | IntrstHdrTrxHdrChargeOnFinanceChargeFlag | — |
+| CREDIT_ITEMS_FLAG | IntrstHdrTrxHdrCreditItemsFlag | — |
+| CURRENCY_CODE | IntrstHdrTrxHdrCurrencyCode | — |
+| DISPLAY_FLAG | IntrstHdrTrxHdrDisplayFlag | — |
+| DISPUTED_TRANSACTIONS_FLAG | IntrstHdrTrxHdrDisputedTransactionsFlag | — |
+| EXCHANGE_RATE | IntrstHdrTrxHdrExchangeRate | — |
+| EXCHANGE_RATE_TYPE | IntrstHdrTrxHdrExchangeRateType | — |
+| FINANCE_CHARGE_DATE | IntrstHdrTrxHdrFinanceChargeDate | — |
+| HEADER_TYPE | IntrstHdrTrxHdrHeaderType | — |
+| HOLD_CHARGED_INVOICES_FLAG | IntrstHdrTrxHdrHoldChargedInvoicesFlag | — |
+| INTEREST_CALCULATION_PERIOD | IntrstHdrTrxHdrInterestCalculationPeriod | — |
+| INTEREST_FIXED_AMOUNT | IntrstHdrTrxHdrInterestFixedAmount | — |
+| INTEREST_HEADER_ID | IntrstHdrTrxHdrInterestHeaderId | — |
+| INTEREST_PERIOD_DAYS | IntrstHdrTrxHdrInterestPeriodDays | — |
+| INTEREST_RATE | IntrstHdrTrxHdrInterestRate | — |
+| INTEREST_TYPE | IntrstHdrTrxHdrInterestType | — |
+| LAST_ACCRUE_CHARGE_DATE | IntrstHdrTrxHdrLastAccrueChargeDate | — |
+| LATE_CHARGE_CALCULATION_TRX | IntrstHdrTrxHdrLateChargeCalculationTrx | — |
+| MAX_INTEREST_CHARGE | IntrstHdrTrxHdrMaxInterestCharge | — |
+| MIN_FC_BALANCE_AMOUNT | IntrstHdrTrxHdrMinFcBalanceAmount | — |
+| MIN_FC_BALANCE_OVERDUE_TYPE | IntrstHdrTrxHdrMinFcBalanceOverdueType | — |
+| MIN_FC_BALANCE_PERCENT | IntrstHdrTrxHdrMinFcBalancePercent | — |
+| MIN_FC_INVOICE_AMOUNT | IntrstHdrTrxHdrMinFcInvoiceAmount | — |
+| MIN_FC_INVOICE_OVERDUE_TYPE | IntrstHdrTrxHdrMinFcInvoiceOverdueType | — |
+| MIN_FC_INVOICE_PERCENT | IntrstHdrTrxHdrMinFcInvoicePercent | — |
+| MIN_INTEREST_CHARGE | IntrstHdrTrxHdrMinInterestCharge | — |
+| MULTIPLE_INTEREST_RATES_FLAG | IntrstHdrTrxHdrMultipleInterestRatesFlag | — |
+| PAYMENT_GRACE_DAYS | IntrstHdrTrxHdrPaymentGraceDays | — |
+| PENALTY_FIXED_AMOUNT | IntrstHdrTrxHdrPenaltyFixedAmount | — |
+| PENALTY_RATE | IntrstHdrTrxHdrPenaltyRate | — |
+| PENALTY_TYPE | IntrstHdrTrxHdrPenaltyType | — |
+| PROCESS_MESSAGE | IntrstHdrTrxHdrProcessMessage | — |
+| PROCESS_STATUS | IntrstHdrTrxHdrProcessStatus | — |
+| WORKER_NUM | IntrstHdrTrxHdrWorkerNum | — |
+
+### [[transactionheadernovcpvo|TransactionHeaderNoVCPVO]] (AR)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CHARGE_BEGIN_DATE | IntrstHdrTrxHdrChargeBeginDate | — |
+| CHARGE_ON_FINANCE_CHARGE_FLAG | IntrstHdrTrxHdrChargeOnFinanceChargeFlag | — |
+| CREDIT_ITEMS_FLAG | IntrstHdrTrxHdrCreditItemsFlag | — |
+| CURRENCY_CODE | IntrstHdrTrxHdrCurrencyCode | — |
+| DISPLAY_FLAG | IntrstHdrTrxHdrDisplayFlag | — |
+| DISPUTED_TRANSACTIONS_FLAG | IntrstHdrTrxHdrDisputedTransactionsFlag | — |
+| EXCHANGE_RATE | IntrstHdrTrxHdrExchangeRate | — |
+| EXCHANGE_RATE_TYPE | IntrstHdrTrxHdrExchangeRateType | — |
+| FINANCE_CHARGE_DATE | IntrstHdrTrxHdrFinanceChargeDate | — |
+| HEADER_TYPE | IntrstHdrTrxHdrHeaderType | — |
+| HOLD_CHARGED_INVOICES_FLAG | IntrstHdrTrxHdrHoldChargedInvoicesFlag | — |
+| INTEREST_CALCULATION_PERIOD | IntrstHdrTrxHdrInterestCalculationPeriod | — |
+| INTEREST_FIXED_AMOUNT | IntrstHdrTrxHdrInterestFixedAmount | — |
+| INTEREST_HEADER_ID | IntrstHdrTrxHdrInterestHeaderId | — |
+| INTEREST_PERIOD_DAYS | IntrstHdrTrxHdrInterestPeriodDays | — |
+| INTEREST_RATE | IntrstHdrTrxHdrInterestRate | — |
+| INTEREST_TYPE | IntrstHdrTrxHdrInterestType | — |
+| LAST_ACCRUE_CHARGE_DATE | IntrstHdrTrxHdrLastAccrueChargeDate | — |
+| LATE_CHARGE_CALCULATION_TRX | IntrstHdrTrxHdrLateChargeCalculationTrx | — |
+| MAX_INTEREST_CHARGE | IntrstHdrTrxHdrMaxInterestCharge | — |
+| MIN_FC_BALANCE_AMOUNT | IntrstHdrTrxHdrMinFcBalanceAmount | — |
+| MIN_FC_BALANCE_OVERDUE_TYPE | IntrstHdrTrxHdrMinFcBalanceOverdueType | — |
+| MIN_FC_BALANCE_PERCENT | IntrstHdrTrxHdrMinFcBalancePercent | — |
+| MIN_FC_INVOICE_AMOUNT | IntrstHdrTrxHdrMinFcInvoiceAmount | — |
+| MIN_FC_INVOICE_OVERDUE_TYPE | IntrstHdrTrxHdrMinFcInvoiceOverdueType | — |
+| MIN_FC_INVOICE_PERCENT | IntrstHdrTrxHdrMinFcInvoicePercent | — |
+| MIN_INTEREST_CHARGE | IntrstHdrTrxHdrMinInterestCharge | — |
+| MULTIPLE_INTEREST_RATES_FLAG | IntrstHdrTrxHdrMultipleInterestRatesFlag | — |
+| PAYMENT_GRACE_DAYS | IntrstHdrTrxHdrPaymentGraceDays | — |
+| PENALTY_FIXED_AMOUNT | IntrstHdrTrxHdrPenaltyFixedAmount | — |
+| PENALTY_RATE | IntrstHdrTrxHdrPenaltyRate | — |
+| PENALTY_TYPE | IntrstHdrTrxHdrPenaltyType | — |
+| PROCESS_MESSAGE | IntrstHdrTrxHdrProcessMessage | — |
+| PROCESS_STATUS | IntrstHdrTrxHdrProcessStatus | — |
+| WORKER_NUM | IntrstHdrTrxHdrWorkerNum | — |
+
+### [[transactionheaderpvo|TransactionHeaderPVO]] (AR)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CHARGE_BEGIN_DATE | IntrstHdrTrxHdrChargeBeginDate | — |
+| CHARGE_ON_FINANCE_CHARGE_FLAG | IntrstHdrTrxHdrChargeOnFinanceChargeFlag | — |
+| CREDIT_ITEMS_FLAG | IntrstHdrTrxHdrCreditItemsFlag | — |
+| CURRENCY_CODE | IntrstHdrTrxHdrCurrencyCode | — |
+| DISPLAY_FLAG | IntrstHdrTrxHdrDisplayFlag | — |
+| DISPUTED_TRANSACTIONS_FLAG | IntrstHdrTrxHdrDisputedTransactionsFlag | — |
+| EXCHANGE_RATE | IntrstHdrTrxHdrExchangeRate | — |
+| EXCHANGE_RATE_TYPE | IntrstHdrTrxHdrExchangeRateType | — |
+| FINANCE_CHARGE_DATE | IntrstHdrTrxHdrFinanceChargeDate | — |
+| HEADER_TYPE | IntrstHdrTrxHdrHeaderType | — |
+| HOLD_CHARGED_INVOICES_FLAG | IntrstHdrTrxHdrHoldChargedInvoicesFlag | — |
+| INTEREST_CALCULATION_PERIOD | IntrstHdrTrxHdrInterestCalculationPeriod | — |
+| INTEREST_FIXED_AMOUNT | IntrstHdrTrxHdrInterestFixedAmount | — |
+| INTEREST_HEADER_ID | IntrstHdrTrxHdrInterestHeaderId | — |
+| INTEREST_PERIOD_DAYS | IntrstHdrTrxHdrInterestPeriodDays | — |
+| INTEREST_RATE | IntrstHdrTrxHdrInterestRate | — |
+| INTEREST_TYPE | IntrstHdrTrxHdrInterestType | — |
+| LAST_ACCRUE_CHARGE_DATE | IntrstHdrTrxHdrLastAccrueChargeDate | — |
+| LATE_CHARGE_CALCULATION_TRX | IntrstHdrTrxHdrLateChargeCalculationTrx | — |
+| MAX_INTEREST_CHARGE | IntrstHdrTrxHdrMaxInterestCharge | — |
+| MIN_FC_BALANCE_AMOUNT | IntrstHdrTrxHdrMinFcBalanceAmount | — |
+| MIN_FC_BALANCE_OVERDUE_TYPE | IntrstHdrTrxHdrMinFcBalanceOverdueType | — |
+| MIN_FC_BALANCE_PERCENT | IntrstHdrTrxHdrMinFcBalancePercent | — |
+| MIN_FC_INVOICE_AMOUNT | IntrstHdrTrxHdrMinFcInvoiceAmount | — |
+| MIN_FC_INVOICE_OVERDUE_TYPE | IntrstHdrTrxHdrMinFcInvoiceOverdueType | — |
+| MIN_FC_INVOICE_PERCENT | IntrstHdrTrxHdrMinFcInvoicePercent | — |
+| MIN_INTEREST_CHARGE | IntrstHdrTrxHdrMinInterestCharge | — |
+| MULTIPLE_INTEREST_RATES_FLAG | IntrstHdrTrxHdrMultipleInterestRatesFlag | — |
+| PAYMENT_GRACE_DAYS | IntrstHdrTrxHdrPaymentGraceDays | — |
+| PENALTY_FIXED_AMOUNT | IntrstHdrTrxHdrPenaltyFixedAmount | — |
+| PENALTY_RATE | IntrstHdrTrxHdrPenaltyRate | — |
+| PENALTY_TYPE | IntrstHdrTrxHdrPenaltyType | — |
+| PROCESS_MESSAGE | IntrstHdrTrxHdrProcessMessage | — |
+| PROCESS_STATUS | IntrstHdrTrxHdrProcessStatus | — |
+| WORKER_NUM | IntrstHdrTrxHdrWorkerNum | — |
+
+### [[transactionhistorydistributionpvo|TransactionHistoryDistributionPVO]] (AR)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CHARGE_BEGIN_DATE | IntrstHdrTrxHdrChargeBeginDate | — |
+| CHARGE_ON_FINANCE_CHARGE_FLAG | IntrstHdrTrxHdrChargeOnFinanceChargeFlag | — |
+| CREDIT_ITEMS_FLAG | IntrstHdrTrxHdrCreditItemsFlag | — |
+| CURRENCY_CODE | IntrstHdrTrxHdrCurrencyCode | — |
+| DISPLAY_FLAG | IntrstHdrTrxHdrDisplayFlag | — |
+| DISPUTED_TRANSACTIONS_FLAG | IntrstHdrTrxHdrDisputedTransactionsFlag | — |
+| EXCHANGE_RATE | IntrstHdrTrxHdrExchangeRate | — |
+| EXCHANGE_RATE_TYPE | IntrstHdrTrxHdrExchangeRateType | — |
+| FINANCE_CHARGE_DATE | IntrstHdrTrxHdrFinanceChargeDate | — |
+| HEADER_TYPE | IntrstHdrTrxHdrHeaderType | — |
+| HOLD_CHARGED_INVOICES_FLAG | IntrstHdrTrxHdrHoldChargedInvoicesFlag | — |
+| INTEREST_CALCULATION_PERIOD | IntrstHdrTrxHdrInterestCalculationPeriod | — |
+| INTEREST_FIXED_AMOUNT | IntrstHdrTrxHdrInterestFixedAmount | — |
+| INTEREST_HEADER_ID | IntrstHdrTrxHdrInterestHeaderId | — |
+| INTEREST_PERIOD_DAYS | IntrstHdrTrxHdrInterestPeriodDays | — |
+| INTEREST_RATE | IntrstHdrTrxHdrInterestRate | — |
+| INTEREST_TYPE | IntrstHdrTrxHdrInterestType | — |
+| LAST_ACCRUE_CHARGE_DATE | IntrstHdrTrxHdrLastAccrueChargeDate | — |
+| LATE_CHARGE_CALCULATION_TRX | IntrstHdrTrxHdrLateChargeCalculationTrx | — |
+| MAX_INTEREST_CHARGE | IntrstHdrTrxHdrMaxInterestCharge | — |
+| MIN_FC_BALANCE_AMOUNT | IntrstHdrTrxHdrMinFcBalanceAmount | — |
+| MIN_FC_BALANCE_OVERDUE_TYPE | IntrstHdrTrxHdrMinFcBalanceOverdueType | — |
+| MIN_FC_BALANCE_PERCENT | IntrstHdrTrxHdrMinFcBalancePercent | — |
+| MIN_FC_INVOICE_AMOUNT | IntrstHdrTrxHdrMinFcInvoiceAmount | — |
+| MIN_FC_INVOICE_OVERDUE_TYPE | IntrstHdrTrxHdrMinFcInvoiceOverdueType | — |
+| MIN_FC_INVOICE_PERCENT | IntrstHdrTrxHdrMinFcInvoicePercent | — |
+| MIN_INTEREST_CHARGE | IntrstHdrTrxHdrMinInterestCharge | — |
+| MULTIPLE_INTEREST_RATES_FLAG | IntrstHdrTrxHdrMultipleInterestRatesFlag | — |
+| PAYMENT_GRACE_DAYS | IntrstHdrTrxHdrPaymentGraceDays | — |
+| PENALTY_FIXED_AMOUNT | IntrstHdrTrxHdrPenaltyFixedAmount | — |
+| PENALTY_RATE | IntrstHdrTrxHdrPenaltyRate | — |
+| PENALTY_TYPE | IntrstHdrTrxHdrPenaltyType | — |
+| PROCESS_MESSAGE | IntrstHdrTrxHdrProcessMessage | — |
+| PROCESS_STATUS | IntrstHdrTrxHdrProcessStatus | — |
+| WORKER_NUM | IntrstHdrTrxHdrWorkerNum | — |
+
+### [[transactionhistorypvo|TransactionHistoryPVO]] (AR)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CHARGE_BEGIN_DATE | IntrstHdrTrxHdrChargeBeginDate | — |
+| CHARGE_ON_FINANCE_CHARGE_FLAG | IntrstHdrTrxHdrChargeOnFinanceChargeFlag | — |
+| CREDIT_ITEMS_FLAG | IntrstHdrTrxHdrCreditItemsFlag | — |
+| CURRENCY_CODE | IntrstHdrTrxHdrCurrencyCode | — |
+| DISPLAY_FLAG | IntrstHdrTrxHdrDisplayFlag | — |
+| DISPUTED_TRANSACTIONS_FLAG | IntrstHdrTrxHdrDisputedTransactionsFlag | — |
+| EXCHANGE_RATE | IntrstHdrTrxHdrExchangeRate | — |
+| EXCHANGE_RATE_TYPE | IntrstHdrTrxHdrExchangeRateType | — |
+| FINANCE_CHARGE_DATE | IntrstHdrTrxHdrFinanceChargeDate | — |
+| HEADER_TYPE | IntrstHdrTrxHdrHeaderType | — |
+| HOLD_CHARGED_INVOICES_FLAG | IntrstHdrTrxHdrHoldChargedInvoicesFlag | — |
+| INTEREST_CALCULATION_PERIOD | IntrstHdrTrxHdrInterestCalculationPeriod | — |
+| INTEREST_FIXED_AMOUNT | IntrstHdrTrxHdrInterestFixedAmount | — |
+| INTEREST_HEADER_ID | IntrstHdrTrxHdrInterestHeaderId | — |
+| INTEREST_PERIOD_DAYS | IntrstHdrTrxHdrInterestPeriodDays | — |
+| INTEREST_RATE | IntrstHdrTrxHdrInterestRate | — |
+| INTEREST_TYPE | IntrstHdrTrxHdrInterestType | — |
+| LAST_ACCRUE_CHARGE_DATE | IntrstHdrTrxHdrLastAccrueChargeDate | — |
+| LATE_CHARGE_CALCULATION_TRX | IntrstHdrTrxHdrLateChargeCalculationTrx | — |
+| MAX_INTEREST_CHARGE | IntrstHdrTrxHdrMaxInterestCharge | — |
+| MIN_FC_BALANCE_AMOUNT | IntrstHdrTrxHdrMinFcBalanceAmount | — |
+| MIN_FC_BALANCE_OVERDUE_TYPE | IntrstHdrTrxHdrMinFcBalanceOverdueType | — |
+| MIN_FC_BALANCE_PERCENT | IntrstHdrTrxHdrMinFcBalancePercent | — |
+| MIN_FC_INVOICE_AMOUNT | IntrstHdrTrxHdrMinFcInvoiceAmount | — |
+| MIN_FC_INVOICE_OVERDUE_TYPE | IntrstHdrTrxHdrMinFcInvoiceOverdueType | — |
+| MIN_FC_INVOICE_PERCENT | IntrstHdrTrxHdrMinFcInvoicePercent | — |
+| MIN_INTEREST_CHARGE | IntrstHdrTrxHdrMinInterestCharge | — |
+| MULTIPLE_INTEREST_RATES_FLAG | IntrstHdrTrxHdrMultipleInterestRatesFlag | — |
+| PAYMENT_GRACE_DAYS | IntrstHdrTrxHdrPaymentGraceDays | — |
+| PENALTY_FIXED_AMOUNT | IntrstHdrTrxHdrPenaltyFixedAmount | — |
+| PENALTY_RATE | IntrstHdrTrxHdrPenaltyRate | — |
+| PENALTY_TYPE | IntrstHdrTrxHdrPenaltyType | — |
+| PROCESS_MESSAGE | IntrstHdrTrxHdrProcessMessage | — |
+| PROCESS_STATUS | IntrstHdrTrxHdrProcessStatus | — |
+| WORKER_NUM | IntrstHdrTrxHdrWorkerNum | — |
+
+### [[transactionlinebillsreceivablepvo|TransactionLineBillsReceivablePVO]] (AR)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CHARGE_BEGIN_DATE | IntrstHdrTrxHdrChargeBeginDate | — |
+| CHARGE_ON_FINANCE_CHARGE_FLAG | IntrstHdrTrxHdrChargeOnFinanceChargeFlag | — |
+| CREDIT_ITEMS_FLAG | IntrstHdrTrxHdrCreditItemsFlag | — |
+| CURRENCY_CODE | IntrstHdrTrxHdrCurrencyCode | — |
+| DISPLAY_FLAG | IntrstHdrTrxHdrDisplayFlag | — |
+| DISPUTED_TRANSACTIONS_FLAG | IntrstHdrTrxHdrDisputedTransactionsFlag | — |
+| EXCHANGE_RATE | IntrstHdrTrxHdrExchangeRate | — |
+| EXCHANGE_RATE_TYPE | IntrstHdrTrxHdrExchangeRateType | — |
+| FINANCE_CHARGE_DATE | IntrstHdrTrxHdrFinanceChargeDate | — |
+| HEADER_TYPE | IntrstHdrTrxHdrHeaderType | — |
+| HOLD_CHARGED_INVOICES_FLAG | IntrstHdrTrxHdrHoldChargedInvoicesFlag | — |
+| INTEREST_CALCULATION_PERIOD | IntrstHdrTrxHdrInterestCalculationPeriod | — |
+| INTEREST_FIXED_AMOUNT | IntrstHdrTrxHdrInterestFixedAmount | — |
+| INTEREST_HEADER_ID | IntrstHdrTrxHdrInterestHeaderId | — |
+| INTEREST_PERIOD_DAYS | IntrstHdrTrxHdrInterestPeriodDays | — |
+| INTEREST_RATE | IntrstHdrTrxHdrInterestRate | — |
+| INTEREST_TYPE | IntrstHdrTrxHdrInterestType | — |
+| LAST_ACCRUE_CHARGE_DATE | IntrstHdrTrxHdrLastAccrueChargeDate | — |
+| LATE_CHARGE_CALCULATION_TRX | IntrstHdrTrxHdrLateChargeCalculationTrx | — |
+| MAX_INTEREST_CHARGE | IntrstHdrTrxHdrMaxInterestCharge | — |
+| MIN_FC_BALANCE_AMOUNT | IntrstHdrTrxHdrMinFcBalanceAmount | — |
+| MIN_FC_BALANCE_OVERDUE_TYPE | IntrstHdrTrxHdrMinFcBalanceOverdueType | — |
+| MIN_FC_BALANCE_PERCENT | IntrstHdrTrxHdrMinFcBalancePercent | — |
+| MIN_FC_INVOICE_AMOUNT | IntrstHdrTrxHdrMinFcInvoiceAmount | — |
+| MIN_FC_INVOICE_OVERDUE_TYPE | IntrstHdrTrxHdrMinFcInvoiceOverdueType | — |
+| MIN_FC_INVOICE_PERCENT | IntrstHdrTrxHdrMinFcInvoicePercent | — |
+| MIN_INTEREST_CHARGE | IntrstHdrTrxHdrMinInterestCharge | — |
+| MULTIPLE_INTEREST_RATES_FLAG | IntrstHdrTrxHdrMultipleInterestRatesFlag | — |
+| PAYMENT_GRACE_DAYS | IntrstHdrTrxHdrPaymentGraceDays | — |
+| PENALTY_FIXED_AMOUNT | IntrstHdrTrxHdrPenaltyFixedAmount | — |
+| PENALTY_RATE | IntrstHdrTrxHdrPenaltyRate | — |
+| PENALTY_TYPE | IntrstHdrTrxHdrPenaltyType | — |
+| PROCESS_MESSAGE | IntrstHdrTrxHdrProcessMessage | — |
+| PROCESS_STATUS | IntrstHdrTrxHdrProcessStatus | — |
+| WORKER_NUM | IntrstHdrTrxHdrWorkerNum | — |
+
+### [[transactionlinedistributionpvo|TransactionLineDistributionPVO]] (AR)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CHARGE_BEGIN_DATE | IntrstHdrTrxHdrChargeBeginDate | — |
+| CHARGE_ON_FINANCE_CHARGE_FLAG | IntrstHdrTrxHdrChargeOnFinanceChargeFlag | — |
+| CREDIT_ITEMS_FLAG | IntrstHdrTrxHdrCreditItemsFlag | — |
+| CURRENCY_CODE | IntrstHdrTrxHdrCurrencyCode | — |
+| DISPLAY_FLAG | IntrstHdrTrxHdrDisplayFlag | — |
+| DISPUTED_TRANSACTIONS_FLAG | IntrstHdrTrxHdrDisputedTransactionsFlag | — |
+| EXCHANGE_RATE | IntrstHdrTrxHdrExchangeRate | — |
+| EXCHANGE_RATE_TYPE | IntrstHdrTrxHdrExchangeRateType | — |
+| FINANCE_CHARGE_DATE | IntrstHdrTrxHdrFinanceChargeDate | — |
+| HEADER_TYPE | IntrstHdrTrxHdrHeaderType | — |
+| HOLD_CHARGED_INVOICES_FLAG | IntrstHdrTrxHdrHoldChargedInvoicesFlag | — |
+| INTEREST_CALCULATION_PERIOD | IntrstHdrTrxHdrInterestCalculationPeriod | — |
+| INTEREST_FIXED_AMOUNT | IntrstHdrTrxHdrInterestFixedAmount | — |
+| INTEREST_HEADER_ID | IntrstHdrTrxHdrInterestHeaderId | — |
+| INTEREST_PERIOD_DAYS | IntrstHdrTrxHdrInterestPeriodDays | — |
+| INTEREST_RATE | IntrstHdrTrxHdrInterestRate | — |
+| INTEREST_TYPE | IntrstHdrTrxHdrInterestType | — |
+| LAST_ACCRUE_CHARGE_DATE | IntrstHdrTrxHdrLastAccrueChargeDate | — |
+| LATE_CHARGE_CALCULATION_TRX | IntrstHdrTrxHdrLateChargeCalculationTrx | — |
+| MAX_INTEREST_CHARGE | IntrstHdrTrxHdrMaxInterestCharge | — |
+| MIN_FC_BALANCE_AMOUNT | IntrstHdrTrxHdrMinFcBalanceAmount | — |
+| MIN_FC_BALANCE_OVERDUE_TYPE | IntrstHdrTrxHdrMinFcBalanceOverdueType | — |
+| MIN_FC_BALANCE_PERCENT | IntrstHdrTrxHdrMinFcBalancePercent | — |
+| MIN_FC_INVOICE_AMOUNT | IntrstHdrTrxHdrMinFcInvoiceAmount | — |
+| MIN_FC_INVOICE_OVERDUE_TYPE | IntrstHdrTrxHdrMinFcInvoiceOverdueType | — |
+| MIN_FC_INVOICE_PERCENT | IntrstHdrTrxHdrMinFcInvoicePercent | — |
+| MIN_INTEREST_CHARGE | IntrstHdrTrxHdrMinInterestCharge | — |
+| MULTIPLE_INTEREST_RATES_FLAG | IntrstHdrTrxHdrMultipleInterestRatesFlag | — |
+| PAYMENT_GRACE_DAYS | IntrstHdrTrxHdrPaymentGraceDays | — |
+| PENALTY_FIXED_AMOUNT | IntrstHdrTrxHdrPenaltyFixedAmount | — |
+| PENALTY_RATE | IntrstHdrTrxHdrPenaltyRate | — |
+| PENALTY_TYPE | IntrstHdrTrxHdrPenaltyType | — |
+| PROCESS_MESSAGE | IntrstHdrTrxHdrProcessMessage | — |
+| PROCESS_STATUS | IntrstHdrTrxHdrProcessStatus | — |
+| WORKER_NUM | IntrstHdrTrxHdrWorkerNum | — |
+
+### [[transactionlinepvo|TransactionLinePVO]] (AR)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CHARGE_BEGIN_DATE | IntrstHdrTrxHdrChargeBeginDate | — |
+| CHARGE_ON_FINANCE_CHARGE_FLAG | IntrstHdrTrxHdrChargeOnFinanceChargeFlag | — |
+| CREDIT_ITEMS_FLAG | IntrstHdrTrxHdrCreditItemsFlag | — |
+| CURRENCY_CODE | IntrstHdrTrxHdrCurrencyCode | — |
+| DISPLAY_FLAG | IntrstHdrTrxHdrDisplayFlag | — |
+| DISPUTED_TRANSACTIONS_FLAG | IntrstHdrTrxHdrDisputedTransactionsFlag | — |
+| EXCHANGE_RATE | IntrstHdrTrxHdrExchangeRate | — |
+| EXCHANGE_RATE_TYPE | IntrstHdrTrxHdrExchangeRateType | — |
+| FINANCE_CHARGE_DATE | IntrstHdrTrxHdrFinanceChargeDate | — |
+| HEADER_TYPE | IntrstHdrTrxHdrHeaderType | — |
+| HOLD_CHARGED_INVOICES_FLAG | IntrstHdrTrxHdrHoldChargedInvoicesFlag | — |
+| INTEREST_CALCULATION_PERIOD | IntrstHdrTrxHdrInterestCalculationPeriod | — |
+| INTEREST_FIXED_AMOUNT | IntrstHdrTrxHdrInterestFixedAmount | — |
+| INTEREST_HEADER_ID | IntrstHdrTrxHdrInterestHeaderId | — |
+| INTEREST_PERIOD_DAYS | IntrstHdrTrxHdrInterestPeriodDays | — |
+| INTEREST_RATE | IntrstHdrTrxHdrInterestRate | — |
+| INTEREST_TYPE | IntrstHdrTrxHdrInterestType | — |
+| LAST_ACCRUE_CHARGE_DATE | IntrstHdrTrxHdrLastAccrueChargeDate | — |
+| LATE_CHARGE_CALCULATION_TRX | IntrstHdrTrxHdrLateChargeCalculationTrx | — |
+| MAX_INTEREST_CHARGE | IntrstHdrTrxHdrMaxInterestCharge | — |
+| MIN_FC_BALANCE_AMOUNT | IntrstHdrTrxHdrMinFcBalanceAmount | — |
+| MIN_FC_BALANCE_OVERDUE_TYPE | IntrstHdrTrxHdrMinFcBalanceOverdueType | — |
+| MIN_FC_BALANCE_PERCENT | IntrstHdrTrxHdrMinFcBalancePercent | — |
+| MIN_FC_INVOICE_AMOUNT | IntrstHdrTrxHdrMinFcInvoiceAmount | — |
+| MIN_FC_INVOICE_OVERDUE_TYPE | IntrstHdrTrxHdrMinFcInvoiceOverdueType | — |
+| MIN_FC_INVOICE_PERCENT | IntrstHdrTrxHdrMinFcInvoicePercent | — |
+| MIN_INTEREST_CHARGE | IntrstHdrTrxHdrMinInterestCharge | — |
+| MULTIPLE_INTEREST_RATES_FLAG | IntrstHdrTrxHdrMultipleInterestRatesFlag | — |
+| PAYMENT_GRACE_DAYS | IntrstHdrTrxHdrPaymentGraceDays | — |
+| PENALTY_FIXED_AMOUNT | IntrstHdrTrxHdrPenaltyFixedAmount | — |
+| PENALTY_RATE | IntrstHdrTrxHdrPenaltyRate | — |
+| PENALTY_TYPE | IntrstHdrTrxHdrPenaltyType | — |
+| PROCESS_MESSAGE | IntrstHdrTrxHdrProcessMessage | — |
+| PROCESS_STATUS | IntrstHdrTrxHdrProcessStatus | — |
+| WORKER_NUM | IntrstHdrTrxHdrWorkerNum | — |
+
+---
+
 ## 📚 Referências
 
 - Oracle Fusion Cloud Financials — Accounts Receivable Tables (OEDMF Release 13).

@@ -104,3 +104,51 @@ FROM   IRC_PROSPECTS p WHERE p.PROSPECT_STATUS = 'ACTIVE';
 
 - [Oracle Docs -- IRC_PROSPECTS](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/ircprospects.html)
 - [[hcm-module-data-dictionary]] -- Dossie do modulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[prospectspvo|ProspectsPVO]] (HCM · BICC: 17/17)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ADDED_BY_PERSON_ID | ProspectsPEOAddedByPersonId | ✅ |
+| CANDIDATE_PERSON_ID | ProspectsPEOCandidatePersonId | ✅ |
+| CONTEXT_ID | ProspectsPEOContextId | ✅ |
+| CONTEXT_TYPE_CODE | ProspectsPEOContextTypeCode | ✅ |
+| CREATED_BY | ProspectsPEOCreatedBy | ✅ |
+| CREATION_DATE | ProspectsPEOCreationDate | ✅ |
+| LAST_UPDATE_DATE | ProspectsPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ProspectsPEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | ProspectsPEOLastUpdatedBy | ✅ |
+| OBJECT_STATUS | ProspectsPEOObjectStatus | ✅ |
+| OBJECT_VERSION_NUMBER | ProspectsPEOObjectVersionNum | ✅ |
+| PROSPECT_ID | ProspectId | ✅ |
+| PROSPECT_STATUS_CODE | ProspectsPEOProspectStatusCode | ✅ |
+| PROSPECT_TYPE_CODE | ProspectsPEOProspectTypeCode | ✅ |
+| REFERRAL_ID | ProspectsPEOReferralId | ✅ |
+| REQUISITION_ID | ProspectsPEORequisitionId | ✅ |
+| SUBMISSION_ID | ProspectsPEOSubmissionId | ✅ |
+
+### [[prospectsviewallpvo|ProspectsViewAllPVO]] (HCM · BICC: 13/17)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ADDED_BY_PERSON_ID | ProspectsPEOAddedByPersonId | ✅ |
+| CANDIDATE_PERSON_ID | ProspectsPEOCandidatePersonId | ✅ |
+| CONTEXT_ID | ProspectsPEOContextId | ✅ |
+| CONTEXT_TYPE_CODE | ProspectsPEOContextTypeCode | ✅ |
+| CREATED_BY | ProspectsPEOCreatedBy | — |
+| CREATION_DATE | ProspectsPEOCreationDate | ✅ |
+| LAST_UPDATE_DATE | ProspectsPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ProspectsPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | ProspectsPEOLastUpdatedBy | — |
+| OBJECT_STATUS | ProspectsPEOObjectStatus | ✅ |
+| OBJECT_VERSION_NUMBER | ProspectsPEOObjectVersionNum | — |
+| PROSPECT_ID | ProspectId | ✅ |
+| PROSPECT_STATUS_CODE | ProspectsPEOProspectStatusCode | ✅ |
+| PROSPECT_TYPE_CODE | ProspectsPEOProspectTypeCode | ✅ |
+| REFERRAL_ID | ProspectsPEOReferralId | ✅ |
+| REQUISITION_ID | ProspectsPEORequisitionId | ✅ |
+| SUBMISSION_ID | ProspectsPEOSubmissionId | ✅ |

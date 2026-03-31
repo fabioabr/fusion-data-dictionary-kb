@@ -125,6 +125,151 @@ WHERE  cr.TYPE = 'MISC'
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[adjustmentdistributionpvo|AdjustmentDistributionPVO]] (AR · BICC: 2/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | DistributionSetCreatedBy | — |
+| CREATION_DATE | DistributionSetCreationDate | — |
+| DESCRIPTION | DistributionSetDescription | — |
+| DISTRIBUTION_SET_ID | DistributionSetDistributionSetId | — |
+| DISTRIBUTION_SET_NAME | DistributionSetDistributionSetName | ✅ |
+| LAST_UPDATE_DATE | DistributionSetLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | DistributionSetLastUpdateLogin | — |
+| LAST_UPDATED_BY | DistributionSetLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | DistributionSetObjectVersionNumber | — |
+| ORG_ID | DistributionSetOrgId | — |
+| STATUS | DistributionSetStatus | — |
+| TOTAL_PERCENT_DISTRIBUTION | DistributionSetTotalPercentDistribution | — |
+
+### [[adjustmentpvo|AdjustmentPVO]] (AR · BICC: 1/6)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| DESCRIPTION | DistributionSetDescription | — |
+| DISTRIBUTION_SET_ID | DistributionSetDistributionSetId | — |
+| DISTRIBUTION_SET_NAME | DistributionSetDistributionSetName | ✅ |
+| ORG_ID | DistributionSetOrgId | — |
+| STATUS | DistributionSetStatus | — |
+| TOTAL_PERCENT_DISTRIBUTION | DistributionSetTotalPercentDistribution | — |
+
+### [[completedtrxrevadjdistributionpvo|CompletedTrxRevAdjDistributionPVO]] (AR)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| DESCRIPTION | DistributionSetDescription | — |
+| DISTRIBUTION_SET_ID | DistributionSetDistributionSetId | — |
+| DISTRIBUTION_SET_NAME | DistributionSetDistributionSetName | — |
+| ORG_ID | DistributionSetOrgId | — |
+| STATUS | DistributionSetStatus | — |
+| TOTAL_PERCENT_DISTRIBUTION | DistributionSetTotalPercentDistribution | — |
+
+### [[distributionsetextractpvo|DistributionSetExtractPVO]] (OTHER · BICC: 12/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | ArDistributionSetCreatedBy | ✅ |
+| CREATION_DATE | ArDistributionSetCreationDate | ✅ |
+| DESCRIPTION | ArDistributionSetDescription | ✅ |
+| DISTRIBUTION_SET_ID | ArDistributionSetDistributionSetId | ✅ |
+| DISTRIBUTION_SET_NAME | ArDistributionSetDistributionSetName | ✅ |
+| LAST_UPDATE_DATE | ArDistributionSetLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ArDistributionSetLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | ArDistributionSetLastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | ArDistributionSetObjectVersionNumber | ✅ |
+| ORG_ID | ArDistributionSetOrgId | ✅ |
+| STATUS | ArDistributionSetStatus | ✅ |
+| TOTAL_PERCENT_DISTRIBUTION | ArDistributionSetTotalPercentDistribution | ✅ |
+
+### [[miscreceiptdistributionpvo|MiscReceiptDistributionPVO]] (AR · BICC: 2/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | DistributionSetCreatedBy | — |
+| CREATION_DATE | DistributionSetCreationDate | — |
+| DESCRIPTION | DistributionSetDescription | — |
+| DISTRIBUTION_SET_ID | DistributionSetDistributionSetId | — |
+| DISTRIBUTION_SET_NAME | DistributionSetDistributionSetName | ✅ |
+| LAST_UPDATE_DATE | DistributionSetLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | DistributionSetLastUpdateLogin | — |
+| LAST_UPDATED_BY | DistributionSetLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | DistributionSetObjectVersionNumber | — |
+| ORG_ID | DistributionSetOrgId | — |
+| STATUS | DistributionSetStatus | — |
+| TOTAL_PERCENT_DISTRIBUTION | DistributionSetTotalPercentDistribution | — |
+
+### [[receiptapplicationdistributionpvo|ReceiptApplicationDistributionPVO]] (AR · BICC: 1/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | DistributionSetCreatedBy | — |
+| CREATION_DATE | DistributionSetCreationDate | — |
+| DESCRIPTION | DistributionSetDescription | — |
+| DISTRIBUTION_SET_ID | DistributionSetDistributionSetId | — |
+| DISTRIBUTION_SET_NAME | DistributionSetDistributionSetName | — |
+| LAST_UPDATE_DATE | DistributionSetLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | DistributionSetLastUpdateLogin | — |
+| LAST_UPDATED_BY | DistributionSetLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | DistributionSetObjectVersionNumber | — |
+| ORG_ID | DistributionSetOrgId | — |
+| STATUS | DistributionSetStatus | — |
+| TOTAL_PERCENT_DISTRIBUTION | DistributionSetTotalPercentDistribution | — |
+
+### [[receiptapplicationdistributionvc|ReceiptApplicationDistributionVC]] (AR · BICC: 2/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | DistributionSetCreatedBy | — |
+| CREATION_DATE | DistributionSetCreationDate | — |
+| DESCRIPTION | DistributionSetDescription | — |
+| DISTRIBUTION_SET_ID | DistributionSetDistributionSetId | — |
+| DISTRIBUTION_SET_NAME | DistributionSetDistributionSetName | ✅ |
+| LAST_UPDATE_DATE | DistributionSetLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | DistributionSetLastUpdateLogin | — |
+| LAST_UPDATED_BY | DistributionSetLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | DistributionSetObjectVersionNumber | — |
+| ORG_ID | DistributionSetOrgId | — |
+| STATUS | DistributionSetStatus | — |
+| TOTAL_PERCENT_DISTRIBUTION | DistributionSetTotalPercentDistribution | — |
+
+### [[receiptapplicationpvo|ReceiptApplicationPVO]] (AR · BICC: 2/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | DistributionSetCreatedBy | — |
+| CREATION_DATE | DistributionSetCreationDate | — |
+| DESCRIPTION | DistributionSetDescription | — |
+| DISTRIBUTION_SET_ID | DistributionSetDistributionSetId | — |
+| DISTRIBUTION_SET_NAME | DistributionSetDistributionSetName | ✅ |
+| LAST_UPDATE_DATE | DistributionSetLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | DistributionSetLastUpdateLogin | — |
+| LAST_UPDATED_BY | DistributionSetLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | DistributionSetObjectVersionNumber | — |
+| ORG_ID | DistributionSetOrgId | — |
+| STATUS | DistributionSetStatus | — |
+| TOTAL_PERCENT_DISTRIBUTION | DistributionSetTotalPercentDistribution | — |
+
+### [[receiptheaderpvo|ReceiptHeaderPVO]] (AR · BICC: 2/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | DistributionSetCreatedBy | — |
+| CREATION_DATE | DistributionSetCreationDate | — |
+| DESCRIPTION | DistributionSetDescription | — |
+| DISTRIBUTION_SET_ID | DistributionSetDistributionSetId | — |
+| DISTRIBUTION_SET_NAME | DistributionSetDistributionSetName | ✅ |
+| LAST_UPDATE_DATE | DistributionSetLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | DistributionSetLastUpdateLogin | — |
+| LAST_UPDATED_BY | DistributionSetLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | DistributionSetObjectVersionNumber | — |
+| ORG_ID | DistributionSetOrgId | — |
+| STATUS | DistributionSetStatus | — |
+| TOTAL_PERCENT_DISTRIBUTION | DistributionSetTotalPercentDistribution | — |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — AR_DISTRIBUTION_SETS_ALL](https://docs.oracle.com/en/cloud/saas/financials/25a/oedmf/ardistributionsetsall-25092.html)

@@ -119,6 +119,137 @@ WHERE  pcr.PERSON_ID = :p_person_id
 - Dados sensíveis (LGPD) — contém informações familiares protegidas.
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[contactemailaddressespvo|ContactEmailAddressesPVO]] (HCM · BICC: 1/4)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CONTACT_RELATIONSHIP_ID | ContactRelshipsPEOContactRelationshipId | — |
+| EFFECTIVE_END_DATE | ContactRelshipsPEOEffectiveEndDate | — |
+| EFFECTIVE_START_DATE | ContactRelshipsPEOEffectiveStartDate | ✅ |
+| PERSON_ID | ContactRelshipsPEOPersonId | — |
+
+### [[contactpassportspvo|ContactPassportsPVO]] (HCM · BICC: 1/4)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CONTACT_RELATIONSHIP_ID | ContactRelshipsPEOContactRelationshipId | — |
+| EFFECTIVE_END_DATE | ContactRelshipsPEOEffectiveEndDate | — |
+| EFFECTIVE_START_DATE | ContactRelshipsPEOEffectiveStartDate | ✅ |
+| PERSON_ID | ContactRelshipsPEOPersonId | — |
+
+### [[contactpersonaddresspvo|ContactPersonAddressPVO]] (HCM · BICC: 1/4)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CONTACT_RELATIONSHIP_ID | ContactRelshipsPEOContactRelationshipId | — |
+| EFFECTIVE_END_DATE | ContactRelshipsPEOEffectiveEndDate | — |
+| EFFECTIVE_START_DATE | ContactRelshipsPEOEffectiveStartDate | ✅ |
+| PERSON_ID | ContactRelshipsPEOPersonId | — |
+
+### [[contactpersondisabilitypvo|ContactPersonDisabilityPVO]] (HCM · BICC: 1/4)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CONTACT_RELATIONSHIP_ID | ContactRelshipsPEOContactRelationshipId | — |
+| EFFECTIVE_END_DATE | ContactRelshipsPEOEffectiveEndDate | — |
+| EFFECTIVE_START_DATE | ContactRelshipsPEOEffectiveStartDate | ✅ |
+| PERSON_ID | ContactRelshipsPEOPersonId | — |
+
+### [[contactpersonnationalidentifierpvo|ContactPersonNationalIdentifierPVO]] (HCM · BICC: 1/4)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CONTACT_RELATIONSHIP_ID | ContactRelshipsPEOContactRelationshipId | — |
+| EFFECTIVE_END_DATE | ContactRelshipsPEOEffectiveEndDate | — |
+| EFFECTIVE_START_DATE | ContactRelshipsPEOEffectiveStartDate | ✅ |
+| PERSON_ID | ContactRelshipsPEOPersonId | — |
+
+### [[contactphonespvo|ContactPhonesPVO]] (HCM · BICC: 1/4)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CONTACT_RELATIONSHIP_ID | ContactRelshipsPEOContactRelationshipId | — |
+| EFFECTIVE_END_DATE | ContactRelshipsPEOEffectiveEndDate | — |
+| EFFECTIVE_START_DATE | ContactRelshipsPEOEffectiveStartDate | ✅ |
+| PERSON_ID | ContactRelshipsPEOPersonId | — |
+
+### [[contactrelshipspvo|ContactRelshipsPVO]] (HCM · BICC: 21/27)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BENEFICIARY_FLAG | ContactRelshipsPEOBeneficiaryFlag | ✅ |
+| BONDHOLDER_FLAG | ContactRelshipsPEOBondholderFlag | ✅ |
+| BUSINESS_GROUP_ID | ContactRelshipsPEOBusinessGroupId | — |
+| CONTACT_PERSON_ID | ContactRelshipsPEOContactPersonId | ✅ |
+| CONTACT_RELATIONSHIP_ID | ContactRelationshipId | ✅ |
+| CONTACT_TYPE | ContactRelshipsPEOContactType | ✅ |
+| CREATED_BY | ContactRelshipsPEOCreatedBy | ✅ |
+| CREATION_DATE | ContactRelshipsPEOCreationDate | ✅ |
+| DEPENDENT_FLAG | ContactRelshipsPEODependentFlag | ✅ |
+| EFFECTIVE_END_DATE | EffectiveEndDate | ✅ |
+| EFFECTIVE_START_DATE | EffectiveStartDate | ✅ |
+| EMERGENCY_CONTACT_FLAG | ContactRelshipsPEOEmergencyContactFlag | ✅ |
+| END_LIFE_REASON_ID | ContactRelshipsPEOEndLifeReasonId | — |
+| EXISTING_PERSON | ContactRelshipsPEOExistingPerson | ✅ |
+| LAST_UPDATE_DATE | ContactRelshipsPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ContactRelshipsPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | ContactRelshipsPEOLastUpdatedBy | ✅ |
+| LEGISLATION_CODE | ContactRelshipsPEOLegislationCode | — |
+| OBJECT_VERSION_NUMBER | ContactRelshipsPEOObjectVersionNumber | — |
+| PERSON_ID | ContactRelshipsPEOPersonId | ✅ |
+| PERSONAL_FLAG | ContactRelshipsPEOPersonalFlag | ✅ |
+| PRIMARY_CONTACT_FLAG | ContactRelshipsPEOPrimaryContactFlag | ✅ |
+| RLTD_PER_RSDS_W_DSGNTR_FLAG | ContactRelshipsPEORltdPerRsdsWDsgntrFlag | ✅ |
+| SEQUENCE_NUMBER | ContactRelshipsPEOSequenceNumber | ✅ |
+| START_LIFE_REASON_ID | ContactRelshipsPEOStartLifeReasonId | — |
+| STATUTORY_DEPENDENT | ContactRelshipsPEOStatutoryDependent | ✅ |
+| THIRD_PARTY_PAY_FLAG | ContactRelshipsPEOThirdPartyPayFlag | ✅ |
+
+### [[contactrelshipspvoviewall|ContactRelshipsPVOViewAll]] (HCM · BICC: 24/27)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BENEFICIARY_FLAG | ContactRelshipsPEOBeneficiaryFlag | ✅ |
+| BONDHOLDER_FLAG | ContactRelshipsPEOBondholderFlag | ✅ |
+| BUSINESS_GROUP_ID | ContactRelshipsPEOBusinessGroupId | ✅ |
+| CONTACT_PERSON_ID | ContactRelshipsPEOContactPersonId | ✅ |
+| CONTACT_RELATIONSHIP_ID | ContactRelationshipId | ✅ |
+| CONTACT_TYPE | ContactRelshipsPEOContactType | ✅ |
+| CREATED_BY | ContactRelshipsPEOCreatedBy | ✅ |
+| CREATION_DATE | ContactRelshipsPEOCreationDate | ✅ |
+| DEPENDENT_FLAG | ContactRelshipsPEODependentFlag | ✅ |
+| EFFECTIVE_END_DATE | EffectiveEndDate | ✅ |
+| EFFECTIVE_START_DATE | EffectiveStartDate | ✅ |
+| EMERGENCY_CONTACT_FLAG | ContactRelshipsPEOEmergencyContactFlag | ✅ |
+| END_LIFE_REASON_ID | ContactRelshipsPEOEndLifeReasonId | ✅ |
+| EXISTING_PERSON | ContactRelshipsPEOExistingPerson | ✅ |
+| LAST_UPDATE_DATE | ContactRelshipsPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ContactRelshipsPEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | ContactRelshipsPEOLastUpdatedBy | ✅ |
+| LEGISLATION_CODE | ContactRelshipsPEOLegislationCode | — |
+| OBJECT_VERSION_NUMBER | ContactRelshipsPEOObjectVersionNumber | — |
+| PERSON_ID | ContactRelshipsPEOPersonId | ✅ |
+| PERSONAL_FLAG | ContactRelshipsPEOPersonalFlag | ✅ |
+| PRIMARY_CONTACT_FLAG | ContactRelshipsPEOPrimaryContactFlag | ✅ |
+| RLTD_PER_RSDS_W_DSGNTR_FLAG | ContactRelshipsPEORltdPerRsdsWDsgntrFlag | ✅ |
+| SEQUENCE_NUMBER | ContactRelshipsPEOSequenceNumber | ✅ |
+| START_LIFE_REASON_ID | ContactRelshipsPEOStartLifeReasonId | — |
+| STATUTORY_DEPENDENT | ContactRelshipsPEOStatutoryDependent | ✅ |
+| THIRD_PARTY_PAY_FLAG | ContactRelshipsPEOThirdPartyPayFlag | ✅ |
+
+### [[contactvisapermitpvo|ContactVisaPermitPVO]] (HCM · BICC: 1/4)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CONTACT_RELATIONSHIP_ID | ContactRelshipsPEOContactRelationshipId | — |
+| EFFECTIVE_END_DATE | ContactRelshipsPEOEffectiveEndDate | — |
+| EFFECTIVE_START_DATE | ContactRelshipsPEOEffectiveStartDate | ✅ |
+| PERSON_ID | ContactRelshipsPEOPersonId | — |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — PER_CONTACT_RELSHIPS_F](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/percontactrelshipsf.html)

@@ -41,7 +41,6 @@ Armazena os **tipos de documento de compras** disponiveis no modulo Procurement.
 > [!note] Sufixo _B
 > O sufixo `_B` indica a **tabela base** (idioma base). Traducoes ficam na tabela correspondente `_TL`.
 
-
 ---
 
 ## 🧠 Propósito de Negócio
@@ -94,7 +93,6 @@ FROM   PO_DOCUMENT_TYPES_ALL_B
 WHERE  ORG_ID = :p_org_id AND ENABLED_FLAG = 'Y';
 ```
 
-
 ---
 
 ## 🔒 Observações
@@ -102,6 +100,48 @@ WHERE  ORG_ID = :p_org_id AND ENABLED_FLAG = 'Y';
 - PK composta: `DOCUMENT_TYPE_CODE` + `DOCUMENT_SUBTYPE` + `ORG_ID`.
 - Tipos comuns: STANDARD, BLANKET, CONTRACT, PLANNED.
 - Tabela de configuracao; raramente alterada.
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[purchasingdocumenttypebextractpvo|PurchasingDocumentTypeBExtractPVO]] (PO · BICC: 14/14)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CO_CONT_TERMS_LAYOUT_CODE | PODocumentTypeCoContTermsLayoutCode | ✅ |
+| CO_LAYOUT_TEMPLATE | PODocumentTypeCoLayoutTemplate | ✅ |
+| CO_TEMPLATE_ID | PODocumentTypeCoTemplateId | ✅ |
+| CONTRACT_TEMPLATE_CODE | PODocumentTypeContractTemplateCode | ✅ |
+| CREATED_BY | PODocumentTypeCreatedBy | ✅ |
+| CREATION_DATE | PODocumentTypeCreationDate | ✅ |
+| DOCUMENT_SUBTYPE | DocumentSubtype | ✅ |
+| DOCUMENT_TEMPLATE_CODE | PODocumentTypeDocumentTemplateCode | ✅ |
+| DOCUMENT_TYPE_CODE | DocumentTypeCode | ✅ |
+| LAST_UPDATE_DATE | PODocumentTypeLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | PODocumentTypeLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | PODocumentTypeLastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | PODocumentTypeObjectVersionNumber | ✅ |
+| PRC_BU_ID | PrcBuId | ✅ |
+
+### [[purchasingdocumenttypebp|PurchasingDocumentTypeBP]] (PO · BICC: 9/14)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CO_CONT_TERMS_LAYOUT_CODE | PODocumentTypeCoContTermsLayoutCode | — |
+| CO_LAYOUT_TEMPLATE | PODocumentTypeCoLayoutTemplate | — |
+| CO_TEMPLATE_ID | PODocumentTypeCoTemplateId | — |
+| CONTRACT_TEMPLATE_CODE | PODocumentTypeContractTemplateCode | ✅ |
+| CREATED_BY | PODocumentTypeCreatedBy | ✅ |
+| CREATION_DATE | PODocumentTypeCreationDate | ✅ |
+| DOCUMENT_SUBTYPE | DocumentSubtype | ✅ |
+| DOCUMENT_TEMPLATE_CODE | PODocumentTypeDocumentTemplateCode | ✅ |
+| DOCUMENT_TYPE_CODE | DocumentTypeCode | ✅ |
+| LAST_UPDATE_DATE | PODocumentTypeLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | PODocumentTypeLastUpdateLogin | — |
+| LAST_UPDATED_BY | PODocumentTypeLastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | PODocumentTypeObjectVersionNumber | — |
+| PRC_BU_ID | PrcBuId | ✅ |
 
 ---
 

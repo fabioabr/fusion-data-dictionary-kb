@@ -153,3 +153,105 @@ WHERE  bb.CODE_COMBINATION_ID = :p_ccid
 
 - [Oracle Docs — GL_BUDGET_BALANCES](https://docs.oracle.com/en/cloud/saas/financials/25a/oedmf/glbudgetbalances-25708.html)
 - [[gl-module-data-dictionary]] — Dossiê do módulo GL
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[budgetbalanceextractpvo|BudgetBalanceExtractPVO]] (OTHER · BICC: 43/44)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUDGET_NAME | BudgetName | ✅ |
+| CONCAT_ACCOUNT | ConcatAccount | — |
+| CREATED_BY | GlBudBalCreatedBy | ✅ |
+| CREATION_DATE | GlBudBalCreationDate | ✅ |
+| CURRENCY_CODE | CurrencyCode | ✅ |
+| CURRENCY_TYPE | CurrencyType | ✅ |
+| LAST_UPDATE_DATE | GlBudBalLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | GlBudBalLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | GlBudBalLastUpdatedBy | ✅ |
+| LEDGER_ID | LedgerId | ✅ |
+| OBJECT_VERSION_NUMBER | GlBudBalObjectVersionNumber | ✅ |
+| PERIOD_NAME | PeriodName | ✅ |
+| PERIOD_NET_CR | GlBudBalPeriodNetCr | ✅ |
+| PERIOD_NET_DR | GlBudBalPeriodNetDr | ✅ |
+| SEGMENT1 | GlBudBalSegment1 | ✅ |
+| SEGMENT10 | GlBudBalSegment10 | ✅ |
+| SEGMENT11 | GlBudBalSegment11 | ✅ |
+| SEGMENT12 | GlBudBalSegment12 | ✅ |
+| SEGMENT13 | GlBudBalSegment13 | ✅ |
+| SEGMENT14 | GlBudBalSegment14 | ✅ |
+| SEGMENT15 | GlBudBalSegment15 | ✅ |
+| SEGMENT16 | GlBudBalSegment16 | ✅ |
+| SEGMENT17 | GlBudBalSegment17 | ✅ |
+| SEGMENT18 | GlBudBalSegment18 | ✅ |
+| SEGMENT19 | GlBudBalSegment19 | ✅ |
+| SEGMENT2 | GlBudBalSegment2 | ✅ |
+| SEGMENT20 | GlBudBalSegment20 | ✅ |
+| SEGMENT21 | GlBudBalSegment21 | ✅ |
+| SEGMENT22 | GlBudBalSegment22 | ✅ |
+| SEGMENT23 | GlBudBalSegment23 | ✅ |
+| SEGMENT24 | GlBudBalSegment24 | ✅ |
+| SEGMENT25 | GlBudBalSegment25 | ✅ |
+| SEGMENT26 | GlBudBalSegment26 | ✅ |
+| SEGMENT27 | GlBudBalSegment27 | ✅ |
+| SEGMENT28 | GlBudBalSegment28 | ✅ |
+| SEGMENT29 | GlBudBalSegment29 | ✅ |
+| SEGMENT3 | GlBudBalSegment3 | ✅ |
+| SEGMENT30 | GlBudBalSegment30 | ✅ |
+| SEGMENT4 | GlBudBalSegment4 | ✅ |
+| SEGMENT5 | GlBudBalSegment5 | ✅ |
+| SEGMENT6 | GlBudBalSegment6 | ✅ |
+| SEGMENT7 | GlBudBalSegment7 | ✅ |
+| SEGMENT8 | GlBudBalSegment8 | ✅ |
+| SEGMENT9 | GlBudBalSegment9 | ✅ |
+
+### [[budgetbalancepvo|BudgetBalancePVO]] (GL · BICC: 44/44)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUDGET_NAME | BudgetName | ✅ |
+| CONCAT_ACCOUNT | ConcatAccount | ✅ |
+| CREATED_BY | GlBudBalCreatedBy | ✅ |
+| CREATION_DATE | GlBudBalCreationDate | ✅ |
+| CURRENCY_CODE | CurrencyCode | ✅ |
+| CURRENCY_TYPE | CurrencyType | ✅ |
+| LAST_UPDATE_DATE | GlBudBalLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | GlBudBalLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | GlBudBalLastUpdatedBy | ✅ |
+| LEDGER_ID | LedgerId | ✅ |
+| OBJECT_VERSION_NUMBER | GlBudBalObjectVersionNumber | ✅ |
+| PERIOD_NAME | PeriodName | ✅ |
+| PERIOD_NET_CR | GlBudBalPeriodNetCr | ✅ |
+| PERIOD_NET_DR | GlBudBalPeriodNetDr | ✅ |
+| SEGMENT1 | GlBudBalSegment1 | ✅ |
+| SEGMENT10 | GlBudBalSegment10 | ✅ |
+| SEGMENT11 | GlBudBalSegment11 | ✅ |
+| SEGMENT12 | GlBudBalSegment12 | ✅ |
+| SEGMENT13 | GlBudBalSegment13 | ✅ |
+| SEGMENT14 | GlBudBalSegment14 | ✅ |
+| SEGMENT15 | GlBudBalSegment15 | ✅ |
+| SEGMENT16 | GlBudBalSegment16 | ✅ |
+| SEGMENT17 | GlBudBalSegment17 | ✅ |
+| SEGMENT18 | GlBudBalSegment18 | ✅ |
+| SEGMENT19 | GlBudBalSegment19 | ✅ |
+| SEGMENT2 | GlBudBalSegment2 | ✅ |
+| SEGMENT20 | GlBudBalSegment20 | ✅ |
+| SEGMENT21 | GlBudBalSegment21 | ✅ |
+| SEGMENT22 | GlBudBalSegment22 | ✅ |
+| SEGMENT23 | GlBudBalSegment23 | ✅ |
+| SEGMENT24 | GlBudBalSegment24 | ✅ |
+| SEGMENT25 | GlBudBalSegment25 | ✅ |
+| SEGMENT26 | GlBudBalSegment26 | ✅ |
+| SEGMENT27 | GlBudBalSegment27 | ✅ |
+| SEGMENT28 | GlBudBalSegment28 | ✅ |
+| SEGMENT29 | GlBudBalSegment29 | ✅ |
+| SEGMENT3 | GlBudBalSegment3 | ✅ |
+| SEGMENT30 | GlBudBalSegment30 | ✅ |
+| SEGMENT4 | GlBudBalSegment4 | ✅ |
+| SEGMENT5 | GlBudBalSegment5 | ✅ |
+| SEGMENT6 | GlBudBalSegment6 | ✅ |
+| SEGMENT7 | GlBudBalSegment7 | ✅ |
+| SEGMENT8 | GlBudBalSegment8 | ✅ |
+| SEGMENT9 | GlBudBalSegment9 | ✅ |

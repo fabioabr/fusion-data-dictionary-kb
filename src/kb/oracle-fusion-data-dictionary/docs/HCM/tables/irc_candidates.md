@@ -112,3 +112,71 @@ ORDER BY c.CREATION_DATE DESC;
 
 - [Oracle Docs -- IRC_CANDIDATES](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/irccandidates.html)
 - [[hcm-module-data-dictionary]] -- Dossie do modulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[candidatepvo|CandidatePVO]] (HCM · BICC: 29/35)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ADDED_BY_FLOW_CODE | AddedByFlowCode | ✅ |
+| AVAILABILITY_DATE | AvailabilityDate | ✅ |
+| CAND_EMAIL_ID | CandidatePEOCandEmailId | — |
+| CAND_LAST_MODIFIED_DATE | CandLastModifiedDate | ✅ |
+| CAND_PHONE_ID | CandidatePEOCandPhoneId | — |
+| CAND_PREF_LANGUAGE_CODE | CandPrefLanguageCode | ✅ |
+| CANDIDATE_NUMBER | CandidateNumber | ✅ |
+| CONFIRMED_FLAG | ConfirmedFlag | ✅ |
+| CREATED_BY | CreatedBy | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| DELETED_BY_USER | CandidatePEODeletedByUser | ✅ |
+| DELETION_DATE | CandidatePEODeletionDate | ✅ |
+| DELETION_QUALIFIER | CandidatePEODeletionQualifier | ✅ |
+| EMAIL_PREFERRED_FLAG | CandidatePEOEmailPreferredFlag | ✅ |
+| EMAIL_VERIFIED_FLAG | CandidatePEOEmailVerifiedFlag | ✅ |
+| JOB_DEFINITION_NAME | JobDefinitionName | — |
+| JOB_DEFINITION_PACKAGE | JobDefinitionPackage | — |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | LastUpdatedBy | ✅ |
+| MERGED_FLAG | CandidatePEOMergedFlag | ✅ |
+| OBJECT_STATUS | ObjectStatus | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | ✅ |
+| OPT_IN_MKT_EMAILS_DATE | CandPEOOptInMktEmailsDate | ✅ |
+| OPT_IN_MKT_EMAILS_FLAG | CandPEOOptInMktEmailsFlag | ✅ |
+| PERSON_ID | PersonId | ✅ |
+| PHONE_PREFERRED_FLAG | CandidatePEOPhonePreferredFlag | ✅ |
+| PHONE_VERIFIED_FLAG | CandidatePEOPhoneVerifiedFlag | ✅ |
+| POTENTIAL_DUPLICATE_FLAG | CandidatePEOPotentialDuplicateFlag | ✅ |
+| PREF_PHONE_CNT_TYPE_CODE | PrefPhoneCntTypeCode | ✅ |
+| PROFILE_ID | ProfileId1 | — |
+| REQUEST_ID | RequestId | — |
+| SEARCH_DATE | SearchDate | ✅ |
+| VISIBLE_TO_CANDIDATE_FLAG | CandidatePEOVisibleToCandidateFlag | ✅ |
+| VISIBLE_TO_CANDIDATE_FLAG | VisibleToCandidateFlag | ✅ |
+
+### [[searchactiondetailpvo|SearchActionDetailPVO]] (PO · BICC: 1/3)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CANDIDATE_NUMBER | CandidatePEOCandidateNumber | ✅ |
+| OBJECT_VERSION_NUMBER | CandidatePEOObjectVersionNumber | — |
+| PERSON_ID | CandidatePEOPersonId | — |
+
+### [[searchresultpvo|SearchResultPVO]] (PO · BICC: 1/3)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CANDIDATE_NUMBER | CandidatePEOCandidateNumber | ✅ |
+| OBJECT_VERSION_NUMBER | CandidatePEOObjectVersionNumber | — |
+| PERSON_ID | CandidatePEOPersonId | — |
+
+### [[sourcetrackingviewallpvo|SourceTrackingViewAllPVO]] (HCM · BICC: 1/3)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CANDIDATE_NUMBER | CandidatePEOCandidateNumber | ✅ |
+| OBJECT_VERSION_NUMBER | CandidatePEOObjectVersionNumber | — |
+| PERSON_ID | CandidatePEOPersonId | — |

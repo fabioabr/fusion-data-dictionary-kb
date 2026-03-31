@@ -104,3 +104,143 @@ WHERE  SYSDATE BETWEEN s.DATE_FROM AND NVL(s.DATE_TO, SYSDATE);
 
 - [Oracle Docs — HRT_SOURCES_B](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/hrtsourcesb.html)
 - [[hcm-module-data-dictionary]] — Dossie do modulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[advancementreadinesspvo|AdvancementReadinessPVO]] (HCM · BICC: 1/4)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | SBPEOBusinessGroupId | — |
+| LAST_UPDATE_DATE | SourcesBPEOLastUpdateDate | ✅ |
+| SOURCE_CODE | SBPEOSourceCode | — |
+| SOURCE_ID | SBPEOSourceId1 | — |
+
+### [[advancementreadinesspvo_viewall|AdvancementReadinessPVO_Viewall]] (HCM · BICC: 1/4)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | SBPEOBusinessGroupId | — |
+| LAST_UPDATE_DATE | SourcesBPEOLastUpdateDate | ✅ |
+| SOURCE_CODE | SBPEOSourceCode | — |
+| SOURCE_ID | SBPEOSourceId1 | — |
+
+### [[certificationpvo|CertificationPVO]] (HCM)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | BusinessGroupId1 | — |
+| SOURCE_CODE | SourceCode | — |
+| SOURCE_ID | SourceId1 | — |
+
+### [[competencypvo|CompetencyPVO]] (HCM)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | BusinessGroupId3 | — |
+| SOURCE_CODE | SourceCode | — |
+| SOURCE_ID | SourceId1 | — |
+
+### [[contentsourcerelpvo|ContentSourceRelPVO]] (HCM · BICC: 2/5)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | SourcesBPEOBusinessGroupId | — |
+| LAST_UPDATE_DATE | SourcesBPEOLastUpdateDate | ✅ |
+| MODULE_ID | SourcesBPEOModuleId | — |
+| SOURCE_CODE | SourcesBPEOSourceCode | ✅ |
+| SOURCE_ID | SourcesBPEOSourceId | — |
+
+### [[criticalityprofileitempvo|CriticalityProfileItemPVO]] (HCM · BICC: 1/3)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | BusinessGroupId | — |
+| SOURCE_CODE | SourceCode | ✅ |
+| SOURCE_ID | SBPEOSourceId1 | — |
+
+### [[degreepvo|DegreePVO]] (HCM · BICC: 1/4)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | BusinessGroupId3 | — |
+| LAST_UPDATE_DATE | SourcesBPEOLastUpdateDate | ✅ |
+| SOURCE_CODE | SourceCode | — |
+| SOURCE_ID | SourceId2 | — |
+
+### [[honorpvo|HonorPVO]] (HCM)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | BusinessGroupId1 | — |
+| SOURCE_CODE | SourceCode | — |
+| SOURCE_ID | SourceId1 | — |
+
+### [[languagepvo|LanguagePVO]] (HCM)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | BusinessGroupId3 | — |
+| SOURCE_CODE | SourceCode | — |
+| SOURCE_ID | SourceId1 | — |
+
+### [[membershippvo|MembershipPVO]] (HCM)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | BusinessGroupId2 | — |
+| SOURCE_CODE | SourceCode | — |
+| SOURCE_ID | SourceId1 | — |
+
+### [[personprofileperformanceratingpvo|PersonProfilePerformanceRatingPVO]] (HCM · BICC: 2/4)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | SBPOBusinessGroupId1 | — |
+| LAST_UPDATE_DATE | SourcesBPEOLastUpdateDate | ✅ |
+| SOURCE_CODE | SBPOSourceCode | ✅ |
+| SOURCE_ID | SBPOSourceId1 | — |
+
+### [[planreadinesspvo|PlanReadinessPVO]] (HCM)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | SBPEOBusinessGroupId | — |
+| LAST_UPDATE_DATE | SourcesBPEOLastUpdateDate | — |
+| SOURCE_CODE | SBPEOSourceCode | — |
+| SOURCE_ID | SBPEOSourceId1 | — |
+
+### [[sourcesallpvo|SourcesAllPVO]] (HCM · BICC: 4/10)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | BusinessGroupId | ✅ |
+| CREATED_BY | CreatedBy | — |
+| CREATION_DATE | CreationDate | — |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | — |
+| LAST_UPDATED_BY | LastUpdatedBy | — |
+| MODULE_ID | ModuleId | — |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | — |
+| SOURCE_CODE | SourceCode | ✅ |
+| SOURCE_ID | SourceId | ✅ |
+
+### [[workrequirementdatecheckpvo|WorkRequirementDateCheckPVO]] (HCM)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | BusinessGroupId1 | — |
+| LAST_UPDATE_DATE | SourcesBPEOLastUpdateDate | — |
+| SOURCE_CODE | SourceCode | — |
+| SOURCE_ID | SourceId1 | — |
+
+### [[workrequirementpvo|WorkRequirementPVO]] (HCM · BICC: 1/4)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | BusinessGroupId1 | — |
+| LAST_UPDATE_DATE | SourcesBPEOLastUpdateDate | ✅ |
+| SOURCE_CODE | SourceCode | — |
+| SOURCE_ID | SourceId1 | — |

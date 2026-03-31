@@ -143,6 +143,43 @@ ORDER BY tb.DUE_DATE;
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[trialbalancepvo|TrialBalancePVO]] (AP · BICC: 12/28)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACCOUNTED_CR | TrialBalanceAccountedCr | ✅ |
+| ACCOUNTED_DR | TrialBalanceAccountedDr | ✅ |
+| ACCOUNTING_CLASS_CODE | TrialBalanceAccountingClassCode | ✅ |
+| ACCOUNTING_DATE | AccountingDate | ✅ |
+| AE_HEADER_ID | AeHeaderId | ✅ |
+| BUSINESS_UNIT_ID | TrialBalanceBusinessUnitId | — |
+| CODE_COMBINATION_ID | TrialBalanceCodeCombinationId | ✅ |
+| CREATED_BY | TrialBalanceCreatedBy | ✅ |
+| CREATION_DATE | TrialBalanceCreationDate | ✅ |
+| ENTERED_CR | TrialBalanceEnteredCr | ✅ |
+| ENTERED_DR | TrialBalanceEnteredDr | ✅ |
+| INVOICE_ID | InvoiceId | ✅ |
+| JOB_DEFINITION_NAME | TrialBalanceJobDefinitionName | — |
+| JOB_DEFINITION_PACKAGE | TrialBalanceJobDefinitionPackage | — |
+| LAST_UPDATE_DATE | TrialBalanceLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | TrialBalanceLastUpdateLogin | — |
+| LAST_UPDATED_BY | TrialBalanceLastUpdatedBy | — |
+| LEDGER_ID | TrialBalanceLedgerId | — |
+| OBJECT_VERSION_NUMBER | TrialBalanceObjectVersionNumber | — |
+| PARTY_ID | TrialBalancePartyId | — |
+| PARTY_SITE_ID | TrialBalancePartySiteId | — |
+| PROGRAM_APPLICATION_ID | TrialBalanceProgramApplicationId | — |
+| PROGRAM_ID | TrialBalanceProgramId | — |
+| PROGRAM_UPDATE_DATE | TrialBalanceProgramUpdateDate | — |
+| REQUEST_ID | TrialBalanceRequestId | — |
+| TRX_CURRENCY_CODE | TrialBalanceTrxCurrencyCode | — |
+| VENDOR_ID | TrialBalanceVendorId | — |
+| VENDOR_SITE_ID | TrialBalanceVendorSiteId | — |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — AP_TRIAL_BALANCES](https://docs.oracle.com/en/cloud/saas/financials/25a/oedmf/aptrialbalances.html)

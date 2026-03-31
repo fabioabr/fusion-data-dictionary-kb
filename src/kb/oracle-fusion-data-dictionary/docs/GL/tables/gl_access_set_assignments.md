@@ -132,3 +132,25 @@ WHERE  asa.ACCESS_PRIVILEGE_CODE = 'READ_AND_WRITE';
 
 - [Oracle Docs — GL_ACCESS_SET_ASSIGNMENTS](https://docs.oracle.com/en/cloud/saas/financials/25a/oedmf/glaccesssetassignments-25064.html)
 - [[gl-module-data-dictionary]] — Dossiê do módulo GL
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[bsvdataaccesssetassignmentpvo|BsvDataAccessSetAssignmentPVO]] (GL · BICC: 4/13)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACCESS_PRIVILEGE_CODE | DasAssignmentAccessPrivilegeCode | — |
+| ACCESS_SET_ID | AccessSetId | ✅ |
+| CREATED_BY | DasAssignmentCreatedBy | — |
+| CREATION_DATE | DasAssignmentCreationDate | — |
+| END_DATE | DasAssignmentEndDate | — |
+| LAST_UPDATE_DATE | DasAssignmentLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | DasAssignmentLastUpdateLogin | — |
+| LAST_UPDATED_BY | DasAssignmentLastUpdatedBy | — |
+| LEDGER_ID | LedgerId | ✅ |
+| OBJECT_VERSION_NUMBER | DasAssignmentObjectVersionNumber | — |
+| PARENT_RECORD_ID | DasAssignmentParentRecordId | — |
+| SEGMENT_VALUE | SegmentValue | ✅ |
+| START_DATE | DasAssignmentStartDate | — |

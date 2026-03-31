@@ -141,6 +141,42 @@ WHERE  tc.TRANSACTION_CALENDAR_NAME = :p_calendar_name
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[ledgerpvo|LedgerPVO]] (GL)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| DESCRIPTION | TransactionCalendarDescription | — |
+| FRI_BUSINESS_DAY_FLAG | TransactionCalendarFriBusinessDayFlag | — |
+| MON_BUSINESS_DAY_FLAG | TransactionCalendarMonBusinessDayFlag | — |
+| NAME | TransactionCalendarName | — |
+| SAT_BUSINESS_DAY_FLAG | TransactionCalendarSatBusinessDayFlag | — |
+| SECURITY_FLAG | TransactionCalendarSecurityFlag | — |
+| SUN_BUSINESS_DAY_FLAG | TransactionCalendarSunBusinessDayFlag | — |
+| THU_BUSINESS_DAY_FLAG | TransactionCalendarThuBusinessDayFlag | — |
+| TRANSACTION_CALENDAR_ID | TransactionCalendarTransactionCalendarId | — |
+| TUE_BUSINESS_DAY_FLAG | TransactionCalendarTueBusinessDayFlag | — |
+| WED_BUSINESS_DAY_FLAG | TransactionCalendarWedBusinessDayFlag | — |
+
+### [[ledgersetpvo|LedgerSetPVO]] (GL)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| DESCRIPTION | TransactionCalendarDescription | — |
+| FRI_BUSINESS_DAY_FLAG | TransactionCalendarFriBusinessDayFlag | — |
+| MON_BUSINESS_DAY_FLAG | TransactionCalendarMonBusinessDayFlag | — |
+| NAME | TransactionCalendarName | — |
+| SAT_BUSINESS_DAY_FLAG | TransactionCalendarSatBusinessDayFlag | — |
+| SECURITY_FLAG | TransactionCalendarSecurityFlag | — |
+| SUN_BUSINESS_DAY_FLAG | TransactionCalendarSunBusinessDayFlag | — |
+| THU_BUSINESS_DAY_FLAG | TransactionCalendarThuBusinessDayFlag | — |
+| TRANSACTION_CALENDAR_ID | TransactionCalendarTransactionCalendarId | — |
+| TUE_BUSINESS_DAY_FLAG | TransactionCalendarTueBusinessDayFlag | — |
+| WED_BUSINESS_DAY_FLAG | TransactionCalendarWedBusinessDayFlag | — |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — GL_TRANSACTION_CALENDAR](https://docs.oracle.com/en/cloud/saas/financials/25a/oedmf/)

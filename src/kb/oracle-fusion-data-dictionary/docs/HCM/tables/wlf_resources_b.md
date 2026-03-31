@@ -117,3 +117,169 @@ WHERE  rb.RESOURCE_TYPE = 'INSTRUCTOR'
 
 - [Oracle Docs — WLF_RESOURCES_B](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/wlfresources.html)
 - [[hcm-module-data-dictionary]] — Dossiê do módulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[resourcepvo|ResourcePVO]] (HCM · BICC: 5/76)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ADDRESS_ID | ResourcePEOAddressId | — |
+| ATTRIBUTION_ID | ResourcePEOAttributionId | — |
+| ATTRIBUTION_TYPE | ResourcePEOAttributionType | — |
+| CAPACITY | ResourcePEOCapacity | ✅ |
+| CONTACT_ID | ResourcePEOContactId | — |
+| CREATED_BY | ResourcePEOCreatedBy | — |
+| CREATION_DATE | ResourcePEOCreationDate | — |
+| ENTERPRISE_ID | ResourcePEOEnterpriseId | — |
+| LAST_UPDATE_DATE | ResourcePEOLastUpdateDate | — |
+| LAST_UPDATE_LOGIN | ResourcePEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | ResourcePEOLastUpdatedBy | — |
+| LOCATION_ID | ResourcePEOLocationId | — |
+| OBJECT_VERSION_NUMBER | ResourcePEOObjectVersionNumber | — |
+| RESOURCE_ID | ResourcePEOResourceId | ✅ |
+| RESOURCE_NUMBER | ResourcePEOResourceNumber | ✅ |
+| RESOURCE_TYPE | ResourcePEOResourceType | ✅ |
+| RS_ATTRIBUTE1 | ResourcePEORsAttribute1 | — |
+| RS_ATTRIBUTE10 | ResourcePEORsAttribute10 | — |
+| RS_ATTRIBUTE11 | ResourcePEORsAttribute11 | — |
+| RS_ATTRIBUTE12 | ResourcePEORsAttribute12 | — |
+| RS_ATTRIBUTE13 | ResourcePEORsAttribute13 | — |
+| RS_ATTRIBUTE14 | ResourcePEORsAttribute14 | — |
+| RS_ATTRIBUTE15 | ResourcePEORsAttribute15 | — |
+| RS_ATTRIBUTE16 | ResourcePEORsAttribute16 | — |
+| RS_ATTRIBUTE17 | ResourcePEORsAttribute17 | — |
+| RS_ATTRIBUTE18 | ResourcePEORsAttribute18 | — |
+| RS_ATTRIBUTE19 | ResourcePEORsAttribute19 | — |
+| RS_ATTRIBUTE2 | ResourcePEORsAttribute2 | — |
+| RS_ATTRIBUTE20 | ResourcePEORsAttribute20 | — |
+| RS_ATTRIBUTE3 | ResourcePEORsAttribute3 | — |
+| RS_ATTRIBUTE4 | ResourcePEORsAttribute4 | — |
+| RS_ATTRIBUTE5 | ResourcePEORsAttribute5 | — |
+| RS_ATTRIBUTE6 | ResourcePEORsAttribute6 | — |
+| RS_ATTRIBUTE7 | ResourcePEORsAttribute7 | — |
+| RS_ATTRIBUTE8 | ResourcePEORsAttribute8 | — |
+| RS_ATTRIBUTE9 | ResourcePEORsAttribute9 | — |
+| RS_ATTRIBUTE_CATEGORY | ResourcePEORsAttributeCategory | — |
+| RS_ATTRIBUTE_DATE1 | ResourcePEORsAttributeDate1 | — |
+| RS_ATTRIBUTE_DATE10 | ResourcePEORsAttributeDate10 | — |
+| RS_ATTRIBUTE_DATE11 | ResourcePEORsAttributeDate11 | — |
+| RS_ATTRIBUTE_DATE12 | ResourcePEORsAttributeDate12 | — |
+| RS_ATTRIBUTE_DATE13 | ResourcePEORsAttributeDate13 | — |
+| RS_ATTRIBUTE_DATE14 | ResourcePEORsAttributeDate14 | — |
+| RS_ATTRIBUTE_DATE15 | ResourcePEORsAttributeDate15 | — |
+| RS_ATTRIBUTE_DATE2 | ResourcePEORsAttributeDate2 | — |
+| RS_ATTRIBUTE_DATE3 | ResourcePEORsAttributeDate3 | — |
+| RS_ATTRIBUTE_DATE4 | ResourcePEORsAttributeDate4 | — |
+| RS_ATTRIBUTE_DATE5 | ResourcePEORsAttributeDate5 | — |
+| RS_ATTRIBUTE_DATE6 | ResourcePEORsAttributeDate6 | — |
+| RS_ATTRIBUTE_DATE7 | ResourcePEORsAttributeDate7 | — |
+| RS_ATTRIBUTE_DATE8 | ResourcePEORsAttributeDate8 | — |
+| RS_ATTRIBUTE_DATE9 | ResourcePEORsAttributeDate9 | — |
+| RS_ATTRIBUTE_NUMBER1 | ResourcePEORsAttributeNumber1 | — |
+| RS_ATTRIBUTE_NUMBER10 | ResourcePEORsAttributeNumber10 | — |
+| RS_ATTRIBUTE_NUMBER11 | ResourcePEORsAttributeNumber11 | — |
+| RS_ATTRIBUTE_NUMBER12 | ResourcePEORsAttributeNumber12 | — |
+| RS_ATTRIBUTE_NUMBER13 | ResourcePEORsAttributeNumber13 | — |
+| RS_ATTRIBUTE_NUMBER14 | ResourcePEORsAttributeNumber14 | — |
+| RS_ATTRIBUTE_NUMBER15 | ResourcePEORsAttributeNumber15 | — |
+| RS_ATTRIBUTE_NUMBER16 | ResourcePEORsAttributeNumber16 | — |
+| RS_ATTRIBUTE_NUMBER17 | ResourcePEORsAttributeNumber17 | — |
+| RS_ATTRIBUTE_NUMBER18 | ResourcePEORsAttributeNumber18 | — |
+| RS_ATTRIBUTE_NUMBER19 | ResourcePEORsAttributeNumber19 | — |
+| RS_ATTRIBUTE_NUMBER2 | ResourcePEORsAttributeNumber2 | — |
+| RS_ATTRIBUTE_NUMBER20 | ResourcePEORsAttributeNumber20 | — |
+| RS_ATTRIBUTE_NUMBER3 | ResourcePEORsAttributeNumber3 | — |
+| RS_ATTRIBUTE_NUMBER4 | ResourcePEORsAttributeNumber4 | — |
+| RS_ATTRIBUTE_NUMBER5 | ResourcePEORsAttributeNumber5 | — |
+| RS_ATTRIBUTE_NUMBER6 | ResourcePEORsAttributeNumber6 | — |
+| RS_ATTRIBUTE_NUMBER7 | ResourcePEORsAttributeNumber7 | — |
+| RS_ATTRIBUTE_NUMBER8 | ResourcePEORsAttributeNumber8 | — |
+| RS_ATTRIBUTE_NUMBER9 | ResourcePEORsAttributeNumber9 | — |
+| SOURCE_ID | ResourcePEOSourceId | — |
+| SOURCE_TYPE | ResourcePEOSourceType | — |
+| STATUS | ResourcePEOStatus | ✅ |
+| TRAINING_VENDOR_RES_ID | ResourcePEOTrainingVendorResId | — |
+
+### [[trainingsupplierresourcepvo|TrainingSupplierResourcePVO]] (HCM · BICC: 4/76)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ADDRESS_ID | TrainingSupplierResourcePEOAddressId | — |
+| ATTRIBUTION_ID | TrainingSupplierResourcePEOAttributionId | — |
+| ATTRIBUTION_TYPE | TrainingSupplierResourcePEOAttributionType | — |
+| CAPACITY | TrainingSupplierResourcePEOCapacity | — |
+| CONTACT_ID | TrainingSupplierResourcePEOContactId | — |
+| CREATED_BY | TrainingSupplierResourcePEOCreatedBy | — |
+| CREATION_DATE | TrainingSupplierResourcePEOCreationDate | — |
+| ENTERPRISE_ID | TrainingSupplierResourcePEOEnterpriseId | — |
+| LAST_UPDATE_DATE | TrainingSupplierResourcePEOLastUpdateDate | — |
+| LAST_UPDATE_LOGIN | TrainingSupplierResourcePEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | TrainingSupplierResourcePEOLastUpdatedBy | — |
+| LOCATION_ID | TrainingSupplierResourcePEOLocationId | — |
+| OBJECT_VERSION_NUMBER | TrainingSupplierResourcePEOObjectVersionNumber | — |
+| RESOURCE_ID | TrainingSupplierResourcePEOResourceId | ✅ |
+| RESOURCE_NUMBER | TrainingSupplierResourcePEOResourceNumber | ✅ |
+| RESOURCE_TYPE | TrainingSupplierResourcePEOResourceType | ✅ |
+| RS_ATTRIBUTE1 | TrainingSupplierResourcePEORsAttribute1 | — |
+| RS_ATTRIBUTE10 | TrainingSupplierResourcePEORsAttribute10 | — |
+| RS_ATTRIBUTE11 | TrainingSupplierResourcePEORsAttribute11 | — |
+| RS_ATTRIBUTE12 | TrainingSupplierResourcePEORsAttribute12 | — |
+| RS_ATTRIBUTE13 | TrainingSupplierResourcePEORsAttribute13 | — |
+| RS_ATTRIBUTE14 | TrainingSupplierResourcePEORsAttribute14 | — |
+| RS_ATTRIBUTE15 | TrainingSupplierResourcePEORsAttribute15 | — |
+| RS_ATTRIBUTE16 | TrainingSupplierResourcePEORsAttribute16 | — |
+| RS_ATTRIBUTE17 | TrainingSupplierResourcePEORsAttribute17 | — |
+| RS_ATTRIBUTE18 | TrainingSupplierResourcePEORsAttribute18 | — |
+| RS_ATTRIBUTE19 | TrainingSupplierResourcePEORsAttribute19 | — |
+| RS_ATTRIBUTE2 | TrainingSupplierResourcePEORsAttribute2 | — |
+| RS_ATTRIBUTE20 | TrainingSupplierResourcePEORsAttribute20 | — |
+| RS_ATTRIBUTE3 | TrainingSupplierResourcePEORsAttribute3 | — |
+| RS_ATTRIBUTE4 | TrainingSupplierResourcePEORsAttribute4 | — |
+| RS_ATTRIBUTE5 | TrainingSupplierResourcePEORsAttribute5 | — |
+| RS_ATTRIBUTE6 | TrainingSupplierResourcePEORsAttribute6 | — |
+| RS_ATTRIBUTE7 | TrainingSupplierResourcePEORsAttribute7 | — |
+| RS_ATTRIBUTE8 | TrainingSupplierResourcePEORsAttribute8 | — |
+| RS_ATTRIBUTE9 | TrainingSupplierResourcePEORsAttribute9 | — |
+| RS_ATTRIBUTE_CATEGORY | TrainingSupplierResourcePEORsAttributeCategory | — |
+| RS_ATTRIBUTE_DATE1 | TrainingSupplierResourcePEORsAttributeDate1 | — |
+| RS_ATTRIBUTE_DATE10 | TrainingSupplierResourcePEORsAttributeDate10 | — |
+| RS_ATTRIBUTE_DATE11 | TrainingSupplierResourcePEORsAttributeDate11 | — |
+| RS_ATTRIBUTE_DATE12 | TrainingSupplierResourcePEORsAttributeDate12 | — |
+| RS_ATTRIBUTE_DATE13 | TrainingSupplierResourcePEORsAttributeDate13 | — |
+| RS_ATTRIBUTE_DATE14 | TrainingSupplierResourcePEORsAttributeDate14 | — |
+| RS_ATTRIBUTE_DATE15 | TrainingSupplierResourcePEORsAttributeDate15 | — |
+| RS_ATTRIBUTE_DATE2 | TrainingSupplierResourcePEORsAttributeDate2 | — |
+| RS_ATTRIBUTE_DATE3 | TrainingSupplierResourcePEORsAttributeDate3 | — |
+| RS_ATTRIBUTE_DATE4 | TrainingSupplierResourcePEORsAttributeDate4 | — |
+| RS_ATTRIBUTE_DATE5 | TrainingSupplierResourcePEORsAttributeDate5 | — |
+| RS_ATTRIBUTE_DATE6 | TrainingSupplierResourcePEORsAttributeDate6 | — |
+| RS_ATTRIBUTE_DATE7 | TrainingSupplierResourcePEORsAttributeDate7 | — |
+| RS_ATTRIBUTE_DATE8 | TrainingSupplierResourcePEORsAttributeDate8 | — |
+| RS_ATTRIBUTE_DATE9 | TrainingSupplierResourcePEORsAttributeDate9 | — |
+| RS_ATTRIBUTE_NUMBER1 | TrainingSupplierResourcePEORsAttributeNumber1 | — |
+| RS_ATTRIBUTE_NUMBER10 | TrainingSupplierResourcePEORsAttributeNumber10 | — |
+| RS_ATTRIBUTE_NUMBER11 | TrainingSupplierResourcePEORsAttributeNumber11 | — |
+| RS_ATTRIBUTE_NUMBER12 | TrainingSupplierResourcePEORsAttributeNumber12 | — |
+| RS_ATTRIBUTE_NUMBER13 | TrainingSupplierResourcePEORsAttributeNumber13 | — |
+| RS_ATTRIBUTE_NUMBER14 | TrainingSupplierResourcePEORsAttributeNumber14 | — |
+| RS_ATTRIBUTE_NUMBER15 | TrainingSupplierResourcePEORsAttributeNumber15 | — |
+| RS_ATTRIBUTE_NUMBER16 | TrainingSupplierResourcePEORsAttributeNumber16 | — |
+| RS_ATTRIBUTE_NUMBER17 | TrainingSupplierResourcePEORsAttributeNumber17 | — |
+| RS_ATTRIBUTE_NUMBER18 | TrainingSupplierResourcePEORsAttributeNumber18 | — |
+| RS_ATTRIBUTE_NUMBER19 | TrainingSupplierResourcePEORsAttributeNumber19 | — |
+| RS_ATTRIBUTE_NUMBER2 | TrainingSupplierResourcePEORsAttributeNumber2 | — |
+| RS_ATTRIBUTE_NUMBER20 | TrainingSupplierResourcePEORsAttributeNumber20 | — |
+| RS_ATTRIBUTE_NUMBER3 | TrainingSupplierResourcePEORsAttributeNumber3 | — |
+| RS_ATTRIBUTE_NUMBER4 | TrainingSupplierResourcePEORsAttributeNumber4 | — |
+| RS_ATTRIBUTE_NUMBER5 | TrainingSupplierResourcePEORsAttributeNumber5 | — |
+| RS_ATTRIBUTE_NUMBER6 | TrainingSupplierResourcePEORsAttributeNumber6 | — |
+| RS_ATTRIBUTE_NUMBER7 | TrainingSupplierResourcePEORsAttributeNumber7 | — |
+| RS_ATTRIBUTE_NUMBER8 | TrainingSupplierResourcePEORsAttributeNumber8 | — |
+| RS_ATTRIBUTE_NUMBER9 | TrainingSupplierResourcePEORsAttributeNumber9 | — |
+| SOURCE_ID | TrainingSupplierResourcePEOSourceId | — |
+| SOURCE_TYPE | TrainingSupplierResourcePEOSourceType | — |
+| STATUS | TrainingSupplierResourcePEOStatus | ✅ |
+| TRAINING_VENDOR_RES_ID | TrainingSupplierResourcePEOTrainingVendorResId | — |

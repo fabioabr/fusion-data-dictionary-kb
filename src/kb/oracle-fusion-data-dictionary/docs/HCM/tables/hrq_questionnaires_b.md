@@ -98,6 +98,271 @@ Ciclo: DRAFT -> PUBLISHED -> CLOSED.
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[feedbackdetailspvo|FeedbackDetailsPVO]] (HCM · BICC: 10/26)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | BusinessGroupId | — |
+| CATEGORY_ID | CategoryId | — |
+| CREATED_BY | CreatedBy4 | — |
+| CREATION_DATE | CreationDate4 | — |
+| IN_USE | InUse | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate4 | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin4 | — |
+| LAST_UPDATED_BY | LastUpdatedBy4 | — |
+| LATEST_VERSION | LatestVersion | — |
+| MODULE_ID | ModuleId | — |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber3 | — |
+| OWNER | Owner | ✅ |
+| PAGE_LAYOUT | PageLayout | — |
+| PRIVACY_FLAG | PrivacyFlag | ✅ |
+| QSTNR_TEMPLATE_ID | QstnrTemplateId | — |
+| QSTNR_VERSION_NUM | QstnrVersionNum2 | — |
+| QSTNS_PER_PAGE | QstnsPerPage | ✅ |
+| QUESTIONNAIRE_CODE | QuestionnaireCode | ✅ |
+| QUESTIONNAIRE_ID | QuestionnaireId2 | — |
+| SECTION_ORDER | SectionOrder | ✅ |
+| SECTION_PRESENTATION | SectionPresentation | ✅ |
+| STATUS | Status | ✅ |
+| SUBSCRIBER_ID | SubscriberId | — |
+| TEMPLATE_FLAG | TemplateFlag | — |
+| UPDATE_ALLOWED | UpdateAllowed | — |
+| VERSION_DESCRIPTION | VersionDescription | ✅ |
+
+### [[managerquestionnairequestionpvo|ManagerQuestionnaireQuestionPVO]] (HCM)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | QuestionnaireBPEOBusinessGroupId | — |
+| CATEGORY_ID | QuestionnaireBPEOCategoryId | — |
+| IN_USE | QuestionnaireBPEOInUse | — |
+| LAST_UPDATE_DATE | QuestionnaireParticipantPEOLastUpdateDate | — |
+| LATEST_VERSION | QuestionnaireBPEOLatestVersion | — |
+| OWNER | QuestionnaireBPEOOwner | — |
+| PAGE_LAYOUT | QuestionnaireBPEOPageLayout | — |
+| PRIVACY_FLAG | QuestionnaireBPEOPrivacyFlag | — |
+| QSTNR_TEMPLATE_ID | QuestionnaireBPEOQstnrTemplateId | — |
+| QSTNR_VERSION_NUM | QuestionnaireBPEOQstnrVersionNum | — |
+| QSTNS_PER_PAGE | QuestionnaireBPEOQstnsPerPage | — |
+| QUESTIONNAIRE_CODE | QuestionnaireBPEOQuestionnaireCode | — |
+| QUESTIONNAIRE_ID | QuestionnaireBPEOQuestionnaireId | — |
+| SECTION_ORDER | QuestionnaireBPEOSectionOrder | — |
+| SECTION_PRESENTATION | QuestionnaireBPEOSectionPresentation | — |
+| STATUS | QuestionnaireBPEOStatus | — |
+| SUBSCRIBER_ID | QuestionnaireBPEOSubscriberId | — |
+| TEMPLATE_FLAG | QuestionnaireBPEOTemplateFlag | — |
+| UPDATE_ALLOWED | QuestionnaireBPEOUpdateAllowed | — |
+| VERSION_DESCRIPTION | QuestionnaireBPEOVersionDescription | — |
+
+### [[participantquestionnairequestionpvo|ParticipantQuestionnaireQuestionPVO]] (HCM · BICC: 5/20)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | QuestionnaireBPEOBusinessGroupId | ✅ |
+| CATEGORY_ID | QuestionnaireBPEOCategoryId | — |
+| IN_USE | QuestionnaireBPEOInUse | — |
+| LAST_UPDATE_DATE | QuestionnaireParticipantPEOLastUpdateDate | — |
+| LATEST_VERSION | QuestionnaireBPEOLatestVersion | — |
+| OWNER | QuestionnaireBPEOOwner | — |
+| PAGE_LAYOUT | QuestionnaireBPEOPageLayout | — |
+| PRIVACY_FLAG | QuestionnaireBPEOPrivacyFlag | — |
+| QSTNR_TEMPLATE_ID | QuestionnaireBPEOQstnrTemplateId | — |
+| QSTNR_VERSION_NUM | QuestionnaireBPEOQstnrVersionNum | ✅ |
+| QSTNS_PER_PAGE | QuestionnaireBPEOQstnsPerPage | — |
+| QUESTIONNAIRE_CODE | QuestionnaireBPEOQuestionnaireCode | ✅ |
+| QUESTIONNAIRE_ID | QuestionnaireBPEOQuestionnaireId | ✅ |
+| SECTION_ORDER | QuestionnaireBPEOSectionOrder | — |
+| SECTION_PRESENTATION | QuestionnaireBPEOSectionPresentation | — |
+| STATUS | QuestionnaireBPEOStatus | ✅ |
+| SUBSCRIBER_ID | QuestionnaireBPEOSubscriberId | — |
+| TEMPLATE_FLAG | QuestionnaireBPEOTemplateFlag | — |
+| UPDATE_ALLOWED | QuestionnaireBPEOUpdateAllowed | — |
+| VERSION_DESCRIPTION | QuestionnaireBPEOVersionDescription | — |
+
+### [[participantquestionnairequestionpvoforpotentialassessement|ParticipantQuestionnaireQuestionPVOForPotentialAssessement]] (HCM)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | QuestionnaireBPEOBusinessGroupId | — |
+| CATEGORY_ID | QuestionnaireBPEOCategoryId | — |
+| IN_USE | QuestionnaireBPEOInUse | — |
+| LAST_UPDATE_DATE | QuestionnaireParticipantPEOLastUpdateDate | — |
+| LATEST_VERSION | QuestionnaireBPEOLatestVersion | — |
+| OWNER | QuestionnaireBPEOOwner | — |
+| PAGE_LAYOUT | QuestionnaireBPEOPageLayout | — |
+| PRIVACY_FLAG | QuestionnaireBPEOPrivacyFlag | — |
+| QSTNR_TEMPLATE_ID | QuestionnaireBPEOQstnrTemplateId | — |
+| QSTNR_VERSION_NUM | QuestionnaireBPEOQstnrVersionNum | — |
+| QSTNS_PER_PAGE | QuestionnaireBPEOQstnsPerPage | — |
+| QUESTIONNAIRE_CODE | QuestionnaireBPEOQuestionnaireCode | — |
+| QUESTIONNAIRE_ID | QuestionnaireBPEOQuestionnaireId | — |
+| SECTION_ORDER | QuestionnaireBPEOSectionOrder | — |
+| SECTION_PRESENTATION | QuestionnaireBPEOSectionPresentation | — |
+| STATUS | QuestionnaireBPEOStatus | — |
+| SUBSCRIBER_ID | QuestionnaireBPEOSubscriberId | — |
+| TEMPLATE_FLAG | QuestionnaireBPEOTemplateFlag | — |
+| UPDATE_ALLOWED | QuestionnaireBPEOUpdateAllowed | — |
+| VERSION_DESCRIPTION | QuestionnaireBPEOVersionDescription | — |
+
+### [[participantquestionnairequestionresponselistpvo|ParticipantQuestionnaireQuestionResponseListPVO]] (HCM)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | AdditionalQuestionnaireBPEOBusinessGroupId | — |
+| QSTNR_VERSION_NUM | AdditionalQuestionnaireBPEOQstnrVersionNum | — |
+| QUESTIONNAIRE_CODE | AdditionalQuestionnaireBPEOQuestionnaireCode | — |
+| QUESTIONNAIRE_ID | AdditionalQuestionnaireBPEOQuestionnaireId | — |
+
+### [[questionanswerpvo|QuestionAnswerPVO]] (HCM)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | AdditionalQuestionnaireBPEOBusinessGroupId | — |
+| QSTNR_VERSION_NUM | AdditionalQuestionnaireBPEOQstnrVersionNum | — |
+| QUESTIONNAIRE_CODE | AdditionalQuestionnaireBPEOQuestionnaireCode | — |
+| QUESTIONNAIRE_ID | AdditionalQuestionnaireBPEOQuestionnaireId | — |
+
+### [[questionnaireallquestionsp1|QuestionnaireAllQuestionsP1]] (HCM · BICC: 3/4)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | QuestionnaireBPEOBusinessGroupId | ✅ |
+| LATEST_VERSION | QuestionnaireBPEOLatestVersion | — |
+| QSTNR_VERSION_NUM | QuestionnaireBPEOQstnrVersionNum | ✅ |
+| QUESTIONNAIRE_ID | QuestionnaireBPEOQuestionnaireId | ✅ |
+
+### [[questionnairepvo|QuestionnairePVO]] (HCM · BICC: 6/26)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | BusinessGroupId | ✅ |
+| CATEGORY_ID | CategoryId | ✅ |
+| CREATED_BY | CreatedBy | — |
+| CREATION_DATE | CreationDate | — |
+| IN_USE | InUse | — |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | — |
+| LAST_UPDATED_BY | LastUpdatedBy | — |
+| LATEST_VERSION | LatestVersion | — |
+| MODULE_ID | ModuleId | — |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | — |
+| OWNER | Owner | — |
+| PAGE_LAYOUT | PageLayout | — |
+| PRIVACY_FLAG | PrivacyFlag | — |
+| QSTNR_TEMPLATE_ID | QstnrTemplateId | — |
+| QSTNR_VERSION_NUM | QstnrVersionNum | ✅ |
+| QSTNS_PER_PAGE | QstnsPerPage | — |
+| QUESTIONNAIRE_CODE | QuestionnaireCode | ✅ |
+| QUESTIONNAIRE_ID | QuestionnaireId | ✅ |
+| SECTION_ORDER | SectionOrder | — |
+| SECTION_PRESENTATION | SectionPresentation | — |
+| STATUS | Status | — |
+| SUBSCRIBER_ID | SubscriberId | — |
+| TEMPLATE_FLAG | TemplateFlag | — |
+| UPDATE_ALLOWED | UpdateAllowed | — |
+| VERSION_DESCRIPTION | VersionDescription | — |
+
+### [[questionnairequestionresponselistpvo|QuestionnaireQuestionResponseListPVO]] (HCM)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | AdditionalQuestionnaireBPEOBusinessGroupId | — |
+| QSTNR_VERSION_NUM | AdditionalQuestionnaireBPEOQstnrVersionNum | — |
+| QUESTIONNAIRE_CODE | AdditionalQuestionnaireBPEOQuestionnaireCode | — |
+| QUESTIONNAIRE_ID | AdditionalQuestionnaireBPEOQuestionnaireId | — |
+
+### [[requisitionqstnrexternalviewallpvo|RequisitionQstnrExternalViewAllPVO]] (PO · BICC: 5/13)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | QuestionnaireBPEOBusinessGroupId | — |
+| CATEGORY_ID | QuestionnaireBPEOCategoryId | — |
+| CREATED_BY | QuestionnaireBPEOCreatedBy | — |
+| CREATION_DATE | QuestionnaireBPEOCreationDate | ✅ |
+| LAST_UPDATE_DATE | QuestionnaireBPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | QuestionnaireBPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | QuestionnaireBPEOLastUpdatedBy | — |
+| MAX_POSSIBLE_SCORE | QuestionnaireBPEOMaxPossibleScore | ✅ |
+| OWNER | QuestionnaireBPEOOwner | ✅ |
+| QSTNR_VERSION_NUM | QuestionnaireBPEOQstnrVersionNum | — |
+| QUESTIONNAIRE_CODE | QuestionnaireBPEOQuestionnaireCode | ✅ |
+| QUESTIONNAIRE_ID | QuestionnaireBPEOQuestionnaireId | — |
+| STATUS | QuestionnaireBPEOStatus | — |
+
+### [[requisitionqstnrinternalviewallpvo|RequisitionQstnrInternalViewAllPVO]] (PO · BICC: 5/13)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | QuestionnaireBPEOBusinessGroupId | — |
+| CATEGORY_ID | QuestionnaireBPEOCategoryId | — |
+| CREATED_BY | QuestionnaireBPEOCreatedBy | — |
+| CREATION_DATE | QuestionnaireBPEOCreationDate | ✅ |
+| LAST_UPDATE_DATE | QuestionnaireBPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | QuestionnaireBPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | QuestionnaireBPEOLastUpdatedBy | — |
+| MAX_POSSIBLE_SCORE | QuestionnaireBPEOMaxPossibleScore | ✅ |
+| OWNER | QuestionnaireBPEOOwner | ✅ |
+| QSTNR_VERSION_NUM | QuestionnaireBPEOQstnrVersionNum | — |
+| QUESTIONNAIRE_CODE | QuestionnaireBPEOQuestionnaireCode | ✅ |
+| QUESTIONNAIRE_ID | QuestionnaireBPEOQuestionnaireId | — |
+| STATUS | QuestionnaireBPEOStatus | — |
+
+### [[requisitionqstnrinterviewviewallpvo|RequisitionQstnrInterviewViewAllPVO]] (PO · BICC: 4/13)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | QuestionnaireBPEOBusinessGroupId | — |
+| CATEGORY_ID | QuestionnaireBPEOCategoryId | — |
+| CREATED_BY | QuestionnaireBPEOCreatedBy | — |
+| CREATION_DATE | QuestionnaireBPEOCreationDate | ✅ |
+| LAST_UPDATE_DATE | QuestionnaireBPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | QuestionnaireBPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | QuestionnaireBPEOLastUpdatedBy | — |
+| MAX_POSSIBLE_SCORE | QuestionnaireBPEOMaxPossibleScore | — |
+| OWNER | QuestionnaireBPEOOwner | ✅ |
+| QSTNR_VERSION_NUM | QuestionnaireBPEOQstnrVersionNum | — |
+| QUESTIONNAIRE_CODE | QuestionnaireBPEOQuestionnaireCode | ✅ |
+| QUESTIONNAIRE_ID | QuestionnaireBPEOQuestionnaireId | — |
+| STATUS | QuestionnaireBPEOStatus | — |
+
+### [[submissionqstnrsviewallpvo|SubmissionQstnrsViewAllPVO]] (PO · BICC: 1/4)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | QuestionnaireBPEOBusinessGroupId | — |
+| MAX_POSSIBLE_SCORE | QuestionnaireBPEOMaxPossibleScore | ✅ |
+| QSTNR_VERSION_NUM | QuestionnaireBPEOQstnrVersionNum | — |
+| QUESTIONNAIRE_ID | QuestionnaireBPEOQuestionnaireId | — |
+
+### [[workerquestionnairequestionpvo|WorkerQuestionnaireQuestionPVO]] (HCM)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | QuestionnaireBPEOBusinessGroupId | — |
+| CATEGORY_ID | QuestionnaireBPEOCategoryId | — |
+| IN_USE | QuestionnaireBPEOInUse | — |
+| LAST_UPDATE_DATE | QuestionnaireParticipantPEOLastUpdateDate | — |
+| LATEST_VERSION | QuestionnaireBPEOLatestVersion | — |
+| OWNER | QuestionnaireBPEOOwner | — |
+| PAGE_LAYOUT | QuestionnaireBPEOPageLayout | — |
+| PRIVACY_FLAG | QuestionnaireBPEOPrivacyFlag | — |
+| QSTNR_TEMPLATE_ID | QuestionnaireBPEOQstnrTemplateId | — |
+| QSTNR_VERSION_NUM | QuestionnaireBPEOQstnrVersionNum | — |
+| QSTNS_PER_PAGE | QuestionnaireBPEOQstnsPerPage | — |
+| QUESTIONNAIRE_CODE | QuestionnaireBPEOQuestionnaireCode | — |
+| QUESTIONNAIRE_ID | QuestionnaireBPEOQuestionnaireId | — |
+| SECTION_ORDER | QuestionnaireBPEOSectionOrder | — |
+| SECTION_PRESENTATION | QuestionnaireBPEOSectionPresentation | — |
+| STATUS | QuestionnaireBPEOStatus | — |
+| SUBSCRIBER_ID | QuestionnaireBPEOSubscriberId | — |
+| TEMPLATE_FLAG | QuestionnaireBPEOTemplateFlag | — |
+| UPDATE_ALLOWED | QuestionnaireBPEOUpdateAllowed | — |
+| VERSION_DESCRIPTION | QuestionnaireBPEOVersionDescription | — |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Fusion HCM Tables and Views](https://docs.oracle.com/en/cloud/saas/human-resources/25a/)

@@ -147,3 +147,37 @@ GROUP BY a.ASSESSMENT_NAME;
 
 - [Oracle Docs — POQ_EVALUATION_TEAM](https://docs.oracle.com/en/cloud/saas/procurement/25a/oedmf/poqevaluationteam.html)
 - [[po-module-data-dictionary]] — Dossiê do módulo Procurement
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[evaluationteammemberpvo|EvaluationTeamMemberPVO]] (PO · BICC: 10/10)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ADDED_BY | EvaluationTeamAddedBy | ✅ |
+| CREATED_BY | EvaluationTeamCreatedBy | ✅ |
+| CREATION_DATE | EvaluationTeamCreationDate | ✅ |
+| EVALUATION_TEAM_ID | EvaluationTeamId | ✅ |
+| INITIATIVE_ID | EvaluationTeamInitiativeId | ✅ |
+| LAST_UPDATE_DATE | EvaluationTeamLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | EvaluationTeamLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | EvaluationTeamLastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | EvaluationTeamObjectVersionNumber | ✅ |
+| TEAM_MEMBER_ID | EvaluationTeamTeamMemberId | ✅ |
+
+### [[initiativeevaluationteamextractpvo|InitiativeEvaluationTeamExtractPVO]] (PO · BICC: 10/10)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ADDED_BY | AddedBy | ✅ |
+| CREATED_BY | CreatedBy | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| EVALUATION_TEAM_ID | EvaluationTeamId | ✅ |
+| INITIATIVE_ID | InitiativeId | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | LastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | ✅ |
+| TEAM_MEMBER_ID | TeamMemberId | ✅ |

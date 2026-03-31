@@ -94,6 +94,164 @@ WHERE  at_.TEMPLATE_ID = :p_id;
 
 - Tabela base (sufixo `_B`) — traduções em [[hrr_tmpl_analytic_types_tl]].
 
+---
+
+## 🔗 PVOs Relacionados
+
+### [[boxlabellookuppvo|BoxLabelLookupPVO]] (HCM · BICC: 1/16)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ANALYTIC_TYPE_CODE | AnalyticTypeCode | — |
+| ANALYTIC_TYPE_ID | AnalyticTypeId | — |
+| ANALYTIC_VIEW_MODE | AnalyticViewMode | — |
+| BUSINESS_GROUP_ID | TmplAnalyticTypeBPEOBusinessGroupId | — |
+| COLOR_SCHEME_CODE | ColorSchemeCode | — |
+| CREATED_BY | TmplAnalyticTypeBPEOCreatedBy | — |
+| CREATION_DATE | TmplAnalyticTypeBPEOCreationDate | — |
+| DASHBOARD_TMPL_ID | TmplAnalyticTypeBPEODashboardTmplId | — |
+| HORIZONTAL_AXIS_CODE | HorizontalAxisCode | — |
+| LAST_UPDATE_DATE | TmplAnalyticTypeBPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | TmplAnalyticTypeBPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | TmplAnalyticTypeBPEOLastUpdatedBy | — |
+| MODULE_ID | TmplAnalyticTypeBPEOModuleId | — |
+| OBJECT_VERSION_NUMBER | TmplAnalyticTypeBPEOObjectVersionNumber | — |
+| SUBMIT_BOX_ASGNMNT_FLAG | SubmitBoxAsgnmntFlag | — |
+| VERTICAL_AXIS_CODE | VerticalAxisCode | — |
+
+### [[nboxdimensionpvo|NBoxDimensionPVO]] (HCM · BICC: 3/20)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ANALYTIC_TYPE_CODE | TemplateAnalyticTypeBPEOAnalyticTypeCode | — |
+| ANALYTIC_TYPE_ID | TemplateAnalyticTypeBPEOAnalyticTypeId | ✅ |
+| ANALYTIC_VIEW_MODE | TemplateAnalyticTypeBPEOAnalyticViewMode | — |
+| BUSINESS_GROUP_ID | TemplateAnalyticTypeBPEOBusinessGroupId | ✅ |
+| COLOR_SCHEME_CODE | TemplateAnalyticTypeBPEOColorSchemeCode | — |
+| CREATED_BY | TemplateAnalyticTypeBPEOCreatedBy | — |
+| CREATION_DATE | TemplateAnalyticTypeBPEOCreationDate | — |
+| DASHBOARD_TMPL_ID | TemplateAnalyticTypeBPEODashboardTmplId | — |
+| DEFAULT_VIEW_FLAG | TemplateAnalyticTypeBPEODefaultViewFlag | — |
+| HORIZONTAL_AXIS_CODE | TemplateAnalyticTypeBPEOHorizontalAxisCode | — |
+| LAST_UPDATE_DATE | TemplateAnalyticTypeBPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | TemplateAnalyticTypeBPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | TemplateAnalyticTypeBPEOLastUpdatedBy | — |
+| METRIC_CODE | TemplateAnalyticTypeBPEOMetricCode | — |
+| MODULE_ID | TemplateAnalyticTypeBPEOModuleId | — |
+| OBJECT_VERSION_NUMBER | TemplateAnalyticTypeBPEOObjectVersionNumber | — |
+| SUBMIT_BOX_ASGNMNT_FLAG | TemplateAnalyticTypeBPEOSubmitBoxAsgnmntFlag | — |
+| VERTICAL_AXIS_CODE | TemplateAnalyticTypeBPEOVerticalAxisCode | — |
+| VIEW_COLUMN_COUNT | TemplateAnalyticTypeBPEOViewColumnCount | — |
+| VIEW_ROW_COUNT | TemplateAnalyticTypeBPEOViewRowCount | — |
+
+### [[nboxlabelpvo|NBoxLabelPVO]] (HCM · BICC: 1/16)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ANALYTIC_TYPE_CODE | AnalyticTypeCode | — |
+| ANALYTIC_TYPE_ID | AnalyticTypeId | — |
+| ANALYTIC_VIEW_MODE | AnalyticViewMode | — |
+| BUSINESS_GROUP_ID | TmplAnalyticTypeBPEOBusinessGroupId | — |
+| COLOR_SCHEME_CODE | ColorSchemeCode | — |
+| CREATED_BY | TmplAnalyticTypeBPEOCreatedBy | — |
+| CREATION_DATE | TmplAnalyticTypeBPEOCreationDate | — |
+| DASHBOARD_TMPL_ID | TmplAnalyticTypeBPEODashboardTmplId | — |
+| HORIZONTAL_AXIS_CODE | HorizontalAxisCode | — |
+| LAST_UPDATE_DATE | TmplAnalyticTypeBPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | TmplAnalyticTypeBPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | TmplAnalyticTypeBPEOLastUpdatedBy | — |
+| MODULE_ID | TmplAnalyticTypeBPEOModuleId | — |
+| OBJECT_VERSION_NUMBER | TmplAnalyticTypeBPEOObjectVersionNumber | — |
+| SUBMIT_BOX_ASGNMNT_FLAG | SubmitBoxAsgnmntFlag | — |
+| VERTICAL_AXIS_CODE | VerticalAxisCode | — |
+
+### [[performancepotentialboxsequencepvo|PerformancePotentialBoxSequencePVO]] (HCM · BICC: 2/8)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ANALYTIC_TYPE_ID | TemplateAnalyticTypeBPEOAnalyticTypeId | ✅ |
+| ANALYTIC_VIEW_MODE | TemplateAnalyticTypeBPEOAnalyticViewMode | — |
+| BUSINESS_GROUP_ID | TemplateAnalyticTypeBPEOBusinessGroupId | — |
+| HORIZONTAL_AXIS_CODE | TemplateAnalyticTypeBPEOHorizontalAxisCode | — |
+| LAST_UPDATE_DATE | TemplateAnalyticTypeBPEOLastUpdateDate | ✅ |
+| METRIC_CODE | TemplateAnalyticTypeBPEOMetricCode | — |
+| SUBMIT_BOX_ASGNMNT_FLAG | TemplateAnalyticTypeBPEOSubmitBoxAsgnmntFlag | — |
+| VERTICAL_AXIS_CODE | TemplateAnalyticTypeBPEOVerticalAxisCode | — |
+
+### [[performancepotentialboxsequencepvo_viewall|PerformancePotentialBoxSequencePVO_Viewall]] (HCM · BICC: 2/8)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ANALYTIC_TYPE_ID | TemplateAnalyticTypeBPEOAnalyticTypeId | ✅ |
+| ANALYTIC_VIEW_MODE | TemplateAnalyticTypeBPEOAnalyticViewMode | — |
+| BUSINESS_GROUP_ID | TemplateAnalyticTypeBPEOBusinessGroupId | — |
+| HORIZONTAL_AXIS_CODE | TemplateAnalyticTypeBPEOHorizontalAxisCode | — |
+| LAST_UPDATE_DATE | TemplateAnalyticTypeBPEOLastUpdateDate | ✅ |
+| METRIC_CODE | TemplateAnalyticTypeBPEOMetricCode | — |
+| SUBMIT_BOX_ASGNMNT_FLAG | TemplateAnalyticTypeBPEOSubmitBoxAsgnmntFlag | — |
+| VERTICAL_AXIS_CODE | TemplateAnalyticTypeBPEOVerticalAxisCode | — |
+
+### [[talentscoreboxlabellookuppvo|TalentScoreBoxLabelLookupPVO]] (HCM)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ANALYTIC_TYPE_CODE | AnalyticTypeCode | — |
+| ANALYTIC_TYPE_ID | AnalyticTypeId | — |
+| ANALYTIC_VIEW_MODE | AnalyticViewMode | — |
+| BUSINESS_GROUP_ID | BusinessGroupId2 | — |
+| METRIC_CODE | MetricCode | — |
+| SUBMIT_BOX_ASGNMNT_FLAG | SubmitBoxAsgnmntFlag | — |
+
+### [[talentscoreboxsequencepvo|TalentScoreBoxSequencePVO]] (HCM · BICC: 1/8)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ANALYTIC_TYPE_ID | TemplateAnalyticTypeBPEOAnalyticTypeId | ✅ |
+| ANALYTIC_VIEW_MODE | TemplateAnalyticTypeBPEOAnalyticViewMode | — |
+| BUSINESS_GROUP_ID | TemplateAnalyticTypeBPEOBusinessGroupId | — |
+| HORIZONTAL_AXIS_CODE | TemplateAnalyticTypeBPEOHorizontalAxisCode | — |
+| LAST_UPDATE_DATE | TemplateAnalyticTypeBPEOLastUpdateDate | — |
+| METRIC_CODE | TemplateAnalyticTypeBPEOMetricCode | — |
+| SUBMIT_BOX_ASGNMNT_FLAG | TemplateAnalyticTypeBPEOSubmitBoxAsgnmntFlag | — |
+| VERTICAL_AXIS_CODE | TemplateAnalyticTypeBPEOVerticalAxisCode | — |
+
+### [[talentscoreboxsequencepvo_viewall|TalentScoreBoxSequencePVO_Viewall]] (HCM · BICC: 1/8)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ANALYTIC_TYPE_ID | TemplateAnalyticTypeBPEOAnalyticTypeId | ✅ |
+| ANALYTIC_VIEW_MODE | TemplateAnalyticTypeBPEOAnalyticViewMode | — |
+| BUSINESS_GROUP_ID | TemplateAnalyticTypeBPEOBusinessGroupId | — |
+| HORIZONTAL_AXIS_CODE | TemplateAnalyticTypeBPEOHorizontalAxisCode | — |
+| LAST_UPDATE_DATE | TemplateAnalyticTypeBPEOLastUpdateDate | — |
+| METRIC_CODE | TemplateAnalyticTypeBPEOMetricCode | — |
+| SUBMIT_BOX_ASGNMNT_FLAG | TemplateAnalyticTypeBPEOSubmitBoxAsgnmntFlag | — |
+| VERTICAL_AXIS_CODE | TemplateAnalyticTypeBPEOVerticalAxisCode | — |
+
+### [[templateanalytictypepvo|TemplateAnalyticTypePVO]] (HCM · BICC: 20/20)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ANALYTIC_TYPE_CODE | AnalyticTypeCode | ✅ |
+| ANALYTIC_TYPE_ID | AnalyticTypeId | ✅ |
+| ANALYTIC_VIEW_MODE | AnalyticViewMode | ✅ |
+| BUSINESS_GROUP_ID | BusinessGroupId | ✅ |
+| COLOR_SCHEME_CODE | ColorSchemeCode | ✅ |
+| CREATED_BY | CreatedBy | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| DASHBOARD_TMPL_ID | DashboardTmplId | ✅ |
+| DEFAULT_VIEW_FLAG | DefaultViewFlag | ✅ |
+| HORIZONTAL_AXIS_CODE | HorizontalAxisCode | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | LastUpdatedBy | ✅ |
+| METRIC_CODE | MetricCode | ✅ |
+| MODULE_ID | ModuleId | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | ✅ |
+| SUBMIT_BOX_ASGNMNT_FLAG | SubmitBoxAsgnmntFlag | ✅ |
+| VERTICAL_AXIS_CODE | VerticalAxisCode | ✅ |
+| VIEW_COLUMN_COUNT | ViewColumnCount | ✅ |
+| VIEW_ROW_COUNT | ViewRowCount | ✅ |
 
 ---
 

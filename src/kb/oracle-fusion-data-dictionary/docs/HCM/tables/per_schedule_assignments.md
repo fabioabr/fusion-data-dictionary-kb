@@ -117,3 +117,67 @@ WHERE  sa.RESOURCE_ID = :p_person_id
 
 - [Oracle Docs — PER_SCHEDULE_ASSIGNMENTS](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/perscheduleassignments.html)
 - [[hcm-module-data-dictionary]] — Dossiê do módulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[scheduleassignmentextractpvo|ScheduleAssignmentExtractPVO]] (HCM · BICC: 15/15)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | CreatedBy | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| END_DATE | EndDate | ✅ |
+| ENTERPRISE_ID | EnterpriseId | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | LastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | ✅ |
+| PRIMARY_FLAG | PrimaryFlag | ✅ |
+| RESOURCE_ID | ResourceId | ✅ |
+| RESOURCE_TYPE | ResourceType | ✅ |
+| SCHEDULE_ASSIGNMENT_ID | ScheduleAssignmentId | ✅ |
+| SCHEDULE_ID | ScheduleId | ✅ |
+| START_DATE | StartDate | ✅ |
+| START_PATTERN_DTL_ID | StartPatternDtlId | ✅ |
+
+### [[scheduleassignmentpvo|ScheduleAssignmentPVO]] (GL · BICC: 9/15)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | ScheduleAssignmentPEOCreatedBy | ✅ |
+| CREATION_DATE | ScheduleAssignmentPEOCreationDate | ✅ |
+| END_DATE | ScheduleAssignmentPEOEndDate | ✅ |
+| ENTERPRISE_ID | ScheduleAssignmentPEOEnterpriseId | — |
+| LAST_UPDATE_DATE | ScheduleAssignmentPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ScheduleAssignmentPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | ScheduleAssignmentPEOLastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | ScheduleAssignmentPEOObjectVersionNumber | — |
+| PRIMARY_FLAG | ScheduleAssignmentPEOPrimaryFlag | ✅ |
+| RESOURCE_ID | ScheduleAssignmentPEOResourceId | — |
+| RESOURCE_TYPE | ScheduleAssignmentPEOResourceType | ✅ |
+| SCHEDULE_ASSIGNMENT_ID | ScheduleAssignmentPEOScheduleAssignmentId | ✅ |
+| SCHEDULE_ID | ScheduleAssignmentPEOScheduleId | — |
+| START_DATE | ScheduleAssignmentPEOStartDate | ✅ |
+| START_PATTERN_DTL_ID | ScheduleAssignmentPEOStartPatternDtlId | — |
+
+### [[scheduleexceptionpvo|ScheduleExceptionPVO]] (GL · BICC: 1/15)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | ScheduleAssignmentPEOCreatedBy | — |
+| CREATION_DATE | ScheduleAssignmentPEOCreationDate | — |
+| END_DATE | ScheduleAssignmentPEOEndDate | — |
+| ENTERPRISE_ID | ScheduleAssignmentPEOEnterpriseId | — |
+| LAST_UPDATE_DATE | ScheduleAssignmentPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ScheduleAssignmentPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | ScheduleAssignmentPEOLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | ScheduleAssignmentPEOObjectVersionNumber | — |
+| PRIMARY_FLAG | ScheduleAssignmentPEOPrimaryFlag | — |
+| RESOURCE_ID | ScheduleAssignmentPEOResourceId | — |
+| RESOURCE_TYPE | ScheduleAssignmentPEOResourceType | — |
+| SCHEDULE_ASSIGNMENT_ID | ScheduleAssignmentPEOScheduleAssignmentId | — |
+| SCHEDULE_ID | ScheduleAssignmentPEOScheduleId | — |
+| START_DATE | ScheduleAssignmentPEOStartDate | — |
+| START_PATTERN_DTL_ID | ScheduleAssignmentPEOStartPatternDtlId | — |

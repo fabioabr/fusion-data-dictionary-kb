@@ -126,6 +126,53 @@ WHERE  SYSDATE BETWEEN at.EFFECTIVE_START_DATE AND at.EFFECTIVE_END_DATE
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[absencetypepvo|AbsenceTypePVO]] (GL · BICC: 32/38)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ABSENCE_TYPE_ID | AbsenceTypeId | ✅ |
+| ADMIN_ALLOW_UPDATES_CD | AdminAllowUpdatesCd | ✅ |
+| ANC_ABSENCE_TYPES_F_ALTCD | AncAbsenceTypesFAltcd | — |
+| CHILD_EVENT_TYPE_CD | ChildEventTypeCd | ✅ |
+| CREATED_BY | CreatedBy | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| DURATION_UOM_CD | DurationUomCd | ✅ |
+| EFFECTIVE_END_DATE | EffectiveEndDate | ✅ |
+| EFFECTIVE_START_DATE | EffectiveStartDate | ✅ |
+| EMP_ALLOW_UPDATES_CD | EmpAllowUpdatesCd | ✅ |
+| EMP_LOCK_IF_CONFIRM_CD | EmpLockIfConfirmCd | ✅ |
+| ENTERPRISE_ID | EnterpriseId | — |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | — |
+| LAST_UPDATED_BY | LastUpdatedBy | ✅ |
+| LEGISLATION_CODE | LegislationCode | ✅ |
+| LEGISLATIVE_DATA_GROUP_ID | LegislativeDataGroupId | — |
+| LINKAGE_DURATION | LinkageDuration | ✅ |
+| LINKAGE_REASON_CD | LinkageReasonCd | ✅ |
+| LINKAGE_RULE_CD | LinkageRuleCd | ✅ |
+| LINKAGE_UOM_CD | LinkageUomCd | ✅ |
+| MANAGEMENT_TYPE_CD | ManagementTypeCd | ✅ |
+| MAP_EVENT_TYPE_CD | MapEventTypeCd | ✅ |
+| MAX_DURATION | MaxDuration | ✅ |
+| MAX_DURATION_RULE_CD | MaxDurationRuleCd | ✅ |
+| MGR_ALLOW_UPDATES_CD | MgrAllowUpdatesCd | ✅ |
+| MGR_LOCK_IF_CONFIRM_CD | MgrLockIfConfirmCd | ✅ |
+| MIN_DURATION | MinDuration | ✅ |
+| MIN_DURATION_RULE_CD | MinDurationRuleCd | ✅ |
+| MODULE_ID | ModuleId | — |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | — |
+| PARTIAL_DAY | PartialDay | ✅ |
+| PARTIAL_DAY_FORMULA_ID | PartialDayFormulaId | ✅ |
+| PATTERN_CD | PatternCD | ✅ |
+| SPL_CONDITION | SplCondition | ✅ |
+| STATUS | Status | ✅ |
+| TIMECARD_AVAIL_FLAG | TimecardAvailFlag | ✅ |
+| TIMEKEEPER_AVAIL_FLAG | TimekeeperAvailFlag | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — ANC_ABSENCE_TYPES_F](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/ancabsencetypesf.html)

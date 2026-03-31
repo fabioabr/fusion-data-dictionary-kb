@@ -127,6 +127,61 @@ WHERE  rs.PERCENTAGE_SCORE < 50
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[questionnaireresponsesectionextractpvo|QuestionnaireResponseSectionExtractPVO]] (PO · BICC: 12/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | CreatedBy | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | LastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | ✅ |
+| QUESTNAIRE_RESP_HEADER_ID | QuestnaireRespHeaderId | ✅ |
+| QUESTNAIRE_RESP_SECTION_ID | QuestnaireRespSectionId | ✅ |
+| QUESTNAIRE_SECTION_ID | QuestnaireSectionId | ✅ |
+| SECTION_COMPLETED_FLAG | SectionCompletedFlag | ✅ |
+| SECTION_DISPLAYED_FLAG | SectionDisplayedFlag | ✅ |
+| SECTION_GENERATED_FLAG | SectionGeneratedFlag | ✅ |
+
+### [[questionnaireresponsespvo|QuestionnaireResponsesPVO]] (PO · BICC: 12/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | RespSectionsCreatedBy | ✅ |
+| CREATION_DATE | RespSectionsCreationDate | ✅ |
+| LAST_UPDATE_DATE | RespSectionsLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | RespSectionsLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | RespSectionsLastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | RespSectionsObjectVersionNumber | ✅ |
+| QUESTNAIRE_RESP_HEADER_ID | RespSectionsQuestnaireRespHeaderId | ✅ |
+| QUESTNAIRE_RESP_SECTION_ID | RespSectionsQuestnaireRespSectionId | ✅ |
+| QUESTNAIRE_SECTION_ID | RespSectionsQuestnaireSectionId | ✅ |
+| SECTION_COMPLETED_FLAG | RespSectionsSectionCompletedFlag | ✅ |
+| SECTION_DISPLAYED_FLAG | RespSectionsSectionDisplayedFlag | ✅ |
+| SECTION_GENERATED_FLAG | RespSectionsSectionGeneratedFlag | ✅ |
+
+### [[questionnaireresponsevaluespvo|QuestionnaireResponseValuesPVO]] (PO · BICC: 12/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | QuestRespSectionsCreatedBy | ✅ |
+| CREATION_DATE | QuestRespSectionsCreationDate | ✅ |
+| LAST_UPDATE_DATE | QuestRespSectionsLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | QuestRespSectionsLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | QuestRespSectionsLastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | QuestRespSectionsObjectVersionNumber | ✅ |
+| QUESTNAIRE_RESP_HEADER_ID | QuestRespSectionsQuestnaireRespHeaderId | ✅ |
+| QUESTNAIRE_RESP_SECTION_ID | QuestRespSectionsQuestnaireRespSectionId | ✅ |
+| QUESTNAIRE_SECTION_ID | QuestRespSectionsQuestnaireSectionId | ✅ |
+| SECTION_COMPLETED_FLAG | QuestRespSectionsSectionCompletedFlag | ✅ |
+| SECTION_DISPLAYED_FLAG | QuestRespSectionsSectionDisplayedFlag | ✅ |
+| SECTION_GENERATED_FLAG | QuestRespSectionsSectionGeneratedFlag | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — Supplier Qualification Management](https://docs.oracle.com/en/cloud/saas/procurement/25a/oedmf/)

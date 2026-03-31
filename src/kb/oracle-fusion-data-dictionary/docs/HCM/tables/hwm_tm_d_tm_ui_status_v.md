@@ -40,7 +40,6 @@ View que exibe o status detalhado dos registros de tempo na perspectiva da inter
 > [!note] Sufixo _V
 > O sufixo `_V` indica **view** — objeto somente leitura que consolida dados de uma ou mais tabelas para facilitar consultas.
 
-
 ---
 
 ## 🧠 Propósito de Negócio
@@ -103,6 +102,52 @@ WHERE  t.STATUS_CODE = 'APPROVED'
 
 - View somente leitura: não permite INSERT, UPDATE ou DELETE direto.
 - Área funcional: Time Management dentro do Oracle Fusion Cloud HCM.
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[absencetimeentrypvo|AbsenceTimeEntryPVO]] (HCM · BICC: 1/2)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| STATUS_ID | TimeCardDerivedUIStatusId | — |
+| STATUS_VALUE | TimeCardDerivedUIStatusValue | ✅ |
+
+### [[historicabsencetimeentrypvo|HistoricAbsenceTimeEntryPVO]] (HCM)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| STATUS_ID | TimeCardDerivedUIStatusId | — |
+| STATUS_VALUE | TimeCardDerivedUIStatusValue | — |
+
+### [[historicreportedtimeentrypvo|HistoricReportedTimeEntryPVO]] (HCM)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| STATUS_ID | TimeCardUIStatusId | — |
+| STATUS_VALUE | TimeCardUIStatusValue | — |
+
+### [[historicrptabstimeentrypvo|HistoricRptAbsTimeEntryPVO]] (HCM · BICC: 1/2)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| STATUS_ID | TimeDerivedUIStatusPEOStatusId | — |
+| STATUS_VALUE | TimeDerivedUIStatusPEOStatusValue | ✅ |
+
+### [[reportedtimeentrypvo|ReportedTimeEntryPVO]] (HCM · BICC: 1/2)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| STATUS_ID | TimeCardUIStatusId | — |
+| STATUS_VALUE | TimeCardUIStatusValue | ✅ |
+
+### [[rptabstimeentrypvo|RptAbsTimeEntryPVO]] (HCM · BICC: 1/2)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| STATUS_ID | TimeDerivedUIStatusPEOStatusId | — |
+| STATUS_VALUE | TimeDerivedUIStatusPEOStatusValue | ✅ |
 
 ---
 

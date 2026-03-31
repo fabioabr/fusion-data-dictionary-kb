@@ -102,6 +102,28 @@ WHERE  pcr.ACCRUAL_PLAN_ID = :p_accrual_plan_id;
 - O `ACCRUAL_START_RULE` define quando o colaborador começa a acumular (data de admissão, período probatório, etc.).
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[accrualcalculationruleinputvaluepvo|AccrualCalculationRuleInputValuePVO]] (GL · BICC: 2/13)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ABSENCE_ATTENDANCE_TYPE_ID | AccrualCalculationRulePEOAbsenceAttendanceTypeId | — |
+| ACCRUAL_CALC_RULE_ID | AccrualCalcRuleId | ✅ |
+| ACCRUAL_PLAN_ID | AccrualCalculationRulePEOAccrualPlanId | — |
+| ADD_OR_SUBTRACT | AccrualCalculationRulePEOAddOrSubtract | — |
+| CREATED_BY | AccrualCalculationRulePEOCreatedBy | — |
+| CREATION_DATE | AccrualCalculationRulePEOCreationDate | — |
+| DATE_INPUT_VALUE_ID | AccrualCalculationRulePEODateInputValueId | — |
+| INPUT_VALUE_ID | AccrualCalculationRulePEOInputValueId | — |
+| LAST_UPDATE_DATE | AccrualCalculationRulePEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | AccrualCalculationRulePEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | AccrualCalculationRulePEOLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | AccrualCalculationRulePEOObjectVersionNumber | — |
+| USE_ELEMENT_LINK | AccrualCalculationRulePEOUseElementLink | — |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — PER_ACCRUAL_CALC_RULES](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/peraccrualcalcrules.html)

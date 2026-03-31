@@ -92,6 +92,30 @@ WHERE  NVL(rt.ENABLED_FLAG,'Y') = 'Y';
 
 - Tabela base (sufixo `_B`) — traduções em [[hrq_response_types_tl]].
 
+---
+
+## 🔗 PVOs Relacionados
+
+### [[responsetypepvo|ResponseTypePVO]] (HCM · BICC: 4/16)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | ResponseTypeBPEOBusinessGroupId | ✅ |
+| CREATED_BY | ResponseTypeBPEOCreatedBy | — |
+| CREATION_DATE | ResponseTypeBPEOCreationDate | — |
+| LAST_UPDATE_DATE | ResponseTypeBPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ResponseTypeBPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | ResponseTypeBPEOLastUpdatedBy | — |
+| MODULE_ID | ResponseTypeBPEOModuleId | — |
+| NUM_ROWS | ResponseTypeBPEONumRows | — |
+| OBJECT_VERSION_NUMBER | ResponseTypeBPEOObjectVersionNumber | — |
+| QSTN_WIDTH_PCT | ResponseTypeBPEOQstnWidthPct | — |
+| QUESTION_TYPE | ResponseTypeBPEOQuestionType | — |
+| RESPONSE_TYPE_CODE | ResponseTypeBPEOResponseTypeCode | ✅ |
+| RESPONSE_TYPE_ID | ResponseTypeBPEOResponseTypeId | ✅ |
+| SEED_DATA_SOURCE | ResponseTypeBPEOSeedDataSource | — |
+| USE_AS_DEFAULT | ResponseTypeBPEOUseAsDefault | — |
+| VIEW_ID | ResponseTypeBPEOViewId | — |
 
 ---
 

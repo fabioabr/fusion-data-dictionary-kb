@@ -100,6 +100,133 @@ SELECT th.TRANSACTION_HISTORY_ID,
 - `POSTABLE_FLAG = 'Y'` indica que o evento gerou (ou deve gerar) lançamento contábil no GL.
 - Filtrar sempre por `ORG_ID` para garantir contexto correto de business unit.
 
+## 🔗 PVOs Relacionados
+
+### [[transactionhistoryallextractpvo|TransactionHistoryAllExtractPVO]] (OTHER · BICC: 42/42)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ATTRIBUTE1 | TransactionHistoryAllAttribute1 | ✅ |
+| ATTRIBUTE10 | TransactionHistoryAllAttribute10 | ✅ |
+| ATTRIBUTE11 | TransactionHistoryAllAttribute11 | ✅ |
+| ATTRIBUTE12 | TransactionHistoryAllAttribute12 | ✅ |
+| ATTRIBUTE13 | TransactionHistoryAllAttribute13 | ✅ |
+| ATTRIBUTE14 | TransactionHistoryAllAttribute14 | ✅ |
+| ATTRIBUTE15 | TransactionHistoryAllAttribute15 | ✅ |
+| ATTRIBUTE2 | TransactionHistoryAllAttribute2 | ✅ |
+| ATTRIBUTE3 | TransactionHistoryAllAttribute3 | ✅ |
+| ATTRIBUTE4 | TransactionHistoryAllAttribute4 | ✅ |
+| ATTRIBUTE5 | TransactionHistoryAllAttribute5 | ✅ |
+| ATTRIBUTE6 | TransactionHistoryAllAttribute6 | ✅ |
+| ATTRIBUTE7 | TransactionHistoryAllAttribute7 | ✅ |
+| ATTRIBUTE8 | TransactionHistoryAllAttribute8 | ✅ |
+| ATTRIBUTE9 | TransactionHistoryAllAttribute9 | ✅ |
+| ATTRIBUTE_CATEGORY | TransactionHistoryAllAttributeCategory | ✅ |
+| BATCH_ID | TransactionHistoryAllBatchId | ✅ |
+| COMMENTS | TransactionHistoryAllComments | ✅ |
+| CREATED_BY | TransactionHistoryAllCreatedBy | ✅ |
+| CREATED_FROM | TransactionHistoryAllCreatedFrom | ✅ |
+| CREATION_DATE | TransactionHistoryAllCreationDate | ✅ |
+| CURRENT_ACCOUNTED_FLAG | TransactionHistoryAllCurrentAccountedFlag | ✅ |
+| CURRENT_RECORD_FLAG | TransactionHistoryAllCurrentRecordFlag | ✅ |
+| CUSTOMER_TRX_ID | TransactionHistoryAllCustomerTrxId | ✅ |
+| EVENT | TransactionHistoryAllEvent | ✅ |
+| EVENT_ID | TransactionHistoryAllEventId | ✅ |
+| FIRST_POSTED_RECORD_FLAG | TransactionHistoryAllFirstPostedRecordFlag | ✅ |
+| GL_DATE | TransactionHistoryAllGlDate | ✅ |
+| GL_POSTED_DATE | TransactionHistoryAllGlPostedDate | ✅ |
+| LAST_UPDATE_DATE | TransactionHistoryAllLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | TransactionHistoryAllLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | TransactionHistoryAllLastUpdatedBy | ✅ |
+| MATURITY_DATE | TransactionHistoryAllMaturityDate | ✅ |
+| OBJECT_VERSION_NUMBER | TransactionHistoryAllObjectVersionNumber | ✅ |
+| ORG_ID | TransactionHistoryAllOrgId | ✅ |
+| POSTABLE_FLAG | TransactionHistoryAllPostableFlag | ✅ |
+| POSTING_CONTROL_ID | TransactionHistoryAllPostingControlId | ✅ |
+| PRV_TRX_HISTORY_ID | TransactionHistoryAllPrvTrxHistoryId | ✅ |
+| REQUEST_ID | TransactionHistoryAllRequestId | ✅ |
+| STATUS | TransactionHistoryAllStatus | ✅ |
+| TRANSACTION_HISTORY_ID | TransactionHistoryAllTransactionHistoryId | ✅ |
+| TRX_DATE | TransactionHistoryAllTrxDate | ✅ |
+
+### [[transactionhistorydistributionpvo|TransactionHistoryDistributionPVO]] (AR · BICC: 15/33)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ATTRIBUTE_CATEGORY | TransactionHistoryAttributeCategory | — |
+| BATCH_ID | TransactionHistoryBatchId | — |
+| COMMENTS | TransactionHistoryComments | ✅ |
+| CREATED_BY | TransactionHistoryCreatedBy | ✅ |
+| CREATED_FROM | TransactionHistoryCreatedFrom | — |
+| CREATION_DATE | TransactionHistoryCreationDate | ✅ |
+| CURRENT_ACCOUNTED_FLAG | TransactionHistoryCurrentAccountedFlag | ✅ |
+| CURRENT_RECORD_FLAG | TransactionHistoryCurrentRecordFlag | ✅ |
+| CUSTOMER_TRX_ID | TransactionHistoryCustomerTrxId | — |
+| EVENT | TransactionHistoryEvent | ✅ |
+| EVENT_ID | TransactionHistoryEventId | — |
+| FIRST_POSTED_RECORD_FLAG | TransactionHistoryFirstPostedRecordFlag | — |
+| GL_DATE | TransactionHistoryGlDate | ✅ |
+| GL_POSTED_DATE | TransactionHistoryGlPostedDate | ✅ |
+| LAST_UPDATE_DATE | TransactionHistoryLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | TransactionHistoryLastUpdateLogin | — |
+| LAST_UPDATED_BY | TransactionHistoryLastUpdatedBy | ✅ |
+| MATURITY_DATE | TransactionHistoryMaturityDate | ✅ |
+| MRC_CREATED_FROM | TransactionHistoryMrcCreatedFrom | — |
+| MRC_GL_POSTED_DATE | TransactionHistoryMrcGlPostedDate | — |
+| MRC_POSTING_CONTROL_ID | TransactionHistoryMrcPostingControlId | — |
+| OBJECT_VERSION_NUMBER | TransactionHistoryObjectVersionNumber | — |
+| ORG_ID | OrgId | — |
+| POSTABLE_FLAG | TransactionHistoryPostableFlag | ✅ |
+| POSTING_CONTROL_ID | TransactionHistoryPostingControlId | ✅ |
+| PROGRAM_APPLICATION_ID | TransactionHistoryProgramApplicationId | — |
+| PROGRAM_ID | TransactionHistoryProgramId | — |
+| PROGRAM_UPDATE_DATE | TransactionHistoryProgramUpdateDate | — |
+| PRV_TRX_HISTORY_ID | TransactionHistoryPrvTrxHistoryId | — |
+| REQUEST_ID | TransactionHistoryRequestId | — |
+| STATUS | TransactionHistoryStatus | ✅ |
+| TRANSACTION_HISTORY_ID | TransactionHistoryTransactionHistoryId | — |
+| TRX_DATE | TransactionHistoryTrxDate | ✅ |
+
+### [[transactionhistorypvo|TransactionHistoryPVO]] (AR · BICC: 15/33)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ATTRIBUTE_CATEGORY | TransactionHistoryAttributeCategory | — |
+| BATCH_ID | TransactionHistoryBatchId | — |
+| COMMENTS | TransactionHistoryComments | — |
+| CREATED_BY | TransactionHistoryCreatedBy | ✅ |
+| CREATED_FROM | TransactionHistoryCreatedFrom | — |
+| CREATION_DATE | TransactionHistoryCreationDate | ✅ |
+| CURRENT_ACCOUNTED_FLAG | TransactionHistoryCurrentAccountedFlag | ✅ |
+| CURRENT_RECORD_FLAG | TransactionHistoryCurrentRecordFlag | ✅ |
+| CUSTOMER_TRX_ID | TransactionHistoryCustomerTrxId | — |
+| EVENT | TransactionHistoryEvent | ✅ |
+| EVENT_ID | TransactionHistoryEventId | — |
+| FIRST_POSTED_RECORD_FLAG | TransactionHistoryFirstPostedRecordFlag | — |
+| GL_DATE | TransactionHistoryGlDate | ✅ |
+| GL_POSTED_DATE | TransactionHistoryGlPostedDate | ✅ |
+| LAST_UPDATE_DATE | TransactionHistoryLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | TransactionHistoryLastUpdateLogin | — |
+| LAST_UPDATED_BY | TransactionHistoryLastUpdatedBy | ✅ |
+| MATURITY_DATE | TransactionHistoryMaturityDate | ✅ |
+| MRC_CREATED_FROM | TransactionHistoryMrcCreatedFrom | — |
+| MRC_GL_POSTED_DATE | TransactionHistoryMrcGlPostedDate | — |
+| MRC_POSTING_CONTROL_ID | TransactionHistoryMrcPostingControlId | — |
+| OBJECT_VERSION_NUMBER | TransactionHistoryObjectVersionNumber | — |
+| ORG_ID | TransactionHistoryOrgId | — |
+| POSTABLE_FLAG | TransactionHistoryPostableFlag | ✅ |
+| POSTING_CONTROL_ID | TransactionHistoryPostingControlId | ✅ |
+| PROGRAM_APPLICATION_ID | TransactionHistoryProgramApplicationId | — |
+| PROGRAM_ID | TransactionHistoryProgramId | — |
+| PROGRAM_UPDATE_DATE | TransactionHistoryProgramUpdateDate | — |
+| PRV_TRX_HISTORY_ID | TransactionHistoryPrvTrxHistoryId | — |
+| REQUEST_ID | TransactionHistoryRequestId | — |
+| STATUS | TransactionHistoryStatus | ✅ |
+| TRANSACTION_HISTORY_ID | TransactionHistoryId | ✅ |
+| TRX_DATE | TransactionHistoryTrxDate | ✅ |
+
+---
+
 ## 📚 Referências
 
 - Oracle Fusion Cloud Financials — Accounts Receivable Tables (OEDMF Release 13).

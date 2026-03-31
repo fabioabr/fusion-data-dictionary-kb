@@ -103,3 +103,34 @@ WHERE  cr.CMT_LAUNCH_ID = :p_launch_id;
 
 - [Oracle Docs -- IRC_CMT_RECIPIENTS](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/irccmtrecipients.html)
 - [[hcm-module-data-dictionary]] -- Dossie do modulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[campmsgrecipientpvo|CampMsgRecipientPVO]] (HCM · BICC: 3/22)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ADDRESS | CampMsgRecipientPEOAddress | — |
+| ADDRESS_ID | CampMsgRecipientPEOAddressId | — |
+| CREATED_BY | CampMsgRecipientPEOCreatedBy | — |
+| CREATION_DATE | CampMsgRecipientPEOCreationDate | — |
+| DELIVERY_TYPE_CODE | CampMsgRecipientPEODeliveryTypeCode | — |
+| LAST_UPDATE_DATE | CampMsgRecipientPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | CampMsgRecipientPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | CampMsgRecipientPEOLastUpdatedBy | — |
+| LAUNCH_ID | CampMsgRecipientPEOLaunchId | — |
+| MSG_BOUNCE_REASON | CampMsgRecipientPEOMsgBounceReason | — |
+| MSG_BOUNCE_TS | CampMsgRecipientPEOMsgBounceTs | — |
+| MSG_BOUNCE_TYPE_CODE | CampMsgRecipientPEOMsgBounceTypeCode | — |
+| MSG_DELIVERY_TS | CampMsgRecipientPEOMsgDeliveryTs | — |
+| MSG_OPEN_TS | CampMsgRecipientPEOMsgOpenTs | — |
+| MSG_RETRY_COUNT | CampMsgRecipientPEOMsgRetryCount | — |
+| MSG_SENT_TS | CampMsgRecipientPEOMsgSentTs | — |
+| MSG_STATUS_CODE | CampMsgRecipientPEOMsgStatusCode | ✅ |
+| MSG_UNSENT_TYPE_CODE | CampMsgRecipientPEOMsgUnsentTypeCode | — |
+| OBJECT_VERSION_NUMBER | CampMsgRecipientPEOObjectVersionNumber | — |
+| PERSON_ID | CampMsgRecipientPEOPersonId | — |
+| RECIPIENT_ID | CampMsgRecipientPEORecipientId | ✅ |
+| UMS_MSG_ID | CampMsgRecipientPEOUmsMsgId | — |

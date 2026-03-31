@@ -129,3 +129,29 @@ ORDER BY v.QUESTION_ID, v.SUPPLIER_NAME;
 
 - [Oracle Docs — POQ_ALL_QNAIRE_RESP_VALUES_V](https://docs.oracle.com/en/cloud/saas/procurement/25a/oedmf/poqallqnairerespvaluesv.html)
 - [[po-module-data-dictionary]] — Dossiê do módulo Procurement
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[questionnaireresponsevaluespvo|QuestionnaireResponseValuesPVO]] (PO · BICC: 17/17)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACC_RESPONSE_ID | QuestionnaireResponseValueAccResponseId | ✅ |
+| BC_RESPONSE_TEXT | QuestionnaireResponseValueBcResponseText | ✅ |
+| CREATED_BY | QuestionnaireResponseValueCreatedBy | ✅ |
+| CREATION_DATE | QuestionnaireResponseValueCreationDate | ✅ |
+| IS_SELECTED_FLAG | QuestionnaireResponseValueIsSelectedFlag | ✅ |
+| LAST_UPDATE_DATE | QuestionnaireResponseValueLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | QuestionnaireResponseValueLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | QuestionnaireResponseValueLastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | QuestionnaireResponseValueObjectVersionNumber | ✅ |
+| QUESTNAIRE_ACC_RESPONSE_ID | QuestionnaireResponseValueQuestnaireAccResponseId | ✅ |
+| QUESTNAIRE_RESP_VALUE_ID | QuestnaireRespValueId | ✅ |
+| QUESTNAIRE_RESPONSE_ID | QuestionnaireResponseValueQuestnaireResponseId | ✅ |
+| RESPONSE_VALIDATE | QuestionnaireResponseValueResponseValidate | ✅ |
+| RESPONSE_VALUE_DATE | QuestionnaireResponseValueResponseValueDate | ✅ |
+| RESPONSE_VALUE_DATETIME | QuestionnaireResponseValueResponseValueDatetime | ✅ |
+| RESPONSE_VALUE_NUM | QuestionnaireResponseValueResponseValueNum | ✅ |
+| RESPONSE_VALUE_TXT | QuestionnaireResponseValueResponseValueTxt | ✅ |

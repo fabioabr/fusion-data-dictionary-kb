@@ -129,3 +129,27 @@ ORDER BY v.EXPIRATION_DATE;
 
 - [Oracle Docs — POQ_ALL_RESP_REPOS_VALUES_V](https://docs.oracle.com/en/cloud/saas/procurement/25a/oedmf/poqallrespreposvaluesv.html)
 - [[po-module-data-dictionary]] — Dossiê do módulo Procurement
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[responserepositoryvaluespvo|ResponseRepositoryValuesPVO]] (PO · BICC: 14/15)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACC_RESPONSE_ID | RespRepositoryValueAccResponseId | ✅ |
+| ACC_RESPONSE_TEXT | RespRepositoryValueAccResponseText | ✅ |
+| CREATED_BY | RespRepositoryValueCreatedBy | ✅ |
+| CREATION_DATE | RespRepositoryValueCreationDate | ✅ |
+| CRITICAL_RESPONSE_FLAG | CriticalResponseFlag | — |
+| LAST_UPDATE_DATE | RespRepositoryValueLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | RespRepositoryValueLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | RespRepositoryValueLastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | RespRepositoryValueObjectVersionNumber | ✅ |
+| RESP_REPOSITORY_VALUE_ID | RespRepositoryValueId | ✅ |
+| RESPONSE_REPOSITORY_ID | RespRepositoryValueResponseRepositoryId | ✅ |
+| RESPONSE_VALUE_DATE | RespRepositoryValueResponseValueDate | ✅ |
+| RESPONSE_VALUE_DATETIME | RespRepositoryValueResponseValueDatetime | ✅ |
+| RESPONSE_VALUE_NUM | RespRepositoryValueResponseValueNum | ✅ |
+| RESPONSE_VALUE_TXT | RespRepositoryValueResponseValueTxt | ✅ |

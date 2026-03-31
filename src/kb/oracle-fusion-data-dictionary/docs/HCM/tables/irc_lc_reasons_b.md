@@ -101,3 +101,15 @@ SELECT r.REASON_CODE FROM IRC_LC_REASONS_B r WHERE r.STATUS = 'ACTIVE';
 
 - [Oracle Docs -- IRC_LC_REASONS_B](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/irclcreasonsb.html)
 - [[hcm-module-data-dictionary]] -- Dossie do modulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[jobapphisteventpvo|JobAppHistEventPVO]] (HCM · BICC: 2/3)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| REASON_CODE | ReasonsBPEOReasonCode | ✅ |
+| REASON_ID | ReasonsBPEOReasonId | — |
+| REASON_STATUS_CODE | ReasonsBPEOReasonStatusCode | ✅ |

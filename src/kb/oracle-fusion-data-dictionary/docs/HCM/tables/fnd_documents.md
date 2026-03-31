@@ -71,3 +71,54 @@ updated_at: 2026-03-26
 ## 📎 Uso Típico
 
 (a ser preenchido na etapa 03)
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[attacheddocumentspvo|AttachedDocumentsPVO]] (OTHER · BICC: 16/16)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BASE_DOCUMENT_ID | BaseDocumentId | ✅ |
+| CREATED_BY | CreatedBy2 | ✅ |
+| CREATION_DATE | CreationDate2 | ✅ |
+| DATATYPE_CODE | DatatypeCode | ✅ |
+| DOCUMENT_ATTRIBUTES | DocumentAttributes | ✅ |
+| DOCUMENT_ID | DocumentId1 | ✅ |
+| END_DATE_ACTIVE | EndDateActive | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate2 | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin2 | ✅ |
+| LAST_UPDATED_BY | LastUpdatedBy2 | ✅ |
+| PROGRAM_APPLICATION_ID | ProgramApplicationId1 | ✅ |
+| PROGRAM_ID | ProgramId1 | ✅ |
+| PROGRAM_UPDATE_DATE | ProgramUpdateDate1 | ✅ |
+| REQUEST_ID | RequestId1 | ✅ |
+| START_DATE_ACTIVE | StartDateActive | ✅ |
+| USAGE_TYPE | UsageType | ✅ |
+
+### [[fnddocumentextractpvo|FndDocumentExtractPVO]] (HCM · BICC: 21/21)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BASE_DOCUMENT_ID | BaseDocumentId | ✅ |
+| CREATED_BY | CreatedBy | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| DATATYPE_CODE | DatatypeCode | ✅ |
+| DOCUMENT_ATTRIBUTES | DocumentAttributes | ✅ |
+| DOCUMENT_ID | DocumentId | ✅ |
+| END_DATE_ACTIVE | EndDateActive | ✅ |
+| ENTERPRISE_ID | EnterpriseId | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | LastUpdatedBy | ✅ |
+| POST_PROCESSING_CLASS | PostProcessingClass | ✅ |
+| POST_PROCESSING_MESSAGE | PostProcessingMessage | ✅ |
+| POST_PROCESSING_PARAMETERS | PostProcessingParameters | ✅ |
+| POST_PROCESSING_STATUS | PostProcessingStatus | ✅ |
+| PROGRAM_APPLICATION_ID | ProgramApplicationId | ✅ |
+| PROGRAM_ID | ProgramId | ✅ |
+| PROGRAM_UPDATE_DATE | ProgramUpdateDate | ✅ |
+| REQUEST_ID | RequestId | ✅ |
+| START_DATE_ACTIVE | StartDateActive | ✅ |
+| USAGE_TYPE | UsageType | ✅ |

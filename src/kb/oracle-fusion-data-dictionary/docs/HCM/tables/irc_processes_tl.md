@@ -100,3 +100,59 @@ SELECT tl.PROCESS_NAME FROM IRC_PROCESSES_TL tl WHERE tl.LANGUAGE = 'PT';
 
 - [Oracle Docs -- IRC_PROCESSES_TL](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/ircprocessestl.html)
 - [[hcm-module-data-dictionary]] -- Dossie do modulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[candidateselectprocesspvo|CandidateSelectProcessPVO]] (HCM · BICC: 5/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | CreatedBy1 | — |
+| CREATION_DATE | CreationDate1 | — |
+| DESCRIPTION | Description | ✅ |
+| LANGUAGE | Language1 | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate1 | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin1 | — |
+| LAST_UPDATED_BY | LastUpdatedBy1 | — |
+| NAME | Name | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber1 | — |
+| PROCESS_ID | ProcessId1 | ✅ |
+| SEED_DATA_SOURCE | SeedDataSource1 | — |
+| SOURCE_LANG | SourceLang1 | — |
+
+### [[jobapphisteventpvo|JobAppHistEventPVO]] (HCM)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| LANGUAGE | ProcessTranslationPEOLanguage | — |
+| NAME | ProcessTranslationPEOName | — |
+| PROCESS_ID | ProcessTranslationPEOProcessId | — |
+
+### [[poolmgmtprocesspvo|PoolMgmtProcessPVO]] (HCM · BICC: 2/5)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| DESCRIPTION | ProcessTranslationPEODescription | ✅ |
+| LANGUAGE | ProcessTranslationPEOLanguage | — |
+| NAME | ProcessTranslationPEOName | ✅ |
+| PROCESS_ID | ProcessTranslationPEOProcessId | — |
+| SOURCE_LANG | ProcessTranslationPEOSourceLang | — |
+
+### [[processpvo|ProcessPVO]] (HCM · BICC: 3/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | CreatedBy1 | — |
+| CREATION_DATE | CreationDate1 | — |
+| DESCRIPTION | Description | ✅ |
+| LANGUAGE | Language1 | — |
+| LAST_UPDATE_DATE | LastUpdateDate1 | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin1 | — |
+| LAST_UPDATED_BY | LastUpdatedBy1 | — |
+| NAME | Name | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber1 | — |
+| PROCESS_ID | ProcessId1 | — |
+| SEED_DATA_SOURCE | SeedDataSource1 | — |
+| SOURCE_LANG | SourceLang1 | — |

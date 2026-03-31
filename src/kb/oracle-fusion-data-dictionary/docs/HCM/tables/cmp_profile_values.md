@@ -119,6 +119,45 @@ WHERE  pv.PERSON_ID = :p_person_id
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[stockdetailspvo|StockDetailsPVO]] (HCM · BICC: 2/30)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | CompProfileEOBusinessGroupId1 | — |
+| CREATED_BY | CompProfileEOCreatedBy1 | — |
+| CREATION_DATE | CompProfileEOCreationDate1 | — |
+| ENABLE_MODELING_FLAG | CompProfileEOEnableModelingFlag | — |
+| EST_STOCK_PRICE | CompProfileEOEstStockPrice | ✅ |
+| EST_STOCK_PRICE_CURRENCY_CD | CompProfileEOEstStockPriceCurrencyCd | — |
+| LAST_UPDATE_DATE | CompProfileEOLastUpdateDate1 | ✅ |
+| LAST_UPDATE_LOGIN | CompProfileEOLastUpdateLogin1 | — |
+| LAST_UPDATED_BY | CompProfileEOLastUpdatedBy1 | — |
+| MAX_STATEMENT_PERIODS | CompProfileEOMaxStatementPeriods | — |
+| MAX_SWITCH_MANAGERS | CompProfileEOMaxSwitchManagers | — |
+| NOTIFY_BUDGET_PUBLISH | CompProfileEONotifyBudgetPublish | — |
+| NOTIFY_CHANGE_ACCESS | CompProfileEONotifyChangeAccess | — |
+| NOTIFY_CHANGE_ELIG | CompProfileEONotifyChangeElig | — |
+| NOTIFY_FINAL_APPROVAL | CompProfileEONotifyFinalApproval | — |
+| NOTIFY_MANAGER_APPROVAL | CompProfileEONotifyManagerApproval | — |
+| NOTIFY_MANAGER_OVERRIDE | CompProfileEONotifyManagerOverride | — |
+| NOTIFY_REASSIGN | CompProfileEONotifyReassign | — |
+| NOTIFY_WORK_RECALL | CompProfileEONotifyWorkRecall | — |
+| NOTIFY_WORK_REJECT | CompProfileEONotifyWorkReject | — |
+| NOTIFY_WORK_SUBMIT | CompProfileEONotifyWorkSubmit | — |
+| OBJECT_VERSION_NUMBER | CompProfileEOObjectVersionNumber1 | — |
+| WATCH_BUDGET_PUBLISH_DAYS | CompProfileEOWatchBudgetPublishDays | — |
+| WATCH_BUDGET_PUBLISH_FLAG | CompProfileEOWatchBudgetPublishFlag | — |
+| WATCH_NEW_PLANS_DAYS | CompProfileEOWatchNewPlansDays | — |
+| WATCH_NEW_PLANS_FLAG | CompProfileEOWatchNewPlansFlag | — |
+| WATCH_NUM_PLANS_FLAG | CompProfileEOWatchNumPlansFlag | — |
+| WATCH_NUM_POOLS_FLAG | CompProfileEOWatchNumPoolsFlag | — |
+| WATCH_STATEMENT_DAYS | CompProfileEOWatchStatementDays | — |
+| WATCH_STATEMENT_FLAG | CompProfileEOWatchStatementFlag | — |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — CMP_PROFILE_VALUES](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/cmpprofilevalues.html)

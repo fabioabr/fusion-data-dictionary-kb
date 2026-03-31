@@ -107,6 +107,30 @@ WHERE  v.ENTRY_DATE BETWEEN :dt_ini AND :dt_fim;
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[historicrptabstimerecordpvo|HistoricRptAbsTimeRecordPVO]] (HCM · BICC: 9/15)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| DAY_TM_REC_GRP_ID | DayTmRecGrpId | — |
+| DAY_TM_REC_GRP_VERSION | DayTmRecGrpVersion | — |
+| GROUP_TYPE_ID | GroupTypeId | — |
+| HISTORIC_CHANGE_DATE_FROM | HistoricChangeDateFrom | ✅ |
+| HISTORIC_CHANGE_DATE_TO | HistoricChangeDateTo | ✅ |
+| HISTORIC_CHANGE_TIME | HistoricChangeTime | ✅ |
+| TC_APPROVED_TIMESTAMP | TcApprovedTimestamp | ✅ |
+| TC_SUBMITTED_TIMESTAMP | TcSubmittedTimestamp | ✅ |
+| TC_UI_STATUS_VALUE | TcUiStatusValue | ✅ |
+| TC_USER_STATUS_VALUE | TcUserStatusValue | ✅ |
+| TIME_CARD_TM_REC_GRP_ID | TimeCardTmRecGrpId | — |
+| TIME_CARD_TM_REC_GRP_VERSION | TimeCardTmRecGrpVersion | — |
+| TIME_RECORD_ID | TimeRecordId | ✅ |
+| TIME_RECORD_LAYER_CODE | TimeRecordLayerCode | — |
+| TIME_RECORD_VERSION | TimeRecordVersion | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — HWM_TM_HIS_RPT_ENTRY_V](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/hwmtmhisrptentryv.html)

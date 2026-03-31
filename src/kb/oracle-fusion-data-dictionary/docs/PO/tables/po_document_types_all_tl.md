@@ -41,7 +41,6 @@ Armazena as **traducoes dos tipos de documento de compras** definidos em `PO_DOC
 > [!note] Sufixo _TL
 > O sufixo `_TL` indica a **tabela de traducoes**. Contem versoes traduzidas dos campos descritivos da tabela `_B` correspondente.
 
-
 ---
 
 ## 🧠 Propósito de Negócio
@@ -95,13 +94,72 @@ FROM   PO_DOCUMENT_TYPES_ALL_TL
 WHERE  ORG_ID = :p_org_id AND LANGUAGE = 'PTB';
 ```
 
-
 ---
 
 ## 🔒 Observações
 
 - Uma linha por idioma instalado.
 - Usada pela view `PO_DOCUMENT_TYPES_VL`.
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[purchasingdocumenttypebextractpvo|PurchasingDocumentTypeBExtractPVO]] (PO · BICC: 6/6)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| DOCUMENT_SUBTYPE | PODocumentTypeTransDocumentSubtype | ✅ |
+| DOCUMENT_TYPE_CODE | PODocumentTypeTransDocumentTypeCode | ✅ |
+| LANGUAGE | PODocumentTypeTransLanguage | ✅ |
+| PRC_BU_ID | PODocumentTypeTransPrcBuId | ✅ |
+| SOURCE_LANG | PODocumentTypeTransSourceLang | ✅ |
+| TYPE_NAME | PODocumentTypeTransTypeName | ✅ |
+
+### [[purchasingdocumenttypebp|PurchasingDocumentTypeBP]] (PO · BICC: 3/6)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| DOCUMENT_SUBTYPE | PODocumentTypeTransDocumentSubtype | ✅ |
+| DOCUMENT_TYPE_CODE | PODocumentTypeTransDocumentTypeCode | ✅ |
+| LANGUAGE | PODocumentTypeTransLanguage | ✅ |
+| PRC_BU_ID | PODocumentTypeTransPrcBuId | — |
+| SOURCE_LANG | PODocumentTypeTransSourceLang | — |
+| TYPE_NAME | PODocumentTypeTransTypeName | — |
+
+### [[purchasingdocumenttypetranslationextractpvo|PurchasingDocumentTypeTranslationExtractPVO]] (PO · BICC: 12/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | PODocumentTypeTransCreatedBy | ✅ |
+| CREATION_DATE | PODocumentTypeTransCreationDate | ✅ |
+| DOCUMENT_SUBTYPE | DocumentSubtype | ✅ |
+| DOCUMENT_TYPE_CODE | DocumentTypeCode | ✅ |
+| LANGUAGE | Language | ✅ |
+| LAST_UPDATE_DATE | PODocumentTypeTransLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | PODocumentTypeTransLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | PODocumentTypeTransLastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | PODocumentTypeTransObjectVersionNumber | ✅ |
+| PRC_BU_ID | PrcBuId | ✅ |
+| SOURCE_LANG | PODocumentTypeTransSourceLang | ✅ |
+| TYPE_NAME | PODocumentTypeTransTypeName | ✅ |
+
+### [[purchasingdocumenttypetranslationp|PurchasingDocumentTypeTranslationP]] (PO · BICC: 5/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | PODocumentTypeTransCreatedBy | — |
+| CREATION_DATE | PODocumentTypeTransCreationDate | — |
+| DOCUMENT_SUBTYPE | DocumentSubtype | ✅ |
+| DOCUMENT_TYPE_CODE | DocumentTypeCode | ✅ |
+| LANGUAGE | Language | ✅ |
+| LAST_UPDATE_DATE | PODocumentTypeTransLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | PODocumentTypeTransLastUpdateLogin | — |
+| LAST_UPDATED_BY | PODocumentTypeTransLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | PODocumentTypeTransObjectVersionNumber | — |
+| PRC_BU_ID | PrcBuId | ✅ |
+| SOURCE_LANG | PODocumentTypeTransSourceLang | — |
+| TYPE_NAME | PODocumentTypeTransTypeName | — |
 
 ---
 

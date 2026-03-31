@@ -162,6 +162,194 @@ ORDER BY jl.EFFECTIVE_DATE, jl.JE_HEADER_ID;
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[journallineextractpvo|JournalLineExtractPVO]] (GL · BICC: 2/115)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACCOUNTED_CR | GlJeLinesAccountedCr | — |
+| ACCOUNTED_DR | GlJeLinesAccountedDr | — |
+| AMOUNT_INCLUDES_TAX_FLAG | GlJeLinesAmountIncludesTaxFlag | — |
+| ATTRIBUTE1 | GlJeLinesAttribute1 | — |
+| ATTRIBUTE10 | GlJeLinesAttribute10 | — |
+| ATTRIBUTE11 | GlJeLinesAttribute11 | — |
+| ATTRIBUTE12 | GlJeLinesAttribute12 | — |
+| ATTRIBUTE13 | GlJeLinesAttribute13 | — |
+| ATTRIBUTE14 | GlJeLinesAttribute14 | — |
+| ATTRIBUTE15 | GlJeLinesAttribute15 | — |
+| ATTRIBUTE16 | GlJeLinesAttribute16 | — |
+| ATTRIBUTE17 | GlJeLinesAttribute17 | — |
+| ATTRIBUTE18 | GlJeLinesAttribute18 | — |
+| ATTRIBUTE19 | GlJeLinesAttribute19 | — |
+| ATTRIBUTE2 | GlJeLinesAttribute2 | — |
+| ATTRIBUTE20 | GlJeLinesAttribute20 | — |
+| ATTRIBUTE3 | GlJeLinesAttribute3 | — |
+| ATTRIBUTE4 | GlJeLinesAttribute4 | — |
+| ATTRIBUTE5 | GlJeLinesAttribute5 | — |
+| ATTRIBUTE6 | GlJeLinesAttribute6 | — |
+| ATTRIBUTE7 | GlJeLinesAttribute7 | — |
+| ATTRIBUTE8 | GlJeLinesAttribute8 | — |
+| ATTRIBUTE9 | GlJeLinesAttribute9 | — |
+| ATTRIBUTE_CATEGORY | GlJeLinesAttributeCategory | — |
+| ATTRIBUTE_CATEGORY2 | GlJeLinesAttributeCategory2 | — |
+| ATTRIBUTE_CATEGORY3 | GlJeLinesAttributeCategory3 | — |
+| ATTRIBUTE_CATEGORY4 | GlJeLinesAttributeCategory4 | — |
+| CO_PROCESSED_FLAG | GlJeLinesCoProcessedFlag | — |
+| CO_THIRD_PARTY | GlJeLinesCoThirdParty | — |
+| CODE_COMBINATION_ID | GlJeLinesCodeCombinationId | — |
+| CREATED_BY | GlJeLinesCreatedBy | — |
+| CREATION_DATE | GlJeLinesCreationDate | — |
+| CURRENCY_CODE | GlJeLinesCurrencyCode | — |
+| CURRENCY_CONVERSION_DATE | GlJeLinesCurrencyConversionDate | — |
+| CURRENCY_CONVERSION_RATE | GlJeLinesCurrencyConversionRate | — |
+| CURRENCY_CONVERSION_TYPE | GlJeLinesCurrencyConversionType | — |
+| DESCRIPTION | GlJeLinesDescription | — |
+| EFFECTIVE_DATE | GlJeLinesEffectiveDate | — |
+| ENTERED_CR | GlJeLinesEnteredCr | — |
+| ENTERED_DR | GlJeLinesEnteredDr | — |
+| GL_SL_LINK_ID | GlJeLinesGlSlLinkId | — |
+| GL_SL_LINK_TABLE | GlJeLinesGlSlLinkTable | — |
+| GLOBAL_ATTRIBUTE1 | GlJeLinesGlobalAttribute1 | — |
+| GLOBAL_ATTRIBUTE10 | GlJeLinesGlobalAttribute10 | — |
+| GLOBAL_ATTRIBUTE11 | GlJeLinesGlobalAttribute11 | — |
+| GLOBAL_ATTRIBUTE12 | GlJeLinesGlobalAttribute12 | — |
+| GLOBAL_ATTRIBUTE13 | GlJeLinesGlobalAttribute13 | — |
+| GLOBAL_ATTRIBUTE14 | GlJeLinesGlobalAttribute14 | — |
+| GLOBAL_ATTRIBUTE15 | GlJeLinesGlobalAttribute15 | — |
+| GLOBAL_ATTRIBUTE16 | GlJeLinesGlobalAttribute16 | — |
+| GLOBAL_ATTRIBUTE17 | GlJeLinesGlobalAttribute17 | — |
+| GLOBAL_ATTRIBUTE18 | GlJeLinesGlobalAttribute18 | — |
+| GLOBAL_ATTRIBUTE19 | GlJeLinesGlobalAttribute19 | — |
+| GLOBAL_ATTRIBUTE2 | GlJeLinesGlobalAttribute2 | — |
+| GLOBAL_ATTRIBUTE20 | GlJeLinesGlobalAttribute20 | — |
+| GLOBAL_ATTRIBUTE3 | GlJeLinesGlobalAttribute3 | — |
+| GLOBAL_ATTRIBUTE4 | GlJeLinesGlobalAttribute4 | — |
+| GLOBAL_ATTRIBUTE5 | GlJeLinesGlobalAttribute5 | — |
+| GLOBAL_ATTRIBUTE6 | GlJeLinesGlobalAttribute6 | — |
+| GLOBAL_ATTRIBUTE7 | GlJeLinesGlobalAttribute7 | — |
+| GLOBAL_ATTRIBUTE8 | GlJeLinesGlobalAttribute8 | — |
+| GLOBAL_ATTRIBUTE9 | GlJeLinesGlobalAttribute9 | — |
+| GLOBAL_ATTRIBUTE_CATEGORY | GlJeLinesGlobalAttributeCategory | — |
+| GLOBAL_ATTRIBUTE_DATE1 | GlJeLinesGlobalAttributeDate1 | — |
+| GLOBAL_ATTRIBUTE_DATE2 | GlJeLinesGlobalAttributeDate2 | — |
+| GLOBAL_ATTRIBUTE_DATE3 | GlJeLinesGlobalAttributeDate3 | — |
+| GLOBAL_ATTRIBUTE_DATE4 | GlJeLinesGlobalAttributeDate4 | — |
+| GLOBAL_ATTRIBUTE_DATE5 | GlJeLinesGlobalAttributeDate5 | — |
+| GLOBAL_ATTRIBUTE_NUMBER1 | GlJeLinesGlobalAttributeNumber1 | — |
+| GLOBAL_ATTRIBUTE_NUMBER2 | GlJeLinesGlobalAttributeNumber2 | — |
+| GLOBAL_ATTRIBUTE_NUMBER3 | GlJeLinesGlobalAttributeNumber3 | — |
+| GLOBAL_ATTRIBUTE_NUMBER4 | GlJeLinesGlobalAttributeNumber4 | — |
+| GLOBAL_ATTRIBUTE_NUMBER5 | GlJeLinesGlobalAttributeNumber5 | — |
+| IGNORE_RATE_FLAG | GlJeLinesIgnoreRateFlag | — |
+| INVOICE_AMOUNT | GlJeLinesInvoiceAmount | — |
+| INVOICE_DATE | GlJeLinesInvoiceDate | — |
+| INVOICE_IDENTIFIER | GlJeLinesInvoiceIdentifier | — |
+| JE_HEADER_ID | JeHeaderId | ✅ |
+| JE_LINE_NUM | JeLineNum | ✅ |
+| JGZZ_RECON_REF | GlJeLinesJgzzReconRef | — |
+| LAST_UPDATE_DATE | GlJeLinesLastUpdateDate | — |
+| LAST_UPDATE_LOGIN | GlJeLinesLastUpdateLogin | — |
+| LAST_UPDATED_BY | GlJeLinesLastUpdatedBy | — |
+| LEDGER_ID | GlJeLinesLedgerId | — |
+| LINE_TYPE_CODE | GlJeLinesLineTypeCode | — |
+| NO1 | GlJeLinesNo1 | — |
+| OBJECT_VERSION_NUMBER | GlJeLinesObjectVersionNumber | — |
+| PERIOD_NAME | GlJeLinesPeriodName | — |
+| REFERENCE_1 | GlJeLinesReference1 | — |
+| REFERENCE_10 | GlJeLinesReference10 | — |
+| REFERENCE_2 | GlJeLinesReference2 | — |
+| REFERENCE_3 | GlJeLinesReference3 | — |
+| REFERENCE_4 | GlJeLinesReference4 | — |
+| REFERENCE_5 | GlJeLinesReference5 | — |
+| REFERENCE_6 | GlJeLinesReference6 | — |
+| REFERENCE_7 | GlJeLinesReference7 | — |
+| REFERENCE_8 | GlJeLinesReference8 | — |
+| REFERENCE_9 | GlJeLinesReference9 | — |
+| STAT_AMOUNT | GlJeLinesStatAmount | — |
+| STATUS | GlJeLinesStatus | — |
+| SUBLEDGER_DOC_SEQUENCE_ID | GlJeLinesSubledgerDocSequenceId | — |
+| SUBLEDGER_DOC_SEQUENCE_VALUE | GlJeLinesSubledgerDocSequenceValue | — |
+| TAX_CODE | GlJeLinesTaxCode | — |
+| TAX_CODE_ID | GlJeLinesTaxCodeId | — |
+| TAX_CUSTOMER_NAME | GlJeLinesTaxCustomerName | — |
+| TAX_CUSTOMER_REFERENCE | GlJeLinesTaxCustomerReference | — |
+| TAX_DOCUMENT_DATE | GlJeLinesTaxDocumentDate | — |
+| TAX_DOCUMENT_IDENTIFIER | GlJeLinesTaxDocumentIdentifier | — |
+| TAX_GROUP_ID | GlJeLinesTaxGroupId | — |
+| TAX_LINE_FLAG | GlJeLinesTaxLineFlag | — |
+| TAX_REGISTRATION_NUMBER | GlJeLinesTaxRegistrationNumber | — |
+| TAX_ROUNDING_RULE_CODE | GlJeLinesTaxRoundingRuleCode | — |
+| TAX_TYPE_CODE | GlJeLinesTaxTypeCode | — |
+| TAXABLE_LINE_FLAG | GlJeLinesTaxableLineFlag | — |
+| USSGL_TRANSACTION_CODE | GlJeLinesUssglTransactionCode | — |
+
+### [[journallinepvo|JournalLinePVO]] (GL · BICC: 34/59)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACCOUNTED_CR | JrnlLineAccountedCr | ✅ |
+| ACCOUNTED_DR | JrnlLineAccountedDr | ✅ |
+| AMOUNT_INCLUDES_TAX_FLAG | JrnlLineAmountIncludesTaxFlag | — |
+| CO_PROCESSED_FLAG | JrnlLineCoProcessedFlag | — |
+| CO_THIRD_PARTY | JrnlLineCoThirdParty | — |
+| CODE_COMBINATION_ID | JrnlLineCodeCombinationId | ✅ |
+| CREATED_BY | JrnlLineCreatedBy | ✅ |
+| CREATION_DATE | JrnlLineCreationDate | ✅ |
+| CURRENCY_CODE | JrnlLineCurrencyCode | ✅ |
+| CURRENCY_CONVERSION_DATE | JrnlLineCurrencyConversionDate | ✅ |
+| CURRENCY_CONVERSION_RATE | JrnlLineCurrencyConversionRate | ✅ |
+| CURRENCY_CONVERSION_TYPE | JrnlLineCurrencyConversionType | ✅ |
+| DESCRIPTION | JrnlLineDescription | ✅ |
+| EFFECTIVE_DATE | JrnlLineEffectiveDate | ✅ |
+| ENTERED_CR | JrnlLineEnteredCr | ✅ |
+| ENTERED_DR | JrnlLineEnteredDr | ✅ |
+| GL_SL_LINK_ID | JrnlLineGlSlLinkId | ✅ |
+| GL_SL_LINK_TABLE | JrnlLineGlSlLinkTable | — |
+| IGNORE_RATE_FLAG | JrnlLineIgnoreRateFlag | — |
+| INVOICE_AMOUNT | JrnlLineInvoiceAmount | — |
+| INVOICE_DATE | JrnlLineInvoiceDate | — |
+| INVOICE_IDENTIFIER | JrnlLineInvoiceIdentifier | — |
+| JE_HEADER_ID | JeHeaderId | ✅ |
+| JE_LINE_NUM | JeLineNum | ✅ |
+| LAST_UPDATE_DATE | JrnlLineLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | JrnlLineLastUpdateLogin | — |
+| LAST_UPDATED_BY | JrnlLineLastUpdatedBy | ✅ |
+| LEDGER_ID | JrnlLineLedgerId | ✅ |
+| LINE_TYPE_CODE | JrnlLineLineTypeCode | ✅ |
+| NO1 | JrnlLineNo1 | — |
+| OBJECT_VERSION_NUMBER | JrnlLineObjectVersionNumber | — |
+| PERIOD_NAME | JrnlLinePeriodName | ✅ |
+| REFERENCE_1 | JrnlLineReference1 | ✅ |
+| REFERENCE_10 | JrnlLineReference10 | ✅ |
+| REFERENCE_2 | JrnlLineReference2 | ✅ |
+| REFERENCE_3 | JrnlLineReference3 | ✅ |
+| REFERENCE_4 | JrnlLineReference4 | ✅ |
+| REFERENCE_5 | JrnlLineReference5 | ✅ |
+| REFERENCE_6 | JrnlLineReference6 | ✅ |
+| REFERENCE_7 | JrnlLineReference7 | ✅ |
+| REFERENCE_8 | JrnlLineReference8 | ✅ |
+| REFERENCE_9 | JrnlLineReference9 | ✅ |
+| STAT_AMOUNT | JrnlLineStatAmount | ✅ |
+| STATUS | JrnlLineStatus | ✅ |
+| SUBLEDGER_DOC_SEQUENCE_ID | JrnlLineSubledgerDocSequenceId | — |
+| SUBLEDGER_DOC_SEQUENCE_VALUE | JrnlLineSubledgerDocSequenceValue | ✅ |
+| TAX_CODE | JrnlLineTaxCode | — |
+| TAX_CODE_ID | JrnlLineTaxCodeId | — |
+| TAX_CUSTOMER_NAME | JrnlLineTaxCustomerName | — |
+| TAX_CUSTOMER_REFERENCE | JrnlLineTaxCustomerReference | — |
+| TAX_DOCUMENT_DATE | JrnlLineTaxDocumentDate | — |
+| TAX_DOCUMENT_IDENTIFIER | JrnlLineTaxDocumentIdentifier | — |
+| TAX_GROUP_ID | JrnlLineTaxGroupId | — |
+| TAX_LINE_FLAG | JrnlLineTaxLineFlag | — |
+| TAX_REGISTRATION_NUMBER | JrnlLineTaxRegistrationNumber | — |
+| TAX_ROUNDING_RULE_CODE | JrnlLineTaxRoundingRuleCode | — |
+| TAX_TYPE_CODE | JrnlLineTaxTypeCode | — |
+| TAXABLE_LINE_FLAG | JrnlLineTaxableLineFlag | — |
+| USSGL_TRANSACTION_CODE | JrnlLineUssglTransactionCode | — |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — GL_JE_LINES](https://docs.oracle.com/en/cloud/saas/financials/25a/oedmf/gljelines-25050.html)

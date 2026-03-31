@@ -39,7 +39,6 @@ Visão consolidada que combina dados base e traduções das referências mestre 
 > [!note] Sufixo _VL
 > O sufixo `_VL` indica **view consolidada** que combina automaticamente a tabela `_B` (dados base) com a `_TL` (traduções) para o idioma da sessão.
 
-
 ---
 
 ## 🧠 Propósito de Negócio
@@ -104,6 +103,26 @@ WHERE  t.LANGUAGE = USERENV('LANG')
 
 - View consolidada: combina automaticamente dados base (`_B`) e traduções (`_TL`). Preferir em consultas de leitura.
 - Área funcional: Time Management dentro do Oracle Fusion Cloud HCM.
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[templatelayoutcompdisplayvaluepvo|TemplateLayoutCompDisplayValuePVO]] (GL · BICC: 2/3)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| DET_INS_DISPLAY_NAME | DepTCFMasterRefPEODIDispName | ✅ |
+| MASTER_INSTANCE_IDENTIFIER | DepTCFMasterRefPEOMasterInsId | ✅ |
+| TM_ATRB_FLD_MSTR_REF_ID | DepTCFMasterRefPEOMstrRefId | — |
+
+### [[templatelayoutcomponentpvo|TemplateLayoutComponentPVO]] (GL · BICC: 2/3)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| DET_INS_DISPLAY_NAME | DepTCFMasterRefPEODIDispName | ✅ |
+| MASTER_INSTANCE_IDENTIFIER | DepTCFMasterRefPEOMasterInsId | ✅ |
+| TM_ATRB_FLD_MSTR_REF_ID | DepTCFMasterRefPEOMstrRefId | — |
 
 ---
 

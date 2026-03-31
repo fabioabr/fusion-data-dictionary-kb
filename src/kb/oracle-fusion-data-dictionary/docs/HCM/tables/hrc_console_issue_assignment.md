@@ -101,6 +101,28 @@ ORDER BY a.ASSIGNMENT_DATE;
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[transactionconsolep1|TransactionConsoleP1]] (AP · BICC: 1/13)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ASSIGNED_TO | ConsoleIssueAssignmentPEOAssignedTo | ✅ |
+| CONSOLE_TRANSACTION_ID | ConsoleIssueAssignmentPEOConsoleTransactionId | — |
+| CREATED_BY | ConsoleIssueAssignmentPEOCreatedBy | — |
+| CREATION_DATE | ConsoleIssueAssignmentPEOCreationDate | — |
+| ENTERPRISE_ID | ConsoleIssueAssignmentPEOEnterpriseId | — |
+| ISSUE_ASSIGNMENT_ID | ConsoleIssueAssignmentPEOIssueAssignmentId | — |
+| ISSUE_ID | ConsoleIssueAssignmentPEOIssueId | — |
+| LAST_UPDATE_DATE | ConsoleIssueAssignmentPEOLastUpdateDate | — |
+| LAST_UPDATE_LOGIN | ConsoleIssueAssignmentPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | ConsoleIssueAssignmentPEOLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | ConsoleIssueAssignmentPEOObjectVersionNumber | — |
+| PRIORITY | ConsoleIssueAssignmentPEOPriority | — |
+| TRANSACTION_ID | ConsoleIssueAssignmentPEOTransactionId | — |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Fusion HCM Tables and Views](https://docs.oracle.com/en/cloud/saas/human-resources/25a/)

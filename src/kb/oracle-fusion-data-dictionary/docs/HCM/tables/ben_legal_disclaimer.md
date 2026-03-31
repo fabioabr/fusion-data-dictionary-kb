@@ -38,7 +38,6 @@ updated_at: 2026-03-25
 
 Armazena os **avisos legais e disclaimers** que devem ser apresentados durante processos de inscrição em benefícios.
 
-
 ---
 
 ## 🧠 Propósito de Negócio
@@ -98,6 +97,33 @@ WHERE  ROWNUM <= 100;
 
 - Consultar documentação oficial Oracle para detalhes de uso.
 - Tabela do módulo Benefits (Avisos Legais de Benefícios).
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[participantlegaldisclaimerpvo|ParticipantLegalDisclaimerPVO]] (HCM · BICC: 18/18)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | BusinessGroupId | ✅ |
+| CREATED_BY | CreatedBy | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| DESCRIPTION | Description | ✅ |
+| DISCLAIMER_TEXT | DisclaimerText | ✅ |
+| END_DATE | EndDate | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | LastUpdatedBy | ✅ |
+| LEGAL_DISCLAIMER_ID | LegalDisclaimerId | ✅ |
+| LEGAL_ENTITY_ID | LegalEntityId | ✅ |
+| LER_ID | LerId | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | ✅ |
+| PGM_ID | PgmId | ✅ |
+| PL_ID | PlId | ✅ |
+| PLIP_ID | PlipId | ✅ |
+| PTIP_ID | PtipId | ✅ |
+| START_DATE | StartDate | ✅ |
 
 ---
 

@@ -103,3 +103,14 @@ ORDER BY st.SEARCH_DATE DESC;
 
 - [Oracle Docs -- IRC_CANDIDATE_SEARCH_TRACKING](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/irccandidatesearchtracking.html)
 - [[hcm-module-data-dictionary]] -- Dossie do modulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[candidatepvo|CandidatePVO]] (HCM · BICC: 1/2)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CANDIDATE_ID | SearchTrackingPEOCandidateId | — |
+| LAST_RETRIEVED_DATE | SearchTrackingPEOLastRetrievedDate | ✅ |

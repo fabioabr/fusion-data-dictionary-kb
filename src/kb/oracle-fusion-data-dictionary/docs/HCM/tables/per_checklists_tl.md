@@ -102,6 +102,34 @@ WHERE  tl.LANGUAGE = 'PTB';
 - Tabela de traduções (_TL) — chave composta por `CHECKLIST_ID` + `LANGUAGE`.
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[checklisttasktemplatepvo|ChecklistTaskTemplatePVO]] (HCM · BICC: 5/7)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CHECKLIST_DETAILS | ChecklistTemplateTranslationPEOChecklistDetails | ✅ |
+| CHECKLIST_ID | ChecklistTemplateTranslationPEOChecklistId | — |
+| DESCRIPTION | ChecklistTemplateTranslationPEODescription | ✅ |
+| LANGUAGE | ChecklistTemplateTranslationPEOLanguage | — |
+| MESSAGE_TEXT | ChecklistTemplateTranslationPEOMessageText | ✅ |
+| MESSAGE_TITLE | ChecklistTemplateTranslationPEOMessageTitle | ✅ |
+| NAME | ChecklistTemplateTranslationPEOName | ✅ |
+
+### [[checklisttemplatepvo|ChecklistTemplatePVO]] (HCM · BICC: 5/7)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CHECKLIST_DETAILS | ChecklistTemplateTranslationPEOChecklistDetails | ✅ |
+| CHECKLIST_ID | ChecklistTemplateTranslationPEOChecklistId | — |
+| DESCRIPTION | ChecklistTemplateTranslationPEODescription | ✅ |
+| LANGUAGE | ChecklistTemplateTranslationPEOLanguage | — |
+| MESSAGE_TEXT | ChecklistTemplateTranslationPEOMessageText | ✅ |
+| MESSAGE_TITLE | ChecklistTemplateTranslationPEOMessageTitle | ✅ |
+| NAME | ChecklistTemplateTranslationPEOName | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — PER_CHECKLISTS_TL](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/percheckliststl.html)

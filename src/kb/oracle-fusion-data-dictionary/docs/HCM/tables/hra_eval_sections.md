@@ -114,6 +114,559 @@ WHERE  r.PERSON_ID = :p_person_id;
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[competencyitempvo|CompetencyItemPVO]] (HCM · BICC: 2/46)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ADD_ITEMS_CONFIRM_CRIT_FLAG | EvalSectionPEOAddItemsConfirmCritFlag | — |
+| BUSINESS_GROUP_ID | EvalSectionPEOBusinessGroupId | — |
+| CALCULATION_RULE_CODE | EvalSectionPEOCalculationRuleCode | — |
+| COMMENT_TEXT | EvalSectionPEOCommentText | — |
+| COMMENTS | EvalSectionPEOComments | — |
+| CONTENT_TYPE_ID | EvalSectionPEOContentTypeId | — |
+| ENABLE_ITEMS | EvalSectionPEOEnableItems | — |
+| EVAL_SECTION_ID | EvalSectionId | ✅ |
+| EVALUATION_ID | EvalSectionPEOEvaluationId | — |
+| FAST_FORMULA_ID | EvalSectionPEOFastFormulaId | — |
+| FREE_FORM_ALLOWED_FLAG | EvalSectionPEOFreeFormAllowedFlag | — |
+| ITEM_CALCULATION_CODE | EvalSectionPEOItemCalculationCode | — |
+| LAST_UPDATE_DATE | EvalSectionPEOLastUpdateDate | ✅ |
+| PERF_RATING_MODEL_ID | EvalSectionPEOPerfRatingModelId | — |
+| PROFILE_ID | EvalSectionPEOProfileId | — |
+| PROFILE_TYPE_ID | EvalSectionPEOProfileTypeId | — |
+| RATE_ITEM_FLAG | EvalSectionPEORateItemFlag | — |
+| RATE_SECTION_FLAG | EvalSectionPEORateSectionFlag | — |
+| RATING_OVERIDE_FLAG | EvalSectionPEORatingOverideFlag | — |
+| RATING_TYPE_CODE | EvalSectionPEORatingTypeCode | — |
+| REFERENCE_SECTION_ID | ReferenceSectionId | — |
+| SECTION_MIN_WEIGHT | EvalSectionPEOSectionMinWeight | — |
+| SECTION_MIN_WEIGHT_FLAG | EvalSectionPEOSectionMinWeightFlag | — |
+| SECTION_RATING_MODEL_ID | EvalSectionPEOSectionRatingModelId | — |
+| SECTION_TYPE_CODE | EvalSectionPEOSectionTypeCode | — |
+| SECTION_WEIGHT | EvalSectionPEOSectionWeight | — |
+| SECTION_WEIGHT_FLAG | EvalSectionPEOSectionWeightFlag | — |
+| SEQUENCE_NUMBER | EvalSectionPEOSequenceNumber | — |
+| SHOW_CRITICAL | EvalSectionPEOShowCritical | — |
+| SHOW_DESCRIPTION | EvalSectionPEOShowDescription | — |
+| SHOW_DUE_DATE | EvalSectionPEOShowDueDate | — |
+| SHOW_MANDATORY | EvalSectionPEOShowMandatory | — |
+| SHOW_MEASUREMENT | EvalSectionPEOShowMeasurement | — |
+| SHOW_OWNED_BY | EvalSectionPEOShowOwnedBy | — |
+| SHOW_PERCENT_COMPLETE | EvalSectionPEOShowPercentComplete | — |
+| SHOW_REMINDER_DATE | EvalSectionPEOShowReminderDate | — |
+| SHOW_STATUS | EvalSectionPEOShowStatus | — |
+| SHOW_TARGET_PERF_RTG | EvalSectionPEOShowTargetPerfRtg | — |
+| SHOW_TARGET_PROF_LEVEL | EvalSectionPEOShowTargetProfLevel | — |
+| TMPL_SECTION_ID | EvalSectionPEOTmplSectionId | — |
+| USE_PROFILE_FLAG | EvalSectionPEOUseProfileFlag | — |
+| USE_SECRTG_FOR_PERFRTG_FLAG | EvalSectionPEOUseSecrtgForPerfrtgFlag | — |
+| USE_SPEC_CONTENT_ITEM_FLAG | EvalSectionPEOUseSpecContentItemFlag | — |
+| USE_SPEC_PROFILE_FLAG | EvalSectionPEOUseSpecProfileFlag | — |
+| USE_WORKER_GOALS_FLAG | EvalSectionPEOUseWorkerGoalsFlag | — |
+| WEIGHT_SECTION_FLAG | EvalSectionPEOWeightSectionFlag | — |
+
+### [[evalsectionextractpvo|EvalSectionExtractPVO]] (HCM · BICC: 51/51)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ADD_ITEMS_CONFIRM_CRIT_FLAG | AddItemsConfirmCritFlag | ✅ |
+| BUSINESS_GROUP_ID | BusinessGroupId | ✅ |
+| CALCULATION_RULE_CODE | CalculationRuleCode | ✅ |
+| COMMENT_TEXT | CommentText | ✅ |
+| COMMENTS | Comments | ✅ |
+| CONTENT_TYPE_ID | ContentTypeId | ✅ |
+| CREATED_BY | CreatedBy | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| ENABLE_ITEMS | EnableItems | ✅ |
+| EVAL_SECTION_ID | EvalSectionId | ✅ |
+| EVALUATION_ID | EvaluationId | ✅ |
+| FAST_FORMULA_ID | FastFormulaId | ✅ |
+| FREE_FORM_ALLOWED_FLAG | FreeFormAllowedFlag | ✅ |
+| ITEM_CALCULATION_CODE | ItemCalculationCode | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | LastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | ✅ |
+| PERF_RATING_MODEL_ID | PerfRatingModelId | ✅ |
+| PROFILE_ID | ProfileId | ✅ |
+| PROFILE_TYPE_ID | ProfileTypeId | ✅ |
+| RATE_ITEM_FLAG | RateItemFlag | ✅ |
+| RATE_SECTION_FLAG | RateSectionFlag | ✅ |
+| RATING_OVERIDE_FLAG | RatingOverideFlag | ✅ |
+| RATING_TYPE_CODE | RatingTypeCode | ✅ |
+| REFERENCE_SECTION_ID | ReferenceSectionId | ✅ |
+| SECTION_MIN_WEIGHT | SectionMinWeight | ✅ |
+| SECTION_MIN_WEIGHT_FLAG | SectionMinWeightFlag | ✅ |
+| SECTION_RATING_MODEL_ID | SectionRatingModelId | ✅ |
+| SECTION_TYPE_CODE | SectionTypeCode | ✅ |
+| SECTION_WEIGHT | SectionWeight | ✅ |
+| SECTION_WEIGHT_FLAG | SectionWeightFlag | ✅ |
+| SEQUENCE_NUMBER | SequenceNumber | ✅ |
+| SHOW_CRITICAL | ShowCritical | ✅ |
+| SHOW_DESCRIPTION | ShowDescription | ✅ |
+| SHOW_DUE_DATE | ShowDueDate | ✅ |
+| SHOW_MANDATORY | ShowMandatory | ✅ |
+| SHOW_MEASUREMENT | ShowMeasurement | ✅ |
+| SHOW_OWNED_BY | ShowOwnedBy | ✅ |
+| SHOW_PERCENT_COMPLETE | ShowPercentComplete | ✅ |
+| SHOW_REMINDER_DATE | ShowReminderDate | ✅ |
+| SHOW_STATUS | ShowStatus | ✅ |
+| SHOW_TARGET_PERF_RTG | ShowTargetPerfRtg | ✅ |
+| SHOW_TARGET_PROF_LEVEL | ShowTargetProfLevel | ✅ |
+| TMPL_SECTION_ID | TmplSectionId | ✅ |
+| USE_PROFILE_FLAG | UseProfileFlag | ✅ |
+| USE_SECRTG_FOR_PERFRTG_FLAG | UseSecrtgForPerfrtgFlag | ✅ |
+| USE_SPEC_CONTENT_ITEM_FLAG | UseSpecContentItemFlag | ✅ |
+| USE_SPEC_PROFILE_FLAG | UseSpecProfileFlag | ✅ |
+| USE_WORKER_GOALS_FLAG | UseWorkerGoalsFlag | ✅ |
+| WEIGHT_SECTION_FLAG | WeightSectionFlag | ✅ |
+
+### [[goalitempvo|GoalItemPVO]] (HCM · BICC: 2/46)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ADD_ITEMS_CONFIRM_CRIT_FLAG | EvalSectionPEOAddItemsConfirmCritFlag | — |
+| BUSINESS_GROUP_ID | EvalSectionPEOBusinessGroupId2 | — |
+| CALCULATION_RULE_CODE | EvalSectionPEOCalculationRuleCode | — |
+| COMMENT_TEXT | EvalSectionPEOCommentText | — |
+| COMMENTS | EvalSectionPEOComments | — |
+| CONTENT_TYPE_ID | EvalSectionPEOContentTypeId | — |
+| ENABLE_ITEMS | EvalSectionPEOEnableItems | — |
+| EVAL_SECTION_ID | EvalSectionId | ✅ |
+| EVALUATION_ID | EvalSectionPEOEvaluationId | — |
+| FAST_FORMULA_ID | EvalSectionPEOFastFormulaId | — |
+| FREE_FORM_ALLOWED_FLAG | EvalSectionPEOFreeFormAllowedFlag | — |
+| ITEM_CALCULATION_CODE | EvalSectionPEOItemCalculationCode | — |
+| LAST_UPDATE_DATE | EvalSectionPEOLastUpdateDate | ✅ |
+| PERF_RATING_MODEL_ID | EvalSectionPEOPerfRatingModelId | — |
+| PROFILE_ID | EvalSectionPEOProfileId | — |
+| PROFILE_TYPE_ID | EvalSectionPEOProfileTypeId | — |
+| RATE_ITEM_FLAG | EvalSectionPEORateItemFlag | — |
+| RATE_SECTION_FLAG | EvalSectionPEORateSectionFlag | — |
+| RATING_OVERIDE_FLAG | EvalSectionPEORatingOverideFlag | — |
+| RATING_TYPE_CODE | EvalSectionPEORatingTypeCode | — |
+| REFERENCE_SECTION_ID | ReferenceSectionId | — |
+| SECTION_MIN_WEIGHT | EvalSectionPEOSectionMinWeight | — |
+| SECTION_MIN_WEIGHT_FLAG | EvalSectionPEOSectionMinWeightFlag | — |
+| SECTION_RATING_MODEL_ID | EvalSectionPEOSectionRatingModelId | — |
+| SECTION_TYPE_CODE | EvalSectionPEOSectionTypeCode | — |
+| SECTION_WEIGHT | EvalSectionPEOSectionWeight | — |
+| SECTION_WEIGHT_FLAG | EvalSectionPEOSectionWeightFlag | — |
+| SEQUENCE_NUMBER | EvalSectionPEOSequenceNumber | — |
+| SHOW_CRITICAL | EvalSectionPEOShowCritical | — |
+| SHOW_DESCRIPTION | EvalSectionPEOShowDescription | — |
+| SHOW_DUE_DATE | EvalSectionPEOShowDueDate | — |
+| SHOW_MANDATORY | EvalSectionPEOShowMandatory | — |
+| SHOW_MEASUREMENT | EvalSectionPEOShowMeasurement | — |
+| SHOW_OWNED_BY | EvalSectionPEOShowOwnedBy | — |
+| SHOW_PERCENT_COMPLETE | EvalSectionPEOShowPercentComplete | — |
+| SHOW_REMINDER_DATE | EvalSectionPEOShowReminderDate | — |
+| SHOW_STATUS | EvalSectionPEOShowStatus | — |
+| SHOW_TARGET_PERF_RTG | EvalSectionPEOShowTargetPerfRtg | — |
+| SHOW_TARGET_PROF_LEVEL | EvalSectionPEOShowTargetProfLevel | — |
+| TMPL_SECTION_ID | EvalSectionPEOTmplSectionId | — |
+| USE_PROFILE_FLAG | EvalSectionPEOUseProfileFlag | — |
+| USE_SECRTG_FOR_PERFRTG_FLAG | EvalSectionPEOUseSecrtgForPerfrtgFlag | — |
+| USE_SPEC_CONTENT_ITEM_FLAG | EvalSectionPEOUseSpecContentItemFlag | — |
+| USE_SPEC_PROFILE_FLAG | EvalSectionPEOUseSpecProfileFlag | — |
+| USE_WORKER_GOALS_FLAG | EvalSectionPEOUseWorkerGoalsFlag | — |
+| WEIGHT_SECTION_FLAG | EvalSectionPEOWeightSectionFlag | — |
+
+### [[managerperformanceoverallratingpvo|ManagerPerformanceOverallRatingPVO]] (HCM · BICC: 1/45)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ADD_ITEMS_CONFIRM_CRIT_FLAG | EvalSectionPEOAddItemsConfirmCritFlag | — |
+| BUSINESS_GROUP_ID | EvalSectionPEOBusinessGroupId | — |
+| CALCULATION_RULE_CODE | EvalSectionPEOCalculationRuleCode | — |
+| COMMENT_TEXT | EvalSectionPEOCommentText | — |
+| COMMENTS | EvalSectionPEOComments | — |
+| CONTENT_TYPE_ID | EvalSectionPEOContentTypeId | — |
+| ENABLE_ITEMS | EvalSectionPEOEnableItems | — |
+| EVAL_SECTION_ID | EvalSectionId | ✅ |
+| EVALUATION_ID | EvalSectionPEOEvaluationId | — |
+| FAST_FORMULA_ID | EvalSectionPEOFastFormulaId | — |
+| FREE_FORM_ALLOWED_FLAG | EvalSectionPEOFreeFormAllowedFlag | — |
+| ITEM_CALCULATION_CODE | EvalSectionPEOItemCalculationCode | — |
+| PERF_RATING_MODEL_ID | EvalSectionPEOPerfRatingModelId | — |
+| PROFILE_ID | EvalSectionPEOProfileId | — |
+| PROFILE_TYPE_ID | EvalSectionPEOProfileTypeId | — |
+| RATE_ITEM_FLAG | EvalSectionPEORateItemFlag | — |
+| RATE_SECTION_FLAG | EvalSectionPEORateSectionFlag | — |
+| RATING_OVERIDE_FLAG | EvalSectionPEORatingOverideFlag | — |
+| RATING_TYPE_CODE | EvalSectionPEORatingTypeCode | — |
+| REFERENCE_SECTION_ID | ReferenceSectionId | — |
+| SECTION_MIN_WEIGHT | EvalSectionPEOSectionMinWeight | — |
+| SECTION_MIN_WEIGHT_FLAG | EvalSectionPEOSectionMinWeightFlag | — |
+| SECTION_RATING_MODEL_ID | EvalSectionPEOSectionRatingModelId | — |
+| SECTION_TYPE_CODE | EvalSectionPEOSectionTypeCode | — |
+| SECTION_WEIGHT | EvalSectionPEOSectionWeight | — |
+| SECTION_WEIGHT_FLAG | EvalSectionPEOSectionWeightFlag | — |
+| SEQUENCE_NUMBER | EvalSectionPEOSequenceNumber | — |
+| SHOW_CRITICAL | EvalSectionPEOShowCritical | — |
+| SHOW_DESCRIPTION | EvalSectionPEOShowDescription | — |
+| SHOW_DUE_DATE | EvalSectionPEOShowDueDate | — |
+| SHOW_MANDATORY | EvalSectionPEOShowMandatory | — |
+| SHOW_MEASUREMENT | EvalSectionPEOShowMeasurement | — |
+| SHOW_OWNED_BY | EvalSectionPEOShowOwnedBy | — |
+| SHOW_PERCENT_COMPLETE | EvalSectionPEOShowPercentComplete | — |
+| SHOW_REMINDER_DATE | EvalSectionPEOShowReminderDate | — |
+| SHOW_STATUS | EvalSectionPEOShowStatus | — |
+| SHOW_TARGET_PERF_RTG | EvalSectionPEOShowTargetPerfRtg | — |
+| SHOW_TARGET_PROF_LEVEL | EvalSectionPEOShowTargetProfLevel | — |
+| TMPL_SECTION_ID | EvalSectionPEOTmplSectionId | — |
+| USE_PROFILE_FLAG | EvalSectionPEOUseProfileFlag | — |
+| USE_SECRTG_FOR_PERFRTG_FLAG | EvalSectionPEOUseSecrtgForPerfrtgFlag | — |
+| USE_SPEC_CONTENT_ITEM_FLAG | EvalSectionPEOUseSpecContentItemFlag | — |
+| USE_SPEC_PROFILE_FLAG | EvalSectionPEOUseSpecProfileFlag | — |
+| USE_WORKER_GOALS_FLAG | EvalSectionPEOUseWorkerGoalsFlag | — |
+| WEIGHT_SECTION_FLAG | EvalSectionPEOWeightSectionFlag | — |
+
+### [[performancedocratingdistributionpvo|PerformanceDocRatingDistributionPVO]] (HCM · BICC: 1/45)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ADD_ITEMS_CONFIRM_CRIT_FLAG | EvalSectionPEOAddItemsConfirmCritFlag | — |
+| BUSINESS_GROUP_ID | EvalSectionPEOBusinessGroupId | — |
+| CALCULATION_RULE_CODE | EvalSectionPEOCalculationRuleCode | — |
+| COMMENT_TEXT | EvalSectionPEOCommentText | — |
+| COMMENTS | EvalSectionPEOComments | — |
+| CONTENT_TYPE_ID | EvalSectionPEOContentTypeId | — |
+| ENABLE_ITEMS | EvalSectionPEOEnableItems | — |
+| EVAL_SECTION_ID | EvalSectionId | ✅ |
+| EVALUATION_ID | EvalSectionPEOEvaluationId | — |
+| FAST_FORMULA_ID | EvalSectionPEOFastFormulaId | — |
+| FREE_FORM_ALLOWED_FLAG | EvalSectionPEOFreeFormAllowedFlag | — |
+| ITEM_CALCULATION_CODE | EvalSectionPEOItemCalculationCode | — |
+| PERF_RATING_MODEL_ID | EvalSectionPEOPerfRatingModelId | — |
+| PROFILE_ID | EvalSectionPEOProfileId | — |
+| PROFILE_TYPE_ID | EvalSectionPEOProfileTypeId | — |
+| RATE_ITEM_FLAG | EvalSectionPEORateItemFlag | — |
+| RATE_SECTION_FLAG | EvalSectionPEORateSectionFlag | — |
+| RATING_OVERIDE_FLAG | EvalSectionPEORatingOverideFlag | — |
+| RATING_TYPE_CODE | EvalSectionPEORatingTypeCode | — |
+| REFERENCE_SECTION_ID | ReferenceSectionId | — |
+| SECTION_MIN_WEIGHT | EvalSectionPEOSectionMinWeight | — |
+| SECTION_MIN_WEIGHT_FLAG | EvalSectionPEOSectionMinWeightFlag | — |
+| SECTION_RATING_MODEL_ID | EvalSectionPEOSectionRatingModelId | — |
+| SECTION_TYPE_CODE | EvalSectionPEOSectionTypeCode | — |
+| SECTION_WEIGHT | EvalSectionPEOSectionWeight | — |
+| SECTION_WEIGHT_FLAG | EvalSectionPEOSectionWeightFlag | — |
+| SEQUENCE_NUMBER | EvalSectionPEOSequenceNumber | — |
+| SHOW_CRITICAL | EvalSectionPEOShowCritical | — |
+| SHOW_DESCRIPTION | EvalSectionPEOShowDescription | — |
+| SHOW_DUE_DATE | EvalSectionPEOShowDueDate | — |
+| SHOW_MANDATORY | EvalSectionPEOShowMandatory | — |
+| SHOW_MEASUREMENT | EvalSectionPEOShowMeasurement | — |
+| SHOW_OWNED_BY | EvalSectionPEOShowOwnedBy | — |
+| SHOW_PERCENT_COMPLETE | EvalSectionPEOShowPercentComplete | — |
+| SHOW_REMINDER_DATE | EvalSectionPEOShowReminderDate | — |
+| SHOW_STATUS | EvalSectionPEOShowStatus | — |
+| SHOW_TARGET_PERF_RTG | EvalSectionPEOShowTargetPerfRtg | — |
+| SHOW_TARGET_PROF_LEVEL | EvalSectionPEOShowTargetProfLevel | — |
+| TMPL_SECTION_ID | EvalSectionPEOTmplSectionId | — |
+| USE_PROFILE_FLAG | EvalSectionPEOUseProfileFlag | — |
+| USE_SECRTG_FOR_PERFRTG_FLAG | EvalSectionPEOUseSecrtgForPerfrtgFlag | — |
+| USE_SPEC_CONTENT_ITEM_FLAG | EvalSectionPEOUseSpecContentItemFlag | — |
+| USE_SPEC_PROFILE_FLAG | EvalSectionPEOUseSpecProfileFlag | — |
+| USE_WORKER_GOALS_FLAG | EvalSectionPEOUseWorkerGoalsFlag | — |
+| WEIGHT_SECTION_FLAG | EvalSectionPEOWeightSectionFlag | — |
+
+### [[performancedocsectionpvo|PerformanceDocSectionPVO]] (HCM · BICC: 3/50)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ADD_ITEMS_CONFIRM_CRIT_FLAG | EvalSectionPEOAddItemsConfirmCritFlag | — |
+| BUSINESS_GROUP_ID | EvalSectionPEOBusinessGroupId | — |
+| CALCULATION_RULE_CODE | EvalSectionPEOCalculationRuleCode | — |
+| COMMENT_TEXT | EvalSectionPEOCommentText | ✅ |
+| COMMENTS | EvalSectionPEOComments | — |
+| CONTENT_TYPE_ID | EvalSectionPEOContentTypeId | — |
+| CREATED_BY | EvalSectionPEOCreatedBy | — |
+| CREATION_DATE | EvalSectionPEOCreationDate | — |
+| ENABLE_ITEMS | EvalSectionPEOEnableItems | — |
+| EVAL_SECTION_ID | EvalSectionPEOEvalSectionId | ✅ |
+| EVALUATION_ID | EvalSectionPEOEvaluationId | — |
+| FAST_FORMULA_ID | EvalSectionPEOFastFormulaId | — |
+| FREE_FORM_ALLOWED_FLAG | EvalSectionPEOFreeFormAllowedFlag | — |
+| ITEM_CALCULATION_CODE | EvalSectionPEOItemCalculationCode | — |
+| LAST_UPDATE_DATE | EvalSectionPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | EvalSectionPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | EvalSectionPEOLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | EvalSectionPEOObjectVersionNumber | — |
+| PERF_RATING_MODEL_ID | EvalSectionPEOPerfRatingModelId | — |
+| PROFILE_ID | EvalSectionPEOProfileId | — |
+| PROFILE_TYPE_ID | EvalSectionPEOProfileTypeId | — |
+| RATE_ITEM_FLAG | EvalSectionPEORateItemFlag | — |
+| RATE_SECTION_FLAG | EvalSectionPEORateSectionFlag | — |
+| RATING_OVERIDE_FLAG | EvalSectionPEORatingOverideFlag | — |
+| RATING_TYPE_CODE | EvalSectionPEORatingTypeCode | — |
+| SECTION_MIN_WEIGHT | EvalSectionPEOSectionMinWeight | — |
+| SECTION_MIN_WEIGHT_FLAG | EvalSectionPEOSectionMinWeightFlag | — |
+| SECTION_RATING_MODEL_ID | EvalSectionPEOSectionRatingModelId | — |
+| SECTION_TYPE_CODE | EvalSectionPEOSectionTypeCode | — |
+| SECTION_WEIGHT | EvalSectionPEOSectionWeight | — |
+| SECTION_WEIGHT_FLAG | EvalSectionPEOSectionWeightFlag | — |
+| SEQUENCE_NUMBER | EvalSectionPEOSequenceNumber | — |
+| SHOW_CRITICAL | EvalSectionPEOShowCritical | — |
+| SHOW_DESCRIPTION | EvalSectionPEOShowDescription | — |
+| SHOW_DUE_DATE | EvalSectionPEOShowDueDate | — |
+| SHOW_MANDATORY | EvalSectionPEOShowMandatory | — |
+| SHOW_MEASUREMENT | EvalSectionPEOShowMeasurement | — |
+| SHOW_OWNED_BY | EvalSectionPEOShowOwnedBy | — |
+| SHOW_PERCENT_COMPLETE | EvalSectionPEOShowPercentComplete | — |
+| SHOW_REMINDER_DATE | EvalSectionPEOShowReminderDate | — |
+| SHOW_STATUS | EvalSectionPEOShowStatus | — |
+| SHOW_TARGET_PERF_RTG | EvalSectionPEOShowTargetPerfRtg | — |
+| SHOW_TARGET_PROF_LEVEL | EvalSectionPEOShowTargetProfLevel | — |
+| TMPL_SECTION_ID | EvalSectionPEOTmplSectionId | — |
+| USE_PROFILE_FLAG | EvalSectionPEOUseProfileFlag | — |
+| USE_SECRTG_FOR_PERFRTG_FLAG | EvalSectionPEOUseSecrtgForPerfrtgFlag | — |
+| USE_SPEC_CONTENT_ITEM_FLAG | EvalSectionPEOUseSpecContentItemFlag | — |
+| USE_SPEC_PROFILE_FLAG | EvalSectionPEOUseSpecProfileFlag | — |
+| USE_WORKER_GOALS_FLAG | EvalSectionPEOUseWorkerGoalsFlag | — |
+| WEIGHT_SECTION_FLAG | EvalSectionPEOWeightSectionFlag | — |
+
+### [[performancefinalfeedbackpvoformanager|PerformanceFinalFeedbackPVOForManager]] (HCM · BICC: 3/51)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ADD_ITEMS_CONFIRM_CRIT_FLAG | EvalSectionPEOAddItemsConfirmCritFlag | — |
+| BUSINESS_GROUP_ID | EvalSectionPEOBusinessGroupId | — |
+| CALCULATION_RULE_CODE | EvalSectionPEOCalculationRuleCode | — |
+| COMMENT_TEXT | EvalSectionPEOCommentText | ✅ |
+| COMMENTS | EvalSectionPEOComments | — |
+| CONTENT_TYPE_ID | EvalSectionPEOContentTypeId | — |
+| CREATED_BY | EvalSectionPEOCreatedBy | — |
+| CREATION_DATE | EvalSectionPEOCreationDate | — |
+| ENABLE_ITEMS | EvalSectionPEOEnableItems | — |
+| EVAL_SECTION_ID | EvalSectionPEOEvalSectionId | ✅ |
+| EVALUATION_ID | EvalSectionPEOEvaluationId | — |
+| FAST_FORMULA_ID | EvalSectionPEOFastFormulaId | — |
+| FREE_FORM_ALLOWED_FLAG | EvalSectionPEOFreeFormAllowedFlag | — |
+| ITEM_CALCULATION_CODE | EvalSectionPEOItemCalculationCode | — |
+| LAST_UPDATE_DATE | EvalSectionPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | EvalSectionPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | EvalSectionPEOLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | EvalSectionPEOObjectVersionNumber | — |
+| PERF_RATING_MODEL_ID | EvalSectionPEOPerfRatingModelId | — |
+| PROFILE_ID | EvalSectionPEOProfileId | — |
+| PROFILE_TYPE_ID | EvalSectionPEOProfileTypeId | — |
+| RATE_ITEM_FLAG | EvalSectionPEORateItemFlag | — |
+| RATE_SECTION_FLAG | EvalSectionPEORateSectionFlag | — |
+| RATING_OVERIDE_FLAG | EvalSectionPEORatingOverideFlag | — |
+| RATING_TYPE_CODE | EvalSectionPEORatingTypeCode | — |
+| REFERENCE_SECTION_ID | ReferenceSectionId | — |
+| SECTION_MIN_WEIGHT | EvalSectionPEOSectionMinWeight | — |
+| SECTION_MIN_WEIGHT_FLAG | EvalSectionPEOSectionMinWeightFlag | — |
+| SECTION_RATING_MODEL_ID | EvalSectionPEOSectionRatingModelId | — |
+| SECTION_TYPE_CODE | EvalSectionPEOSectionTypeCode | — |
+| SECTION_WEIGHT | EvalSectionPEOSectionWeight | — |
+| SECTION_WEIGHT_FLAG | EvalSectionPEOSectionWeightFlag | — |
+| SEQUENCE_NUMBER | EvalSectionPEOSequenceNumber | — |
+| SHOW_CRITICAL | EvalSectionPEOShowCritical | — |
+| SHOW_DESCRIPTION | EvalSectionPEOShowDescription | — |
+| SHOW_DUE_DATE | EvalSectionPEOShowDueDate | — |
+| SHOW_MANDATORY | EvalSectionPEOShowMandatory | — |
+| SHOW_MEASUREMENT | EvalSectionPEOShowMeasurement | — |
+| SHOW_OWNED_BY | EvalSectionPEOShowOwnedBy | — |
+| SHOW_PERCENT_COMPLETE | EvalSectionPEOShowPercentComplete | — |
+| SHOW_REMINDER_DATE | EvalSectionPEOShowReminderDate | — |
+| SHOW_STATUS | EvalSectionPEOShowStatus | — |
+| SHOW_TARGET_PERF_RTG | EvalSectionPEOShowTargetPerfRtg | — |
+| SHOW_TARGET_PROF_LEVEL | EvalSectionPEOShowTargetProfLevel | — |
+| TMPL_SECTION_ID | EvalSectionPEOTmplSectionId | — |
+| USE_PROFILE_FLAG | EvalSectionPEOUseProfileFlag | — |
+| USE_SECRTG_FOR_PERFRTG_FLAG | EvalSectionPEOUseSecrtgForPerfrtgFlag | — |
+| USE_SPEC_CONTENT_ITEM_FLAG | EvalSectionPEOUseSpecContentItemFlag | — |
+| USE_SPEC_PROFILE_FLAG | EvalSectionPEOUseSpecProfileFlag | — |
+| USE_WORKER_GOALS_FLAG | EvalSectionPEOUseWorkerGoalsFlag | — |
+| WEIGHT_SECTION_FLAG | EvalSectionPEOWeightSectionFlag | — |
+
+### [[performancefinalfeedbackpvoforworker|PerformanceFinalFeedbackPVOForWorker]] (HCM · BICC: 3/51)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ADD_ITEMS_CONFIRM_CRIT_FLAG | EvalSectionPEOAddItemsConfirmCritFlag | — |
+| BUSINESS_GROUP_ID | EvalSectionPEOBusinessGroupId | — |
+| CALCULATION_RULE_CODE | EvalSectionPEOCalculationRuleCode | — |
+| COMMENT_TEXT | EvalSectionPEOCommentText | ✅ |
+| COMMENTS | EvalSectionPEOComments | — |
+| CONTENT_TYPE_ID | EvalSectionPEOContentTypeId | — |
+| CREATED_BY | EvalSectionPEOCreatedBy | — |
+| CREATION_DATE | EvalSectionPEOCreationDate | — |
+| ENABLE_ITEMS | EvalSectionPEOEnableItems | — |
+| EVAL_SECTION_ID | EvalSectionPEOEvalSectionId | ✅ |
+| EVALUATION_ID | EvalSectionPEOEvaluationId | — |
+| FAST_FORMULA_ID | EvalSectionPEOFastFormulaId | — |
+| FREE_FORM_ALLOWED_FLAG | EvalSectionPEOFreeFormAllowedFlag | — |
+| ITEM_CALCULATION_CODE | EvalSectionPEOItemCalculationCode | — |
+| LAST_UPDATE_DATE | EvalSectionPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | EvalSectionPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | EvalSectionPEOLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | EvalSectionPEOObjectVersionNumber | — |
+| PERF_RATING_MODEL_ID | EvalSectionPEOPerfRatingModelId | — |
+| PROFILE_ID | EvalSectionPEOProfileId | — |
+| PROFILE_TYPE_ID | EvalSectionPEOProfileTypeId | — |
+| RATE_ITEM_FLAG | EvalSectionPEORateItemFlag | — |
+| RATE_SECTION_FLAG | EvalSectionPEORateSectionFlag | — |
+| RATING_OVERIDE_FLAG | EvalSectionPEORatingOverideFlag | — |
+| RATING_TYPE_CODE | EvalSectionPEORatingTypeCode | — |
+| REFERENCE_SECTION_ID | ReferenceSectionId | — |
+| SECTION_MIN_WEIGHT | EvalSectionPEOSectionMinWeight | — |
+| SECTION_MIN_WEIGHT_FLAG | EvalSectionPEOSectionMinWeightFlag | — |
+| SECTION_RATING_MODEL_ID | EvalSectionPEOSectionRatingModelId | — |
+| SECTION_TYPE_CODE | EvalSectionPEOSectionTypeCode | — |
+| SECTION_WEIGHT | EvalSectionPEOSectionWeight | — |
+| SECTION_WEIGHT_FLAG | EvalSectionPEOSectionWeightFlag | — |
+| SEQUENCE_NUMBER | EvalSectionPEOSequenceNumber | — |
+| SHOW_CRITICAL | EvalSectionPEOShowCritical | — |
+| SHOW_DESCRIPTION | EvalSectionPEOShowDescription | — |
+| SHOW_DUE_DATE | EvalSectionPEOShowDueDate | — |
+| SHOW_MANDATORY | EvalSectionPEOShowMandatory | — |
+| SHOW_MEASUREMENT | EvalSectionPEOShowMeasurement | — |
+| SHOW_OWNED_BY | EvalSectionPEOShowOwnedBy | — |
+| SHOW_PERCENT_COMPLETE | EvalSectionPEOShowPercentComplete | — |
+| SHOW_REMINDER_DATE | EvalSectionPEOShowReminderDate | — |
+| SHOW_STATUS | EvalSectionPEOShowStatus | — |
+| SHOW_TARGET_PERF_RTG | EvalSectionPEOShowTargetPerfRtg | — |
+| SHOW_TARGET_PROF_LEVEL | EvalSectionPEOShowTargetProfLevel | — |
+| TMPL_SECTION_ID | EvalSectionPEOTmplSectionId | — |
+| USE_PROFILE_FLAG | EvalSectionPEOUseProfileFlag | — |
+| USE_SECRTG_FOR_PERFRTG_FLAG | EvalSectionPEOUseSecrtgForPerfrtgFlag | — |
+| USE_SPEC_CONTENT_ITEM_FLAG | EvalSectionPEOUseSpecContentItemFlag | — |
+| USE_SPEC_PROFILE_FLAG | EvalSectionPEOUseSpecProfileFlag | — |
+| USE_WORKER_GOALS_FLAG | EvalSectionPEOUseWorkerGoalsFlag | — |
+| WEIGHT_SECTION_FLAG | EvalSectionPEOWeightSectionFlag | — |
+
+### [[performanceitemratingpvo|PerformanceItemRatingPVO]] (HCM · BICC: 1/6)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| COMMENT_TEXT | EvalSectionPEOCommentText | — |
+| COMMENTS | EvalSectionPEOComments | — |
+| EVAL_SECTION_ID | EvalSectionId | — |
+| LAST_UPDATE_DATE | EvalSectionPEOLastUpdateDate | ✅ |
+| REFERENCE_SECTION_ID | ReferenceSectionId | — |
+| SECTION_TYPE_CODE | EvalSectionPEOSectionTypeCode | — |
+
+### [[performanceoverallratingpvo|PerformanceOverallRatingPVO]] (HCM · BICC: 2/46)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ADD_ITEMS_CONFIRM_CRIT_FLAG | EvalSectionPEOAddItemsConfirmCritFlag | — |
+| BUSINESS_GROUP_ID | EvalSectionPEOBusinessGroupId | — |
+| CALCULATION_RULE_CODE | EvalSectionPEOCalculationRuleCode | — |
+| COMMENT_TEXT | EvalSectionPEOCommentText | — |
+| COMMENTS | EvalSectionPEOComments | — |
+| CONTENT_TYPE_ID | EvalSectionPEOContentTypeId | — |
+| ENABLE_ITEMS | EvalSectionPEOEnableItems | — |
+| EVAL_SECTION_ID | EvalSectionId | ✅ |
+| EVALUATION_ID | EvalSectionPEOEvaluationId | — |
+| FAST_FORMULA_ID | EvalSectionPEOFastFormulaId | — |
+| FREE_FORM_ALLOWED_FLAG | EvalSectionPEOFreeFormAllowedFlag | — |
+| ITEM_CALCULATION_CODE | EvalSectionPEOItemCalculationCode | — |
+| LAST_UPDATE_DATE | EvalSectionPEOLastUpdateDate | ✅ |
+| PERF_RATING_MODEL_ID | EvalSectionPEOPerfRatingModelId | — |
+| PROFILE_ID | EvalSectionPEOProfileId | — |
+| PROFILE_TYPE_ID | EvalSectionPEOProfileTypeId | — |
+| RATE_ITEM_FLAG | EvalSectionPEORateItemFlag | — |
+| RATE_SECTION_FLAG | EvalSectionPEORateSectionFlag | — |
+| RATING_OVERIDE_FLAG | EvalSectionPEORatingOverideFlag | — |
+| RATING_TYPE_CODE | EvalSectionPEORatingTypeCode | — |
+| REFERENCE_SECTION_ID | ReferenceSectionId | — |
+| SECTION_MIN_WEIGHT | EvalSectionPEOSectionMinWeight | — |
+| SECTION_MIN_WEIGHT_FLAG | EvalSectionPEOSectionMinWeightFlag | — |
+| SECTION_RATING_MODEL_ID | EvalSectionPEOSectionRatingModelId | — |
+| SECTION_TYPE_CODE | EvalSectionPEOSectionTypeCode | — |
+| SECTION_WEIGHT | EvalSectionPEOSectionWeight | — |
+| SECTION_WEIGHT_FLAG | EvalSectionPEOSectionWeightFlag | — |
+| SEQUENCE_NUMBER | EvalSectionPEOSequenceNumber | — |
+| SHOW_CRITICAL | EvalSectionPEOShowCritical | — |
+| SHOW_DESCRIPTION | EvalSectionPEOShowDescription | — |
+| SHOW_DUE_DATE | EvalSectionPEOShowDueDate | — |
+| SHOW_MANDATORY | EvalSectionPEOShowMandatory | — |
+| SHOW_MEASUREMENT | EvalSectionPEOShowMeasurement | — |
+| SHOW_OWNED_BY | EvalSectionPEOShowOwnedBy | — |
+| SHOW_PERCENT_COMPLETE | EvalSectionPEOShowPercentComplete | — |
+| SHOW_REMINDER_DATE | EvalSectionPEOShowReminderDate | — |
+| SHOW_STATUS | EvalSectionPEOShowStatus | — |
+| SHOW_TARGET_PERF_RTG | EvalSectionPEOShowTargetPerfRtg | — |
+| SHOW_TARGET_PROF_LEVEL | EvalSectionPEOShowTargetProfLevel | — |
+| TMPL_SECTION_ID | EvalSectionPEOTmplSectionId | — |
+| USE_PROFILE_FLAG | EvalSectionPEOUseProfileFlag | — |
+| USE_SECRTG_FOR_PERFRTG_FLAG | EvalSectionPEOUseSecrtgForPerfrtgFlag | — |
+| USE_SPEC_CONTENT_ITEM_FLAG | EvalSectionPEOUseSpecContentItemFlag | — |
+| USE_SPEC_PROFILE_FLAG | EvalSectionPEOUseSpecProfileFlag | — |
+| USE_WORKER_GOALS_FLAG | EvalSectionPEOUseWorkerGoalsFlag | — |
+| WEIGHT_SECTION_FLAG | EvalSectionPEOWeightSectionFlag | — |
+
+### [[performancesectionratingpvo|PerformanceSectionRatingPVO]] (HCM · BICC: 2/46)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ADD_ITEMS_CONFIRM_CRIT_FLAG | EvalSectionPEOAddItemsConfirmCritFlag | — |
+| BUSINESS_GROUP_ID | EvalSectionPEOBusinessGroupId | — |
+| CALCULATION_RULE_CODE | EvalSectionPEOCalculationRuleCode | — |
+| COMMENT_TEXT | EvalSectionPEOCommentText | — |
+| COMMENTS | EvalSectionPEOComments | — |
+| CONTENT_TYPE_ID | EvalSectionPEOContentTypeId | — |
+| ENABLE_ITEMS | EvalSectionPEOEnableItems | — |
+| EVAL_SECTION_ID | EvalSectionId | ✅ |
+| EVALUATION_ID | EvalSectionPEOEvaluationId | — |
+| FAST_FORMULA_ID | EvalSectionPEOFastFormulaId | — |
+| FREE_FORM_ALLOWED_FLAG | EvalSectionPEOFreeFormAllowedFlag | — |
+| ITEM_CALCULATION_CODE | EvalSectionPEOItemCalculationCode | — |
+| LAST_UPDATE_DATE | EvalSectionPEOLastUpdateDate | ✅ |
+| PERF_RATING_MODEL_ID | EvalSectionPEOPerfRatingModelId | — |
+| PROFILE_ID | EvalSectionPEOProfileId | — |
+| PROFILE_TYPE_ID | EvalSectionPEOProfileTypeId | — |
+| RATE_ITEM_FLAG | EvalSectionPEORateItemFlag | — |
+| RATE_SECTION_FLAG | EvalSectionPEORateSectionFlag | — |
+| RATING_OVERIDE_FLAG | EvalSectionPEORatingOverideFlag | — |
+| RATING_TYPE_CODE | EvalSectionPEORatingTypeCode | — |
+| REFERENCE_SECTION_ID | ReferenceSectionId | — |
+| SECTION_MIN_WEIGHT | EvalSectionPEOSectionMinWeight | — |
+| SECTION_MIN_WEIGHT_FLAG | EvalSectionPEOSectionMinWeightFlag | — |
+| SECTION_RATING_MODEL_ID | EvalSectionPEOSectionRatingModelId | — |
+| SECTION_TYPE_CODE | EvalSectionPEOSectionTypeCode | — |
+| SECTION_WEIGHT | EvalSectionPEOSectionWeight | — |
+| SECTION_WEIGHT_FLAG | EvalSectionPEOSectionWeightFlag | — |
+| SEQUENCE_NUMBER | EvalSectionPEOSequenceNumber | — |
+| SHOW_CRITICAL | EvalSectionPEOShowCritical | — |
+| SHOW_DESCRIPTION | EvalSectionPEOShowDescription | — |
+| SHOW_DUE_DATE | EvalSectionPEOShowDueDate | — |
+| SHOW_MANDATORY | EvalSectionPEOShowMandatory | — |
+| SHOW_MEASUREMENT | EvalSectionPEOShowMeasurement | — |
+| SHOW_OWNED_BY | EvalSectionPEOShowOwnedBy | — |
+| SHOW_PERCENT_COMPLETE | EvalSectionPEOShowPercentComplete | — |
+| SHOW_REMINDER_DATE | EvalSectionPEOShowReminderDate | — |
+| SHOW_STATUS | EvalSectionPEOShowStatus | — |
+| SHOW_TARGET_PERF_RTG | EvalSectionPEOShowTargetPerfRtg | — |
+| SHOW_TARGET_PROF_LEVEL | EvalSectionPEOShowTargetProfLevel | — |
+| TMPL_SECTION_ID | EvalSectionPEOTmplSectionId | — |
+| USE_PROFILE_FLAG | EvalSectionPEOUseProfileFlag | — |
+| USE_SECRTG_FOR_PERFRTG_FLAG | EvalSectionPEOUseSecrtgForPerfrtgFlag | — |
+| USE_SPEC_CONTENT_ITEM_FLAG | EvalSectionPEOUseSpecContentItemFlag | — |
+| USE_SPEC_PROFILE_FLAG | EvalSectionPEOUseSpecProfileFlag | — |
+| USE_WORKER_GOALS_FLAG | EvalSectionPEOUseWorkerGoalsFlag | — |
+| WEIGHT_SECTION_FLAG | EvalSectionPEOWeightSectionFlag | — |
+
+### [[proficiencyitemratingpvo|ProficiencyItemRatingPVO]] (HCM · BICC: 1/6)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| COMMENT_TEXT | EvalSectionPEOCommentText | — |
+| COMMENTS | EvalSectionPEOComments | — |
+| EVAL_SECTION_ID | EvalSectionId | — |
+| LAST_UPDATE_DATE | EvalSectionPEOLastUpdateDate | ✅ |
+| REFERENCE_SECTION_ID | ReferenceSectionId | — |
+| SECTION_TYPE_CODE | EvalSectionPEOSectionTypeCode | — |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — HRA_EVAL_SECTIONS](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/hraevalsections.html)

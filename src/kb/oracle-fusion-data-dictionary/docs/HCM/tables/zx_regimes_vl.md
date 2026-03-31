@@ -118,3 +118,279 @@ updated_at: 2026-03-26
 ## 📎 Uso Típico
 
 (a ser preenchido na etapa 03)
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[sitetaxexemption|SiteTaxExemption]] (AR · BICC: 2/61)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| COLL_TAX_AUTHORITY_ID | TaxRegimeCollTaxAuthorityId | — |
+| COUNTRY_CODE | TaxRegimeCountryCode | — |
+| COUNTRY_OR_GROUP_CODE | TaxRegimeCountryOrGroupCode | — |
+| CREATED_BY | TaxRegimeCreatedBy | — |
+| CREATION_DATE | TaxRegimeCreationDate | — |
+| CROSS_REGIME_COMPOUNDING_FLAG | TaxRegimeCrossRegimeCompoundingFlag | — |
+| DEF_INCLUSIVE_TAX_FLAG | TaxRegimeDefInclusiveTaxFlag | — |
+| DEF_PLACE_OF_SUPPLY_TYPE_CODE | TaxRegimeDefPlaceOfSupplyTypeCode | — |
+| DEF_REC_SETTLEMENT_OPTION_CODE | TaxRegimeDefRecSettlementOptionCode | — |
+| DEF_REGISTR_PARTY_TYPE_CODE | TaxRegimeDefRegistrPartyTypeCode | — |
+| EFFECTIVE_FROM | TaxRegimeEffectiveFrom | — |
+| EFFECTIVE_TO | TaxRegimeEffectiveTo | — |
+| EXCHANGE_RATE_TYPE | TaxRegimeExchangeRateType | — |
+| EXEMPTION_PROCESS_FLAG | TaxRegimeExemptionProcessFlag | — |
+| GEOGRAPHY_ID | TaxRegimeGeographyId | — |
+| GEOGRAPHY_TYPE | TaxRegimeGeographyType | — |
+| HAS_EXCH_RATE_DATE_RULE_FLAG | TaxRegimeHasExchRateDateRuleFlag | — |
+| HAS_OTHER_JURISDICTIONS_FLAG | TaxRegimeHasOtherJurisdictionsFlag | — |
+| HAS_SUB_REGIME_FLAG | TaxRegimeHasSubRegimeFlag | — |
+| HAS_TAX_DET_DATE_RULE_FLAG | TaxRegimeHasTaxDetDateRuleFlag | — |
+| HAS_TAX_POINT_DATE_RULE_FLAG | TaxRegimeHasTaxPointDateRuleFlag | — |
+| LAST_UPDATE_DATE | TaxRegimeLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | TaxRegimeLastUpdateLogin | — |
+| LAST_UPDATED_BY | TaxRegimeLastUpdatedBy | — |
+| MINIMUM_ACCOUNTABLE_UNIT | TaxRegimeMinimumAccountableUnit | — |
+| OBJECT_VERSION_NUMBER | TaxRegimeObjectVersionNumber | — |
+| PARENT_REGIME_CODE | TaxRegimeParentRegimeCode | — |
+| PERIOD_SET_NAME | TaxRegimePeriodSetName | — |
+| PLACE_OF_SUPPLY_RULE_FLAG | TaxRegimePlaceOfSupplyRuleFlag | — |
+| PROGRAM_APP_NAME | TaxRegimeProgramAppName | — |
+| PROGRAM_LOGIN_ID | TaxRegimeProgramLoginId | — |
+| PROGRAM_NAME | TaxRegimeProgramName | — |
+| RECORD_TYPE_CODE | TaxRegimeRecordTypeCode | — |
+| REGIME_PRECEDENCE | TaxRegimeRegimePrecedence | — |
+| REGIME_TYPE_FLAG | TaxRegimeRegimeTypeFlag | — |
+| REGISTRATION_TYPE_RULE_FLAG | TaxRegimeRegistrationTypeRuleFlag | — |
+| REGN_NUM_SAME_AS_LE_FLAG | TaxRegimeRegnNumSameAsLeFlag | — |
+| REP_TAX_AUTHORITY_ID | TaxRegimeRepTaxAuthorityId | — |
+| REQUEST_ID | TaxRegimeRequestId | — |
+| ROUNDING_RULE_CODE | TaxRegimeRoundingRuleCode | — |
+| TAX_ACCOUNT_PRECEDENCE_CODE | TaxRegimeTaxAccountPrecedenceCode | — |
+| TAX_AMT_THRSHLD_FLAG | TaxRegimeTaxAmtThrshldFlag | — |
+| TAX_CALC_RULE_FLAG | TaxRegimeTaxCalcRuleFlag | — |
+| TAX_CURRENCY_CODE | TaxRegimeTaxCurrencyCode | — |
+| TAX_INCLUSIVE_OVERRIDE_FLAG | TaxRegimeTaxInclusiveOverrideFlag | — |
+| TAX_PRECISION | TaxRegimeTaxPrecision | — |
+| TAX_RATE_RULE_FLAG | TaxRegimeTaxRateRuleFlag | — |
+| TAX_RATE_THRSHLD_FLAG | TaxRegimeTaxRateThrshldFlag | — |
+| TAX_REGIME_CODE | TaxRegimeTaxRegimeCode | — |
+| TAX_REGIME_ID | TaxRegimeTaxRegimeId | — |
+| TAX_REGIME_NAME | TaxRegimeTaxRegimeName | ✅ |
+| TAX_STATUS_RULE_FLAG | TaxRegimeTaxStatusRuleFlag | — |
+| TAXABLE_BASIS_RULE_FLAG | TaxRegimeTaxableBasisRuleFlag | — |
+| TAXABLE_BASIS_THRSHLD_FLAG | TaxRegimeTaxableBasisThrshldFlag | — |
+| THRSHLD_CHK_TMPLT_CODE | TaxRegimeThrshldChkTmpltCode | — |
+| THRSHLD_GROUPING_LVL_CODE | TaxRegimeThrshldGroupingLvlCode | — |
+| UNIQUENESS_VALIDATION_LEVEL | TaxRegimeUniquenessValidationLevel | — |
+| USE_LEGAL_MSG_FLAG | TaxRegimeUseLegalMsgFlag | — |
+| USE_TAX_REPORT_CONFIG_FLAG | TaxRegimeUseTaxReportConfigFlag | — |
+| VALIDATION_LEVEL | TaxRegimeValidationLevel | — |
+| VALIDATION_TYPE | TaxRegimeValidationType | — |
+
+### [[sitetaxregistration|SiteTaxRegistration]] (AR · BICC: 3/65)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ALLOW_EXCEPTIONS_FLAG | TaxRegimeAllowExceptionsFlag | — |
+| ALLOW_EXEMPTIONS_FLAG | TaxRegimeAllowExemptionsFlag | — |
+| ALLOW_RECOVERABILITY_FLAG | TaxRegimeAllowRecoverabilityFlag | — |
+| ALLOW_ROUNDING_OVERRIDE_FLAG | TaxRegimeAllowRoundingOverrideFlag | — |
+| APPLICABILITY_RULE_FLAG | TaxRegimeApplicabilityRuleFlag | — |
+| AUTO_PRVN_FLAG | TaxRegimeAutoPrvnFlag | — |
+| BUCKET_LEVEL_FLAG | TaxRegimeBucketLevelFlag | — |
+| COLL_TAX_AUTHORITY_ID | TaxRegimeCollTaxAuthorityId | — |
+| COUNTRY_CODE | TaxRegimeCountryCode | — |
+| COUNTRY_OR_GROUP_CODE | TaxRegimeCountryOrGroupCode | — |
+| CREATED_BY | TaxRegimeCreatedBy | — |
+| CREATION_DATE | TaxRegimeCreationDate | — |
+| CROSS_REGIME_COMPOUNDING_FLAG | TaxRegimeCrossRegimeCompoundingFlag | — |
+| DEF_INCLUSIVE_TAX_FLAG | TaxRegimeDefInclusiveTaxFlag | — |
+| DEF_PLACE_OF_SUPPLY_TYPE_CODE | TaxRegimeDefPlaceOfSupplyTypeCode | — |
+| DEF_REC_SETTLEMENT_OPTION_CODE | TaxRegimeDefRecSettlementOptionCode | — |
+| DEF_REGISTR_PARTY_TYPE_CODE | TaxRegimeDefRegistrPartyTypeCode | — |
+| EFFECTIVE_FROM | TaxRegimeEffectiveFrom | — |
+| EFFECTIVE_TO | TaxRegimeEffectiveTo | — |
+| EXCHANGE_RATE_TYPE | TaxRegimeExchangeRateType | — |
+| EXEMPTION_PROCESS_FLAG | TaxRegimeExemptionProcessFlag | — |
+| GEOGRAPHY_ID | TaxRegimeGeographyId | — |
+| GEOGRAPHY_TYPE | TaxRegimeGeographyType | — |
+| HAS_EXCH_RATE_DATE_RULE_FLAG | TaxRegimeHasExchRateDateRuleFlag | — |
+| HAS_OTHER_JURISDICTIONS_FLAG | TaxRegimeHasOtherJurisdictionsFlag | — |
+| HAS_SUB_REGIME_FLAG | TaxRegimeHasSubRegimeFlag | — |
+| HAS_TAX_DET_DATE_RULE_FLAG | TaxRegimeHasTaxDetDateRuleFlag | — |
+| HAS_TAX_POINT_DATE_RULE_FLAG | TaxRegimeHasTaxPointDateRuleFlag | — |
+| LAST_UPDATE_DATE | TaxRegimeLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | TaxRegimeLastUpdateLogin | — |
+| LAST_UPDATED_BY | TaxRegimeLastUpdatedBy | — |
+| MINIMUM_ACCOUNTABLE_UNIT | TaxRegimeMinimumAccountableUnit | — |
+| OBJECT_VERSION_NUMBER | TaxRegimeObjectVersionNumber4 | — |
+| OBJECT_VERSION_NUMBER | TaxRegimeObjectVersionNumber5 | — |
+| PARENT_REGIME_CODE | TaxRegimeParentRegimeCode | — |
+| PERIOD_SET_NAME | TaxRegimePeriodSetName | — |
+| PLACE_OF_SUPPLY_RULE_FLAG | TaxRegimePlaceOfSupplyRuleFlag | — |
+| PROGRAM_APP_NAME | TaxRegimeProgramAppName | — |
+| PROGRAM_LOGIN_ID | TaxRegimeProgramLoginId | — |
+| PROGRAM_NAME | TaxRegimeProgramName | — |
+| RECORD_TYPE_CODE | TaxRegimeRecordTypeCode | — |
+| REGIME_PRECEDENCE | TaxRegimeRegimePrecedence | — |
+| REGIME_TYPE_FLAG | TaxRegimeRegimeTypeFlag | ✅ |
+| REGISTRATION_TYPE_RULE_FLAG | TaxRegimeRegistrationTypeRuleFlag | — |
+| REGN_NUM_SAME_AS_LE_FLAG | TaxRegimeRegnNumSameAsLeFlag | — |
+| REP_TAX_AUTHORITY_ID | TaxRegimeRepTaxAuthorityId | — |
+| REQUEST_ID | TaxRegimeRequestId | — |
+| TAX_ACCOUNT_PRECEDENCE_CODE | TaxRegimeTaxAccountPrecedenceCode | — |
+| TAX_AMT_THRSHLD_FLAG | TaxRegimeTaxAmtThrshldFlag | — |
+| TAX_CALC_RULE_FLAG | TaxRegimeTaxCalcRuleFlag | — |
+| TAX_CURRENCY_CODE | TaxRegimeTaxCurrencyCode | — |
+| TAX_INCLUSIVE_OVERRIDE_FLAG | TaxRegimeTaxInclusiveOverrideFlag | — |
+| TAX_PRECISION | TaxRegimeTaxPrecision | — |
+| TAX_RATE_RULE_FLAG | TaxRegimeTaxRateRuleFlag | — |
+| TAX_RATE_THRSHLD_FLAG | TaxRegimeTaxRateThrshldFlag | — |
+| TAX_REGIME_CODE | TaxRegimeTaxRegimeCode | — |
+| TAX_REGIME_ID | TaxRegimeTaxRegimeId | — |
+| TAX_REGIME_NAME | TaxRegimeTaxRegimeName | ✅ |
+| TAX_STATUS_RULE_FLAG | TaxRegimeTaxStatusRuleFlag | — |
+| TAXABLE_BASIS_RULE_FLAG | TaxRegimeTaxableBasisRuleFlag | — |
+| TAXABLE_BASIS_THRSHLD_FLAG | TaxRegimeTaxableBasisThrshldFlag | — |
+| THRSHLD_CHK_TMPLT_CODE | TaxRegimeThrshldChkTmpltCode | — |
+| THRSHLD_GROUPING_LVL_CODE | TaxRegimeThrshldGroupingLvlCode | — |
+| USE_LEGAL_MSG_FLAG | TaxRegimeUseLegalMsgFlag | — |
+| USE_TAX_REPORT_CONFIG_FLAG | TaxRegimeUseTaxReportConfigFlag | — |
+
+### [[taxexemption|TaxExemption]] (AR · BICC: 2/61)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| COLL_TAX_AUTHORITY_ID | TaxRegimeCollTaxAuthorityId | — |
+| COUNTRY_CODE | TaxRegimeCountryCode | — |
+| COUNTRY_OR_GROUP_CODE | TaxRegimeCountryOrGroupCode | — |
+| CREATED_BY | TaxRegimeCreatedBy | — |
+| CREATION_DATE | TaxRegimeCreationDate | — |
+| CROSS_REGIME_COMPOUNDING_FLAG | TaxRegimeCrossRegimeCompoundingFlag | — |
+| DEF_INCLUSIVE_TAX_FLAG | TaxRegimeDefInclusiveTaxFlag | — |
+| DEF_PLACE_OF_SUPPLY_TYPE_CODE | TaxRegimeDefPlaceOfSupplyTypeCode | — |
+| DEF_REC_SETTLEMENT_OPTION_CODE | TaxRegimeDefRecSettlementOptionCode | — |
+| DEF_REGISTR_PARTY_TYPE_CODE | TaxRegimeDefRegistrPartyTypeCode | — |
+| EFFECTIVE_FROM | TaxRegimeEffectiveFrom | — |
+| EFFECTIVE_TO | TaxRegimeEffectiveTo | — |
+| EXCHANGE_RATE_TYPE | TaxRegimeExchangeRateType | — |
+| EXEMPTION_PROCESS_FLAG | TaxRegimeExemptionProcessFlag | — |
+| GEOGRAPHY_ID | TaxRegimeGeographyId | — |
+| GEOGRAPHY_TYPE | TaxRegimeGeographyType | — |
+| HAS_EXCH_RATE_DATE_RULE_FLAG | TaxRegimeHasExchRateDateRuleFlag | — |
+| HAS_OTHER_JURISDICTIONS_FLAG | TaxRegimeHasOtherJurisdictionsFlag | — |
+| HAS_SUB_REGIME_FLAG | TaxRegimeHasSubRegimeFlag | — |
+| HAS_TAX_DET_DATE_RULE_FLAG | TaxRegimeHasTaxDetDateRuleFlag | — |
+| HAS_TAX_POINT_DATE_RULE_FLAG | TaxRegimeHasTaxPointDateRuleFlag | — |
+| LAST_UPDATE_DATE | TaxRegimeLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | TaxRegimeLastUpdateLogin | — |
+| LAST_UPDATED_BY | TaxRegimeLastUpdatedBy | — |
+| MINIMUM_ACCOUNTABLE_UNIT | TaxRegimeMinimumAccountableUnit | — |
+| OBJECT_VERSION_NUMBER | TaxRegimeObjectVersionNumber | — |
+| PARENT_REGIME_CODE | TaxRegimeParentRegimeCode | — |
+| PERIOD_SET_NAME | TaxRegimePeriodSetName | — |
+| PLACE_OF_SUPPLY_RULE_FLAG | TaxRegimePlaceOfSupplyRuleFlag | — |
+| PROGRAM_APP_NAME | TaxRegimeProgramAppName | — |
+| PROGRAM_LOGIN_ID | TaxRegimeProgramLoginId | — |
+| PROGRAM_NAME | TaxRegimeProgramName | — |
+| RECORD_TYPE_CODE | TaxRegimeRecordTypeCode | — |
+| REGIME_PRECEDENCE | TaxRegimeRegimePrecedence | — |
+| REGIME_TYPE_FLAG | TaxRegimeRegimeTypeFlag | — |
+| REGISTRATION_TYPE_RULE_FLAG | TaxRegimeRegistrationTypeRuleFlag | — |
+| REGN_NUM_SAME_AS_LE_FLAG | TaxRegimeRegnNumSameAsLeFlag | — |
+| REP_TAX_AUTHORITY_ID | TaxRegimeRepTaxAuthorityId | — |
+| REQUEST_ID | TaxRegimeRequestId | — |
+| ROUNDING_RULE_CODE | TaxRegimeRoundingRuleCode | — |
+| TAX_ACCOUNT_PRECEDENCE_CODE | TaxRegimeTaxAccountPrecedenceCode | — |
+| TAX_AMT_THRSHLD_FLAG | TaxRegimeTaxAmtThrshldFlag | — |
+| TAX_CALC_RULE_FLAG | TaxRegimeTaxCalcRuleFlag | — |
+| TAX_CURRENCY_CODE | TaxRegimeTaxCurrencyCode | — |
+| TAX_INCLUSIVE_OVERRIDE_FLAG | TaxRegimeTaxInclusiveOverrideFlag | — |
+| TAX_PRECISION | TaxRegimeTaxPrecision | — |
+| TAX_RATE_RULE_FLAG | TaxRegimeTaxRateRuleFlag | — |
+| TAX_RATE_THRSHLD_FLAG | TaxRegimeTaxRateThrshldFlag | — |
+| TAX_REGIME_CODE | TaxRegimeTaxRegimeCode | — |
+| TAX_REGIME_ID | TaxRegimeTaxRegimeId | — |
+| TAX_REGIME_NAME | TaxRegimeTaxRegimeName | ✅ |
+| TAX_STATUS_RULE_FLAG | TaxRegimeTaxStatusRuleFlag | — |
+| TAXABLE_BASIS_RULE_FLAG | TaxRegimeTaxableBasisRuleFlag | — |
+| TAXABLE_BASIS_THRSHLD_FLAG | TaxRegimeTaxableBasisThrshldFlag | — |
+| THRSHLD_CHK_TMPLT_CODE | TaxRegimeThrshldChkTmpltCode | — |
+| THRSHLD_GROUPING_LVL_CODE | TaxRegimeThrshldGroupingLvlCode | — |
+| UNIQUENESS_VALIDATION_LEVEL | TaxRegimeUniquenessValidationLevel | — |
+| USE_LEGAL_MSG_FLAG | TaxRegimeUseLegalMsgFlag | — |
+| USE_TAX_REPORT_CONFIG_FLAG | TaxRegimeUseTaxReportConfigFlag | — |
+| VALIDATION_LEVEL | TaxRegimeValidationLevel | — |
+| VALIDATION_TYPE | TaxRegimeValidationType | — |
+
+### [[taxregistration|TaxRegistration]] (AR · BICC: 3/65)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ALLOW_EXCEPTIONS_FLAG | TaxRegimeAllowExceptionsFlag | — |
+| ALLOW_EXEMPTIONS_FLAG | TaxRegimeAllowExemptionsFlag | — |
+| ALLOW_RECOVERABILITY_FLAG | TaxRegimeAllowRecoverabilityFlag | — |
+| ALLOW_ROUNDING_OVERRIDE_FLAG | TaxRegimeAllowRoundingOverrideFlag | — |
+| APPLICABILITY_RULE_FLAG | TaxRegimeApplicabilityRuleFlag | — |
+| AUTO_PRVN_FLAG | TaxRegimeAutoPrvnFlag | — |
+| BUCKET_LEVEL_FLAG | TaxRegimeBucketLevelFlag | — |
+| COLL_TAX_AUTHORITY_ID | TaxRegimeCollTaxAuthorityId | — |
+| COUNTRY_CODE | TaxRegimeCountryCode | — |
+| COUNTRY_OR_GROUP_CODE | TaxRegimeCountryOrGroupCode | — |
+| CREATED_BY | TaxRegimeCreatedBy | — |
+| CREATION_DATE | TaxRegimeCreationDate | — |
+| CROSS_REGIME_COMPOUNDING_FLAG | TaxRegimeCrossRegimeCompoundingFlag | — |
+| DEF_INCLUSIVE_TAX_FLAG | TaxRegimeDefInclusiveTaxFlag | — |
+| DEF_PLACE_OF_SUPPLY_TYPE_CODE | TaxRegimeDefPlaceOfSupplyTypeCode | — |
+| DEF_REC_SETTLEMENT_OPTION_CODE | TaxRegimeDefRecSettlementOptionCode | — |
+| DEF_REGISTR_PARTY_TYPE_CODE | TaxRegimeDefRegistrPartyTypeCode | — |
+| EFFECTIVE_FROM | TaxRegimeEffectiveFrom | — |
+| EFFECTIVE_TO | TaxRegimeEffectiveTo | — |
+| EXCHANGE_RATE_TYPE | TaxRegimeExchangeRateType | — |
+| EXEMPTION_PROCESS_FLAG | TaxRegimeExemptionProcessFlag | — |
+| GEOGRAPHY_ID | TaxRegimeGeographyId | — |
+| GEOGRAPHY_TYPE | TaxRegimeGeographyType | — |
+| HAS_EXCH_RATE_DATE_RULE_FLAG | TaxRegimeHasExchRateDateRuleFlag | — |
+| HAS_OTHER_JURISDICTIONS_FLAG | TaxRegimeHasOtherJurisdictionsFlag | — |
+| HAS_SUB_REGIME_FLAG | TaxRegimeHasSubRegimeFlag | — |
+| HAS_TAX_DET_DATE_RULE_FLAG | TaxRegimeHasTaxDetDateRuleFlag | — |
+| HAS_TAX_POINT_DATE_RULE_FLAG | TaxRegimeHasTaxPointDateRuleFlag | — |
+| LAST_UPDATE_DATE | TaxRegimeLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | TaxRegimeLastUpdateLogin | — |
+| LAST_UPDATED_BY | TaxRegimeLastUpdatedBy | — |
+| MINIMUM_ACCOUNTABLE_UNIT | TaxRegimeMinimumAccountableUnit | — |
+| OBJECT_VERSION_NUMBER | TaxRegimeObjectVersionNumber4 | — |
+| OBJECT_VERSION_NUMBER | TaxRegimeObjectVersionNumber5 | — |
+| PARENT_REGIME_CODE | TaxRegimeParentRegimeCode | — |
+| PERIOD_SET_NAME | TaxRegimePeriodSetName | — |
+| PLACE_OF_SUPPLY_RULE_FLAG | TaxRegimePlaceOfSupplyRuleFlag | — |
+| PROGRAM_APP_NAME | TaxRegimeProgramAppName | — |
+| PROGRAM_LOGIN_ID | TaxRegimeProgramLoginId | — |
+| PROGRAM_NAME | TaxRegimeProgramName | — |
+| RECORD_TYPE_CODE | TaxRegimeRecordTypeCode | — |
+| REGIME_PRECEDENCE | TaxRegimeRegimePrecedence | — |
+| REGIME_TYPE_FLAG | TaxRegimeRegimeTypeFlag | ✅ |
+| REGISTRATION_TYPE_RULE_FLAG | TaxRegimeRegistrationTypeRuleFlag | — |
+| REGN_NUM_SAME_AS_LE_FLAG | TaxRegimeRegnNumSameAsLeFlag | — |
+| REP_TAX_AUTHORITY_ID | TaxRegimeRepTaxAuthorityId | — |
+| REQUEST_ID | TaxRegimeRequestId | — |
+| TAX_ACCOUNT_PRECEDENCE_CODE | TaxRegimeTaxAccountPrecedenceCode | — |
+| TAX_AMT_THRSHLD_FLAG | TaxRegimeTaxAmtThrshldFlag | — |
+| TAX_CALC_RULE_FLAG | TaxRegimeTaxCalcRuleFlag | — |
+| TAX_CURRENCY_CODE | TaxRegimeTaxCurrencyCode | — |
+| TAX_INCLUSIVE_OVERRIDE_FLAG | TaxRegimeTaxInclusiveOverrideFlag | — |
+| TAX_PRECISION | TaxRegimeTaxPrecision | — |
+| TAX_RATE_RULE_FLAG | TaxRegimeTaxRateRuleFlag | — |
+| TAX_RATE_THRSHLD_FLAG | TaxRegimeTaxRateThrshldFlag | — |
+| TAX_REGIME_CODE | TaxRegimeTaxRegimeCode | — |
+| TAX_REGIME_ID | TaxRegimeTaxRegimeId | — |
+| TAX_REGIME_NAME | TaxRegimeTaxRegimeName | ✅ |
+| TAX_STATUS_RULE_FLAG | TaxRegimeTaxStatusRuleFlag | — |
+| TAXABLE_BASIS_RULE_FLAG | TaxRegimeTaxableBasisRuleFlag | — |
+| TAXABLE_BASIS_THRSHLD_FLAG | TaxRegimeTaxableBasisThrshldFlag | — |
+| THRSHLD_CHK_TMPLT_CODE | TaxRegimeThrshldChkTmpltCode | — |
+| THRSHLD_GROUPING_LVL_CODE | TaxRegimeThrshldGroupingLvlCode | — |
+| USE_LEGAL_MSG_FLAG | TaxRegimeUseLegalMsgFlag | — |
+| USE_TAX_REPORT_CONFIG_FLAG | TaxRegimeUseTaxReportConfigFlag | — |

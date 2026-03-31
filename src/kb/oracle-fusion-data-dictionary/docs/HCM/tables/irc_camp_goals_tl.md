@@ -106,3 +106,22 @@ WHERE  tl.LANGUAGE = 'PT';
 
 - [Oracle Docs -- IRC_CAMP_GOALS_TL](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/irccampgoalstl.html)
 - [[hcm-module-data-dictionary]] -- Dossie do modulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[campgoalpvo|CampGoalPVO]] (HCM · BICC: 2/10)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | CampGoalTranslationPEOCreatedBy3 | — |
+| CREATION_DATE | CampGoalTranslationPEOCreationDate3 | — |
+| GOAL_ID | CampGoalTranslationPEOGoalId2 | — |
+| GOAL_NAME | CampGoalTranslationPEOGoalName | ✅ |
+| LANGUAGE | CampGoalTranslationPEOLanguage1 | — |
+| LAST_UPDATE_DATE | CampGoalTranslationPEOLastUpdateDate3 | ✅ |
+| LAST_UPDATE_LOGIN | CampGoalTranslationPEOLastUpdateLogin3 | — |
+| LAST_UPDATED_BY | CampGoalTranslationPEOLastUpdatedBy3 | — |
+| OBJECT_VERSION_NUMBER | CampGoalTranslationPEOObjectVersionNumber3 | — |
+| SOURCE_LANG | CampGoalTranslationPEOSourceLang1 | — |

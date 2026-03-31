@@ -117,6 +117,28 @@ WHERE  x.PLAN_ID = :p_plan_id
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[personratespvo|PersonRatesPVO]] (HCM · BICC: 4/4)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CURRENCY | ExchangeRatePEOCurrency | ✅ |
+| PERIOD_ID | ExchangeRatePEOPeriodId | ✅ |
+| PLAN_ID | ExchangeRatePEOPlanId | ✅ |
+| XCHG_RATE | ExchangeRatePEOXchgRate | ✅ |
+
+### [[personratespvoviewall|PersonRatesPVOViewAll]] (HCM · BICC: 1/4)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CURRENCY | ExchangeRatePEOCurrency | ✅ |
+| PERIOD_ID | ExchangeRatePEOPeriodId | — |
+| PLAN_ID | ExchangeRatePEOPlanId | — |
+| XCHG_RATE | ExchangeRatePEOXchgRate | — |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — CMP_CWB_XCHG](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/cmpcwbxchg.html)

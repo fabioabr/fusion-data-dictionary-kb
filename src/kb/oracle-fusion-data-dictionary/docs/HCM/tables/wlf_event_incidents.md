@@ -116,3 +116,26 @@ ORDER BY ei.INCIDENT_DATE DESC;
 
 - [Oracle Docs — WLF_EVENT_INCIDENTS](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/wlfeventincidents.html)
 - [[hcm-module-data-dictionary]] — Dossiê do módulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[eventincidentpvo|EventIncidentPVO]] (HCM · BICC: 4/14)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| COMMENTS | EventIncidentPEOComments | — |
+| CREATED_BY | EventIncidentPEOCreatedBy | — |
+| CREATION_DATE | EventIncidentPEOCreationDate | — |
+| ENTERPRISE_ID | EventIncidentPEOEnterpriseId | — |
+| EVENT_DISPOSITION_ID | EventIncidentPEOEventDispositionId | — |
+| EVENT_ID | EventIncidentPEOEventId | — |
+| EVENT_INCIDENT_ID | EventIncidentPEOEventIncidentId | ✅ |
+| LAST_UPDATE_DATE | EventIncidentPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | EventIncidentPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | EventIncidentPEOLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | EventIncidentPEOObjectVersionNumber | — |
+| REASON_CODE | EventIncidentPEOReasonCode | ✅ |
+| STATUS | EventIncidentPEOStatus | ✅ |
+| STATUS_LAST_MODIFIED | EventIncidentPEOStatusLastModified | — |

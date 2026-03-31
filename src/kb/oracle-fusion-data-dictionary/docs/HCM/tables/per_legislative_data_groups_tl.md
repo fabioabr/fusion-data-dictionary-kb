@@ -100,6 +100,40 @@ WHERE  tl.LANGUAGE = 'PTB';
 - Tabela de traduções (_TL) — chave composta por `LEGISLATIVE_DATA_GROUP_ID` + `LANGUAGE`.
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[legislativedatagrouppvo|LegislativeDataGroupPVO]] (GL · BICC: 7/10)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | LegislativeDataGroupTLEOCreatedBy | ✅ |
+| CREATION_DATE | LegislativeDataGroupTLEOCreationDate | ✅ |
+| LANGUAGE | LegislativeDataGroupTLEOLanguage | ✅ |
+| LAST_UPDATE_DATE | LegislativeDataGroupTLEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LegislativeDataGroupTLEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | LegislativeDataGroupTLEOLastUpdatedBy | ✅ |
+| LEGISLATIVE_DATA_GROUP_ID | LegislativeDataGroupTLEOLegislativeDataGroupId | — |
+| NAME | LegislativeDataGroupTLEOName | ✅ |
+| OBJECT_VERSION_NUMBER | LegislativeDataGroupTLEOObjectVersionNumber | — |
+| SOURCE_LANG | LegislativeDataGroupTLEOSourceLang | ✅ |
+
+### [[legislativedatagrouptranslationpvo|LegislativeDataGroupTranslationPVO]] (GL · BICC: 10/10)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | LegislativeDataGroupTLEOCreatedBy | ✅ |
+| CREATION_DATE | LegislativeDataGroupTLEOCreationDate | ✅ |
+| LANGUAGE | Language | ✅ |
+| LAST_UPDATE_DATE | LegislativeDataGroupTLEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LegislativeDataGroupTLEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | LegislativeDataGroupTLEOLastUpdatedBy | ✅ |
+| LEGISLATIVE_DATA_GROUP_ID | LegislativeDataGroupId | ✅ |
+| NAME | LegislativeDataGroupTLEOName | ✅ |
+| OBJECT_VERSION_NUMBER | LegislativeDataGroupTLEOObjectVersionNumber | ✅ |
+| SOURCE_LANG | LegislativeDataGroupTLEOSourceLang | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — PER_LEGISLATIVE_DATA_GROUPS_TL](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/perlegislativedatagroupstl.html)

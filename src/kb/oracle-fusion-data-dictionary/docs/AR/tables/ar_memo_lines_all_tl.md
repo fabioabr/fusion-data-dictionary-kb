@@ -96,6 +96,152 @@ SELECT tl.memo_line_id,
 - A tabela `_TL` é mantida automaticamente pelo framework MLS do Oracle — ao adicionar um novo idioma ao ambiente, registros são criados automaticamente com `SOURCE_LANG` apontando para o idioma base.
 - Em migrações, é necessário carregar **ambas as tabelas** (`_B` e `_TL`) para cada memo line.
 
+## 🔗 PVOs Relacionados
+
+### [[completedtrxrevadjdistributionpvo|CompletedTrxRevAdjDistributionPVO]] (AR)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| DESCRIPTION | MemoLineDescription | — |
+| LANGUAGE | MemoLineTranslationLanguage | — |
+| MEMO_LINE_ID | MemoLineTranslationMemoLineId | — |
+| NAME | MemoLineName | — |
+| SET_ID | MemoLineTranslationSetId | — |
+
+### [[completedtrxrevenuedistributionpvo|CompletedTrxRevenueDistributionPVO]] (AR)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| DESCRIPTION | MemoLineDescription | — |
+| LANGUAGE | MemoLineTranslationLanguage | — |
+| MEMO_LINE_ID | MemoLineTranslationMemoLineId | — |
+| NAME | MemoLineName | — |
+| SET_ID | MemoLineTranslationSetId | — |
+
+### [[linesalescreditpvo|LineSalesCreditPVO]] (AR · BICC: 2/5)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| DESCRIPTION | MemoLineDescription | ✅ |
+| LANGUAGE | MemoLineTranslationLanguage | — |
+| MEMO_LINE_ID | MemoLineTranslationMemoLineId | — |
+| NAME | MemoLineName | ✅ |
+| SET_ID | MemoLineTranslationSetId | — |
+
+### [[memolineextractpvo|MemoLineExtractPVO]] (OTHER · BICC: 12/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | ArMemoLineTLCreatedBy | ✅ |
+| CREATION_DATE | ArMemoLineTLCreationDate | ✅ |
+| DESCRIPTION | ArMemoLineTLDescription | ✅ |
+| LANGUAGE | ArMemoLineTLLanguage | ✅ |
+| LAST_UPDATE_DATE | ArMemoLineTLLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ArMemoLineTLLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | ArMemoLineTLLastUpdatedBy | ✅ |
+| MEMO_LINE_ID | ArMemoLineTLMemoLineId | ✅ |
+| NAME | ArMemoLineTLName | ✅ |
+| SEED_DATA_SOURCE | ArMemoLineTLSeedDataSource | ✅ |
+| SET_ID | ArMemoLineTLSetId | ✅ |
+| SOURCE_LANG | ArMemoLineTLSourceLang | ✅ |
+
+### [[memolinepvo|MemoLinePVO]] (AR · BICC: 6/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | MemoLineTranslationCreatedBy | — |
+| CREATION_DATE | MemoLineTranslationCreationDate | — |
+| DESCRIPTION | MemoLineTranslationDescription | ✅ |
+| LANGUAGE | MemoLineTranslationLanguage | ✅ |
+| LAST_UPDATE_DATE | MemoLineTranslationLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | MemoLineTranslationLastUpdateLogin | — |
+| LAST_UPDATED_BY | MemoLineTranslationLastUpdatedBy | — |
+| MEMO_LINE_ID | MemoLineId | ✅ |
+| NAME | MemoLineTranslationName | ✅ |
+| OBJECT_VERSION_NUMBER | MemoLineTranslationObjectVersionNumber | — |
+| SET_ID | SetId | ✅ |
+| SOURCE_LANG | MemoLineTranslationSourceLang | — |
+
+### [[memolinetlextractpvo|MemoLineTLExtractPVO]] (OTHER · BICC: 13/13)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | ArMemoLineTLCreatedBy | ✅ |
+| CREATION_DATE | ArMemoLineTLCreationDate | ✅ |
+| DESCRIPTION | ArMemoLineTLDescription | ✅ |
+| LANGUAGE | ArMemoLineTLLanguage | ✅ |
+| LAST_UPDATE_DATE | ArMemoLineTLLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ArMemoLineTLLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | ArMemoLineTLLastUpdatedBy | ✅ |
+| MEMO_LINE_ID | ArMemoLineTLMemoLineId | ✅ |
+| NAME | ArMemoLineTLName | ✅ |
+| OBJECT_VERSION_NUMBER | ArMemoLineTLObjectVersionNumber | ✅ |
+| SEED_DATA_SOURCE | ArMemoLineTLSeedDataSource | ✅ |
+| SET_ID | ArMemoLineTLSetId | ✅ |
+| SOURCE_LANG | ArMemoLineTLSourceLang | ✅ |
+
+### [[salesinvoicecustomertrxlinespvo|SalesInvoiceCustomerTrxLinesPVO]] (AR)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| DESCRIPTION | MemoLineDescription | — |
+| LANGUAGE | MemoLineTranslationLanguage | — |
+| MEMO_LINE_ID | MemoLineTranslationMemoLineId | — |
+| NAME | MemoLineName | — |
+| SET_ID | MemoLineTranslationSetId | — |
+
+### [[transactionhistorydistributionpvo|TransactionHistoryDistributionPVO]] (AR)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| DESCRIPTION | MemoLineDescription | — |
+| LANGUAGE | MemoLineTranslationLanguage | — |
+| MEMO_LINE_ID | MemoLineTranslationMemoLineId | — |
+| NAME | MemoLineName | — |
+| SET_ID | MemoLineTranslationSetId | — |
+
+### [[transactionhistorypvo|TransactionHistoryPVO]] (AR)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| DESCRIPTION | MemoLineDescription | — |
+| LANGUAGE | MemoLineTranslationLanguage | — |
+| MEMO_LINE_ID | MemoLineTranslationMemoLineId | — |
+| NAME | MemoLineName | — |
+| SET_ID | MemoLineTranslationSetId | — |
+
+### [[transactionlinebillsreceivablepvo|TransactionLineBillsReceivablePVO]] (AR)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| DESCRIPTION | MemoLineDescription | — |
+| LANGUAGE | MemoLineTranslationLanguage | — |
+| MEMO_LINE_ID | MemoLineTranslationMemoLineId | — |
+| NAME | MemoLineName | — |
+| SET_ID | MemoLineTranslationSetId | — |
+
+### [[transactionlinedistributionpvo|TransactionLineDistributionPVO]] (AR · BICC: 2/5)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| DESCRIPTION | MemoLineDescription | ✅ |
+| LANGUAGE | MemoLineTranslationLanguage | — |
+| MEMO_LINE_ID | MemoLineTranslationMemoLineId | — |
+| NAME | MemoLineName | ✅ |
+| SET_ID | MemoLineTranslationSetId | — |
+
+### [[transactionlinepvo|TransactionLinePVO]] (AR · BICC: 2/5)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| DESCRIPTION | MemoLineDescription | ✅ |
+| LANGUAGE | MemoLineTranslationLanguage | — |
+| MEMO_LINE_ID | MemoLineTranslationMemoLineId | — |
+| NAME | MemoLineName | ✅ |
+| SET_ID | MemoLineTranslationSetId | — |
+
+---
+
 ## 📚 Referências
 
 - Oracle Fusion Cloud Financials — Accounts Receivable Tables (OEDMF Release 13)

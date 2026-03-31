@@ -104,3 +104,14 @@ WHERE  cli.DAYS_SINCE_INTERACTION > 30;
 
 - [Oracle Docs -- IRC_CAND_LAST_INTERACTION_V](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/irccandlastinteractionv.html)
 - [[hcm-module-data-dictionary]] -- Dossie do modulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[candidatepvo|CandidatePVO]] (HCM)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| INTERACTION_DATE | CandLastInteractionPEOInteractionDate | — |
+| INTERACTION_ID | CandLastInteractionInteractionId | — |

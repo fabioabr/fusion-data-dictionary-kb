@@ -109,3 +109,44 @@ WHERE  cg.CAMPAIGN_ID = :p_campaign_id;
 
 - [Oracle Docs -- IRC_CAMP_GOALS_B](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/irccampgoalsb.html)
 - [[hcm-module-data-dictionary]] -- Dossie do modulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[campconverapplypvo|CampConverApplyPVO]] (HCM · BICC: 1/2)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| GOAL_ID | GoalId | ✅ |
+| GOAL_TYPE_CODE | CampGoalBPEOGoalTypeCode | — |
+
+### [[campconverreferpvo|CampConverReferPVO]] (HCM · BICC: 1/2)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| GOAL_ID | GoalId | ✅ |
+| GOAL_TYPE_CODE | GoalTypeCode | — |
+
+### [[campgoalpvo|CampGoalPVO]] (HCM · BICC: 5/11)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CAMPAIGN_ID | CampGoalBPEOCampaignId | — |
+| CREATED_BY | CampGoalBPEOCreatedBy | — |
+| CREATION_DATE | CampGoalBPEOCreationDate | — |
+| GOAL_ID | GoalId | ✅ |
+| GOAL_TYPE_CODE | CampGoalBPEOGoalTypeCode | ✅ |
+| LAST_UPDATE_DATE | CampGoalBPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | CampGoalBPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | CampGoalBPEOLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | CampGoalBPEOObjectVersionNumber | — |
+| PRIMARY_GOAL_FLAG | CampGoalBPEOPrimaryGoalFlag | ✅ |
+| SYSTEM_GOAL_FLAG | CampGoalBPEOSystemGoalFlag | ✅ |
+
+### [[camptrackresppvo|CampTrackRespPVO]] (HCM · BICC: 1/2)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| GOAL_ID | GoalId | ✅ |
+| GOAL_TYPE_CODE | CampGoalBPEOGoalTypeCode | — |

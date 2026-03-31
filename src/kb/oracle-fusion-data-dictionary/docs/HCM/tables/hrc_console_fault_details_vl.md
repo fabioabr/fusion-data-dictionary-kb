@@ -101,6 +101,32 @@ ORDER BY f.FAULT_TIMESTAMP DESC;
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[consoleissuefaultdetailsp1|ConsoleIssueFaultDetailsP1]] (AP · BICC: 6/17)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | ConsoleIssueFaultDetailsPEOCreatedBy | — |
+| CREATION_DATE | ConsoleIssueFaultDetailsPEOCreationDate | — |
+| DESCRIPTION | ConsoleIssueFaultDetailsPEODescription | ✅ |
+| ENTERPRISE_ID | ConsoleIssueFaultDetailsPEOEnterpriseId | — |
+| ERROR_CODE | ConsoleIssueFaultDetailsPEOErrorCode | — |
+| FAULT_CODE | ConsoleIssueFaultDetailsPEOFaultCode | — |
+| FAULT_DETAILS_ID | ConsoleIssueFaultDetailsPEOFaultDetailsId | ✅ |
+| ISSUE_TITLE | ConsoleIssueFaultDetailsPEOIssueTitle | ✅ |
+| ISSUE_TYPE | ConsoleIssueFaultDetailsPEOIssueType | ✅ |
+| ISSUE_TYPE_CODE | ConsoleIssueFaultDetailsPEOIssueTypeCode | — |
+| LAST_UPDATE_DATE | ConsoleIssueFaultDetailsPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ConsoleIssueFaultDetailsPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | ConsoleIssueFaultDetailsPEOLastUpdatedBy | — |
+| MODULE_ID | ConsoleIssueFaultDetailsPEOModuleId | — |
+| OBJECT_VERSION_NUMBER | ConsoleIssueFaultDetailsPEOObjectVersionNumber | — |
+| RESOLUTION | ConsoleIssueFaultDetailsPEOResolution | ✅ |
+| SGUID | ConsoleIssueFaultDetailsPEOSguid | — |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Fusion HCM Tables and Views](https://docs.oracle.com/en/cloud/saas/human-resources/25a/)

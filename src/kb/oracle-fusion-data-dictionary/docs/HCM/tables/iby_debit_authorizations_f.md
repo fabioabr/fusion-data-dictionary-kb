@@ -64,3 +64,26 @@ updated_at: 2026-03-26
 ## 📎 Uso Típico
 
 (a ser preenchido na etapa 03)
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[debitauthorizations|DebitAuthorizations]] (AR · BICC: 12/14)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| AMENDMENT_REASON_CODE | DebitAuthorizeAmendmentReasonCode | ✅ |
+| AUTH_CANCEL_DATE | DebitAuthorizeAuthCancelDate | ✅ |
+| AUTH_SIGN_DATE | DebitAuthorizeAuthSignDate | ✅ |
+| AUTHORIZATION_REFERENCE_NUMBER | DebitAuthorizeAuthorizationReferenceNumber | ✅ |
+| AUTHORIZATION_REVISION_NUMBER | DebitAuthorizeAuthorizationRevisionNumber | ✅ |
+| CREDITOR_IDENTIFIER | DebitAuthorizeCreditorIdentifier | ✅ |
+| DEBIT_AUTH_METHOD | DebitAuthorizeDebitAuthMethod | ✅ |
+| DEBIT_AUTHORIZATION_ID | DebitAuthorizeDebitAuthorizationId | ✅ |
+| DEBTOR_PARTY_ID | DebitAuthorizeDebtorPartyId | — |
+| EFFECTIVE_END_DATE | DebitAuthorizeEffectiveEndDate | ✅ |
+| EFFECTIVE_START_DATE | DebitAuthorizeEffectiveStartDate | ✅ |
+| EXTERNAL_BANK_ACCOUNT_ID | DebitAuthorizeExternalBankAccountId | — |
+| PAYMENT_TYPE_CODE | DebitAuthorizePaymentTypeCode | ✅ |
+| PRIMARY_FLAG | DebitAuthorizePrimaryFlag | ✅ |

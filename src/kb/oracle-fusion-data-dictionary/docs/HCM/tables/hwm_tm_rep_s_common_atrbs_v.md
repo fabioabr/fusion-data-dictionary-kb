@@ -111,3 +111,39 @@ WHERE  v.PERSON_ID = :p_person_id;
 
 - [Oracle Docs — HWM_TM_REP_S_COMMON_ATRBS_V](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/hwmtmrepscommonatrbsv.html)
 - [[hcm-module-data-dictionary]] — Dossie do modulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[historicrptabstimeentrypvo|HistoricRptAbsTimeEntryPVO]] (HCM · BICC: 2/3)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| COMMON_INTERNAL_SOURCE | CommonInternalSource | ✅ |
+| COMMON_OWNER | CommonOwner | ✅ |
+| COMMON_TIME_REPOS_ATRB_ID | CommonTimeReposAtrbId1 | — |
+
+### [[plannedscheduleshiftentrypvo|PlannedScheduleShiftEntryPVO]] (HCM · BICC: 1/3)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| COMMON_INTERNAL_SOURCE | SimpleCommonAttributePEOCommonInternalSource | — |
+| COMMON_OWNER | SimpleCommonAttributePEOCommonOwner | ✅ |
+| COMMON_TIME_REPOS_ATRB_ID | CommonTimeReposAtrbId | — |
+
+### [[publishedscheduleshiftentrypvo|PublishedScheduleShiftEntryPVO]] (HCM · BICC: 1/3)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| COMMON_INTERNAL_SOURCE | SimpleCommonAttributePEOCommonInternalSource | — |
+| COMMON_OWNER | SimpleCommonAttributePEOCommonOwner | ✅ |
+| COMMON_TIME_REPOS_ATRB_ID | CommonTimeReposAtrbId | — |
+
+### [[rptabstimeentrypvo|RptAbsTimeEntryPVO]] (HCM · BICC: 2/3)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| COMMON_INTERNAL_SOURCE | CommonInternalSource | ✅ |
+| COMMON_OWNER | CommonOwner | ✅ |
+| COMMON_TIME_REPOS_ATRB_ID | CommonTimeReposAtrbId1 | — |

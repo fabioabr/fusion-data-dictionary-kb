@@ -111,3 +111,43 @@ WHERE  v.PERSON_ID = :p_person_id;
 
 - [Oracle Docs — HWM_TM_REP_S_ABS_HP_ATRBS_V](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/hwmtmrepsabshpatrbsv.html)
 - [[hcm-module-data-dictionary]] — Dossie do modulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[absencetimeentrypvo|AbsenceTimeEntryPVO]] (HCM · BICC: 2/4)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ANC_ABSENCE_ENTRY_ID | AncAbsenceEntryId | ✅ |
+| ANC_ATTRIBUTE_CATEGORY | AncAttributeCategory | — |
+| ANC_END_OF_BREAKDOWN | AncEndOfBreakdown | ✅ |
+| ANC_TIME_REPOS_ATRB_ID | AncTimeRepositoryAttributeId | — |
+
+### [[historicabsencetimeentrypvo|HistoricAbsenceTimeEntryPVO]] (HCM)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ANC_ABSENCE_ENTRY_ID | AncAbsenceEntryId | — |
+| ANC_ATTRIBUTE_CATEGORY | AncAttributeCategory | — |
+| ANC_END_OF_BREAKDOWN | AncEndOfBreakdown | — |
+| ANC_TIME_REPOS_ATRB_ID | AncTimeRepositoryAttributeId | — |
+
+### [[historicrptabstimeentrypvo|HistoricRptAbsTimeEntryPVO]] (HCM · BICC: 2/4)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ANC_ABSENCE_ENTRY_ID | SimpleAbsHeaderParamsAtrbPEOAncAbsenceEntryId | ✅ |
+| ANC_ATTRIBUTE_CATEGORY | SimpleAbsHeaderParamsAtrbPEOAncAttributeCategory | — |
+| ANC_END_OF_BREAKDOWN | SimpleAbsHeaderParamsAtrbPEOAncEndOfBreakdown | ✅ |
+| ANC_TIME_REPOS_ATRB_ID | SimpleAbsHeaderParamsAtrbPEOAncTimeRepositoryAttributeId | — |
+
+### [[rptabstimeentrypvo|RptAbsTimeEntryPVO]] (HCM · BICC: 2/4)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ANC_ABSENCE_ENTRY_ID | SimpleAbsHeaderParamsAtrbPEOAncAbsenceEntryId | ✅ |
+| ANC_ATTRIBUTE_CATEGORY | SimpleAbsHeaderParamsAtrbPEOAncAttributeCategory | — |
+| ANC_END_OF_BREAKDOWN | SimpleAbsHeaderParamsAtrbPEOAncEndOfBreakdown | ✅ |
+| ANC_TIME_REPOS_ATRB_ID | SimpleAbsHeaderParamsAtrbPEOAncTimeRepositoryAttributeId | — |

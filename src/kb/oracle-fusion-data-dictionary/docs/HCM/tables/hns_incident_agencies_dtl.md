@@ -114,6 +114,29 @@ WHERE  a.AGENCY_TYPE = 'REGULATORY';
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[hnsincidentagenciespvo|HNSIncidentAgenciesPVO]] (HCM · BICC: 14/14)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ATTENDED_SITE_FLAG | HNSIncidentAgenciesPEOAttendedSiteFlag | ✅ |
+| CREATED_BY | HNSIncidentAgenciesPEOCreatedBy | ✅ |
+| CREATION_DATE | HNSIncidentAgenciesPEOCreationDate | ✅ |
+| DATE_NOTIFIED | HNSIncidentAgenciesPEODateNotified | ✅ |
+| DATE_SITE_ATTENDED | HNSIncidentAgenciesPEODateSiteAttended | ✅ |
+| DELETED_FLAG | HNSIncidentAgenciesPEODeletedFlag | ✅ |
+| INCIDENT_AGENCY_ID | HNSIncidentAgenciesPEOIncidentAgencyId | ✅ |
+| INCIDENT_ID | HNSIncidentAgenciesPEOIncidentId | ✅ |
+| LAST_UPDATE_DATE | HNSIncidentAgenciesPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | HNSIncidentAgenciesPEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | HNSIncidentAgenciesPEOLastUpdatedBy | ✅ |
+| NOTIFIED_AGENCY_CODE | HNSIncidentAgenciesPEONotifiedAgencyCode | ✅ |
+| NOTIFIED_BY | HNSIncidentAgenciesPEONotifiedBy | ✅ |
+| OBJECT_VERSION_NUMBER | HNSIncidentAgenciesPEOObjectVersionNumber | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — HNS_INCIDENT_AGENCIES_DTL](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/hnsincidentagenciesdtl.html)

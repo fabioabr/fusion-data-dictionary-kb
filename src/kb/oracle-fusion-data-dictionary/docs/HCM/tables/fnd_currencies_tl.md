@@ -62,3 +62,59 @@ updated_at: 2026-03-26
 ## 📎 Uso Típico
 
 (a ser preenchido na etapa 03)
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[currenciespvo|CurrenciesPVO]] (HCM · BICC: 2/5)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CURRENCY_CODE | CurrencyCode1 | — |
+| DESCRIPTION | Description | ✅ |
+| LANGUAGE | Language | — |
+| NAME | Name | ✅ |
+| SOURCE_LANG | SourceLang | — |
+
+### [[currenciestlpvo|CurrenciesTLPVO]] (HCM · BICC: 10/10)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | CreatedBy | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| CURRENCY_CODE | CurrencyCode | ✅ |
+| DESCRIPTION | Description | ✅ |
+| LANGUAGE | Language | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | LastUpdatedBy | ✅ |
+| NAME | Name | ✅ |
+| SOURCE_LANG | SourceLang | ✅ |
+
+### [[dimriskpvo|DimRiskPVO]] (OTHER · BICC: 3/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | CurrencyPEOCreatedBy | — |
+| CREATION_DATE | CurrencyPEOCreationDate | — |
+| CURRENCY_CODE | CurrencyPEOCurrencyCode | ✅ |
+| DESCRIPTION | CurrencyPEODescription | — |
+| ENTERPRISE_ID | CurrencyPEOEnterpriseId | — |
+| LANGUAGE | CurrencyPEOLanguage | — |
+| LAST_UPDATE_DATE | CurrencyPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | CurrencyPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | CurrencyPEOLastUpdatedBy | — |
+| NAME | CurrencyPEOName | ✅ |
+| SEED_DATA_SOURCE | CurrencyPEOSeedDataSource | — |
+| SOURCE_LANG | CurrencyPEOSourceLang | — |
+
+### [[dummycurrenciespvo|DummyCurrenciesPVO]] (HCM · BICC: 2/5)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CURRENCY_CODE | CurrencyCode1 | — |
+| DESCRIPTION | Description | ✅ |
+| LANGUAGE | Language | — |
+| NAME | Name | ✅ |
+| SOURCE_LANG | SourceLang | — |

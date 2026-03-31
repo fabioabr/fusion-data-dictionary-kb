@@ -111,3 +111,35 @@ WHERE  v.PERSON_ID = :p_person_id;
 
 - [Oracle Docs — HWM_TM_REP_M_ANC_ATRBS_V](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/hwmtmrepmancatrbsv.html)
 - [[hcm-module-data-dictionary]] — Dossie do modulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[absencetimeentrypvo|AbsenceTimeEntryPVO]] (HCM · BICC: 1/2)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ANC_ABSENCE_TYPE | AncAbsenceType | ✅ |
+| ANC_MASTER_TIME_REPOS_ATRB_ID | AncMasterTimeRepositoryAttributeId | — |
+
+### [[historicabsencetimeentrypvo|HistoricAbsenceTimeEntryPVO]] (HCM)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ANC_ABSENCE_TYPE | AncAbsenceType | — |
+| ANC_MASTER_TIME_REPOS_ATRB_ID | AncMasterTimeRepositoryAttributeId | — |
+
+### [[historicrptabstimeentrypvo|HistoricRptAbsTimeEntryPVO]] (HCM · BICC: 1/2)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ANC_ABSENCE_TYPE | MasterAbsTypeAttributePEOAncAbsenceType | ✅ |
+| ANC_MASTER_TIME_REPOS_ATRB_ID | MasterAbsTypeAttributePEOAncMasterTimeRepositoryAttributeId | — |
+
+### [[rptabstimeentrypvo|RptAbsTimeEntryPVO]] (HCM · BICC: 1/2)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ANC_ABSENCE_TYPE | MasterAbsTypeAttributePEOAncAbsenceType | ✅ |
+| ANC_MASTER_TIME_REPOS_ATRB_ID | MasterAbsTypeAttributePEOAncMasterTimeRepositoryAttributeId | — |

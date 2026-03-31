@@ -111,3 +111,41 @@ ORDER BY tl.LANGUAGE;
 
 - [Oracle Docs — WLF_RESOURCES_TL](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/wlfresourcestl.html)
 - [[hcm-module-data-dictionary]] — Dossiê do módulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[resourcepvo|ResourcePVO]] (HCM · BICC: 2/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | ResourceTranslationPEOCreatedBy | — |
+| CREATION_DATE | ResourceTranslationPEOCreationDate | — |
+| DESCRIPTION | ResourceTranslationPEODescription | ✅ |
+| ENTERPRISE_ID | ResourceTranslationPEOEnterpriseId | — |
+| LANGUAGE | ResourceTranslationPEOLanguage | — |
+| LAST_UPDATE_DATE | ResourceTranslationPEOLastUpdateDate | — |
+| LAST_UPDATE_LOGIN | ResourceTranslationPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | ResourceTranslationPEOLastUpdatedBy | — |
+| NAME | ResourceTranslationPEOName | ✅ |
+| OBJECT_VERSION_NUMBER | ResourceTranslationPEOObjectVersionNumber | — |
+| RESOURCE_ID | ResourceTranslationPEOResourceId | — |
+| SOURCE_LANG | ResourceTranslationPEOSourceLang | — |
+
+### [[trainingsupplierresourcepvo|TrainingSupplierResourcePVO]] (HCM · BICC: 2/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | TrainingSupplierResourceTranslationPEOCreatedBy1 | — |
+| CREATION_DATE | TrainingSupplierResourceTranslationPEOCreationDate1 | — |
+| DESCRIPTION | TrainingSupplierResourceTranslationPEODescription | ✅ |
+| ENTERPRISE_ID | TrainingSupplierResourceTranslationPEOEnterpriseId1 | — |
+| LANGUAGE | TrainingSupplierResourceTranslationPEOLanguage | — |
+| LAST_UPDATE_DATE | TrainingSupplierResourceTranslationPEOLastUpdateDate1 | — |
+| LAST_UPDATE_LOGIN | TrainingSupplierResourceTranslationPEOLastUpdateLogin1 | — |
+| LAST_UPDATED_BY | TrainingSupplierResourceTranslationPEOLastUpdatedBy1 | — |
+| NAME | TrainingSupplierResourceTranslationPEOName | ✅ |
+| OBJECT_VERSION_NUMBER | TrainingSupplierResourceTranslationPEOObjectVersionNumber1 | — |
+| RESOURCE_ID | TrainingSupplierResourceTranslationPEOResourceId1 | — |
+| SOURCE_LANG | TrainingSupplierResourceTranslationPEOSourceLang | — |

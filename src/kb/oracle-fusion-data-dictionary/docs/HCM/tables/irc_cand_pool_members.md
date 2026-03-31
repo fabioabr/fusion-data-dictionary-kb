@@ -104,3 +104,26 @@ WHERE  pm.POOL_ID = :p_pool_id AND pm.MEMBER_STATUS = 'ACTIVE';
 
 - [Oracle Docs -- IRC_CAND_POOL_MEMBERS](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/irccandpoolmembers.html)
 - [[hcm-module-data-dictionary]] -- Dossie do modulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[candidatepoolmemberpvo|CandidatePoolMemberPVO]] (PO · BICC: 7/14)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | CreatedBy | — |
+| CREATION_DATE | CreationDate | — |
+| CURRENT_PHASE_ID | CurrentPhaseId | ✅ |
+| CURRENT_STATE_ID | CurrentStateId | ✅ |
+| LAST_ADD_TO_REQ_DATE | LastAddToReqDate | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | — |
+| LAST_UPDATED_BY | LastUpdatedBy | — |
+| LAST_UPDATED_BY_PERSON_ID | LastUpdatedByPersonId | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | — |
+| POOL_ID | PoolId | ✅ |
+| POOL_MEMBER_ID | PoolMemberId | ✅ |
+| PROCESS_INSTANCE_ID | CandPoolMemberPEOProcessInstanceId | — |
+| PROCESS_TEMPLATE_ID | CandPoolMemberPEOProcessTemplateId | — |

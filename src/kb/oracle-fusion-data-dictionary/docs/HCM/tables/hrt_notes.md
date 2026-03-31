@@ -108,3 +108,29 @@ ORDER BY n.CREATION_DATE DESC;
 
 - [Oracle Docs — HRT_NOTES](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/hrtnotes.html)
 - [[hcm-module-data-dictionary]] — Dossie do modulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[meetingnotepvo|MeetingNotePVO]] (HCM · BICC: 12/17)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| AUTHOR_ID | NotePEOAuthorId | ✅ |
+| CONTEXT_ID | NotePEOContextId | — |
+| CONTEXT_NAME_VO | NotePEOContextNameVo | — |
+| CONTEXT_TYPE | NotePEOContextType | — |
+| CREATED_BY | NotePEOCreatedBy | ✅ |
+| CREATION_DATE | NotePEOCreationDate | ✅ |
+| ENTERPRISE_ID | NotePEOEnterpriseId | ✅ |
+| HIDDEN_FLAG | NotePEOHiddenFlag | — |
+| LAST_UPDATE_DATE | NotePEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | NotePEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | NotePEOLastUpdatedBy | ✅ |
+| NOTE_ID | NotePEONoteId | ✅ |
+| NOTE_TEXT | NotePEONoteTextClob | ✅ |
+| NOTE_VISIBILITY_CODE | NotePEONoteVisibilityCode | ✅ |
+| OBJECT_ID | NotePEOObjectId | — |
+| OBJECT_TYPE | NotePEOObjectType | ✅ |
+| OBJECT_VERSION_NUMBER | NotePEOObjectVersionNumber | ✅ |

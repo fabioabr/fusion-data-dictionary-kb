@@ -104,6 +104,29 @@ ORDER BY pab.LOWER_LIMIT;
 - O `CEILING` limita o saldo máximo acumulável — útil para políticas de 'use it or lose it'.
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[accrualplanbandpvo|AccrualPlanBandPVO]] (GL · BICC: 1/14)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACCRUAL_BAND_ID | AccrualBandId | — |
+| ACCRUAL_PLAN_ID | AccrualBandPEOAccrualPlanId | — |
+| BAND_GROUP_CODE | AccrualBandPEOBandGroupCode | — |
+| BAND_RANGE_END | AccrualBandPEOBandRangeEnd | — |
+| BAND_RANGE_START | AccrualBandPEOBandRangeStart | — |
+| CREATED_BY | AccrualBandPEOCreatedBy | — |
+| CREATION_DATE | AccrualBandPEOCreationDate | — |
+| LAST_UPDATE_DATE | AccrualBandPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | AccrualBandPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | AccrualBandPEOLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | AccrualBandPEOObjectVersionNumber | — |
+| TERM_ACCRUAL_RATE | AccrualBandPEOTermAccrualRate | — |
+| TERM_CEILING_VALUE | AccrualBandPEOTermCeilingValue | — |
+| TERM_MAX_CARRY_OVER | AccrualBandPEOTermMaxCarryOver | — |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — PER_ACCRUAL_BANDS](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/peraccrualband.html)

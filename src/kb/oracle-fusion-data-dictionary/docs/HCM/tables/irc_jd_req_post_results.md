@@ -100,3 +100,87 @@ GROUP BY pr.METRIC_TYPE;
 
 - [Oracle Docs -- IRC_JD_REQ_POST_RESULTS](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/ircjdreqpostresults.html)
 - [[hcm-module-data-dictionary]] -- Dossie do modulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[jobposthistorypvo|JobPostHistoryPVO]] (HCM · BICC: 12/15)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | PostResultPEOCreatedBy | ✅ |
+| CREATION_DATE | PostResultPEOCreationDate | ✅ |
+| ERROR_DESC | PostResultPEOErrorDesc | ✅ |
+| JOB_BOARD_ID | PostResultPEOJobBoardId | — |
+| JOB_BOARD_NAME | PostResultPEOJobBoardName | — |
+| LAST_UPDATE_DATE | PostResultPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | PostResultPEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | PostResultPEOLastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | PostResultPEOObjectVersionNumber | — |
+| POSTING_END_DATE | PostResultPEOPostingEndDate | ✅ |
+| POSTING_ID | PostResultPEOPostingId | ✅ |
+| POSTING_LANG | PostResultPEOPostingLang | ✅ |
+| POSTING_START_DATE | PostResultPEOPostingStartDate | ✅ |
+| POSTING_STATUS_CODE | PostResultPEOPostingStatusCode | ✅ |
+| RESULT_ID | PostResultPEOResultId | ✅ |
+
+### [[jobposthistoryviewallpvo|JobPostHistoryViewAllPVO]] (HCM · BICC: 11/15)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | PostResultPEOCreatedBy | ✅ |
+| CREATION_DATE | PostResultPEOCreationDate | ✅ |
+| ERROR_DESC | PostResultPEOErrorDesc | ✅ |
+| JOB_BOARD_ID | PostResultPEOJobBoardId | — |
+| JOB_BOARD_NAME | PostResultPEOJobBoardName | — |
+| LAST_UPDATE_DATE | PostResultPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | PostResultPEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | PostResultPEOLastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | PostResultPEOObjectVersionNumber | — |
+| POSTING_END_DATE | PostResultPEOPostingEndDate | ✅ |
+| POSTING_ID | PostResultPEOPostingId | — |
+| POSTING_LANG | PostResultPEOPostingLang | ✅ |
+| POSTING_START_DATE | PostResultPEOPostingStartDate | ✅ |
+| POSTING_STATUS_CODE | PostResultPEOPostingStatusCode | ✅ |
+| RESULT_ID | PostResultPEOResultId | ✅ |
+
+### [[jobpostresultpvo|JobPostResultPVO]] (HCM · BICC: 14/15)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | PostResultPEOCreatedBy | ✅ |
+| CREATION_DATE | PostResultPEOCreationDate | ✅ |
+| ERROR_DESC | PostResultPEOErrorDesc | ✅ |
+| JOB_BOARD_ID | PostResultPEOJobBoardId | ✅ |
+| JOB_BOARD_NAME | PostResultPEOJobBoardName | ✅ |
+| LAST_UPDATE_DATE | PostResultPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | PostResultPEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | PostResultPEOLastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | PostResultPEOObjectVersionNumber | — |
+| POSTING_END_DATE | PostResultPEOPostingEndDate | ✅ |
+| POSTING_ID | PostResultPEOPostingId | ✅ |
+| POSTING_LANG | PostResultPEOPostingLang | ✅ |
+| POSTING_START_DATE | PostResultPEOPostingStartDate | ✅ |
+| POSTING_STATUS_CODE | PostResultPEOPostingStatusCode | ✅ |
+| RESULT_ID | ResultId | ✅ |
+
+### [[jobpostresultviewallpvo|JobPostResultViewAllPVO]] (HCM · BICC: 14/15)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | PostResultPEOCreatedBy | ✅ |
+| CREATION_DATE | PostResultPEOCreationDate | ✅ |
+| ERROR_DESC | PostResultPEOErrorDesc | ✅ |
+| JOB_BOARD_ID | PostResultPEOJobBoardId | ✅ |
+| JOB_BOARD_NAME | PostResultPEOJobBoardName | ✅ |
+| LAST_UPDATE_DATE | PostResultPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | PostResultPEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | PostResultPEOLastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | PostResultPEOObjectVersionNumber | — |
+| POSTING_END_DATE | PostResultPEOPostingEndDate | ✅ |
+| POSTING_ID | PostResultPEOPostingId | ✅ |
+| POSTING_LANG | PostResultPEOPostingLang | ✅ |
+| POSTING_START_DATE | PostResultPEOPostingStartDate | ✅ |
+| POSTING_STATUS_CODE | PostResultPEOPostingStatusCode | ✅ |
+| RESULT_ID | ResultId | ✅ |

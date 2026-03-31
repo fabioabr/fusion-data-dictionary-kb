@@ -127,6 +127,236 @@ ORDER BY s.DATE_FROM DESC;
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[offersalarypvo|OfferSalaryPVO]] (HCM · BICC: 4/22)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_ID | SalaryPEOActionId | — |
+| ACTION_OCCURRENCE_ID | SalaryPEOActionOccurrenceId | — |
+| ACTION_REASON_ID | SalaryPEOActionReasonId | — |
+| ASSIGNMENT_ID | SalaryPEOAssignmentId | — |
+| BUSINESS_GROUP_ID | SalaryPEOBusinessGroupId | — |
+| CREATED_BY | SalaryPEOCreatedBy | — |
+| CREATION_DATE | SalaryPEOCreationDate | — |
+| DATE_FROM | SalaryEffectiveStartDate | — |
+| DATE_FROM | SalaryPEODateFrom | — |
+| DATE_TO | SalaryEffectiveEndDate | — |
+| DATE_TO | SalaryPEODateTo | — |
+| ELEMENT_ENTRY_ID | SalaryPEOElementEntryId | — |
+| LAST_UPDATE_DATE | SalaryPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | SalaryPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | SalaryPEOLastUpdatedBy | — |
+| MULTIPLE_COMPONENTS | SalaryPEOMultipleComponents | ✅ |
+| NEXT_SAL_REVIEW_DATE | SalaryPEONextSalReviewDate | — |
+| OBJECT_VERSION_NUMBER | SalaryPEOObjectVersionNumber | — |
+| SALARY_AMOUNT | SalaryPEOSalaryAmount | ✅ |
+| SALARY_APPROVED | SalaryPEOSalaryApproved | — |
+| SALARY_BASIS_ID | SalaryPEOSalaryBasisId | — |
+| SALARY_ID | SalaryId | ✅ |
+
+### [[salaryextractpvo|SalaryExtractPVO]] (HCM · BICC: 90/160)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_ID | ActionId | ✅ |
+| ACTION_OCCURRENCE_ID | ActionOccurrenceId | ✅ |
+| ACTION_REASON_ID | ActionReasonId | ✅ |
+| ADJUSTMENT_AMOUNT | AdjustmentAmount | ✅ |
+| ADJUSTMENT_AMOUNT_SCALE | AdjustmentAmountScale | ✅ |
+| ADJUSTMENT_PERCENT | AdjustmentPercent | ✅ |
+| ADJUSTMENT_PERCENT_SCALE | AdjustmentPercentScale | ✅ |
+| AMOUNT_ROUNDING_CODE | AmountRoundingCode | ✅ |
+| ANNUAL_FT_SALARY | AnnualFtSalary | ✅ |
+| ANNUAL_ROUNDING_CODE | AnnualRoundingCode | ✅ |
+| ANNUAL_SALARY | AnnualSalary | ✅ |
+| ASSIG_GRADE_LADDER_ID | AssigGradeLadderId | ✅ |
+| ASSIG_GRADE_STEP_ID | AssigGradeStepId | ✅ |
+| ASSIG_LOCATION_ID | AssigLocationId | ✅ |
+| ASSIGNMENT_ID | AssignmentId | ✅ |
+| ASSIGNMENT_TYPE | AssignmentType | ✅ |
+| ATTRIBUTE1 | Attribute1 | — |
+| ATTRIBUTE10 | Attribute10 | — |
+| ATTRIBUTE11 | Attribute11 | — |
+| ATTRIBUTE12 | Attribute12 | — |
+| ATTRIBUTE13 | Attribute13 | — |
+| ATTRIBUTE14 | Attribute14 | — |
+| ATTRIBUTE15 | Attribute15 | — |
+| ATTRIBUTE16 | Attribute16 | — |
+| ATTRIBUTE17 | Attribute17 | — |
+| ATTRIBUTE18 | Attribute18 | — |
+| ATTRIBUTE19 | Attribute19 | — |
+| ATTRIBUTE2 | Attribute2 | — |
+| ATTRIBUTE20 | Attribute20 | — |
+| ATTRIBUTE21 | Attribute21 | — |
+| ATTRIBUTE22 | Attribute22 | — |
+| ATTRIBUTE23 | Attribute23 | — |
+| ATTRIBUTE24 | Attribute24 | — |
+| ATTRIBUTE25 | Attribute25 | — |
+| ATTRIBUTE26 | Attribute26 | — |
+| ATTRIBUTE27 | Attribute27 | — |
+| ATTRIBUTE28 | Attribute28 | — |
+| ATTRIBUTE29 | Attribute29 | — |
+| ATTRIBUTE3 | Attribute3 | — |
+| ATTRIBUTE30 | Attribute30 | — |
+| ATTRIBUTE4 | Attribute4 | — |
+| ATTRIBUTE5 | Attribute5 | — |
+| ATTRIBUTE6 | Attribute6 | — |
+| ATTRIBUTE7 | Attribute7 | — |
+| ATTRIBUTE8 | Attribute8 | — |
+| ATTRIBUTE9 | Attribute9 | — |
+| ATTRIBUTE_CATEGORY | AttributeCategory | — |
+| ATTRIBUTE_DATE1 | AttributeDate1 | — |
+| ATTRIBUTE_DATE10 | AttributeDate10 | — |
+| ATTRIBUTE_DATE11 | AttributeDate11 | — |
+| ATTRIBUTE_DATE12 | AttributeDate12 | — |
+| ATTRIBUTE_DATE13 | AttributeDate13 | — |
+| ATTRIBUTE_DATE14 | AttributeDate14 | — |
+| ATTRIBUTE_DATE15 | AttributeDate15 | — |
+| ATTRIBUTE_DATE2 | AttributeDate2 | — |
+| ATTRIBUTE_DATE3 | AttributeDate3 | — |
+| ATTRIBUTE_DATE4 | AttributeDate4 | — |
+| ATTRIBUTE_DATE5 | AttributeDate5 | — |
+| ATTRIBUTE_DATE6 | AttributeDate6 | — |
+| ATTRIBUTE_DATE7 | AttributeDate7 | — |
+| ATTRIBUTE_DATE8 | AttributeDate8 | — |
+| ATTRIBUTE_DATE9 | AttributeDate9 | — |
+| ATTRIBUTE_NUMBER1 | AttributeNumber1 | — |
+| ATTRIBUTE_NUMBER10 | AttributeNumber10 | — |
+| ATTRIBUTE_NUMBER11 | AttributeNumber11 | — |
+| ATTRIBUTE_NUMBER12 | AttributeNumber12 | — |
+| ATTRIBUTE_NUMBER13 | AttributeNumber13 | — |
+| ATTRIBUTE_NUMBER14 | AttributeNumber14 | — |
+| ATTRIBUTE_NUMBER15 | AttributeNumber15 | — |
+| ATTRIBUTE_NUMBER16 | AttributeNumber16 | — |
+| ATTRIBUTE_NUMBER17 | AttributeNumber17 | — |
+| ATTRIBUTE_NUMBER18 | AttributeNumber18 | — |
+| ATTRIBUTE_NUMBER19 | AttributeNumber19 | — |
+| ATTRIBUTE_NUMBER2 | AttributeNumber2 | — |
+| ATTRIBUTE_NUMBER20 | AttributeNumber20 | — |
+| ATTRIBUTE_NUMBER3 | AttributeNumber3 | — |
+| ATTRIBUTE_NUMBER4 | AttributeNumber4 | — |
+| ATTRIBUTE_NUMBER5 | AttributeNumber5 | — |
+| ATTRIBUTE_NUMBER6 | AttributeNumber6 | — |
+| ATTRIBUTE_NUMBER7 | AttributeNumber7 | — |
+| ATTRIBUTE_NUMBER8 | AttributeNumber8 | — |
+| ATTRIBUTE_NUMBER9 | AttributeNumber9 | — |
+| BUSINESS_GROUP_ID | BusinessGroupId | ✅ |
+| BUSINESS_UNIT_ID | BusinessUnitId | ✅ |
+| COMPA_RATIO | CompaRatio | ✅ |
+| COMPA_RATIO_SCALE | CompaRatioScale | ✅ |
+| COMPONENT_USAGE | ComponentUsage | ✅ |
+| CREATED_BY | CreatedBy | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| CURRENCY_CODE | CurrencyCode | ✅ |
+| DATE_FROM | DateFrom | ✅ |
+| DATE_FROM | SalaryEffectiveStartDate | ✅ |
+| DATE_TO | DateTo | ✅ |
+| DATE_TO | SalaryEffectiveEndDate | ✅ |
+| DISABLE_COMPA_RATIO | DisableCompaRatio | ✅ |
+| DISABLE_QUARTILE | DisableQuartile | ✅ |
+| DISABLE_QUINTILE | DisableQuintile | ✅ |
+| DISABLE_RANGE_POSITION | DisableRangePosition | ✅ |
+| ELEMENT_ENTRY_ID | ElementEntryId | ✅ |
+| ELEMENT_TYPE_ID | ElementTypeId | ✅ |
+| ELEMENT_USAGE_LEVEL | ElementUsageLevel | ✅ |
+| FORCED_RANKING | ForcedRanking | ✅ |
+| FTE_IMPACT | FteImpact | ✅ |
+| FTE_VALUE | FteValue | ✅ |
+| GEOGRAPHY_ID | GeographyId | ✅ |
+| GEOGRAPHY_TYPE_ID | GeographyTypeId | ✅ |
+| GRADE_ID | GradeId | ✅ |
+| GRADE_RATE_MINIMUM_LIMIT | GradeRateMinimumLimit | ✅ |
+| INPUT_VALUE_ID | InputValueId | ✅ |
+| JOB_ID | JobId | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | LastUpdatedBy | ✅ |
+| LEGAL_ENTITY_ID | LegalEntityId | ✅ |
+| LEGISLATIVE_DATA_GROUP_ID | LegislativeDataGroupId | ✅ |
+| MISC_COMMENT1 | MiscComment1 | — |
+| MISC_COMMENT2 | MiscComment2 | — |
+| MISC_COMMENT3 | MiscComment3 | — |
+| MISC_COMMENT4 | MiscComment4 | — |
+| MULTIPLE_COMPONENTS | MultipleComponents | ✅ |
+| NEXT_PERF_REVIEW_DATE | NextPerfReviewDate | ✅ |
+| NEXT_SAL_REVIEW_DATE | NextSalReviewDate | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | ✅ |
+| PAYROLL_FACTOR | PayrollFactor | ✅ |
+| PAYROLL_FREQUENCY_CODE | PayrollFrequencyCode | ✅ |
+| PERFORMANCE_RATING | PerformanceRating | ✅ |
+| PERFORMANCE_REVIEW_ID | PerformanceReviewId | ✅ |
+| PERSON_ID | PersonId | ✅ |
+| QUARTILE | Quartile | ✅ |
+| QUINTILE | Quintile | ✅ |
+| RANGE_ANALYTICS_FOR_EMP | RangeAnalyticsForEmp | ✅ |
+| RANGE_ANALYTICS_FOR_MGR | RangeAnalyticsForMgr | ✅ |
+| RANGE_ERROR_WARNING | RangeErrorWarning | ✅ |
+| RANGE_POSITION | RangePosition | ✅ |
+| RANGE_POSITION_SCALE | RangePositionScale | ✅ |
+| RANGE_ROUNDING_CODE | RangeRoundingCode | ✅ |
+| RATE_DEFAULT_AMOUNT | RateDefaultAmount | ✅ |
+| RATE_FACTOR | RateFactor | ✅ |
+| RATE_ID | RateId | ✅ |
+| RATE_MAX_AMOUNT | RateMaxAmount | ✅ |
+| RATE_MID_AMOUNT | RateMidAmount | ✅ |
+| RATE_MIN_AMOUNT | RateMinAmount | ✅ |
+| REVIEW_DATE | ReviewDate | ✅ |
+| SALARY_AMOUNT | SalaryAmount | ✅ |
+| SALARY_AMOUNT_SCALE | SalaryAmountScale | ✅ |
+| SALARY_APPROVED | SalaryApproved | ✅ |
+| SALARY_BASIS_CODE | SalaryBasisCode | ✅ |
+| SALARY_BASIS_ID | SalaryBasisId | ✅ |
+| SALARY_BASIS_TYPE | SalaryBasisType | ✅ |
+| SALARY_FACTOR | SalaryFactor | ✅ |
+| SALARY_ID | SalaryId | ✅ |
+| SALARY_JUSTIFICATION | SalaryJustification | ✅ |
+| SALARY_RANGE_SCALE | SalaryRangeScale | ✅ |
+| SALARY_REASON_CODE | SalaryReasonCode | ✅ |
+| SALARY_TRANSACTION_STATUS | SalaryTransactionStatus | ✅ |
+| TOTAL_BASE_PAY | TotalBasePay | ✅ |
+| TOTAL_COMPONENT_ADJ_AMT | TotalComponentAdjAmt | ✅ |
+| TOTAL_COMPONENT_ADJ_PERCENT | TotalComponentAdjPercent | ✅ |
+| WORK_AT_HOME | WorkAtHome | ✅ |
+| ZONE_GRADE_RATE_ID | ZoneGradeRateId | ✅ |
+
+### [[salarypvo|SalaryPVO]] (HCM · BICC: 19/29)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_ID | SalaryPEOActionId | — |
+| ACTION_OCCURRENCE_ID | SalaryPEOActionOccurrenceId | ✅ |
+| ACTION_REASON_ID | SalaryPEOActionReasonId | — |
+| ASSIGNMENT_ID | SalaryPEOAssignmentId | ✅ |
+| BUSINESS_GROUP_ID | SalaryPEOBusinessGroupId | ✅ |
+| BUSINESS_UNIT_ID | SalaryPEOBusinessUnitId | — |
+| CREATED_BY | SalaryPEOCreatedBy | ✅ |
+| CREATION_DATE | SalaryPEOCreationDate | ✅ |
+| DATE_FROM | SalaryEffectiveStartDate | — |
+| DATE_FROM | SalaryPEODateFrom | ✅ |
+| DATE_TO | SalaryEffectiveEndDate | — |
+| DATE_TO | SalaryPEODateTo | ✅ |
+| ELEMENT_ENTRY_ID | SalaryPEOElementEntryId | — |
+| GEOGRAPHY_ID | SalaryPEOGeographyId | ✅ |
+| GEOGRAPHY_TYPE_ID | SalaryPEOGeographyTypeId | ✅ |
+| GRADE_RATE_MINIMUM_LIMIT | SalaryPEOGradeRateMinimumLimit | — |
+| JOB_ID | SalaryPEOJobId | — |
+| LAST_UPDATE_DATE | SalaryPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | SalaryPEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | SalaryPEOLastUpdatedBy | ✅ |
+| MULTIPLE_COMPONENTS | SalaryPEOMultipleComponents | ✅ |
+| NEXT_SAL_REVIEW_DATE | SalaryPEONextSalReviewDate | ✅ |
+| OBJECT_VERSION_NUMBER | SalaryPEOObjectVersionNumber | — |
+| SALARY_AMOUNT | SalaryPEOSalaryAmount | ✅ |
+| SALARY_APPROVED | SalaryPEOSalaryApproved | ✅ |
+| SALARY_BASIS_ID | SalaryPEOSalaryBasisId | ✅ |
+| SALARY_ID | SalaryId | ✅ |
+| WORK_AT_HOME | SalaryPEOWorkAtHome | ✅ |
+| ZONE_GRADE_RATE_ID | SalaryPEOZoneGradeRateId | — |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — CMP_SALARY](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/cmpsalary.html)

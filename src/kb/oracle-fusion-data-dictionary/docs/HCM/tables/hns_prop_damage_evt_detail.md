@@ -116,6 +116,76 @@ WHERE  ed.INCIDENT_ID = :p_incident_id;
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[hnspropdamageeventpvo|HNSPropDamageEventPVO]] (HCM · BICC: 10/61)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ATTRIBUTE1 | HNSPropDamageEventPEOAttribute1 | — |
+| ATTRIBUTE10 | HNSPropDamageEventPEOAttribute10 | — |
+| ATTRIBUTE11 | HNSPropDamageEventPEOAttribute11 | — |
+| ATTRIBUTE12 | HNSPropDamageEventPEOAttribute12 | — |
+| ATTRIBUTE13 | HNSPropDamageEventPEOAttribute13 | — |
+| ATTRIBUTE14 | HNSPropDamageEventPEOAttribute14 | — |
+| ATTRIBUTE15 | HNSPropDamageEventPEOAttribute15 | — |
+| ATTRIBUTE16 | HNSPropDamageEventPEOAttribute16 | — |
+| ATTRIBUTE17 | HNSPropDamageEventPEOAttribute17 | — |
+| ATTRIBUTE18 | HNSPropDamageEventPEOAttribute18 | — |
+| ATTRIBUTE19 | HNSPropDamageEventPEOAttribute19 | — |
+| ATTRIBUTE2 | HNSPropDamageEventPEOAttribute2 | — |
+| ATTRIBUTE20 | HNSPropDamageEventPEOAttribute20 | — |
+| ATTRIBUTE21 | HNSPropDamageEventPEOAttribute21 | — |
+| ATTRIBUTE22 | HNSPropDamageEventPEOAttribute22 | — |
+| ATTRIBUTE23 | HNSPropDamageEventPEOAttribute23 | — |
+| ATTRIBUTE24 | HNSPropDamageEventPEOAttribute24 | — |
+| ATTRIBUTE25 | HNSPropDamageEventPEOAttribute25 | — |
+| ATTRIBUTE26 | HNSPropDamageEventPEOAttribute26 | — |
+| ATTRIBUTE27 | HNSPropDamageEventPEOAttribute27 | — |
+| ATTRIBUTE28 | HNSPropDamageEventPEOAttribute28 | — |
+| ATTRIBUTE29 | HNSPropDamageEventPEOAttribute29 | — |
+| ATTRIBUTE3 | HNSPropDamageEventPEOAttribute3 | — |
+| ATTRIBUTE30 | HNSPropDamageEventPEOAttribute30 | — |
+| ATTRIBUTE4 | HNSPropDamageEventPEOAttribute4 | — |
+| ATTRIBUTE5 | HNSPropDamageEventPEOAttribute5 | — |
+| ATTRIBUTE6 | HNSPropDamageEventPEOAttribute6 | — |
+| ATTRIBUTE7 | HNSPropDamageEventPEOAttribute7 | — |
+| ATTRIBUTE8 | HNSPropDamageEventPEOAttribute8 | — |
+| ATTRIBUTE9 | HNSPropDamageEventPEOAttribute9 | — |
+| ATTRIBUTE_CATEGORY | HNSPropDamageEventPEOAttrCategory | — |
+| ATTRIBUTE_NUMBER1 | HNSPropDamageEventPEOAttrNumber1 | — |
+| ATTRIBUTE_NUMBER10 | HNSPropDamageEventPEOAttrNumber10 | — |
+| ATTRIBUTE_NUMBER2 | HNSPropDamageEventPEOAttrNumber2 | — |
+| ATTRIBUTE_NUMBER3 | HNSPropDamageEventPEOAttrNumber3 | — |
+| ATTRIBUTE_NUMBER4 | HNSPropDamageEventPEOAttrNumber4 | — |
+| ATTRIBUTE_NUMBER5 | HNSPropDamageEventPEOAttrNumber5 | — |
+| ATTRIBUTE_NUMBER6 | HNSPropDamageEventPEOAttrNumber6 | — |
+| ATTRIBUTE_NUMBER7 | HNSPropDamageEventPEOAttrNumber7 | — |
+| ATTRIBUTE_NUMBER8 | HNSPropDamageEventPEOAttrNumber8 | — |
+| ATTRIBUTE_NUMBER9 | HNSPropDamageEventPEOAttrNumber9 | — |
+| ATTRIBUTE_TIMESTAMP1 | HNSPropDamageEventPEOAttrTimestamp1 | — |
+| ATTRIBUTE_TIMESTAMP10 | HNSPropDamageEventPEOAttrTimestamp10 | — |
+| ATTRIBUTE_TIMESTAMP2 | HNSPropDamageEventPEOAttrTimestamp2 | — |
+| ATTRIBUTE_TIMESTAMP3 | HNSPropDamageEventPEOAttrTimestamp3 | — |
+| ATTRIBUTE_TIMESTAMP4 | HNSPropDamageEventPEOAttrTimestamp4 | — |
+| ATTRIBUTE_TIMESTAMP5 | HNSPropDamageEventPEOAttrTimestamp5 | — |
+| ATTRIBUTE_TIMESTAMP6 | HNSPropDamageEventPEOAttrTimestamp6 | — |
+| ATTRIBUTE_TIMESTAMP7 | HNSPropDamageEventPEOAttrTimestamp7 | — |
+| ATTRIBUTE_TIMESTAMP8 | HNSPropDamageEventPEOAttrTimestamp8 | — |
+| ATTRIBUTE_TIMESTAMP9 | HNSPropDamageEventPEOAttrTimestamp9 | — |
+| CREATED_BY | HNSPropDamageEventPEOCreatedBy | ✅ |
+| CREATION_DATE | HNSPropDamageEventPEOCreationDate | ✅ |
+| DELETED_FLAG | HNSPropDamageEventPEODeletedFlag | ✅ |
+| INCIDENT_DETAIL_ID | HNSPropDamageEventPEOIncDetailId | ✅ |
+| LAST_UPDATE_DATE | HNSPropDamageEventPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | HNSPropDamageEventPEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | HNSPropDamageEventPEOLastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | HNSPropDamageEventPEOObjVerNumber | ✅ |
+| PROP_DAMAGE_EVT_DETAIL_ID | HNSPropDamageEventPEOPropDmgEvtDtlId | ✅ |
+| PROPERTY_DAMAGE_CODE | HNSPropDamageEventPEOPropDamageCode | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — HNS_PROP_DAMAGE_EVT_DETAIL](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/hnspropdamageevtdetail.html)

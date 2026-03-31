@@ -90,3 +90,63 @@ SELECT apl.PERIOD_SEQUENCE_NUM,
 - Oracle Fusion Cloud Financials — Accounts Payable Tables (OEDMF Release 13).
 - Oracle BICC — AP Aging Subject Area Documentation.
 - Oracle Fusion Cloud ERP Schema Reference (Release 25A).
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[agingperiodlineextractpvo|AgingPeriodLineExtractPVO]] (OTHER · BICC: 15/31)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| AGING_PERIOD_ID | ApAgingPeriodLinesAgingPeriodId | ✅ |
+| AGING_PERIOD_LINE_ID | ApAgingPeriodLinesAgingPeriodLineId | ✅ |
+| ATTRIBUTE1 | ApAgingPeriodLinesAttribute1 | — |
+| ATTRIBUTE10 | ApAgingPeriodLinesAttribute10 | — |
+| ATTRIBUTE11 | ApAgingPeriodLinesAttribute11 | — |
+| ATTRIBUTE12 | ApAgingPeriodLinesAttribute12 | — |
+| ATTRIBUTE13 | ApAgingPeriodLinesAttribute13 | — |
+| ATTRIBUTE14 | ApAgingPeriodLinesAttribute14 | — |
+| ATTRIBUTE15 | ApAgingPeriodLinesAttribute15 | — |
+| ATTRIBUTE2 | ApAgingPeriodLinesAttribute2 | — |
+| ATTRIBUTE3 | ApAgingPeriodLinesAttribute3 | — |
+| ATTRIBUTE4 | ApAgingPeriodLinesAttribute4 | — |
+| ATTRIBUTE5 | ApAgingPeriodLinesAttribute5 | — |
+| ATTRIBUTE6 | ApAgingPeriodLinesAttribute6 | — |
+| ATTRIBUTE7 | ApAgingPeriodLinesAttribute7 | — |
+| ATTRIBUTE8 | ApAgingPeriodLinesAttribute8 | — |
+| ATTRIBUTE9 | ApAgingPeriodLinesAttribute9 | — |
+| ATTRIBUTE_CATEGORY | ApAgingPeriodLinesAttributeCategory | — |
+| CREATED_BY | ApAgingPeriodLinesCreatedBy | ✅ |
+| CREATION_DATE | ApAgingPeriodLinesCreationDate | ✅ |
+| DAYS_START | ApAgingPeriodLinesDaysStart | ✅ |
+| DAYS_TO | ApAgingPeriodLinesDaysTo | ✅ |
+| LAST_UPDATE_DATE | ApAgingPeriodLinesLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ApAgingPeriodLinesLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | ApAgingPeriodLinesLastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | ApAgingPeriodLinesObjectVersionNumber | ✅ |
+| PERIOD_SEQUENCE_NUM | ApAgingPeriodLinesPeriodSequenceNum | ✅ |
+| REPORT_HEADING1 | ApAgingPeriodLinesReportHeading1 | ✅ |
+| REPORT_HEADING2 | ApAgingPeriodLinesReportHeading2 | ✅ |
+| REPORT_HEADING3 | ApAgingPeriodLinesReportHeading3 | ✅ |
+| TYPE | ApAgingPeriodLinesType | ✅ |
+
+### [[agingperiodlinepvo|AgingPeriodLinePVO]] (AP · BICC: 10/15)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| AGING_PERIOD_ID | AgingLinesAgingPeriodId | — |
+| AGING_PERIOD_LINE_ID | AgingPeriodLineId | ✅ |
+| CREATED_BY | AgingLinesCreatedBy | ✅ |
+| CREATION_DATE | AgingLinesCreationDate | ✅ |
+| DAYS_START | AgingLinesDaysStart | ✅ |
+| DAYS_TO | AgingLinesDaysTo | ✅ |
+| LAST_UPDATE_DATE | AgingLinesLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | AgingLinesLastUpdateLogin | — |
+| LAST_UPDATED_BY | AgingLinesLastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | AgingLinesObjectVersionNumber | — |
+| PERIOD_SEQUENCE_NUM | AgingLinesPeriodSequenceNum | ✅ |
+| REPORT_HEADING1 | AgingLinesReportHeading1 | ✅ |
+| REPORT_HEADING2 | AgingLinesReportHeading2 | ✅ |
+| REPORT_HEADING3 | AgingLinesReportHeading3 | — |
+| TYPE | AgingLinesType | — |

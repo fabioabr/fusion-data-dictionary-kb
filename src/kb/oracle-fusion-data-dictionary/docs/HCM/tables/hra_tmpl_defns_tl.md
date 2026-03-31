@@ -114,6 +114,22 @@ WHERE  tl.LANGUAGE = USERENV('LANG');
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[templatedefnpvo|TemplateDefnPVO]] (HCM · BICC: 7/7)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | TemplateDefnTranslationPEOBusinessGroupId | ✅ |
+| COMMENTS | TemplateDefnTranslationPEOComments | ✅ |
+| LANGUAGE | Language | ✅ |
+| LAST_UPDATE_DATE | TemplateDefnTranslationPEOLastUpdateDate | ✅ |
+| NAME | TemplateDefnTranslationPEOName | ✅ |
+| SOURCE_LANG | SourceLang | ✅ |
+| TEMPLATE_DEFN_ID | TemplateDefnTranslationPEOTemplateDefnId | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — HRA_TMPL_DEFNS_TL](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/hratmpldefnstl.html)

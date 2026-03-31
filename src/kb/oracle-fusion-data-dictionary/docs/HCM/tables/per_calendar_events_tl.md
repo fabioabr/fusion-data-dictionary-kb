@@ -101,6 +101,27 @@ WHERE  tl.LANGUAGE = 'PTB';
 - Tabela de traduções (_TL) — chave composta por `CALENDAR_EVENT_ID` + `LANGUAGE`.
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[scheduleexceptionpvo|ScheduleExceptionPVO]] (GL · BICC: 2/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | CalendarEventsTranslationPEOBusinessGroupId | — |
+| CALENDAR_EVENT_ID | CalendarEventsTranslationPEOCalendarEventId | — |
+| CREATED_BY | CalendarEventsTranslationPEOCreatedBy | — |
+| CREATION_DATE | CalendarEventsTranslationPEOCreationDate | — |
+| DESCRIPTION | CalendarEventsTranslationPEODescription | — |
+| LANGUAGE | CalendarEventsTranslationPEOLanguage | — |
+| LAST_UPDATE_DATE | CalendarEventsTranslationPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | CalendarEventsTranslationPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | CalendarEventsTranslationPEOLastUpdatedBy | — |
+| NAME | CalendarEventsTranslationPEOName | ✅ |
+| OBJECT_VERSION_NUMBER | CalendarEventsTranslationPEOObjectVersionNumber | — |
+| SOURCE_LANG | CalendarEventsTranslationPEOSourceLang | — |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — PER_CALENDAR_EVENTS_TL](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/percalendareventstl.html)

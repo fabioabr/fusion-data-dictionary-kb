@@ -97,6 +97,116 @@ SELECT * FROM HRT_BI_HONOR_ITEMS_V WHERE PERSON_ID = :p_person_id;
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[honorpvo|HonorPVO]] (HCM · BICC: 24/101)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | ProfileItemPEOBusinessGroupId | — |
+| CONTENT_ITEM_ID | ProfileItemPEOContentItemId | — |
+| CONTENT_TYPE_ID | ProfileItemPEOContentTypeId | ✅ |
+| CONTEXT_NAME | ContextName | — |
+| COUNTRY_ID | ProfileItemPEOCountryId | ✅ |
+| CREATED_BY | CreatedBy | — |
+| CREATION_DATE | CreationDate | — |
+| DATE_FROM | ProfileItemPEODateFrom | ✅ |
+| DATE_TO | ProfileItemPEODateTo | ✅ |
+| IMPORTANCE | ProfileItemPEOImportance | ✅ |
+| INTEREST_LEVEL | InterestLevel | ✅ |
+| ITEM_CLOB_1 | HonorPIItemClob1 | — |
+| ITEM_CLOB_2 | HonorPIItemClob2 | — |
+| ITEM_CLOB_3 | ItemClob3 | — |
+| ITEM_CLOB_4 | ItemClob4 | — |
+| ITEM_CLOB_5 | ItemClob5 | — |
+| ITEM_DATE_1 | ProfileItemPEOItemDate1 | ✅ |
+| ITEM_DATE_10 | ProfileItemPEOItemDate10 | — |
+| ITEM_DATE_2 | ProfileItemPEOItemDate2 | ✅ |
+| ITEM_DATE_3 | ItemDate3 | — |
+| ITEM_DATE_3 | ProfileItemPEOItemDate3 | ✅ |
+| ITEM_DATE_4 | ProfileItemPEOItemDate4 | — |
+| ITEM_DATE_5 | ProfileItemPEOItemDate5 | — |
+| ITEM_DATE_6 | ProfileItemPEOItemDate6 | ✅ |
+| ITEM_DATE_7 | ProfileItemPEOItemDate7 | — |
+| ITEM_DATE_8 | ProfileItemPEOItemDate8 | — |
+| ITEM_DATE_9 | ProfileItemPEOItemDate9 | — |
+| ITEM_DECIMAL_1 | ItemDecimal1 | — |
+| ITEM_DECIMAL_2 | ItemDecimal2 | — |
+| ITEM_DECIMAL_3 | ItemDecimal3 | — |
+| ITEM_DECIMAL_4 | ItemDecimal4 | — |
+| ITEM_DECIMAL_5 | ItemDecimal5 | — |
+| ITEM_NUMBER_1 | ProfileItemPEOItemNumber1 | — |
+| ITEM_NUMBER_10 | ProfileItemPEOItemNumber10 | — |
+| ITEM_NUMBER_2 | ProfileItemPEOItemNumber2 | — |
+| ITEM_NUMBER_3 | ProfileItemPEOItemNumber3 | — |
+| ITEM_NUMBER_4 | ProfileItemPEOItemNumber4 | ✅ |
+| ITEM_NUMBER_5 | ProfileItemPEOItemNumber5 | — |
+| ITEM_NUMBER_6 | ProfileItemPEOItemNumber6 | — |
+| ITEM_NUMBER_7 | ProfileItemPEOItemNumber7 | — |
+| ITEM_NUMBER_8 | ProfileItemPEOItemNumber8 | — |
+| ITEM_NUMBER_9 | ProfileItemPEOItemNumber9 | — |
+| ITEM_TEXT2000_1 | HonorPIItemText20001 | ✅ |
+| ITEM_TEXT2000_1 | ItemText20001 | — |
+| ITEM_TEXT2000_2 | ItemText20002 | ✅ |
+| ITEM_TEXT2000_3 | ItemText20003 | ✅ |
+| ITEM_TEXT2000_4 | ItemText20004 | — |
+| ITEM_TEXT2000_5 | ItemText20005 | — |
+| ITEM_TEXT240_1 | ItemText2401 | ✅ |
+| ITEM_TEXT240_10 | ItemText24010 | — |
+| ITEM_TEXT240_11 | ItemText24011 | — |
+| ITEM_TEXT240_12 | ItemText24012 | — |
+| ITEM_TEXT240_13 | ItemText24013 | — |
+| ITEM_TEXT240_14 | ItemText24014 | — |
+| ITEM_TEXT240_15 | ItemText24015 | — |
+| ITEM_TEXT240_2 | ItemText2402 | — |
+| ITEM_TEXT240_3 | ItemText2403 | — |
+| ITEM_TEXT240_4 | ItemText2404 | ✅ |
+| ITEM_TEXT240_5 | ItemText2405 | ✅ |
+| ITEM_TEXT240_6 | ItemText2406 | ✅ |
+| ITEM_TEXT240_7 | ItemText2407 | — |
+| ITEM_TEXT240_8 | ItemText2408 | — |
+| ITEM_TEXT240_9 | ItemText2409 | — |
+| ITEM_TEXT30_1 | ItemText301 | ✅ |
+| ITEM_TEXT30_10 | ItemText3010 | — |
+| ITEM_TEXT30_11 | ItemText3011 | — |
+| ITEM_TEXT30_12 | ItemText3012 | — |
+| ITEM_TEXT30_13 | ItemText3013 | — |
+| ITEM_TEXT30_14 | ItemText3014 | — |
+| ITEM_TEXT30_15 | ItemText3015 | — |
+| ITEM_TEXT30_2 | ItemText302 | — |
+| ITEM_TEXT30_3 | ItemText303 | — |
+| ITEM_TEXT30_4 | ItemText304 | — |
+| ITEM_TEXT30_5 | ItemText305 | — |
+| ITEM_TEXT30_6 | ItemText306 | — |
+| ITEM_TEXT30_7 | ItemText307 | — |
+| ITEM_TEXT30_8 | ItemText308 | — |
+| ITEM_TEXT30_9 | ItemText309 | — |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | — |
+| LAST_UPDATED_BY | LastUpdatedBy | — |
+| MANDATORY | Mandatory | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | — |
+| PARENT_PROFILE_ITEM_ID | ProfileItemPEOParentProfileItemId | — |
+| PROFILE_ID | ProfileItemPEOProfileId | ✅ |
+| PROFILE_ITEM_ID | ProfileItemPEOProfileItemId | ✅ |
+| QUALIFIER_ID1 | QualifierId1 | — |
+| QUALIFIER_ID2 | QualifierId2 | — |
+| RATING_LEVEL_ID1 | ProfileItemPEORatingLevelId1 | — |
+| RATING_LEVEL_ID2 | ProfileItemPEORatingLevelId2 | — |
+| RATING_LEVEL_ID3 | ProfileItemPEORatingLevelId3 | — |
+| RATING_MODEL_ID1 | ProfileItemPEORatingModelId1 | — |
+| RATING_MODEL_ID2 | ProfileItemPEORatingModelId2 | — |
+| RATING_MODEL_ID3 | ProfileItemPEORatingModelId3 | — |
+| SECTION_ID | SectionId | ✅ |
+| SOURCE_ID | SourceId | — |
+| SOURCE_KEY1 | SourceKey1 | — |
+| SOURCE_KEY2 | SourceKey2 | — |
+| SOURCE_KEY3 | SourceKey3 | — |
+| SOURCE_TYPE | SourceType | — |
+| STATE_PROVINCE_ID | ProfileItemPEOStateProvinceId | — |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Fusion HCM Tables and Views](https://docs.oracle.com/en/cloud/saas/human-resources/25a/)

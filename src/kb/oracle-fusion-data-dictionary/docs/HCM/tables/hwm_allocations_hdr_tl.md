@@ -105,3 +105,31 @@ WHERE  tl.ALLOCATION_HDR_ID = :p_id
 
 - [Oracle Docs — HWM_ALLOCATIONS_HDR_TL](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/hwmallocationshdrtl.html)
 - [[hcm-module-data-dictionary]] — Dossie do modulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[allocationlinespvo|AllocationLinesPVO]] (GL · BICC: 1/3)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ALLOCATION_ID | AllocHdrTLPEOAllocationId | — |
+| DESCRIPTION | AllocHdrTLPEODescription | ✅ |
+| LANGUAGE | AllocHdrTLPEOLanguage | — |
+
+### [[allocationrulespvo|AllocationRulesPVO]] (GL · BICC: 1/3)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ALLOCATION_ID | AllocHdrTLPEOAllocationId | — |
+| DESCRIPTION | AllocHdrTLPEODescription | ✅ |
+| LANGUAGE | AllocHdrTLPEOLanguage | — |
+
+### [[allocationshdrpvo|AllocationsHdrPVO]] (GL · BICC: 1/3)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ALLOCATION_ID | AllocHdrTLPEOAllocationId | — |
+| DESCRIPTION | AllocHdrTLPEODescription | ✅ |
+| LANGUAGE | AllocHdrTLPEOLanguage | — |

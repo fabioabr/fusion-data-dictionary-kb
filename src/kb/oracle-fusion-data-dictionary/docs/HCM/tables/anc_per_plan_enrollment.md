@@ -39,7 +39,6 @@ updated_at: 2026-03-25
 
 Armazena as **inscrições de colaboradores em planos de ausência**. Cada registro indica que um colaborador está elegível e inscrito em um plano específico, com datas de início e fim da inscrição.
 
-
 ---
 
 ## 🧠 Propósito de Negócio
@@ -110,6 +109,48 @@ WHERE  pe.ABSENCE_PLAN_ID = :p_plan_id
 - A inscrição é pré-requisito para acumulação de saldo e solicitação de ausência.
 - `ENROLLMENT_END_DATE` nulo indica inscrição sem data de término prevista.
 - A desinscrição pode ser automática (ex.: término de contrato) ou manual (mudança de política).
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[absperplanenrollmentpvo|AbsPerPlanEnrollmentPVO]] (GL · BICC: 5/25)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CEILING_AMT | CeilingAmt | — |
+| CREATED_BY | CreatedBy | — |
+| CREATION_DATE | CreationDate | — |
+| ENRT_END_DT | EnrtEndDt | ✅ |
+| ENRT_ST_DT | EnrtStDt | ✅ |
+| ENTERPRISE_ID | EnterpriseId | — |
+| LAST_ACCRUAL_RUN | LastAccrualRun | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | — |
+| LAST_UPDATED_BY | LastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | — |
+| OPERATION_TYPE | OperationType | — |
+| PAYROLL_MAPPING_ID | PayrollMappingId | — |
+| PAYROLL_STATUS | PayrollStatus | — |
+| PER_EVENT_ID | PerEventId | — |
+| PER_PLAN_ENRT_ID | PerPlanEnrtId | ✅ |
+| PERSON_ID | PersonId | — |
+| PLAN_ID | PlanId | — |
+| PRD_OF_SVC_ID | PrdOfSvcId | — |
+| RECIPIENT_ALIAS | RecipientAlias | — |
+| SOURCE_ENRT_ID | SourceEnrtId | — |
+| STATUS | Status | — |
+| WAIT_PERIOD_DUR_UNITS | WaitPeriodDurUnits | — |
+| WAIT_PERIOD_DUR_UOM | WaitPeriodDurUom | — |
+| WORK_TERM_ASG_ID | WorkTermAsgId | — |
+
+### [[persondonationentrydtlpvo|PersonDonationEntryDtlPVO]] (GL · BICC: 3/3)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| PER_PLAN_ENRT_ID | AbsPerPlanEnrollmentPEORecipientPerPlanEnrtId | ✅ |
+| PERSON_ID | AbsPerPlanEnrollmentPEORecipientPersonID | ✅ |
+| PLAN_ID | AbsPerPlanEnrollmentPEORecipientPlanID | ✅ |
 
 ---
 

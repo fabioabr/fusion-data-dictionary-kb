@@ -68,3 +68,40 @@ updated_at: 2026-03-26
 ## 📎 Uso Típico
 
 (a ser preenchido na etapa 03)
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[resourcep|ResourceP]] (OTHER · BICC: 12/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| EMAIL_ADDRESS | EmailAddress | ✅ |
+| PARTY_ID | PartyId | ✅ |
+| PERSON_FIRST_NAME | PersonFirstName | ✅ |
+| PERSON_LAST_NAME | PersonLastName | ✅ |
+| PERSON_NAME | PersonName | ✅ |
+| PERSON_TITLE | PersonTitle | ✅ |
+| PERSONAL_EMAIL_FLAG | PersonalEmailFlag | ✅ |
+| PRIMARY_PHONE_NUMBER | PrimaryPhoneNumber | ✅ |
+| RESOURCE_PROFILE_ID | ResourceProfileId | ✅ |
+| RESOURCE_PROFILE_ID | ResourceProfileId1 | ✅ |
+| START_DATE_ACTIVE | StartDateActive | ✅ |
+| TIMEZONE_CODE | TimezoneCode | ✅ |
+
+### [[resourcepartnerpvo|ResourcePartnerPVO]] (OTHER · BICC: 2/11)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | ResourcePEOCreatedBy | — |
+| CREATED_BY_MODULE | ResourcePEOCreatedByModule | — |
+| CREATION_DATE | ResourcePEOCreationDate | — |
+| END_DATE_ACTIVE | EndDateActive | — |
+| LAST_UPDATE_DATE | ResourcePEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ResourcePEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | ResourcePEOLastUpdatedBy | — |
+| PARTY_ID | ResourcePEOPartyId | — |
+| RESOURCE_PROFILE_ID | ResourceProfileId | ✅ |
+| START_DATE_ACTIVE | StartDateActive | — |
+| TIMEZONE_CODE | TimezoneCode | — |

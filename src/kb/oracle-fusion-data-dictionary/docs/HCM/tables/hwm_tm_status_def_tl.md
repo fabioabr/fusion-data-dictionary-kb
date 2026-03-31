@@ -111,3 +111,24 @@ WHERE  tl.STATUS_DEF_ID = :p_def_id;
 
 - [Oracle Docs — HWM_TM_STATUS_DEF_TL](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/hwmtmstatusdeftl.html)
 - [[hcm-module-data-dictionary]] — Dossie do modulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[timestatusdeftranslationpvo|TimeStatusDefTranslationPVO]] (GL · BICC: 3/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | CreatedBy | — |
+| CREATION_DATE | CreationDate | — |
+| DESCRIPTION | Description | — |
+| ENTERPRISE_ID | EnterpriseId | — |
+| LANGUAGE | Language | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | — |
+| LAST_UPDATED_BY | LastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | — |
+| SOURCE_LANG | SourceLang | — |
+| TM_STATUS_DEF_ID | TimeStatusDefId | ✅ |
+| TM_STATUS_NAME | TimeStatusName | — |

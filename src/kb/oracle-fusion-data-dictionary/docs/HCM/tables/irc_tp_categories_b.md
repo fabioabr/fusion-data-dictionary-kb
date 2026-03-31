@@ -100,6 +100,24 @@ ORDER BY cb.DISPLAY_ORDER;
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[partneraccountpvo|PartnerAccountPVO]] (HCM · BICC: 1/2)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CATEGORY_ID | CategoryBPEOCategoryId | — |
+| CODE | CategoryBPEOCode | ✅ |
+
+### [[partnerprovisionpvo|PartnerProvisionPVO]] (HCM · BICC: 1/2)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CATEGORY_ID | CategoryBPEOCategoryId | — |
+| CODE | CategoryBPEOCode | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — IRC_TP_CATEGORIES_B](https://docs.oracle.com/en/cloud/saas/talent-management/25a/oedmf/irctpcategoriesb.html)

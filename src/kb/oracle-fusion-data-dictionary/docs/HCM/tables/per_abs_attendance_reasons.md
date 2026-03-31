@@ -104,6 +104,26 @@ ORDER BY pat.ABSENCE_CATEGORY, par.NAME;
 - A granularidade do motivo permite relatórios mais detalhados de absenteísmo.
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[absenceeventspvo|AbsenceEventsPVO]] (HCM · BICC: 1/11)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ABS_ATTENDANCE_REASON_ID | AbsenceReasonPEOAbsAttendanceReasonId | — |
+| ABSENCE_ATTENDANCE_TYPE_ID | AbsenceReasonPEOAbsenceAttendanceTypeId | — |
+| BUSINESS_GROUP_ID | AbsenceReasonPEOBusinessGroupId | — |
+| CREATED_BY | AbsenceReasonPEOCreatedBy | — |
+| CREATION_DATE | AbsenceReasonPEOCreationDate | — |
+| LAST_UPDATE_DATE | AbsenceReasonPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | AbsenceReasonPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | AbsenceReasonPEOLastUpdatedBy | — |
+| LEGISLATIVE_DATA_GROUP_ID | AbsenceReasonPEOLegislativeDataGroupId | — |
+| NAME | AbsenceReasonPEOName | — |
+| OBJECT_VERSION_NUMBER | AbsenceReasonPEOObjectVersionNumber | — |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — PER_ABS_ATTENDANCE_REASONS](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/perabsattendancereasons.html)

@@ -115,3 +115,35 @@ WHERE  f.ENABLED_FLAG = 'Y';
 
 - [Oracle Docs — IRC_APPLY_FLOWS_B](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/ircapplyflowsb.html)
 - [[hcm-module-data-dictionary]] — Dossie do modulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[applyflowpvo|ApplyFlowPVO]] (HCM · BICC: 3/9)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| AF_CODE | ApplyFlowBPEOAfCode | ✅ |
+| AF_STATUS_CODE | ApplyFlowBPEOAfStatusCode | — |
+| AF_TYPE_CODE | ApplyFlowBPEOAfTypeCode | — |
+| APPLY_FLOW_ID | ApplyFlowId | ✅ |
+| CREATED_BY | ApplyFlowBPEOCreatedBy | — |
+| CREATION_DATE | ApplyFlowBPEOCreationDate | — |
+| LAST_UPDATE_DATE | ApplyFlowBPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ApplyFlowBPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | ApplyFlowBPEOLastUpdatedBy | — |
+
+### [[applyflowversionpvo|ApplyFlowVersionPVO]] (HCM · BICC: 5/9)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| AF_CODE | ApplyFlowBPEOAfCode | ✅ |
+| AF_STATUS_CODE | ApplyFlowBPEOAfStatusCode | ✅ |
+| AF_TYPE_CODE | ApplyFlowBPEOAfTypeCode | ✅ |
+| APPLY_FLOW_ID | ApplyFlowBPEOApplyFlowId | ✅ |
+| CREATED_BY | ApplyFlowBPEOCreatedBy | — |
+| CREATION_DATE | ApplyFlowBPEOCreationDate | — |
+| LAST_UPDATE_DATE | ApplyFlowBPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ApplyFlowBPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | ApplyFlowBPEOLastUpdatedBy | — |

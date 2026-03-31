@@ -116,6 +116,76 @@ WHERE  ed.INCIDENT_ID = :p_incident_id;
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[hnsissueeventpvo|HNSIssueEventPVO]] (HCM · BICC: 10/61)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ATTRIBUTE1 | HNSIssueEventPEOAttribute1 | — |
+| ATTRIBUTE10 | HNSIssueEventPEOAttribute10 | — |
+| ATTRIBUTE11 | HNSIssueEventPEOAttribute11 | — |
+| ATTRIBUTE12 | HNSIssueEventPEOAttribute12 | — |
+| ATTRIBUTE13 | HNSIssueEventPEOAttribute13 | — |
+| ATTRIBUTE14 | HNSIssueEventPEOAttribute14 | — |
+| ATTRIBUTE15 | HNSIssueEventPEOAttribute15 | — |
+| ATTRIBUTE16 | HNSIssueEventPEOAttribute16 | — |
+| ATTRIBUTE17 | HNSIssueEventPEOAttribute17 | — |
+| ATTRIBUTE18 | HNSIssueEventPEOAttribute18 | — |
+| ATTRIBUTE19 | HNSIssueEventPEOAttribute19 | — |
+| ATTRIBUTE2 | HNSIssueEventPEOAttribute2 | — |
+| ATTRIBUTE20 | HNSIssueEventPEOAttribute20 | — |
+| ATTRIBUTE21 | HNSIssueEventPEOAttribute21 | — |
+| ATTRIBUTE22 | HNSIssueEventPEOAttribute22 | — |
+| ATTRIBUTE23 | HNSIssueEventPEOAttribute23 | — |
+| ATTRIBUTE24 | HNSIssueEventPEOAttribute24 | — |
+| ATTRIBUTE25 | HNSIssueEventPEOAttribute25 | — |
+| ATTRIBUTE26 | HNSIssueEventPEOAttribute26 | — |
+| ATTRIBUTE27 | HNSIssueEventPEOAttribute27 | — |
+| ATTRIBUTE28 | HNSIssueEventPEOAttribute28 | — |
+| ATTRIBUTE29 | HNSIssueEventPEOAttribute29 | — |
+| ATTRIBUTE3 | HNSIssueEventPEOAttribute3 | — |
+| ATTRIBUTE30 | HNSIssueEventPEOAttribute30 | — |
+| ATTRIBUTE4 | HNSIssueEventPEOAttribute4 | — |
+| ATTRIBUTE5 | HNSIssueEventPEOAttribute5 | — |
+| ATTRIBUTE6 | HNSIssueEventPEOAttribute6 | — |
+| ATTRIBUTE7 | HNSIssueEventPEOAttribute7 | — |
+| ATTRIBUTE8 | HNSIssueEventPEOAttribute8 | — |
+| ATTRIBUTE9 | HNSIssueEventPEOAttribute9 | — |
+| ATTRIBUTE_CATEGORY | HNSIssueEventPEOAttrCategory | — |
+| ATTRIBUTE_NUMBER1 | HNSIssueEventPEOAttrNumber1 | — |
+| ATTRIBUTE_NUMBER10 | HNSIssueEventPEOAttrNumber10 | — |
+| ATTRIBUTE_NUMBER2 | HNSIssueEventPEOAttrNumber2 | — |
+| ATTRIBUTE_NUMBER3 | HNSIssueEventPEOAttrNumber3 | — |
+| ATTRIBUTE_NUMBER4 | HNSIssueEventPEOAttrNumber4 | — |
+| ATTRIBUTE_NUMBER5 | HNSIssueEventPEOAttrNumber5 | — |
+| ATTRIBUTE_NUMBER6 | HNSIssueEventPEOAttrNumber6 | — |
+| ATTRIBUTE_NUMBER7 | HNSIssueEventPEOAttrNumber7 | — |
+| ATTRIBUTE_NUMBER8 | HNSIssueEventPEOAttrNumber8 | — |
+| ATTRIBUTE_NUMBER9 | HNSIssueEventPEOAttrNumber9 | — |
+| ATTRIBUTE_TIMESTAMP1 | HNSIssueEventPEOAttrTimestamp1 | — |
+| ATTRIBUTE_TIMESTAMP10 | HNSIssueEventPEOAttrTimestamp10 | — |
+| ATTRIBUTE_TIMESTAMP2 | HNSIssueEventPEOAttrTimestamp2 | — |
+| ATTRIBUTE_TIMESTAMP3 | HNSIssueEventPEOAttrTimestamp3 | — |
+| ATTRIBUTE_TIMESTAMP4 | HNSIssueEventPEOAttrTimestamp4 | — |
+| ATTRIBUTE_TIMESTAMP5 | HNSIssueEventPEOAttrTimestamp5 | — |
+| ATTRIBUTE_TIMESTAMP6 | HNSIssueEventPEOAttrTimestamp6 | — |
+| ATTRIBUTE_TIMESTAMP7 | HNSIssueEventPEOAttrTimestamp7 | — |
+| ATTRIBUTE_TIMESTAMP8 | HNSIssueEventPEOAttrTimestamp8 | — |
+| ATTRIBUTE_TIMESTAMP9 | HNSIssueEventPEOAttrTimestamp9 | — |
+| CREATED_BY | HNSIssueEventPEOCreatedBy | ✅ |
+| CREATION_DATE | HNSIssueEventPEOCreationDate | ✅ |
+| DELETED_FLAG | HNSIssueEventPEODeletedFlag | ✅ |
+| INCIDENT_DETAIL_ID | HNSIssueEventPEOIncDetailId | ✅ |
+| ISSUE_EVT_DETAIL_ID | HNSIssueEventPEOIssueEvtDtlId | ✅ |
+| ISSUE_TYPE_CODE | HNSIssueEventPEOIssueTypeCd | ✅ |
+| LAST_UPDATE_DATE | HNSIssueEventPEOLastUpdateDt | ✅ |
+| LAST_UPDATE_LOGIN | HNSIssueEventPEOLastUpdateLgn | ✅ |
+| LAST_UPDATED_BY | HNSIssueEventPEOLastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | HNSIssueEventPEOObjVerNumber | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — HNS_ISSUE_EVT_DETAIL](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/hnsissueevtdetail.html)

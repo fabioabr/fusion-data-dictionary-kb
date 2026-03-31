@@ -102,3 +102,46 @@ FROM   IRC_DIMENSION_DEF_B dd WHERE dd.STATUS = 'ACTIVE';
 
 - [Oracle Docs -- IRC_DIMENSION_DEF_B](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/ircdimensiondefb.html)
 - [[hcm-module-data-dictionary]] -- Dossie do modulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[sourcedimensionpvo|SourceDimensionPVO]] (HCM · BICC: 7/14)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | CreatedBy | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| DIMENSION_ID | DimensionId | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | LastUpdatedBy | ✅ |
+| MODULE_ID | ModuleId | — |
+| PRIORITY | Priority | — |
+| SEED_DATA_SOURCE | SeedDataSource | — |
+| SEQUENCE | Sequence | — |
+| SOURCE_MEDIUM | SourceMedium | ✅ |
+| SOURCE_MEDIUM_URL_VALUE | SourceMediumUrlValue | — |
+| SOURCE_URL_VALUE | SourceUrlValue | — |
+| URL_HEADER_REGEX | UrlHeaderRegex | — |
+
+### [[sourcetrackingviewallpvo|SourceTrackingViewAllPVO]] (HCM · BICC: 6/15)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | SourceDimensionBPEOCreatedBy | ✅ |
+| CREATION_DATE | SourceDimensionBPEOCreationDate | ✅ |
+| DIMENSION_ID | ParentSourceDimensionBPEODimensionId | — |
+| DIMENSION_ID | SourceDimensionBPEODimensionId | — |
+| LAST_UPDATE_DATE | SourceDimensionBPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | SourceDimensionBPEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | SourceDimensionBPEOLastUpdatedBy | ✅ |
+| MODULE_ID | SourceDimensionBPEOModuleId | — |
+| PRIORITY | SourceDimensionBPEOPriority | — |
+| SEED_DATA_SOURCE | SourceDimensionBPEOSeedDataSource | — |
+| SEQUENCE | SourceDimensionBPEOSequence | — |
+| SOURCE_MEDIUM | SourceDimensionBPEOSourceMedium | ✅ |
+| SOURCE_MEDIUM_URL_VALUE | SourceDimensionBPEOSourceMediumUrlValue | — |
+| SOURCE_URL_VALUE | SourceDimensionBPEOSourceUrlValue | — |
+| URL_HEADER_REGEX | SourceDimensionBPEOUrlHeaderRegex | — |

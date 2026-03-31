@@ -103,6 +103,83 @@ WHERE  ROWNUM <= 100;
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[billchargedetailspvo|BillChargeDetailsPVO]] (HCM · BICC: 1/6)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BENEFIT_GROUP_ID | BenefitGroupId | — |
+| EFFECTIVE_END_DATE | EffectiveEndDate2 | — |
+| EFFECTIVE_START_DATE | EffectiveStartDate2 | ✅ |
+| LE_BENEFIT_GROUP_ID | LeBenefitGroupId | — |
+| LEGISLATIVE_DATA_GROUP_ID | LegislativeDataGroupId | — |
+| PERSON_ID | PersonId4 | — |
+
+### [[billchargepaymentspvo|BillChargePaymentsPVO]] (HCM)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BENEFIT_GROUP_ID | BenefitGroupId | — |
+| EFFECTIVE_END_DATE | EffectiveEndDate1 | — |
+| EFFECTIVE_START_DATE | EffectiveStartDate1 | — |
+| LE_BENEFIT_GROUP_ID | LeBenefitGroupId | — |
+| LEGISLATIVE_DATA_GROUP_ID | LegislativeDataGroupId | — |
+| PERSON_ID | PersonId4 | — |
+
+### [[billchargespvo|BillChargesPVO]] (HCM · BICC: 1/6)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BENEFIT_GROUP_ID | BenefitGroupId | — |
+| EFFECTIVE_END_DATE | EffectiveEndDate2 | — |
+| EFFECTIVE_START_DATE | EffectiveStartDate2 | ✅ |
+| LE_BENEFIT_GROUP_ID | LeBenefitGroupId | — |
+| LEGISLATIVE_DATA_GROUP_ID | LegislativeDataGroupId | — |
+| PERSON_ID | PersonId3 | — |
+
+### [[billpaymentspvo|BillPaymentsPVO]] (HCM)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BENEFIT_GROUP_ID | BenefitGroupId | — |
+| EFFECTIVE_END_DATE | EffectiveEndDate1 | — |
+| EFFECTIVE_START_DATE | EffectiveStartDate1 | — |
+| LE_BENEFIT_GROUP_ID | LeBenefitGroupId | — |
+| LEGISLATIVE_DATA_GROUP_ID | LegislativeDataGroupId | — |
+| PERSON_ID | PersonId3 | — |
+
+### [[participantenrollmentpvo|ParticipantEnrollmentPVO]] (HCM · BICC: 4/6)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BENEFIT_GROUP_ID | BenefitGroupId | — |
+| EFFECTIVE_END_DATE | EffectiveEndDate2 | ✅ |
+| EFFECTIVE_END_DATE | EffectiveEndDate3 | — |
+| EFFECTIVE_START_DATE | EffectiveStartDate1 | ✅ |
+| EFFECTIVE_START_DATE | EffectiveStartDate2 | ✅ |
+| LE_BENEFIT_GROUP_ID | LeBenefitGroupId | ✅ |
+
+### [[personlifeeventpvo|PersonLifeEventPVO]] (HCM · BICC: 1/4)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BENEFIT_GROUP_ID | BenefitGroupId | — |
+| EFFECTIVE_END_DATE | EffectiveEndDate1 | — |
+| EFFECTIVE_START_DATE | EffectiveStartDate1 | ✅ |
+| LE_BENEFIT_GROUP_ID | LeBenefitGroupId | — |
+
+### [[personpotentiallifeeventpvo|PersonPotentialLifeEventPVO]] (HCM · BICC: 1/4)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BENEFIT_GROUP_ID | BenefitGroupId | — |
+| EFFECTIVE_END_DATE | EffectiveEndDate | — |
+| EFFECTIVE_START_DATE | EffectiveStartDate | ✅ |
+| LE_BENEFIT_GROUP_ID | LeBenefitGroupId | — |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — BEN_PER_BENEFIT_GROUP_F](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/benperbenefitgroupf.html)

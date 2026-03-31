@@ -134,3 +134,25 @@ ORDER BY gl.NAME, arc.JE_CATEGORY_NAME;
 
 - [Oracle Docs — GL_AUTOREV_CRITERIA_SETS](https://docs.oracle.com/en/cloud/saas/financials/25a/oedmf/glautorevcriteria-25070.html)
 - [[gl-module-data-dictionary]] — Dossiê do módulo GL
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[ledgerpvo|LedgerPVO]] (GL)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CRITERIA_SET_DESC | AutorevCriteriaSetCriteriaSetDesc | — |
+| CRITERIA_SET_ID | AutorevCriteriaSetCriteriaSetId | — |
+| CRITERIA_SET_NAME | AutorevCriteriaSetCriteriaSetName | — |
+| SECURITY_FLAG | AutorevCriteriaSetSecurityFlag | — |
+
+### [[ledgersetpvo|LedgerSetPVO]] (GL)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CRITERIA_SET_DESC | AutorevCriteriaSetCriteriaSetDesc | — |
+| CRITERIA_SET_ID | AutorevCriteriaSetCriteriaSetId | — |
+| CRITERIA_SET_NAME | AutorevCriteriaSetCriteriaSetName | — |
+| SECURITY_FLAG | AutorevCriteriaSetSecurityFlag | — |

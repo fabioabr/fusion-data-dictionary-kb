@@ -102,3 +102,33 @@ FROM   IRC_IM_FEEDBK_REQUESTS fr WHERE fr.REQUEST_STATUS = 'PENDING';
 
 - [Oracle Docs -- IRC_IM_FEEDBK_REQUESTS](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/ircimfeedbkrequests.html)
 - [[hcm-module-data-dictionary]] -- Dossie do modulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[feedbackdetailspvo|FeedbackDetailsPVO]] (HCM · BICC: 9/21)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CANCEL_DATE | CancelDate | ✅ |
+| COMPLETION_DATE | CompletionDate | ✅ |
+| CREATED_BY | CreatedBy3 | — |
+| CREATION_DATE | CreationDate3 | — |
+| DUE_DATE | DueDate | ✅ |
+| EXPIRY_DATE | ExpiryDate | ✅ |
+| FEEDBACK_ID | FeedbackId2 | — |
+| FEEDBACK_REQUEST_ID | FeedbackRequestId1 | — |
+| LAST_UPDATE_DATE | LastUpdateDate3 | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin3 | — |
+| LAST_UPDATED_BY | LastUpdatedBy3 | — |
+| OBJECT_STATUS | ObjectStatus | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber2 | — |
+| PARTICIPANT_ID | ParticipantId1 | — |
+| QSTNR_VERSION_NUM | QstnrVersionNum1 | — |
+| QUESTIONNAIRE_ID | QuestionnaireId1 | — |
+| RENEW_COUNT | RenewCount | ✅ |
+| RENEW_DATE | RenewDate | ✅ |
+| REQUISITION_ID | RequisitionId1 | — |
+| RESEND_COUNT | ResendCount | — |
+| STATUS_TYPE_CODE | StatusTypeCode | ✅ |

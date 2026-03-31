@@ -104,3 +104,343 @@ WHERE  tl.CONTENT_TYPE_ID = :p_id
 
 - [Oracle Docs — HRT_CONTENT_TYPES_TL](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/hrtcontenttypestl.html)
 - [[hcm-module-data-dictionary]] — Dossie do modulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[advancementreadinesspvo|AdvancementReadinessPVO]] (HCM · BICC: 1/5)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | CTTLBusinessGroupId | — |
+| CONTENT_TYPE_ID | CTTLContentTypeId | — |
+| CONTENT_TYPE_NAME | CTTLContentTypeName | — |
+| LANGUAGE | CTTLLanguage | — |
+| LAST_UPDATE_DATE | ContentTypeTranslationPEOLastUpdateDate | ✅ |
+
+### [[advancementreadinesspvo_viewall|AdvancementReadinessPVO_Viewall]] (HCM · BICC: 1/5)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | CTTLBusinessGroupId | — |
+| CONTENT_TYPE_ID | CTTLContentTypeId | — |
+| CONTENT_TYPE_NAME | CTTLContentTypeName | — |
+| LANGUAGE | CTTLLanguage | — |
+| LAST_UPDATE_DATE | ContentTypeTranslationPEOLastUpdateDate | ✅ |
+
+### [[careerpreferencepvo|CareerPreferencePVO]] (HCM · BICC: 2/6)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | CTTLBusinessGroupId2 | — |
+| CONTENT_DESCRIPTION | CTTLContentDescription | — |
+| CONTENT_TYPE_ID | CTTLContentTypeId1 | — |
+| CONTENT_TYPE_NAME | CTTLContentTypeName | ✅ |
+| LANGUAGE | CTTLLanguage1 | — |
+| LAST_UPDATE_DATE | ContentTypeTranslationPEOLastUpdateDate | ✅ |
+
+### [[certificationpvo|CertificationPVO]] (HCM · BICC: 2/7)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | CT_TL_BusinessGroupId1 | — |
+| CONTENT_DESCRIPTION | CT_TL_ContentDescription | — |
+| CONTENT_TYPE_ID | CT_TL_ContentTypeId | — |
+| CONTENT_TYPE_ID | ContentTypeId | — |
+| CONTENT_TYPE_NAME | CT_TL_ContentTypeName | ✅ |
+| LANGUAGE | CT_TL_Language1 | — |
+| LAST_UPDATE_DATE | ContentTypeTranslationPEOLastUpdateDate | ✅ |
+
+### [[competencypvo|CompetencyPVO]] (HCM · BICC: 2/6)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | CntTypeTLPEOBusinessGroupId3 | — |
+| CONTENT_DESCRIPTION | CntTypeTLPEOContentDescrip | — |
+| CONTENT_TYPE_ID | CntTypeTLPEOContentTypeId2 | — |
+| CONTENT_TYPE_NAME | CntTypeTLPEOContentTypeName | ✅ |
+| LANGUAGE | CntTypeTLPEOLanguage2 | — |
+| LAST_UPDATE_DATE | CntTypeTLPEOLastUpdateDate | ✅ |
+
+### [[contenttypepvo|ContentTypePVO]] (HCM · BICC: 6/7)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | ContentTypeTranslationPEOBusinessGroupId | — |
+| CONTENT_DESCRIPTION | ContentTypeTranslationPEOContentDescription | ✅ |
+| CONTENT_TYPE_ID | ContentTypeTranslationPEOContentTypeId | ✅ |
+| CONTENT_TYPE_NAME | ContentTypeTranslationPEOContentTypeName | ✅ |
+| LANGUAGE | Language | ✅ |
+| LAST_UPDATE_DATE | ContentTypeTranslationPEOLastUpdateDate | ✅ |
+| SOURCE_LANG | SourceLang | ✅ |
+
+### [[contenttypetranslationextractpvo|ContentTypeTranslationExtractPVO]] (HCM · BICC: 12/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | BusinessGroupId | ✅ |
+| CONTENT_DESCRIPTION | ContentDescription | ✅ |
+| CONTENT_TYPE_ID | ContentTypeId | ✅ |
+| CONTENT_TYPE_NAME | ContentTypeName | ✅ |
+| CREATED_BY | CreatedBy | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| LANGUAGE | Language | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | LastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | ✅ |
+| SOURCE_LANG | SourceLang | ✅ |
+
+### [[criticalityprofileitempvo|CriticalityProfileItemPVO]] (HCM · BICC: 3/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | CTLBusinessGroupId | — |
+| BUSINESS_GROUP_ID | CTTLBusinessGroupId1 | — |
+| CONTENT_DESCRIPTION | CTTLContentDescription | ✅ |
+| CONTENT_TYPE_ID | CTLContentTypeId | — |
+| CONTENT_TYPE_ID | ContentTypeId2 | — |
+| CONTENT_TYPE_NAME | CTLContentTypeName | — |
+| CONTENT_TYPE_NAME | CTTLContentTypeName | ✅ |
+| CREATED_BY | CTTLCreatedBy1 | — |
+| LANGUAGE | CTLLanguage1 | — |
+| LANGUAGE | CTTLLanguage | — |
+| LAST_UPDATE_DATE | CTTLLastUpdateDate1 | ✅ |
+| LAST_UPDATED_BY | CTTLLastUpdatedBy1 | — |
+
+### [[customcontentprofilepvo|CustomContentProfilePVO]] (HCM · BICC: 1/6)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | CTLBusinessGroupId | — |
+| CONTENT_DESCRIPTION | CTTLContentDescription | — |
+| CONTENT_TYPE_ID | CTLContentTypeId | — |
+| CONTENT_TYPE_NAME | CTLContentTypeName | — |
+| LANGUAGE | CTLLanguage1 | — |
+| LAST_UPDATE_DATE | CntTypeTLPEOLastUpdateDate | ✅ |
+
+### [[customcontentprofilepvo_viewall|CustomContentProfilePVO_Viewall]] (HCM · BICC: 3/6)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | CTLBusinessGroupId | — |
+| CONTENT_DESCRIPTION | CTTLContentDescription | ✅ |
+| CONTENT_TYPE_ID | CTLContentTypeId | — |
+| CONTENT_TYPE_NAME | CTLContentTypeName | ✅ |
+| LANGUAGE | CTLLanguage1 | — |
+| LAST_UPDATE_DATE | CntTypeTLPEOLastUpdateDate | ✅ |
+
+### [[degreepvo|DegreePVO]] (HCM · BICC: 3/6)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | BusinessGroupId1 | — |
+| CONTENT_DESCRIPTION | ContentDescription | — |
+| CONTENT_TYPE_ID | ContentTypeId | ✅ |
+| CONTENT_TYPE_NAME | ContentTypeName | ✅ |
+| LANGUAGE | Language1 | — |
+| LAST_UPDATE_DATE | ContentTypeTranslationPEOLastUpdateDate | ✅ |
+
+### [[genericprofilepvo|GenericProfilePVO]] (HCM)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | CTLBusinessGroupId | — |
+| CONTENT_DESCRIPTION | CTTLContentDescription | — |
+| CONTENT_TYPE_ID | CTLContentTypeId | — |
+| CONTENT_TYPE_NAME | CTLContentTypeName | — |
+| LANGUAGE | CTLLanguage1 | — |
+| LAST_UPDATE_DATE | CntTypeTLPEOLastUpdateDate | — |
+
+### [[honorpvo|HonorPVO]] (HCM · BICC: 2/7)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | BusinessGroupId | — |
+| BUSINESS_GROUP_ID | CTLBusinessGroupId | — |
+| CONTENT_DESCRIPTION | CTLContentDescription | — |
+| CONTENT_TYPE_ID | CTLContentTypeId | — |
+| CONTENT_TYPE_NAME | CTLContentTypeName | ✅ |
+| LANGUAGE | CTLLanguage1 | — |
+| LAST_UPDATE_DATE | ContentTypeTranslationPEOLastUpdateDate | ✅ |
+
+### [[languagepvo|LanguagePVO]] (HCM · BICC: 3/5)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | BusinessGroupId2 | — |
+| CONTENT_TYPE_ID | ContentTypeId1 | — |
+| CONTENT_TYPE_NAME | ContentTypeName | ✅ |
+| LANGUAGE | Language | ✅ |
+| LAST_UPDATE_DATE | ContentTypeTranslationPEOLastUpdateDate | ✅ |
+
+### [[membershippvo|MembershipPVO]] (HCM · BICC: 1/6)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | BusinessGroupId1 | — |
+| CONTENT_DESCRIPTION | ContentDescription | — |
+| CONTENT_TYPE_ID | ContentTypeId | — |
+| CONTENT_TYPE_NAME | ContentTypeName | — |
+| LANGUAGE | Language1 | — |
+| LAST_UPDATE_DATE | ContentTypeTranslationPEOLastUpdateDate | ✅ |
+
+### [[modelprofileitempvo|ModelProfileItemPVO]] (HCM)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | CTTLBusinessGroupId | — |
+| CONTENT_DESCRIPTION | CTTLContentDescription | — |
+| CONTENT_TYPE_ID | CTTLContentTypeId | — |
+| CONTENT_TYPE_NAME | CTTLContentTypeName | — |
+| LANGUAGE | CTTLLanguage1 | — |
+
+### [[personprofileitempvo|PersonProfileItemPVO]] (HCM · BICC: 1/6)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | CTTLBusinessGroupId | — |
+| CONTENT_DESCRIPTION | CTTLContentDescription | — |
+| CONTENT_TYPE_ID | CTTLContentTypeId | — |
+| CONTENT_TYPE_NAME | CTTLContentTypeName | — |
+| LANGUAGE | CTTLLanguage1 | — |
+| LAST_UPDATE_DATE | CntTypeTLPEOLastUpdateDate | ✅ |
+
+### [[personprofileperformanceratingpvo|PersonProfilePerformanceRatingPVO]] (HCM · BICC: 3/6)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | BusinessGroupId | — |
+| CONTENT_DESCRIPTION | ContentDescription | ✅ |
+| CONTENT_TYPE_ID | ContentTypeId | — |
+| CONTENT_TYPE_NAME | ContentTypeName | ✅ |
+| LANGUAGE | Language1 | — |
+| LAST_UPDATE_DATE | ContentTypeTranslationPEOLastUpdateDate | ✅ |
+
+### [[planreadinesspvo|PlanReadinessPVO]] (HCM)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | CTTLBusinessGroupId | — |
+| CONTENT_TYPE_ID | CTTLContentTypeId | — |
+| CONTENT_TYPE_NAME | CTTLContentTypeName | — |
+| LANGUAGE | CTTLLanguage | — |
+| LAST_UPDATE_DATE | ContentTypeTranslationPEOLastUpdateDate | — |
+
+### [[potentialpvo|PotentialPVO]] (HCM · BICC: 2/6)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | CTLBusinessGroupId | — |
+| CONTENT_DESCRIPTION | CTLContentDescription | — |
+| CONTENT_TYPE_ID | CTLContentTypeId | — |
+| CONTENT_TYPE_NAME | CTLContentTypeName | ✅ |
+| LANGUAGE | CTLLanguage | — |
+| LAST_UPDATE_DATE | ContentTypeTranslationPEOLastUpdateDate | ✅ |
+
+### [[potentialpvo_viewall|PotentialPVO_Viewall]] (HCM · BICC: 2/6)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | CTLBusinessGroupId | — |
+| CONTENT_DESCRIPTION | CTLContentDescription | — |
+| CONTENT_TYPE_ID | CTLContentTypeId | — |
+| CONTENT_TYPE_NAME | CTLContentTypeName | ✅ |
+| LANGUAGE | CTLLanguage | — |
+| LAST_UPDATE_DATE | ContentTypeTranslationPEOLastUpdateDate | ✅ |
+
+### [[previousemploymentprofilepvo|PreviousEmploymentProfilePVO]] (HCM · BICC: 3/6)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | TLBusinessGroupId | — |
+| CONTENT_DESCRIPTION | CTTLContentDescription | ✅ |
+| CONTENT_TYPE_ID | CTLContentTypeId | — |
+| CONTENT_TYPE_NAME | CTTLContentTypeName | ✅ |
+| LANGUAGE | Language1 | — |
+| LAST_UPDATE_DATE | ContentTypeTranslationPEOLastUpdateDate | ✅ |
+
+### [[previousemploymentpvo|PreviousEmploymentPVO]] (HCM · BICC: 2/6)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | CTLBusinessGroupId | — |
+| CONTENT_DESCRIPTION | CTTLContentDescription | ✅ |
+| CONTENT_TYPE_ID | CTLContentTypeId | — |
+| CONTENT_TYPE_NAME | CTLContentTypeName | — |
+| LANGUAGE | CTLLanguage1 | — |
+| LAST_UPDATE_DATE | CntTypeTLPEOLastUpdateDate | ✅ |
+
+### [[riskpvo|RiskPVO]] (HCM · BICC: 2/6)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | CTTLBusinessGroupId | — |
+| CONTENT_DESCRIPTION | CTTLContentDescription | — |
+| CONTENT_TYPE_ID | CTTLContentTypeId | — |
+| CONTENT_TYPE_NAME | CTTLContentTypeName | ✅ |
+| LANGUAGE | CTTLLanguage | — |
+| LAST_UPDATE_DATE | ContentTypeTranslationPEOLastUpdateDate | ✅ |
+
+### [[riskpvo_viewall|RiskPVO_Viewall]] (HCM · BICC: 2/6)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | CTTLBusinessGroupId | — |
+| CONTENT_DESCRIPTION | CTTLContentDescription | — |
+| CONTENT_TYPE_ID | CTTLContentTypeId | — |
+| CONTENT_TYPE_NAME | CTTLContentTypeName | ✅ |
+| LANGUAGE | CTTLLanguage | — |
+| LAST_UPDATE_DATE | ContentTypeTranslationPEOLastUpdateDate | ✅ |
+
+### [[specialprojectpvo|SpecialProjectPVO]] (HCM · BICC: 1/5)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | CTTLBusinessGroupId2 | — |
+| CONTENT_DESCRIPTION | CTTLContentDescription | — |
+| CONTENT_TYPE_ID | CTTLContentTypeId1 | — |
+| CONTENT_TYPE_NAME | CTTLContentTypeName | ✅ |
+| LANGUAGE | CTTLLanguage | — |
+
+### [[talentscorepvo|TalentScorePVO]] (HCM)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | CTBusinessGroupId1 | — |
+| CONTENT_DESCRIPTION | CTTLContentDescription | — |
+| CONTENT_TYPE_ID | CTTLContentTypeId | — |
+| CONTENT_TYPE_NAME | CTTLContentTypeName | — |
+| LANGUAGE | CTLanguage | — |
+
+### [[technicalpostpvo|TechnicalPostPVO]] (HCM · BICC: 1/6)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | CTLBusinessGroupId | — |
+| CONTENT_DESCRIPTION | CTTLContentDescription | — |
+| CONTENT_TYPE_ID | CTLContentTypeId | — |
+| CONTENT_TYPE_NAME | CTLContentTypeName | — |
+| LANGUAGE | CTLLanguage1 | — |
+| LAST_UPDATE_DATE | CntTypeTLPEOLastUpdateDate | ✅ |
+
+### [[workrequirementdatecheckpvo|WorkRequirementDateCheckPVO]] (HCM)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | CTTLBusinessGroupId1 | — |
+| CONTENT_TYPE_ID | CT_ContentTypeId1 | — |
+| CONTENT_TYPE_NAME | ContentTypeName | — |
+| LANGUAGE | Language | — |
+| LAST_UPDATE_DATE | ContentTypeBPEOLastUpdateDate | — |
+
+### [[workrequirementpvo|WorkRequirementPVO]] (HCM · BICC: 1/5)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | CTTLBusinessGroupId1 | — |
+| CONTENT_TYPE_ID | CT_ContentTypeId1 | — |
+| CONTENT_TYPE_NAME | ContentTypeName | — |
+| LANGUAGE | Language | — |
+| LAST_UPDATE_DATE | ContentTypeBPEOLastUpdateDate | ✅ |

@@ -101,6 +101,95 @@ WHERE  tl.LANGUAGE = 'PTB';
 - Tabela de traduções (_TL) — chave composta por `GRADE_ID` + `LANGUAGE`.
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[gradepvo|GradePVO]] (GL · BICC: 4/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | GradeTranslationPEOCreatedBy | — |
+| CREATION_DATE | GradeTranslationPEOCreationDate | — |
+| EFFECTIVE_END_DATE | GradeTranslationPEOEffectiveEndDate | — |
+| EFFECTIVE_START_DATE | GradeTranslationPEOEffectiveStartDate | ✅ |
+| GRADE_ID | GradeTranslationPEOGradeId | — |
+| LANGUAGE | GradeTranslationPEOLanguage | ✅ |
+| LAST_UPDATE_DATE | GradeTranslationPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | GradeTranslationPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | GradeTranslationPEOLastUpdatedBy | — |
+| NAME | GradeTranslationPEOName | ✅ |
+| OBJECT_VERSION_NUMBER | GradeTranslationPEOObjectVersionNumber | — |
+| SOURCE_LANG | GradeTranslationPEOSourceLang | — |
+
+### [[graderefpvo|GradeRefPVO]] (GL · BICC: 4/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | GradeTranslationPEOCreatedBy | — |
+| CREATION_DATE | GradeTranslationPEOCreationDate | — |
+| EFFECTIVE_END_DATE | GradeTranslationPEOEffectiveEndDate | — |
+| EFFECTIVE_START_DATE | GradeTranslationPEOEffectiveStartDate | ✅ |
+| GRADE_ID | GradeTranslationPEOGradeId | — |
+| LANGUAGE | GradeTranslationPEOLanguage | ✅ |
+| LAST_UPDATE_DATE | GradeTranslationPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | GradeTranslationPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | GradeTranslationPEOLastUpdatedBy | — |
+| NAME | GradeTranslationPEOName | ✅ |
+| OBJECT_VERSION_NUMBER | GradeTranslationPEOObjectVersionNumber | — |
+| SOURCE_LANG | GradeTranslationPEOSourceLang | — |
+
+### [[gradetranslationextractpvo|GradeTranslationExtractPVO]] (HCM · BICC: 12/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | CreatedBy | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| EFFECTIVE_END_DATE | EffectiveEndDate | ✅ |
+| EFFECTIVE_START_DATE | EffectiveStartDate | ✅ |
+| GRADE_ID | GradeId | ✅ |
+| LANGUAGE | Language | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | LastUpdatedBy | ✅ |
+| NAME | Name | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | ✅ |
+| SOURCE_LANG | SourceLang | ✅ |
+
+### [[gradetranslationpvo|GradeTranslationPVO]] (GL · BICC: 10/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | GradeTranslationPEOCreatedBy | ✅ |
+| CREATION_DATE | GradeTranslationPEOCreationDate | ✅ |
+| EFFECTIVE_END_DATE | EffectiveEndDate | ✅ |
+| EFFECTIVE_START_DATE | EffectiveStartDate | ✅ |
+| GRADE_ID | GradeId | ✅ |
+| LANGUAGE | Language | ✅ |
+| LAST_UPDATE_DATE | GradeTranslationPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | GradeTranslationPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | GradeTranslationPEOLastUpdatedBy | ✅ |
+| NAME | GradeTranslationPEOName | ✅ |
+| OBJECT_VERSION_NUMBER | GradeTranslationPEOObjectVersionNumber | — |
+| SOURCE_LANG | GradeTranslationPEOSourceLang | ✅ |
+
+### [[validgradespvo|ValidGradesPVO]] (GL)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | GradeTranslationPEOCreatedBy | — |
+| CREATION_DATE | GradeTranslationPEOCreationDate | — |
+| EFFECTIVE_END_DATE | GradeTranslationPEOEffectiveEndDate | — |
+| EFFECTIVE_START_DATE | GradeTranslationPEOEffectiveStartDate | — |
+| GRADE_ID | GradeTranslationPEOGradeId | — |
+| LANGUAGE | GradeTranslationPEOLanguage | — |
+| LAST_UPDATE_DATE | GradeTranslationPEOLastUpdateDate | — |
+| LAST_UPDATE_LOGIN | GradeTranslationPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | GradeTranslationPEOLastUpdatedBy | — |
+| NAME | GradeTranslationPEOName | — |
+| OBJECT_VERSION_NUMBER | GradeTranslationPEOObjectVersionNumber | — |
+| SOURCE_LANG | GradeTranslationPEOSourceLang | — |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — PER_GRADES_F_TL](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/pergradesftl.html)

@@ -59,3 +59,39 @@ updated_at: 2026-03-26
 ## 📎 Uso Típico
 
 (a ser preenchido na etapa 03)
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[billingeventpvo|BillingEventPVO]] (OTHER)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CONTRACT_NUMBER | ContractHeaderPEOContractNumber | — |
+| ID | ContractHeaderPEOId | — |
+| MAJOR_VERSION | ContractHeaderPEOMajorVersion | — |
+| OWNING_ORG_ID | ContractHeaderPEOOwningOrgId | — |
+| STS_CODE | ContractHeaderPEOStsCode | — |
+
+### [[invoicedistributionpvo|InvoiceDistributionPVO]] (AP · BICC: 4/6)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CONTRACT_NUMBER | ContractHeaderPEOContractNumber | ✅ |
+| DESCRIPTION | ContractHeaderPEODescription | ✅ |
+| ID | ContractHeaderPEOId | ✅ |
+| LEGAL_ENTITY_ID | ContractHeaderPEOLegalEntityId | — |
+| MAJOR_VERSION | ContractHeaderPEOMajorVersion | ✅ |
+| OWNING_ORG_ID | ContractHeaderPEOOwningOrgId | — |
+
+### [[revenuedistributionpvo|RevenueDistributionPVO]] (AR)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CONTRACT_NUMBER | ContractHeaderPEOContractNumber | — |
+| DESCRIPTION | ContractHeaderPEODescription | — |
+| ID | ContractHeaderPEOId | — |
+| LEGAL_ENTITY_ID | LegalEntityId | — |
+| MAJOR_VERSION | ContractHeaderPEOMajorVersion | — |
+| OWNING_ORG_ID | ContractHeaderPEOOwningOrgId | — |

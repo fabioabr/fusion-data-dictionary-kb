@@ -108,6 +108,93 @@ ORDER BY at.ACTN_TYP_CD;
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[benefitactiontypepvo|BenefitActionTypePVO]] (HCM · BICC: 6/78)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTN_TYP_ID | ActnTypId | ✅ |
+| ACTN_TYP_LVL_CD | ActnTypLvlCd | ✅ |
+| BUSINESS_GROUP_ID | BusinessGroupId | — |
+| CREATED_BY | CreatedBy | — |
+| CREATION_DATE | CreationDate | — |
+| DESCRIPTION | Description | ✅ |
+| EAT_ATTRIBUTE1 | EatAttribute1 | — |
+| EAT_ATTRIBUTE10 | EatAttribute10 | — |
+| EAT_ATTRIBUTE11 | EatAttribute11 | — |
+| EAT_ATTRIBUTE12 | EatAttribute12 | — |
+| EAT_ATTRIBUTE13 | EatAttribute13 | — |
+| EAT_ATTRIBUTE14 | EatAttribute14 | — |
+| EAT_ATTRIBUTE15 | EatAttribute15 | — |
+| EAT_ATTRIBUTE16 | EatAttribute16 | — |
+| EAT_ATTRIBUTE17 | EatAttribute17 | — |
+| EAT_ATTRIBUTE18 | EatAttribute18 | — |
+| EAT_ATTRIBUTE19 | EatAttribute19 | — |
+| EAT_ATTRIBUTE2 | EatAttribute2 | — |
+| EAT_ATTRIBUTE20 | EatAttribute20 | — |
+| EAT_ATTRIBUTE21 | EatAttribute21 | — |
+| EAT_ATTRIBUTE22 | EatAttribute22 | — |
+| EAT_ATTRIBUTE23 | EatAttribute23 | — |
+| EAT_ATTRIBUTE24 | EatAttribute24 | — |
+| EAT_ATTRIBUTE25 | EatAttribute25 | — |
+| EAT_ATTRIBUTE26 | EatAttribute26 | — |
+| EAT_ATTRIBUTE27 | EatAttribute27 | — |
+| EAT_ATTRIBUTE28 | EatAttribute28 | — |
+| EAT_ATTRIBUTE29 | EatAttribute29 | — |
+| EAT_ATTRIBUTE3 | EatAttribute3 | — |
+| EAT_ATTRIBUTE30 | EatAttribute30 | — |
+| EAT_ATTRIBUTE4 | EatAttribute4 | — |
+| EAT_ATTRIBUTE5 | EatAttribute5 | — |
+| EAT_ATTRIBUTE6 | EatAttribute6 | — |
+| EAT_ATTRIBUTE7 | EatAttribute7 | — |
+| EAT_ATTRIBUTE8 | EatAttribute8 | — |
+| EAT_ATTRIBUTE9 | EatAttribute9 | — |
+| EAT_ATTRIBUTE_CATEGORY | EatAttributeCategory | — |
+| EAT_ATTRIBUTE_DATE1 | EatAttributeDate1 | — |
+| EAT_ATTRIBUTE_DATE10 | EatAttributeDate10 | — |
+| EAT_ATTRIBUTE_DATE11 | EatAttributeDate11 | — |
+| EAT_ATTRIBUTE_DATE12 | EatAttributeDate12 | — |
+| EAT_ATTRIBUTE_DATE13 | EatAttributeDate13 | — |
+| EAT_ATTRIBUTE_DATE14 | EatAttributeDate14 | — |
+| EAT_ATTRIBUTE_DATE15 | EatAttributeDate15 | — |
+| EAT_ATTRIBUTE_DATE2 | EatAttributeDate2 | — |
+| EAT_ATTRIBUTE_DATE3 | EatAttributeDate3 | — |
+| EAT_ATTRIBUTE_DATE4 | EatAttributeDate4 | — |
+| EAT_ATTRIBUTE_DATE5 | EatAttributeDate5 | — |
+| EAT_ATTRIBUTE_DATE6 | EatAttributeDate6 | — |
+| EAT_ATTRIBUTE_DATE7 | EatAttributeDate7 | — |
+| EAT_ATTRIBUTE_DATE8 | EatAttributeDate8 | — |
+| EAT_ATTRIBUTE_DATE9 | EatAttributeDate9 | — |
+| EAT_ATTRIBUTE_NUMBER1 | EatAttributeNumber1 | — |
+| EAT_ATTRIBUTE_NUMBER10 | EatAttributeNumber10 | — |
+| EAT_ATTRIBUTE_NUMBER11 | EatAttributeNumber11 | — |
+| EAT_ATTRIBUTE_NUMBER12 | EatAttributeNumber12 | — |
+| EAT_ATTRIBUTE_NUMBER13 | EatAttributeNumber13 | — |
+| EAT_ATTRIBUTE_NUMBER14 | EatAttributeNumber14 | — |
+| EAT_ATTRIBUTE_NUMBER15 | EatAttributeNumber15 | — |
+| EAT_ATTRIBUTE_NUMBER16 | EatAttributeNumber16 | — |
+| EAT_ATTRIBUTE_NUMBER17 | EatAttributeNumber17 | — |
+| EAT_ATTRIBUTE_NUMBER18 | EatAttributeNumber18 | — |
+| EAT_ATTRIBUTE_NUMBER19 | EatAttributeNumber19 | — |
+| EAT_ATTRIBUTE_NUMBER2 | EatAttributeNumber2 | — |
+| EAT_ATTRIBUTE_NUMBER20 | EatAttributeNumber20 | — |
+| EAT_ATTRIBUTE_NUMBER3 | EatAttributeNumber3 | — |
+| EAT_ATTRIBUTE_NUMBER4 | EatAttributeNumber4 | — |
+| EAT_ATTRIBUTE_NUMBER5 | EatAttributeNumber5 | — |
+| EAT_ATTRIBUTE_NUMBER6 | EatAttributeNumber6 | — |
+| EAT_ATTRIBUTE_NUMBER7 | EatAttributeNumber7 | — |
+| EAT_ATTRIBUTE_NUMBER8 | EatAttributeNumber8 | — |
+| EAT_ATTRIBUTE_NUMBER9 | EatAttributeNumber9 | — |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | — |
+| LAST_UPDATED_BY | LastUpdatedBy | — |
+| NAME | ActionTypeName | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | — |
+| TYPE_CD | TypeCd | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — BEN_ACTN_TYP_VL](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/benactntypvl.html)

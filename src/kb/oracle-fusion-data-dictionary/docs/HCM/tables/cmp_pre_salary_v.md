@@ -117,6 +117,84 @@ WHERE  ps.CHANGE_PERCENT > 10;
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[offersalarypvo|OfferSalaryPVO]] (HCM · BICC: 7/26)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ANNUALIZATION_FACTOR | AnnualizationFactor | — |
+| ASSIGNMENT_ID | AssignmentId | — |
+| COMPARATIO | Comparatio | — |
+| DATE_FROM | DateFrom | ✅ |
+| DATE_TO | DateTo | ✅ |
+| ELEMENT_TYPE_ID | ElementTypeId | — |
+| MAXIMUM | Maximum | ✅ |
+| MID_VALUE | MidValue | ✅ |
+| MINIMUM | Minimum | ✅ |
+| PAYROLL_ANNUAL_FACTOR | PayrollAnnualFactor | ✅ |
+| PAYROLL_FREQUENCY_CODE | PayrollFrequencyCode | ✅ |
+| PERCENTILE | Percentile | — |
+| PREV_AMT | PrevAmt | — |
+| PREV_CURR_CODE | PrevCurrCode | — |
+| PREV_SALARY_BASIS | PrevSalaryBasis | — |
+| QUARTILE | Quartile | — |
+| QUINTILE | Quintile | — |
+| RATE_FREQUENCY | RateFrequency | — |
+| RATE_ID | RateId | — |
+| RATE_NAME | RateName | — |
+| RATE_OBJECT_TYPE | RateObjectType | — |
+| RATE_TYPE | RateType | — |
+| SALARY_AMOUNT | SalaryAmount | — |
+| SALARY_CHANGE_AMT | SalaryChangeAmt | — |
+| SALARY_CHANGE_PER | SalaryChangePer | — |
+| SALARY_ID | SalaryId1 | — |
+
+### [[presalarypvo|PreSalaryPVO]] (HCM · BICC: 19/38)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ANNUALIZATION_FACTOR | PreSalaryPEOAnnualizationFactor | ✅ |
+| ANNUALIZED_FULLTIME_SALARY | PreSalaryPEOAnnualizedFulltimeSalary | ✅ |
+| ANNUALIZED_SALARY | PreSalaryPEOAnnualizedSalary | ✅ |
+| ASSIGNMENT_ID | PreSalaryPEOAssignmentId | — |
+| BUSINESS_UNIT_ID | BusinessUnitId | — |
+| COMPARATIO | PreSalaryPEOComparatio | — |
+| DATE_FROM | PreSalaryPEODateFrom | — |
+| DATE_TO | PreSalaryPEODateTo | — |
+| ELEMENT_TYPE_ID | PreSalaryPEOElementTypeId | — |
+| GEOGRAPHY_ID | GeographyId | — |
+| GEOGRAPHY_TYPE_ID | GeographyTypeId | — |
+| GRADE_RATE_MINIMUM_LIMIT | GradeRateMinimumLimit | — |
+| JOB_ID | JobId | — |
+| LAST_UPDATE_DATE | PreSalaryPEOLastUpdateDate | — |
+| MAXIMUM | PreSalaryPEOMaximum | ✅ |
+| MID_VALUE | PreSalaryPEOMidValue | ✅ |
+| MINIMUM | PreSalaryPEOMinimum | ✅ |
+| PAYROLL_ANNUAL_FACTOR | PayrollAnnualFactor | ✅ |
+| PAYROLL_FREQUENCY_CODE | PayrollFrequencyCode | ✅ |
+| PERCENTILE | PreSalaryPEOPercentile | — |
+| PREV_AMT | PreSalaryPEOPrevAmt | ✅ |
+| PREV_CURR_CODE | PreSalaryPEOPrevCurrCode | ✅ |
+| PREV_SALARY_BASIS | PreSalaryPEOPrevSalaryBasis | — |
+| QUARTILE | PreSalaryPEOQuartile | — |
+| QUINTILE | PreSalaryPEOQuintile | — |
+| RANGE_DIFF_FACTOR | PreSalaryPEORangeDiffFactor | ✅ |
+| RATE_FREQUENCY | PreSalaryPEORateFrequency | ✅ |
+| RATE_ID | PreSalaryPEORateId | — |
+| RATE_NAME | PreSalaryPEORateName | ✅ |
+| RATE_OBJECT_TYPE | PreSalaryPEORateObjectType | ✅ |
+| RATE_TYPE | PreSalaryPEORateType | ✅ |
+| RATE_VALUE | PreSalaryPEORateValue | ✅ |
+| SALARY_AMOUNT | PreSalaryPEOSalaryAmount | — |
+| SALARY_CHANGE_AMT | PreSalaryPEOSalaryChangeAmt | ✅ |
+| SALARY_CHANGE_PER | PreSalaryPEOSalaryChangePer | ✅ |
+| SALARY_ID | SalaryId | ✅ |
+| WORK_AT_HOME | WorkAtHome | — |
+| ZONE_GRADE_RATE_ID | ZoneGradeRateId | — |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — CMP_PRE_SALARY_V](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/cmppresalaryv.html)

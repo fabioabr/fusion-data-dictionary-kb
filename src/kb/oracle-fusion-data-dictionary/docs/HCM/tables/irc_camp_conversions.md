@@ -107,3 +107,39 @@ GROUP BY cc.CONVERSION_TYPE;
 
 - [Oracle Docs -- IRC_CAMP_CONVERSIONS](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/irccampconversions.html)
 - [[hcm-module-data-dictionary]] -- Dossie do modulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[campconverapplypvo|CampConverApplyPVO]] (HCM · BICC: 2/11)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CAMPAIGN_ID | CampconversionPEOCampaignId | — |
+| CONVERSION_ID | ConversionId | ✅ |
+| CREATED_BY | CampconversionPEOCreatedBy | — |
+| CREATION_DATE | CampconversionPEOCreationDate | — |
+| GOAL_ID | CampconversionPEOGoalId | — |
+| GOAL_TYPE_CODE | CampconversionPEOGoalTypeCode | — |
+| LAST_UPDATE_DATE | CampconversionPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | CampconversionPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | CampconversionPEOLastUpdatedBy | — |
+| OBJECT_ID | CampconversionPEOObjectId | — |
+| OBJECT_VERSION_NUMBER | CampconversionPEOObjectVersionNumber | — |
+
+### [[campconverreferpvo|CampConverReferPVO]] (HCM · BICC: 2/11)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CAMPAIGN_ID | CampConversionPEOCampaignId | — |
+| CONVERSION_ID | ConversionId | ✅ |
+| CREATED_BY | CampConversionPEOCreatedBy | — |
+| CREATION_DATE | CampConversionPEOCreationDate | — |
+| GOAL_ID | CampConversionPEOGoalId | — |
+| GOAL_TYPE_CODE | CampConversionPEOGoalTypeCode | — |
+| LAST_UPDATE_DATE | CampConversionPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | CampConversionPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | CampConversionPEOLastUpdatedBy | — |
+| OBJECT_ID | CampConversionPEOObjectId | — |
+| OBJECT_VERSION_NUMBER | CampConversionPEOObjectVersionNumber | — |

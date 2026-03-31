@@ -98,6 +98,19 @@ WHERE  tl.DEDUCTION_TYPE_ID = :p_type_id
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[deductiontype|DeductionType]] (HCM · BICC: 3/4)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| DEDUCTION_TYPE_ID | DeductionTypeTranslationPEODeductionTypeId | — |
+| LANGUAGE | DeductionTypeTranslationPEOLanguage | ✅ |
+| NAME | DeductionTypeTranslationPEOName | ✅ |
+| SOURCE_LANG | DeductionTypeTranslationPEOSourceLang | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — PAY_DEDUCTION_TYPES_TL](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/paydeductiontypestl.html)

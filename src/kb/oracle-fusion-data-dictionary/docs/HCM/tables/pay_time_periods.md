@@ -106,6 +106,47 @@ ORDER BY tp.START_DATE;
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[timeperiodpvo|TimePeriodPVO]] (HCM · BICC: 28/32)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | TimePeriodPEOCreatedBy | ✅ |
+| CREATION_DATE | TimePeriodPEOCreationDate | ✅ |
+| CUT_OFF_DATE | TimePeriodPEOCutOffDate | ✅ |
+| DEFAULT_PAYDATE | TimePeriodPEODefaultPaydate | ✅ |
+| DESCRIPTION | TimePeriodPEODescription | ✅ |
+| END_DATE | TimePeriodPEOEndDate | ✅ |
+| LAST_UPDATE_DATE | TimePeriodPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | TimePeriodPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | TimePeriodPEOLastUpdatedBy | ✅ |
+| LEGISLATION_CODE | TimePeriodPEOLegislationCode | ✅ |
+| LEGISLATIVE_DATA_GROUP_ID | TimePeriodPEOLegislativeDataGroupId | ✅ |
+| OBJECT_VERSION_NUMBER | TimePeriodPEOObjectVersionNumber | — |
+| PAYROLL_ID | TimePeriodPEOPayrollId | ✅ |
+| PAYSLIP_VIEW_DATE | TimePeriodPEOPayslipViewDate | ✅ |
+| PERIOD_CATEGORY | TimePeriodPEOPeriodCategory | ✅ |
+| PERIOD_NAME | TimePeriodPEOPeriodName | ✅ |
+| PERIOD_NUM | TimePeriodPEOPeriodNum | ✅ |
+| PERIOD_SET_NAME | TimePeriodPEOPeriodSetName | ✅ |
+| PERIOD_TYPE | TimePeriodPEOPeriodType | ✅ |
+| PERIOD_YEAR | TimePeriodPEOPeriodYear | ✅ |
+| PROC_PERIOD_TYPE | TimePeriodPEOProcPeriodType | ✅ |
+| PROCESS_SUB_DATE | ProcessSubDate | ✅ |
+| QUARTER_NUM | TimePeriodPEOQuarterNum | — |
+| QUICKPAY_DISPLAY_NUMBER | TimePeriodPEOQuickpayDisplayNumber | — |
+| REGULAR_EARN_DATE | TimePeriodPEORegularEarnDate | ✅ |
+| REGULAR_PROCESS_DATE | TimePeriodPEORegularProcessDate | ✅ |
+| RUN_DISPLAY_NUMBER | TimePeriodPEORunDisplayNumber | ✅ |
+| START_DATE | TimePeriodPEOStartDate | ✅ |
+| STATUS | TimePeriodPEOStatus | ✅ |
+| TIME_DEFINITION_ID | TimePeriodPEOTimeDefinitionId | ✅ |
+| TIME_PERIOD_ID | TimePeriodId | ✅ |
+| YEAR_NUMBER | TimePeriodPEOYearNumber | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — PAY_TIME_PERIODS](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/paytimeperiods.html)

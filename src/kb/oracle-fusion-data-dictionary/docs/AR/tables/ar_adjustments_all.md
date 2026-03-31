@@ -159,6 +159,419 @@ WHERE  adj.STATUS = 'A'
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[adjustmentapprovalactionhistorypvo|AdjustmentApprovalActionHistoryPVO]] (AR)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACCTD_AMOUNT | AdjustmentAcctdAmount | — |
+| ADJ_TAX_ACCT_RULE | AdjustmentAdjTaxAcctRule | — |
+| ADJUSTMENT_ID | AdjustmentAdjustmentId | — |
+| ADJUSTMENT_NUMBER | AdjustmentAdjustmentNumber | — |
+| ADJUSTMENT_TYPE | AdjustmentAdjustmentType | — |
+| AMOUNT | AdjustmentAmount | — |
+| APPLY_DATE | AdjustmentApplyDate | — |
+| APPROVED_BY | AdjustmentApprovedBy | — |
+| AUTOMATICALLY_GENERATED | AdjustmentAutomaticallyGenerated | — |
+| AX_ACCOUNTED_FLAG | AdjustmentAxAccountedFlag | — |
+| COMMENTS | AdjustmentComments | — |
+| CREATED_FROM | AdjustmentCreatedFrom | — |
+| DOC_SEQUENCE_VALUE | AdjustmentDocSequenceValue | — |
+| FREIGHT_ADJUSTED | AdjustmentFreightAdjusted | — |
+| GL_DATE | AdjustmentGlDate | — |
+| GL_POSTED_DATE | AdjustmentGlPostedDate | — |
+| LINE_ADJUSTED | AdjustmentLineAdjusted | — |
+| MRC_ACCTD_AMOUNT | AdjustmentMrcAcctdAmount | — |
+| MRC_GL_POSTED_DATE | AdjustmentMrcGlPostedDate | — |
+| POSTABLE | AdjustmentPostable | — |
+| PROGRAM_UPDATE_DATE | AdjustmentProgramUpdateDate | — |
+| REASON_CODE | AdjustmentReasonCode | — |
+| RECEIVABLES_CHARGES_ADJUSTED | AdjustmentReceivablesChargesAdjusted | — |
+| STATUS | AdjustmentStatus | — |
+| TAX_ADJUSTED | AdjustmentTaxAdjusted | — |
+| TYPE | AdjustmentType | — |
+| UPGRADE_METHOD | AdjustmentUpgradeMethod | — |
+| USSGL_TRANSACTION_CODE | AdjustmentUssglTransactionCode | — |
+| USSGL_TRANSACTION_CODE_CONTEXT | AdjustmentUssglTransactionCodeContext | — |
+
+### [[adjustmentdistributionpvo|AdjustmentDistributionPVO]] (AR · BICC: 20/59)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACCTD_AMOUNT | AdjustmentAcctdAmount | — |
+| ADJ_TAX_ACCT_RULE | AdjustmentAdjTaxAcctRule | — |
+| ADJUSTMENT_ID | AdjustmentAdjustmentId | ✅ |
+| ADJUSTMENT_NUMBER | AdjustmentAdjustmentNumber | ✅ |
+| ADJUSTMENT_TYPE | AdjustmentAdjustmentType | ✅ |
+| AMOUNT | AdjustmentAmount | — |
+| APPLY_DATE | AdjustmentApplyDate | ✅ |
+| APPROVED_BY | AdjustmentApprovedBy | — |
+| ASSOCIATED_APPLICATION_ID | AdjustmentAssociatedApplicationId | — |
+| ASSOCIATED_CASH_RECEIPT_ID | AdjustmentAssociatedCashReceiptId | — |
+| AUTOMATICALLY_GENERATED | AdjustmentAutomaticallyGenerated | — |
+| AX_ACCOUNTED_FLAG | AdjustmentAxAccountedFlag | — |
+| BATCH_ID | AdjustmentBatchId | — |
+| CHARGEBACK_CUSTOMER_TRX_ID | AdjustmentChargebackCustomerTrxId | — |
+| CODE_COMBINATION_ID | AdjustmentCodeCombinationId | — |
+| COMMENTS | AdjustmentComments | ✅ |
+| CONS_INV_ID | AdjustmentConsInvId | — |
+| CREATED_BY | AdjustmentCreatedBy | ✅ |
+| CREATED_FROM | AdjustmentCreatedFrom | — |
+| CREATION_DATE | AdjustmentCreationDate | ✅ |
+| CUSTOMER_TRX_ID | AdjustmentCustomerTrxId | — |
+| CUSTOMER_TRX_LINE_ID | AdjustmentCustomerTrxLineId | — |
+| DISTRIBUTION_SET_ID | AdjustmentDistributionSetId | — |
+| DOC_SEQUENCE_ID | AdjustmentDocSequenceId | — |
+| DOC_SEQUENCE_VALUE | AdjustmentDocSequenceValue | ✅ |
+| EVENT_ID | AdjustmentEventId | ✅ |
+| FREIGHT_ADJUSTED | AdjustmentFreightAdjusted | — |
+| GL_DATE | AdjustmentGlDate | ✅ |
+| GL_POSTED_DATE | AdjustmentGlPostedDate | ✅ |
+| INTEREST_HEADER_ID | AdjustmentInterestHeaderId | — |
+| INTEREST_LINE_ID | AdjustmentInterestLineId | — |
+| LAST_UPDATE_DATE | AdjustmentLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | AdjustmentLastUpdateLogin | — |
+| LAST_UPDATED_BY | AdjustmentLastUpdatedBy | ✅ |
+| LINE_ADJUSTED | AdjustmentLineAdjusted | — |
+| LINK_TO_TRX_HIST_ID | AdjustmentLinkToTrxHistId | — |
+| MRC_ACCTD_AMOUNT | AdjustmentMrcAcctdAmount | — |
+| MRC_GL_POSTED_DATE | AdjustmentMrcGlPostedDate | — |
+| MRC_POSTING_CONTROL_ID | AdjustmentMrcPostingControlId | — |
+| OBJECT_VERSION_NUMBER | AdjustmentObjectVersionNumber | — |
+| ORG_ID | AdjustmentOrgId | ✅ |
+| PAYMENT_SCHEDULE_ID | AdjustmentPaymentScheduleId | — |
+| POSTABLE | AdjustmentPostable | ✅ |
+| POSTING_CONTROL_ID | AdjustmentPostingControlId | ✅ |
+| PROGRAM_APPLICATION_ID | AdjustmentProgramApplicationId | — |
+| PROGRAM_ID | AdjustmentProgramId | — |
+| PROGRAM_UPDATE_DATE | AdjustmentProgramUpdateDate | — |
+| REASON_CODE | AdjustmentReasonCode | ✅ |
+| RECEIVABLES_CHARGES_ADJUSTED | AdjustmentReceivablesChargesAdjusted | — |
+| RECEIVABLES_TRX_ID | AdjustmentReceivablesTrxId | — |
+| REQUEST_ID | AdjustmentRequestId | — |
+| SET_OF_BOOKS_ID | AdjustmentSetOfBooksId | ✅ |
+| STATUS | AdjustmentStatus | ✅ |
+| SUBSEQUENT_TRX_ID | AdjustmentSubsequentTrxId | — |
+| TAX_ADJUSTED | AdjustmentTaxAdjusted | — |
+| TYPE | AdjustmentType | ✅ |
+| UPGRADE_METHOD | AdjustmentUpgradeMethod | — |
+| USSGL_TRANSACTION_CODE | AdjustmentUssglTransactionCode | — |
+| USSGL_TRANSACTION_CODE_CONTEXT | AdjustmentUssglTransactionCodeContext | — |
+
+### [[adjustmentpvo|AdjustmentPVO]] (AR · BICC: 23/59)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACCTD_AMOUNT | AdjustmentAcctdAmount | ✅ |
+| ADJ_TAX_ACCT_RULE | AdjustmentAdjTaxAcctRule | — |
+| ADJUSTMENT_ID | AdjustmentId | ✅ |
+| ADJUSTMENT_NUMBER | AdjustmentAdjustmentNumber | ✅ |
+| ADJUSTMENT_TYPE | AdjustmentAdjustmentType | ✅ |
+| AMOUNT | AdjustmentAmount | ✅ |
+| APPLY_DATE | AdjustmentApplyDate | ✅ |
+| APPROVED_BY | AdjustmentApprovedBy | — |
+| ASSOCIATED_APPLICATION_ID | AdjustmentAssociatedApplicationId | — |
+| ASSOCIATED_CASH_RECEIPT_ID | AdjustmentAssociatedCashReceiptId | — |
+| AUTOMATICALLY_GENERATED | AdjustmentAutomaticallyGenerated | — |
+| AX_ACCOUNTED_FLAG | AdjustmentAxAccountedFlag | — |
+| BATCH_ID | AdjustmentBatchId | — |
+| CHARGEBACK_CUSTOMER_TRX_ID | AdjustmentChargebackCustomerTrxId | — |
+| CODE_COMBINATION_ID | AdjustmentCodeCombinationId | — |
+| COMMENTS | AdjustmentComments | ✅ |
+| CONS_INV_ID | AdjustmentConsInvId | — |
+| CREATED_BY | AdjustmentCreatedBy | ✅ |
+| CREATED_FROM | AdjustmentCreatedFrom | — |
+| CREATION_DATE | AdjustmentCreationDate | ✅ |
+| CUSTOMER_TRX_ID | AdjustmentCustomerTrxId | — |
+| CUSTOMER_TRX_LINE_ID | AdjustmentCustomerTrxLineId | — |
+| DISTRIBUTION_SET_ID | AdjustmentDistributionSetId | — |
+| DOC_SEQUENCE_ID | AdjustmentDocSequenceId | — |
+| DOC_SEQUENCE_VALUE | AdjustmentDocSequenceValue | ✅ |
+| EVENT_ID | AdjustmentEventId | ✅ |
+| FREIGHT_ADJUSTED | AdjustmentFreightAdjusted | ✅ |
+| GL_DATE | AdjustmentGlDate | ✅ |
+| GL_POSTED_DATE | AdjustmentGlPostedDate | ✅ |
+| INTEREST_HEADER_ID | AdjustmentInterestHeaderId | — |
+| INTEREST_LINE_ID | AdjustmentInterestLineId | — |
+| LAST_UPDATE_DATE | AdjustmentLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | AdjustmentLastUpdateLogin | — |
+| LAST_UPDATED_BY | AdjustmentLastUpdatedBy | ✅ |
+| LINE_ADJUSTED | AdjustmentLineAdjusted | ✅ |
+| LINK_TO_TRX_HIST_ID | AdjustmentLinkToTrxHistId | — |
+| MRC_ACCTD_AMOUNT | AdjustmentMrcAcctdAmount | — |
+| MRC_GL_POSTED_DATE | AdjustmentMrcGlPostedDate | — |
+| MRC_POSTING_CONTROL_ID | AdjustmentMrcPostingControlId | — |
+| OBJECT_VERSION_NUMBER | AdjustmentObjectVersionNumber | — |
+| ORG_ID | AdjustmentOrgId | — |
+| PAYMENT_SCHEDULE_ID | AdjustmentPaymentScheduleId | — |
+| POSTABLE | AdjustmentPostable | ✅ |
+| POSTING_CONTROL_ID | AdjustmentPostingControlId | ✅ |
+| PROGRAM_APPLICATION_ID | AdjustmentProgramApplicationId | — |
+| PROGRAM_ID | AdjustmentProgramId | — |
+| PROGRAM_UPDATE_DATE | AdjustmentProgramUpdateDate | — |
+| REASON_CODE | AdjustmentReasonCode | ✅ |
+| RECEIVABLES_CHARGES_ADJUSTED | AdjustmentReceivablesChargesAdjusted | ✅ |
+| RECEIVABLES_TRX_ID | AdjustmentReceivablesTrxId | — |
+| REQUEST_ID | AdjustmentRequestId | — |
+| SET_OF_BOOKS_ID | AdjustmentSetOfBooksId | — |
+| STATUS | AdjustmentStatus | — |
+| SUBSEQUENT_TRX_ID | AdjustmentSubsequentTrxId | — |
+| TAX_ADJUSTED | AdjustmentTaxAdjusted | ✅ |
+| TYPE | AdjustmentType | ✅ |
+| UPGRADE_METHOD | AdjustmentUpgradeMethod | — |
+| USSGL_TRANSACTION_CODE | AdjustmentUssglTransactionCode | — |
+| USSGL_TRANSACTION_CODE_CONTEXT | AdjustmentUssglTransactionCodeContext | — |
+
+### [[completedtrxrevadjdistributionpvo|CompletedTrxRevAdjDistributionPVO]] (AR · BICC: 4/56)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACCTD_AMOUNT | AdjustmentAcctdAmount | — |
+| ADJ_TAX_ACCT_RULE | AdjustmentAdjTaxAcctRule | — |
+| ADJUSTMENT_ID | AdjustmentAdjustmentId | — |
+| ADJUSTMENT_NUMBER | AdjustmentAdjustmentNumber | — |
+| ADJUSTMENT_TYPE | AdjustmentAdjustmentType | — |
+| AMOUNT | AdjustmentAmount | — |
+| APPLY_DATE | AdjustmentApplyDate | — |
+| APPROVED_BY | AdjustmentApprovedBy | — |
+| ASSOCIATED_APPLICATION_ID | AdjustmentAssociatedApplicationId | — |
+| ASSOCIATED_CASH_RECEIPT_ID | AdjustmentAssociatedCashReceiptId | — |
+| AUTOMATICALLY_GENERATED | AdjustmentAutomaticallyGenerated | — |
+| AX_ACCOUNTED_FLAG | AdjustmentAxAccountedFlag | — |
+| BATCH_ID | AdjustmentBatchId | — |
+| CHARGEBACK_CUSTOMER_TRX_ID | AdjustmentChargebackCustomerTrxId | — |
+| CODE_COMBINATION_ID | AdjustmentCodeCombinationId | ✅ |
+| CONS_INV_ID | AdjustmentConsInvId | — |
+| CREATED_BY | AdjustmentCreatedBy | — |
+| CREATED_FROM | AdjustmentCreatedFrom | — |
+| CUSTOMER_TRX_ID | AdjustmentCustomerTrxId | — |
+| CUSTOMER_TRX_LINE_ID | AdjustmentCustomerTrxLineId | — |
+| DISTRIBUTION_SET_ID | AdjustmentDistributionSetId | — |
+| DOC_SEQUENCE_ID | AdjustmentDocSequenceId | — |
+| DOC_SEQUENCE_VALUE | AdjustmentDocSequenceValue | — |
+| EVENT_ID | AdjustmentEventId | — |
+| FREIGHT_ADJUSTED | AdjustmentFreightAdjusted | — |
+| GL_DATE | AdjustmentGlDate | ✅ |
+| GL_POSTED_DATE | AdjustmentGlPostedDate | ✅ |
+| INTEREST_HEADER_ID | AdjustmentInterestHeaderId | — |
+| INTEREST_LINE_ID | AdjustmentInterestLineId | — |
+| LAST_UPDATE_LOGIN | AdjustmentLastUpdateLogin | — |
+| LAST_UPDATED_BY | AdjustmentLastUpdatedBy | — |
+| LINE_ADJUSTED | AdjustmentLineAdjusted | — |
+| LINK_TO_TRX_HIST_ID | AdjustmentLinkToTrxHistId | — |
+| MRC_ACCTD_AMOUNT | AdjustmentMrcAcctdAmount | — |
+| MRC_GL_POSTED_DATE | AdjustmentMrcGlPostedDate | — |
+| MRC_POSTING_CONTROL_ID | AdjustmentMrcPostingControlId | — |
+| OBJECT_VERSION_NUMBER | AdjustmentObjectVersionNumber | — |
+| ORG_ID | AdjustmentOrgId | — |
+| PAYMENT_SCHEDULE_ID | AdjustmentPaymentScheduleId | — |
+| POSTABLE | AdjustmentPostable | — |
+| POSTING_CONTROL_ID | AdjustmentPostingControlId | — |
+| PROGRAM_APPLICATION_ID | AdjustmentProgramApplicationId | — |
+| PROGRAM_ID | AdjustmentProgramId | — |
+| PROGRAM_UPDATE_DATE | AdjustmentProgramUpdateDate | — |
+| REASON_CODE | AdjustmentReasonCode | — |
+| RECEIVABLES_CHARGES_ADJUSTED | AdjustmentReceivablesChargesAdjusted | — |
+| RECEIVABLES_TRX_ID | AdjustmentReceivablesTrxId | — |
+| REQUEST_ID | AdjustmentRequestId | — |
+| SET_OF_BOOKS_ID | AdjustmentSetOfBooksId | ✅ |
+| STATUS | AdjustmentStatus | — |
+| SUBSEQUENT_TRX_ID | AdjustmentSubsequentTrxId | — |
+| TAX_ADJUSTED | AdjustmentTaxAdjusted | — |
+| TYPE | AdjustmentType | — |
+| UPGRADE_METHOD | AdjustmentUpgradeMethod | — |
+| USSGL_TRANSACTION_CODE | AdjustmentUssglTransactionCode | — |
+| USSGL_TRANSACTION_CODE_CONTEXT | AdjustmentUssglTransactionCodeContext | — |
+
+### [[paymentschedulepvo|PaymentSchedulePVO]] (AR)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACCTD_AMOUNT | AdjustmentAcctdAmount | — |
+| ADJ_TAX_ACCT_RULE | AdjustmentAdjTaxAcctRule | — |
+| ADJUSTMENT_ID | AdjustmentAdjustmentId | — |
+| ADJUSTMENT_NUMBER | AdjustmentAdjustmentNumber | — |
+| ADJUSTMENT_TYPE | AdjustmentAdjustmentType | — |
+| AMOUNT | AdjustmentAmount | — |
+| APPLY_DATE | AdjustmentApplyDate | — |
+| APPROVED_BY | AdjustmentApprovedBy | — |
+| ASSOCIATED_APPLICATION_ID | AdjustmentAssociatedApplicationId | — |
+| ASSOCIATED_CASH_RECEIPT_ID | AdjustmentAssociatedCashReceiptId | — |
+| AUTOMATICALLY_GENERATED | AdjustmentAutomaticallyGenerated | — |
+| AX_ACCOUNTED_FLAG | AdjustmentAxAccountedFlag | — |
+| BATCH_ID | AdjustmentBatchId | — |
+| CHARGEBACK_CUSTOMER_TRX_ID | AdjustmentChargebackCustomerTrxId | — |
+| CODE_COMBINATION_ID | AdjustmentCodeCombinationId | — |
+| COMMENTS | AdjustmentComments | — |
+| CONS_INV_ID | AdjustmentConsInvId | — |
+| CREATED_BY | AdjustmentCreatedBy | — |
+| CREATED_FROM | AdjustmentCreatedFrom | — |
+| CUSTOMER_TRX_ID | AdjustmentCustomerTrxId | — |
+| CUSTOMER_TRX_LINE_ID | AdjustmentCustomerTrxLineId | — |
+| DISTRIBUTION_SET_ID | AdjustmentDistributionSetId | — |
+| DOC_SEQUENCE_ID | AdjustmentDocSequenceId | — |
+| DOC_SEQUENCE_VALUE | AdjustmentDocSequenceValue | — |
+| EVENT_ID | AdjustmentEventId | — |
+| FREIGHT_ADJUSTED | AdjustmentFreightAdjusted | — |
+| GL_DATE | AdjustmentGlDate | — |
+| GL_POSTED_DATE | AdjustmentGlPostedDate | — |
+| INTEREST_HEADER_ID | AdjustmentInterestHeaderId | — |
+| INTEREST_LINE_ID | AdjustmentInterestLineId | — |
+| LAST_UPDATE_LOGIN | AdjustmentLastUpdateLogin | — |
+| LAST_UPDATED_BY | AdjustmentLastUpdatedBy | — |
+| LINE_ADJUSTED | AdjustmentLineAdjusted | — |
+| LINK_TO_TRX_HIST_ID | AdjustmentLinkToTrxHistId | — |
+| MRC_ACCTD_AMOUNT | AdjustmentMrcAcctdAmount | — |
+| MRC_GL_POSTED_DATE | AdjustmentMrcGlPostedDate | — |
+| MRC_POSTING_CONTROL_ID | AdjustmentMrcPostingControlId | — |
+| OBJECT_VERSION_NUMBER | AdjustmentObjectVersionNumber | — |
+| ORG_ID | AdjustmentOrgId | — |
+| PAYMENT_SCHEDULE_ID | AdjustmentPaymentScheduleId | — |
+| POSTABLE | AdjustmentPostable | — |
+| POSTING_CONTROL_ID | AdjustmentPostingControlId | — |
+| PROGRAM_APPLICATION_ID | AdjustmentProgramApplicationId | — |
+| PROGRAM_ID | AdjustmentProgramId | — |
+| PROGRAM_UPDATE_DATE | AdjustmentProgramUpdateDate | — |
+| REASON_CODE | AdjustmentReasonCode | — |
+| RECEIVABLES_CHARGES_ADJUSTED | AdjustmentReceivablesChargesAdjusted | — |
+| RECEIVABLES_TRX_ID | AdjustmentReceivablesTrxId | — |
+| REQUEST_ID | AdjustmentRequestId | — |
+| SET_OF_BOOKS_ID | AdjustmentSetOfBooksId | — |
+| STATUS | AdjustmentStatus | — |
+| SUBSEQUENT_TRX_ID | AdjustmentSubsequentTrxId | — |
+| TAX_ADJUSTED | AdjustmentTaxAdjusted | — |
+| TYPE | AdjustmentType | — |
+| UPGRADE_METHOD | AdjustmentUpgradeMethod | — |
+| USSGL_TRANSACTION_CODE | AdjustmentUssglTransactionCode | — |
+| USSGL_TRANSACTION_CODE_CONTEXT | AdjustmentUssglTransactionCodeContext | — |
+
+### [[receiptapplicationdistributionpvo|ReceiptApplicationDistributionPVO]] (AR)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACCTD_AMOUNT | AdjustmentAcctdAmount | — |
+| ADJ_TAX_ACCT_RULE | AdjustmentAdjTaxAcctRule | — |
+| ADJUSTMENT_ID | AdjustmentAdjustmentId | — |
+| ADJUSTMENT_NUMBER | AdjustmentAdjustmentNumber | — |
+| ADJUSTMENT_TYPE | AdjustmentAdjustmentType | — |
+| AMOUNT | AdjustmentAmount | — |
+| APPLY_DATE | AdjustmentApplyDate | — |
+| APPROVED_BY | AdjustmentApprovedBy | — |
+| ASSOCIATED_APPLICATION_ID | AdjustmentAssociatedApplicationId | — |
+| ASSOCIATED_CASH_RECEIPT_ID | AdjustmentAssociatedCashReceiptId | — |
+| AUTOMATICALLY_GENERATED | AdjustmentAutomaticallyGenerated | — |
+| AX_ACCOUNTED_FLAG | AdjustmentAxAccountedFlag | — |
+| BATCH_ID | AdjustmentBatchId | — |
+| CHARGEBACK_CUSTOMER_TRX_ID | AdjustmentChargebackCustomerTrxId | — |
+| CODE_COMBINATION_ID | AdjustmentCodeCombinationId | — |
+| COMMENTS | AdjustmentComments | — |
+| CONS_INV_ID | AdjustmentConsInvId | — |
+| CREATED_BY | AdjustmentCreatedBy | — |
+| CREATED_FROM | AdjustmentCreatedFrom | — |
+| CUSTOMER_TRX_ID | AdjustmentCustomerTrxId | — |
+| CUSTOMER_TRX_LINE_ID | AdjustmentCustomerTrxLineId | — |
+| DISTRIBUTION_SET_ID | AdjustmentDistributionSetId | — |
+| DOC_SEQUENCE_ID | AdjustmentDocSequenceId | — |
+| DOC_SEQUENCE_VALUE | AdjustmentDocSequenceValue | — |
+| EVENT_ID | AdjustmentEventId | — |
+| FREIGHT_ADJUSTED | AdjustmentFreightAdjusted | — |
+| GL_DATE | AdjustmentGlDate | — |
+| GL_POSTED_DATE | AdjustmentGlPostedDate | — |
+| INTEREST_HEADER_ID | AdjustmentInterestHeaderId | — |
+| INTEREST_LINE_ID | AdjustmentInterestLineId | — |
+| LAST_UPDATE_LOGIN | AdjustmentLastUpdateLogin | — |
+| LAST_UPDATED_BY | AdjustmentLastUpdatedBy | — |
+| LINE_ADJUSTED | AdjustmentLineAdjusted | — |
+| LINK_TO_TRX_HIST_ID | AdjustmentLinkToTrxHistId | — |
+| MRC_ACCTD_AMOUNT | AdjustmentMrcAcctdAmount | — |
+| MRC_GL_POSTED_DATE | AdjustmentMrcGlPostedDate | — |
+| MRC_POSTING_CONTROL_ID | AdjustmentMrcPostingControlId | — |
+| OBJECT_VERSION_NUMBER | AdjustmentObjectVersionNumber | — |
+| ORG_ID | AdjustmentOrgId | — |
+| PAYMENT_SCHEDULE_ID | AdjustmentPaymentScheduleId | — |
+| POSTABLE | AdjustmentPostable | — |
+| POSTING_CONTROL_ID | AdjustmentPostingControlId | — |
+| PROGRAM_APPLICATION_ID | AdjustmentProgramApplicationId | — |
+| PROGRAM_ID | AdjustmentProgramId | — |
+| PROGRAM_UPDATE_DATE | AdjustmentProgramUpdateDate | — |
+| REASON_CODE | AdjustmentReasonCode | — |
+| RECEIVABLES_CHARGES_ADJUSTED | AdjustmentReceivablesChargesAdjusted | — |
+| RECEIVABLES_TRX_ID | AdjustmentReceivablesTrxId | — |
+| REQUEST_ID | AdjustmentRequestId | — |
+| SET_OF_BOOKS_ID | AdjustmentSetOfBooksId | — |
+| STATUS | AdjustmentStatus | — |
+| SUBSEQUENT_TRX_ID | AdjustmentSubsequentTrxId | — |
+| TAX_ADJUSTED | AdjustmentTaxAdjusted | — |
+| TYPE | AdjustmentType | — |
+| UPGRADE_METHOD | AdjustmentUpgradeMethod | — |
+| USSGL_TRANSACTION_CODE | AdjustmentUssglTransactionCode | — |
+| USSGL_TRANSACTION_CODE_CONTEXT | AdjustmentUssglTransactionCodeContext | — |
+
+### [[receiptapplicationdistributionvc|ReceiptApplicationDistributionVC]] (AR)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACCTD_AMOUNT | AdjustmentAcctdAmount | — |
+| ADJ_TAX_ACCT_RULE | AdjustmentAdjTaxAcctRule | — |
+| ADJUSTMENT_ID | AdjustmentAdjustmentId | — |
+| ADJUSTMENT_NUMBER | AdjustmentAdjustmentNumber | — |
+| ADJUSTMENT_TYPE | AdjustmentAdjustmentType | — |
+| AMOUNT | AdjustmentAmount | — |
+| APPLY_DATE | AdjustmentApplyDate | — |
+| APPROVED_BY | AdjustmentApprovedBy | — |
+| ASSOCIATED_APPLICATION_ID | AdjustmentAssociatedApplicationId | — |
+| ASSOCIATED_CASH_RECEIPT_ID | AdjustmentAssociatedCashReceiptId | — |
+| AUTOMATICALLY_GENERATED | AdjustmentAutomaticallyGenerated | — |
+| AX_ACCOUNTED_FLAG | AdjustmentAxAccountedFlag | — |
+| BATCH_ID | AdjustmentBatchId | — |
+| CHARGEBACK_CUSTOMER_TRX_ID | AdjustmentChargebackCustomerTrxId | — |
+| CODE_COMBINATION_ID | AdjustmentCodeCombinationId | — |
+| COMMENTS | AdjustmentComments | — |
+| CONS_INV_ID | AdjustmentConsInvId | — |
+| CREATED_BY | AdjustmentCreatedBy | — |
+| CREATED_FROM | AdjustmentCreatedFrom | — |
+| CUSTOMER_TRX_ID | AdjustmentCustomerTrxId | — |
+| CUSTOMER_TRX_LINE_ID | AdjustmentCustomerTrxLineId | — |
+| DISTRIBUTION_SET_ID | AdjustmentDistributionSetId | — |
+| DOC_SEQUENCE_ID | AdjustmentDocSequenceId | — |
+| DOC_SEQUENCE_VALUE | AdjustmentDocSequenceValue | — |
+| EVENT_ID | AdjustmentEventId | — |
+| FREIGHT_ADJUSTED | AdjustmentFreightAdjusted | — |
+| GL_DATE | AdjustmentGlDate | — |
+| GL_POSTED_DATE | AdjustmentGlPostedDate | — |
+| INTEREST_HEADER_ID | AdjustmentInterestHeaderId | — |
+| INTEREST_LINE_ID | AdjustmentInterestLineId | — |
+| LAST_UPDATE_LOGIN | AdjustmentLastUpdateLogin | — |
+| LAST_UPDATED_BY | AdjustmentLastUpdatedBy | — |
+| LINE_ADJUSTED | AdjustmentLineAdjusted | — |
+| LINK_TO_TRX_HIST_ID | AdjustmentLinkToTrxHistId | — |
+| MRC_ACCTD_AMOUNT | AdjustmentMrcAcctdAmount | — |
+| MRC_GL_POSTED_DATE | AdjustmentMrcGlPostedDate | — |
+| MRC_POSTING_CONTROL_ID | AdjustmentMrcPostingControlId | — |
+| OBJECT_VERSION_NUMBER | AdjustmentObjectVersionNumber | — |
+| ORG_ID | AdjustmentOrgId | — |
+| PAYMENT_SCHEDULE_ID | AdjustmentPaymentScheduleId | — |
+| POSTABLE | AdjustmentPostable | — |
+| POSTING_CONTROL_ID | AdjustmentPostingControlId | — |
+| PROGRAM_APPLICATION_ID | AdjustmentProgramApplicationId | — |
+| PROGRAM_ID | AdjustmentProgramId | — |
+| PROGRAM_UPDATE_DATE | AdjustmentProgramUpdateDate | — |
+| REASON_CODE | AdjustmentReasonCode | — |
+| RECEIVABLES_CHARGES_ADJUSTED | AdjustmentReceivablesChargesAdjusted | — |
+| RECEIVABLES_TRX_ID | AdjustmentReceivablesTrxId | — |
+| REQUEST_ID | AdjustmentRequestId | — |
+| SET_OF_BOOKS_ID | AdjustmentSetOfBooksId | — |
+| STATUS | AdjustmentStatus | — |
+| SUBSEQUENT_TRX_ID | AdjustmentSubsequentTrxId | — |
+| TAX_ADJUSTED | AdjustmentTaxAdjusted | — |
+| TYPE | AdjustmentType | — |
+| UPGRADE_METHOD | AdjustmentUpgradeMethod | — |
+| USSGL_TRANSACTION_CODE | AdjustmentUssglTransactionCode | — |
+| USSGL_TRANSACTION_CODE_CONTEXT | AdjustmentUssglTransactionCodeContext | — |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — AR_ADJUSTMENTS_ALL](https://docs.oracle.com/en/cloud/saas/financials/25a/oedmf/aradjustmentsall-10034.html)

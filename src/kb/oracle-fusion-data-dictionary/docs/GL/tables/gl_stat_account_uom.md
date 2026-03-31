@@ -131,6 +131,40 @@ WHERE  sau.LEDGER_ID = :p_ledger_id
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[codecombinationpvo|CodeCombinationPVO]] (GL · BICC: 1/10)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACCOUNT_SEGMENT_VALUE | StatisticalUOMAccountSegmentValue | — |
+| CHART_OF_ACCOUNTS_ID | StatisticalUOMChartOfAccountsId | — |
+| CREATED_BY | StatisticalUOMCreatedBy | — |
+| CREATION_DATE | StatisticalUOMCreationDate | — |
+| DESCRIPTION | StatisticalUOMDescription | — |
+| LAST_UPDATE_DATE | StatisticalUOMLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | StatisticalUOMLastUpdateLogin | — |
+| LAST_UPDATED_BY | StatisticalUOMLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | StatisticalUOMObjectVersionNumber | — |
+| UNIT_OF_MEASURE | StatisticalUOMUnitOfMeasure | — |
+
+### [[statisticalunitofmeasureextractpvo|StatisticalUnitOfMeasureExtractPVO]] (OTHER · BICC: 10/10)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACCOUNT_SEGMENT_VALUE | StatisticalUnitOfMeasureAccountSegmentValue | ✅ |
+| CHART_OF_ACCOUNTS_ID | StatisticalUnitOfMeasureChartOfAccountsId | ✅ |
+| CREATED_BY | StatisticalUnitOfMeasureCreatedBy | ✅ |
+| CREATION_DATE | StatisticalUnitOfMeasureCreationDate | ✅ |
+| DESCRIPTION | StatisticalUnitOfMeasureDescription | ✅ |
+| LAST_UPDATE_DATE | StatisticalUnitOfMeasureLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | StatisticalUnitOfMeasureLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | StatisticalUnitOfMeasureLastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | StatisticalUnitOfMeasureObjectVersionNumber | ✅ |
+| UNIT_OF_MEASURE | StatisticalUnitOfMeasureUnitOfMeasure | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — Statistical Accounts](https://docs.oracle.com/en/cloud/saas/financials/25a/oedmf/)

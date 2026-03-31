@@ -38,7 +38,6 @@ updated_at: 2026-03-25
 
 Armazena o **registro de aceite de disclaimers legais** pelos participantes durante o processo de inscrição de benefícios.
 
-
 ---
 
 ## 🧠 Propósito de Negócio
@@ -98,6 +97,34 @@ WHERE  ROWNUM <= 100;
 
 - Consultar documentação oficial Oracle para detalhes de uso.
 - Tabela do módulo Benefits (Ações de Disclaimer Legal por Participante).
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[participantdisclaimeractionpvo|ParticipantDisclaimerActionPVO]] (HCM · BICC: 17/19)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_TIME | ActionTime | ✅ |
+| BENEFIT_RELATION_ID | BenefitRelationId | ✅ |
+| BUSINESS_GROUP_ID | BusinessGroupId | ✅ |
+| CREATED_BY | CreatedBy | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | LastUpdatedBy | ✅ |
+| LEGAL_DISCLAIMER_ID | LegalDisclaimerId | ✅ |
+| LEGAL_ENTITY_ID | LegalEntityId | ✅ |
+| LER_ID | LerId | ✅ |
+| PER_IN_LER_ID | PerInLerId | ✅ |
+| PERSON_ID | PersonId | ✅ |
+| PGM_ID | PgmId | ✅ |
+| PL_ID | PlId | ✅ |
+| PLIP_ID | PlipId | — |
+| PRTT_LEG_DISCMR_ACTN_ID | PrttLegDiscmrActnId | ✅ |
+| PTIP_ID | PtipId | — |
+| STATUS | Status | ✅ |
 
 ---
 

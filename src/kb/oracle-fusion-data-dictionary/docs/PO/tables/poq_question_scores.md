@@ -121,6 +121,27 @@ HAVING MAX(qs.SCORE) > 10;
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[questionscorepvo|QuestionScorePVO]] (PO · BICC: 11/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | QuestionScoreCreatedBy | ✅ |
+| CREATION_DATE | QuestionScoreCreationDate | ✅ |
+| CRITICAL_RESPONSE_FLAG | CriticalResponseFlag | — |
+| FROM_RESPONSE_VALUE | QuestionScoreFromResponseValue | ✅ |
+| LAST_UPDATE_DATE | QuestionScoreLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | QuestionScoreLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | QuestionScoreLastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | QuestionScoreObjectVersionNumber | ✅ |
+| QUESTION_ID | QuestionScoreQuestionId | ✅ |
+| QUESTION_SCORE_ID | QuestionScoreQuestionScoreId | ✅ |
+| SCORE | QuestionScoreScore | ✅ |
+| TO_RESPONSE_VALUE | QuestionScoreToResponseValue | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — Supplier Qualification Management](https://docs.oracle.com/en/cloud/saas/procurement/25a/oedmf/)

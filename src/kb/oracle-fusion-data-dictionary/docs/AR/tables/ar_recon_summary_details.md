@@ -90,6 +90,35 @@ SELECT rsd.PERIOD_NAME,
 - A reconciliação deve ser executada após o fechamento do período e transferência de journals para o GL.
 - Filtrar sempre por `ORG_ID` e `LEDGER_ID` para garantir contexto correto.
 
+## 🔗 PVOs Relacionados
+
+### [[receivablesreconciliationsummarypvo|ReceivablesReconciliationSummaryPVO]] (AR · BICC: 8/20)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACCOUNTED_CR | ReconciliationSummaryPEOAccountedCr | ✅ |
+| ACCOUNTED_DR | ReconciliationSummaryPEOAccountedDr | ✅ |
+| AR_ACCTD_AMOUNT | ReconciliationSummaryPEOArAcctdAmount | ✅ |
+| BALANCING_SEGMENT | ReconciliationSummaryPEOBalancingSegment | — |
+| BU_ID | ReconciliationSummaryPEOBuId | — |
+| CODE_COMBINATION_ID | ReconciliationSummaryPEOCodeCombinationId | — |
+| CREATED_BY | ReconciliationSummaryPEOCreatedBy | — |
+| CREATION_DATE | ReconciliationSummaryPEOCreationDate | — |
+| DATA_SOURCE | ReconciliationSummaryPEODataSource | ✅ |
+| JOB_DEFINITION_NAME | ReconciliationSummaryPEOJobDefinitionName | — |
+| JOB_DEFINITION_PACKAGE | ReconciliationSummaryPEOJobDefinitionPackage | — |
+| LAST_UPDATE_DATE | ReconciliationSummaryPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ReconciliationSummaryPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | ReconciliationSummaryPEOLastUpdatedBy | — |
+| LEDGER_ID | ReconciliationSummaryPEOLedgerId | — |
+| NATURAL_ACCOUNT_SEGMENT | ReconciliationSummaryPEONaturalAccountSegment | — |
+| RECON_ITEM_CODE | ReconciliationSummaryPEOReconItemCode | ✅ |
+| RECON_ITEM_ID | ReconItemId | ✅ |
+| RECON_ITEM_ORDER | ReconciliationSummaryPEOReconItemOrder | ✅ |
+| REQUEST_ID | ReconciliationSummaryPEORequestId | — |
+
+---
+
 ## 📚 Referências
 
 - Oracle Fusion Cloud Financials — Accounts Receivable Tables (OEDMF Release 13).

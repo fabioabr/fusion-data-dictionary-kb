@@ -93,6 +93,108 @@ WHERE  gps.STATUS_CODE = 'ACTIVE';
 
 - Tabela base (sufixo `_B`) — traduções em [[hrg_goal_plan_sets_tl]].
 
+---
+
+## 🔗 PVOs Relacionados
+
+### [[careerdevpvo|CareerDevPVO]] (HCM · BICC: 1/15)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | GoalPlanSetBPEOBusinessGroupId | — |
+| CREATED_BY | GoalPlanSetBPEOCreatedBy | — |
+| CREATION_DATE | GoalPlanSetBPEOCreationDate | — |
+| END_DATE | GoalPlanSetBPEOEndDate | — |
+| GOAL_PLAN_SET_ACTIVE_FLAG | GoalPlanSetBPEOGoalPlanSetActiveFlag | — |
+| GOAL_PLAN_SET_EXT_ID | GoalPlanSetBPEOGoalPlanSetExtId | — |
+| GOAL_PLAN_SET_ID | GoalPlanSetBPEOGoalPlanSetId | — |
+| LAST_UPDATE_DATE | GoalPlanSetBPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | GoalPlanSetBPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | GoalPlanSetBPEOLastUpdatedBy1 | — |
+| MASS_REQUEST_ID | GoalPlanSetBPEOMassRequestId | — |
+| OBJECT_VERSION_NUMBER | GoalPlanSetBPEOObjectVersionNumber | — |
+| REQUEST_UI_CONTEXT_CODE | GoalPlanSetBPEORequestUiContextCode | — |
+| REVIEW_PERIOD_ID | GoalPlanSetBPEOReviewPeriodId | — |
+| START_DATE | StartDate | — |
+
+### [[careerdevversionpvo|CareerDevVersionPVO]] (HCM · BICC: 1/15)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | GoalPlanSetBPEOBusinessGroupId | — |
+| CREATED_BY | GoalPlanSetBPEOCreatedBy | — |
+| CREATION_DATE | GoalPlanSetBPEOCreationDate | — |
+| END_DATE | GoalPlanSetBPEOEndDate | — |
+| GOAL_PLAN_SET_ACTIVE_FLAG | GoalPlanSetBPEOGoalPlanSetActiveFlag | — |
+| GOAL_PLAN_SET_EXT_ID | GoalPlanSetBPEOGoalPlanSetExtId | — |
+| GOAL_PLAN_SET_ID | GoalPlanSetBPEOGoalPlanSetId | — |
+| LAST_UPDATE_DATE | GoalPlanSetBPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | GoalPlanSetBPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | GoalPlanSetBPEOLastUpdatedBy1 | — |
+| MASS_REQUEST_ID | GoalPlanSetBPEOMassRequestId | — |
+| OBJECT_VERSION_NUMBER | GoalPlanSetBPEOObjectVersionNumber | — |
+| REQUEST_UI_CONTEXT_CODE | GoalPlanSetBPEORequestUiContextCode | — |
+| REVIEW_PERIOD_ID | GoalPlanSetBPEOReviewPeriodId | — |
+| START_DATE | StartDate | — |
+
+### [[goalplansetpvo|GoalPlanSetPVO]] (HCM · BICC: 13/14)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | GoalPlanSetBPEOBusinessGroupId | ✅ |
+| CREATED_BY | GoalPlanSetBPEOCreatedBy | ✅ |
+| CREATION_DATE | GoalPlanSetBPEOCreationDate | ✅ |
+| END_DATE | GoalPlanSetBPEOEndDate | ✅ |
+| GOAL_PLAN_SET_ACTIVE_FLAG | GoalPlanSetBPEOGoalPlanSetActiveFlag | ✅ |
+| GOAL_PLAN_SET_EXT_ID | GoalPlanSetBPEOGoalPlanSetExtId | ✅ |
+| GOAL_PLAN_SET_ID | GoalPlanSetId | ✅ |
+| LAST_UPDATE_DATE | GoalPlanSetBPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | GoalPlanSetBPEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | GoalPlanSetBPEOLastUpdatedBy | ✅ |
+| MASS_REQUEST_ID | GoalPlanSetBPEOMassRequestId | ✅ |
+| OBJECT_VERSION_NUMBER | GoalPlanSetBPEOObjectVersionNumber | — |
+| REQUEST_UI_CONTEXT_CODE | GoalPlanSetBPEORequestUiContextCode | ✅ |
+| START_DATE | GoalPlanSetBPEOStartDate | ✅ |
+
+### [[goalstatusoverviewpvo|GoalStatusOverviewPVO]] (HCM · BICC: 1/15)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | GoalPlanSetBPEOBusinessGroupId | — |
+| CREATED_BY | GoalPlanSetBPEOCreatedBy | — |
+| CREATION_DATE | GoalPlanSetBPEOCreationDate | — |
+| END_DATE | GoalPlanSetBPEOEndDate | — |
+| GOAL_PLAN_SET_ACTIVE_FLAG | GoalPlanSetBPEOGoalPlanSetActiveFlag | — |
+| GOAL_PLAN_SET_EXT_ID | GoalPlanSetBPEOGoalPlanSetExtId | — |
+| GOAL_PLAN_SET_ID | GoalPlanSetBPEOGoalPlanSetId | — |
+| LAST_UPDATE_DATE | GoalPlanSetBPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | GoalPlanSetBPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | GoalPlanSetBPEOLastUpdatedBy1 | — |
+| MASS_REQUEST_ID | GoalPlanSetBPEOMassRequestId | — |
+| OBJECT_VERSION_NUMBER | GoalPlanSetBPEOObjectVersionNumber | — |
+| REQUEST_UI_CONTEXT_CODE | GoalPlanSetBPEORequestUiContextCode | — |
+| REVIEW_PERIOD_ID | GoalPlanSetBPEOReviewPeriodId | — |
+| START_DATE | StartDate | — |
+
+### [[goalversionstatusoverviewpvo|GoalVersionStatusOverviewPVO]] (HCM · BICC: 1/15)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | GoalPlanSetBPEOBusinessGroupId | — |
+| CREATED_BY | GoalPlanSetBPEOCreatedBy | — |
+| CREATION_DATE | GoalPlanSetBPEOCreationDate | — |
+| END_DATE | GoalPlanSetBPEOEndDate | — |
+| GOAL_PLAN_SET_ACTIVE_FLAG | GoalPlanSetBPEOGoalPlanSetActiveFlag | — |
+| GOAL_PLAN_SET_EXT_ID | GoalPlanSetBPEOGoalPlanSetExtId | — |
+| GOAL_PLAN_SET_ID | GoalPlanSetBPEOGoalPlanSetId | — |
+| LAST_UPDATE_DATE | GoalPlanSetBPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | GoalPlanSetBPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | GoalPlanSetBPEOLastUpdatedBy1 | — |
+| MASS_REQUEST_ID | GoalPlanSetBPEOMassRequestId | — |
+| OBJECT_VERSION_NUMBER | GoalPlanSetBPEOObjectVersionNumber | — |
+| REQUEST_UI_CONTEXT_CODE | GoalPlanSetBPEORequestUiContextCode | — |
+| REVIEW_PERIOD_ID | GoalPlanSetBPEOReviewPeriodId | — |
+| START_DATE | StartDate | — |
 
 ---
 

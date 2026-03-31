@@ -93,6 +93,61 @@ WHERE  tl.GOAL_PLAN_ID = :p_id AND tl.LANGUAGE = USERENV('LANG');
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[developmentgoalplanpvo|DevelopmentGoalPlanPVO]] (HCM · BICC: 5/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | GoalPlanTranslationPEOBusinessGroupId | — |
+| CREATED_BY | GoalPlanTranslationPEOCreatedBy | — |
+| CREATION_DATE | GoalPlanTranslationPEOCreationDate | — |
+| DESCRIPTION | GoalPlanTranslationPEODescription | ✅ |
+| GOAL_PLAN_ID | GoalPlanTranslationPEOGoalPlanId | — |
+| GOAL_PLAN_NAME | GoalPlanTranslationPEOGoalPlanName | ✅ |
+| LANGUAGE | GoalPlanTranslationPEOLanguage | ✅ |
+| LAST_UPDATE_DATE | GoalPlanTranslationPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | GoalPlanTranslationPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | GoalPlanTranslationPEOLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | GoalPlanTranslationPEOObjectVersionNumber | — |
+| SOURCE_LANG | GoalPlanTranslationPEOSourceLang | ✅ |
+
+### [[goalplanp1|GoalPlanP1]] (HCM)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | GoalPlanTranslationPEOBusinessGroupId | — |
+| CREATED_BY | GoalPlanTranslationPEOCreatedBy | — |
+| CREATION_DATE | GoalPlanTranslationPEOCreationDate | — |
+| DESCRIPTION | GoalPlanTranslationPEODescription | — |
+| GOAL_PLAN_ID | GoalPlanTranslationPEOGoalPlanId | — |
+| GOAL_PLAN_NAME | GoalPlanTranslationPEOGoalPlanName | — |
+| LANGUAGE | GoalPlanTranslationPEOLanguage | — |
+| LAST_UPDATE_DATE | GoalPlanTranslationPEOLastUpdateDate | — |
+| LAST_UPDATE_LOGIN | GoalPlanTranslationPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | GoalPlanTranslationPEOLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | GoalPlanTranslationPEOObjectVersionNumber | — |
+| SOURCE_LANG | GoalPlanTranslationPEOSourceLang | — |
+
+### [[performancegoalplanpvo|PerformanceGoalPlanPVO]] (HCM · BICC: 5/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | GoalPlanTranslationPEOBusinessGroupId | — |
+| CREATED_BY | GoalPlanTranslationPEOCreatedBy | — |
+| CREATION_DATE | GoalPlanTranslationPEOCreationDate | — |
+| DESCRIPTION | GoalPlanTranslationPEODescription | ✅ |
+| GOAL_PLAN_ID | GoalPlanTranslationPEOGoalPlanId | — |
+| GOAL_PLAN_NAME | GoalPlanTranslationPEOGoalPlanName | ✅ |
+| LANGUAGE | GoalPlanTranslationPEOLanguage | ✅ |
+| LAST_UPDATE_DATE | GoalPlanTranslationPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | GoalPlanTranslationPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | GoalPlanTranslationPEOLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | GoalPlanTranslationPEOObjectVersionNumber | — |
+| SOURCE_LANG | GoalPlanTranslationPEOSourceLang | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Fusion HCM Tables and Views](https://docs.oracle.com/en/cloud/saas/human-resources/25a/)

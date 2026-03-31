@@ -153,6 +153,103 @@ WHERE  ph.PROGRAM_STATUS = 'ACTIVE';
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[sourcingobjectivenegotiationpvo|SourcingObjectiveNegotiationPVO]] (PO · BICC: 12/26)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CATEGORY_ID | ProgramHeaderPEOCategoryId | — |
+| COMMENTS | ProgramHeaderPEOComments | ✅ |
+| CREATED_BY | ProgramHeaderPEOCreatedBy | — |
+| CREATION_DATE | ProgramHeaderPEOCreationDate | — |
+| CURRENCY_CODE | ProgramHeaderPEOCurrencyCode | ✅ |
+| CURRENT_SPEND | ProgramHeaderPEOCurrentSpend | ✅ |
+| END_DATE | ProgramHeaderPEOEndDate | ✅ |
+| GLOBAL_PROGRAM_FLAG | ProgramHeaderPEOGlobalProgramFlag | ✅ |
+| LAST_UPDATE_DATE | ProgramHeaderPEOLastUpdateDate | — |
+| LAST_UPDATE_LOGIN | ProgramHeaderPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | ProgramHeaderPEOLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | ProgramHeaderPEOObjectVersionNumber | — |
+| PERSON_ID | ProgramHeaderPEOPersonId | — |
+| PRC_BU_ID | ProgramHeaderPEOPrcBuId | — |
+| PROGRAM_HEADER_ID | ProgramHeaderPEOProgramHeaderId | ✅ |
+| PROGRAM_PHASE | ProgramHeaderPEOProgramPhase | — |
+| PROGRAM_STATUS | ProgramHeaderPEOProgramStatus | — |
+| PURCHASING_CAT_FLAG | ProgramHeaderPEOPurchasingCatFlag | — |
+| RATE_DATE | ProgramHeaderPEORateDate | ✅ |
+| RATE_TYPE | ProgramHeaderPEORateType | — |
+| SAVINGS | ProgramHeaderPEOSavings | ✅ |
+| SAVINGS_PERCENT | ProgramHeaderPEOSavingsPercent | — |
+| START_DATE | ProgramHeaderPEOStartDate | ✅ |
+| SYNOPSIS | ProgramHeaderPEOSynopsis | ✅ |
+| TARGET_SPEND | ProgramHeaderPEOTargetSpend | ✅ |
+| TITLE | ProgramHeaderPEOTitle | ✅ |
+
+### [[sourcingprogramheaderpvo|SourcingProgramHeaderPVO]] (PO · BICC: 12/26)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CATEGORY_ID | ProgramHeaderPEOCategoryId | — |
+| COMMENTS | ProgramHeaderPEOComments | ✅ |
+| CREATED_BY | ProgramHeaderPEOCreatedBy | — |
+| CREATION_DATE | ProgramHeaderPEOCreationDate | — |
+| CURRENCY_CODE | ProgramHeaderPEOCurrencyCode | ✅ |
+| CURRENT_SPEND | ProgramHeaderPEOCurrentSpend | ✅ |
+| END_DATE | ProgramHeaderPEOEndDate | ✅ |
+| GLOBAL_PROGRAM_FLAG | ProgramHeaderPEOGlobalProgramFlag | ✅ |
+| LAST_UPDATE_DATE | ProgramHeaderPEOLastUpdateDate | — |
+| LAST_UPDATE_LOGIN | ProgramHeaderPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | ProgramHeaderPEOLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | ProgramHeaderPEOObjectVersionNumber | — |
+| PERSON_ID | ProgramHeaderPEOPersonId | — |
+| PRC_BU_ID | ProgramHeaderPEOPrcBuId | — |
+| PROGRAM_HEADER_ID | ProgramHeaderPEOProgramHeaderId | ✅ |
+| PROGRAM_PHASE | ProgramHeaderPEOProgramPhase | — |
+| PROGRAM_STATUS | ProgramHeaderPEOProgramStatus | — |
+| PURCHASING_CAT_FLAG | ProgramHeaderPEOPurchasingCatFlag | — |
+| RATE_DATE | ProgramHeaderPEORateDate | ✅ |
+| RATE_TYPE | ProgramHeaderPEORateType | — |
+| SAVINGS | ProgramHeaderPEOSavings | ✅ |
+| SAVINGS_PERCENT | ProgramHeaderPEOSavingsPercent | — |
+| START_DATE | ProgramHeaderPEOStartDate | ✅ |
+| SYNOPSIS | ProgramHeaderPEOSynopsis | ✅ |
+| TARGET_SPEND | ProgramHeaderPEOTargetSpend | ✅ |
+| TITLE | ProgramHeaderPEOTitle | ✅ |
+
+### [[sourcingprogramobjectivepvo|SourcingProgramObjectivePVO]] (PO · BICC: 12/26)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CATEGORY_ID | ProgramHeaderPEOCategoryId | — |
+| COMMENTS | ProgramHeaderPEOComments | ✅ |
+| CREATED_BY | ProgramHeaderPEOCreatedBy | — |
+| CREATION_DATE | ProgramHeaderPEOCreationDate | — |
+| CURRENCY_CODE | ProgramHeaderPEOCurrencyCode | ✅ |
+| CURRENT_SPEND | ProgramHeaderPEOCurrentSpend | ✅ |
+| END_DATE | ProgramHeaderPEOEndDate | ✅ |
+| GLOBAL_PROGRAM_FLAG | ProgramHeaderPEOGlobalProgramFlag | ✅ |
+| LAST_UPDATE_DATE | ProgramHeaderPEOLastUpdateDate | — |
+| LAST_UPDATE_LOGIN | ProgramHeaderPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | ProgramHeaderPEOLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | ProgramHeaderPEOObjectVersionNumber | — |
+| PERSON_ID | ProgramHeaderPEOPersonId | — |
+| PRC_BU_ID | ProgramHeaderPEOPrcBuId | — |
+| PROGRAM_HEADER_ID | ProgramHeaderPEOProgramHeaderId | ✅ |
+| PROGRAM_PHASE | ProgramHeaderPEOProgramPhase | — |
+| PROGRAM_STATUS | ProgramHeaderPEOProgramStatus | — |
+| PURCHASING_CAT_FLAG | ProgramHeaderPEOPurchasingCatFlag | — |
+| RATE_DATE | ProgramHeaderPEORateDate | ✅ |
+| RATE_TYPE | ProgramHeaderPEORateType | — |
+| SAVINGS | ProgramHeaderPEOSavings | ✅ |
+| SAVINGS_PERCENT | ProgramHeaderPEOSavingsPercent | — |
+| START_DATE | ProgramHeaderPEOStartDate | ✅ |
+| SYNOPSIS | ProgramHeaderPEOSynopsis | ✅ |
+| TARGET_SPEND | ProgramHeaderPEOTargetSpend | ✅ |
+| TITLE | ProgramHeaderPEOTitle | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — Sourcing Tables](https://docs.oracle.com/en/cloud/saas/procurement/25a/oedmf/pon-tables.html)

@@ -152,6 +152,250 @@ WHERE  aip.ACCOUNTING_DATE BETWEEN :start_date AND :end_date
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[assetinvoicepvo|AssetInvoicePVO]] (OTHER · BICC: 1/60)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACCOUNTING_DATE | ApInvoicePaymentsAllAccountingDate | — |
+| ACCOUNTING_EVENT_ID | ApInvoicePaymentsAllAccountingEventId | — |
+| ACCTS_PAY_CODE_COMBINATION_ID | ApInvoicePaymentsAllAcctsPayCodeCombinationId | — |
+| AMOUNT | ApInvoicePaymentsAllAmount | — |
+| AMOUNT_INV_CURR | ApInvoicePaymentsAllAmountInvCurr | — |
+| ASSET_CODE_COMBINATION_ID | ApInvoicePaymentsAllAssetCodeCombinationId | — |
+| ASSETS_ADDITION_FLAG | ApInvoicePaymentsAllAssetsAdditionFlag | — |
+| BANK_ACCOUNT_NUM | ApInvoicePaymentsAllBankAccountNum | — |
+| BANK_ACCOUNT_TYPE | ApInvoicePaymentsAllBankAccountType | — |
+| BANK_NUM | ApInvoicePaymentsAllBankNum | — |
+| CHECK_ID | ApInvoicePaymentsAllCheckId | — |
+| CREATED_BY | ApInvoicePaymentsAllCreatedBy | — |
+| CREATION_DATE | ApInvoicePaymentsAllCreationDate | — |
+| DISCOUNT_LOST | ApInvoicePaymentsAllDiscountLost | — |
+| DISCOUNT_LOST_INV_CURR | ApInvoicePaymentsAllDiscountLostInvCurr | — |
+| DISCOUNT_TAKEN | ApInvoicePaymentsAllDiscountTaken | — |
+| DISCOUNT_TAKEN_INV_CURR | ApInvoicePaymentsAllDiscountTakenInvCurr | — |
+| EXCHANGE_DATE | ApInvoicePaymentsAllExchangeDate | — |
+| EXCHANGE_RATE | ApInvoicePaymentsAllExchangeRate | — |
+| EXCHANGE_RATE_TYPE | ApInvoicePaymentsAllExchangeRateType | — |
+| EXTERNAL_BANK_ACCOUNT_ID | ApInvoicePaymentsAllExternalBankAccountId | — |
+| GAIN_CODE_COMBINATION_ID | ApInvoicePaymentsAllGainCodeCombinationId | — |
+| IBAN_NUMBER | ApInvoicePaymentsAllIbanNumber | — |
+| INV_ORG_ID | ApInvoicePaymentsAllInvOrgId | — |
+| INVOICE_BASE_AMOUNT | ApInvoicePaymentsAllInvoiceBaseAmount | — |
+| INVOICE_CURRENCY_CODE | ApInvoicePaymentsAllInvoiceCurrencyCode | — |
+| INVOICE_ID | ApInvoicePaymentsAllInvoiceId | — |
+| INVOICE_PAYMENT_ID | ApInvoicePaymentsAllInvoicePaymentId | — |
+| INVOICE_PAYMENT_ID | ApInvoicePaymentsAllInvoicePaymentId1 | — |
+| INVOICE_PAYMENT_TYPE | ApInvoicePaymentsAllInvoicePaymentType | — |
+| INVOICING_PARTY_ID | ApInvoicePaymentsAllInvoicingPartyId | — |
+| INVOICING_PARTY_SITE_ID | ApInvoicePaymentsAllInvoicingPartySiteId | — |
+| INVOICING_VENDOR_SITE_ID | ApInvoicePaymentsAllInvoicingVendorSiteId | — |
+| LAST_UPDATE_DATE | ApInvoicePaymentsAllLastUpdateDate | — |
+| LAST_UPDATE_LOGIN | ApInvoicePaymentsAllLastUpdateLogin | — |
+| LAST_UPDATED_BY | ApInvoicePaymentsAllLastUpdatedBy | — |
+| LOSS_CODE_COMBINATION_ID | ApInvoicePaymentsAllLossCodeCombinationId | — |
+| MRC_EXCHANGE_DATE | ApInvoicePaymentsAllMrcExchangeDate | — |
+| MRC_EXCHANGE_RATE_TYPE | ApInvoicePaymentsAllMrcExchangeRateType | — |
+| MRC_FUTURE_PAY_POSTED_FLAG | ApInvoicePaymentsAllMrcFuturePayPostedFlag | — |
+| MRC_GAIN_CODE_COMBINATION_ID | ApInvoicePaymentsAllMrcGainCodeCombinationId | — |
+| MRC_INVOICE_BASE_AMOUNT | ApInvoicePaymentsAllMrcInvoiceBaseAmount | — |
+| MRC_LOSS_CODE_COMBINATION_ID | ApInvoicePaymentsAllMrcLossCodeCombinationId | — |
+| MRC_PAYMENT_BASE_AMOUNT | ApInvoicePaymentsAllMrcPaymentBaseAmount | — |
+| OBJECT_VERSION_NUMBER | ApInvoicePaymentsAllObjectVersionNumber | — |
+| OBJECT_VERSION_NUMBER | ApInvoicePaymentsAllObjectVersionNumber1 | — |
+| ORG_ID | ApInvoicePaymentsAllOrgId | — |
+| PAYMENT_BASE_AMOUNT | ApInvoicePaymentsAllPaymentBaseAmount | — |
+| PAYMENT_CURRENCY_CODE | ApInvoicePaymentsAllPaymentCurrencyCode | — |
+| PAYMENT_NUM | ApInvoicePaymentsAllPaymentNum | ✅ |
+| PERIOD_NAME | ApInvoicePaymentsAllPeriodName | — |
+| POSTED_FLAG | ApInvoicePaymentsAllPostedFlag | — |
+| REMIT_TO_ADDRESS_ID | ApInvoicePaymentsAllRemitToAddressId | — |
+| REMIT_TO_ADDRESS_NAME | ApInvoicePaymentsAllRemitToAddressName | — |
+| REMIT_TO_SUPPLIER_ID | ApInvoicePaymentsAllRemitToSupplierId | — |
+| REMIT_TO_SUPPLIER_NAME | ApInvoicePaymentsAllRemitToSupplierName | — |
+| REVERSAL_FLAG | ApInvoicePaymentsAllReversalFlag | — |
+| REVERSAL_INV_PMT_ID | ApInvoicePaymentsAllReversalInvPmtId | — |
+| SET_OF_BOOKS_ID | ApInvoicePaymentsAllSetOfBooksId | — |
+| X_CURR_RATE | ApInvoicePaymentsAllXCurrRate | — |
+
+### [[paiddisbursementscheduleextractpvo|PaidDisbursementScheduleExtractPVO]] (OTHER · BICC: 54/54)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACCOUNTING_DATE | ApInvoicePaymentsAllAccountingDate | ✅ |
+| ACCOUNTING_EVENT_ID | ApInvoicePaymentsAllAccountingEventId | ✅ |
+| ACCTS_PAY_CODE_COMBINATION_ID | ApInvoicePaymentsAllAcctsPayCodeCombinationId | ✅ |
+| AMOUNT | ApInvoicePaymentsAllAmount | ✅ |
+| AMOUNT_INV_CURR | ApInvoicePaymentsAllAmountInvCurr | ✅ |
+| ANNUAL_PERCENTAGE_RATE | ApInvoicePaymentsAllAnnualPercentageRate | ✅ |
+| APR_ASSIGNMENT_ID | ApInvoicePaymentsAllAprAssignmentId | ✅ |
+| ASSET_CODE_COMBINATION_ID | ApInvoicePaymentsAllAssetCodeCombinationId | ✅ |
+| ASSETS_ADDITION_FLAG | ApInvoicePaymentsAllAssetsAdditionFlag | ✅ |
+| BANK_ACCOUNT_NUM | ApInvoicePaymentsAllBankAccountNum | ✅ |
+| BANK_ACCOUNT_TYPE | ApInvoicePaymentsAllBankAccountType | ✅ |
+| BANK_NUM | ApInvoicePaymentsAllBankNum | ✅ |
+| CHECK_ID | ApInvoicePaymentsAllCheckId | ✅ |
+| CREATED_BY | ApInvoicePaymentsAllCreatedBy | ✅ |
+| CREATION_DATE | ApInvoicePaymentsAllCreationDate | ✅ |
+| DAYS_ACCELERATED | ApInvoicePaymentsAllDaysAccelerated | ✅ |
+| DISCOUNT_LOST | ApInvoicePaymentsAllDiscountLost | ✅ |
+| DISCOUNT_LOST_INV_CURR | ApInvoicePaymentsAllDiscountLostInvCurr | ✅ |
+| DISCOUNT_TAKEN | ApInvoicePaymentsAllDiscountTaken | ✅ |
+| DISCOUNT_TAKEN_INV_CURR | ApInvoicePaymentsAllDiscountTakenInvCurr | ✅ |
+| EXCHANGE_DATE | ApInvoicePaymentsAllExchangeDate | ✅ |
+| EXCHANGE_RATE | ApInvoicePaymentsAllExchangeRate | ✅ |
+| EXCHANGE_RATE_TYPE | ApInvoicePaymentsAllExchangeRateType | ✅ |
+| EXTERNAL_BANK_ACCOUNT_ID | ApInvoicePaymentsAllExternalBankAccountId | ✅ |
+| GAIN_CODE_COMBINATION_ID | ApInvoicePaymentsAllGainCodeCombinationId | ✅ |
+| IBAN_NUMBER | ApInvoicePaymentsAllIbanNumber | ✅ |
+| INV_ORG_ID | ApInvoicePaymentsAllInvOrgId | ✅ |
+| INVOICE_BASE_AMOUNT | ApInvoicePaymentsAllInvoiceBaseAmount | ✅ |
+| INVOICE_CURRENCY_CODE | ApInvoicePaymentsAllInvoiceCurrencyCode | ✅ |
+| INVOICE_ID | ApInvoicePaymentsAllInvoiceId | ✅ |
+| INVOICE_PAYMENT_ID | ApInvoicePaymentsAllInvoicePaymentId | ✅ |
+| INVOICE_PAYMENT_TYPE | ApInvoicePaymentsAllInvoicePaymentType | ✅ |
+| INVOICING_PARTY_ID | ApInvoicePaymentsAllInvoicingPartyId | ✅ |
+| INVOICING_PARTY_SITE_ID | ApInvoicePaymentsAllInvoicingPartySiteId | ✅ |
+| INVOICING_VENDOR_SITE_ID | ApInvoicePaymentsAllInvoicingVendorSiteId | ✅ |
+| LAST_UPDATE_DATE | ApInvoicePaymentsAllLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ApInvoicePaymentsAllLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | ApInvoicePaymentsAllLastUpdatedBy | ✅ |
+| LOSS_CODE_COMBINATION_ID | ApInvoicePaymentsAllLossCodeCombinationId | ✅ |
+| OBJECT_VERSION_NUMBER | ApInvoicePaymentsAllObjectVersionNumber | ✅ |
+| ORG_ID | ApInvoicePaymentsAllOrgId | ✅ |
+| PAYMENT_BASE_AMOUNT | ApInvoicePaymentsAllPaymentBaseAmount | ✅ |
+| PAYMENT_CURRENCY_CODE | ApInvoicePaymentsAllPaymentCurrencyCode | ✅ |
+| PAYMENT_NUM | ApInvoicePaymentsAllPaymentNum | ✅ |
+| PERIOD_NAME | ApInvoicePaymentsAllPeriodName | ✅ |
+| POSTED_FLAG | ApInvoicePaymentsAllPostedFlag | ✅ |
+| REMIT_TO_ADDRESS_ID | ApInvoicePaymentsAllRemitToAddressId | ✅ |
+| REMIT_TO_ADDRESS_NAME | ApInvoicePaymentsAllRemitToAddressName | ✅ |
+| REMIT_TO_SUPPLIER_ID | ApInvoicePaymentsAllRemitToSupplierId | ✅ |
+| REMIT_TO_SUPPLIER_NAME | ApInvoicePaymentsAllRemitToSupplierName | ✅ |
+| REVERSAL_FLAG | ApInvoicePaymentsAllReversalFlag | ✅ |
+| REVERSAL_INV_PMT_ID | ApInvoicePaymentsAllReversalInvPmtId | ✅ |
+| SET_OF_BOOKS_ID | ApInvoicePaymentsAllSetOfBooksId | ✅ |
+| X_CURR_RATE | ApInvoicePaymentsAllXCurrRate | ✅ |
+
+### [[paiddisbursementschedulepvo|PaidDisbursementSchedulePVO]] (AP · BICC: 29/62)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACCOUNTING_DATE | InvoicePaymentAccountingDate | ✅ |
+| ACCOUNTING_EVENT_ID | InvoicePaymentAccountingEventId | — |
+| ACCTS_PAY_CODE_COMBINATION_ID | InvoicePaymentAcctsPayCodeCombinationId | — |
+| AMOUNT | InvoicePaymentAmount | ✅ |
+| AMOUNT_INV_CURR | InvoicePaymentAmountInvCurr | ✅ |
+| ANNUAL_PERCENTAGE_RATE | InvoicePaymentAnnualPercentageRate | ✅ |
+| APR_ASSIGNMENT_ID | InvoicePaymentAprAssignmentId | — |
+| ASSET_CODE_COMBINATION_ID | InvoicePaymentAssetCodeCombinationId | — |
+| ASSETS_ADDITION_FLAG | InvoicePaymentAssetsAdditionFlag | — |
+| ASSIGNMENT_TYPE_CODE | DiscountOffersTransNameType | — |
+| BANK_ACCOUNT_NUM | InvoicePaymentBankAccountNum | ✅ |
+| BANK_ACCOUNT_TYPE | InvoicePaymentBankAccountType | ✅ |
+| BANK_NUM | InvoicePaymentBankNum | ✅ |
+| CHECK_ID | InvoicePaymentCheckId | ✅ |
+| CREATED_BY | InvoicePaymentCreatedBy | — |
+| CREATION_DATE | InvoicePaymentCreationDate | — |
+| DAYS_ACCELERATED | InvoicePaymentDaysAccelerated | ✅ |
+| DISCOUNT_LOST | InvoicePaymentDiscountLost | ✅ |
+| DISCOUNT_LOST_INV_CURR | InvoicePaymentDiscountLostInvCurr | — |
+| DISCOUNT_TAKEN | InvoicePaymentDiscountTaken | ✅ |
+| DISCOUNT_TAKEN_INV_CURR | InvoicePaymentDiscountTakenInvCurr | ✅ |
+| EXCHANGE_DATE | InvoicePaymentExchangeDate | ✅ |
+| EXCHANGE_RATE | InvoicePaymentExchangeRate | ✅ |
+| EXCHANGE_RATE_TYPE | InvoicePaymentExchangeRateType | ✅ |
+| EXTERNAL_BANK_ACCOUNT_ID | InvoicePaymentExternalBankAccountId | — |
+| GAIN_CODE_COMBINATION_ID | InvoicePaymentGainCodeCombinationId | — |
+| IBAN_NUMBER | InvoicePaymentIbanNumber | ✅ |
+| INV_ORG_ID | InvoicePaymentInvOrgId | — |
+| INVOICE_BASE_AMOUNT | InvoicePaymentInvoiceBaseAmount | ✅ |
+| INVOICE_CURRENCY_CODE | InvoicePaymentInvoiceCurrencyCode | — |
+| INVOICE_ID | InvoicePaymentInvoiceId | — |
+| INVOICE_PAYMENT_ID | InvoicePaymentId | ✅ |
+| INVOICE_PAYMENT_TYPE | InvoicePaymentInvoicePaymentType | ✅ |
+| INVOICING_PARTY_ID | InvoicePaymentInvoicingPartyId | — |
+| INVOICING_PARTY_SITE_ID | InvoicePaymentInvoicingPartySiteId | — |
+| INVOICING_VENDOR_SITE_ID | InvoicePaymentInvoicingVendorSiteId | — |
+| LAST_UPDATE_DATE | InvoicePaymentLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | InvoicePaymentLastUpdateLogin | — |
+| LAST_UPDATED_BY | InvoicePaymentLastUpdatedBy | — |
+| LOSS_CODE_COMBINATION_ID | InvoicePaymentLossCodeCombinationId | — |
+| MRC_EXCHANGE_DATE | InvoicePaymentMrcExchangeDate | — |
+| MRC_EXCHANGE_RATE_TYPE | InvoicePaymentMrcExchangeRateType | — |
+| MRC_FUTURE_PAY_POSTED_FLAG | InvoicePaymentMrcFuturePayPostedFlag | — |
+| MRC_GAIN_CODE_COMBINATION_ID | InvoicePaymentMrcGainCodeCombinationId | — |
+| MRC_INVOICE_BASE_AMOUNT | InvoicePaymentMrcInvoiceBaseAmount | — |
+| MRC_LOSS_CODE_COMBINATION_ID | InvoicePaymentMrcLossCodeCombinationId | — |
+| MRC_PAYMENT_BASE_AMOUNT | InvoicePaymentMrcPaymentBaseAmount | — |
+| OBJECT_VERSION_NUMBER | InvoicePaymentObjectVersionNumber | — |
+| ORG_ID | InvoicePaymentOrgId | — |
+| PAYMENT_BASE_AMOUNT | InvoicePaymentPaymentBaseAmount | ✅ |
+| PAYMENT_CURRENCY_CODE | InvoicePaymentPaymentCurrencyCode | — |
+| PAYMENT_NUM | InvoicePaymentPaymentNum | ✅ |
+| PERIOD_NAME | InvoicePaymentPeriodName | ✅ |
+| POSTED_FLAG | InvoicePaymentPostedFlag | ✅ |
+| REMIT_TO_ADDRESS_ID | InvoicePaymentRemitToAddressId | — |
+| REMIT_TO_ADDRESS_NAME | InvoicePaymentRemitToAddressName | ✅ |
+| REMIT_TO_SUPPLIER_ID | InvoicePaymentRemitToSupplierId | — |
+| REMIT_TO_SUPPLIER_NAME | InvoicePaymentRemitToSupplierName | ✅ |
+| REVERSAL_FLAG | InvoicePaymentReversalFlag | ✅ |
+| REVERSAL_INV_PMT_ID | InvoicePaymentReversalInvPmtId | ✅ |
+| SET_OF_BOOKS_ID | InvoicePaymentSetOfBooksId | — |
+| X_CURR_RATE | InvoicePaymentXCurrRate | ✅ |
+
+### [[paymenthistorydistributionpvo|PaymentHistoryDistributionPVO]] (AP · BICC: 29/37)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACCOUNTING_DATE | InvoicePaymentAccountingDate | ✅ |
+| ACCTS_PAY_CODE_COMBINATION_ID | InvoicePaymentAcctsPayCodeCombinationId | — |
+| ANNUAL_PERCENTAGE_RATE | InvoicePaymentAnnualPercentageRate | ✅ |
+| ASSET_CODE_COMBINATION_ID | InvoicePaymentAssetCodeCombinationId | — |
+| ASSIGNMENT_TYPE_CODE | DiscountOffersTransNameType | — |
+| BANK_ACCOUNT_NUM | InvoicePaymentBankAccountNum | ✅ |
+| BANK_ACCOUNT_TYPE | InvoicePaymentBankAccountType | ✅ |
+| BANK_NUM | InvoicePaymentBankNum | ✅ |
+| CHECK_ID | InvoicePaymentCheckId | — |
+| CREATED_BY | InvoicePaymentCreatedBy | ✅ |
+| CREATION_DATE | InvoicePaymentCreationDate | ✅ |
+| DAYS_ACCELERATED | InvoicePaymentDaysAccelerated | ✅ |
+| DISCOUNT_LOST | InvoicePaymentDiscountLost | ✅ |
+| DISCOUNT_TAKEN | InvoicePaymentDiscountTaken | ✅ |
+| DISCOUNT_TAKEN_INV_CURR | InvoicePaymentDiscountTakenInvCurr | ✅ |
+| EXCHANGE_DATE | InvoicePaymentExchangeDate | ✅ |
+| EXCHANGE_RATE | InvoicePaymentExchangeRate | ✅ |
+| EXCHANGE_RATE_TYPE | InvoicePaymentExchangeRateType | ✅ |
+| GAIN_CODE_COMBINATION_ID | InvoicePaymentGainCodeCombinationId | — |
+| IBAN_NUMBER | InvoicePaymentIbanNumber | ✅ |
+| INVOICE_ID | InvoicePaymentInvoiceId | ✅ |
+| INVOICE_PAYMENT_ID | InvoicePaymentInvoicePaymentId | ✅ |
+| INVOICE_PAYMENT_TYPE | InvoicePaymentInvoicePaymentType | ✅ |
+| INVOICING_VENDOR_SITE_ID | InvoicePaymentInvoicingVendorSiteId | — |
+| LAST_UPDATE_DATE | InvoicePaymentLastUpdateDate | ✅ |
+| LAST_UPDATED_BY | InvoicePaymentLastUpdatedBy | ✅ |
+| LOSS_CODE_COMBINATION_ID | InvoicePaymentLossCodeCombinationId | — |
+| ORG_ID | InvoicePaymentOrgId | ✅ |
+| PAYMENT_NUM | InvoicePaymentPaymentNum | ✅ |
+| PERIOD_NAME | InvoicePaymentPeriodName | ✅ |
+| POSTED_FLAG | InvoicePaymentPostedFlag | ✅ |
+| REMIT_TO_ADDRESS_NAME | InvoicePaymentRemitToAddressName | ✅ |
+| REMIT_TO_SUPPLIER_NAME | InvoicePaymentRemitToSupplierName | ✅ |
+| REVERSAL_FLAG | InvoicePaymentReversalFlag | ✅ |
+| REVERSAL_INV_PMT_ID | InvoicePaymentReversalInvPmtId | ✅ |
+| SET_OF_BOOKS_ID | InvoicePaymentSetOfBooksId | — |
+| X_CURR_RATE | InvoicePaymentXCurrRate | ✅ |
+
+### [[prepaymentappliationdistributionpvo|PrepaymentAppliationDistributionPVO]] (AP · BICC: 1/2)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| INVOICE_PAYMENT_ID | PaidDisbursementScheduleInvoicePaymentId | — |
+| LAST_UPDATE_DATE | PaidDisbursementScheduleLastUpdateDate | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — AP_INVOICE_PAYMENTS_ALL](https://docs.oracle.com/en/cloud/saas/financials/25a/oedmf/apinvoicepaymentsall-10007.html)

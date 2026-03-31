@@ -143,3 +143,39 @@ WHERE  dt.SCORING_FLAG = 'Y'
 
 - [Oracle Docs — PON_AUC_DOCTYPES_B](https://docs.oracle.com/en/cloud/saas/procurement/25a/oedmf/ponaucdoctypesb.html)
 - [[po-module-data-dictionary]] — Dossiê do módulo PO/Procurement
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[negotiationstyledocumenttypepvo|NegotiationStyleDocumentTypePVO]] (PO · BICC: 2/11)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | NegotiationDocumentTypeCreatedBy | — |
+| CREATION_DATE | NegotiationDocumentTypeCreationDate | — |
+| DOCTYPE_GROUP_NAME | NegotiationDocumentTypeDoctypeGroupName | ✅ |
+| DOCTYPE_ID | NegotiationDocumentTypeDoctypeId | — |
+| DOCUMENT_SUBTYPE | NegotiationDocumentTypeDocumentSubtype | — |
+| DOCUMENT_TYPE_CODE | NegotiationDocumentTypeDocumentTypeCode | — |
+| INTERNAL_NAME | NegotiationDocumentTypeInternalName | — |
+| LAST_UPDATE_DATE | NegotiationDocumentTypeLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | NegotiationDocumentTypeLastUpdateLogin | — |
+| LAST_UPDATED_BY | NegotiationDocumentTypeLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | NegotiationDocumentTypeObjectVersionNumber | — |
+
+### [[negstyledocumenttypeextractpvo|NegStyleDocumentTypeExtractPVO]] (PO · BICC: 11/11)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | NegotiationDocumentTypeCreatedBy | ✅ |
+| CREATION_DATE | NegotiationDocumentTypeCreationDate | ✅ |
+| DOCTYPE_GROUP_NAME | NegotiationDocumentTypeDoctypeGroupName | ✅ |
+| DOCTYPE_ID | NegotiationDocumentTypeDoctypeId | ✅ |
+| DOCUMENT_SUBTYPE | NegotiationDocumentTypeDocumentSubtype | ✅ |
+| DOCUMENT_TYPE_CODE | NegotiationDocumentTypeDocumentTypeCode | ✅ |
+| INTERNAL_NAME | NegotiationDocumentTypeInternalName | ✅ |
+| LAST_UPDATE_DATE | NegotiationDocumentTypeLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | NegotiationDocumentTypeLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | NegotiationDocumentTypeLastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | NegotiationDocumentTypeObjectVersionNumber | ✅ |

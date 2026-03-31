@@ -104,3 +104,45 @@ WHERE  tl.PROFILE_TYPE_ID = :p_id
 
 - [Oracle Docs — HRT_PROFILE_TYPES_TL](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/hrtprofiletypestl.html)
 - [[hcm-module-data-dictionary]] — Dossie do modulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[profiletypepvo|ProfileTypePVO]] (HCM · BICC: 6/7)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | ProfileTypeTranslationPEOBusinessGroupId | — |
+| DESCRIPTION | ProfileTypeTranslationPEODescription | ✅ |
+| LANGUAGE | Language | ✅ |
+| LAST_UPDATE_DATE | ProfileTypeTranslationPEOLastUpdateDate | ✅ |
+| PROFILE_TYPE_ID | ProfileTypeTranslationPEOProfileTypeId | ✅ |
+| SOURCE_LANG | SourceLang | ✅ |
+| SUMMARY | ProfileTypeTranslationPEOSummary | ✅ |
+
+### [[profiletypesectionpvo|ProfileTypeSectionPVO]] (HCM)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | BusinessGroupId2 | — |
+| DESCRIPTION | ProfileTypeName | — |
+| LANGUAGE | Language1 | — |
+| PROFILE_TYPE_ID | ProfileTypeId1 | — |
+
+### [[profiletypestranslationextractpvo|ProfileTypesTranslationExtractPVO]] (HCM · BICC: 12/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | BusinessGroupId | ✅ |
+| CREATED_BY | CreatedBy | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| DESCRIPTION | Description | ✅ |
+| LANGUAGE | Language | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | LastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | ✅ |
+| PROFILE_TYPE_ID | ProfileTypeId | ✅ |
+| SOURCE_LANG | SourceLang | ✅ |
+| SUMMARY | Summary | ✅ |

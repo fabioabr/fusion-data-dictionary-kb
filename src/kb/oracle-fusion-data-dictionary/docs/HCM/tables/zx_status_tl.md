@@ -59,3 +59,57 @@ updated_at: 2026-03-26
 ## 📎 Uso Típico
 
 (a ser preenchido na etapa 03)
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[invoicelinepvo|InvoiceLinePVO]] (AP)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| LANGUAGE | TaxStatusLanguage | — |
+| TAX_STATUS_ID | TaxStatusTLTaxStatusId | — |
+| TAX_STATUS_NAME | TaxStatusTaxStatusName | — |
+
+### [[taxstatusextractpvo|TaxStatusExtractPVO]] (OTHER · BICC: 9/9)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | TaxStatusTLCreatedBy1 | ✅ |
+| CREATION_DATE | TaxStatusTLCreationDate1 | ✅ |
+| LANGUAGE | TaxStatusTLLanguage | ✅ |
+| LAST_UPDATE_DATE | TaxStatusTLLastUpdateDate1 | ✅ |
+| LAST_UPDATE_LOGIN | TaxStatusTLLastUpdateLogin1 | ✅ |
+| LAST_UPDATED_BY | TaxStatusTLLastUpdatedBy1 | ✅ |
+| SOURCE_LANG | TaxStatusTLSourceLang | ✅ |
+| TAX_STATUS_ID | TaxStatusTLTaxStatusId1 | ✅ |
+| TAX_STATUS_NAME | TaxStatusTLTaxStatusName | ✅ |
+
+### [[taxstatustlextractpvo|TaxStatusTLExtractPVO]] (OTHER · BICC: 9/9)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | TaxStatusTLCreatedBy | ✅ |
+| CREATION_DATE | TaxStatusTLCreationDate | ✅ |
+| LANGUAGE | TaxStatusTLLanguage | ✅ |
+| LAST_UPDATE_DATE | TaxStatusTLLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | TaxStatusTLLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | TaxStatusTLLastUpdatedBy | ✅ |
+| SOURCE_LANG | TaxStatusTLSourceLang | ✅ |
+| TAX_STATUS_ID | TaxStatusTLTaxStatusId | ✅ |
+| TAX_STATUS_NAME | TaxStatusTLTaxStatusName | ✅ |
+
+### [[taxstatustranslationpvo|TaxStatusTranslationPVO]] (AP · BICC: 4/9)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | TaxStatusTLPEOCreatedBy | — |
+| CREATION_DATE | TaxStatusTLPEOCreationDate | — |
+| LANGUAGE | Language | ✅ |
+| LAST_UPDATE_DATE | TaxStatusTLPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | TaxStatusTLPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | TaxStatusTLPEOLastUpdatedBy | — |
+| SOURCE_LANG | TaxStatusTLPEOSourceLang | — |
+| TAX_STATUS_ID | TaxStatusId | ✅ |
+| TAX_STATUS_NAME | TaxStatusTLPEOTaxStatusName | ✅ |

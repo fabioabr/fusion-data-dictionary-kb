@@ -41,7 +41,6 @@ Armazena os **tipos de linha de PO**: Goods, Services, Fixed Price, Amount, Rate
 > [!note] Sufixo _B
 > O sufixo `_B` indica a **tabela base** (idioma base). Traducoes ficam na tabela correspondente `_TL`.
 
-
 ---
 
 ## 🧠 Propósito de Negócio
@@ -94,7 +93,6 @@ SELECT LINE_TYPE_ID, ORDER_TYPE_LOOKUP_CODE, PURCHASE_BASIS, MATCHING_BASIS
 FROM   PO_LINE_TYPES_B;
 ```
 
-
 ---
 
 ## 🔒 Observações
@@ -102,6 +100,110 @@ FROM   PO_LINE_TYPES_B;
 - Tabela de configuracao; poucas linhas seeded.
 - O `PURCHASE_BASIS` define bens, servicos ou mao de obra.
 - O `MATCHING_BASIS` controla matching por quantidade ou valor.
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[purchasinglinetypebextractpvo|PurchasingLineTypeBExtractPVO]] (PO · BICC: 18/69)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ATTRIBUTE1 | Attribute1 | — |
+| ATTRIBUTE10 | Attribute10 | — |
+| ATTRIBUTE11 | Attribute11 | — |
+| ATTRIBUTE12 | Attribute12 | — |
+| ATTRIBUTE13 | Attribute13 | — |
+| ATTRIBUTE14 | Attribute14 | — |
+| ATTRIBUTE15 | Attribute15 | — |
+| ATTRIBUTE16 | Attribute16 | — |
+| ATTRIBUTE17 | Attribute17 | — |
+| ATTRIBUTE18 | Attribute18 | — |
+| ATTRIBUTE19 | Attribute19 | — |
+| ATTRIBUTE2 | Attribute2 | — |
+| ATTRIBUTE20 | Attribute20 | — |
+| ATTRIBUTE3 | Attribute3 | — |
+| ATTRIBUTE4 | Attribute4 | — |
+| ATTRIBUTE5 | Attribute5 | — |
+| ATTRIBUTE6 | Attribute6 | — |
+| ATTRIBUTE7 | Attribute7 | — |
+| ATTRIBUTE8 | Attribute8 | — |
+| ATTRIBUTE9 | Attribute9 | — |
+| ATTRIBUTE_CATEGORY | AttributeCategory | — |
+| ATTRIBUTE_DATE1 | AttributeDate1 | — |
+| ATTRIBUTE_DATE10 | AttributeDate10 | — |
+| ATTRIBUTE_DATE2 | AttributeDate2 | — |
+| ATTRIBUTE_DATE3 | AttributeDate3 | — |
+| ATTRIBUTE_DATE4 | AttributeDate4 | — |
+| ATTRIBUTE_DATE5 | AttributeDate5 | — |
+| ATTRIBUTE_DATE6 | AttributeDate6 | — |
+| ATTRIBUTE_DATE7 | AttributeDate7 | — |
+| ATTRIBUTE_DATE8 | AttributeDate8 | — |
+| ATTRIBUTE_DATE9 | AttributeDate9 | — |
+| ATTRIBUTE_NUMBER1 | AttributeNumber1 | — |
+| ATTRIBUTE_NUMBER10 | AttributeNumber10 | — |
+| ATTRIBUTE_NUMBER2 | AttributeNumber2 | — |
+| ATTRIBUTE_NUMBER3 | AttributeNumber3 | — |
+| ATTRIBUTE_NUMBER4 | AttributeNumber4 | — |
+| ATTRIBUTE_NUMBER5 | AttributeNumber5 | — |
+| ATTRIBUTE_NUMBER6 | AttributeNumber6 | — |
+| ATTRIBUTE_NUMBER7 | AttributeNumber7 | — |
+| ATTRIBUTE_NUMBER8 | AttributeNumber8 | — |
+| ATTRIBUTE_NUMBER9 | AttributeNumber9 | — |
+| ATTRIBUTE_TIMESTAMP1 | AttributeTimestamp1 | — |
+| ATTRIBUTE_TIMESTAMP10 | AttributeTimestamp10 | — |
+| ATTRIBUTE_TIMESTAMP2 | AttributeTimestamp2 | — |
+| ATTRIBUTE_TIMESTAMP3 | AttributeTimestamp3 | — |
+| ATTRIBUTE_TIMESTAMP4 | AttributeTimestamp4 | — |
+| ATTRIBUTE_TIMESTAMP5 | AttributeTimestamp5 | — |
+| ATTRIBUTE_TIMESTAMP6 | AttributeTimestamp6 | — |
+| ATTRIBUTE_TIMESTAMP7 | AttributeTimestamp7 | — |
+| ATTRIBUTE_TIMESTAMP8 | AttributeTimestamp8 | — |
+| ATTRIBUTE_TIMESTAMP9 | AttributeTimestamp9 | — |
+| CATEGORY_ID | CategoryId | ✅ |
+| CREATED_BY | CreatedBy | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| INACTIVE_DATE | InactiveDate | ✅ |
+| INSPECTION_REQUIRED_FLAG | InspectionRequiredFlag | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | LastUpdatedBy | ✅ |
+| LINE_TYPE_CODE | LineTypeCode | ✅ |
+| LINE_TYPE_ID | LineTypeId | ✅ |
+| MATCH_OPTION | MatchOption | ✅ |
+| MATCHING_BASIS | MatchingBasis | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | ✅ |
+| PURCHASE_BASIS | PurchaseBasis | ✅ |
+| RECEIVE_CLOSE_TOLERANCE | ReceiveCloseTolerance | ✅ |
+| RECEIVING_FLAG | ReceivingFlag | ✅ |
+| UNIT_OF_MEASURE | UnitOfMeasure | ✅ |
+| UOM_CODE | UomCode | ✅ |
+
+### [[purchasinglinetypebp|PurchasingLineTypeBP]] (PO · BICC: 12/21)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CATEGORY_ID | POLineTypeBCategoryId | — |
+| CREATED_BY | POLineTypeBCreatedBy | ✅ |
+| CREATION_DATE | POLineTypeBCreationDate | ✅ |
+| INACTIVE_DATE | POLineTypeBInactiveDate | ✅ |
+| INSPECTION_REQUIRED_FLAG | POLineTypeBInspectionRequiredFlag | ✅ |
+| LAST_UPDATE_DATE | POLineTypeBLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | POLineTypeBLastUpdateLogin | — |
+| LAST_UPDATED_BY | POLineTypeBLastUpdatedBy | ✅ |
+| LINE_TYPE_CODE | POLineTypeBLineTypeCode | ✅ |
+| LINE_TYPE_ID | LineTypeId | ✅ |
+| MATCH_OPTION | POLineTypeBMatchOption | — |
+| MATCHING_BASIS | POLineTypeBMatchingBasis | ✅ |
+| OBJECT_VERSION_NUMBER | POLineTypeBObjectVersionNumber | — |
+| ORDER_TYPE_LOOKUP_CODE | POLineTypeBOrderTypeLookupCode | ✅ |
+| OUTSIDE_OPERATION_FLAG | POLineTypeBOutsideOperationFlag | — |
+| PURCHASE_BASIS | POLineTypeBPurchaseBasis | ✅ |
+| RECEIVE_CLOSE_TOLERANCE | POLineTypeBReceiveCloseTolerance | ✅ |
+| RECEIVING_FLAG | POLineTypeBReceivingFlag | — |
+| UNIT_OF_MEASURE | POLineTypeBUnitOfMeasure | — |
+| UNIT_PRICE | POLineTypeBUnitPrice | — |
+| UOM_CODE | POLineTypeBUomCode | — |
 
 ---
 

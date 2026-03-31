@@ -116,6 +116,147 @@ WHERE  f.FORMULA_NAME LIKE '%SALARY%'
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[formuladpvo|FormulaDPVO]] (GL · BICC: 5/19)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BASE_FORMULA_NAME | FormulaDPEOBaseFormulaName | — |
+| COMPILE_FLAG | FormulaDPEOCompileFlag | — |
+| CREATED_BY | FormulaDPEOCreatedBy | — |
+| CREATION_DATE | FormulaDPEOCreationDate | — |
+| DESCRIPTION | FormulaDPEODescription | — |
+| EDIT_STATUS | FormulaDPEOEditStatus | — |
+| EFFECTIVE_END_DATE | FormulaDPEOEffectiveEndDate | ✅ |
+| EFFECTIVE_START_DATE | FormulaDPEOEffectiveStartDate | ✅ |
+| ENTERPRISE_ID | FormulaDPEOEnterpriseId | — |
+| FORMULA_ID | FormulaDPEOFormulaId | ✅ |
+| FORMULA_NAME | FormulaDPEOFormulaName | ✅ |
+| FORMULA_TEXT | FormulaDPEOFormulaText | — |
+| FORMULA_TYPE_ID | FormulaDPEOFormulaTypeId | — |
+| LAST_UPDATE_DATE | FormulaDPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | FormulaDPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | FormulaDPEOLastUpdatedBy | — |
+| LEGISLATION_CODE | FormulaDPEOLegislationCode | — |
+| LEGISLATIVE_DATA_GROUP_ID | FormulaDPEOLegislativeDataGroupId | — |
+| OBJECT_VERSION_NUMBER | FormulaDPEOObjectVersionNumber | — |
+
+### [[gradeladderpvo|GradeLadderPVO]] (GL · BICC: 12/20)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| EFFECTIVE_END_DATE | ProgressionFormulaDPEOEffectiveEndDate | — |
+| EFFECTIVE_END_DATE | RateFormulaDPEOEffectiveEndDate | — |
+| EFFECTIVE_END_DATE | SalaryCalcFormulaDPEOEffectiveEndDate | — |
+| EFFECTIVE_END_DATE | SalaryFormulaDPEOEffectiveEndDate | — |
+| EFFECTIVE_START_DATE | ProgressionFormulaDPEOEffectiveStartDate | ✅ |
+| EFFECTIVE_START_DATE | RateFormulaDPEOEffectiveStartDate | ✅ |
+| EFFECTIVE_START_DATE | SalaryCalcFormulaDPEOEffectiveStartDate | ✅ |
+| EFFECTIVE_START_DATE | SalaryFormulaDPEOEffectiveStartDate | ✅ |
+| FORMULA_ID | ProgressionFormulaDPEOFormulaId | — |
+| FORMULA_ID | RateFormulaDPEOFormulaId | — |
+| FORMULA_ID | SalaryCalcFormulaDPEOFormulaId | — |
+| FORMULA_ID | SalaryFormulaDPEOFormulaId | — |
+| FORMULA_NAME | ProgressionFormulaDPEOFormulaName | ✅ |
+| FORMULA_NAME | RateFormulaDPEOFormulaName | ✅ |
+| FORMULA_NAME | SalaryCalcFormulaDPEOFormulaName | ✅ |
+| FORMULA_NAME | SalaryFormulaDPEOFormulaName | ✅ |
+| LAST_UPDATE_DATE | ProgressionFormulaDPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_DATE | RateFormulaDPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_DATE | SalaryCalcFormulaDPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_DATE | SalaryFormulaDPEOLastUpdateDate | ✅ |
+
+### [[jobrequisitionpvo|JobRequisitionPVO]] (PO · BICC: 1/2)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| FORMULA_ID | RequisitionFastFormulaPEOFormulaId | — |
+| FORMULA_NAME | RequisitionFastFormulaPEOFormulaName | ✅ |
+
+### [[jobrequisitiontemplatepvo|JobRequisitionTemplatePVO]] (PO · BICC: 1/2)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| FORMULA_ID | RequisitionFastFormulaPEOFormulaId | — |
+| FORMULA_NAME | RequisitionFastFormulaPEOFormulaName | ✅ |
+
+### [[jobrequisitionviewallpvo|JobRequisitionViewAllPVO]] (PO · BICC: 1/2)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| FORMULA_ID | RequisitionFastFormulaPEOFormulaId | — |
+| FORMULA_NAME | RequisitionFastFormulaPEOFormulaName | ✅ |
+
+### [[requisitiontemplatepvo|RequisitionTemplatePVO]] (PO · BICC: 1/2)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| FORMULA_ID | RequisitionFastFormulaPEOFormulaId | — |
+| FORMULA_NAME | RequisitionFastFormulaPEOFormulaName | ✅ |
+
+### [[ruleinputpvo|RuleInputPVO]] (GL · BICC: 2/5)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BASE_FORMULA_NAME | FormulaDPEOBaseFormulaName | — |
+| EFFECTIVE_END_DATE | FormulaDPEOEffectiveEndDate | — |
+| EFFECTIVE_START_DATE | FormulaDPEOEffectiveStartDate | ✅ |
+| FORMULA_ID | FormulaDPEOFormulaId | — |
+| FORMULA_NAME | FormulaDPEOFormulaName | ✅ |
+
+### [[ruleoutputpvo|RuleOutputPVO]] (GL · BICC: 2/5)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BASE_FORMULA_NAME | FormulaDPEOBaseFormulaName | — |
+| EFFECTIVE_END_DATE | FormulaDPEOEffectiveEndDate | — |
+| EFFECTIVE_START_DATE | FormulaDPEOEffectiveStartDate | ✅ |
+| FORMULA_ID | FormulaDPEOFormulaId | — |
+| FORMULA_NAME | FormulaDPEOFormulaName | ✅ |
+
+### [[rulepvo|RulePVO]] (GL · BICC: 2/5)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BASE_FORMULA_NAME | FormulaDPEOBaseFormulaName | — |
+| EFFECTIVE_END_DATE | FormulaDPEOEffectiveEndDate | — |
+| EFFECTIVE_START_DATE | FormulaDPEOEffectiveStartDate | ✅ |
+| FORMULA_ID | FormulaDPEOFormulaId | — |
+| FORMULA_NAME | FormulaDPEOFormulaName | ✅ |
+
+### [[ruletemplateinputpvo|RuleTemplateInputPVO]] (GL · BICC: 2/5)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BASE_FORMULA_NAME | FormulaDPEOBaseFormulaName | — |
+| EFFECTIVE_END_DATE | FormulaDPEOEffectiveEndDate | — |
+| EFFECTIVE_START_DATE | FormulaDPEOEffectiveStartDate | ✅ |
+| FORMULA_ID | FormulaDPEOFormulaId | — |
+| FORMULA_NAME | FormulaDPEOFormulaName | ✅ |
+
+### [[ruletemplatepvo|RuleTemplatePVO]] (GL · BICC: 3/5)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BASE_FORMULA_NAME | FormulaDPEOBaseFormulaName | ✅ |
+| EFFECTIVE_END_DATE | FormulaDPEOEffectiveEndDate | — |
+| EFFECTIVE_START_DATE | FormulaDPEOEffectiveStartDate | ✅ |
+| FORMULA_ID | FormulaDPEOFormulaId | — |
+| FORMULA_NAME | FormulaDPEOFormulaName | ✅ |
+
+### [[ruletemplateusagepvo|RuleTemplateUsagePVO]] (GL · BICC: 2/5)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BASE_FORMULA_NAME | FormulaDPEOBaseFormulaName | — |
+| EFFECTIVE_END_DATE | FormulaDPEOEffectiveEndDate | — |
+| EFFECTIVE_START_DATE | FormulaDPEOEffectiveStartDate | ✅ |
+| FORMULA_ID | FormulaDPEOFormulaId | — |
+| FORMULA_NAME | FormulaDPEOFormulaName | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — FF_FORMULAS_VL](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/ffformulasvl.html)

@@ -98,6 +98,77 @@ ORDER BY rs.STEP_ORDER;
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[jobapphisteventpvo|JobAppHistEventPVO]] (HCM · BICC: 1/2)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ROUTING_STEP_ID | RoutingStepBPEORoutingStepId | — |
+| SEQUENCE_NUMBER | RoutingStepBPEOSequenceNumber | ✅ |
+
+### [[poolmgmtprocesspvo|PoolMgmtProcessPVO]] (HCM · BICC: 6/17)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| PHASE_ID | RoutingStepPhaseBPEOPhaseId | ✅ |
+| PHASE_ID | RoutingStepStateBPEOPhaseId | ✅ |
+| PROCESS_ID | RoutingStepPhaseBPEOProcessId | — |
+| PROCESS_ID | RoutingStepStateBPEOProcessId | — |
+| PUBLIC_STATE_ID | RoutingStepStateBPEOPublicStateId | — |
+| ROUTING_STEP_ID | RoutingStepPhaseBPEORoutingStepId | — |
+| ROUTING_STEP_ID | RoutingStepStateBPEORoutingStepId | — |
+| SEQUENCE_NUMBER | RoutingStepPhaseBPEOSequenceNumber | ✅ |
+| SEQUENCE_NUMBER | RoutingStepStateBPEOSequenceNumber | ✅ |
+| STATE_ID | RoutingStepPhaseBPEOStateId | ✅ |
+| STATE_ID | RoutingStepStateBPEOStateId | ✅ |
+| STEP_STATUS | RoutingStepPhaseBPEOStepStatus | — |
+| STEP_STATUS | RoutingStepStateBPEOStepStatus | — |
+| SUB_PROCESS_ID | RoutingStepPhaseBPEOSubProcessId | — |
+| SUB_PROCESS_ID | RoutingStepStateBPEOSubProcessId | — |
+| TYPE_CODE | RoutingStepPhaseBPEOTypeCode | — |
+| TYPE_CODE | RoutingStepStateBPEOTypeCode | — |
+
+### [[routingstepphasepvo|RoutingStepPhasePVO]] (HCM · BICC: 4/14)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CODE | Code | ✅ |
+| IS_COMPLETION_FLAG | IsCompletionFlag | — |
+| IS_INITIAL_FLAG | IsInitialFlag | — |
+| LAST_ACTIVATION_DATE | LastActivationDate | — |
+| LAST_DEACTIVATION_DATE | LastDeactivationDate | — |
+| PHASE_ID | PhaseId | ✅ |
+| PROCESS_ID | ProcessId | — |
+| PUBLIC_STATE_ID | PublicStateId | — |
+| ROUTING_STEP_ID | RoutingStepId | ✅ |
+| SEQUENCE_NUMBER | SequenceNumber | ✅ |
+| SETTING_ID | SettingId | — |
+| STEP_STATUS | StepStatus | — |
+| SUB_PROCESS_ID | SubProcessId | — |
+| TYPE_CODE | TypeCode | — |
+
+### [[routingstepstatepvo|RoutingStepStatePVO]] (HCM · BICC: 5/14)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CODE | Code | ✅ |
+| IS_COMPLETION_FLAG | IsCompletionFlag | — |
+| IS_INITIAL_FLAG | IsInitialFlag | — |
+| LAST_ACTIVATION_DATE | LastActivationDate | — |
+| LAST_DEACTIVATION_DATE | LastDeactivationDate | — |
+| PROCESS_ID | ProcessId | — |
+| PUBLIC_STATE_ID | PublicStateId | ✅ |
+| ROUTING_STEP_ID | RoutingStepId | ✅ |
+| SEQUENCE_NUMBER | SequenceNumber | ✅ |
+| SETTING_ID | SettingId | — |
+| STATE_ID | StateId | ✅ |
+| STEP_STATUS | StepStatus | — |
+| SUB_PROCESS_ID | SubProcessId | — |
+| TYPE_CODE | TypeCode | — |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — IRC_ROUTING_STEPS_B](https://docs.oracle.com/en/cloud/saas/talent-management/25a/oedmf/ircroutingstepsb.html)

@@ -100,6 +100,76 @@ SELECT rs.name AS conjunto,
 - Regras de exceção são avaliadas **após** o match inicial — se o match encontrou a fatura mas o valor diverge, a regra de exceção decide o tratamento.
 - Em ambientes bancários, tolerâncias muito altas para write-off automático podem gerar riscos de compliance — recomenda-se revisão periódica dos limites.
 
+## 🔗 PVOs Relacionados
+
+### [[customerfinancialprofilepvo|CustomerFinancialProfilePVO]] (AR)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTIVE_FLAG | ExceptRuleActiveFlag | — |
+| DESCRIPTION | ExceptRuleDescription | — |
+| END_DATE | ExceptRuleEndDate | — |
+| EXCEPTION_RULE_ID | ExceptRuleExceptionRuleId | — |
+| NAME | ExceptRuleName | — |
+| START_DATE | ExceptRuleStartDate | — |
+
+### [[customerprofile|CustomerProfile]] (AR · BICC: 2/13)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTIVE_FLAG | ExceptionRuleActiveFlag | — |
+| CREATED_BY | ExceptionRuleCreatedBy | — |
+| CREATION_DATE | ExceptionRuleCreationDate | — |
+| DESCRIPTION | ExceptionRuleDescription | — |
+| END_DATE | ExceptionRuleEndDate | — |
+| EXCEPTION_RULE_ID | ExceptionRuleExceptionRuleId | — |
+| LAST_UPDATE_DATE | ExceptionRuleLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ExceptionRuleLastUpdateLogin | — |
+| LAST_UPDATED_BY | ExceptionRuleLastUpdatedBy | — |
+| NAME | ExceptionRuleName | ✅ |
+| OBJECT_VERSION_NUMBER | ExceptionRuleObjectVersionNumber | — |
+| SET_ID | ExceptionRuleSetId | — |
+| START_DATE | ExceptionRuleStartDate | — |
+
+### [[customersiteprofile|CustomerSiteProfile]] (AR · BICC: 2/13)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTIVE_FLAG | ExceptionRuleActiveFlag | — |
+| CREATED_BY | ExceptionRuleCreatedBy | — |
+| CREATION_DATE | ExceptionRuleCreationDate | — |
+| DESCRIPTION | ExceptionRuleDescription | — |
+| END_DATE | ExceptionRuleEndDate | — |
+| EXCEPTION_RULE_ID | ExceptionRuleExceptionRuleId | — |
+| LAST_UPDATE_DATE | ExceptionRuleLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ExceptionRuleLastUpdateLogin | — |
+| LAST_UPDATED_BY | ExceptionRuleLastUpdatedBy | — |
+| NAME | ExceptionRuleName | ✅ |
+| OBJECT_VERSION_NUMBER | ExceptionRuleObjectVersionNumber | — |
+| SET_ID | ExceptionRuleSetId | — |
+| START_DATE | ExceptionRuleStartDate | — |
+
+### [[exceptionruleextractpvo|ExceptionRuleExtractPVO]] (OTHER · BICC: 14/14)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTIVE_FLAG | ArAppExceptionRuleActiveFlag | ✅ |
+| CREATED_BY | ArAppExceptionRuleCreatedBy | ✅ |
+| CREATION_DATE | ArAppExceptionRuleCreationDate | ✅ |
+| DESCRIPTION | ArAppExceptionRuleDescription | ✅ |
+| END_DATE | ArAppExceptionRuleEndDate | ✅ |
+| EXCEPTION_RULE_ID | ArAppExceptionRuleExceptionRuleId | ✅ |
+| LAST_UPDATE_DATE | ArAppExceptionRuleLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ArAppExceptionRuleLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | ArAppExceptionRuleLastUpdatedBy | ✅ |
+| NAME | ArAppExceptionRuleName | ✅ |
+| OBJECT_VERSION_NUMBER | ArAppExceptionRuleObjectVersionNumber | ✅ |
+| SEED_DATA_SOURCE | ArAppExceptionRuleSeedDataSource | ✅ |
+| SET_ID | ArAppExceptionRuleSetId | ✅ |
+| START_DATE | ArAppExceptionRuleStartDate | ✅ |
+
+---
+
 ## 📚 Referências
 
 - Oracle Fusion Cloud Financials — Accounts Receivable Tables (OEDMF Release 13)

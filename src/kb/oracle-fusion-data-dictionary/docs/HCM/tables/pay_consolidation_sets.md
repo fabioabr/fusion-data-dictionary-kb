@@ -99,6 +99,39 @@ WHERE  cs.LEGISLATIVE_DATA_GROUP_ID = :p_ldg_id;
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[payconsolidationsetspvo|PayConsolidationSetsPVO]] (HCM · BICC: 9/10)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| COMMENTS | PayConsolidationSetPEOComments | — |
+| CONSOLIDATION_SET_ID | PayConsolidationSetPEOConsolidationSetId | ✅ |
+| CONSOLIDATION_SET_NAME | PayConsolidationSetPEOConsolidationSetName | ✅ |
+| CREATED_BY | PayConsolidationSetPEOCreatedBy | ✅ |
+| CREATION_DATE | PayConsolidationSetPEOCreationDate | ✅ |
+| LAST_UPDATE_DATE | PayConsolidationSetPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | PayConsolidationSetPEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | PayConsolidationSetPEOLastUpdatedBy | ✅ |
+| LEGISLATIVE_DATA_GROUP_ID | PayConsolidationSetPEOLegislativeDataGroupId | ✅ |
+| OBJECT_VERSION_NUMBER | PayConsolidationSetPEOObjectVersionNumber | ✅ |
+
+### [[payrolldpvo|PayrollDPVO]] (HCM · BICC: 1/2)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CONSOLIDATION_SET_ID | ConsolidationSetId | — |
+| CONSOLIDATION_SET_NAME | ConsolidationSetName | ✅ |
+
+### [[payrollpvo|PayrollPVO]] (HCM · BICC: 1/2)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CONSOLIDATION_SET_ID | ConsolidationSetId | — |
+| CONSOLIDATION_SET_NAME | ConsolidationSetName | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — PAY_CONSOLIDATION_SETS](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/payconsolidationsets.html)

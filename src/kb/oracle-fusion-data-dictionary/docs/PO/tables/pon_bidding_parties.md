@@ -164,3 +164,240 @@ WHERE  bp.AUCTION_HEADER_ID = :p_auction_header_id
 
 - [Oracle Docs — PON_BIDDING_PARTIES](https://docs.oracle.com/en/cloud/saas/procurement/25a/oedmf/ponbiddingparties.html)
 - [[po-module-data-dictionary]] — Dossiê do módulo PO/Procurement
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[awardednegotiationresponselinepvo|AwardedNegotiationResponseLinePVO]] (PO)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACCESS_TYPE | BiddingPartiesAccessType | — |
+| ACK_NOTE_TO_AUCTIONEER | BiddingPartiesAckNoteToAuctioneer | — |
+| ACK_PARTNER_CONTACT_ID | BiddingPartiesAckPartnerContactId | — |
+| ACKNOWLEDGEMENT_TIME | BiddingPartiesAcknowledgementTime | — |
+| ADDITIONAL_CONTACT_EMAIL | BiddingPartiesAdditionalContactEmail | — |
+| AUCTION_HEADER_ID | BiddingPartiesAuctionHeaderId | — |
+| BID_CURRENCY_CODE | BiddingPartiesBidCurrencyCode | — |
+| CREATED_BY | BiddingPartiesCreatedBy | — |
+| CREATION_DATE | BiddingPartiesCreationDate | — |
+| LAST_AMENDMENT_UPDATE | BiddingPartiesLastAmendmentUpdate | — |
+| LAST_UPDATE_DATE | BiddingPartiesLastUpdateDate | — |
+| LAST_UPDATE_LOGIN | BiddingPartiesLastUpdateLogin | — |
+| LAST_UPDATED_BY | BiddingPartiesLastUpdatedBy | — |
+| LIST_ID | BiddingPartiesListId | — |
+| MODIFIED_FLAG | BiddingPartiesModifiedFlag | — |
+| NUMBER_PRICE_DECIMALS | BiddingPartiesNumberPriceDecimals | — |
+| OBJECT_VERSION_NUMBER | BiddingPartiesObjectVersionNumber | — |
+| RATE | BiddingPartiesRate | — |
+| RATE_DSP | BiddingPartiesRateDsp | — |
+| REGISTRATION_ID | BiddingPartiesRegistrationId | — |
+| REQUESTED_SUPP_CONTACT_NAME | BiddingPartiesRequestedSuppContactName | — |
+| REQUESTED_SUPPLIER_CONTACT_ID | BiddingPartiesRequestedSupplierContactId | — |
+| REQUESTED_SUPPLIER_ID | BiddingPartiesRequestedSupplierId | — |
+| REQUESTED_SUPPLIER_NAME | BiddingPartiesRequestedSupplierName | — |
+| ROUND_NUMBER | BiddingPartiesRoundNumber | — |
+| SEQUENCE | BiddingPartiesSequence | — |
+| SUPP_ACKNOWLEDGEMENT | BiddingPartiesSuppAcknowledgement | — |
+| SURROG_BID_ACK_FLAG | BiddingPartiesSurrogBidAckFlag | — |
+| SURROG_BID_ACK_PERSON_ID | BiddingPartiesSurrogBidAckPersonId | — |
+| TRADING_PARTNER_CONTACT_ID | BiddingPartiesTradingPartnerContactId | — |
+| TRADING_PARTNER_ID | BiddingPartiesTradingPartnerId | — |
+| VENDOR_SITE_ID | BiddingPartiesVendorSiteId | — |
+| WF_ITEM_KEY | BiddingPartiesWfItemKey | — |
+| WF_USER_NAME | BiddingPartiesWfUserName | — |
+
+### [[negdocumentsourcingsupplierinviteepvo|NegDocumentSourcingSupplierInviteePVO]] (PO · BICC: 18/32)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACCESS_TYPE | NegBiddPartiesAccessType | — |
+| ACK_NOTE_TO_AUCTIONEER | NegBiddPartiesAckNoteToAuctioneer | — |
+| ACK_PARTNER_CONTACT_ID | NegBiddPartiesAckPartnerContactId | — |
+| ACKNOWLEDGEMENT_TIME | NegBiddPartiesAcknowledgementTime | — |
+| ADDITIONAL_CONTACT_EMAIL | NegBiddPartiesAdditionalContactEmail | ✅ |
+| AUCTION_HEADER_ID | AuctionHeaderId | ✅ |
+| BID_CURRENCY_CODE | NegBiddPartiesBidCurrencyCode | — |
+| CREATED_BY | NegBiddPartiesCreatedBy | ✅ |
+| CREATION_DATE | NegBiddPartiesCreationDate | ✅ |
+| LAST_AMENDMENT_UPDATE | NegBiddPartiesLastAmendmentUpdate | — |
+| LAST_UPDATE_DATE | NegBiddPartiesLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | NegBiddPartiesLastUpdateLogin | — |
+| LAST_UPDATED_BY | NegBiddPartiesLastUpdatedBy | ✅ |
+| LIST_ID | ListId | ✅ |
+| MODIFIED_FLAG | NegBiddPartiesModifiedFlag | ✅ |
+| NUMBER_PRICE_DECIMALS | NegBiddPartiesNumberPriceDecimals | — |
+| OBJECT_VERSION_NUMBER | NegBiddPartiesObjectVersionNumber | — |
+| RATE | NegBiddPartiesRate | — |
+| RATE_DSP | NegBiddPartiesRateDsp | — |
+| REGISTRATION_ID | NegBiddPartiesRegistrationId | ✅ |
+| REQUESTED_SUPP_CONTACT_NAME | NegBiddPartiesRequestedSuppContactName | ✅ |
+| REQUESTED_SUPPLIER_CONTACT_ID | NegBiddPartiesRequestedSupplierContactId | ✅ |
+| REQUESTED_SUPPLIER_ID | NegBiddPartiesRequestedSupplierId | ✅ |
+| REQUESTED_SUPPLIER_NAME | NegBiddPartiesRequestedSupplierName | ✅ |
+| ROUND_NUMBER | NegBiddPartiesRoundNumber | — |
+| SEQUENCE | Sequence | ✅ |
+| SUPP_ACKNOWLEDGEMENT | NegBiddPartiesSuppAcknowledgement | ✅ |
+| TRADING_PARTNER_CONTACT_ID | NegBiddPartiesTradingPartnerContactId | ✅ |
+| TRADING_PARTNER_ID | NegBiddPartiesTradingPartnerId | ✅ |
+| VENDOR_SITE_ID | NegBiddPartiesVendorSiteId | ✅ |
+| WF_ITEM_KEY | NegBiddPartiesWfItemKey | — |
+| WF_USER_NAME | NegBiddPartiesWfUserName | — |
+
+### [[negotiationsupplierinviteeextractpvo|NegotiationSupplierInviteeExtractPVO]] (PO · BICC: 30/34)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACCESS_TYPE | AccessType | ✅ |
+| ACK_NOTE_TO_AUCTIONEER | AckNoteToAuctioneer | ✅ |
+| ACK_PARTNER_CONTACT_ID | AckPartnerContactId | ✅ |
+| ACKNOWLEDGEMENT_TIME | AcknowledgementTime | ✅ |
+| ADDITIONAL_CONTACT_EMAIL | AdditionalContactEmail | ✅ |
+| AUCTION_HEADER_ID | AuctionHeaderId | ✅ |
+| BID_CURRENCY_CODE | BidCurrencyCode | ✅ |
+| CREATED_BY | CreatedBy | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| LAST_AMENDMENT_UPDATE | LastAmendmentUpdate | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | LastUpdatedBy | ✅ |
+| LIST_ID | ListId | — |
+| MODIFIED_FLAG | ModifiedFlag | — |
+| NUMBER_PRICE_DECIMALS | NumberPriceDecimals | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | ✅ |
+| RATE | Rate | ✅ |
+| RATE_DSP | RateDsp | ✅ |
+| REGISTRATION_ID | RegistrationId | ✅ |
+| REQUESTED_SUPP_CONTACT_NAME | RequestedSuppContactName | ✅ |
+| REQUESTED_SUPPLIER_CONTACT_ID | RequestedSupplierContactId | ✅ |
+| REQUESTED_SUPPLIER_ID | RequestedSupplierId | ✅ |
+| REQUESTED_SUPPLIER_NAME | RequestedSupplierName | ✅ |
+| ROUND_NUMBER | RoundNumber | ✅ |
+| SEQUENCE | Sequence | ✅ |
+| SUPP_ACKNOWLEDGEMENT | SuppAcknowledgement | ✅ |
+| SURROG_BID_ACK_FLAG | SurrogBidAckFlag | ✅ |
+| SURROG_BID_ACK_PERSON_ID | SurrogBidAckPersonId | ✅ |
+| TRADING_PARTNER_CONTACT_ID | TradingPartnerContactId | ✅ |
+| TRADING_PARTNER_ID | TradingPartnerId | ✅ |
+| VENDOR_SITE_ID | VendorSiteId | ✅ |
+| WF_ITEM_KEY | WfItemKey | — |
+| WF_USER_NAME | WfUserName | — |
+
+### [[negotiationsupplierinviteesextractpvo|NegotiationSupplierInviteesExtractPVO]] (PO · BICC: 35/35)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACCESS_TYPE | AccessType | ✅ |
+| ACK_NOTE_TO_AUCTIONEER | AckNoteToAuctioneer | ✅ |
+| ACK_PARTNER_CONTACT_ID | AckPartnerContactId | ✅ |
+| ACKNOWLEDGEMENT_TIME | AcknowledgementTime | ✅ |
+| ADDITIONAL_CONTACT_EMAIL | AdditionalContactEmail | ✅ |
+| AUCTION_HEADER_ID | AuctionHeaderId | ✅ |
+| BID_CURRENCY_CODE | BidCurrencyCode | ✅ |
+| CREATED_BY | CreatedBy | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| LAST_AMENDMENT_UPDATE | LastAmendmentUpdate | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | LastUpdatedBy | ✅ |
+| LIST_ID | ListId | ✅ |
+| MODIFIED_FLAG | ModifiedFlag | ✅ |
+| NOTIFY_CONTACTS_FLAG | NotifyContactsFlag | ✅ |
+| NUMBER_PRICE_DECIMALS | NumberPriceDecimals | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | ✅ |
+| RATE | Rate | ✅ |
+| RATE_DSP | RateDsp | ✅ |
+| REGISTRATION_ID | RegistrationId | ✅ |
+| REQUESTED_SUPP_CONTACT_NAME | RequestedSuppContactName | ✅ |
+| REQUESTED_SUPPLIER_CONTACT_ID | RequestedSupplierContactId | ✅ |
+| REQUESTED_SUPPLIER_ID | RequestedSupplierId | ✅ |
+| REQUESTED_SUPPLIER_NAME | RequestedSupplierName | ✅ |
+| ROUND_NUMBER | RoundNumber | ✅ |
+| SEQUENCE | Sequence | ✅ |
+| SUPP_ACKNOWLEDGEMENT | SuppAcknowledgement | ✅ |
+| SURROG_BID_ACK_FLAG | SurrogBidAckFlag | ✅ |
+| SURROG_BID_ACK_PERSON_ID | SurrogBidAckPersonId | ✅ |
+| TRADING_PARTNER_CONTACT_ID | TradingPartnerContactId | ✅ |
+| TRADING_PARTNER_ID | TradingPartnerId | ✅ |
+| VENDOR_SITE_ID | VendorSiteId | ✅ |
+| WF_ITEM_KEY | WfItemKey | ✅ |
+| WF_USER_NAME | WfUserName | ✅ |
+
+### [[unlockednegotiationresponseheaderpvo|UnlockedNegotiationResponseHeaderPVO]] (PO · BICC: 2/34)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACCESS_TYPE | BiddingPartiesAccessType | — |
+| ACK_NOTE_TO_AUCTIONEER | BiddingPartiesAckNoteToAuctioneer | — |
+| ACK_PARTNER_CONTACT_ID | BiddingPartiesAckPartnerContactId | — |
+| ACKNOWLEDGEMENT_TIME | BiddingPartiesAcknowledgementTime | ✅ |
+| ADDITIONAL_CONTACT_EMAIL | BiddingPartiesAdditionalContactEmail | — |
+| AUCTION_HEADER_ID | BiddingPartiesAuctionHeaderId | — |
+| BID_CURRENCY_CODE | BiddingPartiesBidCurrencyCode | — |
+| CREATED_BY | BiddingPartiesCreatedBy | — |
+| CREATION_DATE | BiddingPartiesCreationDate | — |
+| LAST_AMENDMENT_UPDATE | BiddingPartiesLastAmendmentUpdate | — |
+| LAST_UPDATE_DATE | BiddingPartiesLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | BiddingPartiesLastUpdateLogin | — |
+| LAST_UPDATED_BY | BiddingPartiesLastUpdatedBy | — |
+| LIST_ID | BiddingPartiesListId | — |
+| MODIFIED_FLAG | BiddingPartiesModifiedFlag | — |
+| NUMBER_PRICE_DECIMALS | BiddingPartiesNumberPriceDecimals | — |
+| OBJECT_VERSION_NUMBER | BiddingPartiesObjectVersionNumber | — |
+| RATE | BiddingPartiesRate | — |
+| RATE_DSP | BiddingPartiesRateDsp | — |
+| REGISTRATION_ID | BiddingPartiesRegistrationId | — |
+| REQUESTED_SUPP_CONTACT_NAME | BiddingPartiesRequestedSuppContactName | — |
+| REQUESTED_SUPPLIER_CONTACT_ID | BiddingPartiesRequestedSupplierContactId | — |
+| REQUESTED_SUPPLIER_ID | BiddingPartiesRequestedSupplierId | — |
+| REQUESTED_SUPPLIER_NAME | BiddingPartiesRequestedSupplierName | — |
+| ROUND_NUMBER | BiddingPartiesRoundNumber | — |
+| SEQUENCE | BiddingPartiesSequence | — |
+| SUPP_ACKNOWLEDGEMENT | BiddingPartiesSuppAcknowledgement | — |
+| SURROG_BID_ACK_FLAG | BiddingPartiesSurrogBidAckFlag | — |
+| SURROG_BID_ACK_PERSON_ID | BiddingPartiesSurrogBidAckPersonId | — |
+| TRADING_PARTNER_CONTACT_ID | BiddingPartiesTradingPartnerContactId | — |
+| TRADING_PARTNER_ID | BiddingPartiesTradingPartnerId | — |
+| VENDOR_SITE_ID | BiddingPartiesVendorSiteId | — |
+| WF_ITEM_KEY | BiddingPartiesWfItemKey | — |
+| WF_USER_NAME | BiddingPartiesWfUserName | — |
+
+### [[unlockednegotiationresponselinepvo|UnlockedNegotiationResponseLinePVO]] (PO · BICC: 2/34)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACCESS_TYPE | BiddingPartiesAccessType | — |
+| ACK_NOTE_TO_AUCTIONEER | BiddingPartiesAckNoteToAuctioneer | — |
+| ACK_PARTNER_CONTACT_ID | BiddingPartiesAckPartnerContactId | — |
+| ACKNOWLEDGEMENT_TIME | BiddingPartiesAcknowledgementTime | ✅ |
+| ADDITIONAL_CONTACT_EMAIL | BiddingPartiesAdditionalContactEmail | — |
+| AUCTION_HEADER_ID | BiddingPartiesAuctionHeaderId | — |
+| BID_CURRENCY_CODE | BiddingPartiesBidCurrencyCode | — |
+| CREATED_BY | BiddingPartiesCreatedBy | — |
+| CREATION_DATE | BiddingPartiesCreationDate | — |
+| LAST_AMENDMENT_UPDATE | BiddingPartiesLastAmendmentUpdate | — |
+| LAST_UPDATE_DATE | BiddingPartiesLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | BiddingPartiesLastUpdateLogin | — |
+| LAST_UPDATED_BY | BiddingPartiesLastUpdatedBy | — |
+| LIST_ID | BiddingPartiesListId | — |
+| MODIFIED_FLAG | BiddingPartiesModifiedFlag | — |
+| NUMBER_PRICE_DECIMALS | BiddingPartiesNumberPriceDecimals | — |
+| OBJECT_VERSION_NUMBER | BiddingPartiesObjectVersionNumber | — |
+| RATE | BiddingPartiesRate | — |
+| RATE_DSP | BiddingPartiesRateDsp | — |
+| REGISTRATION_ID | BiddingPartiesRegistrationId | — |
+| REQUESTED_SUPP_CONTACT_NAME | BiddingPartiesRequestedSuppContactName | — |
+| REQUESTED_SUPPLIER_CONTACT_ID | BiddingPartiesRequestedSupplierContactId | — |
+| REQUESTED_SUPPLIER_ID | BiddingPartiesRequestedSupplierId | — |
+| REQUESTED_SUPPLIER_NAME | BiddingPartiesRequestedSupplierName | — |
+| ROUND_NUMBER | BiddingPartiesRoundNumber | — |
+| SEQUENCE | BiddingPartiesSequence | — |
+| SUPP_ACKNOWLEDGEMENT | BiddingPartiesSuppAcknowledgement | — |
+| SURROG_BID_ACK_FLAG | BiddingPartiesSurrogBidAckFlag | — |
+| SURROG_BID_ACK_PERSON_ID | BiddingPartiesSurrogBidAckPersonId | — |
+| TRADING_PARTNER_CONTACT_ID | BiddingPartiesTradingPartnerContactId | — |
+| TRADING_PARTNER_ID | BiddingPartiesTradingPartnerId | — |
+| VENDOR_SITE_ID | BiddingPartiesVendorSiteId | — |
+| WF_ITEM_KEY | BiddingPartiesWfItemKey | — |
+| WF_USER_NAME | BiddingPartiesWfUserName | — |

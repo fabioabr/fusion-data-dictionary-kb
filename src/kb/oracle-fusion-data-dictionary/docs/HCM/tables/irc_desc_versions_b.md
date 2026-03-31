@@ -105,3 +105,23 @@ ORDER BY dv.VERSION_NUMBER DESC;
 
 - [Oracle Docs -- IRC_DESC_VERSIONS_B](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/ircdescversionsb.html)
 - [[hcm-module-data-dictionary]] -- Dossie do modulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[descriptionversionpvo|DescriptionVersionPVO]] (HCM · BICC: 7/11)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | CreatedBy | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| DESC_VERSION_ID | DescVersionId | ✅ |
+| DESCRIPTION_ID | DescriptionId | — |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | — |
+| LAST_UPDATED_BY | LastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | ✅ |
+| SEED_DATA_SOURCE | DescVerBPEOSeedDataSource | — |
+| STATUS_CODE | StatusCode | ✅ |
+| VERSION_START_DATE | VersionStartDate | ✅ |

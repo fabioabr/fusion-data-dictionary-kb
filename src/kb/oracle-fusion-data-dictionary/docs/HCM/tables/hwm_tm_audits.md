@@ -35,8 +35,6 @@ updated_at: 2026-03-25
 
 Armazena registros de auditoria do módulo de Time Management, rastreando alterações em cartões de ponto, aprovações e ajustes para fins de compliance.
 
-
-
 ---
 
 ## 🧠 Propósito de Negócio
@@ -103,6 +101,56 @@ ORDER BY t.AUDIT_DATE DESC
 
 - Registros de auditoria são gerados automaticamente pelo sistema e não devem ser alterados manualmente.
 - Área funcional: Time Management dentro do Oracle Fusion Cloud HCM.
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[changeauditattributepvo|ChangeAuditAttributePVO]] (HCM · BICC: 11/18)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_TYPE | ChangeAuditPEOActionType1 | ✅ |
+| CREATED_BY | ChangeAuditPEOCreatedBy1 | ✅ |
+| CREATION_DATE | ChangeAuditPEOCreationDate1 | ✅ |
+| ENTERPRISE_ID | ChangeAuditPEOEnterpriseId1 | — |
+| LAST_UPDATE_DATE | ChangeAuditPEOLastUpdateDate1 | ✅ |
+| LAST_UPDATE_LOGIN | ChangeAuditPEOLastUpdateLogin1 | ✅ |
+| LAST_UPDATED_BY | ChangeAuditPEOLastUpdatedBy1 | ✅ |
+| OBJECT_VERSION_NUMBER | ChangeAuditPEOObjectVersionNumber1 | — |
+| ORIG_AUDIT_ID | ChangeAuditPEOOrigAuditId | — |
+| REASON_CODE | ChangeAuditPEOReasonCode1 | ✅ |
+| REF_DATE | ChangeAuditPEORefDate | ✅ |
+| TM_AUDIT_ID | ChangeAuditPEOTmAuditId1 | ✅ |
+| TM_BLK_ID | ChangeAuditPEOTmBlkId | ✅ |
+| TM_BLK_VERSION | ChangeAuditPEOTmBlkVersion | — |
+| TM_NEW_BLK_ID | ChangeAuditPEOTmNewBlkId | — |
+| TM_NEW_BLK_VERSION | ChangeAuditPEOTmNewBlkVersion | — |
+| TM_RECORD_GRP_ID | ChangeAuditPEOTmRecordGrpId | ✅ |
+| USAGES_TYPE | ChangeAuditPEOUsagesType | — |
+
+### [[changeauditpvo|ChangeAuditPVO]] (HCM · BICC: 11/18)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_TYPE | ActionType | ✅ |
+| CREATED_BY | CreatedBy | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| ENTERPRISE_ID | EnterpriseId | — |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | LastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | — |
+| ORIG_AUDIT_ID | OrigAuditId | — |
+| REASON_CODE | ReasonCode | ✅ |
+| REF_DATE | RefDate | ✅ |
+| TM_AUDIT_ID | TmAuditId | ✅ |
+| TM_BLK_ID | TmBlkId | ✅ |
+| TM_BLK_VERSION | TmBlkVersion | — |
+| TM_NEW_BLK_ID | TmNewBlkId | — |
+| TM_NEW_BLK_VERSION | TmNewBlkVersion | — |
+| TM_RECORD_GRP_ID | TmRecordGrpId | ✅ |
+| USAGES_TYPE | UsagesType | — |
 
 ---
 

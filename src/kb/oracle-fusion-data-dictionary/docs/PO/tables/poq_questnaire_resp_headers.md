@@ -133,6 +133,184 @@ WHERE  rh.STATUS = 'COMPLETED';
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[questionnaireresponseheaderextractpvo|QuestionnaireResponseHeaderExtractPVO]] (PO · BICC: 37/37)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACCEPTANCE_DATE | AcceptanceDate | ✅ |
+| ACCEPTANCE_NOTE | AcceptanceNote | ✅ |
+| ACCEPTED_BY | AcceptedBy | ✅ |
+| CANCELED_BY | CanceledBy | ✅ |
+| CANCELED_DATE | CanceledDate | ✅ |
+| CANCELED_REASON_CODE | CanceledReasonCode | ✅ |
+| CHANGE_REQUEST_ID | ChangeRequestId | ✅ |
+| CR_OUTCOME_CODE | CrOutcomeCode | ✅ |
+| CREATED_BY | CreatedBy | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| INITIATIVE_ID | InitiativeId | ✅ |
+| INITIATIVE_SUPP_CONTACT_ID | InitiativeSuppContactId | ✅ |
+| INTERNAL_RESPONDENT_ID | InternalRespondentId | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | LastUpdatedBy | ✅ |
+| MERGE_REQUEST_ID | MergeRequestId | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | ✅ |
+| PRC_BU_ID | PrcBuId | ✅ |
+| QUESTNAIRE_ID | QuestnaireId | ✅ |
+| QUESTNAIRE_RESP_HEADER_ID | QuestnaireRespHeaderId | ✅ |
+| RECENT_NOTIFICATION_FLAG | RecentNotificationFlag | ✅ |
+| REQUEST_ERROR_REASON | RequestErrorReason | ✅ |
+| REQUEST_ID | RequestId | ✅ |
+| RESPONSE_STATUS | ResponseStatus | ✅ |
+| RETURN_MESSAGE_CONTENT | ReturnMessageContent | ✅ |
+| RETURNED_BY | ReturnedBy | ✅ |
+| RETURNED_DATE | ReturnedDate | ✅ |
+| SUBMISSION_DATE | SubmissionDate | ✅ |
+| SUBMITTED_BY | SubmittedBy | ✅ |
+| SUPPLIER_CONTACT_PARTY_ID | SupplierContactPartyId | ✅ |
+| SUPPLIER_ID | SupplierId | ✅ |
+| SUPPLIER_REG_ID | SupplierRegId | ✅ |
+| SUPPLIER_SITE_ID | SupplierSiteId | ✅ |
+| SURROG_ENTERED_BY | SurrogEnteredBy | ✅ |
+| SURROG_ENTRY_DATE | SurrogEntryDate | ✅ |
+| SURROG_RESPONSE_FLAG | SurrogResponseFlag | ✅ |
+
+### [[questionnaireresponseheaderspvo|QuestionnaireResponseHeadersPVO]] (PO · BICC: 38/39)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACCEPTANCE_DATE | QuestionnaireResponseHeaderAcceptanceDate | ✅ |
+| ACCEPTANCE_NOTE | QuestionnaireResponseHeaderAcceptanceNote | ✅ |
+| ACCEPTED_BY | QuestionnaireResponseHeaderAcceptedBy | ✅ |
+| CANCELED_BY | QuestionnaireResponseHeaderCanceledBy | ✅ |
+| CANCELED_DATE | QuestionnaireResponseHeaderCanceledDate | ✅ |
+| CANCELED_REASON_CODE | QuestionnaireResponseHeaderCanceledReasonCode | ✅ |
+| CHANGE_REQUEST_ID | QuestionnaireResponseHeaderChangeRequestId | ✅ |
+| CLOSE_DATE | QuestionnaireResponseHeaderCloseDate | ✅ |
+| CLOSED_BY | QuestionnaireResponseHeaderClosedBy | — |
+| CR_OUTCOME_CODE | QuestionnaireResponseHeaderCrOutcomeCode | ✅ |
+| CREATED_BY | QuestionnaireResponseHeaderCreatedBy | ✅ |
+| CREATION_DATE | QuestionnaireResponseHeaderCreationDate | ✅ |
+| INITIATIVE_ID | QuestionnaireResponseHeaderInitiativeId | ✅ |
+| INITIATIVE_SUPP_CONTACT_ID | QuestionnaireResponseHeaderInitiativeSuppContactId | ✅ |
+| INTERNAL_RESPONDENT_ID | QuestionnaireResponseHeaderInternalRespondentId | ✅ |
+| LAST_UPDATE_DATE | QuestionnaireResponseHeaderLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | QuestionnaireResponseHeaderLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | QuestionnaireResponseHeaderLastUpdatedBy | ✅ |
+| MERGE_REQUEST_ID | QuestionnaireResponseHeaderMergeRequestId | ✅ |
+| OBJECT_VERSION_NUMBER | QuestionnaireResponseHeaderObjectVersionNumber | ✅ |
+| PRC_BU_ID | QuestionnaireResponseHeaderPrcBuId | ✅ |
+| QUESTNAIRE_ID | QuestionnaireResponseHeaderQuestnaireId | ✅ |
+| QUESTNAIRE_RESP_HEADER_ID | QuestnaireRespHeaderId | ✅ |
+| RECENT_NOTIFICATION_FLAG | QuestionnaireResponseHeaderRecentNotificationFlag | ✅ |
+| REQUEST_ERROR_REASON | QuestionnaireResponseHeaderRequestErrorReason | ✅ |
+| REQUEST_ID | QuestionnaireResponseHeaderRequestId | ✅ |
+| RESPONSE_STATUS | QuestionnaireResponseHeaderResponseStatus | ✅ |
+| RETURN_MESSAGE_CONTENT | QuestionnaireResponseHeaderReturnMessageContent | ✅ |
+| RETURNED_BY | QuestionnaireResponseHeaderReturnedBy | ✅ |
+| RETURNED_DATE | QuestionnaireResponseHeaderReturnedDate | ✅ |
+| SUBMISSION_DATE | QuestionnaireResponseHeaderSubmissionDate | ✅ |
+| SUBMITTED_BY | QuestionnaireResponseHeaderSubmittedBy | ✅ |
+| SUPPLIER_CONTACT_PARTY_ID | QuestionnaireResponseHeaderSupplierContactPartyId | ✅ |
+| SUPPLIER_ID | QuestionnaireResponseHeaderSupplierId | ✅ |
+| SUPPLIER_REG_ID | QuestionnaireResponseHeaderSupplierRegId | ✅ |
+| SUPPLIER_SITE_ID | QuestionnaireResponseHeaderSupplierSiteId | ✅ |
+| SURROG_ENTERED_BY | QuestionnaireResponseHeaderSurrogEnteredBy | ✅ |
+| SURROG_ENTRY_DATE | QuestionnaireResponseHeaderSurrogEntryDate | ✅ |
+| SURROG_RESPONSE_FLAG | QuestionnaireResponseHeaderSurrogResponseFlag | ✅ |
+
+### [[questionnaireresponsespvo|QuestionnaireResponsesPVO]] (PO · BICC: 38/39)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACCEPTANCE_DATE | RespHeaderAcceptanceDate | ✅ |
+| ACCEPTANCE_NOTE | RespHeaderAcceptanceNote | ✅ |
+| ACCEPTED_BY | RespHeaderAcceptedBy | ✅ |
+| CANCELED_BY | RespHeaderCanceledBy | ✅ |
+| CANCELED_DATE | RespHeaderCanceledDate | ✅ |
+| CANCELED_REASON_CODE | RespHeaderCanceledReasonCode | ✅ |
+| CHANGE_REQUEST_ID | RespHeaderChangeRequestId | ✅ |
+| CLOSE_DATE | RespHeaderCloseDate | ✅ |
+| CLOSED_BY | RespHeaderClosedBy | — |
+| CR_OUTCOME_CODE | RespHeaderCrOutcomeCode | ✅ |
+| CREATED_BY | RespHeaderCreatedBy | ✅ |
+| CREATION_DATE | RespHeaderCreationDate | ✅ |
+| INITIATIVE_ID | RespHeaderInitiativeId | ✅ |
+| INITIATIVE_SUPP_CONTACT_ID | RespHeaderInitiativeSuppContactId | ✅ |
+| INTERNAL_RESPONDENT_ID | RespHeaderInternalRespondentId | ✅ |
+| LAST_UPDATE_DATE | RespHeaderLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | RespHeaderLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | RespHeaderLastUpdatedBy | ✅ |
+| MERGE_REQUEST_ID | RespHeaderMergeRequestId | ✅ |
+| OBJECT_VERSION_NUMBER | RespHeaderObjectVersionNumber | ✅ |
+| PRC_BU_ID | RespHeaderPrcBuId | ✅ |
+| QUESTNAIRE_ID | RespHeaderQuestnaireId | ✅ |
+| QUESTNAIRE_RESP_HEADER_ID | RespHeaderQuestnaireRespHeaderId | ✅ |
+| RECENT_NOTIFICATION_FLAG | RespHeaderRecentNotificationFlag | ✅ |
+| REQUEST_ERROR_REASON | RespHeaderRequestErrorReason | ✅ |
+| REQUEST_ID | RespHeaderRequestId | ✅ |
+| RESPONSE_STATUS | RespHeaderResponseStatus | ✅ |
+| RETURN_MESSAGE_CONTENT | RespHeaderReturnMessageContent | ✅ |
+| RETURNED_BY | RespHeaderReturnedBy | ✅ |
+| RETURNED_DATE | RespHeaderReturnedDate | ✅ |
+| SUBMISSION_DATE | RespHeaderSubmissionDate | ✅ |
+| SUBMITTED_BY | RespHeaderSubmittedBy | ✅ |
+| SUPPLIER_CONTACT_PARTY_ID | RespHeaderSupplierContactPartyId | ✅ |
+| SUPPLIER_ID | RespHeaderSupplierId | ✅ |
+| SUPPLIER_REG_ID | RespHeaderSupplierRegId | ✅ |
+| SUPPLIER_SITE_ID | RespHeaderSupplierSiteId | ✅ |
+| SURROG_ENTERED_BY | RespHeaderSurrogEnteredBy | ✅ |
+| SURROG_ENTRY_DATE | RespHeaderSurrogEntryDate | ✅ |
+| SURROG_RESPONSE_FLAG | RespHeaderSurrogResponseFlag | ✅ |
+
+### [[questionnaireresponsevaluespvo|QuestionnaireResponseValuesPVO]] (PO · BICC: 38/39)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACCEPTANCE_DATE | RespHeaderAcceptanceDate | ✅ |
+| ACCEPTANCE_NOTE | RespHeaderAcceptanceNote | ✅ |
+| ACCEPTED_BY | RespHeaderAcceptedBy | ✅ |
+| CANCELED_BY | RespHeaderCanceledBy | ✅ |
+| CANCELED_DATE | RespHeaderCanceledDate | ✅ |
+| CANCELED_REASON_CODE | RespHeaderCanceledReasonCode | ✅ |
+| CHANGE_REQUEST_ID | RespHeaderChangeRequestId | ✅ |
+| CLOSE_DATE | RespHeaderCloseDate | ✅ |
+| CLOSED_BY | RespHeaderClosedBy | — |
+| CR_OUTCOME_CODE | RespHeaderCrOutcomeCode | ✅ |
+| CREATED_BY | RespHeaderCreatedBy | ✅ |
+| CREATION_DATE | RespHeaderCreationDate | ✅ |
+| INITIATIVE_ID | RespHeaderInitiativeId | ✅ |
+| INITIATIVE_SUPP_CONTACT_ID | RespHeaderInitiativeSuppContactId | ✅ |
+| INTERNAL_RESPONDENT_ID | RespHeaderInternalRespondentId | ✅ |
+| LAST_UPDATE_DATE | RespHeaderLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | RespHeaderLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | RespHeaderLastUpdatedBy | ✅ |
+| MERGE_REQUEST_ID | RespHeaderMergeRequestId | ✅ |
+| OBJECT_VERSION_NUMBER | RespHeaderObjectVersionNumber | ✅ |
+| PRC_BU_ID | RespHeaderPrcBuId | ✅ |
+| QUESTNAIRE_ID | RespHeaderQuestnaireId | ✅ |
+| QUESTNAIRE_RESP_HEADER_ID | RespHeaderQuestnaireRespHeaderId | ✅ |
+| RECENT_NOTIFICATION_FLAG | RespHeaderRecentNotificationFlag | ✅ |
+| REQUEST_ERROR_REASON | RespHeaderRequestErrorReason | ✅ |
+| REQUEST_ID | RespHeaderRequestId | ✅ |
+| RESPONSE_STATUS | RespHeaderResponseStatus | ✅ |
+| RETURN_MESSAGE_CONTENT | RespHeaderReturnMessageContent | ✅ |
+| RETURNED_BY | RespHeaderReturnedBy | ✅ |
+| RETURNED_DATE | RespHeaderReturnedDate | ✅ |
+| SUBMISSION_DATE | RespHeaderSubmissionDate | ✅ |
+| SUBMITTED_BY | RespHeaderSubmittedBy | ✅ |
+| SUPPLIER_CONTACT_PARTY_ID | RespHeaderSupplierContactPartyId | ✅ |
+| SUPPLIER_ID | RespHeaderSupplierId | ✅ |
+| SUPPLIER_REG_ID | RespHeaderSupplierRegId | ✅ |
+| SUPPLIER_SITE_ID | RespHeaderSupplierSiteId | ✅ |
+| SURROG_ENTERED_BY | RespHeaderSurrogEnteredBy | ✅ |
+| SURROG_ENTRY_DATE | RespHeaderSurrogEntryDate | ✅ |
+| SURROG_RESPONSE_FLAG | RespHeaderSurrogResponseFlag | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — Supplier Qualification Management](https://docs.oracle.com/en/cloud/saas/procurement/25a/oedmf/)

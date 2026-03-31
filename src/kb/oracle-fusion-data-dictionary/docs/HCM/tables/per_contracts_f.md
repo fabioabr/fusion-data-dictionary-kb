@@ -114,6 +114,88 @@ WHERE  pcf.PERSON_ID = :p_person_id
 - Integra-se com payroll para regras específicas por tipo de contrato.
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[contractpvo|ContractPVO]] (HCM · BICC: 33/34)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ASSIGNMENT_ID | ContractPEOAssignmentId | ✅ |
+| BUSINESS_GROUP_ID | ContractPEOBusinessGroupId | ✅ |
+| CONTRACT_END_DATE | ContractPEOContractEndDate | ✅ |
+| CONTRACT_ID | ContractId | ✅ |
+| CONTRACT_NUMBER | ContractPEOContractNumber | ✅ |
+| CONTRACTUAL_JOB_TITLE | ContractPEOContractualJobTitle | ✅ |
+| CREATED_BY | ContractPEOCreatedBy | ✅ |
+| CREATION_DATE | ContractPEOCreationDate | ✅ |
+| DESCRIPTION | ContractPEODescription | ✅ |
+| DOC_STATUS | ContractPEODocStatus | ✅ |
+| DOC_STATUS_CHANGE_DATE | ContractPEODocStatusChangeDate | ✅ |
+| DURATION | ContractPEODuration | ✅ |
+| DURATION_UNITS | ContractPEODurationUnits | ✅ |
+| EFFECTIVE_END_DATE | EffectiveEndDate | ✅ |
+| EFFECTIVE_START_DATE | EffectiveStartDate | ✅ |
+| END_REASON | ContractPEOEndReason | ✅ |
+| EXTENSION_PERIOD | ContractPEOExtensionPeriod | ✅ |
+| EXTENSION_PERIOD_UNITS | ContractPEOExtensionPeriodUnits | ✅ |
+| EXTENSION_REASON | ContractPEOExtensionReason | ✅ |
+| LAST_UPDATE_DATE | ContractPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ContractPEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | ContractPEOLastUpdatedBy | ✅ |
+| LEGISLATION_CODE | ContractPEOLegislationCode | — |
+| NUMBER_OF_EXTENSIONS | ContractPEONumberOfExtensions | ✅ |
+| OBJECT_VERSION_NUMBER | ContractPEOObjectVersionNumber | ✅ |
+| PARTIES | ContractPEOParties | ✅ |
+| PERIOD_OF_SERVICE_ID | ContractPEOPeriodOfServiceId | ✅ |
+| PERSON_ID | ContractPEOPersonId | ✅ |
+| REFERENCE | ContractPEOReference | ✅ |
+| START_REASON | ContractPEOStartReason | ✅ |
+| STATUS | ContractPEOStatus | ✅ |
+| STATUS_REASON | ContractPEOStatusReason | ✅ |
+| TYPE | ContractPEOType | ✅ |
+| WORK_TERMS_TYPE | ContractPEOWorkTermsType | ✅ |
+
+### [[contractpvoviewall|ContractPVOViewAll]] (HCM · BICC: 7/34)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ASSIGNMENT_ID | ContractPEOAssignmentId | — |
+| BUSINESS_GROUP_ID | ContractPEOBusinessGroupId | — |
+| CONTRACT_END_DATE | ContractPEOContractEndDate | — |
+| CONTRACT_ID | ContractId | ✅ |
+| CONTRACT_NUMBER | ContractPEOContractNumber | — |
+| CONTRACTUAL_JOB_TITLE | ContractPEOContractualJobTitle | — |
+| CREATED_BY | ContractPEOCreatedBy | — |
+| CREATION_DATE | ContractPEOCreationDate | — |
+| DESCRIPTION | ContractPEODescription | ✅ |
+| DOC_STATUS | ContractPEODocStatus | — |
+| DOC_STATUS_CHANGE_DATE | ContractPEODocStatusChangeDate | — |
+| DURATION | ContractPEODuration | — |
+| DURATION_UNITS | ContractPEODurationUnits | — |
+| EFFECTIVE_END_DATE | EffectiveEndDate | ✅ |
+| EFFECTIVE_START_DATE | EffectiveStartDate | ✅ |
+| END_REASON | ContractPEOEndReason | — |
+| EXTENSION_PERIOD | ContractPEOExtensionPeriod | — |
+| EXTENSION_PERIOD_UNITS | ContractPEOExtensionPeriodUnits | — |
+| EXTENSION_REASON | ContractPEOExtensionReason | — |
+| LAST_UPDATE_DATE | ContractPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ContractPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | ContractPEOLastUpdatedBy | — |
+| LEGISLATION_CODE | ContractPEOLegislationCode | — |
+| NUMBER_OF_EXTENSIONS | ContractPEONumberOfExtensions | — |
+| OBJECT_VERSION_NUMBER | ContractPEOObjectVersionNumber | — |
+| PARTIES | ContractPEOParties | — |
+| PERIOD_OF_SERVICE_ID | ContractPEOPeriodOfServiceId | — |
+| PERSON_ID | ContractPEOPersonId | — |
+| REFERENCE | ContractPEOReference | — |
+| START_REASON | ContractPEOStartReason | — |
+| STATUS | ContractPEOStatus | ✅ |
+| STATUS_REASON | ContractPEOStatusReason | — |
+| TYPE | ContractPEOType | ✅ |
+| WORK_TERMS_TYPE | ContractPEOWorkTermsType | — |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — PER_CONTRACTS_F](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/percontractsf.html)

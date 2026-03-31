@@ -103,3 +103,39 @@ WHERE  st.TEMPLATE_STATUS = 'ACTIVE';
 
 - [Oracle Docs -- IRC_CX_SITE_TEMPLATES_B](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/irccxsitetemplatesb.html)
 - [[hcm-module-data-dictionary]] -- Dossie do modulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[careersitepagepvo|CareerSitePagePVO]] (HCM · BICC: 2/11)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | SiteTemplateBPEOCreatedBy | — |
+| CREATION_DATE | SiteTemplateBPEOCreationDate | — |
+| IS_ACTIVE_FLAG | SiteTemplateBPEOIsActiveFlag | — |
+| LAST_UPDATE_DATE | SiteTemplateBPEOLastUpdateDate | — |
+| LAST_UPDATE_LOGIN | SiteTemplateBPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | SiteTemplateBPEOLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | SiteTemplateBPEOObjectVersionNumber | — |
+| SITE_NUMBER | SiteTemplateBPEOSiteNumber | — |
+| SPLASH_PAGE_NUMBER | SiteTemplateBPEOSplashPageNumber | — |
+| TEMPLATE_ID | SiteTemplateBPEOTemplateId | ✅ |
+| TEMPLATE_NUMBER | SiteTemplateBPEOTemplateNumber | ✅ |
+
+### [[careersitepvo|CareerSitePVO]] (HCM · BICC: 2/11)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | SiteTemplatePEOCreatedBy | — |
+| CREATION_DATE | SiteTemplatePEOCreationDate | — |
+| IS_ACTIVE_FLAG | SiteTemplatePEOIsActiveFlag | — |
+| LAST_UPDATE_DATE | SiteTemplatePEOLastUpdateDate | — |
+| LAST_UPDATE_LOGIN | SiteTemplatePEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | SiteTemplatePEOLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | SiteTemplatePEOObjectVersionNumber | — |
+| SITE_NUMBER | SiteTemplatePEOSiteNumber | — |
+| SPLASH_PAGE_NUMBER | SiteTemplatePEOSplashPageNumber | — |
+| TEMPLATE_ID | SiteTemplatePEOTemplateId | ✅ |
+| TEMPLATE_NUMBER | SiteTemplatePEOTemplateNumber | ✅ |

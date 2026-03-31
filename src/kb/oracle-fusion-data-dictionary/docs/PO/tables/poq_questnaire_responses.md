@@ -134,6 +134,73 @@ WHERE  qr.PASS_FAIL_FLAG = 'F'
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[questionnaireresponseextractpvo|QuestionnaireResponseExtractPVO]] (PO · BICC: 16/16)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACCEPTANCE_NOTE | AcceptanceNote | ✅ |
+| CREATED_BY | CreatedBy | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| FAILED_POZ_VALIDATION_FLAG | FailedPozValidationFlag | ✅ |
+| HAS_NEWER_RESPONSE_FLAG | HasNewerResponseFlag | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | LastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | ✅ |
+| QUESTION_DISPLAYED_FLAG | QuestionDisplayedFlag | ✅ |
+| QUESTION_ID | QuestionId | ✅ |
+| QUESTNAIRE_QUESTION_ID | QuestnaireQuestionId | ✅ |
+| QUESTNAIRE_RESP_HEADER_ID | QuestnaireRespHeaderId | ✅ |
+| QUESTNAIRE_RESP_SECTION_ID | QuestnaireRespSectionId | ✅ |
+| QUESTNAIRE_RESPONSE_ID | QuestnaireResponseId | ✅ |
+| RESPONSE_COMMENTS | ResponseComments | ✅ |
+
+### [[questionnaireresponsespvo|QuestionnaireResponsesPVO]] (PO · BICC: 16/16)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACCEPTANCE_NOTE | QuestionnaireResponseAcceptanceNote | ✅ |
+| CREATED_BY | QuestionnaireResponseCreatedBy | ✅ |
+| CREATION_DATE | QuestionnaireResponseCreationDate | ✅ |
+| FAILED_POZ_VALIDATION_FLAG | QuestionnaireResponseFailedPozValidationFlag | ✅ |
+| HAS_NEWER_RESPONSE_FLAG | QuestionnaireResponseHasNewerResponseFlag | ✅ |
+| LAST_UPDATE_DATE | QuestionnaireResponseLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | QuestionnaireResponseLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | QuestionnaireResponseLastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | QuestionnaireResponseObjectVersionNumber | ✅ |
+| QUESTION_DISPLAYED_FLAG | QuestionnaireResponseQuestionDisplayedFlag | ✅ |
+| QUESTION_ID | QuestionnaireResponseQuestionId | ✅ |
+| QUESTNAIRE_QUESTION_ID | QuestionnaireResponseQuestnaireQuestionId | ✅ |
+| QUESTNAIRE_RESP_HEADER_ID | QuestionnaireResponseQuestnaireRespHeaderId | ✅ |
+| QUESTNAIRE_RESP_SECTION_ID | QuestionnaireResponseQuestnaireRespSectionId | ✅ |
+| QUESTNAIRE_RESPONSE_ID | QuestnaireResponseId | ✅ |
+| RESPONSE_COMMENTS | QuestionnaireResponseResponseComments | ✅ |
+
+### [[questionnaireresponsevaluespvo|QuestionnaireResponseValuesPVO]] (PO · BICC: 16/16)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACCEPTANCE_NOTE | QuestRespAcceptanceNote | ✅ |
+| CREATED_BY | QuestRespCreatedBy | ✅ |
+| CREATION_DATE | QuestRespCreationDate | ✅ |
+| FAILED_POZ_VALIDATION_FLAG | QuestRespFailedPozValidationFlag | ✅ |
+| HAS_NEWER_RESPONSE_FLAG | QuestRespHasNewerResponseFlag | ✅ |
+| LAST_UPDATE_DATE | QuestRespLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | QuestRespLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | QuestRespLastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | QuestRespObjectVersionNumber | ✅ |
+| QUESTION_DISPLAYED_FLAG | QuestRespQuestionDisplayedFlag | ✅ |
+| QUESTION_ID | QuestRespQuestionId | ✅ |
+| QUESTNAIRE_QUESTION_ID | QuestRespQuestnaireQuestionId | ✅ |
+| QUESTNAIRE_RESP_HEADER_ID | QuestRespQuestnaireRespHeaderId | ✅ |
+| QUESTNAIRE_RESP_SECTION_ID | QuestRespQuestnaireRespSectionId | ✅ |
+| QUESTNAIRE_RESPONSE_ID | QuestRespQuestnaireResponseId | ✅ |
+| RESPONSE_COMMENTS | QuestRespResponseComments | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — Supplier Qualification Management](https://docs.oracle.com/en/cloud/saas/procurement/25a/oedmf/)

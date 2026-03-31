@@ -103,6 +103,59 @@ ORDER BY t.EXPIRATION_DATE;
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[hcmapprovalstaskp1|HcmApprovalsTaskP1]] (AP · BICC: 18/44)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTIVE | HcmApprovalsTaskPEOActive | — |
+| ARM_PROCESS_CREATED_BY | HcmApprovalsTaskPEOArmProcessCreatedBy | — |
+| ARM_PROCESS_CREATION_DATE | HcmApprovalsTaskPEOArmProcessCreationDate | — |
+| ARM_PROCESS_LAST_UPDATE_DATE | HcmApprovalsTaskPEOArmProcessLastUpdateDate | ✅ |
+| ARM_PROCESS_LAST_UPDATE_LOGIN | HcmApprovalsTaskPEOArmProcessLastUpdateLogin | — |
+| ARM_PROCESS_LAST_UPDATED_BY | HcmApprovalsTaskPEOArmProcessLastUpdatedBy | — |
+| ARM_PROCESS_OBJ_VERSION_NUMBER | HcmApprovalsTaskPEOArmProcessObjVersionNumber | — |
+| CATEGORY | HcmApprovalsTaskPEOCategory | ✅ |
+| CATEGORY_CODE | HcmApprovalsTaskPEOCategoryCode | ✅ |
+| COMPLETED_BY | HcmApprovalsTaskPEOCompletedBy | ✅ |
+| COMPLETED_DATE | HcmApprovalsTaskPEOCompletedDate | — |
+| COMPOSITE_ID | HcmApprovalsTaskPEOCompositeId | — |
+| COMPOSITE_NAME | HcmApprovalsTaskPEOCompositeName | — |
+| COMPOSITE_VERSION | HcmApprovalsTaskPEOCompositeVersion | — |
+| DESCRIPTION | HcmApprovalsTaskPEODescription | — |
+| DOMAIN | HcmApprovalsTaskPEODomain | — |
+| DUE_DATE | HcmApprovalsTaskPEODueDate | ✅ |
+| ENTERPRISE_ID | HcmApprovalsTaskPEOEnterpriseId | — |
+| EXPIRATION_DATE | HcmApprovalsTaskPEOExpirationDate | ✅ |
+| IDENTIFICATION_KEY | HcmApprovalsTaskPEOIdentificationKey | ✅ |
+| INITIATED_BY | HcmApprovalsTaskPEOInitiatedBy | ✅ |
+| INITIATED_DATE | HcmApprovalsTaskPEOInitiatedDate | — |
+| MODULE_ID | HcmApprovalsTaskPEOModuleId | — |
+| NAME | HcmApprovalsTaskPEOName | ✅ |
+| OBJECT_ID | HcmApprovalsTaskPEOObjectId | ✅ |
+| OUTCOME | HcmApprovalsTaskPEOOutcome | ✅ |
+| OUTCOME_CODE | HcmApprovalsTaskPEOOutcomeCode | ✅ |
+| PARENT_TASK_ID | HcmApprovalsTaskPEOParentTaskId | — |
+| PROCESS_ID | HcmApprovalsTaskPEOProcessId | — |
+| ROOT_TASK_ID | HcmApprovalsTaskPEORootTaskId | — |
+| RULE_FILE_NAME | HcmApprovalsTaskPEORuleFileName | — |
+| STATUS_CODE | HcmApprovalsTaskPEOStatusCode | ✅ |
+| TASK_CREATED_BY | HcmApprovalsTaskPEOTaskCreatedBy | — |
+| TASK_CREATION_DATE | HcmApprovalsTaskPEOTaskCreationDate | — |
+| TASK_DEFINITION_NAME | HcmApprovalsTaskPEOTaskDefinitionName | ✅ |
+| TASK_FILE_NAME | HcmApprovalsTaskPEOTaskFileName | — |
+| TASK_ID | HcmApprovalsTaskPEOTaskId | ✅ |
+| TASK_LAST_UPDATE_DATE | HcmApprovalsTaskPEOTaskLastUpdateDate | ✅ |
+| TASK_LAST_UPDATE_LOGIN | HcmApprovalsTaskPEOTaskLastUpdateLogin | — |
+| TASK_LAST_UPDATED_BY | HcmApprovalsTaskPEOTaskLastUpdatedBy | — |
+| TASK_NUMBER | HcmApprovalsTaskPEOTaskNumber | ✅ |
+| TASK_QNAME | HcmApprovalsTaskPEOTaskQname | — |
+| TASK_TITLE | HcmApprovalsTaskPEOTaskTitle | ✅ |
+| TXN_MODULE_IDENTIFIER | HcmApprovalsTaskPEOTxnModuleIdentifier | — |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Fusion HCM Tables and Views](https://docs.oracle.com/en/cloud/saas/human-resources/25a/)

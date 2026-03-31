@@ -135,3 +135,122 @@ ORDER BY score_total DESC;
 
 - [Oracle Docs — PON_REQUIREMENT_SCORES](https://docs.oracle.com/en/cloud/saas/procurement/25a/oedmf/ponrequirementscores.html)
 - [[po-module-data-dictionary]] — Dossiê do módulo Procurement
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[negotiationrequirementandscoringpvo|NegotiationRequirementAndScoringPVO]] (PO · BICC: 17/50)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACC_RESPONSE_ID | NegotiationRequirementScoreAccResponseId | — |
+| ACC_RESPONSE_ID | ParentRequirementScoreAccResponseId | — |
+| ALLOW_ATTACHMENT_CODE | NegotiationRequirementScoreAllowAttachmentCode | ✅ |
+| ALLOW_ATTACHMENT_CODE | ParentRequirementScoreAllowAttachmentCode | — |
+| AUCTION_HEADER_ID | NegotiationRequirementScoreAuctionHeaderId | — |
+| AUCTION_HEADER_ID | ParentRequirementScoreAuctionHeaderId | — |
+| CREATED_BY | NegotiationRequirementScoreCreatedBy | — |
+| CREATED_BY | ParentRequirementScoreCreatedBy | — |
+| CREATION_DATE | NegotiationRequirementScoreCreationDate | — |
+| CREATION_DATE | ParentRequirementScoreCreationDate | — |
+| DATE_FROM_RANGE | NegotiationRequirementScoreDateFromRange | ✅ |
+| DATE_FROM_RANGE | ParentRequirementScoreDateFromRange | — |
+| DATE_TO_RANGE | NegotiationRequirementScoreDateToRange | ✅ |
+| DATE_TO_RANGE | ParentRequirementScoreDateToRange | — |
+| DATETIME_FROM_RANGE | NegotiationRequirementScoreDatetimeFromRange | ✅ |
+| DATETIME_FROM_RANGE | ParentRequirementScoreDatetimeFromRange | — |
+| DATETIME_TO_RANGE | NegotiationRequirementScoreDatetimeToRange | ✅ |
+| DATETIME_TO_RANGE | ParentRequirementScoreDatetimeToRange | — |
+| DISP_SEQ_NUMBER | NegotiationRequirementScoreDispSeqNumber | ✅ |
+| DISP_SEQ_NUMBER | ParentRequirementScoreDispSeqNumber | ✅ |
+| IS_DEFAULT_SCORE_ROW | NegotiationRequirementScoreIsDefaultScoreRow | ✅ |
+| IS_DEFAULT_SCORE_ROW | ParentRequirementScoreIsDefaultScoreRow | — |
+| LAST_UPDATE_DATE | NegotiationRequirementScoreLastUpdateDate | ✅ |
+| LAST_UPDATE_DATE | ParentRequirementScoreLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | NegotiationRequirementScoreLastUpdateLogin | — |
+| LAST_UPDATE_LOGIN | ParentRequirementScoreLastUpdateLogin | — |
+| LAST_UPDATED_BY | NegotiationRequirementScoreLastUpdatedBy | — |
+| LAST_UPDATED_BY | ParentRequirementScoreLastUpdatedBy | — |
+| NUMBER_FROM_RANGE | NegotiationRequirementScoreNumberFromRange | ✅ |
+| NUMBER_FROM_RANGE | ParentRequirementScoreNumberFromRange | — |
+| NUMBER_TO_RANGE | NegotiationRequirementScoreNumberToRange | ✅ |
+| NUMBER_TO_RANGE | ParentRequirementScoreNumberToRange | — |
+| OBJECT_VERSION_NUMBER | NegotiationRequirementScoreObjectVersionNumber | — |
+| OBJECT_VERSION_NUMBER | ParentRequirementScoreObjectVersionNumber | — |
+| PREVIOUS_SCORE_ID | NegotiationRequirementScorePreviousScoreId | — |
+| PREVIOUS_SCORE_ID | ParentRequirementScorePreviousScoreId | — |
+| REQUIREMENT_ID | NegotiationRequirementScoreRequirementId | — |
+| REQUIREMENT_ID | ParentRequirementScoreRequirementId | — |
+| SCORE | NegotiationRequirementScoreScore | ✅ |
+| SCORE | ParentRequirementScoreScore | — |
+| SCORE_DISPLAY_NUMBER | NegotiationRequirementScoreScoreDisplayNumber | ✅ |
+| SCORE_DISPLAY_NUMBER | ParentRequirementScoreScoreDisplayNumber | — |
+| SCORE_ID | ParentRequirementScoreScoreId | — |
+| SCORE_ID | ScoreId | ✅ |
+| SCORE_LEVEL | NegotiationRequirementScoreScoreLevel | — |
+| SCORE_LEVEL | ParentRequirementScoreScoreLevel | — |
+| TARGET_FLAG | NegotiationRequirementScoreTargetFlag | ✅ |
+| TARGET_FLAG | ParentRequirementScoreTargetFlag | — |
+| TEXT_VALUE | NegotiationRequirementScoreTextValue | ✅ |
+| TEXT_VALUE | ParentRequirementScoreTextValue | — |
+
+### [[negotiationrequirementpvo|NegotiationRequirementPVO]] (PO · BICC: 2/25)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACC_RESPONSE_ID | ParentRequirementScoreAccResponseId | — |
+| ALLOW_ATTACHMENT_CODE | ParentRequirementScoreAllowAttachmentCode | — |
+| AUCTION_HEADER_ID | ParentRequirementScoreAuctionHeaderId | — |
+| CREATED_BY | ParentRequirementScoreCreatedBy | — |
+| CREATION_DATE | ParentRequirementScoreCreationDate | — |
+| DATE_FROM_RANGE | ParentRequirementScoreDateFromRange | — |
+| DATE_TO_RANGE | ParentRequirementScoreDateToRange | — |
+| DATETIME_FROM_RANGE | ParentRequirementScoreDatetimeFromRange | — |
+| DATETIME_TO_RANGE | ParentRequirementScoreDatetimeToRange | — |
+| DISP_SEQ_NUMBER | ParentRequirementScoreDispSeqNumber | ✅ |
+| IS_DEFAULT_SCORE_ROW | ParentRequirementScoreIsDefaultScoreRow | — |
+| LAST_UPDATE_DATE | ParentRequirementScoreLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ParentRequirementScoreLastUpdateLogin | — |
+| LAST_UPDATED_BY | ParentRequirementScoreLastUpdatedBy | — |
+| NUMBER_FROM_RANGE | ParentRequirementScoreNumberFromRange | — |
+| NUMBER_TO_RANGE | ParentRequirementScoreNumberToRange | — |
+| OBJECT_VERSION_NUMBER | ParentRequirementScoreObjectVersionNumber | — |
+| PREVIOUS_SCORE_ID | ParentRequirementScorePreviousScoreId | — |
+| REQUIREMENT_ID | ParentRequirementScoreRequirementId | — |
+| SCORE | ParentRequirementScoreScore | — |
+| SCORE_DISPLAY_NUMBER | ParentRequirementScoreScoreDisplayNumber | — |
+| SCORE_ID | ParentRequirementScoreScoreId | — |
+| SCORE_LEVEL | ParentRequirementScoreScoreLevel | — |
+| TARGET_FLAG | ParentRequirementScoreTargetFlag | — |
+| TEXT_VALUE | ParentRequirementScoreTextValue | — |
+
+### [[negotiationresprequirementandvaluespvo|NegotiationRespRequirementAndValuesPVO]] (PO · BICC: 3/25)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACC_RESPONSE_ID | NegotiationScoresAccResponseId | — |
+| ALLOW_ATTACHMENT_CODE | NegotiationScoresAllowAttachmentCode1 | — |
+| AUCTION_HEADER_ID | NegotiationScoresAuctionHeaderId3 | — |
+| CREATED_BY | NegotiationScoresCreatedBy3 | — |
+| CREATION_DATE | NegotiationScoresCreationDate3 | — |
+| DATE_FROM_RANGE | NegotiationScoresDateFromRange | — |
+| DATE_TO_RANGE | NegotiationScoresDateToRange | — |
+| DATETIME_FROM_RANGE | NegotiationScoresDatetimeFromRange | — |
+| DATETIME_TO_RANGE | NegotiationScoresDatetimeToRange | — |
+| DISP_SEQ_NUMBER | NegotiationScoresDispSeqNumber2 | — |
+| IS_DEFAULT_SCORE_ROW | NegotiationScoresIsDefaultScoreRow | — |
+| LAST_UPDATE_DATE | NegotiationScoresLastUpdateDate3 | ✅ |
+| LAST_UPDATE_LOGIN | NegotiationScoresLastUpdateLogin3 | — |
+| LAST_UPDATED_BY | NegotiationScoresLastUpdatedBy3 | — |
+| NUMBER_FROM_RANGE | NegotiationScoresNumberFromRange | — |
+| NUMBER_TO_RANGE | NegotiationScoresNumberToRange | — |
+| OBJECT_VERSION_NUMBER | NegotiationScoresObjectVersionNumber3 | — |
+| PREVIOUS_SCORE_ID | NegotiationScoresPreviousScoreId | — |
+| REQUIREMENT_ID | NegotiationScoresRequirementId2 | — |
+| SCORE | NegotiationScoresScore | — |
+| SCORE_DISPLAY_NUMBER | NegotiationScoresScoreDisplayNumber | — |
+| SCORE_ID | NegotiationScoresScoreId2 | ✅ |
+| SCORE_LEVEL | NegotiationScoresScoreLevel | — |
+| TARGET_FLAG | NegotiationScoresTargetFlag | — |
+| TEXT_VALUE | NegotiationScoresTextValue2 | ✅ |

@@ -107,3 +107,23 @@ WHERE  csr.CONTENT_ITEM_ID = :p_content_item_id;
 
 - [Oracle Docs — HRT_CONTENT_SOURCE_RLATS](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/hrtcontentsourcerlats.html)
 - [[hcm-module-data-dictionary]] — Dossie do modulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[contentsourcerelpvo|ContentSourceRelPVO]] (HCM · BICC: 3/11)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | BusinessGroupId | ✅ |
+| CONTENT_SOURCE_RLAT_ID | ContentSourceRlatId | ✅ |
+| CONTENT_TYPE_ID | ContentTypeId | — |
+| CREATED_BY | CreatedBy | — |
+| CREATION_DATE | CreationDate | — |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | — |
+| LAST_UPDATED_BY | LastUpdatedBy | — |
+| MODULE_ID | ModuleId | — |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | — |
+| SOURCE_ID | SourceId | — |

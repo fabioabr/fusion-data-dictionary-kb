@@ -60,3 +60,262 @@ updated_at: 2026-03-26
 ## 📎 Uso Típico
 
 (a ser preenchido na etapa 03)
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[billingandrevenuebuusagepvo|BillingAndRevenueBUUsagePVO]] (OTHER · BICC: 10/10)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_FUNCTION_CODE | BusinessFunctionBusinessFunctionCode | ✅ |
+| BUSINESS_FUNCTION_ID | BusinessFunctionBusinessFunctionId | ✅ |
+| CREATED_BY | BusinessFunctionCreatedBy | ✅ |
+| CREATION_DATE | BusinessFunctionCreationDate | ✅ |
+| GENERATE_FIN_TXN_FLAG | BusinessFunctionGenerateFinTxnFlag | ✅ |
+| LAST_UPDATE_DATE | BusinessFunctionLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | BusinessFunctionLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | BusinessFunctionLastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | BusinessFunctionObjectVersionNumber | ✅ |
+| SETUP_API | BusinessFunctionSetupApi | ✅ |
+
+### [[businessfunctionextractpvo|BusinessFunctionExtractPVO]] (OTHER · BICC: 10/10)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_FUNCTION_CODE | BusinessFunctionBusinessFunctionCode | ✅ |
+| BUSINESS_FUNCTION_ID | BusinessFunctionBusinessFunctionId | ✅ |
+| CREATED_BY | BusinessFunctionCreatedBy | ✅ |
+| CREATION_DATE | BusinessFunctionCreationDate | ✅ |
+| GENERATE_FIN_TXN_FLAG | BusinessFunctionGenerateFinTxnFlag | ✅ |
+| LAST_UPDATE_DATE | BusinessFunctionLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | BusinessFunctionLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | BusinessFunctionLastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | BusinessFunctionObjectVersionNumber | ✅ |
+| SETUP_API | BusinessFunctionSetupApi | ✅ |
+
+### [[businessunitusagepvo|BusinessUnitUsagePVO]] (OTHER · BICC: 2/10)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_FUNCTION_CODE | BusinessFunctionBusinessFunctionCode | ✅ |
+| BUSINESS_FUNCTION_ID | BusinessFunctionBusinessFunctionId | — |
+| CREATED_BY | BusinessFunctionCreatedBy | — |
+| CREATION_DATE | BusinessFunctionCreationDate | — |
+| GENERATE_FIN_TXN_FLAG | BusinessFunctionGenerateFinTxnFlag | — |
+| LAST_UPDATE_DATE | BusinessFunctionLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | BusinessFunctionLastUpdateLogin | — |
+| LAST_UPDATED_BY | BusinessFunctionLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | BusinessFunctionObjectVersionNumber | — |
+| SETUP_API | BusinessFunctionSetupApi | — |
+
+### [[collectionbuusagepvo|CollectionBUUsagePVO]] (OTHER · BICC: 10/10)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_FUNCTION_CODE | BusinessFunctionBusinessFunctionCode | ✅ |
+| BUSINESS_FUNCTION_ID | BusinessFunctionBusinessFunctionId | ✅ |
+| CREATED_BY | BusinessFunctionCreatedBy | ✅ |
+| CREATION_DATE | BusinessFunctionCreationDate | ✅ |
+| GENERATE_FIN_TXN_FLAG | BusinessFunctionGenerateFinTxnFlag | ✅ |
+| LAST_UPDATE_DATE | BusinessFunctionLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | BusinessFunctionLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | BusinessFunctionLastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | BusinessFunctionObjectVersionNumber | ✅ |
+| SETUP_API | BusinessFunctionSetupApi | ✅ |
+
+### [[customercontractbuusagepvo|CustomerContractBUUsagePVO]] (OTHER · BICC: 10/10)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_FUNCTION_CODE | BusinessFunctionBusinessFunctionCode | ✅ |
+| BUSINESS_FUNCTION_ID | BusinessFunctionBusinessFunctionId | ✅ |
+| CREATED_BY | BusinessFunctionCreatedBy | ✅ |
+| CREATION_DATE | BusinessFunctionCreationDate | ✅ |
+| GENERATE_FIN_TXN_FLAG | BusinessFunctionGenerateFinTxnFlag | ✅ |
+| LAST_UPDATE_DATE | BusinessFunctionLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | BusinessFunctionLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | BusinessFunctionLastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | BusinessFunctionObjectVersionNumber | ✅ |
+| SETUP_API | BusinessFunctionSetupApi | ✅ |
+
+### [[customerpaymentsbuusagepvo|CustomerPaymentsBUUsagePVO]] (OTHER · BICC: 10/10)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_FUNCTION_CODE | BusinessFunctionBusinessFunctionCode | ✅ |
+| BUSINESS_FUNCTION_ID | BusinessFunctionBusinessFunctionId | ✅ |
+| CREATED_BY | BusinessFunctionCreatedBy | ✅ |
+| CREATION_DATE | BusinessFunctionCreationDate | ✅ |
+| GENERATE_FIN_TXN_FLAG | BusinessFunctionGenerateFinTxnFlag | ✅ |
+| LAST_UPDATE_DATE | BusinessFunctionLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | BusinessFunctionLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | BusinessFunctionLastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | BusinessFunctionObjectVersionNumber | ✅ |
+| SETUP_API | BusinessFunctionSetupApi | ✅ |
+
+### [[expensebuusagepvo|ExpenseBUUsagePVO]] (OTHER · BICC: 10/10)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_FUNCTION_CODE | BusinessFunctionBusinessFunctionCode | ✅ |
+| BUSINESS_FUNCTION_ID | BusinessFunctionBusinessFunctionId | ✅ |
+| CREATED_BY | BusinessFunctionCreatedBy | ✅ |
+| CREATION_DATE | BusinessFunctionCreationDate | ✅ |
+| GENERATE_FIN_TXN_FLAG | BusinessFunctionGenerateFinTxnFlag | ✅ |
+| LAST_UPDATE_DATE | BusinessFunctionLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | BusinessFunctionLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | BusinessFunctionLastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | BusinessFunctionObjectVersionNumber | ✅ |
+| SETUP_API | BusinessFunctionSetupApi | ✅ |
+
+### [[incentivecompensationbuusagepvo|IncentiveCompensationBUUsagePVO]] (OTHER · BICC: 10/10)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_FUNCTION_CODE | BusinessFunctionBusinessFunctionCode | ✅ |
+| BUSINESS_FUNCTION_ID | BusinessFunctionBusinessFunctionId | ✅ |
+| CREATED_BY | BusinessFunctionCreatedBy | ✅ |
+| CREATION_DATE | BusinessFunctionCreationDate | ✅ |
+| GENERATE_FIN_TXN_FLAG | BusinessFunctionGenerateFinTxnFlag | ✅ |
+| LAST_UPDATE_DATE | BusinessFunctionLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | BusinessFunctionLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | BusinessFunctionLastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | BusinessFunctionObjectVersionNumber | ✅ |
+| SETUP_API | BusinessFunctionSetupApi | ✅ |
+
+### [[materialmanagementbuusagepvo|MaterialManagementBUUsagePVO]] (OTHER · BICC: 10/10)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_FUNCTION_CODE | BusinessFunctionBusinessFunctionCode | ✅ |
+| BUSINESS_FUNCTION_ID | BusinessFunctionBusinessFunctionId | ✅ |
+| CREATED_BY | BusinessFunctionCreatedBy | ✅ |
+| CREATION_DATE | BusinessFunctionCreationDate | ✅ |
+| GENERATE_FIN_TXN_FLAG | BusinessFunctionGenerateFinTxnFlag | ✅ |
+| LAST_UPDATE_DATE | BusinessFunctionLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | BusinessFunctionLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | BusinessFunctionLastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | BusinessFunctionObjectVersionNumber | ✅ |
+| SETUP_API | BusinessFunctionSetupApi | ✅ |
+
+### [[payablesinvoicingbuusagepvo|PayablesInvoicingBUUsagePVO]] (OTHER · BICC: 10/10)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_FUNCTION_CODE | BusinessFunctionBusinessFunctionCode | ✅ |
+| BUSINESS_FUNCTION_ID | BusinessFunctionBusinessFunctionId | ✅ |
+| CREATED_BY | BusinessFunctionCreatedBy | ✅ |
+| CREATION_DATE | BusinessFunctionCreationDate | ✅ |
+| GENERATE_FIN_TXN_FLAG | BusinessFunctionGenerateFinTxnFlag | ✅ |
+| LAST_UPDATE_DATE | BusinessFunctionLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | BusinessFunctionLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | BusinessFunctionLastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | BusinessFunctionObjectVersionNumber | ✅ |
+| SETUP_API | BusinessFunctionSetupApi | ✅ |
+
+### [[payablespaymentsbuusagepvo|PayablesPaymentsBUUsagePVO]] (OTHER · BICC: 10/10)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_FUNCTION_CODE | BusinessFunctionBusinessFunctionCode | ✅ |
+| BUSINESS_FUNCTION_ID | BusinessFunctionBusinessFunctionId | ✅ |
+| CREATED_BY | BusinessFunctionCreatedBy | ✅ |
+| CREATION_DATE | BusinessFunctionCreationDate | ✅ |
+| GENERATE_FIN_TXN_FLAG | BusinessFunctionGenerateFinTxnFlag | ✅ |
+| LAST_UPDATE_DATE | BusinessFunctionLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | BusinessFunctionLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | BusinessFunctionLastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | BusinessFunctionObjectVersionNumber | ✅ |
+| SETUP_API | BusinessFunctionSetupApi | ✅ |
+
+### [[procurementbuusagepvo|ProcurementBUUsagePVO]] (OTHER · BICC: 10/10)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_FUNCTION_CODE | BusinessFunctionBusinessFunctionCode | ✅ |
+| BUSINESS_FUNCTION_ID | BusinessFunctionBusinessFunctionId | ✅ |
+| CREATED_BY | BusinessFunctionCreatedBy | ✅ |
+| CREATION_DATE | BusinessFunctionCreationDate | ✅ |
+| GENERATE_FIN_TXN_FLAG | BusinessFunctionGenerateFinTxnFlag | ✅ |
+| LAST_UPDATE_DATE | BusinessFunctionLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | BusinessFunctionLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | BusinessFunctionLastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | BusinessFunctionObjectVersionNumber | ✅ |
+| SETUP_API | BusinessFunctionSetupApi | ✅ |
+
+### [[procurementcontractbuusagepvo|ProcurementContractBUUsagePVO]] (OTHER · BICC: 10/10)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_FUNCTION_CODE | BusinessFunctionBusinessFunctionCode | ✅ |
+| BUSINESS_FUNCTION_ID | BusinessFunctionBusinessFunctionId | ✅ |
+| CREATED_BY | BusinessFunctionCreatedBy | ✅ |
+| CREATION_DATE | BusinessFunctionCreationDate | ✅ |
+| GENERATE_FIN_TXN_FLAG | BusinessFunctionGenerateFinTxnFlag | ✅ |
+| LAST_UPDATE_DATE | BusinessFunctionLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | BusinessFunctionLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | BusinessFunctionLastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | BusinessFunctionObjectVersionNumber | ✅ |
+| SETUP_API | BusinessFunctionSetupApi | ✅ |
+
+### [[projectaccountingbuusagepvo|ProjectAccountingBUUsagePVO]] (OTHER · BICC: 10/10)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_FUNCTION_CODE | BusinessFunctionBusinessFunctionCode | ✅ |
+| BUSINESS_FUNCTION_ID | BusinessFunctionBusinessFunctionId | ✅ |
+| CREATED_BY | BusinessFunctionCreatedBy | ✅ |
+| CREATION_DATE | BusinessFunctionCreationDate | ✅ |
+| GENERATE_FIN_TXN_FLAG | BusinessFunctionGenerateFinTxnFlag | ✅ |
+| LAST_UPDATE_DATE | BusinessFunctionLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | BusinessFunctionLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | BusinessFunctionLastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | BusinessFunctionObjectVersionNumber | ✅ |
+| SETUP_API | BusinessFunctionSetupApi | ✅ |
+
+### [[receivingbuusagepvo|ReceivingBUUsagePVO]] (OTHER · BICC: 10/10)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_FUNCTION_CODE | BusinessFunctionBusinessFunctionCode | ✅ |
+| BUSINESS_FUNCTION_ID | BusinessFunctionBusinessFunctionId | ✅ |
+| CREATED_BY | BusinessFunctionCreatedBy | ✅ |
+| CREATION_DATE | BusinessFunctionCreationDate | ✅ |
+| GENERATE_FIN_TXN_FLAG | BusinessFunctionGenerateFinTxnFlag | ✅ |
+| LAST_UPDATE_DATE | BusinessFunctionLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | BusinessFunctionLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | BusinessFunctionLastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | BusinessFunctionObjectVersionNumber | ✅ |
+| SETUP_API | BusinessFunctionSetupApi | ✅ |
+
+### [[requisitionbuusagepvo|RequisitionBUUsagePVO]] (OTHER · BICC: 10/10)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_FUNCTION_CODE | BusinessFunctionBusinessFunctionCode | ✅ |
+| BUSINESS_FUNCTION_ID | BusinessFunctionBusinessFunctionId | ✅ |
+| CREATED_BY | BusinessFunctionCreatedBy | ✅ |
+| CREATION_DATE | BusinessFunctionCreationDate | ✅ |
+| GENERATE_FIN_TXN_FLAG | BusinessFunctionGenerateFinTxnFlag | ✅ |
+| LAST_UPDATE_DATE | BusinessFunctionLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | BusinessFunctionLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | BusinessFunctionLastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | BusinessFunctionObjectVersionNumber | ✅ |
+| SETUP_API | BusinessFunctionSetupApi | ✅ |
+
+### [[salesbuusagepvo|SalesBUUsagePVO]] (OTHER · BICC: 10/10)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_FUNCTION_CODE | BusinessFunctionBusinessFunctionCode | ✅ |
+| BUSINESS_FUNCTION_ID | BusinessFunctionBusinessFunctionId | ✅ |
+| CREATED_BY | BusinessFunctionCreatedBy | ✅ |
+| CREATION_DATE | BusinessFunctionCreationDate | ✅ |
+| GENERATE_FIN_TXN_FLAG | BusinessFunctionGenerateFinTxnFlag | ✅ |
+| LAST_UPDATE_DATE | BusinessFunctionLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | BusinessFunctionLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | BusinessFunctionLastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | BusinessFunctionObjectVersionNumber | ✅ |
+| SETUP_API | BusinessFunctionSetupApi | ✅ |

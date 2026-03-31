@@ -93,6 +93,26 @@ WHERE  tl.TEMPLATE_ID = :p_id AND tl.LANGUAGE = USERENV('LANG');
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[dashboardtemplatepvo|DashboardTemplatePVO]] (HCM · BICC: 1/11)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | DashTmpltTLPEOBusinessGroupId | — |
+| CREATED_BY | DashTmpltTLPEOCreatedBy | — |
+| CREATION_DATE | DashTmpltTLPEOCreationDate | — |
+| DASHBOARD_TMPL_ID | DashTmpltTLPEODashboardTmplId | — |
+| LANGUAGE | Language | — |
+| LAST_UPDATE_DATE | DashTmpltTLPEOLastUpdateDate | — |
+| LAST_UPDATE_LOGIN | DashTmpltTLPEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | DashTmpltTLPEOLastUpdatedBy | — |
+| NAME | Name | — |
+| OBJECT_VERSION_NUMBER | DashTmpltTLPEOObjectVersionNumber | — |
+| SOURCE_LANG | SourceLang | — |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Fusion HCM Tables and Views](https://docs.oracle.com/en/cloud/saas/human-resources/25a/)

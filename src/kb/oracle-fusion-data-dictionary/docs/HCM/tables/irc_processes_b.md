@@ -104,3 +104,88 @@ FROM   IRC_PROCESSES_B p WHERE p.PROCESS_STATUS = 'ACTIVE';
 
 - [Oracle Docs -- IRC_PROCESSES_B](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/ircprocessesb.html)
 - [[hcm-module-data-dictionary]] -- Dossie do modulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[candidateselectprocesspvo|CandidateSelectProcessPVO]] (HCM · BICC: 8/15)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CODE | Code | ✅ |
+| CREATED_BY | CreatedBy | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| IS_ACTIVE_FLAG | IsActiveFlag | — |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | — |
+| LAST_UPDATED_BY | LastUpdatedBy | ✅ |
+| MODULE_ID | ModuleId | — |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | — |
+| PHASE_ID | PhaseId | — |
+| PROCESS_ID | ProcessId | ✅ |
+| SEED_DATA_SOURCE | SeedDataSource | — |
+| STATUS_CODE | StatusCode | ✅ |
+| TYPE_CODE | TypeCode | ✅ |
+| USAGE_CODE | UsageCode | — |
+
+### [[jobapphisteventpvo|JobAppHistEventPVO]] (HCM · BICC: 1/2)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CODE | ProcessBPEOCode | ✅ |
+| PROCESS_ID | ProcessBPEOProcessId | — |
+
+### [[jobreqhisteventpvo|JobReqHistEventPVO]] (PO · BICC: 2/2)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CODE | ProcessBPEOCode | ✅ |
+| PROCESS_ID | ProcessId | ✅ |
+
+### [[poolcandhisteventpvo|PoolCandHistEventPVO]] (PO · BICC: 1/2)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CODE | ProcessBPEOCode | ✅ |
+| PROCESS_ID | ProcessId | — |
+
+### [[poolmgmtprocesspvo|PoolMgmtProcessPVO]] (HCM · BICC: 8/15)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CODE | Code | ✅ |
+| CREATED_BY | CreatedBy | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| IS_ACTIVE_FLAG | IsActiveFlag | — |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | — |
+| LAST_UPDATED_BY | LastUpdatedBy | ✅ |
+| MODULE_ID | ModuleId | — |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | — |
+| PHASE_ID | PhaseId | — |
+| PROCESS_ID | ProcessId | ✅ |
+| SEED_DATA_SOURCE | SeedDataSource | — |
+| STATUS_CODE | StatusCode | ✅ |
+| TYPE_CODE | TypeCode | ✅ |
+| USAGE_CODE | UsageCode | — |
+
+### [[processpvo|ProcessPVO]] (HCM · BICC: 9/15)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CODE | Code | ✅ |
+| CREATED_BY | CreatedBy | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| IS_ACTIVE_FLAG | IsActiveFlag | — |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | LastUpdatedBy | ✅ |
+| MODULE_ID | ModuleId | — |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | ✅ |
+| PHASE_ID | PhaseId | — |
+| PROCESS_ID | ProcessId | ✅ |
+| SEED_DATA_SOURCE | SeedDataSource | — |
+| STATUS_CODE | StatusCode | — |
+| TYPE_CODE | TypeCode | — |
+| USAGE_CODE | UsageCode | ✅ |

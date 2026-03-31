@@ -112,6 +112,30 @@ WHERE  tl.LANGUAGE = 'PT'
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[personabscertificationspvo|PersonAbsCertificationsPVO]] (GL · BICC: 4/15)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ABSENCE_CERTIFICATION_DESC | AbsenceCertificationDesc | ✅ |
+| ABSENCE_CERTIFICATION_ID | AbsenceCertificationId1 | — |
+| CREATED_BY | CreatedBy1 | — |
+| CREATION_DATE | CreationDate1 | — |
+| EFFECTIVE_END_DATE | EffectiveEndDate | — |
+| EFFECTIVE_START_DATE | EffectiveStartDate | ✅ |
+| ENTERPRISE_ID | EnterpriseId1 | — |
+| LANGUAGE | Language | — |
+| LAST_UPDATE_DATE | LastUpdateDate1 | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin1 | — |
+| LAST_UPDATED_BY | LastUpdatedBy1 | — |
+| MODULE_ID | ModuleId | — |
+| NAME | Name | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber1 | — |
+| SOURCE_LANG | SourceLang | — |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — ANC_ABS_CERTIFICATIONS_F_TL](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/ancabscertificationsftl.html)

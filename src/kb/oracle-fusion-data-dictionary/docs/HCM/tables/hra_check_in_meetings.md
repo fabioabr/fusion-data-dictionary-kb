@@ -118,6 +118,31 @@ WHERE  m.STATUS = 'SCHEDULED'
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[checkinspvo|CheckinsPVO]] (HCM · BICC: 12/16)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | CheckInMeetingPEOBusinessGroupId | — |
+| CHECK_IN_DATE | CheckInMeetingPEOCheckInDate | ✅ |
+| CHECK_IN_MEETING_ID | CheckInMeetingPEOCheckInMeetingId | ✅ |
+| CHECK_IN_TEMPLATE_ID | CheckInMeetingPEOCheckInTemplateId | ✅ |
+| CREATED_BY | CreatedBy | ✅ |
+| CREATED_BY_PERSON_ID | CheckInMeetingPEOCreatedByPersonId | — |
+| CREATION_DATE | CreationDate | ✅ |
+| DOCUMENT_NAME | CheckInMeetingPEODocumentName | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | LastUpdatedBy | ✅ |
+| MANAGER_PERSON_ID | CheckInMeetingPEOManagerPersonId | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | — |
+| REVIEW_PERIOD_ID | CheckInMeetingPEOReviewPeriodId | — |
+| WORKER_ASSIGNMENT_ID | CheckInMeetingPEOWorkerAssignmentId | ✅ |
+| WORKER_PERSON_ID | CheckInMeetingPEOWorkerPersonId | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — HRA_CHECK_IN_MEETINGS](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/hracheckinmeetings.html)

@@ -129,6 +129,17 @@ FETCH FIRST 20 ROWS ONLY;
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[suppliersitepvo|SupplierSitePVO]] (PO · BICC: 1/2)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| AMOUNT | SuppSiteInvDistAmount | ✅ |
+| VENDOR_SITE_ID | SuppSiteInvDistVendorSiteId | — |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — POZ BI Views](https://docs.oracle.com/en/cloud/saas/procurement/25a/oedmf/poztables.html)

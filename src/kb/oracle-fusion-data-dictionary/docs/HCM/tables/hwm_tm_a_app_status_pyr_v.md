@@ -39,7 +39,6 @@ View que exibe o status de aprovação de registros de tempo destinados ao módu
 > [!note] Sufixo _V
 > O sufixo `_V` indica **view** — objeto somente leitura que consolida dados de uma ou mais tabelas para facilitar consultas.
 
-
 ---
 
 ## 🧠 Propósito de Negócio
@@ -102,6 +101,38 @@ WHERE  t.STATUS_CODE = 'APPROVED'
 
 - View somente leitura: não permite INSERT, UPDATE ou DELETE direto.
 - Área funcional: Time Management dentro do Oracle Fusion Cloud HCM.
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[historicreportedtimeentrypvo|HistoricReportedTimeEntryPVO]] (HCM · BICC: 1/2)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| STATUS_ID | TimeEntryPyrAppStatusId | — |
+| STATUS_VALUE | TimeEntryPyrAppStatusValue | ✅ |
+
+### [[historicrptabstimeentrypvo|HistoricRptAbsTimeEntryPVO]] (HCM · BICC: 1/2)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| STATUS_ID | TmAtomicPyrApprovalStatusPEOStatusId | — |
+| STATUS_VALUE | TmAtomicPyrApprovalStatusPEOStatusValue | ✅ |
+
+### [[reportedtimeentrypvo|ReportedTimeEntryPVO]] (HCM · BICC: 1/2)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| STATUS_ID | TimeEntryPyrAppStatusId | — |
+| STATUS_VALUE | TimeEntryPyrAppStatusValue | ✅ |
+
+### [[rptabstimeentrypvo|RptAbsTimeEntryPVO]] (HCM · BICC: 1/2)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| STATUS_ID | TmAtomicPyrApprovalStatusPEOStatusId | — |
+| STATUS_VALUE | TmAtomicPyrApprovalStatusPEOStatusValue | ✅ |
 
 ---
 

@@ -102,6 +102,54 @@ WHERE  tl.LANGUAGE = 'PTB';
 - Sempre usar JOIN com a tabela principal para dados completos.
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[allocatedchecklistspvo|AllocatedChecklistsPVO]] (HCM · BICC: 4/17)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ALLOCATED_CHECKLIST_ID | AllocatedChecklistranslationAllocatedChecklistId | — |
+| BUSINESS_GROUP_ID | AllocatedChecklistranslationBusinessGroupId | — |
+| CHECKLIST_DETAILS | AllocatedChecklistranslationChecklistDetails | — |
+| CHECKLIST_NAME | AllocatedChecklistranslationChecklistName | — |
+| CHECKLIST_NAME | AllocatedChecklistsPEOChecklistName | ✅ |
+| CREATED_BY | AllocatedChecklistranslationCreatedBy | — |
+| CREATION_DATE | AllocatedChecklistranslationCreationDate | — |
+| DESCRIPTION | AllocatedChecklistranslationDescription | — |
+| DESCRIPTION | AllocatedChecklistsPEODescription | ✅ |
+| LANGUAGE | AllocatedChecklistranslationLanguage | — |
+| LAST_UPDATE_DATE | AllocatedChecklistranslationLastUpdateDate | — |
+| LAST_UPDATE_LOGIN | AllocatedChecklistranslationLastUpdateLogin | — |
+| LAST_UPDATED_BY | AllocatedChecklistranslationLastUpdatedBy | — |
+| MESSAGE_TEXT | AllocatedChecklistranslationMessageText | ✅ |
+| MESSAGE_TITLE | AllocatedChecklistranslationMessageTitle | ✅ |
+| OBJECT_VERSION_NUMBER | AllocatedChecklistranslationObjectVersionNumber | — |
+| SOURCE_LANG | AllocatedChecklistranslationSourceLang | — |
+
+### [[allocatedchecklisttaskspvo|AllocatedChecklistTasksPVO]] (HCM · BICC: 4/17)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ALLOCATED_CHECKLIST_ID | AllocatedChecklistranslationAllocatedChecklistId | — |
+| BUSINESS_GROUP_ID | AllocatedChecklistranslationBusinessGroupId | — |
+| CHECKLIST_DETAILS | AllocatedChecklistranslationChecklistDetails | — |
+| CHECKLIST_NAME | AllocatedChecklistranslationChecklistName | — |
+| CHECKLIST_NAME | AllocatedChecklistsPEOChecklistName | ✅ |
+| CREATED_BY | AllocatedChecklistranslationCreatedBy | — |
+| CREATION_DATE | AllocatedChecklistranslationCreationDate1 | — |
+| DESCRIPTION | AllocatedChecklistranslationDescription | — |
+| DESCRIPTION | AllocatedChecklistsPEODescription | ✅ |
+| LANGUAGE | AllocatedChecklistranslationLanguage | — |
+| LAST_UPDATE_DATE | AllocatedChecklistranslationLastUpdateDate | — |
+| LAST_UPDATE_LOGIN | AllocatedChecklistranslationLastUpdateLogin | — |
+| LAST_UPDATED_BY | AllocatedChecklistranslationLastUpdatedBy | — |
+| MESSAGE_TEXT | AllocatedChecklistranslationMessageText | ✅ |
+| MESSAGE_TITLE | AllocatedChecklistranslationMessageTitle | ✅ |
+| OBJECT_VERSION_NUMBER | AllocatedChecklistranslationObjectVersionNumber | — |
+| SOURCE_LANG | AllocatedChecklistranslationSourceLang | — |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — PER_ALLOCATED_CHECKLISTS_TL](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/perallocatedcheckliststl.html)

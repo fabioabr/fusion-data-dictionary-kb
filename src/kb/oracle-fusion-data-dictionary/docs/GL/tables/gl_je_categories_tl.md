@@ -140,6 +140,68 @@ ORDER BY ct.USER_JE_CATEGORY_NAME;
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[journalcategorybpvo|JournalCategoryBPVO]] (GL · BICC: 5/22)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | JrnlCatTranslatedCreatedBy | — |
+| CREATED_BY | JrnlCatTranslatedLangCreatedBy | — |
+| CREATION_DATE | JrnlCatTranslatedCreationDate | — |
+| CREATION_DATE | JrnlCatTranslatedLangCreationDate | — |
+| DESCRIPTION | JrnlCatTranslatedDescription | ✅ |
+| DESCRIPTION | JrnlCatTranslatedLangDescription | — |
+| JE_CATEGORY_NAME | JrnlCatTranslatedJeCategoryName | ✅ |
+| JE_CATEGORY_NAME | JrnlCatTranslatedLangJeCategoryName | — |
+| LANGUAGE | JrnlCatTranslatedLangLanguage | — |
+| LANGUAGE | JrnlCatTranslatedLanguage | ✅ |
+| LAST_UPDATE_DATE | JrnlCatTranslatedLangLastUpdateDate | — |
+| LAST_UPDATE_DATE | JrnlCatTranslatedLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | JrnlCatTranslatedLangLastUpdateLogin | — |
+| LAST_UPDATE_LOGIN | JrnlCatTranslatedLastUpdateLogin | — |
+| LAST_UPDATED_BY | JrnlCatTranslatedLangLastUpdatedBy | — |
+| LAST_UPDATED_BY | JrnlCatTranslatedLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | JrnlCatTranslatedLangObjectVersionNumber | — |
+| OBJECT_VERSION_NUMBER | JrnlCatTranslatedObjectVersionNumber | — |
+| SOURCE_LANG | JrnlCatTranslatedLangSourceLang | — |
+| SOURCE_LANG | JrnlCatTranslatedSourceLang | — |
+| USER_JE_CATEGORY_NAME | JrnlCatTranslatedLangUserJeCategoryName | — |
+| USER_JE_CATEGORY_NAME | JrnlCatTranslatedUserJeCategoryName | ✅ |
+
+### [[journalcategoryextractpvo|JournalCategoryExtractPVO]] (OTHER · BICC: 10/10)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | JrnlCatTransLangCreatedBy | ✅ |
+| CREATION_DATE | JrnlCatTransLangCreationDate | ✅ |
+| DESCRIPTION | JrnlCatTransLangDescription | ✅ |
+| JE_CATEGORY_NAME | JrnlCatTransLangJeCategoryName | ✅ |
+| LANGUAGE | JrnlCatTransLangLanguage | ✅ |
+| LAST_UPDATE_DATE | JrnlCatTransLangLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | JrnlCatTransLangLastUpdateLogn | ✅ |
+| LAST_UPDATED_BY | JrnlCatTransLangLastUpdatedBy | ✅ |
+| SOURCE_LANG | JrnlCatTransLangSourceLang | ✅ |
+| USER_JE_CATEGORY_NAME | JrnlCatTransLangUserJeCatName | ✅ |
+
+### [[journalcategorytlextractpvo|JournalCategoryTLExtractPVO]] (OTHER · BICC: 11/11)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | JrnlCatTranslationCreatedBy | ✅ |
+| CREATION_DATE | JrnlCatTranslationCreationDate | ✅ |
+| DESCRIPTION | JrnlCatTranslationDescription | ✅ |
+| JE_CATEGORY_NAME | JrnlCatTranslationJeCategoryName | ✅ |
+| LANGUAGE | JrnlCatTranslationLanguage | ✅ |
+| LAST_UPDATE_DATE | JrnlCatTranslationLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | JrnlCatTranslationLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | JrnlCatTranslationLastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | JrnlCatTranslationObjectVersionNumber | ✅ |
+| SOURCE_LANG | JrnlCatTranslationSourceLang | ✅ |
+| USER_JE_CATEGORY_NAME | JrnlCatTranslationUserJeCategoryName | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — GL_JE_CATEGORIES](https://docs.oracle.com/en/cloud/saas/financials/25a/oedmf/gljecategories-25720.html)

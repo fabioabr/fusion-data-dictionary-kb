@@ -101,3 +101,43 @@ FROM   IRC_LC_ACTION_USAGES_B au WHERE au.CONTEXT_ID = :p_id;
 
 - [Oracle Docs -- IRC_LC_ACTION_USAGES_B](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/irclcactionusagesb.html)
 - [[hcm-module-data-dictionary]] -- Dossie do modulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[routingstependactionpvo|RoutingStepEndActionPVO]] (HCM · BICC: 2/7)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_ID | ActionId | ✅ |
+| LAST_EXECUTION_DATE | LastExecutionDate | — |
+| LAST_EXECUTION_RESULT | LastExecutionResult | — |
+| ROUTING_STEP_ID | RoutingStepId | — |
+| STEP_ACTION_USAGE_CODE | StepActionUsageCode | — |
+| STEP_ACTION_USAGE_ID | StepActionUsageId | ✅ |
+| TRIGGER_EVENT_CODE | TriggerEventCode | — |
+
+### [[routingstepstartactionpvo|RoutingStepStartActionPVO]] (HCM · BICC: 2/7)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_ID | ActionId | ✅ |
+| LAST_EXECUTION_DATE | LastExecutionDate | — |
+| LAST_EXECUTION_RESULT | LastExecutionResult | — |
+| ROUTING_STEP_ID | RoutingStepId | — |
+| STEP_ACTION_USAGE_CODE | StepActionUsageCode | — |
+| STEP_ACTION_USAGE_ID | StepActionUsageId | ✅ |
+| TRIGGER_EVENT_CODE | TriggerEventCode | — |
+
+### [[routingstepstateactionpvo|RoutingStepStateActionPVO]] (HCM · BICC: 2/7)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_ID | ActionId | ✅ |
+| LAST_EXECUTION_DATE | LastExecutionDate | — |
+| LAST_EXECUTION_RESULT | LastExecutionResult | — |
+| ROUTING_STEP_ID | RoutingStepId | — |
+| STEP_ACTION_USAGE_CODE | StepActionUsageCode | — |
+| STEP_ACTION_USAGE_ID | StepActionUsageId | ✅ |
+| TRIGGER_EVENT_CODE | TriggerEventCode | — |

@@ -41,7 +41,6 @@ View que expoe as **atribuicoes de papeis (roles) de fornecedores** no modulo Pr
 > [!note] Sufixo _V
 > O sufixo `_V` indica que este objeto e uma **view**, projetada para simplificar consultas.
 
-
 ---
 
 ## 🧠 Propósito de Negócio
@@ -101,7 +100,6 @@ WHERE  VENDOR_ID = :p_vendor_id
   AND  ASSIGNMENT_STATUS = 'ACTIVE';
 ```
 
-
 ---
 
 ## 🔒 Observações
@@ -109,6 +107,41 @@ WHERE  VENDOR_ID = :p_vendor_id
 - View sem indices proprios; performance depende das tabelas base.
 - Papeis disponiveis sao configuraveis por implementacao.
 - Papeis inativos/expirados devem ser filtrados em consultas operacionais.
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[suppliercontactuseracctdetailspvo|SupplierContactUserAcctDetailsPVO]] (PO · BICC: 6/26)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTIVE_FLAG | UserRolesActiveFlag | — |
+| ALLOW_SUPP_PROV_FLAG | SupplierContactUserAccountAllowSupplierProvisionFlag | — |
+| BUSINESS_GROUP_ID | UserRolesBusinessGroupId | — |
+| CREATED_BY | SupplierContactUserAccountCreatedBy | ✅ |
+| CREATED_BY | UserRolesCreatedBy | — |
+| CREATION_DATE | SupplierContactUserAccountCreationDate | ✅ |
+| CREATION_DATE | UserRolesCreationDate | — |
+| DEFAULT_FOR_PON_FLAG | SupplierContactUserAccountDefaultForPonFlag | — |
+| DEFAULT_FOR_POS_FLAG | SupplierContactUserAccountDefaultForPosFlag | — |
+| END_DATE | UserRolesEndDate | — |
+| LAST_UPDATE_DATE | SupplierContactUserAccountLastUpdateDate | ✅ |
+| LAST_UPDATE_DATE | UserRolesLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | SupplierContactUserAccountLastUpdateLogin | — |
+| LAST_UPDATE_LOGIN | UserRolesLastUpdateLogin | — |
+| LAST_UPDATED_BY | SupplierContactUserAccountLastUpdatedBy | ✅ |
+| LAST_UPDATED_BY | UserRolesLastUpdatedBy | — |
+| METHOD_CODE | UserRolesMethodCode | — |
+| OBJECT_VERSION_NUMBER | SupplierContactUserAccountObjectVersionNumber | — |
+| OBJECT_VERSION_NUMBER | UserRolesObjectVersionNumber | — |
+| PROVISIONAL_ROLE_GUID | RoleGuid | ✅ |
+| ROLE_GUID | UserRolesRoleGuid | — |
+| ROLE_ID | UserRolesRoleId | — |
+| START_DATE | UserRolesStartDate | — |
+| TERMINATED_FLAG | UserRolesTerminatedFlag | — |
+| USER_ID | UserRolesUserId | — |
+| USER_ROLE_ID | UserRolesUserRoleId | — |
 
 ---
 

@@ -120,3 +120,39 @@ ORDER BY lc.START_DATE;
 
 - [Oracle Docs — WLF_LI_CLASSES_F](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/wlfliclassesf.html)
 - [[hcm-module-data-dictionary]] — Dossiê do módulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[classpvo|ClassPVO]] (HCM · BICC: 12/27)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CLASS_ID | ClassDEOClassId | ✅ |
+| COORDINATOR_ID | ClassDEOCoordinatorId | — |
+| CREATED_BY | ClassDEOCreatedBy | — |
+| CREATION_DATE | ClassDEOCreationDate | — |
+| DELIVERY_MODE | ClassDEODeliveryMode | ✅ |
+| EFFECTIVE_END_DATE | ClassDEOEffectiveEndDate | ✅ |
+| EFFECTIVE_START_DATE | ClassDEOEffectiveStartDate | ✅ |
+| ENABLE_CAPACITY | ClassDEOEnableCapacity | ✅ |
+| ENABLE_WAITLIST | ClassDEOEnableWaitlist | ✅ |
+| ENROLMENT_END_DATE | ClassDEOEnrolmentEndDate | — |
+| ENROLMENT_START_DATE | ClassDEOEnrolmentStartDate | — |
+| ENTERPRISE_ID | ClassDEOEnterpriseId | — |
+| LAST_UPDATE_DATE | ClassDEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ClassDEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | ClassDEOLastUpdatedBy | — |
+| LEARNING_ITEM_ID | ClassDEOLearningItemId | — |
+| LOCATION_ID | ClassDEOLocationId | — |
+| MAXIMUM_ATTENDEES | ClassDEOMaximumAttendees | ✅ |
+| MAXIMUM_INTERNAL_ATTENDEES | ClassDEOMaximumInternalAttendees | — |
+| MINIMUM_ATTENDEES | ClassDEOMinimumAttendees | ✅ |
+| OBJECT_VERSION_NUMBER | ClassDEOObjectVersionNumber | — |
+| PRIMARY_INSTRUCTOR_ID | ClassDEOPrimaryInstructorId | — |
+| RELATED_CONTENT_ID | ClassDEORelatedContentId | — |
+| REMAINING_SEATS | ClassDEORemainingSeats | ✅ |
+| TIMEZONE | ClassDEOTimezone | ✅ |
+| USER_STATUS | ClassDEOUserStatus | — |
+| WAITLIST_MGMT_MODE | ClassDEOWaitlistMgmtMode | ✅ |

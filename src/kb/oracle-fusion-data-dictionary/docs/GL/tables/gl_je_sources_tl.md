@@ -131,6 +131,68 @@ ORDER BY jh.NAME;
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[journalsourcebpvo|JournalSourceBPVO]] (GL · BICC: 9/22)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | JrnlSrcTransLangCreatedBy | — |
+| CREATED_BY | JrnlSrcTranslatedCreatedBy | ✅ |
+| CREATION_DATE | JrnlSrcTransLangCreationDate | — |
+| CREATION_DATE | JrnlSrcTranslatedCreationDate | ✅ |
+| DESCRIPTION | JrnlSrcTransLangDescription | — |
+| DESCRIPTION | JrnlSrcTranslatedDescription | ✅ |
+| JE_SOURCE_NAME | JrnlSrcTransLangJeSourceName | — |
+| JE_SOURCE_NAME | JrnlSrcTranslatedJeSourceName | ✅ |
+| LANGUAGE | JrnlSrcTransLangLanguage | — |
+| LANGUAGE | JrnlSrcTranslatedLanguage | ✅ |
+| LAST_UPDATE_DATE | JrnlSrcTransLangLastUpdateDate | — |
+| LAST_UPDATE_DATE | JrnlSrcTranslatedLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | JrnlSrcTransLangLastUpdateLogin | — |
+| LAST_UPDATE_LOGIN | JrnlSrcTranslatedLastUpdateLogin | — |
+| LAST_UPDATED_BY | JrnlSrcTransLangLastUpdatedBy | — |
+| LAST_UPDATED_BY | JrnlSrcTranslatedLastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | JrnlSrcTransLangObjectVersionNumber | — |
+| OBJECT_VERSION_NUMBER | JrnlSrcTranslatedObjectVersionNumber | — |
+| SOURCE_LANG | JrnlSrcTransLangSourceLang | — |
+| SOURCE_LANG | JrnlSrcTranslatedSourceLang | ✅ |
+| USER_JE_SOURCE_NAME | JrnlSrcTransLangUserJeSourceName | — |
+| USER_JE_SOURCE_NAME | JrnlSrcTranslatedUserJeSourceName | ✅ |
+
+### [[journalsourceextractpvo|JournalSourceExtractPVO]] (OTHER · BICC: 10/10)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | JrnlSrcTransLangCreatedBy | ✅ |
+| CREATION_DATE | JrnlSrcTransLangCreationDate | ✅ |
+| DESCRIPTION | JrnlSrcTransLangDescription | ✅ |
+| JE_SOURCE_NAME | JrnlSrcTransLangJeSourceName | ✅ |
+| LANGUAGE | JrnlSrcTransLangLanguage | ✅ |
+| LAST_UPDATE_DATE | JrnlSrcTransLangLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | JrnlSrcTransLangLastUpdateLog | ✅ |
+| LAST_UPDATED_BY | JrnlSrcTransLangLastUpdatedBy | ✅ |
+| SOURCE_LANG | JrnlSrcTransLangSourceLang | ✅ |
+| USER_JE_SOURCE_NAME | JrnlSrcTransLangUserJeSrcName | ✅ |
+
+### [[journalsourcetlextractpvo|JournalSourceTLExtractPVO]] (OTHER · BICC: 11/11)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | JrnlSrcTranslationCreatedBy | ✅ |
+| CREATION_DATE | JrnlSrcTranslationCreationDate | ✅ |
+| DESCRIPTION | JrnlSrcTranslationDescription | ✅ |
+| JE_SOURCE_NAME | JrnlSrcTranslationJeSourceName | ✅ |
+| LANGUAGE | JrnlSrcTranslationLanguage | ✅ |
+| LAST_UPDATE_DATE | JrnlSrcTranslationLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | JrnlSrcTranslationLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | JrnlSrcTranslationLastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | JrnlSrcTranslationObjectVersionNumber | ✅ |
+| SOURCE_LANG | JrnlSrcTranslationSourceLang | ✅ |
+| USER_JE_SOURCE_NAME | JrnlSrcTranslationUserJeSourceName | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — GL_JE_SOURCES_TL](https://docs.oracle.com/en/cloud/saas/financials/25a/oedmf/gljesourcestl.html)

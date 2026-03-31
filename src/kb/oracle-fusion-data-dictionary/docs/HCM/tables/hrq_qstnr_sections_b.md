@@ -94,6 +94,135 @@ ORDER BY s.DISPLAY_SEQUENCE;
 
 - Tabela base (sufixo `_B`) — traduções em [[hrq_qstnr_sections_tl]].
 
+---
+
+## 🔗 PVOs Relacionados
+
+### [[managerquestionnairequestionpvo|ManagerQuestionnaireQuestionPVO]] (HCM · BICC: 3/17)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ALLOW_ADHOC | QuestionnaireSectionBPEOAllowAdhoc | — |
+| BUSINESS_GROUP_ID | QuestionnaireSectionBPEOBusinessGroupId | ✅ |
+| CREATED_BY | QuestionnaireSectionBPEOCreatedBy | — |
+| CREATION_DATE | QuestionnaireSectionBPEOCreationDate | — |
+| LAST_UPDATE_DATE | QuestionnaireSectionBPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | QuestionnaireSectionBPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | QuestionnaireSectionBPEOLastUpdatedBy | — |
+| MANDATORY | QuestionnaireSectionBPEOMandatory | — |
+| MODULE_ID | QuestionnaireSectionBPEOModuleId | — |
+| NEW_PAGE | QuestionnaireSectionBPEONewPage | — |
+| OBJECT_VERSION_NUMBER | QuestionnaireSectionBPEOObjectVersionNumber | — |
+| QSTNR_SECTION_ID | QuestionnaireSectionBPEOQstnrSectionId | ✅ |
+| QSTNR_VERSION_NUM | QuestionnaireSectionBPEOQstnrVersionNum | — |
+| QUESTION_ORDER | QuestionnaireSectionBPEOQuestionOrder | — |
+| QUESTIONNAIRE_ID | QuestionnaireSectionBPEOQuestionnaireId | — |
+| RESPONSE_ORDER | QuestionnaireSectionBPEOResponseOrder | — |
+| SECTION_SEQ_NUM | QuestionnaireSectionBPEOSectionSeqNum | — |
+
+### [[participantquestionnairequestionpvo|ParticipantQuestionnaireQuestionPVO]] (HCM · BICC: 5/17)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ALLOW_ADHOC | QuestionnaireSectionBPEOAllowAdhoc | — |
+| BUSINESS_GROUP_ID | QuestionnaireSectionBPEOBusinessGroupId | ✅ |
+| CREATED_BY | QuestionnaireSectionBPEOCreatedBy | — |
+| CREATION_DATE | QuestionnaireSectionBPEOCreationDate | — |
+| LAST_UPDATE_DATE | QuestionnaireSectionBPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | QuestionnaireSectionBPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | QuestionnaireSectionBPEOLastUpdatedBy | — |
+| MANDATORY | QuestionnaireSectionBPEOMandatory | — |
+| MODULE_ID | QuestionnaireSectionBPEOModuleId | — |
+| NEW_PAGE | QuestionnaireSectionBPEONewPage | — |
+| OBJECT_VERSION_NUMBER | QuestionnaireSectionBPEOObjectVersionNumber | — |
+| QSTNR_SECTION_ID | QuestionnaireSectionBPEOQstnrSectionId | ✅ |
+| QSTNR_VERSION_NUM | QuestionnaireSectionBPEOQstnrVersionNum | — |
+| QUESTION_ORDER | QuestionnaireSectionBPEOQuestionOrder | ✅ |
+| QUESTIONNAIRE_ID | QuestionnaireSectionBPEOQuestionnaireId | — |
+| RESPONSE_ORDER | QuestionnaireSectionBPEOResponseOrder | — |
+| SECTION_SEQ_NUM | QuestionnaireSectionBPEOSectionSeqNum | ✅ |
+
+### [[participantquestionnairequestionpvoforpotentialassessement|ParticipantQuestionnaireQuestionPVOForPotentialAssessement]] (HCM · BICC: 3/17)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ALLOW_ADHOC | QuestionnaireSectionBPEOAllowAdhoc | — |
+| BUSINESS_GROUP_ID | QuestionnaireSectionBPEOBusinessGroupId | ✅ |
+| CREATED_BY | QuestionnaireSectionBPEOCreatedBy | — |
+| CREATION_DATE | QuestionnaireSectionBPEOCreationDate | — |
+| LAST_UPDATE_DATE | QuestionnaireSectionBPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | QuestionnaireSectionBPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | QuestionnaireSectionBPEOLastUpdatedBy | — |
+| MANDATORY | QuestionnaireSectionBPEOMandatory | — |
+| MODULE_ID | QuestionnaireSectionBPEOModuleId | — |
+| NEW_PAGE | QuestionnaireSectionBPEONewPage | — |
+| OBJECT_VERSION_NUMBER | QuestionnaireSectionBPEOObjectVersionNumber | — |
+| QSTNR_SECTION_ID | QuestionnaireSectionBPEOQstnrSectionId | ✅ |
+| QSTNR_VERSION_NUM | QuestionnaireSectionBPEOQstnrVersionNum | — |
+| QUESTION_ORDER | QuestionnaireSectionBPEOQuestionOrder | — |
+| QUESTIONNAIRE_ID | QuestionnaireSectionBPEOQuestionnaireId | — |
+| RESPONSE_ORDER | QuestionnaireSectionBPEOResponseOrder | — |
+| SECTION_SEQ_NUM | QuestionnaireSectionBPEOSectionSeqNum | — |
+
+### [[questionnaireallquestionsp1|QuestionnaireAllQuestionsP1]] (HCM · BICC: 3/11)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ALLOW_ADHOC | QuestionnaireSectionBPEOAllowAdhoc | — |
+| BUSINESS_GROUP_ID | QuestionnaireSectionBPEOBusinessGroupId | — |
+| MANDATORY | QuestionnaireSectionBPEOMandatory | ✅ |
+| MODULE_ID | QuestionnaireSectionBPEOModuleId | — |
+| NEW_PAGE | QuestionnaireSectionBPEONewPage | — |
+| QSTNR_SECTION_ID | QuestionnaireSectionBPEOQstnrSectionId | — |
+| QSTNR_VERSION_NUM | QuestionnaireSectionBPEOQstnrVersionNum | — |
+| QUESTION_ORDER | QuestionnaireSectionBPEOQuestionOrder | ✅ |
+| QUESTIONNAIRE_ID | QuestionnaireSectionBPEOQuestionnaireId | — |
+| RESPONSE_ORDER | QuestionnaireSectionBPEOResponseOrder | — |
+| SECTION_SEQ_NUM | QuestionnaireSectionBPEOSectionSeqNum | ✅ |
+
+### [[questionnairequestionpvo|QuestionnaireQuestionPVO]] (HCM · BICC: 3/17)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ALLOW_ADHOC | QuestionnaireSectionBPEOAllowAdhoc | — |
+| BUSINESS_GROUP_ID | QuestionnaireSectionBPEOBusinessGroupId | ✅ |
+| CREATED_BY | QuestionnaireSectionBPEOCreatedBy | — |
+| CREATION_DATE | QuestionnaireSectionBPEOCreationDate | — |
+| LAST_UPDATE_DATE | QuestionnaireSectionBPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | QuestionnaireSectionBPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | QuestionnaireSectionBPEOLastUpdatedBy | — |
+| MANDATORY | QuestionnaireSectionBPEOMandatory | — |
+| MODULE_ID | QuestionnaireSectionBPEOModuleId | — |
+| NEW_PAGE | QuestionnaireSectionBPEONewPage | — |
+| OBJECT_VERSION_NUMBER | QuestionnaireSectionBPEOObjectVersionNumber | — |
+| QSTNR_SECTION_ID | QuestionnaireSectionBPEOQstnrSectionId | ✅ |
+| QSTNR_VERSION_NUM | QuestionnaireSectionBPEOQstnrVersionNum | — |
+| QUESTION_ORDER | QuestionnaireSectionBPEOQuestionOrder | — |
+| QUESTIONNAIRE_ID | QuestionnaireSectionBPEOQuestionnaireId | — |
+| RESPONSE_ORDER | QuestionnaireSectionBPEOResponseOrder | — |
+| SECTION_SEQ_NUM | QuestionnaireSectionBPEOSectionSeqNum | — |
+
+### [[workerquestionnairequestionpvo|WorkerQuestionnaireQuestionPVO]] (HCM · BICC: 3/17)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ALLOW_ADHOC | QuestionnaireSectionBPEOAllowAdhoc | — |
+| BUSINESS_GROUP_ID | QuestionnaireSectionBPEOBusinessGroupId | ✅ |
+| CREATED_BY | QuestionnaireSectionBPEOCreatedBy | — |
+| CREATION_DATE | QuestionnaireSectionBPEOCreationDate | — |
+| LAST_UPDATE_DATE | QuestionnaireSectionBPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | QuestionnaireSectionBPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | QuestionnaireSectionBPEOLastUpdatedBy | — |
+| MANDATORY | QuestionnaireSectionBPEOMandatory | — |
+| MODULE_ID | QuestionnaireSectionBPEOModuleId | — |
+| NEW_PAGE | QuestionnaireSectionBPEONewPage | — |
+| OBJECT_VERSION_NUMBER | QuestionnaireSectionBPEOObjectVersionNumber | — |
+| QSTNR_SECTION_ID | QuestionnaireSectionBPEOQstnrSectionId | ✅ |
+| QSTNR_VERSION_NUM | QuestionnaireSectionBPEOQstnrVersionNum | — |
+| QUESTION_ORDER | QuestionnaireSectionBPEOQuestionOrder | — |
+| QUESTIONNAIRE_ID | QuestionnaireSectionBPEOQuestionnaireId | — |
+| RESPONSE_ORDER | QuestionnaireSectionBPEOResponseOrder | — |
+| SECTION_SEQ_NUM | QuestionnaireSectionBPEOSectionSeqNum | — |
 
 ---
 

@@ -103,3 +103,23 @@ FROM   IRC_DESCRIPTIONS_B d WHERE d.STATUS = 'ACTIVE';
 
 - [Oracle Docs -- IRC_DESCRIPTIONS_B](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/ircdescriptionsb.html)
 - [[hcm-module-data-dictionary]] -- Dossie do modulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[descriptionpvo|DescriptionPVO]] (HCM · BICC: 8/11)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | CreatedBy | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| DESCRIPTION_CODE | DescriptionCode | ✅ |
+| DESCRIPTION_ID | DescriptionId | ✅ |
+| DESCRIPTION_TYPE_CODE | DescriptionTypeCode | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | — |
+| LAST_UPDATED_BY | LastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | — |
+| STATUS_CODE | StatusCode | ✅ |
+| VISIBILITY_CODE | VisibilityCode | ✅ |

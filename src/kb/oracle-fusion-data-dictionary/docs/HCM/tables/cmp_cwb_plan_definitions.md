@@ -119,6 +119,38 @@ ORDER BY pd.BUDGET_POOL_AMOUNT DESC;
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[plandefinitionspvo|PlanDefinitionsPVO]] (HCM · BICC: 23/23)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| APPROVAL_MODE | PlanDefinitionsPEOApprovalMode | ✅ |
+| BUDGETING_STYLE | PlanDefinitionsPEOBudgetingStyle | ✅ |
+| BUSINESS_GROUP_ID | PlanDefinitionsPEOBusinessGroupId | ✅ |
+| COMPONENT_ID | PlanDefinitionsPEOComponentId | ✅ |
+| CORPORATE_CURRENCY | PlanDefinitionsPEOCorporateCurrency | ✅ |
+| CREATED_BY | PlanDefinitionsPEOCreatedBy | ✅ |
+| CREATION_DATE | PlanDefinitionsPEOCreationDate | ✅ |
+| DEFINITION_TYPE | PlanDefinitionsPEODefinitionType | ✅ |
+| LAST_UPDATE_DATE | PlanDefinitionsPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | PlanDefinitionsPEOLastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | PlanDefinitionsPEOObjectVersionNumber | ✅ |
+| ORDER_NUM | PlanDefinitionsPEOOrderNum | ✅ |
+| PERIOD_ID | PlanDefinitionsPEOPeriodId | ✅ |
+| PLAN_COMPONENT_COUNT | PlanDefinitionsPEOPlanComponentCount | ✅ |
+| PLAN_DEFINITION_ID | PlanDefinitionId | ✅ |
+| PLAN_ID | PlanDefinitionsPEOPlanId | ✅ |
+| POOL_COMPONENT_ID | PlanDefinitionsPEOPoolComponentId | ✅ |
+| POOL_ID | PlanDefinitionsPEOPoolId | ✅ |
+| POST_AS_SALARY_FLAG | PlanDefinitionsPEOPostAsSalaryFlag | ✅ |
+| STATUS_CODE | PlanDefinitionsPEOStatusCode | ✅ |
+| SUBMIT_MODE | PlanDefinitionsPEOSubmitMode | ✅ |
+| SYSTEM_ORDER_NUM | PlanDefinitionsPEOSystemOrderNum | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — CMP_CWB_PLAN_DEFINITIONS](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/cmpcwbplandefinitions.html)

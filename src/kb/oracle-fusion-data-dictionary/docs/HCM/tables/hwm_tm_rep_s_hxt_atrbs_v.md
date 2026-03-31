@@ -111,3 +111,87 @@ WHERE  v.PERSON_ID = :p_person_id;
 
 - [Oracle Docs — HWM_TM_REP_S_HXT_ATRBS_V](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/hwmtmrepshxtatrbsv.html)
 - [[hcm-module-data-dictionary]] — Dossie do modulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[absencetimeentrypvo|AbsenceTimeEntryPVO]] (HCM · BICC: 2/4)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| HXT_ATTRIBUTE_CATEGORY | HxtAttributeCategory | — |
+| HXT_DAY | HxtDay | ✅ |
+| HXT_RESOLVED_PERIOD_ID | HxtResolvedPeriodId | ✅ |
+| HXT_TIME_REPOS_ATRB_ID | HxtTimeRepositoryAttributeId | — |
+
+### [[historicabsencetimeentrypvo|HistoricAbsenceTimeEntryPVO]] (HCM · BICC: 2/4)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| HXT_ATTRIBUTE_CATEGORY | HxtAttributeCategory | — |
+| HXT_DAY | HxtDay | ✅ |
+| HXT_RESOLVED_PERIOD_ID | HxtResolvedPeriodId | ✅ |
+| HXT_TIME_REPOS_ATRB_ID | HxtTimeRepositoryAttributeId | — |
+
+### [[historicprocessedtimeentrypvo|HistoricProcessedTimeEntryPVO]] (HCM)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| HXT_ATTRIBUTE_CATEGORY | HxtAttributeCategory | — |
+| HXT_DAY | HxtDay | — |
+| HXT_RESOLVED_PERIOD_ID | HxtResolvedPeriodId | — |
+| HXT_TIME_REPOS_ATRB_ID | HxtTimeRepositoryAttributeId | — |
+
+### [[historicreportedtimeentrypvo|HistoricReportedTimeEntryPVO]] (HCM · BICC: 2/4)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| HXT_ATTRIBUTE_CATEGORY | HxtAttributeCategory | — |
+| HXT_DAY | HxtDay | ✅ |
+| HXT_RESOLVED_PERIOD_ID | HxtResolvedPeriodId | ✅ |
+| HXT_TIME_REPOS_ATRB_ID | HxtTimeRepositoryAttributeId | — |
+
+### [[historicrptabstimeentrypvo|HistoricRptAbsTimeEntryPVO]] (HCM · BICC: 5/8)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| EXPEDITE | Expedite | ✅ |
+| HXT_ATTRIBUTE_CATEGORY | SimpleHxtAttributePEOHxtAttributeCategory | — |
+| HXT_DAY | SimpleHxtAttributePEOHxtDay | ✅ |
+| HXT_RESOLVED_PERIOD_ID | SimpleHxtAttributePEOHxtResolvedPeriodId | ✅ |
+| HXT_TIME_REPOS_ATRB_ID | HxtTimeRepositoryAttributeId | — |
+| HXT_TIME_REPOS_ATRB_ID | SimpleHxtAttributePEOHxtTmReposAtrbId | — |
+| OVERRIDE_CHECK_PRINTER | OverrideCheckPrinter | ✅ |
+| OVERRIDE_PAY_METHOD | OverridePayMethod | ✅ |
+
+### [[processedtimeentrypvo|ProcessedTimeEntryPVO]] (HCM)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| HXT_ATTRIBUTE_CATEGORY | HxtAttributeCategory | — |
+| HXT_DAY | HxtDay | — |
+| HXT_RESOLVED_PERIOD_ID | HxtResolvedPeriodId | — |
+| HXT_TIME_REPOS_ATRB_ID | HxtTimeRepositoryAttributeId | — |
+
+### [[reportedtimeentrypvo|ReportedTimeEntryPVO]] (HCM · BICC: 2/4)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| HXT_ATTRIBUTE_CATEGORY | HxtAttributeCategory | — |
+| HXT_DAY | HxtDay | ✅ |
+| HXT_RESOLVED_PERIOD_ID | HxtResolvedPeriodId | ✅ |
+| HXT_TIME_REPOS_ATRB_ID | HxtTimeRepositoryAttributeId | — |
+
+### [[rptabstimeentrypvo|RptAbsTimeEntryPVO]] (HCM · BICC: 5/8)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| EXPEDITE | Expedite | ✅ |
+| HXT_ATTRIBUTE_CATEGORY | SimpleHxtAttributePEOHxtAttributeCategory | — |
+| HXT_DAY | SimpleHxtAttributePEOHxtDay | ✅ |
+| HXT_RESOLVED_PERIOD_ID | SimpleHxtAttributePEOHxtResolvedPeriodId | ✅ |
+| HXT_TIME_REPOS_ATRB_ID | HxtTimeRepositoryAttributeId | — |
+| HXT_TIME_REPOS_ATRB_ID | SimpleHxtAttributePEOHxtTmReposAtrbId | — |
+| OVERRIDE_CHECK_PRINTER | OverrideCheckPrinter | ✅ |
+| OVERRIDE_PAY_METHOD | OverridePayMethod | ✅ |

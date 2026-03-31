@@ -52,3 +52,70 @@ updated_at: 2026-03-26
 ## 📎 Uso Típico
 
 (a ser preenchido na etapa 03)
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[linesalescreditpvo|LineSalesCreditPVO]] (AR · BICC: 1/2)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CLASSIFICATION_CODE | ProdTypeClassificationCode | — |
+| CLASSIFICATION_NAME | ProdTypeClassificationName | ✅ |
+
+### [[requisitiondistributionp1|RequisitionDistributionP1]] (PO · BICC: 1/2)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CLASSIFICATION_CODE | ProductTypesClassificationCode | — |
+| CLASSIFICATION_NAME | ProductTypesClassificationName | ✅ |
+
+### [[requisitiondistributionrefpvo|RequisitionDistributionRefPVO]] (PO)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CLASSIFICATION_CODE | ProductTypesClassificationCode | — |
+| CLASSIFICATION_NAME | ProductTypesClassificationName | — |
+
+### [[requisitionlinep1|RequisitionLineP1]] (PO · BICC: 1/2)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CLASSIFICATION_CODE | ProductTypesClassificationCode | — |
+| CLASSIFICATION_NAME | ProductTypesClassificationName | ✅ |
+
+### [[transactionhistorydistributionpvo|TransactionHistoryDistributionPVO]] (AR)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CLASSIFICATION_CODE | ProdTypeClassificationCode | — |
+| CLASSIFICATION_NAME | ProdTypeClassificationName | — |
+
+### [[transactionhistorypvo|TransactionHistoryPVO]] (AR)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CLASSIFICATION_CODE | ProdTypeClassificationCode | — |
+| CLASSIFICATION_NAME | ProdTypeClassificationName | — |
+
+### [[transactionlinebillsreceivablepvo|TransactionLineBillsReceivablePVO]] (AR)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CLASSIFICATION_CODE | ProdTypeClassificationCode | — |
+| CLASSIFICATION_NAME | ProdTypeClassificationName | — |
+
+### [[transactionlinedistributionpvo|TransactionLineDistributionPVO]] (AR · BICC: 1/2)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CLASSIFICATION_CODE | ProdTypeClassificationCode | — |
+| CLASSIFICATION_NAME | ProdTypeClassificationName | ✅ |
+
+### [[transactionlinepvo|TransactionLinePVO]] (AR · BICC: 1/2)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CLASSIFICATION_CODE | ProdTypeClassificationCode | — |
+| CLASSIFICATION_NAME | ProdTypeClassificationName | ✅ |

@@ -53,3 +53,23 @@ updated_at: 2026-03-26
 ## 📎 Uso Típico
 
 (a ser preenchido na etapa 03)
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[periodstatuspvo|PeriodStatusPVO]] (GL · BICC: 1/3)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| APPLICATION_ID | ApplicationPEOApplicationId | — |
+| APPLICATION_NAME | ApplicationPEOApplicationName | ✅ |
+| APPLICATION_SHORT_NAME | ApplicationPEOApplicationShortName | — |
+
+### [[sourcedocumentlinespvo|SourceDocumentLinesPVO]] (OTHER · BICC: 1/3)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| APPLICATION_ID | ApplicationPEOApplicationId | — |
+| APPLICATION_NAME | ApplicationPEOApplicationName | ✅ |
+| APPLICATION_SHORT_NAME | ApplicationPEOApplicationShortName | — |

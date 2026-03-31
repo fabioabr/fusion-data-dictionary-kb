@@ -39,7 +39,6 @@ Tabela base que define os campos de atributos configuráveis para o módulo de T
 > [!note] Sufixo _B
 > O sufixo `_B` indica tabela **base** — contém os dados não traduzíveis. A tabela correspondente `_TL` armazena as traduções.
 
-
 ---
 
 ## 🧠 Propósito de Negócio
@@ -104,6 +103,122 @@ WHERE  NVL(t.ENABLED_FLAG, 'Y') = 'Y'
 
 - Tabela base: contém dados não traduzíveis. Utilize a view `_VL` correspondente para consultas com tradução.
 - Área funcional: Time Management dentro do Oracle Fusion Cloud HCM.
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[timeattributefieldallocationpvo|TimeAttributeFieldAllocationPVO]] (GL · BICC: 7/23)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ALLOWED_SCOPE | AllowedScope | — |
+| ATTRIBUTE_CATEGORY | AttributeCategory | — |
+| ATTRIBUTE_GROUP | AttributeGroup | — |
+| ATTRIBUTE_TYPE | AttributeType | — |
+| BASE_UNIT | TimeAttributeFieldPEOBaseUnit | — |
+| CLASS | Class11 | — |
+| COMP_DISP_CODE | ComponentDisplayCode | — |
+| CREATED_BY | CreatedBy | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| ENTERPRISE_ID | EnterpriseId | — |
+| GLOBAL_TM_ATRB_FLD_ID | TimeAttributeFieldPEOGlobalTmAtrbFldId | — |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | LastUpdatedBy | ✅ |
+| MANDATORY_FOR_TCSMRS | MandatoryForTimeConsumers | — |
+| MODULE_ID | ModuleId | — |
+| NAME | Name | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | — |
+| PARENT_TM_ATRB_FLD_ID | ParentTimeAttributeFieldId | — |
+| TCSMRS_ID | TimeConsumersId | — |
+| TM_ATRB_FLD_ID | TimeAttributeFieldId | ✅ |
+| VALUE_LOCATION | ValueLocation | — |
+| VALUE_SET_ID | ValueSetId | — |
+
+### [[timeattributefieldcomponentpvo|TimeAttributeFieldComponentPVO]] (GL · BICC: 7/23)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ALLOWED_SCOPE | AllowedScope | — |
+| ATTRIBUTE_CATEGORY | AttributeCategory | — |
+| ATTRIBUTE_GROUP | AttributeGroup | — |
+| ATTRIBUTE_TYPE | AttributeType | — |
+| BASE_UNIT | TimeAttributeFieldPEOBaseUnit | — |
+| CLASS | Class11 | — |
+| COMP_DISP_CODE | ComponentDisplayCode | — |
+| CREATED_BY | CreatedBy | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| ENTERPRISE_ID | EnterpriseId | — |
+| GLOBAL_TM_ATRB_FLD_ID | TimeAttributeFieldPEOGlobalTmAtrbFldId | — |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | LastUpdatedBy | ✅ |
+| MANDATORY_FOR_TCSMRS | MandatoryForTimeConsumers | — |
+| MODULE_ID | ModuleId | — |
+| NAME | Name | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | — |
+| PARENT_TM_ATRB_FLD_ID | ParentTimeAttributeFieldId | — |
+| TCSMRS_ID | TimeConsumersId | — |
+| TM_ATRB_FLD_ID | TimeAttributeFieldId | ✅ |
+| VALUE_LOCATION | ValueLocation | — |
+| VALUE_SET_ID | ValueSetId | — |
+
+### [[timeattributefieldcustompvo|TimeAttributeFieldCustomPVO]] (GL · BICC: 15/23)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ALLOWED_SCOPE | AllowedScope | — |
+| ATTRIBUTE_CATEGORY | AttributeCategory | ✅ |
+| ATTRIBUTE_GROUP | AttributeGroup | — |
+| ATTRIBUTE_TYPE | AttributeType | ✅ |
+| BASE_UNIT | TimeAttributeFieldPEOBaseUnit | ✅ |
+| CLASS | Class11 | — |
+| COMP_DISP_CODE | ComponentDisplayCode | — |
+| CREATED_BY | CreatedBy | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| ENTERPRISE_ID | EnterpriseId | — |
+| GLOBAL_TM_ATRB_FLD_ID | TimeAttributeFieldPEOGlobalTmAtrbFldId | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | LastUpdatedBy | ✅ |
+| MANDATORY_FOR_TCSMRS | MandatoryForTimeConsumers | — |
+| MODULE_ID | ModuleId | — |
+| NAME | Name | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | — |
+| PARENT_TM_ATRB_FLD_ID | ParentTimeAttributeFieldId | ✅ |
+| TCSMRS_ID | TimeConsumersId | ✅ |
+| TM_ATRB_FLD_ID | TimeAttributeFieldId | ✅ |
+| VALUE_LOCATION | ValueLocation | ✅ |
+| VALUE_SET_ID | ValueSetId | ✅ |
+
+### [[timeattributefieldpvo|TimeAttributeFieldPVO]] (GL · BICC: 20/23)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ALLOWED_SCOPE | AllowedScope | ✅ |
+| ATTRIBUTE_CATEGORY | AttributeCategory | ✅ |
+| ATTRIBUTE_GROUP | AttributeGroup | — |
+| ATTRIBUTE_TYPE | AttributeType | ✅ |
+| BASE_UNIT | TimeAttributeFieldPEOBaseUnit | — |
+| CLASS | Class11 | ✅ |
+| COMP_DISP_CODE | ComponentDisplayCode | ✅ |
+| CREATED_BY | CreatedBy | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| ENTERPRISE_ID | EnterpriseId | ✅ |
+| GLOBAL_TM_ATRB_FLD_ID | TimeAttributeFieldPEOGlobalTmAtrbFldId | — |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | LastUpdatedBy | ✅ |
+| MANDATORY_FOR_TCSMRS | MandatoryForTimeConsumers | ✅ |
+| MODULE_ID | ModuleId | ✅ |
+| NAME | Name | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | ✅ |
+| PARENT_TM_ATRB_FLD_ID | ParentTimeAttributeFieldId | ✅ |
+| TCSMRS_ID | TimeConsumersId | ✅ |
+| TM_ATRB_FLD_ID | TimeAttributeFieldId | ✅ |
+| VALUE_LOCATION | ValueLocation | ✅ |
+| VALUE_SET_ID | ValueSetId | ✅ |
 
 ---
 

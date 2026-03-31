@@ -101,6 +101,89 @@ SELECT rm.name AS metodo,
 - A hierarquia é associada ao **método de recebimento** ([[ar_receipt_methods]]), não diretamente ao recebimento.
 - Para alta performance em lockbox, é recomendável que `PRIORITY_1` seja `INVOICE` (match por número da fatura) — é o critério mais rápido.
 
+## 🔗 PVOs Relacionados
+
+### [[autocashhierarchyextractpvo|AutoCashHierarchyExtractPVO]] (OTHER · BICC: 17/33)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| APPLY_PARTIAL_PAYMENTS | ArAutoCashHierarchyApplyPartialPayments | ✅ |
+| ATTRIBUTE1 | ArAutoCashHierarchyAttribute1 | — |
+| ATTRIBUTE10 | ArAutoCashHierarchyAttribute10 | — |
+| ATTRIBUTE11 | ArAutoCashHierarchyAttribute11 | — |
+| ATTRIBUTE12 | ArAutoCashHierarchyAttribute12 | — |
+| ATTRIBUTE13 | ArAutoCashHierarchyAttribute13 | — |
+| ATTRIBUTE14 | ArAutoCashHierarchyAttribute14 | — |
+| ATTRIBUTE15 | ArAutoCashHierarchyAttribute15 | — |
+| ATTRIBUTE2 | ArAutoCashHierarchyAttribute2 | — |
+| ATTRIBUTE3 | ArAutoCashHierarchyAttribute3 | — |
+| ATTRIBUTE4 | ArAutoCashHierarchyAttribute4 | — |
+| ATTRIBUTE5 | ArAutoCashHierarchyAttribute5 | — |
+| ATTRIBUTE6 | ArAutoCashHierarchyAttribute6 | — |
+| ATTRIBUTE7 | ArAutoCashHierarchyAttribute7 | — |
+| ATTRIBUTE8 | ArAutoCashHierarchyAttribute8 | — |
+| ATTRIBUTE9 | ArAutoCashHierarchyAttribute9 | — |
+| ATTRIBUTE_CATEGORY | ArAutoCashHierarchyAttributeCategory | — |
+| AUTOCASH_HIERARCHY_ID | ArAutoCashHierarchyAutocashHierarchyId | ✅ |
+| CREATED_BY | ArAutoCashHierarchyCreatedBy | ✅ |
+| CREATION_DATE | ArAutoCashHierarchyCreationDate | ✅ |
+| DESCRIPTION | ArAutoCashHierarchyDescription | ✅ |
+| HIERARCHY_NAME | ArAutoCashHierarchyHierarchyName | ✅ |
+| INCLUDE_DISCOUNTS | ArAutoCashHierarchyIncludeDiscounts | ✅ |
+| INCLUDE_DISPUTE_ITEMS | ArAutoCashHierarchyIncludeDisputeItems | ✅ |
+| INCLUDE_FINANCE_CHARGES | ArAutoCashHierarchyIncludeFinanceCharges | ✅ |
+| LAST_UPDATE_DATE | ArAutoCashHierarchyLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ArAutoCashHierarchyLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | ArAutoCashHierarchyLastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | ArAutoCashHierarchyObjectVersionNumber | ✅ |
+| REMAINING_AMOUNT | ArAutoCashHierarchyRemainingAmount | ✅ |
+| SEED_DATA_SOURCE | ArAutoCashHierarchySeedDataSource | ✅ |
+| SET_ID | ArAutoCashHierarchySetId | ✅ |
+| STATUS | ArAutoCashHierarchyStatus | ✅ |
+
+### [[customerfinancialprofilepvo|CustomerFinancialProfilePVO]] (AR)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| APPLY_PARTIAL_PAYMENTS | AutoCshHierarchyApplyPartialPayments | — |
+| APPLY_PARTIAL_PAYMENTS | AutoCshHierarchyForAdrApplyPartialPayments | — |
+| AUTOCASH_HIERARCHY_ID | AutoCshHierarchyAutocashHierarchyId | — |
+| AUTOCASH_HIERARCHY_ID | AutoCshHierarchyForAdrAutocashHierarchyId | — |
+| DESCRIPTION | AutoCshHierarchyDescription | — |
+| DESCRIPTION | AutoCshHierarchyForAdrDescription | — |
+| HIERARCHY_NAME | AutoCshHierarchyForAdrHierarchyName | — |
+| HIERARCHY_NAME | AutoCshHierarchyHierarchyName | — |
+| INCLUDE_DISCOUNTS | AutoCshHierarchyForAdrIncludeDiscounts | — |
+| INCLUDE_DISCOUNTS | AutoCshHierarchyIncludeDiscounts | — |
+| INCLUDE_DISPUTE_ITEMS | AutoCshHierarchyForAdrIncludeDisputeItems | — |
+| INCLUDE_DISPUTE_ITEMS | AutoCshHierarchyIncludeDisputeItems | — |
+| INCLUDE_FINANCE_CHARGES | AutoCshHierarchyForAdrIncludeFinanceCharges | — |
+| INCLUDE_FINANCE_CHARGES | AutoCshHierarchyIncludeFinanceCharges | — |
+| REMAINING_AMOUNT | AutoCshHierarchyForAdrRemainingAmount | — |
+| REMAINING_AMOUNT | AutoCshHierarchyRemainingAmount | — |
+| STATUS | AutoCshHierarchyForAdrStatus | — |
+| STATUS | AutoCshHierarchyStatus | — |
+
+### [[customerprofile|CustomerProfile]] (AR · BICC: 2/4)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| AUTOCASH_HIERARCHY_ID | AutoCshHierarchyAutocashHierarchyId | — |
+| AUTOCASH_HIERARCHY_ID | AutoCshHierarchyForAdrAutocashHierarchyId | — |
+| HIERARCHY_NAME | AutoCshHierarchyForAdrHierarchyName | ✅ |
+| HIERARCHY_NAME | AutoCshHierarchyHierarchyName | ✅ |
+
+### [[customersiteprofile|CustomerSiteProfile]] (AR · BICC: 2/4)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| AUTOCASH_HIERARCHY_ID | AutoCshHierarchyAutocashHierarchyId | — |
+| AUTOCASH_HIERARCHY_ID | AutoCshHierarchyForAdrAutocashHierarchyId | — |
+| HIERARCHY_NAME | AutoCshHierarchyForAdrHierarchyName | ✅ |
+| HIERARCHY_NAME | AutoCshHierarchyHierarchyName | ✅ |
+
+---
+
 ## 📚 Referências
 
 - Oracle Fusion Cloud Financials — Accounts Receivable Tables (OEDMF Release 13)

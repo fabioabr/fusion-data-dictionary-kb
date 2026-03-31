@@ -90,3 +90,51 @@ SELECT hc.HOLD_LOOKUP_CODE,
 - Oracle Fusion Cloud Financials — Accounts Payable Tables (OEDMF Release 13).
 - Oracle BICC — AP Hold Codes Configuration Documentation.
 - Oracle Fusion Cloud ERP Schema Reference (Release 25A).
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[approvalcodeextractpvo|ApprovalCodeExtractPVO]] (OTHER · BICC: 17/17)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | ApHoldCodesCreatedBy | ✅ |
+| CREATION_DATE | ApHoldCodesCreationDate | ✅ |
+| EXTERNAL_DESCRIPTION | ApHoldCodesExternalDescription | ✅ |
+| HOLD_INSTRUCTION | ApHoldCodesHoldInstruction | ✅ |
+| HOLD_LOOKUP_CODE | ApHoldCodesHoldLookupCode | ✅ |
+| HOLD_TYPE | ApHoldCodesHoldType | ✅ |
+| INACTIVE_DATE | ApHoldCodesInactiveDate | ✅ |
+| INITIATE_WORKFLOW_FLAG | ApHoldCodesInitiateWorkflowFlag | ✅ |
+| LAST_UPDATE_DATE | ApHoldCodesLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ApHoldCodesLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | ApHoldCodesLastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | ApHoldCodesObjectVersionNumber | ✅ |
+| POSTABLE_FLAG | ApHoldCodesPostableFlag | ✅ |
+| REMINDER_DAYS | ApHoldCodesReminderDays | ✅ |
+| USER_RELEASEABLE_FLAG | ApHoldCodesUserReleaseableFlag | ✅ |
+| USER_UPDATEABLE_FLAG | ApHoldCodesUserUpdateableFlag | ✅ |
+| WAIT_BEFORE_NOTIFY_DAYS | ApHoldCodesWaitBeforeNotifyDays | ✅ |
+
+### [[approvalcodepvo|ApprovalCodePVO]] (AP · BICC: 7/17)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | ApHoldCodesCreatedBy | ✅ |
+| CREATION_DATE | ApHoldCodesCreationDate | ✅ |
+| EXTERNAL_DESCRIPTION | ApHoldCodesExternalDescription | — |
+| HOLD_INSTRUCTION | ApHoldCodesHoldInstruction | — |
+| HOLD_LOOKUP_CODE | HoldLookupCode | ✅ |
+| HOLD_TYPE | ApHoldCodesHoldType | ✅ |
+| INACTIVE_DATE | ApHoldCodesInactiveDate | ✅ |
+| INITIATE_WORKFLOW_FLAG | ApHoldCodesInitiateWorkflowFlag | — |
+| LAST_UPDATE_DATE | ApHoldCodesLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ApHoldCodesLastUpdateLogin | — |
+| LAST_UPDATED_BY | ApHoldCodesLastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | ApHoldCodesObjectVersionNumber | — |
+| POSTABLE_FLAG | ApHoldCodesPostableFlag | — |
+| REMINDER_DAYS | ApHoldCodesReminderDays | — |
+| USER_RELEASEABLE_FLAG | ApHoldCodesUserReleaseableFlag | — |
+| USER_UPDATEABLE_FLAG | ApHoldCodesUserUpdateableFlag | — |
+| WAIT_BEFORE_NOTIFY_DAYS | ApHoldCodesWaitBeforeNotifyDays | — |

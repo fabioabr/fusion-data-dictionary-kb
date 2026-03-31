@@ -113,3 +113,25 @@ ORDER BY uh.CREATION_DATE DESC;
 
 - [Oracle Docs — PER_USER_HISTORY](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/peruserhistory.html)
 - [[hcm-module-data-dictionary]] — Dossiê do módulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[userpvo|UserPVO]] (HCM · BICC: 9/13)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | UserHistoryPEOBusinessGroupId | — |
+| CREATED_BY | UserHistoryPEOCreatedBy | ✅ |
+| CREATION_DATE | UserHistoryPEOCreationDate | ✅ |
+| END_DATE | UserHistoryPEOEndDate | ✅ |
+| LAST_UPDATE_DATE | UserHistoryPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | UserHistoryPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | UserHistoryPEOLastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | UserHistoryPEOObjectVersionNumber | — |
+| START_DATE | UserHistoryPEOStartDate | ✅ |
+| USER_GUID | UserHistoryPEOUserGuid | ✅ |
+| USER_HISTORY_ID | UserHistoryPEOUserHistoryId | ✅ |
+| USER_ID | UserHistoryPEOUserId | — |
+| USERNAME | UserHistoryPEOUsername | ✅ |

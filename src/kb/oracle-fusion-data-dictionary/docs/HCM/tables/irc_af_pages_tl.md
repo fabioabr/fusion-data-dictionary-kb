@@ -111,3 +111,16 @@ WHERE  tl.PAGE_ID = :p_page_id;
 
 - [Oracle Docs — IRC_AF_PAGES_TL](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/ircafpagestl.html)
 - [[hcm-module-data-dictionary]] — Dossie do modulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[applyflowsectionpagepvo|ApplyFlowSectionPagePVO]] (HCM)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| LANGUAGE | AFPageTranslationPEOLanguage | — |
+| PAGE_ID | AFPageTranslationPEOPageId | — |
+| PAGE_NAME | AFPageTranslationPEOPageName | — |
+| SOURCE_LANG | AFPageTranslationPEOSourceLang | — |

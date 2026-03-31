@@ -112,3 +112,85 @@ WHERE  v.ENABLED_FLAG = 'Y';
 
 - [Oracle Docs — HXT_SCH_PROF_DEFAULT_VIEW](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/hxtschprofdefaultview.html)
 - [[hcm-module-data-dictionary]] — Dossie do modulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[plannedscheduleshiftentrypvo|PlannedScheduleShiftEntryPVO]] (HCM · BICC: 5/10)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ASSIGN_TO | SetupProfileAsgAssignTo | — |
+| CREATION_DATE1 | SetupOptionCreationDate | — |
+| EFFECTIVE_END_DATE | SetupOptionEffectiveEndDate | ✅ |
+| EFFECTIVE_START_DATE | SetupOptionEffectiveStartDate | ✅ |
+| GRP_INCL_MEMBER_ID | GrpInclMemberId | — |
+| INCL_MEMBER_ID | InclMemberId | — |
+| PRODUCT_AREA | ProductArea | — |
+| SETUP_OPTION_VAL_ID | SetupOptionValId | ✅ |
+| SETUP_PROFILE_ASG_ID | SetupProfileAsgId | ✅ |
+| SETUP_PROFILE_ID | SetupProfileId | ✅ |
+
+### [[publishedscheduleshiftentrypvo|PublishedScheduleShiftEntryPVO]] (HCM · BICC: 5/10)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ASSIGN_TO | SetupProfileAsgAssignTo | — |
+| CREATION_DATE1 | SetupOptionCreationDate | — |
+| EFFECTIVE_END_DATE | SetupOptionEffectiveEndDate | ✅ |
+| EFFECTIVE_START_DATE | SetupOptionEffectiveStartDate | ✅ |
+| GRP_INCL_MEMBER_ID | GrpInclMemberId | — |
+| INCL_MEMBER_ID | InclMemberId | — |
+| PRODUCT_AREA | ProductArea | — |
+| SETUP_OPTION_VAL_ID | SetupOptionValId | ✅ |
+| SETUP_PROFILE_ASG_ID | SetupProfileAsgId | ✅ |
+| SETUP_PROFILE_ID | SetupProfileId | ✅ |
+
+### [[scheduledaypvo|ScheduleDayPVO]] (HCM · BICC: 1/6)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATION_DATE1 | BISchedulerProfileOptionPEOCreationDate1 | — |
+| EFFECTIVE_END_DATE | BISchedulerProfileOptionPEOEffectiveEndDate | — |
+| EFFECTIVE_START_DATE | BISchedulerProfileOptionPEOEffectiveStartDate | ✅ |
+| INCL_MEMBER_ID | BISchedulerProfileOptionPEOInclMemberId | — |
+| SETUP_OPTION_VAL_ID | BISchedulerProfileOptionPEOSetupOptionValId | — |
+| SETUP_PROFILE_ASG_ID | BISchedulerProfileOptionPEOSetupProfileAsgId | — |
+
+### [[schedulerprofileoptionpvo|SchedulerProfileOptionPVO]] (GL · BICC: 18/32)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | CreatedBy | ✅ |
+| CREATED_BY1 | CreatedBy1 | — |
+| CREATION_DATE | CreationDate | ✅ |
+| CREATION_DATE1 | CreationDate1 | — |
+| DATE_FROM | DateFrom | — |
+| DATE_TO | DateTo | — |
+| DESCRIPTION | Description | ✅ |
+| EFFECTIVE_END_DATE | EffectiveEndDate | ✅ |
+| EFFECTIVE_START_DATE | EffectiveStartDate | ✅ |
+| FIRST_DAY_OF_WEEK | FirstDayOfWeek | — |
+| GROUP_MANAGER_ID | GroupManagerId | ✅ |
+| GRP_ID | GrpId | — |
+| GRP_INCL_MEMBER_ID | GrpInclMemberId | — |
+| INCL_MEMBER_ID | InclMemberId | — |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_DATE1 | LastUpdateDate1 | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | ✅ |
+| LAST_UPDATE_LOGIN1 | LastUpdateLogin1 | — |
+| LAST_UPDATED_BY | LastUpdatedBy | ✅ |
+| LAST_UPDATED_BY1 | LastUpdatedBy1 | — |
+| NAME | Name | ✅ |
+| OVER_STAFF_THRESHOLD | OverStaffThreshold | ✅ |
+| PRECEDENCE | Precedence | — |
+| PRODUCT_AREA | ProductArea | — |
+| SCHEDULING_GROUP_ID | SchedulingGroupId | — |
+| SETUP_OPTION_VAL_CD | SetupOptionValCd | ✅ |
+| SETUP_OPTION_VAL_ID | SetupOptionValId | ✅ |
+| SETUP_PROFILE_ASG_ID | SetupProfileAsgId | ✅ |
+| SETUP_PROFILE_CD | SetupProfileCd | ✅ |
+| SETUP_PROFILE_ID | SetupProfileId | ✅ |
+| TYPE | Type | — |
+| UNDER_STAFF_THRESHOLD | UnderStaffThreshold | ✅ |

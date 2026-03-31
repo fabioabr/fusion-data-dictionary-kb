@@ -88,6 +88,164 @@ SELECT rdd.RECON_DIFFERENCE_ID,
 - Utilizar em conjunto com [[ar_recon_summary_details]] para visão macro + micro das diferenças.
 - Filtrar sempre por `ORG_ID` para garantir contexto correto de business unit.
 
+## 🔗 PVOs Relacionados
+
+### [[adjustmentdistributionpvo|AdjustmentDistributionPVO]] (AR)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACCOUNTED_AMOUNT | ReconDiffAccountedAmount | — |
+| ACCOUNTING_DATE | ReconDiffAccountingDate | — |
+| CAUSE_OF_DIFFERENCE_CODE | ReconDiffCauseOfDifferenceCode | — |
+| CREATED_BY | ReconDiffCreatedBy | — |
+| CREATION_DATE | ReconDiffCreationDate | — |
+| DOCUMENT_DISTRIBUTION_ID | ReconDiffDocumentDistributionId | — |
+| DOCUMENT_ID | ReconDiffDocumentId | — |
+| JOB_DEFINITION_NAME | ReconDiffJobDefinitionName | — |
+| JOB_DEFINITION_PACKAGE | ReconDiffJobDefinitionPackage | — |
+| LAST_UPDATE_DATE | ReconDiffLastUpdateDate | — |
+| LAST_UPDATE_LOGIN | ReconDiffLastUpdateLogin | — |
+| LAST_UPDATED_BY | ReconDiffLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | ReconDiffObjectVersionNumber | — |
+| ORG_ID | ReconDiffOrgId | — |
+| RECON_ITEM_CODE | ReconDiffReconItemCode | — |
+| RECON_TRX_ID | ReconDiffReconTrxId | — |
+| REQUEST_ID | ReconDiffRequestId | — |
+
+### [[creditmemoapplicationdistributionpvo|CreditMemoApplicationDistributionPVO]] (AR)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACCOUNTED_AMOUNT | ReconDiffAccountedAmount | — |
+| ACCOUNTING_DATE | ReconDiffAccountingDate | — |
+| CAUSE_OF_DIFFERENCE_CODE | ReconDiffCauseOfDifferenceCode | — |
+| CREATED_BY | ReconDiffCreatedBy | — |
+| CREATION_DATE | ReconDiffCreationDate | — |
+| DOCUMENT_DISTRIBUTION_ID | ReconDiffDocumentDistributionId | — |
+| DOCUMENT_ID | ReconDiffDocumentId | — |
+| JOB_DEFINITION_NAME | ReconDiffJobDefinitionName | — |
+| JOB_DEFINITION_PACKAGE | ReconDiffJobDefinitionPackage | — |
+| LAST_UPDATE_DATE | ReconDiffLastUpdateDate | — |
+| LAST_UPDATE_LOGIN | ReconDiffLastUpdateLogin | — |
+| LAST_UPDATED_BY | ReconDiffLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | ReconDiffObjectVersionNumber9 | — |
+| ORG_ID | ReconDiffOrgId | — |
+| RECON_ITEM_CODE | ReconDiffReconItemCode | — |
+| RECON_TRX_ID | ReconDiffReconTrxId | — |
+| REQUEST_ID | ReconDiffRequestId | — |
+
+### [[receiptapplicationdistributionpvo|ReceiptApplicationDistributionPVO]] (AR)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACCOUNTED_AMOUNT | ReconDiffAccountedAmount | — |
+| ACCOUNTING_DATE | ReconDiffAccountingDate | — |
+| CAUSE_OF_DIFFERENCE_CODE | ReconDiffCauseOfDiffCode | — |
+| CREATED_BY | ReconDiffCreatedBy | — |
+| CREATION_DATE | ReconDiffCreationDate | — |
+| DOCUMENT_DISTRIBUTION_ID | ReconDiffDocDistId | — |
+| DOCUMENT_ID | ReconDiffDocumentId | — |
+| JOB_DEFINITION_NAME | ReconDiffJobDefinitionName | — |
+| JOB_DEFINITION_PACKAGE | ReconDiffJobDefinitionPackage | — |
+| LAST_UPDATE_DATE | ReconDiffLastUpdateDate | — |
+| LAST_UPDATE_LOGIN | ReconDiffLastUpdateLogin | — |
+| LAST_UPDATED_BY | ReconDiffLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | ReconDiffObjectVersionNumber1 | — |
+| ORG_ID | ReconDiffOrgId | — |
+| RECON_ITEM_CODE | ReconDiffReconItemCode | — |
+| RECON_TRX_ID | ReconDiffReconTrxId | — |
+| REQUEST_ID | ReconDiffRequestId | — |
+
+### [[receiptapplicationdistributionvc|ReceiptApplicationDistributionVC]] (AR)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACCOUNTED_AMOUNT | ReconDiffAccountedAmount | — |
+| ACCOUNTING_DATE | ReconDiffAccountingDate | — |
+| CAUSE_OF_DIFFERENCE_CODE | ReconDiffCauseOfDiffCode | — |
+| CREATED_BY | ReconDiffCreatedBy | — |
+| CREATION_DATE | ReconDiffCreationDate | — |
+| DOCUMENT_DISTRIBUTION_ID | ReconDiffDocDistId | — |
+| DOCUMENT_ID | ReconDiffDocumentId | — |
+| JOB_DEFINITION_NAME | ReconDiffJobDefinitionName | — |
+| JOB_DEFINITION_PACKAGE | ReconDiffJobDefinitionPackage | — |
+| LAST_UPDATE_DATE | ReconDiffLastUpdateDate | — |
+| LAST_UPDATE_LOGIN | ReconDiffLastUpdateLogin | — |
+| LAST_UPDATED_BY | ReconDiffLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | ReconDiffObjectVersionNumber1 | — |
+| ORG_ID | ReconDiffOrgId | — |
+| RECON_ITEM_CODE | ReconDiffReconItemCode | — |
+| RECON_TRX_ID | ReconDiffReconTrxId | — |
+| REQUEST_ID | ReconDiffRequestId | — |
+
+### [[receipthistorydistributionpvo|ReceiptHistoryDistributionPVO]] (AR)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACCOUNTED_AMOUNT | ReconDiffAccountedAmount | — |
+| ACCOUNTING_DATE | ReconDiffAccountingDate | — |
+| CAUSE_OF_DIFFERENCE_CODE | ReconDiffCauseOfDifferenceCode | — |
+| CREATED_BY | ReconDiffCreatedBy | — |
+| CREATION_DATE | ReconDiffCreationDate | — |
+| DOCUMENT_DISTRIBUTION_ID | ReconDiffDocumentDistributionId | — |
+| DOCUMENT_ID | ReconDiffDocumentId | — |
+| JOB_DEFINITION_NAME | ReconDiffJobDefinitionName | — |
+| JOB_DEFINITION_PACKAGE | ReconDiffJobDefinitionPackage | — |
+| LAST_UPDATE_DATE | ReconDiffLastUpdateDate | — |
+| LAST_UPDATE_LOGIN | ReconDiffLastUpdateLogin | — |
+| LAST_UPDATED_BY | ReconDiffLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | ReconDiffObjectVersionNumber | — |
+| ORG_ID | ReconDiffOrgId | — |
+| RECON_ITEM_CODE | ReconDiffReconItemCode | — |
+| RECON_TRX_ID | ReconDiffReconTrxId | — |
+| REQUEST_ID | ReconDiffRequestId | — |
+
+### [[transactionhistorydistributionpvo|TransactionHistoryDistributionPVO]] (AR)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACCOUNTED_AMOUNT | ReconDiffAccountedAmount | — |
+| ACCOUNTING_DATE | ReconDiffAccountingDate | — |
+| CAUSE_OF_DIFFERENCE_CODE | ReconDiffCauseOfDifferenceCode | — |
+| CREATED_BY | ReconDiffCreatedBy | — |
+| CREATION_DATE | ReconDiffCreationDate | — |
+| DOCUMENT_DISTRIBUTION_ID | ReconDiffDocumentDistributionId | — |
+| DOCUMENT_ID | ReconDiffDocumentId | — |
+| JOB_DEFINITION_NAME | ReconDiffJobDefinitionName | — |
+| JOB_DEFINITION_PACKAGE | ReconDiffJobDefinitionPackage | — |
+| LAST_UPDATE_DATE | ReconDiffLastUpdateDate | — |
+| LAST_UPDATE_LOGIN | ReconDiffLastUpdateLogin | — |
+| LAST_UPDATED_BY | ReconDiffLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | ReconDiffObjectVersionNumber | — |
+| ORG_ID | ReconDiffOrgId | — |
+| RECON_ITEM_CODE | ReconDiffReconItemCode | — |
+| RECON_TRX_ID | ReconDiffReconTrxId | — |
+| REQUEST_ID | ReconDiffRequestId | — |
+
+### [[transactionlinedistributionpvo|TransactionLineDistributionPVO]] (AR)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACCOUNTED_AMOUNT | ReconDiffAccountedAmount | — |
+| ACCOUNTING_DATE | ReconDiffAccountingDate | — |
+| CAUSE_OF_DIFFERENCE_CODE | ReconDiffCauseOfDifferenceCode | — |
+| CREATED_BY | ReconDiffCreatedBy | — |
+| CREATION_DATE | ReconDiffCreationDate | — |
+| DOCUMENT_DISTRIBUTION_ID | ReconDiffDocDistId | — |
+| DOCUMENT_ID | ReconDiffDocumentId | — |
+| JOB_DEFINITION_NAME | ReconDiffJobDefinitionName | — |
+| JOB_DEFINITION_PACKAGE | ReconDiffJobDefinitionPackage | — |
+| LAST_UPDATE_DATE | ReconDiffLastUpdateDate | — |
+| LAST_UPDATE_LOGIN | ReconDiffLastUpdateLogin | — |
+| LAST_UPDATED_BY | ReconDiffLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | ReconDiffObjectVersionNumber | — |
+| ORG_ID | ReconDiffOrgId | — |
+| RECON_ITEM_CODE | ReconDiffReconItemCode | — |
+| RECON_TRX_ID | ReconDiffReconTrxId | — |
+| REQUEST_ID | ReconDiffRequestId | — |
+
+---
+
 ## 📚 Referências
 
 - Oracle Fusion Cloud Financials — Accounts Receivable Tables (OEDMF Release 13).

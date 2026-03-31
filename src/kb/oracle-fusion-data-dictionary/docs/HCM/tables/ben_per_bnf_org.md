@@ -38,7 +38,6 @@ updated_at: 2026-03-25
 
 Armazena os **beneficiários designados** pelos participantes de planos de benefícios (ex.: beneficiários de seguro de vida).
 
-
 ---
 
 ## 🧠 Propósito de Negócio
@@ -98,6 +97,33 @@ WHERE  ROWNUM <= 100;
 
 - Consultar documentação oficial Oracle para detalhes de uso.
 - Tabela do módulo Benefits (Beneficiários por Organização).
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[beneficiaryorganizationpvo|BeneficiaryOrganizationPVO]] (HCM · BICC: 11/18)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BNF_ORGANIZATION_ID | BeneficiaryOrganizationPEOBnfOrganizationId | ✅ |
+| BNF_TYP_CD | BeneficiaryOrganizationPEOBnfTypCd | ✅ |
+| BUSINESS_GROUP_ID | BeneficiaryOrganizationPEOBusinessGroupId | — |
+| CREATED_BY | BeneficiaryOrganizationPEOCreatedBy | — |
+| CREATION_DATE | BeneficiaryOrganizationPEOCreationDate | — |
+| END_DATE | BeneficiaryOrganizationPEOEndDate | ✅ |
+| LAST_UPDATE_DATE | BeneficiaryOrganizationPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | BeneficiaryOrganizationPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | BeneficiaryOrganizationPEOLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | BeneficiaryOrganizationPEOObjectVersionNumber | — |
+| PER_BNF_ORG_ID | BeneficiaryOrganizationPEOPerBnfOrgId | ✅ |
+| PERSON_ID | BeneficiaryOrganizationPEOPersonId | — |
+| START_DATE | BeneficiaryOrganizationPEOStartDate | ✅ |
+| TRUSTEE_ADDL_DETAILS | BeneficiaryOrganizationPEOTrusteeAddlDetails | ✅ |
+| TRUSTEE_EXECUTOR_NAME | BeneficiaryOrganizationPEOTrusteeExecutorName | ✅ |
+| TRUSTEE_ORG_DESCRIPTION | BeneficiaryOrganizationPEOTrusteeOrgDescription | ✅ |
+| TRUSTEE_ORG_NAME | BeneficiaryOrganizationPEOTrusteeOrgName | ✅ |
+| TRUSTEE_ORG_REG_CD | BeneficiaryOrganizationPEOTrusteeOrgRegCd | ✅ |
 
 ---
 

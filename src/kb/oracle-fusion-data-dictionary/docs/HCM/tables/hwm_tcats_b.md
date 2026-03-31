@@ -38,7 +38,6 @@ Tabela base que define as categorias de cartão de ponto (time card categories),
 > [!note] Sufixo _B
 > O sufixo `_B` indica tabela **base** — contém os dados não traduzíveis. A tabela correspondente `_TL` armazena as traduções.
 
-
 ---
 
 ## 🧠 Propósito de Negócio
@@ -103,6 +102,48 @@ WHERE  NVL(t.ENABLED_FLAG, 'Y') = 'Y'
 
 - Tabela base: contém dados não traduzíveis. Utilize a view `_VL` correspondente para consultas com tradução.
 - Área funcional: Time Card dentro do Oracle Fusion Cloud HCM.
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[timecategoryexprresultp|TimeCategoryExprResultP]] (GL · BICC: 9/14)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | TimeCategoryBPEOCreatedBy | ✅ |
+| CREATION_DATE | TimeCategoryBPEOCreationDate | ✅ |
+| ENTERPRISE_ID | TimeCategoryBPEOEnterpriseId | — |
+| LAST_UPDATE_DATE | TimeCategoryBPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | TimeCategoryBPEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | TimeCategoryBPEOLastUpdatedBy | ✅ |
+| MODULE_ID | TimeCategoryBPEOModuleId | — |
+| OBJECT_VERSION_NUMBER | TimeCategoryBPEOObjectVersionNumber | — |
+| PERSISTENT_FLAG | TimeCategoryBPEOPersistentFlag | ✅ |
+| SEED_DATA_SOURCE | TimeCategoryBPEOSeedDataSource | — |
+| SGUID | TimeCategoryBPEOSguid | — |
+| TCAT_CD | TimeCategoryBPEOTcatCd | ✅ |
+| TCAT_ID | TimeCategoryBPEOTcatId | ✅ |
+| UOM | TimeCategoryBPEOUom | ✅ |
+
+### [[timecategoryp|TimeCategoryP]] (GL · BICC: 7/14)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | TimeCategoryBPEOCreatedBy | — |
+| CREATION_DATE | TimeCategoryBPEOCreationDate | — |
+| ENTERPRISE_ID | TimeCategoryBPEOEnterpriseId | — |
+| LAST_UPDATE_DATE | TimeCategoryBPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | TimeCategoryBPEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | TimeCategoryBPEOLastUpdatedBy | ✅ |
+| MODULE_ID | TimeCategoryBPEOModuleId | — |
+| OBJECT_VERSION_NUMBER | TimeCategoryBPEOObjectVersionNumber | — |
+| PERSISTENT_FLAG | TimeCategoryBPEOPersistentFlag | ✅ |
+| SEED_DATA_SOURCE | TimeCategoryBPEOSeedDataSource | — |
+| SGUID | TimeCategoryBPEOSguid | — |
+| TCAT_CD | TimeCategoryBPEOTcatCd | ✅ |
+| TCAT_ID | TcatId | ✅ |
+| UOM | TimeCategoryBPEOUom | ✅ |
 
 ---
 

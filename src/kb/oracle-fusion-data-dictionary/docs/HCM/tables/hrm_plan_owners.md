@@ -95,6 +95,28 @@ WHERE  po.PLAN_ID = :p_id;
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[planownerspvo|PlanOwnersPVO]] (HCM · BICC: 11/13)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | CreatedBy | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| DATE_FROM | PlanOwnerPEODateFrom | — |
+| ENTERPRISE_ID | PlanOwnerPEOEnterpriseId | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | LastUpdatedBy | ✅ |
+| LATEST_RECORD_FLAG | PlanOwnerPEOLatestRecordFlag | — |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | ✅ |
+| OWNER_TYPE_CODE | PlanOwnerPEOOwnerTypeCodeLookupCode | ✅ |
+| PERSON_ID | PlanOwnerPEOPersonId | ✅ |
+| PLAN_ID | PlanOwnerPEOPlanId | ✅ |
+| PLAN_OWNER_ID | PlanOwnerPEOPlanOwnerId | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Fusion HCM Tables and Views](https://docs.oracle.com/en/cloud/saas/human-resources/25a/)

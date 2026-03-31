@@ -99,6 +99,33 @@ WHERE  c.PAYROLL_REL_ACTION_ID = :p_rel_action_id;
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[payrollruncosting|PayrollRunCosting]] (GL · BICC: 11/18)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BALANCE_OR_COST | PayCostBalanceOrCost | ✅ |
+| COST_ALLOCATION_KEYFLEX_ID | PayCostCostAllocationKeyflexId | — |
+| COST_ID | CostId | ✅ |
+| COSTED_VALUE | PayCostCostedValue | ✅ |
+| DEBIT_OR_CREDIT | PayCostDebitOrCredit | ✅ |
+| DISTRIBUTED_INPUT_VALUE_ID | PayCostDistributedInputValueId | — |
+| DISTRIBUTED_RUN_RESULT_ID | PayCostDistributedRunResultId | — |
+| END_DATE | PayCostEndDate | — |
+| ID_FLEX_NUM | PayCostIdFlexNum | ✅ |
+| INPUT_VALUE_ID | PayCostInputValueId | — |
+| PAYROLL_REL_ACTION_ID | PayCostPayrollRelationshipActionId | — |
+| RUN_RESULT_ID | PayCostRunResultId | ✅ |
+| SECONDARY_STATUS | PayCostSecondaryStatus | ✅ |
+| SEQUENCE | PayCostSequence | ✅ |
+| SOURCE_ID | PayCostSourceId | ✅ |
+| START_DATE | PayCostStartDate | — |
+| STATUS | PayCostStatus | ✅ |
+| TRANSFER_TO_GL_FLAG | PayCostTransferToGlFlag | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — PAY_COSTS](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/paycosts.html)

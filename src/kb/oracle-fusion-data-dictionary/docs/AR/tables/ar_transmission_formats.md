@@ -100,6 +100,44 @@ SELECT format_type,
 - Esta tabela é **compartilhada** entre todas as BUs (não particionada por ORG_ID).
 - Em migrações de EBS para Fusion, os formatos de transmissão geralmente precisam ser reconfigurados, pois o Fusion usa a camada de Payments (IBY) para transmissão.
 
+## 🔗 PVOs Relacionados
+
+### [[transmissionformatextractpvo|TransmissionFormatExtractPVO]] (OTHER · BICC: 13/29)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ATTRIBUTE1 | ArTransmissionFormatAttribute1 | — |
+| ATTRIBUTE10 | ArTransmissionFormatAttribute10 | — |
+| ATTRIBUTE11 | ArTransmissionFormatAttribute11 | — |
+| ATTRIBUTE12 | ArTransmissionFormatAttribute12 | — |
+| ATTRIBUTE13 | ArTransmissionFormatAttribute13 | — |
+| ATTRIBUTE14 | ArTransmissionFormatAttribute14 | — |
+| ATTRIBUTE15 | ArTransmissionFormatAttribute15 | — |
+| ATTRIBUTE2 | ArTransmissionFormatAttribute2 | — |
+| ATTRIBUTE3 | ArTransmissionFormatAttribute3 | — |
+| ATTRIBUTE4 | ArTransmissionFormatAttribute4 | — |
+| ATTRIBUTE5 | ArTransmissionFormatAttribute5 | — |
+| ATTRIBUTE6 | ArTransmissionFormatAttribute6 | — |
+| ATTRIBUTE7 | ArTransmissionFormatAttribute7 | — |
+| ATTRIBUTE8 | ArTransmissionFormatAttribute8 | — |
+| ATTRIBUTE9 | ArTransmissionFormatAttribute9 | — |
+| ATTRIBUTE_CATEGORY | ArTransmissionFormatAttributeCategory | — |
+| CREATED_BY | ArTransmissionFormatCreatedBy | ✅ |
+| CREATION_DATE | ArTransmissionFormatCreationDate | ✅ |
+| DESCRIPTION | ArTransmissionFormatDescription | ✅ |
+| FORMAT_NAME | ArTransmissionFormatFormatName | ✅ |
+| LAST_UPDATE_DATE | ArTransmissionFormatLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ArTransmissionFormatLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | ArTransmissionFormatLastUpdatedBy | ✅ |
+| MODULE_ID | ArTransmissionFormatModuleId | ✅ |
+| OBJECT_VERSION_NUMBER | ArTransmissionFormatObjectVersionNumber | ✅ |
+| SEED_DATA_SOURCE | ArTransmissionFormatSeedDataSource | ✅ |
+| STATUS_LOOKUP_CODE | ArTransmissionFormatStatusLookupCode | ✅ |
+| TRANSMISSION_FORMAT_ID | ArTransmissionFormatTransmissionFormatId | ✅ |
+| ZENGIN_CHAR_SET | ArTransmissionFormatZenginCharSet | ✅ |
+
+---
+
 ## 📚 Referências
 
 - Oracle Fusion Cloud Financials — Accounts Receivable Tables (OEDMF Release 13)

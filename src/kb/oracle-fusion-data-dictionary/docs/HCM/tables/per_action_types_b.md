@@ -104,6 +104,40 @@ WHERE  pat.ACTIVE_FLAG = 'Y';
 - Exemplos comuns: HIRE_TYPE, SEPARATION_TYPE, ASSIGNMENT_CHANGE_TYPE.
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[actionoccurrencespvo|ActionOccurrencesPVO]] (GL · BICC: 1/10)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_TYPE_CODE | ActionTypesPEOActionTypeCode | — |
+| ACTION_TYPE_ID | ActionTypesPEOActionTypeId | — |
+| BUSINESS_GROUP_ID | ActionTypesPEOBusinessGroupId | — |
+| CREATED_BY | ActionTypesPEOCreatedBy | — |
+| CREATION_DATE | ActionTypesPEOCreationDate | — |
+| LAST_UPDATE_DATE | ActionTypesPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ActionTypesPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | ActionTypesPEOLastUpdatedBy | — |
+| MODULE_ID | ActionTypesPEOModuleId | — |
+| OBJECT_VERSION_NUMBER | ActionTypesPEOObjectVersionNumber | — |
+
+### [[actiontypespvo|ActionTypesPVO]] (GL · BICC: 8/10)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_TYPE_CODE | ActionTypesPEOActionTypeCode | ✅ |
+| ACTION_TYPE_ID | ActionTypeId | ✅ |
+| BUSINESS_GROUP_ID | ActionTypesPEOBusinessGroupId | ✅ |
+| CREATED_BY | ActionTypesPEOCreatedBy | ✅ |
+| CREATION_DATE | ActionTypesPEOCreationDate | ✅ |
+| LAST_UPDATE_DATE | ActionTypesPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ActionTypesPEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | ActionTypesPEOLastUpdatedBy | ✅ |
+| MODULE_ID | ActionTypesPEOModuleId | — |
+| OBJECT_VERSION_NUMBER | ActionTypesPEOObjectVersionNumber | — |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — PER_ACTION_TYPES_B](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/peractiontypesb.html)

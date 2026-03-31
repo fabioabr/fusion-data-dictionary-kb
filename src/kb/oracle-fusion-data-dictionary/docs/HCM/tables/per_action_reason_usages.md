@@ -105,6 +105,30 @@ WHERE  paru.ACTION_ID = :p_action_id
 - A flag `ENABLED_FLAG` permite desativar associações sem excluí-las.
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[actionreasonsusagespvo|ActionReasonsUsagesPVO]] (GL · BICC: 4/15)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_CODE | ActionReasonUsagesPEOActionCode | — |
+| ACTION_ID | ActionReasonUsagesPEOActionId | ✅ |
+| ACTION_REASON_CODE | ActionReasonUsagesPEOActionReasonCode | — |
+| ACTION_REASON_ID | ActionReasonUsagesPEOActionReasonId | ✅ |
+| ACTION_REASON_USAGE_ID | ActionReasonUsageId | ✅ |
+| BUSINESS_GROUP_ID | ActionReasonUsagesPEOBusinessGroupId | — |
+| CREATED_BY | ActionReasonUsagesPEOCreatedBy | — |
+| CREATION_DATE | ActionReasonUsagesPEOCreationDate | — |
+| END_DATE | ActionReasonUsagesPEOEndDate | — |
+| LAST_UPDATE_DATE | ActionReasonUsagesPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ActionReasonUsagesPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | ActionReasonUsagesPEOLastUpdatedBy | — |
+| MODULE_ID | ActionReasonUsagesPEOModuleId | — |
+| OBJECT_VERSION_NUMBER | ActionReasonUsagesPEOObjectVersionNumber | — |
+| START_DATE | ActionReasonUsagesPEOStartDate | — |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — PER_ACTION_REASON_USAGES](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/peractionreasonusages.html)

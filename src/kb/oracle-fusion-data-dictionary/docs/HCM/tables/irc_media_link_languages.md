@@ -98,3 +98,14 @@ FROM   IRC_MEDIA_LINK_LANGUAGES mll WHERE mll.MEDIA_LINK_ID = :p_id;
 
 - [Oracle Docs -- IRC_MEDIA_LINK_LANGUAGES](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/ircmedialinklanguages.html)
 - [[hcm-module-data-dictionary]] -- Dossie do modulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[requisitionmedialinkpvo|RequisitionMediaLinkPVO]] (PO · BICC: 2/2)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| LANGUAGE_CODE | MediaLinkLanguagePEOLanguageCode | ✅ |
+| MEDIA_LINK_LANGUAGE_ID | MediaLinkLanguageId | ✅ |

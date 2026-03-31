@@ -99,6 +99,95 @@ WHERE  rg.PAYROLL_ID = :p_payroll_id
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[bipayrollrelationshipgroupdpvo|BIPayrollRelationshipGroupDPVO]] (HCM · BICC: 14/80)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ASSIGNMENT_STATUS_TYPE_ID | PayrollRelationshipGroupDPEOAssignmentStatusTypeId | ✅ |
+| CREATED_BY | PayrollRelationshipGroupDPEOCreatedBy | ✅ |
+| CREATION_DATE | PayrollRelationshipGroupDPEOCreationDate | ✅ |
+| EFFECTIVE_END_DATE | PayrollRelationshipGroupDPEOEffectiveEndDate | ✅ |
+| EFFECTIVE_START_DATE | PayrollRelationshipGroupDPEOEffectiveStartDate | ✅ |
+| ELEMENT_CRITERIA_ID | PayrollRelationshipGroupDPEOElementCriteriaId | ✅ |
+| ENTERPRISE_ID | PayrollRelationshipGroupDPEOEnterpriseId | ✅ |
+| LAST_UPDATE_DATE | PayrollRelationshipGroupDPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | PayrollRelationshipGroupDPEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | PayrollRelationshipGroupDPEOLastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | PayrollRelationshipGroupDPEOObjectVersionNumber | ✅ |
+| OVERRIDING_PERIOD_ID | PayrollRelationshipGroupDPEOOverridingPeriodId | ✅ |
+| REL_INFORMATION1 | PayrollRelationshipGroupDPEORelInformation1 | — |
+| REL_INFORMATION10 | PayrollRelationshipGroupDPEORelInformation10 | — |
+| REL_INFORMATION11 | PayrollRelationshipGroupDPEORelInformation11 | — |
+| REL_INFORMATION12 | PayrollRelationshipGroupDPEORelInformation12 | — |
+| REL_INFORMATION13 | PayrollRelationshipGroupDPEORelInformation13 | — |
+| REL_INFORMATION14 | PayrollRelationshipGroupDPEORelInformation14 | — |
+| REL_INFORMATION15 | PayrollRelationshipGroupDPEORelInformation15 | — |
+| REL_INFORMATION16 | PayrollRelationshipGroupDPEORelInformation16 | — |
+| REL_INFORMATION17 | PayrollRelationshipGroupDPEORelInformation17 | — |
+| REL_INFORMATION18 | PayrollRelationshipGroupDPEORelInformation18 | — |
+| REL_INFORMATION19 | PayrollRelationshipGroupDPEORelInformation19 | — |
+| REL_INFORMATION2 | PayrollRelationshipGroupDPEORelInformation2 | — |
+| REL_INFORMATION20 | PayrollRelationshipGroupDPEORelInformation20 | — |
+| REL_INFORMATION21 | PayrollRelationshipGroupDPEORelInformation21 | — |
+| REL_INFORMATION22 | PayrollRelationshipGroupDPEORelInformation22 | — |
+| REL_INFORMATION23 | PayrollRelationshipGroupDPEORelInformation23 | — |
+| REL_INFORMATION24 | PayrollRelationshipGroupDPEORelInformation24 | — |
+| REL_INFORMATION25 | PayrollRelationshipGroupDPEORelInformation25 | — |
+| REL_INFORMATION26 | PayrollRelationshipGroupDPEORelInformation26 | — |
+| REL_INFORMATION27 | PayrollRelationshipGroupDPEORelInformation27 | — |
+| REL_INFORMATION28 | PayrollRelationshipGroupDPEORelInformation28 | — |
+| REL_INFORMATION29 | PayrollRelationshipGroupDPEORelInformation29 | — |
+| REL_INFORMATION3 | PayrollRelationshipGroupDPEORelInformation3 | — |
+| REL_INFORMATION30 | PayrollRelationshipGroupDPEORelInformation30 | — |
+| REL_INFORMATION4 | PayrollRelationshipGroupDPEORelInformation4 | — |
+| REL_INFORMATION5 | PayrollRelationshipGroupDPEORelInformation5 | — |
+| REL_INFORMATION6 | PayrollRelationshipGroupDPEORelInformation6 | — |
+| REL_INFORMATION7 | PayrollRelationshipGroupDPEORelInformation7 | — |
+| REL_INFORMATION8 | PayrollRelationshipGroupDPEORelInformation8 | — |
+| REL_INFORMATION9 | PayrollRelationshipGroupDPEORelInformation9 | — |
+| REL_INFORMATION_DATE1 | PayrollRelationshipGroupDPEORelInformationDate1 | — |
+| REL_INFORMATION_DATE10 | PayrollRelationshipGroupDPEORelInformationDate10 | — |
+| REL_INFORMATION_DATE11 | PayrollRelationshipGroupDPEORelInformationDate11 | — |
+| REL_INFORMATION_DATE12 | PayrollRelationshipGroupDPEORelInformationDate12 | — |
+| REL_INFORMATION_DATE13 | PayrollRelationshipGroupDPEORelInformationDate13 | — |
+| REL_INFORMATION_DATE14 | PayrollRelationshipGroupDPEORelInformationDate14 | — |
+| REL_INFORMATION_DATE15 | PayrollRelationshipGroupDPEORelInformationDate15 | — |
+| REL_INFORMATION_DATE2 | PayrollRelationshipGroupDPEORelInformationDate2 | — |
+| REL_INFORMATION_DATE3 | PayrollRelationshipGroupDPEORelInformationDate3 | — |
+| REL_INFORMATION_DATE4 | PayrollRelationshipGroupDPEORelInformationDate4 | — |
+| REL_INFORMATION_DATE5 | PayrollRelationshipGroupDPEORelInformationDate5 | — |
+| REL_INFORMATION_DATE6 | PayrollRelationshipGroupDPEORelInformationDate6 | — |
+| REL_INFORMATION_DATE7 | PayrollRelationshipGroupDPEORelInformationDate7 | — |
+| REL_INFORMATION_DATE8 | PayrollRelationshipGroupDPEORelInformationDate8 | — |
+| REL_INFORMATION_DATE9 | PayrollRelationshipGroupDPEORelInformationDate9 | — |
+| REL_INFORMATION_NUMBER1 | PayrollRelationshipGroupDPEORelInformationNumber1 | — |
+| REL_INFORMATION_NUMBER10 | PayrollRelationshipGroupDPEORelInformationNumber10 | — |
+| REL_INFORMATION_NUMBER11 | PayrollRelationshipGroupDPEORelInformationNumber11 | — |
+| REL_INFORMATION_NUMBER12 | PayrollRelationshipGroupDPEORelInformationNumber12 | — |
+| REL_INFORMATION_NUMBER13 | PayrollRelationshipGroupDPEORelInformationNumber13 | — |
+| REL_INFORMATION_NUMBER14 | PayrollRelationshipGroupDPEORelInformationNumber14 | — |
+| REL_INFORMATION_NUMBER15 | PayrollRelationshipGroupDPEORelInformationNumber15 | — |
+| REL_INFORMATION_NUMBER16 | PayrollRelationshipGroupDPEORelInformationNumber16 | — |
+| REL_INFORMATION_NUMBER17 | PayrollRelationshipGroupDPEORelInformationNumber17 | — |
+| REL_INFORMATION_NUMBER18 | PayrollRelationshipGroupDPEORelInformationNumber18 | — |
+| REL_INFORMATION_NUMBER19 | PayrollRelationshipGroupDPEORelInformationNumber19 | — |
+| REL_INFORMATION_NUMBER2 | PayrollRelationshipGroupDPEORelInformationNumber2 | — |
+| REL_INFORMATION_NUMBER20 | PayrollRelationshipGroupDPEORelInformationNumber20 | — |
+| REL_INFORMATION_NUMBER3 | PayrollRelationshipGroupDPEORelInformationNumber3 | — |
+| REL_INFORMATION_NUMBER4 | PayrollRelationshipGroupDPEORelInformationNumber4 | — |
+| REL_INFORMATION_NUMBER5 | PayrollRelationshipGroupDPEORelInformationNumber5 | — |
+| REL_INFORMATION_NUMBER6 | PayrollRelationshipGroupDPEORelInformationNumber6 | — |
+| REL_INFORMATION_NUMBER7 | PayrollRelationshipGroupDPEORelInformationNumber7 | — |
+| REL_INFORMATION_NUMBER8 | PayrollRelationshipGroupDPEORelInformationNumber8 | — |
+| REL_INFORMATION_NUMBER9 | PayrollRelationshipGroupDPEORelInformationNumber9 | — |
+| REL_INFORMATION_TYPE | PayrollRelationshipGroupDPEORelInformationType | — |
+| RELATIONSHIP_GROUP_ID | PayrollRelationshipGroupDPEORelationshipGroupId | ✅ |
+| TIME_CARD_REQ | PayrollRelationshipGroupDPEOTimeCardReq | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — PAY_REL_GROUPS_F](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/payrelgroupsf.html)

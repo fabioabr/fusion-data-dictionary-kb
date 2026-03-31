@@ -53,3 +53,31 @@ updated_at: 2026-03-26
 ## 📎 Uso Típico
 
 (a ser preenchido na etapa 03)
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[disbursementheaderpvo|DisbursementHeaderPVO]] (AP · BICC: 2/3)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| LAST_UPDATE_DATE | PayDocLastUpdateDate | ✅ |
+| PAYMENT_DOCUMENT_ID | PayDocPaymentDocumentId | — |
+| PAYMENT_DOCUMENT_NAME | PayDocPaymentDocumentName | ✅ |
+
+### [[paiddisbursementschedulepvo|PaidDisbursementSchedulePVO]] (AP · BICC: 2/3)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| LAST_UPDATE_DATE | PayDocLastUpdateDate | ✅ |
+| PAYMENT_DOCUMENT_ID | PayDocPaymentDocumentId | — |
+| PAYMENT_DOCUMENT_NAME | PayDocPaymentDocumentName | ✅ |
+
+### [[paymenthistorydistributionpvo|PaymentHistoryDistributionPVO]] (AP · BICC: 2/3)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| LAST_UPDATE_DATE | PayDocLastUpdateDate | ✅ |
+| PAYMENT_DOCUMENT_ID | PayDocPaymentDocumentId | — |
+| PAYMENT_DOCUMENT_NAME | PayDocPaymentDocumentName | ✅ |

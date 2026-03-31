@@ -139,6 +139,53 @@ ORDER BY total_journals DESC;
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[journalsourcebpvo|JournalSourceBPVO]] (GL · BICC: 3/13)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | JrnlSrcCreatedBy | — |
+| CREATION_DATE | JrnlSrcCreationDate | — |
+| EFFECTIVE_DATE_RULE_CODE | JrnlSrcEffectiveDateRuleCode | — |
+| IMPORT_USING_KEY_FLAG | JrnlSrcImportUsingKeyFlag | — |
+| JE_SOURCE_KEY | JrnlSrcJeSourceKey | ✅ |
+| JE_SOURCE_NAME | JeSourceName | ✅ |
+| JOURNAL_APPROVAL_FLAG | JrnlSrcJournalApprovalFlag | — |
+| JOURNAL_REFERENCE_FLAG | JrnlSrcJournalReferenceFlag | — |
+| LAST_UPDATE_DATE | JrnlSrcLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | JrnlSrcLastUpdateLogin | — |
+| LAST_UPDATED_BY | JrnlSrcLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | JrnlSrcObjectVersionNumber | — |
+| OVERRIDE_EDITS_FLAG | JrnlSrcOverrideEditsFlag | — |
+
+### [[journalsourceextractpvo|JournalSourceExtractPVO]] (OTHER · BICC: 13/20)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ATTRIBUTE1 | JournalSourceAttribute1 | — |
+| ATTRIBUTE2 | JournalSourceAttribute2 | — |
+| ATTRIBUTE3 | JournalSourceAttribute3 | — |
+| ATTRIBUTE4 | JournalSourceAttribute4 | — |
+| ATTRIBUTE5 | JournalSourceAttribute5 | — |
+| ATTRIBUTE_CATEGORY | JournalSourceAttributeCategory | — |
+| CREATED_BY | JournalSourceCreatedBy | ✅ |
+| CREATION_DATE | JournalSourceCreationDate | ✅ |
+| EFFECTIVE_DATE_RULE_CODE | JournalSourceEffDateRuleCode | ✅ |
+| IMPORT_USING_KEY_FLAG | JournalSourceImpUsingKeyFlag | ✅ |
+| JE_SOURCE_KEY | JournalSourceJeSourceKey | ✅ |
+| JE_SOURCE_NAME | JournalSourceJeSourceName | ✅ |
+| JOURNAL_APPROVAL_FLAG | JournalSourceJournalApprvlFlag | ✅ |
+| JOURNAL_REFERENCE_FLAG | JournalSourceJournalRefFlag | ✅ |
+| LAST_UPDATE_DATE | JournalSourceLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | JournalSourceLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | JournalSourceLastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | JournalSourceObjectVersionNum | ✅ |
+| OVERRIDE_EDITS_FLAG | JournalSourceOverrideEditsFlag | ✅ |
+| XLA_APPROVAL_FLAG | JournalSourceXlaApprovalFlag | — |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — GL_JE_SOURCES_B](https://docs.oracle.com/en/cloud/saas/financials/25a/oedmf/gljesourcesb.html)

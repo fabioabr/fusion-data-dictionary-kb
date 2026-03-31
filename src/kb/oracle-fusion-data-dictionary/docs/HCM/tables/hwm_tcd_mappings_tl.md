@@ -38,7 +38,6 @@ Tabela de traduções dos mapeamentos de cartão de ponto, contendo labels e des
 > [!note] Sufixo _TL
 > O sufixo `_TL` indica tabela de **traduções** — armazena textos traduzidos por idioma. Chave composta: PK da tabela `_B` + `LANGUAGE`.
 
-
 ---
 
 ## 🧠 Propósito de Negócio
@@ -104,6 +103,28 @@ WHERE  t.LANGUAGE = USERENV('LANG')
 - Tabela de traduções: não utilizar diretamente em relatórios; preferir a view `_VL` correspondente.
 - Chave composta: PK do registro base + LANGUAGE.
 - Área funcional: Time Card Export dentro do Oracle Fusion Cloud HCM.
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[tcdmappingdetailpvo|TcdMappingDetailPVO]] (GL · BICC: 2/4)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| DESCRIPTION | TcdMappingTLPEODescription | ✅ |
+| LANGUAGE | TcdMappingTLPEOLanguage | — |
+| NAME | TcdMappingTLPEOName | ✅ |
+| TCD_MAPPING_ID | TcdMappingTLPEOTcdMappingId | — |
+
+### [[tcdmappingpvo|TcdMappingPVO]] (GL · BICC: 2/4)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| DESCRIPTION | TcdMappingTLPEODescription | ✅ |
+| LANGUAGE | TcdMappingTLPEOLanguage | — |
+| NAME | TcdMappingTLPEOName | ✅ |
+| TCD_MAPPING_ID | TcdMappingTLPEOTcdMappingId | — |
 
 ---
 

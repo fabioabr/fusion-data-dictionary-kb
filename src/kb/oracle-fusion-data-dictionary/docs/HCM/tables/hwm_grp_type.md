@@ -34,8 +34,6 @@ updated_at: 2026-03-25
 
 Tabela de referência que define os tipos possíveis de grupos de workforce (ex.: por departamento, projeto, habilidade), servindo como lookup para categorização.
 
-
-
 ---
 
 ## 🧠 Propósito de Negócio
@@ -98,6 +96,32 @@ WHERE  NVL(gt.ACTIVE_FLAG, 'Y') = 'Y'
 ## 🔒 Observações
 
 - Área funcional: Workforce Management dentro do Oracle Fusion Cloud HCM.
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[grouptypepvo|GroupTypePVO]] (GL · BICC: 17/17)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | CreatedBy | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| DESCRIPTION | Description | ✅ |
+| ENTERPRISE_ID | EnterpriseId | ✅ |
+| GROUP_ROW_ID | GroupRowId | ✅ |
+| GRP_LEVEL | GroupLevel | ✅ |
+| GRP_TYPE | GroupType | ✅ |
+| GRP_TYPE_ID | GroupTypeId | ✅ |
+| IS_TM_REC | IsTimeRecord | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | LastUpdatedBy | ✅ |
+| LAYER_ID | LayerId | ✅ |
+| MODULE_ID | ModuleId | ✅ |
+| NAME | Name | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | ✅ |
+| PARENT_GRP_ID | ParentGroupId | ✅ |
 
 ---
 

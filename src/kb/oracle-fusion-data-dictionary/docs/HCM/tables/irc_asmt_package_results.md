@@ -113,3 +113,32 @@ WHERE  pr.CANDIDATE_ID = :p_candidate_id;
 
 - [Oracle Docs — IRC_ASMT_PACKAGE_RESULTS](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/ircasmtpackageresults.html)
 - [[hcm-module-data-dictionary]] — Dossie do modulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[asmtpackageresultviewallpvo|AsmtPackageResultViewAllPVO]] (HCM · BICC: 12/20)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BAND | AsmtPackageResultPEOBand | ✅ |
+| COMMENTS | AsmtPackageResultPEOComments | ✅ |
+| CREATED_BY | AsmtPackageResultPEOCreatedBy | — |
+| CREATION_DATE | AsmtPackageResultPEOCreationDate | ✅ |
+| JOB_DEFINITION_NAME | AsmtPackageResultPEOJobDefinitionName | — |
+| JOB_DEFINITION_PACKAGE | AsmtPackageResultPEOJobDefinitionPackage | — |
+| LAST_UPDATE_DATE | AsmtPackageResultPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | AsmtPackageResultPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | AsmtPackageResultPEOLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | AsmtPackageResultPEOObjectVersionNumber | — |
+| PACKAGE_RESULT_ID | PackageResultId | ✅ |
+| PACKAGE_STATUS_CODE | AsmtPackageResultPEOPackageStatusCode | ✅ |
+| PERCENTILE | AsmtPackageResultPEOPercentile | ✅ |
+| REQ_PACKAGE_ID | AsmtPackageResultPEOReqPackageId | ✅ |
+| REQUEST_DATE | AsmtPackageResultPEORequestDate | ✅ |
+| REQUEST_ID | AsmtPackageResultPEORequestId | — |
+| REQUESTED_BY | AsmtPackageResultPEORequestedBy | ✅ |
+| SCORE | AsmtPackageResultPEOScore | ✅ |
+| SUBMISSION_ID | AsmtPackageResultPEOSubmissionId | ✅ |
+| TRY_COUNT | AsmtPackageResultPEOTryCount | — |

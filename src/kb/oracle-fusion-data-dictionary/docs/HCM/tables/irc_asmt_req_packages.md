@@ -109,3 +109,32 @@ ORDER BY rp.SEQUENCE_NUMBER;
 
 - [Oracle Docs — IRC_ASMT_REQ_PACKAGES](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/ircasmtreqpackages.html)
 - [[hcm-module-data-dictionary]] — Dossie do modulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[asmtpackageresultviewallpvo|AsmtPackageResultViewAllPVO]] (HCM)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ASSESSMENT_CONFIG_ID | AsmtReqPackagePEOAssessmentConfigId | — |
+| REQ_PACKAGE_ID | AsmtReqPackagePEOReqPackageId | — |
+
+### [[asmtreqpackageviewallpvo|AsmtReqPackageViewAllPVO]] (HCM · BICC: 11/13)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ASSESSMENT_CONFIG_ID | AsmtReqPackagePEOAssessmentConfigId | ✅ |
+| CREATED_BY | AsmtReqPackagePEOCreatedBy | ✅ |
+| CREATION_DATE | AsmtReqPackagePEOCreationDate | ✅ |
+| LAST_UPDATE_DATE | AsmtReqPackagePEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | AsmtReqPackagePEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | AsmtReqPackagePEOLastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | AsmtReqPackagePEOObjectVersionNumber | — |
+| PACKAGE_CODE | AsmtReqPackagePEOPackageCode | ✅ |
+| PACKAGE_SEQUENCE | AsmtReqPackagePEOPackageSequence | ✅ |
+| PHASE_ID | AsmtReqPackagePEOPhaseId | ✅ |
+| REQ_PACKAGE_ID | ReqPackageId | ✅ |
+| STATE_ID | AsmtReqPackagePEOStateId | ✅ |
+| TRIGGER_TYPE_CODE | AsmtReqPackagePEOTriggerTypeCode | ✅ |

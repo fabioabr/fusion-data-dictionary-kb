@@ -112,3 +112,16 @@ WHERE  ar.AGENT_ID = :p_agent_id
 
 - [Oracle Docs — IRC_AGENT_REQUISITIONS](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/ircagentrequisitions.html)
 - [[hcm-module-data-dictionary]] — Dossie do modulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[sourcetrackingviewallpvo|SourceTrackingViewAllPVO]] (HCM · BICC: 2/4)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| AGENT_REQUISITION_ID | JobRequisitionAgentPEOAgentRequisitionId | — |
+| CREATION_DATE | JobRequisitionAgentPEOCreationDate | ✅ |
+| INVITED_FLAG | JobRequisitionAgentPEOInvitedFlag | — |
+| LAST_UPDATE_DATE | JobRequisitionAgentPEOLastUpdateDate | ✅ |

@@ -102,6 +102,260 @@ WHERE  tl.LANGUAGE = 'PTB';
 - Sempre usar JOIN com a tabela _B para obter dados completos.
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[actionreasonspvo|ActionReasonsPVO]] (GL · BICC: 5/13)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_REASON | ActionReasonsTranslationPEOActionReason | ✅ |
+| ACTION_REASON_ID | ActionReasonsTranslationPEOActionReasonId | — |
+| BUSINESS_GROUP_ID | ActionReasonsTranslationPEOBusinessGroupId | — |
+| CREATED_BY | ActionReasonsTranslationPEOCreatedBy | — |
+| CREATION_DATE | ActionReasonsTranslationPEOCreationDate | — |
+| DESCRIPTION | ActionReasonsTranslationPEODescription | ✅ |
+| LANGUAGE | ActionReasonsTranslationPEOLanguage | ✅ |
+| LAST_UPDATE_DATE | ActionReasonsTranslationPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ActionReasonsTranslationPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | ActionReasonsTranslationPEOLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | ActionReasonsTranslationPEOObjectVersionNumber | — |
+| SEED_DATA_SOURCE | ActionReasonsTranslationPEOSeedDataSource | — |
+| SOURCE_LANG | ActionReasonsTranslationPEOSourceLang | ✅ |
+
+### [[actionreasonstranslationpvo|ActionReasonsTranslationPVO]] (GL · BICC: 3/13)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_REASON | ActionReasonsTranslationPEOActionReason | — |
+| ACTION_REASON_ID | ActionReasonId | ✅ |
+| BUSINESS_GROUP_ID | ActionReasonsTranslationPEOBusinessGroupId | — |
+| CREATED_BY | ActionReasonsTranslationPEOCreatedBy | — |
+| CREATION_DATE | ActionReasonsTranslationPEOCreationDate | — |
+| DESCRIPTION | ActionReasonsTranslationPEODescription | — |
+| LANGUAGE | Language | ✅ |
+| LAST_UPDATE_DATE | ActionReasonsTranslationPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ActionReasonsTranslationPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | ActionReasonsTranslationPEOLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | ActionReasonsTranslationPEOObjectVersionNumber | — |
+| SEED_DATA_SOURCE | ActionReasonsTranslationPEOSeedDataSource | — |
+| SOURCE_LANG | ActionReasonsTranslationPEOSourceLang | — |
+
+### [[businessunitpvo|BusinessUnitPVO]] (HCM · BICC: 1/4)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_REASON | ActionReasonsTranslationPEOActionReason | — |
+| ACTION_REASON_ID | ActionReasonsTranslationPEOActionReasonId | — |
+| LANGUAGE | ActionReasonsTranslationPEOLanguage | — |
+| LAST_UPDATE_DATE | ActionReasonsTranslationPEOLastUpdateDate | ✅ |
+
+### [[departmentpvo|DepartmentPVO]] (HCM · BICC: 2/4)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_REASON | ActionReasonsTranslationPEOActionReason | ✅ |
+| ACTION_REASON_ID | ActionReasonsTranslationPEOActionReasonId | — |
+| LANGUAGE | ActionReasonsTranslationPEOLanguage | — |
+| LAST_UPDATE_DATE | ActionReasonsTranslationPEOLastUpdateDate | ✅ |
+
+### [[departmentpvoviewall|DepartmentPVOViewAll]] (HCM · BICC: 2/4)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_REASON | ActionReasonsTranslationPEOActionReason | ✅ |
+| ACTION_REASON_ID | ActionReasonsTranslationPEOActionReasonId | — |
+| LANGUAGE | ActionReasonsTranslationPEOLanguage | — |
+| LAST_UPDATE_DATE | ActionReasonsTranslationPEOLastUpdateDate | ✅ |
+
+### [[enterprisepvo|EnterprisePVO]] (HCM)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_REASON | ActionReasonsTranslationPEOActionReason | — |
+| ACTION_REASON_ID | ActionReasonsTranslationPEOActionReasonId | — |
+| LANGUAGE | ActionReasonsTranslationPEOLanguage | — |
+| LAST_UPDATE_DATE | ActionReasonsTranslationPEOLastUpdateDate | — |
+
+### [[gradeladderpvo|GradeLadderPVO]] (GL · BICC: 2/4)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_REASON | ProgressionActionReasonsTranslationPEOActionReason | ✅ |
+| ACTION_REASON_ID | ProgressionActionReasonsTranslationPEOActionReasonId | — |
+| LANGUAGE | ProgressionActionReasonsTranslationPEOLanguage | — |
+| LAST_UPDATE_DATE | ProgressionActionReasonsTranslationPEOLastUpdateDate | ✅ |
+
+### [[gradepvo|GradePVO]] (GL · BICC: 1/3)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_REASON | ActionReasonsTLPEOActionReason | ✅ |
+| ACTION_REASON_ID | ActionReasonsTLPEOActionReasonId | — |
+| LANGUAGE | ActionReasonsTLPEOLanguage | — |
+
+### [[gradesteppvo|GradeStepPVO]] (GL)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_REASON | ActionReasonsTranslationPEOActionReason | — |
+| ACTION_REASON_ID | ActionReasonsTranslationPEOActionReasonsTranslationPEOActionReasonId | — |
+| LANGUAGE | ActionReasonsTranslationPEOLanguage | — |
+| SOURCE_LANG | ActionReasonsTranslationPEOSourceLang | — |
+
+### [[hrlocationsbasepvo|HRLocationsBasePVO]] (HCM · BICC: 2/4)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_REASON | ActionReasonTranslationPEOActionReason | ✅ |
+| ACTION_REASON_ID | ActionReasonTranslationPEOActionReasonId | — |
+| LANGUAGE | ActionReasonTranslationPEOLanguage | — |
+| LAST_UPDATE_DATE | ActionReasonsTranslationPEOLastUpdateDate | ✅ |
+
+### [[hrlocationsbasepvoviewall|HRLocationsBasePVOViewAll]] (HCM · BICC: 2/4)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_REASON | ActionReasonTranslationPEOActionReason | ✅ |
+| ACTION_REASON_ID | ActionReasonTranslationPEOActionReasonId | — |
+| LANGUAGE | ActionReasonTranslationPEOLanguage | — |
+| LAST_UPDATE_DATE | ActionReasonsTranslationPEOLastUpdateDate | ✅ |
+
+### [[hrlocationspvo|HRLocationsPVO]] (HCM · BICC: 4/4)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_REASON | ActionReasonTranslationPEOActionReason | ✅ |
+| ACTION_REASON_ID | ActionReasonTranslationPEOActionReasonId | ✅ |
+| LANGUAGE | ActionReasonTranslationPEOLanguage | ✅ |
+| LAST_UPDATE_DATE | ActionReasonsTranslationPEOLastUpdateDate | ✅ |
+
+### [[hrlocationspvoviewall|HRLocationsPVOViewAll]] (HCM · BICC: 1/4)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_REASON | ActionReasonTranslationPEOActionReason | — |
+| ACTION_REASON_ID | ActionReasonTranslationPEOActionReasonId | — |
+| LANGUAGE | ActionReasonTranslationPEOLanguage | — |
+| LAST_UPDATE_DATE | ActionReasonsTranslationPEOLastUpdateDate | ✅ |
+
+### [[legalemployerpvo|LegalEmployerPVO]] (HCM · BICC: 2/4)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_REASON | ActionReasonsTranslationPEOActionReason | ✅ |
+| ACTION_REASON_ID | ActionReasonsTranslationPEOActionReasonId | — |
+| LANGUAGE | ActionReasonsTranslationPEOLanguage | — |
+| LAST_UPDATE_DATE | ActionReasonsTranslationPEOLastUpdateDate | ✅ |
+
+### [[organizationpvo|OrganizationPVO]] (HCM)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_REASON | ActionReasonsTranslationPEOActionReason | — |
+| ACTION_REASON_ID | ActionReasonsTranslationPEOActionReasonId | — |
+| LANGUAGE | ActionReasonsTranslationPEOLanguage | — |
+| LAST_UPDATE_DATE | ActionReasonsTranslationPEOLastUpdateDate | — |
+
+### [[payrollstatutoryunitpvo|PayrollStatutoryUnitPVO]] (HCM)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_REASON | ActionReasonsTranslationPEOActionReason | — |
+| ACTION_REASON_ID | ActionReasonsTranslationPEOActionReasonId | — |
+| LANGUAGE | ActionReasonsTranslationPEOLanguage | — |
+| LAST_UPDATE_DATE | ActionReasonsTranslationPEOLastUpdateDate | — |
+
+### [[positionpvo|PositionPVO]] (PO · BICC: 2/4)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_REASON | ActionReasonsTranslationPEOActionReason | ✅ |
+| ACTION_REASON_ID | ActionReasonsTranslationPEOActionReasonId | — |
+| LANGUAGE | ActionReasonsTranslationPEOLanguage | — |
+| LAST_UPDATE_DATE | ActionReasonsTranslationPEOLastUpdateDate | ✅ |
+
+### [[positionpvoviewall|PositionPVOViewAll]] (PO · BICC: 2/4)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_REASON | ActionReasonsTranslationPEOActionReason | ✅ |
+| ACTION_REASON_ID | ActionReasonsTranslationPEOActionReasonId | — |
+| LANGUAGE | ActionReasonsTranslationPEOLanguage | — |
+| LAST_UPDATE_DATE | ActionReasonsTranslationPEOLastUpdateDate | ✅ |
+
+### [[projectexpenditureorganizationpvo|ProjectExpenditureOrganizationPVO]] (HCM)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_REASON | ActionReasonsTranslationPEOActionReason | — |
+| ACTION_REASON_ID | ActionReasonsTranslationPEOActionReasonId | — |
+| LANGUAGE | ActionReasonsTranslationPEOLanguage | — |
+| LAST_UPDATE_DATE | ActionReasonsTranslationPEOLastUpdateDate | — |
+
+### [[projecttaskowningorganizationpvo|ProjectTaskOwningOrganizationPVO]] (HCM)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_REASON | ActionReasonsTranslationPEOActionReason | — |
+| ACTION_REASON_ID | ActionReasonsTranslationPEOActionReasonId | — |
+| LANGUAGE | ActionReasonsTranslationPEOLanguage | — |
+| LAST_UPDATE_DATE | ActionReasonsTranslationPEOLastUpdateDate | — |
+
+### [[projectunitclassificationpvo|ProjectUnitClassificationPVO]] (HCM)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_REASON | ActionReasonsTranslationPEOActionReason | — |
+| ACTION_REASON_ID | ActionReasonsTranslationPEOActionReasonId | — |
+| LANGUAGE | ActionReasonsTranslationPEOLanguage | — |
+| LAST_UPDATE_DATE | ActionReasonsTranslationPEOLastUpdateDate | — |
+
+### [[ratepvo|RatePVO]] (GL · BICC: 1/3)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_REASON | ActionReasonTranslationPEOActionReason | ✅ |
+| ACTION_REASON_ID | ActionReasonTranslationPEOActionReasonId | — |
+| LANGUAGE | ActionReasonTranslationPEOLanguage | — |
+
+### [[reportingestablishmentpvo|ReportingEstablishmentPVO]] (HCM)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_REASON | ActionReasonsTranslationPEOActionReason | — |
+| ACTION_REASON_ID | ActionReasonsTranslationPEOActionReasonId | — |
+| LANGUAGE | ActionReasonsTranslationPEOLanguage | — |
+| LAST_UPDATE_DATE | ActionReasonsTranslationPEOLastUpdateDate | — |
+
+### [[reportingestablishmentpvoviewall|ReportingEstablishmentPVOViewAll]] (HCM)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_REASON | ActionReasonsTranslationPEOActionReason | — |
+| ACTION_REASON_ID | ActionReasonsTranslationPEOActionReasonId | — |
+| LANGUAGE | ActionReasonsTranslationPEOLanguage | — |
+| LAST_UPDATE_DATE | ActionReasonsTranslationPEOLastUpdateDate | — |
+
+### [[taxreportingunitpvo|TaxReportingUnitPVO]] (HCM)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_REASON | ActionReasonsTranslationPEOActionReason | — |
+| ACTION_REASON_ID | ActionReasonsTranslationPEOActionReasonId | — |
+| LANGUAGE | ActionReasonsTranslationPEOLanguage | — |
+| LAST_UPDATE_DATE | ActionReasonsTranslationPEOLastUpdateDate | — |
+
+### [[unionpvo|UnionPVO]] (HCM · BICC: 1/4)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_REASON | ActionReasonsTranslationPEOActionReason | — |
+| ACTION_REASON_ID | ActionReasonsTranslationPEOActionReasonId | — |
+| LANGUAGE | ActionReasonsTranslationPEOLanguage | — |
+| LAST_UPDATE_DATE | ActionReasonsTranslationPEOLastUpdateDate | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — PER_ACTION_REASONS_TL](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/peractionreasonstl.html)

@@ -98,6 +98,19 @@ WHERE  tl.ORG_PAYMENT_METHOD_ID = :p_method_id
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[organizationpaymentmethoddpvo|OrganizationPaymentMethodDPVO]] (AP · BICC: 2/4)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| LANGUAGE | OrgnPaymentMethodTrasltnPEOLanguage | ✅ |
+| ORG_PAYMENT_METHOD_ID | OrgnPaymentMethodTrasltnPEOOrgPaymentMethodId | — |
+| ORG_PAYMENT_METHOD_NAME | OrgnPaymentMethodTrasltnPEOOrgPaymentMethodName | ✅ |
+| SOURCE_LANG | OrgnPaymentMethodTrasltnPEOSourceLang | — |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — PAY_ORG_PAY_METHODS_TL](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/payorgpaymethodstl.html)

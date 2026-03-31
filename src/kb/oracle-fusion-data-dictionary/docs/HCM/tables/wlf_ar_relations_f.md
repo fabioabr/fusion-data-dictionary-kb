@@ -112,3 +112,26 @@ WHERE  ar.ASSIGNMENT_RECORD_ID = :p_record_id
 
 - [Oracle Docs — WLF_AR_RELATIONS_F](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/wlfarrelationsf.html)
 - [[hcm-module-data-dictionary]] — Dossiê do módulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[learningarrelationspvo|LearningARRelationsPVO]] (HCM · BICC: 7/14)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ASSIGNMENT_RECORD_ID | LearningARRelationsDEOAssignmentRecordId | — |
+| CREATED_BY | LearningARRelationsDEOCreatedBy | — |
+| CREATION_DATE | LearningARRelationsDEOCreationDate | — |
+| EFFECTIVE_END_DATE | LearningARRelationsDEOEffectiveEndDate | ✅ |
+| EFFECTIVE_START_DATE | LearningARRelationsDEOEffectiveStartDate | ✅ |
+| ENTERPRISE_ID | LearningARRelationsDEOEnterpriseId | — |
+| LAST_UPDATE_DATE | LearningARRelationsDEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LearningARRelationsDEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | LearningARRelationsDEOLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | LearningARRelationsDEOObjectVersionNumber | — |
+| RELATED_OBJECT_ID | LearningARRelationsDEORelatedObjectId | ✅ |
+| RELATED_OBJECT_TYPE | LearningARRelationsDEORelatedObjectType | ✅ |
+| RELATION_ID | LearningARRelationsDEORelationId | ✅ |
+| RELATION_TYPE | LearningARRelationsDEORelationType | ✅ |

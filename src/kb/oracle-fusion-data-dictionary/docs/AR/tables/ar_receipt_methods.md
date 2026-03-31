@@ -110,6 +110,177 @@ SELECT rm.name,
 - O campo `PAYMENT_CHANNEL_CODE` é usado para integração com gateways de pagamento e lockbox.
 - `LEAD_DAYS` é crucial para conciliação: indica quantos dias antes do vencimento o processamento deve ocorrer.
 
+## 🔗 PVOs Relacionados
+
+### [[customeraccountreceiptmethod|CustomerAccountReceiptMethod]] (AR · BICC: 2/27)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| AUTO_PRINT_PROGRAM_ID | ReceiptMethodAutoPrintProgramId | — |
+| AUTO_TRANS_PROGRAM_ID | ReceiptMethodAutoTransProgramId | — |
+| BR_CUST_TRX_TYPE_ID | ReceiptMethodBrCustTrxTypeId | — |
+| BR_INHERIT_INV_NUM_FLAG | ReceiptMethodBrInheritInvNumFlag | — |
+| BR_MAX_ACCTD_AMOUNT | ReceiptMethodBrMaxAcctdAmount | — |
+| BR_MIN_ACCTD_AMOUNT | ReceiptMethodBrMinAcctdAmount | — |
+| CREATED_BY | ReceiptMethodCreatedBy | — |
+| CREATION_DATE | ReceiptMethodCreationDate | — |
+| DM_INHERIT_RECEIPT_NUM_FLAG | ReceiptMethodDmInheritReceiptNumFlag | — |
+| END_DATE | ReceiptMethodEndDate | — |
+| LAST_UPDATE_DATE | ReceiptMethodLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ReceiptMethodLastUpdateLogin | — |
+| LAST_UPDATED_BY | ReceiptMethodLastUpdatedBy | — |
+| LEAD_DAYS | ReceiptMethodLeadDays | — |
+| MATURITY_DATE_RULE_CODE | ReceiptMethodMaturityDateRuleCode | — |
+| MERCHANT_ID | ReceiptMethodMerchantId | — |
+| MERCHANT_REF | ReceiptMethodMerchantRef | — |
+| NAME | ReceiptMethodName | ✅ |
+| OBJECT_VERSION_NUMBER | ReceiptMethodObjectVersionNumber | — |
+| PAYMENT_CHANNEL_CODE | ReceiptMethodPaymentChannelCode | — |
+| PAYMENT_TYPE_CODE | ReceiptMethodPaymentTypeCode | — |
+| PRINTED_NAME | ReceiptMethodPrintedName | — |
+| RECEIPT_CLASS_ID | ReceiptMethodReceiptClassId | — |
+| RECEIPT_CREATION_RULE_CODE | ReceiptMethodReceiptCreationRuleCode | — |
+| RECEIPT_INHERIT_INV_NUM_FLAG | ReceiptMethodReceiptInheritInvNumFlag | — |
+| RECEIPT_METHOD_ID | ReceiptMethodReceiptMethodId | — |
+| START_DATE | ReceiptMethodStartDate | — |
+
+### [[customeraccountsitereceiptmethod|CustomerAccountSiteReceiptMethod]] (AR · BICC: 2/27)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| AUTO_PRINT_PROGRAM_ID | ReceiptMethodAutoPrintProgramId | — |
+| AUTO_TRANS_PROGRAM_ID | ReceiptMethodAutoTransProgramId | — |
+| BR_CUST_TRX_TYPE_ID | ReceiptMethodBrCustTrxTypeId | — |
+| BR_INHERIT_INV_NUM_FLAG | ReceiptMethodBrInheritInvNumFlag | — |
+| BR_MAX_ACCTD_AMOUNT | ReceiptMethodBrMaxAcctdAmount | — |
+| BR_MIN_ACCTD_AMOUNT | ReceiptMethodBrMinAcctdAmount | — |
+| CREATED_BY | ReceiptMethodCreatedBy | — |
+| CREATION_DATE | ReceiptMethodCreationDate | — |
+| DM_INHERIT_RECEIPT_NUM_FLAG | ReceiptMethodDmInheritReceiptNumFlag | — |
+| END_DATE | ReceiptMethodEndDate | — |
+| LAST_UPDATE_DATE | ReceiptMethodLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ReceiptMethodLastUpdateLogin | — |
+| LAST_UPDATED_BY | ReceiptMethodLastUpdatedBy | — |
+| LEAD_DAYS | ReceiptMethodLeadDays | — |
+| MATURITY_DATE_RULE_CODE | ReceiptMethodMaturityDateRuleCode | — |
+| MERCHANT_ID | ReceiptMethodMerchantId | — |
+| MERCHANT_REF | ReceiptMethodMerchantRef | — |
+| NAME | ReceiptMethodName | ✅ |
+| OBJECT_VERSION_NUMBER | ReceiptMethodObjectVersionNumber | — |
+| PAYMENT_CHANNEL_CODE | ReceiptMethodPaymentChannelCode | — |
+| PAYMENT_TYPE_CODE | ReceiptMethodPaymentTypeCode | — |
+| PRINTED_NAME | ReceiptMethodPrintedName | — |
+| RECEIPT_CLASS_ID | ReceiptMethodReceiptClassId | — |
+| RECEIPT_CREATION_RULE_CODE | ReceiptMethodReceiptCreationRuleCode | — |
+| RECEIPT_INHERIT_INV_NUM_FLAG | ReceiptMethodReceiptInheritInvNumFlag | — |
+| RECEIPT_METHOD_ID | ReceiptMethodReceiptMethodId | — |
+| START_DATE | ReceiptMethodStartDate | — |
+
+### [[receiptmethodextractpvo|ReceiptMethodExtractPVO]] (OTHER · BICC: 29/66)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ATTRIBUTE1 | ArReceiptMethodAttribute1 | — |
+| ATTRIBUTE10 | ArReceiptMethodAttribute10 | — |
+| ATTRIBUTE11 | ArReceiptMethodAttribute11 | — |
+| ATTRIBUTE12 | ArReceiptMethodAttribute12 | — |
+| ATTRIBUTE13 | ArReceiptMethodAttribute13 | — |
+| ATTRIBUTE14 | ArReceiptMethodAttribute14 | — |
+| ATTRIBUTE15 | ArReceiptMethodAttribute15 | — |
+| ATTRIBUTE2 | ArReceiptMethodAttribute2 | — |
+| ATTRIBUTE3 | ArReceiptMethodAttribute3 | — |
+| ATTRIBUTE4 | ArReceiptMethodAttribute4 | — |
+| ATTRIBUTE5 | ArReceiptMethodAttribute5 | — |
+| ATTRIBUTE6 | ArReceiptMethodAttribute6 | — |
+| ATTRIBUTE7 | ArReceiptMethodAttribute7 | — |
+| ATTRIBUTE8 | ArReceiptMethodAttribute8 | — |
+| ATTRIBUTE9 | ArReceiptMethodAttribute9 | — |
+| ATTRIBUTE_CATEGORY | ArReceiptMethodAttributeCategory | — |
+| AUTO_PRINT_PROGRAM_ID | ArReceiptMethodAutoPrintProgramId | ✅ |
+| AUTO_TRANS_PROGRAM_ID | ArReceiptMethodAutoTransProgramId | ✅ |
+| BR_CUST_TRX_TYPE_ID | ArReceiptMethodBrCustTrxTypeId | ✅ |
+| BR_INHERIT_INV_NUM_FLAG | ArReceiptMethodBrInheritInvNumFlag | ✅ |
+| BR_MAX_ACCTD_AMOUNT | ArReceiptMethodBrMaxAcctdAmount | ✅ |
+| BR_MIN_ACCTD_AMOUNT | ArReceiptMethodBrMinAcctdAmount | ✅ |
+| CREATED_BY | ArReceiptMethodCreatedBy | ✅ |
+| CREATION_DATE | ArReceiptMethodCreationDate | ✅ |
+| DM_INHERIT_RECEIPT_NUM_FLAG | ArReceiptMethodDmInheritReceiptNumFlag | ✅ |
+| END_DATE | ArReceiptMethodEndDate | ✅ |
+| GLOBAL_ATTRIBUTE1 | ArReceiptMethodGlobalAttribute1 | — |
+| GLOBAL_ATTRIBUTE10 | ArReceiptMethodGlobalAttribute10 | — |
+| GLOBAL_ATTRIBUTE11 | ArReceiptMethodGlobalAttribute11 | — |
+| GLOBAL_ATTRIBUTE12 | ArReceiptMethodGlobalAttribute12 | — |
+| GLOBAL_ATTRIBUTE13 | ArReceiptMethodGlobalAttribute13 | — |
+| GLOBAL_ATTRIBUTE14 | ArReceiptMethodGlobalAttribute14 | — |
+| GLOBAL_ATTRIBUTE15 | ArReceiptMethodGlobalAttribute15 | — |
+| GLOBAL_ATTRIBUTE16 | ArReceiptMethodGlobalAttribute16 | — |
+| GLOBAL_ATTRIBUTE17 | ArReceiptMethodGlobalAttribute17 | — |
+| GLOBAL_ATTRIBUTE18 | ArReceiptMethodGlobalAttribute18 | — |
+| GLOBAL_ATTRIBUTE19 | ArReceiptMethodGlobalAttribute19 | — |
+| GLOBAL_ATTRIBUTE2 | ArReceiptMethodGlobalAttribute2 | — |
+| GLOBAL_ATTRIBUTE20 | ArReceiptMethodGlobalAttribute20 | — |
+| GLOBAL_ATTRIBUTE3 | ArReceiptMethodGlobalAttribute3 | — |
+| GLOBAL_ATTRIBUTE4 | ArReceiptMethodGlobalAttribute4 | — |
+| GLOBAL_ATTRIBUTE5 | ArReceiptMethodGlobalAttribute5 | — |
+| GLOBAL_ATTRIBUTE6 | ArReceiptMethodGlobalAttribute6 | — |
+| GLOBAL_ATTRIBUTE7 | ArReceiptMethodGlobalAttribute7 | — |
+| GLOBAL_ATTRIBUTE8 | ArReceiptMethodGlobalAttribute8 | — |
+| GLOBAL_ATTRIBUTE9 | ArReceiptMethodGlobalAttribute9 | — |
+| GLOBAL_ATTRIBUTE_CATEGORY | ArReceiptMethodGlobalAttributeCategory | — |
+| ISO20022_DIRECT_DEBIT_FLAG | ArReceiptMethodIso20022DirectDebitFlag | ✅ |
+| LAST_UPDATE_DATE | ArReceiptMethodLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ArReceiptMethodLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | ArReceiptMethodLastUpdatedBy | ✅ |
+| LEAD_DAYS | ArReceiptMethodLeadDays | ✅ |
+| MATURITY_DATE_RULE_CODE | ArReceiptMethodMaturityDateRuleCode | ✅ |
+| MERCHANT_ID | ArReceiptMethodMerchantId | ✅ |
+| MERCHANT_REF | ArReceiptMethodMerchantRef | ✅ |
+| NAME | ArReceiptMethodName | ✅ |
+| OBJECT_VERSION_NUMBER | ArReceiptMethodObjectVersionNumber | ✅ |
+| PAYMENT_CHANNEL_CODE | ArReceiptMethodPaymentChannelCode | ✅ |
+| PAYMENT_TYPE_CODE | ArReceiptMethodPaymentTypeCode | ✅ |
+| PRINTED_NAME | ArReceiptMethodPrintedName | ✅ |
+| RECEIPT_CLASS_ID | ArReceiptMethodReceiptClassId | ✅ |
+| RECEIPT_CREATION_RULE_CODE | ArReceiptMethodReceiptCreationRuleCode | ✅ |
+| RECEIPT_INHERIT_INV_NUM_FLAG | ArReceiptMethodReceiptInheritInvNumFlag | ✅ |
+| RECEIPT_METHOD_ID | ArReceiptMethodReceiptMethodId | ✅ |
+| SEED_DATA_SOURCE | ArReceiptMethodSeedDataSource | ✅ |
+| START_DATE | ArReceiptMethodStartDate | ✅ |
+
+### [[receiptmethodpvo|ReceiptMethodPVO]] (AR · BICC: 9/27)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| AUTO_PRINT_PROGRAM_ID | ReceiptMethodAutoPrintProgramId | — |
+| AUTO_TRANS_PROGRAM_ID | ReceiptMethodAutoTransProgramId | — |
+| BR_CUST_TRX_TYPE_ID | ReceiptMethodBrCustTrxTypeId | — |
+| BR_INHERIT_INV_NUM_FLAG | ReceiptMethodBrInheritInvNumFlag | — |
+| BR_MAX_ACCTD_AMOUNT | ReceiptMethodBrMaxAcctdAmount | — |
+| BR_MIN_ACCTD_AMOUNT | ReceiptMethodBrMinAcctdAmount | — |
+| CREATED_BY | ReceiptMethodCreatedBy | ✅ |
+| CREATION_DATE | ReceiptMethodCreationDate | ✅ |
+| DM_INHERIT_RECEIPT_NUM_FLAG | ReceiptMethodDmInheritReceiptNumFlag | — |
+| END_DATE | ReceiptMethodEndDate | ✅ |
+| LAST_UPDATE_DATE | ReceiptMethodLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ReceiptMethodLastUpdateLogin | — |
+| LAST_UPDATED_BY | ReceiptMethodLastUpdatedBy | ✅ |
+| LEAD_DAYS | ReceiptMethodLeadDays | — |
+| MATURITY_DATE_RULE_CODE | ReceiptMethodMaturityDateRuleCode | — |
+| MERCHANT_ID | ReceiptMethodMerchantId | — |
+| MERCHANT_REF | ReceiptMethodMerchantRef | — |
+| NAME | ReceiptMethodName | ✅ |
+| OBJECT_VERSION_NUMBER | ReceiptMethodObjectVersionNumber | — |
+| PAYMENT_CHANNEL_CODE | ReceiptMethodPaymentChannelCode | — |
+| PAYMENT_TYPE_CODE | ReceiptMethodPaymentTypeCode | ✅ |
+| PRINTED_NAME | ReceiptMethodPrintedName | ✅ |
+| RECEIPT_CLASS_ID | ReceiptMethodReceiptClassId | — |
+| RECEIPT_CREATION_RULE_CODE | ReceiptMethodReceiptCreationRuleCode | — |
+| RECEIPT_INHERIT_INV_NUM_FLAG | ReceiptMethodReceiptInheritInvNumFlag | — |
+| RECEIPT_METHOD_ID | ReceiptMethodId | ✅ |
+| START_DATE | ReceiptMethodStartDate | — |
+
+---
+
 ## 📚 Referências
 
 - Oracle Fusion Cloud Financials — Accounts Receivable Tables (OEDMF Release 13)

@@ -93,6 +93,90 @@ WHERE  qr.QUESTIONNAIRE_ID = :p_id AND qr.RESPONSE_STATUS = 'SUBMITTED';
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[participantquestionnairequestionresponsepvo|ParticipantQuestionnaireQuestionResponsePVO]] (HCM · BICC: 9/15)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ATTEMPT_NUM | QuestionnaireResponsePEOAttemptNum | ✅ |
+| BUSINESS_GROUP_ID | QuestionnaireResponsePEOBusinessGroupId | ✅ |
+| CREATED_BY | QuestionnaireResponsePEOCreatedBy | ✅ |
+| CREATION_DATE | QuestionnaireResponsePEOCreationDate | ✅ |
+| LAST_UPDATE_DATE | QuestionnaireResponsePEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | QuestionnaireResponsePEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | QuestionnaireResponsePEOLastUpdatedBy | ✅ |
+| LATEST_ATTEMPT_FLAG | LatestAttemptFlag | — |
+| OBJECT_VERSION_NUMBER | QuestionnaireResponsePEOObjectVersionNumber | — |
+| QSTNR_PARTICIPANT_ID | QuestionnaireResponsePEOQstnrParticipantId | — |
+| QSTNR_RESPONSE_ID | QuestionnaireResponsePEOQstnrResponseId | ✅ |
+| QSTNR_VERSION_NUM | QuestionnaireResponsePEOQstnrVersionNum | — |
+| STATUS | QuestionnaireResponsePEOStatus | ✅ |
+| SUBMITTED_DATE_TIME | QuestionnaireResponsePEOSubmittedDateTime | ✅ |
+| TOTAL_SCORE | QuestionnaireResponsePEOTotalScore | — |
+
+### [[participantresponsepvo|ParticipantResponsePVO]] (HCM · BICC: 10/15)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ATTEMPT_NUM | QuestionnaireResponsePEOAttemptNum | ✅ |
+| BUSINESS_GROUP_ID | QuestionnaireResponsePEOBusinessGroupId | ✅ |
+| CREATED_BY | QuestionnaireResponsePEOCreatedBy | ✅ |
+| CREATION_DATE | QuestionnaireResponsePEOCreationDate | — |
+| LAST_UPDATE_DATE | QuestionnaireResponsePEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | QuestionnaireResponsePEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | QuestionnaireResponsePEOLastUpdatedBy | — |
+| LATEST_ATTEMPT_FLAG | LatestAttemptFlag | ✅ |
+| OBJECT_VERSION_NUMBER | QuestionnaireResponsePEOObjectVersionNumber | ✅ |
+| QSTNR_PARTICIPANT_ID | QuestionnaireResponsePEOQstnrParticipantId | — |
+| QSTNR_RESPONSE_ID | QuestionnaireResponsePEOQstnrResponseId | ✅ |
+| QSTNR_VERSION_NUM | QuestionnaireResponsePEOQstnrVersionNum | — |
+| STATUS | QuestionnaireResponsePEOStatus | ✅ |
+| SUBMITTED_DATE_TIME | QuestionnaireResponsePEOSubmittedDateTime | ✅ |
+| TOTAL_SCORE | QuestionnaireResponsePEOTotalScore | ✅ |
+
+### [[questionnairequestionresponsepvo|QuestionnaireQuestionResponsePVO]] (HCM · BICC: 7/15)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ATTEMPT_NUM | QuestionnaireResponsePEOAttemptNum | ✅ |
+| BUSINESS_GROUP_ID | QuestionnaireResponsePEOBusinessGroupId | ✅ |
+| CREATED_BY | QuestionnaireResponsePEOCreatedBy | — |
+| CREATION_DATE | QuestionnaireResponsePEOCreationDate | — |
+| LAST_UPDATE_DATE | QuestionnaireResponsePEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | QuestionnaireResponsePEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | QuestionnaireResponsePEOLastUpdatedBy | — |
+| LATEST_ATTEMPT_FLAG | LatestAttemptFlag | — |
+| OBJECT_VERSION_NUMBER | QuestionnaireResponsePEOObjectVersionNumber | — |
+| QSTNR_PARTICIPANT_ID | QuestionnaireResponsePEOQstnrParticipantId | ✅ |
+| QSTNR_RESPONSE_ID | QuestionnaireResponsePEOQstnrResponseId | ✅ |
+| QSTNR_VERSION_NUM | QuestionnaireResponsePEOQstnrVersionNum | — |
+| STATUS | QuestionnaireResponsePEOStatus | ✅ |
+| SUBMITTED_DATE_TIME | QuestionnaireResponsePEOSubmittedDateTime | ✅ |
+| TOTAL_SCORE | QuestionnaireResponsePEOTotalScore | — |
+
+### [[questionnaireresponse|QuestionnaireResponse]] (HCM · BICC: 15/15)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ATTEMPT_NUM | AttemptNum | ✅ |
+| BUSINESS_GROUP_ID | BusinessGroupId | ✅ |
+| CREATED_BY | CreatedBy | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | LastUpdatedBy | ✅ |
+| LATEST_ATTEMPT_FLAG | LatestAttemptFlag | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | ✅ |
+| QSTNR_PARTICIPANT_ID | QstnrParticipantId | ✅ |
+| QSTNR_RESPONSE_ID | QstnrResponseId | ✅ |
+| QSTNR_VERSION_NUM | QstnrVersionNum | ✅ |
+| STATUS | Status | ✅ |
+| SUBMITTED_DATE_TIME | SubmittedDateTime | ✅ |
+| TOTAL_SCORE | TotalScore | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Fusion HCM Tables and Views](https://docs.oracle.com/en/cloud/saas/human-resources/25a/)

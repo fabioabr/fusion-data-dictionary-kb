@@ -98,6 +98,88 @@ WHERE  r.PAYROLL_ACTION_ID = :p_action_id;
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[paymentactionpvo|PaymentActionPVO]] (HCM)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CALL_ID | PayRequestPEOCallId | — |
+| CALL_TYPE | PayRequestPEOCallType | — |
+| FLOW_INSTANCE_ID | PayRequestPEOFlowInstanceId | — |
+| FLOW_TASK_INSTANCE_ID | PayRequestPEOFlowTaskInstanceId | — |
+| OBJECT_VERSION_NUMBER | PayRequestPEOObjectVersionNumber1 | — |
+| PAY_REQUEST_ID | PayRequestPEOPayRequestId | — |
+| PAY_TASK_ACTION_ID | PayRequestPEOPayTaskActionId | — |
+
+### [[payrollruncosting|PayrollRunCosting]] (GL · BICC: 2/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CALL_ID | PayReqCallId | — |
+| CALL_TYPE | PayReqCallType | ✅ |
+| CREATED_BY | PayReqCreatedBy | — |
+| CREATION_DATE | PayReqCreationDate | — |
+| FLOW_INSTANCE_ID | PayReqFlowInstanceId | — |
+| FLOW_TASK_INSTANCE_ID | PayReqFlowTaskInstanceId | — |
+| LAST_UPDATE_DATE | PayReqLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | PayReqLastUpdateLogin | — |
+| LAST_UPDATED_BY | PayReqLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | PayReqObjectVersionNumber | — |
+| PAY_REQUEST_ID | PayReqPayRequestId | — |
+| PAY_TASK_ACTION_ID | PayReqPayTaskActionId | — |
+
+### [[prepaymentcosting|PrePaymentCosting]] (GL · BICC: 2/13)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CALL_ID | PayReqCallId | — |
+| CALL_TYPE | PayReqCallType | ✅ |
+| CREATED_BY | PayReqCreatedBy | — |
+| CREATION_DATE | PayReqCreationDate | — |
+| FLOW_INSTANCE_ID | PayReqFlowInstanceId | — |
+| FLOW_TASK_INSTANCE_ID | PayReqFlowTaskInstanceId | — |
+| LAST_UPDATE_DATE | PayReqLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | PayReqLastUpdateLogin | — |
+| LAST_UPDATED_BY | PayReqLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | PayReqObjectVersionNumber | — |
+| PARAM_NAME_VALS | PayReqParamNameVals | — |
+| PAY_REQUEST_ID | PayReqPayRequestId | — |
+| PAY_TASK_ACTION_ID | PayReqPayTaskActionId | — |
+
+### [[prepayments|PrePayments]] (AP · BICC: 3/13)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CALL_ID | PayReqCallId | ✅ |
+| CALL_TYPE | PayReqCallType | ✅ |
+| CREATED_BY | PayReqCreatedBy | — |
+| CREATION_DATE | PayReqCreationDate | — |
+| FLOW_INSTANCE_ID | PayReqFlowInstanceId | — |
+| FLOW_TASK_INSTANCE_ID | PayReqFlowTaskInstanceId | — |
+| LAST_UPDATE_DATE | PayReqLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | PayReqLastUpdateLogin | — |
+| LAST_UPDATED_BY | PayReqLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | PayReqObjectVersionNumber | — |
+| PARAM_NAME_VALS | PayReqParamNameVals | — |
+| PAY_REQUEST_ID | PayReqPayRequestId | — |
+| PAY_TASK_ACTION_ID | PayReqPayTaskActionId | — |
+
+### [[retroelemententry|RetroElementEntry]] (HCM)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CALL_ID | RequestCallId | — |
+| CALL_TYPE | RequestCallType | — |
+| FLOW_INSTANCE_ID | RequestFlowInstanceId | — |
+| FLOW_TASK_INSTANCE_ID | RequestFlowTaskInstanceId | — |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber1 | — |
+| PARAM_NAME_VALS | RequestParamNameVals | — |
+| PAY_REQUEST_ID | RequestPayRequestId | — |
+| PAY_TASK_ACTION_ID | RequestPayTaskActionId | — |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — PAY_REQUESTS](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/payrequests.html)

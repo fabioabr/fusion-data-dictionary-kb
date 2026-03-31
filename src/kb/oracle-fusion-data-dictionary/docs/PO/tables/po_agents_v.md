@@ -41,7 +41,6 @@ View que expoe os **compradores (agents)** cadastrados no modulo Procurement. Co
 > [!note] Sufixo _V
 > O sufixo `_V` indica que este objeto e uma **view**, projetada para simplificar consultas.
 
-
 ---
 
 ## 🧠 Propósito de Negócio
@@ -97,7 +96,6 @@ FROM   PO_AGENTS_V
 WHERE  (END_DATE_ACTIVE IS NULL OR END_DATE_ACTIVE > SYSDATE);
 ```
 
-
 ---
 
 ## 🔒 Observações
@@ -105,6 +103,22 @@ WHERE  (END_DATE_ACTIVE IS NULL OR END_DATE_ACTIVE > SYSDATE);
 - O `AGENT_ID` e referenciado em `PO_HEADERS_ALL`.
 - View sem indices proprios.
 - Limites combinados com regras de aprovacao para controle de alcada.
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[allbuyerpvo|AllBuyerPVO]] (PO · BICC: 1/1)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| AGENT_ID | AgentId | ✅ |
+
+### [[poagentpvo|PoAgentPVO]] (PO · BICC: 1/1)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| AGENT_ID | AgentId | ✅ |
 
 ---
 

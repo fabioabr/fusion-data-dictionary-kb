@@ -101,3 +101,16 @@ SELECT ml.MEDIA_TYPE, ml.MEDIA_URL FROM IRC_MEDIA_LINKS_B ml WHERE ml.STATUS = '
 
 - [Oracle Docs -- IRC_MEDIA_LINKS_B](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/ircmedialinksb.html)
 - [[hcm-module-data-dictionary]] -- Dossie do modulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[requisitionmedialinkpvo|RequisitionMediaLinkPVO]] (PO · BICC: 4/4)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| MEDIA_LINK_ID | MediaLinkPEOMediaLinkId | ✅ |
+| MEDIA_TYPE_CODE | MediaTypeCode | ✅ |
+| THUMBNAIL_URL | ThumbnailUrl | ✅ |
+| URL | Url | ✅ |

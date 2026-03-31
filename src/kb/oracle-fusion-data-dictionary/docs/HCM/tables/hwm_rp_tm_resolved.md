@@ -35,8 +35,6 @@ updated_at: 2026-03-25
 
 Armazena os períodos de tempo já resolvidos/calculados para relatórios, contendo os valores finais após aplicação de regras de cálculo temporal.
 
-
-
 ---
 
 ## 🧠 Propósito de Negócio
@@ -99,6 +97,26 @@ WHERE  ROWNUM <= 100
 ## 🔒 Observações
 
 - Área funcional: Time and Reporting dentro do Oracle Fusion Cloud HCM.
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[resolvedtimeperiod|ResolvedTimePeriod]] (GL · BICC: 11/11)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | CreatedBy | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| END_DATE | EndDate | ✅ |
+| ENTERPRISE_ID | EnterpriseId | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | LastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | ✅ |
+| REPEATING_TM_PERIOD_ID | RepeatingTmPeriodId | ✅ |
+| RESOLVED_TM_PERIOD_ID | ResolvedTmPeriodId | ✅ |
+| START_DATE | StartDate | ✅ |
 
 ---
 

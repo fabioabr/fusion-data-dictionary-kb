@@ -59,3 +59,35 @@ updated_at: 2026-03-26
 ## 📎 Uso Típico
 
 (a ser preenchido na etapa 03)
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[customeraccountreceiptmethod|CustomerAccountReceiptMethod]] (AR)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| PAYMENT_CHANNEL_CODE | FundsCapturePaymentMethodPaymentChannelCode | — |
+| PAYMENT_CHANNEL_NAME | FundsCapturePaymentMethodPaymentChannelName | — |
+
+### [[customeraccountsitereceiptmethod|CustomerAccountSiteReceiptMethod]] (AR · BICC: 2/2)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| PAYMENT_CHANNEL_CODE | FundsCapturePaymentMethodPaymentChannelCode | ✅ |
+| PAYMENT_CHANNEL_NAME | FundsCapturePaymentMethodPaymentChannelName | ✅ |
+
+### [[receiptmethodpvo|ReceiptMethodPVO]] (AR · BICC: 2/9)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| DESCRIPTION | IbyFndcptPmtChnnlsDescription | — |
+| END_DATE | IbyFndcptPmtChnnlsEndDate | — |
+| FORMAT_VALUE | IbyFndcptPmtChnnlsFormatValue | — |
+| INACTIVE_DATE | IbyFndcptPmtChnnlsInactiveDate | — |
+| INSTRUMENT_TYPE | IbyFndcptPmtChnnlsInstrumentType | — |
+| PAYMENT_CHANNEL_CODE | IbyFndcptPmtChnnlsPaymentChannelCode | ✅ |
+| PAYMENT_CHANNEL_NAME | IbyFndcptPmtChnnlsPaymentChannelName | ✅ |
+| SEEDED_FLAG | IbyFndcptPmtChnnlsSeededFlag | — |
+| START_DATE | IbyFndcptPmtChnnlsStartDate | — |

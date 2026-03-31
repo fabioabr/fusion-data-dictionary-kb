@@ -113,3 +113,25 @@ WHERE  tl.ASSET_ID = :p_asset_id;
 
 - [Oracle Docs — IRC_CAMP_ASSETS_TL](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/irccampassetstl.html)
 - [[hcm-module-data-dictionary]] — Dossie do modulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[campassetpvo|CampAssetPVO]] (HCM · BICC: 3/13)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ASSET_ID | AssetId | — |
+| ASSET_ID | CampAssetTranslationPEOAssetId | — |
+| ASSET_NAME | CampAssetParentTranslationPEOAssetName | ✅ |
+| ASSET_NAME | CampAssetTranslationPEOAssetName | ✅ |
+| CREATED_BY | CampAssetTranslationPEOCreatedBy | — |
+| CREATION_DATE | CampAssetTranslationPEOCreationDate | — |
+| LANGUAGE | CampAssetTranslationPEOLanguage | — |
+| LANGUAGE | Language | — |
+| LAST_UPDATE_DATE | CampAssetTranslationPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | CampAssetTranslationPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | CampAssetTranslationPEOLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | CampAssetTranslationPEOObjectVersionNumber | — |
+| SOURCE_LANG | CampAssetTranslationPEOSourceLang | — |

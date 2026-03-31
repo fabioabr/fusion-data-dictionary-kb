@@ -102,3 +102,45 @@ WHERE  v.LABOR_DEMAND_PRFL_DEF_ID = :p_def_id;
 
 - [Oracle Docs — HTS_LABOR_DEMAND_PRFL_VALS](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/htslabordemandprflvals.html)
 - [[hcm-module-data-dictionary]] — Dossie do modulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[setupprofileasgpvo|SetupProfileAsgPVO]] (GL · BICC: 7/14)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| VALUE | LbrDmdPrflValPEO1Value | ✅ |
+| VALUE | LbrDmdPrflValPEO2Value | ✅ |
+| VALUE | LbrDmdPrflValPEO3Value | ✅ |
+| VALUE | LbrDmdPrflValPEO4Value | ✅ |
+| VALUE | LbrDmdPrflValPEO5Value | ✅ |
+| VALUE | LbrDmdPrflValPEO6Value | ✅ |
+| VALUE | LbrDmdPrflValPEOValue | ✅ |
+| VALUE_ID | LbrDmdPrflValPEO1ValueId | — |
+| VALUE_ID | LbrDmdPrflValPEO2ValueId | — |
+| VALUE_ID | LbrDmdPrflValPEO3ValueId | — |
+| VALUE_ID | LbrDmdPrflValPEO4ValueId | — |
+| VALUE_ID | LbrDmdPrflValPEO5ValueId | — |
+| VALUE_ID | LbrDmdPrflValPEO6ValueId | — |
+| VALUE_ID | LbrDmdPrflValPEOValueId | — |
+
+### [[setupprofilepvo|SetupProfilePVO]] (GL · BICC: 7/14)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| VALUE | LbrDmdPrflValPEO1Value | ✅ |
+| VALUE | LbrDmdPrflValPEO2Value | ✅ |
+| VALUE | LbrDmdPrflValPEO3Value | ✅ |
+| VALUE | LbrDmdPrflValPEO4Value | ✅ |
+| VALUE | LbrDmdPrflValPEO5Value | ✅ |
+| VALUE | LbrDmdPrflValPEO6Value | ✅ |
+| VALUE | LbrDmdPrflValPEOValue | ✅ |
+| VALUE_ID | LbrDmdPrflValPEO1ValueId | — |
+| VALUE_ID | LbrDmdPrflValPEO2ValueId | — |
+| VALUE_ID | LbrDmdPrflValPEO3ValueId | — |
+| VALUE_ID | LbrDmdPrflValPEO4ValueId | — |
+| VALUE_ID | LbrDmdPrflValPEO5ValueId | — |
+| VALUE_ID | LbrDmdPrflValPEO6ValueId | — |
+| VALUE_ID | LbrDmdPrflValPEOValueId | — |

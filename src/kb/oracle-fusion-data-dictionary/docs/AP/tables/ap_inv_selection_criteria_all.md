@@ -149,6 +149,17 @@ WHERE  asc1.CHECKRUN_NAME = :p_checkrun_name;
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[paymenthistorydistributionpvo|PaymentHistoryDistributionPVO]] (AP · BICC: 1/2)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CHECKRUN_ID | PmtProcReqInvCheckrunId | — |
+| LAST_UPDATE_DATE | PmtProcReqInvLastUpdateDate | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — AP_INV_SELECTION_CRITERIA_ALL](https://docs.oracle.com/en/cloud/saas/financials/25a/oedmf/apinvselectioncriteriaall-25718.html)

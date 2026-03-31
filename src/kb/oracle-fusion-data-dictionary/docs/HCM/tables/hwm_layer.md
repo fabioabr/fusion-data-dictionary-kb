@@ -35,8 +35,6 @@ updated_at: 2026-03-25
 
 Define as camadas (layers) na hierarquia de workforce management, permitindo organizar regras, cálculos e processamentos em diferentes níveis de abstração.
 
-
-
 ---
 
 ## 🧠 Propósito de Negócio
@@ -99,6 +97,28 @@ ORDER BY t.SEQUENCE_NUMBER
 ## 🔒 Observações
 
 - Área funcional: Workforce Management dentro do Oracle Fusion Cloud HCM.
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[timelayerpvo|TimeLayerPVO]] (HCM · BICC: 13/13)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| AUDITABLE | Auditable | ✅ |
+| CREATED_BY | CreatedBy | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| DESCRIPTION | Description | ✅ |
+| ENTERPRISE_ID | EnterpriseId | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | LastUpdatedBy | ✅ |
+| LAYER_CODE | LayerCode | ✅ |
+| LAYER_ID | LayerId | ✅ |
+| MODULE_ID | ModuleId | ✅ |
+| NAME | Name | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | ✅ |
 
 ---
 

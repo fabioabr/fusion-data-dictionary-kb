@@ -38,7 +38,6 @@ Tabela de traduções dos períodos de tempo para relatórios, armazenando nomes
 > [!note] Sufixo _TL
 > O sufixo `_TL` indica tabela de **traduções** — armazena textos traduzidos por idioma. Chave composta: PK da tabela `_B` + `LANGUAGE`.
 
-
 ---
 
 ## 🧠 Propósito de Negócio
@@ -103,6 +102,106 @@ WHERE  t.LANGUAGE = USERENV('LANG')
 - Tabela de traduções: não utilizar diretamente em relatórios; preferir a view `_VL` correspondente.
 - Chave composta: PK do registro base + LANGUAGE.
 - Área funcional: Time and Reporting dentro do Oracle Fusion Cloud HCM.
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[approvaltimeperiod|ApprovalTimePeriod]] (GL · BICC: 3/11)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | RepeatingTimePeriodTlPEOCreatedBy | — |
+| CREATION_DATE | RepeatingTimePeriodTlPEOCreationDate | — |
+| DESCRIPTION | RepeatingTimePeriodTlPEODescription | ✅ |
+| ENTERPRISE_ID | RepeatingTimePeriodTlPEOEnterpriseId | — |
+| LANGUAGE | RepeatingTimePeriodTlPEOLanguage | — |
+| LAST_UPDATE_DATE | RepeatingTimePeriodTlPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | RepeatingTimePeriodTlPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | RepeatingTimePeriodTlPEOLastUpdatedBy | — |
+| NAME | RepeatingTimePeriodTlPEOName | ✅ |
+| REPEATING_TM_PERIOD_ID | RepeatingTimePeriodTlPEORepeatingTmPeriodId | — |
+| SOURCE_LANG | RepeatingTimePeriodTlPEOSourceLang | — |
+
+### [[historicrptabstimeentrypvo|HistoricRptAbsTimeEntryPVO]] (HCM · BICC: 2/3)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| DESCRIPTION | RepeatingTimePeriodTLDescription | ✅ |
+| LANGUAGE | RepeatingTimePeriodTLLanguage | — |
+| REPEATING_TM_PERIOD_ID | RepeatingTimePeriodTLRepeatingTmPeriodId | ✅ |
+
+### [[overtimetimeperiod|OvertimeTimePeriod]] (GL · BICC: 3/11)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | RepeatingTimePeriodTlPEOCreatedBy | — |
+| CREATION_DATE | RepeatingTimePeriodTlPEOCreationDate | — |
+| DESCRIPTION | RepeatingTimePeriodTlPEODescription | ✅ |
+| ENTERPRISE_ID | RepeatingTimePeriodTlPEOEnterpriseId | — |
+| LANGUAGE | RepeatingTimePeriodTlPEOLanguage | — |
+| LAST_UPDATE_DATE | RepeatingTimePeriodTlPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | RepeatingTimePeriodTlPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | RepeatingTimePeriodTlPEOLastUpdatedBy | — |
+| NAME | RepeatingTimePeriodTlPEOName | ✅ |
+| REPEATING_TM_PERIOD_ID | RepeatingTimePeriodTlPEORepeatingTmPeriodId | — |
+| SOURCE_LANG | RepeatingTimePeriodTlPEOSourceLang | — |
+
+### [[repeatingtimeperiod|RepeatingTimePeriod]] (GL · BICC: 11/11)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | RepeatingTimePeriodTlPEOCreatedBy | ✅ |
+| CREATION_DATE | RepeatingTimePeriodTlPEOCreationDate | ✅ |
+| DESCRIPTION | RepeatingTimePeriodTlPEODescription | ✅ |
+| ENTERPRISE_ID | RepeatingTimePeriodTlPEOEnterpriseId | ✅ |
+| LANGUAGE | RepeatingTimePeriodTlPEOLanguage | ✅ |
+| LAST_UPDATE_DATE | RepeatingTimePeriodTlPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | RepeatingTimePeriodTlPEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | RepeatingTimePeriodTlPEOLastUpdatedBy | ✅ |
+| NAME | RepeatingTimePeriodTlPEOName | ✅ |
+| REPEATING_TM_PERIOD_ID | RepeatingTimePeriodTlPEORepeatingTmPeriodId | ✅ |
+| SOURCE_LANG | RepeatingTimePeriodTlPEOSourceLang | ✅ |
+
+### [[resolvedtimeperiod|ResolvedTimePeriod]] (GL · BICC: 3/11)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | RepeatingTimePeriodTranslationPEOCreatedBy1 | — |
+| CREATION_DATE | RepeatingTimePeriodTranslationPEOCreationDate1 | — |
+| DESCRIPTION | RepeatingTimePeriodTranslationPEODescription | ✅ |
+| ENTERPRISE_ID | RepeatingTimePeriodTranslationPEOEnterpriseId1 | — |
+| LANGUAGE | RepeatingTimePeriodTranslationPEOLanguage | — |
+| LAST_UPDATE_DATE | RepeatingTimePeriodTranslationPEOLastUpdateDate1 | ✅ |
+| LAST_UPDATE_LOGIN | RepeatingTimePeriodTranslationPEOLastUpdateLogin1 | — |
+| LAST_UPDATED_BY | RepeatingTimePeriodTranslationPEOLastUpdatedBy1 | — |
+| NAME | RepeatingTimePeriodTranslationPEOName | ✅ |
+| REPEATING_TM_PERIOD_ID | RepeatingTimePeriodTranslationPEORepeatingTmPeriodId1 | — |
+| SOURCE_LANG | RepeatingTimePeriodTranslationPEOSourceLang | — |
+
+### [[rptabstimeentrypvo|RptAbsTimeEntryPVO]] (HCM · BICC: 2/3)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| DESCRIPTION | RepeatingTimePeriodTLDescription | ✅ |
+| LANGUAGE | RepeatingTimePeriodTLLanguage | — |
+| REPEATING_TM_PERIOD_ID | RepeatingTimePeriodTLRepeatingTmPeriodId | ✅ |
+
+### [[timecardtimeperiod|TimecardTimePeriod]] (GL · BICC: 3/11)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | RepeatingTimePeriodTlPEOCreatedBy | — |
+| CREATION_DATE | RepeatingTimePeriodTlPEOCreationDate | — |
+| DESCRIPTION | RepeatingTimePeriodTlPEODescription | ✅ |
+| ENTERPRISE_ID | RepeatingTimePeriodTlPEOEnterpriseId | — |
+| LANGUAGE | RepeatingTimePeriodTlPEOLanguage | — |
+| LAST_UPDATE_DATE | RepeatingTimePeriodTlPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | RepeatingTimePeriodTlPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | RepeatingTimePeriodTlPEOLastUpdatedBy | — |
+| NAME | RepeatingTimePeriodTlPEOName | ✅ |
+| REPEATING_TM_PERIOD_ID | RepeatingTimePeriodTlPEORepeatingTmPeriodId | — |
+| SOURCE_LANG | RepeatingTimePeriodTlPEOSourceLang | — |
 
 ---
 

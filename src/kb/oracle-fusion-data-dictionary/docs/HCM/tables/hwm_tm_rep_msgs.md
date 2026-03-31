@@ -109,3 +109,34 @@ WHERE  m.REP_ENTRY_ID = :p_rep_entry_id
 
 - [Oracle Docs — HWM_TM_REP_MSGS](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/hwmtmrepmsgs.html)
 - [[hcm-module-data-dictionary]] — Dossie do modulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[compliancemessagepvo|ComplianceMessagePVO]] (HCM · BICC: 11/22)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| APPLICATION_ID | TimeRepositoryMessagePEOApplicationId | — |
+| APPLICATION_SHORT_NAME | TimeRepositoryMessagePEOApplicationShortName | ✅ |
+| CREATED_BY | TimeRepositoryMessagePEOCreatedBy | ✅ |
+| CREATION_DATE | TimeRepositoryMessagePEOCreationDate | ✅ |
+| DATE_FROM | TimeRepositoryMessagePEODateFrom | ✅ |
+| DATE_TO | TimeRepositoryMessagePEODateTo | ✅ |
+| ENTERPRISE_ID | TimeRepositoryMessagePEOEnterpriseId | — |
+| LAST_UPDATE_DATE | TimeRepositoryMessagePEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | TimeRepositoryMessagePEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | TimeRepositoryMessagePEOLastUpdatedBy | ✅ |
+| MESSAGE_FIELD | TimeRepositoryMessagePEOMessageField | — |
+| MESSAGE_LEVEL | TimeRepositoryMessagePEOMessageLevel | ✅ |
+| MESSAGE_NAME | TimeRepositoryMessagePEOMessageName | ✅ |
+| OBJECT_VERSION_NUMBER | TimeRepositoryMessagePEOObjectVersionNumber | — |
+| TM_EVENT_ID | TimeRepositoryMessagePEOTimeEventId | — |
+| TM_REC_GRP_ID | TimeRepositoryMessagePEOTimeRecordGroupId | — |
+| TM_REC_GRP_VERSION | TimeRepositoryMessagePEOTimeRecordGroupVersion | — |
+| TM_REC_ID | TimeRepositoryMessagePEOTimeRecordId | — |
+| TM_REC_VERSION | TimeRepositoryMessagePEOTimeRecordVersion | — |
+| TM_REP_ATRB_USAGE_ID | TimeRepositoryMessagePEOTimeRepositoryAttributeUsageId | — |
+| TM_REP_MSGS_ID | TimeRepositoryMessageId | ✅ |
+| TRN_ID | TimeRepositoryMessagePEOTransactionId | — |

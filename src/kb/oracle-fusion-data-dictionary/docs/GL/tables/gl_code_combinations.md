@@ -154,6 +154,214 @@ ORDER BY gcc.SEGMENT1, gcc.SEGMENT2, gcc.SEGMENT3;
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[codecombinationextractpvo|CodeCombinationExtractPVO]] (OTHER · BICC: 49/60)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACCOUNT_TYPE | CodeCombinationAccountType | ✅ |
+| ALTERNATE_CODE_COMBINATION_ID | CodeCombinationAlternateCodeCombinationId | ✅ |
+| ATTRIBUTE1 | CodeCombinationAttribute1 | — |
+| ATTRIBUTE10 | CodeCombinationAttribute10 | — |
+| ATTRIBUTE2 | CodeCombinationAttribute2 | — |
+| ATTRIBUTE3 | CodeCombinationAttribute3 | — |
+| ATTRIBUTE4 | CodeCombinationAttribute4 | — |
+| ATTRIBUTE5 | CodeCombinationAttribute5 | — |
+| ATTRIBUTE6 | CodeCombinationAttribute6 | — |
+| ATTRIBUTE7 | CodeCombinationAttribute7 | — |
+| ATTRIBUTE8 | CodeCombinationAttribute8 | — |
+| ATTRIBUTE9 | CodeCombinationAttribute9 | — |
+| ATTRIBUTE_CATEGORY | CodeCombinationAttributeCategory | — |
+| CHART_OF_ACCOUNTS_ID | CodeCombinationChartOfAccountsId | ✅ |
+| CODE_COMBINATION_ID | CodeCombinationCodeCombinationId | ✅ |
+| CREATED_BY | CodeCombinationCreatedBy | ✅ |
+| CREATION_DATE | CodeCombinationCreationDate | ✅ |
+| DETAIL_BUDGETING_ALLOWED_FLAG | CodeCombinationDetailBudgetingAllowedFlag | ✅ |
+| DETAIL_POSTING_ALLOWED_FLAG | CodeCombinationDetailPostingAllowedFlag | ✅ |
+| ENABLED_FLAG | CodeCombinationEnabledFlag | ✅ |
+| END_DATE_ACTIVE | CodeCombinationEndDateActive | ✅ |
+| FINANCIAL_CATEGORY | CodeCombinationFinancialCategory | ✅ |
+| JGZZ_RECON_FLAG | CodeCombinationJgzzReconFlag | ✅ |
+| LAST_UPDATE_DATE | CodeCombinationLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | CodeCombinationLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | CodeCombinationLastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | CodeCombinationObjectVersionNumber | ✅ |
+| PRESERVE_FLAG | CodeCombinationPreserveFlag | ✅ |
+| SEGMENT1 | CodeCombinationSegment1 | ✅ |
+| SEGMENT10 | CodeCombinationSegment10 | ✅ |
+| SEGMENT11 | CodeCombinationSegment11 | ✅ |
+| SEGMENT12 | CodeCombinationSegment12 | ✅ |
+| SEGMENT13 | CodeCombinationSegment13 | ✅ |
+| SEGMENT14 | CodeCombinationSegment14 | ✅ |
+| SEGMENT15 | CodeCombinationSegment15 | ✅ |
+| SEGMENT16 | CodeCombinationSegment16 | ✅ |
+| SEGMENT17 | CodeCombinationSegment17 | ✅ |
+| SEGMENT18 | CodeCombinationSegment18 | ✅ |
+| SEGMENT19 | CodeCombinationSegment19 | ✅ |
+| SEGMENT2 | CodeCombinationSegment2 | ✅ |
+| SEGMENT20 | CodeCombinationSegment20 | ✅ |
+| SEGMENT21 | CodeCombinationSegment21 | ✅ |
+| SEGMENT22 | CodeCombinationSegment22 | ✅ |
+| SEGMENT23 | CodeCombinationSegment23 | ✅ |
+| SEGMENT24 | CodeCombinationSegment24 | ✅ |
+| SEGMENT25 | CodeCombinationSegment25 | ✅ |
+| SEGMENT26 | CodeCombinationSegment26 | ✅ |
+| SEGMENT27 | CodeCombinationSegment27 | ✅ |
+| SEGMENT28 | CodeCombinationSegment28 | ✅ |
+| SEGMENT29 | CodeCombinationSegment29 | ✅ |
+| SEGMENT3 | CodeCombinationSegment3 | ✅ |
+| SEGMENT30 | CodeCombinationSegment30 | ✅ |
+| SEGMENT4 | CodeCombinationSegment4 | ✅ |
+| SEGMENT5 | CodeCombinationSegment5 | ✅ |
+| SEGMENT6 | CodeCombinationSegment6 | ✅ |
+| SEGMENT7 | CodeCombinationSegment7 | ✅ |
+| SEGMENT8 | CodeCombinationSegment8 | ✅ |
+| SEGMENT9 | CodeCombinationSegment9 | ✅ |
+| START_DATE_ACTIVE | CodeCombinationStartDateActive | ✅ |
+| SUMMARY_FLAG | CodeCombinationSummaryFlag | ✅ |
+
+### [[codecombinationpvo|CodeCombinationPVO]] (GL · BICC: 14/105)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACCOUNT_TYPE | CodeCombinationAccountType | ✅ |
+| ALLOCATION_CREATE_FLAG | CodeCombinationAllocationCreateFlag | — |
+| ALTERNATE_CODE_COMBINATION_ID | CodeCombinationAlternateCodeCombinationId | ✅ |
+| CHART_OF_ACCOUNTS_ID | CodeCombinationChartOfAccountsId | ✅ |
+| CODE_COMBINATION_ID | CodeCombinationId | ✅ |
+| COMPANY_COST_CENTER_ORG_ID | CodeCombinationCompanyCostCenterOrgId | ✅ |
+| CREATED_BY | CodeCombinationCreatedBy | ✅ |
+| CREATION_DATE | CodeCombinationCreationDate | ✅ |
+| DETAIL_BUDGETING_ALLOWED_FLAG | CodeCombinationDetailBudgetingAllowedFlag | — |
+| DETAIL_POSTING_ALLOWED_FLAG | CodeCombinationDetailPostingAllowedFlag | — |
+| ENABLED_FLAG | CodeCombinationEnabledFlag | ✅ |
+| END_DATE_ACTIVE | CodeCombinationEndDateActive | ✅ |
+| FINANCIAL_CATEGORY | CodeCombinationFinancialCategory | ✅ |
+| IGI_BALANCED_BUDGET_FLAG | CodeCombinationIgiBalancedBudgetFlag | — |
+| JGZZ_RECON_CONTEXT | CodeCombinationJgzzReconContext | — |
+| JGZZ_RECON_FLAG | CodeCombinationJgzzReconFlag | — |
+| LAST_UPDATE_DATE | CodeCombinationLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | CodeCombinationLastUpdateLogin | — |
+| LAST_UPDATED_BY | CodeCombinationLastUpdatedBy | ✅ |
+| LEDGER_SEGMENT | CodeCombinationLedgerSegment | — |
+| LEDGER_TYPE_CODE | CodeCombinationLedgerTypeCode | — |
+| OBJECT_VERSION_NUMBER | CodeCombinationObjectVersionNumber | — |
+| PRESERVE_FLAG | CodeCombinationPreserveFlag | — |
+| REFERENCE1 | CodeCombinationReference1 | — |
+| REFERENCE2 | CodeCombinationReference2 | — |
+| REFERENCE3 | CodeCombinationReference3 | — |
+| REFERENCE4 | CodeCombinationReference4 | — |
+| REFERENCE5 | CodeCombinationReference5 | — |
+| REFRESH_FLAG | CodeCombinationRefreshFlag | — |
+| REVALUATION_ID | CodeCombinationRevaluationId | — |
+| SEGMENT1 | CodeCombinationSegment1 | — |
+| SEGMENT10 | CodeCombinationSegment10 | — |
+| SEGMENT11 | CodeCombinationSegment11 | — |
+| SEGMENT12 | CodeCombinationSegment12 | — |
+| SEGMENT13 | CodeCombinationSegment13 | — |
+| SEGMENT14 | CodeCombinationSegment14 | — |
+| SEGMENT15 | CodeCombinationSegment15 | — |
+| SEGMENT16 | CodeCombinationSegment16 | — |
+| SEGMENT17 | CodeCombinationSegment17 | — |
+| SEGMENT18 | CodeCombinationSegment18 | — |
+| SEGMENT19 | CodeCombinationSegment19 | — |
+| SEGMENT2 | CodeCombinationSegment2 | — |
+| SEGMENT20 | CodeCombinationSegment20 | — |
+| SEGMENT21 | CodeCombinationSegment21 | — |
+| SEGMENT22 | CodeCombinationSegment22 | — |
+| SEGMENT23 | CodeCombinationSegment23 | — |
+| SEGMENT24 | CodeCombinationSegment24 | — |
+| SEGMENT25 | CodeCombinationSegment25 | — |
+| SEGMENT26 | CodeCombinationSegment26 | — |
+| SEGMENT27 | CodeCombinationSegment27 | — |
+| SEGMENT28 | CodeCombinationSegment28 | — |
+| SEGMENT29 | CodeCombinationSegment29 | — |
+| SEGMENT3 | CodeCombinationSegment3 | — |
+| SEGMENT30 | CodeCombinationSegment30 | — |
+| SEGMENT4 | CodeCombinationSegment4 | — |
+| SEGMENT5 | CodeCombinationSegment5 | — |
+| SEGMENT6 | CodeCombinationSegment6 | — |
+| SEGMENT7 | CodeCombinationSegment7 | — |
+| SEGMENT8 | CodeCombinationSegment8 | — |
+| SEGMENT9 | CodeCombinationSegment9 | — |
+| SEGMENT_ATTRIBUTE1 | CodeCombinationSegmentAttribute1 | — |
+| SEGMENT_ATTRIBUTE10 | CodeCombinationSegmentAttribute10 | — |
+| SEGMENT_ATTRIBUTE11 | CodeCombinationSegmentAttribute11 | — |
+| SEGMENT_ATTRIBUTE12 | CodeCombinationSegmentAttribute12 | — |
+| SEGMENT_ATTRIBUTE13 | CodeCombinationSegmentAttribute13 | — |
+| SEGMENT_ATTRIBUTE14 | CodeCombinationSegmentAttribute14 | — |
+| SEGMENT_ATTRIBUTE15 | CodeCombinationSegmentAttribute15 | — |
+| SEGMENT_ATTRIBUTE16 | CodeCombinationSegmentAttribute16 | — |
+| SEGMENT_ATTRIBUTE17 | CodeCombinationSegmentAttribute17 | — |
+| SEGMENT_ATTRIBUTE18 | CodeCombinationSegmentAttribute18 | — |
+| SEGMENT_ATTRIBUTE19 | CodeCombinationSegmentAttribute19 | — |
+| SEGMENT_ATTRIBUTE2 | CodeCombinationSegmentAttribute2 | — |
+| SEGMENT_ATTRIBUTE20 | CodeCombinationSegmentAttribute20 | — |
+| SEGMENT_ATTRIBUTE21 | CodeCombinationSegmentAttribute21 | — |
+| SEGMENT_ATTRIBUTE22 | CodeCombinationSegmentAttribute22 | — |
+| SEGMENT_ATTRIBUTE23 | CodeCombinationSegmentAttribute23 | — |
+| SEGMENT_ATTRIBUTE24 | CodeCombinationSegmentAttribute24 | — |
+| SEGMENT_ATTRIBUTE25 | CodeCombinationSegmentAttribute25 | — |
+| SEGMENT_ATTRIBUTE26 | CodeCombinationSegmentAttribute26 | — |
+| SEGMENT_ATTRIBUTE27 | CodeCombinationSegmentAttribute27 | — |
+| SEGMENT_ATTRIBUTE28 | CodeCombinationSegmentAttribute28 | — |
+| SEGMENT_ATTRIBUTE29 | CodeCombinationSegmentAttribute29 | — |
+| SEGMENT_ATTRIBUTE3 | CodeCombinationSegmentAttribute3 | — |
+| SEGMENT_ATTRIBUTE30 | CodeCombinationSegmentAttribute30 | — |
+| SEGMENT_ATTRIBUTE31 | CodeCombinationSegmentAttribute31 | — |
+| SEGMENT_ATTRIBUTE32 | CodeCombinationSegmentAttribute32 | — |
+| SEGMENT_ATTRIBUTE33 | CodeCombinationSegmentAttribute33 | — |
+| SEGMENT_ATTRIBUTE34 | CodeCombinationSegmentAttribute34 | — |
+| SEGMENT_ATTRIBUTE35 | CodeCombinationSegmentAttribute35 | — |
+| SEGMENT_ATTRIBUTE36 | CodeCombinationSegmentAttribute36 | — |
+| SEGMENT_ATTRIBUTE37 | CodeCombinationSegmentAttribute37 | — |
+| SEGMENT_ATTRIBUTE38 | CodeCombinationSegmentAttribute38 | — |
+| SEGMENT_ATTRIBUTE39 | CodeCombinationSegmentAttribute39 | — |
+| SEGMENT_ATTRIBUTE4 | CodeCombinationSegmentAttribute4 | — |
+| SEGMENT_ATTRIBUTE40 | CodeCombinationSegmentAttribute40 | — |
+| SEGMENT_ATTRIBUTE41 | CodeCombinationSegmentAttribute41 | — |
+| SEGMENT_ATTRIBUTE42 | CodeCombinationSegmentAttribute42 | — |
+| SEGMENT_ATTRIBUTE5 | CodeCombinationSegmentAttribute5 | — |
+| SEGMENT_ATTRIBUTE6 | CodeCombinationSegmentAttribute6 | — |
+| SEGMENT_ATTRIBUTE7 | CodeCombinationSegmentAttribute7 | — |
+| SEGMENT_ATTRIBUTE8 | CodeCombinationSegmentAttribute8 | — |
+| SEGMENT_ATTRIBUTE9 | CodeCombinationSegmentAttribute9 | — |
+| START_DATE_ACTIVE | CodeCombinationStartDateActive | ✅ |
+| SUMMARY_FLAG | CodeCombinationSummaryFlag | ✅ |
+| TEMPLATE_ID | CodeCombinationTemplateId | — |
+
+### [[referenceaccount|ReferenceAccount]] (AR)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CODE_COMBINATION_ID | CodeCombinationClearingCodeCombinationId | — |
+| CODE_COMBINATION_ID | CodeCombinationFreightCodeCombinationId | — |
+| CODE_COMBINATION_ID | CodeCombinationRecCodeCombinationId | — |
+| CODE_COMBINATION_ID | CodeCombinationRevCodeCombinationId | — |
+| CODE_COMBINATION_ID | CodeCombinationTaxCodeCombinationId | — |
+| CODE_COMBINATION_ID | CodeCombinationUnbilledCodeCombinationId | — |
+| CODE_COMBINATION_ID | CodeCombinationUnearnedCodeCombinationId | — |
+
+### [[subledgercontrolbalancepvo|SubledgerControlBalancePVO]] (GL · BICC: 12/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACCOUNT_TYPE | CodeCombinationAccountType | ✅ |
+| ALLOCATION_CREATE_FLAG | CodeCombinationAllocationCreateFlag | ✅ |
+| ALTERNATE_CODE_COMBINATION_ID | CodeCombinationAlternateCodeCombinationId | ✅ |
+| CHART_OF_ACCOUNTS_ID | CodeCombinationChartOfAccountsId | ✅ |
+| CODE_COMBINATION_ID | CodeCombinationCodeCombinationId | ✅ |
+| FINANCIAL_CATEGORY | CodeCombinationFinancialCategory | ✅ |
+| LEDGER_SEGMENT | CodeCombinationLedgerSegment | ✅ |
+| LEDGER_TYPE_CODE | CodeCombinationLedgerTypeCode | ✅ |
+| OBJECT_VERSION_NUMBER | CodeCombinationObjectVersionNumber | ✅ |
+| REVALUATION_ID | CodeCombinationRevaluationId | ✅ |
+| START_DATE_ACTIVE | CodeCombinationStartDateActive | ✅ |
+| TEMPLATE_ID | CodeCombinationTemplateId | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — GL_CODE_COMBINATIONS](https://docs.oracle.com/en/cloud/saas/financials/25a/oedmf/glcodecombinations-25012.html)

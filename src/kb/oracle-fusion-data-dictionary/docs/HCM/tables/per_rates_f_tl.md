@@ -110,3 +110,41 @@ WHERE  tl.RATE_ID = :p_rate_id
 
 - [Oracle Docs — PER_RATES_F_TL](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/perratesftl.html)
 - [[hcm-module-data-dictionary]] — Dossiê do módulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[ratepvo|RatePVO]] (GL · BICC: 4/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | RateTranslationPEOCreatedBy | — |
+| CREATION_DATE | RateTranslationPEOCreationDate | — |
+| EFFECTIVE_END_DATE | RateTranslationPEOEffectiveEndDate | — |
+| EFFECTIVE_START_DATE | RateTranslationPEOEffectiveStartDate | ✅ |
+| LANGUAGE | RateTranslationPEOLanguage | ✅ |
+| LAST_UPDATE_DATE | RateTranslationPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | RateTranslationPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | RateTranslationPEOLastUpdatedBy | — |
+| NAME | RateTranslationPEOName | ✅ |
+| OBJECT_VERSION_NUMBER | RateTranslationPEOObjectVersionNumber | — |
+| RATE_ID | RateTranslationPEORateId | — |
+| SOURCE_LANG | RateTranslationPEOSourceLang | — |
+
+### [[ratetranslationpvo|RateTranslationPVO]] (GL · BICC: 5/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | RateTranslationPEOCreatedBy | — |
+| CREATION_DATE | RateTranslationPEOCreationDate | — |
+| EFFECTIVE_END_DATE | EffectiveEndDate | ✅ |
+| EFFECTIVE_START_DATE | EffectiveStartDate | ✅ |
+| LANGUAGE | Language | ✅ |
+| LAST_UPDATE_DATE | RateTranslationPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | RateTranslationPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | RateTranslationPEOLastUpdatedBy | — |
+| NAME | RateTranslationPEOName | — |
+| OBJECT_VERSION_NUMBER | RateTranslationPEOObjectVersionNumber | — |
+| RATE_ID | RateId | ✅ |
+| SOURCE_LANG | RateTranslationPEOSourceLang | — |

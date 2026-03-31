@@ -111,3 +111,95 @@ WHERE  v.PERSON_ID = :p_person_id;
 
 - [Oracle Docs — HWM_TM_REP_S_SEC_ATRBS_V](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/hwmtmrepssecatrbsv.html)
 - [[hcm-module-data-dictionary]] — Dossie do modulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[absencetimeentrypvo|AbsenceTimeEntryPVO]] (HCM · BICC: 4/6)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| SEC_ATTRIBUTE_CATEGORY | SecAttributeCategory | — |
+| SEC_TIME_REPOS_ATRB_ID | SecurityTimeRepositoryAttributeId | — |
+| SECURITY_BUSINESS_UNIT | SecurityBusinessUnit | ✅ |
+| SECURITY_ENTERPRISE_ID | SecurityEnterpriseId | ✅ |
+| SECURITY_LEG_DATA_GROUP | SecurityLegislativeDataGroup | ✅ |
+| SECURITY_ORGANIZATION_ID | SecurityOrganizationId | ✅ |
+
+### [[historicabsencetimeentrypvo|HistoricAbsenceTimeEntryPVO]] (HCM · BICC: 4/6)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| SEC_ATTRIBUTE_CATEGORY | SecAttributeCategory | — |
+| SEC_TIME_REPOS_ATRB_ID | SecurityTimeRepositoryAttributeId | — |
+| SECURITY_BUSINESS_UNIT | SecurityBusinessUnit | ✅ |
+| SECURITY_ENTERPRISE_ID | SecurityEnterpriseId | ✅ |
+| SECURITY_LEG_DATA_GROUP | SecurityLegislativeDataGroup | ✅ |
+| SECURITY_ORGANIZATION_ID | SecurityOrganizationId | ✅ |
+
+### [[historicprocessedtimeentrypvo|HistoricProcessedTimeEntryPVO]] (HCM · BICC: 4/6)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| SEC_ATTRIBUTE_CATEGORY | SecAttributeCategory | — |
+| SEC_TIME_REPOS_ATRB_ID | SecurityTimeRepositoryAttributeId | — |
+| SECURITY_BUSINESS_UNIT | SecurityBusinessUnit | ✅ |
+| SECURITY_ENTERPRISE_ID | SecurityEnterpriseId | ✅ |
+| SECURITY_LEG_DATA_GROUP | SecurityLegislativeDataGroup | ✅ |
+| SECURITY_ORGANIZATION_ID | SecurityOrganizationId | ✅ |
+
+### [[historicreportedtimeentrypvo|HistoricReportedTimeEntryPVO]] (HCM · BICC: 4/6)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| SEC_ATTRIBUTE_CATEGORY | SecAttributeCategory | — |
+| SEC_TIME_REPOS_ATRB_ID | SecurityTimeRepositoryAttributeId | — |
+| SECURITY_BUSINESS_UNIT | SecurityBusinessUnit | ✅ |
+| SECURITY_ENTERPRISE_ID | SecurityEnterpriseId | ✅ |
+| SECURITY_LEG_DATA_GROUP | SecurityLegislativeDataGroup | ✅ |
+| SECURITY_ORGANIZATION_ID | SecurityOrganizationId | ✅ |
+
+### [[historicrptabstimeentrypvo|HistoricRptAbsTimeEntryPVO]] (HCM · BICC: 4/6)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| SEC_ATTRIBUTE_CATEGORY | SimpleSecurityAttributePEOSecAttributeCategory | — |
+| SEC_TIME_REPOS_ATRB_ID | SimpleSecurityAttributePEOSecurityTimeRepositoryAttributeId | — |
+| SECURITY_BUSINESS_UNIT | SimpleSecurityAttributePEOSecurityBusinessUnit | ✅ |
+| SECURITY_ENTERPRISE_ID | SimpleSecurityAttributePEOSecurityEnterpriseId | ✅ |
+| SECURITY_LEG_DATA_GROUP | SimpleSecurityAttributePEOSecurityLegislativeDataGroup | ✅ |
+| SECURITY_ORGANIZATION_ID | SimpleSecurityAttributePEOSecurityOrganizationId | ✅ |
+
+### [[processedtimeentrypvo|ProcessedTimeEntryPVO]] (HCM · BICC: 4/6)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| SEC_ATTRIBUTE_CATEGORY | SecAttributeCategory | — |
+| SEC_TIME_REPOS_ATRB_ID | SecurityTimeRepositoryAttributeId | — |
+| SECURITY_BUSINESS_UNIT | SecurityBusinessUnit | ✅ |
+| SECURITY_ENTERPRISE_ID | SecurityEnterpriseId | ✅ |
+| SECURITY_LEG_DATA_GROUP | SecurityLegislativeDataGroup | ✅ |
+| SECURITY_ORGANIZATION_ID | SecurityOrganizationId | ✅ |
+
+### [[reportedtimeentrypvo|ReportedTimeEntryPVO]] (HCM · BICC: 4/6)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| SEC_ATTRIBUTE_CATEGORY | SecAttributeCategory | — |
+| SEC_TIME_REPOS_ATRB_ID | SecurityTimeRepositoryAttributeId | — |
+| SECURITY_BUSINESS_UNIT | SecurityBusinessUnit | ✅ |
+| SECURITY_ENTERPRISE_ID | SecurityEnterpriseId | ✅ |
+| SECURITY_LEG_DATA_GROUP | SecurityLegislativeDataGroup | ✅ |
+| SECURITY_ORGANIZATION_ID | SecurityOrganizationId | ✅ |
+
+### [[rptabstimeentrypvo|RptAbsTimeEntryPVO]] (HCM · BICC: 4/6)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| SEC_ATTRIBUTE_CATEGORY | SimpleSecurityAttributePEOSecAttributeCategory | — |
+| SEC_TIME_REPOS_ATRB_ID | SimpleSecurityAttributePEOSecurityTimeRepositoryAttributeId | — |
+| SECURITY_BUSINESS_UNIT | SimpleSecurityAttributePEOSecurityBusinessUnit | ✅ |
+| SECURITY_ENTERPRISE_ID | SimpleSecurityAttributePEOSecurityEnterpriseId | ✅ |
+| SECURITY_LEG_DATA_GROUP | SimpleSecurityAttributePEOSecurityLegislativeDataGroup | ✅ |
+| SECURITY_ORGANIZATION_ID | SimpleSecurityAttributePEOSecurityOrganizationId | ✅ |

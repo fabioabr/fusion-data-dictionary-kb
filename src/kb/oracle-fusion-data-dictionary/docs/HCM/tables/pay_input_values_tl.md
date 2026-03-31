@@ -98,6 +98,60 @@ WHERE  tl.INPUT_VALUE_ID = :p_input_value_id
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[inputvalue|InputValue]] (HCM · BICC: 2/4)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| INPUT_VALUE_ID | InputValueTranslationPEOInputValueId | — |
+| LANGUAGE | InputValueTranslationPEOLanguage | ✅ |
+| NAME | InputValueTranslationPEOName | ✅ |
+| SOURCE_LANG | InputValueTranslationPEOSourceLang | — |
+
+### [[inputvaluepvo|InputValuePVO]] (HCM · BICC: 2/4)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| INPUT_VALUE_ID | InputValueTranslationPEOInputValueId | — |
+| LANGUAGE | InputValueTranslationPEOLanguage | ✅ |
+| NAME | InputValueTranslationPEOName | ✅ |
+| SOURCE_LANG | InputValueTranslationPEOSourceLang | — |
+
+### [[offersalarypvo|OfferSalaryPVO]] (HCM · BICC: 1/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | InputValueTranslationPEOCreatedBy3 | — |
+| CREATION_DATE | InputValueTranslationPEOCreationDate3 | — |
+| INPUT_VALUE_ID | InputValueTranslationPEOInputValueId1 | — |
+| INPUT_VALUE_ID | InputValueTranslationPEOInputValueId2 | — |
+| LANGUAGE | InputValueTranslationPEOLanguage2 | — |
+| LANGUAGE | InputValueTranslationPEOLanguage3 | — |
+| LAST_UPDATE_DATE | InputValueTranslationPEOLastUpdateDate3 | ✅ |
+| LAST_UPDATE_LOGIN | InputValueTranslationPEOLastUpdateLogin3 | — |
+| LAST_UPDATED_BY | InputValueTranslationPEOLastUpdatedBy3 | — |
+| NAME | InputValueTranslationPEOName1 | — |
+| OBJECT_VERSION_NUMBER | InputValueTranslationPEOObjectVersionNumber3 | — |
+| SOURCE_LANG | InputValueTranslationPEOSourceLang1 | — |
+
+### [[salarypvo|SalaryPVO]] (HCM · BICC: 3/10)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | InputValueTranslationPEOCreatedBy | — |
+| CREATION_DATE | InputValueTranslationPEOCreationDate | — |
+| INPUT_VALUE_ID | InputValueTranslationPEOInputValueId | — |
+| LANGUAGE | InputValueTranslationPEOLanguage | ✅ |
+| LAST_UPDATE_DATE | InputValueTranslationPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | InputValueTranslationPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | InputValueTranslationPEOLastUpdatedBy | — |
+| NAME | InputValueTranslationPEOName | ✅ |
+| OBJECT_VERSION_NUMBER | InputValueTranslationPEOObjectVersionNumber | — |
+| SOURCE_LANG | InputValueTranslationPEOSourceLang | — |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — PAY_INPUT_VALUES_TL](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/payinputvaluestl.html)

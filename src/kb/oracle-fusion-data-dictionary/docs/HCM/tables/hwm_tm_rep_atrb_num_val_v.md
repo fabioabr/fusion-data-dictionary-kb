@@ -108,3 +108,40 @@ WHERE  v.REP_ENTRY_ID = :p_rep_entry_id;
 
 - [Oracle Docs — HWM_TM_REP_ATRB_NUM_VAL_V](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/hwmtmrepatrbnumvalv.html)
 - [[hcm-module-data-dictionary]] — Dossie do modulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[attributenumericvaluepvo|AttributeNumericValuePVO]] (HCM · BICC: 6/28)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ALLOWED_SCOPE | AllowedScope | — |
+| ATTRIBUTE_CATEGORY | AttributeCategory | — |
+| ATTRIBUTE_GROUP | AttributeGroup | — |
+| ATTRIBUTE_NAME | AttributeName | ✅ |
+| ATTRIBUTE_NUMERIC_VALUE | AttributeNumericValue | ✅ |
+| ATTRIBUTE_TYPE | AttributeType | — |
+| CLASS | Class11 | — |
+| COMP_DISP_CODE | ComponentDisplayCode | — |
+| CREATED_BY | CreatedBy | — |
+| CREATION_DATE | CreationDate | — |
+| DESCRIPTION | Description | — |
+| ENTERPRISE_ID | EnterpriseId | — |
+| GLOBAL_TM_ATRB_FLD_ID | GlobalTimeAttributeFieldId | — |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | — |
+| LAST_UPDATED_BY | LastUpdatedBy | — |
+| MANDATORY_FOR_TCSMRS | MandatoryForTimeConsumers | — |
+| MODULE_ID | ModuleId | — |
+| NAME | Name | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | — |
+| PARENT_TM_ATRB_FLD_ID | ParentTimeAttributeFieldId | — |
+| TCSMRS_ID | TimeConsumersId | — |
+| TM_ATRB_FLD_ID | TimeAttributeFieldId | ✅ |
+| TM_REC_ID | TimeRecordId | — |
+| TM_REC_VERSION | TimeRecordVersion | — |
+| TM_REP_ATRB_ID | TimeRepositoryAttributeId | ✅ |
+| VALUE_LOCATION | ValueLocation | — |
+| VALUE_SET_ID | ValueSetId | — |

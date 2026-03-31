@@ -100,6 +100,65 @@ WHERE  eev.ELEMENT_ENTRY_ID = :p_entry_id
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[elemententryvalue|ElementEntryValue]] (HCM · BICC: 13/13)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | ElementEntryValueDPEOCreatedBy | ✅ |
+| CREATION_DATE | ElementEntryValueDPEOCreationDate | ✅ |
+| EFFECTIVE_END_DATE | EffectiveEndDate | ✅ |
+| EFFECTIVE_START_DATE | EffectiveStartDate | ✅ |
+| ELEMENT_ENTRY_ID | ElementEntryValueDPEOElementEntryId | ✅ |
+| ELEMENT_ENTRY_VALUE_ID | ElementEntryValueId | ✅ |
+| ENTRY_USAGE_ID | ElementEntryValueDPEOEntryUsageId | ✅ |
+| INPUT_VALUE_ID | ElementEntryValueDPEOInputValueId | ✅ |
+| LAST_UPDATE_DATE | ElementEntryValueDPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ElementEntryValueDPEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | ElementEntryValueDPEOLastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | ElementEntryValueDPEOObjectVersionNumber | ✅ |
+| SCREEN_ENTRY_VALUE | ElementEntryValueDPEOScreenEntryValue | ✅ |
+
+### [[elemententryvaluepvo|ElementEntryValuePVO]] (HCM · BICC: 5/14)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | ElementEntryValuePEOCreatedBy | — |
+| CREATION_DATE | ElementEntryValuePEOCreationDate | — |
+| EFFECTIVE_END_DATE | ElementEntryValuePEOEffectiveEndDate | ✅ |
+| EFFECTIVE_START_DATE | ElementEntryValuePEOEffectiveStartDate | ✅ |
+| ELEMENT_ENTRY_ID | ElementEntryValuePEOElementEntryId | — |
+| ELEMENT_ENTRY_VALUE_ID | ElementEntryValueId | ✅ |
+| ENTERPRISE_ID | EnterpriseId | — |
+| ENTRY_USAGE_ID | ElementEntryValuePEOEntryUsageId | — |
+| INPUT_VALUE_ID | ElementEntryValuePEOInputValueId | — |
+| LAST_UPDATE_DATE | ElementEntryValuePEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ElementEntryValuePEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | ElementEntryValuePEOLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | ElementEntryValuePEOObjectVersionNumber | — |
+| SCREEN_ENTRY_VALUE | ElementEntryValuePEOScreenEntryValue | ✅ |
+
+### [[retroelemententry|RetroElementEntry]] (HCM · BICC: 5/13)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | ElementEntryValueCreatedBy | — |
+| CREATION_DATE | ElementEntryValueCreationDate | — |
+| EFFECTIVE_END_DATE | EffectiveEndDate | ✅ |
+| EFFECTIVE_START_DATE | EffectiveStartDate | ✅ |
+| ELEMENT_ENTRY_ID | ElementEntryValueElementEntryId | — |
+| ELEMENT_ENTRY_VALUE_ID | ElementEntryValueId | ✅ |
+| ENTRY_USAGE_ID | ElementEntryValueEntryUsageId | — |
+| INPUT_VALUE_ID | ElementEntryValueInputValueId | — |
+| LAST_UPDATE_DATE | ElementEntryValueLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ElementEntryValueLastUpdateLogin | — |
+| LAST_UPDATED_BY | ElementEntryValueLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | ElementEntryValueObjectVersionNumber | — |
+| SCREEN_ENTRY_VALUE | ElementEntryValueScreenEntryValue | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — PAY_ELEMENT_ENTRY_VALUES_F](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/payelemententryvaluesf.html)

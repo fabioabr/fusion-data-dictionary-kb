@@ -109,6 +109,36 @@ WHERE  v.STATUS_CODE = 'ACTIVE';
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[checkinspvo|CheckinsPVO]] (HCM · BICC: 18/21)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | TemplateCheckInPEOBusinessGroupId | — |
+| CHECK_IN_TEMPLATE_ID | TemplateCheckInPEOCheckInTemplateId | — |
+| COMMENTS | TemplateCheckInPEOComments | ✅ |
+| CREATED_BY | TemplateCheckInPEOCreatedBy | ✅ |
+| CREATION_DATE | TemplateCheckInPEOCreationDate | ✅ |
+| DATE_FROM | TemplateCheckInPEODateFrom | ✅ |
+| DATE_TO | TemplateCheckInPEODateTo | ✅ |
+| DEV_GOALS_AUTO_POPULATE_FLAG | TemplateCheckInPEODevGoalsAutoPopulateFlag | ✅ |
+| DEVELOPMENT_GOALS_FLAG | TemplateCheckInPEODevelopmentGoalsFlag | ✅ |
+| FREE_FORM_NOTES_FLAG | TemplateCheckInPEOFreeFormNotesFlag | — |
+| GENERAL_DISCUSSION_TOPIC_FLAG | TemplateCheckInPEOGeneralDiscussionTopicFlag | ✅ |
+| LAST_UPDATE_DATE | TemplateCheckInPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | TemplateCheckInPEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | TemplateCheckInPEOLastUpdatedBy | ✅ |
+| MANAGER_QUESTIONNAIRE_ID | TemplateCheckInPEOManagerQuestionnaireId | ✅ |
+| NAME | TemplateCheckInPEOName | ✅ |
+| PERF_GOALS_AUTO_POPULATE_FLAG | TemplateCheckInPEOPerfGoalsAutoPopulateFlag | ✅ |
+| PERFORMANCE_GOALS_FLAG | TemplateCheckInPEOPerformanceGoalsFlag | ✅ |
+| QUESTIONNAIRE_FLAG | TemplateCheckInPEOQuestionnaireFlag | ✅ |
+| STATUS_CODE | TemplateCheckInPEOStatusCode | ✅ |
+| WORKER_QUESTIONNAIRE_ID | TemplateCheckInPEOWorkerQuestionnaireId | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — HRA_CHECK_IN_TMPLS_VL](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/hracheckintmplsvl.html)

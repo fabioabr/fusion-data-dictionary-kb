@@ -103,6 +103,98 @@ WHERE  ROWNUM <= 100;
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[checkintemplateeligibilitypvo|CheckinTemplateEligibilityPVO]] (HCM · BICC: 1/7)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| COLUMN_NAME | EligibilityObjectPEOColumnName | — |
+| COLUMN_VALUE | EligibilityObjectPEOColumnValue | — |
+| EFFECTIVE_END_DATE | EligibilityObjectPEOEffectiveEndDate1 | — |
+| EFFECTIVE_START_DATE | EligibilityObjectPEOEffectiveStartDate1 | ✅ |
+| ELIG_OBJ_ID | EligibilityObjectPEOEligObjId1 | — |
+| ELIG_OBJ_TYPE | EligibilityObjectPEOEligObjType | — |
+| TABLE_NAME | EligibilityObjectPEOTableName | — |
+
+### [[eligibilityobjectsextractpvo|EligibilityObjectsExtractPVO]] (HCM · BICC: 14/14)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | BusinessGroupId | ✅ |
+| COLUMN_NAME | ColumnName | ✅ |
+| COLUMN_VALUE | ColumnValue | ✅ |
+| CREATED_BY | CreatedBy | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| EFFECTIVE_END_DATE | EffectiveEndDate | ✅ |
+| EFFECTIVE_START_DATE | EffectiveStartDate | ✅ |
+| ELIG_OBJ_ID | EligObjId | ✅ |
+| ELIG_OBJ_TYPE | EligObjType | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | LastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | ✅ |
+| TABLE_NAME | TableName | ✅ |
+
+### [[eligibilityresultpvo|EligibilityResultPVO]] (HCM · BICC: 4/14)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | EligibilityObjectPEOBusinessGroupId | — |
+| COLUMN_NAME | EligibilityObjectPEOColumnName | — |
+| COLUMN_VALUE | EligibilityObjectPEOColumnValue | — |
+| CREATED_BY | EligibilityObjectPEOCreatedBy | — |
+| CREATION_DATE | EligibilityObjectPEOCreationDate | — |
+| EFFECTIVE_END_DATE | EligibilityObjectPEOEffectiveEndDate | ✅ |
+| EFFECTIVE_START_DATE | EligibilityObjectPEOEffectiveStartDate | ✅ |
+| ELIG_OBJ_ID | EligibilityObjectPEOEligObjId | ✅ |
+| ELIG_OBJ_TYPE | EligibilityObjectPEOEligObjType | — |
+| LAST_UPDATE_DATE | EligibilityObjectPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | EligibilityObjectPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | EligibilityObjectPEOLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | EligibilityObjectPEOObjectVersionNumber | — |
+| TABLE_NAME | EligibilityObjectPEOTableName | — |
+
+### [[eligibilityresultsdetailspvo|EligibilityResultsDetailsPVO]] (HCM · BICC: 5/14)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | EligibilityObjectPEOBusinessGroupId | — |
+| COLUMN_NAME | EligibilityObjectPEOColumnName | — |
+| COLUMN_VALUE | EligibilityObjectPEOColumnValue | — |
+| CREATED_BY | EligibilityObjectPEOCreatedBy | — |
+| CREATION_DATE | EligibilityObjectPEOCreationDate | — |
+| EFFECTIVE_END_DATE | EligibilityObjectPEOEffectiveEndDate | ✅ |
+| EFFECTIVE_START_DATE | EligibilityObjectPEOEffectiveStartDate | ✅ |
+| ELIG_OBJ_ID | EligibilityObjectPEOEligObjId | ✅ |
+| ELIG_OBJ_TYPE | EligibilityObjectPEOEligObjType | ✅ |
+| LAST_UPDATE_DATE | EligibilityObjectPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | EligibilityObjectPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | EligibilityObjectPEOLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | EligibilityObjectPEOObjectVersionNumber | — |
+| TABLE_NAME | EligibilityObjectPEOTableName | — |
+
+### [[templateperiodpersoneligibilityresultpvo|TemplatePeriodPersonEligibilityResultPVO]] (HCM · BICC: 1/14)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| COLUMN_NAME | ColumnName | — |
+| COLUMN_VALUE | ColumnValue | — |
+| CREATED_BY | EligibilityObjectPEOCreatedBy | — |
+| CREATION_DATE | EligibilityObjectPEOCreationDate | — |
+| EFFECTIVE_END_DATE | EffectiveEndDate1 | — |
+| EFFECTIVE_START_DATE | EffectiveStartDate1 | ✅ |
+| ELIG_OBJ_ID | EligObjId1 | — |
+| ELIG_OBJ_ID | EligObjId2 | — |
+| ELIG_OBJ_TYPE | EligObjType | — |
+| LAST_UPDATE_DATE | EligibilityObjectPEOLastUpdateDate | — |
+| LAST_UPDATE_LOGIN | EligibilityObjectPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | EligibilityObjectPEOLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | EligibilityObjectPEOObjectVersionNumber | — |
+| TABLE_NAME | TableName | — |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — BEN_ELIG_OBJ_F](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/beneligobjf.html)

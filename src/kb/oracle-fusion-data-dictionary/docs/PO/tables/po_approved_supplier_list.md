@@ -38,7 +38,6 @@ updated_at: 2026-03-25
 
 Armazena a **lista de fornecedores aprovados (Approved Supplier List — ASL)** por item ou categoria. Define quais fornecedores estao autorizados a fornecer determinados itens.
 
-
 ---
 
 ## 🧠 Propósito de Negócio
@@ -99,7 +98,6 @@ FROM   PO_APPROVED_SUPPLIER_LIST
 WHERE  ITEM_ID = :p_item_id;
 ```
 
-
 ---
 
 ## 🔒 Observações
@@ -107,6 +105,44 @@ WHERE  ITEM_ID = :p_item_id;
 - ASL pode ser por item ou por categoria.
 - O `ASL_STATUS_ID` define aprovado, desqualificado, etc.
 - Pode ser restrita a organizacoes via `USING_ORGANIZATION_ID`.
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[purchasingaslextractpvo|PurchasingASLExtractPVO]] (PO · BICC: 12/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ASL_ID | AslId | ✅ |
+| CATEGORY_ID | CategoryId | ✅ |
+| CREATED_BY | SupListCreatedBy | ✅ |
+| CREATION_DATE | SupListCreationDate | ✅ |
+| DISABLE_FLAG | DisableFlag | ✅ |
+| ITEM_ID | ItemId | ✅ |
+| LAST_UPDATE_DATE | SupListLastUpdateDate | ✅ |
+| LAST_UPDATED_BY | SupListLastUpdatedBy | ✅ |
+| PRC_BU_ID | PrcBuId | ✅ |
+| USING_ORGANIZATION_ID | SupListUsingOrganizationId | ✅ |
+| VENDOR_ID | VendorId | ✅ |
+| VENDOR_SITE_ID | VendorSiteId | ✅ |
+
+### [[purchasingaslpvo|PurchasingASLPVO]] (PO · BICC: 12/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ASL_ID | AslId | ✅ |
+| CATEGORY_ID | CategoryId | ✅ |
+| CREATED_BY | SupListCreatedBy | ✅ |
+| CREATION_DATE | SupListCreationDate | ✅ |
+| DISABLE_FLAG | DisableFlag | ✅ |
+| ITEM_ID | ItemId | ✅ |
+| LAST_UPDATE_DATE | SupListLastUpdateDate | ✅ |
+| LAST_UPDATED_BY | SupListLastUpdatedBy | ✅ |
+| PRC_BU_ID | PrcBuId | ✅ |
+| USING_ORGANIZATION_ID | SupListUsingOrganizationId | ✅ |
+| VENDOR_ID | VendorId | ✅ |
+| VENDOR_SITE_ID | VendorSiteId | ✅ |
 
 ---
 

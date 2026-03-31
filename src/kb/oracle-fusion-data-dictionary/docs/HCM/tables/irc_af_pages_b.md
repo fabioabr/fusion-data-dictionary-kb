@@ -116,3 +116,19 @@ ORDER BY p.DISPLAY_SEQUENCE;
 
 - [Oracle Docs — IRC_AF_PAGES_B](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/ircafpagesb.html)
 - [[hcm-module-data-dictionary]] — Dossie do modulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[applyflowsectionpagepvo|ApplyFlowSectionPagePVO]] (HCM · BICC: 1/7)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | ApplyFlowPageBPEOCreatedBy | — |
+| CREATION_DATE | ApplyFlowPageBPEOCreationDate | — |
+| LAST_UPDATE_DATE | ApplyFlowPageBPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ApplyFlowPageBPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | ApplyFlowPageBPEOLastUpdatedBy | — |
+| PAGE_ID | PageId | — |
+| PAGE_SEQ_NUM | ApplyFlowPageBPEOPageSeqNum | — |

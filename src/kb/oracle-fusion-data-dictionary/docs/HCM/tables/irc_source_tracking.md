@@ -100,6 +100,43 @@ ORDER BY total DESC;
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[sourcetrackingviewallpvo|SourceTrackingViewAllPVO]] (HCM · BICC: 24/28)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| AGENCY_ID | SourceTrackingPEOAgencyId | ✅ |
+| AGENT_ID | SourceTrackingPEOAgentId | ✅ |
+| CAMPAIGN_CODE | SourceTrackingPEOCampaignCode | ✅ |
+| CANDIDATE_NUMBER | SourceTrackingPEOCandidateNumber | ✅ |
+| CREATED_BY | SourceTrackingPEOCreatedBy | ✅ |
+| CREATION_DATE | SourceTrackingPEOCreationDate | ✅ |
+| DIMENSION_ID | SourceTrackingPEODimensionId | ✅ |
+| EVENT_ID | SourceTrackingPEOEventId | — |
+| FROM_POOL_ID | SourceTrackingPEOFromPoolId | ✅ |
+| FROM_REQUISITION_ID | SourceTrackingPEOFromRequisitionId | ✅ |
+| LAST_UPDATE_DATE | SourceTrackingPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | SourceTrackingPEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | SourceTrackingPEOLastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | SourceTrackingPEOObjectVersionNumber | — |
+| PARENT_SOURCE_TRACKING_ID | SourceTrackingPEOParentSourceTrackingId | ✅ |
+| POOL_ID | SourceTrackingPEOPoolId | ✅ |
+| POOL_MEMBER_ID | SourceTrackingPEOPoolMemberId | ✅ |
+| PROSPECT_ID | SourceTrackingPEOProspectId | ✅ |
+| RECRUITER_ID | SourceTrackingPEORecruiterId | ✅ |
+| REFERRAL_ID | SourceTrackingPEOReferralId | ✅ |
+| REFERRED_DATE | SourceTrackingPEOReferredDate | ✅ |
+| REQUISITION_ID | SourceTrackingPEORequisitionId | ✅ |
+| SHARE_ID | SourceTrackingPEOShareId | ✅ |
+| SOURCE_LEVEL | SourceTrackingPEOSourceLevel | ✅ |
+| SOURCE_TRACKING_ID | ParentSourceTrackingPEOSourceTrackingId | — |
+| SOURCE_TRACKING_ID | SourceTrackingId | ✅ |
+| SUBMISSION_ID | SourceTrackingPEOSubmissionId | ✅ |
+| TOKEN_ID | SourceTrackingPEOTokenId | — |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — IRC_SOURCE_TRACKING](https://docs.oracle.com/en/cloud/saas/talent-management/25a/oedmf/ircsourcetracking.html)

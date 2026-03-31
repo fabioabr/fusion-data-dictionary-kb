@@ -110,3 +110,47 @@ WHERE  dm.PERSON_ID = :p_person_id
 
 - [Oracle Docs — PER_PERSON_DLVRY_METHODS](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/perpersondlvrymethods.html)
 - [[hcm-module-data-dictionary]] — Dossiê do módulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[deliverymethodspvo|DeliveryMethodsPVO]] (HCM · BICC: 12/15)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | DeliveryMethodsPEOBusinessGroupId | — |
+| COMM_DLVRY_ADDRESS | DeliveryMethodsPEOCommDlvryAddress | ✅ |
+| COMM_DLVRY_FK_ID | DeliveryMethodsPEOCommDlvryFkId | ✅ |
+| COMM_DLVRY_METHOD | DeliveryMethodsPEOCommDlvryMethod | ✅ |
+| CREATED_BY | DeliveryMethodsPEOCreatedBy | ✅ |
+| CREATION_DATE | DeliveryMethodsPEOCreationDate | ✅ |
+| DATE_END | DeliveryMethodsPEODateEnd | ✅ |
+| DATE_START | DeliveryMethodsPEODateStart | ✅ |
+| DELIVERY_METHOD_ID | DeliveryMethodId | ✅ |
+| LAST_UPDATE_DATE | DeliveryMethodsPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | DeliveryMethodsPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | DeliveryMethodsPEOLastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | DeliveryMethodsPEOObjectVersionNumber | — |
+| PERSON_ID | DeliveryMethodsPEOPersonId | ✅ |
+| PREFERRED_ORDER | DeliveryMethodsPEOPreferredOrder | ✅ |
+
+### [[deliverymethodspvoviewall|DeliveryMethodsPVOViewAll]] (HCM · BICC: 12/15)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | DeliveryMethodsPEOBusinessGroupId | — |
+| COMM_DLVRY_ADDRESS | DeliveryMethodsPEOCommDlvryAddress | ✅ |
+| COMM_DLVRY_FK_ID | DeliveryMethodsPEOCommDlvryFkId | ✅ |
+| COMM_DLVRY_METHOD | DeliveryMethodsPEOCommDlvryMethod | ✅ |
+| CREATED_BY | DeliveryMethodsPEOCreatedBy | ✅ |
+| CREATION_DATE | DeliveryMethodsPEOCreationDate | ✅ |
+| DATE_END | DeliveryMethodsPEODateEnd | ✅ |
+| DATE_START | DeliveryMethodsPEODateStart | ✅ |
+| DELIVERY_METHOD_ID | DeliveryMethodId | ✅ |
+| LAST_UPDATE_DATE | DeliveryMethodsPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | DeliveryMethodsPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | DeliveryMethodsPEOLastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | DeliveryMethodsPEOObjectVersionNumber | — |
+| PERSON_ID | DeliveryMethodsPEOPersonId | ✅ |
+| PREFERRED_ORDER | DeliveryMethodsPEOPreferredOrder | ✅ |

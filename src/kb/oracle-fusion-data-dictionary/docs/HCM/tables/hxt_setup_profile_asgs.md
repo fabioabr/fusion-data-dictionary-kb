@@ -111,3 +111,39 @@ WHERE  a.ORGANIZATION_ID = :p_org_id;
 
 - [Oracle Docs — HXT_SETUP_PROFILE_ASGS](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/hxtsetupprofileasgs.html)
 - [[hcm-module-data-dictionary]] — Dossie do modulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[labordemandpvo|LaborDemandPVO]] (HCM · BICC: 1/5)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ASSIGN_TO | AssignTo | — |
+| DATE_FROM | DateFrom | — |
+| DATE_TO | DateTo | — |
+| OBJECT_ID | ObjectId | — |
+| SETUP_PROFILE_ASG_ID | SetupProfileAsgId | ✅ |
+
+### [[setupprofileasgpvo|SetupProfileAsgPVO]] (GL · BICC: 11/17)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ASSIGN_TO | SetupProfileAsgPEOAssignTo | ✅ |
+| CREATED_BY | SetupProfileAsgPEOCreatedBy | ✅ |
+| CREATION_DATE | SetupProfileAsgPEOCreationDate | ✅ |
+| DATE_FROM | SetupProfileAsgPEODateFrom | ✅ |
+| DATE_TO | SetupProfileAsgPEODateTo | ✅ |
+| ENTERPRISE_ID | SetupProfileAsgPEOEnterpriseId | — |
+| LAST_UPDATE_DATE | SetupProfileAsgPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | SetupProfileAsgPEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | SetupProfileAsgPEOLastUpdatedBy | ✅ |
+| MODULE_ID | SetupProfileAsgPEOModuleId | — |
+| OBJECT_ID | SetupProfileAsgPEOObjectId | ✅ |
+| OBJECT_VERSION_NUMBER | SetupProfileAsgPEOObjectVersionNumber | — |
+| SEED_DATA_SOURCE | SetupProfileAsgPEOSeedDataSource | — |
+| SETUP_PROFILE_ASG_CD | SetupProfileAsgPEOSetupProfileAsgCd | ✅ |
+| SETUP_PROFILE_ASG_ID | SetupProfileAsgPEOSetupProfileAsgId | ✅ |
+| SETUP_PROFILE_ID | SetupProfileAsgPEOSetupProfileId | — |
+| SGUID | SetupProfileAsgPEOSguid | — |

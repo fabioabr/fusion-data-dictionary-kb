@@ -107,3 +107,24 @@ WHERE  rp.STATUS = 'ACTIVE';
 
 - [Oracle Docs — HRT_REVIEW_PERIODS_B](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/hrtreviewperiodsb.html)
 - [[hcm-module-data-dictionary]] — Dossie do modulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[reviewperiodpvo|ReviewPeriodPVO]] (HCM · BICC: 8/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | BusinessGroupId | — |
+| CREATED_BY | CreatedBy | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| END_DATE | EndDate | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | — |
+| LAST_UPDATED_BY | LastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | — |
+| REVIEW_PERIOD_ID | ReviePeriodId | — |
+| REVIEW_PERIOD_ID | ReviewPeriodId | ✅ |
+| START_DATE | StartDate | ✅ |
+| STATUS_CODE | StatusCode | ✅ |

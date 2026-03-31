@@ -107,3 +107,27 @@ WHERE  al.ALLOCATION_HDR_ID = :p_hdr_id
 
 - [Oracle Docs — HWM_ALLOCATION_LINES_F](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/hwmallocationlinesf.html)
 - [[hcm-module-data-dictionary]] — Dossie do modulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[allocationlinespvo|AllocationLinesPVO]] (GL · BICC: 11/15)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ALLOCATION_LINE_ID | AllocLinesPEOAllocationLineId | ✅ |
+| ALLOCATION_LINE_PRIORITY | AllocLinesPEOAllocationLinePriority | ✅ |
+| ALLOCATION_RULE_ID | AllocLinesPEOAllocationRuleId | ✅ |
+| ALLOCATION_VALUE | AllocLinesPEOAllocationValue | ✅ |
+| CREATED_BY | AllocLinesPEOCreatedBy | ✅ |
+| CREATION_DATE | AllocLinesPEOCreationDate | ✅ |
+| DATA_LEVEL | AllocLinesPEODataLevel | — |
+| EFFECTIVE_END_DATE | AllocLinesPEOEffectiveEndDate | ✅ |
+| EFFECTIVE_START_DATE | AllocLinesPEOEffectiveStartDate | ✅ |
+| ENTERPRISE_ID | AllocLinesPEOEnterpriseId | — |
+| LAST_UPDATE_DATE | AllocLinesPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | AllocLinesPEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | AllocLinesPEOLastUpdatedBy | ✅ |
+| MODULE_ID | AllocLinesPEOModuleId | — |
+| OBJECT_VERSION_NUMBER | AllocLinesPEOObjectVersionNumber | — |

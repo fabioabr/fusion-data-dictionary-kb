@@ -62,3 +62,212 @@ updated_at: 2026-03-26
 ## 📎 Uso Típico
 
 (a ser preenchido na etapa 03)
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[contractheaderlinesall|ContractHeaderLinesAll]] (OTHER)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| LANGUAGE | ProjectTranslationPEOLanguage | — |
+| NAME | ProjectTranslationPEOName | — |
+| PROJECT_ID | ProjectTranslationPEOProjectId | — |
+
+### [[contractheaderlinesallunsec|ContractHeaderLinesAllUnsec]] (OTHER)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| LANGUAGE | ProjectTranslationPEOLanguage | — |
+| NAME | ProjectTranslationPEOName | — |
+| PROJECT_ID | ProjectTranslationPEOProjectId | — |
+
+### [[contractheaderlinesp|ContractHeaderLinesP]] (OTHER · BICC: 1/3)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| LANGUAGE | ProjectTranslationPEOLanguage | — |
+| NAME | ProjectTranslationPEOName | ✅ |
+| PROJECT_ID | ProjectTranslationPEOProjectId | — |
+
+### [[contractheaderlinesrefp|ContractHeaderLinesRefP]] (OTHER · BICC: 1/3)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| LANGUAGE | ProjectTranslationPEOLanguage | — |
+| NAME | ProjectTranslationPEOName | ✅ |
+| PROJECT_ID | ProjectTranslationPEOProjectId | — |
+
+### [[invoicelinepvo|InvoiceLinePVO]] (AP · BICC: 1/3)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| LANGUAGE | ProjectTLLAnguage | — |
+| NAME | ProjectName | ✅ |
+| PROJECT_ID | ProjectTLProjectId | — |
+
+### [[project|Project]] (OTHER · BICC: 4/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | ProjectTranslationPEOCreatedBy | — |
+| CREATION_DATE | ProjectTranslationPEOCreationDate | — |
+| DESCRIPTION | ProjectTranslationPEODescription | ✅ |
+| EXECUTION_CUSTOMER_NAME | ProjectTranslationPEOExecutionCustomerName | ✅ |
+| LANGUAGE | ProjectTranslationPEOLanguage | — |
+| LAST_UPDATE_DATE | ProjectTranslationPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ProjectTranslationPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | ProjectTranslationPEOLastUpdatedBy | — |
+| NAME | ProjectTranslationPEOName | ✅ |
+| OBJECT_VERSION_NUMBER | ProjectTranslationPEOObjectVersionNumber | — |
+| PROJECT_ID | ProjectTranslationPEOProjectId | — |
+| SOURCE_LANG | ProjectTranslationPEOSourceLang | — |
+
+### [[projectexec|ProjectExec]] (OTHER · BICC: 4/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | ProjectTranslationPEOCreatedBy | — |
+| CREATION_DATE | ProjectTranslationPEOCreationDate | — |
+| DESCRIPTION | ProjectTranslationPEODescription | ✅ |
+| EXECUTION_CUSTOMER_NAME | ProjectTranslationPEOExecutionCustomerName | ✅ |
+| LANGUAGE | ProjectTranslationPEOLanguage | — |
+| LAST_UPDATE_DATE | ProjectTranslationPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ProjectTranslationPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | ProjectTranslationPEOLastUpdatedBy | — |
+| NAME | ProjectTranslationPEOName | ✅ |
+| OBJECT_VERSION_NUMBER | ProjectTranslationPEOObjectVersionNumber | — |
+| PROJECT_ID | ProjectTranslationPEOProjectId | — |
+| SOURCE_LANG | ProjectTranslationPEOSourceLang | — |
+
+### [[projectplanlinebudgetpvo|ProjectPlanLineBudgetPVO]] (OTHER · BICC: 1/11)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | ProjectTranslationPEOCreatedBy | — |
+| CREATION_DATE | ProjectTranslationPEOCreationDate | — |
+| DESCRIPTION | ProjectTranslationPEODescription | — |
+| LANGUAGE | ProjectTranslationPEOLanguage | — |
+| LAST_UPDATE_DATE | ProjectTranslationPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ProjectTranslationPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | ProjectTranslationPEOLastUpdatedBy | — |
+| NAME | ProjectTranslationPEOName | — |
+| OBJECT_VERSION_NUMBER | ProjectTranslationPEOObjectVersionNumber | — |
+| PROJECT_ID | ProjectTranslationPEOProjectId | — |
+| SOURCE_LANG | ProjectTranslationPEOSourceLang | — |
+
+### [[projectplanlinedetailbudgetpvo|ProjectPlanLineDetailBudgetPVO]] (OTHER · BICC: 1/11)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | ProjectTranslationPEOCreatedBy | — |
+| CREATION_DATE | ProjectTranslationPEOCreationDate | — |
+| DESCRIPTION | ProjectTranslationPEODescription | — |
+| LANGUAGE | ProjectTranslationPEOLanguage | — |
+| LAST_UPDATE_DATE | ProjectTranslationPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ProjectTranslationPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | ProjectTranslationPEOLastUpdatedBy | — |
+| NAME | ProjectTranslationPEOName | — |
+| OBJECT_VERSION_NUMBER | ProjectTranslationPEOObjectVersionNumber | — |
+| PROJECT_ID | ProjectTranslationPEOProjectId | — |
+| SOURCE_LANG | ProjectTranslationPEOSourceLang | — |
+
+### [[projectplanlineforecastpvo|ProjectPlanLineForecastPVO]] (OTHER · BICC: 1/11)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | ProjectTranslationPEOCreatedBy | — |
+| CREATION_DATE | ProjectTranslationPEOCreationDate | — |
+| DESCRIPTION | ProjectTranslationPEODescription | — |
+| LANGUAGE | ProjectTranslationPEOLanguage | — |
+| LAST_UPDATE_DATE | ProjectTranslationPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ProjectTranslationPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | ProjectTranslationPEOLastUpdatedBy | — |
+| NAME | ProjectTranslationPEOName | — |
+| OBJECT_VERSION_NUMBER | ProjectTranslationPEOObjectVersionNumber | — |
+| PROJECT_ID | ProjectTranslationPEOProjectId | — |
+| SOURCE_LANG | ProjectTranslationPEOSourceLang | — |
+
+### [[projectplanversionbudgetpvo|ProjectPlanVersionBudgetPVO]] (OTHER · BICC: 1/3)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| LANGUAGE | ProjectTranslationPEOLanguage | — |
+| NAME | ProjectTranslationPEOName | ✅ |
+| PROJECT_ID | ProjectTranslationPEOProjectId | — |
+
+### [[projectplanversionforecastpvo|ProjectPlanVersionForecastPVO]] (OTHER · BICC: 1/3)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| LANGUAGE | ProjectTranslationPEOLanguage | — |
+| NAME | ProjectTranslationPEOName | ✅ |
+| PROJECT_ID | ProjectTranslationPEOProjectId | — |
+
+### [[projectrefpvo|ProjectRefPVO]] (OTHER · BICC: 4/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | ProjectTranslationPEOCreatedBy | — |
+| CREATION_DATE | ProjectTranslationPEOCreationDate | — |
+| DESCRIPTION | ProjectTranslationPEODescription | ✅ |
+| EXECUTION_CUSTOMER_NAME | ProjectTranslationPEOExecutionCustomerName | ✅ |
+| LANGUAGE | ProjectTranslationPEOLanguage | — |
+| LAST_UPDATE_DATE | ProjectTranslationPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ProjectTranslationPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | ProjectTranslationPEOLastUpdatedBy | — |
+| NAME | ProjectTranslationPEOName | ✅ |
+| OBJECT_VERSION_NUMBER | ProjectTranslationPEOObjectVersionNumber | — |
+| PROJECT_ID | ProjectTranslationPEOProjectId | — |
+| SOURCE_LANG | ProjectTranslationPEOSourceLang | — |
+
+### [[projecttranslation|ProjectTranslation]] (OTHER · BICC: 9/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | CreatedBy | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| DESCRIPTION | Description | ✅ |
+| EXECUTION_CUSTOMER_NAME | ExecutionCustomerName | — |
+| LANGUAGE | Language | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | — |
+| LAST_UPDATED_BY | LastUpdatedBy | ✅ |
+| NAME | Name | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | — |
+| PROJECT_ID | ProjectId | ✅ |
+| SOURCE_LANG | SourceLang | ✅ |
+
+### [[projecttranslationextractpvo|ProjectTranslationExtractPVO]] (OTHER · BICC: 12/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | ProjectTranslationPEOCreatedBy | ✅ |
+| CREATION_DATE | ProjectTranslationPEOCreationDate | ✅ |
+| DESCRIPTION | ProjectTranslationPEODescription | ✅ |
+| EXECUTION_CUSTOMER_NAME | ProjectTranslationPEOExecutionCustomerName | ✅ |
+| LANGUAGE | ProjectTranslationPEOLanguage | ✅ |
+| LAST_UPDATE_DATE | ProjectTranslationPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ProjectTranslationPEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | ProjectTranslationPEOLastUpdatedBy | ✅ |
+| NAME | ProjectTranslationPEOName | ✅ |
+| OBJECT_VERSION_NUMBER | ProjectTranslationPEOObjectVersionNumber | ✅ |
+| PROJECT_ID | ProjectTranslationPEOProjectId | ✅ |
+| SOURCE_LANG | ProjectTranslationPEOSourceLang | ✅ |
+
+### [[projplanlinedetailforecastpvo|ProjPlanLineDetailForecastPVO]] (OTHER · BICC: 1/11)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | ProjectTranslationPEOCreatedBy | — |
+| CREATION_DATE | ProjectTranslationPEOCreationDate | — |
+| DESCRIPTION | ProjectTranslationPEODescription | — |
+| LANGUAGE | ProjectTranslationPEOLanguage | — |
+| LAST_UPDATE_DATE | ProjectTranslationPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ProjectTranslationPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | ProjectTranslationPEOLastUpdatedBy | — |
+| NAME | ProjectTranslationPEOName | — |
+| OBJECT_VERSION_NUMBER | ProjectTranslationPEOObjectVersionNumber | — |
+| PROJECT_ID | ProjectTranslationPEOProjectId | — |
+| SOURCE_LANG | ProjectTranslationPEOSourceLang | — |

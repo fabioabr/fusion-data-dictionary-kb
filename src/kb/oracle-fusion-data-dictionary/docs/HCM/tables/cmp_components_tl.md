@@ -108,6 +108,26 @@ WHERE  tl.LANGUAGE = 'PT';
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[componentspvo|ComponentsPVO]] (HCM · BICC: 11/11)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| COMPONENT_ID | ComponentsTLPEOComponentId1 | ✅ |
+| COMPONENT_NAME | ComponentsTLPEOComponentName | ✅ |
+| CREATED_BY | ComponentsTLPEOCreatedBy | ✅ |
+| CREATION_DATE | ComponentsTLPEOCreationDate | ✅ |
+| LANGUAGE | ComponentsTLPEOLanguage | ✅ |
+| LAST_UPDATE_DATE | ComponentsTLPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ComponentsTLPEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | ComponentsTLPEOLastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | ComponentsTLPEOObjectVersionNumber | ✅ |
+| PLAN_ID | ComponentsTLPEOPlanId1 | ✅ |
+| SOURCE_LANG | ComponentsTLPEOSourceLang | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — CMP_COMPONENTS_TL](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/cmpcomponentstl.html)

@@ -114,6 +114,58 @@ WHERE  tl.LANGUAGE = USERENV('LANG');
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[offersalarypvo|OfferSalaryPVO]] (HCM · BICC: 2/11)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | SalaryBasesTLPEOCreatedBy2 | — |
+| CREATION_DATE | SalaryBasesTLPEOCreationDate2 | — |
+| DESCRIPTION | SalaryBasesTLPEODescription | — |
+| LANGUAGE | SalaryBasesTLPEOLanguage | — |
+| LAST_UPDATE_DATE | SalaryBasesTLPEOLastUpdateDate2 | ✅ |
+| LAST_UPDATE_LOGIN | SalaryBasesTLPEOLastUpdateLogin2 | — |
+| LAST_UPDATED_BY | SalaryBasesTLPEOLastUpdatedBy2 | — |
+| OBJECT_VERSION_NUMBER | SalaryBasesTLPEOObjectVersionNumber2 | — |
+| SALARY_BASIS_ID | SalaryBasesTLPEOSalaryBasisId2 | — |
+| SALARY_BASIS_NAME | SalaryBasesTLPEOSalaryBasisName | ✅ |
+| SOURCE_LANG | SalaryBasesTLPEOSourceLang | — |
+
+### [[salarybasespvo|SalaryBasesPVO]] (HCM · BICC: 2/11)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | SalaryBasesTLPEOCreatedBy | — |
+| CREATION_DATE | SalaryBasesTLPEOCreationDate | — |
+| DESCRIPTION | SalaryBasesTLPEODescription | — |
+| LANGUAGE | SalaryBasesTLPEOLanguage | — |
+| LAST_UPDATE_DATE | SalaryBasesTLPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | SalaryBasesTLPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | SalaryBasesTLPEOLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | SalaryBasesTLPEOObjectVersionNumber | — |
+| SALARY_BASIS_ID | SalaryBasesTLPEOSalaryBasisId | — |
+| SALARY_BASIS_NAME | SalaryBasesTLPEOSalaryBasisName | ✅ |
+| SOURCE_LANG | SalaryBasesTLPEOSourceLang | — |
+
+### [[salarypvo|SalaryPVO]] (HCM · BICC: 3/11)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | SalaryBasesTLPEOCreatedBy | — |
+| CREATION_DATE | SalaryBasesTLPEOCreationDate | — |
+| DESCRIPTION | SalaryBasesTLPEODescription | — |
+| LANGUAGE | SalaryBasesTLPEOLanguage | ✅ |
+| LAST_UPDATE_DATE | SalaryBasesTLPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | SalaryBasesTLPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | SalaryBasesTLPEOLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | SalaryBasesTLPEOObjectVersionNumber | — |
+| SALARY_BASIS_ID | SalaryBasesTLPEOSalaryBasisId | — |
+| SALARY_BASIS_NAME | SalaryBasesTLPEOSalaryBasisName | ✅ |
+| SOURCE_LANG | SalaryBasesTLPEOSourceLang | — |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — CMP_SALARY_BASES_TL](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/cmpsalarybasestl.html)

@@ -40,7 +40,6 @@ updated_at: 2026-03-25
 
 Armazena **informações específicas de licença maternidade/paternidade** vinculadas a entradas de ausência. Contém dados como data prevista do parto, data real do nascimento, tipo de parto, etc.
 
-
 ---
 
 ## 🧠 Propósito de Negócio
@@ -112,6 +111,37 @@ WHERE  e.ABSENCE_STATUS = 'APPROVED';
 - Contém dados sensíveis (PII) — classificar como `restricted` ou `confidential` no Neo4j.
 - A duração da licença pode variar conforme `BIRTH_TYPE` e legislação (ex.: CLT 120 dias normal, 180 dias Empresa Cidadã).
 - `STILLBORN_FLAG = 'Y'` pode disparar regras específicas de licença.
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[personabsmaternitypvo|PersonAbsMaternityPVO]] (GL · BICC: 14/22)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTUAL_CHILD_BIRTH_DT | ActualChildBirthDt | ✅ |
+| ACTUAL_DURATION | ActualDuration | ✅ |
+| ACTUAL_RETURN_DT | ActualReturnDt | ✅ |
+| ACTUAL_ST_DT | ActualStDt | ✅ |
+| CREATED_BY | CreatedBy | — |
+| CREATION_DATE | CreationDate | — |
+| ENTERPRISE_ID | EnterpriseId | ✅ |
+| EXPECTED_DT_CHILD_BIRTH | ExpectedDtChildBirth | ✅ |
+| EXPECTED_END_DATE | ExpectedEndDate | ✅ |
+| EXPECTED_WK_CHILD_BIRTH | ExpectedWkChildBirth | — |
+| INTEND_TO_WORK | IntendToWork | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | — |
+| LAST_UPDATED_BY | LastUpdatedBy | — |
+| LEAVE_DURATION | LeaveDuration | ✅ |
+| MATCHING_DATE | MatchingDate | — |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | — |
+| OPEN_ENDED_FLAG | OpenEndedFlag | ✅ |
+| PER_ABS_MAT_ID | PerAbsMatId | ✅ |
+| PER_ABSENCE_ENTRY_ID | PerAbsenceEntryId | — |
+| PLANNED_RETURN_DT | PlannedReturnDt | ✅ |
+| PLANNED_ST_DT | PlannedStDt | ✅ |
 
 ---
 

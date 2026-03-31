@@ -106,3 +106,143 @@ SELECT h.HOLD_LOOKUP_CODE,
 - Oracle Fusion Cloud Financials — Accounts Payable Tables (OEDMF Release 13).
 - Oracle BICC — AP Holds Subject Area Documentation.
 - Oracle Fusion Cloud ERP Schema Reference (Release 25A).
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[invoiceheaderholdspvo|InvoiceHeaderHoldsPVO]] (AP · BICC: 10/18)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | InvoiceHoldCreatedBy | — |
+| CREATION_DATE | InvoiceHoldCreationDate | ✅ |
+| HELD_BY | InvoiceHoldHeldBy | — |
+| HOLD_DATE | InvoiceHoldHoldDate | ✅ |
+| HOLD_DETAILS | InvoiceHoldHoldDetails | ✅ |
+| HOLD_ID | HoldId | ✅ |
+| HOLD_LOOKUP_CODE | InvoiceHoldHoldLookupCode | ✅ |
+| HOLD_REASON | InvoiceHoldHoldReason | ✅ |
+| INVOICE_ID | InvoiceHoldInvoiceId | — |
+| LAST_UPDATE_DATE | InvoiceHoldLastUpdateDate | ✅ |
+| LAST_UPDATED_BY | InvoiceHoldLastUpdatedBy | — |
+| LINE_NUMBER | InvoiceHoldLineNumber | — |
+| OBJECT_VERSION_NUMBER | InvoiceHoldObjectVersionNumber | — |
+| ORG_ID | InvoiceHoldOrgId | — |
+| RELEASE_LOOKUP_CODE | InvoiceHoldReleaseLookupCode | ✅ |
+| RELEASE_REASON | InvoiceHoldReleaseReason | ✅ |
+| STATUS_FLAG | InvoiceHoldStatusFlag | — |
+| WF_STATUS | InvoiceHoldWfStatus | ✅ |
+
+### [[invoiceholdextractpvo|InvoiceHoldExtractPVO]] (OTHER · BICC: 23/39)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ATTRIBUTE1 | ApHoldsAllAttribute1 | — |
+| ATTRIBUTE10 | ApHoldsAllAttribute10 | — |
+| ATTRIBUTE11 | ApHoldsAllAttribute11 | — |
+| ATTRIBUTE12 | ApHoldsAllAttribute12 | — |
+| ATTRIBUTE13 | ApHoldsAllAttribute13 | — |
+| ATTRIBUTE14 | ApHoldsAllAttribute14 | — |
+| ATTRIBUTE15 | ApHoldsAllAttribute15 | — |
+| ATTRIBUTE2 | ApHoldsAllAttribute2 | — |
+| ATTRIBUTE3 | ApHoldsAllAttribute3 | — |
+| ATTRIBUTE4 | ApHoldsAllAttribute4 | — |
+| ATTRIBUTE5 | ApHoldsAllAttribute5 | — |
+| ATTRIBUTE6 | ApHoldsAllAttribute6 | — |
+| ATTRIBUTE7 | ApHoldsAllAttribute7 | — |
+| ATTRIBUTE8 | ApHoldsAllAttribute8 | — |
+| ATTRIBUTE9 | ApHoldsAllAttribute9 | — |
+| ATTRIBUTE_CATEGORY | ApHoldsAllAttributeCategory | — |
+| CONSUMPTION_ADVICE_LINE_ID | ApHoldsAllConsumptionAdviceLineId | ✅ |
+| CREATED_BY | ApHoldsAllCreatedBy | ✅ |
+| CREATION_DATE | ApHoldsAllCreationDate | ✅ |
+| HELD_BY | ApHoldsAllHeldBy | ✅ |
+| HOLD_DATE | ApHoldsAllHoldDate | ✅ |
+| HOLD_DETAILS | ApHoldsAllHoldDetails | ✅ |
+| HOLD_ID | ApHoldsAllHoldId | ✅ |
+| HOLD_LOOKUP_CODE | ApHoldsAllHoldLookupCode | ✅ |
+| HOLD_REASON | ApHoldsAllHoldReason | ✅ |
+| INVOICE_ID | ApHoldsAllInvoiceId | ✅ |
+| LAST_UPDATE_DATE | ApHoldsAllLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ApHoldsAllLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | ApHoldsAllLastUpdatedBy | ✅ |
+| LINE_LOCATION_ID | ApHoldsAllLineLocationId | ✅ |
+| LINE_NUMBER | ApHoldsAllLineNumber | ✅ |
+| OBJECT_VERSION_NUMBER | ApHoldsAllObjectVersionNumber | ✅ |
+| ORG_ID | ApHoldsAllOrgId | ✅ |
+| RCV_TRANSACTION_ID | ApHoldsAllRcvTransactionId | ✅ |
+| RELEASE_LOOKUP_CODE | ApHoldsAllReleaseLookupCode | ✅ |
+| RELEASE_REASON | ApHoldsAllReleaseReason | ✅ |
+| RESPONSIBILITY_ID | ApHoldsAllResponsibilityId | ✅ |
+| STATUS_FLAG | ApHoldsAllStatusFlag | ✅ |
+| WF_STATUS | ApHoldsAllWfStatus | ✅ |
+
+### [[invoiceholdpvo|InvoiceHoldPVO]] (AP · BICC: 16/18)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | InvoiceHoldCreatedBy | ✅ |
+| CREATION_DATE | InvoiceHoldCreationDate | ✅ |
+| HELD_BY | InvoiceHoldHeldBy | ✅ |
+| HOLD_DATE | InvoiceHoldHoldDate | ✅ |
+| HOLD_DETAILS | InvoiceHoldHoldDetails | ✅ |
+| HOLD_ID | HoldId | ✅ |
+| HOLD_LOOKUP_CODE | InvoiceHoldHoldLookupCode | ✅ |
+| HOLD_REASON | InvoiceHoldHoldReason | ✅ |
+| INVOICE_ID | InvoiceHoldInvoiceId | ✅ |
+| LAST_UPDATE_DATE | InvoiceHoldLastUpdateDate | ✅ |
+| LAST_UPDATED_BY | InvoiceHoldLastUpdatedBy | ✅ |
+| LINE_NUMBER | InvoiceHoldLineNumber | ✅ |
+| OBJECT_VERSION_NUMBER | InvoiceHoldObjectVersionNumber | — |
+| ORG_ID | InvoiceHoldOrgId | — |
+| RELEASE_LOOKUP_CODE | InvoiceHoldReleaseLookupCode | ✅ |
+| RELEASE_REASON | InvoiceHoldReleaseReason | ✅ |
+| STATUS_FLAG | InvoiceHoldStatusFlag | ✅ |
+| WF_STATUS | InvoiceHoldWfStatus | ✅ |
+
+### [[invoiceholdpvoactiveholds|InvoiceHoldPVOActiveHolds]] (AP · BICC: 4/18)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | InvoiceHoldCreatedBy | — |
+| CREATION_DATE | InvoiceHoldCreationDate | — |
+| HELD_BY | InvoiceHoldHeldBy | — |
+| HOLD_DATE | InvoiceHoldHoldDate | ✅ |
+| HOLD_DETAILS | InvoiceHoldHoldDetails | — |
+| HOLD_ID | HoldId | ✅ |
+| HOLD_LOOKUP_CODE | InvoiceHoldHoldLookupCode | — |
+| HOLD_REASON | InvoiceHoldHoldReason | — |
+| INVOICE_ID | InvoiceHoldInvoiceId | ✅ |
+| LAST_UPDATE_DATE | InvoiceHoldLastUpdateDate | ✅ |
+| LAST_UPDATED_BY | InvoiceHoldLastUpdatedBy | — |
+| LINE_NUMBER | InvoiceHoldLineNumber | — |
+| OBJECT_VERSION_NUMBER | InvoiceHoldObjectVersionNumber | — |
+| ORG_ID | InvoiceHoldOrgId | — |
+| RELEASE_LOOKUP_CODE | InvoiceHoldReleaseLookupCode | — |
+| RELEASE_REASON | InvoiceHoldReleaseReason | — |
+| STATUS_FLAG | InvoiceHoldStatusFlag | — |
+| WF_STATUS | InvoiceHoldWfStatus | — |
+
+### [[invoicelineholdspvo|InvoiceLineHoldsPVO]] (AP · BICC: 10/18)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | InvoiceHoldCreatedBy | — |
+| CREATION_DATE | InvoiceHoldCreationDate | ✅ |
+| HELD_BY | InvoiceHoldHeldBy | — |
+| HOLD_DATE | InvoiceHoldHoldDate | ✅ |
+| HOLD_DETAILS | InvoiceHoldHoldDetails | ✅ |
+| HOLD_ID | HoldId | ✅ |
+| HOLD_LOOKUP_CODE | InvoiceHoldHoldLookupCode | ✅ |
+| HOLD_REASON | InvoiceHoldHoldReason | ✅ |
+| INVOICE_ID | InvoiceHoldInvoiceId | — |
+| LAST_UPDATE_DATE | InvoiceHoldLastUpdateDate | ✅ |
+| LAST_UPDATED_BY | InvoiceHoldLastUpdatedBy | — |
+| LINE_NUMBER | InvoiceHoldLineNumber | — |
+| OBJECT_VERSION_NUMBER | InvoiceHoldObjectVersionNumber | — |
+| ORG_ID | InvoiceHoldOrgId | — |
+| RELEASE_LOOKUP_CODE | InvoiceHoldReleaseLookupCode | ✅ |
+| RELEASE_REASON | InvoiceHoldReleaseReason | ✅ |
+| STATUS_FLAG | InvoiceHoldStatusFlag | — |
+| WF_STATUS | InvoiceHoldWfStatus | ✅ |

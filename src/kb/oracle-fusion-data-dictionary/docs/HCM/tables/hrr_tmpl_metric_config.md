@@ -95,6 +95,304 @@ ORDER BY mc.DISPLAY_SEQUENCE;
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[competenciescalbratingpvo|CompetenciesCalbRatingPVO]] (HCM · BICC: 2/16)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CONTENT_TYPE_ID | DasTmplConfigEOContentTypeId | — |
+| CREATED_BY | DasTmplConfigEOCreatedBy3 | — |
+| CREATION_DATE | DasTmplConfigEOCreationDate3 | — |
+| DASHBOARD_COLUMN_NAME | DasTmplConfigEODashboardColumnName | — |
+| DASHBOARD_TMPL_ID | DasTmplConfigEODashboardTmplId1 | ✅ |
+| ENTERPRISE_ID | DasTmplConfigEOEnterpriseId | — |
+| LAST_UPDATE_DATE | DasTmplConfigEOLastUpdateDate3 | ✅ |
+| LAST_UPDATE_LOGIN | DasTmplConfigEOLastUpdateLogin3 | — |
+| LAST_UPDATED_BY | DasTmplConfigEOLastUpdatedBy3 | — |
+| METRIC_CODE | DasTmplConfigEOMetricCode | — |
+| METRIC_ID | DasTmplConfigEOMetricId | — |
+| OBJECT_VERSION_NUMBER | DasTmplConfigEOObjectVersionNumber3 | — |
+| RATING_MODEL_ID | DasTmplConfigEORatingModelId | — |
+| READ_ONLY_FLAG | DasTmplConfigEOReadOnlyFlag | — |
+| USE_AS_AXIS_FLAG | DasTmplConfigEOUseAsAxisFlag | — |
+| USE_AS_UNDERLAY_FLAG | DasTmplConfigEOUseAsUnderlayFlag | — |
+
+### [[competenciescalbratingpvo_viewall|CompetenciesCalbRatingPVO_ViewAll]] (HCM · BICC: 2/16)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CONTENT_TYPE_ID | DasTmplConfigEOContentTypeId | — |
+| CREATED_BY | DasTmplConfigEOCreatedBy3 | — |
+| CREATION_DATE | DasTmplConfigEOCreationDate3 | — |
+| DASHBOARD_COLUMN_NAME | DasTmplConfigEODashboardColumnName | — |
+| DASHBOARD_TMPL_ID | DasTmplConfigEODashboardTmplId1 | ✅ |
+| ENTERPRISE_ID | DasTmplConfigEOEnterpriseId | — |
+| LAST_UPDATE_DATE | DasTmplConfigEOLastUpdateDate3 | ✅ |
+| LAST_UPDATE_LOGIN | DasTmplConfigEOLastUpdateLogin3 | — |
+| LAST_UPDATED_BY | DasTmplConfigEOLastUpdatedBy3 | — |
+| METRIC_CODE | DasTmplConfigEOMetricCode | — |
+| METRIC_ID | DasTmplConfigEOMetricId | — |
+| OBJECT_VERSION_NUMBER | DasTmplConfigEOObjectVersionNumber3 | — |
+| RATING_MODEL_ID | DasTmplConfigEORatingModelId | — |
+| READ_ONLY_FLAG | DasTmplConfigEOReadOnlyFlag | — |
+| USE_AS_AXIS_FLAG | DasTmplConfigEOUseAsAxisFlag | — |
+| USE_AS_UNDERLAY_FLAG | DasTmplConfigEOUseAsUnderlayFlag | — |
+
+### [[goalscalibratingpvo|GoalsCalibRatingPVO]] (HCM · BICC: 2/16)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CONTENT_TYPE_ID | DasTmplConfigEOContentTypeId | — |
+| CREATED_BY | DasTmplConfigEOCreatedBy3 | — |
+| CREATION_DATE | DasTmplConfigEOCreationDate3 | — |
+| DASHBOARD_COLUMN_NAME | DasTmplConfigEODashboardColumnName | — |
+| DASHBOARD_TMPL_ID | DasTmplConfigEODashboardTmplId1 | ✅ |
+| ENTERPRISE_ID | DasTmplConfigEOEnterpriseId | — |
+| LAST_UPDATE_DATE | DasTmplConfigEOLastUpdateDate3 | ✅ |
+| LAST_UPDATE_LOGIN | DasTmplConfigEOLastUpdateLogin3 | — |
+| LAST_UPDATED_BY | DasTmplConfigEOLastUpdatedBy3 | — |
+| METRIC_CODE | DasTmplConfigEOMetricCode | — |
+| METRIC_ID | DasTmplConfigEOMetricId | — |
+| OBJECT_VERSION_NUMBER | DasTmplConfigEOObjectVersionNumber3 | — |
+| RATING_MODEL_ID | DasTmplConfigEORatingModelId | — |
+| READ_ONLY_FLAG | DasTmplConfigEOReadOnlyFlag | — |
+| USE_AS_AXIS_FLAG | DasTmplConfigEOUseAsAxisFlag | — |
+| USE_AS_UNDERLAY_FLAG | DasTmplConfigEOUseAsUnderlayFlag | — |
+
+### [[goalscalibratingpvo_viewall|GoalsCalibRatingPVO_ViewAll]] (HCM · BICC: 2/16)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CONTENT_TYPE_ID | DasTmplConfigEOContentTypeId | — |
+| CREATED_BY | DasTmplConfigEOCreatedBy3 | — |
+| CREATION_DATE | DasTmplConfigEOCreationDate3 | — |
+| DASHBOARD_COLUMN_NAME | DasTmplConfigEODashboardColumnName | — |
+| DASHBOARD_TMPL_ID | DasTmplConfigEODashboardTmplId1 | ✅ |
+| ENTERPRISE_ID | DasTmplConfigEOEnterpriseId | — |
+| LAST_UPDATE_DATE | DasTmplConfigEOLastUpdateDate3 | ✅ |
+| LAST_UPDATE_LOGIN | DasTmplConfigEOLastUpdateLogin3 | — |
+| LAST_UPDATED_BY | DasTmplConfigEOLastUpdatedBy3 | — |
+| METRIC_CODE | DasTmplConfigEOMetricCode | — |
+| METRIC_ID | DasTmplConfigEOMetricId | — |
+| OBJECT_VERSION_NUMBER | DasTmplConfigEOObjectVersionNumber3 | — |
+| RATING_MODEL_ID | DasTmplConfigEORatingModelId | — |
+| READ_ONLY_FLAG | DasTmplConfigEOReadOnlyFlag | — |
+| USE_AS_AXIS_FLAG | DasTmplConfigEOUseAsAxisFlag | — |
+| USE_AS_UNDERLAY_FLAG | DasTmplConfigEOUseAsUnderlayFlag | — |
+
+### [[impactoflosscalibratingpvo|ImpactOfLossCalibRatingPVO]] (HCM · BICC: 2/16)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CONTENT_TYPE_ID | DasTmplConfigEOContentTypeId | — |
+| CREATED_BY | DasTmplConfigEOCreatedBy3 | — |
+| CREATION_DATE | DasTmplConfigEOCreationDate3 | — |
+| DASHBOARD_COLUMN_NAME | DasTmplConfigEODashboardColumnName | — |
+| DASHBOARD_TMPL_ID | DasTmplConfigEODashboardTmplId1 | ✅ |
+| ENTERPRISE_ID | DasTmplConfigEOEnterpriseId | — |
+| LAST_UPDATE_DATE | DasTmplConfigEOLastUpdateDate3 | ✅ |
+| LAST_UPDATE_LOGIN | DasTmplConfigEOLastUpdateLogin3 | — |
+| LAST_UPDATED_BY | DasTmplConfigEOLastUpdatedBy3 | — |
+| METRIC_CODE | DasTmplConfigEOMetricCode | — |
+| METRIC_ID | DasTmplConfigEOMetricId | — |
+| OBJECT_VERSION_NUMBER | DasTmplConfigEOObjectVersionNumber3 | — |
+| RATING_MODEL_ID | DasTmplConfigEORatingModelId | — |
+| READ_ONLY_FLAG | DasTmplConfigEOReadOnlyFlag | — |
+| USE_AS_AXIS_FLAG | DasTmplConfigEOUseAsAxisFlag | — |
+| USE_AS_UNDERLAY_FLAG | DasTmplConfigEOUseAsUnderlayFlag | — |
+
+### [[impactoflosscalibratingpvo_viewall|ImpactOfLossCalibRatingPVO_ViewAll]] (HCM · BICC: 2/16)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CONTENT_TYPE_ID | DasTmplConfigEOContentTypeId | — |
+| CREATED_BY | DasTmplConfigEOCreatedBy3 | — |
+| CREATION_DATE | DasTmplConfigEOCreationDate3 | — |
+| DASHBOARD_COLUMN_NAME | DasTmplConfigEODashboardColumnName | — |
+| DASHBOARD_TMPL_ID | DasTmplConfigEODashboardTmplId1 | ✅ |
+| ENTERPRISE_ID | DasTmplConfigEOEnterpriseId | — |
+| LAST_UPDATE_DATE | DasTmplConfigEOLastUpdateDate3 | ✅ |
+| LAST_UPDATE_LOGIN | DasTmplConfigEOLastUpdateLogin3 | — |
+| LAST_UPDATED_BY | DasTmplConfigEOLastUpdatedBy3 | — |
+| METRIC_CODE | DasTmplConfigEOMetricCode | — |
+| METRIC_ID | DasTmplConfigEOMetricId | — |
+| OBJECT_VERSION_NUMBER | DasTmplConfigEOObjectVersionNumber3 | — |
+| RATING_MODEL_ID | DasTmplConfigEORatingModelId | — |
+| READ_ONLY_FLAG | DasTmplConfigEOReadOnlyFlag | — |
+| USE_AS_AXIS_FLAG | DasTmplConfigEOUseAsAxisFlag | — |
+| USE_AS_UNDERLAY_FLAG | DasTmplConfigEOUseAsUnderlayFlag | — |
+
+### [[performancecalibratedratingvo|PerformanceCalibratedRatingVO]] (HCM · BICC: 2/16)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CONTENT_TYPE_ID | DasTmplConfigEOContentTypeId | — |
+| CREATED_BY | DasTmplConfigEOCreatedBy3 | — |
+| CREATION_DATE | DasTmplConfigEOCreationDate3 | — |
+| DASHBOARD_COLUMN_NAME | DasTmplConfigEODashboardColumnName | — |
+| DASHBOARD_TMPL_ID | DasTmplConfigEODashboardTmplId1 | ✅ |
+| ENTERPRISE_ID | DasTmplConfigEOEnterpriseId | — |
+| LAST_UPDATE_DATE | DasTmplConfigEOLastUpdateDate3 | ✅ |
+| LAST_UPDATE_LOGIN | DasTmplConfigEOLastUpdateLogin3 | — |
+| LAST_UPDATED_BY | DasTmplConfigEOLastUpdatedBy3 | — |
+| METRIC_CODE | DasTmplConfigEOMetricCode | — |
+| METRIC_ID | DasTmplConfigEOMetricId | — |
+| OBJECT_VERSION_NUMBER | DasTmplConfigEOObjectVersionNumber3 | — |
+| RATING_MODEL_ID | DasTmplConfigEORatingModelId | — |
+| READ_ONLY_FLAG | DasTmplConfigEOReadOnlyFlag | — |
+| USE_AS_AXIS_FLAG | DasTmplConfigEOUseAsAxisFlag | — |
+| USE_AS_UNDERLAY_FLAG | DasTmplConfigEOUseAsUnderlayFlag | — |
+
+### [[performancecalibratedratingvo_viewall|PerformanceCalibratedRatingVO_ViewAll]] (HCM · BICC: 2/16)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CONTENT_TYPE_ID | DasTmplConfigEOContentTypeId | — |
+| CREATED_BY | DasTmplConfigEOCreatedBy3 | — |
+| CREATION_DATE | DasTmplConfigEOCreationDate3 | — |
+| DASHBOARD_COLUMN_NAME | DasTmplConfigEODashboardColumnName | — |
+| DASHBOARD_TMPL_ID | DasTmplConfigEODashboardTmplId1 | ✅ |
+| ENTERPRISE_ID | DasTmplConfigEOEnterpriseId | — |
+| LAST_UPDATE_DATE | DasTmplConfigEOLastUpdateDate3 | ✅ |
+| LAST_UPDATE_LOGIN | DasTmplConfigEOLastUpdateLogin3 | — |
+| LAST_UPDATED_BY | DasTmplConfigEOLastUpdatedBy3 | — |
+| METRIC_CODE | DasTmplConfigEOMetricCode | — |
+| METRIC_ID | DasTmplConfigEOMetricId | — |
+| OBJECT_VERSION_NUMBER | DasTmplConfigEOObjectVersionNumber3 | — |
+| RATING_MODEL_ID | DasTmplConfigEORatingModelId | — |
+| READ_ONLY_FLAG | DasTmplConfigEOReadOnlyFlag | — |
+| USE_AS_AXIS_FLAG | DasTmplConfigEOUseAsAxisFlag | — |
+| USE_AS_UNDERLAY_FLAG | DasTmplConfigEOUseAsUnderlayFlag | — |
+
+### [[potentialcalibratedratingvo|PotentialCalibratedRatingVO]] (HCM · BICC: 2/16)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CONTENT_TYPE_ID | DasTmplConfigEOContentTypeId | — |
+| CREATED_BY | DasTmplConfigEOCreatedBy3 | — |
+| CREATION_DATE | DasTmplConfigEOCreationDate3 | — |
+| DASHBOARD_COLUMN_NAME | DasTmplConfigEODashboardColumnName | — |
+| DASHBOARD_TMPL_ID | DasTmplConfigEODashboardTmplId1 | ✅ |
+| ENTERPRISE_ID | DasTmplConfigEOEnterpriseId | — |
+| LAST_UPDATE_DATE | DasTmplConfigEOLastUpdateDate3 | ✅ |
+| LAST_UPDATE_LOGIN | DasTmplConfigEOLastUpdateLogin3 | — |
+| LAST_UPDATED_BY | DasTmplConfigEOLastUpdatedBy3 | — |
+| METRIC_CODE | DasTmplConfigEOMetricCode | — |
+| METRIC_ID | DasTmplConfigEOMetricId | — |
+| OBJECT_VERSION_NUMBER | DasTmplConfigEOObjectVersionNumber3 | — |
+| RATING_MODEL_ID | DasTmplConfigEORatingModelId | — |
+| READ_ONLY_FLAG | DasTmplConfigEOReadOnlyFlag | — |
+| USE_AS_AXIS_FLAG | DasTmplConfigEOUseAsAxisFlag | — |
+| USE_AS_UNDERLAY_FLAG | DasTmplConfigEOUseAsUnderlayFlag | — |
+
+### [[potentialcalibratedratingvo_viewall|PotentialCalibratedRatingVO_ViewAll]] (HCM · BICC: 2/16)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CONTENT_TYPE_ID | DasTmplConfigEOContentTypeId | — |
+| CREATED_BY | DasTmplConfigEOCreatedBy3 | — |
+| CREATION_DATE | DasTmplConfigEOCreationDate3 | — |
+| DASHBOARD_COLUMN_NAME | DasTmplConfigEODashboardColumnName | — |
+| DASHBOARD_TMPL_ID | DasTmplConfigEODashboardTmplId1 | ✅ |
+| ENTERPRISE_ID | DasTmplConfigEOEnterpriseId | — |
+| LAST_UPDATE_DATE | DasTmplConfigEOLastUpdateDate3 | ✅ |
+| LAST_UPDATE_LOGIN | DasTmplConfigEOLastUpdateLogin3 | — |
+| LAST_UPDATED_BY | DasTmplConfigEOLastUpdatedBy3 | — |
+| METRIC_CODE | DasTmplConfigEOMetricCode | — |
+| METRIC_ID | DasTmplConfigEOMetricId | — |
+| OBJECT_VERSION_NUMBER | DasTmplConfigEOObjectVersionNumber3 | — |
+| RATING_MODEL_ID | DasTmplConfigEORatingModelId | — |
+| READ_ONLY_FLAG | DasTmplConfigEOReadOnlyFlag | — |
+| USE_AS_AXIS_FLAG | DasTmplConfigEOUseAsAxisFlag | — |
+| USE_AS_UNDERLAY_FLAG | DasTmplConfigEOUseAsUnderlayFlag | — |
+
+### [[riskoflosscalibratingpvo|RiskOfLossCalibRatingPVO]] (HCM · BICC: 2/16)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CONTENT_TYPE_ID | DasTmplConfigEOContentTypeId | — |
+| CREATED_BY | DasTmplConfigEOCreatedBy3 | — |
+| CREATION_DATE | DasTmplConfigEOCreationDate3 | — |
+| DASHBOARD_COLUMN_NAME | DasTmplConfigEODashboardColumnName | — |
+| DASHBOARD_TMPL_ID | DasTmplConfigEODashboardTmplId1 | ✅ |
+| ENTERPRISE_ID | DasTmplConfigEOEnterpriseId | — |
+| LAST_UPDATE_DATE | DasTmplConfigEOLastUpdateDate3 | ✅ |
+| LAST_UPDATE_LOGIN | DasTmplConfigEOLastUpdateLogin3 | — |
+| LAST_UPDATED_BY | DasTmplConfigEOLastUpdatedBy3 | — |
+| METRIC_CODE | DasTmplConfigEOMetricCode | — |
+| METRIC_ID | DasTmplConfigEOMetricId | — |
+| OBJECT_VERSION_NUMBER | DasTmplConfigEOObjectVersionNumber3 | — |
+| RATING_MODEL_ID | DasTmplConfigEORatingModelId | — |
+| READ_ONLY_FLAG | DasTmplConfigEOReadOnlyFlag | — |
+| USE_AS_AXIS_FLAG | DasTmplConfigEOUseAsAxisFlag | — |
+| USE_AS_UNDERLAY_FLAG | DasTmplConfigEOUseAsUnderlayFlag | — |
+
+### [[riskoflosscalibratingpvo_viewall|RiskOfLossCalibRatingPVO_ViewAll]] (HCM · BICC: 2/16)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CONTENT_TYPE_ID | DasTmplConfigEOContentTypeId | — |
+| CREATED_BY | DasTmplConfigEOCreatedBy3 | — |
+| CREATION_DATE | DasTmplConfigEOCreationDate3 | — |
+| DASHBOARD_COLUMN_NAME | DasTmplConfigEODashboardColumnName | — |
+| DASHBOARD_TMPL_ID | DasTmplConfigEODashboardTmplId1 | ✅ |
+| ENTERPRISE_ID | DasTmplConfigEOEnterpriseId | — |
+| LAST_UPDATE_DATE | DasTmplConfigEOLastUpdateDate3 | ✅ |
+| LAST_UPDATE_LOGIN | DasTmplConfigEOLastUpdateLogin3 | — |
+| LAST_UPDATED_BY | DasTmplConfigEOLastUpdatedBy3 | — |
+| METRIC_CODE | DasTmplConfigEOMetricCode | — |
+| METRIC_ID | DasTmplConfigEOMetricId | — |
+| OBJECT_VERSION_NUMBER | DasTmplConfigEOObjectVersionNumber3 | — |
+| RATING_MODEL_ID | DasTmplConfigEORatingModelId | — |
+| READ_ONLY_FLAG | DasTmplConfigEOReadOnlyFlag | — |
+| USE_AS_AXIS_FLAG | DasTmplConfigEOUseAsAxisFlag | — |
+| USE_AS_UNDERLAY_FLAG | DasTmplConfigEOUseAsUnderlayFlag | — |
+
+### [[talentscorecalibratingpvo|TalentScoreCalibRatingPVO]] (HCM · BICC: 2/16)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CONTENT_TYPE_ID | DasTmplConfigEOContentTypeId | — |
+| CREATED_BY | DasTmplConfigEOCreatedBy3 | — |
+| CREATION_DATE | DasTmplConfigEOCreationDate3 | — |
+| DASHBOARD_COLUMN_NAME | DasTmplConfigEODashboardColumnName | — |
+| DASHBOARD_TMPL_ID | DasTmplConfigEODashboardTmplId1 | ✅ |
+| ENTERPRISE_ID | DasTmplConfigEOEnterpriseId | — |
+| LAST_UPDATE_DATE | DasTmplConfigEOLastUpdateDate3 | ✅ |
+| LAST_UPDATE_LOGIN | DasTmplConfigEOLastUpdateLogin3 | — |
+| LAST_UPDATED_BY | DasTmplConfigEOLastUpdatedBy3 | — |
+| METRIC_CODE | DasTmplConfigEOMetricCode | — |
+| METRIC_ID | DasTmplConfigEOMetricId | — |
+| OBJECT_VERSION_NUMBER | DasTmplConfigEOObjectVersionNumber3 | — |
+| RATING_MODEL_ID | DasTmplConfigEORatingModelId | — |
+| READ_ONLY_FLAG | DasTmplConfigEOReadOnlyFlag | — |
+| USE_AS_AXIS_FLAG | DasTmplConfigEOUseAsAxisFlag | — |
+| USE_AS_UNDERLAY_FLAG | DasTmplConfigEOUseAsUnderlayFlag | — |
+
+### [[talentscorecalibratingpvo_viewall|TalentScoreCalibRatingPVO_ViewAll]] (HCM · BICC: 2/16)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CONTENT_TYPE_ID | DasTmplConfigEOContentTypeId | — |
+| CREATED_BY | DasTmplConfigEOCreatedBy3 | — |
+| CREATION_DATE | DasTmplConfigEOCreationDate3 | — |
+| DASHBOARD_COLUMN_NAME | DasTmplConfigEODashboardColumnName | — |
+| DASHBOARD_TMPL_ID | DasTmplConfigEODashboardTmplId1 | ✅ |
+| ENTERPRISE_ID | DasTmplConfigEOEnterpriseId | — |
+| LAST_UPDATE_DATE | DasTmplConfigEOLastUpdateDate3 | ✅ |
+| LAST_UPDATE_LOGIN | DasTmplConfigEOLastUpdateLogin3 | — |
+| LAST_UPDATED_BY | DasTmplConfigEOLastUpdatedBy3 | — |
+| METRIC_CODE | DasTmplConfigEOMetricCode | — |
+| METRIC_ID | DasTmplConfigEOMetricId | — |
+| OBJECT_VERSION_NUMBER | DasTmplConfigEOObjectVersionNumber3 | — |
+| RATING_MODEL_ID | DasTmplConfigEORatingModelId | — |
+| READ_ONLY_FLAG | DasTmplConfigEOReadOnlyFlag | — |
+| USE_AS_AXIS_FLAG | DasTmplConfigEOUseAsAxisFlag | — |
+| USE_AS_UNDERLAY_FLAG | DasTmplConfigEOUseAsUnderlayFlag | — |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Fusion HCM Tables and Views](https://docs.oracle.com/en/cloud/saas/human-resources/25a/)

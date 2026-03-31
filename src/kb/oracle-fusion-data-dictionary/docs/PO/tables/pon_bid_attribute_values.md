@@ -124,6 +124,47 @@ ORDER BY bav.ATTRIBUTE_NAME, bh.VENDOR_NAME;
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[negotiationresponserequirementandattributepvo|NegotiationResponseRequirementAndAttributePVO]] (PO · BICC: 16/32)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ATTR_LEVEL | NegResReqAttAttrLevel | ✅ |
+| ATTRIBUTE_NAME | NegResReqAttAttributeName | ✅ |
+| AUCTION_HEADER_ID | NegResReqAttAuctionHeaderId | — |
+| BATCH_ID | NegResReqAttBatchId | — |
+| BID_NUMBER | BidNumber | ✅ |
+| CREATED_BY | NegResReqAttCreatedBy | — |
+| CREATION_DATE | NegResReqAttCreationDate | ✅ |
+| DATATYPE | NegResReqAttDatatype | ✅ |
+| DATE_OLD_VALUE | NegResReqAttDateOldValue | — |
+| DATE_VALUE | NegResReqAttDateValue | ✅ |
+| INTERFACE_LINE_ID | NegResReqAttInterfaceLineId | — |
+| INTERNAL_NOTE | NegResReqAttInternalNote | ✅ |
+| LAST_UPDATE_DATE | NegResReqAttLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | NegResReqAttLastUpdateLogin | — |
+| LAST_UPDATED_BY | NegResReqAttLastUpdatedBy | — |
+| LINE_NUMBER | LineNumber | ✅ |
+| NUMBER_OLD_VALUE | NegResReqAttNumberOldValue | — |
+| NUMBER_VALUE | NegResReqAttNumberValue | ✅ |
+| OBJECT_VERSION_NUMBER | NegResReqAttObjectVersionNumber | — |
+| PROGRAM_APP_NAME | NegResReqAttProgramAppName | — |
+| PROGRAM_APPLICATION_ID | NegResReqAttProgramApplicationId | — |
+| PROGRAM_ID | NegResReqAttProgramId | — |
+| PROGRAM_NAME | NegResReqAttProgramName | — |
+| PROGRAM_UPDATE_DATE | NegResReqAttProgramUpdateDate | — |
+| REQUEST_ID | NegResReqAttRequestId | — |
+| SCORE | NegResReqAttScore | ✅ |
+| SEQUENCE_NUMBER | SequenceNumber | ✅ |
+| TEXT_OLD_VALUE | NegResReqAttTextOldValue | — |
+| TEXT_VALUE | NegResReqAttTextValue | ✅ |
+| WEIGHTED_SCORE | NegResReqAttWeightedScore | ✅ |
+| WORKSHEET_NAME | NegResReqAttWorksheetName | ✅ |
+| WORKSHEET_SEQUENCE_NUMBER | NegResReqAttWorksheetSequenceNumber | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — PON_BID_ATTRIBUTE_VALUES](https://docs.oracle.com/en/cloud/saas/procurement/25a/oedmf/ponbidattributevalues.html)

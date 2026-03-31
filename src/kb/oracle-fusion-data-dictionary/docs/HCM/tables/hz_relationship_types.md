@@ -68,3 +68,66 @@ updated_at: 2026-03-26
 ## 📎 Uso Típico
 
 (a ser preenchido na etapa 03)
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[accountcontactpoint|AccountContactPoint]] (AR · BICC: 2/18)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ALLOW_CIRCULAR_RELATIONSHIPS | RelationshipTypeAllowCircularRelationships | — |
+| ALLOW_RELATE_TO_SELF_FLAG | RelationshipTypeAllowRelateToSelfFlag | — |
+| BACKWARD_REL_CODE | RelationshipTypeBackwardRelCode | — |
+| CREATED_BY | RelationshipTypeCreatedBy | — |
+| CREATED_BY_MODULE | RelationshipTypeCreatedByModule | — |
+| CREATION_DATE | RelationshipTypeCreationDate | — |
+| DIRECTION_CODE | RelationshipTypeDirectionCode | — |
+| FORWARD_REL_CODE | RelationshipTypeForwardRelCode | — |
+| LAST_UPDATE_DATE | RelationshipTypeLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | RelationshipTypeLastUpdateLogin | — |
+| LAST_UPDATED_BY | RelationshipTypeLastUpdatedBy | — |
+| OBJECT_TYPE | RelationshipTypeObjectType | — |
+| OBJECT_VERSION_NUMBER | RelationshipTypeObjectVersionNumber | — |
+| RELATIONSHIP_TYPE | RelationshipTypeRelationshipType | — |
+| RELATIONSHIP_TYPE_ID | RelationshipTypeRelationshipTypeId | — |
+| ROLE | RelationshipTypeRole | ✅ |
+| STATUS | RelationshipTypeStatus | — |
+| SUBJECT_TYPE | RelationshipTypeSubjectType | — |
+
+### [[relationship|Relationship]] (OTHER · BICC: 1/8)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BACKWARD_REL_CODE | RelTypeBackwardRelCode | — |
+| DIRECTION_CODE | RelTypeDirectionCode | — |
+| FORWARD_REL_CODE | RelTypeForwardRelCode | — |
+| OBJECT_TYPE | RelTypeObjectType | — |
+| RELATIONSHIP_TYPE_ID | RelTypeRelationshipTypeId | — |
+| ROLE | RelTypeRole | ✅ |
+| STATUS | RelTypeStatus | — |
+| SUBJECT_TYPE | RelTypeSubjectType | — |
+
+### [[sitecontactpoint|SiteContactPoint]] (AR · BICC: 2/18)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ALLOW_CIRCULAR_RELATIONSHIPS | RelationshipTypeAllowCircularRelationships | — |
+| ALLOW_RELATE_TO_SELF_FLAG | RelationshipTypeAllowRelateToSelfFlag | — |
+| BACKWARD_REL_CODE | RelationshipTypeBackwardRelCode | — |
+| CREATED_BY | RelationshipTypeCreatedBy | — |
+| CREATED_BY_MODULE | RelationshipTypeCreatedByModule | — |
+| CREATION_DATE | RelationshipTypeCreationDate | — |
+| DIRECTION_CODE | RelationshipTypeDirectionCode | — |
+| FORWARD_REL_CODE | RelationshipTypeForwardRelCode | — |
+| LAST_UPDATE_DATE | RelationshipTypeLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | RelationshipTypeLastUpdateLogin | — |
+| LAST_UPDATED_BY | RelationshipTypeLastUpdatedBy | — |
+| OBJECT_TYPE | RelationshipTypeObjectType | — |
+| OBJECT_VERSION_NUMBER | RelationshipTypeObjectVersionNumber | — |
+| RELATIONSHIP_TYPE | RelationshipTypeRelationshipType | — |
+| RELATIONSHIP_TYPE_ID | RelationshipTypeRelationshipTypeId | — |
+| ROLE | RelationshipTypeRole | ✅ |
+| STATUS | RelationshipTypeStatus | — |
+| SUBJECT_TYPE | RelationshipTypeSubjectType | — |

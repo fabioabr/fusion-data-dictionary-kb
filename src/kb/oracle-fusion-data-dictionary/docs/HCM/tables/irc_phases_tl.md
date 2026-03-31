@@ -100,3 +100,58 @@ SELECT tl.PHASE_NAME FROM IRC_PHASES_TL tl WHERE tl.LANGUAGE = 'PT';
 
 - [Oracle Docs -- IRC_PHASES_TL](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/ircphasestl.html)
 - [[hcm-module-data-dictionary]] -- Dossie do modulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[asmtreqpackageviewallpvo|AsmtReqPackageViewAllPVO]] (HCM · BICC: 1/3)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| LANGUAGE | PhaseTranslationPEOLanguage | — |
+| NAME | PhaseTranslationPEOName | ✅ |
+| PHASE_ID | PhaseTranslationPEOPhaseId | — |
+
+### [[candidatepoolmemberpvo|CandidatePoolMemberPVO]] (PO · BICC: 3/3)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| LANGUAGE | Language | ✅ |
+| NAME | Name | ✅ |
+| PHASE_ID | PhaseId1 | ✅ |
+
+### [[phasepvo|PhasePVO]] (HCM · BICC: 12/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | CreatedBy1 | ✅ |
+| CREATION_DATE | CreationDate1 | ✅ |
+| DESCRIPTION | Description | ✅ |
+| LANGUAGE | Language | ✅ |
+| LANGUAGE | Language1 | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate1 | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin1 | ✅ |
+| LAST_UPDATED_BY | LastUpdatedBy1 | ✅ |
+| NAME | Name | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber1 | ✅ |
+| PHASE_ID | PhaseId1 | ✅ |
+| SOURCE_LANG | SourceLang | ✅ |
+
+### [[routingstepphasepvo|RoutingStepPhasePVO]] (HCM · BICC: 2/5)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| DESCRIPTION | PhaseTranslationPEODescription | ✅ |
+| LANGUAGE | PhaseTranslationPEOLanguage | — |
+| NAME | PhaseTranslationPEOName | ✅ |
+| PHASE_ID | PhaseTranslationPEOPhaseId | — |
+| SOURCE_LANG | PhaseTranslationPEOSourceLang | — |
+
+### [[wfmodelrequisitionpvo|WfModelRequisitionPVO]] (HCM)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| LANGUAGE | PhaseTranslationPEOLanguage | — |
+| NAME | PhaseTranslationPEOName | — |
+| PHASE_ID | PhaseTranslationPEOPhaseId | — |

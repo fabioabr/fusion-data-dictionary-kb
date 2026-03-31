@@ -111,3 +111,16 @@ WHERE  tl.SECTION_ID = :p_section_id;
 
 - [Oracle Docs — IRC_AF_SECTIONS_TL](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/ircafsectionstl.html)
 - [[hcm-module-data-dictionary]] — Dossie do modulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[applyflowsectionpagepvo|ApplyFlowSectionPagePVO]] (HCM · BICC: 1/4)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| LANGUAGE | AFSectionTranslationPEOLanguage | — |
+| SECTION_ID | AFSectionTranslationPEOSectionId | — |
+| SECTION_NAME | AFSectionTranslationPEOSectionName | ✅ |
+| SOURCE_LANG | AFSectionTranslationPEOSourceLang | — |

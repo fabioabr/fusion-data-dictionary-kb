@@ -118,6 +118,64 @@ WHERE  pcpl.LEVEL_NUM = 1
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[browsingcategoryhierarchyextractpvo|BrowsingCategoryHierarchyExtractPVO]] (PO · BICC: 22/22)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | CreatedBy | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| JOB_DEFINITION_NAME | JobDefinitionName | ✅ |
+| JOB_DEFINITION_PACKAGE | JobDefinitionPackage | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | LastUpdatedBy | ✅ |
+| LEVEL10_CAT_ID | Level10CatId | ✅ |
+| LEVEL1_CAT_ID | Level1CatId | ✅ |
+| LEVEL2_CAT_ID | Level2CatId | ✅ |
+| LEVEL3_CAT_ID | Level3CatId | ✅ |
+| LEVEL4_CAT_ID | Level4CatId | ✅ |
+| LEVEL5_CAT_ID | Level5CatId | ✅ |
+| LEVEL6_CAT_ID | Level6CatId | ✅ |
+| LEVEL7_CAT_ID | Level7CatId | ✅ |
+| LEVEL8_CAT_ID | Level8CatId | ✅ |
+| LEVEL9_CAT_ID | Level9CatId | ✅ |
+| NODE_LEVEL | NodeLevel | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | ✅ |
+| PURCHASING_CAT_ID | PurchasingCatId | ✅ |
+| REQUEST_ID | RequestId | ✅ |
+| TYPE | Type | ✅ |
+
+### [[browsingcategoryhierarchypvo|BrowsingCategoryHierarchyPVO]] (PO · BICC: 14/22)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | CreatedBy | — |
+| CREATION_DATE | CreationDate | — |
+| JOB_DEFINITION_NAME | JobDefinitionName | — |
+| JOB_DEFINITION_PACKAGE | JobDefinitionPackage | — |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | — |
+| LAST_UPDATED_BY | LastUpdatedBy | — |
+| LEVEL10_CAT_ID | Level10CatId | ✅ |
+| LEVEL1_CAT_ID | Level1CatId | ✅ |
+| LEVEL2_CAT_ID | Level2CatId | ✅ |
+| LEVEL3_CAT_ID | Level3CatId | ✅ |
+| LEVEL4_CAT_ID | Level4CatId | ✅ |
+| LEVEL5_CAT_ID | Level5CatId | ✅ |
+| LEVEL6_CAT_ID | Level6CatId | ✅ |
+| LEVEL7_CAT_ID | Level7CatId | ✅ |
+| LEVEL8_CAT_ID | Level8CatId | ✅ |
+| LEVEL9_CAT_ID | Level9CatId | ✅ |
+| NODE_LEVEL | NodeLevel | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | — |
+| PURCHASING_CAT_ID | PurchasingCatId | ✅ |
+| REQUEST_ID | RequestId | — |
+| TYPE | Type | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — POR Tables](https://docs.oracle.com/en/cloud/saas/procurement/25a/oedmf/portables.html)

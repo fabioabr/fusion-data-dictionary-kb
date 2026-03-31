@@ -36,8 +36,6 @@ updated_at: 2026-03-25
 
 Armazena os detalhes de composição dos conjuntos de mapeamento, vinculando mapeamentos individuais aos conjuntos e definindo a ordem de aplicação.
 
-
-
 ---
 
 ## 🧠 Propósito de Negócio
@@ -102,6 +100,26 @@ ORDER BY t.SEQUENCE_NUMBER
 ## 🔒 Observações
 
 - Área funcional: Time Card Export dentro do Oracle Fusion Cloud HCM.
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[tcdmappingsetdetailpvo|TcdMappingSetDetailPVO]] (GL · BICC: 7/11)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | TcdMappingSetDetailPEOCreatedBy | ✅ |
+| CREATION_DATE | TcdMappingSetDetailPEOCreationDate | ✅ |
+| ENTERPRISE_ID | TcdMappingSetDetailPEOEnterpriseId | — |
+| LAST_UPDATE_DATE | TcdMappingSetDetailPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | TcdMappingSetDetailPEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | TcdMappingSetDetailPEOLastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | TcdMappingSetDetailPEOObjectVersionNumber | — |
+| SEED_DATA_SOURCE | TcdMappingSetDetailPEOSeedDataSource | — |
+| TCD_MAPPING_ID | TcdMappingSetDetailPEOTcdMappingId | — |
+| TCD_MAPPING_SET_DTL_ID | TcdMappingSetDetailPEOTcdMappingSetDtlId | ✅ |
+| TCD_MAPPING_SET_ID | TcdMappingSetDetailPEOTcdMappingSetId | ✅ |
 
 ---
 

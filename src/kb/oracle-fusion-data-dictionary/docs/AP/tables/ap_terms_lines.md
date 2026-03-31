@@ -102,3 +102,39 @@ SELECT tl.TERM_ID,
 - Oracle Fusion Cloud Financials — Accounts Payable Tables (OEDMF Release 13).
 - Oracle Fusion Cloud — Payment Terms Setup Documentation.
 - Oracle Fusion Cloud ERP Schema Reference (Release 25A).
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[paymenttermlinepvo|PaymentTermLinePVO]] (AP · BICC: 8/27)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CALENDAR | PaymentTermLineCalendar | — |
+| CREATED_BY | PaymentTermLineCreatedBy | — |
+| CREATION_DATE | PaymentTermLineCreationDate | — |
+| DISCOUNT_DAY_OF_MONTH | PaymentTermLineDiscountDayOfMonth | — |
+| DISCOUNT_DAY_OF_MONTH_2 | PaymentTermLineDiscountDayOfMonth2 | — |
+| DISCOUNT_DAY_OF_MONTH_3 | PaymentTermLineDiscountDayOfMonth3 | — |
+| DISCOUNT_DAYS | PaymentTermLineDiscountDays | — |
+| DISCOUNT_DAYS_2 | PaymentTermLineDiscountDays2 | — |
+| DISCOUNT_DAYS_3 | PaymentTermLineDiscountDays3 | — |
+| DISCOUNT_MONTHS_FORWARD | PaymentTermLineDiscountMonthsForward | — |
+| DISCOUNT_MONTHS_FORWARD_2 | PaymentTermLineDiscountMonthsForward2 | — |
+| DISCOUNT_MONTHS_FORWARD_3 | PaymentTermLineDiscountMonthsForward3 | — |
+| DISCOUNT_PERCENT | PaymentTermLineDiscountPercent | — |
+| DISCOUNT_PERCENT_2 | PaymentTermLineDiscountPercent2 | — |
+| DISCOUNT_PERCENT_3 | PaymentTermLineDiscountPercent3 | — |
+| DUE_AMOUNT | PaymentTermLineDueAmount | ✅ |
+| DUE_DAY_OF_MONTH | PaymentTermLineDueDayOfMonth | ✅ |
+| DUE_DAYS | PaymentTermLineDueDays | ✅ |
+| DUE_MONTHS_FORWARD | PaymentTermLineDueMonthsForward | ✅ |
+| DUE_PERCENT | PaymentTermLineDuePercent | ✅ |
+| FIXED_DATE | PaymentTermLineFixedDate | — |
+| LAST_UPDATE_DATE | PaymentTermLineLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | PaymentTermLineLastUpdateLogin | — |
+| LAST_UPDATED_BY | PaymentTermLineLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | PaymentTermLineObjectVersionNumber | — |
+| SEQUENCE_NUM | SequenceNum | ✅ |
+| TERM_ID | TermId | ✅ |

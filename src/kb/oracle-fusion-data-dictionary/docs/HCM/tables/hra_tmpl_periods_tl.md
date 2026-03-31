@@ -96,6 +96,56 @@ WHERE  tl.LANGUAGE = USERENV('LANG');
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[performancedocumentdetailspvo|PerformanceDocumentDetailsPVO]] (HCM · BICC: 3/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | BusinessGroupId2 | — |
+| CREATED_BY | CreatedBy2 | — |
+| CREATION_DATE | CreationDate2 | — |
+| CUSTOMARY_NAME | CustomaryName | ✅ |
+| LANGUAGE | Language1 | — |
+| LAST_UPDATE_DATE | LastUpdateDate2 | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin2 | — |
+| LAST_UPDATED_BY | LastUpdatedBy2 | — |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber2 | — |
+| SHORT_NAME | ShortName | ✅ |
+| SOURCE_LANG | SourceLang | — |
+| TMPL_PERIOD_ID | TmplPeriodId2 | — |
+
+### [[templateperiodevaluationpvo|TemplatePeriodEvaluationPVO]] (HCM · BICC: 4/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | TemplatePeriodTlPEOBusinessGroupId2 | — |
+| CREATED_BY | TemplatePeriodTlPEOCreatedBy2 | — |
+| CREATION_DATE | TemplatePeriodTlPEOCreationDate2 | — |
+| CUSTOMARY_NAME | TemplatePeriodTLPEOCustomaryName | ✅ |
+| LANGUAGE | TemplatePeriodTlPEOLanguage | ✅ |
+| LAST_UPDATE_DATE | TemplatePeriodTlPEOLastUpdateDate2 | ✅ |
+| LAST_UPDATE_LOGIN | TemplatePeriodTlPEOLastUpdateLogin2 | — |
+| LAST_UPDATED_BY | TemplatePeriodTlPEOLastUpdatedBy2 | — |
+| OBJECT_VERSION_NUMBER | TemplatePeriodTlPEOObjectVersionNumber2 | — |
+| SHORT_NAME | TemplatePeriodTlPEOShortName | ✅ |
+| SOURCE_LANG | TemplatePeriodTlPEOSourceLang | — |
+| TMPL_PERIOD_ID | TemplatePeriodTlPEOTmplPeriodId2 | — |
+
+### [[templateperiodpvo|TemplatePeriodPVO]] (HCM · BICC: 4/7)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | TemplatePeriodTranslationPEOBusinessGroupId | — |
+| CUSTOMARY_NAME | TemplatePeriodTranslationPEOCustomaryName | ✅ |
+| LANGUAGE | Language | ✅ |
+| LAST_UPDATE_DATE | TemplatePeriodTranslationPEOLastUpdateDate | ✅ |
+| SHORT_NAME | TemplatePeriodTranslationPEOShortName | ✅ |
+| SOURCE_LANG | SourceLang | — |
+| TMPL_PERIOD_ID | TemplatePeriodTranslationPEOTmplPeriodId | — |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Fusion HCM Tables and Views](https://docs.oracle.com/en/cloud/saas/human-resources/25a/)

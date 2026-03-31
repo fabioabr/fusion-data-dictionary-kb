@@ -103,6 +103,31 @@ ORDER BY ptp.NUMBER_PER_FISCAL_YEAR;
 - A coluna `NUMBER_PER_FISCAL_YEAR` determina quantos períodos serão gerados automaticamente para cada payroll associado.
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[timeperiodtypepvo|TimePeriodTypePVO]] (HCM · BICC: 3/16)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | TimePeriodTypePEOCreatedBy | — |
+| CREATION_DATE | TimePeriodTypePEOCreationDate | — |
+| DESCRIPTION | TimePeriodTypePEODescription | — |
+| DISPLAY_PERIOD_TYPE | TimePeriodTypePEODisplayPeriodType | — |
+| LAST_UPDATE_DATE | TimePeriodTypePEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | TimePeriodTypePEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | TimePeriodTypePEOLastUpdatedBy | — |
+| NUMBER_PER_FISCAL_YEAR | NumberPerFiscalYear | ✅ |
+| OBJECT_VERSION_NUMBER | TimePeriodTypePEOObjectVersionNumber | — |
+| PERIOD_TYPE | PeriodType | ✅ |
+| PROGRAM_APPLICATION_ID | TimePeriodTypePEOProgramApplicationId | — |
+| PROGRAM_ID | TimePeriodTypePEOProgramId | — |
+| PROGRAM_UPDATE_DATE | TimePeriodTypePEOProgramUpdateDate | — |
+| REQUEST_ID | TimePeriodTypePEORequestId | — |
+| SYSTEM_FLAG | TimePeriodTypePEOSystemFlag | — |
+| YEAR_TYPE_IN_NAME | TimePeriodTypePEOYearTypeInName | — |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — PAY_TIME_PERIOD_TYPES](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/paytimeperiodtypes.html)

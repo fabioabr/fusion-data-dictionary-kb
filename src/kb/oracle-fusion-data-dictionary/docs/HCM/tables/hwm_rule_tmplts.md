@@ -35,8 +35,6 @@ updated_at: 2026-03-25
 
 Define templates (modelos) de regras reutilizáveis para workforce management, permitindo a criação padronizada de regras com base em modelos pré-configurados.
 
-
-
 ---
 
 ## 🧠 Propósito de Negócio
@@ -101,6 +99,115 @@ WHERE  NVL(t.STATUS, 'A') = 'A'
 ## 🔒 Observações
 
 - Área funcional: Rules Engine dentro do Oracle Fusion Cloud HCM.
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[ruletemplateinputpvo|RuleTemplateInputPVO]] (GL · BICC: 24/30)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CLASSIFICATION | RuleTemplateBPEOClassification | ✅ |
+| CREATED_BY | RuleTemplateBPEOCreatedBy | ✅ |
+| CREATION_DATE | RuleTemplateBPEOCreationDate | ✅ |
+| DFLT_ALLOCATION_ID | RuleTemplateBPEODfltAllocationId | ✅ |
+| ENTERPRISE_ID | RuleTemplateBPEOEnterpriseId | — |
+| FAST_FORMULA_EXEC_TYPE | RuleTemplateBPEOFastFormulaExecType | — |
+| INCLUDE_EMPTY_TC | RuleTemplateBPEOIncludeEmptyTc | ✅ |
+| LAST_UPDATE_DATE | RuleTemplateBPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | RuleTemplateBPEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | RuleTemplateBPEOLastUpdatedBy | ✅ |
+| MODULE_ID | RuleTemplateBPEOModuleId | — |
+| OBJECT_VERSION_NUMBER | RuleTemplateBPEOObjectVersionNumber | — |
+| PROCESS_NAME | RuleTemplateBPEOProcessName | ✅ |
+| PROCESS_TYPE | RuleTemplateBPEOProcessType | ✅ |
+| PRS_FORMULA_ID | RuleTemplateBPEOPrsFormulaId | ✅ |
+| PRS_SCRIPT_ID | RuleTemplateBPEOPrsScriptId | — |
+| RULE_EXEC_TYPE | RuleTemplateBPEORuleExecType | ✅ |
+| RULE_SUB_TYPE | RuleTemplateBPEORuleSubType | ✅ |
+| RULE_TMPLTS_ID | RuleTemplateBPEORuleTmpltsId | ✅ |
+| RUN_EVENT_DELETE | RuleTemplateBPEORunEventDelete | ✅ |
+| RUN_EVENT_RESUB | RuleTemplateBPEORunEventResub | ✅ |
+| RUN_EVENT_SAVE | RuleTemplateBPEORunEventSave | ✅ |
+| RUN_EVENT_SUB | RuleTemplateBPEORunEventSub | ✅ |
+| RUN_SUMMATION_LEVEL | RuleTemplateBPEORunSummationLevel | ✅ |
+| RUN_TBB_LEVEL | RuleTemplateBPEORunTbbLevel | ✅ |
+| SEED_DATA_SOURCE | RuleTemplateBPEOSeedDataSource | — |
+| SEEDED_FLAG | RuleTemplateBPEOSeededFlag | ✅ |
+| SUPPRESS_DUP_MSGS | RuleTemplateBPEOSuppressDupMsgs | ✅ |
+| TEMPLATE_NAME | RuleTemplateBPEOTemplateName | ✅ |
+| TEMPLATE_TYPE | RuleTemplateBPEOTemplateType | ✅ |
+
+### [[ruletemplatepvo|RuleTemplatePVO]] (GL · BICC: 24/30)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CLASSIFICATION | RuleTemplateBPEOClassification | ✅ |
+| CREATED_BY | RuleTemplateBPEOCreatedBy | ✅ |
+| CREATION_DATE | RuleTemplateBPEOCreationDate | ✅ |
+| DFLT_ALLOCATION_ID | RuleTemplateBPEODfltAllocationId | ✅ |
+| ENTERPRISE_ID | RuleTemplateBPEOEnterpriseId | — |
+| FAST_FORMULA_EXEC_TYPE | RuleTemplateBPEOFastFormulaExecType | — |
+| INCLUDE_EMPTY_TC | RuleTemplateBPEOIncludeEmptyTc | ✅ |
+| LAST_UPDATE_DATE | RuleTemplateBPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | RuleTemplateBPEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | RuleTemplateBPEOLastUpdatedBy | ✅ |
+| MODULE_ID | RuleTemplateBPEOModuleId | — |
+| OBJECT_VERSION_NUMBER | RuleTemplateBPEOObjectVersionNumber | — |
+| PROCESS_NAME | RuleTemplateBPEOProcessName | ✅ |
+| PROCESS_TYPE | RuleTemplateBPEOProcessType | ✅ |
+| PRS_FORMULA_ID | RuleTemplateBPEOPrsFormulaId | ✅ |
+| PRS_SCRIPT_ID | RuleTemplateBPEOPrsScriptId | — |
+| RULE_EXEC_TYPE | RuleTemplateBPEORuleExecType | ✅ |
+| RULE_SUB_TYPE | RuleTemplateBPEORuleSubType | ✅ |
+| RULE_TMPLTS_ID | RuleTemplateBPEORuleTmpltsId | ✅ |
+| RUN_EVENT_DELETE | RuleTemplateBPEORunEventDelete | ✅ |
+| RUN_EVENT_RESUB | RuleTemplateBPEORunEventResub | ✅ |
+| RUN_EVENT_SAVE | RuleTemplateBPEORunEventSave | ✅ |
+| RUN_EVENT_SUB | RuleTemplateBPEORunEventSub | ✅ |
+| RUN_SUMMATION_LEVEL | RuleTemplateBPEORunSummationLevel | ✅ |
+| RUN_TBB_LEVEL | RuleTemplateBPEORunTbbLevel | ✅ |
+| SEED_DATA_SOURCE | RuleTemplateBPEOSeedDataSource | — |
+| SEEDED_FLAG | RuleTemplateBPEOSeededFlag | ✅ |
+| SUPPRESS_DUP_MSGS | RuleTemplateBPEOSuppressDupMsgs | ✅ |
+| TEMPLATE_NAME | RuleTemplateBPEOTemplateName | ✅ |
+| TEMPLATE_TYPE | RuleTemplateBPEOTemplateType | ✅ |
+
+### [[ruletemplateusagepvo|RuleTemplateUsagePVO]] (GL · BICC: 24/30)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CLASSIFICATION | RuleTemplateBPEOClassification | ✅ |
+| CREATED_BY | RuleTemplateBPEOCreatedBy | ✅ |
+| CREATION_DATE | RuleTemplateBPEOCreationDate | ✅ |
+| DFLT_ALLOCATION_ID | RuleTemplateBPEODfltAllocationId | ✅ |
+| ENTERPRISE_ID | RuleTemplateBPEOEnterpriseId | — |
+| FAST_FORMULA_EXEC_TYPE | RuleTemplateBPEOFastFormulaExecType | — |
+| INCLUDE_EMPTY_TC | RuleTemplateBPEOIncludeEmptyTc | ✅ |
+| LAST_UPDATE_DATE | RuleTemplateBPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | RuleTemplateBPEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | RuleTemplateBPEOLastUpdatedBy | ✅ |
+| MODULE_ID | RuleTemplateBPEOModuleId | — |
+| OBJECT_VERSION_NUMBER | RuleTemplateBPEOObjectVersionNumber | — |
+| PROCESS_NAME | RuleTemplateBPEOProcessName | ✅ |
+| PROCESS_TYPE | RuleTemplateBPEOProcessType | ✅ |
+| PRS_FORMULA_ID | RuleTemplateBPEOPrsFormulaId | ✅ |
+| PRS_SCRIPT_ID | RuleTemplateBPEOPrsScriptId | — |
+| RULE_EXEC_TYPE | RuleTemplateBPEORuleExecType | ✅ |
+| RULE_SUB_TYPE | RuleTemplateBPEORuleSubType | ✅ |
+| RULE_TMPLTS_ID | RuleTemplateBPEORuleTmpltsId | ✅ |
+| RUN_EVENT_DELETE | RuleTemplateBPEORunEventDelete | ✅ |
+| RUN_EVENT_RESUB | RuleTemplateBPEORunEventResub | ✅ |
+| RUN_EVENT_SAVE | RuleTemplateBPEORunEventSave | ✅ |
+| RUN_EVENT_SUB | RuleTemplateBPEORunEventSub | ✅ |
+| RUN_SUMMATION_LEVEL | RuleTemplateBPEORunSummationLevel | ✅ |
+| RUN_TBB_LEVEL | RuleTemplateBPEORunTbbLevel | ✅ |
+| SEED_DATA_SOURCE | RuleTemplateBPEOSeedDataSource | — |
+| SEEDED_FLAG | RuleTemplateBPEOSeededFlag | ✅ |
+| SUPPRESS_DUP_MSGS | RuleTemplateBPEOSuppressDupMsgs | ✅ |
+| TEMPLATE_NAME | RuleTemplateBPEOTemplateName | ✅ |
+| TEMPLATE_TYPE | RuleTemplateBPEOTemplateType | ✅ |
 
 ---
 

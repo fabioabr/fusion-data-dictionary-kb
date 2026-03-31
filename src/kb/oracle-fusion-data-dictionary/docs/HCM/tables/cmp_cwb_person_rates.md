@@ -121,6 +121,102 @@ WHERE  pr.PLAN_ID = :p_plan_id
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[personratespvo|PersonRatesPVO]] (HCM · BICC: 41/41)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ASSIGNMENT_ID | PersonRatesPEOAssignmentId | ✅ |
+| COMP_POSTED_DATE | PersonRatesPEOCompPostedDate | ✅ |
+| COMP_POSTING_DATE | PersonRatesPEOCompPostingDate | ✅ |
+| COMPONENT_ID | PersonRatesPEOComponentId | ✅ |
+| CREATED_BY | PersonRatesPEOCreatedBy | ✅ |
+| CREATION_DATE | PersonRatesPEOCreationDate | ✅ |
+| CURRENCY | PersonRatesPEOCurrency | ✅ |
+| ELIG_FLAG | PersonRatesPEOEligFlag | ✅ |
+| ELIG_OVERRIDE_DATE | PersonRatesPEOEligOverrideDate | ✅ |
+| ELIG_OVERRIDE_PERSON_ID | PersonRatesPEOEligOverridePersonId | ✅ |
+| ELIG_SAL_VAL | PersonRatesPEOEligSalVal | ✅ |
+| EMP_BDGT_MAX_VAL | PersonRatesPEOEmpBdgtMaxVal | ✅ |
+| EMP_BDGT_MIN_VAL | PersonRatesPEOEmpBdgtMinVal | ✅ |
+| EMP_BDGT_VAL | PersonRatesPEOEmpBdgtVal | ✅ |
+| LAST_UPDATE_DATE | PersonRatesPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | PersonRatesPEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | PersonRatesPEOLastUpdatedBy | ✅ |
+| MISC1_VAL | PersonRatesPEOMisc1Val | ✅ |
+| MISC2_VAL | PersonRatesPEOMisc2Val | ✅ |
+| MISC3_VAL | PersonRatesPEOMisc3Val | ✅ |
+| MISC4_VAL | PersonRatesPEOMisc4Val | ✅ |
+| MISC5_VAL | PersonRatesPEOMisc5Val | ✅ |
+| MISC6_VAL | PersonRatesPEOMisc6Val | ✅ |
+| OBJECT_VERSION_NUMBER | PersonRatesPEOObjectVersionNumber | ✅ |
+| PERIOD_ID | PersonRatesPEOPeriodId | ✅ |
+| PERSON_EVENT_ID | PersonEventId | ✅ |
+| PERSON_ID | PersonRatesPEOPersonId | ✅ |
+| PLAN_ID | PersonRatesPEOPlanId | ✅ |
+| PRIOR_ELIG_SAL_VAL | PersonRatesPEOPriorEligSalVal | ✅ |
+| PRIOR_WS_VAL | PersonRatesPEOPriorWsVal | ✅ |
+| PRIOR_WS_VAL_DATE | PersonRatesPEOPriorCycleEffectiveDate | ✅ |
+| PRIOR_WS_VAL_DATE | PersonRatesPEOPriorWsValDate | ✅ |
+| REC_MAX_VAL | PersonRatesPEORecMaxVal | ✅ |
+| REC_MIN_VAL | PersonRatesPEORecMinVal | ✅ |
+| REC_VAL | PersonRatesPEORecVal | ✅ |
+| WS_MAX_VAL | PersonRatesPEOWsMaxVal | ✅ |
+| WS_MIN_VAL | PersonRatesPEOWsMinVal | ✅ |
+| WS_VAL | PersonRatesPEOWsVal | ✅ |
+| WS_VAL_LAST_UPD_BY | PersonRatesPEOWsValLastUpdBy | ✅ |
+| WS_VAL_LAST_UPD_DATE | PersonRatesPEOWsValLastUpdDate | ✅ |
+| WS_VAL_ORIG_UPD_BY | PersonRatesPEOWsValOrigUpdBy | ✅ |
+
+### [[personratespvoviewall|PersonRatesPVOViewAll]] (HCM · BICC: 28/41)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ASSIGNMENT_ID | PersonRatesPEOAssignmentId | — |
+| COMP_POSTED_DATE | PersonRatesPEOCompPostedDate | — |
+| COMP_POSTING_DATE | PersonRatesPEOCompPostingDate | — |
+| COMPONENT_ID | PersonRatesPEOComponentId | ✅ |
+| CREATED_BY | PersonRatesPEOCreatedBy | — |
+| CREATION_DATE | PersonRatesPEOCreationDate | — |
+| CURRENCY | PersonRatesPEOCurrency | ✅ |
+| ELIG_FLAG | PersonRatesPEOEligFlag | ✅ |
+| ELIG_OVERRIDE_DATE | PersonRatesPEOEligOverrideDate | — |
+| ELIG_OVERRIDE_PERSON_ID | PersonRatesPEOEligOverridePersonId | — |
+| ELIG_SAL_VAL | PersonRatesPEOEligSalVal | ✅ |
+| EMP_BDGT_MAX_VAL | PersonRatesPEOEmpBdgtMaxVal | ✅ |
+| EMP_BDGT_MIN_VAL | PersonRatesPEOEmpBdgtMinVal | ✅ |
+| EMP_BDGT_VAL | PersonRatesPEOEmpBdgtVal | ✅ |
+| LAST_UPDATE_DATE | PersonRatesPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | PersonRatesPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | PersonRatesPEOLastUpdatedBy | — |
+| MISC1_VAL | PersonRatesPEOMisc1Val | ✅ |
+| MISC2_VAL | PersonRatesPEOMisc2Val | ✅ |
+| MISC3_VAL | PersonRatesPEOMisc3Val | ✅ |
+| MISC4_VAL | PersonRatesPEOMisc4Val | ✅ |
+| MISC5_VAL | PersonRatesPEOMisc5Val | ✅ |
+| MISC6_VAL | PersonRatesPEOMisc6Val | ✅ |
+| OBJECT_VERSION_NUMBER | PersonRatesPEOObjectVersionNumber | — |
+| PERIOD_ID | PersonRatesPEOPeriodId | — |
+| PERSON_EVENT_ID | PersonEventId | ✅ |
+| PERSON_ID | PersonRatesPEOPersonId | ✅ |
+| PLAN_ID | PersonRatesPEOPlanId | — |
+| PRIOR_ELIG_SAL_VAL | PersonRatesPEOPriorEligSalVal | ✅ |
+| PRIOR_WS_VAL | PersonRatesPEOPriorWsVal | ✅ |
+| PRIOR_WS_VAL_DATE | PersonRatesPEOPriorCycleEffectiveDate | ✅ |
+| PRIOR_WS_VAL_DATE | PersonRatesPEOPriorWsValDate | — |
+| REC_MAX_VAL | PersonRatesPEORecMaxVal | ✅ |
+| REC_MIN_VAL | PersonRatesPEORecMinVal | ✅ |
+| REC_VAL | PersonRatesPEORecVal | ✅ |
+| WS_MAX_VAL | PersonRatesPEOWsMaxVal | ✅ |
+| WS_MIN_VAL | PersonRatesPEOWsMinVal | ✅ |
+| WS_VAL | PersonRatesPEOWsVal | ✅ |
+| WS_VAL_LAST_UPD_BY | PersonRatesPEOWsValLastUpdBy | ✅ |
+| WS_VAL_LAST_UPD_DATE | PersonRatesPEOWsValLastUpdDate | ✅ |
+| WS_VAL_ORIG_UPD_BY | PersonRatesPEOWsValOrigUpdBy | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — CMP_CWB_PERSON_RATES](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/cmpcwbpersonrates.html)

@@ -130,3 +130,58 @@ WHERE  ba.CURRENCY_CODE = 'BRL'
 
 - [Oracle Docs — External Bank Accounts](https://docs.oracle.com/en/cloud/saas/financials/25a/oedmf/iby-tables.html)
 - [[po-module-data-dictionary]] — Dossiê do módulo Procurement
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[supplieraddressbankaccountpvo|SupplierAddressBankAccountPVO]] (PO · BICC: 5/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BANK_ACCOUNT_NAME | BankAccountInfoBankAccountName | — |
+| BANK_ACCOUNT_TYPE | BankAccountInfoBankAccountType | — |
+| BANK_ID | BankAccountInfoBankId | — |
+| BANK_NAME | BankAccountInfoBankName | ✅ |
+| BANK_NUMBER | BankAccountInfoBankNumber | ✅ |
+| BRANCH_ID | BankAccountInfoBranchId | — |
+| BRANCH_NAME | BankAccountInfoBranchName | ✅ |
+| BRANCH_NUMBER | BankAccountInfoBranchNumber | ✅ |
+| EFT_SWIFT_CODE | BankAccountInfoEftSwiftCode | ✅ |
+| END_DATE | BankAccountInfoEndDate | — |
+| EXT_BANK_ACCOUNT_ID | BankAccountInfoExtBankAccountId | — |
+| START_DATE | BankAccountInfoStartDate | — |
+
+### [[supplierbankaccountpvo|SupplierBankAccountPVO]] (PO · BICC: 5/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BANK_ACCOUNT_NAME | BankAccountInfoBankAccountName | — |
+| BANK_ACCOUNT_TYPE | BankAccountInfoBankAccountType | — |
+| BANK_ID | BankAccountInfoBankId | — |
+| BANK_NAME | BankAccountInfoBankName | ✅ |
+| BANK_NUMBER | BankAccountInfoBankNumber | ✅ |
+| BRANCH_ID | BankAccountInfoBranchId | — |
+| BRANCH_NAME | BankAccountInfoBranchName | ✅ |
+| BRANCH_NUMBER | BankAccountInfoBranchNumber | ✅ |
+| EFT_SWIFT_CODE | BankAccountInfoEftSwiftCode | ✅ |
+| END_DATE | BankAccountInfoEndDate | — |
+| EXT_BANK_ACCOUNT_ID | BankAccountInfoExtBankAccountId | — |
+| START_DATE | BankAccountInfoStartDate | — |
+
+### [[suppliersitebankaccountpvo|SupplierSiteBankAccountPVO]] (PO · BICC: 5/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BANK_ACCOUNT_NAME | BankAccountInfoBankAccountName | — |
+| BANK_ACCOUNT_TYPE | BankAccountInfoBankAccountType | — |
+| BANK_ID | BankAccountInfoBankId | — |
+| BANK_NAME | BankAccountInfoBankName | ✅ |
+| BANK_NUMBER | BankAccountInfoBankNumber | ✅ |
+| BRANCH_ID | BankAccountInfoBranchId | — |
+| BRANCH_NAME | BankAccountInfoBranchName | ✅ |
+| BRANCH_NUMBER | BankAccountInfoBranchNumber | ✅ |
+| EFT_SWIFT_CODE | BankAccountInfoEftSwiftCode | ✅ |
+| END_DATE | BankAccountInfoEndDate | — |
+| EXT_BANK_ACCOUNT_ID | BankAccountInfoExtBankAccountId | — |
+| START_DATE | BankAccountInfoStartDate | — |

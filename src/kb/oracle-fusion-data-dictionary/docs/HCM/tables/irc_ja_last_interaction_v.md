@@ -100,3 +100,21 @@ WHERE  ja.DAYS_SINCE_INTERACTION > 14;
 
 - [Oracle Docs -- IRC_JA_LAST_INTERACTION_V](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/ircjalastinteractionv.html)
 - [[hcm-module-data-dictionary]] -- Dossie do modulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[submissionrestrictedpvo|SubmissionRestrictedPVO]] (HCM)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| INTERACTION_DATE | JobAppLastInteractionPEOInteractionDate | — |
+| INTERACTION_ID | JobAppLastInteractionPEOInteractionId | — |
+
+### [[submissionviewallpvo|SubmissionViewAllPVO]] (HCM)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| INTERACTION_DATE | JobAppLastInteractionPEOInteractionDate | — |
+| INTERACTION_ID | JobAppLastInteractionPEOInteractionId | — |

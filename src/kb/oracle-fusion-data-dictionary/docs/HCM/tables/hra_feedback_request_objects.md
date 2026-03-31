@@ -114,6 +114,28 @@ WHERE  r.PERSON_ID = :p_person_id;
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[feedbackrequestobjextractpvo|FeedbackRequestObjExtractPVO]] (HCM · BICC: 13/13)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | FeedbackRequestObjPEOBusinessGroupId | ✅ |
+| CREATED_BY | FeedbackRequestObjPEOCreatedBy | ✅ |
+| CREATION_DATE | FeedbackRequestObjPEOCreationDate | ✅ |
+| FEEDBACK_REQ_ID | FeedbackRequestObjPEOFeedbackReqId | ✅ |
+| FEEDBACK_REQ_OBJ_ID | FeedbackRequestObjPEOFeedbackReqObjId | ✅ |
+| LAST_UPDATE_DATE | FeedbackRequestObjPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | FeedbackRequestObjPEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | FeedbackRequestObjPEOLastUpdatedBy | ✅ |
+| OBJECT_ID | FeedbackRequestObjPEOObjectId | ✅ |
+| OBJECT_REFERENCE_DESCRIPTION | FeedbackRequestObjPEOObjectReferenceDescription | ✅ |
+| OBJECT_REFERENCE_NAME | FeedbackRequestObjPEOObjectReferenceName | ✅ |
+| OBJECT_TYPE | FeedbackRequestObjPEOObjectType | ✅ |
+| OBJECT_VERSION_NUMBER | FeedbackRequestObjPEOObjectVersionNumber | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — HRA_FEEDBACK_REQUEST_OBJECTS](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/hrafeedbackrequestobjects.html)

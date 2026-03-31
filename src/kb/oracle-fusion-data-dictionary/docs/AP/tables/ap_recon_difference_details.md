@@ -99,3 +99,42 @@ SELECT rdd.RECON_DIFFERENCE_ID,
 - Oracle Fusion Cloud Financials — Accounts Payable Tables (OEDMF Release 13).
 - Oracle Fusion Cloud — Subledger to GL Reconciliation Documentation.
 - Oracle Fusion Cloud ERP Schema Reference (Release 25A).
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[paiddisbursementschedulepvo|PaidDisbursementSchedulePVO]] (AP)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CAUSE_OF_DIFFERENCE_CODE | CauseOfDifferenceCode | — |
+| RECON_ITEM_CODE | ReconItemCode | — |
+| RECON_TRX_ID | ReconTrxId | — |
+| REQUEST_ID | RequestId | — |
+
+### [[paymenthistorydistributionpvo|PaymentHistoryDistributionPVO]] (AP)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACCOUNTING_DATE | ReconDiffAccountingDate | — |
+| CAUSE_OF_DIFFERENCE_CODE | ReconDiffCauseOfDifferenceCode | — |
+| DOCUMENT_DISTRIBUTION_ID | ReconDiffDocumentDistributionId | — |
+| DOCUMENT_ID | ReconDiffDocumentId | — |
+| LAST_UPDATE_DATE | ReconDiffLastUpdateDate | — |
+| RECON_ITEM_CODE | ReconDiffReconItemCode | — |
+| RECON_TRX_ID | ReconDiffReconTrxId | — |
+| REQUEST_ID | ReconDiffRequestId | — |
+
+### [[prepaymentappliationdistributionpvo|PrepaymentAppliationDistributionPVO]] (AP)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACCOUNTING_DATE | ReconDiffAccountingDate | — |
+| CAUSE_OF_DIFFERENCE_CODE | ReconDiffCauseOfDifferenceCode | — |
+| DOCUMENT_DISTRIBUTION_ID | ReconDiffDocumentDistributionId | — |
+| DOCUMENT_ID | ReconDiffDocumentId | — |
+| LAST_UPDATE_DATE | ReconDiffLastUpdateDate | — |
+| RECON_ITEM_CODE | ReconDiffReconItemCode | — |
+| RECON_TRX_ID | ReconDiffReconTrxId | — |
+| REQUEST_ID | ReconDiffRequestId | — |

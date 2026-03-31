@@ -39,7 +39,6 @@ Tabela de traduções dos usos de templates de regras, armazenando descrições 
 > [!note] Sufixo _TL
 > O sufixo `_TL` indica tabela de **traduções** — armazena textos traduzidos por idioma. Chave composta: PK da tabela `_B` + `LANGUAGE`.
 
-
 ---
 
 ## 🧠 Propósito de Negócio
@@ -105,6 +104,19 @@ WHERE  t.LANGUAGE = USERENV('LANG')
 - Tabela de traduções: não utilizar diretamente em relatórios; preferir a view `_VL` correspondente.
 - Chave composta: PK do registro base + LANGUAGE.
 - Área funcional: Rules Engine dentro do Oracle Fusion Cloud HCM.
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[ruletemplateusagepvo|RuleTemplateUsagePVO]] (GL · BICC: 2/4)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| LANGUAGE | RuleTemplateUsageTLPEOLanguage | — |
+| OUT_NAME_DESCRIPTION | RuleTemplateUsageTLPEOOutNameDescription | ✅ |
+| RULE_TMPLT_USAGES_ID | RuleTemplateUsageTLPEORuleTmpltUsagesId | — |
+| USER_DEFINED_OUT_NAME | RuleTemplateUsageTLPEOUserDefinedOutName | ✅ |
 
 ---
 

@@ -114,3 +114,43 @@ WHERE  ph.PARENT_POSITION_ID = :p_position_id
 
 - [Oracle Docs — PER_POSITION_HIERARCHY_F](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/perpositionhierarchyf.html)
 - [[hcm-module-data-dictionary]] — Dossiê do módulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[positionpvo|PositionPVO]] (PO · BICC: 2/13)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_OCCURRENCE_ID | PositionHierarchyPEOActionOccurrenceId | — |
+| BUSINESS_GROUP_ID | PositionHierarchyPEOBusinessGroupId | — |
+| CREATED_BY | PositionHierarchyPEOCreatedBy | — |
+| CREATION_DATE | PositionHierarchyPEOCreationDate | — |
+| EFFECTIVE_END_DATE | PositionHierarchyPEOEffectiveEndDate1 | — |
+| EFFECTIVE_START_DATE | PositionHierarchyPEOEffectiveStartDate1 | ✅ |
+| LAST_UPDATE_DATE | PositionHierarchyPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | PositionHierarchyPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | PositionHierarchyPEOLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | PositionHierarchyPEOObjectVersionNumber | — |
+| PARENT_POSITION_ID | PositionHierarchyPEOParentPositionId | — |
+| POSITION_HIERARCHY_ID | PositionHierarchyPEOPositionHierarchyId | — |
+| POSITION_ID | PositionHierarchyPEOPositionId1 | — |
+
+### [[positionpvoviewall|PositionPVOViewAll]] (PO · BICC: 2/13)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_OCCURRENCE_ID | PositionHierarchyPEOActionOccurrenceId | — |
+| BUSINESS_GROUP_ID | PositionHierarchyPEOBusinessGroupId | — |
+| CREATED_BY | PositionHierarchyPEOCreatedBy | — |
+| CREATION_DATE | PositionHierarchyPEOCreationDate | — |
+| EFFECTIVE_END_DATE | PositionHierarchyPEOEffectiveEndDate1 | — |
+| EFFECTIVE_START_DATE | PositionHierarchyPEOEffectiveStartDate1 | ✅ |
+| LAST_UPDATE_DATE | PositionHierarchyPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | PositionHierarchyPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | PositionHierarchyPEOLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | PositionHierarchyPEOObjectVersionNumber | — |
+| PARENT_POSITION_ID | PositionHierarchyPEOParentPositionId | — |
+| POSITION_HIERARCHY_ID | PositionHierarchyPEOPositionHierarchyId | — |
+| POSITION_ID | PositionHierarchyPEOPositionId1 | — |

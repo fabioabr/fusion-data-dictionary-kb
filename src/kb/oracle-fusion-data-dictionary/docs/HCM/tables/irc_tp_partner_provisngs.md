@@ -99,6 +99,108 @@ WHERE  pp.REQUISITION_ID = :p_requisition_id;
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[asmtpackageresultviewallpvo|AsmtPackageResultViewAllPVO]] (HCM)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| PROVISIONING_ID | PartnerProvisionPEOProvisioningId | — |
+
+### [[asmtreqpackageviewallpvo|AsmtReqPackageViewAllPVO]] (HCM)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| PROVISIONING_ID | PartnerProvisionPEOProvisioningId | — |
+
+### [[jobposthistorypvo|JobPostHistoryPVO]] (HCM)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| PROVISIONING_ID | PartnerProvisionPEOProvisioningId | — |
+
+### [[jobposthistoryviewallpvo|JobPostHistoryViewAllPVO]] (HCM)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| PROVISIONING_ID | PartnerProvisionPEOProvisioningId | — |
+
+### [[jobpostingpvo|JobPostingPVO]] (HCM)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| PROVISIONING_ID | PartnerProvisionPEOProvisioningId | — |
+
+### [[jobpostingviewallpvo|JobPostingViewAllPVO]] (HCM)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| PROVISIONING_ID | PartnerProvisionPEOProvisioningId | — |
+
+### [[jobpostresultpvo|JobPostResultPVO]] (HCM)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| PROVISIONING_ID | PartnerProvisionPEOProvisioningId | — |
+
+### [[jobpostresultviewallpvo|JobPostResultViewAllPVO]] (HCM)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| PROVISIONING_ID | PartnerProvisionPEOProvisioningId | — |
+
+### [[partneraccountpvo|PartnerAccountPVO]] (HCM · BICC: 9/11)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CATEGORY_ID | PartnerProvisionPEOCategoryId | ✅ |
+| CLIENT_REF_KEY | PartnerProvisionPEOClientRefKey | — |
+| CREATED_BY | PartnerProvisionPEOCreatedBy | ✅ |
+| CREATION_DATE | PartnerProvisionPEOCreationDate | ✅ |
+| LAST_UPDATE_DATE | PartnerProvisionPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | PartnerProvisionPEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | PartnerProvisionPEOLastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | PartnerProvisionPEOObjectVersionNumber | — |
+| PARTNER_ID | PartnerProvisionPEOPartnerId | ✅ |
+| PROVISIONING_ID | PartnerProvisionPEOProvisioningId | ✅ |
+| STATUS_CODE | PartnerProvisionPEOStatusCode | ✅ |
+
+### [[partnerprovisionpvo|PartnerProvisionPVO]] (HCM · BICC: 9/11)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CATEGORY_ID | PartnerProvisionPEOCategoryId | ✅ |
+| CLIENT_REF_KEY | PartnerProvisionPEOClientRefKey | — |
+| CREATED_BY | PartnerProvisionPEOCreatedBy | ✅ |
+| CREATION_DATE | PartnerProvisionPEOCreationDate | ✅ |
+| LAST_UPDATE_DATE | PartnerProvisionPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | PartnerProvisionPEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | PartnerProvisionPEOLastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | PartnerProvisionPEOObjectVersionNumber | — |
+| PARTNER_ID | PartnerProvisionPEOPartnerId | ✅ |
+| PROVISIONING_ID | PartnerProvisionPEOProvisioningId | ✅ |
+| STATUS_CODE | PartnerProvisionPEOStatusCode | ✅ |
+
+### [[screeningpackagepvo|ScreeningPackagePVO]] (AP)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| PROVISIONING_ID | PartnerProvisionPEOProvisioningId | — |
+
+### [[screeningresultviewallpvo|ScreeningResultViewAllPVO]] (AP)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| PROVISIONING_ID | PartnerProvisionPEOProvisioningId | — |
+
+### [[screeningviewallpvo|ScreeningViewAllPVO]] (AP)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| PROVISIONING_ID | PartnerProvisionPEOProvisioningId | — |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — IRC_TP_PARTNER_PROVISNGS](https://docs.oracle.com/en/cloud/saas/talent-management/25a/oedmf/irctppartnerprovisioning.html)

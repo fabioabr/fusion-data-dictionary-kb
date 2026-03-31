@@ -93,6 +93,264 @@ SELECT il.CUSTOMER_TRX_ID,
 - `ORIGINAL_TRX_CLASS` permite distinguir se o juro incide sobre fatura (INV), debit memo (DM) ou depósito (DEP).
 - Filtrar sempre por `ORG_ID` para garantir contexto correto de business unit.
 
+## 🔗 PVOs Relacionados
+
+### [[adjustmentdistributionpvo|AdjustmentDistributionPVO]] (AR · BICC: 4/22)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTUAL_DATE_CLOSED | IntrstLineActualDateClosed | — |
+| AMOUNT_DUE_ORIGINAL | IntrstLineAmountDueOriginal | — |
+| AMOUNT_DUE_REMAINING | IntrstLineAmountDueRemaining | — |
+| DAILY_INTEREST_CHARGE | IntrstLineDailyInterestCharge | — |
+| DAYS_OF_INTEREST | IntrstLineDaysOfInterest | ✅ |
+| DAYS_OVERDUE_LATE | IntrstLineDaysOverdueLate | ✅ |
+| DUE_DATE | IntrstLineDueDate | — |
+| FINANCE_CHARGE_CHARGED | IntrstLineFinanceChargeCharged | — |
+| INTEREST_CHARGED | IntrstLineInterestCharged | ✅ |
+| INTEREST_LINE_ID | IntrstLineInterestLineId | — |
+| INTEREST_RATE | IntrstLineInterestRate | ✅ |
+| LAST_CHARGE_DATE | IntrstLineLastChargeDate | — |
+| ORIGINAL_TRX_CLASS | IntrstLineOriginalTrxClass | — |
+| OUTSTANDING_AMOUNT | IntrstLineOutstandingAmount | — |
+| PAYMENT_DATE | IntrstLinePaymentDate | — |
+| PROCESS_MESSAGE | IntrstLineProcessMessage | — |
+| PROCESS_STATUS | IntrstLineProcessStatus | — |
+| RATE_END_DATE | IntrstLineRateEndDate | — |
+| RATE_START_DATE | IntrstLineRateStartDate | — |
+| SCHEDULE_DAYS_FROM | IntrstLineScheduleDaysFrom | — |
+| SCHEDULE_DAYS_TO | IntrstLineScheduleDaysTo | — |
+| TYPE | IntrstLineType | — |
+
+### [[adjustmentpvo|AdjustmentPVO]] (AR · BICC: 4/22)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTUAL_DATE_CLOSED | IntrstLineActualDateClosed | — |
+| AMOUNT_DUE_ORIGINAL | IntrstLineAmountDueOriginal | — |
+| AMOUNT_DUE_REMAINING | IntrstLineAmountDueRemaining | — |
+| DAILY_INTEREST_CHARGE | IntrstLineDailyInterestCharge | — |
+| DAYS_OF_INTEREST | IntrstLineDaysOfInterest | ✅ |
+| DAYS_OVERDUE_LATE | IntrstLineDaysOverdueLate | ✅ |
+| DUE_DATE | IntrstLineDueDate | — |
+| FINANCE_CHARGE_CHARGED | IntrstLineFinanceChargeCharged | — |
+| INTEREST_CHARGED | IntrstLineInterestCharged | ✅ |
+| INTEREST_LINE_ID | IntrstLineInterestLineId | — |
+| INTEREST_RATE | IntrstLineInterestRate | ✅ |
+| LAST_CHARGE_DATE | IntrstLineLastChargeDate | — |
+| ORIGINAL_TRX_CLASS | IntrstLineOriginalTrxClass | — |
+| OUTSTANDING_AMOUNT | IntrstLineOutstandingAmount | — |
+| PAYMENT_DATE | IntrstLinePaymentDate | — |
+| PROCESS_MESSAGE | IntrstLineProcessMessage | — |
+| PROCESS_STATUS | IntrstLineProcessStatus | — |
+| RATE_END_DATE | IntrstLineRateEndDate | — |
+| RATE_START_DATE | IntrstLineRateStartDate | — |
+| SCHEDULE_DAYS_FROM | IntrstLineScheduleDaysFrom | — |
+| SCHEDULE_DAYS_TO | IntrstLineScheduleDaysTo | — |
+| TYPE | IntrstLineType | — |
+
+### [[interestlineextractpvo|InterestLineExtractPVO]] (OTHER · BICC: 33/33)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTUAL_DATE_CLOSED | ArInterestLineActualDateClosed | ✅ |
+| AMOUNT_DUE_ORIGINAL | ArInterestLineAmountDueOriginal | ✅ |
+| AMOUNT_DUE_REMAINING | ArInterestLineAmountDueRemaining | ✅ |
+| CREATED_BY | ArInterestLineCreatedBy | ✅ |
+| CREATION_DATE | ArInterestLineCreationDate | ✅ |
+| DAILY_INTEREST_CHARGE | DailyInterestCharge | ✅ |
+| DAYS_OF_INTEREST | ArInterestLineDaysOfInterest | ✅ |
+| DAYS_OVERDUE_LATE | ArInterestLineDaysOverdueLate | ✅ |
+| DUE_DATE | ArInterestLineDueDate | ✅ |
+| FINANCE_CHARGE_CHARGED | ArInterestLineFinanceChargeCharged | ✅ |
+| INTEREST_CHARGED | ArInterestLineInterestCharged | ✅ |
+| INTEREST_HEADER_ID | ArInterestLineInterestHeaderId | ✅ |
+| INTEREST_LINE_ID | ArInterestLineInterestLineId | ✅ |
+| INTEREST_RATE | ArInterestLineInterestRate | ✅ |
+| LAST_CHARGE_DATE | ArInterestLineLastChargeDate | ✅ |
+| LAST_UPDATE_DATE | ArInterestLineLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ArInterestLineLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | ArInterestLineLastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | ArInterestLineObjectVersionNumber | ✅ |
+| ORG_ID | ArInterestLineOrgId | ✅ |
+| ORIGINAL_TRX_CLASS | ArInterestLineOriginalTrxClass | ✅ |
+| ORIGINAL_TRX_ID | ArInterestLineOriginalTrxId | ✅ |
+| OUTSTANDING_AMOUNT | ArInterestLineOutstandingAmount | ✅ |
+| PAYMENT_DATE | ArInterestLinePaymentDate | ✅ |
+| PAYMENT_SCHEDULE_ID | ArInterestLinePaymentScheduleId | ✅ |
+| PROCESS_MESSAGE | ArInterestLineProcessMessage | ✅ |
+| PROCESS_STATUS | ArInterestLineProcessStatus | ✅ |
+| RATE_END_DATE | ArInterestLineRateEndDate | ✅ |
+| RATE_START_DATE | ArInterestLineRateStartDate | ✅ |
+| RECEIVABLES_TRX_ID | ArInterestLineReceivablesTrxId | ✅ |
+| SCHEDULE_DAYS_FROM | ArInterestLineScheduleDaysFrom | ✅ |
+| SCHEDULE_DAYS_TO | ArInterestLineScheduleDaysTo | ✅ |
+| TYPE | ArInterestLineType | ✅ |
+
+### [[linesalescreditpvo|LineSalesCreditPVO]] (AR · BICC: 4/22)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTUAL_DATE_CLOSED | IntrstLineActualDateClosed | — |
+| AMOUNT_DUE_ORIGINAL | IntrstLineAmountDueOriginal | — |
+| AMOUNT_DUE_REMAINING | IntrstLineAmountDueRemaining | — |
+| DAILY_INTEREST_CHARGE | IntrstLineDailyInterestCharge | — |
+| DAYS_OF_INTEREST | IntrstLineDaysOfInterest | ✅ |
+| DAYS_OVERDUE_LATE | IntrstLineDaysOverdueLate | ✅ |
+| DUE_DATE | IntrstLineDueDate | — |
+| FINANCE_CHARGE_CHARGED | IntrstLineFinanceChargeCharged | — |
+| INTEREST_CHARGED | IntrstLineInterestCharged | ✅ |
+| INTEREST_LINE_ID | IntrstLineInterestLineId | — |
+| INTEREST_RATE | IntrstLineInterestRate | ✅ |
+| LAST_CHARGE_DATE | IntrstLineLastChargeDate | — |
+| ORIGINAL_TRX_CLASS | IntrstLineOriginalTrxClass | — |
+| OUTSTANDING_AMOUNT | IntrstLineOutstandingAmount | — |
+| PAYMENT_DATE | IntrstLinePaymentDate | — |
+| PROCESS_MESSAGE | IntrstLineProcessMessage | — |
+| PROCESS_STATUS | IntrstLineProcessStatus | — |
+| RATE_END_DATE | IntrstLineRateEndDate | — |
+| RATE_START_DATE | IntrstLineRateStartDate | — |
+| SCHEDULE_DAYS_FROM | IntrstLineScheduleDaysFrom | — |
+| SCHEDULE_DAYS_TO | IntrstLineScheduleDaysTo | — |
+| TYPE | IntrstLineType | — |
+
+### [[transactionhistorydistributionpvo|TransactionHistoryDistributionPVO]] (AR)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTUAL_DATE_CLOSED | IntrstLineActualDateClosed | — |
+| AMOUNT_DUE_ORIGINAL | IntrstLineAmountDueOriginal | — |
+| AMOUNT_DUE_REMAINING | IntrstLineAmountDueRemaining | — |
+| DAILY_INTEREST_CHARGE | IntrstLineDailyInterestCharge | — |
+| DAYS_OF_INTEREST | IntrstLineDaysOfInterest | — |
+| DAYS_OVERDUE_LATE | IntrstLineDaysOverdueLate | — |
+| DUE_DATE | IntrstLineDueDate | — |
+| FINANCE_CHARGE_CHARGED | IntrstLineFinanceChargeCharged | — |
+| INTEREST_CHARGED | IntrstLineInterestCharged | — |
+| INTEREST_LINE_ID | IntrstLineInterestLineId | — |
+| INTEREST_RATE | IntrstLineInterestRate | — |
+| LAST_CHARGE_DATE | IntrstLineLastChargeDate | — |
+| ORIGINAL_TRX_CLASS | IntrstLineOriginalTrxClass | — |
+| OUTSTANDING_AMOUNT | IntrstLineOutstandingAmount | — |
+| PAYMENT_DATE | IntrstLinePaymentDate | — |
+| PROCESS_MESSAGE | IntrstLineProcessMessage | — |
+| PROCESS_STATUS | IntrstLineProcessStatus | — |
+| RATE_END_DATE | IntrstLineRateEndDate | — |
+| RATE_START_DATE | IntrstLineRateStartDate | — |
+| SCHEDULE_DAYS_FROM | IntrstLineScheduleDaysFrom | — |
+| SCHEDULE_DAYS_TO | IntrstLineScheduleDaysTo | — |
+| TYPE | IntrstLineType | — |
+
+### [[transactionhistorypvo|TransactionHistoryPVO]] (AR)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTUAL_DATE_CLOSED | IntrstLineActualDateClosed | — |
+| AMOUNT_DUE_ORIGINAL | IntrstLineAmountDueOriginal | — |
+| AMOUNT_DUE_REMAINING | IntrstLineAmountDueRemaining | — |
+| DAILY_INTEREST_CHARGE | IntrstLineDailyInterestCharge | — |
+| DAYS_OF_INTEREST | IntrstLineDaysOfInterest | — |
+| DAYS_OVERDUE_LATE | IntrstLineDaysOverdueLate | — |
+| DUE_DATE | IntrstLineDueDate | — |
+| FINANCE_CHARGE_CHARGED | IntrstLineFinanceChargeCharged | — |
+| INTEREST_CHARGED | IntrstLineInterestCharged | — |
+| INTEREST_LINE_ID | IntrstLineInterestLineId | — |
+| INTEREST_RATE | IntrstLineInterestRate | — |
+| LAST_CHARGE_DATE | IntrstLineLastChargeDate | — |
+| ORIGINAL_TRX_CLASS | IntrstLineOriginalTrxClass | — |
+| OUTSTANDING_AMOUNT | IntrstLineOutstandingAmount | — |
+| PAYMENT_DATE | IntrstLinePaymentDate | — |
+| PROCESS_MESSAGE | IntrstLineProcessMessage | — |
+| PROCESS_STATUS | IntrstLineProcessStatus | — |
+| RATE_END_DATE | IntrstLineRateEndDate | — |
+| RATE_START_DATE | IntrstLineRateStartDate | — |
+| SCHEDULE_DAYS_FROM | IntrstLineScheduleDaysFrom | — |
+| SCHEDULE_DAYS_TO | IntrstLineScheduleDaysTo | — |
+| TYPE | IntrstLineType | — |
+
+### [[transactionlinebillsreceivablepvo|TransactionLineBillsReceivablePVO]] (AR)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTUAL_DATE_CLOSED | IntrstLineActualDateClosed | — |
+| AMOUNT_DUE_ORIGINAL | IntrstLineAmountDueOriginal | — |
+| AMOUNT_DUE_REMAINING | IntrstLineAmountDueRemaining | — |
+| DAILY_INTEREST_CHARGE | IntrstLineDailyInterestCharge | — |
+| DAYS_OF_INTEREST | IntrstLineDaysOfInterest | — |
+| DAYS_OVERDUE_LATE | IntrstLineDaysOverdueLate | — |
+| DUE_DATE | IntrstLineDueDate | — |
+| FINANCE_CHARGE_CHARGED | IntrstLineFinanceChargeCharged | — |
+| INTEREST_CHARGED | IntrstLineInterestCharged | — |
+| INTEREST_LINE_ID | IntrstLineInterestLineId | — |
+| INTEREST_RATE | IntrstLineInterestRate | — |
+| LAST_CHARGE_DATE | IntrstLineLastChargeDate | — |
+| ORIGINAL_TRX_CLASS | IntrstLineOriginalTrxClass | — |
+| OUTSTANDING_AMOUNT | IntrstLineOutstandingAmount | — |
+| PAYMENT_DATE | IntrstLinePaymentDate | — |
+| PROCESS_MESSAGE | IntrstLineProcessMessage | — |
+| PROCESS_STATUS | IntrstLineProcessStatus | — |
+| RATE_END_DATE | IntrstLineRateEndDate | — |
+| RATE_START_DATE | IntrstLineRateStartDate | — |
+| SCHEDULE_DAYS_FROM | IntrstLineScheduleDaysFrom | — |
+| SCHEDULE_DAYS_TO | IntrstLineScheduleDaysTo | — |
+| TYPE | IntrstLineType | — |
+
+### [[transactionlinedistributionpvo|TransactionLineDistributionPVO]] (AR · BICC: 4/22)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTUAL_DATE_CLOSED | IntrstLineActualDateClosed | — |
+| AMOUNT_DUE_ORIGINAL | IntrstLineAmountDueOriginal | — |
+| AMOUNT_DUE_REMAINING | IntrstLineAmountDueRemaining | — |
+| DAILY_INTEREST_CHARGE | IntrstLineDailyInterestCharge | — |
+| DAYS_OF_INTEREST | IntrstLineDaysOfInterest | ✅ |
+| DAYS_OVERDUE_LATE | IntrstLineDaysOverdueLate | ✅ |
+| DUE_DATE | IntrstLineDueDate | — |
+| FINANCE_CHARGE_CHARGED | IntrstLineFinanceChargeCharged | — |
+| INTEREST_CHARGED | IntrstLineInterestCharged | ✅ |
+| INTEREST_LINE_ID | IntrstLineInterestLineId | — |
+| INTEREST_RATE | IntrstLineInterestRate | ✅ |
+| LAST_CHARGE_DATE | IntrstLineLastChargeDate | — |
+| ORIGINAL_TRX_CLASS | IntrstLineOriginalTrxClass | — |
+| OUTSTANDING_AMOUNT | IntrstLineOutstandingAmount | — |
+| PAYMENT_DATE | IntrstLinePaymentDate | — |
+| PROCESS_MESSAGE | IntrstLineProcessMessage | — |
+| PROCESS_STATUS | IntrstLineProcessStatus | — |
+| RATE_END_DATE | IntrstLineRateEndDate | — |
+| RATE_START_DATE | IntrstLineRateStartDate | — |
+| SCHEDULE_DAYS_FROM | IntrstLineScheduleDaysFrom | — |
+| SCHEDULE_DAYS_TO | IntrstLineScheduleDaysTo | — |
+| TYPE | IntrstLineType | — |
+
+### [[transactionlinepvo|TransactionLinePVO]] (AR · BICC: 4/22)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTUAL_DATE_CLOSED | IntrstLineActualDateClosed | — |
+| AMOUNT_DUE_ORIGINAL | IntrstLineAmountDueOriginal | — |
+| AMOUNT_DUE_REMAINING | IntrstLineAmountDueRemaining | — |
+| DAILY_INTEREST_CHARGE | IntrstLineDailyInterestCharge | — |
+| DAYS_OF_INTEREST | IntrstLineDaysOfInterest | ✅ |
+| DAYS_OVERDUE_LATE | IntrstLineDaysOverdueLate | ✅ |
+| DUE_DATE | IntrstLineDueDate | — |
+| FINANCE_CHARGE_CHARGED | IntrstLineFinanceChargeCharged | — |
+| INTEREST_CHARGED | IntrstLineInterestCharged | ✅ |
+| INTEREST_LINE_ID | IntrstLineInterestLineId | — |
+| INTEREST_RATE | IntrstLineInterestRate | ✅ |
+| LAST_CHARGE_DATE | IntrstLineLastChargeDate | — |
+| ORIGINAL_TRX_CLASS | IntrstLineOriginalTrxClass | — |
+| OUTSTANDING_AMOUNT | IntrstLineOutstandingAmount | — |
+| PAYMENT_DATE | IntrstLinePaymentDate | — |
+| PROCESS_MESSAGE | IntrstLineProcessMessage | — |
+| PROCESS_STATUS | IntrstLineProcessStatus | — |
+| RATE_END_DATE | IntrstLineRateEndDate | — |
+| RATE_START_DATE | IntrstLineRateStartDate | — |
+| SCHEDULE_DAYS_FROM | IntrstLineScheduleDaysFrom | — |
+| SCHEDULE_DAYS_TO | IntrstLineScheduleDaysTo | — |
+| TYPE | IntrstLineType | — |
+
+---
+
 ## 📚 Referências
 
 - Oracle Fusion Cloud Financials — Accounts Receivable Tables (OEDMF Release 13).

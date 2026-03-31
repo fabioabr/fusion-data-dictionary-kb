@@ -106,3 +106,39 @@ WHERE  po.POOL_ID = :p_pool_id;
 
 - [Oracle Docs — HRT_POOL_OWNERS](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/hrtpoolowners.html)
 - [[hcm-module-data-dictionary]] — Dossie do modulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[candidatepoolownerpvo|CandidatePoolOwnerPVO]] (PO · BICC: 10/11)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | CreatedBy | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| ENTERPRISE_ID | EnterpriseId | ✅ |
+| FAVORITE_FLAG | FavoriteFlag | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | LastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | ✅ |
+| OWNER_PERSON_ID | OwnerPersonId | — |
+| POOL_ID | PoolId | ✅ |
+| POOL_OWNER_ID | PoolOwnerId | ✅ |
+
+### [[talentpooluserspvo|TalentPoolUsersPVO]] (PO · BICC: 3/11)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | CreatedBy | — |
+| CREATION_DATE | CreationDate | — |
+| ENTERPRISE_ID | OwnerEnterpriseId | ✅ |
+| FAVORITE_FLAG | FavoriteFlag | — |
+| LAST_UPDATE_DATE | LastUpdateDate | — |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | — |
+| LAST_UPDATED_BY | LastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | — |
+| OWNER_PERSON_ID | OwnerPersonId | ✅ |
+| POOL_ID | OwnerPoolId | ✅ |
+| POOL_OWNER_ID | PoolOwnerId | — |

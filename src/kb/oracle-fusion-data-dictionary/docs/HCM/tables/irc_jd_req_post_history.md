@@ -100,3 +100,47 @@ ORDER BY ph.ACTION_DATE DESC;
 
 - [Oracle Docs -- IRC_JD_REQ_POST_HISTORY](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/ircjdreqposthistory.html)
 - [[hcm-module-data-dictionary]] -- Dossie do modulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[jobposthistorypvo|JobPostHistoryPVO]] (HCM · BICC: 14/15)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | PostHistoryPEOCreatedBy | ✅ |
+| CREATION_DATE | PostHistoryPEOCreationDate | ✅ |
+| ERROR_DESC | PostHistoryPEOErrorDesc | ✅ |
+| JOB_BOARD_ID | PostHistoryPEOJobBoardId | ✅ |
+| JOB_BOARD_NAME | PostHistoryPEOJobBoardName | ✅ |
+| LAST_UPDATE_DATE | PostHistoryPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | PostHistoryPEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | PostHistoryPEOLastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | PostHistoryPEOObjectVersionNumber | — |
+| POSTING_END_DATE | PostHistoryPEOPostingEndDate | ✅ |
+| POSTING_ID | PostHistoryPEOPostingId | ✅ |
+| POSTING_LANG | PostHistoryPEOPostingLang | ✅ |
+| POSTING_START_DATE | PostHistoryPEOPostingStartDate | ✅ |
+| POSTING_STATUS_CODE | PostHistoryPEOPostingStatusCode | ✅ |
+| RESULT_ID | ResultId | ✅ |
+
+### [[jobposthistoryviewallpvo|JobPostHistoryViewAllPVO]] (HCM · BICC: 14/15)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | PostHistoryPEOCreatedBy | ✅ |
+| CREATION_DATE | PostHistoryPEOCreationDate | ✅ |
+| ERROR_DESC | PostHistoryPEOErrorDesc | ✅ |
+| JOB_BOARD_ID | PostHistoryPEOJobBoardId | ✅ |
+| JOB_BOARD_NAME | PostHistoryPEOJobBoardName | ✅ |
+| LAST_UPDATE_DATE | PostHistoryPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | PostHistoryPEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | PostHistoryPEOLastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | PostHistoryPEOObjectVersionNumber | — |
+| POSTING_END_DATE | PostHistoryPEOPostingEndDate | ✅ |
+| POSTING_ID | PostHistoryPEOPostingId | ✅ |
+| POSTING_LANG | PostHistoryPEOPostingLang | ✅ |
+| POSTING_START_DATE | PostHistoryPEOPostingStartDate | ✅ |
+| POSTING_STATUS_CODE | PostHistoryPEOPostingStatusCode | ✅ |
+| RESULT_ID | ResultId | ✅ |

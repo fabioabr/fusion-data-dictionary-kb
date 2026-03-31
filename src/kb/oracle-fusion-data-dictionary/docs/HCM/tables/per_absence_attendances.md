@@ -114,6 +114,68 @@ WHERE  paa.PERSON_ID = :p_person_id
 - Registros podem ser criados via self-service pelo colaborador ou pelo gestor.
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[absenceeventspvo|AbsenceEventsPVO]] (HCM · BICC: 1/24)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ABS_ATTENDANCE_REASON_ID | AbsencePEOAbsAttendanceReasonId | — |
+| ABS_INFORMATION_CATEGORY | AbsencePEOAbsInformationCategory | — |
+| ABSENCE_ATTENDANCE_ID | AbsencePEOAbsenceAttendanceId | — |
+| ABSENCE_ATTENDANCE_TYPE_ID | AbsencePEOAbsenceAttendanceTypeId | — |
+| ABSENCE_CASE_ID | AbsencePEOAbsenceCaseId | — |
+| BATCH_ID | AbsencePEOBatchId | — |
+| BUSINESS_GROUP_ID | AbsencePEOBusinessGroupId | — |
+| CREATED_BY | AbsencePEOCreatedBy | — |
+| CREATION_DATE | AbsencePEOCreationDate | — |
+| DATE_END | AbsencePEODateEnd | — |
+| DATE_NOTIFICATION | AbsencePEODateNotification | — |
+| DATE_PROJECTED_END | AbsencePEODateProjectedEnd | — |
+| DATE_PROJECTED_START | AbsencePEODateProjectedStart | — |
+| DATE_START | AbsencePEODateStart | — |
+| LAST_UPDATE_DATE | AbsencePEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | AbsencePEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | AbsencePEOLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | AbsencePEOObjectVersionNumber | — |
+| PERIOD_OF_INCAPACITY_ID | AbsencePEOPeriodOfIncapacityId | — |
+| PERSON_ID | AbsencePEOPersonId | — |
+| TIME_END | AbsencePEOTimeEnd | — |
+| TIME_PROJECTED_END | AbsencePEOTimeProjectedEnd | — |
+| TIME_PROJECTED_START | AbsencePEOTimeProjectedStart | — |
+| TIME_START | AbsencePEOTimeStart | — |
+
+### [[absencepvo|AbsencePVO]] (HCM · BICC: 2/24)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ABS_ATTENDANCE_REASON_ID | AbsencePEOAbsAttendanceReasonId | — |
+| ABS_INFORMATION_CATEGORY | AbsencePEOAbsInformationCategory | — |
+| ABSENCE_ATTENDANCE_ID | AbsenceAttendanceId | ✅ |
+| ABSENCE_ATTENDANCE_TYPE_ID | AbsencePEOAbsenceAttendanceTypeId | — |
+| ABSENCE_CASE_ID | AbsencePEOAbsenceCaseId | — |
+| BATCH_ID | AbsencePEOBatchId | — |
+| BUSINESS_GROUP_ID | AbsencePEOBusinessGroupId | — |
+| CREATED_BY | AbsencePEOCreatedBy | — |
+| CREATION_DATE | AbsencePEOCreationDate | — |
+| DATE_END | AbsencePEODateEnd | — |
+| DATE_NOTIFICATION | AbsencePEODateNotification | — |
+| DATE_PROJECTED_END | AbsencePEODateProjectedEnd | — |
+| DATE_PROJECTED_START | AbsencePEODateProjectedStart | — |
+| DATE_START | AbsencePEODateStart | — |
+| LAST_UPDATE_DATE | AbsencePEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | AbsencePEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | AbsencePEOLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | AbsencePEOObjectVersionNumber | — |
+| PERIOD_OF_INCAPACITY_ID | AbsencePEOPeriodOfIncapacityId | — |
+| PERSON_ID | AbsencePEOPersonId | — |
+| TIME_END | AbsencePEOTimeEnd | — |
+| TIME_PROJECTED_END | AbsencePEOTimeProjectedEnd | — |
+| TIME_PROJECTED_START | AbsencePEOTimeProjectedStart | — |
+| TIME_START | AbsencePEOTimeStart | — |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — PER_ABSENCE_ATTENDANCES](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/perabsenceattendances.html)

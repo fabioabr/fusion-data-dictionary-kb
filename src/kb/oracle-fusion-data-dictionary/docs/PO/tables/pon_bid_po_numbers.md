@@ -124,6 +124,49 @@ WHERE  bpn.AUCTION_HEADER_ID = :p_auction_header_id
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[negotiationresponsepurchaseorderlinepvo|NegotiationResponsePurchaseOrderLinePVO]] (PO · BICC: 1/34)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACCEPTANCE_REQUIRED_FLAG | ResponsePOAcceptanceRequiredFlag | — |
+| ACKNOWLEDGEMENT_WITHIN_DAYS | ResponsePOAcknowledgementWithinDays | — |
+| AGENT_ID | ResponsePOAgentId | — |
+| AUCTION_HEADER_ID | ResponsePOAuctionHeaderId | — |
+| AUTOMATIC_GENERATE_ORDER | ResponsePOAutomaticGenerateOrder | — |
+| AUTOMATIC_SUBMIT_FOR_APPR | ResponsePOAutomaticSubmitForAppr | — |
+| BID_NUMBER | ResponsePOBidNumber | — |
+| CREATED_BY | ResponsePOCreatedBy | — |
+| CREATION_DATE | ResponsePOCreationDate | — |
+| DEFAULT_TAXATION_COUNTRY | ResponsePODefaultTaxationCountry | — |
+| FOR_BACKING_REQUISITION | ResponsePOForBackingRequisition | — |
+| GROUP_REQUISITION | ResponsePOGroupRequisition | — |
+| GROUP_REQUISITION_LINES | ResponsePOGroupRequisitionLines | — |
+| INITIATE_APPROVAL | ResponsePOInitiateApproval | — |
+| LAST_UPDATE_DATE | ResponsePOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ResponsePOLastUpdateLogin | — |
+| LAST_UPDATED_BY | ResponsePOLastUpdatedBy | — |
+| NOTE_TO_SUPPLIER | ResponsePONoteToSupplier | — |
+| OBJECT_VERSION_NUMBER | ResponsePOObjectVersionNumber | — |
+| ORDER_NUMBER | ResponsePOOrderNumber | — |
+| PO_END_DATE | ResponsePOPoEndDate | — |
+| PO_ERROR_CODE | ResponsePOPoErrorCode | — |
+| PO_ERROR_MSG | ResponsePOPoErrorMsg | — |
+| PO_HEADER_ID | ResponsePOPoHeaderId | — |
+| PO_START_DATE | ResponsePOPoStartDate | — |
+| PO_WF_CREATION_RND | ResponsePOPoWfCreationRnd | — |
+| REQ_BU_ID | ResponsePOReqBuId | — |
+| RETRO_PRICE_APPLY_UPDATES_FLAG | ResponsePORetroPriceApplyUpdatesFlag | — |
+| RETRO_PRICE_COMM_UPDATES_FLAG | ResponsePORetroPriceCommUpdatesFlag | — |
+| SEQUENCE_NUMBER | ResponsePOSequenceNumber | — |
+| TAX_DOCUMENT_SUBTYPE | ResponsePOTaxDocumentSubtype | — |
+| USE_NEED_BY_DATE | ResponsePOUseNeedByDate | — |
+| USE_SHIP_TO | ResponsePOUseShipTo | — |
+| VENDOR_SITE_ID | ResponsePOVendorSiteId | — |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — PON_BID_PO_NUMBERS](https://docs.oracle.com/en/cloud/saas/procurement/25a/oedmf/ponbidponumbers.html)

@@ -102,3 +102,61 @@ WHERE  vl.PERSON_ID = :p_person_id
 
 - [Oracle Docs — HWM_ALLOCATIONS_HDR_VL](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/hwmallocationshdrvl.html)
 - [[hcm-module-data-dictionary]] — Dossie do modulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[ruleinputpvo|RuleInputPVO]] (GL · BICC: 2/4)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ALLOCATION_ID | AllocationsHdrVLPEOAllocationId | — |
+| ALLOCATION_NAME | AllocationsHdrVLPEOAllocationName | ✅ |
+| EFFECTIVE_END_DATE | AllocationsHdrVLPEOEffectiveEndDate | — |
+| EFFECTIVE_START_DATE | AllocationsHdrVLPEOEffectiveStartDate | ✅ |
+
+### [[ruleoutputpvo|RuleOutputPVO]] (GL · BICC: 2/4)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ALLOCATION_ID | AllocationsHdrVLPEOAllocationId | — |
+| ALLOCATION_NAME | AllocationsHdrVLPEOAllocationName | ✅ |
+| EFFECTIVE_END_DATE | AllocationsHdrVLPEOEffectiveEndDate | — |
+| EFFECTIVE_START_DATE | AllocationsHdrVLPEOEffectiveStartDate | ✅ |
+
+### [[rulepvo|RulePVO]] (GL · BICC: 2/4)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ALLOCATION_ID | AllocationsHdrVLPEOAllocationId | — |
+| ALLOCATION_NAME | AllocationsHdrVLPEOAllocationName | ✅ |
+| EFFECTIVE_END_DATE | AllocationsHdrVLPEOEffectiveEndDate | — |
+| EFFECTIVE_START_DATE | AllocationsHdrVLPEOEffectiveStartDate | ✅ |
+
+### [[ruletemplateinputpvo|RuleTemplateInputPVO]] (GL · BICC: 2/4)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ALLOCATION_ID | AllocationsHdrVLPEOAllocationId | — |
+| ALLOCATION_NAME | AllocationsHdrVLPEOAllocationName | ✅ |
+| EFFECTIVE_END_DATE | AllocationsHdrVLPEOEffectiveEndDate | — |
+| EFFECTIVE_START_DATE | AllocationsHdrVLPEOEffectiveStartDate | ✅ |
+
+### [[ruletemplatepvo|RuleTemplatePVO]] (GL · BICC: 3/4)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ALLOCATION_ID | AllocationsHdrVLPEOAllocationId | ✅ |
+| ALLOCATION_NAME | AllocationsHdrVLPEOAllocationName | ✅ |
+| EFFECTIVE_END_DATE | AllocationsHdrVLPEOEffectiveEndDate | — |
+| EFFECTIVE_START_DATE | AllocationsHdrVLPEOEffectiveStartDate | ✅ |
+
+### [[ruletemplateusagepvo|RuleTemplateUsagePVO]] (GL · BICC: 2/4)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ALLOCATION_ID | AllocationsHdrVLPEOAllocationId | — |
+| ALLOCATION_NAME | AllocationsHdrVLPEOAllocationName | ✅ |
+| EFFECTIVE_END_DATE | AllocationsHdrVLPEOEffectiveEndDate | — |
+| EFFECTIVE_START_DATE | AllocationsHdrVLPEOEffectiveStartDate | ✅ |

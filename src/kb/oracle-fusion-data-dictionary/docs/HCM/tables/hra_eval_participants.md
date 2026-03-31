@@ -114,6 +114,212 @@ WHERE  r.PERSON_ID = :p_person_id;
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[evaluationparticipantratingpvo|EvaluationParticipantRatingPVO]] (HCM · BICC: 2/20)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ADDED_BY_PERSON_ID | EvalParticipantPEOAddedByPersonId | — |
+| ADDED_BY_ROLE | EvalParticipantPEOAddedByRole | — |
+| EVAL_PARTICIPANT_ID | EvalParticipantId | ✅ |
+| EVAL_ROLE_ID | EvalParticipantPEOEvalRoleId | — |
+| FDBACK_COMPLETION_DATE | EvalParticipantPEOFdbackCompletionDate | — |
+| FDBACK_SENT_BACK_FLAG | EvalParticipantPEOFdbackSentBackFlag | — |
+| FDBACK_STARTED_FLAG | EvalParticipantPEOFdbackStartedFlag | — |
+| LAST_UPDATE_DATE | EvalRatingPEOLastUpdateDate | ✅ |
+| LOCKED_OUT_DATE | EvalParticipantPEOLockedOutDate | — |
+| LOCKED_OUT_FLAG | EvalParticipantPEOLockedOutFlag | — |
+| NOTIFIED_BY_PERSON_ID | EvalParticipantPEONotifiedByPersonId | — |
+| NOTIFIED_BY_ROLE | EvalParticipantPEONotifiedByRole | — |
+| NOTIFIED_FLAG | EvalParticipantPEONotifiedFlag | — |
+| PARTICIPATION_STATUS_CODE | EvalParticipantPEOParticipationStatus | — |
+| PCPN_COMMENT_TEXT_FOR_WRK | EvalParticipantPEOPcpnCommentTextForWrk | — |
+| PCPN_COMMENTS_FOR_WRK | EvalParticipantPEOPcpnCommentsForWrk | — |
+| PERSON_ID | EvalParticipantPEOPersonId | — |
+| QUESTIONNAIRE_ID | EvalParticipantPEOQuestionnaireId | — |
+| ROLE_TYPE_CODE | EvalParticipantPEORoleTypeCode | — |
+| STATUS_UPDATE_DATE | EvalParticipantPEOStatusUpdateDate | — |
+
+### [[evaluationparticipantrolepvo|EvaluationParticipantRolePVO]] (HCM · BICC: 23/31)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_CODE | ActionCode | — |
+| ACTION_PERFORMED_BY | ActionPerformedBy | — |
+| ACTION_PERFORMED_DATE | ActionPerformedDate | — |
+| ACTION_REASON | ActionReason | — |
+| ADDED_BY_PERSON_ID | EvalParticipantPEOAddedByPersonId | ✅ |
+| ADDED_BY_ROLE | EvalParticipantPEOAddedByRole | ✅ |
+| CREATED_BY | CreatedBy | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| DUE_DATE | EvalParticipantPEODueDate | ✅ |
+| EVAL_PARTICIPANT_ID | EvalParticipantId | ✅ |
+| EVAL_ROLE_ID | EvalParticipantPEOEvalRoleId | ✅ |
+| EVALUATION_ID | EvalParticipantPEOEvaluationId | — |
+| FDBACK_COMPLETION_DATE | EvalParticipantPEOFdbackCompletionDate | ✅ |
+| FDBACK_SENT_BACK_FLAG | EvalParticipantPEOFdbackSentBackFlag | ✅ |
+| FDBACK_STARTED_FLAG | EvalParticipantPEOFdbackStartedFlag | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | LastUpdatedBy | ✅ |
+| LOCKED_OUT_DATE | EvalParticipantPEOLockedOutDate | ✅ |
+| LOCKED_OUT_FLAG | EvalParticipantPEOLockedOutFlag | ✅ |
+| NOTIFIED_BY_PERSON_ID | EvalParticipantPEONotifiedByPersonId | ✅ |
+| NOTIFIED_BY_ROLE | EvalParticipantPEONotifiedByRole | ✅ |
+| NOTIFIED_FLAG | EvalParticipantPEONotifiedFlag | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | — |
+| PARTICIPATION_STATUS_CODE | EvalParticipantPEOParticipationStatus | ✅ |
+| PCPN_COMMENT_TEXT_FOR_WRK | EvalParticipantPEOPcpnCommentTextForWrk | ✅ |
+| PCPN_COMMENTS_FOR_WRK | EvalParticipantPEOPcpnCommentsForWrk | ✅ |
+| PERSON_ID | EvalParticipantPEOPersonId | ✅ |
+| QUESTIONNAIRE_ID | EvalParticipantPEOQuestionnaireId | — |
+| ROLE_TYPE_CODE | EvalParticipantPEORoleTypeCode | — |
+| STATUS_UPDATE_DATE | EvalParticipantPEOStatusUpdateDate | ✅ |
+
+### [[managerperformanceoverallratingpvo|ManagerPerformanceOverallRatingPVO]] (HCM)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | EvalParticipantPEOBusinessGroupId | — |
+| EVAL_PARTICIPANT_ID | EvalParticipantPEOEvalParticipantId | — |
+| EVAL_ROLE_ID | EvalParticipantPEOEvalRoleId | — |
+| EVALUATION_ID | EvalParticipantPEOEvaluationId | — |
+| PARTICIPATION_STATUS_CODE | EvalParticipantPEOParticipationStatusCode | — |
+| PERSON_ID | EvalParticipantPEOPersonId | — |
+| ROLE_TYPE_CODE | EvalParticipantPEORoleTypeCode | — |
+
+### [[performancedocratingdistributionpvo|PerformanceDocRatingDistributionPVO]] (HCM)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| EVAL_PARTICIPANT_ID | EvalParticipantPEOEvalParticipantId | — |
+| ROLE_TYPE_CODE | EvalParticipantPEORoleTypeCode | — |
+
+### [[performancefinalfeedbackpvoformanager|PerformanceFinalFeedbackPVOForManager]] (HCM · BICC: 2/28)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ADDED_BY_PERSON_ID | EvalParticipantPEOAddedByPersonId | — |
+| ADDED_BY_ROLE | EvalParticipantPEOAddedByRole | — |
+| BUSINESS_GROUP_ID | EvalParticipantPEOBusinessGroupId | — |
+| CREATED_BY | EvalParticipantPEOCreatedBy | — |
+| CREATION_DATE | EvalParticipantPEOCreationDate | — |
+| DUE_DATE | EvalParticipantPEODueDate | — |
+| EVAL_PARTICIPANT_ID | EvalParticipantId | ✅ |
+| EVAL_ROLE_ID | EvalParticipantPEOEvalRoleId | — |
+| EVALUATION_ID | EvaluationId | — |
+| FDBACK_COMPLETION_DATE | EvalParticipantPEOFdbackCompletionDate | — |
+| FDBACK_SENT_BACK_FLAG | EvalParticipantPEOFdbackSentBackFlag | — |
+| FDBACK_STARTED_FLAG | EvalParticipantPEOFdbackStartedFlag | — |
+| LAST_UPDATE_DATE | EvalParticipantPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | EvalParticipantPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | EvalParticipantPEOLastUpdatedBy | — |
+| LOCKED_OUT_DATE | EvalParticipantPEOLockedOutDate | — |
+| LOCKED_OUT_FLAG | EvalParticipantPEOLockedOutFlag | — |
+| NOTIFIED_BY_PERSON_ID | EvalParticipantPEONotifiedByPersonId | — |
+| NOTIFIED_BY_ROLE | EvalParticipantPEONotifiedByRole | — |
+| NOTIFIED_FLAG | EvalParticipantPEONotifiedFlag | — |
+| OBJECT_VERSION_NUMBER | EvalParticipantPEOObjectVersionNumber | — |
+| PARTICIPATION_STATUS_CODE | EvalParticipantPEOParticipationStatusCode | — |
+| PCPN_COMMENT_TEXT_FOR_WRK | EvalParticipantPEOPcpnCommentTextForWrk | — |
+| PCPN_COMMENTS_FOR_WRK | EvalParticipantPEOPcpnCommentsForWrk | — |
+| PERSON_ID | EvalParticipantPEOPersonId | — |
+| QUESTIONNAIRE_ID | EvalParticipantPEOQuestionnaireId | — |
+| ROLE_TYPE_CODE | EvalParticipantPEORoleTypeCode | — |
+| STATUS_UPDATE_DATE | EvalParticipantPEOStatusUpdateDate | — |
+
+### [[performancefinalfeedbackpvoforworker|PerformanceFinalFeedbackPVOForWorker]] (HCM · BICC: 2/28)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ADDED_BY_PERSON_ID | EvalParticipantPEOAddedByPersonId | — |
+| ADDED_BY_ROLE | EvalParticipantPEOAddedByRole | — |
+| BUSINESS_GROUP_ID | EvalParticipantPEOBusinessGroupId | — |
+| CREATED_BY | EvalParticipantPEOCreatedBy | — |
+| CREATION_DATE | EvalParticipantPEOCreationDate | — |
+| DUE_DATE | EvalParticipantPEODueDate | — |
+| EVAL_PARTICIPANT_ID | EvalParticipantId | ✅ |
+| EVAL_ROLE_ID | EvalParticipantPEOEvalRoleId | — |
+| EVALUATION_ID | EvaluationId | — |
+| FDBACK_COMPLETION_DATE | EvalParticipantPEOFdbackCompletionDate | — |
+| FDBACK_SENT_BACK_FLAG | EvalParticipantPEOFdbackSentBackFlag | — |
+| FDBACK_STARTED_FLAG | EvalParticipantPEOFdbackStartedFlag | — |
+| LAST_UPDATE_DATE | EvalParticipantPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | EvalParticipantPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | EvalParticipantPEOLastUpdatedBy | — |
+| LOCKED_OUT_DATE | EvalParticipantPEOLockedOutDate | — |
+| LOCKED_OUT_FLAG | EvalParticipantPEOLockedOutFlag | — |
+| NOTIFIED_BY_PERSON_ID | EvalParticipantPEONotifiedByPersonId | — |
+| NOTIFIED_BY_ROLE | EvalParticipantPEONotifiedByRole | — |
+| NOTIFIED_FLAG | EvalParticipantPEONotifiedFlag | — |
+| OBJECT_VERSION_NUMBER | EvalParticipantPEOObjectVersionNumber | — |
+| PARTICIPATION_STATUS_CODE | EvalParticipantPEOParticipationStatusCode | — |
+| PCPN_COMMENT_TEXT_FOR_WRK | EvalParticipantPEOPcpnCommentTextForWrk | — |
+| PCPN_COMMENTS_FOR_WRK | EvalParticipantPEOPcpnCommentsForWrk | — |
+| PERSON_ID | EvalParticipantPEOPersonId | — |
+| QUESTIONNAIRE_ID | EvalParticipantPEOQuestionnaireId | — |
+| ROLE_TYPE_CODE | EvalParticipantPEORoleTypeCode | — |
+| STATUS_UPDATE_DATE | EvalParticipantPEOStatusUpdateDate | — |
+
+### [[performanceitemratingpvo|PerformanceItemRatingPVO]] (HCM · BICC: 2/9)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | EvalParticipantPEOBusinessGroupId | — |
+| EVAL_PARTICIPANT_ID | EvalParticipantPEOEvalParticipantId | — |
+| EVAL_ROLE_ID | EvalParticipantPEOEvalRoleId | — |
+| EVALUATION_ID | EvalParticipantPEOEvaluationId | — |
+| LAST_UPDATE_DATE | EvalParticipantPEOLastUpdateDate | ✅ |
+| PARTICIPATION_STATUS_CODE | EvalParticipantPEOParticipationStatusCode | — |
+| PERSON_ID | EvalParticipantPEOPersonId | — |
+| QUESTIONNAIRE_ID | EvalParticipantPEOQuestionnaireId | — |
+| ROLE_TYPE_CODE | EvalParticipantPEORoleTypeCode | ✅ |
+
+### [[performanceoverallratingpvo|PerformanceOverallRatingPVO]] (HCM · BICC: 2/9)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | EvalParticipantPEOBusinessGroupId | — |
+| EVAL_PARTICIPANT_ID | EvalParticipantPEOEvalParticipantId | — |
+| EVAL_ROLE_ID | EvalParticipantPEOEvalRoleId | — |
+| EVALUATION_ID | EvalParticipantPEOEvaluationId | — |
+| LAST_UPDATE_DATE | EvalParticipantPEOLastUpdateDate | ✅ |
+| PARTICIPATION_STATUS_CODE | EvalParticipantPEOParticipationStatusCode | — |
+| PERSON_ID | EvalParticipantPEOPersonId | — |
+| QUESTIONNAIRE_ID | EvalParticipantPEOQuestionnaireId | — |
+| ROLE_TYPE_CODE | EvalParticipantPEORoleTypeCode | ✅ |
+
+### [[performancesectionratingpvo|PerformanceSectionRatingPVO]] (HCM · BICC: 2/9)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | EvalParticipantPEOBusinessGroupId | — |
+| EVAL_PARTICIPANT_ID | EvalParticipantPEOEvalParticipantId | — |
+| EVAL_ROLE_ID | EvalParticipantPEOEvalRoleId | — |
+| EVALUATION_ID | EvalParticipantPEOEvaluationId | — |
+| LAST_UPDATE_DATE | EvalParticipantPEOLastUpdateDate | ✅ |
+| PARTICIPATION_STATUS_CODE | EvalParticipantPEOParticipationStatusCode | — |
+| PERSON_ID | EvalParticipantPEOPersonId | — |
+| QUESTIONNAIRE_ID | EvalParticipantEOQuestionnaireId | — |
+| ROLE_TYPE_CODE | EvalParticipantPEORoleTypeCode | ✅ |
+
+### [[proficiencyitemratingpvo|ProficiencyItemRatingPVO]] (HCM · BICC: 2/9)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | EvalParticipantPEOBusinessGroupId | — |
+| EVAL_PARTICIPANT_ID | EvalParticipantPEOEvalParticipantId | — |
+| EVAL_ROLE_ID | EvalParticipantPEOEvalRoleId | — |
+| EVALUATION_ID | EvalParticipantPEOEvaluationId | — |
+| LAST_UPDATE_DATE | EvalParticipantPEOLastUpdateDate | ✅ |
+| PARTICIPATION_STATUS_CODE | EvalParticipantPEOParticipationStatusCode | — |
+| PERSON_ID | EvalParticipantPEOPersonId | — |
+| QUESTIONNAIRE_ID | EvalParticipantPEOQuestionnaireId | — |
+| ROLE_TYPE_CODE | EvalParticipantPEORoleTypeCode | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — HRA_EVAL_PARTICIPANTS](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/hraevalparticipants.html)

@@ -136,3 +136,51 @@ WHERE  das.ENABLED_FLAG = 'Y';
 
 - [Oracle Docs — GL_ACCESS_SETS](https://docs.oracle.com/en/cloud/saas/financials/25a/oedmf/glaccesssets-25066.html)
 - [[gl-module-data-dictionary]] — Dossiê do módulo GL
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[bsvdataaccesssetassignmentpvo|BsvDataAccessSetAssignmentPVO]] (GL · BICC: 1/17)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACCESS_SET_ID | DataAccessSetAccessSetId | — |
+| ACCOUNTED_PERIOD_TYPE | DataAccessSetAccountedPeriodType | — |
+| AUTOMATICALLY_CREATED_FLAG | DataAccessSetAutomaticallyCreatedFlag | — |
+| CHART_OF_ACCOUNTS_ID | DataAccessSetChartOfAccountsId | — |
+| CREATED_BY | DataAccessSetCreatedBy | — |
+| CREATION_DATE | DataAccessSetCreationDate | — |
+| DEFAULT_LEDGER_ID | DataAccessSetDefaultLedgerId | — |
+| DESCRIPTION | DataAccessSetDescription | — |
+| ENABLED_FLAG | DataAccessSetEnabledFlag | — |
+| LAST_UPDATE_DATE | DataAccessSetLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | DataAccessSetLastUpdateLogin | — |
+| LAST_UPDATED_BY | DataAccessSetLastUpdatedBy | — |
+| NAME | DataAccessSetName | — |
+| OBJECT_VERSION_NUMBER | DataAccessSetObjectVersionNumber | — |
+| PERIOD_SET_NAME | DataAccessSetPeriodSetName | — |
+| SECURED_SEG_VALUE_SET_ID | DataAccessSetSecuredSegValueSetId | — |
+| SECURITY_SEGMENT_CODE | DataAccessSetSecuritySegmentCode | — |
+
+### [[dataaccesssetledgerpvo|DataAccessSetLedgerPVO]] (GL · BICC: 1/17)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACCESS_SET_ID | DataAccessSetAccessSetId | — |
+| ACCOUNTED_PERIOD_TYPE | DataAccessSetAccountedPeriodType | — |
+| AUTOMATICALLY_CREATED_FLAG | DataAccessSetAutomaticallyCreatedFlag | — |
+| CHART_OF_ACCOUNTS_ID | DataAccessSetChartOfAccountsId | — |
+| CREATED_BY | DataAccessSetCreatedBy | — |
+| CREATION_DATE | DataAccessSetCreationDate | — |
+| DEFAULT_LEDGER_ID | DataAccessSetDefaultLedgerId | — |
+| DESCRIPTION | DataAccessSetDescription | — |
+| ENABLED_FLAG | DataAccessSetEnabledFlag | — |
+| LAST_UPDATE_DATE | DataAccessSetLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | DataAccessSetLastUpdateLogin | — |
+| LAST_UPDATED_BY | DataAccessSetLastUpdatedBy | — |
+| NAME | DataAccessSetName | — |
+| OBJECT_VERSION_NUMBER | DataAccessSetObjectVersionNumber | — |
+| PERIOD_SET_NAME | DataAccessSetPeriodSetName | — |
+| SECURED_SEG_VALUE_SET_ID | DataAccessSetSecuredSegValueSetId | — |
+| SECURITY_SEGMENT_CODE | DataAccessSetSecuritySegmentCode | — |

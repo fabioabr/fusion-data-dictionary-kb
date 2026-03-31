@@ -60,3 +60,22 @@ updated_at: 2026-03-26
 ## 📎 Uso Típico
 
 (a ser preenchido na etapa 03)
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[fndcalyear|FndCalYear]] (GL · BICC: 4/10)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CAL_YEAR | CalYear | ✅ |
+| CAL_YEAR_END_DATE | CalYearEndDate | ✅ |
+| CAL_YEAR_NAME | CalYearName | — |
+| CAL_YEAR_START_DATE | CalYearStartDate | ✅ |
+| CREATED_BY | CreatedBy | — |
+| CREATION_DATE | CreationDate | — |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | — |
+| LAST_UPDATED_BY | LastUpdatedBy | — |
+| PRIOR_YEAR | PriorYear | — |

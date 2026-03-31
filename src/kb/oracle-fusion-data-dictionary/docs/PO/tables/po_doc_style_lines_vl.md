@@ -41,7 +41,6 @@ View que combina `PO_DOC_STYLE_LINES_B` e `PO_DOC_STYLE_LINES_TL` para **configu
 > [!note] Sufixo _VL
 > O sufixo `_VL` combina a tabela base `_B` com traducoes `_TL` em uma view multilingue.
 
-
 ---
 
 ## 🧠 Propósito de Negócio
@@ -90,13 +89,166 @@ FROM   PO_DOC_STYLE_LINES_VL
 WHERE  STYLE_ID = :p_style_id;
 ```
 
-
 ---
 
 ## 🔒 Observações
 
 - View de conveniencia; preferir sobre joins _B/_TL.
 - Retorna traducao do idioma da sessao.
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[agreementlinepvo|AgreementLinePVO]] (PO · BICC: 2/20)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | FromBlanketHeaderStyleLineCreatedBy | — |
+| CREATED_BY | FromContractHeaderStyleLineCreatedBy | — |
+| CREATION_DATE | FromBlanketHeaderStyleLineCreationDate | — |
+| CREATION_DATE | FromContractHeaderStyleLineCreationDate | — |
+| DISPLAY_NAME | FromBlanketHeaderStyleLineDisplayName | — |
+| DISPLAY_NAME | FromContractHeaderStyleLineDisplayName | — |
+| DOCUMENT_SUBTYPE | FromBlanketHeaderStyleLineDocumentSubtype | — |
+| DOCUMENT_SUBTYPE | FromContractHeaderStyleLineDocumentSubtype | — |
+| ENABLED_FLAG | FromBlanketHeaderStyleLineEnabledFlag | — |
+| ENABLED_FLAG | FromContractHeaderStyleLineEnabledFlag | — |
+| LAST_UPDATE_DATE | FromBlanketHeaderStyleLineLastUpdateDate | ✅ |
+| LAST_UPDATE_DATE | FromContractHeaderStyleLineLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | FromBlanketHeaderStyleLineLastUpdateLogin | — |
+| LAST_UPDATE_LOGIN | FromContractHeaderStyleLineLastUpdateLogin | — |
+| LAST_UPDATED_BY | FromBlanketHeaderStyleLineLastUpdatedBy | — |
+| LAST_UPDATED_BY | FromContractHeaderStyleLineLastUpdatedBy | — |
+| STYLE_ID | FromBlanketHeaderStyleLineStyleId | — |
+| STYLE_ID | FromContractHeaderStyleLineStyleId | — |
+| STYLE_SUBTYPE | FromBlanketHeaderStyleLineStyleSubtype | — |
+| STYLE_SUBTYPE | FromContractHeaderStyleLineStyleSubtype | — |
+
+### [[agreementpricebreakpvo|AgreementPriceBreakPVO]] (PO · BICC: 2/20)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | FromBlanketHeaderStyleLineCreatedBy | — |
+| CREATED_BY | FromContractHeaderStyleLineCreatedBy | — |
+| CREATION_DATE | FromBlanketHeaderStyleLineCreationDate | — |
+| CREATION_DATE | FromContractHeaderStyleLineCreationDate | — |
+| DISPLAY_NAME | FromBlanketHeaderStyleLineDisplayName | — |
+| DISPLAY_NAME | FromContractHeaderStyleLineDisplayName | — |
+| DOCUMENT_SUBTYPE | FromBlanketHeaderStyleLineDocumentSubtype | — |
+| DOCUMENT_SUBTYPE | FromContractHeaderStyleLineDocumentSubtype | — |
+| ENABLED_FLAG | FromBlanketHeaderStyleLineEnabledFlag | — |
+| ENABLED_FLAG | FromContractHeaderStyleLineEnabledFlag | — |
+| LAST_UPDATE_DATE | FromBlanketHeaderStyleLineLastUpdateDate | ✅ |
+| LAST_UPDATE_DATE | FromContractHeaderStyleLineLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | FromBlanketHeaderStyleLineLastUpdateLogin | — |
+| LAST_UPDATE_LOGIN | FromContractHeaderStyleLineLastUpdateLogin | — |
+| LAST_UPDATED_BY | FromBlanketHeaderStyleLineLastUpdatedBy | — |
+| LAST_UPDATED_BY | FromContractHeaderStyleLineLastUpdatedBy | — |
+| STYLE_ID | FromBlanketHeaderStyleLineStyleId | — |
+| STYLE_ID | FromContractHeaderStyleLineStyleId | — |
+| STYLE_SUBTYPE | FromBlanketHeaderStyleLineStyleSubtype | — |
+| STYLE_SUBTYPE | FromContractHeaderStyleLineStyleSubtype | — |
+
+### [[purchasingdocumentlinepvo|PurchasingDocumentLinePVO]] (PO · BICC: 2/20)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | FromBlanketHeaderStyleLineCreatedBy | — |
+| CREATED_BY | FromContractHeaderStyleLineCreatedBy | — |
+| CREATION_DATE | FromBlanketHeaderStyleLineCreationDate | — |
+| CREATION_DATE | FromContractHeaderStyleLineCreationDate | — |
+| DISPLAY_NAME | FromBlanketHeaderStyleLineDisplayName | — |
+| DISPLAY_NAME | FromContractHeaderStyleLineDisplayName | — |
+| DOCUMENT_SUBTYPE | FromBlanketHeaderStyleLineDocumentSubtype | — |
+| DOCUMENT_SUBTYPE | FromContractHeaderStyleLineDocumentSubtype | — |
+| ENABLED_FLAG | FromBlanketHeaderStyleLineEnabledFlag | — |
+| ENABLED_FLAG | FromContractHeaderStyleLineEnabledFlag | — |
+| LAST_UPDATE_DATE | FromBlanketHeaderStyleLineLastUpdateDate | ✅ |
+| LAST_UPDATE_DATE | FromContractHeaderStyleLineLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | FromBlanketHeaderStyleLineLastUpdateLogin | — |
+| LAST_UPDATE_LOGIN | FromContractHeaderStyleLineLastUpdateLogin | — |
+| LAST_UPDATED_BY | FromBlanketHeaderStyleLineLastUpdatedBy | — |
+| LAST_UPDATED_BY | FromContractHeaderStyleLineLastUpdatedBy | — |
+| STYLE_ID | FromBlanketHeaderStyleLineStyleId | — |
+| STYLE_ID | FromContractHeaderStyleLineStyleId | — |
+| STYLE_SUBTYPE | FromBlanketHeaderStyleLineStyleSubtype | — |
+| STYLE_SUBTYPE | FromContractHeaderStyleLineStyleSubtype | — |
+
+### [[standarddistributionpvo|StandardDistributionPVO]] (PO)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | FromBlanketHeaderStyleLineCreatedBy | — |
+| CREATED_BY | FromContractHeaderStyleLineCreatedBy | — |
+| CREATION_DATE | FromBlanketHeaderStyleLineCreationDate | — |
+| CREATION_DATE | FromContractHeaderStyleLineCreationDate | — |
+| DISPLAY_NAME | FromBlanketHeaderStyleLineDisplayName | — |
+| DISPLAY_NAME | FromContractHeaderStyleLineDisplayName | — |
+| DOCUMENT_SUBTYPE | FromBlanketHeaderStyleLineDocumentSubtype | — |
+| DOCUMENT_SUBTYPE | FromContractHeaderStyleLineDocumentSubtype | — |
+| ENABLED_FLAG | FromBlanketHeaderStyleLineEnabledFlag | — |
+| ENABLED_FLAG | FromContractHeaderStyleLineEnabledFlag | — |
+| LAST_UPDATE_DATE | FromBlanketHeaderStyleLineLastUpdateDate | — |
+| LAST_UPDATE_DATE | FromContractHeaderStyleLineLastUpdateDate | — |
+| LAST_UPDATE_LOGIN | FromBlanketHeaderStyleLineLastUpdateLogin | — |
+| LAST_UPDATE_LOGIN | FromContractHeaderStyleLineLastUpdateLogin | — |
+| LAST_UPDATED_BY | FromBlanketHeaderStyleLineLastUpdatedBy | — |
+| LAST_UPDATED_BY | FromContractHeaderStyleLineLastUpdatedBy | — |
+| STYLE_ID | FromBlanketHeaderStyleLineStyleId | — |
+| STYLE_ID | FromContractHeaderStyleLineStyleId | — |
+| STYLE_SUBTYPE | FromBlanketHeaderStyleLineStyleSubtype | — |
+| STYLE_SUBTYPE | FromContractHeaderStyleLineStyleSubtype | — |
+
+### [[standardlinepvo|StandardLinePVO]] (PO · BICC: 4/20)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | FromBlanketHeaderStyleLineCreatedBy | — |
+| CREATED_BY | FromContractHeaderStyleLineCreatedBy | — |
+| CREATION_DATE | FromBlanketHeaderStyleLineCreationDate | — |
+| CREATION_DATE | FromContractHeaderStyleLineCreationDate | — |
+| DISPLAY_NAME | FromBlanketHeaderStyleLineDisplayName | ✅ |
+| DISPLAY_NAME | FromContractHeaderStyleLineDisplayName | ✅ |
+| DOCUMENT_SUBTYPE | FromBlanketHeaderStyleLineDocumentSubtype | — |
+| DOCUMENT_SUBTYPE | FromContractHeaderStyleLineDocumentSubtype | — |
+| ENABLED_FLAG | FromBlanketHeaderStyleLineEnabledFlag | — |
+| ENABLED_FLAG | FromContractHeaderStyleLineEnabledFlag | — |
+| LAST_UPDATE_DATE | FromBlanketHeaderStyleLineLastUpdateDate | ✅ |
+| LAST_UPDATE_DATE | FromContractHeaderStyleLineLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | FromBlanketHeaderStyleLineLastUpdateLogin | — |
+| LAST_UPDATE_LOGIN | FromContractHeaderStyleLineLastUpdateLogin | — |
+| LAST_UPDATED_BY | FromBlanketHeaderStyleLineLastUpdatedBy | — |
+| LAST_UPDATED_BY | FromContractHeaderStyleLineLastUpdatedBy | — |
+| STYLE_ID | FromBlanketHeaderStyleLineStyleId | — |
+| STYLE_ID | FromContractHeaderStyleLineStyleId | — |
+| STYLE_SUBTYPE | FromBlanketHeaderStyleLineStyleSubtype | — |
+| STYLE_SUBTYPE | FromContractHeaderStyleLineStyleSubtype | — |
+
+### [[standardshipmentpvo|StandardShipmentPVO]] (PO · BICC: 2/20)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | FromBlanketHeaderStyleLineCreatedBy | — |
+| CREATED_BY | FromContractHeaderStyleLineCreatedBy | — |
+| CREATION_DATE | FromBlanketHeaderStyleLineCreationDate | — |
+| CREATION_DATE | FromContractHeaderStyleLineCreationDate | — |
+| DISPLAY_NAME | FromBlanketHeaderStyleLineDisplayName | ✅ |
+| DISPLAY_NAME | FromContractHeaderStyleLineDisplayName | ✅ |
+| DOCUMENT_SUBTYPE | FromBlanketHeaderStyleLineDocumentSubtype | — |
+| DOCUMENT_SUBTYPE | FromContractHeaderStyleLineDocumentSubtype | — |
+| ENABLED_FLAG | FromBlanketHeaderStyleLineEnabledFlag | — |
+| ENABLED_FLAG | FromContractHeaderStyleLineEnabledFlag | — |
+| LAST_UPDATE_DATE | FromBlanketHeaderStyleLineLastUpdateDate | — |
+| LAST_UPDATE_DATE | FromContractHeaderStyleLineLastUpdateDate | — |
+| LAST_UPDATE_LOGIN | FromBlanketHeaderStyleLineLastUpdateLogin | — |
+| LAST_UPDATE_LOGIN | FromContractHeaderStyleLineLastUpdateLogin | — |
+| LAST_UPDATED_BY | FromBlanketHeaderStyleLineLastUpdatedBy | — |
+| LAST_UPDATED_BY | FromContractHeaderStyleLineLastUpdatedBy | — |
+| STYLE_ID | FromBlanketHeaderStyleLineStyleId | — |
+| STYLE_ID | FromContractHeaderStyleLineStyleId | — |
+| STYLE_SUBTYPE | FromBlanketHeaderStyleLineStyleSubtype | — |
+| STYLE_SUBTYPE | FromContractHeaderStyleLineStyleSubtype | — |
 
 ---
 

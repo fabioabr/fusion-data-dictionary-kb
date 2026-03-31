@@ -39,7 +39,6 @@ Tabela base que armazena as referências mestre para campos de atributos de Time
 > [!note] Sufixo _B
 > O sufixo `_B` indica tabela **base** — contém os dados não traduzíveis. A tabela correspondente `_TL` armazena as traduções.
 
-
 ---
 
 ## 🧠 Propósito de Negócio
@@ -103,6 +102,34 @@ WHERE  NVL(t.ENABLED_FLAG, 'Y') = 'Y'
 
 - Tabela base: contém dados não traduzíveis. Utilize a view `_VL` correspondente para consultas com tradução.
 - Área funcional: Time Management dentro do Oracle Fusion Cloud HCM.
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[timeattributefieldmasterreferencepvo|TimeAttributeFieldMasterReferencePVO]] (GL · BICC: 19/19)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | CreatedBy | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| DET_INS_ATTRIBUTE_TYPE | DetailInstanceAttributeType | ✅ |
+| DET_INS_VALUE_LOCATION | DetailInstanceValueLocation | ✅ |
+| END_DATE | EndDate | ✅ |
+| ENTERPRISE_ID | EnterpriseId | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | LastUpdatedBy | ✅ |
+| LEGISLATION_CODE | LegislationCode | ✅ |
+| LEGISLATIVE_DATA_GROUP_ID | LegislativeDataGroupId | ✅ |
+| MASTER_INSTANCE_IDENTIFIER | MasterInstanceIdentifier | ✅ |
+| MODULE_ID | ModuleId | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | ✅ |
+| START_DATE | StartDate | ✅ |
+| TM_ATRB_FLD_ESS_PROCESS_ID | TimeAttributeFieldEssProcessId | ✅ |
+| TM_ATRB_FLD_ID | TimeAttributeFieldId | ✅ |
+| TM_ATRB_FLD_MSTR_REF_CODE | TimeAttributeFieldMasterReferenceCode | ✅ |
+| TM_ATRB_FLD_MSTR_REF_ID | TimeAttributeFieldMasterReferenceId | ✅ |
 
 ---
 

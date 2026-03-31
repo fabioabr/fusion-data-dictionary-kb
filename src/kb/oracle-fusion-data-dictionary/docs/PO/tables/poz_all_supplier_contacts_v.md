@@ -124,6 +124,104 @@ WHERE  vc.VENDOR_SITE_ID = :p_vendor_site_id
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[allsuppliercontactspvo|AllSupplierContactsPVO]] (PO · BICC: 79/89)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ATTRIBUTE1 | AllSupplierContactsAttribute1 | ✅ |
+| ATTRIBUTE10 | AllSupplierContactsAttribute10 | ✅ |
+| ATTRIBUTE11 | AllSupplierContactsAttribute11 | ✅ |
+| ATTRIBUTE12 | AllSupplierContactsAttribute12 | ✅ |
+| ATTRIBUTE13 | AllSupplierContactsAttribute13 | ✅ |
+| ATTRIBUTE14 | AllSupplierContactsAttribute14 | ✅ |
+| ATTRIBUTE15 | AllSupplierContactsAttribute15 | ✅ |
+| ATTRIBUTE16 | AllSupplierContactsAttribute16 | ✅ |
+| ATTRIBUTE17 | AllSupplierContactsAttribute17 | ✅ |
+| ATTRIBUTE18 | AllSupplierContactsAttribute18 | ✅ |
+| ATTRIBUTE19 | AllSupplierContactsAttribute19 | ✅ |
+| ATTRIBUTE2 | AllSupplierContactsAttribute2 | ✅ |
+| ATTRIBUTE20 | AllSupplierContactsAttribute20 | ✅ |
+| ATTRIBUTE21 | AllSupplierContactsAttribute21 | ✅ |
+| ATTRIBUTE22 | AllSupplierContactsAttribute22 | ✅ |
+| ATTRIBUTE23 | AllSupplierContactsAttribute23 | ✅ |
+| ATTRIBUTE24 | AllSupplierContactsAttribute24 | ✅ |
+| ATTRIBUTE25 | AllSupplierContactsAttribute25 | ✅ |
+| ATTRIBUTE26 | AllSupplierContactsAttribute26 | ✅ |
+| ATTRIBUTE27 | AllSupplierContactsAttribute27 | ✅ |
+| ATTRIBUTE28 | AllSupplierContactsAttribute28 | ✅ |
+| ATTRIBUTE29 | AllSupplierContactsAttribute29 | ✅ |
+| ATTRIBUTE3 | AllSupplierContactsAttribute3 | ✅ |
+| ATTRIBUTE30 | AllSupplierContactsAttribute30 | ✅ |
+| ATTRIBUTE4 | AllSupplierContactsAttribute4 | ✅ |
+| ATTRIBUTE5 | AllSupplierContactsAttribute5 | ✅ |
+| ATTRIBUTE6 | AllSupplierContactsAttribute6 | ✅ |
+| ATTRIBUTE7 | AllSupplierContactsAttribute7 | ✅ |
+| ATTRIBUTE8 | AllSupplierContactsAttribute8 | ✅ |
+| ATTRIBUTE9 | AllSupplierContactsAttribute9 | ✅ |
+| ATTRIBUTE_CATEGORY | AllSupplierContactsAttributeCategory | ✅ |
+| ATTRIBUTE_DATE1 | AllSupplierContactsAttributeDate1 | ✅ |
+| ATTRIBUTE_DATE10 | AllSupplierContactsAttributeDate10 | ✅ |
+| ATTRIBUTE_DATE11 | AllSupplierContactsAttributeDate11 | ✅ |
+| ATTRIBUTE_DATE12 | AllSupplierContactsAttributeDate12 | ✅ |
+| ATTRIBUTE_DATE2 | AllSupplierContactsAttributeDate2 | ✅ |
+| ATTRIBUTE_DATE3 | AllSupplierContactsAttributeDate3 | ✅ |
+| ATTRIBUTE_DATE4 | AllSupplierContactsAttributeDate4 | ✅ |
+| ATTRIBUTE_DATE5 | AllSupplierContactsAttributeDate5 | ✅ |
+| ATTRIBUTE_DATE6 | AllSupplierContactsAttributeDate6 | ✅ |
+| ATTRIBUTE_DATE7 | AllSupplierContactsAttributeDate7 | ✅ |
+| ATTRIBUTE_DATE8 | AllSupplierContactsAttributeDate8 | ✅ |
+| ATTRIBUTE_DATE9 | AllSupplierContactsAttributeDate9 | ✅ |
+| ATTRIBUTE_NUMBER1 | AllSupplierContactsAttributeNumber1 | ✅ |
+| ATTRIBUTE_NUMBER10 | AllSupplierContactsAttributeNumber10 | ✅ |
+| ATTRIBUTE_NUMBER11 | AllSupplierContactsAttributeNumber11 | ✅ |
+| ATTRIBUTE_NUMBER12 | AllSupplierContactsAttributeNumber12 | ✅ |
+| ATTRIBUTE_NUMBER2 | AllSupplierContactsAttributeNumber2 | ✅ |
+| ATTRIBUTE_NUMBER3 | AllSupplierContactsAttributeNumber3 | ✅ |
+| ATTRIBUTE_NUMBER4 | AllSupplierContactsAttributeNumber4 | ✅ |
+| ATTRIBUTE_NUMBER5 | AllSupplierContactsAttributeNumber5 | ✅ |
+| ATTRIBUTE_NUMBER6 | AllSupplierContactsAttributeNumber6 | ✅ |
+| ATTRIBUTE_NUMBER7 | AllSupplierContactsAttributeNumber7 | ✅ |
+| ATTRIBUTE_NUMBER8 | AllSupplierContactsAttributeNumber8 | ✅ |
+| ATTRIBUTE_NUMBER9 | AllSupplierContactsAttributeNumber9 | ✅ |
+| CREATED_BY | AllSupplierContactsCreatedBy | ✅ |
+| CREATION_DATE | AllSupplierContactsCreationDate | ✅ |
+| EMAIL_ADDRESS | AllSupplierContactsEmailAddress | ✅ |
+| EMAIL_CONTACT_POINT_ID | AllSupplierContactsEmailContactPointId | — |
+| FAX_AREA_CODE | AllSupplierContactsFaxAreaCode | ✅ |
+| FAX_CONTACT_POINT_ID | AllSupplierContactsFaxContactPointId | — |
+| FAX_COUNTRY_CODE | AllSupplierContactsFaxCountryCode | ✅ |
+| FAX_NUMBER | AllSupplierContactsFaxNumber | ✅ |
+| INACTIVE_DATE | AllSupplierContactsInactiveDate | ✅ |
+| LAST_UPDATE_DATE | AllSupplierContactsLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | AllSupplierContactsLastUpdateLogin | — |
+| LAST_UPDATED_BY | AllSupplierContactsLastUpdatedBy | ✅ |
+| MOBILE_AREA_CODE | AllSupplierContactsMobileAreaCode | ✅ |
+| MOBILE_CONTACT_POINT_ID | AllSupplierContactsMobileContactPointId | — |
+| MOBILE_COUNTRY_CODE | AllSupplierContactsMobileCountryCode | ✅ |
+| MOBILE_NUMBER | AllSupplierContactsMobileNumber | ✅ |
+| NAME | AllSupplierContactsName | — |
+| OBJECT_VERSION_NUMBER | AllSupplierContactsObjectVersionNumber | — |
+| PER_PARTY_ID | PerPartyId | ✅ |
+| PERSON_FIRST_NAME | AllSupplierContactsPersonFirstName | ✅ |
+| PERSON_LAST_NAME | AllSupplierContactsPersonLastName | ✅ |
+| PERSON_MIDDLE_NAME | AllSupplierContactsPersonMiddleName | ✅ |
+| PERSON_TITLE | AllSupplierContactsPersonTitle | — |
+| PHONE_AREA_CODE | AllSupplierContactsPhoneAreaCode | ✅ |
+| PHONE_CONTACT_POINT_ID | AllSupplierContactsPhoneContactPointId | — |
+| PHONE_COUNTRY_CODE | AllSupplierContactsPhoneCountryCode | ✅ |
+| PHONE_EXTENSION | AllSupplierContactsPhoneExtension | ✅ |
+| PHONE_NUMBER | AllSupplierContactsPhoneNumber | ✅ |
+| RELATIONSHIP_ID | AllSupplierContactsRelationshipId | — |
+| SALUTATION | AllSupplierContactsSalutation | ✅ |
+| STATUS | AllSupplierContactsStatus | ✅ |
+| SUBJECT_ID | AllSupplierContactsSubjectId | — |
+| SUP_PARTY_ID | SupPartyId | ✅ |
+| SUPPLIER_NAME | AllSupplierContactsSupplierName | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — POZ Views](https://docs.oracle.com/en/cloud/saas/procurement/25a/oedmf/poztables.html)

@@ -38,7 +38,6 @@ updated_at: 2026-03-25
 
 View que apresenta a **hierarquia de programas de benefícios** (Programa > Plano Tipo > Plano > Opção), facilitando a navegação da estrutura de benefícios.
 
-
 ---
 
 ## 🧠 Propósito de Negócio
@@ -98,6 +97,25 @@ WHERE  ROWNUM <= 100;
 
 - Consultar documentação oficial Oracle para detalhes de uso.
 - Tabela do módulo Benefits (Hierarquia de Programas (View)).
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[programhierarchypvo|ProgramHierarchyPVO]] (HCM · BICC: 10/10)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| EFFECTIVE_END_DATE | EffectiveEndDate | ✅ |
+| EFFECTIVE_START_DATE | EffectiveStartDate | ✅ |
+| OIPLEFFECTIVE_END_DATE | OipleffectiveEndDate | ✅ |
+| OIPLEFFECTIVE_START_DATE | OipleffectiveStartDate | ✅ |
+| OPT_ID | OptId | ✅ |
+| PGM_ID | PgmId | ✅ |
+| PL_ID | PlId | ✅ |
+| PL_TYP_ID | PlTypId | ✅ |
+| PLIPEFFECTIVE_END_DATE | PlipeffectiveEndDate | ✅ |
+| PLIPEFFECTIVE_START_DATE | PlipeffectiveStartDate | ✅ |
 
 ---
 

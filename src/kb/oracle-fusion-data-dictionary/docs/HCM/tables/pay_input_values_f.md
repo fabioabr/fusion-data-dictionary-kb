@@ -101,6 +101,115 @@ WHERE  iv.ELEMENT_TYPE_ID = :p_element_type_id
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[accrualcalculationruleinputvaluepvo|AccrualCalculationRuleInputValuePVO]] (GL · BICC: 2/30)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BASE_NAME | InputValueDPEOBaseName | — |
+| CONTEXT_ID | InputValueDPEOContextId | — |
+| CREATED_BY | InputValueDPEOCreatedBy | — |
+| CREATION_DATE | InputValueDPEOCreationDate | — |
+| DEFAULT_VALUE | InputValueDPEODefaultValue | — |
+| DISPLAY_SEQUENCE | InputValueDPEODisplaySequence | — |
+| EFFECTIVE_END_DATE | InputValueDPEOEffectiveEndDate | — |
+| EFFECTIVE_START_DATE | InputValueDPEOEffectiveStartDate | ✅ |
+| ELEMENT_TYPE_ID | InputValueDPEOElementTypeId | — |
+| FORCE_RRV_MODE | InputValueDPEOForceRrvMode | — |
+| FORMULA_ID | InputValueDPEOFormulaId | — |
+| GENERATE_DB_ITEMS_FLAG | InputValueDPEOGenerateDbItemsFlag | — |
+| HOT_DEFAULT_FLAG | InputValueDPEOHotDefaultFlag | — |
+| INPUT_VALUE_ID | InputValueDPEOInputValueId | — |
+| LAST_UPDATE_DATE | InputValueDPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | InputValueDPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | InputValueDPEOLastUpdatedBy | — |
+| LOOKUP_TYPE | InputValueDPEOLookupType | — |
+| MANDATORY_FLAG | InputValueDPEOMandatoryFlag | — |
+| MAX_VALUE | InputValueDPEOMaxValue | — |
+| MIN_VALUE | InputValueDPEOMinValue | — |
+| OBJECT_VERSION_NUMBER | InputValueDPEOObjectVersionNumber | — |
+| RESERVED_INPUT_VALUE | InputValueDPEOReservedInputValue | — |
+| RETRO_STATIC_FLAG | InputValueDPEORetroStaticFlag | — |
+| UOM | InputValueDPEOUom | — |
+| USER_DISPLAY_FLAG | InputValueDPEOUserDisplayFlag | — |
+| USER_ENTERABLE_FLAG | InputValueDPEOUserEnterableFlag | — |
+| VALIDATION_OVERRIDE_MESSAGE | InputValueDPEOValidationOverrideMessage | — |
+| VO_NAME | InputValueDPEOVoName | — |
+| WARNING_OR_ERROR | InputValueDPEOWarningOrError | — |
+
+### [[inputvalue|InputValue]] (HCM · BICC: 19/30)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BASE_NAME | InputValueDPEOBaseName | ✅ |
+| CONTEXT_ID | InputValueDPEOContextId | — |
+| CREATED_BY | InputValueDPEOCreatedBy | ✅ |
+| CREATION_DATE | InputValueDPEOCreationDate | ✅ |
+| DEFAULT_VALUE | InputValueDPEODefaultValue | ✅ |
+| DISPLAY_SEQUENCE | InputValueDPEODisplaySequence | ✅ |
+| EFFECTIVE_END_DATE | EffectiveEndDate | ✅ |
+| EFFECTIVE_START_DATE | EffectiveStartDate | ✅ |
+| ELEMENT_TYPE_ID | InputValueDPEOElementTypeId | ✅ |
+| FORCE_RRV_MODE | InputValueDPEOForceRrvMode | — |
+| FORMULA_ID | InputValueDPEOFormulaId | — |
+| GENERATE_DB_ITEMS_FLAG | InputValueDPEOGenerateDbItemsFlag | — |
+| HOT_DEFAULT_FLAG | InputValueDPEOHotDefaultFlag | ✅ |
+| INPUT_VALUE_ID | InputValueId | ✅ |
+| LAST_UPDATE_DATE | InputValueDPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | InputValueDPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | InputValueDPEOLastUpdatedBy | ✅ |
+| LOOKUP_TYPE | InputValueDPEOLookupType | — |
+| MANDATORY_FLAG | InputValueDPEOMandatoryFlag | ✅ |
+| MAX_VALUE | InputValueDPEOMaxValue | ✅ |
+| MIN_VALUE | InputValueDPEOMinValue | ✅ |
+| OBJECT_VERSION_NUMBER | InputValueDPEOObjectVersionNumber | — |
+| RESERVED_INPUT_VALUE | InputValueDPEOReservedInputValue | ✅ |
+| RETRO_STATIC_FLAG | InputValueDPEORetroStaticFlag | — |
+| UOM | InputValueDPEOUom | ✅ |
+| USER_DISPLAY_FLAG | InputValueDPEOUserDisplayFlag | ✅ |
+| USER_ENTERABLE_FLAG | InputValueDPEOUserEnterableFlag | — |
+| VALIDATION_OVERRIDE_MESSAGE | InputValueDPEOValidationOverrideMessage | — |
+| VO_NAME | InputValueDPEOVoName | ✅ |
+| WARNING_OR_ERROR | InputValueDPEOWarningOrError | — |
+
+### [[inputvaluepvo|InputValuePVO]] (HCM · BICC: 18/30)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BASE_NAME | InputValuePEOBaseName | — |
+| CONTEXT_ID | InputValuePEOContextId | — |
+| CREATED_BY | InputValuePEOCreatedBy | ✅ |
+| CREATION_DATE | InputValuePEOCreationDate | ✅ |
+| DEFAULT_VALUE | InputValuePEODefaultValue | ✅ |
+| DISPLAY_SEQUENCE | InputValuePEODisplaySequence | ✅ |
+| EFFECTIVE_END_DATE | InputValuePEOEffectiveEndDate | ✅ |
+| EFFECTIVE_START_DATE | InputValuePEOEffectiveStartDate | ✅ |
+| ELEMENT_TYPE_ID | InputValuePEOElementTypeId | ✅ |
+| FORCE_RRV_MODE | InputValuePEOForceRrvMode | — |
+| FORMULA_ID | InputValuePEOFormulaId | — |
+| GENERATE_DB_ITEMS_FLAG | InputValuePEOGenerateDbItemsFlag | — |
+| HOT_DEFAULT_FLAG | InputValuePEOHotDefaultFlag | ✅ |
+| INPUT_VALUE_ID | InputValueId | ✅ |
+| LAST_UPDATE_DATE | InputValuePEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | InputValuePEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | InputValuePEOLastUpdatedBy | — |
+| LOOKUP_TYPE | InputValuePEOLookupType | — |
+| MANDATORY_FLAG | InputValuePEOMandatoryFlag | ✅ |
+| MAX_VALUE | InputValuePEOMaxValue | ✅ |
+| MIN_VALUE | InputValuePEOMinValue | ✅ |
+| OBJECT_VERSION_NUMBER | InputValuePEOObjectVersionNumber | — |
+| RESERVED_INPUT_VALUE | InputValuePEOReservedInputValue | ✅ |
+| RETRO_STATIC_FLAG | InputValuePEORetroStaticFlag | — |
+| UOM | InputValuePEOUom | ✅ |
+| USER_DISPLAY_FLAG | InputValuePEOUserDisplayFlag | ✅ |
+| USER_ENTERABLE_FLAG | InputValuePEOUserEnterableFlag | — |
+| VALIDATION_OVERRIDE_MESSAGE | InputValuePEOValidationOverrideMessage | — |
+| VO_NAME | InputValuePEOVoName | ✅ |
+| WARNING_OR_ERROR | InputValuePEOWarningOrError | — |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — PAY_INPUT_VALUES_F](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/payinputvaluesf.html)

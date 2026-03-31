@@ -38,7 +38,6 @@ Tabela de traduções das categorias de cartão de ponto, armazenando nomes e de
 > [!note] Sufixo _TL
 > O sufixo `_TL` indica tabela de **traduções** — armazena textos traduzidos por idioma. Chave composta: PK da tabela `_B` + `LANGUAGE`.
 
-
 ---
 
 ## 🧠 Propósito de Negócio
@@ -103,6 +102,37 @@ WHERE  t.LANGUAGE = USERENV('LANG')
 - Tabela de traduções: não utilizar diretamente em relatórios; preferir a view `_VL` correspondente.
 - Chave composta: PK do registro base + LANGUAGE.
 - Área funcional: Time Card dentro do Oracle Fusion Cloud HCM.
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[timecategoryexprresultp|TimeCategoryExprResultP]] (GL · BICC: 2/4)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| DESCRIPTION | TimeCategoryTLPEODescription | ✅ |
+| LANGUAGE | TimeCategoryTLPEOLanguage | — |
+| TCAT_ID | TcatId | — |
+| TCAT_NAME | TimeCategoryTLPEOTcatName | ✅ |
+
+### [[timecategoryp|TimeCategoryP]] (GL · BICC: 5/13)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | TimeCategoryTLPEOCreatedBy | ✅ |
+| CREATION_DATE | TimeCategoryTLPEOCreationDate | ✅ |
+| DESCRIPTION | TimeCategoryTLPEODescription | ✅ |
+| ENTERPRISE_ID | TimeCategoryTLPEOEnterpriseId | — |
+| LANGUAGE | TimeCategoryTLPEOLanguage | — |
+| LAST_UPDATE_DATE | TimeCategoryTLPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | TimeCategoryTLPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | TimeCategoryTLPEOLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | TimeCategoryTLPEOObjectVersionNumber | — |
+| SEED_DATA_SOURCE | TimeCategoryTLPEOSeedDataSource | — |
+| SOURCE_LANG | TimeCategoryTLPEOSourceLang | — |
+| TCAT_ID | TimeCategoryTLPEOTcatId | — |
+| TCAT_NAME | TimeCategoryTLPEOTcatName | ✅ |
 
 ---
 

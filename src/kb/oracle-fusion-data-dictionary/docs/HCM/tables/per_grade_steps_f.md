@@ -109,6 +109,28 @@ ORDER BY pgs.SEQUENCE;
 - O `STEP_VALUE` pode representar salário mensal, anual ou por hora, dependendo da configuração.
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[gradesteppvo|GradeStepPVO]] (GL · BICC: 6/13)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_OCCURRENCE_ID | GradeStepPEOActionOccurrenceId | — |
+| CREATED_BY | GradeStepPEOCreatedBy | ✅ |
+| CREATION_DATE | GradeStepPEOCreationDate | — |
+| EFFECTIVE_END_DATE | EffectiveEndDate | ✅ |
+| EFFECTIVE_START_DATE | EffectiveStartDate | ✅ |
+| GRADE_ID | GradeStepPEOGradeId | — |
+| GRADE_STEP_ID | GradeStepId | ✅ |
+| LAST_UPDATE_DATE | GradeStepPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | GradeStepPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | GradeStepPEOLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | GradeStepPEOObjectVersionNumber | — |
+| PAY_SCALE_POINT_ID | GradeStepPEOPayScalePointId | — |
+| SEQUENCE | GradeStepPEOSequence | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — PER_GRADE_STEPS_F](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/pergradestepsf.html)

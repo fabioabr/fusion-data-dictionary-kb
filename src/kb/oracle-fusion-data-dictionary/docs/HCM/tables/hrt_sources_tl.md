@@ -104,3 +104,169 @@ WHERE  tl.SOURCE_ID = :p_id
 
 - [Oracle Docs — HRT_SOURCES_TL](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/hrtsourcestl.html)
 - [[hcm-module-data-dictionary]] — Dossie do modulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[advancementreadinesspvo|AdvancementReadinessPVO]] (HCM · BICC: 2/5)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | STLBusinessGroupId | — |
+| LANGUAGE | STLLanguage | — |
+| LAST_UPDATE_DATE | SourcesTranslationPEOLastUpdateDate | ✅ |
+| SOURCE_DESCRIPTION | STLSourceDescription | ✅ |
+| SOURCE_ID | STLSourceId1 | — |
+
+### [[advancementreadinesspvo_viewall|AdvancementReadinessPVO_Viewall]] (HCM · BICC: 2/5)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | STLBusinessGroupId | — |
+| LANGUAGE | STLLanguage | — |
+| LAST_UPDATE_DATE | SourcesTranslationPEOLastUpdateDate | ✅ |
+| SOURCE_DESCRIPTION | STLSourceDescription | ✅ |
+| SOURCE_ID | STLSourceId1 | — |
+
+### [[certificationpvo|CertificationPVO]] (HCM · BICC: 1/4)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | BusinessGroupId2 | — |
+| LANGUAGE | Language1 | — |
+| SOURCE_DESCRIPTION | SourceDescription | ✅ |
+| SOURCE_ID | SourceId2 | — |
+
+### [[competencypvo|CompetencyPVO]] (HCM · BICC: 1/4)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | BusinessGroupId7 | — |
+| LANGUAGE | Language2 | — |
+| SOURCE_DESCRIPTION | SourceDescription | ✅ |
+| SOURCE_ID | SourceId2 | — |
+
+### [[contentsourcerelpvo|ContentSourceRelPVO]] (HCM · BICC: 1/6)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | SourcesTranslationPEOBusinessGroupId | — |
+| LANGUAGE | SourcesTranslationPEOLanguage | — |
+| LAST_UPDATE_DATE | SourcesTranslationPEOLastUpdateDate | ✅ |
+| SOURCE_DESCRIPTION | SourcesTranslationPEOSourceDescription | — |
+| SOURCE_ID | SourcesTransalationPEOSourceId | — |
+| SOURCE_LANG | SourceLang | — |
+
+### [[criticalityprofileitempvo|CriticalityProfileItemPVO]] (HCM · BICC: 1/4)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | BusinessGroupId1 | — |
+| LANGUAGE | Language1 | — |
+| SOURCE_DESCRIPTION | STLSourceDescription | ✅ |
+| SOURCE_ID | SourceId1 | — |
+
+### [[degreepvo|DegreePVO]] (HCM · BICC: 1/5)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | BusinessGroupId2 | — |
+| LANGUAGE | Language2 | — |
+| LAST_UPDATE_DATE | SourcesTranslationPEOLastUpdateDate | ✅ |
+| SOURCE_DESCRIPTION | SourceDescription | — |
+| SOURCE_ID | SourceId1 | — |
+
+### [[honorpvo|HonorPVO]] (HCM · BICC: 1/4)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | BusinessGroupId2 | — |
+| LANGUAGE | Language2 | — |
+| SOURCE_DESCRIPTION | SourceDescription | ✅ |
+| SOURCE_ID | SourceId2 | — |
+
+### [[languagepvo|LanguagePVO]] (HCM · BICC: 1/4)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | BusinessGroupId4 | — |
+| LANGUAGE | Language1 | — |
+| SOURCE_DESCRIPTION | SourceDescription | ✅ |
+| SOURCE_ID | SourceId2 | — |
+
+### [[membershippvo|MembershipPVO]] (HCM · BICC: 1/4)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | BusinessGroupId3 | — |
+| LANGUAGE | Language2 | — |
+| SOURCE_DESCRIPTION | SourceDescription | ✅ |
+| SOURCE_ID | SourceId2 | — |
+
+### [[personprofileperformanceratingpvo|PersonProfilePerformanceRatingPVO]] (HCM · BICC: 2/5)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | STLBusinessGroupId1 | — |
+| LANGUAGE | STLLanguage2 | — |
+| LAST_UPDATE_DATE | SourcesTranslationPEOLastUpdateDate | ✅ |
+| SOURCE_DESCRIPTION | STLSourceDescription | ✅ |
+| SOURCE_ID | STLSourceId1 | — |
+
+### [[planreadinesspvo|PlanReadinessPVO]] (HCM)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | STLBusinessGroupId | — |
+| LANGUAGE | STLLanguage | — |
+| LAST_UPDATE_DATE | SourcesTranslationPEOLastUpdateDate | — |
+| SOURCE_DESCRIPTION | STLSourceDescription | — |
+| SOURCE_ID | STLSourceId1 | — |
+
+### [[sourcesallpvo|SourcesAllPVO]] (HCM · BICC: 3/6)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | SourcesTranslationPEOBusinessGroupId | — |
+| LANGUAGE | Language | ✅ |
+| LAST_UPDATE_DATE | SourcesTranslationPEOLastUpdateDate | ✅ |
+| SOURCE_DESCRIPTION | SourceDescription | ✅ |
+| SOURCE_ID | SourcesTranslationPEOSourceId | — |
+| SOURCE_LANG | SourceLang | — |
+
+### [[sourcesalltranslationpvo|SourcesAllTranslationPVO]] (HCM · BICC: 11/11)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | BusinessGroupId | ✅ |
+| CREATED_BY | CreatedBy | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| LANGUAGE | Language | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | LastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | ✅ |
+| SOURCE_DESCRIPTION | SourceDescription | ✅ |
+| SOURCE_ID | SourceId | ✅ |
+| SOURCE_LANG | SourceLang | ✅ |
+
+### [[workrequirementdatecheckpvo|WorkRequirementDateCheckPVO]] (HCM)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | BusinessGroupId2 | — |
+| LANGUAGE | Language1 | — |
+| LAST_UPDATE_DATE | SourcesTranslationPEOLastUpdateDate | — |
+| SOURCE_DESCRIPTION | SourceDescription | — |
+| SOURCE_ID | SourceId2 | — |
+
+### [[workrequirementpvo|WorkRequirementPVO]] (HCM · BICC: 1/5)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | BusinessGroupId2 | — |
+| LANGUAGE | Language1 | — |
+| LAST_UPDATE_DATE | SourcesTranslationPEOLastUpdateDate | ✅ |
+| SOURCE_DESCRIPTION | SourceDescription | — |
+| SOURCE_ID | SourceId2 | — |

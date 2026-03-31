@@ -70,3 +70,32 @@ updated_at: 2026-03-26
 ## 📎 Uso Típico
 
 (a ser preenchido na etapa 03)
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[hzgeostructurelevelpvo|HZGeoStructureLevelPVO]] (HCM · BICC: 3/20)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ADDR_VAL_LEVEL | HZGeoStructureLevelPEOAddrValLevel | — |
+| COUNTRY_CODE | HZGeoStructureLevelPEOCountryCode | — |
+| CREATED_BY | HZGeoStructureLevelPEOCreatedBy | — |
+| CREATED_BY_MODULE | HZGeoStructureLevelPEOCreatedByModule | — |
+| CREATION_DATE | HZGeoStructureLevelPEOCreationDate | — |
+| GEO_STRUCTURE_LEVEL_ID | GeoStructureLevelId | ✅ |
+| GEOGRAPHY_ELEMENT_COLUMN | HZGeoStructureLevelPEOGeographyElementColumn | — |
+| GEOGRAPHY_ID | HZGeoStructureLevelPEOGeographyId | — |
+| GEOGRAPHY_TYPE | HZGeoStructureLevelPEOGeographyType | ✅ |
+| GROUPING_FLAG | HZGeoStructureLevelPEOGroupingFlag | — |
+| JOB_DEFINITION_NAME | HZGeoStructureLevelPEOJobDefinitionName | — |
+| JOB_DEFINITION_PACKAGE | HZGeoStructureLevelPEOJobDefinitionPackage | — |
+| LAST_UPDATE_DATE | HZGeoStructureLevelPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | HZGeoStructureLevelPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | HZGeoStructureLevelPEOLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | HZGeoStructureLevelPEOObjectVersionNumber | — |
+| PARENT_GEOGRAPHY_TYPE | ParentGeographyType | — |
+| RELATIONSHIP_TYPE_ID | HZGeoStructureLevelPEORelationshipTypeId | — |
+| REQUEST_ID | HZGeoStructureLevelPEORequestId | — |
+| SEED_DATA_SOURCE | HZGeoStructureLevelPEOSeedDataSource | — |

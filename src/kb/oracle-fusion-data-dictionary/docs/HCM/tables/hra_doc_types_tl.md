@@ -114,6 +114,22 @@ WHERE  tl.LANGUAGE = USERENV('LANG');
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[documenttypepvo|DocumentTypePVO]] (HCM · BICC: 5/7)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | DocumentTypeTranslationPEOBusinessGroupId | — |
+| DESCRIPTION | DocumentTypeTranslationPEODescription | ✅ |
+| DOC_TYPE_ID | DocumentTypeTranslationPEODocTypeId | — |
+| LANGUAGE | Language | ✅ |
+| LAST_UPDATE_DATE | DocumentTypeTranslationPEOLastUpdateDate | ✅ |
+| NAME | DocumentTypeTranslationPEOName | ✅ |
+| SOURCE_LANG | SourceLang | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — HRA_DOC_TYPES_TL](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/hradoctypestl.html)

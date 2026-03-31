@@ -41,7 +41,6 @@ Armazena as **classes de risco** (Hazard Classes) para materiais perigosos, em c
 > [!note] Sufixo _B
 > O sufixo `_B` indica a **tabela base** (idioma base). Traducoes ficam na tabela correspondente `_TL`.
 
-
 ---
 
 ## 🧠 Propósito de Negócio
@@ -93,13 +92,44 @@ FROM   PO_HAZARD_CLASSES_B
 WHERE  INACTIVE_DATE IS NULL OR INACTIVE_DATE > SYSDATE;
 ```
 
-
 ---
 
 ## 🔒 Observações
 
 - Classes seguem padrao internacional (UN GHS).
 - Tabela de referencia; poucas linhas.
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[purchasinghazardclassextractpvo|PurchasingHazardClassExtractPVO]] (PO · BICC: 9/9)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | PurchasingHazardClsCreatedBy | ✅ |
+| CREATION_DATE | PurchasingHazardClsCreationDate | ✅ |
+| HAZARD_CLASS_CODE | PurchasingHazardClsHazardClassCode | ✅ |
+| HAZARD_CLASS_ID | HazardClassId | ✅ |
+| INACTIVE_DATE | PurchasingHazardClsInactiveDate | ✅ |
+| LAST_UPDATE_DATE | PurchasingHazardClsLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | PurchasingHazardClsLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | PurchasingHazardClsLastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | PurchasingHazardClsObjectVersionNumber | ✅ |
+
+### [[purchasinghazardclasspvo|PurchasingHazardClassPVO]] (PO · BICC: 5/9)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | PurchasingHazardClsCreatedBy | ✅ |
+| CREATION_DATE | PurchasingHazardClsCreationDate | ✅ |
+| HAZARD_CLASS_CODE | PurchasingHazardClsHazardClassCode | ✅ |
+| HAZARD_CLASS_ID | HazardClassId | ✅ |
+| INACTIVE_DATE | PurchasingHazardClsInactiveDate | — |
+| LAST_UPDATE_DATE | PurchasingHazardClsLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | PurchasingHazardClsLastUpdateLogin | — |
+| LAST_UPDATED_BY | PurchasingHazardClsLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | PurchasingHazardClsObjectVersionNumber | — |
 
 ---
 

@@ -91,6 +91,142 @@ WHERE  t.STATUS_CODE = 'ACTIVE';
 
 - Tabela base (sufixo `_B`) — traduções em [[hrr_dashboard_tmpls_tl]].
 
+---
+
+## 🔗 PVOs Relacionados
+
+### [[boxlabellookuppvo|BoxLabelLookupPVO]] (HCM · BICC: 1/37)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | DashTmplBPEOBusinessGroupId | — |
+| COLOR_JOBROLE_ASSGN | ColorJobroleAssgn | — |
+| COLOR_LOCATION | ColorLocation | — |
+| COLOR_ORG_HIERARCHY | ColorOrgHierarchy | — |
+| CREATE_GOALS_FLAG | CreateGoalsFlag | — |
+| CREATED_BY | DashTmplBPEOCreatedBy | — |
+| CREATION_DATE | DashTmplBPEOCreationDate | — |
+| DASHBOARD_TMPL_ID | DashTmplBPEODashboardTmplId | — |
+| DISPLAY_AGE | DisplayAge | — |
+| DISPLAY_ETHNICITY | DisplayEthnicity | — |
+| DISPLAY_GENDER | DisplayGender | — |
+| DISPLAY_IMPACT_OF_LOSS | DisplayImpactOfLoss | — |
+| DISPLAY_MOBILITY | DisplayMobility | — |
+| DISPLAY_RELIGIOUS_AFFLTN | DisplayReligiousAffltn | — |
+| DISPLAY_RISK_OF_LOSS | DisplayRiskOfLoss | — |
+| FILTER_COMPETENCY | FilterCompetency | — |
+| FILTER_JOBROLE_ASSGN | FilterJobroleAssgn | — |
+| FILTER_LEVEL | FilterLevel | — |
+| FILTER_LOCATION | FilterLocation | — |
+| FILTER_ORG_HIERARCHY | FilterOrgHierarchy | — |
+| FILTER_PROFICIENCY | FilterProficiency | — |
+| FILTER_SUCCESSION_PLAN | FilterSuccessionPlan | — |
+| FILTER_TALENT_POOL | FilterTalentPool | — |
+| INCLUDE_SUCCESSION_PLANS | IncludeSuccessionPlans | — |
+| INCLUDE_TALENT_POOLS | IncludeTalentPools | — |
+| LAST_UPDATE_DATE | DashTmplBPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | DashTmplBPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | DashTmplBPEOLastUpdatedBy | — |
+| MAX_MARKERS_ALLOWED | MaxMarkersAllowed | — |
+| MODULE_ID | ModuleId | — |
+| OBJECT_VERSION_NUMBER | DashTmplBPEOObjectVersionNumber | — |
+| OWNER_ID | OwnerId | — |
+| SET_ID | SetId | — |
+| TMPL_STATUS_CODE | TmplStatusCode | — |
+| USE_HOLDING_AREA_FLAG | UseHoldingAreaFlag | — |
+| USE_NOTES_FLAG | UseNotesFlag | — |
+| USE_TASKS_FLAG | UseTasksFlag | — |
+
+### [[dashboardtemplatepvo|DashboardTemplatePVO]] (HCM · BICC: 34/37)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | BusinessGroupId | ✅ |
+| COLOR_JOBROLE_ASSGN | ColorJobroleAssgn | — |
+| COLOR_LOCATION | ColorLocation | — |
+| COLOR_ORG_HIERARCHY | ColorOrgHierarchy | — |
+| CREATE_GOALS_FLAG | CreateGoalsFlag | ✅ |
+| CREATED_BY | CreatedBy | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| DASHBOARD_TMPL_ID | DashboardTmplId | ✅ |
+| DISPLAY_AGE | DisplayAge | ✅ |
+| DISPLAY_ETHNICITY | DisplayEthnicity | ✅ |
+| DISPLAY_GENDER | DisplayGender | ✅ |
+| DISPLAY_IMPACT_OF_LOSS | DisplayImpactOfLoss | ✅ |
+| DISPLAY_MOBILITY | DisplayMobility | ✅ |
+| DISPLAY_RELIGIOUS_AFFLTN | DisplayReligiousAffltn | ✅ |
+| DISPLAY_RISK_OF_LOSS | DisplayRiskOfLoss | ✅ |
+| FILTER_COMPETENCY | FilterCompetency | ✅ |
+| FILTER_JOBROLE_ASSGN | FilterJobroleAssgn | ✅ |
+| FILTER_LEVEL | FilterLevel | ✅ |
+| FILTER_LOCATION | FilterLocation | ✅ |
+| FILTER_ORG_HIERARCHY | FilterOrgHierarchy | ✅ |
+| FILTER_PROFICIENCY | FilterProficiency | ✅ |
+| FILTER_SUCCESSION_PLAN | FilterSuccessionPlan | ✅ |
+| FILTER_TALENT_POOL | FilterTalentPool | ✅ |
+| INCLUDE_SUCCESSION_PLANS | IncludeSuccessionPlans | ✅ |
+| INCLUDE_TALENT_POOLS | IncludeTalentPools | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | LastUpdatedBy | ✅ |
+| MAX_MARKERS_ALLOWED | MaxMarkersAllowed | ✅ |
+| MODULE_ID | ModuleId | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | ✅ |
+| OWNER_ID | OwnerId | ✅ |
+| SET_ID | SetId | ✅ |
+| TMPL_STATUS_CODE | TmplStatusCode | ✅ |
+| USE_HOLDING_AREA_FLAG | UseHoldingAreaFlag | ✅ |
+| USE_NOTES_FLAG | UseNotesFlag | ✅ |
+| USE_TASKS_FLAG | UseTasksFlag | ✅ |
+
+### [[nboxlabelpvo|NBoxLabelPVO]] (HCM · BICC: 1/37)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | DashTmplBPEOBusinessGroupId | — |
+| COLOR_JOBROLE_ASSGN | ColorJobroleAssgn | — |
+| COLOR_LOCATION | ColorLocation | — |
+| COLOR_ORG_HIERARCHY | ColorOrgHierarchy | — |
+| CREATE_GOALS_FLAG | CreateGoalsFlag | — |
+| CREATED_BY | DashTmplBPEOCreatedBy | — |
+| CREATION_DATE | DashTmplBPEOCreationDate | — |
+| DASHBOARD_TMPL_ID | DashTmplBPEODashboardTmplId | — |
+| DISPLAY_AGE | DisplayAge | — |
+| DISPLAY_ETHNICITY | DisplayEthnicity | — |
+| DISPLAY_GENDER | DisplayGender | — |
+| DISPLAY_IMPACT_OF_LOSS | DisplayImpactOfLoss | — |
+| DISPLAY_MOBILITY | DisplayMobility | — |
+| DISPLAY_RELIGIOUS_AFFLTN | DisplayReligiousAffltn | — |
+| DISPLAY_RISK_OF_LOSS | DisplayRiskOfLoss | — |
+| FILTER_COMPETENCY | FilterCompetency | — |
+| FILTER_JOBROLE_ASSGN | FilterJobroleAssgn | — |
+| FILTER_LEVEL | FilterLevel | — |
+| FILTER_LOCATION | FilterLocation | — |
+| FILTER_ORG_HIERARCHY | FilterOrgHierarchy | — |
+| FILTER_PROFICIENCY | FilterProficiency | — |
+| FILTER_SUCCESSION_PLAN | FilterSuccessionPlan | — |
+| FILTER_TALENT_POOL | FilterTalentPool | — |
+| INCLUDE_SUCCESSION_PLANS | IncludeSuccessionPlans | — |
+| INCLUDE_TALENT_POOLS | IncludeTalentPools | — |
+| LAST_UPDATE_DATE | DashTmplBPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | DashTmplBPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | DashTmplBPEOLastUpdatedBy | — |
+| MAX_MARKERS_ALLOWED | MaxMarkersAllowed | — |
+| MODULE_ID | ModuleId | — |
+| OBJECT_VERSION_NUMBER | DashTmplBPEOObjectVersionNumber | — |
+| OWNER_ID | OwnerId | — |
+| SET_ID | SetId | — |
+| TMPL_STATUS_CODE | TmplStatusCode | — |
+| USE_HOLDING_AREA_FLAG | UseHoldingAreaFlag | — |
+| USE_NOTES_FLAG | UseNotesFlag | — |
+| USE_TASKS_FLAG | UseTasksFlag | — |
+
+### [[talentscoreboxlabellookuppvo|TalentScoreBoxLabelLookupPVO]] (HCM)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | BusinessGroupId1 | — |
+| DASHBOARD_TMPL_ID | DashboardTmplId | — |
 
 ---
 

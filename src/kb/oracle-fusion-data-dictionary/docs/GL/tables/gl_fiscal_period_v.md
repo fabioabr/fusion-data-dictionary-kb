@@ -134,6 +134,54 @@ WHERE  fp.PERIOD_SET_NAME = :p_calendar_name
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[fiscalperiodwithoutledgerpvo|FiscalPeriodWithoutLedgerPVO]] (GL · BICC: 10/17)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ADJUSTMENT_PERIOD_FLAG | FiscalPeriodAdjustmentPeriodFlag | ✅ |
+| FISCAL_PERIOD_CREATION_DATE | FiscalPeriodFiscalPeriodCreationDate | — |
+| FISCAL_PERIOD_END_DATE | FiscalPeriodFiscalPeriodEndDate | ✅ |
+| FISCAL_PERIOD_LAST_UPDATE_DATE | FiscalPeriodFiscalPeriodLastUpdateDate | — |
+| FISCAL_PERIOD_NAME | FiscalPeriodName | ✅ |
+| FISCAL_PERIOD_NUMBER | FiscalPeriodFiscalPeriodNumber | ✅ |
+| FISCAL_PERIOD_SET_ID | FiscalPeriodSetId | ✅ |
+| FISCAL_PERIOD_SET_NAME | FiscalPeriodSetName | ✅ |
+| FISCAL_PERIOD_START_DATE | FiscalPeriodFiscalPeriodStartDate | ✅ |
+| FISCAL_PERIOD_TYPE | FiscalPeriodType | ✅ |
+| FISCAL_PERIODSET_CREATION_DATE | FiscalPeriodFiscalPeriodSetCreationDate | — |
+| FISCAL_QUARTER_END_DATE | FiscalPeriodFiscalQuarterEndDate | — |
+| FISCAL_QUARTER_NUMBER | FiscalPeriodFiscalQuarterNumber | ✅ |
+| FISCAL_QUARTER_START_DATE | FiscalPeriodFiscalQuarterStartDate | — |
+| FISCAL_YEAR_END_DATE | FiscalPeriodFiscalYearEndDate | — |
+| FISCAL_YEAR_NUMBER | FiscalPeriodFiscalYearNumber | ✅ |
+| FISCAL_YEAR_START_DATE | FiscalPeriodFiscalYearStartDate | — |
+
+### [[glfiscalperiodpvo|GLFiscalPeriodPVO]] (GL · BICC: 16/17)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ADJUSTMENT_PERIOD_FLAG | FiscalPeriodAdjustmentPeriodFlag | ✅ |
+| FISCAL_PERIOD_CREATION_DATE | FiscalPeriodFiscalPeriodCreationDate | — |
+| FISCAL_PERIOD_END_DATE | FiscalPeriodFiscalPeriodEndDate | ✅ |
+| FISCAL_PERIOD_LAST_UPDATE_DATE | FiscalPeriodFiscalPeriodLastUpdateDate | ✅ |
+| FISCAL_PERIOD_NAME | FiscalPeriodName | ✅ |
+| FISCAL_PERIOD_NUMBER | FiscalPeriodFiscalPeriodNumber | ✅ |
+| FISCAL_PERIOD_SET_ID | FiscalPeriodSetId | ✅ |
+| FISCAL_PERIOD_SET_NAME | FiscalPeriodSetName | ✅ |
+| FISCAL_PERIOD_START_DATE | FiscalPeriodFiscalPeriodStartDate | ✅ |
+| FISCAL_PERIOD_TYPE | FiscalPeriodType | ✅ |
+| FISCAL_PERIODSET_CREATION_DATE | FiscalPeriodFiscalPeriodSetCreationDate | ✅ |
+| FISCAL_QUARTER_END_DATE | FiscalPeriodFiscalQuarterEndDate | ✅ |
+| FISCAL_QUARTER_NUMBER | FiscalPeriodFiscalQuarterNumber | ✅ |
+| FISCAL_QUARTER_START_DATE | FiscalPeriodFiscalQuarterStartDate | ✅ |
+| FISCAL_YEAR_END_DATE | FiscalPeriodFiscalYearEndDate | ✅ |
+| FISCAL_YEAR_NUMBER | FiscalPeriodFiscalYearNumber | ✅ |
+| FISCAL_YEAR_START_DATE | FiscalPeriodFiscalYearStartDate | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — GL Fiscal Calendar Views](https://docs.oracle.com/en/cloud/saas/financials/25a/oedmf/glperiodstatuses-25740.html)

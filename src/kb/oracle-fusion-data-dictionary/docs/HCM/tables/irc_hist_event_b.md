@@ -107,3 +107,44 @@ ORDER BY he.EVENT_DATE DESC;
 
 - [Oracle Docs -- IRC_HIST_EVENT_B](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/irchisteventb.html)
 - [[hcm-module-data-dictionary]] -- Dossie do modulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[historyeventtypepvo|HistoryEventTypePVO]] (HCM · BICC: 11/11)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CODE | HistoryEventTypeBPEOCode | ✅ |
+| CREATED_BY | HistoryEventTypeBPEOCreatedBy | ✅ |
+| CREATION_DATE | HistoryEventTypeBPEOCreationDate | ✅ |
+| EVENT_TYPE_ID | EventTypeId | ✅ |
+| IS_BACKWARD | HistoryEventTypeBPEOIsBackward | ✅ |
+| LAST_UPDATE_DATE | HistoryEventTypeBPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | HistoryEventTypeBPEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | HistoryEventTypeBPEOLastUpdatedBy | ✅ |
+| MODULE_ID | HistoryEventTypeBPEOModuleId | ✅ |
+| OBJECT_VERSION_NUMBER | HistoryEventTypeBPEOObjectVersionNumber | ✅ |
+| SHOW_IN_UI | HistoryEventTypeBPEOShowInUi | ✅ |
+
+### [[jobapphisteventpvo|JobAppHistEventPVO]] (HCM · BICC: 1/2)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CODE | HistoryEventTypeBPEOEventTypeCode | ✅ |
+| EVENT_TYPE_ID | HistoryEventTypeBPEOEventTypeId | — |
+
+### [[jobreqhisteventpvo|JobReqHistEventPVO]] (PO · BICC: 2/2)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CODE | HistoryEventTypeBPEOEventTypeCode | ✅ |
+| EVENT_TYPE_ID | HistoryEventTypeBPEOEventTypeId | ✅ |
+
+### [[poolcandhisteventpvo|PoolCandHistEventPVO]] (PO · BICC: 2/2)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CODE | HistoryEventTypeBPEOEventTypeCode | ✅ |
+| EVENT_TYPE_ID | HistoryEventTypeBPEOEventTypeId | ✅ |

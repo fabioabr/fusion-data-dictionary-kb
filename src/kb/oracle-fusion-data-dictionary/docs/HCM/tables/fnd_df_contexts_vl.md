@@ -55,3 +55,27 @@ updated_at: 2026-03-26
 ## 📎 Uso Típico
 
 (a ser preenchido na etapa 03)
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[flex_bi_allpayrollsddf_vi|FLEX_BI_AllPayrollsDDF_VI]] (HCM)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| APPLICATION_ID | KEY_FLEX_CONTEXT_0 | — |
+| CONTEXT_CODE | KEY_FLEX_CONTEXT_2 | — |
+| DESCRIPTION | DESC_FLEX_CONTEXT_ | — |
+| DESCRIPTIVE_FLEXFIELD_CODE | KEY_FLEX_CONTEXT_1 | — |
+| NAME | NAME_FLEX_CONTEXT_ | — |
+
+### [[flex_bi_passportdff_vi|FLEX_BI_PassportDFF_VI]] (GL)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| APPLICATION_ID | KEY_FLEX_CONTEXT_0 | — |
+| CONTEXT_CODE | KEY_FLEX_CONTEXT_2 | — |
+| DESCRIPTION | DESC_FLEX_CONTEXT_ | — |
+| DESCRIPTIVE_FLEXFIELD_CODE | KEY_FLEX_CONTEXT_1 | — |
+| NAME | NAME_FLEX_CONTEXT_ | — |

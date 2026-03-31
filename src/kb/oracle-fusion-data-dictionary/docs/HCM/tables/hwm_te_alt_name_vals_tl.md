@@ -39,7 +39,6 @@ Tabela de traduções dos valores de nomes alternativos de entradas de tempo em 
 > [!note] Sufixo _TL
 > O sufixo `_TL` indica tabela de **traduções** — armazena textos traduzidos por idioma. Chave composta: PK da tabela `_B` + `LANGUAGE`.
 
-
 ---
 
 ## 🧠 Propósito de Negócio
@@ -105,6 +104,18 @@ WHERE  t.LANGUAGE = USERENV('LANG')
 - Tabela de traduções: não utilizar diretamente em relatórios; preferir a view `_VL` correspondente.
 - Chave composta: PK do registro base + LANGUAGE.
 - Área funcional: Time Entry dentro do Oracle Fusion Cloud HCM.
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[templatelayoutcompdisplayvaluepvo|TemplateLayoutCompDisplayValuePVO]] (GL · BICC: 1/3)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ALT_NAME_VALUE | AltNameValsTLPEOAltNameValue | ✅ |
+| LANGUAGE | AltNameValsTLPEOLanguage | — |
+| TE_ALT_NAME_VAL_ID | AltNameValsTLPEOTeAltNameValId | — |
 
 ---
 

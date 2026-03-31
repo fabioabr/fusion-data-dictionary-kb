@@ -85,3 +85,130 @@ updated_at: 2026-03-26
 ## 📎 Uso Típico
 
 (a ser preenchido na etapa 03)
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[supplieraddressbankaccountpvo|SupplierAddressBankAccountPVO]] (PO · BICC: 18/36)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BANK_CHARGE_BEARER | PayeeBankChargeBearer | ✅ |
+| BANK_INSTRUCTION1_CODE | PayeeBankInstruction1Code | ✅ |
+| BANK_INSTRUCTION2_CODE | PayeeBankInstruction2Code | ✅ |
+| BANK_INSTRUCTION_DETAILS | PayeeBankInstructionDetails | ✅ |
+| CREATED_BY | PayeeCreatedBy | — |
+| CREATION_DATE | PayeeCreationDate | — |
+| DEFAULT_PAYMENT_METHOD_CODE | PayeeDefaultPaymentMethodCode | — |
+| DELIVERY_CHANNEL_CODE | PayeeDeliveryChannelCode | ✅ |
+| ECE_TP_LOCATION_CODE | PayeeEceTpLocationCode | — |
+| END_DATE | PayeeEndDate | — |
+| EXCLUSIVE_PAYMENT_FLAG | PayeeExclusivePaymentFlag | ✅ |
+| EXT_PAYEE_ID | ExtPayeeId | ✅ |
+| EXT_PAYEE_ID | SupplierPayeeExtPayeeId | — |
+| INACTIVE_DATE | PayeeInactiveDate | — |
+| LAST_UPDATE_DATE | PayeeLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | PayeeLastUpdateLogin | — |
+| LAST_UPDATED_BY | PayeeLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | PayeeObjectVersionNumber | — |
+| ORG_ID | PayeeOrgId | — |
+| ORG_TYPE | PayeeOrgType | — |
+| PARTY_SITE_ID | PayeePartySiteId | — |
+| PAYEE_PARTY_ID | PayeePayeePartyId | — |
+| PAYMENT_FORMAT_CODE | PayeePaymentFormatCode | — |
+| PAYMENT_FUNCTION | PayeePaymentFunction | — |
+| PAYMENT_REASON_CODE | PayeePaymentReasonCode | ✅ |
+| PAYMENT_REASON_COMMENTS | PayeePaymentReasonComments | ✅ |
+| PAYMENT_TEXT_MESSAGE1 | PayeePaymentTextMessage1 | ✅ |
+| PAYMENT_TEXT_MESSAGE2 | PayeePaymentTextMessage2 | ✅ |
+| PAYMENT_TEXT_MESSAGE3 | PayeePaymentTextMessage3 | ✅ |
+| REMIT_ADVICE_DELIVERY_METHOD | PayeeRemitAdviceDeliveryMethod | ✅ |
+| REMIT_ADVICE_EMAIL | PayeeRemitAdviceEmail | ✅ |
+| REMIT_ADVICE_FAX | PayeeRemitAdviceFax | ✅ |
+| SERVICE_LEVEL_CODE | ServiceLevelCode | ✅ |
+| SETTLEMENT_PRIORITY | PayeeSettlementPriority | ✅ |
+| START_DATE | PayeeStartDate | — |
+| SUPPLIER_SITE_ID | PayeeSupplierSiteId | — |
+
+### [[supplierbankaccountpvo|SupplierBankAccountPVO]] (PO · BICC: 19/36)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BANK_CHARGE_BEARER | PayeeBankChargeBearer | ✅ |
+| BANK_INSTRUCTION1_CODE | PayeeBankInstruction1Code | ✅ |
+| BANK_INSTRUCTION2_CODE | PayeeBankInstruction2Code | ✅ |
+| BANK_INSTRUCTION_DETAILS | PayeeBankInstructionDetails | ✅ |
+| CREATED_BY | PayeeCreatedBy | — |
+| CREATION_DATE | PayeeCreationDate | — |
+| DEFAULT_PAYMENT_METHOD_CODE | PayeeDefaultPaymentMethodCode | — |
+| DELIVERY_CHANNEL_CODE | PayeeDeliveryChannelCode | ✅ |
+| ECE_TP_LOCATION_CODE | PayeeEceTpLocationCode | — |
+| END_DATE | PayeeEndDate | — |
+| EXCLUSIVE_PAYMENT_FLAG | PayeeExclusivePaymentFlag | ✅ |
+| EXT_PAYEE_ID | ExtPayeeId | ✅ |
+| EXT_PAYEE_ID | SupplierPayeeExtPayeeId | — |
+| INACTIVE_DATE | PayeeInactiveDate | — |
+| LAST_UPDATE_DATE | PayeeLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | PayeeLastUpdateLogin | — |
+| LAST_UPDATED_BY | PayeeLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | PayeeObjectVersionNumber | — |
+| ORG_ID | PayeeOrgId | — |
+| ORG_TYPE | PayeeOrgType | — |
+| PARTY_SITE_ID | PayeePartySiteId | — |
+| PAYEE_PARTY_ID | PayeePayeePartyId | — |
+| PAYMENT_FORMAT_CODE | PayeePaymentFormatCode | ✅ |
+| PAYMENT_FUNCTION | PayeePaymentFunction | — |
+| PAYMENT_REASON_CODE | PayeePaymentReasonCode | ✅ |
+| PAYMENT_REASON_COMMENTS | PayeePaymentReasonComments | ✅ |
+| PAYMENT_TEXT_MESSAGE1 | PayeePaymentTextMessage1 | ✅ |
+| PAYMENT_TEXT_MESSAGE2 | PayeePaymentTextMessage2 | ✅ |
+| PAYMENT_TEXT_MESSAGE3 | PayeePaymentTextMessage3 | ✅ |
+| REMIT_ADVICE_DELIVERY_METHOD | PayeeRemitAdviceDeliveryMethod | ✅ |
+| REMIT_ADVICE_EMAIL | PayeeRemitAdviceEmail | ✅ |
+| REMIT_ADVICE_FAX | PayeeRemitAdviceFax | ✅ |
+| SERVICE_LEVEL_CODE | ServiceLevelCode | ✅ |
+| SETTLEMENT_PRIORITY | PayeeSettlementPriority | ✅ |
+| START_DATE | PayeeStartDate | — |
+| SUPPLIER_SITE_ID | PayeeSupplierSiteId | — |
+
+### [[suppliersitebankaccountpvo|SupplierSiteBankAccountPVO]] (PO · BICC: 18/36)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BANK_CHARGE_BEARER | PayeeBankChargeBearer | ✅ |
+| BANK_INSTRUCTION1_CODE | PayeeBankInstruction1Code | ✅ |
+| BANK_INSTRUCTION2_CODE | PayeeBankInstruction2Code | ✅ |
+| BANK_INSTRUCTION_DETAILS | PayeeBankInstructionDetails | ✅ |
+| CREATED_BY | PayeeCreatedBy | — |
+| CREATION_DATE | PayeeCreationDate | — |
+| DEFAULT_PAYMENT_METHOD_CODE | PayeeDefaultPaymentMethodCode | — |
+| DELIVERY_CHANNEL_CODE | PayeeDeliveryChannelCode | ✅ |
+| ECE_TP_LOCATION_CODE | PayeeEceTpLocationCode | — |
+| END_DATE | PayeeEndDate | — |
+| EXCLUSIVE_PAYMENT_FLAG | PayeeExclusivePaymentFlag | ✅ |
+| EXT_PAYEE_ID | ExtPayeeId | ✅ |
+| EXT_PAYEE_ID | SupplierPayeeExtPayeeId | — |
+| INACTIVE_DATE | PayeeInactiveDate | — |
+| LAST_UPDATE_DATE | PayeeLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | PayeeLastUpdateLogin | — |
+| LAST_UPDATED_BY | PayeeLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | PayeeObjectVersionNumber | — |
+| ORG_ID | PayeeOrgId | — |
+| ORG_TYPE | PayeeOrgType | — |
+| PARTY_SITE_ID | PayeePartySiteId | — |
+| PAYEE_PARTY_ID | PayeePayeePartyId | — |
+| PAYMENT_FORMAT_CODE | PayeePaymentFormatCode | — |
+| PAYMENT_FUNCTION | PayeePaymentFunction | — |
+| PAYMENT_REASON_CODE | PayeePaymentReasonCode | ✅ |
+| PAYMENT_REASON_COMMENTS | PayeePaymentReasonComments | ✅ |
+| PAYMENT_TEXT_MESSAGE1 | PayeePaymentTextMessage1 | ✅ |
+| PAYMENT_TEXT_MESSAGE2 | PayeePaymentTextMessage2 | ✅ |
+| PAYMENT_TEXT_MESSAGE3 | PayeePaymentTextMessage3 | ✅ |
+| REMIT_ADVICE_DELIVERY_METHOD | PayeeRemitAdviceDeliveryMethod | ✅ |
+| REMIT_ADVICE_EMAIL | PayeeRemitAdviceEmail | ✅ |
+| REMIT_ADVICE_FAX | PayeeRemitAdviceFax | ✅ |
+| SERVICE_LEVEL_CODE | ServiceLevelCode | ✅ |
+| SETTLEMENT_PRIORITY | PayeeSettlementPriority | ✅ |
+| START_DATE | PayeeStartDate | — |
+| SUPPLIER_SITE_ID | PayeeSupplierSiteId | — |

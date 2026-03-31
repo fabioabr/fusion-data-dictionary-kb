@@ -104,3 +104,35 @@ WHERE  SYSDATE BETWEEN rc.DATE_FROM AND NVL(rc.DATE_TO, SYSDATE);
 
 - [Oracle Docs — HRT_RATING_CATEGORIES_B](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/hrtratingcategoriesb.html)
 - [[hcm-module-data-dictionary]] — Dossie do modulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[personprofileperformanceratingpvo|PersonProfilePerformanceRatingPVO]] (HCM · BICC: 1/6)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | PerfRtgCatBusinessGroupId2 | — |
+| CATEGORY_ID | PerfRtgCatCategoryId | — |
+| LAST_UPDATE_DATE | RatingCategoriesBPEOLastUpdateDate | ✅ |
+| LOWER_BOUNDARY | PerfRtgCatLowerBoundary | — |
+| RATING_MODEL_ID | PerfRtgCatRatingModelId1 | — |
+| UPPER_BOUNDARY | PerfRtgCatUpperBoundary | — |
+
+### [[ratingcategoriesfirstpvo|RatingCategoriesFirstPVO]] (HCM · BICC: 5/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | RatingCategoriesBPEOBusinessGroupId | ✅ |
+| CATEGORY_ID | RatingCategoriesBPEOCategoryId | ✅ |
+| CREATED_BY | CreatedBy | — |
+| CREATION_DATE | CreationDate | — |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | — |
+| LAST_UPDATED_BY | LastUpdatedBy | — |
+| LOWER_BOUNDARY | RatingCategoriesBPEOLowerBoundary | ✅ |
+| MODULE_ID | RatingCategoriesBPEOModuleId | — |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | — |
+| RATING_MODEL_ID | RatingCategoriesBPEORatingModelId | — |
+| UPPER_BOUNDARY | RatingCategoriesBPEOUpperBoundary | ✅ |

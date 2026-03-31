@@ -93,6 +93,193 @@ SELECT dl.CUSTOMER_TRX_ID,
 - Essencial para compliance com IFRS 15 (reconhecimento de receita).
 - Filtrar sempre por `ORG_ID` para garantir contexto correto de business unit.
 
+## 🔗 PVOs Relacionados
+
+### [[linesalescreditpvo|LineSalesCreditPVO]] (AR)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACCTD_AMOUNT_DUE_ORIGINAL | DeferredLineAcctdAmountDueOriginal | — |
+| ACCTD_AMOUNT_PENDING | DeferredLineAcctdAmountPending | — |
+| ACCTD_AMOUNT_RECOGNIZED | DeferredLineAcctdAmountRecognized | — |
+| AMOUNT_DUE_ORIGINAL | DeferredLineAmountDueOriginal | — |
+| AMOUNT_PENDING | DeferredLineAmountPending | — |
+| AMOUNT_RECOGNIZED | DeferredLineAmountRecognized | — |
+| CREATED_BY | DeferredLineCreatedBy | — |
+| CUSTOMER_TRX_ID | DeferredLineCustomerTrxId | — |
+| CUSTOMER_TRX_LINE_ID | DeferredLineCustomerTrxLineId | — |
+| LAST_UPDATE_LOGIN | DeferredLineLastUpdateLogin | — |
+| LAST_UPDATED_BY | DeferredLineLastUpdatedBy | — |
+| LINE_COLLECTIBLE_FLAG | DeferredLineLineCollectibleFlag | — |
+| MANUAL_OVERRIDE_FLAG | DeferredLineManualOverrideFlag | — |
+| OBJECT_VERSION_NUMBER | DeferredLineObjectVersionNumber | — |
+| ORG_ID | DeferredLineOrgId | — |
+| ORIGINAL_COLLECTIBILITY_FLAG | DeferredLineOriginalCollectibilityFlag | — |
+| PARENT_LINE_ID | DeferredLineParentLineId | — |
+| REQUEST_ID | DeferredLineRequestId | — |
+
+### [[transactionhistorydistributionpvo|TransactionHistoryDistributionPVO]] (AR)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACCTD_AMOUNT_DUE_ORIGINAL | DeferredLineAcctdAmountDueOriginal | — |
+| ACCTD_AMOUNT_PENDING | DeferredLineAcctdAmountPending | — |
+| ACCTD_AMOUNT_RECOGNIZED | DeferredLineAcctdAmountRecognized | — |
+| AMOUNT_DUE_ORIGINAL | DeferredLineAmountDueOriginal | — |
+| AMOUNT_PENDING | DeferredLineAmountPending | — |
+| AMOUNT_RECOGNIZED | DeferredLineAmountRecognized | — |
+| CREATED_BY | DeferredLineCreatedBy | — |
+| CUSTOMER_TRX_ID | DeferredLineCustomerTrxId | — |
+| CUSTOMER_TRX_LINE_ID | DeferredLineCustomerTrxLineId | — |
+| LAST_UPDATE_LOGIN | DeferredLineLastUpdateLogin | — |
+| LAST_UPDATED_BY | DeferredLineLastUpdatedBy | — |
+| LINE_COLLECTIBLE_FLAG | DeferredLineLineCollectibleFlag | — |
+| MANUAL_OVERRIDE_FLAG | DeferredLineManualOverrideFlag | — |
+| OBJECT_VERSION_NUMBER | DeferredLineObjectVersionNumber | — |
+| ORG_ID | DeferredLineOrgId | — |
+| ORIGINAL_COLLECTIBILITY_FLAG | DeferredLineOriginalCollectibilityFlag | — |
+| PARENT_LINE_ID | DeferredLineParentLineId | — |
+| REQUEST_ID | DeferredLineRequestId | — |
+
+### [[transactionhistorypvo|TransactionHistoryPVO]] (AR)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACCTD_AMOUNT_DUE_ORIGINAL | DeferredLineAcctdAmountDueOriginal | — |
+| ACCTD_AMOUNT_PENDING | DeferredLineAcctdAmountPending | — |
+| ACCTD_AMOUNT_RECOGNIZED | DeferredLineAcctdAmountRecognized | — |
+| AMOUNT_DUE_ORIGINAL | DeferredLineAmountDueOriginal | — |
+| AMOUNT_PENDING | DeferredLineAmountPending | — |
+| AMOUNT_RECOGNIZED | DeferredLineAmountRecognized | — |
+| CREATED_BY | DeferredLineCreatedBy | — |
+| CUSTOMER_TRX_ID | DeferredLineCustomerTrxId | — |
+| CUSTOMER_TRX_LINE_ID | DeferredLineCustomerTrxLineId | — |
+| LAST_UPDATE_LOGIN | DeferredLineLastUpdateLogin | — |
+| LAST_UPDATED_BY | DeferredLineLastUpdatedBy | — |
+| LINE_COLLECTIBLE_FLAG | DeferredLineLineCollectibleFlag | — |
+| MANUAL_OVERRIDE_FLAG | DeferredLineManualOverrideFlag | — |
+| OBJECT_VERSION_NUMBER | DeferredLineObjectVersionNumber | — |
+| ORG_ID | DeferredLineOrgId | — |
+| ORIGINAL_COLLECTIBILITY_FLAG | DeferredLineOriginalCollectibilityFlag | — |
+| PARENT_LINE_ID | DeferredLineParentLineId | — |
+| REQUEST_ID | DeferredLineRequestId | — |
+
+### [[transactionlinebillsreceivablepvo|TransactionLineBillsReceivablePVO]] (AR · BICC: 1/20)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACCTD_AMOUNT_DUE_ORIGINAL | DeferredLineAcctdAmountDueOriginal | — |
+| ACCTD_AMOUNT_PENDING | DeferredLineAcctdAmountPending | — |
+| ACCTD_AMOUNT_RECOGNIZED | DeferredLineAcctdAmountRecognized | — |
+| AMOUNT_DUE_ORIGINAL | DeferredLineAmountDueOriginal | — |
+| AMOUNT_PENDING | DeferredLineAmountPending | — |
+| AMOUNT_RECOGNIZED | DeferredLineAmountRecognized | — |
+| CREATED_BY | DeferredLineCreatedBy | — |
+| CREATION_DATE | DeferredLineCreationDate | — |
+| CUSTOMER_TRX_ID | DeferredLineCustomerTrxId | — |
+| CUSTOMER_TRX_LINE_ID | DeferredLineCustomerTrxLineId | — |
+| LAST_UPDATE_DATE | DeferredLineLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | DeferredLineLastUpdateLogin | — |
+| LAST_UPDATED_BY | DeferredLineLastUpdatedBy | — |
+| LINE_COLLECTIBLE_FLAG | DeferredLineLineCollectibleFlag | — |
+| MANUAL_OVERRIDE_FLAG | DeferredLineManualOverrideFlag | — |
+| OBJECT_VERSION_NUMBER | DeferredLineObjectVersionNumber | — |
+| ORG_ID | DeferredLineOrgId | — |
+| ORIGINAL_COLLECTIBILITY_FLAG | DeferredLineOriginalCollectibilityFlag | — |
+| PARENT_LINE_ID | DeferredLineParentLineId | — |
+| REQUEST_ID | DeferredLineRequestId | — |
+
+### [[transactionlinedistributionpvo|TransactionLineDistributionPVO]] (AR)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACCTD_AMOUNT_DUE_ORIGINAL | DeferredLineAcctdAmountDueOriginal | — |
+| ACCTD_AMOUNT_PENDING | DeferredLineAcctdAmountPending | — |
+| ACCTD_AMOUNT_RECOGNIZED | DeferredLineAcctdAmountRecognized | — |
+| AMOUNT_DUE_ORIGINAL | DeferredLineAmountDueOriginal | — |
+| AMOUNT_PENDING | DeferredLineAmountPending | — |
+| AMOUNT_RECOGNIZED | DeferredLineAmountRecognized | — |
+| CREATED_BY | DeferredLineCreatedBy | — |
+| CUSTOMER_TRX_ID | DeferredLineCustomerTrxId | — |
+| CUSTOMER_TRX_LINE_ID | DeferredLineCustomerTrxLineId | — |
+| LAST_UPDATE_LOGIN | DeferredLineLastUpdateLogin | — |
+| LAST_UPDATED_BY | DeferredLineLastUpdatedBy | — |
+| LINE_COLLECTIBLE_FLAG | DeferredLineLineCollectibleFlag | — |
+| MANUAL_OVERRIDE_FLAG | DeferredLineManualOverrideFlag | — |
+| OBJECT_VERSION_NUMBER | DeferredLineObjectVersionNumber | — |
+| ORG_ID | DeferredLineOrgId | — |
+| ORIGINAL_COLLECTIBILITY_FLAG | DeferredLineOriginalCollectibilityFlag | — |
+| PARENT_LINE_ID | DeferredLineParentLineId | — |
+| REQUEST_ID | DeferredLineRequestId | — |
+
+### [[transactionlinepvo|TransactionLinePVO]] (AR · BICC: 7/20)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACCTD_AMOUNT_DUE_ORIGINAL | DeferredLineAcctdAmountDueOriginal | ✅ |
+| ACCTD_AMOUNT_PENDING | DeferredLineAcctdAmountPending | ✅ |
+| ACCTD_AMOUNT_RECOGNIZED | DeferredLineAcctdAmountRecognized | ✅ |
+| AMOUNT_DUE_ORIGINAL | DeferredLineAmountDueOriginal | ✅ |
+| AMOUNT_PENDING | DeferredLineAmountPending | ✅ |
+| AMOUNT_RECOGNIZED | DeferredLineAmountRecognized | ✅ |
+| CREATED_BY | DeferredLineCreatedBy | — |
+| CREATION_DATE | DeferredLineCreationDate | — |
+| CUSTOMER_TRX_ID | DeferredLineCustomerTrxId | — |
+| CUSTOMER_TRX_LINE_ID | DeferredLineCustomerTrxLineId | — |
+| LAST_UPDATE_DATE | DeferredLineLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | DeferredLineLastUpdateLogin | — |
+| LAST_UPDATED_BY | DeferredLineLastUpdatedBy | — |
+| LINE_COLLECTIBLE_FLAG | DeferredLineLineCollectibleFlag | — |
+| MANUAL_OVERRIDE_FLAG | DeferredLineManualOverrideFlag | — |
+| OBJECT_VERSION_NUMBER | DeferredLineObjectVersionNumber | — |
+| ORG_ID | DeferredLineOrgId | — |
+| ORIGINAL_COLLECTIBILITY_FLAG | DeferredLineOriginalCollectibilityFlag | — |
+| PARENT_LINE_ID | DeferredLineParentLineId | — |
+| REQUEST_ID | DeferredLineRequestId | — |
+
+### [[transactionlinerevenuedeferralextractpvo|TransactionLineRevenueDeferralExtractPVO]] (OTHER · BICC: 20/36)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACCTD_AMOUNT_DUE_ORIGINAL | ArDeferredLineAcctdAmountDueOriginal | ✅ |
+| ACCTD_AMOUNT_PENDING | ArDeferredLineAcctdAmountPending | ✅ |
+| ACCTD_AMOUNT_RECOGNIZED | ArDeferredLineAcctdAmountRecognized | ✅ |
+| AMOUNT_DUE_ORIGINAL | ArDeferredLineAmountDueOriginal | ✅ |
+| AMOUNT_PENDING | ArDeferredLineAmountPending | ✅ |
+| AMOUNT_RECOGNIZED | ArDeferredLineAmountRecognized | ✅ |
+| ATTRIBUTE1 | ArDeferredLineAttribute1 | — |
+| ATTRIBUTE10 | ArDeferredLineAttribute10 | — |
+| ATTRIBUTE11 | ArDeferredLineAttribute11 | — |
+| ATTRIBUTE12 | ArDeferredLineAttribute12 | — |
+| ATTRIBUTE13 | ArDeferredLineAttribute13 | — |
+| ATTRIBUTE14 | ArDeferredLineAttribute14 | — |
+| ATTRIBUTE15 | ArDeferredLineAttribute15 | — |
+| ATTRIBUTE2 | ArDeferredLineAttribute2 | — |
+| ATTRIBUTE3 | ArDeferredLineAttribute3 | — |
+| ATTRIBUTE4 | ArDeferredLineAttribute4 | — |
+| ATTRIBUTE5 | ArDeferredLineAttribute5 | — |
+| ATTRIBUTE6 | ArDeferredLineAttribute6 | — |
+| ATTRIBUTE7 | ArDeferredLineAttribute7 | — |
+| ATTRIBUTE8 | ArDeferredLineAttribute8 | — |
+| ATTRIBUTE9 | ArDeferredLineAttribute9 | — |
+| ATTRIBUTE_CATEGORY | ArDeferredLineAttributeCategory | — |
+| CREATED_BY | ArDeferredLineCreatedBy | ✅ |
+| CREATION_DATE | ArDeferredLineCreationDate | ✅ |
+| CUSTOMER_TRX_ID | ArDeferredLineCustomerTrxId | ✅ |
+| CUSTOMER_TRX_LINE_ID | ArDeferredLineCustomerTrxLineId | ✅ |
+| LAST_UPDATE_DATE | ArDeferredLineLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ArDeferredLineLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | ArDeferredLineLastUpdatedBy | ✅ |
+| LINE_COLLECTIBLE_FLAG | ArDeferredLineLineCollectibleFlag | ✅ |
+| MANUAL_OVERRIDE_FLAG | ArDeferredLineManualOverrideFlag | ✅ |
+| OBJECT_VERSION_NUMBER | ArDeferredLineObjectVersionNumber | ✅ |
+| ORG_ID | ArDeferredLineOrgId | ✅ |
+| ORIGINAL_COLLECTIBILITY_FLAG | ArDeferredLineOriginalCollectibilityFlag | ✅ |
+| PARENT_LINE_ID | ArDeferredLineParentLineId | ✅ |
+| REQUEST_ID | ArDeferredLineRequestId | ✅ |
+
+---
+
 ## 📚 Referências
 
 - Oracle Fusion Cloud Financials — Accounts Receivable Tables (OEDMF Release 13).

@@ -38,7 +38,6 @@ updated_at: 2026-03-25
 
 Armazena as **requisicoes de papeis (roles) solicitados durante o registro ou atualizacao de fornecedores**. Cada registro representa a solicitacao de um papel (ex.: Spend Authorized, Sourcing).
 
-
 ---
 
 ## 🧠 Propósito de Negócio
@@ -92,7 +91,6 @@ FROM   POZ_UP_ROLE_REQUESTS
 WHERE  UP_REQUEST_ID = :p_request_id;
 ```
 
-
 ---
 
 ## 🔒 Observações
@@ -100,6 +98,18 @@ WHERE  UP_REQUEST_ID = :p_request_id;
 - Papeis efetivados somente apos aprovacao completa.
 - Conjunto de papeis configuravel por implementacao.
 - Cada requisicao pode conter multiplos papeis.
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[supplierupreqpvo|SupplierUpReqPVO]] (PO)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ROLE_GUID | SupplierUpRoleReqRoleGuid | — |
+| ROLE_REQUEST_ID | SupplierUpRoleReqRoleRequestId | — |
+| UP_REQUEST_ID | SupplierUpRoleReqUpRequestId | — |
 
 ---
 

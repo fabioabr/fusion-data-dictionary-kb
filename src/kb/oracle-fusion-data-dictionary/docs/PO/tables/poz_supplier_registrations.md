@@ -140,3 +140,173 @@ GROUP BY sr.REGISTRATION_STATUS;
 
 - [Oracle Docs — POZ_SUPPLIER_REGISTRATIONS](https://docs.oracle.com/en/cloud/saas/procurement/25a/oedmf/poz-tables.html)
 - [[po-module-data-dictionary]] — Dossiê do módulo Procurement
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[negdocumentsourcingsupplierinviteepvo|NegDocumentSourcingSupplierInviteePVO]] (PO · BICC: 9/37)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ADDRESS_LINE1 | SupplierRegisAddressLine1 | — |
+| ADDRESS_LINE2 | SupplierRegisAddressLine2 | — |
+| ADDRESS_LINE3 | SupplierRegisAddressLine3 | — |
+| ADDRESS_LINE4 | SupplierRegisAddressLine4 | — |
+| ADDRESS_NICKNAME | SupplierRegisAddressNickname | — |
+| CITY | SupplierRegisCity | — |
+| CORPORATE_WEBSITE | SupplierRegisCorporateWebsite | — |
+| COUNTRY | SupplierRegisCountry | — |
+| COUNTY | SupplierRegisCounty | — |
+| CREATED_BY | SupplierRegisCreatedBy | — |
+| CREATION_DATE | SupplierRegisCreationDate | ✅ |
+| DUNS_NUMBER | SupplierRegisDunsNumber | — |
+| LAST_UPDATE_DATE | SupplierRegisLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | SupplierRegisLastUpdateLogin | — |
+| LAST_UPDATED_BY | SupplierRegisLastUpdatedBy | ✅ |
+| NOTE_FROM_SUPPLIER | SupplierRegisNoteFromSupplier | — |
+| NOTE_TO_SUPPLIER | SupplierRegisNoteToSupplier | — |
+| OBJECT_VERSION_NUMBER | SupplierRegisObjectVersionNumber | — |
+| POSTAL_CODE | SupplierRegisPostalCode | — |
+| PRC_BU_ID | SupplierRegisPrcBuId | — |
+| PROVINCE | SupplierRegisProvince | — |
+| REG_KEY | SupplierRegisRegKey | — |
+| REGISTRATION_STATUS | SupplierRegisRegistrationStatus | — |
+| REGISTRATION_TYPE | SupplierRegisRegistrationType | — |
+| REJECTION_CODE | SupplierRegisRejectionCode | — |
+| REQUEST_NUMBER | SupplierRegisRequestNumber | — |
+| STATE | SupplierRegisState | — |
+| SUPPLIER_NAME | SupplierRegisSupplierName | ✅ |
+| SUPPLIER_NUMBER | SupplierRegisSupplierNumber | ✅ |
+| SUPPLIER_REG_ID | SupplierRegisSupplierRegId | ✅ |
+| TAX_REG_COUNTRY_CODE | SupplierRegisTaxRegCountryCode | — |
+| TAX_REG_TYPE | SupplierRegisTaxRegType | — |
+| TAX_REGISTRATION_NUMBER | SupplierRegisTaxRegistrationNumber | — |
+| TAXPAYER_ID | SupplierRegisTaxpayerId | — |
+| USER_REG_ID | SupplierRegisUserRegId | ✅ |
+| VENDOR_ID | SupplierRegisVendorId | ✅ |
+| VENDOR_PARTY_ID | SupplierRegisVendorPartyId | ✅ |
+
+### [[negotiationsupplierinviteeextractpvo|NegotiationSupplierInviteeExtractPVO]] (PO · BICC: 53/53)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ADDRESS_LINE1 | AddressLine1 | ✅ |
+| ADDRESS_LINE2 | AddressLine2 | ✅ |
+| ADDRESS_LINE3 | AddressLine3 | ✅ |
+| ADDRESS_LINE4 | AddressLine4 | ✅ |
+| ADDRESS_NICKNAME | AddressNickname | ✅ |
+| APPROVED_DATE | ApprovedDate | ✅ |
+| BUSINESS_RELATIONSHIP_CODE | BusinessRelationshipCode | ✅ |
+| CITY | City | ✅ |
+| CORPORATE_WEBSITE | CorporateWebsite | ✅ |
+| COUNTRY | Country | ✅ |
+| COUNTY | County | ✅ |
+| CREATED_BY | CreatedBy1 | ✅ |
+| CREATION_DATE | CreationDate1 | ✅ |
+| DUNS_NUMBER | DunsNumber | ✅ |
+| INCOME_TAX_ID_FLAG | IncomeTaxIdFlag | ✅ |
+| JUSTIFICATION | Justification | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate1 | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin1 | ✅ |
+| LAST_UPDATED_BY | LastUpdatedBy1 | ✅ |
+| NOTE_FROM_SUPPLIER | NoteFromSupplier | ✅ |
+| NOTE_TO_APPROVER | NoteToApprover | ✅ |
+| NOTE_TO_SUPPLIER | NoteToSupplier | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber1 | ✅ |
+| ORGANIZATION_TYPE | OrganizationType | ✅ |
+| POSTAL_CODE | PostalCode | ✅ |
+| PRC_BU_ID | PrcBuId | ✅ |
+| PROVINCE | Province | ✅ |
+| REG_KEY | RegKey | ✅ |
+| REGISTRATION_STATUS | RegistrationStatus | ✅ |
+| REGISTRATION_TYPE | RegistrationType | ✅ |
+| REJECTION_CODE | RejectionCode | ✅ |
+| REQUEST_NUMBER | RequestNumber | ✅ |
+| REQUEST_REASON_CODE | RequestReasonCode | ✅ |
+| REQUESTED_DATE | RequestedDate | ✅ |
+| REQUESTER_EMAIL_ADDRESS | RequesterEmailAddress | ✅ |
+| REQUESTER_FIRST_NAME | RequesterFirstName | ✅ |
+| REQUESTER_LANGUAGE | RequesterLanguage | ✅ |
+| REQUESTER_LAST_NAME | RequesterLastName | ✅ |
+| REQUESTER_PERSON_ID | RequesterPersonId | ✅ |
+| STATE | State | ✅ |
+| SUPPLIER_CREATION_STATUS | SupplierCreationStatus | ✅ |
+| SUPPLIER_NAME | SupplierName | ✅ |
+| SUPPLIER_NUMBER | SupplierNumber | ✅ |
+| SUPPLIER_REG_ID | SupplierRegId | ✅ |
+| TAX_REG_COUNTRY_CODE | TaxRegCountryCode | ✅ |
+| TAX_REG_NUMBER_FLAG | TaxRegNumberFlag | ✅ |
+| TAX_REG_TYPE | TaxRegType | ✅ |
+| TAX_REGISTRATION_NUMBER | TaxRegistrationNumber | ✅ |
+| TAXPAYER_ID | TaxpayerId | ✅ |
+| USER_REG_ID | UserRegId | ✅ |
+| VENDOR_ID | VendorId | ✅ |
+| VENDOR_PARTY_ID | VendorPartyId | ✅ |
+| VENDOR_TYPE_LOOKUP_CODE | VendorTypeLookupCode | ✅ |
+
+### [[supplierregistrationmappingpvo|SupplierRegistrationMappingPVO]] (PO · BICC: 22/61)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ADDRESS_LINE1 | SupplierRegistrationAddressLine1 | — |
+| ADDRESS_LINE2 | SupplierRegistrationAddressLine2 | — |
+| ADDRESS_LINE3 | SupplierRegistrationAddressLine3 | — |
+| ADDRESS_LINE4 | SupplierRegistrationAddressLine4 | — |
+| ADDRESS_NICKNAME | SupplierRegistrationAddressNickname | — |
+| APPROVAL_INSTANCE_ID | SupplierRegistrationApprovalInstanceId | — |
+| APPROVED_DATE | SupplierRegistrationApprovedDate | ✅ |
+| BC_NOT_APPLICABLE_FLAG | SupplierRegistrationBcNotApplicableFlag | — |
+| BUSINESS_RELATIONSHIP_CODE | SupplierRegistrationBusinessRelationshipCode | ✅ |
+| CITY | SupplierRegistrationCity | — |
+| CORPORATE_WEBSITE | SupplierRegistrationCorporateWebsite | ✅ |
+| COUNTRY | SupplierRegistrationCountry | — |
+| COUNTY | SupplierRegistrationCounty | — |
+| CREATED_BY | SupplierRegistrationCreatedBy | — |
+| CREATION_DATE | SupplierRegistrationCreationDate | — |
+| DENIED_PARTY_FLAG | DeniedPartyFlag | — |
+| DUNS_NUMBER | SupplierRegistrationDunsNumber | ✅ |
+| INCOME_TAX_ID_FLAG | SupplierRegistrationIncomeTaxIdFlag | — |
+| JUSTIFICATION | SupplierRegistrationJustification | ✅ |
+| LAST_UPDATE_DATE | SupplierRegistrationLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | SupplierRegistrationLastUpdateLogin | — |
+| LAST_UPDATED_BY | SupplierRegistrationLastUpdatedBy | — |
+| NOTE_FROM_SUPPLIER | SupplierRegistrationNoteFromSupplier | — |
+| NOTE_TO_APPROVER | SupplierRegistrationNoteToApprover | ✅ |
+| NOTE_TO_SUPPLIER | SupplierRegistrationNoteToSupplier | — |
+| OBJECT_VERSION_NUMBER | SupplierRegistrationObjectVersionNumber | — |
+| ORGANIZATION_TYPE | SupplierRegistrationOrganizationType | ✅ |
+| POSTAL_CODE | SupplierRegistrationPostalCode | — |
+| PRC_BU_ID | SupplierRegistrationPrcBuId | — |
+| PROVINCE | SupplierRegistrationProvince | — |
+| REG_KEY | SupplierRegistrationRegKey | — |
+| REGISTRATION_STATUS | SupplierRegistrationRegistrationStatus | ✅ |
+| REGISTRATION_TYPE | SupplierRegistrationRegistrationType | ✅ |
+| REJECT_COMMENTS | RejectComments | ✅ |
+| REJECT_REASON_CODE | RejectReasonCode | ✅ |
+| REJECTION_CODE | SupplierRegistrationRejectionCode | — |
+| REQ_TO_RESUBMIT_REASON | SupplierRegistrationReqToResubmitReason | — |
+| REQUEST_NUMBER | SupplierRegistrationRequestNumber | ✅ |
+| REQUEST_REASON_CODE | SupplierRegistrationRequestReasonCode | ✅ |
+| REQUESTED_DATE | SupplierRegistrationRequestedDate | ✅ |
+| REQUESTER_EMAIL_ADDRESS | SupplierRegistrationRequesterEmailAddress | ✅ |
+| REQUESTER_FIRST_NAME | SupplierRegistrationRequesterFirstName | ✅ |
+| REQUESTER_LANGUAGE | SupplierRegistrationRequesterLanguage | — |
+| REQUESTER_LAST_NAME | SupplierRegistrationRequesterLastName | ✅ |
+| REQUESTER_PERSON_ID | SupplierRegistrationRequesterPersonId | — |
+| RESUBMISSION_NUM | SupplierRegistrationResubmissionNum | — |
+| STATE | SupplierRegistrationState | — |
+| SUPPLIER_CREATION_STATUS | SupplierRegistrationSupplierCreationStatus | ✅ |
+| SUPPLIER_NAME | SupplierRegistrationSupplierName | ✅ |
+| SUPPLIER_NUMBER | SupplierRegistrationSupplierNumber | — |
+| SUPPLIER_REG_ID | SupplierRegId | ✅ |
+| TAX_REG_COUNTRY_CODE | SupplierRegistrationTaxRegCountryCode | — |
+| TAX_REG_NUMBER_FLAG | SupplierRegistrationTaxRegNumberFlag | — |
+| TAX_REG_TYPE | SupplierRegistrationTaxRegType | — |
+| TAX_REGISTRATION_NUMBER | SupplierRegistrationTaxRegistrationNumber | — |
+| TAXPAYER_ID | SupplierRegistrationTaxpayerId | — |
+| URL_VALIDATION_PARAM | SupplierRegistrationUrlValidationParam | — |
+| USER_REG_ID | SupplierRegistrationUserRegId | — |
+| VENDOR_ID | SupplierRegistrationVendorId | — |
+| VENDOR_PARTY_ID | SupplierRegistrationVendorPartyId | — |
+| VENDOR_TYPE_LOOKUP_CODE | SupplierRegistrationVendorTypeLookupCode | ✅ |

@@ -41,7 +41,6 @@ Armazena **versoes arquivadas dos cabecalhos de PO**. Cada revisao gera copia do
 > [!note] Sufixo _ALL
 > O sufixo `_ALL` indica que a tabela armazena dados de **todas as business units** (multi-org). O filtro por `ORG_ID` e necessario para consultas por organizacao especifica.
 
-
 ---
 
 ## 🧠 Propósito de Negócio
@@ -100,7 +99,6 @@ WHERE  PO_HEADER_ID = :p_po_header_id
 ORDER BY REVISION_NUM;
 ```
 
-
 ---
 
 ## 🔒 Observações
@@ -108,6 +106,123 @@ ORDER BY REVISION_NUM;
 - PK composta: `PO_HEADER_ID` + `REVISION_NUM`.
 - Estrutura espelha `PO_HEADERS_ALL`.
 - Cada revisao gera novo registro.
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[purchasingdocumentversionpvo|PurchasingDocumentVersionPVO]] (PO · BICC: 16/108)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACCEPTANCE_DUE_DATE | ArchivedPOHeaderAcceptanceDueDate | — |
+| ACCEPTANCE_REQUIRED_FLAG | ArchivedPOHeaderAcceptanceRequiredFlag | — |
+| AGENT_ID | ArchivedPOHeaderAgentId | — |
+| AGING_ONSET_POINT | ArchivedPOHeaderAgingOnsetPoint | ✅ |
+| AGING_PERIOD_DAYS | ArchivedPOHeaderAgingPeriodDays | ✅ |
+| AMOUNT_LIMIT | ArchivedPOHeaderAmountLimit | — |
+| AUTO_SOURCING_FLAG | ArchivedPOHeaderAutoSourcingFlag | — |
+| BILL_TO_LOCATION_ID | ArchivedPOHeaderBillToLocationId | — |
+| BILLING_CYCLE_CLOSING_DATE | ArchivedPOHeaderBillingCycleClosingDate | ✅ |
+| BILLTO_BU_ID | ArchivedPOHeaderBilltoBuId | ✅ |
+| BLANKET_TOTAL_AMOUNT | ArchivedPOHeaderBlanketTotalAmount | — |
+| BUYER_MANAGED_TRANSPORT_FLAG | ArchivedPOHeaderBuyerManagedTransportFlag | — |
+| CANCEL_FLAG | ArchivedPOHeaderCancelFlag | — |
+| CARRIER_ID | ArchivedPOHeaderCarrierId | — |
+| CBC_ACCOUNTING_DATE | ArchivedPOHeaderCbcAccountingDate | — |
+| CHANGE_REQUESTED_BY | ArchivedPOHeaderChangeRequestedBy | — |
+| CHANGE_SUMMARY | ArchivedPOHeaderChangeSummary | — |
+| COMMENTS | ArchivedPOHeaderComments | ✅ |
+| CONFIRMING_ORDER_FLAG | ArchivedPOHeaderConfirmingOrderFlag | — |
+| CONSIGNED_CONSUMPTION_FLAG | ArchivedPOHeaderConsignedConsumptionFlag | — |
+| CONSUME_REQ_DEMAND_FLAG | ArchivedPOHeaderConsumeReqDemandFlag | — |
+| CONSUMPTION_ADVICE_FREQUENCY | ArchivedPOHeaderConsumptionAdviceFrequency | ✅ |
+| CONSUMPTION_ADVICE_SUMMARY | ArchivedPOHeaderConsumptionAdviceSummary | ✅ |
+| CONTERMS_ARTICLES_UPD_DATE | ArchivedPOHeaderContermsArticlesUpdDate | — |
+| CONTERMS_DELIV_UPD_DATE | ArchivedPOHeaderContermsDelivUpdDate | — |
+| CONTERMS_EXIST_FLAG | ArchivedPOHeaderContermsExistFlag | — |
+| CPA_REFERENCE | ArchivedPOHeaderCpaReference | — |
+| CREATED_BY | ArchivedPOHeaderCreatedBy | — |
+| CREATED_LANGUAGE | ArchivedPOHeaderCreatedLanguage | — |
+| CREATION_DATE | ArchivedPOHeaderCreationDate | — |
+| CURRENCY_CODE | ArchivedPOHeaderCurrencyCode | — |
+| DEFAULT_CONSIGNMENT_LINE_FLAG | ArchivedPOHeaderDefaultConsignmentLineFlag | ✅ |
+| DEFAULT_TAXATION_COUNTRY | ArchivedPOHeaderDefaultTaxationCountry | — |
+| DOCUMENT_CREATION_METHOD | ArchivedPOHeaderDocumentCreationMethod | — |
+| EMAIL_ADDRESS | ArchivedPOHeaderEmailAddress | — |
+| ENABLED_FLAG | ArchivedPOHeaderEnabledFlag | — |
+| ENCUMBRANCE_REQUIRED_FLAG | ArchivedPOHeaderEncumbranceRequiredFlag | — |
+| END_DATE | ArchivedPOHeaderEndDate | — |
+| ENTITY_CO_DISPOSITION | ArchivedPOHeaderEntityCoDisposition | — |
+| FAX | ArchivedPOHeaderFax | — |
+| FIRM_DATE | ArchivedPOHeaderFirmDate | — |
+| FIRM_STATUS_LOOKUP_CODE | ArchivedPOHeaderFirmStatusLookupCode | — |
+| FOB_LOOKUP_CODE | ArchivedPOHeaderFobLookupCode | — |
+| FREIGHT_TERMS_LOOKUP_CODE | ArchivedPOHeaderFreightTermsLookupCode | — |
+| FROM_CO_SEQ | ArchivedPOHeaderFromCoSeq | ✅ |
+| FROM_HEADER_ID | ArchivedPOHeaderFromHeaderId | — |
+| FROM_TYPE_LOOKUP_CODE | ArchivedPOHeaderFromTypeLookupCode | — |
+| GENERATE_ORDERS_AUTOMATIC | ArchivedPOHeaderGenerateOrdersAutomatic | — |
+| GOVERNMENT_CONTEXT | ArchivedPOHeaderGovernmentContext | — |
+| GROUP_REQUISITION_LINES | ArchivedPOHeaderGroupRequisitionLines | — |
+| GROUP_REQUISITIONS | ArchivedPOHeaderGroupRequisitions | — |
+| INTERFACE_SOURCE_CODE | ArchivedPOHeaderInterfaceSourceCode | — |
+| JOB_DEFINITION_NAME | ArchivedPOHeaderJobDefinitionName | — |
+| JOB_DEFINITION_PACKAGE | ArchivedPOHeaderJobDefinitionPackage | — |
+| LAST_UPDATE_DATE | ArchivedPOHeaderLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ArchivedPOHeaderLastUpdateLogin | — |
+| LAST_UPDATED_BY | ArchivedPOHeaderLastUpdatedBy | — |
+| MIN_RELEASE_AMOUNT | ArchivedPOHeaderMinReleaseAmount | — |
+| MODE_OF_TRANSPORT | ArchivedPOHeaderModeOfTransport | ✅ |
+| NOTE_TO_AUTHORIZER | ArchivedPOHeaderNoteToAuthorizer | — |
+| NOTE_TO_RECEIVER | ArchivedPOHeaderNoteToReceiver | — |
+| NOTE_TO_VENDOR | ArchivedPOHeaderNoteToVendor | — |
+| OBJECT_VERSION_NUMBER | ArchivedPOHeaderObjectVersionNumber | — |
+| ORCHESTRATION_ORDER_FLAG | ArchivedPOHeaderOrchestrationOrderFlag | ✅ |
+| PAY_ON_CODE | ArchivedPOHeaderPayOnCode | — |
+| PAY_ON_USE_FLAG | ArchivedPOHeaderPayOnUseFlag | ✅ |
+| PCARD_ID | ArchivedPOHeaderPcardId | — |
+| PENDING_SIGNATURE_FLAG | ArchivedPOHeaderPendingSignatureFlag | — |
+| PO_HEADER_ID | ArchivedPOHeaderPoHeaderId | ✅ |
+| PRC_BU_ID | ArchivedPOHeaderPrcBuId | — |
+| PRICE_UPDATE_TOLERANCE | ArchivedPOHeaderPriceUpdateTolerance | — |
+| PROGRAM_APP_NAME | ArchivedPOHeaderProgramAppName | — |
+| PROGRAM_NAME | ArchivedPOHeaderProgramName | — |
+| RATE | ArchivedPOHeaderRate | — |
+| RATE_DATE | ArchivedPOHeaderRateDate | — |
+| RATE_TYPE | ArchivedPOHeaderRateType | — |
+| REFERENCE_NUM | ArchivedPOHeaderReferenceNum | — |
+| REQ_BU_ID | ArchivedPOHeaderReqBuId | — |
+| REQUEST_ID | ArchivedPOHeaderRequestId | — |
+| RETRO_PRICE_APPLY_UPDATES_FLAG | ArchivedPOHeaderRetroPriceApplyUpdatesFlag | — |
+| RETRO_PRICE_COMM_UPDATES_FLAG | ArchivedPOHeaderRetroPriceCommUpdatesFlag | — |
+| SEGMENT1 | ArchivedPOHeaderSegment1 | — |
+| SEGMENT2 | ArchivedPOHeaderSegment2 | — |
+| SEGMENT3 | ArchivedPOHeaderSegment3 | — |
+| SEGMENT4 | ArchivedPOHeaderSegment4 | — |
+| SEGMENT5 | ArchivedPOHeaderSegment5 | — |
+| SERVICE_LEVEL | ArchivedPOHeaderServiceLevel | ✅ |
+| SHIP_TO_LOCATION_ID | ArchivedPOHeaderShipToLocationId | — |
+| SHIPPING_CONTROL | ArchivedPOHeaderShippingControl | — |
+| SOLDTO_LE_ID | ArchivedPOHeaderSoldtoLeId | ✅ |
+| START_DATE | ArchivedPOHeaderStartDate | — |
+| STYLE_ID | ArchivedPOHeaderStyleId | — |
+| SUBMIT_APPROVAL_AUTOMATIC | ArchivedPOHeaderSubmitApprovalAutomatic | — |
+| SUBMIT_DATE | ArchivedPOHeaderSubmitDate | — |
+| SUMMARY_FLAG | ArchivedPOHeaderSummaryFlag | — |
+| SUPPLIER_NOTIF_METHOD | ArchivedPOHeaderSupplierNotifMethod | — |
+| TAX_DOCUMENT_SUBTYPE | ArchivedPOHeaderTaxDocumentSubtype | — |
+| TERMS_ID | ArchivedPOHeaderTermsId | — |
+| TO_CO_SEQ | ArchivedPOHeaderToCoSeq | — |
+| TYPE_LOOKUP_CODE | ArchivedPOHeaderTypeLookupCode | — |
+| UPDATE_SOURCING_RULES_FLAG | ArchivedPOHeaderUpdateSourcingRulesFlag | — |
+| USE_NEED_BY_DATE | ArchivedPOHeaderUseNeedByDate | — |
+| USE_SHIP_TO | ArchivedPOHeaderUseShipTo | — |
+| VENDOR_CONTACT_ID | ArchivedPOHeaderVendorContactId | — |
+| VENDOR_ID | ArchivedPOHeaderVendorId | — |
+| VENDOR_ORDER_NUM | ArchivedPOHeaderVendorOrderNum | — |
+| VENDOR_SITE_ID | ArchivedPOHeaderVendorSiteId | — |
+| XML_FLAG | ArchivedPOHeaderXmlFlag | — |
 
 ---
 

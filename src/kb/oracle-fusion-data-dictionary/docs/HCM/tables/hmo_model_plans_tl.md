@@ -114,6 +114,44 @@ WHERE  tl.LANGUAGE = USERENV('LANG');
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[modelplanpvo|ModelPlanPVO]] (HCM · BICC: 3/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | ModelPlanTranslationPEOCreatedBy | — |
+| CREATION_DATE | ModelPlanTranslationPEOCreationDate | — |
+| DESCRIPTION | ModelPlanTranslationPEODescription | ✅ |
+| ENTERPRISE_ID | ModelPlanTranslationPEOEnterpriseId | — |
+| LANGUAGE | ModelPlanTranslationPEOLanguage | — |
+| LAST_UPDATE_DATE | ModelPlanTranslationPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ModelPlanTranslationPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | ModelPlanTranslationPEOLastUpdatedBy | — |
+| MODEL_PLAN_ID | ModelPlanTranslationPEOModelPlanId | — |
+| MODEL_PLAN_NAME | ModelPlanTranslationPEOModelPlanName | ✅ |
+| OBJECT_VERSION_NUMBER | ModelPlanTranslationPEOObjectVersionNumber | — |
+| SOURCE_LANG | ModelPlanTranslationPEOSourceLang | — |
+
+### [[modelplanpvoviewall|ModelPlanPVOViewAll]] (HCM · BICC: 3/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | ModelPlanTranslationPEOCreatedBy | — |
+| CREATION_DATE | ModelPlanTranslationPEOCreationDate | — |
+| DESCRIPTION | ModelPlanTranslationPEODescription | ✅ |
+| ENTERPRISE_ID | ModelPlanTranslationPEOEnterpriseId | — |
+| LANGUAGE | ModelPlanTranslationPEOLanguage | — |
+| LAST_UPDATE_DATE | ModelPlanTranslationPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ModelPlanTranslationPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | ModelPlanTranslationPEOLastUpdatedBy | — |
+| MODEL_PLAN_ID | ModelPlanTranslationPEOModelPlanId | — |
+| MODEL_PLAN_NAME | ModelPlanTranslationPEOModelPlanName | ✅ |
+| OBJECT_VERSION_NUMBER | ModelPlanTranslationPEOObjectVersionNumber | — |
+| SOURCE_LANG | ModelPlanTranslationPEOSourceLang | — |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — HMO_MODEL_PLANS_TL](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/hmomodelplanstl.html)

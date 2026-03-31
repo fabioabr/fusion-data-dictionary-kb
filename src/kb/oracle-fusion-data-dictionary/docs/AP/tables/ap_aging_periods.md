@@ -89,3 +89,53 @@ SELECT ap.PERIOD_NAME,
 - Oracle Fusion Cloud Financials — Accounts Payable Tables (OEDMF Release 13).
 - Oracle BICC — AP Aging Subject Area Documentation.
 - Oracle Fusion Cloud ERP Schema Reference (Release 25A).
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[agingperiodheaderextractpvo|AgingPeriodHeaderExtractPVO]] (OTHER · BICC: 11/26)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| AGING_PERIOD_ID | ApAgingPeriodsAgingPeriodId | ✅ |
+| ATTRIBUTE1 | ApAgingPeriodsAttribute1 | — |
+| ATTRIBUTE10 | ApAgingPeriodsAttribute10 | — |
+| ATTRIBUTE11 | ApAgingPeriodsAttribute11 | — |
+| ATTRIBUTE12 | ApAgingPeriodsAttribute12 | — |
+| ATTRIBUTE13 | ApAgingPeriodsAttribute13 | — |
+| ATTRIBUTE14 | ApAgingPeriodsAttribute14 | — |
+| ATTRIBUTE15 | ApAgingPeriodsAttribute15 | — |
+| ATTRIBUTE2 | ApAgingPeriodsAttribute2 | — |
+| ATTRIBUTE3 | ApAgingPeriodsAttribute3 | — |
+| ATTRIBUTE4 | ApAgingPeriodsAttribute4 | — |
+| ATTRIBUTE5 | ApAgingPeriodsAttribute5 | — |
+| ATTRIBUTE6 | ApAgingPeriodsAttribute6 | — |
+| ATTRIBUTE7 | ApAgingPeriodsAttribute7 | — |
+| ATTRIBUTE8 | ApAgingPeriodsAttribute8 | — |
+| ATTRIBUTE9 | ApAgingPeriodsAttribute9 | — |
+| ATTRIBUTE_CATEGORY | ApAgingPeriodsAttributeCategory | ✅ |
+| CREATED_BY | ApAgingPeriodsCreatedBy | ✅ |
+| CREATION_DATE | ApAgingPeriodsCreationDate | ✅ |
+| DESCRIPTION | ApAgingPeriodsDescription | ✅ |
+| LAST_UPDATE_DATE | ApAgingPeriodsLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ApAgingPeriodsLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | ApAgingPeriodsLastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | ApAgingPeriodsObjectVersionNumber | ✅ |
+| PERIOD_NAME | ApAgingPeriodsPeriodName | ✅ |
+| STATUS | ApAgingPeriodsStatus | ✅ |
+
+### [[agingperiodlinepvo|AgingPeriodLinePVO]] (AP · BICC: 3/10)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| AGING_PERIOD_ID | AgingHeaderAgingPeriodId | — |
+| CREATED_BY | AgingHeaderCreatedBy | — |
+| CREATION_DATE | AgingHeaderCreationDate | — |
+| DESCRIPTION | AgingHeaderDescription | — |
+| LAST_UPDATE_DATE | AgingHeaderLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | AgingHeaderLastUpdateLogin | — |
+| LAST_UPDATED_BY | AgingHeaderLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | AgingHeaderObjectVersionNumber | — |
+| PERIOD_NAME | AgingHeaderPeriodName | ✅ |
+| STATUS | AgingHeaderStatus | ✅ |

@@ -113,6 +113,55 @@ WHERE  pap.BUSINESS_GROUP_ID = :p_bg_id;
 - O período de inelegibilidade controla quando novos colaboradores começam a acumular.
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[accrualplanbandpvo|AccrualPlanBandPVO]] (GL · BICC: 2/40)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACCRUAL_BAND_GROUP | AccrualPlanPEOAccrualBandGroup | — |
+| ACCRUAL_BAND_RANGE | AccrualPlanPEOAccrualBandRange | — |
+| ACCRUAL_CATEGORY | AccrualPlanPEOAccrualCategory | — |
+| ACCRUAL_DEFINED_BALANCE_ID | AccrualPlanPEOAccrualDefinedBalanceId | — |
+| ACCRUAL_ELEMENT_TYPE_ID | AccrualPlanPEOAccrualElementTypeId | — |
+| ACCRUAL_FORMULA_ID | AccrualPlanPEOAccrualFormulaId | — |
+| ACCRUAL_FREQUENCY_LENGTH | AccrualPlanPEOAccrualFrequencyLength | — |
+| ACCRUAL_FREQUENCY_LENGTH_UOM | AccrualPlanPEOAccrualFrequencyLengthUom | — |
+| ACCRUAL_FREQUENCY_TYPE | AccrualPlanPEOAccrualFrequencyType | — |
+| ACCRUAL_PLAN_ID | AccrualPlanId | ✅ |
+| ACCRUAL_START_RULE | AccrualPlanPEOAccrualStartRule | — |
+| ACCRUAL_TERM_END | AccrualPlanPEOAccrualTermEnd | — |
+| ACCRUAL_TERM_LENGTH | AccrualPlanPEOAccrualTermLength | — |
+| ACCRUAL_TERM_LENGTH_UOM | AccrualPlanPEOAccrualTermLengthUom | — |
+| ACCRUAL_TERM_START | AccrualPlanPEOAccrualTermStart | — |
+| ACCRUAL_TERM_TYPE | AccrualPlanPEOAccrualTermType | — |
+| ACCRUAL_UNITS | AccrualPlanPEOAccrualUnits | — |
+| CO_DATE_INPUT_VALUE_ID | AccrualPlanPEOCoDateInputValueId | — |
+| CO_EXP_DATE_INPUT_VALUE_ID | AccrualPlanPEOCoExpDateInputValueId | — |
+| CO_EXPIRY_LENGTH | AccrualPlanPEOCoExpiryLength | — |
+| CO_EXPIRY_LENGTH_UOM | AccrualPlanPEOCoExpiryLengthUom | — |
+| CO_FORMULA_ID | AccrualPlanPEOCoFormulaId | — |
+| CO_INPUT_VALUE_ID | AccrualPlanPEOCoInputValueId | — |
+| CREATED_BY | AccrualPlanPEOCreatedBy | — |
+| CREATION_DATE | AccrualPlanPEOCreationDate | — |
+| INELIGIBILITY_FORMULA_ID | AccrualPlanPEOIneligibilityFormulaId | — |
+| INELIGIBLE_PERIOD_LENGTH | AccrualPlanPEOIneligiblePeriodLength | — |
+| INELIGIBLE_PERIOD_LENGTH_UOM | AccrualPlanPEOIneligiblePeriodLengthUom | — |
+| LAST_UPDATE_DATE | AccrualPlanPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | AccrualPlanPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | AccrualPlanPEOLastUpdatedBy | — |
+| LEGISLATION_CODE | AccrualPlanPEOLegislationCode | — |
+| LEGISLATIVE_DATA_GROUP_ID | AccrualPlanPEOLegislativeDataGroupId | — |
+| LIABILITY_BALANCE_ELEMENT_ID | AccrualPlanPEOLiabilityBalanceElementId | — |
+| LIABILITY_DEFINED_BALANCE_ID | AccrualPlanPEOLiabilityDefinedBalanceId | — |
+| OBJECT_VERSION_NUMBER | AccrualPlanPEOObjectVersionNumber | — |
+| PAYROLL_FORMULA_ID | AccrualPlanPEOPayrollFormulaId | — |
+| RESIDUAL_DATE_INPUT_VALUE_ID | AccrualPlanPEOResidualDateInputValueId | — |
+| RESIDUAL_INPUT_VALUE_ID | AccrualPlanPEOResidualInputValueId | — |
+| TAGGING_ELEMENT_TYPE_ID | AccrualPlanPEOTaggingElementTypeId | — |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — PER_ACCRUAL_PLANS_B](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/peraccrualplansb.html)

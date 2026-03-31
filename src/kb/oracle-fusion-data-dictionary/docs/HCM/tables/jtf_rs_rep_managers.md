@@ -55,3 +55,17 @@ updated_at: 2026-03-26
 ## 📎 Uso Típico
 
 (a ser preenchido na etapa 03)
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[resourcepartnerpvo|ResourcePartnerPVO]] (OTHER · BICC: 1/5)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| DENORM_MGR_ID | DenormMgrId | — |
+| END_DATE_ACTIVE | RptgMgrEndDateActive | — |
+| GROUP_ID | PrimaryOrg | ✅ |
+| PARENT_RESOURCE_ID | ParentResourceId | — |
+| START_DATE_ACTIVE | RptgMgrStartDateActive | — |

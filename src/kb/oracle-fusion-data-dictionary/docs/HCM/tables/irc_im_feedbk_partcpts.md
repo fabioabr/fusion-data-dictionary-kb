@@ -100,3 +100,24 @@ FROM   IRC_IM_FEEDBK_PARTCPTS fp WHERE fp.IM_FEEDBACK_ID = :p_id;
 
 - [Oracle Docs -- IRC_IM_FEEDBK_PARTCPTS](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/ircimfeedbkpartcpts.html)
 - [[hcm-module-data-dictionary]] -- Dossie do modulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[feedbackdetailspvo|FeedbackDetailsPVO]] (HCM · BICC: 4/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | CreatedBy1 | — |
+| CREATION_DATE | CreationDate1 | — |
+| FEEDBACK_ID | FeedbackId1 | — |
+| FEEDBACK_PARTICIPANT_ID | FeedbackParticipantId | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate1 | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin1 | — |
+| LAST_UPDATED_BY | LastUpdatedBy1 | — |
+| NOTES | Notes | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber1 | — |
+| PARTICIPANT_ID | ParticipantId | — |
+| QSTNR_VERSION_NUM | QstnrVersionNum | — |
+| QUESTIONNAIRE_ID | QuestionnaireId | ✅ |

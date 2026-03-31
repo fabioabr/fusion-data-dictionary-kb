@@ -99,6 +99,136 @@ WHERE  tm.REQUISITION_ID = :p_requisition_id;
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[offercollaboratorpvo|OfferCollaboratorPVO]] (HCM · BICC: 5/13)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ASSIGNMENT_ID | AssignmentId | ✅ |
+| COLLABORATOR_RESP_TYPE_CODE | TeamMemberEOCollaboratorRespTypeCode | ✅ |
+| CREATED_BY | CreatedBy | — |
+| CREATION_DATE | CreationDate | — |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | — |
+| LAST_UPDATED_BY | LastUpdatedBy | — |
+| MEMBER_TYPE_CODE | MemberTypeCode | — |
+| OBJECT_ID | ObjectId | — |
+| OBJECT_TYPE | ObjectType | — |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | — |
+| PERSON_ID | PersonId | ✅ |
+| TEAM_MEMBER_ID | TeamMemberId | ✅ |
+
+### [[offerhiringmanagerpvo|OfferHiringManagerPVO]] (HCM · BICC: 3/13)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ASSIGNMENT_ID | AssignmentId | ✅ |
+| COLLABORATOR_RESP_TYPE_CODE | TeamMemberEOCollaboratorRespTypeCode | — |
+| CREATED_BY | CreatedBy | — |
+| CREATION_DATE | CreationDate | — |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | — |
+| LAST_UPDATED_BY | LastUpdatedBy | — |
+| MEMBER_TYPE_CODE | MemberTypeCode | — |
+| OBJECT_ID | ObjectId | — |
+| OBJECT_TYPE | ObjectType | — |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | — |
+| PERSON_ID | PersonId | — |
+| TEAM_MEMBER_ID | TeamMemberId | ✅ |
+
+### [[offerrecruiterpvo|OfferRecruiterPVO]] (HCM · BICC: 3/13)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ASSIGNMENT_ID | AssignmentId | ✅ |
+| COLLABORATOR_RESP_TYPE_CODE | TeamMemberEOCollaboratorRespTypeCode | — |
+| CREATED_BY | CreatedBy | — |
+| CREATION_DATE | CreationDate | — |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | — |
+| LAST_UPDATED_BY | LastUpdatedBy | — |
+| MEMBER_TYPE_CODE | MemberTypeCode | — |
+| OBJECT_ID | ObjectId | — |
+| OBJECT_TYPE | ObjectType | — |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | — |
+| PERSON_ID | PersonId | — |
+| TEAM_MEMBER_ID | TeamMemberId | ✅ |
+
+### [[requisitioncollaboratorpvo|RequisitionCollaboratorPVO]] (HCM · BICC: 5/13)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ASSIGNMENT_ID | AssignmentId | ✅ |
+| COLLABORATOR_RESP_TYPE_CODE | TeamMemberEOCollaboratorRespTypeCode | ✅ |
+| CREATED_BY | CreatedBy | — |
+| CREATION_DATE | CreationDate | — |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | — |
+| LAST_UPDATED_BY | LastUpdatedBy | — |
+| MEMBER_TYPE_CODE | MemberTypeCode | — |
+| OBJECT_ID | ObjectId | — |
+| OBJECT_TYPE | ObjectType | — |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | — |
+| PERSON_ID | PersonId | ✅ |
+| TEAM_MEMBER_ID | TeamMemberId | ✅ |
+
+### [[requisitionhiringmanagerpvo|RequisitionHiringManagerPVO]] (HCM · BICC: 3/13)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ASSIGNMENT_ID | AssignmentId | ✅ |
+| COLLABORATOR_RESP_TYPE_CODE | TeamMemberEOCollaboratorRespTypeCode | — |
+| CREATED_BY | CreatedBy | — |
+| CREATION_DATE | CreationDate | — |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | — |
+| LAST_UPDATED_BY | LastUpdatedBy | — |
+| MEMBER_TYPE_CODE | MemberTypeCode | — |
+| OBJECT_ID | ObjectId | — |
+| OBJECT_TYPE | ObjectType | — |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | — |
+| PERSON_ID | PersonId | — |
+| TEAM_MEMBER_ID | TeamMemberId | ✅ |
+
+### [[requisitionrecruiterpvo|RequisitionRecruiterPVO]] (HCM · BICC: 3/13)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ASSIGNMENT_ID | AssignmentId | ✅ |
+| COLLABORATOR_RESP_TYPE_CODE | TeamMemberEOCollaboratorRespTypeCode | — |
+| CREATED_BY | CreatedBy | — |
+| CREATION_DATE | CreationDate | — |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | — |
+| LAST_UPDATED_BY | LastUpdatedBy | — |
+| MEMBER_TYPE_CODE | MemberTypeCode | — |
+| OBJECT_ID | ObjectId | — |
+| OBJECT_TYPE | ObjectType | — |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | — |
+| PERSON_ID | PersonId | — |
+| TEAM_MEMBER_ID | TeamMemberId | ✅ |
+
+### [[teammemberpvo|TeamMemberPVO]] (HCM · BICC: 7/13)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ASSIGNMENT_ID | AssignmentId | ✅ |
+| COLLABORATOR_RESP_TYPE_CODE | TeamMemberEOCollaboratorRespTypeCode | — |
+| CREATED_BY | CreatedBy | — |
+| CREATION_DATE | CreationDate | — |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | — |
+| LAST_UPDATED_BY | LastUpdatedBy | — |
+| MEMBER_TYPE_CODE | MemberTypeCode | ✅ |
+| OBJECT_ID | ObjectId | ✅ |
+| OBJECT_TYPE | ObjectType | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | — |
+| PERSON_ID | PersonId | ✅ |
+| TEAM_MEMBER_ID | TeamMemberId | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — IRC_TEAM_MEMBERS](https://docs.oracle.com/en/cloud/saas/talent-management/25a/oedmf/ircteammembers.html)

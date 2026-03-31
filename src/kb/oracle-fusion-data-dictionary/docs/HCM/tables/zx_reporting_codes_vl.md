@@ -72,3 +72,61 @@ updated_at: 2026-03-26
 ## 📎 Uso Típico
 
 (a ser preenchido na etapa 03)
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[sitetaxreportingcode|SiteTaxReportingCode]] (AR · BICC: 2/22)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | TaxRepCodeCreatedBy | — |
+| CREATION_DATE | TaxRepCodeCreationDate | — |
+| EFFECTIVE_FROM | TaxRepCodeEffectiveFrom | — |
+| EFFECTIVE_TO | TaxRepCodeEffectiveTo | — |
+| EXCEPTION_CODE | TaxRepCodeExceptionCode | — |
+| LAST_UPDATE_DATE | TaxRepCodeLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | TaxRepCodeLastUpdateLogin | — |
+| LAST_UPDATED_BY | TaxRepCodeLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | TaxRepCodeObjectVersionNumber | — |
+| PROGRAM_APP_NAME | TaxRepCodeProgramAppName | — |
+| PROGRAM_LOGIN_ID | TaxRepCodeProgramLoginId | — |
+| PROGRAM_NAME | TaxRepCodeProgramName | — |
+| RECORD_TYPE_CODE | TaxRepCodeRecordTypeCode | — |
+| REPORTING_CODE_CHAR_VALUE | TaxRepCodeReportingCodeCharValue | — |
+| REPORTING_CODE_DATE_VALUE | TaxRepCodeReportingCodeDateValue | — |
+| REPORTING_CODE_ID | TaxRepCodeReportingCodeId | — |
+| REPORTING_CODE_NAME | TaxRepCodeReportingCodeName | ✅ |
+| REPORTING_CODE_NUM_VALUE | TaxRepCodeReportingCodeNumValue | — |
+| REPORTING_TYPE_ID | TaxRepCodeReportingTypeId | — |
+| REQUEST_ID | TaxRepCodeRequestId | — |
+| SIGN_FLAG | TaxRepCodeSignFlag | — |
+| VALUE_TYPE_CODE | TaxRepCodeValueTypeCode | — |
+
+### [[taxreportingcode|TaxReportingCode]] (AR · BICC: 2/22)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | TaxRepCodeCreatedBy | — |
+| CREATION_DATE | TaxRepCodeCreationDate | — |
+| EFFECTIVE_FROM | TaxRepCodeEffectiveFrom | — |
+| EFFECTIVE_TO | TaxRepCodeEffectiveTo | — |
+| EXCEPTION_CODE | TaxRepCodeExceptionCode | — |
+| LAST_UPDATE_DATE | TaxRepCodeLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | TaxRepCodeLastUpdateLogin | — |
+| LAST_UPDATED_BY | TaxRepCodeLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | TaxRepCodeObjectVersionNumber | — |
+| PROGRAM_APP_NAME | TaxRepCodeProgramAppName | — |
+| PROGRAM_LOGIN_ID | TaxRepCodeProgramLoginId | — |
+| PROGRAM_NAME | TaxRepCodeProgramName | — |
+| RECORD_TYPE_CODE | TaxRepCodeRecordTypeCode | — |
+| REPORTING_CODE_CHAR_VALUE | TaxRepCodeReportingCodeCharValue | — |
+| REPORTING_CODE_DATE_VALUE | TaxRepCodeReportingCodeDateValue | — |
+| REPORTING_CODE_ID | TaxRepCodeReportingCodeId | — |
+| REPORTING_CODE_NAME | TaxRepCodeReportingCodeName | ✅ |
+| REPORTING_CODE_NUM_VALUE | TaxRepCodeReportingCodeNumValue | — |
+| REPORTING_TYPE_ID | TaxRepCodeReportingTypeId | — |
+| REQUEST_ID | TaxRepCodeRequestId | — |
+| SIGN_FLAG | TaxRepCodeSignFlag | — |
+| VALUE_TYPE_CODE | TaxRepCodeValueTypeCode | — |

@@ -111,3 +111,24 @@ WHERE  re.EXCEPTION_TYPE = 'HOLIDAY'
 
 - [Oracle Docs — PER_RESOURCE_EXCEPTIONS](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/perresourceexceptions.html)
 - [[hcm-module-data-dictionary]] — Dossiê do módulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[scheduleexceptionpvo|ScheduleExceptionPVO]] (GL · BICC: 4/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| AVAILABILITY_CODE | ResourceExceptionPEOAvailabilityCode | — |
+| CREATED_BY | ResourceExceptionPEOCreatedBy | — |
+| CREATION_DATE | ResourceExceptionPEOCreationDate | — |
+| END_DATE_TIME | ResourceExceptionPEOEndDateTime | ✅ |
+| ENTERPRISE_ID | ResourceExceptionPEOEnterpriseId | — |
+| EXCEPTION_ID | ResourceExceptionPEOExceptionId | — |
+| EXCEPTION_NAME | ResourceExceptionPEOExceptionName | ✅ |
+| LAST_UPDATE_DATE | ResourceExceptionPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ResourceExceptionPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | ResourceExceptionPEOLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | ResourceExceptionPEOObjectVersionNumber | — |
+| START_DATE_TIME | ResourceExceptionPEOStartDateTime | ✅ |

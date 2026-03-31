@@ -75,3 +75,82 @@ updated_at: 2026-03-26
 ## 📎 Uso Típico
 
 (a ser preenchido na etapa 03)
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[classcategoryorgtypepvo|ClassCategoryOrgTypePVO]] (HCM · BICC: 4/24)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTUAL_CONTENT_SOURCE | ActualContentSource | — |
+| CLASS_CATEGORY | ClassCategory | ✅ |
+| CLASS_CODE | ClassCode | ✅ |
+| CODE_ASSIGNMENT_ID | CodeAssignmentId | ✅ |
+| CREATED_BY | CreatedBy | — |
+| CREATED_BY_MODULE | CreatedByModule | — |
+| CREATION_DATE | CreationDate | — |
+| END_DATE_ACTIVE | EndDateActive | — |
+| JOB_DEFINITION_NAME | JobDefinitionName | — |
+| JOB_DEFINITION_PACKAGE | JobDefinitionPackage | — |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | — |
+| LAST_UPDATED_BY | LastUpdatedBy | — |
+| OWNER_TABLE_ID | OwnerTableId | — |
+| OWNER_TABLE_KEY_1 | OwnerTableKey1 | — |
+| OWNER_TABLE_KEY_2 | OwnerTableKey2 | — |
+| OWNER_TABLE_KEY_3 | OwnerTableKey3 | — |
+| OWNER_TABLE_KEY_4 | OwnerTableKey4 | — |
+| OWNER_TABLE_KEY_5 | OwnerTableKey5 | — |
+| OWNER_TABLE_NAME | OwnerTableName | — |
+| PRIMARY_FLAG | PrimaryFlag | — |
+| RANK | Rank | — |
+| START_DATE_ACTIVE | StartDateActive | — |
+| STATUS | Status | — |
+
+### [[sitetaxclassification|SiteTaxClassification]] (AR · BICC: 4/18)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CLASS_CATEGORY | CodeAssignmentClassCategory | — |
+| CLASS_CODE | CodeAssignmentClassCode | ✅ |
+| CODE_ASSIGNMENT_ID | CodeAssignmentCodeAssignmentId | — |
+| CREATED_BY | CodeAssignmentCreatedBy | — |
+| CREATED_BY_MODULE | CodeAssignmentCreatedByModule | — |
+| CREATION_DATE | CodeAssignmentCreationDate | — |
+| END_DATE_ACTIVE | CodeAssignmentEndDateActive | ✅ |
+| JOB_DEFINITION_NAME | CodeAssignmentJobDefinitionName | — |
+| JOB_DEFINITION_PACKAGE | CodeAssignmentJobDefinitionPackage | — |
+| LAST_UPDATE_DATE | CodeAssignmentLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | CodeAssignmentLastUpdateLogin | — |
+| LAST_UPDATED_BY | CodeAssignmentLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | CodeAssignmentObjectVersionNumber | — |
+| OWNER_TABLE_ID | CodeAssignmentOwnerTableId | — |
+| PRIMARY_FLAG | CodeAssignmentPrimaryFlag | — |
+| RANK | CodeAssignmentRank | — |
+| START_DATE_ACTIVE | CodeAssignmentStartDateActive | ✅ |
+| STATUS | CodeAssignmentStatus | — |
+
+### [[taxclassification|TaxClassification]] (AR · BICC: 4/18)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CLASS_CATEGORY | CodeAssignmentClassCategory | — |
+| CLASS_CODE | CodeAssignmentClassCode | ✅ |
+| CODE_ASSIGNMENT_ID | CodeAssignmentCodeAssignmentId | — |
+| CREATED_BY | CodeAssignmentCreatedBy | — |
+| CREATED_BY_MODULE | CodeAssignmentCreatedByModule | — |
+| CREATION_DATE | CodeAssignmentCreationDate | — |
+| END_DATE_ACTIVE | CodeAssignmentEndDateActive | ✅ |
+| JOB_DEFINITION_NAME | CodeAssignmentJobDefinitionName | — |
+| JOB_DEFINITION_PACKAGE | CodeAssignmentJobDefinitionPackage | — |
+| LAST_UPDATE_DATE | CodeAssignmentLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | CodeAssignmentLastUpdateLogin | — |
+| LAST_UPDATED_BY | CodeAssignmentLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | CodeAssignmentObjectVersionNumber | — |
+| OWNER_TABLE_ID | CodeAssignmentOwnerTableId | — |
+| PRIMARY_FLAG | CodeAssignmentPrimaryFlag | — |
+| RANK | CodeAssignmentRank | — |
+| START_DATE_ACTIVE | CodeAssignmentStartDateActive | ✅ |
+| STATUS | CodeAssignmentStatus | — |

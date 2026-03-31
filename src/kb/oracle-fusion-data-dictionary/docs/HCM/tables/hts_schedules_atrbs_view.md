@@ -101,3 +101,35 @@ WHERE  sa.SCHEDULE_ID = :p_schedule_id;
 
 - [Oracle Docs — HTS_SCHEDULES_ATRBS_VIEW](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/htsschedulesatrbsview.html)
 - [[hcm-module-data-dictionary]] — Dossie do modulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[plannedscheduleshiftentrypvo|PlannedScheduleShiftEntryPVO]] (HCM · BICC: 4/9)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| LANGUAGE | Language | — |
+| SHIFT_COLOUR | ShiftColour | — |
+| SHIFT_ID | ShiftId | — |
+| SHIFT_NAME | ShiftName | ✅ |
+| SHIFT_SHORT_NAME | ShiftShortName | ✅ |
+| SHIFT_TYPE_CODE | ShiftTypeCode | ✅ |
+| SHORT_TXT | ShortTxt | — |
+| TIME_NOT_WORKED | ShiftTimeNotWorked | ✅ |
+| USAGES_SOURCE_ID | UsagesSourceId | — |
+
+### [[publishedscheduleshiftentrypvo|PublishedScheduleShiftEntryPVO]] (HCM · BICC: 4/9)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| LANGUAGE | Language | — |
+| SHIFT_COLOUR | ShiftColour | — |
+| SHIFT_ID | ShiftId | — |
+| SHIFT_NAME | ShiftName | ✅ |
+| SHIFT_SHORT_NAME | ShiftShortName | ✅ |
+| SHIFT_TYPE_CODE | ShiftTypeCode | ✅ |
+| SHORT_TXT | ShortTxt | — |
+| TIME_NOT_WORKED | ShiftTimeNotWorked | ✅ |
+| USAGES_SOURCE_ID | UsagesSourceId | — |

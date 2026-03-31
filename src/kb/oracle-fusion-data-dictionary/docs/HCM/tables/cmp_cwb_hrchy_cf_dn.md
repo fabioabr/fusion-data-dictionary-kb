@@ -39,7 +39,6 @@ updated_at: 2026-03-25
 
 Armazena a **hierarquia denormalizada** do Compensation Workbench, permitindo navegação rápida na árvore de gestores para distribuição de compensação.
 
-
 ---
 
 ## 🧠 Propósito de Negócio
@@ -106,6 +105,102 @@ ORDER BY h.LEVEL_NUMBER;
 - Estrutura denormalizada para performance: cada registro conecta um gestor a todos os seus subordinados.
 - `LEVEL_NUMBER` indica a profundidade na hierarquia (1 = direto, 2 = indireto, etc.).
 - Recriada a cada ciclo de compensação.
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[hierarchycfdnpvo|HierarchyCfDnPVO]] (HCM · BICC: 39/41)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ASSIGNMENT_ID | AssignmentId | — |
+| CREATED_BY | HierarchyCfDnPEOCreatedBy | ✅ |
+| CREATION_DATE | HierarchyCfDnPEOCreationDate | ✅ |
+| LAST_UPDATE_DATE | HierarchyCfDnPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | HierarchyCfDnPEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | HierarchyCfDnPEOLastUpdatedBy | ✅ |
+| LEVEL10_MGR_PERSON_ID | HierarchyCfDnPEOLevel10MgrPersonId | ✅ |
+| LEVEL10_PERSON_EVENT_ID | HierarchyCfDnPEOLevel10PersonEventId | ✅ |
+| LEVEL11_MGR_PERSON_ID | HierarchyCfDnPEOLevel11MgrPersonId | ✅ |
+| LEVEL11_PERSON_EVENT_ID | HierarchyCfDnPEOLevel11PersonEventId | ✅ |
+| LEVEL12_MGR_PERSON_ID | HierarchyCfDnPEOLevel12MgrPersonId | ✅ |
+| LEVEL12_PERSON_EVENT_ID | HierarchyCfDnPEOLevel12PersonEventId | ✅ |
+| LEVEL13_MGR_PERSON_ID | HierarchyCfDnPEOLevel13MgrPersonId | ✅ |
+| LEVEL13_PERSON_EVENT_ID | HierarchyCfDnPEOLevel13PersonEventId | ✅ |
+| LEVEL14_MGR_PERSON_ID | HierarchyCfDnPEOLevel14MgrPersonId | ✅ |
+| LEVEL14_PERSON_EVENT_ID | HierarchyCfDnPEOLevel14PersonEventId | ✅ |
+| LEVEL15_MGR_PERSON_ID | HierarchyCfDnPEOLevel15MgrPersonId | ✅ |
+| LEVEL15_PERSON_EVENT_ID | HierarchyCfDnPEOLevel15PersonEventId | ✅ |
+| LEVEL1_MGR_PERSON_ID | HierarchyCfDnPEOLevel1MgrPersonId | ✅ |
+| LEVEL1_PERSON_EVENT_ID | HierarchyCfDnPEOLevel1PersonEventId | ✅ |
+| LEVEL2_MGR_PERSON_ID | HierarchyCfDnPEOLevel2MgrPersonId | ✅ |
+| LEVEL2_PERSON_EVENT_ID | HierarchyCfDnPEOLevel2PersonEventId | ✅ |
+| LEVEL3_MGR_PERSON_ID | HierarchyCfDnPEOLevel3MgrPersonId | ✅ |
+| LEVEL3_PERSON_EVENT_ID | HierarchyCfDnPEOLevel3PersonEventId | ✅ |
+| LEVEL4_MGR_PERSON_ID | HierarchyCfDnPEOLevel4MgrPersonId | ✅ |
+| LEVEL4_PERSON_EVENT_ID | HierarchyCfDnPEOLevel4PersonEventId | ✅ |
+| LEVEL5_MGR_PERSON_ID | HierarchyCfDnPEOLevel5MgrPersonId | ✅ |
+| LEVEL5_PERSON_EVENT_ID | HierarchyCfDnPEOLevel5PersonEventId | ✅ |
+| LEVEL6_MGR_PERSON_ID | HierarchyCfDnPEOLevel6MgrPersonId | ✅ |
+| LEVEL6_PERSON_EVENT_ID | HierarchyCfDnPEOLevel6PersonEventId | ✅ |
+| LEVEL7_MGR_PERSON_ID | HierarchyCfDnPEOLevel7MgrPersonId | ✅ |
+| LEVEL7_PERSON_EVENT_ID | HierarchyCfDnPEOLevel7PersonEventId | ✅ |
+| LEVEL8_MGR_PERSON_ID | HierarchyCfDnPEOLevel8MgrPersonId | ✅ |
+| LEVEL8_PERSON_EVENT_ID | HierarchyCfDnPEOLevel8PersonEventId | ✅ |
+| LEVEL9_MGR_PERSON_ID | HierarchyCfDnPEOLevel9MgrPersonId | ✅ |
+| LEVEL9_PERSON_EVENT_ID | HierarchyCfDnPEOLevel9PersonEventId | ✅ |
+| PERSON_ID | HierarchyCfDnPEOPersonId | — |
+| TOP_MGR_PERSON_EVENT_ID | TopMgrPersonEventId | ✅ |
+| TOP_MGR_PERSON_ID | HierarchyCfDnPEOTopMgrPersonId | ✅ |
+| TOP_PERIOD_ID | HierarchyCfDnPEOTopPeriodId | ✅ |
+| TOP_PLAN_ID | HierarchyCfDnPEOTopPlanId | ✅ |
+
+### [[linemgrhierarchycfdnpvo|LineMgrHierarchyCfDnPVO]] (HCM · BICC: 32/41)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ASSIGNMENT_ID | AssignmentId | — |
+| CREATED_BY | HierarchyCfDnPEOCreatedBy | — |
+| CREATION_DATE | HierarchyCfDnPEOCreationDate | — |
+| LAST_UPDATE_DATE | HierarchyCfDnPEOLastUpdateDate | — |
+| LAST_UPDATE_LOGIN | HierarchyCfDnPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | HierarchyCfDnPEOLastUpdatedBy | — |
+| LEVEL10_MGR_PERSON_ID | HierarchyCfDnPEOLevel10MgrPersonId | ✅ |
+| LEVEL10_PERSON_EVENT_ID | HierarchyCfDnPEOLevel10PersonEventId | ✅ |
+| LEVEL11_MGR_PERSON_ID | HierarchyCfDnPEOLevel11MgrPersonId | ✅ |
+| LEVEL11_PERSON_EVENT_ID | HierarchyCfDnPEOLevel11PersonEventId | ✅ |
+| LEVEL12_MGR_PERSON_ID | HierarchyCfDnPEOLevel12MgrPersonId | ✅ |
+| LEVEL12_PERSON_EVENT_ID | HierarchyCfDnPEOLevel12PersonEventId | ✅ |
+| LEVEL13_MGR_PERSON_ID | HierarchyCfDnPEOLevel13MgrPersonId | ✅ |
+| LEVEL13_PERSON_EVENT_ID | HierarchyCfDnPEOLevel13PersonEventId | ✅ |
+| LEVEL14_MGR_PERSON_ID | HierarchyCfDnPEOLevel14MgrPersonId | ✅ |
+| LEVEL14_PERSON_EVENT_ID | HierarchyCfDnPEOLevel14PersonEventId | ✅ |
+| LEVEL15_MGR_PERSON_ID | HierarchyCfDnPEOLevel15MgrPersonId | ✅ |
+| LEVEL15_PERSON_EVENT_ID | HierarchyCfDnPEOLevel15PersonEventId | ✅ |
+| LEVEL1_MGR_PERSON_ID | HierarchyCfDnPEOLevel1MgrPersonId | ✅ |
+| LEVEL1_PERSON_EVENT_ID | HierarchyCfDnPEOLevel1PersonEventId | ✅ |
+| LEVEL2_MGR_PERSON_ID | HierarchyCfDnPEOLevel2MgrPersonId | ✅ |
+| LEVEL2_PERSON_EVENT_ID | HierarchyCfDnPEOLevel2PersonEventId | ✅ |
+| LEVEL3_MGR_PERSON_ID | HierarchyCfDnPEOLevel3MgrPersonId | ✅ |
+| LEVEL3_PERSON_EVENT_ID | HierarchyCfDnPEOLevel3PersonEventId | ✅ |
+| LEVEL4_MGR_PERSON_ID | HierarchyCfDnPEOLevel4MgrPersonId | ✅ |
+| LEVEL4_PERSON_EVENT_ID | HierarchyCfDnPEOLevel4PersonEventId | ✅ |
+| LEVEL5_MGR_PERSON_ID | HierarchyCfDnPEOLevel5MgrPersonId | ✅ |
+| LEVEL5_PERSON_EVENT_ID | HierarchyCfDnPEOLevel5PersonEventId | ✅ |
+| LEVEL6_MGR_PERSON_ID | HierarchyCfDnPEOLevel6MgrPersonId | ✅ |
+| LEVEL6_PERSON_EVENT_ID | HierarchyCfDnPEOLevel6PersonEventId | ✅ |
+| LEVEL7_MGR_PERSON_ID | HierarchyCfDnPEOLevel7MgrPersonId | ✅ |
+| LEVEL7_PERSON_EVENT_ID | HierarchyCfDnPEOLevel7PersonEventId | ✅ |
+| LEVEL8_MGR_PERSON_ID | HierarchyCfDnPEOLevel8MgrPersonId | ✅ |
+| LEVEL8_PERSON_EVENT_ID | HierarchyCfDnPEOLevel8PersonEventId | ✅ |
+| LEVEL9_MGR_PERSON_ID | HierarchyCfDnPEOLevel9MgrPersonId | ✅ |
+| LEVEL9_PERSON_EVENT_ID | HierarchyCfDnPEOLevel9PersonEventId | ✅ |
+| PERSON_ID | HierarchyCfDnPEOPersonId | — |
+| TOP_MGR_PERSON_EVENT_ID | TopMgrPersonEventId | ✅ |
+| TOP_MGR_PERSON_ID | HierarchyCfDnPEOTopMgrPersonId | ✅ |
+| TOP_PERIOD_ID | HierarchyCfDnPEOTopPeriodId | — |
+| TOP_PLAN_ID | HierarchyCfDnPEOTopPlanId | — |
 
 ---
 

@@ -118,6 +118,29 @@ GROUP BY sc.COMPONENT_TYPE;
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[salarycomponentspvo|SalaryComponentsPVO]] (HCM · BICC: 9/14)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ATTRIBUTE_CATEGORY | ComponentsEOAttributeCategory | — |
+| BUSINESS_GROUP_ID | ComponentsEOBusinessGroupId | — |
+| CHANGE_AMOUNT | ComponentsEOChangeAmount | ✅ |
+| CHANGE_PERCENTAGE | ComponentsEOChangePercentage | ✅ |
+| COMPONENT_APPROVED | ComponentsEOComponentApproved | ✅ |
+| COMPONENT_REASON_CODE | ComponentsEOComponentReasonCode | ✅ |
+| CREATED_BY | ComponentsEOCreatedBy | ✅ |
+| CREATION_DATE | ComponentsEOCreationDate | ✅ |
+| LAST_UPDATE_DATE | ComponentsEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ComponentsEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | ComponentsEOLastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | ComponentsEOObjectVersionNumber | — |
+| SALARY_COMPONENT_ID | SalaryComponentId | ✅ |
+| SALARY_ID | ComponentsEOSalaryId | — |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — CMP_SALARY_COMPONENTS](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/cmpsalarycomponents.html)

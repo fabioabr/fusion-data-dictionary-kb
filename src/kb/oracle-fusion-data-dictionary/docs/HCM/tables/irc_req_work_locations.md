@@ -99,6 +99,23 @@ WHERE  rwl.REQUISITION_ID = :p_requisition_id;
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[requisitionworklocationpvo|RequisitionWorkLocationPVO]] (PO · BICC: 3/8)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | CreatedBy | — |
+| CREATION_DATE | CreationDate | — |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | — |
+| LAST_UPDATED_BY | LastUpdatedBy | — |
+| LOCATION_ID | LocationId | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | — |
+| REQUISITION_ID | RequisitionId | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — IRC_REQ_WORK_LOCATIONS](https://docs.oracle.com/en/cloud/saas/talent-management/25a/oedmf/ircreqworklocations.html)

@@ -93,6 +93,142 @@ WHERE  tl.QUESTION_ID = :p_id AND tl.LANGUAGE = USERENV('LANG');
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[managerquestionnairequestionpvo|ManagerQuestionnaireQuestionPVO]] (HCM · BICC: 2/18)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | ConditionQuestionTLPEOBusinessGroupId | — |
+| BUSINESS_GROUP_ID | QuestionTranslationPEOBusinessGroupId | — |
+| CREATED_BY | QuestionnaireTranslationPEOCreatedBy | — |
+| CREATION_DATE | QuestionnaireTranslationPEOCreationDate | — |
+| INSTRUCTIONS_TEXT | QuestionTranslationPEOInstructionsText | — |
+| LANGUAGE | ConditionQuestionTLPEOLanguage | — |
+| LANGUAGE | QuestionTranslationPEOLanguage | — |
+| LAST_UPDATE_DATE | QuestionnaireTranslationPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | QuestionnaireTranslationPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | QuestionnaireTranslationPEOLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | QuestionnaireTranslationPEOObjectVersionNumber | — |
+| QSTN_VERSION_NUM | ConditionQuestionTLPEOQstnVersionNum | — |
+| QSTN_VERSION_NUM | QuestionTranslationPEOQstnVersionNum | — |
+| QUESTION_ID | ConditionQuestionTLPEOQuestionId | — |
+| QUESTION_ID | QuestionTranslationPEOQuestionId | — |
+| QUESTION_TEXT | ConditionQuestionTLPEOQuestionText | — |
+| QUESTION_TEXT | QuestionTranslationPEOQuestionText | ✅ |
+| SOURCE_LANG | QuestionnaireTranslationPEOSourceLang | — |
+
+### [[participantquestionnairequestionpvo|ParticipantQuestionnaireQuestionPVO]] (HCM · BICC: 9/18)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | ConditionQuestionTLPEOBusinessGroupId | — |
+| BUSINESS_GROUP_ID | QuestionTranslationPEOBusinessGroupId | ✅ |
+| CREATED_BY | QuestionnaireTranslationPEOCreatedBy | ✅ |
+| CREATION_DATE | QuestionnaireTranslationPEOCreationDate | ✅ |
+| INSTRUCTIONS_TEXT | QuestionTranslationPEOInstructionsText | — |
+| LANGUAGE | ConditionQuestionTLPEOLanguage | — |
+| LANGUAGE | QuestionTranslationPEOLanguage | ✅ |
+| LAST_UPDATE_DATE | QuestionnaireTranslationPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | QuestionnaireTranslationPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | QuestionnaireTranslationPEOLastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | QuestionnaireTranslationPEOObjectVersionNumber | — |
+| QSTN_VERSION_NUM | ConditionQuestionTLPEOQstnVersionNum | — |
+| QSTN_VERSION_NUM | QuestionTranslationPEOQstnVersionNum | ✅ |
+| QUESTION_ID | ConditionQuestionTLPEOQuestionId | — |
+| QUESTION_ID | QuestionTranslationPEOQuestionId | ✅ |
+| QUESTION_TEXT | ConditionQuestionTLPEOQuestionText | — |
+| QUESTION_TEXT | QuestionTranslationPEOQuestionText | ✅ |
+| SOURCE_LANG | QuestionnaireTranslationPEOSourceLang | — |
+
+### [[participantquestionnairequestionpvoforpotentialassessement|ParticipantQuestionnaireQuestionPVOForPotentialAssessement]] (HCM · BICC: 2/18)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | ConditionQuestionTLPEOBusinessGroupId | — |
+| BUSINESS_GROUP_ID | QuestionTranslationPEOBusinessGroupId | — |
+| CREATED_BY | QuestionnaireTranslationPEOCreatedBy | — |
+| CREATION_DATE | QuestionnaireTranslationPEOCreationDate | — |
+| INSTRUCTIONS_TEXT | QuestionTranslationPEOInstructionsText | — |
+| LANGUAGE | ConditionQuestionTLPEOLanguage | — |
+| LANGUAGE | QuestionTranslationPEOLanguage | — |
+| LAST_UPDATE_DATE | QuestionnaireTranslationPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | QuestionnaireTranslationPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | QuestionnaireTranslationPEOLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | QuestionnaireTranslationPEOObjectVersionNumber | — |
+| QSTN_VERSION_NUM | ConditionQuestionTLPEOQstnVersionNum | — |
+| QSTN_VERSION_NUM | QuestionTranslationPEOQstnVersionNum | — |
+| QUESTION_ID | ConditionQuestionTLPEOQuestionId | — |
+| QUESTION_ID | QuestionTranslationPEOQuestionId | — |
+| QUESTION_TEXT | ConditionQuestionTLPEOQuestionText | — |
+| QUESTION_TEXT | QuestionTranslationPEOQuestionText | ✅ |
+| SOURCE_LANG | QuestionnaireTranslationPEOSourceLang | — |
+
+### [[questionnaireallquestionsp1|QuestionnaireAllQuestionsP1]] (HCM · BICC: 1/13)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | ConditionQuestionTLPEOBusinessGroupId | — |
+| BUSINESS_GROUP_ID | QuestionTranslationPEOBusinessGroupId | — |
+| INSTRUCTIONS_TEXT | QuestionTranslationPEOInstructionsText | — |
+| LANGUAGE | ConditionQuestionTLPEOLanguage | — |
+| LANGUAGE | QuestionTranslationPEOLanguage | — |
+| QSTN_VERSION_NUM | ConditionQuestionTLPEOQstnVersionNum | — |
+| QSTN_VERSION_NUM | QuestionTranslationPEOQstnVersionNum | — |
+| QUESTION_ID | ConditionQuestionTLPEOQuestionId | — |
+| QUESTION_ID | QuestionTranslationPEOQuestionId | — |
+| QUESTION_TEXT | ConditionQuestionTLPEOQuestionText | — |
+| QUESTION_TEXT | QuestionTranslationPEOQuestionText | ✅ |
+| SEED_DATA_SOURCE | QuestionTranslationPEOSeedDataSource | — |
+| SOURCE_LANG | QuestionTranslationPEOSourceLang | — |
+
+### [[questionnairequestionpvo|QuestionnaireQuestionPVO]] (HCM · BICC: 6/17)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | ConditionQuestionTLPEOBusinessGroupId | — |
+| BUSINESS_GROUP_ID | QuestionTranslationPEOBusinessGroupId | ✅ |
+| CREATED_BY | QuestionnaireTranslationPEOCreatedBy | — |
+| CREATION_DATE | QuestionnaireTranslationPEOCreationDate | — |
+| LANGUAGE | ConditionQuestionTLPEOLanguage | — |
+| LANGUAGE | QuestionTranslationPEOLanguage | ✅ |
+| LAST_UPDATE_DATE | QuestionnaireTranslationPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | QuestionnaireTranslationPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | QuestionnaireTranslationPEOLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | QuestionnaireTranslationPEOObjectVersionNumber | — |
+| QSTN_VERSION_NUM | ConditionQuestionTLPEOQstnVersionNum | — |
+| QSTN_VERSION_NUM | QuestionTranslationPEOQstnVersionNum | ✅ |
+| QUESTION_ID | ConditionQuestionTLPEOQuestionId | — |
+| QUESTION_ID | QuestionTranslationPEOQuestionId | ✅ |
+| QUESTION_TEXT | ConditionQuestionTLPEOQuestionText | — |
+| QUESTION_TEXT | QuestionTranslationPEOQuestionText | ✅ |
+| SOURCE_LANG | QuestionnaireTranslationPEOSourceLang | — |
+
+### [[workerquestionnairequestionpvo|WorkerQuestionnaireQuestionPVO]] (HCM · BICC: 2/18)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | ConditionQuestionTLPEOBusinessGroupId | — |
+| BUSINESS_GROUP_ID | QuestionTranslationPEOBusinessGroupId | — |
+| CREATED_BY | QuestionnaireTranslationPEOCreatedBy | — |
+| CREATION_DATE | QuestionnaireTranslationPEOCreationDate | — |
+| INSTRUCTIONS_TEXT | QuestionTranslationPEOInstructionsText | — |
+| LANGUAGE | ConditionQuestionTLPEOLanguage | — |
+| LANGUAGE | QuestionTranslationPEOLanguage | — |
+| LAST_UPDATE_DATE | QuestionnaireTranslationPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | QuestionnaireTranslationPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | QuestionnaireTranslationPEOLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | QuestionnaireTranslationPEOObjectVersionNumber | — |
+| QSTN_VERSION_NUM | ConditionQuestionTLPEOQstnVersionNum | — |
+| QSTN_VERSION_NUM | QuestionTranslationPEOQstnVersionNum | — |
+| QUESTION_ID | ConditionQuestionTLPEOQuestionId | — |
+| QUESTION_ID | QuestionTranslationPEOQuestionId | — |
+| QUESTION_TEXT | ConditionQuestionTLPEOQuestionText | — |
+| QUESTION_TEXT | QuestionTranslationPEOQuestionText | ✅ |
+| SOURCE_LANG | QuestionnaireTranslationPEOSourceLang | — |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Fusion HCM Tables and Views](https://docs.oracle.com/en/cloud/saas/human-resources/25a/)

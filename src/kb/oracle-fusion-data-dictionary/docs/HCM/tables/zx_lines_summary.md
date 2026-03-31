@@ -207,3 +207,178 @@ updated_at: 2026-03-26
 ## 📎 Uso Típico
 
 (a ser preenchido na etapa 03)
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[prepaymentappliationdistributionpvo|PrepaymentAppliationDistributionPVO]] (AP · BICC: 2/4)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| LAST_UPDATE_DATE | DistSumTaxLineLastUpdateDate | ✅ |
+| LAST_UPDATE_DATE | SumTaxLineLastUpdateDate | ✅ |
+| SUMMARY_TAX_LINE_ID | DistSumTaxLineSummaryTaxLineId | — |
+| SUMMARY_TAX_LINE_ID | SumTaxLineSummaryTaxLineId | — |
+
+### [[summarytaxlineextractpvo|SummaryTaxLineExtractPVO]] (OTHER · BICC: 110/157)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ADJ_DOC_HDR_TRX_USER_KEY1 | SummaryTaxLineAdjDocHdrTrxUserKey1 | ✅ |
+| ADJ_DOC_HDR_TRX_USER_KEY2 | SummaryTaxLineAdjDocHdrTrxUserKey2 | ✅ |
+| ADJ_DOC_HDR_TRX_USER_KEY3 | SummaryTaxLineAdjDocHdrTrxUserKey3 | ✅ |
+| ADJ_DOC_HDR_TRX_USER_KEY4 | SummaryTaxLineAdjDocHdrTrxUserKey4 | ✅ |
+| ADJ_DOC_HDR_TRX_USER_KEY5 | SummaryTaxLineAdjDocHdrTrxUserKey5 | ✅ |
+| ADJ_DOC_HDR_TRX_USER_KEY6 | SummaryTaxLineAdjDocHdrTrxUserKey6 | ✅ |
+| ADJUST_TAX_AMT_FLAG | SummaryTaxLineAdjustTaxAmtFlag | ✅ |
+| ADJUSTED_DOC_APPLICATION_ID | SummaryTaxLineAdjustedDocApplicationId | ✅ |
+| ADJUSTED_DOC_ENTITY_CODE | SummaryTaxLineAdjustedDocEntityCode | ✅ |
+| ADJUSTED_DOC_EVENT_CLASS_CODE | SummaryTaxLineAdjustedDocEventClassCode | ✅ |
+| ADJUSTED_DOC_TRX_ID | SummaryTaxLineAdjustedDocTrxId | ✅ |
+| ADJUSTED_DOC_TRX_LEVEL_TYPE | SummaryTaxLineAdjustedDocTrxLevelType | ✅ |
+| APP_FROM_LIN_TRX_USER_KEY1 | SummaryTaxLineAppFromLinTrxUserKey1 | ✅ |
+| APP_FROM_LIN_TRX_USER_KEY2 | SummaryTaxLineAppFromLinTrxUserKey2 | ✅ |
+| APP_FROM_LIN_TRX_USER_KEY3 | SummaryTaxLineAppFromLinTrxUserKey3 | ✅ |
+| APP_FROM_LIN_TRX_USER_KEY4 | SummaryTaxLineAppFromLinTrxUserKey4 | ✅ |
+| APP_FROM_LIN_TRX_USER_KEY5 | SummaryTaxLineAppFromLinTrxUserKey5 | ✅ |
+| APP_FROM_LIN_TRX_USER_KEY6 | SummaryTaxLineAppFromLinTrxUserKey6 | ✅ |
+| APP_TO_HDR_TRX_USER_KEY1 | SummaryTaxLineAppToHdrTrxUserKey1 | ✅ |
+| APP_TO_HDR_TRX_USER_KEY2 | SummaryTaxLineAppToHdrTrxUserKey2 | ✅ |
+| APP_TO_HDR_TRX_USER_KEY3 | SummaryTaxLineAppToHdrTrxUserKey3 | ✅ |
+| APP_TO_HDR_TRX_USER_KEY4 | SummaryTaxLineAppToHdrTrxUserKey4 | ✅ |
+| APP_TO_HDR_TRX_USER_KEY5 | SummaryTaxLineAppToHdrTrxUserKey5 | ✅ |
+| APP_TO_HDR_TRX_USER_KEY6 | SummaryTaxLineAppToHdrTrxUserKey6 | ✅ |
+| APP_TO_LIN_TRX_USER_KEY1 | SummaryTaxLineAppToLinTrxUserKey1 | ✅ |
+| APP_TO_LIN_TRX_USER_KEY2 | SummaryTaxLineAppToLinTrxUserKey2 | ✅ |
+| APP_TO_LIN_TRX_USER_KEY3 | SummaryTaxLineAppToLinTrxUserKey3 | ✅ |
+| APP_TO_LIN_TRX_USER_KEY4 | SummaryTaxLineAppToLinTrxUserKey4 | ✅ |
+| APP_TO_LIN_TRX_USER_KEY5 | SummaryTaxLineAppToLinTrxUserKey5 | ✅ |
+| APP_TO_LIN_TRX_USER_KEY6 | SummaryTaxLineAppToLinTrxUserKey6 | ✅ |
+| APPLICATION_ID | SummaryTaxLineApplicationId | ✅ |
+| APPLIED_FROM_APPLICATION_ID | SummaryTaxLineAppliedFromApplicationId | ✅ |
+| APPLIED_FROM_ENTITY_CODE | SummaryTaxLineAppliedFromEntityCode | ✅ |
+| APPLIED_FROM_EVENT_CLASS_CODE | SummaryTaxLineAppliedFromEventClassCode | ✅ |
+| APPLIED_FROM_LINE_ID | SummaryTaxLineAppliedFromLineId | ✅ |
+| APPLIED_FROM_TRX_ID | SummaryTaxLineAppliedFromTrxId | ✅ |
+| APPLIED_FROM_TRX_LEVEL_TYPE | SummaryTaxLineAppliedFromTrxLevelType | ✅ |
+| APPLIED_TO_APPLICATION_ID | SummaryTaxLineAppliedToApplicationId | ✅ |
+| APPLIED_TO_ENTITY_CODE | SummaryTaxLineAppliedToEntityCode | ✅ |
+| APPLIED_TO_EVENT_CLASS_CODE | SummaryTaxLineAppliedToEventClassCode | ✅ |
+| APPLIED_TO_LINE_ID | SummaryTaxLineAppliedToLineId | ✅ |
+| APPLIED_TO_TRX_ID | SummaryTaxLineAppliedToTrxId | ✅ |
+| APPLIED_TO_TRX_LEVEL_TYPE | SummaryTaxLineAppliedToTrxLevelType | ✅ |
+| ASSOCIATED_CHILD_FROZEN_FLAG | SummaryTaxLineAssociatedChildFrozenFlag | ✅ |
+| ATTRIBUTE1 | SummaryTaxLineAttribute1 | — |
+| ATTRIBUTE10 | SummaryTaxLineAttribute10 | — |
+| ATTRIBUTE11 | SummaryTaxLineAttribute11 | — |
+| ATTRIBUTE12 | SummaryTaxLineAttribute12 | — |
+| ATTRIBUTE13 | SummaryTaxLineAttribute13 | — |
+| ATTRIBUTE14 | SummaryTaxLineAttribute14 | — |
+| ATTRIBUTE15 | SummaryTaxLineAttribute15 | — |
+| ATTRIBUTE2 | SummaryTaxLineAttribute2 | — |
+| ATTRIBUTE3 | SummaryTaxLineAttribute3 | — |
+| ATTRIBUTE4 | SummaryTaxLineAttribute4 | — |
+| ATTRIBUTE5 | SummaryTaxLineAttribute5 | — |
+| ATTRIBUTE6 | SummaryTaxLineAttribute6 | — |
+| ATTRIBUTE7 | SummaryTaxLineAttribute7 | — |
+| ATTRIBUTE8 | SummaryTaxLineAttribute8 | — |
+| ATTRIBUTE9 | SummaryTaxLineAttribute9 | — |
+| ATTRIBUTE_CATEGORY | SummaryTaxLineAttributeCategory | — |
+| ATTRIBUTE_DATE1 | SummaryTaxLineAttributeDate1 | — |
+| ATTRIBUTE_DATE2 | SummaryTaxLineAttributeDate2 | — |
+| ATTRIBUTE_DATE3 | SummaryTaxLineAttributeDate3 | — |
+| ATTRIBUTE_DATE4 | SummaryTaxLineAttributeDate4 | — |
+| ATTRIBUTE_DATE5 | SummaryTaxLineAttributeDate5 | — |
+| ATTRIBUTE_NUMBER1 | SummaryTaxLineAttributeNumber1 | — |
+| ATTRIBUTE_NUMBER2 | SummaryTaxLineAttributeNumber2 | — |
+| ATTRIBUTE_NUMBER3 | SummaryTaxLineAttributeNumber3 | — |
+| ATTRIBUTE_NUMBER4 | SummaryTaxLineAttributeNumber4 | — |
+| ATTRIBUTE_NUMBER5 | SummaryTaxLineAttributeNumber5 | — |
+| CANCEL_FLAG | SummaryTaxLineCancelFlag | ✅ |
+| COMPOUNDING_TAX_FLAG | SummaryTaxLineCompoundingTaxFlag | ✅ |
+| CONTENT_OWNER_ID | SummaryTaxLineContentOwnerId | ✅ |
+| COPIED_FROM_OTHER_DOC_FLAG | SummaryTaxLineCopiedFromOtherDocFlag | ✅ |
+| CREATED_BY | SummaryTaxLineCreatedBy | ✅ |
+| CREATION_DATE | SummaryTaxLineCreationDate | ✅ |
+| CURRENCY_CONVERSION_DATE | SummaryTaxLineCurrencyConversionDate | ✅ |
+| CURRENCY_CONVERSION_RATE | SummaryTaxLineCurrencyConversionRate | ✅ |
+| CURRENCY_CONVERSION_TYPE | SummaryTaxLineCurrencyConversionType | ✅ |
+| DELETE_FLAG | SummaryTaxLineDeleteFlag | ✅ |
+| ENTITY_CODE | SummaryTaxLineEntityCode | ✅ |
+| ESTABLISHMENT_ID | SummaryTaxLineEstablishmentId | ✅ |
+| EVENT_CLASS_CODE | SummaryTaxLineEventClassCode | ✅ |
+| EXCEPTION_RATE | SummaryTaxLineExceptionRate | ✅ |
+| EXEMPT_CERTIFICATE_NUMBER | SummaryTaxLineExemptCertificateNumber | ✅ |
+| EXEMPT_RATE_MODIFIER | SummaryTaxLineExemptRateModifier | ✅ |
+| EXEMPT_REASON | SummaryTaxLineExemptReason | ✅ |
+| EXEMPT_REASON_CODE | SummaryTaxLineExemptReasonCode | ✅ |
+| GLOBAL_ATTRIBUTE1 | SummaryTaxLineGlobalAttribute1 | — |
+| GLOBAL_ATTRIBUTE10 | SummaryTaxLineGlobalAttribute10 | — |
+| GLOBAL_ATTRIBUTE11 | SummaryTaxLineGlobalAttribute11 | — |
+| GLOBAL_ATTRIBUTE12 | SummaryTaxLineGlobalAttribute12 | — |
+| GLOBAL_ATTRIBUTE13 | SummaryTaxLineGlobalAttribute13 | — |
+| GLOBAL_ATTRIBUTE14 | SummaryTaxLineGlobalAttribute14 | — |
+| GLOBAL_ATTRIBUTE15 | SummaryTaxLineGlobalAttribute15 | — |
+| GLOBAL_ATTRIBUTE16 | SummaryTaxLineGlobalAttribute16 | — |
+| GLOBAL_ATTRIBUTE17 | SummaryTaxLineGlobalAttribute17 | — |
+| GLOBAL_ATTRIBUTE18 | SummaryTaxLineGlobalAttribute18 | — |
+| GLOBAL_ATTRIBUTE19 | SummaryTaxLineGlobalAttribute19 | — |
+| GLOBAL_ATTRIBUTE2 | SummaryTaxLineGlobalAttribute2 | — |
+| GLOBAL_ATTRIBUTE20 | SummaryTaxLineGlobalAttribute20 | — |
+| GLOBAL_ATTRIBUTE3 | SummaryTaxLineGlobalAttribute3 | — |
+| GLOBAL_ATTRIBUTE4 | SummaryTaxLineGlobalAttribute4 | — |
+| GLOBAL_ATTRIBUTE5 | SummaryTaxLineGlobalAttribute5 | — |
+| GLOBAL_ATTRIBUTE6 | SummaryTaxLineGlobalAttribute6 | — |
+| GLOBAL_ATTRIBUTE7 | SummaryTaxLineGlobalAttribute7 | — |
+| GLOBAL_ATTRIBUTE8 | SummaryTaxLineGlobalAttribute8 | — |
+| GLOBAL_ATTRIBUTE9 | SummaryTaxLineGlobalAttribute9 | — |
+| GLOBAL_ATTRIBUTE_CATEGORY | SummaryTaxLineGlobalAttributeCategory | — |
+| HISTORICAL_FLAG | SummaryTaxLineHistoricalFlag | ✅ |
+| INTERNAL_ORGANIZATION_ID | SummaryTaxLineInternalOrganizationId | ✅ |
+| LAST_MANUAL_ENTRY | SummaryTaxLineLastManualEntry | ✅ |
+| LAST_UPDATE_DATE | SummaryTaxLineLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | SummaryTaxLineLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | SummaryTaxLineLastUpdatedBy | ✅ |
+| LEDGER_ID | SummaryTaxLineLedgerId | ✅ |
+| LEGAL_ENTITY_ID | SummaryTaxLineLegalEntityId | ✅ |
+| MANUALLY_ENTERED_FLAG | SummaryTaxLineManuallyEnteredFlag | ✅ |
+| MRC_TAX_LINE_FLAG | SummaryTaxLineMrcTaxLineFlag | ✅ |
+| OBJECT_VERSION_NUMBER | SummaryTaxLineObjectVersionNumber | ✅ |
+| OVERRIDDEN_FLAG | SummaryTaxLineOverriddenFlag | ✅ |
+| RECORD_TYPE_CODE | SummaryTaxLineRecordTypeCode | ✅ |
+| REPORTING_ONLY_FLAG | SummaryTaxLineReportingOnlyFlag | ✅ |
+| SELF_ASSESSED_FLAG | SummaryTaxLineSelfAssessedFlag | ✅ |
+| SUMMARIZATION_TEMPLATE_ID | SummaryTaxLineSummarizationTemplateId | ✅ |
+| SUMMARY_TAX_LINE_ID | SummaryTaxLineSummaryTaxLineId | ✅ |
+| SUMMARY_TAX_LINE_NUMBER | SummaryTaxLineSummaryTaxLineNumber | ✅ |
+| TAX | SummaryTaxLineTax | ✅ |
+| TAX_AMT | SummaryTaxLineTaxAmt | ✅ |
+| TAX_AMT_FUNCL_CURR | SummaryTaxLineTaxAmtFunclCurr | ✅ |
+| TAX_AMT_INCLUDED_FLAG | SummaryTaxLineTaxAmtIncludedFlag | ✅ |
+| TAX_AMT_TAX_CURR | SummaryTaxLineTaxAmtTaxCurr | ✅ |
+| TAX_CALCULATION_FORMULA | SummaryTaxLineTaxCalculationFormula | ✅ |
+| TAX_EXCEPTION_ID | SummaryTaxLineTaxExceptionId | ✅ |
+| TAX_EXEMPTION_ID | SummaryTaxLineTaxExemptionId | ✅ |
+| TAX_JURISDICTION_CODE | SummaryTaxLineTaxJurisdictionCode | ✅ |
+| TAX_ONLY_LINE_FLAG | SummaryTaxLineTaxOnlyLineFlag | ✅ |
+| TAX_PROVIDER_ID | SummaryTaxLineTaxProviderId | ✅ |
+| TAX_RATE | SummaryTaxLineTaxRate | ✅ |
+| TAX_RATE_BEFORE_EXCEPTION | SummaryTaxLineTaxRateBeforeException | ✅ |
+| TAX_RATE_BEFORE_EXEMPTION | SummaryTaxLineTaxRateBeforeExemption | ✅ |
+| TAX_RATE_CODE | SummaryTaxLineTaxRateCode | ✅ |
+| TAX_RATE_ID | SummaryTaxLineTaxRateId | ✅ |
+| TAX_RATE_NAME_BEFORE_EXCEPTION | SummaryTaxLineTaxRateNameBeforeException | ✅ |
+| TAX_RATE_NAME_BEFORE_EXEMPTION | SummaryTaxLineTaxRateNameBeforeExemption | ✅ |
+| TAX_REGIME_CODE | SummaryTaxLineTaxRegimeCode | ✅ |
+| TAX_STATUS_CODE | SummaryTaxLineTaxStatusCode | ✅ |
+| TAXABLE_BASIS_FORMULA | SummaryTaxLineTaxableBasisFormula | ✅ |
+| TOTAL_NREC_TAX_AMT | SummaryTaxLineTotalNrecTaxAmt | ✅ |
+| TOTAL_NREC_TAX_AMT_FUNCL_CURR | SummaryTaxLineTotalNrecTaxAmtFunclCurr | ✅ |
+| TOTAL_NREC_TAX_AMT_TAX_CURR | SummaryTaxLineTotalNrecTaxAmtTaxCurr | ✅ |
+| TOTAL_REC_TAX_AMT | SummaryTaxLineTotalRecTaxAmt | ✅ |
+| TOTAL_REC_TAX_AMT_FUNCL_CURR | SummaryTaxLineTotalRecTaxAmtFunclCurr | ✅ |
+| TOTAL_REC_TAX_AMT_TAX_CURR | SummaryTaxLineTotalRecTaxAmtTaxCurr | ✅ |
+| TRX_ID | SummaryTaxLineTrxId | ✅ |
+| TRX_LEVEL_TYPE | SummaryTaxLineTrxLevelType | ✅ |
+| TRX_NUMBER | SummaryTaxLineTrxNumber | ✅ |

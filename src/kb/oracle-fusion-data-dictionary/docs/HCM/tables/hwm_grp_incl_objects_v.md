@@ -38,7 +38,6 @@ View que exibe os objetos organizacionais (organizações, cargos, posições) e
 > [!note] Sufixo _V
 > O sufixo `_V` indica **view** — objeto somente leitura que consolida dados de uma ou mais tabelas para facilitar consultas.
 
-
 ---
 
 ## 🧠 Propósito de Negócio
@@ -102,6 +101,26 @@ WHERE  ROWNUM <= 100
 
 - View somente leitura: não permite INSERT, UPDATE ou DELETE direto.
 - Área funcional: Workforce Management dentro do Oracle Fusion Cloud HCM.
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[groupinclobjectspvo|GroupInclObjectsPVO]] (GL · BICC: 10/11)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | GroupInclObjectsPEOCreatedBy | ✅ |
+| CREATION_DATE | GroupInclObjectsPEOCreationDate | ✅ |
+| GRP_ID | GroupInclObjectsPEOGrpId | — |
+| GRP_INCL_OBJECT_ID | GroupInclObjectsPEOGrpInclObjectId | ✅ |
+| INCL_FLAG | GroupInclObjectsPEOInclFlag | ✅ |
+| INCL_OBJECT_ID | GroupInclObjectsPEOInclObjectId | ✅ |
+| INCL_OBJECT_TYPE_CODE | GroupInclObjectsPEOInclObjectTypeCode | ✅ |
+| LAST_UPDATE_DATE | GroupInclObjectsPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | GroupInclObjectsPEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | GroupInclObjectsPEOLastUpdatedBy | ✅ |
+| ORDER_NUM | GroupInclObjectsPEOOrderNum | ✅ |
 
 ---
 

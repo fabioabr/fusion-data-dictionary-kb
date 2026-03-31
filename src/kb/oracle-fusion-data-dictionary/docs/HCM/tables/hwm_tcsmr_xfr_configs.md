@@ -36,8 +36,6 @@ updated_at: 2026-03-25
 
 Define as configurações de transferência de resumos de cartão de ponto para sistemas de destino (payroll, project costing), incluindo regras de mapeamento e validação.
 
-
-
 ---
 
 ## 🧠 Propósito de Negócio
@@ -103,6 +101,31 @@ WHERE  NVL(t.ENABLED_FLAG, 'Y') = 'Y'
 - Tabela relacionada a transferência de dados para sistemas externos (Payroll, Project Costing).
 - Configurações impactam o comportamento do módulo; alterações requerem teste em ambiente de homologação.
 - Área funcional: Time Card Summary dentro do Oracle Fusion Cloud HCM.
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[timeconsumerconfigurationpvo|TimeConsumerConfigurationPVO]] (GL · BICC: 9/16)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| APPROVAL_REQD | TcsmrXfrConfigPEOApprovalReqd | ✅ |
+| APPROVAL_REQD_TCSMR_ID | TcsmrXfrConfigPEOApprovalReqdTcsmrId | — |
+| CREATED_BY | TcsmrXfrConfigPEOCreatedBy | ✅ |
+| CREATION_DATE | TcsmrXfrConfigPEOCreationDate | ✅ |
+| ENTERPRISE_ID | TcsmrXfrConfigPEOEnterpriseId | — |
+| LAST_UPDATE_DATE | TcsmrXfrConfigPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | TcsmrXfrConfigPEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | TcsmrXfrConfigPEOLastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | TcsmrXfrConfigPEOObjectVersionNumber | — |
+| SEED_DATA_SOURCE | TcsmrXfrConfigPEOSeedDataSource | — |
+| SGUID | TcsmrXfrConfigPEOSguid | — |
+| TCMSR_XFR_CONFIG_ID | TcsmrXfrConfigPEOTcmsrXfrConfigId | ✅ |
+| TCSMR_CONFIG_ID | TcsmrXfrConfigPEOTcsmrConfigId | — |
+| TCSMR_XFR_PROCESS_ID | TcsmrXfrConfigPEOTcsmrXfrProcessId | — |
+| XFR_ON_SAVE | TcsmrXfrConfigPEOXfrOnSave | ✅ |
+| XFR_ON_SUBMIT | TcsmrXfrConfigPEOXfrOnSubmit | ✅ |
 
 ---
 

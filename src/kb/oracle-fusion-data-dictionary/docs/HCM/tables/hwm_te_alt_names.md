@@ -34,8 +34,6 @@ updated_at: 2026-03-25
 
 Armazena nomes alternativos para entradas de tempo (time entries), permitindo que diferentes sistemas ou interfaces referenciem a mesma entrada por nomes distintos.
 
-
-
 ---
 
 ## 🧠 Propósito de Negócio
@@ -98,6 +96,26 @@ WHERE  NVL(t.STATUS, 'A') = 'A'
 ## 🔒 Observações
 
 - Área funcional: Time Entry dentro do Oracle Fusion Cloud HCM.
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[templatelayoutcompdisplayvaluepvo|TemplateLayoutCompDisplayValuePVO]] (GL · BICC: 3/3)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| DESCRIPTION | TeAltNamesPEODescription | ✅ |
+| NAME | TeAltNamesPEOName | ✅ |
+| TE_ALT_NAME_ID | TeAltNamesPEOTeAltNameId | ✅ |
+
+### [[templatelayoutcomponentpvo|TemplateLayoutComponentPVO]] (GL · BICC: 3/3)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| DESCRIPTION | TeAltNamesPEODescription | ✅ |
+| NAME | TeAltNamesPEOName | ✅ |
+| TE_ALT_NAME_ID | TeAltNamesPEOTeAltNameId | ✅ |
 
 ---
 

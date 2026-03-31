@@ -113,6 +113,30 @@ WHERE  tl.LANGUAGE = 'PT'
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[absencecategorypvo|AbsenceCategoryPVO]] (GL · BICC: 10/15)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ABSENCE_CATEGORY_ID | AbsenceCategoryId1 | ✅ |
+| CREATED_BY | CreatedBy1 | ✅ |
+| CREATION_DATE | CreationDate1 | ✅ |
+| DESCRIPTION | Description | ✅ |
+| EFFECTIVE_END_DATE | EffectiveEndDate1 | — |
+| EFFECTIVE_START_DATE | EffectiveStartDate1 | ✅ |
+| ENTERPRISE_ID | EnterpriseId1 | — |
+| LANGUAGE | Language | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate1 | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin1 | — |
+| LAST_UPDATED_BY | LastUpdatedBy1 | ✅ |
+| MODULE_ID | ModuleId1 | — |
+| NAME | Name | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber1 | — |
+| SOURCE_LANG | SourceLang | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — ANC_ABSENCE_CATEGORIES_F_TL](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/ancabsencecategoriesftl.html)

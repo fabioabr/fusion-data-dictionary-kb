@@ -112,3 +112,24 @@ JOIN   PER_TASKS_IN_CHECKLIST_B t2 ON td.DEPENDENT_TASK_ID = t2.TASK_IN_CHECKLIS
 
 - [Oracle Docs — PER_TASK_DEPENDENCIES](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/pertaskdependencies.html)
 - [[hcm-module-data-dictionary]] — Dossiê do módulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[checklisttasktemplatepvo|ChecklistTaskTemplatePVO]] (HCM · BICC: 2/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | ChecklistTaskDependenciesPEOCreatedBy | — |
+| CREATION_DATE | ChecklistTaskDependenciesPEOCreationDate | — |
+| DEPENDENCY_TYPE | ChecklistTaskDependenciesPEODependencyType | ✅ |
+| DEPENDENT_TASK_IN_CHECKLIST_ID | ChecklistTaskDependenciesPEODependentTaskInChecklistId | ✅ |
+| ENTERPRISE_ID | ChecklistTaskDependenciesPEOEnterpriseId | — |
+| LAST_UPDATE_DATE | ChecklistTaskDependenciesPEOLastUpdateDate | — |
+| LAST_UPDATE_LOGIN | ChecklistTaskDependenciesPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | ChecklistTaskDependenciesPEOLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | ChecklistTaskDependenciesPEOObjectVersionNumber | — |
+| SEED_DATA_SOURCE | ChecklistTaskDependenciesPEOSeedDataSource | — |
+| TASK_DEPENDENCY_ID | ChecklistTaskDependenciesPEOChecklistTaskDependenciesPEOTaskDependencyId | — |
+| TASK_IN_CHECKLIST_ID | ChecklistTaskDependenciesPEOTaskInChecklistId | — |

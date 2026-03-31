@@ -53,3 +53,15 @@ updated_at: 2026-03-26
 ## 📎 Uso Típico
 
 (a ser preenchido na etapa 03)
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[invoicelinepvo|InvoiceLinePVO]] (AP · BICC: 2/3)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| EFFECTIVE_END_DATE | TaxSettlementAuthorityEffectiveEndDate | ✅ |
+| EFFECTIVE_START_DATE | TaxSettlementAuthorityEffectiveStartDate | ✅ |
+| TAX_SETTLEMENT_AUTH_ID | TaxSettlementAuthorityTaxSettlementAuthId | — |

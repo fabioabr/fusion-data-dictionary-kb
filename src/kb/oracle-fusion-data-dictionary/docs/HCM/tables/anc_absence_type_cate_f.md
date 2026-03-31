@@ -114,6 +114,29 @@ WHERE  SYSDATE BETWEEN tc.EFFECTIVE_START_DATE AND tc.EFFECTIVE_END_DATE
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[absencetypecatepvo|AbsenceTypeCatePVO]] (GL · BICC: 4/14)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ABSENCE_CATEGORY_ID | AbsenceCategoryId | — |
+| ABSENCE_TYPE_CATE_ID | AbsenceTypeCateId | ✅ |
+| ABSENCE_TYPE_ID | AbsenceTypeId | — |
+| CREATED_BY | CreatedBy | — |
+| CREATION_DATE | CreationDate | — |
+| EFFECTIVE_END_DATE | EffectiveEndDate | ✅ |
+| EFFECTIVE_START_DATE | EffectiveStartDate | ✅ |
+| ENTERPRISE_ID | EnterpriseId | — |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | — |
+| LAST_UPDATED_BY | LastUpdatedBy | — |
+| MODULE_ID | ModuleId | — |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | — |
+| STATUS | Status | — |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — ANC_ABSENCE_TYPE_CATE_F](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/ancabsencetypecatef.html)

@@ -102,3 +102,45 @@ FROM   HRT_RELATION_CONFIG_B rc;
 
 - [Oracle Docs — HRT_RELATION_CONFIG_B](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/hrtrelationconfigb.html)
 - [[hcm-module-data-dictionary]] — Dossie do modulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[jobprofilepvo|JobProfilePVO]] (HCM · BICC: 1/14)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | RelationConfigBPEOBusinessGroupId | — |
+| CREATED_BY | RelationConfigBPEOCreatedBy | — |
+| CREATION_DATE | RelationConfigBPEOCreationDate | — |
+| ENABLED_FLAG | RelationConfigBPEOEnabledFlag | — |
+| KEY_TABLE_NAME | RelationConfigBPEOKeyTableName | — |
+| LAST_UPDATE_DATE | RelationConfigBPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | RelationConfigBPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | RelationConfigBPEOLastUpdatedBy | — |
+| MODULE_ID | RelationConfigBPEOModuleId | — |
+| OBJECT_VERSION_NUMBER | RelationConfigBPEOObjectVersionNumber | — |
+| RELATION_CODE | RelationConfigBPEORelationCode | — |
+| RELATION_ID | RelationConfigBPEORelationId | — |
+| RELATION_SEQ_NUMBER | RelationConfigBPEORelationSeqNumber | — |
+| RELATION_TYPE_CODE | RelationConfigBPEORelationTypeCode | — |
+
+### [[relationconfigpvo|RelationConfigPVO]] (HCM · BICC: 3/14)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | RelationConfigBPEOBusinessGroupId | — |
+| CREATED_BY | RelationConfigBPEOCreatedBy | — |
+| CREATION_DATE | RelationConfigBPEOCreationDate | — |
+| ENABLED_FLAG | RelationConfigBPEOEnabledFlag | — |
+| KEY_TABLE_NAME | RelationConfigBPEOKeyTableName | — |
+| LAST_UPDATE_DATE | RelationConfigBPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | RelationConfigBPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | RelationConfigBPEOLastUpdatedBy | — |
+| MODULE_ID | RelationConfigBPEOModuleId | — |
+| OBJECT_VERSION_NUMBER | RelationConfigBPEOObjectVersionNumber | — |
+| RELATION_CODE | RelationConfigBPEORelationCode | ✅ |
+| RELATION_ID | RelationConfigBPEORelationId | ✅ |
+| RELATION_SEQ_NUMBER | RelationConfigBPEORelationSeqNumber | — |
+| RELATION_TYPE_CODE | RelationConfigBPEORelationTypeCode | — |

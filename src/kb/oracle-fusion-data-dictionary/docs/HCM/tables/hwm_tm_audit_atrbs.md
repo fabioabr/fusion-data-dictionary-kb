@@ -36,8 +36,6 @@ updated_at: 2026-03-25
 
 Armazena os atributos detalhados de cada registro de auditoria de Time Management, incluindo valores anteriores e posteriores das alterações rastreadas.
 
-
-
 ---
 
 ## 🧠 Propósito de Negócio
@@ -104,6 +102,43 @@ WHERE  a.CHANGE_DATE >= TRUNC(SYSDATE) - 30
 
 - Registros de auditoria são gerados automaticamente pelo sistema e não devem ser alterados manualmente.
 - Área funcional: Time Management dentro do Oracle Fusion Cloud HCM.
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[changeauditattributepvo|ChangeAuditAttributePVO]] (HCM · BICC: 17/28)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_TYPE | ChangeAuditAttributePEOActionType | ✅ |
+| CREATED_BY | ChangeAuditAttributePEOCreatedBy | ✅ |
+| CREATION_DATE | ChangeAuditAttributePEOCreationDate | ✅ |
+| ENTERPRISE_ID | ChangeAuditAttributePEOEnterpriseId | — |
+| LAST_UPDATE_DATE | ChangeAuditAttributePEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ChangeAuditAttributePEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | ChangeAuditAttributePEOLastUpdatedBy | ✅ |
+| NEW_DATE | ChangeAuditAttributePEONewDate | ✅ |
+| NEW_GMT_OFFSET | ChangeAuditAttributePEONewGmtOffset | — |
+| NEW_NUMBER | ChangeAuditAttributePEONewNumber | ✅ |
+| NEW_TIMESTAMP | ChangeAuditAttributePEONewTimestamp | ✅ |
+| NEW_TIMEZONE_CODE | ChangeAuditAttributePEONewTimezoneCode | — |
+| NEW_VARCHAR | ChangeAuditAttributePEONewVarchar | ✅ |
+| NEW_ZONE_TYPE | ChangeAuditAttributePEONewZoneType | — |
+| OBJECT_VERSION_NUMBER | ChangeAuditAttributePEOObjectVersionNumber | — |
+| OLD_DATE | ChangeAuditAttributePEOOldDate | ✅ |
+| OLD_GMT_OFFSET | ChangeAuditAttributePEOOldGmtOffset | — |
+| OLD_NUMBER | ChangeAuditAttributePEOOldNumber | ✅ |
+| OLD_TIMESTAMP | ChangeAuditAttributePEOOldTimestamp | ✅ |
+| OLD_TIMEZONE_CODE | ChangeAuditAttributePEOOldTimezoneCode | — |
+| OLD_VARCHAR | ChangeAuditAttributePEOOldVarchar | ✅ |
+| OLD_ZONE_TYPE | ChangeAuditAttributePEOOldZoneType | — |
+| ORIG_AUDIT_ATRB_ID | ChangeAuditAttributePEOOrigAuditAtrbId | — |
+| REASON_CODE | ChangeAuditAttributePEOReasonCode | ✅ |
+| TM_ATRB_FLD_ID | ChangeAuditAttributePEOTmAtrbFldId | ✅ |
+| TM_ATTRIBUTE_TYPE | ChangeAuditAttributePEOTmAttributeType | — |
+| TM_AUDIT_ATRB_ID | ChangeAuditAttributePEOTmAuditAtrbId | ✅ |
+| TM_AUDIT_ID | ChangeAuditAttributePEOTmAuditId | — |
 
 ---
 

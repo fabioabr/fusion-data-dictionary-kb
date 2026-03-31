@@ -99,6 +99,41 @@ WHERE  ec.LEGISLATIVE_DATA_GROUP_ID = :p_ldg_id;
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[elementtypeclassificationpvo|ElementTypeClassificationPVO]] (GL · BICC: 1/26)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BASE_CLASSIFICATION_ID | ElementClassificationPVOBaseClassificationId | — |
+| BASE_CLASSIFICATION_NAME | ElementClassificationPVOBaseClassificationName | — |
+| CLASSIFICATION_ID | ElementClassificationPVOClassificationId | — |
+| COSTABLE_FLAG | ElementClassificationPVOCostableFlag | — |
+| COSTING_DEBIT_OR_CREDIT | ElementClassificationPVOCostingDebitOrCredit | — |
+| CREATE_BY_DEFAULT_FLAG | ElementClassificationPVOCreateByDefaultFlag | — |
+| CREATED_BY | ElementClassificationPVOCreatedBy | — |
+| CREATION_DATE | ElementClassificationPVOCreationDate | — |
+| DATE_FROM | ElementClassificationPVODateFrom | — |
+| DATE_TO | ElementClassificationPVODateTo | — |
+| DEFAULT_HIGH_PRIORITY | ElementClassificationPVODefaultHighPriority | — |
+| DEFAULT_LOW_PRIORITY | ElementClassificationPVODefaultLowPriority | — |
+| DEFAULT_PRIORITY | ElementClassificationPVODefaultPriority | — |
+| DISTRIBUTABLE_OVER_FLAG | ElementClassificationPVODistributableOverFlag | — |
+| FREQ_RULE_ENABLED | ElementClassificationPVOFreqRuleEnabled | — |
+| LAST_UPDATE_DATE | ElementClassificationPVOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ElementClassificationPVOLastUpdateLogin | — |
+| LAST_UPDATED_BY | ElementClassificationPVOLastUpdatedBy | — |
+| LEGISLATION_CODE | ElementClassificationPVOLegislationCode | — |
+| LEGISLATIVE_DATA_GROUP_ID | ElementClassificationPVOLegislativeDataGroupId | — |
+| MODULE_ID | ElementClassificationPVOModuleId | — |
+| NON_PAYMENTS_FLAG | ElementClassificationPVONonPaymentsFlag | — |
+| OBJECT_VERSION_NUMBER | ElementClassificationPVOObjectVersionNumber | — |
+| PARENT_CLASSIFICATION_ID | ElementClassificationPVOParentClassificationId | — |
+| PROCESS_WHEN_EARNING | ElementClassificationPVOProcessWhenEarning | — |
+| SECONDARY_CLASSIFICATION_FLAG | ElementClassificationPVOSecondaryClassificationFlag | — |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — PAY_ELE_CLASSIFICATIONS](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/payeleclassifications.html)

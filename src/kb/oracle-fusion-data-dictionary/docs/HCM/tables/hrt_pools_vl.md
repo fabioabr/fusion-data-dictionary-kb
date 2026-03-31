@@ -108,3 +108,58 @@ WHERE  p.STATUS = 'ACTIVE'
 
 - [Oracle Docs — HRT_POOLS_VL](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/hrtpoolsvl.html)
 - [[hcm-module-data-dictionary]] — Dossie do modulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[candidatepoolmemberpvo|CandidatePoolMemberPVO]] (PO)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| POOL_ID | PoolId1 | — |
+
+### [[candidatepoolownerpvo|CandidatePoolOwnerPVO]] (PO)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| POOL_ID | PoolId1 | — |
+| POOL_TYPE_CODE | PoolTypeCode | — |
+
+### [[candidatepoolpvo|CandidatePoolPVO]] (PO · BICC: 8/19)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_UNIT_ID | BusinessUnitId | — |
+| CREATED_BY | CreatedBy | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| DEPARTMENT_ID | DepartmentId | — |
+| DESCRIPTION | Description | ✅ |
+| ENTERPRISE_ID | EnterpriseId | — |
+| GRADE_ID | GradeId | — |
+| JOB_FAMILY_ID | JobFamilyId | — |
+| JOB_ID | JobId | — |
+| JOB_PROFILE_ID | JobProfileId | — |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | — |
+| LAST_UPDATED_BY | LastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | — |
+| POOL_ID | PoolId | ✅ |
+| POOL_NAME | PoolName | ✅ |
+| POOL_TYPE_CODE | PoolTypeCode | ✅ |
+| POSITION_ID | PositionId | — |
+| STATUS | Status | ✅ |
+
+### [[poolcandhisteventpvo|PoolCandHistEventPVO]] (PO)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| POOL_ID | PoolId1 | — |
+
+### [[sourcetrackingviewallpvo|SourceTrackingViewAllPVO]] (HCM · BICC: 1/3)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ENTERPRISE_ID | EnterpriseId | — |
+| POOL_ID | FromPoolPEOPoolId | — |
+| POOL_NAME | FromPoolPEOPoolName | ✅ |

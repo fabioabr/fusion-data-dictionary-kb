@@ -113,6 +113,36 @@ WHERE  pat.DATE_EFFECTIVE <= SYSDATE;
 - Tipos de ausência são configurados por business group, permitindo variações por entidade legal.
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[absenceeventspvo|AbsenceEventsPVO]] (HCM · BICC: 1/21)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ABSENCE_ATTENDANCE_TYPE_ID | AbsenceTypePEOAbsenceAttendanceTypeId | — |
+| ABSENCE_CATEGORY | AbsenceTypePEOAbsenceCategory | — |
+| ABSENCE_OVERLAP_FLAG | AbsenceTypePEOAbsenceOverlapFlag | — |
+| ASSIGNMENT_STATUS_TYPE_ID | AbsenceTypePEOAssignmentStatusTypeId | — |
+| ATTRIBUTE_CATEGORY | AbsenceTypePEOAttributeCategory | — |
+| BUSINESS_GROUP_ID | AbsenceTypePEOBusinessGroupId | — |
+| CREATED_BY | AbsenceTypePEOCreatedBy | — |
+| CREATION_DATE | AbsenceTypePEOCreationDate | — |
+| DATE_EFFECTIVE | AbsenceTypePEODateEffective | — |
+| DATE_END | AbsenceTypePEODateEnd | — |
+| HOURS_OR_DAYS | AbsenceTypePEOHoursOrDays | — |
+| INCREASING_OR_DECREASING_FLAG | AbsenceTypePEOIncreasingOrDecreasingFlag | — |
+| INPUT_VALUE_ID | AbsenceTypePEOInputValueId | — |
+| LAST_UPDATE_DATE | AbsenceTypePEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | AbsenceTypePEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | AbsenceTypePEOLastUpdatedBy | — |
+| LEGISLATIVE_DATA_GROUP_ID | AbsenceTypePEOLegislativeDataGroupId | — |
+| OBJECT_VERSION_NUMBER | AbsenceTypePEOObjectVersionNumber | — |
+| OVERRIDE_FLAG | AbsenceTypePEOOverrideFlag | — |
+| PER_OR_WORKREL_FLAG | AbsenceTypePEOPerOrWorkrelFlag | — |
+| SCH_BASED_DUR | AbsenceTypePEOSchBasedDur | — |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — PER_ABSENCE_ATTENDANCE_TYPES_B](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/perabsenceattendancetypesb.html)

@@ -103,6 +103,102 @@ ORDER BY pje.EVALUATION_DATE DESC;
 - Integra-se com políticas de remuneração para garantir equidade interna.
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[jobpvo|JobPVO]] (HCM · BICC: 13/18)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACCOUNTABILITY | JobEvaluationPEOAccountability | ✅ |
+| BUSINESS_GROUP_ID | JobEvaluationPEOBusinessGroupId | — |
+| CREATED_BY | JobEvaluationPEOCreatedBy | ✅ |
+| CREATION_DATE | JobEvaluationPEOCreationDate | ✅ |
+| DATE_EVALUATED | JobEvaluationPEODateEvaluated | ✅ |
+| EVALUATION_SYSTEM | JobEvaluationPEOEvaluationSystem | ✅ |
+| JOB_EVALUATION_ID | JobEvaluationPEOJobEvaluationId | ✅ |
+| JOB_ID | JobEvaluationPEOJobId | — |
+| KNOWHOW | JobEvaluationPEOKnowhow | ✅ |
+| LAST_UPDATE_DATE | JobEvaluationPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | JobEvaluationPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | JobEvaluationPEOLastUpdatedBy | ✅ |
+| MEASURED_IN | JobEvaluationPEOMeasuredIn | ✅ |
+| OBJECT_VERSION_NUMBER | JobEvaluationPEOObjectVersionNumber | — |
+| OVERALL_SCORE | JobEvaluationPEOOverallScore | ✅ |
+| POSITION_ID | JobEvaluationPEOPositionId | ✅ |
+| PROBLEM_SOLVING | JobEvaluationPEOProblemSolving | ✅ |
+| WORKING_CONDITIONS | JobEvaluationPEOWorkingConditions | — |
+
+### [[jobpvoviewall|JobPVOViewAll]] (HCM · BICC: 1/18)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACCOUNTABILITY | JobEvaluationPEOAccountability | — |
+| BUSINESS_GROUP_ID | JobEvaluationPEOBusinessGroupId | — |
+| CREATED_BY | JobEvaluationPEOCreatedBy | — |
+| CREATION_DATE | JobEvaluationPEOCreationDate | — |
+| DATE_EVALUATED | JobEvaluationPEODateEvaluated | — |
+| EVALUATION_SYSTEM | JobEvaluationPEOEvaluationSystem | — |
+| JOB_EVALUATION_ID | JobEvaluationPEOJobEvaluationId | — |
+| JOB_ID | JobEvaluationPEOJobId | — |
+| KNOWHOW | JobEvaluationPEOKnowhow | — |
+| LAST_UPDATE_DATE | JobEvaluationPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | JobEvaluationPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | JobEvaluationPEOLastUpdatedBy | — |
+| MEASURED_IN | JobEvaluationPEOMeasuredIn | — |
+| OBJECT_VERSION_NUMBER | JobEvaluationPEOObjectVersionNumber | — |
+| OVERALL_SCORE | JobEvaluationPEOOverallScore | — |
+| POSITION_ID | JobEvaluationPEOPositionId | — |
+| PROBLEM_SOLVING | JobEvaluationPEOProblemSolving | — |
+| WORKING_CONDITIONS | JobEvaluationPEOWorkingConditions | — |
+
+### [[positionpvo|PositionPVO]] (PO · BICC: 12/18)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACCOUNTABILITY | JobEvaluationPEOAccountability | ✅ |
+| BUSINESS_GROUP_ID | JobEvaluationPEOBusinessGroupId | — |
+| CREATED_BY | JobEvaluationPEOCreatedBy | ✅ |
+| CREATION_DATE | JobEvaluationPEOCreationDate | ✅ |
+| DATE_EVALUATED | JobEvaluationPEODateEvaluated | ✅ |
+| EVALUATION_SYSTEM | JobEvaluationPEOEvaluationSystem | ✅ |
+| JOB_EVALUATION_ID | JobEvaluationPEOJobEvaluationId | ✅ |
+| JOB_ID | JobEvaluationPEOJobId | — |
+| KNOWHOW | JobEvaluationPEOKnowhow | ✅ |
+| LAST_UPDATE_DATE | JobEvaluationPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | JobEvaluationPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | JobEvaluationPEOLastUpdatedBy | ✅ |
+| MEASURED_IN | JobEvaluationPEOMeasuredIn | ✅ |
+| OBJECT_VERSION_NUMBER | JobEvaluationPEOObjectVersionNumber | — |
+| OVERALL_SCORE | JobEvaluationPEOOverallScore | ✅ |
+| POSITION_ID | JobEvaluationPEOPositionId | — |
+| PROBLEM_SOLVING | JobEvaluationPEOProblemSolving | ✅ |
+| WORKING_CONDITIONS | JobEvaluationPEOWorkingConditions | — |
+
+### [[positionpvoviewall|PositionPVOViewAll]] (PO · BICC: 12/18)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACCOUNTABILITY | JobEvaluationPEOAccountability | ✅ |
+| BUSINESS_GROUP_ID | JobEvaluationPEOBusinessGroupId | — |
+| CREATED_BY | JobEvaluationPEOCreatedBy | ✅ |
+| CREATION_DATE | JobEvaluationPEOCreationDate | ✅ |
+| DATE_EVALUATED | JobEvaluationPEODateEvaluated | ✅ |
+| EVALUATION_SYSTEM | JobEvaluationPEOEvaluationSystem | ✅ |
+| JOB_EVALUATION_ID | JobEvaluationPEOJobEvaluationId | ✅ |
+| JOB_ID | JobEvaluationPEOJobId | — |
+| KNOWHOW | JobEvaluationPEOKnowhow | ✅ |
+| LAST_UPDATE_DATE | JobEvaluationPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | JobEvaluationPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | JobEvaluationPEOLastUpdatedBy | ✅ |
+| MEASURED_IN | JobEvaluationPEOMeasuredIn | ✅ |
+| OBJECT_VERSION_NUMBER | JobEvaluationPEOObjectVersionNumber | — |
+| OVERALL_SCORE | JobEvaluationPEOOverallScore | ✅ |
+| POSITION_ID | JobEvaluationPEOPositionId | — |
+| PROBLEM_SOLVING | JobEvaluationPEOProblemSolving | ✅ |
+| WORKING_CONDITIONS | JobEvaluationPEOWorkingConditions | — |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — PER_JOB_EVALUATIONS](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/perjobevaluations.html)

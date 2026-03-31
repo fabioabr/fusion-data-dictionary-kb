@@ -98,6 +98,44 @@ WHERE  bd.LEGISLATIVE_DATA_GROUP_ID = :p_ldg_id;
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[balancedimensionspvo|BalanceDimensionsPVO]] (GL · BICC: 29/29)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| APPLICATION_ID | BalanceDimensionsPEOApplicationId | ✅ |
+| ASG_ACTION_BALANCE_DIM_ID | BalanceDimensionsPEOAsgActionBalanceDimId | ✅ |
+| BALANCE_DIMENSION_ID | BalanceDimensionsPEOBalanceDimensionId | ✅ |
+| BASE_DB_ITEM_SUFFIX | BalanceDimensionsPEOBaseDbItemSuffix | ✅ |
+| BASE_DIMENSION_NAME | BalanceDimensionsPEOBaseDimensionName | ✅ |
+| CREATED_BY | BalanceDimensionsPEOCreatedBy | ✅ |
+| CREATION_DATE | BalanceDimensionsPEOCreationDate | ✅ |
+| DESCRIPTION | BalanceDimensionsPEODescription | ✅ |
+| DIMENSION_LEVEL | BalanceDimensionsPEODimensionLevel | ✅ |
+| DIMENSION_TYPE | BalanceDimensionsPEODimensionType | ✅ |
+| END_TIME_DEF_ID | BalanceDimensionsPEOEndTimeDefId | ✅ |
+| ENTERPRISE_ID | BalanceDimensionsPEOEnterpriseId | ✅ |
+| EXPIRY_CHECKING_LEVEL | BalanceDimensionsPEOExpiryCheckingLevel | ✅ |
+| EXPIRY_TIME_DEF_ID | BalanceDimensionsPEOExpiryTimeDefId | ✅ |
+| FEED_CHECKING_TYPE | BalanceDimensionsPEOFeedCheckingType | ✅ |
+| INITIAL_DATE | BalanceDimensionsPEOInitialDate | ✅ |
+| INITIAL_TIME_DEF_ID | BalanceDimensionsPEOInitialTimeDefId | ✅ |
+| LAST_UPDATE_DATE | BalanceDimensionsPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | BalanceDimensionsPEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | BalanceDimensionsPEOLastUpdatedBy | ✅ |
+| LEGISLATION_CODE | BalanceDimensionsPEOLegislationCode | ✅ |
+| LEGISLATIVE_DATA_GROUP_ID | BalanceDimensionsPEOLegislativeDataGroupId | ✅ |
+| MODULE_ID | BalanceDimensionsPEOModuleId | ✅ |
+| OBJECT_VERSION_NUMBER | BalanceDimensionsPEOObjectVersionNumber | ✅ |
+| PAYMENTS_FLAG | BalanceDimensionsPEOPaymentsFlag | ✅ |
+| PERIOD_TYPE | BalanceDimensionsPEOPeriodType | ✅ |
+| ROUTE_ID | BalanceDimensionsPEORouteId | ✅ |
+| SAVE_RUN_BALANCE_ENABLED | BalanceDimensionsPEOSaveRunBalanceEnabled | ✅ |
+| START_TIME_DEF_ID | BalanceDimensionsPEOStartTimeDefId | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — PAY_BALANCE_DIMENSIONS](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/paybalancedimensions.html)

@@ -104,3 +104,48 @@ WHERE  tl.RATING_CATEGORY_ID = :p_id
 
 - [Oracle Docs — HRT_RATING_CATEGORIES_TL](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/hrtratingcategoriestl.html)
 - [[hcm-module-data-dictionary]] — Dossie do modulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[personprofileperformanceratingpvo|PersonProfilePerformanceRatingPVO]] (HCM · BICC: 2/7)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | PerfRtgBusinessGroupId2 | — |
+| CATEGORY_DESCRIPTION | PerfRtgCategoryDescription | — |
+| CATEGORY_ID | PerfRtgCategoryId | — |
+| CATEGORY_NAME | PerfRtgCategoryName | — |
+| LANGUAGE | PerfRtgLanguage3 | — |
+| LAST_UPDATE_DATE | RtgCategoriesTranslationPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_DATE | RtgCategoriesTransltionPEOLastUpdateDate | ✅ |
+
+### [[ratingcategoriesfirstpvo|RatingCategoriesFirstPVO]] (HCM · BICC: 3/7)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | RatingCategoriesTranslationPEOBusinessGroupId | — |
+| CATEGORY_DESCRIPTION | RatingCategoriesTranslationPEOCategoryDescription | ✅ |
+| CATEGORY_ID | RatingCategoriesTranslationPEOCategoryId | — |
+| CATEGORY_NAME | RatingCategoriesTranslationPEOCategoryName | ✅ |
+| LANGUAGE | RatingCategoriesTranslationPEOLanguage | — |
+| LAST_UPDATE_DATE | RatingCategoriesTranslationPLastUpdateDate | ✅ |
+| SOURCE_LANG | SourceLang | — |
+
+### [[ratingcategoriesfirsttranslationpvo|RatingCategoriesFirstTranslationPVO]] (HCM · BICC: 12/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | BusinessGroupId | ✅ |
+| CATEGORY_DESCRIPTION | CategoryDescription | ✅ |
+| CATEGORY_ID | CategoryId | ✅ |
+| CATEGORY_NAME | CategoryName | ✅ |
+| CREATED_BY | CreatedBy | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| LANGUAGE | Language | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | LastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | ✅ |
+| SOURCE_LANG | SourceLang | ✅ |

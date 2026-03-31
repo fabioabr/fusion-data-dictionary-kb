@@ -96,6 +96,20 @@ WHERE  br.BOX_LABEL_ID = :p_id;
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[talentscoreboxlabellookuppvo|TalentScoreBoxLabelLookupPVO]] (HCM · BICC: 3/5)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BOX_RATING_MAPPING_ID | BoxRatingMappingId | ✅ |
+| BOX_SEQUENCE | BoxSequence | ✅ |
+| BUSINESS_GROUP_ID | BusinessGroupId3 | ✅ |
+| METRIC_RATING_MODEL_ID | MetricRatingModelId | — |
+| RATING_LEVEL_ID | RatingLevelId | — |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Fusion HCM Tables and Views](https://docs.oracle.com/en/cloud/saas/human-resources/25a/)

@@ -62,3 +62,32 @@ updated_at: 2026-03-26
 ## 📎 Uso Típico
 
 (a ser preenchido na etapa 03)
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[fndcalmonth|FndCalMonth]] (GL · BICC: 5/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CAL_MONTH | CalMonth | ✅ |
+| CAL_MONTH_CODE | CalMonthCode | ✅ |
+| CAL_MONTH_END_DATE | CalMonthEndDate | ✅ |
+| CAL_MONTH_START_DATE | CalMonthStartDate | ✅ |
+| CREATED_BY | CreatedBy | — |
+| CREATION_DATE | CreationDate | — |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | — |
+| LAST_UPDATED_BY | LastUpdatedBy | — |
+| PARENT_QUARTER | ParentQuarter | — |
+| PRIOR_SEQUENTIAL_MONTH | PriorSequentialMonth | — |
+| PRIOR_YEAR_MONTH | PriorYearMonth | — |
+
+### [[resourcerequestmonthpvo|ResourceRequestMonthPVO]] (OTHER)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CAL_MONTH | CalMonth | — |
+| CAL_MONTH_END_DATE | CalMonthEndDate | — |
+| CAL_MONTH_START_DATE | CalMonthStartDate | — |

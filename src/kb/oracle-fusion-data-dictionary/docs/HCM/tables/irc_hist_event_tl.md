@@ -99,3 +99,22 @@ SELECT tl.EVENT_DESCRIPTION FROM IRC_HIST_EVENT_TL tl WHERE tl.LANGUAGE = 'PT';
 
 - [Oracle Docs -- IRC_HIST_EVENT_TL](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/irchisteventtl.html)
 - [[hcm-module-data-dictionary]] -- Dossie do modulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[historyeventtypepvo|HistoryEventTypePVO]] (HCM · BICC: 10/10)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | HistoryEventTypeTranslationPEOCreatedBy | ✅ |
+| CREATION_DATE | HistoryEventTypeTranslationPEOCreationDate | ✅ |
+| EVENT_TYPE_ID | HistoryEventTypeTranslationPEOEventTypeId | ✅ |
+| LANGUAGE | HistoryEventTypeTranslationPEOLanguage | ✅ |
+| LAST_UPDATE_DATE | HistoryEventTypeTranslationPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | HistoryEventTypeTranslationPEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | HistoryEventTypeTranslationPEOLastUpdatedBy | ✅ |
+| NAME | HistoryEventTypeTranslationPEOName | ✅ |
+| OBJECT_VERSION_NUMBER | HistoryEventTypeTranslationPEOObjectVersionNumber | ✅ |
+| SOURCE_LANG | HistoryEventTypeTranslationPEOSourceLang | ✅ |

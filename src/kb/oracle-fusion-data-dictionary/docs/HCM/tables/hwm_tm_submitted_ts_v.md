@@ -115,3 +115,49 @@ WHERE  v.STATUS = 'SUBMITTED'
 
 - [Oracle Docs — HWM_TM_SUBMITTED_TS_V](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/hwmtmsubmittedtsv.html)
 - [[hcm-module-data-dictionary]] — Dossie do modulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[absencetimeentrypvo|AbsenceTimeEntryPVO]] (HCM · BICC: 1/2)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| STATUS_ID | TimeCardSubmittedStatusId | — |
+| SUBMITTED_TIMESTAMP | TimeCardSubmittedTimestamp | ✅ |
+
+### [[historicabsencetimeentrypvo|HistoricAbsenceTimeEntryPVO]] (HCM)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| STATUS_ID | TimeCardSubmittedStatusId | — |
+| SUBMITTED_TIMESTAMP | TimeCardSubmittedTimestamp | — |
+
+### [[historicreportedtimeentrypvo|HistoricReportedTimeEntryPVO]] (HCM)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| STATUS_ID | TimeCardSubmittedStatusId | — |
+| SUBMITTED_TIMESTAMP | TimeCardSubmittedTimestamp | — |
+
+### [[historicrptabstimeentrypvo|HistoricRptAbsTimeEntryPVO]] (HCM · BICC: 1/2)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| STATUS_ID | TcSubmittedTimestampPEOStatusId | — |
+| SUBMITTED_TIMESTAMP | TcSubmittedTimestampPEOSubmittedTimestamp | ✅ |
+
+### [[reportedtimeentrypvo|ReportedTimeEntryPVO]] (HCM · BICC: 1/2)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| STATUS_ID | TimeCardSubmittedStatusId | — |
+| SUBMITTED_TIMESTAMP | TimeCardSubmittedTimestamp | ✅ |
+
+### [[rptabstimeentrypvo|RptAbsTimeEntryPVO]] (HCM · BICC: 1/2)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| STATUS_ID | TcSubmittedTimestampPEOStatusId | — |
+| SUBMITTED_TIMESTAMP | TcSubmittedTimestampPEOSubmittedTimestamp | ✅ |

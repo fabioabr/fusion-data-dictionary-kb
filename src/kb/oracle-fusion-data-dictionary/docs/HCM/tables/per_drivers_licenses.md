@@ -107,6 +107,62 @@ WHERE  pdl.PERSON_ID = :p_person_id
 - Dados pessoais sujeitos a LGPD.
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[driverslicensespvo|DriversLicensesPVO]] (HCM · BICC: 18/21)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | DriversLicensesPEOBusinessGroupId | — |
+| CREATED_BY | DriversLicensesPEOCreatedBy | ✅ |
+| CREATION_DATE | DriversLicensesPEOCreationDate | ✅ |
+| DATE_FROM | DriversLicensesPEODateFrom | ✅ |
+| DATE_TO | DriversLicensesPEODateTo | ✅ |
+| DRIVERS_LICENSE_ID | DriversLicenseId | ✅ |
+| ISSUING_AUTHORITY | DriversLicensesPEOIssuingAuthority | ✅ |
+| ISSUING_COUNTRY | DriversLicensesPEOIssuingCountry | ✅ |
+| ISSUING_LOCATION | DriversLicensesPEOIssuingLocation | ✅ |
+| LAST_UPDATE_DATE | DriversLicensesPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | DriversLicensesPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | DriversLicensesPEOLastUpdatedBy | ✅ |
+| LEGISLATION_CODE | DriversLicensesPEOLegislationCode | ✅ |
+| LICENSE_NUMBER | DriversLicensesPEOLicenseNumber | ✅ |
+| LICENSE_SUSPENDED | DriversLicensesPEOLicenseSuspended | ✅ |
+| NUMBER_OF_POINTS | DriversLicensesPEONumberOfPoints | ✅ |
+| OBJECT_VERSION_NUMBER | DriversLicensesPEOObjectVersionNumber | — |
+| PERSON_ID | DriversLicensesPEOPersonId | ✅ |
+| SUSPENDED_FROM_DATE | DriversLicensesPEOSuspendedFromDate | ✅ |
+| SUSPENDED_TO_DATE | DriversLicensesPEOSuspendedToDate | ✅ |
+| VIOLATIONS | DriversLicensesPEOViolations | ✅ |
+
+### [[driverslicensespvoviewall|DriversLicensesPVOViewAll]] (HCM · BICC: 18/21)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | DriversLicensesPEOBusinessGroupId | — |
+| CREATED_BY | DriversLicensesPEOCreatedBy | ✅ |
+| CREATION_DATE | DriversLicensesPEOCreationDate | ✅ |
+| DATE_FROM | DriversLicensesPEODateFrom | ✅ |
+| DATE_TO | DriversLicensesPEODateTo | ✅ |
+| DRIVERS_LICENSE_ID | DriversLicenseId | ✅ |
+| ISSUING_AUTHORITY | DriversLicensesPEOIssuingAuthority | ✅ |
+| ISSUING_COUNTRY | DriversLicensesPEOIssuingCountry | ✅ |
+| ISSUING_LOCATION | DriversLicensesPEOIssuingLocation | ✅ |
+| LAST_UPDATE_DATE | DriversLicensesPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | DriversLicensesPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | DriversLicensesPEOLastUpdatedBy | ✅ |
+| LEGISLATION_CODE | DriversLicensesPEOLegislationCode | ✅ |
+| LICENSE_NUMBER | DriversLicensesPEOLicenseNumber | ✅ |
+| LICENSE_SUSPENDED | DriversLicensesPEOLicenseSuspended | ✅ |
+| NUMBER_OF_POINTS | DriversLicensesPEONumberOfPoints | ✅ |
+| OBJECT_VERSION_NUMBER | DriversLicensesPEOObjectVersionNumber | — |
+| PERSON_ID | DriversLicensesPEOPersonId | ✅ |
+| SUSPENDED_FROM_DATE | DriversLicensesPEOSuspendedFromDate | ✅ |
+| SUSPENDED_TO_DATE | DriversLicensesPEOSuspendedToDate | ✅ |
+| VIOLATIONS | DriversLicensesPEOViolations | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — PER_DRIVERS_LICENSES](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/perdriverslicenses.html)

@@ -101,6 +101,48 @@ WHERE  pp.PAYROLL_REL_ACTION_ID = :p_rel_action_id;
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[prepaymentcosting|PrePaymentCosting]] (GL · BICC: 2/14)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BASE_CURRENCY_VALUE | PrePaymentBaseCurrencyValue | ✅ |
+| CALC_BREAKDOWN_ID | PrePaymentCalcBreakdownId | — |
+| EFFECTIVE_DATE | PrePaymentEffectiveDate | ✅ |
+| ORG_PAYMENT_METHOD_ID | PrePaymentOrgPaymentMethodId | — |
+| PAYEE_BANK_ACCOUNT_ID | PrePaymentPayeeBankAccountId | — |
+| PAYEE_ORG_PAYMENT_METHOD_ID | PrePaymentPayeeOrgPaymentMethodId | — |
+| PAYER_BANK_ACCOUNT_ID | PrePaymentPayerBankAccountId | — |
+| PAYROLL_ACTION_ID | PrePaymentPayrollActionId | — |
+| PAYROLL_REL_ACTION_ID | PrePaymentPayrollRelActionId | — |
+| PERSONAL_PAYMENT_METHOD_ID | PrePaymentPersonalPaymentMethodId | — |
+| PRE_PAYMENT_ID | PrePaymentPrePaymentId | — |
+| SOURCE_ACTION_ID | PrePaymentSourceActionId | — |
+| THIRD_PARTY_PAYEE_ID | PrePaymentThirdPartyPayeeId | — |
+| VALUE | PrePaymentValue | — |
+
+### [[prepayments|PrePayments]] (AP · BICC: 4/14)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BASE_CURRENCY_VALUE | PrePaymentBaseCurrencyValue | ✅ |
+| CALC_BREAKDOWN_ID | PrePaymentCalcBreakdownId | — |
+| EFFECTIVE_DATE | PrePaymentEffectiveDate | ✅ |
+| ORG_PAYMENT_METHOD_ID | PrePaymentOrgPaymentMethodId | — |
+| PAYEE_BANK_ACCOUNT_ID | PrePaymentPayeeBankAccountId | — |
+| PAYEE_ORG_PAYMENT_METHOD_ID | PrePaymentPayeeOrgPaymentMethodId | — |
+| PAYER_BANK_ACCOUNT_ID | PrePaymentPayerBankAccountId | — |
+| PAYROLL_ACTION_ID | PrePaymentPayrollActionId | — |
+| PAYROLL_REL_ACTION_ID | PrePaymentPayrollRelActionId | — |
+| PERSONAL_PAYMENT_METHOD_ID | PrePaymentPersonalPaymentMethodId | — |
+| PRE_PAYMENT_ID | PrePaymentPrePaymentId | ✅ |
+| SOURCE_ACTION_ID | PrePaymentSourceActionId | — |
+| THIRD_PARTY_PAYEE_ID | PrePaymentThirdPartyPayeeId | — |
+| VALUE | PrePaymentValue | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — PAY_PRE_PAYMENTS](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/payprepayments.html)

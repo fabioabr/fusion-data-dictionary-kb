@@ -124,3 +124,24 @@ ORDER BY psr.CATEGORY_NAME;
 
 - [Oracle Docs — Supplier Product Service Requests](https://docs.oracle.com/en/cloud/saas/procurement/25a/oedmf/poz-tables.html)
 - [[po-module-data-dictionary]] — Dossiê do módulo Procurement
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[supplierregistrationprodserrequestpvo|SupplierRegistrationProdSerRequestPVO]] (PO · BICC: 3/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CATEGORY_ID | SupplierRegProdSerReqCategoryId | — |
+| CREATED_BY | SupplierRegProdSerReqCreatedBy | — |
+| CREATION_DATE | SupplierRegProdSerReqCreationDate | — |
+| LAST_UPDATE_DATE | SupplierRegProdSerReqLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | SupplierRegProdSerReqLastUpdateLogin | — |
+| LAST_UPDATED_BY | SupplierRegProdSerReqLastUpdatedBy | — |
+| MAPPING_ID | SupplierRegProdSerReqMappingId | — |
+| OBJECT_VERSION_NUMBER | SupplierRegProdSerReqObjectVersionNumber | — |
+| PS_REQUEST_ID | PsRequestId | ✅ |
+| PURCHASING_CAT_FLAG | SupplierRegProdSerReqPurchasingCatFlag | — |
+| REQUEST_STATUS | SupplierRegProdSerReqRequestStatus | ✅ |
+| REQUEST_TYPE | SupplierRegProdSerReqRequestType | — |

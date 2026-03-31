@@ -113,6 +113,27 @@ WHERE  r.INVESTIGATION_SUMMARY_ID = :p_investigation_id;
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[hnsinvestigationpvo|HNSInvestigationPVO]] (HCM · BICC: 12/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_FLAG | HNSInvestRecommendsPEOActionFlag | ✅ |
+| CREATED_BY | HNSInvestRecommendsPEOCreatedBy | ✅ |
+| CREATION_DATE | HNSInvestRecommendsPEOCreationDate | ✅ |
+| DELETED_FLAG | HNSInvestRecommendsPEODeletedFlag | ✅ |
+| FINDING_ID | HNSInvestRecommendsPEOFindingId | ✅ |
+| LAST_UPDATE_DATE | HNSInvestRecommendsPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | HNSInvestRecommendsPEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | HNSInvestRecommendsPEOLastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | HNSInvestRecommendsPEOObjectVersionNum | ✅ |
+| RECOMMEND_ID | HNSInvestRecommendsPEORecommendId | ✅ |
+| RECOMMEND_SUGGESTION_FLAG | HNSInvestRecommendsPEORecommendSuggFlag | ✅ |
+| RECOMMENDATION_SUMMARY | HNSInvestRecommendsPEORecommendSummary | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — HNS_INVEST_RECOMMENDS](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/hnsinvestrecommends.html)

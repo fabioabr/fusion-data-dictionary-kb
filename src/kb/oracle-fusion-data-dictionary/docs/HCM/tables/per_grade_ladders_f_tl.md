@@ -100,6 +100,50 @@ WHERE  tl.LANGUAGE = 'PTB';
 - Tabela de traduções (_TL) — chave composta por `GRADE_LADDER_ID` + `LANGUAGE`.
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[globalpersonpvo|GlobalPersonPVO]] (HCM · BICC: 6/6)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| EFFECTIVE_END_DATE | GradeLadderTranslationPEOEffectiveEndDate | ✅ |
+| EFFECTIVE_START_DATE | GradeLadderTranslationPEOEffectiveStartDate | ✅ |
+| GRADE_LADDER_ID | GradeLadderTranslationPEOGradeLadderId | ✅ |
+| LANGUAGE | GradeLadderTranslationPEOLanguage | ✅ |
+| LAST_UPDATE_DATE | GradeLadderTranslationPEOLastUpdateDate | ✅ |
+| NAME | GradeLadderTranslationPEOName | ✅ |
+
+### [[globalpersonpvoviewall|GlobalPersonPVOViewAll]] (HCM · BICC: 3/6)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| EFFECTIVE_END_DATE | GradeLadderTranslationPEOEffectiveEndDate | — |
+| EFFECTIVE_START_DATE | GradeLadderTranslationPEOEffectiveStartDate | ✅ |
+| GRADE_LADDER_ID | GradeLadderTranslationPEOGradeLadderId | — |
+| LANGUAGE | GradeLadderTranslationPEOLanguage | — |
+| LAST_UPDATE_DATE | GradeLadderTranslationPEOLastUpdateDate | ✅ |
+| NAME | GradeLadderTranslationPEOName | ✅ |
+
+### [[gradeladderpvo|GradeLadderPVO]] (GL · BICC: 3/13)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | GradeLadderTranslationPEOBusinessGroupId | — |
+| CREATED_BY | GradeLadderTranslationPEOCreatedBy | — |
+| CREATION_DATE | GradeLadderTranslationPEOCreationDate | — |
+| EFFECTIVE_END_DATE | GradeLadderTranslationPEOEffectiveEndDate | — |
+| EFFECTIVE_START_DATE | GradeLadderTranslationPEOEffectiveStartDate | ✅ |
+| GRADE_LADDER_ID | GradeLadderTranslationPEOGradeLadderId | — |
+| LANGUAGE | GradeLadderTranslationPEOLanguage | — |
+| LAST_UPDATE_DATE | GradeLadderTranslationPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | GradeLadderTranslationPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | GradeLadderTranslationPEOLastUpdatedBy | — |
+| NAME | GradeLadderTranslationPEOName | ✅ |
+| OBJECT_VERSION_NUMBER | GradeLadderTranslationPEOObjectVersionNumber | — |
+| SOURCE_LANG | GradeLadderTranslationPEOSourceLang | — |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — PER_GRADE_LADDERS_F_TL](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/pergradeladdersftl.html)

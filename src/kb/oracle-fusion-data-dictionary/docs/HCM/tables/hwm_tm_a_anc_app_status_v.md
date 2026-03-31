@@ -40,7 +40,6 @@ View que exibe o status de aprovação de ausências no contexto ancestral (hier
 > [!note] Sufixo _V
 > O sufixo `_V` indica **view** — objeto somente leitura que consolida dados de uma ou mais tabelas para facilitar consultas.
 
-
 ---
 
 ## 🧠 Propósito de Negócio
@@ -103,6 +102,38 @@ WHERE  t.STATUS_CODE = 'APPROVED'
 
 - View somente leitura: não permite INSERT, UPDATE ou DELETE direto.
 - Área funcional: Time Management dentro do Oracle Fusion Cloud HCM.
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[absencetimeentrypvo|AbsenceTimeEntryPVO]] (HCM · BICC: 1/2)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| STATUS_ID | TimEntryAtomicAncAppStatusId | — |
+| STATUS_VALUE | TimEntryAtomicAncAppStatusValue | ✅ |
+
+### [[historicabsencetimeentrypvo|HistoricAbsenceTimeEntryPVO]] (HCM)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| STATUS_ID | TimEntryAtomicAncAppStatusId | — |
+| STATUS_VALUE | TimEntryAtomicAncAppStatusValue | — |
+
+### [[historicrptabstimeentrypvo|HistoricRptAbsTimeEntryPVO]] (HCM · BICC: 1/2)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| STATUS_ID | TmAtomicAbsApprovalStatusPEOStatusId | — |
+| STATUS_VALUE | TmAtomicAbsApprovalStatusPEOStatusValue | ✅ |
+
+### [[rptabstimeentrypvo|RptAbsTimeEntryPVO]] (HCM · BICC: 1/2)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| STATUS_ID | TmAtomicAbsApprovalStatusPEOStatusId | — |
+| STATUS_VALUE | TmAtomicAbsApprovalStatusPEOStatusValue | ✅ |
 
 ---
 

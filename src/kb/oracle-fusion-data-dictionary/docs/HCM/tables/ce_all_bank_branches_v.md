@@ -55,3 +55,37 @@ updated_at: 2026-03-26
 ## 📎 Uso Típico
 
 (a ser preenchido na etapa 03)
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[disbursementheaderpvo|DisbursementHeaderPVO]] (AP · BICC: 3/5)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BANK_BRANCH_NAME | ExtBnkAcctBankBranchName | ✅ |
+| BANK_NAME | AllBankBranchesBankName | ✅ |
+| BRANCH_NUMBER | AllBankBranchesBranchNumber | ✅ |
+| BRANCH_PARTY_ID | AllBankBranchesBranchPartyId | — |
+| EFT_SWIFT_CODE | AllBankBranchesEftSwiftCode | — |
+
+### [[paiddisbursementschedulepvo|PaidDisbursementSchedulePVO]] (AP · BICC: 3/5)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BANK_BRANCH_NAME | ExtBnkAcctBankBranchName | ✅ |
+| BANK_NAME | AllBankBranchesBankName | ✅ |
+| BRANCH_NUMBER | AllBankBranchesBranchNumber | ✅ |
+| BRANCH_PARTY_ID | AllBankBranchesBranchPartyId | — |
+| EFT_SWIFT_CODE | AllBankBranchesEftSwiftCode | — |
+
+### [[paymenthistorydistributionpvo|PaymentHistoryDistributionPVO]] (AP · BICC: 3/5)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BANK_BRANCH_NAME | ExtBnkAcctBankBranchName | ✅ |
+| BANK_NAME | AllBankBranchesBankName | ✅ |
+| BRANCH_NUMBER | AllBankBranchesBranchNumber | ✅ |
+| BRANCH_PARTY_ID | AllBankBranchesBranchPartyId | — |
+| EFT_SWIFT_CODE | AllBankBranchesEftSwiftCode | — |

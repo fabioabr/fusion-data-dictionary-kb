@@ -117,6 +117,35 @@ ORDER BY c.COMPONENT_TYPE;
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[componentspvo|ComponentsPVO]] (HCM · BICC: 20/20)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| COMP_TYPE | ComponentsPEOCompType | ✅ |
+| COMPONENT_ID | ComponentId | ✅ |
+| CREATED_BY | ComponentsPEOCreatedBy | ✅ |
+| CREATION_DATE | ComponentsPEOCreationDate | ✅ |
+| CURRENCY_DETERMINATION_CODE | ComponentsPEOCurrencyDeterminationCode | ✅ |
+| GRANT_TYPE | ComponentsPEOGrantType | ✅ |
+| LAST_UPDATE_DATE | ComponentsPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ComponentsPEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | ComponentsPEOLastUpdatedBy | ✅ |
+| NON_MONETARY_UOM | ComponentsPEONonMonetaryUom | ✅ |
+| OBJECT_VERSION_NUMBER | ComponentsPEOObjectVersionNumber | ✅ |
+| ORDER_NUM | ComponentsPEOOrderNum | ✅ |
+| PERIOD_ID | ComponentsPEOPeriodId | ✅ |
+| PLAN_ID | ComponentsPEOPlanId | ✅ |
+| POOL_ID_TO_CONSUME | ComponentsPEOPoolIdToConsume | ✅ |
+| POST_AS_SALARY_FLAG | ComponentsPEOPostAsSalaryFlag | ✅ |
+| RULE_ID | ComponentsPEORuleId | ✅ |
+| SALARY_COMPONENT | ComponentsPEOSalaryComponent | ✅ |
+| SYSTEM_ORDER_NUM | ComponentsPEOSystemOrderNum | ✅ |
+| TRADING_SYMBOL | ComponentsPEOTradingSymbol | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — CMP_COMPONENTS_B](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/cmpcomponentsb.html)

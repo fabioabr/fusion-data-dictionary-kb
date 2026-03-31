@@ -98,6 +98,74 @@ WHERE  pa.PARTNER_ID = :p_partner_id;
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[asmtacctpackagepvo|AsmtAcctPackagePVO]] (HCM)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACCOUNT_ID | PartnerAccountPEOAccountId | — |
+| DESCRIPTION | PartnerAccountPEODescription | — |
+| PROVISIONING_ID | PartnerAccountPEOProvisioningId | — |
+| USERNAME | PartnerAccountPEOUsername | — |
+
+### [[asmtpackageresultviewallpvo|AsmtPackageResultViewAllPVO]] (HCM · BICC: 1/1)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACCOUNT_ID | PartnerAccountPEOAccountId | ✅ |
+
+### [[asmtreqpackageviewallpvo|AsmtReqPackageViewAllPVO]] (HCM · BICC: 1/3)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACCOUNT_ID | PartnerAccountPEOAccountId | ✅ |
+| DESCRIPTION | PartnerAccountPEODescription | — |
+| USERNAME | PartnerAccountPEOUsername | — |
+
+### [[partneraccountpvo|PartnerAccountPVO]] (HCM · BICC: 13/15)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACCOUNT_ID | PartnerAccountPEOAccountId | ✅ |
+| ACTIVE_FLAG | PartnerAccountPEOActiveFlag | ✅ |
+| CREATED_BY | PartnerAccountPEOCreatedBy | ✅ |
+| CREATION_DATE | PartnerAccountPEOCreationDate | ✅ |
+| DEFAULT_FLAG | PartnerAccountPEODefaultFlag | ✅ |
+| DESCRIPTION | PartnerAccountPEODescription | ✅ |
+| LAST_UPDATE_DATE | PartnerAccountPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | PartnerAccountPEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | PartnerAccountPEOLastUpdatedBy | ✅ |
+| LAST_VALIDATE_DATE | PartnerAccountPEOLastValidateDate | ✅ |
+| OBJECT_VERSION_NUMBER | PartnerAccountPEOObjectVersionNumber | — |
+| PROVISIONING_ID | PartnerAccountPEOProvisioningId | ✅ |
+| USER_SALTED_HASH | PartnerAccountPEOUserSaltedHash | — |
+| USERNAME | PartnerAccountPEOUsername | ✅ |
+| VALIDATE_FLAG | PartnerAccountPEOValidateFlag | ✅ |
+
+### [[screeningpackagepvo|ScreeningPackagePVO]] (AP · BICC: 1/2)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACCOUNT_ID | PartnerAccountPEOAccountId | — |
+| USERNAME | PartnerAccountPEOUsername | ✅ |
+
+### [[screeningresultviewallpvo|ScreeningResultViewAllPVO]] (AP · BICC: 1/2)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACCOUNT_ID | PartnerAccountPEOAccountId | — |
+| USERNAME | PartnerAccountPEOUsername | ✅ |
+
+### [[screeningviewallpvo|ScreeningViewAllPVO]] (AP · BICC: 1/2)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACCOUNT_ID | PartnerAccountPEOAccountId | — |
+| USERNAME | PartnerAccountPEOUsername | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — IRC_TP_PARTNER_ACCOUNTS](https://docs.oracle.com/en/cloud/saas/talent-management/25a/oedmf/irctppartneraccounts.html)

@@ -108,3 +108,51 @@ ORDER BY ar.PRIORITY;
 
 - [Oracle Docs — HWM_ALLOCATION_RULES_F](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/hwmallocationrulesf.html)
 - [[hcm-module-data-dictionary]] — Dossie do modulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[allocationlinespvo|AllocationLinesPVO]] (GL · BICC: 10/17)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ALLOCATION_ID | AllocRulesPEOAllocationId | ✅ |
+| ALLOCATION_RULE_ID | AllocRulesPEOAllocationRuleId | — |
+| ALLOCATION_RULE_PRIORITY | AllocRulesPEORulePriority | ✅ |
+| ALLOCATION_TYPE | AllocRulesPEOAllocationType | ✅ |
+| CREATED_BY | AllocRulesPEOCreatedBy | ✅ |
+| CREATION_DATE | AllocRulesPEOCreationDate | ✅ |
+| DATA_LEVEL | AllocRulesPEODataLevel | — |
+| EFFECTIVE_END_DATE | AllocRulesPEOEffectiveEndDate | — |
+| EFFECTIVE_START_DATE | AllocRulesPEOEffectiveStartDt | — |
+| ENTERPRISE_ID | AllocRulesPEOEnterpriseId | — |
+| LAST_UPDATE_DATE | AllocRulesPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | AllocRulesPEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | AllocRulesPEOLastUpdatedBy | ✅ |
+| MODULE_ID | AllocRulesPEOModuleId | — |
+| OBJECT_VERSION_NUMBER | AllocRulesPEOObjectVersionNum | — |
+| RUN_SUMMATION_LEVEL | AllocRulesPEORunSummationLvl | ✅ |
+| TCAT_ID | AllocRulesPEOTimeCategoryId | ✅ |
+
+### [[allocationrulespvo|AllocationRulesPVO]] (GL · BICC: 13/17)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ALLOCATION_ID | AllocRulesPEOAllocationId | ✅ |
+| ALLOCATION_RULE_ID | AllocRulesPEOAllocationRuleId | ✅ |
+| ALLOCATION_RULE_PRIORITY | AllocRulesPEOAllocationRulePriority | ✅ |
+| ALLOCATION_TYPE | AllocRulesPEOAllocationType | ✅ |
+| CREATED_BY | AllocRulesPEOCreatedBy | ✅ |
+| CREATION_DATE | AllocRulesPEOCreationDate | ✅ |
+| DATA_LEVEL | AllocRulesPEODataLevel | — |
+| EFFECTIVE_END_DATE | AllocRulesPEOEffectiveEndDate | ✅ |
+| EFFECTIVE_START_DATE | AllocRulesPEOEffectiveStartDate | ✅ |
+| ENTERPRISE_ID | AllocRulesPEOEnterpriseId | — |
+| LAST_UPDATE_DATE | AllocRulesPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | AllocRulesPEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | AllocRulesPEOLastUpdatedBy | ✅ |
+| MODULE_ID | AllocRulesPEOModuleId | — |
+| OBJECT_VERSION_NUMBER | AllocRulesPEOObjectVersionNumber | — |
+| RUN_SUMMATION_LEVEL | AllocRulesPEORunSummationLevel | ✅ |
+| TCAT_ID | AllocRulesPEOTimeCategoryId | ✅ |

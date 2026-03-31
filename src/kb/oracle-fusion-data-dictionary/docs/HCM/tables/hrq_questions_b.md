@@ -95,6 +95,272 @@ WHERE  q.QUESTION_TYPE = 'SINGLE_CHOICE';
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[managerquestionnairequestionpvo|ManagerQuestionnaireQuestionPVO]] (HCM · BICC: 3/38)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ADHOC_FLAG | QuestionBPEOAdhocFlag | — |
+| ATTACHMENT_ALLOWED | QuestionBPEOAttachmentAllowed | — |
+| BUSINESS_GROUP_ID | ConditionQuestionBPEOBusinessGroupId | — |
+| BUSINESS_GROUP_ID | QuestionBPEOBusinessGroupId | — |
+| CATEGORY_ID | QuestionBPEOCategoryId | — |
+| CLASSIFICATION_CODE | QuestionBPEOClassificationCode | — |
+| CONDITION_ANSWER_ID | QuestionBPEOConditionAnswerId | — |
+| CONDITION_DISPLAY | QuestionBPEOConditionDisplay | — |
+| CONDITION_QSTN_VERSION_NUM | QuestionBPEOConditionQstnVersionNum | — |
+| CONDITION_QUESTION_ID | QuestionBPEOConditionQuestionId | — |
+| CREATED_BY | QuestionBPEOCreatedBy | — |
+| CREATION_DATE | QuestionBPEOCreationDate | — |
+| LAST_UPDATE_DATE | QuestionBPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | QuestionBPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | QuestionBPEOLastUpdatedBy | — |
+| LATEST_VERSION | QuestionBPEOLatestVersion | — |
+| MAX_LENGTH | QuestionBPEOMaxLength | — |
+| MAX_SELECTIONS | QuestionBPEOMaxSelections | — |
+| MIN_LENGTH | QuestionBPEOMinLength | — |
+| MIN_SELECTIONS | QuestionBPEOMinSelections | — |
+| MODULE_ID | QuestionBPEOModuleId | — |
+| OBJECT_VERSION_NUMBER | QuestionBPEOObjectVersionNumber | — |
+| OVERRIDE_DESC_FLAG | QuestionBPEOOverrideDescFlag | — |
+| OWNER | QuestionBPEOOwner | — |
+| PRIVACY_FLAG | QuestionBPEOPrivacyFlag | — |
+| QSTN_VERSION_NUM | ConditionQuestionBPEOQstnVersionNum | — |
+| QSTN_VERSION_NUM | QuestionBPEOQstnVersionNum | — |
+| QUESTION_CODE | ConditionQuestionBPEOQuestionCode | — |
+| QUESTION_CODE | QuestionBPEOQuestionCode | — |
+| QUESTION_ID | ConditionQuestionBPEOQuestionId | — |
+| QUESTION_ID | QuestionBPEOQuestionId | ✅ |
+| QUESTION_TYPE | QuestionBPEOQuestionType | ✅ |
+| RATING_MODEL_ID | QuestionBPEORatingModelId | — |
+| RESPONSE_TYPE_ID | QuestionBPEOResponseTypeId | — |
+| STATUS | QuestionBPEOStatus | — |
+| SUBSCRIBER_ID | QuestionBPEOSubscriberId | — |
+| UPDATE_ALLOWED | QuestionBPEOUpdateAllowed | — |
+| VERSION_DESCRIPTION | QuestionBPEOVersionDescription | — |
+
+### [[participantquestionnairequestionpvo|ParticipantQuestionnaireQuestionPVO]] (HCM · BICC: 10/38)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ADHOC_FLAG | QuestionBPEOAdhocFlag | — |
+| ATTACHMENT_ALLOWED | QuestionBPEOAttachmentAllowed | — |
+| BUSINESS_GROUP_ID | ConditionQuestionBPEOBusinessGroupId | — |
+| BUSINESS_GROUP_ID | QuestionBPEOBusinessGroupId | ✅ |
+| CATEGORY_ID | QuestionBPEOCategoryId | — |
+| CLASSIFICATION_CODE | QuestionBPEOClassificationCode | ✅ |
+| CONDITION_ANSWER_ID | QuestionBPEOConditionAnswerId | — |
+| CONDITION_DISPLAY | QuestionBPEOConditionDisplay | — |
+| CONDITION_QSTN_VERSION_NUM | QuestionBPEOConditionQstnVersionNum | — |
+| CONDITION_QUESTION_ID | QuestionBPEOConditionQuestionId | — |
+| CREATED_BY | QuestionBPEOCreatedBy | — |
+| CREATION_DATE | QuestionBPEOCreationDate | — |
+| LAST_UPDATE_DATE | QuestionBPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | QuestionBPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | QuestionBPEOLastUpdatedBy | — |
+| LATEST_VERSION | QuestionBPEOLatestVersion | — |
+| MAX_LENGTH | QuestionBPEOMaxLength | — |
+| MAX_SELECTIONS | QuestionBPEOMaxSelections | — |
+| MIN_LENGTH | QuestionBPEOMinLength | — |
+| MIN_SELECTIONS | QuestionBPEOMinSelections | — |
+| MODULE_ID | QuestionBPEOModuleId | — |
+| OBJECT_VERSION_NUMBER | QuestionBPEOObjectVersionNumber | — |
+| OVERRIDE_DESC_FLAG | QuestionBPEOOverrideDescFlag | — |
+| OWNER | QuestionBPEOOwner | ✅ |
+| PRIVACY_FLAG | QuestionBPEOPrivacyFlag | ✅ |
+| QSTN_VERSION_NUM | ConditionQuestionBPEOQstnVersionNum | — |
+| QSTN_VERSION_NUM | QuestionBPEOQstnVersionNum | ✅ |
+| QUESTION_CODE | ConditionQuestionBPEOQuestionCode | — |
+| QUESTION_CODE | QuestionBPEOQuestionCode | ✅ |
+| QUESTION_ID | ConditionQuestionBPEOQuestionId | — |
+| QUESTION_ID | QuestionBPEOQuestionId | ✅ |
+| QUESTION_TYPE | QuestionBPEOQuestionType | ✅ |
+| RATING_MODEL_ID | QuestionBPEORatingModelId | — |
+| RESPONSE_TYPE_ID | QuestionBPEOResponseTypeId | — |
+| STATUS | QuestionBPEOStatus | ✅ |
+| SUBSCRIBER_ID | QuestionBPEOSubscriberId | — |
+| UPDATE_ALLOWED | QuestionBPEOUpdateAllowed | — |
+| VERSION_DESCRIPTION | QuestionBPEOVersionDescription | — |
+
+### [[participantquestionnairequestionpvoforpotentialassessement|ParticipantQuestionnaireQuestionPVOForPotentialAssessement]] (HCM · BICC: 2/38)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ADHOC_FLAG | QuestionBPEOAdhocFlag | — |
+| ATTACHMENT_ALLOWED | QuestionBPEOAttachmentAllowed | — |
+| BUSINESS_GROUP_ID | ConditionQuestionBPEOBusinessGroupId | — |
+| BUSINESS_GROUP_ID | QuestionBPEOBusinessGroupId | — |
+| CATEGORY_ID | QuestionBPEOCategoryId | — |
+| CLASSIFICATION_CODE | QuestionBPEOClassificationCode | — |
+| CONDITION_ANSWER_ID | QuestionBPEOConditionAnswerId | — |
+| CONDITION_DISPLAY | QuestionBPEOConditionDisplay | — |
+| CONDITION_QSTN_VERSION_NUM | QuestionBPEOConditionQstnVersionNum | — |
+| CONDITION_QUESTION_ID | QuestionBPEOConditionQuestionId | — |
+| CREATED_BY | QuestionBPEOCreatedBy | — |
+| CREATION_DATE | QuestionBPEOCreationDate | — |
+| LAST_UPDATE_DATE | QuestionBPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | QuestionBPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | QuestionBPEOLastUpdatedBy | — |
+| LATEST_VERSION | QuestionBPEOLatestVersion | — |
+| MAX_LENGTH | QuestionBPEOMaxLength | — |
+| MAX_SELECTIONS | QuestionBPEOMaxSelections | — |
+| MIN_LENGTH | QuestionBPEOMinLength | — |
+| MIN_SELECTIONS | QuestionBPEOMinSelections | — |
+| MODULE_ID | QuestionBPEOModuleId | — |
+| OBJECT_VERSION_NUMBER | QuestionBPEOObjectVersionNumber | — |
+| OVERRIDE_DESC_FLAG | QuestionBPEOOverrideDescFlag | — |
+| OWNER | QuestionBPEOOwner | — |
+| PRIVACY_FLAG | QuestionBPEOPrivacyFlag | — |
+| QSTN_VERSION_NUM | ConditionQuestionBPEOQstnVersionNum | — |
+| QSTN_VERSION_NUM | QuestionBPEOQstnVersionNum | — |
+| QUESTION_CODE | ConditionQuestionBPEOQuestionCode | — |
+| QUESTION_CODE | QuestionBPEOQuestionCode | — |
+| QUESTION_ID | ConditionQuestionBPEOQuestionId | — |
+| QUESTION_ID | QuestionBPEOQuestionId | ✅ |
+| QUESTION_TYPE | QuestionBPEOQuestionType | — |
+| RATING_MODEL_ID | QuestionBPEORatingModelId | — |
+| RESPONSE_TYPE_ID | QuestionBPEOResponseTypeId | — |
+| STATUS | QuestionBPEOStatus | — |
+| SUBSCRIBER_ID | QuestionBPEOSubscriberId | — |
+| UPDATE_ALLOWED | QuestionBPEOUpdateAllowed | — |
+| VERSION_DESCRIPTION | QuestionBPEOVersionDescription | — |
+
+### [[questionnaireallquestionsp1|QuestionnaireAllQuestionsP1]] (HCM · BICC: 7/43)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ADHOC_FLAG | QuestionBPEOAdhocFlag | — |
+| ALL_JOB_FAMILIES_FLAG | QuestionBPEOAllJobFamiliesFlag | — |
+| ALL_JOB_FUNCTIONS_FLAG | QuestionBPEOAllJobFunctionsFlag | — |
+| ALL_LOCATIONS_FLAG | QuestionBPEOAllLocationsFlag | — |
+| ALL_ORGANIZATIONS_FLAG | QuestionBPEOAllOrganizationsFlag | — |
+| ATTACHMENT_ALLOWED | QuestionBPEOAttachmentAllowed | — |
+| BUSINESS_GROUP_ID | ConditionQuestionBPEOBusinessGroupId | — |
+| BUSINESS_GROUP_ID | QuestionBPEOBusinessGroupId | — |
+| CANDIDATE_CODE | QuestionBPEOCandidateCode | — |
+| CATEGORY_ID | QuestionBPEOCategoryId | — |
+| CLASSIFICATION_CODE | QuestionBPEOClassificationCode | ✅ |
+| CONDITION_ANSWER_ID | QuestionBPEOConditionAnswerId | — |
+| CONDITION_DISPLAY | QuestionBPEOConditionDisplay | — |
+| CONDITION_QSTN_VERSION_NUM | QuestionBPEOConditionQstnVersionNum | — |
+| CONDITION_QUESTION_ID | QuestionBPEOConditionQuestionId | — |
+| LATEST_VERSION | QuestionBPEOLatestVersion | — |
+| MAX_LENGTH | QuestionBPEOMaxLength | — |
+| MAX_POSSIBLE_SCORE | QuestionBPEOMaxPossibleScore | — |
+| MAX_SELECTIONS | QuestionBPEOMaxSelections | — |
+| MAX_THRESHOLD_SCORE | QuestionBPEOMaxThresholdScore | ✅ |
+| MIN_LENGTH | QuestionBPEOMinLength | — |
+| MIN_SELECTIONS | QuestionBPEOMinSelections | — |
+| MIN_THRESHOLD_SCORE | QuestionBPEOMinThresholdScore | ✅ |
+| MODULE_ID | QuestionBPEOModuleId | — |
+| OBJECT_VERSION_NUMBER | QuestionBPEOObjectVersionNumber | — |
+| OVERRIDE_DESC_FLAG | QuestionBPEOOverrideDescFlag | — |
+| OWNER | QuestionBPEOOwner | — |
+| PRIVACY_FLAG | QuestionBPEOPrivacyFlag | — |
+| QSTN_VERSION_NUM | ConditionQuestionBPEOQstnVersionNum | — |
+| QSTN_VERSION_NUM | QuestionBPEOQstnVersionNum | ✅ |
+| QUESTION_CODE | ConditionQuestionBPEOQuestionCode | — |
+| QUESTION_CODE | QuestionBPEOQuestionCode | — |
+| QUESTION_ID | ConditionQuestionBPEOQuestionId | — |
+| QUESTION_ID | QuestionBPEOQuestionId | ✅ |
+| QUESTION_TYPE | QuestionBPEOQuestionType | ✅ |
+| RATING_MODEL_ID | QuestionBPEORatingModelId | — |
+| RESPONSE_TYPE_ID | QuestionBPEOResponseTypeId | — |
+| SCORED_FLAG | QuestionBPEOScoredFlag | — |
+| SEED_DATA_SOURCE | QuestionBPEOSeedDataSource | — |
+| STATUS | QuestionBPEOStatus | ✅ |
+| SUBSCRIBER_ID | QuestionBPEOSubscriberId | — |
+| UPDATE_ALLOWED | QuestionBPEOUpdateAllowed | — |
+| VERSION_DESCRIPTION | QuestionBPEOVersionDescription | — |
+
+### [[questionnairequestionpvo|QuestionnaireQuestionPVO]] (HCM · BICC: 8/37)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ADHOC_FLAG | QuestionBPEOAdhocFlag | — |
+| ATTACHMENT_ALLOWED | QuestionnaireBPEOAttachmentAllowed | — |
+| BUSINESS_GROUP_ID | ConditionQuestionBPEOBusinessGroupId | — |
+| BUSINESS_GROUP_ID | QuestionBPEOBusinessGroupId | ✅ |
+| CATEGORY_ID | QuestionBPEOCategoryId | — |
+| CONDITION_ANSWER_ID | QuestionBPEOConditionAnswerId | — |
+| CONDITION_DISPLAY | QuestionBPEOConditionDisplay | — |
+| CONDITION_QSTN_VERSION_NUM | QuestionBPEOConditionQstnVersionNum | — |
+| CONDITION_QUESTION_ID | QuestionBPEOConditionQuestionId | — |
+| CREATED_BY | QuestionnaireBPEOCreatedBy | — |
+| CREATION_DATE | QuestionnaireBPEOCreationDate | — |
+| LAST_UPDATE_DATE | QuestionnaireBPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | QuestionnaireBPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | QuestionnaireBPEOLastUpdatedBy | — |
+| LATEST_VERSION | QuestionnaireBPEOLatestVersion | — |
+| MAX_LENGTH | QuestionnaireBPEOMaxLength | — |
+| MAX_SELECTIONS | QuestionnaireBPEOMaxSelections | — |
+| MIN_LENGTH | QuestionnaireBPEOMinLength | — |
+| MIN_SELECTIONS | QuestionnaireBPEOMinSelections | — |
+| MODULE_ID | QuestionnaireBPEOModuleId | — |
+| OBJECT_VERSION_NUMBER | QuestionnaireBPEOObjectVersionNumber | — |
+| OVERRIDE_DESC_FLAG | QuestionnaireBPEOOverrideDescFlag | — |
+| OWNER | QuestionBPEOOwner | ✅ |
+| PRIVACY_FLAG | QuestionBPEOPrivacyFlag | ✅ |
+| QSTN_VERSION_NUM | ConditionQuestionBPEOQstnVersionNum | — |
+| QSTN_VERSION_NUM | QuestionBPEOQstnVersionNum | ✅ |
+| QUESTION_CODE | ConditionQuestionBPEOQuestionCode | — |
+| QUESTION_CODE | QuestionnaireBPEOQuestionCode | — |
+| QUESTION_ID | ConditionQuestionBPEOQuestionId | — |
+| QUESTION_ID | QuestionBPEOQuestionId | ✅ |
+| QUESTION_TYPE | QuestionBPEOQuestionType | ✅ |
+| RATING_MODEL_ID | QuestionBPEORatingModelId | — |
+| RESPONSE_TYPE_ID | QuestionnaireBPEOResponseTypeId | — |
+| STATUS | QuestionBPEOStatus | ✅ |
+| SUBSCRIBER_ID | QuestionBPEOSubscriberId | — |
+| UPDATE_ALLOWED | QuestionnaireBPEOUpdateAllowed | — |
+| VERSION_DESCRIPTION | QuestionnaireBPEOVersionDescription | — |
+
+### [[workerquestionnairequestionpvo|WorkerQuestionnaireQuestionPVO]] (HCM · BICC: 3/38)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ADHOC_FLAG | QuestionBPEOAdhocFlag | — |
+| ATTACHMENT_ALLOWED | QuestionBPEOAttachmentAllowed | — |
+| BUSINESS_GROUP_ID | ConditionQuestionBPEOBusinessGroupId | — |
+| BUSINESS_GROUP_ID | QuestionBPEOBusinessGroupId | — |
+| CATEGORY_ID | QuestionBPEOCategoryId | — |
+| CLASSIFICATION_CODE | QuestionBPEOClassificationCode | — |
+| CONDITION_ANSWER_ID | QuestionBPEOConditionAnswerId | — |
+| CONDITION_DISPLAY | QuestionBPEOConditionDisplay | — |
+| CONDITION_QSTN_VERSION_NUM | QuestionBPEOConditionQstnVersionNum | — |
+| CONDITION_QUESTION_ID | QuestionBPEOConditionQuestionId | — |
+| CREATED_BY | QuestionBPEOCreatedBy | — |
+| CREATION_DATE | QuestionBPEOCreationDate | — |
+| LAST_UPDATE_DATE | QuestionBPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | QuestionBPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | QuestionBPEOLastUpdatedBy | — |
+| LATEST_VERSION | QuestionBPEOLatestVersion | — |
+| MAX_LENGTH | QuestionBPEOMaxLength | — |
+| MAX_SELECTIONS | QuestionBPEOMaxSelections | — |
+| MIN_LENGTH | QuestionBPEOMinLength | — |
+| MIN_SELECTIONS | QuestionBPEOMinSelections | — |
+| MODULE_ID | QuestionBPEOModuleId | — |
+| OBJECT_VERSION_NUMBER | QuestionBPEOObjectVersionNumber | — |
+| OVERRIDE_DESC_FLAG | QuestionBPEOOverrideDescFlag | — |
+| OWNER | QuestionBPEOOwner | — |
+| PRIVACY_FLAG | QuestionBPEOPrivacyFlag | — |
+| QSTN_VERSION_NUM | ConditionQuestionBPEOQstnVersionNum | — |
+| QSTN_VERSION_NUM | QuestionBPEOQstnVersionNum | — |
+| QUESTION_CODE | ConditionQuestionBPEOQuestionCode | — |
+| QUESTION_CODE | QuestionBPEOQuestionCode | — |
+| QUESTION_ID | ConditionQuestionBPEOQuestionId | — |
+| QUESTION_ID | QuestionBPEOQuestionId | ✅ |
+| QUESTION_TYPE | QuestionBPEOQuestionType | ✅ |
+| RATING_MODEL_ID | QuestionBPEORatingModelId | — |
+| RESPONSE_TYPE_ID | QuestionBPEOResponseTypeId | — |
+| STATUS | QuestionBPEOStatus | — |
+| SUBSCRIBER_ID | QuestionBPEOSubscriberId | — |
+| UPDATE_ALLOWED | QuestionBPEOUpdateAllowed | — |
+| VERSION_DESCRIPTION | QuestionBPEOVersionDescription | — |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Fusion HCM Tables and Views](https://docs.oracle.com/en/cloud/saas/human-resources/25a/)

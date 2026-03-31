@@ -40,7 +40,6 @@ View que monitora o status de transferência de registros de tempo aprovados par
 > [!note] Sufixo _V
 > O sufixo `_V` indica **view** — objeto somente leitura que consolida dados de uma ou mais tabelas para facilitar consultas.
 
-
 ---
 
 ## 🧠 Propósito de Negócio
@@ -104,6 +103,24 @@ WHERE  t.STATUS_CODE = 'APPROVED'
 - View somente leitura: não permite INSERT, UPDATE ou DELETE direto.
 - Tabela relacionada a transferência de dados para sistemas externos (Payroll, Project Costing).
 - Área funcional: Time Management dentro do Oracle Fusion Cloud HCM.
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[historicprocessedtimeentrypvo|HistoricProcessedTimeEntryPVO]] (HCM · BICC: 1/2)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| STATUS_ID | TimeEntryPyrXfrStatusId | — |
+| STATUS_VALUE | TimeEntryPyrXfrStatusValue | ✅ |
+
+### [[processedtimeentrypvo|ProcessedTimeEntryPVO]] (HCM · BICC: 1/2)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| STATUS_ID | TimeEntryPyrXfrStatusId | — |
+| STATUS_VALUE | TimeEntryPyrXfrStatusValue | ✅ |
 
 ---
 

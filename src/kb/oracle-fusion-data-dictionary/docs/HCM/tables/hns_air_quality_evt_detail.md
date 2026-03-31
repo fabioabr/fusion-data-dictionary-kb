@@ -116,6 +116,76 @@ WHERE  ed.INCIDENT_ID = :p_incident_id;
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[hnsairqualityeventpvo|HNSAirQualityEventPVO]] (HCM · BICC: 10/61)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| AIR_QUALITY_EVT_DETAIL_ID | HNSAirQualityEventPEOAirQualEvtDtlId | ✅ |
+| AIR_QUALITY_TYPE_CODE | HNSAirQualityEventPEOAirQualTypeCd | ✅ |
+| ATTRIBUTE1 | HNSAirQualityEventPEOAttribute1 | — |
+| ATTRIBUTE10 | HNSAirQualityEventPEOAttribute10 | — |
+| ATTRIBUTE11 | HNSAirQualityEventPEOAttribute11 | — |
+| ATTRIBUTE12 | HNSAirQualityEventPEOAttribute12 | — |
+| ATTRIBUTE13 | HNSAirQualityEventPEOAttribute13 | — |
+| ATTRIBUTE14 | HNSAirQualityEventPEOAttribute14 | — |
+| ATTRIBUTE15 | HNSAirQualityEventPEOAttribute15 | — |
+| ATTRIBUTE16 | HNSAirQualityEventPEOAttribute16 | — |
+| ATTRIBUTE17 | HNSAirQualityEventPEOAttribute17 | — |
+| ATTRIBUTE18 | HNSAirQualityEventPEOAttribute18 | — |
+| ATTRIBUTE19 | HNSAirQualityEventPEOAttribute19 | — |
+| ATTRIBUTE2 | HNSAirQualityEventPEOAttribute2 | — |
+| ATTRIBUTE20 | HNSAirQualityEventPEOAttribute20 | — |
+| ATTRIBUTE21 | HNSAirQualityEventPEOAttribute21 | — |
+| ATTRIBUTE22 | HNSAirQualityEventPEOAttribute22 | — |
+| ATTRIBUTE23 | HNSAirQualityEventPEOAttribute23 | — |
+| ATTRIBUTE24 | HNSAirQualityEventPEOAttribute24 | — |
+| ATTRIBUTE25 | HNSAirQualityEventPEOAttribute25 | — |
+| ATTRIBUTE26 | HNSAirQualityEventPEOAttribute26 | — |
+| ATTRIBUTE27 | HNSAirQualityEventPEOAttribute27 | — |
+| ATTRIBUTE28 | HNSAirQualityEventPEOAttribute28 | — |
+| ATTRIBUTE29 | HNSAirQualityEventPEOAttribute29 | — |
+| ATTRIBUTE3 | HNSAirQualityEventPEOAttribute3 | — |
+| ATTRIBUTE30 | HNSAirQualityEventPEOAttribute30 | — |
+| ATTRIBUTE4 | HNSAirQualityEventPEOAttribute4 | — |
+| ATTRIBUTE5 | HNSAirQualityEventPEOAttribute5 | — |
+| ATTRIBUTE6 | HNSAirQualityEventPEOAttribute6 | — |
+| ATTRIBUTE7 | HNSAirQualityEventPEOAttribute7 | — |
+| ATTRIBUTE8 | HNSAirQualityEventPEOAttribute8 | — |
+| ATTRIBUTE9 | HNSAirQualityEventPEOAttribute9 | — |
+| ATTRIBUTE_CATEGORY | HNSAirQualityEventPEOAttrCategory | — |
+| ATTRIBUTE_NUMBER1 | HNSAirQualityEventPEOAttrNumber1 | — |
+| ATTRIBUTE_NUMBER10 | HNSAirQualityEventPEOAttrNumber10 | — |
+| ATTRIBUTE_NUMBER2 | HNSAirQualityEventPEOAttrNumber2 | — |
+| ATTRIBUTE_NUMBER3 | HNSAirQualityEventPEOAttrNumber3 | — |
+| ATTRIBUTE_NUMBER4 | HNSAirQualityEventPEOAttrNumber4 | — |
+| ATTRIBUTE_NUMBER5 | HNSAirQualityEventPEOAttrNumber5 | — |
+| ATTRIBUTE_NUMBER6 | HNSAirQualityEventPEOAttrNumber6 | — |
+| ATTRIBUTE_NUMBER7 | HNSAirQualityEventPEOAttrNumber7 | — |
+| ATTRIBUTE_NUMBER8 | HNSAirQualityEventPEOAttrNumber8 | — |
+| ATTRIBUTE_NUMBER9 | HNSAirQualityEventPEOAttrNumber9 | — |
+| ATTRIBUTE_TIMESTAMP1 | HNSAirQualityEventPEOAttrTimestamp1 | — |
+| ATTRIBUTE_TIMESTAMP10 | HNSAirQualityEventPEOAttrTimestamp10 | — |
+| ATTRIBUTE_TIMESTAMP2 | HNSAirQualityEventPEOAttrTimestamp2 | — |
+| ATTRIBUTE_TIMESTAMP3 | HNSAirQualityEventPEOAttrTimestamp3 | — |
+| ATTRIBUTE_TIMESTAMP4 | HNSAirQualityEventPEOAttrTimestamp4 | — |
+| ATTRIBUTE_TIMESTAMP5 | HNSAirQualityEventPEOAttrTimestamp5 | — |
+| ATTRIBUTE_TIMESTAMP6 | HNSAirQualityEventPEOAttrTimestamp6 | — |
+| ATTRIBUTE_TIMESTAMP7 | HNSAirQualityEventPEOAttrTimestamp7 | — |
+| ATTRIBUTE_TIMESTAMP8 | HNSAirQualityEventPEOAttrTimestamp8 | — |
+| ATTRIBUTE_TIMESTAMP9 | HNSAirQualityEventPEOAttrTimestamp9 | — |
+| CREATED_BY | HNSAirQualityEventPEOCreatedBy | ✅ |
+| CREATION_DATE | HNSAirQualityEventPEOCreationDate | ✅ |
+| DELETED_FLAG | HNSAirQualityEventPEODeletedFlag | ✅ |
+| INCIDENT_DETAIL_ID | HNSAirQualityEventPEOIncDetailId | ✅ |
+| LAST_UPDATE_DATE | HNSAirQualityEventPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | HNSAirQualityEventPEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | HNSAirQualityEventPEOLastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | HNSAirQualityEventPEOObjVerNumber | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — HNS_AIR_QUALITY_EVT_DETAIL](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/hnsairqualityevtdetail.html)

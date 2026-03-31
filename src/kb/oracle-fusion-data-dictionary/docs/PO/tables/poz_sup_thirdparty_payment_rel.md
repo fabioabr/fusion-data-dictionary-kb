@@ -38,7 +38,6 @@ updated_at: 2026-03-25
 
 Armazena os **relacionamentos de pagamento a terceiros** entre fornecedores. Permite que pagamentos devidos a um fornecedor sejam direcionados para outro (terceiro autorizado), cenario de factoring ou cessao de credito.
 
-
 ---
 
 ## 🧠 Propósito de Negócio
@@ -98,7 +97,6 @@ WHERE  VENDOR_ID = :p_vendor_id AND STATUS = 'ACTIVE'
   AND  (END_DATE IS NULL OR END_DATE > SYSDATE);
 ```
 
-
 ---
 
 ## 🔒 Observações
@@ -106,6 +104,48 @@ WHERE  VENDOR_ID = :p_vendor_id AND STATUS = 'ACTIVE'
 - Relacionamentos sensiveis; requerem aprovacao de compliance.
 - Monitorar `END_DATE` para evitar redirecionamentos expirados.
 - Verificar redirecionamentos circulares em auditorias.
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[supplierthirdpartypaymentextractpvo|SupplierThirdPartyPaymentExtractPVO]] (PO · BICC: 14/14)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | CreatedBy | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| DEFAULT_RELATIONSHIP_FLAG | DefaultRelationshipFlag | ✅ |
+| DESCRIPTION | Description | ✅ |
+| FROM_DATE | FromDate | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | LastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | ✅ |
+| REMIT_TO_ADDRESS_ID | RemitToAddressId | ✅ |
+| REMIT_TO_SUPPLIER_ID | RemitToSupplierId | ✅ |
+| TO_DATE | ToDate | ✅ |
+| TPP_RELATIONSHIP_ID | TppRelationshipId | ✅ |
+| VENDOR_SITE_ID | VendorSiteId | ✅ |
+
+### [[supplierthirdpartypaymentpvo|SupplierThirdPartyPaymentPVO]] (PO · BICC: 6/14)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | CreatedBy | — |
+| CREATION_DATE | CreationDate | — |
+| DEFAULT_RELATIONSHIP_FLAG | DefaultRelationshipFlag | ✅ |
+| DESCRIPTION | Description | ✅ |
+| FROM_DATE | FromDate | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | — |
+| LAST_UPDATED_BY | LastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | — |
+| REMIT_TO_ADDRESS_ID | RemitToAddressId | — |
+| REMIT_TO_SUPPLIER_ID | RemitToSupplierId | — |
+| TO_DATE | ToDate | ✅ |
+| TPP_RELATIONSHIP_ID | TppRelationshipId | ✅ |
+| VENDOR_SITE_ID | VendorSiteId | — |
 
 ---
 

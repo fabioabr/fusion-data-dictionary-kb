@@ -119,6 +119,54 @@ WHERE  ah.ACTION_CODE = 'REJECT'
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[supplierapprovalhistorypvo|SupplierApprovalHistoryPVO]] (PO · BICC: 5/17)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_CODE | SupplierApprovalHistoryActionCode | ✅ |
+| ACTION_DATE | SupplierApprovalHistoryActionDate | ✅ |
+| ADDITIONAL_INFO | SupplierApprovalHistoryAdditionalInfo | ✅ |
+| AMX_IDENTIFICATION_KEY | SupplierApprovalHistoryAmxIdentificationKey | — |
+| APPROVAL_FLOW_CODE | SupplierApprovalHistoryApprovalFlowCode | — |
+| APPROVAL_HISTORY_ID | ApprovalHistoryId | ✅ |
+| CREATED_BY | SupplierApprovalHistoryCreatedBy | — |
+| CREATION_DATE | SupplierApprovalHistoryCreationDate | — |
+| FLOW_OBJECT_ID | SupplierApprovalHistoryFlowObjectId | — |
+| LAST_UPDATE_DATE | SupplierApprovalHistoryLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | SupplierApprovalHistoryLastUpdateLogin | — |
+| LAST_UPDATED_BY | SupplierApprovalHistoryLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | SupplierApprovalHistoryObjectVersionNumber | — |
+| PERFORMER_ID | SupplierApprovalHistoryPerformerId | — |
+| PERFORMER_TYPE | SupplierApprovalHistoryPerformerType | — |
+| SEQUENCE_NUM | SupplierApprovalHistorySequenceNum | — |
+| VENDOR_ID | SupplierApprovalHistoryVendorId | — |
+
+### [[supplierprofilechangeapprovalhistorypvo|SupplierProfileChangeApprovalHistoryPVO]] (PO · BICC: 7/17)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_CODE | ApprovalHistoryPEOActionCode | ✅ |
+| ACTION_DATE | ApprovalHistoryPEOActionDate | ✅ |
+| ADDITIONAL_INFO | ApprovalHistoryPEOAdditionalInfo | ✅ |
+| AMX_IDENTIFICATION_KEY | ApprovalHistoryPEOAmxIdentificationKey | — |
+| APPROVAL_FLOW_CODE | ApprovalHistoryPEOApprovalFlowCode | ✅ |
+| APPROVAL_HISTORY_ID | ApprovalHistoryPEOApprovalHistoryId | ✅ |
+| CREATED_BY | ApprovalHistoryPEOCreatedBy | — |
+| CREATION_DATE | ApprovalHistoryPEOCreationDate | — |
+| FLOW_OBJECT_ID | ApprovalHistoryPEOFlowObjectId | ✅ |
+| LAST_UPDATE_DATE | ApprovalHistoryPEOLastUpdateDate | — |
+| LAST_UPDATE_LOGIN | ApprovalHistoryPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | ApprovalHistoryPEOLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | ApprovalHistoryPEOObjectVersionNumber | — |
+| PERFORMER_ID | ApprovalHistoryPEOPerformerId | — |
+| PERFORMER_TYPE | ApprovalHistoryPEOPerformerType | — |
+| SEQUENCE_NUM | ApprovalHistoryPEOSequenceNum | ✅ |
+| VENDOR_ID | ApprovalHistoryPEOVendorId | — |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — POZ Tables](https://docs.oracle.com/en/cloud/saas/procurement/25a/oedmf/poztables.html)

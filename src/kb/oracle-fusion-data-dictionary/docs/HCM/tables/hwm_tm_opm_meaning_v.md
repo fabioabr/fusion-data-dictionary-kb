@@ -107,6 +107,24 @@ WHERE  v.LOOKUP_TYPE = :p_lookup_type
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[historicrptabstimeentrypvo|HistoricRptAbsTimeEntryPVO]] (HCM · BICC: 1/2)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CODE | OverridePaymentMethodCode | — |
+| MEANING | OverridePaymentMethodCodeMeaning | ✅ |
+
+### [[rptabstimeentrypvo|RptAbsTimeEntryPVO]] (HCM · BICC: 1/2)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CODE | OverridePaymentMethodCode | — |
+| MEANING | OverridePaymentMethodCodeMeaning | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — HWM_TM_OPM_MEANING_V](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/hwmtmopmeaningv.html)

@@ -133,6 +133,78 @@ ORDER BY MIN(fd.PERIOD_NUM);
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[fiscaldaypvo|FiscalDayPVO]] (GL · BICC: 18/29)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ADJUSTMENT_PERIOD_FLAG | FiscalPeriodAdjustmentPeriodFlag | ✅ |
+| CREATED_BY | CreatedBy | — |
+| CREATION_DATE | CreationDate | — |
+| DAY_OF_MONTH | DayOfMonth | — |
+| DAY_OF_WEEK | DayOfWeek | ✅ |
+| DAY_OF_YEAR | DayOfYear | — |
+| ENTERPRISE_ID | EnterpriseId | — |
+| FISCAL_PERIOD_CREATION_DATE | FiscalPeriodCreationDate | — |
+| FISCAL_PERIOD_END_DATE | FiscalPeriodEndDate | ✅ |
+| FISCAL_PERIOD_LAST_UPDATE_DATE | FiscalPeriodLastUpdateDate | ✅ |
+| FISCAL_PERIOD_NAME | FiscalPeriodName | ✅ |
+| FISCAL_PERIOD_NUMBER | FiscalPeriodNumber | ✅ |
+| FISCAL_PERIOD_SET_ID | FiscalPeriodSetId | ✅ |
+| FISCAL_PERIOD_SET_NAME | FiscalPeriodSetName | ✅ |
+| FISCAL_PERIOD_START_DATE | FiscalPeriodStartDate | ✅ |
+| FISCAL_PERIOD_TYPE | FiscalPeriodType | ✅ |
+| FISCAL_PERIODSET_CREATION_DATE | FiscalPeriodsetCreationDate | — |
+| FISCAL_QUARTER_END_DATE | FiscalQuarterEndDate | ✅ |
+| FISCAL_QUARTER_NUMBER | FiscalQuarterNumber | ✅ |
+| FISCAL_QUARTER_START_DATE | FiscalQuarterStartDate | ✅ |
+| FISCAL_YEAR_END_DATE | FiscalYearEndDate | ✅ |
+| FISCAL_YEAR_NUMBER | FiscalYearNumber | ✅ |
+| FISCAL_YEAR_START_DATE | FiscalYearStartDate | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | — |
+| LAST_UPDATED_BY | LastUpdatedBy | — |
+| PARENT_MONTH | ParentMonth | — |
+| PARENT_WEEK | ParentWeek | — |
+| REPORT_DATE | ReportDate | ✅ |
+
+### [[rmcsfiscaldaypvo|RMCSFiscalDayPVO]] (OTHER · BICC: 18/29)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ADJUSTMENT_PERIOD_FLAG | AdjustmentPeriodFlag | ✅ |
+| CREATED_BY | CreatedBy | — |
+| CREATION_DATE | CreationDate | — |
+| DAY_OF_MONTH | DayOfMonth | — |
+| DAY_OF_WEEK | DayOfWeek | ✅ |
+| DAY_OF_YEAR | DayOfYear | — |
+| ENTERPRISE_ID | EnterpriseId | — |
+| FISCAL_PERIOD_CREATION_DATE | FiscalPeriodCreationDate | — |
+| FISCAL_PERIOD_END_DATE | FiscalPeriodEndDate | ✅ |
+| FISCAL_PERIOD_LAST_UPDATE_DATE | FiscalPeriodLastUpdateDate | ✅ |
+| FISCAL_PERIOD_NAME | FiscalPeriodName | ✅ |
+| FISCAL_PERIOD_NUMBER | FiscalPeriodNumber | ✅ |
+| FISCAL_PERIOD_SET_ID | FiscalPeriodSetId | ✅ |
+| FISCAL_PERIOD_SET_NAME | FiscalPeriodSetName | ✅ |
+| FISCAL_PERIOD_START_DATE | FiscalPeriodStartDate | ✅ |
+| FISCAL_PERIOD_TYPE | FiscalPeriodType | ✅ |
+| FISCAL_PERIODSET_CREATION_DATE | FiscalPeriodsetCreationDate | — |
+| FISCAL_QUARTER_END_DATE | FiscalQuarterEndDate | ✅ |
+| FISCAL_QUARTER_NUMBER | FiscalQuarterNumber | ✅ |
+| FISCAL_QUARTER_START_DATE | FiscalQuarterStartDate | ✅ |
+| FISCAL_YEAR_END_DATE | FiscalYearEndDate | ✅ |
+| FISCAL_YEAR_NUMBER | FiscalYearNumber | ✅ |
+| FISCAL_YEAR_START_DATE | FiscalYearStartDate | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | — |
+| LAST_UPDATED_BY | LastUpdatedBy | — |
+| PARENT_MONTH | ParentMonth | — |
+| PARENT_WEEK | ParentWeek | — |
+| REPORT_DATE | ReportDate | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — GL Fiscal Calendar Views](https://docs.oracle.com/en/cloud/saas/financials/25a/oedmf/glperiodstatuses-25740.html)

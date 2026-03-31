@@ -115,6 +115,411 @@ ORDER BY pl.LOCATION_NAME;
 - Localizações inativas não devem ser atribuídas a novos assignments.
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[careerpreferencelocationpvo|CareerPreferenceLocationPVO]] (HCM · BICC: 2/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_OCCURRENCE_ID | LocationPEOActionOccurrenceId | — |
+| BUSINESS_GROUP_ID | LocationPEOBusinessGroupId | — |
+| CREATED_BY | CreatedBy | — |
+| CREATION_DATE | CreationDate | — |
+| INTERNAL_LOCATION_CODE | LocationPEOInternalLocationCode | — |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | — |
+| LAST_UPDATED_BY | LastUpdatedBy | — |
+| LOCATION_ID | LocationPEOLocationId | ✅ |
+| LOCATION_IMAGE_URL | LocationPEOLocationImageUrl | — |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | — |
+| SET_ID | LocationPEOSetId | — |
+
+### [[careerpreferencelocationpvo_viewall|CareerPreferenceLocationPVO_Viewall]] (HCM · BICC: 2/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_OCCURRENCE_ID | LocationPEOActionOccurrenceId | — |
+| BUSINESS_GROUP_ID | LocationPEOBusinessGroupId | — |
+| CREATED_BY | CreatedBy | — |
+| CREATION_DATE | CreationDate | — |
+| INTERNAL_LOCATION_CODE | LocationPEOInternalLocationCode | — |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | — |
+| LAST_UPDATED_BY | LastUpdatedBy | — |
+| LOCATION_ID | LocationPEOLocationId | ✅ |
+| LOCATION_IMAGE_URL | LocationPEOLocationImageUrl | — |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | — |
+| SET_ID | LocationPEOSetId | — |
+
+### [[excludedlocation1pvo|ExcludedLocation1PVO]] (HCM · BICC: 2/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_OCCURRENCE_ID | LocationPEOActionOccurrenceId | — |
+| BUSINESS_GROUP_ID | LocationPEOBusinessGroupId | — |
+| CREATED_BY | CreatedBy | — |
+| CREATION_DATE | CreationDate | — |
+| INTERNAL_LOCATION_CODE | LocationPEOInternalLocationCode | — |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | — |
+| LAST_UPDATED_BY | LastUpdatedBy | — |
+| LOCATION_ID | LocationPEOLocationId | ✅ |
+| LOCATION_IMAGE_URL | LocationPEOLocationImageUrl | — |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | — |
+| SET_ID | LocationPEOSetId | — |
+
+### [[excludedlocation1pvo_viewall|ExcludedLocation1PVO_Viewall]] (HCM · BICC: 2/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_OCCURRENCE_ID | LocationPEOActionOccurrenceId | — |
+| BUSINESS_GROUP_ID | LocationPEOBusinessGroupId | — |
+| CREATED_BY | CreatedBy | — |
+| CREATION_DATE | CreationDate | — |
+| INTERNAL_LOCATION_CODE | LocationPEOInternalLocationCode | — |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | — |
+| LAST_UPDATED_BY | LastUpdatedBy | — |
+| LOCATION_ID | LocationPEOLocationId | ✅ |
+| LOCATION_IMAGE_URL | LocationPEOLocationImageUrl | — |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | — |
+| SET_ID | LocationPEOSetId | — |
+
+### [[excludedlocation2pvo|ExcludedLocation2PVO]] (HCM · BICC: 2/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_OCCURRENCE_ID | LocationPEOActionOccurrenceId | — |
+| BUSINESS_GROUP_ID | LocationPEOBusinessGroupId | — |
+| CREATED_BY | CreatedBy | — |
+| CREATION_DATE | CreationDate | — |
+| INTERNAL_LOCATION_CODE | LocationPEOInternalLocationCode | — |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | — |
+| LAST_UPDATED_BY | LastUpdatedBy | — |
+| LOCATION_ID | LocationPEOLocationId | ✅ |
+| LOCATION_IMAGE_URL | LocationPEOLocationImageUrl | — |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | — |
+| SET_ID | LocationPEOSetId | — |
+
+### [[excludedlocation2pvo_viewall|ExcludedLocation2PVO_Viewall]] (HCM · BICC: 2/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_OCCURRENCE_ID | LocationPEOActionOccurrenceId | — |
+| BUSINESS_GROUP_ID | LocationPEOBusinessGroupId | — |
+| CREATED_BY | CreatedBy | — |
+| CREATION_DATE | CreationDate | — |
+| INTERNAL_LOCATION_CODE | LocationPEOInternalLocationCode | — |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | — |
+| LAST_UPDATED_BY | LastUpdatedBy | — |
+| LOCATION_ID | LocationPEOLocationId | ✅ |
+| LOCATION_IMAGE_URL | LocationPEOLocationImageUrl | — |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | — |
+| SET_ID | LocationPEOSetId | — |
+
+### [[excludedlocation3pvo|ExcludedLocation3PVO]] (HCM · BICC: 2/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_OCCURRENCE_ID | LocationPEOActionOccurrenceId | — |
+| BUSINESS_GROUP_ID | LocationPEOBusinessGroupId | — |
+| CREATED_BY | CreatedBy | — |
+| CREATION_DATE | CreationDate | — |
+| INTERNAL_LOCATION_CODE | LocationPEOInternalLocationCode | — |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | — |
+| LAST_UPDATED_BY | LastUpdatedBy | — |
+| LOCATION_ID | LocationPEOLocationId | ✅ |
+| LOCATION_IMAGE_URL | LocationPEOLocationImageUrl | — |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | — |
+| SET_ID | LocationPEOSetId | — |
+
+### [[excludedlocation3pvo_viewall|ExcludedLocation3PVO_Viewall]] (HCM · BICC: 2/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_OCCURRENCE_ID | LocationPEOActionOccurrenceId | — |
+| BUSINESS_GROUP_ID | LocationPEOBusinessGroupId | — |
+| CREATED_BY | CreatedBy | — |
+| CREATION_DATE | CreationDate | — |
+| INTERNAL_LOCATION_CODE | LocationPEOInternalLocationCode | — |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | — |
+| LAST_UPDATED_BY | LastUpdatedBy | — |
+| LOCATION_ID | LocationPEOLocationId | ✅ |
+| LOCATION_IMAGE_URL | LocationPEOLocationImageUrl | — |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | — |
+| SET_ID | LocationPEOSetId | — |
+
+### [[excludedlocation4pvo|ExcludedLocation4PVO]] (HCM · BICC: 2/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_OCCURRENCE_ID | LocationPEOActionOccurrenceId | — |
+| BUSINESS_GROUP_ID | LocationPEOBusinessGroupId | — |
+| CREATED_BY | CreatedBy | — |
+| CREATION_DATE | CreationDate | — |
+| INTERNAL_LOCATION_CODE | LocationPEOInternalLocationCode | — |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | — |
+| LAST_UPDATED_BY | LastUpdatedBy | — |
+| LOCATION_ID | LocationPEOLocationId | ✅ |
+| LOCATION_IMAGE_URL | LocationPEOLocationImageUrl | — |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | — |
+| SET_ID | LocationPEOSetId | — |
+
+### [[excludedlocation4pvo_viewall|ExcludedLocation4PVO_Viewall]] (HCM · BICC: 2/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_OCCURRENCE_ID | LocationPEOActionOccurrenceId | — |
+| BUSINESS_GROUP_ID | LocationPEOBusinessGroupId | — |
+| CREATED_BY | CreatedBy | — |
+| CREATION_DATE | CreationDate | — |
+| INTERNAL_LOCATION_CODE | LocationPEOInternalLocationCode | — |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | — |
+| LAST_UPDATED_BY | LastUpdatedBy | — |
+| LOCATION_ID | LocationPEOLocationId | ✅ |
+| LOCATION_IMAGE_URL | LocationPEOLocationImageUrl | — |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | — |
+| SET_ID | LocationPEOSetId | — |
+
+### [[hrlocationsbasepvo|HRLocationsBasePVO]] (HCM · BICC: 6/13)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_OCCURRENCE_ID | LocationPEOActionOccurrenceId | — |
+| BUSINESS_GROUP_ID | LocationPEOBusinessGroupId | — |
+| CREATED_BY | LocationPEOCreatedBy | — |
+| CREATION_DATE | LocationPEOCreationDate | — |
+| EMPLOYEE_LOCATION_FLAG | LocationPEOEmployeeLocationFlag | ✅ |
+| INTERNAL_LOCATION_CODE | LocationPEOInternalLocationCode | ✅ |
+| LAST_UPDATE_DATE | LocationPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LocationPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | LocationPEOLastUpdatedBy | — |
+| LOCATION_ID | LocationPEOLocationId | ✅ |
+| LOCATION_IMAGE_URL | LocationPEOLocationImageUrl | ✅ |
+| OBJECT_VERSION_NUMBER | LocationPEOObjectVersionNumber | — |
+| SET_ID | LocationPEOSetId | ✅ |
+
+### [[hrlocationsbasepvoviewall|HRLocationsBasePVOViewAll]] (HCM · BICC: 6/13)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_OCCURRENCE_ID | LocationPEOActionOccurrenceId | — |
+| BUSINESS_GROUP_ID | LocationPEOBusinessGroupId | — |
+| CREATED_BY | LocationPEOCreatedBy | — |
+| CREATION_DATE | LocationPEOCreationDate | — |
+| EMPLOYEE_LOCATION_FLAG | LocationPEOEmployeeLocationFlag | ✅ |
+| INTERNAL_LOCATION_CODE | LocationPEOInternalLocationCode | ✅ |
+| LAST_UPDATE_DATE | LocationPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LocationPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | LocationPEOLastUpdatedBy | — |
+| LOCATION_ID | LocationPEOLocationId | ✅ |
+| LOCATION_IMAGE_URL | LocationPEOLocationImageUrl | ✅ |
+| OBJECT_VERSION_NUMBER | LocationPEOObjectVersionNumber | — |
+| SET_ID | LocationPEOSetId | ✅ |
+
+### [[hrlocationspvo|HRLocationsPVO]] (HCM · BICC: 12/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_OCCURRENCE_ID | LocationPEOActionOccurrenceId | ✅ |
+| BUSINESS_GROUP_ID | LocationPEOBusinessGroupId | ✅ |
+| CREATED_BY | LocationPEOCreatedBy | ✅ |
+| CREATION_DATE | LocationPEOCreationDate | ✅ |
+| INTERNAL_LOCATION_CODE | LocationPEOInternalLocationCode | ✅ |
+| LAST_UPDATE_DATE | LocationPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LocationPEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | LocationPEOLastUpdatedBy | ✅ |
+| LOCATION_ID | LocationPEOLocationId | ✅ |
+| LOCATION_IMAGE_URL | LocationPEOLocationImageUrl | ✅ |
+| OBJECT_VERSION_NUMBER | LocationPEOObjectVersionNumber | ✅ |
+| SET_ID | LocationPEOSetId | ✅ |
+
+### [[hrlocationspvoviewall|HRLocationsPVOViewAll]] (HCM · BICC: 1/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_OCCURRENCE_ID | LocationPEOActionOccurrenceId | — |
+| BUSINESS_GROUP_ID | LocationPEOBusinessGroupId | — |
+| CREATED_BY | LocationPEOCreatedBy | — |
+| CREATION_DATE | LocationPEOCreationDate | — |
+| INTERNAL_LOCATION_CODE | LocationPEOInternalLocationCode | — |
+| LAST_UPDATE_DATE | LocationPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LocationPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | LocationPEOLastUpdatedBy | — |
+| LOCATION_ID | LocationPEOLocationId | — |
+| LOCATION_IMAGE_URL | LocationPEOLocationImageUrl | — |
+| OBJECT_VERSION_NUMBER | LocationPEOObjectVersionNumber | — |
+| SET_ID | LocationPEOSetId | — |
+
+### [[locationpvo|LocationPVO]] (HCM · BICC: 12/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_OCCURRENCE_ID | LocationPEOActionOccurrenceId | ✅ |
+| BUSINESS_GROUP_ID | LocationPEOBusinessGroupId | ✅ |
+| CREATED_BY | LocationPEOCreatedBy | ✅ |
+| CREATION_DATE | LocationPEOCreationDate | ✅ |
+| INTERNAL_LOCATION_CODE | LocationPEOInternalLocationCode | ✅ |
+| LAST_UPDATE_DATE | LocationPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LocationPEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | LocationPEOLastUpdatedBy | ✅ |
+| LOCATION_ID | LocationId | ✅ |
+| LOCATION_IMAGE_URL | LocationPEOLocationImageUrl | ✅ |
+| OBJECT_VERSION_NUMBER | LocationPEOObjectVersionNumber | ✅ |
+| SET_ID | LocationPEOSetId | ✅ |
+
+### [[locationrefpvo|LocationRefPVO]] (HCM · BICC: 1/3)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| INTERNAL_LOCATION_CODE | LocationPEOInternalLocationCode | — |
+| LOCATION_ID | LocationPEOLocationId | — |
+| SET_ID | LocationPEOSetId | ✅ |
+
+### [[preferredlocation1pvo|PreferredLocation1PVO]] (HCM · BICC: 2/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_OCCURRENCE_ID | LocationPEOActionOccurrenceId | — |
+| BUSINESS_GROUP_ID | LocationPEOBusinessGroupId | — |
+| CREATED_BY | CreatedBy | — |
+| CREATION_DATE | CreationDate | — |
+| INTERNAL_LOCATION_CODE | LocationPEOInternalLocationCode | — |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | — |
+| LAST_UPDATED_BY | LastUpdatedBy | — |
+| LOCATION_ID | LocationPEOLocationId | ✅ |
+| LOCATION_IMAGE_URL | LocationPEOLocationImageUrl | — |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | — |
+| SET_ID | LocationPEOSetId | — |
+
+### [[preferredlocation1pvo_viewall|PreferredLocation1PVO_Viewall]] (HCM · BICC: 2/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_OCCURRENCE_ID | LocationPEOActionOccurrenceId | — |
+| BUSINESS_GROUP_ID | LocationPEOBusinessGroupId | — |
+| CREATED_BY | CreatedBy | — |
+| CREATION_DATE | CreationDate | — |
+| INTERNAL_LOCATION_CODE | LocationPEOInternalLocationCode | — |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | — |
+| LAST_UPDATED_BY | LastUpdatedBy | — |
+| LOCATION_ID | LocationPEOLocationId | ✅ |
+| LOCATION_IMAGE_URL | LocationPEOLocationImageUrl | — |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | — |
+| SET_ID | LocationPEOSetId | — |
+
+### [[preferredlocation2pvo|PreferredLocation2PVO]] (HCM · BICC: 2/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_OCCURRENCE_ID | LocationPEOActionOccurrenceId | — |
+| BUSINESS_GROUP_ID | LocationPEOBusinessGroupId | — |
+| CREATED_BY | CreatedBy | — |
+| CREATION_DATE | CreationDate | — |
+| INTERNAL_LOCATION_CODE | LocationPEOInternalLocationCode | — |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | — |
+| LAST_UPDATED_BY | LastUpdatedBy | — |
+| LOCATION_ID | LocationPEOLocationId | ✅ |
+| LOCATION_IMAGE_URL | LocationPEOLocationImageUrl | — |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | — |
+| SET_ID | LocationPEOSetId | — |
+
+### [[preferredlocation2pvo_viewall|PreferredLocation2PVO_Viewall]] (HCM · BICC: 2/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_OCCURRENCE_ID | LocationPEOActionOccurrenceId | — |
+| BUSINESS_GROUP_ID | LocationPEOBusinessGroupId | — |
+| CREATED_BY | CreatedBy | — |
+| CREATION_DATE | CreationDate | — |
+| INTERNAL_LOCATION_CODE | LocationPEOInternalLocationCode | — |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | — |
+| LAST_UPDATED_BY | LastUpdatedBy | — |
+| LOCATION_ID | LocationPEOLocationId | ✅ |
+| LOCATION_IMAGE_URL | LocationPEOLocationImageUrl | — |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | — |
+| SET_ID | LocationPEOSetId | — |
+
+### [[preferredlocation3pvo|PreferredLocation3PVO]] (HCM · BICC: 2/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_OCCURRENCE_ID | LocationPEOActionOccurrenceId | — |
+| BUSINESS_GROUP_ID | LocationPEOBusinessGroupId | — |
+| CREATED_BY | CreatedBy | — |
+| CREATION_DATE | CreationDate | — |
+| INTERNAL_LOCATION_CODE | LocationPEOInternalLocationCode | — |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | — |
+| LAST_UPDATED_BY | LastUpdatedBy | — |
+| LOCATION_ID | LocationPEOLocationId | ✅ |
+| LOCATION_IMAGE_URL | LocationPEOLocationImageUrl | — |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | — |
+| SET_ID | LocationPEOSetId | — |
+
+### [[preferredlocation3pvo_viewall|PreferredLocation3PVO_Viewall]] (HCM · BICC: 2/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_OCCURRENCE_ID | LocationPEOActionOccurrenceId | — |
+| BUSINESS_GROUP_ID | LocationPEOBusinessGroupId | — |
+| CREATED_BY | CreatedBy | — |
+| CREATION_DATE | CreationDate | — |
+| INTERNAL_LOCATION_CODE | LocationPEOInternalLocationCode | — |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | — |
+| LAST_UPDATED_BY | LastUpdatedBy | — |
+| LOCATION_ID | LocationPEOLocationId | ✅ |
+| LOCATION_IMAGE_URL | LocationPEOLocationImageUrl | — |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | — |
+| SET_ID | LocationPEOSetId | — |
+
+### [[preferredlocation4pvo|PreferredLocation4PVO]] (HCM · BICC: 2/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_OCCURRENCE_ID | LocationPEOActionOccurrenceId | — |
+| BUSINESS_GROUP_ID | LocationPEOBusinessGroupId | — |
+| CREATED_BY | CreatedBy | — |
+| CREATION_DATE | CreationDate | — |
+| INTERNAL_LOCATION_CODE | LocationPEOInternalLocationCode | — |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | — |
+| LAST_UPDATED_BY | LastUpdatedBy | — |
+| LOCATION_ID | LocationPEOLocationId | ✅ |
+| LOCATION_IMAGE_URL | LocationPEOLocationImageUrl | — |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | — |
+| SET_ID | LocationPEOSetId | — |
+
+### [[preferredlocation4pvo_viewall|PreferredLocation4PVO_Viewall]] (HCM · BICC: 2/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_OCCURRENCE_ID | LocationPEOActionOccurrenceId | — |
+| BUSINESS_GROUP_ID | LocationPEOBusinessGroupId | — |
+| CREATED_BY | CreatedBy | — |
+| CREATION_DATE | CreationDate | — |
+| INTERNAL_LOCATION_CODE | LocationPEOInternalLocationCode | — |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | — |
+| LAST_UPDATED_BY | LastUpdatedBy | — |
+| LOCATION_ID | LocationPEOLocationId | ✅ |
+| LOCATION_IMAGE_URL | LocationPEOLocationImageUrl | — |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | — |
+| SET_ID | LocationPEOSetId | — |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — PER_LOCATIONS](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/perlocations.html)

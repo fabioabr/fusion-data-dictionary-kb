@@ -132,6 +132,35 @@ WHERE  tt.PRICE_TOLERANCE > 5;
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[suppliersitepvo|SupplierSitePVO]] (PO · BICC: 13/20)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | ApToleranceCreatedBy | — |
+| CREATION_DATE | ApToleranceCreationDate | — |
+| DESCRIPTION | ApToleranceDescription | ✅ |
+| LAST_UPDATE_DATE | ApToleranceLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ApToleranceLastUpdateLogin | — |
+| LAST_UPDATED_BY | ApToleranceLastUpdatedBy | — |
+| MAX_QTY_ORD_TOLERANCE | ApToleranceMaxQtyOrdTolerance | ✅ |
+| MAX_QTY_REC_TOLERANCE | ApToleranceMaxQtyRecTolerance | ✅ |
+| OBJECT_VERSION_NUMBER | ApToleranceObjectVersionNumber | — |
+| PRICE_TOLERANCE | ApTolerancePriceTolerance | ✅ |
+| QTY_RECEIVED_TOLERANCE | ApToleranceQtyReceivedTolerance | ✅ |
+| QUANTITY_TOLERANCE | ApToleranceQuantityTolerance | ✅ |
+| RATE_AMT_TOLERANCE | ApToleranceRateAmtTolerance | ✅ |
+| SHIP_AMT_TOLERANCE | ApToleranceShipAmtTolerance | ✅ |
+| TOLERANCE_ID | ApAmtToleranceToleranceId | — |
+| TOLERANCE_ID | ApToleranceToleranceId | — |
+| TOLERANCE_NAME | ApAmtToleranceToleranceName | ✅ |
+| TOLERANCE_NAME | ApToleranceToleranceName | ✅ |
+| TOLERANCE_TYPE | ApToleranceToleranceType | ✅ |
+| TOTAL_AMT_TOLERANCE | ApToleranceTotalAmtTolerance | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — AP Tolerance Templates](https://docs.oracle.com/en/cloud/saas/financials/25a/oedmf/aptolerancetemplates.html)

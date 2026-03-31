@@ -90,3 +90,55 @@ SELECT tb.TERM_ID,
 - Oracle Fusion Cloud Financials — Accounts Payable Tables (OEDMF Release 13).
 - Oracle Fusion Cloud — Multi-Language Support (MLS) Architecture.
 - Oracle Fusion Cloud ERP Schema Reference (Release 25A).
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[paiddisbursementschedulepvo|PaidDisbursementSchedulePVO]] (AP · BICC: 1/3)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| LANGUAGE | PaymentTermLanguage | — |
+| NAME | PaymentTermName | ✅ |
+| TERM_ID | PaymentTermTermId | — |
+
+### [[paymenthistorydistributionpvo|PaymentHistoryDistributionPVO]] (AP · BICC: 1/3)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| LANGUAGE | PaymentTermLanguage | — |
+| NAME | PaymentTermName | ✅ |
+| TERM_ID | PaymentTermTermId | — |
+
+### [[paymenttermheadertranslationextractpvo|PaymentTermHeaderTranslationExtractPVO]] (OTHER · BICC: 11/11)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | PaymentTermHeaderTranslationCreatedBy | ✅ |
+| CREATION_DATE | PaymentTermHeaderTranslationCreationDate | ✅ |
+| DESCRIPTION | PaymentTermHeaderTranslationDescription | ✅ |
+| LANGUAGE | PaymentTermHeaderTranslationLanguage | ✅ |
+| LAST_UPDATE_DATE | PaymentTermHeaderTranslationLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | PaymentTermHeaderTranslationLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | PaymentTermHeaderTranslationLastUpdatedBy | ✅ |
+| NAME | PaymentTermHeaderTranslationName | ✅ |
+| OBJECT_VERSION_NUMBER | PaymentTermHeaderTranslationObjectVersionNumber | ✅ |
+| SOURCE_LANG | PaymentTermHeaderTranslationSourceLang | ✅ |
+| TERM_ID | PaymentTermHeaderTranslationTermId | ✅ |
+
+### [[paymenttermheadertranslationpvo|PaymentTermHeaderTranslationPVO]] (AP · BICC: 9/11)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | CreatedBy | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| DESCRIPTION | Description | ✅ |
+| LANGUAGE | Language | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | — |
+| LAST_UPDATED_BY | LastUpdatedBy | ✅ |
+| NAME | Name | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | — |
+| SOURCE_LANG | SourceLang | ✅ |
+| TERM_ID | TermId | ✅ |

@@ -129,3 +129,24 @@ ORDER BY ptm.SEQUENCE_NUMBER;
 
 - [Oracle Docs — Procurement Tables](https://docs.oracle.com/en/cloud/saas/procurement/25a/oedmf/ponprogramteammembers.html)
 - [[po-module-data-dictionary]] — Dossiê do módulo Procurement
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[sourcingprogramteammemberpvo|SourcingProgramTeamMemberPVO]] (PO · BICC: 1/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACCESS_TYPE | ProgramTeamMemberPEOAccessType | ✅ |
+| CREATED_BY | ProgramTeamMemberPEOCreatedBy | — |
+| CREATION_DATE | ProgramTeamMemberPEOCreationDate | — |
+| LAST_UPDATE_DATE | ProgramTeamMemberPEOLastUpdateDate | — |
+| LAST_UPDATE_LOGIN | ProgramTeamMemberPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | ProgramTeamMemberPEOLastUpdatedBy | — |
+| MEMBER_TYPE | ProgramTeamMemberPEOMemberType | — |
+| NOTE | ProgramTeamMemberPEONote | — |
+| OBJECT_VERSION_NUMBER | ProgramTeamMemberPEOObjectVersionNumber | — |
+| PERSON_ID | ProgramTeamMemberPEOPersonId | — |
+| PROGRAM_HEADER_ID | ProgramTeamMemberPEOProgramHeaderId | — |
+| TEAM_MEMBER_ID | ProgramTeamMemberPEOTeamMemberId | — |

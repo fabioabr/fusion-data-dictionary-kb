@@ -99,6 +99,231 @@ WHERE  gi.PERSON_ID = :p_person_id;
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[careerdevgoalpvo|CareerDevGoalPVO]] (HCM · BICC: 1/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | BusinessGroupId | — |
+| CREATED_BY | CreatedBy | — |
+| CREATION_DATE | CreationDate | — |
+| GOAL_ID | GoalId1 | — |
+| GOAL_INTENT_ID | GoalIntentId | — |
+| LAST_UPDATE_DATE | LastUpdateDate | — |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | — |
+| LAST_UPDATED_BY | LastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | — |
+| PERSON_ID | PersonId | — |
+| REFERENCE_ITEM_ID | ReferenceItemId | — |
+| REFERENCE_TYPE | ReferenceType | ✅ |
+
+### [[careerdevgoalpvoviewall|CareerDevGoalPVOViewAll]] (HCM · BICC: 2/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | BusinessGroupId | — |
+| CREATED_BY | CreatedBy | — |
+| CREATION_DATE | CreationDate | — |
+| GOAL_ID | GoalId1 | — |
+| GOAL_INTENT_ID | GoalIntentId | — |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | — |
+| LAST_UPDATED_BY | LastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | — |
+| PERSON_ID | PersonId | — |
+| REFERENCE_ITEM_ID | ReferenceItemId | — |
+| REFERENCE_TYPE | ReferenceType | ✅ |
+
+### [[careerdevgoalversionpvo|CareerDevGoalVersionPVO]] (HCM · BICC: 2/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | BusinessGroupId | — |
+| CREATED_BY | CreatedBy | — |
+| CREATION_DATE | CreationDate | — |
+| GOAL_ID | GoalId1 | — |
+| GOAL_INTENT_ID | GoalIntentId | — |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | — |
+| LAST_UPDATED_BY | LastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | — |
+| PERSON_ID | PersonId | — |
+| REFERENCE_ITEM_ID | ReferenceItemId | — |
+| REFERENCE_TYPE | ReferenceType | ✅ |
+
+### [[careerdevgoalversionpvoviewall|CareerDevGoalVersionPVOViewAll]] (HCM · BICC: 2/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | BusinessGroupId | — |
+| CREATED_BY | CreatedBy | — |
+| CREATION_DATE | CreationDate | — |
+| GOAL_ID | GoalId1 | — |
+| GOAL_INTENT_ID | GoalIntentId | — |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | — |
+| LAST_UPDATED_BY | LastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | — |
+| PERSON_ID | PersonId | — |
+| REFERENCE_ITEM_ID | ReferenceItemId | — |
+| REFERENCE_TYPE | ReferenceType | ✅ |
+
+### [[developmentgoalpvo|DevelopmentGoalPVO]] (HCM · BICC: 2/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | BusinessGroupId | — |
+| CREATED_BY | CreatedBy | — |
+| CREATION_DATE | CreationDate | — |
+| GOAL_ID | GoalId1 | — |
+| GOAL_INTENT_ID | GoalIntentId | — |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | — |
+| LAST_UPDATED_BY | LastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | — |
+| PERSON_ID | PersonId | — |
+| REFERENCE_ITEM_ID | ReferenceItemId | — |
+| REFERENCE_TYPE | ReferenceType | ✅ |
+
+### [[developmentgoalpvoviewall|DevelopmentGoalPVOViewAll]] (HCM · BICC: 2/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | BusinessGroupId | — |
+| CREATED_BY | CreatedBy | — |
+| CREATION_DATE | CreationDate | — |
+| GOAL_ID | GoalId1 | — |
+| GOAL_INTENT_ID | GoalIntentId | — |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | — |
+| LAST_UPDATED_BY | LastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | — |
+| PERSON_ID | PersonId | — |
+| REFERENCE_ITEM_ID | ReferenceItemId | — |
+| REFERENCE_TYPE | ReferenceType | ✅ |
+
+### [[goalppvo1|GoalPPVO1]] (HCM · BICC: 1/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | BusinessGroupId | — |
+| CREATED_BY | CreatedBy | — |
+| CREATION_DATE | CreationDate | — |
+| GOAL_ID | GoalId1 | — |
+| GOAL_INTENT_ID | GoalIntentId | — |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | — |
+| LAST_UPDATED_BY | LastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | — |
+| PERSON_ID | PersonId | — |
+| REFERENCE_ITEM_ID | ReferenceItemId | — |
+| REFERENCE_TYPE | ReferenceType | — |
+
+### [[goalpvo_copy|GoalPVO_Copy]] (HCM · BICC: 1/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | BusinessGroupId | — |
+| CREATED_BY | CreatedBy | — |
+| CREATION_DATE | CreationDate | — |
+| GOAL_ID | GoalId1 | — |
+| GOAL_INTENT_ID | GoalIntentId | — |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | — |
+| LAST_UPDATED_BY | LastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | — |
+| PERSON_ID | PersonId | — |
+| REFERENCE_ITEM_ID | ReferenceItemId | — |
+| REFERENCE_TYPE | ReferenceType | — |
+
+### [[performancegoalpvo|PerformanceGoalPVO]] (HCM)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | BusinessGroupId | — |
+| CREATED_BY | CreatedBy | — |
+| CREATION_DATE | CreationDate | — |
+| GOAL_ID | GoalId1 | — |
+| GOAL_INTENT_ID | GoalIntentId | — |
+| LAST_UPDATE_DATE | LastUpdateDate | — |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | — |
+| LAST_UPDATED_BY | LastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | — |
+| PERSON_ID | PersonId | — |
+| REFERENCE_ITEM_ID | ReferenceItemId | — |
+| REFERENCE_TYPE | ReferenceType | — |
+
+### [[performancegoalpvoviewall|PerformanceGoalPVOViewAll]] (HCM · BICC: 1/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | BusinessGroupId | — |
+| CREATED_BY | CreatedBy | — |
+| CREATION_DATE | CreationDate | — |
+| GOAL_ID | GoalId1 | — |
+| GOAL_INTENT_ID | GoalIntentId | — |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | — |
+| LAST_UPDATED_BY | LastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | — |
+| PERSON_ID | PersonId | — |
+| REFERENCE_ITEM_ID | ReferenceItemId | — |
+| REFERENCE_TYPE | ReferenceType | — |
+
+### [[performancegoalversionpvo|PerformanceGoalVersionPVO]] (HCM · BICC: 1/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | BusinessGroupId | — |
+| CREATED_BY | CreatedBy | — |
+| CREATION_DATE | CreationDate | — |
+| GOAL_ID | GoalId1 | — |
+| GOAL_INTENT_ID | GoalIntentId | — |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | — |
+| LAST_UPDATED_BY | LastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | — |
+| PERSON_ID | PersonId | — |
+| REFERENCE_ITEM_ID | ReferenceItemId | — |
+| REFERENCE_TYPE | ReferenceType | — |
+
+### [[performancegoalversionpvoviewall|PerformanceGoalVersionPVOViewAll]] (HCM · BICC: 1/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | BusinessGroupId | — |
+| CREATED_BY | CreatedBy | — |
+| CREATION_DATE | CreationDate | — |
+| GOAL_ID | GoalId1 | — |
+| GOAL_INTENT_ID | GoalIntentId | — |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | — |
+| LAST_UPDATED_BY | LastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | — |
+| PERSON_ID | PersonId | — |
+| REFERENCE_ITEM_ID | ReferenceItemId | — |
+| REFERENCE_TYPE | ReferenceType | — |
+
+### [[personalgoalpvo|PersonalGoalPVO]] (HCM)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | BusinessGroupId | — |
+| CREATED_BY | CreatedBy | — |
+| CREATION_DATE | CreationDate | — |
+| GOAL_ID | GoalId1 | — |
+| GOAL_INTENT_ID | GoalIntentId | — |
+| LAST_UPDATE_DATE | LastUpdateDate | — |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | — |
+| LAST_UPDATED_BY | LastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | — |
+| PERSON_ID | PersonId | — |
+| REFERENCE_ITEM_ID | ReferenceItemId | — |
+| REFERENCE_TYPE | ReferenceType | — |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Fusion HCM Tables and Views](https://docs.oracle.com/en/cloud/saas/human-resources/25a/)

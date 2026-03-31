@@ -40,7 +40,6 @@ Tabela de traduções dos conjuntos de configuração de resumo de cartão de po
 > [!note] Sufixo _TL
 > O sufixo `_TL` indica tabela de **traduções** — armazena textos traduzidos por idioma. Chave composta: PK da tabela `_B` + `LANGUAGE`.
 
-
 ---
 
 ## 🧠 Propósito de Negócio
@@ -107,6 +106,36 @@ WHERE  t.LANGUAGE = USERENV('LANG')
 - Chave composta: PK do registro base + LANGUAGE.
 - Configurações impactam o comportamento do módulo; alterações requerem teste em ambiente de homologação.
 - Área funcional: Time Card Summary dentro do Oracle Fusion Cloud HCM.
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[timeconsumerconfigurationpvo|TimeConsumerConfigurationPVO]] (GL · BICC: 2/4)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| DESCRIPTION | TcsmrConfigSetTLPEODescription | ✅ |
+| LANGUAGE | TcsmrConfigSetTLPEOLanguage | — |
+| NAME | TcsmrConfigSetTLPEOName | ✅ |
+| TCSMR_CONFIG_SET_ID | TcsmrConfigSetTLPEOTimeConsumerConfigurationSetId | — |
+
+### [[timeconsumerconfigurationsetpvo|TimeConsumerConfigurationSetPVO]] (GL · BICC: 12/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | TcsmrConfigSetTLPEOCreatedBy | ✅ |
+| CREATION_DATE | TcsmrConfigSetTLPEOCreationDate | ✅ |
+| DESCRIPTION | TcsmrConfigSetTLPEODescription | ✅ |
+| ENTERPRISE_ID | TcsmrConfigSetTLPEOEnterpriseId | ✅ |
+| LANGUAGE | TcsmrConfigSetTLPEOLanguage | ✅ |
+| LAST_UPDATE_DATE | TcsmrConfigSetTLPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | TcsmrConfigSetTLPEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | TcsmrConfigSetTLPEOLastUpdatedBy | ✅ |
+| NAME | TcsmrConfigSetTLPEOName | ✅ |
+| OBJECT_VERSION_NUMBER | TcsmrConfigSetTLPEOObjectVersionNumber | ✅ |
+| SOURCE_LANG | TcsmrConfigSetTLPEOSourceLang | ✅ |
+| TCSMR_CONFIG_SET_ID | TcsmrConfigSetTLPEOTimeConsumerConfigurationSetId | ✅ |
 
 ---
 

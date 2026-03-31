@@ -110,3 +110,54 @@ WHERE  SYSDATE BETWEEN e.DATE_FROM AND NVL(e.DATE_TO, SYSDATE);
 
 - [Oracle Docs — HRT_ESTABLISHMENTS_B](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/hrtestablishmentsb.html)
 - [[hcm-module-data-dictionary]] — Dossie do modulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[degreepvo|DegreePVO]] (HCM · BICC: 1/7)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| COUNTRY_ID | CountryId | — |
+| ESTABLISHMENT_ID | EstablishmentId1 | — |
+| ESTABLISHMENT_ID | EstablishmentId2 | — |
+| LAST_UPDATE_DATE | EstablishmentBPEOLastUpdateDate | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber2 | — |
+| PARTY_ID | PartyId | — |
+| SCHOOL_CODE | SchoolCode | — |
+
+### [[establishmentpvo|EstablishmentPVO]] (HCM · BICC: 5/9)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | EstablishmentBPEOBusinessGroupId | — |
+| COUNTRY_ID | EstablishmentBPEOCountryId | ✅ |
+| ESTABLISHMENT_ID | EstablishmentBPEOEstablishmentId | ✅ |
+| ESTABLISHMENT_ID | EstablishmentId | ✅ |
+| LAST_UPDATE_DATE | EstablishmentBPEOLastUpdateDate | ✅ |
+| OBJECT_VERSION_NUMBER | EstablishmentBPEOObjectVersionNumber | — |
+| PARTY_ID | EstablishmentBPEOPartyId | — |
+| SCHOOL_CODE | EstablishmentBPEOSchoolCode | — |
+| STATE_PROVINCE_ID | EstablishmentBPEOStateProvinceId | ✅ |
+
+### [[honorpvo|HonorPVO]] (HCM · BICC: 1/5)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ESTABLISHMENT_ID | EstablishmentId | — |
+| LAST_UPDATE_DATE | EstablishmentBPEOLastUpdateDate | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber1 | — |
+| SCHOOL_CODE | SchoolCode | — |
+| STATE_PROVINCE_ID | StateProvinceId | — |
+
+### [[membershippvo|MembershipPVO]] (HCM · BICC: 1/6)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| COUNTRY_ID | ESTCountryId1 | — |
+| ESTABLISHMENT_ID | ESTEstablishmentId | — |
+| LAST_UPDATE_DATE | EstablishmentBPEOLastUpdateDate | ✅ |
+| OBJECT_VERSION_NUMBER | ESTObjectVersionNumber1 | — |
+| SCHOOL_CODE | ESTSchoolCode | — |
+| STATE_PROVINCE_ID | ESTStateProvinceId1 | — |

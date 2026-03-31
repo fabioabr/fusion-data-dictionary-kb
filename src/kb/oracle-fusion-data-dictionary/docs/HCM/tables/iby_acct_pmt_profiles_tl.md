@@ -53,3 +53,31 @@ updated_at: 2026-03-26
 ## 📎 Uso Típico
 
 (a ser preenchido na etapa 03)
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[disbursementheaderpvo|DisbursementHeaderPVO]] (AP · BICC: 1/3)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| LANGUAGE | PayProfiLanguage | — |
+| PAYMENT_PROFILE_ID | PayProfiPaymentProfileId | — |
+| PAYMENT_PROFILE_NAME | PayProfiPaymentProfileName | ✅ |
+
+### [[paiddisbursementschedulepvo|PaidDisbursementSchedulePVO]] (AP · BICC: 1/3)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| LANGUAGE | PayProfiLanguage | — |
+| PAYMENT_PROFILE_ID | PayProfiPaymentProfileId | — |
+| PAYMENT_PROFILE_NAME | PayProfiPaymentProfileName | ✅ |
+
+### [[paymenthistorydistributionpvo|PaymentHistoryDistributionPVO]] (AP · BICC: 1/3)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| LANGUAGE | PayProfiLanguage | — |
+| PAYMENT_PROFILE_ID | PayProfiPaymentProfileId | — |
+| PAYMENT_PROFILE_NAME | PayProfiPaymentProfileName | ✅ |

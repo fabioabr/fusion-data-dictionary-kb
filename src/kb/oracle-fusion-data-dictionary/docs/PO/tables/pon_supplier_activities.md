@@ -138,3 +138,51 @@ WHERE  sa.AUCTION_HEADER_ID = :p_auction_header_id
 
 - [Oracle Docs — PON_SUPPLIER_ACTIVITIES](https://docs.oracle.com/en/cloud/saas/procurement/25a/oedmf/ponsupplieractivities.html)
 - [[po-module-data-dictionary]] — Dossiê do módulo Procurement
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[negotiationsupplieractivityp1|NegotiationSupplierActivityP1]] (PO · BICC: 17/17)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| AUCTION_HEADER_ID | AuctionHeaderId | ✅ |
+| AUCTION_HEADER_ID_ORIG_AMEND | AuctionHeaderIdOrigAmend | ✅ |
+| BID_NUMBER | BidNumber | ✅ |
+| BID_STATUS | BidStatus | ✅ |
+| CREATED_BY | CreatedBy | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| LAST_ACTION_FLAG | LastActionFlag | ✅ |
+| LAST_ACTIVITY_CODE | LastActivityCode | ✅ |
+| LAST_ACTIVITY_TIME | LastActivityTime | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | LastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | ✅ |
+| SESSION_ID | SessionId | ✅ |
+| TRADING_PARTNER_CONTACT_ID | TradingPartnerContactId | ✅ |
+| TRADING_PARTNER_ID | TradingPartnerId | ✅ |
+| VENDOR_SITE_ID | VendorSiteId | ✅ |
+
+### [[negotiationsupplieractivitypvo|NegotiationSupplierActivityPVO]] (PO · BICC: 17/17)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| AUCTION_HEADER_ID | AuctionHeaderId | ✅ |
+| AUCTION_HEADER_ID_ORIG_AMEND | AuctionHeaderIdOrigAmend | ✅ |
+| BID_NUMBER | BidNumber | ✅ |
+| BID_STATUS | BidStatus | ✅ |
+| CREATED_BY | CreatedBy | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| LAST_ACTION_FLAG | LastActionFlag | ✅ |
+| LAST_ACTIVITY_CODE | LastActivityCode | ✅ |
+| LAST_ACTIVITY_TIME | LastActivityTime | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | LastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | ✅ |
+| SESSION_ID | SessionId | ✅ |
+| TRADING_PARTNER_CONTACT_ID | TradingPartnerContactId | ✅ |
+| TRADING_PARTNER_ID | TradingPartnerId | ✅ |
+| VENDOR_SITE_ID | VendorSiteId | ✅ |

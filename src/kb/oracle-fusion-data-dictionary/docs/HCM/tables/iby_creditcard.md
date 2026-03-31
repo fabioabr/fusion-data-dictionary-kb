@@ -96,3 +96,109 @@ updated_at: 2026-03-26
 ## 📎 Uso Típico
 
 (a ser preenchido na etapa 03)
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[accountcreditcard|AccountCreditCard]] (AR · BICC: 11/46)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACCTTYPEID | CreditCardAccttypeid | — |
+| ADDRESSID | CreditCardAddressid | — |
+| BILL_ADDR_TERRITORY_CODE | CreditCardBillAddrTerritoryCode | — |
+| BILLING_ADDR_POSTAL_CODE | CreditCardBillingAddrPostalCode | — |
+| CARD_ISSUER_CODE | CreditCardCardIssuerCode | ✅ |
+| CARD_MASK_SETTING | CreditCardCardMaskSetting | — |
+| CARD_OWNER_ID | CreditCardCardOwnerId | — |
+| CARD_PURPOSE | CreditCardCardPurpose | ✅ |
+| CARD_UNMASK_LENGTH | CreditCardCardUnmaskLength | — |
+| CC_ISSUER_RANGE_ID | CreditCardCcIssuerRangeId | — |
+| CC_NUM_SEC_SEGMENT_ID | CreditCardCcNumSecSegmentId | — |
+| CC_NUMBER_HASH1 | CreditCardCcNumberHash1 | — |
+| CC_NUMBER_HASH2 | CreditCardCcNumberHash2 | — |
+| CC_NUMBER_LENGTH | CreditCardCcNumberLength | — |
+| CCNUMBER | CreditCardCcnumber | — |
+| CHNAME | CreditCardChname | ✅ |
+| CREATED_BY | CreditCardCreatedBy | — |
+| CREATION_DATE | CreditCardCreationDate | — |
+| DESCRIPTION | CreditCardDescription | ✅ |
+| ENCRYPTED | CreditCardEncrypted | — |
+| END_DATE | CreditCardEndDate | ✅ |
+| EXPIRY_SEC_SEGMENT_ID | CreditCardExpirySecSegmentId | — |
+| EXPIRYDATE | CreditCardExpirydate | ✅ |
+| FINAME | CreditCardFiname | ✅ |
+| INFORMATION_ONLY_FLAG | CreditCardInformationOnlyFlag | — |
+| INSTRBUF | CreditCardInstrbuf | — |
+| INSTRID | CreditCardInstrid | — |
+| INSTRNAME | CreditCardInstrname | — |
+| INSTRUMENT_TYPE | CreditCardInstrumentType | — |
+| LAST_UPDATE_DATE | CreditCardLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | CreditCardLastUpdateLogin | — |
+| LAST_UPDATED_BY | CreditCardLastUpdatedBy | — |
+| MASKED_CC_NUMBER | CreditCardMaskedCcNumber | ✅ |
+| OBJECT_VERSION_NUMBER | CreditCardObjectVersionNumber | — |
+| PROGRAM_APPLICATION_ID | CreditCardProgramApplicationId | — |
+| PROGRAM_ID | CreditCardProgramId | — |
+| PROGRAM_UPDATE_DATE | CreditCardProgramUpdateDate | — |
+| PURCHASECARD_FLAG | CreditCardPurchasecardFlag | ✅ |
+| PURCHASECARD_SUBTYPE | CreditCardPurchasecardSubtype | — |
+| REQUEST_ID | CreditCardRequestId | — |
+| SEC_SUBKEY_ID | CreditCardSecSubkeyId | — |
+| SECURITY_GROUP_ID | CreditCardSecurityGroupId | — |
+| SINGLE_USE_FLAG | CreditCardSingleUseFlag | — |
+| START_DATE | CreditCardStartDate | ✅ |
+| SUBTYPE | CreditCardSubtype | — |
+| UPGRADE_ADDRESSID | CreditCardUpgradeAddressid | — |
+
+### [[sitecreditcard|SiteCreditCard]] (AR · BICC: 11/46)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACCTTYPEID | CreditCardAccttypeid | — |
+| ADDRESSID | CreditCardAddressid | — |
+| BILL_ADDR_TERRITORY_CODE | CreditCardBillAddrTerritoryCode | — |
+| BILLING_ADDR_POSTAL_CODE | CreditCardBillingAddrPostalCode | — |
+| CARD_ISSUER_CODE | CreditCardCardIssuerCode | ✅ |
+| CARD_MASK_SETTING | CreditCardCardMaskSetting | — |
+| CARD_OWNER_ID | CreditCardCardOwnerId | — |
+| CARD_PURPOSE | CreditCardCardPurpose | ✅ |
+| CARD_UNMASK_LENGTH | CreditCardCardUnmaskLength | — |
+| CC_ISSUER_RANGE_ID | CreditCardCcIssuerRangeId | — |
+| CC_NUM_SEC_SEGMENT_ID | CreditCardCcNumSecSegmentId | — |
+| CC_NUMBER_HASH1 | CreditCardCcNumberHash1 | — |
+| CC_NUMBER_HASH2 | CreditCardCcNumberHash2 | — |
+| CC_NUMBER_LENGTH | CreditCardCcNumberLength | — |
+| CCNUMBER | CreditCardCcnumber | — |
+| CHNAME | CreditCardChname | ✅ |
+| CREATED_BY | CreditCardCreatedBy | — |
+| CREATION_DATE | CreditCardCreationDate | — |
+| DESCRIPTION | CreditCardDescription | ✅ |
+| ENCRYPTED | CreditCardEncrypted | — |
+| END_DATE | CreditCardEndDate | ✅ |
+| EXPIRY_SEC_SEGMENT_ID | CreditCardExpirySecSegmentId | — |
+| EXPIRYDATE | CreditCardExpirydate | ✅ |
+| FINAME | CreditCardFiname | ✅ |
+| INFORMATION_ONLY_FLAG | CreditCardInformationOnlyFlag | — |
+| INSTRBUF | CreditCardInstrbuf | — |
+| INSTRID | CreditCardInstrid | — |
+| INSTRNAME | CreditCardInstrname | — |
+| INSTRUMENT_TYPE | CreditCardInstrumentType | — |
+| LAST_UPDATE_DATE | CreditCardLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | CreditCardLastUpdateLogin | — |
+| LAST_UPDATED_BY | CreditCardLastUpdatedBy | — |
+| MASKED_CC_NUMBER | CreditCardMaskedCcNumber | ✅ |
+| OBJECT_VERSION_NUMBER | CreditCardObjectVersionNumber | — |
+| PROGRAM_APPLICATION_ID | CreditCardProgramApplicationId | — |
+| PROGRAM_ID | CreditCardProgramId | — |
+| PROGRAM_UPDATE_DATE | CreditCardProgramUpdateDate | — |
+| PURCHASECARD_FLAG | CreditCardPurchasecardFlag | ✅ |
+| PURCHASECARD_SUBTYPE | CreditCardPurchasecardSubtype | — |
+| REQUEST_ID | CreditCardRequestId | — |
+| SEC_SUBKEY_ID | CreditCardSecSubkeyId | — |
+| SECURITY_GROUP_ID | CreditCardSecurityGroupId | — |
+| SINGLE_USE_FLAG | CreditCardSingleUseFlag | — |
+| START_DATE | CreditCardStartDate | ✅ |
+| SUBTYPE | CreditCardSubtype | — |
+| UPGRADE_ADDRESSID | CreditCardUpgradeAddressid | — |

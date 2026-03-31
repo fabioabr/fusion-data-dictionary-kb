@@ -108,3 +108,112 @@ ORDER BY o.OFFER_DATE DESC;
 
 - [Oracle Docs -- IRC_OFFERS](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/ircoffers.html)
 - [[hcm-module-data-dictionary]] -- Dossie do modulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[asmtpackageresultviewallpvo|AsmtPackageResultViewAllPVO]] (HCM)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| OFFER_ID | OffersPEOOfferId | — |
+
+### [[jobapphisteventpvo|JobAppHistEventPVO]] (HCM · BICC: 2/3)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATION_DATE | OffersPEOCreationDate | ✅ |
+| MOVE_TO_HR_DATE | OffersPEOMoveToHrDate | — |
+| OFFER_ID | OffersPEOOfferId | ✅ |
+
+### [[offerpvo|OfferPVO]] (HCM · BICC: 31/44)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACCEPTED_DATE | AcceptedDate | ✅ |
+| ACCEPTED_ON_BEHALF | AcceptedOnBehalf | ✅ |
+| ACCEPTED_ON_BEHALF_BY_ID | AcceptedOnBehalfById | ✅ |
+| ACCEPTED_ON_BEHALF_DATE | AcceptedOnBehalfDate | ✅ |
+| ADDITIONALTEXT1 | OffersPEOAdditionaltext1 | ✅ |
+| ADDITIONALTEXT2 | OffersPEOAdditionaltext2 | ✅ |
+| APPROVED_DATE | ApprovedDate | ✅ |
+| ASSIGNMENT_OFFER_ID | AssignmentOfferId | ✅ |
+| BATCH_CREATION_FLAG | OffersPEOBatchCreationFlag | — |
+| BYPASS_OFFER_LC_FLAG | OffersPEOBypassOfferLcFlag | — |
+| COMMENTS | Comments | ✅ |
+| CREATED_BY | CreatedBy | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| DESCRIPTION | Description | ✅ |
+| DRAFTED_DATE | OffersPEODraftedDate | — |
+| ESIGNATURE_INSTRUCTIONS | EsignatureInstructions | ✅ |
+| EXPIRATION_DATE | ExpirationDate | ✅ |
+| EXTENDED_DATE | ExtendedDate | ✅ |
+| HANDOFF_HR_SCENARIO_ID | HandoffHrScenarioId | ✅ |
+| HIRING_MANAGER_ID | HiringManagerId | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | LastUpdatedBy | ✅ |
+| MANAGER_ASSIGNMENT_ID | ManagerAssignmentId | ✅ |
+| MERGED_FLAG | OffersPEOMergedFlag | — |
+| MOVE_TO_HR_DATE | OffersPEOMoveToHrDate | — |
+| OBJECT_STATUS | OffersPEOObjectStatus | — |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | ✅ |
+| OFFER_ID | OfferId | ✅ |
+| OFFER_ID | ParentOffersPEOOfferId | — |
+| OFFER_LETTER_CUSTOMIZED_FLAG | OffersPEOOfferLetterCustomizedFlag | ✅ |
+| OFFER_LETTER_LAYOUT_ID | OffersPEOOfferLetterLayoutId | — |
+| OFFER_NAME | OfferName | ✅ |
+| OFFER_NAME | ParentOffersPEOOfferName | — |
+| PARENT_OFFER_ID | OffersPEOParentOfferId | — |
+| PERSON_ID | PersonId | ✅ |
+| PRESELECTED_HR_ACTION_ID | PreselectedHrActionId | ✅ |
+| PRESELECTED_HR_ACTIONTYPE_CODE | PreselectedHrActiontypeCode | — |
+| RECRUITER_ASSIGNMENT_ID | RecruiterAssignmentId | ✅ |
+| RECRUITER_ID | RecruiterId | ✅ |
+| START_DATE_CHANGED_FLAG | OffersPEOStartDateChangedFlag | — |
+| STATE_POST_PROCESS_STATUS | OffersPEOStatePostProcessStatus | — |
+| SUBMISSION_ID | SubmissionId | ✅ |
+| WITHDRAWN_REJECTED_DATE | WithdrawnRejectedDate | ✅ |
+
+### [[offersalarypvo|OfferSalaryPVO]] (HCM)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ASSIGNMENT_OFFER_ID | OffersPEOAssignmentOfferId | — |
+| HIRING_MANAGER_ID | OffersPEOHiringManagerId | — |
+| MANAGER_ASSIGNMENT_ID | OffersPEOManagerAssignmentId | — |
+| OFFER_ID | OffersPEOOfferId | — |
+| PERSON_ID | OffersPEOPersonId1 | — |
+| RECRUITER_ASSIGNMENT_ID | OffersPEORecruiterAssignmentId | — |
+| RECRUITER_ID | OffersPEORecruiterId | — |
+
+### [[screeningresultviewallpvo|ScreeningResultViewAllPVO]] (AP)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| OFFER_ID | OffersPEOOfferId | — |
+
+### [[screeningviewallpvo|ScreeningViewAllPVO]] (AP)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| OFFER_ID | OffersPEOOfferId | — |
+
+### [[submissionqstnrsviewallpvo|SubmissionQstnrsViewAllPVO]] (PO)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| OFFER_ID | OffersPEOOfferId | — |
+
+### [[submissionrestrictedpvo|SubmissionRestrictedPVO]] (HCM)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| OFFER_ID | OfferId | — |
+
+### [[submissionviewallpvo|SubmissionViewAllPVO]] (HCM)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| OFFER_ID | OfferId | — |

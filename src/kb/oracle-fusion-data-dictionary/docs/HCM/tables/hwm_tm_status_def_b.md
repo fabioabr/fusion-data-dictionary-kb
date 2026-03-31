@@ -112,3 +112,33 @@ WHERE  d.STATUS_ID = :p_status_id;
 
 - [Oracle Docs — HWM_TM_STATUS_DEF_B](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/hwmtmstatusdefb.html)
 - [[hcm-module-data-dictionary]] — Dossie do modulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[timestatusdefpvo|TimeStatusDefPVO]] (GL · BICC: 21/21)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ALLOWABLE_VALUES | AllowableValues | ✅ |
+| CREATED_BY | CreatedBy | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| DEFINITIONCODE | Definitioncode | ✅ |
+| ENTERPRISE_ID | EnterpriseId | ✅ |
+| FALSE_VALUE | FalseValue | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | LastUpdatedBy | ✅ |
+| MODULE_ID | ModuleId | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | ✅ |
+| REPOSITORY_TYPE | RepositoryType | ✅ |
+| SCOPE | Scope | ✅ |
+| STATUS_DEF_CD | StatusDefCd | ✅ |
+| TCSMRS_ID | TimeConsumerSetId | ✅ |
+| TM_STATUS_DEF_ID | TimeStatusDefId | ✅ |
+| TM_STATUS_TYPE | TimeStatusType | ✅ |
+| TRUE_VALUE | TrueValue | ✅ |
+| VALUE_DERIVED_FLAG | ValueDerivedFlag | ✅ |
+| VALUE_IF_FALSE | ValueIfFalse | ✅ |
+| VALUE_IF_TRUE | ValueIfTrue | ✅ |

@@ -39,7 +39,6 @@ updated_at: 2026-03-25
 
 Armazena as **entradas de ausência vinculadas a planos específicos** por colaborador. Associa cada ausência a um plano para controle de saldo e acumulação.
 
-
 ---
 
 ## 🧠 Propósito de Negócio
@@ -111,6 +110,79 @@ GROUP BY pe.ABSENCE_PLAN_ID, p.PLAN_NAME;
 - Associa cada ausência a um plano específico para controle de saldo.
 - Um colaborador pode estar inscrito em múltiplos planos; cada ausência consome saldo de um plano específico.
 - O saldo disponível é calculado pela diferença entre acumulação e consumo.
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[personabsplanentryextractpvo|PersonAbsPlanEntryExtractPVO]] (HCM · BICC: 29/30)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ABS_UNITS | AbsUnits | ✅ |
+| ABSENCE_PAY_FACTOR | AbsencePayFactor | ✅ |
+| ABSENCE_PLAN_ID | AbsencePlanId | ✅ |
+| ASSIGNMENT_ID | AssignmentId | ✅ |
+| CREATED_BY | CreatedBy | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| END_DATE | EndDate | ✅ |
+| END_DATETIME | EndDatetime | ✅ |
+| END_TIME | EndTime | ✅ |
+| ENTERPRISE_ID | EnterpriseId | ✅ |
+| ENTITLEMENT_DATE | EntitlementDate | ✅ |
+| HEADER_ID | HeaderId | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | LastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | ✅ |
+| PER_ABS_PLAN_ENTRY_ID | PerAbsPlanEntryId | ✅ |
+| PER_ABS_PLN_SUMM_ENTRY_ID | PerAbsPlnSummEntryId | ✅ |
+| PER_ABS_TYPE_ENTRY_ID | PerAbsTypeEntryId | ✅ |
+| PER_ABSENCE_ENTRY_ID | PerAbsenceEntryId | ✅ |
+| PER_ACCRUAL_ENTRY_DTL_ID | PerAccrualEntryDtlId | — |
+| PERSON_ID | PersonId | ✅ |
+| QUALIFICATION_DATE | QualificationDate | ✅ |
+| RATE_DEFINITION_ID | RateDefinitionId | ✅ |
+| SCHEDULED_UNITS | ScheduledUnits | ✅ |
+| START_DATE | StartDate | ✅ |
+| START_DATETIME | StartDatetime | ✅ |
+| START_TIME | StartTime | ✅ |
+| TM_REC_ID | TmRecId | ✅ |
+| UOM | Uom | ✅ |
+
+### [[personabsplanentrypvo|PersonAbsPlanEntryPVO]] (GL · BICC: 13/29)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ABS_UNITS | AbsUnits | ✅ |
+| ABSENCE_PAY_FACTOR | AbsencePayFactor | ✅ |
+| ABSENCE_PLAN_ID | AbsencePlanId | — |
+| ASSIGNMENT_ID | AssignmentId | — |
+| CREATED_BY | CreatedBy | — |
+| CREATION_DATE | CreationDate | — |
+| END_DATE | EndDate | ✅ |
+| END_DATETIME | EndDatetime | ✅ |
+| END_TIME | EndTime | ✅ |
+| ENTERPRISE_ID | EnterpriseId | — |
+| ENTITLEMENT_DATE | EntitlementDate | — |
+| HEADER_ID | HeaderId | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | — |
+| LAST_UPDATED_BY | LastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | — |
+| PER_ABS_PLAN_ENTRY_ID | PerAbsPlanEntryId | ✅ |
+| PER_ABS_PLN_SUMM_ENTRY_ID | PerAbsPlnSummEntryId | — |
+| PER_ABS_TYPE_ENTRY_ID | PerAbsTypeEntryId | — |
+| PER_ABSENCE_ENTRY_ID | PerAbsenceEntryId | — |
+| PERSON_ID | PersonId | — |
+| QUALIFICATION_DATE | QualificationDate | — |
+| RATE_DEFINITION_ID | RateDefinitionId | ✅ |
+| SCHEDULED_UNITS | ScheduledUnits | ✅ |
+| START_DATE | StartDate | ✅ |
+| START_DATETIME | StartDatetime | ✅ |
+| START_TIME | StartTime | ✅ |
+| TM_REC_ID | TmRecId | — |
+| UOM | Uom | — |
 
 ---
 

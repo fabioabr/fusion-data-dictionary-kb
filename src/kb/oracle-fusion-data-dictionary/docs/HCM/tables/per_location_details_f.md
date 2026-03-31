@@ -114,6 +114,216 @@ WHERE  SYSDATE BETWEEN ld.EFFECTIVE_START_DATE AND ld.EFFECTIVE_END_DATE
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[employeeexpensebusinessunitpvo|EmployeeExpenseBusinessUnitPVO]] (OTHER · BICC: 1/4)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| EFFECTIVE_END_DATE | LocDetailsEffectiveEndDate | — |
+| EFFECTIVE_START_DATE | LocDetailsEffectiveStartDate | ✅ |
+| LOCATION_DETAILS_ID | LocDetailsLocationDetailsId | — |
+| LOCATION_ID | LocDetailsLocationId | — |
+
+### [[globalpersonpvo|GlobalPersonPVO]] (HCM)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| EFFECTIVE_END_DATE | LocBasePEOEffectiveEndDate | — |
+| EFFECTIVE_START_DATE | LocBasePEOEffectiveStartDate | — |
+| LOCATION_DETAILS_ID | LocBasePEOLocationDetailsId | — |
+| STANDARD_WORKING_FREQUENCY | LocBasePEOStandardWorkingFrequency | — |
+| STANDARD_WORKING_HOURS | LocBasePEOStandardWorkingHours | — |
+
+### [[globalpersonpvoviewall|GlobalPersonPVOViewAll]] (HCM)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| EFFECTIVE_END_DATE | LocBasePEOEffectiveEndDate | — |
+| EFFECTIVE_START_DATE | LocBasePEOEffectiveStartDate | — |
+| LOCATION_DETAILS_ID | LocBasePEOLocationDetailsId | — |
+| STANDARD_WORKING_FREQUENCY | LocBasePEOStandardWorkingFrequency | — |
+| STANDARD_WORKING_HOURS | LocBasePEOStandardWorkingHours | — |
+
+### [[grantsbusinessunitpvo|GrantsBusinessUnitPVO]] (OTHER · BICC: 1/4)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| EFFECTIVE_END_DATE | LocationDPEOEffectiveEndDate | — |
+| EFFECTIVE_START_DATE | LocationDPEOEffectiveStartDate | ✅ |
+| LOCATION_DETAILS_ID | LocationDetailsBasePEOLocationDetailsId | — |
+| LOCATION_ID | LocationDPEOLocationId | — |
+
+### [[hrlocationsbasepvo|HRLocationsBasePVO]] (HCM · BICC: 20/43)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTIVE_STATUS | LocationDetailsPEOActiveStatus | ✅ |
+| ANNUAL_WORKING_DURATION_UNITS | LocationDetailsPEOAnnualWorkingDurationUnits | — |
+| BILL_TO_SITE_FLAG | LocationDetailsPEOBillToSiteFlag | ✅ |
+| BUSINESS_GROUP_ID | LocationDetailsPEOBusinessGroupId | — |
+| CREATED_BY | LocationDetailsPEOCreatedBy | ✅ |
+| CREATION_DATE | LocationDetailsPEOCreationDate | ✅ |
+| DESIGNATED_RECEIVER_ID | LocationDetailsPEODesignatedReceiverId | — |
+| EFFECTIVE_END_DATE | EffectiveEndDate | ✅ |
+| EFFECTIVE_START_DATE | EffectiveStartDate | ✅ |
+| EMAIL_ADDRESS | LocationDetailsPEOEmailAddress | ✅ |
+| FAX_AREA_CODE2 | LocationDetailsPEOFaxAreaCode2 | — |
+| FAX_COUNTRY_CODE2 | LocationDetailsPEOFaxCountryCode2 | — |
+| FAX_EXTENSION2 | LocationDetailsPEOFaxExtension2 | — |
+| FAX_SUBSCRIBER_NUM2 | LocationDetailsPEOFaxSubscriberNum2 | — |
+| GEO_HIERARCHY_NODE_ID | LocationDetailsPEOGeoHierarchyNodeId | — |
+| GEO_HIERARCHY_NODE_VALUE | LocationDetailsPEOGeoHierarchyNodeValue | ✅ |
+| INVENTORY_ORGANIZATION_ID | LocationDetailsPEOInventoryOrganizationId | — |
+| LAST_UPDATE_DATE | LocationDetailsPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LocationDetailsPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | LocationDetailsPEOLastUpdatedBy | ✅ |
+| LOCATION_DETAILS_ID | LocationDetailsId | ✅ |
+| LOCATION_ID | LocationDetailsPEOLocationId | — |
+| MAIN_ADDRESS_ID | LocationDetailsPEOMainAddressId | ✅ |
+| MAINPHONE_AREA_CODE1 | LocationDetailsPEOMainphoneAreaCode1 | — |
+| MAINPHONE_COUNTRY_CODE1 | LocationDetailsPEOMainphoneCountryCode1 | — |
+| MAINPHONE_EXTENSION1 | LocationDetailsPEOMainphoneExtension1 | — |
+| MAINPHONE_SUBSCRIBER_NUM1 | LocationDetailsPEOMainphoneSubscriberNum1 | — |
+| OBJECT_VERSION_NUMBER | LocationDetailsPEOObjectVersionNumber | — |
+| OFFICE_SITE_FLAG | LocationDetailsPEOOfficeSiteFlag | ✅ |
+| OFFICIAL_LANGUAGE_CODE | LocationDetailsPEOOfficialLanguageCode | ✅ |
+| OTHERPHONE_AREA_CODE3 | LocationDetailsPEOOtherphoneAreaCode3 | — |
+| OTHERPHONE_COUNTRY_CODE3 | LocationDetailsPEOOtherphoneCountryCode3 | — |
+| OTHERPHONE_EXTENSION3 | LocationDetailsPEOOtherphoneExtension3 | — |
+| OTHERPHONE_SUBSCRIBER_NUM3 | LocationDetailsPEOOtherphoneSubscriberNum3 | — |
+| RECEIVING_SITE_FLAG | LocationDetailsPEOReceivingSiteFlag | ✅ |
+| SHIP_TO_LOCATION_ID | LocationDetailsPEOShipToLocationId | ✅ |
+| SHIP_TO_SITE_FLAG | LocationDetailsPEOShipToSiteFlag | ✅ |
+| STANDARD_WORKING_FREQUENCY | LocationDetailsPEOStandardWorkingFrequency | — |
+| STANDARD_WORKING_HOURS | LocationDetailsPEOStandardWorkingHours | — |
+| STD_ANNUAL_WORKING_DURATION | LocationDetailsPEOStdAnnualWorkingDuration | — |
+| TELEPHONE_NUMBER_1 | LocationDetailsPEOTelephoneNumber1 | ✅ |
+| TELEPHONE_NUMBER_2 | LocationDetailsPEOTelephoneNumber2 | ✅ |
+| TELEPHONE_NUMBER_3 | LocationDetailsPEOTelephoneNumber3 | ✅ |
+
+### [[hrlocationsbasepvoviewall|HRLocationsBasePVOViewAll]] (HCM · BICC: 22/43)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTIVE_STATUS | LocationDetailsPEOActiveStatus | ✅ |
+| ANNUAL_WORKING_DURATION_UNITS | LocationDetailsPEOAnnualWorkingDurationUnits | — |
+| BILL_TO_SITE_FLAG | LocationDetailsPEOBillToSiteFlag | ✅ |
+| BUSINESS_GROUP_ID | LocationDetailsPEOBusinessGroupId | — |
+| CREATED_BY | LocationDetailsPEOCreatedBy | ✅ |
+| CREATION_DATE | LocationDetailsPEOCreationDate | ✅ |
+| DESIGNATED_RECEIVER_ID | LocationDetailsPEODesignatedReceiverId | ✅ |
+| EFFECTIVE_END_DATE | EffectiveEndDate | ✅ |
+| EFFECTIVE_START_DATE | EffectiveStartDate | ✅ |
+| EMAIL_ADDRESS | LocationDetailsPEOEmailAddress | ✅ |
+| FAX_AREA_CODE2 | LocationDetailsPEOFaxAreaCode2 | — |
+| FAX_COUNTRY_CODE2 | LocationDetailsPEOFaxCountryCode2 | — |
+| FAX_EXTENSION2 | LocationDetailsPEOFaxExtension2 | — |
+| FAX_SUBSCRIBER_NUM2 | LocationDetailsPEOFaxSubscriberNum2 | — |
+| GEO_HIERARCHY_NODE_ID | LocationDetailsPEOGeoHierarchyNodeId | — |
+| GEO_HIERARCHY_NODE_VALUE | LocationDetailsPEOGeoHierarchyNodeValue | ✅ |
+| INVENTORY_ORGANIZATION_ID | LocationDetailsPEOInventoryOrganizationId | — |
+| LAST_UPDATE_DATE | LocationDetailsPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LocationDetailsPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | LocationDetailsPEOLastUpdatedBy | ✅ |
+| LOCATION_DETAILS_ID | LocationDetailsId | ✅ |
+| LOCATION_ID | LocationDetailsPEOLocationId | — |
+| MAIN_ADDRESS_ID | LocationDetailsPEOMainAddressId | ✅ |
+| MAINPHONE_AREA_CODE1 | LocationDetailsPEOMainphoneAreaCode1 | ✅ |
+| MAINPHONE_COUNTRY_CODE1 | LocationDetailsPEOMainphoneCountryCode1 | — |
+| MAINPHONE_EXTENSION1 | LocationDetailsPEOMainphoneExtension1 | — |
+| MAINPHONE_SUBSCRIBER_NUM1 | LocationDetailsPEOMainphoneSubscriberNum1 | — |
+| OBJECT_VERSION_NUMBER | LocationDetailsPEOObjectVersionNumber | — |
+| OFFICE_SITE_FLAG | LocationDetailsPEOOfficeSiteFlag | ✅ |
+| OFFICIAL_LANGUAGE_CODE | LocationDetailsPEOOfficialLanguageCode | ✅ |
+| OTHERPHONE_AREA_CODE3 | LocationDetailsPEOOtherphoneAreaCode3 | — |
+| OTHERPHONE_COUNTRY_CODE3 | LocationDetailsPEOOtherphoneCountryCode3 | — |
+| OTHERPHONE_EXTENSION3 | LocationDetailsPEOOtherphoneExtension3 | — |
+| OTHERPHONE_SUBSCRIBER_NUM3 | LocationDetailsPEOOtherphoneSubscriberNum3 | — |
+| RECEIVING_SITE_FLAG | LocationDetailsPEOReceivingSiteFlag | ✅ |
+| SHIP_TO_LOCATION_ID | LocationDetailsPEOShipToLocationId | ✅ |
+| SHIP_TO_SITE_FLAG | LocationDetailsPEOShipToSiteFlag | ✅ |
+| STANDARD_WORKING_FREQUENCY | LocationDetailsPEOStandardWorkingFrequency | — |
+| STANDARD_WORKING_HOURS | LocationDetailsPEOStandardWorkingHours | — |
+| STD_ANNUAL_WORKING_DURATION | LocationDetailsPEOStdAnnualWorkingDuration | — |
+| TELEPHONE_NUMBER_1 | LocationDetailsPEOTelephoneNumber1 | ✅ |
+| TELEPHONE_NUMBER_2 | LocationDetailsPEOTelephoneNumber2 | ✅ |
+| TELEPHONE_NUMBER_3 | LocationDetailsPEOTelephoneNumber3 | ✅ |
+
+### [[orderbusinessunitpvo|OrderBusinessUnitPVO]] (OTHER · BICC: 4/4)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| EFFECTIVE_END_DATE | LocDetailsEffectiveEndDate | ✅ |
+| EFFECTIVE_START_DATE | LocDetailsEffectiveStartDate | ✅ |
+| LOCATION_DETAILS_ID | LocDetailsLocationDetailsId | ✅ |
+| LOCATION_ID | LocDetailsLocationId | ✅ |
+
+### [[outstandingcardtransactionbusinessunitpvo|OutstandingCardTransactionBusinessUnitPVO]] (OTHER · BICC: 1/4)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| EFFECTIVE_END_DATE | LocDetailsEffectiveEndDate | — |
+| EFFECTIVE_START_DATE | LocDetailsEffectiveStartDate | ✅ |
+| LOCATION_DETAILS_ID | LocDetailsLocationDetailsId | — |
+| LOCATION_ID | LocDetailsLocationId | — |
+
+### [[payablebusinessunitpvo|PayableBusinessUnitPVO]] (OTHER · BICC: 1/4)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| EFFECTIVE_END_DATE | LocDetailsEffectiveEndDate | — |
+| EFFECTIVE_START_DATE | LocDetailsEffectiveStartDate | ✅ |
+| LOCATION_DETAILS_ID | LocDetailsLocationDetailsId | — |
+| LOCATION_ID | LocDetailsLocationId | — |
+
+### [[projectcontractbusinessunitpvo|ProjectContractBusinessUnitPVO]] (OTHER · BICC: 1/4)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| EFFECTIVE_END_DATE | LocDetailsEffectiveEndDate | — |
+| EFFECTIVE_START_DATE | LocDetailsEffectiveStartDate | ✅ |
+| LOCATION_DETAILS_ID | LocDetailsLocationDetailsId | — |
+| LOCATION_ID | LocDetailsLocationId | — |
+
+### [[projectcostingbusinessunitpvo|ProjectCostingBusinessUnitPVO]] (OTHER · BICC: 1/4)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| EFFECTIVE_END_DATE | LocDetailsEffectiveEndDate | — |
+| EFFECTIVE_START_DATE | LocDetailsEffectiveStartDate | ✅ |
+| LOCATION_DETAILS_ID | LocDetailsLocationDetailsId | — |
+| LOCATION_ID | LocDetailsLocationId | — |
+
+### [[projectinvoicingbusinessunitpvo|ProjectInvoicingBusinessUnitPVO]] (OTHER · BICC: 1/4)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| EFFECTIVE_END_DATE | LocDetailsEffectiveEndDate | — |
+| EFFECTIVE_START_DATE | LocDetailsEffectiveStartDate | ✅ |
+| LOCATION_DETAILS_ID | LocDetailsLocationDetailsId | — |
+| LOCATION_ID | LocDetailsLocationId | — |
+
+### [[projectrevenuebusinessunitpvo|ProjectRevenueBusinessUnitPVO]] (OTHER · BICC: 1/4)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| EFFECTIVE_END_DATE | LocDetailsEffectiveEndDate | — |
+| EFFECTIVE_START_DATE | LocDetailsEffectiveStartDate | ✅ |
+| LOCATION_DETAILS_ID | LocDetailsLocationDetailsId | — |
+| LOCATION_ID | LocDetailsLocationId | — |
+
+### [[receivablebusinessunitpvo|ReceivableBusinessUnitPVO]] (OTHER · BICC: 1/4)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| EFFECTIVE_END_DATE | LocDetailsEffectiveEndDate | — |
+| EFFECTIVE_START_DATE | LocDetailsEffectiveStartDate | ✅ |
+| LOCATION_DETAILS_ID | LocDetailsLocationDetailsId | — |
+| LOCATION_ID | LocDetailsLocationId | — |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — PER_LOCATION_DETAILS_F](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/perlocationdetailsf.html)

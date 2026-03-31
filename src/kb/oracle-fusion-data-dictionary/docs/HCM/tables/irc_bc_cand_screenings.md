@@ -114,3 +114,25 @@ WHERE  s.STATUS = 'PENDING';
 
 - [Oracle Docs — IRC_BC_CAND_SCREENINGS](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/ircbccandscreenings.html)
 - [[hcm-module-data-dictionary]] — Dossie do modulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[screeningviewallpvo|ScreeningViewAllPVO]] (AP · BICC: 11/13)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | screeningPEOCreatedBy | ✅ |
+| CREATION_DATE | screeningPEOCreationDate | ✅ |
+| LAST_UPDATE_DATE | screeningPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | screeningPEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | screeningPEOLastUpdatedBy | ✅ |
+| OBJECT_STATUS | screeningPEOObjectStatus | ✅ |
+| OBJECT_VERSION_NUMBER | screeningPEOObjectVersionNumber | — |
+| RESULT_ID | screeningPEOResultId | — |
+| SCR_ERROR_DESC | screeningPEOScrErrorDesc | ✅ |
+| SCR_PKG_CODE | screeningPEOScrPkgCode | ✅ |
+| SCR_PKG_NAME | screeningPEOScrPkgName | ✅ |
+| SCR_STATUS_CODE | screeningPEOScrStatusCode | ✅ |
+| SCREENING_ID | screeningPEOScreeningId | ✅ |

@@ -88,3 +88,56 @@ updated_at: 2026-03-26
 ## 📎 Uso Típico
 
 (a ser preenchido na etapa 03)
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[invoicelinepvo|InvoiceLinePVO]] (AP)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| TAX_STATUS_ID | TaxStatusTaxStatusId | — |
+
+### [[taxstatusextractpvo|TaxStatusExtractPVO]] (OTHER · BICC: 22/38)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ALLOW_EXCEPTIONS_FLAG | TaxStatusBaseAllowExceptionsFlag | ✅ |
+| ALLOW_EXEMPTIONS_FLAG | TaxStatusBaseAllowExemptionsFlag | ✅ |
+| ALLOW_RATE_OVERRIDE_FLAG | TaxStatusBaseAllowRateOverrideFlag | ✅ |
+| ATTRIBUTE1 | TaxStatusBaseAttribute1 | — |
+| ATTRIBUTE10 | TaxStatusBaseAttribute10 | — |
+| ATTRIBUTE11 | TaxStatusBaseAttribute11 | — |
+| ATTRIBUTE12 | TaxStatusBaseAttribute12 | — |
+| ATTRIBUTE13 | TaxStatusBaseAttribute13 | — |
+| ATTRIBUTE14 | TaxStatusBaseAttribute14 | — |
+| ATTRIBUTE15 | TaxStatusBaseAttribute15 | — |
+| ATTRIBUTE2 | TaxStatusBaseAttribute2 | — |
+| ATTRIBUTE3 | TaxStatusBaseAttribute3 | — |
+| ATTRIBUTE4 | TaxStatusBaseAttribute4 | — |
+| ATTRIBUTE5 | TaxStatusBaseAttribute5 | — |
+| ATTRIBUTE6 | TaxStatusBaseAttribute6 | — |
+| ATTRIBUTE7 | TaxStatusBaseAttribute7 | — |
+| ATTRIBUTE8 | TaxStatusBaseAttribute8 | — |
+| ATTRIBUTE9 | TaxStatusBaseAttribute9 | — |
+| ATTRIBUTE_CATEGORY | TaxStatusBaseAttributeCategory | — |
+| CONTENT_OWNER_ID | TaxStatusBaseContentOwnerId | ✅ |
+| CREATED_BY | TaxStatusBaseCreatedBy | ✅ |
+| CREATION_DATE | TaxStatusBaseCreationDate | ✅ |
+| DEF_REC_SETTLEMENT_OPTION_CODE | TaxStatusBaseDefRecSettlementOptionCode | ✅ |
+| DEFAULT_FLG_EFFECTIVE_FROM | TaxStatusBaseDefaultFlgEffectiveFrom | ✅ |
+| DEFAULT_FLG_EFFECTIVE_TO | TaxStatusBaseDefaultFlgEffectiveTo | ✅ |
+| DEFAULT_STATUS_FLAG | TaxStatusBaseDefaultStatusFlag | ✅ |
+| EFFECTIVE_FROM | TaxStatusBaseEffectiveFrom | ✅ |
+| EFFECTIVE_TO | TaxStatusBaseEffectiveTo | ✅ |
+| LAST_UPDATE_DATE | TaxStatusBaseLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | TaxStatusBaseLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | TaxStatusBaseLastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | TaxStatusBaseObjectVersionNumber | ✅ |
+| RECORD_TYPE_CODE | TaxStatusBaseRecordTypeCode | ✅ |
+| RULE_BASED_RATE_FLAG | TaxStatusBaseRuleBasedRateFlag | ✅ |
+| TAX | TaxStatusBaseTax | ✅ |
+| TAX_REGIME_CODE | TaxStatusBaseTaxRegimeCode | ✅ |
+| TAX_STATUS_CODE | TaxStatusBaseTaxStatusCode | ✅ |
+| TAX_STATUS_ID | TaxStatusBaseTaxStatusId | ✅ |

@@ -113,3 +113,177 @@ WHERE  v.PERSON_ID = :p_person_id
 
 - [Oracle Docs — HWM_TM_RPT_ENTRY_V](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/hwmtmrptentryv.html)
 - [[hcm-module-data-dictionary]] — Dossie do modulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[historicrptabstimeentrypvo|HistoricRptAbsTimeEntryPVO]] (HCM · BICC: 62/80)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ANC_DELETE_FLAG | AncDeleteFlag | — |
+| ANC_GRP_TYPE_ID | RptAbsTimeEntryPEOAncGrpTypeId | ✅ |
+| ANC_LATEST_VERSION | AncLatestVersion | — |
+| ANC_TM_REC_GRP_ID | RptAbsTimeEntryPEOAncTmRecGrpId | ✅ |
+| ANC_TM_REC_GRP_VERSION | RptAbsTimeEntryPEOAncTmRecGrpVersion | ✅ |
+| DAY_COMMENT_TEXT | RptAbsTimeEntryPEODayCommentText | ✅ |
+| DAY_CREATED_BY | RptAbsTimeEntryPEODayCreatedBy | ✅ |
+| DAY_CREATION_DATE | RptAbsTimeEntryPEODayCreationDate | ✅ |
+| DAY_DATE_FROM | RptAbsTimeEntryPEODayDateFrom | ✅ |
+| DAY_DATE_TO | RptAbsTimeEntryPEODayDateTo | ✅ |
+| DAY_DELETE_FLAG | RptAbsTimeEntryPEODayDeleteFlag | ✅ |
+| DAY_GRP_TYPE_ID | RptAbsTimeEntryPEODayGrpTypeId | ✅ |
+| DAY_LAST_UPDATE_DATE | RptAbsTimeEntryPEODayLastUpdateDate | ✅ |
+| DAY_LAST_UPDATE_LOGIN | RptAbsTimeEntryPEODayLastUpdateLogin | ✅ |
+| DAY_LAST_UPDATED_BY | RptAbsTimeEntryPEODayLastUpdatedBy | ✅ |
+| DAY_LATEST_VERSION | RptAbsTimeEntryPEODayLatestVersion | ✅ |
+| DAY_LAYER_CODE | RptAbsTimeEntryPEODayLayerCode | ✅ |
+| DAY_START_GMT_OFFSET | RptAbsTimeEntryPEODayStartGmtOffset | — |
+| DAY_START_TIME | RptAbsTimeEntryPEODayStartTime | ✅ |
+| DAY_START_TIMEZONE_CODE | RptAbsTimeEntryPEODayStartTimezoneCode | ✅ |
+| DAY_STOP_GMT_OFFSET | RptAbsTimeEntryPEODayStopGmtOffset | — |
+| DAY_STOP_TIME | RptAbsTimeEntryPEODayStopTime | ✅ |
+| DAY_STOP_TIMEZONE_CODE | RptAbsTimeEntryPEODayStopTimezoneCode | ✅ |
+| DAY_TM_REC_GRP_ID | RptAbsTimeEntryPEODayTmRecGrpId | ✅ |
+| DAY_TM_REC_GRP_VERSION | RptAbsTimeEntryPEODayTmRecGrpVersion | ✅ |
+| RESOURCE_ID | RptAbsTimeEntryPEOTeResourceId | — |
+| TC_COMMENT_TEXT | RptAbsTimeEntryPEOTcCommentText | ✅ |
+| TC_COMMIT_TIMESTAMP | RptAbsTimeEntryPEOTcCommitTimestamp | ✅ |
+| TC_CREATED_BY | RptAbsTimeEntryPEOTcCreatedBy | ✅ |
+| TC_CREATION_DATE | RptAbsTimeEntryPEOTcCreationDate | ✅ |
+| TC_DATE_FROM | RptAbsTimeEntryPEOTcDateFrom | ✅ |
+| TC_DATE_TO | RptAbsTimeEntryPEOTcDateTo | ✅ |
+| TC_DELETE_FLAG | RptAbsTimeEntryPEOTcDeleteFlag | ✅ |
+| TC_GRP_TYPE_ID | RptAbsTimeEntryPEOTcGrpTypeId | ✅ |
+| TC_LAST_UPDATE_DATE | RptAbsTimeEntryPEOTcLastUpdateDate | ✅ |
+| TC_LAST_UPDATE_LOGIN | RptAbsTimeEntryPEOTcLastUpdateLogin | ✅ |
+| TC_LAST_UPDATED_BY | RptAbsTimeEntryPEOTcLastUpdatedBy | ✅ |
+| TC_LATEST_VERSION | RptAbsTimeEntryPEOTcLatestVersion | ✅ |
+| TC_LAYER_CODE | RptAbsTimeEntryPEOTcLayerCode | ✅ |
+| TC_START_DATE | RptAbsTimeEntryPEOTcStartDate | — |
+| TC_START_GMT_OFFSET | RptAbsTimeEntryPEOTcStartGmtOffset | — |
+| TC_START_TIME | RptAbsTimeEntryPEOTcStartTime | ✅ |
+| TC_START_TIMEZONE_CODE | RptAbsTimeEntryPEOTcStartTimezoneCode | — |
+| TC_STOP_DATE | RptAbsTimeEntryPEOTcStopDate | — |
+| TC_STOP_GMT_OFFSET | RptAbsTimeEntryPEOTcStopGmtOffset | — |
+| TC_STOP_TIME | RptAbsTimeEntryPEOTcStopTime | ✅ |
+| TC_STOP_TIMEZONE_CODE | RptAbsTimeEntryPEOTcStopTimezoneCode | — |
+| TC_TM_REC_GRP_ID | RptAbsTimeEntryPEOTcTmRecGrpId | ✅ |
+| TC_TM_REC_GRP_VERSION | RptAbsTimeEntryPEOTcTmRecGrpVersion | ✅ |
+| TE_ACTIVITY_IN_ID | RptAbsTimeEntryPEOTeActivityInId | — |
+| TE_ACTIVITY_OUT_ID | RptAbsTimeEntryPEOTeActivityOutId | — |
+| TE_COMMENT_TEXT | RptAbsTimeEntryPEOTeCommentText | ✅ |
+| TE_CREATED_BY | RptAbsTimeEntryPEOTeCreatedBy | ✅ |
+| TE_CREATION_DATE | RptAbsTimeEntryPEOTeCreationDate | ✅ |
+| TE_DATE_FROM | RptAbsTimeEntryPEOTeDateFrom | ✅ |
+| TE_DATE_TO | RptAbsTimeEntryPEOTeDateTo | ✅ |
+| TE_DELETE_FLAG | RptAbsTimeEntryPEOTeDeleteFlag | ✅ |
+| TE_LAST_UPDATE_DATE | RptAbsTimeEntryPEOTeLastUpdateDate | ✅ |
+| TE_LAST_UPDATE_LOGIN | RptAbsTimeEntryPEOTeLastUpdateLogin | ✅ |
+| TE_LAST_UPDATED_BY | RptAbsTimeEntryPEOTeLastUpdatedBy | ✅ |
+| TE_LATEST_VERSION | RptAbsTimeEntryPEOTeLatestVersion | ✅ |
+| TE_LAYER_CODE | RptAbsTimeEntryPEOTeLayerCode | ✅ |
+| TE_MEASURE | RptAbsTimeEntryPEOTeMeasure | ✅ |
+| TE_MEASURE_ABSENCE | RptAbsTimeEntryPEOTeMeasureAbsence | ✅ |
+| TE_MEASURE_ABSENCE_DAY | RptAbsTimeEntryPEOTeMeasureAbsenceDay | — |
+| TE_MEASURE_LABOR | RptAbsTimeEntryPEOTeMeasureLabor | ✅ |
+| TE_START_GMT_OFFSET | RptAbsTimeEntryPEOTeStartGmtOffset | — |
+| TE_START_TIME | RptAbsTimeEntryPEOTeStartTime | ✅ |
+| TE_START_TIMEZONE_CODE | RptAbsTimeEntryPEOTeStartTimezoneCode | ✅ |
+| TE_STOP_GMT_OFFSET | RptAbsTimeEntryPEOTeStopGmtOffset | — |
+| TE_STOP_TIME | RptAbsTimeEntryPEOTeStopTime | ✅ |
+| TE_STOP_TIMEZONE_CODE | RptAbsTimeEntryPEOTeStopTimezoneCode | ✅ |
+| TE_SUBRESOURCE_ID | RptAbsTimeEntryPEOTeSubresourceId | — |
+| TE_TCSMR_CONFIG_SET_ID | RptAbsTimeEntryPEOTeTcsmrConfigSetId | — |
+| TE_TCSMR_SET_ID | RptAbsTimeEntryPEOTeTcsmrSetId | ✅ |
+| TE_TIME_REPORTER_ID | RptAbsTimeEntryPEOTeTimeReporterId | ✅ |
+| TE_TM_REC_ID | RptAbsTimeEntryPEOTeTmRecId | ✅ |
+| TE_TM_REC_TYPE | RptAbsTimeEntryPEOTeTmRecType | ✅ |
+| TE_TM_REC_VERSION | RptAbsTimeEntryPEOTeTmRecVersion | ✅ |
+| TE_UNIT_OF_MEASURE | RptAbsTimeEntryPEOTeUnitOfMeasure | ✅ |
+
+### [[rptabstimeentrypvo|RptAbsTimeEntryPVO]] (HCM · BICC: 62/80)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ANC_DELETE_FLAG | AncDeleteFlag | — |
+| ANC_GRP_TYPE_ID | RptAbsTimeEntryPEOAncGrpTypeId | ✅ |
+| ANC_LATEST_VERSION | AncLatestVersion | — |
+| ANC_TM_REC_GRP_ID | RptAbsTimeEntryPEOAncTmRecGrpId | ✅ |
+| ANC_TM_REC_GRP_VERSION | RptAbsTimeEntryPEOAncTmRecGrpVersion | ✅ |
+| DAY_COMMENT_TEXT | RptAbsTimeEntryPEODayCommentText | ✅ |
+| DAY_CREATED_BY | RptAbsTimeEntryPEODayCreatedBy | ✅ |
+| DAY_CREATION_DATE | RptAbsTimeEntryPEODayCreationDate | ✅ |
+| DAY_DATE_FROM | RptAbsTimeEntryPEODayDateFrom | ✅ |
+| DAY_DATE_TO | RptAbsTimeEntryPEODayDateTo | ✅ |
+| DAY_DELETE_FLAG | RptAbsTimeEntryPEODayDeleteFlag | ✅ |
+| DAY_GRP_TYPE_ID | RptAbsTimeEntryPEODayGrpTypeId | ✅ |
+| DAY_LAST_UPDATE_DATE | RptAbsTimeEntryPEODayLastUpdateDate | ✅ |
+| DAY_LAST_UPDATE_LOGIN | RptAbsTimeEntryPEODayLastUpdateLogin | ✅ |
+| DAY_LAST_UPDATED_BY | RptAbsTimeEntryPEODayLastUpdatedBy | ✅ |
+| DAY_LATEST_VERSION | RptAbsTimeEntryPEODayLatestVersion | ✅ |
+| DAY_LAYER_CODE | RptAbsTimeEntryPEODayLayerCode | ✅ |
+| DAY_START_GMT_OFFSET | RptAbsTimeEntryPEODayStartGmtOffset | — |
+| DAY_START_TIME | RptAbsTimeEntryPEODayStartTime | ✅ |
+| DAY_START_TIMEZONE_CODE | RptAbsTimeEntryPEODayStartTimezoneCode | ✅ |
+| DAY_STOP_GMT_OFFSET | RptAbsTimeEntryPEODayStopGmtOffset | — |
+| DAY_STOP_TIME | RptAbsTimeEntryPEODayStopTime | ✅ |
+| DAY_STOP_TIMEZONE_CODE | RptAbsTimeEntryPEODayStopTimezoneCode | ✅ |
+| DAY_TM_REC_GRP_ID | RptAbsTimeEntryPEODayTmRecGrpId | ✅ |
+| DAY_TM_REC_GRP_VERSION | RptAbsTimeEntryPEODayTmRecGrpVersion | ✅ |
+| RESOURCE_ID | RptAbsTimeEntryPEOTeResourceId | — |
+| TC_COMMENT_TEXT | RptAbsTimeEntryPEOTcCommentText | ✅ |
+| TC_COMMIT_TIMESTAMP | RptAbsTimeEntryPEOTcCommitTimestamp | ✅ |
+| TC_CREATED_BY | RptAbsTimeEntryPEOTcCreatedBy | ✅ |
+| TC_CREATION_DATE | RptAbsTimeEntryPEOTcCreationDate | ✅ |
+| TC_DATE_FROM | RptAbsTimeEntryPEOTcDateFrom | ✅ |
+| TC_DATE_TO | RptAbsTimeEntryPEOTcDateTo | ✅ |
+| TC_DELETE_FLAG | RptAbsTimeEntryPEOTcDeleteFlag | ✅ |
+| TC_GRP_TYPE_ID | RptAbsTimeEntryPEOTcGrpTypeId | ✅ |
+| TC_LAST_UPDATE_DATE | RptAbsTimeEntryPEOTcLastUpdateDate | ✅ |
+| TC_LAST_UPDATE_LOGIN | RptAbsTimeEntryPEOTcLastUpdateLogin | ✅ |
+| TC_LAST_UPDATED_BY | RptAbsTimeEntryPEOTcLastUpdatedBy | ✅ |
+| TC_LATEST_VERSION | RptAbsTimeEntryPEOTcLatestVersion | ✅ |
+| TC_LAYER_CODE | RptAbsTimeEntryPEOTcLayerCode | ✅ |
+| TC_START_DATE | RptAbsTimeEntryPEOTcStartDate | — |
+| TC_START_GMT_OFFSET | RptAbsTimeEntryPEOTcStartGmtOffset | — |
+| TC_START_TIME | RptAbsTimeEntryPEOTcStartTime | ✅ |
+| TC_START_TIMEZONE_CODE | RptAbsTimeEntryPEOTcStartTimezoneCode | — |
+| TC_STOP_DATE | RptAbsTimeEntryPEOTcStopDate | — |
+| TC_STOP_GMT_OFFSET | RptAbsTimeEntryPEOTcStopGmtOffset | — |
+| TC_STOP_TIME | RptAbsTimeEntryPEOTcStopTime | ✅ |
+| TC_STOP_TIMEZONE_CODE | RptAbsTimeEntryPEOTcStopTimezoneCode | — |
+| TC_TM_REC_GRP_ID | RptAbsTimeEntryPEOTcTmRecGrpId | ✅ |
+| TC_TM_REC_GRP_VERSION | RptAbsTimeEntryPEOTcTmRecGrpVersion | ✅ |
+| TE_ACTIVITY_IN_ID | RptAbsTimeEntryPEOTeActivityInId | — |
+| TE_ACTIVITY_OUT_ID | RptAbsTimeEntryPEOTeActivityOutId | — |
+| TE_COMMENT_TEXT | RptAbsTimeEntryPEOTeCommentText | ✅ |
+| TE_CREATED_BY | RptAbsTimeEntryPEOTeCreatedBy | ✅ |
+| TE_CREATION_DATE | RptAbsTimeEntryPEOTeCreationDate | ✅ |
+| TE_DATE_FROM | RptAbsTimeEntryPEOTeDateFrom | ✅ |
+| TE_DATE_TO | RptAbsTimeEntryPEOTeDateTo | ✅ |
+| TE_DELETE_FLAG | RptAbsTimeEntryPEOTeDeleteFlag | ✅ |
+| TE_LAST_UPDATE_DATE | RptAbsTimeEntryPEOTeLastUpdateDate | ✅ |
+| TE_LAST_UPDATE_LOGIN | RptAbsTimeEntryPEOTeLastUpdateLogin | ✅ |
+| TE_LAST_UPDATED_BY | RptAbsTimeEntryPEOTeLastUpdatedBy | ✅ |
+| TE_LATEST_VERSION | RptAbsTimeEntryPEOTeLatestVersion | ✅ |
+| TE_LAYER_CODE | RptAbsTimeEntryPEOTeLayerCode | ✅ |
+| TE_MEASURE | RptAbsTimeEntryPEOTeMeasure | ✅ |
+| TE_MEASURE_ABSENCE | RptAbsTimeEntryPEOTeMeasureAbsence | ✅ |
+| TE_MEASURE_ABSENCE_DAY | RptAbsTimeEntryPEOTeMeasureAbsenceDay | — |
+| TE_MEASURE_LABOR | RptAbsTimeEntryPEOTeMeasureLabor | ✅ |
+| TE_START_GMT_OFFSET | RptAbsTimeEntryPEOTeStartGmtOffset | — |
+| TE_START_TIME | RptAbsTimeEntryPEOTeStartTime | ✅ |
+| TE_START_TIMEZONE_CODE | RptAbsTimeEntryPEOTeStartTimezoneCode | ✅ |
+| TE_STOP_GMT_OFFSET | RptAbsTimeEntryPEOTeStopGmtOffset | — |
+| TE_STOP_TIME | RptAbsTimeEntryPEOTeStopTime | ✅ |
+| TE_STOP_TIMEZONE_CODE | RptAbsTimeEntryPEOTeStopTimezoneCode | ✅ |
+| TE_SUBRESOURCE_ID | RptAbsTimeEntryPEOTeSubresourceId | — |
+| TE_TCSMR_CONFIG_SET_ID | RptAbsTimeEntryPEOTeTcsmrConfigSetId | — |
+| TE_TCSMR_SET_ID | RptAbsTimeEntryPEOTeTcsmrSetId | ✅ |
+| TE_TIME_REPORTER_ID | RptAbsTimeEntryPEOTeTimeReporterId | ✅ |
+| TE_TM_REC_ID | RptAbsTimeEntryPEOTeTmRecId | ✅ |
+| TE_TM_REC_TYPE | RptAbsTimeEntryPEOTeTmRecType | ✅ |
+| TE_TM_REC_VERSION | RptAbsTimeEntryPEOTeTmRecVersion | ✅ |
+| TE_UNIT_OF_MEASURE | RptAbsTimeEntryPEOTeUnitOfMeasure | ✅ |

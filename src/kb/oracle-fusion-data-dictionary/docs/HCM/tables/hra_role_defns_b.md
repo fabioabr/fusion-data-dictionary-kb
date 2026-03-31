@@ -113,6 +113,23 @@ GROUP BY rd.ROLE_TYPE;
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[templateroledefnpvo|TemplateRoleDefnPVO]] (HCM · BICC: 8/8)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | RoleDefinitionBPEOBusinessGroupId | ✅ |
+| DATE_FROM | RoleDefinitionBPEODateFrom | ✅ |
+| DATE_TO | RoleDefinitionBPEODateTo | ✅ |
+| LAST_UPDATE_DATE | RoleDefinitionBPEOLastUpdateDate | ✅ |
+| MANAGER_TYPE | RoleDefinitionBPEOManagerType | ✅ |
+| MATRIX_PARTICIPANT_FLAG | RoleDefinitionBPEOMatrixParticipantFlag | ✅ |
+| ROLE_ID | RoleId | ✅ |
+| STATUS_CODE | RoleDefinitionBPEOStatusCode | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — HRA_ROLE_DEFNS_B](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/hraroledefnsb.html)

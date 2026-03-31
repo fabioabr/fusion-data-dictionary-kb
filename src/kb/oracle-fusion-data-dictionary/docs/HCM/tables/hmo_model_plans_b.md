@@ -117,6 +117,110 @@ GROUP BY mp.MODEL_TYPE;
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[modelplandetailsfactpvo|ModelPlanDetailsFactPVO]] (HCM · BICC: 2/20)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACCESS_TO_TOP_MANAGER | ModelPlanPEOAccessToTopManager | — |
+| ACTION_ID | ModelPlanPEOActionId | — |
+| ACTION_REASON_ID | ModelPlanPEOActionReasonId | — |
+| AUTHOR_PERSON_ID | ModelPlanPEOAuthorPersonId | — |
+| CREATED_BY | ModelPlanPEOCreatedBy | — |
+| CREATION_DATE | ModelPlanPEOCreationDate | — |
+| EFFECTIVE_DATE | ModelPlanPEOEffectiveDate | — |
+| ENTERPRISE_ID | ModelPlanPEOEnterpriseId | — |
+| LAST_SYNC_DATE | ModelPlanPEOLastSyncDate | — |
+| LAST_UPDATE_DATE | ModelPlanPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ModelPlanPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | ModelPlanPEOLastUpdatedBy | — |
+| MODEL_LOADER_BATCH_ID | ModelPlanPEOModelLoaderBatchId | — |
+| MODEL_PLAN_ID | ModelPlanPEOModelPlanId | — |
+| MODEL_PLAN_STATUS | ModelPlanPEOModelPlanStatus | — |
+| MODEL_PLAN_TYPE | ModelPlanPEOModelPlanType | ✅ |
+| OBJECT_VERSION_NUMBER | ModelPlanPEOObjectVersionNumber | — |
+| TOP_MANAGER_ASSIGNMENT_ID | ModelPlanPEOTopManagerAssignmentId | — |
+| TOP_MANAGER_ID | ModelPlanPEOTopManagerId | — |
+| TOP_MANAGER_TYPE | ModelPlanPEOTopManagerType | — |
+
+### [[modelplandetailspvomodel|ModelPlanDetailsPVOModel]] (HCM · BICC: 2/20)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACCESS_TO_TOP_MANAGER | ModelPlanPEOAccessToTopManager | — |
+| ACTION_ID | ModelPlanPEOActionId | — |
+| ACTION_REASON_ID | ModelPlanPEOActionReasonId | — |
+| AUTHOR_PERSON_ID | ModelPlanPEOAuthorPersonId | — |
+| CREATED_BY | ModelPlanPEOCreatedBy | — |
+| CREATION_DATE | ModelPlanPEOCreationDate | — |
+| EFFECTIVE_DATE | ModelPlanPEOEffectiveDate | — |
+| ENTERPRISE_ID | ModelPlanPEOEnterpriseId | — |
+| LAST_SYNC_DATE | ModelPlanPEOLastSyncDate | — |
+| LAST_UPDATE_DATE | ModelPlanPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ModelPlanPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | ModelPlanPEOLastUpdatedBy | — |
+| MODEL_LOADER_BATCH_ID | ModelPlanPEOModelLoaderBatchId | — |
+| MODEL_PLAN_ID | ModelPlanPEOModelPlanId | — |
+| MODEL_PLAN_STATUS | ModelPlanPEOModelPlanStatus | — |
+| MODEL_PLAN_TYPE | ModelPlanPEOModelPlanType | ✅ |
+| OBJECT_VERSION_NUMBER | ModelPlanPEOObjectVersionNumber | — |
+| TOP_MANAGER_ASSIGNMENT_ID | ModelPlanPEOTopManagerAssignmentId | — |
+| TOP_MANAGER_ID | ModelPlanPEOTopManagerId | — |
+| TOP_MANAGER_TYPE | ModelPlanPEOTopManagerType | — |
+
+### [[modelplanpvo|ModelPlanPVO]] (HCM · BICC: 10/20)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACCESS_TO_TOP_MANAGER | AccessToTopManager | ✅ |
+| ACTION_ID | ActionId | — |
+| ACTION_REASON_ID | ActionReasonId | — |
+| AUTHOR_PERSON_ID | AuthorPersonId | — |
+| CREATED_BY | CreatedBy | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| EFFECTIVE_DATE | EffectiveDate | ✅ |
+| ENTERPRISE_ID | EnterpriseId | — |
+| LAST_SYNC_DATE | LastSyncDate | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | — |
+| LAST_UPDATED_BY | LastUpdatedBy | ✅ |
+| MODEL_LOADER_BATCH_ID | ModelLoaderBatchId | — |
+| MODEL_PLAN_ID | ModelPlanId | ✅ |
+| MODEL_PLAN_STATUS | ModelPlanStatus | ✅ |
+| MODEL_PLAN_TYPE | ModelPlanType | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | — |
+| TOP_MANAGER_ASSIGNMENT_ID | TopManagerAssignmentId | — |
+| TOP_MANAGER_ID | TopManagerId | — |
+| TOP_MANAGER_TYPE | TopManagerType | — |
+
+### [[modelplanpvoviewall|ModelPlanPVOViewAll]] (HCM · BICC: 10/20)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACCESS_TO_TOP_MANAGER | AccessToTopManager | ✅ |
+| ACTION_ID | ActionId | — |
+| ACTION_REASON_ID | ActionReasonId | — |
+| AUTHOR_PERSON_ID | AuthorPersonId | — |
+| CREATED_BY | CreatedBy | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| EFFECTIVE_DATE | EffectiveDate | ✅ |
+| ENTERPRISE_ID | EnterpriseId | — |
+| LAST_SYNC_DATE | LastSyncDate | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | — |
+| LAST_UPDATED_BY | LastUpdatedBy | ✅ |
+| MODEL_LOADER_BATCH_ID | ModelLoaderBatchId | — |
+| MODEL_PLAN_ID | ModelPlanId | ✅ |
+| MODEL_PLAN_STATUS | ModelPlanStatus | ✅ |
+| MODEL_PLAN_TYPE | ModelPlanType | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | — |
+| TOP_MANAGER_ASSIGNMENT_ID | TopManagerAssignmentId | — |
+| TOP_MANAGER_ID | TopManagerId | — |
+| TOP_MANAGER_TYPE | TopManagerType | — |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — HMO_MODEL_PLANS_B](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/hmomodelplansb.html)

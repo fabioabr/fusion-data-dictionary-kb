@@ -112,3 +112,1015 @@ WHERE  SYSDATE BETWEEN vl.EFFECTIVE_START_DATE AND vl.EFFECTIVE_END_DATE
 
 - [Oracle Docs — PER_LOCATION_DETAILS_F_VL](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/perlocationdetailsfvl.html)
 - [[hcm-module-data-dictionary]] — Dossiê do módulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[careerpreferencelocationpvo|CareerPreferenceLocationPVO]] (HCM · BICC: 3/34)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTIVE_STATUS | LocationDetailsPEOActiveStatus | — |
+| BILL_TO_SITE_FLAG | LocationDetailsPEOBillToSiteFlag | — |
+| business_group_id | LocationDetailsPEOBusinessGroupId | — |
+| DESIGNATED_RECEIVER_ID | LocationDetailsPEODesignatedReceiverId | — |
+| EFFECTIVE_END_DATE | LocationDetailsPEOEffectiveEndDate | ✅ |
+| EFFECTIVE_START_DATE | LocationDetailsPEOEffectiveStartDate | ✅ |
+| EMAIL_ADDRESS | LocationDetailsPEOEmailAddress | — |
+| FAX_AREA_CODE2 | LocationDetailsPEOFaxAreaCode2 | — |
+| FAX_COUNTRY_CODE2 | LocationDetailsPEOFaxCountryCode2 | — |
+| FAX_EXTENSION2 | LocationDetailsPEOFaxExtension2 | — |
+| FAX_SUBSCRIBER_NUM2 | LocationDetailsPEOFaxSubscriberNum2 | — |
+| GEO_HIERARCHY_NODE_ID | LocationDetailsPEOGeoHierarchyNodeId | — |
+| GEO_HIERARCHY_NODE_VALUE | LocationDetailsPEOGeoHierarchyNodeValue | — |
+| INVENTORY_ORGANIZATION_ID | LocationDetailsPEOInventoryOrganizationId | — |
+| LAST_UPDATE_DATE | LocationDetailsPEOLastUpdateDate | ✅ |
+| LOCATION_DETAILS_ID | LocationDetailsPEOLocationDetailsId | — |
+| LOCATION_ID | LocationDetailsPEOLocationId | — |
+| MAIN_ADDRESS_ID | LocationDetailsPEOMainAddressId | — |
+| MAINPHONE_AREA_CODE1 | LocationDetailsPEOMainphoneAreaCode1 | — |
+| MAINPHONE_COUNTRY_CODE1 | LocationDetailsPEOMainphoneCountryCode1 | — |
+| MAINPHONE_EXTENSION1 | LocationDetailsPEOMainphoneExtension1 | — |
+| MAINPHONE_SUBSCRIBER_NUM1 | LocationDetailsPEOMainphoneSubscriberNum1 | — |
+| OFFICE_SITE_FLAG | LocationDetailsPEOOfficeSiteFlag | — |
+| OFFICIAL_LANGUAGE_CODE | LocationDetailsPEOOfficialLanguageCode | — |
+| OTHERPHONE_AREA_CODE3 | LocationDetailsPEOOtherphoneAreaCode3 | — |
+| OTHERPHONE_COUNTRY_CODE3 | LocationDetailsPEOOtherphoneCountryCode3 | — |
+| OTHERPHONE_EXTENSION3 | LocationDetailsPEOOtherphoneExtension3 | — |
+| OTHERPHONE_SUBSCRIBER_NUM3 | LocationDetailsPEOOtherphoneSubscriberNum3 | — |
+| RECEIVING_SITE_FLAG | LocationDetailsPEOReceivingSiteFlag | — |
+| SHIP_TO_LOCATION_ID | LocationDetailsPEOShipToLocationId | — |
+| SHIP_TO_SITE_FLAG | LocationDetailsPEOShipToSiteFlag | — |
+| TELEPHONE_NUMBER_1 | LocationDetailsPEOTelephoneNumber1 | — |
+| TELEPHONE_NUMBER_2 | LocationDetailsPEOTelephoneNumber2 | — |
+| TELEPHONE_NUMBER_3 | LocationDetailsPEOTelephoneNumber3 | — |
+
+### [[careerpreferencelocationpvo_viewall|CareerPreferenceLocationPVO_Viewall]] (HCM · BICC: 2/34)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTIVE_STATUS | LocationDetailsPEOActiveStatus | — |
+| BILL_TO_SITE_FLAG | LocationDetailsPEOBillToSiteFlag | — |
+| business_group_id | LocationDetailsPEOBusinessGroupId | — |
+| DESIGNATED_RECEIVER_ID | LocationDetailsPEODesignatedReceiverId | — |
+| EFFECTIVE_END_DATE | LocationDetailsPEOEffectiveEndDate | — |
+| EFFECTIVE_START_DATE | LocationDetailsPEOEffectiveStartDate | ✅ |
+| EMAIL_ADDRESS | LocationDetailsPEOEmailAddress | — |
+| FAX_AREA_CODE2 | LocationDetailsPEOFaxAreaCode2 | — |
+| FAX_COUNTRY_CODE2 | LocationDetailsPEOFaxCountryCode2 | — |
+| FAX_EXTENSION2 | LocationDetailsPEOFaxExtension2 | — |
+| FAX_SUBSCRIBER_NUM2 | LocationDetailsPEOFaxSubscriberNum2 | — |
+| GEO_HIERARCHY_NODE_ID | LocationDetailsPEOGeoHierarchyNodeId | — |
+| GEO_HIERARCHY_NODE_VALUE | LocationDetailsPEOGeoHierarchyNodeValue | — |
+| INVENTORY_ORGANIZATION_ID | LocationDetailsPEOInventoryOrganizationId | — |
+| LAST_UPDATE_DATE | LocationDetailsPEOLastUpdateDate | ✅ |
+| LOCATION_DETAILS_ID | LocationDetailsPEOLocationDetailsId | — |
+| LOCATION_ID | LocationDetailsPEOLocationId | — |
+| MAIN_ADDRESS_ID | LocationDetailsPEOMainAddressId | — |
+| MAINPHONE_AREA_CODE1 | LocationDetailsPEOMainphoneAreaCode1 | — |
+| MAINPHONE_COUNTRY_CODE1 | LocationDetailsPEOMainphoneCountryCode1 | — |
+| MAINPHONE_EXTENSION1 | LocationDetailsPEOMainphoneExtension1 | — |
+| MAINPHONE_SUBSCRIBER_NUM1 | LocationDetailsPEOMainphoneSubscriberNum1 | — |
+| OFFICE_SITE_FLAG | LocationDetailsPEOOfficeSiteFlag | — |
+| OFFICIAL_LANGUAGE_CODE | LocationDetailsPEOOfficialLanguageCode | — |
+| OTHERPHONE_AREA_CODE3 | LocationDetailsPEOOtherphoneAreaCode3 | — |
+| OTHERPHONE_COUNTRY_CODE3 | LocationDetailsPEOOtherphoneCountryCode3 | — |
+| OTHERPHONE_EXTENSION3 | LocationDetailsPEOOtherphoneExtension3 | — |
+| OTHERPHONE_SUBSCRIBER_NUM3 | LocationDetailsPEOOtherphoneSubscriberNum3 | — |
+| RECEIVING_SITE_FLAG | LocationDetailsPEOReceivingSiteFlag | — |
+| SHIP_TO_LOCATION_ID | LocationDetailsPEOShipToLocationId | — |
+| SHIP_TO_SITE_FLAG | LocationDetailsPEOShipToSiteFlag | — |
+| TELEPHONE_NUMBER_1 | LocationDetailsPEOTelephoneNumber1 | — |
+| TELEPHONE_NUMBER_2 | LocationDetailsPEOTelephoneNumber2 | — |
+| TELEPHONE_NUMBER_3 | LocationDetailsPEOTelephoneNumber3 | — |
+
+### [[excludedlocation1pvo|ExcludedLocation1PVO]] (HCM · BICC: 3/34)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTIVE_STATUS | LocationDetailsPEOActiveStatus | — |
+| BILL_TO_SITE_FLAG | LocationDetailsPEOBillToSiteFlag | — |
+| business_group_id | LocationDetailsPEOBusinessGroupId | — |
+| DESIGNATED_RECEIVER_ID | LocationDetailsPEODesignatedReceiverId | — |
+| EFFECTIVE_END_DATE | LocationDetailsPEOEffectiveEndDate | ✅ |
+| EFFECTIVE_START_DATE | LocationDetailsPEOEffectiveStartDate | ✅ |
+| EMAIL_ADDRESS | LocationDetailsPEOEmailAddress | — |
+| FAX_AREA_CODE2 | LocationDetailsPEOFaxAreaCode2 | — |
+| FAX_COUNTRY_CODE2 | LocationDetailsPEOFaxCountryCode2 | — |
+| FAX_EXTENSION2 | LocationDetailsPEOFaxExtension2 | — |
+| FAX_SUBSCRIBER_NUM2 | LocationDetailsPEOFaxSubscriberNum2 | — |
+| GEO_HIERARCHY_NODE_ID | LocationDetailsPEOGeoHierarchyNodeId | — |
+| GEO_HIERARCHY_NODE_VALUE | LocationDetailsPEOGeoHierarchyNodeValue | — |
+| INVENTORY_ORGANIZATION_ID | LocationDetailsPEOInventoryOrganizationId | — |
+| LAST_UPDATE_DATE | LocationDetailsPEOLastUpdateDate | ✅ |
+| LOCATION_DETAILS_ID | LocationDetailsPEOLocationDetailsId | — |
+| LOCATION_ID | LocationDetailsPEOLocationId | — |
+| MAIN_ADDRESS_ID | LocationDetailsPEOMainAddressId | — |
+| MAINPHONE_AREA_CODE1 | LocationDetailsPEOMainphoneAreaCode1 | — |
+| MAINPHONE_COUNTRY_CODE1 | LocationDetailsPEOMainphoneCountryCode1 | — |
+| MAINPHONE_EXTENSION1 | LocationDetailsPEOMainphoneExtension1 | — |
+| MAINPHONE_SUBSCRIBER_NUM1 | LocationDetailsPEOMainphoneSubscriberNum1 | — |
+| OFFICE_SITE_FLAG | LocationDetailsPEOOfficeSiteFlag | — |
+| OFFICIAL_LANGUAGE_CODE | LocationDetailsPEOOfficialLanguageCode | — |
+| OTHERPHONE_AREA_CODE3 | LocationDetailsPEOOtherphoneAreaCode3 | — |
+| OTHERPHONE_COUNTRY_CODE3 | LocationDetailsPEOOtherphoneCountryCode3 | — |
+| OTHERPHONE_EXTENSION3 | LocationDetailsPEOOtherphoneExtension3 | — |
+| OTHERPHONE_SUBSCRIBER_NUM3 | LocationDetailsPEOOtherphoneSubscriberNum3 | — |
+| RECEIVING_SITE_FLAG | LocationDetailsPEOReceivingSiteFlag | — |
+| SHIP_TO_LOCATION_ID | LocationDetailsPEOShipToLocationId | — |
+| SHIP_TO_SITE_FLAG | LocationDetailsPEOShipToSiteFlag | — |
+| TELEPHONE_NUMBER_1 | LocationDetailsPEOTelephoneNumber1 | — |
+| TELEPHONE_NUMBER_2 | LocationDetailsPEOTelephoneNumber2 | — |
+| TELEPHONE_NUMBER_3 | LocationDetailsPEOTelephoneNumber3 | — |
+
+### [[excludedlocation1pvo_viewall|ExcludedLocation1PVO_Viewall]] (HCM · BICC: 3/34)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTIVE_STATUS | LocationDetailsPEOActiveStatus | — |
+| BILL_TO_SITE_FLAG | LocationDetailsPEOBillToSiteFlag | — |
+| business_group_id | LocationDetailsPEOBusinessGroupId | — |
+| DESIGNATED_RECEIVER_ID | LocationDetailsPEODesignatedReceiverId | — |
+| EFFECTIVE_END_DATE | LocationDetailsPEOEffectiveEndDate | ✅ |
+| EFFECTIVE_START_DATE | LocationDetailsPEOEffectiveStartDate | ✅ |
+| EMAIL_ADDRESS | LocationDetailsPEOEmailAddress | — |
+| FAX_AREA_CODE2 | LocationDetailsPEOFaxAreaCode2 | — |
+| FAX_COUNTRY_CODE2 | LocationDetailsPEOFaxCountryCode2 | — |
+| FAX_EXTENSION2 | LocationDetailsPEOFaxExtension2 | — |
+| FAX_SUBSCRIBER_NUM2 | LocationDetailsPEOFaxSubscriberNum2 | — |
+| GEO_HIERARCHY_NODE_ID | LocationDetailsPEOGeoHierarchyNodeId | — |
+| GEO_HIERARCHY_NODE_VALUE | LocationDetailsPEOGeoHierarchyNodeValue | — |
+| INVENTORY_ORGANIZATION_ID | LocationDetailsPEOInventoryOrganizationId | — |
+| LAST_UPDATE_DATE | LocationDetailsPEOLastUpdateDate | ✅ |
+| LOCATION_DETAILS_ID | LocationDetailsPEOLocationDetailsId | — |
+| LOCATION_ID | LocationDetailsPEOLocationId | — |
+| MAIN_ADDRESS_ID | LocationDetailsPEOMainAddressId | — |
+| MAINPHONE_AREA_CODE1 | LocationDetailsPEOMainphoneAreaCode1 | — |
+| MAINPHONE_COUNTRY_CODE1 | LocationDetailsPEOMainphoneCountryCode1 | — |
+| MAINPHONE_EXTENSION1 | LocationDetailsPEOMainphoneExtension1 | — |
+| MAINPHONE_SUBSCRIBER_NUM1 | LocationDetailsPEOMainphoneSubscriberNum1 | — |
+| OFFICE_SITE_FLAG | LocationDetailsPEOOfficeSiteFlag | — |
+| OFFICIAL_LANGUAGE_CODE | LocationDetailsPEOOfficialLanguageCode | — |
+| OTHERPHONE_AREA_CODE3 | LocationDetailsPEOOtherphoneAreaCode3 | — |
+| OTHERPHONE_COUNTRY_CODE3 | LocationDetailsPEOOtherphoneCountryCode3 | — |
+| OTHERPHONE_EXTENSION3 | LocationDetailsPEOOtherphoneExtension3 | — |
+| OTHERPHONE_SUBSCRIBER_NUM3 | LocationDetailsPEOOtherphoneSubscriberNum3 | — |
+| RECEIVING_SITE_FLAG | LocationDetailsPEOReceivingSiteFlag | — |
+| SHIP_TO_LOCATION_ID | LocationDetailsPEOShipToLocationId | — |
+| SHIP_TO_SITE_FLAG | LocationDetailsPEOShipToSiteFlag | — |
+| TELEPHONE_NUMBER_1 | LocationDetailsPEOTelephoneNumber1 | — |
+| TELEPHONE_NUMBER_2 | LocationDetailsPEOTelephoneNumber2 | — |
+| TELEPHONE_NUMBER_3 | LocationDetailsPEOTelephoneNumber3 | — |
+
+### [[excludedlocation2pvo|ExcludedLocation2PVO]] (HCM · BICC: 3/34)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTIVE_STATUS | LocationDetailsPEOActiveStatus | — |
+| BILL_TO_SITE_FLAG | LocationDetailsPEOBillToSiteFlag | — |
+| business_group_id | LocationDetailsPEOBusinessGroupId | — |
+| DESIGNATED_RECEIVER_ID | LocationDetailsPEODesignatedReceiverId | — |
+| EFFECTIVE_END_DATE | LocationDetailsPEOEffectiveEndDate | ✅ |
+| EFFECTIVE_START_DATE | LocationDetailsPEOEffectiveStartDate | ✅ |
+| EMAIL_ADDRESS | LocationDetailsPEOEmailAddress | — |
+| FAX_AREA_CODE2 | LocationDetailsPEOFaxAreaCode2 | — |
+| FAX_COUNTRY_CODE2 | LocationDetailsPEOFaxCountryCode2 | — |
+| FAX_EXTENSION2 | LocationDetailsPEOFaxExtension2 | — |
+| FAX_SUBSCRIBER_NUM2 | LocationDetailsPEOFaxSubscriberNum2 | — |
+| GEO_HIERARCHY_NODE_ID | LocationDetailsPEOGeoHierarchyNodeId | — |
+| GEO_HIERARCHY_NODE_VALUE | LocationDetailsPEOGeoHierarchyNodeValue | — |
+| INVENTORY_ORGANIZATION_ID | LocationDetailsPEOInventoryOrganizationId | — |
+| LAST_UPDATE_DATE | LocationDetailsPEOLastUpdateDate | ✅ |
+| LOCATION_DETAILS_ID | LocationDetailsPEOLocationDetailsId | — |
+| LOCATION_ID | LocationDetailsPEOLocationId | — |
+| MAIN_ADDRESS_ID | LocationDetailsPEOMainAddressId | — |
+| MAINPHONE_AREA_CODE1 | LocationDetailsPEOMainphoneAreaCode1 | — |
+| MAINPHONE_COUNTRY_CODE1 | LocationDetailsPEOMainphoneCountryCode1 | — |
+| MAINPHONE_EXTENSION1 | LocationDetailsPEOMainphoneExtension1 | — |
+| MAINPHONE_SUBSCRIBER_NUM1 | LocationDetailsPEOMainphoneSubscriberNum1 | — |
+| OFFICE_SITE_FLAG | LocationDetailsPEOOfficeSiteFlag | — |
+| OFFICIAL_LANGUAGE_CODE | LocationDetailsPEOOfficialLanguageCode | — |
+| OTHERPHONE_AREA_CODE3 | LocationDetailsPEOOtherphoneAreaCode3 | — |
+| OTHERPHONE_COUNTRY_CODE3 | LocationDetailsPEOOtherphoneCountryCode3 | — |
+| OTHERPHONE_EXTENSION3 | LocationDetailsPEOOtherphoneExtension3 | — |
+| OTHERPHONE_SUBSCRIBER_NUM3 | LocationDetailsPEOOtherphoneSubscriberNum3 | — |
+| RECEIVING_SITE_FLAG | LocationDetailsPEOReceivingSiteFlag | — |
+| SHIP_TO_LOCATION_ID | LocationDetailsPEOShipToLocationId | — |
+| SHIP_TO_SITE_FLAG | LocationDetailsPEOShipToSiteFlag | — |
+| TELEPHONE_NUMBER_1 | LocationDetailsPEOTelephoneNumber1 | — |
+| TELEPHONE_NUMBER_2 | LocationDetailsPEOTelephoneNumber2 | — |
+| TELEPHONE_NUMBER_3 | LocationDetailsPEOTelephoneNumber3 | — |
+
+### [[excludedlocation2pvo_viewall|ExcludedLocation2PVO_Viewall]] (HCM · BICC: 3/34)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTIVE_STATUS | LocationDetailsPEOActiveStatus | — |
+| BILL_TO_SITE_FLAG | LocationDetailsPEOBillToSiteFlag | — |
+| business_group_id | LocationDetailsPEOBusinessGroupId | — |
+| DESIGNATED_RECEIVER_ID | LocationDetailsPEODesignatedReceiverId | — |
+| EFFECTIVE_END_DATE | LocationDetailsPEOEffectiveEndDate | ✅ |
+| EFFECTIVE_START_DATE | LocationDetailsPEOEffectiveStartDate | ✅ |
+| EMAIL_ADDRESS | LocationDetailsPEOEmailAddress | — |
+| FAX_AREA_CODE2 | LocationDetailsPEOFaxAreaCode2 | — |
+| FAX_COUNTRY_CODE2 | LocationDetailsPEOFaxCountryCode2 | — |
+| FAX_EXTENSION2 | LocationDetailsPEOFaxExtension2 | — |
+| FAX_SUBSCRIBER_NUM2 | LocationDetailsPEOFaxSubscriberNum2 | — |
+| GEO_HIERARCHY_NODE_ID | LocationDetailsPEOGeoHierarchyNodeId | — |
+| GEO_HIERARCHY_NODE_VALUE | LocationDetailsPEOGeoHierarchyNodeValue | — |
+| INVENTORY_ORGANIZATION_ID | LocationDetailsPEOInventoryOrganizationId | — |
+| LAST_UPDATE_DATE | LocationDetailsPEOLastUpdateDate | ✅ |
+| LOCATION_DETAILS_ID | LocationDetailsPEOLocationDetailsId | — |
+| LOCATION_ID | LocationDetailsPEOLocationId | — |
+| MAIN_ADDRESS_ID | LocationDetailsPEOMainAddressId | — |
+| MAINPHONE_AREA_CODE1 | LocationDetailsPEOMainphoneAreaCode1 | — |
+| MAINPHONE_COUNTRY_CODE1 | LocationDetailsPEOMainphoneCountryCode1 | — |
+| MAINPHONE_EXTENSION1 | LocationDetailsPEOMainphoneExtension1 | — |
+| MAINPHONE_SUBSCRIBER_NUM1 | LocationDetailsPEOMainphoneSubscriberNum1 | — |
+| OFFICE_SITE_FLAG | LocationDetailsPEOOfficeSiteFlag | — |
+| OFFICIAL_LANGUAGE_CODE | LocationDetailsPEOOfficialLanguageCode | — |
+| OTHERPHONE_AREA_CODE3 | LocationDetailsPEOOtherphoneAreaCode3 | — |
+| OTHERPHONE_COUNTRY_CODE3 | LocationDetailsPEOOtherphoneCountryCode3 | — |
+| OTHERPHONE_EXTENSION3 | LocationDetailsPEOOtherphoneExtension3 | — |
+| OTHERPHONE_SUBSCRIBER_NUM3 | LocationDetailsPEOOtherphoneSubscriberNum3 | — |
+| RECEIVING_SITE_FLAG | LocationDetailsPEOReceivingSiteFlag | — |
+| SHIP_TO_LOCATION_ID | LocationDetailsPEOShipToLocationId | — |
+| SHIP_TO_SITE_FLAG | LocationDetailsPEOShipToSiteFlag | — |
+| TELEPHONE_NUMBER_1 | LocationDetailsPEOTelephoneNumber1 | — |
+| TELEPHONE_NUMBER_2 | LocationDetailsPEOTelephoneNumber2 | — |
+| TELEPHONE_NUMBER_3 | LocationDetailsPEOTelephoneNumber3 | — |
+
+### [[excludedlocation3pvo|ExcludedLocation3PVO]] (HCM · BICC: 3/34)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTIVE_STATUS | LocationDetailsPEOActiveStatus | — |
+| BILL_TO_SITE_FLAG | LocationDetailsPEOBillToSiteFlag | — |
+| business_group_id | LocationDetailsPEOBusinessGroupId | — |
+| DESIGNATED_RECEIVER_ID | LocationDetailsPEODesignatedReceiverId | — |
+| EFFECTIVE_END_DATE | LocationDetailsPEOEffectiveEndDate | ✅ |
+| EFFECTIVE_START_DATE | LocationDetailsPEOEffectiveStartDate | ✅ |
+| EMAIL_ADDRESS | LocationDetailsPEOEmailAddress | — |
+| FAX_AREA_CODE2 | LocationDetailsPEOFaxAreaCode2 | — |
+| FAX_COUNTRY_CODE2 | LocationDetailsPEOFaxCountryCode2 | — |
+| FAX_EXTENSION2 | LocationDetailsPEOFaxExtension2 | — |
+| FAX_SUBSCRIBER_NUM2 | LocationDetailsPEOFaxSubscriberNum2 | — |
+| GEO_HIERARCHY_NODE_ID | LocationDetailsPEOGeoHierarchyNodeId | — |
+| GEO_HIERARCHY_NODE_VALUE | LocationDetailsPEOGeoHierarchyNodeValue | — |
+| INVENTORY_ORGANIZATION_ID | LocationDetailsPEOInventoryOrganizationId | — |
+| LAST_UPDATE_DATE | LocationDetailsPEOLastUpdateDate | ✅ |
+| LOCATION_DETAILS_ID | LocationDetailsPEOLocationDetailsId | — |
+| LOCATION_ID | LocationDetailsPEOLocationId | — |
+| MAIN_ADDRESS_ID | LocationDetailsPEOMainAddressId | — |
+| MAINPHONE_AREA_CODE1 | LocationDetailsPEOMainphoneAreaCode1 | — |
+| MAINPHONE_COUNTRY_CODE1 | LocationDetailsPEOMainphoneCountryCode1 | — |
+| MAINPHONE_EXTENSION1 | LocationDetailsPEOMainphoneExtension1 | — |
+| MAINPHONE_SUBSCRIBER_NUM1 | LocationDetailsPEOMainphoneSubscriberNum1 | — |
+| OFFICE_SITE_FLAG | LocationDetailsPEOOfficeSiteFlag | — |
+| OFFICIAL_LANGUAGE_CODE | LocationDetailsPEOOfficialLanguageCode | — |
+| OTHERPHONE_AREA_CODE3 | LocationDetailsPEOOtherphoneAreaCode3 | — |
+| OTHERPHONE_COUNTRY_CODE3 | LocationDetailsPEOOtherphoneCountryCode3 | — |
+| OTHERPHONE_EXTENSION3 | LocationDetailsPEOOtherphoneExtension3 | — |
+| OTHERPHONE_SUBSCRIBER_NUM3 | LocationDetailsPEOOtherphoneSubscriberNum3 | — |
+| RECEIVING_SITE_FLAG | LocationDetailsPEOReceivingSiteFlag | — |
+| SHIP_TO_LOCATION_ID | LocationDetailsPEOShipToLocationId | — |
+| SHIP_TO_SITE_FLAG | LocationDetailsPEOShipToSiteFlag | — |
+| TELEPHONE_NUMBER_1 | LocationDetailsPEOTelephoneNumber1 | — |
+| TELEPHONE_NUMBER_2 | LocationDetailsPEOTelephoneNumber2 | — |
+| TELEPHONE_NUMBER_3 | LocationDetailsPEOTelephoneNumber3 | — |
+
+### [[excludedlocation3pvo_viewall|ExcludedLocation3PVO_Viewall]] (HCM · BICC: 3/34)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTIVE_STATUS | LocationDetailsPEOActiveStatus | — |
+| BILL_TO_SITE_FLAG | LocationDetailsPEOBillToSiteFlag | — |
+| business_group_id | LocationDetailsPEOBusinessGroupId | — |
+| DESIGNATED_RECEIVER_ID | LocationDetailsPEODesignatedReceiverId | — |
+| EFFECTIVE_END_DATE | LocationDetailsPEOEffectiveEndDate | ✅ |
+| EFFECTIVE_START_DATE | LocationDetailsPEOEffectiveStartDate | ✅ |
+| EMAIL_ADDRESS | LocationDetailsPEOEmailAddress | — |
+| FAX_AREA_CODE2 | LocationDetailsPEOFaxAreaCode2 | — |
+| FAX_COUNTRY_CODE2 | LocationDetailsPEOFaxCountryCode2 | — |
+| FAX_EXTENSION2 | LocationDetailsPEOFaxExtension2 | — |
+| FAX_SUBSCRIBER_NUM2 | LocationDetailsPEOFaxSubscriberNum2 | — |
+| GEO_HIERARCHY_NODE_ID | LocationDetailsPEOGeoHierarchyNodeId | — |
+| GEO_HIERARCHY_NODE_VALUE | LocationDetailsPEOGeoHierarchyNodeValue | — |
+| INVENTORY_ORGANIZATION_ID | LocationDetailsPEOInventoryOrganizationId | — |
+| LAST_UPDATE_DATE | LocationDetailsPEOLastUpdateDate | ✅ |
+| LOCATION_DETAILS_ID | LocationDetailsPEOLocationDetailsId | — |
+| LOCATION_ID | LocationDetailsPEOLocationId | — |
+| MAIN_ADDRESS_ID | LocationDetailsPEOMainAddressId | — |
+| MAINPHONE_AREA_CODE1 | LocationDetailsPEOMainphoneAreaCode1 | — |
+| MAINPHONE_COUNTRY_CODE1 | LocationDetailsPEOMainphoneCountryCode1 | — |
+| MAINPHONE_EXTENSION1 | LocationDetailsPEOMainphoneExtension1 | — |
+| MAINPHONE_SUBSCRIBER_NUM1 | LocationDetailsPEOMainphoneSubscriberNum1 | — |
+| OFFICE_SITE_FLAG | LocationDetailsPEOOfficeSiteFlag | — |
+| OFFICIAL_LANGUAGE_CODE | LocationDetailsPEOOfficialLanguageCode | — |
+| OTHERPHONE_AREA_CODE3 | LocationDetailsPEOOtherphoneAreaCode3 | — |
+| OTHERPHONE_COUNTRY_CODE3 | LocationDetailsPEOOtherphoneCountryCode3 | — |
+| OTHERPHONE_EXTENSION3 | LocationDetailsPEOOtherphoneExtension3 | — |
+| OTHERPHONE_SUBSCRIBER_NUM3 | LocationDetailsPEOOtherphoneSubscriberNum3 | — |
+| RECEIVING_SITE_FLAG | LocationDetailsPEOReceivingSiteFlag | — |
+| SHIP_TO_LOCATION_ID | LocationDetailsPEOShipToLocationId | — |
+| SHIP_TO_SITE_FLAG | LocationDetailsPEOShipToSiteFlag | — |
+| TELEPHONE_NUMBER_1 | LocationDetailsPEOTelephoneNumber1 | — |
+| TELEPHONE_NUMBER_2 | LocationDetailsPEOTelephoneNumber2 | — |
+| TELEPHONE_NUMBER_3 | LocationDetailsPEOTelephoneNumber3 | — |
+
+### [[excludedlocation4pvo|ExcludedLocation4PVO]] (HCM · BICC: 3/34)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTIVE_STATUS | LocationDetailsPEOActiveStatus | — |
+| BILL_TO_SITE_FLAG | LocationDetailsPEOBillToSiteFlag | — |
+| business_group_id | LocationDetailsPEOBusinessGroupId | — |
+| DESIGNATED_RECEIVER_ID | LocationDetailsPEODesignatedReceiverId | — |
+| EFFECTIVE_END_DATE | LocationDetailsPEOEffectiveEndDate | ✅ |
+| EFFECTIVE_START_DATE | LocationDetailsPEOEffectiveStartDate | ✅ |
+| EMAIL_ADDRESS | LocationDetailsPEOEmailAddress | — |
+| FAX_AREA_CODE2 | LocationDetailsPEOFaxAreaCode2 | — |
+| FAX_COUNTRY_CODE2 | LocationDetailsPEOFaxCountryCode2 | — |
+| FAX_EXTENSION2 | LocationDetailsPEOFaxExtension2 | — |
+| FAX_SUBSCRIBER_NUM2 | LocationDetailsPEOFaxSubscriberNum2 | — |
+| GEO_HIERARCHY_NODE_ID | LocationDetailsPEOGeoHierarchyNodeId | — |
+| GEO_HIERARCHY_NODE_VALUE | LocationDetailsPEOGeoHierarchyNodeValue | — |
+| INVENTORY_ORGANIZATION_ID | LocationDetailsPEOInventoryOrganizationId | — |
+| LAST_UPDATE_DATE | LocationDetailsPEOLastUpdateDate | ✅ |
+| LOCATION_DETAILS_ID | LocationDetailsPEOLocationDetailsId | — |
+| LOCATION_ID | LocationDetailsPEOLocationId | — |
+| MAIN_ADDRESS_ID | LocationDetailsPEOMainAddressId | — |
+| MAINPHONE_AREA_CODE1 | LocationDetailsPEOMainphoneAreaCode1 | — |
+| MAINPHONE_COUNTRY_CODE1 | LocationDetailsPEOMainphoneCountryCode1 | — |
+| MAINPHONE_EXTENSION1 | LocationDetailsPEOMainphoneExtension1 | — |
+| MAINPHONE_SUBSCRIBER_NUM1 | LocationDetailsPEOMainphoneSubscriberNum1 | — |
+| OFFICE_SITE_FLAG | LocationDetailsPEOOfficeSiteFlag | — |
+| OFFICIAL_LANGUAGE_CODE | LocationDetailsPEOOfficialLanguageCode | — |
+| OTHERPHONE_AREA_CODE3 | LocationDetailsPEOOtherphoneAreaCode3 | — |
+| OTHERPHONE_COUNTRY_CODE3 | LocationDetailsPEOOtherphoneCountryCode3 | — |
+| OTHERPHONE_EXTENSION3 | LocationDetailsPEOOtherphoneExtension3 | — |
+| OTHERPHONE_SUBSCRIBER_NUM3 | LocationDetailsPEOOtherphoneSubscriberNum3 | — |
+| RECEIVING_SITE_FLAG | LocationDetailsPEOReceivingSiteFlag | — |
+| SHIP_TO_LOCATION_ID | LocationDetailsPEOShipToLocationId | — |
+| SHIP_TO_SITE_FLAG | LocationDetailsPEOShipToSiteFlag | — |
+| TELEPHONE_NUMBER_1 | LocationDetailsPEOTelephoneNumber1 | — |
+| TELEPHONE_NUMBER_2 | LocationDetailsPEOTelephoneNumber2 | — |
+| TELEPHONE_NUMBER_3 | LocationDetailsPEOTelephoneNumber3 | — |
+
+### [[excludedlocation4pvo_viewall|ExcludedLocation4PVO_Viewall]] (HCM · BICC: 3/34)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTIVE_STATUS | LocationDetailsPEOActiveStatus | — |
+| BILL_TO_SITE_FLAG | LocationDetailsPEOBillToSiteFlag | — |
+| business_group_id | LocationDetailsPEOBusinessGroupId | — |
+| DESIGNATED_RECEIVER_ID | LocationDetailsPEODesignatedReceiverId | — |
+| EFFECTIVE_END_DATE | LocationDetailsPEOEffectiveEndDate | ✅ |
+| EFFECTIVE_START_DATE | LocationDetailsPEOEffectiveStartDate | ✅ |
+| EMAIL_ADDRESS | LocationDetailsPEOEmailAddress | — |
+| FAX_AREA_CODE2 | LocationDetailsPEOFaxAreaCode2 | — |
+| FAX_COUNTRY_CODE2 | LocationDetailsPEOFaxCountryCode2 | — |
+| FAX_EXTENSION2 | LocationDetailsPEOFaxExtension2 | — |
+| FAX_SUBSCRIBER_NUM2 | LocationDetailsPEOFaxSubscriberNum2 | — |
+| GEO_HIERARCHY_NODE_ID | LocationDetailsPEOGeoHierarchyNodeId | — |
+| GEO_HIERARCHY_NODE_VALUE | LocationDetailsPEOGeoHierarchyNodeValue | — |
+| INVENTORY_ORGANIZATION_ID | LocationDetailsPEOInventoryOrganizationId | — |
+| LAST_UPDATE_DATE | LocationDetailsPEOLastUpdateDate | ✅ |
+| LOCATION_DETAILS_ID | LocationDetailsPEOLocationDetailsId | — |
+| LOCATION_ID | LocationDetailsPEOLocationId | — |
+| MAIN_ADDRESS_ID | LocationDetailsPEOMainAddressId | — |
+| MAINPHONE_AREA_CODE1 | LocationDetailsPEOMainphoneAreaCode1 | — |
+| MAINPHONE_COUNTRY_CODE1 | LocationDetailsPEOMainphoneCountryCode1 | — |
+| MAINPHONE_EXTENSION1 | LocationDetailsPEOMainphoneExtension1 | — |
+| MAINPHONE_SUBSCRIBER_NUM1 | LocationDetailsPEOMainphoneSubscriberNum1 | — |
+| OFFICE_SITE_FLAG | LocationDetailsPEOOfficeSiteFlag | — |
+| OFFICIAL_LANGUAGE_CODE | LocationDetailsPEOOfficialLanguageCode | — |
+| OTHERPHONE_AREA_CODE3 | LocationDetailsPEOOtherphoneAreaCode3 | — |
+| OTHERPHONE_COUNTRY_CODE3 | LocationDetailsPEOOtherphoneCountryCode3 | — |
+| OTHERPHONE_EXTENSION3 | LocationDetailsPEOOtherphoneExtension3 | — |
+| OTHERPHONE_SUBSCRIBER_NUM3 | LocationDetailsPEOOtherphoneSubscriberNum3 | — |
+| RECEIVING_SITE_FLAG | LocationDetailsPEOReceivingSiteFlag | — |
+| SHIP_TO_LOCATION_ID | LocationDetailsPEOShipToLocationId | — |
+| SHIP_TO_SITE_FLAG | LocationDetailsPEOShipToSiteFlag | — |
+| TELEPHONE_NUMBER_1 | LocationDetailsPEOTelephoneNumber1 | — |
+| TELEPHONE_NUMBER_2 | LocationDetailsPEOTelephoneNumber2 | — |
+| TELEPHONE_NUMBER_3 | LocationDetailsPEOTelephoneNumber3 | — |
+
+### [[globalpersonpvo|GlobalPersonPVO]] (HCM · BICC: 5/5)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| EFFECTIVE_END_DATE | LocationDetailsMgrPEOEffectiveEndDate | ✅ |
+| EFFECTIVE_START_DATE | LocationDetailsMgrPEOEffectiveStartDate | ✅ |
+| LAST_UPDATE_DATE | LocationDetailsMgrPEOLastUpdateDate | ✅ |
+| LOCATION_DETAILS_ID | LocationDetailsMgrPEOLocationDetailsId | ✅ |
+| LOCATION_NAME | LocationDetailsMgrPEOLocationName | ✅ |
+
+### [[globalpersonpvoviewall|GlobalPersonPVOViewAll]] (HCM · BICC: 3/5)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| EFFECTIVE_END_DATE | LocationDetailsMgrPEOEffectiveEndDate | — |
+| EFFECTIVE_START_DATE | LocationDetailsMgrPEOEffectiveStartDate | ✅ |
+| LAST_UPDATE_DATE | LocationDetailsMgrPEOLastUpdateDate | ✅ |
+| LOCATION_DETAILS_ID | LocationDetailsMgrPEOLocationDetailsId | — |
+| LOCATION_NAME | LocationDetailsMgrPEOLocationName | ✅ |
+
+### [[hrlocationspvo|HRLocationsPVO]] (HCM · BICC: 41/45)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTIVE_STATUS | LocationDetailsPEOActiveStatus | ✅ |
+| ANNUAL_WORKING_DURATION_UNITS | LocationDetailsPEOAnnualWorkingDurationUnits | — |
+| BILL_TO_SITE_FLAG | LocationDetailsPEOBillToSiteFlag | ✅ |
+| business_group_id | LocationDetailsPEOBusinessGroupId | ✅ |
+| CREATED_BY | LocationDetailsPEOCreatedBy | ✅ |
+| CREATION_DATE | LocationDetailsPEOCreationDate | ✅ |
+| DESCRIPTION | LocationDetailsPEODescription | ✅ |
+| DESIGNATED_RECEIVER_ID | LocationDetailsPEODesignatedReceiverId | ✅ |
+| EFFECTIVE_END_DATE | EffectiveEndDate | ✅ |
+| EFFECTIVE_START_DATE | EffectiveStartDate | ✅ |
+| EMAIL_ADDRESS | LocationDetailsPEOEmailAddress | ✅ |
+| FAX_AREA_CODE2 | LocationDetailsPEOFaxAreaCode2 | ✅ |
+| FAX_COUNTRY_CODE2 | LocationDetailsPEOFaxCountryCode2 | ✅ |
+| FAX_EXTENSION2 | LocationDetailsPEOFaxExtension2 | ✅ |
+| FAX_SUBSCRIBER_NUM2 | LocationDetailsPEOFaxSubscriberNum2 | ✅ |
+| GEO_HIERARCHY_NODE_ID | LocationDetailsPEOGeoHierarchyNodeId | ✅ |
+| GEO_HIERARCHY_NODE_VALUE | LocationDetailsPEOGeoHierarchyNodeValue | ✅ |
+| INVENTORY_ORGANIZATION_ID | LocationDetailsPEOInventoryOrganizationId | ✅ |
+| LAST_UPDATE_DATE | LocationDetailsPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LocationDetailsPEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | LocationDetailsPEOLastUpdatedBy | ✅ |
+| LOCATION_CODE | LocationDetailsPEOLocationCode | ✅ |
+| LOCATION_DETAILS_ID | LocationDetailsId | ✅ |
+| LOCATION_ID | LocationDetailsPEOLocationId | ✅ |
+| MAIN_ADDRESS_ID | LocationDetailsPEOMainAddressId | ✅ |
+| MAINPHONE_AREA_CODE1 | LocationDetailsPEOMainphoneAreaCode1 | ✅ |
+| MAINPHONE_COUNTRY_CODE1 | LocationDetailsPEOMainphoneCountryCode1 | ✅ |
+| MAINPHONE_EXTENSION1 | LocationDetailsPEOMainphoneExtension1 | ✅ |
+| MAINPHONE_SUBSCRIBER_NUM1 | LocationDetailsPEOMainphoneSubscriberNum1 | ✅ |
+| OBJECT_VERSION_NUMBER | LocationDetailsPEOObjectVersionNumber | ✅ |
+| OFFICE_SITE_FLAG | LocationDetailsPEOOfficeSiteFlag | ✅ |
+| OFFICIAL_LANGUAGE_CODE | LocationDetailsPEOOfficialLanguageCode | ✅ |
+| OTHERPHONE_AREA_CODE3 | LocationDetailsPEOOtherphoneAreaCode3 | ✅ |
+| OTHERPHONE_COUNTRY_CODE3 | LocationDetailsPEOOtherphoneCountryCode3 | ✅ |
+| OTHERPHONE_EXTENSION3 | LocationDetailsPEOOtherphoneExtension3 | ✅ |
+| OTHERPHONE_SUBSCRIBER_NUM3 | LocationDetailsPEOOtherphoneSubscriberNum3 | ✅ |
+| RECEIVING_SITE_FLAG | LocationDetailsPEOReceivingSiteFlag | ✅ |
+| SHIP_TO_LOCATION_ID | LocationDetailsPEOShipToLocationId | ✅ |
+| SHIP_TO_SITE_FLAG | LocationDetailsPEOShipToSiteFlag | ✅ |
+| STANDARD_WORKING_FREQUENCY | LocationDetailsPEOStandardWorkingFrequency | — |
+| STANDARD_WORKING_HOURS | LocationDetailsPEOStandardWorkingHours | — |
+| STD_ANNUAL_WORKING_DURATION | LocationDetailsPEOStdAnnualWorkingDuration | — |
+| TELEPHONE_NUMBER_1 | LocationDetailsPEOTelephoneNumber1 | ✅ |
+| TELEPHONE_NUMBER_2 | LocationDetailsPEOTelephoneNumber2 | ✅ |
+| TELEPHONE_NUMBER_3 | LocationDetailsPEOTelephoneNumber3 | ✅ |
+
+### [[hrlocationspvoviewall|HRLocationsPVOViewAll]] (HCM · BICC: 4/45)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTIVE_STATUS | LocationDetailsPEOActiveStatus | — |
+| ANNUAL_WORKING_DURATION_UNITS | LocationDetailsPEOAnnualWorkingDurationUnits | — |
+| BILL_TO_SITE_FLAG | LocationDetailsPEOBillToSiteFlag | — |
+| business_group_id | LocationDetailsPEOBusinessGroupId | — |
+| CREATED_BY | LocationDetailsPEOCreatedBy | — |
+| CREATION_DATE | LocationDetailsPEOCreationDate | — |
+| DESCRIPTION | LocationDetailsPEODescription | — |
+| DESIGNATED_RECEIVER_ID | LocationDetailsPEODesignatedReceiverId | — |
+| EFFECTIVE_END_DATE | EffectiveEndDate | ✅ |
+| EFFECTIVE_START_DATE | EffectiveStartDate | ✅ |
+| EMAIL_ADDRESS | LocationDetailsPEOEmailAddress | — |
+| FAX_AREA_CODE2 | LocationDetailsPEOFaxAreaCode2 | — |
+| FAX_COUNTRY_CODE2 | LocationDetailsPEOFaxCountryCode2 | — |
+| FAX_EXTENSION2 | LocationDetailsPEOFaxExtension2 | — |
+| FAX_SUBSCRIBER_NUM2 | LocationDetailsPEOFaxSubscriberNum2 | — |
+| GEO_HIERARCHY_NODE_ID | LocationDetailsPEOGeoHierarchyNodeId | — |
+| GEO_HIERARCHY_NODE_VALUE | LocationDetailsPEOGeoHierarchyNodeValue | — |
+| INVENTORY_ORGANIZATION_ID | LocationDetailsPEOInventoryOrganizationId | — |
+| LAST_UPDATE_DATE | LocationDetailsPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LocationDetailsPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | LocationDetailsPEOLastUpdatedBy | — |
+| LOCATION_CODE | LocationDetailsPEOLocationCode | — |
+| LOCATION_DETAILS_ID | LocationDetailsId | ✅ |
+| LOCATION_ID | LocationDetailsPEOLocationId | — |
+| MAIN_ADDRESS_ID | LocationDetailsPEOMainAddressId | — |
+| MAINPHONE_AREA_CODE1 | LocationDetailsPEOMainphoneAreaCode1 | — |
+| MAINPHONE_COUNTRY_CODE1 | LocationDetailsPEOMainphoneCountryCode1 | — |
+| MAINPHONE_EXTENSION1 | LocationDetailsPEOMainphoneExtension1 | — |
+| MAINPHONE_SUBSCRIBER_NUM1 | LocationDetailsPEOMainphoneSubscriberNum1 | — |
+| OBJECT_VERSION_NUMBER | LocationDetailsPEOObjectVersionNumber | — |
+| OFFICE_SITE_FLAG | LocationDetailsPEOOfficeSiteFlag | — |
+| OFFICIAL_LANGUAGE_CODE | LocationDetailsPEOOfficialLanguageCode | — |
+| OTHERPHONE_AREA_CODE3 | LocationDetailsPEOOtherphoneAreaCode3 | — |
+| OTHERPHONE_COUNTRY_CODE3 | LocationDetailsPEOOtherphoneCountryCode3 | — |
+| OTHERPHONE_EXTENSION3 | LocationDetailsPEOOtherphoneExtension3 | — |
+| OTHERPHONE_SUBSCRIBER_NUM3 | LocationDetailsPEOOtherphoneSubscriberNum3 | — |
+| RECEIVING_SITE_FLAG | LocationDetailsPEOReceivingSiteFlag | — |
+| SHIP_TO_LOCATION_ID | LocationDetailsPEOShipToLocationId | — |
+| SHIP_TO_SITE_FLAG | LocationDetailsPEOShipToSiteFlag | — |
+| STANDARD_WORKING_FREQUENCY | LocationDetailsPEOStandardWorkingFrequency | — |
+| STANDARD_WORKING_HOURS | LocationDetailsPEOStandardWorkingHours | — |
+| STD_ANNUAL_WORKING_DURATION | LocationDetailsPEOStdAnnualWorkingDuration | — |
+| TELEPHONE_NUMBER_1 | LocationDetailsPEOTelephoneNumber1 | — |
+| TELEPHONE_NUMBER_2 | LocationDetailsPEOTelephoneNumber2 | — |
+| TELEPHONE_NUMBER_3 | LocationDetailsPEOTelephoneNumber3 | — |
+
+### [[invoicelinepvo|InvoiceLinePVO]] (AP · BICC: 1/4)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| EFFECTIVE_END_DATE | LocDetailsEffectiveEndDate | — |
+| EFFECTIVE_START_DATE | LocDetailsEffectiveStartDate | — |
+| LOCATION_DETAILS_ID | LocDetailsLocationDetailsId | — |
+| LOCATION_NAME | LocDetailsLocationName | ✅ |
+
+### [[locationdetailspvoviewall|LocationDetailsPVOViewAll]] (HCM · BICC: 5/47)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| AC_LOCATION_CODE | AcLocationCode | — |
+| ACTIVE_STATUS | LocationDetailsPEOActiveStatus | — |
+| ANNUAL_WORKING_DURATION_UNITS | LocationDetailsPEOAnnualWorkingDurationUnits | — |
+| BILL_TO_SITE_FLAG | LocationDetailsPEOBillToSiteFlag | — |
+| business_group_id | LocationDetailsPEOBusinessGroupId | — |
+| CREATED_BY | LocationDetailsPEOCreatedBy | — |
+| CREATION_DATE | LocationDetailsPEOCreationDate | — |
+| DESCRIPTION | Description | — |
+| DESIGNATED_RECEIVER_ID | LocationDetailsPEODesignatedReceiverId | — |
+| EFFECTIVE_END_DATE | EffectiveEndDate | ✅ |
+| EFFECTIVE_START_DATE | EffectiveStartDate | ✅ |
+| EMAIL_ADDRESS | LocationDetailsPEOEmailAddress | — |
+| FAX_AREA_CODE2 | LocationDetailsPEOFaxAreaCode2 | — |
+| FAX_COUNTRY_CODE2 | LocationDetailsPEOFaxCountryCode2 | — |
+| FAX_EXTENSION2 | LocationDetailsPEOFaxExtension2 | — |
+| FAX_SUBSCRIBER_NUM2 | LocationDetailsPEOFaxSubscriberNum2 | — |
+| GEO_HIERARCHY_NODE_ID | LocationDetailsPEOGeoHierarchyNodeId | — |
+| GEO_HIERARCHY_NODE_VALUE | LocationDetailsPEOGeoHierarchyNodeValue | — |
+| INVENTORY_ORGANIZATION_ID | LocationDetailsPEOInventoryOrganizationId | — |
+| LAST_UPDATE_DATE | LocationDetailsPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LocationDetailsPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | LocationDetailsPEOLastUpdatedBy | — |
+| LOCATION_CODE | LocationCode | — |
+| LOCATION_DETAILS_ID | LocationDetailsId | ✅ |
+| LOCATION_ID | LocationDetailsPEOLocationId | — |
+| LOCATION_NAME | LocationName | ✅ |
+| MAIN_ADDRESS_ID | LocationDetailsPEOMainAddressId | — |
+| MAINPHONE_AREA_CODE1 | LocationDetailsPEOMainphoneAreaCode1 | — |
+| MAINPHONE_COUNTRY_CODE1 | LocationDetailsPEOMainphoneCountryCode1 | — |
+| MAINPHONE_EXTENSION1 | LocationDetailsPEOMainphoneExtension1 | — |
+| MAINPHONE_SUBSCRIBER_NUM1 | LocationDetailsPEOMainphoneSubscriberNum1 | — |
+| OBJECT_VERSION_NUMBER | LocationDetailsPEOObjectVersionNumber | — |
+| OFFICE_SITE_FLAG | LocationDetailsPEOOfficeSiteFlag | — |
+| OFFICIAL_LANGUAGE_CODE | LocationDetailsPEOOfficialLanguageCode | — |
+| OTHERPHONE_AREA_CODE3 | LocationDetailsPEOOtherphoneAreaCode3 | — |
+| OTHERPHONE_COUNTRY_CODE3 | LocationDetailsPEOOtherphoneCountryCode3 | — |
+| OTHERPHONE_EXTENSION3 | LocationDetailsPEOOtherphoneExtension3 | — |
+| OTHERPHONE_SUBSCRIBER_NUM3 | LocationDetailsPEOOtherphoneSubscriberNum3 | — |
+| RECEIVING_SITE_FLAG | LocationDetailsPEOReceivingSiteFlag | — |
+| SHIP_TO_LOCATION_ID | LocationDetailsPEOShipToLocationId | — |
+| SHIP_TO_SITE_FLAG | LocationDetailsPEOShipToSiteFlag | — |
+| STANDARD_WORKING_FREQUENCY | LocationDetailsPEOStandardWorkingFrequency | — |
+| STANDARD_WORKING_HOURS | LocationDetailsPEOStandardWorkingHours | — |
+| STD_ANNUAL_WORKING_DURATION | LocationDetailsPEOStdAnnualWorkingDuration | — |
+| TELEPHONE_NUMBER_1 | LocationDetailsPEOTelephoneNumber1 | — |
+| TELEPHONE_NUMBER_2 | LocationDetailsPEOTelephoneNumber2 | — |
+| TELEPHONE_NUMBER_3 | LocationDetailsPEOTelephoneNumber3 | — |
+
+### [[locationdetailstranslationpvo|LocationDetailsTranslationPVO]] (HCM · BICC: 4/39)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTIVE_STATUS | LocationDetailsPEOActiveStatus | — |
+| BILL_TO_SITE_FLAG | LocationDetailsPEOBillToSiteFlag | — |
+| business_group_id | LocationDetailsPEOBusinessGroupId | — |
+| CREATED_BY | LocationDetailsPEOCreatedBy | — |
+| CREATION_DATE | LocationDetailsPEOCreationDate | — |
+| DESIGNATED_RECEIVER_ID | LocationDetailsPEODesignatedReceiverId | — |
+| EFFECTIVE_END_DATE | LocationDetailsPEOEffectiveEndDate | — |
+| EFFECTIVE_START_DATE | LocationDetailsPEOEffectiveStartDate | ✅ |
+| EMAIL_ADDRESS | LocationDetailsPEOEmailAddress | — |
+| FAX_AREA_CODE2 | LocationDetailsPEOFaxAreaCode2 | — |
+| FAX_COUNTRY_CODE2 | LocationDetailsPEOFaxCountryCode2 | — |
+| FAX_EXTENSION2 | LocationDetailsPEOFaxExtension2 | — |
+| FAX_SUBSCRIBER_NUM2 | LocationDetailsPEOFaxSubscriberNum2 | — |
+| GEO_HIERARCHY_NODE_ID | LocationDetailsPEOGeoHierarchyNodeId | — |
+| GEO_HIERARCHY_NODE_VALUE | LocationDetailsPEOGeoHierarchyNodeValue | — |
+| INVENTORY_ORGANIZATION_ID | LocationDetailsPEOInventoryOrganizationId | — |
+| LAST_UPDATE_DATE | LocationDetailsPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LocationDetailsPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | LocationDetailsPEOLastUpdatedBy | — |
+| LOCATION_DETAILS_ID | LocationDetailsPEOLocationDetailsId | — |
+| LOCATION_ID | LocationDetailsPEOLocationId | ✅ |
+| MAIN_ADDRESS_ID | LocationDetailsPEOMainAddressId | — |
+| MAINPHONE_AREA_CODE1 | LocationDetailsPEOMainphoneAreaCode1 | — |
+| MAINPHONE_COUNTRY_CODE1 | LocationDetailsPEOMainphoneCountryCode1 | — |
+| MAINPHONE_EXTENSION1 | LocationDetailsPEOMainphoneExtension1 | — |
+| MAINPHONE_SUBSCRIBER_NUM1 | LocationDetailsPEOMainphoneSubscriberNum1 | — |
+| OBJECT_VERSION_NUMBER | LocationDetailsPEOObjectVersionNumber | — |
+| OFFICE_SITE_FLAG | LocationDetailsPEOOfficeSiteFlag | — |
+| OFFICIAL_LANGUAGE_CODE | LocationDetailsPEOOfficialLanguageCode | — |
+| OTHERPHONE_AREA_CODE3 | LocationDetailsPEOOtherphoneAreaCode3 | — |
+| OTHERPHONE_COUNTRY_CODE3 | LocationDetailsPEOOtherphoneCountryCode3 | — |
+| OTHERPHONE_EXTENSION3 | LocationDetailsPEOOtherphoneExtension3 | — |
+| OTHERPHONE_SUBSCRIBER_NUM3 | LocationDetailsPEOOtherphoneSubscriberNum3 | — |
+| RECEIVING_SITE_FLAG | LocationDetailsPEOReceivingSiteFlag | — |
+| SHIP_TO_LOCATION_ID | LocationDetailsPEOShipToLocationId | — |
+| SHIP_TO_SITE_FLAG | LocationDetailsPEOShipToSiteFlag | ✅ |
+| TELEPHONE_NUMBER_1 | LocationDetailsPEOTelephoneNumber1 | — |
+| TELEPHONE_NUMBER_2 | LocationDetailsPEOTelephoneNumber2 | — |
+| TELEPHONE_NUMBER_3 | LocationDetailsPEOTelephoneNumber3 | — |
+
+### [[locationdetailstranslationpvoviewall|LocationDetailsTranslationPVOViewAll]] (HCM · BICC: 2/39)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTIVE_STATUS | LocationDetailsPEOActiveStatus | — |
+| BILL_TO_SITE_FLAG | LocationDetailsPEOBillToSiteFlag | — |
+| business_group_id | LocationDetailsPEOBusinessGroupId | — |
+| CREATED_BY | LocationDetailsPEOCreatedBy | — |
+| CREATION_DATE | LocationDetailsPEOCreationDate | — |
+| DESIGNATED_RECEIVER_ID | LocationDetailsPEODesignatedReceiverId | — |
+| EFFECTIVE_END_DATE | LocationDetailsPEOEffectiveEndDate | — |
+| EFFECTIVE_START_DATE | LocationDetailsPEOEffectiveStartDate | ✅ |
+| EMAIL_ADDRESS | LocationDetailsPEOEmailAddress | — |
+| FAX_AREA_CODE2 | LocationDetailsPEOFaxAreaCode2 | — |
+| FAX_COUNTRY_CODE2 | LocationDetailsPEOFaxCountryCode2 | — |
+| FAX_EXTENSION2 | LocationDetailsPEOFaxExtension2 | — |
+| FAX_SUBSCRIBER_NUM2 | LocationDetailsPEOFaxSubscriberNum2 | — |
+| GEO_HIERARCHY_NODE_ID | LocationDetailsPEOGeoHierarchyNodeId | — |
+| GEO_HIERARCHY_NODE_VALUE | LocationDetailsPEOGeoHierarchyNodeValue | — |
+| INVENTORY_ORGANIZATION_ID | LocationDetailsPEOInventoryOrganizationId | — |
+| LAST_UPDATE_DATE | LocationDetailsPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LocationDetailsPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | LocationDetailsPEOLastUpdatedBy | — |
+| LOCATION_DETAILS_ID | LocationDetailsPEOLocationDetailsId | — |
+| LOCATION_ID | LocationDetailsPEOLocationId | — |
+| MAIN_ADDRESS_ID | LocationDetailsPEOMainAddressId | — |
+| MAINPHONE_AREA_CODE1 | LocationDetailsPEOMainphoneAreaCode1 | — |
+| MAINPHONE_COUNTRY_CODE1 | LocationDetailsPEOMainphoneCountryCode1 | — |
+| MAINPHONE_EXTENSION1 | LocationDetailsPEOMainphoneExtension1 | — |
+| MAINPHONE_SUBSCRIBER_NUM1 | LocationDetailsPEOMainphoneSubscriberNum1 | — |
+| OBJECT_VERSION_NUMBER | LocationDetailsPEOObjectVersionNumber | — |
+| OFFICE_SITE_FLAG | LocationDetailsPEOOfficeSiteFlag | — |
+| OFFICIAL_LANGUAGE_CODE | LocationDetailsPEOOfficialLanguageCode | — |
+| OTHERPHONE_AREA_CODE3 | LocationDetailsPEOOtherphoneAreaCode3 | — |
+| OTHERPHONE_COUNTRY_CODE3 | LocationDetailsPEOOtherphoneCountryCode3 | — |
+| OTHERPHONE_EXTENSION3 | LocationDetailsPEOOtherphoneExtension3 | — |
+| OTHERPHONE_SUBSCRIBER_NUM3 | LocationDetailsPEOOtherphoneSubscriberNum3 | — |
+| RECEIVING_SITE_FLAG | LocationDetailsPEOReceivingSiteFlag | — |
+| SHIP_TO_LOCATION_ID | LocationDetailsPEOShipToLocationId | — |
+| SHIP_TO_SITE_FLAG | LocationDetailsPEOShipToSiteFlag | — |
+| TELEPHONE_NUMBER_1 | LocationDetailsPEOTelephoneNumber1 | — |
+| TELEPHONE_NUMBER_2 | LocationDetailsPEOTelephoneNumber2 | — |
+| TELEPHONE_NUMBER_3 | LocationDetailsPEOTelephoneNumber3 | — |
+
+### [[locationrefpvo|LocationRefPVO]] (HCM · BICC: 3/23)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTIVE_STATUS | LocationDetailsPEOActiveStatus | — |
+| business_group_id | LocationDetailsPEOBusinessGroupId | — |
+| CREATED_BY | LocationDetailsPEOCreatedBy | — |
+| CREATION_DATE | LocationDetailsPEOCreationDate | — |
+| EFFECTIVE_END_DATE | LocationDetailsPEOEffectiveEndDate | — |
+| EFFECTIVE_START_DATE | LocationDetailsPEOEffectiveStartDate | ✅ |
+| GEO_HIERARCHY_NODE_ID | LocationDetailsPEOGeoHierarchyNodeId | — |
+| GEO_HIERARCHY_NODE_VALUE | LocationDetailsPEOGeoHierarchyNodeValue | — |
+| LAST_UPDATE_DATE | LocationDetailsPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LocationDetailsPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | LocationDetailsPEOLastUpdatedBy | — |
+| LOCATION_DETAILS_ID | LocationDetailsPEOLocationDetailsId | — |
+| LOCATION_ID | LocationDetailsPEOLocationId | ✅ |
+| MAIN_ADDRESS_ID | LocationDetailsPEOMainAddressId | — |
+| OBJECT_VERSION_NUMBER | LocationDetailsPEOObjectVersionNumber | — |
+| OFFICE_SITE_FLAG | LocationDetailsPEOOfficeSiteFlag | — |
+| OFFICIAL_LANGUAGE_CODE | LocationDetailsPEOOfficialLanguageCode | — |
+| RECEIVING_SITE_FLAG | LocationDetailsPEOReceivingSiteFlag | — |
+| SHIP_TO_LOCATION_ID | LocationDetailsPEOShipToLocationId | — |
+| SHIP_TO_SITE_FLAG | LocationDetailsPEOShipToSiteFlag | — |
+| TELEPHONE_NUMBER_1 | LocationDetailsPEOTelephoneNumber1 | — |
+| TELEPHONE_NUMBER_2 | LocationDetailsPEOTelephoneNumber2 | — |
+| TELEPHONE_NUMBER_3 | LocationDetailsPEOTelephoneNumber3 | — |
+
+### [[personrefpvo|PersonRefPVO]] (HCM · BICC: 2/4)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| EFFECTIVE_END_DATE | LocationDetailsPEOEffectiveEndDate | — |
+| EFFECTIVE_START_DATE | LocationDetailsPEOEffectiveStartDate | ✅ |
+| LOCATION_DETAILS_ID | LocationDetailsPEOLocationDetailsId | — |
+| LOCATION_NAME | LocationDetailsPEOLocationName | ✅ |
+
+### [[preferredlocation1pvo|PreferredLocation1PVO]] (HCM · BICC: 3/34)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTIVE_STATUS | LocationDetailsPEOActiveStatus | — |
+| BILL_TO_SITE_FLAG | LocationDetailsPEOBillToSiteFlag | — |
+| business_group_id | LocationDetailsPEOBusinessGroupId | — |
+| DESIGNATED_RECEIVER_ID | LocationDetailsPEODesignatedReceiverId | — |
+| EFFECTIVE_END_DATE | LocationDetailsPEOEffectiveEndDate | ✅ |
+| EFFECTIVE_START_DATE | LocationDetailsPEOEffectiveStartDate | ✅ |
+| EMAIL_ADDRESS | LocationDetailsPEOEmailAddress | — |
+| FAX_AREA_CODE2 | LocationDetailsPEOFaxAreaCode2 | — |
+| FAX_COUNTRY_CODE2 | LocationDetailsPEOFaxCountryCode2 | — |
+| FAX_EXTENSION2 | LocationDetailsPEOFaxExtension2 | — |
+| FAX_SUBSCRIBER_NUM2 | LocationDetailsPEOFaxSubscriberNum2 | — |
+| GEO_HIERARCHY_NODE_ID | LocationDetailsPEOGeoHierarchyNodeId | — |
+| GEO_HIERARCHY_NODE_VALUE | LocationDetailsPEOGeoHierarchyNodeValue | — |
+| INVENTORY_ORGANIZATION_ID | LocationDetailsPEOInventoryOrganizationId | — |
+| LAST_UPDATE_DATE | LocationDetailsPEOLastUpdateDate | ✅ |
+| LOCATION_DETAILS_ID | LocationDetailsPEOLocationDetailsId | — |
+| LOCATION_ID | LocationDetailsPEOLocationId | — |
+| MAIN_ADDRESS_ID | LocationDetailsPEOMainAddressId | — |
+| MAINPHONE_AREA_CODE1 | LocationDetailsPEOMainphoneAreaCode1 | — |
+| MAINPHONE_COUNTRY_CODE1 | LocationDetailsPEOMainphoneCountryCode1 | — |
+| MAINPHONE_EXTENSION1 | LocationDetailsPEOMainphoneExtension1 | — |
+| MAINPHONE_SUBSCRIBER_NUM1 | LocationDetailsPEOMainphoneSubscriberNum1 | — |
+| OFFICE_SITE_FLAG | LocationDetailsPEOOfficeSiteFlag | — |
+| OFFICIAL_LANGUAGE_CODE | LocationDetailsPEOOfficialLanguageCode | — |
+| OTHERPHONE_AREA_CODE3 | LocationDetailsPEOOtherphoneAreaCode3 | — |
+| OTHERPHONE_COUNTRY_CODE3 | LocationDetailsPEOOtherphoneCountryCode3 | — |
+| OTHERPHONE_EXTENSION3 | LocationDetailsPEOOtherphoneExtension3 | — |
+| OTHERPHONE_SUBSCRIBER_NUM3 | LocationDetailsPEOOtherphoneSubscriberNum3 | — |
+| RECEIVING_SITE_FLAG | LocationDetailsPEOReceivingSiteFlag | — |
+| SHIP_TO_LOCATION_ID | LocationDetailsPEOShipToLocationId | — |
+| SHIP_TO_SITE_FLAG | LocationDetailsPEOShipToSiteFlag | — |
+| TELEPHONE_NUMBER_1 | LocationDetailsPEOTelephoneNumber1 | — |
+| TELEPHONE_NUMBER_2 | LocationDetailsPEOTelephoneNumber2 | — |
+| TELEPHONE_NUMBER_3 | LocationDetailsPEOTelephoneNumber3 | — |
+
+### [[preferredlocation1pvo_viewall|PreferredLocation1PVO_Viewall]] (HCM · BICC: 3/34)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTIVE_STATUS | LocationDetailsPEOActiveStatus | — |
+| BILL_TO_SITE_FLAG | LocationDetailsPEOBillToSiteFlag | — |
+| business_group_id | LocationDetailsPEOBusinessGroupId | — |
+| DESIGNATED_RECEIVER_ID | LocationDetailsPEODesignatedReceiverId | — |
+| EFFECTIVE_END_DATE | LocationDetailsPEOEffectiveEndDate | ✅ |
+| EFFECTIVE_START_DATE | LocationDetailsPEOEffectiveStartDate | ✅ |
+| EMAIL_ADDRESS | LocationDetailsPEOEmailAddress | — |
+| FAX_AREA_CODE2 | LocationDetailsPEOFaxAreaCode2 | — |
+| FAX_COUNTRY_CODE2 | LocationDetailsPEOFaxCountryCode2 | — |
+| FAX_EXTENSION2 | LocationDetailsPEOFaxExtension2 | — |
+| FAX_SUBSCRIBER_NUM2 | LocationDetailsPEOFaxSubscriberNum2 | — |
+| GEO_HIERARCHY_NODE_ID | LocationDetailsPEOGeoHierarchyNodeId | — |
+| GEO_HIERARCHY_NODE_VALUE | LocationDetailsPEOGeoHierarchyNodeValue | — |
+| INVENTORY_ORGANIZATION_ID | LocationDetailsPEOInventoryOrganizationId | — |
+| LAST_UPDATE_DATE | LocationDetailsPEOLastUpdateDate | ✅ |
+| LOCATION_DETAILS_ID | LocationDetailsPEOLocationDetailsId | — |
+| LOCATION_ID | LocationDetailsPEOLocationId | — |
+| MAIN_ADDRESS_ID | LocationDetailsPEOMainAddressId | — |
+| MAINPHONE_AREA_CODE1 | LocationDetailsPEOMainphoneAreaCode1 | — |
+| MAINPHONE_COUNTRY_CODE1 | LocationDetailsPEOMainphoneCountryCode1 | — |
+| MAINPHONE_EXTENSION1 | LocationDetailsPEOMainphoneExtension1 | — |
+| MAINPHONE_SUBSCRIBER_NUM1 | LocationDetailsPEOMainphoneSubscriberNum1 | — |
+| OFFICE_SITE_FLAG | LocationDetailsPEOOfficeSiteFlag | — |
+| OFFICIAL_LANGUAGE_CODE | LocationDetailsPEOOfficialLanguageCode | — |
+| OTHERPHONE_AREA_CODE3 | LocationDetailsPEOOtherphoneAreaCode3 | — |
+| OTHERPHONE_COUNTRY_CODE3 | LocationDetailsPEOOtherphoneCountryCode3 | — |
+| OTHERPHONE_EXTENSION3 | LocationDetailsPEOOtherphoneExtension3 | — |
+| OTHERPHONE_SUBSCRIBER_NUM3 | LocationDetailsPEOOtherphoneSubscriberNum3 | — |
+| RECEIVING_SITE_FLAG | LocationDetailsPEOReceivingSiteFlag | — |
+| SHIP_TO_LOCATION_ID | LocationDetailsPEOShipToLocationId | — |
+| SHIP_TO_SITE_FLAG | LocationDetailsPEOShipToSiteFlag | — |
+| TELEPHONE_NUMBER_1 | LocationDetailsPEOTelephoneNumber1 | — |
+| TELEPHONE_NUMBER_2 | LocationDetailsPEOTelephoneNumber2 | — |
+| TELEPHONE_NUMBER_3 | LocationDetailsPEOTelephoneNumber3 | — |
+
+### [[preferredlocation2pvo|PreferredLocation2PVO]] (HCM · BICC: 3/34)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTIVE_STATUS | LocationDetailsPEOActiveStatus | — |
+| BILL_TO_SITE_FLAG | LocationDetailsPEOBillToSiteFlag | — |
+| business_group_id | LocationDetailsPEOBusinessGroupId | — |
+| DESIGNATED_RECEIVER_ID | LocationDetailsPEODesignatedReceiverId | — |
+| EFFECTIVE_END_DATE | LocationDetailsPEOEffectiveEndDate | ✅ |
+| EFFECTIVE_START_DATE | LocationDetailsPEOEffectiveStartDate | ✅ |
+| EMAIL_ADDRESS | LocationDetailsPEOEmailAddress | — |
+| FAX_AREA_CODE2 | LocationDetailsPEOFaxAreaCode2 | — |
+| FAX_COUNTRY_CODE2 | LocationDetailsPEOFaxCountryCode2 | — |
+| FAX_EXTENSION2 | LocationDetailsPEOFaxExtension2 | — |
+| FAX_SUBSCRIBER_NUM2 | LocationDetailsPEOFaxSubscriberNum2 | — |
+| GEO_HIERARCHY_NODE_ID | LocationDetailsPEOGeoHierarchyNodeId | — |
+| GEO_HIERARCHY_NODE_VALUE | LocationDetailsPEOGeoHierarchyNodeValue | — |
+| INVENTORY_ORGANIZATION_ID | LocationDetailsPEOInventoryOrganizationId | — |
+| LAST_UPDATE_DATE | LocationDetailsPEOLastUpdateDate | ✅ |
+| LOCATION_DETAILS_ID | LocationDetailsPEOLocationDetailsId | — |
+| LOCATION_ID | LocationDetailsPEOLocationId | — |
+| MAIN_ADDRESS_ID | LocationDetailsPEOMainAddressId | — |
+| MAINPHONE_AREA_CODE1 | LocationDetailsPEOMainphoneAreaCode1 | — |
+| MAINPHONE_COUNTRY_CODE1 | LocationDetailsPEOMainphoneCountryCode1 | — |
+| MAINPHONE_EXTENSION1 | LocationDetailsPEOMainphoneExtension1 | — |
+| MAINPHONE_SUBSCRIBER_NUM1 | LocationDetailsPEOMainphoneSubscriberNum1 | — |
+| OFFICE_SITE_FLAG | LocationDetailsPEOOfficeSiteFlag | — |
+| OFFICIAL_LANGUAGE_CODE | LocationDetailsPEOOfficialLanguageCode | — |
+| OTHERPHONE_AREA_CODE3 | LocationDetailsPEOOtherphoneAreaCode3 | — |
+| OTHERPHONE_COUNTRY_CODE3 | LocationDetailsPEOOtherphoneCountryCode3 | — |
+| OTHERPHONE_EXTENSION3 | LocationDetailsPEOOtherphoneExtension3 | — |
+| OTHERPHONE_SUBSCRIBER_NUM3 | LocationDetailsPEOOtherphoneSubscriberNum3 | — |
+| RECEIVING_SITE_FLAG | LocationDetailsPEOReceivingSiteFlag | — |
+| SHIP_TO_LOCATION_ID | LocationDetailsPEOShipToLocationId | — |
+| SHIP_TO_SITE_FLAG | LocationDetailsPEOShipToSiteFlag | — |
+| TELEPHONE_NUMBER_1 | LocationDetailsPEOTelephoneNumber1 | — |
+| TELEPHONE_NUMBER_2 | LocationDetailsPEOTelephoneNumber2 | — |
+| TELEPHONE_NUMBER_3 | LocationDetailsPEOTelephoneNumber3 | — |
+
+### [[preferredlocation2pvo_viewall|PreferredLocation2PVO_Viewall]] (HCM · BICC: 3/34)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTIVE_STATUS | LocationDetailsPEOActiveStatus | — |
+| BILL_TO_SITE_FLAG | LocationDetailsPEOBillToSiteFlag | — |
+| business_group_id | LocationDetailsPEOBusinessGroupId | — |
+| DESIGNATED_RECEIVER_ID | LocationDetailsPEODesignatedReceiverId | — |
+| EFFECTIVE_END_DATE | LocationDetailsPEOEffectiveEndDate | ✅ |
+| EFFECTIVE_START_DATE | LocationDetailsPEOEffectiveStartDate | ✅ |
+| EMAIL_ADDRESS | LocationDetailsPEOEmailAddress | — |
+| FAX_AREA_CODE2 | LocationDetailsPEOFaxAreaCode2 | — |
+| FAX_COUNTRY_CODE2 | LocationDetailsPEOFaxCountryCode2 | — |
+| FAX_EXTENSION2 | LocationDetailsPEOFaxExtension2 | — |
+| FAX_SUBSCRIBER_NUM2 | LocationDetailsPEOFaxSubscriberNum2 | — |
+| GEO_HIERARCHY_NODE_ID | LocationDetailsPEOGeoHierarchyNodeId | — |
+| GEO_HIERARCHY_NODE_VALUE | LocationDetailsPEOGeoHierarchyNodeValue | — |
+| INVENTORY_ORGANIZATION_ID | LocationDetailsPEOInventoryOrganizationId | — |
+| LAST_UPDATE_DATE | LocationDetailsPEOLastUpdateDate | ✅ |
+| LOCATION_DETAILS_ID | LocationDetailsPEOLocationDetailsId | — |
+| LOCATION_ID | LocationDetailsPEOLocationId | — |
+| MAIN_ADDRESS_ID | LocationDetailsPEOMainAddressId | — |
+| MAINPHONE_AREA_CODE1 | LocationDetailsPEOMainphoneAreaCode1 | — |
+| MAINPHONE_COUNTRY_CODE1 | LocationDetailsPEOMainphoneCountryCode1 | — |
+| MAINPHONE_EXTENSION1 | LocationDetailsPEOMainphoneExtension1 | — |
+| MAINPHONE_SUBSCRIBER_NUM1 | LocationDetailsPEOMainphoneSubscriberNum1 | — |
+| OFFICE_SITE_FLAG | LocationDetailsPEOOfficeSiteFlag | — |
+| OFFICIAL_LANGUAGE_CODE | LocationDetailsPEOOfficialLanguageCode | — |
+| OTHERPHONE_AREA_CODE3 | LocationDetailsPEOOtherphoneAreaCode3 | — |
+| OTHERPHONE_COUNTRY_CODE3 | LocationDetailsPEOOtherphoneCountryCode3 | — |
+| OTHERPHONE_EXTENSION3 | LocationDetailsPEOOtherphoneExtension3 | — |
+| OTHERPHONE_SUBSCRIBER_NUM3 | LocationDetailsPEOOtherphoneSubscriberNum3 | — |
+| RECEIVING_SITE_FLAG | LocationDetailsPEOReceivingSiteFlag | — |
+| SHIP_TO_LOCATION_ID | LocationDetailsPEOShipToLocationId | — |
+| SHIP_TO_SITE_FLAG | LocationDetailsPEOShipToSiteFlag | — |
+| TELEPHONE_NUMBER_1 | LocationDetailsPEOTelephoneNumber1 | — |
+| TELEPHONE_NUMBER_2 | LocationDetailsPEOTelephoneNumber2 | — |
+| TELEPHONE_NUMBER_3 | LocationDetailsPEOTelephoneNumber3 | — |
+
+### [[preferredlocation3pvo|PreferredLocation3PVO]] (HCM · BICC: 3/34)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTIVE_STATUS | LocationDetailsPEOActiveStatus | — |
+| BILL_TO_SITE_FLAG | LocationDetailsPEOBillToSiteFlag | — |
+| business_group_id | LocationDetailsPEOBusinessGroupId | — |
+| DESIGNATED_RECEIVER_ID | LocationDetailsPEODesignatedReceiverId | — |
+| EFFECTIVE_END_DATE | LocationDetailsPEOEffectiveEndDate | ✅ |
+| EFFECTIVE_START_DATE | LocationDetailsPEOEffectiveStartDate | ✅ |
+| EMAIL_ADDRESS | LocationDetailsPEOEmailAddress | — |
+| FAX_AREA_CODE2 | LocationDetailsPEOFaxAreaCode2 | — |
+| FAX_COUNTRY_CODE2 | LocationDetailsPEOFaxCountryCode2 | — |
+| FAX_EXTENSION2 | LocationDetailsPEOFaxExtension2 | — |
+| FAX_SUBSCRIBER_NUM2 | LocationDetailsPEOFaxSubscriberNum2 | — |
+| GEO_HIERARCHY_NODE_ID | LocationDetailsPEOGeoHierarchyNodeId | — |
+| GEO_HIERARCHY_NODE_VALUE | LocationDetailsPEOGeoHierarchyNodeValue | — |
+| INVENTORY_ORGANIZATION_ID | LocationDetailsPEOInventoryOrganizationId | — |
+| LAST_UPDATE_DATE | LocationDetailsPEOLastUpdateDate | ✅ |
+| LOCATION_DETAILS_ID | LocationDetailsPEOLocationDetailsId | — |
+| LOCATION_ID | LocationDetailsPEOLocationId | — |
+| MAIN_ADDRESS_ID | LocationDetailsPEOMainAddressId | — |
+| MAINPHONE_AREA_CODE1 | LocationDetailsPEOMainphoneAreaCode1 | — |
+| MAINPHONE_COUNTRY_CODE1 | LocationDetailsPEOMainphoneCountryCode1 | — |
+| MAINPHONE_EXTENSION1 | LocationDetailsPEOMainphoneExtension1 | — |
+| MAINPHONE_SUBSCRIBER_NUM1 | LocationDetailsPEOMainphoneSubscriberNum1 | — |
+| OFFICE_SITE_FLAG | LocationDetailsPEOOfficeSiteFlag | — |
+| OFFICIAL_LANGUAGE_CODE | LocationDetailsPEOOfficialLanguageCode | — |
+| OTHERPHONE_AREA_CODE3 | LocationDetailsPEOOtherphoneAreaCode3 | — |
+| OTHERPHONE_COUNTRY_CODE3 | LocationDetailsPEOOtherphoneCountryCode3 | — |
+| OTHERPHONE_EXTENSION3 | LocationDetailsPEOOtherphoneExtension3 | — |
+| OTHERPHONE_SUBSCRIBER_NUM3 | LocationDetailsPEOOtherphoneSubscriberNum3 | — |
+| RECEIVING_SITE_FLAG | LocationDetailsPEOReceivingSiteFlag | — |
+| SHIP_TO_LOCATION_ID | LocationDetailsPEOShipToLocationId | — |
+| SHIP_TO_SITE_FLAG | LocationDetailsPEOShipToSiteFlag | — |
+| TELEPHONE_NUMBER_1 | LocationDetailsPEOTelephoneNumber1 | — |
+| TELEPHONE_NUMBER_2 | LocationDetailsPEOTelephoneNumber2 | — |
+| TELEPHONE_NUMBER_3 | LocationDetailsPEOTelephoneNumber3 | — |
+
+### [[preferredlocation3pvo_viewall|PreferredLocation3PVO_Viewall]] (HCM · BICC: 3/34)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTIVE_STATUS | LocationDetailsPEOActiveStatus | — |
+| BILL_TO_SITE_FLAG | LocationDetailsPEOBillToSiteFlag | — |
+| business_group_id | LocationDetailsPEOBusinessGroupId | — |
+| DESIGNATED_RECEIVER_ID | LocationDetailsPEODesignatedReceiverId | — |
+| EFFECTIVE_END_DATE | LocationDetailsPEOEffectiveEndDate | ✅ |
+| EFFECTIVE_START_DATE | LocationDetailsPEOEffectiveStartDate | ✅ |
+| EMAIL_ADDRESS | LocationDetailsPEOEmailAddress | — |
+| FAX_AREA_CODE2 | LocationDetailsPEOFaxAreaCode2 | — |
+| FAX_COUNTRY_CODE2 | LocationDetailsPEOFaxCountryCode2 | — |
+| FAX_EXTENSION2 | LocationDetailsPEOFaxExtension2 | — |
+| FAX_SUBSCRIBER_NUM2 | LocationDetailsPEOFaxSubscriberNum2 | — |
+| GEO_HIERARCHY_NODE_ID | LocationDetailsPEOGeoHierarchyNodeId | — |
+| GEO_HIERARCHY_NODE_VALUE | LocationDetailsPEOGeoHierarchyNodeValue | — |
+| INVENTORY_ORGANIZATION_ID | LocationDetailsPEOInventoryOrganizationId | — |
+| LAST_UPDATE_DATE | LocationDetailsPEOLastUpdateDate | ✅ |
+| LOCATION_DETAILS_ID | LocationDetailsPEOLocationDetailsId | — |
+| LOCATION_ID | LocationDetailsPEOLocationId | — |
+| MAIN_ADDRESS_ID | LocationDetailsPEOMainAddressId | — |
+| MAINPHONE_AREA_CODE1 | LocationDetailsPEOMainphoneAreaCode1 | — |
+| MAINPHONE_COUNTRY_CODE1 | LocationDetailsPEOMainphoneCountryCode1 | — |
+| MAINPHONE_EXTENSION1 | LocationDetailsPEOMainphoneExtension1 | — |
+| MAINPHONE_SUBSCRIBER_NUM1 | LocationDetailsPEOMainphoneSubscriberNum1 | — |
+| OFFICE_SITE_FLAG | LocationDetailsPEOOfficeSiteFlag | — |
+| OFFICIAL_LANGUAGE_CODE | LocationDetailsPEOOfficialLanguageCode | — |
+| OTHERPHONE_AREA_CODE3 | LocationDetailsPEOOtherphoneAreaCode3 | — |
+| OTHERPHONE_COUNTRY_CODE3 | LocationDetailsPEOOtherphoneCountryCode3 | — |
+| OTHERPHONE_EXTENSION3 | LocationDetailsPEOOtherphoneExtension3 | — |
+| OTHERPHONE_SUBSCRIBER_NUM3 | LocationDetailsPEOOtherphoneSubscriberNum3 | — |
+| RECEIVING_SITE_FLAG | LocationDetailsPEOReceivingSiteFlag | — |
+| SHIP_TO_LOCATION_ID | LocationDetailsPEOShipToLocationId | — |
+| SHIP_TO_SITE_FLAG | LocationDetailsPEOShipToSiteFlag | — |
+| TELEPHONE_NUMBER_1 | LocationDetailsPEOTelephoneNumber1 | — |
+| TELEPHONE_NUMBER_2 | LocationDetailsPEOTelephoneNumber2 | — |
+| TELEPHONE_NUMBER_3 | LocationDetailsPEOTelephoneNumber3 | — |
+
+### [[preferredlocation4pvo|PreferredLocation4PVO]] (HCM · BICC: 3/34)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTIVE_STATUS | LocationDetailsPEOActiveStatus | — |
+| BILL_TO_SITE_FLAG | LocationDetailsPEOBillToSiteFlag | — |
+| business_group_id | LocationDetailsPEOBusinessGroupId | — |
+| DESIGNATED_RECEIVER_ID | LocationDetailsPEODesignatedReceiverId | — |
+| EFFECTIVE_END_DATE | LocationDetailsPEOEffectiveEndDate | ✅ |
+| EFFECTIVE_START_DATE | LocationDetailsPEOEffectiveStartDate | ✅ |
+| EMAIL_ADDRESS | LocationDetailsPEOEmailAddress | — |
+| FAX_AREA_CODE2 | LocationDetailsPEOFaxAreaCode2 | — |
+| FAX_COUNTRY_CODE2 | LocationDetailsPEOFaxCountryCode2 | — |
+| FAX_EXTENSION2 | LocationDetailsPEOFaxExtension2 | — |
+| FAX_SUBSCRIBER_NUM2 | LocationDetailsPEOFaxSubscriberNum2 | — |
+| GEO_HIERARCHY_NODE_ID | LocationDetailsPEOGeoHierarchyNodeId | — |
+| GEO_HIERARCHY_NODE_VALUE | LocationDetailsPEOGeoHierarchyNodeValue | — |
+| INVENTORY_ORGANIZATION_ID | LocationDetailsPEOInventoryOrganizationId | — |
+| LAST_UPDATE_DATE | LocationDetailsPEOLastUpdateDate | ✅ |
+| LOCATION_DETAILS_ID | LocationDetailsPEOLocationDetailsId | — |
+| LOCATION_ID | LocationDetailsPEOLocationId | — |
+| MAIN_ADDRESS_ID | LocationDetailsPEOMainAddressId | — |
+| MAINPHONE_AREA_CODE1 | LocationDetailsPEOMainphoneAreaCode1 | — |
+| MAINPHONE_COUNTRY_CODE1 | LocationDetailsPEOMainphoneCountryCode1 | — |
+| MAINPHONE_EXTENSION1 | LocationDetailsPEOMainphoneExtension1 | — |
+| MAINPHONE_SUBSCRIBER_NUM1 | LocationDetailsPEOMainphoneSubscriberNum1 | — |
+| OFFICE_SITE_FLAG | LocationDetailsPEOOfficeSiteFlag | — |
+| OFFICIAL_LANGUAGE_CODE | LocationDetailsPEOOfficialLanguageCode | — |
+| OTHERPHONE_AREA_CODE3 | LocationDetailsPEOOtherphoneAreaCode3 | — |
+| OTHERPHONE_COUNTRY_CODE3 | LocationDetailsPEOOtherphoneCountryCode3 | — |
+| OTHERPHONE_EXTENSION3 | LocationDetailsPEOOtherphoneExtension3 | — |
+| OTHERPHONE_SUBSCRIBER_NUM3 | LocationDetailsPEOOtherphoneSubscriberNum3 | — |
+| RECEIVING_SITE_FLAG | LocationDetailsPEOReceivingSiteFlag | — |
+| SHIP_TO_LOCATION_ID | LocationDetailsPEOShipToLocationId | — |
+| SHIP_TO_SITE_FLAG | LocationDetailsPEOShipToSiteFlag | — |
+| TELEPHONE_NUMBER_1 | LocationDetailsPEOTelephoneNumber1 | — |
+| TELEPHONE_NUMBER_2 | LocationDetailsPEOTelephoneNumber2 | — |
+| TELEPHONE_NUMBER_3 | LocationDetailsPEOTelephoneNumber3 | — |
+
+### [[preferredlocation4pvo_viewall|PreferredLocation4PVO_Viewall]] (HCM · BICC: 3/34)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTIVE_STATUS | LocationDetailsPEOActiveStatus | — |
+| BILL_TO_SITE_FLAG | LocationDetailsPEOBillToSiteFlag | — |
+| business_group_id | LocationDetailsPEOBusinessGroupId | — |
+| DESIGNATED_RECEIVER_ID | LocationDetailsPEODesignatedReceiverId | — |
+| EFFECTIVE_END_DATE | LocationDetailsPEOEffectiveEndDate | ✅ |
+| EFFECTIVE_START_DATE | LocationDetailsPEOEffectiveStartDate | ✅ |
+| EMAIL_ADDRESS | LocationDetailsPEOEmailAddress | — |
+| FAX_AREA_CODE2 | LocationDetailsPEOFaxAreaCode2 | — |
+| FAX_COUNTRY_CODE2 | LocationDetailsPEOFaxCountryCode2 | — |
+| FAX_EXTENSION2 | LocationDetailsPEOFaxExtension2 | — |
+| FAX_SUBSCRIBER_NUM2 | LocationDetailsPEOFaxSubscriberNum2 | — |
+| GEO_HIERARCHY_NODE_ID | LocationDetailsPEOGeoHierarchyNodeId | — |
+| GEO_HIERARCHY_NODE_VALUE | LocationDetailsPEOGeoHierarchyNodeValue | — |
+| INVENTORY_ORGANIZATION_ID | LocationDetailsPEOInventoryOrganizationId | — |
+| LAST_UPDATE_DATE | LocationDetailsPEOLastUpdateDate | ✅ |
+| LOCATION_DETAILS_ID | LocationDetailsPEOLocationDetailsId | — |
+| LOCATION_ID | LocationDetailsPEOLocationId | — |
+| MAIN_ADDRESS_ID | LocationDetailsPEOMainAddressId | — |
+| MAINPHONE_AREA_CODE1 | LocationDetailsPEOMainphoneAreaCode1 | — |
+| MAINPHONE_COUNTRY_CODE1 | LocationDetailsPEOMainphoneCountryCode1 | — |
+| MAINPHONE_EXTENSION1 | LocationDetailsPEOMainphoneExtension1 | — |
+| MAINPHONE_SUBSCRIBER_NUM1 | LocationDetailsPEOMainphoneSubscriberNum1 | — |
+| OFFICE_SITE_FLAG | LocationDetailsPEOOfficeSiteFlag | — |
+| OFFICIAL_LANGUAGE_CODE | LocationDetailsPEOOfficialLanguageCode | — |
+| OTHERPHONE_AREA_CODE3 | LocationDetailsPEOOtherphoneAreaCode3 | — |
+| OTHERPHONE_COUNTRY_CODE3 | LocationDetailsPEOOtherphoneCountryCode3 | — |
+| OTHERPHONE_EXTENSION3 | LocationDetailsPEOOtherphoneExtension3 | — |
+| OTHERPHONE_SUBSCRIBER_NUM3 | LocationDetailsPEOOtherphoneSubscriberNum3 | — |
+| RECEIVING_SITE_FLAG | LocationDetailsPEOReceivingSiteFlag | — |
+| SHIP_TO_LOCATION_ID | LocationDetailsPEOShipToLocationId | — |
+| SHIP_TO_SITE_FLAG | LocationDetailsPEOShipToSiteFlag | — |
+| TELEPHONE_NUMBER_1 | LocationDetailsPEOTelephoneNumber1 | — |
+| TELEPHONE_NUMBER_2 | LocationDetailsPEOTelephoneNumber2 | — |
+| TELEPHONE_NUMBER_3 | LocationDetailsPEOTelephoneNumber3 | — |

@@ -64,3 +64,94 @@ updated_at: 2026-03-26
 ## 📎 Uso Típico
 
 (a ser preenchido na etapa 03)
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[lookupvaluespvo|LookupValuesPVO]] (HCM · BICC: 2/8)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| DESCRIPTION | Description | ✅ |
+| LANGUAGE | Language | — |
+| LOOKUP_CODE | LookupCode1 | — |
+| LOOKUP_TYPE | LookupType1 | — |
+| MEANING | Meaning | ✅ |
+| SET_ID | SetId1 | — |
+| SOURCE_LANG | SourceLang | — |
+| VIEW_APPLICATION_ID | ViewApplicationId1 | — |
+
+### [[lookupvaluestlextractpvo|LookupValuesTLExtractPVO]] (OTHER · BICC: 13/13)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | CreatedBy | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| DESCRIPTION | Description | ✅ |
+| LANGUAGE | Language | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | LastUpdatedBy | ✅ |
+| LOOKUP_CODE | LookupCode | ✅ |
+| LOOKUP_TYPE | LookupType | ✅ |
+| MEANING | Meaning | ✅ |
+| SET_ID | SetId | ✅ |
+| SOURCE_LANG | SourceLang | ✅ |
+| VIEW_APPLICATION_ID | ViewApplicationId | ✅ |
+
+### [[lookupvaluestlpvo|LookupValuesTLPVO]] (HCM · BICC: 12/13)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | CreatedBy | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| DESCRIPTION | Description | ✅ |
+| LANGUAGE | Language | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | — |
+| LAST_UPDATED_BY | LastUpdatedBy | ✅ |
+| LOOKUP_CODE | LookupCode | ✅ |
+| LOOKUP_TYPE | LookupType | ✅ |
+| MEANING | Meaning | ✅ |
+| SET_ID | SetId | ✅ |
+| SOURCE_LANG | SourceLang | ✅ |
+| VIEW_APPLICATION_ID | ViewApplicationId | ✅ |
+
+### [[selectedproducts|SelectedProducts]] (PO · BICC: 13/14)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | LookupTLCreatedBy | ✅ |
+| CREATION_DATE | LookupTLCreationDate | ✅ |
+| DESCRIPTION | LookupTLDescription | — |
+| ENTERPRISE_ID | LookupTLEnterpriseId | ✅ |
+| LANGUAGE | LookupTLLanguage | ✅ |
+| LAST_UPDATE_DATE | LookupTLLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LookupTLLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | LookupTLLastUpdatedBy | ✅ |
+| LOOKUP_CODE | LookupTLLookupCode | ✅ |
+| LOOKUP_TYPE | LookupTLLookupType | ✅ |
+| MEANING | LookupTLMeaning | ✅ |
+| SET_ID | LookupTLSetId | ✅ |
+| SOURCE_LANG | LookupTLSourceLang | ✅ |
+| VIEW_APPLICATION_ID | LookupTLViewApplicationId | ✅ |
+
+### [[selectedproductsstg|SelectedProductsStg]] (PO · BICC: 13/14)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | LookupTLCreatedBy | ✅ |
+| CREATION_DATE | LookupTLCreationDate | ✅ |
+| DESCRIPTION | LookupTLDescription | — |
+| ENTERPRISE_ID | LookupTLEnterpriseId | ✅ |
+| LANGUAGE | LookupTLLanguage | ✅ |
+| LAST_UPDATE_DATE | LookupTLLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LookupTLLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | LookupTLLastUpdatedBy | ✅ |
+| LOOKUP_CODE | LookupTLLookupCode | ✅ |
+| LOOKUP_TYPE | LookupTLLookupType | ✅ |
+| MEANING | LookupTLMeaning | ✅ |
+| SET_ID | LookupTLSetId | ✅ |
+| SOURCE_LANG | LookupTLSourceLang | ✅ |
+| VIEW_APPLICATION_ID | LookupTLViewApplicationId | ✅ |

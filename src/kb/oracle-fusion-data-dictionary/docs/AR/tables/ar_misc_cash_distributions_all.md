@@ -138,6 +138,96 @@ WHERE  cr.TYPE = 'MISC'
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[miscellaneousreceiptdistributionextractpvo|MiscellaneousReceiptDistributionExtractPVO]] (OTHER · BICC: 28/44)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACCTD_AMOUNT | ArMiscCashDistributionAcctdAmount | ✅ |
+| AMOUNT | ArMiscCashDistributionAmount | ✅ |
+| APPLY_DATE | ArMiscCashDistributionApplyDate | ✅ |
+| ATTRIBUTE1 | ArMiscCashDistributionAttribute1 | — |
+| ATTRIBUTE10 | ArMiscCashDistributionAttribute10 | — |
+| ATTRIBUTE11 | ArMiscCashDistributionAttribute11 | — |
+| ATTRIBUTE12 | ArMiscCashDistributionAttribute12 | — |
+| ATTRIBUTE13 | ArMiscCashDistributionAttribute13 | — |
+| ATTRIBUTE14 | ArMiscCashDistributionAttribute14 | — |
+| ATTRIBUTE15 | ArMiscCashDistributionAttribute15 | — |
+| ATTRIBUTE2 | ArMiscCashDistributionAttribute2 | — |
+| ATTRIBUTE3 | ArMiscCashDistributionAttribute3 | — |
+| ATTRIBUTE4 | ArMiscCashDistributionAttribute4 | — |
+| ATTRIBUTE5 | ArMiscCashDistributionAttribute5 | — |
+| ATTRIBUTE6 | ArMiscCashDistributionAttribute6 | — |
+| ATTRIBUTE7 | ArMiscCashDistributionAttribute7 | — |
+| ATTRIBUTE8 | ArMiscCashDistributionAttribute8 | — |
+| ATTRIBUTE9 | ArMiscCashDistributionAttribute9 | — |
+| ATTRIBUTE_CATEGORY | ArMiscCashDistributionAttributeCategory | — |
+| CASH_RECEIPT_HISTORY_ID | ArMiscCashDistributionCashReceiptHistoryId | ✅ |
+| CASH_RECEIPT_ID | ArMiscCashDistributionCashReceiptId | ✅ |
+| CODE_COMBINATION_ID | ArMiscCashDistributionCodeCombinationId | ✅ |
+| COMMENTS | ArMiscCashDistributionComments | ✅ |
+| CREATED_BY | ArMiscCashDistributionCreatedBy | ✅ |
+| CREATED_FROM | ArMiscCashDistributionCreatedFrom | ✅ |
+| CREATION_DATE | ArMiscCashDistributionCreationDate | ✅ |
+| EVENT_ID | ArMiscCashDistributionEventId | ✅ |
+| GL_DATE | ArMiscCashDistributionGlDate | ✅ |
+| GL_POSTED_DATE | ArMiscCashDistributionGlPostedDate | ✅ |
+| LAST_UPDATE_DATE | ArMiscCashDistributionLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ArMiscCashDistributionLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | ArMiscCashDistributionLastUpdatedBy | ✅ |
+| MISC_CASH_DISTRIBUTION_ID | ArMiscCashDistributionMiscCashDistributionId | ✅ |
+| OBJECT_VERSION_NUMBER | ArMiscCashDistributionObjectVersionNumber | ✅ |
+| ORG_ID | ArMiscCashDistributionOrgId | ✅ |
+| PERCENT | ArMiscCashDistributionPercent | ✅ |
+| POSTING_CONTROL_ID | ArMiscCashDistributionPostingControlId | ✅ |
+| PROGRAM_APPLICATION_ID | ArMiscCashDistributionProgramApplicationId | ✅ |
+| PROGRAM_ID | ArMiscCashDistributionProgramId | ✅ |
+| PROGRAM_UPDATE_DATE | ArMiscCashDistributionProgramUpdateDate | ✅ |
+| REQUEST_ID | ArMiscCashDistributionRequestId | ✅ |
+| REVERSAL_GL_DATE | ArMiscCashDistributionReversalGlDate | ✅ |
+| SET_OF_BOOKS_ID | ArMiscCashDistributionSetOfBooksId | ✅ |
+| USSGL_TRANSACTION_CODE_CONTEXT | ArMiscCashDistributionUssglTransactionCodeContext | ✅ |
+
+### [[miscreceiptdistributionpvo|MiscReceiptDistributionPVO]] (AR · BICC: 4/32)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACCTD_AMOUNT | MiscReceiptDistAcctdAmount | — |
+| AMOUNT | MiscReceiptDistAmount | — |
+| APPLY_DATE | MiscReceiptDistApplyDate | — |
+| CASH_RECEIPT_HISTORY_ID | MiscReceiptDistCashReceiptHistoryId | — |
+| CASH_RECEIPT_ID | MiscReceiptDistCashReceiptId | — |
+| CODE_COMBINATION_ID | MiscReceiptDistCodeCombinationId | — |
+| COMMENTS | MiscReceiptDistComments | — |
+| CREATED_BY | MiscReceiptDistCreatedBy | — |
+| CREATED_FROM | MiscReceiptDistCreatedFrom | — |
+| CREATION_DATE | MiscReceiptDistCreationDate | — |
+| EVENT_ID | MiscReceiptDistEventId | — |
+| GL_DATE | MiscReceiptDistGlDate | ✅ |
+| GL_POSTED_DATE | MiscReceiptDistGlPostedDate | — |
+| LAST_UPDATE_DATE | MiscReceiptDistLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | MiscReceiptDistLastUpdateLogin | — |
+| LAST_UPDATED_BY | MiscReceiptDistLastUpdatedBy | — |
+| MISC_CASH_DISTRIBUTION_ID | MiscReceiptDistMiscCashDistributionId | — |
+| MRC_ACCTD_AMOUNT | MiscReceiptDistMrcAcctdAmount | — |
+| MRC_GL_POSTED_DATE | MiscReceiptDistMrcGlPostedDate | — |
+| MRC_POSTING_CONTROL_ID | MiscReceiptDistMrcPostingControlId | — |
+| OBJECT_VERSION_NUMBER | MiscReceiptDistObjectVersionNumber | — |
+| ORG_ID | MiscReceiptDistOrgId | — |
+| PERCENT | MiscReceiptDistPercent | ✅ |
+| POSTING_CONTROL_ID | MiscReceiptDistPostingControlId | ✅ |
+| PROGRAM_APPLICATION_ID | MiscReceiptDistProgramApplicationId | — |
+| PROGRAM_ID | MiscReceiptDistProgramId | — |
+| PROGRAM_UPDATE_DATE | MiscReceiptDistProgramUpdateDate | — |
+| REQUEST_ID | MiscReceiptDistRequestId | — |
+| REVERSAL_GL_DATE | MiscReceiptDistReversalGlDate | — |
+| SET_OF_BOOKS_ID | MiscReceiptDistSetOfBooksId | — |
+| USSGL_TRANSACTION_CODE | MiscReceiptDistUssglTransactionCode | — |
+| USSGL_TRANSACTION_CODE_CONTEXT | MiscReceiptDistUssglTransactionCodeContext | — |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — AR_MISC_CASH_DISTRIBUTIONS_ALL](https://docs.oracle.com/en/cloud/saas/financials/25a/oedmf/armisccashdistributionsall-10047.html)

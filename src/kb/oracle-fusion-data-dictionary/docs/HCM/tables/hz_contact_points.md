@@ -168,3 +168,252 @@ updated_at: 2026-03-26
 ## 📎 Uso Típico
 
 (a ser preenchido na etapa 03)
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[accountbankaccount|AccountBankAccount]] (AR · BICC: 3/23)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTUAL_CONTENT_SOURCE | BankBranchContactActualContentSource | — |
+| ATTRIBUTE_CATEGORY | BankBranchContactAttributeCategory | — |
+| CONTACT_POINT_ID | BankBranchContactContactPointId | — |
+| CONTACT_POINT_PURPOSE | BankBranchContactContactPointPurpose | — |
+| CREATED_BY | BankBranchContactCreatedBy | — |
+| CREATED_BY_MODULE | BankBranchContactCreatedByModule | — |
+| CREATION_DATE | BankBranchContactCreationDate | — |
+| EFT_SWIFT_CODE | BankBranchContactEftSwiftCode | ✅ |
+| EFT_USER_NUMBER | BankBranchContactEftUserNumber | ✅ |
+| END_DATE | BankBranchContactEndDate | — |
+| LAST_UPDATE_DATE | BankBranchContactLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | BankBranchContactLastUpdateLogin | — |
+| LAST_UPDATED_BY | BankBranchContactLastUpdatedBy | — |
+| ORIG_SYSTEM_REFERENCE | BankBranchContactOrigSystemReference | — |
+| OVERALL_PRIMARY_FLAG | BankBranchContactOverallPrimaryFlag | — |
+| OWNER_TABLE_ID | BankBranchContactOwnerTableId | — |
+| OWNER_TABLE_NAME | BankBranchContactOwnerTableName | — |
+| PARTY_USAGE_CODE | BankBranchContactPartyUsageCode | — |
+| PRIMARY_BY_PURPOSE | BankBranchContactPrimaryByPurpose | — |
+| PRIMARY_FLAG | BankBranchContactPrimaryFlag | — |
+| RELATIONSHIP_ID | BankBranchContactRelationshipId | — |
+| START_DATE | BankBranchContactStartDate | — |
+| STATUS | BankBranchContactStatus | — |
+
+### [[accountcontactpoint|AccountContactPoint]] (AR · BICC: 5/21)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTUAL_CONTENT_SOURCE | ContactPointActualContentSource | — |
+| CONTACT_POINT_ID | ContactPointId | ✅ |
+| CONTACT_POINT_PURPOSE | ContactPointContactPointPurpose | ✅ |
+| CONTACT_POINT_TYPE | ContactPointContactPointType | ✅ |
+| CREATED_BY | ContactPointCreatedBy | — |
+| CREATED_BY_MODULE | ContactPointCreatedByModule | — |
+| CREATION_DATE | ContactPointCreationDate | — |
+| END_DATE | ContactPointEndDate | — |
+| LAST_UPDATE_DATE | ContactPointLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ContactPointLastUpdateLogin | — |
+| LAST_UPDATED_BY | ContactPointLastUpdatedBy | — |
+| ORIG_SYSTEM_REFERENCE | ContactPointOrigSystemReference | — |
+| OVERALL_PRIMARY_FLAG | ContactPointOverallPrimaryFlag | — |
+| OWNER_TABLE_ID | ContactPointOwnerTableId | — |
+| OWNER_TABLE_NAME | ContactPointOwnerTableName | — |
+| PARTY_USAGE_CODE | ContactPointPartyUsageCode | — |
+| PRIMARY_BY_PURPOSE | ContactPointPrimaryByPurpose | — |
+| PRIMARY_FLAG | ContactPointPrimaryFlag | ✅ |
+| RELATIONSHIP_ID | ContactPointRelationshipId | — |
+| START_DATE | ContactPointStartDate | — |
+| STATUS | ContactPointStatus | — |
+
+### [[contactpointspvo|ContactPointsPVO]] (OTHER · BICC: 10/118)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTUAL_CONTENT_SOURCE | AllContactPointsPEOActualContentSource | — |
+| ATTRIBUTE1 | AllContactPointsPEOAttribute1 | — |
+| ATTRIBUTE10 | AllContactPointsPEOAttribute10 | — |
+| ATTRIBUTE11 | AllContactPointsPEOAttribute11 | — |
+| ATTRIBUTE12 | AllContactPointsPEOAttribute12 | — |
+| ATTRIBUTE13 | AllContactPointsPEOAttribute13 | — |
+| ATTRIBUTE14 | AllContactPointsPEOAttribute14 | — |
+| ATTRIBUTE15 | AllContactPointsPEOAttribute15 | — |
+| ATTRIBUTE16 | AllContactPointsPEOAttribute16 | — |
+| ATTRIBUTE17 | AllContactPointsPEOAttribute17 | — |
+| ATTRIBUTE18 | AllContactPointsPEOAttribute18 | — |
+| ATTRIBUTE19 | AllContactPointsPEOAttribute19 | — |
+| ATTRIBUTE2 | AllContactPointsPEOAttribute2 | — |
+| ATTRIBUTE20 | AllContactPointsPEOAttribute20 | — |
+| ATTRIBUTE21 | AllContactPointsPEOAttribute21 | — |
+| ATTRIBUTE22 | AllContactPointsPEOAttribute22 | — |
+| ATTRIBUTE23 | AllContactPointsPEOAttribute23 | — |
+| ATTRIBUTE24 | AllContactPointsPEOAttribute24 | — |
+| ATTRIBUTE25 | AllContactPointsPEOAttribute25 | — |
+| ATTRIBUTE26 | AllContactPointsPEOAttribute26 | — |
+| ATTRIBUTE27 | AllContactPointsPEOAttribute27 | — |
+| ATTRIBUTE28 | AllContactPointsPEOAttribute28 | — |
+| ATTRIBUTE29 | AllContactPointsPEOAttribute29 | — |
+| ATTRIBUTE3 | AllContactPointsPEOAttribute3 | — |
+| ATTRIBUTE30 | AllContactPointsPEOAttribute30 | — |
+| ATTRIBUTE4 | AllContactPointsPEOAttribute4 | — |
+| ATTRIBUTE5 | AllContactPointsPEOAttribute5 | — |
+| ATTRIBUTE6 | AllContactPointsPEOAttribute6 | — |
+| ATTRIBUTE7 | AllContactPointsPEOAttribute7 | — |
+| ATTRIBUTE8 | AllContactPointsPEOAttribute8 | — |
+| ATTRIBUTE9 | AllContactPointsPEOAttribute9 | — |
+| ATTRIBUTE_CATEGORY | AllContactPointsPEOAttributeCategory | — |
+| ATTRIBUTE_DATE1 | AllContactPointsPEOAttributeDate1 | — |
+| ATTRIBUTE_DATE10 | AllContactPointsPEOAttributeDate10 | — |
+| ATTRIBUTE_DATE11 | AllContactPointsPEOAttributeDate11 | — |
+| ATTRIBUTE_DATE12 | AllContactPointsPEOAttributeDate12 | — |
+| ATTRIBUTE_DATE2 | AllContactPointsPEOAttributeDate2 | — |
+| ATTRIBUTE_DATE3 | AllContactPointsPEOAttributeDate3 | — |
+| ATTRIBUTE_DATE4 | AllContactPointsPEOAttributeDate4 | — |
+| ATTRIBUTE_DATE5 | AllContactPointsPEOAttributeDate5 | — |
+| ATTRIBUTE_DATE6 | AllContactPointsPEOAttributeDate6 | — |
+| ATTRIBUTE_DATE7 | AllContactPointsPEOAttributeDate7 | — |
+| ATTRIBUTE_DATE8 | AllContactPointsPEOAttributeDate8 | — |
+| ATTRIBUTE_DATE9 | AllContactPointsPEOAttributeDate9 | — |
+| ATTRIBUTE_NUMBER1 | AllContactPointsPEOAttributeNumber1 | — |
+| ATTRIBUTE_NUMBER10 | AllContactPointsPEOAttributeNumber10 | — |
+| ATTRIBUTE_NUMBER11 | AllContactPointsPEOAttributeNumber11 | — |
+| ATTRIBUTE_NUMBER12 | AllContactPointsPEOAttributeNumber12 | — |
+| ATTRIBUTE_NUMBER2 | AllContactPointsPEOAttributeNumber2 | — |
+| ATTRIBUTE_NUMBER3 | AllContactPointsPEOAttributeNumber3 | — |
+| ATTRIBUTE_NUMBER4 | AllContactPointsPEOAttributeNumber4 | — |
+| ATTRIBUTE_NUMBER5 | AllContactPointsPEOAttributeNumber5 | — |
+| ATTRIBUTE_NUMBER6 | AllContactPointsPEOAttributeNumber6 | — |
+| ATTRIBUTE_NUMBER7 | AllContactPointsPEOAttributeNumber7 | — |
+| ATTRIBUTE_NUMBER8 | AllContactPointsPEOAttributeNumber8 | — |
+| ATTRIBUTE_NUMBER9 | AllContactPointsPEOAttributeNumber9 | — |
+| CONFLICT_ID | AllContactPointsPEOConflictId | — |
+| CONTACT_POINT_ID | AllContactPointsPEOContactPointId | ✅ |
+| CONTACT_POINT_PURPOSE | AllContactPointsPEOContactPointPurpose | — |
+| CONTACT_POINT_TYPE | AllContactPointsPEOContactPointType | — |
+| CPDRF_LAST_UPD | AllContactPointsPEOCpdrfLastUpd | — |
+| CPDRF_VER_PILLAR | AllContactPointsPEOCpdrfVerPillar | — |
+| CPDRF_VER_SOR | AllContactPointsPEOCpdrfVerSor | — |
+| CREATED_BY | AllContactPointsPEOCreatedBy | — |
+| CREATED_BY_MODULE | AllContactPointsPEOCreatedByModule | — |
+| CREATION_DATE | AllContactPointsPEOCreationDate | — |
+| EDI_ECE_TP_LOCATION_CODE | AllContactPointsPEOEdiEceTpLocationCode | — |
+| EDI_ID_NUMBER | AllContactPointsPEOEdiIdNumber | — |
+| EDI_PAYMENT_FORMAT | AllContactPointsPEOEdiPaymentFormat | — |
+| EDI_PAYMENT_METHOD | AllContactPointsPEOEdiPaymentMethod | — |
+| EDI_REMITTANCE_INSTRUCTION | AllContactPointsPEOEdiRemittanceInstruction | — |
+| EDI_REMITTANCE_METHOD | AllContactPointsPEOEdiRemittanceMethod | — |
+| EDI_TP_HEADER_ID | AllContactPointsPEOEdiTpHeaderId | — |
+| EDI_TRANSACTION_HANDLING | AllContactPointsPEOEdiTransactionHandling | — |
+| EFT_PRINTING_PROGRAM_ID | AllContactPointsPEOEftPrintingProgramId | — |
+| EFT_SWIFT_CODE | AllContactPointsPEOEftSwiftCode | — |
+| EFT_TRANSMISSION_PROGRAM_ID | AllContactPointsPEOEftTransmissionProgramId | — |
+| EFT_USER_NUMBER | AllContactPointsPEOEftUserNumber | — |
+| EMAIL_ADDRESS | AllContactPointsPEOEmailAddress | ✅ |
+| EMAIL_FORMAT | AllContactPointsPEOEmailFormat | — |
+| END_DATE | AllContactPointsPEOEndDate | — |
+| INSTANT_MESSAGING_ADDRESS | AllContactPointsPEOInstantMessagingAddress | — |
+| INSTANT_MESSENGER_TYPE | AllContactPointsPEOInstantMessengerType | — |
+| JOB_DEFINITION_NAME | AllContactPointsPEOJobDefinitionName | — |
+| JOB_DEFINITION_PACKAGE | AllContactPointsPEOJobDefinitionPackage | — |
+| LAST_CONTACT_DT_TIME | AllContactPointsPEOLastContactDtTime | — |
+| LAST_UPDATE_DATE | AllContactPointsPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | AllContactPointsPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | AllContactPointsPEOLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | AllContactPointsPEOObjectVersionNumber | — |
+| ORIG_SYSTEM_REFERENCE | AllContactPointsPEOOrigSystemReference | — |
+| OVERALL_PRIMARY_FLAG | AllContactPointsPEOOverallPrimaryFlag | ✅ |
+| OWNER_TABLE_ID | AllContactPointsPEOOwnerTableId | — |
+| OWNER_TABLE_NAME | AllContactPointsPEOOwnerTableName | — |
+| PAGER_TYPE_CODE | AllContactPointsPEOPagerTypeCode | — |
+| PARTY_USAGE_CODE | AllContactPointsPEOPartyUsageCode | — |
+| PHONE_AREA_CODE | AllContactPointsPEOPhoneAreaCode | ✅ |
+| PHONE_CALLING_CALENDAR | AllContactPointsPEOPhoneCallingCalendar | — |
+| PHONE_COUNTRY_CODE | AllContactPointsPEOPhoneCountryCode | ✅ |
+| PHONE_EXTENSION | AllContactPointsPEOPhoneExtension | ✅ |
+| PHONE_LINE_TYPE | AllContactPointsPEOPhoneLineType | — |
+| PHONE_NUMBER | AllContactPointsPEOPhoneNumber | ✅ |
+| PHONE_TYPE | AllContactPointsPEOPhoneType | ✅ |
+| PRIMARY_BY_PURPOSE | AllContactPointsPEOPrimaryByPurpose | — |
+| PRIMARY_FLAG | AllContactPointsPEOPrimaryFlag | ✅ |
+| PRIMARY_PER_PHONE_TYPE | AllContactPointsPEOPrimaryPerPhoneType | — |
+| RAW_PHONE_NUMBER | AllContactPointsPEORawPhoneNumber | — |
+| RELATIONSHIP_ID | AllContactPointsPEORelationshipId | — |
+| REQUEST_ID | AllContactPointsPEORequestId | — |
+| START_DATE | AllContactPointsPEOStartDate | — |
+| STATUS | AllContactPointsPEOStatus | — |
+| TELEX_NUMBER | AllContactPointsPEOTelexNumber | — |
+| TIMEZONE_CODE | AllContactPointsPEOTimezoneCode | — |
+| TIMEZONE_ID | AllContactPointsPEOTimezoneId | — |
+| TRANSPOSED_PHONE_NUMBER | AllContactPointsPEOTransposedPhoneNumber | — |
+| URL | AllContactPointsPEOUrl | — |
+| USER_LAST_UPDATE_DATE | AllContactPointsPEOUserLastUpdateDate | — |
+| WEB_TYPE | AllContactPointsPEOWebType | — |
+
+### [[sitebankaccount|SiteBankAccount]] (AR · BICC: 3/23)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTUAL_CONTENT_SOURCE | BankBranchContactActualContentSource | — |
+| ATTRIBUTE_CATEGORY | BankBranchContactAttributeCategory | — |
+| CONTACT_POINT_ID | BankBranchContactContactPointId | — |
+| CONTACT_POINT_PURPOSE | BankBranchContactContactPointPurpose | — |
+| CREATED_BY | BankBranchContactCreatedBy | — |
+| CREATED_BY_MODULE | BankBranchContactCreatedByModule | — |
+| CREATION_DATE | BankBranchContactCreationDate | — |
+| EFT_SWIFT_CODE | BankBranchContactEftSwiftCode | ✅ |
+| EFT_USER_NUMBER | BankBranchContactEftUserNumber | ✅ |
+| END_DATE | BankBranchContactEndDate | — |
+| LAST_UPDATE_DATE | BankBranchContactLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | BankBranchContactLastUpdateLogin | — |
+| LAST_UPDATED_BY | BankBranchContactLastUpdatedBy | — |
+| ORIG_SYSTEM_REFERENCE | BankBranchContactOrigSystemReference | — |
+| OVERALL_PRIMARY_FLAG | BankBranchContactOverallPrimaryFlag | — |
+| OWNER_TABLE_ID | BankBranchContactOwnerTableId | — |
+| OWNER_TABLE_NAME | BankBranchContactOwnerTableName | — |
+| PARTY_USAGE_CODE | BankBranchContactPartyUsageCode | — |
+| PRIMARY_BY_PURPOSE | BankBranchContactPrimaryByPurpose | — |
+| PRIMARY_FLAG | BankBranchContactPrimaryFlag | — |
+| RELATIONSHIP_ID | BankBranchContactRelationshipId | — |
+| START_DATE | BankBranchContactStartDate | — |
+| STATUS | BankBranchContactStatus | — |
+
+### [[sitecontactpoint|SiteContactPoint]] (AR · BICC: 5/21)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTUAL_CONTENT_SOURCE | ContactPointActualContentSource | — |
+| CONTACT_POINT_ID | ContactPointId | ✅ |
+| CONTACT_POINT_PURPOSE | ContactPointContactPointPurpose | ✅ |
+| CONTACT_POINT_TYPE | ContactPointContactPointType | ✅ |
+| CREATED_BY | ContactPointCreatedBy | — |
+| CREATED_BY_MODULE | ContactPointCreatedByModule | — |
+| CREATION_DATE | ContactPointCreationDate | — |
+| END_DATE | ContactPointEndDate | — |
+| LAST_UPDATE_DATE | ContactPointLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ContactPointLastUpdateLogin | — |
+| LAST_UPDATED_BY | ContactPointLastUpdatedBy | — |
+| ORIG_SYSTEM_REFERENCE | ContactPointOrigSystemReference | — |
+| OVERALL_PRIMARY_FLAG | ContactPointOverallPrimaryFlag | — |
+| OWNER_TABLE_ID | ContactPointOwnerTableId | — |
+| OWNER_TABLE_NAME | ContactPointOwnerTableName | — |
+| PARTY_USAGE_CODE | ContactPointPartyUsageCode | — |
+| PRIMARY_BY_PURPOSE | ContactPointPrimaryByPurpose | — |
+| PRIMARY_FLAG | ContactPointPrimaryFlag | ✅ |
+| RELATIONSHIP_ID | ContactPointRelationshipId | — |
+| START_DATE | ContactPointStartDate | — |
+| STATUS | ContactPointStatus | — |
+
+### [[suppliersiteaddresspvo|SupplierSiteAddressPVO]] (AP · BICC: 4/9)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CONTACT_POINT_ID | ContactPointContactPointId | ✅ |
+| CONTACT_POINT_TYPE | ContactPointContactPointType | — |
+| EMAIL_ADDRESS | ContactPointEmailAddress | — |
+| PHONE_AREA_CODE | ContactPointPhoneAreaCode | ✅ |
+| PHONE_COUNTRY_CODE | ContactPointPhoneCountryCode | ✅ |
+| PHONE_EXTENSION | ContactPointPhoneExtension | ✅ |
+| PHONE_LINE_TYPE | ContactPointPhoneLineType | — |
+| PHONE_NUMBER | ContactPointPhoneNumber | — |
+| PRIMARY_FLAG | ContactPointPrimaryFlag | — |

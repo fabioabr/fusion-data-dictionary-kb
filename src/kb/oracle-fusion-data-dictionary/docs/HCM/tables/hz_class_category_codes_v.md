@@ -58,3 +58,33 @@ updated_at: 2026-03-26
 ## 📎 Uso Típico
 
 (a ser preenchido na etapa 03)
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[sitetaxclassification|SiteTaxClassification]] (AR · BICC: 1/8)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CLASS_CATEGORY | ClassCatCodeClassCategory | — |
+| CLASS_CODE | ClassCatCodeClassCode | — |
+| DESCRIPTION | ClassCatCodeDescription | — |
+| END_DATE_ACTIVE | ClassCatCodeEndDateActive | — |
+| LAST_UPDATED_BY | ClassCatCodeLastUpdatedBy | — |
+| MEANING | ClassCatCodeMeaning | ✅ |
+| START_DATE_ACTIVE | ClassCatCodeStartDateActive | — |
+| VIEW_APPLICATION_ID | ClassCatCodeViewApplicationId | — |
+
+### [[taxclassification|TaxClassification]] (AR · BICC: 1/8)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CLASS_CATEGORY | ClassCatCodeClassCategory | — |
+| CLASS_CODE | ClassCatCodeClassCode | — |
+| DESCRIPTION | ClassCatCodeDescription | — |
+| END_DATE_ACTIVE | ClassCatCodeEndDateActive | — |
+| LAST_UPDATED_BY | ClassCatCodeLastUpdatedBy | — |
+| MEANING | ClassCatCodeMeaning | ✅ |
+| START_DATE_ACTIVE | ClassCatCodeStartDateActive | — |
+| VIEW_APPLICATION_ID | ClassCatCodeViewApplicationId | — |

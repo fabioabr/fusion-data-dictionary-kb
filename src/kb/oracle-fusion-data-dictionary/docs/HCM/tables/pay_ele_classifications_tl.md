@@ -98,6 +98,26 @@ WHERE  tl.CLASSIFICATION_ID = :p_classification_id
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[elementclassificationstranslation|ElementClassificationsTranslation]] (HCM · BICC: 2/11)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CLASSIFICATION_ID | ClassificationId | ✅ |
+| CLASSIFICATION_NAME | ElementClassificationTLClassificationName | — |
+| CREATED_BY | ElementClassificationTLCreatedBy | — |
+| CREATION_DATE | ElementClassificationTLCreationDate | — |
+| DESCRIPTION | ElementClassificationTLDescription | — |
+| LANGUAGE | ElementClassificationTLLanguage | — |
+| LAST_UPDATE_DATE | ElementClassificationTLLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ElementClassificationTLLastUpdateLogin | — |
+| LAST_UPDATED_BY | ElementClassificationTLLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | ElementClassificationTLObjectVersionNumber | — |
+| SOURCE_LANG | ElementClassificationTLSourceLang | — |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — PAY_ELE_CLASSIFICATIONS_TL](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/payeleclassificationstl.html)

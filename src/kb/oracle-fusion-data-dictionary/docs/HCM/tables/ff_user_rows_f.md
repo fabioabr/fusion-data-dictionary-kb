@@ -120,6 +120,32 @@ WHERE  r.USER_TABLE_ID = :p_table_id
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[userrowdpvo|UserRowDPVO]] (GL · BICC: 17/17)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | UserRowDPEOCreatedBy | ✅ |
+| CREATION_DATE | UserRowDPEOCreationDate | ✅ |
+| DISPLAY_SEQUENCE | UserRowDPEODisplaySequence | ✅ |
+| EFFECTIVE_END_DATE | UserRowDPEOEffectiveEndDate | ✅ |
+| EFFECTIVE_START_DATE | UserRowDPEOEffectiveStartDate | ✅ |
+| ENTERPRISE_ID | UserRowDPEOEnterpriseId | ✅ |
+| LAST_UPDATE_DATE | UserRowDPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | UserRowDPEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | UserRowDPEOLastUpdatedBy | ✅ |
+| LEGISLATION_CODE | UserRowDPEOLegislationCode | ✅ |
+| LEGISLATIVE_DATA_GROUP_ID | UserRowDPEOLegislativeDataGroupId | ✅ |
+| MODULE_ID | UserRowDPEOModuleId | ✅ |
+| OBJECT_VERSION_NUMBER | UserRowDPEOObjectVersionNumber | ✅ |
+| ROW_HIGH_RANGE | UserRowDPEORowHighRange | ✅ |
+| ROW_LOW_RANGE_OR_NAME | UserRowDPEORowLowRangeOrName | ✅ |
+| USER_ROW_ID | UserRowDPEOUserRowId | ✅ |
+| USER_TABLE_ID | UserRowDPEOUserTableId | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — FF_USER_ROWS_F](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/ffuserrowsf.html)

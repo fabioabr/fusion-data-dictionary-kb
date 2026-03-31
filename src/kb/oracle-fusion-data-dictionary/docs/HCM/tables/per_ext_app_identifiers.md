@@ -101,6 +101,31 @@ WHERE  peai.PERSON_ID = :p_person_id;
 - Pode conter múltiplos identificadores por pessoa (um para cada sistema externo).
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[externalidentifierpvo|ExternalIdentifierPVO]] (HCM · BICC: 13/16)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ASSIGNMENT_ID | AssignmentId | ✅ |
+| COMMENTS | Comments | ✅ |
+| CREATED_BY | CreatedBy | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| DATE_FROM | DateFrom | ✅ |
+| DATE_TO | DateTo | ✅ |
+| ENTERPRISE_ID | EnterpriseId | — |
+| EXT_IDENTIFIER_ID | ExtIdentifierId | ✅ |
+| EXT_IDENTIFIER_NUMBER | ExtIdentifierNumber | ✅ |
+| EXT_IDENTIFIER_SEQ | ExtIdentifierSeq | ✅ |
+| EXT_IDENTIFIER_TYPE | ExtIdentifierType | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | — |
+| LAST_UPDATED_BY | LastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | — |
+| PERSON_ID | PersonId | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — PER_EXT_APP_IDENTIFIERS](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/perextappidentifiers.html)

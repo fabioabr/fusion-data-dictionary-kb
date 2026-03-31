@@ -123,6 +123,40 @@ WHERE  bcv.LOOKUP_CODE = 'SMALL_BUSINESS'
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[supplierbusinessclassificationpvo|SupplierBusinessClassificationPVO]] (PO · BICC: 15/25)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CERTIFICATE_NUMBER | SuppBusinessClassificationCertificateNumber | ✅ |
+| CERTIFYING_AGENCY | SuppBusinessClassificationCertifyingAgency | ✅ |
+| CERTIFYING_AGENCY_ID | SuppBusinessClassificationCertifyingAgencyId | — |
+| CLASSIFICATION_ID | ClassificationId | ✅ |
+| CONFIRMED_ON | SuppBusinessClassificationConfirmedOn | ✅ |
+| CREATED_BY | SuppBusinessClassificationCreatedBy | — |
+| CREATION_DATE | SuppBusinessClassificationCreationDate | — |
+| DISPLAYED_FIELD | SuppBusinessClassificationDisplayedField | ✅ |
+| EXPIRATION_DATE | SuppBusinessClassificationExpirationDate | ✅ |
+| EXT_ATTR_1 | SuppBusinessClassificationSubClassificationCode | ✅ |
+| LAST_UPDATE_DATE | SuppBusinessClassificationLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | SuppBusinessClassificationLastUpdateLogin | — |
+| LAST_UPDATED_BY | SuppBusinessClassificationLastUpdatedBy | — |
+| LOOKUP_CODE | SuppBusinessClassificationClassificationCode | ✅ |
+| NOTES | SuppBusinessClassificationNotes | ✅ |
+| OBJECT_VERSION_NUMBER | SuppBusinessClassificationObjectVersionNumber | — |
+| OTHER_CERTIFYING_AGENCY | SuppBusinessClassificationOtherCertifyingAgency | ✅ |
+| PARTY_ID | SuppBusinessClassificationPartyId | — |
+| PROVIDED_BY_CONTACT_ID | SuppBusinessClassificationProvidedByContactId | — |
+| SEGMENT1 | SuppBusinessClassificationSegment1 | — |
+| START_DATE | SuppBusinessClassificationStartDate | ✅ |
+| STATUS | SuppBusinessClassificationStatus | ✅ |
+| SUBCLASS | SuppBusinessClassificationSubclass | ✅ |
+| SUPPLIER_NAME | SuppBusinessClassificationSupplierName | ✅ |
+| VENDOR_ID | SuppBusinessClassificationVendorId | — |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — POZ Views](https://docs.oracle.com/en/cloud/saas/procurement/25a/oedmf/poztables.html)

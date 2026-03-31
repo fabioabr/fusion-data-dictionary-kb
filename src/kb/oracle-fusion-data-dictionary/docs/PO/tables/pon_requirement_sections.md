@@ -130,3 +130,117 @@ ORDER BY s.SECTION_ORDER;
 
 - [Oracle Docs — PON_REQUIREMENT_SECTIONS](https://docs.oracle.com/en/cloud/saas/procurement/25a/oedmf/ponrequirementsections.html)
 - [[po-module-data-dictionary]] — Dossiê do módulo Procurement
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[negotiationrequirementandscoringpvo|NegotiationRequirementAndScoringPVO]] (PO · BICC: 6/17)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| AUCTION_HEADER_ID | NegotiationSectionAuctionHeaderId | — |
+| CREATED_BY | NegotiationSectionCreatedBy | — |
+| CREATION_DATE | NegotiationSectionCreationDate | — |
+| DISP_SEQ_NUMBER | NegotiationSectionDispSeqNumber | ✅ |
+| IS_INTERNAL | NegotiationSectionIsInternal | — |
+| LAST_AMENDMENT_UPDATE | NegotiationSectionLastAmendmentUpdate | — |
+| LAST_UPDATE_DATE | NegotiationSectionLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | NegotiationSectionLastUpdateLogin | — |
+| LAST_UPDATED_BY | NegotiationSectionLastUpdatedBy | — |
+| MODIFIED_FLAG | NegotiationSectionModifiedFlag | — |
+| OBJECT_VERSION_NUMBER | NegotiationSectionObjectVersionNumber | — |
+| PREVIOUS_SECTION_ID | NegotiationSectionPreviousSectionId | — |
+| SECTION_DISPLAY_NUMBER | NegotiationSectionSectionDisplayNumber | ✅ |
+| SECTION_ID | NegotiationSectionSectionId | ✅ |
+| SECTION_LEVEL | NegotiationSectionSectionLevel | — |
+| SECTION_NAME | NegotiationSectionSectionName | ✅ |
+| TWO_PART_SECTION_TYPE | NegotiationSectionTwoPartSectionType | ✅ |
+
+### [[negotiationrequirementpvo|NegotiationRequirementPVO]] (PO · BICC: 6/17)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| AUCTION_HEADER_ID | NegotiationSectionAuctionHeaderId | — |
+| CREATED_BY | NegotiationSectionCreatedBy | — |
+| CREATION_DATE | NegotiationSectionCreationDate | — |
+| DISP_SEQ_NUMBER | NegotiationSectionDispSeqNumber | ✅ |
+| IS_INTERNAL | NegotiationSectionIsInternal | — |
+| LAST_AMENDMENT_UPDATE | NegotiationSectionLastAmendmentUpdate | — |
+| LAST_UPDATE_DATE | NegotiationSectionLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | NegotiationSectionLastUpdateLogin | — |
+| LAST_UPDATED_BY | NegotiationSectionLastUpdatedBy | — |
+| MODIFIED_FLAG | NegotiationSectionModifiedFlag | — |
+| OBJECT_VERSION_NUMBER | NegotiationSectionObjectVersionNumber | — |
+| PREVIOUS_SECTION_ID | NegotiationSectionPreviousSectionId | — |
+| SECTION_DISPLAY_NUMBER | NegotiationSectionSectionDisplayNumber | ✅ |
+| SECTION_ID | NegotiationSectionSectionId | ✅ |
+| SECTION_LEVEL | NegotiationSectionSectionLevel | — |
+| SECTION_NAME | NegotiationSectionSectionName | ✅ |
+| TWO_PART_SECTION_TYPE | NegotiationSectionTwoPartSectionType | ✅ |
+
+### [[negotiationresprequirementandvaluespvo|NegotiationRespRequirementAndValuesPVO]] (PO · BICC: 6/17)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| AUCTION_HEADER_ID | NegotiationSectionsAuctionHeaderId1 | — |
+| CREATED_BY | NegotiationSectionsCreatedBy1 | — |
+| CREATION_DATE | NegotiationSectionsCreationDate1 | — |
+| DISP_SEQ_NUMBER | NegotiationSectionsDispSeqNumber | ✅ |
+| IS_INTERNAL | NegotiationSectionsIsInternal | — |
+| LAST_AMENDMENT_UPDATE | NegotiationSectionsLastAmendmentUpdate | — |
+| LAST_UPDATE_DATE | NegotiationSectionsLastUpdateDate1 | ✅ |
+| LAST_UPDATE_LOGIN | NegotiationSectionsLastUpdateLogin1 | — |
+| LAST_UPDATED_BY | NegotiationSectionsLastUpdatedBy1 | — |
+| MODIFIED_FLAG | NegotiationSectionsModifiedFlag | — |
+| OBJECT_VERSION_NUMBER | NegotiationSectionsObjectVersionNumber1 | — |
+| PREVIOUS_SECTION_ID | NegotiationSectionsPreviousSectionId | — |
+| SECTION_DISPLAY_NUMBER | NegotiationSectionsSectionDisplayNumber | ✅ |
+| SECTION_ID | NegotiationSectionsSectionId | ✅ |
+| SECTION_LEVEL | NegotiationSectionsSectionLevel | — |
+| SECTION_NAME | NegotiationSectionsSectionName | ✅ |
+| TWO_PART_SECTION_TYPE | NegotiationSectionsTwoPartSectionType | ✅ |
+
+### [[negotiationresprequirementpvo|NegotiationRespRequirementPVO]] (PO · BICC: 6/17)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| AUCTION_HEADER_ID | NegotiationSectionsAuctionHeaderId2 | — |
+| CREATED_BY | NegotiationSectionsCreatedBy2 | — |
+| CREATION_DATE | NegotiationSectionsCreationDate2 | — |
+| DISP_SEQ_NUMBER | NegotiationSectionsDispSeqNumber | ✅ |
+| IS_INTERNAL | NegotiationSectionsIsInternal | — |
+| LAST_AMENDMENT_UPDATE | NegotiationSectionsLastAmendmentUpdate | — |
+| LAST_UPDATE_DATE | NegotiationSectionsLastUpdateDate2 | ✅ |
+| LAST_UPDATE_LOGIN | NegotiationSectionsLastUpdateLogin2 | — |
+| LAST_UPDATED_BY | NegotiationSectionsLastUpdatedBy2 | — |
+| MODIFIED_FLAG | NegotiationSectionsModifiedFlag | — |
+| OBJECT_VERSION_NUMBER | NegotiationSectionsObjectVersionNumber2 | — |
+| PREVIOUS_SECTION_ID | NegotiationSectionsPreviousSectionId | — |
+| SECTION_DISPLAY_NUMBER | NegotiationSectionsSectionDisplayNumber | ✅ |
+| SECTION_ID | NegotiationSectionsSectionId2 | ✅ |
+| SECTION_LEVEL | NegotiationSectionsSectionLevel | — |
+| SECTION_NAME | NegotiationSectionsSectionName | ✅ |
+| TWO_PART_SECTION_TYPE | NegotiationSectionsTwoPartSectionType | ✅ |
+
+### [[negotiationsectionextractpvo|NegotiationSectionExtractPVO]] (PO · BICC: 17/17)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| AUCTION_HEADER_ID | AuctionHeaderId | ✅ |
+| CREATED_BY | CreatedBy | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| DISP_SEQ_NUMBER | DispSeqNumber | ✅ |
+| IS_INTERNAL | IsInternal | ✅ |
+| LAST_AMENDMENT_UPDATE | LastAmendmentUpdate | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | LastUpdatedBy | ✅ |
+| MODIFIED_FLAG | ModifiedFlag | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | ✅ |
+| PREVIOUS_SECTION_ID | PreviousSectionId | ✅ |
+| SECTION_DISPLAY_NUMBER | SectionDisplayNumber | ✅ |
+| SECTION_ID | SectionId | ✅ |
+| SECTION_LEVEL | SectionLevel | ✅ |
+| SECTION_NAME | SectionName | ✅ |
+| TWO_PART_SECTION_TYPE | TwoPartSectionType | ✅ |

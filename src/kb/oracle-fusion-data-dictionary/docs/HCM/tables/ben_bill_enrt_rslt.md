@@ -38,7 +38,6 @@ updated_at: 2026-03-25
 
 Armazena a **vinculação entre inscrições de benefícios e cobranças**. Conecta os resultados de inscrição (`BEN_PRTT_ENRT_RSLT`) ao sistema de billing.
 
-
 ---
 
 ## 🧠 Propósito de Negócio
@@ -100,6 +99,84 @@ FROM   BEN_BILL_ENRT_RSLT be;
 
 - Tabela de ligação entre inscrições e cobranças.
 - Permite rastrear quais inscrições já foram cobradas.
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[billchargedetailspvo|BillChargeDetailsPVO]] (HCM · BICC: 2/69)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BENEFIT_RELATION_ID | BenefitRelationId2 | — |
+| BER_ATTRIBUTE1 | BerAttribute1 | — |
+| BER_ATTRIBUTE10 | BerAttribute10 | — |
+| BER_ATTRIBUTE2 | BerAttribute2 | — |
+| BER_ATTRIBUTE3 | BerAttribute3 | — |
+| BER_ATTRIBUTE4 | BerAttribute4 | — |
+| BER_ATTRIBUTE5 | BerAttribute5 | — |
+| BER_ATTRIBUTE6 | BerAttribute6 | — |
+| BER_ATTRIBUTE7 | BerAttribute7 | — |
+| BER_ATTRIBUTE8 | BerAttribute8 | — |
+| BER_ATTRIBUTE9 | BerAttribute9 | — |
+| BER_ATTRIBUTE_CATEGORY | BerAttributeCategory | — |
+| BER_ATTRIBUTE_DATE1 | BerAttributeDate1 | — |
+| BER_ATTRIBUTE_DATE2 | BerAttributeDate2 | — |
+| BER_ATTRIBUTE_DATE3 | BerAttributeDate3 | — |
+| BER_ATTRIBUTE_DATE4 | BerAttributeDate4 | — |
+| BER_ATTRIBUTE_DATE5 | BerAttributeDate5 | — |
+| BER_ATTRIBUTE_NUMBER1 | BerAttributeNumber1 | — |
+| BER_ATTRIBUTE_NUMBER2 | BerAttributeNumber2 | — |
+| BER_ATTRIBUTE_NUMBER3 | BerAttributeNumber3 | — |
+| BER_ATTRIBUTE_NUMBER4 | BerAttributeNumber4 | — |
+| BER_ATTRIBUTE_NUMBER5 | BerAttributeNumber5 | — |
+| BILL_END_DATE | BillEndDate | — |
+| BILL_ENRT_RSLT_ID | BillEnrtRsltId | ✅ |
+| BILL_START_DATE | BillStartDate | — |
+| BNFT_AMT | BnftAmt | — |
+| BUSINESS_GROUP_ID | BusinessGroupId4 | — |
+| CONFIG_CHAR_1 | ConfigChar13 | — |
+| CONFIG_CHAR_2 | ConfigChar23 | — |
+| CONFIG_CHAR_3 | ConfigChar33 | — |
+| CONFIG_CHAR_4 | ConfigChar43 | — |
+| CONFIG_CHAR_5 | ConfigChar53 | — |
+| CONFIG_DATE_1 | ConfigDate13 | — |
+| CONFIG_DATE_2 | ConfigDate23 | — |
+| CONFIG_DATE_3 | ConfigDate33 | — |
+| CONFIG_DATE_4 | ConfigDate43 | — |
+| CONFIG_DATE_5 | ConfigDate53 | — |
+| CONFIG_NUM_1 | ConfigNum13 | — |
+| CONFIG_NUM_2 | ConfigNum23 | — |
+| CONFIG_NUM_3 | ConfigNum33 | — |
+| CONFIG_NUM_4 | ConfigNum43 | — |
+| CONFIG_NUM_5 | ConfigNum53 | — |
+| CREATED_BY | CreatedBy4 | — |
+| CREATION_DATE | CreationDate4 | — |
+| ELECTION_DATE | ElectionDate | — |
+| ENRT_CVG_STRT_DT | EnrtCvgStrtDt | — |
+| ENRT_CVG_THRU_DT | EnrtCvgThruDt | — |
+| LAST_UPDATE_DATE | LastUpdateDate4 | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin4 | — |
+| LAST_UPDATED_BY | LastUpdatedBy4 | — |
+| LEGAL_ENTITY_ID | LegalEntityId2 | — |
+| LER_ID | LerId | — |
+| LER_TYP_CD | LerTypCd | — |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber4 | — |
+| OIPL_ID | OiplId1 | — |
+| OPT_ID | OptId1 | — |
+| ORGNL_ENRT_DT | OrgnlEnrtDt | — |
+| ORGNL_PRTT_ENRT_RSLT_ID | OrgnlPrttEnrtRsltId | — |
+| PER_IN_LER_ID | PerInLerId | — |
+| PERSON_ID | PersonId3 | — |
+| PGM_ID | PgmId1 | — |
+| PL_ID | PlId1 | — |
+| PL_TYP_ID | PlTypId1 | — |
+| PRORATE_DAYS | ProrateDays | — |
+| PRORATE_PERCENT | ProratePercent | — |
+| PRORATE_TYPE | ProrateType | — |
+| PTIP_ID | PtipId1 | — |
+| SRC_CD | SrcCd | — |
+| STOP_BILL_FLAG | StopBillFlag1 | — |
 
 ---
 

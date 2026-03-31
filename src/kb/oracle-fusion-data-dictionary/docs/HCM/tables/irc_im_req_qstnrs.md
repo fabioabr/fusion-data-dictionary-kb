@@ -99,3 +99,76 @@ FROM   IRC_IM_REQ_QSTNRS rq WHERE rq.REQUISITION_ID = :p_id;
 
 - [Oracle Docs -- IRC_IM_REQ_QSTNRS](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/ircimreqqstnrs.html)
 - [[hcm-module-data-dictionary]] -- Dossie do modulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[feedbackdetailspvo|FeedbackDetailsPVO]] (HCM)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| QSTNR_TYPE_CODE | QstnrTypeCode | — |
+| QSTNR_VERSION_NUM | QstnrVersionNum4 | — |
+| QUESTIONNAIRE_ID | QuestionnaireId4 | — |
+| REQUISITION_ID | RequisitionId2 | — |
+
+### [[requisitionqstnrexternalviewallpvo|RequisitionQstnrExternalViewAllPVO]] (PO · BICC: 4/10)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | CreatedBy | — |
+| CREATION_DATE | CreationDate | — |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | — |
+| LAST_UPDATED_BY | LastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | — |
+| QSTNR_TYPE_CODE | QstnrTypeCode | — |
+| QSTNR_VERSION_NUM | QstnrVersionNum | ✅ |
+| QUESTIONNAIRE_ID | QuestionnaireId | ✅ |
+| REQUISITION_ID | RequisitionId | ✅ |
+
+### [[requisitionqstnrinternalviewallpvo|RequisitionQstnrInternalViewAllPVO]] (PO · BICC: 5/10)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | CreatedBy | — |
+| CREATION_DATE | CreationDate | — |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | — |
+| LAST_UPDATED_BY | LastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | — |
+| QSTNR_TYPE_CODE | QstnrTypeCode | ✅ |
+| QSTNR_VERSION_NUM | QstnrVersionNum | ✅ |
+| QUESTIONNAIRE_ID | QuestionnaireId | ✅ |
+| REQUISITION_ID | RequisitionId | ✅ |
+
+### [[requisitionqstnrinterviewviewallpvo|RequisitionQstnrInterviewViewAllPVO]] (PO · BICC: 4/10)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | CreatedBy | — |
+| CREATION_DATE | CreationDate | — |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | — |
+| LAST_UPDATED_BY | LastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | — |
+| QSTNR_TYPE_CODE | QstnrTypeCode | — |
+| QSTNR_VERSION_NUM | QstnrVersionNum | ✅ |
+| QUESTIONNAIRE_ID | QuestionnaireId | ✅ |
+| REQUISITION_ID | RequisitionId | ✅ |
+
+### [[submissionqstnrsviewallpvo|SubmissionQstnrsViewAllPVO]] (PO · BICC: 4/10)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | RequisitionQstnrPEOCreatedBy | — |
+| CREATION_DATE | RequisitionQstnrPEOCreationDate | — |
+| LAST_UPDATE_DATE | RequisitionQstnrPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | RequisitionQstnrPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | RequisitionQstnrPEOLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | RequisitionQstnrPEOObjectVersionNumber | — |
+| QSTNR_TYPE_CODE | RequisitionQstnrPEOQstnrTypeCode | — |
+| QSTNR_VERSION_NUM | QstnrVersionNum | ✅ |
+| QUESTIONNAIRE_ID | QuestionnaireId | ✅ |
+| REQUISITION_ID | RequisitionId | ✅ |

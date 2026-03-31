@@ -93,6 +93,27 @@ WHERE  tl.RESPONSE_TYPE_ID = :p_id AND tl.LANGUAGE = USERENV('LANG');
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[responsetypepvo|ResponseTypePVO]] (HCM · BICC: 2/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | ResponseTypeTranslationPEOBusinessGroupId | — |
+| CREATED_BY | ResponseTypeTranslationPEOCreatedBy | — |
+| CREATION_DATE | ResponseTypeTranslationPEOCreationDate | — |
+| LANGUAGE | ResponseTypeTranslationPEOLanguage | — |
+| LAST_UPDATE_DATE | ResponseTypeTranslationPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ResponseTypeTranslationPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | ResponseTypeTranslationPEOLastUpdatedBy | — |
+| NAME | ResponseTypeTranslationPEOName | ✅ |
+| OBJECT_VERSION_NUMBER | ResponseTypeTranslationPEOObjectVersionNumber | — |
+| RESPONSE_TYPE_ID | ResponseTypeTranslationPEOResponseTypeId | — |
+| SEED_DATA_SOURCE | ResponseTypeTranslationPEOSeedDataSource | — |
+| SOURCE_LANG | ResponseTypeTranslationPEOSourceLang | — |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Fusion HCM Tables and Views](https://docs.oracle.com/en/cloud/saas/human-resources/25a/)

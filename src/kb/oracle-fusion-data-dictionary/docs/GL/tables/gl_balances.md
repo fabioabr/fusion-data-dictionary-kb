@@ -157,6 +157,98 @@ ORDER BY gcc.SEGMENT3;
 
 ---
 
+## [[balancepvo|BalancePVO]] (GL · BICC: 23/38)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTUAL_FLAG | ActualFlag | ✅ |
+| BEGIN_BALANCE_CR | BeginBalanceCr | ✅ |
+| BEGIN_BALANCE_CR_BEQ | BeginBalanceCrBeq | ✅ |
+| BEGIN_BALANCE_DR | BeginBalanceDr | ✅ |
+| BEGIN_BALANCE_DR_BEQ | BeginBalanceDrBeq | ✅ |
+| BUDGET_VERSION_ID | BudgetVersionId | ✅ |
+| CODE_COMBINATION_ID | CodeCombinationId | ✅ |
+| CURRENCY_CODE | CurrencyCode | ✅ |
+| ENCUMBRANCE_DOC_ID | GlBalancesEncumbranceDocId | — |
+| ENCUMBRANCE_LINE_NUM | GlBalancesEncumbranceLineNum | — |
+| ENCUMBRANCE_TYPE_ID | EncumbranceTypeId | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDateBal | ✅ |
+| LAST_UPDATED_BY | LastUpdatedByBal | ✅ |
+| LEDGER_ID | LedgerId | ✅ |
+| OBJECT_VERSION_NUMBER | GlBalancesObjectVersionNumber | — |
+| PERIOD_NAME | PeriodName | ✅ |
+| PERIOD_NET_CR | PeriodNetCr | ✅ |
+| PERIOD_NET_CR_BEQ | PeriodNetCrBeq | ✅ |
+| PERIOD_NET_DR | PeriodNetDr | ✅ |
+| PERIOD_NET_DR_BEQ | PeriodNetDrBeq | ✅ |
+| PERIOD_NUM | GlBalancesPeriodNum | — |
+| PERIOD_TO_DATE_ADB | GlBalancesPeriodToDateAdb | — |
+| PERIOD_TYPE | GlBalancesPeriodType | — |
+| PERIOD_YEAR | GlBalancesPeriodYear | — |
+| PROJECT_TO_DATE_ADB | GlBalancesProjectToDateAdb | — |
+| PROJECT_TO_DATE_CR | GlBalancesProjectToDateCr | — |
+| PROJECT_TO_DATE_CR_BEQ | GlBalancesProjectToDateCrBeq | — |
+| PROJECT_TO_DATE_DR | GlBalancesProjectToDateDr | — |
+| PROJECT_TO_DATE_DR_BEQ | GlBalancesProjectToDateDrBeq | — |
+| QUARTER_TO_DATE_ADB | GlBalancesQuarterToDateAdb | — |
+| QUARTER_TO_DATE_CR | GlBalancesQuarterToDateCr | ✅ |
+| QUARTER_TO_DATE_CR_BEQ | GlBalancesQuarterToDateCrBeq | ✅ |
+| QUARTER_TO_DATE_DR | GlBalancesQuarterToDateDr | ✅ |
+| QUARTER_TO_DATE_DR_BEQ | GlBalancesQuarterToDateDrBeq | ✅ |
+| REVALUATION_STATUS | GlBalancesRevaluationStatus | — |
+| TEMPLATE_ID | TemplateId | ✅ |
+| TRANSLATED_FLAG | TranslatedFlag | ✅ |
+| YEAR_TO_DATE_ADB | GlBalancesYearToDateAdb | — |
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[balancepvo|BalancePVO]] (GL · BICC: 23/38)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTUAL_FLAG | ActualFlag | ✅ |
+| BEGIN_BALANCE_CR | BeginBalanceCr | ✅ |
+| BEGIN_BALANCE_CR_BEQ | BeginBalanceCrBeq | ✅ |
+| BEGIN_BALANCE_DR | BeginBalanceDr | ✅ |
+| BEGIN_BALANCE_DR_BEQ | BeginBalanceDrBeq | ✅ |
+| BUDGET_VERSION_ID | BudgetVersionId | ✅ |
+| CODE_COMBINATION_ID | CodeCombinationId | ✅ |
+| CURRENCY_CODE | CurrencyCode | ✅ |
+| ENCUMBRANCE_DOC_ID | GlBalancesEncumbranceDocId | — |
+| ENCUMBRANCE_LINE_NUM | GlBalancesEncumbranceLineNum | — |
+| ENCUMBRANCE_TYPE_ID | EncumbranceTypeId | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDateBal | ✅ |
+| LAST_UPDATED_BY | LastUpdatedByBal | ✅ |
+| LEDGER_ID | LedgerId | ✅ |
+| OBJECT_VERSION_NUMBER | GlBalancesObjectVersionNumber | — |
+| PERIOD_NAME | PeriodName | ✅ |
+| PERIOD_NET_CR | PeriodNetCr | ✅ |
+| PERIOD_NET_CR_BEQ | PeriodNetCrBeq | ✅ |
+| PERIOD_NET_DR | PeriodNetDr | ✅ |
+| PERIOD_NET_DR_BEQ | PeriodNetDrBeq | ✅ |
+| PERIOD_NUM | GlBalancesPeriodNum | — |
+| PERIOD_TO_DATE_ADB | GlBalancesPeriodToDateAdb | — |
+| PERIOD_TYPE | GlBalancesPeriodType | — |
+| PERIOD_YEAR | GlBalancesPeriodYear | — |
+| PROJECT_TO_DATE_ADB | GlBalancesProjectToDateAdb | — |
+| PROJECT_TO_DATE_CR | GlBalancesProjectToDateCr | — |
+| PROJECT_TO_DATE_CR_BEQ | GlBalancesProjectToDateCrBeq | — |
+| PROJECT_TO_DATE_DR | GlBalancesProjectToDateDr | — |
+| PROJECT_TO_DATE_DR_BEQ | GlBalancesProjectToDateDrBeq | — |
+| QUARTER_TO_DATE_ADB | GlBalancesQuarterToDateAdb | — |
+| QUARTER_TO_DATE_CR | GlBalancesQuarterToDateCr | ✅ |
+| QUARTER_TO_DATE_CR_BEQ | GlBalancesQuarterToDateCrBeq | ✅ |
+| QUARTER_TO_DATE_DR | GlBalancesQuarterToDateDr | ✅ |
+| QUARTER_TO_DATE_DR_BEQ | GlBalancesQuarterToDateDrBeq | ✅ |
+| REVALUATION_STATUS | GlBalancesRevaluationStatus | — |
+| TEMPLATE_ID | TemplateId | ✅ |
+| TRANSLATED_FLAG | TranslatedFlag | ✅ |
+| YEAR_TO_DATE_ADB | GlBalancesYearToDateAdb | — |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — GL_BALANCES](https://docs.oracle.com/en/cloud/saas/financials/25a/oedmf/glbalances-25702.html)

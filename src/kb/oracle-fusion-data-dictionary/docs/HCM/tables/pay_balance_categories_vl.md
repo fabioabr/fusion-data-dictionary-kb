@@ -97,6 +97,98 @@ WHERE  SYSDATE BETWEEN vl.EFFECTIVE_START_DATE AND vl.EFFECTIVE_END_DATE;
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[balancecategoriespvo|BalanceCategoriesPVO]] (GL · BICC: 83/83)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BALANCE_CATEGORY_ID | BalanceCategoriesPEOBalanceCategoryId | ✅ |
+| BASE_BALANCE_CATEGORY_ID | BalanceCategoriesPEOBaseBalanceCategoryId | ✅ |
+| BASE_CATEGORY_NAME | BalanceCategoriesPEOBaseCategoryName | ✅ |
+| CREATED_BY | BalanceCategoriesPEOCreatedBy | ✅ |
+| CREATION_DATE | BalanceCategoriesPEOCreationDate | ✅ |
+| EFFECTIVE_END_DATE | BalanceCategoriesPEOEffectiveEndDate | ✅ |
+| EFFECTIVE_START_DATE | BalanceCategoriesPEOEffectiveStartDate | ✅ |
+| ENTERPRISE_ID | BalanceCategoriesPEOEnterpriseId | ✅ |
+| LAST_UPDATE_DATE | BalanceCategoriesPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | BalanceCategoriesPEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | BalanceCategoriesPEOLastUpdatedBy | ✅ |
+| LEGISLATION_CODE | BalanceCategoriesPEOLegislationCode | ✅ |
+| LEGISLATIVE_DATA_GROUP_ID | BalanceCategoriesPEOLegislativeDataGroupId | ✅ |
+| MODULE_ID | BalanceCategoriesPEOModuleId | ✅ |
+| OBJECT_VERSION_NUMBER | BalanceCategoriesPEOObjectVersionNumber | ✅ |
+| PBC_INFORMATION1 | BalanceCategoriesPEOPbcInformation1 | ✅ |
+| PBC_INFORMATION10 | BalanceCategoriesPEOPbcInformation10 | ✅ |
+| PBC_INFORMATION11 | BalanceCategoriesPEOPbcInformation11 | ✅ |
+| PBC_INFORMATION12 | BalanceCategoriesPEOPbcInformation12 | ✅ |
+| PBC_INFORMATION13 | BalanceCategoriesPEOPbcInformation13 | ✅ |
+| PBC_INFORMATION14 | BalanceCategoriesPEOPbcInformation14 | ✅ |
+| PBC_INFORMATION15 | BalanceCategoriesPEOPbcInformation15 | ✅ |
+| PBC_INFORMATION16 | BalanceCategoriesPEOPbcInformation16 | ✅ |
+| PBC_INFORMATION17 | BalanceCategoriesPEOPbcInformation17 | ✅ |
+| PBC_INFORMATION18 | BalanceCategoriesPEOPbcInformation18 | ✅ |
+| PBC_INFORMATION19 | BalanceCategoriesPEOPbcInformation19 | ✅ |
+| PBC_INFORMATION2 | BalanceCategoriesPEOPbcInformation2 | ✅ |
+| PBC_INFORMATION20 | BalanceCategoriesPEOPbcInformation20 | ✅ |
+| PBC_INFORMATION21 | BalanceCategoriesPEOPbcInformation21 | ✅ |
+| PBC_INFORMATION22 | BalanceCategoriesPEOPbcInformation22 | ✅ |
+| PBC_INFORMATION23 | BalanceCategoriesPEOPbcInformation23 | ✅ |
+| PBC_INFORMATION24 | BalanceCategoriesPEOPbcInformation24 | ✅ |
+| PBC_INFORMATION25 | BalanceCategoriesPEOPbcInformation25 | ✅ |
+| PBC_INFORMATION26 | BalanceCategoriesPEOPbcInformation26 | ✅ |
+| PBC_INFORMATION27 | BalanceCategoriesPEOPbcInformation27 | ✅ |
+| PBC_INFORMATION28 | BalanceCategoriesPEOPbcInformation28 | ✅ |
+| PBC_INFORMATION29 | BalanceCategoriesPEOPbcInformation29 | ✅ |
+| PBC_INFORMATION3 | BalanceCategoriesPEOPbcInformation3 | ✅ |
+| PBC_INFORMATION30 | BalanceCategoriesPEOPbcInformation30 | ✅ |
+| PBC_INFORMATION4 | BalanceCategoriesPEOPbcInformation4 | ✅ |
+| PBC_INFORMATION5 | BalanceCategoriesPEOPbcInformation5 | ✅ |
+| PBC_INFORMATION6 | BalanceCategoriesPEOPbcInformation6 | ✅ |
+| PBC_INFORMATION7 | BalanceCategoriesPEOPbcInformation7 | ✅ |
+| PBC_INFORMATION8 | BalanceCategoriesPEOPbcInformation8 | ✅ |
+| PBC_INFORMATION9 | BalanceCategoriesPEOPbcInformation9 | ✅ |
+| PBC_INFORMATION_CATEGORY | BalanceCategoriesPEOPbcInformationCategory | ✅ |
+| PBC_INFORMATION_DATE1 | BalanceCategoriesPEOPbcInformationDate1 | ✅ |
+| PBC_INFORMATION_DATE10 | BalanceCategoriesPEOPbcInformationDate10 | ✅ |
+| PBC_INFORMATION_DATE11 | BalanceCategoriesPEOPbcInformationDate11 | ✅ |
+| PBC_INFORMATION_DATE12 | BalanceCategoriesPEOPbcInformationDate12 | ✅ |
+| PBC_INFORMATION_DATE13 | BalanceCategoriesPEOPbcInformationDate13 | ✅ |
+| PBC_INFORMATION_DATE14 | BalanceCategoriesPEOPbcInformationDate14 | ✅ |
+| PBC_INFORMATION_DATE15 | BalanceCategoriesPEOPbcInformationDate15 | ✅ |
+| PBC_INFORMATION_DATE2 | BalanceCategoriesPEOPbcInformationDate2 | ✅ |
+| PBC_INFORMATION_DATE3 | BalanceCategoriesPEOPbcInformationDate3 | ✅ |
+| PBC_INFORMATION_DATE4 | BalanceCategoriesPEOPbcInformationDate4 | ✅ |
+| PBC_INFORMATION_DATE5 | BalanceCategoriesPEOPbcInformationDate5 | ✅ |
+| PBC_INFORMATION_DATE6 | BalanceCategoriesPEOPbcInformationDate6 | ✅ |
+| PBC_INFORMATION_DATE7 | BalanceCategoriesPEOPbcInformationDate7 | ✅ |
+| PBC_INFORMATION_DATE8 | BalanceCategoriesPEOPbcInformationDate8 | ✅ |
+| PBC_INFORMATION_DATE9 | BalanceCategoriesPEOPbcInformationDate9 | ✅ |
+| PBC_INFORMATION_NUMBER1 | BalanceCategoriesPEOPbcInformationNumber1 | ✅ |
+| PBC_INFORMATION_NUMBER10 | BalanceCategoriesPEOPbcInformationNumber10 | ✅ |
+| PBC_INFORMATION_NUMBER11 | BalanceCategoriesPEOPbcInformationNumber11 | ✅ |
+| PBC_INFORMATION_NUMBER12 | BalanceCategoriesPEOPbcInformationNumber12 | ✅ |
+| PBC_INFORMATION_NUMBER13 | BalanceCategoriesPEOPbcInformationNumber13 | ✅ |
+| PBC_INFORMATION_NUMBER14 | BalanceCategoriesPEOPbcInformationNumber14 | ✅ |
+| PBC_INFORMATION_NUMBER15 | BalanceCategoriesPEOPbcInformationNumber15 | ✅ |
+| PBC_INFORMATION_NUMBER16 | BalanceCategoriesPEOPbcInformationNumber16 | ✅ |
+| PBC_INFORMATION_NUMBER17 | BalanceCategoriesPEOPbcInformationNumber17 | ✅ |
+| PBC_INFORMATION_NUMBER18 | BalanceCategoriesPEOPbcInformationNumber18 | ✅ |
+| PBC_INFORMATION_NUMBER19 | BalanceCategoriesPEOPbcInformationNumber19 | ✅ |
+| PBC_INFORMATION_NUMBER2 | BalanceCategoriesPEOPbcInformationNumber2 | ✅ |
+| PBC_INFORMATION_NUMBER20 | BalanceCategoriesPEOPbcInformationNumber20 | ✅ |
+| PBC_INFORMATION_NUMBER3 | BalanceCategoriesPEOPbcInformationNumber3 | ✅ |
+| PBC_INFORMATION_NUMBER4 | BalanceCategoriesPEOPbcInformationNumber4 | ✅ |
+| PBC_INFORMATION_NUMBER5 | BalanceCategoriesPEOPbcInformationNumber5 | ✅ |
+| PBC_INFORMATION_NUMBER6 | BalanceCategoriesPEOPbcInformationNumber6 | ✅ |
+| PBC_INFORMATION_NUMBER7 | BalanceCategoriesPEOPbcInformationNumber7 | ✅ |
+| PBC_INFORMATION_NUMBER8 | BalanceCategoriesPEOPbcInformationNumber8 | ✅ |
+| PBC_INFORMATION_NUMBER9 | BalanceCategoriesPEOPbcInformationNumber9 | ✅ |
+| SAVE_RUN_BALANCE_ENABLED | BalanceCategoriesPEOSaveRunBalanceEnabled | ✅ |
+| USER_CATEGORY_NAME | BalanceCategoriesPEOUserCategoryName | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — PAY_BALANCE_CATEGORIES_VL](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/paybalancecategoriesvl.html)

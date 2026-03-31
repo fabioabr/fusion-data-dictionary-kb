@@ -103,3 +103,25 @@ WHERE  tl.LANGUAGE = 'PT';
 
 - [Oracle Docs -- IRC_CX_PAGES_TL](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/irccxpagestl.html)
 - [[hcm-module-data-dictionary]] -- Dossie do modulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[careersitepagepvo|CareerSitePagePVO]] (HCM · BICC: 1/13)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | SitePageTranslationPEOCreatedBy | — |
+| CREATION_DATE | SitePageTranslationPEOCreationDate | — |
+| LANGUAGE | SitePageTranslationPEOLanguage | — |
+| LAST_UPDATE_DATE | SitePageTranslationPEOLastUpdateDate | — |
+| LAST_UPDATE_LOGIN | SitePageTranslationPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | SitePageTranslationPEOLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber6 | — |
+| OG_DESCRIPTION | SitePageTranslationPEOOgDescription | — |
+| OG_IMAGE_SRC | SitePageTranslationPEOOgImageSrc | — |
+| PAGE_ID | PageId1 | — |
+| SEO_DESCRIPTION | SitePageTranslationPEOSeoDescription | — |
+| SOURCE_LANG | SitePageTranslationPEOSourceLang | — |
+| TITLE | SitePageTranslationPEOTitle | ✅ |

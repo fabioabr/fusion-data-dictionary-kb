@@ -96,6 +96,137 @@ WHERE  p.QUESTIONNAIRE_ID = :p_id AND p.STATUS_CODE = 'COMPLETED';
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[managerquestionnairequestionpvo|ManagerQuestionnaireQuestionPVO]] (HCM)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | QuestionnaireParticipantPEOBusinessGroupId | — |
+| LAST_UPDATE_DATE | QuestionnaireBPEOLastUpdateDate | — |
+| PARTICIPANT_ID | QuestionnaireParticipantPEOParticipantId | — |
+| PARTICIPANT_TYPE | QuestionnaireParticipantPEOParticipantType | — |
+| QSTNR_PARTICIPANT_ID | QuestionnaireParticipantPEOQstnrParticipantId | — |
+| QUESTIONNAIRE_ID | QuestionnaireParticipantPEOQuestionnaireId | — |
+| STATUS | QuestionnaireParticipantPEOStatus | — |
+| SUBJECT_CODE | QuestionnaireParticipantPEOSubjectCode | — |
+| SUBJECT_ID | QuestionnaireParticipantPEOSubjectId | — |
+| SUBMITTED_DATE_TIME | QuestionnaireParticipantPEOSubmittedDateTime | — |
+| SUBSCRIBER_ID | QuestionnaireParticipantPEOSubscriberId | — |
+
+### [[participantquestionnairequestionpvo|ParticipantQuestionnaireQuestionPVO]] (HCM · BICC: 4/11)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | QuestionnaireParticipantPEOBusinessGroupId | ✅ |
+| LAST_UPDATE_DATE | QuestionnaireBPEOLastUpdateDate | — |
+| PARTICIPANT_ID | QuestionnaireParticipantPEOParticipantId | — |
+| PARTICIPANT_TYPE | QuestionnaireParticipantPEOParticipantType | — |
+| QSTNR_PARTICIPANT_ID | QuestionnaireParticipantPEOQstnrParticipantId | ✅ |
+| QUESTIONNAIRE_ID | QuestionnaireParticipantPEOQuestionnaireId | ✅ |
+| STATUS | QuestionnaireParticipantPEOStatus | — |
+| SUBJECT_CODE | QuestionnaireParticipantPEOSubjectCode | — |
+| SUBJECT_ID | QuestionnaireParticipantPEOSubjectId | ✅ |
+| SUBMITTED_DATE_TIME | QuestionnaireParticipantPEOSubmittedDateTime | — |
+| SUBSCRIBER_ID | QuestionnaireParticipantPEOSubscriberId | — |
+
+### [[participantquestionnairequestionpvoforpotentialassessement|ParticipantQuestionnaireQuestionPVOForPotentialAssessement]] (HCM)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | QuestionnaireParticipantPEOBusinessGroupId | — |
+| LAST_UPDATE_DATE | QuestionnaireBPEOLastUpdateDate | — |
+| PARTICIPANT_ID | QuestionnaireParticipantPEOParticipantId | — |
+| PARTICIPANT_TYPE | QuestionnaireParticipantPEOParticipantType | — |
+| QSTNR_PARTICIPANT_ID | QuestionnaireParticipantPEOQstnrParticipantId | — |
+| QUESTIONNAIRE_ID | QuestionnaireParticipantPEOQuestionnaireId | — |
+| STATUS | QuestionnaireParticipantPEOStatus | — |
+| SUBJECT_CODE | QuestionnaireParticipantPEOSubjectCode | — |
+| SUBJECT_ID | QuestionnaireParticipantPEOSubjectId | — |
+| SUBMITTED_DATE_TIME | QuestionnaireParticipantPEOSubmittedDateTime | — |
+| SUBSCRIBER_ID | QuestionnaireParticipantPEOSubscriberId | — |
+
+### [[participantquestionnairequestionresponsepvo|ParticipantQuestionnaireQuestionResponsePVO]] (HCM · BICC: 4/16)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | QuestionnairePartcipantPEOBusinessGroupId | ✅ |
+| CREATED_BY | QuestionnaireParticipantPEOCreatedBy | — |
+| CREATION_DATE | QuestionnaireParticipantPEOCreationDate | — |
+| LAST_UPDATE_DATE | QuestionnaireParticipantPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | QuestionnaireParticipantPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | QuestionnaireParticipantPEOLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | QuestionnaireParticipantPEOObjectVersionNumber | — |
+| PARTICIPANT_ID | QuestionnairePartcipantPEOParticipantId | — |
+| PARTICIPANT_TYPE | QuestionnaireParticipantPEOParticipantType | — |
+| QSTNR_PARTICIPANT_ID | QuestionnairePartcipantPEOQstnrParticipantId | ✅ |
+| QUESTIONNAIRE_ID | QuestionnairePartcipantPEOQuestionnaireId | — |
+| STATUS | QuestionnaireParticipantPEOStatus | — |
+| SUBJECT_CODE | QuestionnaireParticipantPEOSubjectCode | — |
+| SUBJECT_ID | QuestionnairePartcipantPEOSubjectId | — |
+| SUBMITTED_DATE_TIME | QuestionnaireParticipantPEOSubmittedDateTime | ✅ |
+| SUBSCRIBER_ID | QuestionnairePartcipantPEOSubscriberId | — |
+
+### [[participantresponsepvo|ParticipantResponsePVO]] (HCM · BICC: 6/16)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | QuestionnairePartcipantPEOBusinessGroupId | ✅ |
+| CREATED_BY | QuestionnaireParticipantPEOCreatedBy | — |
+| CREATION_DATE | QuestionnaireParticipantPEOCreationDate | — |
+| LAST_UPDATE_DATE | QuestionnaireParticipantPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | QuestionnaireParticipantPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | QuestionnaireParticipantPEOLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | QuestionnaireParticipantPEOObjectVersionNumber | — |
+| PARTICIPANT_ID | QuestionnairePartcipantPEOParticipantId | ✅ |
+| PARTICIPANT_TYPE | QuestionnaireParticipantPEOParticipantType | — |
+| QSTNR_PARTICIPANT_ID | QuestionnairePartcipantPEOQstnrParticipantId | ✅ |
+| QUESTIONNAIRE_ID | QuestionnairePartcipantPEOQuestionnaireId | — |
+| STATUS | QuestionnaireParticipantPEOStatus | — |
+| SUBJECT_CODE | QuestionnaireParticipantPEOSubjectCode | — |
+| SUBJECT_ID | QuestionnairePartcipantPEOSubjectId | ✅ |
+| SUBMITTED_DATE_TIME | QuestionnaireParticipantPEOSubmittedDateTime | ✅ |
+| SUBSCRIBER_ID | QuestionnairePartcipantPEOSubscriberId | — |
+
+### [[questionnairequestionresponsepvo|QuestionnaireQuestionResponsePVO]] (HCM · BICC: 4/16)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | QuestionnairePartcipantPEOBusinessGroupId | ✅ |
+| CREATED_BY | QuestionnaireParticipantPEOCreatedBy | — |
+| CREATION_DATE | QuestionnaireParticipantPEOCreationDate | — |
+| LAST_UPDATE_DATE | QuestionnaireParticipantPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | QuestionnaireParticipantPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | QuestionnaireParticipantPEOLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | QuestionnaireParticipantPEOObjectVersionNumber | — |
+| PARTICIPANT_ID | QuestionnairePartcipantPEOParticipantId | — |
+| PARTICIPANT_TYPE | QuestionnaireParticipantPEOParticipantType | — |
+| QSTNR_PARTICIPANT_ID | QuestionnairePartcipantPEOQstnrParticipantId | ✅ |
+| QUESTIONNAIRE_ID | QuestionnairePartcipantPEOQuestionnaireId | — |
+| STATUS | QuestionnaireParticipantPEOStatus | — |
+| SUBJECT_CODE | QuestionnaireParticipantPEOSubjectCode | — |
+| SUBJECT_ID | QuestionnairePartcipantPEOSubjectId | ✅ |
+| SUBMITTED_DATE_TIME | QuestionnaireParticipantPEOSubmittedDateTime | — |
+| SUBSCRIBER_ID | QuestionnairePartcipantPEOSubscriberId | — |
+
+### [[workerquestionnairequestionpvo|WorkerQuestionnaireQuestionPVO]] (HCM)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | QuestionnaireParticipantPEOBusinessGroupId | — |
+| LAST_UPDATE_DATE | QuestionnaireBPEOLastUpdateDate | — |
+| PARTICIPANT_ID | QuestionnaireParticipantPEOParticipantId | — |
+| PARTICIPANT_TYPE | QuestionnaireParticipantPEOParticipantType | — |
+| QSTNR_PARTICIPANT_ID | QuestionnaireParticipantPEOQstnrParticipantId | — |
+| QUESTIONNAIRE_ID | QuestionnaireParticipantPEOQuestionnaireId | — |
+| STATUS | QuestionnaireParticipantPEOStatus | — |
+| SUBJECT_CODE | QuestionnaireParticipantPEOSubjectCode | — |
+| SUBJECT_ID | QuestionnaireParticipantPEOSubjectId | — |
+| SUBMITTED_DATE_TIME | QuestionnaireParticipantPEOSubmittedDateTime | — |
+| SUBSCRIBER_ID | QuestionnaireParticipantPEOSubscriberId | — |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Fusion HCM Tables and Views](https://docs.oracle.com/en/cloud/saas/human-resources/25a/)

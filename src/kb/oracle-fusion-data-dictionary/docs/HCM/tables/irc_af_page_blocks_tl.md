@@ -111,3 +111,23 @@ WHERE  tl.PAGE_BLOCK_ID = :p_pb_id;
 
 - [Oracle Docs — IRC_AF_PAGE_BLOCKS_TL](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/ircafpageblockstl.html)
 - [[hcm-module-data-dictionary]] — Dossie do modulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[applyflowpageblockpvo|ApplyFlowPageBlockPVO]] (HCM · BICC: 3/11)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | AFPageBlockTranslationPEOCreatedBy | — |
+| CREATION_DATE | AFPageBlockTranslationPEOCreationDate | — |
+| LANGUAGE | AFPageBlockTranslationPEOLanguage | — |
+| LAST_UPDATE_DATE | AFPageBlockTranslationPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | AFPageBlockTranslationPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | AFPageBlockTranslationPEOLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | AFPageBlockTranslationPEOObjectVersionNumber | — |
+| PAGE_BLOCK_ID | AFPageBlockTranslationPEOPageBlockId | — |
+| PAGE_BLOCK_INSTRUCTIONS | AFPageBlockTranslationPEOPageBlockInstructions | ✅ |
+| PAGE_BLOCK_TITLE | AFPageBlockTranslationPEOPageBlockTitle | ✅ |
+| SOURCE_LANG | AFPageBlockTranslationPEOSourceLang | — |

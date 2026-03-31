@@ -95,6 +95,137 @@ ORDER BY qq.SEQUENCE_NUMBER;
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[managerquestionnairequestionpvo|ManagerQuestionnaireQuestionPVO]] (HCM · BICC: 2/17)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ADHOC_QSTN | QuestionnaireQuestionPEOAdhocQstn | — |
+| BUSINESS_GROUP_ID | QuestionnaireQuestionPEOBusinessGroupId | — |
+| CREATED_BY | QuestionnaireQuestionPEOCreatedBy | — |
+| CREATION_DATE | QuestionnaireQuestionPEOCreationDate | — |
+| KEEP_WITH_PREV | QuestionnaireQuestionPEOKeepWithPrev | — |
+| LAST_UPDATE_DATE | QuestionnaireQuestionPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | QuestionnaireQuestionPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | QuestionnaireQuestionPEOLastUpdatedBy | — |
+| MANDATORY | QuestionnaireQuestionPEOMandatory | ✅ |
+| MODULE_ID | QuestionnaireQuestionPEOModuleId | — |
+| OBJECT_VERSION_NUMBER | QuestionnaireQuestionPEOObjectVersionNumber | — |
+| QSTN_VERSION_NUM | QuestionnaireQuestionPEOQstnVersionNum | — |
+| QSTNR_QUESTION_ID | QuestionnaireQuestionPEOQstnrQuestionId | — |
+| QSTNR_SECTION_ID | QuestionnaireQuestionPEOQstnrSectionId | — |
+| QUESTION_ID | QuestionnaireQuestionPEOQuestionId | — |
+| RESPONSE_TYPE_ID | QuestionnaireQuestionPEOResponseTypeId | — |
+| SEQ_NUM | QuestionnaireQuestionPEOSeqNum | — |
+
+### [[participantquestionnairequestionpvo|ParticipantQuestionnaireQuestionPVO]] (HCM · BICC: 6/17)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ADHOC_QSTN | QuestionnaireQuestionPEOAdhocQstn | ✅ |
+| BUSINESS_GROUP_ID | QuestionnaireQuestionPEOBusinessGroupId | ✅ |
+| CREATED_BY | QuestionnaireQuestionPEOCreatedBy | — |
+| CREATION_DATE | QuestionnaireQuestionPEOCreationDate | — |
+| KEEP_WITH_PREV | QuestionnaireQuestionPEOKeepWithPrev | — |
+| LAST_UPDATE_DATE | QuestionnaireQuestionPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | QuestionnaireQuestionPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | QuestionnaireQuestionPEOLastUpdatedBy | — |
+| MANDATORY | QuestionnaireQuestionPEOMandatory | ✅ |
+| MODULE_ID | QuestionnaireQuestionPEOModuleId | — |
+| OBJECT_VERSION_NUMBER | QuestionnaireQuestionPEOObjectVersionNumber | — |
+| QSTN_VERSION_NUM | QuestionnaireQuestionPEOQstnVersionNum | — |
+| QSTNR_QUESTION_ID | QuestionnaireQuestionPEOQstnrQuestionId | ✅ |
+| QSTNR_SECTION_ID | QuestionnaireQuestionPEOQstnrSectionId | — |
+| QUESTION_ID | QuestionnaireQuestionPEOQuestionId | — |
+| RESPONSE_TYPE_ID | QuestionnaireQuestionPEOResponseTypeId | — |
+| SEQ_NUM | QuestionnaireQuestionPEOSeqNum | ✅ |
+
+### [[participantquestionnairequestionpvoforpotentialassessement|ParticipantQuestionnaireQuestionPVOForPotentialAssessement]] (HCM · BICC: 3/17)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ADHOC_QSTN | QuestionnaireQuestionPEOAdhocQstn | — |
+| BUSINESS_GROUP_ID | QuestionnaireQuestionPEOBusinessGroupId | — |
+| CREATED_BY | QuestionnaireQuestionPEOCreatedBy | — |
+| CREATION_DATE | QuestionnaireQuestionPEOCreationDate | — |
+| KEEP_WITH_PREV | QuestionnaireQuestionPEOKeepWithPrev | — |
+| LAST_UPDATE_DATE | QuestionnaireQuestionPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | QuestionnaireQuestionPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | QuestionnaireQuestionPEOLastUpdatedBy | — |
+| MANDATORY | QuestionnaireQuestionPEOMandatory | — |
+| MODULE_ID | QuestionnaireQuestionPEOModuleId | — |
+| OBJECT_VERSION_NUMBER | QuestionnaireQuestionPEOObjectVersionNumber | — |
+| QSTN_VERSION_NUM | QuestionnaireQuestionPEOQstnVersionNum | ✅ |
+| QSTNR_QUESTION_ID | QuestionnaireQuestionPEOQstnrQuestionId | ✅ |
+| QSTNR_SECTION_ID | QuestionnaireQuestionPEOQstnrSectionId | — |
+| QUESTION_ID | QuestionnaireQuestionPEOQuestionId | — |
+| RESPONSE_TYPE_ID | QuestionnaireQuestionPEOResponseTypeId | — |
+| SEQ_NUM | QuestionnaireQuestionPEOSeqNum | — |
+
+### [[questionnaireallquestionsp1|QuestionnaireAllQuestionsP1]] (HCM · BICC: 4/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ADHOC_QSTN | QuestionnaireQuestionPEOAdhocQstn | — |
+| BUSINESS_GROUP_ID | QuestionnaireQuestionPEOBusinessGroupId | — |
+| LOCK_QUESTION_FLAG | QuestionnaireQuestionPEOLockQuestionFlag | — |
+| MANDATORY | QuestionnaireQuestionPEOMandatory | ✅ |
+| MAX_POSSIBLE_SCORE | QuestionnaireQuestionPEOMaxPossibleScore | — |
+| MAX_THRESHOLD_SCORE | QuestionnaireQuestionPEOMaxThresholdScore | ✅ |
+| MIN_THRESHOLD_SCORE | QuestionnaireQuestionPEOMinThresholdScore | ✅ |
+| QSTN_VERSION_NUM | QuestionnaireQuestionPEOQstnVersionNum | — |
+| QSTNR_QUESTION_ID | QuestionnaireQuestionPEOQstnrQuestionId | — |
+| QUESTION_ID | QuestionnaireQuestionPEOQuestionId | — |
+| SEED_DATA_SOURCE | QuestionnaireQuestionPEOSeedDataSource | — |
+| SEQ_NUM | QuestionnaireQuestionPEOSeqNum | ✅ |
+
+### [[questionnairequestionpvo|QuestionnaireQuestionPVO]] (HCM · BICC: 5/17)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ADHOC_QSTN | QuestionnaireQuestionPEOAdhocQstn | ✅ |
+| BUSINESS_GROUP_ID | QuestionnaireQuestionPEOBusinessGroupId | ✅ |
+| CREATED_BY | QuestionnaireQuestionPEOCreatedBy | — |
+| CREATION_DATE | QuestionnaireQuestionPEOCreationDate | — |
+| KEEP_WITH_PREV | QuestionnaireQuestionPEOKeepWithPrev | — |
+| LAST_UPDATE_DATE | QuestionnaireQuestionPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | QuestionnaireQuestionPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | QuestionnaireQuestionPEOLastUpdatedBy | — |
+| MANDATORY | QuestionnaireQuestionPEOMandatory | ✅ |
+| MODULE_ID | QuestionnaireQuestionPEOModuleId | — |
+| OBJECT_VERSION_NUMBER | QuestionnaireQuestionPEOObjectVersionNumber | — |
+| QSTN_VERSION_NUM | QuestionnaireQuestionPEOQstnVersionNum | — |
+| QSTNR_QUESTION_ID | QuestionnaireQuestionPEOQstnrQuestionId | ✅ |
+| QSTNR_SECTION_ID | QuestionnaireQuestionPEOQstnrSectionId | — |
+| QUESTION_ID | QuestionnaireQuestionPEOQuestionId | — |
+| RESPONSE_TYPE_ID | QuestionnaireQuestionPEOResponseTypeId | — |
+| SEQ_NUM | QuestionnaireQuestionPEOSeqNum | — |
+
+### [[workerquestionnairequestionpvo|WorkerQuestionnaireQuestionPVO]] (HCM · BICC: 2/17)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ADHOC_QSTN | QuestionnaireQuestionPEOAdhocQstn | — |
+| BUSINESS_GROUP_ID | QuestionnaireQuestionPEOBusinessGroupId | — |
+| CREATED_BY | QuestionnaireQuestionPEOCreatedBy | — |
+| CREATION_DATE | QuestionnaireQuestionPEOCreationDate | — |
+| KEEP_WITH_PREV | QuestionnaireQuestionPEOKeepWithPrev | — |
+| LAST_UPDATE_DATE | QuestionnaireQuestionPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | QuestionnaireQuestionPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | QuestionnaireQuestionPEOLastUpdatedBy | — |
+| MANDATORY | QuestionnaireQuestionPEOMandatory | ✅ |
+| MODULE_ID | QuestionnaireQuestionPEOModuleId | — |
+| OBJECT_VERSION_NUMBER | QuestionnaireQuestionPEOObjectVersionNumber | — |
+| QSTN_VERSION_NUM | QuestionnaireQuestionPEOQstnVersionNum | — |
+| QSTNR_QUESTION_ID | QuestionnaireQuestionPEOQstnrQuestionId | — |
+| QSTNR_SECTION_ID | QuestionnaireQuestionPEOQstnrSectionId | — |
+| QUESTION_ID | QuestionnaireQuestionPEOQuestionId | — |
+| RESPONSE_TYPE_ID | QuestionnaireQuestionPEOResponseTypeId | — |
+| SEQ_NUM | QuestionnaireQuestionPEOSeqNum | — |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Fusion HCM Tables and Views](https://docs.oracle.com/en/cloud/saas/human-resources/25a/)

@@ -86,6 +86,44 @@ SELECT csh.SCHEDULE_HEADER_NAME,
 - Faixas de valor (`AMOUNT_FROM`/`AMOUNT_TO`) e faixas de dias (`OVERDUE_DAYS_FROM`/`OVERDUE_DAYS_TO`) não devem se sobrepor dentro do mesmo cronograma.
 - A ausência de `AMOUNT_TO` ou `OVERDUE_DAYS_TO` pode indicar faixa aberta (sem limite superior).
 
+## 🔗 PVOs Relacionados
+
+### [[chargeschedulelineextractpvo|ChargeScheduleLineExtractPVO]] (OTHER · BICC: 13/29)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| AGING_BUCKET_ID | ArChargeScheduleLineAgingBucketId | ✅ |
+| AGING_BUCKET_LINE_ID | ArChargeScheduleLineAgingBucketLineId | ✅ |
+| AMOUNT | ArChargeScheduleLineAmount | ✅ |
+| ATTRIBUTE1 | ArChargeScheduleLineAttribute1 | — |
+| ATTRIBUTE10 | ArChargeScheduleLineAttribute10 | — |
+| ATTRIBUTE11 | ArChargeScheduleLineAttribute11 | — |
+| ATTRIBUTE12 | ArChargeScheduleLineAttribute12 | — |
+| ATTRIBUTE13 | ArChargeScheduleLineAttribute13 | — |
+| ATTRIBUTE14 | ArChargeScheduleLineAttribute14 | — |
+| ATTRIBUTE15 | ArChargeScheduleLineAttribute15 | — |
+| ATTRIBUTE2 | ArChargeScheduleLineAttribute2 | — |
+| ATTRIBUTE3 | ArChargeScheduleLineAttribute3 | — |
+| ATTRIBUTE4 | ArChargeScheduleLineAttribute4 | — |
+| ATTRIBUTE5 | ArChargeScheduleLineAttribute5 | — |
+| ATTRIBUTE6 | ArChargeScheduleLineAttribute6 | — |
+| ATTRIBUTE7 | ArChargeScheduleLineAttribute7 | — |
+| ATTRIBUTE8 | ArChargeScheduleLineAttribute8 | — |
+| ATTRIBUTE9 | ArChargeScheduleLineAttribute9 | — |
+| ATTRIBUTE_CATEGORY | ArChargeScheduleLineAttributeCategory | — |
+| CREATED_BY | ArChargeScheduleLineCreatedBy | ✅ |
+| CREATION_DATE | ArChargeScheduleLineCreationDate | ✅ |
+| LAST_UPDATE_DATE | ArChargeScheduleLineLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ArChargeScheduleLineLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | ArChargeScheduleLineLastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | ArChargeScheduleLineObjectVersionNumber | ✅ |
+| RATE | ArChargeScheduleLineRate | ✅ |
+| SCHEDULE_HEADER_ID | ArChargeScheduleLineScheduleHeaderId | ✅ |
+| SCHEDULE_ID | ArChargeScheduleLineScheduleId | ✅ |
+| SCHEDULE_LINE_ID | ArChargeScheduleLineScheduleLineId | ✅ |
+
+---
+
 ## 📚 Referências
 
 - Oracle Fusion Cloud Financials — Accounts Receivable Tables (OEDMF Release 13).

@@ -100,3 +100,115 @@ WHERE  dsu.ENABLED_FLAG = 'Y';
 
 - [Oracle Docs — HWM_DATA_SOURCE_USAGES_V](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/hwmdatasourceusagesv.html)
 - [[hcm-module-data-dictionary]] — Dossie do modulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[timeattributefieldallocationpvo|TimeAttributeFieldAllocationPVO]] (GL)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ADMIN_DS_FLAG | AdminDataSrcUsgsPEOAdminDsFlag | — |
+| ADMIN_DS_FLAG | AdminDefaultDataSrcUsgsPEOAdminDsFlag | — |
+| DATA_SOURCE_CODE | AdminDataSrcUsgsPEODataSourceCode | — |
+| DATA_SOURCE_CODE | AdminDefaultDataSrcUsgsPEODataSourceCode | — |
+| DATA_SOURCE_CODE | UserDataSrcUsgsPEODataSourceCode | — |
+| DATA_SOURCE_CODE | UserDefaultDataSrcUsgsPEODataSourceCode | — |
+| DATA_SOURCE_ID | AdminDataSrcUsgsPEODataSourceId | — |
+| DATA_SOURCE_ID | AdminDefaultDataSrcUsgsPEODataSourceId | — |
+| DATA_SOURCE_ID | UserDataSrcUsgsPEODataSourceId | — |
+| DATA_SOURCE_ID | UserDefaultDataSrcUsgsPEODataSourceId | — |
+| DATA_SOURCE_USAGE_ID | AdminDataSrcUsgsPEODataSourceUsageId | — |
+| DATA_SOURCE_USAGE_ID | AdminDefaultDataSrcUsgsPEODataSourceUsageId | — |
+| DATA_SOURCE_USAGE_ID | UserDataSrcUsgsPEODataSourceUsageId | — |
+| DATA_SOURCE_USAGE_ID | UserDefaultDataSrcUsgsPEODataSourceUsageId | — |
+| DEFAULT_FLAG | AdminDefaultDataSrcUsgsPEODefaultFlag | — |
+| DEFAULT_FLAG | UserDefaultDataSrcUsgsPEODefaultFlag | — |
+| DISPLAY_NAME | AdminDataSrcUsgsPEODisplayName | — |
+| DISPLAY_NAME | AdminDefaultDataSrcUsgsPEODisplayName | — |
+| DISPLAY_NAME | UserDataSrcUsgsPEODisplayName | — |
+| DISPLAY_NAME | UserDefaultDataSrcUsgsPEODisplayName | — |
+| USER_DS_FLAG | UserDataSrcUsgsPEOUserDsFlag | — |
+| USER_DS_FLAG | UserDefaultDataSrcUsgsPEOUserDsFlag | — |
+
+### [[timeattributefieldcomponentpvo|TimeAttributeFieldComponentPVO]] (GL · BICC: 8/22)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ADMIN_DS_FLAG | AdminDataSrcUsgsPEOAdminDsFlag | — |
+| ADMIN_DS_FLAG | AdminDefaultDataSrcUsgsPEOAdminDsFlag | — |
+| DATA_SOURCE_CODE | AdminDataSrcUsgsPEODataSourceCode | ✅ |
+| DATA_SOURCE_CODE | AdminDefaultDataSrcUsgsPEODataSourceCode | — |
+| DATA_SOURCE_CODE | UserDataSrcUsgsPEODataSourceCode | ✅ |
+| DATA_SOURCE_CODE | UserDefaultDataSrcUsgsPEODataSourceCode | — |
+| DATA_SOURCE_ID | AdminDataSrcUsgsPEODataSourceId | ✅ |
+| DATA_SOURCE_ID | AdminDefaultDataSrcUsgsPEODataSourceId | — |
+| DATA_SOURCE_ID | UserDataSrcUsgsPEODataSourceId | ✅ |
+| DATA_SOURCE_ID | UserDefaultDataSrcUsgsPEODataSourceId | — |
+| DATA_SOURCE_USAGE_ID | AdminDataSrcUsgsPEODataSourceUsageId | ✅ |
+| DATA_SOURCE_USAGE_ID | AdminDefaultDataSrcUsgsPEODataSourceUsageId | — |
+| DATA_SOURCE_USAGE_ID | UserDataSrcUsgsPEODataSourceUsageId | ✅ |
+| DATA_SOURCE_USAGE_ID | UserDefaultDataSrcUsgsPEODataSourceUsageId | — |
+| DEFAULT_FLAG | AdminDefaultDataSrcUsgsPEODefaultFlag | — |
+| DEFAULT_FLAG | UserDefaultDataSrcUsgsPEODefaultFlag | — |
+| DISPLAY_NAME | AdminDataSrcUsgsPEODisplayName | ✅ |
+| DISPLAY_NAME | AdminDefaultDataSrcUsgsPEODisplayName | — |
+| DISPLAY_NAME | UserDataSrcUsgsPEODisplayName | ✅ |
+| DISPLAY_NAME | UserDefaultDataSrcUsgsPEODisplayName | — |
+| USER_DS_FLAG | UserDataSrcUsgsPEOUserDsFlag | — |
+| USER_DS_FLAG | UserDefaultDataSrcUsgsPEOUserDsFlag | — |
+
+### [[timeattributefieldcustompvo|TimeAttributeFieldCustomPVO]] (GL · BICC: 8/22)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ADMIN_DS_FLAG | AdminDataSrcUsgsPEOAdminDsFlag | — |
+| ADMIN_DS_FLAG | AdminDefaultDataSrcUsgsPEOAdminDsFlag | — |
+| DATA_SOURCE_CODE | AdminDataSrcUsgsPEODataSourceCode | — |
+| DATA_SOURCE_CODE | AdminDefaultDataSrcUsgsPEODataSourceCode | ✅ |
+| DATA_SOURCE_CODE | UserDataSrcUsgsPEODataSourceCode | — |
+| DATA_SOURCE_CODE | UserDefaultDataSrcUsgsPEODataSourceCode | ✅ |
+| DATA_SOURCE_ID | AdminDataSrcUsgsPEODataSourceId | — |
+| DATA_SOURCE_ID | AdminDefaultDataSrcUsgsPEODataSourceId | ✅ |
+| DATA_SOURCE_ID | UserDataSrcUsgsPEODataSourceId | — |
+| DATA_SOURCE_ID | UserDefaultDataSrcUsgsPEODataSourceId | ✅ |
+| DATA_SOURCE_USAGE_ID | AdminDataSrcUsgsPEODataSourceUsageId | — |
+| DATA_SOURCE_USAGE_ID | AdminDefaultDataSrcUsgsPEODataSourceUsageId | ✅ |
+| DATA_SOURCE_USAGE_ID | UserDataSrcUsgsPEODataSourceUsageId | — |
+| DATA_SOURCE_USAGE_ID | UserDefaultDataSrcUsgsPEODataSourceUsageId | ✅ |
+| DEFAULT_FLAG | AdminDefaultDataSrcUsgsPEODefaultFlag | — |
+| DEFAULT_FLAG | UserDefaultDataSrcUsgsPEODefaultFlag | — |
+| DISPLAY_NAME | AdminDataSrcUsgsPEODisplayName | — |
+| DISPLAY_NAME | AdminDefaultDataSrcUsgsPEODisplayName | ✅ |
+| DISPLAY_NAME | UserDataSrcUsgsPEODisplayName | — |
+| DISPLAY_NAME | UserDefaultDataSrcUsgsPEODisplayName | ✅ |
+| USER_DS_FLAG | UserDataSrcUsgsPEOUserDsFlag | — |
+| USER_DS_FLAG | UserDefaultDataSrcUsgsPEOUserDsFlag | — |
+
+### [[timeattributefieldpvo|TimeAttributeFieldPVO]] (GL)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ADMIN_DS_FLAG | AdminDataSrcUsgsPEOAdminDsFlag | — |
+| ADMIN_DS_FLAG | AdminDefaultDataSrcUsgsPEOAdminDsFlag | — |
+| DATA_SOURCE_CODE | AdminDataSrcUsgsPEODataSourceCode | — |
+| DATA_SOURCE_CODE | AdminDefaultDataSrcUsgsPEODataSourceCode | — |
+| DATA_SOURCE_CODE | UserDataSrcUsgsPEODataSourceCode | — |
+| DATA_SOURCE_CODE | UserDefaultDataSrcUsgsPEODataSourceCode | — |
+| DATA_SOURCE_ID | AdminDataSrcUsgsPEODataSourceId | — |
+| DATA_SOURCE_ID | AdminDefaultDataSrcUsgsPEODataSourceId | — |
+| DATA_SOURCE_ID | UserDataSrcUsgsPEODataSourceId | — |
+| DATA_SOURCE_ID | UserDefaultDataSrcUsgsPEODataSourceId | — |
+| DATA_SOURCE_USAGE_ID | AdminDataSrcUsgsPEODataSourceUsageId | — |
+| DATA_SOURCE_USAGE_ID | AdminDefaultDataSrcUsgsPEODataSourceUsageId | — |
+| DATA_SOURCE_USAGE_ID | UserDataSrcUsgsPEODataSourceUsageId | — |
+| DATA_SOURCE_USAGE_ID | UserDefaultDataSrcUsgsPEODataSourceUsageId | — |
+| DEFAULT_FLAG | AdminDefaultDataSrcUsgsPEODefaultFlag | — |
+| DEFAULT_FLAG | UserDefaultDataSrcUsgsPEODefaultFlag | — |
+| DISPLAY_NAME | AdminDataSrcUsgsPEODisplayName | — |
+| DISPLAY_NAME | AdminDefaultDataSrcUsgsPEODisplayName | — |
+| DISPLAY_NAME | UserDataSrcUsgsPEODisplayName | — |
+| DISPLAY_NAME | UserDefaultDataSrcUsgsPEODisplayName | — |
+| USER_DS_FLAG | UserDataSrcUsgsPEOUserDsFlag | — |
+| USER_DS_FLAG | UserDefaultDataSrcUsgsPEOUserDsFlag | — |

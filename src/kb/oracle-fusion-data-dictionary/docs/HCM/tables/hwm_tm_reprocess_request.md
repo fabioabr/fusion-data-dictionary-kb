@@ -106,6 +106,26 @@ WHERE  r.REQUEST_STATUS = 'PENDING';
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[historicrptabstimeentrypvo|HistoricRptAbsTimeEntryPVO]] (HCM · BICC: 2/3)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| REPROCESS_REASON | ReprocessRequestPEOReprocessReason | ✅ |
+| REPROCESS_STATUS | ReprocessRequestPEOReprocessStatus | ✅ |
+| TM_REPROCESS_REQUEST_ID | ReprocessRequestPEOTmReprocessRequestId | — |
+
+### [[rptabstimeentrypvo|RptAbsTimeEntryPVO]] (HCM · BICC: 2/3)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| REPROCESS_REASON | ReprocessRequestPEOReprocessReason | ✅ |
+| REPROCESS_STATUS | ReprocessRequestPEOReprocessStatus | ✅ |
+| TM_REPROCESS_REQUEST_ID | ReprocessRequestPEOTmReprocessRequestId | — |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — HWM_TM_REPROCESS_REQUEST](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/hwmtmreprocessrequest.html)

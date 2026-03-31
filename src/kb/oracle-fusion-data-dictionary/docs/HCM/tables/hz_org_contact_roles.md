@@ -59,3 +59,21 @@ updated_at: 2026-03-26
 ## 📎 Uso Típico
 
 (a ser preenchido na etapa 03)
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[allsuppliercontactspvo|AllSupplierContactsPVO]] (PO · BICC: 1/9)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY_MODULE | OrgContRoleCreatedByModule | — |
+| ORG_CONTACT_ID | OrgContRoleOrgContactId | — |
+| ORG_CONTACT_ROLE_ID | OrgContRoleOrgContactRoleId | — |
+| ORIG_SYSTEM_REFERENCE | OrgContRoleOrigSystemReference | — |
+| PRIMARY_CONTACT_PER_ROLE_TYPE | OrgContRolePrimaryContactPerRoleType | — |
+| PRIMARY_FLAG | OrgContRolePrimaryFlag | — |
+| ROLE_LEVEL | OrgContRoleRoleLevel | — |
+| ROLE_TYPE | OrgContRoleRoleType | ✅ |
+| STATUS | OrgContRoleStatus | — |

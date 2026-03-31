@@ -100,6 +100,34 @@ WHERE  SYSDATE BETWEEN opm.EFFECTIVE_START_DATE AND opm.EFFECTIVE_END_DATE;
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[organizationpaymentmethoddpvo|OrganizationPaymentMethodDPVO]] (AP · BICC: 13/19)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BANK_ACCOUNT_ID | OrgnPaymentMethodBaseDPEOBankAccountId | ✅ |
+| BASE_ORG_PAY_METHOD_NAME | OrgnPaymentMethodBaseDPEOBaseOrgPayMethodName | ✅ |
+| CREATED_BY | OrgnPaymentMethodBaseDPEOCreatedBy | ✅ |
+| CREATION_DATE | OrgnPaymentMethodBaseDPEOCreationDate | ✅ |
+| CURRENCY_CODE | OrgnPaymentMethodBaseDPEOCurrencyCode | ✅ |
+| DEFINED_BALANCE_ID | OrgnPaymentMethodBaseDPEODefinedBalanceId | — |
+| EFFECTIVE_END_DATE | EffectiveEndDate | ✅ |
+| EFFECTIVE_START_DATE | EffectiveStartDate | ✅ |
+| LAST_UPDATE_DATE | OrgnPaymentMethodBaseDPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | OrgnPaymentMethodBaseDPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | OrgnPaymentMethodBaseDPEOLastUpdatedBy | ✅ |
+| LEGISLATIVE_DATA_GROUP_ID | OrgnPaymentMethodBaseDPEOLegislativeDataGroupId | ✅ |
+| OBJECT_VERSION_NUMBER | OrgnPaymentMethodBaseDPEOObjectVersionNumber | — |
+| ORG_PAYMENT_METHOD_ID | OrgPaymentMethodId | ✅ |
+| ORGANIZATION_ID | OrgnPaymentMethodBaseDPEOOrganizationId | ✅ |
+| PARENT_ORG_PAY_METHOD_ID | OrgnPaymentMethodBaseDPEOParentOrgPayMethodId | — |
+| PAYMENT_TYPE_ID | OrgnPaymentMethodBaseDPEOPaymentTypeId | — |
+| TIME_DEFINITION_ID | OrgnPaymentMethodBaseDPEOTimeDefinitionId | — |
+| TYPE | OrgnPaymentMethodBaseDPEOType | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — PAY_ORG_PAY_METHODS_F](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/payorgpaymethodsf.html)

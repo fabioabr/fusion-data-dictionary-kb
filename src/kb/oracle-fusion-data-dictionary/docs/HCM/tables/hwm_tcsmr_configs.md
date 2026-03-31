@@ -35,8 +35,6 @@ updated_at: 2026-03-25
 
 Define as configurações utilizadas para geração de resumos de cartão de ponto, incluindo parâmetros de agregação, períodos e critérios de inclusão.
 
-
-
 ---
 
 ## 🧠 Propósito de Negócio
@@ -101,6 +99,31 @@ WHERE  NVL(t.ENABLED_FLAG, 'Y') = 'Y'
 
 - Configurações impactam o comportamento do módulo; alterações requerem teste em ambiente de homologação.
 - Área funcional: Time Card Summary dentro do Oracle Fusion Cloud HCM.
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[timeconsumerconfigurationpvo|TimeConsumerConfigurationPVO]] (GL · BICC: 16/16)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| APPROVAL_PERIOD_ID | ApprovalPeriodId | ✅ |
+| APRVL_REC_GRP_TYP_CD | AprvlRecGrpTypCd | ✅ |
+| CREATED_BY | CreatedBy | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| ENABLE_ENTRY_LEVEL_APRVL | TimeConsumerConfigurationPEOEnableEntryLevelAprvl | ✅ |
+| ENTERPRISE_ID | EnterpriseId | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | LastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | ✅ |
+| TCAT_ID | TcatId | ✅ |
+| TCSMR_CONFIG_ID | TcsmrConfigId | ✅ |
+| TCSMR_CONFIG_SET_ID | TcsmrConfigSetId | ✅ |
+| TCSMRS_ID | TcsmrsId | ✅ |
+| TIME_REQUIRED | TimeRequired | ✅ |
+| VALIDATE_ON_SAVE | ValidateOnSave | ✅ |
 
 ---
 

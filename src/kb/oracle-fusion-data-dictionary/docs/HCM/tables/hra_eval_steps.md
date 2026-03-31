@@ -114,6 +114,180 @@ WHERE  r.PERSON_ID = :p_person_id;
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[evalstepsextractpvo|EvalStepsExtractPVO]] (HCM · BICC: 27/27)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_PERFORMED_BY | ActionPerformedBy | ✅ |
+| ACTION_PERFORMED_DATE | ActionPerformedDate | ✅ |
+| ACTION_REASON | ActionReason | ✅ |
+| BUSINESS_GROUP_ID | BusinessGroupId | ✅ |
+| CREATED_BY | CreatedBy | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| CRITICAL_ALERT_DAYS | CriticalAlertDays | ✅ |
+| DUE_DATE | DueDate | ✅ |
+| EVAL_PARTICIPANT_ID | EvalParticipantId | ✅ |
+| EVAL_STEP_ID | EvalStepId | ✅ |
+| EVALUATION_ID | EvaluationId | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | LastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | ✅ |
+| PARENT_STEP_ID | ParentStepId | ✅ |
+| SEQUENCE_NUMBER | SequenceNumber | ✅ |
+| STANDARD_ALERT_DAYS | StandardAlertDays | ✅ |
+| STEP_CODE | StepCode | ✅ |
+| STEP_COMPLETED_BY | StepCompletedBy | ✅ |
+| STEP_COMPLETION_DATE | StepCompletionDate | ✅ |
+| STEP_STATUS | StepStatus | ✅ |
+| STEP_SUB_STATUS | StepSubStatus | ✅ |
+| STEP_UPD_ACTION_CODE | StepUpdActionCode | ✅ |
+| STEP_UPD_ACTION_PERFORMED_BY | StepUpdActionPerformedBy | ✅ |
+| STEP_UPD_ACTION_PERFORMED_DATE | StepUpdActionPerformedDate | ✅ |
+| STEP_UPD_ACTION_REASON | StepUpdActionReason | ✅ |
+
+### [[performancesubtaskstatuspvo|PerformanceSubTaskStatusPVO]] (HCM · BICC: 10/40)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_PERFORMED_BY | ActionPerformedBy | ✅ |
+| ACTION_PERFORMED_DATE | ActionPerformedDate | ✅ |
+| ACTION_REASON | ActionReason | ✅ |
+| BUSINESS_GROUP_ID | EvalStepPEOBusinessGroupId | — |
+| BUSINESS_GROUP_ID | EvalStepSubPEOBusinessGroupId | — |
+| CREATED_BY | CreatedBy | — |
+| CREATION_DATE | CreationDate | — |
+| CRITICAL_ALERT_DAYS | EvalStepPEOCriticalAlertDays | — |
+| CRITICAL_ALERT_DAYS | EvalStepSubPEOCriticalAlertDays | — |
+| DUE_DATE | EvalStepPEODueDate | — |
+| DUE_DATE | EvalStepSubPEODueDate | — |
+| EVAL_PARTICIPANT_ID | EvalStepPEOEvalParticipantId | ✅ |
+| EVAL_PARTICIPANT_ID | EvalStepSubPEOEvalParticipantId | — |
+| EVAL_STEP_ID | EvalStepId | ✅ |
+| EVAL_STEP_ID | EvalStepSubPEOEvalStepId | ✅ |
+| EVALUATION_ID | EvalStepPEOEvaluationId | — |
+| EVALUATION_ID | EvalStepSubPEOEvaluationId | — |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | — |
+| LAST_UPDATED_BY | LastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | — |
+| PARENT_STEP_ID | EvalStepPEOParentStepId | ✅ |
+| PARENT_STEP_ID | EvalStepSubPEOParentStepId | — |
+| SEQUENCE_NUMBER | EvalStepPEOSequenceNumber | — |
+| SEQUENCE_NUMBER | EvalStepSubPEOSequenceNumber | — |
+| STANDARD_ALERT_DAYS | EvalStepPEOStandardAlertDays | — |
+| STANDARD_ALERT_DAYS | EvalStepSubPEOStandardAlertDays | — |
+| STEP_CODE | EvalStepPEOStepCode | — |
+| STEP_CODE | EvalStepSubPEOStepCode | — |
+| STEP_COMPLETED_BY | EvalStepPEOStepCompletedBy | — |
+| STEP_COMPLETED_BY | EvalStepSubPEOStepCompletedBy | — |
+| STEP_COMPLETION_DATE | EvalStepPEOStepCompletionDate | — |
+| STEP_COMPLETION_DATE | EvalStepSubPEOStepCompletionDate | — |
+| STEP_STATUS | EvalStepPEOStepStatus | — |
+| STEP_STATUS | EvalStepSubPEOStepStatus | ✅ |
+| STEP_SUB_STATUS | StepSubStatus | ✅ |
+| STEP_UPD_ACTION_CODE | StepUpdActionCode | — |
+| STEP_UPD_ACTION_PERFORMED_BY | StepUpdActionPerformedBy | — |
+| STEP_UPD_ACTION_PERFORMED_DATE | StepUpdActionPerformedDate | — |
+| STEP_UPD_ACTION_REASON | StepUpdActionReason | — |
+
+### [[performancetaskstatuspvo|PerformanceTaskStatusPVO]] (HCM · BICC: 15/27)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_PERFORMED_BY | ActionPerformedBy | ✅ |
+| ACTION_PERFORMED_DATE | ActionPerformedDate | ✅ |
+| ACTION_REASON | ActionReason | ✅ |
+| BUSINESS_GROUP_ID | EvalStepPEOBusinessGroupId | — |
+| CREATED_BY | CreatedBy | — |
+| CREATION_DATE | CreationDate | — |
+| CRITICAL_ALERT_DAYS | EvalStepPEOCriticalAlertDays | ✅ |
+| DUE_DATE | EvalStepPEODueDate | ✅ |
+| EVAL_PARTICIPANT_ID | EvalStepPEOEvalParticipantId | ✅ |
+| EVAL_STEP_ID | EvalStepId | ✅ |
+| EVALUATION_ID | EvalStepPEOEvaluationId | — |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | — |
+| LAST_UPDATED_BY | LastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | — |
+| PARENT_STEP_ID | EvalStepPEOParentStepId | ✅ |
+| SEQUENCE_NUMBER | EvalStepPEOSequenceNumber | ✅ |
+| STANDARD_ALERT_DAYS | EvalStepPEOStandardAlertDays | ✅ |
+| STEP_CODE | EvalStepPEOStepCode | — |
+| STEP_COMPLETED_BY | EvalStepPEOStepCompletedBy | ✅ |
+| STEP_COMPLETION_DATE | EvalStepPEOStepCompletionDate | ✅ |
+| STEP_STATUS | EvalStepPEOStepStatus | ✅ |
+| STEP_SUB_STATUS | StepSubStatus | ✅ |
+| STEP_UPD_ACTION_CODE | StepUpdActionCode | — |
+| STEP_UPD_ACTION_PERFORMED_BY | StepUpdActionPerformedBy | — |
+| STEP_UPD_ACTION_PERFORMED_DATE | StepUpdActionPerformedDate | — |
+| STEP_UPD_ACTION_REASON | StepUpdActionReason | — |
+
+### [[subtaskstatuspvo|SubTaskStatusPVO]] (HCM · BICC: 4/32)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | EvalStepPEOBusinessGroupId | — |
+| BUSINESS_GROUP_ID | EvalStepSubPEOBusinessGroupId | — |
+| CREATED_BY | CreatedBy | — |
+| CREATION_DATE | CreationDate | — |
+| CRITICAL_ALERT_DAYS | EvalStepPEOCriticalAlertDays | — |
+| CRITICAL_ALERT_DAYS | EvalStepSubPEOCriticalAlertDays | — |
+| DUE_DATE | EvalStepPEODueDate | — |
+| DUE_DATE | EvalStepSubPEODueDate | — |
+| EVAL_PARTICIPANT_ID | EvalStepPEOEvalParticipantId | — |
+| EVAL_PARTICIPANT_ID | EvalStepSubPEOEvalParticipantId | — |
+| EVAL_STEP_ID | EvalStepId | ✅ |
+| EVAL_STEP_ID | EvalStepSubPEOEvalStepId | ✅ |
+| EVALUATION_ID | EvalStepPEOEvaluationId | — |
+| EVALUATION_ID | EvalStepSubPEOEvaluationId | — |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | — |
+| LAST_UPDATED_BY | LastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | — |
+| PARENT_STEP_ID | EvalStepPEOParentStepId | — |
+| PARENT_STEP_ID | EvalStepSubPEOParentStepId | — |
+| SEQUENCE_NUMBER | EvalStepPEOSequenceNumber | — |
+| SEQUENCE_NUMBER | EvalStepSubPEOSequenceNumber | — |
+| STANDARD_ALERT_DAYS | EvalStepPEOStandardAlertDays | — |
+| STANDARD_ALERT_DAYS | EvalStepSubPEOStandardAlertDays | — |
+| STEP_CODE | EvalStepPEOStepCode | — |
+| STEP_CODE | EvalStepSubPEOStepCode | — |
+| STEP_COMPLETED_BY | EvalStepPEOStepCompletedBy | — |
+| STEP_COMPLETED_BY | EvalStepSubPEOStepCompletedBy | — |
+| STEP_COMPLETION_DATE | EvalStepPEOStepCompletionDate | — |
+| STEP_COMPLETION_DATE | EvalStepSubPEOStepCompletionDate | — |
+| STEP_STATUS | EvalStepPEOStepStatus | — |
+| STEP_STATUS | EvalStepSubPEOStepStatus | ✅ |
+
+### [[taskstatuspvo|TaskStatusPVO]] (HCM · BICC: 3/19)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | EvalStepPEOBusinessGroupId | — |
+| CREATED_BY | CreatedBy | — |
+| CREATION_DATE | CreationDate | — |
+| CRITICAL_ALERT_DAYS | EvalStepPEOCriticalAlertDays | — |
+| DUE_DATE | EvalStepPEODueDate | — |
+| EVAL_PARTICIPANT_ID | EvalStepPEOEvalParticipantId | — |
+| EVAL_STEP_ID | EvalStepId | ✅ |
+| EVALUATION_ID | EvalStepPEOEvaluationId | — |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | — |
+| LAST_UPDATED_BY | LastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | — |
+| PARENT_STEP_ID | EvalStepPEOParentStepId | — |
+| SEQUENCE_NUMBER | EvalStepPEOSequenceNumber | — |
+| STANDARD_ALERT_DAYS | EvalStepPEOStandardAlertDays | — |
+| STEP_CODE | EvalStepPEOStepCode | — |
+| STEP_COMPLETED_BY | EvalStepPEOStepCompletedBy | — |
+| STEP_COMPLETION_DATE | EvalStepPEOStepCompletionDate | — |
+| STEP_STATUS | EvalStepPEOStepStatus | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — HRA_EVAL_STEPS](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/hraevalsteps.html)

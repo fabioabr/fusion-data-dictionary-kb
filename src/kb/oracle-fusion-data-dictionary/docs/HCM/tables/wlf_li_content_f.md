@@ -116,3 +116,105 @@ ORDER BY lc.VERSION_NUMBER DESC;
 
 - [Oracle Docs — WLF_LI_CONTENT_F](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/wlflicontentf.html)
 - [[hcm-module-data-dictionary]] — Dossiê do módulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[learningrelatedcontentpvo|LearningRelatedContentPVO]] (HCM · BICC: 11/44)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| AUTHOR | RelatedContentDEOAuthor | — |
+| CATALOG | RelatedContentDEOCatalog | — |
+| CATALOG_NUMBER | RelatedContentDEOCatalogNumber | — |
+| COMPLETION_ON_OPEN | RelatedContentDEOCompletionOnOpen | — |
+| CONTENT_ID | RelatedContentDEOContentId | ✅ |
+| COPYRIGHT_TEXT | RelatedContentDEOCopyrightText | — |
+| CREATED_BY | RelatedContentDEOCreatedBy | — |
+| CREATION_DATE | RelatedContentDEOCreationDate | — |
+| CURRENCY | RelatedContentDEOCurrency | — |
+| DISABLE_REVIEW | RelatedContentDEODisableReview | — |
+| EFFECTIVE_END_DATE | RelatedContentDEOEffectiveEndDate | ✅ |
+| EFFECTIVE_START_DATE | RelatedContentDEOEffectiveStartDate | ✅ |
+| ENTERPRISE_ID | RelatedContentDEOEnterpriseId | — |
+| EXTERNAL_IDENTIFIER | RelatedContentDEOExternalIdentifier | — |
+| HIDE_CORRECT_ANSWERS | RelatedContentDEOHideCorrectAnswers | — |
+| HIDE_SCORE_ADMIN | RelatedContentDEOHideScoreAdmin | ✅ |
+| HIDE_SCORE_LEARNER | RelatedContentDEOHideScoreLearner | ✅ |
+| INGESTION_NAME | RelatedContentDEOIngestionName | — |
+| INGESTION_STATUS | RelatedContentDEOIngestionStatus | — |
+| INGESTION_STATUS_LOG | RelatedContentDEOIngestionStatusLog | — |
+| IS_AUTO_COMMIT | RelatedContentDEOIsAutoCommit | — |
+| IS_COPYRIGHTED | RelatedContentDEOIsCopyrighted | — |
+| IS_VISIBLE | RelatedContentDEOIsVisible | — |
+| KEYWORDS | RelatedContentDEOKeywords | — |
+| LAST_UPDATE_DATE | RelatedContentDEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | RelatedContentDEOLastUpdateLogin | — |
+| LAST_UPDATE_METHOD | RelatedContentDEOLastUpdateMethod | — |
+| LAST_UPDATED_BY | RelatedContentDEOLastUpdatedBy | — |
+| LAUNCH_DATA | RelatedContentDEOLaunchData | — |
+| LEARNING_ITEM_ID | RelatedContentDEOLearningItemId | — |
+| MASTERY_SCORE | RelatedContentDEOMasteryScore | ✅ |
+| MAX_ATTEMPTS | RelatedContentDEOMaxAttempts | ✅ |
+| OBJECT_VERSION_NUMBER | RelatedContentDEOObjectVersionNumber | — |
+| PLAYABLE_ITEMS_COUNT | RelatedContentDEOPlayableItemsCount | — |
+| PRICE | RelatedContentDEOPrice | — |
+| RECORDED_ATTEMPT_REVIEW | RelatedContentDEORecordedAttemptReview | — |
+| RECORDED_ATTEMPTS | RelatedContentDEORecordedAttempts | — |
+| RELATED_CONTENT_ID | RelatedContentDEORelatedContentId | — |
+| STARTING_URL | RelatedContentDEOStartingUrl | — |
+| TIME_LIMIT | RelatedContentDEOTimeLimit | ✅ |
+| TIME_LIMIT_ACTION | RelatedContentDEOTimeLimitAction | — |
+| TIME_LIMIT_UOM | RelatedContentDEOTimeLimitUom | ✅ |
+| TRACKING_TYPE | RelatedContentDEOTrackingType | ✅ |
+| VERSION | RelatedContentDEOVersion | — |
+
+### [[sectionhierarchypvo|SectionHierarchyPVO]] (HCM · BICC: 3/44)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| AUTHOR | ContentDEOAuthor | — |
+| CATALOG | ContentDEOCatalog | — |
+| CATALOG_NUMBER | ContentDEOCatalogNumber | — |
+| COMPLETION_ON_OPEN | ContentDEOCompletionOnOpen | — |
+| CONTENT_ID | ContentDEOContentId | — |
+| COPYRIGHT_TEXT | ContentDEOCopyrightText | — |
+| CREATED_BY | ContentDEOCreatedBy | — |
+| CREATION_DATE | ContentDEOCreationDate | — |
+| CURRENCY | ContentDEOCurrency | — |
+| DISABLE_REVIEW | ContentDEODisableReview | — |
+| EFFECTIVE_END_DATE | ContentDEOEffectiveEndDate | — |
+| EFFECTIVE_START_DATE | ContentDEOEffectiveStartDate | ✅ |
+| ENTERPRISE_ID | ContentDEOEnterpriseId | — |
+| EXTERNAL_IDENTIFIER | ContentDEOExternalIdentifier | — |
+| HIDE_CORRECT_ANSWERS | ContentDEOHideCorrectAnswers | — |
+| HIDE_SCORE_ADMIN | ContentDEOHideScoreAdmin | — |
+| HIDE_SCORE_LEARNER | ContentDEOHideScoreLearner | — |
+| INGESTION_NAME | ContentDEOIngestionName | — |
+| INGESTION_STATUS | ContentDEOIngestionStatus | — |
+| INGESTION_STATUS_LOG | ContentDEOIngestionStatusLog | — |
+| IS_AUTO_COMMIT | ContentDEOIsAutoCommit | — |
+| IS_COPYRIGHTED | ContentDEOIsCopyrighted | — |
+| IS_VISIBLE | ContentDEOIsVisible | — |
+| KEYWORDS | ContentDEOKeywords | — |
+| LAST_UPDATE_DATE | ContentDEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ContentDEOLastUpdateLogin | — |
+| LAST_UPDATE_METHOD | ContentDEOLastUpdateMethod | — |
+| LAST_UPDATED_BY | ContentDEOLastUpdatedBy | — |
+| LAUNCH_DATA | ContentDEOLaunchData | — |
+| LEARNING_ITEM_ID | ContentDEOLearningItemId | — |
+| MASTERY_SCORE | ContentDEOMasteryScore | — |
+| MAX_ATTEMPTS | ContentDEOMaxAttempts | — |
+| OBJECT_VERSION_NUMBER | ContentDEOObjectVersionNumber | — |
+| PLAYABLE_ITEMS_COUNT | ContentDEOPlayableItemsCount | — |
+| PRICE | ContentDEOPrice | — |
+| RECORDED_ATTEMPT_REVIEW | ContentDEORecordedAttemptReview | — |
+| RECORDED_ATTEMPTS | ContentDEORecordedAttempts | — |
+| RELATED_CONTENT_ID | ContentDEORelatedContentId | — |
+| STARTING_URL | ContentDEOStartingUrl | — |
+| TIME_LIMIT | ContentDEOTimeLimit | — |
+| TIME_LIMIT_ACTION | ContentDEOTimeLimitAction | — |
+| TIME_LIMIT_UOM | ContentDEOTimeLimitUom | — |
+| TRACKING_TYPE | ContentDEOTrackingType | ✅ |
+| VERSION | ContentDEOVersion | — |

@@ -127,3 +127,21 @@ WHERE  cda.ACTIVITY_TYPE = 'ORDERING'
 
 - [Oracle Docs — Supplier Data Access](https://docs.oracle.com/en/cloud/saas/procurement/25a/oedmf/poz-tables.html)
 - [[po-module-data-dictionary]] — Dossiê do módulo Procurement
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[contactuseraccountdataaccessdetails|ContactUserAccountDataAccessDetails]] (PO · BICC: 5/9)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACCESS_CODE | AccessCode | ✅ |
+| ACCESS_LEVEL | ContactUserAccountDataAccessAccessLevel | ✅ |
+| ACCESS_VALUE | AccessValue | ✅ |
+| PARTY_SITE_NAME | ContactUserAccountDataAccessPartySiteName | — |
+| PER_PARTY_ID | PerPartyId | ✅ |
+| PRC_BU_ID | ContactUserAccountDataAccessPrcBuId | — |
+| VENDOR_ID | ContactUserAccountDataAccessVendorId | — |
+| VENDOR_SITE_CODE | ContactUserAccountDataAccessVendorSiteCode | ✅ |
+| VENDOR_SITE_ID | ContactUserAccountDataAccessVendorSiteId | — |

@@ -99,3 +99,15 @@ SELECT tl.REASON_NAME FROM IRC_LC_REASONS_TL tl WHERE tl.LANGUAGE = 'PT';
 
 - [Oracle Docs -- IRC_LC_REASONS_TL](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/irclcreasonstl.html)
 - [[hcm-module-data-dictionary]] -- Dossie do modulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[jobapphisteventpvo|JobAppHistEventPVO]] (HCM · BICC: 2/3)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| LANGUAGE | ReasonsTranslationPEOLanguage | ✅ |
+| REASON_ID | ReasonsTranslationPEOReasonId | — |
+| REASON_NAME | ReasonsTranslationPEOReasonName | ✅ |

@@ -99,3 +99,15 @@ SELECT tl.REASON_GROUP_NAME FROM IRC_LC_REASON_GROUPS_TL tl WHERE tl.LANGUAGE = 
 
 - [Oracle Docs -- IRC_LC_REASON_GROUPS_TL](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/irclcreasongroupstl.html)
 - [[hcm-module-data-dictionary]] -- Dossie do modulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[settingitemreasongrouppvo|SettingItemReasonGroupPVO]] (HCM · BICC: 2/3)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| LANGUAGE | ReasonGroupTranslationPEOLanguage | — |
+| REASON_GROUP_ID | ReasonGroupTranslationPEOReasonGroupId | ✅ |
+| REASON_GROUP_NAME | ReasonGroupTranslationPEOReasonGroupName | ✅ |

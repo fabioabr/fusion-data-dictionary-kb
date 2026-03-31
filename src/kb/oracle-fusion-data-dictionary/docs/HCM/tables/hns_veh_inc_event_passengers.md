@@ -114,6 +114,42 @@ WHERE  p.INJURY_FLAG = 'Y';
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[hnsvehicleeventpvo|HNSVehicleEventPVO]] (HCM · BICC: 26/27)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | HNSVehEventPasngrsPEOCreatedBy | ✅ |
+| CREATION_DATE | HNSVehEventPasngrsPEOCreationDt | ✅ |
+| DELETED_FLAG | HNSVehEventPasngrsPEODelFlag | ✅ |
+| EMPLOYEE_ASSIGN_ID | HNSVehEventPasngrsPEOEmpAsnId | — |
+| EMPLOYEE_ID | HNSVehEventPasngrsPEOEmpId | ✅ |
+| LAST_UPDATE_DATE | HNSVehEventPasngrsPEOLstUpdtDt | ✅ |
+| LAST_UPDATE_LOGIN | HNSVehEventPasngrsPEOLstUpdtLgn | ✅ |
+| LAST_UPDATED_BY | HNSVehEventPasngrsPEOLastUpdtdBy | ✅ |
+| OBJECT_VERSION_NUMBER | HNSVehEventPasngrsPEOObjVerNum | ✅ |
+| PASSENGER_ADDR_CITY | HNSVehEventPasngrsPEOPasAddrCity | ✅ |
+| PASSENGER_ADDR_LINE1 | HNSVehEventPasngrsPEOPasAddrLine1 | ✅ |
+| PASSENGER_ADDR_LINE2 | HNSVehEventPasngrsPEOPasAddrLine2 | ✅ |
+| PASSENGER_ADDR_STATE | HNSVehEventPasngrsPEOPasAddrState | ✅ |
+| PASSENGER_AREA_CODE | HNSVehEventPasngrsPEOPasAreaCode | ✅ |
+| PASSENGER_COUNTRY | HNSVehEventPasngrsPEOPasCountry | ✅ |
+| PASSENGER_COUNTRY_CODE_NUM | HNSVehEventPasngrsPEOPasCntCdNum | ✅ |
+| PASSENGER_EMAIL | HNSVehEventPasngrsPEOPasEmail | ✅ |
+| PASSENGER_FATALITY_FLAG | HNSVehEventPasngrsPEOPasFtltyFlag | ✅ |
+| PASSENGER_ID | HNSVehEventPasngrsPEOPassengerId | ✅ |
+| PASSENGER_INJURED_FLAG | HNSVehEventPasngrsPEOPasInjrdFlag | ✅ |
+| PASSENGER_NAME | HNSVehEventPasngrsPEOPassengerName | ✅ |
+| PASSENGER_PER_TYPE_CODE | HNSVehEventPasngrsPEOPasPerTypCd | ✅ |
+| PASSENGER_PHONE_NUM | HNSVehEventPasngrsPEOPasPhoneNum | ✅ |
+| PASSENGER_ZIP_CODE | HNSVehEventPasngrsPEOPasZipCode | ✅ |
+| TAKEN_TO_HOSPITAL_FLAG | HNSVehEventPasngrsPEOTakenToHospFlg | ✅ |
+| VEH_INC_EVT_DETAIL_ID | HNSVehEventPasngrsPEOVehIncEvtDtlId | ✅ |
+| WEARING_SEAT_BELT_FLAG | HNSVehEventPasngrsPEOWearSeatBltFlg | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — HNS_VEH_INC_EVENT_PASSENGERS](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/hnsvehincieventpassengers.html)

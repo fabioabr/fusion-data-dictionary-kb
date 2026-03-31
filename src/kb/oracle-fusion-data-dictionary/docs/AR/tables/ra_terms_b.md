@@ -144,6 +144,128 @@ HAVING COUNT(*) > 1;
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[adjustmentdistributionpvo|AdjustmentDistributionPVO]] (AR)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| DESCRIPTION | PaymentTermBPEODescription | — |
+| NAME | PaymentTermBPEOName | — |
+| TERM_ID | PaymentTermBPEOTermId1 | — |
+
+### [[adjustmentpvo|AdjustmentPVO]] (AR)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| DESCRIPTION | PaymentTermBPEODescription | — |
+| NAME | PaymentTermBPEOName | — |
+| TERM_ID | PaymentTermBPEOTermId1 | — |
+
+### [[paymenttermbpvo|PaymentTermBPVO]] (AR · BICC: 5/23)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BASE_AMOUNT | BaseAmount | ✅ |
+| BILLING_CYCLE_ID | BillingCycleId | — |
+| CALC_DISCOUNT_ON_LINES_FLAG | CalcDiscountOnLinesFlag | — |
+| CREATED_BY | CreatedBy | — |
+| CREATION_DATE | CreationDate | — |
+| CREDIT_CHECK_FLAG | CreditCheckFlag | — |
+| DESCRIPTION | Description | — |
+| DUE_CUTOFF_DAY | DueCutoffDay | — |
+| END_DATE_ACTIVE | EndDateActive | — |
+| FIRST_INSTALLMENT_CODE | FirstInstallmentCode | — |
+| IN_USE | InUse | — |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | — |
+| LAST_UPDATED_BY | LastUpdatedBy | — |
+| MODULE_ID | ModuleId | — |
+| NAME | Name | — |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | — |
+| PARTIAL_DISCOUNT_FLAG | PartialDiscountFlag | — |
+| PREPAYMENT_FLAG | PrepaymentFlag | — |
+| PRINTING_LEAD_DAYS | PrintingLeadDays | ✅ |
+| SET_ID | SetId | ✅ |
+| START_DATE_ACTIVE | StartDateActive | — |
+| TERM_ID | TermId | ✅ |
+
+### [[paymenttermextractpvo|PaymentTermExtractPVO]] (OTHER · BICC: 25/41)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ATTRIBUTE1 | RaTermBAttribute1 | — |
+| ATTRIBUTE10 | RaTermBAttribute10 | — |
+| ATTRIBUTE11 | RaTermBAttribute11 | — |
+| ATTRIBUTE12 | RaTermBAttribute12 | — |
+| ATTRIBUTE13 | RaTermBAttribute13 | — |
+| ATTRIBUTE14 | RaTermBAttribute14 | — |
+| ATTRIBUTE15 | RaTermBAttribute15 | — |
+| ATTRIBUTE2 | RaTermBAttribute2 | — |
+| ATTRIBUTE3 | RaTermBAttribute3 | — |
+| ATTRIBUTE4 | RaTermBAttribute4 | — |
+| ATTRIBUTE5 | RaTermBAttribute5 | — |
+| ATTRIBUTE6 | RaTermBAttribute6 | — |
+| ATTRIBUTE7 | RaTermBAttribute7 | — |
+| ATTRIBUTE8 | RaTermBAttribute8 | — |
+| ATTRIBUTE9 | RaTermBAttribute9 | — |
+| ATTRIBUTE_CATEGORY | RaTermBAttributeCategory | — |
+| BASE_AMOUNT | RaTermBBaseAmount | ✅ |
+| BILLING_CYCLE_ID | RaTermBBillingCycleId | ✅ |
+| CALC_DISCOUNT_ON_LINES_FLAG | RaTermBCalcDiscountOnLinesFlag | ✅ |
+| CREATED_BY | RaTermBCreatedBy | ✅ |
+| CREATION_DATE | RaTermBCreationDate | ✅ |
+| CREDIT_CHECK_FLAG | RaTermBCreditCheckFlag | ✅ |
+| DESCRIPTION | RaTermBDescription | ✅ |
+| DISCOUNT_BASIS_DATE_TYPE | RaTermBDiscountBasisDateType | ✅ |
+| DUE_CUTOFF_DAY | RaTermBDueCutoffDay | ✅ |
+| END_DATE_ACTIVE | RaTermBEndDateActive | ✅ |
+| FIRST_INSTALLMENT_CODE | RaTermBFirstInstallmentCode | ✅ |
+| IN_USE | RaTermBInUse | ✅ |
+| LAST_UPDATE_DATE | RaTermBLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | RaTermBLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | RaTermBLastUpdatedBy | ✅ |
+| MODULE_ID | RaTermBModuleId | ✅ |
+| NAME | RaTermBName | ✅ |
+| OBJECT_VERSION_NUMBER | RaTermBObjectVersionNumber | ✅ |
+| PARTIAL_DISCOUNT_FLAG | RaTermBPartialDiscountFlag | ✅ |
+| PREPAYMENT_FLAG | RaTermBPrepaymentFlag | ✅ |
+| PRINTING_LEAD_DAYS | RaTermBPrintingLeadDays | ✅ |
+| SEED_DATA_SOURCE | RaTermBSeedDataSource | ✅ |
+| SET_ID | RaTermBSetId | ✅ |
+| START_DATE_ACTIVE | RaTermBStartDateActive | ✅ |
+| TERM_ID | RaTermBTermId | ✅ |
+
+### [[paymenttermlinepvo|PaymentTermLinePVO]] (AR · BICC: 8/23)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BASE_AMOUNT | PaymentTermBaseAmount | ✅ |
+| BILLING_CYCLE_ID | PaymentTermBillingCycleId | — |
+| CALC_DISCOUNT_ON_LINES_FLAG | PaymentTermCalcDiscountOnLinesFlag | — |
+| CREATED_BY | PaymentTermCreatedBy | ✅ |
+| CREATION_DATE | PaymentTermCreationDate | ✅ |
+| CREDIT_CHECK_FLAG | PaymentTermCreditCheckFlag | — |
+| DESCRIPTION | PaymentTermDescription | — |
+| DUE_CUTOFF_DAY | PaymentTermDueCutoffDay | — |
+| END_DATE_ACTIVE | PaymentTermEndDateActive | — |
+| FIRST_INSTALLMENT_CODE | PaymentTermFirstInstallmentCode | — |
+| IN_USE | PaymentTermInUse | — |
+| LAST_UPDATE_DATE | PaymentTermLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | PaymentTermLastUpdateLogin | — |
+| LAST_UPDATED_BY | PaymentTermLastUpdatedBy | ✅ |
+| MODULE_ID | PaymentTermModuleId | — |
+| NAME | PaymentTermName | — |
+| OBJECT_VERSION_NUMBER | PaymentTermObjectVersionNumber | — |
+| PARTIAL_DISCOUNT_FLAG | PaymentTermPartialDiscountFlag | — |
+| PREPAYMENT_FLAG | PaymentTermPrepaymentFlag | — |
+| PRINTING_LEAD_DAYS | PaymentTermPrintingLeadDays | ✅ |
+| SET_ID | PaymentTermSetId | ✅ |
+| START_DATE_ACTIVE | PaymentTermStartDateActive | — |
+| TERM_ID | PaymentTermTermId | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — RA_TERMS_B](https://docs.oracle.com/en/cloud/saas/financials/25a/oedmf/ratermsb-10075.html)

@@ -127,3 +127,59 @@ ORDER BY cr.CREATION_DATE DESC;
 
 - [Oracle Docs — Supplier Contact Requests](https://docs.oracle.com/en/cloud/saas/procurement/25a/oedmf/poz-tables.html)
 - [[po-module-data-dictionary]] — Dossiê do módulo Procurement
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[negdocumentsourcingsupplierinviteepvo|NegDocumentSourcingSupplierInviteePVO]] (PO)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CONTACT_REQUEST_ID | ContactRequestContactRequestId | — |
+| CONTACT_TITLE | ContactRequestContactTitle | — |
+| FIRST_NAME | ContactRequestFirstName | — |
+| LAST_NAME | ContactRequestLastName | — |
+| MIDDLE_NAME | ContactRequestMiddleName | — |
+
+### [[supplierregistrationcontactrequestpvo|SupplierRegistrationContactRequestPVO]] (PO · BICC: 20/37)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ADMINISTRATIVE_CONTACT | SupplierRegContactRequestAdministrativeContact | ✅ |
+| APPROVAL_INSTANCE_ID | SupplierRegContactRequestApprovalInstanceId | — |
+| CHANGE_REQUEST_NUMBER | SupplierRegContactRequestChangeRequestNumber | — |
+| CHANGE_SOURCE | SupplierRegContactRequestChangeSource | — |
+| CONTACT_PARTY_ID | SupplierRegContactRequestContactPartyId | — |
+| CONTACT_REQUEST_ID | ContactRequestId | ✅ |
+| CONTACT_TITLE | SupplierRegContactRequestContactTitle | ✅ |
+| CREATE_USER_ACCOUNT | SupplierRegContactRequestCreateUserAccount | ✅ |
+| CREATED_BY | SupplierRegContactRequestCreatedBy | — |
+| CREATION_DATE | SupplierRegContactRequestCreationDate | — |
+| EMAIL_ADDRESS | SupplierRegContactRequestEmailAddress | ✅ |
+| FAX_AREA_CODE | SupplierRegContactRequestFaxAreaCode | ✅ |
+| FAX_COUNTRY_CODE | SupplierRegContactRequestFaxCountryCode | ✅ |
+| FAX_NUMBER | SupplierRegContactRequestFaxNumber | ✅ |
+| FIRST_NAME | SupplierRegContactRequestFirstName | ✅ |
+| HAS_BACKING_DOC | SupplierRegContactRequestHasBackingDoc | — |
+| JOB_TITLE | SupplierRegContactRequestJobTitle | ✅ |
+| LAST_NAME | SupplierRegContactRequestLastName | ✅ |
+| LAST_UPDATE_DATE | SupplierRegContactRequestLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | SupplierRegContactRequestLastUpdateLogin | — |
+| LAST_UPDATED_BY | SupplierRegContactRequestLastUpdatedBy | — |
+| MAPPING_ID | SupplierRegContactRequestMappingId | — |
+| MIDDLE_NAME | SupplierRegContactRequestMiddleName | ✅ |
+| MOBILE_AREA_CODE | SupplierRegContactRequestMobileAreaCode | ✅ |
+| MOBILE_COUNTRY_CODE | SupplierRegContactRequestMobileCountryCode | ✅ |
+| MOBILE_NUMBER | SupplierRegContactRequestMobileNumber | ✅ |
+| NOTES | SupplierRegContactRequestNotes | — |
+| OBJECT_VERSION_NUMBER | SupplierRegContactRequestObjectVersionNumber | — |
+| PHONE_AREA_CODE | SupplierRegContactRequestPhoneAreaCode | ✅ |
+| PHONE_COUNTRY_CODE | SupplierRegContactRequestPhoneCountryCode | ✅ |
+| PHONE_EXTENSION | SupplierRegContactRequestPhoneExtension | ✅ |
+| PHONE_NUMBER | SupplierRegContactRequestPhoneNumber | ✅ |
+| PRIMARY_ADMIN_CONTACT | SupplierRegContactRequestPrimaryAdminContact | — |
+| REQUEST_STATUS | SupplierRegContactRequestRequestStatus | — |
+| REQUEST_TYPE | SupplierRegContactRequestRequestType | — |
+| REQUESTED_END_DATE | SupplierRegContactRequestRequestedEndDate | — |
+| REQUESTED_START_DATE | SupplierRegContactRequestRequestedStartDate | — |

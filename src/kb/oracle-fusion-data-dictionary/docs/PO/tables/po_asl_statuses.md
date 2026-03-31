@@ -38,7 +38,6 @@ updated_at: 2026-03-25
 
 Armazena os **status possiveis para entradas da ASL**. Define valores como Aprovado, Desqualificado, Novo.
 
-
 ---
 
 ## 🧠 Propósito de Negócio
@@ -92,7 +91,6 @@ FROM   PO_ASL_STATUSES
 ORDER BY STATUS;
 ```
 
-
 ---
 
 ## 🔒 Observações
@@ -100,6 +98,24 @@ ORDER BY STATUS;
 - Valores tipicos: APPROVED, NEW, DISQUALIFIED, DEBARRED.
 - Flag `ASL_DEFAULT_FLAG` define status automatico para novas entradas.
 - Tabela de configuracao; poucas linhas, raramente alterada.
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[purchasingaslextractpvo|PurchasingASLExtractPVO]] (PO · BICC: 2/2)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| STATUS | Status | ✅ |
+| STATUS_ID | StatusId | ✅ |
+
+### [[purchasingaslpvo|PurchasingASLPVO]] (PO · BICC: 2/2)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| STATUS | Status | ✅ |
+| STATUS_ID | StatusId | ✅ |
 
 ---
 

@@ -130,6 +130,54 @@ ORDER BY b.PERIOD_YEAR;
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[fiscalperiodwithoutledgerpvo|FiscalPeriodWithoutLedgerPVO]] (GL · BICC: 2/6)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| FISCAL_PERIOD_SET_ID | FiscalYearFiscalPeriodSetId | — |
+| FISCAL_PERIOD_SET_NAME | FiscalYearFiscalPeriodSetName | — |
+| FISCAL_PERIOD_TYPE | FiscalYearFiscalPeriodType | — |
+| FISCAL_YEAR_END_DATE | FiscalYearFiscalYearEndDate | ✅ |
+| FISCAL_YEAR_NUMBER | FiscalYearFiscalYearNumber | — |
+| FISCAL_YEAR_START_DATE | FiscalYearFiscalYearStartDate | ✅ |
+
+### [[glfiscalperiodpvo|GLFiscalPeriodPVO]] (GL · BICC: 2/6)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| FISCAL_PERIOD_SET_ID | FiscalYearFiscalPeriodSetId | — |
+| FISCAL_PERIOD_SET_NAME | FiscalYearFiscalPeriodSetName | — |
+| FISCAL_PERIOD_TYPE | FiscalYearFiscalPeriodType | — |
+| FISCAL_YEAR_END_DATE | FiscalYearFiscalYearEndDate | ✅ |
+| FISCAL_YEAR_NUMBER | FiscalYearFiscalYearNumber | — |
+| FISCAL_YEAR_START_DATE | FiscalYearFiscalYearStartDate | ✅ |
+
+### [[glfiscalqtrpvo|GLFiscalQtrPVO]] (GL · BICC: 2/6)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| FISCAL_PERIOD_SET_ID | FiscalYearFiscalPeriodSetId | — |
+| FISCAL_PERIOD_SET_NAME | FiscalYearFiscalPeriodSetName | — |
+| FISCAL_PERIOD_TYPE | FiscalYearFiscalPeriodType | — |
+| FISCAL_YEAR_END_DATE | FiscalYearFiscalYearEndDate | ✅ |
+| FISCAL_YEAR_NUMBER | FiscalYearFiscalYearNumber | — |
+| FISCAL_YEAR_START_DATE | FiscalYearFiscalYearStartDate | ✅ |
+
+### [[glfiscalyearpvo|GLFiscalYearPVO]] (GL · BICC: 6/6)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| FISCAL_PERIOD_SET_ID | FiscalPeriodSetId | ✅ |
+| FISCAL_PERIOD_SET_NAME | FiscalPeriodSetName | ✅ |
+| FISCAL_PERIOD_TYPE | FiscalPeriodType | ✅ |
+| FISCAL_YEAR_END_DATE | FiscalYearEndDate | ✅ |
+| FISCAL_YEAR_NUMBER | FiscalYearNumber | ✅ |
+| FISCAL_YEAR_START_DATE | FiscalYearStartDate | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — GL Fiscal Calendar Views](https://docs.oracle.com/en/cloud/saas/financials/25a/oedmf/glperiodstatuses-25740.html)

@@ -147,3 +147,276 @@ updated_at: 2026-03-26
 ## 📎 Uso Típico
 
 (a ser preenchido na etapa 03)
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[custfinancialprofiledextractpvo|CustFinancialProfileDExtractPVO]] (OTHER · BICC: 44/97)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| APPLICATION_ID | HzCustProfileAmtsFApplicationId | ✅ |
+| ATTRIBUTE1 | HzCustProfileAmtsFAttribute1 | — |
+| ATTRIBUTE10 | HzCustProfileAmtsFAttribute10 | — |
+| ATTRIBUTE11 | HzCustProfileAmtsFAttribute11 | — |
+| ATTRIBUTE12 | HzCustProfileAmtsFAttribute12 | — |
+| ATTRIBUTE13 | HzCustProfileAmtsFAttribute13 | — |
+| ATTRIBUTE14 | HzCustProfileAmtsFAttribute14 | — |
+| ATTRIBUTE15 | HzCustProfileAmtsFAttribute15 | — |
+| ATTRIBUTE2 | HzCustProfileAmtsFAttribute2 | — |
+| ATTRIBUTE3 | HzCustProfileAmtsFAttribute3 | — |
+| ATTRIBUTE4 | HzCustProfileAmtsFAttribute4 | — |
+| ATTRIBUTE5 | HzCustProfileAmtsFAttribute5 | — |
+| ATTRIBUTE6 | HzCustProfileAmtsFAttribute6 | — |
+| ATTRIBUTE7 | HzCustProfileAmtsFAttribute7 | — |
+| ATTRIBUTE8 | HzCustProfileAmtsFAttribute8 | — |
+| ATTRIBUTE9 | HzCustProfileAmtsFAttribute9 | — |
+| ATTRIBUTE_CATEGORY | HzCustProfileAmtsFAttributeCategory | — |
+| AUTO_REC_MIN_RECEIPT_AMOUNT | HzCustProfileAmtsFAutoRecMinReceiptAmount | ✅ |
+| CREATED_BY | HzCustProfileAmtsFCreatedBy | ✅ |
+| CREATED_BY_MODULE | HzCustProfileAmtsFCreatedByModule | ✅ |
+| CREATION_DATE | HzCustProfileAmtsFCreationDate | ✅ |
+| CURRENCY_CODE | HzCustProfileAmtsFCurrencyCode | ✅ |
+| CUST_ACCOUNT_ID | HzCustProfileAmtsFCustAccountId | ✅ |
+| CUST_ACCOUNT_PROFILE_ID | HzCustProfileAmtsFCustAccountProfileId | ✅ |
+| CUST_ACCT_PROFILE_AMT_ID | HzCustProfileAmtsFCustAcctProfileAmtId | ✅ |
+| EFFECTIVE_END_DATE | HzCustProfileAmtsFEffectiveEndDate | ✅ |
+| EFFECTIVE_START_DATE | HzCustProfileAmtsFEffectiveStartDate | ✅ |
+| EXCHANGE_RATE_TYPE | HzCustProfileAmtsFExchangeRateType | ✅ |
+| EXPIRATION_DATE | HzCustProfileAmtsFExpirationDate | ✅ |
+| GLOBAL_ATTRIBUTE1 | HzCustProfileAmtsFGlobalAttribute1 | — |
+| GLOBAL_ATTRIBUTE10 | HzCustProfileAmtsFGlobalAttribute10 | — |
+| GLOBAL_ATTRIBUTE11 | HzCustProfileAmtsFGlobalAttribute11 | — |
+| GLOBAL_ATTRIBUTE12 | HzCustProfileAmtsFGlobalAttribute12 | — |
+| GLOBAL_ATTRIBUTE13 | HzCustProfileAmtsFGlobalAttribute13 | — |
+| GLOBAL_ATTRIBUTE14 | HzCustProfileAmtsFGlobalAttribute14 | — |
+| GLOBAL_ATTRIBUTE15 | HzCustProfileAmtsFGlobalAttribute15 | — |
+| GLOBAL_ATTRIBUTE16 | HzCustProfileAmtsFGlobalAttribute16 | — |
+| GLOBAL_ATTRIBUTE17 | HzCustProfileAmtsFGlobalAttribute17 | — |
+| GLOBAL_ATTRIBUTE18 | HzCustProfileAmtsFGlobalAttribute18 | — |
+| GLOBAL_ATTRIBUTE19 | HzCustProfileAmtsFGlobalAttribute19 | — |
+| GLOBAL_ATTRIBUTE2 | HzCustProfileAmtsFGlobalAttribute2 | — |
+| GLOBAL_ATTRIBUTE20 | HzCustProfileAmtsFGlobalAttribute20 | — |
+| GLOBAL_ATTRIBUTE3 | HzCustProfileAmtsFGlobalAttribute3 | — |
+| GLOBAL_ATTRIBUTE4 | HzCustProfileAmtsFGlobalAttribute4 | — |
+| GLOBAL_ATTRIBUTE5 | HzCustProfileAmtsFGlobalAttribute5 | — |
+| GLOBAL_ATTRIBUTE6 | HzCustProfileAmtsFGlobalAttribute6 | — |
+| GLOBAL_ATTRIBUTE7 | HzCustProfileAmtsFGlobalAttribute7 | — |
+| GLOBAL_ATTRIBUTE8 | HzCustProfileAmtsFGlobalAttribute8 | — |
+| GLOBAL_ATTRIBUTE9 | HzCustProfileAmtsFGlobalAttribute9 | — |
+| GLOBAL_ATTRIBUTE_CATEGORY | HzCustProfileAmtsFGlobalAttributeCategory | — |
+| INTEREST_FIXED_AMOUNT | HzCustProfileAmtsFInterestFixedAmount | ✅ |
+| INTEREST_RATE | HzCustProfileAmtsFInterestRate | ✅ |
+| INTEREST_SCHEDULE_ID | HzCustProfileAmtsFInterestScheduleId | ✅ |
+| INTEREST_TYPE | HzCustProfileAmtsFInterestType | ✅ |
+| JGZZ_ATTRIBUTE1 | HzCustProfileAmtsFJgzzAttribute1 | — |
+| JGZZ_ATTRIBUTE10 | HzCustProfileAmtsFJgzzAttribute10 | — |
+| JGZZ_ATTRIBUTE11 | HzCustProfileAmtsFJgzzAttribute11 | — |
+| JGZZ_ATTRIBUTE12 | HzCustProfileAmtsFJgzzAttribute12 | — |
+| JGZZ_ATTRIBUTE13 | HzCustProfileAmtsFJgzzAttribute13 | — |
+| JGZZ_ATTRIBUTE14 | HzCustProfileAmtsFJgzzAttribute14 | — |
+| JGZZ_ATTRIBUTE15 | HzCustProfileAmtsFJgzzAttribute15 | — |
+| JGZZ_ATTRIBUTE2 | HzCustProfileAmtsFJgzzAttribute2 | — |
+| JGZZ_ATTRIBUTE3 | HzCustProfileAmtsFJgzzAttribute3 | — |
+| JGZZ_ATTRIBUTE4 | HzCustProfileAmtsFJgzzAttribute4 | — |
+| JGZZ_ATTRIBUTE5 | HzCustProfileAmtsFJgzzAttribute5 | — |
+| JGZZ_ATTRIBUTE6 | HzCustProfileAmtsFJgzzAttribute6 | — |
+| JGZZ_ATTRIBUTE7 | HzCustProfileAmtsFJgzzAttribute7 | — |
+| JGZZ_ATTRIBUTE8 | HzCustProfileAmtsFJgzzAttribute8 | — |
+| JGZZ_ATTRIBUTE9 | HzCustProfileAmtsFJgzzAttribute9 | — |
+| JGZZ_ATTRIBUTE_CATEGORY | HzCustProfileAmtsFJgzzAttributeCategory | — |
+| LAST_UPDATE_DATE | HzCustProfileAmtsFLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | HzCustProfileAmtsFLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | HzCustProfileAmtsFLastUpdatedBy | ✅ |
+| MAX_INTEREST_CHARGE | HzCustProfileAmtsFMaxInterestCharge | ✅ |
+| MIN_DUNNING_AMOUNT | HzCustProfileAmtsFMinDunningAmount | ✅ |
+| MIN_DUNNING_INVOICE_AMOUNT | HzCustProfileAmtsFMinDunningInvoiceAmount | ✅ |
+| MIN_FC_BALANCE_AMOUNT | HzCustProfileAmtsFMinFcBalanceAmount | ✅ |
+| MIN_FC_BALANCE_OVERDUE_TYPE | HzCustProfileAmtsFMinFcBalanceOverdueType | ✅ |
+| MIN_FC_BALANCE_PERCENT | HzCustProfileAmtsFMinFcBalancePercent | ✅ |
+| MIN_FC_INVOICE_AMOUNT | HzCustProfileAmtsFMinFcInvoiceAmount | ✅ |
+| MIN_FC_INVOICE_OVERDUE_TYPE | HzCustProfileAmtsFMinFcInvoiceOverdueType | ✅ |
+| MIN_FC_INVOICE_PERCENT | HzCustProfileAmtsFMinFcInvoicePercent | ✅ |
+| MIN_INTEREST_CHARGE | HzCustProfileAmtsFMinInterestCharge | ✅ |
+| MIN_STATEMENT_AMOUNT | HzCustProfileAmtsFMinStatementAmount | ✅ |
+| OBJECT_VERSION_NUMBER | HzCustProfileAmtsFObjectVersionNumber | ✅ |
+| OVERALL_CREDIT_LIMIT | HzCustProfileAmtsFOverallCreditLimit | ✅ |
+| PENALTY_FIXED_AMOUNT | HzCustProfileAmtsFPenaltyFixedAmount | ✅ |
+| PENALTY_RATE | HzCustProfileAmtsFPenaltyRate | ✅ |
+| PENALTY_SCHEDULE_ID | HzCustProfileAmtsFPenaltyScheduleId | ✅ |
+| PENALTY_TYPE | HzCustProfileAmtsFPenaltyType | ✅ |
+| PROGRAM_APPLICATION_ID | HzCustProfileAmtsFProgramApplicationId | ✅ |
+| PROGRAM_ID | HzCustProfileAmtsFProgramId | ✅ |
+| PROGRAM_UPDATE_DATE | HzCustProfileAmtsFProgramUpdateDate | ✅ |
+| REQUEST_ID | HzCustProfileAmtsFRequestId | ✅ |
+| SITE_USE_ID | HzCustProfileAmtsFSiteUseId | ✅ |
+| TRX_CREDIT_LIMIT | HzCustProfileAmtsFTrxCreditLimit | ✅ |
+| WH_UPDATE_DATE | HzCustProfileAmtsFWhUpdateDate | ✅ |
+
+### [[customerfinancialprofilepvo|CustomerFinancialProfilePVO]] (AR · BICC: 12/60)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| APPLICATION_ID | CustFinProfileApplicationId | — |
+| AUTO_REC_MIN_RECEIPT_AMOUNT | CustFinProfileAutoRecMinReceiptAmount | — |
+| CREATED_BY | CustFinProfileCreatedBy | ✅ |
+| CREATED_BY_MODULE | CustFinProfileCreatedByModule | — |
+| CREATION_DATE | CustFinProfileCreationDate | ✅ |
+| CURRENCY_CODE | CustFinProfileCurrencyCode | ✅ |
+| CUST_ACCOUNT_ID | CustFinProfileCustAccountId | ✅ |
+| CUST_ACCOUNT_PROFILE_ID | CustFinProfileCustAccountProfileId | — |
+| CUST_ACCT_PROFILE_AMT_ID | CustAcctProfileAmtId | ✅ |
+| EFFECTIVE_END_DATE | EffectiveEndDate | ✅ |
+| EFFECTIVE_START_DATE | EffectiveStartDate | ✅ |
+| EXCHANGE_RATE_TYPE | CustFinProfileExchangeRateType | — |
+| EXPIRATION_DATE | CustFinProfileExpirationDate | ✅ |
+| INTEREST_FIXED_AMOUNT | CustFinProfileInterestFixedAmount | — |
+| INTEREST_RATE | CustFinProfileInterestRate | — |
+| INTEREST_SCHEDULE_ID | CustFinProfileInterestScheduleId | — |
+| INTEREST_TYPE | CustFinProfileInterestType | — |
+| JGZZ_ATTRIBUTE1 | CustFinProfileJgzzAttribute1 | — |
+| JGZZ_ATTRIBUTE10 | CustFinProfileJgzzAttribute10 | — |
+| JGZZ_ATTRIBUTE11 | CustFinProfileJgzzAttribute11 | — |
+| JGZZ_ATTRIBUTE12 | CustFinProfileJgzzAttribute12 | — |
+| JGZZ_ATTRIBUTE13 | CustFinProfileJgzzAttribute13 | — |
+| JGZZ_ATTRIBUTE14 | CustFinProfileJgzzAttribute14 | — |
+| JGZZ_ATTRIBUTE15 | CustFinProfileJgzzAttribute15 | — |
+| JGZZ_ATTRIBUTE2 | CustFinProfileJgzzAttribute2 | — |
+| JGZZ_ATTRIBUTE3 | CustFinProfileJgzzAttribute3 | — |
+| JGZZ_ATTRIBUTE4 | CustFinProfileJgzzAttribute4 | — |
+| JGZZ_ATTRIBUTE5 | CustFinProfileJgzzAttribute5 | — |
+| JGZZ_ATTRIBUTE6 | CustFinProfileJgzzAttribute6 | — |
+| JGZZ_ATTRIBUTE7 | CustFinProfileJgzzAttribute7 | — |
+| JGZZ_ATTRIBUTE8 | CustFinProfileJgzzAttribute8 | — |
+| JGZZ_ATTRIBUTE9 | CustFinProfileJgzzAttribute9 | — |
+| JGZZ_ATTRIBUTE_CATEGORY | CustFinProfileJgzzAttributeCategory | — |
+| LAST_UPDATE_DATE | CustFinProfileLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | CustFinProfileLastUpdateLogin | — |
+| LAST_UPDATED_BY | CustFinProfileLastUpdatedBy | ✅ |
+| MAX_INTEREST_CHARGE | CustFinProfileMaxInterestCharge | — |
+| MIN_DUNNING_AMOUNT | CustFinProfileMinDunningAmount | — |
+| MIN_DUNNING_INVOICE_AMOUNT | CustFinProfileMinDunningInvoiceAmount | — |
+| MIN_FC_BALANCE_AMOUNT | CustFinProfileMinFcBalanceAmount | — |
+| MIN_FC_BALANCE_OVERDUE_TYPE | CustFinProfileMinFcBalanceOverdueType | — |
+| MIN_FC_BALANCE_PERCENT | CustFinProfileMinFcBalancePercent | — |
+| MIN_FC_INVOICE_AMOUNT | CustFinProfileMinFcInvoiceAmount | — |
+| MIN_FC_INVOICE_OVERDUE_TYPE | CustFinProfileMinFcInvoiceOverdueType | — |
+| MIN_FC_INVOICE_PERCENT | CustFinProfileMinFcInvoicePercent | — |
+| MIN_INTEREST_CHARGE | CustFinProfileMinInterestCharge | — |
+| MIN_STATEMENT_AMOUNT | CustFinProfileMinStatementAmount | — |
+| OBJECT_VERSION_NUMBER | CustFinProfileObjectVersionNumber | — |
+| OVERALL_CREDIT_LIMIT | CustFinProfileOverallCreditLimit | ✅ |
+| PENALTY_FIXED_AMOUNT | CustFinProfilePenaltyFixedAmount | — |
+| PENALTY_RATE | CustFinProfilePenaltyRate | — |
+| PENALTY_SCHEDULE_ID | CustFinProfilePenaltyScheduleId | — |
+| PENALTY_TYPE | CustFinProfilePenaltyType | — |
+| PROGRAM_APPLICATION_ID | CustFinProfileProgramApplicationId | — |
+| PROGRAM_ID | CustFinProfileProgramId | — |
+| PROGRAM_UPDATE_DATE | CustFinProfileProgramUpdateDate | — |
+| REQUEST_ID | CustFinProfileRequestId | — |
+| SITE_USE_ID | CustFinProfileSiteUseId | — |
+| TRX_CREDIT_LIMIT | CustFinProfileTrxCreditLimit | ✅ |
+| WH_UPDATE_DATE | CustFinProfileWhUpdateDate | — |
+
+### [[customerprofile|CustomerProfile]] (AR · BICC: 28/46)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| APPLICATION_ID | CustomerFinancialProfileApplicationId | — |
+| AUTO_REC_MIN_RECEIPT_AMOUNT | CustomerFinancialProfileAutoRecMinReceiptAmount | ✅ |
+| CREATED_BY | CustomerFinancialProfileCreatedBy | ✅ |
+| CREATED_BY_MODULE | CustomerFinancialProfileCreatedByModule | ✅ |
+| CREATION_DATE | CustomerFinancialProfileCreationDate | ✅ |
+| CURRENCY_CODE | CustomerFinancialProfileCurrencyCode | ✅ |
+| CUST_ACCOUNT_ID | CustomerFinancialProfileCustAccountId | — |
+| CUST_ACCOUNT_PROFILE_ID | CustomerFinancialProfileCustAccountProfileId | — |
+| CUST_ACCT_PROFILE_AMT_ID | CustomerFinancialProfileCustAcctProfileAmtId | — |
+| EFFECTIVE_END_DATE | CustomerFinancialProfileEffectiveEndDate | — |
+| EFFECTIVE_START_DATE | CustomerFinancialProfileEffectiveStartDate | — |
+| EXCHANGE_RATE_TYPE | CustomerFinancialProfileExchangeRateType | — |
+| EXPIRATION_DATE | CustomerFinancialProfileExpirationDate | — |
+| GLOBAL_ATTRIBUTE_CATEGORY | CustomerFinancialProfileGlobalAttributeCategory | — |
+| INTEREST_FIXED_AMOUNT | CustomerFinancialProfileInterestFixedAmount | ✅ |
+| INTEREST_RATE | CustomerFinancialProfileInterestRate | ✅ |
+| INTEREST_SCHEDULE_ID | CustomerFinancialProfileInterestScheduleId | ✅ |
+| INTEREST_TYPE | CustomerFinancialProfileInterestType | ✅ |
+| JGZZ_ATTRIBUTE_CATEGORY | CustomerFinancialProfileJgzzAttributeCategory | — |
+| LAST_UPDATE_DATE | CustomerFinancialProfileLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | CustomerFinancialProfileLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | CustomerFinancialProfileLastUpdatedBy | ✅ |
+| MAX_INTEREST_CHARGE | CustomerFinancialProfileMaxInterestCharge | ✅ |
+| MIN_DUNNING_AMOUNT | CustomerFinancialProfileMinDunningAmount | ✅ |
+| MIN_DUNNING_INVOICE_AMOUNT | CustomerFinancialProfileMinDunningInvoiceAmount | ✅ |
+| MIN_FC_BALANCE_AMOUNT | CustomerFinancialProfileMinFcBalanceAmount | ✅ |
+| MIN_FC_BALANCE_OVERDUE_TYPE | CustomerFinancialProfileMinFcBalanceOverdueType | ✅ |
+| MIN_FC_BALANCE_PERCENT | CustomerFinancialProfileMinFcBalancePercent | ✅ |
+| MIN_FC_INVOICE_AMOUNT | CustomerFinancialProfileMinFcInvoiceAmount | ✅ |
+| MIN_FC_INVOICE_OVERDUE_TYPE | CustomerFinancialProfileMinFcInvoiceOverdueType | ✅ |
+| MIN_FC_INVOICE_PERCENT | CustomerFinancialProfileMinFcInvoicePercent | ✅ |
+| MIN_INTEREST_CHARGE | CustomerFinancialProfileMinInterestCharge | ✅ |
+| MIN_STATEMENT_AMOUNT | CustomerFinancialProfileMinStatementAmount | ✅ |
+| OBJECT_VERSION_NUMBER | CustomerFinancialProfileObjectVersionNumber | — |
+| OVERALL_CREDIT_LIMIT | CustomerFinancialProfileOverallCreditLimit | ✅ |
+| PENALTY_FIXED_AMOUNT | CustomerFinancialProfilePenaltyFixedAmount | ✅ |
+| PENALTY_RATE | CustomerFinancialProfilePenaltyRate | ✅ |
+| PENALTY_SCHEDULE_ID | CustomerFinancialProfilePenaltyScheduleId | — |
+| PENALTY_TYPE | CustomerFinancialProfilePenaltyType | ✅ |
+| PROGRAM_APPLICATION_ID | CustomerFinancialProfileProgramApplicationId | — |
+| PROGRAM_ID | CustomerFinancialProfileProgramId | — |
+| PROGRAM_UPDATE_DATE | CustomerFinancialProfileProgramUpdateDate | — |
+| REQUEST_ID | CustomerFinancialProfileRequestId | — |
+| SITE_USE_ID | CustomerFinancialProfileSiteUseId | — |
+| TRX_CREDIT_LIMIT | CustomerFinancialProfileTrxCreditLimit | ✅ |
+| WH_UPDATE_DATE | CustomerFinancialProfileWhUpdateDate | — |
+
+### [[customersiteprofile|CustomerSiteProfile]] (AR · BICC: 28/46)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| APPLICATION_ID | CustomerFinancialProfileApplicationId | — |
+| AUTO_REC_MIN_RECEIPT_AMOUNT | CustomerFinancialProfileAutoRecMinReceiptAmount | ✅ |
+| CREATED_BY | CustomerFinancialProfileCreatedBy | ✅ |
+| CREATED_BY_MODULE | CustomerFinancialProfileCreatedByModule | ✅ |
+| CREATION_DATE | CustomerFinancialProfileCreationDate | ✅ |
+| CURRENCY_CODE | CustomerFinancialProfileCurrencyCode | ✅ |
+| CUST_ACCOUNT_ID | CustomerFinancialProfileCustAccountId | — |
+| CUST_ACCOUNT_PROFILE_ID | CustomerFinancialProfileCustAccountProfileId | — |
+| CUST_ACCT_PROFILE_AMT_ID | CustomerFinancialProfileCustAcctProfileAmtId | — |
+| EFFECTIVE_END_DATE | CustomerFinancialProfileEffectiveEndDate | — |
+| EFFECTIVE_START_DATE | CustomerFinancialProfileEffectiveStartDate | — |
+| EXCHANGE_RATE_TYPE | CustomerFinancialProfileExchangeRateType | — |
+| EXPIRATION_DATE | CustomerFinancialProfileExpirationDate | — |
+| GLOBAL_ATTRIBUTE_CATEGORY | CustomerFinancialProfileGlobalAttributeCategory | — |
+| INTEREST_FIXED_AMOUNT | CustomerFinancialProfileInterestFixedAmount | ✅ |
+| INTEREST_RATE | CustomerFinancialProfileInterestRate | ✅ |
+| INTEREST_SCHEDULE_ID | CustomerFinancialProfileInterestScheduleId | ✅ |
+| INTEREST_TYPE | CustomerFinancialProfileInterestType | ✅ |
+| JGZZ_ATTRIBUTE_CATEGORY | CustomerFinancialProfileJgzzAttributeCategory | — |
+| LAST_UPDATE_DATE | CustomerFinancialProfileLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | CustomerFinancialProfileLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | CustomerFinancialProfileLastUpdatedBy | ✅ |
+| MAX_INTEREST_CHARGE | CustomerFinancialProfileMaxInterestCharge | ✅ |
+| MIN_DUNNING_AMOUNT | CustomerFinancialProfileMinDunningAmount | ✅ |
+| MIN_DUNNING_INVOICE_AMOUNT | CustomerFinancialProfileMinDunningInvoiceAmount | ✅ |
+| MIN_FC_BALANCE_AMOUNT | CustomerFinancialProfileMinFcBalanceAmount | ✅ |
+| MIN_FC_BALANCE_OVERDUE_TYPE | CustomerFinancialProfileMinFcBalanceOverdueType | ✅ |
+| MIN_FC_BALANCE_PERCENT | CustomerFinancialProfileMinFcBalancePercent | ✅ |
+| MIN_FC_INVOICE_AMOUNT | CustomerFinancialProfileMinFcInvoiceAmount | ✅ |
+| MIN_FC_INVOICE_OVERDUE_TYPE | CustomerFinancialProfileMinFcInvoiceOverdueType | ✅ |
+| MIN_FC_INVOICE_PERCENT | CustomerFinancialProfileMinFcInvoicePercent | ✅ |
+| MIN_INTEREST_CHARGE | CustomerFinancialProfileMinInterestCharge | ✅ |
+| MIN_STATEMENT_AMOUNT | CustomerFinancialProfileMinStatementAmount | ✅ |
+| OBJECT_VERSION_NUMBER | CustomerFinancialProfileObjectVersionNumber | — |
+| OVERALL_CREDIT_LIMIT | CustomerFinancialProfileOverallCreditLimit | ✅ |
+| PENALTY_FIXED_AMOUNT | CustomerFinancialProfilePenaltyFixedAmount | ✅ |
+| PENALTY_RATE | CustomerFinancialProfilePenaltyRate | ✅ |
+| PENALTY_SCHEDULE_ID | CustomerFinancialProfilePenaltyScheduleId | — |
+| PENALTY_TYPE | CustomerFinancialProfilePenaltyType | ✅ |
+| PROGRAM_APPLICATION_ID | CustomerFinancialProfileProgramApplicationId | — |
+| PROGRAM_ID | CustomerFinancialProfileProgramId | — |
+| PROGRAM_UPDATE_DATE | CustomerFinancialProfileProgramUpdateDate | — |
+| REQUEST_ID | CustomerFinancialProfileRequestId | — |
+| SITE_USE_ID | CustomerFinancialProfileSiteUseId | — |
+| TRX_CREDIT_LIMIT | CustomerFinancialProfileTrxCreditLimit | ✅ |
+| WH_UPDATE_DATE | CustomerFinancialProfileWhUpdateDate | — |

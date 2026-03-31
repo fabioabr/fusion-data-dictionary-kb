@@ -114,6 +114,46 @@ WHERE  tl.LANGUAGE = USERENV('LANG');
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[processtaskrolepvo|ProcessTaskRolePVO]] (HCM · BICC: 5/11)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | BusinessGroupId | ✅ |
+| CREATED_BY | CreatedBy | — |
+| CREATION_DATE | CreationDate | — |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | — |
+| LAST_UPDATED_BY | LastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | — |
+| PROCESS_FLOW_ID | ProcessTaskRoleBPEOProcessFlowId | — |
+| PROCESS_TASK_ROLE_ID | ProcessTaskRoleId | ✅ |
+| SEQUENCE_NUMBER | ProcessTaskRoleBPEOSequenceNumber | ✅ |
+| TASK_CODE | ProcessTaskRoleBPEOTaskCode | ✅ |
+
+### [[subtaskstatuspvo|SubTaskStatusPVO]] (HCM · BICC: 3/5)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | ProcessTaskRoleBPEOBusinessGroupId | — |
+| PROCESS_FLOW_ID | ProcessTaskRoleBPEOProcessFlowId | — |
+| PROCESS_TASK_ROLE_ID | ProcessTaskRoleId | ✅ |
+| SEQUENCE_NUMBER | ProcessTaskRoleBPEOSequenceNumber | ✅ |
+| TASK_CODE | ProcessTaskRoleBPEOTaskCode | ✅ |
+
+### [[taskstatuspvo|TaskStatusPVO]] (HCM · BICC: 3/5)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | ProcessTaskRoleBPEOBusinessGroupId | — |
+| PROCESS_FLOW_ID | ProcessTaskRoleBPEOProcessFlowId | — |
+| PROCESS_TASK_ROLE_ID | ProcessTaskRoleId | ✅ |
+| SEQUENCE_NUMBER | ProcessTaskRoleBPEOSequenceNumber | ✅ |
+| TASK_CODE | ProcessTaskRoleBPEOTaskCode | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — HRA_PF_TASK_ROLES_B](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/hrapftaskrolesb.html)

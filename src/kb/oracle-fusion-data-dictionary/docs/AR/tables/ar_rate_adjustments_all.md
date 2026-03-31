@@ -128,6 +128,39 @@ WHERE  ra.GL_DATE BETWEEN :start_date AND :end_date
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[rateadjustmentpvo|RateAdjustmentPVO]] (AR · BICC: 15/24)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CASH_RECEIPT_ID | ReceiptRateAdjustmentCashReceiptId | — |
+| CREATED_BY | ReceiptRateAdjustmentCreatedBy | ✅ |
+| CREATED_FROM | ReceiptRateAdjustmentCreatedFrom | — |
+| CREATION_DATE | ReceiptRateAdjustmentCreationDate | ✅ |
+| GAIN_LOSS | ReceiptRateAdjustmentGainLoss | ✅ |
+| GL_DATE | ReceiptRateAdjustmentGlDate | ✅ |
+| GL_POSTED_DATE | ReceiptRateAdjustmentGlPostedDate | ✅ |
+| LAST_UPDATE_DATE | ReceiptRateAdjustmentLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ReceiptRateAdjustmentLastUpdateLogin | — |
+| LAST_UPDATED_BY | ReceiptRateAdjustmentLastUpdatedBy | ✅ |
+| NEW_EXCHANGE_DATE | ReceiptRateAdjustmentNewExchangeDate | ✅ |
+| NEW_EXCHANGE_RATE | ReceiptRateAdjustmentNewExchangeRate | ✅ |
+| NEW_EXCHANGE_RATE_TYPE | ReceiptRateAdjustmentNewExchangeRateType | ✅ |
+| OBJECT_VERSION_NUMBER | ReceiptRateAdjustmentObjectVersionNumber | — |
+| OLD_EXCHANGE_DATE | ReceiptRateAdjustmentOldExchangeDate | ✅ |
+| OLD_EXCHANGE_RATE | ReceiptRateAdjustmentOldExchangeRate | ✅ |
+| OLD_EXCHANGE_RATE_TYPE | ReceiptRateAdjustmentOldExchangeRateType | ✅ |
+| ORG_ID | ReceiptRateAdjustmentOrgId | — |
+| POSTING_CONTROL_ID | ReceiptRateAdjustmentPostingControlId | ✅ |
+| PROGRAM_APPLICATION_ID | ReceiptRateAdjustmentProgramApplicationId | — |
+| PROGRAM_ID | ReceiptRateAdjustmentProgramId | — |
+| PROGRAM_UPDATE_DATE | ReceiptRateAdjustmentProgramUpdateDate | — |
+| RATE_ADJUSTMENT_ID | RateAdjustmentId | ✅ |
+| REQUEST_ID | ReceiptRateAdjustmentRequestId | — |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — AR_RATE_ADJUSTMENTS_ALL](https://docs.oracle.com/en/cloud/saas/financials/25a/oedmf/arrateadjustmentsall-25162.html)

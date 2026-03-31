@@ -41,7 +41,6 @@ updated_at: 2026-03-25
 
 Armazena as **entradas (registros) de ausência** dos colaboradores. Cada registro representa uma solicitação de ausência com datas de início/fim, tipo, motivo, status de aprovação e duração. É a **tabela transacional principal** do módulo Absence Management.
 
-
 ---
 
 ## 🧠 Propósito de Negócio
@@ -131,6 +130,75 @@ WHERE  e.ABSENCE_STATUS = 'APPROVED'
 - O campo `ABSENCE_STATUS` controla o ciclo de vida da solicitação.
 - `DURATION` armazena a duração calculada; os detalhes dia a dia estão em `ANC_PER_ABS_DAILY_DTLS`.
 - Ausências canceladas (`CANCELLED`) permanecem no histórico para auditoria.
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[personabsentrypvo|PersonAbsEntryPVO]] (GL · BICC: 43/60)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ABSENCE_CASE_ID | AbsenceCaseId | — |
+| ABSENCE_ENTRY_BASIC_FLAG | AbsenceEntryBasicFlag | ✅ |
+| ABSENCE_PATTERN_CD | AbsencePatternCd | ✅ |
+| ABSENCE_STATUS_CD | AbsenceStatusCd | ✅ |
+| ABSENCE_TYPE_ID | AbsenceTypeId | — |
+| ABSENCE_TYPE_REASON_ID | AbsenceTypeReasonId | ✅ |
+| APPROVAL_DATETIME | PersonAbsEntryPEOApprovalDatetime | — |
+| APPROVAL_STATUS_CD | ApprovalStatusCd | ✅ |
+| ASSIGNMENT_ID | PersonAbsEntryPEOAssignmentId | ✅ |
+| AUTH_STATUS_UPDATE_DATE | AuthStatusUpdateDate | ✅ |
+| BLOCKED_LEAVE_CANDIDATE | BlockedLeaveCandidate | ✅ |
+| CERTIFICATION_AUTH_FLAG | CertificationAuthFlag | ✅ |
+| CHILD_EVENT_TYPE_CD | ChildEventTypeCd | ✅ |
+| COMMENTS | Comments | ✅ |
+| CONDITION_START_DATE | ConditionStartDate | ✅ |
+| CONFIRMED_DATE | ConfirmedDate | ✅ |
+| CREATED_BY | CreatedBy | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| DISEASE_CODE | DiseaseCode | ✅ |
+| DURATION | Duration | ✅ |
+| END_DATE | EndDate | — |
+| END_DATE_DURATION | EndDateDuration | ✅ |
+| END_DATETIME | EndDatetime | ✅ |
+| END_DT_DUR_PREF_CD | PersonAbsEntryPEOEndDtDurPrefCd | — |
+| END_TIME | EndTime | ✅ |
+| ENTERPRISE_ID | EnterpriseId | ✅ |
+| ESTABLISHMENT_DATE | EstablishmentDate | ✅ |
+| FREQUENCY | Frequency | ✅ |
+| INITIAL_REPORT_BY_ID | InitialReportById | ✅ |
+| INITIAL_TIMELY_NOTIFY_FLAG | InitialTimelyNotifyFlag | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | — |
+| LAST_UPDATED_BY | LastUpdatedBy | ✅ |
+| LATE_NOTIFY_FLAG | LateNotifyFlag | ✅ |
+| LEGAL_ENTITY_ID | LegalEntityId | — |
+| LEGISLATION_CODE | LegislationCode | — |
+| LEGISLATIVE_DATA_GROUP_ID | LegislativeDataGroupId | — |
+| NOTIFICATION_DATE | NotificationDate | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | — |
+| OPEN_ENDED_FLAG | OpenEndedFlag | ✅ |
+| OVERRIDDEN | Overridden | — |
+| PER_ABSENCE_ENTRY_ID | PerAbsenceEntryId | ✅ |
+| PERIOD_OF_INCAP_TO_WORK_FLAG | PeriodOfIncapToWorkFlag | ✅ |
+| PERIOD_OF_SERVICE_ID | PeriodOfServiceId | — |
+| PERSON_ID | PersonId | — |
+| PLANNED_END_DATE | PlannedEndDate | — |
+| PROCESSING_STATUS | ProcessingStatus | — |
+| PROJECT_ID | ProjectId | ✅ |
+| SINGLE_DAY_FLAG | SingleDayFlag | ✅ |
+| SOURCE | Source | ✅ |
+| SPL_CONDITION | SplCondition | ✅ |
+| START_DATE | StartDate | ✅ |
+| START_DATE_DURATION | StartDateDuration | ✅ |
+| START_DATETIME | StartDatetime | ✅ |
+| START_DT_DUR_PREF_CD | PersonAbsEntryPEOStartDtDurPrefCd | — |
+| START_TIME | StartTime | ✅ |
+| SUBMITTED_DATE | SubmittedDate | ✅ |
+| TIMELINESS_OVERRIDE_DATE | TimelinessOverrideDate | ✅ |
+| UOM | Uom | — |
+| USER_MODE | UserMode | ✅ |
 
 ---
 

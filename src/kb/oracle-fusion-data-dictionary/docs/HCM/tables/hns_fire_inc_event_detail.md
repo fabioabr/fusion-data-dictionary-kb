@@ -116,6 +116,38 @@ WHERE  ed.INCIDENT_ID = :p_incident_id;
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[hnsfireeventpvo|HNSFireEventPVO]] (HCM · BICC: 23/23)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | HNSFireEventPEOCreatedBy | ✅ |
+| CREATION_DATE | HNSFireEventPEOCreationDate | ✅ |
+| DELETED_FLAG | HNSFireEventPEODeletedFlag | ✅ |
+| EXPLOSION_FLAG | HNSFireEventPEOExplosionFlag | ✅ |
+| EXPLOSION_FUEL_OR_ENERGY_CODE | HNSFireEventPEOExplsnFuelOrEnergyCd | ✅ |
+| EXPLOSION_IGNITION_SOURCE_CODE | HNSFireEventPEOExplsnIgntnSrcCd | ✅ |
+| EXPLOSION_ORIGIN_CODE | HNSFireEventPEOExplsnOriginCd | ✅ |
+| FIRE_FLAG | HNSFireEventPEOFireFlag | ✅ |
+| FIRE_FUEL_OR_ENERGY_CODE | HNSFireEventPEOFireFuelOrEnergyCd | ✅ |
+| FIRE_IGNITION_SOURCE_CODE | HNSFireEventPEOFireIgntnSrcCode | ✅ |
+| FIRE_INC_EVT_DETAIL_ID | HNSFireEventPEOFireIncEvtDtlId | ✅ |
+| FIRE_ORIGIN_CODE | HNSFireEventPEOFireOrgnCode | ✅ |
+| INCIDENT_DETAIL_ID | HNSFireEventPEOIncDetailId | ✅ |
+| LAST_UPDATE_DATE | HNSFireEventPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | HNSFireEventPEOLastUpdateLgn | ✅ |
+| LAST_UPDATED_BY | HNSFireEventPEOLastUpdatedBy | ✅ |
+| MATERIAL_FIRST_IGNITED_CODE | HNSFireEventPEOMatFirstIgnitedCode | ✅ |
+| OBJECT_VERSION_NUMBER | HNSFireEventPEOObjVerNumber | ✅ |
+| POSSIBLE_CAUSE_OF_EXPLOSION_CD | HNSFireEventPEOPosCauseOfExplsnCd | ✅ |
+| POSSIBLE_CAUSE_OF_FIRE_CODE | HNSFireEventPEOPosCauseOfFireCode | ✅ |
+| REPLN_FIRE_FIGHTING_EQUIP_FLAG | HNSFireEventPEOReplnFireFghEquipFlag | ✅ |
+| TYPE_OF_EXPLOSION_CODE | HNSFireEventPEOTypeOfExplsnCode | ✅ |
+| TYPE_OF_FIRE_CODE | HNSFireEventPEOTypeOfFireCode | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — HNS_FIRE_INC_EVENT_DETAIL](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/hnsfireinceventdetail.html)

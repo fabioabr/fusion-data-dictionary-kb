@@ -75,3 +75,67 @@ updated_at: 2026-03-26
 ## 📎 Uso Típico
 
 (a ser preenchido na etapa 03)
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[sitetaxclassification|SiteTaxClassification]] (AR · BICC: 3/25)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CLASSIFICATION_TYPE_CATEG_CODE | FiscalClassTypeClassificationTypeCategCode | — |
+| CLASSIFICATION_TYPE_CODE | FiscalClassTypeClassificationTypeCode | ✅ |
+| CLASSIFICATION_TYPE_GROUP_CODE | FiscalClassTypeClassificationTypeGroupCode | — |
+| CLASSIFICATION_TYPE_ID | FiscalClassTypeClassificationTypeId | — |
+| CLASSIFICATION_TYPE_LEVEL_CODE | FiscalClassTypeClassificationTypeLevelCode | — |
+| CLASSIFICATION_TYPE_NAME | FiscalClassTypeClassificationTypeName | ✅ |
+| CREATED_BY | FiscalClassTypeCreatedBy | — |
+| CREATION_DATE | FiscalClassTypeCreationDate | — |
+| DELIMITER | FiscalClassTypeDelimiter | — |
+| EFFECTIVE_FROM | FiscalClassTypeEffectiveFrom | — |
+| EFFECTIVE_TO | FiscalClassTypeEffectiveTo | — |
+| LAST_UPDATE_DATE | FiscalClassTypeLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | FiscalClassTypeLastUpdateLogin | — |
+| LAST_UPDATED_BY | FiscalClassTypeLastUpdatedBy | — |
+| NUM_CHARACTERS | FiscalClassTypeNumCharacters | — |
+| OBJECT_VERSION_NUMBER | FiscalClassTypeObjectVersionNumber | — |
+| OWNER_ID_CHAR | FiscalClassTypeOwnerIdChar | — |
+| OWNER_ID_NUM | FiscalClassTypeOwnerIdNum | — |
+| OWNER_TABLE_CODE | FiscalClassTypeOwnerTableCode | — |
+| PROGRAM_APP_NAME | FiscalClassTypeProgramAppName | — |
+| PROGRAM_LOGIN_ID | FiscalClassTypeProgramLoginId | — |
+| PROGRAM_NAME | FiscalClassTypeProgramName | — |
+| RECORD_TYPE_CODE | FiscalClassTypeRecordTypeCode | — |
+| REQUEST_ID | FiscalClassTypeRequestId | — |
+| START_POSITION | FiscalClassTypeStartPosition | — |
+
+### [[taxclassification|TaxClassification]] (AR · BICC: 3/25)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CLASSIFICATION_TYPE_CATEG_CODE | FiscalClassTypeClassificationTypeCategCode | — |
+| CLASSIFICATION_TYPE_CODE | FiscalClassTypeClassificationTypeCode | ✅ |
+| CLASSIFICATION_TYPE_GROUP_CODE | FiscalClassTypeClassificationTypeGroupCode | — |
+| CLASSIFICATION_TYPE_ID | FiscalClassTypeClassificationTypeId | — |
+| CLASSIFICATION_TYPE_LEVEL_CODE | FiscalClassTypeClassificationTypeLevelCode | — |
+| CLASSIFICATION_TYPE_NAME | FiscalClassTypeClassificationTypeName | ✅ |
+| CREATED_BY | FiscalClassTypeCreatedBy | — |
+| CREATION_DATE | FiscalClassTypeCreationDate | — |
+| DELIMITER | FiscalClassTypeDelimiter | — |
+| EFFECTIVE_FROM | FiscalClassTypeEffectiveFrom | — |
+| EFFECTIVE_TO | FiscalClassTypeEffectiveTo | — |
+| LAST_UPDATE_DATE | FiscalClassTypeLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | FiscalClassTypeLastUpdateLogin | — |
+| LAST_UPDATED_BY | FiscalClassTypeLastUpdatedBy | — |
+| NUM_CHARACTERS | FiscalClassTypeNumCharacters | — |
+| OBJECT_VERSION_NUMBER | FiscalClassTypeObjectVersionNumber | — |
+| OWNER_ID_CHAR | FiscalClassTypeOwnerIdChar | — |
+| OWNER_ID_NUM | FiscalClassTypeOwnerIdNum | — |
+| OWNER_TABLE_CODE | FiscalClassTypeOwnerTableCode | — |
+| PROGRAM_APP_NAME | FiscalClassTypeProgramAppName | — |
+| PROGRAM_LOGIN_ID | FiscalClassTypeProgramLoginId | — |
+| PROGRAM_NAME | FiscalClassTypeProgramName | — |
+| RECORD_TYPE_CODE | FiscalClassTypeRecordTypeCode | — |
+| REQUEST_ID | FiscalClassTypeRequestId | — |
+| START_POSITION | FiscalClassTypeStartPosition | — |

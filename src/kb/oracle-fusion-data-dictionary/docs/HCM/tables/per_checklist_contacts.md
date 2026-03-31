@@ -98,6 +98,48 @@ WHERE  pcc.CHECKLIST_ID = :p_checklist_id;
 - A definição no template garante consistência nos contatos de todas as instâncias.
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[checklisttasktemplatepvo|ChecklistTaskTemplatePVO]] (HCM · BICC: 5/14)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ADHOC_USER_GUID | ChecklistContactsPEOAdhocUserGuid | ✅ |
+| CHECKLIST_CONTACT_ID | ChecklistContactsPEOChecklistContactId | — |
+| CHECKLIST_ID | ChecklistContactsPEOChecklistId | — |
+| CONTACT_TITLE_CODE | ChecklistContactsPEOContactTitleCode | ✅ |
+| CONTACT_TYPE | ChecklistContactsPEOContactType | ✅ |
+| CREATED_BY | ChecklistContactsPEOCreatedBy | — |
+| CREATION_DATE | ChecklistContactsPEOCreationDate | — |
+| CUSTOM_CONTACT | ChecklistContactsPEOCustomContact | ✅ |
+| ENTERPRISE_ID | ChecklistContactsPEOEnterpriseId | — |
+| LAST_UPDATE_DATE | ChecklistContactsPEOLastUpdateDate | — |
+| LAST_UPDATE_LOGIN | ChecklistContactsPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | ChecklistContactsPEOLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | ChecklistContactsPEOObjectVersionNumber | — |
+| RESPONSIBILITY_TYPE | ChecklistContactsPEOResponsibilityType | ✅ |
+
+### [[checklisttemplatepvo|ChecklistTemplatePVO]] (HCM · BICC: 5/14)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ADHOC_USER_GUID | ChecklistContactsPEOAdhocUserGuid | ✅ |
+| CHECKLIST_CONTACT_ID | ChecklistContactsPEOChecklistContactId | — |
+| CHECKLIST_ID | ChecklistContactsPEOChecklistId | — |
+| CONTACT_TITLE_CODE | ChecklistContactsPEOContactTitleCode | ✅ |
+| CONTACT_TYPE | ChecklistContactsPEOContactType | ✅ |
+| CREATED_BY | ChecklistContactsPEOCreatedBy | — |
+| CREATION_DATE | ChecklistContactsPEOCreationDate | — |
+| CUSTOM_CONTACT | ChecklistContactsPEOCustomContact | ✅ |
+| ENTERPRISE_ID | ChecklistContactsPEOEnterpriseId | — |
+| LAST_UPDATE_DATE | ChecklistContactsPEOLastUpdateDate | — |
+| LAST_UPDATE_LOGIN | ChecklistContactsPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | ChecklistContactsPEOLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | ChecklistContactsPEOObjectVersionNumber | — |
+| RESPONSIBILITY_TYPE | ChecklistContactsPEOResponsibilityType | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — PER_CHECKLIST_CONTACTS](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/perchecklistcontacts.html)

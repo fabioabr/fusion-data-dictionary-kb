@@ -118,6 +118,462 @@ WHERE  pa.PERSON_ID = :p_person_id
 - Dados sensíveis — sujeitos a regras de privacidade (LGPD/GDPR).
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[addressespvo|AddressesPVO]] (HCM · BICC: 31/32)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ADDL_ADDRESS_ATTRIBUTE1 | AddressesPEOAddlAddressAttribute1 | ✅ |
+| ADDL_ADDRESS_ATTRIBUTE2 | AddressesPEOAddlAddressAttribute2 | ✅ |
+| ADDL_ADDRESS_ATTRIBUTE3 | AddressesPEOAddlAddressAttribute3 | ✅ |
+| ADDL_ADDRESS_ATTRIBUTE4 | AddressesPEOAddlAddressAttribute4 | ✅ |
+| ADDL_ADDRESS_ATTRIBUTE5 | AddressesPEOAddlAddressAttribute5 | ✅ |
+| ADDRESS_ID | AddressId | ✅ |
+| ADDRESS_LINE_1 | AddressesPEOAddressLine1 | ✅ |
+| ADDRESS_LINE_2 | AddressesPEOAddressLine2 | ✅ |
+| ADDRESS_LINE_3 | AddressesPEOAddressLine3 | ✅ |
+| ADDRESS_LINE_4 | AddressesPEOAddressLine4 | ✅ |
+| BUILDING | AddressesPEOBuilding | ✅ |
+| BUSINESS_GROUP_ID | AddressesPEOBusinessGroupId | ✅ |
+| COUNTRY | AddressesPEOCountry | ✅ |
+| CREATED_BY | AddressesPEOCreatedBy | ✅ |
+| CREATION_DATE | AddressesPEOCreationDate | ✅ |
+| DERIVED_LOCALE | AddressesPEODerivedLocale | ✅ |
+| DQ_VALIDATION_LEVEL | AddressesPEODqValidationLevel | ✅ |
+| EFFECTIVE_END_DATE | EffectiveEndDate | ✅ |
+| EFFECTIVE_START_DATE | EffectiveStartDate | ✅ |
+| FLOOR_NUMBER | AddressesPEOFloorNumber | ✅ |
+| GEOMETRY | AddressesPEOGeometry | — |
+| LAST_UPDATE_DATE | AddressesPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | AddressesPEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | AddressesPEOLastUpdatedBy | ✅ |
+| LONG_POSTAL_CODE | AddressesPEOLongPostalCode | ✅ |
+| OBJECT_VERSION_NUMBER | AddressesPEOObjectVersionNumber | ✅ |
+| POSTAL_CODE | AddressesPEOPostalCode | ✅ |
+| REGION_1 | AddressesPEORegion1 | ✅ |
+| REGION_2 | AddressesPEORegion2 | ✅ |
+| REGION_3 | AddressesPEORegion3 | ✅ |
+| TIMEZONE_CODE | AddressesPEOTimezoneCode | ✅ |
+| TOWN_OR_CITY | AddressesPEOTownOrCity | ✅ |
+
+### [[allbuyerpvo|AllBuyerPVO]] (PO · BICC: 2/55)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ADDL_ADDRESS_ATTRIBUTE1 | AddressAddlAddressAttribute1 | — |
+| ADDL_ADDRESS_ATTRIBUTE2 | AddressAddlAddressAttribute2 | — |
+| ADDL_ADDRESS_ATTRIBUTE3 | AddressAddlAddressAttribute3 | — |
+| ADDL_ADDRESS_ATTRIBUTE4 | AddressAddlAddressAttribute4 | — |
+| ADDL_ADDRESS_ATTRIBUTE5 | AddressAddlAddressAttribute5 | — |
+| ADDR_ATTRIBUTE1 | AddressAddrAttribute1 | — |
+| ADDR_ATTRIBUTE10 | AddressAddrAttribute10 | — |
+| ADDR_ATTRIBUTE11 | AddressAddrAttribute11 | — |
+| ADDR_ATTRIBUTE12 | AddressAddrAttribute12 | — |
+| ADDR_ATTRIBUTE13 | AddressAddrAttribute13 | — |
+| ADDR_ATTRIBUTE14 | AddressAddrAttribute14 | — |
+| ADDR_ATTRIBUTE15 | AddressAddrAttribute15 | — |
+| ADDR_ATTRIBUTE16 | AddressAddrAttribute16 | — |
+| ADDR_ATTRIBUTE17 | AddressAddrAttribute17 | — |
+| ADDR_ATTRIBUTE18 | AddressAddrAttribute18 | — |
+| ADDR_ATTRIBUTE19 | AddressAddrAttribute19 | — |
+| ADDR_ATTRIBUTE2 | AddressAddrAttribute2 | — |
+| ADDR_ATTRIBUTE20 | AddressAddrAttribute20 | — |
+| ADDR_ATTRIBUTE21 | AddressAddrAttribute21 | — |
+| ADDR_ATTRIBUTE22 | AddressAddrAttribute22 | — |
+| ADDR_ATTRIBUTE23 | AddressAddrAttribute23 | — |
+| ADDR_ATTRIBUTE24 | AddressAddrAttribute24 | — |
+| ADDR_ATTRIBUTE25 | AddressAddrAttribute25 | — |
+| ADDR_ATTRIBUTE26 | AddressAddrAttribute26 | — |
+| ADDR_ATTRIBUTE27 | AddressAddrAttribute27 | — |
+| ADDR_ATTRIBUTE28 | AddressAddrAttribute28 | — |
+| ADDR_ATTRIBUTE29 | AddressAddrAttribute29 | — |
+| ADDR_ATTRIBUTE3 | AddressAddrAttribute3 | — |
+| ADDR_ATTRIBUTE30 | AddressAddrAttribute30 | — |
+| ADDR_ATTRIBUTE4 | AddressAddrAttribute4 | — |
+| ADDR_ATTRIBUTE5 | AddressAddrAttribute5 | — |
+| ADDR_ATTRIBUTE6 | AddressAddrAttribute6 | — |
+| ADDR_ATTRIBUTE7 | AddressAddrAttribute7 | — |
+| ADDR_ATTRIBUTE8 | AddressAddrAttribute8 | — |
+| ADDR_ATTRIBUTE9 | AddressAddrAttribute9 | — |
+| ADDR_ATTRIBUTE_CATEGORY | AddressAddrAttributeCategory | — |
+| ADDRESS_ID | AddressAddressId | — |
+| BUILDING | AddressBuilding | — |
+| BUSINESS_GROUP_ID | AddressBusinessGroupId | — |
+| CREATED_BY | AddressCreatedBy | — |
+| CREATION_DATE | AddressCreationDate | — |
+| DERIVED_LOCALE | AddressDerivedLocale | — |
+| DQ_VALIDATION_LEVEL | AddressDqValidationLevel | — |
+| EFFECTIVE_END_DATE | AddressEffectiveEndDate | — |
+| EFFECTIVE_START_DATE | AddressEffectiveStartDate | ✅ |
+| FLOOR_NUMBER | AddressFloorNumber | — |
+| LAST_UPDATE_DATE | AddressLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | AddressLastUpdateLogin | — |
+| LAST_UPDATED_BY | AddressLastUpdatedBy | — |
+| LONG_POSTAL_CODE | AddressLongPostalCode | — |
+| OBJECT_VERSION_NUMBER | AddressObjectVersionNumber | — |
+| REGION_1 | AddressRegion1 | — |
+| REGION_2 | AddressRegion2 | — |
+| REGION_3 | AddressRegion3 | — |
+| TIMEZONE_CODE | AddressTimezoneCode | — |
+
+### [[candidateaddressespvo|CandidateAddressesPVO]] (HCM · BICC: 12/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ADDRESS_ID | AddressId | ✅ |
+| ADDRESS_LINE_1 | AddressLine1 | ✅ |
+| ADDRESS_LINE_2 | AddressLine2 | ✅ |
+| COUNTRY | Country | ✅ |
+| EFFECTIVE_END_DATE | EffectiveEndDate | ✅ |
+| EFFECTIVE_START_DATE | EffectiveStartDate | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | ✅ |
+| POSTAL_CODE | PostalCode | ✅ |
+| REGION_1 | Region1 | ✅ |
+| REGION_2 | Region2 | ✅ |
+| REGION_3 | Region3 | ✅ |
+| TOWN_OR_CITY | TownOrCity | ✅ |
+
+### [[contactpersonaddresspvo|ContactPersonAddressPVO]] (HCM · BICC: 22/25)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ADDRESS_ID | AddressId | ✅ |
+| ADDRESS_LINE_1 | AddressesPEOAddressLine1 | ✅ |
+| ADDRESS_LINE_2 | AddressesPEOAddressLine2 | ✅ |
+| ADDRESS_LINE_3 | AddressesPEOAddressLine3 | ✅ |
+| ADDRESS_LINE_4 | AddressesPEOAddressLine4 | ✅ |
+| BUILDING | AddressesPEOBuilding | ✅ |
+| BUSINESS_GROUP_ID | AddressesPEOBusinessGroupId | — |
+| COUNTRY | AddressesPEOCountry | ✅ |
+| CREATED_BY | AddressesPEOCreatedBy | ✅ |
+| CREATION_DATE | AddressesPEOCreationDate | ✅ |
+| EFFECTIVE_END_DATE | EffectiveEndDate | ✅ |
+| EFFECTIVE_START_DATE | EffectiveStartDate | ✅ |
+| FLOOR_NUMBER | AddressesPEOFloorNumber | ✅ |
+| GEOMETRY | AddressesPEOGeometry | — |
+| LAST_UPDATE_DATE | AddressesPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | AddressesPEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | AddressesPEOLastUpdatedBy | ✅ |
+| LONG_POSTAL_CODE | AddressesPEOLongPostalCode | ✅ |
+| OBJECT_VERSION_NUMBER | AddressesPEOObjectVersionNumber | — |
+| POSTAL_CODE | AddressesPEOPostalCode | ✅ |
+| REGION_1 | AddressesPEORegion1 | ✅ |
+| REGION_2 | AddressesPEORegion2 | ✅ |
+| REGION_3 | AddressesPEORegion3 | ✅ |
+| TIMEZONE_CODE | AddressesPEOTimezoneCode | ✅ |
+| TOWN_OR_CITY | AddressesPEOTownOrCity | ✅ |
+
+### [[globalpersonpvo|GlobalPersonPVO]] (HCM · BICC: 24/24)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ADDRESS_ID | AddressesPEOAddressId | ✅ |
+| ADDRESS_LINE_1 | AddressesPEOAddressLine1 | ✅ |
+| ADDRESS_LINE_2 | AddressesPEOAddressLine2 | ✅ |
+| ADDRESS_LINE_3 | AddressesPEOAddressLine3 | ✅ |
+| ADDRESS_LINE_4 | AddressesPEOAddressLine4 | ✅ |
+| BUILDING | AddressesPEOBuilding | ✅ |
+| BUSINESS_GROUP_ID | AddressesPEOBusinessGroupId | ✅ |
+| COUNTRY | AddressesPEOCountry | ✅ |
+| CREATED_BY | AddressesPEOCreatedBy | ✅ |
+| CREATION_DATE | AddressesPEOCreationDate | ✅ |
+| EFFECTIVE_END_DATE | AddressesPEOEffectiveEndDate | ✅ |
+| EFFECTIVE_START_DATE | AddressesPEOEffectiveStartDate | ✅ |
+| FLOOR_NUMBER | AddressesPEOFloorNumber | ✅ |
+| LAST_UPDATE_DATE | AddressesPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | AddressesPEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | AddressesPEOLastUpdatedBy | ✅ |
+| LONG_POSTAL_CODE | AddressesPEOLongPostalCode | ✅ |
+| OBJECT_VERSION_NUMBER | AddressesPEOObjectVersionNumber | ✅ |
+| POSTAL_CODE | AddressesPEOPostalCode | ✅ |
+| REGION_1 | AddressesPEORegion1 | ✅ |
+| REGION_2 | AddressesPEORegion2 | ✅ |
+| REGION_3 | AddressesPEORegion3 | ✅ |
+| TIMEZONE_CODE | AddressesPEOTimezoneCode | ✅ |
+| TOWN_OR_CITY | AddressesPEOTownOrCity | ✅ |
+
+### [[globalpersonpvoviewall|GlobalPersonPVOViewAll]] (HCM · BICC: 16/24)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ADDRESS_ID | AddressesPEOAddressId | — |
+| ADDRESS_LINE_1 | AddressesPEOAddressLine1 | ✅ |
+| ADDRESS_LINE_2 | AddressesPEOAddressLine2 | ✅ |
+| ADDRESS_LINE_3 | AddressesPEOAddressLine3 | ✅ |
+| ADDRESS_LINE_4 | AddressesPEOAddressLine4 | ✅ |
+| BUILDING | AddressesPEOBuilding | ✅ |
+| BUSINESS_GROUP_ID | AddressesPEOBusinessGroupId | — |
+| COUNTRY | AddressesPEOCountry | ✅ |
+| CREATED_BY | AddressesPEOCreatedBy | — |
+| CREATION_DATE | AddressesPEOCreationDate | — |
+| EFFECTIVE_END_DATE | AddressesPEOEffectiveEndDate | — |
+| EFFECTIVE_START_DATE | AddressesPEOEffectiveStartDate | ✅ |
+| FLOOR_NUMBER | AddressesPEOFloorNumber | ✅ |
+| LAST_UPDATE_DATE | AddressesPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | AddressesPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | AddressesPEOLastUpdatedBy | — |
+| LONG_POSTAL_CODE | AddressesPEOLongPostalCode | ✅ |
+| OBJECT_VERSION_NUMBER | AddressesPEOObjectVersionNumber | — |
+| POSTAL_CODE | AddressesPEOPostalCode | ✅ |
+| REGION_1 | AddressesPEORegion1 | ✅ |
+| REGION_2 | AddressesPEORegion2 | ✅ |
+| REGION_3 | AddressesPEORegion3 | ✅ |
+| TIMEZONE_CODE | AddressesPEOTimezoneCode | ✅ |
+| TOWN_OR_CITY | AddressesPEOTownOrCity | ✅ |
+
+### [[hrlocationsbasepvo|HRLocationsBasePVO]] (HCM · BICC: 15/27)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ADDRESS_ID | AddressesPEOAddressId | ✅ |
+| ADDRESS_LINE_1 | AddressesPEOAddressLine1 | ✅ |
+| ADDRESS_LINE_2 | AddressesPEOAddressLine2 | ✅ |
+| ADDRESS_LINE_3 | AddressesPEOAddressLine3 | ✅ |
+| ADDRESS_LINE_4 | AddressesPEOAddressLine4 | ✅ |
+| BUILDING | AddressesPEOBuilding | — |
+| BUSINESS_GROUP_ID | AddressesPEOBusinessGroupId | — |
+| COUNTRY | AddressesPEOCountry | ✅ |
+| CREATED_BY | AddressesPEOCreatedBy | — |
+| CREATION_DATE | AddressesPEOCreationDate | — |
+| DERIVED_LOCALE | AddressesPEODerivedLocale | — |
+| DQ_VALIDATION_LEVEL | AddressesPEODqValidationLevel | — |
+| EFFECTIVE_END_DATE | AddressesPEOEffectiveEndDate | — |
+| EFFECTIVE_START_DATE | AddressesPEOEffectiveStartDate | ✅ |
+| FLOOR_NUMBER | AddressesPEOFloorNumber | — |
+| GEOMETRY | AddressesPEOGeometry | — |
+| LAST_UPDATE_DATE | AddressesPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | AddressesPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | AddressesPEOLastUpdatedBy | — |
+| LONG_POSTAL_CODE | AddressesPEOLongPostalCode | ✅ |
+| OBJECT_VERSION_NUMBER | AddressesPEOObjectVersionNumber | — |
+| POSTAL_CODE | AddressesPEOPostalCode | ✅ |
+| REGION_1 | AddressesPEORegion1 | ✅ |
+| REGION_2 | AddressesPEORegion2 | ✅ |
+| REGION_3 | AddressesPEORegion3 | ✅ |
+| TIMEZONE_CODE | AddressesPEOTimezoneCode | ✅ |
+| TOWN_OR_CITY | AddressesPEOTownOrCity | ✅ |
+
+### [[hrlocationsbasepvoviewall|HRLocationsBasePVOViewAll]] (HCM · BICC: 15/27)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ADDRESS_ID | AddressesPEOAddressId | ✅ |
+| ADDRESS_LINE_1 | AddressesPEOAddressLine1 | ✅ |
+| ADDRESS_LINE_2 | AddressesPEOAddressLine2 | ✅ |
+| ADDRESS_LINE_3 | AddressesPEOAddressLine3 | ✅ |
+| ADDRESS_LINE_4 | AddressesPEOAddressLine4 | ✅ |
+| BUILDING | AddressesPEOBuilding | — |
+| BUSINESS_GROUP_ID | AddressesPEOBusinessGroupId | — |
+| COUNTRY | AddressesPEOCountry | ✅ |
+| CREATED_BY | AddressesPEOCreatedBy | — |
+| CREATION_DATE | AddressesPEOCreationDate | — |
+| DERIVED_LOCALE | AddressesPEODerivedLocale | — |
+| DQ_VALIDATION_LEVEL | AddressesPEODqValidationLevel | — |
+| EFFECTIVE_END_DATE | AddressesPEOEffectiveEndDate | — |
+| EFFECTIVE_START_DATE | AddressesPEOEffectiveStartDate | ✅ |
+| FLOOR_NUMBER | AddressesPEOFloorNumber | — |
+| GEOMETRY | AddressesPEOGeometry | — |
+| LAST_UPDATE_DATE | AddressesPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | AddressesPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | AddressesPEOLastUpdatedBy | — |
+| LONG_POSTAL_CODE | AddressesPEOLongPostalCode | ✅ |
+| OBJECT_VERSION_NUMBER | AddressesPEOObjectVersionNumber | — |
+| POSTAL_CODE | AddressesPEOPostalCode | ✅ |
+| REGION_1 | AddressesPEORegion1 | ✅ |
+| REGION_2 | AddressesPEORegion2 | ✅ |
+| REGION_3 | AddressesPEORegion3 | ✅ |
+| TIMEZONE_CODE | AddressesPEOTimezoneCode | ✅ |
+| TOWN_OR_CITY | AddressesPEOTownOrCity | ✅ |
+
+### [[hrlocationspvo|HRLocationsPVO]] (HCM · BICC: 26/27)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ADDRESS_ID | AddressesPEOAddressId | ✅ |
+| ADDRESS_LINE_1 | AddressesPEOAddressLine1 | ✅ |
+| ADDRESS_LINE_2 | AddressesPEOAddressLine2 | ✅ |
+| ADDRESS_LINE_3 | AddressesPEOAddressLine3 | ✅ |
+| ADDRESS_LINE_4 | AddressesPEOAddressLine4 | ✅ |
+| BUILDING | AddressesPEOBuilding | ✅ |
+| BUSINESS_GROUP_ID | AddressesPEOBusinessGroupId | ✅ |
+| COUNTRY | AddressesPEOCountry | ✅ |
+| CREATED_BY | AddressesPEOCreatedBy | ✅ |
+| CREATION_DATE | AddressesPEOCreationDate | ✅ |
+| DERIVED_LOCALE | AddressesPEODerivedLocale | ✅ |
+| DQ_VALIDATION_LEVEL | AddressesPEODqValidationLevel | ✅ |
+| EFFECTIVE_END_DATE | AddressesPEOEffectiveEndDate | ✅ |
+| EFFECTIVE_START_DATE | AddressesPEOEffectiveStartDate | ✅ |
+| FLOOR_NUMBER | AddressesPEOFloorNumber | ✅ |
+| GEOMETRY | AddressesPEOGeometry | — |
+| LAST_UPDATE_DATE | AddressesPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | AddressesPEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | AddressesPEOLastUpdatedBy | ✅ |
+| LONG_POSTAL_CODE | AddressesPEOLongPostalCode | ✅ |
+| OBJECT_VERSION_NUMBER | AddressesPEOObjectVersionNumber | ✅ |
+| POSTAL_CODE | AddressesPEOPostalCode | ✅ |
+| REGION_1 | AddressesPEORegion1 | ✅ |
+| REGION_2 | AddressesPEORegion2 | ✅ |
+| REGION_3 | AddressesPEORegion3 | ✅ |
+| TIMEZONE_CODE | AddressesPEOTimezoneCode | ✅ |
+| TOWN_OR_CITY | AddressesPEOTownOrCity | ✅ |
+
+### [[hrlocationspvoviewall|HRLocationsPVOViewAll]] (HCM · BICC: 5/27)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ADDRESS_ID | AddressesPEOAddressId | — |
+| ADDRESS_LINE_1 | AddressesPEOAddressLine1 | ✅ |
+| ADDRESS_LINE_2 | AddressesPEOAddressLine2 | — |
+| ADDRESS_LINE_3 | AddressesPEOAddressLine3 | — |
+| ADDRESS_LINE_4 | AddressesPEOAddressLine4 | — |
+| BUILDING | AddressesPEOBuilding | — |
+| BUSINESS_GROUP_ID | AddressesPEOBusinessGroupId | — |
+| COUNTRY | AddressesPEOCountry | — |
+| CREATED_BY | AddressesPEOCreatedBy | — |
+| CREATION_DATE | AddressesPEOCreationDate | — |
+| DERIVED_LOCALE | AddressesPEODerivedLocale | — |
+| DQ_VALIDATION_LEVEL | AddressesPEODqValidationLevel | — |
+| EFFECTIVE_END_DATE | AddressesPEOEffectiveEndDate | — |
+| EFFECTIVE_START_DATE | AddressesPEOEffectiveStartDate | ✅ |
+| FLOOR_NUMBER | AddressesPEOFloorNumber | — |
+| GEOMETRY | AddressesPEOGeometry | — |
+| LAST_UPDATE_DATE | AddressesPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | AddressesPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | AddressesPEOLastUpdatedBy | — |
+| LONG_POSTAL_CODE | AddressesPEOLongPostalCode | — |
+| OBJECT_VERSION_NUMBER | AddressesPEOObjectVersionNumber | — |
+| POSTAL_CODE | AddressesPEOPostalCode | ✅ |
+| REGION_1 | AddressesPEORegion1 | — |
+| REGION_2 | AddressesPEORegion2 | — |
+| REGION_3 | AddressesPEORegion3 | — |
+| TIMEZONE_CODE | AddressesPEOTimezoneCode | — |
+| TOWN_OR_CITY | AddressesPEOTownOrCity | ✅ |
+
+### [[locationrefpvo|LocationRefPVO]] (HCM)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ADDRESS_ID | AddressesPEOAddressId | — |
+| ADDRESS_LINE_1 | AddressesPEOAddressLine1 | — |
+| ADDRESS_LINE_2 | AddressesPEOAddressLine2 | — |
+| ADDRESS_LINE_3 | AddressesPEOAddressLine3 | — |
+| ADDRESS_LINE_4 | AddressesPEOAddressLine4 | — |
+| BUILDING | AddressesPEOBuilding | — |
+| COUNTRY | AddressesPEOCountry | — |
+| CREATED_BY | AddressesPEOCreatedBy | — |
+| CREATION_DATE | AddressesPEOCreationDate | — |
+| DERIVED_LOCALE | AddressesPEODerivedLocale | — |
+| EFFECTIVE_END_DATE | AddressesPEOEffectiveEndDate | — |
+| EFFECTIVE_START_DATE | AddressesPEOEffectiveStartDate | — |
+| FLOOR_NUMBER | AddressesPEOFloorNumber | — |
+| GEOMETRY | AddressesPEOGeometry | — |
+| LAST_UPDATE_DATE | AddressesPEOLastUpdateDate | — |
+| LAST_UPDATE_LOGIN | AddressesPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | AddressesPEOLastUpdatedBy | — |
+| LONG_POSTAL_CODE | AddressesPEOLongPostalCode | — |
+| OBJECT_VERSION_NUMBER | AddressesPEOObjectVersionNumber | — |
+| POSTAL_CODE | AddressesPEOPostalCode | — |
+| REGION_1 | AddressesPEORegion1 | — |
+| REGION_2 | AddressesPEORegion2 | — |
+| REGION_3 | AddressesPEORegion3 | — |
+| TIMEZONE_CODE | AddressesPEOTimezoneCode | — |
+| TOWN_OR_CITY | AddressesPEOTownOrCity | — |
+
+### [[personaddresspvo|PersonAddressPVO]] (HCM · BICC: 27/30)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ADDL_ADDRESS_ATTRIBUTE1 | AddressesPEOAddlAddressAttribute1 | ✅ |
+| ADDL_ADDRESS_ATTRIBUTE2 | AddressesPEOAddlAddressAttribute2 | ✅ |
+| ADDL_ADDRESS_ATTRIBUTE3 | AddressesPEOAddlAddressAttribute3 | ✅ |
+| ADDL_ADDRESS_ATTRIBUTE4 | AddressesPEOAddlAddressAttribute4 | ✅ |
+| ADDL_ADDRESS_ATTRIBUTE5 | AddressesPEOAddlAddressAttribute5 | ✅ |
+| ADDRESS_ID | AddressId | ✅ |
+| ADDRESS_LINE_1 | AddressesPEOAddressLine1 | ✅ |
+| ADDRESS_LINE_2 | AddressesPEOAddressLine2 | ✅ |
+| ADDRESS_LINE_3 | AddressesPEOAddressLine3 | ✅ |
+| ADDRESS_LINE_4 | AddressesPEOAddressLine4 | ✅ |
+| BUILDING | AddressesPEOBuilding | ✅ |
+| BUSINESS_GROUP_ID | AddressesPEOBusinessGroupId | — |
+| COUNTRY | AddressesPEOCountry | ✅ |
+| CREATED_BY | AddressesPEOCreatedBy | ✅ |
+| CREATION_DATE | AddressesPEOCreationDate | ✅ |
+| EFFECTIVE_END_DATE | EffectiveEndDate | ✅ |
+| EFFECTIVE_START_DATE | EffectiveStartDate | ✅ |
+| FLOOR_NUMBER | AddressesPEOFloorNumber | ✅ |
+| GEOMETRY | AddressesPEOGeometry | — |
+| LAST_UPDATE_DATE | AddressesPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | AddressesPEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | AddressesPEOLastUpdatedBy | ✅ |
+| LONG_POSTAL_CODE | AddressesPEOLongPostalCode | ✅ |
+| OBJECT_VERSION_NUMBER | AddressesPEOObjectVersionNumber | — |
+| POSTAL_CODE | AddressesPEOPostalCode | ✅ |
+| REGION_1 | AddressesPEORegion1 | ✅ |
+| REGION_2 | AddressesPEORegion2 | ✅ |
+| REGION_3 | AddressesPEORegion3 | ✅ |
+| TIMEZONE_CODE | AddressesPEOTimezoneCode | ✅ |
+| TOWN_OR_CITY | AddressesPEOTownOrCity | ✅ |
+
+### [[personaddresspvoviewall|PersonAddressPVOViewAll]] (HCM · BICC: 28/30)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ADDL_ADDRESS_ATTRIBUTE1 | AddressesPEOAddlAddressAttribute1 | ✅ |
+| ADDL_ADDRESS_ATTRIBUTE2 | AddressesPEOAddlAddressAttribute2 | ✅ |
+| ADDL_ADDRESS_ATTRIBUTE3 | AddressesPEOAddlAddressAttribute3 | ✅ |
+| ADDL_ADDRESS_ATTRIBUTE4 | AddressesPEOAddlAddressAttribute4 | ✅ |
+| ADDL_ADDRESS_ATTRIBUTE5 | AddressesPEOAddlAddressAttribute5 | ✅ |
+| ADDRESS_ID | AddressId | ✅ |
+| ADDRESS_LINE_1 | AddressesPEOAddressLine1 | ✅ |
+| ADDRESS_LINE_2 | AddressesPEOAddressLine2 | ✅ |
+| ADDRESS_LINE_3 | AddressesPEOAddressLine3 | ✅ |
+| ADDRESS_LINE_4 | AddressesPEOAddressLine4 | ✅ |
+| BUILDING | AddressesPEOBuilding | ✅ |
+| BUSINESS_GROUP_ID | AddressesPEOBusinessGroupId | ✅ |
+| COUNTRY | AddressesPEOCountry | ✅ |
+| CREATED_BY | AddressesPEOCreatedBy | ✅ |
+| CREATION_DATE | AddressesPEOCreationDate | ✅ |
+| EFFECTIVE_END_DATE | EffectiveEndDate | ✅ |
+| EFFECTIVE_START_DATE | EffectiveStartDate | ✅ |
+| FLOOR_NUMBER | AddressesPEOFloorNumber | ✅ |
+| GEOMETRY | AddressesPEOGeometry | — |
+| LAST_UPDATE_DATE | AddressesPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | AddressesPEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | AddressesPEOLastUpdatedBy | ✅ |
+| LONG_POSTAL_CODE | AddressesPEOLongPostalCode | ✅ |
+| OBJECT_VERSION_NUMBER | AddressesPEOObjectVersionNumber | — |
+| POSTAL_CODE | AddressesPEOPostalCode | ✅ |
+| REGION_1 | AddressesPEORegion1 | ✅ |
+| REGION_2 | AddressesPEORegion2 | ✅ |
+| REGION_3 | AddressesPEORegion3 | ✅ |
+| TIMEZONE_CODE | AddressesPEOTimezoneCode | ✅ |
+| TOWN_OR_CITY | AddressesPEOTownOrCity | ✅ |
+
+### [[personrefpvo|PersonRefPVO]] (HCM)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ADDRESS_ID | AddressesPEOAddressId | — |
+| ADDRESS_LINE_1 | AddressesPEOAddressLine1 | — |
+| ADDRESS_LINE_2 | AddressesPEOAddressLine2 | — |
+| ADDRESS_LINE_3 | AddressesPEOAddressLine3 | — |
+| ADDRESS_LINE_4 | AddressesPEOAddressLine4 | — |
+| BUILDING | AddressesPEOBuilding | — |
+| COUNTRY | AddressesPEOCountry | — |
+| EFFECTIVE_END_DATE | AddressesPEOEffectiveEndDate | — |
+| EFFECTIVE_START_DATE | AddressesPEOEffectiveStartDate | — |
+| FLOOR_NUMBER | AddressesPEOFloorNumber | — |
+| LONG_POSTAL_CODE | AddressesPEOLongPostalCode | — |
+| POSTAL_CODE | AddressesPEOPostalCode | — |
+| REGION_1 | AddressesPEORegion1 | — |
+| REGION_2 | AddressesPEORegion2 | — |
+| REGION_3 | AddressesPEORegion3 | — |
+| TIMEZONE_CODE | AddressesPEOTimezoneCode | — |
+| TOWN_OR_CITY | AddressesPEOTownOrCity | — |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — PER_ADDRESSES_F](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/peraddressesf.html)

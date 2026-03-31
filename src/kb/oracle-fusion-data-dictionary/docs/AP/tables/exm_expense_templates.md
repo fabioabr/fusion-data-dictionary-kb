@@ -133,6 +133,159 @@ WHERE  et.CASH_ADVANCE_ALLOWED_FLAG = 'Y'
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[expenseattendeepvo|ExpenseAttendeePVO]] (OTHER · BICC: 1/21)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ALLOW_RCPT_MISSING_FLAG | ExpenseTemplatePEOAllowRcptMissingFlag | — |
+| CASH_RECEIPT_REQ_FLAG | ExpenseTemplatePEOCashReceiptReqFlag | — |
+| CASH_RECEIPT_REQ_LIMIT | ExpenseTemplatePEOCashReceiptReqLimit | — |
+| CC_RECEIPT_REQ_FLAG | ExpenseTemplatePEOCcReceiptReqFlag | — |
+| CC_RECEIPT_REQ_LIMIT | ExpenseTemplatePEOCcReceiptReqLimit | — |
+| CREATED_BY | ExpenseTemplatePEOCreatedBy | — |
+| CREATION_DATE | ExpenseTemplatePEOCreationDate | — |
+| DESCRIPTION | ExpenseTemplatePEODescription | — |
+| DFLT_CC_EXP_TYPE_ID | ExpenseTemplatePEODfltCcExpTypeId | — |
+| DISP_RCPT_VIOLATION_FLAG | ExpenseTemplatePEODispRcptViolationFlag | — |
+| ENABLE_CC_MAPPING_FLAG | ExpenseTemplatePEOEnableCcMappingFlag | — |
+| EXPENSE_TEMPLATE_ID | ExpenseTemplatePEOExpenseTemplateId | — |
+| INACTIVE_DATE | ExpenseTemplatePEOInactiveDate | — |
+| LAST_UPDATE_DATE | ExpenseTemplatePEOLastUpdateDate | — |
+| LAST_UPDATE_LOGIN | ExpenseTemplatePEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | ExpenseTemplatePEOLastUpdatedBy | — |
+| NAME | ExpenseTemplatePEOName | ✅ |
+| NEGATIVE_RCPT_REQ_FLAG | ExpenseTemplatePEONegativeRcptReqFlag | — |
+| OBJECT_VERSION_NUMBER | ExpenseTemplatePEOObjectVersionNumber | — |
+| ORG_ID | ExpenseTemplatePEOOrgId | — |
+| START_DATE | ExpenseTemplatePEOStartDate | — |
+
+### [[expensedistributionpvo|ExpenseDistributionPVO]] (OTHER · BICC: 1/21)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ALLOW_RCPT_MISSING_FLAG | ExpenseTemplatePEOAllowRcptMissingFlag | — |
+| CASH_RECEIPT_REQ_FLAG | ExpenseTemplatePEOCashReceiptReqFlag | — |
+| CASH_RECEIPT_REQ_LIMIT | ExpenseTemplatePEOCashReceiptReqLimit | — |
+| CC_RECEIPT_REQ_FLAG | ExpenseTemplatePEOCcReceiptReqFlag | — |
+| CC_RECEIPT_REQ_LIMIT | ExpenseTemplatePEOCcReceiptReqLimit | — |
+| CREATED_BY | ExpenseTemplatePEOCreatedBy | — |
+| CREATION_DATE | ExpenseTemplatePEOCreationDate | — |
+| DESCRIPTION | ExpenseTemplatePEODescription | — |
+| DFLT_CC_EXP_TYPE_ID | ExpenseTemplatePEODfltCcExpTypeId | — |
+| DISP_RCPT_VIOLATION_FLAG | ExpenseTemplatePEODispRcptViolationFlag | — |
+| ENABLE_CC_MAPPING_FLAG | ExpenseTemplatePEOEnableCcMappingFlag | — |
+| EXPENSE_TEMPLATE_ID | ExpenseTemplatePEOExpenseTemplateId | — |
+| INACTIVE_DATE | ExpenseTemplatePEOInactiveDate | — |
+| LAST_UPDATE_DATE | ExpenseTemplatePEOLastUpdateDate | — |
+| LAST_UPDATE_LOGIN | ExpenseTemplatePEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | ExpenseTemplatePEOLastUpdatedBy | — |
+| NAME | ExpenseTemplatePEOName | ✅ |
+| NEGATIVE_RCPT_REQ_FLAG | ExpenseTemplatePEONegativeRcptReqFlag | — |
+| OBJECT_VERSION_NUMBER | ExpenseTemplatePEOObjectVersionNumber | — |
+| ORG_ID | ExpenseTemplatePEOOrgId | — |
+| START_DATE | ExpenseTemplatePEOStartDate | — |
+
+### [[expensepvo|ExpensePVO]] (OTHER · BICC: 2/21)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ALLOW_RCPT_MISSING_FLAG | ExpenseTemplatePEOAllowRcptMissingFlag | — |
+| CASH_RECEIPT_REQ_FLAG | ExpenseTemplatePEOCashReceiptReqFlag | — |
+| CASH_RECEIPT_REQ_LIMIT | ExpenseTemplatePEOCashReceiptReqLimit | — |
+| CC_RECEIPT_REQ_FLAG | ExpenseTemplatePEOCcReceiptReqFlag | — |
+| CC_RECEIPT_REQ_LIMIT | ExpenseTemplatePEOCcReceiptReqLimit | — |
+| CREATED_BY | ExpenseTemplatePEOCreatedBy | — |
+| CREATION_DATE | ExpenseTemplatePEOCreationDate | — |
+| DESCRIPTION | ExpenseTemplatePEODescription | — |
+| DFLT_CC_EXP_TYPE_ID | ExpenseTemplatePEODfltCcExpTypeId | — |
+| DISP_RCPT_VIOLATION_FLAG | ExpenseTemplatePEODispRcptViolationFlag | — |
+| ENABLE_CC_MAPPING_FLAG | ExpenseTemplatePEOEnableCcMappingFlag | — |
+| EXPENSE_TEMPLATE_ID | ExpenseTemplatePEOExpenseTemplateId | — |
+| INACTIVE_DATE | ExpenseTemplatePEOInactiveDate | — |
+| LAST_UPDATE_DATE | ExpenseTemplatePEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ExpenseTemplatePEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | ExpenseTemplatePEOLastUpdatedBy | — |
+| NAME | ExpenseTemplatePEOName | ✅ |
+| NEGATIVE_RCPT_REQ_FLAG | ExpenseTemplatePEONegativeRcptReqFlag | — |
+| OBJECT_VERSION_NUMBER | ExpenseTemplatePEOObjectVersionNumber | — |
+| ORG_ID | ExpenseTemplatePEOOrgId | — |
+| START_DATE | ExpenseTemplatePEOStartDate | — |
+
+### [[expensetemplateextractpvo|ExpenseTemplateExtractPVO]] (OTHER · BICC: 15/21)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ALLOW_RCPT_MISSING_FLAG | ExpenseTemplateAllowRcptMissingFlag | ✅ |
+| CASH_RECEIPT_REQ_FLAG | ExpenseTemplateCashReceiptReqFlag | ✅ |
+| CASH_RECEIPT_REQ_LIMIT | ExpenseTemplateCashReceiptReqLimit | ✅ |
+| CC_RECEIPT_REQ_FLAG | ExpenseTemplateCcReceiptReqFlag | ✅ |
+| CC_RECEIPT_REQ_LIMIT | ExpenseTemplateCcReceiptReqLimit | ✅ |
+| CREATED_BY | ExpenseTemplateCreatedBy | — |
+| CREATION_DATE | ExpenseTemplateCreationDate | ✅ |
+| DESCRIPTION | ExpenseTemplateDescription | ✅ |
+| DFLT_CC_EXP_TYPE_ID | ExpenseTemplateDfltCcExpTypeId | — |
+| DISP_RCPT_VIOLATION_FLAG | ExpenseTemplateDispRcptViolationFlag | ✅ |
+| ENABLE_CC_MAPPING_FLAG | ExpenseTemplateEnableCcMappingFlag | — |
+| EXPENSE_TEMPLATE_ID | ExpenseTemplateId | ✅ |
+| INACTIVE_DATE | ExpenseTemplateInactiveDate | ✅ |
+| LAST_UPDATE_DATE | ExpenseTemplateLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ExpenseTemplateLastUpdateLogin | — |
+| LAST_UPDATED_BY | ExpenseTemplateLastUpdatedBy | — |
+| NAME | ExpenseTemplateName | ✅ |
+| NEGATIVE_RCPT_REQ_FLAG | ExpenseTemplateNegativeRcptReqFlag | ✅ |
+| OBJECT_VERSION_NUMBER | ExpenseTemplateObjectVersionNumber | — |
+| ORG_ID | ExpenseTemplateOrgId | ✅ |
+| START_DATE | ExpenseTemplateStartDate | ✅ |
+
+### [[expensetypepvo|ExpenseTypePVO]] (OTHER · BICC: 1/14)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | CreatedBy1 | — |
+| CREATION_DATE | CreationDate1 | — |
+| DESCRIPTION | Description1 | — |
+| DFLT_CC_EXP_TYPE_ID | DfltCcExpTypeId | — |
+| ENABLE_CC_MAPPING_FLAG | EnableCcMappingFlag | — |
+| EXPENSE_TEMPLATE_ID | ExpenseTemplateId1 | — |
+| INACTIVE_DATE | InactiveDate | — |
+| LAST_UPDATE_DATE | LastUpdateDate1 | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin1 | — |
+| LAST_UPDATED_BY | LastUpdatedBy1 | — |
+| NAME | Name1 | — |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber1 | — |
+| ORG_ID | OrgId1 | — |
+| START_DATE | StartDate1 | — |
+
+### [[expenseviolationpvo|ExpenseViolationPVO]] (OTHER · BICC: 2/21)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ALLOW_RCPT_MISSING_FLAG | ExpenseTemplatePEOAllowRcptMissingFlag | — |
+| CASH_RECEIPT_REQ_FLAG | ExpenseTemplatePEOCashReceiptReqFlag | — |
+| CASH_RECEIPT_REQ_LIMIT | ExpenseTemplatePEOCashReceiptReqLimit | — |
+| CC_RECEIPT_REQ_FLAG | ExpenseTemplatePEOCcReceiptReqFlag | — |
+| CC_RECEIPT_REQ_LIMIT | ExpenseTemplatePEOCcReceiptReqLimit | — |
+| CREATED_BY | ExpenseTemplatePEOCreatedBy | — |
+| CREATION_DATE | ExpenseTemplatePEOCreationDate | — |
+| DESCRIPTION | ExpenseTemplatePEODescription | — |
+| DFLT_CC_EXP_TYPE_ID | ExpenseTemplatePEODfltCcExpTypeId | — |
+| DISP_RCPT_VIOLATION_FLAG | ExpenseTemplatePEODispRcptViolationFlag | — |
+| ENABLE_CC_MAPPING_FLAG | ExpenseTemplatePEOEnableCcMappingFlag | — |
+| EXPENSE_TEMPLATE_ID | ExpenseTemplatePEOExpenseTemplateId | — |
+| INACTIVE_DATE | ExpenseTemplatePEOInactiveDate | — |
+| LAST_UPDATE_DATE | ExpenseTemplatePEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ExpenseTemplatePEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | ExpenseTemplatePEOLastUpdatedBy | — |
+| NAME | ExpenseTemplatePEOName | ✅ |
+| NEGATIVE_RCPT_REQ_FLAG | ExpenseTemplatePEONegativeRcptReqFlag | — |
+| OBJECT_VERSION_NUMBER | ExpenseTemplatePEOObjectVersionNumber | — |
+| ORG_ID | ExpenseTemplatePEOOrgId | — |
+| START_DATE | ExpenseTemplatePEOStartDate | — |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — EXM_EXPENSE_TEMPLATES](https://docs.oracle.com/en/cloud/saas/financials/25a/oedmf/exmexpensetemplates.html)

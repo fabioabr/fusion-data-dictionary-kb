@@ -117,6 +117,58 @@ WHERE  tl.LANGUAGE = 'PTB'
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[negotiationstylebpvo|NegotiationStyleBPVO]] (PO · BICC: 3/11)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | NegotiationStyleTranslatedCreatedBy | — |
+| CREATION_DATE | NegotiationStyleTranslatedCreationDate | — |
+| DESCRIPTION | NegotiationStyleTranslatedDescription | ✅ |
+| LANGUAGE | NegotiationStyleTranslatedLanguage | — |
+| LAST_UPDATE_DATE | NegotiationStyleTranslatedLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | NegotiationStyleTranslatedLastUpdateLogin | — |
+| LAST_UPDATED_BY | NegotiationStyleTranslatedLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | NegotiationStyleTranslatedObjectVersionNumber | — |
+| SOURCE_LANG | NegotiationStyleTranslatedSourceLang | — |
+| STYLE_ID | NegotiationStyleTranslatedStyleId | — |
+| STYLE_NAME | NegotiationStyleTranslatedStyleName | ✅ |
+
+### [[negstyletranslationextractpvo|NegStyleTranslationExtractPVO]] (PO · BICC: 11/11)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | CreatedBy | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| DESCRIPTION | Description | ✅ |
+| LANGUAGE | Language | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | LastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | ✅ |
+| SOURCE_LANG | SourceLang | ✅ |
+| STYLE_ID | StyleId | ✅ |
+| STYLE_NAME | StyleName | ✅ |
+
+### [[sourcingnegotiationstyletranslationpvo|SourcingNegotiationStyleTranslationPVO]] (PO · BICC: 10/11)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | CreatedBy | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| DESCRIPTION | Description | ✅ |
+| LANGUAGE | Language | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | LastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | — |
+| SOURCE_LANG | SourceLang | ✅ |
+| STYLE_ID | StyleId | ✅ |
+| STYLE_NAME | StyleName | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — Sourcing Tables](https://docs.oracle.com/en/cloud/saas/procurement/25a/oedmf/pon-tables.html)

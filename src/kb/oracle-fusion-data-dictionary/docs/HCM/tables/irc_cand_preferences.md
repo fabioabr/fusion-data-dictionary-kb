@@ -103,3 +103,28 @@ WHERE  cp.CANDIDATE_ID = :p_candidate_id;
 
 - [Oracle Docs -- IRC_CAND_PREFERENCES](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/irccandpreferences.html)
 - [[hcm-module-data-dictionary]] -- Dossie do modulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[candidatepreferencespvo|CandidatePreferencesPVO]] (HCM · BICC: 8/16)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CAND_PREF_ID | CandPrefId | ✅ |
+| CREATED_BY | CandPrefPEOCreatedBy | — |
+| CREATION_DATE | CandPrefPEOCreationDate | — |
+| LAST_UPDATE_DATE | CandPrefPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | CandPrefPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | CandPrefPEOLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | CandPrefPEOObjectVersionNumber | — |
+| OPT_IN_TC_EMAILS_DATE | CandPrefPEOOptInTcEmailsDate | ✅ |
+| OPT_IN_TC_EMAILS_FLAG | CandPrefPEOOptInTcEmailsFlag | ✅ |
+| PERSON_ID | CandPrefPEOPersonId | — |
+| SITE_NUMBER | CandPrefPEOSiteNumber | — |
+| TC_AF_VERSION_ID | CandPrefPEOTcAfVersionId | ✅ |
+| TC_CONFIRMED_BY_PERSON_ID | CandPrefPEOTcConfirmedByPersonId | — |
+| TC_CONFIRMED_DATE | CandPrefPEOTcConfirmedDate | ✅ |
+| TC_CONFIRMED_FLAG | CandPrefPEOTcConfirmedFlag | ✅ |
+| TC_LEGAL_DESC_VERSION_ID | CandPrefPEOTcLegalDescVersionId | ✅ |

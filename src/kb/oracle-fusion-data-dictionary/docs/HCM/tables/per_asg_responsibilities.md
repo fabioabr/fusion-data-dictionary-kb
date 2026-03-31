@@ -103,6 +103,70 @@ WHERE  par.ASSIGNMENT_ID = :p_assignment_id
 - Utilizada para compliance em contextos regulatórios (ex.: responsável por dados, DPO).
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[assignmentresponsibilitypvo|AssignmentResponsibilityPVO]] (AR · BICC: 55/55)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ASG_RESPONSIBILITY_ID | AsgResponsibilityId | ✅ |
+| ASSIGNMENT_CATEGORY | AssignmentCategory | ✅ |
+| ASSIGNMENT_ID | AssignmentId | ✅ |
+| AUTO_PROVISION_FLAG | AutoProvisionFlag | ✅ |
+| BARGAINING_UNIT | BargainingUnit | ✅ |
+| BENEFIT_GROUP_ID | BenefitGroupId | ✅ |
+| BUSINESS_UNIT_ID | BusinessUnitId | ✅ |
+| COUNTRY | Country | ✅ |
+| CREATED_BY | CreatedBy | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| DEPARTMENT_HIERARCHY_ID | DepartmentHierarchyId | ✅ |
+| DEPARTMENT_TREE_CODE | DepartmentTreeCode | ✅ |
+| END_DATE | EndDate | ✅ |
+| ENTERPRISE_ID | EnterpriseId | ✅ |
+| GRADE_ID | GradeId | ✅ |
+| HIERARCHY_LEVELS | HierarchyLevels | ✅ |
+| HIERARCHY_TYPE | HierarchyType | ✅ |
+| INCLUDE_TOP_HIER_NODE | IncludeTopHierNode | ✅ |
+| JOB_FAMILY_ID | JobFamilyId | ✅ |
+| JOB_FUNCTION_CODE | JobFunctionCode | ✅ |
+| JOB_ID | JobId | ✅ |
+| LAST_NAME_END | LastNameEnd | ✅ |
+| LAST_NAME_START | LastNameStart | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | LastUpdatedBy | ✅ |
+| LEGAL_ENTITY_ID | LegalEntityId | ✅ |
+| LEGISLATIVE_DATA_GROUP_ID | LegislativeDataGroupId | ✅ |
+| LOCATION_ID | LocationId | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | ✅ |
+| ORGANIZATION_HIERARCHY_ID | OrganizationHierarchyId | ✅ |
+| ORGANIZATION_ID | OrganizationId | ✅ |
+| ORGANIZATION_TREE_CODE | OrganizationTreeCode | ✅ |
+| PAYROLL_ID | PayrollId | ✅ |
+| PAYROLL_STAT_UNIT_ID | PayrollStatUnitId | ✅ |
+| PERSON_ID | PersonId | ✅ |
+| POSITION_HIERARCHY_ID | PositionHierarchyId | ✅ |
+| POSITION_ID | PositionId | ✅ |
+| POSITION_TREE_CODE | PositionTreeCode | ✅ |
+| RECRUITING_LOC_HIERARCHY_ID | RecruitingLocHierarchyId | ✅ |
+| RECRUITING_ORG_HIERARCHY_ID | RecruitingOrgHierarchyId | ✅ |
+| RECRUITING_ORG_TREE_CODE | RecruitingOrgTreeCode | ✅ |
+| RECRUITING_ORG_TREE_VER | RecruitingOrgTreeVer | ✅ |
+| RECRUITING_TYPE_CODE | RecruitingTypeCode | ✅ |
+| RESPONSIBILITY_NAME | ResponsibilityName | ✅ |
+| RESPONSIBILITY_TYPE | ResponsibilityType | ✅ |
+| START_DATE | StartDate | ✅ |
+| STATUS | Status | ✅ |
+| TAX_REPORTING_UNIT_ID | TaxReportingUnitId | ✅ |
+| TEMPLATE_ID | TemplateId | ✅ |
+| TOP_DEPARTMENT_ID | TopDepartmentId | ✅ |
+| TOP_MANAGER_ID | TopManagerId | ✅ |
+| TOP_ORGANIZATION_ID | TopOrganizationId | ✅ |
+| TOP_POSITION_ID | TopPositionId | ✅ |
+| WORK_CONTACTS_FLAG | WorkContactsFlag | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — PER_ASG_RESPONSIBILITIES](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/perasgresponsibilities.html)

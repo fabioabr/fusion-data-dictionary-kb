@@ -102,3 +102,24 @@ WHERE  ptr.PROFILE_TYPE_ID = :p_profile_type_id;
 
 - [Oracle Docs — HRT_PROFILE_TYPE_RELS](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/hrtprofiletyperels.html)
 - [[hcm-module-data-dictionary]] — Dossie do modulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[profiletyperelationspvo|ProfileTypeRelationsPVO]] (HCM · BICC: 3/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ADMIN_ONLY_FLAG | AdminOnlyFlag | — |
+| BUSINESS_GROUP_ID | BusinessGroupId | ✅ |
+| CREATED_BY | CreatedBy | — |
+| CREATION_DATE | CreationDate | — |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | — |
+| LAST_UPDATED_BY | LastUpdatedBy | — |
+| MODULE_ID | ModuleId | — |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | — |
+| PROFILE_TYPE_ID | ProfileTypeId | — |
+| PROFILE_TYPE_RELATION_ID | ProfileTypeRelationId | ✅ |
+| RELATION_ID | RelationId | — |

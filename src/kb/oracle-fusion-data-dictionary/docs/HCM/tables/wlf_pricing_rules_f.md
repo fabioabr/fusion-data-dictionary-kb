@@ -118,3 +118,29 @@ ORDER BY pr.RULE_NAME;
 
 - [Oracle Docs — WLF_PRICING_RULES_F](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/wlfpricingrulesf.html)
 - [[hcm-module-data-dictionary]] — Dossiê do módulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[learningpricingrulespvo|LearningPricingRulesPVO]] (HCM · BICC: 6/17)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | LearningPricingRulesDEOCreatedBy | — |
+| CREATION_DATE | LearningPricingRulesDEOCreationDate | — |
+| CURRENCY | LearningPricingRulesDEOCurrency | ✅ |
+| DELIVERY_MODE | LearningPricingRulesDEODeliveryMode | — |
+| EFFECTIVE_END_DATE | LearningPricingRulesDEOEffectiveEndDate | ✅ |
+| EFFECTIVE_START_DATE | LearningPricingRulesDEOEffectiveStartDate | ✅ |
+| ENTERPRISE_ID | LearningPricingRulesDEOEnterpriseId | — |
+| LAST_UPDATE_DATE | LearningPricingRulesDEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LearningPricingRulesDEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | LearningPricingRulesDEOLastUpdatedBy | — |
+| LEARNING_ITEM_TYPE | LearningPricingRulesDEOLearningItemType | — |
+| OBJECT_VERSION_NUMBER | LearningPricingRulesDEOObjectVersionNumber | — |
+| PRICE_LOCK_TYPE | LearningPricingRulesDEOPriceLockType | — |
+| PRICING_RULE_ID | LearningPricingRulesDEOPricingRuleId | ✅ |
+| TOTAL_PRICE | LearningPricingRulesDEOTotalPrice | ✅ |
+| USAGE | LearningPricingRulesDEOUsage | — |
+| USES_PRICING | LearningPricingRulesDEOUsesPricing | — |

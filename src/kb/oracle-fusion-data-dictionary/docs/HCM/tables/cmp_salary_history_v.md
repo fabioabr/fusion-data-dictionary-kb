@@ -118,6 +118,86 @@ WHERE  sh.PERSON_ID = :p_person_id
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[salaryhistorypvo|SalaryHistoryPVO]] (HCM · BICC: 40/71)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_ID | ActionId | — |
+| ACTION_OCCURRENCE_ID | ActionOccurrenceId | — |
+| ACTION_REASON_ID | ActionReasonId | — |
+| AMOUNT_DECIMAL_PRECISION | SbAmountDecimalPrecision | ✅ |
+| AMOUNT_ROUNDING_CODE | SbAmountRoundingCode | ✅ |
+| ANNUAL_ROUNDING_CODE | SbAnnualRoundingCode | ✅ |
+| ANNUALIZED_FULLTIME_SALARY | AnnualizedFulltimeSalary | ✅ |
+| ANNUALIZED_HOURS | AnnualizedHours | ✅ |
+| ANNUALIZED_SALARY | AnnualizedSalary | ✅ |
+| ASSIGNMENT_ID | AssignmentId | — |
+| BUSINESS_GROUP_ID | BusinessGroupId | — |
+| BUSINESS_UNIT_ID | BusinessUnitId1 | — |
+| CALCULATION_MODE | CalculationMode | ✅ |
+| CODE | Code | ✅ |
+| COMPONENT_USAGE | ComponentUsage | ✅ |
+| CREATED_BY | CreatedBy | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| DATE_FROM | DateFrom | ✅ |
+| DATE_TO | DateTo | ✅ |
+| DESCRIPTION | Description | — |
+| ELEMENT_ENTRY_ID | ElementEntryId | — |
+| ELEMENT_TYPE_ID | ElementTypeId | — |
+| FORCED_RANKING | ForcedRanking | — |
+| GEOGRAPHY_ID | GeographyId | ✅ |
+| GEOGRAPHY_TYPE_ID | GeographyTypeId | ✅ |
+| GRADE_ANNUALIZATION_FACTOR | GradeAnnualizationFactor | ✅ |
+| GRADE_RATE_ID | GradeRateId | — |
+| GRADE_RATE_MINIMUM_LIMIT | GradeRateMinimumLimit | — |
+| HISTORY_DATE | HistoryDate | — |
+| INPUT_VALUE_ID | InputValueId | — |
+| INPUT_VALUE_LANGUAGE | InputValueLanguage | — |
+| INPUT_VALUE_NAME | InputValueName | ✅ |
+| JOB_ID | JobId1 | — |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | LastUpdatedBy | ✅ |
+| LEGAL_ENTITY_ID | LegalEntityId | — |
+| LEGISLATIVE_DATA_GROUP_ID | LegislativeDataGroupId | ✅ |
+| MULTIPLE_COMPONENTS | MultipleComponents | ✅ |
+| NEXT_PERF_REVIEW_DATE | NextPerfReviewDate | — |
+| NEXT_SAL_REVIEW_DATE | NextSalReviewDate | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | — |
+| PAYROLL_ANNUAL_FACTOR | PayrollAnnualFactor | ✅ |
+| PAYROLL_FREQUENCY_CODE | PayrollFrequencyCode | ✅ |
+| PERFORMANCE_RATING | PerformanceRating | — |
+| PERFORMANCE_REVIEW_ID | PerformanceReviewId | — |
+| RANGE_ERROR_WARNING | RangeErrorWarning | — |
+| RANGE_ROUNDING_CODE | SbRangeRoundingCode | ✅ |
+| REVIEW_DATE | ReviewDate | — |
+| SALARY_AMOUNT | SalaryAmount | ✅ |
+| SALARY_ANNUALIZATION_FACTOR | SalaryAnnualizationFactor | ✅ |
+| SALARY_APPROVED | SalaryApproved | ✅ |
+| SALARY_BASES_NAME | SalaryBasesName | — |
+| SALARY_BASIS_CODE | SalaryBasisCode | ✅ |
+| SALARY_BASIS_CREATED_BY | SalaryBasisCreatedBy | ✅ |
+| SALARY_BASIS_CREATION_DATE | SalaryBasisCreationDate | ✅ |
+| SALARY_BASIS_ID | SalaryBasisId | ✅ |
+| SALARY_BASIS_LAST_UPDATE_DATE | SalaryBasisLastUpdateDate | ✅ |
+| SALARY_BASIS_LAST_UPDATED_BY | SalaryBasisLastUpdatedBy | ✅ |
+| SALARY_BASIS_NAME | SalaryBasisName | ✅ |
+| SALARY_BASIS_TYPE | SbSalaryBasisType | ✅ |
+| SALARY_ID | SalaryId | ✅ |
+| SALARY_REASON_CODE | SalaryReasonCode | — |
+| SB_BUSINESS_GROUP_ID | SbBusinessGroupId | — |
+| SB_LANGUAGE | SbLanguage | — |
+| SB_SALARY_BASIS_ID | SbSalaryBasisId | — |
+| SB_SOUCE_LANG | SbSouceLang | — |
+| SOURCE_LANG | SourceLang | — |
+| STATUS | SbStatus | ✅ |
+| WORK_AT_HOME | WorkAtHome | ✅ |
+| ZONE_GRADE_RATE_ID | ZoneGradeRateId | — |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — CMP_SALARY_HISTORY_V](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/cmpsalaryhistoryv.html)

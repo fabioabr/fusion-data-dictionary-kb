@@ -66,3 +66,35 @@ updated_at: 2026-03-26
 ## 📎 Uso Típico
 
 (a ser preenchido na etapa 03)
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[appltaxonomy|ApplTaxonomy]] (OTHER · BICC: 12/16)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ALTERNATIVE_ID | AlternativeId | — |
+| CREATED_BY | CreatedBy | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| DESCRIPTION | Description | ✅ |
+| IS_SEED_DATA_ALLOWED | IsSeedDataAllowed | — |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | LastUpdatedBy | ✅ |
+| MODULE_ID | ModuleId | ✅ |
+| MODULE_KEY | ModuleKey | ✅ |
+| MODULE_NAME | ModuleName | ✅ |
+| MODULE_TYPE | ModuleType | ✅ |
+| PRODUCT_CODE | ProductCode | ✅ |
+| PRODUCT_LINE | ProductLine | — |
+| USAGE_TYPE | UsageType | ✅ |
+| USER_MODULE_NAME | UserModuleName | — |
+
+### [[documenttypespvo|DocumentTypesPVO]] (GL)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| MODULE_ID | ApplTaxonomyPEOModuleId | — |
+| MODULE_NAME | ApplTaxonomyPEOModuleName | — |

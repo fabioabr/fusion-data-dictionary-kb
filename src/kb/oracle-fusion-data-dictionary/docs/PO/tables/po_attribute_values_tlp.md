@@ -41,7 +41,6 @@ Armazena as **traducoes dos valores de atributos de itens** em linhas de PO para
 > [!note] Sufixo _TLP
 > O sufixo `_TLP` indica a **tabela de traducoes predefinidas** (Translation Layer - Predefined).
 
-
 ---
 
 ## 🧠 Propósito de Negócio
@@ -95,7 +94,6 @@ FROM   PO_ATTRIBUTE_VALUES_TLP
 WHERE  ATTRIBUTE_VALUES_ID = :p_attr_id;
 ```
 
-
 ---
 
 ## 🔒 Observações
@@ -103,6 +101,166 @@ WHERE  ATTRIBUTE_VALUES_ID = :p_attr_id;
 - Cada atributo pode ter multiplas traducoes (uma por idioma).
 - Idioma base normalmente US.
 - Populada automaticamente em ambientes multilingues.
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[agreementlinepvo|AgreementLinePVO]] (PO · BICC: 5/21)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ALIAS | PurchasingAttributeValueTlpAlias | ✅ |
+| ATTRIBUTE_VALUES_TLP_ID | PurchasingAttributeValueTlpAttributeValuesTlpId | — |
+| COMMENTS | PurchasingAttributeValueTlpComments | ✅ |
+| CREATED_BY | PurchasingAttributeValueTlpCreatedBy | — |
+| CREATION_DATE | PurchasingAttributeValueTlpCreationDate | — |
+| DESCRIPTION | PurchasingAttributeValueTlpDescription | — |
+| JOB_DEFINITION_NAME | PurchasingAttributeValueTlpJobDefinitionName | — |
+| JOB_DEFINITION_PACKAGE | PurchasingAttributeValueTlpJobDefinitionPackage | — |
+| LANGUAGE | PurchasingAttributeValueTlpLanguage | — |
+| LAST_UPDATE_DATE | PurchasingAttributeValueTlpLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | PurchasingAttributeValueTlpLastUpdateLogin | — |
+| LAST_UPDATED_BY | PurchasingAttributeValueTlpLastUpdatedBy | — |
+| LAST_UPDATED_PROGRAM | PurchasingAttributeValueTlpLastUpdatedProgram | — |
+| LONG_DESCRIPTION | PurchasingAttributeValueTlpLongDescription | ✅ |
+| MANUFACTURER | PurchasingAttributeValueTlpManufacturer | ✅ |
+| OBJECT_VERSION_NUMBER | PurchasingAttributeValueTlpObjectVersionNumber | — |
+| PO_HEADER_ID | PurchasingAttributeValueTlpPoHeaderId | — |
+| PO_LINE_ID | PurchasingAttributeValueTlpPoLineId | — |
+| PRC_BU_ID | PurchasingAttributeValueTlpPrcBuId | — |
+| REBUILD_SEARCH_INDEX_FLAG | PurchasingAttributeValueTlpRebuildSearchIndexFlag | — |
+| REQUEST_ID | PurchasingAttributeValueTlpRequestId | — |
+
+### [[agreementpricebreakpvo|AgreementPriceBreakPVO]] (PO · BICC: 5/21)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ALIAS | PurchasingAttributeValueTlpAlias | ✅ |
+| ATTRIBUTE_VALUES_TLP_ID | PurchasingAttributeValueTlpAttributeValuesTlpId | — |
+| COMMENTS | PurchasingAttributeValueTlpComments | ✅ |
+| CREATED_BY | PurchasingAttributeValueTlpCreatedBy | — |
+| CREATION_DATE | PurchasingAttributeValueTlpCreationDate | — |
+| DESCRIPTION | PurchasingAttributeValueTlpDescription | — |
+| JOB_DEFINITION_NAME | PurchasingAttributeValueTlpJobDefinitionName | — |
+| JOB_DEFINITION_PACKAGE | PurchasingAttributeValueTlpJobDefinitionPackage | — |
+| LANGUAGE | PurchasingAttributeValueTlpLanguage | — |
+| LAST_UPDATE_DATE | PurchasingAttributeValueTlpLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | PurchasingAttributeValueTlpLastUpdateLogin | — |
+| LAST_UPDATED_BY | PurchasingAttributeValueTlpLastUpdatedBy | — |
+| LAST_UPDATED_PROGRAM | PurchasingAttributeValueTlpLastUpdatedProgram | — |
+| LONG_DESCRIPTION | PurchasingAttributeValueTlpLongDescription | ✅ |
+| MANUFACTURER | PurchasingAttributeValueTlpManufacturer | ✅ |
+| OBJECT_VERSION_NUMBER | PurchasingAttributeValueTlpObjectVersionNumber | — |
+| PO_HEADER_ID | PurchasingAttributeValueTlpPoHeaderId | — |
+| PO_LINE_ID | PurchasingAttributeValueTlpPoLineId | — |
+| PRC_BU_ID | PurchasingAttributeValueTlpPrcBuId | — |
+| REBUILD_SEARCH_INDEX_FLAG | PurchasingAttributeValueTlpRebuildSearchIndexFlag | — |
+| REQUEST_ID | PurchasingAttributeValueTlpRequestId | — |
+
+### [[purchasingattributevaluestranslationextractpvo|PurchasingAttributeValuesTranslationExtractPVO]] (PO · BICC: 21/21)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ALIAS | Alias | ✅ |
+| ATTRIBUTE_VALUES_TLP_ID | AttributeValuesTlpId | ✅ |
+| COMMENTS | Comments | ✅ |
+| CREATED_BY | CreatedBy | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| DESCRIPTION | Description | ✅ |
+| JOB_DEFINITION_NAME | JobDefinitionName | ✅ |
+| JOB_DEFINITION_PACKAGE | JobDefinitionPackage | ✅ |
+| LANGUAGE | Language | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | LastUpdatedBy | ✅ |
+| LAST_UPDATED_PROGRAM | LastUpdatedProgram | ✅ |
+| LONG_DESCRIPTION | LongDescription | ✅ |
+| MANUFACTURER | Manufacturer | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | ✅ |
+| PO_HEADER_ID | PoHeaderId | ✅ |
+| PO_LINE_ID | PoLineId | ✅ |
+| PRC_BU_ID | PrcBuId | ✅ |
+| REBUILD_SEARCH_INDEX_FLAG | RebuildSearchIndexFlag | ✅ |
+| REQUEST_ID | RequestId | ✅ |
+
+### [[purchasingdocumentlinepvo|PurchasingDocumentLinePVO]] (PO · BICC: 1/21)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ALIAS | PurchasingAttributeValueTlpAlias | — |
+| ATTRIBUTE_VALUES_TLP_ID | PurchasingAttributeValueTlpAttributeValuesTlpId | — |
+| COMMENTS | PurchasingAttributeValueTlpComments | — |
+| CREATED_BY | PurchasingAttributeValueTlpCreatedBy | — |
+| CREATION_DATE | PurchasingAttributeValueTlpCreationDate | — |
+| DESCRIPTION | PurchasingAttributeValueTlpDescription | — |
+| JOB_DEFINITION_NAME | PurchasingAttributeValueTlpJobDefinitionName | — |
+| JOB_DEFINITION_PACKAGE | PurchasingAttributeValueTlpJobDefinitionPackage | — |
+| LANGUAGE | PurchasingAttributeValueTlpLanguage | — |
+| LAST_UPDATE_DATE | PurchasingAttributeValueTlpLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | PurchasingAttributeValueTlpLastUpdateLogin | — |
+| LAST_UPDATED_BY | PurchasingAttributeValueTlpLastUpdatedBy | — |
+| LAST_UPDATED_PROGRAM | PurchasingAttributeValueTlpLastUpdatedProgram | — |
+| LONG_DESCRIPTION | PurchasingAttributeValueTlpLongDescription | — |
+| MANUFACTURER | PurchasingAttributeValueTlpManufacturer | — |
+| OBJECT_VERSION_NUMBER | PurchasingAttributeValueTlpObjectVersionNumber | — |
+| PO_HEADER_ID | PurchasingAttributeValueTlpPoHeaderId | — |
+| PO_LINE_ID | PurchasingAttributeValueTlpPoLineId | — |
+| PRC_BU_ID | PurchasingAttributeValueTlpPrcBuId | — |
+| REBUILD_SEARCH_INDEX_FLAG | PurchasingAttributeValueTlpRebuildSearchIndexFlag | — |
+| REQUEST_ID | PurchasingAttributeValueTlpRequestId | — |
+
+### [[standardlinepvo|StandardLinePVO]] (PO · BICC: 1/21)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ALIAS | PurchasingAttributeValueTlpAlias | — |
+| ATTRIBUTE_VALUES_TLP_ID | PurchasingAttributeValueTlpAttributeValuesTlpId | — |
+| COMMENTS | PurchasingAttributeValueTlpComments | — |
+| CREATED_BY | PurchasingAttributeValueTlpCreatedBy | — |
+| CREATION_DATE | PurchasingAttributeValueTlpCreationDate | — |
+| DESCRIPTION | PurchasingAttributeValueTlpDescription | — |
+| JOB_DEFINITION_NAME | PurchasingAttributeValueTlpJobDefinitionName | — |
+| JOB_DEFINITION_PACKAGE | PurchasingAttributeValueTlpJobDefinitionPackage | — |
+| LANGUAGE | PurchasingAttributeValueTlpLanguage | — |
+| LAST_UPDATE_DATE | PurchasingAttributeValueTlpLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | PurchasingAttributeValueTlpLastUpdateLogin | — |
+| LAST_UPDATED_BY | PurchasingAttributeValueTlpLastUpdatedBy | — |
+| LAST_UPDATED_PROGRAM | PurchasingAttributeValueTlpLastUpdatedProgram | — |
+| LONG_DESCRIPTION | PurchasingAttributeValueTlpLongDescription | — |
+| MANUFACTURER | PurchasingAttributeValueTlpManufacturer | — |
+| OBJECT_VERSION_NUMBER | PurchasingAttributeValueTlpObjectVersionNumber | — |
+| PO_HEADER_ID | PurchasingAttributeValueTlpPoHeaderId | — |
+| PO_LINE_ID | PurchasingAttributeValueTlpPoLineId | — |
+| PRC_BU_ID | PurchasingAttributeValueTlpPrcBuId | — |
+| REBUILD_SEARCH_INDEX_FLAG | PurchasingAttributeValueTlpRebuildSearchIndexFlag | — |
+| REQUEST_ID | PurchasingAttributeValueTlpRequestId | — |
+
+### [[standardshipmentpvo|StandardShipmentPVO]] (PO)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ALIAS | PurchasingAttributeValueTlpAlias | — |
+| ATTRIBUTE_VALUES_TLP_ID | PurchasingAttributeValueTlpAttributeValuesTlpId | — |
+| COMMENTS | PurchasingAttributeValueTlpComments | — |
+| CREATED_BY | PurchasingAttributeValueTlpCreatedBy | — |
+| CREATION_DATE | PurchasingAttributeValueTlpCreationDate | — |
+| DESCRIPTION | PurchasingAttributeValueTlpDescription | — |
+| JOB_DEFINITION_NAME | PurchasingAttributeValueTlpJobDefinitionName | — |
+| JOB_DEFINITION_PACKAGE | PurchasingAttributeValueTlpJobDefinitionPackage | — |
+| LANGUAGE | PurchasingAttributeValueTlpLanguage | — |
+| LAST_UPDATE_DATE | PurchasingAttributeValueTlpLastUpdateDate | — |
+| LAST_UPDATE_LOGIN | PurchasingAttributeValueTlpLastUpdateLogin | — |
+| LAST_UPDATED_BY | PurchasingAttributeValueTlpLastUpdatedBy | — |
+| LAST_UPDATED_PROGRAM | PurchasingAttributeValueTlpLastUpdatedProgram | — |
+| LONG_DESCRIPTION | PurchasingAttributeValueTlpLongDescription | — |
+| MANUFACTURER | PurchasingAttributeValueTlpManufacturer | — |
+| OBJECT_VERSION_NUMBER | PurchasingAttributeValueTlpObjectVersionNumber | — |
+| PO_HEADER_ID | PurchasingAttributeValueTlpPoHeaderId | — |
+| PO_LINE_ID | PurchasingAttributeValueTlpPoLineId | — |
+| PRC_BU_ID | PurchasingAttributeValueTlpPrcBuId | — |
+| REBUILD_SEARCH_INDEX_FLAG | PurchasingAttributeValueTlpRebuildSearchIndexFlag | — |
+| REQUEST_ID | PurchasingAttributeValueTlpRequestId | — |
 
 ---
 

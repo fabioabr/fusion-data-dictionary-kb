@@ -113,3 +113,25 @@ WHERE  pf.POSITION_ID = :p_position_id
 
 - [Oracle Docs — PER_POS_FUNDING_POSITIONS_F](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/perposfundingpositionsf.html)
 - [[hcm-module-data-dictionary]] — Dossiê do módulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[fundingpositionpvo|FundingPositionPVO]] (PO · BICC: 5/13)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_OCCURRENCE_ID | ActionOccurrenceId | — |
+| BUSINESS_GROUP_ID | BusinessGroupId | — |
+| CREATED_BY | CreatedBy | — |
+| CREATION_DATE | CreationDate | — |
+| EFFECTIVE_END_DATE | EffectiveEndDate | ✅ |
+| EFFECTIVE_START_DATE | EffectiveStartDate | ✅ |
+| FUNDING_POSITION_ID | FundingPositionId | ✅ |
+| FUNDING_RELATIONSHIP_ID | FundingRelationshipId | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | — |
+| LAST_UPDATED_BY | LastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | — |
+| POSITION_ID | PositionId | — |

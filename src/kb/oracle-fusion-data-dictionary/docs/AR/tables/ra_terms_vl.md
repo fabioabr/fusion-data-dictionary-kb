@@ -149,6 +149,95 @@ ORDER BY NAME;
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[adjustmentdistributionpvo|AdjustmentDistributionPVO]] (AR)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| DESCRIPTION | PaymentTermTranslationDescription | — |
+| NAME | PaymentTermTranslationName | — |
+| TERM_ID | PaymentTermTranslationTermId | — |
+
+### [[adjustmentpvo|AdjustmentPVO]] (AR)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| DESCRIPTION | PaymentTermTranslationDescription | — |
+| NAME | PaymentTermTranslationName | — |
+| TERM_ID | PaymentTermTranslationTermId | — |
+
+### [[creditmemoapplicationdistributionpvo|CreditMemoApplicationDistributionPVO]] (AR)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| NAME | PaymentTermTranslationPEOName | — |
+| TERM_ID | PaymentTermTranslationPEOTermId | — |
+
+### [[creditmemoapplicationpvo|CreditMemoApplicationPVO]] (AR)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| NAME | PaymentTermTranslationPEOName | — |
+| TERM_ID | PaymentTermTranslationPEOTermId | — |
+
+### [[customerfinancialprofilepvo|CustomerFinancialProfilePVO]] (AR)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BASE_AMOUNT | PmtTermProfileBaseAmount | — |
+| BILLING_CYCLE_ID | PmtTermProfileBillingCycleId | — |
+| CALC_DISCOUNT_ON_LINES_FLAG | PmtTermProfileCalcDiscountOnLinesFlag | — |
+| CREDIT_CHECK_FLAG | PmtTermProfileCreditCheckFlag | — |
+| DESCRIPTION | PmtTermProfileDescription | — |
+| DUE_CUTOFF_DAY | PmtTermProfileDueCutoffDay | — |
+| END_DATE_ACTIVE | PmtTermProfileEndDateActive | — |
+| FIRST_INSTALLMENT_CODE | PmtTermProfileFirstInstallmentCode | — |
+| IN_USE | PmtTermProfileInUse | — |
+| NAME | PmtTermProfileName | — |
+| PARTIAL_DISCOUNT_FLAG | PmtTermProfilePartialDiscountFlag | — |
+| PREPAYMENT_FLAG | PmtTermProfilePrepaymentFlag | — |
+| PRINTING_LEAD_DAYS | PmtTermProfilePrintingLeadDays | — |
+| START_DATE_ACTIVE | PmtTermProfileStartDateActive | — |
+| TERM_ID | PmtTermProfileTermId | — |
+
+### [[inventoryitem|InventoryItem]] (OTHER)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| NAME | RaTermsVlName | — |
+| TERM_ID | RaTermsVlTermId | — |
+
+### [[inventoryitemref|InventoryItemRef]] (OTHER · BICC: 1/2)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| NAME | RaTermsVlName | ✅ |
+| TERM_ID | RaTermsVlTermId | — |
+
+### [[invoicedistributionpvo|InvoiceDistributionPVO]] (AP · BICC: 1/2)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| NAME | PaymentTermPEOName | ✅ |
+| TERM_ID | PaymentTermPEOTermId | — |
+
+### [[item|Item]] (OTHER)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| NAME | RaTermsVlName | — |
+| TERM_ID | RaTermsVlTermId | — |
+
+### [[itemref|ItemRef]] (OTHER · BICC: 1/2)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| NAME | RaTermsVlName | ✅ |
+| TERM_ID | RaTermsVlTermId | — |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — RA_TERMS_VL](https://docs.oracle.com/en/cloud/saas/financials/25a/oedmf/ratermsvl-25286.html)

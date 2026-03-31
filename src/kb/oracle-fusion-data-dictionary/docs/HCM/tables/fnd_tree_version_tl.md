@@ -64,3 +64,26 @@ updated_at: 2026-03-26
 ## 📎 Uso Típico
 
 (a ser preenchido na etapa 03)
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[fndtreeversiontlp1|FndTreeVersionTLP1]] (HCM · BICC: 14/14)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | CreatedBy | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| DESCRIPTION | Description | ✅ |
+| ENTERPRISE_ID | EnterpriseId | ✅ |
+| LANGUAGE | Language | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | LastUpdatedBy | ✅ |
+| SOURCE_LANG | SourceLang | ✅ |
+| TREE_CODE | TreeCode | ✅ |
+| TREE_STRUCTURE_CODE | TreeStructureCode | ✅ |
+| TREE_VERSION_ID | TreeVersionId | ✅ |
+| TREE_VERSION_NAME | TreeVersionName | ✅ |
+| VERSION_COMMENT | VersionComment | ✅ |

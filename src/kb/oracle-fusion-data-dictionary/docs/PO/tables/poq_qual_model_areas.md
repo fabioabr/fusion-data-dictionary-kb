@@ -135,6 +135,27 @@ HAVING SUM(qma.WEIGHT_PERCENT) <> 100;
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[qualificationmodelareaspvo|QualificationModelAreasPVO]] (PO · BICC: 12/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | QualificationModelAreaCreatedBy | ✅ |
+| CREATION_DATE | QualificationModelAreaCreationDate | ✅ |
+| DISPLAY_SEQUENCE | QualificationModelAreaDisplaySequence | ✅ |
+| KNOCKOUT_SCORE | QualificationModelAreaKnockoutScore | ✅ |
+| LAST_UPDATE_DATE | QualificationModelAreaLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | QualificationModelAreaLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | QualificationModelAreaLastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | QualificationModelAreaObjectVersionNumber | ✅ |
+| QUAL_AREA_ID | QualificationModelAreaQualAreaId | ✅ |
+| QUAL_MODEL_AREA_ID | QualModelAreaId | ✅ |
+| QUAL_MODEL_ID | QualificationModelAreaQualModelId | ✅ |
+| WEIGHT | QualificationModelAreaWeight | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — Supplier Qualification Management](https://docs.oracle.com/en/cloud/saas/procurement/25a/oedmf/)

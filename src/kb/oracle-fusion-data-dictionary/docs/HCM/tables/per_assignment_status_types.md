@@ -109,6 +109,62 @@ ORDER BY past.PER_SYSTEM_STATUS;
 - A flag `DEFAULT_FLAG` indica qual status é aplicado automaticamente em novas admissões.
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[assignmentstatustypespvo|AssignmentStatusTypesPVO]] (HCM · BICC: 2/19)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTIVE_FLAG | AssignmentStatusTypesPEOActiveFlag | — |
+| ASSIGNMENT_STATUS_CODE | AssignmentStatusTypesPEOAssignmentStatusCode | — |
+| ASSIGNMENT_STATUS_TYPE_ID | AssignmentStatusTypeId | ✅ |
+| BUSINESS_GROUP_ID | AssignmentStatusTypesPEOBusinessGroupId | — |
+| CREATED_BY | AssignmentStatusTypesPEOCreatedBy | — |
+| CREATION_DATE | AssignmentStatusTypesPEOCreationDate | — |
+| DEFAULT_FLAG | AssignmentStatusTypesPEODefaultFlag | — |
+| END_DATE | AssignmentStatusTypesPEOEndDate | — |
+| LAST_UPDATE_DATE | AssignmentStatusTypesPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | AssignmentStatusTypesPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | AssignmentStatusTypesPEOLastUpdatedBy | — |
+| LEGISLATION_CODE | AssignmentStatusTypesPEOLegislationCode | — |
+| MODULE_ID | AssignmentStatusTypesPEOModuleId | — |
+| OBJECT_VERSION_NUMBER | AssignmentStatusTypesPEOObjectVersionNumber | — |
+| ORIG_ASSIGN_STATUS_TYPE_ID | AssignmentStatusTypesPEOOrigAssignStatusTypeId | — |
+| PAY_SYSTEM_STATUS | AssignmentStatusTypesPEOPaySystemStatus | — |
+| PER_SYSTEM_STATUS | AssignmentStatusTypesPEOPerSystemStatus | — |
+| PRIMARY_FLAG | AssignmentStatusTypesPEOPrimaryFlag | — |
+| START_DATE | AssignmentStatusTypesPEOStartDate | — |
+
+### [[globalpersonpvo|GlobalPersonPVO]] (HCM)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTIVE_FLAG | AssignmentStatusTypesPEOActiveFlag | — |
+| ASSIGNMENT_STATUS_CODE | AssignmentStatusTypesPEOAssignmentStatusCode | — |
+| ASSIGNMENT_STATUS_TYPE_ID | AssignmentStatusTypesPEOAssignmentStatusTypeId | — |
+| END_DATE | AssignmentStatusTypesPEOEndDate | — |
+| LAST_UPDATE_DATE | AssignmentStatusTypesPEOLastUpdateDate | — |
+| PAY_SYSTEM_STATUS | AssignmentStatusTypesPEOPaySystemStatus | — |
+| PER_SYSTEM_STATUS | AssignmentStatusTypesPEOPerSystemStatus | — |
+| PRIMARY_FLAG | AssignmentStatusTypesPEOPrimaryFlag | — |
+| START_DATE | AssignmentStatusTypesPEOStartDate | — |
+
+### [[globalpersonpvoviewall|GlobalPersonPVOViewAll]] (HCM)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTIVE_FLAG | AssignmentStatusTypesPEOActiveFlag | — |
+| ASSIGNMENT_STATUS_CODE | AssignmentStatusTypesPEOAssignmentStatusCode | — |
+| ASSIGNMENT_STATUS_TYPE_ID | AssignmentStatusTypesPEOAssignmentStatusTypeId | — |
+| END_DATE | AssignmentStatusTypesPEOEndDate | — |
+| LAST_UPDATE_DATE | AssignmentStatusTypesPEOLastUpdateDate | — |
+| PAY_SYSTEM_STATUS | AssignmentStatusTypesPEOPaySystemStatus | — |
+| PER_SYSTEM_STATUS | AssignmentStatusTypesPEOPerSystemStatus | — |
+| PRIMARY_FLAG | AssignmentStatusTypesPEOPrimaryFlag | — |
+| START_DATE | AssignmentStatusTypesPEOStartDate | — |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — PER_ASSIGNMENT_STATUS_TYPES](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/perassignmentstatustypes.html)

@@ -100,3 +100,34 @@ SELECT tl.ACTION_NAME FROM IRC_LC_ACTIONS_TL tl WHERE tl.LANGUAGE = 'PT';
 
 - [Oracle Docs -- IRC_LC_ACTIONS_TL](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/irclcactionstl.html)
 - [[hcm-module-data-dictionary]] -- Dossie do modulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[routingstependactionpvo|RoutingStepEndActionPVO]] (HCM · BICC: 2/4)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_DESCRIPTION | ActionTranslationPEOActionDescription | ✅ |
+| ACTION_ID | ActionTranslationPEOActionId | — |
+| ACTION_NAME | ActionTranslationPEOActionName | ✅ |
+| LANGUAGE | ActionTranslationPEOLanguage | — |
+
+### [[routingstepstartactionpvo|RoutingStepStartActionPVO]] (HCM · BICC: 2/4)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_DESCRIPTION | ActionTranslationPEOActionDescription | ✅ |
+| ACTION_ID | ActionTranslationPEOActionId | — |
+| ACTION_NAME | ActionTranslationPEOActionName | ✅ |
+| LANGUAGE | ActionTranslationPEOLanguage | — |
+
+### [[routingstepstateactionpvo|RoutingStepStateActionPVO]] (HCM · BICC: 2/4)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_DESCRIPTION | ActionTranslationPEOActionDescription | ✅ |
+| ACTION_ID | ActionTranslationPEOActionId | — |
+| ACTION_NAME | ActionTranslationPEOActionName | ✅ |
+| LANGUAGE | ActionTranslationPEOLanguage | — |

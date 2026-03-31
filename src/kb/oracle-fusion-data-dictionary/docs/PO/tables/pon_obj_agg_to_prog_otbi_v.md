@@ -129,6 +129,37 @@ WHERE  v.PROGRAM_ID = :p_program_id
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[sourcingobjectivenegotiationpvo|SourcingObjectiveNegotiationPVO]] (PO)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| OBJ_BS_CURRENT_SPEND_BY_PROG | ObjectiveAggToProgPEOObjBsCurrentSpendByProg | — |
+| OBJ_BS_SAVINGS_GOAL_BY_PROG | ObjectiveAggToProgPEOObjBsSavingsGoalByProg | — |
+| OBJ_BS_TARGET_SPEND_BY_PROG | ObjectiveAggToProgPEOObjBsTargetSpendByProg | — |
+| PROGRAM_HEADER_ID | ObjectiveAggToProgPEOProgramHeaderId | — |
+
+### [[sourcingprogramheaderpvo|SourcingProgramHeaderPVO]] (PO)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| OBJ_BS_CURRENT_SPEND_BY_PROG | ObjectiveAggToProgPEOObjBsCurrentSpendByProg | — |
+| OBJ_BS_SAVINGS_GOAL_BY_PROG | ObjectiveAggToProgPEOObjBsSavingsGoalByProg | — |
+| OBJ_BS_TARGET_SPEND_BY_PROG | ObjectiveAggToProgPEOObjBsTargetSpendByProg | — |
+| PROGRAM_HEADER_ID | ObjectiveAggToProgPEOProgramHeaderId | — |
+
+### [[sourcingprogramobjectivepvo|SourcingProgramObjectivePVO]] (PO)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| OBJ_BS_CURRENT_SPEND_BY_PROG | ObjectiveAggToProgPEOObjBsCurrentSpendByProg | — |
+| OBJ_BS_SAVINGS_GOAL_BY_PROG | ObjectiveAggToProgPEOObjBsSavingsGoalByProg | — |
+| OBJ_BS_TARGET_SPEND_BY_PROG | ObjectiveAggToProgPEOObjBsTargetSpendByProg | — |
+| PROGRAM_HEADER_ID | ObjectiveAggToProgPEOProgramHeaderId | — |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — Sourcing OTBI Subject Areas](https://docs.oracle.com/en/cloud/saas/procurement/25a/oedmf/pon-tables.html)

@@ -39,7 +39,6 @@ View que apresenta as folhas de ponto (timesheets) já aprovadas, consolidando i
 > [!note] Sufixo _V
 > O sufixo `_V` indica **view** — objeto somente leitura que consolida dados de uma ou mais tabelas para facilitar consultas.
 
-
 ---
 
 ## 🧠 Propósito de Negócio
@@ -101,6 +100,52 @@ WHERE  t.APPROVAL_STATUS = 'APPROVED'
 
 - View somente leitura: não permite INSERT, UPDATE ou DELETE direto.
 - Área funcional: Time Management dentro do Oracle Fusion Cloud HCM.
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[absencetimeentrypvo|AbsenceTimeEntryPVO]] (HCM · BICC: 1/2)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| APPROVED_TIMESTAMP | TimeCardApprovedTimestamp | ✅ |
+| STATUS_ID | TimeCardApprovedStatusId | — |
+
+### [[historicabsencetimeentrypvo|HistoricAbsenceTimeEntryPVO]] (HCM)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| APPROVED_TIMESTAMP | TimeCardApprovedTimestamp | — |
+| STATUS_ID | TimeCardApprovedStatusId | — |
+
+### [[historicreportedtimeentrypvo|HistoricReportedTimeEntryPVO]] (HCM)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| APPROVED_TIMESTAMP | TimeCardApprovedTimestamp | — |
+| STATUS_ID | TimeCardApprovedStatusId | — |
+
+### [[historicrptabstimeentrypvo|HistoricRptAbsTimeEntryPVO]] (HCM · BICC: 1/2)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| APPROVED_TIMESTAMP | TimeCardApprovedTimestampPEOApprovedTimestamp | ✅ |
+| STATUS_ID | TimeCardApprovedTimestampPEOStatusId | — |
+
+### [[reportedtimeentrypvo|ReportedTimeEntryPVO]] (HCM · BICC: 1/2)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| APPROVED_TIMESTAMP | TimeCardApprovedTimestamp | ✅ |
+| STATUS_ID | TimeCardApprovedStatusId | — |
+
+### [[rptabstimeentrypvo|RptAbsTimeEntryPVO]] (HCM · BICC: 1/2)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| APPROVED_TIMESTAMP | TimeCardApprovedTimestampPEOApprovedTimestamp | ✅ |
+| STATUS_ID | TimeCardApprovedTimestampPEOStatusId | — |
 
 ---
 

@@ -105,3 +105,23 @@ WHERE  pa.POOL_ID = :p_pool_id;
 
 - [Oracle Docs — HRT_POOL_ASSOCIATIONS](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/hrtpoolassociations.html)
 - [[hcm-module-data-dictionary]] — Dossie do modulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[poolassociationpvo|PoolAssociationPVO]] (PO · BICC: 3/11)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | PoolAssociationPEOCreatedBy | — |
+| CREATION_DATE | PoolAssociationPEOCreationDate | — |
+| ENTERPRISE_ID | EnterpriseId | ✅ |
+| LAST_UPDATE_DATE | PoolAssociationPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | PoolAssociationPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | PoolAssociationPEOLastUpdatedBy | — |
+| OBJECT_ID | PoolAssociationPEOObjectId | — |
+| OBJECT_TYPE | PoolAssociationPEOObjectType | — |
+| OBJECT_VERSION_NUMBER | PoolAssociationPEOObjectVersionNumber | — |
+| POOL_ASSOCIATION_ID | PoolAssociationId | ✅ |
+| POOL_ID | PoolAssociationPEOPoolId | — |

@@ -61,3 +61,39 @@ updated_at: 2026-03-26
 ## 📎 Uso Típico
 
 (a ser preenchido na etapa 03)
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[paiddisbursementschedulepvo|PaidDisbursementSchedulePVO]] (AP · BICC: 2/3)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| LANGUAGE | PaymentMethodLanguage | — |
+| PAYMENT_METHOD_CODE | PaymentMethodCode | ✅ |
+| PAYMENT_METHOD_NAME | PaymentMethodName | ✅ |
+
+### [[paymenthistorydistributionpvo|PaymentHistoryDistributionPVO]] (AP · BICC: 2/3)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| LANGUAGE | PaymentMethodLanguage | — |
+| PAYMENT_METHOD_CODE | PaymentMethodCode | ✅ |
+| PAYMENT_METHOD_NAME | PaymentMethodName | ✅ |
+
+### [[paymentmethodtranslationpvo|PaymentMethodTranslationPVO]] (OTHER · BICC: 9/11)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | PaymentMthdBaseCreatedBy | ✅ |
+| CREATION_DATE | PaymentMthdBaseCreationDate | ✅ |
+| DESCRIPTION | PaymentMthdBaseDescription | ✅ |
+| LANGUAGE | Language | ✅ |
+| LAST_UPDATE_DATE | PaymentMthdBaseLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | PaymentMthdBaseLastUpdateLogin | — |
+| LAST_UPDATED_BY | PaymentMthdBaseLastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | PaymentMthdBaseObjectVersionNumber | — |
+| PAYMENT_METHOD_CODE | PaymentMethodCode | ✅ |
+| PAYMENT_METHOD_NAME | PaymentMthdBasePaymentMethodName | ✅ |
+| SOURCE_LANG | PaymentMthdBaseSourceLang | ✅ |

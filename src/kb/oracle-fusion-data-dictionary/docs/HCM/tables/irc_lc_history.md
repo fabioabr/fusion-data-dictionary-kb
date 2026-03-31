@@ -108,3 +108,83 @@ ORDER BY lch.TRANSITION_DATE;
 
 - [Oracle Docs -- IRC_LC_HISTORY](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/irclchistory.html)
 - [[hcm-module-data-dictionary]] -- Dossie do modulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[jobapphisteventpvo|JobAppHistEventPVO]] (HCM · BICC: 13/21)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_ID | LCHistoryPEOActionId | ✅ |
+| COMMENTS | LCHistoryPEOComments | ✅ |
+| CREATED_BY | LCHistoryPEOCreatedBy | — |
+| CREATION_DATE | LCHistoryPEOCreationDate | ✅ |
+| EVENT_DATE | LCHistoryPEOEventDate | ✅ |
+| EVENT_TYPE_ID | LCHistoryPEOEventTypeId | ✅ |
+| HISTORY_EVENT_ID | HistoryEventId | ✅ |
+| LAST_UPDATE_DATE | LCHistoryPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LCHistoryPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | LCHistoryPEOLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | LCHistoryPEOObjectVersionNumber | — |
+| PERSON_ID | LCHistoryPEOPersonId | — |
+| PHASE_ID | LCHistoryPEOPhaseId | ✅ |
+| PROCESS_ID | LCHistoryPEOProcessId | ✅ |
+| REASON_ID | LCHistoryPEOReasonId | ✅ |
+| ROUTING_STEP_ID | LCHistoryPEORoutingStepId | — |
+| SOURCE_OBJECT_ID | LCHistoryPEOSourceObjectId | — |
+| STATE_ID | LCHistoryPEOStateId | ✅ |
+| STEP_DURATION | StepDuration | ✅ |
+| SUBJECT_ID | LCHistoryPEOSubjectId | ✅ |
+| TRACE_LOG | TraceLog | — |
+
+### [[jobreqhisteventpvo|JobReqHistEventPVO]] (PO · BICC: 18/19)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_ID | LCHistoryPEOActionId | ✅ |
+| CREATED_BY | LCHistoryPEOCreatedBy | ✅ |
+| CREATION_DATE | LCHistoryPEOCreationDate | ✅ |
+| EVENT_DATE | LCHistoryPEOEventDate | ✅ |
+| EVENT_TYPE_ID | LCHistoryPEOEventTypeId | ✅ |
+| HISTORY_EVENT_ID | HistoryEventId | ✅ |
+| LAST_UPDATE_DATE | LCHistoryPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LCHistoryPEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | LCHistoryPEOLastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | LCHistoryPEOObjectVersionNumber | ✅ |
+| PERSON_ID | LCHistoryPEOPersonId | ✅ |
+| PHASE_ID | LCHistoryPEOPhaseId | ✅ |
+| PROCESS_ID | LCHistoryPEOProcessId | ✅ |
+| ROUTING_STEP_ID | LCHistoryPEORoutingStepId | ✅ |
+| SOURCE_OBJECT_ID | LCHistoryPEOSourceObjectId | ✅ |
+| STATE_ID | LCHistoryPEOStateId | ✅ |
+| STEP_DURATION | StepDuration | ✅ |
+| SUBJECT_ID | LCHistoryPEOSubjectId | ✅ |
+| TRACE_LOG | TraceLog | — |
+
+### [[poolcandhisteventpvo|PoolCandHistEventPVO]] (PO · BICC: 10/21)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_ID | LCHistoryPEOActionId | — |
+| COMMENTS | LCHistoryPEOComments | — |
+| CREATED_BY | LCHistoryPEOCreatedBy | — |
+| CREATION_DATE | LCHistoryPEOCreationDate | ✅ |
+| EVENT_DATE | LCHistoryPEOEventDate | ✅ |
+| EVENT_TYPE_ID | LCHistoryPEOEventTypeId | ✅ |
+| HISTORY_EVENT_ID | HistoryEventId | ✅ |
+| LAST_UPDATE_DATE | LCHistoryPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LCHistoryPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | LCHistoryPEOLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | LCHistoryPEOObjectVersionNumber | — |
+| PERSON_ID | LCHistoryPEOPersonId | — |
+| PHASE_ID | LCHistoryPEOPhaseId | ✅ |
+| PROCESS_ID | LCHistoryPEOProcessId | ✅ |
+| REASON_ID | LCHistoryPEOReasonId | — |
+| ROUTING_STEP_ID | LCHistoryPEORoutingStepId | — |
+| SOURCE_OBJECT_ID | LCHistoryPEOSourceObjectId | — |
+| STATE_ID | LCHistoryPEOStateId | ✅ |
+| STEP_DURATION | StepDuration | ✅ |
+| SUBJECT_ID | LCHistoryPEOSubjectId | ✅ |
+| TRACE_LOG | TraceLog | — |

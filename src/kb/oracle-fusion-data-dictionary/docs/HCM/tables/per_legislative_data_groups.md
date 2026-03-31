@@ -104,6 +104,41 @@ ORDER BY pldg.LEGISLATION_CODE;
 - Operações multinacionais terão múltiplos LDGs (um por país/legislação).
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[legislativedatagrouppvo|LegislativeDataGroupPVO]] (GL · BICC: 8/11)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | LegislativeDataGroupPEOBusinessGroupId | — |
+| COST_ALLOCATION_ID_FLEX_NUM | LegislativeDataGroupPEOCostAllocationIdFlexNum | ✅ |
+| CREATED_BY | LegislativeDataGroupPEOCreatedBy | ✅ |
+| CREATION_DATE | LegislativeDataGroupPEOCreationDate | ✅ |
+| DEFAULT_CURRENCY_CODE | LegislativeDataGroupPEODefaultCurrencyCode | ✅ |
+| LAST_UPDATE_DATE | LegislativeDataGroupPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LegislativeDataGroupPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | LegislativeDataGroupPEOLastUpdatedBy | ✅ |
+| LEGISLATION_CODE | LegislativeDataGroupPEOLegislationCode | ✅ |
+| LEGISLATIVE_DATA_GROUP_ID | LegislativeDataGroupId | ✅ |
+| OBJECT_VERSION_NUMBER | LegislativeDataGroupPEOObjectVersionNumber | — |
+
+### [[payrollruncosting|PayrollRunCosting]] (GL)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| COST_ALLOCATION_ID_FLEX_NUM | LdgPEOCostAllocationIdFlexNum | — |
+| LEGISLATIVE_DATA_GROUP_ID | LdgPEOLegislativeDataGroupId | — |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | — |
+
+### [[prepaymentcosting|PrePaymentCosting]] (GL)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| COST_ALLOCATION_ID_FLEX_NUM | LdgPEOCostAllocationIdFlexNum | — |
+| LEGISLATIVE_DATA_GROUP_ID | LdgPEOLegislativeDataGroupId | — |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — PER_LEGISLATIVE_DATA_GROUPS](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/perlegislativedatagroups.html)

@@ -72,3 +72,34 @@ updated_at: 2026-03-26
 ## 📎 Uso Típico
 
 (a ser preenchido na etapa 03)
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[withholdingbucketpvo|WithholdingBucketPVO]] (AP · BICC: 9/22)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACCUMULATED_TAX_AMOUNT | WithholdingBucketAccumulatedTaxAmount | ✅ |
+| ACCUMULATED_TAXABLE_AMOUNT | WithholdingBucketAccumulatedTaxableAmount | ✅ |
+| BUCKET_TYPE | WithholdingBucketBucketType | — |
+| CALENDAR_NAME | WithholdingBucketCalendarName | — |
+| CREATED_BY | WithholdingBucketCreatedBy | ✅ |
+| CREATION_DATE | WithholdingBucketCreationDate | ✅ |
+| EFFECTIVE_END_DATE | WithholdingBucketEffectiveEndDate | — |
+| EFFECTIVE_START_DATE | WithholdingBucketEffectiveStartDate | — |
+| FIRST_PARTY_TAX_PROFILE_ID | WithholdingBucketFirstPartyTaxProfileId | — |
+| LAST_UPDATE_DATE | WithholdingBucketLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | WithholdingBucketLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | WithholdingBucketLastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | WithholdingBucketObjectVersionNumber | — |
+| PERIOD_NAME | WithholdingBucketPeriodName | ✅ |
+| RECORD_TYPE_CODE | WithholdingBucketRecordTypeCode | — |
+| SUPPLIER_ID | WithholdingBucketSupplierId | — |
+| TAX | WithholdingBucketTax | — |
+| TAX_BUCKET_ID | WithholdingBucketTaxBucketId | ✅ |
+| TAX_JURISDICTION_CODE | WithholdingBucketTaxJurisdictionCode | — |
+| TAX_REGIME_CODE | WithholdingBucketTaxRegimeCode | — |
+| THIRD_PTY_SITE_TAX_PROF_ID | WithholdingBucketThirdPtySiteTaxProfId | — |
+| THIRD_PTY_TAX_PROF_ID | WithholdingBucketThirdPtyTaxProfId | — |

@@ -116,6 +116,76 @@ WHERE  ed.INCIDENT_ID = :p_incident_id;
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[hnsunsafecondeventpvo|HNSUnsafeCondEventPVO]] (HCM · BICC: 10/61)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ATTRIBUTE1 | HNSUnsafeCondEventPEOAttribute1 | — |
+| ATTRIBUTE10 | HNSUnsafeCondEventPEOAttribute10 | — |
+| ATTRIBUTE11 | HNSUnsafeCondEventPEOAttribute11 | — |
+| ATTRIBUTE12 | HNSUnsafeCondEventPEOAttribute12 | — |
+| ATTRIBUTE13 | HNSUnsafeCondEventPEOAttribute13 | — |
+| ATTRIBUTE14 | HNSUnsafeCondEventPEOAttribute14 | — |
+| ATTRIBUTE15 | HNSUnsafeCondEventPEOAttribute15 | — |
+| ATTRIBUTE16 | HNSUnsafeCondEventPEOAttribute16 | — |
+| ATTRIBUTE17 | HNSUnsafeCondEventPEOAttribute17 | — |
+| ATTRIBUTE18 | HNSUnsafeCondEventPEOAttribute18 | — |
+| ATTRIBUTE19 | HNSUnsafeCondEventPEOAttribute19 | — |
+| ATTRIBUTE2 | HNSUnsafeCondEventPEOAttribute2 | — |
+| ATTRIBUTE20 | HNSUnsafeCondEventPEOAttribute20 | — |
+| ATTRIBUTE21 | HNSUnsafeCondEventPEOAttribute21 | — |
+| ATTRIBUTE22 | HNSUnsafeCondEventPEOAttribute22 | — |
+| ATTRIBUTE23 | HNSUnsafeCondEventPEOAttribute23 | — |
+| ATTRIBUTE24 | HNSUnsafeCondEventPEOAttribute24 | — |
+| ATTRIBUTE25 | HNSUnsafeCondEventPEOAttribute25 | — |
+| ATTRIBUTE26 | HNSUnsafeCondEventPEOAttribute26 | — |
+| ATTRIBUTE27 | HNSUnsafeCondEventPEOAttribute27 | — |
+| ATTRIBUTE28 | HNSUnsafeCondEventPEOAttribute28 | — |
+| ATTRIBUTE29 | HNSUnsafeCondEventPEOAttribute29 | — |
+| ATTRIBUTE3 | HNSUnsafeCondEventPEOAttribute3 | — |
+| ATTRIBUTE30 | HNSUnsafeCondEventPEOAttribute30 | — |
+| ATTRIBUTE4 | HNSUnsafeCondEventPEOAttribute4 | — |
+| ATTRIBUTE5 | HNSUnsafeCondEventPEOAttribute5 | — |
+| ATTRIBUTE6 | HNSUnsafeCondEventPEOAttribute6 | — |
+| ATTRIBUTE7 | HNSUnsafeCondEventPEOAttribute7 | — |
+| ATTRIBUTE8 | HNSUnsafeCondEventPEOAttribute8 | — |
+| ATTRIBUTE9 | HNSUnsafeCondEventPEOAttribute9 | — |
+| ATTRIBUTE_CATEGORY | HNSUnsafeCondEventPEOAttrCategory | — |
+| ATTRIBUTE_NUMBER1 | HNSUnsafeCondEventPEOAttrNumber1 | — |
+| ATTRIBUTE_NUMBER10 | HNSUnsafeCondEventPEOAttrNumber10 | — |
+| ATTRIBUTE_NUMBER2 | HNSUnsafeCondEventPEOAttrNumber2 | — |
+| ATTRIBUTE_NUMBER3 | HNSUnsafeCondEventPEOAttrNumber3 | — |
+| ATTRIBUTE_NUMBER4 | HNSUnsafeCondEventPEOAttrNumber4 | — |
+| ATTRIBUTE_NUMBER5 | HNSUnsafeCondEventPEOAttrNumber5 | — |
+| ATTRIBUTE_NUMBER6 | HNSUnsafeCondEventPEOAttrNumber6 | — |
+| ATTRIBUTE_NUMBER7 | HNSUnsafeCondEventPEOAttrNumber7 | — |
+| ATTRIBUTE_NUMBER8 | HNSUnsafeCondEventPEOAttrNumber8 | — |
+| ATTRIBUTE_NUMBER9 | HNSUnsafeCondEventPEOAttrNumber9 | — |
+| ATTRIBUTE_TIMESTAMP1 | HNSUnsafeCondEventPEOAttrTimstmp1 | — |
+| ATTRIBUTE_TIMESTAMP10 | HNSUnsafeCondEventPEOAttrTimstmp10 | — |
+| ATTRIBUTE_TIMESTAMP2 | HNSUnsafeCondEventPEOAttrTimstmp2 | — |
+| ATTRIBUTE_TIMESTAMP3 | HNSUnsafeCondEventPEOAttrTimstmp3 | — |
+| ATTRIBUTE_TIMESTAMP4 | HNSUnsafeCondEventPEOAttrTimstmp4 | — |
+| ATTRIBUTE_TIMESTAMP5 | HNSUnsafeCondEventPEOAttrTimstmp5 | — |
+| ATTRIBUTE_TIMESTAMP6 | HNSUnsafeCondEventPEOAttrTimstmp6 | — |
+| ATTRIBUTE_TIMESTAMP7 | HNSUnsafeCondEventPEOAttrTimstmp7 | — |
+| ATTRIBUTE_TIMESTAMP8 | HNSUnsafeCondEventPEOAttrTimstmp8 | — |
+| ATTRIBUTE_TIMESTAMP9 | HNSUnsafeCondEventPEOAttrTimstmp9 | — |
+| CREATED_BY | HNSUnsafeCondEventPEOCrtdBy | ✅ |
+| CREATION_DATE | HNSUnsafeCondEventPEOCrtnDt | ✅ |
+| DELETED_FLAG | HNSUnsafeCondEventPEODelFlg | ✅ |
+| INCIDENT_DETAIL_ID | HNSUnsafeCondEventPEOIncDtlId | ✅ |
+| LAST_UPDATE_DATE | HNSUnsafeCondEventPEOLstUpdtDt | ✅ |
+| LAST_UPDATE_LOGIN | HNSUnsafeCondEventPEOLstUpdtLgn | ✅ |
+| LAST_UPDATED_BY | HNSUnsafeCondEventPEOLstUpdtdBy | ✅ |
+| OBJECT_VERSION_NUMBER | HNSUnsafeCondEventPEOObjVerNum | ✅ |
+| UNSAFE_COND_EVT_DETAIL_ID | HNSUnsafeCondEventPEOUnsfCondEvtDetId | ✅ |
+| UNSAFE_CONDITION_CODE | HNSUnsafeCondEventPEOUnsafeCondCd | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — HNS_UNSAFE_COND_EVT_DETAIL](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/hnsunsafecondevtdetail.html)

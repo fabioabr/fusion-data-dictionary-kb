@@ -122,6 +122,55 @@ WHERE  lls.QUANTITY > NVL(lls.QUANTITY_DELIVERED, 0)
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[requisitiondistributionp1|RequisitionDistributionP1]] (PO · BICC: 6/10)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ALL_PO_SCH_CANCELED_FLAG | PurchasingShipmentSummaryAllPoSchCanceledFlag | — |
+| ALL_PO_SCH_FULFILLED_FLAG | PurchasingShipmentSummaryAllPoSchFulfilledFlag | ✅ |
+| ANY_PO_SCH_FF_PAST_DUE_FLAG | PurchasingShipmentSummaryAnyPoSchFfPastDueFlag | — |
+| MAX_PO_SCH_FULFILLED_DATE | PurchasingShipmentSummaryMaxPoSchFulfilledDate | ✅ |
+| MAX_PO_SCH_LAST_UPDATE_DATE | PurchasingShipmentSummaryMaxPoSchLastUpdateDate | ✅ |
+| MIN_PO_SCH_NEED_BY_DATE | PurchasingShipmentSummaryMinPoSchNeedByDate | ✅ |
+| MIN_PO_SCH_PROMISED_DATE | PurchasingShipmentSummaryMinPoSchPromisedDate | ✅ |
+| REQUISITION_LINE_ID | PurchasingShipmentSummaryRequisitionLineId | — |
+| SUM_PO_SCH_AMOUNT_RECEIVED | PurchasingShipmentSummarySumPoSchAmountReceived | — |
+| SUM_PO_SCH_QUANTITY_RECEIVED | PurchasingShipmentSummarySumPoSchQuantityReceived | ✅ |
+
+### [[requisitiondistributionrefpvo|RequisitionDistributionRefPVO]] (PO · BICC: 1/10)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ALL_PO_SCH_CANCELED_FLAG | PurchasingShipmentSummaryAllPoSchCanceledFlag | — |
+| ALL_PO_SCH_FULFILLED_FLAG | PurchasingShipmentSummaryAllPoSchFulfilledFlag | — |
+| ANY_PO_SCH_FF_PAST_DUE_FLAG | PurchasingShipmentSummaryAnyPoSchFfPastDueFlag | — |
+| MAX_PO_SCH_FULFILLED_DATE | PurchasingShipmentSummaryMaxPoSchFulfilledDate | — |
+| MAX_PO_SCH_LAST_UPDATE_DATE | PurchasingShipmentSummaryMaxPoSchLastUpdateDate | ✅ |
+| MIN_PO_SCH_NEED_BY_DATE | PurchasingShipmentSummaryMinPoSchNeedByDate | — |
+| MIN_PO_SCH_PROMISED_DATE | PurchasingShipmentSummaryMinPoSchPromisedDate | — |
+| REQUISITION_LINE_ID | PurchasingShipmentSummaryRequisitionLineId | — |
+| SUM_PO_SCH_AMOUNT_RECEIVED | PurchasingShipmentSummarySumPoSchAmountReceived | — |
+| SUM_PO_SCH_QUANTITY_RECEIVED | PurchasingShipmentSummarySumPoSchQuantityReceived | — |
+
+### [[requisitionlinep1|RequisitionLineP1]] (PO · BICC: 7/10)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ALL_PO_SCH_CANCELED_FLAG | PurchasingShipmentSummaryAllPoSchCanceledFlag | ✅ |
+| ALL_PO_SCH_FULFILLED_FLAG | PurchasingShipmentSummaryAllPoSchFulfilledFlag | ✅ |
+| ANY_PO_SCH_FF_PAST_DUE_FLAG | PurchasingShipmentSummaryAnyPoSchFfPastDueFlag | — |
+| MAX_PO_SCH_FULFILLED_DATE | PurchasingShipmentSummaryMaxPoSchFulfilledDate | ✅ |
+| MAX_PO_SCH_LAST_UPDATE_DATE | PurchasingShipmentSummaryMaxPoSchLastUpdateDate | ✅ |
+| MIN_PO_SCH_NEED_BY_DATE | PurchasingShipmentSummaryMinPoSchNeedByDate | ✅ |
+| MIN_PO_SCH_PROMISED_DATE | PurchasingShipmentSummaryMinPoSchPromisedDate | ✅ |
+| REQUISITION_LINE_ID | PurchasingShipmentSummaryRequisitionLineId | — |
+| SUM_PO_SCH_AMOUNT_RECEIVED | PurchasingShipmentSummarySumPoSchAmountReceived | — |
+| SUM_PO_SCH_QUANTITY_RECEIVED | PurchasingShipmentSummarySumPoSchQuantityReceived | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — POR Views](https://docs.oracle.com/en/cloud/saas/procurement/25a/oedmf/portables.html)

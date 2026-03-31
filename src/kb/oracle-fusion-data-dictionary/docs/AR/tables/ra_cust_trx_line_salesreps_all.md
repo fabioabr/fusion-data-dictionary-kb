@@ -167,6 +167,199 @@ ORDER BY ct.TRX_NUMBER, ctl.LINE_NUMBER;
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[headersalescreditpvo|HeaderSalesCreditPVO]] (AR · BICC: 9/49)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | SalesCreditCreatedBy | — |
+| CREATED_BY | SalesCreditPrevCreatedBy | — |
+| CREATION_DATE | SalesCreditCreationDate | — |
+| CREATION_DATE | SalesCreditPrevCreationDate | — |
+| CUST_TRX_LINE_SALESREP_ID | CustTrxLineSalesrepId | ✅ |
+| CUST_TRX_LINE_SALESREP_ID | SalesCreditPrevCustTrxLineSalesrepId | — |
+| CUSTOMER_TRX_ID | SalesCreditCustomerTrxId | ✅ |
+| CUSTOMER_TRX_ID | SalesCreditPrevCustomerTrxId | — |
+| CUSTOMER_TRX_LINE_ID | SalesCreditCustomerTrxLineId | ✅ |
+| CUSTOMER_TRX_LINE_ID | SalesCreditPrevCustomerTrxLineId | — |
+| LAST_UPDATE_DATE | SalesCreditLastUpdateDate | ✅ |
+| LAST_UPDATE_DATE | SalesCreditPrevLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | SalesCreditLastUpdateLogin | — |
+| LAST_UPDATE_LOGIN | SalesCreditPrevLastUpdateLogin | — |
+| LAST_UPDATED_BY | SalesCreditLastUpdatedBy | — |
+| LAST_UPDATED_BY | SalesCreditPrevLastUpdatedBy | — |
+| NON_REVENUE_AMOUNT_SPLIT | SalesCreditNonRevenueAmountSplit | ✅ |
+| NON_REVENUE_AMOUNT_SPLIT | SalesCreditPrevNonRevenueAmountSplit | — |
+| NON_REVENUE_PERCENT_SPLIT | SalesCreditNonRevenuePercentSplit | ✅ |
+| NON_REVENUE_PERCENT_SPLIT | SalesCreditPrevNonRevenuePercentSplit | — |
+| NON_REVENUE_SALESGROUP_ID | SalesCreditNonRevenueSalesgroupId | — |
+| NON_REVENUE_SALESGROUP_ID | SalesCreditPrevNonRevenueSalesgroupId | — |
+| OBJECT_VERSION_NUMBER | SalesCreditObjectVersionNumber | — |
+| OBJECT_VERSION_NUMBER | SalesCreditPrevObjectVersionNumber | — |
+| ORG_ID | SalesCreditOrgId | — |
+| ORG_ID | SalesCreditPrevOrgId | — |
+| ORIGINAL_LINE_SALESREP_ID | SalesCreditOriginalLineSalesrepId | — |
+| ORIGINAL_LINE_SALESREP_ID | SalesCreditPrevOriginalLineSalesrepId | — |
+| PREV_CUST_TRX_LINE_SALESREP_ID | SalesCreditPrevPrevCustTrxLineSalesrepId | — |
+| PROGRAM_APPLICATION_ID | SalesCreditPrevProgramApplicationId | — |
+| PROGRAM_APPLICATION_ID | SalesCreditProgramApplicationId | — |
+| PROGRAM_ID | SalesCreditPrevProgramId | — |
+| PROGRAM_ID | SalesCreditProgramId | — |
+| PROGRAM_UPDATE_DATE | SalesCreditPrevProgramUpdateDate | — |
+| PROGRAM_UPDATE_DATE | SalesCreditProgramUpdateDate | — |
+| REQUEST_ID | SalesCreditPrevRequestId | — |
+| REQUEST_ID | SalesCreditRequestId | — |
+| RESOURCE_SALESREP_ID | SalesCreditPrevResourceSalesrepId | — |
+| RESOURCE_SALESREP_ID | SalesCreditResourceSalesrepId | — |
+| REVENUE_ADJUSTMENT_ID | SalesCreditPrevRevenueAdjustmentId | — |
+| REVENUE_ADJUSTMENT_ID | SalesCreditRevenueAdjustmentId | — |
+| REVENUE_AMOUNT_SPLIT | SalesCreditPrevRevenueAmountSplit | — |
+| REVENUE_AMOUNT_SPLIT | SalesCreditRevenueAmountSplit | ✅ |
+| REVENUE_PERCENT_SPLIT | SalesCreditPrevRevenuePercentSplit | — |
+| REVENUE_PERCENT_SPLIT | SalesCreditRevenuePercentSplit | ✅ |
+| REVENUE_SALESGROUP_ID | SalesCreditPrevRevenueSalesgroupId | — |
+| REVENUE_SALESGROUP_ID | SalesCreditRevenueSalesgroupId | — |
+| WH_UPDATE_DATE | SalesCreditPrevWhUpdateDate | — |
+| WH_UPDATE_DATE | SalesCreditWhUpdateDate | — |
+
+### [[linesalescreditpvo|LineSalesCreditPVO]] (AR · BICC: 9/50)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | LineSalesCreditCreatedBy | — |
+| CREATED_BY | SalesCreditPrevCreatedBy | — |
+| CREATION_DATE | LineSalesCreditCreationDate | — |
+| CREATION_DATE | SalesCreditPrevCreationDate | — |
+| CUST_TRX_LINE_SALESREP_ID | CustTrxLineSalesrepId | ✅ |
+| CUST_TRX_LINE_SALESREP_ID | SalesCreditPrevCustTrxLineSalesrepId | — |
+| CUSTOMER_TRX_ID | LineSalesCreditCustomerTrxId | ✅ |
+| CUSTOMER_TRX_ID | SalesCreditPrevCustomerTrxId | — |
+| CUSTOMER_TRX_LINE_ID | LineSalesCreditCustomerTrxLineId | ✅ |
+| CUSTOMER_TRX_LINE_ID | SalesCreditPrevCustomerTrxLineId | — |
+| LAST_UPDATE_DATE | LineSalesCreditLastUpdateDate | ✅ |
+| LAST_UPDATE_DATE | SalesCreditPrevLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LineSalesCreditLastUpdateLogin | — |
+| LAST_UPDATE_LOGIN | SalesCreditPrevLastUpdateLogin | — |
+| LAST_UPDATED_BY | LineSalesCreditLastUpdatedBy | — |
+| LAST_UPDATED_BY | SalesCreditPrevLastUpdatedBy | — |
+| NON_REVENUE_AMOUNT_SPLIT | LineSalesCreditNonRevenueAmountSplit | ✅ |
+| NON_REVENUE_AMOUNT_SPLIT | SalesCreditPrevNonRevenueAmountSplit | — |
+| NON_REVENUE_PERCENT_SPLIT | LineSalesCreditNonRevenuePercentSplit | ✅ |
+| NON_REVENUE_PERCENT_SPLIT | SalesCreditPrevNonRevenuePercentSplit | — |
+| NON_REVENUE_SALESGROUP_ID | LineSalesCreditNonRevenueSalesgroupId | — |
+| NON_REVENUE_SALESGROUP_ID | SalesCreditPrevNonRevenueSalesgroupId | — |
+| OBJECT_VERSION_NUMBER | LineSalesCreditObjectVersionNumber | — |
+| OBJECT_VERSION_NUMBER | SalesCreditPrevObjectVersionNumber | — |
+| ORG_ID | LineSalesCreditOrgId | — |
+| ORG_ID | SalesCreditPrevOrgId | — |
+| ORIGINAL_LINE_SALESREP_ID | LineSalesCreditOriginalLineSalesrepId | — |
+| ORIGINAL_LINE_SALESREP_ID | SalesCreditPrevOriginalLineSalesrepId | — |
+| PREV_CUST_TRX_LINE_SALESREP_ID | LineSalesCreditPrevCustTrxLineSalesrepId | — |
+| PREV_CUST_TRX_LINE_SALESREP_ID | SalesCreditPrevPrevCustTrxLineSalesrepId | — |
+| PROGRAM_APPLICATION_ID | LineSalesCreditProgramApplicationId | — |
+| PROGRAM_APPLICATION_ID | SalesCreditPrevProgramApplicationId | — |
+| PROGRAM_ID | LineSalesCreditProgramId | — |
+| PROGRAM_ID | SalesCreditPrevProgramId | — |
+| PROGRAM_UPDATE_DATE | LineSalesCreditProgramUpdateDate | — |
+| PROGRAM_UPDATE_DATE | SalesCreditPrevProgramUpdateDate | — |
+| REQUEST_ID | LineSalesCreditRequestId | — |
+| REQUEST_ID | SalesCreditPrevRequestId | — |
+| RESOURCE_SALESREP_ID | LineSalesCreditResourceSalesrepId | — |
+| RESOURCE_SALESREP_ID | SalesCreditPrevResourceSalesrepId | — |
+| REVENUE_ADJUSTMENT_ID | LineSalesCreditRevenueAdjustmentId | — |
+| REVENUE_ADJUSTMENT_ID | SalesCreditPrevRevenueAdjustmentId | — |
+| REVENUE_AMOUNT_SPLIT | LineSalesCreditRevenueAmountSplit | ✅ |
+| REVENUE_AMOUNT_SPLIT | SalesCreditPrevRevenueAmountSplit | — |
+| REVENUE_PERCENT_SPLIT | LineSalesCreditRevenuePercentSplit | ✅ |
+| REVENUE_PERCENT_SPLIT | SalesCreditPrevRevenuePercentSplit | — |
+| REVENUE_SALESGROUP_ID | LineSalesCreditRevenueSalesgroupId | — |
+| REVENUE_SALESGROUP_ID | SalesCreditPrevRevenueSalesgroupId | — |
+| WH_UPDATE_DATE | LineSalesCreditWhUpdateDate | — |
+| WH_UPDATE_DATE | SalesCreditPrevWhUpdateDate | — |
+
+### [[salesinvoicecustomertrxlinesalescreditpvo|SalesInvoiceCustomerTrxLineSalesCreditPVO]] (AR · BICC: 13/44)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | SalesCreditCreatedBy | ✅ |
+| CREATION_DATE | SalesCreditCreationDate | ✅ |
+| CUST_TRX_LINE_SALESREP_ID | CustTrxLineSalesrepId | ✅ |
+| CUST_TRX_LINE_SALESREP_ID | SalesCreditPreviousCustTrxLineSalesrepId | — |
+| CUSTOMER_TRX_ID | SalesCreditCustomerTrxId | ✅ |
+| CUSTOMER_TRX_ID | SalesCreditPreviousCustomerTrxId | — |
+| CUSTOMER_TRX_LINE_ID | SalesCreditCustomerTrxLineId | ✅ |
+| CUSTOMER_TRX_LINE_ID | SalesCreditPreviousCustomerTrxLineId | — |
+| LAST_UPDATE_DATE | SalesCreditLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | SalesCreditLastUpdateLogin | — |
+| LAST_UPDATED_BY | SalesCreditLastUpdatedBy | ✅ |
+| NON_REVENUE_AMOUNT_SPLIT | SalesCreditNonRevenueAmountSplit | ✅ |
+| NON_REVENUE_AMOUNT_SPLIT | SalesCreditPreviousNonRevenueAmountSplit | — |
+| NON_REVENUE_PERCENT_SPLIT | SalesCreditNonRevenuePercentSplit | ✅ |
+| NON_REVENUE_PERCENT_SPLIT | SalesCreditPreviousNonRevenuePercentSplit | — |
+| NON_REVENUE_SALESGROUP_ID | SalesCreditNonRevenueSalesgroupId | — |
+| NON_REVENUE_SALESGROUP_ID | SalesCreditPreviousNonRevenueSalesgroupId | — |
+| OBJECT_VERSION_NUMBER | SalesCreditObjectVersionNumber | — |
+| ORG_ID | SalesCreditOrgId | ✅ |
+| ORG_ID | SalesCreditPreviousOrgId | — |
+| ORIGINAL_LINE_SALESREP_ID | SalesCreditOriginalLineSalesrepId | — |
+| ORIGINAL_LINE_SALESREP_ID | SalesCreditPreviousOriginalLineSalesrepId | — |
+| PREV_CUST_TRX_LINE_SALESREP_ID | SalesCreditPrevCustTrxLineSalesrepId | — |
+| PREV_CUST_TRX_LINE_SALESREP_ID | SalesCreditPreviousPrevCustTrxLineSalesrepId | — |
+| PROGRAM_APPLICATION_ID | SalesCreditPreviousProgramApplicationId | — |
+| PROGRAM_APPLICATION_ID | SalesCreditProgramApplicationId | — |
+| PROGRAM_ID | SalesCreditPreviousProgramId | — |
+| PROGRAM_ID | SalesCreditProgramId | — |
+| PROGRAM_UPDATE_DATE | SalesCreditPreviousProgramUpdateDate | — |
+| PROGRAM_UPDATE_DATE | SalesCreditProgramUpdateDate | — |
+| REQUEST_ID | SalesCreditPreviousRequestId | — |
+| REQUEST_ID | SalesCreditRequestId | — |
+| RESOURCE_SALESREP_ID | SalesCreditPreviousResourceSalesrepId | — |
+| RESOURCE_SALESREP_ID | SalesCreditResourceSalesrepId | ✅ |
+| REVENUE_ADJUSTMENT_ID | SalesCreditPreviousRevenueAdjustmentId | — |
+| REVENUE_ADJUSTMENT_ID | SalesCreditRevenueAdjustmentId | — |
+| REVENUE_AMOUNT_SPLIT | SalesCreditPreviousRevenueAmountSplit | — |
+| REVENUE_AMOUNT_SPLIT | SalesCreditRevenueAmountSplit | ✅ |
+| REVENUE_PERCENT_SPLIT | SalesCreditPreviousRevenuePercentSplit | — |
+| REVENUE_PERCENT_SPLIT | SalesCreditRevenuePercentSplit | ✅ |
+| REVENUE_SALESGROUP_ID | SalesCreditPreviousRevenueSalesgroupId | — |
+| REVENUE_SALESGROUP_ID | SalesCreditRevenueSalesgroupId | — |
+| WH_UPDATE_DATE | SalesCreditPreviousWhUpdateDate | — |
+| WH_UPDATE_DATE | SalesCreditWhUpdateDate | — |
+
+### [[transactionlinedistributionpvo|TransactionLineDistributionPVO]] (AR · BICC: 3/26)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ATTRIBUTE_CATEGORY | SalesCreditAttributeCategory | — |
+| CREATED_BY | SalesCreditCreatedBy | — |
+| CREATION_DATE | SalesCreditCreationDate | — |
+| CUST_TRX_LINE_SALESREP_ID | SalesCreditCustTrxLineSalesrepId | — |
+| CUSTOMER_TRX_ID | SalesCreditCustomerTrxId | — |
+| CUSTOMER_TRX_LINE_ID | SalesCreditCustomerTrxLineId | — |
+| LAST_UPDATE_DATE | SalesCreditLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | SalesCreditLastUpdateLogin | — |
+| LAST_UPDATED_BY | SalesCreditLastUpdatedBy | — |
+| NON_REVENUE_AMOUNT_SPLIT | SalesCreditNonRevenueAmountSplit | — |
+| NON_REVENUE_PERCENT_SPLIT | SalesCreditNonRevenuePercentSplit | ✅ |
+| NON_REVENUE_SALESGROUP_ID | SalesCreditNonRevenueSalesgroupId | — |
+| OBJECT_VERSION_NUMBER | SalesCreditObjectVersionNumber | — |
+| ORG_ID | SalesCreditOrgId | — |
+| ORIGINAL_LINE_SALESREP_ID | SalesCreditOriginalLineSalesrepId | — |
+| PREV_CUST_TRX_LINE_SALESREP_ID | SalesCreditPrevCustTrxLineSalesrepId | — |
+| PROGRAM_APPLICATION_ID | SalesCreditProgramApplicationId | — |
+| PROGRAM_ID | SalesCreditProgramId | — |
+| PROGRAM_UPDATE_DATE | SalesCreditProgramUpdateDate | — |
+| REQUEST_ID | SalesCreditRequestId | — |
+| RESOURCE_SALESREP_ID | SalesCreditResourceSalesrepId | — |
+| REVENUE_ADJUSTMENT_ID | SalesCreditRevenueAdjustmentId | — |
+| REVENUE_AMOUNT_SPLIT | SalesCreditRevenueAmountSplit | — |
+| REVENUE_PERCENT_SPLIT | SalesCreditRevenuePercentSplit | ✅ |
+| REVENUE_SALESGROUP_ID | SalesCreditRevenueSalesgroupId | — |
+| WH_UPDATE_DATE | SalesCreditWhUpdateDate | — |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — RA_CUST_TRX_LINE_SALESREPS_ALL](https://docs.oracle.com/en/cloud/saas/financials/25a/oedmf/racusttrxlinesalesrepsall-25222.html)

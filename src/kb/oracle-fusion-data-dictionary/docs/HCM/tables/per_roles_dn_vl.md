@@ -113,3 +113,94 @@ WHERE  vl.PERSON_ID = :p_person_id
 
 - [Oracle Docs — PER_ROLES_DN_VL](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/perrolesdnvl.html)
 - [[hcm-module-data-dictionary]] — Dossiê do módulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[projectplanlinebudgetpvo|ProjectPlanLineBudgetPVO]] (OTHER)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ROLE_ID | RoleForRbsElementRoleId | — |
+| ROLE_NAME | RoleForRbsElementRoleName | — |
+
+### [[projectplanlinedetailbudgetpvo|ProjectPlanLineDetailBudgetPVO]] (OTHER)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ROLE_ID | RoleForRbsElementRoleId | — |
+| ROLE_NAME | RoleForRbsElementRoleName | — |
+
+### [[projectplanlineforecastpvo|ProjectPlanLineForecastPVO]] (OTHER)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ROLE_ID | RoleForRbsElementRoleId | — |
+| ROLE_NAME | RoleForRbsElementRoleName | — |
+
+### [[projplanlinedetailforecastpvo|ProjPlanLineDetailForecastPVO]] (OTHER)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ROLE_ID | RoleForRbsElementRoleId | — |
+| ROLE_NAME | RoleForRbsElementRoleName | — |
+
+### [[rolednextractpvo|RoleDNExtractPVO]] (HCM · BICC: 22/22)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ABSTRACT_ROLE | AbstractRole | ✅ |
+| ACTIVE_FLAG | ActiveFlag | ✅ |
+| BUSINESS_GROUP_ID | BusinessGroupId | ✅ |
+| CREATED_BY | CreatedBy | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| DATA_ROLE | DataRole | ✅ |
+| DELEGATION_ALLOWED | DelegationAllowed | ✅ |
+| DESCRIPTION | Description | ✅ |
+| DUTY_ROLE | DutyRole | ✅ |
+| EXTERNAL_ID | ExternalId | ✅ |
+| EXTERNAL_ROLE | ExternalRole | ✅ |
+| JOB_ROLE | JobRole | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | LastUpdatedBy | ✅ |
+| MULTITENANCY_COMMON_NAME | MultitenancyCommonName | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | ✅ |
+| ROLE_COMMON_NAME | RoleCommonName | ✅ |
+| ROLE_DISTINGUISHED_NAME | RoleDistinguishedName | ✅ |
+| ROLE_GUID | RoleGuid | ✅ |
+| ROLE_ID | RoleId | ✅ |
+| ROLE_NAME | RoleName | ✅ |
+
+### [[suppliercontactuseracctdetailspvo|SupplierContactUserAcctDetailsPVO]] (PO · BICC: 3/17)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ABSTRACT_ROLE | RoleNameAbstractRole | — |
+| ACTIVE_FLAG | RoleNameActiveFlag | — |
+| CREATED_BY | RoleNameCreatedBy | — |
+| CREATION_DATE | RoleNameCreationDate | — |
+| DATA_ROLE | RoleNameDataRole | — |
+| DESCRIPTION | RoleNameDescription | ✅ |
+| JOB_ROLE | RoleNameJobRole | — |
+| LAST_UPDATE_DATE | RoleNameLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | RoleNameLastUpdateLogin | — |
+| LAST_UPDATED_BY | RoleNameLastUpdatedBy | — |
+| MULTITENANCY_COMMON_NAME | RoleNameMultitenancyCommonName | — |
+| OBJECT_VERSION_NUMBER | RoleNameObjectVersionNumber | — |
+| ROLE_COMMON_NAME | RoleNameRoleCommonName | — |
+| ROLE_DISTINGUISHED_NAME | RoleNameRoleDistinguishedName | — |
+| ROLE_GUID | RoleNameRoleGuid | — |
+| ROLE_ID | RoleNameRoleId | — |
+| ROLE_NAME | RoleNameRoleName | ✅ |
+
+### [[supplierupreqpvo|SupplierUpReqPVO]] (PO · BICC: 2/5)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| DESCRIPTION | RoleDescription | ✅ |
+| OBJECT_VERSION_NUMBER | RoleObjectVersionNumber | — |
+| ROLE_GUID | RoleRoleGuid | — |
+| ROLE_ID | RoleRoleId | — |
+| ROLE_NAME | RoleRoleName | ✅ |

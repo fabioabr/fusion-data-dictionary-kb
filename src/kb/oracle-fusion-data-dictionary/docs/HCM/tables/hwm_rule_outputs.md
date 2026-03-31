@@ -35,8 +35,6 @@ updated_at: 2026-03-25
 
 Define os resultados (outputs) gerados pela execução das regras de workforce management, especificando os valores calculados e seus destinos.
 
-
-
 ---
 
 ## 🧠 Propósito de Negócio
@@ -101,6 +99,43 @@ WHERE  t.RULE_ID = :p_rule_id
 ## 🔒 Observações
 
 - Área funcional: Rules Engine dentro do Oracle Fusion Cloud HCM.
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[ruleoutputpvo|RuleOutputPVO]] (GL · BICC: 23/28)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ATRB_FLD_NAME | RuleOutputPEOAtrbFldName | ✅ |
+| ATRB_FLD_SET_ID | RuleOutputPEOAtrbFldSetId | — |
+| CREATED_BY | RuleOutputPEOCreatedBy | ✅ |
+| CREATION_DATE | RuleOutputPEOCreationDate | ✅ |
+| DISPLAY_SEQUENCE | RuleOutputPEODisplaySequence | ✅ |
+| DISPLAY_TYPE | RuleOutputPEODisplayType | ✅ |
+| DISPLAY_VALUE | RuleOutputPEODisplayValue | ✅ |
+| ENTERPRISE_ID | RuleOutputPEOEnterpriseId | — |
+| HIDE_FLAG | RuleOutputPEOHideFlag | ✅ |
+| LAST_UPDATE_DATE | RuleOutputPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | RuleOutputPEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | RuleOutputPEOLastUpdatedBy | ✅ |
+| MSG_SEVERITY | RuleOutputPEOMsgSeverity | ✅ |
+| OBJECT_VERSION_NUMBER | RuleOutputPEOObjectVersionNumber | — |
+| OUTPUT_NAME | RuleOutputPEOOutputName | ✅ |
+| OUTPUT_SOURCE | RuleOutputPEOOutputSource | ✅ |
+| OUTPUT_VALUE_TYPE | RuleOutputPEOOutputValueType | ✅ |
+| RECURSIVE | RuleOutputPEORecursive | — |
+| RELATED_INPUT_NAME | RuleOutputPEORelatedInputName | — |
+| RULE_ID | RuleOutputPEORuleId | ✅ |
+| RULE_OUTPUT_ID | RuleOutputPEORuleOutputId | ✅ |
+| RULE_TMPLT_USAGES_ID | RuleOutputPEORuleTmpltUsagesId | ✅ |
+| TBB_GROUP_NUMBER | RuleOutputPEOTbbGroupNumber | ✅ |
+| TM_ATRB_FLD_ID | RuleOutputPEOTmAtrbFldId | ✅ |
+| VALUE_DATE | RuleOutputPEOValueDate | ✅ |
+| VALUE_NUMBER | RuleOutputPEOValueNumber | ✅ |
+| VALUE_SET_ID | RuleOutputPEOValueSetId | ✅ |
+| VALUE_TEXT | RuleOutputPEOValueText | ✅ |
 
 ---
 

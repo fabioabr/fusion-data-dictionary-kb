@@ -120,6 +120,62 @@ WHERE  sd.STATUS = 'VESTED'
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[stockdetailspvo|StockDetailsPVO]] (HCM · BICC: 42/47)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ASSIGNMENT_ID | StockEOAssignmentId | ✅ |
+| BUSINESS_GROUP_ID | StockEOBusinessGroupId | ✅ |
+| CANCELLATION_DATE | StockEOCancellationDate | ✅ |
+| CANCELLED_SHARES | StockEOCancelledShares | ✅ |
+| CLASS_TYPE | StockEOClassType | ✅ |
+| CREATED_BY | StockEOCreatedBy | ✅ |
+| CREATION_DATE | StockEOCreationDate | ✅ |
+| ELEMENT_ENTRY_ID | StockEOElementEntryId | — |
+| EXERCISABLE_SHARES | StockEOExercisableShares | ✅ |
+| EXERCISE_DATE | StockEOExerciseDate | ✅ |
+| EXERCISE_PRICE | StockEOExercisePrice | ✅ |
+| EXERCISED_SHARES | StockEOExercisedShares | ✅ |
+| EXPIRATION_DATE | StockEOExpirationDate | ✅ |
+| GRANT_ID | StockEOGrantId | ✅ |
+| GRANT_NAME | StockEOGrantName | ✅ |
+| GRANT_NUMBER | StockEOGrantNumber | ✅ |
+| GRANT_TYPE | StockEOGrantType | ✅ |
+| LAST_UPDATE_DATE | StockEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | StockEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | StockEOLastUpdatedBy | ✅ |
+| LEGAL_ENTITY_ID | StockEOLegalEntityId | ✅ |
+| MISC | StockEOMisc | ✅ |
+| MISC1_CHAR | StockEOMisc1Char | ✅ |
+| MISC1_VAL | StockEOMisc1Val | ✅ |
+| MISC2_CHAR | StockEOMisc2Char | ✅ |
+| MISC2_VAL | StockEOMisc2Val | ✅ |
+| MISC3_CHAR | StockEOMisc3Char | ✅ |
+| MISC3_VAL | StockEOMisc3Val | ✅ |
+| MISC4_CHAR | StockEOMisc4Char | ✅ |
+| MISC4_VAL | StockEOMisc4Val | ✅ |
+| MISC5_CHAR | StockEOMisc5Char | ✅ |
+| MISC5_VAL | StockEOMisc5Val | ✅ |
+| OBJECT_VERSION_NUMBER | StockEOObjectVersionNumber | — |
+| ORIGINAL_GRANT_DATE | StockEOOriginalGrantDate | ✅ |
+| ORIGINAL_GRANT_PRICE | StockEOOriginalGrantPrice | ✅ |
+| ORIGINAL_SHARES_GRANTED | StockEOOriginalSharesGranted | ✅ |
+| ORIGINAL_VALUE_AT_GRANT | StockEOOriginalValueAtGrant | ✅ |
+| PERSON_EVENT_ID | StockEOPersonEventId | — |
+| PERSON_ID | StockEOPersonId | — |
+| REASON_CODE | StockEOReasonCode | ✅ |
+| STOCK_DETAILS_ID | StockDetailsId | ✅ |
+| TOTAL_SHARES | StockEOTotalShares | ✅ |
+| TRADING_SYMBOL | StockEOTradingSymbol | ✅ |
+| UNVESTED_SHARES | StockEOUnvestedShares | ✅ |
+| VEST_DATE | StockEOVestDate | ✅ |
+| VESTED_SHARES | StockEOVestedShares | ✅ |
+| WORKER_NUMBER | StockEOWorkerNumber | — |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — CMP_STOCK_DETAILS](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/cmpstockdetails.html)

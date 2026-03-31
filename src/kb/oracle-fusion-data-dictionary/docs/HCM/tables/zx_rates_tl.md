@@ -60,3 +60,52 @@ updated_at: 2026-03-26
 ## 📎 Uso Típico
 
 (a ser preenchido na etapa 03)
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[taxratesextractpvo|TaxRatesExtractPVO]] (OTHER · BICC: 10/10)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | TaxRatesTLCreatedBy | ✅ |
+| CREATION_DATE | TaxRatesTLCreationDate | ✅ |
+| DESCRIPTION | TaxRatesTLDescription | ✅ |
+| LANGUAGE | TaxRatesTLLanguage | ✅ |
+| LAST_UPDATE_DATE | TaxRatesTLLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | TaxRatesTLLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | TaxRatesTLLastUpdatedBy | ✅ |
+| SOURCE_LANG | TaxRatesTLSourceLang | ✅ |
+| TAX_RATE_ID | TaxRatesTLTaxRateId | ✅ |
+| TAX_RATE_NAME | TaxRatesTLTaxRateName | ✅ |
+
+### [[taxratestlextractpvo|TaxRatesTLExtractPVO]] (OTHER · BICC: 10/10)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | TaxRatesTLCreatedBy | ✅ |
+| CREATION_DATE | TaxRatesTLCreationDate | ✅ |
+| DESCRIPTION | TaxRatesTLDescription | ✅ |
+| LANGUAGE | TaxRatesTLLanguage | ✅ |
+| LAST_UPDATE_DATE | TaxRatesTLLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | TaxRatesTLLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | TaxRatesTLLastUpdatedBy | ✅ |
+| SOURCE_LANG | TaxRatesTLSourceLang | ✅ |
+| TAX_RATE_ID | TaxRatesTLTaxRateId | ✅ |
+| TAX_RATE_NAME | TaxRatesTLTaxRateName | ✅ |
+
+### [[taxratestransalationpvo|TaxRatesTransalationPVO]] (AP · BICC: 4/10)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | TaxRatesTLPEOCreatedBy | — |
+| CREATION_DATE | TaxRatesTLPEOCreationDate | — |
+| DESCRIPTION | TaxRatesTLPEODescription | — |
+| LANGUAGE | Language | ✅ |
+| LAST_UPDATE_DATE | TaxRatesTLPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | TaxRatesTLPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | TaxRatesTLPEOLastUpdatedBy | — |
+| SOURCE_LANG | TaxRatesTLPEOSourceLang | — |
+| TAX_RATE_ID | TaxRateId | ✅ |
+| TAX_RATE_NAME | TaxRatesTLPEOTaxRateName | ✅ |

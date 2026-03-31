@@ -140,3 +140,34 @@ ORDER BY sec.DISPLAY_ORDER;
 
 - [Oracle Docs — PON_AUCTION_SECTIONS](https://docs.oracle.com/en/cloud/saas/procurement/25a/oedmf/ponauctionsections.html)
 - [[po-module-data-dictionary]] — Dossiê do módulo PO/Procurement
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[negotiationresponserequirementandattributepvo|NegotiationResponseRequirementAndAttributePVO]] (PO · BICC: 2/14)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ATTR_GROUP_SEQ_NUMBER | NegReqSectionAttrGroupSeqNumber | — |
+| ATTRIBUTE_LIST_ID | NegReqSectionAttributeListId | — |
+| AUCTION_HEADER_ID | NegReqSectionAuctionHeaderId | — |
+| CREATED_BY | NegReqSectionCreatedBy | — |
+| CREATION_DATE | NegReqSectionCreationDate | — |
+| LAST_UPDATE_DATE | NegReqSectionLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | NegReqSectionLastUpdateLogin | — |
+| LAST_UPDATED_BY | NegReqSectionLastUpdatedBy | — |
+| LINE_NUMBER | NegReqSectionLineNumber | — |
+| OBJECT_VERSION_NUMBER | NegReqSectionObjectVersionNumber | — |
+| PREVIOUS_SECTION_ID | NegReqSectionPreviousSectionId | — |
+| SECTION_ID | NegReqSectionSectionId | — |
+| SECTION_NAME | NegReqSectionSectionName | — |
+| TWO_PART_SECTION_TYPE | NegReqSectionTwoPartSectionType | ✅ |
+
+### [[sourcingrequirementandattributepvo|SourcingRequirementAndAttributePVO]] (PO · BICC: 1/3)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| OBJECT_VERSION_NUMBER | SourcingRequirementSectionObjectVersionNumber | — |
+| SECTION_ID | SourcingRequirementSectionSectionId | — |
+| TWO_PART_SECTION_TYPE | SourcingRequirementSectionTwoPartSectionType | ✅ |

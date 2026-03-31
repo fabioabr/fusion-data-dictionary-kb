@@ -134,6 +134,62 @@ ORDER BY br.REQUIREMENT_NAME, bh.VENDOR_NAME;
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[negotiationresprequirementandvaluespvo|NegotiationRespRequirementAndValuesPVO]] (PO · BICC: 10/21)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| AUCTION_HEADER_ID | RespReqtValuesAuctionHeaderId | — |
+| BID_NUMBER | RespReqtValuesBidNumber | ✅ |
+| CREATED_BY | RespReqtValuesCreatedBy | — |
+| CREATION_DATE | RespReqtValuesCreationDate | — |
+| DATE_VALUE | RespReqtValuesDateValue | ✅ |
+| DATETIME_VALUE | RespReqtValuesDatetimeValue | ✅ |
+| IS_SELECTED_FLAG | RespReqtValuesIsSelectedFlag | ✅ |
+| LAST_UPDATE_DATE | RespReqtValuesLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | RespReqtValuesLastUpdateLogin | — |
+| LAST_UPDATED_BY | RespReqtValuesLastUpdatedBy | — |
+| NUMBER_VALUE | RespReqtValuesNumberValue | ✅ |
+| OBJECT_VERSION_NUMBER | RespReqtValuesObjectVersionNumber | — |
+| OLD_DATE_VALUE | RespReqtValuesOldDateValue | — |
+| OLD_DATETIME_VALUE | RespReqtValuesOldDatetimeValue | — |
+| OLD_IS_SELECTED_FLAG | RespReqtValuesOldIsSelectedFlag | — |
+| OLD_NUMBER_VALUE | RespReqtValuesOldNumberValue | — |
+| OLD_TEXT_VALUE | RespReqtValuesOldTextValue | — |
+| REQUIREMENT_ID | RespReqtValuesRequirementId | ✅ |
+| REQUIREMENT_VALUE_ID | RespReqtValuesRequirementValueId | ✅ |
+| SCORE_ID | RespReqtValuesScoreId | ✅ |
+| TEXT_VALUE | RespReqtValuesTextValue | ✅ |
+
+### [[negotiationresprequirementvaluesextractpvo|NegotiationRespRequirementValuesExtractPVO]] (PO · BICC: 21/21)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| AUCTION_HEADER_ID | AuctionHeaderId | ✅ |
+| BID_NUMBER | BidNumber | ✅ |
+| CREATED_BY | CreatedBy | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| DATE_VALUE | DateValue | ✅ |
+| DATETIME_VALUE | DatetimeValue | ✅ |
+| IS_SELECTED_FLAG | IsSelectedFlag | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | LastUpdatedBy | ✅ |
+| NUMBER_VALUE | NumberValue | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | ✅ |
+| OLD_DATE_VALUE | OldDateValue | ✅ |
+| OLD_DATETIME_VALUE | OldDatetimeValue | ✅ |
+| OLD_IS_SELECTED_FLAG | OldIsSelectedFlag | ✅ |
+| OLD_NUMBER_VALUE | OldNumberValue | ✅ |
+| OLD_TEXT_VALUE | OldTextValue | ✅ |
+| REQUIREMENT_ID | RequirementId | ✅ |
+| REQUIREMENT_VALUE_ID | RequirementValueId | ✅ |
+| SCORE_ID | ScoreId | ✅ |
+| TEXT_VALUE | TextValue | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — PON_BID_REQUIREMENT_VALUES](https://docs.oracle.com/en/cloud/saas/procurement/25a/oedmf/ponbidrequirementvalues.html)

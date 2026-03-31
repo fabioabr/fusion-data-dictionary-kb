@@ -121,6 +121,31 @@ WHERE  ci.USER_COLUMN_ID = :p_column_id
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[usercolumninstancedpvo|UserColumnInstanceDPVO]] (GL · BICC: 16/16)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | UserColumnInstanceDPEOCreatedBy | ✅ |
+| CREATION_DATE | UserColumnInstanceDPEOCreationDate | ✅ |
+| EFFECTIVE_END_DATE | UserColumnInstanceDPEOEffectiveEndDate | ✅ |
+| EFFECTIVE_START_DATE | UserColumnInstanceDPEOEffectiveStartDate | ✅ |
+| ENTERPRISE_ID | UserColumnInstanceDPEOEnterpriseId | ✅ |
+| LAST_UPDATE_DATE | UserColumnInstanceDPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | UserColumnInstanceDPEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | UserColumnInstanceDPEOLastUpdatedBy | ✅ |
+| LEGISLATION_CODE | UserColumnInstanceDPEOLegislationCode | ✅ |
+| LEGISLATIVE_DATA_GROUP_ID | UserColumnInstanceDPEOLegislativeDataGroupId | ✅ |
+| MODULE_ID | UserColumnInstanceDPEOModuleId | ✅ |
+| OBJECT_VERSION_NUMBER | UserColumnInstanceDPEOObjectVersionNumber | ✅ |
+| USER_COLUMN_ID | UserColumnInstanceDPEOUserColumnId | ✅ |
+| USER_COLUMN_INSTANCE_ID | UserColumnInstanceDPEOUserColumnInstanceId | ✅ |
+| USER_ROW_ID | UserColumnInstanceDPEOUserRowId | ✅ |
+| VALUE | UserColumnInstanceDPEOValue | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — FF_USER_COLUMN_INSTANCES_F](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/ffusercolumninstancesf.html)

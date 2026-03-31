@@ -104,6 +104,246 @@ WHERE  p.TEMPLATE_ID = :p_template_id
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[eligibilityresultpvo|EligibilityResultPVO]] (HCM · BICC: 3/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | TemplatePeriodBPEOBusinessGroupId | ✅ |
+| CREATED_BY | TemplatePeriodBPEOCreatedBy | — |
+| CREATION_DATE | TemplatePeriodBPEOCreationDate | — |
+| LAST_UPDATE_DATE | TemplatePeriodBPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | TemplatePeriodBPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | TemplatePeriodBPEOLastUpdatedBy | — |
+| NOMINAL_FROM_DATE | TemplatePeriodBPEONominalFromDate | — |
+| NOMINAL_TO_DATE | TemplatePeriodBPEONominalToDate | — |
+| OBJECT_VERSION_NUMBER | TemplatePeriodBPEOObjectVersionNumber | — |
+| REVIEW_PERIOD_ID | TemplatePeriodBPEOReviewPeriodId | — |
+| TEMPLATE_DEFN_ID | TemplatePeriodBPEOTemplateDefnId | — |
+| TMPL_PERIOD_ID | TemplatePeriodBPEOTmplPeriodId | ✅ |
+
+### [[eligibilityresultsdetailspvo|EligibilityResultsDetailsPVO]] (HCM · BICC: 3/11)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | TemplatePeriodBPEOBusinessGroupId | ✅ |
+| CREATED_BY | TemplatePeriodBPEOCreatedBy | — |
+| CREATION_DATE | TemplatePeriodBPEOCreationDate | — |
+| LAST_UPDATE_DATE | TemplatePeriodBPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | TemplatePeriodBPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | TemplatePeriodBPEOLastUpdatedBy | — |
+| NOMINAL_FROM_DATE | TemplatePeriodBPEONominalFromDate | — |
+| NOMINAL_TO_DATE | TemplatePeriodBPEONominalToDate | — |
+| OBJECT_VERSION_NUMBER | TemplatePeriodBPEOObjectVersionNumber | — |
+| TEMPLATE_DEFN_ID | TemplatePeriodBPEOTemplateDefnId | — |
+| TMPL_PERIOD_ID | TemplatePeriodBPEOTmplPeriodId | ✅ |
+
+### [[performancedocratingdistributionpvo|PerformanceDocRatingDistributionPVO]] (HCM · BICC: 3/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | TemplatePeriodBPEOBusinessGroupId | ✅ |
+| CREATED_BY | TemplatePeriodBPEOCreatedBy | — |
+| CREATION_DATE | TemplatePeriodBPEOCreationDate | — |
+| LAST_UPDATE_DATE | TemplatePeriodBPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | TemplatePeriodBPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | TemplatePeriodBPEOLastUpdatedBy | — |
+| NOMINAL_FROM_DATE | TemplatePeriodBPEONominalFromDate | — |
+| NOMINAL_TO_DATE | TemplatePeriodBPEONominalToDate | — |
+| OBJECT_VERSION_NUMBER | TemplatePeriodBPEOObjectVersionNumber | — |
+| REVIEW_PERIOD_ID | TemplatePeriodBPEOReviewPeriodId | — |
+| TEMPLATE_DEFN_ID | TemplatePeriodBPEOTemplateDefnId | — |
+| TMPL_PERIOD_ID | TemplatePeriodBPEOTmplPeriodId | ✅ |
+
+### [[performancedocumentdetailspvo|PerformanceDocumentDetailsPVO]] (HCM · BICC: 1/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | BusinessGroupId1 | — |
+| CREATED_BY | CreatedBy1 | — |
+| CREATION_DATE | CreationDate1 | — |
+| LAST_UPDATE_DATE | LastUpdateDate1 | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin1 | — |
+| LAST_UPDATED_BY | LastUpdatedBy1 | — |
+| NOMINAL_FROM_DATE | NominalFromDate | — |
+| NOMINAL_TO_DATE | NominalToDate | — |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber1 | — |
+| REVIEW_PERIOD_ID | ReviewPeriodId | — |
+| TEMPLATE_DEFN_ID | TemplateDefnId1 | — |
+| TMPL_PERIOD_ID | TmplPeriodId1 | — |
+
+### [[performancedocumentspvo|PerformanceDocumentsPVO]] (HCM)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | TemplatePeriodBPEOBusinessGroupId | — |
+| CREATED_BY | TemplatePeriodBPEOCreatedBy | — |
+| CREATION_DATE | TemplatePeriodBPEOCreationDate | — |
+| LAST_UPDATE_DATE | TemplatePeriodBPEOLastUpdateDate | — |
+| LAST_UPDATE_LOGIN | TemplatePeriodBPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | TemplatePeriodBPEOLastUpdatedBy | — |
+| NOMINAL_FROM_DATE | TemplatePeriodBPEONominalFromDate | — |
+| NOMINAL_TO_DATE | TemplatePeriodBPEONominalToDate | — |
+| OBJECT_VERSION_NUMBER | TemplatePeriodBPEOObjectVersionNumber | — |
+| REVIEW_PERIOD_ID | TemplatePeriodBPEOReviewPeriodId | — |
+| TEMPLATE_DEFN_ID | TemplatePeriodBPEOTemplateDefnId | — |
+| TMPL_PERIOD_ID | TemplatePeriodBPEOTmplPeriodId | — |
+
+### [[performancedocumentstatuspvo|PerformanceDocumentStatusPVO]] (HCM · BICC: 3/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | TemplatePeriodBPEOBusinessGroupId | ✅ |
+| CREATED_BY | TemplatePeriodBPEOCreatedBy | — |
+| CREATION_DATE | TemplatePeriodBPEOCreationDate | — |
+| LAST_UPDATE_DATE | TemplatePeriodBPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | TemplatePeriodBPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | TemplatePeriodBPEOLastUpdatedBy | — |
+| NOMINAL_FROM_DATE | TemplatePeriodBPEONominalFromDate | — |
+| NOMINAL_TO_DATE | TemplatePeriodBPEONominalToDate | — |
+| OBJECT_VERSION_NUMBER | TemplatePeriodBPEOObjectVersionNumber | — |
+| REVIEW_PERIOD_ID | TemplatePeriodBPEOReviewPeriodId | — |
+| TEMPLATE_DEFN_ID | TemplatePeriodBPEOTemplateDefnId | — |
+| TMPL_PERIOD_ID | TemplatePeriodBPEOTmplPeriodId | ✅ |
+
+### [[performanceitemratingpvo|PerformanceItemRatingPVO]] (HCM · BICC: 3/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | TemplatePeriodBPEOBusinessGroupId | ✅ |
+| CREATED_BY | TemplatePeriodBPEOCreatedBy | — |
+| CREATION_DATE | TemplatePeriodBPEOCreationDate | — |
+| LAST_UPDATE_DATE | TemplatePeriodBPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | TemplatePeriodBPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | TemplatePeriodBPEOLastUpdatedBy | — |
+| NOMINAL_FROM_DATE | TemplatePeriodBPEONominalFromDate | — |
+| NOMINAL_TO_DATE | TemplatePeriodBPEONominalToDate | — |
+| OBJECT_VERSION_NUMBER | TemplatePeriodBPEOObjectVersionNumber | — |
+| REVIEW_PERIOD_ID | TemplatePeriodBPEOReviewPeriodId | — |
+| TEMPLATE_DEFN_ID | TemplatePeriodBPEOTemplateDefnId | — |
+| TMPL_PERIOD_ID | TemplatePeriodBPEOTmplPeriodId | ✅ |
+
+### [[performanceoverallratingpvo|PerformanceOverallRatingPVO]] (HCM · BICC: 3/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | TemplatePeriodBPEOBusinessGroupId | ✅ |
+| CREATED_BY | TemplatePeriodBPEOCreatedBy | — |
+| CREATION_DATE | TemplatePeriodBPEOCreationDate | — |
+| LAST_UPDATE_DATE | TemplatePeriodBPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | TemplatePeriodBPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | TemplatePeriodBPEOLastUpdatedBy | — |
+| NOMINAL_FROM_DATE | TemplatePeriodBPEONominalFromDate | — |
+| NOMINAL_TO_DATE | TemplatePeriodBPEONominalToDate | — |
+| OBJECT_VERSION_NUMBER | TemplatePeriodBPEOObjectVersionNumber | — |
+| REVIEW_PERIOD_ID | TemplatePeriodBPEOReviewPeriodId | — |
+| TEMPLATE_DEFN_ID | TemplatePeriodBPEOTemplateDefnId | — |
+| TMPL_PERIOD_ID | TemplatePeriodBPEOTmplPeriodId | ✅ |
+
+### [[performancesectionratingpvo|PerformanceSectionRatingPVO]] (HCM · BICC: 3/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | TemplatePeriodBPEOBusinessGroupId | ✅ |
+| CREATED_BY | TemplatePeriodBPEOCreatedBy | — |
+| CREATION_DATE | TemplatePeriodBPEOCreationDate | — |
+| LAST_UPDATE_DATE | TemplatePeriodBPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | TemplatePeriodBPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | TemplatePeriodBPEOLastUpdatedBy | — |
+| NOMINAL_FROM_DATE | TemplatePeriodBPEONominalFromDate | — |
+| NOMINAL_TO_DATE | TemplatePeriodBPEONominalToDate | — |
+| OBJECT_VERSION_NUMBER | TemplatePeriodBPEOObjectVersionNumber | — |
+| REVIEW_PERIOD_ID | TemplatePeriodBPEOReviewPeriodId | — |
+| TEMPLATE_DEFN_ID | TemplatePeriodBPEOTemplateDefnId | — |
+| TMPL_PERIOD_ID | TemplatePeriodBPEOTmplPeriodId | ✅ |
+
+### [[performancesubtaskstatuspvo|PerformanceSubTaskStatusPVO]] (HCM · BICC: 3/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | TemplatePeriodBPEOBusinessGroupId | ✅ |
+| CREATED_BY | TemplatePeriodBPEOCreatedBy | — |
+| CREATION_DATE | TemplatePeriodBPEOCreationDate | — |
+| LAST_UPDATE_DATE | TemplatePeriodBPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | TemplatePeriodBPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | TemplatePeriodBPEOLastUpdatedBy | — |
+| NOMINAL_FROM_DATE | TemplatePeriodBPEONominalFromDate | — |
+| NOMINAL_TO_DATE | TemplatePeriodBPEONominalToDate | — |
+| OBJECT_VERSION_NUMBER | TemplatePeriodBPEOObjectVersionNumber | — |
+| REVIEW_PERIOD_ID | TemplatePeriodBPEOReviewPeriodId | — |
+| TEMPLATE_DEFN_ID | TemplatePeriodBPEOTemplateDefnId | — |
+| TMPL_PERIOD_ID | TemplatePeriodBPEOTmplPeriodId | ✅ |
+
+### [[performancetaskstatuspvo|PerformanceTaskStatusPVO]] (HCM · BICC: 3/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | TemplatePeriodBPEOBusinessGroupId | ✅ |
+| CREATED_BY | TemplatePeriodBPEOCreatedBy | — |
+| CREATION_DATE | TemplatePeriodBPEOCreationDate | — |
+| LAST_UPDATE_DATE | TemplatePeriodBPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | TemplatePeriodBPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | TemplatePeriodBPEOLastUpdatedBy | — |
+| NOMINAL_FROM_DATE | TemplatePeriodBPEONominalFromDate | — |
+| NOMINAL_TO_DATE | TemplatePeriodBPEONominalToDate | — |
+| OBJECT_VERSION_NUMBER | TemplatePeriodBPEOObjectVersionNumber | — |
+| REVIEW_PERIOD_ID | TemplatePeriodBPEOReviewPeriodId | — |
+| TEMPLATE_DEFN_ID | TemplatePeriodBPEOTemplateDefnId | — |
+| TMPL_PERIOD_ID | TemplatePeriodBPEOTmplPeriodId | ✅ |
+
+### [[proficiencyitemratingpvo|ProficiencyItemRatingPVO]] (HCM · BICC: 3/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | TemplatePeriodBPEOBusinessGroupId | ✅ |
+| CREATED_BY | TemplatePeriodBPEOCreatedBy | — |
+| CREATION_DATE | TemplatePeriodBPEOCreationDate | — |
+| LAST_UPDATE_DATE | TemplatePeriodBPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | TemplatePeriodBPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | TemplatePeriodBPEOLastUpdatedBy | — |
+| NOMINAL_FROM_DATE | TemplatePeriodBPEONominalFromDate | — |
+| NOMINAL_TO_DATE | TemplatePeriodBPEONominalToDate | — |
+| OBJECT_VERSION_NUMBER | TemplatePeriodBPEOObjectVersionNumber | — |
+| REVIEW_PERIOD_ID | TemplatePeriodBPEOReviewPeriodId | — |
+| TEMPLATE_DEFN_ID | TemplatePeriodBPEOTemplateDefnId | — |
+| TMPL_PERIOD_ID | TemplatePeriodBPEOTmplPeriodId | ✅ |
+
+### [[templateperiodevaluationpvo|TemplatePeriodEvaluationPVO]] (HCM · BICC: 3/11)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | TemplatePeriodBPEOBusinessGroupId | ✅ |
+| CREATED_BY | TemplatePeriodBPEOCreatedBy | — |
+| CREATION_DATE | TemplatePeriodBPEOCreationDate | — |
+| LAST_UPDATE_DATE | TemplatePeriodBPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | TemplatePeriodBPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | TemplatePeriodBPEOLastUpdatedBy | — |
+| NOMINAL_FROM_DATE | TemplatePeriodBPEONominalFromDate | — |
+| NOMINAL_TO_DATE | TemplatePeriodBPEONominalToDate | — |
+| OBJECT_VERSION_NUMBER | TemplatePeriodBPEOObjectVersionNumber | — |
+| TEMPLATE_DEFN_ID | TemplatePeriodBPEOTemplateDefnId | — |
+| TMPL_PERIOD_ID | TemplatePeriodBPEOTmplPeriodId | ✅ |
+
+### [[templateperiodpvo|TemplatePeriodPVO]] (HCM · BICC: 6/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | BusinessGroupId | ✅ |
+| CREATED_BY | CreatedBy | — |
+| CREATION_DATE | CreationDate | — |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | — |
+| LAST_UPDATED_BY | LastUpdatedBy | — |
+| LOCK_MGR_SHARE_FOR_CALIB_FLAG | TemplatePeriodBPEOLockMgrShareForCalibFlag | ✅ |
+| NOMINAL_FROM_DATE | TemplatePeriodBPEONominalFromDate | ✅ |
+| NOMINAL_TO_DATE | TemplatePeriodBPEONominalToDate | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | — |
+| TEMPLATE_DEFN_ID | TemplatePeriodBPEOTemplateDefnId | — |
+| TMPL_PERIOD_ID | TmplPeriodId | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Fusion HCM Tables and Views](https://docs.oracle.com/en/cloud/saas/human-resources/25a/)

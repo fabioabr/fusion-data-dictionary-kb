@@ -115,3 +115,28 @@ WHERE  ur.USER_ID = :p_user_id
 
 - [Oracle Docs — PER_USER_ROLES](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/peruserroles.html)
 - [[hcm-module-data-dictionary]] — Dossiê do módulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[userroleextractpvo|UserRoleExtractPVO]] (HCM · BICC: 16/16)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTIVE_FLAG | ActiveFlag | ✅ |
+| BUSINESS_GROUP_ID | BusinessGroupId | ✅ |
+| CREATED_BY | CreatedBy | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| END_DATE | EndDate | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | LastUpdatedBy | ✅ |
+| METHOD_CODE | MethodCode | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | ✅ |
+| ROLE_GUID | RoleGuid | ✅ |
+| ROLE_ID | RoleId | ✅ |
+| START_DATE | StartDate | ✅ |
+| TERMINATED_FLAG | TerminatedFlag | ✅ |
+| USER_ID | UserId | ✅ |
+| USER_ROLE_ID | UserRoleId | ✅ |

@@ -110,6 +110,35 @@ ORDER BY ca.SEVERITY;
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[alertspvo|AlertsPVO]] (HCM · BICC: 5/20)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ALERT_DESCRIPTION | CalcAlertsPEOAlertDescription | ✅ |
+| ALERT_ID | CalcAlertsPEOAlertId | — |
+| ALERT_KEY | CalcAlertsPEOAlertKey | — |
+| ALERT_NAME | CalcAlertsPEOAlertName | ✅ |
+| ALERT_TYPE | CalcAlertsPEOAlertType | ✅ |
+| BUSINESS_GROUP_ID | CalcAlertsPEOBusinessGroupId | — |
+| CREATED_BY | CalcAlertsPEOCreatedBy | — |
+| CREATION_DATE | CalcAlertsPEOCreationDate | — |
+| ENABLED_FLAG | CalcAlertsPEOEnabledFlag | ✅ |
+| KEY_TYPE | CalcAlertsPEOKeyType | — |
+| LAST_UPDATE_DATE | CalcAlertsPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | CalcAlertsPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | CalcAlertsPEOLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | CalcAlertsPEOObjectVersionNumber | — |
+| PARTI_PROCESS_ENA | CalcAlertsPEOPartiProcessEna | — |
+| QUICK_ALERT_CODE | CalcAlertsPEOQuickAlertCode | — |
+| QUICK_ALERT_FLAG | CalcAlertsPEOQuickAlertFlag | — |
+| REFRESH_PROCESS_ENA | CalcAlertsPEORefreshProcessEna | — |
+| WRKSHT_SAVE_ENA | CalcAlertsPEOWrkshtSaveEna | — |
+| WRKSHT_TAB_OUT_ENA | CalcAlertsPEOWrkshtTabOutEna | — |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — CMP_CALC_ALERTS_VL](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/cmpcalcalertsvl.html)

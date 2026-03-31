@@ -114,6 +114,27 @@ WHERE  tl.LANGUAGE = USERENV('LANG');
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[documenttypepvo|DocumentTypePVO]] (HCM · BICC: 11/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | BusinessGroupId | ✅ |
+| CREATED_BY | CreatedBy | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| DATE_FROM | DocumentTypeBPEODateFrom | ✅ |
+| DATE_TO | DocumentTypeBPEODateTo | ✅ |
+| DOC_TYPE_ID | DocTypeId | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | LastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | — |
+| SELECT_MGR_ALLOWED_FLAG | DocumentTypeBPEOSelectMgrAllowedFlag | ✅ |
+| STATUS_CODE | DocumentTypeBPEOStatusCode | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — HRA_DOC_TYPES_B](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/hradoctypesb.html)

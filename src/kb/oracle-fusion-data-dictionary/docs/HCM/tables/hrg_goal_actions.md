@@ -99,6 +99,85 @@ ORDER BY a.SEQUENCE_NUMBER;
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[goalactionextractpvo|GoalActionExtractPVO]] (HCM · BICC: 18/18)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_NAME | ActionName | ✅ |
+| ACTION_TYPE_CODE | ActionTypeCode | ✅ |
+| ACTION_URL | ActionUrl | ✅ |
+| BUSINESS_GROUP_ID | BusinessGroupId | ✅ |
+| COMMENTS | Comments | ✅ |
+| CREATED_BY | CreatedBy | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| GOAL_ACTION_ID | GoalActionId | ✅ |
+| GOAL_ID | GoalId | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | LastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | ✅ |
+| PERCENT_COMPLETE_CODE | PercentCompleteCode | ✅ |
+| PRIORITY_CODE | PriorityCode | ✅ |
+| START_DATE | StartDate | ✅ |
+| STATUS_CODE | StatusCode | ✅ |
+| TARGET_COMPLETION_DATE | TargetCompletionDate | ✅ |
+
+### [[taskpvo|TaskPVO]] (HCM · BICC: 18/24)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_NAME | GoalActionPEOActionName | ✅ |
+| ACTION_TYPE_CODE | GoalActionPEOActionTypeCode | ✅ |
+| ACTION_URL | GoalActionPEOActionUrl | ✅ |
+| ACTUAL_COMPLETION_DATE | GoalActionPEOActualCompletionDate | — |
+| BUSINESS_GROUP_ID | GoalActionPEOBusinessGroupId | ✅ |
+| COMMENTS | GoalActionPEOComments | ✅ |
+| COMPLETION_STATUS | GoalActionPEOCompletionStatus | — |
+| CREATED_BY | GoalActionPEOCreatedBy | ✅ |
+| CREATION_DATE | GoalActionPEOCreationDate | ✅ |
+| DESCRIPTION | GoalActionPEODescription | — |
+| GOAL_ACTION_ID | GoalActionId | ✅ |
+| GOAL_ID | GoalActionPEOGoalId | ✅ |
+| LAST_UPDATE_DATE | GoalActionPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | GoalActionPEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | GoalActionPEOLastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | GoalActionPEOObjectVersionNumber | ✅ |
+| PERCENT_COMPLETE_CODE | GoalActionPEOPercentCompleteCode | ✅ |
+| PRIORITY_CODE | GoalActionPEOPriorityCode | ✅ |
+| START_DATE | GoalActionPEOStartDate | ✅ |
+| STATUS_CODE | GoalActionPEOStatusCode | ✅ |
+| TARGET_COMPLETION_DATE | GoalActionPEOTargetCompletionDate | ✅ |
+| TARGET_TYPE | GoalActionPEOTargetType | — |
+| TARGET_VALUE | GoalActionPEOTargetValue | — |
+| UOM_CODE | GoalActionPEOUomCode | — |
+
+### [[taskvaluespvo|TaskValuesPVO]] (HCM · BICC: 16/18)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_NAME | GoalActionPEOActionName | ✅ |
+| ACTION_TYPE_CODE | GoalActionPEOActionTypeCode | ✅ |
+| ACTION_URL | GoalActionPEOActionUrl | — |
+| BUSINESS_GROUP_ID | GoalActionPEOBusinessGroupId | ✅ |
+| COMMENTS | GoalActionPEOComments | ✅ |
+| CREATED_BY | GoalActionPEOCreatedBy | ✅ |
+| CREATION_DATE | GoalActionPEOCreationDate | ✅ |
+| GOAL_ACTION_ID | GoalActionId | ✅ |
+| GOAL_ID | GoalActionPEOGoalId | ✅ |
+| LAST_UPDATE_DATE | GoalActionPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | GoalActionPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | GoalActionPEOLastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | GoalActionPEOObjectVersionNumber | ✅ |
+| PERCENT_COMPLETE_CODE | GoalActionPEOPercentCompleteCode | ✅ |
+| PRIORITY_CODE | GoalActionPEOPriorityCode | ✅ |
+| START_DATE | GoalActionPEOStartDate | ✅ |
+| STATUS_CODE | GoalActionPEOStatusCode | ✅ |
+| TARGET_COMPLETION_DATE | GoalActionPEOTargetCompletionDate | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Fusion HCM Tables and Views](https://docs.oracle.com/en/cloud/saas/human-resources/25a/)

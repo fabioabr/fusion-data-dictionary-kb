@@ -99,3 +99,21 @@ WHERE  pli.DAYS_SINCE_INTERACTION > 30;
 
 - [Oracle Docs -- IRC_PRSPT_LAST_INTERACTION_V](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/ircprsptlastinteractionv.html)
 - [[hcm-module-data-dictionary]] -- Dossie do modulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[prospectspvo|ProspectsPVO]] (HCM)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| INTERACTION_DATE | ProspectLastInteractionPEOInteractionDate | — |
+| INTERACTION_ID | ProspectLastInteractionPEOInteractionId | — |
+
+### [[prospectsviewallpvo|ProspectsViewAllPVO]] (HCM)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| INTERACTION_DATE | ProspectLastInteractionPEOInteractionDate | — |
+| INTERACTION_ID | ProspectLastInteractionPEOInteractionId | — |

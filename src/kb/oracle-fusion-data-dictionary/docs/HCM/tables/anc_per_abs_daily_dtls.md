@@ -39,7 +39,6 @@ updated_at: 2026-03-25
 
 Armazena os **detalhes diários** de cada ausência registrada. Cada registro representa um dia específico dentro de um período de ausência, com a duração (parcial ou integral) e outros detalhes granulares.
 
-
 ---
 
 ## 🧠 Propósito de Negócio
@@ -112,6 +111,34 @@ ORDER BY dd.ABSENCE_DATE;
 - Para ausências de dia inteiro, `DURATION = 1` e `START_TIME`/`END_TIME` são nulos.
 - Para ausências parciais, `START_TIME` e `END_TIME` indicam o período específico.
 - A soma dos `DURATION` de todos os detalhes diários deve coincidir com a duração total da entrada de ausência.
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[personabsdailydetailpvo|PersonAbsDailyDetailPVO]] (GL · BICC: 10/19)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ABS_DATE | AbsDate | — |
+| ABS_DAYS | AbsDays | ✅ |
+| ABS_HOURS | AbsHours | ✅ |
+| ABSENCE_PLAN_ID | AbsencePlanId | — |
+| ABSENCE_TYPE_ID | AbsenceTypeId | — |
+| ABSENCE_TYPE_REASON_ID | AbsenceTypeReasonId | — |
+| ASSIGNMENT_ID | AssignmentId | — |
+| CREATED_BY | CreatedBy | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| ENTERPRISE_ID | EnterpriseId | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | — |
+| LAST_UPDATED_BY | LastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | — |
+| PER_ABS_DAILY_DTL_ID | PerAbsDailyDtlId | ✅ |
+| PER_ABSENCE_ENTRY_ID | PerAbsenceEntryId | ✅ |
+| PERSON_ID | PersonId | — |
+| SCHEDULED_UNITS | ScheduledUnits | — |
+| UOM | Uom | ✅ |
 
 ---
 

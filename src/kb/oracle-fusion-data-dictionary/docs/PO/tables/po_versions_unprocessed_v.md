@@ -41,7 +41,6 @@ View com **versoes de PO nao processadas** por sistemas downstream. Identifica a
 > [!note] Sufixo _V
 > O sufixo `_V` indica que este objeto e uma **view**, projetada para simplificar consultas.
 
-
 ---
 
 ## 🧠 Propósito de Negócio
@@ -90,13 +89,221 @@ FROM   PO_VERSIONS_UNPROCESSED_V
 ORDER BY CREATION_DATE;
 ```
 
-
 ---
 
 ## 🔒 Observações
 
 - Utilizada por processos de integracao.
 - Deve ser consultada periodicamente por jobs de sync.
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[draftpurchaseorderdistributionpvo|DraftPurchaseOrderDistributionPVO]] (PO · BICC: 6/36)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACCEPTED_DATE | PoVersionAcceptedDate | — |
+| APPROVED_DATE | PoVersionApprovedDate | — |
+| CANCEL_BACKING_REQ_FLAG | PoVersionCancelBackingReqFlag | — |
+| CANCEL_DOC_FLAG | PoVersionCancelDocFlag | — |
+| CHANGE_ORDER_DESC | PoVersionChangeOrderDesc | ✅ |
+| CHANGE_ORDER_STATUS | PoVersionChangeOrderStatus | ✅ |
+| CHANGE_ORDER_TYPE | PoVersionChangeOrderType | — |
+| CO_CANCELED_BY_ROLE | PoVersionCoCanceledByRole | — |
+| CO_CANCELED_BY_USER_ID | PoVersionCoCanceledByUserId | — |
+| CO_CANCELED_FLAG | PoVersionCoCanceledFlag | ✅ |
+| CO_NUM | PoVersionCoNum | ✅ |
+| CO_SEQUENCE | PoVersionCoSequence | — |
+| COMMUNICATED_DATE | PoVersionCommunicatedDate | — |
+| COMMUNICATED_TO_SUPPLIER | PoVersionCommunicatedToSupplier | — |
+| CREATION_DATE | PoVersionCreationDate | — |
+| DOCUMENT_DATE | PoVersionDocumentDate | — |
+| EXTERNAL_SYSTEM_FLAG | PoVersionExternalSystemFlag | — |
+| FUNDS_STATUS | PoVersionFundsStatus | — |
+| JOB_DEFINITION_NAME | PoVersionJobDefinitionName | — |
+| JOB_DEFINITION_PACKAGE | PoVersionJobDefinitionPackage | — |
+| MODIFIED_FLAG | PoVersionModifiedFlag | — |
+| ONLINE_REPORT_ID | PoVersionOnlineReportId | — |
+| ORIGINATOR_ID | PoVersionOriginatorId | — |
+| ORIGINATOR_ROLE | PoVersionOriginatorRole | — |
+| PENDING_RESPONSE_ROLE | PoVersionPendingResponseRole | — |
+| PO_HEADER_ID | PoVersionPoHeaderId | — |
+| PROCESSED_DATE | PoVersionProcessedDate | — |
+| PROGRAM_APP_NAME | PoVersionProgramAppName | — |
+| PROGRAM_NAME | PoVersionProgramName | — |
+| REJECTED_FLAG | PoVersionRejectedFlag | ✅ |
+| REQUEST_DATE | PoVersionRequestDate | — |
+| REQUEST_ID | PoVersionRequestId | — |
+| REVISION_NUM | PoVersionRevisionNum | — |
+| SUBMITTED_DATE | PoVersionSubmittedDate | — |
+| VERSION_ID | PoVersionVersionId | — |
+| WITHDRAWN_FLAG | PoVersionWithdrawnFlag | ✅ |
+
+### [[draftpurchaseorderdistributionrefpvo|DraftPurchaseOrderDistributionRefPVO]] (PO)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACCEPTED_DATE | PoVersionAcceptedDate | — |
+| APPROVED_DATE | PoVersionApprovedDate | — |
+| CANCEL_BACKING_REQ_FLAG | PoVersionCancelBackingReqFlag | — |
+| CANCEL_DOC_FLAG | PoVersionCancelDocFlag | — |
+| CHANGE_ORDER_DESC | PoVersionChangeOrderDesc | — |
+| CHANGE_ORDER_STATUS | PoVersionChangeOrderStatus | — |
+| CHANGE_ORDER_TYPE | PoVersionChangeOrderType | — |
+| CO_CANCELED_BY_ROLE | PoVersionCoCanceledByRole | — |
+| CO_CANCELED_BY_USER_ID | PoVersionCoCanceledByUserId | — |
+| CO_CANCELED_FLAG | PoVersionCoCanceledFlag | — |
+| CO_NUM | PoVersionCoNum | — |
+| CO_SEQUENCE | PoVersionCoSequence | — |
+| COMMUNICATED_DATE | PoVersionCommunicatedDate | — |
+| COMMUNICATED_TO_SUPPLIER | PoVersionCommunicatedToSupplier | — |
+| CREATION_DATE | PoVersionCreationDate | — |
+| DOCUMENT_DATE | PoVersionDocumentDate | — |
+| EXTERNAL_SYSTEM_FLAG | PoVersionExternalSystemFlag | — |
+| FUNDS_STATUS | PoVersionFundsStatus | — |
+| JOB_DEFINITION_NAME | PoVersionJobDefinitionName | — |
+| JOB_DEFINITION_PACKAGE | PoVersionJobDefinitionPackage | — |
+| MODIFIED_FLAG | PoVersionModifiedFlag | — |
+| ONLINE_REPORT_ID | PoVersionOnlineReportId | — |
+| ORIGINATOR_ID | PoVersionOriginatorId | — |
+| ORIGINATOR_ROLE | PoVersionOriginatorRole | — |
+| PENDING_RESPONSE_ROLE | PoVersionPendingResponseRole | — |
+| PO_HEADER_ID | PoVersionPoHeaderId | — |
+| PROCESSED_DATE | PoVersionProcessedDate | — |
+| PROGRAM_APP_NAME | PoVersionProgramAppName | — |
+| PROGRAM_NAME | PoVersionProgramName | — |
+| REJECTED_FLAG | PoVersionRejectedFlag | — |
+| REQUEST_DATE | PoVersionRequestDate | — |
+| REQUEST_ID | PoVersionRequestId | — |
+| REVISION_NUM | PoVersionRevisionNum | — |
+| SUBMITTED_DATE | PoVersionSubmittedDate | — |
+| VERSION_ID | PoVersionVersionId | — |
+| WITHDRAWN_FLAG | PoVersionWithdrawnFlag | — |
+
+### [[draftpurchasingdocumentheaderpvo|DraftPurchasingDocumentHeaderPVO]] (PO · BICC: 6/36)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACCEPTED_DATE | PoVersionAcceptedDate | — |
+| APPROVED_DATE | PoVersionApprovedDate | — |
+| CANCEL_BACKING_REQ_FLAG | PoVersionCancelBackingReqFlag | — |
+| CANCEL_DOC_FLAG | PoVersionCancelDocFlag | — |
+| CHANGE_ORDER_DESC | PoVersionChangeOrderDesc | ✅ |
+| CHANGE_ORDER_STATUS | PoVersionChangeOrderStatus | ✅ |
+| CHANGE_ORDER_TYPE | PoVersionChangeOrderType | — |
+| CO_CANCELED_BY_ROLE | PoVersionCoCanceledByRole | — |
+| CO_CANCELED_BY_USER_ID | PoVersionCoCanceledByUserId | — |
+| CO_CANCELED_FLAG | PoVersionCoCanceledFlag | ✅ |
+| CO_NUM | PoVersionCoNum | ✅ |
+| CO_SEQUENCE | PoVersionCoSequence | — |
+| COMMUNICATED_DATE | PoVersionCommunicatedDate | — |
+| COMMUNICATED_TO_SUPPLIER | PoVersionCommunicatedToSupplier | — |
+| CREATION_DATE | PoVersionCreationDate | — |
+| DOCUMENT_DATE | PoVersionDocumentDate | — |
+| EXTERNAL_SYSTEM_FLAG | ExternalSystemFlag | — |
+| FUNDS_STATUS | PoVersionFundsStatus | — |
+| JOB_DEFINITION_NAME | PoVersionJobDefinitionName | — |
+| JOB_DEFINITION_PACKAGE | PoVersionJobDefinitionPackage | — |
+| MODIFIED_FLAG | PoVersionModifiedFlag | — |
+| ONLINE_REPORT_ID | PoVersionOnlineReportId | — |
+| ORIGINATOR_ID | PoVersionOriginatorId | — |
+| ORIGINATOR_ROLE | PoVersionOriginatorRole | — |
+| PENDING_RESPONSE_ROLE | PoVersionPendingResponseRole | — |
+| PO_HEADER_ID | PoVersionPoHeaderId | — |
+| PROCESSED_DATE | PoVersionProcessedDate | — |
+| PROGRAM_APP_NAME | PoVersionProgramAppName | — |
+| PROGRAM_NAME | PoVersionProgramName | — |
+| REJECTED_FLAG | PoVersionRejectedFlag | ✅ |
+| REQUEST_DATE | PoVersionRequestDate | — |
+| REQUEST_ID | PoVersionRequestId | — |
+| REVISION_NUM | PoVersionRevisionNum | — |
+| SUBMITTED_DATE | PoVersionSubmittedDate | — |
+| VERSION_ID | PoVersionVersionId | — |
+| WITHDRAWN_FLAG | PoVersionWithdrawnFlag | ✅ |
+
+### [[draftpurchasingdocumentlinelocationpvo|DraftPurchasingDocumentLineLocationPVO]] (PO · BICC: 6/36)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACCEPTED_DATE | PoVersionAcceptedDate | — |
+| APPROVED_DATE | PoVersionApprovedDate | — |
+| CANCEL_BACKING_REQ_FLAG | PoVersionCancelBackingReqFlag | — |
+| CANCEL_DOC_FLAG | PoVersionCancelDocFlag | — |
+| CHANGE_ORDER_DESC | PoVersionChangeOrderDesc | ✅ |
+| CHANGE_ORDER_STATUS | PoVersionChangeOrderStatus | ✅ |
+| CHANGE_ORDER_TYPE | PoVersionChangeOrderType | — |
+| CO_CANCELED_BY_ROLE | PoVersionCoCanceledByRole | — |
+| CO_CANCELED_BY_USER_ID | PoVersionCoCanceledByUserId | — |
+| CO_CANCELED_FLAG | PoVersionCoCanceledFlag | ✅ |
+| CO_NUM | PoVersionCoNum | ✅ |
+| CO_SEQUENCE | PoVersionCoSequence | — |
+| COMMUNICATED_DATE | PoVersionCommunicatedDate | — |
+| COMMUNICATED_TO_SUPPLIER | PoVersionCommunicatedToSupplier | — |
+| CREATION_DATE | PoVersionCreationDate | — |
+| DOCUMENT_DATE | PoVersionDocumentDate | — |
+| EXTERNAL_SYSTEM_FLAG | PoVersionExternalSystemFlag | — |
+| FUNDS_STATUS | PoVersionFundsStatus | — |
+| JOB_DEFINITION_NAME | PoVersionJobDefinitionName | — |
+| JOB_DEFINITION_PACKAGE | PoVersionJobDefinitionPackage | — |
+| MODIFIED_FLAG | PoVersionModifiedFlag | — |
+| ONLINE_REPORT_ID | PoVersionOnlineReportId | — |
+| ORIGINATOR_ID | PoVersionOriginatorId | — |
+| ORIGINATOR_ROLE | PoVersionOriginatorRole | — |
+| PENDING_RESPONSE_ROLE | PoVersionPendingResponseRole | — |
+| PO_HEADER_ID | PoVersionPoHeaderId | — |
+| PROCESSED_DATE | PoVersionProcessedDate | — |
+| PROGRAM_APP_NAME | PoVersionProgramAppName | — |
+| PROGRAM_NAME | PoVersionProgramName | — |
+| REJECTED_FLAG | PoVersionRejectedFlag | ✅ |
+| REQUEST_DATE | PoVersionRequestDate | — |
+| REQUEST_ID | PoVersionRequestId | — |
+| REVISION_NUM | PoVersionRevisionNum | — |
+| SUBMITTED_DATE | PoVersionSubmittedDate | — |
+| VERSION_ID | PoVersionVersionId | — |
+| WITHDRAWN_FLAG | PoVersionWithdrawnFlag | ✅ |
+
+### [[draftpurchasingdocumentlinepvo|DraftPurchasingDocumentLinePVO]] (PO · BICC: 6/36)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACCEPTED_DATE | PoVersionAcceptedDate | — |
+| APPROVED_DATE | PoVersionApprovedDate | — |
+| CANCEL_BACKING_REQ_FLAG | PoVersionCancelBackingReqFlag | — |
+| CANCEL_DOC_FLAG | PoVersionCancelDocFlag | — |
+| CHANGE_ORDER_DESC | PoVersionChangeOrderDesc | ✅ |
+| CHANGE_ORDER_STATUS | PoVersionChangeOrderStatus | ✅ |
+| CHANGE_ORDER_TYPE | PoVersionChangeOrderType | — |
+| CO_CANCELED_BY_ROLE | PoVersionCoCanceledByRole | — |
+| CO_CANCELED_BY_USER_ID | PoVersionCoCanceledByUserId | — |
+| CO_CANCELED_FLAG | PoVersionCoCanceledFlag | ✅ |
+| CO_NUM | PoVersionCoNum | ✅ |
+| CO_SEQUENCE | PoVersionCoSequence | — |
+| COMMUNICATED_DATE | PoVersionCommunicatedDate | — |
+| COMMUNICATED_TO_SUPPLIER | PoVersionCommunicatedToSupplier | — |
+| CREATION_DATE | PoVersionCreationDate | — |
+| DOCUMENT_DATE | PoVersionDocumentDate | — |
+| EXTERNAL_SYSTEM_FLAG | PoVersionExternalSystemFlag | — |
+| FUNDS_STATUS | PoVersionFundsStatus | — |
+| JOB_DEFINITION_NAME | PoVersionJobDefinitionName | — |
+| JOB_DEFINITION_PACKAGE | PoVersionJobDefinitionPackage | — |
+| MODIFIED_FLAG | PoVersionModifiedFlag | — |
+| ONLINE_REPORT_ID | PoVersionOnlineReportId | — |
+| ORIGINATOR_ID | PoVersionOriginatorId | — |
+| ORIGINATOR_ROLE | PoVersionOriginatorRole | — |
+| PENDING_RESPONSE_ROLE | PoVersionPendingResponseRole | — |
+| PO_HEADER_ID | PoVersionPoHeaderId | — |
+| PROCESSED_DATE | PoVersionProcessedDate | — |
+| PROGRAM_APP_NAME | PoVersionProgramAppName | — |
+| PROGRAM_NAME | PoVersionProgramName | — |
+| REJECTED_FLAG | PoVersionRejectedFlag | ✅ |
+| REQUEST_DATE | PoVersionRequestDate | — |
+| REQUEST_ID | PoVersionRequestId | — |
+| REVISION_NUM | PoVersionRevisionNum | — |
+| SUBMITTED_DATE | PoVersionSubmittedDate | — |
+| VERSION_ID | PoVersionVersionId | — |
+| WITHDRAWN_FLAG | PoVersionWithdrawnFlag | ✅ |
 
 ---
 

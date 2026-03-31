@@ -38,7 +38,6 @@ updated_at: 2026-03-25
 
 Armazena os **valores de atributos descritivos de itens** em linhas de PO. Permite atributos customizaveis e informacoes de catalogo.
 
-
 ---
 
 ## 🧠 Propósito de Negócio
@@ -93,7 +92,6 @@ FROM   PO_ATTRIBUTE_VALUES
 WHERE  PO_LINE_ID = :p_line_id;
 ```
 
-
 ---
 
 ## 🔒 Observações
@@ -101,6 +99,186 @@ WHERE  PO_LINE_ID = :p_line_id;
 - Tabela de extensao para catalogo/iProcurement.
 - Registros criados automaticamente durante punch-out.
 - Complementa `PO_LINES_ALL`.
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[agreementlinepvo|AgreementLinePVO]] (PO · BICC: 10/24)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ATTACHMENT_URL | PurchasingAttributeValueAttachmentUrl | ✅ |
+| ATTRIBUTE_VALUES_ID | PurchasingAttributeValueAttributeValuesId | — |
+| AVAILABILITY | PurchasingAttributeValueAvailability | ✅ |
+| CREATED_BY | PurchasingAttributeValueCreatedBy | — |
+| CREATION_DATE | PurchasingAttributeValueCreationDate | — |
+| JOB_DEFINITION_NAME | PurchasingAttributeValueJobDefinitionName | — |
+| JOB_DEFINITION_PACKAGE | PurchasingAttributeValueJobDefinitionPackage | — |
+| LAST_UPDATE_DATE | PurchasingAttributeValueLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | PurchasingAttributeValueLastUpdateLogin | — |
+| LAST_UPDATED_BY | PurchasingAttributeValueLastUpdatedBy | — |
+| LAST_UPDATED_PROGRAM | PurchasingAttributeValueLastUpdatedProgram | — |
+| LEAD_TIME | PurchasingAttributeValueLeadTime | ✅ |
+| MANUFACTURER_PART_NUM | PurchasingAttributeValueManufacturerPartNum | ✅ |
+| MANUFACTURER_URL | PurchasingAttributeValueManufacturerUrl | ✅ |
+| OBJECT_VERSION_NUMBER | PurchasingAttributeValueObjectVersionNumber | — |
+| PICTURE | PurchasingAttributeValuePicture | ✅ |
+| PO_HEADER_ID | PurchasingAttributeValuePoHeaderId | — |
+| PO_LINE_ID | PurchasingAttributeValuePoLineId | — |
+| PRC_BU_ID | PurchasingAttributeValuePrcBuId | — |
+| REBUILD_SEARCH_INDEX_FLAG | PurchasingAttributeValueRebuildSearchIndexFlag | — |
+| REQUEST_ID | PurchasingAttributeValueRequestId | — |
+| SUPPLIER_URL | PurchasingAttributeValueSupplierUrl | ✅ |
+| THUMBNAIL_IMAGE | PurchasingAttributeValueThumbnailImage | ✅ |
+| UNSPSC | PurchasingAttributeValueUnspsc | ✅ |
+
+### [[agreementpricebreakpvo|AgreementPriceBreakPVO]] (PO · BICC: 10/24)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ATTACHMENT_URL | PurchasingAttributeValueAttachmentUrl | ✅ |
+| ATTRIBUTE_VALUES_ID | PurchasingAttributeValueAttributeValuesId | — |
+| AVAILABILITY | PurchasingAttributeValueAvailability | ✅ |
+| CREATED_BY | PurchasingAttributeValueCreatedBy | — |
+| CREATION_DATE | PurchasingAttributeValueCreationDate | — |
+| JOB_DEFINITION_NAME | PurchasingAttributeValueJobDefinitionName | — |
+| JOB_DEFINITION_PACKAGE | PurchasingAttributeValueJobDefinitionPackage | — |
+| LAST_UPDATE_DATE | PurchasingAttributeValueLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | PurchasingAttributeValueLastUpdateLogin | — |
+| LAST_UPDATED_BY | PurchasingAttributeValueLastUpdatedBy | — |
+| LAST_UPDATED_PROGRAM | PurchasingAttributeValueLastUpdatedProgram | — |
+| LEAD_TIME | PurchasingAttributeValueLeadTime | ✅ |
+| MANUFACTURER_PART_NUM | PurchasingAttributeValueManufacturerPartNum | ✅ |
+| MANUFACTURER_URL | PurchasingAttributeValueManufacturerUrl | ✅ |
+| OBJECT_VERSION_NUMBER | PurchasingAttributeValueObjectVersionNumber | — |
+| PICTURE | PurchasingAttributeValuePicture | ✅ |
+| PO_HEADER_ID | PurchasingAttributeValuePoHeaderId | — |
+| PO_LINE_ID | PurchasingAttributeValuePoLineId | — |
+| PRC_BU_ID | PurchasingAttributeValuePrcBuId | — |
+| REBUILD_SEARCH_INDEX_FLAG | PurchasingAttributeValueRebuildSearchIndexFlag | — |
+| REQUEST_ID | PurchasingAttributeValueRequestId | — |
+| SUPPLIER_URL | PurchasingAttributeValueSupplierUrl | ✅ |
+| THUMBNAIL_IMAGE | PurchasingAttributeValueThumbnailImage | ✅ |
+| UNSPSC | PurchasingAttributeValueUnspsc | ✅ |
+
+### [[purchasingattributevaluesextractpvo|PurchasingAttributeValuesExtractPVO]] (PO · BICC: 26/26)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ATTACHMENT_URL | AttachmentUrl | ✅ |
+| ATTRIBUTE_VALUES_ID | AttributeValuesId | ✅ |
+| AVAILABILITY | Availability | ✅ |
+| CREATED_BY | CreatedBy | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| JOB_DEFINITION_NAME | JobDefinitionName | ✅ |
+| JOB_DEFINITION_PACKAGE | JobDefinitionPackage | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | LastUpdatedBy | ✅ |
+| LAST_UPDATED_PROGRAM | LastUpdatedProgram | ✅ |
+| LEAD_TIME | LeadTime | ✅ |
+| MANUFACTURER_PART_NUM | ManufacturerPartNum | ✅ |
+| MANUFACTURER_URL | ManufacturerUrl | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | ✅ |
+| PACKAGING_STRING | PackagingString | ✅ |
+| PICTURE | Picture | ✅ |
+| PO_HEADER_ID | PoHeaderId | ✅ |
+| PO_LINE_ID | PoLineId | ✅ |
+| PRC_BU_ID | PrcBuId | ✅ |
+| REBUILD_SEARCH_INDEX_FLAG | RebuildSearchIndexFlag | ✅ |
+| REQUEST_ID | RequestId | ✅ |
+| ROUNDING_FACTOR | RoundingFactor | ✅ |
+| SUPPLIER_URL | SupplierUrl | ✅ |
+| THUMBNAIL_IMAGE | ThumbnailImage | ✅ |
+| UNSPSC | Unspsc | ✅ |
+
+### [[purchasingdocumentlinepvo|PurchasingDocumentLinePVO]] (PO · BICC: 1/24)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ATTACHMENT_URL | PurchasingAttributeValueAttachmentUrl | — |
+| ATTRIBUTE_VALUES_ID | PurchasingAttributeValueAttributeValuesId | — |
+| AVAILABILITY | PurchasingAttributeValueAvailability | — |
+| CREATED_BY | PurchasingAttributeValueCreatedBy | — |
+| CREATION_DATE | PurchasingAttributeValueCreationDate | — |
+| JOB_DEFINITION_NAME | PurchasingAttributeValueJobDefinitionName | — |
+| JOB_DEFINITION_PACKAGE | PurchasingAttributeValueJobDefinitionPackage | — |
+| LAST_UPDATE_DATE | PurchasingAttributeValueLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | PurchasingAttributeValueLastUpdateLogin | — |
+| LAST_UPDATED_BY | PurchasingAttributeValueLastUpdatedBy | — |
+| LAST_UPDATED_PROGRAM | PurchasingAttributeValueLastUpdatedProgram | — |
+| LEAD_TIME | PurchasingAttributeValueLeadTime | — |
+| MANUFACTURER_PART_NUM | PurchasingAttributeValueManufacturerPartNum | — |
+| MANUFACTURER_URL | PurchasingAttributeValueManufacturerUrl | — |
+| OBJECT_VERSION_NUMBER | PurchasingAttributeValueObjectVersionNumber | — |
+| PICTURE | PurchasingAttributeValuePicture | — |
+| PO_HEADER_ID | PurchasingAttributeValuePoHeaderId | — |
+| PO_LINE_ID | PurchasingAttributeValuePoLineId | — |
+| PRC_BU_ID | PurchasingAttributeValuePrcBuId | — |
+| REBUILD_SEARCH_INDEX_FLAG | PurchasingAttributeValueRebuildSearchIndexFlag | — |
+| REQUEST_ID | PurchasingAttributeValueRequestId | — |
+| SUPPLIER_URL | PurchasingAttributeValueSupplierUrl | — |
+| THUMBNAIL_IMAGE | PurchasingAttributeValueThumbnailImage | — |
+| UNSPSC | PurchasingAttributeValueUnspsc | — |
+
+### [[standardlinepvo|StandardLinePVO]] (PO)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ATTACHMENT_URL | PurchasingAttributeValueAttachmentUrl | — |
+| ATTRIBUTE_VALUES_ID | PurchasingAttributeValueAttributeValuesId | — |
+| AVAILABILITY | PurchasingAttributeValueAvailability | — |
+| CREATED_BY | PurchasingAttributeValueCreatedBy | — |
+| CREATION_DATE | PurchasingAttributeValueCreationDate | — |
+| JOB_DEFINITION_NAME | PurchasingAttributeValueJobDefinitionName | — |
+| JOB_DEFINITION_PACKAGE | PurchasingAttributeValueJobDefinitionPackage | — |
+| LAST_UPDATE_DATE | PurchasingAttributeValueLastUpdateDate | — |
+| LAST_UPDATE_LOGIN | PurchasingAttributeValueLastUpdateLogin | — |
+| LAST_UPDATED_BY | PurchasingAttributeValueLastUpdatedBy | — |
+| LAST_UPDATED_PROGRAM | PurchasingAttributeValueLastUpdatedProgram | — |
+| LEAD_TIME | PurchasingAttributeValueLeadTime | — |
+| MANUFACTURER_PART_NUM | PurchasingAttributeValueManufacturerPartNum | — |
+| MANUFACTURER_URL | PurchasingAttributeValueManufacturerUrl | — |
+| OBJECT_VERSION_NUMBER | PurchasingAttributeValueObjectVersionNumber | — |
+| PICTURE | PurchasingAttributeValuePicture | — |
+| PO_HEADER_ID | PurchasingAttributeValuePoHeaderId | — |
+| PO_LINE_ID | PurchasingAttributeValuePoLineId | — |
+| PRC_BU_ID | PurchasingAttributeValuePrcBuId | — |
+| REBUILD_SEARCH_INDEX_FLAG | PurchasingAttributeValueRebuildSearchIndexFlag | — |
+| REQUEST_ID | PurchasingAttributeValueRequestId | — |
+| SUPPLIER_URL | PurchasingAttributeValueSupplierUrl | — |
+| THUMBNAIL_IMAGE | PurchasingAttributeValueThumbnailImage | — |
+| UNSPSC | PurchasingAttributeValueUnspsc | — |
+
+### [[standardshipmentpvo|StandardShipmentPVO]] (PO)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ATTACHMENT_URL | PurchasingAttributeValueAttachmentUrl | — |
+| ATTRIBUTE_VALUES_ID | PurchasingAttributeValueAttributeValuesId | — |
+| AVAILABILITY | PurchasingAttributeValueAvailability | — |
+| CREATED_BY | PurchasingAttributeValueCreatedBy | — |
+| CREATION_DATE | PurchasingAttributeValueCreationDate | — |
+| JOB_DEFINITION_NAME | PurchasingAttributeValueJobDefinitionName | — |
+| JOB_DEFINITION_PACKAGE | PurchasingAttributeValueJobDefinitionPackage | — |
+| LAST_UPDATE_DATE | PurchasingAttributeValueLastUpdateDate | — |
+| LAST_UPDATE_LOGIN | PurchasingAttributeValueLastUpdateLogin | — |
+| LAST_UPDATED_BY | PurchasingAttributeValueLastUpdatedBy | — |
+| LAST_UPDATED_PROGRAM | PurchasingAttributeValueLastUpdatedProgram | — |
+| LEAD_TIME | PurchasingAttributeValueLeadTime | — |
+| MANUFACTURER_PART_NUM | PurchasingAttributeValueManufacturerPartNum | — |
+| MANUFACTURER_URL | PurchasingAttributeValueManufacturerUrl | — |
+| OBJECT_VERSION_NUMBER | PurchasingAttributeValueObjectVersionNumber | — |
+| PICTURE | PurchasingAttributeValuePicture | — |
+| PO_HEADER_ID | PurchasingAttributeValuePoHeaderId | — |
+| PO_LINE_ID | PurchasingAttributeValuePoLineId | — |
+| PRC_BU_ID | PurchasingAttributeValuePrcBuId | — |
+| REBUILD_SEARCH_INDEX_FLAG | PurchasingAttributeValueRebuildSearchIndexFlag | — |
+| REQUEST_ID | PurchasingAttributeValueRequestId | — |
+| SUPPLIER_URL | PurchasingAttributeValueSupplierUrl | — |
+| THUMBNAIL_IMAGE | PurchasingAttributeValueThumbnailImage | — |
+| UNSPSC | PurchasingAttributeValueUnspsc | — |
 
 ---
 

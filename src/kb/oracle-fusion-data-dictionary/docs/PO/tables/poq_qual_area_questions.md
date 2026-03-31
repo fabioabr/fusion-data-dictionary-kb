@@ -140,6 +140,42 @@ WHERE  q.QUAL_AREA_ID = :p_qual_area_id
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[qualareaquestionpvo|QualAreaQuestionPVO]] (PO · BICC: 12/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | QualAreaQuestionCreatedBy | ✅ |
+| CREATION_DATE | QualAreaQuestionCreationDate | ✅ |
+| DISPLAY_SEQUENCE | QualAreaQuestionDisplaySequence | ✅ |
+| KNOCKOUT_SCORE | QualAreaQuestionKnockoutScore | ✅ |
+| LAST_UPDATE_DATE | QualAreaQuestionLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | QualAreaQuestionLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | QualAreaQuestionLastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | QualAreaQuestionObjectVersionNumber | ✅ |
+| QUAL_AREA_ID | QualAreaQuestionQualAreaId | ✅ |
+| QUAL_AREA_QUESTION_ID | QualAreaQuestionId | ✅ |
+| QUESTION_ID | QualAreaQuestionQuestionId | ✅ |
+| WEIGHT | QualAreaQuestionWeight | ✅ |
+
+### [[qualarearepositoryresponsepvo|QualAreaRepositoryResponsePVO]] (PO · BICC: 10/10)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | QualAreaQuestionCreatedBy | ✅ |
+| CREATION_DATE | QualAreaQuestionCreationDate | ✅ |
+| DISPLAY_SEQUENCE | QualAreaQuestionDisplaySequence | ✅ |
+| LAST_UPDATE_DATE | QualAreaQuestionLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | QualAreaQuestionLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | QualAreaQuestionLastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | QualAreaQuestionObjectVersionNumber | ✅ |
+| QUAL_AREA_ID | QualAreaQuestionQualAreaId | ✅ |
+| QUAL_AREA_QUESTION_ID | QualAreaQuestionQualAreaQuestionId | ✅ |
+| QUESTION_ID | QualAreaQuestionQuestionId | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — Supplier Qualification Management](https://docs.oracle.com/en/cloud/saas/procurement/25a/oedmf/)

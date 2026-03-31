@@ -100,6 +100,32 @@ WHERE  rt.LEGISLATIVE_DATA_GROUP_ID = :p_ldg_id
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[runtypedpvo|RunTypeDPVO]] (HCM · BICC: 12/17)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BASE_RUN_TYPE_NAME | RunTypeBaseDPEOBaseRunTypeName | — |
+| CREATED_BY | RunTypeBaseDPEOCreatedBy | ✅ |
+| CREATION_DATE | RunTypeBaseDPEOCreationDate | ✅ |
+| EFFECTIVE_END_DATE | EffectiveEndDate | ✅ |
+| EFFECTIVE_START_DATE | EffectiveStartDate | ✅ |
+| INCLUSION_FLAG | RunTypeBaseDPEOInclusionFlag | ✅ |
+| LAST_UPDATE_DATE | RunTypeBaseDPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | RunTypeBaseDPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | RunTypeBaseDPEOLastUpdatedBy | ✅ |
+| LEGISLATION_CODE | RunTypeBaseDPEOLegislationCode | ✅ |
+| LEGISLATIVE_DATA_GROUP_ID | RunTypeBaseDPEOLegislativeDataGroupId | ✅ |
+| MODULE_ID | RunTypeBaseDPEOModuleId | — |
+| OBJECT_VERSION_NUMBER | RunTypeBaseDPEOObjectVersionNumber | — |
+| RUN_METHOD | RunTypeBaseDPEORunMethod | ✅ |
+| RUN_TYPE_ID | RunTypeId | ✅ |
+| SHORTNAME | RunTypeBaseDPEOShortname | ✅ |
+| SRS_FLAG | RunTypeBaseDPEOSrsFlag | — |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — PAY_RUN_TYPES_F](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/payruntypesf.html)

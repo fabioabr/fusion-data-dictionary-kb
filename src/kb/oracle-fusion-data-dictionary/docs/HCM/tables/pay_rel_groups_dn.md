@@ -96,6 +96,35 @@ WHERE  dn.PAYROLL_RELATIONSHIP_ID = :p_rel_id;
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[bipayrollrelationshipgrouppvo|BIPayrollRelationshipGroupPVO]] (HCM · BICC: 20/20)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| AC_TRIGGER_FLAG | PayrollRelationshipGroupPEOAcTriggerFlag | ✅ |
+| ASSIGNMENT_ID | PayrollRelationshipGroupPEOAssignmentId | ✅ |
+| ASSIGNMENT_NUMBER | PayrollRelationshipGroupPEOAssignmentNumber | ✅ |
+| CREATED_BY | PayrollRelationshipGroupPEOCreatedBy | ✅ |
+| CREATION_DATE | PayrollRelationshipGroupPEOCreationDate | ✅ |
+| END_DATE | PayrollRelationshipGroupPEOEndDate | ✅ |
+| ENTERPRISE_ID | PayrollRelationshipGroupPEOEnterpriseId | ✅ |
+| GROUP_TYPE | PayrollRelationshipGroupPEOGroupType | ✅ |
+| LAST_UPDATE_DATE | PayrollRelationshipGroupPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | PayrollRelationshipGroupPEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | PayrollRelationshipGroupPEOLastUpdatedBy | ✅ |
+| LEGAL_EMPLOYER_ID | PayrollRelationshipGroupPEOLegalEmployerId | ✅ |
+| LEGISLATIVE_DATA_GROUP_ID | PayrollRelationshipGroupPEOLegislativeDataGroupId | ✅ |
+| OBJECT_VERSION_NUMBER | PayrollRelationshipGroupPEOObjectVersionNumber | ✅ |
+| PARENT_REL_GROUP_ID | PayrollRelationshipGroupPEOParentRelGroupId | ✅ |
+| PAYROLL_RELATIONSHIP_ID | PayrollRelationshipGroupPEOPayrollRelationshipId | ✅ |
+| RELATIONSHIP_GROUP_ID | PayrollRelationshipGroupPEORelationshipGroupId | ✅ |
+| START_DATE | PayrollRelationshipGroupPEOStartDate | ✅ |
+| TAX_REPORTING_UNIT_ID | PayrollRelationshipGroupPEOTaxReportingUnitId | ✅ |
+| TERM_ID | PayrollRelationshipGroupPEOTermId | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — PAY_REL_GROUPS_DN](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/payrelgroupsdn.html)

@@ -107,3 +107,559 @@ WHERE  ouc.ORGANIZATION_ID = :p_org_id
 
 - [Oracle Docs — HR_ORG_UNIT_CLASSIFICATIONS_F](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/hrorgunitclassificationsf.html)
 - [[hcm-module-data-dictionary]] — Dossie do modulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[awardfundingsourcepvo|AwardFundingSourcePVO]] (OTHER · BICC: 1/4)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| EFFECTIVE_END_DATE | OrgUnitClassificationPEOEffectiveEndDate | — |
+| EFFECTIVE_START_DATE | OrgUnitClassificationPEOEffectiveStartDate | ✅ |
+| ORG_UNIT_CLASSIFICATION_ID | OrgUnitClassificationPEOClassificationId | — |
+| STATUS | OrgUnitClassificationPEOStatus | — |
+
+### [[businessunitpvo|BusinessUnitPVO]] (HCM · BICC: 5/16)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_OCCURRENCE_ID | OrgUnitClassificationPEOActionOccurrenceId | — |
+| BUSINESS_GROUP_ID | OrgUnitClassificationPEOBusinessGroupId | — |
+| CLASSIFICATION_CODE | OrgUnitClassificationPEOClassificationCode | — |
+| CREATED_BY | OrgUnitClassificationPEOCreatedBy | — |
+| CREATION_DATE | OrgUnitClassificationPEOCreationDate | — |
+| EFFECTIVE_END_DATE | EffectiveEndDate | ✅ |
+| EFFECTIVE_START_DATE | EffectiveStartDate | ✅ |
+| LAST_UPDATE_DATE | OrgUnitClassificationPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | OrgUnitClassificationPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | OrgUnitClassificationPEOLastUpdatedBy | — |
+| LEGISLATION_CODE | OrgUnitClassificationPEOLegislationCode | — |
+| OBJECT_VERSION_NUMBER | OrgUnitClassificationPEOObjectVersionNumber | — |
+| ORG_UNIT_CLASSIFICATION_ID | OrgUnitClassificationId | ✅ |
+| ORGANIZATION_ID | OrgUnitClassificationPEOOrganizationId | — |
+| SET_ID | OrgUnitClassificationPEOSetId | — |
+| STATUS | OrgUnitClassificationPEOStatus | ✅ |
+
+### [[departmentpvo|DepartmentPVO]] (HCM · BICC: 8/16)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_OCCURRENCE_ID | OrgUnitClassificationPEOActionOccurrenceId | — |
+| BUSINESS_GROUP_ID | OrgUnitClassificationPEOBusinessGroupId | — |
+| CLASSIFICATION_CODE | OrgUnitClassificationPEOClassificationCode | ✅ |
+| CREATED_BY | OrgUnitClassificationPEOCreatedBy | — |
+| CREATION_DATE | OrgUnitClassificationPEOCreationDate | — |
+| EFFECTIVE_END_DATE | EffectiveEndDate | ✅ |
+| EFFECTIVE_START_DATE | EffectiveStartDate | ✅ |
+| LAST_UPDATE_DATE | OrgUnitClassificationPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | OrgUnitClassificationPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | OrgUnitClassificationPEOLastUpdatedBy | — |
+| LEGISLATION_CODE | OrgUnitClassificationPEOLegislationCode | ✅ |
+| OBJECT_VERSION_NUMBER | OrgUnitClassificationPEOObjectVersionNumber | — |
+| ORG_UNIT_CLASSIFICATION_ID | OrgUnitClassificationId | ✅ |
+| ORGANIZATION_ID | OrgUnitClassificationPEOOrganizationId | — |
+| SET_ID | OrgUnitClassificationPEOSetId | ✅ |
+| STATUS | OrgUnitClassificationPEOStatus | ✅ |
+
+### [[departmentpvoviewall|DepartmentPVOViewAll]] (HCM · BICC: 8/16)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_OCCURRENCE_ID | OrgUnitClassificationPEOActionOccurrenceId | — |
+| BUSINESS_GROUP_ID | OrgUnitClassificationPEOBusinessGroupId | — |
+| CLASSIFICATION_CODE | OrgUnitClassificationPEOClassificationCode | ✅ |
+| CREATED_BY | OrgUnitClassificationPEOCreatedBy | — |
+| CREATION_DATE | OrgUnitClassificationPEOCreationDate | — |
+| EFFECTIVE_END_DATE | EffectiveEndDate | ✅ |
+| EFFECTIVE_START_DATE | EffectiveStartDate | ✅ |
+| LAST_UPDATE_DATE | OrgUnitClassificationPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | OrgUnitClassificationPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | OrgUnitClassificationPEOLastUpdatedBy | — |
+| LEGISLATION_CODE | OrgUnitClassificationPEOLegislationCode | ✅ |
+| OBJECT_VERSION_NUMBER | OrgUnitClassificationPEOObjectVersionNumber | — |
+| ORG_UNIT_CLASSIFICATION_ID | OrgUnitClassificationId | ✅ |
+| ORGANIZATION_ID | OrgUnitClassificationPEOOrganizationId | — |
+| SET_ID | OrgUnitClassificationPEOSetId | ✅ |
+| STATUS | OrgUnitClassificationPEOStatus | ✅ |
+
+### [[employeeexpensebusinessunitpvo|EmployeeExpenseBusinessUnitPVO]] (OTHER · BICC: 2/16)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_OCCURRENCE_ID | OrgUnitClassificationActionOccurrenceId | — |
+| BUSINESS_GROUP_ID | OrgUnitClassificationBusinessGroupId | — |
+| CLASSIFICATION_CODE | OrgUnitClassificationClassificationCode | — |
+| CREATED_BY | OrgUnitClassificationCreatedBy | — |
+| CREATION_DATE | OrgUnitClassificationCreationDate | — |
+| EFFECTIVE_END_DATE | OrgUnitClassificationEffectiveEndDate | — |
+| EFFECTIVE_START_DATE | OrgUnitClassificationEffectiveStartDate | ✅ |
+| LAST_UPDATE_DATE | OrgUnitClassificationLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | OrgUnitClassificationLastUpdateLogin | — |
+| LAST_UPDATED_BY | OrgUnitClassificationLastUpdatedBy | — |
+| LEGISLATION_CODE | OrgUnitClassificationLegislationCode | — |
+| OBJECT_VERSION_NUMBER | OrgUnitClassificationObjectVersionNumber | — |
+| ORG_UNIT_CLASSIFICATION_ID | OrgUnitClassificationOrgUnitClassificationId | — |
+| ORGANIZATION_ID | OrgUnitClassificationOrganizationId | — |
+| SET_ID | OrgUnitClassificationSetId | — |
+| STATUS | BusinessUnitStatus | — |
+
+### [[enterprisepvo|EnterprisePVO]] (HCM · BICC: 5/16)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_OCCURRENCE_ID | OrgUnitClassificationPEOActionOccurrenceId | — |
+| BUSINESS_GROUP_ID | OrgUnitClassificationPEOBusinessGroupId | — |
+| CLASSIFICATION_CODE | OrgUnitClassificationPEOClassificationCode | — |
+| CREATED_BY | OrgUnitClassificationPEOCreatedBy | — |
+| CREATION_DATE | OrgUnitClassificationPEOCreationDate | — |
+| EFFECTIVE_END_DATE | EffectiveEndDate | ✅ |
+| EFFECTIVE_START_DATE | EffectiveStartDate | ✅ |
+| LAST_UPDATE_DATE | OrgUnitClassificationPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | OrgUnitClassificationPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | OrgUnitClassificationPEOLastUpdatedBy | — |
+| LEGISLATION_CODE | OrgUnitClassificationPEOLegislationCode | — |
+| OBJECT_VERSION_NUMBER | OrgUnitClassificationPEOObjectVersionNumber | — |
+| ORG_UNIT_CLASSIFICATION_ID | OrgUnitClassificationId | ✅ |
+| ORGANIZATION_ID | OrgUnitClassificationPEOOrganizationId | ✅ |
+| SET_ID | OrgUnitClassificationPEOSetId | — |
+| STATUS | OrgUnitClassificationPEOStatus | — |
+
+### [[fundingsourcepvo|FundingSourcePVO]] (OTHER · BICC: 1/4)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| EFFECTIVE_END_DATE | OrgUnitClassificationPEOEffectiveEndDate | — |
+| EFFECTIVE_START_DATE | OrgUnitClassificationPEOEffectiveStartDate | ✅ |
+| ORG_UNIT_CLASSIFICATION_ID | OrgUnitClassificationId | — |
+| STATUS | FundingSourceAllPEOOrgStatus | — |
+
+### [[grantsbusinessunitpvo|GrantsBusinessUnitPVO]] (OTHER · BICC: 1/4)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| EFFECTIVE_END_DATE | OrgUnitClassificationPEOEffectiveEndDate4 | — |
+| EFFECTIVE_START_DATE | OrgUnitClassificationPEOEffectiveStartDate4 | — |
+| ORG_UNIT_CLASSIFICATION_ID | OrgUnitClassificationPEOOrgUnitClassificationId | — |
+| STATUS | Status | ✅ |
+
+### [[legalemployerpvo|LegalEmployerPVO]] (HCM · BICC: 8/16)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_OCCURRENCE_ID | OrgUnitClassificationPEOActionOccurrenceId | — |
+| BUSINESS_GROUP_ID | OrgUnitClassificationPEOBusinessGroupId | — |
+| CLASSIFICATION_CODE | OrgUnitClassificationPEOClassificationCode | ✅ |
+| CREATED_BY | OrgUnitClassificationPEOCreatedBy | — |
+| CREATION_DATE | OrgUnitClassificationPEOCreationDate | — |
+| EFFECTIVE_END_DATE | EffectiveEndDate | ✅ |
+| EFFECTIVE_START_DATE | EffectiveStartDate | ✅ |
+| LAST_UPDATE_DATE | OrgUnitClassificationPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | OrgUnitClassificationPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | OrgUnitClassificationPEOLastUpdatedBy | ✅ |
+| LEGISLATION_CODE | OrgUnitClassificationPEOLegislationCode | ✅ |
+| OBJECT_VERSION_NUMBER | OrgUnitClassificationPEOObjectVersionNumber | — |
+| ORG_UNIT_CLASSIFICATION_ID | OrgUnitClassificationId | ✅ |
+| ORGANIZATION_ID | OrgUnitClassificationPEOOrganizationId | — |
+| SET_ID | OrgUnitClassificationPEOSetId | — |
+| STATUS | OrgUnitClassificationPEOStatus | ✅ |
+
+### [[orderbusinessunitpvo|OrderBusinessUnitPVO]] (OTHER · BICC: 3/16)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_OCCURRENCE_ID | OrgUnitClassificationActionOccurrenceId | — |
+| BUSINESS_GROUP_ID | OrgUnitClassificationBusinessGroupId | — |
+| CLASSIFICATION_CODE | OrgUnitClassificationClassificationCode | — |
+| CREATED_BY | OrgUnitClassificationCreatedBy | — |
+| CREATION_DATE | OrgUnitClassificationCreationDate | — |
+| EFFECTIVE_END_DATE | OrgUnitClassificationEffectiveEndDate | — |
+| EFFECTIVE_START_DATE | OrgUnitClassificationEffectiveStartDate | ✅ |
+| LAST_UPDATE_DATE | OrgUnitClassificationLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | OrgUnitClassificationLastUpdateLogin | — |
+| LAST_UPDATED_BY | OrgUnitClassificationLastUpdatedBy | — |
+| LEGISLATION_CODE | OrgUnitClassificationLegislationCode | — |
+| OBJECT_VERSION_NUMBER | OrgUnitClassificationObjectVersionNumber | — |
+| ORG_UNIT_CLASSIFICATION_ID | OrgUnitClassificationOrgUnitClassificationId | — |
+| ORGANIZATION_ID | OrgUnitClassificationOrganizationId | — |
+| SET_ID | OrgUnitClassificationSetId | — |
+| STATUS | BusinessUnitStatus | ✅ |
+
+### [[organizationpvo|OrganizationPVO]] (HCM · BICC: 10/16)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_OCCURRENCE_ID | OrgUnitClassificationPEOActionOccurrenceId | — |
+| BUSINESS_GROUP_ID | OrgUnitClassificationPEOBusinessGroupId | — |
+| CLASSIFICATION_CODE | OrgUnitClassificationPEOClassificationCode | ✅ |
+| CREATED_BY | OrgUnitClassificationPEOCreatedBy | ✅ |
+| CREATION_DATE | OrgUnitClassificationPEOCreationDate | ✅ |
+| EFFECTIVE_END_DATE | EffectiveEndDate | ✅ |
+| EFFECTIVE_START_DATE | EffectiveStartDate | ✅ |
+| LAST_UPDATE_DATE | OrgUnitClassificationPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | OrgUnitClassificationPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | OrgUnitClassificationPEOLastUpdatedBy | ✅ |
+| LEGISLATION_CODE | OrgUnitClassificationPEOLegislationCode | — |
+| OBJECT_VERSION_NUMBER | OrgUnitClassificationPEOObjectVersionNumber | — |
+| ORG_UNIT_CLASSIFICATION_ID | OrgUnitClassificationId | ✅ |
+| ORGANIZATION_ID | OrgUnitClassificationPEOOrganizationId | ✅ |
+| SET_ID | OrgUnitClassificationPEOSetId | ✅ |
+| STATUS | OrgUnitClassificationPEOStatus | — |
+
+### [[organizationrefpvo|OrganizationRefPVO]] (HCM · BICC: 6/16)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_OCCURRENCE_ID | OrgUnitClassificationPEOActionOccurrenceId | — |
+| BUSINESS_GROUP_ID | OrgUnitClassificationPEOBusinessGroupId | — |
+| CLASSIFICATION_CODE | OrgUnitClassificationPEOClassificationCode | — |
+| CREATED_BY | OrgUnitClassificationPEOCreatedBy | — |
+| CREATION_DATE | OrgUnitClassificationPEOCreationDate | — |
+| EFFECTIVE_END_DATE | EffectiveEndDate | ✅ |
+| EFFECTIVE_START_DATE | EffectiveStartDate | ✅ |
+| LAST_UPDATE_DATE | OrgUnitClassificationPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | OrgUnitClassificationPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | OrgUnitClassificationPEOLastUpdatedBy | — |
+| LEGISLATION_CODE | OrgUnitClassificationPEOLegislationCode | — |
+| OBJECT_VERSION_NUMBER | OrgUnitClassificationPEOObjectVersionNumber | — |
+| ORG_UNIT_CLASSIFICATION_ID | OrgUnitClassificationId | ✅ |
+| ORGANIZATION_ID | OrgUnitClassificationPEOOrganizationId | — |
+| SET_ID | OrgUnitClassificationPEOSetId | ✅ |
+| STATUS | OrgUnitClassificationPEOStatus | ✅ |
+
+### [[orgunitclassificationpvo|OrgUnitClassificationPVO]] (HCM · BICC: 16/16)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_OCCURRENCE_ID | OrgUnitClassificationPEOActionOccurrenceId | ✅ |
+| BUSINESS_GROUP_ID | OrgUnitClassificationPEOBusinessGroupId | ✅ |
+| CLASSIFICATION_CODE | OrgUnitClassificationPEOClassificationCode | ✅ |
+| CREATED_BY | OrgUnitClassificationPEOCreatedBy | ✅ |
+| CREATION_DATE | OrgUnitClassificationPEOCreationDate | ✅ |
+| EFFECTIVE_END_DATE | EffectiveEndDate | ✅ |
+| EFFECTIVE_START_DATE | EffectiveStartDate | ✅ |
+| LAST_UPDATE_DATE | OrgUnitClassificationPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | OrgUnitClassificationPEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | OrgUnitClassificationPEOLastUpdatedBy | ✅ |
+| LEGISLATION_CODE | OrgUnitClassificationPEOLegislationCode | ✅ |
+| OBJECT_VERSION_NUMBER | OrgUnitClassificationPEOObjectVersionNumber | ✅ |
+| ORG_UNIT_CLASSIFICATION_ID | OrgUnitClassificationId | ✅ |
+| ORGANIZATION_ID | OrgUnitClassificationPEOOrganizationId | ✅ |
+| SET_ID | OrgUnitClassificationPEOSetId | ✅ |
+| STATUS | OrgUnitClassificationPEOStatus | ✅ |
+
+### [[outstandingcardtransactionbusinessunitpvo|OutstandingCardTransactionBusinessUnitPVO]] (OTHER · BICC: 2/16)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_OCCURRENCE_ID | OrgUnitClassificationActionOccurrenceId | — |
+| BUSINESS_GROUP_ID | OrgUnitClassificationBusinessGroupId | — |
+| CLASSIFICATION_CODE | OrgUnitClassificationClassificationCode | — |
+| CREATED_BY | OrgUnitClassificationCreatedBy | — |
+| CREATION_DATE | OrgUnitClassificationCreationDate | — |
+| EFFECTIVE_END_DATE | OrgUnitClassificationEffectiveEndDate | — |
+| EFFECTIVE_START_DATE | OrgUnitClassificationEffectiveStartDate | ✅ |
+| LAST_UPDATE_DATE | OrgUnitClassificationLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | OrgUnitClassificationLastUpdateLogin | — |
+| LAST_UPDATED_BY | OrgUnitClassificationLastUpdatedBy | — |
+| LEGISLATION_CODE | OrgUnitClassificationLegislationCode | — |
+| OBJECT_VERSION_NUMBER | OrgUnitClassificationObjectVersionNumber | — |
+| ORG_UNIT_CLASSIFICATION_ID | OrgUnitClassificationOrgUnitClassificationId | — |
+| ORGANIZATION_ID | OrgUnitClassificationOrganizationId | — |
+| SET_ID | OrgUnitClassificationSetId | — |
+| STATUS | BusinessUnitStatus | — |
+
+### [[payablebusinessunitpvo|PayableBusinessUnitPVO]] (OTHER · BICC: 2/16)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_OCCURRENCE_ID | OrgUnitClassificationActionOccurrenceId | — |
+| BUSINESS_GROUP_ID | OrgUnitClassificationBusinessGroupId | — |
+| CLASSIFICATION_CODE | OrgUnitClassificationClassificationCode | — |
+| CREATED_BY | OrgUnitClassificationCreatedBy | — |
+| CREATION_DATE | OrgUnitClassificationCreationDate | — |
+| EFFECTIVE_END_DATE | OrgUnitClassificationEffectiveEndDate | — |
+| EFFECTIVE_START_DATE | OrgUnitClassificationEffectiveStartDate | ✅ |
+| LAST_UPDATE_DATE | OrgUnitClassificationLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | OrgUnitClassificationLastUpdateLogin | — |
+| LAST_UPDATED_BY | OrgUnitClassificationLastUpdatedBy | — |
+| LEGISLATION_CODE | OrgUnitClassificationLegislationCode | — |
+| OBJECT_VERSION_NUMBER | OrgUnitClassificationObjectVersionNumber | — |
+| ORG_UNIT_CLASSIFICATION_ID | OrgUnitClassificationOrgUnitClassificationId | — |
+| ORGANIZATION_ID | OrgUnitClassificationOrganizationId | — |
+| SET_ID | OrgUnitClassificationSetId | — |
+| STATUS | BusinessUnitStatus | — |
+
+### [[payrollstatutoryunitpvo|PayrollStatutoryUnitPVO]] (HCM · BICC: 7/16)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_OCCURRENCE_ID | OrgUnitClassificationPEOActionOccurrenceId | — |
+| BUSINESS_GROUP_ID | OrgUnitClassificationPEOBusinessGroupId | — |
+| CLASSIFICATION_CODE | OrgUnitClassificationPEOClassificationCode | ✅ |
+| CREATED_BY | OrgUnitClassificationPEOCreatedBy | — |
+| CREATION_DATE | OrgUnitClassificationPEOCreationDate | — |
+| EFFECTIVE_END_DATE | EffectiveEndDate | ✅ |
+| EFFECTIVE_START_DATE | EffectiveStartDate | ✅ |
+| LAST_UPDATE_DATE | OrgUnitClassificationPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | OrgUnitClassificationPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | OrgUnitClassificationPEOLastUpdatedBy | — |
+| LEGISLATION_CODE | OrgUnitClassificationPEOLegislationCode | ✅ |
+| OBJECT_VERSION_NUMBER | OrgUnitClassificationPEOObjectVersionNumber | — |
+| ORG_UNIT_CLASSIFICATION_ID | OrgUnitClassificationId | ✅ |
+| ORGANIZATION_ID | OrgUnitClassificationPEOOrganizationId | — |
+| SET_ID | OrgUnitClassificationPEOSetId | — |
+| STATUS | OrgUnitClassificationPEOStatus | ✅ |
+
+### [[projectcontractbusinessunitpvo|ProjectContractBusinessUnitPVO]] (OTHER · BICC: 2/16)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_OCCURRENCE_ID | OrgUnitClassificationActionOccurrenceId | — |
+| BUSINESS_GROUP_ID | OrgUnitClassificationBusinessGroupId | — |
+| CLASSIFICATION_CODE | OrgUnitClassificationClassificationCode | — |
+| CREATED_BY | OrgUnitClassificationCreatedBy | — |
+| CREATION_DATE | OrgUnitClassificationCreationDate | — |
+| EFFECTIVE_END_DATE | OrgUnitClassificationEffectiveEndDate | — |
+| EFFECTIVE_START_DATE | OrgUnitClassificationEffectiveStartDate | ✅ |
+| LAST_UPDATE_DATE | OrgUnitClassificationLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | OrgUnitClassificationLastUpdateLogin | — |
+| LAST_UPDATED_BY | OrgUnitClassificationLastUpdatedBy | — |
+| LEGISLATION_CODE | OrgUnitClassificationLegislationCode | — |
+| OBJECT_VERSION_NUMBER | OrgUnitClassificationObjectVersionNumber | — |
+| ORG_UNIT_CLASSIFICATION_ID | OrgUnitClassificationOrgUnitClassificationId | — |
+| ORGANIZATION_ID | OrgUnitClassificationOrganizationId | — |
+| SET_ID | OrgUnitClassificationSetId | — |
+| STATUS | BusinessUnitStatus | — |
+
+### [[projectcostingbusinessunitpvo|ProjectCostingBusinessUnitPVO]] (OTHER · BICC: 2/16)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_OCCURRENCE_ID | OrgUnitClassificationActionOccurrenceId | — |
+| BUSINESS_GROUP_ID | OrgUnitClassificationBusinessGroupId | — |
+| CLASSIFICATION_CODE | OrgUnitClassificationClassificationCode | — |
+| CREATED_BY | OrgUnitClassificationCreatedBy | — |
+| CREATION_DATE | OrgUnitClassificationCreationDate | — |
+| EFFECTIVE_END_DATE | OrgUnitClassificationEffectiveEndDate | — |
+| EFFECTIVE_START_DATE | OrgUnitClassificationEffectiveStartDate | ✅ |
+| LAST_UPDATE_DATE | OrgUnitClassificationLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | OrgUnitClassificationLastUpdateLogin | — |
+| LAST_UPDATED_BY | OrgUnitClassificationLastUpdatedBy | — |
+| LEGISLATION_CODE | OrgUnitClassificationLegislationCode | — |
+| OBJECT_VERSION_NUMBER | OrgUnitClassificationObjectVersionNumber | — |
+| ORG_UNIT_CLASSIFICATION_ID | OrgUnitClassificationOrgUnitClassificationId | — |
+| ORGANIZATION_ID | OrgUnitClassificationOrganizationId | — |
+| SET_ID | OrgUnitClassificationSetId | — |
+| STATUS | BusinessUnitStatus | — |
+
+### [[projectexpenditureorganizationpvo|ProjectExpenditureOrganizationPVO]] (HCM · BICC: 5/16)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_OCCURRENCE_ID | OrgUnitClassificationPEOActionOccurrenceId | — |
+| BUSINESS_GROUP_ID | OrgUnitClassificationPEOBusinessGroupId | — |
+| CLASSIFICATION_CODE | OrgUnitClassificationPEOClassificationCode | — |
+| CREATED_BY | OrgUnitClassificationPEOCreatedBy | — |
+| CREATION_DATE | OrgUnitClassificationPEOCreationDate | — |
+| EFFECTIVE_END_DATE | EffectiveEndDate | ✅ |
+| EFFECTIVE_START_DATE | EffectiveStartDate | ✅ |
+| LAST_UPDATE_DATE | OrgUnitClassificationPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | OrgUnitClassificationPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | OrgUnitClassificationPEOLastUpdatedBy | — |
+| LEGISLATION_CODE | OrgUnitClassificationPEOLegislationCode | — |
+| OBJECT_VERSION_NUMBER | OrgUnitClassificationPEOObjectVersionNumber | — |
+| ORG_UNIT_CLASSIFICATION_ID | OrgUnitClassificationId | ✅ |
+| ORGANIZATION_ID | OrgUnitClassificationPEOOrganizationId | — |
+| SET_ID | OrgUnitClassificationPEOSetId | — |
+| STATUS | OrgUnitClassificationPEOStatus | ✅ |
+
+### [[projectinvoicingbusinessunitpvo|ProjectInvoicingBusinessUnitPVO]] (OTHER · BICC: 2/16)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_OCCURRENCE_ID | OrgUnitClassificationActionOccurrenceId | — |
+| BUSINESS_GROUP_ID | OrgUnitClassificationBusinessGroupId | — |
+| CLASSIFICATION_CODE | OrgUnitClassificationClassificationCode | — |
+| CREATED_BY | OrgUnitClassificationCreatedBy | — |
+| CREATION_DATE | OrgUnitClassificationCreationDate | — |
+| EFFECTIVE_END_DATE | OrgUnitClassificationEffectiveEndDate | — |
+| EFFECTIVE_START_DATE | OrgUnitClassificationEffectiveStartDate | ✅ |
+| LAST_UPDATE_DATE | OrgUnitClassificationLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | OrgUnitClassificationLastUpdateLogin | — |
+| LAST_UPDATED_BY | OrgUnitClassificationLastUpdatedBy | — |
+| LEGISLATION_CODE | OrgUnitClassificationLegislationCode | — |
+| OBJECT_VERSION_NUMBER | OrgUnitClassificationObjectVersionNumber | — |
+| ORG_UNIT_CLASSIFICATION_ID | OrgUnitClassificationOrgUnitClassificationId | — |
+| ORGANIZATION_ID | OrgUnitClassificationOrganizationId | — |
+| SET_ID | OrgUnitClassificationSetId | — |
+| STATUS | BusinessUnitStatus | — |
+
+### [[projectrevenuebusinessunitpvo|ProjectRevenueBusinessUnitPVO]] (OTHER · BICC: 2/16)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_OCCURRENCE_ID | OrgUnitClassificationActionOccurrenceId | — |
+| BUSINESS_GROUP_ID | OrgUnitClassificationBusinessGroupId | — |
+| CLASSIFICATION_CODE | OrgUnitClassificationClassificationCode | — |
+| CREATED_BY | OrgUnitClassificationCreatedBy | — |
+| CREATION_DATE | OrgUnitClassificationCreationDate | — |
+| EFFECTIVE_END_DATE | OrgUnitClassificationEffectiveEndDate | — |
+| EFFECTIVE_START_DATE | OrgUnitClassificationEffectiveStartDate | ✅ |
+| LAST_UPDATE_DATE | OrgUnitClassificationLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | OrgUnitClassificationLastUpdateLogin | — |
+| LAST_UPDATED_BY | OrgUnitClassificationLastUpdatedBy | — |
+| LEGISLATION_CODE | OrgUnitClassificationLegislationCode | — |
+| OBJECT_VERSION_NUMBER | OrgUnitClassificationObjectVersionNumber | — |
+| ORG_UNIT_CLASSIFICATION_ID | OrgUnitClassificationOrgUnitClassificationId | — |
+| ORGANIZATION_ID | OrgUnitClassificationOrganizationId | — |
+| SET_ID | OrgUnitClassificationSetId | — |
+| STATUS | BusinessUnitStatus | — |
+
+### [[projecttaskowningorganizationpvo|ProjectTaskOwningOrganizationPVO]] (HCM · BICC: 5/16)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_OCCURRENCE_ID | OrgUnitClassificationPEOActionOccurrenceId | — |
+| BUSINESS_GROUP_ID | OrgUnitClassificationPEOBusinessGroupId | — |
+| CLASSIFICATION_CODE | OrgUnitClassificationPEOClassificationCode | — |
+| CREATED_BY | OrgUnitClassificationPEOCreatedBy | — |
+| CREATION_DATE | OrgUnitClassificationPEOCreationDate | — |
+| EFFECTIVE_END_DATE | EffectiveEndDate | ✅ |
+| EFFECTIVE_START_DATE | EffectiveStartDate | ✅ |
+| LAST_UPDATE_DATE | OrgUnitClassificationPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | OrgUnitClassificationPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | OrgUnitClassificationPEOLastUpdatedBy | — |
+| LEGISLATION_CODE | OrgUnitClassificationPEOLegislationCode | — |
+| OBJECT_VERSION_NUMBER | OrgUnitClassificationPEOObjectVersionNumber | — |
+| ORG_UNIT_CLASSIFICATION_ID | OrgUnitClassificationId | ✅ |
+| ORGANIZATION_ID | OrgUnitClassificationPEOOrganizationId | — |
+| SET_ID | OrgUnitClassificationPEOSetId | — |
+| STATUS | OrgUnitClassificationPEOStatus | ✅ |
+
+### [[projectunitclassificationpvo|ProjectUnitClassificationPVO]] (HCM · BICC: 5/16)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_OCCURRENCE_ID | OrgUnitClassificationPEOActionOccurrenceId | — |
+| BUSINESS_GROUP_ID | OrgUnitClassificationPEOBusinessGroupId | — |
+| CLASSIFICATION_CODE | OrgUnitClassificationPEOClassificationCode | — |
+| CREATED_BY | OrgUnitClassificationPEOCreatedBy | — |
+| CREATION_DATE | OrgUnitClassificationPEOCreationDate | — |
+| EFFECTIVE_END_DATE | EffectiveEndDate | ✅ |
+| EFFECTIVE_START_DATE | EffectiveStartDate | ✅ |
+| LAST_UPDATE_DATE | OrgUnitClassificationPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | OrgUnitClassificationPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | OrgUnitClassificationPEOLastUpdatedBy | — |
+| LEGISLATION_CODE | OrgUnitClassificationPEOLegislationCode | — |
+| OBJECT_VERSION_NUMBER | OrgUnitClassificationPEOObjectVersionNumber | — |
+| ORG_UNIT_CLASSIFICATION_ID | OrgUnitClassificationId | ✅ |
+| ORGANIZATION_ID | OrgUnitClassificationPEOOrganizationId | — |
+| SET_ID | OrgUnitClassificationPEOSetId | — |
+| STATUS | OrgUnitClassificationPEOStatus | ✅ |
+
+### [[receivablebusinessunitpvo|ReceivableBusinessUnitPVO]] (OTHER · BICC: 2/16)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_OCCURRENCE_ID | OrgUnitClassificationActionOccurrenceId | — |
+| BUSINESS_GROUP_ID | OrgUnitClassificationBusinessGroupId | — |
+| CLASSIFICATION_CODE | OrgUnitClassificationClassificationCode | — |
+| CREATED_BY | OrgUnitClassificationCreatedBy | — |
+| CREATION_DATE | OrgUnitClassificationCreationDate | — |
+| EFFECTIVE_END_DATE | OrgUnitClassificationEffectiveEndDate | — |
+| EFFECTIVE_START_DATE | OrgUnitClassificationEffectiveStartDate | ✅ |
+| LAST_UPDATE_DATE | OrgUnitClassificationLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | OrgUnitClassificationLastUpdateLogin | — |
+| LAST_UPDATED_BY | OrgUnitClassificationLastUpdatedBy | — |
+| LEGISLATION_CODE | OrgUnitClassificationLegislationCode | — |
+| OBJECT_VERSION_NUMBER | OrgUnitClassificationObjectVersionNumber | — |
+| ORG_UNIT_CLASSIFICATION_ID | OrgUnitClassificationOrgUnitClassificationId | — |
+| ORGANIZATION_ID | OrgUnitClassificationOrganizationId | — |
+| SET_ID | OrgUnitClassificationSetId | — |
+| STATUS | BusinessUnitStatus | — |
+
+### [[reportingestablishmentpvo|ReportingEstablishmentPVO]] (HCM · BICC: 7/16)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_OCCURRENCE_ID | OrgUnitClassificationPEOActionOccurrenceId | — |
+| BUSINESS_GROUP_ID | OrgUnitClassificationPEOBusinessGroupId | — |
+| CLASSIFICATION_CODE | OrgUnitClassificationPEOClassificationCode | — |
+| CREATED_BY | OrgUnitClassificationPEOCreatedBy | ✅ |
+| CREATION_DATE | OrgUnitClassificationPEOCreationDate | ✅ |
+| EFFECTIVE_END_DATE | EffectiveEndDate | ✅ |
+| EFFECTIVE_START_DATE | EffectiveStartDate | ✅ |
+| LAST_UPDATE_DATE | OrgUnitClassificationPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | OrgUnitClassificationPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | OrgUnitClassificationPEOLastUpdatedBy | — |
+| LEGISLATION_CODE | OrgUnitClassificationPEOLegislationCode | — |
+| OBJECT_VERSION_NUMBER | OrgUnitClassificationPEOObjectVersionNumber | — |
+| ORG_UNIT_CLASSIFICATION_ID | OrgUnitClassificationId | ✅ |
+| ORGANIZATION_ID | OrgUnitClassificationPEOOrganizationId | — |
+| SET_ID | OrgUnitClassificationPEOSetId | — |
+| STATUS | OrgUnitClassificationPEOStatus | ✅ |
+
+### [[reportingestablishmentpvoviewall|ReportingEstablishmentPVOViewAll]] (HCM · BICC: 8/16)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_OCCURRENCE_ID | OrgUnitClassificationPEOActionOccurrenceId | — |
+| BUSINESS_GROUP_ID | OrgUnitClassificationPEOBusinessGroupId | — |
+| CLASSIFICATION_CODE | OrgUnitClassificationPEOClassificationCode | — |
+| CREATED_BY | OrgUnitClassificationPEOCreatedBy | ✅ |
+| CREATION_DATE | OrgUnitClassificationPEOCreationDate | ✅ |
+| EFFECTIVE_END_DATE | EffectiveEndDate | ✅ |
+| EFFECTIVE_START_DATE | EffectiveStartDate | ✅ |
+| LAST_UPDATE_DATE | OrgUnitClassificationPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | OrgUnitClassificationPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | OrgUnitClassificationPEOLastUpdatedBy | ✅ |
+| LEGISLATION_CODE | OrgUnitClassificationPEOLegislationCode | — |
+| OBJECT_VERSION_NUMBER | OrgUnitClassificationPEOObjectVersionNumber | — |
+| ORG_UNIT_CLASSIFICATION_ID | OrgUnitClassificationId | ✅ |
+| ORGANIZATION_ID | OrgUnitClassificationPEOOrganizationId | — |
+| SET_ID | OrgUnitClassificationPEOSetId | — |
+| STATUS | OrgUnitClassificationPEOStatus | ✅ |
+
+### [[taxreportingunitpvo|TaxReportingUnitPVO]] (HCM · BICC: 5/16)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_OCCURRENCE_ID | OrgUnitClassificationPEOActionOccurrenceId | — |
+| BUSINESS_GROUP_ID | OrgUnitClassificationPEOBusinessGroupId | — |
+| CLASSIFICATION_CODE | OrgUnitClassificationPEOClassificationCode | — |
+| CREATED_BY | OrgUnitClassificationPEOCreatedBy | — |
+| CREATION_DATE | OrgUnitClassificationPEOCreationDate | — |
+| EFFECTIVE_END_DATE | EffectiveEndDate | ✅ |
+| EFFECTIVE_START_DATE | EffectiveStartDate | ✅ |
+| LAST_UPDATE_DATE | OrgUnitClassificationPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | OrgUnitClassificationPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | OrgUnitClassificationPEOLastUpdatedBy | — |
+| LEGISLATION_CODE | OrgUnitClassificationPEOLegislationCode | ✅ |
+| OBJECT_VERSION_NUMBER | OrgUnitClassificationPEOObjectVersionNumber | — |
+| ORG_UNIT_CLASSIFICATION_ID | OrgUnitClassificationId | ✅ |
+| ORGANIZATION_ID | OrgUnitClassificationPEOOrganizationId | — |
+| SET_ID | OrgUnitClassificationPEOSetId | — |
+| STATUS | OrgUnitClassificationPEOStatus | — |
+
+### [[unionpvo|UnionPVO]] (HCM · BICC: 6/16)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_OCCURRENCE_ID | OrgUnitClassificationPEOActionOccurrenceId | — |
+| BUSINESS_GROUP_ID | OrgUnitClassificationPEOBusinessGroupId | — |
+| CLASSIFICATION_CODE | OrgUnitClassificationPEOClassificationCode | — |
+| CREATED_BY | OrgUnitClassificationPEOCreatedBy | — |
+| CREATION_DATE | OrgUnitClassificationPEOCreationDate | — |
+| EFFECTIVE_END_DATE | EffectiveEndDate | ✅ |
+| EFFECTIVE_START_DATE | EffectiveStartDate | ✅ |
+| LAST_UPDATE_DATE | OrgUnitClassificationPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | OrgUnitClassificationPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | OrgUnitClassificationPEOLastUpdatedBy | — |
+| LEGISLATION_CODE | OrgUnitClassificationPEOLegislationCode | ✅ |
+| OBJECT_VERSION_NUMBER | OrgUnitClassificationPEOObjectVersionNumber | — |
+| ORG_UNIT_CLASSIFICATION_ID | OrgUnitClassificationId | ✅ |
+| ORGANIZATION_ID | OrgUnitClassificationPEOOrganizationId | — |
+| SET_ID | OrgUnitClassificationPEOSetId | — |
+| STATUS | OrgUnitClassificationPEOStatus | ✅ |

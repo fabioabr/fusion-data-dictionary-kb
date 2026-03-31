@@ -95,6 +95,33 @@ WHERE  vl.DIR_CARD_DEFINITION_ID = :p_def_id
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[calculationcomponentpvo|CalculationComponentPVO]] (HCM · BICC: 5/18)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ASSOCIABLE_TERM | DIRCardCompDefPEOAssociableTerm | — |
+| ASSOCIABLE_TRU | DIRCardCompDefPEOAssociableTru | — |
+| BASE_COMPONENT_NAME | DIRCardCompDefPEOBaseComponentName | ✅ |
+| BREAKDOWN_COMPONENT_FLAG | DIRCardCompDefPEOBreakdownComponentFlag | — |
+| COMPONENT_NAME | DIRCardCompDefPEOComponentName | ✅ |
+| DEDUCTION_GROUP_ID | DIRCardCompDefPEODeductionGroupId | — |
+| DEDUCTION_TYPE_ID | DIRCardCompDefPEODeductionTypeId | — |
+| DEFAULTING_TRU_COMP_FLAG | DIRCardCompDefPEODefaultingTruCompFlag | — |
+| DIR_CARD_COMP_DEF_ID | DirCardCompDefId | ✅ |
+| DIR_CARD_DEFINITION_ID | DIRCardCompDefPEODirCardDefinitionId | — |
+| EFFECTIVE_END_DATE | DIRCardCompDefPEOEffectiveEndDate | ✅ |
+| EFFECTIVE_START_DATE | DIRCardCompDefPEOEffectiveStartDate | ✅ |
+| ELEMENT_TYPE_ID | DIRCardCompDefPEOElementTypeId | — |
+| LEGISLATION_CODE | DIRCardCompDefPEOLegislationCode | — |
+| LEGISLATIVE_DATA_GROUP_ID | DIRCardCompDefPEOLegislativeDataGroupId | — |
+| MULTIPLE_ALLOWED | DIRCardCompDefPEOMultipleAllowed | — |
+| OBJECT_VERSION_NUMBER | DIRCardCompDefPEOObjectVersionNumber | — |
+| REQUIRED | DIRCardCompDefPEORequired | — |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — PAY_DIR_CARD_COMP_DEFS_VL](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/paydircardcompdefsvl.html)

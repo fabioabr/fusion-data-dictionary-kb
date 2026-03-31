@@ -103,6 +103,59 @@ ORDER BY ppm.PRIORITY;
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[personalpaymentmethoddetailsdpvo|PersonalPaymentMethodDetailsDPVO]] (AP · BICC: 5/19)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| AMOUNT | PersonalPaymentMethodDPEOAmount | ✅ |
+| BANK_ACCOUNT_ID | PersonalPaymentMethodDPEOBankAccountId | — |
+| CREATED_BY | PersonalPaymentMethodDPEOCreatedBy | — |
+| CREATION_DATE | PersonalPaymentMethodDPEOCreationDate | — |
+| EFFECTIVE_END_DATE | EffectiveEndDate | ✅ |
+| EFFECTIVE_START_DATE | EffectiveStartDate | ✅ |
+| LAST_UPDATE_DATE | PersonalPaymentMethodDPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | PersonalPaymentMethodDPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | PersonalPaymentMethodDPEOLastUpdatedBy | — |
+| LEGISLATIVE_DATA_GROUP_ID | PersonalPaymentMethodDPEOLegislativeDataGroupId | — |
+| OBJECT_VERSION_NUMBER | PersonalPaymentMethodDPEOObjectVersionNumber | — |
+| ORG_PAYMENT_METHOD_ID | PersonalPaymentMethodDPEOOrgPaymentMethodId | — |
+| PAYMENT_AMOUNT_TYPE | PersonalPaymentMethodDPEOPaymentAmountType | — |
+| PAYROLL_RELATIONSHIP_ID | PersonalPaymentMethodDPEOPayrollRelationshipId | — |
+| PERCENTAGE | PersonalPaymentMethodDPEOPercentage | — |
+| PERSONAL_PAYMENT_METHOD_ID | PersonalPaymentMethodId | ✅ |
+| PRIORITY | PersonalPaymentMethodDPEOPriority | — |
+| RUN_TYPE_ID | PersonalPaymentMethodDPEORunTypeId | — |
+| THIRD_PARTY_PAYEE_ID | PersonalPaymentMethodDPEOThirdPartyPayeeId | — |
+
+### [[personalpaymentmethoddpvo|PersonalPaymentMethodDPVO]] (AP · BICC: 17/20)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| AMOUNT | PersonalPaymentMethodDPEOAmount | ✅ |
+| BANK_ACCOUNT_ID | PersonalPaymentMethodDPEOBankAccountId | ✅ |
+| CREATED_BY | PersonalPaymentMethodDPEOCreatedBy | ✅ |
+| CREATION_DATE | PersonalPaymentMethodDPEOCreationDate | ✅ |
+| EFFECTIVE_END_DATE | EffectiveEndDate | ✅ |
+| EFFECTIVE_START_DATE | EffectiveStartDate | ✅ |
+| LAST_UPDATE_DATE | PersonalPaymentMethodDPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | PersonalPaymentMethodDPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | PersonalPaymentMethodDPEOLastUpdatedBy | ✅ |
+| LEGISLATIVE_DATA_GROUP_ID | PersonalPaymentMethodDPEOLegislativeDataGroupId | ✅ |
+| NAME | PersonalPaymentMethodDPEOName | ✅ |
+| OBJECT_VERSION_NUMBER | PersonalPaymentMethodDPEOObjectVersionNumber | — |
+| ORG_PAYMENT_METHOD_ID | PersonalPaymentMethodDPEOOrgPaymentMethodId | ✅ |
+| PAYMENT_AMOUNT_TYPE | PersonalPaymentMethodDPEOPaymentAmountType | ✅ |
+| PAYROLL_RELATIONSHIP_ID | PersonalPaymentMethodDPEOPayrollRelationshipId | ✅ |
+| PERCENTAGE | PersonalPaymentMethodDPEOPercentage | ✅ |
+| PERSONAL_PAYMENT_METHOD_ID | PersonalPaymentMethodId | ✅ |
+| PRIORITY | PersonalPaymentMethodDPEOPriority | ✅ |
+| RUN_TYPE_ID | PersonalPaymentMethodDPEORunTypeId | ✅ |
+| THIRD_PARTY_PAYEE_ID | PersonalPaymentMethodDPEOThirdPartyPayeeId | — |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — PAY_PERSON_PAY_METHODS_F](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/paypersonpaymethodsf.html)

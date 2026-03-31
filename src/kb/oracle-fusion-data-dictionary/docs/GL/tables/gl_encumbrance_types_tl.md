@@ -137,3 +137,65 @@ ORDER BY tl.NAME;
 
 - [Oracle Docs — GL_ENCUMBRANCE_TYPES_TL](https://docs.oracle.com/en/cloud/saas/financials/25a/oedmf/glencumbrancetypestl-25088.html)
 - [[gl-module-data-dictionary]] — Dossiê do módulo GL
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[journalencumbranceextractpvo|JournalEncumbranceExtractPVO]] (OTHER · BICC: 11/11)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | JournalEncumbranceTLPEOCreatedBy | ✅ |
+| CREATION_DATE | JournalEncumbranceTLPEOCreationDate | ✅ |
+| DESCRIPTION | Description | ✅ |
+| ENCUMBRANCE_TYPE | EncumbranceType | ✅ |
+| ENCUMBRANCE_TYPE_ID | JournalEncumbranceTLPEOEncumbTypeId | ✅ |
+| LANGUAGE | JournalEncumbranceTLPEOLanguage | ✅ |
+| LAST_UPDATE_DATE | JournalEncumbranceTLPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | JournalEncumbranceTLPEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | JournalEncumbranceTLPEOLastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | JournalEncumbranceTLPEOObjectVersionNumber | ✅ |
+| SOURCE_LANG | JournalEncumbranceTLPEOSourceLang | ✅ |
+
+### [[journalencumbrancepvo|JournalEncumbrancePVO]] (GL · BICC: 1/11)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | JournalEncumbranceTLPEOCreatedBy | — |
+| CREATION_DATE | JournalEncumbranceTLPEOCreationDate | — |
+| DESCRIPTION | Description | — |
+| ENCUMBRANCE_TYPE | EncumbranceType | ✅ |
+| ENCUMBRANCE_TYPE_ID | JournalEncumbranceTLPEOEncumbTypeId | — |
+| LANGUAGE | JournalEncumbranceTLPEOLanguage | — |
+| LAST_UPDATE_DATE | JournalEncumbranceTLPEOLastUpdateDate | — |
+| LAST_UPDATE_LOGIN | JournalEncumbranceTLPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | JournalEncumbranceTLPEOLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | JournalEncumbranceTLPEOObjectVersionNumber | — |
+| SOURCE_LANG | JournalEncumbranceTLPEOSourceLang | — |
+
+### [[journalencumbrancetlextractpvo|JournalEncumbranceTLExtractPVO]] (OTHER · BICC: 12/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | JournalEncumbranceTLPEOCreatedBy | ✅ |
+| CREATION_DATE | JournalEncumbranceTLPEOCreationDate | ✅ |
+| DESCRIPTION | JournalEncumbranceTLPEODescription | ✅ |
+| ENCUMBRANCE_TYPE | JournalEncumbranceTLPEOEncumbranceType | ✅ |
+| ENCUMBRANCE_TYPE_ID | JournalEncumbranceTLPEOEncumbranceTypeId | ✅ |
+| LANGUAGE | JournalEncumbranceTLPEOLanguage | ✅ |
+| LAST_UPDATE_DATE | JournalEncumbranceTLPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | JournalEncumbranceTLPEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | JournalEncumbranceTLPEOLastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | JournalEncumbranceTLPEOObjectVersionNumber | ✅ |
+| SEED_DATA_SOURCE | JournalEncumbranceTLPEOSeedDataSource | ✅ |
+| SOURCE_LANG | JournalEncumbranceTLPEOSourceLang | ✅ |
+
+### [[journalheaderextractpvo|JournalHeaderExtractPVO]] (OTHER)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| DESCRIPTION | JournalEncumbranceTLDescription | — |
+| ENCUMBRANCE_TYPE | JournalEncumbranceTLEncumbranceType | — |
+| ENCUMBRANCE_TYPE_ID | JournalEncumbranceTLEncumbranceTypeId | — |
+| LANGUAGE | JournalEncumbranceTLLanguage | — |

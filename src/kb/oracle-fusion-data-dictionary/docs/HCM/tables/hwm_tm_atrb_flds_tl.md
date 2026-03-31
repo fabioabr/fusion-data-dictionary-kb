@@ -39,7 +39,6 @@ Tabela de traduções dos campos de atributos de Time Management, contendo label
 > [!note] Sufixo _TL
 > O sufixo `_TL` indica tabela de **traduções** — armazena textos traduzidos por idioma. Chave composta: PK da tabela `_B` + `LANGUAGE`.
 
-
 ---
 
 ## 🧠 Propósito de Negócio
@@ -104,6 +103,62 @@ WHERE  t.LANGUAGE = USERENV('LANG')
 - Tabela de traduções: não utilizar diretamente em relatórios; preferir a view `_VL` correspondente.
 - Chave composta: PK do registro base + LANGUAGE.
 - Área funcional: Time Management dentro do Oracle Fusion Cloud HCM.
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[timeattributefieldallocationpvo|TimeAttributeFieldAllocationPVO]] (GL · BICC: 2/4)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| DESCRIPTION | TmAtrbFldTLPEODescription | — |
+| DISPLAY_NAME | TmAtrbFldTLPEODisplayName | ✅ |
+| LANGUAGE | TimeAttributeFieldTranslationPEOLanguage | — |
+| TM_ATRB_FLD_ID | TimeAttributeFieldId1 | ✅ |
+
+### [[timeattributefieldcomponentpvo|TimeAttributeFieldComponentPVO]] (GL · BICC: 1/4)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| DESCRIPTION | TmAtrbFldTLPEODescription | — |
+| DISPLAY_NAME | TmAtrbFldTLPEODisplayName | ✅ |
+| LANGUAGE | TimeAttributeFieldTranslationPEOLanguage | — |
+| TM_ATRB_FLD_ID | TimeAttributeFieldId1 | — |
+
+### [[timeattributefieldcustompvo|TimeAttributeFieldCustomPVO]] (GL · BICC: 2/4)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| DESCRIPTION | TmAtrbFldTLPEODescription | ✅ |
+| DISPLAY_NAME | TmAtrbFldTLPEODisplayName | ✅ |
+| LANGUAGE | TimeAttributeFieldTranslationPEOLanguage | — |
+| TM_ATRB_FLD_ID | TimeAttributeFieldId1 | — |
+
+### [[timeattributefieldpvo|TimeAttributeFieldPVO]] (GL)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| DESCRIPTION | TmAtrbFldTLPEODescription | — |
+| DISPLAY_NAME | TmAtrbFldTLPEODisplayName | — |
+| LANGUAGE | TimeAttributeFieldTranslationPEOLanguage | — |
+| TM_ATRB_FLD_ID | TimeAttributeFieldId1 | — |
+
+### [[timeattributefieldtranslationpvo|TimeAttributeFieldTranslationPVO]] (GL · BICC: 11/11)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | CreatedBy | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| DISPLAY_NAME | DisplayName | ✅ |
+| ENTERPRISE_ID | EnterpriseId | ✅ |
+| LANGUAGE | Language | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | LastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | ✅ |
+| SOURCE_LANG | SourceLang | ✅ |
+| TM_ATRB_FLD_ID | TimeAttributeFieldId | ✅ |
 
 ---
 

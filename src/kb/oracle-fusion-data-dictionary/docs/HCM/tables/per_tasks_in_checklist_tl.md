@@ -110,3 +110,29 @@ ORDER BY tl.LANGUAGE;
 
 - [Oracle Docs — PER_TASKS_IN_CHECKLIST_TL](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/pertasksinchecklisttl.html)
 - [[hcm-module-data-dictionary]] — Dossiê do módulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[checklisttasktemplatepvo|ChecklistTaskTemplatePVO]] (HCM · BICC: 5/17)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_URL | ChecklistTaskTemplateTranslationPEOActionUrl | ✅ |
+| BUSINESS_GROUP_ID | ChecklistTaskTemplateTranslationPEOBusinessGroupId | — |
+| CHECKLIST_TASK_NAME | ChecklistTaskTemplateTransla1ChecklistTaskName | ✅ |
+| CHECKLIST_TASK_NAME | ChecklistTaskTemplateTranslationPEOChecklistTaskName | ✅ |
+| CREATED_BY | ChecklistTaskTemplateTranslationPEOCreatedBy | — |
+| CREATION_DATE | ChecklistTaskTemplateTranslationPEOCreationDate | — |
+| DESCRIPTION | ChecklistTaskTemplateTranslationPEODescription | ✅ |
+| LANGUAGE | ChecklistTaskTemplateTransla1Language | — |
+| LANGUAGE | ChecklistTaskTemplateTranslationPEOLanguage | — |
+| LAST_UPDATE_DATE | ChecklistTaskTemplateTranslationPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ChecklistTaskTemplateTranslationPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | ChecklistTaskTemplateTranslationPEOLastUpdatedBy | — |
+| MEETING_LOCATION | ChecklistTaskTemplateTranslationPEOMeetingLocation | — |
+| OBJECT_VERSION_NUMBER | ChecklistTaskTemplateTranslationPEOObjectVersionNumber | — |
+| SOURCE_LANG | ChecklistTaskTemplateTranslationPEOSourceLang | — |
+| TASK_IN_CHECKLIST_ID | ChecklistTaskTemplateTransla1TaskInChecklistId1 | — |
+| TASK_IN_CHECKLIST_ID | ChecklistTaskTemplateTranslationPEOTaskInChecklistId | — |

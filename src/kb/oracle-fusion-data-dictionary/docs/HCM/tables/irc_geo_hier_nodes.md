@@ -105,3 +105,22 @@ WHERE  ghn.GEO_HIERARCHY_ID = :p_id AND ghn.PARENT_NODE_ID IS NULL;
 
 - [Oracle Docs -- IRC_GEO_HIER_NODES](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/ircgeohiernodes.html)
 - [[hcm-module-data-dictionary]] -- Dossie do modulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[geographyhiringpvo|GeographyHiringPVO]] (HCM · BICC: 9/10)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | GeographyNodePEOCreatedBy | ✅ |
+| CREATION_DATE | GeographyNodePEOCreationDate | ✅ |
+| GEOGRAPHY_ID | GeographyNodePEOGeographyId | ✅ |
+| GEOGRAPHY_NODE_ID | GeographyNodeId | ✅ |
+| HIERARCHY_ID | GeographyNodePEOHierarchyId | ✅ |
+| LAST_UPDATE_DATE | GeographyNodePEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | GeographyNodePEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | GeographyNodePEOLastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | GeographyNodePEOObjectVersionNumber | — |
+| PARENT_GEO_NODE_ID | GeographyNodePEOParentGeoNodeId | ✅ |

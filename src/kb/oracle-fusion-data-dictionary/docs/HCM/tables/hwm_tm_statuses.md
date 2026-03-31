@@ -109,3 +109,113 @@ ORDER BY s.SEQUENCE_NUMBER;
 
 - [Oracle Docs — HWM_TM_STATUSES](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/hwmtmstatuses.html)
 - [[hcm-module-data-dictionary]] — Dossie do modulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[historicprocessedtimeentrypvo|HistoricProcessedTimeEntryPVO]] (HCM)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| STATUS_ID | TeRdyXfrPjcTimeStatusPEOStatusId | — |
+| STATUS_ID | TeRdyXfrPyrTimeStatusPEOStatusId | — |
+| STATUS_ID | TeXfrPjcTimeStatusPEOStatusId | — |
+| STATUS_ID | TeXfrPyrTimeStatusPEOStatusId | — |
+| STATUS_VALUE | TeRdyXfrPjcTimeStatusPEOStatusValue | — |
+| STATUS_VALUE | TeRdyXfrPyrTimeStatusPEOStatusValue | — |
+| STATUS_VALUE | TeXfrPjcTimeStatusPEOStatusValue | — |
+| STATUS_VALUE | TeXfrPyrTimeStatusPEOStatusValue | — |
+
+### [[historicrptabstimeentrypvo|HistoricRptAbsTimeEntryPVO]] (HCM)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| DATE_FROM | TcUiTimeStatusPEODateFrom | — |
+| DATE_FROM | TcUserTimeStatusPEODateFrom | — |
+| STATUS_ID | TcUiTimeStatusPEOStatusId | — |
+| STATUS_ID | TcUserTimeStatusPEOStatusId | — |
+| STATUS_ID | TeAppPjcTimeStatusPEOStatusId | — |
+| STATUS_ID | TeAppPyrTimeStatusPEOStatusId | — |
+| STATUS_ID | TeCmpTimeStatusPEOStatusId | — |
+| STATUS_ID | TeErrTimeStatusPEOStatusId | — |
+| STATUS_VALUE | TcUiTimeStatusPEOStatusValue | — |
+| STATUS_VALUE | TcUserTimeStatusPEOStatusValue | — |
+| STATUS_VALUE | TeAppPjcTimeStatusPEOStatusValue | — |
+| STATUS_VALUE | TeAppPyrTimeStatusPEOStatusValue | — |
+| STATUS_VALUE | TeCmpTimeStatusPEOStatusValue | — |
+| STATUS_VALUE | TeErrTimeStatusPEOStatusValue | — |
+
+### [[processedtimeentrypvo|ProcessedTimeEntryPVO]] (HCM)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| STATUS_ID | TeRdyXfrPjcTimeStatusPEOStatusId | — |
+| STATUS_ID | TeRdyXfrPyrTimeStatusPEOStatusId | — |
+| STATUS_ID | TeXfrPjcTimeStatusPEOStatusId | — |
+| STATUS_ID | TeXfrPyrTimeStatusPEOStatusId | — |
+| STATUS_VALUE | TeRdyXfrPjcTimeStatusPEOStatusValue | — |
+| STATUS_VALUE | TeRdyXfrPyrTimeStatusPEOStatusValue | — |
+| STATUS_VALUE | TeXfrPjcTimeStatusPEOStatusValue | — |
+| STATUS_VALUE | TeXfrPyrTimeStatusPEOStatusValue | — |
+
+### [[rptabstimeentrypvo|RptAbsTimeEntryPVO]] (HCM)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| DATE_FROM | TcUiTimeStatusPEODateFrom | — |
+| DATE_FROM | TcUserTimeStatusPEODateFrom | — |
+| STATUS_ID | TcUiTimeStatusPEOStatusId | — |
+| STATUS_ID | TcUserTimeStatusPEOStatusId | — |
+| STATUS_ID | TeAppPjcTimeStatusPEOStatusId | — |
+| STATUS_ID | TeAppPyrTimeStatusPEOStatusId | — |
+| STATUS_ID | TeCmpTimeStatusPEOStatusId | — |
+| STATUS_ID | TeErrTimeStatusPEOStatusId | — |
+| STATUS_VALUE | TcUiTimeStatusPEOStatusValue | — |
+| STATUS_VALUE | TcUserTimeStatusPEOStatusValue | — |
+| STATUS_VALUE | TeAppPjcTimeStatusPEOStatusValue | — |
+| STATUS_VALUE | TeAppPyrTimeStatusPEOStatusValue | — |
+| STATUS_VALUE | TeCmpTimeStatusPEOStatusValue | — |
+| STATUS_VALUE | TeErrTimeStatusPEOStatusValue | — |
+
+### [[timestatusextractp1|TimeStatusExtractP1]] (HCM · BICC: 16/16)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | CreatedBy | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| DATE_FROM | DateFrom | ✅ |
+| DATE_TO | DateTo | ✅ |
+| ENTERPRISE_ID | EnterpriseId | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | LastUpdatedBy | ✅ |
+| MODULE_ID | ModuleId | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | ✅ |
+| RESOURCE_ID | ResourceId | ✅ |
+| STATUS_ID | StatusId | ✅ |
+| STATUS_VALUE | StatusValue | ✅ |
+| TM_BLDG_BLK_ID | TimeBuildingBlockId | ✅ |
+| TM_BLDG_BLK_VERSION | TimeBuildingBlockVersion | ✅ |
+| TM_STATUS_DEF_ID | TimeStatusDefId | ✅ |
+
+### [[timestatuspvo|TimeStatusPVO]] (HCM · BICC: 16/16)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | CreatedBy | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| DATE_FROM | DateFrom | ✅ |
+| DATE_TO | DateTo | ✅ |
+| ENTERPRISE_ID | EnterpriseId | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | LastUpdatedBy | ✅ |
+| MODULE_ID | ModuleId | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | ✅ |
+| RESOURCE_ID | ResourceId | ✅ |
+| STATUS_ID | StatusId | ✅ |
+| STATUS_VALUE | StatusValue | ✅ |
+| TM_BLDG_BLK_ID | TimeBuildingBlockId | ✅ |
+| TM_BLDG_BLK_VERSION | TimeBuildingBlockVersion | ✅ |
+| TM_STATUS_DEF_ID | TimeStatusDefId | ✅ |

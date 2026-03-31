@@ -81,3 +81,43 @@ updated_at: 2026-03-26
 ## 📎 Uso Típico
 
 (a ser preenchido na etapa 03)
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[transactionconsolep1|TransactionConsoleP1]] (AP · BICC: 3/31)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ATTRIBUTE10_VARCHAR2 | FndConsoleIssuePEOAttribute10Varchar21 | — |
+| ATTRIBUTE11_VARCHAR2 | FndConsoleIssuePEOAttribute11Varchar21 | — |
+| ATTRIBUTE12_VARCHAR2 | FndConsoleIssuePEOAttribute12Varchar21 | — |
+| ATTRIBUTE13_VARCHAR2 | FndConsoleIssuePEOAttribute13Varchar21 | — |
+| ATTRIBUTE14_VARCHAR2 | FndConsoleIssuePEOAttribute14Varchar21 | — |
+| ATTRIBUTE15_VARCHAR2 | FndConsoleIssuePEOAttribute15Varchar21 | — |
+| ATTRIBUTE1_VARCHAR2 | FndConsoleIssuePEOAttribute1Varchar21 | — |
+| ATTRIBUTE2_VARCHAR2 | FndConsoleIssuePEOAttribute2Varchar21 | — |
+| ATTRIBUTE3_VARCHAR2 | FndConsoleIssuePEOAttribute3Varchar21 | — |
+| ATTRIBUTE4_VARCHAR2 | FndConsoleIssuePEOAttribute4Varchar21 | — |
+| ATTRIBUTE5_VARCHAR2 | FndConsoleIssuePEOAttribute5Varchar21 | — |
+| ATTRIBUTE6_VARCHAR2 | FndConsoleIssuePEOAttribute6Varchar21 | — |
+| ATTRIBUTE7_VARCHAR2 | FndConsoleIssuePEOAttribute7Varchar21 | — |
+| ATTRIBUTE8_VARCHAR2 | FndConsoleIssuePEOAttribute8Varchar21 | — |
+| ATTRIBUTE9_VARCHAR2 | FndConsoleIssuePEOAttribute9Varchar21 | — |
+| ATTRIBUTE_CATEGORY | FndConsoleIssuePEOAttributeCategory2 | — |
+| CONSOLE_TRANSACTION_ID | FndConsoleIssuePEOConsoleTransactionId1 | — |
+| CREATED_BY | FndConsoleIssuePEOCreatedBy5 | — |
+| CREATION_DATE | FndConsoleIssuePEOCreationDate3 | — |
+| ERROR_CODE | FndConsoleIssuePEOErrorCode | — |
+| FAULT_CODE | FndConsoleIssuePEOFaultCode | — |
+| FAULT_ID | FndConsoleIssuePEOFaultId | — |
+| FAULT_PAYLOAD | FndConsoleIssuePEOFaultPayload | — |
+| ISSUE_ACTION_CODE | FndConsoleIssuePEOIssueActionCode | — |
+| ISSUE_ID | FndConsoleIssuePEOIssueId | ✅ |
+| ISSUE_STATUS_CODE | FndConsoleIssuePEOIssueStatusCode | ✅ |
+| ISSUE_TITLE | FndConsoleIssuePEOIssueTitle | — |
+| ISSUE_TYPE_CODE | FndConsoleIssuePEOIssueTypeCode | — |
+| LAST_UPDATE_DATE | FndConsoleIssuePEOLastUpdateDate4 | ✅ |
+| LAST_UPDATE_LOGIN | FndConsoleIssuePEOLastUpdateLogin4 | — |
+| LAST_UPDATED_BY | FndConsoleIssuePEOLastUpdatedBy4 | — |

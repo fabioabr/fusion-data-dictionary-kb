@@ -125,6 +125,31 @@ WHERE  ds.NEGOTIATION_TYPE = 'RFQ'
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[negotiationstyledocumenttypevlpvo|NegotiationStyleDocumentTypeVLPVO]] (PO · BICC: 3/16)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| COVER_PAGE_TEXT | NegStyleDocTypeVLPEOCoverPageText | — |
+| CREATED_BY | NegStyleDocTypeVLPEOCreatedBy | — |
+| CREATION_DATE | NegStyleDocTypeVLPEOCreationDate | — |
+| DOCTYPE_ID | NegStyleDocTypeVLPEODoctypeId | — |
+| ENABLED_FLAG | NegStyleDocTypeVLPEOEnabledFlag | — |
+| INTRODUCTION_TEXT | NegStyleDocTypeVLPEOIntroductionText | — |
+| LAST_UPDATE_DATE | NegStyleDocTypeVLPEOLastUpdateDate | — |
+| LAST_UPDATE_LOGIN | NegStyleDocTypeVLPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | NegStyleDocTypeVLPEOLastUpdatedBy | — |
+| LINES_TEXT | NegStyleDocTypeVLPEOLinesText | — |
+| NEGOTIATION_DISPLAY_NAME | NegStyleDocTypeVLPEONegotiationDisplayName | ✅ |
+| OBJECT_VERSION_NUMBER | NegStyleDocTypeVLPEOObjectVersionNumber | — |
+| REQUIREMENTS_TEXT | NegStyleDocTypeVLPEORequirementsText | — |
+| RESPONSE_DISPLAY_NAME | NegStyleDocTypeVLPEOResponseDisplayName | — |
+| STYLE_ID | NegStyleDocTypeVLPEOStyleId | ✅ |
+| TERMS_TEXT | NegStyleDocTypeVLPEOTermsText | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — Sourcing Tables](https://docs.oracle.com/en/cloud/saas/procurement/25a/oedmf/pon-tables.html)

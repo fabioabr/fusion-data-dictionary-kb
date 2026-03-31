@@ -111,3 +111,25 @@ WHERE  tl.PROFILE_ID = :p_profile_id;
 
 - [Oracle Docs — HXT_SETUP_PROFILES_TL](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/hxtsetupprofilestl.html)
 - [[hcm-module-data-dictionary]] — Dossie do modulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[setupprofileasgpvo|SetupProfileAsgPVO]] (GL · BICC: 2/4)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| DESCRIPTION | SetupProfileTLPEODescription | ✅ |
+| LANGUAGE | SetupProfileTLPEOLanguage | — |
+| NAME | SetupProfileTLPEOName | ✅ |
+| SETUP_PROFILE_ID | SetupProfileTLPEOSetupProfileId | — |
+
+### [[setupprofilepvo|SetupProfilePVO]] (GL · BICC: 2/4)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| DESCRIPTION | SetupProfileTLPEODescription | ✅ |
+| LANGUAGE | SetupProfileTLPEOLanguage | — |
+| NAME | SetupProfileTLPEOName | ✅ |
+| SETUP_PROFILE_ID | SetupProfileTLPEOSetupProfileId | — |

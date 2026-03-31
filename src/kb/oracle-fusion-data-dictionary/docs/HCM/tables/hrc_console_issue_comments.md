@@ -96,6 +96,30 @@ ORDER BY c.COMMENT_DATE;
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[consoleissuecommentsp2|ConsoleIssueCommentsP2]] (AP · BICC: 5/15)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| COMMENT_SEQUENCE | ConsoleIssueCommentsPEOCommentSequence | ✅ |
+| COMMENTS | ConsoleIssueCommentsPEOComments | ✅ |
+| CONSOLE_TRANSACTION_ID | ConsoleIssueCommentsPEOConsoleTransactionId | — |
+| CREATED_BY | ConsoleIssueCommentsPEOCreatedBy | — |
+| CREATION_DATE | ConsoleIssueCommentsPEOCreationDate | — |
+| DATE_TIME | ConsoleIssueCommentsPEODateTime | — |
+| ENTERPRISE_ID | ConsoleIssueCommentsPEOEnterpriseId | — |
+| ISSUE_COMMENT_ID | ConsoleIssueCommentsPEOIssueCommentId | ✅ |
+| ISSUE_ID | ConsoleIssueCommentsPEOIssueId | — |
+| LAST_UPDATE_DATE | ConsoleIssueCommentsPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ConsoleIssueCommentsPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | ConsoleIssueCommentsPEOLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | ConsoleIssueCommentsPEOObjectVersionNumber | — |
+| TRANSACTION_ID | ConsoleIssueCommentsPEOTransactionId | — |
+| USER_NAME | ConsoleIssueCommentsPEOUserName | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Fusion HCM Tables and Views](https://docs.oracle.com/en/cloud/saas/human-resources/25a/)

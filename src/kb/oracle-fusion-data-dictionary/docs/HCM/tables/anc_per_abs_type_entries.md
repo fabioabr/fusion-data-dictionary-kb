@@ -39,7 +39,6 @@ updated_at: 2026-03-25
 
 Armazena as **entradas de ausência agregadas por tipo** para cada colaborador. Consolida dados de utilização por tipo de ausência.
 
-
 ---
 
 ## 🧠 Propósito de Negócio
@@ -109,6 +108,49 @@ WHERE  te.PERSON_ID = :p_person_id
 - Tabela de consolidação por tipo de ausência.
 - Pode conter múltiplos registros por colaborador (um por tipo e período).
 - Útil para dashboards de absenteísmo e análises de tendência.
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[personabstypeentrypvo|PersonAbsTypeEntryPVO]] (GL · BICC: 23/34)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ABSENCE_STATUS | AbsenceStatus | ✅ |
+| ABSENCE_TYPE_ID | AbsenceTypeId | ✅ |
+| ABSENCE_TYPE_REASON_ID | AbsenceTypeReasonId | ✅ |
+| ACTUAL_CHILD_BIRTH_DT | ActualChildBirthDt | — |
+| ACTUAL_RETURN_DT | ActualReturnDt | — |
+| ACTUAL_ST_DT | ActualStDt | — |
+| ASSIGNMENT_ID | AssignmentId | ✅ |
+| COMMENTS | Comments | — |
+| CREATED_BY | CreatedBy | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| END_DATE | EndDate | ✅ |
+| END_DATE_DURATION | EndDateDuration | ✅ |
+| END_DATETIME | EndDatetime | ✅ |
+| END_TIME | EndTime | ✅ |
+| ENTERPRISE_ID | EnterpriseId | — |
+| EXPECTED_DT_CHILD_BIRTH | ExpectedDtChildBirth | — |
+| INTEND_TO_WORK | IntendToWork | — |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | — |
+| LAST_UPDATED_BY | LastUpdatedBy | ✅ |
+| LEAVE_DURATION | LeaveDuration | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | — |
+| PER_ABS_TYPE_ENTRY_ID | PerAbsTypeEntryId | ✅ |
+| PER_ABSENCE_ENTRY_ID | PerAbsenceEntryId | ✅ |
+| PERSON_ID | PersonId | ✅ |
+| PLANNED_RETURN_DT | PlannedReturnDt | ✅ |
+| PLANNED_ST_DT | PlannedStDt | — |
+| QTY | Qty | ✅ |
+| START_DATE | StartDate | ✅ |
+| START_DATE_DURATION | StartDateDuration | ✅ |
+| START_DATETIME | StartDatetime | ✅ |
+| START_TIME | StartTime | ✅ |
+| TM_REC_GRP_ID | TmRecGrpId | — |
+| UOM | Uom | ✅ |
 
 ---
 

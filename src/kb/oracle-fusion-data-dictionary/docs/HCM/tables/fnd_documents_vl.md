@@ -81,3 +81,126 @@ updated_at: 2026-03-26
 ## 📎 Uso Típico
 
 (a ser preenchido na etapa 03)
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[contentlibattachmentpvo|ContentLibAttachmentPVO]] (HCM · BICC: 2/31)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BASE_DOCUMENT_ID | BaseDocumentId | — |
+| CREATED_BY | CreatedBy1 | — |
+| CREATION_DATE | CreationDate1 | — |
+| DATATYPE_CODE | DatatypeCode | — |
+| DESCRIPTION | Description | — |
+| DM_DOCUMENT_ID | DmDocumentId | — |
+| DM_FOLDER_PATH | DmFolderPath | — |
+| DM_NODE | DmNode | — |
+| DM_REPOSITORY | DmRepository | — |
+| DM_TYPE | DmType | — |
+| DM_VERSION_NUMBER | DmVersionNumber | — |
+| DOCUMENT_ATTRIBUTES | DocumentAttributes | — |
+| DOCUMENT_ID | DocumentId1 | — |
+| DOWNLOAD_STATUS | DownloadStatus | — |
+| END_DATE_ACTIVE | EndDateActive | — |
+| ENT_APP_SHORT_NAME | EntAppShortName | — |
+| FILE_NAME | FileName | — |
+| LAST_UPDATE_DATE | LastUpdateDate1 | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin1 | — |
+| LAST_UPDATED_BY | LastUpdatedBy1 | — |
+| PROGRAM_APPLICATION_ID | ProgramApplicationId1 | — |
+| PROGRAM_ID | ProgramId1 | — |
+| PROGRAM_UPDATE_DATE | ProgramUpdateDate1 | — |
+| REQUEST_ID | RequestId1 | — |
+| START_DATE_ACTIVE | StartDateActive | — |
+| STATUS | Status | — |
+| TITLE | Title | ✅ |
+| TRUSTED_FLAG | TrustedFlag | — |
+| URI | Uri | — |
+| URL | Url | — |
+| USAGE_TYPE | UsageType | — |
+
+### [[itemimageattachmentspvo|ItemImageAttachmentsPVO]] (OTHER · BICC: 5/6)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| DATATYPE_CODE | DatatypeCode | — |
+| DATATYPE_CODE | Type | ✅ |
+| DESCRIPTION | Description | ✅ |
+| DM_FOLDER_PATH | DmFolderPath | ✅ |
+| DOCUMENT_ID | DocumentId | ✅ |
+| TITLE | Title | ✅ |
+
+### [[offerattachmentpvo|OfferAttachmentPVO]] (HCM · BICC: 7/31)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BASE_DOCUMENT_ID | BaseDocumentId | — |
+| CREATED_BY | CreatedBy1 | — |
+| CREATION_DATE | CreationDate1 | — |
+| DATATYPE_CODE | DatatypeCode | ✅ |
+| DESCRIPTION | Description | ✅ |
+| DM_DOCUMENT_ID | DmDocumentId | — |
+| DM_FOLDER_PATH | DmFolderPath | — |
+| DM_NODE | DmNode | — |
+| DM_REPOSITORY | DmRepository | — |
+| DM_TYPE | DmType | — |
+| DM_VERSION_NUMBER | DmVersionNumber | — |
+| DOCUMENT_ATTRIBUTES | DocumentAttributes | — |
+| DOCUMENT_ID | DocumentId1 | — |
+| DOWNLOAD_STATUS | DownloadStatus | — |
+| END_DATE_ACTIVE | EndDateActive | — |
+| ENT_APP_SHORT_NAME | EntAppShortName | — |
+| FILE_NAME | FileName | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate1 | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin1 | — |
+| LAST_UPDATED_BY | LastUpdatedBy1 | — |
+| PROGRAM_APPLICATION_ID | ProgramApplicationId1 | — |
+| PROGRAM_ID | ProgramId1 | — |
+| PROGRAM_UPDATE_DATE | ProgramUpdateDate1 | — |
+| REQUEST_ID | RequestId1 | — |
+| START_DATE_ACTIVE | StartDateActive | — |
+| STATUS | Status | — |
+| TITLE | Title | ✅ |
+| TRUSTED_FLAG | TrustedFlag | — |
+| URI | Uri | ✅ |
+| URL | Url | ✅ |
+| USAGE_TYPE | UsageType | — |
+
+### [[requisitionattachmentpvo|RequisitionAttachmentPVO]] (HCM · BICC: 3/31)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BASE_DOCUMENT_ID | BaseDocumentId | — |
+| CREATED_BY | CreatedBy1 | — |
+| CREATION_DATE | CreationDate1 | — |
+| DATATYPE_CODE | DatatypeCode | — |
+| DESCRIPTION | Description | — |
+| DM_DOCUMENT_ID | DmDocumentId | — |
+| DM_FOLDER_PATH | DmFolderPath | — |
+| DM_NODE | DmNode | — |
+| DM_REPOSITORY | DmRepository | — |
+| DM_TYPE | DmType | — |
+| DM_VERSION_NUMBER | DmVersionNumber | — |
+| DOCUMENT_ATTRIBUTES | DocumentAttributes | — |
+| DOCUMENT_ID | DocumentId1 | — |
+| DOWNLOAD_STATUS | DownloadStatus | — |
+| END_DATE_ACTIVE | EndDateActive | — |
+| ENT_APP_SHORT_NAME | EntAppShortName | — |
+| FILE_NAME | FileName | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate1 | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin1 | — |
+| LAST_UPDATED_BY | LastUpdatedBy1 | — |
+| PROGRAM_APPLICATION_ID | ProgramApplicationId1 | — |
+| PROGRAM_ID | ProgramId1 | — |
+| PROGRAM_UPDATE_DATE | ProgramUpdateDate1 | — |
+| REQUEST_ID | RequestId1 | — |
+| START_DATE_ACTIVE | StartDateActive | — |
+| STATUS | Status | — |
+| TITLE | Title | ✅ |
+| TRUSTED_FLAG | TrustedFlag | — |
+| URI | Uri | — |
+| URL | Url | — |
+| USAGE_TYPE | UsageType | — |

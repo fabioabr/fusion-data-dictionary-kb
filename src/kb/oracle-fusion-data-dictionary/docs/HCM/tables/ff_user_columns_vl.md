@@ -113,6 +113,31 @@ WHERE  uc.FORMULA_ID IS NOT NULL;
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[usercolumnpvo|UserColumnPVO]] (GL · BICC: 16/16)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BASE_USER_COLUMN_NAME | UserColumnPEOBaseUserColumnName | ✅ |
+| CREATED_BY | UserColumnPEOCreatedBy | ✅ |
+| CREATION_DATE | UserColumnPEOCreationDate | ✅ |
+| DATA_TYPE | UserColumnPEODataType | ✅ |
+| ENTERPRISE_ID | UserColumnPEOEnterpriseId | ✅ |
+| FORMULA_ID | UserColumnPEOFormulaId | ✅ |
+| LAST_UPDATE_DATE | UserColumnPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | UserColumnPEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | UserColumnPEOLastUpdatedBy | ✅ |
+| LEGISLATION_CODE | UserColumnPEOLegislationCode | ✅ |
+| LEGISLATIVE_DATA_GROUP_ID | UserColumnPEOLegislativeDataGroupId | ✅ |
+| MODULE_ID | UserColumnPEOModuleId | ✅ |
+| OBJECT_VERSION_NUMBER | UserColumnPEOObjectVersionNumber | ✅ |
+| USER_COLUMN_ID | UserColumnPEOUserColumnId | ✅ |
+| USER_COLUMN_NAME | UserColumnPEOUserColumnName | ✅ |
+| USER_TABLE_ID | UserColumnPEOUserTableId | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — FF_USER_COLUMNS_VL](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/ffusercolumnsvl.html)

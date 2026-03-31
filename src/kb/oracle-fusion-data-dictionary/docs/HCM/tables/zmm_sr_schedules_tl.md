@@ -115,6 +115,50 @@ ORDER BY tl.LANGUAGE;
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[scheduleassignmentpvo|ScheduleAssignmentPVO]] (GL · BICC: 2/11)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | ScheduleTranslationPEOCreatedBy | — |
+| CREATION_DATE | ScheduleTranslationPEOCreationDate | — |
+| LANGUAGE | ScheduleTranslationPEOLanguage | — |
+| LAST_UPDATE_DATE | ScheduleTranslationPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ScheduleTranslationPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | ScheduleTranslationPEOLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | ScheduleTranslationPEOObjectVersionNumber | — |
+| SCHEDULE_DESC | ScheduleTranslationPEOScheduleDesc | — |
+| SCHEDULE_ID | ScheduleTranslationPEOScheduleId | — |
+| SCHEDULE_NAME | ScheduleTranslationPEOScheduleName | ✅ |
+| SOURCE_LANG | ScheduleTranslationPEOSourceLang | — |
+
+### [[scheduleextractpvo|ScheduleExtractPVO]] (OTHER · BICC: 2/3)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| LANGUAGE | ScheduleTranslationPEOLanguage | — |
+| SCHEDULE_DESC | ScheduleTranslationPEOScheduleDesc | ✅ |
+| SCHEDULE_NAME | ScheduleTranslationPEOScheduleName | ✅ |
+
+### [[scheduletranslationextractpvo|ScheduleTranslationExtractPVO]] (OTHER · BICC: 11/11)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | CreatedBy | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| LANGUAGE | Language | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | LastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | ✅ |
+| SCHEDULE_DESC | ScheduleDesc | ✅ |
+| SCHEDULE_ID | ScheduleId | ✅ |
+| SCHEDULE_NAME | ScheduleName | ✅ |
+| SOURCE_LANG | SourceLang | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Fusion HCM Tables and Views](https://docs.oracle.com/en/cloud/saas/human-resources/25a/)

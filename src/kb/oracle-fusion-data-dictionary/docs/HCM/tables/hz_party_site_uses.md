@@ -96,3 +96,162 @@ updated_at: 2026-03-26
 ## 📎 Uso Típico
 
 (a ser preenchido na etapa 03)
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[accountcreditcard|AccountCreditCard]] (AR · BICC: 1/15)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BEGIN_DATE | PartySiteUseBeginDate | — |
+| COMMENTS | PartySiteUseComments | — |
+| CREATED_BY | PartySiteUseCreatedBy | — |
+| CREATED_BY_MODULE | PartySiteUseCreatedByModule | — |
+| CREATION_DATE | PartySiteUseCreationDate | — |
+| END_DATE | PartySiteUseEndDate | — |
+| LAST_UPDATE_DATE | PartySiteUseLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | PartySiteUseLastUpdateLogin | — |
+| LAST_UPDATED_BY | PartySiteUseLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | PartySiteUseObjectVersionNumber | — |
+| PARTY_SITE_ID | PartySiteUsePartySiteId | — |
+| PARTY_SITE_USE_ID | PartySiteUsePartySiteUseId | — |
+| PRIMARY_PER_TYPE | PartySiteUsePrimaryPerType | — |
+| SITE_USE_TYPE | PartySiteUseSiteUseType | — |
+| STATUS | PartySiteUseStatus | — |
+
+### [[addresspvo|AddressPVO]] (OTHER · BICC: 2/46)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ATTRIBUTE1 | PartySiteUsePEOAttribute1 | — |
+| ATTRIBUTE10 | PartySiteUsePEOAttribute10 | — |
+| ATTRIBUTE11 | PartySiteUsePEOAttribute11 | — |
+| ATTRIBUTE12 | PartySiteUsePEOAttribute12 | — |
+| ATTRIBUTE13 | PartySiteUsePEOAttribute13 | — |
+| ATTRIBUTE14 | PartySiteUsePEOAttribute14 | — |
+| ATTRIBUTE15 | PartySiteUsePEOAttribute15 | — |
+| ATTRIBUTE16 | PartySiteUsePEOAttribute16 | — |
+| ATTRIBUTE17 | PartySiteUsePEOAttribute17 | — |
+| ATTRIBUTE18 | PartySiteUsePEOAttribute18 | — |
+| ATTRIBUTE19 | PartySiteUsePEOAttribute19 | — |
+| ATTRIBUTE2 | PartySiteUsePEOAttribute2 | — |
+| ATTRIBUTE20 | PartySiteUsePEOAttribute20 | — |
+| ATTRIBUTE21 | PartySiteUsePEOAttribute21 | — |
+| ATTRIBUTE22 | PartySiteUsePEOAttribute22 | — |
+| ATTRIBUTE23 | PartySiteUsePEOAttribute23 | — |
+| ATTRIBUTE24 | PartySiteUsePEOAttribute24 | — |
+| ATTRIBUTE25 | PartySiteUsePEOAttribute25 | — |
+| ATTRIBUTE26 | PartySiteUsePEOAttribute26 | — |
+| ATTRIBUTE27 | PartySiteUsePEOAttribute27 | — |
+| ATTRIBUTE28 | PartySiteUsePEOAttribute28 | — |
+| ATTRIBUTE29 | PartySiteUsePEOAttribute29 | — |
+| ATTRIBUTE3 | PartySiteUsePEOAttribute3 | — |
+| ATTRIBUTE30 | PartySiteUsePEOAttribute30 | — |
+| ATTRIBUTE4 | PartySiteUsePEOAttribute4 | — |
+| ATTRIBUTE5 | PartySiteUsePEOAttribute5 | — |
+| ATTRIBUTE6 | PartySiteUsePEOAttribute6 | — |
+| ATTRIBUTE7 | PartySiteUsePEOAttribute7 | — |
+| ATTRIBUTE8 | PartySiteUsePEOAttribute8 | — |
+| ATTRIBUTE9 | PartySiteUsePEOAttribute9 | — |
+| ATTRIBUTE_CATEGORY | PartySiteUsePEOAttributeCategory | — |
+| BEGIN_DATE | PartySiteUsePEOBeginDate | — |
+| COMMENTS | PartySiteUsePEOComments | — |
+| CREATED_BY | PartySiteUsePEOCreatedBy | — |
+| CREATED_BY_MODULE | PartySiteUsePEOCreatedByModule | — |
+| CREATION_DATE | PartySiteUsePEOCreationDate | — |
+| END_DATE | PartySiteUsePEOEndDate | — |
+| LAST_UPDATE_DATE | PartySiteUsePEOLastUpdateDate | — |
+| LAST_UPDATE_LOGIN | PartySiteUsePEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | PartySiteUsePEOLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | PartySiteUsePEOObjectVersionNumber | — |
+| PARTY_SITE_ID | PartySiteUsePEOPartySiteId | — |
+| PARTY_SITE_USE_ID | PartySiteUsePEOPartySiteUseId | ✅ |
+| PRIMARY_PER_TYPE | PartySiteUsePEOPrimaryPerType | — |
+| SITE_USE_TYPE | PartySiteUsePEOSiteUseType | ✅ |
+| STATUS | PartySiteUsePEOStatus | — |
+
+### [[headersalescreditpvo|HeaderSalesCreditPVO]] (AR · BICC: 1/3)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| LAST_UPDATE_DATE | ShipToPartySiteUseLastUpdateDate | ✅ |
+| LAST_UPDATED_BY | ShipToPartySiteUseLastUpdatedBy | — |
+| PARTY_SITE_USE_ID | ShipToPartySiteUsePartySiteUseId | — |
+
+### [[linesalescreditpvo|LineSalesCreditPVO]] (AR · BICC: 1/3)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| LAST_UPDATE_DATE | ShipToPartySiteUseLastUpdateDate | ✅ |
+| LAST_UPDATED_BY | ShipToPartySiteUseLastUpdatedBy | — |
+| PARTY_SITE_USE_ID | ShipToPartySiteUsePartySiteUseId | — |
+
+### [[sitecreditcard|SiteCreditCard]] (AR · BICC: 1/15)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BEGIN_DATE | PartySiteUseBeginDate | — |
+| COMMENTS | PartySiteUseComments | — |
+| CREATED_BY | PartySiteUseCreatedBy | — |
+| CREATED_BY_MODULE | PartySiteUseCreatedByModule | — |
+| CREATION_DATE | PartySiteUseCreationDate | — |
+| END_DATE | PartySiteUseEndDate | — |
+| LAST_UPDATE_DATE | PartySiteUseLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | PartySiteUseLastUpdateLogin | — |
+| LAST_UPDATED_BY | PartySiteUseLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | PartySiteUseObjectVersionNumber | — |
+| PARTY_SITE_ID | PartySiteUsePartySiteId | — |
+| PARTY_SITE_USE_ID | PartySiteUsePartySiteUseId | — |
+| PRIMARY_PER_TYPE | PartySiteUsePrimaryPerType | — |
+| SITE_USE_TYPE | PartySiteUseSiteUseType | — |
+| STATUS | PartySiteUseStatus | — |
+
+### [[transactionheaderbillsreceivablepvo|TransactionHeaderBillsReceivablePVO]] (AR · BICC: 1/3)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| LAST_UPDATE_DATE | ShipToPartySiteUseLastUpdateDate | ✅ |
+| LAST_UPDATED_BY | ShipToPartySiteUseLastUpdatedBy | — |
+| PARTY_SITE_USE_ID | ShipToPartySiteUsePartySiteUseId | — |
+
+### [[transactionheadernovcpvo|TransactionHeaderNoVCPVO]] (AR · BICC: 1/3)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| LAST_UPDATE_DATE | ShipToPartySiteUseLastUpdateDate | ✅ |
+| LAST_UPDATED_BY | ShipToPartySiteUseLastUpdatedBy | — |
+| PARTY_SITE_USE_ID | ShipToPartySiteUsePartySiteUseId | — |
+
+### [[transactionheaderpvo|TransactionHeaderPVO]] (AR · BICC: 1/3)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| LAST_UPDATE_DATE | ShipToPartySiteUseLastUpdateDate | ✅ |
+| LAST_UPDATED_BY | ShipToPartySiteUseLastUpdatedBy | — |
+| PARTY_SITE_USE_ID | ShipToPartySiteUsePartySiteUseId | — |
+
+### [[transactionlinebillsreceivablepvo|TransactionLineBillsReceivablePVO]] (AR · BICC: 1/3)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| LAST_UPDATE_DATE | ShipToPartySiteUseLastUpdateDate | ✅ |
+| LAST_UPDATED_BY | ShipToPartySiteUseLastUpdatedBy | — |
+| PARTY_SITE_USE_ID | ShipToPartySiteUsePartySiteUseId | — |
+
+### [[transactionlinedistributionpvo|TransactionLineDistributionPVO]] (AR · BICC: 1/3)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| LAST_UPDATE_DATE | ShipToPartySiteUseLastUpdateDate | ✅ |
+| LAST_UPDATED_BY | ShipToPartySiteUseLastUpdatedBy | — |
+| PARTY_SITE_USE_ID | ShipToPartySiteUsePartySiteUseId | — |
+
+### [[transactionlinepvo|TransactionLinePVO]] (AR · BICC: 1/3)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| LAST_UPDATE_DATE | ShipToPartySiteUseLastUpdateDate | ✅ |
+| LAST_UPDATED_BY | ShipToPartySiteUseLastUpdatedBy | — |
+| PARTY_SITE_USE_ID | ShipToPartySiteUsePartySiteUseId | — |

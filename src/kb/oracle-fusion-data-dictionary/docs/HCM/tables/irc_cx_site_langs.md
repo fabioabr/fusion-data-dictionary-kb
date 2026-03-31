@@ -100,3 +100,20 @@ WHERE  sl.CX_SITE_ID = :p_site_id;
 
 - [Oracle Docs -- IRC_CX_SITE_LANGS](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/irccxsitelangs.html)
 - [[hcm-module-data-dictionary]] -- Dossie do modulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[careersitelanguagepvo|CareerSiteLanguagePVO]] (HCM · BICC: 2/8)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | CreatedBy | — |
+| CREATION_DATE | CreationDate | — |
+| LAST_UPDATE_DATE | LastUpdateDate | — |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | — |
+| LAST_UPDATED_BY | LastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | — |
+| SITE_ID | SiteId | ✅ |
+| SITE_LANGUAGE | SiteLanguage | ✅ |

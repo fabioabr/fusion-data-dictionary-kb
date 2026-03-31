@@ -38,7 +38,6 @@ Tabela de traduções dos templates de regras, armazenando nomes e descrições 
 > [!note] Sufixo _TL
 > O sufixo `_TL` indica tabela de **traduções** — armazena textos traduzidos por idioma. Chave composta: PK da tabela `_B` + `LANGUAGE`.
 
-
 ---
 
 ## 🧠 Propósito de Negócio
@@ -104,6 +103,37 @@ WHERE  t.LANGUAGE = USERENV('LANG')
 - Tabela de traduções: não utilizar diretamente em relatórios; preferir a view `_VL` correspondente.
 - Chave composta: PK do registro base + LANGUAGE.
 - Área funcional: Rules Engine dentro do Oracle Fusion Cloud HCM.
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[ruletemplateinputpvo|RuleTemplateInputPVO]] (GL · BICC: 2/4)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| DESCRIPTION | RuleTemplateTLPEODescription | ✅ |
+| LANGUAGE | RuleTemplateTLPEOLanguage | — |
+| RT_EXPLANATION | RuleTemplateTLPEORtExplanation | ✅ |
+| RULE_TMPLTS_ID | RuleTemplateTLPEORuleTmpltsId | — |
+
+### [[ruletemplatepvo|RuleTemplatePVO]] (GL · BICC: 2/4)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| DESCRIPTION | RuleTemplateTLPEODescription | ✅ |
+| LANGUAGE | RuleTemplateTLPEOLanguage | — |
+| RT_EXPLANATION | RuleTemplateTLPEORtExplanation | ✅ |
+| RULE_TMPLTS_ID | RuleTemplateTLPEORuleTmpltsId | — |
+
+### [[ruletemplateusagepvo|RuleTemplateUsagePVO]] (GL · BICC: 2/4)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| DESCRIPTION | RuleTemplateTLPEODescription | ✅ |
+| LANGUAGE | RuleTemplateTLPEOLanguage | — |
+| RT_EXPLANATION | RuleTemplateTLPEORtExplanation | ✅ |
+| RULE_TMPLTS_ID | RuleTemplateTLPEORuleTmpltsId | — |
 
 ---
 

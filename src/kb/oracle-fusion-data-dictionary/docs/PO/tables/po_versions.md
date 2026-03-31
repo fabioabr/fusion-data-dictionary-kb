@@ -38,7 +38,6 @@ updated_at: 2026-03-25
 
 Armazena as **versoes de documentos de compras**. Cada alteracao aprovada gera nova versao para rastreamento.
 
-
 ---
 
 ## 🧠 Propósito de Negócio
@@ -95,7 +94,6 @@ WHERE  PO_HEADER_ID = :p_po_header_id
 ORDER BY VERSION_NUM;
 ```
 
-
 ---
 
 ## 🔒 Observações
@@ -103,6 +101,214 @@ ORDER BY VERSION_NUM;
 - Cada aprovacao incrementa `VERSION_NUM`.
 - Complementa `PO_HEADERS_ARCHIVE_ALL`.
 - O `CHANGE_DESCRIPTION` contem resumo das alteracoes.
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[purchaseorderhistorypvo|PurchaseOrderHistoryPVO]] (PO · BICC: 2/48)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACCEPTED_DATE | PurchasingDocumentVersionAcceptedDate | — |
+| APPROVED_DATE | PurchasingDocumentVersionApprovedDate | — |
+| BASE_VERSION_ID | PurchasingDocumentVersionBaseVersionId | — |
+| CANCEL_BACKING_REQ_FLAG | PurchasingDocumentVersionCancelBackingReqFlag | — |
+| CANCEL_DOC_FLAG | PurchasingDocumentVersionCancelDocFlag | — |
+| CHANGE_ORDER_DESC | PurchasingDocumentVersionChangeOrderDesc | — |
+| CHANGE_ORDER_STATUS | PurchasingDocumentVersionChangeOrderStatus | — |
+| CHANGE_ORDER_TYPE | PurchasingDocumentVersionChangeOrderType | — |
+| CO_CANCELED_BY_ROLE | PurchasingDocumentVersionCoCanceledByRole | — |
+| CO_CANCELED_BY_USER_ID | PurchasingDocumentVersionCoCanceledByUserId | — |
+| CO_CANCELED_FLAG | PurchasingDocumentVersionCoCanceledFlag | — |
+| CO_NUM | PurchasingDocumentVersionCoNum | ✅ |
+| CO_SEQUENCE | PurchasingDocumentVersionCoSequence | — |
+| COMMUNICATED_DATE | PurchasingDocumentVersionCommunicatedDate | — |
+| COMMUNICATED_TO_SUPPLIER | PurchasingDocumentVersionCommunicatedToSupplier | — |
+| COUNTERPROPOSAL_FLAG | PurchasingDocumentVersionCounterproposalFlag | — |
+| CREATED_BY | PurchasingDocumentVersionCreatedBy | — |
+| CREATED_BY_PROGRAM_NAME | PurchasingDocumentVersionCreatedByProgramName | — |
+| CREATION_DATE | PurchasingDocumentVersionCreationDate | — |
+| DOCUMENT_DATE | PurchasingDocumentVersionDocumentDate | — |
+| ESIGN_ENV_OWNER_EMAIL_ID | PurchasingDocumentVersionEsignEnvOwnerEmailId | — |
+| ESIGN_ENVELOPE_ID | PurchasingDocumentVersionEsignEnvelopeId | — |
+| ESIGN_ENVELOPE_OWNER | PurchasingDocumentVersionEsignEnvelopeOwner | — |
+| ESIGN_ENVELOPE_STATUS | PurchasingDocumentVersionEsignEnvelopeStatus | — |
+| EXTERNAL_SYSTEM_FLAG | PurchasingDocumentVersionExternalSystemFlag | — |
+| FUNDS_STATUS | PurchasingDocumentVersionFundsStatus | — |
+| JOB_DEFINITION_NAME | PurchasingDocumentVersionJobDefinitionName | — |
+| JOB_DEFINITION_PACKAGE | PurchasingDocumentVersionJobDefinitionPackage | — |
+| LAST_UPDATE_DATE | PurchasingDocumentVersionLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | PurchasingDocumentVersionLastUpdateLogin | — |
+| LAST_UPDATED_BY | PurchasingDocumentVersionLastUpdatedBy | — |
+| MODIFIED_FLAG | PurchasingDocumentVersionModifiedFlag | — |
+| OBJECT_VERSION_NUMBER | PurchasingDocumentVersionObjectVersionNumber | — |
+| ONLINE_REPORT_ID | PurchasingDocumentVersionOnlineReportId | — |
+| ORIGINATOR_ID | PurchasingDocumentVersionOriginatorId | — |
+| ORIGINATOR_ROLE | PurchasingDocumentVersionOriginatorRole | — |
+| PENDING_RESPONSE_ROLE | PurchasingDocumentVersionPendingResponseRole | — |
+| PO_HEADER_ID | PurchasingDocumentVersionPoHeaderId | — |
+| PROCESSED_DATE | PurchasingDocumentVersionProcessedDate | — |
+| PROGRAM_APP_NAME | PurchasingDocumentVersionProgramAppName | — |
+| PROGRAM_NAME | PurchasingDocumentVersionProgramName | — |
+| REJECTED_FLAG | PurchasingDocumentVersionRejectedFlag | — |
+| REQUEST_DATE | PurchasingDocumentVersionRequestDate | — |
+| REQUEST_ID | PurchasingDocumentVersionRequestId | — |
+| REVISION_NUM | PurchasingDocumentVersionRevisionNum | — |
+| SUBMITTED_DATE | PurchasingDocumentVersionSubmittedDate | — |
+| VERSION_ID | PurchasingDocumentVersionVersionId | — |
+| WITHDRAWN_FLAG | PurchasingDocumentVersionWithdrawnFlag | — |
+
+### [[purchasingdocumentversionextractpvo|PurchasingDocumentVersionExtractPVO]] (PO · BICC: 45/45)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACCEPTED_DATE | AcceptedDate | ✅ |
+| APPROVED_DATE | ApprovedDate | ✅ |
+| B2B_MESSAGE_ID | B2bMessageId | ✅ |
+| BASE_VERSION_ID | BaseVersionId | ✅ |
+| CANCEL_BACKING_REQ_FLAG | CancelBackingReqFlag | ✅ |
+| CANCEL_DOC_FLAG | CancelDocFlag | ✅ |
+| CHANGE_ORDER_DESC | ChangeOrderDesc | ✅ |
+| CHANGE_ORDER_STATUS | ChangeOrderStatus | ✅ |
+| CHANGE_ORDER_TYPE | ChangeOrderType | ✅ |
+| CO_CANCELED_BY_ROLE | CoCanceledByRole | ✅ |
+| CO_CANCELED_BY_USER_ID | CoCanceledByUserId | ✅ |
+| CO_CANCELED_FLAG | CoCanceledFlag | ✅ |
+| CO_NUM | CoNum | ✅ |
+| CO_SEQUENCE | CoSequence | ✅ |
+| COMMUNICATED_DATE | CommunicatedDate | ✅ |
+| COMMUNICATED_TO_SUPPLIER | CommunicatedToSupplier | ✅ |
+| COUNTERPROPOSAL_FLAG | CounterproposalFlag | ✅ |
+| CREATED_BY | CreatedBy | ✅ |
+| CREATED_BY_PROGRAM_NAME | CreatedByProgramName | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| DOCUMENT_DATE | DocumentDate | ✅ |
+| ESIGN_ENV_OWNER_EMAIL_ID | EsignEnvOwnerEmailId | ✅ |
+| ESIGN_ENVELOPE_ID | EsignEnvelopeId | ✅ |
+| ESIGN_ENVELOPE_OWNER | EsignEnvelopeOwner | ✅ |
+| ESIGN_ENVELOPE_STATUS | EsignEnvelopeStatus | ✅ |
+| EXTERNAL_SYSTEM_FLAG | ExternalSystemFlag | ✅ |
+| FUNDS_STATUS | FundsStatus | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | LastUpdatedBy | ✅ |
+| MODIFIED_FLAG | ModifiedFlag | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | ✅ |
+| ONLINE_REPORT_ID | OnlineReportId | ✅ |
+| ORIGINATOR_ID | OriginatorId | ✅ |
+| ORIGINATOR_ROLE | OriginatorRole | ✅ |
+| PENDING_RESPONSE_ROLE | PendingResponseRole | ✅ |
+| PO_HEADER_ID | PoHeaderId | ✅ |
+| PROCESSED_DATE | ProcessedDate | ✅ |
+| REJECTED_FLAG | RejectedFlag | ✅ |
+| REQUEST_DATE | RequestDate | ✅ |
+| REQUEST_ID | RequestId | ✅ |
+| REVISION_NUM | RevisionNum | ✅ |
+| SUBMITTED_DATE | SubmittedDate | ✅ |
+| VERSION_ID | VersionId | ✅ |
+| WITHDRAWN_FLAG | WithdrawnFlag | ✅ |
+
+### [[purchasingdocumentversionpvo|PurchasingDocumentVersionPVO]] (PO · BICC: 25/43)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACCEPTED_DATE | PurchasingDocumentVersionAcceptedDate | ✅ |
+| APPROVED_DATE | PurchasingDocumentVersionApprovedDate | ✅ |
+| CANCEL_BACKING_REQ_FLAG | PurchasingDocumentVersionCancelBackingReqFlag | — |
+| CANCEL_DOC_FLAG | PurchasingDocumentVersionCancelDocFlag | ✅ |
+| CHANGE_ORDER_DESC | PurchasingDocumentVersionChangeOrderDesc | ✅ |
+| CHANGE_ORDER_STATUS | PurchasingDocumentVersionChangeOrderStatus | ✅ |
+| CHANGE_ORDER_TYPE | PurchasingDocumentVersionChangeOrderType | ✅ |
+| CHECKLIST_ID | PurchasingDocumentVersionChecklistId | — |
+| CO_CANCELED_BY_ROLE | PurchasingDocumentVersionCoCanceledByRole | — |
+| CO_CANCELED_BY_USER_ID | PurchasingDocumentVersionCoCanceledByUserId | — |
+| CO_CANCELED_FLAG | PurchasingDocumentVersionCoCanceledFlag | ✅ |
+| CO_NUM | PurchasingDocumentVersionCoNum | ✅ |
+| CO_SEQUENCE | PurchasingDocumentVersionCoSequence | ✅ |
+| COMMUNICATED_DATE | PurchasingDocumentVersionCommunicatedDate | ✅ |
+| COMMUNICATED_TO_SUPPLIER | PurchasingDocumentVersionCommunicatedToSupplier | — |
+| CREATED_BY | PurchasingDocumentVersionCreatedBy | ✅ |
+| CREATED_BY_PROGRAM_NAME | PurchasingDocumentVersionCreatedByProgramName | ✅ |
+| CREATION_DATE | PurchasingDocumentVersionCreationDate | ✅ |
+| DOCUMENT_DATE | PurchasingDocumentVersionDocumentDate | — |
+| EXTERNAL_SYSTEM_FLAG | PurchasingDocumentVersionExternalSystemFlag | — |
+| FUNDS_STATUS | PurchasingDocumentVersionFundsStatus | ✅ |
+| JOB_DEFINITION_NAME | PurchasingDocumentVersionJobDefinitionName | — |
+| JOB_DEFINITION_PACKAGE | PurchasingDocumentVersionJobDefinitionPackage | — |
+| LAST_UPDATE_DATE | PurchasingDocumentVersionLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | PurchasingDocumentVersionLastUpdateLogin | — |
+| LAST_UPDATED_BY | PurchasingDocumentVersionLastUpdatedBy | ✅ |
+| MODIFIED_FLAG | PurchasingDocumentVersionModifiedFlag | — |
+| OBJECT_VERSION_NUMBER | PurchasingDocumentVersionObjectVersionNumber | — |
+| ONLINE_REPORT_ID | PurchasingDocumentVersionOnlineReportId | — |
+| ORIGINATOR_ID | PurchasingDocumentVersionOriginatorId | ✅ |
+| ORIGINATOR_ROLE | PurchasingDocumentVersionOriginatorRole | ✅ |
+| PENDING_RESPONSE_ROLE | PurchasingDocumentVersionPendingResponseRole | — |
+| PO_HEADER_ID | PurchasingDocumentVersionPoHeaderId | ✅ |
+| PROCESSED_DATE | PurchasingDocumentVersionProcessedDate | ✅ |
+| PROGRAM_APP_NAME | PurchasingDocumentVersionProgramAppName | — |
+| PROGRAM_NAME | PurchasingDocumentVersionProgramName | — |
+| REJECTED_FLAG | PurchasingDocumentVersionRejectedFlag | ✅ |
+| REQUEST_DATE | PurchasingDocumentVersionRequestDate | — |
+| REQUEST_ID | PurchasingDocumentVersionRequestId | — |
+| REVISION_NUM | PurchasingDocumentVersionRevisionNum | ✅ |
+| SUBMITTED_DATE | PurchasingDocumentVersionSubmittedDate | ✅ |
+| VERSION_ID | VersionId | ✅ |
+| WITHDRAWN_FLAG | PurchasingDocumentVersionWithdrawnFlag | ✅ |
+
+### [[requisitionactionhistorypvo|RequisitionActionHistoryPVO]] (PO · BICC: 2/48)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACCEPTED_DATE | PurchasingDocumentVersionAcceptedDate | — |
+| APPROVED_DATE | PurchasingDocumentVersionApprovedDate | — |
+| BASE_VERSION_ID | PurchasingDocumentVersionBaseVersionId | — |
+| CANCEL_BACKING_REQ_FLAG | PurchasingDocumentVersionCancelBackingReqFlag | — |
+| CANCEL_DOC_FLAG | PurchasingDocumentVersionCancelDocFlag | — |
+| CHANGE_ORDER_DESC | PurchasingDocumentVersionChangeOrderDesc | — |
+| CHANGE_ORDER_STATUS | PurchasingDocumentVersionChangeOrderStatus | — |
+| CHANGE_ORDER_TYPE | PurchasingDocumentVersionChangeOrderType | — |
+| CO_CANCELED_BY_ROLE | PurchasingDocumentVersionCoCanceledByRole | — |
+| CO_CANCELED_BY_USER_ID | PurchasingDocumentVersionCoCanceledByUserId | — |
+| CO_CANCELED_FLAG | PurchasingDocumentVersionCoCanceledFlag | — |
+| CO_NUM | PurchasingDocumentVersionCoNum | ✅ |
+| CO_SEQUENCE | PurchasingDocumentVersionCoSequence | — |
+| COMMUNICATED_DATE | PurchasingDocumentVersionCommunicatedDate | — |
+| COMMUNICATED_TO_SUPPLIER | PurchasingDocumentVersionCommunicatedToSupplier | — |
+| COUNTERPROPOSAL_FLAG | PurchasingDocumentVersionCounterproposalFlag | — |
+| CREATED_BY | PurchasingDocumentVersionCreatedBy | — |
+| CREATED_BY_PROGRAM_NAME | PurchasingDocumentVersionCreatedByProgramName | — |
+| CREATION_DATE | PurchasingDocumentVersionCreationDate | — |
+| DOCUMENT_DATE | PurchasingDocumentVersionDocumentDate | — |
+| ESIGN_ENV_OWNER_EMAIL_ID | PurchasingDocumentVersionEsignEnvOwnerEmailId | — |
+| ESIGN_ENVELOPE_ID | PurchasingDocumentVersionEsignEnvelopeId | — |
+| ESIGN_ENVELOPE_OWNER | PurchasingDocumentVersionEsignEnvelopeOwner | — |
+| ESIGN_ENVELOPE_STATUS | PurchasingDocumentVersionEsignEnvelopeStatus | — |
+| EXTERNAL_SYSTEM_FLAG | PurchasingDocumentVersionExternalSystemFlag | — |
+| FUNDS_STATUS | PurchasingDocumentVersionFundsStatus | — |
+| JOB_DEFINITION_NAME | PurchasingDocumentVersionJobDefinitionName | — |
+| JOB_DEFINITION_PACKAGE | PurchasingDocumentVersionJobDefinitionPackage | — |
+| LAST_UPDATE_DATE | PurchasingDocumentVersionLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | PurchasingDocumentVersionLastUpdateLogin | — |
+| LAST_UPDATED_BY | PurchasingDocumentVersionLastUpdatedBy | — |
+| MODIFIED_FLAG | PurchasingDocumentVersionModifiedFlag | — |
+| OBJECT_VERSION_NUMBER | PurchasingDocumentVersionObjectVersionNumber | — |
+| ONLINE_REPORT_ID | PurchasingDocumentVersionOnlineReportId | — |
+| ORIGINATOR_ID | PurchasingDocumentVersionOriginatorId | — |
+| ORIGINATOR_ROLE | PurchasingDocumentVersionOriginatorRole | — |
+| PENDING_RESPONSE_ROLE | PurchasingDocumentVersionPendingResponseRole | — |
+| PO_HEADER_ID | PurchasingDocumentVersionPoHeaderId | — |
+| PROCESSED_DATE | PurchasingDocumentVersionProcessedDate | — |
+| PROGRAM_APP_NAME | PurchasingDocumentVersionProgramAppName | — |
+| PROGRAM_NAME | PurchasingDocumentVersionProgramName | — |
+| REJECTED_FLAG | PurchasingDocumentVersionRejectedFlag | — |
+| REQUEST_DATE | PurchasingDocumentVersionRequestDate | — |
+| REQUEST_ID | PurchasingDocumentVersionRequestId | — |
+| REVISION_NUM | PurchasingDocumentVersionRevisionNum | — |
+| SUBMITTED_DATE | PurchasingDocumentVersionSubmittedDate | — |
+| VERSION_ID | PurchasingDocumentVersionVersionId | — |
+| WITHDRAWN_FLAG | PurchasingDocumentVersionWithdrawnFlag | — |
 
 ---
 

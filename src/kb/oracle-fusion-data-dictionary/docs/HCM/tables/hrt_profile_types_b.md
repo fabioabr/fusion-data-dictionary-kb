@@ -108,3 +108,106 @@ WHERE  SYSDATE BETWEEN pt.DATE_FROM AND NVL(pt.DATE_TO, SYSDATE);
 
 - [Oracle Docs — HRT_PROFILE_TYPES_B](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/hrtprofiletypesb.html)
 - [[hcm-module-data-dictionary]] — Dossie do modulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[meetingfactpvo|MeetingFactPVO]] (HCM · BICC: 1/15)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | ProfileTypeBPEOBusinessGroupId | — |
+| CREATED_BY | ProfileTypeBPEOCreatedBy | — |
+| CREATION_DATE | ProfileTypeBPEOCreationDate | — |
+| DATE_FROM | DateFrom | — |
+| DATE_TO | DateTo | — |
+| LAST_UPDATE_DATE | ProfileTypeBPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ProfileTypeBPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | ProfileTypeBPEOLastUpdatedBy | — |
+| MODULE_ID | ModuleId | — |
+| OBJECT_VERSION_NUMBER | ProfileTypeBPEOObjectVersionNumber | — |
+| PID_APPROVAL_FLAG | PidApprovalFlag | — |
+| PROFILE_STATUS_CODE | ProfileTypeBPEOProfileStatusCode | — |
+| PROFILE_TYPE_CODE | ProfileTypeCode | — |
+| PROFILE_TYPE_ID | ProfileTypeBPEOProfileTypeId | — |
+| PROFILE_USAGE_CODE | ProfileTypeBPEOProfileUsageCode | — |
+
+### [[modelprofileitempvo|ModelProfileItemPVO]] (HCM · BICC: 4/9)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | ProfileTypeBPEOBusinessGroupId | — |
+| DATE_FROM | ProfileTypeBPEODateFrom | — |
+| DATE_TO | ProfileTypeBPEODateTo | — |
+| MODULE_ID | ProfileTypeBPEOModuleId | — |
+| PID_APPROVAL_FLAG | ProfileTypeBPEOPidApprovalFlag | ✅ |
+| PROFILE_STATUS_CODE | ProfileTypeBPEOProfileStatusCode | ✅ |
+| PROFILE_TYPE_CODE | ProfileTypeBPEOProfileTypeCode | ✅ |
+| PROFILE_TYPE_ID | ProfileTypeBPEOProfileTypeId | ✅ |
+| PROFILE_USAGE_CODE | ProfileTypeBPEOProfileUsageCode | — |
+
+### [[modelprofilepvo|ModelProfilePVO]] (HCM · BICC: 10/10)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | ProfileTypeBPEOBusinessGroupId | ✅ |
+| DATE_FROM | ProfileTypeBPEODateFrom | ✅ |
+| DATE_TO | ProfileTypeBPEODateTo | ✅ |
+| LAST_UPDATE_DATE | ProfileTypeBPEOLastUpdateDate | ✅ |
+| MODULE_ID | ProfileTypeBPEOModuleId | ✅ |
+| PID_APPROVAL_FLAG | ProfileTypeBPEOPidApprovalFlag | ✅ |
+| PROFILE_STATUS_CODE | ProfileTypeBPEOProfileStatusCode | ✅ |
+| PROFILE_TYPE_CODE | ProfileTypeBPEOProfileTypeCode | ✅ |
+| PROFILE_TYPE_ID | ProfileTypeBPEOProfileTypeId | ✅ |
+| PROFILE_USAGE_CODE | ProfileTypeBPEOProfileUsageCode | ✅ |
+
+### [[personprofileitempvo|PersonProfileItemPVO]] (HCM · BICC: 3/10)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | ProfileTypeBPEOBusinessGroupId | — |
+| DATE_FROM | ProfileTypeBPEODateFrom | — |
+| DATE_TO | ProfileTypeBPEODateTo | — |
+| LAST_UPDATE_DATE | ProfileTypeBPEOLastUpdateDate | ✅ |
+| MODULE_ID | ProfileTypeBPEOModuleId | — |
+| PID_APPROVAL_FLAG | ProfileTypeBPEOPidApprovalFlag | ✅ |
+| PROFILE_STATUS_CODE | ProfileTypeBPEOProfileStatusCode | — |
+| PROFILE_TYPE_CODE | ProfileTypeBPEOProfileTypeCode | — |
+| PROFILE_TYPE_ID | ProfileTypeBPEOProfileTypeId | ✅ |
+| PROFILE_USAGE_CODE | ProfileTypeBPEOProfileUsageCode | — |
+
+### [[personprofilepvo|PersonProfilePVO]] (HCM · BICC: 10/10)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | ProfileTypeBPEOBusinessGroupId | ✅ |
+| DATE_FROM | ProfileTypeBPEODateFrom | ✅ |
+| DATE_TO | ProfileTypeBPEODateTo | ✅ |
+| LAST_UPDATE_DATE | ProfileTypeBPEOLastUpdateDate | ✅ |
+| MODULE_ID | ProfileTypeBPEOModuleId | ✅ |
+| PID_APPROVAL_FLAG | ProfileTypeBPEOPidApprovalFlag | ✅ |
+| PROFILE_STATUS_CODE | ProfileTypeBPEOProfileStatusCode | ✅ |
+| PROFILE_TYPE_CODE | ProfileTypeBPEOProfileTypeCode | ✅ |
+| PROFILE_TYPE_ID | ProfileTypeBPEOProfileTypeId | ✅ |
+| PROFILE_USAGE_CODE | ProfileTypeBPEOProfileUsageCode | ✅ |
+
+### [[profiletypepvo|ProfileTypePVO]] (HCM · BICC: 12/15)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | ProfileTypeBPEOBusinessGroupId | ✅ |
+| CREATED_BY | CreatedBy | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| DATE_FROM | ProfileTypeBPEODateFrom | ✅ |
+| DATE_TO | ProfileTypeBPEODateTo | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | — |
+| LAST_UPDATED_BY | LastUpdatedBy | ✅ |
+| MODULE_ID | ProfileTypeBPEOModuleId | — |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | — |
+| PID_APPROVAL_FLAG | ProfileTypeBPEOPidApprovalFlag | ✅ |
+| PROFILE_STATUS_CODE | ProfileTypeBPEOProfileStatusCode | ✅ |
+| PROFILE_TYPE_CODE | ProfileTypeBPEOProfileTypeCode | ✅ |
+| PROFILE_TYPE_ID | ProfileTypeBPEOProfileTypeId | ✅ |
+| PROFILE_USAGE_CODE | ProfileTypeBPEOProfileUsageCode | ✅ |

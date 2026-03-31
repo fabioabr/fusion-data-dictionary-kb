@@ -102,3 +102,20 @@ FROM   IRC_IM_FEEDBK_REVIEWS fr WHERE fr.REVIEW_STATUS = 'PENDING';
 
 - [Oracle Docs -- IRC_IM_FEEDBK_REVIEWS](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/ircimfeedbkreviews.html)
 - [[hcm-module-data-dictionary]] -- Dossie do modulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[feedbackdetailspvo|FeedbackDetailsPVO]] (HCM · BICC: 3/8)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | CreatedBy2 | — |
+| CREATION_DATE | CreationDate2 | — |
+| FEEDBACK_REQUEST_ID | FeedbackRequestId | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate2 | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin2 | — |
+| LAST_UPDATED_BY | LastUpdatedBy2 | — |
+| PERSON_ID | PersonId | — |
+| REVIEW_DATE | ReviewDate | ✅ |

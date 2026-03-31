@@ -119,3 +119,32 @@ WHERE  a.CAMPAIGN_ID = :p_campaign_id
 
 - [Oracle Docs — IRC_CAMP_ASSETS_B](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/irccampassetsb.html)
 - [[hcm-module-data-dictionary]] — Dossie do modulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[campassetpvo|CampAssetPVO]] (HCM · BICC: 7/14)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ASSET_ID | CampAssetBPEOAssetId | ✅ |
+| ASSET_STATUS_CODE | CampAssetBPEOAssetStatusCode | ✅ |
+| ASSET_TYPE_CODE | CampAssetBPEOAssetTypeCode | ✅ |
+| AUDIENCE_DERIVED_FLAG | CampAssetBPEOAudienceDerivedFlag | ✅ |
+| CAMPAIGN_ID | CampAssetBPEOCampaignId | — |
+| CREATED_BY | CampAssetBPEOCreatedBy | — |
+| CREATION_DATE | CampAssetBPEOCreationDate | — |
+| LAST_UPDATE_DATE | CampAssetBPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | CampAssetBPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | CampAssetBPEOLastUpdatedBy | — |
+| MESSAGE_DESIGN_ID | CampAssetBPEOMessageDesignId | — |
+| OBJECT_VERSION_NUMBER | CampAssetBPEOObjectVersionNumber | — |
+| PARENT_ASSET_ID | CampAssetBPEOParentAssetId | ✅ |
+| SCHEDULED_DATE | CampAssetBPEOScheduledDate | ✅ |
+
+### [[campmsgrecipientpvo|CampMsgRecipientPVO]] (HCM)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ASSET_ID | CampAssetBPEOAssetId | — |

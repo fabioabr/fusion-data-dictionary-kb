@@ -100,6 +100,26 @@ ORDER BY rh.HIT_DATE DESC;
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[hitspvo|HitsPVO]] (PO · BICC: 11/11)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | CreatedBy | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | LastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | ✅ |
+| REFERRAL_ID | ReferralId | ✅ |
+| REQ_HIT_ID | ReqHitId | ✅ |
+| REQUISITION_ID | RequisitionId | ✅ |
+| SHARE_ID | ShareId | ✅ |
+| SOURCE | Source | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — IRC_RF_REQ_HITS](https://docs.oracle.com/en/cloud/saas/talent-management/25a/oedmf/ircrfreqhits.html)

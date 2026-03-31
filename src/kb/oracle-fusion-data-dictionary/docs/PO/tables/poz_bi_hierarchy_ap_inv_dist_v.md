@@ -124,6 +124,17 @@ GROUP BY hv.VENDOR_NAME;
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[supplierpvo|SupplierPVO]] (PO · BICC: 2/2)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| HIERARCHY_AMOUNT | SupplierHierarchyInvDistHierarchyAmount | ✅ |
+| VENDOR_ID | SupplierHierarchyInvDistVendorId | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — POZ BI Views](https://docs.oracle.com/en/cloud/saas/procurement/25a/oedmf/poztables.html)

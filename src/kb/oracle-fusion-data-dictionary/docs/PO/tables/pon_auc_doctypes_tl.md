@@ -131,3 +131,39 @@ WHERE  tl.DOCTYPE_ID = :p_doctype_id
 
 - [Oracle Docs — PON_AUC_DOCTYPES_TL](https://docs.oracle.com/en/cloud/saas/procurement/25a/oedmf/ponaucdoctypestl.html)
 - [[po-module-data-dictionary]] — Dossiê do módulo PO/Procurement
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[negdocumenttypetranslationextractpvo|NegDocumentTypeTranslationExtractPVO]] (PO · BICC: 11/11)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | CreatedBy | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| DOCTYPE_ID | DoctypeId | ✅ |
+| LANGUAGE | Language | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | LastUpdatedBy | ✅ |
+| NAME | Name | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | ✅ |
+| RESPONSE_NAME | ResponseName | ✅ |
+| SOURCE_LANG | SourceLang | ✅ |
+
+### [[negotiationdocumenttypetranslationpvo|NegotiationDocumentTypeTranslationPVO]] (PO · BICC: 9/11)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | CreatedBy | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| DOCTYPE_ID | DoctypeId | ✅ |
+| LANGUAGE | Language | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | LastUpdatedBy | ✅ |
+| NAME | Name | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | — |
+| RESPONSE_NAME | ResponseName | — |
+| SOURCE_LANG | SourceLang | ✅ |

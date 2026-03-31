@@ -123,6 +123,50 @@ WHERE  cr.RECEIPT_DATE BETWEEN :start_date AND :end_date
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[cashremitrefextractpvo|CashRemitRefExtractPVO]] (OTHER · BICC: 35/35)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| AMOUNT_APPLIED | AmountApplied | ✅ |
+| AMOUNT_APPLIED_FROM | ArCashRemitRefAmountAppliedFrom | ✅ |
+| AUTOAPPLY_FLAG | ArCashRemitRefAutoapplyFlag | ✅ |
+| AUTOMATCH_RULE_ID | ArCashRemitRefAutomatchRuleId | ✅ |
+| BANK_ACCOUNT_NUMBER | ArCashRemitRefBankAccountNumber | ✅ |
+| CASH_RECEIPT_ID | ArCashRemitRefCashReceiptId | ✅ |
+| CREATED_BY | ArCashRemitRefCreatedBy | ✅ |
+| CREATION_DATE | ArCashRemitRefCreationDate | ✅ |
+| CUSTOMER_ID | ArCashRemitRefCustomerId | ✅ |
+| CUSTOMER_NUMBER | ArCashRemitRefCustomerNumber | ✅ |
+| CUSTOMER_TRX_ID | ArCashRemitRefCustomerTrxId | ✅ |
+| INVOICE_CURRENCY_CODE | ArCashRemitRefInvoiceCurrencyCode | ✅ |
+| INVOICE_REFERENCE | ArCashRemitRefInvoiceReference | ✅ |
+| INVOICE_STATUS | ArCashRemitRefInvoiceStatus | ✅ |
+| LAST_UPDATE_DATE | ArCashRemitRefLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ArCashRemitRefLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | ArCashRemitRefLastUpdatedBy | ✅ |
+| LOCKBOX_MATCHING_OPTION | ArCashRemitRefLockboxMatchingOption | ✅ |
+| MATCHING_DATE_REFERENCE | ArCashRemitRefMatchingDateReference | ✅ |
+| OBJECT_VERSION_NUMBER | ArCashRemitRefObjectVersionNumber | ✅ |
+| ORG_ID | ArCashRemitRefOrgId | ✅ |
+| PAY_UNRELATED_CUSTOMERS | ArCashRemitRefPayUnrelatedCustomers | ✅ |
+| PAYMENT_SCHEDULE_ID | ArCashRemitRefPaymentScheduleId | ✅ |
+| PROGRAM_APPLICATION_ID | ArCashRemitRefProgramApplicationId | ✅ |
+| PROGRAM_ID | ArCashRemitRefProgramId | ✅ |
+| PROGRAM_UPDATE_DATE | ArCashRemitRefProgramUpdateDate | ✅ |
+| RECEIPT_REFERENCE_STATUS | ArCashRemitRefReceiptReferenceStatus | ✅ |
+| REFERENCE_SOURCE | ArCashRemitRefReferenceSource | ✅ |
+| REMIT_REFERENCE_ID | ArCashRemitRefRemitReferenceId | ✅ |
+| REQUEST_ID | ArCashRemitRefRequestId | ✅ |
+| RESOLVED_MATCH_INSTALLMENT | ArCashRemitRefResolvedMatchInstallment | ✅ |
+| RESOLVED_MATCHING_DATE | ArCashRemitRefResolvedMatchingDate | ✅ |
+| RESOLVED_MATCHING_NUMBER | ArCashRemitRefResolvedMatchingNumber | ✅ |
+| TRANS_TO_RECEIPT_RATE | ArCashRemitRefTransToReceiptRate | ✅ |
+| TRANSIT_ROUTING_NUMBER | ArCashRemitRefTransitRoutingNumber | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — AR_CASH_REMIT_REFS_ALL](https://docs.oracle.com/en/cloud/saas/financials/25a/oedmf/arcashremitrefsall-25079.html)

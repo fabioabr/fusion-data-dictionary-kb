@@ -111,3 +111,17 @@ WHERE  tl.BLOCK_ID = :p_block_id;
 
 - [Oracle Docs — IRC_AF_BLOCKS_TL](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/ircafblockstl.html)
 - [[hcm-module-data-dictionary]] — Dossie do modulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[applyflowpageblockpvo|ApplyFlowPageBlockPVO]] (HCM · BICC: 1/5)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BLOCK_ID | AFBlockTranslationPEOBlockId | — |
+| BLOCK_INSTRUCTIONS | AFBlockTranslationPEOBlockInstructions | — |
+| BLOCK_NAME | AFBlockTranslationPEOBlockName | ✅ |
+| BLOCK_TITLE | AFBlockTranslationPEOBlockTitle | — |
+| LANGUAGE | AFBlockTranslationPEOLanguage | — |

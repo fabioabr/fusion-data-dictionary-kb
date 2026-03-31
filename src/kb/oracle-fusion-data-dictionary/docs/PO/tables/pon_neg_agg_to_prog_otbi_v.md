@@ -129,6 +129,40 @@ FETCH FIRST 10 ROWS ONLY;
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[sourcingobjectivenegotiationpvo|SourcingObjectiveNegotiationPVO]] (PO)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| AWARD_AMOUNT_BY_PROG | NegotiationAggToProgPEOAwardAmountByProg | — |
+| PLANNED_CURRENT_SPEND_BY_PROG | NegotiationAggToProgPEOPlannedCurrentSpendByProg | — |
+| PLANNED_SAVING_GOALS_BY_PROG | NegotiationAggToProgPEOPlannedSavingGoalsByProg | — |
+| PLANNED_TARGET_SPEND_BY_PROG | NegotiationAggToProgPEOPlannedTargetSpendByProg | — |
+| PROGRAM_HEADER_ID | NegotiationAggToProgPEOProgramHeaderId | — |
+
+### [[sourcingprogramheaderpvo|SourcingProgramHeaderPVO]] (PO)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| AWARD_AMOUNT_BY_PROG | NegotiationAggToProgPEOAwardAmountByProg | — |
+| PLANNED_CURRENT_SPEND_BY_PROG | NegotiationAggToProgPEOPlannedCurrentSpendByProg | — |
+| PLANNED_SAVING_GOALS_BY_PROG | NegotiationAggToProgPEOPlannedSavingGoalsByProg | — |
+| PLANNED_TARGET_SPEND_BY_PROG | NegotiationAggToProgPEOPlannedTargetSpendByProg | — |
+| PROGRAM_HEADER_ID | NegotiationAggToProgPEOProgramHeaderId | — |
+
+### [[sourcingprogramobjectivepvo|SourcingProgramObjectivePVO]] (PO)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| AWARD_AMOUNT_BY_PROG | NegotiationAggToProgPEOAwardAmountByProg | — |
+| PLANNED_CURRENT_SPEND_BY_PROG | NegotiationAggToProgPEOPlannedCurrentSpendByProg | — |
+| PLANNED_SAVING_GOALS_BY_PROG | NegotiationAggToProgPEOPlannedSavingGoalsByProg | — |
+| PLANNED_TARGET_SPEND_BY_PROG | NegotiationAggToProgPEOPlannedTargetSpendByProg | — |
+| PROGRAM_HEADER_ID | NegotiationAggToProgPEOProgramHeaderId | — |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — Sourcing OTBI Subject Areas](https://docs.oracle.com/en/cloud/saas/procurement/25a/oedmf/pon-tables.html)

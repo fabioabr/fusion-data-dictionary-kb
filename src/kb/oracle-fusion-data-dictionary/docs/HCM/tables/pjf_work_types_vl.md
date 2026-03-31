@@ -54,3 +54,86 @@ updated_at: 2026-03-26
 ## 📎 Uso Típico
 
 (a ser preenchido na etapa 03)
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[project|Project]] (OTHER · BICC: 1/5)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| NAME | WorkTypePEOName | ✅ |
+| OBJECT_VERSION_NUMBER | ProjectTypeWorkTypePEOObjectVersionNumber | — |
+| OBJECT_VERSION_NUMBER | WorkTypePEOObjectVersionNumber | — |
+| WORK_TYPE_ID | ProjectTypeWorkTypePEOWorkTypeId | — |
+| WORK_TYPE_ID | WorkTypePEOWorkTypeId | — |
+
+### [[projectcommitmentpvo|ProjectCommitmentPVO]] (OTHER · BICC: 2/2)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| NAME | WorkTypePEOName | ✅ |
+| WORK_TYPE_ID | WorkTypePEOWorkTypeId | ✅ |
+
+### [[projectexec|ProjectExec]] (OTHER · BICC: 1/5)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| NAME | WorkTypePEOName | ✅ |
+| OBJECT_VERSION_NUMBER | ProjectTypeWorkTypePEOObjectVersionNumber | — |
+| OBJECT_VERSION_NUMBER | WorkTypePEOObjectVersionNumber | — |
+| WORK_TYPE_ID | ProjectTypeWorkTypePEOWorkTypeId | — |
+| WORK_TYPE_ID | WorkTypePEOWorkTypeId | — |
+
+### [[projectrefpvo|ProjectRefPVO]] (OTHER · BICC: 1/5)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| NAME | WorkTypePEOName | ✅ |
+| OBJECT_VERSION_NUMBER | ProjectTypeWorkTypePEOObjectVersionNumber | — |
+| OBJECT_VERSION_NUMBER | WorkTypePEOObjectVersionNumber | — |
+| WORK_TYPE_ID | ProjectTypeWorkTypePEOWorkTypeId | — |
+| WORK_TYPE_ID | WorkTypePEOWorkTypeId | — |
+
+### [[projectview|ProjectView]] (OTHER · BICC: 1/5)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| NAME | WorkTypePEOName | ✅ |
+| OBJECT_VERSION_NUMBER | ProjectTypeWorkTypePEOObjectVersionNumber | — |
+| OBJECT_VERSION_NUMBER | WorkTypePEOObjectVersionNumber | — |
+| WORK_TYPE_ID | ProjectTypeWorkTypePEOWorkTypeId | — |
+| WORK_TYPE_ID | WorkTypePEOWorkTypeId | — |
+
+### [[taskmspvo|TaskMSPVO]] (OTHER)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| NAME | WorkTypePEOName | — |
+| OBJECT_VERSION_NUMBER | WorkTypePEOObjectVersionNumber | — |
+| WORK_TYPE_ID | WorkTypePEOWorkTypeId | — |
+
+### [[taskmsvlpvo|TaskMSVLPVO]] (OTHER)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| NAME | WorkTypePEOName | — |
+| OBJECT_VERSION_NUMBER | WorkTypePEOObjectVersionNumber | — |
+| WORK_TYPE_ID | WorkTypePEOWorkTypeId | — |
+
+### [[taskrefpvo|TaskRefPVO]] (OTHER · BICC: 1/3)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| NAME | WorkTypePEOName | ✅ |
+| OBJECT_VERSION_NUMBER | WorkTypePEOObjectVersionNumber | — |
+| WORK_TYPE_ID | WorkTypePEOWorkTypeId | — |
+
+### [[taskvlpvo|TaskVLPVO]] (OTHER · BICC: 1/3)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| NAME | WorkTypePEOName | ✅ |
+| OBJECT_VERSION_NUMBER | WorkTypePEOObjectVersionNumber | — |
+| WORK_TYPE_ID | WorkTypePEOWorkTypeId | — |

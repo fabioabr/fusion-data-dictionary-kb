@@ -107,3 +107,48 @@ WHERE  tl.PERSON_TYPE_ID = :p_person_type_id
 
 - [Oracle Docs — PER_PERSON_TYPES_TL](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/perpersontypestl.html)
 - [[hcm-module-data-dictionary]] — Dossiê do módulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[globalpersonpvo|GlobalPersonPVO]] (HCM · BICC: 4/4)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| LANGUAGE | PersonTypesTranslationPEOLanguage | ✅ |
+| LAST_UPDATE_DATE | PersonTypesTranslationPEOLastUpdateDate | ✅ |
+| PERSON_TYPE_ID | PersonTypesTranslationPEOPersonTypeId | ✅ |
+| USER_PERSON_TYPE | PersonTypesTranslationPEOUserPersonType | ✅ |
+
+### [[globalpersonpvoviewall|GlobalPersonPVOViewAll]] (HCM · BICC: 2/4)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| LANGUAGE | PersonTypesTranslationPEOLanguage | — |
+| LAST_UPDATE_DATE | PersonTypesTranslationPEOLastUpdateDate | ✅ |
+| PERSON_TYPE_ID | PersonTypesTranslationPEOPersonTypeId | — |
+| USER_PERSON_TYPE | PersonTypesTranslationPEOUserPersonType | ✅ |
+
+### [[personrefpvo|PersonRefPVO]] (HCM · BICC: 1/3)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| LANGUAGE | PersonTypesTranslationPEOLanguage | — |
+| PERSON_TYPE_ID | PersonTypesTranslationPEOPersonTypeId | — |
+| USER_PERSON_TYPE | PersonTypesTranslationPEOUserPersonType | ✅ |
+
+### [[persontypestranslationpvo|PersonTypesTranslationPVO]] (HCM · BICC: 8/10)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | PersonTypesTranslationPEOCreatedBy | ✅ |
+| CREATION_DATE | PersonTypesTranslationPEOCreationDate | ✅ |
+| LANGUAGE | Language | ✅ |
+| LAST_UPDATE_DATE | PersonTypesTranslationPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | PersonTypesTranslationPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | PersonTypesTranslationPEOLastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | PersonTypesTranslationPEOObjectVersionNumber | — |
+| PERSON_TYPE_ID | PersonTypeId | ✅ |
+| SOURCE_LANG | PersonTypesTranslationPEOSourceLang | ✅ |
+| USER_PERSON_TYPE | PersonTypesTranslationPEOUserPersonType | ✅ |

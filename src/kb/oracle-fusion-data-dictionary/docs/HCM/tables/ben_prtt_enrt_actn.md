@@ -38,7 +38,6 @@ updated_at: 2026-03-25
 
 Armazena as **ações executadas** durante o processo de inscrição de benefícios (ex.: inscrição, alteração de opção, cancelamento, waive).
 
-
 ---
 
 ## 🧠 Propósito de Negócio
@@ -98,6 +97,106 @@ WHERE  ROWNUM <= 100;
 
 - Consultar documentação oficial Oracle para detalhes de uso.
 - Tabela do módulo Benefits (Ações de Inscrição de Participante).
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[personenrollmentactionpvo|PersonEnrollmentActionPVO]] (HCM · BICC: 12/91)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTN_TYP_ID | ActnTypId | ✅ |
+| ACTN_TYP_LVL_CD | ActnTypLvlCd | ✅ |
+| BUSINESS_GROUP_ID | BusinessGroupId | — |
+| CMPLTD_DT | CmpltdDt | ✅ |
+| CREATED_BY | CreatedBy | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| DUE_DT | DueDt | ✅ |
+| ELIG_CVRD_DPNT_ID | EligCvrdDpntId | — |
+| ENDED_PER_IN_LER_ID | EndedPerInLerId | — |
+| JOB_DEFINITION_NAME | JobDefinitionName | — |
+| JOB_DEFINITION_PACKAGE | JobDefinitionPackage | — |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | LastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | — |
+| PEA_ATTRIBUTE1 | PeaAttribute1 | — |
+| PEA_ATTRIBUTE10 | PeaAttribute10 | — |
+| PEA_ATTRIBUTE11 | PeaAttribute11 | — |
+| PEA_ATTRIBUTE12 | PeaAttribute12 | — |
+| PEA_ATTRIBUTE13 | PeaAttribute13 | — |
+| PEA_ATTRIBUTE14 | PeaAttribute14 | — |
+| PEA_ATTRIBUTE15 | PeaAttribute15 | — |
+| PEA_ATTRIBUTE16 | PeaAttribute16 | — |
+| PEA_ATTRIBUTE17 | PeaAttribute17 | — |
+| PEA_ATTRIBUTE18 | PeaAttribute18 | — |
+| PEA_ATTRIBUTE19 | PeaAttribute19 | — |
+| PEA_ATTRIBUTE2 | PeaAttribute2 | — |
+| PEA_ATTRIBUTE20 | PeaAttribute20 | — |
+| PEA_ATTRIBUTE21 | PeaAttribute21 | — |
+| PEA_ATTRIBUTE22 | PeaAttribute22 | — |
+| PEA_ATTRIBUTE23 | PeaAttribute23 | — |
+| PEA_ATTRIBUTE24 | PeaAttribute24 | — |
+| PEA_ATTRIBUTE25 | PeaAttribute25 | — |
+| PEA_ATTRIBUTE26 | PeaAttribute26 | — |
+| PEA_ATTRIBUTE27 | PeaAttribute27 | — |
+| PEA_ATTRIBUTE28 | PeaAttribute28 | — |
+| PEA_ATTRIBUTE29 | PeaAttribute29 | — |
+| PEA_ATTRIBUTE3 | PeaAttribute3 | — |
+| PEA_ATTRIBUTE30 | PeaAttribute30 | — |
+| PEA_ATTRIBUTE4 | PeaAttribute4 | — |
+| PEA_ATTRIBUTE5 | PeaAttribute5 | — |
+| PEA_ATTRIBUTE6 | PeaAttribute6 | — |
+| PEA_ATTRIBUTE7 | PeaAttribute7 | — |
+| PEA_ATTRIBUTE8 | PeaAttribute8 | — |
+| PEA_ATTRIBUTE9 | PeaAttribute9 | — |
+| PEA_ATTRIBUTE_CATEGORY | PeaAttributeCategory | — |
+| PEA_ATTRIBUTE_DATE1 | PeaAttributeDate1 | — |
+| PEA_ATTRIBUTE_DATE10 | PeaAttributeDate10 | — |
+| PEA_ATTRIBUTE_DATE11 | PeaAttributeDate11 | — |
+| PEA_ATTRIBUTE_DATE12 | PeaAttributeDate12 | — |
+| PEA_ATTRIBUTE_DATE13 | PeaAttributeDate13 | — |
+| PEA_ATTRIBUTE_DATE14 | PeaAttributeDate14 | — |
+| PEA_ATTRIBUTE_DATE15 | PeaAttributeDate15 | — |
+| PEA_ATTRIBUTE_DATE2 | PeaAttributeDate2 | — |
+| PEA_ATTRIBUTE_DATE3 | PeaAttributeDate3 | — |
+| PEA_ATTRIBUTE_DATE4 | PeaAttributeDate4 | — |
+| PEA_ATTRIBUTE_DATE5 | PeaAttributeDate5 | — |
+| PEA_ATTRIBUTE_DATE6 | PeaAttributeDate6 | — |
+| PEA_ATTRIBUTE_DATE7 | PeaAttributeDate7 | — |
+| PEA_ATTRIBUTE_DATE8 | PeaAttributeDate8 | — |
+| PEA_ATTRIBUTE_DATE9 | PeaAttributeDate9 | — |
+| PEA_ATTRIBUTE_NUMBER1 | PeaAttributeNumber1 | — |
+| PEA_ATTRIBUTE_NUMBER10 | PeaAttributeNumber10 | — |
+| PEA_ATTRIBUTE_NUMBER11 | PeaAttributeNumber11 | — |
+| PEA_ATTRIBUTE_NUMBER12 | PeaAttributeNumber12 | — |
+| PEA_ATTRIBUTE_NUMBER13 | PeaAttributeNumber13 | — |
+| PEA_ATTRIBUTE_NUMBER14 | PeaAttributeNumber14 | — |
+| PEA_ATTRIBUTE_NUMBER15 | PeaAttributeNumber15 | — |
+| PEA_ATTRIBUTE_NUMBER16 | PeaAttributeNumber16 | — |
+| PEA_ATTRIBUTE_NUMBER17 | PeaAttributeNumber17 | — |
+| PEA_ATTRIBUTE_NUMBER18 | PeaAttributeNumber18 | — |
+| PEA_ATTRIBUTE_NUMBER19 | PeaAttributeNumber19 | — |
+| PEA_ATTRIBUTE_NUMBER2 | PeaAttributeNumber2 | — |
+| PEA_ATTRIBUTE_NUMBER20 | PeaAttributeNumber20 | — |
+| PEA_ATTRIBUTE_NUMBER3 | PeaAttributeNumber3 | — |
+| PEA_ATTRIBUTE_NUMBER4 | PeaAttributeNumber4 | — |
+| PEA_ATTRIBUTE_NUMBER5 | PeaAttributeNumber5 | — |
+| PEA_ATTRIBUTE_NUMBER6 | PeaAttributeNumber6 | — |
+| PEA_ATTRIBUTE_NUMBER7 | PeaAttributeNumber7 | — |
+| PEA_ATTRIBUTE_NUMBER8 | PeaAttributeNumber8 | — |
+| PEA_ATTRIBUTE_NUMBER9 | PeaAttributeNumber9 | — |
+| PER_IN_LER_ID | PerInLerId | — |
+| PL_BNF_ID | PlBnfId | — |
+| PROGRAM_APP_NAME | ProgramAppName | — |
+| PROGRAM_NAME | ProgramName | — |
+| PROGRAM_UPDATE_DATE | ProgramUpdateDate | — |
+| PRTT_ENRT_ACTN_ID | PrttEnrtActnId | ✅ |
+| PRTT_ENRT_RSLT_ID | PrttEnrtRsltId | — |
+| REQUEST_ID | RequestId | — |
+| RQD_FLAG | RqdFlag | ✅ |
+| SSPND_FLAG | SspndFlag | ✅ |
 
 ---
 

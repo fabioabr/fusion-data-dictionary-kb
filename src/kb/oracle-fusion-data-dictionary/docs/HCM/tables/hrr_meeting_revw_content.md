@@ -92,6 +92,27 @@ Documenta decisões e ações de talent review.
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[meetingrevwcontentpvo|MeetingRevwContentPVO]] (HCM · BICC: 12/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | BusinessGroupId | ✅ |
+| CREATED_BY | CreatedBy | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | LastUpdatedBy | ✅ |
+| MEETING_ID | MeetingId | ✅ |
+| METRIC_ID | MetricId | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | ✅ |
+| REVIEW_CONTENT_ID | ReviewContentId | ✅ |
+| USE_AS_AXIS_FLAG | UseAsAxisFlag | ✅ |
+| USE_AS_UNDERLAY_FLAG | UseAsUnderlayFlag | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Fusion HCM Tables and Views](https://docs.oracle.com/en/cloud/saas/human-resources/25a/)

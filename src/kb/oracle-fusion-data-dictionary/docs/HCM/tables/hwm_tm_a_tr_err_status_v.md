@@ -40,7 +40,6 @@ View que exibe registros de tempo com erros de transferência pendentes de aprov
 > [!note] Sufixo _V
 > O sufixo `_V` indica **view** — objeto somente leitura que consolida dados de uma ou mais tabelas para facilitar consultas.
 
-
 ---
 
 ## 🧠 Propósito de Negócio
@@ -103,6 +102,36 @@ WHERE  t.STATUS_CODE = 'APPROVED'
 
 - View somente leitura: não permite INSERT, UPDATE ou DELETE direto.
 - Área funcional: Time Management dentro do Oracle Fusion Cloud HCM.
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[historicreportedtimeentrypvo|HistoricReportedTimeEntryPVO]] (HCM)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| STATUS_ID | TimeEntryErrorStatusId | — |
+| STATUS_VALUE | TimeEntryErrorStatusValue | — |
+
+### [[historicrptabstimeentrypvo|HistoricRptAbsTimeEntryPVO]] (HCM)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| STATUS_ID | TimeAtomicErrorStatusPEOStatusId | — |
+
+### [[reportedtimeentrypvo|ReportedTimeEntryPVO]] (HCM)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| STATUS_ID | TimeEntryErrorStatusId | — |
+| STATUS_VALUE | TimeEntryErrorStatusValue | — |
+
+### [[rptabstimeentrypvo|RptAbsTimeEntryPVO]] (HCM)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| STATUS_ID | TimeAtomicErrorStatusPEOStatusId | — |
 
 ---
 

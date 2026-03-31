@@ -39,7 +39,6 @@ updated_at: 2026-03-25
 
 Armazena os **alertas gerados no Compensation Workbench (CWB)** durante ciclos de revisão de compensação. Inclui violações de faixa salarial, estouros de orçamento e outras regras de negócio.
 
-
 ---
 
 ## 🧠 Propósito de Negócio
@@ -108,6 +107,31 @@ WHERE  a.ALERT_STATUS = 'OPEN'
 - Alertas são gerados automaticamente durante o cálculo de compensação no CWB.
 - O status `OVERRIDDEN` indica que o gestor reconheceu e ignorou o alerta (com justificativa).
 - Alertas `OPEN` podem bloquear a aprovação do ciclo dependendo da configuração.
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[alertspvo|AlertsPVO]] (HCM · BICC: 11/16)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ALERT_ID | AlertsPEOAlertId | ✅ |
+| BUSINESS_GROUP_ID | AlertsPEOBusinessGroupId | — |
+| CREATED_BY | AlertsPEOCreatedBy | ✅ |
+| CREATION_DATE | AlertsPEOCreationDate | ✅ |
+| DISPLAY_FLAG | AlertsPEODisplayFlag | ✅ |
+| HIDE_FROM_MANAGER_FLAG | AlertsPEOHideFromManagerFlag | ✅ |
+| LAST_UPDATE_DATE | AlertsPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | AlertsPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | AlertsPEOLastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | AlertsPEOObjectVersionNumber | — |
+| PERIOD_ID | AlertsPEOPeriodId | — |
+| PERSON_EVENT_ID | AlertsPEOPersonEventId | ✅ |
+| PLAN_ID | AlertsPEOPlanId | — |
+| TRIGGER_SOURCE | AlertsPEOTriggerSource | ✅ |
+| TRIGGERED_BY | AlertsPEOTriggeredBy | ✅ |
+| TRIGGERED_DATE | AlertsPEOTriggeredDate | ✅ |
 
 ---
 

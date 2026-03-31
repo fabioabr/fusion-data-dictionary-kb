@@ -93,6 +93,57 @@ WHERE  tl.CATEGORY_ID = :p_id AND tl.LANGUAGE = USERENV('LANG');
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[folderp1|FolderP1]] (HCM · BICC: 2/5)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | CategoryTranslationPEOBusinessGroupId | — |
+| CATEGORY_ID | CategoryTranslationPEOCategoryId | — |
+| LANGUAGE | CategoryTranslationPEOLanguage | — |
+| LAST_UPDATE_DATE | CategoryTranslationPEOLastUpdateDate | ✅ |
+| NAME | CategoryTranslationPEOName | ✅ |
+
+### [[questionnairequestionfolderpvo|QuestionnaireQuestionFolderPVO]] (HCM · BICC: 5/5)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | CategoryTranslationPEOBusinessGroupId | ✅ |
+| CATEGORY_ID | CategoryTranslationPEOCategoryId | ✅ |
+| LANGUAGE | CategoryTranslationPEOLanguage | ✅ |
+| LAST_UPDATE_DATE | CategoryTranslationPEOLastUpdateDate | ✅ |
+| NAME | CategoryTranslationPEOName | ✅ |
+
+### [[requisitionqstnrexternalviewallpvo|RequisitionQstnrExternalViewAllPVO]] (PO · BICC: 1/4)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | CategoryTranslationPEOBusinessGroupId | — |
+| CATEGORY_ID | CategoryTranslationPEOCategoryId | — |
+| LANGUAGE | CategoryTranslationPEOLanguage | — |
+| NAME | CategoryTranslationPEOName | ✅ |
+
+### [[requisitionqstnrinternalviewallpvo|RequisitionQstnrInternalViewAllPVO]] (PO · BICC: 1/4)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | CategoryTranslationPEOBusinessGroupId | — |
+| CATEGORY_ID | CategoryTranslationPEOCategoryId | — |
+| LANGUAGE | CategoryTranslationPEOLanguage | — |
+| NAME | CategoryTranslationPEOName | ✅ |
+
+### [[requisitionqstnrinterviewviewallpvo|RequisitionQstnrInterviewViewAllPVO]] (PO · BICC: 1/4)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | CategoryTranslationPEOBusinessGroupId | — |
+| CATEGORY_ID | CategoryTranslationPEOCategoryId | — |
+| LANGUAGE | CategoryTranslationPEOLanguage | — |
+| NAME | CategoryTranslationPEOName | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Fusion HCM Tables and Views](https://docs.oracle.com/en/cloud/saas/human-resources/25a/)

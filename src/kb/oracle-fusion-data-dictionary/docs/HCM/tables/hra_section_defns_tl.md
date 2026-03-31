@@ -114,6 +114,46 @@ WHERE  tl.LANGUAGE = USERENV('LANG');
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[performancedocsectionpvo|PerformanceDocSectionPVO]] (HCM · BICC: 4/13)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | SectionDefnTlPEOBusinessGroupId | — |
+| COMMENTS | SectionDefnTlPEOComments | — |
+| CREATED_BY | SectionDefnTlPEOCreatedBy | — |
+| CREATION_DATE | SectionDefnTlPEOCreationDate | — |
+| DESCRIPTION | SectionDefnTlPEODescription | — |
+| LANGUAGE | Language | ✅ |
+| LAST_UPDATE_DATE | SectionDefnTlPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | SectionDefnTlPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | SectionDefnTlPEOLastUpdatedBy | — |
+| NAME | SectionDefnTlPEOName | ✅ |
+| OBJECT_VERSION_NUMBER | SectionDefnTlPEOObjectVersionNumber | — |
+| SECTION_DEF_ID | SectionDefnTlPEOSectionDefId | ✅ |
+| SOURCE_LANG | SectionDefnTlPEOSourceLang | — |
+
+### [[sectiontypepvo|SectionTypePVO]] (HCM · BICC: 3/13)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | BusinessGroupId1 | — |
+| COMMENTS | Comments | — |
+| CREATED_BY | CreatedBy1 | — |
+| CREATION_DATE | CreationDate1 | — |
+| DESCRIPTION | Description | ✅ |
+| LANGUAGE | Language | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate1 | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin1 | — |
+| LAST_UPDATED_BY | LastUpdatedBy1 | — |
+| NAME | Name | — |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber1 | — |
+| SECTION_DEF_ID | SectionDefId1 | — |
+| SOURCE_LANG | SourceLang | — |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — HRA_SECTION_DEFNS_TL](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/hrasectiondefnstl.html)

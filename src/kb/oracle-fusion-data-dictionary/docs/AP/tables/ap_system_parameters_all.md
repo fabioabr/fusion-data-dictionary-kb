@@ -103,3 +103,40 @@ SELECT asp.ORG_ID,
 - Oracle Fusion Cloud Financials — Accounts Payable Tables (OEDMF Release 13).
 - Oracle Fusion Cloud — AP System Parameters Setup Documentation.
 - Oracle Fusion Cloud ERP Schema Reference (Release 25A).
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[disbursementheaderpvo|DisbursementHeaderPVO]] (AP · BICC: 1/3)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| OBJECT_VERSION_NUMBER | SystemOptionObjectVersionNumber | — |
+| ORG_ID | SystemOptionOrgId | — |
+| WHEN_TO_ACCOUNT_PMT | SystemOptionWhenToAccountPmt | ✅ |
+
+### [[disbursementhistoryheaderpvo|DisbursementHistoryHeaderPVO]] (AP)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| OBJECT_VERSION_NUMBER | SystemOptionObjectVersionNumber | — |
+| ORG_ID | SystemOptionOrgId | — |
+| WHEN_TO_ACCOUNT_PMT | SystemOptionWhenToAccountPmt | — |
+
+### [[paiddisbursementschedulepvo|PaidDisbursementSchedulePVO]] (AP · BICC: 1/3)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| OBJECT_VERSION_NUMBER | SystemOptionObjectVersionNumber | — |
+| ORG_ID | SystemOptionOrgId | — |
+| WHEN_TO_ACCOUNT_PMT | SystemOptionWhenToAccountPmt | ✅ |
+
+### [[paymenthistorydistributionpvo|PaymentHistoryDistributionPVO]] (AP · BICC: 2/4)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| LAST_UPDATE_DATE | SystemOptionLastUpdateDate | ✅ |
+| OBJECT_VERSION_NUMBER | SystemOptionObjectVersionNumber | — |
+| ORG_ID | SystemOptionOrgId | — |
+| WHEN_TO_ACCOUNT_PMT | SystemOptionWhenToAccountPmt | ✅ |

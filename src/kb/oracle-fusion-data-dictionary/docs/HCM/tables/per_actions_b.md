@@ -110,6 +110,100 @@ ORDER BY pa.ACTION_CODE;
 - Ações são a base para todas as movimentações do ciclo de vida do colaborador.
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[actionoccurrencespvo|ActionOccurrencesPVO]] (GL · BICC: 1/16)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACT_INFORMATION1 | ActionsPEOActInformation1 | — |
+| ACT_INFORMATION2 | ActionsPEOActInformation2 | — |
+| ACTION_CODE | ActionsPEOActionCode | — |
+| ACTION_ID | ActionsPEOActionId | — |
+| ACTION_TYPE_CODE | ActionsPEOActionTypeCode | — |
+| ACTION_TYPE_ID | ActionsPEOActionTypeId | — |
+| BUSINESS_GROUP_ID | ActionsPEOBusinessGroupId | — |
+| CREATED_BY | ActionsPEOCreatedBy | — |
+| CREATION_DATE | ActionsPEOCreationDate | — |
+| END_DATE | ActionsPEOEndDate | — |
+| LAST_UPDATE_DATE | ActionsPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ActionsPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | ActionsPEOLastUpdatedBy | — |
+| MODULE_ID | ActionsPEOModuleId | — |
+| OBJECT_VERSION_NUMBER | ActionsPEOObjectVersionNumber | — |
+| START_DATE | ActionsPEOStartDate | — |
+
+### [[actionspvo|ActionsPVO]] (GL · BICC: 18/23)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACT_INFORMATION1 | ActionsPEOActInformation1 | ✅ |
+| ACT_INFORMATION2 | ActionsPEOActInformation2 | ✅ |
+| ACTION_CODE | ActionsPEOActionCode | ✅ |
+| ACTION_ID | ActionId | ✅ |
+| ACTION_TYPE_CODE | ActionsPEOActionTypeCode | ✅ |
+| ACTION_TYPE_ID | ActionsPEOActionTypeId | ✅ |
+| ALL_ROLES | ActionsPEOAllRoles | ✅ |
+| BUSINESS_GROUP_ID | ActionsPEOBusinessGroupId | ✅ |
+| COUNTRY | ActionsPEOCountry | ✅ |
+| CREATED_BY | ActionsPEOCreatedBy | ✅ |
+| CREATION_DATE | ActionsPEOCreationDate | ✅ |
+| DFLT_ASG_STATUS_TYPE_ID | ActionsPEODfltAsgStatusTypeId | ✅ |
+| END_DATE | ActionsPEOEndDate | ✅ |
+| IS_SYSTEM_ACTION | ActionsPEOIsSystemAction | ✅ |
+| LAST_UPDATE_DATE | ActionsPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ActionsPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | ActionsPEOLastUpdatedBy | ✅ |
+| MODULE_ID | ActionsPEOModuleId | — |
+| OBJECT_VERSION_NUMBER | ActionsPEOObjectVersionNumber | — |
+| SEED_DATA_SOURCE | ActionsPEOSeedDataSource | — |
+| SGUID | ActionsPEOSguid | — |
+| START_DATE | ActionsPEOStartDate | ✅ |
+| USED_IN_CONTRACT | ActionsPEOUsedInContract | ✅ |
+
+### [[checklisttasktemplatepvo|ChecklistTaskTemplatePVO]] (HCM)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_CODE | ActionsPEOActionCode | — |
+| ACTION_ID | ActionsPEOActionId | — |
+| ACTION_TYPE_CODE | ActionsPEOActionTypeCode | — |
+| ACTION_TYPE_ID | ActionsPEOActionTypeId | — |
+
+### [[checklisttemplatepvo|ChecklistTemplatePVO]] (HCM)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_CODE | ActionsPEOActionCode | — |
+| ACTION_ID | ActionsPEOActionId | — |
+| ACTION_TYPE_CODE | ActionsPEOActionTypeCode | — |
+| ACTION_TYPE_ID | ActionsPEOActionTypeId | — |
+
+### [[contractpvo|ContractPVO]] (HCM · BICC: 1/3)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_CODE | ActionsPEOActionCode | ✅ |
+| ACTION_ID | ActionsPEOActionId | — |
+| BUSINESS_GROUP_ID | ActionsPEOBusinessGroupId | — |
+
+### [[contractpvoviewall|ContractPVOViewAll]] (HCM)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_CODE | ActionsPEOActionCode | — |
+| ACTION_ID | ActionsPEOActionId | — |
+| BUSINESS_GROUP_ID | ActionsPEOBusinessGroupId | — |
+
+### [[gradeladderpvo|GradeLadderPVO]] (GL · BICC: 1/2)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_ID | ProgressionActionsPEOActionId | — |
+| LAST_UPDATE_DATE | ProgressionActionsPEOLastUpdateDate | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — PER_ACTIONS_B](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/peractionsb.html)

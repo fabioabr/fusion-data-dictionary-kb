@@ -100,6 +100,19 @@ WHERE  omu.PAYROLL_ID = :p_payroll_id
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[personalpaymentmethoddetailsdpvo|PersonalPaymentMethodDetailsDPVO]] (AP · BICC: 1/4)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| EFFECTIVE_END_DATE | OrgPaymentMethodUsageDPEOEffectiveEndDate | — |
+| EFFECTIVE_START_DATE | OrgPaymentMethodUsageDPEOEffectiveStartDate | ✅ |
+| ORG_PAY_METHOD_USAGE_ID | OrgPaymentMethodUsageDPEOOrgPayMethodUsageId | — |
+| PAYROLL_ID | OrgPaymentMethodUsageDPEOPayrollId | — |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — PAY_ORG_PAY_METHOD_USAGES_F](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/payorgpaymethodusagesf.html)

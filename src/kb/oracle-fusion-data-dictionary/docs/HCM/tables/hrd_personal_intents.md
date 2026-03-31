@@ -104,6 +104,218 @@ WHERE  pi.PERSON_ID = :p_person_id
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[careerdevgoalpvo|CareerDevGoalPVO]] (HCM · BICC: 1/11)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | BusinessGroupId1 | — |
+| CREATED_BY | CreatedBy1 | — |
+| CREATION_DATE | CreationDate1 | — |
+| INTENT_NAME | IntentName | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate1 | — |
+| LAST_UPDATE_LOGIN | LastUpdateLogin1 | — |
+| LAST_UPDATED_BY | LastUpdatedBy1 | — |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber1 | — |
+| PERSON_ID | PersonId1 | — |
+| PERSONAL_INTENT_ID | PersonalIntentId | — |
+| PRIVACY_FLAG | PrivacyFlag | — |
+
+### [[careerdevgoalpvoviewall|CareerDevGoalPVOViewAll]] (HCM · BICC: 2/11)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | BusinessGroupId1 | — |
+| CREATED_BY | CreatedBy1 | — |
+| CREATION_DATE | CreationDate1 | — |
+| INTENT_NAME | IntentName | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate1 | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin1 | — |
+| LAST_UPDATED_BY | LastUpdatedBy1 | — |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber1 | — |
+| PERSON_ID | PersonId1 | — |
+| PERSONAL_INTENT_ID | PersonalIntentId | — |
+| PRIVACY_FLAG | PrivacyFlag | — |
+
+### [[careerdevgoalversionpvo|CareerDevGoalVersionPVO]] (HCM · BICC: 2/11)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | BusinessGroupId1 | — |
+| CREATED_BY | CreatedBy1 | — |
+| CREATION_DATE | CreationDate1 | — |
+| INTENT_NAME | IntentName | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate1 | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin1 | — |
+| LAST_UPDATED_BY | LastUpdatedBy1 | — |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber1 | — |
+| PERSON_ID | PersonId1 | — |
+| PERSONAL_INTENT_ID | PersonalIntentId | — |
+| PRIVACY_FLAG | PrivacyFlag | — |
+
+### [[careerdevgoalversionpvoviewall|CareerDevGoalVersionPVOViewAll]] (HCM · BICC: 2/11)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | BusinessGroupId1 | — |
+| CREATED_BY | CreatedBy1 | — |
+| CREATION_DATE | CreationDate1 | — |
+| INTENT_NAME | IntentName | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate1 | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin1 | — |
+| LAST_UPDATED_BY | LastUpdatedBy1 | — |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber1 | — |
+| PERSON_ID | PersonId1 | — |
+| PERSONAL_INTENT_ID | PersonalIntentId | — |
+| PRIVACY_FLAG | PrivacyFlag | — |
+
+### [[developmentgoalpvo|DevelopmentGoalPVO]] (HCM · BICC: 2/11)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | BusinessGroupId1 | — |
+| CREATED_BY | CreatedBy1 | — |
+| CREATION_DATE | CreationDate1 | — |
+| INTENT_NAME | IntentName | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate1 | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin1 | — |
+| LAST_UPDATED_BY | LastUpdatedBy1 | — |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber1 | — |
+| PERSON_ID | PersonId1 | — |
+| PERSONAL_INTENT_ID | PersonalIntentId | — |
+| PRIVACY_FLAG | PrivacyFlag | — |
+
+### [[developmentgoalpvoviewall|DevelopmentGoalPVOViewAll]] (HCM · BICC: 2/11)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | BusinessGroupId1 | — |
+| CREATED_BY | CreatedBy1 | — |
+| CREATION_DATE | CreationDate1 | — |
+| INTENT_NAME | IntentName | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate1 | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin1 | — |
+| LAST_UPDATED_BY | LastUpdatedBy1 | — |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber1 | — |
+| PERSON_ID | PersonId1 | — |
+| PERSONAL_INTENT_ID | PersonalIntentId | — |
+| PRIVACY_FLAG | PrivacyFlag | — |
+
+### [[goalppvo1|GoalPPVO1]] (HCM · BICC: 1/11)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | BusinessGroupId1 | — |
+| CREATED_BY | CreatedBy1 | — |
+| CREATION_DATE | CreationDate1 | — |
+| INTENT_NAME | IntentName | — |
+| LAST_UPDATE_DATE | LastUpdateDate1 | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin1 | — |
+| LAST_UPDATED_BY | LastUpdatedBy1 | — |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber1 | — |
+| PERSON_ID | PersonId1 | — |
+| PERSONAL_INTENT_ID | PersonalIntentId | — |
+| PRIVACY_FLAG | PrivacyFlag | — |
+
+### [[goalpvo_copy|GoalPVO_Copy]] (HCM · BICC: 1/11)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | BusinessGroupId1 | — |
+| CREATED_BY | CreatedBy1 | — |
+| CREATION_DATE | CreationDate1 | — |
+| INTENT_NAME | IntentName | — |
+| LAST_UPDATE_DATE | LastUpdateDate1 | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin1 | — |
+| LAST_UPDATED_BY | LastUpdatedBy1 | — |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber1 | — |
+| PERSON_ID | PersonId1 | — |
+| PERSONAL_INTENT_ID | PersonalIntentId | — |
+| PRIVACY_FLAG | PrivacyFlag | — |
+
+### [[performancegoalpvo|PerformanceGoalPVO]] (HCM)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | BusinessGroupId1 | — |
+| CREATED_BY | CreatedBy1 | — |
+| CREATION_DATE | CreationDate1 | — |
+| INTENT_NAME | IntentName | — |
+| LAST_UPDATE_DATE | LastUpdateDate1 | — |
+| LAST_UPDATE_LOGIN | LastUpdateLogin1 | — |
+| LAST_UPDATED_BY | LastUpdatedBy1 | — |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber1 | — |
+| PERSON_ID | PersonId1 | — |
+| PERSONAL_INTENT_ID | PersonalIntentId | — |
+| PRIVACY_FLAG | PrivacyFlag | — |
+
+### [[performancegoalpvoviewall|PerformanceGoalPVOViewAll]] (HCM · BICC: 1/11)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | BusinessGroupId1 | — |
+| CREATED_BY | CreatedBy1 | — |
+| CREATION_DATE | CreationDate1 | — |
+| INTENT_NAME | IntentName | — |
+| LAST_UPDATE_DATE | LastUpdateDate1 | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin1 | — |
+| LAST_UPDATED_BY | LastUpdatedBy1 | — |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber1 | — |
+| PERSON_ID | PersonId1 | — |
+| PERSONAL_INTENT_ID | PersonalIntentId | — |
+| PRIVACY_FLAG | PrivacyFlag | — |
+
+### [[performancegoalversionpvo|PerformanceGoalVersionPVO]] (HCM · BICC: 1/11)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | BusinessGroupId1 | — |
+| CREATED_BY | CreatedBy1 | — |
+| CREATION_DATE | CreationDate1 | — |
+| INTENT_NAME | IntentName | — |
+| LAST_UPDATE_DATE | LastUpdateDate1 | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin1 | — |
+| LAST_UPDATED_BY | LastUpdatedBy1 | — |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber1 | — |
+| PERSON_ID | PersonId1 | — |
+| PERSONAL_INTENT_ID | PersonalIntentId | — |
+| PRIVACY_FLAG | PrivacyFlag | — |
+
+### [[performancegoalversionpvoviewall|PerformanceGoalVersionPVOViewAll]] (HCM · BICC: 1/11)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | BusinessGroupId1 | — |
+| CREATED_BY | CreatedBy1 | — |
+| CREATION_DATE | CreationDate1 | — |
+| INTENT_NAME | IntentName | — |
+| LAST_UPDATE_DATE | LastUpdateDate1 | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin1 | — |
+| LAST_UPDATED_BY | LastUpdatedBy1 | — |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber1 | — |
+| PERSON_ID | PersonId1 | — |
+| PERSONAL_INTENT_ID | PersonalIntentId | — |
+| PRIVACY_FLAG | PrivacyFlag | — |
+
+### [[personalgoalpvo|PersonalGoalPVO]] (HCM)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | BusinessGroupId1 | — |
+| CREATED_BY | CreatedBy1 | — |
+| CREATION_DATE | CreationDate1 | — |
+| INTENT_NAME | IntentName | — |
+| LAST_UPDATE_DATE | LastUpdateDate1 | — |
+| LAST_UPDATE_LOGIN | LastUpdateLogin1 | — |
+| LAST_UPDATED_BY | LastUpdatedBy1 | — |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber1 | — |
+| PERSON_ID | PersonId1 | — |
+| PERSONAL_INTENT_ID | PersonalIntentId | — |
+| PRIVACY_FLAG | PrivacyFlag | — |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Fusion HCM Tables and Views](https://docs.oracle.com/en/cloud/saas/human-resources/25a/)

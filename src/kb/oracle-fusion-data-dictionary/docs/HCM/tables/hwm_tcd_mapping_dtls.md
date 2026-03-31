@@ -35,8 +35,6 @@ updated_at: 2026-03-25
 
 Armazena os detalhes granulares de cada mapeamento de cartão de ponto, incluindo campo de origem, campo de destino e regras de transformação.
 
-
-
 ---
 
 ## 🧠 Propósito de Negócio
@@ -101,6 +99,35 @@ ORDER BY t.SEQUENCE_NUMBER
 ## 🔒 Observações
 
 - Área funcional: Time Card Export dentro do Oracle Fusion Cloud HCM.
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[tcdmappingdetailpvo|TcdMappingDetailPVO]] (GL · BICC: 16/20)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | TcdMappingDetailPEOCreatedBy | ✅ |
+| CREATION_DATE | TcdMappingDetailPEOCreationDate | ✅ |
+| DATE_VALUE | TcdMappingDetailPEODateValue | ✅ |
+| DISP_VALUE | TcdMappingDetailPEODispValue | ✅ |
+| ENTERPRISE_ID | TcdMappingDetailPEOEnterpriseId | — |
+| LAST_UPDATE_DATE | TcdMappingDetailPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | TcdMappingDetailPEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | TcdMappingDetailPEOLastUpdatedBy | ✅ |
+| NUMBER_VALUE | TcdMappingDetailPEONumberValue | ✅ |
+| OBJECT_VERSION_NUMBER | TcdMappingDetailPEOObjectVersionNumber | — |
+| ORDER_NUMBER | TcdMappingDetailPEOOrderNumber | ✅ |
+| PARENT_TM_ATRB_FLD_ID | TcdMappingDetailPEOParentTmAtrbFldId | ✅ |
+| SEED_DATA_SOURCE | TcdMappingDetailPEOSeedDataSource | — |
+| STRING_VALUE | TcdMappingDetailPEOStringValue | ✅ |
+| TCD_MAPPING_DTL_ID | TcdMappingDetailPEOTcdMappingDtlId | ✅ |
+| TCD_MAPPING_ID | TcdMappingDetailPEOTcdMappingId | ✅ |
+| TIMESTAMP_VALUE | TcdMappingDetailPEOTimestampValue | ✅ |
+| TM_ATRB_FLD_ID | TcdMappingDetailPEOTmAtrbFldId | ✅ |
+| VALUE_TYPE | TcdMappingDetailPEOValueType | — |
+| WFM_EVENT_CD | TcdMappingDetailPEOWfmEventCd | ✅ |
 
 ---
 

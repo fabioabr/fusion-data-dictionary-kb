@@ -101,3 +101,22 @@ FROM   IRC_REQ_LANGUAGES rl WHERE rl.REQUISITION_ID = :p_id;
 
 - [Oracle Docs -- IRC_REQ_LANGUAGES](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/ircreqlanguages.html)
 - [[hcm-module-data-dictionary]] -- Dossie do modulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[requisitionlanguagepvo|RequisitionLanguagePVO]] (PO · BICC: 8/10)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | CreatedBy | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| IS_BASE_FLAG | IsBaseFlag | ✅ |
+| LANGUAGE_CODE | LanguageCode | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | — |
+| LAST_UPDATED_BY | LastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | — |
+| REQ_LANGUAGE_ID | ReqLanguageId | ✅ |
+| REQUISITION_ID | RequisitionId | ✅ |

@@ -101,6 +101,104 @@ WHERE  ap.PAYROLL_RELATIONSHIP_ID = :p_rel_id
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[biassignedpayrolldpvo|BIAssignedPayrollDPVO]] (HCM · BICC: 77/77)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ASG_INFORMATION1 | PayrollUsageDPEOAsgInformation1 | ✅ |
+| ASG_INFORMATION10 | PayrollUsageDPEOAsgInformation10 | ✅ |
+| ASG_INFORMATION11 | PayrollUsageDPEOAsgInformation11 | ✅ |
+| ASG_INFORMATION12 | PayrollUsageDPEOAsgInformation12 | ✅ |
+| ASG_INFORMATION13 | PayrollUsageDPEOAsgInformation13 | ✅ |
+| ASG_INFORMATION14 | PayrollUsageDPEOAsgInformation14 | ✅ |
+| ASG_INFORMATION15 | PayrollUsageDPEOAsgInformation15 | ✅ |
+| ASG_INFORMATION16 | PayrollUsageDPEOAsgInformation16 | ✅ |
+| ASG_INFORMATION17 | PayrollUsageDPEOAsgInformation17 | ✅ |
+| ASG_INFORMATION18 | PayrollUsageDPEOAsgInformation18 | ✅ |
+| ASG_INFORMATION19 | PayrollUsageDPEOAsgInformation19 | ✅ |
+| ASG_INFORMATION2 | PayrollUsageDPEOAsgInformation2 | ✅ |
+| ASG_INFORMATION20 | PayrollUsageDPEOAsgInformation20 | ✅ |
+| ASG_INFORMATION21 | PayrollUsageDPEOAsgInformation21 | ✅ |
+| ASG_INFORMATION22 | PayrollUsageDPEOAsgInformation22 | ✅ |
+| ASG_INFORMATION23 | PayrollUsageDPEOAsgInformation23 | ✅ |
+| ASG_INFORMATION24 | PayrollUsageDPEOAsgInformation24 | ✅ |
+| ASG_INFORMATION25 | PayrollUsageDPEOAsgInformation25 | ✅ |
+| ASG_INFORMATION26 | PayrollUsageDPEOAsgInformation26 | ✅ |
+| ASG_INFORMATION27 | PayrollUsageDPEOAsgInformation27 | ✅ |
+| ASG_INFORMATION28 | PayrollUsageDPEOAsgInformation28 | ✅ |
+| ASG_INFORMATION29 | PayrollUsageDPEOAsgInformation29 | ✅ |
+| ASG_INFORMATION3 | PayrollUsageDPEOAsgInformation3 | ✅ |
+| ASG_INFORMATION30 | PayrollUsageDPEOAsgInformation30 | ✅ |
+| ASG_INFORMATION4 | PayrollUsageDPEOAsgInformation4 | ✅ |
+| ASG_INFORMATION5 | PayrollUsageDPEOAsgInformation5 | ✅ |
+| ASG_INFORMATION6 | PayrollUsageDPEOAsgInformation6 | ✅ |
+| ASG_INFORMATION7 | PayrollUsageDPEOAsgInformation7 | ✅ |
+| ASG_INFORMATION8 | PayrollUsageDPEOAsgInformation8 | ✅ |
+| ASG_INFORMATION9 | PayrollUsageDPEOAsgInformation9 | ✅ |
+| ASG_INFORMATION_DATE1 | PayrollUsageDPEOAsgInformationDate1 | ✅ |
+| ASG_INFORMATION_DATE10 | PayrollUsageDPEOAsgInformationDate10 | ✅ |
+| ASG_INFORMATION_DATE11 | PayrollUsageDPEOAsgInformationDate11 | ✅ |
+| ASG_INFORMATION_DATE12 | PayrollUsageDPEOAsgInformationDate12 | ✅ |
+| ASG_INFORMATION_DATE13 | PayrollUsageDPEOAsgInformationDate13 | ✅ |
+| ASG_INFORMATION_DATE14 | PayrollUsageDPEOAsgInformationDate14 | ✅ |
+| ASG_INFORMATION_DATE15 | PayrollUsageDPEOAsgInformationDate15 | ✅ |
+| ASG_INFORMATION_DATE2 | PayrollUsageDPEOAsgInformationDate2 | ✅ |
+| ASG_INFORMATION_DATE3 | PayrollUsageDPEOAsgInformationDate3 | ✅ |
+| ASG_INFORMATION_DATE4 | PayrollUsageDPEOAsgInformationDate4 | ✅ |
+| ASG_INFORMATION_DATE5 | PayrollUsageDPEOAsgInformationDate5 | ✅ |
+| ASG_INFORMATION_DATE6 | PayrollUsageDPEOAsgInformationDate6 | ✅ |
+| ASG_INFORMATION_DATE7 | PayrollUsageDPEOAsgInformationDate7 | ✅ |
+| ASG_INFORMATION_DATE8 | PayrollUsageDPEOAsgInformationDate8 | ✅ |
+| ASG_INFORMATION_DATE9 | PayrollUsageDPEOAsgInformationDate9 | ✅ |
+| ASG_INFORMATION_NUMBER1 | PayrollUsageDPEOAsgInformationNumber1 | ✅ |
+| ASG_INFORMATION_NUMBER10 | PayrollUsageDPEOAsgInformationNumber10 | ✅ |
+| ASG_INFORMATION_NUMBER11 | PayrollUsageDPEOAsgInformationNumber11 | ✅ |
+| ASG_INFORMATION_NUMBER12 | PayrollUsageDPEOAsgInformationNumber12 | ✅ |
+| ASG_INFORMATION_NUMBER13 | PayrollUsageDPEOAsgInformationNumber13 | ✅ |
+| ASG_INFORMATION_NUMBER14 | PayrollUsageDPEOAsgInformationNumber14 | ✅ |
+| ASG_INFORMATION_NUMBER15 | PayrollUsageDPEOAsgInformationNumber15 | ✅ |
+| ASG_INFORMATION_NUMBER16 | PayrollUsageDPEOAsgInformationNumber16 | ✅ |
+| ASG_INFORMATION_NUMBER17 | PayrollUsageDPEOAsgInformationNumber17 | ✅ |
+| ASG_INFORMATION_NUMBER18 | PayrollUsageDPEOAsgInformationNumber18 | ✅ |
+| ASG_INFORMATION_NUMBER19 | PayrollUsageDPEOAsgInformationNumber19 | ✅ |
+| ASG_INFORMATION_NUMBER2 | PayrollUsageDPEOAsgInformationNumber2 | ✅ |
+| ASG_INFORMATION_NUMBER20 | PayrollUsageDPEOAsgInformationNumber20 | ✅ |
+| ASG_INFORMATION_NUMBER3 | PayrollUsageDPEOAsgInformationNumber3 | ✅ |
+| ASG_INFORMATION_NUMBER4 | PayrollUsageDPEOAsgInformationNumber4 | ✅ |
+| ASG_INFORMATION_NUMBER5 | PayrollUsageDPEOAsgInformationNumber5 | ✅ |
+| ASG_INFORMATION_NUMBER6 | PayrollUsageDPEOAsgInformationNumber6 | ✅ |
+| ASG_INFORMATION_NUMBER7 | PayrollUsageDPEOAsgInformationNumber7 | ✅ |
+| ASG_INFORMATION_NUMBER8 | PayrollUsageDPEOAsgInformationNumber8 | ✅ |
+| ASG_INFORMATION_NUMBER9 | PayrollUsageDPEOAsgInformationNumber9 | ✅ |
+| ASG_INFORMATION_TYPE | PayrollUsageDPEOAsgInformationType | ✅ |
+| ASSIGNED_PAYROLL_ID | PayrollUsageDPEOAssignedPayrollId | ✅ |
+| CREATED_BY | PayrollUsageDPEOCreatedBy | ✅ |
+| CREATION_DATE | PayrollUsageDPEOCreationDate | ✅ |
+| EFFECTIVE_END_DATE | PayrollUsageDPEOEffectiveEndDate | ✅ |
+| EFFECTIVE_START_DATE | PayrollUsageDPEOEffectiveStartDate | ✅ |
+| ELEMENT_CRITERIA_ID | PayrollUsageDPEOElementCriteriaId | ✅ |
+| LAST_UPDATE_DATE | PayrollUsageDPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | PayrollUsageDPEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | PayrollUsageDPEOLastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | PayrollUsageDPEOObjectVersionNumber | ✅ |
+| PRIMARY_FLAG | PayrollUsageDPEOPrimaryFlag | ✅ |
+
+### [[retroelemententry|RetroElementEntry]] (HCM · BICC: 1/7)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ASG_INFORMATION_TYPE | AssignedPayrollAsgInformationType | — |
+| ASSIGNED_PAYROLL_ID | AssignedPayrollAssignedPayrollId | — |
+| EFFECTIVE_END_DATE | AssignedPayrollEffectiveEndDate | — |
+| EFFECTIVE_START_DATE | AssignedPayrollEffectiveStartDate | ✅ |
+| ELEMENT_CRITERIA_ID | AssignedPayrollElementCriteriaId | — |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | — |
+| PRIMARY_FLAG | AssignedPayrollPrimaryFlag | — |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — PAY_ASSIGNED_PAYROLLS_F](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/payassignedpayrollsf.html)

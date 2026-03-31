@@ -111,3 +111,87 @@ WHERE  v.PERSON_ID = :p_person_id;
 
 - [Oracle Docs — HWM_TM_REP_S_PJC_ATRBS_V](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/hwmtmrepspjcatrbsv.html)
 - [[hcm-module-data-dictionary]] — Dossie do modulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[historicprocessedtimeentrypvo|HistoricProcessedTimeEntryPVO]] (HCM · BICC: 5/7)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| PJC_ATTRIBUTE_CATEGORY | PjcAttributeCategory | — |
+| PJC_BILLABLE_FLAG | PjcBillableFlag | ✅ |
+| PJC_PROJECT_ID | PjcProjectId | ✅ |
+| PJC_PROJECT_UNIT | PjcProjectUnit | ✅ |
+| PJC_TASK_ID | PjcTaskId | ✅ |
+| PJC_TIME_REPOS_ATRB_ID | PjcTimeRepositoryAttributeId | — |
+| PJC_WORK_TYPE | PjcWorkType | ✅ |
+
+### [[historicreportedtimeentrypvo|HistoricReportedTimeEntryPVO]] (HCM · BICC: 5/7)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| PJC_ATTRIBUTE_CATEGORY | PjcAttributeCategory | — |
+| PJC_BILLABLE_FLAG | PjcBillableFlag | ✅ |
+| PJC_PROJECT_ID | PjcProjectId | ✅ |
+| PJC_PROJECT_UNIT | PjcProjectUnit | ✅ |
+| PJC_TASK_ID | PjcTaskId | ✅ |
+| PJC_TIME_REPOS_ATRB_ID | PjcTimeRepositoryAttributeId | — |
+| PJC_WORK_TYPE | PjcWorkType | ✅ |
+
+### [[historicrptabstimeentrypvo|HistoricRptAbsTimeEntryPVO]] (HCM · BICC: 9/11)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| PJC_ATTRIBUTE_CATEGORY | SimpleProjectsAttributePEOPjcAttributeCategory | — |
+| PJC_BILLABLE_FLAG | SimpleProjectsAttributePEOPjcBillableFlag | ✅ |
+| PJC_CAPITALIZABLE_FLAG | SimpleProjectsAttributePEOPjcCapitalizableFlag | ✅ |
+| PJC_CONTRACT_ID | SimpleProjectsAttributePEOPjcContractId | ✅ |
+| PJC_EXP_ORGANIZATION_ID | SimpleProjectsAttributePEOPjcExpOrganizationId | ✅ |
+| PJC_FUNDING_SOURCE_ID | SimpleProjectsAttributePEOPjcFundingSourceId | ✅ |
+| PJC_PROJECT_ID | SimpleProjectsAttributePEOPjcProjectId | ✅ |
+| PJC_PROJECT_UNIT | SimpleProjectsAttributePEOPjcProjectUnit | ✅ |
+| PJC_TASK_ID | SimpleProjectsAttributePEOPjcTaskId | ✅ |
+| PJC_TIME_REPOS_ATRB_ID | SimpleProjectsAttributePEOPjcTimeRepositoryAttributeId | — |
+| PJC_WORK_TYPE | SimpleProjectsAttributePEOPjcWorkType | ✅ |
+
+### [[processedtimeentrypvo|ProcessedTimeEntryPVO]] (HCM · BICC: 5/7)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| PJC_ATTRIBUTE_CATEGORY | PjcAttributeCategory | — |
+| PJC_BILLABLE_FLAG | PjcBillableFlag | ✅ |
+| PJC_PROJECT_ID | PjcProjectId | ✅ |
+| PJC_PROJECT_UNIT | PjcProjectUnit | ✅ |
+| PJC_TASK_ID | PjcTaskId | ✅ |
+| PJC_TIME_REPOS_ATRB_ID | PjcTimeRepositoryAttributeId | — |
+| PJC_WORK_TYPE | PjcWorkType | ✅ |
+
+### [[reportedtimeentrypvo|ReportedTimeEntryPVO]] (HCM · BICC: 5/7)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| PJC_ATTRIBUTE_CATEGORY | PjcAttributeCategory | — |
+| PJC_BILLABLE_FLAG | PjcBillableFlag | ✅ |
+| PJC_PROJECT_ID | PjcProjectId | ✅ |
+| PJC_PROJECT_UNIT | PjcProjectUnit | ✅ |
+| PJC_TASK_ID | PjcTaskId | ✅ |
+| PJC_TIME_REPOS_ATRB_ID | PjcTimeRepositoryAttributeId | — |
+| PJC_WORK_TYPE | PjcWorkType | ✅ |
+
+### [[rptabstimeentrypvo|RptAbsTimeEntryPVO]] (HCM · BICC: 9/11)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| PJC_ATTRIBUTE_CATEGORY | SimpleProjectsAttributePEOPjcAttributeCategory | — |
+| PJC_BILLABLE_FLAG | SimpleProjectsAttributePEOPjcBillableFlag | ✅ |
+| PJC_CAPITALIZABLE_FLAG | SimpleProjectsAttributePEOPjcCapitalizableFlag | ✅ |
+| PJC_CONTRACT_ID | SimpleProjectsAttributePEOPjcContractId | ✅ |
+| PJC_EXP_ORGANIZATION_ID | SimpleProjectsAttributePEOPjcExpOrganizationId | ✅ |
+| PJC_FUNDING_SOURCE_ID | SimpleProjectsAttributePEOPjcFundingSourceId | ✅ |
+| PJC_PROJECT_ID | SimpleProjectsAttributePEOPjcProjectId | ✅ |
+| PJC_PROJECT_UNIT | SimpleProjectsAttributePEOPjcProjectUnit | ✅ |
+| PJC_TASK_ID | SimpleProjectsAttributePEOPjcTaskId | ✅ |
+| PJC_TIME_REPOS_ATRB_ID | SimpleProjectsAttributePEOPjcTimeRepositoryAttributeId | — |
+| PJC_WORK_TYPE | SimpleProjectsAttributePEOPjcWorkType | ✅ |

@@ -52,3 +52,14 @@ updated_at: 2026-03-26
 ## 📎 Uso Típico
 
 (a ser preenchido na etapa 03)
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[invoicepaymentschedulepvo|InvoicePaymentSchedulePVO]] (AP · BICC: 2/2)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CONDITION_GROUP_ID | AwtTaxGroupConditionGroupId | ✅ |
+| CONDITION_GROUP_NAME | AwtTaxGroupConditionGroupName | ✅ |

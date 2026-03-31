@@ -104,3 +104,39 @@ WHERE  tl.RELATION_CONFIG_ID = :p_id
 
 - [Oracle Docs — HRT_RELATION_CONFIG_TL](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/hrtrelationconfigtl.html)
 - [[hcm-module-data-dictionary]] — Dossie do modulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[jobprofilepvo|JobProfilePVO]] (HCM · BICC: 1/11)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | RelationConfigTranslationPEOBusinessGroupId | — |
+| CREATED_BY | RelationConfigTranslationPEOCreatedBy | — |
+| CREATION_DATE | RelationConfigTranslationPEOCreationDate | — |
+| DESCRIPTION | RelationConfigTranslationPEODescription | — |
+| LANGUAGE | RelationConfigTranslationPEOLanguage | — |
+| LAST_UPDATE_DATE | RelationConfigTranslationPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | RelationConfigTranslationPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | RelationConfigTranslationPEOLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | RelationConfigTranslationPEOObjectVersionNumber | — |
+| RELATION_ID | RelationConfigTranslationPEORelationId | — |
+| SOURCE_LANG | RelationConfigTranslationPEOSourceLang | — |
+
+### [[relationconfigpvo|RelationConfigPVO]] (HCM · BICC: 1/11)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | RelationConfigTranslationPEOBusinessGroupId | — |
+| CREATED_BY | RelationConfigTranslationPEOCreatedBy | — |
+| CREATION_DATE | RelationConfigTranslationPEOCreationDate | — |
+| DESCRIPTION | RelationConfigTranslationPEODescription | — |
+| LANGUAGE | RelationConfigTranslationPEOLanguage | — |
+| LAST_UPDATE_DATE | RelationConfigTranslationPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | RelationConfigTranslationPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | RelationConfigTranslationPEOLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | RelationConfigTranslationPEOObjectVersionNumber | — |
+| RELATION_ID | RelationConfigTranslationPEORelationId | — |
+| SOURCE_LANG | SourceLang | — |

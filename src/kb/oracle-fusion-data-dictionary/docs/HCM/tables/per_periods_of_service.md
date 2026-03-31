@@ -125,3 +125,81 @@ WHERE  ps.ACTUAL_TERMINATION_DATE IS NULL;
 
 - [Oracle Docs — PER_PERIODS_OF_SERVICE](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/perperiodsofservice.html)
 - [[hcm-module-data-dictionary]] — Dossiê do módulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[globalpersonpvo|GlobalPersonPVO]] (HCM · BICC: 8/9)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTUAL_TERMINATION_DATE | PeriodOfServicePEOActualTerminationDate | ✅ |
+| ADJUSTED_SVC_DATE | PeriodOfServicePEOAdjustedSvcDate | — |
+| DATE_START | PeriodOfServicePEODateStart | ✅ |
+| LAST_UPDATE_DATE | PeriodOfServicePEOLastUpdateDate | ✅ |
+| NOTIFIED_TERMINATION_DATE | PeriodOfServicePEONotifiedTerminationDate | ✅ |
+| ORIGINAL_DATE_OF_HIRE | PeriodOfServicePEOOriginalDateOfHire | ✅ |
+| PERIOD_OF_SERVICE_ID | PeriodOfServicePEOPeriodOfServiceId | ✅ |
+| READY_TO_CONVERT | PeriodOfServicePEOReadyToConvert | ✅ |
+| REVOKE_USER_ACCESS | PeriodOfServicePEORevokeUserAccess | ✅ |
+
+### [[globalpersonpvoviewall|GlobalPersonPVOViewAll]] (HCM · BICC: 7/9)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTUAL_TERMINATION_DATE | PeriodOfServicePEOActualTerminationDate | ✅ |
+| ADJUSTED_SVC_DATE | PeriodOfServicePEOAdjustedSvcDate | — |
+| DATE_START | PeriodOfServicePEODateStart | ✅ |
+| LAST_UPDATE_DATE | PeriodOfServicePEOLastUpdateDate | ✅ |
+| NOTIFIED_TERMINATION_DATE | PeriodOfServicePEONotifiedTerminationDate | ✅ |
+| ORIGINAL_DATE_OF_HIRE | PeriodOfServicePEOOriginalDateOfHire | ✅ |
+| PERIOD_OF_SERVICE_ID | PeriodOfServicePEOPeriodOfServiceId | — |
+| READY_TO_CONVERT | PeriodOfServicePEOReadyToConvert | ✅ |
+| REVOKE_USER_ACCESS | PeriodOfServicePEORevokeUserAccess | ✅ |
+
+### [[personrefpvo|PersonRefPVO]] (HCM · BICC: 1/2)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| DATE_START | PeriodOfServicePEODateStart | ✅ |
+| PERIOD_OF_SERVICE_ID | PeriodOfServicePEOPeriodOfServiceId | — |
+
+### [[workrelationshippvo|WorkRelationshipPVO]] (HCM · BICC: 31/34)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACCEPTED_TERMINATION_DATE | WorkRelationshipPEOAcceptedTerminationDate | ✅ |
+| ACTION_OCCURRENCE_ID | WorkRelationshipPEOActionOccurrenceId | ✅ |
+| ACTUAL_TERMINATION_DATE | WorkRelationshipPEOActualTerminationDate | ✅ |
+| ADJUSTED_SVC_DATE | WorkRelationshipPEOAdjustedSvcDate | ✅ |
+| BUSINESS_GROUP_ID | WorkRelationshipPEOBusinessGroupId | ✅ |
+| COMMENTS | WorkRelationshipPEOComments | ✅ |
+| CREATED_BY | WorkRelationshipPEOCreatedBy | ✅ |
+| CREATION_DATE | WorkRelationshipPEOCreationDate | ✅ |
+| DATE_EMPLOYEE_DATA_VERIFIED | WorkRelationshipPEODateEmployeeDataVerified | ✅ |
+| DATE_START | WorkRelationshipPEODateStart | ✅ |
+| FAST_PATH_EMPLOYEE | WorkRelationshipPEOFastPathEmployee | ✅ |
+| LAST_UPDATE_DATE | WorkRelationshipPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | WorkRelationshipPEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | WorkRelationshipPEOLastUpdatedBy | ✅ |
+| LAST_WORKING_DATE | WorkRelationshipPEOLastWorkingDate | ✅ |
+| LEGAL_ENTITY_ID | WorkRelationshipPEOLegalEntityId | ✅ |
+| LEGISLATION_CODE | WorkRelationshipPEOLegislationCode | ✅ |
+| NOTIFIED_TERMINATION_DATE | WorkRelationshipPEONotifiedTerminationDate | ✅ |
+| OBJECT_VERSION_NUMBER | WorkRelationshipPEOObjectVersionNumber | — |
+| ON_MILITARY_SERVICE | WorkRelationshipPEOOnMilitaryService | ✅ |
+| ORIGINAL_DATE_OF_HIRE | WorkRelationshipPEOOriginalDateOfHire | ✅ |
+| PERIOD_OF_SERVICE_ID | PeriodOfServiceId | ✅ |
+| PERIOD_TYPE | WorkRelationshipPEOPeriodType | ✅ |
+| PERSON_ID | WorkRelationshipPEOPersonId | ✅ |
+| PRIMARY_FLAG | WorkRelationshipPEOPrimaryFlag | ✅ |
+| PROJECTED_TERMINATION_DATE | WorkRelationshipPEOProjectedTerminationDate | ✅ |
+| REHIRE_AUTHORIZER_PERSON_ID | WorkRelationshipPEORehireAuthorizerPersonId | — |
+| REHIRE_AUTHORIZOR | WorkRelationshipPEORehireAuthorizor | ✅ |
+| REHIRE_REASON | WorkRelationshipPEORehireReason | ✅ |
+| REHIRE_RECOMMENDATION | WorkRelationshipPEORehireRecommendation | ✅ |
+| REVOKE_USER_ACCESS | WorkRelationshipPEORevokeUserAccess | ✅ |
+| TERMINATION_ACCEPTED_PERSON_ID | WorkRelationshipPEOTerminationAcceptedPersonId | — |
+| WORKER_COMMENTS | WorkRelationshipPEOWorkerComments | ✅ |
+| WORKER_NUMBER | WorkRelationshipPEOWorkerNumber | ✅ |

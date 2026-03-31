@@ -62,3 +62,210 @@ updated_at: 2026-03-26
 ## 📎 Uso Típico
 
 (a ser preenchido na etapa 03)
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[browsingcategoryhierarchypvo|BrowsingCategoryHierarchyPVO]] (PO · BICC: 3/14)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| $none$ | JobDefinitionName11 | — |
+| $none$ | JobDefinitionPackage11 | — |
+| $none$ | RequestId11 | — |
+| CATEGORY_ID | PurchasingCategoryId | — |
+| CATEGORY_NAME | PurchasingCategoryName | ✅ |
+| CREATED_BY | CreatedBy11 | — |
+| CREATION_DATE | CreationDate11 | — |
+| DESCRIPTION | PurchasingDescription | ✅ |
+| LANGUAGE | Language | — |
+| LAST_UPDATE_DATE | LastUpdateDate11 | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin11 | — |
+| LAST_UPDATED_BY | LastUpdatedBy11 | — |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber11 | — |
+| SOURCE_LANG | SourceLang | — |
+
+### [[catalogcategoryassignp1|CatalogCategoryAssignP1]] (OTHER · BICC: 9/11)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CATEGORY_ID | CategoryTranslationPEOCategoryId | ✅ |
+| CATEGORY_NAME | CategoryTranslationPEOCategoryName | ✅ |
+| CREATED_BY | CategoryTranslationPEOCreatedBy | ✅ |
+| CREATION_DATE | CategoryTranslationPEOCreationDate | ✅ |
+| DESCRIPTION | CategoryTranslationPEODescription | ✅ |
+| LANGUAGE | CategoryTranslationPEOLanguage | ✅ |
+| LAST_UPDATE_DATE | CategoryTranslationPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | CategoryTranslationPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | CategoryTranslationPEOLastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | CategoryTranslationPEOObjectVersionNumber | — |
+| SOURCE_LANG | CategoryTranslationPEOSourceLang | ✅ |
+
+### [[categoryassignmentp1|CategoryAssignmentP1]] (OTHER · BICC: 4/11)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CATEGORY_ID | CategoryTranslationPEOCategoryId | — |
+| CATEGORY_NAME | CategoryTranslationPEOCategoryName | ✅ |
+| CREATED_BY | CategoryTranslationPEOCreatedBy | — |
+| CREATION_DATE | CategoryTranslationPEOCreationDate | — |
+| DESCRIPTION | CategoryTranslationPEODescription | ✅ |
+| LANGUAGE | CategoryTranslationPEOLanguage | ✅ |
+| LAST_UPDATE_DATE | CategoryTranslationPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | CategoryTranslationPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | CategoryTranslationPEOLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | CategoryTranslationPEOObjectVersionNumber | — |
+| SOURCE_LANG | CategoryTranslationPEOSourceLang | — |
+
+### [[categoryextractpvo|CategoryExtractPVO]] (OTHER)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CATEGORY_ID | CategoryTranslationPEOCategoryId | — |
+| CATEGORY_NAME | CategoryTranslationPEOCategoryName | — |
+| DESCRIPTION | CategoryTranslationPEODescription | — |
+| LANGUAGE | CategoryTranslationPEOLanguage | — |
+
+### [[categoryp1|CategoryP1]] (OTHER · BICC: 3/11)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CATEGORY_ID | CategoryTranslationPEOCategoryId | — |
+| CATEGORY_NAME | CategoryTranslationPEOCategoryName | ✅ |
+| CREATED_BY | CategoryTranslationPEOCreatedBy | — |
+| CREATION_DATE | CategoryTranslationPEOCreationDate | — |
+| DESCRIPTION | CategoryTranslationPEODescription | ✅ |
+| LANGUAGE | CategoryTranslationPEOLanguage | — |
+| LAST_UPDATE_DATE | CategoryTranslationPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | CategoryTranslationPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | CategoryTranslationPEOLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | CategoryTranslationPEOObjectVersionNumber | — |
+| SOURCE_LANG | CategoryTranslationPEOSourceLang | — |
+
+### [[categorytlpvo|CategoryTLPVO]] (OTHER · BICC: 5/11)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CATEGORY_ID | CategoryId | ✅ |
+| CATEGORY_NAME | CategoryName | ✅ |
+| CREATED_BY | CreatedBy | — |
+| CREATION_DATE | CreationDate | — |
+| DESCRIPTION | Description | ✅ |
+| LANGUAGE | Language | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | — |
+| LAST_UPDATED_BY | LastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | — |
+| SOURCE_LANG | SourceLang | — |
+
+### [[categorytranslationextractpvo|CategoryTranslationExtractPVO]] (OTHER · BICC: 10/10)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CATEGORY_ID | CategoryTranslationPEOCategoryId | ✅ |
+| CATEGORY_NAME | CategoryTranslationPEOCategoryName | ✅ |
+| CREATED_BY | CategoryTranslationPEOCreatedBy | ✅ |
+| CREATION_DATE | CategoryTranslationPEOCreationDate | ✅ |
+| DESCRIPTION | CategoryTranslationPEODescription | ✅ |
+| LANGUAGE | CategoryTranslationPEOLanguage | ✅ |
+| LAST_UPDATE_DATE | CategoryTranslationPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | CategoryTranslationPEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | CategoryTranslationPEOLastUpdatedBy | ✅ |
+| SOURCE_LANG | CategoryTranslationPEOSourceLang | ✅ |
+
+### [[contractfulfillment|ContractFulfillment]] (OTHER · BICC: 2/11)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CATEGORY_ID | ContractLineCategoryTLPEOCategoryId | — |
+| CATEGORY_NAME | ContractLineCategoryTLPEOCategoryName | ✅ |
+| CREATED_BY | ContractLineCategoryTLPEOCreatedBy | — |
+| CREATION_DATE | ContractLineCategoryTLPEOCreationDate | — |
+| DESCRIPTION | ContractLineCategoryTLPEODescription | — |
+| LANGUAGE | ContractLineCategoryTLPEOLanguage | — |
+| LAST_UPDATE_DATE | ContractLineCategoryTLPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ContractLineCategoryTLPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | ContractLineCategoryTLPEOLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | ContractLineCategoryTLPEOObjectVersionNumber | — |
+| SOURCE_LANG | ContractLineCategoryTLPEOSourceLang | — |
+
+### [[contractheaderlinesall|ContractHeaderLinesAll]] (OTHER · BICC: 2/11)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CATEGORY_ID | ContractLineCategoryTLPEOCategoryId | — |
+| CATEGORY_NAME | ContractLineCategoryTLPEOCategoryName | ✅ |
+| CREATED_BY | ContractLineCategoryTLPEOCreatedBy | — |
+| CREATION_DATE | ContractLineCategoryTLPEOCreationDate | — |
+| DESCRIPTION | ContractLineCategoryTLPEODescription | — |
+| LANGUAGE | ContractLineCategoryTLPEOLanguage | — |
+| LAST_UPDATE_DATE | ContractLineCategoryTLPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ContractLineCategoryTLPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | ContractLineCategoryTLPEOLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | ContractLineCategoryTLPEOObjectVersionNumber | — |
+| SOURCE_LANG | ContractLineCategoryTLPEOSourceLang | — |
+
+### [[contractheaderlinesallunsec|ContractHeaderLinesAllUnsec]] (OTHER · BICC: 1/11)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CATEGORY_ID | ContractLineCategoryTLPEOCategoryId | — |
+| CATEGORY_NAME | ContractLineCategoryTLPEOCategoryName | — |
+| CREATED_BY | ContractLineCategoryTLPEOCreatedBy | — |
+| CREATION_DATE | ContractLineCategoryTLPEOCreationDate | — |
+| DESCRIPTION | ContractLineCategoryTLPEODescription | — |
+| LANGUAGE | ContractLineCategoryTLPEOLanguage | — |
+| LAST_UPDATE_DATE | ContractLineCategoryTLPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ContractLineCategoryTLPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | ContractLineCategoryTLPEOLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | ContractLineCategoryTLPEOObjectVersionNumber | — |
+| SOURCE_LANG | ContractLineCategoryTLPEOSourceLang | — |
+
+### [[contractheaderlinesp|ContractHeaderLinesP]] (OTHER · BICC: 1/11)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CATEGORY_ID | ContractLineCategoryTLPEOCategoryId | — |
+| CATEGORY_NAME | ContractLineCategoryTLPEOCategoryName | — |
+| CREATED_BY | ContractLineCategoryTLPEOCreatedBy | — |
+| CREATION_DATE | ContractLineCategoryTLPEOCreationDate | — |
+| DESCRIPTION | ContractLineCategoryTLPEODescription | — |
+| LANGUAGE | ContractLineCategoryTLPEOLanguage | — |
+| LAST_UPDATE_DATE | ContractLineCategoryTLPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ContractLineCategoryTLPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | ContractLineCategoryTLPEOLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | ContractLineCategoryTLPEOObjectVersionNumber | — |
+| SOURCE_LANG | ContractLineCategoryTLPEOSourceLang | — |
+
+### [[contractheaderlinesrefp|ContractHeaderLinesRefP]] (OTHER · BICC: 1/11)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CATEGORY_ID | ContractLineCategoryTLPEOCategoryId | — |
+| CATEGORY_NAME | ContractLineCategoryTLPEOCategoryName | — |
+| CREATED_BY | ContractLineCategoryTLPEOCreatedBy | — |
+| CREATION_DATE | ContractLineCategoryTLPEOCreationDate | — |
+| DESCRIPTION | ContractLineCategoryTLPEODescription | — |
+| LANGUAGE | ContractLineCategoryTLPEOLanguage | — |
+| LAST_UPDATE_DATE | ContractLineCategoryTLPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ContractLineCategoryTLPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | ContractLineCategoryTLPEOLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | ContractLineCategoryTLPEOObjectVersionNumber | — |
+| SOURCE_LANG | ContractLineCategoryTLPEOSourceLang | — |
+
+### [[itemcategory|ItemCategory]] (OTHER · BICC: 4/11)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CATEGORY_ID | CategoryTranslationPEOCategoryId | — |
+| CATEGORY_NAME | CategoryTranslationPEOCategoryName | ✅ |
+| CREATED_BY | CategoryTranslationPEOCreatedBy | — |
+| CREATION_DATE | CategoryTranslationPEOCreationDate | — |
+| DESCRIPTION | CategoryTranslationPEODescription | ✅ |
+| LANGUAGE | CategoryTranslationPEOLanguage | ✅ |
+| LAST_UPDATE_DATE | CategoryTranslationPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | CategoryTranslationPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | CategoryTranslationPEOLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | CategoryTranslationPEOObjectVersionNumber | — |
+| SOURCE_LANG | CategoryTranslationPEOSourceLang | — |

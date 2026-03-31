@@ -113,3 +113,23 @@ ORDER BY rf.DEPTH;
 
 - [Oracle Docs — PER_POSITION_HRCHY_RF](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/perpositionhrhyrf.html)
 - [[hcm-module-data-dictionary]] — Dossiê do módulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[positionhierarchyrfextractpvo|PositionHierarchyRFExtractPVO]] (HCM · BICC: 11/11)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ANCESTOR_POSITION_ID | AncestorPositionId | ✅ |
+| BUSINESS_GROUP_ID | BusinessGroupId | ✅ |
+| CREATED_BY | CreatedBy | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| EFFECTIVE_END_DATE | EffectiveEndDate | ✅ |
+| EFFECTIVE_START_DATE | EffectiveStartDate | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | LastUpdatedBy | ✅ |
+| NODE_LEVEL | NodeLevel | ✅ |
+| POSITION_ID | PositionId | ✅ |

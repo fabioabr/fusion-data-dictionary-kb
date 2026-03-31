@@ -38,7 +38,6 @@ Visão consolidada que combina dados base e traduções das categorias de cartã
 > [!note] Sufixo _VL
 > O sufixo `_VL` indica **view consolidada** que combina automaticamente a tabela `_B` (dados base) com a `_TL` (traduções) para o idioma da sessão.
 
-
 ---
 
 ## 🧠 Propósito de Negócio
@@ -103,6 +102,50 @@ WHERE  t.LANGUAGE = USERENV('LANG')
 
 - View consolidada: combina automaticamente dados base (`_B`) e traduções (`_TL`). Preferir em consultas de leitura.
 - Área funcional: Time Card dentro do Oracle Fusion Cloud HCM.
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[allocationlinespvo|AllocationLinesPVO]] (GL · BICC: 2/3)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| TCAT_CD | TimeCategoryVLPEOTcatCd | ✅ |
+| TCAT_ID | TimeCategoryVLPEOTcatId | — |
+| TCAT_NAME | TimeCategoryVLPEOTcatName | ✅ |
+
+### [[allocationrulespvo|AllocationRulesPVO]] (GL · BICC: 2/3)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| TCAT_CD | TimeCategoryVLPEOTcatCd | ✅ |
+| TCAT_ID | TimeCategoryVLPEOTcatId | — |
+| TCAT_NAME | TimeCategoryVLPEOTcatName | ✅ |
+
+### [[ruleinputpvo|RuleInputPVO]] (GL · BICC: 3/3)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| TCAT_CD | TimeCategoryVLPEOTcatCd | ✅ |
+| TCAT_ID | TimeCategoryVLPEOTcatId | ✅ |
+| TCAT_NAME | TimeCategoryVLPEOTcatName | ✅ |
+
+### [[rulesetmemberpvo|RuleSetMemberPVO]] (GL · BICC: 2/3)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| TCAT_CD | TimeCategoryVLPEOTcatCd | ✅ |
+| TCAT_ID | TimeCategoryVLPEOTcatId | — |
+| TCAT_NAME | TimeCategoryVLPEOTcatName | ✅ |
+
+### [[timeconsumerconfigurationpvo|TimeConsumerConfigurationPVO]] (GL · BICC: 1/3)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| TCAT_CD | TimeCategoryVLPEOTcatCd | ✅ |
+| TCAT_ID | TimeCategoryVLPEOTcatId | — |
+| TCAT_NAME | TimeCategoryVLPEOTcatName | — |
 
 ---
 

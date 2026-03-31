@@ -38,7 +38,6 @@ Tabela base que armazena os resumos consolidados de cartões de ponto (time card
 > [!note] Sufixo _B
 > O sufixo `_B` indica tabela **base** — contém os dados não traduzíveis. A tabela correspondente `_TL` armazena as traduções.
 
-
 ---
 
 ## 🧠 Propósito de Negócio
@@ -103,6 +102,31 @@ WHERE  NVL(t.ENABLED_FLAG, 'Y') = 'Y'
 
 - Tabela base: contém dados não traduzíveis. Utilize a view `_VL` correspondente para consultas com tradução.
 - Área funcional: Time Card Summary dentro do Oracle Fusion Cloud HCM.
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[timeconsumerpvo|TimeConsumerPVO]] (GL · BICC: 16/16)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | CreatedBy | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| ENTERPRISE_ID | EnterpriseId | ✅ |
+| FUSION_APPLICATION | FusionApplication | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | LastUpdatedBy | ✅ |
+| MODULE_ID | ModuleId | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | ✅ |
+| TCSMRS_CODE | TimeConsumersCode | ✅ |
+| TCSMRS_ID | TimeConsumersId | ✅ |
+| TM_ATRB_STRUCTURE_ID | TimeAttributeStructureId | ✅ |
+| UPDATE_CALC_TM_SVC | UpdateCalculateTimeService | ✅ |
+| UPDATE_RAW_TM_SVC | UpdateRawTimeService | ✅ |
+| VALIDATE_CALC_TM_SVC | ValidateCalculateTimeService | ✅ |
+| VALIDATE_RAW_TM_SVC | ValidateRawTimeService | ✅ |
 
 ---
 

@@ -111,3 +111,49 @@ WHERE  v.PERSON_ID = :p_person_id;
 
 - [Oracle Docs — HWM_TM_REP_M_PJC_DOC_ATRBS_V](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/hwmtmrepmpjcdocatrbsv.html)
 - [[hcm-module-data-dictionary]] — Dossie do modulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[historicprocessedtimeentrypvo|HistoricProcessedTimeEntryPVO]] (HCM · BICC: 1/2)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| PJC_DOC_TIME_REPOS_ATRB_ID | PjcDocTypeTimeRepositoryAttributeId | — |
+| PJC_DOCUMENT_TYPE | PjcDocumentType | ✅ |
+
+### [[historicreportedtimeentrypvo|HistoricReportedTimeEntryPVO]] (HCM · BICC: 1/2)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| PJC_DOC_TIME_REPOS_ATRB_ID | PjcDocTypeTimeRepositoryAttributeId | — |
+| PJC_DOCUMENT_TYPE | PjcDocumentType | ✅ |
+
+### [[historicrptabstimeentrypvo|HistoricRptAbsTimeEntryPVO]] (HCM · BICC: 1/2)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| PJC_DOC_TIME_REPOS_ATRB_ID | MasterDocTypeAttributePEOPjcDocTypeTimeRepositoryAttributeId | — |
+| PJC_DOCUMENT_TYPE | MasterDocTypeAttributePEOPjcDocumentType | ✅ |
+
+### [[processedtimeentrypvo|ProcessedTimeEntryPVO]] (HCM · BICC: 1/2)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| PJC_DOC_TIME_REPOS_ATRB_ID | PjcDocTypeTimeRepositoryAttributeId | — |
+| PJC_DOCUMENT_TYPE | PjcDocumentType | ✅ |
+
+### [[reportedtimeentrypvo|ReportedTimeEntryPVO]] (HCM · BICC: 1/2)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| PJC_DOC_TIME_REPOS_ATRB_ID | PjcDocTypeTimeRepositoryAttributeId | — |
+| PJC_DOCUMENT_TYPE | PjcDocumentType | ✅ |
+
+### [[rptabstimeentrypvo|RptAbsTimeEntryPVO]] (HCM · BICC: 1/2)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| PJC_DOC_TIME_REPOS_ATRB_ID | MasterDocTypeAttributePEOPjcDocTypeTimeRepositoryAttributeId | — |
+| PJC_DOCUMENT_TYPE | MasterDocTypeAttributePEOPjcDocumentType | ✅ |

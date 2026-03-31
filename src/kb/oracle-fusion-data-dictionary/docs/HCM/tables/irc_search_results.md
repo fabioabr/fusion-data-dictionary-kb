@@ -100,6 +100,24 @@ ORDER BY sr.RESULT_RANK;
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[searchresultpvo|SearchResultPVO]] (PO · BICC: 2/9)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | SearchResultPEOCreatedBy | — |
+| CREATION_DATE | SearchResultPEOCreationDate | — |
+| LAST_UPDATE_DATE | SearchResultPEOLastUpdateDate | — |
+| LAST_UPDATE_LOGIN | SearchResultPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | SearchResultPEOLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | SearchResultPEOObjectVersionNumber | — |
+| RETRIEVED_ENTITY_ID | SearchResultPEORetrievedEntityId | ✅ |
+| SEARCH_ID | SearchResultPEOSearchId | — |
+| SEARCH_RESULT_ID | SearchResultId | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — IRC_SEARCH_RESULTS](https://docs.oracle.com/en/cloud/saas/talent-management/25a/oedmf/ircsearchresults.html)

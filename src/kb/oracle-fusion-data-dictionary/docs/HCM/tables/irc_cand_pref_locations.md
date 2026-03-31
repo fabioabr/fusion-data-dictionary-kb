@@ -105,3 +105,21 @@ WHERE  cp.CANDIDATE_ID = :p_candidate_id;
 
 - [Oracle Docs -- IRC_CAND_PREF_LOCATIONS](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/irccandpreflocations.html)
 - [[hcm-module-data-dictionary]] -- Dossie do modulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[candidatepreferencespvo|CandidatePreferencesPVO]] (HCM · BICC: 2/9)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CAND_PREF_ID | CandPrefLocPEOCandPrefId | — |
+| CREATED_BY | CandPrefLocPEOCreatedBy | — |
+| CREATION_DATE | CandPrefLocPEOCreationDate | — |
+| GEOGRAPHY_ID | CandPrefLocPEOGeographyId | ✅ |
+| LAST_UPDATE_DATE | CandPrefLocPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | CandPrefLocPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | CandPrefLocPEOLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | CandPrefLocPEOObjectVersionNumber | — |
+| PREF_LOC_ID | PrefLocId | — |

@@ -100,3 +100,22 @@ FROM   IRC_GEO_HIERARCHIES gh WHERE gh.STATUS = 'ACTIVE';
 
 - [Oracle Docs -- IRC_GEO_HIERARCHIES](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/ircgeohierarchies.html)
 - [[hcm-module-data-dictionary]] -- Dossie do modulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[geohierarchypvo|GeoHierarchyPVO]] (HCM · BICC: 7/10)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | GeoHierarchyPEOCreatedBy | ✅ |
+| CREATION_DATE | GeoHierarchyPEOCreationDate | ✅ |
+| HIERARCHY_ID | HierarchyId | ✅ |
+| LAST_UPDATE_DATE | GeoHierarchyPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | GeoHierarchyPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | GeoHierarchyPEOLastUpdatedBy | — |
+| NAME | GeoHierarchyPEOName | ✅ |
+| OBJECT_VERSION_NUMBER | GeoHierarchyPEOObjectVersionNumber | — |
+| START_DATE | GeoHierarchyPEOStartDate | ✅ |
+| STATUS_CODE | GeoHierarchyPEOStatusCode | ✅ |

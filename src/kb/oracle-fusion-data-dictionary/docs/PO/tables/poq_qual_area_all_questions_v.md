@@ -132,6 +132,30 @@ GROUP  BY q.QUAL_AREA_NAME;
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[responserepositoryvaluespvo|ResponseRepositoryValuesPVO]] (PO · BICC: 15/15)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BRANCH_LEVEL | QualAreaQuestionBranchLevel | ✅ |
+| CHILD_QUESTION_ID | QualAreaQuestionChildQuestionId | ✅ |
+| CREATED_BY | QualAreaQuestionCreatedBy | ✅ |
+| CREATION_DATE | QualAreaQuestionCreationDate | ✅ |
+| DISPLAY_SEQUENCE | QualAreaQuestionDisplaySequence | ✅ |
+| KNOCKOUT_SCORE | QualAreaQuestionKnockoutScore | ✅ |
+| LAST_UPDATE_DATE | QualAreaQuestionLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | QualAreaQuestionLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | QualAreaQuestionLastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | QualAreaQuestionObjectVersionNumber | ✅ |
+| QUAL_AREA_ID | QualAreaQuestionQualAreaId | ✅ |
+| QUAL_AREA_QUESTION_ID | QualAreaQuestionQualAreaQuestionId | ✅ |
+| QUESTION_ID | QualAreaQuestionQuestionId | ✅ |
+| ROOT_QUESTION_ID | QualAreaQuestionRootQuestionId | ✅ |
+| WEIGHT | QualAreaQuestionWeight | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — Supplier Qualification Management](https://docs.oracle.com/en/cloud/saas/procurement/25a/oedmf/)

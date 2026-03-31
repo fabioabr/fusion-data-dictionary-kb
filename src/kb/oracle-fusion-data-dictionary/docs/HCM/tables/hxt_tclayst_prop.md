@@ -107,3 +107,54 @@ WHERE  p.TCLAYST_ID = :p_layout_id;
 
 - [Oracle Docs — HXT_TCLAYST_PROP](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/hxttclaystprop.html)
 - [[hcm-module-data-dictionary]] — Dossie do modulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[timecardlayoutcomppvo|TimecardLayoutCompPVO]] (GL · BICC: 5/7)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ANS_SET_ID | TclaystPropPEOAnsSetId | — |
+| IND_MGR_FLAG | TclaystPropPEOIndMgrFlag | ✅ |
+| IND_TCSMRS_CODE | TclaystPropPEOIndTcsmrsCode | ✅ |
+| MEMBERSHIP_FLAG | TclaystPropPEOMembershipFlag | ✅ |
+| TCLAYST_PROP_CD | TclaystPropPEOTclaystPropCd | ✅ |
+| TCLAYST_PROP_ID | TclaystPropPEOTclaystPropId | ✅ |
+| TCLAYST_TE_TYPE | TclaystPropPEOTclaystTeType | — |
+
+### [[timecardlayoutpvo|TimecardLayoutPVO]] (GL · BICC: 5/7)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ANS_SET_ID | TclaystPropPEOAnsSetId | — |
+| IND_MGR_FLAG | TclaystPropPEOIndMgrFlag | ✅ |
+| IND_TCSMRS_CODE | TclaystPropPEOIndTcsmrsCode | ✅ |
+| MEMBERSHIP_FLAG | TclaystPropPEOMembershipFlag | ✅ |
+| TCLAYST_PROP_CD | TclaystPropPEOTclaystPropCd | ✅ |
+| TCLAYST_PROP_ID | TclaystPropPEOTclaystPropId | ✅ |
+| TCLAYST_TE_TYPE | TclaystPropPEOTclaystTeType | — |
+
+### [[timecardlayoutregionpvo|TimecardLayoutRegionPVO]] (GL · BICC: 5/7)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ANS_SET_ID | TclaystPropPEOAnsSetId | — |
+| IND_MGR_FLAG | TclaystPropPEOIndMgrFlag | ✅ |
+| IND_TCSMRS_CODE | TclaystPropPEOIndTcsmrsCode | ✅ |
+| MEMBERSHIP_FLAG | TclaystPropPEOMembershipFlag | ✅ |
+| TCLAYST_PROP_CD | TclaystPropPEOTclaystPropCd | ✅ |
+| TCLAYST_PROP_ID | TclaystPropPEOTclaystPropId | ✅ |
+| TCLAYST_TE_TYPE | TclaystPropPEOTclaystTeType | — |
+
+### [[timecardlayoutsetpvo|TimecardLayoutSetPVO]] (GL · BICC: 5/6)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ANS_SET_ID | TclaystPropPEOAnsSetId | — |
+| IND_MGR_FLAG | TclaystPropPEOIndMgrFlag | ✅ |
+| IND_TCSMRS_CODE | TclaystPropPEOIndTcsmrsCode | ✅ |
+| MEMBERSHIP_FLAG | TclaystPropPEOMembershipFlag | ✅ |
+| TCLAYST_PROP_CD | TclaystPropPEOTclaystPropCd | ✅ |
+| TCLAYST_PROP_ID | TclaystPropPEOTclaystPropId | ✅ |

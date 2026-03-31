@@ -99,3 +99,59 @@ FROM   IRC_LC_SETTING_ITEMS si WHERE si.PROCESS_ID = :p_id;
 
 - [Oracle Docs -- IRC_LC_SETTING_ITEMS](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/irclcsettingitems.html)
 - [[hcm-module-data-dictionary]] -- Dossie do modulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[candidateselectprocesspvo|CandidateSelectProcessPVO]] (HCM · BICC: 1/3)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ITEM_KEY_NAME | ProcessTypeSettingItemPEOItemKeyName | — |
+| SETTING_ITEM_ID | ProcessTypeSettingItemPEOSettingItemId | — |
+| STRING_VALUE | ProcessTypeSettingItemPEOStringValue | ✅ |
+
+### [[processpvo|ProcessPVO]] (HCM)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ITEM_KEY_NAME | ProcessTypeSettingItemPEOItemKeyName | — |
+| SETTING_ITEM_ID | ProcessTypeSettingItemPEOSettingItemId | — |
+| STRING_VALUE | ProcessTypeSettingItemPEOStringValue | — |
+
+### [[settingitemmandatorypvo|SettingItemMandatoryPVO]] (HCM · BICC: 3/7)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ITEM_KEY_NAME | ItemKeyName | — |
+| OBJECT_ID | ObjectId | — |
+| OBJECT_TYPE | ObjectType | — |
+| SETTING_ID | SettingId | ✅ |
+| SETTING_ITEM_CODE | SettingItemCode | — |
+| SETTING_ITEM_ID | SettingItemId | ✅ |
+| STRING_VALUE | StringValue | ✅ |
+
+### [[settingitemreasongrouppvo|SettingItemReasonGroupPVO]] (HCM · BICC: 1/7)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ITEM_KEY_NAME | ItemKeyName | — |
+| OBJECT_ID | ObjectId | — |
+| OBJECT_TYPE | ObjectType | — |
+| SETTING_ID | SettingId | — |
+| SETTING_ITEM_CODE | SettingItemCode | — |
+| SETTING_ITEM_ID | SettingItemId | ✅ |
+| STRING_VALUE | StringValue | — |
+
+### [[settingitemrestrictedpvo|SettingItemRestrictedPVO]] (HCM · BICC: 3/7)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ITEM_KEY_NAME | ItemKeyName | — |
+| OBJECT_ID | ObjectId | — |
+| OBJECT_TYPE | ObjectType | — |
+| SETTING_ID | SettingId | ✅ |
+| SETTING_ITEM_CODE | SettingItemCode | — |
+| SETTING_ITEM_ID | SettingItemId | ✅ |
+| STRING_VALUE | StringValue | ✅ |

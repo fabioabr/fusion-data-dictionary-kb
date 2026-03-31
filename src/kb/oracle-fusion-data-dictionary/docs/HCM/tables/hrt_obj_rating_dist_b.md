@@ -109,3 +109,18 @@ WHERE  ord.REVIEW_PERIOD_ID = :p_review_period_id;
 
 - [Oracle Docs — HRT_OBJ_RATING_DIST_B](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/hrtobjratingdistb.html)
 - [[hcm-module-data-dictionary]] — Dossie do modulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[performancedocratingdistributionpvo|PerformanceDocRatingDistributionPVO]] (HCM)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| DATE_FROM | ObjectRatingDistributionBPEODateFrom | — |
+| DATE_TO | ObjectRatingDistributionBPEODateTo | — |
+| OBJ_RATING_DIST_ID | ObjectRatingDistributionBPEOObjRatingDistId | — |
+| OBJECT_ID | ObjectRatingDistributionBPEOObjectId | — |
+| OBJECT_TYPE_CODE | ObjectRatingDistributionBPEOObjectTypeCode | — |
+| RATING_MODEL_ID | ObjectRatingDistributionBPEORatingModelId | — |

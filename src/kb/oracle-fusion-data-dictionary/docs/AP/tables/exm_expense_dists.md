@@ -141,6 +141,254 @@ ORDER BY total_dist DESC;
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[expensedistributionextractpvo|ExpenseDistributionExtractPVO]] (OTHER · BICC: 23/77)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CODE_COMBINATION_ID | ExpenseDistributionCodeCombinationId | ✅ |
+| COST_CENTER | ExpenseDistributionCostCenter | ✅ |
+| CREATED_BY | ExpenseDistributionCreatedBy | — |
+| CREATION_DATE | ExpenseDistributionCreationDate | ✅ |
+| EXPENSE_DIST_ID | ExpenseDistributionId | ✅ |
+| EXPENSE_ID | ExpenseDistributionExpenseId | ✅ |
+| EXPENSE_REPORT_ID | ExpenseDistributionExpenseReportId | ✅ |
+| LAST_UPDATE_DATE | ExpenseDistributionLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ExpenseDistributionLastUpdateLogin | — |
+| LAST_UPDATED_BY | ExpenseDistributionLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | ExpenseDistributionObjectVersionNumber | — |
+| ORG_ID | ExpenseDistributionOrgId | ✅ |
+| PJC_BILLABLE_FLAG | ExpenseDistributionPjcBillableFlag | ✅ |
+| PJC_CAPITALIZABLE_FLAG | ExpenseDistributionPjcCapitalizableFlag | ✅ |
+| PJC_CONTEXT_CATEGORY | ExpenseDistributionPjcContextCategory | ✅ |
+| PJC_CONTRACT_ID | ExpenseDistributionPjcContractId | ✅ |
+| PJC_CONTRACT_LINE_ID | ExpenseDistributionPjcContractLineId | ✅ |
+| PJC_EXPENDITURE_ITEM_DATE | ExpenseDistributionPjcExpenditureItemDate | ✅ |
+| PJC_EXPENDITURE_TYPE_ID | ExpenseDistributionPjcExpenditureTypeId | ✅ |
+| PJC_FUNDING_ALLOCATION_ID | ExpenseDistributionPjcFundingAllocationId | ✅ |
+| PJC_ORGANIZATION_ID | ExpenseDistributionPjcOrganizationId | ✅ |
+| PJC_PROJECT_ID | ExpenseDistributionPjcProjectId | ✅ |
+| PJC_RESERVED_ATTRIBUTE1 | ExpenseDistributionPjcReservedAttribute1 | — |
+| PJC_RESERVED_ATTRIBUTE10 | ExpenseDistributionPjcReservedAttribute10 | — |
+| PJC_RESERVED_ATTRIBUTE2 | ExpenseDistributionPjcReservedAttribute2 | — |
+| PJC_RESERVED_ATTRIBUTE3 | ExpenseDistributionPjcReservedAttribute3 | — |
+| PJC_RESERVED_ATTRIBUTE4 | ExpenseDistributionPjcReservedAttribute4 | — |
+| PJC_RESERVED_ATTRIBUTE5 | ExpenseDistributionPjcReservedAttribute5 | — |
+| PJC_RESERVED_ATTRIBUTE6 | ExpenseDistributionPjcReservedAttribute6 | — |
+| PJC_RESERVED_ATTRIBUTE7 | ExpenseDistributionPjcReservedAttribute7 | — |
+| PJC_RESERVED_ATTRIBUTE8 | ExpenseDistributionPjcReservedAttribute8 | — |
+| PJC_RESERVED_ATTRIBUTE9 | ExpenseDistributionPjcReservedAttribute9 | — |
+| PJC_TASK_ID | ExpenseDistributionPjcTaskId | ✅ |
+| PJC_USER_DEF_ATTRIBUTE1 | ExpenseDistributionPjcUserDefAttribute1 | — |
+| PJC_USER_DEF_ATTRIBUTE10 | ExpenseDistributionPjcUserDefAttribute10 | — |
+| PJC_USER_DEF_ATTRIBUTE2 | ExpenseDistributionPjcUserDefAttribute2 | — |
+| PJC_USER_DEF_ATTRIBUTE3 | ExpenseDistributionPjcUserDefAttribute3 | — |
+| PJC_USER_DEF_ATTRIBUTE4 | ExpenseDistributionPjcUserDefAttribute4 | — |
+| PJC_USER_DEF_ATTRIBUTE5 | ExpenseDistributionPjcUserDefAttribute5 | — |
+| PJC_USER_DEF_ATTRIBUTE6 | ExpenseDistributionPjcUserDefAttribute6 | — |
+| PJC_USER_DEF_ATTRIBUTE7 | ExpenseDistributionPjcUserDefAttribute7 | — |
+| PJC_USER_DEF_ATTRIBUTE8 | ExpenseDistributionPjcUserDefAttribute8 | — |
+| PJC_USER_DEF_ATTRIBUTE9 | ExpenseDistributionPjcUserDefAttribute9 | — |
+| PJC_WORK_TYPE_ID | ExpenseDistributionPjcWorkTypeId | ✅ |
+| PREPARER_MODIFIED_FLAG | ExpenseDistributionPreparerModifiedFlag | — |
+| REIMBURSABLE_AMOUNT | ExpenseDistributionReimbursableAmount | ✅ |
+| SEGMENT1 | ExpenseDistributionSegment1 | ✅ |
+| SEGMENT10 | ExpenseDistributionSegment10 | — |
+| SEGMENT11 | ExpenseDistributionSegment11 | — |
+| SEGMENT12 | ExpenseDistributionSegment12 | — |
+| SEGMENT13 | ExpenseDistributionSegment13 | — |
+| SEGMENT14 | ExpenseDistributionSegment14 | — |
+| SEGMENT15 | ExpenseDistributionSegment15 | — |
+| SEGMENT16 | ExpenseDistributionSegment16 | — |
+| SEGMENT17 | ExpenseDistributionSegment17 | — |
+| SEGMENT18 | ExpenseDistributionSegment18 | — |
+| SEGMENT19 | ExpenseDistributionSegment19 | — |
+| SEGMENT2 | ExpenseDistributionSegment2 | ✅ |
+| SEGMENT20 | ExpenseDistributionSegment20 | — |
+| SEGMENT21 | ExpenseDistributionSegment21 | — |
+| SEGMENT22 | ExpenseDistributionSegment22 | — |
+| SEGMENT23 | ExpenseDistributionSegment23 | — |
+| SEGMENT24 | ExpenseDistributionSegment24 | — |
+| SEGMENT25 | ExpenseDistributionSegment25 | — |
+| SEGMENT26 | ExpenseDistributionSegment26 | — |
+| SEGMENT27 | ExpenseDistributionSegment27 | — |
+| SEGMENT28 | ExpenseDistributionSegment28 | — |
+| SEGMENT29 | ExpenseDistributionSegment29 | — |
+| SEGMENT3 | ExpenseDistributionSegment3 | — |
+| SEGMENT30 | ExpenseDistributionSegment30 | — |
+| SEGMENT4 | ExpenseDistributionSegment4 | — |
+| SEGMENT5 | ExpenseDistributionSegment5 | — |
+| SEGMENT6 | ExpenseDistributionSegment6 | — |
+| SEGMENT7 | ExpenseDistributionSegment7 | — |
+| SEGMENT8 | ExpenseDistributionSegment8 | — |
+| SEGMENT9 | ExpenseDistributionSegment9 | — |
+| SEQUENCE_NUM | ExpenseDistributionSequenceNum | — |
+
+### [[expensedistributionpvo|ExpenseDistributionPVO]] (OTHER · BICC: 15/77)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CODE_COMBINATION_ID | ExpDistCodeCombinationId | ✅ |
+| COST_CENTER | ExpDistCostCenter | ✅ |
+| CREATED_BY | ExpDistCreatedBy | ✅ |
+| CREATION_DATE | ExpDistCreationDate | ✅ |
+| EXPENSE_DIST_ID | ExpenseDistId | ✅ |
+| EXPENSE_ID | ExpDistExpenseId | — |
+| EXPENSE_REPORT_ID | ExpDistExpenseReportId | — |
+| LAST_UPDATE_DATE | ExpDistLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ExpDistLastUpdateLogin | — |
+| LAST_UPDATED_BY | ExpDistLastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | ExpDistObjectVersionNumber | — |
+| ORG_ID | ExpDistOrgId | — |
+| PJC_BILLABLE_FLAG | ExpDistPjcBillableFlag | — |
+| PJC_CAPITALIZABLE_FLAG | ExpDistPjcCapitalizableFlag | — |
+| PJC_CONTEXT_CATEGORY | ExpDistPjcContextCategory | — |
+| PJC_CONTRACT_ID | ExpDistPjcContractId | — |
+| PJC_CONTRACT_LINE_ID | ExpDistPjcContractLineId | — |
+| PJC_EXPENDITURE_ITEM_DATE | ExpDistPjcExpenditureItemDate | — |
+| PJC_EXPENDITURE_TYPE_ID | ExpDistPjcExpenditureTypeId | ✅ |
+| PJC_FUNDING_ALLOCATION_ID | ExpDistPjcFundingAllocationId | — |
+| PJC_ORGANIZATION_ID | ExpDistPjcOrganizationId | ✅ |
+| PJC_PROJECT_ID | ExpDistPjcProjectId | ✅ |
+| PJC_RESERVED_ATTRIBUTE1 | ExpDistPjcReservedAttribute1 | — |
+| PJC_RESERVED_ATTRIBUTE10 | ExpDistPjcReservedAttribute10 | — |
+| PJC_RESERVED_ATTRIBUTE2 | ExpDistPjcReservedAttribute2 | — |
+| PJC_RESERVED_ATTRIBUTE3 | ExpDistPjcReservedAttribute3 | — |
+| PJC_RESERVED_ATTRIBUTE4 | ExpDistPjcReservedAttribute4 | — |
+| PJC_RESERVED_ATTRIBUTE5 | ExpDistPjcReservedAttribute5 | — |
+| PJC_RESERVED_ATTRIBUTE6 | ExpDistPjcReservedAttribute6 | — |
+| PJC_RESERVED_ATTRIBUTE7 | ExpDistPjcReservedAttribute7 | — |
+| PJC_RESERVED_ATTRIBUTE8 | ExpDistPjcReservedAttribute8 | — |
+| PJC_RESERVED_ATTRIBUTE9 | ExpDistPjcReservedAttribute9 | — |
+| PJC_TASK_ID | ExpDistPjcTaskId | ✅ |
+| PJC_USER_DEF_ATTRIBUTE1 | ExpDistPjcUserDefAttribute1 | — |
+| PJC_USER_DEF_ATTRIBUTE10 | ExpDistPjcUserDefAttribute10 | — |
+| PJC_USER_DEF_ATTRIBUTE2 | ExpDistPjcUserDefAttribute2 | — |
+| PJC_USER_DEF_ATTRIBUTE3 | ExpDistPjcUserDefAttribute3 | — |
+| PJC_USER_DEF_ATTRIBUTE4 | ExpDistPjcUserDefAttribute4 | — |
+| PJC_USER_DEF_ATTRIBUTE5 | ExpDistPjcUserDefAttribute5 | — |
+| PJC_USER_DEF_ATTRIBUTE6 | ExpDistPjcUserDefAttribute6 | — |
+| PJC_USER_DEF_ATTRIBUTE7 | ExpDistPjcUserDefAttribute7 | — |
+| PJC_USER_DEF_ATTRIBUTE8 | ExpDistPjcUserDefAttribute8 | — |
+| PJC_USER_DEF_ATTRIBUTE9 | ExpDistPjcUserDefAttribute9 | — |
+| PJC_WORK_TYPE_ID | ExpDistPjcWorkTypeId | — |
+| PREPARER_MODIFIED_FLAG | ExpDistPreparerModifiedFlag | — |
+| REIMBURSABLE_AMOUNT | ExpDistReimbursableAmount | ✅ |
+| SEGMENT1 | ExpDistSegment1 | ✅ |
+| SEGMENT10 | ExpDistSegment10 | — |
+| SEGMENT11 | ExpDistSegment11 | — |
+| SEGMENT12 | ExpDistSegment12 | — |
+| SEGMENT13 | ExpDistSegment13 | — |
+| SEGMENT14 | ExpDistSegment14 | — |
+| SEGMENT15 | ExpDistSegment15 | — |
+| SEGMENT16 | ExpDistSegment16 | — |
+| SEGMENT17 | ExpDistSegment17 | — |
+| SEGMENT18 | ExpDistSegment18 | — |
+| SEGMENT19 | ExpDistSegment19 | — |
+| SEGMENT2 | ExpDistSegment2 | — |
+| SEGMENT20 | ExpDistSegment20 | — |
+| SEGMENT21 | ExpDistSegment21 | — |
+| SEGMENT22 | ExpDistSegment22 | — |
+| SEGMENT23 | ExpDistSegment23 | — |
+| SEGMENT24 | ExpDistSegment24 | — |
+| SEGMENT25 | ExpDistSegment25 | — |
+| SEGMENT26 | ExpDistSegment26 | — |
+| SEGMENT27 | ExpDistSegment27 | — |
+| SEGMENT28 | ExpDistSegment28 | — |
+| SEGMENT29 | ExpDistSegment29 | — |
+| SEGMENT3 | ExpDistSegment3 | ✅ |
+| SEGMENT30 | ExpDistSegment30 | — |
+| SEGMENT4 | ExpDistSegment4 | — |
+| SEGMENT5 | ExpDistSegment5 | — |
+| SEGMENT6 | ExpDistSegment6 | — |
+| SEGMENT7 | ExpDistSegment7 | — |
+| SEGMENT8 | ExpDistSegment8 | — |
+| SEGMENT9 | ExpDistSegment9 | — |
+| SEQUENCE_NUM | ExpDistSequenceNum | ✅ |
+
+### [[expensepvo|ExpensePVO]] (OTHER)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CODE_COMBINATION_ID | ExpDistCodeCombinationId | — |
+| COST_CENTER | ExpDistCostCenter | — |
+| CREATED_BY | ExpDistCreatedBy | — |
+| EXPENSE_DIST_ID | ExpDistExpenseDistId | — |
+| EXPENSE_ID | ExpDistExpenseId | — |
+| EXPENSE_REPORT_ID | ExpDistExpenseReportId | — |
+| LAST_UPDATE_LOGIN | ExpDistLastUpdateLogin | — |
+| LAST_UPDATED_BY | ExpDistLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | ExpDistObjectVersionNumber | — |
+| ORG_ID | ExpDistOrgId | — |
+| PJC_BILLABLE_FLAG | ExpDistPjcBillableFlag | — |
+| PJC_CAPITALIZABLE_FLAG | ExpDistPjcCapitalizableFlag | — |
+| PJC_CONTEXT_CATEGORY | ExpDistPjcContextCategory | — |
+| PJC_CONTRACT_ID | ExpDistPjcContractId | — |
+| PJC_CONTRACT_LINE_ID | ExpDistPjcContractLineId | — |
+| PJC_EXPENDITURE_ITEM_DATE | ExpDistPjcExpenditureItemDate | — |
+| PJC_EXPENDITURE_TYPE_ID | ExpDistPjcExpenditureTypeId | — |
+| PJC_FUNDING_ALLOCATION_ID | ExpDistPjcFundingAllocationId | — |
+| PJC_ORGANIZATION_ID | ExpDistPjcOrganizationId | — |
+| PJC_PROJECT_ID | ExpDistPjcProjectId | — |
+| PJC_RESERVED_ATTRIBUTE1 | ExpDistPjcReservedAttribute1 | — |
+| PJC_RESERVED_ATTRIBUTE10 | ExpDistPjcReservedAttribute10 | — |
+| PJC_RESERVED_ATTRIBUTE2 | ExpDistPjcReservedAttribute2 | — |
+| PJC_RESERVED_ATTRIBUTE3 | ExpDistPjcReservedAttribute3 | — |
+| PJC_RESERVED_ATTRIBUTE4 | ExpDistPjcReservedAttribute4 | — |
+| PJC_RESERVED_ATTRIBUTE5 | ExpDistPjcReservedAttribute5 | — |
+| PJC_RESERVED_ATTRIBUTE6 | ExpDistPjcReservedAttribute6 | — |
+| PJC_RESERVED_ATTRIBUTE7 | ExpDistPjcReservedAttribute7 | — |
+| PJC_RESERVED_ATTRIBUTE8 | ExpDistPjcReservedAttribute8 | — |
+| PJC_RESERVED_ATTRIBUTE9 | ExpDistPjcReservedAttribute9 | — |
+| PJC_TASK_ID | ExpDistPjcTaskId | — |
+| PJC_USER_DEF_ATTRIBUTE1 | ExpDistPjcUserDefAttribute1 | — |
+| PJC_USER_DEF_ATTRIBUTE10 | ExpDistPjcUserDefAttribute10 | — |
+| PJC_USER_DEF_ATTRIBUTE2 | ExpDistPjcUserDefAttribute2 | — |
+| PJC_USER_DEF_ATTRIBUTE3 | ExpDistPjcUserDefAttribute3 | — |
+| PJC_USER_DEF_ATTRIBUTE4 | ExpDistPjcUserDefAttribute4 | — |
+| PJC_USER_DEF_ATTRIBUTE5 | ExpDistPjcUserDefAttribute5 | — |
+| PJC_USER_DEF_ATTRIBUTE6 | ExpDistPjcUserDefAttribute6 | — |
+| PJC_USER_DEF_ATTRIBUTE7 | ExpDistPjcUserDefAttribute7 | — |
+| PJC_USER_DEF_ATTRIBUTE8 | ExpDistPjcUserDefAttribute8 | — |
+| PJC_USER_DEF_ATTRIBUTE9 | ExpDistPjcUserDefAttribute9 | — |
+| PJC_WORK_TYPE_ID | ExpDistPjcWorkTypeId | — |
+| PREPARER_MODIFIED_FLAG | ExpDistPreparerModifiedFlag | — |
+| REIMBURSABLE_AMOUNT | ExpDistReimbursableAmount | — |
+| SEGMENT1 | ExpDistSegment1 | — |
+| SEGMENT10 | ExpDistSegment10 | — |
+| SEGMENT11 | ExpDistSegment11 | — |
+| SEGMENT12 | ExpDistSegment12 | — |
+| SEGMENT13 | ExpDistSegment13 | — |
+| SEGMENT14 | ExpDistSegment14 | — |
+| SEGMENT15 | ExpDistSegment15 | — |
+| SEGMENT16 | ExpDistSegment16 | — |
+| SEGMENT17 | ExpDistSegment17 | — |
+| SEGMENT18 | ExpDistSegment18 | — |
+| SEGMENT19 | ExpDistSegment19 | — |
+| SEGMENT2 | ExpDistSegment2 | — |
+| SEGMENT20 | ExpDistSegment20 | — |
+| SEGMENT21 | ExpDistSegment21 | — |
+| SEGMENT22 | ExpDistSegment22 | — |
+| SEGMENT23 | ExpDistSegment23 | — |
+| SEGMENT24 | ExpDistSegment24 | — |
+| SEGMENT25 | ExpDistSegment25 | — |
+| SEGMENT26 | ExpDistSegment26 | — |
+| SEGMENT27 | ExpDistSegment27 | — |
+| SEGMENT28 | ExpDistSegment28 | — |
+| SEGMENT29 | ExpDistSegment29 | — |
+| SEGMENT3 | ExpDistSegment3 | — |
+| SEGMENT30 | ExpDistSegment30 | — |
+| SEGMENT4 | ExpDistSegment4 | — |
+| SEGMENT5 | ExpDistSegment5 | — |
+| SEGMENT6 | ExpDistSegment6 | — |
+| SEGMENT7 | ExpDistSegment7 | — |
+| SEGMENT8 | ExpDistSegment8 | — |
+| SEGMENT9 | ExpDistSegment9 | — |
+| SEQUENCE_NUM | ExpDistSequenceNum | — |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — EXM_EXPENSE_DISTS](https://docs.oracle.com/en/cloud/saas/financials/25a/oedmf/exmexpensedists.html)

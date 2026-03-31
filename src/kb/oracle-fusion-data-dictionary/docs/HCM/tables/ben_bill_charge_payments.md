@@ -38,7 +38,6 @@ updated_at: 2026-03-25
 
 Armazena os **pagamentos** associados a cobranças de benefícios. Cada registro representa um pagamento (parcial ou total) de uma cobrança.
 
-
 ---
 
 ## 🧠 Propósito de Negócio
@@ -102,6 +101,70 @@ WHERE  cp.BILL_CHARGE_ID = :p_charge_id;
 
 - Permite pagamentos parciais (múltiplos registros por cobrança).
 - O método `PAYROLL` indica desconto automático em folha de pagamento.
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[billchargepaymentspvo|BillChargePaymentsPVO]] (HCM · BICC: 9/55)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| AMT_DUE | AmtDue | ✅ |
+| AMT_PAID | AmtPaid | ✅ |
+| BCP_ATTRIBUTE1 | BcpAttribute1 | — |
+| BCP_ATTRIBUTE10 | BcpAttribute10 | — |
+| BCP_ATTRIBUTE2 | BcpAttribute2 | — |
+| BCP_ATTRIBUTE3 | BcpAttribute3 | — |
+| BCP_ATTRIBUTE4 | BcpAttribute4 | — |
+| BCP_ATTRIBUTE5 | BcpAttribute5 | — |
+| BCP_ATTRIBUTE6 | BcpAttribute6 | — |
+| BCP_ATTRIBUTE7 | BcpAttribute7 | — |
+| BCP_ATTRIBUTE8 | BcpAttribute8 | — |
+| BCP_ATTRIBUTE9 | BcpAttribute9 | — |
+| BCP_ATTRIBUTE_CATEGORY | BcpAttributeCategory | — |
+| BCP_ATTRIBUTE_DATE1 | BcpAttributeDate1 | — |
+| BCP_ATTRIBUTE_DATE2 | BcpAttributeDate2 | — |
+| BCP_ATTRIBUTE_DATE3 | BcpAttributeDate3 | — |
+| BCP_ATTRIBUTE_DATE4 | BcpAttributeDate4 | — |
+| BCP_ATTRIBUTE_DATE5 | BcpAttributeDate5 | — |
+| BCP_ATTRIBUTE_NUMBER1 | BcpAttributeNumber1 | — |
+| BCP_ATTRIBUTE_NUMBER2 | BcpAttributeNumber2 | — |
+| BCP_ATTRIBUTE_NUMBER3 | BcpAttributeNumber3 | — |
+| BCP_ATTRIBUTE_NUMBER4 | BcpAttributeNumber4 | — |
+| BCP_ATTRIBUTE_NUMBER5 | BcpAttributeNumber5 | — |
+| BILL_CAL_ID | BillCalId | — |
+| BILL_CHARGE_DTL_ID | BillChargeDtlId | ✅ |
+| BILL_CHARGE_ID | BillChargeId | — |
+| BILL_CHARGE_PAYMENT_ID | BillChargePaymentId | ✅ |
+| BILL_NUM | BillNum | ✅ |
+| BILL_PAYMENT_ID | BillPaymentId | ✅ |
+| BILL_PERIOD | BillPeriod | ✅ |
+| BILL_YEAR | BillYear | ✅ |
+| BUSINESS_GROUP_ID | BusinessGroupId | — |
+| CONFIG_CHAR_1 | ConfigChar1 | — |
+| CONFIG_CHAR_2 | ConfigChar2 | — |
+| CONFIG_CHAR_3 | ConfigChar3 | — |
+| CONFIG_CHAR_4 | ConfigChar4 | — |
+| CONFIG_CHAR_5 | ConfigChar5 | — |
+| CONFIG_DATE_1 | ConfigDate1 | — |
+| CONFIG_DATE_2 | ConfigDate2 | — |
+| CONFIG_DATE_3 | ConfigDate3 | — |
+| CONFIG_DATE_4 | ConfigDate4 | — |
+| CONFIG_DATE_5 | ConfigDate5 | — |
+| CONFIG_NUM_1 | ConfigNum1 | — |
+| CONFIG_NUM_2 | ConfigNum2 | — |
+| CONFIG_NUM_3 | ConfigNum3 | — |
+| CONFIG_NUM_4 | ConfigNum4 | — |
+| CONFIG_NUM_5 | ConfigNum5 | — |
+| CREATED_BY | CreatedBy | — |
+| CREATION_DATE | CreationDate | — |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | — |
+| LAST_UPDATED_BY | LastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | — |
+| PER_CREDIT_ID | PerCreditId | — |
+| PERSON_ID | PersonId | — |
 
 ---
 

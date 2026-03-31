@@ -137,3 +137,51 @@ WHERE  sc.ADMIN_USER_FLAG = 'Y'
 
 - [Oracle Docs — POZ_SUPPLIER_CONTACTS](https://docs.oracle.com/en/cloud/saas/procurement/25a/oedmf/poz-tables.html)
 - [[po-module-data-dictionary]] — Dossiê do módulo Procurement
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[allsuppliercontactspvo|AllSupplierContactsPVO]] (PO · BICC: 1/17)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | SuppAddrContactsCreatedBy | — |
+| CREATION_DATE | SuppAddrContactsCreationDate | — |
+| INACTIVE_DATE | SuppAddrContactsInactiveDate | — |
+| LAST_UPDATE_DATE | SuppAddrContactsLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | SuppAddrContactsLastUpdateLogin | — |
+| LAST_UPDATED_BY | SuppAddrContactsLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | SuppAddrContactsObjectVersionNumber | — |
+| ORG_CONTACT_ID | SuppAddrContactsOrgContactId | — |
+| ORG_PARTY_SITE_ID | SuppAddrContactsOrgPartySiteId | — |
+| PARTY_SITE_ID | SuppAddrContactsPartySiteId | — |
+| PER_PARTY_ID | SuppAddrContactsPerPartyId | — |
+| PROGRAM_APPLICATION_ID | SuppAddrContactsProgramApplicationId | — |
+| PROGRAM_ID | SuppAddrContactsProgramId | — |
+| PROGRAM_UPDATE_DATE | SuppAddrContactsProgramUpdateDate | — |
+| RELATIONSHIP_ID | SuppAddrContactsRelationshipId | — |
+| REQUEST_ID | SuppAddrContactsRequestId | — |
+| VENDOR_CONTACT_ID | SuppAddrContactsVendorContactId | — |
+
+### [[suppliercontactspvo|SupplierContactsPVO]] (PO · BICC: 5/17)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | SupplierContactCreatedBy | ✅ |
+| CREATION_DATE | SupplierContactCreationDate | ✅ |
+| INACTIVE_DATE | SupplierContactInactiveDate | — |
+| LAST_UPDATE_DATE | SupplierContactLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | SupplierContactLastUpdateLogin | — |
+| LAST_UPDATED_BY | SupplierContactLastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | SupplierContactObjectVersionNumber | — |
+| ORG_CONTACT_ID | SupplierContactOrgContactId | — |
+| ORG_PARTY_SITE_ID | SupplierContactOrgPartySiteId | — |
+| PARTY_SITE_ID | SupplierContactPartySiteId | — |
+| PER_PARTY_ID | SupplierContactPerPartyId | — |
+| PROGRAM_APPLICATION_ID | SupplierContactProgramApplicationId | — |
+| PROGRAM_ID | SupplierContactProgramId | — |
+| PROGRAM_UPDATE_DATE | SupplierContactProgramUpdateDate | — |
+| RELATIONSHIP_ID | SupplierContactRelationshipId | — |
+| REQUEST_ID | SupplierContactRequestId | — |
+| VENDOR_CONTACT_ID | VendorContactId | ✅ |

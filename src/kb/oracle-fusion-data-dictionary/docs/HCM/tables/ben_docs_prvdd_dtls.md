@@ -38,7 +38,6 @@ updated_at: 2026-03-25
 
 Armazena os **detalhes de documentos fornecidos** por participantes de benefícios para comprovação de elegibilidade ou mudança de cobertura.
 
-
 ---
 
 ## 🧠 Propósito de Negócio
@@ -98,6 +97,75 @@ WHERE  ROWNUM <= 100;
 
 - Consultar documentação oficial Oracle para detalhes de uso.
 - Tabela do módulo Benefits (Detalhes de Documentos Fornecidos).
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[participantcertificationpvo|ParticipantCertificationPVO]] (HCM · BICC: 17/60)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| APPROVAL_END_DT | DocumentProvidedDetailsPEOApprovalEndDt | — |
+| APPROVAL_PERD_CD | DocumentProvidedDetailsPEOApprovalPerdCd | — |
+| APPROVAL_PERD_TM_NUM | DocumentProvidedDetailsPEOApprovalPerdTmNum | — |
+| APPROVAL_STRT_DT | DocumentProvidedDetailsPEOApprovalStrtDt | — |
+| APPROVED_BY | DocumentProvidedDetailsPEOApprovedBy | ✅ |
+| APPROVED_DT | DocumentProvidedDetailsPEOApprovedDt | ✅ |
+| BUSINESS_GROUP_ID | DocumentProvidedDetailsPEOBusinessGroupId | — |
+| COMMENTS | DocumentProvidedDetailsPEOComments | ✅ |
+| CONFIG_CHAR_1 | DocumentProvidedDetailsPEOConfigChar1 | — |
+| CONFIG_CHAR_2 | DocumentProvidedDetailsPEOConfigChar2 | — |
+| CONFIG_CHAR_3 | DocumentProvidedDetailsPEOConfigChar3 | — |
+| CONFIG_CHAR_4 | DocumentProvidedDetailsPEOConfigChar4 | — |
+| CONFIG_CHAR_5 | DocumentProvidedDetailsPEOConfigChar5 | — |
+| CONFIG_DATE_1 | DocumentProvidedDetailsPEOConfigDate1 | — |
+| CONFIG_DATE_2 | DocumentProvidedDetailsPEOConfigDate2 | — |
+| CONFIG_DATE_3 | DocumentProvidedDetailsPEOConfigDate3 | — |
+| CONFIG_DATE_4 | DocumentProvidedDetailsPEOConfigDate4 | — |
+| CONFIG_DATE_5 | DocumentProvidedDetailsPEOConfigDate5 | — |
+| CONFIG_ID_1 | DocumentProvidedDetailsPEOConfigId1 | — |
+| CONFIG_ID_2 | DocumentProvidedDetailsPEOConfigId2 | — |
+| CONFIG_ID_3 | DocumentProvidedDetailsPEOConfigId3 | — |
+| CONFIG_ID_4 | DocumentProvidedDetailsPEOConfigId4 | — |
+| CONFIG_ID_5 | DocumentProvidedDetailsPEOConfigId5 | — |
+| CONFIG_NUM_1 | DocumentProvidedDetailsPEOConfigNum1 | — |
+| CONFIG_NUM_2 | DocumentProvidedDetailsPEOConfigNum2 | — |
+| CONFIG_NUM_3 | DocumentProvidedDetailsPEOConfigNum3 | — |
+| CONFIG_NUM_4 | DocumentProvidedDetailsPEOConfigNum4 | — |
+| CONFIG_NUM_5 | DocumentProvidedDetailsPEOConfigNum5 | — |
+| CONTACT_PERSON_ID | DocumentProvidedDetailsPEOContactPersonId | ✅ |
+| CREATED_BY | DocumentProvidedDetailsPEOCreatedBy | ✅ |
+| CREATION_DATE | DocumentProvidedDetailsPEOCreationDate | ✅ |
+| CTFN_TYPE_CD | DocumentProvidedDetailsPEOCtfnTypeCd | ✅ |
+| DOC_USG_CD | DocumentProvidedDetailsPEODocUsgCd | — |
+| DOCS_PRVDD_DTLS_ID | DocumentProvidedDetailsPEODocsPrvddDtlsId | — |
+| DOCUMENT_TYPE_ID | DocumentProvidedDetailsPEODocumentTypeId | — |
+| DOR_ID | DocumentProvidedDetailsPEODorId | ✅ |
+| JOB_DEFINITION_NAME | DocumentProvidedDetailsPEOJobDefinitionName | — |
+| JOB_DEFINITION_PACKAGE | DocumentProvidedDetailsPEOJobDefinitionPackage | — |
+| LAST_UPDATE_DATE | DocumentProvidedDetailsPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | DocumentProvidedDetailsPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | DocumentProvidedDetailsPEOLastUpdatedBy | ✅ |
+| MAPPING_COLUMN_NAME | DocumentProvidedDetailsPEOMappingColumnName | — |
+| MAPPING_TABLE_NAME | DocumentProvidedDetailsPEOMappingTableName | — |
+| MAPPING_TABLE_PK_ID | DocumentProvidedDetailsPEOMappingTablePkId | — |
+| OBJECT_VERSION_NUMBER | DocumentProvidedDetailsPEOObjectVersionNumber | — |
+| PERSON_ID | DocumentProvidedDetailsPEOPersonId | ✅ |
+| PROGRAM_APP_NAME | DocumentProvidedDetailsPEOProgramAppName | — |
+| PROGRAM_NAME | DocumentProvidedDetailsPEOProgramName1 | — |
+| PROGRAM_UPDATE_DATE | DocumentProvidedDetailsPEOProgramUpdateDate | — |
+| REJECTED_DT | DocumentProvidedDetailsPEORejectedDt | — |
+| REJECTION_REASON | DocumentProvidedDetailsPEORejectionReason | ✅ |
+| REQUEST_ID | DocumentProvidedDetailsPEORequestId | — |
+| STATUS | DocumentProvidedDetailsPEOStatus | ✅ |
+| UPLOADED_BY | DocumentProvidedDetailsPEOUploadedBy | — |
+| UPLOADED_DT | DocumentProvidedDetailsPEOUploadedDt | — |
+| VALIDITY_CD | DocumentProvidedDetailsPEOValidityCd | ✅ |
+| VALIDITY_END_DT | DocumentProvidedDetailsPEOValidityEndDt | ✅ |
+| VALIDITY_STRT_DT | DocumentProvidedDetailsPEOValidityStrtDt | ✅ |
+| VALIDITY_TM_NUM | DocumentProvidedDetailsPEOValidityTmNum | ✅ |
+| VERIFICATION_MODE | DocumentProvidedDetailsPEOVerificationMode | — |
 
 ---
 

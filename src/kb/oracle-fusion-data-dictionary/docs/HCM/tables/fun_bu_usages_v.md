@@ -58,3 +58,228 @@ updated_at: 2026-03-26
 ## 📎 Uso Típico
 
 (a ser preenchido na etapa 03)
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[allbuyerpvo|AllBuyerPVO]] (PO)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BU_NAME | BusinessUnitUsageName | — |
+| BUSINESS_UNIT_ID | BusinessUnitUsageBusinessUnitId | — |
+| CONFIGURATION_STATUS | BusinessUnitUsageConfigurationStatus | — |
+| MODULE_ID | BusinessUnitUsageModuleId | — |
+| MODULE_KEY | BusinessUnitUsageModuleKey | — |
+| MODULE_NAME | BusinessUnitUsageModuleName | — |
+| SHORT_CODE | BusinessUnitUsageShortCode | — |
+| STATUS | BusinessUnitUsageStatus | — |
+
+### [[billingandrevenuebuusagepvo|BillingAndRevenueBUUsagePVO]] (OTHER · BICC: 7/8)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BU_NAME | BusinessUnitUsageName | ✅ |
+| BUSINESS_UNIT_ID | BusinessUnitId | ✅ |
+| CONFIGURATION_STATUS | BusinessUnitUsageConfigurationStatus | ✅ |
+| MODULE_ID | ModuleId | — |
+| MODULE_KEY | BusinessUnitUsageModuleKey | ✅ |
+| MODULE_NAME | BusinessUnitUsageModuleName | ✅ |
+| SHORT_CODE | BusinessUnitUsageShortCode | ✅ |
+| STATUS | BusinessUnitUsageStatus | ✅ |
+
+### [[businessunitusagepvo|BusinessUnitUsagePVO]] (OTHER · BICC: 1/8)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BU_NAME | BusinessUnitUsageName | — |
+| BUSINESS_UNIT_ID | BusinessUnitId | ✅ |
+| CONFIGURATION_STATUS | BusinessUnitUsageConfigurationStatus | — |
+| MODULE_ID | ModuleId | — |
+| MODULE_KEY | BusinessUnitUsageModuleKey | — |
+| MODULE_NAME | BusinessUnitUsageModuleName | — |
+| SHORT_CODE | BusinessUnitUsageShortCode | — |
+| STATUS | BusinessUnitUsageStatus | — |
+
+### [[collectionbuusagepvo|CollectionBUUsagePVO]] (OTHER · BICC: 7/8)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BU_NAME | BusinessUnitUsageName | ✅ |
+| BUSINESS_UNIT_ID | BusinessUnitId | ✅ |
+| CONFIGURATION_STATUS | BusinessUnitUsageConfigurationStatus | ✅ |
+| MODULE_ID | ModuleId | — |
+| MODULE_KEY | BusinessUnitUsageModuleKey | ✅ |
+| MODULE_NAME | BusinessUnitUsageModuleName | ✅ |
+| SHORT_CODE | BusinessUnitUsageShortCode | ✅ |
+| STATUS | BusinessUnitUsageStatus | ✅ |
+
+### [[customercontractbuusagepvo|CustomerContractBUUsagePVO]] (OTHER · BICC: 7/8)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BU_NAME | BusinessUnitUsageName | ✅ |
+| BUSINESS_UNIT_ID | BusinessUnitId | ✅ |
+| CONFIGURATION_STATUS | BusinessUnitUsageConfigurationStatus | ✅ |
+| MODULE_ID | ModuleId | — |
+| MODULE_KEY | BusinessUnitUsageModuleKey | ✅ |
+| MODULE_NAME | BusinessUnitUsageModuleName | ✅ |
+| SHORT_CODE | BusinessUnitUsageShortCode | ✅ |
+| STATUS | BusinessUnitUsageStatus | ✅ |
+
+### [[customerpaymentsbuusagepvo|CustomerPaymentsBUUsagePVO]] (OTHER · BICC: 7/8)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BU_NAME | BusinessUnitUsageName | ✅ |
+| BUSINESS_UNIT_ID | BusinessUnitId | ✅ |
+| CONFIGURATION_STATUS | BusinessUnitUsageConfigurationStatus | ✅ |
+| MODULE_ID | ModuleId | — |
+| MODULE_KEY | BusinessUnitUsageModuleKey | ✅ |
+| MODULE_NAME | BusinessUnitUsageModuleName | ✅ |
+| SHORT_CODE | BusinessUnitUsageShortCode | ✅ |
+| STATUS | BusinessUnitUsageStatus | ✅ |
+
+### [[expensebuusagepvo|ExpenseBUUsagePVO]] (OTHER · BICC: 7/8)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BU_NAME | BusinessUnitUsageName | ✅ |
+| BUSINESS_UNIT_ID | BusinessUnitId | ✅ |
+| CONFIGURATION_STATUS | BusinessUnitUsageConfigurationStatus | ✅ |
+| MODULE_ID | ModuleId | — |
+| MODULE_KEY | BusinessUnitUsageModuleKey | ✅ |
+| MODULE_NAME | BusinessUnitUsageModuleName | ✅ |
+| SHORT_CODE | BusinessUnitUsageShortCode | ✅ |
+| STATUS | BusinessUnitUsageStatus | ✅ |
+
+### [[incentivecompensationbuusagepvo|IncentiveCompensationBUUsagePVO]] (OTHER · BICC: 7/8)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BU_NAME | BusinessUnitUsageName | ✅ |
+| BUSINESS_UNIT_ID | BusinessUnitId | ✅ |
+| CONFIGURATION_STATUS | BusinessUnitUsageConfigurationStatus | ✅ |
+| MODULE_ID | ModuleId | — |
+| MODULE_KEY | BusinessUnitUsageModuleKey | ✅ |
+| MODULE_NAME | BusinessUnitUsageModuleName | ✅ |
+| SHORT_CODE | BusinessUnitUsageShortCode | ✅ |
+| STATUS | BusinessUnitUsageStatus | ✅ |
+
+### [[materialmanagementbuusagepvo|MaterialManagementBUUsagePVO]] (OTHER · BICC: 7/8)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BU_NAME | BusinessUnitUsageName | ✅ |
+| BUSINESS_UNIT_ID | BusinessUnitId | ✅ |
+| CONFIGURATION_STATUS | BusinessUnitUsageConfigurationStatus | ✅ |
+| MODULE_ID | ModuleId | — |
+| MODULE_KEY | BusinessUnitUsageModuleKey | ✅ |
+| MODULE_NAME | BusinessUnitUsageModuleName | ✅ |
+| SHORT_CODE | BusinessUnitUsageShortCode | ✅ |
+| STATUS | BusinessUnitUsageStatus | ✅ |
+
+### [[payablesinvoicingbuusagepvo|PayablesInvoicingBUUsagePVO]] (OTHER · BICC: 7/8)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BU_NAME | BusinessUnitUsageName | ✅ |
+| BUSINESS_UNIT_ID | BusinessUnitId | ✅ |
+| CONFIGURATION_STATUS | BusinessUnitUsageConfigurationStatus | ✅ |
+| MODULE_ID | ModuleId | — |
+| MODULE_KEY | BusinessUnitUsageModuleKey | ✅ |
+| MODULE_NAME | BusinessUnitUsageModuleName | ✅ |
+| SHORT_CODE | BusinessUnitUsageShortCode | ✅ |
+| STATUS | BusinessUnitUsageStatus | ✅ |
+
+### [[payablespaymentsbuusagepvo|PayablesPaymentsBUUsagePVO]] (OTHER · BICC: 7/8)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BU_NAME | BusinessUnitUsageName | ✅ |
+| BUSINESS_UNIT_ID | BusinessUnitId | ✅ |
+| CONFIGURATION_STATUS | BusinessUnitUsageConfigurationStatus | ✅ |
+| MODULE_ID | ModuleId | — |
+| MODULE_KEY | BusinessUnitUsageModuleKey | ✅ |
+| MODULE_NAME | BusinessUnitUsageModuleName | ✅ |
+| SHORT_CODE | BusinessUnitUsageShortCode | ✅ |
+| STATUS | BusinessUnitUsageStatus | ✅ |
+
+### [[procurementbuusagepvo|ProcurementBUUsagePVO]] (OTHER · BICC: 7/8)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BU_NAME | BusinessUnitUsageName | ✅ |
+| BUSINESS_UNIT_ID | BusinessUnitId | ✅ |
+| CONFIGURATION_STATUS | BusinessUnitUsageConfigurationStatus | ✅ |
+| MODULE_ID | ModuleId | — |
+| MODULE_KEY | BusinessUnitUsageModuleKey | ✅ |
+| MODULE_NAME | BusinessUnitUsageModuleName | ✅ |
+| SHORT_CODE | BusinessUnitUsageShortCode | ✅ |
+| STATUS | BusinessUnitUsageStatus | ✅ |
+
+### [[procurementcontractbuusagepvo|ProcurementContractBUUsagePVO]] (OTHER · BICC: 7/8)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BU_NAME | BusinessUnitUsageName | ✅ |
+| BUSINESS_UNIT_ID | BusinessUnitId | ✅ |
+| CONFIGURATION_STATUS | BusinessUnitUsageConfigurationStatus | ✅ |
+| MODULE_ID | ModuleId | — |
+| MODULE_KEY | BusinessUnitUsageModuleKey | ✅ |
+| MODULE_NAME | BusinessUnitUsageModuleName | ✅ |
+| SHORT_CODE | BusinessUnitUsageShortCode | ✅ |
+| STATUS | BusinessUnitUsageStatus | ✅ |
+
+### [[projectaccountingbuusagepvo|ProjectAccountingBUUsagePVO]] (OTHER · BICC: 7/8)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BU_NAME | BusinessUnitUsageName | ✅ |
+| BUSINESS_UNIT_ID | BusinessUnitId | ✅ |
+| CONFIGURATION_STATUS | BusinessUnitUsageConfigurationStatus | ✅ |
+| MODULE_ID | ModuleId | — |
+| MODULE_KEY | BusinessUnitUsageModuleKey | ✅ |
+| MODULE_NAME | BusinessUnitUsageModuleName | ✅ |
+| SHORT_CODE | BusinessUnitUsageShortCode | ✅ |
+| STATUS | BusinessUnitUsageStatus | ✅ |
+
+### [[receivingbuusagepvo|ReceivingBUUsagePVO]] (OTHER · BICC: 7/8)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BU_NAME | BusinessUnitUsageName | ✅ |
+| BUSINESS_UNIT_ID | BusinessUnitId | ✅ |
+| CONFIGURATION_STATUS | BusinessUnitUsageConfigurationStatus | ✅ |
+| MODULE_ID | ModuleId | — |
+| MODULE_KEY | BusinessUnitUsageModuleKey | ✅ |
+| MODULE_NAME | BusinessUnitUsageModuleName | ✅ |
+| SHORT_CODE | BusinessUnitUsageShortCode | ✅ |
+| STATUS | BusinessUnitUsageStatus | ✅ |
+
+### [[requisitionbuusagepvo|RequisitionBUUsagePVO]] (OTHER · BICC: 7/8)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BU_NAME | BusinessUnitUsageName | ✅ |
+| BUSINESS_UNIT_ID | BusinessUnitId | ✅ |
+| CONFIGURATION_STATUS | BusinessUnitUsageConfigurationStatus | ✅ |
+| MODULE_ID | ModuleId | — |
+| MODULE_KEY | BusinessUnitUsageModuleKey | ✅ |
+| MODULE_NAME | BusinessUnitUsageModuleName | ✅ |
+| SHORT_CODE | BusinessUnitUsageShortCode | ✅ |
+| STATUS | BusinessUnitUsageStatus | ✅ |
+
+### [[salesbuusagepvo|SalesBUUsagePVO]] (OTHER · BICC: 7/8)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BU_NAME | BusinessUnitUsageName | ✅ |
+| BUSINESS_UNIT_ID | BusinessUnitId | ✅ |
+| CONFIGURATION_STATUS | BusinessUnitUsageConfigurationStatus | ✅ |
+| MODULE_ID | ModuleId | — |
+| MODULE_KEY | BusinessUnitUsageModuleKey | ✅ |
+| MODULE_NAME | BusinessUnitUsageModuleName | ✅ |
+| SHORT_CODE | BusinessUnitUsageShortCode | ✅ |
+| STATUS | BusinessUnitUsageStatus | ✅ |

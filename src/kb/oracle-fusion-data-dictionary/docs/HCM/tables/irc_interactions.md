@@ -106,3 +106,87 @@ WHERE  i.CANDIDATE_ID = :p_id ORDER BY i.INTERACTION_DATE DESC;
 
 - [Oracle Docs -- IRC_INTERACTIONS](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/ircinteractions.html)
 - [[hcm-module-data-dictionary]] -- Dossie do modulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[candidateinteractionpvo|CandidateInteractionPVO]] (HCM · BICC: 8/15)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ADDED_BY_PERSON_ID | AddedByPersonId | ✅ |
+| CONTEXT_ID | ContextId | — |
+| CONTEXT_TYPE_CODE | ContextTypeCode | ✅ |
+| CREATED_BY | CreatedBy | — |
+| CREATION_DATE | CreationDate | — |
+| INTERACTION_DATE | InteractionDate | ✅ |
+| INTERACTION_ID | InteractionId | ✅ |
+| INTERACTION_TYPE_CODE | InteractionTypeCode | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | — |
+| LAST_UPDATED_BY | LastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | — |
+| PERSON_ID | PersonId | ✅ |
+| SUBJECT | InteractionPEOSubject | — |
+| TEXT | Text | ✅ |
+
+### [[candidatepoolinteractionpvo|CandidatePoolInteractionPVO]] (HCM · BICC: 13/15)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ADDED_BY_PERSON_ID | AddedByPersonId | ✅ |
+| CONTEXT_ID | ContextId | — |
+| CONTEXT_TYPE_CODE | ContextTypeCode | ✅ |
+| CREATED_BY | CreatedBy | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| INTERACTION_DATE | InteractionDate | ✅ |
+| INTERACTION_ID | InteractionId | ✅ |
+| INTERACTION_TYPE_CODE | InteractionTypeCode | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | LastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | ✅ |
+| PERSON_ID | PersonId | ✅ |
+| SUBJECT | InteractionPEOSubject | — |
+| TEXT | Text | ✅ |
+
+### [[jobapplicationinteractionpvo|JobApplicationInteractionPVO]] (HCM · BICC: 10/15)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ADDED_BY_PERSON_ID | AddedByPersonId | ✅ |
+| CONTEXT_ID | ContextId | — |
+| CONTEXT_TYPE_CODE | ContextTypeCode | ✅ |
+| CREATED_BY | CreatedBy | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| INTERACTION_DATE | InteractionDate | ✅ |
+| INTERACTION_ID | InteractionId | ✅ |
+| INTERACTION_TYPE_CODE | InteractionTypeCode | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | — |
+| LAST_UPDATED_BY | LastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | — |
+| PERSON_ID | PersonId | ✅ |
+| SUBJECT | InteractionPEOSubject | — |
+| TEXT | Text | ✅ |
+
+### [[prospectinteractionpvo|ProspectInteractionPVO]] (HCM · BICC: 9/15)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ADDED_BY_PERSON_ID | AddedByPersonId | ✅ |
+| CONTEXT_ID | ContextId | — |
+| CONTEXT_TYPE_CODE | ContextTypeCode | ✅ |
+| CREATED_BY | CreatedBy | — |
+| CREATION_DATE | CreationDate | ✅ |
+| INTERACTION_DATE | InteractionDate | ✅ |
+| INTERACTION_ID | InteractionId | ✅ |
+| INTERACTION_TYPE_CODE | InteractionTypeCode | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | — |
+| LAST_UPDATED_BY | LastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | — |
+| PERSON_ID | PersonId | ✅ |
+| SUBJECT | InteractionPEOSubject | — |
+| TEXT | Text | ✅ |

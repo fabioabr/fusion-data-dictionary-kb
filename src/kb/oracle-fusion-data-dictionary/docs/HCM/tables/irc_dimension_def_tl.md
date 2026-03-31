@@ -101,3 +101,28 @@ SELECT tl.DIMENSION_NAME FROM IRC_DIMENSION_DEF_TL tl WHERE tl.LANGUAGE = 'PT';
 
 - [Oracle Docs -- IRC_DIMENSION_DEF_TL](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/ircdimensiondeftl.html)
 - [[hcm-module-data-dictionary]] -- Dossie do modulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[sourcedimensionpvo|SourceDimensionPVO]] (HCM · BICC: 1/4)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| DIMENSION_ID | SourceDimensionTLPEODimensionId | — |
+| LANGUAGE | SourceDimensionTLPEOLanguage | — |
+| SOURCE_DISPLAY_NAME | SourceDisplayName | — |
+| SOURCE_NAME | SourceDimensionTLPEOSourceName | ✅ |
+
+### [[sourcetrackingviewallpvo|SourceTrackingViewAllPVO]] (HCM · BICC: 2/7)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| DIMENSION_ID | ParentSourceDimensionTLPEODimensionId | — |
+| DIMENSION_ID | SourceDimensionTLPEODimensionId | — |
+| LANGUAGE | ParentSourceDimensionTLPEOLanguage | — |
+| LANGUAGE | SourceDimensionTLPEOLanguage | — |
+| SOURCE_DISPLAY_NAME | SourceDisplayName | — |
+| SOURCE_NAME | ParentSourceDimensionTLPEOSourceName | ✅ |
+| SOURCE_NAME | SourceDimensionTLPEOSourceName | ✅ |

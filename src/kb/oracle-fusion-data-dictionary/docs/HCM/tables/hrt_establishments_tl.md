@@ -103,3 +103,73 @@ WHERE  tl.ESTABLISHMENT_ID = :p_id
 
 - [Oracle Docs — HRT_ESTABLISHMENTS_TL](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/hrtestablishmentstl.html)
 - [[hcm-module-data-dictionary]] — Dossie do modulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[degreepvo|DegreePVO]] (HCM · BICC: 2/6)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| DESCRIPTION | Description | — |
+| ESTABLISHMENT_ID | EstablishmentId | — |
+| LANGUAGE | Language3 | — |
+| LAST_UPDATE_DATE | EstablishmentTranslationPEOLastUpdateDate | ✅ |
+| NAME | EstablishmentTLName | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber1 | — |
+
+### [[establishmentpvo|EstablishmentPVO]] (HCM · BICC: 3/9)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | EstablishmentTranslationPEOBusinessGroupId1 | — |
+| DESCRIPTION | EstablishmentTranslationPEODescription | — |
+| ESTABLISHMENT_ID | EstablishmentTranslationPEOEstablishmentId | — |
+| LANGUAGE | EstablishmentTranslationPEOLanguage | ✅ |
+| LAST_UPDATE_DATE | EstablishmentTranslationPEOLastUpdateDate | ✅ |
+| LOCATION | EstablishmentTranslationPEOLocation | — |
+| NAME | EstablishmentTranslationPEOName | ✅ |
+| OBJECT_VERSION_NUMBER | EstablishmentTranslationPEOObjectVersionNumber | — |
+| SOURCE_LANG | EstablishmentTranslationPEOSourceLang | — |
+
+### [[establishmenttranslationpvo|EstablishmentTranslationPVO]] (HCM · BICC: 13/13)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | BusinessGroupId | ✅ |
+| CREATED_BY | CreatedBy | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| DESCRIPTION | Description | ✅ |
+| ESTABLISHMENT_ID | EstablishmentId | ✅ |
+| LANGUAGE | Language | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | LastUpdatedBy | ✅ |
+| LOCATION | Location | ✅ |
+| NAME | Name | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | ✅ |
+| SOURCE_LANG | SourceLang | ✅ |
+
+### [[honorpvo|HonorPVO]] (HCM · BICC: 2/7)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| DESCRIPTION | Description | — |
+| ESTABLISHMENT_ID | EstablishmentId1 | — |
+| LANGUAGE | Language1 | — |
+| LAST_UPDATE_DATE | EstablishmentTranslationPEOLastUpdateDate | ✅ |
+| LOCATION | Location | — |
+| NAME | EstablishmentTLName | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber2 | — |
+
+### [[membershippvo|MembershipPVO]] (HCM · BICC: 2/6)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| DESCRIPTION | ESTTLDescription | ✅ |
+| ESTABLISHMENT_ID | ESTTLEstablishmentId | — |
+| LANGUAGE | ESTTLLanguage1 | — |
+| LAST_UPDATE_DATE | EstablishmentTranslationPEOLastUpdateDate | ✅ |
+| NAME | ESTTLName | — |
+| OBJECT_VERSION_NUMBER | ESTTLObjectVersionNumber1 | — |

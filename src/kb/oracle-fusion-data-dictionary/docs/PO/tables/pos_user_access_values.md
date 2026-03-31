@@ -117,6 +117,38 @@ WHERE  uav.VENDOR_ID = :p_vendor_id
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[supplieruseraccessvaluespvo|SupplierUserAccessValuesPVO]] (PO · BICC: 9/9)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACCESS_CODE | AccessCode | ✅ |
+| ACCESS_VALUE | AccessValue | ✅ |
+| CREATED_BY | CreatedBy | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | LastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | ✅ |
+| PER_PARTY_ID | PerPartyId | ✅ |
+
+### [[supplieruserdataaccessvalueextractpvo|SupplierUserDataAccessValueExtractPVO]] (PO · BICC: 9/9)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACCESS_CODE | AccessCode | ✅ |
+| ACCESS_VALUE | AccessValue | ✅ |
+| CREATED_BY | CreatedBy | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | LastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | ✅ |
+| PER_PARTY_ID | PerPartyId | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — POS Tables](https://docs.oracle.com/en/cloud/saas/procurement/25a/oedmf/postables.html)

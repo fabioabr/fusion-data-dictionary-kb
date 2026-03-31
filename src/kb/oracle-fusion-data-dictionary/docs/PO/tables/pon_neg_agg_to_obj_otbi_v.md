@@ -126,6 +126,32 @@ GROUP BY v.PROGRAM_ID;
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[sourcingobjectivenegotiationpvo|SourcingObjectiveNegotiationPVO]] (PO)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| AWARD_AMOUNT_BY_OBJ | NegotiationAggToObjPEOAwardAmountByObj | — |
+| OBJECTIVE_HEADER_ID | NegotiationAggToObjPEOObjectiveHeaderId | — |
+| PLANNED_CURRENT_SPEND_BY_OBJ | NegotiationAggToObjPEOPlannedCurrentSpendByObj | — |
+| PLANNED_SAVING_GOALS_BY_OBJ | NegotiationAggToObjPEOPlannedSavingGoalsByObj | — |
+| PLANNED_TARGET_SPEND_BY_OBJ | NegotiationAggToObjPEOPlannedTargetSpendByObj | — |
+| PROGRAM_HEADER_ID | NegotiationAggToObjPEOProgramHeaderId | — |
+
+### [[sourcingprogramobjectivepvo|SourcingProgramObjectivePVO]] (PO)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| AWARD_AMOUNT_BY_OBJ | NegotiationAggToObjPEOAwardAmountByObj | — |
+| OBJECTIVE_HEADER_ID | NegotiationAggToObjPEOObjectiveHeaderId | — |
+| PLANNED_CURRENT_SPEND_BY_OBJ | NegotiationAggToObjPEOPlannedCurrentSpendByObj | — |
+| PLANNED_SAVING_GOALS_BY_OBJ | NegotiationAggToObjPEOPlannedSavingGoalsByObj | — |
+| PLANNED_TARGET_SPEND_BY_OBJ | NegotiationAggToObjPEOPlannedTargetSpendByObj | — |
+| PROGRAM_HEADER_ID | NegotiationAggToObjPEOProgramHeaderId | — |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — Sourcing OTBI Subject Areas](https://docs.oracle.com/en/cloud/saas/procurement/25a/oedmf/pon-tables.html)

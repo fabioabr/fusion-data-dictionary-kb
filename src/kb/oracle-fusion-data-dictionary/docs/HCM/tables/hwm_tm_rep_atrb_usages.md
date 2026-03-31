@@ -105,3 +105,47 @@ WHERE  u.REP_ATRB_ID = :p_atrb_id;
 
 - [Oracle Docs — HWM_TM_REP_ATRB_USAGES](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/hwmtmrepatrbusages.html)
 - [[hcm-module-data-dictionary]] — Dossie do modulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[timerepositoryattributeusageextractp1|TimeRepositoryAttributeUsageExtractP1]] (HCM · BICC: 15/15)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | CreatedBy | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| DATA_SET_ID | DataSetId | ✅ |
+| ENTERPRISE_ID | EnterpriseId | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | LastUpdatedBy | ✅ |
+| LATEST_VERSION | LatestVersion | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | ✅ |
+| TM_REP_ATRB_ID | TimeRepositoryAttributeId | ✅ |
+| TM_REP_ATRB_USAGE_ID | TimeRepositoryAttributeUsageId | ✅ |
+| USAGES_SOURCE_GRP_LEVEL | UsagesSourceGroupLevel | ✅ |
+| USAGES_SOURCE_ID | UsagesSourceId | ✅ |
+| USAGES_SOURCE_VERSION | UsagesSourceVersion | ✅ |
+| USAGES_TYPE | UsagesType | ✅ |
+
+### [[timerepositoryattributeusagepvo|TimeRepositoryAttributeUsagePVO]] (HCM · BICC: 15/15)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | CreatedBy | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| DATA_SET_ID | DataSetId | ✅ |
+| ENTERPRISE_ID | EnterpriseId | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | LastUpdatedBy | ✅ |
+| LATEST_VERSION | LatestVersion | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | ✅ |
+| TM_REP_ATRB_ID | TimeRepositoryAttributeId | ✅ |
+| TM_REP_ATRB_USAGE_ID | TimeRepositoryAttributeUsageId | ✅ |
+| USAGES_SOURCE_GRP_LEVEL | UsagesSourceGroupLevel | ✅ |
+| USAGES_SOURCE_ID | UsagesSourceId | ✅ |
+| USAGES_SOURCE_VERSION | UsagesSourceVersion | ✅ |
+| USAGES_TYPE | UsagesType | ✅ |

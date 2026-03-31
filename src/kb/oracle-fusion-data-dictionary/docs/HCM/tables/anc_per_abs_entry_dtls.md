@@ -38,7 +38,6 @@ updated_at: 2026-03-25
 
 Armazena **detalhes adicionais** das entradas de ausência, como informações específicas do tipo de ausência que não cabem na tabela principal (ex.: número do atestado, CID, hospital, etc.).
 
-
 ---
 
 ## 🧠 Propósito de Negócio
@@ -104,6 +103,32 @@ WHERE  d.ABSENCE_ENTRY_ID = :p_absence_entry_id;
 - Estrutura flexível para armazenar dados adicionais sem alterar o schema principal.
 - O campo `DETAIL_TYPE` identifica o tipo de informação (ex.: CID, HOSPITAL, NUMERO_ATESTADO).
 - Pode conter múltiplos registros por entrada de ausência.
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[personabsentrydetailpvo|PersonAbsEntryDetailPVO]] (GL · BICC: 13/17)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ABSENCE_DATE | AbsenceDate | ✅ |
+| ABSENCE_DATETIME | AbsenceDatetime | ✅ |
+| ABSENCE_END_DATETIME | AbsenceEndDatetime | — |
+| ASSIGNMENT_ID | AssignmentId | ✅ |
+| CREATED_BY | CreatedBy | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| DUR_PREF_CD | PersonAbsEntryDetailPEODurPrefCd | — |
+| DURATION | Duration | ✅ |
+| END_TIME | EndTime | ✅ |
+| ENTERPRISE_ID | EnterpriseId | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | — |
+| LAST_UPDATED_BY | LastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | — |
+| PER_ABS_ENTRY_DTL_ID | PerAbsEntryDtlId | ✅ |
+| PER_ABSENCE_ENTRY_ID | PerAbsenceEntryId | ✅ |
+| START_TIME | StartTime | ✅ |
 
 ---
 

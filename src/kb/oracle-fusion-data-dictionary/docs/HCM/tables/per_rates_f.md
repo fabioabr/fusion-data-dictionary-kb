@@ -117,3 +117,55 @@ WHERE  r.RATE_TYPE = 'SALARY'
 
 - [Oracle Docs — PER_RATES_F](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/perratesf.html)
 - [[hcm-module-data-dictionary]] — Dossiê do módulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[gradeladderpvo|GradeLadderPVO]] (GL · BICC: 3/16)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_OCCURRENCE_ID | SalaryUpdateRatePEOActionOccurrenceId | — |
+| ACTIVE_STATUS | SalaryUpdateRatePEOActiveStatus | — |
+| ANNUALIZATION_FACTOR | SalaryUpdateRatePEOAnnualizationFactor | ✅ |
+| BUSINESS_GROUP_ID | SalaryUpdateRatePEOBusinessGroupId | — |
+| CURRENCY_CODE | SalaryUpdateRatePEOCurrencyCode | ✅ |
+| EFFECTIVE_END_DATE | SalaryUpdateRatePEOEffectiveEndDate | — |
+| EFFECTIVE_START_DATE | SalaryUpdateRatePEOEffectiveStartDate | — |
+| GRADE_LADDER_ID | SalaryUpdateRatePEOGradeLadderId | — |
+| LEGISLATION_CODE | SalaryUpdateRatePEOLegislationCode | — |
+| LEGISLATIVE_DATA_GROUP_ID | SalaryUpdateRatePEOLegislativeDataGroupId | — |
+| PROGRESSION_RATE_FLAG | SalaryUpdateRatePEOProgressionRateFlag | — |
+| RATE_FREQUENCY | SalaryUpdateRatePEORateFrequency | ✅ |
+| RATE_ID | SalaryUpdateRatePEORateId | — |
+| RATE_OBJECT_TYPE | SalaryUpdateRatePEORateObjectType | — |
+| RATE_TYPE | SalaryUpdateRatePEORateType | — |
+| RATE_UOM | SalaryUpdateRatePEORateUom | — |
+
+### [[ratepvo|RatePVO]] (GL · BICC: 21/22)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_OCCURRENCE_ID | RatePEOActionOccurrenceId | ✅ |
+| ACTIVE_STATUS | RatePEOActiveStatus | ✅ |
+| ANNUALIZATION_FACTOR | RatePEOAnnualizationFactor | ✅ |
+| CREATED_BY | RatePEOCreatedBy | ✅ |
+| CREATION_DATE | RatePEOCreationDate | ✅ |
+| CURRENCY_CODE | RatePEOCurrencyCode | ✅ |
+| EFFECTIVE_END_DATE | EffectiveEndDate | ✅ |
+| EFFECTIVE_START_DATE | EffectiveStartDate | ✅ |
+| GRADE_LADDER_ID | RatePEOGradeLadderId | ✅ |
+| LAST_UPDATE_DATE | RatePEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | RatePEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | RatePEOLastUpdatedBy | ✅ |
+| LEGISLATION_CODE | RatePEOLegislationCode | ✅ |
+| LEGISLATIVE_DATA_GROUP_ID | RatePEOLegislativeDataGroupId | ✅ |
+| OBJECT_VERSION_NUMBER | RatePEOObjectVersionNumber | ✅ |
+| PAY_SCALE_ID | RatePEOPayScaleId | ✅ |
+| PROGRESSION_RATE_FLAG | RatePEOProgressionRateFlag | ✅ |
+| RATE_FREQUENCY | RatePEORateFrequency | ✅ |
+| RATE_ID | RateId | ✅ |
+| RATE_OBJECT_TYPE | RatePEORateObjectType | ✅ |
+| RATE_TYPE | RatePEORateType | ✅ |
+| RATE_UOM | RatePEORateUom | ✅ |

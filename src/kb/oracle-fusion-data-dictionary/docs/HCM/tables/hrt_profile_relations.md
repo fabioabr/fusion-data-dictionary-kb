@@ -107,3 +107,76 @@ WHERE  pr.PROFILE_ID = :p_profile_id;
 
 - [Oracle Docs — HRT_PROFILE_RELATIONS](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/hrtprofilerelations.html)
 - [[hcm-module-data-dictionary]] — Dossie do modulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[goaltargetoutcomeprofilespvo|GoalTargetOutcomeProfilesPVO]] (HCM)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| OBJECT_ID | ProfileRelationPEOObjectId | — |
+| PROFILE_RELATION_ID | ProfileRelationPEOProfileRelationId | — |
+| RELATION_ID | ProfileRelationPEORelationId | — |
+
+### [[jobprofilepvo|JobProfilePVO]] (HCM · BICC: 2/13)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | ProfileRelationPEOBusinessGroupId | — |
+| CREATED_BY | ProfileRelationPEOCreatedBy | — |
+| CREATION_DATE | ProfileRelationPEOCreationDate | — |
+| LAST_UPDATE_DATE | ProfileRelationPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ProfileRelationPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | ProfileRelationPEOLastUpdatedBy | — |
+| OBJECT_EFF_END_DATE | ProfileRelationPEOObjectEffEndDate | — |
+| OBJECT_EFF_START_DATE | ProfileRelationPEOObjectEffStartDate | — |
+| OBJECT_ID | ProfileRelationPEOObjectId | ✅ |
+| OBJECT_VERSION_NUMBER | ProfileRelationPEOObjectVersionNumber | — |
+| PROFILE_ID | ProfileRelationPEOProfileId | — |
+| PROFILE_RELATION_ID | ProfileRelationPEOProfileRelationId | — |
+| RELATION_ID | ProfileRelationPEORelationId | — |
+
+### [[modelprofileitempvo|ModelProfileItemPVO]] (HCM · BICC: 3/7)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | ProfileRelationPEOBusinessGroupId | — |
+| OBJECT_EFF_END_DATE | ProfileRelationPEOObjectEffEndDate | — |
+| OBJECT_EFF_START_DATE | ProfileRelationPEOObjectEffStartDate | — |
+| OBJECT_ID | ProfileRelationPEOObjectId | ✅ |
+| PROFILE_ID | ProfileRelationPEOProfileId | — |
+| PROFILE_RELATION_ID | ProfileRelationPEOProfileRelationId | ✅ |
+| RELATION_ID | ProfileRelationPEORelationId | ✅ |
+
+### [[modelprofilepvo|ModelProfilePVO]] (HCM · BICC: 8/8)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | ProfileRelationPEOBusinessGroupId | ✅ |
+| LAST_UPDATE_DATE | ProfileRelationPEOLastUpdateDate | ✅ |
+| OBJECT_EFF_END_DATE | ProfileRelationPEOObjectEffEndDate | ✅ |
+| OBJECT_EFF_START_DATE | ProfileRelationPEOObjectEffStartDate | ✅ |
+| OBJECT_ID | ProfileRelationPEOObjectId | ✅ |
+| PROFILE_ID | ProfileRelationPEOProfileId | ✅ |
+| PROFILE_RELATION_ID | ProfileRelationPEOProfileRelationId | ✅ |
+| RELATION_ID | ProfileRelationPEORelationId | ✅ |
+
+### [[profilerelationpvo|ProfileRelationPVO]] (HCM · BICC: 13/13)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | BusinessGroupId | ✅ |
+| CREATED_BY | CreatedBy | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | LastUpdatedBy | ✅ |
+| OBJECT_EFF_END_DATE | ObjectEffEndDate | ✅ |
+| OBJECT_EFF_START_DATE | ObjectEffStartDate | ✅ |
+| OBJECT_ID | ObjectId | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | ✅ |
+| PROFILE_ID | ProfileId | ✅ |
+| PROFILE_RELATION_ID | ProfileRelationId | ✅ |
+| RELATION_ID | RelationId | ✅ |

@@ -95,6 +95,62 @@ WHERE  p.STATUS_CODE = 'ACTIVE';
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[approvalprocessp1|ApprovalProcessP1]] (AP · BICC: 3/26)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTIVE | ApprovalProcessPEOActive | — |
+| ADDITIONAL_REST_RESOURCE | ApprovalProcessPEOAdditionalRestResource | — |
+| BYPASS_SUPPORTED | ApprovalProcessPEOBypassSupported | — |
+| CATEGORY_CODE | ApprovalProcessPEOCategoryCode | — |
+| CATEGORY_NAME | ApprovalProcessPEOCategoryName | — |
+| COMPOSITE_ID | ApprovalProcessPEOCompositeId | — |
+| CREATED_BY | ApprovalProcessPEOCreatedBy | — |
+| CREATION_DATE | ApprovalProcessPEOCreationDate | — |
+| DESCRIPTION | ApprovalProcessPEODescription | — |
+| ENTERPRISE_ID | ApprovalProcessPEOEnterpriseId | — |
+| FAMILY | ApprovalProcessPEOFamily | — |
+| IS_TXN_FRAMEWORK_PROCESS | ApprovalProcessPEOIsTxnFrameworkProcess | — |
+| LAST_UPDATE_DATE | ApprovalProcessPEOLastUpdateDate | — |
+| LAST_UPDATE_LOGIN | ApprovalProcessPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | ApprovalProcessPEOLastUpdatedBy | — |
+| MODULE_ID | ApprovalProcessPEOModuleId | — |
+| NAME | ApprovalProcessPEOName | ✅ |
+| OBJECT_VERSION_NUMBER | ApprovalProcessPEOObjectVersionNumber | — |
+| PROCESS_ID | ApprovalProcessPEOProcessId | ✅ |
+| RESOURCE_CONTEXT_SHORT_NAME | ApprovalProcessPEOResourceContextShortName | — |
+| REST_RESOURCE_KEY | ApprovalProcessPEORestResourceKey | — |
+| RULE_FILE_NAME | ApprovalProcessPEORuleFileName | — |
+| SUBCATEGORY_CODE | ApprovalProcessPEOSubcategoryCode | — |
+| SUBCATEGORY_NAME | ApprovalProcessPEOSubcategoryName | — |
+| TASK_FILE_NAME | ApprovalProcessPEOTaskFileName | ✅ |
+| TXN_MODULE_IDENTIFIER | ApprovalProcessPEOTxnModuleIdentifier | — |
+
+### [[transactionconsolep1|TransactionConsoleP1]] (AP · BICC: 2/16)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTIVE | ApprovalProcessPEOActive | — |
+| COMPOSITE_ID | ApprovalProcessPEOCompositeId | — |
+| CREATED_BY | ApprovalProcessPEOCreatedBy3 | — |
+| CREATION_DATE | ApprovalProcessPEOCreationDate4 | — |
+| DESCRIPTION | ApprovalProcessPEODescription | — |
+| ENTERPRISE_ID | ApprovalProcessPEOEnterpriseId | — |
+| LAST_UPDATE_DATE | ApprovalProcessPEOLastUpdateDate3 | ✅ |
+| LAST_UPDATE_LOGIN | ApprovalProcessPEOLastUpdateLogin3 | — |
+| LAST_UPDATED_BY | ApprovalProcessPEOLastUpdatedBy3 | — |
+| MODULE_ID | ApprovalProcessPEOModuleId | — |
+| NAME | ApprovalProcessPEOName | ✅ |
+| OBJECT_VERSION_NUMBER | ApprovalProcessPEOObjectVersionNumber2 | — |
+| PROCESS_ID | ApprovalProcessPEOProcessId | — |
+| RULE_FILE_NAME | ApprovalProcessPEORuleFileName | — |
+| TASK_FILE_NAME | ApprovalProcessPEOTaskFileName | — |
+| TXN_MODULE_IDENTIFIER | ApprovalProcessPEOTxnModuleIdentifier | — |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Fusion HCM Tables and Views](https://docs.oracle.com/en/cloud/saas/human-resources/25a/)

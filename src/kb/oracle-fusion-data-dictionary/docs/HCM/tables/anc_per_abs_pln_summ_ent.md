@@ -39,7 +39,6 @@ updated_at: 2026-03-25
 
 Armazena o **sumário consolidado** de utilização de planos de ausência por colaborador. Contém totais de saldo acumulado, consumido e remanescente.
 
-
 ---
 
 ## 🧠 Propósito de Negócio
@@ -111,6 +110,40 @@ WHERE  s.PERSON_ID = :p_person_id
 - Tabela de sumário recalculada periodicamente ou após cada transação.
 - `REMAINING_BALANCE = ACCRUED_BALANCE - CONSUMED_BALANCE`.
 - Pode conter múltiplos registros por colaborador (um por plano e período).
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[personabsplnsummaryentpvo|PersonAbsPlnSummaryEntPVO]] (GL · BICC: 12/25)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTIVITY_CD | ActivityCd | ✅ |
+| CALC_DATE | CalcDate | ✅ |
+| CASE_ID | CaseId | — |
+| CREATED_BY | CreatedBy | — |
+| CREATION_DATE | CreationDate | — |
+| END_DATETIME | EndDatetime | ✅ |
+| ENTERPRISE_ID | EnterpriseId | — |
+| ENTITLEMENT_DATE | EntitlementDate | — |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | — |
+| LAST_UPDATED_BY | LastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | — |
+| OVRRD_RSN_CD | OvrrdRsnCd | ✅ |
+| PAY_FACTOR | PayFactor | ✅ |
+| PER_ABS_PLN_SUMM_ENTRY_ID | PerAbsPlnSummEntryId | ✅ |
+| PER_ABS_TYPE_ENTRY_ID | PerAbsTypeEntryId | — |
+| PER_ABSENCE_ENTRY_ID | PerAbsenceEntryId | — |
+| PERSON_ID | PersonId | — |
+| PLAN_ID | PlanId | — |
+| PLAN_PERIOD_START_DATE | PlanPeriodStartDate | ✅ |
+| QUALIFICATION_DATE | QualificationDate | ✅ |
+| SOURCE | Source | ✅ |
+| START_DATETIME | StartDatetime | ✅ |
+| UNITS | Units | ✅ |
+| UOM | Uom | — |
 
 ---
 

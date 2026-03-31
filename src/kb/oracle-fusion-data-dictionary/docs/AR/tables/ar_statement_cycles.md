@@ -77,6 +77,71 @@ SELECT sc.STATEMENT_CYCLE_ID,
 - A alteração do intervalo afeta a próxima emissão de todos os clientes associados ao ciclo.
 - É recomendável criar ciclos separados para clientes de alto volume vs. baixo volume.
 
+## 🔗 PVOs Relacionados
+
+### [[customerfinancialprofilepvo|CustomerFinancialProfilePVO]] (AR)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| DAY | StmtCycleDay | — |
+| DESCRIPTION | StmtCycleDescription | — |
+| INTERVAL | StmtCycleInterval | — |
+| NAME | StmtCycleName | — |
+| STATEMENT_CYCLE_ID | StmtCycleStatementCycleId | — |
+| STATUS | StmtCycleStatus | — |
+
+### [[customerprofile|CustomerProfile]] (AR · BICC: 1/3)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| NAME | StatementCycleName | ✅ |
+| OBJECT_VERSION_NUMBER | StatementCycleObjectVersionNumber | — |
+| STATEMENT_CYCLE_ID | StatementCycleStatementCycleId | — |
+
+### [[customersiteprofile|CustomerSiteProfile]] (AR · BICC: 1/3)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| NAME | StatementCycleName | ✅ |
+| OBJECT_VERSION_NUMBER | StatementCycleObjectVersionNumber | — |
+| STATEMENT_CYCLE_ID | StatementCycleStatementCycleId | — |
+
+### [[statementcycleextractpvo|StatementCycleExtractPVO]] (OTHER · BICC: 13/29)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ATTRIBUTE1 | ArStatementCycleAttribute1 | — |
+| ATTRIBUTE10 | ArStatementCycleAttribute10 | — |
+| ATTRIBUTE11 | ArStatementCycleAttribute11 | — |
+| ATTRIBUTE12 | ArStatementCycleAttribute12 | — |
+| ATTRIBUTE13 | ArStatementCycleAttribute13 | — |
+| ATTRIBUTE14 | ArStatementCycleAttribute14 | — |
+| ATTRIBUTE15 | ArStatementCycleAttribute15 | — |
+| ATTRIBUTE2 | ArStatementCycleAttribute2 | — |
+| ATTRIBUTE3 | ArStatementCycleAttribute3 | — |
+| ATTRIBUTE4 | ArStatementCycleAttribute4 | — |
+| ATTRIBUTE5 | ArStatementCycleAttribute5 | — |
+| ATTRIBUTE6 | ArStatementCycleAttribute6 | — |
+| ATTRIBUTE7 | ArStatementCycleAttribute7 | — |
+| ATTRIBUTE8 | ArStatementCycleAttribute8 | — |
+| ATTRIBUTE9 | ArStatementCycleAttribute9 | — |
+| ATTRIBUTE_CATEGORY | ArStatementCycleAttributeCategory | — |
+| CREATED_BY | ArStatementCycleCreatedBy | ✅ |
+| CREATION_DATE | ArStatementCycleCreationDate | ✅ |
+| DAY | ArStatementCycleDay | ✅ |
+| DESCRIPTION | ArStatementCycleDescription | ✅ |
+| INTERVAL | ArStatementCycleInterval | ✅ |
+| LAST_UPDATE_DATE | ArStatementCycleLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ArStatementCycleLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | ArStatementCycleLastUpdatedBy | ✅ |
+| NAME | ArStatementCycleName | ✅ |
+| OBJECT_VERSION_NUMBER | ArStatementCycleObjectVersionNumber | ✅ |
+| REQUEST_ID | ArStatementCycleRequestId | ✅ |
+| STATEMENT_CYCLE_ID | ArStatementCycleStatementCycleId | ✅ |
+| STATUS | ArStatementCycleStatus | ✅ |
+
+---
+
 ## 📚 Referências
 
 - Oracle Fusion Cloud Financials — Accounts Receivable Tables (OEDMF Release 13).

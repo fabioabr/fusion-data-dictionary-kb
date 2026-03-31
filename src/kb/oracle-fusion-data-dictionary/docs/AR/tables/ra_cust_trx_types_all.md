@@ -175,6 +175,476 @@ GROUP BY tt.NAME, tt.TYPE;
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[adjustmentdistributionpvo|AdjustmentDistributionPVO]] (AR · BICC: 5/7)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACCOUNTING_AFFECT_FLAG | TransactionTypeAccountingAffectFlag | ✅ |
+| CUST_TRX_TYPE_SEQ_ID | TransactionTypeCustTrxTypeSeqId | — |
+| DESCRIPTION | TransactionTypeDescription | ✅ |
+| NAME | TransactionTypeName | ✅ |
+| OBJECT_VERSION_NUMBER | TransactionTypeObjectVersionNumber11 | — |
+| POST_TO_GL | TransactionTypePostToGl | ✅ |
+| TYPE | TransactionTypeType | ✅ |
+
+### [[adjustmentpvo|AdjustmentPVO]] (AR · BICC: 5/7)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACCOUNTING_AFFECT_FLAG | TransactionTypeAccountingAffectFlag | ✅ |
+| CUST_TRX_TYPE_SEQ_ID | TransactionTypeCustTrxTypeSeqId | — |
+| DESCRIPTION | TransactionTypeDescription | ✅ |
+| NAME | TransactionTypeName | ✅ |
+| OBJECT_VERSION_NUMBER | TransactionTypeObjectVersionNumber7 | — |
+| POST_TO_GL | TransactionTypePostToGl | ✅ |
+| TYPE | TransactionTypeType | ✅ |
+
+### [[creditmemoapplicationdistributionpvo|CreditMemoApplicationDistributionPVO]] (AR · BICC: 2/4)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CUST_TRX_TYPE_SEQ_ID | CustTrxTypeSeqId | — |
+| DESCRIPTION | TransactionTypePEODescription | ✅ |
+| NAME | TransactionTypePEOName | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber7 | — |
+
+### [[creditmemoapplicationpvo|CreditMemoApplicationPVO]] (AR · BICC: 2/4)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CUST_TRX_TYPE_SEQ_ID | CustTrxTypeSeqId | — |
+| DESCRIPTION | TransactionTypeDescription | ✅ |
+| NAME | TransactionTypeName | ✅ |
+| OBJECT_VERSION_NUMBER | TransactionTypeObjectVersionNumber5 | — |
+
+### [[paymentschedulepvo|PaymentSchedulePVO]] (AR · BICC: 4/76)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACCOUNTING_AFFECT_FLAG | TransactionTypeAccountingAffectFlag | — |
+| ACCOUNTING_AFFECT_FLAG | TransactionTypeSchedAccountingAffectFlag | — |
+| ALLOCATE_TAX_FREIGHT | TransactionTypeAllocateTaxFreight | — |
+| ALLOCATE_TAX_FREIGHT | TransactionTypeSchedAllocateTaxFreight | — |
+| ALLOW_FREIGHT_FLAG | TransactionTypeAllowFreightFlag | — |
+| ALLOW_FREIGHT_FLAG | TransactionTypeSchedAllowFreightFlag | — |
+| ALLOW_OVERAPPLICATION_FLAG | TransactionTypeAllowOverapplicationFlag | — |
+| ALLOW_OVERAPPLICATION_FLAG | TransactionTypeSchedAllowOverapplicationFlag | — |
+| CREATED_BY | TransactionTypeCreatedBy | — |
+| CREATED_BY | TransactionTypeSchedCreatedBy | — |
+| CREATION_DATE | TransactionTypeCreationDate | — |
+| CREATION_DATE | TransactionTypeSchedCreationDate | — |
+| CREATION_SIGN | TransactionTypeCreationSign | — |
+| CREATION_SIGN | TransactionTypeSchedCreationSign | — |
+| CREDIT_MEMO_TYPE_ID | TransactionTypeCreditMemoTypeId | — |
+| CREDIT_MEMO_TYPE_ID | TransactionTypeSchedCreditMemoTypeId | — |
+| CREDIT_MEMO_TYPE_SEQ_ID | TransactionTypeCreditMemoTypeSeqId | — |
+| CREDIT_MEMO_TYPE_SEQ_ID | TransactionTypeSchedCreditMemoTypeSeqId | — |
+| CUST_TRX_TYPE_ID | TransactionTypeCustTrxTypeId | ✅ |
+| CUST_TRX_TYPE_ID | TransactionTypeSchedCustTrxTypeId | — |
+| CUST_TRX_TYPE_SEQ_ID | TransactionTypeCustTrxTypeSeqId | ✅ |
+| CUST_TRX_TYPE_SEQ_ID | TransactionTypeSchedCustTrxTypeSeqId | — |
+| DEFAULT_PRINTING_OPTION | TransactionTypeDefaultPrintingOption | — |
+| DEFAULT_PRINTING_OPTION | TransactionTypeSchedDefaultPrintingOption | — |
+| DEFAULT_STATUS | TransactionTypeDefaultStatus | — |
+| DEFAULT_STATUS | TransactionTypeSchedDefaultStatus | — |
+| DEFAULT_TERM | TransactionTypeDefaultTerm | — |
+| DEFAULT_TERM | TransactionTypeSchedDefaultTerm | — |
+| DESCRIPTION | TransactionTypeDescription | — |
+| DESCRIPTION | TransactionTypeSchedDescription | — |
+| DOCUMENT_TYPE | TransactionTypeDocumentType | — |
+| DOCUMENT_TYPE | TransactionTypeSchedDocumentType | — |
+| DRAWEE_ISSUED_FLAG | TransactionTypeDraweeIssuedFlag | — |
+| DRAWEE_ISSUED_FLAG | TransactionTypeSchedDraweeIssuedFlag | — |
+| END_DATE | TransactionTypeEndDate | — |
+| END_DATE | TransactionTypeSchedEndDate | — |
+| EXCLUDE_FROM_LATE_CHARGES | TransactionTypeExcludeFromLateCharges | — |
+| EXCLUDE_FROM_LATE_CHARGES | TransactionTypeSchedExcludeFromLateCharges | — |
+| FORMAT_PROGRAM_ID | TransactionTypeFormatProgramId | — |
+| FORMAT_PROGRAM_ID | TransactionTypeSchedFormatProgramId | — |
+| LAST_UPDATE_DATE | TransactionTypeLastUpdateDate | ✅ |
+| LAST_UPDATE_DATE | TransactionTypeSchedLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | TransactionTypeLastUpdateLogin | — |
+| LAST_UPDATE_LOGIN | TransactionTypeSchedLastUpdateLogin | — |
+| LAST_UPDATED_BY | TransactionTypeLastUpdatedBy | — |
+| LAST_UPDATED_BY | TransactionTypeSchedLastUpdatedBy | — |
+| LEGAL_ENTITY_ID | TransactionTypeLegalEntityId | — |
+| LEGAL_ENTITY_ID | TransactionTypeSchedLegalEntityId | — |
+| MAGNETIC_FORMAT_CODE | TransactionTypeMagneticFormatCode | — |
+| MAGNETIC_FORMAT_CODE | TransactionTypeSchedMagneticFormatCode | — |
+| NAME | TransactionTypeName | — |
+| NAME | TransactionTypeSchedName | — |
+| NATURAL_APPLICATION_ONLY_FLAG | TransactionTypeNaturalApplicationOnlyFlag | — |
+| NATURAL_APPLICATION_ONLY_FLAG | TransactionTypeSchedNaturalApplicationOnlyFlag | — |
+| OBJECT_VERSION_NUMBER | TransactionTypeObjectVersionNumber | — |
+| OBJECT_VERSION_NUMBER | TransactionTypeSchedObjectVersionNumber | — |
+| POST_TO_GL | TransactionTypePostToGl | — |
+| POST_TO_GL | TransactionTypeSchedPostToGl | — |
+| RULE_SET_ID | TransactionTypeRuleSetId | — |
+| RULE_SET_ID | TransactionTypeSchedRuleSetId | — |
+| SET_ID | TransactionTypeSchedSetId | — |
+| SET_ID | TransactionTypeSetId | — |
+| SIGNED_FLAG | TransactionTypeSchedSignedFlag | — |
+| SIGNED_FLAG | TransactionTypeSignedFlag | — |
+| START_DATE | TransactionTypeSchedStartDate | — |
+| START_DATE | TransactionTypeStartDate | — |
+| STATUS | TransactionTypeSchedStatus | — |
+| STATUS | TransactionTypeStatus | — |
+| SUBSEQUENT_TRX_TYPE_ID | TransactionTypeSchedSubsequentTrxTypeId | — |
+| SUBSEQUENT_TRX_TYPE_ID | TransactionTypeSubsequentTrxTypeId | — |
+| SUBSEQUENT_TRX_TYPE_SEQ_ID | TransactionTypeSchedSubsequentTrxTypeSeqId | — |
+| SUBSEQUENT_TRX_TYPE_SEQ_ID | TransactionTypeSubsequentTrxTypeSeqId | — |
+| TAX_CALCULATION_FLAG | TransactionTypeSchedTaxCalculationFlag | — |
+| TAX_CALCULATION_FLAG | TransactionTypeTaxCalculationFlag | — |
+| TYPE | TransactionTypeSchedType | — |
+| TYPE | TransactionTypeType | — |
+
+### [[receiptapplicationdistributionpvo|ReceiptApplicationDistributionPVO]] (AR · BICC: 2/76)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACCOUNTING_AFFECT_FLAG | TransactionTypeAccountingAffectFlag | — |
+| ACCOUNTING_AFFECT_FLAG | TransactionTypeSchedAccountingAffectFlag | — |
+| ALLOCATE_TAX_FREIGHT | TransactionTypeAllocateTaxFreight | — |
+| ALLOCATE_TAX_FREIGHT | TransactionTypeSchedAllocateTaxFreight | — |
+| ALLOW_FREIGHT_FLAG | TransactionTypeAllowFreightFlag | — |
+| ALLOW_FREIGHT_FLAG | TransactionTypeSchedAllowFreightFlag | — |
+| ALLOW_OVERAPPLICATION_FLAG | TransactionTypeAllowOverapplicationFlag | — |
+| ALLOW_OVERAPPLICATION_FLAG | TransactionTypeSchedAllowOverapplicationFlag | — |
+| CREATED_BY | TransactionTypeCreatedBy | — |
+| CREATED_BY | TransactionTypeSchedCreatedBy | — |
+| CREATION_DATE | TransactionTypeCreationDate | — |
+| CREATION_DATE | TransactionTypeSchedCreationDate | — |
+| CREATION_SIGN | TransactionTypeCreationSign | — |
+| CREATION_SIGN | TransactionTypeSchedCreationSign | — |
+| CREDIT_MEMO_TYPE_ID | TransactionTypeCreditMemoTypeId | — |
+| CREDIT_MEMO_TYPE_ID | TransactionTypeSchedCreditMemoTypeId | — |
+| CREDIT_MEMO_TYPE_SEQ_ID | TransactionTypeCreditMemoTypeSeqId | — |
+| CREDIT_MEMO_TYPE_SEQ_ID | TransactionTypeSchedCreditMemoTypeSeqId | — |
+| CUST_TRX_TYPE_ID | TransactionTypeCustTrxTypeId | — |
+| CUST_TRX_TYPE_ID | TransactionTypeSchedCustTrxTypeId | — |
+| CUST_TRX_TYPE_SEQ_ID | TransactionTypeCustTrxTypeSeqId | — |
+| CUST_TRX_TYPE_SEQ_ID | TransactionTypeSchedCustTrxTypeSeqId | — |
+| DEFAULT_PRINTING_OPTION | TransactionTypeDefaultPrintingOption | — |
+| DEFAULT_PRINTING_OPTION | TransactionTypeSchedDefaultPrintingOption | — |
+| DEFAULT_STATUS | TransactionTypeDefaultStatus | — |
+| DEFAULT_STATUS | TransactionTypeSchedDefaultStatus | — |
+| DEFAULT_TERM | TransactionTypeDefaultTerm | — |
+| DEFAULT_TERM | TransactionTypeSchedDefaultTerm | — |
+| DESCRIPTION | TransactionTypeDescription | — |
+| DESCRIPTION | TransactionTypeSchedDescription | — |
+| DOCUMENT_TYPE | TransactionTypeDocumentType | — |
+| DOCUMENT_TYPE | TransactionTypeSchedDocumentType | — |
+| DRAWEE_ISSUED_FLAG | TransactionTypeDraweeIssuedFlag | — |
+| DRAWEE_ISSUED_FLAG | TransactionTypeSchedDraweeIssuedFlag | — |
+| END_DATE | TransactionTypeEndDate | — |
+| END_DATE | TransactionTypeSchedEndDate | — |
+| EXCLUDE_FROM_LATE_CHARGES | TransactionTypeExcludeFromLateCharges | — |
+| EXCLUDE_FROM_LATE_CHARGES | TransactionTypeSchedExcludeFromLateCharges | — |
+| FORMAT_PROGRAM_ID | TransactionTypeFormatProgramId | — |
+| FORMAT_PROGRAM_ID | TransactionTypeSchedFormatProgramId | — |
+| LAST_UPDATE_DATE | TransactionTypeLastUpdateDate | ✅ |
+| LAST_UPDATE_DATE | TransactionTypeSchedLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | TransactionTypeLastUpdateLogin | — |
+| LAST_UPDATE_LOGIN | TransactionTypeSchedLastUpdateLogin | — |
+| LAST_UPDATED_BY | TransactionTypeLastUpdatedBy | — |
+| LAST_UPDATED_BY | TransactionTypeSchedLastUpdatedBy | — |
+| LEGAL_ENTITY_ID | TransactionTypeLegalEntityId | — |
+| LEGAL_ENTITY_ID | TransactionTypeSchedLegalEntityId | — |
+| MAGNETIC_FORMAT_CODE | TransactionTypeMagneticFormatCode | — |
+| MAGNETIC_FORMAT_CODE | TransactionTypeSchedMagneticFormatCode | — |
+| NAME | TransactionTypeName | — |
+| NAME | TransactionTypeSchedName | — |
+| NATURAL_APPLICATION_ONLY_FLAG | TransactionTypeNaturalApplicationOnlyFlag | — |
+| NATURAL_APPLICATION_ONLY_FLAG | TransactionTypeSchedNaturalApplicationOnlyFlag | — |
+| OBJECT_VERSION_NUMBER | TransactionTypeObjectVersionNumber | — |
+| OBJECT_VERSION_NUMBER | TransactionTypeSchedObjectVersionNumber | — |
+| POST_TO_GL | TransactionTypePostToGl | — |
+| POST_TO_GL | TransactionTypeSchedPostToGl | — |
+| RULE_SET_ID | TransactionTypeRuleSetId | — |
+| RULE_SET_ID | TransactionTypeSchedRuleSetId | — |
+| SET_ID | TransactionTypeSchedSetId | — |
+| SET_ID | TransactionTypeSetId | — |
+| SIGNED_FLAG | TransactionTypeSchedSignedFlag | — |
+| SIGNED_FLAG | TransactionTypeSignedFlag | — |
+| START_DATE | TransactionTypeSchedStartDate | — |
+| START_DATE | TransactionTypeStartDate | — |
+| STATUS | TransactionTypeSchedStatus | — |
+| STATUS | TransactionTypeStatus | — |
+| SUBSEQUENT_TRX_TYPE_ID | TransactionTypeSchedSubsequentTrxTypeId | — |
+| SUBSEQUENT_TRX_TYPE_ID | TransactionTypeSubsequentTrxTypeId | — |
+| SUBSEQUENT_TRX_TYPE_SEQ_ID | TransactionTypeSchedSubsequentTrxTypeSeqId | — |
+| SUBSEQUENT_TRX_TYPE_SEQ_ID | TransactionTypeSubsequentTrxTypeSeqId | — |
+| TAX_CALCULATION_FLAG | TransactionTypeSchedTaxCalculationFlag | — |
+| TAX_CALCULATION_FLAG | TransactionTypeTaxCalculationFlag | — |
+| TYPE | TransactionTypeSchedType | — |
+| TYPE | TransactionTypeType | — |
+
+### [[receiptapplicationdistributionvc|ReceiptApplicationDistributionVC]] (AR · BICC: 2/76)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACCOUNTING_AFFECT_FLAG | TransactionTypeAccountingAffectFlag | — |
+| ACCOUNTING_AFFECT_FLAG | TransactionTypeSchedAccountingAffectFlag | — |
+| ALLOCATE_TAX_FREIGHT | TransactionTypeAllocateTaxFreight | — |
+| ALLOCATE_TAX_FREIGHT | TransactionTypeSchedAllocateTaxFreight | — |
+| ALLOW_FREIGHT_FLAG | TransactionTypeAllowFreightFlag | — |
+| ALLOW_FREIGHT_FLAG | TransactionTypeSchedAllowFreightFlag | — |
+| ALLOW_OVERAPPLICATION_FLAG | TransactionTypeAllowOverapplicationFlag | — |
+| ALLOW_OVERAPPLICATION_FLAG | TransactionTypeSchedAllowOverapplicationFlag | — |
+| CREATED_BY | TransactionTypeCreatedBy | — |
+| CREATED_BY | TransactionTypeSchedCreatedBy | — |
+| CREATION_DATE | TransactionTypeCreationDate | — |
+| CREATION_DATE | TransactionTypeSchedCreationDate | — |
+| CREATION_SIGN | TransactionTypeCreationSign | — |
+| CREATION_SIGN | TransactionTypeSchedCreationSign | — |
+| CREDIT_MEMO_TYPE_ID | TransactionTypeCreditMemoTypeId | — |
+| CREDIT_MEMO_TYPE_ID | TransactionTypeSchedCreditMemoTypeId | — |
+| CREDIT_MEMO_TYPE_SEQ_ID | TransactionTypeCreditMemoTypeSeqId | — |
+| CREDIT_MEMO_TYPE_SEQ_ID | TransactionTypeSchedCreditMemoTypeSeqId | — |
+| CUST_TRX_TYPE_ID | TransactionTypeCustTrxTypeId | — |
+| CUST_TRX_TYPE_ID | TransactionTypeSchedCustTrxTypeId | — |
+| CUST_TRX_TYPE_SEQ_ID | TransactionTypeCustTrxTypeSeqId | — |
+| CUST_TRX_TYPE_SEQ_ID | TransactionTypeSchedCustTrxTypeSeqId | — |
+| DEFAULT_PRINTING_OPTION | TransactionTypeDefaultPrintingOption | — |
+| DEFAULT_PRINTING_OPTION | TransactionTypeSchedDefaultPrintingOption | — |
+| DEFAULT_STATUS | TransactionTypeDefaultStatus | — |
+| DEFAULT_STATUS | TransactionTypeSchedDefaultStatus | — |
+| DEFAULT_TERM | TransactionTypeDefaultTerm | — |
+| DEFAULT_TERM | TransactionTypeSchedDefaultTerm | — |
+| DESCRIPTION | TransactionTypeDescription | — |
+| DESCRIPTION | TransactionTypeSchedDescription | — |
+| DOCUMENT_TYPE | TransactionTypeDocumentType | — |
+| DOCUMENT_TYPE | TransactionTypeSchedDocumentType | — |
+| DRAWEE_ISSUED_FLAG | TransactionTypeDraweeIssuedFlag | — |
+| DRAWEE_ISSUED_FLAG | TransactionTypeSchedDraweeIssuedFlag | — |
+| END_DATE | TransactionTypeEndDate | — |
+| END_DATE | TransactionTypeSchedEndDate | — |
+| EXCLUDE_FROM_LATE_CHARGES | TransactionTypeExcludeFromLateCharges | — |
+| EXCLUDE_FROM_LATE_CHARGES | TransactionTypeSchedExcludeFromLateCharges | — |
+| FORMAT_PROGRAM_ID | TransactionTypeFormatProgramId | — |
+| FORMAT_PROGRAM_ID | TransactionTypeSchedFormatProgramId | — |
+| LAST_UPDATE_DATE | TransactionTypeLastUpdateDate | ✅ |
+| LAST_UPDATE_DATE | TransactionTypeSchedLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | TransactionTypeLastUpdateLogin | — |
+| LAST_UPDATE_LOGIN | TransactionTypeSchedLastUpdateLogin | — |
+| LAST_UPDATED_BY | TransactionTypeLastUpdatedBy | — |
+| LAST_UPDATED_BY | TransactionTypeSchedLastUpdatedBy | — |
+| LEGAL_ENTITY_ID | TransactionTypeLegalEntityId | — |
+| LEGAL_ENTITY_ID | TransactionTypeSchedLegalEntityId | — |
+| MAGNETIC_FORMAT_CODE | TransactionTypeMagneticFormatCode | — |
+| MAGNETIC_FORMAT_CODE | TransactionTypeSchedMagneticFormatCode | — |
+| NAME | TransactionTypeName | — |
+| NAME | TransactionTypeSchedName | — |
+| NATURAL_APPLICATION_ONLY_FLAG | TransactionTypeNaturalApplicationOnlyFlag | — |
+| NATURAL_APPLICATION_ONLY_FLAG | TransactionTypeSchedNaturalApplicationOnlyFlag | — |
+| OBJECT_VERSION_NUMBER | TransactionTypeObjectVersionNumber | — |
+| OBJECT_VERSION_NUMBER | TransactionTypeSchedObjectVersionNumber | — |
+| POST_TO_GL | TransactionTypePostToGl | — |
+| POST_TO_GL | TransactionTypeSchedPostToGl | — |
+| RULE_SET_ID | TransactionTypeRuleSetId | — |
+| RULE_SET_ID | TransactionTypeSchedRuleSetId | — |
+| SET_ID | TransactionTypeSchedSetId | — |
+| SET_ID | TransactionTypeSetId | — |
+| SIGNED_FLAG | TransactionTypeSchedSignedFlag | — |
+| SIGNED_FLAG | TransactionTypeSignedFlag | — |
+| START_DATE | TransactionTypeSchedStartDate | — |
+| START_DATE | TransactionTypeStartDate | — |
+| STATUS | TransactionTypeSchedStatus | — |
+| STATUS | TransactionTypeStatus | — |
+| SUBSEQUENT_TRX_TYPE_ID | TransactionTypeSchedSubsequentTrxTypeId | — |
+| SUBSEQUENT_TRX_TYPE_ID | TransactionTypeSubsequentTrxTypeId | — |
+| SUBSEQUENT_TRX_TYPE_SEQ_ID | TransactionTypeSchedSubsequentTrxTypeSeqId | — |
+| SUBSEQUENT_TRX_TYPE_SEQ_ID | TransactionTypeSubsequentTrxTypeSeqId | — |
+| TAX_CALCULATION_FLAG | TransactionTypeSchedTaxCalculationFlag | — |
+| TAX_CALCULATION_FLAG | TransactionTypeTaxCalculationFlag | — |
+| TYPE | TransactionTypeSchedType | — |
+| TYPE | TransactionTypeType | — |
+
+### [[salesinvoicecustomertrxlinespvo|SalesInvoiceCustomerTrxLinesPVO]] (AR · BICC: 3/38)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACCOUNTING_AFFECT_FLAG | TransactionTypeAccountingAffectFlag | — |
+| ALLOCATE_TAX_FREIGHT | TransactionTypeAllocateTaxFreight | — |
+| ALLOW_FREIGHT_FLAG | TransactionTypeAllowFreightFlag | — |
+| ALLOW_OVERAPPLICATION_FLAG | TransactionTypeAllowOverapplicationFlag | — |
+| CREATED_BY | TransactionTypeCreatedBy | — |
+| CREATION_DATE | TransactionTypeCreationDate | — |
+| CREATION_SIGN | TransactionTypeCreationSign | — |
+| CREDIT_MEMO_TYPE_ID | TransactionTypeCreditMemoTypeId | — |
+| CREDIT_MEMO_TYPE_SEQ_ID | TransactionTypeCreditMemoTypeSeqId | — |
+| CUST_TRX_TYPE_ID | TransactionTypeCustTrxTypeId | — |
+| CUST_TRX_TYPE_SEQ_ID | TransactionTypeCustTrxTypeSeqId | — |
+| DEFAULT_PRINTING_OPTION | TransactionTypeDefaultPrintingOption | — |
+| DEFAULT_STATUS | TransactionTypeDefaultStatus | — |
+| DEFAULT_TERM | TransactionTypeDefaultTerm | — |
+| DESCRIPTION | TransactionTypeDescription | — |
+| DOCUMENT_TYPE | TransactionTypeDocumentType | — |
+| DRAWEE_ISSUED_FLAG | TransactionTypeDraweeIssuedFlag | — |
+| END_DATE | TransactionTypeEndDate | — |
+| EXCLUDE_FROM_LATE_CHARGES | TransactionTypeExcludeFromLateCharges | — |
+| FORMAT_PROGRAM_ID | TransactionTypeFormatProgramId | — |
+| LAST_UPDATE_DATE | TransactionTypeLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | TransactionTypeLastUpdateLogin | — |
+| LAST_UPDATED_BY | TransactionTypeLastUpdatedBy | ✅ |
+| LEGAL_ENTITY_ID | TransactionTypeLegalEntityId | — |
+| MAGNETIC_FORMAT_CODE | TransactionTypeMagneticFormatCode | — |
+| NAME | TransactionTypeName | — |
+| NATURAL_APPLICATION_ONLY_FLAG | TransactionTypeNaturalApplicationOnlyFlag | — |
+| OBJECT_VERSION_NUMBER | TransactionTypeObjectVersionNumber | — |
+| POST_TO_GL | TransactionTypePostToGl | — |
+| RULE_SET_ID | TransactionTypeRuleSetId | — |
+| SET_ID | TransactionTypeSetId | — |
+| SIGNED_FLAG | TransactionTypeSignedFlag | — |
+| START_DATE | TransactionTypeStartDate | — |
+| STATUS | TransactionTypeStatus | — |
+| SUBSEQUENT_TRX_TYPE_ID | TransactionTypeSubsequentTrxTypeId | — |
+| SUBSEQUENT_TRX_TYPE_SEQ_ID | TransactionTypeSubsequentTrxTypeSeqId | — |
+| TAX_CALCULATION_FLAG | TransactionTypeTaxCalculationFlag | — |
+| TYPE | TransactionTypeType | ✅ |
+
+### [[transactiontypeextractpvo|TransactionTypeExtractPVO]] (OTHER · BICC: 41/88)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACCOUNTING_AFFECT_FLAG | RaCustTrxTypeAccountingAffectFlag | ✅ |
+| ALLOCATE_TAX_FREIGHT | RaCustTrxTypeAllocateTaxFreight | ✅ |
+| ALLOW_FREIGHT_FLAG | RaCustTrxTypeAllowFreightFlag | ✅ |
+| ALLOW_FUTURE_ACCT_DATE_FLAG | RaCustTrxTypeAllowFutureAcctDateFlag | ✅ |
+| ALLOW_OVERAPPLICATION_FLAG | RaCustTrxTypeAllowOverapplicationFlag | ✅ |
+| ATTRIBUTE1 | RaCustTrxTypeAttribute1 | — |
+| ATTRIBUTE10 | RaCustTrxTypeAttribute10 | — |
+| ATTRIBUTE11 | RaCustTrxTypeAttribute11 | — |
+| ATTRIBUTE12 | RaCustTrxTypeAttribute12 | — |
+| ATTRIBUTE13 | RaCustTrxTypeAttribute13 | — |
+| ATTRIBUTE14 | RaCustTrxTypeAttribute14 | — |
+| ATTRIBUTE15 | RaCustTrxTypeAttribute15 | — |
+| ATTRIBUTE2 | RaCustTrxTypeAttribute2 | — |
+| ATTRIBUTE3 | RaCustTrxTypeAttribute3 | — |
+| ATTRIBUTE4 | RaCustTrxTypeAttribute4 | — |
+| ATTRIBUTE5 | RaCustTrxTypeAttribute5 | — |
+| ATTRIBUTE6 | RaCustTrxTypeAttribute6 | — |
+| ATTRIBUTE7 | RaCustTrxTypeAttribute7 | — |
+| ATTRIBUTE8 | RaCustTrxTypeAttribute8 | — |
+| ATTRIBUTE9 | RaCustTrxTypeAttribute9 | — |
+| ATTRIBUTE_CATEGORY | RaCustTrxTypeAttributeCategory | — |
+| CONTROL_COMPLETION_LEVEL_CODE | RaCustTrxTypeControlCompletionLevelCode | ✅ |
+| CREATED_BY | RaCustTrxTypeCreatedBy | ✅ |
+| CREATION_DATE | RaCustTrxTypeCreationDate | ✅ |
+| CREATION_SIGN | RaCustTrxTypeCreationSign | ✅ |
+| CREDIT_MEMO_TYPE_ID | RaCustTrxTypeCreditMemoTypeId | ✅ |
+| CREDIT_MEMO_TYPE_SEQ_ID | RaCustTrxTypeCreditMemoTypeSeqId | ✅ |
+| CUST_TRX_TYPE_ID | RaCustTrxTypeCustTrxTypeId | ✅ |
+| CUST_TRX_TYPE_SEQ_ID | RaCustTrxTypeCustTrxTypeSeqId | ✅ |
+| DEFAULT_PRINTING_OPTION | RaCustTrxTypeDefaultPrintingOption | ✅ |
+| DEFAULT_STATUS | RaCustTrxTypeDefaultStatus | ✅ |
+| DEFAULT_TERM | RaCustTrxTypeDefaultTerm | ✅ |
+| DESCRIPTION | RaCustTrxTypeDescription | ✅ |
+| DOCUMENT_TYPE | RaCustTrxTypeDocumentType | ✅ |
+| DRAWEE_ISSUED_FLAG | RaCustTrxTypeDraweeIssuedFlag | ✅ |
+| END_DATE | RaCustTrxTypeEndDate | ✅ |
+| EXCLUDE_FROM_LATE_CHARGES | RaCustTrxTypeExcludeFromLateCharges | ✅ |
+| FORMAT_PROGRAM_ID | RaCustTrxTypeFormatProgramId | ✅ |
+| GLOBAL_ATTRIBUTE1 | RaCustTrxTypeGlobalAttribute1 | — |
+| GLOBAL_ATTRIBUTE10 | RaCustTrxTypeGlobalAttribute10 | — |
+| GLOBAL_ATTRIBUTE11 | RaCustTrxTypeGlobalAttribute11 | — |
+| GLOBAL_ATTRIBUTE12 | RaCustTrxTypeGlobalAttribute12 | — |
+| GLOBAL_ATTRIBUTE13 | RaCustTrxTypeGlobalAttribute13 | — |
+| GLOBAL_ATTRIBUTE14 | RaCustTrxTypeGlobalAttribute14 | — |
+| GLOBAL_ATTRIBUTE15 | RaCustTrxTypeGlobalAttribute15 | — |
+| GLOBAL_ATTRIBUTE16 | RaCustTrxTypeGlobalAttribute16 | — |
+| GLOBAL_ATTRIBUTE17 | RaCustTrxTypeGlobalAttribute17 | — |
+| GLOBAL_ATTRIBUTE18 | RaCustTrxTypeGlobalAttribute18 | — |
+| GLOBAL_ATTRIBUTE19 | RaCustTrxTypeGlobalAttribute19 | — |
+| GLOBAL_ATTRIBUTE2 | RaCustTrxTypeGlobalAttribute2 | — |
+| GLOBAL_ATTRIBUTE20 | RaCustTrxTypeGlobalAttribute20 | — |
+| GLOBAL_ATTRIBUTE3 | RaCustTrxTypeGlobalAttribute3 | — |
+| GLOBAL_ATTRIBUTE4 | RaCustTrxTypeGlobalAttribute4 | — |
+| GLOBAL_ATTRIBUTE5 | RaCustTrxTypeGlobalAttribute5 | — |
+| GLOBAL_ATTRIBUTE6 | RaCustTrxTypeGlobalAttribute6 | — |
+| GLOBAL_ATTRIBUTE7 | RaCustTrxTypeGlobalAttribute7 | — |
+| GLOBAL_ATTRIBUTE8 | RaCustTrxTypeGlobalAttribute8 | — |
+| GLOBAL_ATTRIBUTE9 | RaCustTrxTypeGlobalAttribute9 | — |
+| GLOBAL_ATTRIBUTE_CATEGORY | RaCustTrxTypeGlobalAttributeCategory | — |
+| GLOBAL_ATTRIBUTE_DATE1 | RaCustTrxTypeGlobalAttributeDate1 | — |
+| GLOBAL_ATTRIBUTE_DATE2 | RaCustTrxTypeGlobalAttributeDate2 | — |
+| GLOBAL_ATTRIBUTE_DATE3 | RaCustTrxTypeGlobalAttributeDate3 | — |
+| GLOBAL_ATTRIBUTE_DATE4 | RaCustTrxTypeGlobalAttributeDate4 | — |
+| GLOBAL_ATTRIBUTE_DATE5 | RaCustTrxTypeGlobalAttributeDate5 | — |
+| GLOBAL_ATTRIBUTE_NUMBER1 | RaCustTrxTypeGlobalAttributeNumber1 | — |
+| GLOBAL_ATTRIBUTE_NUMBER2 | RaCustTrxTypeGlobalAttributeNumber2 | — |
+| GLOBAL_ATTRIBUTE_NUMBER3 | RaCustTrxTypeGlobalAttributeNumber3 | — |
+| GLOBAL_ATTRIBUTE_NUMBER4 | RaCustTrxTypeGlobalAttributeNumber4 | — |
+| GLOBAL_ATTRIBUTE_NUMBER5 | RaCustTrxTypeGlobalAttributeNumber5 | — |
+| LAST_UPDATE_DATE | RaCustTrxTypeLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | RaCustTrxTypeLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | RaCustTrxTypeLastUpdatedBy | ✅ |
+| LEGAL_ENTITY_ID | RaCustTrxTypeLegalEntityId | ✅ |
+| MAGNETIC_FORMAT_CODE | RaCustTrxTypeMagneticFormatCode | ✅ |
+| NAME | RaCustTrxTypeName | ✅ |
+| NATURAL_APPLICATION_ONLY_FLAG | RaCustTrxTypeNaturalApplicationOnlyFlag | ✅ |
+| OBJECT_VERSION_NUMBER | RaCustTrxTypeObjectVersionNumber | ✅ |
+| POST_TO_GL | RaCustTrxTypePostToGl | ✅ |
+| RULE_SET_ID | RaCustTrxTypeRuleSetId | ✅ |
+| SET_ID | RaCustTrxTypeSetId | ✅ |
+| SIGNED_FLAG | RaCustTrxTypeSignedFlag | ✅ |
+| START_DATE | RaCustTrxTypeStartDate | ✅ |
+| STATUS | RaCustTrxTypeStatus | ✅ |
+| SUBSEQUENT_TRX_TYPE_ID | RaCustTrxTypeSubsequentTrxTypeId | ✅ |
+| SUBSEQUENT_TRX_TYPE_SEQ_ID | RaCustTrxTypeSubsequentTrxTypeSeqId | ✅ |
+| TAX_CALCULATION_FLAG | RaCustTrxTypeTaxCalculationFlag | ✅ |
+| TYPE | RaCustTrxTypeType | ✅ |
+| USAGE_CATEGORY_CODE | RaCustTrxTypeUsageCategoryCode | ✅ |
+
+### [[transactiontypepvo|TransactionTypePVO]] (AR · BICC: 19/40)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACCOUNTING_AFFECT_FLAG | TransactionTypeAccountingAffectFlag | ✅ |
+| ALLOCATE_TAX_FREIGHT | TransactionTypeAllocateTaxFreight | ✅ |
+| ALLOW_FREIGHT_FLAG | TransactionTypeAllowFreightFlag | — |
+| ALLOW_OVERAPPLICATION_FLAG | TransactionTypeAllowOverapplicationFlag | ✅ |
+| CONTROL_COMPLETION_LEVEL_CODE | TransactionTypeControlCompletionLevelCode | — |
+| CREATED_BY | TransactionTypeCreatedBy | ✅ |
+| CREATION_DATE | TransactionTypeCreationDate | ✅ |
+| CREATION_SIGN | TransactionTypeCreationSign | ✅ |
+| CREDIT_MEMO_TYPE_ID | TransactionTypeCreditMemoTypeId | — |
+| CREDIT_MEMO_TYPE_SEQ_ID | TransactionTypeCreditMemoTypeSeqId | — |
+| CUST_TRX_TYPE_ID | TransactionTypeCustTrxTypeId | ✅ |
+| CUST_TRX_TYPE_SEQ_ID | CustTrxTypeSeqId | ✅ |
+| DEFAULT_PRINTING_OPTION | TransactionTypeDefaultPrintingOption | — |
+| DEFAULT_STATUS | TransactionTypeDefaultStatus | — |
+| DEFAULT_TERM | TransactionTypeDefaultTerm | — |
+| DESCRIPTION | TransactionTypeDescription | ✅ |
+| DOCUMENT_TYPE | TransactionTypeDocumentType | — |
+| DRAWEE_ISSUED_FLAG | TransactionTypeDraweeIssuedFlag | ✅ |
+| END_DATE | TransactionTypeEndDate | — |
+| EXCLUDE_FROM_LATE_CHARGES | TransactionTypeExcludeFromLateCharges | — |
+| FORMAT_PROGRAM_ID | TransactionTypeFormatProgramId | — |
+| LAST_UPDATE_DATE | TransactionTypeLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | TransactionTypeLastUpdateLogin | — |
+| LAST_UPDATED_BY | TransactionTypeLastUpdatedBy | ✅ |
+| LEGAL_ENTITY_ID | TransactionTypeLegalEntityId | — |
+| MAGNETIC_FORMAT_CODE | TransactionTypeMagneticFormatCode | — |
+| NAME | TransactionTypeName | ✅ |
+| NATURAL_APPLICATION_ONLY_FLAG | TransactionTypeNaturalApplicationOnlyFlag | ✅ |
+| OBJECT_VERSION_NUMBER | TransactionTypeObjectVersionNumber | — |
+| POST_TO_GL | TransactionTypePostToGl | ✅ |
+| RULE_SET_ID | TransactionTypeRuleSetId | — |
+| SET_ID | TransactionTypeSetId | — |
+| SIGNED_FLAG | TransactionTypeSignedFlag | ✅ |
+| START_DATE | TransactionTypeStartDate | — |
+| STATUS | TransactionTypeStatus | — |
+| SUBSEQUENT_TRX_TYPE_ID | TransactionTypeSubsequentTrxTypeId | ✅ |
+| SUBSEQUENT_TRX_TYPE_SEQ_ID | TransactionTypeSubsequentTrxTypeSeqId | — |
+| TAX_CALCULATION_FLAG | TransactionTypeTaxCalculationFlag | ✅ |
+| TYPE | TransactionTypeType | ✅ |
+| USAGE_CATEGORY_CODE | TransactionTypeUsageCategoryCode | — |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — RA_CUST_TRX_TYPES_ALL](https://docs.oracle.com/en/cloud/saas/financials/25a/oedmf/racusttrxtypesall-25250.html)

@@ -111,6 +111,82 @@ WHERE  SYSDATE BETWEEN pd.EFFECTIVE_START_DATE AND pd.EFFECTIVE_END_DATE;
 - A categoria segue classificação padrão (física, visual, auditiva, mental, múltipla).
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[contactpersondisabilitypvo|ContactPersonDisabilityPVO]] (HCM · BICC: 27/31)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACCOMMODATION_REQUEST | PersonDisabilityPEOAccommodationRequest | — |
+| ASSESSMENT_DUE_DATE | PersonDisabilityPEOAssessmentDueDate | ✅ |
+| ASSIGNMENT_ID | PersonDisabilityPEOAssignmentId | ✅ |
+| BUSINESS_GROUP_ID | PersonDisabilityPEOBusinessGroupId | ✅ |
+| CATEGORY | PersonDisabilityPEOCategory | ✅ |
+| CREATED_BY | PersonDisabilityPEOCreatedBy | ✅ |
+| CREATION_DATE | PersonDisabilityPEOCreationDate | ✅ |
+| DEGREE | PersonDisabilityPEODegree | ✅ |
+| DESCRIPTION | PersonDisabilityPEODescription | ✅ |
+| DISABILITY_CODE | PersonDisabilityPEODisabilityCode | ✅ |
+| DISABILITY_ID | DisabilityId | ✅ |
+| DISCLOSURE_DATE | PersonDisabilityPEODisclosureDate | — |
+| EFFECTIVE_END_DATE | EffectiveEndDate | ✅ |
+| EFFECTIVE_START_DATE | EffectiveStartDate | ✅ |
+| INCIDENT_ID | PersonDisabilityPEOIncidentId | ✅ |
+| LAST_UPDATE_DATE | PersonDisabilityPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | PersonDisabilityPEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | PersonDisabilityPEOLastUpdatedBy | ✅ |
+| LEGISLATION_CODE | PersonDisabilityPEOLegislationCode | ✅ |
+| OBJECT_VERSION_NUMBER | PersonDisabilityPEOObjectVersionNumber | — |
+| ORGANIZATION_ID | PersonDisabilityPEOOrganizationId | ✅ |
+| PERSON_ID | PersonDisabilityPEOPersonId | ✅ |
+| PRE_REGISTRATION_JOB | PersonDisabilityPEOPreRegistrationJob | ✅ |
+| QUOTA_FTE | PersonDisabilityPEOQuotaFte | ✅ |
+| REASON | PersonDisabilityPEOReason | ✅ |
+| REGISTRATION_DATE | PersonDisabilityPEORegistrationDate | ✅ |
+| REGISTRATION_EXP_DATE | PersonDisabilityPEORegistrationExpDate | ✅ |
+| REGISTRATION_ID | PersonDisabilityPEORegistrationId | ✅ |
+| SELF_DISCLOSED_TYPE | PersonDisabilityPEOSelfDisclosedType | — |
+| STATUS | PersonDisabilityPEOStatus | ✅ |
+| WORK_RESTRICTION | PersonDisabilityPEOWorkRestriction | ✅ |
+
+### [[persondisabilitypvo|PersonDisabilityPVO]] (HCM · BICC: 31/31)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACCOMMODATION_REQUEST | PersonDisabilityPEOAccommodationRequest | ✅ |
+| ASSESSMENT_DUE_DATE | PersonDisabilityPEOAssessmentDueDate | ✅ |
+| ASSIGNMENT_ID | PersonDisabilityPEOAssignmentId | ✅ |
+| BUSINESS_GROUP_ID | PersonDisabilityPEOBusinessGroupId | ✅ |
+| CATEGORY | PersonDisabilityPEOCategory | ✅ |
+| CREATED_BY | PersonDisabilityPEOCreatedBy | ✅ |
+| CREATION_DATE | PersonDisabilityPEOCreationDate | ✅ |
+| DEGREE | PersonDisabilityPEODegree | ✅ |
+| DESCRIPTION | PersonDisabilityPEODescription | ✅ |
+| DISABILITY_CODE | PersonDisabilityPEODisabilityCode | ✅ |
+| DISABILITY_ID | DisabilityId | ✅ |
+| DISCLOSURE_DATE | PersonDisabilityPEODisclosureDate | ✅ |
+| EFFECTIVE_END_DATE | EffectiveEndDate | ✅ |
+| EFFECTIVE_START_DATE | EffectiveStartDate | ✅ |
+| INCIDENT_ID | PersonDisabilityPEOIncidentId | ✅ |
+| LAST_UPDATE_DATE | PersonDisabilityPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | PersonDisabilityPEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | PersonDisabilityPEOLastUpdatedBy | ✅ |
+| LEGISLATION_CODE | PersonDisabilityPEOLegislationCode | ✅ |
+| OBJECT_VERSION_NUMBER | PersonDisabilityPEOObjectVersionNumber | ✅ |
+| ORGANIZATION_ID | PersonDisabilityPEOOrganizationId | ✅ |
+| PERSON_ID | PersonDisabilityPEOPersonId | ✅ |
+| PRE_REGISTRATION_JOB | PersonDisabilityPEOPreRegistrationJob | ✅ |
+| QUOTA_FTE | PersonDisabilityPEOQuotaFte | ✅ |
+| REASON | PersonDisabilityPEOReason | ✅ |
+| REGISTRATION_DATE | PersonDisabilityPEORegistrationDate | ✅ |
+| REGISTRATION_EXP_DATE | PersonDisabilityPEORegistrationExpDate | ✅ |
+| REGISTRATION_ID | PersonDisabilityPEORegistrationId | ✅ |
+| SELF_DISCLOSED_TYPE | PersonDisabilityPEOSelfDisclosedType | ✅ |
+| STATUS | PersonDisabilityPEOStatus | ✅ |
+| WORK_RESTRICTION | PersonDisabilityPEOWorkRestriction | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — PER_DISABILITIES_F](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/perdisabilitiesf.html)

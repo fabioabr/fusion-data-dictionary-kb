@@ -104,3 +104,31 @@ ORDER BY cl.LAUNCH_DATE DESC;
 
 - [Oracle Docs -- IRC_CMT_LAUNCHES](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/irccmtlaunches.html)
 - [[hcm-module-data-dictionary]] -- Dossie do modulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[campmsgrecipientpvo|CampMsgRecipientPVO]] (HCM · BICC: 1/19)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BOUNCE_COUNT | CampMsgLaunchPEOBounceCount | — |
+| CREATED_BY | CampMsgLaunchPEOCreatedBy | — |
+| CREATION_DATE | CampMsgLaunchPEOCreationDate | — |
+| LAST_UPDATE_DATE | CampMsgLaunchPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | CampMsgLaunchPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | CampMsgLaunchPEOLastUpdatedBy | — |
+| LAUNCH_COMPLETE_TS | CampMsgLaunchPEOLaunchCompleteTs | — |
+| LAUNCH_ID | CampMsgLaunchPEOLaunchId | — |
+| LAUNCH_START_TS | CampMsgLaunchPEOLaunchStartTs | — |
+| LAUNCH_STATUS_CODE | CampMsgLaunchPEOLaunchStatusCode | — |
+| LAUNCH_TYPE_CODE | CampMsgLaunchPEOLaunchTypeCode | — |
+| OBJECT_VERSION_NUMBER | CampMsgLaunchPEOObjectVersionNumber | — |
+| OPEN_COUNT | CampMsgLaunchPEOOpenCount | — |
+| PENDING_COUNT | CampMsgLaunchPEOPendingCount | — |
+| RECIPIENT_COUNT | CampMsgLaunchPEORecipientCount | — |
+| SCHEDULE_DATE | CampMsgLaunchPEOScheduleDate | — |
+| SEND_BY_DATE | CampMsgLaunchPEOSendByDate | — |
+| SUBJECT_ID | CampMsgLaunchPEOSubjectId | — |
+| UNSENT_COUNT | CampMsgLaunchPEOUnsentCount | — |

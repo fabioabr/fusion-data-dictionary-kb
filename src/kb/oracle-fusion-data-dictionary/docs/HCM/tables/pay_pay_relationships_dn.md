@@ -97,6 +97,161 @@ WHERE  dn.PERSON_ID = :p_person_id;
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[calculationcomponentpvo|CalculationComponentPVO]] (HCM)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | PayrollRelationshipPEOCreatedBy | — |
+| CREATION_DATE | PayrollRelationshipPEOCreationDate | — |
+| END_DATE | PayrollRelationshipPEOEndDate | — |
+| LEGISLATIVE_DATA_GROUP_ID | PayrollRelationshipPEOLegislativeDataGroupId | — |
+| OBJECT_VERSION_NUMBER | PayrollRelationshipPEOObjectVersionNumber | — |
+| PAYROLL_RELATIONSHIP_ID | PayrollRelationshipPEOPayrollRelationshipId | — |
+| PAYROLL_RELATIONSHIP_NUMBER | PayrollRelationshipPEOPayrollRelationshipNumber | — |
+| PAYROLL_STAT_UNIT_ID | PayrollRelationshipPEOPayrollStatUnitId | — |
+| PERSON_ID | PayrollRelationshipPEOPersonId | — |
+| RELATIONSHIP_TYPE_ID | PayrollRelationshipPEORelationshipTypeId | — |
+| START_DATE | PayrollRelationshipPEOStartDate | — |
+
+### [[inboundrecordpvo|InboundRecordPVO]] (HCM · BICC: 4/4)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| LEGISLATIVE_DATA_GROUP_ID | PayrollRelationshipPEOLegislativeDataGroupId | ✅ |
+| OBJECT_VERSION_NUMBER | PayrollRelationshipPEOObjectVersionNumber | ✅ |
+| PAYROLL_RELATIONSHIP_ID | PayrollRelationshipPEOPayrollRelationshipId | ✅ |
+| PAYROLL_STAT_UNIT_ID | PayrollRelationshipPEOPayrollStatUnitId | ✅ |
+
+### [[paymentactionpvo|PaymentActionPVO]] (HCM · BICC: 2/9)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| END_DATE | PayrollRelationshipPEOEndDate | — |
+| LEGISLATIVE_DATA_GROUP_ID | PayrollRelationshipPEOLegislativeDataGroupId | — |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | — |
+| PAYROLL_RELATIONSHIP_ID | PayrollRelationshipId | ✅ |
+| PAYROLL_RELATIONSHIP_NUMBER | PayrollRelationshipPEOPayrollRelationshipNumber | ✅ |
+| PAYROLL_STAT_UNIT_ID | PayrollRelationshipPEOPayrollStatUnitId | — |
+| PERSON_ID | PayrollRelationshipPEOPersonId | — |
+| RELATIONSHIP_TYPE_ID | PayrollRelationshipPEORelationshipTypeId | — |
+| START_DATE | PayrollRelationshipPEOStartDate | — |
+
+### [[payrollrelationshipdpvo|PayrollRelationshipDPVO]] (HCM · BICC: 12/14)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | PayrollRelationshipPEOCreatedBy | ✅ |
+| CREATION_DATE | PayrollRelationshipPEOCreationDate | ✅ |
+| END_DATE | PayrollRelationshipPEOEndDate | ✅ |
+| LAST_UPDATE_DATE | PayrollRelationshipPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | PayrollRelationshipPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | PayrollRelationshipPEOLastUpdatedBy | ✅ |
+| LEGISLATIVE_DATA_GROUP_ID | PayrollRelationshipPEOLegislativeDataGroupId | ✅ |
+| OBJECT_VERSION_NUMBER | PayrollRelationshipPEOObjectVersionNumber | — |
+| PAYROLL_RELATIONSHIP_ID | PayrollRelationshipPEOPayrollRelationshipId | ✅ |
+| PAYROLL_RELATIONSHIP_NUMBER | PayrollRelationshipPEOPayrollRelationshipNumber | ✅ |
+| PAYROLL_STAT_UNIT_ID | PayrollRelationshipPEOPayrollStatUnitId | ✅ |
+| PERSON_ID | PayrollRelationshipPEOPersonId | ✅ |
+| RELATIONSHIP_TYPE_ID | PayrollRelationshipPEORelationshipTypeId | ✅ |
+| START_DATE | PayrollRelationshipPEOStartDate | ✅ |
+
+### [[payrollrelationshippvo|PayrollRelationshipPVO]] (HCM · BICC: 12/14)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | PayrollRelationshipPEOCreatedBy | ✅ |
+| CREATION_DATE | PayrollRelationshipPEOCreationDate | ✅ |
+| END_DATE | PayrollRelationshipPEOEndDate | ✅ |
+| LAST_UPDATE_DATE | PayrollRelationshipPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | PayrollRelationshipPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | PayrollRelationshipPEOLastUpdatedBy | ✅ |
+| LEGISLATIVE_DATA_GROUP_ID | PayrollRelationshipPEOLegislativeDataGroupId | ✅ |
+| OBJECT_VERSION_NUMBER | PayrollRelationshipPEOObjectVersionNumber | — |
+| PAYROLL_RELATIONSHIP_ID | PayrollRelationshipId | ✅ |
+| PAYROLL_RELATIONSHIP_NUMBER | PayrollRelationshipPEOPayrollRelationshipNumber | ✅ |
+| PAYROLL_STAT_UNIT_ID | PayrollRelationshipPEOPayrollStatUnitId | ✅ |
+| PERSON_ID | PayrollRelationshipPEOPersonId | ✅ |
+| RELATIONSHIP_TYPE_ID | PayrollRelationshipPEORelationshipTypeId | ✅ |
+| START_DATE | PayrollRelationshipPEOStartDate | ✅ |
+
+### [[payrollruncosting|PayrollRunCosting]] (GL · BICC: 2/14)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | PayRelDnCreatedBy | — |
+| CREATION_DATE | PayRelDnCreationDate | — |
+| END_DATE | PayRelDnEndDate | — |
+| LAST_UPDATE_DATE | PayRelDnLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | PayRelDnLastUpdateLogin | — |
+| LAST_UPDATED_BY | PayRelDnLastUpdatedBy | — |
+| LEGISLATIVE_DATA_GROUP_ID | PayRelDnLegislativeDataGroupId | — |
+| OBJECT_VERSION_NUMBER | PayRelDnObjectVersionNumber | — |
+| PAYROLL_RELATIONSHIP_ID | PayRelDnPayrollRelationshipId | — |
+| PAYROLL_RELATIONSHIP_NUMBER | PayRelDnPayrollRelationshipNumber | ✅ |
+| PAYROLL_STAT_UNIT_ID | PayRelDnPayrollStatUnitId | — |
+| PERSON_ID | PayRelDnPersonId | — |
+| RELATIONSHIP_TYPE_ID | PayRelDnRelationshipTypeId | — |
+| START_DATE | PayRelDnStartDate | — |
+
+### [[personalpaymentmethoddetailsdpvo|PersonalPaymentMethodDetailsDPVO]] (AP)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| OBJECT_VERSION_NUMBER | PayrollRelationshipPEOObjectVersionNumber | — |
+| PAYROLL_RELATIONSHIP_ID | PayrollRelationshipPEOPayrollRelationshipId | — |
+| PAYROLL_STAT_UNIT_ID | PayrollRelationshipPEOPayrollStatUnitId | — |
+| PERSON_ID | PayrollRelationshipPEOPersonId | — |
+
+### [[prepaymentcosting|PrePaymentCosting]] (GL · BICC: 4/14)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | PayRelDnCreatedBy | — |
+| CREATION_DATE | PayRelDnCreationDate | — |
+| END_DATE | PayRelDnEndDate | ✅ |
+| LAST_UPDATE_DATE | PayRelDnLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | PayRelDnLastUpdateLogin | — |
+| LAST_UPDATED_BY | PayRelDnLastUpdatedBy | — |
+| LEGISLATIVE_DATA_GROUP_ID | PayRelDnLegislativeDataGroupId1 | — |
+| OBJECT_VERSION_NUMBER | PayRelDnObjectVersionNumber | — |
+| PAYROLL_RELATIONSHIP_ID | PayRelDnPayrollRelationshipId | — |
+| PAYROLL_RELATIONSHIP_NUMBER | PayRelDnPayrollRelationshipNumber | ✅ |
+| PAYROLL_STAT_UNIT_ID | PayRelDnPayrollStatUnitId | — |
+| PERSON_ID | PayRelDnPersonId | — |
+| RELATIONSHIP_TYPE_ID | PayRelDnRelationshipTypeId | — |
+| START_DATE | PayRelDnStartDate | ✅ |
+
+### [[prepayments|PrePayments]] (AP · BICC: 4/14)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | PayRelDNCreatedBy | — |
+| CREATION_DATE | PayRelDNCreationDate | — |
+| END_DATE | PayRelDNEndDate | ✅ |
+| LAST_UPDATE_DATE | PayRelDNLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | PayRelDNLastUpdateLogin | — |
+| LAST_UPDATED_BY | PayRelDNLastUpdatedBy | — |
+| LEGISLATIVE_DATA_GROUP_ID | PayRelDNLegislativeDataGroupId | — |
+| OBJECT_VERSION_NUMBER | PayRelDNObjectVersionNumber | — |
+| PAYROLL_RELATIONSHIP_ID | PayRelDNPayrollRelationshipId | — |
+| PAYROLL_RELATIONSHIP_NUMBER | PayRelDNPayrollRelationshipNumber | ✅ |
+| PAYROLL_STAT_UNIT_ID | PayRelDNPayrollStatUnitId | — |
+| PERSON_ID | PayRelDNPersonId | — |
+| RELATIONSHIP_TYPE_ID | PayRelDNRelationshipTypeId | — |
+| START_DATE | PayRelDNStartDate | ✅ |
+
+### [[retroelemententry|RetroElementEntry]] (HCM)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| LEGISLATIVE_DATA_GROUP_ID | PayrollRelationshipPEOLegislativeDataGroupId | — |
+| PAYROLL_RELATIONSHIP_ID | PayrollRelationshipPEOPayrollRelationshipId | — |
+| PERSON_ID | PayrollRelationshipPEOPersonId | — |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — PAY_PAY_RELATIONSHIPS_DN](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/paypayrelationshipsdn.html)

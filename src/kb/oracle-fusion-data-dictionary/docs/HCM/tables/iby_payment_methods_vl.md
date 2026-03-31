@@ -81,3 +81,115 @@ updated_at: 2026-03-26
 ## 📎 Uso Típico
 
 (a ser preenchido na etapa 03)
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[supplieraddressbankaccountpvo|SupplierAddressBankAccountPVO]] (PO · BICC: 2/31)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ANTICIPATED_FLOAT | PayMethodAnticipatedFloat | — |
+| BANK_CHARGE_BEARER_APL_FLAG | PayMethodBankChargeBearerAplFlag | — |
+| CREATED_BY | PayMethodCreatedBy | — |
+| CREATION_DATE | PayMethodCreationDate | — |
+| DELIVERY_CHANNEL_APL_FLAG | PayMethodDeliveryChannelAplFlag | — |
+| DESCRIPTION | PayMethodDescription | — |
+| DOCUMENT_CATEGORY_CODE | PayMethodDocumentCategoryCode | — |
+| END_DATE | PayMethodEndDate | — |
+| EXCLUSIVE_PMT_APL_FLAG | PayMethodExclusivePmtAplFlag | — |
+| EXTERNAL_BANK_ACCT_APL_FLAG | PayMethodExternalBankAcctAplFlag | — |
+| FORMAT_VALUE | PayMethodFormatValue | — |
+| INACTIVE_DATE | PayMethodInactiveDate | — |
+| LAST_UPDATE_DATE | PayMethodLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | PayMethodLastUpdateLogin | — |
+| LAST_UPDATED_BY | PayMethodLastUpdatedBy | — |
+| MATURITY_DATE_OFFSET_DAYS | PayMethodMaturityDateOffsetDays | — |
+| OBJECT_VERSION_NUMBER | PayMethodObjectVersionNumber | — |
+| PAYMENT_FORMAT_APL_FLAG | PayMethodPaymentFormatAplFlag | — |
+| PAYMENT_METHOD_CODE | PayMethodPaymentMethodCode | — |
+| PAYMENT_METHOD_NAME | PayMethodPaymentMethodName | ✅ |
+| PAYMENT_REASON_APL_FLAG | PayMethodPaymentReasonAplFlag | — |
+| PAYMENT_REASON_COMNT_APL_FLAG | PayMethodPaymentReasonComntAplFlag | — |
+| REMITTANCE_MESSAGE1_APL_FLAG | PayMethodRemittanceMessage1AplFlag | — |
+| REMITTANCE_MESSAGE2_APL_FLAG | PayMethodRemittanceMessage2AplFlag | — |
+| REMITTANCE_MESSAGE3_APL_FLAG | PayMethodRemittanceMessage3AplFlag | — |
+| SEEDED_FLAG | PayMethodSeededFlag | — |
+| SETTLEMENT_PRIORITY_APL_FLAG | PayMethodSettlementPriorityAplFlag | — |
+| START_DATE | PayMethodStartDate | — |
+| SUPPORT_BILLS_PAYABLE_FLAG | PayMethodSupportBillsPayableFlag | — |
+| UNIQUE_REMITTANCE_ID_APL_FLAG | PayMethodUniqueRemittanceIdAplFlag | — |
+| URI_CHECK_DIGIT_APL_FLAG | PayMethodUriCheckDigitAplFlag | — |
+
+### [[supplierbankaccountpvo|SupplierBankAccountPVO]] (PO · BICC: 3/31)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ANTICIPATED_FLOAT | PayMethodAnticipatedFloat | — |
+| BANK_CHARGE_BEARER_APL_FLAG | PayMethodBankChargeBearerAplFlag | — |
+| CREATED_BY | PayMethodCreatedBy | — |
+| CREATION_DATE | PayMethodCreationDate | — |
+| DELIVERY_CHANNEL_APL_FLAG | PayMethodDeliveryChannelAplFlag | — |
+| DESCRIPTION | PayMethodDescription | — |
+| DOCUMENT_CATEGORY_CODE | PayMethodDocumentCategoryCode | — |
+| END_DATE | PayMethodEndDate | — |
+| EXCLUSIVE_PMT_APL_FLAG | PayMethodExclusivePmtAplFlag | — |
+| EXTERNAL_BANK_ACCT_APL_FLAG | PayMethodExternalBankAcctAplFlag | — |
+| FORMAT_VALUE | PayMethodFormatValue | — |
+| INACTIVE_DATE | PayMethodInactiveDate | — |
+| LAST_UPDATE_DATE | PayMethodLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | PayMethodLastUpdateLogin | — |
+| LAST_UPDATED_BY | PayMethodLastUpdatedBy | — |
+| MATURITY_DATE_OFFSET_DAYS | PayMethodMaturityDateOffsetDays | — |
+| OBJECT_VERSION_NUMBER | PayMethodObjectVersionNumber | — |
+| PAYMENT_FORMAT_APL_FLAG | PayMethodPaymentFormatAplFlag | — |
+| PAYMENT_METHOD_CODE | PayMethodPaymentMethodCode | ✅ |
+| PAYMENT_METHOD_NAME | PayMethodPaymentMethodName | ✅ |
+| PAYMENT_REASON_APL_FLAG | PayMethodPaymentReasonAplFlag | — |
+| PAYMENT_REASON_COMNT_APL_FLAG | PayMethodPaymentReasonComntAplFlag | — |
+| REMITTANCE_MESSAGE1_APL_FLAG | PayMethodRemittanceMessage1AplFlag | — |
+| REMITTANCE_MESSAGE2_APL_FLAG | PayMethodRemittanceMessage2AplFlag | — |
+| REMITTANCE_MESSAGE3_APL_FLAG | PayMethodRemittanceMessage3AplFlag | — |
+| SEEDED_FLAG | PayMethodSeededFlag | — |
+| SETTLEMENT_PRIORITY_APL_FLAG | PayMethodSettlementPriorityAplFlag | — |
+| START_DATE | PayMethodStartDate | — |
+| SUPPORT_BILLS_PAYABLE_FLAG | PayMethodSupportBillsPayableFlag | — |
+| UNIQUE_REMITTANCE_ID_APL_FLAG | PayMethodUniqueRemittanceIdAplFlag | — |
+| URI_CHECK_DIGIT_APL_FLAG | PayMethodUriCheckDigitAplFlag | — |
+
+### [[suppliersitebankaccountpvo|SupplierSiteBankAccountPVO]] (PO · BICC: 3/31)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ANTICIPATED_FLOAT | PayMethodAnticipatedFloat | — |
+| BANK_CHARGE_BEARER_APL_FLAG | PayMethodBankChargeBearerAplFlag | — |
+| CREATED_BY | PayMethodCreatedBy | — |
+| CREATION_DATE | PayMethodCreationDate | — |
+| DELIVERY_CHANNEL_APL_FLAG | PayMethodDeliveryChannelAplFlag | — |
+| DESCRIPTION | PayMethodDescription | — |
+| DOCUMENT_CATEGORY_CODE | PayMethodDocumentCategoryCode | — |
+| END_DATE | PayMethodEndDate | — |
+| EXCLUSIVE_PMT_APL_FLAG | PayMethodExclusivePmtAplFlag | — |
+| EXTERNAL_BANK_ACCT_APL_FLAG | PayMethodExternalBankAcctAplFlag | — |
+| FORMAT_VALUE | PayMethodFormatValue | — |
+| INACTIVE_DATE | PayMethodInactiveDate | — |
+| LAST_UPDATE_DATE | PayMethodLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | PayMethodLastUpdateLogin | — |
+| LAST_UPDATED_BY | PayMethodLastUpdatedBy | — |
+| MATURITY_DATE_OFFSET_DAYS | PayMethodMaturityDateOffsetDays | — |
+| OBJECT_VERSION_NUMBER | PayMethodObjectVersionNumber | — |
+| PAYMENT_FORMAT_APL_FLAG | PayMethodPaymentFormatAplFlag | — |
+| PAYMENT_METHOD_CODE | PayMethodPaymentMethodCode | ✅ |
+| PAYMENT_METHOD_NAME | PayMethodPaymentMethodName | ✅ |
+| PAYMENT_REASON_APL_FLAG | PayMethodPaymentReasonAplFlag | — |
+| PAYMENT_REASON_COMNT_APL_FLAG | PayMethodPaymentReasonComntAplFlag | — |
+| REMITTANCE_MESSAGE1_APL_FLAG | PayMethodRemittanceMessage1AplFlag | — |
+| REMITTANCE_MESSAGE2_APL_FLAG | PayMethodRemittanceMessage2AplFlag | — |
+| REMITTANCE_MESSAGE3_APL_FLAG | PayMethodRemittanceMessage3AplFlag | — |
+| SEEDED_FLAG | PayMethodSeededFlag | — |
+| SETTLEMENT_PRIORITY_APL_FLAG | PayMethodSettlementPriorityAplFlag | — |
+| START_DATE | PayMethodStartDate | — |
+| SUPPORT_BILLS_PAYABLE_FLAG | PayMethodSupportBillsPayableFlag | — |
+| UNIQUE_REMITTANCE_ID_APL_FLAG | PayMethodUniqueRemittanceIdAplFlag | — |
+| URI_CHECK_DIGIT_APL_FLAG | PayMethodUriCheckDigitAplFlag | — |

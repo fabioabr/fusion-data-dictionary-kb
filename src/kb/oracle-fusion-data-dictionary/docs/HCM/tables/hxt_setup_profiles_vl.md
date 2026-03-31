@@ -110,3 +110,14 @@ WHERE  v.ENABLED_FLAG = 'Y';
 
 - [Oracle Docs — HXT_SETUP_PROFILES_VL](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/hxtsetupprofilesvl.html)
 - [[hcm-module-data-dictionary]] — Dossie do modulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[labordemandpvo|LaborDemandPVO]] (HCM)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| PRODUCT_AREA | ProductArea | — |
+| SETUP_PROFILE_ID | SetupProfileId | — |

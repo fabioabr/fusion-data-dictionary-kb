@@ -99,6 +99,35 @@ WHERE  dcc.DIR_CARD_ID = :p_card_id
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[calculationcomponentpvo|CalculationComponentPVO]] (HCM · BICC: 10/20)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CONTEXT_VALUE1 | DIRCardComponentDPEOContext1 | — |
+| CONTEXT_VALUE2 | DIRCardComponentDPEOContext2 | — |
+| CONTEXT_VALUE3 | DIRCardComponentDPEOContext3 | — |
+| CONTEXT_VALUE4 | DIRCardComponentDPEOContext4 | — |
+| CONTEXT_VALUE5 | DIRCardComponentDPEOContext5 | — |
+| CONTEXT_VALUE6 | DIRCardComponentDPEOContext6 | — |
+| CREATED_BY | DIRCardComponentDPEOCreatedBy | ✅ |
+| CREATION_DATE | DIRCardComponentDPEOCreationDate | ✅ |
+| DEDUCTION_GROUP_ID | DIRCardComponentDPEODeductionGroupId | — |
+| DIR_CARD_COMP_DEF_ID | DIRCardComponentDPEODirCardCompDefId | — |
+| DIR_CARD_COMP_ID | DIRCardComponentDPEODirCardCompId | ✅ |
+| DIR_CARD_ID | DIRCardComponentDPEODirCardId | — |
+| EFFECTIVE_END_DATE | DIRCardComponentDPEOEffectiveEndDate | ✅ |
+| EFFECTIVE_START_DATE | DIRCardComponentDPEOEffectiveStartDate | ✅ |
+| LAST_UPDATE_DATE | DIRCardComponentDPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | DIRCardComponentDPEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | DIRCardComponentDPEOLastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | DIRCardComponentDPEOObjectVersionNumber | — |
+| PARENT_DIR_CARD_COMP_ID | DIRCardComponentDPEOParentDirCardCompId | ✅ |
+| SUBPRIORITY | DIRCardComponentDPEOSubpriority | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — PAY_DIR_CARD_COMPONENTS_F](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/paydircardcomponentsf.html)

@@ -39,7 +39,6 @@ Tabela de traduções dos resultados de expressão de categorias de cartão de p
 > [!note] Sufixo _TL
 > O sufixo `_TL` indica tabela de **traduções** — armazena textos traduzidos por idioma. Chave composta: PK da tabela `_B` + `LANGUAGE`.
 
-
 ---
 
 ## 🧠 Propósito de Negócio
@@ -104,6 +103,18 @@ WHERE  t.LANGUAGE = USERENV('LANG')
 - Tabela de traduções: não utilizar diretamente em relatórios; preferir a view `_VL` correspondente.
 - Chave composta: PK do registro base + LANGUAGE.
 - Área funcional: Time Card dentro do Oracle Fusion Cloud HCM.
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[timecategoryexprresultp|TimeCategoryExprResultP]] (GL)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| LANGUAGE | TCatExprResultTLPEOLanguage | — |
+| TCAT_EXPR_RESULT_ID | TCatExprResultTLPEOTcatExprResultId | — |
+| USER_DESCRIPTION | TCatExprResultTLPEOUserDescription | — |
 
 ---
 

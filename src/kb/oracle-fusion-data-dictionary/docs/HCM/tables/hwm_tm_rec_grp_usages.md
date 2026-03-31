@@ -101,6 +101,50 @@ WHERE  u.REC_GRP_ID = :p_grp_id;
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[timerecordgroupusageextractp1|TimeRecordGroupUsageExtractP1]] (HCM · BICC: 15/15)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | CreatedBy | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| DATA_SET_ID | DataSetId | ✅ |
+| ENTERPRISE_ID | EnterpriseId | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | LastUpdatedBy | ✅ |
+| LATEST_VERSION | LatestVersion | ✅ |
+| LAYER_CODE | LayerCode | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | ✅ |
+| TM_REC_GRP_ID | TimeRecordGroupId | ✅ |
+| TM_REC_GRP_USAGES_ID | TimeRecordGroupUsagesId | ✅ |
+| TM_REC_GRP_VERSION | TimeRecordGroupVersion | ✅ |
+| TM_REC_ID | TimeRecordId | ✅ |
+| TM_REC_VERSION | TimeRecordVersion | ✅ |
+
+### [[timerecordgroupusagepvo|TimeRecordGroupUsagePVO]] (HCM · BICC: 15/15)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | CreatedBy | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| DATA_SET_ID | DataSetId | ✅ |
+| ENTERPRISE_ID | EnterpriseId | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | LastUpdatedBy | ✅ |
+| LATEST_VERSION | LatestVersion | ✅ |
+| LAYER_CODE | LayerCode | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | ✅ |
+| TM_REC_GRP_ID | TimeRecordGroupId | ✅ |
+| TM_REC_GRP_USAGES_ID | TimeRecordGroupUsagesId | ✅ |
+| TM_REC_GRP_VERSION | TimeRecordGroupVersion | ✅ |
+| TM_REC_ID | TimeRecordId | ✅ |
+| TM_REC_VERSION | TimeRecordVersion | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — HWM_TM_REC_GRP_USAGES](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/hwmtmrecgrpusages.html)

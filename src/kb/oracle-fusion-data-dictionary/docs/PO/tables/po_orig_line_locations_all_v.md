@@ -41,7 +41,6 @@ View com **schedules originais** de PO antes de alteracoes, para comparacao e au
 > [!note] Sufixo _V
 > O sufixo `_V` indica que este objeto e uma **view**, projetada para simplificar consultas.
 
-
 ---
 
 ## 🧠 Propósito de Negócio
@@ -96,13 +95,397 @@ JOIN   PO_LINE_LOCATIONS_ALL l ON o.LINE_LOCATION_ID = l.LINE_LOCATION_ID
 WHERE  o.PO_HEADER_ID = :p_po_header_id;
 ```
 
-
 ---
 
 ## 🔒 Observações
 
 - View derivada de tabelas de arquivo/historico.
 - Util para relatorios de aderencia ao planejamento.
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[agreementpricebreakpvo|AgreementPriceBreakPVO]] (PO · BICC: 1/122)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACCRUE_ON_RECEIPT_FLAG | OriginalLineLocationAccrueOnReceiptFlag | — |
+| ALLOW_SUBSTITUTE_RECEIPTS_FLAG | OriginalLineLocationAllowSubstituteReceiptsFlag | — |
+| AMOUNT | OriginalLineLocationAmount | — |
+| ASSESSABLE_VALUE | OriginalLineLocationAssessableValue | — |
+| ATTRIBUTE_CATEGORY | OriginalLineLocationAttributeCategory | — |
+| BID_PAYMENT_ID | OriginalLineLocationBidPaymentId | — |
+| CALCULATE_TAX_FLAG | OriginalLineLocationCalculateTaxFlag | — |
+| CANCEL_DATE | OriginalLineLocationCancelDate | — |
+| CANCEL_FLAG | OriginalLineLocationCancelFlag | — |
+| CANCEL_REASON | OriginalLineLocationCancelReason | — |
+| CANCELLED_BY | OriginalLineLocationCancelledBy | — |
+| CARRIER_ID | OriginalLineLocationCarrierId | — |
+| CHANGE_PROMISED_DATE_REASON | OriginalLineLocationChangePromisedDateReason | — |
+| CO_AMOUNT_CANCELLED | OriginalLineLocationCoAmountCancelled | — |
+| CO_QUANTITY_CANCELLED | OriginalLineLocationCoQuantityCancelled | — |
+| CONSIGNED_FLAG | OriginalLineLocationConsignedFlag | — |
+| COUNTRY_OF_ORIGIN_CODE | OriginalLineLocationCountryOfOriginCode | — |
+| CREATED_BY | OriginalLineLocationCreatedBy | — |
+| CREATION_DATE | OriginalLineLocationCreationDate | — |
+| DAYS_EARLY_RECEIPT_ALLOWED | OriginalLineLocationDaysEarlyReceiptAllowed | — |
+| DAYS_LATE_RECEIPT_ALLOWED | OriginalLineLocationDaysLateReceiptAllowed | — |
+| DESCRIPTION | OriginalLineLocationDescription | — |
+| DESTINATION_TYPE_CODE | OriginalLineLocationDestinationTypeCode | — |
+| DROP_SHIP_FLAG | OriginalLineLocationDropShipFlag | — |
+| ENCUMBER_NOW | OriginalLineLocationEncumberNow | — |
+| ENCUMBERED_DATE | OriginalLineLocationEncumberedDate | — |
+| ENCUMBERED_FLAG | OriginalLineLocationEncumberedFlag | — |
+| END_DATE | OriginalLineLocationEndDate | — |
+| ENFORCE_SHIP_TO_LOCATION_CODE | OriginalLineLocationEnforceShipToLocationCode | — |
+| ENTITY_CO_DISPOSITION | OriginalLineLocationEntityCoDisposition | — |
+| ESTIMATED_TAX_AMOUNT | OriginalLineLocationEstimatedTaxAmount | — |
+| EXTERNAL_CHANGE_FLAG | OriginalLineLocationExternalChangeFlag | — |
+| FIRM_DATE | OriginalLineLocationFirmDate | — |
+| FIRM_STATUS_LOOKUP_CODE | OriginalLineLocationFirmStatusLookupCode | — |
+| FOB_LOOKUP_CODE | OriginalLineLocationFobLookupCode | — |
+| FREIGHT_TERMS_LOOKUP_CODE | OriginalLineLocationFreightTermsLookupCode | — |
+| FROM_CO_SEQ | OriginalLineLocationFromCoSeq | — |
+| FROM_HEADER_ID | OriginalLineLocationFromHeaderId | — |
+| FROM_LINE_ID | OriginalLineLocationFromLineId | — |
+| FROM_LINE_LOCATION_ID | OriginalLineLocationFromLineLocationId | — |
+| GLOBAL_ATTRIBUTE_CATEGORY | OriginalLineLocationGlobalAttributeCategory | — |
+| GOVERNMENT_CONTEXT | OriginalLineLocationGovernmentContext | — |
+| GROUP_NAME | OriginalLineLocationGroupName | — |
+| INPUT_TAX_CLASSIFICATION_CODE | OriginalLineLocationInputTaxClassificationCode | — |
+| INSPECTION_REQUIRED_FLAG | OriginalLineLocationInspectionRequiredFlag | — |
+| INVOICE_CLOSE_TOLERANCE | OriginalLineLocationInvoiceCloseTolerance | — |
+| JOB_DEFINITION_NAME | OriginalLineLocationJobDefinitionName | — |
+| JOB_DEFINITION_PACKAGE | OriginalLineLocationJobDefinitionPackage | — |
+| LAST_ACCEPT_DATE | OriginalLineLocationLastAcceptDate | — |
+| LAST_UPDATE_DATE | OriginalLineLocationLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | OriginalLineLocationLastUpdateLogin | — |
+| LAST_UPDATED_BY | OriginalLineLocationLastUpdatedBy | — |
+| LEAD_TIME | OriginalLineLocationLeadTime | — |
+| LEAD_TIME_UNIT | OriginalLineLocationLeadTimeUnit | — |
+| LINE_INTENDED_USE | OriginalLineLocationLineIntendedUse | — |
+| LINE_INTENDED_USE_ID | OriginalLineLocationLineIntendedUseId | — |
+| LINE_LOCATION_ID | OriginalLineLocationLineLocationId | — |
+| MANUAL_PRICE_CHANGE_FLAG | OriginalLineLocationManualPriceChangeFlag | — |
+| MATCH_OPTION | OriginalLineLocationMatchOption | — |
+| MATCHING_BASIS | OriginalLineLocationMatchingBasis | — |
+| NEED_BY_DATE | OriginalLineLocationNeedByDate | — |
+| NOTE_TO_RECEIVER | OriginalLineLocationNoteToReceiver | — |
+| OBJECT_VERSION_NUMBER | OriginalLineLocationObjectVersionNumber | — |
+| OUTSOURCED_ASSEMBLY | OriginalLineLocationOutsourcedAssembly | — |
+| PAYMENT_TYPE | OriginalLineLocationPaymentType | — |
+| PJC_CONTEXT_CATEGORY | OriginalLineLocationPjcContextCategory | — |
+| PO_HEADER_ID | OriginalLineLocationPoHeaderId | — |
+| PO_LINE_ID | OriginalLineLocationPoLineId | — |
+| PO_TRADING_ORGANIZATION_ID | OriginalLineLocationPoTradingOrganizationId | — |
+| PRC_BU_ID | OriginalLineLocationPrcBuId | — |
+| PREFERRED_GRADE | OriginalLineLocationPreferredGrade | — |
+| PRICE_DISCOUNT | OriginalLineLocationPriceDiscount | — |
+| PRICE_OVERRIDE | OriginalLineLocationPriceOverride | — |
+| PRODUCT_CATEGORY | OriginalLineLocationProductCategory | — |
+| PRODUCT_FISC_CLASS_ID | OriginalLineLocationProductFiscClassId | — |
+| PRODUCT_FISC_CLASSIFICATION | OriginalLineLocationProductFiscClassification | — |
+| PRODUCT_TYPE | OriginalLineLocationProductType | — |
+| PROGRAM_APP_NAME | OriginalLineLocationProgramAppName | — |
+| PROGRAM_NAME | OriginalLineLocationProgramName | — |
+| PROMISED_DATE | OriginalLineLocationPromisedDate | — |
+| PROMISED_SHIP_DATE | OriginalLineLocationPromisedShipDate | — |
+| QTY_RCV_EXCEPTION_CODE | OriginalLineLocationQtyRcvExceptionCode | — |
+| QTY_RCV_TOLERANCE | OriginalLineLocationQtyRcvTolerance | — |
+| QUANTITY | OriginalLineLocationQuantity | — |
+| REASON_FOR_CHANGE | OriginalLineLocationReasonForChange | — |
+| RECEIPT_DAYS_EXCEPTION_CODE | OriginalLineLocationReceiptDaysExceptionCode | — |
+| RECEIPT_REQUIRED_FLAG | OriginalLineLocationReceiptRequiredFlag | — |
+| RECEIVE_CLOSE_TOLERANCE | OriginalLineLocationReceiveCloseTolerance | — |
+| RECEIVING_ROUTING_ID | OriginalLineLocationReceivingRoutingId | — |
+| REJECTED_BY | OriginalLineLocationRejectedBy | — |
+| REJECTED_BY_ROLE | OriginalLineLocationRejectedByRole | — |
+| REJECTED_REASON | OriginalLineLocationRejectedReason | — |
+| REQ_BU_ID | OriginalLineLocationReqBuId | — |
+| REQUEST_ID | OriginalLineLocationRequestId | — |
+| RETROACTIVE_DATE | OriginalLineLocationRetroactiveDate | — |
+| SALES_ORDER_UPDATE_DATE | OriginalLineLocationSalesOrderUpdateDate | — |
+| SECONDARY_QUANTITY | OriginalLineLocationSecondaryQuantity | — |
+| SECONDARY_UOM_CODE | OriginalLineLocationSecondaryUomCode | — |
+| SFO_AGREEMENT_LINE_NUMBER | OriginalLineLocationSfoAgreementLineNumber | — |
+| SFO_AGREEMENT_NUMBER | OriginalLineLocationSfoAgreementNumber | — |
+| SFO_PTR_ID | OriginalLineLocationSfoPtrId | — |
+| SHIP_TO_LOCATION_ID | OriginalLineLocationShipToLocationId | — |
+| SHIP_TO_ORGANIZATION_ID | OriginalLineLocationShipToOrganizationId | — |
+| SHIPMENT_NUM | OriginalLineLocationShipmentNum | — |
+| SHIPMENT_TYPE | OriginalLineLocationShipmentType | — |
+| SOURCE_SHIPMENT_ID | OriginalLineLocationSourceShipmentId | — |
+| START_DATE | OriginalLineLocationStartDate | — |
+| SUPPLIER_ORDER_LINE_NUMBER | OriginalLineLocationSupplierOrderLineNumber | — |
+| TAX_CODE_ID | OriginalLineLocationTaxCodeId | — |
+| TAX_NAME | OriginalLineLocationTaxName | — |
+| TAX_USER_OVERRIDE_FLAG | OriginalLineLocationTaxUserOverrideFlag | — |
+| TAXABLE_FLAG | OriginalLineLocationTaxableFlag | — |
+| TERMS_ID | OriginalLineLocationTermsId | — |
+| TO_CO_SEQ | OriginalLineLocationToCoSeq | — |
+| TRANSACTION_FLOW_HEADER_ID | OriginalLineLocationTransactionFlowHeaderId | — |
+| TRX_BUSINESS_CATEGORY | OriginalLineLocationTrxBusinessCategory | — |
+| UNENCUMBERED_QUANTITY | OriginalLineLocationUnencumberedQuantity | — |
+| UNIT_OF_MEASURE_CLASS | OriginalLineLocationUnitOfMeasureClass | — |
+| UOM_CODE | OriginalLineLocationUomCode | — |
+| USER_DEFINED_FISC_CLASS | OriginalLineLocationUserDefinedFiscClass | — |
+| VALUE_BASIS | OriginalLineLocationValueBasis | — |
+| VMI_FLAG | OriginalLineLocationVmiFlag | — |
+
+### [[standarddistributionpvo|StandardDistributionPVO]] (PO · BICC: 1/122)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACCRUE_ON_RECEIPT_FLAG | OriginalLineLocationAccrueOnReceiptFlag | — |
+| ALLOW_SUBSTITUTE_RECEIPTS_FLAG | OriginalLineLocationAllowSubstituteReceiptsFlag | — |
+| AMOUNT | OriginalLineLocationAmount | — |
+| ASSESSABLE_VALUE | OriginalLineLocationAssessableValue | — |
+| ATTRIBUTE_CATEGORY | OriginalLineLocationAttributeCategory | — |
+| BID_PAYMENT_ID | OriginalLineLocationBidPaymentId | — |
+| CALCULATE_TAX_FLAG | OriginalLineLocationCalculateTaxFlag | — |
+| CANCEL_DATE | OriginalLineLocationCancelDate | — |
+| CANCEL_FLAG | OriginalLineLocationCancelFlag | — |
+| CANCEL_REASON | OriginalLineLocationCancelReason | — |
+| CANCELLED_BY | OriginalLineLocationCancelledBy | — |
+| CARRIER_ID | OriginalLineLocationCarrierId | — |
+| CHANGE_PROMISED_DATE_REASON | OriginalLineLocationChangePromisedDateReason | — |
+| CO_AMOUNT_CANCELLED | OriginalLineLocationCoAmountCancelled | — |
+| CO_QUANTITY_CANCELLED | OriginalLineLocationCoQuantityCancelled | — |
+| CONSIGNED_FLAG | OriginalLineLocationConsignedFlag | — |
+| COUNTRY_OF_ORIGIN_CODE | OriginalLineLocationCountryOfOriginCode | — |
+| CREATED_BY | OriginalLineLocationCreatedBy | — |
+| CREATION_DATE | OriginalLineLocationCreationDate | — |
+| DAYS_EARLY_RECEIPT_ALLOWED | OriginalLineLocationDaysEarlyReceiptAllowed | — |
+| DAYS_LATE_RECEIPT_ALLOWED | OriginalLineLocationDaysLateReceiptAllowed | — |
+| DESCRIPTION | OriginalLineLocationDescription | — |
+| DESTINATION_TYPE_CODE | OriginalLineLocationDestinationTypeCode | — |
+| DROP_SHIP_FLAG | OriginalLineLocationDropShipFlag | — |
+| ENCUMBER_NOW | OriginalLineLocationEncumberNow | — |
+| ENCUMBERED_DATE | OriginalLineLocationEncumberedDate | — |
+| ENCUMBERED_FLAG | OriginalLineLocationEncumberedFlag | — |
+| END_DATE | OriginalLineLocationEndDate | — |
+| ENFORCE_SHIP_TO_LOCATION_CODE | OriginalLineLocationEnforceShipToLocationCode | — |
+| ENTITY_CO_DISPOSITION | OriginalLineLocationEntityCoDisposition | — |
+| ESTIMATED_TAX_AMOUNT | OriginalLineLocationEstimatedTaxAmount | — |
+| EXTERNAL_CHANGE_FLAG | OriginalLineLocationExternalChangeFlag | — |
+| FIRM_DATE | OriginalLineLocationFirmDate | — |
+| FIRM_STATUS_LOOKUP_CODE | OriginalLineLocationFirmStatusLookupCode | — |
+| FOB_LOOKUP_CODE | OriginalLineLocationFobLookupCode | — |
+| FREIGHT_TERMS_LOOKUP_CODE | OriginalLineLocationFreightTermsLookupCode | — |
+| FROM_CO_SEQ | OriginalLineLocationFromCoSeq | — |
+| FROM_HEADER_ID | OriginalLineLocationFromHeaderId | — |
+| FROM_LINE_ID | OriginalLineLocationFromLineId | — |
+| FROM_LINE_LOCATION_ID | OriginalLineLocationFromLineLocationId | — |
+| GLOBAL_ATTRIBUTE_CATEGORY | OriginalLineLocationGlobalAttributeCategory | — |
+| GOVERNMENT_CONTEXT | OriginalLineLocationGovernmentContext | — |
+| GROUP_NAME | OriginalLineLocationGroupName | — |
+| INPUT_TAX_CLASSIFICATION_CODE | OriginalLineLocationInputTaxClassificationCode | — |
+| INSPECTION_REQUIRED_FLAG | OriginalLineLocationInspectionRequiredFlag | — |
+| INVOICE_CLOSE_TOLERANCE | OriginalLineLocationInvoiceCloseTolerance | — |
+| JOB_DEFINITION_NAME | OriginalLineLocationJobDefinitionName | — |
+| JOB_DEFINITION_PACKAGE | OriginalLineLocationJobDefinitionPackage | — |
+| LAST_ACCEPT_DATE | OriginalLineLocationLastAcceptDate | — |
+| LAST_UPDATE_DATE | OriginalLineLocationLastUpdateDate | — |
+| LAST_UPDATE_LOGIN | OriginalLineLocationLastUpdateLogin | — |
+| LAST_UPDATED_BY | OriginalLineLocationLastUpdatedBy | — |
+| LEAD_TIME | OriginalLineLocationLeadTime | — |
+| LEAD_TIME_UNIT | OriginalLineLocationLeadTimeUnit | — |
+| LINE_INTENDED_USE | OriginalLineLocationLineIntendedUse | — |
+| LINE_INTENDED_USE_ID | OriginalLineLocationLineIntendedUseId | — |
+| LINE_LOCATION_ID | OriginalLineLocationLineLocationId1 | — |
+| MANUAL_PRICE_CHANGE_FLAG | OriginalLineLocationManualPriceChangeFlag | — |
+| MATCH_OPTION | OriginalLineLocationMatchOption | — |
+| MATCHING_BASIS | OriginalLineLocationMatchingBasis | — |
+| NEED_BY_DATE | OriginalLineLocationNeedByDate | — |
+| NOTE_TO_RECEIVER | OriginalLineLocationNoteToReceiver | — |
+| OBJECT_VERSION_NUMBER | OriginalLineLocationObjectVersionNumber | — |
+| OUTSOURCED_ASSEMBLY | OriginalLineLocationOutsourcedAssembly | — |
+| PAYMENT_TYPE | OriginalLineLocationPaymentType | — |
+| PJC_CONTEXT_CATEGORY | OriginalLineLocationPjcContextCategory | — |
+| PO_HEADER_ID | OriginalLineLocationPoHeaderId | — |
+| PO_LINE_ID | OriginalLineLocationPoLineId | — |
+| PO_TRADING_ORGANIZATION_ID | OriginalLineLocationPoTradingOrganizationId | — |
+| PRC_BU_ID | OriginalLineLocationPrcBuId | — |
+| PREFERRED_GRADE | OriginalLineLocationPreferredGrade | — |
+| PRICE_DISCOUNT | OriginalLineLocationPriceDiscount | — |
+| PRICE_OVERRIDE | OriginalLineLocationPriceOverride | — |
+| PRODUCT_CATEGORY | OriginalLineLocationProductCategory | — |
+| PRODUCT_FISC_CLASS_ID | OriginalLineLocationProductFiscClassId | — |
+| PRODUCT_FISC_CLASSIFICATION | OriginalLineLocationProductFiscClassification | — |
+| PRODUCT_TYPE | OriginalLineLocationProductType | — |
+| PROGRAM_APP_NAME | OriginalLineLocationProgramAppName | — |
+| PROGRAM_NAME | OriginalLineLocationProgramName | — |
+| PROMISED_DATE | OriginalLineLocationPromisedDate | — |
+| PROMISED_SHIP_DATE | OriginalLineLocationPromisedShipDate | ✅ |
+| QTY_RCV_EXCEPTION_CODE | OriginalLineLocationQtyRcvExceptionCode | — |
+| QTY_RCV_TOLERANCE | OriginalLineLocationQtyRcvTolerance | — |
+| QUANTITY | OriginalLineLocationQuantity | — |
+| REASON_FOR_CHANGE | OriginalLineLocationReasonForChange | — |
+| RECEIPT_DAYS_EXCEPTION_CODE | OriginalLineLocationReceiptDaysExceptionCode | — |
+| RECEIPT_REQUIRED_FLAG | OriginalLineLocationReceiptRequiredFlag | — |
+| RECEIVE_CLOSE_TOLERANCE | OriginalLineLocationReceiveCloseTolerance | — |
+| RECEIVING_ROUTING_ID | OriginalLineLocationReceivingRoutingId | — |
+| REJECTED_BY | OriginalLineLocationRejectedBy | — |
+| REJECTED_BY_ROLE | OriginalLineLocationRejectedByRole | — |
+| REJECTED_REASON | OriginalLineLocationRejectedReason | — |
+| REQ_BU_ID | OriginalLineLocationReqBuId | — |
+| REQUEST_ID | OriginalLineLocationRequestId | — |
+| RETROACTIVE_DATE | OriginalLineLocationRetroactiveDate | — |
+| SALES_ORDER_UPDATE_DATE | OriginalLineLocationSalesOrderUpdateDate | — |
+| SECONDARY_QUANTITY | OriginalLineLocationSecondaryQuantity | — |
+| SECONDARY_UOM_CODE | OriginalLineLocationSecondaryUomCode | — |
+| SFO_AGREEMENT_LINE_NUMBER | OriginalLineLocationSfoAgreementLineNumber | — |
+| SFO_AGREEMENT_NUMBER | OriginalLineLocationSfoAgreementNumber | — |
+| SFO_PTR_ID | OriginalLineLocationSfoPtrId | — |
+| SHIP_TO_LOCATION_ID | OriginalLineLocationShipToLocationId | — |
+| SHIP_TO_ORGANIZATION_ID | OriginalLineLocationShipToOrganizationId | — |
+| SHIPMENT_NUM | OriginalLineLocationShipmentNum | — |
+| SHIPMENT_TYPE | OriginalLineLocationShipmentType | — |
+| SOURCE_SHIPMENT_ID | OriginalLineLocationSourceShipmentId | — |
+| START_DATE | OriginalLineLocationStartDate | — |
+| SUPPLIER_ORDER_LINE_NUMBER | OriginalLineLocationSupplierOrderLineNumber | — |
+| TAX_CODE_ID | OriginalLineLocationTaxCodeId | — |
+| TAX_NAME | OriginalLineLocationTaxName | — |
+| TAX_USER_OVERRIDE_FLAG | OriginalLineLocationTaxUserOverrideFlag | — |
+| TAXABLE_FLAG | OriginalLineLocationTaxableFlag | — |
+| TERMS_ID | OriginalLineLocationTermsId | — |
+| TO_CO_SEQ | OriginalLineLocationToCoSeq | — |
+| TRANSACTION_FLOW_HEADER_ID | OriginalLineLocationTransactionFlowHeaderId | — |
+| TRX_BUSINESS_CATEGORY | OriginalLineLocationTrxBusinessCategory | — |
+| UNENCUMBERED_QUANTITY | OriginalLineLocationUnencumberedQuantity | — |
+| UNIT_OF_MEASURE_CLASS | OriginalLineLocationUnitOfMeasureClass | — |
+| UOM_CODE | OriginalLineLocationUomCode | — |
+| USER_DEFINED_FISC_CLASS | OriginalLineLocationUserDefinedFiscClass | — |
+| VALUE_BASIS | OriginalLineLocationValueBasis | — |
+| VMI_FLAG | OriginalLineLocationVmiFlag | — |
+
+### [[standardshipmentpvo|StandardShipmentPVO]] (PO · BICC: 1/122)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACCRUE_ON_RECEIPT_FLAG | OriginalLineLocationAccrueOnReceiptFlag | — |
+| ALLOW_SUBSTITUTE_RECEIPTS_FLAG | OriginalLineLocationAllowSubstituteReceiptsFlag | — |
+| AMOUNT | OriginalLineLocationAmount | — |
+| ASSESSABLE_VALUE | OriginalLineLocationAssessableValue | — |
+| ATTRIBUTE_CATEGORY | OriginalLineLocationAttributeCategory | — |
+| BID_PAYMENT_ID | OriginalLineLocationBidPaymentId | — |
+| CALCULATE_TAX_FLAG | OriginalLineLocationCalculateTaxFlag | — |
+| CANCEL_DATE | OriginalLineLocationCancelDate | — |
+| CANCEL_FLAG | OriginalLineLocationCancelFlag | — |
+| CANCEL_REASON | OriginalLineLocationCancelReason | — |
+| CANCELLED_BY | OriginalLineLocationCancelledBy | — |
+| CARRIER_ID | OriginalLineLocationCarrierId | — |
+| CHANGE_PROMISED_DATE_REASON | OriginalLineLocationChangePromisedDateReason | — |
+| CO_AMOUNT_CANCELLED | OriginalLineLocationCoAmountCancelled | — |
+| CO_QUANTITY_CANCELLED | OriginalLineLocationCoQuantityCancelled | — |
+| CONSIGNED_FLAG | OriginalLineLocationConsignedFlag | — |
+| COUNTRY_OF_ORIGIN_CODE | OriginalLineLocationCountryOfOriginCode | — |
+| CREATED_BY | OriginalLineLocationCreatedBy | — |
+| CREATION_DATE | OriginalLineLocationCreationDate | — |
+| DAYS_EARLY_RECEIPT_ALLOWED | OriginalLineLocationDaysEarlyReceiptAllowed | — |
+| DAYS_LATE_RECEIPT_ALLOWED | OriginalLineLocationDaysLateReceiptAllowed | — |
+| DESCRIPTION | OriginalLineLocationDescription | — |
+| DESTINATION_TYPE_CODE | OriginalLineLocationDestinationTypeCode | — |
+| DROP_SHIP_FLAG | OriginalLineLocationDropShipFlag | — |
+| ENCUMBER_NOW | OriginalLineLocationEncumberNow | — |
+| ENCUMBERED_DATE | OriginalLineLocationEncumberedDate | — |
+| ENCUMBERED_FLAG | OriginalLineLocationEncumberedFlag | — |
+| END_DATE | OriginalLineLocationEndDate | — |
+| ENFORCE_SHIP_TO_LOCATION_CODE | OriginalLineLocationEnforceShipToLocationCode | — |
+| ENTITY_CO_DISPOSITION | OriginalLineLocationEntityCoDisposition | — |
+| ESTIMATED_TAX_AMOUNT | OriginalLineLocationEstimatedTaxAmount | — |
+| EXTERNAL_CHANGE_FLAG | OriginalLineLocationExternalChangeFlag | — |
+| FIRM_DATE | OriginalLineLocationFirmDate | — |
+| FIRM_STATUS_LOOKUP_CODE | OriginalLineLocationFirmStatusLookupCode | — |
+| FOB_LOOKUP_CODE | OriginalLineLocationFobLookupCode | — |
+| FREIGHT_TERMS_LOOKUP_CODE | OriginalLineLocationFreightTermsLookupCode | — |
+| FROM_CO_SEQ | OriginalLineLocationFromCoSeq | — |
+| FROM_HEADER_ID | OriginalLineLocationFromHeaderId | — |
+| FROM_LINE_ID | OriginalLineLocationFromLineId | — |
+| FROM_LINE_LOCATION_ID | OriginalLineLocationFromLineLocationId | — |
+| GLOBAL_ATTRIBUTE_CATEGORY | OriginalLineLocationGlobalAttributeCategory | — |
+| GOVERNMENT_CONTEXT | OriginalLineLocationGovernmentContext | — |
+| GROUP_NAME | OriginalLineLocationGroupName | — |
+| INPUT_TAX_CLASSIFICATION_CODE | OriginalLineLocationInputTaxClassificationCode | — |
+| INSPECTION_REQUIRED_FLAG | OriginalLineLocationInspectionRequiredFlag | — |
+| INVOICE_CLOSE_TOLERANCE | OriginalLineLocationInvoiceCloseTolerance | — |
+| JOB_DEFINITION_NAME | OriginalLineLocationJobDefinitionName | — |
+| JOB_DEFINITION_PACKAGE | OriginalLineLocationJobDefinitionPackage | — |
+| LAST_ACCEPT_DATE | OriginalLineLocationLastAcceptDate | — |
+| LAST_UPDATE_DATE | OriginalLineLocationLastUpdateDate | — |
+| LAST_UPDATE_LOGIN | OriginalLineLocationLastUpdateLogin | — |
+| LAST_UPDATED_BY | OriginalLineLocationLastUpdatedBy | — |
+| LEAD_TIME | OriginalLineLocationLeadTime | — |
+| LEAD_TIME_UNIT | OriginalLineLocationLeadTimeUnit | — |
+| LINE_INTENDED_USE | OriginalLineLocationLineIntendedUse | — |
+| LINE_INTENDED_USE_ID | OriginalLineLocationLineIntendedUseId | — |
+| LINE_LOCATION_ID | OriginalLineLocationLineLocationId | — |
+| MANUAL_PRICE_CHANGE_FLAG | OriginalLineLocationManualPriceChangeFlag | — |
+| MATCH_OPTION | OriginalLineLocationMatchOption | — |
+| MATCHING_BASIS | OriginalLineLocationMatchingBasis | — |
+| NEED_BY_DATE | OriginalLineLocationNeedByDate | — |
+| NOTE_TO_RECEIVER | OriginalLineLocationNoteToReceiver | — |
+| OBJECT_VERSION_NUMBER | OriginalLineLocationObjectVersionNumber | — |
+| OUTSOURCED_ASSEMBLY | OriginalLineLocationOutsourcedAssembly | — |
+| PAYMENT_TYPE | OriginalLineLocationPaymentType | — |
+| PJC_CONTEXT_CATEGORY | OriginalLineLocationPjcContextCategory | — |
+| PO_HEADER_ID | OriginalLineLocationPoHeaderId | — |
+| PO_LINE_ID | OriginalLineLocationPoLineId | — |
+| PO_TRADING_ORGANIZATION_ID | OriginalLineLocationPoTradingOrganizationId | — |
+| PRC_BU_ID | OriginalLineLocationPrcBuId | — |
+| PREFERRED_GRADE | OriginalLineLocationPreferredGrade | — |
+| PRICE_DISCOUNT | OriginalLineLocationPriceDiscount | — |
+| PRICE_OVERRIDE | OriginalLineLocationPriceOverride | — |
+| PRODUCT_CATEGORY | OriginalLineLocationProductCategory | — |
+| PRODUCT_FISC_CLASS_ID | OriginalLineLocationProductFiscClassId | — |
+| PRODUCT_FISC_CLASSIFICATION | OriginalLineLocationProductFiscClassification | — |
+| PRODUCT_TYPE | OriginalLineLocationProductType | — |
+| PROGRAM_APP_NAME | OriginalLineLocationProgramAppName | — |
+| PROGRAM_NAME | OriginalLineLocationProgramName | — |
+| PROMISED_DATE | OriginalLineLocationPromisedDate | — |
+| PROMISED_SHIP_DATE | OriginalLineLocationPromisedShipDate | ✅ |
+| QTY_RCV_EXCEPTION_CODE | OriginalLineLocationQtyRcvExceptionCode | — |
+| QTY_RCV_TOLERANCE | OriginalLineLocationQtyRcvTolerance | — |
+| QUANTITY | OriginalLineLocationQuantity | — |
+| REASON_FOR_CHANGE | OriginalLineLocationReasonForChange | — |
+| RECEIPT_DAYS_EXCEPTION_CODE | OriginalLineLocationReceiptDaysExceptionCode | — |
+| RECEIPT_REQUIRED_FLAG | OriginalLineLocationReceiptRequiredFlag | — |
+| RECEIVE_CLOSE_TOLERANCE | OriginalLineLocationReceiveCloseTolerance | — |
+| RECEIVING_ROUTING_ID | OriginalLineLocationReceivingRoutingId | — |
+| REJECTED_BY | OriginalLineLocationRejectedBy | — |
+| REJECTED_BY_ROLE | OriginalLineLocationRejectedByRole | — |
+| REJECTED_REASON | OriginalLineLocationRejectedReason | — |
+| REQ_BU_ID | OriginalLineLocationReqBuId | — |
+| REQUEST_ID | OriginalLineLocationRequestId | — |
+| RETROACTIVE_DATE | OriginalLineLocationRetroactiveDate | — |
+| SALES_ORDER_UPDATE_DATE | OriginalLineLocationSalesOrderUpdateDate | — |
+| SECONDARY_QUANTITY | OriginalLineLocationSecondaryQuantity | — |
+| SECONDARY_UOM_CODE | OriginalLineLocationSecondaryUomCode | — |
+| SFO_AGREEMENT_LINE_NUMBER | OriginalLineLocationSfoAgreementLineNumber | — |
+| SFO_AGREEMENT_NUMBER | OriginalLineLocationSfoAgreementNumber | — |
+| SFO_PTR_ID | OriginalLineLocationSfoPtrId | — |
+| SHIP_TO_LOCATION_ID | OriginalLineLocationShipToLocationId | — |
+| SHIP_TO_ORGANIZATION_ID | OriginalLineLocationShipToOrganizationId | — |
+| SHIPMENT_NUM | OriginalLineLocationShipmentNum | — |
+| SHIPMENT_TYPE | OriginalLineLocationShipmentType | — |
+| SOURCE_SHIPMENT_ID | OriginalLineLocationSourceShipmentId | — |
+| START_DATE | OriginalLineLocationStartDate | — |
+| SUPPLIER_ORDER_LINE_NUMBER | OriginalLineLocationSupplierOrderLineNumber | — |
+| TAX_CODE_ID | OriginalLineLocationTaxCodeId | — |
+| TAX_NAME | OriginalLineLocationTaxName | — |
+| TAX_USER_OVERRIDE_FLAG | OriginalLineLocationTaxUserOverrideFlag | — |
+| TAXABLE_FLAG | OriginalLineLocationTaxableFlag | — |
+| TERMS_ID | OriginalLineLocationTermsId | — |
+| TO_CO_SEQ | OriginalLineLocationToCoSeq | — |
+| TRANSACTION_FLOW_HEADER_ID | OriginalLineLocationTransactionFlowHeaderId | — |
+| TRX_BUSINESS_CATEGORY | OriginalLineLocationTrxBusinessCategory | — |
+| UNENCUMBERED_QUANTITY | OriginalLineLocationUnencumberedQuantity | — |
+| UNIT_OF_MEASURE_CLASS | OriginalLineLocationUnitOfMeasureClass | — |
+| UOM_CODE | OriginalLineLocationUomCode | — |
+| USER_DEFINED_FISC_CLASS | OriginalLineLocationUserDefinedFiscClass | — |
+| VALUE_BASIS | OriginalLineLocationValueBasis | — |
+| VMI_FLAG | OriginalLineLocationVmiFlag | — |
 
 ---
 

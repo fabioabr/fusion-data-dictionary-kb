@@ -115,3 +115,26 @@ WHERE  pl.POSITION_ID = :p_position_id
 
 - [Oracle Docs — PER_POSITION_LEG_F](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/perpositionlegf.html)
 - [[hcm-module-data-dictionary]] — Dossiê do módulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[positionlegislativepvo|PositionLegislativePVO]] (PO · BICC: 10/14)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_OCCURRENCE_ID | PositionLegislativePEOActionOccurrenceId | — |
+| ATTRIBUTE_CATEGORY | PositionLegislativePEOAttributeCategory | — |
+| CREATED_BY | PositionLegislativePEOCreatedBy | ✅ |
+| CREATION_DATE | PositionLegislativePEOCreationDate | ✅ |
+| EFFECTIVE_END_DATE | EffectiveEndDate | ✅ |
+| EFFECTIVE_START_DATE | EffectiveStartDate | ✅ |
+| INFORMATION_CATEGORY | PositionLegislativePEOInformationCategory | — |
+| LAST_UPDATE_DATE | PositionLegislativePEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | PositionLegislativePEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | PositionLegislativePEOLastUpdatedBy | ✅ |
+| LEGISLATION_CODE | PositionLegislativePEOLegislationCode | ✅ |
+| OBJECT_VERSION_NUMBER | PositionLegislativePEOObjectVersionNumber | — |
+| POSITION_ID | PositionLegislativePEOPositionId | ✅ |
+| POSITION_LEG_ID | PositionLegId | ✅ |

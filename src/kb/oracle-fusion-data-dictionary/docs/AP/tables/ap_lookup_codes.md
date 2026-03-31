@@ -136,6 +136,70 @@ WHERE  ai.ORG_ID = :p_org_id;
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[invoicepaymentlookuppvo|InvoicePaymentLookupPVO]] (AP · BICC: 5/7)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| DESCRIPTION | Description | ✅ |
+| DISPLAYED_FIELD | DisplayedField | ✅ |
+| ENABLED_FLAG | EnabledFlag | — |
+| END_DATE_ACTIVE | EndDateActive | — |
+| LOOKUP_CODE | LookupCode | ✅ |
+| LOOKUP_TYPE | LookupType | ✅ |
+| START_DATE_ACTIVE | StartDateActive | ✅ |
+
+### [[invoicetypelookuppvo|InvoiceTypeLookupPVO]] (AP · BICC: 5/7)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| DESCRIPTION | Description | ✅ |
+| DISPLAYED_FIELD | DisplayedField | ✅ |
+| ENABLED_FLAG | EnabledFlag | — |
+| END_DATE_ACTIVE | EndDateActive | — |
+| LOOKUP_CODE | LookupCode | ✅ |
+| LOOKUP_TYPE | LookupType | ✅ |
+| START_DATE_ACTIVE | StartDateActive | ✅ |
+
+### [[paymentmethodlookuppvo|PaymentMethodLookupPVO]] (AP · BICC: 3/7)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| DESCRIPTION | Description | — |
+| DISPLAYED_FIELD | DisplayedField | — |
+| ENABLED_FLAG | EnabledFlag | — |
+| END_DATE_ACTIVE | EndDateActive | — |
+| LOOKUP_CODE | LookupCode | ✅ |
+| LOOKUP_TYPE | LookupType | ✅ |
+| START_DATE_ACTIVE | StartDateActive | ✅ |
+
+### [[reconsummarylinelookuppvo|ReconSummaryLineLookupPVO]] (AP · BICC: 4/7)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| DESCRIPTION | Description | — |
+| DISPLAYED_FIELD | DisplayedField | ✅ |
+| ENABLED_FLAG | EnabledFlag | ✅ |
+| END_DATE_ACTIVE | EndDateActive | — |
+| LOOKUP_CODE | LookupCode | ✅ |
+| LOOKUP_TYPE | LookupType | ✅ |
+| START_DATE_ACTIVE | StartDateActive | — |
+
+### [[sourcelookuppvo|SourceLookupPVO]] (AP · BICC: 5/7)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| DESCRIPTION | Description | ✅ |
+| DISPLAYED_FIELD | DisplayedField | ✅ |
+| ENABLED_FLAG | EnabledFlag | — |
+| END_DATE_ACTIVE | EndDateActive | — |
+| LOOKUP_CODE | LookupCode | ✅ |
+| LOOKUP_TYPE | LookupType | ✅ |
+| START_DATE_ACTIVE | StartDateActive | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — AP_LOOKUP_CODES](https://docs.oracle.com/en/cloud/saas/financials/25a/oedmf/aplookupcodes-10024.html)

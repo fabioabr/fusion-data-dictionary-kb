@@ -132,6 +132,30 @@ WHERE  NOT EXISTS (
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[qualificationareaoutcomepvo|QualificationAreaOutcomePVO]] (PO · BICC: 15/15)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTIVE_FLAG | QualAreaOutcomeActiveFlag | ✅ |
+| CREATED_BY | QualAreaOutcomeCreatedBy | ✅ |
+| CREATION_DATE | QualAreaOutcomeCreationDate | ✅ |
+| DISPLAY_SEQUENCE | QualAreaOutcomeDisplaySequence | ✅ |
+| FROM_SCORE | QualAreaOutcomeFromScore | ✅ |
+| KNOCKOUT_OUTCOME_FLAG | QualAreaOutcomeKnockoutOutcomeFlag | ✅ |
+| LAST_UPDATE_DATE | QualAreaOutcomeLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | QualAreaOutcomeLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | QualAreaOutcomeLastUpdatedBy | ✅ |
+| NOTIFICATION_FLAG | QualAreaOutcomeNotificationFlag | ✅ |
+| OBJECT_VERSION_NUMBER | QualAreaOutcomeObjectVersionNumber | ✅ |
+| OUTCOME_NAME | QualAreaOutcomeOutcomeName | ✅ |
+| QUAL_AREA_ID | QualAreaOutcomeQualAreaId | ✅ |
+| QUAL_AREA_OUTCOME_ID | QualAreaOutcomeId | ✅ |
+| TO_SCORE | QualAreaOutcomeToScore | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — Supplier Qualification Management](https://docs.oracle.com/en/cloud/saas/procurement/25a/oedmf/)

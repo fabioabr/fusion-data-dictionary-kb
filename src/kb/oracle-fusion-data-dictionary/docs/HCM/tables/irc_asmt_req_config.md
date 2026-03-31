@@ -110,3 +110,32 @@ WHERE  rc.REQUISITION_ID = :p_req_id;
 
 - [Oracle Docs — IRC_ASMT_REQ_CONFIG](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/ircasmtreqconfig.html)
 - [[hcm-module-data-dictionary]] — Dossie do modulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[asmtpackageresultviewallpvo|AsmtPackageResultViewAllPVO]] (HCM · BICC: 3/4)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACCOUNT_USERNAME | AsmtReqConfigPEOAccountUsername | ✅ |
+| ASSESSMENT_CONFIG_ID | AsmtReqConfigPEOAssessmentConfigId | — |
+| PROVISIONING_ID | AsmtReqConfigPEOProvisioningId | ✅ |
+| REQUISITION_ID | AsmtReqConfigPEORequisitionId | ✅ |
+
+### [[asmtreqpackageviewallpvo|AsmtReqPackageViewAllPVO]] (HCM · BICC: 5/11)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACCOUNT_USERNAME | AsmtReqConfigPEOAccountUsername | ✅ |
+| ASSESSMENT_CONFIG_ID | AsmtReqConfigPEOAssessmentConfigId | — |
+| CREATED_BY | AsmtReqConfigPEOCreatedBy | — |
+| CREATION_DATE | AsmtReqConfigPEOCreationDate | — |
+| LAST_UPDATE_DATE | AsmtReqConfigPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | AsmtReqConfigPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | AsmtReqConfigPEOLastUpdatedBy | — |
+| MULTI_PHASE_CSP_FLAG | AsmtReqConfigPEOMultiPhaseCspFlag | ✅ |
+| OBJECT_VERSION_NUMBER | AsmtReqConfigPEOObjectVersionNumber | — |
+| PROVISIONING_ID | AsmtReqConfigPEOProvisioningId | ✅ |
+| REQUISITION_ID | AsmtReqConfigPEORequisitionId | ✅ |

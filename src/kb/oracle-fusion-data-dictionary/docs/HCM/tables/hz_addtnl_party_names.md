@@ -107,3 +107,91 @@ updated_at: 2026-03-26
 ## 📎 Uso Típico
 
 (a ser preenchido na etapa 03)
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[studentpvo|StudentPVO]] (OTHER · BICC: 8/57)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTUAL_CONTENT_SOURCE | AdditionalPartyNamePEOActualContentSource | — |
+| ATTRIBUTE1 | AdditionalPartyNamePEOAttribute1 | — |
+| ATTRIBUTE10 | AdditionalPartyNamePEOAttribute10 | — |
+| ATTRIBUTE11 | AdditionalPartyNamePEOAttribute11 | — |
+| ATTRIBUTE12 | AdditionalPartyNamePEOAttribute12 | — |
+| ATTRIBUTE13 | AdditionalPartyNamePEOAttribute13 | — |
+| ATTRIBUTE14 | AdditionalPartyNamePEOAttribute14 | — |
+| ATTRIBUTE15 | AdditionalPartyNamePEOAttribute15 | — |
+| ATTRIBUTE16 | AdditionalPartyNamePEOAttribute16 | — |
+| ATTRIBUTE17 | AdditionalPartyNamePEOAttribute17 | — |
+| ATTRIBUTE18 | AdditionalPartyNamePEOAttribute18 | — |
+| ATTRIBUTE19 | AdditionalPartyNamePEOAttribute19 | — |
+| ATTRIBUTE2 | AdditionalPartyNamePEOAttribute2 | — |
+| ATTRIBUTE20 | AdditionalPartyNamePEOAttribute20 | — |
+| ATTRIBUTE21 | AdditionalPartyNamePEOAttribute21 | — |
+| ATTRIBUTE22 | AdditionalPartyNamePEOAttribute22 | — |
+| ATTRIBUTE23 | AdditionalPartyNamePEOAttribute23 | — |
+| ATTRIBUTE24 | AdditionalPartyNamePEOAttribute24 | — |
+| ATTRIBUTE25 | AdditionalPartyNamePEOAttribute25 | — |
+| ATTRIBUTE26 | AdditionalPartyNamePEOAttribute26 | — |
+| ATTRIBUTE27 | AdditionalPartyNamePEOAttribute27 | — |
+| ATTRIBUTE28 | AdditionalPartyNamePEOAttribute28 | — |
+| ATTRIBUTE29 | AdditionalPartyNamePEOAttribute29 | — |
+| ATTRIBUTE3 | AdditionalPartyNamePEOAttribute3 | — |
+| ATTRIBUTE30 | AdditionalPartyNamePEOAttribute30 | — |
+| ATTRIBUTE4 | AdditionalPartyNamePEOAttribute4 | — |
+| ATTRIBUTE5 | AdditionalPartyNamePEOAttribute5 | — |
+| ATTRIBUTE6 | AdditionalPartyNamePEOAttribute6 | — |
+| ATTRIBUTE7 | AdditionalPartyNamePEOAttribute7 | — |
+| ATTRIBUTE8 | AdditionalPartyNamePEOAttribute8 | — |
+| ATTRIBUTE9 | AdditionalPartyNamePEOAttribute9 | — |
+| ATTRIBUTE_CATEGORY | AdditionalPartyNamePEOAttributeCategory | — |
+| CREATED_BY | AdditionalPartyNamePEOCreatedBy | — |
+| CREATED_BY_MODULE | AdditionalPartyNamePEOCreatedByModule | — |
+| CREATION_DATE | AdditionalPartyNamePEOCreationDate | — |
+| DESCRIPTION | AdditionalPartyNamePEODescription | — |
+| LAST_UPDATE_DATE | AdditionalPartyNamePEOLastUpdateDate | — |
+| LAST_UPDATE_LOGIN | AdditionalPartyNamePEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | AdditionalPartyNamePEOLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | AdditionalPartyNamePEOObjectVersionNumber | — |
+| PARTY_ID | AdditionalPartyNamePEOPartyId | — |
+| PARTY_NAME | AdditionalPartyNamePEOPartyName | ✅ |
+| PARTY_NAME_ID | AdditionalPartyNamePEOPartyNameId | — |
+| PARTY_NAME_TYPE | AdditionalPartyNamePEOPartyNameType | — |
+| PERSON_ACADEMIC_TITLE | AdditionalPartyNamePEOPersonAcademicTitle | — |
+| PERSON_FIRST_NAME | AdditionalPartyNamePEOPersonFirstName | ✅ |
+| PERSON_LAST_NAME | AdditionalPartyNamePEOPersonLastName | ✅ |
+| PERSON_LAST_NAME_PREFIX | AdditionalPartyNamePEOPersonLastNamePrefix | ✅ |
+| PERSON_MIDDLE_NAME | AdditionalPartyNamePEOPersonMiddleName | ✅ |
+| PERSON_NAME_SUFFIX | AdditionalPartyNamePEOPersonNameSuffix | ✅ |
+| PERSON_PRE_NAME_ADJUNCT | AdditionalPartyNamePEOPersonPreNameAdjunct | ✅ |
+| PERSON_PREVIOUS_LAST_NAME | AdditionalPartyNamePEOPersonPreviousLastName | — |
+| PERSON_SECOND_LAST_NAME | AdditionalPartyNamePEOPersonSecondLastName | — |
+| PERSON_TITLE | AdditionalPartyNamePEOPersonTitle | ✅ |
+| PREFERRED_FLAG | AdditionalPartyNamePEOPreferredFlag | — |
+| STATUS_FLAG | AdditionalPartyNamePEOStatusFlag | — |
+| TRANSLITERATION_LANG | AdditionalPartyNamePEOTransliterationLang | — |
+
+### [[supplierextractpvo|SupplierExtractPVO]] (PO · BICC: 4/4)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| PARTY_NAME | AliasPartyName | ✅ |
+| PARTY_NAME | AlternateNamePartyName | ✅ |
+| PARTY_NAME_ID | AliasPartyNameId | ✅ |
+| PARTY_NAME_ID | AlternateNamePartyNameId | ✅ |
+
+### [[supplierpvo|SupplierPVO]] (PO · BICC: 2/8)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| PARTY_ID | AliasPartyId | — |
+| PARTY_ID | AlternateNamePartyId | — |
+| PARTY_NAME | AliasPartyName | ✅ |
+| PARTY_NAME | AlternateNamePartyName | ✅ |
+| PARTY_NAME_ID | AliasPartyNameId | — |
+| PARTY_NAME_ID | AlternateNamePartyNameId | — |
+| PARTY_NAME_TYPE | AliasPartyNameType | — |
+| PARTY_NAME_TYPE | AlternateNamePartyNameType | — |

@@ -109,3 +109,26 @@ WHERE  v.ENABLED_FLAG = 'Y';
 
 - [Oracle Docs — HXT_TCLAY_V](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/hxttclayv.html)
 - [[hcm-module-data-dictionary]] — Dossie do modulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[timecardlayoutpvo|TimecardLayoutPVO]] (GL · BICC: 11/14)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | TclayVPEOCreatedBy | ✅ |
+| CREATION_DATE | TclayVPEOCreationDate | ✅ |
+| LAST_UPDATE_DATE | TclayVPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | TclayVPEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | TclayVPEOLastUpdatedBy | ✅ |
+| TASK_NAME | TclayVPEOTaskName | ✅ |
+| TASK_SHORT_NAME | TclayVPEOTaskShortName | — |
+| TCLAY_CD | TclayVPEOTclayCd | ✅ |
+| TCLAY_ID | TclayVPEOTclayId | ✅ |
+| TCLAY_TASK_SHORT_NAME | TclayVPEOTclayTaskShortName | ✅ |
+| TCLAY_TYPE | TclayVPEOTclayType | ✅ |
+| TCLAYST_ID | TclayVPEOTclaystId | ✅ |
+| TL_TASK_FEATURES_ID | TclayVPEOTlTaskFeaturesId | — |
+| TL_TASK_RESULTS_ID | TclayVPEOTlTaskResultsId | — |

@@ -107,3 +107,22 @@ WHERE  f.CANDIDATE_ID = :p_candidate_id;
 
 - [Oracle Docs -- IRC_IM_FEEDBACKS](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/ircimfeedbacks.html)
 - [[hcm-module-data-dictionary]] -- Dossie do modulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[feedbackdetailspvo|FeedbackDetailsPVO]] (HCM · BICC: 9/10)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | CreatedBy | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| FEEDBACK_ID | FeedbackId | ✅ |
+| FEEDBACK_TYPE_CODE | FeedbackTypeCode | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | LastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | ✅ |
+| REQUISITION_ID | RequisitionId | — |
+| SUBMISSION_ID | SubmissionId | ✅ |

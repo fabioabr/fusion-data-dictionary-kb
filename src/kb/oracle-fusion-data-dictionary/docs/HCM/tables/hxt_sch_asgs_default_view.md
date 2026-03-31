@@ -114,3 +114,37 @@ WHERE  v.PERSON_ID = :p_person_id
 
 - [Oracle Docs — HXT_SCH_ASGS_DEFAULT_VIEW](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/hxtschasgsdefaultview.html)
 - [[hcm-module-data-dictionary]] — Dossie do modulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[schedulerassignmentpvo|SchedulerAssignmentPVO]] (GL · BICC: 18/25)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ASSIGN_TO | AssignTo | — |
+| CREATED_BY | CreatedBy | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| DATE_FROM | DateFrom | ✅ |
+| DATE_TO | DateTo | ✅ |
+| GRP_ID | GrpId | — |
+| GRP_INCL_MEMBER_ID | GrpInclMemberId | — |
+| INCL_MEMBER_ID | InclMemberId | — |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | LastUpdatedBy | ✅ |
+| OBJECT_ID | ObjectId | — |
+| PRODUCT_AREA | ProductArea | — |
+| PROFILE_CREATED_BY | ProfileCreatedBy | ✅ |
+| PROFILE_CREATION_DATE | ProfileCreationDate | ✅ |
+| PROFILE_DESCRIPTION | ProfileDescription | ✅ |
+| PROFILE_LAST_UPDATE_DATE | ProfileLastUpdateDate | ✅ |
+| PROFILE_LAST_UPDATE_LOGIN | ProfileLastUpdateLogin | ✅ |
+| PROFILE_LAST_UPDATED_BY | ProfileLastUpdatedBy | ✅ |
+| PROFILE_NAME | ProfileName | ✅ |
+| PROFILE_PRECEDENCE | ProfilePrecedence | — |
+| SETUP_PROFILE_ASG_CD | SetupProfileAsgCd | ✅ |
+| SETUP_PROFILE_ASG_ID | SetupProfileAsgId | ✅ |
+| SETUP_PROFILE_CD | SetupProfileCd | ✅ |
+| SETUP_PROFILE_ID | SetupProfileId | ✅ |

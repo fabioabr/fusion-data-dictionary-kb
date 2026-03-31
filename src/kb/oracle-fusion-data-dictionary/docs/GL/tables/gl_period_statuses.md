@@ -140,6 +140,106 @@ ORDER BY ps.PERIOD_NUM;
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[journallineextractpvo|JournalLineExtractPVO]] (GL)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ADJUSTMENT_PERIOD_FLAG | GlPeriodStatusesAdjustmentPeriodFlag | — |
+| APPLICATION_ID | GlPeriodStatusesApplicationId | — |
+| ATTRIBUTE1 | GlPeriodStatusesAttribute110 | — |
+| ATTRIBUTE2 | GlPeriodStatusesAttribute21 | — |
+| ATTRIBUTE3 | GlPeriodStatusesAttribute31 | — |
+| ATTRIBUTE4 | GlPeriodStatusesAttribute41 | — |
+| ATTRIBUTE5 | GlPeriodStatusesAttribute51 | — |
+| ATTRIBUTE_CATEGORY | GlPeriodStatusesAttributeCategory1 | — |
+| CHRONOLOGICAL_SEQ_STATUS_CODE | GlPeriodStatusesChronologicalSeqStatusCode | — |
+| CLOSING_STATUS | GlPeriodStatusesClosingStatus | — |
+| CREATED_BY | GlPeriodStatusesCreatedBy | — |
+| CREATION_DATE | GlPeriodStatusesCreationDate | — |
+| EFFECTIVE_PERIOD_NUM | GlPeriodStatusesEffectivePeriodNum | — |
+| ELIMINATION_CONFIRMED_FLAG | GlPeriodStatusesEliminationConfirmedFlag | — |
+| END_DATE | GlPeriodStatusesEndDate | — |
+| LAST_UPDATE_DATE | GlPeriodStatusesLastUpdateDate | — |
+| LAST_UPDATE_LOGIN | GlPeriodStatusesLastUpdateLogin | — |
+| LAST_UPDATED_BY | GlPeriodStatusesLastUpdatedBy | — |
+| LEDGER_ID | GlPeriodStatusesLedgerId | — |
+| MIGRATION_STATUS_CODE | GlPeriodStatusesMigrationStatusCode | — |
+| OBJECT_VERSION_NUMBER | GlPeriodStatusesObjectVersionNumber | — |
+| PERIOD_NAME | GlPeriodStatusesPeriodName | — |
+| PERIOD_NUM | GlPeriodStatusesPeriodNum | — |
+| PERIOD_TYPE | GlPeriodStatusesPeriodType | — |
+| PERIOD_YEAR | GlPeriodStatusesPeriodYear | — |
+| QUARTER_NUM | GlPeriodStatusesQuarterNum | — |
+| QUARTER_START_DATE | GlPeriodStatusesQuarterStartDate | — |
+| SET_OF_BOOKS_ID | GlPeriodStatusesSetOfBooksId | — |
+| START_DATE | GlPeriodStatusesStartDate | — |
+| TRACK_BC_YTD_FLAG | GlPeriodStatusesTrackBcYtdFlag | — |
+| YEAR_START_DATE | GlPeriodStatusesYearStartDate | — |
+
+### [[journallinepvo|JournalLinePVO]] (GL · BICC: 5/25)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ADJUSTMENT_PERIOD_FLAG | PeriodStatusAdjustmentPeriodFlag | ✅ |
+| APPLICATION_ID | PeriodStatusApplicationId | ✅ |
+| CHRONOLOGICAL_SEQ_STATUS_CODE | PeriodStatusChronologicalSeqStatusCode | — |
+| CLOSING_STATUS | PeriodStatusClosingStatus | — |
+| CREATED_BY | PeriodStatusCreatedBy | — |
+| CREATION_DATE | PeriodStatusCreationDate | — |
+| EFFECTIVE_PERIOD_NUM | PeriodStatusEffectivePeriodNum | — |
+| ELIMINATION_CONFIRMED_FLAG | PeriodStatusEliminationConfirmedFlag | — |
+| END_DATE | PeriodStatusEndDate | ✅ |
+| LAST_UPDATE_DATE | PeriodStatusLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | PeriodStatusLastUpdateLogin | — |
+| LAST_UPDATED_BY | PeriodStatusLastUpdatedBy | — |
+| LEDGER_ID | PeriodStatusLedgerId | — |
+| MIGRATION_STATUS_CODE | PeriodStatusMigrationStatusCode | — |
+| OBJECT_VERSION_NUMBER | PeriodStatusObjectVersionNumber | — |
+| PERIOD_NAME | PeriodStatusPeriodName | — |
+| PERIOD_NUM | PeriodStatusPeriodNum | — |
+| PERIOD_TYPE | PeriodStatusPeriodType | — |
+| PERIOD_YEAR | PeriodStatusPeriodYear | — |
+| QUARTER_NUM | PeriodStatusQuarterNum | — |
+| QUARTER_START_DATE | PeriodStatusQuarterStartDate | — |
+| SET_OF_BOOKS_ID | PeriodStatusSetOfBooksId | — |
+| START_DATE | PeriodStatusStartDate | ✅ |
+| TRACK_BC_YTD_FLAG | PeriodStatusTrackBcYtdFlag | — |
+| YEAR_START_DATE | PeriodStatusYearStartDate | — |
+
+### [[periodstatuspvo|PeriodStatusPVO]] (GL · BICC: 14/25)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ADJUSTMENT_PERIOD_FLAG | AdjustmentPeriodFlag | — |
+| APPLICATION_ID | ApplicationId | ✅ |
+| CHRONOLOGICAL_SEQ_STATUS_CODE | ChronologicalSeqStatusCode | — |
+| CLOSING_STATUS | ClosingStatus | ✅ |
+| CREATED_BY | CreatedBy | — |
+| CREATION_DATE | CreationDate | — |
+| EFFECTIVE_PERIOD_NUM | EffectivePeriodNum | ✅ |
+| ELIMINATION_CONFIRMED_FLAG | EliminationConfirmedFlag | — |
+| END_DATE | EndDate | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | — |
+| LAST_UPDATED_BY | LastUpdatedBy | ✅ |
+| LEDGER_ID | LedgerId | ✅ |
+| MIGRATION_STATUS_CODE | MigrationStatusCode | — |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | — |
+| PERIOD_NAME | PeriodName | ✅ |
+| PERIOD_NUM | PeriodNum | — |
+| PERIOD_TYPE | PeriodType | ✅ |
+| PERIOD_YEAR | PeriodYear | ✅ |
+| QUARTER_NUM | QuarterNum | ✅ |
+| QUARTER_START_DATE | QuarterStartDate | ✅ |
+| SET_OF_BOOKS_ID | SetOfBooksId | — |
+| START_DATE | StartDate | ✅ |
+| TRACK_BC_YTD_FLAG | TrackBcYtdFlag | — |
+| YEAR_START_DATE | YearStartDate | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — GL_PERIOD_STATUSES](https://docs.oracle.com/en/cloud/saas/financials/25a/oedmf/glperiodstatuses-25788.html)

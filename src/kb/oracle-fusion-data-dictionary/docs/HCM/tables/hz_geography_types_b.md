@@ -66,3 +66,28 @@ updated_at: 2026-03-26
 ## 📎 Uso Típico
 
 (a ser preenchido na etapa 03)
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[hzgeotypepvo|HZGeoTypePVO]] (HCM · BICC: 2/16)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | HZGeoTypePEOCreatedBy | — |
+| CREATED_BY_MODULE | HZGeoTypePEOCreatedByModule | — |
+| CREATION_DATE | HZGeoTypePEOCreationDate | — |
+| GEOGRAPHY_TYPE | HZGeoTypePEOGeographyType | ✅ |
+| GEOGRAPHY_TYPE_ID | GeographyTypeId | — |
+| GEOGRAPHY_USE | HZGeoTypePEOGeographyUse | — |
+| JOB_DEFINITION_NAME | HZGeoTypePEOJobDefinitionName | — |
+| JOB_DEFINITION_PACKAGE | HZGeoTypePEOJobDefinitionPackage | — |
+| LAST_UPDATE_DATE | HZGeoTypePEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | HZGeoTypePEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | HZGeoTypePEOLastUpdatedBy | — |
+| LIMITED_BY_GEOGRAPHY_ID | HZGeoTypePEOLimitedByGeographyId | — |
+| OBJECT_VERSION_NUMBER | HZGeoTypePEOObjectVersionNumber | — |
+| POSTAL_CODE_RANGE_FLAG | HZGeoTypePEOPostalCodeRangeFlag | — |
+| REQUEST_ID | HZGeoTypePEORequestId | — |
+| SEED_DATA_SOURCE | HZGeoTypePEOSeedDataSource | — |

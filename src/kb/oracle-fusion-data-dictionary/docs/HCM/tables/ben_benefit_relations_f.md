@@ -112,6 +112,53 @@ WHERE  SYSDATE BETWEEN br.EFFECTIVE_START_DATE AND br.EFFECTIVE_END_DATE;
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[participantenrollmentpvo|ParticipantEnrollmentPVO]] (HCM · BICC: 5/9)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BENEFIT_REL_SYSTEM_CD | BenefitRelSystemCd | — |
+| BENEFIT_RELATION_ID | BenefitRelationId1 | ✅ |
+| BENEFIT_RELATION_NAME | BenefitRelationName | ✅ |
+| EFFECTIVE_END_DATE | EffectiveEndDate | ✅ |
+| EFFECTIVE_END_DATE | EffectiveEndDate1 | — |
+| EFFECTIVE_START_DATE | EffectiveStartDate | ✅ |
+| PRIMARY_REL | PrimaryRel | ✅ |
+| REL_PRMRY_ASG_ID | RelPrmryAsgId | — |
+| STATUS | Status | — |
+
+### [[personlifeeventpvo|PersonLifeEventPVO]] (HCM · BICC: 3/9)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BENEFIT_REL_SYSTEM_CD | BenefitRelSystemCd | — |
+| BENEFIT_RELATION_ID | BenefitRelationId1 | — |
+| BENEFIT_RELATION_NAME | BenefitRelationName | ✅ |
+| EFFECTIVE_END_DATE | EffectiveEndDate | — |
+| EFFECTIVE_END_DATE | EffectiveEndDate2 | — |
+| EFFECTIVE_START_DATE | EffectiveStartDate | ✅ |
+| PRIMARY_REL | PrimaryRel | ✅ |
+| REL_PRMRY_ASG_ID | RelPrmryAsgId | — |
+| STATUS | Status | — |
+
+### [[personpotentiallifeeventpvo|PersonPotentialLifeEventPVO]] (HCM · BICC: 3/10)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BENEFIT_REL_SYSTEM_CD | BenefitRelSystemCd | — |
+| BENEFIT_RELATION_ID | BenefitRelationId1 | — |
+| BENEFIT_RELATION_NAME | BenefitRelationName | ✅ |
+| EFFECTIVE_END_DATE | EffectiveEndDate1 | — |
+| EFFECTIVE_END_DATE | EffectiveEndDate2 | — |
+| EFFECTIVE_START_DATE | EffectiveStartDate1 | ✅ |
+| LEGAL_ENTITY_ID | LegalEntityId | — |
+| PRIMARY_REL | PrimaryRel | ✅ |
+| REL_PRMRY_ASG_ID | RelPrmryAsgId | — |
+| STATUS | Status | — |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — BEN_BENEFIT_RELATIONS_F](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/benbenefitrelationsf.html)

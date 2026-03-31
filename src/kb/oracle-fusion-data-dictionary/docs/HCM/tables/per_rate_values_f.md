@@ -120,3 +120,31 @@ WHERE  rv.ASSIGNMENT_ID = :p_assignment_id
 
 - [Oracle Docs — PER_RATE_VALUES_F](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/perratevaluesf.html)
 - [[hcm-module-data-dictionary]] — Dossiê do módulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[ratevaluepvo|RateValuePVO]] (GL · BICC: 17/19)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_OCCURRENCE_ID | RateValuePEOActionOccurrenceId | ✅ |
+| CREATED_BY | RateValuePEOCreatedBy | ✅ |
+| CREATION_DATE | RateValuePEOCreationDate | ✅ |
+| EFFECTIVE_END_DATE | EffectiveEndDate | ✅ |
+| EFFECTIVE_START_DATE | EffectiveStartDate | ✅ |
+| LAST_UPDATE_DATE | RateValuePEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | RateValuePEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | RateValuePEOLastUpdatedBy | ✅ |
+| LEGISLATION_CODE | RateValuePEOLegislationCode | ✅ |
+| MAXIMUM | RateValuePEOMaximum | ✅ |
+| MID_VALUE | RateValuePEOMidValue | ✅ |
+| MINIMUM | RateValuePEOMinimum | ✅ |
+| OBJECT_VERSION_NUMBER | RateValuePEOObjectVersionNumber | — |
+| RATE_ID | RateValuePEORateId | ✅ |
+| RATE_OBJECT_ID | RateValuePEORateObjectId | ✅ |
+| RATE_OBJECT_TYPE | RateValuePEORateObjectType | ✅ |
+| RATE_VALUE_ID | RateValueId | ✅ |
+| SEQUENCE | RateValuePEOSequence | ✅ |
+| VALUE | RateValuePEOValue | ✅ |

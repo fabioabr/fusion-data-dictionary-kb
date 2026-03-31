@@ -105,3 +105,139 @@ ORDER BY sds.DAY_OF_WEEK;
 
 - [Oracle Docs — HTS_SCHEDULES_DAY_SHIFT_VIEW](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/htsschedulesdayshiftview.html)
 - [[hcm-module-data-dictionary]] — Dossie do modulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[plannedscheduleshiftentrypvo|PlannedScheduleShiftEntryPVO]] (HCM)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| PARENT_TM_REC_GRP_ID | ScheduleDayShift1PEOParentTmRecGrpId | — |
+| PARENT_TM_REC_GRP_ID | ScheduleDayShift2PEOParentTmRecGrpId | — |
+| PARENT_TM_REC_GRP_ID | ScheduleDayShift3PEOParentTmRecGrpId | — |
+| PARENT_TM_REC_GRP_VERSION | ScheduleDayShift1PEOParentTmRecGrpVersion | — |
+| PARENT_TM_REC_GRP_VERSION | ScheduleDayShift2PEOParentTmRecGrpVersion | — |
+| PARENT_TM_REC_GRP_VERSION | ScheduleDayShift3PEOParentTmRecGrpVersion | — |
+| SHIFT_DATE_FROM | ScheduleDayShift1PEOShiftDateFrom | — |
+| SHIFT_DATE_FROM | ScheduleDayShift2PEOShiftDateFrom | — |
+| SHIFT_DATE_FROM | ScheduleDayShift3PEOShiftDateFrom | — |
+| SHIFT_DATE_TO | ScheduleDayShift1PEOShiftDateTo | — |
+| SHIFT_DATE_TO | ScheduleDayShift2PEOShiftDateTo | — |
+| SHIFT_DATE_TO | ScheduleDayShift3PEOShiftDateTo | — |
+| SHIFT_ID | ScheduleDayShift1PEOShiftId1 | — |
+| SHIFT_ID | ScheduleDayShift2PEOShiftId1 | — |
+| SHIFT_ID | ScheduleDayShift3PEOShiftId1 | — |
+| SHIFT_NAME | ScheduleDayShift1PEOShiftName1 | — |
+| SHIFT_NAME | ScheduleDayShift2PEOShiftName1 | — |
+| SHIFT_NAME | ScheduleDayShift3PEOShiftName1 | — |
+| SHIFT_SEQUENCE | ScheduleDayShift1PEOShiftSequence | — |
+| SHIFT_SEQUENCE | ScheduleDayShift2PEOShiftSequence | — |
+| SHIFT_SEQUENCE | ScheduleDayShift3PEOShiftSequence | — |
+| SHIFT_SHORT_NAME | ScheduleDayShift1PEOShiftShortName1 | — |
+| SHIFT_SHORT_NAME | ScheduleDayShift2PEOShiftShortName1 | — |
+| SHIFT_SHORT_NAME | ScheduleDayShift3PEOShiftShortName1 | — |
+| SHIFT_START_TIME | ScheduleDayShift1PEOShiftStartTime | — |
+| SHIFT_START_TIME | ScheduleDayShift2PEOShiftStartTime | — |
+| SHIFT_START_TIME | ScheduleDayShift3PEOShiftStartTime | — |
+| SHIFT_STOP_TIME | ScheduleDayShift1PEOShiftStopTime | — |
+| SHIFT_STOP_TIME | ScheduleDayShift2PEOShiftStopTime | — |
+| SHIFT_STOP_TIME | ScheduleDayShift3PEOShiftStopTime | — |
+| SHIFT_TM_REC_GRP_ID | ScheduleDayShift1PEOShiftTmRecGrpId | — |
+| SHIFT_TM_REC_GRP_ID | ScheduleDayShift2PEOShiftTmRecGrpId | — |
+| SHIFT_TM_REC_GRP_ID | ScheduleDayShift3PEOShiftTmRecGrpId | — |
+| SHIFT_TM_REC_GRP_VERSION | ScheduleDayShift1PEOShiftTmRecGrpVersion | — |
+| SHIFT_TM_REC_GRP_VERSION | ScheduleDayShift2PEOShiftTmRecGrpVersion | — |
+| SHIFT_TM_REC_GRP_VERSION | ScheduleDayShift3PEOShiftTmRecGrpVersion | — |
+| SHIFT_TYPE_CODE | ScheduleDayShift1PEOShiftTypeCode1 | — |
+| SHIFT_TYPE_CODE | ScheduleDayShift2PEOShiftTypeCode1 | — |
+| SHIFT_TYPE_CODE | ScheduleDayShift3PEOShiftTypeCode1 | — |
+
+### [[publishedscheduleshiftentrypvo|PublishedScheduleShiftEntryPVO]] (HCM · BICC: 15/39)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| PARENT_TM_REC_GRP_ID | ScheduleDayShift1PEOParentTmRecGrpId | — |
+| PARENT_TM_REC_GRP_ID | ScheduleDayShift2PEOParentTmRecGrpId | — |
+| PARENT_TM_REC_GRP_ID | ScheduleDayShift3PEOParentTmRecGrpId | — |
+| PARENT_TM_REC_GRP_VERSION | ScheduleDayShift1PEOParentTmRecGrpVersion | — |
+| PARENT_TM_REC_GRP_VERSION | ScheduleDayShift2PEOParentTmRecGrpVersion | — |
+| PARENT_TM_REC_GRP_VERSION | ScheduleDayShift3PEOParentTmRecGrpVersion | — |
+| SHIFT_DATE_FROM | ScheduleDayShift1PEOShiftDateFrom | — |
+| SHIFT_DATE_FROM | ScheduleDayShift2PEOShiftDateFrom | — |
+| SHIFT_DATE_FROM | ScheduleDayShift3PEOShiftDateFrom | — |
+| SHIFT_DATE_TO | ScheduleDayShift1PEOShiftDateTo | — |
+| SHIFT_DATE_TO | ScheduleDayShift2PEOShiftDateTo | — |
+| SHIFT_DATE_TO | ScheduleDayShift3PEOShiftDateTo | — |
+| SHIFT_ID | ScheduleDayShift1PEOShiftId1 | — |
+| SHIFT_ID | ScheduleDayShift2PEOShiftId1 | — |
+| SHIFT_ID | ScheduleDayShift3PEOShiftId1 | — |
+| SHIFT_NAME | ScheduleDayShift1PEOShiftName1 | ✅ |
+| SHIFT_NAME | ScheduleDayShift2PEOShiftName1 | ✅ |
+| SHIFT_NAME | ScheduleDayShift3PEOShiftName1 | ✅ |
+| SHIFT_SEQUENCE | ScheduleDayShift1PEOShiftSequence | — |
+| SHIFT_SEQUENCE | ScheduleDayShift2PEOShiftSequence | — |
+| SHIFT_SEQUENCE | ScheduleDayShift3PEOShiftSequence | — |
+| SHIFT_SHORT_NAME | ScheduleDayShift1PEOShiftShortName1 | ✅ |
+| SHIFT_SHORT_NAME | ScheduleDayShift2PEOShiftShortName1 | ✅ |
+| SHIFT_SHORT_NAME | ScheduleDayShift3PEOShiftShortName1 | ✅ |
+| SHIFT_START_TIME | ScheduleDayShift1PEOShiftStartTime | ✅ |
+| SHIFT_START_TIME | ScheduleDayShift2PEOShiftStartTime | ✅ |
+| SHIFT_START_TIME | ScheduleDayShift3PEOShiftStartTime | ✅ |
+| SHIFT_STOP_TIME | ScheduleDayShift1PEOShiftStopTime | ✅ |
+| SHIFT_STOP_TIME | ScheduleDayShift2PEOShiftStopTime | ✅ |
+| SHIFT_STOP_TIME | ScheduleDayShift3PEOShiftStopTime | ✅ |
+| SHIFT_TM_REC_GRP_ID | ScheduleDayShift1PEOShiftTmRecGrpId | — |
+| SHIFT_TM_REC_GRP_ID | ScheduleDayShift2PEOShiftTmRecGrpId | — |
+| SHIFT_TM_REC_GRP_ID | ScheduleDayShift3PEOShiftTmRecGrpId | — |
+| SHIFT_TM_REC_GRP_VERSION | ScheduleDayShift1PEOShiftTmRecGrpVersion | — |
+| SHIFT_TM_REC_GRP_VERSION | ScheduleDayShift2PEOShiftTmRecGrpVersion | — |
+| SHIFT_TM_REC_GRP_VERSION | ScheduleDayShift3PEOShiftTmRecGrpVersion | — |
+| SHIFT_TYPE_CODE | ScheduleDayShift1PEOShiftTypeCode1 | ✅ |
+| SHIFT_TYPE_CODE | ScheduleDayShift2PEOShiftTypeCode1 | ✅ |
+| SHIFT_TYPE_CODE | ScheduleDayShift3PEOShiftTypeCode1 | ✅ |
+
+### [[scheduledaypvo|ScheduleDayPVO]] (HCM · BICC: 15/39)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| PARENT_TM_REC_GRP_ID | ScheduleDayShift1PEOParentTmRecGrpId | — |
+| PARENT_TM_REC_GRP_ID | ScheduleDayShift2PEOParentTmRecGrpId | — |
+| PARENT_TM_REC_GRP_ID | ScheduleDayShift3PEOParentTmRecGrpId | — |
+| PARENT_TM_REC_GRP_VERSION | ScheduleDayShift1PEOParentTmRecGrpVersion | — |
+| PARENT_TM_REC_GRP_VERSION | ScheduleDayShift2PEOParentTmRecGrpVersion | — |
+| PARENT_TM_REC_GRP_VERSION | ScheduleDayShift3PEOParentTmRecGrpVersion | — |
+| SHIFT_DATE_FROM | ScheduleDayShift1PEOShiftDateFrom | — |
+| SHIFT_DATE_FROM | ScheduleDayShift2PEOShiftDateFrom | — |
+| SHIFT_DATE_FROM | ScheduleDayShift3PEOShiftDateFrom | — |
+| SHIFT_DATE_TO | ScheduleDayShift1PEOShiftDateTo | — |
+| SHIFT_DATE_TO | ScheduleDayShift2PEOShiftDateTo | — |
+| SHIFT_DATE_TO | ScheduleDayShift3PEOShiftDateTo | — |
+| SHIFT_ID | ScheduleDayShift1PEOShiftId | — |
+| SHIFT_ID | ScheduleDayShift2PEOShiftId | — |
+| SHIFT_ID | ScheduleDayShift3PEOShiftId | — |
+| SHIFT_NAME | ScheduleDayShift1PEOShiftName | ✅ |
+| SHIFT_NAME | ScheduleDayShift2PEOShiftName | ✅ |
+| SHIFT_NAME | ScheduleDayShift3PEOShiftName | ✅ |
+| SHIFT_SEQUENCE | ScheduleDayShift1PEOShiftSequence | — |
+| SHIFT_SEQUENCE | ScheduleDayShift2PEOShiftSequence | — |
+| SHIFT_SEQUENCE | ScheduleDayShift3PEOShiftSequence | — |
+| SHIFT_SHORT_NAME | ScheduleDayShift1PEOShiftShortName | ✅ |
+| SHIFT_SHORT_NAME | ScheduleDayShift2PEOShiftShortName | ✅ |
+| SHIFT_SHORT_NAME | ScheduleDayShift3PEOShiftShortName | ✅ |
+| SHIFT_START_TIME | ScheduleDayShift1PEOShiftStartTime | ✅ |
+| SHIFT_START_TIME | ScheduleDayShift2PEOShiftStartTime | ✅ |
+| SHIFT_START_TIME | ScheduleDayShift3PEOShiftStartTime | ✅ |
+| SHIFT_STOP_TIME | ScheduleDayShift1PEOShiftStopTime | ✅ |
+| SHIFT_STOP_TIME | ScheduleDayShift2PEOShiftStopTime | ✅ |
+| SHIFT_STOP_TIME | ScheduleDayShift3PEOShiftStopTime | ✅ |
+| SHIFT_TM_REC_GRP_ID | ScheduleDayShift1PEOShiftTmRecGrpId | — |
+| SHIFT_TM_REC_GRP_ID | ScheduleDayShift2PEOShiftTmRecGrpId | — |
+| SHIFT_TM_REC_GRP_ID | ScheduleDayShift3PEOShiftTmRecGrpId | — |
+| SHIFT_TM_REC_GRP_VERSION | ScheduleDayShift1PEOShiftTmRecGrpVersion | — |
+| SHIFT_TM_REC_GRP_VERSION | ScheduleDayShift2PEOShiftTmRecGrpVersion | — |
+| SHIFT_TM_REC_GRP_VERSION | ScheduleDayShift3PEOShiftTmRecGrpVersion | — |
+| SHIFT_TYPE_CODE | ScheduleDayShift1PEOShiftTypeCode | ✅ |
+| SHIFT_TYPE_CODE | ScheduleDayShift2PEOShiftTypeCode | ✅ |
+| SHIFT_TYPE_CODE | ScheduleDayShift3PEOShiftTypeCode | ✅ |

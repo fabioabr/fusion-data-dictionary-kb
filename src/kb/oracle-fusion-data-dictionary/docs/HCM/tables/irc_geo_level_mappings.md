@@ -101,3 +101,25 @@ WHERE  glm.GEO_HIERARCHY_ID = :p_id ORDER BY glm.LEVEL_NUMBER;
 
 - [Oracle Docs -- IRC_GEO_LEVEL_MAPPINGS](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/ircgeolevelmappings.html)
 - [[hcm-module-data-dictionary]] -- Dossie do modulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[geolevelmappingpvo|GeoLevelMappingPVO]] (HCM · BICC: 3/13)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| COUNTRY_CODE | GeoLevelMappingPEOCountryCode | ✅ |
+| CREATED_BY | GeoLevelMappingPEOCreatedBy | — |
+| CREATION_DATE | GeoLevelMappingPEOCreationDate | — |
+| GEO_LEVEL2_COLUMN_NAME | GeoLevelMappingPEOGeoLevel2ColumnName | — |
+| GEO_LEVEL3_COLUMN_NAME | GeoLevelMappingPEOGeoLevel3ColumnName | — |
+| GEO_MAPPING_ID | GeoMappingId | ✅ |
+| LAST_UPDATE_DATE | GeoLevelMappingPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | GeoLevelMappingPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | GeoLevelMappingPEOLastUpdatedBy | — |
+| MODULE_ID | GeoLevelMappingPEOModuleId | — |
+| OBJECT_STATUS | GeoLevelMappingPEOObjectStatus | — |
+| OBJECT_VERSION_NUMBER | GeoLevelMappingPEOObjectVersionNumber | — |
+| SEED_DATA_SOURCE | GeoLevelMappingPEOSeedDataSource | — |

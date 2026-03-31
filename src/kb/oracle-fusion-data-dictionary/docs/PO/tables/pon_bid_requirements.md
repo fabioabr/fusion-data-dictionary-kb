@@ -135,6 +135,85 @@ WHERE  br.BID_NUMBER = :p_bid_number
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[negotiationresponserequirementsextractpvo|NegotiationResponseRequirementsExtractPVO]] (PO · BICC: 20/20)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| AUCTION_HEADER_ID | AuctionHeaderId | ✅ |
+| BID_NUMBER | BidNumber | ✅ |
+| COMMENTS | Comments | ✅ |
+| CREATED_BY | CreatedBy | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| HAS_BID_FLAG | HasBidFlag | ✅ |
+| INTERFACE_LINE_ID | InterfaceLineId | ✅ |
+| INTERNAL_NOTE | InternalNote | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | LastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | ✅ |
+| OLD_COMMENTS | OldComments | ✅ |
+| REQUIREMENT_ID | RequirementId | ✅ |
+| SCORE | Score | ✅ |
+| SECTION_ID | SectionId | ✅ |
+| SEQUENCE_NUMBER | SequenceNumber | ✅ |
+| WEIGHTED_SCORE | WeightedScore | ✅ |
+| WORKSHEET_NAME | WorksheetName | ✅ |
+| WORKSHEET_SEQUENCE_NUMBER | WorksheetSequenceNumber | ✅ |
+
+### [[negotiationresprequirementandvaluespvo|NegotiationRespRequirementAndValuesPVO]] (PO · BICC: 7/20)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| AUCTION_HEADER_ID | NegRespRequirementsAuctionHeaderId5 | — |
+| BID_NUMBER | NegRespRequirementsBidNumber1 | — |
+| COMMENTS | NegRespRequirementsComments | ✅ |
+| CREATED_BY | NegRespRequirementsCreatedBy5 | ✅ |
+| CREATION_DATE | NegRespRequirementsCreationDate5 | ✅ |
+| HAS_BID_FLAG | NegRespRequirementsHasBidFlag | — |
+| INTERFACE_LINE_ID | NegRespRequirementsInterfaceLineId | — |
+| INTERNAL_NOTE | NegRespRequirementsInternalNote | ✅ |
+| LAST_UPDATE_DATE | NegRespRequirementsLastUpdateDate5 | ✅ |
+| LAST_UPDATE_LOGIN | NegRespRequirementsLastUpdateLogin5 | — |
+| LAST_UPDATED_BY | NegRespRequirementsLastUpdatedBy5 | — |
+| OBJECT_VERSION_NUMBER | NegRespRequirementsObjectVersionNumber5 | — |
+| OLD_COMMENTS | NegRespRequirementsOldComments | — |
+| REQUIREMENT_ID | NegRespRequirementsRequirementId3 | — |
+| SCORE | NegRespRequirementsScore1 | ✅ |
+| SECTION_ID | NegRespRequirementsSectionId2 | — |
+| SEQUENCE_NUMBER | NegRespRequirementsSequenceNumber1 | — |
+| WEIGHTED_SCORE | NegRespRequirementsWeightedScore | ✅ |
+| WORKSHEET_NAME | NegRespRequirementsWorksheetName | — |
+| WORKSHEET_SEQUENCE_NUMBER | NegRespRequirementsWorksheetSequenceNumber | — |
+
+### [[negotiationresprequirementpvo|NegotiationRespRequirementPVO]] (PO · BICC: 10/20)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| AUCTION_HEADER_ID | NegRespRequirementsAuctionHeaderId | — |
+| BID_NUMBER | NegRespRequirementsBidNumber | ✅ |
+| COMMENTS | NegRespRequirementsComments | ✅ |
+| CREATED_BY | NegRespRequirementsCreatedBy | ✅ |
+| CREATION_DATE | NegRespRequirementsCreationDate | ✅ |
+| HAS_BID_FLAG | NegRespRequirementsHasBidFlag | — |
+| INTERFACE_LINE_ID | NegRespRequirementsInterfaceLineId | — |
+| INTERNAL_NOTE | NegRespRequirementsInternalNote | ✅ |
+| LAST_UPDATE_DATE | NegRespRequirementsLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | NegRespRequirementsLastUpdateLogin | — |
+| LAST_UPDATED_BY | NegRespRequirementsLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | NegRespRequirementsObjectVersionNumber | — |
+| OLD_COMMENTS | NegRespRequirementsOldComments | — |
+| REQUIREMENT_ID | NegRespRequirementsRequirementId | ✅ |
+| SCORE | NegRespRequirementsScore | ✅ |
+| SECTION_ID | NegRespRequirementsSectionId | ✅ |
+| SEQUENCE_NUMBER | NegRespRequirementsSequenceNumber | — |
+| WEIGHTED_SCORE | NegRespRequirementsWeightedScore | ✅ |
+| WORKSHEET_NAME | NegRespRequirementsWorksheetName | — |
+| WORKSHEET_SEQUENCE_NUMBER | NegRespRequirementsWorksheetSequenceNumber | — |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — PON_BID_REQUIREMENTS](https://docs.oracle.com/en/cloud/saas/procurement/25a/oedmf/ponbidrequirements.html)

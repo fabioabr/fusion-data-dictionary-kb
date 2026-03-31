@@ -116,6 +116,26 @@ WHERE  s.OUTCOME = 'FATALITY'
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[hnsinjuredpersonspvo|HNSInjuredPersonsPVO]] (HCM · BICC: 4/11)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | HNSInjuredPersonSummaryPEOCreatedBy | — |
+| CREATION_DATE | HNSInjuredPersonSummaryPEOCreationDate | — |
+| DATE_TIME_NOTIFIED | HNSInjuredPersonSummaryPEODtTmNtfd | ✅ |
+| DELETED_FLAG | HNSInjuredPersonSummaryPEODeletedFlag | ✅ |
+| HR_NOTIFIED_FLAG | HNSInjuredPersonSummaryPEOHrNtfdFlg | ✅ |
+| INCIDENT_DETAIL_ID | HNSInjuredPersonSummaryPEOIncDtlId | — |
+| INJ_PERSON_SUMMARY_ID | HNSInjuredPersonSummaryPEOInjPerSumId | ✅ |
+| LAST_UPDATE_DATE | HNSInjuredPersonSummaryPEOLstUpdtDt | — |
+| LAST_UPDATE_LOGIN | HNSInjuredPersonSummaryPEOLstUpdtLgn | — |
+| LAST_UPDATED_BY | HNSInjuredPersonSummaryPEOLstUpdtdBy | — |
+| OBJECT_VERSION_NUMBER | HNSInjuredPersonSummaryPEOObjVersNum | — |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — HNS_INJURED_PERSONS_SUMMARY](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/hnsinjuredpersonssummary.html)

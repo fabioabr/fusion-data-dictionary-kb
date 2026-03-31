@@ -114,6 +114,32 @@ WHERE  r.PERSON_ID = :p_person_id;
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[feedbackrequestextractpvo|FeedbackRequestExtractPVO]] (HCM · BICC: 17/17)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | BusinessGroupId | ✅ |
+| CREATED_BY | CreatedBy | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| DUE_DATE | DueDate | ✅ |
+| DUE_DATE_ALERT_SENT | DueDateAlertSent | ✅ |
+| FEEDBACK_REQ_ID | FeedbackReqId | ✅ |
+| FEEDBACK_REQ_TMPL_ID | FeedbackReqTmplId | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | LastUpdatedBy | ✅ |
+| MESSAGE_TEXT | MessageText | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | ✅ |
+| PARTICIPANT_PERSON_ID | ParticipantPersonId | ✅ |
+| REQUESTED_BY_PERSON_ID | RequestedByPersonId | ✅ |
+| REQUESTED_FOR_PERSON_ID | RequestedForPersonId | ✅ |
+| SHARE_WITH_MGR_FLAG | ShareWithMgrFlag | ✅ |
+| SHARE_WITH_WKR_FLAG | ShareWithWkrFlag | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — HRA_FEEDBACK_REQUEST](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/hrafeedbackrequest.html)

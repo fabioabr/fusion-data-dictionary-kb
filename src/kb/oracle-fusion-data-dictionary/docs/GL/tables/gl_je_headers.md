@@ -193,6 +193,299 @@ WHERE  h.REVERSAL_FLAG = 'Y'
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[journalheaderextractpvo|JournalHeaderExtractPVO]] (GL · BICC: 1/125)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACCRUAL_REV_CHANGE_SIGN_FLAG | GlJeHeadersAccrualRevChangeSignFlag | — |
+| ACCRUAL_REV_EFFECTIVE_DATE | GlJeHeadersAccrualRevEffectiveDate | — |
+| ACCRUAL_REV_FLAG | GlJeHeadersAccrualRevFlag | — |
+| ACCRUAL_REV_JE_HEADER_ID | GlJeHeadersAccrualRevJeHeaderId | — |
+| ACCRUAL_REV_PERIOD_NAME | GlJeHeadersAccrualRevPeriodName | — |
+| ACCRUAL_REV_STATUS | GlJeHeadersAccrualRevStatus | — |
+| ACTUAL_FLAG | GlJeHeadersActualFlag | — |
+| ATTRIBUTE1 | GlJeHeadersAttribute1 | — |
+| ATTRIBUTE10 | GlJeHeadersAttribute10 | — |
+| ATTRIBUTE2 | GlJeHeadersAttribute2 | — |
+| ATTRIBUTE3 | GlJeHeadersAttribute3 | — |
+| ATTRIBUTE4 | GlJeHeadersAttribute4 | — |
+| ATTRIBUTE5 | GlJeHeadersAttribute5 | — |
+| ATTRIBUTE6 | GlJeHeadersAttribute6 | — |
+| ATTRIBUTE7 | GlJeHeadersAttribute7 | — |
+| ATTRIBUTE8 | GlJeHeadersAttribute8 | — |
+| ATTRIBUTE9 | GlJeHeadersAttribute9 | — |
+| ATTRIBUTE_CATEGORY | GlJeHeadersAttributeCategory | — |
+| ATTRIBUTE_CATEGORY2 | GlJeHeadersAttributeCategory2 | — |
+| ATTRIBUTE_DATE1 | GlJeHeadersAttributeDate1 | — |
+| ATTRIBUTE_DATE2 | GlJeHeadersAttributeDate2 | — |
+| ATTRIBUTE_DATE3 | GlJeHeadersAttributeDate3 | — |
+| ATTRIBUTE_DATE4 | GlJeHeadersAttributeDate4 | — |
+| ATTRIBUTE_DATE5 | GlJeHeadersAttributeDate5 | — |
+| ATTRIBUTE_NUMBER1 | GlJeHeadersAttributeNumber1 | — |
+| ATTRIBUTE_NUMBER2 | GlJeHeadersAttributeNumber2 | — |
+| ATTRIBUTE_NUMBER3 | GlJeHeadersAttributeNumber3 | — |
+| ATTRIBUTE_NUMBER4 | GlJeHeadersAttributeNumber4 | — |
+| ATTRIBUTE_NUMBER5 | GlJeHeadersAttributeNumber5 | — |
+| BALANCED_JE_FLAG | GlJeHeadersBalancedJeFlag | — |
+| BALANCING_SEGMENT_VALUE | GlJeHeadersBalancingSegmentValue | — |
+| BUDGET_VERSION_ID | GlJeHeadersBudgetVersionId | — |
+| CLOSE_ACCT_SEQ_ASSIGN_ID | GlJeHeadersCloseAcctSeqAssignId | — |
+| CLOSE_ACCT_SEQ_VALUE | GlJeHeadersCloseAcctSeqValue | — |
+| CLOSE_ACCT_SEQ_VERSION_ID | GlJeHeadersCloseAcctSeqVersionId | — |
+| CONTROL_TOTAL | GlJeHeadersControlTotal | — |
+| CONVERSION_FLAG | GlJeHeadersConversionFlag | — |
+| CR_BAL_SEG_VALUE | GlJeHeadersCrBalSegValue | — |
+| CREATED_BY | GlJeHeadersCreatedBy | — |
+| CREATION_DATE | GlJeHeadersCreationDate | — |
+| CURRENCY_CODE | GlJeHeadersCurrencyCode | — |
+| CURRENCY_CONVERSION_DATE | GlJeHeadersCurrencyConversionDate | — |
+| CURRENCY_CONVERSION_RATE | GlJeHeadersCurrencyConversionRate | — |
+| CURRENCY_CONVERSION_TYPE | GlJeHeadersCurrencyConversionType | — |
+| DATE_CREATED | GlJeHeadersDateCreated | — |
+| DEFAULT_EFFECTIVE_DATE | GlJeHeadersDefaultEffectiveDate | — |
+| DESCRIPTION | GlJeHeadersDescription | — |
+| DISPLAY_ALC_JOURNAL_FLAG | GlJeHeadersDisplayAlcJournalFlag | — |
+| DOC_SEQUENCE_ID | GlJeHeadersDocSequenceId | — |
+| DOC_SEQUENCE_VALUE | GlJeHeadersDocSequenceValue | — |
+| DR_BAL_SEG_VALUE | GlJeHeadersDrBalSegValue | — |
+| EARLIEST_POSTABLE_DATE | GlJeHeadersEarliestPostableDate | — |
+| ENCUMBRANCE_TYPE_ID | GlJeHeadersEncumbranceTypeId | — |
+| EXTERNAL_REFERENCE | GlJeHeadersExternalReference | — |
+| FROM_RECURRING_HEADER_ID | GlJeHeadersFromRecurringHeaderId | — |
+| GLOBAL_ATTRIBUTE1 | GlJeHeadersGlobalAttribute1 | — |
+| GLOBAL_ATTRIBUTE10 | GlJeHeadersGlobalAttribute10 | — |
+| GLOBAL_ATTRIBUTE11 | GlJeHeadersGlobalAttribute11 | — |
+| GLOBAL_ATTRIBUTE12 | GlJeHeadersGlobalAttribute12 | — |
+| GLOBAL_ATTRIBUTE13 | GlJeHeadersGlobalAttribute13 | — |
+| GLOBAL_ATTRIBUTE14 | GlJeHeadersGlobalAttribute14 | — |
+| GLOBAL_ATTRIBUTE15 | GlJeHeadersGlobalAttribute15 | — |
+| GLOBAL_ATTRIBUTE16 | GlJeHeadersGlobalAttribute16 | — |
+| GLOBAL_ATTRIBUTE17 | GlJeHeadersGlobalAttribute17 | — |
+| GLOBAL_ATTRIBUTE18 | GlJeHeadersGlobalAttribute18 | — |
+| GLOBAL_ATTRIBUTE19 | GlJeHeadersGlobalAttribute19 | — |
+| GLOBAL_ATTRIBUTE2 | GlJeHeadersGlobalAttribute2 | — |
+| GLOBAL_ATTRIBUTE20 | GlJeHeadersGlobalAttribute20 | — |
+| GLOBAL_ATTRIBUTE3 | GlJeHeadersGlobalAttribute3 | — |
+| GLOBAL_ATTRIBUTE4 | GlJeHeadersGlobalAttribute4 | — |
+| GLOBAL_ATTRIBUTE5 | GlJeHeadersGlobalAttribute5 | — |
+| GLOBAL_ATTRIBUTE6 | GlJeHeadersGlobalAttribute6 | — |
+| GLOBAL_ATTRIBUTE7 | GlJeHeadersGlobalAttribute7 | — |
+| GLOBAL_ATTRIBUTE8 | GlJeHeadersGlobalAttribute8 | — |
+| GLOBAL_ATTRIBUTE9 | GlJeHeadersGlobalAttribute9 | — |
+| GLOBAL_ATTRIBUTE_CATEGORY | GlJeHeadersGlobalAttributeCategory | — |
+| GLOBAL_ATTRIBUTE_DATE1 | GlJeHeadersGlobalAttributeDate1 | — |
+| GLOBAL_ATTRIBUTE_DATE2 | GlJeHeadersGlobalAttributeDate2 | — |
+| GLOBAL_ATTRIBUTE_DATE3 | GlJeHeadersGlobalAttributeDate3 | — |
+| GLOBAL_ATTRIBUTE_DATE4 | GlJeHeadersGlobalAttributeDate4 | — |
+| GLOBAL_ATTRIBUTE_DATE5 | GlJeHeadersGlobalAttributeDate5 | — |
+| GLOBAL_ATTRIBUTE_NUMBER1 | GlJeHeadersGlobalAttributeNumber1 | — |
+| GLOBAL_ATTRIBUTE_NUMBER2 | GlJeHeadersGlobalAttributeNumber2 | — |
+| GLOBAL_ATTRIBUTE_NUMBER3 | GlJeHeadersGlobalAttributeNumber3 | — |
+| GLOBAL_ATTRIBUTE_NUMBER4 | GlJeHeadersGlobalAttributeNumber4 | — |
+| GLOBAL_ATTRIBUTE_NUMBER5 | GlJeHeadersGlobalAttributeNumber5 | — |
+| INTERCOMPANY_MODE | GlJeHeadersIntercompanyMode | — |
+| JE_BATCH_ID | GlJeHeadersJeBatchId | — |
+| JE_CATEGORY | GlJeHeadersJeCategory | — |
+| JE_FROM_SLA_FLAG | GlJeHeadersJeFromSlaFlag | — |
+| JE_HEADER_ID | JeHeaderId | ✅ |
+| JE_HEADER_ID | ReversalJournalHeaderJeHeaderId | — |
+| JE_SOURCE | GlJeHeadersJeSource | — |
+| LAST_UPDATE_DATE | GlJeHeadersLastUpdateDate | — |
+| LAST_UPDATE_LOGIN | GlJeHeadersLastUpdateLogin | — |
+| LAST_UPDATED_BY | GlJeHeadersLastUpdatedBy | — |
+| LEDGER_ID | GlJeHeadersLedgerId | — |
+| LEGAL_ENTITY_ID | GlJeHeadersLegalEntityId | — |
+| LOCAL_DOC_SEQUENCE_ID | GlJeHeadersLocalDocSequenceId | — |
+| LOCAL_DOC_SEQUENCE_VALUE | GlJeHeadersLocalDocSequenceValue | — |
+| MULTI_BAL_SEG_FLAG | GlJeHeadersMultiBalSegFlag | — |
+| MULTI_CURRENCY_FLAG | GlJeHeadersMultiCurrencyFlag | — |
+| NAME | GlJeHeadersName | — |
+| NAME | ReversalJournalHeaderName | — |
+| OBJECT_VERSION_NUMBER | GlJeHeadersObjectVersionNumber | — |
+| ORIGINATING_BAL_SEG_VALUE | GlJeHeadersOriginatingBalSegValue | — |
+| PARENT_JE_HEADER_ID | GlJeHeadersParentJeHeaderId | — |
+| PERIOD_NAME | GlJeHeadersPeriodName | — |
+| POST_CURRENCY_CODE | GlJeHeadersPostCurrencyCode | — |
+| POST_MULTI_CURRENCY_FLAG | GlJeHeadersPostMultiCurrencyFlag | — |
+| POSTED_DATE | GlJeHeadersPostedDate | — |
+| POSTED_DATE | GlJeHeadersPostedDateTime | — |
+| POSTING_ACCT_SEQ_ASSIGN_ID | GlJeHeadersPostingAcctSeqAssignId | — |
+| POSTING_ACCT_SEQ_VALUE | GlJeHeadersPostingAcctSeqValue | — |
+| POSTING_ACCT_SEQ_VERSION_ID | GlJeHeadersPostingAcctSeqVersionId | — |
+| REFERENCE_DATE | GlJeHeadersReferenceDate | — |
+| REVERSED_JE_HEADER_ID | GlJeHeadersReversedJeHeaderId | — |
+| RUNNING_TOTAL_ACCOUNTED_CR | GlJeHeadersRunningTotalAccountedCr | — |
+| RUNNING_TOTAL_ACCOUNTED_DR | GlJeHeadersRunningTotalAccountedDr | — |
+| RUNNING_TOTAL_CR | GlJeHeadersRunningTotalCr | — |
+| RUNNING_TOTAL_DR | GlJeHeadersRunningTotalDr | — |
+| STATUS | GlJeHeadersStatus | — |
+| TAX_LEGAL_ENTITY_ID | GlJeHeadersTaxLegalEntityId | — |
+| TAX_STATUS_CODE | GlJeHeadersTaxStatusCode | — |
+| USSGL_TRANSACTION_CODE | GlJeHeadersUssglTransactionCode | — |
+
+### [[journalheaderpvo|JournalHeaderPVO]] (GL · BICC: 41/68)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACCRUAL_REV_CHANGE_SIGN_FLAG | JrnlHdrAccrualRevChangeSignFlagCode | ✅ |
+| ACCRUAL_REV_EFFECTIVE_DATE | JrnlHdrAccrualRevEffectiveDate | — |
+| ACCRUAL_REV_FLAG | JrnlHdrAccrualRevFlag | ✅ |
+| ACCRUAL_REV_JE_HEADER_ID | JrnlHdrAccrualRevJeHeaderId | — |
+| ACCRUAL_REV_PERIOD_NAME | JrnlHdrAccrualRevPeriodName | ✅ |
+| ACCRUAL_REV_STATUS | JrnlHdrAccrualRevStatus | ✅ |
+| ACTUAL_FLAG | JrnlHdrActualFlag | ✅ |
+| BALANCED_JE_FLAG | JrnlHdrBalancedJeFlag | — |
+| BALANCING_SEGMENT_VALUE | JrnlHdrBalancingSegmentValue | ✅ |
+| BUDGET_VERSION_ID | JrnlHdrBudgetVersionId | — |
+| CLOSE_ACCT_SEQ_ASSIGN_ID | JrnlHdrCloseAcctSeqAssignId | — |
+| CLOSE_ACCT_SEQ_VALUE | JrnlHdrCloseAcctSeqValue | ✅ |
+| CLOSE_ACCT_SEQ_VERSION_ID | JrnlHdrCloseAcctSeqVersionId | — |
+| CONTROL_TOTAL | JrnlHdrControlTotal | ✅ |
+| CONVERSION_FLAG | JrnlHdrConversionFlag | ✅ |
+| CR_BAL_SEG_VALUE | JrnlHdrCrBalSegValue | ✅ |
+| CREATED_BY | JrnlHdrCreatedBy | ✅ |
+| CREATION_DATE | JrnlHdrCreationDate | — |
+| CURRENCY_CODE | JrnlHdrCurrencyCode | ✅ |
+| CURRENCY_CONVERSION_DATE | JrnlHdrCurrencyConversionDate | ✅ |
+| CURRENCY_CONVERSION_RATE | JrnlHdrCurrencyConversionRate | ✅ |
+| CURRENCY_CONVERSION_TYPE | JrnlHdrCurrencyConversionType | ✅ |
+| DATE_CREATED | JrnlHdrDateCreated | ✅ |
+| DEFAULT_EFFECTIVE_DATE | JrnlHdrDefaultEffectiveDate | ✅ |
+| DESCRIPTION | JrnlHdrDescription | ✅ |
+| DISPLAY_ALC_JOURNAL_FLAG | JrnlHdrDisplayAlcJournalFlag | — |
+| DOC_SEQUENCE_ID | JrnlHdrDocSequenceId | — |
+| DOC_SEQUENCE_VALUE | JrnlHdrDocSequenceValue | ✅ |
+| DR_BAL_SEG_VALUE | JrnlHdrDrBalSegValue | ✅ |
+| EARLIEST_POSTABLE_DATE | JrnlHdrEarliestPostableDate | — |
+| ENCUMBRANCE_TYPE_ID | JrnlHdrEncumbranceTypeId | — |
+| EXTERNAL_REFERENCE | JrnlHdrExternalReference | ✅ |
+| FROM_RECURRING_HEADER_ID | JrnlHdrFromRecurringHeaderId | — |
+| INTERCOMPANY_MODE | JrnlHdrIntercompanyMode | — |
+| JE_BATCH_ID | JrnlHdrJeBatchId | — |
+| JE_CATEGORY | JrnlHdrJeCategory | — |
+| JE_FROM_SLA_FLAG | JrnlHdrJeFromSlaFlag | ✅ |
+| JE_HEADER_ID | JeHeaderId | ✅ |
+| JE_SOURCE | JrnlHdrJeSource | — |
+| LAST_UPDATE_DATE | JrnlHdrLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | JrnlHdrLastUpdateLogin | — |
+| LAST_UPDATED_BY | JrnlHdrLastUpdatedBy | ✅ |
+| LEDGER_ID | JrnlHdrLedgerId | — |
+| LOCAL_DOC_SEQUENCE_ID | JrnlHdrLocalDocSequenceId | — |
+| LOCAL_DOC_SEQUENCE_VALUE | JrnlHdrLocalDocSequenceValue | ✅ |
+| MULTI_BAL_SEG_FLAG | JrnlHdrMultiBalSegFlag | — |
+| MULTI_CURRENCY_FLAG | JrnlHdrMultiCurrencyFlag | ✅ |
+| NAME | JrnlHdrName | ✅ |
+| OBJECT_VERSION_NUMBER | JrnlHdrObjectVersionNumber | — |
+| ORIGINATING_BAL_SEG_VALUE | JrnlHdrOriginatingBalSegValue | ✅ |
+| PARENT_JE_HEADER_ID | JrnlHdrParentJeHeaderId | ✅ |
+| PERIOD_NAME | JrnlHdrPeriodName | ✅ |
+| POST_CURRENCY_CODE | JrnlHdrPostCurrencyCode | — |
+| POST_MULTI_CURRENCY_FLAG | JrnlHdrPostMultiCurrencyFlag | ✅ |
+| POSTED_DATE | JrnlHdrPostedDate | ✅ |
+| POSTED_DATE | JrnlHdrPostedDateTime | — |
+| POSTING_ACCT_SEQ_ASSIGN_ID | JrnlHdrPostingAcctSeqAssignId | — |
+| POSTING_ACCT_SEQ_VALUE | JrnlHdrPostingAcctSeqValue | ✅ |
+| POSTING_ACCT_SEQ_VERSION_ID | JrnlHdrPostingAcctSeqVersionId | — |
+| REFERENCE_DATE | JrnlHdrReferenceDate | ✅ |
+| REVERSED_JE_HEADER_ID | JrnlHdrReversedJeHeaderId | ✅ |
+| RUNNING_TOTAL_ACCOUNTED_CR | JrnlHdrRunningTotalAccountedCr | ✅ |
+| RUNNING_TOTAL_ACCOUNTED_DR | JrnlHdrRunningTotalAccountedDr | ✅ |
+| RUNNING_TOTAL_CR | JrnlHdrRunningTotalCr | ✅ |
+| RUNNING_TOTAL_DR | JrnlHdrRunningTotalDr | ✅ |
+| STATUS | JrnlHdrStatus | ✅ |
+| TAX_LEGAL_ENTITY_ID | JrnlHdrTaxLegalEntityId | — |
+| TAX_STATUS_CODE | JrnlHdrTaxStatusCode | — |
+
+### [[journalimportreferencepvo|JournalImportReferencePVO]] (GL · BICC: 3/8)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | JournalCreatedBy | — |
+| CREATION_DATE | JournalCreationDate | — |
+| JE_HEADER_ID | JrnlHdrJeHeaderId | — |
+| LAST_UPDATE_DATE | GjhLastUpdateDate | ✅ |
+| LAST_UPDATED_BY | GjhLastUpdatedBy | — |
+| LEDGER_ID | LedgerId | ✅ |
+| OBJECT_VERSION_NUMBER | JrnlHdrObjectVerNum | — |
+| STATUS | Status | ✅ |
+
+### [[journallinepvo|JournalLinePVO]] (GL · BICC: 38/68)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACCRUAL_REV_CHANGE_SIGN_FLAG | JrnlHdrAccrualRevChangeSignFlagCode | ✅ |
+| ACCRUAL_REV_EFFECTIVE_DATE | JrnlHdrAccrualRevEffectiveDate | — |
+| ACCRUAL_REV_FLAG | JrnlHdrAccrualRevFlag | ✅ |
+| ACCRUAL_REV_JE_HEADER_ID | JrnlHdrAccrualRevJeHeaderId | — |
+| ACCRUAL_REV_PERIOD_NAME | JrnlHdrAccrualRevPeriodName | ✅ |
+| ACCRUAL_REV_STATUS | JrnlHdrAccrualRevStatus | ✅ |
+| ACTUAL_FLAG | JrnlHdrActualFlag | ✅ |
+| BALANCED_JE_FLAG | JrnlHdrBalancedJeFlag | — |
+| BALANCING_SEGMENT_VALUE | JrnlHdrBalancingSegmentValue | ✅ |
+| BUDGET_VERSION_ID | JrnlHdrBudgetVersionId | — |
+| CLOSE_ACCT_SEQ_ASSIGN_ID | JrnlHdrCloseAcctSeqAssignId | — |
+| CLOSE_ACCT_SEQ_VALUE | JrnlHdrCloseAcctSeqValue | ✅ |
+| CLOSE_ACCT_SEQ_VERSION_ID | JrnlHdrCloseAcctSeqVersionId | — |
+| CONTROL_TOTAL | JrnlHdrControlTotal | — |
+| CONVERSION_FLAG | JrnlHdrConversionFlag | ✅ |
+| CR_BAL_SEG_VALUE | JrnlHdrCrBalSegValue | ✅ |
+| CREATED_BY | JrnlHdrCreatedBy | ✅ |
+| CREATION_DATE | JrnlHdrCreationDate | — |
+| CURRENCY_CODE | JrnlHdrCurrencyCode | ✅ |
+| CURRENCY_CONVERSION_DATE | JrnlHdrCurrencyConversionDate | ✅ |
+| CURRENCY_CONVERSION_RATE | JrnlHdrCurrencyConversionRate | ✅ |
+| CURRENCY_CONVERSION_TYPE | JrnlHdrCurrencyConversionType | ✅ |
+| DATE_CREATED | JrnlHdrDateCreated | ✅ |
+| DEFAULT_EFFECTIVE_DATE | JrnlHdrDefaultEffectiveDate | ✅ |
+| DESCRIPTION | JrnlHdrDescription | ✅ |
+| DISPLAY_ALC_JOURNAL_FLAG | JrnlHdrDisplayAlcJournalFlag | — |
+| DOC_SEQUENCE_ID | JrnlHdrDocSequenceId | — |
+| DOC_SEQUENCE_VALUE | JrnlHdrDocSequenceValue | ✅ |
+| DR_BAL_SEG_VALUE | JrnlHdrDrBalSegValue | ✅ |
+| EARLIEST_POSTABLE_DATE | JrnlHdrEarliestPostableDate | — |
+| ENCUMBRANCE_TYPE_ID | JrnlHdrEncumbranceTypeId | — |
+| EXTERNAL_REFERENCE | JrnlHdrExternalReference | ✅ |
+| FROM_RECURRING_HEADER_ID | JrnlHdrFromRecurringHeaderId | — |
+| INTERCOMPANY_MODE | JrnlHdrIntercompanyMode | — |
+| JE_BATCH_ID | JrnlHdrJeBatchId | — |
+| JE_CATEGORY | JrnlHdrJeCategory | ✅ |
+| JE_FROM_SLA_FLAG | JrnlHdrJeFromSlaFlag | ✅ |
+| JE_HEADER_ID | JrnlHdrJeHeaderId | — |
+| JE_SOURCE | JrnlHdrJeSource | ✅ |
+| LAST_UPDATE_DATE | JrnlHdrLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | JrnlHdrLastUpdateLogin | — |
+| LAST_UPDATED_BY | JrnlHdrLastUpdatedBy | ✅ |
+| LEDGER_ID | JrnlHdrLedgerId | ✅ |
+| LOCAL_DOC_SEQUENCE_ID | JrnlHdrLocalDocSequenceId | — |
+| LOCAL_DOC_SEQUENCE_VALUE | JrnlHdrLocalDocSequenceValue | ✅ |
+| MULTI_BAL_SEG_FLAG | JrnlHdrMultiBalSegFlag | — |
+| MULTI_CURRENCY_FLAG | JrnlHdrMultiCurrencyFlag | ✅ |
+| NAME | JrnlHdrName | ✅ |
+| OBJECT_VERSION_NUMBER | JrnlHdrObjectVersionNumber | — |
+| ORIGINATING_BAL_SEG_VALUE | JrnlHdrOriginatingBalSegValue | ✅ |
+| PARENT_JE_HEADER_ID | JrnlHdrParentJeHeaderId | ✅ |
+| PERIOD_NAME | JrnlHdrPeriodName | ✅ |
+| POST_MULTI_CURRENCY_FLAG | JrnlHdrPostMultiCurrencyFlag | ✅ |
+| POSTED_DATE | JrnlHdrPostedDate | ✅ |
+| POSTED_DATE | JrnlHdrPostedDateTime | — |
+| POSTING_ACCT_SEQ_ASSIGN_ID | JrnlHdrPostingAcctSeqAssignId | — |
+| POSTING_ACCT_SEQ_VALUE | JrnlHdrPostingAcctSeqValue | ✅ |
+| POSTING_ACCT_SEQ_VERSION_ID | JrnlHdrPostingAcctSeqVersionId | — |
+| REFERENCE_DATE | JrnlHdrReferenceDate | ✅ |
+| REVERSED_JE_HEADER_ID | JrnlHdrReversedJeHeaderId | ✅ |
+| RUNNING_TOTAL_ACCOUNTED_CR | JrnlHdrRunningTotalAccountedCr | — |
+| RUNNING_TOTAL_ACCOUNTED_DR | JrnlHdrRunningTotalAccountedDr | — |
+| RUNNING_TOTAL_CR | JrnlHdrRunningTotalCr | — |
+| RUNNING_TOTAL_DR | JrnlHdrRunningTotalDr | — |
+| STATUS | JrnlHdrStatus | ✅ |
+| TAX_LEGAL_ENTITY_ID | JrnlHdrTaxLegalEntityId | — |
+| TAX_STATUS_CODE | JrnlHdrTaxStatusCode | — |
+| USSGL_TRANSACTION_CODE | JrnlHdrUssglTransactionCode | — |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — GL_JE_HEADERS](https://docs.oracle.com/en/cloud/saas/financials/25a/oedmf/gljeheaders-25722.html)

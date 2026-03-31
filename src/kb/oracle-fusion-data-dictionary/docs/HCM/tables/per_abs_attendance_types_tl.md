@@ -105,6 +105,25 @@ WHERE  tl.LANGUAGE = 'PTB';
 - Sempre usar JOIN com a tabela _B para obter dados completos do tipo de ausência.
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[absencetypetranslationpvo|AbsenceTypeTranslationPVO]] (HCM · BICC: 3/10)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ABSENCE_ATTENDANCE_TYPE_ID | AbsenceAttendanceTypeId | ✅ |
+| CREATED_BY | AbsenceTypeTranslationPEOCreatedBy | — |
+| CREATION_DATE | AbsenceTypeTranslationPEOCreationDate | — |
+| LANGUAGE | Language | ✅ |
+| LAST_UPDATE_DATE | AbsenceTypeTranslationPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | AbsenceTypeTranslationPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | AbsenceTypeTranslationPEOLastUpdatedBy | — |
+| NAME | AbsenceTypeTranslationPEOName | — |
+| OBJECT_VERSION_NUMBER | AbsenceTypeTranslationPEOObjectVersionNumber | — |
+| SOURCE_LANG | AbsenceTypeTranslationPEOSourceLang | — |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — PER_ABS_ATTENDANCE_TYPES_TL](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/perabsattendancetypestl.html)

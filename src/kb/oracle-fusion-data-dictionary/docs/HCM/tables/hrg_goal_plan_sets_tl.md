@@ -93,6 +93,27 @@ WHERE  tl.GOAL_PLAN_SET_ID = :p_id AND tl.LANGUAGE = USERENV('LANG');
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[goalplansetpvo|GoalPlanSetPVO]] (HCM · BICC: 5/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | GoalPlanSetTranslationPEOBusinessGroupId1 | — |
+| CREATED_BY | GoalPlanSetTranslationPEOCreatedBy1 | — |
+| CREATION_DATE | GoalPlanSetTranslationPEOCreationDate1 | — |
+| DESCRIPTION | GoalPlanSetTranslationPEODescription | ✅ |
+| GOAL_PLAN_SET_ID | GoalPlanSetTranslationPEOGoalPlanSetId1 | — |
+| GOAL_PLAN_SET_NAME | GoalPlanSetTranslationPEOGoalPlanSetName | ✅ |
+| LANGUAGE | GoalPlanSetTranslationPEOLanguage | ✅ |
+| LAST_UPDATE_DATE | GoalPlanSetTranslationPEOLastUpdateDate1 | ✅ |
+| LAST_UPDATE_LOGIN | GoalPlanSetTranslationPEOLastUpdateLogin1 | — |
+| LAST_UPDATED_BY | GoalPlanSetTranslationPEOLastUpdatedBy1 | — |
+| OBJECT_VERSION_NUMBER | GoalPlanSetTranslationPEOObjectVersionNumber1 | — |
+| SOURCE_LANG | GoalPlanSetTranslationPEOSourceLang | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Fusion HCM Tables and Views](https://docs.oracle.com/en/cloud/saas/human-resources/25a/)

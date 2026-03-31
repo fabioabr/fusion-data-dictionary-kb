@@ -87,6 +87,53 @@ SELECT ra.ACCOUNT_TYPE,
 - Alterações nas contas de referência afetam todas as novas transações; transações existentes mantêm a conta original.
 - Filtrar sempre por `ORG_ID` para garantir contexto correto de business unit.
 
+## 🔗 PVOs Relacionados
+
+### [[referenceaccount|ReferenceAccount]] (AR · BICC: 3/11)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BU_ID | BuId | ✅ |
+| FREIGHT_CCID | FreightCcid | — |
+| LEDGER_ID | LedgerId | — |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | — |
+| REC_CCID | RecCcid | — |
+| REV_CCID | RevCcid | — |
+| SOURCE_REF_ACCOUNT_ID | SourceRefAccountId | ✅ |
+| SOURCE_REF_TABLE | SourceRefTable | ✅ |
+| TAX_CCID | TaxCcid | — |
+| UNBILLED_CCID | UnbilledCcid | — |
+| UNEARNED_CCID | UnearnedCcid | — |
+
+### [[referenceaccountextractpvo|ReferenceAccountExtractPVO]] (OTHER · BICC: 22/22)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BR_FACTOR_CCID | ArRefAccountBrFactorCcid | ✅ |
+| BR_REMIT_CCID | ArRefAccountBrRemitCcid | ✅ |
+| BR_UNPAID_CCID | ArRefAccountBrUnpaidCcid | ✅ |
+| BU_ID | ArRefAccountBuId | ✅ |
+| CLEARING_CCID | ArRefAccountClearingCcid | ✅ |
+| CREATED_BY | ArRefAccountCreatedBy | ✅ |
+| CREATION_DATE | ArRefAccountCreationDate | ✅ |
+| DIST_SET_CCID | ArRefAccountDistSetCcid | ✅ |
+| DRC_CCID | ArRefAccountDrcCcid | ✅ |
+| FREIGHT_CCID | ArRefAccountFreightCcid | ✅ |
+| LAST_UPDATE_DATE | ArRefAccountLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ArRefAccountLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | ArRefAccountLastUpdatedBy | ✅ |
+| LEDGER_ID | ArRefAccountLedgerId | ✅ |
+| OBJECT_VERSION_NUMBER | ArRefAccountObjectVersionNumber | ✅ |
+| REC_CCID | ArRefAccountRecCcid | ✅ |
+| REV_CCID | ArRefAccountRevCcid | ✅ |
+| SOURCE_REF_ACCOUNT_ID | ArRefAccountSourceRefAccountId | ✅ |
+| SOURCE_REF_TABLE | ArRefAccountSourceRefTable | ✅ |
+| TAX_CCID | ArRefAccountTaxCcid | ✅ |
+| UNBILLED_CCID | ArRefAccountUnbilledCcid | ✅ |
+| UNEARNED_CCID | ArRefAccountUnearnedCcid | ✅ |
+
+---
+
 ## 📚 Referências
 
 - Oracle Fusion Cloud Financials — Accounts Receivable Tables (OEDMF Release 13).

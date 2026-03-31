@@ -127,3 +127,78 @@ ORDER BY li.ITEM_TYPE, li.ITEM_NUMBER;
 
 - [Oracle Docs — WLF_LEARNING_ITEMS_F](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/wlflearningitemsf.html)
 - [[hcm-module-data-dictionary]] — Dossiê do módulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[contentrootpvo|ContentRootPVO]] (HCM · BICC: 4/25)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ASSIGNMENT_RULE_ENABLED | ContentRootDEOAssignmentRuleEnabled | — |
+| ASSIGNMENT_RULE_ID | ContentRootDEOAssignmentRuleId | — |
+| AUTO_COMPETANCY_UPDATE_FLAG | ContentRootDEOAutoCompetancyUpdateFlag | — |
+| CREATED_BY | ContentRootDEOCreatedBy | — |
+| CREATED_BY_ID | ContentRootDEOCreatedById | — |
+| CREATION_DATE | ContentRootDEOCreationDate | — |
+| DELETED_BY_ID | ContentRootDEODeletedById | — |
+| DELETED_DATE | ContentRootDEODeletedDate | — |
+| DURATION | ContentRootDEODuration | — |
+| DURATION_UOM | ContentRootDEODurationUom | — |
+| EFFECTIVE_END_DATE | ContentRootDEOEffectiveEndDate | ✅ |
+| EFFECTIVE_START_DATE | ContentRootDEOEffectiveStartDate | ✅ |
+| END_DATE | ContentRootDEOEndDate | — |
+| ERES_ENABLED | ContentRootDEOEresEnabled | — |
+| LANGUAGE_ID | ContentRootDEOLanguageId | — |
+| LAST_UPDATE_DATE | ContentRootDEOLastUpdateDate | ✅ |
+| LEARNING_ITEM_ID | ContentRootDEOLearningItemId | ✅ |
+| LEARNING_ITEM_NUMBER | ContentRootDEOLearningItemNumber | — |
+| LEARNING_ITEM_TYPE | ContentRootDEOLearningItemType | — |
+| LOCATION | ContentRootDEOLocation | — |
+| OBJECT_VERSION_NUMBER | ContentRootDEOObjectVersionNumber | — |
+| OWNED_BY_ID | ContentRootDEOOwnedById | — |
+| START_DATE | ContentRootDEOStartDate | — |
+| STATUS | ContentRootDEOStatus | — |
+| VISIBILITY | ContentRootDEOVisibility | — |
+
+### [[learningitempvo|LearningItemPVO]] (HCM · BICC: 9/36)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ASSIGNMENT_RULE_ENABLED | LearningItemDEOAssignmentRuleEnabled | — |
+| ASSIGNMENT_RULE_ID | LearningItemDEOAssignmentRuleId | — |
+| ATTRIBUTION_ID | LearningItemDEOAttributionId | — |
+| ATTRIBUTION_TYPE | LearningItemDEOAttributionType | — |
+| AUTO_COMPETANCY_UPDATE_FLAG | LearningItemDEOAutoCompetancyUpdateFlag | — |
+| CREATED_BY | LearningItemDEOCreatedBy | — |
+| CREATED_BY_ID | LearningItemDEOCreatedById | — |
+| CREATION_DATE | LearningItemDEOCreationDate | — |
+| DELETED_BY_ID | LearningItemDEODeletedById | — |
+| DELETED_DATE | LearningItemDEODeletedDate | — |
+| DURATION | LearningItemDEODuration | ✅ |
+| DURATION_UOM | LearningItemDEODurationUom | — |
+| EFFECTIVE_END_DATE | LearningItemDEOEffectiveEndDate | ✅ |
+| EFFECTIVE_START_DATE | LearningItemDEOEffectiveStartDate | ✅ |
+| END_DATE | LearningItemDEOEndDate | ✅ |
+| ENTERPRISE_ID | LearningItemDEOEnterpriseId | — |
+| ERES_ENABLED | LearningItemDEOEresEnabled | — |
+| LANGUAGE_ID | LearningItemDEOLanguageId | — |
+| LAST_UPDATE_DATE | LearningItemDEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LearningItemDEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | LearningItemDEOLastUpdatedBy | — |
+| LEARNING_ITEM_ID | LearningItemDEOLearningItemId | ✅ |
+| LEARNING_ITEM_NUMBER | LearningItemDEOLearningItemNumber | ✅ |
+| LEARNING_ITEM_SUB_TYPE | LearningItemDEOLearningItemSubType | — |
+| LEARNING_ITEM_TYPE | LearningItemDEOLearningItemType | ✅ |
+| LOCATION | LearningItemDEOLocation | — |
+| OBJECT_VERSION_NUMBER | LearningItemDEOObjectVersionNumber | — |
+| OWNED_BY_ID | LearningItemDEOOwnedById | — |
+| SOURCE_ID | LearningItemDEOSourceId | — |
+| SOURCE_INFO | LearningItemDEOSourceInfo | — |
+| SOURCE_TYPE | LearningItemDEOSourceType | — |
+| START_DATE | LearningItemDEOStartDate | ✅ |
+| STATUS | LearningItemDEOStatus | — |
+| THUMBNAIL_ID | LearningItemDEOThumbnailId | — |
+| TRAILER_LI_ID | LearningItemDEOTrailerLiId | — |
+| VISIBILITY | LearningItemDEOVisibility | — |

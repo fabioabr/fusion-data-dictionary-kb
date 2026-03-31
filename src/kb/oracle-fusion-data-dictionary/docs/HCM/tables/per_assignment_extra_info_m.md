@@ -111,6 +111,184 @@ WHERE  paei.ASSIGNMENT_ID = :p_assignment_id
 - A estrutura flexfield permite até 30 atributos (AEI_ATTRIBUTE1 a AEI_ATTRIBUTE30).
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[assignmentextrainfoeffpvo|AssignmentExtraInfoEFFPVO]] (HCM)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_OCCURRENCE_ID | ActionOccurrenceId | — |
+| AEI_INFORMATION_CATEGORY | AeiInformationCategory | — |
+| ASSIGNMENT_EXTRA_INFO_ID | AssignmentExtraInfoId | — |
+| ASSIGNMENT_ID | AssignmentId | — |
+| CREATED_BY | CreatedBy | — |
+| CREATION_DATE | CreationDate | — |
+| EFFECTIVE_END_DATE | EffectiveEndDate | — |
+| EFFECTIVE_LATEST_CHANGE | EffectiveLatestChange | — |
+| EFFECTIVE_SEQUENCE | EffectiveSequence | — |
+| EFFECTIVE_START_DATE | EffectiveStartDate | — |
+| INFORMATION_TYPE | InformationType | — |
+| LAST_UPDATE_DATE | LastUpdateDate | — |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | — |
+| LAST_UPDATED_BY | LastUpdatedBy | — |
+| LEGISLATION_CODE | LegislationCode | — |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | — |
+
+### [[assignmentextrainfoextractpvo|AssignmentExtraInfoExtractPVO]] (HCM · BICC: 18/148)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_OCCURRENCE_ID | ActionOccurrenceId | ✅ |
+| AEI_ATTRIBUTE1 | AeiAttribute1 | — |
+| AEI_ATTRIBUTE10 | AeiAttribute10 | — |
+| AEI_ATTRIBUTE11 | AeiAttribute11 | — |
+| AEI_ATTRIBUTE12 | AeiAttribute12 | — |
+| AEI_ATTRIBUTE13 | AeiAttribute13 | — |
+| AEI_ATTRIBUTE14 | AeiAttribute14 | — |
+| AEI_ATTRIBUTE15 | AeiAttribute15 | — |
+| AEI_ATTRIBUTE16 | AeiAttribute16 | — |
+| AEI_ATTRIBUTE17 | AeiAttribute17 | — |
+| AEI_ATTRIBUTE18 | AeiAttribute18 | — |
+| AEI_ATTRIBUTE19 | AeiAttribute19 | — |
+| AEI_ATTRIBUTE2 | AeiAttribute2 | — |
+| AEI_ATTRIBUTE20 | AeiAttribute20 | — |
+| AEI_ATTRIBUTE21 | AeiAttribute21 | — |
+| AEI_ATTRIBUTE22 | AeiAttribute22 | — |
+| AEI_ATTRIBUTE23 | AeiAttribute23 | — |
+| AEI_ATTRIBUTE24 | AeiAttribute24 | — |
+| AEI_ATTRIBUTE25 | AeiAttribute25 | — |
+| AEI_ATTRIBUTE26 | AeiAttribute26 | — |
+| AEI_ATTRIBUTE27 | AeiAttribute27 | — |
+| AEI_ATTRIBUTE28 | AeiAttribute28 | — |
+| AEI_ATTRIBUTE29 | AeiAttribute29 | — |
+| AEI_ATTRIBUTE3 | AeiAttribute3 | — |
+| AEI_ATTRIBUTE30 | AeiAttribute30 | — |
+| AEI_ATTRIBUTE4 | AeiAttribute4 | — |
+| AEI_ATTRIBUTE5 | AeiAttribute5 | — |
+| AEI_ATTRIBUTE6 | AeiAttribute6 | — |
+| AEI_ATTRIBUTE7 | AeiAttribute7 | — |
+| AEI_ATTRIBUTE8 | AeiAttribute8 | — |
+| AEI_ATTRIBUTE9 | AeiAttribute9 | — |
+| AEI_ATTRIBUTE_CATEGORY | AeiAttributeCategory | ✅ |
+| AEI_ATTRIBUTE_DATE1 | AeiAttributeDate1 | — |
+| AEI_ATTRIBUTE_DATE10 | AeiAttributeDate10 | — |
+| AEI_ATTRIBUTE_DATE11 | AeiAttributeDate11 | — |
+| AEI_ATTRIBUTE_DATE12 | AeiAttributeDate12 | — |
+| AEI_ATTRIBUTE_DATE13 | AeiAttributeDate13 | — |
+| AEI_ATTRIBUTE_DATE14 | AeiAttributeDate14 | — |
+| AEI_ATTRIBUTE_DATE15 | AeiAttributeDate15 | — |
+| AEI_ATTRIBUTE_DATE2 | AeiAttributeDate2 | — |
+| AEI_ATTRIBUTE_DATE3 | AeiAttributeDate3 | — |
+| AEI_ATTRIBUTE_DATE4 | AeiAttributeDate4 | — |
+| AEI_ATTRIBUTE_DATE5 | AeiAttributeDate5 | — |
+| AEI_ATTRIBUTE_DATE6 | AeiAttributeDate6 | — |
+| AEI_ATTRIBUTE_DATE7 | AeiAttributeDate7 | — |
+| AEI_ATTRIBUTE_DATE8 | AeiAttributeDate8 | — |
+| AEI_ATTRIBUTE_DATE9 | AeiAttributeDate9 | — |
+| AEI_ATTRIBUTE_NUMBER1 | AeiAttributeNumber1 | — |
+| AEI_ATTRIBUTE_NUMBER10 | AeiAttributeNumber10 | — |
+| AEI_ATTRIBUTE_NUMBER11 | AeiAttributeNumber11 | — |
+| AEI_ATTRIBUTE_NUMBER12 | AeiAttributeNumber12 | — |
+| AEI_ATTRIBUTE_NUMBER13 | AeiAttributeNumber13 | — |
+| AEI_ATTRIBUTE_NUMBER14 | AeiAttributeNumber14 | — |
+| AEI_ATTRIBUTE_NUMBER15 | AeiAttributeNumber15 | — |
+| AEI_ATTRIBUTE_NUMBER16 | AeiAttributeNumber16 | — |
+| AEI_ATTRIBUTE_NUMBER17 | AeiAttributeNumber17 | — |
+| AEI_ATTRIBUTE_NUMBER18 | AeiAttributeNumber18 | — |
+| AEI_ATTRIBUTE_NUMBER19 | AeiAttributeNumber19 | — |
+| AEI_ATTRIBUTE_NUMBER2 | AeiAttributeNumber2 | — |
+| AEI_ATTRIBUTE_NUMBER20 | AeiAttributeNumber20 | — |
+| AEI_ATTRIBUTE_NUMBER3 | AeiAttributeNumber3 | — |
+| AEI_ATTRIBUTE_NUMBER4 | AeiAttributeNumber4 | — |
+| AEI_ATTRIBUTE_NUMBER5 | AeiAttributeNumber5 | — |
+| AEI_ATTRIBUTE_NUMBER6 | AeiAttributeNumber6 | — |
+| AEI_ATTRIBUTE_NUMBER7 | AeiAttributeNumber7 | — |
+| AEI_ATTRIBUTE_NUMBER8 | AeiAttributeNumber8 | — |
+| AEI_ATTRIBUTE_NUMBER9 | AeiAttributeNumber9 | — |
+| AEI_INFORMATION1 | AeiInformation1 | — |
+| AEI_INFORMATION10 | AeiInformation10 | — |
+| AEI_INFORMATION11 | AeiInformation11 | — |
+| AEI_INFORMATION12 | AeiInformation12 | — |
+| AEI_INFORMATION13 | AeiInformation13 | — |
+| AEI_INFORMATION14 | AeiInformation14 | — |
+| AEI_INFORMATION15 | AeiInformation15 | — |
+| AEI_INFORMATION16 | AeiInformation16 | — |
+| AEI_INFORMATION17 | AeiInformation17 | — |
+| AEI_INFORMATION18 | AeiInformation18 | — |
+| AEI_INFORMATION19 | AeiInformation19 | — |
+| AEI_INFORMATION2 | AeiInformation2 | — |
+| AEI_INFORMATION20 | AeiInformation20 | — |
+| AEI_INFORMATION21 | AeiInformation21 | — |
+| AEI_INFORMATION22 | AeiInformation22 | — |
+| AEI_INFORMATION23 | AeiInformation23 | — |
+| AEI_INFORMATION24 | AeiInformation24 | — |
+| AEI_INFORMATION25 | AeiInformation25 | — |
+| AEI_INFORMATION26 | AeiInformation26 | — |
+| AEI_INFORMATION27 | AeiInformation27 | — |
+| AEI_INFORMATION28 | AeiInformation28 | — |
+| AEI_INFORMATION29 | AeiInformation29 | — |
+| AEI_INFORMATION3 | AeiInformation3 | — |
+| AEI_INFORMATION30 | AeiInformation30 | — |
+| AEI_INFORMATION4 | AeiInformation4 | — |
+| AEI_INFORMATION5 | AeiInformation5 | — |
+| AEI_INFORMATION6 | AeiInformation6 | — |
+| AEI_INFORMATION7 | AeiInformation7 | — |
+| AEI_INFORMATION8 | AeiInformation8 | — |
+| AEI_INFORMATION9 | AeiInformation9 | — |
+| AEI_INFORMATION_CATEGORY | AeiInformationCategory | ✅ |
+| AEI_INFORMATION_DATE1 | AeiInformationDate1 | — |
+| AEI_INFORMATION_DATE10 | AeiInformationDate10 | — |
+| AEI_INFORMATION_DATE11 | AeiInformationDate11 | — |
+| AEI_INFORMATION_DATE12 | AeiInformationDate12 | — |
+| AEI_INFORMATION_DATE13 | AeiInformationDate13 | — |
+| AEI_INFORMATION_DATE14 | AeiInformationDate14 | — |
+| AEI_INFORMATION_DATE15 | AeiInformationDate15 | — |
+| AEI_INFORMATION_DATE2 | AeiInformationDate2 | — |
+| AEI_INFORMATION_DATE3 | AeiInformationDate3 | — |
+| AEI_INFORMATION_DATE4 | AeiInformationDate4 | — |
+| AEI_INFORMATION_DATE5 | AeiInformationDate5 | — |
+| AEI_INFORMATION_DATE6 | AeiInformationDate6 | — |
+| AEI_INFORMATION_DATE7 | AeiInformationDate7 | — |
+| AEI_INFORMATION_DATE8 | AeiInformationDate8 | — |
+| AEI_INFORMATION_DATE9 | AeiInformationDate9 | — |
+| AEI_INFORMATION_NUMBER1 | AeiInformationNumber1 | — |
+| AEI_INFORMATION_NUMBER10 | AeiInformationNumber10 | — |
+| AEI_INFORMATION_NUMBER11 | AeiInformationNumber11 | — |
+| AEI_INFORMATION_NUMBER12 | AeiInformationNumber12 | — |
+| AEI_INFORMATION_NUMBER13 | AeiInformationNumber13 | — |
+| AEI_INFORMATION_NUMBER14 | AeiInformationNumber14 | — |
+| AEI_INFORMATION_NUMBER15 | AeiInformationNumber15 | — |
+| AEI_INFORMATION_NUMBER16 | AeiInformationNumber16 | — |
+| AEI_INFORMATION_NUMBER17 | AeiInformationNumber17 | — |
+| AEI_INFORMATION_NUMBER18 | AeiInformationNumber18 | — |
+| AEI_INFORMATION_NUMBER19 | AeiInformationNumber19 | — |
+| AEI_INFORMATION_NUMBER2 | AeiInformationNumber2 | — |
+| AEI_INFORMATION_NUMBER20 | AeiInformationNumber20 | — |
+| AEI_INFORMATION_NUMBER3 | AeiInformationNumber3 | — |
+| AEI_INFORMATION_NUMBER4 | AeiInformationNumber4 | — |
+| AEI_INFORMATION_NUMBER5 | AeiInformationNumber5 | — |
+| AEI_INFORMATION_NUMBER6 | AeiInformationNumber6 | — |
+| AEI_INFORMATION_NUMBER7 | AeiInformationNumber7 | — |
+| AEI_INFORMATION_NUMBER8 | AeiInformationNumber8 | — |
+| AEI_INFORMATION_NUMBER9 | AeiInformationNumber9 | — |
+| ASSIGNMENT_EXTRA_INFO_ID | AssignmentExtraInfoId | ✅ |
+| ASSIGNMENT_ID | AssignmentId | ✅ |
+| BUSINESS_GROUP_ID | BusinessGroupId | ✅ |
+| CREATED_BY | CreatedBy | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| EFFECTIVE_END_DATE | EffectiveEndDate | ✅ |
+| EFFECTIVE_LATEST_CHANGE | EffectiveLatestChange | ✅ |
+| EFFECTIVE_SEQUENCE | EffectiveSequence | ✅ |
+| EFFECTIVE_START_DATE | EffectiveStartDate | ✅ |
+| INFORMATION_TYPE | InformationType | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | LastUpdatedBy | ✅ |
+| LEGISLATION_CODE | LegislationCode | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — PER_ASSIGNMENT_EXTRA_INFO_M](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/perassignmentextrainfom.html)

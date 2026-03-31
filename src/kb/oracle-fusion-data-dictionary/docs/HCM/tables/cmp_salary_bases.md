@@ -117,6 +117,128 @@ ORDER BY sb.ANNUALIZATION_FACTOR;
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[offersalarypvo|OfferSalaryPVO]] (HCM · BICC: 3/20)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ANNUALIZED_HOURS | SalaryBasesPEOAnnualizedHours | — |
+| ATTRIBUTE_CATEGORY | SalaryBasesPEOAttributeCategory | — |
+| BUSINESS_GROUP_ID | SalaryBasesPEOBusinessGroupId1 | — |
+| COMPONENT_USAGE | SalaryBasesPEOComponentUsage | — |
+| CREATED_BY | SalaryBasesPEOCreatedBy1 | — |
+| CREATION_DATE | SalaryBasesPEOCreationDate1 | — |
+| ELEMENT_TYPE_ID | SalaryBasesPEOElementTypeId | — |
+| GRADE_ANNUALIZATION_FACTOR | SalaryBasesPEOGradeAnnualizationFactor | — |
+| GRADE_RATE_BASIS_CODE | SalaryBasesPEOGradeRateBasisCode | — |
+| GRADE_RATE_ID | SalaryBasesPEOGradeRateId | — |
+| INPUT_VALUE_ID | SalaryBasesPEOInputValueId | — |
+| LAST_UPDATE_DATE | SalaryBasesPEOLastUpdateDate1 | ✅ |
+| LAST_UPDATE_LOGIN | SalaryBasesPEOLastUpdateLogin1 | — |
+| LAST_UPDATED_BY | SalaryBasesPEOLastUpdatedBy1 | — |
+| LEGAL_ENTITY_ID | SalaryBasesPEOLegalEntityId | — |
+| NAME | SalaryBasesPEOName | — |
+| OBJECT_VERSION_NUMBER | SalaryBasesPEOObjectVersionNumber1 | — |
+| SALARY_ANNUALIZATION_FACTOR | SalaryBasesPEOSalaryAnnualizationFactor | ✅ |
+| SALARY_BASIS_CODE | SalaryBasesPEOSalaryBasisCode | ✅ |
+| SALARY_BASIS_ID | SalaryBasesPEOSalaryBasisId1 | — |
+
+### [[salarybasespvo|SalaryBasesPVO]] (HCM · BICC: 2/29)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| AMOUNT_DECIMAL_PRECISION | SalaryBasesPEOAmountDecimalPrecision | — |
+| AMOUNT_ROUNDING_CODE | SalaryBasesPEOAmountRoundingCode | — |
+| ANNUAL_ROUNDING_CODE | SalaryBasesPEOAnnualRoundingCode | — |
+| ANNUALIZED_HOURS | SalaryBasesPEOAnnualizedHours | — |
+| ATTRIBUTE_CATEGORY | SalaryBasesPEOAttributeCategory | — |
+| BUSINESS_GROUP_ID | SalaryBasesPEOBusinessGroupId | — |
+| CALCULATION_MODE | CalculationMode | — |
+| CODE | SalaryBasesPEOCode | — |
+| COMPONENT_USAGE | SalaryBasesPEOComponentUsage | — |
+| CREATED_BY | SalaryBasesPEOCreatedBy | — |
+| CREATION_DATE | SalaryBasesPEOCreationDate | — |
+| ELEMENT_TYPE_ID | SalaryBasesPEOElementTypeId | — |
+| GRADE_ANNUALIZATION_FACTOR | SalaryBasesPEOGradeAnnualizationFactor | — |
+| GRADE_RATE_BASIS_CODE | SalaryBasesPEOGradeRateBasisCode | — |
+| GRADE_RATE_ID | SalaryBasesPEOGradeRateId | — |
+| INPUT_VALUE_ID | SalaryBasesPEOInputValueId | — |
+| LAST_UPDATE_DATE | SalaryBasesPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | SalaryBasesPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | SalaryBasesPEOLastUpdatedBy | — |
+| LEGAL_ENTITY_ID | SalaryBasesPEOLegalEntityId | — |
+| LEGISLATIVE_DATA_GROUP_ID | SalaryBasesPEOLegislativeDataGroupId | — |
+| NAME | SalaryBasesPEOName | — |
+| OBJECT_VERSION_NUMBER | SalaryBasesPEOObjectVersionNumber | — |
+| RANGE_ROUNDING_CODE | SalaryBasesPEORangeRoundingCode | — |
+| SALARY_ANNUALIZATION_FACTOR | SalaryBasesPEOSalaryAnnualizationFactor | — |
+| SALARY_BASIS_CODE | SalaryBasesPEOSalaryBasisCode | — |
+| SALARY_BASIS_ID | SalaryBasisId | ✅ |
+| SALARY_BASIS_TYPE | SalaryBasesPEOSalaryBasisType | — |
+| STATUS | SalaryBasesPEOStatus | — |
+
+### [[salarybasispvo|SalaryBasisPVO]] (GL · BICC: 18/19)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ANNUALIZED_HOURS | SalaryBasisPEOAnnualizedHours | ✅ |
+| BUSINESS_GROUP_ID | SalaryBasisPEOBusinessGroupId | ✅ |
+| COMPONENT_USAGE | SalaryBasisPEOComponentUsage | ✅ |
+| CREATED_BY | SalaryBasisPEOCreatedBy | ✅ |
+| CREATION_DATE | SalaryBasisPEOCreationDate | ✅ |
+| ELEMENT_TYPE_ID | SalaryBasisPEOElementTypeId | ✅ |
+| GRADE_ANNUALIZATION_FACTOR | SalaryBasisPEOGradeAnnualizationFactor | ✅ |
+| GRADE_RATE_BASIS_CODE | SalaryBasisPEOGradeRateBasisCode | ✅ |
+| GRADE_RATE_ID | SalaryBasisPEOGradeRateId | ✅ |
+| INPUT_VALUE_ID | SalaryBasisPEOInputValueId | ✅ |
+| LAST_UPDATE_DATE | SalaryBasisPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | SalaryBasisPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | SalaryBasisPEOLastUpdatedBy | ✅ |
+| LEGAL_ENTITY_ID | SalaryBasisPEOLegalEntityId | ✅ |
+| NAME | SalaryBasisPEOName | ✅ |
+| OBJECT_VERSION_NUMBER | SalaryBasisPEOObjectVersionNumber | ✅ |
+| SALARY_ANNUALIZATION_FACTOR | SalaryBasisPEOSalaryAnnualizationFactor | ✅ |
+| SALARY_BASIS_CODE | SalaryBasisPEOSalaryBasisCode | ✅ |
+| SALARY_BASIS_ID | SalaryBasisId | ✅ |
+
+### [[salarypvo|SalaryPVO]] (HCM · BICC: 23/30)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| AMOUNT_DECIMAL_PRECISION | SalaryBasesPEOAmountDecimalPrecision | ✅ |
+| AMOUNT_ROUNDING_CODE | SalaryBasesPEOAmountRoundingCode | ✅ |
+| ANNUAL_ROUNDING_CODE | SalaryBasesPEOAnnualRoundingCode | ✅ |
+| ANNUALIZED_HOURS | SalaryBasesPEOAnnualizedHours | ✅ |
+| ATTRIBUTE_CATEGORY | SalaryBasesPEOAttributeCategory | — |
+| BUSINESS_GROUP_ID | SalaryBasesPEOBusinessGroupId | — |
+| CALCULATION_MODE | SalaryBasesPEOCalculationMode | ✅ |
+| CODE | SalaryBasesPEOCode | ✅ |
+| COMPONENT_USAGE | SalaryBasesPEOComponentUsage | ✅ |
+| CREATED_BY | SalaryBasesPEOCreatedBy | ✅ |
+| CREATION_DATE | SalaryBasesPEOCreationDate | ✅ |
+| ELEMENT_TYPE_ID | SalaryBasesPEOElementTypeId | ✅ |
+| GRADE_ANNUALIZATION_FACTOR | SalaryBasesPEOGradeAnnualizationFactor | ✅ |
+| GRADE_RATE_BASIS_CODE | SalaryBasesPEOGradeRateBasisCode | ✅ |
+| GRADE_RATE_ID | SalaryBasesPEOGradeRateId | ✅ |
+| INPUT_VALUE_ID | SalaryBasesPEOInputValueId | — |
+| LAST_UPDATE_DATE | SalaryBasesPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | SalaryBasesPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | SalaryBasesPEOLastUpdatedBy | ✅ |
+| LEGAL_ENTITY_ID | SalaryBasesPEOLegalEntityId | ✅ |
+| LEGISLATIVE_DATA_GROUP_ID | SalaryBasesPEOLegislativeDataGroupId | ✅ |
+| NAME | SalaryBasesPEOName | — |
+| OBJECT_VERSION_NUMBER | SalaryBasesPEOObjectVersionNumber | — |
+| RANGE_ERROR_WARNING | SalaryBasesPEORangeErrorWarning | — |
+| RANGE_ROUNDING_CODE | SalaryBasesPEORangeRoundingCode | ✅ |
+| SALARY_ANNUALIZATION_FACTOR | SalaryBasesPEOSalaryAnnualizationFactor | ✅ |
+| SALARY_BASIS_CODE | SalaryBasesPEOSalaryBasisCode | ✅ |
+| SALARY_BASIS_ID | SalaryBasesPEOSalaryBasisId | ✅ |
+| SALARY_BASIS_TYPE | SalaryBasesPEOSalaryBasisType | ✅ |
+| STATUS | SalaryBasesPEOStatus | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — CMP_SALARY_BASES](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/cmpsalarybases.html)

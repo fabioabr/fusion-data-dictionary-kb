@@ -39,7 +39,6 @@ Tabela de traduções das definições de dados de exportação de cartão de po
 > [!note] Sufixo _TL
 > O sufixo `_TL` indica tabela de **traduções** — armazena textos traduzidos por idioma. Chave composta: PK da tabela `_B` + `LANGUAGE`.
 
-
 ---
 
 ## 🧠 Propósito de Negócio
@@ -105,6 +104,19 @@ WHERE  t.LANGUAGE = USERENV('LANG')
 - Tabela de traduções: não utilizar diretamente em relatórios; preferir a view `_VL` correspondente.
 - Chave composta: PK do registro base + LANGUAGE.
 - Área funcional: Time Card Export dentro do Oracle Fusion Cloud HCM.
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[tcdexportdatadefinitionpvo|TcdExportDataDefinitionPVO]] (GL · BICC: 2/4)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| DESCRIPTION | TcdExportDataDefTLPEODescription | ✅ |
+| LANGUAGE | TcdExportDataDefTLPEOLanguage | — |
+| NAME | TcdExportDataDefTLPEOName | ✅ |
+| TCD_EXP_DATA_DEF_ID | TcdExportDataDefTLPEOTcdExpDtDefId | — |
 
 ---
 

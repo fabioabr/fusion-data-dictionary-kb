@@ -38,7 +38,6 @@ updated_at: 2026-03-25
 
 Armazena os **codigos de lookup** (tabelas de referencia) do modulo Procurement. Listas de valores pre-definidos para campos codificados.
 
-
 ---
 
 ## 🧠 Propósito de Negócio
@@ -95,7 +94,6 @@ WHERE  LOOKUP_TYPE = :p_type AND ENABLED_FLAG = 'Y'
   AND  (INACTIVE_DATE IS NULL OR INACTIVE_DATE > SYSDATE);
 ```
 
-
 ---
 
 ## 🔒 Observações
@@ -103,6 +101,190 @@ WHERE  LOOKUP_TYPE = :p_type AND ENABLED_FLAG = 'Y'
 - PK composta: `LOOKUP_TYPE` + `LOOKUP_CODE`.
 - Tipos comuns: AUTHORIZATION STATUS, DOCUMENT TYPE, CLOSED CODE.
 - Valores seeded nao devem ser alterados.
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[agreementstatuspurchasinglookuppvo|AgreementStatusPurchasingLookupPVO]] (PO · BICC: 5/15)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | CreatedBy | — |
+| CREATION_DATE | PoLookupCreationDate | — |
+| DESCRIPTION | PoLookupDescription | ✅ |
+| DISPLAYED_FIELD | PoLookupDisplayedField | ✅ |
+| ENABLED_FLAG | PoLookupEnabledFlag | — |
+| END_DATE_ACTIVE | PoLookupEndDateActive | — |
+| LAST_UPDATE_DATE | PoLookupLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | PoLookupLastUpdateLogin | — |
+| LAST_UPDATED_BY | PoLookupLastUpdatedBy | — |
+| LOOKUP_CODE | LookupCode | ✅ |
+| LOOKUP_TYPE | LookupType | ✅ |
+| PROGRAM_APPLICATION_ID | PoLookupProgramApplicationId | — |
+| PROGRAM_ID | PoLookupProgramId | — |
+| PROGRAM_UPDATE_DATE | PoLookupProgramUpdateDate | — |
+| REQUEST_ID | PoLookupRequestId | — |
+
+### [[contractfulagrlookup|ContractFulAgrLookup]] (OTHER · BICC: 15/15)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | CreatedBy | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| DESCRIPTION | Description | ✅ |
+| DISPLAYED_FIELD | DisplayedField | ✅ |
+| ENABLED_FLAG | EnabledFlag | ✅ |
+| END_DATE_ACTIVE | EndDateActive | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | LastUpdatedBy | ✅ |
+| LOOKUP_CODE | LookupCode | ✅ |
+| LOOKUP_TYPE | LookupType | ✅ |
+| PROGRAM_APPLICATION_ID | ProgramApplicationId | ✅ |
+| PROGRAM_ID | ProgramId | ✅ |
+| PROGRAM_UPDATE_DATE | ProgramUpdateDate | ✅ |
+| REQUEST_ID | RequestId | ✅ |
+
+### [[contractfullinelookup|ContractFulLineLookup]] (OTHER · BICC: 15/15)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | CreatedBy | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| DESCRIPTION | Description | ✅ |
+| DISPLAYED_FIELD | DisplayedField | ✅ |
+| ENABLED_FLAG | EnabledFlag | ✅ |
+| END_DATE_ACTIVE | EndDateActive | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | LastUpdatedBy | ✅ |
+| LOOKUP_CODE | LookupCode | ✅ |
+| LOOKUP_TYPE | LookupType | ✅ |
+| PROGRAM_APPLICATION_ID | ProgramApplicationId | ✅ |
+| PROGRAM_ID | ProgramId | ✅ |
+| PROGRAM_UPDATE_DATE | ProgramUpdateDate | ✅ |
+| REQUEST_ID | RequestId | ✅ |
+
+### [[contractfullookup|ContractFulLookup]] (OTHER · BICC: 4/15)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | CreatedBy | — |
+| CREATION_DATE | CreationDate | — |
+| DESCRIPTION | Description | ✅ |
+| DISPLAYED_FIELD | DisplayedField | — |
+| ENABLED_FLAG | EnabledFlag | — |
+| END_DATE_ACTIVE | EndDateActive | — |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | — |
+| LAST_UPDATED_BY | LastUpdatedBy | — |
+| LOOKUP_CODE | LookupCode | ✅ |
+| LOOKUP_TYPE | LookupType | ✅ |
+| PROGRAM_APPLICATION_ID | ProgramApplicationId | — |
+| PROGRAM_ID | ProgramId | — |
+| PROGRAM_UPDATE_DATE | ProgramUpdateDate | — |
+| REQUEST_ID | RequestId | — |
+
+### [[destinationtypepurchasinglookuppvo|DestinationTypePurchasingLookupPVO]] (PO · BICC: 6/15)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | CreatedBy | — |
+| CREATION_DATE | PoLookupCreationDate | — |
+| DESCRIPTION | PoLookupDescription | ✅ |
+| DISPLAYED_FIELD | PoLookupDisplayedField | ✅ |
+| ENABLED_FLAG | PoLookupEnabledFlag | — |
+| END_DATE_ACTIVE | PoLookupEndDateActive | ✅ |
+| LAST_UPDATE_DATE | PoLookupLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | PoLookupLastUpdateLogin | — |
+| LAST_UPDATED_BY | PoLookupLastUpdatedBy | — |
+| LOOKUP_CODE | LookupCode | ✅ |
+| LOOKUP_TYPE | LookupType | ✅ |
+| PROGRAM_APPLICATION_ID | PoLookupProgramApplicationId | — |
+| PROGRAM_ID | PoLookupProgramId | — |
+| PROGRAM_UPDATE_DATE | PoLookupProgramUpdateDate | — |
+| REQUEST_ID | PoLookupRequestId | — |
+
+### [[orderstatuspurchasinglookuppvo|OrderStatusPurchasingLookupPVO]] (PO · BICC: 5/15)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | CreatedBy | — |
+| CREATION_DATE | PoLookupCreationDate | — |
+| DESCRIPTION | PoLookupDescription | ✅ |
+| DISPLAYED_FIELD | PoLookupDisplayedField | ✅ |
+| ENABLED_FLAG | PoLookupEnabledFlag | — |
+| END_DATE_ACTIVE | PoLookupEndDateActive | — |
+| LAST_UPDATE_DATE | PoLookupLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | PoLookupLastUpdateLogin | — |
+| LAST_UPDATED_BY | PoLookupLastUpdatedBy | — |
+| LOOKUP_CODE | LookupCode | ✅ |
+| LOOKUP_TYPE | LookupType | ✅ |
+| PROGRAM_APPLICATION_ID | PoLookupProgramApplicationId | — |
+| PROGRAM_ID | PoLookupProgramId | — |
+| PROGRAM_UPDATE_DATE | PoLookupProgramUpdateDate | — |
+| REQUEST_ID | PoLookupRequestId | — |
+
+### [[payoncodepurchasinglookuppvo|PayOnCodePurchasingLookupPVO]] (PO · BICC: 5/15)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | CreatedBy | — |
+| CREATION_DATE | PoLookupCreationDate | — |
+| DESCRIPTION | PoLookupDescription | ✅ |
+| DISPLAYED_FIELD | PoLookupDisplayedField | — |
+| ENABLED_FLAG | PoLookupEnabledFlag | — |
+| END_DATE_ACTIVE | PoLookupEndDateActive | ✅ |
+| LAST_UPDATE_DATE | PoLookupLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | PoLookupLastUpdateLogin | — |
+| LAST_UPDATED_BY | PoLookupLastUpdatedBy | — |
+| LOOKUP_CODE | LookupCode | ✅ |
+| LOOKUP_TYPE | LookupType | ✅ |
+| PROGRAM_APPLICATION_ID | PoLookupProgramApplicationId | — |
+| PROGRAM_ID | PoLookupProgramId | — |
+| PROGRAM_UPDATE_DATE | PoLookupProgramUpdateDate | — |
+| REQUEST_ID | PoLookupRequestId | — |
+
+### [[poinvmatchoptionpurchasinglookuppvo|PoInvMatchOptionPurchasingLookupPVO]] (PO · BICC: 5/15)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | CreatedBy | — |
+| CREATION_DATE | PoLookupCreationDate | — |
+| DESCRIPTION | PoLookupDescription | ✅ |
+| DISPLAYED_FIELD | PoLookupDisplayedField | — |
+| ENABLED_FLAG | PoLookupEnabledFlag | — |
+| END_DATE_ACTIVE | PoLookupEndDateActive | ✅ |
+| LAST_UPDATE_DATE | PoLookupLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | PoLookupLastUpdateLogin | — |
+| LAST_UPDATED_BY | PoLookupLastUpdatedBy | — |
+| LOOKUP_CODE | LookupCode | ✅ |
+| LOOKUP_TYPE | LookupType | ✅ |
+| PROGRAM_APPLICATION_ID | PoLookupProgramApplicationId | — |
+| PROGRAM_ID | PoLookupProgramId | — |
+| PROGRAM_UPDATE_DATE | PoLookupProgramUpdateDate | — |
+| REQUEST_ID | PoLookupRequestId | — |
+
+### [[rolepurchasinglookuppvo|RolePurchasingLookupPVO]] (PO · BICC: 4/15)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | CreatedBy | — |
+| CREATION_DATE | PoLookupCreationDate | — |
+| DESCRIPTION | PoLookupDescription | — |
+| DISPLAYED_FIELD | PoLookupDisplayedField | ✅ |
+| ENABLED_FLAG | PoLookupEnabledFlag | — |
+| END_DATE_ACTIVE | PoLookupEndDateActive | — |
+| LAST_UPDATE_DATE | PoLookupLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | PoLookupLastUpdateLogin | — |
+| LAST_UPDATED_BY | PoLookupLastUpdatedBy | — |
+| LOOKUP_CODE | LookupCode | ✅ |
+| LOOKUP_TYPE | LookupType | ✅ |
+| PROGRAM_APPLICATION_ID | PoLookupProgramApplicationId | — |
+| PROGRAM_ID | PoLookupProgramId | — |
+| PROGRAM_UPDATE_DATE | PoLookupProgramUpdateDate | — |
+| REQUEST_ID | PoLookupRequestId | — |
 
 ---
 

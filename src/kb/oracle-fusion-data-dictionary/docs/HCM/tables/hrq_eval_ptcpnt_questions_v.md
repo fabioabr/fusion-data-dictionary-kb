@@ -93,6 +93,27 @@ WHERE  eq.QUESTIONNAIRE_ID = :p_id;
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[questionnairequestionpvo|QuestionnaireQuestionPVO]] (HCM · BICC: 4/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | EvalParticipantQuestionPEOBusinessGroupId | ✅ |
+| EVAL_ROLE_ID | EvalParticipantQuestionPEOEvalRoleId | — |
+| EVAL_SECTION_ID | EvalParticipantQuestionPEOEvalSectionId | — |
+| PARTICIPANT_ID | EvalParticipantQuestionPEOParticipantId | ✅ |
+| PARTICIPANT_TYPE | EvalParticipantQuestionPEOParticipantType | — |
+| PTCPNT_PERSON_ID | EvalParticipantQuestionPEOPtcpntPersonId | — |
+| QSTNR_QUESTION_ID | EvalParticipantQuestionPEOQstnrQuestionId | ✅ |
+| QSTNR_SECTION_ID | EvalParticipantQuestionPEOQstnrSectionId | — |
+| QUESTIONNAIRE_ID | EvalParticipantQuestionPEOQuestionnaireId | — |
+| SUBJECT_CODE | EvalParticipantQuestionPEOSubjectCode | — |
+| SUBJECT_ID | EvalParticipantQuestionPEOSubjectId | ✅ |
+| SUBSCRIBER_ID | EvalParticipantQuestionPEOSubscriberId | — |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Fusion HCM Tables and Views](https://docs.oracle.com/en/cloud/saas/human-resources/25a/)

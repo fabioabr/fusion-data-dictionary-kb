@@ -121,6 +121,56 @@ ORDER BY ar.CREATION_DATE DESC;
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[supplierregistrationaddressrequestpvo|SupplierRegistrationAddressRequestPVO]] (PO · BICC: 21/41)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ADDRESS_LINE1 | SupplierRegAddressRequestAddressLine1 | ✅ |
+| ADDRESS_LINE2 | SupplierRegAddressRequestAddressLine2 | ✅ |
+| ADDRESS_LINE3 | SupplierRegAddressRequestAddressLine3 | ✅ |
+| ADDRESS_LINE4 | SupplierRegAddressRequestAddressLine4 | ✅ |
+| ADDRESS_LINES_PHONETIC | SupplierRegAddressRequestAddressLinesPhonetic | — |
+| ADDRESS_REQUEST_ID | AddressRequestId | ✅ |
+| BUILDING | SupplierRegAddressRequestBuilding | — |
+| CITY | SupplierRegAddressRequestCity | ✅ |
+| COUNTRY | SupplierRegAddressRequestCountry | — |
+| COUNTY | SupplierRegAddressRequestCounty | ✅ |
+| CREATED_BY | SupplierRegAddressRequestCreatedBy | — |
+| CREATION_DATE | SupplierRegAddressRequestCreationDate | — |
+| EMAIL_ADDRESS | SupplierRegAddressRequestEmailAddress | ✅ |
+| END_DATE_ACTIVE | SupplierRegAddressRequestEndDateActive | — |
+| FAX_AREA_CODE | SupplierRegAddressRequestFaxAreaCode | ✅ |
+| FAX_COUNTRY_CODE | SupplierRegAddressRequestFaxCountryCode | ✅ |
+| FAX_NUMBER | SupplierRegAddressRequestFaxNumber | ✅ |
+| FLOOR_NUMBER | SupplierRegAddressRequestFloorNumber | — |
+| HAS_BACKING_DOC | SupplierRegAddressRequestHasBackingDoc | — |
+| LAST_UPDATE_DATE | SupplierRegAddressRequestLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | SupplierRegAddressRequestLastUpdateLogin | — |
+| LAST_UPDATED_BY | SupplierRegAddressRequestLastUpdatedBy | — |
+| MAPPING_ID | SupplierRegAddressRequestMappingId | — |
+| OBJECT_VERSION_NUMBER | SupplierRegAddressRequestObjectVersionNumber | — |
+| PARTY_SITE_ID | SupplierRegAddressRequestPartySiteId | — |
+| PARTY_SITE_NAME | SupplierRegAddressRequestPartySiteName | ✅ |
+| PAY_FLAG | SupplierRegAddressRequestPayFlag | ✅ |
+| PHONE_AREA_CODE | SupplierRegAddressRequestPhoneAreaCode | ✅ |
+| PHONE_COUNTRY_CODE | SupplierRegAddressRequestPhoneCountryCode | ✅ |
+| PHONE_EXTENSION | SupplierRegAddressRequestPhoneExtension | — |
+| PHONE_NUMBER | SupplierRegAddressRequestPhoneNumber | ✅ |
+| POSTAL_CODE | SupplierRegAddressRequestPostalCode | ✅ |
+| POSTAL_PLUS4_CODE | SupplierRegAddressRequestPostalPlus4Code | — |
+| PRIMARY_PAY_FLAG | SupplierRegAddressRequestPrimaryPayFlag | — |
+| PROVINCE | SupplierRegAddressRequestProvince | — |
+| PUR_FLAG | SupplierRegAddressRequestPurFlag | ✅ |
+| REQUEST_STATUS | SupplierRegAddressRequestRequestStatus | — |
+| REQUEST_TYPE | SupplierRegAddressRequestRequestType | — |
+| REQUESTED_START_DATE | SupplierRegAddressRequestRequestedStartDate | — |
+| RFQ_FLAG | SupplierRegAddressRequestRfqFlag | ✅ |
+| STATE | SupplierRegAddressRequestState | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — POZ Tables](https://docs.oracle.com/en/cloud/saas/procurement/25a/oedmf/poztables.html)

@@ -111,3 +111,45 @@ WHERE  cr.CANDIDATE_ID = :p_candidate_id;
 
 - [Oracle Docs — IRC_BC_CAND_RESULTS](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/ircbccandresults.html)
 - [[hcm-module-data-dictionary]] — Dossie do modulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[screeningresultviewallpvo|ScreeningResultViewAllPVO]] (AP · BICC: 13/14)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACCOUNT_ID | ScreeningResultPEOAccountId | ✅ |
+| BC_ERROR_DESC | ScreeningResultPEOBcErrorDesc | ✅ |
+| BC_STATUS_CODE | ScreeningResultPEOBcStatusCode | ✅ |
+| CREATED_BY | ScreeningResultPEOCreatedBy | ✅ |
+| CREATION_DATE | ScreeningResultPEOCreationDate | ✅ |
+| LAST_UPDATE_DATE | ScreeningResultPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ScreeningResultPEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | ScreeningResultPEOLastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | ScreeningResultPEOObjectVersionNumber | — |
+| PROVISIONING_ID | ScreeningResultPEOProvisioningId | ✅ |
+| REQUEST_DATE | ScreeningResultPEORequestDate | ✅ |
+| REQUESTED_BY | ScreeningResultPEORequestedBy | ✅ |
+| RESULT_ID | ScreeningResultPEOResultId | ✅ |
+| SUBMISSION_ID | ScreeningResultPEOSubmissionId | ✅ |
+
+### [[screeningviewallpvo|ScreeningViewAllPVO]] (AP · BICC: 13/14)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACCOUNT_ID | ScreeningResultPEOAccountId | ✅ |
+| BC_ERROR_DESC | ScreeningResultPEOBcErrorDesc | ✅ |
+| BC_STATUS_CODE | ScreeningResultPEOBcStatusCode | ✅ |
+| CREATED_BY | ScreeningResultPEOCreatedBy | ✅ |
+| CREATION_DATE | ScreeningResultPEOCreationDate | ✅ |
+| LAST_UPDATE_DATE | ScreeningResultPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ScreeningResultPEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | ScreeningResultPEOLastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | ScreeningResultPEOObjectVersionNumber | — |
+| PROVISIONING_ID | ScreeningResultPEOProvisioningId | ✅ |
+| REQUEST_DATE | ScreeningResultPEORequestDate | ✅ |
+| REQUESTED_BY | ScreeningResultPEORequestedBy | ✅ |
+| RESULT_ID | ScreeningResultPEOResultId | ✅ |
+| SUBMISSION_ID | ScreeningResultPEOSubmissionId | ✅ |

@@ -113,6 +113,31 @@ WHERE  t.LEGISLATION_CODE = 'BR';
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[usertablepvo|UserTablePVO]] (GL · BICC: 16/16)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BASE_USER_TABLE_NAME | UserTablePEOBaseUserTableName | ✅ |
+| CREATED_BY | UserTablePEOCreatedBy | ✅ |
+| CREATION_DATE | UserTablePEOCreationDate | ✅ |
+| ENTERPRISE_ID | UserTablePEOEnterpriseId | ✅ |
+| LAST_UPDATE_DATE | UserTablePEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | UserTablePEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | UserTablePEOLastUpdatedBy | ✅ |
+| LEGISLATION_CODE | UserTablePEOLegislationCode | ✅ |
+| LEGISLATIVE_DATA_GROUP_ID | UserTablePEOLegislativeDataGroupId | ✅ |
+| MODULE_ID | UserTablePEOModuleId | ✅ |
+| OBJECT_VERSION_NUMBER | UserTablePEOObjectVersionNumber | ✅ |
+| RANGE_OR_MATCH | UserTablePEORangeOrMatch | ✅ |
+| USER_KEY_UNITS | UserTablePEOUserKeyUnits | ✅ |
+| USER_ROW_TITLE | UserTablePEOUserRowTitle | ✅ |
+| USER_TABLE_ID | UserTablePEOUserTableId | ✅ |
+| USER_TABLE_NAME | UserTablePEOUserTableName | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — FF_USER_TABLES_VL](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/ffusertablesvl.html)

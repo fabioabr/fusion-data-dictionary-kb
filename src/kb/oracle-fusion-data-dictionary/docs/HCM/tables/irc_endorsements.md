@@ -104,3 +104,24 @@ WHERE  e.CANDIDATE_ID = :p_candidate_id AND e.ENDORSEMENT_STATUS = 'RECEIVED';
 
 - [Oracle Docs -- IRC_ENDORSEMENTS](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/ircendorsements.html)
 - [[hcm-module-data-dictionary]] -- Dossie do modulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[endorsementspvo|EndorsementsPVO]] (PO · BICC: 12/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CANDIDATE_PERSON_ID | CandidatePersonId | ✅ |
+| CREATED_BY | CreatedBy | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| ENDORSEMENT_ID | EndorsementId | ✅ |
+| ENDORSER_PERSON_ID | EndorserPersonId | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | LastUpdatedBy | ✅ |
+| NOTES | Notes | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | ✅ |
+| RATING | Rating | ✅ |
+| REQUISITION_ID | RequisitionId | ✅ |

@@ -39,7 +39,6 @@ View que lista as exceções de tempo permitidas conforme políticas configurada
 > [!note] Sufixo _V
 > O sufixo `_V` indica **view** — objeto somente leitura que consolida dados de uma ou mais tabelas para facilitar consultas.
 
-
 ---
 
 ## 🧠 Propósito de Negócio
@@ -101,6 +100,47 @@ WHERE  t.APPROVED_FLAG = 'Y'
 
 - View somente leitura: não permite INSERT, UPDATE ou DELETE direto.
 - Área funcional: Time Management dentro do Oracle Fusion Cloud HCM.
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[timemessagepvo|TimeMessagePVO]] (HCM · BICC: 17/32)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ALLOW_EXCEPTION | TimeMessagePEOAllowException | — |
+| ALLOW_EXCEPTION_FLAG | TimeMessagePEOAllowExceptionFlag | ✅ |
+| ALLOWEX_CREATED_BY | TimeMessagePEOAllowExCreatedBy | ✅ |
+| ALLOWEX_CREATION_DATE | TimeMessagePEOAllowExCreationDate | ✅ |
+| ALLOWEX_LAST_UPDATE_DATE | TimeMessagePEOAllowExLastUpdateDate | ✅ |
+| ALLOWEX_LAST_UPDATE_LOGIN | TimeMessagePEOAllowExLastUpdateLogin | ✅ |
+| ALLOWEX_LAST_UPDATED_BY | TimeMessagePEOAllowExLastUpdatedBy | ✅ |
+| APPLICATION_ID | TimeMessagePEOApplicationId | — |
+| APPLICATION_SHORT_NAME | TimeMessagePEOApplicationShortName | — |
+| CREATED_BY | TimeMessagePEOCreatedBy | ✅ |
+| CREATION_DATE | TimeMessagePEOCreationDate | ✅ |
+| DATE_FROM | TimeMessagePEODateFrom | ✅ |
+| DATE_TO | TimeMessagePEODateTo | ✅ |
+| ENTERPRISE_ID | TimeMessagePEOEnterpriseId | — |
+| LAST_UPDATE_DATE | TimeMessagePEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | TimeMessagePEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | TimeMessagePEOLastUpdatedBy | ✅ |
+| MESSAGE_FIELD | TimeMessagePEOMessageField | — |
+| MESSAGE_LEVEL | TimeMessagePEOMessageLevel | ✅ |
+| MESSAGE_NAME | TimeMessagePEOMessageName | ✅ |
+| OBJECT_VERSION_NUMBER | TimeMessagePEOObjectVersionNumber | — |
+| TM_BLDG_BLK_ID | TimeMessagePEOTmBldgBlkId | — |
+| TM_BLDG_BLK_VERSION | TimeMessagePEOTmBldgBlkVersion | — |
+| TM_EVENT_ID | TimeMessagePEOTmEventId | — |
+| TM_REC_GRP_ID | TimeMessagePEOTmRecGrpId | — |
+| TM_REC_GRP_VERSION | TimeMessagePEOTmRecGrpVersion | — |
+| TM_REC_ID | TimeMessagePEOTmRecId | — |
+| TM_REC_VERSION | TimeMessagePEOTmRecVersion | — |
+| TM_REP_ALLOW_EXPS_ID | TimeMessagePEOTmRepAllowExpsId | ✅ |
+| TM_REP_ATRB_USAGE_ID | TimeMessagePEOTmRepAtrbUsageId | — |
+| TM_REP_MSGS_ID | TimeMessagePEOTmRepMsgsId | ✅ |
+| TRN_ID | TimeMessagePEOTrnId | — |
 
 ---
 

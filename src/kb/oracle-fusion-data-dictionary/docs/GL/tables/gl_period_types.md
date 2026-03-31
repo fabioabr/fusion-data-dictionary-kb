@@ -127,6 +127,38 @@ WHERE  pt.PERIOD_TYPE = :p_period_type;
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[accountingperiodtypeextractpvo|AccountingPeriodTypeExtractPVO]] (OTHER · BICC: 12/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | GlPeriodTypesCreatedBy | ✅ |
+| CREATION_DATE | GlPeriodTypesCreationDate | ✅ |
+| DESCRIPTION | GlPeriodTypesDescription | ✅ |
+| LAST_UPDATE_DATE | GlPeriodTypesLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | GlPeriodTypesLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | GlPeriodTypesLastUpdatedBy | ✅ |
+| NUMBER_PER_FISCAL_YEAR | GlPeriodTypesNumberPerFiscalYear | ✅ |
+| OBJECT_VERSION_NUMBER | GlPeriodTypesObjectVersionNumber | ✅ |
+| PERIOD_TYPE | GlPeriodTypesPeriodType | ✅ |
+| PERIOD_TYPE_ID | GlPeriodTypesPeriodTypeId | ✅ |
+| USER_PERIOD_TYPE | GlPeriodTypesUserPeriodType | ✅ |
+| YEAR_TYPE_IN_NAME | GlPeriodTypesYearTypeInName | ✅ |
+
+### [[ledgerpvo|LedgerPVO]] (GL)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| DESCRIPTION | AcctPeriodTypeDescription | — |
+| NUMBER_PER_FISCAL_YEAR | AcctPeriodTypeNumberPerFiscalYear | — |
+| PERIOD_TYPE | AcctPeriodTypePeriodType | — |
+| PERIOD_TYPE_ID | AcctPeriodTypePeriodTypeId | — |
+| USER_PERIOD_TYPE | AcctPeriodTypeUserPeriodType | — |
+| YEAR_TYPE_IN_NAME | AcctPeriodTypeYearTypeInName | — |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — GL_PERIOD_TYPES](https://docs.oracle.com/en/cloud/saas/financials/25a/oedmf/glperiodtypes-25792.html)

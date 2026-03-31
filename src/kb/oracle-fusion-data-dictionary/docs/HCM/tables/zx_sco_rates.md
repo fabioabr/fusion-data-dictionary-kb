@@ -92,3 +92,148 @@ updated_at: 2026-03-26
 ## 📎 Uso Típico
 
 (a ser preenchido na etapa 03)
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[miscreceiptdistributionpvo|MiscReceiptDistributionPVO]] (AR · BICC: 1/42)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTIVE_FLAG | TaxRtScoActiveFlag | — |
+| ADJ_FOR_ADHOC_AMT_CODE | TaxRtScoAdjForAdhocAmtCode | — |
+| ALLOW_ADHOC_TAX_RATE_FLAG | TaxRtScoAllowAdhocTaxRateFlag | — |
+| ALLOW_EXCEPTIONS_FLAG | TaxRtScoAllowExceptionsFlag | — |
+| ALLOW_EXEMPTIONS_FLAG | TaxRtScoAllowExemptionsFlag | — |
+| DEF_REC_SETTLEMENT_OPTION_CODE | TaxRtScoDefRecSettlementOptionCode | — |
+| DEFAULT_FLG_EFFECTIVE_FROM | TaxRtScoDefaultFlgEffectiveFrom | — |
+| DEFAULT_FLG_EFFECTIVE_TO | TaxRtScoDefaultFlgEffectiveTo | — |
+| DEFAULT_RATE_FLAG | TaxRtScoDefaultRateFlag | — |
+| DEFAULT_REC_RATE_CODE | TaxRtScoDefaultRecRateCode | — |
+| DEFAULT_REC_TYPE_CODE | TaxRtScoDefaultRecTypeCode | — |
+| DESCRIPTION | TaxRtScoDescription | — |
+| EFFECTIVE_FROM | TaxRtScoEffectiveFrom | — |
+| EFFECTIVE_TO | TaxRtScoEffectiveTo | — |
+| INCLUSIVE_TAX_FLAG | TaxRtScoInclusiveTaxFlag | — |
+| OBJECT_VERSION_NUMBER | TaxRtScoObjectVersionNumber | — |
+| OFFSET_STATUS_CODE | TaxRtScoOffsetStatusCode | — |
+| OFFSET_TAX | TaxRtScoOffsetTax | — |
+| OFFSET_TAX_RATE_CODE | TaxRtScoOffsetTaxRateCode | — |
+| PERCENTAGE_RATE | TaxRtScoPercentageRate | — |
+| PROGRAM_APP_NAME | TaxRtScoProgramAppName | — |
+| PROGRAM_NAME | TaxRtScoProgramName | — |
+| QUANTITY_RATE | TaxRtScoQuantityRate | — |
+| RATE_TYPE_CODE | TaxRtScoRateTypeCode | — |
+| RECORD_TYPE_CODE | TaxRtScoRecordTypeCode | — |
+| RECOVERY_RULE_CODE | TaxRtScoRecoveryRuleCode | — |
+| RECOVERY_TYPE_CODE | TaxRtScoRecoveryTypeCode | — |
+| SCHEDULE_BASED_RATE_FLAG | TaxRtScoScheduleBasedRateFlag | — |
+| SDEFF_FROM | TaxRtScoSdeffFrom | — |
+| SDEFF_TO | TaxRtScoSdeffTo | — |
+| TAX | TaxRtScoTax | — |
+| TAX_CLASS | TaxRtScoTaxClass | — |
+| TAX_INCLUSIVE_OVERRIDE_FLAG | TaxRtScoTaxInclusiveOverrideFlag | — |
+| TAX_JURISDICTION_CODE | TaxRtScoTaxJurisdictionCode | — |
+| TAX_RATE_CODE | TaxRtScoTaxRateCode | — |
+| TAX_RATE_ID | TaxRtScoTaxRateId | — |
+| TAX_RATE_NAME | TaxRtScoTaxRateName | ✅ |
+| TAX_REGIME_CODE | TaxRtScoTaxRegimeCode | — |
+| TAX_STATUS_CODE | TaxRtScoTaxStatusCode | — |
+| TAXABLE_BASIS_FORMULA_CODE | TaxRtScoTaxableBasisFormulaCode | — |
+| UOM_CODE | TaxRtScoUomCode | — |
+| VAT_TRANSACTION_TYPE_CODE | TaxRtScoVatTransactionTypeCode | — |
+
+### [[receiptapplicationpvo|ReceiptApplicationPVO]] (AR)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTIVE_FLAG | TaxRtScoActiveFlag | — |
+| ADJ_FOR_ADHOC_AMT_CODE | TaxRtScoAdjForAdhocAmtCode | — |
+| ALLOW_ADHOC_TAX_RATE_FLAG | TaxRtScoAllowAdhocTaxRateFlag | — |
+| ALLOW_EXCEPTIONS_FLAG | TaxRtScoAllowExceptionsFlag | — |
+| ALLOW_EXEMPTIONS_FLAG | TaxRtScoAllowExemptionsFlag | — |
+| DEF_REC_SETTLEMENT_OPTION_CODE | TaxRtScoDefRecSettlementOptionCode | — |
+| DEFAULT_FLG_EFFECTIVE_FROM | TaxRtScoDefaultFlgEffectiveFrom | — |
+| DEFAULT_FLG_EFFECTIVE_TO | TaxRtScoDefaultFlgEffectiveTo | — |
+| DEFAULT_RATE_FLAG | TaxRtScoDefaultRateFlag | — |
+| DEFAULT_REC_RATE_CODE | TaxRtScoDefaultRecRateCode | — |
+| DEFAULT_REC_TYPE_CODE | TaxRtScoDefaultRecTypeCode | — |
+| DESCRIPTION | TaxRtScoDescription | — |
+| EFFECTIVE_FROM | TaxRtScoEffectiveFrom | — |
+| EFFECTIVE_TO | TaxRtScoEffectiveTo | — |
+| INCLUSIVE_TAX_FLAG | TaxRtScoInclusiveTaxFlag | — |
+| OBJECT_VERSION_NUMBER | TaxRtScoObjectVersionNumber | — |
+| OFFSET_STATUS_CODE | TaxRtScoOffsetStatusCode | — |
+| OFFSET_TAX | TaxRtScoOffsetTax | — |
+| OFFSET_TAX_RATE_CODE | TaxRtScoOffsetTaxRateCode | — |
+| PERCENTAGE_RATE | TaxRtScoPercentageRate | — |
+| PROGRAM_APP_NAME | TaxRtScoProgramAppName | — |
+| PROGRAM_NAME | TaxRtScoProgramName | — |
+| QUANTITY_RATE | TaxRtScoQuantityRate | — |
+| RATE_TYPE_CODE | TaxRtScoRateTypeCode | — |
+| RECORD_TYPE_CODE | TaxRtScoRecordTypeCode | — |
+| RECOVERY_RULE_CODE | TaxRtScoRecoveryRuleCode | — |
+| RECOVERY_TYPE_CODE | TaxRtScoRecoveryTypeCode | — |
+| SCHEDULE_BASED_RATE_FLAG | TaxRtScoScheduleBasedRateFlag | — |
+| SDEFF_FROM | TaxRtScoSdeffFrom | — |
+| SDEFF_TO | TaxRtScoSdeffTo | — |
+| TAX | TaxRtScoTax | — |
+| TAX_CLASS | TaxRtScoTaxClass | — |
+| TAX_INCLUSIVE_OVERRIDE_FLAG | TaxRtScoTaxInclusiveOverrideFlag | — |
+| TAX_JURISDICTION_CODE | TaxRtScoTaxJurisdictionCode | — |
+| TAX_RATE_CODE | TaxRtScoTaxRateCode | — |
+| TAX_RATE_ID | TaxRtScoTaxRateId | — |
+| TAX_RATE_NAME | TaxRtScoTaxRateName | — |
+| TAX_REGIME_CODE | TaxRtScoTaxRegimeCode | — |
+| TAX_STATUS_CODE | TaxRtScoTaxStatusCode | — |
+| TAXABLE_BASIS_FORMULA_CODE | TaxRtScoTaxableBasisFormulaCode | — |
+| UOM_CODE | TaxRtScoUomCode | — |
+| VAT_TRANSACTION_TYPE_CODE | TaxRtScoVatTransactionTypeCode | — |
+
+### [[receiptheaderpvo|ReceiptHeaderPVO]] (AR · BICC: 1/42)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTIVE_FLAG | TaxRtScoActiveFlag | — |
+| ADJ_FOR_ADHOC_AMT_CODE | TaxRtScoAdjForAdhocAmtCode | — |
+| ALLOW_ADHOC_TAX_RATE_FLAG | TaxRtScoAllowAdhocTaxRateFlag | — |
+| ALLOW_EXCEPTIONS_FLAG | TaxRtScoAllowExceptionsFlag | — |
+| ALLOW_EXEMPTIONS_FLAG | TaxRtScoAllowExemptionsFlag | — |
+| DEF_REC_SETTLEMENT_OPTION_CODE | TaxRtScoDefRecSettlementOptionCode | — |
+| DEFAULT_FLG_EFFECTIVE_FROM | TaxRtScoDefaultFlgEffectiveFrom | — |
+| DEFAULT_FLG_EFFECTIVE_TO | TaxRtScoDefaultFlgEffectiveTo | — |
+| DEFAULT_RATE_FLAG | TaxRtScoDefaultRateFlag | — |
+| DEFAULT_REC_RATE_CODE | TaxRtScoDefaultRecRateCode | — |
+| DEFAULT_REC_TYPE_CODE | TaxRtScoDefaultRecTypeCode | — |
+| DESCRIPTION | TaxRtScoDescription | — |
+| EFFECTIVE_FROM | TaxRtScoEffectiveFrom | — |
+| EFFECTIVE_TO | TaxRtScoEffectiveTo | — |
+| INCLUSIVE_TAX_FLAG | TaxRtScoInclusiveTaxFlag | — |
+| OBJECT_VERSION_NUMBER | TaxRtScoObjectVersionNumber | — |
+| OFFSET_STATUS_CODE | TaxRtScoOffsetStatusCode | — |
+| OFFSET_TAX | TaxRtScoOffsetTax | — |
+| OFFSET_TAX_RATE_CODE | TaxRtScoOffsetTaxRateCode | — |
+| PERCENTAGE_RATE | TaxRtScoPercentageRate | — |
+| PROGRAM_APP_NAME | TaxRtScoProgramAppName | — |
+| PROGRAM_NAME | TaxRtScoProgramName | — |
+| QUANTITY_RATE | TaxRtScoQuantityRate | — |
+| RATE_TYPE_CODE | TaxRtScoRateTypeCode | — |
+| RECORD_TYPE_CODE | TaxRtScoRecordTypeCode | — |
+| RECOVERY_RULE_CODE | TaxRtScoRecoveryRuleCode | — |
+| RECOVERY_TYPE_CODE | TaxRtScoRecoveryTypeCode | — |
+| SCHEDULE_BASED_RATE_FLAG | TaxRtScoScheduleBasedRateFlag | — |
+| SDEFF_FROM | TaxRtScoSdeffFrom | — |
+| SDEFF_TO | TaxRtScoSdeffTo | — |
+| TAX | TaxRtScoTax | — |
+| TAX_CLASS | TaxRtScoTaxClass | — |
+| TAX_INCLUSIVE_OVERRIDE_FLAG | TaxRtScoTaxInclusiveOverrideFlag | — |
+| TAX_JURISDICTION_CODE | TaxRtScoTaxJurisdictionCode | — |
+| TAX_RATE_CODE | TaxRtScoTaxRateCode | — |
+| TAX_RATE_ID | TaxRtScoTaxRateId | — |
+| TAX_RATE_NAME | TaxRtScoTaxRateName | ✅ |
+| TAX_REGIME_CODE | TaxRtScoTaxRegimeCode | — |
+| TAX_STATUS_CODE | TaxRtScoTaxStatusCode | — |
+| TAXABLE_BASIS_FORMULA_CODE | TaxRtScoTaxableBasisFormulaCode | — |
+| UOM_CODE | TaxRtScoUomCode | — |
+| VAT_TRANSACTION_TYPE_CODE | TaxRtScoVatTransactionTypeCode | — |

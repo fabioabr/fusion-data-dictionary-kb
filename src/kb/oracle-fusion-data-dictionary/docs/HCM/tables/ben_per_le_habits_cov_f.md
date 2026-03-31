@@ -103,6 +103,45 @@ WHERE  ROWNUM <= 100;
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[benefitemployeehabitspvo|BenefitEmployeeHabitsPVO]] (HCM · BICC: 30/30)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | BusinessGroupId | ✅ |
+| COORD_MED_CVG_END_DT | CoordMedCvgEndDt | ✅ |
+| COORD_MED_CVG_STRT_DT | CoordMedCvgStrtDt | ✅ |
+| COORD_MED_EXT_ER | CoordMedExtEr | ✅ |
+| COORD_MED_INSR_CRR_IDENT | CoordMedInsrCrrIdent | ✅ |
+| COORD_MED_INSR_CRR_NAM | CoordMedInsrCrrNam | ✅ |
+| COORD_MED_PL_NAME | CoordMedPlName | ✅ |
+| COORD_MED_PLN_NO | CoordMedPlnNo | ✅ |
+| COORD_NO_CVG_FLAG | CoordNoCvgFlag | ✅ |
+| CREATED_BY | CreatedBy | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| CVRD_IN_ANTHR_PL | CvrdInAnthrPl | ✅ |
+| DISABILITY_STATUS | DisabilityStatus | ✅ |
+| DPDNT_ADOPTION_DATE | DpdntAdoptionDate | ✅ |
+| DPDNT_VLNTRY_SVCE_FLAG | DpdntVlntrySvceFlag | ✅ |
+| EFFECTIVE_END_DATE | EffectiveEndDate | ✅ |
+| EFFECTIVE_START_DATE | EffectiveStartDate | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | LastUpdatedBy | ✅ |
+| LE_HABITS_COV_ID | LeHabitsCovId | ✅ |
+| LEGAL_ENTITY_ID | LegalEntityId | ✅ |
+| LEGISLATIVE_DATA_GROUP_ID | LegislativeDataGroupId | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | ✅ |
+| ON_MILITARY_SERVICE | OnMilitaryService | ✅ |
+| PERSON_ID | PersonId | ✅ |
+| RECEIPT_OF_DEATH_CERT_DATE | ReceiptOfDeathCertDate | ✅ |
+| REGISTERED_DISABLED_FLAG | RegisteredDisabledFlag | ✅ |
+| STUDENT_STATUS | StudentStatus | ✅ |
+| TOBACCO_TYPE_USAGE | TobaccoTypeUsage | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — BEN_PER_LE_HABITS_COV_F](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/benperlehabitscovf.html)

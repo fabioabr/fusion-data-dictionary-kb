@@ -98,6 +98,129 @@ ORDER BY a.DISPLAY_SEQUENCE;
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[managerquestionnairequestionpvo|ManagerQuestionnaireQuestionPVO]] (HCM)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ANSWER_CODE | AnswerCode | — |
+| BUSINESS_GROUP_ID | ConditionQstnAnswerBPEOBusinessGroupId | — |
+| QSTN_ANSWER_ID | ConditionQstnAnswerBPEOQstnAnswerId | — |
+
+### [[participantquestionnairequestionpvo|ParticipantQuestionnaireQuestionPVO]] (HCM)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ANSWER_CODE | AnswerCode | — |
+| BUSINESS_GROUP_ID | ConditionQstnAnswerBPEOBusinessGroupId | — |
+| QSTN_ANSWER_ID | ConditionQstnAnswerBPEOQstnAnswerId | — |
+
+### [[participantquestionnairequestionpvoforpotentialassessement|ParticipantQuestionnaireQuestionPVOForPotentialAssessement]] (HCM)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ANSWER_CODE | AnswerCode | — |
+| BUSINESS_GROUP_ID | ConditionQstnAnswerBPEOBusinessGroupId | — |
+| QSTN_ANSWER_ID | ConditionQstnAnswerBPEOQstnAnswerId | — |
+
+### [[participantquestionnairequestionresponselistpvo|ParticipantQuestionnaireQuestionResponseListPVO]] (HCM · BICC: 3/8)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ADDL_QSTNR_ID | QuestionAnswerBPEOAddlQstnrId | — |
+| ADDL_QSTNR_VERSION_NUM | QuestionAnswerBPEOAddlQstnrVersionNum | — |
+| ANSWER_CODE | AnswerCode | — |
+| BUSINESS_GROUP_ID | QuestionAnswerBPEOBusinessGroupId | ✅ |
+| QSTN_ANSWER_ID | QuestionAnswerBPEOQstnAnswerId | ✅ |
+| QUESTION_ID | QuestionAnswerBPEOQuestionId | — |
+| RATING_LEVEL_ID | QuestionAnswerBPEORatingLevelId | — |
+| SEQ_NUM | QuestionAnswerBPEOSeqNum | ✅ |
+
+### [[questionanswerpvo|QuestionAnswerPVO]] (HCM · BICC: 5/20)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ADDL_QSTNR_ID | QuestionAnswerBPEOAddlQstnrId | — |
+| ADDL_QSTNR_VERSION_NUM | QuestionAnswerBPEOAddlQstnrVersionNum | — |
+| ANSWER_CODE | AnswerCode | — |
+| BUSINESS_GROUP_ID | QuestionAnswerBPEOBusinessGroupId | ✅ |
+| CORRECT_FLAG | QuestionAnswerBPEOCorrectFlag | — |
+| CREATED_BY | QuestionAnswerBPEOCreatedBy | — |
+| CREATION_DATE | QuestionAnswerBPEOCreationDate | — |
+| LAST_UPDATE_DATE | QuestionAnswerBPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | QuestionAnswerBPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | QuestionAnswerBPEOLastUpdatedBy | — |
+| MODULE_ID | QuestionAnswerBPEOModuleId | — |
+| OBJECT_VERSION_NUMBER | QuestionAnswerBPEOObjectVersionNumber | — |
+| QSTN_ANSWER_ID | QuestionAnswerBPEOQstnAnswerId | ✅ |
+| QSTN_VERSION_NUM | QuestionAnswerBPEOQstnVersionNum | — |
+| QUESTION_ID | QuestionAnswerBPEOQuestionId | — |
+| RATING_LEVEL_ID | QuestionAnswerBPEORatingLevelId | — |
+| SCORE | QuestionAnswerBPEOScore | ✅ |
+| SCORE_WEIGHT | QuestionAnswerBPEOScoreWeight | — |
+| SEED_DATA_SOURCE | QuestionAnswerBPEOSeedDataSource | — |
+| SEQ_NUM | QuestionAnswerBPEOSeqNum | ✅ |
+
+### [[questionnaireallquestionsp1|QuestionnaireAllQuestionsP1]] (HCM · BICC: 4/23)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ADDL_QSTNR_ID | QuestionAnswerBPEOAddlQstnrId | — |
+| ADDL_QSTNR_VERSION_NUM | QuestionAnswerBPEOAddlQstnrVersionNum | — |
+| ANSWER_CODE | AnswerCode | — |
+| ANSWER_CODE | QuestionAnswerBPEOAnswerCode | — |
+| BUSINESS_GROUP_ID | ConditionQstnAnswerBPEOBusinessGroupId | — |
+| BUSINESS_GROUP_ID | QuestionAnswerBPEOBusinessGroupId | — |
+| CORRECT_FLAG | QuestionAnswerBPEOCorrectFlag | — |
+| CREATED_BY | QuestionAnswerBPEOCreatedBy | — |
+| CREATION_DATE | QuestionAnswerBPEOCreationDate | — |
+| LAST_UPDATE_DATE | QuestionAnswerBPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | QuestionAnswerBPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | QuestionAnswerBPEOLastUpdatedBy | — |
+| MODULE_ID | QuestionAnswerBPEOModuleId | — |
+| OBJECT_VERSION_NUMBER | QuestionAnswerBPEOObjectVersionNumber | — |
+| QSTN_ANSWER_ID | ConditionQstnAnswerBPEOQstnAnswerId | — |
+| QSTN_ANSWER_ID | QuestionAnswerBPEOQstnAnswerId | ✅ |
+| QSTN_VERSION_NUM | QuestionAnswerBPEOQstnVersionNum | — |
+| QUESTION_ID | QuestionAnswerBPEOQuestionId | — |
+| RATING_LEVEL_ID | QuestionAnswerBPEORatingLevelId | — |
+| SCORE | QuestionAnswerBPEOScore | ✅ |
+| SCORE_WEIGHT | QuestionAnswerBPEOScoreWeight | — |
+| SEED_DATA_SOURCE | QuestionAnswerBPEOSeedDataSource | — |
+| SEQ_NUM | QuestionAnswerBPEOSeqNum | ✅ |
+
+### [[questionnairequestionpvo|QuestionnaireQuestionPVO]] (HCM)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ANSWER_CODE | AnswerCode | — |
+| BUSINESS_GROUP_ID | ConditionQstnAnswerBPEOBusinessGroupId | — |
+| QSTN_ANSWER_ID | ConditionQstnAnswerBPEOQstnAnswerId | — |
+
+### [[questionnairequestionresponselistpvo|QuestionnaireQuestionResponseListPVO]] (HCM · BICC: 2/8)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ADDL_QSTNR_ID | QuestionAnswerBPEOAddlQstnrId | — |
+| ADDL_QSTNR_VERSION_NUM | QuestionAnswerBPEOAddlQstnrVersionNum | — |
+| ANSWER_CODE | AnswerCode | — |
+| BUSINESS_GROUP_ID | QuestionAnswerBPEOBusinessGroupId | ✅ |
+| QSTN_ANSWER_ID | QuestionAnswerBPEOQstnAnswerId | ✅ |
+| QUESTION_ID | QuestionAnswerBPEOQuestionId | — |
+| RATING_LEVEL_ID | QuestionAnswerBPEORatingLevelId | — |
+| SEQ_NUM | QuestionAnswerBPEOSeqNum | — |
+
+### [[workerquestionnairequestionpvo|WorkerQuestionnaireQuestionPVO]] (HCM)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ANSWER_CODE | AnswerCode | — |
+| BUSINESS_GROUP_ID | ConditionQstnAnswerBPEOBusinessGroupId | — |
+| QSTN_ANSWER_ID | ConditionQstnAnswerBPEOQstnAnswerId | — |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Fusion HCM Tables and Views](https://docs.oracle.com/en/cloud/saas/human-resources/25a/)

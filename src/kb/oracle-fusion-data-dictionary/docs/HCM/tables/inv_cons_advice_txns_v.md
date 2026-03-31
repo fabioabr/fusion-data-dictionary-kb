@@ -53,3 +53,15 @@ updated_at: 2026-03-26
 ## 📎 Uso Típico
 
 (a ser preenchido na etapa 03)
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[invoicelinepvo|InvoiceLinePVO]] (AP · BICC: 2/3)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CONSUMPTION_LINE_ID | ConsumptionAdviceConsumptionLineId | — |
+| CONSUMPTION_LINE_NUMBER | ConsumptionAdviceConsumptionLineNumber | ✅ |
+| CONSUMPTION_NUMBER | ConsumptionAdviceConsumptionNumber | ✅ |

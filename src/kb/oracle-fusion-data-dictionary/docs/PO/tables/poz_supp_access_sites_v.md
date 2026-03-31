@@ -115,3 +115,22 @@ WHERE  asv.VENDOR_SITE_ID = :p_vendor_site_id;
 
 - [Oracle Docs — Supplier Access Security](https://docs.oracle.com/en/cloud/saas/procurement/25a/oedmf/poz-tables.html)
 - [[po-module-data-dictionary]] — Dossiê do módulo Procurement
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[supplieraccessiblesitepvo|SupplierAccessibleSitePVO]] (PO · BICC: 10/10)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ENABLED_FLAG | AccessibleSiteSupplierEnabledFlag | ✅ |
+| END_DATE_ACTIVE | AccessibleSiteSupplierEndDateActive | ✅ |
+| INACTIVE_DATE | AccessibleSiteSiteInactiveDate | ✅ |
+| PARTY_SITE_NAME | AccessibleSitePartySiteName | ✅ |
+| PRC_BU_ID | AccessibleSitePrcBuId | ✅ |
+| SEGMENT1 | AccessibleSiteSegment1 | ✅ |
+| SUPPLIER_NAME | AccessibleSiteSupplierName | ✅ |
+| VENDOR_ID | AccessibleSiteVendorId | ✅ |
+| VENDOR_SITE_CODE | AccessibleSiteVendorSiteCode | ✅ |
+| VENDOR_SITE_ID | VendorSiteId | ✅ |

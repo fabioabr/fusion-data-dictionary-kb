@@ -100,3 +100,103 @@ SELECT pad.PREPAY_APP_DIST_ID,
 - Oracle Fusion Cloud Financials — Accounts Payable Tables (OEDMF Release 13).
 - Oracle Fusion Cloud — Prepayments and Advances Documentation.
 - Oracle Fusion Cloud ERP Schema Reference (Release 25A).
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[prepaymentappliationdistributionpvo|PrepaymentAppliationDistributionPVO]] (AP · BICC: 29/43)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACCOUNTING_EVENT_ID | PrepaymentApplicationAccountingEventId | — |
+| AMOUNT | PrepaymentApplicationAmount | ✅ |
+| AMOUNT_VARIANCE | PrepaymentApplicationAmountVariance | ✅ |
+| AWT_RELATED_ID | PrepaymentApplicationAwtRelatedId | — |
+| BASE_AMOUNT | PrepaymentApplicationBaseAmount | ✅ |
+| BASE_AMT_AT_PREPAY_CLR_XRATE | PrepaymentApplicationBaseAmtAtPrepayClrXrate | ✅ |
+| BASE_AMT_AT_PREPAY_PAY_XRATE | PrepaymentApplicationBaseAmtAtPrepayPayXrate | ✅ |
+| BASE_AMT_AT_PREPAY_XRATE | PrepaymentApplicationBaseAmtAtPrepayXrate | ✅ |
+| BC_EVENT_ID | PrepaymentApplicationBcEventId | — |
+| CREATED_BY | PrepaymentApplicationCreatedBy | ✅ |
+| CREATION_DATE | PrepaymentApplicationCreationDate | ✅ |
+| INVOICE_BASE_AMT_VARIANCE | PrepaymentApplicationInvoiceBaseAmtVariance | ✅ |
+| INVOICE_BASE_QTY_VARIANCE | PrepaymentApplicationInvoiceBaseQtyVariance | — |
+| INVOICE_DISTRIBUTION_ID | PrepaymentApplicationInvoiceDistributionId | ✅ |
+| LAST_UPDATE_DATE | PrepaymentApplicationLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | PrepaymentApplicationLastUpdateLogin | — |
+| LAST_UPDATED_BY | PrepaymentApplicationLastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | PrepaymentApplicationObjectVersionNumber | — |
+| PA_ADDITION_FLAG | PrepaymentApplicationPaAdditionFlag | ✅ |
+| PREPAY_APP_DIST_ID | PrepayAppDistId | ✅ |
+| PREPAY_APP_DISTRIBUTION_ID | PrepaymentApplicationPrepayAppDistributionId | ✅ |
+| PREPAY_CLR_EXCHANGE_DATE | PrepaymentApplicationPrepayClrExchangeDate | ✅ |
+| PREPAY_CLR_EXCHANGE_RATE | PrepaymentApplicationPrepayClrExchangeRate | ✅ |
+| PREPAY_CLR_EXCHANGE_RATE_TYPE | PrepaymentApplicationPrepayClrExchangeRateType | ✅ |
+| PREPAY_DIST_LOOKUP_CODE | PrepaymentApplicationPrepayDistLookupCode | ✅ |
+| PREPAY_EXCHANGE_DATE | PrepaymentApplicationPrepayExchangeDate | ✅ |
+| PREPAY_EXCHANGE_RATE | PrepaymentApplicationPrepayExchangeRate | ✅ |
+| PREPAY_EXCHANGE_RATE_TYPE | PrepaymentApplicationPrepayExchangeRateType | ✅ |
+| PREPAY_HISTORY_ID | PrepaymentApplicationPrepayHistoryId | — |
+| PREPAY_PAY_EXCHANGE_DATE | PrepaymentApplicationPrepayPayExchangeDate | ✅ |
+| PREPAY_PAY_EXCHANGE_RATE | PrepaymentApplicationPrepayPayExchangeRate | ✅ |
+| PREPAY_PAY_EXCHANGE_RATE_TYPE | PrepaymentApplicationPrepayPayExchangeRateType | ✅ |
+| PROGRAM_APPLICATION_ID | PrepaymentApplicationProgramApplicationId | — |
+| PROGRAM_ID | PrepaymentApplicationProgramId | — |
+| PROGRAM_UPDATE_DATE | PrepaymentApplicationProgramUpdateDate | — |
+| QUANTITY_VARIANCE | PrepaymentApplicationQuantityVariance | — |
+| RELEASE_INV_DIST_DERIVED_FROM | PrepaymentApplicationReleaseInvDistDerivedFrom | — |
+| REQUEST_ID | PrepaymentApplicationRequestId | — |
+| REVERSED_PREPAY_APP_DIST_ID | PrepaymentApplicationReversedPrepayAppDistId | — |
+| ROUND_AMT_AT_PREPAY_CLR_XRATE | PrepaymentApplicationRoundAmtAtPrepayClrXrate | ✅ |
+| ROUND_AMT_AT_PREPAY_PAY_XRATE | PrepaymentApplicationRoundAmtAtPrepayPayXrate | ✅ |
+| ROUND_AMT_AT_PREPAY_XRATE | PrepaymentApplicationRoundAmtAtPrepayXrate | ✅ |
+| ROUNDING_AMT | PrepaymentApplicationRoundingAmt | ✅ |
+
+### [[prepaymentapplicationdistributionextractpvo|PrepaymentApplicationDistributionExtractPVO]] (OTHER · BICC: 43/43)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACCOUNTING_EVENT_ID | ApPrepayAppDistsAccountingEventId | ✅ |
+| AMOUNT | ApPrepayAppDistsAmount | ✅ |
+| AMOUNT_VARIANCE | ApPrepayAppDistsAmountVariance | ✅ |
+| AWT_RELATED_ID | ApPrepayAppDistsAwtRelatedId | ✅ |
+| BASE_AMOUNT | ApPrepayAppDistsBaseAmount | ✅ |
+| BASE_AMT_AT_PREPAY_CLR_XRATE | ApPrepayAppDistsBaseAmtAtPrepayClrXrate | ✅ |
+| BASE_AMT_AT_PREPAY_PAY_XRATE | ApPrepayAppDistsBaseAmtAtPrepayPayXrate | ✅ |
+| BASE_AMT_AT_PREPAY_XRATE | ApPrepayAppDistsBaseAmtAtPrepayXrate | ✅ |
+| BC_EVENT_ID | ApPrepayAppDistsBcEventId | ✅ |
+| CREATED_BY | ApPrepayAppDistsCreatedBy | ✅ |
+| CREATION_DATE | ApPrepayAppDistsCreationDate | ✅ |
+| INVOICE_BASE_AMT_VARIANCE | ApPrepayAppDistsInvoiceBaseAmtVariance | ✅ |
+| INVOICE_BASE_QTY_VARIANCE | ApPrepayAppDistsInvoiceBaseQtyVariance | ✅ |
+| INVOICE_DISTRIBUTION_ID | ApPrepayAppDistsInvoiceDistributionId | ✅ |
+| LAST_UPDATE_DATE | ApPrepayAppDistsLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ApPrepayAppDistsLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | ApPrepayAppDistsLastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | ApPrepayAppDistsObjectVersionNumber | ✅ |
+| PA_ADDITION_FLAG | ApPrepayAppDistsPaAdditionFlag | ✅ |
+| PREPAY_APP_DIST_ID | ApPrepayAppDistsPrepayAppDistId | ✅ |
+| PREPAY_APP_DISTRIBUTION_ID | ApPrepayAppDistsPrepayAppDistributionId | ✅ |
+| PREPAY_CLR_EXCHANGE_DATE | ApPrepayAppDistsPrepayClrExchangeDate | ✅ |
+| PREPAY_CLR_EXCHANGE_RATE | ApPrepayAppDistsPrepayClrExchangeRate | ✅ |
+| PREPAY_CLR_EXCHANGE_RATE_TYPE | ApPrepayAppDistsPrepayClrExchangeRateType | ✅ |
+| PREPAY_DIST_LOOKUP_CODE | ApPrepayAppDistsPrepayDistLookupCode | ✅ |
+| PREPAY_EXCHANGE_DATE | ApPrepayAppDistsPrepayExchangeDate | ✅ |
+| PREPAY_EXCHANGE_RATE | ApPrepayAppDistsPrepayExchangeRate | ✅ |
+| PREPAY_EXCHANGE_RATE_TYPE | ApPrepayAppDistsPrepayExchangeRateType | ✅ |
+| PREPAY_HISTORY_ID | ApPrepayAppDistsPrepayHistoryId | ✅ |
+| PREPAY_PAY_EXCHANGE_DATE | ApPrepayAppDistsPrepayPayExchangeDate | ✅ |
+| PREPAY_PAY_EXCHANGE_RATE | ApPrepayAppDistsPrepayPayExchangeRate | ✅ |
+| PREPAY_PAY_EXCHANGE_RATE_TYPE | ApPrepayAppDistsPrepayPayExchangeRateType | ✅ |
+| PROGRAM_APPLICATION_ID | ApPrepayAppDistsProgramApplicationId | ✅ |
+| PROGRAM_ID | ApPrepayAppDistsProgramId | ✅ |
+| PROGRAM_UPDATE_DATE | ApPrepayAppDistsProgramUpdateDate | ✅ |
+| QUANTITY_VARIANCE | ApPrepayAppDistsQuantityVariance | ✅ |
+| RELEASE_INV_DIST_DERIVED_FROM | ApPrepayAppDistsReleaseInvDistDerivedFrom | ✅ |
+| REQUEST_ID | ApPrepayAppDistsRequestId | ✅ |
+| REVERSED_PREPAY_APP_DIST_ID | ApPrepayAppDistsReversedPrepayAppDistId | ✅ |
+| ROUND_AMT_AT_PREPAY_CLR_XRATE | ApPrepayAppDistsRoundAmtAtPrepayClrXrate | ✅ |
+| ROUND_AMT_AT_PREPAY_PAY_XRATE | ApPrepayAppDistsRoundAmtAtPrepayPayXrate | ✅ |
+| ROUND_AMT_AT_PREPAY_XRATE | ApPrepayAppDistsRoundAmtAtPrepayXrate | ✅ |
+| ROUNDING_AMT | ApPrepayAppDistsRoundingAmt | ✅ |

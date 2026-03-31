@@ -111,3 +111,24 @@ WHERE  ap.ACCOUNT_ID = :p_account_id
 
 - [Oracle Docs — IRC_ASMT_ACCT_PACKAGES](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/ircasmtacctpackages.html)
 - [[hcm-module-data-dictionary]] — Dossie do modulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[asmtacctpackagepvo|AsmtAcctPackagePVO]] (HCM · BICC: 10/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACCOUNT_ID | AsmtAcctPackagePEOAccountId | ✅ |
+| ACCOUNT_PACKAGE_ID | AccountPackageId | ✅ |
+| CREATED_BY | AsmtAcctPackagePEOCreatedBy | ✅ |
+| CREATION_DATE | AsmtAcctPackagePEOCreationDate | ✅ |
+| LAST_UPDATE_DATE | AsmtAcctPackagePEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | AsmtAcctPackagePEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | AsmtAcctPackagePEOLastUpdatedBy | ✅ |
+| OBJECT_STATUS | AsmtAcctPackagePEOObjectStatus | ✅ |
+| OBJECT_VERSION_NUMBER | AsmtAcctPackagePEOObjectVersionNumber | — |
+| PACKAGE_CODE | AsmtAcctPackagePEOPackageCode | ✅ |
+| PACKAGE_DESC | AsmtAcctPackagePEOPackageDesc | ✅ |
+| PACKAGE_NAME | AsmtAcctPackagePEOPackageName | ✅ |

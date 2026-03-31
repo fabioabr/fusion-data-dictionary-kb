@@ -107,3 +107,62 @@ ORDER BY p.PHASE_ORDER;
 
 - [Oracle Docs -- IRC_PHASES_B](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/ircphasesb.html)
 - [[hcm-module-data-dictionary]] -- Dossie do modulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[candidatepoolmemberpvo|CandidatePoolMemberPVO]] (PO · BICC: 4/4)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CODE | Code | ✅ |
+| PHASE_ID | PhaseId | ✅ |
+| SEQUENCE_NUMBER | PhaseBPEOSequenceNumber | ✅ |
+| TYPE_CODE | TypeCode | ✅ |
+
+### [[jobapphisteventpvo|JobAppHistEventPVO]] (HCM · BICC: 1/3)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CODE | PhaseBPEOCode | ✅ |
+| PHASE_ID | PhaseBPEOPhaseId | — |
+| SEQUENCE_NUMBER | PhaseBPEOPhaseSequenceNumber | — |
+
+### [[jobreqhisteventpvo|JobReqHistEventPVO]] (PO · BICC: 2/2)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CODE | PhaseBPEOCode | ✅ |
+| PHASE_ID | PhaseId | ✅ |
+
+### [[phasepvo|PhasePVO]] (HCM · BICC: 11/11)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CODE | Code | ✅ |
+| CREATED_BY | CreatedBy | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | LastUpdatedBy | ✅ |
+| MODULE_ID | ModuleId | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | ✅ |
+| PHASE_ID | PhaseId | ✅ |
+| SEQUENCE_NUMBER | SequenceNumber | ✅ |
+| TYPE_CODE | TypeCode | ✅ |
+
+### [[poolcandhisteventpvo|PoolCandHistEventPVO]] (PO · BICC: 1/2)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CODE | PhaseBPEOCode | ✅ |
+| PHASE_ID | PhaseId | — |
+
+### [[wfmodelrequisitionpvo|WfModelRequisitionPVO]] (HCM)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CODE | PhaseBPEOCode | — |
+| PHASE_ID | PhaseBPEOPhaseId | — |
+| TYPE_CODE | PhaseBPEOTypeCode | — |

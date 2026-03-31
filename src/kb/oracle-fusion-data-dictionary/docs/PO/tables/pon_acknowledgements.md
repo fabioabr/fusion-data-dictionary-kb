@@ -136,3 +136,85 @@ WHERE  AUCTION_HEADER_ID = :p_auction_header_id;
 
 - [Oracle Docs — PON_ACKNOWLEDGEMENTS](https://docs.oracle.com/en/cloud/saas/procurement/25a/oedmf/ponacknowledgements.html)
 - [[po-module-data-dictionary]] — Dossiê do módulo PO/Procurement
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[awardednegotiationresponselinepvo|AwardedNegotiationResponseLinePVO]] (PO · BICC: 1/15)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACKNOWLEDGEMENT_DATE | AcknowledgeAcknowledgementDate | — |
+| ACKNOWLEDGEMENT_RESPONSE | AcknowledgeAcknowledgementResponse | — |
+| AUCTION_HEADER_ID | AcknowledgeAuctionHeaderId | — |
+| CREATED_BY | AcknowledgeCreatedBy | — |
+| CREATION_DATE | AcknowledgeCreationDate | — |
+| LAST_UPDATE_DATE | AcknowledgeLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | AcknowledgeLastUpdateLogin | — |
+| LAST_UPDATED_BY | AcknowledgeLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | AcknowledgeObjectVersionNumber | — |
+| SURROG_BID_ACK_ENTRY_DATE | AcknowledgeSurrogBidAckEntryDate | — |
+| SURROG_BID_ACK_FLAG | AcknowledgeSurrogBidAckFlag | — |
+| SURROG_BID_ACK_PERSON_ID | AcknowledgeSurrogBidAckPersonId | — |
+| SURROG_METHOD_OF_ACK | AcknowledgeSurrogMethodOfAck | — |
+| TRADING_PARTNER_CONTACT_ID | AcknowledgeTradingPartnerContactId | — |
+| TRADING_PARTNER_ID | AcknowledgeTradingPartnerId | — |
+
+### [[negotiationsupplieracknowledgementpvo|NegotiationSupplierAcknowledgementPVO]] (PO · BICC: 13/13)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACKNOWLEDGEMENT_DATE | NegSuppAckAcknowledgementDate | ✅ |
+| ACKNOWLEDGEMENT_RESPONSE | NegSuppAckAcknowledgementResponse | ✅ |
+| AUCTION_HEADER_ID | AuctionHeaderId | ✅ |
+| CREATED_BY | NegSuppAckCreatedBy | ✅ |
+| CREATION_DATE | NegSuppAckCreationDate | ✅ |
+| LAST_UPDATE_DATE | NegSuppAckLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | NegSuppAckLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | NegSuppAckLastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | NegSuppAckObjectVersionNumber | ✅ |
+| SURROG_BID_ACK_FLAG | NegSuppAckSurrogBidAckFlag | ✅ |
+| SURROG_BID_ACK_PERSON_ID | NegSuppAckSurrogBidAckPersonId | ✅ |
+| TRADING_PARTNER_CONTACT_ID | TradingPartnerContactId | ✅ |
+| TRADING_PARTNER_ID | NegSuppAckTradingPartnerId | ✅ |
+
+### [[unlockednegotiationresponseheaderpvo|UnlockedNegotiationResponseHeaderPVO]] (PO · BICC: 3/15)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACKNOWLEDGEMENT_DATE | AcknowledgeAcknowledgementDate | — |
+| ACKNOWLEDGEMENT_RESPONSE | AcknowledgeAcknowledgementResponse | — |
+| AUCTION_HEADER_ID | AcknowledgeAuctionHeaderId | — |
+| CREATED_BY | AcknowledgeCreatedBy | — |
+| CREATION_DATE | AcknowledgeCreationDate | — |
+| LAST_UPDATE_DATE | AcknowledgeLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | AcknowledgeLastUpdateLogin | — |
+| LAST_UPDATED_BY | AcknowledgeLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | AcknowledgeObjectVersionNumber | — |
+| SURROG_BID_ACK_ENTRY_DATE | AcknowledgeSurrogBidAckEntryDate | ✅ |
+| SURROG_BID_ACK_FLAG | AcknowledgeSurrogBidAckFlag | — |
+| SURROG_BID_ACK_PERSON_ID | AcknowledgeSurrogBidAckPersonId | — |
+| SURROG_METHOD_OF_ACK | AcknowledgeSurrogMethodOfAck | ✅ |
+| TRADING_PARTNER_CONTACT_ID | AcknowledgeTradingPartnerContactId | — |
+| TRADING_PARTNER_ID | AcknowledgeTradingPartnerId | — |
+
+### [[unlockednegotiationresponselinepvo|UnlockedNegotiationResponseLinePVO]] (PO · BICC: 3/15)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACKNOWLEDGEMENT_DATE | AcknowledgeAcknowledgementDate | — |
+| ACKNOWLEDGEMENT_RESPONSE | AcknowledgeAcknowledgementResponse | — |
+| AUCTION_HEADER_ID | AcknowledgeAuctionHeaderId | — |
+| CREATED_BY | AcknowledgeCreatedBy | — |
+| CREATION_DATE | AcknowledgeCreationDate | — |
+| LAST_UPDATE_DATE | AcknowledgeLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | AcknowledgeLastUpdateLogin | — |
+| LAST_UPDATED_BY | AcknowledgeLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | AcknowledgeObjectVersionNumber | — |
+| SURROG_BID_ACK_ENTRY_DATE | AcknowledgeSurrogBidAckEntryDate | ✅ |
+| SURROG_BID_ACK_FLAG | AcknowledgeSurrogBidAckFlag | — |
+| SURROG_BID_ACK_PERSON_ID | AcknowledgeSurrogBidAckPersonId | — |
+| SURROG_METHOD_OF_ACK | AcknowledgeSurrogMethodOfAck | ✅ |
+| TRADING_PARTNER_CONTACT_ID | AcknowledgeTradingPartnerContactId | — |
+| TRADING_PARTNER_ID | AcknowledgeTradingPartnerId | — |

@@ -40,7 +40,6 @@ Tabela base que agrupa configurações de resumo de cartão de ponto em conjunto
 > [!note] Sufixo _B
 > O sufixo `_B` indica tabela **base** — contém os dados não traduzíveis. A tabela correspondente `_TL` armazena as traduções.
 
-
 ---
 
 ## 🧠 Propósito de Negócio
@@ -107,6 +106,46 @@ WHERE  NVL(t.ENABLED_FLAG, 'Y') = 'Y'
 - Tabela base: contém dados não traduzíveis. Utilize a view `_VL` correspondente para consultas com tradução.
 - Configurações impactam o comportamento do módulo; alterações requerem teste em ambiente de homologação.
 - Área funcional: Time Card Summary dentro do Oracle Fusion Cloud HCM.
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[timeconsumerconfigurationpvo|TimeConsumerConfigurationPVO]] (GL · BICC: 10/13)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ABS_APPROVAL_USAGE_CD | TcsmrConfigSetPEOAbsApprovalUsageCd | ✅ |
+| CREATED_BY | TcsmrConfigSetPEOCreatedBy | ✅ |
+| CREATION_DATE | TcsmrConfigSetPEOCreationDate | ✅ |
+| ENTERPRISE_ID | TcsmrConfigSetPEOEnterpriseId | — |
+| LAST_UPDATE_DATE | TcsmrConfigSetPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | TcsmrConfigSetPEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | TcsmrConfigSetPEOLastUpdatedBy | ✅ |
+| MODULE_ID | TcsmrConfigSetPEOModuleId | — |
+| OBJECT_VERSION_NUMBER | TcsmrConfigSetPEOObjectVersionNumber | — |
+| TCSMR_CONFIG_SET_CODE | TcsmrConfigSetPEOTimeConsumerConfigurationSetCode | ✅ |
+| TCSMR_CONFIG_SET_ID | TcsmrConfigSetPEOTimeConsumerConfigurationSetId | ✅ |
+| WRK_APPROVAL_ENABLED | TcsmrConfigSetPEOWrkApprovalEnabled | ✅ |
+| WRKFLW_NTFN_ENABLED | TcsmrConfigSetPEOWrkflwNtfnEnabled | ✅ |
+
+### [[timeconsumerconfigurationsetpvo|TimeConsumerConfigurationSetPVO]] (GL · BICC: 13/13)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ABS_APPROVAL_USAGE_CD | TcsmrConfigSetPEOAbsApprovalUsageCd | ✅ |
+| CREATED_BY | TcsmrConfigSetPEOCreatedBy | ✅ |
+| CREATION_DATE | TcsmrConfigSetPEOCreationDate | ✅ |
+| ENTERPRISE_ID | TcsmrConfigSetPEOEnterpriseId | ✅ |
+| LAST_UPDATE_DATE | TcsmrConfigSetPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | TcsmrConfigSetPEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | TcsmrConfigSetPEOLastUpdatedBy | ✅ |
+| MODULE_ID | TcsmrConfigSetPEOModuleId | ✅ |
+| OBJECT_VERSION_NUMBER | TcsmrConfigSetPEOObjectVersionNumber | ✅ |
+| TCSMR_CONFIG_SET_CODE | TcsmrConfigSetPEOTimeConsumerConfigurationSetCode | ✅ |
+| TCSMR_CONFIG_SET_ID | TcsmrConfigSetPEOTimeConsumerConfigurationSetId | ✅ |
+| WRK_APPROVAL_ENABLED | TcsmrConfigSetPEOWrkApprovalEnabled | ✅ |
+| WRKFLW_NTFN_ENABLED | TcsmrConfigSetPEOWrkflwNtfnEnabled | ✅ |
 
 ---
 

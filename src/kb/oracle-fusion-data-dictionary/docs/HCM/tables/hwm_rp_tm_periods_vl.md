@@ -38,7 +38,6 @@ Visão consolidada que combina dados base e traduções dos períodos de tempo p
 > [!note] Sufixo _VL
 > O sufixo `_VL` indica **view consolidada** que combina automaticamente a tabela `_B` (dados base) com a `_TL` (traduções) para o idioma da sessão.
 
-
 ---
 
 ## 🧠 Propósito de Negócio
@@ -103,6 +102,38 @@ WHERE  t.LANGUAGE = USERENV('LANG')
 
 - View consolidada: combina automaticamente dados base (`_B`) e traduções (`_TL`). Preferir em consultas de leitura.
 - Área funcional: Time and Reporting dentro do Oracle Fusion Cloud HCM.
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[absencetimeentrypvo|AbsenceTimeEntryPVO]] (HCM · BICC: 2/2)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| DESCRIPTION | HxtResolvedPeriodMeaning | ✅ |
+| REPEATING_TM_PERIOD_ID | RepeatingTimePeriodId | ✅ |
+
+### [[historicabsencetimeentrypvo|HistoricAbsenceTimeEntryPVO]] (HCM · BICC: 2/2)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| DESCRIPTION | HxtResolvedPeriodMeaning | ✅ |
+| REPEATING_TM_PERIOD_ID | RepeatingTimePeriodId | ✅ |
+
+### [[historicreportedtimeentrypvo|HistoricReportedTimeEntryPVO]] (HCM · BICC: 2/2)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| DESCRIPTION | HxtResolvedPeriodMeaning | ✅ |
+| REPEATING_TM_PERIOD_ID | RepeatingTmPeriodId | ✅ |
+
+### [[reportedtimeentrypvo|ReportedTimeEntryPVO]] (HCM · BICC: 2/2)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| DESCRIPTION | HxtResolvedPeriodMeaning | ✅ |
+| REPEATING_TM_PERIOD_ID | RepeatingTmPeriodId | ✅ |
 
 ---
 

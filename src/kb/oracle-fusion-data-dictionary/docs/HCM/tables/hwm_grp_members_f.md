@@ -37,7 +37,6 @@ Tabela date-effective que armazena a associação de trabalhadores como membros 
 > [!note] Sufixo _F
 > O sufixo `_F` indica tabela **date-effective** — cada registro possui `EFFECTIVE_START_DATE` e `EFFECTIVE_END_DATE` controlando a vigência temporal.
 
-
 ---
 
 ## 🧠 Propósito de Negócio
@@ -105,6 +104,29 @@ WHERE  SYSDATE BETWEEN t.EFFECTIVE_START_DATE AND t.EFFECTIVE_END_DATE
 
 - Tabela date-effective: sempre filtrar por vigência para obter o registro corrente.
 - Área funcional: Workforce Management dentro do Oracle Fusion Cloud HCM.
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[groupmemberspvo|GroupMembersPVO]] (GL · BICC: 14/14)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | GroupMembersDPEOCreatedBy | ✅ |
+| CREATION_DATE | GroupMembersDPEOCreationDate | ✅ |
+| EFFECTIVE_END_DATE | GroupMembersDPEOEffectiveEndDate | ✅ |
+| EFFECTIVE_START_DATE | GroupMembersDPEOEffectiveStartDate | ✅ |
+| ENTERPRISE_ID | GroupMembersDPEOEnterpriseId | ✅ |
+| GRP_EVAL_PROCESS_ID | GroupMembersDPEOGroupEvaluateProcessId | ✅ |
+| GRP_ID | GroupMembersDPEOGroupId | ✅ |
+| GRP_MEMBER_ID | GroupMembersDPEOGroupMemberId | ✅ |
+| LAST_UPDATE_DATE | GroupMembersDPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | GroupMembersDPEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | GroupMembersDPEOLastUpdatedBy | ✅ |
+| MEMBER_ID | GroupMembersDPEOMemberId | ✅ |
+| OBJECT_VERSION_NUMBER | GroupMembersDPEOObjectVersionNumber | ✅ |
+| REMARKS | GroupMembersDPEORemarks | ✅ |
 
 ---
 

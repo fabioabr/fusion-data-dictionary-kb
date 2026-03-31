@@ -93,6 +93,42 @@ WHERE  tl.ANALYTIC_TYPE_ID = :p_id AND tl.LANGUAGE = USERENV('LANG');
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[nboxdimensionpvo|NBoxDimensionPVO]] (HCM · BICC: 5/11)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ANALYTIC_TYPE_ID | AnalyticTypeId | ✅ |
+| ANALYTIC_VIEW_NAME | AnalyticViewName | ✅ |
+| BUSINESS_GROUP_ID | BusinessGroupId | ✅ |
+| CREATED_BY | CreatedBy | — |
+| CREATION_DATE | CreationDate | — |
+| LANGUAGE | Language | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | — |
+| LAST_UPDATED_BY | LastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | — |
+| SOURCE_LANG | SourceLang | — |
+
+### [[templateanalytictypepvo|TemplateAnalyticTypePVO]] (HCM · BICC: 1/11)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ANALYTIC_TYPE_ID | TemplateAnalyticTypeTLPEOAnalyticTypeId | — |
+| ANALYTIC_VIEW_NAME | AnalyticViewName | ✅ |
+| BUSINESS_GROUP_ID | TemplateAnalyticTypeTLPEOBusinessGroupId | — |
+| CREATED_BY | TemplateAnalyticTypeTLPEOCreatedBy | — |
+| CREATION_DATE | TemplateAnalyticTypeTLPEOCreationDate | — |
+| LANGUAGE | Language | — |
+| LAST_UPDATE_DATE | TemplateAnalyticTypeTLPEOLastUpdateDate | — |
+| LAST_UPDATE_LOGIN | TemplateAnalyticTypeTLPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | TemplateAnalyticTypeTLPEOLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | TemplateAnalyticTypeTLPEOObjectVersionNumber | — |
+| SOURCE_LANG | SourceLang | — |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Fusion HCM Tables and Views](https://docs.oracle.com/en/cloud/saas/human-resources/25a/)

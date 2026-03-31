@@ -154,6 +154,66 @@ ORDER BY po.OBJECTIVE_NAME;
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[sourcingobjectivenegotiationpvo|SourcingObjectiveNegotiationPVO]] (PO · BICC: 10/23)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CATEGORY_ID | ProgramObjectivePEOCategoryId | — |
+| COMMENTS | ProgramObjectivePEOComments | ✅ |
+| CREATED_BY | ProgramObjectivePEOCreatedBy | — |
+| CREATION_DATE | ProgramObjectivePEOCreationDate | — |
+| CURRENT_SPEND | ProgramObjectivePEOCurrentSpend | ✅ |
+| DESCRIPTION | ProgramObjectivePEODescription | ✅ |
+| END_DATE | ProgramObjectivePEOEndDate | ✅ |
+| LAST_UPDATE_DATE | ProgramObjectivePEOLastUpdateDate | — |
+| LAST_UPDATE_LOGIN | ProgramObjectivePEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | ProgramObjectivePEOLastUpdatedBy | — |
+| NAME | ProgramObjectivePEOName | ✅ |
+| OBJECT_VERSION_NUMBER | ProgramObjectivePEOObjectVersionNumber | — |
+| OBJECTIVE_HEADER_ID | ProgramObjectivePEOObjectiveHeaderId | ✅ |
+| OBJECTIVE_TYPE | ProgramObjectivePEOObjectiveType | — |
+| PERSON_ID | ProgramObjectivePEOPersonId | — |
+| PROGRAM_HEADER_ID | ProgramObjectivePEOProgramHeaderId | — |
+| PURCHASING_CAT_FLAG | ProgramObjectivePEOPurchasingCatFlag | — |
+| ROLL_UP_FLAG | ProgramObjectivePEORollUpFlag | ✅ |
+| SAVINGS | ProgramObjectivePEOSavings | ✅ |
+| SAVINGS_PERCENT | ProgramObjectivePEOSavingsPercent | — |
+| START_DATE | ProgramObjectivePEOStartDate | ✅ |
+| STATUS | ProgramObjectivePEOStatus | — |
+| TARGET_SPEND | ProgramObjectivePEOTargetSpend | ✅ |
+
+### [[sourcingprogramobjectivepvo|SourcingProgramObjectivePVO]] (PO · BICC: 10/23)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CATEGORY_ID | ProgramObjectivePEOCategoryId | — |
+| COMMENTS | ProgramObjectivePEOComments | ✅ |
+| CREATED_BY | ProgramObjectivePEOCreatedBy | — |
+| CREATION_DATE | ProgramObjectivePEOCreationDate | — |
+| CURRENT_SPEND | ProgramObjectivePEOCurrentSpend | ✅ |
+| DESCRIPTION | ProgramObjectivePEODescription | ✅ |
+| END_DATE | ProgramObjectivePEOEndDate | ✅ |
+| LAST_UPDATE_DATE | ProgramObjectivePEOLastUpdateDate | — |
+| LAST_UPDATE_LOGIN | ProgramObjectivePEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | ProgramObjectivePEOLastUpdatedBy | — |
+| NAME | ProgramObjectivePEOName | ✅ |
+| OBJECT_VERSION_NUMBER | ProgramObjectivePEOObjectVersionNumber | — |
+| OBJECTIVE_HEADER_ID | ProgramObjectivePEOObjectiveHeaderId | ✅ |
+| OBJECTIVE_TYPE | ProgramObjectivePEOObjectiveType | — |
+| PERSON_ID | ProgramObjectivePEOPersonId | — |
+| PROGRAM_HEADER_ID | ProgramObjectivePEOProgramHeaderId | — |
+| PURCHASING_CAT_FLAG | ProgramObjectivePEOPurchasingCatFlag | — |
+| ROLL_UP_FLAG | ProgramObjectivePEORollUpFlag | ✅ |
+| SAVINGS | ProgramObjectivePEOSavings | ✅ |
+| SAVINGS_PERCENT | ProgramObjectivePEOSavingsPercent | — |
+| START_DATE | ProgramObjectivePEOStartDate | ✅ |
+| STATUS | ProgramObjectivePEOStatus | — |
+| TARGET_SPEND | ProgramObjectivePEOTargetSpend | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — Sourcing Tables](https://docs.oracle.com/en/cloud/saas/procurement/25a/oedmf/pon-tables.html)

@@ -117,3 +117,36 @@ WHERE  lc.DELIVERY_MODE = 'CLASSROOM'
 
 - [Oracle Docs — WLF_LI_COURSES_F](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/wlflicoursesf.html)
 - [[hcm-module-data-dictionary]] — Dossiê do módulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[coursepvo|CoursePVO]] (HCM · BICC: 24/24)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| COURSE_ID | CourseDEOCourseId | ✅ |
+| CREATED_BY | CourseDEOCreatedBy | ✅ |
+| CREATION_DATE | CourseDEOCreationDate | ✅ |
+| EFFECTIVE_END_DATE | CourseDEOEffectiveEndDate | ✅ |
+| EFFECTIVE_START_DATE | CourseDEOEffectiveStartDate | ✅ |
+| EFFORT | CourseDEOEffort | ✅ |
+| EFFORT_UOM | CourseDEOEffortUom | ✅ |
+| ENTERPRISE_ID | CourseDEOEnterpriseId | ✅ |
+| EXPENSES_ALLOWED | CourseDEOExpensesAllowed | ✅ |
+| INTENDED_AUDIENCE | CourseDEOIntendedAudience | ✅ |
+| INV_ORGANIZATION_ID | CourseDEOInvOrganizationId | ✅ |
+| INVENTORY_ITEM_ID | CourseDEOInventoryItemId | ✅ |
+| LAST_UPDATE_DATE | CourseDEOLastUpdateDate | ✅ |
+| LEARNING_ITEM_ID | CourseDEOLearningItemId | ✅ |
+| MAXIMUM_ATTENDEES | CourseDEOMaximumAttendees | ✅ |
+| MAXIMUM_INTERNAL_ATTENDEES | CourseDEOMaximumInternalAttendees | ✅ |
+| MAXIMUM_TRAINING_HOURS | CourseDEOMaximumTrainingHours | ✅ |
+| MINIMUM_ATTENDEES | CourseDEOMinimumAttendees | ✅ |
+| MINIMUM_TRAINING_HOURS | CourseDEOMinimumTrainingHours | ✅ |
+| OBJECT_VERSION_NUMBER | CourseDEOObjectVersionNumber | ✅ |
+| PROFESSIONAL_CREDIT_TYPE | CourseDEOProfessionalCreditType | ✅ |
+| PROFESSIONAL_CREDITS | CourseDEOProfessionalCredits | ✅ |
+| SUCCESS_CRITERIA | CourseDEOSuccessCriteria | ✅ |
+| USER_STATUS | CourseDEOUserStatus | ✅ |

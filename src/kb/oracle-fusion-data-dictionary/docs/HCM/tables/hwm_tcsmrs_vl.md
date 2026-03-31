@@ -38,7 +38,6 @@ Visão consolidada que combina dados base e traduções dos resumos de cartão d
 > [!note] Sufixo _VL
 > O sufixo `_VL` indica **view consolidada** que combina automaticamente a tabela `_B` (dados base) com a `_TL` (traduções) para o idioma da sessão.
 
-
 ---
 
 ## 🧠 Propósito de Negócio
@@ -104,6 +103,50 @@ WHERE  t.LANGUAGE = USERENV('LANG')
 
 - View consolidada: combina automaticamente dados base (`_B`) e traduções (`_TL`). Preferir em consultas de leitura.
 - Área funcional: Time Card Summary dentro do Oracle Fusion Cloud HCM.
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[timeattributefieldallocationpvo|TimeAttributeFieldAllocationPVO]] (GL)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| NAME | TimeConsumerVLPEOName | — |
+| TCSMRS_CODE | TimeConsumerVLPEOTcsmrsCode | — |
+| TCSMRS_ID | TimeConsumerVLPEOTcsmrsId | — |
+
+### [[timeattributefieldcomponentpvo|TimeAttributeFieldComponentPVO]] (GL)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| NAME | TimeConsumerVLPEOName | — |
+| TCSMRS_CODE | TimeConsumerVLPEOTcsmrsCode | — |
+| TCSMRS_ID | TimeConsumerVLPEOTcsmrsId | — |
+
+### [[timeattributefieldcustompvo|TimeAttributeFieldCustomPVO]] (GL · BICC: 2/3)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| NAME | TimeConsumerVLPEOName | ✅ |
+| TCSMRS_CODE | TimeConsumerVLPEOTcsmrsCode | ✅ |
+| TCSMRS_ID | TimeConsumerVLPEOTcsmrsId | — |
+
+### [[timeattributefieldpvo|TimeAttributeFieldPVO]] (GL)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| NAME | TimeConsumerVLPEOName | — |
+| TCSMRS_CODE | TimeConsumerVLPEOTcsmrsCode | — |
+| TCSMRS_ID | TimeConsumerVLPEOTcsmrsId | — |
+
+### [[timeconsumerconfigurationpvo|TimeConsumerConfigurationPVO]] (GL · BICC: 3/3)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| NAME | TimeConsumerVLPEOName | ✅ |
+| TCSMRS_CODE | TimeConsumerVLPEOTcsmrsCode | ✅ |
+| TCSMRS_ID | TimeConsumerVLPEOTcsmrsId | ✅ |
 
 ---
 

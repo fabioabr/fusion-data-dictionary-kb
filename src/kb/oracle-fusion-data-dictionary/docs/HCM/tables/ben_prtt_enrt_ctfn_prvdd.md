@@ -38,7 +38,6 @@ updated_at: 2026-03-25
 
 Armazena as **certificações/documentos fornecidos** durante o processo de inscrição de benefícios.
 
-
 ---
 
 ## 🧠 Propósito de Negócio
@@ -98,6 +97,71 @@ WHERE  ROWNUM <= 100;
 
 - Consultar documentação oficial Oracle para detalhes de uso.
 - Tabela do módulo Benefits (Certificações Fornecidas na Inscrição).
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[participantcertificationpvo|ParticipantCertificationPVO]] (HCM · BICC: 10/56)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | ParticipantCertificationPEOBusinessGroupId | — |
+| CREATED_BY | ParticipantCertificationPEOCreatedBy | — |
+| CREATION_DATE | ParticipantCertificationPEOCreationDate | — |
+| CTFN_DETERMINE_LVL_CD | ParticipantCertificationPEOCtfnDetermineLvlCd | ✅ |
+| CVRD_ENRT_CTFN_DND_DT | ParticipantCertificationPEOCvrdEnrtCtfnDndDt | ✅ |
+| CVRD_ENRT_CTFN_RECD_DT | ParticipantCertificationPEOCvrdEnrtCtfnRecdDt | ✅ |
+| ENDED_PER_IN_LER_ID | ParticipantCertificationPEOEndedPerInLerId | — |
+| ENRT_CTFN_DND_DT | ParticipantCertificationPEOEnrtCtfnDndDt | ✅ |
+| ENRT_CTFN_RECD_DT | ParticipantCertificationPEOEnrtCtfnRecdDt | ✅ |
+| ENRT_CTFN_RQD_FLAG | ParticipantCertificationPEOEnrtCtfnRqdFlag | ✅ |
+| ENRT_CTFN_TYP_CD | ParticipantCertificationPEOEnrtCtfnTypCd | ✅ |
+| JOB_DEFINITION_NAME | ParticipantCertificationPEOJobDefinitionName | — |
+| JOB_DEFINITION_PACKAGE | ParticipantCertificationPEOJobDefinitionPackage | — |
+| LAST_UPDATE_DATE | ParticipantCertificationPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ParticipantCertificationPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | ParticipantCertificationPEOLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | ParticipantCertificationPEOObjectVersionNumber | — |
+| PCS_ATTRIBUTE1 | ParticipantCertificationPEOPcsAttribute1 | — |
+| PCS_ATTRIBUTE10 | ParticipantCertificationPEOPcsAttribute10 | — |
+| PCS_ATTRIBUTE11 | ParticipantCertificationPEOPcsAttribute11 | — |
+| PCS_ATTRIBUTE12 | ParticipantCertificationPEOPcsAttribute12 | — |
+| PCS_ATTRIBUTE13 | ParticipantCertificationPEOPcsAttribute13 | — |
+| PCS_ATTRIBUTE14 | ParticipantCertificationPEOPcsAttribute14 | — |
+| PCS_ATTRIBUTE15 | ParticipantCertificationPEOPcsAttribute15 | — |
+| PCS_ATTRIBUTE16 | ParticipantCertificationPEOPcsAttribute16 | — |
+| PCS_ATTRIBUTE17 | ParticipantCertificationPEOPcsAttribute17 | — |
+| PCS_ATTRIBUTE18 | ParticipantCertificationPEOPcsAttribute18 | — |
+| PCS_ATTRIBUTE19 | ParticipantCertificationPEOPcsAttribute19 | — |
+| PCS_ATTRIBUTE2 | ParticipantCertificationPEOPcsAttribute2 | — |
+| PCS_ATTRIBUTE20 | ParticipantCertificationPEOPcsAttribute20 | — |
+| PCS_ATTRIBUTE21 | ParticipantCertificationPEOPcsAttribute21 | — |
+| PCS_ATTRIBUTE22 | ParticipantCertificationPEOPcsAttribute22 | — |
+| PCS_ATTRIBUTE23 | ParticipantCertificationPEOPcsAttribute23 | — |
+| PCS_ATTRIBUTE24 | ParticipantCertificationPEOPcsAttribute24 | — |
+| PCS_ATTRIBUTE25 | ParticipantCertificationPEOPcsAttribute25 | — |
+| PCS_ATTRIBUTE26 | ParticipantCertificationPEOPcsAttribute26 | — |
+| PCS_ATTRIBUTE27 | ParticipantCertificationPEOPcsAttribute27 | — |
+| PCS_ATTRIBUTE28 | ParticipantCertificationPEOPcsAttribute28 | — |
+| PCS_ATTRIBUTE29 | ParticipantCertificationPEOPcsAttribute29 | — |
+| PCS_ATTRIBUTE3 | ParticipantCertificationPEOPcsAttribute3 | — |
+| PCS_ATTRIBUTE30 | ParticipantCertificationPEOPcsAttribute30 | — |
+| PCS_ATTRIBUTE4 | ParticipantCertificationPEOPcsAttribute4 | — |
+| PCS_ATTRIBUTE5 | ParticipantCertificationPEOPcsAttribute5 | — |
+| PCS_ATTRIBUTE6 | ParticipantCertificationPEOPcsAttribute6 | — |
+| PCS_ATTRIBUTE7 | ParticipantCertificationPEOPcsAttribute7 | — |
+| PCS_ATTRIBUTE8 | ParticipantCertificationPEOPcsAttribute8 | — |
+| PCS_ATTRIBUTE9 | ParticipantCertificationPEOPcsAttribute9 | — |
+| PCS_ATTRIBUTE_CATEGORY | ParticipantCertificationPEOPcsAttributeCategory | — |
+| PER_IN_LER_ID | ParticipantCertificationPEOPerInLerId | — |
+| PROGRAM_APP_NAME | ParticipantCertificationPEOProgramAppName | — |
+| PROGRAM_NAME | ParticipantCertificationPEOProgramName | — |
+| PROGRAM_UPDATE_DATE | ParticipantCertificationPEOProgramUpdateDate | — |
+| PRTT_ENRT_ACTN_ID | ParticipantCertificationPEOPrttEnrtActnId | ✅ |
+| PRTT_ENRT_CTFN_PRVDD_ID | ParticipantCertificationPEOPrttEnrtCtfnPrvddId | ✅ |
+| PRTT_ENRT_RSLT_ID | ParticipantCertificationPEOPrttEnrtRsltId | — |
+| REQUEST_ID | ParticipantCertificationPEORequestId | — |
 
 ---
 

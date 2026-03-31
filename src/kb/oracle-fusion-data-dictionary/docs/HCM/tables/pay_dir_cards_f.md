@@ -101,6 +101,31 @@ WHERE  dc.PAYROLL_RELATIONSHIP_ID = :p_rel_id
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[calculationcomponentpvo|CalculationComponentPVO]] (HCM · BICC: 8/16)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | DIRCardDPEOCreatedBy | ✅ |
+| CREATION_DATE | DIRCardDPEOCreationDate | ✅ |
+| CREATOR_TYPE | DIRCardDPEOCreatorType | — |
+| DIR_CARD_DEFINITION_ID | DIRCardDPEODirCardDefinitionId | — |
+| DIR_CARD_ID | DIRCardDPEODirCardId | ✅ |
+| EFFECTIVE_END_DATE | DIRCardDPEOEffectiveEndDate | ✅ |
+| EFFECTIVE_START_DATE | DIRCardDPEOEffectiveStartDate | ✅ |
+| LAST_UPDATE_DATE | DIRCardDPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | DIRCardDPEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | DIRCardDPEOLastUpdatedBy | ✅ |
+| LEGISLATIVE_DATA_GROUP_ID | DIRCardDPEOLegislativeDataGroupId | — |
+| OBJECT_VERSION_NUMBER | DIRCardDPEOObjectVersionNumber | — |
+| PAYROLL_RELATIONSHIP_ID | DIRCardDPEOPayrollRelationshipId | — |
+| SOURCE_ID | DIRCardDPEOSourceId | — |
+| SOURCE_TYPE | DIRCardDPEOSourceType | — |
+| STATUS | DIRCardDPEOStatus | — |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — PAY_DIR_CARDS_F](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/paydircardsf.html)

@@ -63,3 +63,64 @@ updated_at: 2026-03-26
 ## 📎 Uso Típico
 
 (a ser preenchido na etapa 03)
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[requisitiondistributionp1|RequisitionDistributionP1]] (PO · BICC: 1/8)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| APPLICATION_ID | TransactionBizCategoriesApplicationId | — |
+| CLASSIFICATION_CODE | TransactionBizCategoriesClassificationCode | — |
+| CLASSIFICATION_ID | TransactionBizCategoriesClassificationId | — |
+| CLASSIFICATION_NAME | TransactionBizCategoriesClassificationName | ✅ |
+| CONCAT_CLASSIF_CODE | TransactionBizCategoriesConcatClassifCode | — |
+| ENTITY_CODE | TransactionBizCategoriesEntityCode | — |
+| EVENT_CLASS_CODE | TransactionBizCategoriesEventClassCode | — |
+| TAX_EVNT_CLS_CODE | TransactionBizCategoriesTaxEvntClsCode | — |
+
+### [[requisitiondistributionrefpvo|RequisitionDistributionRefPVO]] (PO)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| APPLICATION_ID | TransactionBizCategoriesApplicationId | — |
+| CLASSIFICATION_CODE | TransactionBizCategoriesClassificationCode | — |
+| CLASSIFICATION_ID | TransactionBizCategoriesClassificationId | — |
+| CLASSIFICATION_NAME | TransactionBizCategoriesClassificationName | — |
+| CONCAT_CLASSIF_CODE | TransactionBizCategoriesConcatClassifCode | — |
+| ENTITY_CODE | TransactionBizCategoriesEntityCode | — |
+| EVENT_CLASS_CODE | TransactionBizCategoriesEventClassCode | — |
+| TAX_EVNT_CLS_CODE | TransactionBizCategoriesTaxEvntClsCode | — |
+
+### [[requisitionlinep1|RequisitionLineP1]] (PO · BICC: 1/8)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| APPLICATION_ID | TransactionBizCategoriesApplicationId | — |
+| CLASSIFICATION_CODE | TransactionBizCategoriesClassificationCode | — |
+| CLASSIFICATION_ID | TransactionBizCategoriesClassificationId | — |
+| CLASSIFICATION_NAME | TransactionBizCategoriesClassificationName | ✅ |
+| CONCAT_CLASSIF_CODE | TransactionBizCategoriesConcatClassifCode | — |
+| ENTITY_CODE | TransactionBizCategoriesEntityCode | — |
+| EVENT_CLASS_CODE | TransactionBizCategoriesEventClassCode | — |
+| TAX_EVNT_CLS_CODE | TransactionBizCategoriesTaxEvntClsCode | — |
+
+### [[transactionbizcategoriespvo|TransactionBizCategoriesPVO]] (AR · BICC: 7/13)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| APPLICATION_ID | TrxBizCategoriesApplicationId | ✅ |
+| CLASSIFICATION_CODE | TrxBizCategoriesClassificationCode | ✅ |
+| CLASSIFICATION_CODE_LEVEL | TrxBizCategoriesClassificationCodeLevel | — |
+| CLASSIFICATION_ID | TrxBizCategoriesClassificationId | ✅ |
+| CLASSIFICATION_NAME | TrxBizCategoriesClassificationName | ✅ |
+| CONCAT_CLASSIF_CODE | TrxBizCategoriesConcatClassifCode | — |
+| CONCAT_CLASSIF_NAME | TrxBizCategoriesConcatClassifName | — |
+| COUNTRY_CODE | TrxBizCategoriesCountryCode | — |
+| EFFECTIVE_FROM | TrxBizCategoriesEffectiveFrom | — |
+| EFFECTIVE_TO | TrxBizCategoriesEffectiveTo | — |
+| ENTITY_CODE | TrxBizCategoriesEntityCode | ✅ |
+| EVENT_CLASS_CODE | TrxBizCategoriesEventClassCode | ✅ |
+| TAX_EVNT_CLS_CODE | TrxBizCategoriesTaxEvntClsCode | ✅ |

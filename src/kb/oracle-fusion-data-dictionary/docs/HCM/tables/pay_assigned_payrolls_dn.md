@@ -99,6 +99,31 @@ WHERE  dn.PAYROLL_ID = :p_payroll_id;
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[biassignedpayrollpvo|BIAssignedPayrollPVO]] (HCM · BICC: 16/16)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ASSIGNED_PAYROLL_ID | PayrollUsagePEOAssignedPayrollId | ✅ |
+| CREATED_BY | PayrollUsagePEOCreatedBy | ✅ |
+| CREATION_DATE | PayrollUsagePEOCreationDate | ✅ |
+| END_DATE | PayrollUsagePEOEndDate | ✅ |
+| FINC | PayrollUsagePEOFinc | ✅ |
+| FSED | PayrollUsagePEOFsed | ✅ |
+| LAST_UPDATE_DATE | PayrollUsagePEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | PayrollUsagePEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | PayrollUsagePEOLastUpdatedBy | ✅ |
+| LEGISLATIVE_DATA_GROUP_ID | PayrollUsagePEOLegislativeDataGroupId | ✅ |
+| LSED | PayrollUsagePEOLsed | ✅ |
+| LSPD | PayrollUsagePEOLspd | ✅ |
+| OBJECT_VERSION_NUMBER | PayrollUsagePEOObjectVersionNumber | ✅ |
+| PAYROLL_ID | PayrollUsagePEOPayrollId | ✅ |
+| PAYROLL_TERM_ID | PayrollUsagePEOPayrollTermId | ✅ |
+| START_DATE | PayrollUsagePEOStartDate | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — PAY_ASSIGNED_PAYROLLS_DN](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/payassignedpayrollsdn.html)

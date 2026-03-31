@@ -92,6 +92,18 @@ WHERE  NVL(s.ENABLED_FLAG,'Y') = 'Y';
 
 - Tabela base (sufixo `_B`) — traduções em [[hrq_subscribers_tl]].
 
+---
+
+## 🔗 PVOs Relacionados
+
+### [[questionnairequestionsubscriberpvo|QuestionnaireQuestionSubscriberPVO]] (HCM · BICC: 3/4)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | SubscriberBPEOBusinessGroupId | ✅ |
+| LAST_UPDATE_DATE | SubscriberBPEOLastUpdateDate | ✅ |
+| SUBSCRIBER_CODE | SubscriberBPEOSubscriberCode | — |
+| SUBSCRIBER_ID | SubscriberBPEOSubscriberId | ✅ |
 
 ---
 

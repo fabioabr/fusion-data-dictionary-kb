@@ -116,6 +116,76 @@ WHERE  ed.INCIDENT_ID = :p_incident_id;
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[hnssuggimproveventpvo|HNSSuggImprovEventPVO]] (HCM · BICC: 10/61)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ATTRIBUTE1 | HNSSuggImprovEventPEOAttribute1 | — |
+| ATTRIBUTE10 | HNSSuggImprovEventPEOAttribute10 | — |
+| ATTRIBUTE11 | HNSSuggImprovEventPEOAttribute11 | — |
+| ATTRIBUTE12 | HNSSuggImprovEventPEOAttribute12 | — |
+| ATTRIBUTE13 | HNSSuggImprovEventPEOAttribute13 | — |
+| ATTRIBUTE14 | HNSSuggImprovEventPEOAttribute14 | — |
+| ATTRIBUTE15 | HNSSuggImprovEventPEOAttribute15 | — |
+| ATTRIBUTE16 | HNSSuggImprovEventPEOAttribute16 | — |
+| ATTRIBUTE17 | HNSSuggImprovEventPEOAttribute17 | — |
+| ATTRIBUTE18 | HNSSuggImprovEventPEOAttribute18 | — |
+| ATTRIBUTE19 | HNSSuggImprovEventPEOAttribute19 | — |
+| ATTRIBUTE2 | HNSSuggImprovEventPEOAttribute2 | — |
+| ATTRIBUTE20 | HNSSuggImprovEventPEOAttribute20 | — |
+| ATTRIBUTE21 | HNSSuggImprovEventPEOAttribute21 | — |
+| ATTRIBUTE22 | HNSSuggImprovEventPEOAttribute22 | — |
+| ATTRIBUTE23 | HNSSuggImprovEventPEOAttribute23 | — |
+| ATTRIBUTE24 | HNSSuggImprovEventPEOAttribute24 | — |
+| ATTRIBUTE25 | HNSSuggImprovEventPEOAttribute25 | — |
+| ATTRIBUTE26 | HNSSuggImprovEventPEOAttribute26 | — |
+| ATTRIBUTE27 | HNSSuggImprovEventPEOAttribute27 | — |
+| ATTRIBUTE28 | HNSSuggImprovEventPEOAttribute28 | — |
+| ATTRIBUTE29 | HNSSuggImprovEventPEOAttribute29 | — |
+| ATTRIBUTE3 | HNSSuggImprovEventPEOAttribute3 | — |
+| ATTRIBUTE30 | HNSSuggImprovEventPEOAttribute30 | — |
+| ATTRIBUTE4 | HNSSuggImprovEventPEOAttribute4 | — |
+| ATTRIBUTE5 | HNSSuggImprovEventPEOAttribute5 | — |
+| ATTRIBUTE6 | HNSSuggImprovEventPEOAttribute6 | — |
+| ATTRIBUTE7 | HNSSuggImprovEventPEOAttribute7 | — |
+| ATTRIBUTE8 | HNSSuggImprovEventPEOAttribute8 | — |
+| ATTRIBUTE9 | HNSSuggImprovEventPEOAttribute9 | — |
+| ATTRIBUTE_CATEGORY | HNSSuggImprovEventPEOAttrCategory | — |
+| ATTRIBUTE_NUMBER1 | HNSSuggImprovEventPEOAttrNumber1 | — |
+| ATTRIBUTE_NUMBER10 | HNSSuggImprovEventPEOAttrNumber10 | — |
+| ATTRIBUTE_NUMBER2 | HNSSuggImprovEventPEOAttrNumber2 | — |
+| ATTRIBUTE_NUMBER3 | HNSSuggImprovEventPEOAttrNumber3 | — |
+| ATTRIBUTE_NUMBER4 | HNSSuggImprovEventPEOAttrNumber4 | — |
+| ATTRIBUTE_NUMBER5 | HNSSuggImprovEventPEOAttrNumber5 | — |
+| ATTRIBUTE_NUMBER6 | HNSSuggImprovEventPEOAttrNumber6 | — |
+| ATTRIBUTE_NUMBER7 | HNSSuggImprovEventPEOAttrNumber7 | — |
+| ATTRIBUTE_NUMBER8 | HNSSuggImprovEventPEOAttrNumber8 | — |
+| ATTRIBUTE_NUMBER9 | HNSSuggImprovEventPEOAttrNumber9 | — |
+| ATTRIBUTE_TIMESTAMP1 | HNSSuggImprovEventPEOAttrTimestamp1 | — |
+| ATTRIBUTE_TIMESTAMP10 | HNSSuggImprovEventPEOAttrTimestamp10 | — |
+| ATTRIBUTE_TIMESTAMP2 | HNSSuggImprovEventPEOAttrTimestamp2 | — |
+| ATTRIBUTE_TIMESTAMP3 | HNSSuggImprovEventPEOAttrTimestamp3 | — |
+| ATTRIBUTE_TIMESTAMP4 | HNSSuggImprovEventPEOAttrTimestamp4 | — |
+| ATTRIBUTE_TIMESTAMP5 | HNSSuggImprovEventPEOAttrTimestamp5 | — |
+| ATTRIBUTE_TIMESTAMP6 | HNSSuggImprovEventPEOAttrTimestamp6 | — |
+| ATTRIBUTE_TIMESTAMP7 | HNSSuggImprovEventPEOAttrTimestamp7 | — |
+| ATTRIBUTE_TIMESTAMP8 | HNSSuggImprovEventPEOAttrTimestamp8 | — |
+| ATTRIBUTE_TIMESTAMP9 | HNSSuggImprovEventPEOAttrTimestamp9 | — |
+| CREATED_BY | HNSSuggImprovEventPEOCreatedBy | ✅ |
+| CREATION_DATE | HNSSuggImprovEventPEOCrtnDate | ✅ |
+| DELETED_FLAG | HNSSuggImprovEventPEODelFlag | ✅ |
+| IMPROVEMENT_TYPE_CODE | HNSSuggImprovEventPEOImprvTypCd | ✅ |
+| INCIDENT_DETAIL_ID | HNSSuggImprovEventPEOIncDtlId | ✅ |
+| LAST_UPDATE_DATE | HNSSuggImprovEventPEOLastUpdtDt | ✅ |
+| LAST_UPDATE_LOGIN | HNSSuggImprovEventPEOLastUpdtLgn | ✅ |
+| LAST_UPDATED_BY | HNSSuggImprovEventPEOLastUpdtdBy | ✅ |
+| OBJECT_VERSION_NUMBER | HNSSuggImprovEventPEOObjVerNumber | ✅ |
+| SUGG_IMPROV_EVT_DETAIL_ID | HNSSuggImprovEventPEOSuggImpEvtDtlId | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — HNS_SUGG_IMPROV_EVT_DETAIL](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/hnssuggimprovevtdetail.html)

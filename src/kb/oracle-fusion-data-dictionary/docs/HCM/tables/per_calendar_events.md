@@ -106,6 +106,31 @@ ORDER BY pce.EVENT_DATE;
 - Eventos recorrentes (`RECURRING_FLAG = 'Y'`) são repetidos automaticamente a cada ano.
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[scheduleexceptionpvo|ScheduleExceptionPVO]] (GL · BICC: 3/16)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | CalendarEventsPEOBusinessGroupId | — |
+| CALENDAR_EVENT_ID | CalendarEventsPEOCalendarEventId | — |
+| CATEGORY | CalendarEventsPEOCategory | — |
+| COVERAGE_TYPE | CalendarEventsPEOCoverageType | — |
+| CREATED_BY | CalendarEventsPEOCreatedBy | — |
+| CREATION_DATE | CalendarEventsPEOCreationDate | — |
+| END_DATE_TIME | CalendarEventsPEOEndDateTime | ✅ |
+| LAST_UPDATE_DATE | CalendarEventsPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | CalendarEventsPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | CalendarEventsPEOLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | CalendarEventsPEOObjectVersionNumber | — |
+| SHORT_CODE | CalendarEventsPEOShortCode | — |
+| START_DATE_TIME | CalendarEventsPEOStartDateTime | ✅ |
+| TREE_CODE | CalendarEventsPEOTreeCode | — |
+| TREE_STRUCTURE_CODE | CalendarEventsPEOTreeStructureCode | — |
+| TREE_VERSION_ID | CalendarEventsPEOTreeVersionId | — |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — PER_CALENDAR_EVENTS](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/percalendarevents.html)

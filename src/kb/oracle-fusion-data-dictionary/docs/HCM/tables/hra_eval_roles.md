@@ -114,6 +114,37 @@ WHERE  r.PERSON_ID = :p_person_id;
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[evalroleextractpvo|EvalRoleExtractPVO]] (HCM · BICC: 12/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | BusinessGroupId | ✅ |
+| CREATED_BY | CreatedBy | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| EVAL_ROLE_ID | EvalRoleId | ✅ |
+| EVALUATION_ID | EvaluationId | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | LastUpdatedBy | ✅ |
+| MINIMUM_NUM_PCPNS | MinimumNumPcpns | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | ✅ |
+| ROLE_TYPE_CODE | RoleTypeCode | ✅ |
+| TMPL_ROLE_ID | TmplRoleId | ✅ |
+
+### [[evaluationparticipantrolepvo|EvaluationParticipantRolePVO]] (HCM · BICC: 3/5)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| EVAL_ROLE_ID | EvalRoleId | ✅ |
+| LAST_UPDATE_DATE | EvalRolePEOLastUpdateDate | ✅ |
+| MINIMUM_NUM_PCPNS | EvalRolePEOMinimumNumPcpns | — |
+| ROLE_TYPE_CODE | EvalRolePEORoleTypeCode | ✅ |
+| TMPL_ROLE_ID | EvalRolePEOTmplRoleId | — |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — HRA_EVAL_ROLES](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/hraevalroles.html)

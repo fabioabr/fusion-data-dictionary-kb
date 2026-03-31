@@ -105,3 +105,94 @@ WHERE  q.CONTENT_TYPE_ID = :p_content_type_id
 
 - [Oracle Docs — HRT_QUALIFIERS_B](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/hrtqualifiersb.html)
 - [[hcm-module-data-dictionary]] — Dossie do modulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[competencypvo|CompetencyPVO]] (HCM · BICC: 3/6)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | QualifiersBEOBusinessGroupId9 | — |
+| LAST_UPDATE_DATE | QualifiersBEOLastUpdateDate | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber1 | — |
+| QUALIFIER_CODE | QualifiersBEOQualifierCode | ✅ |
+| QUALIFIER_ID | QualifiersBEOQualifierId | ✅ |
+| QUALIFIER_SET_ID | QualifierSetId | — |
+
+### [[potentialpvo|PotentialPVO]] (HCM · BICC: 1/4)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | SBusinessGroupId | — |
+| LAST_UPDATE_DATE | SourcesBPEOLastUpdateDate | ✅ |
+| QUALIFIER_CODE | SourceCode | — |
+| QUALIFIER_ID | SourceId1 | — |
+
+### [[potentialpvo_viewall|PotentialPVO_Viewall]] (HCM · BICC: 1/4)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | SBusinessGroupId | — |
+| LAST_UPDATE_DATE | SourcesBPEOLastUpdateDate | ✅ |
+| QUALIFIER_CODE | SourceCode | — |
+| QUALIFIER_ID | SourceId1 | — |
+
+### [[qualifierspvo|QualifiersPVO]] (HCM · BICC: 17/17)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | QualifiersBPEOBusinessGroupId | ✅ |
+| CREATED_BY | QualifiersBPEOCreatedBy | ✅ |
+| CREATION_DATE | QualifiersBPEOCreationDate | ✅ |
+| EMP_DEF_FLAG | QualifiersBPEOEmpDefFlag | ✅ |
+| EMP_VIEW_FLAG | QualifiersBPEOEmpViewFlag | ✅ |
+| LAST_UPDATE_DATE | QualifiersBPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | QualifiersBPEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | QualifiersBPEOLastUpdatedBy | ✅ |
+| MGR_DEF_FLAG | QualifiersBPEOMgrDefFlag | ✅ |
+| MGR_VIEW_FLAG | QualifiersBPEOMgrViewFlag | ✅ |
+| MODULE_ID | QualifiersBPEOModuleId | ✅ |
+| OBJECT_VERSION_NUMBER | QualifiersBPEOObjectVersionNumber | ✅ |
+| QUALIFIER_CODE | QualifiersBPEOQualifierCode | ✅ |
+| QUALIFIER_ID | QualifiersBPEOQualifierId | ✅ |
+| QUALIFIER_SEQ_NUMBER | QualifiersBPEOQualifierSeqNumber | ✅ |
+| QUALIFIER_SET_ID | QualifiersBPEOQualifierSetId | ✅ |
+| SEARCH_FLAG | QualifiersBPEOSearchFlag | ✅ |
+
+### [[riskpvo|RiskPVO]] (HCM · BICC: 1/4)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | SBusinessGroupId | — |
+| LAST_UPDATE_DATE | SourcesBPEOLastUpdateDate | ✅ |
+| QUALIFIER_CODE | SourceCode | — |
+| QUALIFIER_ID | SourceId1 | — |
+
+### [[riskpvo_viewall|RiskPVO_Viewall]] (HCM · BICC: 1/4)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | SBusinessGroupId | — |
+| LAST_UPDATE_DATE | SourcesBPEOLastUpdateDate | ✅ |
+| QUALIFIER_CODE | SourceCode | — |
+| QUALIFIER_ID | SourceId1 | — |
+
+### [[talentscorepvo|TalentScorePVO]] (HCM · BICC: 1/13)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | BusinessGroupId | — |
+| BUSINESS_GROUP_ID | SBPEOBusinessGroupId | — |
+| EMP_DEF_FLAG | EmpDefFlag | — |
+| EMP_VIEW_FLAG | EmpViewFlag | — |
+| MGR_DEF_FLAG | MgrDefFlag | — |
+| MGR_VIEW_FLAG | MgrViewFlag | — |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | — |
+| QUALIFIER_CODE | QualifierCode | — |
+| QUALIFIER_CODE | SourcesBPEOSourceCode | ✅ |
+| QUALIFIER_ID | QualifierId | — |
+| QUALIFIER_ID | SourcesBPEOSourceId | — |
+| QUALIFIER_SEQ_NUMBER | QualifierSeqNumber | — |
+| QUALIFIER_SET_ID | QualifierSetId | — |

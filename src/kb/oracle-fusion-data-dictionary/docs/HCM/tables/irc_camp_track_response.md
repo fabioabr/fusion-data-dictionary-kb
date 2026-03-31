@@ -106,3 +106,23 @@ GROUP BY ctr.RESPONSE_TYPE;
 
 - [Oracle Docs -- IRC_CAMP_TRACK_RESPONSE](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/irccamptrackresponse.html)
 - [[hcm-module-data-dictionary]] -- Dossie do modulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[camptrackresppvo|CampTrackRespPVO]] (HCM · BICC: 2/11)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CAMPAIGN_ID | CampTrackRespPEOCampaignId | — |
+| CREATED_BY | CampTrackRespPEOCreatedBy | — |
+| CREATION_DATE | CampTrackRespPEOCreationDate | — |
+| GOAL_ID | CampTrackRespPEOGoalId | — |
+| GOAL_RESPONSE_ID | CampTrackRespPEOGoalResponseId | — |
+| LAST_UPDATE_DATE | CampTrackRespPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | CampTrackRespPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | CampTrackRespPEOLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | CampTrackRespPEOObjectVersionNumber | — |
+| PERSON_ID | CampTrackRespPEOPersonId | — |
+| TRACK_RESPONSE_ID | TrackResponseId | ✅ |

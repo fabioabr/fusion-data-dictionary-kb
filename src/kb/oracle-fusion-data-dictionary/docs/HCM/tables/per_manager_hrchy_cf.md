@@ -115,3 +115,66 @@ ORDER BY mh.MANAGER_LEVEL;
 
 - [Oracle Docs — PER_MANAGER_HRCHY_CF](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/permanagerhrhycf.html)
 - [[hcm-module-data-dictionary]] — Dossiê do módulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[managerhrchybottomuppvolinemanager|ManagerHrchyBottomUpPVOLineManager]] (HCM · BICC: 6/54)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ASSIGNMENT_ID | AssignmentId | ✅ |
+| CREATED_BY | CreatedBy | — |
+| CREATION_DATE | CreationDate | — |
+| EFFECTIVE_END_DATE | EffectiveEndDate | ✅ |
+| EFFECTIVE_START_DATE | EffectiveStartDate | ✅ |
+| ENTERPRISE_ID | EnterpriseId | — |
+| JOB_DEFINITION_NAME | JobDefinitionName | — |
+| JOB_DEFINITION_PACKAGE | JobDefinitionPackage | — |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | — |
+| LAST_UPDATED_BY | LastUpdatedBy | — |
+| LEVEL10_MANAGER_ASSIGNMENT_ID | Level10ManagerAssignmentId | — |
+| LEVEL10_MANAGER_ID | Level10ManagerId | — |
+| LEVEL11_MANAGER_ASSIGNMENT_ID | Level11ManagerAssignmentId | — |
+| LEVEL11_MANAGER_ID | Level11ManagerId | — |
+| LEVEL12_MANAGER_ASSIGNMENT_ID | Level12ManagerAssignmentId | — |
+| LEVEL12_MANAGER_ID | Level12ManagerId | — |
+| LEVEL13_MANAGER_ASSIGNMENT_ID | Level13ManagerAssignmentId | — |
+| LEVEL13_MANAGER_ID | Level13ManagerId | — |
+| LEVEL14_MANAGER_ASSIGNMENT_ID | Level14ManagerAssignmentId | — |
+| LEVEL14_MANAGER_ID | Level14ManagerId | — |
+| LEVEL15_MANAGER_ASSIGNMENT_ID | Level15ManagerAssignmentId | — |
+| LEVEL15_MANAGER_ID | Level15ManagerId | — |
+| LEVEL16_MANAGER_ASSIGNMENT_ID | Level16ManagerAssignmentId | — |
+| LEVEL16_MANAGER_ID | Level16ManagerId | — |
+| LEVEL17_MANAGER_ASSIGNMENT_ID | Level17ManagerAssignmentId | — |
+| LEVEL17_MANAGER_ID | Level17ManagerId | — |
+| LEVEL18_MANAGER_ASSIGNMENT_ID | Level18ManagerAssignmentId | — |
+| LEVEL18_MANAGER_ID | Level18ManagerId | — |
+| LEVEL19_MANAGER_ASSIGNMENT_ID | Level19ManagerAssignmentId | — |
+| LEVEL19_MANAGER_ID | Level19ManagerId | — |
+| LEVEL1_MANAGER_ASSIGNMENT_ID | Level1ManagerAssignmentId | — |
+| LEVEL1_MANAGER_ID | Level1ManagerId | — |
+| LEVEL20_MANAGER_ASSIGNMENT_ID | Level20ManagerAssignmentId | — |
+| LEVEL20_MANAGER_ID | Level20ManagerId | — |
+| LEVEL2_MANAGER_ASSIGNMENT_ID | Level2ManagerAssignmentId | — |
+| LEVEL2_MANAGER_ID | Level2ManagerId | — |
+| LEVEL3_MANAGER_ASSIGNMENT_ID | Level3ManagerAssignmentId | — |
+| LEVEL3_MANAGER_ID | Level3ManagerId | — |
+| LEVEL4_MANAGER_ASSIGNMENT_ID | Level4ManagerAssignmentId | — |
+| LEVEL4_MANAGER_ID | Level4ManagerId | — |
+| LEVEL5_MANAGER_ASSIGNMENT_ID | Level5ManagerAssignmentId | — |
+| LEVEL5_MANAGER_ID | Level5ManagerId | — |
+| LEVEL6_MANAGER_ASSIGNMENT_ID | Level6ManagerAssignmentId | — |
+| LEVEL6_MANAGER_ID | Level6ManagerId | — |
+| LEVEL7_MANAGER_ASSIGNMENT_ID | Level7ManagerAssignmentId | — |
+| LEVEL7_MANAGER_ID | Level7ManagerId | — |
+| LEVEL8_MANAGER_ASSIGNMENT_ID | Level8ManagerAssignmentId | — |
+| LEVEL8_MANAGER_ID | Level8ManagerId | — |
+| LEVEL9_MANAGER_ASSIGNMENT_ID | Level9ManagerAssignmentId | — |
+| LEVEL9_MANAGER_ID | Level9ManagerId | — |
+| MANAGER_TYPE | ManagerType | ✅ |
+| PERSON_ID | PersonId | ✅ |
+| REQUEST_ID | RequestId | — |

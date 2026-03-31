@@ -155,6 +155,323 @@ ORDER BY total_gasto DESC;
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[expenseattendeepvo|ExpenseAttendeePVO]] (OTHER · BICC: 1/27)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CATEGORY_CODE | ExpenseTypePEOCategoryCode | — |
+| CC_RECEIPT_REQUIRED_FLAG | ExpenseTypePEOCcReceiptRequiredFlag | — |
+| CC_RECEIPT_THRESHOLD | ExpenseTypePEOCcReceiptThreshold | — |
+| CODE_COMBINATION_ID | ExpenseTypePEOCodeCombinationId | — |
+| CREATED_BY | ExpenseTypePEOCreatedBy | — |
+| CREATION_DATE | ExpenseTypePEOCreationDate | — |
+| DEFAULT_PROJ_EXPEND_TYPE | ExpenseTypePEODefaultProjExpendType | — |
+| DESCRIPTION | ExpenseTypePEODescription | — |
+| DISP_RCPT_VIOLATION_FLAG | ExpenseTypePEODispRcptViolationFlag | — |
+| ENABLE_PROJECTS_FLAG | ExpenseTypePEOEnableProjectsFlag | — |
+| END_DATE | ExpenseTypePEOEndDate | — |
+| EXPENSE_TEMPLATE_ID | ExpenseTypePEOExpenseTemplateId | — |
+| EXPENSE_TYPE_ID | ExpenseTypePEOExpenseTypeId | — |
+| ITEMIZATION_BEHAVIOUR_CODE | ExpenseTypePEOItemizationBehaviourCode | — |
+| ITEMIZATION_ONLY_FLAG | ExpenseTypePEOItemizationOnlyFlag | — |
+| LAST_UPDATE_DATE | ExpenseTypePEOLastUpdateDate | — |
+| LAST_UPDATE_LOGIN | ExpenseTypePEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | ExpenseTypePEOLastUpdatedBy | — |
+| NAME | ExpenseTypePEOName | ✅ |
+| NEGATIVE_RCPT_REQ_CODE | ExpenseTypePEONegativeRcptReqCode | — |
+| OBJECT_VERSION_NUMBER | ExpenseTypePEOObjectVersionNumber1 | — |
+| ORG_ID | ExpenseTypePEOOrgId1 | — |
+| RCPT_REQUIRED_PROJ_FLAG | ExpenseTypePEORcptRequiredProjFlag | — |
+| RECEIPT_REQUIRED_FLAG | ExpenseTypePEOReceiptRequiredFlag | — |
+| RECEIPT_THRESHOLD | ExpenseTypePEOReceiptThreshold | — |
+| START_DATE | ExpenseTypePEOStartDate | — |
+| TAX_CLASSIFICATION_CODE | ExpenseTypePEOTaxClassificationCode | — |
+
+### [[expensedistributionpvo|ExpenseDistributionPVO]] (OTHER · BICC: 1/27)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CATEGORY_CODE | ExpenseTypePEOCategoryCode | — |
+| CC_RECEIPT_REQUIRED_FLAG | ExpenseTypePEOCcReceiptRequiredFlag | — |
+| CC_RECEIPT_THRESHOLD | ExpenseTypePEOCcReceiptThreshold | — |
+| CODE_COMBINATION_ID | ExpenseTypePEOCodeCombinationId | — |
+| CREATED_BY | ExpenseTypePEOCreatedBy | — |
+| CREATION_DATE | ExpenseTypePEOCreationDate | — |
+| DEFAULT_PROJ_EXPEND_TYPE | ExpenseTypePEODefaultProjExpendType | — |
+| DESCRIPTION | ExpenseTypePEODescription | — |
+| DISP_RCPT_VIOLATION_FLAG | ExpenseTypePEODispRcptViolationFlag | — |
+| ENABLE_PROJECTS_FLAG | ExpenseTypePEOEnableProjectsFlag | — |
+| END_DATE | ExpenseTypePEOEndDate | — |
+| EXPENSE_TEMPLATE_ID | ExpenseTypePEOExpenseTemplateId | — |
+| EXPENSE_TYPE_ID | ExpenseTypePEOExpenseTypeId | — |
+| ITEMIZATION_BEHAVIOUR_CODE | ExpenseTypePEOItemizationBehaviourCode | — |
+| ITEMIZATION_ONLY_FLAG | ExpenseTypePEOItemizationOnlyFlag | — |
+| LAST_UPDATE_DATE | ExpenseTypePEOLastUpdateDate | — |
+| LAST_UPDATE_LOGIN | ExpenseTypePEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | ExpenseTypePEOLastUpdatedBy | — |
+| NAME | ExpenseTypePEOName | ✅ |
+| NEGATIVE_RCPT_REQ_CODE | ExpenseTypePEONegativeRcptReqCode | — |
+| OBJECT_VERSION_NUMBER | ExpenseTypePEOObjectVersionNumber1 | — |
+| ORG_ID | ExpenseTypePEOOrgId1 | — |
+| RCPT_REQUIRED_PROJ_FLAG | ExpenseTypePEORcptRequiredProjFlag | — |
+| RECEIPT_REQUIRED_FLAG | ExpenseTypePEOReceiptRequiredFlag | — |
+| RECEIPT_THRESHOLD | ExpenseTypePEOReceiptThreshold | — |
+| START_DATE | ExpenseTypePEOStartDate | — |
+| TAX_CLASSIFICATION_CODE | ExpenseTypePEOTaxClassificationCode | — |
+
+### [[expensepvo|ExpensePVO]] (OTHER · BICC: 2/27)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CATEGORY_CODE | ExpenseTypePEOCategoryCode | — |
+| CC_RECEIPT_REQUIRED_FLAG | ExpenseTypePEOCcReceiptRequiredFlag | — |
+| CC_RECEIPT_THRESHOLD | ExpenseTypePEOCcReceiptThreshold | — |
+| CODE_COMBINATION_ID | ExpenseTypePEOCodeCombinationId | — |
+| CREATED_BY | ExpenseTypePEOCreatedBy | — |
+| CREATION_DATE | ExpenseTypePEOCreationDate | — |
+| DEFAULT_PROJ_EXPEND_TYPE | ExpenseTypePEODefaultProjExpendType | — |
+| DESCRIPTION | ExpenseTypePEODescription | — |
+| DISP_RCPT_VIOLATION_FLAG | ExpenseTypePEODispRcptViolationFlag | — |
+| ENABLE_PROJECTS_FLAG | ExpenseTypePEOEnableProjectsFlag | — |
+| END_DATE | ExpenseTypePEOEndDate | — |
+| EXPENSE_TEMPLATE_ID | ExpenseTypePEOExpenseTemplateId | — |
+| EXPENSE_TYPE_ID | ExpenseTypePEOExpenseTypeId | — |
+| ITEMIZATION_BEHAVIOUR_CODE | ExpenseTypePEOItemizationBehaviourCode | — |
+| ITEMIZATION_ONLY_FLAG | ExpenseTypePEOItemizationOnlyFlag | — |
+| LAST_UPDATE_DATE | ExpenseTypePEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ExpenseTypePEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | ExpenseTypePEOLastUpdatedBy | — |
+| NAME | ExpenseTypePEOName | ✅ |
+| NEGATIVE_RCPT_REQ_CODE | ExpenseTypePEONegativeRcptReqCode | — |
+| OBJECT_VERSION_NUMBER | ExpenseTypePEOObjectVersionNumber1 | — |
+| ORG_ID | ExpenseTypePEOOrgId1 | — |
+| RCPT_REQUIRED_PROJ_FLAG | ExpenseTypePEORcptRequiredProjFlag | — |
+| RECEIPT_REQUIRED_FLAG | ExpenseTypePEOReceiptRequiredFlag | — |
+| RECEIPT_THRESHOLD | ExpenseTypePEOReceiptThreshold | — |
+| START_DATE | ExpenseTypePEOStartDate | — |
+| TAX_CLASSIFICATION_CODE | ExpenseTypePEOTaxClassificationCode | — |
+
+### [[expensetypeextractpvo|ExpenseTypeExtractPVO]] (OTHER · BICC: 19/57)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CATEGORY_CODE | ExpenseTypeCategoryCode | ✅ |
+| CC_RECEIPT_REQUIRED_FLAG | ExpenseTypeCcReceiptRequiredFlag | ✅ |
+| CC_RECEIPT_THRESHOLD | ExpenseTypeCcReceiptThreshold | ✅ |
+| CODE_COMBINATION_ID | ExpenseTypeCodeCombinationId | — |
+| CREATED_BY | ExpenseTypeCreatedBy | — |
+| CREATION_DATE | ExpenseTypeCreationDate | ✅ |
+| DEFAULT_PROJ_EXPEND_TYPE | ExpenseTypeDefaultProjExpendType | — |
+| DESCRIPTION | ExpenseTypeDescription | ✅ |
+| DISP_RCPT_VIOLATION_FLAG | ExpenseTypeDispRcptViolationFlag | ✅ |
+| ENABLE_PROJECTS_FLAG | ExpenseTypeEnableProjectsFlag | — |
+| END_DATE | ExpenseTypeEndDate | ✅ |
+| EXPENSE_TEMPLATE_ID | ExpenseTypeTemplateId | ✅ |
+| EXPENSE_TYPE_ID | ExpenseTypeId | ✅ |
+| ITEMIZATION_BEHAVIOUR_CODE | ExpenseTypeItemizationBehaviourCode | ✅ |
+| ITEMIZATION_ONLY_FLAG | ExpenseTypeItemizationOnlyFlag | ✅ |
+| LAST_UPDATE_DATE | ExpenseTypeLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ExpenseTypeLastUpdateLogin | — |
+| LAST_UPDATED_BY | ExpenseTypeLastUpdatedBy | — |
+| NAME | ExpenseTypeName | ✅ |
+| NEGATIVE_RCPT_REQ_CODE | ExpenseTypeNegativeRcptReqCode | ✅ |
+| OBJECT_VERSION_NUMBER | ExpenseTypeObjectVersionNumber | — |
+| ORG_ID | ExpenseTypeOrgId | ✅ |
+| RCPT_REQUIRED_PROJ_FLAG | ExpenseTypeRcptRequiredProjFlag | ✅ |
+| RECEIPT_REQUIRED_FLAG | ExpenseTypeReceiptRequiredFlag | ✅ |
+| RECEIPT_THRESHOLD | ExpenseTypeReceiptThreshold | ✅ |
+| SEGMENT1 | ExpenseTypeSegment1 | — |
+| SEGMENT10 | ExpenseTypeSegment10 | — |
+| SEGMENT11 | ExpenseTypeSegment11 | — |
+| SEGMENT12 | ExpenseTypeSegment12 | — |
+| SEGMENT13 | ExpenseTypeSegment13 | — |
+| SEGMENT14 | ExpenseTypeSegment14 | — |
+| SEGMENT15 | ExpenseTypeSegment15 | — |
+| SEGMENT16 | ExpenseTypeSegment16 | — |
+| SEGMENT17 | ExpenseTypeSegment17 | — |
+| SEGMENT18 | ExpenseTypeSegment18 | — |
+| SEGMENT19 | ExpenseTypeSegment19 | — |
+| SEGMENT2 | ExpenseTypeSegment2 | — |
+| SEGMENT20 | ExpenseTypeSegment20 | — |
+| SEGMENT21 | ExpenseTypeSegment21 | — |
+| SEGMENT22 | ExpenseTypeSegment22 | — |
+| SEGMENT23 | ExpenseTypeSegment23 | — |
+| SEGMENT24 | ExpenseTypeSegment24 | — |
+| SEGMENT25 | ExpenseTypeSegment25 | — |
+| SEGMENT26 | ExpenseTypeSegment26 | — |
+| SEGMENT27 | ExpenseTypeSegment27 | — |
+| SEGMENT28 | ExpenseTypeSegment28 | — |
+| SEGMENT29 | ExpenseTypeSegment29 | — |
+| SEGMENT3 | ExpenseTypeSegment3 | — |
+| SEGMENT30 | ExpenseTypeSegment30 | — |
+| SEGMENT4 | ExpenseTypeSegment4 | — |
+| SEGMENT5 | ExpenseTypeSegment5 | — |
+| SEGMENT6 | ExpenseTypeSegment6 | — |
+| SEGMENT7 | ExpenseTypeSegment7 | — |
+| SEGMENT8 | ExpenseTypeSegment8 | — |
+| SEGMENT9 | ExpenseTypeSegment9 | — |
+| START_DATE | ExpenseTypeStartDate | — |
+| TAX_CLASSIFICATION_CODE | ExpenseTypeTaxClassificationCode | ✅ |
+
+### [[expensetypepvo|ExpenseTypePVO]] (OTHER · BICC: 7/54)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CATEGORY_CODE | CategoryCode | ✅ |
+| CODE_COMBINATION_ID | CodeCombinationId | — |
+| CREATED_BY | CreatedBy | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| DEFAULT_PROJ_EXPEND_TYPE | DefaultProjExpendType | — |
+| DESCRIPTION | Description | — |
+| DISP_RCPT_VIOLATION_FLAG | DispRcptViolationFlag | — |
+| ENABLE_PROJECTS_FLAG | EnableProjectsFlag | — |
+| END_DATE | EndDate | — |
+| EXPENSE_TEMPLATE_ID | ExpenseTemplateId | — |
+| EXPENSE_TYPE_ID | ExpenseTypeId | ✅ |
+| ITEMIZATION_BEHAVIOUR_CODE | ItemizationBehaviourCode | — |
+| ITEMIZATION_ONLY_FLAG | ItemizationOnlyFlag | — |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | — |
+| LAST_UPDATED_BY | LastUpdatedBy | ✅ |
+| NAME | Name | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | — |
+| ORG_ID | OrgId | — |
+| RCPT_REQUIRED_PROJ_FLAG | RcptRequiredProjFlag | — |
+| RECEIPT_REQUIRED_FLAG | ReceiptRequiredFlag | — |
+| RECEIPT_THRESHOLD | ReceiptThreshold | — |
+| SEGMENT1 | Segment1 | — |
+| SEGMENT10 | Segment10 | — |
+| SEGMENT11 | Segment11 | — |
+| SEGMENT12 | Segment12 | — |
+| SEGMENT13 | Segment13 | — |
+| SEGMENT14 | Segment14 | — |
+| SEGMENT15 | Segment15 | — |
+| SEGMENT16 | Segment16 | — |
+| SEGMENT17 | Segment17 | — |
+| SEGMENT18 | Segment18 | — |
+| SEGMENT19 | Segment19 | — |
+| SEGMENT2 | Segment2 | — |
+| SEGMENT20 | Segment20 | — |
+| SEGMENT21 | Segment21 | — |
+| SEGMENT22 | Segment22 | — |
+| SEGMENT23 | Segment23 | — |
+| SEGMENT24 | Segment24 | — |
+| SEGMENT25 | Segment25 | — |
+| SEGMENT26 | Segment26 | — |
+| SEGMENT27 | Segment27 | — |
+| SEGMENT28 | Segment28 | — |
+| SEGMENT29 | Segment29 | — |
+| SEGMENT3 | Segment3 | — |
+| SEGMENT30 | Segment30 | — |
+| SEGMENT4 | Segment4 | — |
+| SEGMENT5 | Segment5 | — |
+| SEGMENT6 | Segment6 | — |
+| SEGMENT7 | Segment7 | — |
+| SEGMENT8 | Segment8 | — |
+| SEGMENT9 | Segment9 | — |
+| START_DATE | StartDate | — |
+| TAX_CLASSIFICATION_CODE | TaxClassificationCode | — |
+
+### [[expenseviolationpvo|ExpenseViolationPVO]] (OTHER · BICC: 2/27)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CATEGORY_CODE | ExpenseTypePEOCategoryCode | — |
+| CC_RECEIPT_REQUIRED_FLAG | ExpenseTypePEOCcReceiptRequiredFlag | — |
+| CC_RECEIPT_THRESHOLD | ExpenseTypePEOCcReceiptThreshold | — |
+| CODE_COMBINATION_ID | ExpenseTypePEOCodeCombinationId | — |
+| CREATED_BY | ExpenseTypePEOCreatedBy | — |
+| CREATION_DATE | ExpenseTypePEOCreationDate | — |
+| DEFAULT_PROJ_EXPEND_TYPE | ExpenseTypePEODefaultProjExpendType | — |
+| DESCRIPTION | ExpenseTypePEODescription | — |
+| DISP_RCPT_VIOLATION_FLAG | ExpenseTypePEODispRcptViolationFlag | — |
+| ENABLE_PROJECTS_FLAG | ExpenseTypePEOEnableProjectsFlag | — |
+| END_DATE | ExpenseTypePEOEndDate | — |
+| EXPENSE_TEMPLATE_ID | ExpenseTypePEOExpenseTemplateId | — |
+| EXPENSE_TYPE_ID | ExpenseTypePEOExpenseTypeId | — |
+| ITEMIZATION_BEHAVIOUR_CODE | ExpenseTypePEOItemizationBehaviourCode | — |
+| ITEMIZATION_ONLY_FLAG | ExpenseTypePEOItemizationOnlyFlag | — |
+| LAST_UPDATE_DATE | ExpenseTypePEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ExpenseTypePEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | ExpenseTypePEOLastUpdatedBy | — |
+| NAME | ExpenseTypePEOName | ✅ |
+| NEGATIVE_RCPT_REQ_CODE | ExpenseTypePEONegativeRcptReqCode | — |
+| OBJECT_VERSION_NUMBER | ExpenseTypePEOObjectVersionNumber1 | — |
+| ORG_ID | ExpenseTypePEOOrgId1 | — |
+| RCPT_REQUIRED_PROJ_FLAG | ExpenseTypePEORcptRequiredProjFlag | — |
+| RECEIPT_REQUIRED_FLAG | ExpenseTypePEOReceiptRequiredFlag | — |
+| RECEIPT_THRESHOLD | ExpenseTypePEOReceiptThreshold | — |
+| START_DATE | ExpenseTypePEOStartDate | — |
+| TAX_CLASSIFICATION_CODE | ExpenseTypePEOTaxClassificationCode | — |
+
+### [[otbistatsbasesummarypvo|OtbiStatsBaseSummaryPVO]] (OTHER · BICC: 1/27)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CATEGORY_CODE | ExpenseTypePEOCategoryCode | — |
+| CC_RECEIPT_REQUIRED_FLAG | ExpenseTypePEOCcReceiptRequiredFlag | — |
+| CC_RECEIPT_THRESHOLD | ExpenseTypePEOCcReceiptThreshold | — |
+| CODE_COMBINATION_ID | ExpenseTypePEOCodeCombinationId | — |
+| CREATED_BY | ExpenseTypePEOCreatedBy | — |
+| CREATION_DATE | ExpenseTypePEOCreationDate | — |
+| DEFAULT_PROJ_EXPEND_TYPE | ExpenseTypePEODefaultProjExpendType | — |
+| DESCRIPTION | ExpenseTypePEODescription | — |
+| DISP_RCPT_VIOLATION_FLAG | ExpenseTypePEODispRcptViolationFlag | — |
+| ENABLE_PROJECTS_FLAG | ExpenseTypePEOEnableProjectsFlag | — |
+| END_DATE | ExpenseTypePEOEndDate | — |
+| EXPENSE_TEMPLATE_ID | ExpenseTypePEOExpenseTemplateId | — |
+| EXPENSE_TYPE_ID | ExpenseTypePEOExpenseTypeId | — |
+| ITEMIZATION_BEHAVIOUR_CODE | ExpenseTypePEOItemizationBehaviourCode | — |
+| ITEMIZATION_ONLY_FLAG | ExpenseTypePEOItemizationOnlyFlag | — |
+| LAST_UPDATE_DATE | ExpenseTypePEOLastUpdateDate | — |
+| LAST_UPDATE_LOGIN | ExpenseTypePEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | ExpenseTypePEOLastUpdatedBy | — |
+| NAME | ExpenseTypePEOName | ✅ |
+| NEGATIVE_RCPT_REQ_CODE | ExpenseTypePEONegativeRcptReqCode | — |
+| OBJECT_VERSION_NUMBER | ExpenseTypePEOObjectVersionNumber1 | — |
+| ORG_ID | ExpenseTypePEOOrgId1 | — |
+| RCPT_REQUIRED_PROJ_FLAG | ExpenseTypePEORcptRequiredProjFlag | — |
+| RECEIPT_REQUIRED_FLAG | ExpenseTypePEOReceiptRequiredFlag | — |
+| RECEIPT_THRESHOLD | ExpenseTypePEOReceiptThreshold | — |
+| START_DATE | ExpenseTypePEOStartDate | — |
+| TAX_CLASSIFICATION_CODE | ExpenseTypePEOTaxClassificationCode | — |
+
+### [[otbistatssummarypvo|OtbiStatsSummaryPVO]] (OTHER · BICC: 1/27)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CATEGORY_CODE | ExpenseTypePEOCategoryCode | — |
+| CC_RECEIPT_REQUIRED_FLAG | ExpenseTypePEOCcReceiptRequiredFlag | — |
+| CC_RECEIPT_THRESHOLD | ExpenseTypePEOCcReceiptThreshold | — |
+| CODE_COMBINATION_ID | ExpenseTypePEOCodeCombinationId | — |
+| CREATED_BY | ExpenseTypePEOCreatedBy | — |
+| CREATION_DATE | ExpenseTypePEOCreationDate | — |
+| DEFAULT_PROJ_EXPEND_TYPE | ExpenseTypePEODefaultProjExpendType | — |
+| DESCRIPTION | ExpenseTypePEODescription | — |
+| DISP_RCPT_VIOLATION_FLAG | ExpenseTypePEODispRcptViolationFlag | — |
+| ENABLE_PROJECTS_FLAG | ExpenseTypePEOEnableProjectsFlag | — |
+| END_DATE | ExpenseTypePEOEndDate | — |
+| EXPENSE_TEMPLATE_ID | ExpenseTypePEOExpenseTemplateId | — |
+| EXPENSE_TYPE_ID | ExpenseTypePEOExpenseTypeId | — |
+| ITEMIZATION_BEHAVIOUR_CODE | ExpenseTypePEOItemizationBehaviourCode | — |
+| ITEMIZATION_ONLY_FLAG | ExpenseTypePEOItemizationOnlyFlag | — |
+| LAST_UPDATE_DATE | ExpenseTypePEOLastUpdateDate | — |
+| LAST_UPDATE_LOGIN | ExpenseTypePEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | ExpenseTypePEOLastUpdatedBy | — |
+| NAME | ExpenseTypePEOName | ✅ |
+| NEGATIVE_RCPT_REQ_CODE | ExpenseTypePEONegativeRcptReqCode | — |
+| OBJECT_VERSION_NUMBER | ExpenseTypePEOObjectVersionNumber1 | — |
+| ORG_ID | ExpenseTypePEOOrgId1 | — |
+| RCPT_REQUIRED_PROJ_FLAG | ExpenseTypePEORcptRequiredProjFlag | — |
+| RECEIPT_REQUIRED_FLAG | ExpenseTypePEOReceiptRequiredFlag | — |
+| RECEIPT_THRESHOLD | ExpenseTypePEOReceiptThreshold | — |
+| START_DATE | ExpenseTypePEOStartDate | — |
+| TAX_CLASSIFICATION_CODE | ExpenseTypePEOTaxClassificationCode | — |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — EXM_EXPENSE_TYPES](https://docs.oracle.com/en/cloud/saas/financials/25a/oedmf/exmexpensetypes.html)

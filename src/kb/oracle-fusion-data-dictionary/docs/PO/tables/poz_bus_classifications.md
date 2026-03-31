@@ -124,6 +124,149 @@ WHERE  bc.EXPIRATION_DATE < SYSDATE
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[supplierbusinessclassificationextractpvo|SupplierBusinessClassificationExtractPVO]] (PO · BICC: 21/21)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CERTIFICATE_NUMBER | CertificateNumber | ✅ |
+| CERTIFYING_AGENCY_ID | CertifyingAgencyId | ✅ |
+| CLASS_STATUS | ClassStatus | ✅ |
+| CLASSIFICATION_ID | ClassificationId | ✅ |
+| CONFIRMED_ON | ConfirmedOn | ✅ |
+| CREATED_BY | CreatedBy | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| DELETED | Deleted | ✅ |
+| EXPIRATION_DATE | ExpirationDate | ✅ |
+| EXT_ATTR_1 | ExtAttr1 | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | LastUpdatedBy | ✅ |
+| LOOKUP_CODE | LookupCode | ✅ |
+| NOTES | Notes | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | ✅ |
+| OTHER_CERTIFYING_AGENCY | OtherCertifyingAgency | ✅ |
+| PARTY_ID | PartyId | ✅ |
+| PROVIDED_BY_CONTACT_ID | ProvidedByContactId | ✅ |
+| START_DATE | StartDate | ✅ |
+| VENDOR_ID | VendorId | ✅ |
+
+### [[supplierpvo|SupplierPVO]] (PO · BICC: 26/108)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CERTIFICATE_NUMBER | BusClass1CertificateNumber | — |
+| CERTIFICATE_NUMBER | BusClass2CertificateNumber | — |
+| CERTIFICATE_NUMBER | BusClass3CertificateNumber | — |
+| CERTIFICATE_NUMBER | BusClass4CertificateNumber | — |
+| CERTIFICATE_NUMBER | BusClass5CertificateNumber | — |
+| CERTIFICATE_NUMBER | BusClass6CertificateNumber | — |
+| CERTIFYING_AGENCY | BusClass1CertifyingAgency | — |
+| CERTIFYING_AGENCY | BusClass2CertifyingAgency | — |
+| CERTIFYING_AGENCY | BusClass3CertifyingAgency | — |
+| CERTIFYING_AGENCY | BusClass4CertifyingAgency | — |
+| CERTIFYING_AGENCY | BusClass5CertifyingAgency | — |
+| CERTIFYING_AGENCY | BusClass6CertifyingAgency | — |
+| CLASS_STATUS | BusClass1ClassStatus | — |
+| CLASS_STATUS | BusClass2ClassStatus | — |
+| CLASS_STATUS | BusClass3ClassStatus | — |
+| CLASS_STATUS | BusClass4ClassStatus | — |
+| CLASS_STATUS | BusClass5ClassStatus | — |
+| CLASS_STATUS | BusClass6ClassStatus | — |
+| CLASSIFICATION_ID | BusClass1ClassificationId | ✅ |
+| CLASSIFICATION_ID | BusClass2ClassificationId | ✅ |
+| CLASSIFICATION_ID | BusClass3ClassificationId | ✅ |
+| CLASSIFICATION_ID | BusClass4ClassificationId | ✅ |
+| CLASSIFICATION_ID | BusClass5ClassificationId | ✅ |
+| CLASSIFICATION_ID | BusClass6ClassificationId | ✅ |
+| CREATED_BY | BusClass1CreatedBy | — |
+| CREATED_BY | BusClass2CreatedBy | — |
+| CREATED_BY | BusClass3CreatedBy | — |
+| CREATED_BY | BusClass4CreatedBy | — |
+| CREATED_BY | BusClass5CreatedBy | — |
+| CREATED_BY | BusClass6CreatedBy | — |
+| CREATION_DATE | BusClass1CreationDate | — |
+| CREATION_DATE | BusClass2CreationDate | — |
+| CREATION_DATE | BusClass3CreationDate | — |
+| CREATION_DATE | BusClass4CreationDate | — |
+| CREATION_DATE | BusClass5CreationDate | — |
+| CREATION_DATE | BusClass6CreationDate | — |
+| END_DATE_ACTIVE | BusClass1EndDateActive | — |
+| END_DATE_ACTIVE | BusClass2EndDateActive | — |
+| END_DATE_ACTIVE | BusClass3EndDateActive | — |
+| END_DATE_ACTIVE | BusClass4EndDateActive | — |
+| END_DATE_ACTIVE | BusClass5EndDateActive | — |
+| END_DATE_ACTIVE | BusClass6EndDateActive | — |
+| EXPIRATION_DATE | BusClass1ExpirationDate | — |
+| EXPIRATION_DATE | BusClass2ExpirationDate | — |
+| EXPIRATION_DATE | BusClass3ExpirationDate | — |
+| EXPIRATION_DATE | BusClass4ExpirationDate | — |
+| EXPIRATION_DATE | BusClass5ExpirationDate | — |
+| EXPIRATION_DATE | BusClass6ExpirationDate | — |
+| EXT_ATTR_1 | BusClass1ExtAttr1 | ✅ |
+| EXT_ATTR_1 | BusClass2ExtAttr1 | ✅ |
+| EXT_ATTR_1 | BusClass3ExtAttr1 | — |
+| EXT_ATTR_1 | BusClass4ExtAttr1 | — |
+| EXT_ATTR_1 | BusClass5ExtAttr1 | — |
+| EXT_ATTR_1 | BusClass6ExtAttr1 | — |
+| LAST_UPDATE_DATE | BusClass1LastUpdateDate | ✅ |
+| LAST_UPDATE_DATE | BusClass2LastUpdateDate | ✅ |
+| LAST_UPDATE_DATE | BusClass3LastUpdateDate | ✅ |
+| LAST_UPDATE_DATE | BusClass4LastUpdateDate | ✅ |
+| LAST_UPDATE_DATE | BusClass5LastUpdateDate | ✅ |
+| LAST_UPDATE_DATE | BusClass6LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | BusClass1LastUpdateLogin | — |
+| LAST_UPDATE_LOGIN | BusClass2LastUpdateLogin | — |
+| LAST_UPDATE_LOGIN | BusClass3LastUpdateLogin | — |
+| LAST_UPDATE_LOGIN | BusClass4LastUpdateLogin | — |
+| LAST_UPDATE_LOGIN | BusClass5LastUpdateLogin | — |
+| LAST_UPDATE_LOGIN | BusClass6LastUpdateLogin | — |
+| LAST_UPDATED_BY | BusClass1LastUpdatedBy | — |
+| LAST_UPDATED_BY | BusClass2LastUpdatedBy | — |
+| LAST_UPDATED_BY | BusClass3LastUpdatedBy | — |
+| LAST_UPDATED_BY | BusClass4LastUpdatedBy | — |
+| LAST_UPDATED_BY | BusClass5LastUpdatedBy | — |
+| LAST_UPDATED_BY | BusClass6LastUpdatedBy | — |
+| LOOKUP_CODE | BusClass1LookupCode | ✅ |
+| LOOKUP_CODE | BusClass2LookupCode | ✅ |
+| LOOKUP_CODE | BusClass3LookupCode | ✅ |
+| LOOKUP_CODE | BusClass4LookupCode | ✅ |
+| LOOKUP_CODE | BusClass5LookupCode | ✅ |
+| LOOKUP_CODE | BusClass6LookupCode | ✅ |
+| OBJECT_VERSION_NUMBER | BusClass1ObjectVersionNumber | — |
+| OBJECT_VERSION_NUMBER | BusClass2ObjectVersionNumber | — |
+| OBJECT_VERSION_NUMBER | BusClass3ObjectVersionNumber | — |
+| OBJECT_VERSION_NUMBER | BusClass4ObjectVersionNumber | — |
+| OBJECT_VERSION_NUMBER | BusClass5ObjectVersionNumber | — |
+| OBJECT_VERSION_NUMBER | BusClass6ObjectVersionNumber | — |
+| PARTY_ID | BusClass1PartyId | — |
+| PARTY_ID | BusClass2PartyId | — |
+| PARTY_ID | BusClass3PartyId | — |
+| PARTY_ID | BusClass4PartyId | — |
+| PARTY_ID | BusClass5PartyId | — |
+| PARTY_ID | BusClass6PartyId | — |
+| START_DATE_ACTIVE | BusClass1StartDateActive | — |
+| START_DATE_ACTIVE | BusClass2StartDateActive | — |
+| START_DATE_ACTIVE | BusClass3StartDateActive | — |
+| START_DATE_ACTIVE | BusClass4StartDateActive | — |
+| START_DATE_ACTIVE | BusClass5StartDateActive | — |
+| START_DATE_ACTIVE | BusClass6StartDateActive | — |
+| STATUS | BusClass1Status | ✅ |
+| STATUS | BusClass2Status | ✅ |
+| STATUS | BusClass3Status | ✅ |
+| STATUS | BusClass4Status | ✅ |
+| STATUS | BusClass5Status | ✅ |
+| STATUS | BusClass6Status | ✅ |
+| VENDOR_ID | BusClass1VendorId | — |
+| VENDOR_ID | BusClass2VendorId | — |
+| VENDOR_ID | BusClass3VendorId | — |
+| VENDOR_ID | BusClass4VendorId | — |
+| VENDOR_ID | BusClass5VendorId | — |
+| VENDOR_ID | BusClass6VendorId | — |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — POZ_BUS_CLASSIFICATIONS](https://docs.oracle.com/en/cloud/saas/procurement/25a/oedmf/pozbusclassifications.html)

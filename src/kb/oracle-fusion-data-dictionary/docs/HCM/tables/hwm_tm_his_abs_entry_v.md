@@ -111,6 +111,29 @@ ORDER BY v.START_DATE DESC;
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[historicabsencetimerecordpvo|HistoricAbsenceTimeRecordPVO]] (HCM · BICC: 14/14)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| DAY_TM_REC_GRP_ID | DayTimeRecordGroupId | ✅ |
+| DAY_TM_REC_GRP_VERSION | DayTimeRecordGroupVersion | ✅ |
+| GROUP_TYPE_ID | TimeCardGroupTypeId | ✅ |
+| HISTORIC_CHANGE_DATE_FROM | HistoricChangeDateFrom | ✅ |
+| HISTORIC_CHANGE_DATE_TO | HistoricChangeDateTo | ✅ |
+| HISTORIC_CHANGE_TIME | HistoricChangeTime | ✅ |
+| TC_APPROVED_TS | TimeCardApprovedTimestamp | ✅ |
+| TC_SUBMITTED_TS | TimeCardSubmittedTimestamp | ✅ |
+| TC_UI_STATUS_VALUE | TimeCardUiStatusValue | ✅ |
+| TC_USER_STATUS_VALUE | TimeCardUserStatusValue | ✅ |
+| TIME_CARD_TM_REC_GRP_ID | TimeCardTimeRecordGroupId | ✅ |
+| TIME_CARD_TM_REC_GRP_VERSION | TimeCardTimeRecordGroupVersion | ✅ |
+| TIME_RECORD_ID | TimeEntryTimeRecordId | ✅ |
+| TIME_RECORD_VERSION | TimeEntryTimeRecordVersion | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — HWM_TM_HIS_ABS_ENTRY_V](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/hwmtmhisabsentryv.html)

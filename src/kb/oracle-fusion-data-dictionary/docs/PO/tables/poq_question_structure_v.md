@@ -127,6 +127,26 @@ WHERE  qs.PARENT_QUESTION_ID IS NOT NULL
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[qualareaquestionpvo|QualAreaQuestionPVO]] (PO · BICC: 3/3)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BRANCH_LEVEL | QuestionStructureBranchLevel | ✅ |
+| QUESTION_ID | QuestionStructureQuestionId | ✅ |
+| ROOT_QUESTION_ID | QuestionStructureRootQuestionId | ✅ |
+
+### [[questionpvo|QuestionPVO]] (PO · BICC: 3/3)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BRANCH_LEVEL | BranchLevel | ✅ |
+| QUESTION_ID | QuestionStructureQuestionId | ✅ |
+| ROOT_QUESTION_ID | QuestionStructureRootQuestionId | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — Supplier Qualification Management](https://docs.oracle.com/en/cloud/saas/procurement/25a/oedmf/)

@@ -100,6 +100,73 @@ WHERE  tl.LANGUAGE = 'PTB';
 - Tabela de traduções (_TL) — chave composta por `JOB_FAMILY_ID` + `LANGUAGE`.
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[careerpreferencepvo|CareerPreferencePVO]] (HCM · BICC: 5/7)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| EFFECTIVE_END_DATE | EffectiveEndDate1 | — |
+| EFFECTIVE_START_DATE | EffectiveStartDate1 | ✅ |
+| JOB_FAMILY_ID | JobFamilyId1 | — |
+| JOB_FAMILY_NAME | JobFamilyName | ✅ |
+| LANGUAGE | Language | ✅ |
+| LAST_UPDATE_DATE | JobFamilyTranslationPEOEffectiveStartDate | ✅ |
+| LAST_UPDATE_DATE | JobFamilyTranslationPEOLastUpdateDate | ✅ |
+
+### [[jobfamilypvo|JobFamilyPVO]] (HCM · BICC: 5/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | JobFamilyTranslationPEOCreatedBy | — |
+| CREATION_DATE | JobFamilyTranslationPEOCreationDate | — |
+| EFFECTIVE_END_DATE | JobFamilyTranslationPEOEffectiveEndDate | — |
+| EFFECTIVE_START_DATE | JobFamilyTranslationPEOEffectiveStartDate | ✅ |
+| JOB_FAMILY_ID | JobFamilyTranslationPEOJobFamilyId | ✅ |
+| JOB_FAMILY_NAME | JobFamilyTranslationPEOJobFamilyName | ✅ |
+| LANGUAGE | JobFamilyTranslationPEOLanguage | ✅ |
+| LAST_UPDATE_DATE | JobFamilyTranslationPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | JobFamilyTranslationPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | JobFamilyTranslationPEOLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | JobFamilyTranslationPEOObjectVersionNumber | — |
+| SOURCE_LANG | JobFamilyTranslationPEOSourceLang | — |
+
+### [[jobfamilytranslationextractpvo|JobFamilyTranslationExtractPVO]] (HCM · BICC: 12/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | CreatedBy | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| EFFECTIVE_END_DATE | EffectiveEndDate | ✅ |
+| EFFECTIVE_START_DATE | EffectiveStartDate | ✅ |
+| JOB_FAMILY_ID | JobFamilyId | ✅ |
+| JOB_FAMILY_NAME | JobFamilyName | ✅ |
+| LANGUAGE | Language | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | LastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | ✅ |
+| SOURCE_LANG | SourceLang | ✅ |
+
+### [[jobfamilytranslationpvo|JobFamilyTranslationPVO]] (HCM · BICC: 10/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | JobFamilyTranslationPEOCreatedBy | ✅ |
+| CREATION_DATE | JobFamilyTranslationPEOCreationDate | ✅ |
+| EFFECTIVE_END_DATE | EffectiveEndDate | ✅ |
+| EFFECTIVE_START_DATE | EffectiveStartDate | ✅ |
+| JOB_FAMILY_ID | JobFamilyId | ✅ |
+| JOB_FAMILY_NAME | JobFamilyTranslationPEOJobFamilyName | ✅ |
+| LANGUAGE | Language | ✅ |
+| LAST_UPDATE_DATE | JobFamilyTranslationPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | JobFamilyTranslationPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | JobFamilyTranslationPEOLastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | JobFamilyTranslationPEOObjectVersionNumber | — |
+| SOURCE_LANG | JobFamilyTranslationPEOSourceLang | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — PER_JOB_FAMILY_F_TL](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/perjobfamilyftl.html)

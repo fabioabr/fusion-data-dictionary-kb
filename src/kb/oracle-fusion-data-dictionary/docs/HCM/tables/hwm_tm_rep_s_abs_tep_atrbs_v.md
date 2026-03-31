@@ -111,3 +111,35 @@ WHERE  v.PERSON_ID = :p_person_id;
 
 - [Oracle Docs — HWM_TM_REP_S_ABS_TEP_ATRBS_V](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/hwmtmrepsabstepatrbsv.html)
 - [[hcm-module-data-dictionary]] — Dossie do modulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[absencetimeentrypvo|AbsenceTimeEntryPVO]] (HCM · BICC: 1/2)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ANC_DURATION_PAID | AncDurationPaid | ✅ |
+| ANC_TIME_REPOS_ATRB_ID | AncSimpleTEPTimeRepositoryAttributeId | — |
+
+### [[historicabsencetimeentrypvo|HistoricAbsenceTimeEntryPVO]] (HCM)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ANC_DURATION_PAID | AncDurationPaid | — |
+| ANC_TIME_REPOS_ATRB_ID | AncSimpleTEPTimeRepositoryAttributeId | — |
+
+### [[historicrptabstimeentrypvo|HistoricRptAbsTimeEntryPVO]] (HCM · BICC: 1/2)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ANC_DURATION_PAID | SimpleAbsTeParamsAtrbPEOAncDurationPaid | ✅ |
+| ANC_TIME_REPOS_ATRB_ID | SimpleAbsTeParamsAtrbPEOAncTimeRepositoryAttributeId | — |
+
+### [[rptabstimeentrypvo|RptAbsTimeEntryPVO]] (HCM · BICC: 1/2)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ANC_DURATION_PAID | SimpleAbsTeParamsAtrbPEOAncDurationPaid | ✅ |
+| ANC_TIME_REPOS_ATRB_ID | SimpleAbsTeParamsAtrbPEOAncTimeRepositoryAttributeId | — |

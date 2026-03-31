@@ -98,6 +98,20 @@ WHERE  tl.PAYMENT_TYPE_ID = :p_type_id
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[organizationpaymentmethoddpvo|OrganizationPaymentMethodDPVO]] (AP · BICC: 3/5)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| DESCRIPTION | PaymentTypeTranslationPEODescription | ✅ |
+| LANGUAGE | PaymentTypeTranslationPEOLanguage | ✅ |
+| PAYMENT_TYPE_ID | PaymentTypeTranslationPEOPaymentTypeId | — |
+| PAYMENT_TYPE_NAME | PaymentTypeTranslationPEOPaymentTypeName | ✅ |
+| SOURCE_LANG | PaymentTypeTranslationPEOSourceLang | — |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — PAY_PAYMENT_TYPES_TL](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/paypaymenttypestl.html)

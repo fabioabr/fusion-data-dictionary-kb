@@ -107,3 +107,63 @@ WHERE  g.STATUS = 'ACTIVE'
 
 - [Oracle Docs — HWM_GRPS_B](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/hwmgrpsb.html)
 - [[hcm-module-data-dictionary]] — Dossie do modulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[groupmemberspvo|GroupMembersPVO]] (GL · BICC: 23/23)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| APPL_USG_CD | GroupsPEOApplicationUsageCd | ✅ |
+| APPLIES_TO_CD | GroupsPEOAppliesToCd | ✅ |
+| ASSIGNMENT_TO_USE_CD | GroupsPEOAssignmentToUseCd | ✅ |
+| CREATED_BY | GroupsPEOCreatedBy | ✅ |
+| CREATION_DATE | GroupsPEOCreationDate | ✅ |
+| ENTERPRISE_ID | GroupsPEOEnterpriseId | ✅ |
+| EVAL_STATUS_CD | GroupsPEOEvaluateStatusCd | ✅ |
+| FREEZE_FLAG | GroupsPEOFreezeFlag | ✅ |
+| GRP_CODE | GroupsPEOGroupCode | ✅ |
+| GRP_ID | GroupsPEOGroupId | ✅ |
+| LAST_REFRESH_DT | GroupsPEOLastRefreshDate | ✅ |
+| LAST_UPDATE_DATE | GroupsPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | GroupsPEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | GroupsPEOLastUpdatedBy | ✅ |
+| MASS_EVAL_FLAG | GroupsPEOMassEvalFlag | ✅ |
+| MEM_TYPE_CD | GroupsPEOMemTypeCd | ✅ |
+| MODULE_ID | GroupsPEOModuleId | ✅ |
+| NEXT_REFRESH_DT | GroupsPEONextRefreshDate | ✅ |
+| NUM_DAYS_NEXT | GroupsPEONumberDaysNext | ✅ |
+| NUM_DAYS_PREV | GroupsPEONumberDaysPrev | ✅ |
+| OBJECT_VERSION_NUMBER | GroupsPEOObjectVersionNumber | ✅ |
+| ONLINE_EVAL_FLAG | GroupsPEOOnlineEvaluateFlag | ✅ |
+| RUN_TYPE | GroupsPEORunType | ✅ |
+
+### [[groupspvo|GroupsPVO]] (GL · BICC: 23/23)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| APPL_USG_CD | GroupsPEOApplUsgCd | ✅ |
+| APPLIES_TO_CD | GroupsPEOAppliesToCd | ✅ |
+| ASSIGNMENT_TO_USE_CD | GroupsPEOAssignmentToUseCd | ✅ |
+| CREATED_BY | GroupsPEOCreatedBy | ✅ |
+| CREATION_DATE | GroupsPEOCreationDate | ✅ |
+| ENTERPRISE_ID | GroupsPEOEnterpriseId | ✅ |
+| EVAL_STATUS_CD | GroupsPEOEvalStatusCd | ✅ |
+| FREEZE_FLAG | GroupsPEOFreezeFlag | ✅ |
+| GRP_CODE | GroupsPEOGroupCode | ✅ |
+| GRP_ID | GroupsPEOGroupId | ✅ |
+| LAST_REFRESH_DT | GroupsPEOLastRefreshDt | ✅ |
+| LAST_UPDATE_DATE | GroupsPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | GroupsPEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | GroupsPEOLastUpdatedBy | ✅ |
+| MASS_EVAL_FLAG | GroupsPEOMassEvalFlag | ✅ |
+| MEM_TYPE_CD | GroupsPEOMemTypeCd | ✅ |
+| MODULE_ID | GroupsPEOModuleId | ✅ |
+| NEXT_REFRESH_DT | GroupsPEONextRefreshDt | ✅ |
+| NUM_DAYS_NEXT | GroupsPEONumberDaysNext | ✅ |
+| NUM_DAYS_PREV | GroupsPEONumberDaysPrev | ✅ |
+| OBJECT_VERSION_NUMBER | GroupsPEOObjectVersionNumber | ✅ |
+| ONLINE_EVAL_FLAG | GroupsPEOOnlineEvaluateFlag | ✅ |
+| RUN_TYPE | GroupsPEORunType | ✅ |

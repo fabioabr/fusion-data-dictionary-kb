@@ -111,3 +111,95 @@ ORDER BY v.DISPLAY_SEQUENCE;
 
 - [Oracle Docs — HXT_TCLAY_REGION_V](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/hxttclayregionv.html)
 - [[hcm-module-data-dictionary]] — Dossie do modulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[timecardlayoutcomppvo|TimecardLayoutCompPVO]] (GL · BICC: 35/39)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ADDTL_LABEL | LayoutRegionVPEOAddtlLabel | ✅ |
+| COMMENT_DATE_FORMAT | LayoutRegionVPEOCommentDateFormat | ✅ |
+| COMMENT_DISPLAY_OPTION | LayoutRegionVPEOCommentDisplayOption | ✅ |
+| COMMENT_LABEL | LayoutRegionVPEOCommentLabel | ✅ |
+| CREATED_BY | LayoutRegionVPEOCreatedBy | ✅ |
+| CREATION_DATE | LayoutRegionVPEOCreationDate | ✅ |
+| DAILY_DATE_FORMAT | LayoutRegionVPEODailyDateFormat | ✅ |
+| DAILY_LABEL | LayoutRegionVPEODailyLabel | ✅ |
+| HOURS_DATE_FORMAT | LayoutRegionVPEOHoursDateFormat | ✅ |
+| HOURS_DECIMAL_PLACE | LayoutRegionVPEOHoursDecimalPlace | ✅ |
+| INSTANCE_FLAG | LayoutRegionVPEOInstanceFlag | — |
+| LAST_UPDATE_DATE | LayoutRegionVPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LayoutRegionVPEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | LayoutRegionVPEOLastUpdatedBy | ✅ |
+| LAYOUT_REGION_CODE | LayoutRegionVPEOLayoutRegionCode | ✅ |
+| MATRIX_BLANK_ROWS_DEFAULT | LayoutRegionVPEOMatrixBlankRowsDefault | ✅ |
+| MATRIX_DATE_FORMAT | LayoutRegionVPEOMatrixDateFormat | ✅ |
+| MATRIX_DECIMAL_PLACE | LayoutRegionVPEOMatrixDecimalPlace | ✅ |
+| MATRIX_DISPLAY_HOUR_SLIDER | LayoutRegionVPEOMatrixDisplayHourSlider | ✅ |
+| MATRIX_DISPLAY_TIME_SLIDER | LayoutRegionVPEOMatrixDisplayTimeSlider | ✅ |
+| MATRIX_DISPLAY_UOM | LayoutRegionVPEOMatrixDisplayUom | ✅ |
+| MATRIX_ENABLE_BUTTON_RULE | LayoutRegionVPEOMatrixEnableButtonRule | ✅ |
+| MATRIX_ENABLE_MIDNIGHT | LayoutRegionVPEOMatrixEnableMidnight | ✅ |
+| MATRIX_ENABLE_NEGATIVE | LayoutRegionVPEOMatrixEnableNegative | ✅ |
+| MATRIX_HIDE_SECONDS | LayoutRegionVPEOMatrixHideSeconds | ✅ |
+| MATRIX_HIGHLIGHT_OT | LayoutRegionVPEOMatrixHighlightOt | ✅ |
+| MATRIX_TE_FORMAT | LayoutRegionVPEOMatrixTeFormat | ✅ |
+| MATRIX_VIEW_DAILY_TEVT | LayoutRegionVPEOMatrixViewDailyTevt | ✅ |
+| TASK_NAME | LayoutRegionVPEOTaskName | ✅ |
+| TASK_SHORT_NAME | LayoutRegionVPEOTaskShortName | — |
+| TCLAY_CD | LayoutRegionVPEOTclayCd | ✅ |
+| TCLAY_ID | LayoutRegionVPEOTclayId | ✅ |
+| TCLAY_TASK_SHORT_NAME | LayoutRegionVPEOTclayTaskShortName | ✅ |
+| TCLAY_TYPE | LayoutRegionVPEOTclayType | ✅ |
+| TCLAYST_ID | LayoutRegionVPEOTclaystId | ✅ |
+| TIMETOTALS_DECIMAL_PLACE | LayoutRegionVPEOTimetotalsDecimalPlace | ✅ |
+| TL_TASK_FEATURES_ID | LayoutRegionVPEOTlTaskFeaturesId | — |
+| TL_TASK_RESULTS_ID | LayoutRegionVPEOTlTaskResultsId | — |
+| UNITS_DATE_FORMAT | LayoutRegionVPEOUnitsDateFormat | ✅ |
+
+### [[timecardlayoutregionpvo|TimecardLayoutRegionPVO]] (GL · BICC: 35/39)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ADDTL_LABEL | LayoutRegionVPEOAddtlLabel | ✅ |
+| COMMENT_DATE_FORMAT | LayoutRegionVPEOCommentDateFormat | ✅ |
+| COMMENT_DISPLAY_OPTION | LayoutRegionVPEOCommentDisplayOption | ✅ |
+| COMMENT_LABEL | LayoutRegionVPEOCommentLabel | ✅ |
+| CREATED_BY | LayoutRegionVPEOCreatedBy | ✅ |
+| CREATION_DATE | LayoutRegionVPEOCreationDate | ✅ |
+| DAILY_DATE_FORMAT | LayoutRegionVPEODailyDateFormat | ✅ |
+| DAILY_LABEL | LayoutRegionVPEODailyLabel | ✅ |
+| HOURS_DATE_FORMAT | LayoutRegionVPEOHoursDateFormat | ✅ |
+| HOURS_DECIMAL_PLACE | LayoutRegionVPEOHoursDecimalPlace | ✅ |
+| INSTANCE_FLAG | LayoutRegionVPEOInstanceFlag | — |
+| LAST_UPDATE_DATE | LayoutRegionVPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LayoutRegionVPEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | LayoutRegionVPEOLastUpdatedBy | ✅ |
+| LAYOUT_REGION_CODE | LayoutRegionVPEOLayoutRegionCode | ✅ |
+| MATRIX_BLANK_ROWS_DEFAULT | LayoutRegionVPEOMatrixBlankRowsDefault | ✅ |
+| MATRIX_DATE_FORMAT | LayoutRegionVPEOMatrixDateFormat | ✅ |
+| MATRIX_DECIMAL_PLACE | LayoutRegionVPEOMatrixDecimalPlace | ✅ |
+| MATRIX_DISPLAY_HOUR_SLIDER | LayoutRegionVPEOMatrixDisplayHourSlider | ✅ |
+| MATRIX_DISPLAY_TIME_SLIDER | LayoutRegionVPEOMatrixDisplayTimeSlider | ✅ |
+| MATRIX_DISPLAY_UOM | LayoutRegionVPEOMatrixDisplayUom | ✅ |
+| MATRIX_ENABLE_BUTTON_RULE | LayoutRegionVPEOMatrixEnableButtonRule | ✅ |
+| MATRIX_ENABLE_MIDNIGHT | LayoutRegionVPEOMatrixEnableMidnight | ✅ |
+| MATRIX_ENABLE_NEGATIVE | LayoutRegionVPEOMatrixEnableNegative | ✅ |
+| MATRIX_HIDE_SECONDS | LayoutRegionVPEOMatrixHideSeconds | ✅ |
+| MATRIX_HIGHLIGHT_OT | LayoutRegionVPEOMatrixHighlightOt | ✅ |
+| MATRIX_TE_FORMAT | LayoutRegionVPEOMatrixTeFormat | ✅ |
+| MATRIX_VIEW_DAILY_TEVT | LayoutRegionVPEOMatrixViewDailyTevt | ✅ |
+| TASK_NAME | LayoutRegionVPEOTaskName | ✅ |
+| TASK_SHORT_NAME | LayoutRegionVPEOTaskShortName | — |
+| TCLAY_CD | LayoutRegionVPEOTclayCd | ✅ |
+| TCLAY_ID | LayoutRegionVPEOTclayId | ✅ |
+| TCLAY_TASK_SHORT_NAME | LayoutRegionVPEOTclayTaskShortName | ✅ |
+| TCLAY_TYPE | LayoutRegionVPEOTclayType | ✅ |
+| TCLAYST_ID | LayoutRegionVPEOTclaystId | ✅ |
+| TIMETOTALS_DECIMAL_PLACE | LayoutRegionVPEOTimetotalsDecimalPlace | ✅ |
+| TL_TASK_FEATURES_ID | LayoutRegionVPEOTlTaskFeaturesId | — |
+| TL_TASK_RESULTS_ID | LayoutRegionVPEOTlTaskResultsId | — |
+| UNITS_DATE_FORMAT | LayoutRegionVPEOUnitsDateFormat | ✅ |

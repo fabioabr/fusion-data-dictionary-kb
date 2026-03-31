@@ -96,3 +96,542 @@ updated_at: 2026-03-26
 ## 📎 Uso Típico
 
 (a ser preenchido na etapa 03)
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[sitetaxclassification|SiteTaxClassification]] (AR · BICC: 2/43)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| COLLECTING_AUTHORITY_FLAG | PartyTaxProfileCollectingAuthorityFlag | — |
+| COUNTRY_CODE | PartyTaxProfileCountryCode | — |
+| CREATE_AWT_DISTS_TYPE_CODE | PartyTaxProfileCreateAwtDistsTypeCode | — |
+| CREATE_AWT_INVOICES_TYPE_CODE | PartyTaxProfileCreateAwtInvoicesTypeCode | — |
+| CREATED_BY | PartyTaxProfileCreatedBy | — |
+| CREATION_DATE | PartyTaxProfileCreationDate | — |
+| CUSTOMER_FLAG | PartyTaxProfileCustomerFlag | — |
+| EFFECTIVE_FROM_USE_LE | PartyTaxProfileEffectiveFromUseLe | — |
+| FIRST_PARTY_LE_FLAG | PartyTaxProfileFirstPartyLeFlag | — |
+| INCLUSIVE_TAX_FLAG | PartyTaxProfileInclusiveTaxFlag | — |
+| LAST_UPDATE_DATE | PartyTaxProfileLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | PartyTaxProfileLastUpdateLogin | — |
+| LAST_UPDATED_BY | PartyTaxProfileLastUpdatedBy | — |
+| LEGAL_ESTABLISHMENT_FLAG | PartyTaxProfileLegalEstablishmentFlag | — |
+| MERGED_STATUS_CODE | PartyTaxProfileMergedStatusCode | — |
+| MERGED_TO_PTP_ID | PartyTaxProfileMergedToPtpId | — |
+| OBJECT_VERSION_NUMBER | PartyTaxProfileObjectVersionNumber | — |
+| PARTY_ID | PartyTaxProfilePartyId | — |
+| PARTY_TAX_PROFILE_ID | PartyTaxProfileId | ✅ |
+| PARTY_TYPE_CODE | PartyTaxProfilePartyTypeCode | — |
+| PROCESS_FOR_APPLICABILITY_FLAG | PartyTaxProfileProcessForApplicabilityFlag | — |
+| PROGRAM_APP_NAME | PartyTaxProfileProgramAppName | — |
+| PROGRAM_LOGIN_ID | PartyTaxProfileProgramLoginId | — |
+| PROGRAM_NAME | PartyTaxProfileProgramName | — |
+| PROVIDER_TYPE_CODE | PartyTaxProfileProviderTypeCode | — |
+| RECORD_TYPE_CODE | PartyTaxProfileRecordTypeCode | — |
+| REGISTRATION_TYPE_CODE | PartyTaxProfileRegistrationTypeCode | — |
+| REP_REGISTRATION_NUMBER | PartyTaxProfileRepRegistrationNumber | — |
+| REPORTING_AUTHORITY_FLAG | PartyTaxProfileReportingAuthorityFlag | — |
+| REQUEST_ID | PartyTaxProfileRequestId | — |
+| ROUNDING_LEVEL_CODE | PartyTaxProfileRoundingLevelCode | — |
+| ROUNDING_RULE_CODE | PartyTaxProfileRoundingRuleCode | — |
+| SELF_ASSESS_FLAG | PartyTaxProfileSelfAssessFlag | — |
+| SITE_FLAG | PartyTaxProfileSiteFlag | — |
+| SUPPLIER_FLAG | PartyTaxProfileSupplierFlag | — |
+| TAX_CLASSIFICATION_CODE | PartyTaxProfileTaxClassificationCode | — |
+| USE_LE_AS_SUBSCRIBER_FLAG | PartyTaxProfileUseLeAsSubscriberFlag | — |
+| WHT_DATE_BASIS | PartyTaxProfileWhtDateBasis | — |
+| WHT_EFFECTIVE_FROM_USE_LE | PartyTaxProfileWhtEffectiveFromUseLe | — |
+| WHT_ROUNDING_LEVEL_CODE | PartyTaxProfileWhtRoundingLevelCode | — |
+| WHT_ROUNDING_RULE_CODE | PartyTaxProfileWhtRoundingRuleCode | — |
+| WHT_USE_LE_AS_SUBSCRIBER_FLAG | PartyTaxProfileWhtUseLeAsSubscriberFlag | — |
+| WITHHOLDING_START_DATE | PartyTaxProfileWithholdingStartDate | — |
+
+### [[sitetaxexemption|SiteTaxExemption]] (AR · BICC: 2/49)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ALLOW_AWT_FLAG | PartyTaxProfileAllowAwtFlag | — |
+| ALLOW_OFFSET_TAX_FLAG | PartyTaxProfileAllowOffsetTaxFlag | — |
+| ALLOW_ZERO_AMT_WHT_INV_FLAG | PartyTaxProfileAllowZeroAmtWhtInvFlag | — |
+| COLLECTING_AUTHORITY_FLAG | PartyTaxProfileCollectingAuthorityFlag | — |
+| COUNTRY_CODE | PartyTaxProfileCountryCode | — |
+| CREATE_AWT_DISTS_TYPE_CODE | PartyTaxProfileCreateAwtDistsTypeCode | — |
+| CREATE_AWT_INVOICES_TYPE_CODE | PartyTaxProfileCreateAwtInvoicesTypeCode | — |
+| CREATED_BY | PartyTaxProfileCreatedBy | — |
+| CREATION_DATE | PartyTaxProfileCreationDate | — |
+| CUSTOMER_FLAG | PartyTaxProfileCustomerFlag | — |
+| EFFECTIVE_FROM_USE_LE | PartyTaxProfileEffectiveFromUseLe | — |
+| FIRST_PARTY_LE_FLAG | PartyTaxProfileFirstPartyLeFlag | — |
+| INCLUSIVE_TAX_FLAG | PartyTaxProfileInclusiveTaxFlag | — |
+| LAST_UPDATE_DATE | PartyTaxProfileLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | PartyTaxProfileLastUpdateLogin | — |
+| LAST_UPDATED_BY | PartyTaxProfileLastUpdatedBy | — |
+| LEGAL_ESTABLISHMENT_FLAG | PartyTaxProfileLegalEstablishmentFlag | — |
+| MERGED_STATUS_CODE | PartyTaxProfileMergedStatusCode | — |
+| MERGED_TO_PTP_ID | PartyTaxProfileMergedToPtpId | — |
+| OBJECT_VERSION_NUMBER | ContPartyTaxProfileObjectVersionNumber | — |
+| OBJECT_VERSION_NUMBER | PartyTaxProfileObjectVersionNumber | — |
+| PARTY_ID | PartyTaxProfilePartyId | — |
+| PARTY_TAX_PROFILE_ID | ContPartyTaxProfilePartyTaxProfileId | — |
+| PARTY_TAX_PROFILE_ID | PartyTaxProfileId | ✅ |
+| PARTY_TYPE_CODE | ContPartyTaxProfilePartyTypeCode | — |
+| PARTY_TYPE_CODE | PartyTaxProfilePartyTypeCode | — |
+| PROCESS_FOR_APPLICABILITY_FLAG | PartyTaxProfileProcessForApplicabilityFlag | — |
+| PROGRAM_APP_NAME | PartyTaxProfileProgramAppName | — |
+| PROGRAM_LOGIN_ID | PartyTaxProfileProgramLoginId | — |
+| PROGRAM_NAME | PartyTaxProfileProgramName | — |
+| PROVIDER_TYPE_CODE | PartyTaxProfileProviderTypeCode | — |
+| RECORD_TYPE_CODE | PartyTaxProfileRecordTypeCode | — |
+| REGISTRATION_TYPE_CODE | PartyTaxProfileRegistrationTypeCode | — |
+| REP_REGISTRATION_NUMBER | PartyTaxProfileRepRegistrationNumber | — |
+| REPORTING_AUTHORITY_FLAG | PartyTaxProfileReportingAuthorityFlag | — |
+| REQUEST_ID | PartyTaxProfileRequestId | — |
+| ROUNDING_LEVEL_CODE | PartyTaxProfileRoundingLevelCode | — |
+| ROUNDING_RULE_CODE | PartyTaxProfileRoundingRuleCode | — |
+| SELF_ASSESS_FLAG | PartyTaxProfileSelfAssessFlag | — |
+| SITE_FLAG | PartyTaxProfileSiteFlag | — |
+| SUPPLIER_FLAG | PartyTaxProfileSupplierFlag | — |
+| TAX_CLASSIFICATION_CODE | PartyTaxProfileTaxClassificationCode | — |
+| USE_LE_AS_SUBSCRIBER_FLAG | PartyTaxProfileUseLeAsSubscriberFlag | — |
+| WHT_DATE_BASIS | PartyTaxProfileWhtDateBasis | — |
+| WHT_EFFECTIVE_FROM_USE_LE | PartyTaxProfileWhtEffectiveFromUseLe | — |
+| WHT_ROUNDING_LEVEL_CODE | PartyTaxProfileWhtRoundingLevelCode | — |
+| WHT_ROUNDING_RULE_CODE | PartyTaxProfileWhtRoundingRuleCode | — |
+| WHT_USE_LE_AS_SUBSCRIBER_FLAG | PartyTaxProfileWhtUseLeAsSubscriberFlag | — |
+| WITHHOLDING_START_DATE | PartyTaxProfileWithholdingStartDate | — |
+
+### [[sitetaxregistration|SiteTaxRegistration]] (AR · BICC: 2/49)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ALLOW_AWT_FLAG | PartyTaxProfileAllowAwtFlag | — |
+| ALLOW_OFFSET_TAX_FLAG | PartyTaxProfileAllowOffsetTaxFlag | — |
+| ALLOW_ZERO_AMT_WHT_INV_FLAG | PartyTaxProfileAllowZeroAmtWhtInvFlag | — |
+| COLLECTING_AUTHORITY_FLAG | PartyTaxProfileCollectingAuthorityFlag | — |
+| COUNTRY_CODE | PartyTaxProfileCountryCode | — |
+| CREATE_AWT_DISTS_TYPE_CODE | PartyTaxProfileCreateAwtDistsTypeCode | — |
+| CREATE_AWT_INVOICES_TYPE_CODE | PartyTaxProfileCreateAwtInvoicesTypeCode | — |
+| CREATED_BY | PartyTaxProfileCreatedBy | — |
+| CREATION_DATE | PartyTaxProfileCreationDate | — |
+| CUSTOMER_FLAG | PartyTaxProfileCustomerFlag | — |
+| EFFECTIVE_FROM_USE_LE | PartyTaxProfileEffectiveFromUseLe | — |
+| FIRST_PARTY_LE_FLAG | PartyTaxProfileFirstPartyLeFlag | — |
+| INCLUSIVE_TAX_FLAG | PartyTaxProfileInclusiveTaxFlag | — |
+| LAST_UPDATE_DATE | PartyTaxProfileLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | PartyTaxProfileLastUpdateLogin | — |
+| LAST_UPDATED_BY | PartyTaxProfileLastUpdatedBy | — |
+| LEGAL_ESTABLISHMENT_FLAG | PartyTaxProfileLegalEstablishmentFlag | — |
+| MERGED_STATUS_CODE | PartyTaxProfileMergedStatusCode | — |
+| MERGED_TO_PTP_ID | PartyTaxProfileMergedToPtpId | — |
+| OBJECT_VERSION_NUMBER | PartyTaxProfileObjectVersionNumber | — |
+| PARTY_ID | PartyTaxAuthProfPartyId | — |
+| PARTY_ID | PartyTaxProfilePartyId | — |
+| PARTY_TAX_PROFILE_ID | PartyTaxAuthProfPartyTaxProfileId | — |
+| PARTY_TAX_PROFILE_ID | PartyTaxProfileId | ✅ |
+| PARTY_TYPE_CODE | PartyTaxAuthProfPartyTypeCode | — |
+| PARTY_TYPE_CODE | PartyTaxProfilePartyTypeCode | — |
+| PROCESS_FOR_APPLICABILITY_FLAG | PartyTaxProfileProcessForApplicabilityFlag | — |
+| PROGRAM_APP_NAME | PartyTaxProfileProgramAppName | — |
+| PROGRAM_LOGIN_ID | PartyTaxProfileProgramLoginId | — |
+| PROGRAM_NAME | PartyTaxProfileProgramName | — |
+| PROVIDER_TYPE_CODE | PartyTaxProfileProviderTypeCode | — |
+| RECORD_TYPE_CODE | PartyTaxProfileRecordTypeCode | — |
+| REGISTRATION_TYPE_CODE | PartyTaxProfileRegistrationTypeCode | — |
+| REP_REGISTRATION_NUMBER | PartyTaxProfileRepRegistrationNumber | — |
+| REPORTING_AUTHORITY_FLAG | PartyTaxProfileReportingAuthorityFlag | — |
+| REQUEST_ID | PartyTaxProfileRequestId | — |
+| ROUNDING_LEVEL_CODE | PartyTaxProfileRoundingLevelCode | — |
+| ROUNDING_RULE_CODE | PartyTaxProfileRoundingRuleCode | — |
+| SELF_ASSESS_FLAG | PartyTaxProfileSelfAssessFlag | — |
+| SITE_FLAG | PartyTaxProfileSiteFlag | — |
+| SUPPLIER_FLAG | PartyTaxProfileSupplierFlag | — |
+| TAX_CLASSIFICATION_CODE | PartyTaxProfileTaxClassificationCode | — |
+| USE_LE_AS_SUBSCRIBER_FLAG | PartyTaxProfileUseLeAsSubscriberFlag | — |
+| WHT_DATE_BASIS | PartyTaxProfileWhtDateBasis | — |
+| WHT_EFFECTIVE_FROM_USE_LE | PartyTaxProfileWhtEffectiveFromUseLe | — |
+| WHT_ROUNDING_LEVEL_CODE | PartyTaxProfileWhtRoundingLevelCode | — |
+| WHT_ROUNDING_RULE_CODE | PartyTaxProfileWhtRoundingRuleCode | — |
+| WHT_USE_LE_AS_SUBSCRIBER_FLAG | PartyTaxProfileWhtUseLeAsSubscriberFlag | — |
+| WITHHOLDING_START_DATE | PartyTaxProfileWithholdingStartDate | — |
+
+### [[sitetaxreportingcode|SiteTaxReportingCode]] (AR · BICC: 2/46)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ALLOW_AWT_FLAG | PartyTaxProfileAllowAwtFlag | — |
+| ALLOW_OFFSET_TAX_FLAG | PartyTaxProfileAllowOffsetTaxFlag | — |
+| ALLOW_ZERO_AMT_WHT_INV_FLAG | PartyTaxProfileAllowZeroAmtWhtInvFlag | — |
+| COLLECTING_AUTHORITY_FLAG | PartyTaxProfileCollectingAuthorityFlag | — |
+| COUNTRY_CODE | PartyTaxProfileCountryCode | — |
+| CREATE_AWT_DISTS_TYPE_CODE | PartyTaxProfileCreateAwtDistsTypeCode | — |
+| CREATE_AWT_INVOICES_TYPE_CODE | PartyTaxProfileCreateAwtInvoicesTypeCode | — |
+| CREATED_BY | PartyTaxProfileCreatedBy | — |
+| CREATION_DATE | PartyTaxProfileCreationDate | — |
+| CUSTOMER_FLAG | PartyTaxProfileCustomerFlag | — |
+| EFFECTIVE_FROM_USE_LE | PartyTaxProfileEffectiveFromUseLe | — |
+| FIRST_PARTY_LE_FLAG | PartyTaxProfileFirstPartyLeFlag | — |
+| INCLUSIVE_TAX_FLAG | PartyTaxProfileInclusiveTaxFlag | — |
+| LAST_UPDATE_DATE | PartyTaxProfileLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | PartyTaxProfileLastUpdateLogin | — |
+| LAST_UPDATED_BY | PartyTaxProfileLastUpdatedBy | — |
+| LEGAL_ESTABLISHMENT_FLAG | PartyTaxProfileLegalEstablishmentFlag | — |
+| MERGED_STATUS_CODE | PartyTaxProfileMergedStatusCode | — |
+| MERGED_TO_PTP_ID | PartyTaxProfileMergedToPtpId | — |
+| OBJECT_VERSION_NUMBER | PartyTaxProfileObjectVersionNumber | — |
+| PARTY_ID | PartyTaxProfilePartyId | — |
+| PARTY_TAX_PROFILE_ID | PartyTaxProfileId | ✅ |
+| PARTY_TYPE_CODE | PartyTaxProfilePartyTypeCode | — |
+| PROCESS_FOR_APPLICABILITY_FLAG | PartyTaxProfileProcessForApplicabilityFlag | — |
+| PROGRAM_APP_NAME | PartyTaxProfileProgramAppName | — |
+| PROGRAM_LOGIN_ID | PartyTaxProfileProgramLoginId | — |
+| PROGRAM_NAME | PartyTaxProfileProgramName | — |
+| PROVIDER_TYPE_CODE | PartyTaxProfileProviderTypeCode | — |
+| RECORD_TYPE_CODE | PartyTaxProfileRecordTypeCode | — |
+| REGISTRATION_TYPE_CODE | PartyTaxProfileRegistrationTypeCode | — |
+| REP_REGISTRATION_NUMBER | PartyTaxProfileRepRegistrationNumber | — |
+| REPORTING_AUTHORITY_FLAG | PartyTaxProfileReportingAuthorityFlag | — |
+| REQUEST_ID | PartyTaxProfileRequestId | — |
+| ROUNDING_LEVEL_CODE | PartyTaxProfileRoundingLevelCode | — |
+| ROUNDING_RULE_CODE | PartyTaxProfileRoundingRuleCode | — |
+| SELF_ASSESS_FLAG | PartyTaxProfileSelfAssessFlag | — |
+| SITE_FLAG | PartyTaxProfileSiteFlag | — |
+| SUPPLIER_FLAG | PartyTaxProfileSupplierFlag | — |
+| TAX_CLASSIFICATION_CODE | PartyTaxProfileTaxClassificationCode | — |
+| USE_LE_AS_SUBSCRIBER_FLAG | PartyTaxProfileUseLeAsSubscriberFlag | — |
+| WHT_DATE_BASIS | PartyTaxProfileWhtDateBasis | — |
+| WHT_EFFECTIVE_FROM_USE_LE | PartyTaxProfileWhtEffectiveFromUseLe | — |
+| WHT_ROUNDING_LEVEL_CODE | PartyTaxProfileWhtRoundingLevelCode | — |
+| WHT_ROUNDING_RULE_CODE | PartyTaxProfileWhtRoundingRuleCode | — |
+| WHT_USE_LE_AS_SUBSCRIBER_FLAG | PartyTaxProfileWhtUseLeAsSubscriberFlag | — |
+| WITHHOLDING_START_DATE | PartyTaxProfileWithholdingStartDate | — |
+
+### [[sitetaxvalidation|SiteTaxValidation]] (AR · BICC: 5/46)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ALLOW_AWT_FLAG | PartyTaxProfileAllowAwtFlag | — |
+| ALLOW_OFFSET_TAX_FLAG | PartyTaxProfileAllowOffsetTaxFlag | — |
+| ALLOW_ZERO_AMT_WHT_INV_FLAG | PartyTaxProfileAllowZeroAmtWhtInvFlag | — |
+| COLLECTING_AUTHORITY_FLAG | PartyTaxProfileCollectingAuthorityFlag | — |
+| COUNTRY_CODE | PartyTaxProfileCountryCode | — |
+| CREATE_AWT_DISTS_TYPE_CODE | PartyTaxProfileCreateAwtDistsTypeCode | — |
+| CREATE_AWT_INVOICES_TYPE_CODE | PartyTaxProfileCreateAwtInvoicesTypeCode | — |
+| CREATED_BY | PartyTaxProfileCreatedBy | — |
+| CREATION_DATE | PartyTaxProfileCreationDate | — |
+| CUSTOMER_FLAG | PartyTaxProfileCustomerFlag | — |
+| EFFECTIVE_FROM_USE_LE | PartyTaxProfileEffectiveFromUseLe | — |
+| FIRST_PARTY_LE_FLAG | PartyTaxProfileFirstPartyLeFlag | — |
+| INCLUSIVE_TAX_FLAG | PartyTaxProfileInclusiveTaxFlag | ✅ |
+| LAST_UPDATE_DATE | PartyTaxProfileLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | PartyTaxProfileLastUpdateLogin | — |
+| LAST_UPDATED_BY | PartyTaxProfileLastUpdatedBy | — |
+| LEGAL_ESTABLISHMENT_FLAG | PartyTaxProfileLegalEstablishmentFlag | — |
+| MERGED_STATUS_CODE | PartyTaxProfileMergedStatusCode | — |
+| MERGED_TO_PTP_ID | PartyTaxProfileMergedToPtpId | — |
+| OBJECT_VERSION_NUMBER | PartyTaxProfileObjectVersionNumber | — |
+| PARTY_ID | PartyTaxProfilePartyId | — |
+| PARTY_TAX_PROFILE_ID | PartyTaxProfileId | ✅ |
+| PARTY_TYPE_CODE | PartyTaxProfilePartyTypeCode | — |
+| PROCESS_FOR_APPLICABILITY_FLAG | PartyTaxProfileProcessForApplicabilityFlag | — |
+| PROGRAM_APP_NAME | PartyTaxProfileProgramAppName | — |
+| PROGRAM_LOGIN_ID | PartyTaxProfileProgramLoginId | — |
+| PROGRAM_NAME | PartyTaxProfileProgramName | — |
+| PROVIDER_TYPE_CODE | PartyTaxProfileProviderTypeCode | — |
+| RECORD_TYPE_CODE | PartyTaxProfileRecordTypeCode | — |
+| REGISTRATION_TYPE_CODE | PartyTaxProfileRegistrationTypeCode | — |
+| REP_REGISTRATION_NUMBER | PartyTaxProfileRepRegistrationNumber | — |
+| REPORTING_AUTHORITY_FLAG | PartyTaxProfileReportingAuthorityFlag | — |
+| REQUEST_ID | PartyTaxProfileRequestId | — |
+| ROUNDING_LEVEL_CODE | PartyTaxProfileRoundingLevelCode | ✅ |
+| ROUNDING_RULE_CODE | PartyTaxProfileRoundingRuleCode | ✅ |
+| SELF_ASSESS_FLAG | PartyTaxProfileSelfAssessFlag | — |
+| SITE_FLAG | PartyTaxProfileSiteFlag | — |
+| SUPPLIER_FLAG | PartyTaxProfileSupplierFlag | — |
+| TAX_CLASSIFICATION_CODE | PartyTaxProfileTaxClassificationCode | — |
+| USE_LE_AS_SUBSCRIBER_FLAG | PartyTaxProfileUseLeAsSubscriberFlag | — |
+| WHT_DATE_BASIS | PartyTaxProfileWhtDateBasis | — |
+| WHT_EFFECTIVE_FROM_USE_LE | PartyTaxProfileWhtEffectiveFromUseLe | — |
+| WHT_ROUNDING_LEVEL_CODE | PartyTaxProfileWhtRoundingLevelCode | — |
+| WHT_ROUNDING_RULE_CODE | PartyTaxProfileWhtRoundingRuleCode | — |
+| WHT_USE_LE_AS_SUBSCRIBER_FLAG | PartyTaxProfileWhtUseLeAsSubscriberFlag | — |
+| WITHHOLDING_START_DATE | PartyTaxProfileWithholdingStartDate | — |
+
+### [[supplierpvo|SupplierPVO]] (PO · BICC: 3/6)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| COUNTRY_CODE | PartyTaxProfileGenericCountryCode | ✅ |
+| PARTY_ID | PartyTaxProfileGenericPartyId | — |
+| PARTY_TAX_PROFILE_ID | PartyTaxProfileGenericPartyTaxProfileId | — |
+| PARTY_TYPE_CODE | PartyTaxProfileGenericPartyTypeCode | — |
+| REP_REGISTRATION_NUMBER | PartyTaxProfileGenericRepRegistrationNumber | ✅ |
+| TAX_CLASSIFICATION_CODE | PartyTaxProfileGenericTaxClassificationCode | ✅ |
+
+### [[taxclassification|TaxClassification]] (AR · BICC: 2/43)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| COLLECTING_AUTHORITY_FLAG | PartyTaxProfileCollectingAuthorityFlag | — |
+| COUNTRY_CODE | PartyTaxProfileCountryCode | — |
+| CREATE_AWT_DISTS_TYPE_CODE | PartyTaxProfileCreateAwtDistsTypeCode | — |
+| CREATE_AWT_INVOICES_TYPE_CODE | PartyTaxProfileCreateAwtInvoicesTypeCode | — |
+| CREATED_BY | PartyTaxProfileCreatedBy | — |
+| CREATION_DATE | PartyTaxProfileCreationDate | — |
+| CUSTOMER_FLAG | PartyTaxProfileCustomerFlag | — |
+| EFFECTIVE_FROM_USE_LE | PartyTaxProfileEffectiveFromUseLe | — |
+| FIRST_PARTY_LE_FLAG | PartyTaxProfileFirstPartyLeFlag | — |
+| INCLUSIVE_TAX_FLAG | PartyTaxProfileInclusiveTaxFlag | — |
+| LAST_UPDATE_DATE | PartyTaxProfileLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | PartyTaxProfileLastUpdateLogin | — |
+| LAST_UPDATED_BY | PartyTaxProfileLastUpdatedBy | — |
+| LEGAL_ESTABLISHMENT_FLAG | PartyTaxProfileLegalEstablishmentFlag | — |
+| MERGED_STATUS_CODE | PartyTaxProfileMergedStatusCode | — |
+| MERGED_TO_PTP_ID | PartyTaxProfileMergedToPtpId | — |
+| OBJECT_VERSION_NUMBER | PartyTaxProfileObjectVersionNumber | — |
+| PARTY_ID | PartyTaxProfilePartyId | — |
+| PARTY_TAX_PROFILE_ID | PartyTaxProfileId | ✅ |
+| PARTY_TYPE_CODE | PartyTaxProfilePartyTypeCode | — |
+| PROCESS_FOR_APPLICABILITY_FLAG | PartyTaxProfileProcessForApplicabilityFlag | — |
+| PROGRAM_APP_NAME | PartyTaxProfileProgramAppName | — |
+| PROGRAM_LOGIN_ID | PartyTaxProfileProgramLoginId | — |
+| PROGRAM_NAME | PartyTaxProfileProgramName | — |
+| PROVIDER_TYPE_CODE | PartyTaxProfileProviderTypeCode | — |
+| RECORD_TYPE_CODE | PartyTaxProfileRecordTypeCode | — |
+| REGISTRATION_TYPE_CODE | PartyTaxProfileRegistrationTypeCode | — |
+| REP_REGISTRATION_NUMBER | PartyTaxProfileRepRegistrationNumber | — |
+| REPORTING_AUTHORITY_FLAG | PartyTaxProfileReportingAuthorityFlag | — |
+| REQUEST_ID | PartyTaxProfileRequestId | — |
+| ROUNDING_LEVEL_CODE | PartyTaxProfileRoundingLevelCode | — |
+| ROUNDING_RULE_CODE | PartyTaxProfileRoundingRuleCode | — |
+| SELF_ASSESS_FLAG | PartyTaxProfileSelfAssessFlag | — |
+| SITE_FLAG | PartyTaxProfileSiteFlag | — |
+| SUPPLIER_FLAG | PartyTaxProfileSupplierFlag | — |
+| TAX_CLASSIFICATION_CODE | PartyTaxProfileTaxClassificationCode | — |
+| USE_LE_AS_SUBSCRIBER_FLAG | PartyTaxProfileUseLeAsSubscriberFlag | — |
+| WHT_DATE_BASIS | PartyTaxProfileWhtDateBasis | — |
+| WHT_EFFECTIVE_FROM_USE_LE | PartyTaxProfileWhtEffectiveFromUseLe | — |
+| WHT_ROUNDING_LEVEL_CODE | PartyTaxProfileWhtRoundingLevelCode | — |
+| WHT_ROUNDING_RULE_CODE | PartyTaxProfileWhtRoundingRuleCode | — |
+| WHT_USE_LE_AS_SUBSCRIBER_FLAG | PartyTaxProfileWhtUseLeAsSubscriberFlag | — |
+| WITHHOLDING_START_DATE | PartyTaxProfileWithholdingStartDate | — |
+
+### [[taxexemption|TaxExemption]] (AR · BICC: 2/49)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ALLOW_AWT_FLAG | PartyTaxProfileAllowAwtFlag | — |
+| ALLOW_OFFSET_TAX_FLAG | PartyTaxProfileAllowOffsetTaxFlag | — |
+| ALLOW_ZERO_AMT_WHT_INV_FLAG | PartyTaxProfileAllowZeroAmtWhtInvFlag | — |
+| COLLECTING_AUTHORITY_FLAG | PartyTaxProfileCollectingAuthorityFlag | — |
+| COUNTRY_CODE | PartyTaxProfileCountryCode | — |
+| CREATE_AWT_DISTS_TYPE_CODE | PartyTaxProfileCreateAwtDistsTypeCode | — |
+| CREATE_AWT_INVOICES_TYPE_CODE | PartyTaxProfileCreateAwtInvoicesTypeCode | — |
+| CREATED_BY | PartyTaxProfileCreatedBy | — |
+| CREATION_DATE | PartyTaxProfileCreationDate | — |
+| CUSTOMER_FLAG | PartyTaxProfileCustomerFlag | — |
+| EFFECTIVE_FROM_USE_LE | PartyTaxProfileEffectiveFromUseLe | — |
+| FIRST_PARTY_LE_FLAG | PartyTaxProfileFirstPartyLeFlag | — |
+| INCLUSIVE_TAX_FLAG | PartyTaxProfileInclusiveTaxFlag | — |
+| LAST_UPDATE_DATE | PartyTaxProfileLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | PartyTaxProfileLastUpdateLogin | — |
+| LAST_UPDATED_BY | PartyTaxProfileLastUpdatedBy | — |
+| LEGAL_ESTABLISHMENT_FLAG | PartyTaxProfileLegalEstablishmentFlag | — |
+| MERGED_STATUS_CODE | PartyTaxProfileMergedStatusCode | — |
+| MERGED_TO_PTP_ID | PartyTaxProfileMergedToPtpId | — |
+| OBJECT_VERSION_NUMBER | ContPartyTaxProfileObjectVersionNumber | — |
+| OBJECT_VERSION_NUMBER | PartyTaxProfileObjectVersionNumber | — |
+| PARTY_ID | PartyTaxProfilePartyId | — |
+| PARTY_TAX_PROFILE_ID | ContPartyTaxProfilePartyTaxProfileId | — |
+| PARTY_TAX_PROFILE_ID | PartyTaxProfileId | ✅ |
+| PARTY_TYPE_CODE | ContPartyTaxProfilePartyTypeCode | — |
+| PARTY_TYPE_CODE | PartyTaxProfilePartyTypeCode | — |
+| PROCESS_FOR_APPLICABILITY_FLAG | PartyTaxProfileProcessForApplicabilityFlag | — |
+| PROGRAM_APP_NAME | PartyTaxProfileProgramAppName | — |
+| PROGRAM_LOGIN_ID | PartyTaxProfileProgramLoginId | — |
+| PROGRAM_NAME | PartyTaxProfileProgramName | — |
+| PROVIDER_TYPE_CODE | PartyTaxProfileProviderTypeCode | — |
+| RECORD_TYPE_CODE | PartyTaxProfileRecordTypeCode | — |
+| REGISTRATION_TYPE_CODE | PartyTaxProfileRegistrationTypeCode | — |
+| REP_REGISTRATION_NUMBER | PartyTaxProfileRepRegistrationNumber | — |
+| REPORTING_AUTHORITY_FLAG | PartyTaxProfileReportingAuthorityFlag | — |
+| REQUEST_ID | PartyTaxProfileRequestId | — |
+| ROUNDING_LEVEL_CODE | PartyTaxProfileRoundingLevelCode | — |
+| ROUNDING_RULE_CODE | PartyTaxProfileRoundingRuleCode | — |
+| SELF_ASSESS_FLAG | PartyTaxProfileSelfAssessFlag | — |
+| SITE_FLAG | PartyTaxProfileSiteFlag | — |
+| SUPPLIER_FLAG | PartyTaxProfileSupplierFlag | — |
+| TAX_CLASSIFICATION_CODE | PartyTaxProfileTaxClassificationCode | — |
+| USE_LE_AS_SUBSCRIBER_FLAG | PartyTaxProfileUseLeAsSubscriberFlag | — |
+| WHT_DATE_BASIS | PartyTaxProfileWhtDateBasis | — |
+| WHT_EFFECTIVE_FROM_USE_LE | PartyTaxProfileWhtEffectiveFromUseLe | — |
+| WHT_ROUNDING_LEVEL_CODE | PartyTaxProfileWhtRoundingLevelCode | — |
+| WHT_ROUNDING_RULE_CODE | PartyTaxProfileWhtRoundingRuleCode | — |
+| WHT_USE_LE_AS_SUBSCRIBER_FLAG | PartyTaxProfileWhtUseLeAsSubscriberFlag | — |
+| WITHHOLDING_START_DATE | PartyTaxProfileWithholdingStartDate | — |
+
+### [[taxregistration|TaxRegistration]] (AR · BICC: 4/49)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ALLOW_AWT_FLAG | PartyTaxProfileAllowAwtFlag | — |
+| ALLOW_OFFSET_TAX_FLAG | PartyTaxProfileAllowOffsetTaxFlag | — |
+| ALLOW_ZERO_AMT_WHT_INV_FLAG | PartyTaxProfileAllowZeroAmtWhtInvFlag | — |
+| COLLECTING_AUTHORITY_FLAG | PartyTaxProfileCollectingAuthorityFlag | — |
+| COUNTRY_CODE | PartyTaxProfileCountryCode | ✅ |
+| CREATE_AWT_DISTS_TYPE_CODE | PartyTaxProfileCreateAwtDistsTypeCode | — |
+| CREATE_AWT_INVOICES_TYPE_CODE | PartyTaxProfileCreateAwtInvoicesTypeCode | — |
+| CREATED_BY | PartyTaxProfileCreatedBy | — |
+| CREATION_DATE | PartyTaxProfileCreationDate | — |
+| CUSTOMER_FLAG | PartyTaxProfileCustomerFlag | — |
+| EFFECTIVE_FROM_USE_LE | PartyTaxProfileEffectiveFromUseLe | — |
+| FIRST_PARTY_LE_FLAG | PartyTaxProfileFirstPartyLeFlag | — |
+| INCLUSIVE_TAX_FLAG | PartyTaxProfileInclusiveTaxFlag | — |
+| LAST_UPDATE_DATE | PartyTaxProfileLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | PartyTaxProfileLastUpdateLogin | — |
+| LAST_UPDATED_BY | PartyTaxProfileLastUpdatedBy | — |
+| LEGAL_ESTABLISHMENT_FLAG | PartyTaxProfileLegalEstablishmentFlag | — |
+| MERGED_STATUS_CODE | PartyTaxProfileMergedStatusCode | — |
+| MERGED_TO_PTP_ID | PartyTaxProfileMergedToPtpId | — |
+| OBJECT_VERSION_NUMBER | PartyTaxProfileObjectVersionNumber | — |
+| PARTY_ID | PartyTaxAuthProfPartyId | — |
+| PARTY_ID | PartyTaxProfilePartyId | — |
+| PARTY_TAX_PROFILE_ID | PartyTaxAuthProfPartyTaxProfileId | — |
+| PARTY_TAX_PROFILE_ID | PartyTaxProfileId | ✅ |
+| PARTY_TYPE_CODE | PartyTaxAuthProfPartyTypeCode | — |
+| PARTY_TYPE_CODE | PartyTaxProfilePartyTypeCode | — |
+| PROCESS_FOR_APPLICABILITY_FLAG | PartyTaxProfileProcessForApplicabilityFlag | — |
+| PROGRAM_APP_NAME | PartyTaxProfileProgramAppName | — |
+| PROGRAM_LOGIN_ID | PartyTaxProfileProgramLoginId | — |
+| PROGRAM_NAME | PartyTaxProfileProgramName | — |
+| PROVIDER_TYPE_CODE | PartyTaxProfileProviderTypeCode | — |
+| RECORD_TYPE_CODE | PartyTaxProfileRecordTypeCode | — |
+| REGISTRATION_TYPE_CODE | PartyTaxProfileRegistrationTypeCode | — |
+| REP_REGISTRATION_NUMBER | PartyTaxProfileRepRegistrationNumber | ✅ |
+| REPORTING_AUTHORITY_FLAG | PartyTaxProfileReportingAuthorityFlag | — |
+| REQUEST_ID | PartyTaxProfileRequestId | — |
+| ROUNDING_LEVEL_CODE | PartyTaxProfileRoundingLevelCode | — |
+| ROUNDING_RULE_CODE | PartyTaxProfileRoundingRuleCode | — |
+| SELF_ASSESS_FLAG | PartyTaxProfileSelfAssessFlag | — |
+| SITE_FLAG | PartyTaxProfileSiteFlag | — |
+| SUPPLIER_FLAG | PartyTaxProfileSupplierFlag | — |
+| TAX_CLASSIFICATION_CODE | PartyTaxProfileTaxClassificationCode | — |
+| USE_LE_AS_SUBSCRIBER_FLAG | PartyTaxProfileUseLeAsSubscriberFlag | — |
+| WHT_DATE_BASIS | PartyTaxProfileWhtDateBasis | — |
+| WHT_EFFECTIVE_FROM_USE_LE | PartyTaxProfileWhtEffectiveFromUseLe | — |
+| WHT_ROUNDING_LEVEL_CODE | PartyTaxProfileWhtRoundingLevelCode | — |
+| WHT_ROUNDING_RULE_CODE | PartyTaxProfileWhtRoundingRuleCode | — |
+| WHT_USE_LE_AS_SUBSCRIBER_FLAG | PartyTaxProfileWhtUseLeAsSubscriberFlag | — |
+| WITHHOLDING_START_DATE | PartyTaxProfileWithholdingStartDate | — |
+
+### [[taxreportingcode|TaxReportingCode]] (AR · BICC: 2/46)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ALLOW_AWT_FLAG | PartyTaxProfileAllowAwtFlag | — |
+| ALLOW_OFFSET_TAX_FLAG | PartyTaxProfileAllowOffsetTaxFlag | — |
+| ALLOW_ZERO_AMT_WHT_INV_FLAG | PartyTaxProfileAllowZeroAmtWhtInvFlag | — |
+| COLLECTING_AUTHORITY_FLAG | PartyTaxProfileCollectingAuthorityFlag | — |
+| COUNTRY_CODE | PartyTaxProfileCountryCode | — |
+| CREATE_AWT_DISTS_TYPE_CODE | PartyTaxProfileCreateAwtDistsTypeCode | — |
+| CREATE_AWT_INVOICES_TYPE_CODE | PartyTaxProfileCreateAwtInvoicesTypeCode | — |
+| CREATED_BY | PartyTaxProfileCreatedBy | — |
+| CREATION_DATE | PartyTaxProfileCreationDate | — |
+| CUSTOMER_FLAG | PartyTaxProfileCustomerFlag | — |
+| EFFECTIVE_FROM_USE_LE | PartyTaxProfileEffectiveFromUseLe | — |
+| FIRST_PARTY_LE_FLAG | PartyTaxProfileFirstPartyLeFlag | — |
+| INCLUSIVE_TAX_FLAG | PartyTaxProfileInclusiveTaxFlag | — |
+| LAST_UPDATE_DATE | PartyTaxProfileLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | PartyTaxProfileLastUpdateLogin | — |
+| LAST_UPDATED_BY | PartyTaxProfileLastUpdatedBy | — |
+| LEGAL_ESTABLISHMENT_FLAG | PartyTaxProfileLegalEstablishmentFlag | — |
+| MERGED_STATUS_CODE | PartyTaxProfileMergedStatusCode | — |
+| MERGED_TO_PTP_ID | PartyTaxProfileMergedToPtpId | — |
+| OBJECT_VERSION_NUMBER | PartyTaxProfileObjectVersionNumber | — |
+| PARTY_ID | PartyTaxProfilePartyId | — |
+| PARTY_TAX_PROFILE_ID | PartyTaxProfileId | ✅ |
+| PARTY_TYPE_CODE | PartyTaxProfilePartyTypeCode | — |
+| PROCESS_FOR_APPLICABILITY_FLAG | PartyTaxProfileProcessForApplicabilityFlag | — |
+| PROGRAM_APP_NAME | PartyTaxProfileProgramAppName | — |
+| PROGRAM_LOGIN_ID | PartyTaxProfileProgramLoginId | — |
+| PROGRAM_NAME | PartyTaxProfileProgramName | — |
+| PROVIDER_TYPE_CODE | PartyTaxProfileProviderTypeCode | — |
+| RECORD_TYPE_CODE | PartyTaxProfileRecordTypeCode | — |
+| REGISTRATION_TYPE_CODE | PartyTaxProfileRegistrationTypeCode | — |
+| REP_REGISTRATION_NUMBER | PartyTaxProfileRepRegistrationNumber | — |
+| REPORTING_AUTHORITY_FLAG | PartyTaxProfileReportingAuthorityFlag | — |
+| REQUEST_ID | PartyTaxProfileRequestId | — |
+| ROUNDING_LEVEL_CODE | PartyTaxProfileRoundingLevelCode | — |
+| ROUNDING_RULE_CODE | PartyTaxProfileRoundingRuleCode | — |
+| SELF_ASSESS_FLAG | PartyTaxProfileSelfAssessFlag | — |
+| SITE_FLAG | PartyTaxProfileSiteFlag | — |
+| SUPPLIER_FLAG | PartyTaxProfileSupplierFlag | — |
+| TAX_CLASSIFICATION_CODE | PartyTaxProfileTaxClassificationCode | — |
+| USE_LE_AS_SUBSCRIBER_FLAG | PartyTaxProfileUseLeAsSubscriberFlag | — |
+| WHT_DATE_BASIS | PartyTaxProfileWhtDateBasis | — |
+| WHT_EFFECTIVE_FROM_USE_LE | PartyTaxProfileWhtEffectiveFromUseLe | — |
+| WHT_ROUNDING_LEVEL_CODE | PartyTaxProfileWhtRoundingLevelCode | — |
+| WHT_ROUNDING_RULE_CODE | PartyTaxProfileWhtRoundingRuleCode | — |
+| WHT_USE_LE_AS_SUBSCRIBER_FLAG | PartyTaxProfileWhtUseLeAsSubscriberFlag | — |
+| WITHHOLDING_START_DATE | PartyTaxProfileWithholdingStartDate | — |
+
+### [[taxvalidation|TaxValidation]] (AR · BICC: 5/46)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ALLOW_AWT_FLAG | PartyTaxProfileAllowAwtFlag | — |
+| ALLOW_OFFSET_TAX_FLAG | PartyTaxProfileAllowOffsetTaxFlag | — |
+| ALLOW_ZERO_AMT_WHT_INV_FLAG | PartyTaxProfileAllowZeroAmtWhtInvFlag | — |
+| COLLECTING_AUTHORITY_FLAG | PartyTaxProfileCollectingAuthorityFlag | — |
+| COUNTRY_CODE | PartyTaxProfileCountryCode | — |
+| CREATE_AWT_DISTS_TYPE_CODE | PartyTaxProfileCreateAwtDistsTypeCode | — |
+| CREATE_AWT_INVOICES_TYPE_CODE | PartyTaxProfileCreateAwtInvoicesTypeCode | — |
+| CREATED_BY | PartyTaxProfileCreatedBy | — |
+| CREATION_DATE | PartyTaxProfileCreationDate | — |
+| CUSTOMER_FLAG | PartyTaxProfileCustomerFlag | — |
+| EFFECTIVE_FROM_USE_LE | PartyTaxProfileEffectiveFromUseLe | — |
+| FIRST_PARTY_LE_FLAG | PartyTaxProfileFirstPartyLeFlag | — |
+| INCLUSIVE_TAX_FLAG | PartyTaxProfileInclusiveTaxFlag | ✅ |
+| LAST_UPDATE_DATE | PartyTaxProfileLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | PartyTaxProfileLastUpdateLogin | — |
+| LAST_UPDATED_BY | PartyTaxProfileLastUpdatedBy | — |
+| LEGAL_ESTABLISHMENT_FLAG | PartyTaxProfileLegalEstablishmentFlag | — |
+| MERGED_STATUS_CODE | PartyTaxProfileMergedStatusCode | — |
+| MERGED_TO_PTP_ID | PartyTaxProfileMergedToPtpId | — |
+| OBJECT_VERSION_NUMBER | PartyTaxProfileObjectVersionNumber | — |
+| PARTY_ID | PartyTaxProfilePartyId | — |
+| PARTY_TAX_PROFILE_ID | PartyTaxProfileId | ✅ |
+| PARTY_TYPE_CODE | PartyTaxProfilePartyTypeCode | — |
+| PROCESS_FOR_APPLICABILITY_FLAG | PartyTaxProfileProcessForApplicabilityFlag | — |
+| PROGRAM_APP_NAME | PartyTaxProfileProgramAppName | — |
+| PROGRAM_LOGIN_ID | PartyTaxProfileProgramLoginId | — |
+| PROGRAM_NAME | PartyTaxProfileProgramName | — |
+| PROVIDER_TYPE_CODE | PartyTaxProfileProviderTypeCode | — |
+| RECORD_TYPE_CODE | PartyTaxProfileRecordTypeCode | — |
+| REGISTRATION_TYPE_CODE | PartyTaxProfileRegistrationTypeCode | — |
+| REP_REGISTRATION_NUMBER | PartyTaxProfileRepRegistrationNumber | — |
+| REPORTING_AUTHORITY_FLAG | PartyTaxProfileReportingAuthorityFlag | — |
+| REQUEST_ID | PartyTaxProfileRequestId | — |
+| ROUNDING_LEVEL_CODE | PartyTaxProfileRoundingLevelCode | ✅ |
+| ROUNDING_RULE_CODE | PartyTaxProfileRoundingRuleCode | ✅ |
+| SELF_ASSESS_FLAG | PartyTaxProfileSelfAssessFlag | — |
+| SITE_FLAG | PartyTaxProfileSiteFlag | — |
+| SUPPLIER_FLAG | PartyTaxProfileSupplierFlag | — |
+| TAX_CLASSIFICATION_CODE | PartyTaxProfileTaxClassificationCode | — |
+| USE_LE_AS_SUBSCRIBER_FLAG | PartyTaxProfileUseLeAsSubscriberFlag | — |
+| WHT_DATE_BASIS | PartyTaxProfileWhtDateBasis | — |
+| WHT_EFFECTIVE_FROM_USE_LE | PartyTaxProfileWhtEffectiveFromUseLe | — |
+| WHT_ROUNDING_LEVEL_CODE | PartyTaxProfileWhtRoundingLevelCode | — |
+| WHT_ROUNDING_RULE_CODE | PartyTaxProfileWhtRoundingRuleCode | — |
+| WHT_USE_LE_AS_SUBSCRIBER_FLAG | PartyTaxProfileWhtUseLeAsSubscriberFlag | — |
+| WITHHOLDING_START_DATE | PartyTaxProfileWithholdingStartDate | — |
+
+### [[withholdingbucketpvo|WithholdingBucketPVO]] (AP)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| PARTY_ID | PartyTaxProfilePartyId | — |
+| PARTY_TAX_PROFILE_ID | PartyTaxProfilePartyTaxProfileId | — |
+| PARTY_TYPE_CODE | PartyTaxProfilePartyTypeCode | — |

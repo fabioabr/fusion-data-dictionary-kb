@@ -136,6 +136,429 @@ GROUP BY ra.TYPE;
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[completedtrxrevadjdistributionpvo|CompletedTrxRevAdjDistributionPVO]] (AR)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| AMOUNT | RevenueAdjustmentAmount | — |
+| AMOUNT_MODE | RevenueAdjustmentAmountMode | — |
+| APPLICATION_DATE | RevenueAdjustmentApplicationDate | — |
+| CUSTOMER_TRX_ID | RevenueAdjustmentCustomerTrxId | — |
+| FROM_CATEGORY_ID | RevenueAdjustmentFromCategoryId | — |
+| FROM_CUST_TRX_LINE_ID | RevenueAdjustmentFromCustTrxLineId | — |
+| FROM_INVENTORY_ITEM_ID | RevenueAdjustmentFromInventoryItemId | — |
+| FROM_RESOURCE_SALESREP_ID | RevenueAdjustmentFromResourceSalesrepId | — |
+| FROM_SALESGROUP_ID | RevenueAdjustmentFromSalesgroupId | — |
+| GL_DATE | RevenueAdjustmentGlDate | — |
+| LINE_SELECTION_MODE | RevenueAdjustmentLineSelectionMode | — |
+| ORG_ID | RevenueAdjustmentOrgId | — |
+| PERCENT | RevenueAdjustmentPercent | — |
+| PROGRAM_APPLICATION_ID | RevenueAdjustmentProgramApplicationId | — |
+| PROGRAM_ID | RevenueAdjustmentProgramId | — |
+| PROGRAM_UPDATE_DATE | RevenueAdjustmentProgramUpdateDate | — |
+| REASON_CODE | RevenueAdjustmentReasonCode | — |
+| REQUEST_ID | RevenueAdjustmentRequestId | — |
+| REVENUE_ADJUSTMENT_ID | RevenueAdjustmentRevenueAdjustmentId | — |
+| REVENUE_ADJUSTMENT_NUMBER | RevenueAdjustmentRevenueAdjustmentNumber | — |
+| SALES_CREDIT_TYPE | RevenueAdjustmentSalesCreditType | — |
+| STATUS | RevenueAdjustmentStatus | — |
+| TO_CATEGORY_ID | RevenueAdjustmentToCategoryId | — |
+| TO_CUST_TRX_LINE_ID | RevenueAdjustmentToCustTrxLineId | — |
+| TO_INVENTORY_ITEM_ID | RevenueAdjustmentToInventoryItemId | — |
+| TO_RESOURCE_SALESREP_ID | RevenueAdjustmentToResourceSalesrepId | — |
+| TO_SALESGROUP_ID | RevenueAdjustmentToSalesgroupId | — |
+| TYPE | RevenueAdjustmentType | — |
+
+### [[completedtrxrevenuedistributionpvo|CompletedTrxRevenueDistributionPVO]] (AR)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| AMOUNT | RevenueAdjustmentAmount | — |
+| AMOUNT_MODE | RevenueAdjustmentAmountMode | — |
+| APPLICATION_DATE | RevenueAdjustmentApplicationDate | — |
+| CUSTOMER_TRX_ID | RevenueAdjustmentCustomerTrxId | — |
+| FROM_CATEGORY_ID | RevenueAdjustmentFromCategoryId | — |
+| FROM_CUST_TRX_LINE_ID | RevenueAdjustmentFromCustTrxLineId | — |
+| FROM_INVENTORY_ITEM_ID | RevenueAdjustmentFromInventoryItemId | — |
+| FROM_RESOURCE_SALESREP_ID | RevenueAdjustmentFromResourceSalesrepId | — |
+| FROM_SALESGROUP_ID | RevenueAdjustmentFromSalesgroupId | — |
+| GL_DATE | RevenueAdjustmentGlDate | — |
+| LINE_SELECTION_MODE | RevenueAdjustmentLineSelectionMode | — |
+| ORG_ID | RevenueAdjustmentOrgId | — |
+| PERCENT | RevenueAdjustmentPercent | — |
+| PROGRAM_APPLICATION_ID | RevenueAdjustmentProgramApplicationId | — |
+| PROGRAM_ID | RevenueAdjustmentProgramId | — |
+| PROGRAM_UPDATE_DATE | RevenueAdjustmentProgramUpdateDate | — |
+| REASON_CODE | RevenueAdjustmentReasonCode | — |
+| REQUEST_ID | RevenueAdjustmentRequestId | — |
+| REVENUE_ADJUSTMENT_ID | RevenueAdjustmentRevenueAdjustmentId | — |
+| REVENUE_ADJUSTMENT_NUMBER | RevenueAdjustmentRevenueAdjustmentNumber | — |
+| SALES_CREDIT_TYPE | RevenueAdjustmentSalesCreditType | — |
+| STATUS | RevenueAdjustmentStatus | — |
+| TO_CATEGORY_ID | RevenueAdjustmentToCategoryId | — |
+| TO_CUST_TRX_LINE_ID | RevenueAdjustmentToCustTrxLineId | — |
+| TO_INVENTORY_ITEM_ID | RevenueAdjustmentToInventoryItemId | — |
+| TO_RESOURCE_SALESREP_ID | RevenueAdjustmentToResourceSalesrepId | — |
+| TO_SALESGROUP_ID | RevenueAdjustmentToSalesgroupId | — |
+| TYPE | RevenueAdjustmentType | — |
+
+### [[headersalescreditpvo|HeaderSalesCreditPVO]] (AR · BICC: 1/28)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| AMOUNT | RevAdjAmount | — |
+| AMOUNT_MODE | RevAdjAmountMode | — |
+| APPLICATION_DATE | RevAdjApplicationDate | — |
+| CUSTOMER_TRX_ID | RevAdjCustomerTrxId | — |
+| FROM_CATEGORY_ID | RevAdjFromCategoryId | — |
+| FROM_CUST_TRX_LINE_ID | RevAdjFromCustTrxLineId | — |
+| FROM_INVENTORY_ITEM_ID | RevAdjFromInventoryItemId | — |
+| FROM_RESOURCE_SALESREP_ID | RevAdjFromResourceSalesrepId | — |
+| FROM_SALESGROUP_ID | RevAdjFromSalesgroupId | — |
+| GL_DATE | RevAdjGlDate | — |
+| LINE_SELECTION_MODE | RevAdjLineSelectionMode | — |
+| ORG_ID | RevAdjOrgId | — |
+| PERCENT | RevAdjPercent | — |
+| PROGRAM_APPLICATION_ID | RevAdjProgramApplicationId | — |
+| PROGRAM_ID | RevAdjProgramId | — |
+| PROGRAM_UPDATE_DATE | RevAdjProgramUpdateDate | — |
+| REASON_CODE | RevAdjReasonCode | — |
+| REQUEST_ID | RevAdjRequestId | — |
+| REVENUE_ADJUSTMENT_ID | RevAdjRevenueAdjustmentId | — |
+| REVENUE_ADJUSTMENT_NUMBER | RevAdjRevenueAdjustmentNumber | ✅ |
+| SALES_CREDIT_TYPE | RevAdjSalesCreditType | — |
+| STATUS | RevAdjStatus | — |
+| TO_CATEGORY_ID | RevAdjToCategoryId | — |
+| TO_CUST_TRX_LINE_ID | RevAdjToCustTrxLineId | — |
+| TO_INVENTORY_ITEM_ID | RevAdjToInventoryItemId | — |
+| TO_RESOURCE_SALESREP_ID | RevAdjToResourceSalesrepId | — |
+| TO_SALESGROUP_ID | RevAdjToSalesgroupId | — |
+| TYPE | RevAdjType | — |
+
+### [[linesalescreditpvo|LineSalesCreditPVO]] (AR · BICC: 1/28)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| AMOUNT | RevAdjAmount | — |
+| AMOUNT_MODE | RevAdjAmountMode | — |
+| APPLICATION_DATE | RevAdjApplicationDate | — |
+| CUSTOMER_TRX_ID | RevAdjCustomerTrxId | — |
+| FROM_CATEGORY_ID | RevAdjFromCategoryId | — |
+| FROM_CUST_TRX_LINE_ID | RevAdjFromCustTrxLineId | — |
+| FROM_INVENTORY_ITEM_ID | RevAdjFromInventoryItemId | — |
+| FROM_RESOURCE_SALESREP_ID | RevAdjFromResourceSalesrepId | — |
+| FROM_SALESGROUP_ID | RevAdjFromSalesgroupId | — |
+| GL_DATE | RevAdjGlDate | — |
+| LINE_SELECTION_MODE | RevAdjLineSelectionMode | — |
+| ORG_ID | RevAdjOrgId | — |
+| PERCENT | RevAdjPercent | — |
+| PROGRAM_APPLICATION_ID | RevAdjProgramApplicationId | — |
+| PROGRAM_ID | RevAdjProgramId | — |
+| PROGRAM_UPDATE_DATE | RevAdjProgramUpdateDate | — |
+| REASON_CODE | RevAdjReasonCode | — |
+| REQUEST_ID | RevAdjRequestId | — |
+| REVENUE_ADJUSTMENT_ID | RevAdjRevenueAdjustmentId | — |
+| REVENUE_ADJUSTMENT_NUMBER | RevAdjRevenueAdjustmentNumber | ✅ |
+| SALES_CREDIT_TYPE | RevAdjSalesCreditType | — |
+| STATUS | RevAdjStatus | — |
+| TO_CATEGORY_ID | RevAdjToCategoryId | — |
+| TO_CUST_TRX_LINE_ID | RevAdjToCustTrxLineId | — |
+| TO_INVENTORY_ITEM_ID | RevAdjToInventoryItemId | — |
+| TO_RESOURCE_SALESREP_ID | RevAdjToResourceSalesrepId | — |
+| TO_SALESGROUP_ID | RevAdjToSalesgroupId | — |
+| TYPE | RevAdjType | — |
+
+### [[paymentschedulepvo|PaymentSchedulePVO]] (AR)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| AMOUNT | RevenueAdjustmentAmount | — |
+| AMOUNT_MODE | RevenueAdjustmentAmountMode | — |
+| APPLICATION_DATE | RevenueAdjustmentApplicationDate | — |
+| COMMENTS | RevenueAdjustmentComments | — |
+| CREATED_BY | RevenueAdjustmentCreatedBy | — |
+| CUSTOMER_TRX_ID | RevenueAdjustmentCustomerTrxId | — |
+| FROM_CATEGORY_ID | RevenueAdjustmentFromCategoryId | — |
+| FROM_CUST_TRX_LINE_ID | RevenueAdjustmentFromCustTrxLineId | — |
+| FROM_INVENTORY_ITEM_ID | RevenueAdjustmentFromInventoryItemId | — |
+| FROM_RESOURCE_SALESREP_ID | RevenueAdjustmentFromResourceSalesrepId | — |
+| FROM_SALESGROUP_ID | RevenueAdjustmentFromSalesgroupId | — |
+| GL_DATE | RevenueAdjustmentGlDate | — |
+| LAST_UPDATE_LOGIN | RevenueAdjustmentLastUpdateLogin | — |
+| LAST_UPDATED_BY | RevenueAdjustmentLastUpdatedBy | — |
+| LINE_SELECTION_MODE | RevenueAdjustmentLineSelectionMode | — |
+| OBJECT_VERSION_NUMBER | RevenueAdjustmentObjectVersionNumber | — |
+| ORG_ID | RevenueAdjustmentOrgId | — |
+| PERCENT | RevenueAdjustmentPercent | — |
+| PROGRAM_APPLICATION_ID | RevenueAdjustmentProgramApplicationId | — |
+| PROGRAM_ID | RevenueAdjustmentProgramId | — |
+| PROGRAM_UPDATE_DATE | RevenueAdjustmentProgramUpdateDate | — |
+| REASON_CODE | RevenueAdjustmentReasonCode | — |
+| REQUEST_ID | RevenueAdjustmentRequestId | — |
+| REVENUE_ADJUSTMENT_ID | RevenueAdjustmentRevenueAdjustmentId | — |
+| REVENUE_ADJUSTMENT_NUMBER | RevenueAdjustmentRevenueAdjustmentNumber | — |
+| SALES_CREDIT_TYPE | RevenueAdjustmentSalesCreditType | — |
+| STATUS | RevenueAdjustmentStatus | — |
+| TO_CATEGORY_ID | RevenueAdjustmentToCategoryId | — |
+| TO_CUST_TRX_LINE_ID | RevenueAdjustmentToCustTrxLineId | — |
+| TO_INVENTORY_ITEM_ID | RevenueAdjustmentToInventoryItemId | — |
+| TO_RESOURCE_SALESREP_ID | RevenueAdjustmentToResourceSalesrepId | — |
+| TO_SALESGROUP_ID | RevenueAdjustmentToSalesgroupId | — |
+| TYPE | RevenueAdjustmentType | — |
+
+### [[receiptapplicationdistributionpvo|ReceiptApplicationDistributionPVO]] (AR)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| AMOUNT | RevenueAdjustmentAmount | — |
+| AMOUNT_MODE | RevenueAdjustmentAmountMode | — |
+| APPLICATION_DATE | RevenueAdjustmentApplicationDate | — |
+| COMMENTS | RevenueAdjustmentComments | — |
+| CREATED_BY | RevenueAdjustmentCreatedBy | — |
+| CUSTOMER_TRX_ID | RevenueAdjustmentCustomerTrxId | — |
+| FROM_CATEGORY_ID | RevenueAdjustmentFromCategoryId | — |
+| FROM_CUST_TRX_LINE_ID | RevenueAdjustmentFromCustTrxLineId | — |
+| FROM_INVENTORY_ITEM_ID | RevenueAdjustmentFromInventoryItemId | — |
+| FROM_RESOURCE_SALESREP_ID | RevenueAdjustmentFromResourceSalesrepId | — |
+| FROM_SALESGROUP_ID | RevenueAdjustmentFromSalesgroupId | — |
+| GL_DATE | RevenueAdjustmentGlDate | — |
+| LAST_UPDATE_LOGIN | RevenueAdjustmentLastUpdateLogin | — |
+| LAST_UPDATED_BY | RevenueAdjustmentLastUpdatedBy | — |
+| LINE_SELECTION_MODE | RevenueAdjustmentLineSelectionMode | — |
+| OBJECT_VERSION_NUMBER | RevenueAdjustmentObjectVersionNumber | — |
+| ORG_ID | RevenueAdjustmentOrgId | — |
+| PERCENT | RevenueAdjustmentPercent | — |
+| PROGRAM_APPLICATION_ID | RevenueAdjustmentProgramApplicationId | — |
+| PROGRAM_ID | RevenueAdjustmentProgramId | — |
+| PROGRAM_UPDATE_DATE | RevenueAdjustmentProgramUpdateDate | — |
+| REASON_CODE | RevenueAdjustmentReasonCode | — |
+| REQUEST_ID | RevenueAdjustmentRequestId | — |
+| REVENUE_ADJUSTMENT_ID | RevenueAdjustmentRevenueAdjustmentId | — |
+| REVENUE_ADJUSTMENT_NUMBER | RevenueAdjustmentRevenueAdjustmentNumber | — |
+| SALES_CREDIT_TYPE | RevenueAdjustmentSalesCreditType | — |
+| STATUS | RevenueAdjustmentStatus | — |
+| TO_CATEGORY_ID | RevenueAdjustmentToCategoryId | — |
+| TO_CUST_TRX_LINE_ID | RevenueAdjustmentToCustTrxLineId | — |
+| TO_INVENTORY_ITEM_ID | RevenueAdjustmentToInventoryItemId | — |
+| TO_RESOURCE_SALESREP_ID | RevenueAdjustmentToResourceSalesrepId | — |
+| TO_SALESGROUP_ID | RevenueAdjustmentToSalesgroupId | — |
+| TYPE | RevenueAdjustmentType | — |
+
+### [[receiptapplicationdistributionvc|ReceiptApplicationDistributionVC]] (AR)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| AMOUNT | RevenueAdjustmentAmount | — |
+| AMOUNT_MODE | RevenueAdjustmentAmountMode | — |
+| APPLICATION_DATE | RevenueAdjustmentApplicationDate | — |
+| COMMENTS | RevenueAdjustmentComments | — |
+| CREATED_BY | RevenueAdjustmentCreatedBy | — |
+| CUSTOMER_TRX_ID | RevenueAdjustmentCustomerTrxId | — |
+| FROM_CATEGORY_ID | RevenueAdjustmentFromCategoryId | — |
+| FROM_CUST_TRX_LINE_ID | RevenueAdjustmentFromCustTrxLineId | — |
+| FROM_INVENTORY_ITEM_ID | RevenueAdjustmentFromInventoryItemId | — |
+| FROM_RESOURCE_SALESREP_ID | RevenueAdjustmentFromResourceSalesrepId | — |
+| FROM_SALESGROUP_ID | RevenueAdjustmentFromSalesgroupId | — |
+| GL_DATE | RevenueAdjustmentGlDate | — |
+| LAST_UPDATE_LOGIN | RevenueAdjustmentLastUpdateLogin | — |
+| LAST_UPDATED_BY | RevenueAdjustmentLastUpdatedBy | — |
+| LINE_SELECTION_MODE | RevenueAdjustmentLineSelectionMode | — |
+| OBJECT_VERSION_NUMBER | RevenueAdjustmentObjectVersionNumber | — |
+| ORG_ID | RevenueAdjustmentOrgId | — |
+| PERCENT | RevenueAdjustmentPercent | — |
+| PROGRAM_APPLICATION_ID | RevenueAdjustmentProgramApplicationId | — |
+| PROGRAM_ID | RevenueAdjustmentProgramId | — |
+| PROGRAM_UPDATE_DATE | RevenueAdjustmentProgramUpdateDate | — |
+| REASON_CODE | RevenueAdjustmentReasonCode | — |
+| REQUEST_ID | RevenueAdjustmentRequestId | — |
+| REVENUE_ADJUSTMENT_ID | RevenueAdjustmentRevenueAdjustmentId | — |
+| REVENUE_ADJUSTMENT_NUMBER | RevenueAdjustmentRevenueAdjustmentNumber | — |
+| SALES_CREDIT_TYPE | RevenueAdjustmentSalesCreditType | — |
+| STATUS | RevenueAdjustmentStatus | — |
+| TO_CATEGORY_ID | RevenueAdjustmentToCategoryId | — |
+| TO_CUST_TRX_LINE_ID | RevenueAdjustmentToCustTrxLineId | — |
+| TO_INVENTORY_ITEM_ID | RevenueAdjustmentToInventoryItemId | — |
+| TO_RESOURCE_SALESREP_ID | RevenueAdjustmentToResourceSalesrepId | — |
+| TO_SALESGROUP_ID | RevenueAdjustmentToSalesgroupId | — |
+| TYPE | RevenueAdjustmentType | — |
+
+### [[revenueadjustmentdistributionpvo|RevenueAdjustmentDistributionPVO]] (AR · BICC: 14/35)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| AMOUNT | RevAdjustmentAmount | — |
+| AMOUNT_MODE | RevAdjustmentAmountMode | ✅ |
+| APPLICATION_DATE | RevAdjustmentApplicationDate | ✅ |
+| COMMENTS | RevAdjustmentComments | ✅ |
+| CREATED_BY | RevAdjustmentCreatedBy | ✅ |
+| CREATION_DATE | RevAdjustmentCreationDate | ✅ |
+| CUSTOMER_TRX_ID | RevAdjustmentCustomerTrxId | — |
+| FROM_CATEGORY_ID | RevAdjustmentFromCategoryId | — |
+| FROM_CUST_TRX_LINE_ID | RevAdjustmentFromCustTrxLineId | — |
+| FROM_INVENTORY_ITEM_ID | RevAdjustmentFromInventoryItemId | — |
+| FROM_RESOURCE_SALESREP_ID | RevAdjustmentFromResourceSalesrepId | — |
+| FROM_SALESGROUP_ID | RevAdjustmentFromSalesgroupId | — |
+| GL_DATE | RevAdjustmentGlDate | ✅ |
+| LAST_UPDATE_DATE | RevAdjustmentLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | RevAdjustmentLastUpdateLogin | — |
+| LAST_UPDATED_BY | RevAdjustmentLastUpdatedBy | ✅ |
+| LINE_SELECTION_MODE | RevAdjustmentLineSelectionMode | — |
+| OBJECT_VERSION_NUMBER | RevAdjustmentObjectVersionNumber | — |
+| ORG_ID | RevAdjustmentOrgId | — |
+| PERCENT | RevAdjustmentPercent | ✅ |
+| PROGRAM_APPLICATION_ID | RevAdjustmentProgramApplicationId | — |
+| PROGRAM_ID | RevAdjustmentProgramId | — |
+| PROGRAM_UPDATE_DATE | RevAdjustmentProgramUpdateDate | — |
+| REASON_CODE | RevAdjustmentReasonCode | ✅ |
+| REQUEST_ID | RevAdjustmentRequestId | — |
+| REVENUE_ADJUSTMENT_ID | RevAdjustmentRevenueAdjustmentId | ✅ |
+| REVENUE_ADJUSTMENT_NUMBER | RevAdjustmentRevenueAdjustmentNumber | ✅ |
+| SALES_CREDIT_TYPE | RevAdjustmentSalesCreditType | ✅ |
+| STATUS | RevAdjustmentStatus | — |
+| TO_CATEGORY_ID | RevAdjustmentToCategoryId | — |
+| TO_CUST_TRX_LINE_ID | RevAdjustmentToCustTrxLineId | — |
+| TO_INVENTORY_ITEM_ID | RevAdjustmentToInventoryItemId | — |
+| TO_RESOURCE_SALESREP_ID | RevAdjustmentToResourceSalesrepId | — |
+| TO_SALESGROUP_ID | RevAdjustmentToSalesgroupId | — |
+| TYPE | RevAdjustmentType | ✅ |
+
+### [[revenueadjustmentextractpvo|RevenueAdjustmentExtractPVO]] (OTHER · BICC: 35/51)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| AMOUNT | ArRevenueAdjustmentAmount | ✅ |
+| AMOUNT_MODE | ArRevenueAdjustmentAmountMode | ✅ |
+| APPLICATION_DATE | ArRevenueAdjustmentApplicationDate | ✅ |
+| ATTRIBUTE1 | ArRevenueAdjustmentAttribute1 | — |
+| ATTRIBUTE10 | ArRevenueAdjustmentAttribute10 | — |
+| ATTRIBUTE11 | ArRevenueAdjustmentAttribute11 | — |
+| ATTRIBUTE12 | ArRevenueAdjustmentAttribute12 | — |
+| ATTRIBUTE13 | ArRevenueAdjustmentAttribute13 | — |
+| ATTRIBUTE14 | ArRevenueAdjustmentAttribute14 | — |
+| ATTRIBUTE15 | ArRevenueAdjustmentAttribute15 | — |
+| ATTRIBUTE2 | ArRevenueAdjustmentAttribute2 | — |
+| ATTRIBUTE3 | ArRevenueAdjustmentAttribute3 | — |
+| ATTRIBUTE4 | ArRevenueAdjustmentAttribute4 | — |
+| ATTRIBUTE5 | ArRevenueAdjustmentAttribute5 | — |
+| ATTRIBUTE6 | ArRevenueAdjustmentAttribute6 | — |
+| ATTRIBUTE7 | ArRevenueAdjustmentAttribute7 | — |
+| ATTRIBUTE8 | ArRevenueAdjustmentAttribute8 | — |
+| ATTRIBUTE9 | ArRevenueAdjustmentAttribute9 | — |
+| ATTRIBUTE_CATEGORY | ArRevenueAdjustmentAttributeCategory | — |
+| COMMENTS | ArRevenueAdjustmentComments | ✅ |
+| CREATED_BY | ArRevenueAdjustmentCreatedBy | ✅ |
+| CREATION_DATE | ArRevenueAdjustmentCreationDate | ✅ |
+| CUSTOMER_TRX_ID | ArRevenueAdjustmentCustomerTrxId | ✅ |
+| FROM_CATEGORY_ID | ArRevenueAdjustmentFromCategoryId | ✅ |
+| FROM_CUST_TRX_LINE_ID | ArRevenueAdjustmentFromCustTrxLineId | ✅ |
+| FROM_INVENTORY_ITEM_ID | ArRevenueAdjustmentFromInventoryItemId | ✅ |
+| FROM_RESOURCE_SALESREP_ID | ArRevenueAdjustmentFromResourceSalesrepId | ✅ |
+| FROM_SALESGROUP_ID | ArRevenueAdjustmentFromSalesgroupId | ✅ |
+| GL_DATE | ArRevenueAdjustmentGlDate | ✅ |
+| LAST_UPDATE_DATE | ArRevenueAdjustmentLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ArRevenueAdjustmentLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | ArRevenueAdjustmentLastUpdatedBy | ✅ |
+| LINE_SELECTION_MODE | ArRevenueAdjustmentLineSelectionMode | ✅ |
+| OBJECT_VERSION_NUMBER | ArRevenueAdjustmentObjectVersionNumber | ✅ |
+| ORG_ID | ArRevenueAdjustmentOrgId | ✅ |
+| PERCENT | ArRevenueAdjustmentPercent | ✅ |
+| PROGRAM_APPLICATION_ID | ArRevenueAdjustmentProgramApplicationId | ✅ |
+| PROGRAM_ID | ArRevenueAdjustmentProgramId | ✅ |
+| PROGRAM_UPDATE_DATE | ArRevenueAdjustmentProgramUpdateDate | ✅ |
+| REASON_CODE | ArRevenueAdjustmentReasonCode | ✅ |
+| REQUEST_ID | ArRevenueAdjustmentRequestId | ✅ |
+| REVENUE_ADJUSTMENT_ID | ArRevenueAdjustmentRevenueAdjustmentId | ✅ |
+| REVENUE_ADJUSTMENT_NUMBER | ArRevenueAdjustmentRevenueAdjustmentNumber | ✅ |
+| SALES_CREDIT_TYPE | ArRevenueAdjustmentSalesCreditType | ✅ |
+| STATUS | ArRevenueAdjustmentStatus | ✅ |
+| TO_CATEGORY_ID | ArRevenueAdjustmentToCategoryId | ✅ |
+| TO_CUST_TRX_LINE_ID | ArRevenueAdjustmentToCustTrxLineId | ✅ |
+| TO_INVENTORY_ITEM_ID | ArRevenueAdjustmentToInventoryItemId | ✅ |
+| TO_RESOURCE_SALESREP_ID | ArRevenueAdjustmentToResourceSalesrepId | ✅ |
+| TO_SALESGROUP_ID | ArRevenueAdjustmentToSalesgroupId | ✅ |
+| TYPE | ArRevenueAdjustmentType | ✅ |
+
+### [[revenueadjustmentpvo|RevenueAdjustmentPVO]] (AR · BICC: 15/35)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| AMOUNT | RevenueAdjustmentAmount | ✅ |
+| AMOUNT_MODE | RevenueAdjustmentAmountMode | ✅ |
+| APPLICATION_DATE | RevenueAdjustmentApplicationDate | ✅ |
+| COMMENTS | RevenueAdjustmentComments | ✅ |
+| CREATED_BY | RevenueAdjustmentCreatedBy | ✅ |
+| CREATION_DATE | RevenueAdjustmentCreationDate | ✅ |
+| CUSTOMER_TRX_ID | RevenueAdjustmentCustomerTrxId | — |
+| FROM_CATEGORY_ID | RevenueAdjustmentFromCategoryId | — |
+| FROM_CUST_TRX_LINE_ID | RevenueAdjustmentFromCustTrxLineId | — |
+| FROM_INVENTORY_ITEM_ID | RevenueAdjustmentFromInventoryItemId | — |
+| FROM_RESOURCE_SALESREP_ID | RevenueAdjustmentFromResourceSalesrepId | — |
+| FROM_SALESGROUP_ID | RevenueAdjustmentFromSalesgroupId | — |
+| GL_DATE | RevenueAdjustmentGlDate | ✅ |
+| LAST_UPDATE_DATE | RevenueAdjustmentLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | RevenueAdjustmentLastUpdateLogin | — |
+| LAST_UPDATED_BY | RevenueAdjustmentLastUpdatedBy | ✅ |
+| LINE_SELECTION_MODE | RevenueAdjustmentLineSelectionMode | — |
+| OBJECT_VERSION_NUMBER | RevenueAdjustmentObjectVersionNumber | — |
+| ORG_ID | RevenueAdjustmentOrgId | — |
+| PERCENT | RevenueAdjustmentPercent | ✅ |
+| PROGRAM_APPLICATION_ID | RevenueAdjustmentProgramApplicationId | — |
+| PROGRAM_ID | RevenueAdjustmentProgramId | — |
+| PROGRAM_UPDATE_DATE | RevenueAdjustmentProgramUpdateDate | — |
+| REASON_CODE | RevenueAdjustmentReasonCode | ✅ |
+| REQUEST_ID | RevenueAdjustmentRequestId | — |
+| REVENUE_ADJUSTMENT_ID | RevenueAdjustmentId | ✅ |
+| REVENUE_ADJUSTMENT_NUMBER | RevenueAdjustmentRevenueAdjustmentNumber | ✅ |
+| SALES_CREDIT_TYPE | RevenueAdjustmentSalesCreditType | ✅ |
+| STATUS | RevenueAdjustmentStatus | — |
+| TO_CATEGORY_ID | RevenueAdjustmentToCategoryId | — |
+| TO_CUST_TRX_LINE_ID | RevenueAdjustmentToCustTrxLineId | — |
+| TO_INVENTORY_ITEM_ID | RevenueAdjustmentToInventoryItemId | — |
+| TO_RESOURCE_SALESREP_ID | RevenueAdjustmentToResourceSalesrepId | — |
+| TO_SALESGROUP_ID | RevenueAdjustmentToSalesgroupId | — |
+| TYPE | RevenueAdjustmentType | ✅ |
+
+### [[transactionlinedistributionpvo|TransactionLineDistributionPVO]] (AR · BICC: 1/32)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| AMOUNT | RevenueAdjustmentAmount | — |
+| AMOUNT_MODE | RevenueAdjustmentAmountMode | — |
+| APPLICATION_DATE | RevenueAdjustmentApplicationDate | — |
+| CREATED_BY | RevenueAdjustmentCreatedBy | — |
+| CUSTOMER_TRX_ID | RevenueAdjustmentCustomerTrxId | — |
+| FROM_CATEGORY_ID | RevenueAdjustmentFromCategoryId | — |
+| FROM_CUST_TRX_LINE_ID | RevenueAdjustmentFromCustTrxLineId | — |
+| FROM_INVENTORY_ITEM_ID | RevenueAdjustmentFromInventoryItemId | — |
+| FROM_RESOURCE_SALESREP_ID | RevenueAdjustmentFromResourceSalesrepId | — |
+| FROM_SALESGROUP_ID | RevenueAdjustmentFromSalesgroupId | — |
+| GL_DATE | RevenueAdjustmentGlDate | — |
+| LAST_UPDATE_LOGIN | RevenueAdjustmentLastUpdateLogin | — |
+| LAST_UPDATED_BY | RevenueAdjustmentLastUpdatedBy | — |
+| LINE_SELECTION_MODE | RevenueAdjustmentLineSelectionMode | — |
+| OBJECT_VERSION_NUMBER | RevenueAdjustmentObjectVersionNumber | — |
+| ORG_ID | RevenueAdjustmentOrgId | — |
+| PERCENT | RevenueAdjustmentPercent | — |
+| PROGRAM_APPLICATION_ID | RevenueAdjustmentProgramApplicationId | — |
+| PROGRAM_ID | RevenueAdjustmentProgramId | — |
+| PROGRAM_UPDATE_DATE | RevenueAdjustmentProgramUpdateDate | — |
+| REASON_CODE | RevenueAdjustmentReasonCode | — |
+| REQUEST_ID | RevenueAdjustmentRequestId | — |
+| REVENUE_ADJUSTMENT_ID | RevenueAdjustmentRevenueAdjustmentId | — |
+| REVENUE_ADJUSTMENT_NUMBER | RevenueAdjustmentRevenueAdjustmentNumber | ✅ |
+| SALES_CREDIT_TYPE | RevenueAdjustmentSalesCreditType | — |
+| STATUS | RevenueAdjustmentStatus | — |
+| TO_CATEGORY_ID | RevenueAdjustmentToCategoryId | — |
+| TO_CUST_TRX_LINE_ID | RevenueAdjustmentToCustTrxLineId | — |
+| TO_INVENTORY_ITEM_ID | RevenueAdjustmentToInventoryItemId | — |
+| TO_RESOURCE_SALESREP_ID | RevenueAdjustmentToResourceSalesrepId | — |
+| TO_SALESGROUP_ID | RevenueAdjustmentToSalesgroupId | — |
+| TYPE | RevenueAdjustmentType | — |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — AR_REVENUE_ADJUSTMENTS_ALL](https://docs.oracle.com/en/cloud/saas/financials/25a/oedmf/arrevenueadjustmentsall-25164.html)

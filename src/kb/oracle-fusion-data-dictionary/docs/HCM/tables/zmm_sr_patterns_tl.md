@@ -107,6 +107,50 @@ WHERE  b.ACTIVE_FLAG = 'Y';
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[patternextractpvo|PatternExtractPVO]] (OTHER · BICC: 2/3)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| LANGUAGE | PatternTranslationPEOLanguage | — |
+| PATTERN_DESC | PatternTranslationPEOPatternDesc | ✅ |
+| PATTERN_NAME | PatternTranslationPEOPatternName | ✅ |
+
+### [[patterntranslationextractpvo|PatternTranslationExtractPVO]] (OTHER · BICC: 11/11)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | CreatedBy | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| LANGUAGE | Language | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | LastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | ✅ |
+| PATTERN_DESC | PatternDesc | ✅ |
+| PATTERN_ID | PatternId | ✅ |
+| PATTERN_NAME | PatternName | ✅ |
+| SOURCE_LANG | SourceLang | ✅ |
+
+### [[scheduleassignmentpvo|ScheduleAssignmentPVO]] (GL · BICC: 2/11)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | PatternsTranslationPEOCreatedBy | — |
+| CREATION_DATE | PatternsTranslationPEOCreationDate | — |
+| LANGUAGE | PatternsTranslationPEOLanguage | — |
+| LAST_UPDATE_DATE | PatternsTranslationPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | PatternsTranslationPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | PatternsTranslationPEOLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | PatternsTranslationPEOObjectVersionNumber | — |
+| PATTERN_DESC | PatternsTranslationPEOPatternDesc | — |
+| PATTERN_ID | PatternsTranslationPEOPatternId | — |
+| PATTERN_NAME | PatternsTranslationPEOPatternName | ✅ |
+| SOURCE_LANG | PatternsTranslationPEOSourceLang | — |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Fusion HCM Tables and Views](https://docs.oracle.com/en/cloud/saas/human-resources/25a/)

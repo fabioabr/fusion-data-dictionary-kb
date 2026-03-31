@@ -109,3 +109,118 @@ WHERE  pm.POOL_ID = :p_pool_id
 
 - [Oracle Docs — HRT_POOL_MEMBERS](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/hrtpoolmembers.html)
 - [[hcm-module-data-dictionary]] — Dossie do modulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[candidatepoolmemberpvo|CandidatePoolMemberPVO]] (PO)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ENTERPRISE_ID | EnterpriseId | — |
+| ENTERPRISE_ID | EnterpriseId1 | — |
+| MEMBER_ID | MemberId | — |
+| POOL_MEMBER_ID | PoolMemberId1 | — |
+| STATUS | Status | — |
+
+### [[poolcandhisteventpvo|PoolCandHistEventPVO]] (PO · BICC: 1/5)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATION_DATE | PoolMemberPEOCreationDate | — |
+| ENTERPRISE_ID | EnterpriseId | — |
+| MEMBER_ID | MemberId | ✅ |
+| POOL_ID | PoolId | — |
+| POOL_MEMBER_ID | PoolMemberId | — |
+
+### [[poolmemberspvo|PoolMembersPVO]] (PO · BICC: 9/79)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ATTRIBUTE1 | Attribute1 | — |
+| ATTRIBUTE10 | Attribute10 | — |
+| ATTRIBUTE11 | Attribute11 | — |
+| ATTRIBUTE12 | Attribute12 | — |
+| ATTRIBUTE13 | Attribute13 | — |
+| ATTRIBUTE14 | Attribute14 | — |
+| ATTRIBUTE15 | Attribute15 | — |
+| ATTRIBUTE16 | Attribute16 | — |
+| ATTRIBUTE17 | Attribute17 | — |
+| ATTRIBUTE18 | Attribute18 | — |
+| ATTRIBUTE19 | Attribute19 | — |
+| ATTRIBUTE2 | Attribute2 | — |
+| ATTRIBUTE20 | Attribute20 | — |
+| ATTRIBUTE21 | Attribute21 | — |
+| ATTRIBUTE22 | Attribute22 | — |
+| ATTRIBUTE23 | Attribute23 | — |
+| ATTRIBUTE24 | Attribute24 | — |
+| ATTRIBUTE25 | Attribute25 | — |
+| ATTRIBUTE26 | Attribute26 | — |
+| ATTRIBUTE27 | Attribute27 | — |
+| ATTRIBUTE28 | Attribute28 | — |
+| ATTRIBUTE29 | Attribute29 | — |
+| ATTRIBUTE3 | Attribute3 | — |
+| ATTRIBUTE30 | Attribute30 | — |
+| ATTRIBUTE4 | Attribute4 | — |
+| ATTRIBUTE5 | Attribute5 | — |
+| ATTRIBUTE6 | Attribute6 | — |
+| ATTRIBUTE7 | Attribute7 | — |
+| ATTRIBUTE8 | Attribute8 | — |
+| ATTRIBUTE9 | Attribute9 | — |
+| ATTRIBUTE_CATEGORY | AttributeCategory | — |
+| ATTRIBUTE_DATE1 | AttributeDate1 | — |
+| ATTRIBUTE_DATE10 | AttributeDate10 | — |
+| ATTRIBUTE_DATE11 | AttributeDate11 | — |
+| ATTRIBUTE_DATE12 | AttributeDate12 | — |
+| ATTRIBUTE_DATE13 | AttributeDate13 | — |
+| ATTRIBUTE_DATE14 | AttributeDate14 | — |
+| ATTRIBUTE_DATE15 | AttributeDate15 | — |
+| ATTRIBUTE_DATE2 | AttributeDate2 | — |
+| ATTRIBUTE_DATE3 | AttributeDate3 | — |
+| ATTRIBUTE_DATE4 | AttributeDate4 | — |
+| ATTRIBUTE_DATE5 | AttributeDate5 | — |
+| ATTRIBUTE_DATE6 | AttributeDate6 | — |
+| ATTRIBUTE_DATE7 | AttributeDate7 | — |
+| ATTRIBUTE_DATE8 | AttributeDate8 | — |
+| ATTRIBUTE_DATE9 | AttributeDate9 | — |
+| ATTRIBUTE_NUMBER1 | AttributeNumber1 | — |
+| ATTRIBUTE_NUMBER10 | AttributeNumber10 | — |
+| ATTRIBUTE_NUMBER11 | AttributeNumber11 | — |
+| ATTRIBUTE_NUMBER12 | AttributeNumber12 | — |
+| ATTRIBUTE_NUMBER13 | AttributeNumber13 | — |
+| ATTRIBUTE_NUMBER14 | AttributeNumber14 | — |
+| ATTRIBUTE_NUMBER15 | AttributeNumber15 | — |
+| ATTRIBUTE_NUMBER16 | AttributeNumber16 | — |
+| ATTRIBUTE_NUMBER17 | AttributeNumber17 | — |
+| ATTRIBUTE_NUMBER18 | AttributeNumber18 | — |
+| ATTRIBUTE_NUMBER19 | AttributeNumber19 | — |
+| ATTRIBUTE_NUMBER2 | AttributeNumber2 | — |
+| ATTRIBUTE_NUMBER20 | AttributeNumber20 | — |
+| ATTRIBUTE_NUMBER3 | AttributeNumber3 | — |
+| ATTRIBUTE_NUMBER4 | AttributeNumber4 | — |
+| ATTRIBUTE_NUMBER5 | AttributeNumber5 | — |
+| ATTRIBUTE_NUMBER6 | AttributeNumber6 | — |
+| ATTRIBUTE_NUMBER7 | AttributeNumber7 | — |
+| ATTRIBUTE_NUMBER8 | AttributeNumber8 | — |
+| ATTRIBUTE_NUMBER9 | AttributeNumber9 | — |
+| CREATED_BY | CreatedBy | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| ENTERPRISE_ID | PoolMembersPEOEnterpriseId | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | — |
+| LAST_UPDATED_BY | LastUpdatedBy | ✅ |
+| MEMBER_ID | PoolMembersPEOMemberId | ✅ |
+| MEMBER_SINCE | MemberSince | — |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | — |
+| POOL_ID | PoolMembersPEOPoolId | ✅ |
+| POOL_MEMBER_ID | PoolMembersPEOPoolMemberId | ✅ |
+| POOL_MEMBER_TYPE | PoolMemberType | — |
+| STATUS | PoolMembersPEOStatus | ✅ |
+
+### [[sourcetrackingviewallpvo|SourceTrackingViewAllPVO]] (HCM)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ENTERPRISE_ID | PoolMemberPEOEnterpriseId | — |
+| POOL_MEMBER_ID | PoolMemberPEOPoolMemberId | — |

@@ -38,7 +38,6 @@ updated_at: 2026-03-25
 
 Armazena as **requisicoes de registro e atualizacao de fornecedores**. Cada registro representa uma solicitacao de cadastro (novo) ou atualizacao de dados existentes, gerenciada via workflow de aprovacao.
 
-
 ---
 
 ## 🧠 Propósito de Negócio
@@ -98,7 +97,6 @@ WHERE  REQUEST_STATUS = 'SUBMITTED'
 ORDER BY SUBMIT_DATE;
 ```
 
-
 ---
 
 ## 🔒 Observações
@@ -106,6 +104,28 @@ ORDER BY SUBMIT_DATE;
 - Tipo `NEW` cria fornecedor em `POZ_SUPPLIERS` apos aprovacao.
 - Workflow configuravel via Oracle BPM com multiplos niveis.
 - Requisicoes rejeitadas mantem motivo registrado.
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[supplierupreqpvo|SupplierUpReqPVO]] (PO · BICC: 3/13)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CONTACT_REQUEST_ID | SupplierUpReqContactRequestId | — |
+| CREATED_BY | SupplierUpReqCreatedBy | — |
+| CREATION_DATE | SupplierUpReqCreationDate | — |
+| LAST_UPDATE_DATE | SupplierUpReqLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | SupplierUpReqLastUpdateLogin | — |
+| LAST_UPDATED_BY | SupplierUpReqLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | SupplierUpReqObjectVersionNumber | — |
+| PER_LDAP_REQUEST_ID | SupplierUpReqPerLdapRequestId | — |
+| PERSON_PARTY_ID | SupplierUpReqPersonPartyId | — |
+| POST_INSTANCE_ID | SupplierUpReqPostInstanceId | — |
+| REQUEST_STATUS | SupplierUpReqRequestStatus | ✅ |
+| SUBMIT_INSTANCE_ID | SupplierUpReqSubmitInstanceId | — |
+| UP_REQUEST_ID | UpRequestId | ✅ |
 
 ---
 

@@ -139,6 +139,91 @@ WHERE  tt.STATUS = 'A'
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[customerfinancialprofilepvo|CustomerFinancialProfilePVO]] (AR)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| DESCRIPTION | TrxReqGroupingRuleDescription | — |
+| END_DATE | TrxReqGroupingRuleEndDate | — |
+| GROUPING_RULE_ID | TrxReqGroupingRuleGroupingRuleId | — |
+| NAME | TrxReqGroupingRuleName | — |
+| ORDERING_RULE_ID | TrxReqGroupingRuleOrderingRuleId | — |
+| START_DATE | TrxReqGroupingRuleStartDate | — |
+
+### [[customerprofile|CustomerProfile]] (AR · BICC: 2/13)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ATTRIBUTE_CATEGORY | RaGrpRuleAttributeCategory | — |
+| CREATED_BY | RaGrpRuleCreatedBy | — |
+| CREATION_DATE | RaGrpRuleCreationDate | — |
+| DESCRIPTION | RaGrpRuleDescription | — |
+| END_DATE | RaGrpRuleEndDate | — |
+| GROUPING_RULE_ID | RaGrpRuleGroupingRuleId | — |
+| LAST_UPDATE_DATE | RaGrpRuleLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | RaGrpRuleLastUpdateLogin | — |
+| LAST_UPDATED_BY | RaGrpRuleLastUpdatedBy | — |
+| NAME | RaGrpRuleName | ✅ |
+| OBJECT_VERSION_NUMBER | RaGrpRuleObjectVersionNumber | — |
+| ORDERING_RULE_ID | RaGrpRuleOrderingRuleId | — |
+| START_DATE | RaGrpRuleStartDate | — |
+
+### [[customersiteprofile|CustomerSiteProfile]] (AR · BICC: 2/13)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ATTRIBUTE_CATEGORY | RaGrpRuleAttributeCategory | — |
+| CREATED_BY | RaGrpRuleCreatedBy | — |
+| CREATION_DATE | RaGrpRuleCreationDate | — |
+| DESCRIPTION | RaGrpRuleDescription | — |
+| END_DATE | RaGrpRuleEndDate | — |
+| GROUPING_RULE_ID | RaGrpRuleGroupingRuleId | — |
+| LAST_UPDATE_DATE | RaGrpRuleLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | RaGrpRuleLastUpdateLogin | — |
+| LAST_UPDATED_BY | RaGrpRuleLastUpdatedBy | — |
+| NAME | RaGrpRuleName | ✅ |
+| OBJECT_VERSION_NUMBER | RaGrpRuleObjectVersionNumber | — |
+| ORDERING_RULE_ID | RaGrpRuleOrderingRuleId | — |
+| START_DATE | RaGrpRuleStartDate | — |
+
+### [[transactionrequestgroupingruleextractpvo|TransactionRequestGroupingRuleExtractPVO]] (OTHER · BICC: 13/29)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ATTRIBUTE1 | RaGroupingRuleAttribute1 | — |
+| ATTRIBUTE10 | RaGroupingRuleAttribute10 | — |
+| ATTRIBUTE11 | RaGroupingRuleAttribute11 | — |
+| ATTRIBUTE12 | RaGroupingRuleAttribute12 | — |
+| ATTRIBUTE13 | RaGroupingRuleAttribute13 | — |
+| ATTRIBUTE14 | RaGroupingRuleAttribute14 | — |
+| ATTRIBUTE15 | RaGroupingRuleAttribute15 | — |
+| ATTRIBUTE2 | RaGroupingRuleAttribute2 | — |
+| ATTRIBUTE3 | RaGroupingRuleAttribute3 | — |
+| ATTRIBUTE4 | RaGroupingRuleAttribute4 | — |
+| ATTRIBUTE5 | RaGroupingRuleAttribute5 | — |
+| ATTRIBUTE6 | RaGroupingRuleAttribute6 | — |
+| ATTRIBUTE7 | RaGroupingRuleAttribute7 | — |
+| ATTRIBUTE8 | RaGroupingRuleAttribute8 | — |
+| ATTRIBUTE9 | RaGroupingRuleAttribute9 | — |
+| ATTRIBUTE_CATEGORY | RaGroupingRuleAttributeCategory | — |
+| CREATED_BY | RaGroupingRuleCreatedBy | ✅ |
+| CREATION_DATE | RaGroupingRuleCreationDate | ✅ |
+| DESCRIPTION | RaGroupingRuleDescription | ✅ |
+| END_DATE | RaGroupingRuleEndDate | ✅ |
+| GROUPING_RULE_ID | RaGroupingRuleGroupingRuleId | ✅ |
+| LAST_UPDATE_DATE | RaGroupingRuleLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | RaGroupingRuleLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | RaGroupingRuleLastUpdatedBy | ✅ |
+| NAME | RaGroupingRuleName | ✅ |
+| OBJECT_VERSION_NUMBER | RaGroupingRuleObjectVersionNumber | ✅ |
+| ORDERING_RULE_ID | RaGroupingRuleOrderingRuleId | ✅ |
+| SEED_DATA_SOURCE | RaGroupingRuleSeedDataSource | ✅ |
+| START_DATE | RaGroupingRuleStartDate | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — RA_GROUPING_RULES](https://docs.oracle.com/en/cloud/saas/financials/25a/oedmf/ragroupingrules-10058.html)

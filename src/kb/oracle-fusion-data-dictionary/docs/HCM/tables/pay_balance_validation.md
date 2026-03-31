@@ -98,6 +98,26 @@ WHERE  bv.BALANCE_TYPE_ID = :p_balance_type_id;
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[balancevalidationpvo|BalanceValidationPVO]] (GL · BICC: 3/11)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BALANCE_LOAD_DATE | BalanceValidationPEOBalanceLoadDate | — |
+| BALANCE_VALIDATION_ID | BalanceValidationPEOBalanceValidationId | ✅ |
+| CREATED_BY | BalanceValidationPEOCreatedBy | — |
+| CREATION_DATE | BalanceValidationPEOCreationDate | — |
+| DEFINED_BALANCE_ID | BalanceValidationPEODefinedBalanceId | — |
+| LAST_UPDATE_DATE | BalanceValidationPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | BalanceValidationPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | BalanceValidationPEOLastUpdatedBy | — |
+| LEGISLATIVE_DATA_GROUP_ID | BalanceValidationPEOLegislativeDataGroupId | — |
+| OBJECT_VERSION_NUMBER | BalanceValidationPEOObjectVersionNumber | — |
+| RUN_BALANCE_STATUS | BalanceValidationPEORunBalanceStatus | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — PAY_BALANCE_VALIDATION](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/paybalancevalidation.html)

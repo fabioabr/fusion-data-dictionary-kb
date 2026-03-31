@@ -35,8 +35,6 @@ updated_at: 2026-03-25
 
 Registra os contextos e cenários de uso de cada template de regra, indicando onde e como os modelos podem ser aplicados.
 
-
-
 ---
 
 ## 🧠 Propósito de Negócio
@@ -100,6 +98,39 @@ WHERE  t.RULE_TMPLT_ID = :p_tmplt_id
 ## 🔒 Observações
 
 - Área funcional: Rules Engine dentro do Oracle Fusion Cloud HCM.
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[ruletemplateusagepvo|RuleTemplateUsagePVO]] (GL · BICC: 17/24)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ATRB_FLD_NAME | RuleTemplateUsageBPEOAtrbFldName | ✅ |
+| ATRB_FLD_SET_ID | RuleTemplateUsageBPEOAtrbFldSetId | — |
+| CREATED_BY | RuleTemplateUsageBPEOCreatedBy | ✅ |
+| CREATION_DATE | RuleTemplateUsageBPEOCreationDate | ✅ |
+| DISPLAY_SEQUENCE | RuleTemplateUsageBPEODisplaySequence | ✅ |
+| ENTERPRISE_ID | RuleTemplateUsageBPEOEnterpriseId | — |
+| HIDE_FLAG | RuleTemplateUsageBPEOHideFlag | ✅ |
+| LAST_UPDATE_DATE | RuleTemplateUsageBPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | RuleTemplateUsageBPEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | RuleTemplateUsageBPEOLastUpdatedBy | ✅ |
+| MSG_SEVERITY | RuleTemplateUsageBPEOMsgSeverity | ✅ |
+| OBJECT_VERSION_NUMBER | RuleTemplateUsageBPEOObjectVersionNumber | — |
+| OUTPUT_NAME | RuleTemplateUsageBPEOOutputName | ✅ |
+| OUTPUT_SOURCE | RuleTemplateUsageBPEOOutputSource | ✅ |
+| OUTPUT_VALUE_TYPE | RuleTemplateUsageBPEOOutputValueType | ✅ |
+| RECURSIVE | RuleTemplateUsageBPEORecursive | — |
+| RELATED_INPUT_NAME | RuleTemplateUsageBPEORelatedInputName | — |
+| RULE_TMPLT_USAGES_ID | RuleTemplateUsageBPEORuleTmpltUsagesId | ✅ |
+| RULE_TMPLTS_ID | RuleTemplateUsageBPEORuleTmpltsId | ✅ |
+| SEED_DATA_SOURCE | RuleTemplateUsageBPEOSeedDataSource | — |
+| SGUID | RuleTemplateUsageBPEOSguid | — |
+| TBB_GROUP_NUMBER | RuleTemplateUsageBPEOTbbGroupNumber | ✅ |
+| TM_ATRB_FLD_ID | RuleTemplateUsageBPEOTmAtrbFldId | ✅ |
+| VALUE_SET_ID | RuleTemplateUsageBPEOValueSetId | ✅ |
 
 ---
 

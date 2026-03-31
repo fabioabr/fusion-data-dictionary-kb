@@ -117,6 +117,61 @@ WHERE  a.INCIDENT_ID = :p_incident_id;
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[hnsactionspvo|HNSActionsPVO]] (HCM · BICC: 25/46)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_APPROVER_EMAIL_FLAG | HNSActionsPEOActionApproverEmailFlag | ✅ |
+| ACTION_DATE | HNSActionsPEOActionDate | ✅ |
+| ACTION_ID | HNSActionsPEOActionId | ✅ |
+| ACTION_NO | HNSActionsPEOActionNo | ✅ |
+| ACTION_PRECOM_EMAIL_FLAG | HNSActionsPEOActionPrecomEmailFlag | ✅ |
+| ACTION_REVIEWER_EMAIL_FLAG | HNSActionsPEOActionReviewerEmailFlag | ✅ |
+| ACTION_STATUS_CODE | HNSActionsPEOActionStatusCode | ✅ |
+| ACTION_SUMMARY | HNSActionsPEOActionSummary | ✅ |
+| ACTION_TYPE_CODE | HNSActionsPEOActionTypeCode | ✅ |
+| ATTRIBUTE1 | HNSActionsPEOAttribute1 | — |
+| ATTRIBUTE10 | HNSActionsPEOAttribute10 | — |
+| ATTRIBUTE2 | HNSActionsPEOAttribute2 | — |
+| ATTRIBUTE3 | HNSActionsPEOAttribute3 | — |
+| ATTRIBUTE4 | HNSActionsPEOAttribute4 | — |
+| ATTRIBUTE5 | HNSActionsPEOAttribute5 | — |
+| ATTRIBUTE6 | HNSActionsPEOAttribute6 | — |
+| ATTRIBUTE7 | HNSActionsPEOAttribute7 | — |
+| ATTRIBUTE8 | HNSActionsPEOAttribute8 | — |
+| ATTRIBUTE9 | HNSActionsPEOAttribute9 | — |
+| ATTRIBUTE_CATEGORY | HNSActionsPEOAttributeCategory | — |
+| ATTRIBUTE_NUMBER1 | HNSActionsPEOAttrNumber1 | — |
+| ATTRIBUTE_NUMBER2 | HNSActionsPEOAttrNumber2 | — |
+| ATTRIBUTE_NUMBER3 | HNSActionsPEOAttrNumber3 | — |
+| ATTRIBUTE_NUMBER4 | HNSActionsPEOAttrNumber4 | — |
+| ATTRIBUTE_NUMBER5 | HNSActionsPEOAttrNumber5 | — |
+| ATTRIBUTE_TIMESTAMP1 | HNSActionsPEOAttrTimestamp1 | — |
+| ATTRIBUTE_TIMESTAMP2 | HNSActionsPEOAttrTimestamp2 | — |
+| ATTRIBUTE_TIMESTAMP3 | HNSActionsPEOAttrTimestamp3 | — |
+| ATTRIBUTE_TIMESTAMP4 | HNSActionsPEOAttrTimestamp4 | — |
+| ATTRIBUTE_TIMESTAMP5 | HNSActionsPEOAttrTimestamp5 | — |
+| COMPLETED_FLAG | HNSActionsPEOCompletedFlag | ✅ |
+| CREATED_BY | HNSActionsPEOCreatedBy | ✅ |
+| CREATION_DATE | HNSActionsPEOCreationDate | ✅ |
+| DELETED_FLAG | HNSActionsPEODeletedFlag | ✅ |
+| DESCRIPTION | HNSActionsPEODescription | ✅ |
+| EST_COST_CURRENCY_CODE | HNSActionsPEOEstCostCurrencyCode | ✅ |
+| ESTIMATED_COST | HNSActionsPEOEstimatedCost | ✅ |
+| INCIDENT_ID | HNSActionsPEOIncidentId | ✅ |
+| LAST_UPDATE_DATE | HNSActionsPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | HNSActionsPEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | HNSActionsPEOLastUpdatedBy | ✅ |
+| LESSONS_LEARNED | HNSActionsPEOLessonsLearned | ✅ |
+| OBJECT_VERSION_NUMBER | HNSActionsPEOObjectVersionNumber | ✅ |
+| PRIORITY_CODE | HNSActionsPEOPriorityCode | ✅ |
+| RECOMMEND_ID | HNSActionsPEORecommendId | ✅ |
+| REQ_RESOURCES | HNSActionsPEOReqResources | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — HNS_ACTIONS](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/hnsactions.html)

@@ -35,8 +35,6 @@ updated_at: 2026-03-25
 
 Define os parâmetros de entrada padrão para cada template de regra, servindo como especificação dos inputs esperados pelo modelo.
 
-
-
 ---
 
 ## 🧠 Propósito de Negócio
@@ -101,6 +99,32 @@ WHERE  t.RULE_TMPLT_ID = :p_tmplt_id
 ## 🔒 Observações
 
 - Área funcional: Rules Engine dentro do Oracle Fusion Cloud HCM.
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[ruletemplateinputpvo|RuleTemplateInputPVO]] (GL · BICC: 12/17)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | RuleTemplateInputBPEOCreatedBy | ✅ |
+| CREATION_DATE | RuleTemplateInputBPEOCreationDate | ✅ |
+| DISPLAY_SEQUENCE | RuleTemplateInputBPEODisplaySequence | ✅ |
+| ENTERPRISE_ID | RuleTemplateInputBPEOEnterpriseId | — |
+| INPUT_NAME | RuleTemplateInputBPEOInputName | ✅ |
+| LAST_UPDATE_DATE | RuleTemplateInputBPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | RuleTemplateInputBPEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | RuleTemplateInputBPEOLastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | RuleTemplateInputBPEOObjectVersionNumber | — |
+| PARM_VALUE_REQUIRED | RuleTemplateInputBPEOParmValueRequired | ✅ |
+| RULE_PARAMETER_TYPE | RuleTemplateInputBPEORuleParameterType | ✅ |
+| RULE_TMPLT_INPUT_ID | RuleTemplateInputBPEORuleTmpltInputId | ✅ |
+| RULE_TMPLTS_ID | RuleTemplateInputBPEORuleTmpltsId | ✅ |
+| SEED_DATA_SOURCE | RuleTemplateInputBPEOSeedDataSource | — |
+| SGUID | RuleTemplateInputBPEOSguid | — |
+| USER_DEFINED_NAME | RuleTemplateInputBPEOUserDefinedName | — |
+| VALUE_SET_ID | RuleTemplateInputBPEOValueSetId | ✅ |
 
 ---
 

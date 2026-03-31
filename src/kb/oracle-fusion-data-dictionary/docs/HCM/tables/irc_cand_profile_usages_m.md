@@ -106,3 +106,62 @@ GROUP BY pu.USAGE_TYPE;
 
 - [Oracle Docs -- IRC_CAND_PROFILE_USAGES_M](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/irccandprofileusagesm.html)
 - [[hcm-module-data-dictionary]] -- Dossie do modulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[candidatepoolmemberpvo|CandidatePoolMemberPVO]] (PO · BICC: 1/6)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CAND_PROFILE_USAGE_ID | CandProfileUsageId | — |
+| EFFECTIVE_END_DATE | CandProfileUsgsPEOEffectiveEndDate | — |
+| EFFECTIVE_LATEST_CHANGE | CandProfileUsgsPEOEffectiveLatestChange | — |
+| EFFECTIVE_SEQUENCE | CandProfileUsgsPEOEffectiveSequence | — |
+| EFFECTIVE_START_DATE | CandProfileUsgsPEOEffectiveStartDate | ✅ |
+| PROFILE_ID | CandProfileUsgsPEOProfileId | — |
+
+### [[candidatepvo|CandidatePVO]] (HCM · BICC: 1/17)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CAND_PROFILE_USAGE_ID | CandProfileUsageId | — |
+| CREATED_BY | CreatedBy1 | — |
+| CREATION_DATE | CreationDate1 | — |
+| EFFECTIVE_END_DATE | EffectiveEndDate | — |
+| EFFECTIVE_LATEST_CHANGE | EffectiveLatestChange | — |
+| EFFECTIVE_SEQUENCE | EffectiveSequence | — |
+| EFFECTIVE_START_DATE | EffectiveStartDate | — |
+| JOB_DEFINITION_NAME | JobDefinitionName1 | — |
+| JOB_DEFINITION_PACKAGE | JobDefinitionPackage1 | — |
+| LAST_UPDATE_DATE | LastUpdateDate1 | — |
+| LAST_UPDATE_LOGIN | LastUpdateLogin1 | — |
+| LAST_UPDATED_BY | LastUpdatedBy1 | — |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber1 | — |
+| PERSON_ID | PersonId1 | — |
+| PROFILE_ID | ProfileId | ✅ |
+| PROFILE_TYPE | ProfileType | — |
+| REQUEST_ID | RequestId1 | — |
+
+### [[prospectspvo|ProspectsPVO]] (HCM · BICC: 6/6)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CAND_PROFILE_USAGE_ID | CProUsgPEOCandProfileUsageId | ✅ |
+| EFFECTIVE_END_DATE | CProUsgPEOEffectiveEndDate | ✅ |
+| EFFECTIVE_LATEST_CHANGE | CProUsgPEOEffectiveLatestChange | ✅ |
+| EFFECTIVE_SEQUENCE | CProUsgPEOEffectiveSequence | ✅ |
+| EFFECTIVE_START_DATE | CProUsgPEOEffectiveStartDate | ✅ |
+| PROFILE_ID | CProUsgPEOCandProfileId | ✅ |
+
+### [[prospectsviewallpvo|ProspectsViewAllPVO]] (HCM · BICC: 1/6)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CAND_PROFILE_USAGE_ID | CProUsgPEOCandProfileUsageId | — |
+| EFFECTIVE_END_DATE | CProUsgPEOEffectiveEndDate | — |
+| EFFECTIVE_LATEST_CHANGE | CProUsgPEOEffectiveLatestChange | — |
+| EFFECTIVE_SEQUENCE | CProUsgPEOEffectiveSequence | — |
+| EFFECTIVE_START_DATE | CProUsgPEOEffectiveStartDate | ✅ |
+| PROFILE_ID | CProUsgPEOCandProfileId | — |

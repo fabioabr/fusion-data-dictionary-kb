@@ -102,6 +102,40 @@ WHERE  tl.LANGUAGE = 'PTB';
 - Sempre usar JOIN com a tabela _B para obter dados completos.
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[actiontypespvo|ActionTypesPVO]] (GL · BICC: 4/10)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_TYPE_ID | ActionTypesTranslationPEOActionTypeId | — |
+| CREATED_BY | ActionTypesTranslationPEOCreatedBy | — |
+| CREATION_DATE | ActionTypesTranslationPEOCreationDate | — |
+| LANGUAGE | ActionTypesTranslationPEOLanguage | ✅ |
+| LAST_UPDATE_DATE | ActionTypesTranslationPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ActionTypesTranslationPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | ActionTypesTranslationPEOLastUpdatedBy | — |
+| MEANING | ActionTypesTranslationPEOMeaning | ✅ |
+| OBJECT_VERSION_NUMBER | ActionTypesTranslationPEOObjectVersionNumber | — |
+| SOURCE_LANG | ActionTypesTranslationPEOSourceLang | ✅ |
+
+### [[actiontypestranslationpvo|ActionTypesTranslationPVO]] (GL · BICC: 3/10)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_TYPE_ID | ActionTypeId | ✅ |
+| CREATED_BY | ActionTypesTranslationPEOCreatedBy | — |
+| CREATION_DATE | ActionTypesTranslationPEOCreationDate | — |
+| LANGUAGE | Language | ✅ |
+| LAST_UPDATE_DATE | ActionTypesTranslationPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ActionTypesTranslationPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | ActionTypesTranslationPEOLastUpdatedBy | — |
+| MEANING | ActionTypesTranslationPEOMeaning | — |
+| OBJECT_VERSION_NUMBER | ActionTypesTranslationPEOObjectVersionNumber | — |
+| SOURCE_LANG | ActionTypesTranslationPEOSourceLang | — |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — PER_ACTION_TYPES_TL](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/peractiontypestl.html)

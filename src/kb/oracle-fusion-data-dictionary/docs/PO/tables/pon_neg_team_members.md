@@ -137,6 +137,58 @@ WHERE  tm.AUCTION_HEADER_ID = :p_auction_header_id
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[negotiationcollaborationteamextractpvo|NegotiationCollaborationTeamExtractPVO]] (PO · BICC: 19/19)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACCESS_TYPE | AccessType | ✅ |
+| APPROVAL_STATUS | ApprovalStatus | ✅ |
+| APPROVER_FLAG | ApproverFlag | ✅ |
+| AUCTION_HEADER_ID | AuctionHeaderId | ✅ |
+| COMPLETION_DATE | CompletionDate | ✅ |
+| CREATED_BY | CreatedBy | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| LAST_AMENDMENT_UPDATE | LastAmendmentUpdate | ✅ |
+| LAST_NOTIFIED_DATE | LastNotifiedDate | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | LastUpdatedBy | ✅ |
+| MEMBER_TYPE | MemberType | ✅ |
+| MODIFIED_FLAG | ModifiedFlag | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | ✅ |
+| PERSON_ID | PersonId | ✅ |
+| SEQUENCE_NUMBER | SequenceNumber | ✅ |
+| TARGET_DATE | TargetDate | ✅ |
+| TASK_NAME | TaskName | ✅ |
+
+### [[negotiationcollaborationteampvo|NegotiationCollaborationTeamPVO]] (PO · BICC: 8/19)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACCESS_TYPE | AccessType | ✅ |
+| APPROVAL_STATUS | NegotiationCollaborationApprovalStatus | — |
+| APPROVER_FLAG | NegotiationCollaborationApproverFlag | — |
+| AUCTION_HEADER_ID | AuctionHeaderId | ✅ |
+| COMPLETION_DATE | NegotiationCollaborationCompletionDate | ✅ |
+| CREATED_BY | NegotiationCollaborationCreatedBy | — |
+| CREATION_DATE | NegotiationCollaborationCreationDate | ✅ |
+| LAST_AMENDMENT_UPDATE | NegotiationCollaborationLastAmendmentUpdate | — |
+| LAST_NOTIFIED_DATE | NegotiationCollaborationLastNotifiedDate | — |
+| LAST_UPDATE_DATE | NegotiationCollaborationLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | NegotiationCollaborationLastUpdateLogin | — |
+| LAST_UPDATED_BY | NegotiationCollaborationLastUpdatedBy | — |
+| MEMBER_TYPE | NegotiationCollaborationMemberType | — |
+| MODIFIED_FLAG | NegotiationCollaborationModifiedFlag | — |
+| OBJECT_VERSION_NUMBER | NegotiationCollaborationObjectVersionNumber | — |
+| PERSON_ID | NegotiationCollaborationPersonId | — |
+| SEQUENCE_NUMBER | SequenceNumber | ✅ |
+| TARGET_DATE | NegotiationCollaborationTargetDate | ✅ |
+| TASK_NAME | NegotiationCollaborationTaskName | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — Sourcing Tables](https://docs.oracle.com/en/cloud/saas/procurement/25a/oedmf/pon-tables.html)

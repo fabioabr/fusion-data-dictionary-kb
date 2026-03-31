@@ -111,3 +111,41 @@ WHERE  v.PERSON_ID = :p_person_id;
 
 - [Oracle Docs — HWM_TM_REP_M_CUST_ATRB_VAL_V](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/hwmtmrepmcustatrbvalv.html)
 - [[hcm-module-data-dictionary]] — Dossie do modulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[mastercustomattributevaluepvo|MasterCustomAttributeValuePVO]] (HCM · BICC: 6/29)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ALLOWED_SCOPE | AllowedScope | — |
+| ATTRIBUTE_CATEGORY | AttributeCategory | — |
+| ATTRIBUTE_GROUP | AttributeGroup | — |
+| ATTRIBUTE_NAME | AttributeName | ✅ |
+| ATTRIBUTE_TYPE | AttributeType | — |
+| ATTRIBUTE_VARCHAR_VALUE | AttributeVarcharValue | ✅ |
+| CLASS | Class11 | — |
+| COMP_DISP_CODE | ComponentDisplayCode | — |
+| CREATED_BY | CreatedBy | — |
+| CREATION_DATE | CreationDate | — |
+| DESCRIPTION | Description | — |
+| DISPLAY_NAME | DisplayName | — |
+| ENTERPRISE_ID | EnterpriseId | — |
+| GLOBAL_TM_ATRB_FLD_ID | GlobalTimeAttributeFieldId | — |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | — |
+| LAST_UPDATED_BY | LastUpdatedBy | — |
+| MANDATORY_FOR_TCSMRS | MandatoryForTimeConsumers | — |
+| MODULE_ID | ModuleId | — |
+| NAME | Name | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | — |
+| PARENT_TM_ATRB_FLD_ID | ParentTimeAttributeFieldId | — |
+| TCSMRS_ID | TimeConsumersId | — |
+| TM_ATRB_FLD_ID | TimeAttributeFieldId | ✅ |
+| TM_REC_ID | TimeRecordId | — |
+| TM_REC_VERSION | TimeRecordVersion | — |
+| TM_REP_ATRB_ID | TimeRepositoryAttributeId | ✅ |
+| VALUE_LOCATION | ValueLocation | — |
+| VALUE_SET_ID | ValueSetId | — |

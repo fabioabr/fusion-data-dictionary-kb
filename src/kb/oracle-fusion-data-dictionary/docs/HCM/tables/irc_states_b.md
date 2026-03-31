@@ -99,6 +99,62 @@ ORDER BY sb.DISPLAY_ORDER;
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[candidatepoolmemberpvo|CandidatePoolMemberPVO]] (PO · BICC: 3/3)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CODE | Code1 | ✅ |
+| STATE_ID | StateId | ✅ |
+| TYPE_CODE | TypeCode1 | ✅ |
+
+### [[jobapphisteventpvo|JobAppHistEventPVO]] (HCM · BICC: 1/2)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CODE | StateBPEOCode | ✅ |
+| STATE_ID | StateBPEOStateId | — |
+
+### [[jobreqhisteventpvo|JobReqHistEventPVO]] (PO · BICC: 2/2)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CODE | StateBPEOCode | ✅ |
+| STATE_ID | StateId | ✅ |
+
+### [[poolcandhisteventpvo|PoolCandHistEventPVO]] (PO · BICC: 1/2)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CODE | StateBPEOCode | ✅ |
+| STATE_ID | StateId | — |
+
+### [[statepvo|StatePVO]] (HCM · BICC: 10/10)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CODE | Code | ✅ |
+| CREATED_BY | CreatedBy | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | LastUpdatedBy | ✅ |
+| MODULE_ID | ModuleId | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | ✅ |
+| STATE_ID | StateId | ✅ |
+| TYPE_CODE | TypeCode | ✅ |
+
+### [[wfmodelrequisitionpvo|WfModelRequisitionPVO]] (HCM)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CODE | StateBPEOCode | — |
+| STATE_ID | StateBPEOStateId | — |
+| TYPE_CODE | StateBPEOTypeCode | — |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — IRC_STATES_B](https://docs.oracle.com/en/cloud/saas/talent-management/25a/oedmf/ircstatesb.html)

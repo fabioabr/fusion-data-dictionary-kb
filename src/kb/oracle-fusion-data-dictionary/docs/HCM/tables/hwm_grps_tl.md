@@ -104,3 +104,41 @@ WHERE  tl.GRP_ID = :p_id
 
 - [Oracle Docs — HWM_GRPS_TL](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/hwmgrpstl.html)
 - [[hcm-module-data-dictionary]] — Dossie do modulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[groupmemberspvo|GroupMembersPVO]] (GL · BICC: 12/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | GroupsTranslationPEOCreatedBy | ✅ |
+| CREATION_DATE | GroupsTranslationPEOCreationDate | ✅ |
+| DESCRIPTION | GroupsTranslationPEODescription | ✅ |
+| ENTERPRISE_ID | GroupsTranslationPEOEnterpriseId | ✅ |
+| GROUP_NAME | GroupsTranslationPEOGroupName | ✅ |
+| GRP_ID | GroupsTranslationPEOGroupId | ✅ |
+| LANGUAGE | GroupsTranslationPEOLanguage | ✅ |
+| LAST_UPDATE_DATE | GroupsTranslationPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | GroupsTranslationPEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | GroupsTranslationPEOLastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | GroupsTranslationPEOObjectVersionNumber | ✅ |
+| SOURCE_LANG | GroupsTranslationPEOSourceLang | ✅ |
+
+### [[groupspvo|GroupsPVO]] (GL · BICC: 12/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | GroupsTranslationPEOCreatedBy | ✅ |
+| CREATION_DATE | GroupsTranslationPEOCreationDate | ✅ |
+| DESCRIPTION | GroupsTranslationPEODescription | ✅ |
+| ENTERPRISE_ID | GroupsTranslationPEOEnterpriseId | ✅ |
+| GROUP_NAME | GroupsTranslationPEOGroupName | ✅ |
+| GRP_ID | GroupsTranslationPEOGroupId | ✅ |
+| LANGUAGE | GroupsTranslationPEOLanguage | ✅ |
+| LAST_UPDATE_DATE | GroupsTranslationPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | GroupsTranslationPEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | GroupsTranslationPEOLastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | GroupsTranslationPEOObjectVersionNumber | ✅ |
+| SOURCE_LANG | GroupsTranslationPEOSourceLang | ✅ |

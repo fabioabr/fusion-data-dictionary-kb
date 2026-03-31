@@ -102,3 +102,21 @@ WHERE  cr.CAMPAIGN_ID = :p_campaign_id;
 
 - [Oracle Docs -- IRC_CAMP_REQUISITIONS](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/irccamprequisitions.html)
 - [[hcm-module-data-dictionary]] -- Dossie do modulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[campaignfactpvo|CampaignFactPVO]] (HCM · BICC: 2/9)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CAMPAIGN_ID | CampRequisitionPEOCampaignId | — |
+| CAMPAIGN_REQUISITION_ID | CampRequisitionId | — |
+| CREATED_BY | CampRequisitionPEOCreatedBy | — |
+| CREATION_DATE | CampRequisitionPEOCreationDate | — |
+| LAST_UPDATE_DATE | CampRequisitionPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | CampRequisitionPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | CampRequisitionPEOLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | CampRequisitionPEOObjectVersionNumber | — |
+| REQUISITION_ID | RequisitionId | ✅ |

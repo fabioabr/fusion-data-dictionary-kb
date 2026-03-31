@@ -93,6 +93,20 @@ WHERE  tl.SUBSCRIBER_ID = :p_id AND tl.LANGUAGE = USERENV('LANG');
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[questionnairequestionsubscriberpvo|QuestionnaireQuestionSubscriberPVO]] (HCM · BICC: 5/5)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | SubscriberTranslationPEOBusinessGroupId | ✅ |
+| LANGUAGE | SubscriberTranslationPEOLanguage | ✅ |
+| LAST_UPDATE_DATE | SubscriberTranslationPEOLastUpdateDate | ✅ |
+| NAME | SubscriberTranslationPEOName | ✅ |
+| SUBSCRIBER_ID | SubscriberTranslationPEOSubscriberId | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Fusion HCM Tables and Views](https://docs.oracle.com/en/cloud/saas/human-resources/25a/)

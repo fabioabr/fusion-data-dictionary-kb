@@ -100,6 +100,37 @@ WHERE  rf.REQUISITION_ID = :p_requisition_id;
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[endorsementspvo|EndorsementsPVO]] (PO · BICC: 1/1)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| REFERRAL_ID | ReferralId1 | ✅ |
+
+### [[referralspvo|ReferralsPVO]] (PO · BICC: 15/16)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| AGENT_ID | ReferralPEOAgentId | — |
+| CANDIDATE_PERSON_ID | CandidatePersonId | ✅ |
+| CANDIDATE_TYPE_CODE | CandidateTypeCode | ✅ |
+| CREATED_BY | CreatedBy | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | LastUpdatedBy | ✅ |
+| NOTES_CANDIDATE | NotesCandidate | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | ✅ |
+| REFERRAL_ID | ReferralId | ✅ |
+| REFERRAL_TYPE_CODE | ReferralTypeCode | ✅ |
+| REFERRER_PERSON_ID | ReferrerPersonId | ✅ |
+| REQUISITION_ID | RequisitionId | ✅ |
+| SHARE_ID | ShareId | ✅ |
+| SUBMISSION_ID | SubmissionId | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — IRC_RF_REFERRALS](https://docs.oracle.com/en/cloud/saas/talent-management/25a/oedmf/ircrfreferrals.html)

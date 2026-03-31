@@ -104,6 +104,62 @@ ORDER BY h.LEVEL_NUMBER, h.SUBORDINATE_NAME;
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[cmpcwbhrchypvo|CmpCwbHrchyPVO]] (HCM · BICC: 19/21)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ASSIGNMENT_ID | AssignmentId | — |
+| BUSINESS_GROUP_ID | BusinessGroupId | ✅ |
+| CREATED_BY | HierarchyPEOCreatedBy | ✅ |
+| CREATION_DATE | HierarchyPEOCreationDate | ✅ |
+| EMP_ASSIGNMENT_ID | EmpAssignmentId | ✅ |
+| EMP_PERSON_EVENT_ID | EmpPersonEventId | ✅ |
+| EMP_PERSON_ID | EmpPersonId | ✅ |
+| HRCHY_PERIOD_ID | HrchyPeriodId | ✅ |
+| HRCHY_PLAN_ID | HrchyPlanId | ✅ |
+| LAST_UPDATE_DATE | HierarchyPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | HierarchyPEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | HierarchyPEOLastUpdatedBy | ✅ |
+| LVL_NUM | HierarchyPEOLvlNum | ✅ |
+| MGR_ASSIGNMENT_ID | MgrAssignmentId | ✅ |
+| MGR_PERSON_EVENT_ID | MgrPersonEventId | ✅ |
+| MGR_PERSON_ID | MgrPersonId | ✅ |
+| NUMBER_VALUE1 | HierarchyPEONumberValue1 | ✅ |
+| NUMBER_VALUE2 | HierarchyPEONumberValue2 | ✅ |
+| OBJECT_VERSION_NUMBER | HierarchyPEOObjectVersionNumber | ✅ |
+| PERSON_ID | PersonId | — |
+| TEXT_VALUE | HierarchyPEOTextValue | ✅ |
+
+### [[cmpcwbhrchypvoviewall|CmpCwbHrchyPVOViewAll]] (HCM · BICC: 19/21)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ASSIGNMENT_ID | AssignmentId | — |
+| BUSINESS_GROUP_ID | BusinessGroupId | ✅ |
+| CREATED_BY | HierarchyPEOCreatedBy | ✅ |
+| CREATION_DATE | HierarchyPEOCreationDate | ✅ |
+| EMP_ASSIGNMENT_ID | EmpAssignmentId | ✅ |
+| EMP_PERSON_EVENT_ID | EmpPersonEventId | ✅ |
+| EMP_PERSON_ID | EmpPersonId | ✅ |
+| HRCHY_PERIOD_ID | HrchyPeriodId | ✅ |
+| HRCHY_PLAN_ID | HrchyPlanId | ✅ |
+| LAST_UPDATE_DATE | HierarchyPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | HierarchyPEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | HierarchyPEOLastUpdatedBy | ✅ |
+| LVL_NUM | HierarchyPEOLvlNum | ✅ |
+| MGR_ASSIGNMENT_ID | MgrAssignmentId | ✅ |
+| MGR_PERSON_EVENT_ID | MgrPersonEventId | ✅ |
+| MGR_PERSON_ID | MgrPersonId | ✅ |
+| NUMBER_VALUE1 | HierarchyPEONumberValue1 | ✅ |
+| NUMBER_VALUE2 | HierarchyPEONumberValue2 | ✅ |
+| OBJECT_VERSION_NUMBER | HierarchyPEOObjectVersionNumber | ✅ |
+| PERSON_ID | PersonId | — |
+| TEXT_VALUE | HierarchyPEOTextValue | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — CMP_CWB_HRCHY_V](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/cmpcwbhrchyv.html)

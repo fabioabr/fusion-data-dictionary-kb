@@ -100,6 +100,28 @@ WHERE  tl.LANGUAGE = 'PTB';
 - Tabela de traduções (_TL) — chave composta por `COL_AGREEMENT_ID` + `LANGUAGE`.
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[collectiveagreementpvo|CollectiveAgreementPVO]] (GL · BICC: 3/13)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | CollectiveAgreementTranslationPEOBusinessGroupId | — |
+| COLLECTIVE_AGREEMENT_ID | CollectiveAgreementTranslationPEOCollectiveAgreementId | — |
+| COLLECTIVE_AGREEMENT_NAME | CollectiveAgreementTranslationPEOCollectiveAgreementName | ✅ |
+| CREATED_BY | CollectiveAgreementTranslationPEOCreatedBy | — |
+| CREATION_DATE | CollectiveAgreementTranslationPEOCreationDate | — |
+| EFFECTIVE_END_DATE | CollectiveAgreementTranslationPEOEffectiveEndDate | — |
+| EFFECTIVE_START_DATE | CollectiveAgreementTranslationPEOEffectiveStartDate | ✅ |
+| LANGUAGE | CollectiveAgreementTranslationPEOLanguage | — |
+| LAST_UPDATE_DATE | CollectiveAgreementTranslationPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | CollectiveAgreementTranslationPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | CollectiveAgreementTranslationPEOLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | CollectiveAgreementTranslationPEOObjectVersionNumber | — |
+| SOURCE_LANG | CollectiveAgreementTranslationPEOSourceLang | — |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — PER_COL_AGREEMENTS_F_TL](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/percolagreementsftl.html)

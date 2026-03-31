@@ -94,3 +94,14 @@ SELECT itt.INCOME_TAX_TYPE,
 - Oracle Fusion Cloud Financials — Accounts Payable Tables (OEDMF Release 13).
 - Oracle Fusion Cloud Tax — Withholding Tax Configuration Documentation.
 - Oracle Fusion Cloud ERP Schema Reference (Release 25A).
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[supplierpvo|SupplierPVO]] (PO · BICC: 1/2)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| DESCRIPTION | IncomeTaxTypeDescription | ✅ |
+| INCOME_TAX_TYPE | IncomeTaxTypeIncomeTaxType1 | — |

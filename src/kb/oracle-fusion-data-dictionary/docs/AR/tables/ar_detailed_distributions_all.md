@@ -145,6 +145,61 @@ WHERE  d.SOURCE_TABLE = 'CRH'
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[detaileddistributionsallextractpvo|DetailedDistributionsAllExtractPVO]] (OTHER · BICC: 46/46)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACCTD_AMOUNT_APPLIED_FROM | DetailedDistributionsAllAcctdAmountAppliedFrom | ✅ |
+| ACCTD_AMOUNT_APPLIED_TO | DetailedDistributionsAllAcctdAmountAppliedTo | ✅ |
+| ACCTD_AMOUNT_CR | DetailedDistributionsAllAcctdAmountCr | ✅ |
+| ACCTD_AMOUNT_DR | DetailedDistributionsAllAcctdAmountDr | ✅ |
+| ACCTD_EARNED_DISCOUNT_TAKEN | DetailedDistributionsAllAcctdEarnedDiscountTaken | ✅ |
+| ACCTD_UNEARNED_DISCOUNT_TAKEN | DetailedDistributionsAllAcctdUnearnedDiscountTaken | ✅ |
+| ACTIVITY_BUCKET | DetailedDistributionsAllActivityBucket | ✅ |
+| AMOUNT_APPLIED | DetailedDistributionsAllAmountApplied | ✅ |
+| AMOUNT_APPLIED_FROM | DetailedDistributionsAllAmountAppliedFrom | ✅ |
+| AMOUNT_CR | DetailedDistributionsAllAmountCr | ✅ |
+| AMOUNT_DR | DetailedDistributionsAllAmountDr | ✅ |
+| APP_SOURCE_ID | DetailedDistributionsAllAppSourceId | ✅ |
+| ASSOCIATED_DIST_ID | DetailedDistributionsAllAssociatedDistId | ✅ |
+| BALANCE_ACCTD_AMOUNT | DetailedDistributionsAllBalanceAcctdAmount | ✅ |
+| BALANCE_AMOUNT | DetailedDistributionsAllBalanceAmount | ✅ |
+| CASH_RECEIPT_HISTORY_ID | DetailedDistributionsAllCashReceiptHistoryId | ✅ |
+| CREATED_BY | DetailedDistributionsAllCreatedBy | ✅ |
+| CREATION_DATE | DetailedDistributionsAllCreationDate | ✅ |
+| DETAILED_DIST_ENTRY | DetailedDistributionsAllDetailedDistEntry | ✅ |
+| DETAILED_DIST_ID | DetailedDistributionsAllDetailedDistId | ✅ |
+| EARNED_DISCOUNT_TAKEN | DetailedDistributionsAllEarnedDiscountTaken | ✅ |
+| FROM_ACCTD_AMOUNT_CR | DetailedDistributionsAllFromAcctdAmountCr | ✅ |
+| FROM_ACCTD_AMOUNT_DR | DetailedDistributionsAllFromAcctdAmountDr | ✅ |
+| FROM_AMOUNT_CR | DetailedDistributionsAllFromAmountCr | ✅ |
+| FROM_AMOUNT_DR | DetailedDistributionsAllFromAmountDr | ✅ |
+| FROM_TO_CODE | DetailedDistributionsAllFromToCode | ✅ |
+| LAST_UPDATE_DATE | DetailedDistributionsAllLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | DetailedDistributionsAllLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | DetailedDistributionsAllLastUpdatedBy | ✅ |
+| LATEST_ACTIVITY_FLAG | DetailedDistributionsAllLatestActivityFlag | ✅ |
+| OBJECT_VERSION_NUMBER | DetailedDistributionsAllObjectVersionNumber | ✅ |
+| ORG_ID | DetailedDistributionsAllOrgId | ✅ |
+| PRIOR_DETAILED_DIST_ID | DetailedDistributionsAllPriorDetailedDistId | ✅ |
+| REF_ACCOUNT_CLASS | DetailedDistributionsAllRefAccountClass | ✅ |
+| REF_CUST_TRX_LINE_GL_DIST_ID | DetailedDistributionsAllRefCustTrxLineGlDistId | ✅ |
+| REF_CUSTOMER_TRX_LINE_ID | DetailedDistributionsAllRefCustomerTrxLineId | ✅ |
+| REF_DIST_CCID | DetailedDistributionsAllRefDistCcid | ✅ |
+| SOURCE_DIST_ID | DetailedDistributionsAllSourceDistId | ✅ |
+| SOURCE_ID | DetailedDistributionsAllSourceId | ✅ |
+| SOURCE_TABLE | DetailedDistributionsAllSourceTable | ✅ |
+| SOURCE_TYPE | DetailedDistributionsAllSourceType | ✅ |
+| TAXABLE_ACCOUNTED_CR | DetailedDistributionsAllTaxableAccountedCr | ✅ |
+| TAXABLE_ACCOUNTED_DR | DetailedDistributionsAllTaxableAccountedDr | ✅ |
+| TAXABLE_ENTERED_CR | DetailedDistributionsAllTaxableEnteredCr | ✅ |
+| TAXABLE_ENTERED_DR | DetailedDistributionsAllTaxableEnteredDr | ✅ |
+| UNEARNED_DISCOUNT_TAKEN | DetailedDistributionsAllUnearnedDiscountTaken | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — AR_DETAILED_DISTRIBUTIONS_ALL](https://docs.oracle.com/en/cloud/saas/financials/25a/oedmf/ardetaileddistributionsall-25090.html)

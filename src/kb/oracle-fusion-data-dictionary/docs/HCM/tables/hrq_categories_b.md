@@ -91,6 +91,48 @@ WHERE  NVL(c.ENABLED_FLAG,'Y') = 'Y';
 
 - Tabela base (sufixo `_B`) — traduções em [[hrq_categories_tl]].
 
+---
+
+## 🔗 PVOs Relacionados
+
+### [[folderp1|FolderP1]] (HCM · BICC: 4/4)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | CategoryBPEOBusinessGroupId | ✅ |
+| CATEGORY_ID | CategoryBPEOCategoryId | ✅ |
+| LAST_UPDATE_DATE | CategoryBPEOLastUpdateDate | ✅ |
+| SUBSCRIBER_ID | CategoryBPEOSubscriberId | ✅ |
+
+### [[questionnairequestionfolderpvo|QuestionnaireQuestionFolderPVO]] (HCM · BICC: 3/4)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | CategoryBPEOBusinessGroupId | ✅ |
+| CATEGORY_ID | CategoryBPEOCategoryId | ✅ |
+| LAST_UPDATE_DATE | CategoryBPEOLastUpdateDate | ✅ |
+| SUBSCRIBER_ID | CategoryBPEOSubscriberId | — |
+
+### [[requisitionqstnrexternalviewallpvo|RequisitionQstnrExternalViewAllPVO]] (PO)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | CategoryBPEOBusinessGroupId | — |
+| CATEGORY_ID | CategoryBPEOCategoryId | — |
+
+### [[requisitionqstnrinternalviewallpvo|RequisitionQstnrInternalViewAllPVO]] (PO)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | CategoryBPEOBusinessGroupId | — |
+| CATEGORY_ID | CategoryBPEOCategoryId | — |
+
+### [[requisitionqstnrinterviewviewallpvo|RequisitionQstnrInterviewViewAllPVO]] (PO)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | CategoryBPEOBusinessGroupId | — |
+| CATEGORY_ID | CategoryBPEOCategoryId | — |
 
 ---
 

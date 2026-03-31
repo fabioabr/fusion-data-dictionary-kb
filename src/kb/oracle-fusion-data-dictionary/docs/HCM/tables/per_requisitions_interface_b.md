@@ -116,3 +116,44 @@ WHERE  ri.STATUS = 'PENDING'
 
 - [Oracle Docs — PER_REQUISITIONS_INTERFACE_B](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/perrequisitionsinterfaceb.html)
 - [[hcm-module-data-dictionary]] — Dossiê do módulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[requisitionpvo|RequisitionPVO]] (PO · BICC: 16/32)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | RequisitionPEOCreatedBy | ✅ |
+| CREATION_DATE | RequisitionPEOCreationDate | ✅ |
+| EMPLOYEE_STATUS | RequisitionPEOEmployeeStatus | ✅ |
+| ENTERPRISE_ID | RequisitionPEOEnterpriseId | — |
+| INTERFACE_SOURCE | RequisitionPEOInterfaceSource | ✅ |
+| INTERFACE_SOURCE_ID | RequisitionPEOInterfaceSourceId | — |
+| INTERFACE_TYPE | RequisitionPEOInterfaceType | — |
+| JOB_ID | RequisitionPEOJobId | — |
+| JOB_SCHEDULE | RequisitionPEOJobSchedule | ✅ |
+| LAST_UPDATE_DATE | RequisitionPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | RequisitionPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | RequisitionPEOLastUpdatedBy | ✅ |
+| MANAGER_ASSIGNMENT_ID | RequisitionPEOManagerAssignmentId | — |
+| MANAGER_ID | RequisitionPEOManagerId | — |
+| MANAGER_TYPE | RequisitionPEOManagerType | — |
+| MANAGER_USER_NAME | RequisitionPEOManagerUserName | — |
+| OBJECT_VERSION_NUMBER | RequisitionPEOObjectVersionNumber | — |
+| ORGANIZATION_ID | RequisitionPEOOrganizationId | — |
+| POSITION_ID | RequisitionPEOPositionId | — |
+| PRIMARY_LOCATION_ID | RequisitionPEOPrimaryLocationId | — |
+| REQUISITION_INTERFACE_CODE | RequisitionPEORequisitionInterfaceCode | — |
+| REQUISITION_INTERFACE_ID | RequisitionPEORequisitionInterfaceId | ✅ |
+| REQUISITION_JUSTIFICATION | RequisitionPEORequisitionJustification | ✅ |
+| REQUISITION_NUMBER | RequisitionPEORequisitionNumber | ✅ |
+| REQUISITION_STATUS | RequisitionPEORequisitionStatus | ✅ |
+| REQUISITION_TEMPLATE_CODE | RequisitionPEORequisitionTemplateCode | — |
+| TARGET_START_DATE | RequisitionPEOTargetStartDate | — |
+| TOTAL_AVAILABLE_HEADCOUNT | RequisitionPEOTotalAvailableHeadcount | ✅ |
+| TOTAL_HIRED_HEADCOUNT | RequisitionPEOTotalHiredHeadcount | ✅ |
+| TOTAL_OPEN_HEADCOUNT | RequisitionPEOTotalOpenHeadcount | ✅ |
+| UNLIMITED_HIRE | RequisitionPEOUnlimitedHire | ✅ |
+| VACANCY_STATUS | RequisitionPEOVacancyStatus | ✅ |

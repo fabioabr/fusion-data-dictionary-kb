@@ -117,3 +117,26 @@ WHERE  lau.LOCATION_ID = :p_location_id
 
 - [Oracle Docs — PER_LOC_ADDRESS_USAGES_F](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/perlocaddressusagesf.html)
 - [[hcm-module-data-dictionary]] — Dossiê do módulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[locationaddressusagepvo|LocationAddressUsagePVO]] (HCM · BICC: 14/14)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_OCCURRENCE_ID | LocationAddressUsagePEOActionOccurrenceId | ✅ |
+| ADDRESS_ID | LocationAddressUsagePEOAddressId | ✅ |
+| ADDRESS_USAGE_TYPE | LocationAddressUsagePEOAddressUsageType | ✅ |
+| BUSINESS_GROUP_ID | LocationAddressUsagePEOBusinessGroupId | ✅ |
+| CREATED_BY | LocationAddressUsagePEOCreatedBy | ✅ |
+| CREATION_DATE | LocationAddressUsagePEOCreationDate | ✅ |
+| EFFECTIVE_END_DATE | EffectiveEndDate | ✅ |
+| EFFECTIVE_START_DATE | EffectiveStartDate | ✅ |
+| LAST_UPDATE_DATE | LocationAddressUsagePEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LocationAddressUsagePEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | LocationAddressUsagePEOLastUpdatedBy | ✅ |
+| LOC_ADDRESS_USAGE_ID | LocAddressUsageId | ✅ |
+| LOCATION_ID | LocationAddressUsagePEOLocationId | ✅ |
+| OBJECT_VERSION_NUMBER | LocationAddressUsagePEOObjectVersionNumber | ✅ |

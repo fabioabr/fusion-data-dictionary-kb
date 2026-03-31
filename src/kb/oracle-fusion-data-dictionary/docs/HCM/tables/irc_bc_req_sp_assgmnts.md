@@ -111,3 +111,28 @@ WHERE  a.REQUISITION_ID = :p_req_id;
 
 - [Oracle Docs — IRC_BC_REQ_SP_ASSGMNTS](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/ircbcreqspassgmnts.html)
 - [[hcm-module-data-dictionary]] — Dossie do modulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[screeningpackagepvo|ScreeningPackagePVO]] (AP · BICC: 15/16)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACCOUNT_ID | ScreeningPackagePEOAccountId | ✅ |
+| ADDED_BY | ScreeningPackagePEOAddedBy | ✅ |
+| ADDED_DATE | ScreeningPackagePEOAddedDate | ✅ |
+| CREATED_BY | ScreeningPackagePEOCreatedBy | ✅ |
+| CREATION_DATE | ScreeningPackagePEOCreationDate | ✅ |
+| LAST_UPDATE_DATE | ScreeningPackagePEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ScreeningPackagePEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | ScreeningPackagePEOLastUpdatedBy | ✅ |
+| OBJECT_STATUS | ScreeningPackagePEOObjectStatus | ✅ |
+| OBJECT_VERSION_NUMBER | ScreeningPackagePEOObjectVersionNumber | — |
+| PROVISIONING_ID | ScreeningPackagePEOProvisioningId | ✅ |
+| REQ_SP_ASSGMNT_ID | ReqSpAssgmntId | ✅ |
+| REQUISITION_ID | ScreeningPackagePEORequisitionId | ✅ |
+| SCR_PKG_CODE | ScreeningPackagePEOScrPkgCode | ✅ |
+| SCR_PKG_NAME | ScreeningPackagePEOScrPkgName | ✅ |
+| SCR_SEQUENCE | ScreeningPackagePEOScrSequence | ✅ |

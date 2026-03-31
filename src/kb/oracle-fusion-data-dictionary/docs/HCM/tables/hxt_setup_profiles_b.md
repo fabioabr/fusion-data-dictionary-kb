@@ -115,3 +115,41 @@ WHERE  p.ENABLED_FLAG = 'Y';
 
 - [Oracle Docs — HXT_SETUP_PROFILES_B](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/hxtsetupprofilesb.html)
 - [[hcm-module-data-dictionary]] — Dossie do modulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[setupprofileasgpvo|SetupProfileAsgPVO]] (GL · BICC: 9/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | SetupProfileBPEOCreatedBy | ✅ |
+| CREATION_DATE | SetupProfileBPEOCreationDate | ✅ |
+| ENTERPRISE_ID | SetupProfileBPEOEnterpriseId | — |
+| LAST_UPDATE_DATE | SetupProfileBPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | SetupProfileBPEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | SetupProfileBPEOLastUpdatedBy | ✅ |
+| MODULE_ID | SetupProfileBPEOModuleId | — |
+| OBJECT_VERSION_NUMBER | SetupProfileBPEOObjectVersionNumber | — |
+| PRECEDENCE | SetupProfileBPEOPrecedence | ✅ |
+| PRODUCT_AREA | SetupProfileBPEOProductArea | ✅ |
+| SETUP_PROFILE_CD | SetupProfileBPEOSetupProfileCd | ✅ |
+| SETUP_PROFILE_ID | SetupProfileBPEOSetupProfileId | ✅ |
+
+### [[setupprofilepvo|SetupProfilePVO]] (GL · BICC: 9/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | SetupProfileBPEOCreatedBy | ✅ |
+| CREATION_DATE | SetupProfileBPEOCreationDate | ✅ |
+| ENTERPRISE_ID | SetupProfileBPEOEnterpriseId | — |
+| LAST_UPDATE_DATE | SetupProfileBPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | SetupProfileBPEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | SetupProfileBPEOLastUpdatedBy | ✅ |
+| MODULE_ID | SetupProfileBPEOModuleId | — |
+| OBJECT_VERSION_NUMBER | SetupProfileBPEOObjectVersionNumber | — |
+| PRECEDENCE | SetupProfileBPEOPrecedence | ✅ |
+| PRODUCT_AREA | SetupProfileBPEOProductArea | ✅ |
+| SETUP_PROFILE_CD | SetupProfileBPEOSetupProfileCd | ✅ |
+| SETUP_PROFILE_ID | SetupProfileBPEOSetupProfileId | ✅ |

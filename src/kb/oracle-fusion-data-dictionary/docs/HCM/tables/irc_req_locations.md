@@ -106,3 +106,21 @@ FROM   IRC_REQ_LOCATIONS rl WHERE rl.REQUISITION_ID = :p_id;
 
 - [Oracle Docs -- IRC_REQ_LOCATIONS](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/ircreqlocations.html)
 - [[hcm-module-data-dictionary]] -- Dossie do modulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[requisitionlocationpvo|RequisitionLocationPVO]] (PO · BICC: 3/9)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | CreatedBy | — |
+| CREATION_DATE | CreationDate | — |
+| GEOGRAPHY_ID | GeographyId | ✅ |
+| GEOGRAPHY_NODE_ID | GeographyNodeId | — |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | — |
+| LAST_UPDATED_BY | LastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | — |
+| REQUISITION_ID | RequisitionId | ✅ |

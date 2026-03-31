@@ -39,7 +39,6 @@ View que apresenta os registros de ausência integrados ao módulo de Time Manag
 > [!note] Sufixo _V
 > O sufixo `_V` indica **view** — objeto somente leitura que consolida dados de uma ou mais tabelas para facilitar consultas.
 
-
 ---
 
 ## 🧠 Propósito de Negócio
@@ -101,6 +100,188 @@ WHERE  t.STATUS = 'APPROVED'
 
 - View somente leitura: não permite INSERT, UPDATE ou DELETE direto.
 - Área funcional: Time Management dentro do Oracle Fusion Cloud HCM.
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[absencetimeentrypvo|AbsenceTimeEntryPVO]] (HCM · BICC: 53/84)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| DAY_COMMENT_TEXT | DayCommentText | ✅ |
+| DAY_COMMIT_TIMESTAMP | DayCommitTimestamp | — |
+| DAY_CREATED_BY | DayCreatedBy | ✅ |
+| DAY_CREATION_DATE | DayCreationDate | ✅ |
+| DAY_DATA_SET_ID | DayDataSetId | — |
+| DAY_DATE_FROM | DayDateFrom | ✅ |
+| DAY_DATE_TO | DayDateTo | ✅ |
+| DAY_DELETE_FLAG | DayDeleteFlag | ✅ |
+| DAY_ENTERPRISE_ID | DayEnterpriseId | — |
+| DAY_GRP_TYPE_ID | DayGroupTypeId | ✅ |
+| DAY_LAST_UPDATE_DATE | DayLastUpdateDate | ✅ |
+| DAY_LAST_UPDATE_LOGIN | DayLastUpdateLogin | ✅ |
+| DAY_LAST_UPDATED_BY | DayLastUpdatedBy | ✅ |
+| DAY_LATEST_VERSION | DayLatestVersion | ✅ |
+| DAY_LAYER_CODE | DayLayerCode | ✅ |
+| DAY_ORDER_ENTERED | DayOrderEntered | — |
+| DAY_RESOURCE_ID | DayResourceId | — |
+| DAY_RESOURCE_TYPE | DayResourceType | — |
+| DAY_START_TIME | DayStartTime | ✅ |
+| DAY_STOP_TIME | DayStopTime | ✅ |
+| DAY_SUBRESOURCE_ID | DaySubresourceId | — |
+| DAY_TCSMR_CONFIG_SET_ID | DayTimeConsumerConfigurationSetId | — |
+| DAY_TCSMR_SET_ID | DayTimeConsumerSetId | — |
+| DAY_TIME_REPORTER_ID | DayTimeReporterId | — |
+| DAY_TM_REC_GRP_ID | DayTimeRecordGroupId | ✅ |
+| DAY_TM_REC_GRP_VERSION | DayTimeRecordGroupVersion | ✅ |
+| DAY_USER_STATUS | DayUserStatus | — |
+| RESOURCE_ID | TimeEntryResourceId | — |
+| TIME_CARD_COMMENT_TEXT | TimeCardCommentText | ✅ |
+| TIME_CARD_COMMIT_TIMESTAMP | TimeCardCommitTimestamp | ✅ |
+| TIME_CARD_CREATED_BY | TimeCardCreatedBy | ✅ |
+| TIME_CARD_CREATION_DATE | TimeCardCreationDate | ✅ |
+| TIME_CARD_DATA_SET_ID | TimeCardDataSetId | — |
+| TIME_CARD_DATE_FROM | TimeCardDateFrom | ✅ |
+| TIME_CARD_DATE_TO | TimeCardDateTo | ✅ |
+| TIME_CARD_DELETE_FLAG | TimeCardDeleteFlag | ✅ |
+| TIME_CARD_ENTERPRISE_ID | TimeCardEnterpriseId | — |
+| TIME_CARD_GRP_TYPE_ID | TimeCardGroupTypeId | ✅ |
+| TIME_CARD_LAST_UPDATE_DATE | TimeCardLastUpdateDate | ✅ |
+| TIME_CARD_LAST_UPDATE_LOGIN | TimeCardLastUpdateLogin | ✅ |
+| TIME_CARD_LAST_UPDATED_BY | TimeCardLastUpdatedBy | ✅ |
+| TIME_CARD_LATEST_VERSION | TimeCardLatestVersion | ✅ |
+| TIME_CARD_LAYER_CODE | TimeCardLayerCode | ✅ |
+| TIME_CARD_ORDER_ENTERED | TimeCardOrderEntered | — |
+| TIME_CARD_RESOURCE_ID | TimeCardResourceId | — |
+| TIME_CARD_RESOURCE_TYPE | TimeCardResourceType | — |
+| TIME_CARD_START_TIME | TimeCardStartTime | ✅ |
+| TIME_CARD_STOP_TIME | TimeCardStopTime | ✅ |
+| TIME_CARD_SUBRESOURCE_ID | TimeCardSubresourceId | — |
+| TIME_CARD_TCSMR_CONFIG_SET_ID | TimeCardTimeConsumerConfigurationSetId | — |
+| TIME_CARD_TCSMR_SET_ID | TimeCardTimeConsumerSetId | — |
+| TIME_CARD_TIME_REPORTER_ID | TimeCardTimeReporterId | — |
+| TIME_CARD_TM_REC_GRP_ID | TimeCardTimeRecordGroupId | ✅ |
+| TIME_CARD_TM_REC_GRP_VERSION | TimeCardTimeRecordGroupVersion | ✅ |
+| TIME_CARD_USER_STATUS | TimeCardUserStatus | — |
+| TIME_ENTRY_ACTIVITY_EVENT_TIME | TimeEntryActivityEventTime | — |
+| TIME_ENTRY_ACTIVITY_TYPE | TimeEntryActivityType | — |
+| TIME_ENTRY_COMMENT_TEXT | TimeEntryCommentText | ✅ |
+| TIME_ENTRY_CREATED_BY | TimeEntryCreatedBy | ✅ |
+| TIME_ENTRY_CREATION_DATE | TimeEntryCreationDate | ✅ |
+| TIME_ENTRY_DATA_SET_ID | TimeEntryDataSetId | — |
+| TIME_ENTRY_DATE_FROM | TimeEntryDateFrom | ✅ |
+| TIME_ENTRY_DATE_TO | TimeEntryDateTo | ✅ |
+| TIME_ENTRY_DELETE_FLAG | TimeEntryDeleteFlag | ✅ |
+| TIME_ENTRY_ENTERPRISE_ID | TimeEntryEnterpriseId | — |
+| TIME_ENTRY_LAST_UPDATE_DATE | TimeEntryLastUpdateDate | ✅ |
+| TIME_ENTRY_LAST_UPDATE_LOGIN | TimeEntryLastUpdateLogin | ✅ |
+| TIME_ENTRY_LAST_UPDATED_BY | TimeEntryLastUpdatedBy | ✅ |
+| TIME_ENTRY_LATEST_VERSION | TimeEntryLatestVersion | ✅ |
+| TIME_ENTRY_LAYER_CODE | TimeEntryLayerCode | ✅ |
+| TIME_ENTRY_MEASURE | TimeEntryMeasure | ✅ |
+| TIME_ENTRY_ORDER_ENTERED | TimeEntryOrderEntered | — |
+| TIME_ENTRY_RESOURCE_TYPE | TimeEntryResourceType | — |
+| TIME_ENTRY_START_TIME | TimeEntryStartTime | ✅ |
+| TIME_ENTRY_STOP_TIME | TimeEntryStopTime | ✅ |
+| TIME_ENTRY_SUBRESOURCE_ID | TimeEntrySubresourceId | — |
+| TIME_ENTRY_TCSMR_CONFIG_SET_ID | TimeEntryTimeConsumerConfigurationSetId | — |
+| TIME_ENTRY_TCSMR_SET_ID | TimeEntryTimeConsumerSetId | ✅ |
+| TIME_ENTRY_TIME_REPORTER_ID | TimeEntryTimeReporterId | ✅ |
+| TIME_ENTRY_TM_REC_ID | TimeEntryTimeRecordId | ✅ |
+| TIME_ENTRY_TM_REC_TYPE | TimeEntryTimeRecordType | ✅ |
+| TIME_ENTRY_TM_REC_VERSION | TimeEntryTimeRecordVersion | ✅ |
+| TIME_ENTRY_UNIT_OF_MEASURE | TimeEntryUnitOfMeasure | ✅ |
+| TIME_ENTRY_USER_STATUS | TimeEntryUserStatus | — |
+
+### [[historicabsencetimeentrypvo|HistoricAbsenceTimeEntryPVO]] (HCM · BICC: 53/84)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| DAY_COMMENT_TEXT | DayCommentText | ✅ |
+| DAY_COMMIT_TIMESTAMP | DayCommitTimestamp | — |
+| DAY_CREATED_BY | DayCreatedBy | ✅ |
+| DAY_CREATION_DATE | DayCreationDate | ✅ |
+| DAY_DATA_SET_ID | DayDataSetId | — |
+| DAY_DATE_FROM | DayDateFrom | ✅ |
+| DAY_DATE_TO | DayDateTo | ✅ |
+| DAY_DELETE_FLAG | DayDeleteFlag | ✅ |
+| DAY_ENTERPRISE_ID | DayEnterpriseId | — |
+| DAY_GRP_TYPE_ID | DayGroupTypeId | ✅ |
+| DAY_LAST_UPDATE_DATE | DayLastUpdateDate | ✅ |
+| DAY_LAST_UPDATE_LOGIN | DayLastUpdateLogin | ✅ |
+| DAY_LAST_UPDATED_BY | DayLastUpdatedBy | ✅ |
+| DAY_LATEST_VERSION | DayLatestVersion | ✅ |
+| DAY_LAYER_CODE | DayLayerCode | ✅ |
+| DAY_ORDER_ENTERED | DayOrderEntered | — |
+| DAY_RESOURCE_ID | DayResourceId | — |
+| DAY_RESOURCE_TYPE | DayResourceType | — |
+| DAY_START_TIME | DayStartTime | ✅ |
+| DAY_STOP_TIME | DayStopTime | ✅ |
+| DAY_SUBRESOURCE_ID | DaySubresourceId | — |
+| DAY_TCSMR_CONFIG_SET_ID | DayTimeConsumerConfigurationSetId | — |
+| DAY_TCSMR_SET_ID | DayTimeConsumerSetId | — |
+| DAY_TIME_REPORTER_ID | DayTimeReporterId | — |
+| DAY_TM_REC_GRP_ID | DayTimeRecordGroupId | ✅ |
+| DAY_TM_REC_GRP_VERSION | DayTimeRecordGroupVersion | ✅ |
+| DAY_USER_STATUS | DayUserStatus | — |
+| RESOURCE_ID | TimeEntryResourceId | — |
+| TIME_CARD_COMMENT_TEXT | TimeCardCommentText | ✅ |
+| TIME_CARD_COMMIT_TIMESTAMP | TimeCardCommitTimestamp | ✅ |
+| TIME_CARD_CREATED_BY | TimeCardCreatedBy | ✅ |
+| TIME_CARD_CREATION_DATE | TimeCardCreationDate | ✅ |
+| TIME_CARD_DATA_SET_ID | TimeCardDataSetId | — |
+| TIME_CARD_DATE_FROM | TimeCardDateFrom | ✅ |
+| TIME_CARD_DATE_TO | TimeCardDateTo | ✅ |
+| TIME_CARD_DELETE_FLAG | TimeCardDeleteFlag | ✅ |
+| TIME_CARD_ENTERPRISE_ID | TimeCardEnterpriseId | — |
+| TIME_CARD_GRP_TYPE_ID | TimeCardGroupTypeId | ✅ |
+| TIME_CARD_LAST_UPDATE_DATE | TimeCardLastUpdateDate | ✅ |
+| TIME_CARD_LAST_UPDATE_LOGIN | TimeCardLastUpdateLogin | ✅ |
+| TIME_CARD_LAST_UPDATED_BY | TimeCardLastUpdatedBy | ✅ |
+| TIME_CARD_LATEST_VERSION | TimeCardLatestVersion | ✅ |
+| TIME_CARD_LAYER_CODE | TimeCardLayerCode | ✅ |
+| TIME_CARD_ORDER_ENTERED | TimeCardOrderEntered | — |
+| TIME_CARD_RESOURCE_ID | TimeCardResourceId | — |
+| TIME_CARD_RESOURCE_TYPE | TimeCardResourceType | — |
+| TIME_CARD_START_TIME | TimeCardStartTime | ✅ |
+| TIME_CARD_STOP_TIME | TimeCardStopTime | ✅ |
+| TIME_CARD_SUBRESOURCE_ID | TimeCardSubresourceId | — |
+| TIME_CARD_TCSMR_CONFIG_SET_ID | TimeCardTimeConsumerConfigurationSetId | — |
+| TIME_CARD_TCSMR_SET_ID | TimeCardTimeConsumerSetId | — |
+| TIME_CARD_TIME_REPORTER_ID | TimeCardTimeReporterId | — |
+| TIME_CARD_TM_REC_GRP_ID | TimeCardTimeRecordGroupId | ✅ |
+| TIME_CARD_TM_REC_GRP_VERSION | TimeCardTimeRecordGroupVersion | ✅ |
+| TIME_CARD_USER_STATUS | TimeCardUserStatus | — |
+| TIME_ENTRY_ACTIVITY_EVENT_TIME | TimeEntryActivityEventTime | — |
+| TIME_ENTRY_ACTIVITY_TYPE | TimeEntryActivityType | — |
+| TIME_ENTRY_COMMENT_TEXT | TimeEntryCommentText | ✅ |
+| TIME_ENTRY_CREATED_BY | TimeEntryCreatedBy | ✅ |
+| TIME_ENTRY_CREATION_DATE | TimeEntryCreationDate | ✅ |
+| TIME_ENTRY_DATA_SET_ID | TimeEntryDataSetId | — |
+| TIME_ENTRY_DATE_FROM | TimeEntryDateFrom | ✅ |
+| TIME_ENTRY_DATE_TO | TimeEntryDateTo | ✅ |
+| TIME_ENTRY_DELETE_FLAG | TimeEntryDeleteFlag | ✅ |
+| TIME_ENTRY_ENTERPRISE_ID | TimeEntryEnterpriseId | — |
+| TIME_ENTRY_LAST_UPDATE_DATE | TimeEntryLastUpdateDate | ✅ |
+| TIME_ENTRY_LAST_UPDATE_LOGIN | TimeEntryLastUpdateLogin | ✅ |
+| TIME_ENTRY_LAST_UPDATED_BY | TimeEntryLastUpdatedBy | ✅ |
+| TIME_ENTRY_LATEST_VERSION | TimeEntryLatestVersion | ✅ |
+| TIME_ENTRY_LAYER_CODE | TimeEntryLayerCode | ✅ |
+| TIME_ENTRY_MEASURE | TimeEntryMeasure | ✅ |
+| TIME_ENTRY_ORDER_ENTERED | TimeEntryOrderEntered | — |
+| TIME_ENTRY_RESOURCE_TYPE | TimeEntryResourceType | — |
+| TIME_ENTRY_START_TIME | TimeEntryStartTime | ✅ |
+| TIME_ENTRY_STOP_TIME | TimeEntryStopTime | ✅ |
+| TIME_ENTRY_SUBRESOURCE_ID | TimeEntrySubresourceId | — |
+| TIME_ENTRY_TCSMR_CONFIG_SET_ID | TimeEntryTimeConsumerConfigurationSetId | — |
+| TIME_ENTRY_TCSMR_SET_ID | TimeEntryTimeConsumerSetId | ✅ |
+| TIME_ENTRY_TIME_REPORTER_ID | TimeEntryTimeReporterId | ✅ |
+| TIME_ENTRY_TM_REC_ID | TimeEntryTimeRecordId | ✅ |
+| TIME_ENTRY_TM_REC_TYPE | TimeEntryTimeRecordType | ✅ |
+| TIME_ENTRY_TM_REC_VERSION | TimeEntryTimeRecordVersion | ✅ |
+| TIME_ENTRY_UNIT_OF_MEASURE | TimeEntryUnitOfMeasure | ✅ |
+| TIME_ENTRY_USER_STATUS | TimeEntryUserStatus | — |
 
 ---
 

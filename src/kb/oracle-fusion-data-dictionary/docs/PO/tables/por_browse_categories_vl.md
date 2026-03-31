@@ -117,6 +117,80 @@ ORDER BY vl.CATEGORY_NAME;
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[sourcingobjectivenegotiationpvo|SourcingObjectiveNegotiationPVO]] (PO)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CATEGORY_DESCRIPTION | ObjectiveBrowseCategoryPEOCategoryDescription | — |
+| CATEGORY_DESCRIPTION | ProgramBrowseCategoryPEOCategoryDescription | — |
+| CATEGORY_ID | ObjectiveBrowseCategoryPEOCategoryId | — |
+| CATEGORY_ID | ProgramBrowseCategoryPEOCategoryId | — |
+| CATEGORY_NAME | ObjectiveBrowseCategoryPEOCategoryName | — |
+| CATEGORY_NAME | ProgramBrowseCategoryPEOCategoryName | — |
+| CREATED_BY | ObjectiveBrowseCategoryPEOCreatedBy | — |
+| CREATED_BY | ProgramBrowseCategoryPEOCreatedBy | — |
+| CREATION_DATE | ObjectiveBrowseCategoryPEOCreationDate | — |
+| CREATION_DATE | ProgramBrowseCategoryPEOCreationDate | — |
+| IMAGE_URL | ObjectiveBrowseCategoryPEOImageUrl | — |
+| IMAGE_URL | ProgramBrowseCategoryPEOImageUrl | — |
+| LAST_UPDATE_DATE | ObjectiveBrowseCategoryPEOLastUpdateDate | — |
+| LAST_UPDATE_DATE | ProgramBrowseCategoryPEOLastUpdateDate | — |
+| LAST_UPDATE_LOGIN | ObjectiveBrowseCategoryPEOLastUpdateLogin | — |
+| LAST_UPDATE_LOGIN | ProgramBrowseCategoryPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | ObjectiveBrowseCategoryPEOLastUpdatedBy | — |
+| LAST_UPDATED_BY | ProgramBrowseCategoryPEOLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | ObjectiveBrowseCategoryPEOObjectVersionNumber | — |
+| OBJECT_VERSION_NUMBER | ProgramBrowseCategoryPEOObjectVersionNumber | — |
+| TYPE | ObjectiveBrowseCategoryPEOType | — |
+| TYPE | ProgramBrowseCategoryPEOType | — |
+
+### [[sourcingprogramheaderpvo|SourcingProgramHeaderPVO]] (PO)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CATEGORY_DESCRIPTION | ProgramBrowseCategoryPEOCategoryDescription | — |
+| CATEGORY_ID | ProgramBrowseCategoryPEOCategoryId | — |
+| CATEGORY_NAME | ProgramBrowseCategoryPEOCategoryName | — |
+| CREATED_BY | ProgramBrowseCategoryPEOCreatedBy | — |
+| CREATION_DATE | ProgramBrowseCategoryPEOCreationDate | — |
+| IMAGE_URL | ProgramBrowseCategoryPEOImageUrl | — |
+| LAST_UPDATE_DATE | ProgramBrowseCategoryPEOLastUpdateDate | — |
+| LAST_UPDATE_LOGIN | ProgramBrowseCategoryPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | ProgramBrowseCategoryPEOLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | ProgramBrowseCategoryPEOObjectVersionNumber | — |
+| TYPE | ProgramBrowseCategoryPEOType | — |
+
+### [[sourcingprogramobjectivepvo|SourcingProgramObjectivePVO]] (PO)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CATEGORY_DESCRIPTION | ObjectiveBrowseCategoryPEOCategoryDescription | — |
+| CATEGORY_DESCRIPTION | ProgramBrowseCategoryPEOCategoryDescription | — |
+| CATEGORY_ID | ObjectiveBrowseCategoryPEOCategoryId | — |
+| CATEGORY_ID | ProgramBrowseCategoryPEOCategoryId | — |
+| CATEGORY_NAME | ObjectiveBrowseCategoryPEOCategoryName | — |
+| CATEGORY_NAME | ProgramBrowseCategoryPEOCategoryName | — |
+| CREATED_BY | ObjectiveBrowseCategoryPEOCreatedBy | — |
+| CREATED_BY | ProgramBrowseCategoryPEOCreatedBy | — |
+| CREATION_DATE | ObjectiveBrowseCategoryPEOCreationDate | — |
+| CREATION_DATE | ProgramBrowseCategoryPEOCreationDate | — |
+| IMAGE_URL | ObjectiveBrowseCategoryPEOImageUrl | — |
+| IMAGE_URL | ProgramBrowseCategoryPEOImageUrl | — |
+| LAST_UPDATE_DATE | ObjectiveBrowseCategoryPEOLastUpdateDate | — |
+| LAST_UPDATE_DATE | ProgramBrowseCategoryPEOLastUpdateDate | — |
+| LAST_UPDATE_LOGIN | ObjectiveBrowseCategoryPEOLastUpdateLogin | — |
+| LAST_UPDATE_LOGIN | ProgramBrowseCategoryPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | ObjectiveBrowseCategoryPEOLastUpdatedBy | — |
+| LAST_UPDATED_BY | ProgramBrowseCategoryPEOLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | ObjectiveBrowseCategoryPEOObjectVersionNumber | — |
+| OBJECT_VERSION_NUMBER | ProgramBrowseCategoryPEOObjectVersionNumber | — |
+| TYPE | ObjectiveBrowseCategoryPEOType | — |
+| TYPE | ProgramBrowseCategoryPEOType | — |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — POR Views](https://docs.oracle.com/en/cloud/saas/procurement/25a/oedmf/portables.html)

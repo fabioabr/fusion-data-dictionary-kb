@@ -121,3 +121,97 @@ WHERE  c.STATUS = 'ACTIVE'
 
 - [Oracle Docs — IRC_CAMPAIGNS_B](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/irccampaignsb.html)
 - [[hcm-module-data-dictionary]] — Dossie do modulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[campaignfactpvo|CampaignFactPVO]] (HCM · BICC: 1/3)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CAMPAIGN_CODE | CampaignBPEOCampaignCode | — |
+| CAMPAIGN_ID | CampaignId | ✅ |
+| CAMPAIGN_TYPE_CODE | CampaignBPEOCampaignTypeCode | — |
+
+### [[campaignpvo|CampaignPVO]] (HCM · BICC: 14/20)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTIVATED_ON_DATE | CampaignBPEOActivatedOnDate | ✅ |
+| AUDIENCE_POPULATED_FLAG | CampaignBPEOAudiencePopulatedFlag | ✅ |
+| AUDIENCE_SAVED_SEARCH_ID | CampaignBPEOAudienceSavedSearchId | — |
+| CAMPAIGN_CODE | CampaignBPEOCampaignCode | ✅ |
+| CAMPAIGN_ID | CampaignId | ✅ |
+| CAMPAIGN_LANGUAGE_CODE | CampaignBPEOCampaignLanguageCode | — |
+| CAMPAIGN_STATUS_CODE | CampaignBPEOCampaignStatusCode | ✅ |
+| CAMPAIGN_TYPE_CODE | CampaignBPEOCampaignTypeCode | — |
+| CANCELLED_ON_DATE | CampaignBPEOCancelledOnDate | ✅ |
+| CLOSED_ON_DATE | CampaignBPEOClosedOnDate | ✅ |
+| CREATED_BY | CampaignBPEOCreatedBy | ✅ |
+| CREATION_DATE | CampaignBPEOCreationDate | ✅ |
+| LAST_UPDATE_DATE | CampaignBPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | CampaignBPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | CampaignBPEOLastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | CampaignBPEOObjectVersionNumber | — |
+| PURPOSE_CODE | CampaignBPEOPurposeCode | ✅ |
+| REQ_SAVED_SEARCH_ID | CampaignBPEOReqSavedSearchId | — |
+| SEARCH_REQUISITIONS_FLAG | CampaignBPEOSearchRequisitionsFlag | ✅ |
+| TARGET_GOAL_VALUE | CampaignBPEOTargetGoalValue | ✅ |
+
+### [[campassetpvo|CampAssetPVO]] (HCM)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CAMPAIGN_ID | CampaignId | — |
+| CAMPAIGN_TYPE_CODE | CampaignBPEOCampaignTypeCode | — |
+
+### [[campaudiencepvo|CampAudiencePVO]] (HCM · BICC: 1/2)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CAMPAIGN_ID | CampaignId | ✅ |
+| CAMPAIGN_TYPE_CODE | CampaignBPEOCampaignTypeCode | — |
+
+### [[campconverapplypvo|CampConverApplyPVO]] (HCM · BICC: 2/3)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CAMPAIGN_CODE | CampaignBPEOCampaignCode | — |
+| CAMPAIGN_ID | CampaignId | ✅ |
+| PURPOSE_CODE | CampaignBPEOPurposeCode | ✅ |
+
+### [[campconverreferpvo|CampConverReferPVO]] (HCM · BICC: 2/3)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CAMPAIGN_CODE | CampaignBPEOCampaignCode | — |
+| CAMPAIGN_ID | CampaignId | ✅ |
+| PURPOSE_CODE | CampaignBPEOPurposeCode | ✅ |
+
+### [[campgoalpvo|CampGoalPVO]] (HCM)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CAMPAIGN_ID | CampaignBPEOCampaignId | — |
+| CAMPAIGN_TYPE_CODE | CampaignBPEOCampaignTypeCode | — |
+
+### [[campmsgrecipientpvo|CampMsgRecipientPVO]] (HCM)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CAMPAIGN_ID | CampaignBPEOCampaignId | — |
+| CAMPAIGN_TYPE_CODE | CampaignBPEOCampaignTypeCode | — |
+
+### [[camptrackresppvo|CampTrackRespPVO]] (HCM · BICC: 1/2)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CAMPAIGN_ID | CampaignId | ✅ |
+| PURPOSE_CODE | CampaignBPEOPurposeCode | — |
+
+### [[sourcetrackingviewallpvo|SourceTrackingViewAllPVO]] (HCM)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CAMPAIGN_ID | CampaignBPEOCampaignId | — |

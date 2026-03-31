@@ -136,6 +136,29 @@ WHERE  mo.OUTCOME_CODE = 'QUALIFIED'
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[supplierqualificationmodeloutcomespvo|SupplierQualificationModelOutcomesPVO]] (PO · BICC: 14/14)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | CreatedBy | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| DISPLAY_SEQUENCE | DisplaySequence | ✅ |
+| FROM_SCORE | FromScore | ✅ |
+| KNOCKOUT_OUTCOME_FLAG | KnockoutOutcomeFlag | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | LastUpdatedBy | ✅ |
+| NOTIFICATION_FLAG | NotificationFlag | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | ✅ |
+| OUTCOME_NAME | OutcomeName | ✅ |
+| QUAL_MODEL_ID | QualModelId | ✅ |
+| QUAL_MODEL_OUTCOME_ID | QualModelOutcomeId | ✅ |
+| TO_SCORE | ToScore | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — Supplier Qualification Management](https://docs.oracle.com/en/cloud/saas/procurement/25a/oedmf/)

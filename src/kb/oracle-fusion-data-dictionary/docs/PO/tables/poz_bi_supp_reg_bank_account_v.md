@@ -121,6 +121,45 @@ WHERE  srb.BANK_ACCOUNT_NUMBER IS NULL
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[supplierregistrationbankaccountspvo|SupplierRegistrationBankAccountsPVO]] (PO · BICC: 21/30)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACCOUNTREQUESTID | SupplierRegBankAccountAccountrequestid | — |
+| ACCOUNTSUFFIX | SupplierRegBankAccountAccountsuffix | ✅ |
+| AGENCYLOCATIONCODE | SupplierRegBankAccountAgencylocationcode | ✅ |
+| BANK | SupplierRegBankAccountBank | ✅ |
+| BANKACCOUNTNAME | SupplierRegBankAccountBankaccountname | ✅ |
+| BANKACCOUNTNAMEALT | SupplierRegBankAccountBankaccountnamealt | ✅ |
+| BANKACCOUNTNUM | SupplierRegBankAccountBankaccountnum | ✅ |
+| BANKACCOUNTTYPE | SupplierRegBankAccountBankaccounttype | ✅ |
+| BANKID | SupplierRegBankAccountBankid | — |
+| BANKNUMBER | SupplierRegBankAccountBanknumber | ✅ |
+| BRANCH | SupplierRegBankAccountBranch | ✅ |
+| BRANCHID | SupplierRegBankAccountBranchid | — |
+| BRANCHNUMBER | SupplierRegBankAccountBranchnumber | ✅ |
+| CHECKDIGITS | SupplierRegBankAccountCheckdigits | ✅ |
+| COUNTRY | SupplierRegBankAccountCountry | ✅ |
+| COUNTRYCODE | SupplierRegBankAccountCountrycode | — |
+| CREATEDBY | SupplierRegBankAccountCreatedby | ✅ |
+| CREATIONDATE | SupplierRegBankAccountCreationdate | ✅ |
+| CURRENCY | SupplierRegBankAccountCurrency | ✅ |
+| CURRENCYCODE | SupplierRegBankAccountCurrencycode | — |
+| DESCRIPTION | SupplierRegBankAccountDescription | ✅ |
+| IBAN | SupplierRegBankAccountIban | ✅ |
+| LASTUPDATEDATE | SupplierRegBankAccountLastupdatedate | ✅ |
+| LASTUPDATEDBY | SupplierRegBankAccountLastupdatedby | ✅ |
+| LASTUPDATELOGIN | SupplierRegBankAccountLastupdatelogin | — |
+| NOTE | SupplierRegBankAccountNote | ✅ |
+| OBJECTVERSIONNUMBER | SupplierRegBankAccountObjectversionnumber | — |
+| SECONDARYACCOUNTREFERENCE | SecondaryAccountReference | — |
+| SUPPLIERREGID | SupplierRegBankAccountSupplierregid | — |
+| TEMPEXTBANKACCTID | Tempextbankacctid | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — POZ BI Views](https://docs.oracle.com/en/cloud/saas/procurement/25a/oedmf/poztables.html)

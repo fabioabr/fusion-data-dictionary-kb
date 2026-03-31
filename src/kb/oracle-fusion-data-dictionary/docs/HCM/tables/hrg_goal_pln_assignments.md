@@ -95,6 +95,209 @@ WHERE  ga.GOAL_PLAN_ID = :p_id AND ga.ASSIGNMENT_STATUS = 'ACTIVE';
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[careerdevpvo|CareerDevPVO]] (HCM · BICC: 1/20)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ASSIGNMENT_ID | GoalPlanAssgPEOAssignmentId | — |
+| BUSINESS_GROUP_ID | GoalPlanAssgnPEOBusinessGroupId | — |
+| CREATED_BY | GoalPlanAssgPEOCreatedBy | — |
+| CREATION_DATE | GoalPlanAssgPEOCreationDate | — |
+| GOAL_PLAN_ASSIGNMENT_ID | GoalPlanAssgPEOGoalPlanAssignmentId | — |
+| GOAL_PLAN_END_DATE | GoalPlanAssgPEOGoalPlanEndDate | — |
+| GOAL_PLAN_ID | GoalPlanAssgPEOGoalPlanId | — |
+| GOAL_PLAN_SET_END_DATE | GoalPlanAssgPEOGoalPlanSetEndDate | — |
+| GOAL_PLAN_SET_ID | GoalPlanAssgPEOGoalPlanSetId | — |
+| GOAL_PLAN_SET_START_DATE | GoalPlanAssgPEOGoalPlanSetStartDate | — |
+| GOAL_PLAN_START_DATE | GoalPlanAssgPEOGoalPlanStartDate | — |
+| LAST_UPDATE_DATE | GoalPlanAssgPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | GoalPlanAssgPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | LastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | GoalPlanAssgPEOObjectVersionNumber | — |
+| ORGANIZATION_ID | GoalPlanAssgPEOOrganizationId | — |
+| PERSON_ID | GoalPlanAssgPEOPersonId | — |
+| REVIEW_PERIOD_ID | GoalPlanAssgnPEORevPeriodId | — |
+| STATUS | GoalPlanAssgPEOStatus | — |
+| WEIGHTING | GoalPlanAssgPEOWeighting | — |
+
+### [[careerdevversionpvo|CareerDevVersionPVO]] (HCM · BICC: 1/20)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ASSIGNMENT_ID | GoalPlanAssgPEOAssignmentId | — |
+| BUSINESS_GROUP_ID | GoalPlanAssgnPEOBusinessGroupId | — |
+| CREATED_BY | GoalPlanAssgPEOCreatedBy | — |
+| CREATION_DATE | GoalPlanAssgPEOCreationDate | — |
+| GOAL_PLAN_ASSIGNMENT_ID | GoalPlanAssgPEOGoalPlanAssignmentId | — |
+| GOAL_PLAN_END_DATE | GoalPlanAssgPEOGoalPlanEndDate | — |
+| GOAL_PLAN_ID | GoalPlanAssgPEOGoalPlanId | — |
+| GOAL_PLAN_SET_END_DATE | GoalPlanAssgPEOGoalPlanSetEndDate | — |
+| GOAL_PLAN_SET_ID | GoalPlanAssgPEOGoalPlanSetId | — |
+| GOAL_PLAN_SET_START_DATE | GoalPlanAssgPEOGoalPlanSetStartDate | — |
+| GOAL_PLAN_START_DATE | GoalPlanAssgPEOGoalPlanStartDate | — |
+| LAST_UPDATE_DATE | GoalPlanAssgPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | GoalPlanAssgPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | LastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | GoalPlanAssgPEOObjectVersionNumber | — |
+| ORGANIZATION_ID | GoalPlanAssgPEOOrganizationId | — |
+| PERSON_ID | GoalPlanAssgPEOPersonId | — |
+| REVIEW_PERIOD_ID | GoalPlanAssgnPEORevPeriodId | — |
+| STATUS | GoalPlanAssgPEOStatus | — |
+| WEIGHTING | GoalPlanAssgPEOWeighting | — |
+
+### [[goalplanassgextractpvo|GoalPlanAssgExtractPVO]] (HCM · BICC: 20/20)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ASSIGNMENT_ID | AssignmentId | ✅ |
+| BUSINESS_GROUP_ID | BusinessGroupId | ✅ |
+| CREATED_BY | CreatedBy | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| GOAL_PLAN_ASSIGNMENT_ID | GoalPlanAssignmentId | ✅ |
+| GOAL_PLAN_END_DATE | GoalPlanEndDate | ✅ |
+| GOAL_PLAN_ID | GoalPlanId | ✅ |
+| GOAL_PLAN_SET_END_DATE | GoalPlanSetEndDate | ✅ |
+| GOAL_PLAN_SET_ID | GoalPlanSetId | ✅ |
+| GOAL_PLAN_SET_START_DATE | GoalPlanSetStartDate | ✅ |
+| GOAL_PLAN_START_DATE | GoalPlanStartDate | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | LastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | ✅ |
+| ORGANIZATION_ID | OrganizationId | ✅ |
+| PERSON_ID | PersonId | ✅ |
+| REVIEW_PERIOD_ID | ReviewPeriodId | ✅ |
+| STATUS | Status | ✅ |
+| WEIGHTING | Weighting | ✅ |
+
+### [[goalplanassignmentfactp1|GoalPlanAssignmentFactP1]] (HCM · BICC: 13/19)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ASSIGNMENT_ID | AssignmentId | — |
+| BUSINESS_GROUP_ID | BusinessGroupId | — |
+| CREATED_BY | CreatedBy | ✅ |
+| GOAL_PLAN_ASSIGNMENT_ID | GoalPlanAssignmentId | ✅ |
+| GOAL_PLAN_END_DATE | GoalPlanEndDate | ✅ |
+| GOAL_PLAN_ID | GoalPlanId | ✅ |
+| GOAL_PLAN_SET_END_DATE | GoalPlanSetEndDate | ✅ |
+| GOAL_PLAN_SET_ID | GoalPlanSetId | ✅ |
+| GOAL_PLAN_SET_START_DATE | GoalPlanSetStartDate | ✅ |
+| GOAL_PLAN_START_DATE | GoalPlanStartDate | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | — |
+| LAST_UPDATED_BY | LastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | — |
+| ORGANIZATION_ID | OrganizationId | — |
+| PERSON_ID | PersonId | ✅ |
+| REVIEW_PERIOD_ID | GoalPlanAssgnPEORevPeriodId | — |
+| STATUS | Status | ✅ |
+| WEIGHTING | Weighting | ✅ |
+
+### [[goalplangoalpvo|GoalPlanGoalPVO]] (HCM · BICC: 7/20)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ASSIGNMENT_ID | GoalPlanAssgPEOAssignmentId | — |
+| BUSINESS_GROUP_ID | GoalPlanAssgPEOBusinessGroupId1 | — |
+| CREATED_BY | GoalPlanAssgPEOCreatedBy1 | — |
+| CREATION_DATE | GoalPlanAssgPEOCreationDate1 | — |
+| GOAL_PLAN_ASSIGNMENT_ID | GoalPlanAssgPEOGoalPlanAssignmentId | — |
+| GOAL_PLAN_END_DATE | GoalPlanAssgPEOGoalPlanEndDate | ✅ |
+| GOAL_PLAN_ID | GoalPlanAssgPEOGoalPlanId1 | — |
+| GOAL_PLAN_SET_END_DATE | GoalPlanAssgPEOGoalPlanSetEndDate | ✅ |
+| GOAL_PLAN_SET_ID | GoalPlanAssgPEOGoalPlanSetId1 | — |
+| GOAL_PLAN_SET_START_DATE | GoalPlanAssgPEOGoalPlanSetStartDate | ✅ |
+| GOAL_PLAN_START_DATE | GoalPlanAssgPEOGoalPlanStartDate | ✅ |
+| LAST_UPDATE_DATE | GoalPlanAssgPEOLastUpdateDate1 | ✅ |
+| LAST_UPDATE_LOGIN | GoalPlanAssgPEOLastUpdateLogin1 | — |
+| LAST_UPDATED_BY | GoalPlanAssgPEOLastUpdatedBy1 | — |
+| OBJECT_VERSION_NUMBER | GoalPlanAssgPEOObjectVersionNumber1 | — |
+| ORGANIZATION_ID | GoalPlanAssgPEOOrganizationId | — |
+| PERSON_ID | GoalPlanAssgPEOPersonId | — |
+| REVIEW_PERIOD_ID | GoalPlanAssgPEORevPeriodId | — |
+| STATUS | GoalPlanAssgPEOStatus | ✅ |
+| WEIGHTING | GoalPlanAssgPEOWeighting1 | ✅ |
+
+### [[goalplansetplanpvo|GoalPlanSetPlanPVO]] (HCM · BICC: 7/20)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ASSIGNMENT_ID | GoalPlanAssgPEOAssignmentId | — |
+| BUSINESS_GROUP_ID | GoalPlanAssgPEOBusinessGroupId1 | — |
+| CREATED_BY | GoalPlanAssgPEOCreatedBy1 | — |
+| CREATION_DATE | GoalPlanAssgPEOCreationDate1 | — |
+| GOAL_PLAN_ASSIGNMENT_ID | GoalPlanAssgPEOGoalPlanAssignmentId | — |
+| GOAL_PLAN_END_DATE | GoalPlanAssgPEOGoalPlanEndDate | ✅ |
+| GOAL_PLAN_ID | GoalPlanAssgPEOGoalPlanId1 | — |
+| GOAL_PLAN_SET_END_DATE | GoalPlanAssgPEOGoalPlanSetEndDate | ✅ |
+| GOAL_PLAN_SET_ID | GoalPlanAssgPEOGoalPlanSetId1 | — |
+| GOAL_PLAN_SET_START_DATE | GoalPlanAssgPEOGoalPlanSetStartDate | ✅ |
+| GOAL_PLAN_START_DATE | GoalPlanAssgPEOGoalPlanStartDate | ✅ |
+| LAST_UPDATE_DATE | GoalPlanAssgPEOLastUpdateDate1 | ✅ |
+| LAST_UPDATE_LOGIN | GoalPlanAssgPEOLastUpdateLogin1 | — |
+| LAST_UPDATED_BY | GoalPlanAssgPEOLastUpdatedBy1 | — |
+| OBJECT_VERSION_NUMBER | GoalPlanAssgPEOObjectVersionNumber1 | — |
+| ORGANIZATION_ID | GoalPlanAssgPEOOrganizationId | — |
+| PERSON_ID | GoalPlanAssgPEOPersonId | — |
+| REVIEW_PERIOD_ID | GoalPlanAssgPEORevPeriodId | — |
+| STATUS | GoalPlanAssgPEOStatus | ✅ |
+| WEIGHTING | GoalPlanAssgPEOWeighting1 | ✅ |
+
+### [[goalstatusoverviewpvo|GoalStatusOverviewPVO]] (HCM · BICC: 2/20)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ASSIGNMENT_ID | GoalPlanAssgPEOAssignmentId | — |
+| BUSINESS_GROUP_ID | GoalPlanAssgnPEOBusinessGroupId | — |
+| CREATED_BY | GoalPlanAssgPEOCreatedBy | — |
+| CREATION_DATE | GoalPlanAssgPEOCreationDate | — |
+| GOAL_PLAN_ASSIGNMENT_ID | GoalPlanAssgPEOGoalPlanAssignmentId | ✅ |
+| GOAL_PLAN_END_DATE | GoalPlanAssgPEOGoalPlanEndDate | — |
+| GOAL_PLAN_ID | GoalPlanAssgPEOGoalPlanId | — |
+| GOAL_PLAN_SET_END_DATE | GoalPlanAssgPEOGoalPlanSetEndDate | — |
+| GOAL_PLAN_SET_ID | GoalPlanAssgPEOGoalPlanSetId | — |
+| GOAL_PLAN_SET_START_DATE | GoalPlanAssgPEOGoalPlanSetStartDate | — |
+| GOAL_PLAN_START_DATE | GoalPlanAssgPEOGoalPlanStartDate | — |
+| LAST_UPDATE_DATE | GoalPlanAssgPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | GoalPlanAssgPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | LastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | GoalPlanAssgPEOObjectVersionNumber | — |
+| ORGANIZATION_ID | GoalPlanAssgPEOOrganizationId | — |
+| PERSON_ID | GoalPlanAssgPEOPersonId | — |
+| REVIEW_PERIOD_ID | GoalPlanAssgnPEORevPeriodId | — |
+| STATUS | GoalPlanAssgPEOStatus | — |
+| WEIGHTING | GoalPlanAssgPEOWeighting | — |
+
+### [[goalversionstatusoverviewpvo|GoalVersionStatusOverviewPVO]] (HCM · BICC: 2/20)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ASSIGNMENT_ID | GoalPlanAssgPEOAssignmentId | — |
+| BUSINESS_GROUP_ID | GoalPlanAssgnPEOBusinessGroupId | — |
+| CREATED_BY | GoalPlanAssgPEOCreatedBy | — |
+| CREATION_DATE | GoalPlanAssgPEOCreationDate | — |
+| GOAL_PLAN_ASSIGNMENT_ID | GoalPlanAssgPEOGoalPlanAssignmentId | ✅ |
+| GOAL_PLAN_END_DATE | GoalPlanAssgPEOGoalPlanEndDate | — |
+| GOAL_PLAN_ID | GoalPlanAssgPEOGoalPlanId | — |
+| GOAL_PLAN_SET_END_DATE | GoalPlanAssgPEOGoalPlanSetEndDate | — |
+| GOAL_PLAN_SET_ID | GoalPlanAssgPEOGoalPlanSetId | — |
+| GOAL_PLAN_SET_START_DATE | GoalPlanAssgPEOGoalPlanSetStartDate | — |
+| GOAL_PLAN_START_DATE | GoalPlanAssgPEOGoalPlanStartDate | — |
+| LAST_UPDATE_DATE | GoalPlanAssgPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | GoalPlanAssgPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | LastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | GoalPlanAssgPEOObjectVersionNumber | — |
+| ORGANIZATION_ID | GoalPlanAssgPEOOrganizationId | — |
+| PERSON_ID | GoalPlanAssgPEOPersonId | — |
+| REVIEW_PERIOD_ID | GoalPlanAssgPEORevPeriodId | — |
+| STATUS | GoalPlanAssgPEOStatus | — |
+| WEIGHTING | GoalPlanAssgPEOWeighting | — |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Fusion HCM Tables and Views](https://docs.oracle.com/en/cloud/saas/human-resources/25a/)

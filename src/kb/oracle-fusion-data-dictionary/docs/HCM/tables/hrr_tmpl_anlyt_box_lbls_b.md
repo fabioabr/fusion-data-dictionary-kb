@@ -100,6 +100,42 @@ Posições 1-9 correspondem ao layout do 9-Box.
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[boxlabellookuppvo|BoxLabelLookupPVO]] (HCM · BICC: 2/11)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ANALYTIC_BOX_LABEL_ID | AnalyticBoxLabelId | — |
+| ANALYTIC_TYPE_ID | TmplAnylBoxLblPEOAnalyticTypeId | — |
+| BOX_SEQUENCE | BoxSequence | ✅ |
+| BUSINESS_GROUP_ID | TmplAnylBoxLblPEOBusinessGroupId | — |
+| CREATED_BY | TmplAnylBoxLblPEOCreatedBy | — |
+| CREATION_DATE | TmplAnylBoxLblPEOCreationDate | — |
+| LAST_UPDATE_DATE | TmplAnylBoxLblPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | TmplAnylBoxLblPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | TmplAnylBoxLblPEOLastUpdatedBy | — |
+| MODULE_ID | TmplAnylBoxLblPEOModuleId | — |
+| OBJECT_VERSION_NUMBER | TmplAnylBoxLblPEOObjectVersionNumber | — |
+
+### [[nboxlabelpvo|NBoxLabelPVO]] (HCM · BICC: 2/11)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ANALYTIC_BOX_LABEL_ID | AnalyticBoxLabelId | — |
+| ANALYTIC_TYPE_ID | TmplAnylBoxLblPEOAnalyticTypeId | — |
+| BOX_SEQUENCE | BoxSequence | ✅ |
+| BUSINESS_GROUP_ID | TmplAnylBoxLblPEOBusinessGroupId | — |
+| CREATED_BY | TmplAnylBoxLblPEOCreatedBy | — |
+| CREATION_DATE | TmplAnylBoxLblPEOCreationDate | — |
+| LAST_UPDATE_DATE | TmplAnylBoxLblPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | TmplAnylBoxLblPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | TmplAnylBoxLblPEOLastUpdatedBy | — |
+| MODULE_ID | TmplAnylBoxLblPEOModuleId | — |
+| OBJECT_VERSION_NUMBER | TmplAnylBoxLblPEOObjectVersionNumber | — |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Fusion HCM Tables and Views](https://docs.oracle.com/en/cloud/saas/human-resources/25a/)

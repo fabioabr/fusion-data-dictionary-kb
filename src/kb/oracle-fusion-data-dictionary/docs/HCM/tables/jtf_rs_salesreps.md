@@ -66,3 +66,43 @@ updated_at: 2026-03-26
 ## 📎 Uso Típico
 
 (a ser preenchido na etapa 03)
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[referenceaccount|ReferenceAccount]] (AR)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| RESOURCE_ID | ResourceSalesrepResourceId | — |
+| RESOURCE_SALESREP_ID | ResourceSalesrepResourceSalesrepId | — |
+| STATUS | ResourceSalesrepStatus | — |
+
+### [[salesrep|SalesRep]] (OTHER · BICC: 8/16)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | ResourceSalesrepPEOCreatedBy | — |
+| CREATION_DATE | ResourceSalesrepPEOCreationDate | — |
+| END_DATE_ACTIVE | EndDateActive | ✅ |
+| LAST_UPDATE_DATE | ResourceSalesrepPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ResourceSalesrepPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | ResourceSalesrepPEOLastUpdatedBy | — |
+| RESOURCE_ID | ResourceId | ✅ |
+| RESOURCE_SALESREP_ID | ResourceSalesrepId | ✅ |
+| SALES_CREDIT_TYPE_ID | SalesCreditTypeId | ✅ |
+| SALES_TAX_GEOCODE | SalesTaxGeocode | — |
+| SALES_TAX_INSIDE_CITY_LIMITS | SalesTaxInsideCityLimits | — |
+| SALESREP_NUMBER | SalesrepNumber | ✅ |
+| SET_ID | SetId | — |
+| START_DATE_ACTIVE | StartDateActive | ✅ |
+| STATUS | ResourceSalesrepPEOStatus | ✅ |
+| WH_UPDATE_DATE | WhUpdateDate | — |
+
+### [[transactionlinedistributionpvo|TransactionLineDistributionPVO]] (AR)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| RESOURCE_ID | ResourceSalesrepResourceId | — |
+| RESOURCE_SALESREP_ID | ResourceSalesrepResourceSalesrepId | — |

@@ -38,7 +38,6 @@ updated_at: 2026-03-25
 
 Armazena o **historico de acoes realizadas em documentos de compras** (POs, requisicoes, agreements). Cada registro representa uma acao de workflow — submissao, aprovacao, rejeicao, cancelamento — com timestamp, usuario e comentario.
 
-
 ---
 
 ## 🧠 Propósito de Negócio
@@ -100,7 +99,6 @@ WHERE  OBJECT_ID = :p_po_header_id
 ORDER BY SEQUENCE_NUM;
 ```
 
-
 ---
 
 ## 🔒 Observações
@@ -109,6 +107,319 @@ ORDER BY SEQUENCE_NUM;
 - O `OBJECT_TYPE_CODE` determina a tabela-pai (PO, REQUISITION, etc.).
 - Acoes automaticas podem ter `EMPLOYEE_ID` nulo.
 - Campo `NOTE` contem justificativas obrigatorias em rejeicoes.
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[agreementheaderpvo|AgreementHeaderPVO]] (PO)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_CODE | DocumentCancelActionActionCode | — |
+| ACTION_DATE | DocumentCancelActionActionDate | — |
+| ACTION_LEVEL | DocumentCancelActionActionLevel | — |
+| IDENTIFICATION_KEY | DocumentCancelActionIdentificationKey | — |
+| NOTE | DocumentCancelActionNote | — |
+| OBJECT_ID | DocumentCancelActionObjectId | — |
+| OBJECT_REVISION_NUM | DocumentCancelActionObjectRevisionNum | — |
+| OBJECT_SUB_TYPE_CODE | DocumentCancelActionObjectSubTypeCode | — |
+| OBJECT_TYPE_CODE | DocumentCancelActionObjectTypeCode | — |
+| OFFLINE_CODE | DocumentCancelActionOfflineCode | — |
+| PERFORMER_ID | DocumentCancelActionPerformerId | — |
+| PO_VERSION_ID | DocumentCancelActionPoVersionId | — |
+| PROGRAM_DATE | DocumentCancelActionProgramDate | — |
+| ROLE_CODE | DocumentCancelActionRoleCode | — |
+| SEQUENCE_NUM | DocumentCancelActionSequenceNum | — |
+| SUPPLIER_ACCESSIBLE_FLAG | DocumentCancelActionSupplierAccessibleFlag | — |
+
+### [[agreementlinepvo|AgreementLinePVO]] (PO)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_CODE | DocumentCancelActionActionCode | — |
+| ACTION_DATE | DocumentCancelActionActionDate | — |
+| ACTION_LEVEL | DocumentCancelActionActionLevel | — |
+| IDENTIFICATION_KEY | DocumentCancelActionIdentificationKey | — |
+| NOTE | DocumentCancelActionNote | — |
+| OBJECT_ID | DocumentCancelActionObjectId | — |
+| OBJECT_REVISION_NUM | DocumentCancelActionObjectRevisionNum | — |
+| OBJECT_SUB_TYPE_CODE | DocumentCancelActionObjectSubTypeCode | — |
+| OBJECT_TYPE_CODE | DocumentCancelActionObjectTypeCode | — |
+| OFFLINE_CODE | DocumentCancelActionOfflineCode | — |
+| PERFORMER_ID | DocumentCancelActionPerformerId | — |
+| PO_VERSION_ID | DocumentCancelActionPoVersionId | — |
+| PROGRAM_DATE | DocumentCancelActionProgramDate | — |
+| ROLE_CODE | DocumentCancelActionRoleCode | — |
+| SEQUENCE_NUM | DocumentCancelActionSequenceNum | — |
+| SUPPLIER_ACCESSIBLE_FLAG | DocumentCancelActionSupplierAccessibleFlag | — |
+
+### [[agreementpricebreakpvo|AgreementPriceBreakPVO]] (PO)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_CODE | DocumentCancelActionActionCode | — |
+| ACTION_DATE | DocumentCancelActionActionDate | — |
+| ACTION_LEVEL | DocumentCancelActionActionLevel | — |
+| IDENTIFICATION_KEY | DocumentCancelActionIdentificationKey | — |
+| NOTE | DocumentCancelActionNote | — |
+| OBJECT_ID | DocumentCancelActionObjectId | — |
+| OBJECT_REVISION_NUM | DocumentCancelActionObjectRevisionNum | — |
+| OBJECT_SUB_TYPE_CODE | DocumentCancelActionObjectSubTypeCode | — |
+| OBJECT_TYPE_CODE | DocumentCancelActionObjectTypeCode | — |
+| OFFLINE_CODE | DocumentCancelActionOfflineCode | — |
+| PERFORMER_ID | DocumentCancelActionPerformerId | — |
+| PO_VERSION_ID | DocumentCancelActionPoVersionId | — |
+| PROGRAM_DATE | DocumentCancelActionProgramDate | — |
+| ROLE_CODE | DocumentCancelActionRoleCode | — |
+| SEQUENCE_NUM | DocumentCancelActionSequenceNum | — |
+| SUPPLIER_ACCESSIBLE_FLAG | DocumentCancelActionSupplierAccessibleFlag | — |
+
+### [[draftpurchaseorderdistributionpvo|DraftPurchaseOrderDistributionPVO]] (PO)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_CODE | ActionCode | — |
+| ACTION_DATE | DocumentCancelActionActionDate | — |
+| OBJECT_ID | ObjectId | — |
+| OBJECT_SUB_TYPE_CODE | ObjectSubTypeCode | — |
+| OBJECT_TYPE_CODE | ObjectTypeCode | — |
+| SEQUENCE_NUM | SequenceNum | — |
+
+### [[draftpurchaseorderdistributionrefpvo|DraftPurchaseOrderDistributionRefPVO]] (PO · BICC: 1/6)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_CODE | ActionCode | — |
+| ACTION_DATE | DocumentCancelActionActionDate | ✅ |
+| OBJECT_ID | ObjectId | — |
+| OBJECT_SUB_TYPE_CODE | ObjectSubTypeCode | — |
+| OBJECT_TYPE_CODE | ObjectTypeCode | — |
+| SEQUENCE_NUM | SequenceNum | — |
+
+### [[purchaseorderhistorypvo|PurchaseOrderHistoryPVO]] (PO · BICC: 10/23)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_CODE | PurchasingActionHistoryActionCode | ✅ |
+| ACTION_DATE | PurchasingActionHistoryActionDate | ✅ |
+| ACTION_LEVEL | PurchasingActionHistoryActionLevel | — |
+| ASSIGNMENT_DATE | PurchasingActionHistoryAssignmentDate | ✅ |
+| CREATED_BY | PurchasingActionHistoryCreatedBy | — |
+| CREATION_DATE | PurchasingActionHistoryCreationDate | — |
+| IDENTIFICATION_KEY | PurchasingActionHistoryIdentificationKey | — |
+| LAST_UPDATE_DATE | PurchasingActionHistoryLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | PurchasingActionHistoryLastUpdateLogin | — |
+| LAST_UPDATED_BY | PurchasingActionHistoryLastUpdatedBy | — |
+| NOTE | PurchasingActionHistoryNote | ✅ |
+| OBJECT_ID | ObjectId | ✅ |
+| OBJECT_REVISION_NUM | PurchasingActionHistoryObjectRevisionNum | — |
+| OBJECT_SUB_TYPE_CODE | ObjectSubTypeCode | ✅ |
+| OBJECT_TYPE_CODE | ObjectTypeCode | ✅ |
+| OBJECT_VERSION_NUMBER | PurchasingActionHistoryObjectVersionNumber | — |
+| OFFLINE_CODE | PurchasingActionHistoryOfflineCode | — |
+| PERFORMER_ID | PurchasingActionHistoryPerformerId | — |
+| PO_VERSION_ID | PurchasingActionHistoryPoVersionId | — |
+| PROGRAM_DATE | PurchasingActionHistoryProgramDate | — |
+| ROLE_CODE | PurchasingActionHistoryRoleCode | ✅ |
+| SEQUENCE_NUM | SequenceNum | ✅ |
+| SUPPLIER_ACCESSIBLE_FLAG | PurchasingActionHistorySupplierAccessibleFlag | — |
+
+### [[purchasingdocumentactionhistoryextractpvo|PurchasingDocumentActionHistoryExtractPVO]] (PO · BICC: 22/22)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_CODE | ActionCode | ✅ |
+| ACTION_DATE | ActionDate | ✅ |
+| ASSIGNMENT_DATE | AssignmentDate | ✅ |
+| CORRELATION_ID | CorrelationId | ✅ |
+| CREATED_BY | CreatedBy | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| IDENTIFICATION_KEY | IdentificationKey | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | LastUpdatedBy | ✅ |
+| NOTE | Note | ✅ |
+| OBJECT_ID | ObjectId | ✅ |
+| OBJECT_REVISION_NUM | ObjectRevisionNum | ✅ |
+| OBJECT_SUB_TYPE_CODE | ObjectSubTypeCode | ✅ |
+| OBJECT_TYPE_CODE | ObjectTypeCode | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | ✅ |
+| OFFLINE_CODE | OfflineCode | ✅ |
+| PERFORMER_ID | PerformerId | ✅ |
+| PO_VERSION_ID | PoVersionId | ✅ |
+| ROLE_CODE | RoleCode | ✅ |
+| SEQUENCE_NUM | SequenceNum | ✅ |
+| SUPPLIER_ACCESSIBLE_FLAG | SupplierAccessibleFlag | ✅ |
+
+### [[purchasingdocumentlinepvo|PurchasingDocumentLinePVO]] (PO)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_CODE | DocumentCancelActionActionCode | — |
+| ACTION_DATE | DocumentCancelActionActionDate | — |
+| ACTION_LEVEL | DocumentCancelActionActionLevel | — |
+| IDENTIFICATION_KEY | DocumentCancelActionIdentificationKey | — |
+| NOTE | DocumentCancelActionNote | — |
+| OBJECT_ID | DocumentCancelActionObjectId | — |
+| OBJECT_REVISION_NUM | DocumentCancelActionObjectRevisionNum | — |
+| OBJECT_SUB_TYPE_CODE | DocumentCancelActionObjectSubTypeCode | — |
+| OBJECT_TYPE_CODE | DocumentCancelActionObjectTypeCode | — |
+| OFFLINE_CODE | DocumentCancelActionOfflineCode | — |
+| PERFORMER_ID | DocumentCancelActionPerformerId | — |
+| PO_VERSION_ID | DocumentCancelActionPoVersionId | — |
+| PROGRAM_DATE | DocumentCancelActionProgramDate | — |
+| ROLE_CODE | DocumentCancelActionRoleCode | — |
+| SEQUENCE_NUM | DocumentCancelActionSequenceNum | — |
+| SUPPLIER_ACCESSIBLE_FLAG | DocumentCancelActionSupplierAccessibleFlag | — |
+
+### [[requisitionactionhistorypvo|RequisitionActionHistoryPVO]] (PO · BICC: 10/23)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_CODE | PurchasingActionHistoryActionCode | ✅ |
+| ACTION_DATE | PurchasingActionHistoryActionDate | ✅ |
+| ACTION_LEVEL | PurchasingActionHistoryActionLevel | — |
+| ASSIGNMENT_DATE | PurchasingActionHistoryAssignmentDate | ✅ |
+| CREATED_BY | PurchasingActionHistoryCreatedBy | — |
+| CREATION_DATE | PurchasingActionHistoryCreationDate | — |
+| IDENTIFICATION_KEY | PurchasingActionHistoryIdentificationKey | — |
+| LAST_UPDATE_DATE | PurchasingActionHistoryLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | PurchasingActionHistoryLastUpdateLogin | — |
+| LAST_UPDATED_BY | PurchasingActionHistoryLastUpdatedBy | — |
+| NOTE | PurchasingActionHistoryNote | ✅ |
+| OBJECT_ID | ObjectId | ✅ |
+| OBJECT_REVISION_NUM | PurchasingActionHistoryObjectRevisionNum | — |
+| OBJECT_SUB_TYPE_CODE | ObjectSubTypeCode | ✅ |
+| OBJECT_TYPE_CODE | ObjectTypeCode | ✅ |
+| OBJECT_VERSION_NUMBER | PurchasingActionHistoryObjectVersionNumber | — |
+| OFFLINE_CODE | PurchasingActionHistoryOfflineCode | — |
+| PERFORMER_ID | PurchasingActionHistoryPerformerId | — |
+| PO_VERSION_ID | PurchasingActionHistoryPoVersionId | — |
+| PROGRAM_DATE | PurchasingActionHistoryProgramDate | — |
+| ROLE_CODE | PurchasingActionHistoryRoleCode | ✅ |
+| SEQUENCE_NUM | SequenceNum | ✅ |
+| SUPPLIER_ACCESSIBLE_FLAG | PurchasingActionHistorySupplierAccessibleFlag | — |
+
+### [[requisitiondistributionp1|RequisitionDistributionP1]] (PO · BICC: 2/7)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_CODE | PurchasingDocumentActionHistActionCode | — |
+| ACTION_DATE | RequisitionHeaderCanceledDate | ✅ |
+| NOTE | RequisitionHeaderCanceledReason | ✅ |
+| OBJECT_ID | PurchasingDocumentActionHistObjectId | — |
+| OBJECT_SUB_TYPE_CODE | PurchasingDocumentActionHistObjectSubTypeCode | — |
+| OBJECT_TYPE_CODE | PurchasingDocumentActionHistObjectTypeCode | — |
+| SEQUENCE_NUM | PurchasingDocumentActionHistSequenceNum | — |
+
+### [[requisitiondistributionrefpvo|RequisitionDistributionRefPVO]] (PO · BICC: 2/7)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_CODE | PurchasingDocumentActionHistActionCode | — |
+| ACTION_DATE | RequisitionHeaderCanceledDate | ✅ |
+| NOTE | RequisitionHeaderCanceledReason | ✅ |
+| OBJECT_ID | PurchasingDocumentActionHistObjectId | — |
+| OBJECT_SUB_TYPE_CODE | PurchasingDocumentActionHistObjectSubTypeCode | — |
+| OBJECT_TYPE_CODE | PurchasingDocumentActionHistObjectTypeCode | — |
+| SEQUENCE_NUM | PurchasingDocumentActionHistSequenceNum | — |
+
+### [[requisitionlinep1|RequisitionLineP1]] (PO · BICC: 2/7)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_CODE | PurchasingDocumentActionHistActionCode | — |
+| ACTION_DATE | RequisitionHeaderCanceledDate | ✅ |
+| NOTE | RequisitionHeaderCanceledReason | ✅ |
+| OBJECT_ID | PurchasingDocumentActionHistObjectId | — |
+| OBJECT_SUB_TYPE_CODE | PurchasingDocumentActionHistObjectSubTypeCode | — |
+| OBJECT_TYPE_CODE | PurchasingDocumentActionHistObjectTypeCode | — |
+| SEQUENCE_NUM | PurchasingDocumentActionHistSequenceNum | — |
+
+### [[standarddistributionpvo|StandardDistributionPVO]] (PO)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_CODE | DocumentCancelActionActionCode | — |
+| ACTION_DATE | DocumentCancelActionActionDate | — |
+| ACTION_LEVEL | DocumentCancelActionActionLevel | — |
+| IDENTIFICATION_KEY | DocumentCancelActionIdentificationKey | — |
+| NOTE | DocumentCancelActionNote | — |
+| OBJECT_ID | DocumentCancelActionObjectId | — |
+| OBJECT_REVISION_NUM | DocumentCancelActionObjectRevisionNum | — |
+| OBJECT_SUB_TYPE_CODE | DocumentCancelActionObjectSubTypeCode | — |
+| OBJECT_TYPE_CODE | DocumentCancelActionObjectTypeCode | — |
+| OFFLINE_CODE | DocumentCancelActionOfflineCode | — |
+| PERFORMER_ID | DocumentCancelActionPerformerId | — |
+| PO_VERSION_ID | DocumentCancelActionPoVersionId | — |
+| PROGRAM_DATE | DocumentCancelActionProgramDate | — |
+| ROLE_CODE | DocumentCancelActionRoleCode | — |
+| SEQUENCE_NUM | DocumentCancelActionSequenceNum | — |
+| SUPPLIER_ACCESSIBLE_FLAG | DocumentCancelActionSupplierAccessibleFlag | — |
+
+### [[standardheaderpvo|StandardHeaderPVO]] (PO)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_CODE | DocumentCancelActionActionCode | — |
+| ACTION_DATE | DocumentCancelActionActionDate | — |
+| ACTION_LEVEL | DocumentCancelActionActionLevel | — |
+| IDENTIFICATION_KEY | DocumentCancelActionIdentificationKey | — |
+| NOTE | DocumentCancelActionNote | — |
+| OBJECT_ID | DocumentCancelActionObjectId | — |
+| OBJECT_REVISION_NUM | DocumentCancelActionObjectRevisionNum | — |
+| OBJECT_SUB_TYPE_CODE | DocumentCancelActionObjectSubTypeCode | — |
+| OBJECT_TYPE_CODE | DocumentCancelActionObjectTypeCode | — |
+| OFFLINE_CODE | DocumentCancelActionOfflineCode | — |
+| PERFORMER_ID | DocumentCancelActionPerformerId | — |
+| PO_VERSION_ID | DocumentCancelActionPoVersionId | — |
+| PROGRAM_DATE | DocumentCancelActionProgramDate | — |
+| ROLE_CODE | DocumentCancelActionRoleCode | — |
+| SEQUENCE_NUM | DocumentCancelActionSequenceNum | — |
+| SUPPLIER_ACCESSIBLE_FLAG | DocumentCancelActionSupplierAccessibleFlag | — |
+
+### [[standardlinepvo|StandardLinePVO]] (PO)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_CODE | DocumentCancelActionActionCode | — |
+| ACTION_DATE | DocumentCancelActionActionDate | — |
+| ACTION_LEVEL | DocumentCancelActionActionLevel | — |
+| IDENTIFICATION_KEY | DocumentCancelActionIdentificationKey | — |
+| NOTE | DocumentCancelActionNote | — |
+| OBJECT_ID | DocumentCancelActionObjectId | — |
+| OBJECT_REVISION_NUM | DocumentCancelActionObjectRevisionNum | — |
+| OBJECT_SUB_TYPE_CODE | DocumentCancelActionObjectSubTypeCode | — |
+| OBJECT_TYPE_CODE | DocumentCancelActionObjectTypeCode | — |
+| OFFLINE_CODE | DocumentCancelActionOfflineCode | — |
+| PERFORMER_ID | DocumentCancelActionPerformerId | — |
+| PO_VERSION_ID | DocumentCancelActionPoVersionId | — |
+| PROGRAM_DATE | DocumentCancelActionProgramDate | — |
+| ROLE_CODE | DocumentCancelActionRoleCode | — |
+| SEQUENCE_NUM | DocumentCancelActionSequenceNum | — |
+| SUPPLIER_ACCESSIBLE_FLAG | DocumentCancelActionSupplierAccessibleFlag | — |
+
+### [[standardshipmentpvo|StandardShipmentPVO]] (PO)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_CODE | DocumentCancelActionActionCode | — |
+| ACTION_DATE | DocumentCancelActionActionDate | — |
+| ACTION_LEVEL | DocumentCancelActionActionLevel | — |
+| IDENTIFICATION_KEY | DocumentCancelActionIdentificationKey | — |
+| NOTE | DocumentCancelActionNote | — |
+| OBJECT_ID | DocumentCancelActionObjectId | — |
+| OBJECT_REVISION_NUM | DocumentCancelActionObjectRevisionNum | — |
+| OBJECT_SUB_TYPE_CODE | DocumentCancelActionObjectSubTypeCode | — |
+| OBJECT_TYPE_CODE | DocumentCancelActionObjectTypeCode | — |
+| OFFLINE_CODE | DocumentCancelActionOfflineCode | — |
+| PERFORMER_ID | DocumentCancelActionPerformerId | — |
+| PO_VERSION_ID | DocumentCancelActionPoVersionId | — |
+| PROGRAM_DATE | DocumentCancelActionProgramDate | — |
+| ROLE_CODE | DocumentCancelActionRoleCode | — |
+| SEQUENCE_NUM | DocumentCancelActionSequenceNum | — |
+| SUPPLIER_ACCESSIBLE_FLAG | DocumentCancelActionSupplierAccessibleFlag | — |
 
 ---
 

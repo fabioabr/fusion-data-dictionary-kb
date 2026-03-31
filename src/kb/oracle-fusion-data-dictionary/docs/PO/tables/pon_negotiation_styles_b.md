@@ -130,6 +130,121 @@ WHERE  s.BID_RANKING_CODE = 'MULTI_ATTRIBUTE'
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[negotiationstylebpvo|NegotiationStyleBPVO]] (PO · BICC: 2/32)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ABSTRACT_ENABLED_FLAG | NegotiationStyleAbstractEnabledFlag | — |
+| AUTO_EXTEND_ENABLED_FLAG | NegotiationStyleAutoExtendEnabledFlag | — |
+| CONTERMS_ENABLED_FLAG | NegotiationStyleContermsEnabledFlag | — |
+| COVER_PAGE_ENABLED_FLAG | NegotiationStyleCoverPageEnabledFlag | — |
+| CREATED_BY | NegotiationStyleCreatedBy | — |
+| CREATION_DATE | NegotiationStyleCreationDate | — |
+| GENERAL_INTRO_ENABLED_FLAG | NegotiationStyleGeneralIntroEnabledFlag | — |
+| GROUP_ENABLED_FLAG | NegotiationStyleGroupEnabledFlag | — |
+| HDR_ATTRIBUTE_ENABLED_FLAG | NegotiationStyleHdrAttributeEnabledFlag | — |
+| LARGE_NEG_ENABLED_FLAG | NegotiationStyleLargeNegEnabledFlag | — |
+| LAST_UPDATE_DATE | NegotiationStyleLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | NegotiationStyleLastUpdateLogin | — |
+| LAST_UPDATED_BY | NegotiationStyleLastUpdatedBy | — |
+| LINE_ATTRIBUTE_ENABLED_FLAG | NegotiationStyleLineAttributeEnabledFlag | — |
+| LINE_MAS_ENABLED_FLAG | NegotiationStyleLineMasEnabledFlag | — |
+| LINES_INSTR_ENABLED_FLAG | NegotiationStyleLinesInstrEnabledFlag | — |
+| LOT_ENABLED_FLAG | NegotiationStyleLotEnabledFlag | — |
+| NEG_TEAM_ENABLED_FLAG | NegotiationStyleNegTeamEnabledFlag | — |
+| OBJECT_VERSION_NUMBER | NegotiationStyleObjectVersionNumber | — |
+| POWER_BIDDING_ENABLED_FLAG | NegotiationStylePowerBiddingEnabledFlag | — |
+| PRICE_ELEMENT_ENABLED_FLAG | NegotiationStylePriceElementEnabledFlag | — |
+| PROXY_BIDDING_ENABLED_FLAG | NegotiationStyleProxyBiddingEnabledFlag | — |
+| QTY_PRICE_TIERS_ENABLED_FLAG | NegotiationStyleQtyPriceTiersEnabledFlag | — |
+| REQMNTS_INSTR_ENABLED_FLAG | NegotiationStyleReqmntsInstrEnabledFlag | — |
+| RFI_LINE_ENABLED_FLAG | NegotiationStyleRfiLineEnabledFlag | — |
+| STAG_CLOSE_ENABLED_FLAG | NegotiationStyleStagCloseEnabledFlag | — |
+| STATUS | NegotiationStyleStatus | — |
+| STYLE_ID | StyleId | ✅ |
+| SYSTEM_FLAG | NegotiationStyleSystemFlag | — |
+| TEAM_SCORING_ENABLED_FLAG | NegotiationStyleTeamScoringEnabledFlag | — |
+| TERMS_INSTR_ENABLED_FLAG | NegotiationStyleTermsInstrEnabledFlag | — |
+| TWOSTAGE_EVAL_ENABLED_FLAG | NegotiationStyleTwostageEvalEnabledFlag | — |
+
+### [[negotiationstyledocumenttypepvo|NegotiationStyleDocumentTypePVO]] (PO · BICC: 1/32)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ABSTRACT_ENABLED_FLAG | NegotiationStyleAbstractEnabledFlag | — |
+| AUTO_EXTEND_ENABLED_FLAG | NegotiationStyleAutoExtendEnabledFlag | — |
+| CONTERMS_ENABLED_FLAG | NegotiationStyleContermsEnabledFlag | — |
+| COVER_PAGE_ENABLED_FLAG | NegotiationStyleCoverPageEnabledFlag | — |
+| CREATED_BY | NegotiationStyleCreatedBy | — |
+| CREATION_DATE | NegotiationStyleCreationDate | — |
+| GENERAL_INTRO_ENABLED_FLAG | NegotiationStyleGeneralIntroEnabledFlag | — |
+| GROUP_ENABLED_FLAG | NegotiationStyleGroupEnabledFlag | — |
+| HDR_ATTRIBUTE_ENABLED_FLAG | NegotiationStyleHdrAttributeEnabledFlag | — |
+| LARGE_NEG_ENABLED_FLAG | NegotiationStyleLargeNegEnabledFlag | — |
+| LAST_UPDATE_DATE | NegotiationStyleLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | NegotiationStyleLastUpdateLogin | — |
+| LAST_UPDATED_BY | NegotiationStyleLastUpdatedBy | — |
+| LINE_ATTRIBUTE_ENABLED_FLAG | NegotiationStyleLineAttributeEnabledFlag | — |
+| LINE_MAS_ENABLED_FLAG | NegotiationStyleLineMasEnabledFlag | — |
+| LINES_INSTR_ENABLED_FLAG | NegotiationStyleLinesInstrEnabledFlag | — |
+| LOT_ENABLED_FLAG | NegotiationStyleLotEnabledFlag | — |
+| NEG_TEAM_ENABLED_FLAG | NegotiationStyleNegTeamEnabledFlag | — |
+| OBJECT_VERSION_NUMBER | NegotiationStyleObjectVersionNumber | — |
+| POWER_BIDDING_ENABLED_FLAG | NegotiationStylePowerBiddingEnabledFlag | — |
+| PRICE_ELEMENT_ENABLED_FLAG | NegotiationStylePriceElementEnabledFlag | — |
+| PROXY_BIDDING_ENABLED_FLAG | NegotiationStyleProxyBiddingEnabledFlag | — |
+| QTY_PRICE_TIERS_ENABLED_FLAG | NegotiationStyleQtyPriceTiersEnabledFlag | — |
+| REQMNTS_INSTR_ENABLED_FLAG | NegotiationStyleReqmntsInstrEnabledFlag | — |
+| RFI_LINE_ENABLED_FLAG | NegotiationStyleRfiLineEnabledFlag | — |
+| STAG_CLOSE_ENABLED_FLAG | NegotiationStyleStagCloseEnabledFlag | — |
+| STATUS | NegotiationStyleStatus | — |
+| STYLE_ID | NegotiationStyleStyleId | — |
+| SYSTEM_FLAG | NegotiationStyleSystemFlag | — |
+| TEAM_SCORING_ENABLED_FLAG | NegotiationStyleTeamScoringEnabledFlag | — |
+| TERMS_INSTR_ENABLED_FLAG | NegotiationStyleTermsInstrEnabledFlag | — |
+| TWOSTAGE_EVAL_ENABLED_FLAG | NegotiationStyleTwostageEvalEnabledFlag | — |
+
+### [[negstyledocumenttypeextractpvo|NegStyleDocumentTypeExtractPVO]] (PO · BICC: 32/32)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ABSTRACT_ENABLED_FLAG | NegotiationStyleAbstractEnabledFlag | ✅ |
+| AUTO_EXTEND_ENABLED_FLAG | NegotiationStyleAutoExtendEnabledFlag | ✅ |
+| CONTERMS_ENABLED_FLAG | NegotiationStyleContermsEnabledFlag | ✅ |
+| COVER_PAGE_ENABLED_FLAG | NegotiationStyleCoverPageEnabledFlag | ✅ |
+| CREATED_BY | NegotiationStyleCreatedBy | ✅ |
+| CREATION_DATE | NegotiationStyleCreationDate | ✅ |
+| GENERAL_INTRO_ENABLED_FLAG | NegotiationStyleGeneralIntroEnabledFlag | ✅ |
+| GROUP_ENABLED_FLAG | NegotiationStyleGroupEnabledFlag | ✅ |
+| HDR_ATTRIBUTE_ENABLED_FLAG | NegotiationStyleHdrAttributeEnabledFlag | ✅ |
+| LARGE_NEG_ENABLED_FLAG | NegotiationStyleLargeNegEnabledFlag | ✅ |
+| LAST_UPDATE_DATE | NegotiationStyleLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | NegotiationStyleLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | NegotiationStyleLastUpdatedBy | ✅ |
+| LINE_ATTRIBUTE_ENABLED_FLAG | NegotiationStyleLineAttributeEnabledFlag | ✅ |
+| LINE_MAS_ENABLED_FLAG | NegotiationStyleLineMasEnabledFlag | ✅ |
+| LINES_INSTR_ENABLED_FLAG | NegotiationStyleLinesInstrEnabledFlag | ✅ |
+| LOT_ENABLED_FLAG | NegotiationStyleLotEnabledFlag | ✅ |
+| NEG_TEAM_ENABLED_FLAG | NegotiationStyleNegTeamEnabledFlag | ✅ |
+| OBJECT_VERSION_NUMBER | NegotiationStyleObjectVersionNumber | ✅ |
+| POWER_BIDDING_ENABLED_FLAG | NegotiationStylePowerBiddingEnabledFlag | ✅ |
+| PRICE_ELEMENT_ENABLED_FLAG | NegotiationStylePriceElementEnabledFlag | ✅ |
+| PROXY_BIDDING_ENABLED_FLAG | NegotiationStyleProxyBiddingEnabledFlag | ✅ |
+| QTY_PRICE_TIERS_ENABLED_FLAG | NegotiationStyleQtyPriceTiersEnabledFlag | ✅ |
+| REQMNTS_INSTR_ENABLED_FLAG | NegotiationStyleReqmntsInstrEnabledFlag | ✅ |
+| RFI_LINE_ENABLED_FLAG | NegotiationStyleRfiLineEnabledFlag | ✅ |
+| STAG_CLOSE_ENABLED_FLAG | NegotiationStyleStagCloseEnabledFlag | ✅ |
+| STATUS | NegotiationStyleStatus | ✅ |
+| STYLE_ID | NegotiationStyleStyleId | ✅ |
+| SYSTEM_FLAG | NegotiationStyleSystemFlag | ✅ |
+| TEAM_SCORING_ENABLED_FLAG | NegotiationStyleTeamScoringEnabledFlag | ✅ |
+| TERMS_INSTR_ENABLED_FLAG | NegotiationStyleTermsInstrEnabledFlag | ✅ |
+| TWOSTAGE_EVAL_ENABLED_FLAG | NegotiationStyleTwostageEvalEnabledFlag | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — Sourcing Tables](https://docs.oracle.com/en/cloud/saas/procurement/25a/oedmf/pon-tables.html)

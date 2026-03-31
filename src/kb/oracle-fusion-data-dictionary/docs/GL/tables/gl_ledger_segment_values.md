@@ -138,6 +138,19 @@ WHERE  lsv.SEGMENT_VALUE = :p_segment_value
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[balancepvo|BalancePVO]] (GL)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| LEDGER_ID | LedgerSegValLedgerId | — |
+| LEGAL_ENTITY_ID | LedgerSegValLegalEntityId | — |
+| SEGMENT_TYPE_CODE | LedgerSegValSegmentTypeCode | — |
+| SEGMENT_VALUE | LedgerSegValSegmentValue | — |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — GL_LEDGER_SEGMENT_VALUES](https://docs.oracle.com/en/cloud/saas/financials/25a/oedmf/glledgersegmentvalues.html)

@@ -59,3 +59,65 @@ updated_at: 2026-03-26
 ## 📎 Uso Típico
 
 (a ser preenchido na etapa 03)
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[invoicelinepvo|InvoiceLinePVO]] (AP · BICC: 1/3)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| LANGUAGE | WhtTaxesTLLanguage | — |
+| TAX_FULL_NAME | WhtTaxesTaxFullName | ✅ |
+| TAX_ID | WhtTaxesTLTaxId | — |
+
+### [[transactiontaxextractpvo|TransactionTaxExtractPVO]] (OTHER · BICC: 9/9)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | TransactionTaxTLCreatedBy | ✅ |
+| CREATION_DATE | TransactionTaxTLCreationDate | ✅ |
+| LANGUAGE | TransactionTaxTLLanguage | ✅ |
+| LAST_UPDATE_DATE | TransactionTaxTLLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | TransactionTaxTLLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | TransactionTaxTLLastUpdatedBy | ✅ |
+| SOURCE_LANG | TransactionTaxTLSourceLang | ✅ |
+| TAX_FULL_NAME | TransactionTaxTLTaxFullName | ✅ |
+| TAX_ID | TransactionTaxTLTaxId | ✅ |
+
+### [[transactiontaxtlextractpvo|TransactionTaxTLExtractPVO]] (OTHER · BICC: 9/9)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | TransactionTaxTLCreatedBy | ✅ |
+| CREATION_DATE | TransactionTaxTLCreationDate | ✅ |
+| LANGUAGE | TransactionTaxTLLanguage | ✅ |
+| LAST_UPDATE_DATE | TransactionTaxTLLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | TransactionTaxTLLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | TransactionTaxTLLastUpdatedBy | ✅ |
+| SOURCE_LANG | TransactionTaxTLSourceLang | ✅ |
+| TAX_FULL_NAME | TransactionTaxTLTaxFullName | ✅ |
+| TAX_ID | TransactionTaxTLTaxId | ✅ |
+
+### [[transactiontaxtranslationpvo|TransactionTaxTranslationPVO]] (AP · BICC: 4/9)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | TransactionTaxTLPEOCreatedBy | — |
+| CREATION_DATE | TransactionTaxTLPEOCreationDate | — |
+| LANGUAGE | Language | ✅ |
+| LAST_UPDATE_DATE | TransactionTaxTLPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | TransactionTaxTLPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | TransactionTaxTLPEOLastUpdatedBy | — |
+| SOURCE_LANG | TransactionTaxTLPEOSourceLang | — |
+| TAX_FULL_NAME | TransactionTaxTLPEOTaxFullName | ✅ |
+| TAX_ID | TaxId | ✅ |
+
+### [[withholdingbucketpvo|WithholdingBucketPVO]] (AP · BICC: 1/3)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| LANGUAGE | TaxesTLLanguage | — |
+| TAX_FULL_NAME | TaxesTaxFullName | ✅ |
+| TAX_ID | TaxesTLTaxId | — |

@@ -104,3 +104,109 @@ WHERE  rp.REQUISITION_ID = :p_id AND rp.POSTING_STATUS = 'ACTIVE';
 
 - [Oracle Docs -- IRC_JD_REQ_POSTINGS](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/ircjdreqpostings.html)
 - [[hcm-module-data-dictionary]] -- Dossie do modulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[jobposthistorypvo|JobPostHistoryPVO]] (HCM · BICC: 10/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | PostingPEOCreatedBy | ✅ |
+| CREATION_DATE | PostingPEOCreationDate | ✅ |
+| JD_ERROR_DESC | PostingPEOJdErrorDesc | ✅ |
+| LAST_UPDATE_DATE | PostingPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | PostingPEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | PostingPEOLastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | PostingPEOObjectVersionNumber | — |
+| POSTED_BY | PostingPEOPostedBy | ✅ |
+| POSTED_DATE | PostingPEOPostedDate | ✅ |
+| POSTING_ID | PostingPEOPostingId | — |
+| PROVISIONING_ID | PostingPEOProvisioningId | ✅ |
+| REQUISITION_ID | PostingPEORequisitionId | ✅ |
+
+### [[jobposthistoryviewallpvo|JobPostHistoryViewAllPVO]] (HCM · BICC: 10/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | PostingPEOCreatedBy | ✅ |
+| CREATION_DATE | PostingPEOCreationDate | ✅ |
+| JD_ERROR_DESC | PostingPEOJdErrorDesc | ✅ |
+| LAST_UPDATE_DATE | PostingPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | PostingPEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | PostingPEOLastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | PostingPEOObjectVersionNumber | — |
+| POSTED_BY | PostingPEOPostedBy | ✅ |
+| POSTED_DATE | PostingPEOPostedDate | ✅ |
+| POSTING_ID | PostingPEOPostingId | — |
+| PROVISIONING_ID | PostingPEOProvisioningId | ✅ |
+| REQUISITION_ID | PostingPEORequisitionId | ✅ |
+
+### [[jobpostingpvo|JobPostingPVO]] (HCM · BICC: 11/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | PostingPEOCreatedBy | ✅ |
+| CREATION_DATE | PostingPEOCreationDate | ✅ |
+| JD_ERROR_DESC | PostingPEOJdErrorDesc | ✅ |
+| LAST_UPDATE_DATE | PostingPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | PostingPEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | PostingPEOLastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | PostingPEOObjectVersionNumber | — |
+| POSTED_BY | PostingPEOPostedBy | ✅ |
+| POSTED_DATE | PostingPEOPostedDate | ✅ |
+| POSTING_ID | PostingId | ✅ |
+| PROVISIONING_ID | PostingPEOProvisioningId | ✅ |
+| REQUISITION_ID | PostingPEORequisitionId | ✅ |
+
+### [[jobpostingviewallpvo|JobPostingViewAllPVO]] (HCM · BICC: 11/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | PostingPEOCreatedBy | ✅ |
+| CREATION_DATE | PostingPEOCreationDate | ✅ |
+| JD_ERROR_DESC | PostingPEOJdErrorDesc | ✅ |
+| LAST_UPDATE_DATE | PostingPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | PostingPEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | PostingPEOLastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | PostingPEOObjectVersionNumber | — |
+| POSTED_BY | PostingPEOPostedBy | ✅ |
+| POSTED_DATE | PostingPEOPostedDate | ✅ |
+| POSTING_ID | PostingId | ✅ |
+| PROVISIONING_ID | PostingPEOProvisioningId | ✅ |
+| REQUISITION_ID | PostingPEORequisitionId | ✅ |
+
+### [[jobpostresultpvo|JobPostResultPVO]] (HCM · BICC: 10/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | PostingPEOCreatedBy | ✅ |
+| CREATION_DATE | PostingPEOCreationDate | ✅ |
+| JD_ERROR_DESC | PostingPEOJdErrorDesc | ✅ |
+| LAST_UPDATE_DATE | PostingPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | PostingPEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | PostingPEOLastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | PostingPEOObjectVersionNumber | — |
+| POSTED_BY | PostingPEOPostedBy | ✅ |
+| POSTED_DATE | PostingPEOPostedDate | ✅ |
+| POSTING_ID | PostingPEOPostingId | — |
+| PROVISIONING_ID | PostingPEOProvisioningId | ✅ |
+| REQUISITION_ID | PostingPEORequisitionId | ✅ |
+
+### [[jobpostresultviewallpvo|JobPostResultViewAllPVO]] (HCM · BICC: 10/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | PostingPEOCreatedBy | ✅ |
+| CREATION_DATE | PostingPEOCreationDate | ✅ |
+| JD_ERROR_DESC | PostingPEOJdErrorDesc | ✅ |
+| LAST_UPDATE_DATE | PostingPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | PostingPEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | PostingPEOLastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | PostingPEOObjectVersionNumber | — |
+| POSTED_BY | PostingPEOPostedBy | ✅ |
+| POSTED_DATE | PostingPEOPostedDate | ✅ |
+| POSTING_ID | PostingPEOPostingId | — |
+| PROVISIONING_ID | PostingPEOProvisioningId | ✅ |
+| REQUISITION_ID | PostingPEORequisitionId | ✅ |

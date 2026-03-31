@@ -111,3 +111,37 @@ WHERE  tl.TCLAYFLD_DEFN_ID = :p_defn_id;
 
 - [Oracle Docs — HXT_TCLAYFLD_DEFNS_TL](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/hxttclayflddefnstl.html)
 - [[hcm-module-data-dictionary]] — Dossie do modulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[templatelayoutcompdisplayvaluepvo|TemplateLayoutCompDisplayValuePVO]] (GL · BICC: 3/5)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| DESCRIPTION | TclayfldTLPEODescription | ✅ |
+| LABEL | TclayfldTLPEOLabel | ✅ |
+| LANGUAGE | TclayfldTLPEOLanguage | — |
+| NAME | TclayfldTLPEOName | ✅ |
+| TCLAYFLD_DEFNS_ID | TclayfldTLPEOTclayfldDefnsId | — |
+
+### [[templatelayoutcomponentpvo|TemplateLayoutComponentPVO]] (GL · BICC: 3/5)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| DESCRIPTION | TclayfldTLPEODescription | ✅ |
+| LABEL | TclayfldTLPEOLabel | ✅ |
+| LANGUAGE | TclayfldTLPEOLanguage | — |
+| NAME | TclayfldTLPEOName | ✅ |
+| TCLAYFLD_DEFNS_ID | TclayfldTLPEOTclayfldDefnsId | — |
+
+### [[timecardlayoutcomppvo|TimecardLayoutCompPVO]] (GL · BICC: 3/5)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| DESCRIPTION | TclayfldTLPEODescription | ✅ |
+| LABEL | TclayfldTLPEOLabel | ✅ |
+| LANGUAGE | TclayfldTLPEOLanguage | — |
+| NAME | TclayfldTLPEOName | ✅ |
+| TCLAYFLD_DEFNS_ID | TclayfldTLPEOTclayfldDefnsId | — |

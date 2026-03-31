@@ -117,3 +117,23 @@ ORDER BY pb.DISPLAY_SEQUENCE;
 
 - [Oracle Docs — IRC_AF_PAGE_BLOCKS_B](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/ircafpageblocksb.html)
 - [[hcm-module-data-dictionary]] — Dossie do modulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[applyflowpageblockpvo|ApplyFlowPageBlockPVO]] (HCM · BICC: 3/11)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BLOCK_ID | ApplyFlowPageBlockBPEOBlockId | — |
+| CREATED_BY | CreatedBy | — |
+| CREATION_DATE | CreationDate | — |
+| HIDE_IN_MOBILE_FLAG | HideInMobileFlag | — |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | — |
+| LAST_UPDATED_BY | LastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | — |
+| PAGE_BLOCK_ID | PageBlockId | ✅ |
+| PAGE_BLOCK_SEQ_NUM | PageBlockSeqNum | ✅ |
+| PAGE_ID | ApplyFlowPageBlockBPEOPageId | — |

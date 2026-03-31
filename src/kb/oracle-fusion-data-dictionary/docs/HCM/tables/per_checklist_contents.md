@@ -99,6 +99,164 @@ WHERE  pcc.CHECKLIST_ID = :p_checklist_id;
 - Permite definir links para portais, documentos e vídeos de treinamento.
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[checklisttasktemplatepvo|ChecklistTaskTemplatePVO]] (HCM · BICC: 12/72)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CHECKLIST_CONTENT_ID | ChecklistContentsPEO1ChecklistContentId | — |
+| CHECKLIST_CONTENT_ID | ChecklistContentsPEO2ChecklistContentId | — |
+| CHECKLIST_CONTENT_ID | ChecklistContentsPEO3ChecklistContentId | — |
+| CHECKLIST_CONTENT_ID | ChecklistContentsPEO4ChecklistContentId | — |
+| CHECKLIST_CONTENT_ID | ChecklistContentsPEO5ChecklistContentId | — |
+| CHECKLIST_CONTENT_ID | ChecklistContentsPEOChecklistContentId | — |
+| CHECKLIST_ID | ChecklistContentsPEO1ChecklistId | — |
+| CHECKLIST_ID | ChecklistContentsPEO2ChecklistId | — |
+| CHECKLIST_ID | ChecklistContentsPEO3ChecklistId | — |
+| CHECKLIST_ID | ChecklistContentsPEO4ChecklistId | — |
+| CHECKLIST_ID | ChecklistContentsPEO5ChecklistId | — |
+| CHECKLIST_ID | ChecklistContentsPEOChecklistId | — |
+| CHK_CONTENT_DEFN_ID | ChecklistContentsPEO1ChkContentDefnId | — |
+| CHK_CONTENT_DEFN_ID | ChecklistContentsPEO2ChkContentDefnId | — |
+| CHK_CONTENT_DEFN_ID | ChecklistContentsPEO3ChkContentDefnId | — |
+| CHK_CONTENT_DEFN_ID | ChecklistContentsPEO4ChkContentDefnId | — |
+| CHK_CONTENT_DEFN_ID | ChecklistContentsPEO5ChkContentDefnId | — |
+| CHK_CONTENT_DEFN_ID | ChecklistContentsPEOChkContentDefnId | — |
+| CONTENT_TYPE | ChecklistContentsPEO1ContentType | ✅ |
+| CONTENT_TYPE | ChecklistContentsPEO2ContentType | ✅ |
+| CONTENT_TYPE | ChecklistContentsPEO3ContentType | ✅ |
+| CONTENT_TYPE | ChecklistContentsPEO4ContentType | ✅ |
+| CONTENT_TYPE | ChecklistContentsPEO5ContentType | ✅ |
+| CONTENT_TYPE | ChecklistContentsPEOContentType | ✅ |
+| CREATED_BY | ChecklistContentsPEO1CreatedBy | — |
+| CREATED_BY | ChecklistContentsPEO2CreatedBy | — |
+| CREATED_BY | ChecklistContentsPEO3CreatedBy | — |
+| CREATED_BY | ChecklistContentsPEO4CreatedBy | — |
+| CREATED_BY | ChecklistContentsPEO5CreatedBy | — |
+| CREATED_BY | ChecklistContentsPEOCreatedBy | — |
+| CREATION_DATE | ChecklistContentsPEO1CreationDate | — |
+| CREATION_DATE | ChecklistContentsPEO2CreationDate | — |
+| CREATION_DATE | ChecklistContentsPEO3CreationDate | — |
+| CREATION_DATE | ChecklistContentsPEO4CreationDate | — |
+| CREATION_DATE | ChecklistContentsPEO5CreationDate | — |
+| CREATION_DATE | ChecklistContentsPEOCreationDate | — |
+| ENTERPRISE_ID | ChecklistContentsPEO1EnterpriseId | — |
+| ENTERPRISE_ID | ChecklistContentsPEO2EnterpriseId | — |
+| ENTERPRISE_ID | ChecklistContentsPEO3EnterpriseId | — |
+| ENTERPRISE_ID | ChecklistContentsPEO4EnterpriseId | — |
+| ENTERPRISE_ID | ChecklistContentsPEO5EnterpriseId | — |
+| ENTERPRISE_ID | ChecklistContentsPEOEnterpriseId | — |
+| LAST_UPDATE_DATE | ChecklistContentsPEO1LastUpdateDate | — |
+| LAST_UPDATE_DATE | ChecklistContentsPEO2LastUpdateDate | — |
+| LAST_UPDATE_DATE | ChecklistContentsPEO3LastUpdateDate | — |
+| LAST_UPDATE_DATE | ChecklistContentsPEO4LastUpdateDate | — |
+| LAST_UPDATE_DATE | ChecklistContentsPEO5LastUpdateDate | — |
+| LAST_UPDATE_DATE | ChecklistContentsPEOLastUpdateDate | — |
+| LAST_UPDATE_LOGIN | ChecklistContentsPEO1LastUpdateLogin | — |
+| LAST_UPDATE_LOGIN | ChecklistContentsPEO2LastUpdateLogin | — |
+| LAST_UPDATE_LOGIN | ChecklistContentsPEO3LastUpdateLogin | — |
+| LAST_UPDATE_LOGIN | ChecklistContentsPEO4LastUpdateLogin | — |
+| LAST_UPDATE_LOGIN | ChecklistContentsPEO5LastUpdateLogin | — |
+| LAST_UPDATE_LOGIN | ChecklistContentsPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | ChecklistContentsPEO1LastUpdatedBy | — |
+| LAST_UPDATED_BY | ChecklistContentsPEO2LastUpdatedBy | — |
+| LAST_UPDATED_BY | ChecklistContentsPEO3LastUpdatedBy | — |
+| LAST_UPDATED_BY | ChecklistContentsPEO4LastUpdatedBy | — |
+| LAST_UPDATED_BY | ChecklistContentsPEO5LastUpdatedBy | — |
+| LAST_UPDATED_BY | ChecklistContentsPEOLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | ChecklistContentsPEO1ObjectVersionNumber | — |
+| OBJECT_VERSION_NUMBER | ChecklistContentsPEO2ObjectVersionNumber | — |
+| OBJECT_VERSION_NUMBER | ChecklistContentsPEO3ObjectVersionNumber | — |
+| OBJECT_VERSION_NUMBER | ChecklistContentsPEO4ObjectVersionNumber | — |
+| OBJECT_VERSION_NUMBER | ChecklistContentsPEO5ObjectVersionNumber | — |
+| OBJECT_VERSION_NUMBER | ChecklistContentsPEOObjectVersionNumber | — |
+| SEQUENCE | ChecklistContentsPEO1Sequence | ✅ |
+| SEQUENCE | ChecklistContentsPEO2Sequence | ✅ |
+| SEQUENCE | ChecklistContentsPEO3Sequence | ✅ |
+| SEQUENCE | ChecklistContentsPEO4Sequence | ✅ |
+| SEQUENCE | ChecklistContentsPEO5Sequence | ✅ |
+| SEQUENCE | ChecklistContentsPEOSequence | ✅ |
+
+### [[checklisttemplatepvo|ChecklistTemplatePVO]] (HCM · BICC: 12/72)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CHECKLIST_CONTENT_ID | ChecklistContentsPEO1ChecklistContentId | — |
+| CHECKLIST_CONTENT_ID | ChecklistContentsPEO2ChecklistContentId | — |
+| CHECKLIST_CONTENT_ID | ChecklistContentsPEO3ChecklistContentId | — |
+| CHECKLIST_CONTENT_ID | ChecklistContentsPEO4ChecklistContentId | — |
+| CHECKLIST_CONTENT_ID | ChecklistContentsPEO5ChecklistContentId | — |
+| CHECKLIST_CONTENT_ID | ChecklistContentsPEOChecklistContentId | — |
+| CHECKLIST_ID | ChecklistContentsPEO1ChecklistId | — |
+| CHECKLIST_ID | ChecklistContentsPEO2ChecklistId | — |
+| CHECKLIST_ID | ChecklistContentsPEO3ChecklistId | — |
+| CHECKLIST_ID | ChecklistContentsPEO4ChecklistId | — |
+| CHECKLIST_ID | ChecklistContentsPEO5ChecklistId | — |
+| CHECKLIST_ID | ChecklistContentsPEOChecklistId | — |
+| CHK_CONTENT_DEFN_ID | ChecklistContentsPEO1ChkContentDefnId | — |
+| CHK_CONTENT_DEFN_ID | ChecklistContentsPEO2ChkContentDefnId | — |
+| CHK_CONTENT_DEFN_ID | ChecklistContentsPEO3ChkContentDefnId | — |
+| CHK_CONTENT_DEFN_ID | ChecklistContentsPEO4ChkContentDefnId | — |
+| CHK_CONTENT_DEFN_ID | ChecklistContentsPEO5ChkContentDefnId | — |
+| CHK_CONTENT_DEFN_ID | ChecklistContentsPEOChkContentDefnId | — |
+| CONTENT_TYPE | ChecklistContentsPEO1ContentType | ✅ |
+| CONTENT_TYPE | ChecklistContentsPEO2ContentType | ✅ |
+| CONTENT_TYPE | ChecklistContentsPEO3ContentType | ✅ |
+| CONTENT_TYPE | ChecklistContentsPEO4ContentType | ✅ |
+| CONTENT_TYPE | ChecklistContentsPEO5ContentType | ✅ |
+| CONTENT_TYPE | ChecklistContentsPEOContentType | ✅ |
+| CREATED_BY | ChecklistContentsPEO1CreatedBy | — |
+| CREATED_BY | ChecklistContentsPEO2CreatedBy | — |
+| CREATED_BY | ChecklistContentsPEO3CreatedBy | — |
+| CREATED_BY | ChecklistContentsPEO4CreatedBy | — |
+| CREATED_BY | ChecklistContentsPEO5CreatedBy | — |
+| CREATED_BY | ChecklistContentsPEOCreatedBy | — |
+| CREATION_DATE | ChecklistContentsPEO1CreationDate | — |
+| CREATION_DATE | ChecklistContentsPEO2CreationDate | — |
+| CREATION_DATE | ChecklistContentsPEO3CreationDate | — |
+| CREATION_DATE | ChecklistContentsPEO4CreationDate | — |
+| CREATION_DATE | ChecklistContentsPEO5CreationDate | — |
+| CREATION_DATE | ChecklistContentsPEOCreationDate | — |
+| ENTERPRISE_ID | ChecklistContentsPEO1EnterpriseId | — |
+| ENTERPRISE_ID | ChecklistContentsPEO2EnterpriseId | — |
+| ENTERPRISE_ID | ChecklistContentsPEO3EnterpriseId | — |
+| ENTERPRISE_ID | ChecklistContentsPEO4EnterpriseId | — |
+| ENTERPRISE_ID | ChecklistContentsPEO5EnterpriseId | — |
+| ENTERPRISE_ID | ChecklistContentsPEOEnterpriseId | — |
+| LAST_UPDATE_DATE | ChecklistContentsPEO1LastUpdateDate | — |
+| LAST_UPDATE_DATE | ChecklistContentsPEO2LastUpdateDate | — |
+| LAST_UPDATE_DATE | ChecklistContentsPEO3LastUpdateDate | — |
+| LAST_UPDATE_DATE | ChecklistContentsPEO4LastUpdateDate | — |
+| LAST_UPDATE_DATE | ChecklistContentsPEO5LastUpdateDate | — |
+| LAST_UPDATE_DATE | ChecklistContentsPEOLastUpdateDate | — |
+| LAST_UPDATE_LOGIN | ChecklistContentsPEO1LastUpdateLogin | — |
+| LAST_UPDATE_LOGIN | ChecklistContentsPEO2LastUpdateLogin | — |
+| LAST_UPDATE_LOGIN | ChecklistContentsPEO3LastUpdateLogin | — |
+| LAST_UPDATE_LOGIN | ChecklistContentsPEO4LastUpdateLogin | — |
+| LAST_UPDATE_LOGIN | ChecklistContentsPEO5LastUpdateLogin | — |
+| LAST_UPDATE_LOGIN | ChecklistContentsPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | ChecklistContentsPEO1LastUpdatedBy | — |
+| LAST_UPDATED_BY | ChecklistContentsPEO2LastUpdatedBy | — |
+| LAST_UPDATED_BY | ChecklistContentsPEO3LastUpdatedBy | — |
+| LAST_UPDATED_BY | ChecklistContentsPEO4LastUpdatedBy | — |
+| LAST_UPDATED_BY | ChecklistContentsPEO5LastUpdatedBy | — |
+| LAST_UPDATED_BY | ChecklistContentsPEOLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | ChecklistContentsPEO1ObjectVersionNumber | — |
+| OBJECT_VERSION_NUMBER | ChecklistContentsPEO2ObjectVersionNumber | — |
+| OBJECT_VERSION_NUMBER | ChecklistContentsPEO3ObjectVersionNumber | — |
+| OBJECT_VERSION_NUMBER | ChecklistContentsPEO4ObjectVersionNumber | — |
+| OBJECT_VERSION_NUMBER | ChecklistContentsPEO5ObjectVersionNumber | — |
+| OBJECT_VERSION_NUMBER | ChecklistContentsPEOObjectVersionNumber | — |
+| SEQUENCE | ChecklistContentsPEO1Sequence | ✅ |
+| SEQUENCE | ChecklistContentsPEO2Sequence | ✅ |
+| SEQUENCE | ChecklistContentsPEO3Sequence | ✅ |
+| SEQUENCE | ChecklistContentsPEO4Sequence | ✅ |
+| SEQUENCE | ChecklistContentsPEO5Sequence | ✅ |
+| SEQUENCE | ChecklistContentsPEOSequence | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — PER_CHECKLIST_CONTENTS](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/perchecklistcontents.html)

@@ -117,6 +117,28 @@ WHERE  bac.ACTION_CODE = 'REJECT'
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[supplierapprovalhistorypvo|SupplierApprovalHistoryPVO]] (PO)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_SEQ_NUM | SuppApprUserCommentsActionSeqNum | — |
+| AMX_IDENTIFICATION_KEY | SuppApprUserCommentsAmxIdentificationKey | — |
+| LATEST_COMMENT | SuppApprUserCommentsLatestComment | — |
+| PERFORMER_ID | SuppApprUserCommentsPerformerId | — |
+
+### [[supplierprofilechangeapprovalhistorypvo|SupplierProfileChangeApprovalHistoryPVO]] (PO)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_SEQ_NUM | ApprovalUserCommentPEOActionSeqNum | — |
+| AMX_IDENTIFICATION_KEY | ApprovalUserCommentPEOAmxIdentificationKey | — |
+| LATEST_COMMENT | ApprovalUserCommentPEOLatestComment | — |
+| PERFORMER_ID | ApprovalUserCommentPEOPerformerId | — |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — POZ BI Views](https://docs.oracle.com/en/cloud/saas/procurement/25a/oedmf/poztables.html)

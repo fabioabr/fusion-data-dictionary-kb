@@ -102,6 +102,67 @@ WHERE  tl.LANGUAGE = 'PTB';
 - Tabela de traduções (_TL) — chave composta por `ALLOCATED_TASK_ID` + `LANGUAGE`.
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[allocatechecklisttasktranslation|AllocateChecklistTaskTranslation]] (HCM · BICC: 26/26)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_URL | ActionUrl | ✅ |
+| ACTIVITY_ACTION1_LABEL | ActivityAction1Label | ✅ |
+| ACTIVITY_ACTION2_LABEL | ActivityAction2Label | ✅ |
+| ACTIVITY_ACTION3_LABEL | ActivityAction3Label | ✅ |
+| ACTIVITY_ACTION4_LABEL | ActivityAction4Label | ✅ |
+| ACTIVITY_ACTION5_LABEL | ActivityAction5Label | ✅ |
+| ALLOCATED_TASK_ID | AllocatedTaskId | ✅ |
+| BUSINESS_GROUP_ID | BusinessGroupId | ✅ |
+| CALENDAR_ACTION_LABEL | CalendarActionLabel | ✅ |
+| COMPLETE_ACTION_LABEL | CompleteActionLabel | ✅ |
+| CREATED_BY | CreatedBy | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| DESCRIPTION | Description | ✅ |
+| LANGUAGE | Language | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | LastUpdatedBy | ✅ |
+| MEETING_LOCATION | MeetingLocation | ✅ |
+| NOTE_TITLE | NoteTitle | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | ✅ |
+| REJECT_ACTION_LABEL | RejectActionLabel | ✅ |
+| SAVE_ACTION_LABEL | SaveActionLabel | ✅ |
+| SOURCE_LANG | SourceLang | ✅ |
+| TASK_DETAILS | TaskDetails | ✅ |
+| TASK_NAME | TaskName | ✅ |
+| USER_DISPLAY_NAME | UserDisplayName | ✅ |
+
+### [[allocatedchecklisttaskspvo|AllocatedChecklistTasksPVO]] (HCM · BICC: 6/21)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_URL | AllocateChecklistTaskTemplatActionUrl | — |
+| ACTION_URL | AllocatedChecklistTasksPEOActionUrl | ✅ |
+| ALLOCATED_TASK_ID | AllocateChecklistTaskTemplat1AllocatedTaskId1 | — |
+| ALLOCATED_TASK_ID | AllocateChecklistTaskTemplatAllocatedTaskId | — |
+| BUSINESS_GROUP_ID | AllocateChecklistTaskTemplatBusinessGroupId | — |
+| CREATED_BY | AllocateChecklistTaskTemplatCreatedBy | — |
+| CREATION_DATE | AllocateChecklistTaskTemplatCreationDate | — |
+| DESCRIPTION | AllocateChecklistTaskTemplatDescription | — |
+| DESCRIPTION | AllocatedChecklistTasksPEODescription | ✅ |
+| LANGUAGE | AllocateChecklistTaskTemplat1Language | — |
+| LANGUAGE | AllocateChecklistTaskTemplatLanguage | — |
+| LAST_UPDATE_DATE | AllocateChecklistTaskTemplatLastUpdateDate | — |
+| LAST_UPDATE_LOGIN | AllocateChecklistTaskTemplatLastUpdateLogin | — |
+| LAST_UPDATED_BY | AllocateChecklistTaskTemplatLastUpdatedBy | — |
+| MEETING_LOCATION | AllocateChecklistTaskTemplatMeetingLocation | ✅ |
+| OBJECT_VERSION_NUMBER | AllocateChecklistTaskTemplatObjectVersionNumber | — |
+| SOURCE_LANG | AllocateChecklistTaskTemplatSourceLang | — |
+| TASK_DETAILS | AllocateChecklistTaskTemplatTaskDetails | ✅ |
+| TASK_NAME | AllocateChecklistTaskTemplat1PredecessorTaskName | ✅ |
+| TASK_NAME | AllocateChecklistTaskTemplatTaskName | — |
+| TASK_NAME | AllocatedChecklistTasksPEOTaskName | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — PER_ALLOCATED_TASKS_TL](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/perallocatedtaskstl.html)

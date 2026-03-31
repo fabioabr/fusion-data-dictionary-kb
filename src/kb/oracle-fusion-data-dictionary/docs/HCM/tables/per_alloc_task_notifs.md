@@ -104,6 +104,67 @@ ORDER BY ptn.NOTIFICATION_DATE DESC;
 - Serve como evidência de comunicação para auditorias de compliance.
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[allocatedchecklisttaskspvo|AllocatedChecklistTasksPVO]] (HCM · BICC: 12/52)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ALLOC_TASK_NOTIFICATION_ID | AllocatedTaskNotificationPEO1AllocTaskNotificationId | — |
+| ALLOC_TASK_NOTIFICATION_ID | AllocatedTaskNotificationPEO2AllocTaskNotificationId | — |
+| ALLOC_TASK_NOTIFICATION_ID | AllocatedTaskNotificationPEO3AllocTaskNotificationId | — |
+| ALLOC_TASK_NOTIFICATION_ID | AllocatedTaskNotificationPEOAllocTaskNotificationId | — |
+| ALLOCATED_TASK_ID | AllocatedTaskNotificationPEO1AllocatedTaskId | — |
+| ALLOCATED_TASK_ID | AllocatedTaskNotificationPEO2AllocatedTaskId | — |
+| ALLOCATED_TASK_ID | AllocatedTaskNotificationPEO3AllocatedTaskId | — |
+| ALLOCATED_TASK_ID | AllocatedTaskNotificationPEOAllocatedTaskId | — |
+| CREATED_BY | AllocatedTaskNotificationPEO1CreatedBy | — |
+| CREATED_BY | AllocatedTaskNotificationPEO2CreatedBy | — |
+| CREATED_BY | AllocatedTaskNotificationPEO3CreatedBy | — |
+| CREATED_BY | AllocatedTaskNotificationPEOCreatedBy | — |
+| CREATION_DATE | AllocatedTaskNotificationPEO1CreationDate | — |
+| CREATION_DATE | AllocatedTaskNotificationPEO2CreationDate | — |
+| CREATION_DATE | AllocatedTaskNotificationPEO3CreationDate | — |
+| CREATION_DATE | AllocatedTaskNotificationPEOCreationDate | — |
+| ENTERPRISE_ID | AllocatedTaskNotificationPEO1EnterpriseId | — |
+| ENTERPRISE_ID | AllocatedTaskNotificationPEO2EnterpriseId | — |
+| ENTERPRISE_ID | AllocatedTaskNotificationPEO3EnterpriseId | — |
+| ENTERPRISE_ID | AllocatedTaskNotificationPEOEnterpriseId | — |
+| LAST_UPDATE_DATE | AllocatedTaskNotificationPEO1LastUpdateDate | — |
+| LAST_UPDATE_DATE | AllocatedTaskNotificationPEO2LastUpdateDate | — |
+| LAST_UPDATE_DATE | AllocatedTaskNotificationPEO3LastUpdateDate | — |
+| LAST_UPDATE_DATE | AllocatedTaskNotificationPEOLastUpdateDate | — |
+| LAST_UPDATE_LOGIN | AllocatedTaskNotificationPEO1LastUpdateLogin | — |
+| LAST_UPDATE_LOGIN | AllocatedTaskNotificationPEO2LastUpdateLogin | — |
+| LAST_UPDATE_LOGIN | AllocatedTaskNotificationPEO3LastUpdateLogin | — |
+| LAST_UPDATE_LOGIN | AllocatedTaskNotificationPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | AllocatedTaskNotificationPEO1LastUpdatedBy | — |
+| LAST_UPDATED_BY | AllocatedTaskNotificationPEO2LastUpdatedBy | — |
+| LAST_UPDATED_BY | AllocatedTaskNotificationPEO3LastUpdatedBy | — |
+| LAST_UPDATED_BY | AllocatedTaskNotificationPEOLastUpdatedBy | — |
+| NOTIFY_OWNER | AllocatedTaskNotificationPEO1NotifyOwner | ✅ |
+| NOTIFY_OWNER | AllocatedTaskNotificationPEO2NotifyOwner | ✅ |
+| NOTIFY_OWNER | AllocatedTaskNotificationPEO3NotifyOwner | ✅ |
+| NOTIFY_OWNER | AllocatedTaskNotificationPEONotifyOwner | ✅ |
+| NOTIFY_PERFORMER | AllocatedTaskNotificationPEO1NotifyPerformer | ✅ |
+| NOTIFY_PERFORMER | AllocatedTaskNotificationPEO2NotifyPerformer | ✅ |
+| NOTIFY_PERFORMER | AllocatedTaskNotificationPEO3NotifyPerformer | ✅ |
+| NOTIFY_PERFORMER | AllocatedTaskNotificationPEONotifyPerformer | ✅ |
+| OBJECT_VERSION_NUMBER | AllocatedTaskNotificationPEO1ObjectVersionNumber | — |
+| OBJECT_VERSION_NUMBER | AllocatedTaskNotificationPEO2ObjectVersionNumber | — |
+| OBJECT_VERSION_NUMBER | AllocatedTaskNotificationPEO3ObjectVersionNumber | — |
+| OBJECT_VERSION_NUMBER | AllocatedTaskNotificationPEOObjectVersionNumber | — |
+| TASK_EVENT | AllocatedTaskNotificationPEO1TaskEvent | ✅ |
+| TASK_EVENT | AllocatedTaskNotificationPEO2TaskEvent | ✅ |
+| TASK_EVENT | AllocatedTaskNotificationPEO3TaskEvent | ✅ |
+| TASK_EVENT | AllocatedTaskNotificationPEOTaskEvent | ✅ |
+| TASK_NOTIFICATION_ID | AllocatedTaskNotificationPEO1TaskNotificationId | — |
+| TASK_NOTIFICATION_ID | AllocatedTaskNotificationPEO2TaskNotificationId | — |
+| TASK_NOTIFICATION_ID | AllocatedTaskNotificationPEO3TaskNotificationId | — |
+| TASK_NOTIFICATION_ID | AllocatedTaskNotificationPEOTaskNotificationId | — |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — PER_ALLOC_TASK_NOTIFS](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/peralloctasknotifs.html)

@@ -98,6 +98,19 @@ WHERE  tl.RUN_TYPE_ID = :p_run_type_id
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[runtypedpvo|RunTypeDPVO]] (HCM · BICC: 3/4)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| LANGUAGE | RunTypeTranslationPEOLanguage | ✅ |
+| RUN_TYPE_ID | RunTypeTranslationPEORunTypeId | — |
+| RUN_TYPE_NAME | RunTypeTranslationPEORunTypeName | ✅ |
+| SOURCE_LANG | RunTypeTranslationPEOSourceLang | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — PAY_RUN_TYPES_TL](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/payruntypestl.html)

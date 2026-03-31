@@ -68,3 +68,30 @@ updated_at: 2026-03-26
 ## 📎 Uso Típico
 
 (a ser preenchido na etapa 03)
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[hcmapprovalstaskattachmentp1|HCMApprovalsTaskAttachmentP1]] (AP · BICC: 7/18)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ATTACHED_BY | FndBpmTaskAttachmentPEOAttachedBy | ✅ |
+| ATTACHED_DATE | FndBpmTaskAttachmentPEOAttachedDate | ✅ |
+| ATTACHMENT_ID | FndBpmTaskAttachmentPEOAttachmentId | ✅ |
+| ATTACHMENT_NAME | FndBpmTaskAttachmentPEOAttachmentName | ✅ |
+| ATTACHMENT_SIZE | FndBpmTaskAttachmentPEOAttachmentSize | — |
+| ATTACHMENT_VERSION | FndBpmTaskAttachmentPEOAttachmentVersion | ✅ |
+| CREATED_BY | FndBpmTaskAttachmentPEOCreatedBy | — |
+| CREATION_DATE | FndBpmTaskAttachmentPEOCreationDate | — |
+| DESCRIPTION | FndBpmTaskAttachmentPEODescription | — |
+| DOMAIN | FndBpmTaskAttachmentPEODomain | — |
+| ENCODING | FndBpmTaskAttachmentPEOEncoding | — |
+| FND_ATTACHMENT_ID | FndBpmTaskAttachmentPEOFndAttachmentId | ✅ |
+| INITIATED_DATE | FndBpmTaskAttachmentPEOInitiatedDate | — |
+| LAST_UPDATE_DATE | FndBpmTaskAttachmentPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | FndBpmTaskAttachmentPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | FndBpmTaskAttachmentPEOLastUpdatedBy | — |
+| ROOT_TASK_ID | FndBpmTaskAttachmentPEORootTaskId | — |
+| TASK_ID | FndBpmTaskAttachmentPEOTaskId | — |

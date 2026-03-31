@@ -101,3 +101,41 @@ SELECT tl.TEMPLATE_NAME FROM IRC_CX_SITE_TEMPLATES_TL tl WHERE tl.LANGUAGE = 'PT
 
 - [Oracle Docs -- IRC_CX_SITE_TEMPLATES_TL](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/irccxsitetemplatestl.html)
 - [[hcm-module-data-dictionary]] -- Dossie do modulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[careersitepagepvo|CareerSitePagePVO]] (HCM · BICC: 1/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | SiteTemplateTranslationPEOCreatedBy | — |
+| CREATION_DATE | SiteTemplateTranslationPEOCreationDate | — |
+| LANGUAGE | SiteTemplateTranslationPEOLanguage | — |
+| LAST_UPDATE_DATE | SiteTemplateTranslationPEOLastUpdateDate | — |
+| LAST_UPDATE_LOGIN | SiteTemplateTranslationPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | SiteTemplateTranslationPEOLastUpdatedBy | — |
+| MAIN_CALL_FOR_ACTION | SiteTemplateTranslationPEOMainCallForAction | — |
+| OBJECT_VERSION_NUMBER | SiteTemplateTranslationPEOObjectVersionNumber | — |
+| SOURCE_LANG | SiteTemplateThemeTranslationPEOSourceLang | — |
+| TEMPLATE_ID | SiteTemplateThemeTranslationPEOTemplateId | — |
+| TEMPLATE_NAME | SiteTemplateThemeTranslationPEOTemplateName | ✅ |
+| WELCOME_TEXT | SiteTemplateThemeTranslationPEOWelcomeText | — |
+
+### [[careersitepvo|CareerSitePVO]] (HCM · BICC: 1/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | SiteTemplateTranslationPEOCreatedBy | — |
+| CREATION_DATE | SiteTemplateTranslationPEOCreationDate | — |
+| LANGUAGE | SiteTemplateTranslationPEOLanguage | — |
+| LAST_UPDATE_DATE | SiteTemplateTranslationPEOLastUpdateDate | — |
+| LAST_UPDATE_LOGIN | SiteTemplateTranslationPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | SiteTemplateTranslationPEOLastUpdatedBy | — |
+| MAIN_CALL_FOR_ACTION | SiteTemplateTranslationPEOMainCallForAction | — |
+| OBJECT_VERSION_NUMBER | SiteTemplateTranslationPEOObjectVersionNumber | — |
+| SOURCE_LANG | SiteTemplateTranslationPEOSourceLang | — |
+| TEMPLATE_ID | SiteTemplateTranslationPEOTemplateId | — |
+| TEMPLATE_NAME | SiteTemplateTranslationPEOTemplateName | ✅ |
+| WELCOME_TEXT | SiteTemplateTranslationPEOWelcomeText | — |

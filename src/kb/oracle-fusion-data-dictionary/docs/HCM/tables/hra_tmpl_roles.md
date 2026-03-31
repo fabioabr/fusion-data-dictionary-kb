@@ -100,6 +100,44 @@ ORDER BY r.SEQUENCE_NUMBER;
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[templateroledefnpvo|TemplateRoleDefnPVO]] (HCM · BICC: 4/11)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | BusinessGroupId | ✅ |
+| CREATED_BY | CreatedBy | — |
+| CREATION_DATE | CreationDate | — |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | — |
+| LAST_UPDATED_BY | LastUpdatedBy | — |
+| MINIMUM_NUM_PCPNS | TemplateRolePEOMinimumNumPcpns | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | — |
+| ROLE_TYPE_CODE | TemplateRolePEORoleTypeCode | — |
+| TEMPLATE_DEFN_ID | TemplateRolePEOTemplateDefnId | — |
+| TMPL_ROLE_ID | TmplRoleId | ✅ |
+
+### [[templateroleextractpvo|TemplateRoleExtractPVO]] (HCM · BICC: 13/13)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | BusinessGroupId | ✅ |
+| CREATED_BY | CreatedBy | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | LastUpdatedBy | ✅ |
+| MINIMUM_NUM_PCPNS | MinimumNumPcpns | ✅ |
+| MODULE_ID | ModuleId | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | ✅ |
+| ROLE_ID | RoleId | ✅ |
+| ROLE_TYPE_CODE | RoleTypeCode | ✅ |
+| TEMPLATE_DEFN_ID | TemplateDefnId | ✅ |
+| TMPL_ROLE_ID | TmplRoleId | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Fusion HCM Tables and Views](https://docs.oracle.com/en/cloud/saas/human-resources/25a/)

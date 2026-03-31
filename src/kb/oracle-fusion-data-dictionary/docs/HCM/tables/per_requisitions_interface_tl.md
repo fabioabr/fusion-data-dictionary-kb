@@ -108,3 +108,23 @@ WHERE  tl.REQUISITION_ID = :p_requisition_id
 
 - [Oracle Docs — PER_REQUISITIONS_INTERFACE_TL](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/perrequisitionsinterfacetl.html)
 - [[hcm-module-data-dictionary]] — Dossiê do módulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[requisitionpvo|RequisitionPVO]] (PO · BICC: 3/11)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | RequisitionTranslationPEOCreatedBy | — |
+| CREATION_DATE | RequisitionTranslationPEOCreationDate | — |
+| ENTERPRISE_ID | RequisitionTranslationPEOEnterpriseId | — |
+| LANGUAGE | RequisitionTranslationPEOLanguage | ✅ |
+| LAST_UPDATE_DATE | RequisitionTranslationPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | RequisitionTranslationPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | RequisitionTranslationPEOLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | RequisitionTranslationPEOObjectVersionNumber | — |
+| REQUISITION_INTERFACE_ID | RequisitionTranslationPEORequisitionInterfaceId | — |
+| REQUISITION_TITLE | RequisitionTranslationPEORequisitionTitle | ✅ |
+| SOURCE_LANG | RequisitionTranslationPEOSourceLang | — |

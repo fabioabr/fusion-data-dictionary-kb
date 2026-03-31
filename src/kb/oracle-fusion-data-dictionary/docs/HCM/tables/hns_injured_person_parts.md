@@ -113,6 +113,26 @@ ORDER BY qtd DESC;
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[hnsinjuredpersonpartspvo|HNSInjuredPersonPartsPVO]] (HCM · BICC: 11/11)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | HNSInjuredPersonPartsPEOCreatedBy | ✅ |
+| CREATION_DATE | HNSInjuredPersonPartsPEOCreationDate | ✅ |
+| DELETED_FLAG | HNSInjuredPersonPartsPEODeletedFlag | ✅ |
+| INJURED_PART_CODE | HNSInjuredPersonPartsPEOInjuredPartCode | ✅ |
+| INJURED_PERSON_ID | HNSInjuredPersonPartsPEOInjuredPersonId | ✅ |
+| INJURED_PERSON_PART_ID | HNSInjuredPersonPartsPEOInjuredPersonPartId | ✅ |
+| INJURY_NATURE_CODE | HNSInjuredPersonPartsPEOInjuryNatureCode | ✅ |
+| LAST_UPDATE_DATE | HNSInjuredPersonPartsPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | HNSInjuredPersonPartsPEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | HNSInjuredPersonPartsPEOLastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | HNSInjuredPersonPartsPEOObjectVersionNumber | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — HNS_INJURED_PERSON_PARTS](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/hnsinjuredpersonparts.html)

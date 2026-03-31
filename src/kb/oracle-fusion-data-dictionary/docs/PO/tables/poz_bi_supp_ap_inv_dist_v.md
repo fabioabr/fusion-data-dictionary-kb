@@ -128,6 +128,17 @@ GROUP BY sad.VENDOR_NAME, sad.DIST_CODE_COMBINATION_ID;
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[supplierpvo|SupplierPVO]] (PO · BICC: 1/2)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| AMOUNT | SuppInvDistAmount | ✅ |
+| VENDOR_ID | SuppInvDistVendorId | — |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — POZ BI Views](https://docs.oracle.com/en/cloud/saas/procurement/25a/oedmf/poztables.html)

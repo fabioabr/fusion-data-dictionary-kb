@@ -41,7 +41,6 @@ updated_at: 2026-03-25
 
 Armazena as **entradas individuais de acumulação (accrual)** de ausência por colaborador. Cada registro representa um evento de acumulação de saldo (crédito) ou consumo (débito).
 
-
 ---
 
 ## 🧠 Propósito de Negócio
@@ -117,6 +116,85 @@ ORDER BY ae.ACCRUAL_DATE;
 - `RUNNING_BALANCE` mostra o saldo após a operação (similar a extrato bancário).
 - Débitos (`USAGE`) são vinculados a ausências específicas via `ABSENCE_ENTRY_ID`.
 - Ajustes manuais (`ADJUSTMENT`) permitem correções de saldo pelo RH.
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[personaccrualentrydtlpvo|PersonAccrualEntryDtlPVO]] (GL)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACCRUAL_PERIOD | AccrualPeriod | — |
+| ACCRUED | Accrued | — |
+| BEGIN_BAL | BeginBal | — |
+| CREATED_BY | CreatedBy2 | — |
+| CREATION_DATE | CreationDate2 | — |
+| END_BAL | EndBal | — |
+| ENTERPRISE_ID | EnterpriseId1 | — |
+| LAST_UPDATE_DATE | LastUpdateDate2 | — |
+| LAST_UPDATE_LOGIN | LastUpdateLogin2 | — |
+| LAST_UPDATED_BY | LastUpdatedBy2 | — |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber2 | — |
+| PER_ACCRUAL_ENTRY_ID | PerAccrualEntryId1 | — |
+| PER_PLAN_ENRT_ID | PerPlanEnrtId1 | — |
+| PERSON_EVENT_ID | PersonEventId | — |
+| PERSON_ID | PersonId2 | — |
+| PLAN_ID | PlanId | — |
+| PRD_OF_SVC_ID | PrdOfSvcId | — |
+| USED | Used | — |
+| WORK_TERM_ASG_ID | WorkTermAsgId1 | — |
+
+### [[personaccrualentryextractpvo|PersonAccrualEntryExtractPVO]] (HCM · BICC: 19/22)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACCRUAL_PERIOD | AccrualPeriod | ✅ |
+| ACCRUED | Accrued | ✅ |
+| BEGIN_BAL | BeginBal | ✅ |
+| CREATED_BY | CreatedBy | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| END_BAL | EndBal | ✅ |
+| ENTERPRISE_ID | EnterpriseId | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | LastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | ✅ |
+| PER_ACCRUAL_ENTRY_ID | PerAccrualEntryId | ✅ |
+| PER_PLAN_ENRT_ID | PerPlanEnrtId | ✅ |
+| PERSON_EVENT_ID | PersonEventId | ✅ |
+| PERSON_ID | PersonId | ✅ |
+| PLAN_ID | PlanId | ✅ |
+| PRD_OF_SVC_ID | PrdOfSvcId | ✅ |
+| RATE_DEFINITION_ID | RateDefinitionId | — |
+| RPT_PERIOD_ID | RptPeriodId | — |
+| STATUS | Status | — |
+| USED | Used | ✅ |
+| WORK_TERM_ASG_ID | WorkTermAsgId | ✅ |
+
+### [[personaccrualentrypvo|PersonAccrualEntryPVO]] (GL · BICC: 16/19)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACCRUAL_PERIOD | AccrualPeriod | ✅ |
+| ACCRUED | Accrued | ✅ |
+| BEGIN_BAL | BeginBal | ✅ |
+| CREATED_BY | CreatedBy | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| END_BAL | EndBal | ✅ |
+| ENTERPRISE_ID | EnterpriseId | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | — |
+| LAST_UPDATED_BY | LastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | — |
+| PER_ACCRUAL_ENTRY_ID | PerAccrualEntryId | ✅ |
+| PER_PLAN_ENRT_ID | PerPlanEnrtId | ✅ |
+| PERSON_EVENT_ID | PersonEventId | — |
+| PERSON_ID | PersonId | ✅ |
+| PLAN_ID | PlanId | ✅ |
+| PRD_OF_SVC_ID | PrdOfSvcId | ✅ |
+| USED | Used | ✅ |
+| WORK_TERM_ASG_ID | WorkTermAsgId | ✅ |
 
 ---
 

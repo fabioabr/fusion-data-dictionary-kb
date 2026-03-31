@@ -115,3 +115,39 @@ ORDER BY at.SEQUENCE;
 
 - [Oracle Docs — WLF_ASSIGNMENT_TASKS_F](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/wlfassignmenttasksf.html)
 - [[hcm-module-data-dictionary]] — Dossiê do módulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[assignmenttaskspvo|AssignmentTasksPVO]] (HCM · BICC: 14/27)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ASSIGNMENT_RECORD_ID | AssignmentTasksDEOAssignmentRecordId | — |
+| ASSIGNMENT_TASK_ID | AssignmentTasksDEOAssignmentTaskId | ✅ |
+| COMPLETION_DATE | AssignmentTasksDEOCompletionDate | ✅ |
+| CREATED_BY | AssignmentTasksDEOCreatedBy | — |
+| CREATION_DATE | AssignmentTasksDEOCreationDate | — |
+| EFFECTIVE_END_DATE | AssignmentTasksDEOEffectiveEndDate | ✅ |
+| EFFECTIVE_START_DATE | AssignmentTasksDEOEffectiveStartDate | ✅ |
+| EFFORT | AssignmentTasksDEOEffort | ✅ |
+| EFFORT_UOM | AssignmentTasksDEOEffortUom | ✅ |
+| ENTERPRISE_ID | AssignmentTasksDEOEnterpriseId | — |
+| LAST_UPDATE_DATE | AssignmentTasksDEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | AssignmentTasksDEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | AssignmentTasksDEOLastUpdatedBy | — |
+| LEARNING_ITEM_ID | AssignmentTasksDEOLearningItemId | ✅ |
+| NOTES | AssignmentTasksDEONotes | ✅ |
+| OBJECT_VERSION_NUMBER | AssignmentTasksDEOObjectVersionNumber | — |
+| PARENT_TASK_ID | AssignmentTasksDEOParentTaskId | — |
+| REASON_CODE | AssignmentTasksDEOReasonCode | ✅ |
+| SCORE | AssignmentTasksDEOScore | ✅ |
+| SOURCE_OBJECT_CODE | AssignmentTasksDEOSourceObjectCode | — |
+| SOURCE_OBJECT_ID | AssignmentTasksDEOSourceObjectId | — |
+| SOURCE_OBJECT_TYPE | AssignmentTasksDEOSourceObjectType | — |
+| TASK_OWNER_ID | AssignmentTasksDEOTaskOwnerId | — |
+| TASK_OWNER_TYPE | AssignmentTasksDEOTaskOwnerType | — |
+| TASK_STATUS | AssignmentTasksDEOTaskStatus | ✅ |
+| TASK_SUB_STATUS | AssignmentTasksDEOTaskSubStatus | ✅ |
+| TRAINING_EFFORT | AssignmentTasksDEOTrainingEffort | ✅ |

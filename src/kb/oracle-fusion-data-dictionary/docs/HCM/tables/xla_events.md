@@ -86,3 +86,281 @@ updated_at: 2026-03-26
 ## 📎 Uso Típico
 
 (a ser preenchido na etapa 03)
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[adjustmentdistributionpvo|AdjustmentDistributionPVO]] (AR)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUDGETARY_CONTROL_FLAG | EventBudgetaryControlFlag | — |
+| EVENT_DATE | EventEventDate | — |
+| EVENT_ID | EventEventId | — |
+| EVENT_NUMBER | EventEventNumber | — |
+| EVENT_STATUS_CODE | EventEventStatusCode | — |
+| EVENT_TYPE_CODE | EventEventTypeCode | — |
+| HAS_WARNINGS_FLAG | EventHasWarningsFlag | — |
+| ON_HOLD_FLAG | EventOnHoldFlag | — |
+| PROCESS_STATUS_CODE | EventProcessStatusCode | — |
+| TRANSACTION_DATE | EventTransactionDate | — |
+| UPG_VALID_FLAG | EventUpgValidFlag | — |
+
+### [[adjustmentpvo|AdjustmentPVO]] (AR)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUDGETARY_CONTROL_FLAG | EventBudgetaryControlFlag | — |
+| EVENT_DATE | EventEventDate | — |
+| EVENT_ID | EventEventId | — |
+| EVENT_NUMBER | EventEventNumber | — |
+| EVENT_STATUS_CODE | EventEventStatusCode | — |
+| EVENT_TYPE_CODE | EventEventTypeCode | — |
+| HAS_WARNINGS_FLAG | EventHasWarningsFlag | — |
+| ON_HOLD_FLAG | EventOnHoldFlag | — |
+| PROCESS_STATUS_CODE | EventProcessStatusCode | — |
+| TRANSACTION_DATE | EventTransactionDate | — |
+| UPG_VALID_FLAG | EventUpgValidFlag | — |
+
+### [[creditmemoapplicationdistributionpvo|CreditMemoApplicationDistributionPVO]] (AR)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUDGETARY_CONTROL_FLAG | EventBudgetaryControlFlag | — |
+| EVENT_DATE | EventEventDate | — |
+| EVENT_ID | EventEventId | — |
+| EVENT_NUMBER | EventEventNumber | — |
+| EVENT_STATUS_CODE | EventEventStatusCode | — |
+| EVENT_TYPE_CODE | EventEventTypeCode | — |
+| HAS_WARNINGS_FLAG | EventHasWarningsFlag | — |
+| ON_HOLD_FLAG | EventOnHoldFlag | — |
+| PROCESS_STATUS_CODE | EventProcessStatusCode | — |
+| TRANSACTION_DATE | EventTransactionDate | — |
+| UPG_VALID_FLAG | EventUpgValidFlag | — |
+
+### [[creditmemoapplicationpvo|CreditMemoApplicationPVO]] (AR)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUDGETARY_CONTROL_FLAG | EventBudgetaryControlFlag | — |
+| EVENT_DATE | EventEventDate | — |
+| EVENT_ID | EventEventId | — |
+| EVENT_NUMBER | EventEventNumber | — |
+| EVENT_STATUS_CODE | EventEventStatusCode | — |
+| EVENT_TYPE_CODE | EventEventTypeCode | — |
+| HAS_WARNINGS_FLAG | EventHasWarningsFlag | — |
+| ON_HOLD_FLAG | EventOnHoldFlag | — |
+| PROCESS_STATUS_CODE | EventProcessStatusCode | — |
+| TRANSACTION_DATE | EventTransactionDate | — |
+| UPG_VALID_FLAG | EventUpgValidFlag | — |
+
+### [[depreciationeventspvo|DepreciationEventsPVO]] (OTHER · BICC: 8/70)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| APPLICATION_ID | EventApplicationId | — |
+| APPLICATION_ID | RevEventApplicationId | — |
+| BUDGETARY_CONTROL_FLAG | EventBudgetaryControlFlag | — |
+| BUDGETARY_CONTROL_FLAG | RevEventBudgetaryControlFlag | — |
+| CREATED_BY | EventCreatedBy | — |
+| CREATED_BY | RevEventCreatedBy | — |
+| CREATION_DATE | EventCreationDate | — |
+| CREATION_DATE | RevEventCreationDate | — |
+| ENTITY_ID | EventEntityId | — |
+| ENTITY_ID | RevEventEntityId | — |
+| EVENT_DATE | EventEventDate | ✅ |
+| EVENT_DATE | RevEventEventDate | ✅ |
+| EVENT_ID | EventEventId | — |
+| EVENT_ID | RevEventEventId | — |
+| EVENT_NUMBER | EventEventNumber | — |
+| EVENT_NUMBER | RevEventEventNumber | — |
+| EVENT_STATUS_CODE | EventEventStatusCode | — |
+| EVENT_STATUS_CODE | RevEventEventStatusCode | — |
+| EVENT_TYPE_CODE | EventEventTypeCode | ✅ |
+| EVENT_TYPE_CODE | RevEventEventTypeCode | ✅ |
+| HAS_WARNINGS_FLAG | EventHasWarningsFlag | — |
+| HAS_WARNINGS_FLAG | RevEventHasWarningsFlag | — |
+| LAST_UPDATE_DATE | EventLastUpdateDate | ✅ |
+| LAST_UPDATE_DATE | RevEventLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | EventLastUpdateLogin | — |
+| LAST_UPDATE_LOGIN | RevEventLastUpdateLogin | — |
+| LAST_UPDATED_BY | EventLastUpdatedBy | — |
+| LAST_UPDATED_BY | RevEventLastUpdatedBy | — |
+| MERGE_EVENT_SET_ID | EventMergeEventSetId | — |
+| MERGE_EVENT_SET_ID | RevEventMergeEventSetId | — |
+| OBJECT_VERSION_NUMBER | EventObjectVersionNumber | — |
+| OBJECT_VERSION_NUMBER | RevEventObjectVersionNumber | — |
+| ON_HOLD_FLAG | EventOnHoldFlag | — |
+| ON_HOLD_FLAG | RevEventOnHoldFlag | — |
+| PROCESS_STATUS_CODE | EventProcessStatusCode | — |
+| PROCESS_STATUS_CODE | RevEventProcessStatusCode | — |
+| REFERENCE_CHAR_1 | EventReferenceChar1 | — |
+| REFERENCE_CHAR_1 | RevEventReferenceChar1 | — |
+| REFERENCE_CHAR_2 | EventReferenceChar2 | — |
+| REFERENCE_CHAR_2 | RevEventReferenceChar2 | — |
+| REFERENCE_CHAR_3 | EventReferenceChar3 | — |
+| REFERENCE_CHAR_3 | RevEventReferenceChar3 | — |
+| REFERENCE_CHAR_4 | EventReferenceChar4 | — |
+| REFERENCE_CHAR_4 | RevEventReferenceChar4 | — |
+| REFERENCE_DATE_1 | EventReferenceDate1 | — |
+| REFERENCE_DATE_1 | RevEventReferenceDate1 | — |
+| REFERENCE_DATE_2 | EventReferenceDate2 | — |
+| REFERENCE_DATE_2 | RevEventReferenceDate2 | — |
+| REFERENCE_DATE_3 | EventReferenceDate3 | — |
+| REFERENCE_DATE_3 | RevEventReferenceDate3 | — |
+| REFERENCE_DATE_4 | EventReferenceDate4 | — |
+| REFERENCE_DATE_4 | RevEventReferenceDate4 | — |
+| REFERENCE_NUM_1 | EventReferenceNum1 | — |
+| REFERENCE_NUM_1 | RevEventReferenceNum1 | — |
+| REFERENCE_NUM_2 | EventReferenceNum2 | — |
+| REFERENCE_NUM_2 | RevEventReferenceNum2 | — |
+| REFERENCE_NUM_3 | EventReferenceNum3 | — |
+| REFERENCE_NUM_3 | RevEventReferenceNum3 | — |
+| REFERENCE_NUM_4 | EventReferenceNum4 | — |
+| REFERENCE_NUM_4 | RevEventReferenceNum4 | — |
+| REQUEST_ID | EventRequestId | — |
+| REQUEST_ID | RevEventRequestId | — |
+| TRANSACTION_DATE | EventTransactionDate | ✅ |
+| TRANSACTION_DATE | RevEventTransactionDate | ✅ |
+| UPG_BATCH_ID | EventUpgBatchId | — |
+| UPG_BATCH_ID | RevEventUpgBatchId | — |
+| UPG_SOURCE_APPLICATION_ID | EventUpgSourceApplicationId | — |
+| UPG_SOURCE_APPLICATION_ID | RevEventUpgSourceApplicationId | — |
+| UPG_VALID_FLAG | EventUpgValidFlag | — |
+| UPG_VALID_FLAG | RevEventUpgValidFlag | — |
+
+### [[miscreceiptdistributionpvo|MiscReceiptDistributionPVO]] (AR · BICC: 1/35)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| APPLICATION_ID | EventApplicationId | — |
+| BUDGETARY_CONTROL_FLAG | EventBudgetaryControlFlag | — |
+| CREATED_BY | EventCreatedBy | — |
+| CREATION_DATE | EventCreationDate | — |
+| ENTITY_ID | EventEntityId | — |
+| EVENT_DATE | EventEventDate | — |
+| EVENT_ID | EventEventId | — |
+| EVENT_NUMBER | EventEventNumber | — |
+| EVENT_STATUS_CODE | EventEventStatusCode | — |
+| EVENT_TYPE_CODE | EventEventTypeCode | — |
+| HAS_WARNINGS_FLAG | EventHasWarningsFlag | — |
+| LAST_UPDATE_DATE | EventLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | EventLastUpdateLogin | — |
+| LAST_UPDATED_BY | EventLastUpdatedBy | — |
+| MERGE_EVENT_SET_ID | EventMergeEventSetId | — |
+| OBJECT_VERSION_NUMBER | EventObjectVersionNumber | — |
+| ON_HOLD_FLAG | EventOnHoldFlag | — |
+| PROCESS_STATUS_CODE | EventProcessStatusCode | — |
+| REFERENCE_CHAR_1 | EventReferenceChar1 | — |
+| REFERENCE_CHAR_2 | EventReferenceChar2 | — |
+| REFERENCE_CHAR_3 | EventReferenceChar3 | — |
+| REFERENCE_CHAR_4 | EventReferenceChar4 | — |
+| REFERENCE_DATE_1 | EventReferenceDate1 | — |
+| REFERENCE_DATE_2 | EventReferenceDate2 | — |
+| REFERENCE_DATE_3 | EventReferenceDate3 | — |
+| REFERENCE_DATE_4 | EventReferenceDate4 | — |
+| REFERENCE_NUM_1 | EventReferenceNum1 | — |
+| REFERENCE_NUM_2 | EventReferenceNum2 | — |
+| REFERENCE_NUM_3 | EventReferenceNum3 | — |
+| REFERENCE_NUM_4 | EventReferenceNum4 | — |
+| REQUEST_ID | EventRequestId | — |
+| TRANSACTION_DATE | EventTransactionDate | — |
+| UPG_BATCH_ID | EventUpgBatchId | — |
+| UPG_SOURCE_APPLICATION_ID | EventUpgSourceApplicationId | — |
+| UPG_VALID_FLAG | EventUpgValidFlag | — |
+
+### [[paymenthistorydistributionpvo|PaymentHistoryDistributionPVO]] (AP · BICC: 2/4)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| EVENT_ID | PayEvntEventId | — |
+| EVENT_ID | PayHistDistEvntEventId | — |
+| LAST_UPDATE_DATE | PayEvntLastUpdateDate | ✅ |
+| LAST_UPDATE_DATE | PayHistDistEvntLastUpdateDate | ✅ |
+
+### [[receiptapplicationdistributionpvo|ReceiptApplicationDistributionPVO]] (AR)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUDGETARY_CONTROL_FLAG | EventBudgetaryControlFlag | — |
+| EVENT_DATE | EventEventDate | — |
+| EVENT_ID | EventEventId | — |
+| EVENT_NUMBER | EventEventNumber | — |
+| EVENT_STATUS_CODE | EventEventStatusCode | — |
+| EVENT_TYPE_CODE | EventEventTypeCode | — |
+| HAS_WARNINGS_FLAG | EventHasWarningsFlag | — |
+| ON_HOLD_FLAG | EventOnHoldFlag | — |
+| PROCESS_STATUS_CODE | EventProcessStatusCode | — |
+| TRANSACTION_DATE | EventTransactionDate | — |
+| UPG_VALID_FLAG | EventUpgValidFlag | — |
+
+### [[receiptapplicationdistributionvc|ReceiptApplicationDistributionVC]] (AR)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUDGETARY_CONTROL_FLAG | EventBudgetaryControlFlag | — |
+| EVENT_DATE | EventEventDate | — |
+| EVENT_ID | EventEventId | — |
+| EVENT_NUMBER | EventEventNumber | — |
+| EVENT_STATUS_CODE | EventEventStatusCode | — |
+| EVENT_TYPE_CODE | EventEventTypeCode | — |
+| HAS_WARNINGS_FLAG | EventHasWarningsFlag | — |
+| ON_HOLD_FLAG | EventOnHoldFlag | — |
+| PROCESS_STATUS_CODE | EventProcessStatusCode | — |
+| TRANSACTION_DATE | EventTransactionDate | — |
+| UPG_VALID_FLAG | EventUpgValidFlag | — |
+
+### [[receiptapplicationpvo|ReceiptApplicationPVO]] (AR)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUDGETARY_CONTROL_FLAG | EventBudgetaryControlFlag | — |
+| EVENT_DATE | EventEventDate | — |
+| EVENT_ID | EventEventId | — |
+| EVENT_NUMBER | EventEventNumber | — |
+| EVENT_STATUS_CODE | EventEventStatusCode | — |
+| EVENT_TYPE_CODE | EventEventTypeCode | — |
+| HAS_WARNINGS_FLAG | EventHasWarningsFlag | — |
+| ON_HOLD_FLAG | EventOnHoldFlag | — |
+| PROCESS_STATUS_CODE | EventProcessStatusCode | — |
+| TRANSACTION_DATE | EventTransactionDate | — |
+| UPG_VALID_FLAG | EventUpgValidFlag | — |
+
+### [[subledgerjournaleventextractpvo|SubledgerJournalEventExtractPVO]] (OTHER · BICC: 33/33)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| APPLICATION_ID | EventPEOApplicationId | ✅ |
+| BUDGETARY_CONTROL_FLAG | EventPEOEventPEOBudgetaryControlFlag | ✅ |
+| CREATED_BY | EventPEOEventPEOCreatedBy | ✅ |
+| CREATION_DATE | EventPEOCreationDate | ✅ |
+| ENTITY_ID | EventPEOEntityId | ✅ |
+| EVENT_DATE | EventPEOEventDate | ✅ |
+| EVENT_ID | EventPEOEventId | ✅ |
+| EVENT_NUMBER | EventPEOEventNumber | ✅ |
+| EVENT_STATUS_CODE | EventPEOEventStatusCode | ✅ |
+| EVENT_TYPE_CODE | EventPEOEventTypeCode | ✅ |
+| FILE_IDENTIFIER | EventPEOFileIdentifier | ✅ |
+| HAS_WARNINGS_FLAG | EventPEOHasWarningsFlag | ✅ |
+| LAST_UPDATE_DATE | EventPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | EventPEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | EventPEOLastUpdatedBy | ✅ |
+| MERGE_EVENT_SET_ID | EventPEOMergeEventSetId | ✅ |
+| OBJECT_VERSION_NUMBER | EventPEOObjectVersionNumber | ✅ |
+| ON_HOLD_FLAG | EventPEOOnHoldFlag | ✅ |
+| PROCESS_STATUS_CODE | EventPEOProcessStatusCode | ✅ |
+| REFERENCE_CHAR_1 | EventPEOReferenceChar1 | ✅ |
+| REFERENCE_CHAR_2 | EventPEOReferenceChar2 | ✅ |
+| REFERENCE_CHAR_3 | EventPEOReferenceChar3 | ✅ |
+| REFERENCE_CHAR_4 | EventPEOReferenceChar4 | ✅ |
+| REFERENCE_DATE_1 | EventPEOReferenceDate1 | ✅ |
+| REFERENCE_DATE_2 | EventPEOReferenceDate2 | ✅ |
+| REFERENCE_DATE_3 | EventPEOReferenceDate3 | ✅ |
+| REFERENCE_DATE_4 | EventPEOReferenceDate4 | ✅ |
+| REFERENCE_NUM_1 | EventPEOReferenceNum1 | ✅ |
+| REFERENCE_NUM_2 | EventPEOReferenceNum2 | ✅ |
+| REFERENCE_NUM_3 | EventPEOReferenceNum3 | ✅ |
+| REFERENCE_NUM_4 | EventPEOReferenceNum4 | ✅ |
+| REQUEST_ID | EventPEORequestId | ✅ |
+| TRANSACTION_DATE | EventPEOTransactionDate | ✅ |

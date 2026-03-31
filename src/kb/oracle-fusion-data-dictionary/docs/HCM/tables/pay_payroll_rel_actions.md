@@ -100,6 +100,103 @@ WHERE  pra.PAYROLL_ACTION_ID = :p_action_id;
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[paymentactionpvo|PaymentActionPVO]] (HCM · BICC: 3/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_SEQUENCE | PayrollRelationshipActionPEOActionSequence | — |
+| ACTION_STATUS | PayrollRelationshipActionPEOActionStatus | — |
+| CHUNK_NUMBER | PayrollRelationshipActionPEOChunkNumber | — |
+| END_DATE | PayrollRelationshipActionPEOEndDate | — |
+| OBJECT_VERSION_NUMBER | PayrollRelationshipActionPEOObjectVersionNumber | — |
+| PAYROLL_REL_ACTION_ID | PayrollRelationshipActionPEOPayrollRelActionId | ✅ |
+| PAYROLL_RELATIONSHIP_ID | PayrollRelationshipActionPEOPayrollRelationshipId | — |
+| PRE_PAYMENT_ID | PayrollRelationshipActionPEOPrePaymentId | — |
+| RUN_TYPE_ID | PayrollRelationshipActionPEORunTypeId | — |
+| SERIAL_NUMBER | PayrollRelationshipActionPEOSerialNumber | ✅ |
+| SOURCE_ACTION_ID | PayrollRelationshipActionPEOSourceActionId | — |
+| START_DATE | PayrollRelationshipActionPEOStartDate | ✅ |
+
+### [[payrollruncosting|PayrollRunCosting]] (GL · BICC: 5/14)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_SEQUENCE | PayRelActActionSequence | ✅ |
+| ACTION_STATUS | PayRelActActionStatus | ✅ |
+| CHUNK_NUMBER | PayRelActChunkNumber | ✅ |
+| END_DATE | PayRelActEndDate | — |
+| OBJECT_VERSION_NUMBER | PayRelActObjectVersionNumber | — |
+| PAYROLL_ACTION_ID | PayRelActPayrollActionId | — |
+| PAYROLL_REL_ACTION_ID | PayRelActPayrollRelActionId | ✅ |
+| PAYROLL_RELATIONSHIP_ID | PayRelActPayrollRelationshipId | — |
+| PRE_PAYMENT_ID | PayRelActPrePaymentId | — |
+| RETRO_COMPONENT_ID | PayRelActRetroComponentId | — |
+| RUN_TYPE_ID | PayRelActRunTypeId | — |
+| SERIAL_NUMBER | PayRelActSerialNumber | ✅ |
+| SOURCE_ACTION_ID | PayRelActSourceActionId | — |
+| START_DATE | PayRelActStartDate | — |
+
+### [[prepaymentcosting|PrePaymentCosting]] (GL · BICC: 5/14)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_SEQUENCE | PayRelActActionSequence | — |
+| ACTION_STATUS | PayRelActActionStatus | — |
+| CHUNK_NUMBER | PayRelActChunkNumber | ✅ |
+| END_DATE | PayRelActEndDate | ✅ |
+| OBJECT_VERSION_NUMBER | PayRelActObjectVersionNumber | — |
+| PAYROLL_ACTION_ID | PayRelActPayrollActionId | — |
+| PAYROLL_REL_ACTION_ID | PayRelActPayrollRelActionId | ✅ |
+| PAYROLL_RELATIONSHIP_ID | PayRelActPayrollRelationshipId | — |
+| PRE_PAYMENT_ID | PayRelActPrePaymentId | — |
+| RETRO_COMPONENT_ID | PayRelActRetroComponentId | — |
+| RUN_TYPE_ID | PayRelActRunTypeId | — |
+| SERIAL_NUMBER | PayRelActSerialNumber | ✅ |
+| SOURCE_ACTION_ID | PayRelActSourceActionId | — |
+| START_DATE | PayRelActStartDate | ✅ |
+
+### [[prepayments|PrePayments]] (AP · BICC: 7/14)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_SEQUENCE | PayRelActActionSequence | ✅ |
+| ACTION_STATUS | PayRelActActionStatus | ✅ |
+| CHUNK_NUMBER | PayRelActChunkNumber | ✅ |
+| END_DATE | PayRelActEndDate | ✅ |
+| OBJECT_VERSION_NUMBER | PayRelActObjectVersionNumber | — |
+| PAYROLL_ACTION_ID | PayRelActPayrollActionId | — |
+| PAYROLL_REL_ACTION_ID | PayRelActPayrollRelActionId | ✅ |
+| PAYROLL_RELATIONSHIP_ID | PayRelActPayrollRelationshipId | — |
+| PRE_PAYMENT_ID | PayRelActPrePaymentId | — |
+| RETRO_COMPONENT_ID | PayRelActRetroComponentId | — |
+| RUN_TYPE_ID | PayRelActRunTypeId | — |
+| SERIAL_NUMBER | PayRelActSerialNumber | ✅ |
+| SOURCE_ACTION_ID | PayRelActSourceActionId | — |
+| START_DATE | PayRelActStartDate | ✅ |
+
+### [[retroelemententry|RetroElementEntry]] (HCM · BICC: 2/14)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_SEQUENCE | PayrollRelationshipActionSequence | ✅ |
+| ACTION_STATUS | PayrollRelationshipActionStatus | ✅ |
+| CHUNK_NUMBER | PayrollRelationshipChunkNumber | — |
+| END_DATE | PayrollRelationshipEndDate | — |
+| OBJECT_VERSION_NUMBER | PayrollRelationshipObjectVersionNumber | — |
+| PAYROLL_ACTION_ID | PayrollRelationshipPayrollActionId | — |
+| PAYROLL_REL_ACTION_ID | PayrollRelationshipPayrollRelActionId | — |
+| PAYROLL_RELATIONSHIP_ID | PayrollRelationshipPayrollRelationshipId | — |
+| PRE_PAYMENT_ID | PayrollRelationshipPrePaymentId | — |
+| RETRO_COMPONENT_ID | PayrollRelationshipRetroComponentId | — |
+| RUN_TYPE_ID | PayrollRelationshipRunTypeId | — |
+| SERIAL_NUMBER | PayrollRelationshipSerialNumber | — |
+| SOURCE_ACTION_ID | PayrollRelationshipSourceActionId | — |
+| START_DATE | PayrollRelationshipStartDate | — |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — PAY_PAYROLL_REL_ACTIONS](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/paypayrollrelactions.html)

@@ -118,3 +118,83 @@ WHERE  ni.PERSON_ID = :p_person_id
 
 - [Oracle Docs — PER_NATIONAL_IDENTIFIERS](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/pernationalidentifiers.html)
 - [[hcm-module-data-dictionary]] — Dossiê do módulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[contactpersonnationalidentifierpvo|ContactPersonNationalIdentifierPVO]] (HCM · BICC: 12/15)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | NationalIdentifierPEOBusinessGroupId | — |
+| CREATED_BY | NationalIdentifierPEOCreatedBy | ✅ |
+| CREATION_DATE | NationalIdentifierPEOCreationDate | ✅ |
+| EXPIRATION_DATE | NationalIdentifierPEOExpirationDate | ✅ |
+| ISSUE_DATE | NationalIdentifierPEOIssueDate | ✅ |
+| LAST_UPDATE_DATE | NationalIdentifierPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | NationalIdentifierPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | NationalIdentifierPEOLastUpdatedBy | ✅ |
+| LEGISLATION_CODE | NationalIdentifierPEOLegislationCode | ✅ |
+| NATIONAL_IDENTIFIER_ID | NationalIdentifierId | ✅ |
+| NATIONAL_IDENTIFIER_NUMBER | NationalIdentifierPEONationalIdentifierNumber | ✅ |
+| NATIONAL_IDENTIFIER_TYPE | NationalIdentifierPEONationalIdentifierType | ✅ |
+| OBJECT_VERSION_NUMBER | NationalIdentifierPEOObjectVersionNumber | — |
+| PERSON_ID | NationalIdentifierPEOPersonId | ✅ |
+| PLACE_OF_ISSUE | NationalIdentifierPEOPlaceOfIssue | ✅ |
+
+### [[globalpersonpvo|GlobalPersonPVO]] (HCM · BICC: 3/3)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| LAST_UPDATE_DATE | NationalIdentifierPEOLastUpdateDate | ✅ |
+| NATIONAL_IDENTIFIER_ID | NationalIdentifierPEONationalIdentifierId | ✅ |
+| NATIONAL_IDENTIFIER_NUMBER | NationalIdentifierPEONationalIdentifierNumber | ✅ |
+
+### [[globalpersonpvoviewall|GlobalPersonPVOViewAll]] (HCM · BICC: 2/3)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| LAST_UPDATE_DATE | NationalIdentifierPEOLastUpdateDate | ✅ |
+| NATIONAL_IDENTIFIER_ID | NationalIdentifierPEONationalIdentifierId | — |
+| NATIONAL_IDENTIFIER_NUMBER | NationalIdentifierPEONationalIdentifierNumber | ✅ |
+
+### [[personnationalidentifierpvo|PersonNationalIdentifierPVO]] (HCM · BICC: 15/15)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | NationalIdentifierPEOBusinessGroupId | ✅ |
+| CREATED_BY | NationalIdentifierPEOCreatedBy | ✅ |
+| CREATION_DATE | NationalIdentifierPEOCreationDate | ✅ |
+| EXPIRATION_DATE | NationalIdentifierPEOExpirationDate | ✅ |
+| ISSUE_DATE | NationalIdentifierPEOIssueDate | ✅ |
+| LAST_UPDATE_DATE | NationalIdentifierPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | NationalIdentifierPEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | NationalIdentifierPEOLastUpdatedBy | ✅ |
+| LEGISLATION_CODE | NationalIdentifierPEOLegislationCode | ✅ |
+| NATIONAL_IDENTIFIER_ID | NationalIdentifierId | ✅ |
+| NATIONAL_IDENTIFIER_NUMBER | NationalIdentifierPEONationalIdentifierNumber | ✅ |
+| NATIONAL_IDENTIFIER_TYPE | NationalIdentifierPEONationalIdentifierType | ✅ |
+| OBJECT_VERSION_NUMBER | NationalIdentifierPEOObjectVersionNumber | ✅ |
+| PERSON_ID | NationalIdentifierPEOPersonId | ✅ |
+| PLACE_OF_ISSUE | NationalIdentifierPEOPlaceOfIssue | ✅ |
+
+### [[personnationalidentifierpvoviewall|PersonNationalIdentifierPVOViewAll]] (HCM · BICC: 12/15)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | NationalIdentifierPEOBusinessGroupId | — |
+| CREATED_BY | NationalIdentifierPEOCreatedBy | ✅ |
+| CREATION_DATE | NationalIdentifierPEOCreationDate | ✅ |
+| EXPIRATION_DATE | NationalIdentifierPEOExpirationDate | ✅ |
+| ISSUE_DATE | NationalIdentifierPEOIssueDate | ✅ |
+| LAST_UPDATE_DATE | NationalIdentifierPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | NationalIdentifierPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | NationalIdentifierPEOLastUpdatedBy | ✅ |
+| LEGISLATION_CODE | NationalIdentifierPEOLegislationCode | ✅ |
+| NATIONAL_IDENTIFIER_ID | NationalIdentifierId | ✅ |
+| NATIONAL_IDENTIFIER_NUMBER | NationalIdentifierPEONationalIdentifierNumber | ✅ |
+| NATIONAL_IDENTIFIER_TYPE | NationalIdentifierPEONationalIdentifierType | ✅ |
+| OBJECT_VERSION_NUMBER | NationalIdentifierPEOObjectVersionNumber | — |
+| PERSON_ID | NationalIdentifierPEOPersonId | ✅ |
+| PLACE_OF_ISSUE | NationalIdentifierPEOPlaceOfIssue | ✅ |

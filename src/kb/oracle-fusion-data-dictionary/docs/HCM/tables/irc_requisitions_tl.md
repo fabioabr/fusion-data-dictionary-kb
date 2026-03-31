@@ -105,3 +105,170 @@ WHERE  tl.LANGUAGE = 'PT' AND b.REQUISITION_STATUS = 'OPEN';
 
 - [Oracle Docs -- IRC_REQUISITIONS_TL](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/ircrequisitionstl.html)
 - [[hcm-module-data-dictionary]] -- Dossie do modulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[jobrequisitionpvo|JobRequisitionPVO]] (PO · BICC: 16/26)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | CreatedBy1 | ✅ |
+| CREATION_DATE | CreationDate1 | ✅ |
+| CUSTOM_EXT_POST_DESC_FLAG | RequisitionTranslationPEOCustomExtPostDescFlag | — |
+| EXTERNAL_DESC | ExternalDesc | ✅ |
+| EXTERNAL_DESC_HTML | ExternalDescHtml | — |
+| EXTERNAL_QUAL | RequisitionTranslationPEOExternalQual | — |
+| EXTERNAL_RESP | RequisitionTranslationPEOExternalResp | — |
+| EXTERNAL_SHORT_DESC | ExternalShortDesc | ✅ |
+| INTERNAL_DESC | InternalDesc | ✅ |
+| INTERNAL_DESC_HTML | InternalDescHtml | — |
+| INTERNAL_QUAL | RequisitionTranslationPEOInternalQual | — |
+| INTERNAL_RESP | RequisitionTranslationPEOInternalResp | — |
+| INTERNAL_SHORT_DESC | InternalShortDesc | ✅ |
+| LANGUAGE | Language | ✅ |
+| LANGUAGE | PipelineRequisitionTLPEOLanguage | — |
+| LAST_UPDATE_DATE | LastUpdateDate1 | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin1 | ✅ |
+| LAST_UPDATED_BY | LastUpdatedBy1 | ✅ |
+| MANAGER_TITLE | ManagerTitle | ✅ |
+| NAME | RequisitionTranslationPEOName | — |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber1 | ✅ |
+| REQUISITION_ID | PipelineRequisitionTLPEORequisitionId | — |
+| REQUISITION_ID | RequisitionId1 | ✅ |
+| SOURCE_LANG | SourceLang | ✅ |
+| TITLE | PipelineRequisitionTLPEOTitle | ✅ |
+| TITLE | Title | ✅ |
+
+### [[jobrequisitiontemplatepvo|JobRequisitionTemplatePVO]] (PO · BICC: 8/26)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | CreatedBy1 | — |
+| CREATION_DATE | CreationDate1 | — |
+| CUSTOM_EXT_POST_DESC_FLAG | RequisitionTranslationPEOCustomExtPostDescFlag | — |
+| EXTERNAL_DESC | ExternalDesc | ✅ |
+| EXTERNAL_DESC_HTML | ExternalDescHtml | — |
+| EXTERNAL_QUAL | RequisitionTranslationPEOExternalQual | — |
+| EXTERNAL_RESP | RequisitionTranslationPEOExternalResp | — |
+| EXTERNAL_SHORT_DESC | ExternalShortDesc | ✅ |
+| INTERNAL_DESC | InternalDesc | ✅ |
+| INTERNAL_DESC_HTML | InternalDescHtml | — |
+| INTERNAL_QUAL | RequisitionTranslationPEOInternalQual | — |
+| INTERNAL_RESP | RequisitionTranslationPEOInternalResp | — |
+| INTERNAL_SHORT_DESC | InternalShortDesc | ✅ |
+| LANGUAGE | Language | — |
+| LANGUAGE | PipelineRequisitionTLPEOLanguage | — |
+| LAST_UPDATE_DATE | LastUpdateDate1 | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin1 | — |
+| LAST_UPDATED_BY | LastUpdatedBy1 | — |
+| MANAGER_TITLE | ManagerTitle | ✅ |
+| NAME | RequisitionTranslationPEOName | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber1 | — |
+| REQUISITION_ID | PipelineRequisitionTLPEORequisitionId | — |
+| REQUISITION_ID | RequisitionId1 | — |
+| SOURCE_LANG | SourceLang | — |
+| TITLE | PipelineRequisitionTLPEOTitle | — |
+| TITLE | Title | ✅ |
+
+### [[jobrequisitionviewallpvo|JobRequisitionViewAllPVO]] (PO · BICC: 11/26)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | CreatedBy1 | — |
+| CREATION_DATE | CreationDate1 | — |
+| CUSTOM_EXT_POST_DESC_FLAG | RequisitionTranslationPEOCustomExtPostDescFlag | — |
+| EXTERNAL_DESC | ExternalDesc | ✅ |
+| EXTERNAL_DESC_HTML | ExternalDescHtml | — |
+| EXTERNAL_QUAL | RequisitionTranslationPEOExternalQual | — |
+| EXTERNAL_RESP | RequisitionTranslationPEOExternalResp | — |
+| EXTERNAL_SHORT_DESC | ExternalShortDesc | ✅ |
+| INTERNAL_DESC | InternalDesc | ✅ |
+| INTERNAL_DESC_HTML | InternalDescHtml | — |
+| INTERNAL_QUAL | RequisitionTranslationPEOInternalQual | — |
+| INTERNAL_RESP | RequisitionTranslationPEOInternalResp | — |
+| INTERNAL_SHORT_DESC | InternalShortDesc | ✅ |
+| LANGUAGE | Language | ✅ |
+| LANGUAGE | PipelineRequisitionTLPEOLanguage | — |
+| LAST_UPDATE_DATE | LastUpdateDate1 | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin1 | — |
+| LAST_UPDATED_BY | LastUpdatedBy1 | — |
+| MANAGER_TITLE | ManagerTitle | ✅ |
+| NAME | RequisitionTranslationPEOName | — |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber1 | — |
+| REQUISITION_ID | PipelineRequisitionTLPEORequisitionId | — |
+| REQUISITION_ID | RequisitionId1 | ✅ |
+| SOURCE_LANG | SourceLang | ✅ |
+| TITLE | PipelineRequisitionTLPEOTitle | ✅ |
+| TITLE | Title | ✅ |
+
+### [[positionpvo|PositionPVO]] (PO · BICC: 2/4)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| LANGUAGE | RequisitionTranslatePEOLanguage | — |
+| LAST_UPDATE_DATE | RequisitionTranslatePEOLastUpdateDate | ✅ |
+| REQUISITION_ID | RequisitionTranslatePEORequisitionId | — |
+| TITLE | RequisitionTranslatePEOTitle | ✅ |
+
+### [[positionpvoviewall|PositionPVOViewAll]] (PO · BICC: 2/4)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| LANGUAGE | RequisitionTranslatePEOLanguage | — |
+| LAST_UPDATE_DATE | RequisitionTranslatePEOLastUpdateDate | ✅ |
+| REQUISITION_ID | RequisitionTranslatePEORequisitionId | — |
+| TITLE | RequisitionTranslatePEOTitle | ✅ |
+
+### [[requisitionlanguagepvo|RequisitionLanguagePVO]] (PO · BICC: 2/3)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| LANGUAGE | RequisitionLanguage | ✅ |
+| REQUISITION_ID | RequisitionTLPEORequisitionId | — |
+| SOURCE_LANG | RequisitionSourceLang | ✅ |
+
+### [[requisitiontemplatepvo|RequisitionTemplatePVO]] (PO · BICC: 3/23)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | CreatedBy1 | — |
+| CREATION_DATE | CreationDate1 | — |
+| CUSTOM_EXT_POST_DESC_FLAG | RequisitionTranslationPEOCustomExtPostDescFlag | — |
+| EXTERNAL_DESC | ExternalDesc | — |
+| EXTERNAL_DESC_HTML | ExternalDescHtml | — |
+| EXTERNAL_QUAL | RequisitionTranslationPEOExternalQual | — |
+| EXTERNAL_RESP | RequisitionTranslationPEOExternalResp | — |
+| EXTERNAL_SHORT_DESC | ExternalShortDesc | — |
+| INTERNAL_DESC | InternalDesc | — |
+| INTERNAL_DESC_HTML | InternalDescHtml | — |
+| INTERNAL_QUAL | RequisitionTranslationPEOInternalQual | — |
+| INTERNAL_RESP | RequisitionTranslationPEOInternalResp | — |
+| INTERNAL_SHORT_DESC | InternalShortDesc | — |
+| LANGUAGE | Language1 | — |
+| LAST_UPDATE_DATE | LastUpdateDate1 | — |
+| LAST_UPDATE_LOGIN | LastUpdateLogin1 | — |
+| LAST_UPDATED_BY | LastUpdatedBy1 | — |
+| MANAGER_TITLE | ManagerTitle | ✅ |
+| NAME | RequisitionTranslationPEOName | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber1 | — |
+| REQUISITION_ID | RequisitionId1 | — |
+| SOURCE_LANG | SourceLang | — |
+| TITLE | Title | ✅ |
+
+### [[searchactiondetailpvo|SearchActionDetailPVO]] (PO · BICC: 1/3)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| LANGUAGE | RequisitionTranslationPEOLanguage | — |
+| REQUISITION_ID | RequisitionTranslationPEORequisitionId | — |
+| TITLE | RequisitionTranslationPEOTitle | ✅ |
+
+### [[sourcetrackingviewallpvo|SourceTrackingViewAllPVO]] (HCM · BICC: 1/3)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| LANGUAGE | FromRequisitionTLPEOLanguage | — |
+| REQUISITION_ID | FromRequisitionTLPEORequisitionId | — |
+| TITLE | FromRequisitionTLPEOTitle | ✅ |

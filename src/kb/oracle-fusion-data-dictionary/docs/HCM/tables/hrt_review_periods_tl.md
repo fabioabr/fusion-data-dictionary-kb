@@ -104,3 +104,41 @@ WHERE  tl.REVIEW_PERIOD_ID = :p_id
 
 - [Oracle Docs — HRT_REVIEW_PERIODS_TL](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/hrtreviewperiodstl.html)
 - [[hcm-module-data-dictionary]] — Dossie do modulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[reviewperiodpvo|ReviewPeriodPVO]] (HCM · BICC: 3/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | BusinessGroupId1 | — |
+| CREATED_BY | CreatedBy1 | — |
+| CREATION_DATE | CreationDate1 | — |
+| DESCRIPTION | Description | ✅ |
+| LANGUAGE | Language1 | — |
+| LAST_UPDATE_DATE | LastUpdateDate1 | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin1 | — |
+| LAST_UPDATED_BY | LastUpdatedBy1 | — |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber1 | — |
+| REVIEW_PERIOD_ID | ReviewPeriodId1 | — |
+| REVIEW_PERIOD_NAME | ReviewPeriodName | ✅ |
+| SOURCE_LANG | SourceLang | — |
+
+### [[reviewperiodtranslationpvo|ReviewPeriodTranslationPVO]] (HCM · BICC: 12/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | BusinessGroupId | ✅ |
+| CREATED_BY | CreatedBy | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| DESCRIPTION | Description | ✅ |
+| LANGUAGE | Language | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | LastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | ✅ |
+| REVIEW_PERIOD_ID | ReviewPeriodId | ✅ |
+| REVIEW_PERIOD_NAME | ReviewPeriodName | ✅ |
+| SOURCE_LANG | SourceLang | ✅ |

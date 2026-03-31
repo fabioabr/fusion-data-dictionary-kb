@@ -126,3 +126,31 @@ ORDER BY pspa.VENDOR_NAME;
 
 - [Oracle Docs — Supplier Products and Services](https://docs.oracle.com/en/cloud/saas/procurement/25a/oedmf/poz-tables.html)
 - [[po-module-data-dictionary]] — Dossiê do módulo Procurement
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[supplierproductsservicespvo|SupplierProductsServicesPVO]] (PO · BICC: 7/9)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ANCESTOR_CATEGORY_DESCRIPTION | CategoryTreeAttrAncestorCategoryDescription | ✅ |
+| ANCESTOR_CATEGORY_ID | AncestorCategoryId | ✅ |
+| ANCESTOR_CATEGORY_NAME | CategoryTreeAttrAncestorCategoryName | ✅ |
+| CALCULATED_PATH | CategoryTreeAttrCalculatedPath | ✅ |
+| CATEGORY_DESCRIPTION | CategoryTreeAttrCategoryDescription | ✅ |
+| CATEGORY_ID | CategoryId | ✅ |
+| CATEGORY_NAME | CategoryTreeAttrCategoryName | ✅ |
+| DISTANCE | CategoryTreeAttrDistance | — |
+| ISLEAF | CategoryTreeAttrIsleaf | — |
+
+### [[supplierregistrationprodserrequestpvo|SupplierRegistrationProdSerRequestPVO]] (PO · BICC: 2/5)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ANCESTOR_CATEGORY_DESCRIPTION | SupplierProdAndServAttrAncestorCategoryDescription | ✅ |
+| ANCESTOR_CATEGORY_ID | SupplierProdAndServAttrAncestorCategoryId | — |
+| ANCESTOR_CATEGORY_NAME | SupplierProdAndServAttrAncestorCategoryName | ✅ |
+| CALCULATED_PATH | SupplierProdAndServAttrCalculatedPath | — |
+| CATEGORY_ID | SupplierProdAndServAttrCategoryId | — |

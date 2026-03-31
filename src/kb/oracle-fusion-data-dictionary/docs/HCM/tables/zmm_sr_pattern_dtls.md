@@ -120,6 +120,106 @@ GROUP BY p.PATTERN_CODE;
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[patterndetailextractpvo|PatternDetailExtractPVO]] (OTHER · BICC: 42/42)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ATTRIBUTE1 | PatternDetailPEOAttribute1 | ✅ |
+| ATTRIBUTE10 | PatternDetailPEOAttribute10 | ✅ |
+| ATTRIBUTE11 | PatternDetailPEOAttribute11 | ✅ |
+| ATTRIBUTE12 | PatternDetailPEOAttribute12 | ✅ |
+| ATTRIBUTE13 | PatternDetailPEOAttribute13 | ✅ |
+| ATTRIBUTE14 | PatternDetailPEOAttribute14 | ✅ |
+| ATTRIBUTE15 | PatternDetailPEOAttribute15 | ✅ |
+| ATTRIBUTE16 | PatternDetailPEOAttribute16 | ✅ |
+| ATTRIBUTE17 | PatternDetailPEOAttribute17 | ✅ |
+| ATTRIBUTE18 | PatternDetailPEOAttribute18 | ✅ |
+| ATTRIBUTE19 | PatternDetailPEOAttribute19 | ✅ |
+| ATTRIBUTE2 | PatternDetailPEOAttribute2 | ✅ |
+| ATTRIBUTE20 | PatternDetailPEOAttribute20 | ✅ |
+| ATTRIBUTE21 | PatternDetailPEOAttribute21 | ✅ |
+| ATTRIBUTE22 | PatternDetailPEOAttribute22 | ✅ |
+| ATTRIBUTE23 | PatternDetailPEOAttribute23 | ✅ |
+| ATTRIBUTE24 | PatternDetailPEOAttribute24 | ✅ |
+| ATTRIBUTE25 | PatternDetailPEOAttribute25 | ✅ |
+| ATTRIBUTE26 | PatternDetailPEOAttribute26 | ✅ |
+| ATTRIBUTE27 | PatternDetailPEOAttribute27 | ✅ |
+| ATTRIBUTE28 | PatternDetailPEOAttribute28 | ✅ |
+| ATTRIBUTE29 | PatternDetailPEOAttribute29 | ✅ |
+| ATTRIBUTE3 | PatternDetailPEOAttribute3 | ✅ |
+| ATTRIBUTE30 | PatternDetailPEOAttribute30 | ✅ |
+| ATTRIBUTE4 | PatternDetailPEOAttribute4 | ✅ |
+| ATTRIBUTE5 | PatternDetailPEOAttribute5 | ✅ |
+| ATTRIBUTE6 | PatternDetailPEOAttribute6 | ✅ |
+| ATTRIBUTE7 | PatternDetailPEOAttribute7 | ✅ |
+| ATTRIBUTE8 | PatternDetailPEOAttribute8 | ✅ |
+| ATTRIBUTE9 | PatternDetailPEOAttribute9 | ✅ |
+| ATTRIBUTE_CATEGORY | PatternDetailPEOAttributeCategory | ✅ |
+| CREATED_BY | PatternDetailPEOCreatedBy | ✅ |
+| CREATION_DATE | PatternDetailPEOCreationDate | ✅ |
+| DAY_START_NUM | PatternDetailPEODayStartNum | ✅ |
+| DAY_STOP_NUM | PatternDetailPEODayStopNum | ✅ |
+| LAST_UPDATE_DATE | PatternDetailPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | PatternDetailPEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | PatternDetailPEOLastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | PatternDetailPEOObjectVersionNumber | ✅ |
+| PATTERN_DTL_ID | PatternDtlId | ✅ |
+| PATTERN_DTL_SEQ_NUM | PatternDetailPEOPatternDtlSeqNum | ✅ |
+| PATTERN_ID | PatternDetailPEOPatternId | ✅ |
+
+### [[scheduleassignmentpvo|ScheduleAssignmentPVO]] (GL · BICC: 1/44)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ATTRIBUTE1 | PatternDetailsPEOAttribute1 | — |
+| ATTRIBUTE10 | PatternDetailsPEOAttribute10 | — |
+| ATTRIBUTE11 | PatternDetailsPEOAttribute11 | — |
+| ATTRIBUTE12 | PatternDetailsPEOAttribute12 | — |
+| ATTRIBUTE13 | PatternDetailsPEOAttribute13 | — |
+| ATTRIBUTE14 | PatternDetailsPEOAttribute14 | — |
+| ATTRIBUTE15 | PatternDetailsPEOAttribute15 | — |
+| ATTRIBUTE16 | PatternDetailsPEOAttribute16 | — |
+| ATTRIBUTE17 | PatternDetailsPEOAttribute17 | — |
+| ATTRIBUTE18 | PatternDetailsPEOAttribute18 | — |
+| ATTRIBUTE19 | PatternDetailsPEOAttribute19 | — |
+| ATTRIBUTE2 | PatternDetailsPEOAttribute2 | — |
+| ATTRIBUTE20 | PatternDetailsPEOAttribute20 | — |
+| ATTRIBUTE21 | PatternDetailsPEOAttribute21 | — |
+| ATTRIBUTE22 | PatternDetailsPEOAttribute22 | — |
+| ATTRIBUTE23 | PatternDetailsPEOAttribute23 | — |
+| ATTRIBUTE24 | PatternDetailsPEOAttribute24 | — |
+| ATTRIBUTE25 | PatternDetailsPEOAttribute25 | — |
+| ATTRIBUTE26 | PatternDetailsPEOAttribute26 | — |
+| ATTRIBUTE27 | PatternDetailsPEOAttribute27 | — |
+| ATTRIBUTE28 | PatternDetailsPEOAttribute28 | — |
+| ATTRIBUTE29 | PatternDetailsPEOAttribute29 | — |
+| ATTRIBUTE3 | PatternDetailsPEOAttribute3 | — |
+| ATTRIBUTE30 | PatternDetailsPEOAttribute30 | — |
+| ATTRIBUTE4 | PatternDetailsPEOAttribute4 | — |
+| ATTRIBUTE5 | PatternDetailsPEOAttribute5 | — |
+| ATTRIBUTE6 | PatternDetailsPEOAttribute6 | — |
+| ATTRIBUTE7 | PatternDetailsPEOAttribute7 | — |
+| ATTRIBUTE8 | PatternDetailsPEOAttribute8 | — |
+| ATTRIBUTE9 | PatternDetailsPEOAttribute9 | — |
+| ATTRIBUTE_CATEGORY | PatternDetailsPEOAttributeCategory | — |
+| CHILD_PATTERN_ID | PatternDetailsPEOChildPatternId | — |
+| CHILD_SHIFT_ID | PatternDetailsPEOChildShiftId | — |
+| CREATED_BY | PatternDetailsPEOCreatedBy | — |
+| CREATION_DATE | PatternDetailsPEOCreationDate | — |
+| DAY_START_NUM | PatternDetailsPEODayStartNum | — |
+| DAY_STOP_NUM | PatternDetailsPEODayStopNum | — |
+| LAST_UPDATE_DATE | PatternDetailsPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | PatternDetailsPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | PatternDetailsPEOLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | PatternDetailsPEOObjectVersionNumber | — |
+| PATTERN_DTL_ID | PatternDetailsPEOPatternDtlId | — |
+| PATTERN_DTL_SEQ_NUM | PatternDetailsPEOPatternDtlSeqNum | — |
+| PATTERN_ID | PatternDetailsPEOPatternId | — |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Fusion HCM Tables and Views](https://docs.oracle.com/en/cloud/saas/human-resources/25a/)

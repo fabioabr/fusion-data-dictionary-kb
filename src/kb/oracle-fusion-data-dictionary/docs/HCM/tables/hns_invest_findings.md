@@ -112,6 +112,29 @@ WHERE  f.SEVERITY = 'CRITICAL';
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[hnsinvestigationpvo|HNSInvestigationPVO]] (HCM · BICC: 14/14)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | HNSInvestFindingsPEOCreatedBy | ✅ |
+| CREATION_DATE | HNSInvestFindingsPEOCreationDate | ✅ |
+| DELETED_FLAG | HNSInvestFindingsPEODeletedFlag | ✅ |
+| FINDING_ID | HNSInvestFindingsPEOFindingId | ✅ |
+| FINDING_ISSUE_FLAG | HNSInvestFindingsPEOFindingIssueFlag | ✅ |
+| FINDING_NOTES | HNSInvestFindingsPEOFindingNotes | ✅ |
+| FINDING_RESPONSE | HNSInvestFindingsPEOFindingResponse | ✅ |
+| FINDING_SUMMARY | HNSInvestFindingsPEOFindingSummary | ✅ |
+| INVESTIGATE_ID | HNSInvestFindingsPEOInvestigateId | ✅ |
+| LAST_UPDATE_DATE | HNSInvestFindingsPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | HNSInvestFindingsPEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | HNSInvestFindingsPEOLastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | HNSInvestFindingsPEObjectVersionNumber | ✅ |
+| SEVERITY_LEVEL_CODE | HNSInvestFindingsPEOSeverityLevelCode | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — HNS_INVEST_FINDINGS](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/hnsinvestfindings.html)

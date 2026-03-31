@@ -103,6 +103,29 @@ WHERE  par.ABSENCE_ATTENDANCE_ID = :p_absence_id;
 - A duração pode diferir entre assignments se o colaborador tem jornadas diferentes.
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[absenceeventspvo|AbsenceEventsPVO]] (HCM · BICC: 3/14)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ABSENCE_ATTENDANCE_ID | AbsenceAssignmentPEOAbsenceAttendanceId | ✅ |
+| ABSENCE_DAYS | AbsenceAssignmentPEOAbsenceDays | — |
+| ABSENCE_HOURS | AbsenceAssignmentPEOAbsenceHours | — |
+| ASG_ABSENCE_RECORDING_ID | AsgAbsenceRecordingId | ✅ |
+| ASSIGNMENT_ID | AbsenceAssignmentPEOAssignmentId | — |
+| AUTHORISING_PERSON_ID | AbsenceAssignmentPEOAuthorisingPersonId | — |
+| CREATED_BY | AbsenceAssignmentPEOCreatedBy | — |
+| CREATION_DATE | AbsenceAssignmentPEOCreationDate | — |
+| LAST_UPDATE_DATE | AbsenceAssignmentPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | AbsenceAssignmentPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | AbsenceAssignmentPEOLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | AbsenceAssignmentPEOObjectVersionNumber | — |
+| PERSON_ID | AbsenceAssignmentPEOPersonId | — |
+| REPLACEMENT_PERSON_ID | AbsenceAssignmentPEOReplacementPersonId | — |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — PER_ASG_ABSENCE_RECORDING](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/perasgabsencerecording.html)

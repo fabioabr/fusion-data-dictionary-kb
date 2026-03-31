@@ -39,7 +39,6 @@ View que exibe o status atual de cada versão de cartão de ponto, incluindo est
 > [!note] Sufixo _V
 > O sufixo `_V` indica **view** — objeto somente leitura que consolida dados de uma ou mais tabelas para facilitar consultas.
 
-
 ---
 
 ## 🧠 Propósito de Negócio
@@ -102,6 +101,28 @@ WHERE  t.STATUS_CODE = 'APPROVED'
 
 - View somente leitura: não permite INSERT, UPDATE ou DELETE direto.
 - Área funcional: Time Card dentro do Oracle Fusion Cloud HCM.
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[historicrptabstimeentrypvo|HistoricRptAbsTimeEntryPVO]] (HCM)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| MAX_A_USER_STATUS_ID | TimeCardVersionStatusPEOMaxAUserStatusId | — |
+| MAX_D_UI_STATUS_ID | TimeCardVersionStatusPEOMaxDUiStatusId | — |
+| TM_BLDG_BLK_ID | TimeCardVersionStatusPEOTmBldgBlkId | — |
+| TM_BLDG_BLK_VERSION | TimeCardVersionStatusPEOTmBldgBlkVersion | — |
+
+### [[rptabstimeentrypvo|RptAbsTimeEntryPVO]] (HCM)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| MAX_A_USER_STATUS_ID | TimeCardVersionStatusPEOMaxAUserStatusId | — |
+| MAX_D_UI_STATUS_ID | TimeCardVersionStatusPEOMaxDUiStatusId | — |
+| TM_BLDG_BLK_ID | TimeCardVersionStatusPEOTmBldgBlkId | — |
+| TM_BLDG_BLK_VERSION | TimeCardVersionStatusPEOTmBldgBlkVersion | — |
 
 ---
 

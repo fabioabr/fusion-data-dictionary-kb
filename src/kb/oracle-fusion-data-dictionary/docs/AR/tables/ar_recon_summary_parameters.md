@@ -83,6 +83,41 @@ SELECT rsp.RECON_PARAMETER_ID,
 - Execuções com `STATUS = 'ERROR'` devem ser investigadas e reexecutadas.
 - A reconciliação deve ser executada após a transferência de journals para o GL e antes do fechamento do período.
 
+## 🔗 PVOs Relacionados
+
+### [[receivablesreconciliationparameterpvo|ReceivablesReconciliationParameterPVO]] (AR · BICC: 15/26)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BALANCING_SEGMENT_FROM | ReconParamBalancingSegmentFrom | ✅ |
+| BALANCING_SEGMENT_TO | ReconParamBalancingSegmentTo | ✅ |
+| BU_ID | ReconParamBuId | — |
+| COST_CENTRE_SEGMENT_FROM | ReconParamCostCentreSegmentFrom | — |
+| COST_CENTRE_SEGMENT_TO | ReconParamCostCentreSegmentTo | — |
+| CREATED_BY | ReconParamCreatedBy | — |
+| CREATION_DATE | ReconParamCreationDate | — |
+| INCLUDE_INTERCOMPANY_TRX | ReconParamIncludeIntercompanyTrx | ✅ |
+| INCLUDE_ON_ACCOUNT_ITEM | ReconParamIncludeOnAccountItem | ✅ |
+| INCLUDE_UNAPP_UNID_RECEIPTS | ReconParamIncludeUnappUnidReceipts | ✅ |
+| INTERCOMPANY_SEGMENT_FROM | ReconParamIntercompanySegmentFrom | — |
+| INTERCOMPANY_SEGMENT_TO | ReconParamIntercompanySegmentTo | — |
+| JOB_DEFINITION_NAME | ReconParamJobDefinitionName | — |
+| JOB_DEFINITION_PACKAGE | ReconParamJobDefinitionPackage | — |
+| LAST_UPDATE_DATE | ReconParamLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ReconParamLastUpdateLogin | — |
+| LAST_UPDATED_BY | ReconParamLastUpdatedBy | ✅ |
+| LEDGER_ID | ReconParamLedgerId | — |
+| NATURAL_ACCOUNT_SEGMENT_FROM | ReconParamNaturalAccountSegmentFrom | ✅ |
+| NATURAL_ACCOUNT_SEGMENT_TO | ReconParamNaturalAccountSegmentTo | ✅ |
+| PERIOD_END_DATE | ReconParamPeriodEndDate | ✅ |
+| PERIOD_NAME | ReconParamPeriodName | ✅ |
+| PERIOD_START_DATE | ReconParamPeriodStartDate | ✅ |
+| RECON_SUMMARY_PARAM_ID | ReconSummaryParamId | ✅ |
+| REQUEST_ID | ReconParamRequestId | ✅ |
+| REQUEST_NAME | ReconParamRequestName | ✅ |
+
+---
+
 ## 📚 Referências
 
 - Oracle Fusion Cloud Financials — Accounts Receivable Tables (OEDMF Release 13).

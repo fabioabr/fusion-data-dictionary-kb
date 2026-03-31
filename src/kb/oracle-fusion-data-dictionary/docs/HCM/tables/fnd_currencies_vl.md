@@ -68,3 +68,125 @@ updated_at: 2026-03-26
 ## 📎 Uso Típico
 
 (a ser preenchido na etapa 03)
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[currencypvo|CurrencyPVO]] (HCM · BICC: 4/18)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CONTEXT | CurrencyPEOContext | — |
+| CURRENCY_CODE | CurrencyPEOCurrencyCode | ✅ |
+| CURRENCY_FLAG | CurrencyPEOCurrencyFlag | — |
+| DERIVE_EFFECTIVE | CurrencyPEODeriveEffective | — |
+| DERIVE_FACTOR | CurrencyPEODeriveFactor | — |
+| DERIVE_TYPE | CurrencyPEODeriveType | — |
+| DESCRIPTION | CurrencyPEODescription | ✅ |
+| ENABLED_FLAG | CurrencyPEOEnabledFlag | — |
+| END_DATE_ACTIVE | CurrencyPEOEndDateActive | — |
+| EXTENDED_PRECISION | CurrencyPEOExtendedPrecision | — |
+| ISO_FLAG | CurrencyPEOIsoFlag | — |
+| ISSUING_TERRITORY_CODE | CurrencyPEOIssuingTerritoryCode | — |
+| LAST_UPDATE_DATE | CurrencyPEOLastUpdateDate | ✅ |
+| MINIMUM_ACCOUNTABLE_UNIT | CurrencyPEOMinimumAccountableUnit | — |
+| NAME | CurrencyPEOName | ✅ |
+| PRECISION | CurrencyPEOPrecision | — |
+| START_DATE_ACTIVE | CurrencyPEOStartDateActive | — |
+| SYMBOL | CurrencyPEOSymbol | — |
+
+### [[ledgerpvo|LedgerPVO]] (GL · BICC: 1/17)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CONTEXT | CurrencyContext | — |
+| CURRENCY_CODE | CurrencyCurrencyCode | ✅ |
+| CURRENCY_FLAG | CurrencyCurrencyFlag | — |
+| DERIVE_EFFECTIVE | CurrencyDeriveEffective | — |
+| DERIVE_FACTOR | CurrencyDeriveFactor | — |
+| DERIVE_TYPE | CurrencyDeriveType | — |
+| DESCRIPTION | CurrencyDescription | — |
+| ENABLED_FLAG | CurrencyEnabledFlag | — |
+| END_DATE_ACTIVE | CurrencyEndDateActive | — |
+| EXTENDED_PRECISION | CurrencyExtendedPrecision | — |
+| ISO_FLAG | CurrencyIsoFlag | — |
+| ISSUING_TERRITORY_CODE | CurrencyIssuingTerritoryCode | — |
+| MINIMUM_ACCOUNTABLE_UNIT | CurrencyMinimumAccountableUnit | — |
+| NAME | CurrencyName | — |
+| PRECISION | CurrencyPrecision | — |
+| START_DATE_ACTIVE | CurrencyStartDateActive | — |
+| SYMBOL | CurrencySymbol | — |
+
+### [[ledgersetpvo|LedgerSetPVO]] (GL)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CONTEXT | CurrencyContext | — |
+| CURRENCY_CODE | CurrencyCurrencyCode | — |
+| CURRENCY_FLAG | CurrencyCurrencyFlag | — |
+| DERIVE_EFFECTIVE | CurrencyDeriveEffective | — |
+| DERIVE_FACTOR | CurrencyDeriveFactor | — |
+| DERIVE_TYPE | CurrencyDeriveType | — |
+| DESCRIPTION | CurrencyDescription | — |
+| ENABLED_FLAG | CurrencyEnabledFlag | — |
+| END_DATE_ACTIVE | CurrencyEndDateActive | — |
+| EXTENDED_PRECISION | CurrencyExtendedPrecision | — |
+| ISO_FLAG | CurrencyIsoFlag | — |
+| ISSUING_TERRITORY_CODE | CurrencyIssuingTerritoryCode | — |
+| MINIMUM_ACCOUNTABLE_UNIT | CurrencyMinimumAccountableUnit | — |
+| NAME | CurrencyName | — |
+| PRECISION | CurrencyPrecision | — |
+| START_DATE_ACTIVE | CurrencyStartDateActive | — |
+| SYMBOL | CurrencySymbol | — |
+
+### [[project|Project]] (OTHER)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CURRENCY_CODE | ProjectCurrencyCodePEOCurrencyCode | — |
+| CURRENCY_CODE | ProjectFunctionalCurrencyPEOCurrencyCode | — |
+| DESCRIPTION | ProjectCurrencyCodePEODescription | — |
+| DESCRIPTION | ProjectFunctionalCurrencyPEODescription | — |
+| NAME | ProjectCurrencyCodePEOName | — |
+| NAME | ProjectFunctionalCurrencyPEOName | — |
+
+### [[projectcommitmentpvo|ProjectCommitmentPVO]] (OTHER)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CURRENCY_CODE | CurrencyPEOCurrencyCode | — |
+| NAME | CurrencyPEOCurrencyName | — |
+
+### [[projectexec|ProjectExec]] (OTHER)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CURRENCY_CODE | ProjectCurrencyCodePEOCurrencyCode | — |
+| CURRENCY_CODE | ProjectFunctionalCurrencyPEOCurrencyCode | — |
+| DESCRIPTION | ProjectCurrencyCodePEODescription | — |
+| DESCRIPTION | ProjectFunctionalCurrencyPEODescription | — |
+| NAME | ProjectCurrencyCodePEOName | — |
+| NAME | ProjectFunctionalCurrencyPEOName | — |
+
+### [[projectrefpvo|ProjectRefPVO]] (OTHER)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CURRENCY_CODE | ProjectCurrencyCodePEOCurrencyCode | — |
+| CURRENCY_CODE | ProjectFunctionalCurrencyPEOCurrencyCode | — |
+| DESCRIPTION | ProjectCurrencyCodePEODescription | — |
+| DESCRIPTION | ProjectFunctionalCurrencyPEODescription | — |
+| NAME | ProjectCurrencyCodePEOName | — |
+| NAME | ProjectFunctionalCurrencyPEOName | — |
+
+### [[projectview|ProjectView]] (OTHER)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CURRENCY_CODE | ProjectCurrencyCodePEOCurrencyCode | — |
+| CURRENCY_CODE | ProjectFunctionalCurrencyPEOCurrencyCode | — |
+| DESCRIPTION | ProjectCurrencyCodePEODescription | — |
+| DESCRIPTION | ProjectFunctionalCurrencyPEODescription | — |
+| NAME | ProjectCurrencyCodePEOName | — |
+| NAME | ProjectFunctionalCurrencyPEOName | — |

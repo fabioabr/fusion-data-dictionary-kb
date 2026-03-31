@@ -129,6 +129,58 @@ WHERE  t.STATUS = 'ERROR'
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[transmissionextractpvo|TransmissionExtractPVO]] (OTHER · BICC: 27/43)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| AMOUNT | ArTransmissionAmount | ✅ |
+| ATTRIBUTE1 | ArTransmissionAttribute1 | — |
+| ATTRIBUTE10 | ArTransmissionAttribute10 | — |
+| ATTRIBUTE11 | ArTransmissionAttribute11 | — |
+| ATTRIBUTE12 | ArTransmissionAttribute12 | — |
+| ATTRIBUTE13 | ArTransmissionAttribute13 | — |
+| ATTRIBUTE14 | ArTransmissionAttribute14 | — |
+| ATTRIBUTE15 | ArTransmissionAttribute15 | — |
+| ATTRIBUTE2 | ArTransmissionAttribute2 | — |
+| ATTRIBUTE3 | ArTransmissionAttribute3 | — |
+| ATTRIBUTE4 | ArTransmissionAttribute4 | — |
+| ATTRIBUTE5 | ArTransmissionAttribute5 | — |
+| ATTRIBUTE6 | ArTransmissionAttribute6 | — |
+| ATTRIBUTE7 | ArTransmissionAttribute7 | — |
+| ATTRIBUTE8 | ArTransmissionAttribute8 | — |
+| ATTRIBUTE9 | ArTransmissionAttribute9 | — |
+| ATTRIBUTE_CATEGORY | ArTransmissionAttributeCategory | — |
+| COMMENTS | ArTransmissionComments | ✅ |
+| COUNT | ArTransmissionCount1 | ✅ |
+| CREATED_BY | ArTransmissionCreatedBy | ✅ |
+| CREATION_DATE | ArTransmissionCreationDate | ✅ |
+| DESTINATION | ArTransmissionDestination | ✅ |
+| ERROR_COUNT | ArTransmissionErrorCount | ✅ |
+| LAST_UPDATE_DATE | ArTransmissionLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ArTransmissionLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | ArTransmissionLastUpdatedBy | ✅ |
+| LATEST_REQUEST_ID | ArTransmissionLatestRequestId | ✅ |
+| OBJECT_VERSION_NUMBER | ArTransmissionObjectVersionNumber | ✅ |
+| ORG_ID | ArTransmissionOrgId | ✅ |
+| ORIGIN | ArTransmissionOrigin | ✅ |
+| REQUESTED_GL_DATE | ArTransmissionRequestedGlDate | ✅ |
+| REQUESTED_LOCKBOX_ID | ArTransmissionRequestedLockboxId | ✅ |
+| REQUESTED_TRANS_FORMAT_ID | ArTransmissionRequestedTransFormatId | ✅ |
+| SCORING_MODEL_ID | ArTransmissionScoringModelId | ✅ |
+| SOURCE_TYPE_FLAG | ArTransmissionSourceTypeFlag | ✅ |
+| STATUS | ArTransmissionStatus | ✅ |
+| TIME | ArTransmissionTime | ✅ |
+| TRANS_DATE | ArTransmissionTransDate | ✅ |
+| TRANSMISSION_ID | ArTransmissionTransmissionId | ✅ |
+| TRANSMISSION_NAME | ArTransmissionTransmissionName | ✅ |
+| TRANSMISSION_REQUEST_ID | ArTransmissionTransmissionRequestId | ✅ |
+| VALIDATED_AMOUNT | ArTransmissionValidatedAmount | ✅ |
+| VALIDATED_COUNT | ArTransmissionValidatedCount | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — AR_TRANSMISSIONS_ALL](https://docs.oracle.com/en/cloud/saas/financials/25a/oedmf/artransmissionsall-25186.html)

@@ -99,6 +99,16 @@ ORDER BY pc.RANKING;
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[plancandidatespvo|PlanCandidatesPVO]] (HCM)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CANDIDATE_SINCE | CandidateSince | — |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Fusion HCM Tables and Views](https://docs.oracle.com/en/cloud/saas/human-resources/25a/)

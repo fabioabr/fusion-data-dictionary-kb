@@ -109,6 +109,225 @@ ORDER BY pao.EFFECTIVE_DATE DESC;
 - Utilizada em conjunto com PER_ALL_ASSIGNMENTS_M para rastrear mudanças no assignment.
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[actionoccurrencespvo|ActionOccurrencesPVO]] (GL · BICC: 4/32)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_DATE | ActionOccurrencesPEOActionDate | — |
+| ACTION_DATE | SourceAOPEOActionDate | — |
+| ACTION_ID | ActionOccurrencesPEOActionId | ✅ |
+| ACTION_ID | SourceAOPEOActionId | — |
+| ACTION_OCCURRENCE_ID | ActionOccurrenceId | ✅ |
+| ACTION_OCCURRENCE_ID | SourceAOPEOActionOccurrenceId | — |
+| ACTION_REASON_ID | ActionOccurrencesPEOActionReasonId | ✅ |
+| ACTION_REASON_ID | SourceAOPEOActionReasonId | — |
+| ACTION_TYPE_CODE | ActionOccurrencesPEOActionTypeCode | — |
+| BUSINESS_GROUP_ID | ActionOccurrencesPEOBusinessGroupId | — |
+| CREATED_BY | ActionOccurrencesPEOCreatedBy | — |
+| CREATION_DATE | ActionOccurrencesPEOCreationDate | — |
+| ENTITY_ID | ActionOccurrencesPEOEntityId | — |
+| ENTITY_ID | SourceAOPEOEntityId | — |
+| ENTITY_TYPE | ActionOccurrencesPEOEntityType | — |
+| ENTITY_TYPE | SourceAOPEOEntityType | — |
+| FREEZE_START_DATE | ActionOccurrencesPEOFreezeStartDate | — |
+| FREEZE_UNTIL_DATE | ActionOccurrencesPEOFreezeUntilDate | — |
+| LAST_UPDATE_DATE | ActionOccurrencesPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ActionOccurrencesPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | ActionOccurrencesPEOLastUpdatedBy | — |
+| LEGAL_ENTITY_ID | ActionOccurrencesPEOLegalEntityId | — |
+| OBJECT_VERSION_NUMBER | ActionOccurrencesPEOObjectVersionNumber | — |
+| PARENT_ENTITY_KEY_ID | ActionOccurrencesPEOParentEntityKeyId | — |
+| PARENT_ENTITY_TYPE | ActionOccurrencesPEOParentEntityType | — |
+| PROPOSED_ACTION_ID | ActionOccurrencesPEOProposedActionId | — |
+| PROPOSED_ACTION_TYPE | ActionOccurrencesPEOProposedActionType | — |
+| PROPOSED_REASON_ID | ActionOccurrencesPEOProposedReasonId | — |
+| PROPOSED_START_DATE | ActionOccurrencesPEOProposedStartDate | — |
+| PROPOSED_WORKER_TYPE | ActionOccurrencesPEOProposedWorkerType | — |
+| REF_ACTION_OCCURRENCE_ID | ActionOccurrencesPEORefActionOccurrenceId | — |
+| SUBMITTED_BY | ActionOccurrencesPEOSubmittedBy | — |
+
+### [[businessunitpvo|BusinessUnitPVO]] (HCM · BICC: 1/3)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_OCCURRENCE_ID | ActionOccurrencesPEOActionOccurrenceId | — |
+| ACTION_REASON_ID | ActionOccurrencesPEOActionReasonId | — |
+| LAST_UPDATE_DATE | ActionOccurrencesPEOLastUpdateDate | ✅ |
+
+### [[departmentpvo|DepartmentPVO]] (HCM · BICC: 1/3)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_OCCURRENCE_ID | ActionOccurrencesPEOActionOccurrenceId | — |
+| ACTION_REASON_ID | ActionOccurrencesPEOActionReasonId | — |
+| LAST_UPDATE_DATE | ActionOccurrencesPEOLastUpdateDate | ✅ |
+
+### [[departmentpvoviewall|DepartmentPVOViewAll]] (HCM · BICC: 1/3)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_OCCURRENCE_ID | ActionOccurrencesPEOActionOccurrenceId | — |
+| ACTION_REASON_ID | ActionOccurrencesPEOActionReasonId | — |
+| LAST_UPDATE_DATE | ActionOccurrencesPEOLastUpdateDate | ✅ |
+
+### [[enterprisepvo|EnterprisePVO]] (HCM)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_OCCURRENCE_ID | ActionOccurrencesPEOActionOccurrenceId | — |
+| ACTION_REASON_ID | ActionOccurrencesPEOActionReasonId | — |
+| LAST_UPDATE_DATE | ActionOccurrencesPEOLastUpdateDate | — |
+
+### [[gradepvo|GradePVO]] (GL)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_DATE | ActionOccurrencesPEOActionDate | — |
+| ACTION_ID | ActionOccurrencesPEOActionId | — |
+| ACTION_OCCURRENCE_ID | ActionOccurrencesPEOActionOccurrenceId | — |
+| ACTION_REASON_ID | ActionOccurrencesPEOActionReasonId | — |
+
+### [[gradesteppvo|GradeStepPVO]] (GL)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_DATE | ActionOccurrencesPEOActionDate | — |
+| ACTION_ID | ActionOccurrencesPEOActionId | — |
+| ACTION_OCCURRENCE_ID | ActionOccurrencesPEOActionOccurrenceId | — |
+| ACTION_REASON_ID | ActionOccurrencesPEOActionReasonId | — |
+
+### [[hrlocationsbasepvo|HRLocationsBasePVO]] (HCM · BICC: 1/3)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_OCCURRENCE_ID | ActionOccurrencesPEOActionOccurrenceId | — |
+| ACTION_REASON_ID | ActionOccurrencesPEOActionReasonId | — |
+| LAST_UPDATE_DATE | ActionOccurrencesPEOLastUpdateDate | ✅ |
+
+### [[hrlocationsbasepvoviewall|HRLocationsBasePVOViewAll]] (HCM · BICC: 1/3)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_OCCURRENCE_ID | ActionOccurrencesPEOActionOccurrenceId | — |
+| ACTION_REASON_ID | ActionOccurrencesPEOActionReasonId | — |
+| LAST_UPDATE_DATE | ActionOccurrencesPEOLastUpdateDate | ✅ |
+
+### [[hrlocationspvo|HRLocationsPVO]] (HCM · BICC: 3/3)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_OCCURRENCE_ID | ActionOccurrencesPEOActionOccurrenceId | ✅ |
+| ACTION_REASON_ID | ActionOccurrencesPEOActionReasonId | ✅ |
+| LAST_UPDATE_DATE | ActionOccurrencesPEOLastUpdateDate | ✅ |
+
+### [[hrlocationspvoviewall|HRLocationsPVOViewAll]] (HCM · BICC: 1/3)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_OCCURRENCE_ID | ActionOccurrencesPEOActionOccurrenceId | — |
+| ACTION_REASON_ID | ActionOccurrencesPEOActionReasonId | — |
+| LAST_UPDATE_DATE | ActionOccurrencesPEOLastUpdateDate | ✅ |
+
+### [[legalemployerpvo|LegalEmployerPVO]] (HCM · BICC: 1/3)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_OCCURRENCE_ID | ActionOccurrencesPEOActionOccurrenceId | — |
+| ACTION_REASON_ID | ActionOccurrencesPEOActionReasonId | — |
+| LAST_UPDATE_DATE | ActionOccurrencesPEOLastUpdateDate | ✅ |
+
+### [[organizationpvo|OrganizationPVO]] (HCM)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_OCCURRENCE_ID | ActionOccurrencesPEOActionOccurrenceId | — |
+| ACTION_REASON_ID | ActionOccurrencesPEOActionReasonId | — |
+| LAST_UPDATE_DATE | ActionOccurrencesPEOLastUpdateDate | — |
+
+### [[payrollstatutoryunitpvo|PayrollStatutoryUnitPVO]] (HCM)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_OCCURRENCE_ID | ActionOccurrencesPEOActionOccurrenceId | — |
+| ACTION_REASON_ID | ActionOccurrencesPEOActionReasonId | — |
+| LAST_UPDATE_DATE | ActionOccurrencesPEOLastUpdateDate | — |
+
+### [[positionpvo|PositionPVO]] (PO · BICC: 1/3)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_OCCURRENCE_ID | ActionOccurrencesPEOActionOccurrenceId | — |
+| ACTION_REASON_ID | ActionOccurrencesPEOActionReasonId | — |
+| LAST_UPDATE_DATE | ActionOccurrencesPEOLastUpdateDate | ✅ |
+
+### [[positionpvoviewall|PositionPVOViewAll]] (PO · BICC: 1/3)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_OCCURRENCE_ID | ActionOccurrencesPEOActionOccurrenceId | — |
+| ACTION_REASON_ID | ActionOccurrencesPEOActionReasonId | — |
+| LAST_UPDATE_DATE | ActionOccurrencesPEOLastUpdateDate | ✅ |
+
+### [[projectexpenditureorganizationpvo|ProjectExpenditureOrganizationPVO]] (HCM)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_OCCURRENCE_ID | ActionOccurrencesPEOActionOccurrenceId | — |
+| ACTION_REASON_ID | ActionOccurrencesPEOActionReasonId | — |
+| LAST_UPDATE_DATE | ActionOccurrencesPEOLastUpdateDate | — |
+
+### [[projecttaskowningorganizationpvo|ProjectTaskOwningOrganizationPVO]] (HCM)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_OCCURRENCE_ID | ActionOccurrencesPEOActionOccurrenceId | — |
+| ACTION_REASON_ID | ActionOccurrencesPEOActionReasonId | — |
+| LAST_UPDATE_DATE | ActionOccurrencesPEOLastUpdateDate | — |
+
+### [[projectunitclassificationpvo|ProjectUnitClassificationPVO]] (HCM)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_OCCURRENCE_ID | ActionOccurrencesPEOActionOccurrenceId | — |
+| ACTION_REASON_ID | ActionOccurrencesPEOActionReasonId | — |
+| LAST_UPDATE_DATE | ActionOccurrencesPEOLastUpdateDate | — |
+
+### [[reportingestablishmentpvo|ReportingEstablishmentPVO]] (HCM)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_OCCURRENCE_ID | ActionOccurrencesPEOActionOccurrenceId | — |
+| ACTION_REASON_ID | ActionOccurrencesPEOActionReasonId | — |
+| LAST_UPDATE_DATE | ActionOccurrencesPEOLastUpdateDate | — |
+
+### [[reportingestablishmentpvoviewall|ReportingEstablishmentPVOViewAll]] (HCM)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_OCCURRENCE_ID | ActionOccurrencesPEOActionOccurrenceId | — |
+| ACTION_REASON_ID | ActionOccurrencesPEOActionReasonId | — |
+| LAST_UPDATE_DATE | ActionOccurrencesPEOLastUpdateDate | — |
+
+### [[taxreportingunitpvo|TaxReportingUnitPVO]] (HCM)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_OCCURRENCE_ID | ActionOccurrencesPEOActionOccurrenceId | — |
+| ACTION_REASON_ID | ActionOccurrencesPEOActionReasonId | — |
+| LAST_UPDATE_DATE | ActionOccurrencesPEOLastUpdateDate | — |
+
+### [[unionpvo|UnionPVO]] (HCM · BICC: 1/3)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_OCCURRENCE_ID | ActionOccurrencesPEOActionOccurrenceId | — |
+| ACTION_REASON_ID | ActionOccurrencesPEOActionReasonId | — |
+| LAST_UPDATE_DATE | ActionOccurrencesPEOLastUpdateDate | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — PER_ACTION_OCCURRENCES](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/peractionoccurrences.html)

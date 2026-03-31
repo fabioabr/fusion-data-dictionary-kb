@@ -35,8 +35,6 @@ updated_at: 2026-03-25
 
 Tabela central de regras do módulo de workforce management, contendo definições de regras de cálculo, validação e processamento aplicadas a registros de tempo e ausências.
 
-
-
 ---
 
 ## 🧠 Propósito de Negócio
@@ -102,6 +100,119 @@ ORDER BY t.PRIORITY
 ## 🔒 Observações
 
 - Área funcional: Rules Engine dentro do Oracle Fusion Cloud HCM.
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[ruleinputpvo|RuleInputPVO]] (GL · BICC: 24/29)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CLASSIFICATION | RulePEOClassification | ✅ |
+| CREATED_BY | RulePEOCreatedBy | ✅ |
+| CREATION_DATE | RulePEOCreationDate | ✅ |
+| DESCRIPTION | RulePEODescription | ✅ |
+| DFLT_ALLOCATION_ID | RulePEODfltAllocationId | ✅ |
+| ENTERPRISE_ID | RulePEOEnterpriseId | — |
+| FAST_FORMULA_EXEC_TYPE | RulePEOFastFormulaExecType | — |
+| INCLUDE_EMPTY_TC | RulePEOIncludeEmptyTc | ✅ |
+| LAST_UPDATE_DATE | RulePEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | RulePEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | RulePEOLastUpdatedBy | ✅ |
+| MODULE_ID | RulePEOModuleId | — |
+| OBJECT_VERSION_NUMBER | RulePEOObjectVersionNumber | — |
+| PROCESS_TYPE | RulePEOProcessType | ✅ |
+| PRS_FORMULA_ID | RulePEOPrsFormulaId | ✅ |
+| PRS_SCRIPT_ID | RulePEOPrsScriptId | — |
+| RULE_EXEC_TYPE | RulePEORuleExecType | ✅ |
+| RULE_ID | RulePEORuleId | ✅ |
+| RULE_NAME | RulePEORuleName | ✅ |
+| RULE_SUB_TYPE | RulePEORuleSubType | ✅ |
+| RULE_TMPLTS_ID | RulePEORuleTmpltsId | ✅ |
+| RULE_TYPE | RulePEORuleType | ✅ |
+| RUN_EVENT_DELETE | RulePEORunEventDelete | ✅ |
+| RUN_EVENT_RESUB | RulePEORunEventResub | ✅ |
+| RUN_EVENT_SAVE | RulePEORunEventSave | ✅ |
+| RUN_EVENT_SUB | RulePEORunEventSub | ✅ |
+| RUN_SUMMATION_LEVEL | RulePEORunSummationLevel | ✅ |
+| RUN_TBB_LEVEL | RulePEORunTbbLevel | ✅ |
+| SUPPRESS_DUP_MSGS | RulePEOSuppressDupMsgs | ✅ |
+
+### [[ruleoutputpvo|RuleOutputPVO]] (GL · BICC: 24/29)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CLASSIFICATION | RulePEOClassification | ✅ |
+| CREATED_BY | RulePEOCreatedBy | ✅ |
+| CREATION_DATE | RulePEOCreationDate | ✅ |
+| DESCRIPTION | RulePEODescription | ✅ |
+| DFLT_ALLOCATION_ID | RulePEODfltAllocationId | ✅ |
+| ENTERPRISE_ID | RulePEOEnterpriseId | — |
+| FAST_FORMULA_EXEC_TYPE | RulePEOFastFormulaExecType | — |
+| INCLUDE_EMPTY_TC | RulePEOIncludeEmptyTc | ✅ |
+| LAST_UPDATE_DATE | RulePEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | RulePEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | RulePEOLastUpdatedBy | ✅ |
+| MODULE_ID | RulePEOModuleId | — |
+| OBJECT_VERSION_NUMBER | RulePEOObjectVersionNumber | — |
+| PROCESS_TYPE | RulePEOProcessType | ✅ |
+| PRS_FORMULA_ID | RulePEOPrsFormulaId | ✅ |
+| PRS_SCRIPT_ID | RulePEOPrsScriptId | — |
+| RULE_EXEC_TYPE | RulePEORuleExecType | ✅ |
+| RULE_ID | RulePEORuleId | ✅ |
+| RULE_NAME | RulePEORuleName | ✅ |
+| RULE_SUB_TYPE | RulePEORuleSubType | ✅ |
+| RULE_TMPLTS_ID | RulePEORuleTmpltsId | ✅ |
+| RULE_TYPE | RulePEORuleType | ✅ |
+| RUN_EVENT_DELETE | RulePEORunEventDelete | ✅ |
+| RUN_EVENT_RESUB | RulePEORunEventResub | ✅ |
+| RUN_EVENT_SAVE | RulePEORunEventSave | ✅ |
+| RUN_EVENT_SUB | RulePEORunEventSub | ✅ |
+| RUN_SUMMATION_LEVEL | RulePEORunSummationLevel | ✅ |
+| RUN_TBB_LEVEL | RulePEORunTbbLevel | ✅ |
+| SUPPRESS_DUP_MSGS | RulePEOSuppressDupMsgs | ✅ |
+
+### [[rulepvo|RulePVO]] (GL · BICC: 24/29)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CLASSIFICATION | RulePEOClassification | ✅ |
+| CREATED_BY | RulePEOCreatedBy | ✅ |
+| CREATION_DATE | RulePEOCreationDate | ✅ |
+| DESCRIPTION | RulePEODescription | ✅ |
+| DFLT_ALLOCATION_ID | RulePEODfltAllocationId | ✅ |
+| ENTERPRISE_ID | RulePEOEnterpriseId | — |
+| FAST_FORMULA_EXEC_TYPE | RulePEOFastFormulaExecType | — |
+| INCLUDE_EMPTY_TC | RulePEOIncludeEmptyTc | ✅ |
+| LAST_UPDATE_DATE | RulePEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | RulePEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | RulePEOLastUpdatedBy | ✅ |
+| MODULE_ID | RulePEOModuleId | — |
+| OBJECT_VERSION_NUMBER | RulePEOObjectVersionNumber | — |
+| PROCESS_TYPE | RulePEOProcessType | ✅ |
+| PRS_FORMULA_ID | RulePEOPrsFormulaId | ✅ |
+| PRS_SCRIPT_ID | RulePEOPrsScriptId | — |
+| RULE_EXEC_TYPE | RulePEORuleExecType | ✅ |
+| RULE_ID | RulePEORuleId | ✅ |
+| RULE_NAME | RulePEORuleName | ✅ |
+| RULE_SUB_TYPE | RulePEORuleSubType | ✅ |
+| RULE_TMPLTS_ID | RulePEORuleTmpltsId | ✅ |
+| RULE_TYPE | RulePEORuleType | ✅ |
+| RUN_EVENT_DELETE | RulePEORunEventDelete | ✅ |
+| RUN_EVENT_RESUB | RulePEORunEventResub | ✅ |
+| RUN_EVENT_SAVE | RulePEORunEventSave | ✅ |
+| RUN_EVENT_SUB | RulePEORunEventSub | ✅ |
+| RUN_SUMMATION_LEVEL | RulePEORunSummationLevel | ✅ |
+| RUN_TBB_LEVEL | RulePEORunTbbLevel | ✅ |
+| SUPPRESS_DUP_MSGS | RulePEOSuppressDupMsgs | ✅ |
+
+### [[rulesetmemberpvo|RuleSetMemberPVO]] (GL · BICC: 1/2)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| RULE_ID | MemberRulePEORuleId | — |
+| RULE_NAME | MemberRulePEORuleName | ✅ |
 
 ---
 

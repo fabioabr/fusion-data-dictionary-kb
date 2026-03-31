@@ -123,3 +123,14 @@ WHERE  (pii.TAX_PAYER_ID IS NULL OR pii.TAX_PAYER_ID = '')
 
 - [Oracle Docs — Supplier Sites PII](https://docs.oracle.com/en/cloud/saas/procurement/25a/oedmf/poz-tables.html)
 - [[po-module-data-dictionary]] — Dossiê do módulo Procurement
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[suppliersitepvo|SupplierSitePVO]] (PO)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| VAT_REGISTRATION_NUM | SupplierSitePiiVatRegistrationNum | — |
+| VENDOR_SITE_ID | SupplierSitePiiVendorSiteId | — |

@@ -99,6 +99,20 @@ ORDER BY fti.START_DATE;
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[retroelemententry|RetroElementEntry]] (HCM)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BASE_FLOW_TASK_ID | FlowTaskInstanceBaseFlowTaskId | — |
+| ESS_SERVICE_EXEC_ID | FlowTaskInstanceEssServiceExecId | — |
+| FLOW_INSTANCE_ID | FlowTaskInstanceFlowInstanceId | — |
+| FLOW_TASK_INSTANCE_ID | FlowTaskInstanceFlowTaskInstanceId | — |
+| STATUS | FlowTaskInstanceStatus | — |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — PAY_FLOW_TASK_INSTANCES](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/payflowtaskinstances.html)

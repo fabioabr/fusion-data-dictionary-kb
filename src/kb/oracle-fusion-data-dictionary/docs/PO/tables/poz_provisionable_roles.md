@@ -116,3 +116,13 @@ WHERE  pr.AUTO_PROVISION_FLAG = 'Y'
 
 - [Oracle Docs — Supplier Roles](https://docs.oracle.com/en/cloud/saas/procurement/25a/oedmf/poz-tables.html)
 - [[po-module-data-dictionary]] — Dossiê do módulo Procurement
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[supplierupreqpvo|SupplierUpReqPVO]] (PO)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ROLE_GUID | SupplierProvRolesRoleGuid | — |

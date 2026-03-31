@@ -129,6 +129,40 @@ ORDER BY bs.DISPLAY_ORDER, br.DISPLAY_ORDER;
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[negotiationresprequirementandvaluespvo|NegotiationRespRequirementAndValuesPVO]] (PO · BICC: 1/10)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| AUCTION_HEADER_ID | NegRespSectionsAuctionHeaderId6 | — |
+| BID_NUMBER | NegRespSectionsBidNumber2 | — |
+| CREATED_BY | NegRespSectionsCreatedBy6 | — |
+| CREATION_DATE | NegRespSectionsCreationDate6 | — |
+| LAST_UPDATE_DATE | NegRespSectionsLastUpdateDate6 | ✅ |
+| LAST_UPDATE_LOGIN | NegRespSectionsLastUpdateLogin6 | — |
+| LAST_UPDATED_BY | NegRespSectionsLastUpdatedBy6 | — |
+| OBJECT_VERSION_NUMBER | NegRespSectionsObjectVersionNumber6 | — |
+| SECTION_ID | NegRespSectionsSectionId3 | — |
+| SECTION_VISITED_FLAG | NegRespSectionsSectionVisitedFlag | — |
+
+### [[negotiationresprequirementpvo|NegotiationRespRequirementPVO]] (PO · BICC: 3/10)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| AUCTION_HEADER_ID | NegRespSectionsAuctionHeaderId1 | — |
+| BID_NUMBER | NegRespSectionsBidNumber1 | ✅ |
+| CREATED_BY | NegRespSectionsCreatedBy1 | — |
+| CREATION_DATE | NegRespSectionsCreationDate1 | — |
+| LAST_UPDATE_DATE | NegRespSectionsLastUpdateDate1 | ✅ |
+| LAST_UPDATE_LOGIN | NegRespSectionsLastUpdateLogin1 | — |
+| LAST_UPDATED_BY | NegRespSectionsLastUpdatedBy1 | — |
+| OBJECT_VERSION_NUMBER | NegRespSectionsObjectVersionNumber1 | — |
+| SECTION_ID | NegRespSectionsSectionId1 | ✅ |
+| SECTION_VISITED_FLAG | NegRespSectionsSectionVisitedFlag | — |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — PON_BID_SECTIONS](https://docs.oracle.com/en/cloud/saas/procurement/25a/oedmf/ponbidsections.html)

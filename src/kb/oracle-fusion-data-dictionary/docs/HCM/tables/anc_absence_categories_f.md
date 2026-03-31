@@ -44,7 +44,6 @@ Armazena as **categorias de ausência** do módulo Absence Management. Cada regi
 > [!note] Sufixo _F
 > O sufixo `_F` indica tabela **date-effective** — cada registro possui `EFFECTIVE_START_DATE` e `EFFECTIVE_END_DATE` controlando a vigência temporal.
 
-
 ---
 
 ## 🧠 Propósito de Negócio
@@ -114,6 +113,29 @@ WHERE  SYSDATE BETWEEN ac.EFFECTIVE_START_DATE AND ac.EFFECTIVE_END_DATE
 - O campo `LEGISLATION_CODE` permite configurações específicas por país.
 - A tabela de traduções (`_TL`) armazena o nome da categoria em múltiplos idiomas.
 - Alterações são rastreadas via `OBJECT_VERSION_NUMBER` para controle de concorrência.
+---
+
+## 🔗 PVOs Relacionados
+
+### [[absencecategorypvo|AbsenceCategoryPVO]] (GL · BICC: 5/14)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ABSENCE_CATEGORY_ID | AbsenceCategoryId | ✅ |
+| ANC_ABS_CATEGORY_F_ALTCD | AncAbsCategoryFAltcd | — |
+| CREATED_BY | CreatedBy | — |
+| CREATION_DATE | CreationDate | — |
+| EFFECTIVE_END_DATE | EffectiveEndDate | ✅ |
+| EFFECTIVE_START_DATE | EffectiveStartDate | ✅ |
+| ENTERPRISE_ID | EnterpriseId | — |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | — |
+| LAST_UPDATED_BY | LastUpdatedBy | — |
+| LEGISLATION_CODE | LegislationCode | — |
+| MODULE_ID | ModuleId | — |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | — |
+| STATUS | Status | ✅ |
+
 ---
 
 ## 📚 Referências

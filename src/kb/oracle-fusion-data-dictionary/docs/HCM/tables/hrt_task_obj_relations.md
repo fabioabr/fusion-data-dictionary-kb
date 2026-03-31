@@ -103,3 +103,69 @@ WHERE  tor.TASK_ID = :p_task_id;
 
 - [Oracle Docs — HRT_TASK_OBJ_RELATIONS](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/hrttaskobjrelations.html)
 - [[hcm-module-data-dictionary]] — Dossie do modulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[tasksreltionmeetingpvo|TasksReltionMeetingPVO]] (GL · BICC: 3/57)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ATTRIBUTE1 | TaskObjRelationsPEOAttribute1 | — |
+| ATTRIBUTE10 | TaskObjRelationsPEOAttribute10 | — |
+| ATTRIBUTE11 | TaskObjRelationsPEOAttribute11 | — |
+| ATTRIBUTE12 | TaskObjRelationsPEOAttribute12 | — |
+| ATTRIBUTE13 | TaskObjRelationsPEOAttribute13 | — |
+| ATTRIBUTE14 | TaskObjRelationsPEOAttribute14 | — |
+| ATTRIBUTE15 | TaskObjRelationsPEOAttribute15 | — |
+| ATTRIBUTE2 | TaskObjRelationsPEOAttribute2 | — |
+| ATTRIBUTE3 | TaskObjRelationsPEOAttribute3 | — |
+| ATTRIBUTE4 | TaskObjRelationsPEOAttribute4 | — |
+| ATTRIBUTE5 | TaskObjRelationsPEOAttribute5 | — |
+| ATTRIBUTE6 | TaskObjRelationsPEOAttribute6 | — |
+| ATTRIBUTE7 | TaskObjRelationsPEOAttribute7 | — |
+| ATTRIBUTE8 | TaskObjRelationsPEOAttribute8 | — |
+| ATTRIBUTE9 | TaskObjRelationsPEOAttribute9 | — |
+| ATTRIBUTE_CATEGORY | TaskObjRelationsPEOAttributeCategory | — |
+| ATTRIBUTE_DATE1 | TaskObjRelationsPEOAttributeDate1 | — |
+| ATTRIBUTE_DATE10 | TaskObjRelationsPEOAttributeDate10 | — |
+| ATTRIBUTE_DATE11 | TaskObjRelationsPEOAttributeDate11 | — |
+| ATTRIBUTE_DATE12 | TaskObjRelationsPEOAttributeDate12 | — |
+| ATTRIBUTE_DATE13 | TaskObjRelationsPEOAttributeDate13 | — |
+| ATTRIBUTE_DATE14 | TaskObjRelationsPEOAttributeDate14 | — |
+| ATTRIBUTE_DATE15 | TaskObjRelationsPEOAttributeDate15 | — |
+| ATTRIBUTE_DATE2 | TaskObjRelationsPEOAttributeDate2 | — |
+| ATTRIBUTE_DATE3 | TaskObjRelationsPEOAttributeDate3 | — |
+| ATTRIBUTE_DATE4 | TaskObjRelationsPEOAttributeDate4 | — |
+| ATTRIBUTE_DATE5 | TaskObjRelationsPEOAttributeDate5 | — |
+| ATTRIBUTE_DATE6 | TaskObjRelationsPEOAttributeDate6 | — |
+| ATTRIBUTE_DATE7 | TaskObjRelationsPEOAttributeDate7 | — |
+| ATTRIBUTE_DATE8 | TaskObjRelationsPEOAttributeDate8 | — |
+| ATTRIBUTE_DATE9 | TaskObjRelationsPEOAttributeDate9 | — |
+| ATTRIBUTE_NUMBER1 | TaskObjRelationsPEOAttributeNumber1 | — |
+| ATTRIBUTE_NUMBER10 | TaskObjRelationsPEOAttributeNumber10 | — |
+| ATTRIBUTE_NUMBER11 | TaskObjRelationsPEOAttributeNumber11 | — |
+| ATTRIBUTE_NUMBER12 | TaskObjRelationsPEOAttributeNumber12 | — |
+| ATTRIBUTE_NUMBER13 | TaskObjRelationsPEOAttributeNumber13 | — |
+| ATTRIBUTE_NUMBER14 | TaskObjRelationsPEOAttributeNumber14 | — |
+| ATTRIBUTE_NUMBER15 | TaskObjRelationsPEOAttributeNumber15 | — |
+| ATTRIBUTE_NUMBER2 | TaskObjRelationsPEOAttributeNumber2 | — |
+| ATTRIBUTE_NUMBER3 | TaskObjRelationsPEOAttributeNumber3 | — |
+| ATTRIBUTE_NUMBER4 | TaskObjRelationsPEOAttributeNumber4 | — |
+| ATTRIBUTE_NUMBER5 | TaskObjRelationsPEOAttributeNumber5 | — |
+| ATTRIBUTE_NUMBER6 | TaskObjRelationsPEOAttributeNumber6 | — |
+| ATTRIBUTE_NUMBER7 | TaskObjRelationsPEOAttributeNumber7 | — |
+| ATTRIBUTE_NUMBER8 | TaskObjRelationsPEOAttributeNumber8 | — |
+| ATTRIBUTE_NUMBER9 | TaskObjRelationsPEOAttributeNumber9 | — |
+| CREATED_BY | TaskObjRelationsPEOCreatedBy | — |
+| CREATION_DATE | TaskObjRelationsPEOCreationDate | — |
+| ENTERPRISE_ID | EnterpriseId | ✅ |
+| LAST_UPDATE_DATE | TaskObjRelationsPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | TaskObjRelationsPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | TaskObjRelationsPEOLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | TaskObjRelationsPEOObjectVersionNumber | — |
+| SRC_OBJECT_CODE | SrcObjectCode | — |
+| SRC_OBJECT_ID | TaskObjRelationsPEOSrcObjectId | — |
+| TASK_ID | TaskObjRelationsPEOTaskId | — |
+| TASK_OBJ_RELN_ID | TaskObjRelnId | ✅ |

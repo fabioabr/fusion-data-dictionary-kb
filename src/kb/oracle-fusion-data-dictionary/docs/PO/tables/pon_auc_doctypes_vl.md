@@ -136,3 +136,14 @@ WHERE  ah.AUCTION_HEADER_ID = :p_auction_header_id;
 
 - [Oracle Docs — PON_AUC_DOCTYPES_VL](https://docs.oracle.com/en/cloud/saas/procurement/25a/oedmf/ponaucdoctypesvl.html)
 - [[po-module-data-dictionary]] — Dossiê do módulo PO/Procurement
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[negotiationspvo|NegotiationsPVO]] (PO)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| DOCTYPE_ID | NegotiationDocumentTypeDoctypeId | — |
+| NAME | NegotiationDocumentTypeName | — |

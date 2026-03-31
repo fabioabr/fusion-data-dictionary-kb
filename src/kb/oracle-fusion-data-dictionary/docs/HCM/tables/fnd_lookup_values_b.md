@@ -82,3 +82,153 @@ updated_at: 2026-03-26
 ## 📎 Uso Típico
 
 (a ser preenchido na etapa 03)
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[lookupvaluesextractpvo|LookupValuesExtractPVO]] (OTHER · BICC: 31/31)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ATTRIBUTE1 | Attribute1 | ✅ |
+| ATTRIBUTE10 | Attribute10 | ✅ |
+| ATTRIBUTE11 | Attribute11 | ✅ |
+| ATTRIBUTE12 | Attribute12 | ✅ |
+| ATTRIBUTE13 | Attribute13 | ✅ |
+| ATTRIBUTE14 | Attribute14 | ✅ |
+| ATTRIBUTE15 | Attribute15 | ✅ |
+| ATTRIBUTE2 | Attribute2 | ✅ |
+| ATTRIBUTE3 | Attribute3 | ✅ |
+| ATTRIBUTE4 | Attribute4 | ✅ |
+| ATTRIBUTE5 | Attribute5 | ✅ |
+| ATTRIBUTE6 | Attribute6 | ✅ |
+| ATTRIBUTE7 | Attribute7 | ✅ |
+| ATTRIBUTE8 | Attribute8 | ✅ |
+| ATTRIBUTE9 | Attribute9 | ✅ |
+| ATTRIBUTE_CATEGORY | AttributeCategory | ✅ |
+| CREATED_BY | CreatedBy | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| DISPLAY_SEQUENCE | DisplaySequence | ✅ |
+| ENABLED_FLAG | EnabledFlag | ✅ |
+| END_DATE_ACTIVE | EndDateActive | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | LastUpdatedBy | ✅ |
+| LOOKUP_CODE | LookupCode | ✅ |
+| LOOKUP_TYPE | LookupType | ✅ |
+| SET_ID | SetId | ✅ |
+| START_DATE_ACTIVE | StartDateActive | ✅ |
+| TAG | Tag | ✅ |
+| TERRITORY_CODE | TerritoryCode | ✅ |
+| VIEW_APPLICATION_ID | ViewApplicationId | ✅ |
+
+### [[lookupvaluespvo|LookupValuesPVO]] (HCM · BICC: 13/31)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ATTRIBUTE1 | Attribute1 | — |
+| ATTRIBUTE10 | Attribute10 | — |
+| ATTRIBUTE11 | Attribute11 | — |
+| ATTRIBUTE12 | Attribute12 | — |
+| ATTRIBUTE13 | Attribute13 | — |
+| ATTRIBUTE14 | Attribute14 | — |
+| ATTRIBUTE15 | Attribute15 | — |
+| ATTRIBUTE2 | Attribute2 | — |
+| ATTRIBUTE3 | Attribute3 | — |
+| ATTRIBUTE4 | Attribute4 | — |
+| ATTRIBUTE5 | Attribute5 | — |
+| ATTRIBUTE6 | Attribute6 | — |
+| ATTRIBUTE7 | Attribute7 | — |
+| ATTRIBUTE8 | Attribute8 | — |
+| ATTRIBUTE9 | Attribute9 | — |
+| ATTRIBUTE_CATEGORY | AttributeCategory | — |
+| CREATED_BY | CreatedBy | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| DISPLAY_SEQUENCE | DisplaySequence | ✅ |
+| ENABLED_FLAG | EnabledFlag | ✅ |
+| END_DATE_ACTIVE | EndDateActive | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | — |
+| LAST_UPDATED_BY | LastUpdatedBy | ✅ |
+| LOOKUP_CODE | LookupCode | ✅ |
+| LOOKUP_TYPE | LookupType | ✅ |
+| SET_ID | SetId | ✅ |
+| START_DATE_ACTIVE | StartDateActive | ✅ |
+| TAG | Tag | ✅ |
+| TERRITORY_CODE | TerritoryCode | — |
+| VIEW_APPLICATION_ID | ViewApplicationId | ✅ |
+
+### [[selectedproducts|SelectedProducts]] (PO · BICC: 32/32)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ATTRIBUTE1 | LookupAttribute1 | ✅ |
+| ATTRIBUTE10 | LookupAttribute10 | ✅ |
+| ATTRIBUTE11 | LookupAttribute11 | ✅ |
+| ATTRIBUTE12 | LookupAttribute12 | ✅ |
+| ATTRIBUTE13 | LookupAttribute13 | ✅ |
+| ATTRIBUTE14 | LookupAttribute14 | ✅ |
+| ATTRIBUTE15 | LookupAttribute15 | ✅ |
+| ATTRIBUTE2 | LookupAttribute2 | ✅ |
+| ATTRIBUTE3 | LookupAttribute3 | ✅ |
+| ATTRIBUTE4 | LookupAttribute4 | ✅ |
+| ATTRIBUTE5 | LookupAttribute5 | ✅ |
+| ATTRIBUTE6 | LookupAttribute6 | ✅ |
+| ATTRIBUTE7 | LookupAttribute7 | ✅ |
+| ATTRIBUTE8 | LookupAttribute8 | ✅ |
+| ATTRIBUTE9 | LookupAttribute9 | ✅ |
+| ATTRIBUTE_CATEGORY | LookupAttributeCategory | ✅ |
+| CREATED_BY | LookupCreatedBy | ✅ |
+| CREATION_DATE | LookupCreationDate | ✅ |
+| DISPLAY_SEQUENCE | LookupDisplaySequence | ✅ |
+| ENABLED_FLAG | LookupEnabledFlag | ✅ |
+| END_DATE_ACTIVE | LookupEndDateActive | ✅ |
+| ENTERPRISE_ID | LookupEnterpriseId | ✅ |
+| LAST_UPDATE_DATE | LookupLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LookupLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | LookupLastUpdatedBy | ✅ |
+| LOOKUP_CODE | LookupLookupCode | ✅ |
+| LOOKUP_TYPE | LookupLookupType | ✅ |
+| SET_ID | LookupSetId | ✅ |
+| START_DATE_ACTIVE | LookupStartDateActive | ✅ |
+| TAG | LookupTag | ✅ |
+| TERRITORY_CODE | LookupTerritoryCode | ✅ |
+| VIEW_APPLICATION_ID | LookupViewApplicationId | ✅ |
+
+### [[selectedproductsstg|SelectedProductsStg]] (PO · BICC: 32/32)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ATTRIBUTE1 | LookupAttribute1 | ✅ |
+| ATTRIBUTE10 | LookupAttribute10 | ✅ |
+| ATTRIBUTE11 | LookupAttribute11 | ✅ |
+| ATTRIBUTE12 | LookupAttribute12 | ✅ |
+| ATTRIBUTE13 | LookupAttribute13 | ✅ |
+| ATTRIBUTE14 | LookupAttribute14 | ✅ |
+| ATTRIBUTE15 | LookupAttribute15 | ✅ |
+| ATTRIBUTE2 | LookupAttribute2 | ✅ |
+| ATTRIBUTE3 | LookupAttribute3 | ✅ |
+| ATTRIBUTE4 | LookupAttribute4 | ✅ |
+| ATTRIBUTE5 | LookupAttribute5 | ✅ |
+| ATTRIBUTE6 | LookupAttribute6 | ✅ |
+| ATTRIBUTE7 | LookupAttribute7 | ✅ |
+| ATTRIBUTE8 | LookupAttribute8 | ✅ |
+| ATTRIBUTE9 | LookupAttribute9 | ✅ |
+| ATTRIBUTE_CATEGORY | LookupAttributeCategory1 | ✅ |
+| CREATED_BY | LookupCreatedBy | ✅ |
+| CREATION_DATE | LookupCreationDate | ✅ |
+| DISPLAY_SEQUENCE | LookupDisplaySequence | ✅ |
+| ENABLED_FLAG | LookupEnabledFlag | ✅ |
+| END_DATE_ACTIVE | LookupEndDateActive | ✅ |
+| ENTERPRISE_ID | LookupEnterpriseId | ✅ |
+| LAST_UPDATE_DATE | LookupLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LookupLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | LookupLastUpdatedBy | ✅ |
+| LOOKUP_CODE | LookupLookupCode | ✅ |
+| LOOKUP_TYPE | LookupLookupType | ✅ |
+| SET_ID | LookupSetId | ✅ |
+| START_DATE_ACTIVE | LookupStartDateActive | ✅ |
+| TAG | LookupTag | ✅ |
+| TERRITORY_CODE | LookupTerritoryCode | ✅ |
+| VIEW_APPLICATION_ID | LookupViewApplicationId | ✅ |

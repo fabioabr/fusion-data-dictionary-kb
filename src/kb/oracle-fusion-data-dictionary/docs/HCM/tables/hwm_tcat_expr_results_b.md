@@ -39,7 +39,6 @@ Tabela base que armazena os resultados de expressões avaliadas para categorias 
 > [!note] Sufixo _B
 > O sufixo `_B` indica tabela **base** — contém os dados não traduzíveis. A tabela correspondente `_TL` armazena as traduções.
 
-
 ---
 
 ## 🧠 Propósito de Negócio
@@ -105,6 +104,41 @@ WHERE  NVL(t.ENABLED_FLAG, 'Y') = 'Y'
 
 - Tabela base: contém dados não traduzíveis. Utilize a view `_VL` correspondente para consultas com tradução.
 - Área funcional: Time Card dentro do Oracle Fusion Cloud HCM.
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[timecategoryexprresultp|TimeCategoryExprResultP]] (GL · BICC: 16/26)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | TCatExprResultBPEOCreatedBy | — |
+| CREATION_DATE | TCatExprResultBPEOCreationDate | — |
+| DATA_SOURCE_USAGE_ID | TCatExprResultBPEODataSourceUsageId | — |
+| DISPLAY_SEQUENCE | TCatExprResultBPEODisplaySequence | ✅ |
+| DISPLAY_VALUE | TCatExprResultBPEODisplayValue | ✅ |
+| ENTERPRISE_ID | TCatExprResultBPEOEnterpriseId | — |
+| EXPR_ROW_IDENTIFIER | TCatExprResultBPEOExprRowIdentifier | — |
+| EXPRESSION_GROUP_ID | TCatExprResultBPEOExpressionGroupId | — |
+| IMP_TCAT_ID | TCatExprResultBPEOImpTcatId | — |
+| LAST_UPDATE_DATE | TCatExprResultBPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | TCatExprResultBPEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | TCatExprResultBPEOLastUpdatedBy | ✅ |
+| LEFT_PARENTHESIS_NUM | TCatExprResultBPEOLeftParenthesisNum | ✅ |
+| OBJECT_VERSION_NUMBER | TCatExprResultBPEOObjectVersionNumber | — |
+| OPERATOR | TCatExprResultBPEOOperator11 | ✅ |
+| RIGHT_PARENTHESIS_NUM | TCatExprResultBPEORightParenthesisNum | ✅ |
+| SEED_DATA_SOURCE | TCatExprResultBPEOSeedDataSource | — |
+| SGUID | TCatExprResultBPEOSguid | — |
+| TCAT_EXPR_RESULT_ID | TCatExprResultBPEOTcatExprResultId | ✅ |
+| TCAT_ID | TCatExprResultBPEOTcatId | ✅ |
+| TIME_ATRB_FLD_ID | TCatExprResultBPEOTimeAtrbFldId | ✅ |
+| VALUE_CHAR | TCatExprResultBPEOValueChar | ✅ |
+| VALUE_DATE | TCatExprResultBPEOValueDate | ✅ |
+| VALUE_ID | TCatExprResultBPEOValueId | ✅ |
+| VALUE_TIMESTAMP | TCatExprResultBPEOValueTimestamp | ✅ |
+| VALUE_TYPE | TCatExprResultBPEOValueType | ✅ |
 
 ---
 

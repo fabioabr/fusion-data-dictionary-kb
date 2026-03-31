@@ -114,3 +114,27 @@ WHERE  pp.LEARNING_PLAN_ID = :p_plan_id
 
 - [Oracle Docs — WLF_PLAN_PROFILES_F](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/wlfplanprofilesf.html)
 - [[hcm-module-data-dictionary]] — Dossiê do módulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[learningplanprofilespvo|LearningPlanProfilesPVO]] (HCM · BICC: 5/15)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | PlanProfileDEOCreatedBy | — |
+| CREATION_DATE | PlanProfileDEOCreationDate | — |
+| EFFECTIVE_END_DATE | PlanProfileDEOEffectiveEndDate | ✅ |
+| EFFECTIVE_START_DATE | PlanProfileDEOEffectiveStartDate | ✅ |
+| ENTERPRISE_ID | PlanProfileDEOEnterpriseId | — |
+| EVENT_ASSIGNMENT_ID | PlanProfileDEOEventAssignmentId | — |
+| EVENT_ID | PlanProfileDEOEventId | — |
+| INITIAL_PLAN_RECORD_STATUS | PlanProfileDEOInitialPlanRecordStatus | — |
+| LAST_UPDATE_DATE | PlanProfileDEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | PlanProfileDEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | PlanProfileDEOLastUpdatedBy | — |
+| LEARNING_PLAN_ID | PlanProfileDEOLearningPlanId | — |
+| OBJECT_VERSION_NUMBER | PlanProfileDEOObjectVersionNumber | — |
+| PLAN_PROFILE_ID | PlanProfileDEOPlanProfileId | ✅ |
+| PLAN_PROFILE_TYPE | PlanProfileDEOPlanProfileType | ✅ |

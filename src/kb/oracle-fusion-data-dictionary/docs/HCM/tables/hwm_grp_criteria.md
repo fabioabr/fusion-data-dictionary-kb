@@ -34,8 +34,6 @@ updated_at: 2026-03-25
 
 Armazena os critérios de elegibilidade e filtros utilizados para definir a composição dinâmica de grupos de workforce. Permite definir regras baseadas em atributos do trabalhador para inclusão automática.
 
-
-
 ---
 
 ## 🧠 Propósito de Negócio
@@ -100,6 +98,49 @@ ORDER BY gc.SEQUENCE_NUMBER
 ## 🔒 Observações
 
 - Área funcional: Workforce Management dentro do Oracle Fusion Cloud HCM.
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[groupcriteriapvo|GroupCriteriaPVO]] (GL · BICC: 17/34)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ADDL_ATTR_CATEGORY | GroupCriteriaPEOAddlAttrCategory | — |
+| ADDL_ATTR_CHAR1 | GroupCriteriaPEOAddlAttrChar1 | — |
+| ADDL_ATTR_CHAR2 | GroupCriteriaPEOAddlAttrChar2 | — |
+| ADDL_ATTR_CHAR3 | GroupCriteriaPEOAddlAttrChar3 | — |
+| ADDL_ATTR_CHAR4 | GroupCriteriaPEOAddlAttrChar4 | — |
+| ADDL_ATTR_CHAR5 | GroupCriteriaPEOAddlAttrChar5 | — |
+| ADDL_ATTR_NUMBER1 | GroupCriteriaPEOAddlAttrNumber1 | — |
+| ADDL_ATTR_NUMBER2 | GroupCriteriaPEOAddlAttrNumber2 | — |
+| ADDL_ATTR_NUMBER3 | GroupCriteriaPEOAddlAttrNumber3 | — |
+| ADDL_ATTR_NUMBER4 | GroupCriteriaPEOAddlAttrNumber4 | — |
+| ADDL_ATTR_NUMBER5 | GroupCriteriaPEOAddlAttrNumber5 | — |
+| BOOL_OPER_CD | GroupCriteriaPEOBoolOperCd | ✅ |
+| CREATED_BY | GroupCriteriaPEOCreatedBy | ✅ |
+| CREATION_DATE | GroupCriteriaPEOCreationDate | ✅ |
+| CRITERIA_DISPLAY_NAME | GroupCriteriaPEOCriteriaDisplayName | ✅ |
+| CRITERIA_ID | GroupCriteriaPEOCriteriaId | — |
+| CRITERIA_NAME | GroupCriteriaPEOCriteriaName | ✅ |
+| ENTERPRISE_ID | GroupCriteriaPEOEnterpriseId | — |
+| GRP_CRITERIA_ID | GroupCriteriaPEOGrpCriteriaId | ✅ |
+| GRP_ID | GroupCriteriaPEOGrpId | — |
+| LAST_UPDATE_DATE | GroupCriteriaPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | GroupCriteriaPEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | GroupCriteriaPEOLastUpdatedBy | ✅ |
+| LEFT_PARAM_NUM | GroupCriteriaPEOLeftParamNum | ✅ |
+| OBJECT_VERSION_NUMBER | GroupCriteriaPEOObjectVersionNumber | — |
+| OPERATOR_ID | GroupCriteriaPEOOperatorId | — |
+| OPERATOR_NAME | GroupCriteriaPEOOperatorName | ✅ |
+| ORDR_NUM | GroupCriteriaPEOOrdrNum | ✅ |
+| RIGHT_PARAM_NUM | GroupCriteriaPEORightParamNum | ✅ |
+| SEED_DATA_SOURCE | GroupCriteriaPEOSeedDataSource | — |
+| VALUE_CHAR | GroupCriteriaPEOValueChar | ✅ |
+| VALUE_DATE | GroupCriteriaPEOValueDate | ✅ |
+| VALUE_NUMBER | GroupCriteriaPEOValueNumber | ✅ |
+| VALUE_TS | GroupCriteriaPEOValueTs | ✅ |
 
 ---
 

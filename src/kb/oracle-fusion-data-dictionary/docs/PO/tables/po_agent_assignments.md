@@ -38,7 +38,6 @@ updated_at: 2026-03-25
 
 Armazena as **atribuicoes de categorias de compras a compradores** (agents). Define quais categorias cada comprador esta autorizado a comprar.
 
-
 ---
 
 ## 🧠 Propósito de Negócio
@@ -95,7 +94,6 @@ FROM   PO_AGENT_ASSIGNMENTS
 WHERE  AGENT_ID = :p_agent_id;
 ```
 
-
 ---
 
 ## 🔒 Observações
@@ -103,6 +101,108 @@ WHERE  AGENT_ID = :p_agent_id;
 - Atribuicao por categoria ou item especifico.
 - Sem atribuicao, comprador pode ter acesso irrestrito (depende da config).
 - Utilizada pelo AutoCreate para roteamento.
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[allbuyerpvo|AllBuyerPVO]] (PO · BICC: 1/11)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTIVE_FLAG | BuyerAssignmentActiveFlag | — |
+| AGENT_ID | BuyerAssignmentAgentId | — |
+| ASSIGNMENT_ID | BuyerAssignmentAssignmentId | — |
+| CREATED_BY | BuyerAssignmentCreatedBy | — |
+| CREATION_DATE | BuyerAssignmentCreationDate | — |
+| DEFAULT_REQ_BU_ID | BuyerAssignmentDefaultReqBuId | — |
+| LAST_UPDATE_DATE | BuyerAssignmentLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | BuyerAssignmentLastUpdateLogin | — |
+| LAST_UPDATED_BY | BuyerAssignmentLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | BuyerAssignmentObjectVersionNumber | — |
+| PRC_BU_ID | BuyerAssignmentPrcBuId | — |
+
+### [[inventoryitemref|InventoryItemRef]] (OTHER)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| AGENT_ID | AgentAssignmentPEOAgentId | — |
+| ASSIGNMENT_ID | AgentAssignmentPEOAssignmentId | — |
+
+### [[itemref|ItemRef]] (OTHER)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| AGENT_ID | AgentAssignmentPEOAgentId | — |
+| ASSIGNMENT_ID | AgentAssignmentPEOAssignmentId | — |
+
+### [[procurementbuyersextractpvo|ProcurementBuyersExtractPVO]] (PO · BICC: 12/63)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTIVE_FLAG | ActiveFlag | ✅ |
+| AGENT_ID | AgentId | ✅ |
+| ASSIGNMENT_ID | AssignmentId | ✅ |
+| ATTRIBUTE1 | Attribute1 | — |
+| ATTRIBUTE10 | Attribute10 | — |
+| ATTRIBUTE11 | Attribute11 | — |
+| ATTRIBUTE12 | Attribute12 | — |
+| ATTRIBUTE13 | Attribute13 | — |
+| ATTRIBUTE14 | Attribute14 | — |
+| ATTRIBUTE15 | Attribute15 | — |
+| ATTRIBUTE16 | Attribute16 | — |
+| ATTRIBUTE17 | Attribute17 | — |
+| ATTRIBUTE18 | Attribute18 | — |
+| ATTRIBUTE19 | Attribute19 | — |
+| ATTRIBUTE2 | Attribute2 | — |
+| ATTRIBUTE20 | Attribute20 | — |
+| ATTRIBUTE3 | Attribute3 | — |
+| ATTRIBUTE4 | Attribute4 | — |
+| ATTRIBUTE5 | Attribute5 | — |
+| ATTRIBUTE6 | Attribute6 | — |
+| ATTRIBUTE7 | Attribute7 | — |
+| ATTRIBUTE8 | Attribute8 | — |
+| ATTRIBUTE9 | Attribute9 | — |
+| ATTRIBUTE_CATEGORY | AttributeCategory | — |
+| ATTRIBUTE_DATE1 | AttributeDate1 | — |
+| ATTRIBUTE_DATE10 | AttributeDate10 | — |
+| ATTRIBUTE_DATE2 | AttributeDate2 | — |
+| ATTRIBUTE_DATE3 | AttributeDate3 | — |
+| ATTRIBUTE_DATE4 | AttributeDate4 | — |
+| ATTRIBUTE_DATE5 | AttributeDate5 | — |
+| ATTRIBUTE_DATE6 | AttributeDate6 | — |
+| ATTRIBUTE_DATE7 | AttributeDate7 | — |
+| ATTRIBUTE_DATE8 | AttributeDate8 | — |
+| ATTRIBUTE_DATE9 | AttributeDate9 | — |
+| ATTRIBUTE_NUMBER1 | AttributeNumber1 | — |
+| ATTRIBUTE_NUMBER10 | AttributeNumber10 | — |
+| ATTRIBUTE_NUMBER2 | AttributeNumber2 | — |
+| ATTRIBUTE_NUMBER3 | AttributeNumber3 | — |
+| ATTRIBUTE_NUMBER4 | AttributeNumber4 | — |
+| ATTRIBUTE_NUMBER5 | AttributeNumber5 | — |
+| ATTRIBUTE_NUMBER6 | AttributeNumber6 | — |
+| ATTRIBUTE_NUMBER7 | AttributeNumber7 | — |
+| ATTRIBUTE_NUMBER8 | AttributeNumber8 | — |
+| ATTRIBUTE_NUMBER9 | AttributeNumber9 | — |
+| ATTRIBUTE_TIMESTAMP1 | AttributeTimestamp1 | — |
+| ATTRIBUTE_TIMESTAMP10 | AttributeTimestamp10 | — |
+| ATTRIBUTE_TIMESTAMP2 | AttributeTimestamp2 | — |
+| ATTRIBUTE_TIMESTAMP3 | AttributeTimestamp3 | — |
+| ATTRIBUTE_TIMESTAMP4 | AttributeTimestamp4 | — |
+| ATTRIBUTE_TIMESTAMP5 | AttributeTimestamp5 | — |
+| ATTRIBUTE_TIMESTAMP6 | AttributeTimestamp6 | — |
+| ATTRIBUTE_TIMESTAMP7 | AttributeTimestamp7 | — |
+| ATTRIBUTE_TIMESTAMP8 | AttributeTimestamp8 | — |
+| ATTRIBUTE_TIMESTAMP9 | AttributeTimestamp9 | — |
+| CREATED_BY | CreatedBy | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| DEFAULT_PRINTER_NAME | DefaultPrinterName | ✅ |
+| DEFAULT_REQ_BU_ID | DefaultReqBuId | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | LastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | ✅ |
+| PRC_BU_ID | PrcBuId | ✅ |
 
 ---
 

@@ -92,6 +92,44 @@ Participantes discutem os revisados.
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[meetingfactpvo|MeetingFactPVO]] (HCM · BICC: 2/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | MeetingParticipantPEOBusinessGroupId | — |
+| CREATED_BY | MeetingParticipantPEOCreatedBy | — |
+| CREATION_DATE | MeetingParticipantPEOCreationDate | — |
+| DATA_SUBMISSION_STATUS_CODE | DataSubmissionStatusCode | — |
+| LAST_UPDATE_DATE | MeetingParticipantPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | MeetingParticipantPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | MeetingParticipantPEOLastUpdatedBy | — |
+| MEETING_ID | MeetingParticipantPEOMeetingId | — |
+| MEETING_PARTICIPANT_ID | MeetingParticipantPEOMeetingParticipantId | — |
+| OBJECT_VERSION_NUMBER | MeetingParticipantPEOObjectVersionNumber | — |
+| PARTICIPANT_PERSON_ID | MeetingParticipantPEOParticipantPersonId | ✅ |
+| PARTICIPANT_TYPE_CODE | MeetingParticipantPEOParticipantTypeCode | — |
+
+### [[meetingparticipantpvo|MeetingParticipantPVO]] (HCM · BICC: 6/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | BusinessGroupId | ✅ |
+| CREATED_BY | CreatedBy | — |
+| CREATION_DATE | CreationDate | — |
+| DATA_SUBMISSION_STATUS_CODE | DataSubmissionStatusCode | — |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | — |
+| LAST_UPDATED_BY | LastUpdatedBy | — |
+| MEETING_ID | MeetingId | ✅ |
+| MEETING_PARTICIPANT_ID | MeetingParticipantId | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | — |
+| PARTICIPANT_PERSON_ID | ParticipantPersonId | ✅ |
+| PARTICIPANT_TYPE_CODE | ParticipantTypeCode | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Fusion HCM Tables and Views](https://docs.oracle.com/en/cloud/saas/human-resources/25a/)

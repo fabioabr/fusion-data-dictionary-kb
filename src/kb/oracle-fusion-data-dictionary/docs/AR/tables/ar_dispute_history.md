@@ -89,6 +89,27 @@ SELECT dh.DISPUTE_HISTORY_ID,
 - Disputas impactam o cálculo de aging: valores em disputa podem ser excluídos ou segregados conforme política da empresa.
 - Para instituições financeiras, o histórico completo de disputas é requerido para compliance regulatório.
 
+## 🔗 PVOs Relacionados
+
+### [[disputehistorypvo|DisputeHistoryPVO]] (AR · BICC: 6/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| AMOUNT_DUE_REMAINING | AmountDueRemaining | ✅ |
+| AMOUNT_IN_DISPUTE | AmountInDispute | ✅ |
+| CREATED_BY | CreatedBy | — |
+| CREATED_FROM | CreatedFrom | — |
+| DISPUTE_AMOUNT | DisputeAmount | ✅ |
+| DISPUTE_HISTORY_ID | DisputeHistoryId | ✅ |
+| END_DATE | EndDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | — |
+| LAST_UPDATED_BY | LastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | — |
+| PAYMENT_SCHEDULE_ID | PaymentScheduleId | — |
+| START_DATE | StartDate | ✅ |
+
+---
+
 ## 📚 Referências
 
 - Oracle Fusion Cloud Financials — Accounts Receivable Tables (OEDMF Release 13).

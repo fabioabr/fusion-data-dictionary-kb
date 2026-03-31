@@ -109,3 +109,22 @@ WHERE  r.PACKAGE_RESULT_ID = :p_pkg_result_id;
 
 - [Oracle Docs — IRC_ASMT_RESULTS](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/ircasmtresults.html)
 - [[hcm-module-data-dictionary]] — Dossie do modulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[asmtresultpvo|AsmtResultPVO]] (HCM · BICC: 3/10)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ASSESSMENT_CONFIG_ID | AsmtResultPEOAssessmentConfigId | — |
+| COMMENTS | AsmtResultPEOComments | ✅ |
+| CREATED_BY | AsmtResultPEOCreatedBy | — |
+| CREATION_DATE | AsmtResultPEOCreationDate | — |
+| LAST_UPDATE_DATE | AsmtResultPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | AsmtResultPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | AsmtResultPEOLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | AsmtResultPEOObjectVersionNumber | — |
+| RESULT_ID | ResultId | ✅ |
+| SUBMISSION_ID | AsmtResultPEOSubmissionId | — |

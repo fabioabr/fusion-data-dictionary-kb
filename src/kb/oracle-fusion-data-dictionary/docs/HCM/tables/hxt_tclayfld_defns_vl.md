@@ -113,3 +113,25 @@ ORDER BY v.DISPLAY_SEQUENCE;
 
 - [Oracle Docs — HXT_TCLAYFLD_DEFNS_VL](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/hxttclayflddefnsvl.html)
 - [[hcm-module-data-dictionary]] — Dossie do modulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[templatelayoutcompdisplayvaluepvo|TemplateLayoutCompDisplayValuePVO]] (GL · BICC: 3/4)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| LABEL | ParentTclayfldVLPEOLabel | ✅ |
+| NAME | ParentTclayfldVLPEOName | ✅ |
+| TCLAYFLD_DEFNS_CD | ParentTclayfldVLPEOTclayfldDefnsCd | ✅ |
+| TCLAYFLD_DEFNS_ID | ParentTclayfldVLPEOTclayfldDefnsId | — |
+
+### [[templatelayoutcomponentpvo|TemplateLayoutComponentPVO]] (GL · BICC: 3/4)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| LABEL | ParentTclayfldVLPEOLabel | ✅ |
+| NAME | ParentTclayfldVLPEOName | ✅ |
+| TCLAYFLD_DEFNS_CD | ParentTclayfldVLPEODefnsCd | ✅ |
+| TCLAYFLD_DEFNS_ID | ParentTclayfldVLPEODefnsId | — |

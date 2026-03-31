@@ -163,6 +163,55 @@ ORDER BY total_solicitado DESC;
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[creditmemorequestpvo|CreditMemoRequestPVO]] (AR · BICC: 15/40)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTIVITIES_URL | ActivitiesUrl | — |
+| APPROVAL_DATE | ApprovalDate | ✅ |
+| CM_CUSTOMER_TRX_ID | CmCustomerTrxId | — |
+| CM_REASON_CODE | CmReasonCode | ✅ |
+| CREATED_BY | CreatedBy | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| CUSTOMER_TRX_ID | CustomerTrxId | ✅ |
+| FREIGHT_AMOUNT | FreightAmount | ✅ |
+| INTERFACE_HEADER_ATTRIBUTE1 | InterfaceHeaderAttribute1 | — |
+| INTERFACE_HEADER_ATTRIBUTE10 | InterfaceHeaderAttribute10 | — |
+| INTERFACE_HEADER_ATTRIBUTE11 | InterfaceHeaderAttribute11 | — |
+| INTERFACE_HEADER_ATTRIBUTE12 | InterfaceHeaderAttribute12 | — |
+| INTERFACE_HEADER_ATTRIBUTE13 | InterfaceHeaderAttribute13 | — |
+| INTERFACE_HEADER_ATTRIBUTE14 | InterfaceHeaderAttribute14 | — |
+| INTERFACE_HEADER_ATTRIBUTE15 | InterfaceHeaderAttribute15 | — |
+| INTERFACE_HEADER_ATTRIBUTE2 | InterfaceHeaderAttribute2 | — |
+| INTERFACE_HEADER_ATTRIBUTE3 | InterfaceHeaderAttribute3 | — |
+| INTERFACE_HEADER_ATTRIBUTE4 | InterfaceHeaderAttribute4 | — |
+| INTERFACE_HEADER_ATTRIBUTE5 | InterfaceHeaderAttribute5 | — |
+| INTERFACE_HEADER_ATTRIBUTE6 | InterfaceHeaderAttribute6 | — |
+| INTERFACE_HEADER_ATTRIBUTE7 | InterfaceHeaderAttribute7 | — |
+| INTERFACE_HEADER_ATTRIBUTE8 | InterfaceHeaderAttribute8 | — |
+| INTERFACE_HEADER_ATTRIBUTE9 | InterfaceHeaderAttribute9 | — |
+| INTERFACE_HEADER_CONTEXT | InterfaceHeaderContext | — |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | — |
+| LAST_UPDATED_BY | LastUpdatedBy | ✅ |
+| LINE_AMOUNT | LineAmount | ✅ |
+| LINE_CREDITS_FLAG | LineCreditsFlag | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | — |
+| ORG_ID | OrgId | — |
+| ORIG_TRX_NUMBER | OrigTrxNumber | ✅ |
+| REQUEST_ID | RequestId | ✅ |
+| STATUS | Status | — |
+| TAX_AMOUNT | TaxAmount | ✅ |
+| TAX_EX_CERT_NUM | TaxExCertNum | ✅ |
+| TERMS_SEQUENCE_NUMBER | TermsSequenceNumber | — |
+| TOTAL_AMOUNT | TotalAmount | ✅ |
+| TRANSACTION_URL | TransactionUrl | — |
+| URL | Url | — |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — RA_CM_REQUESTS_ALL](https://docs.oracle.com/en/cloud/saas/financials/25a/oedmf/racmrequestsall-25087.html)

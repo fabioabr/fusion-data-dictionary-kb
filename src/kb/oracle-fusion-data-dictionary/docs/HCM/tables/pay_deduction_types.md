@@ -98,6 +98,31 @@ WHERE  dt.LEGISLATIVE_DATA_GROUP_ID = :p_ldg_id;
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[deductiontype|DeductionType]] (HCM · BICC: 5/16)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BASE_DEDUCTION_TYPE_ID | DeductionTypeBasePEOBaseDeductionTypeId | — |
+| BASE_NAME | DeductionTypeBasePEOBaseName | — |
+| CREATED_BY | DeductionTypeBasePEOCreatedBy | ✅ |
+| CREATION_DATE | DeductionTypeBasePEOCreationDate | ✅ |
+| DEDUCTION_CODE | DeductionTypeBasePEODeductionCode | — |
+| DEDUCTION_GROUP_ID | DeductionTypeBasePEODeductionGroupId | — |
+| DEDUCTION_TYPE_ID | DeductionTypeId | ✅ |
+| DISPLAY_SEQUENCE | DeductionTypeBasePEODisplaySequence | — |
+| LAST_UPDATE_DATE | DeductionTypeBasePEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | DeductionTypeBasePEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | DeductionTypeBasePEOLastUpdatedBy | ✅ |
+| LEGISLATION_CODE | DeductionTypeBasePEOLegislationCode | — |
+| LEGISLATIVE_DATA_GROUP_ID | DeductionTypeBasePEOLegislativeDataGroupId | — |
+| MODULE_ID | DeductionTypeBasePEOModuleId | — |
+| OBJECT_VERSION_NUMBER | DeductionTypeBasePEOObjectVersionNumber | — |
+| USE_ALL_TAX_UNITS | DeductionTypeBasePEOUseAllTaxUnits | — |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — PAY_DEDUCTION_TYPES](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/paydeductiontypes.html)

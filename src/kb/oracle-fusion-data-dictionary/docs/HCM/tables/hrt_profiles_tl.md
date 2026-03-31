@@ -104,3 +104,404 @@ WHERE  tl.PROFILE_ID = :p_id
 
 - [Oracle Docs — HRT_PROFILES_TL](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/hrtprofilestl.html)
 - [[hcm-module-data-dictionary]] — Dossie do modulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[careerdevgoalpvo|CareerDevGoalPVO]] (HCM · BICC: 1/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | BusinessGroupId3 | — |
+| CREATED_BY | CreatedBy3 | — |
+| CREATION_DATE | CreationDate3 | — |
+| DESCRIPTION | Description | ✅ |
+| LANGUAGE | Language1 | — |
+| LAST_UPDATE_DATE | LastUpdateDate3 | — |
+| LAST_UPDATE_LOGIN | LastUpdateLogin3 | — |
+| LAST_UPDATED_BY | LastUpdatedBy3 | — |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber3 | — |
+| PROFILE_ID | ProfileId | — |
+| SOURCE_LANG | SourceLang | — |
+| SUMMARY | Summary | — |
+
+### [[careerdevgoalpvoviewall|CareerDevGoalPVOViewAll]] (HCM · BICC: 2/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | BusinessGroupId3 | — |
+| CREATED_BY | CreatedBy3 | — |
+| CREATION_DATE | CreationDate3 | — |
+| DESCRIPTION | Description | ✅ |
+| LANGUAGE | Language1 | — |
+| LAST_UPDATE_DATE | LastUpdateDate3 | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin3 | — |
+| LAST_UPDATED_BY | LastUpdatedBy3 | — |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber3 | — |
+| PROFILE_ID | ProfileId | — |
+| SOURCE_LANG | SourceLang | — |
+| SUMMARY | Summary | — |
+
+### [[careerdevgoalversionpvo|CareerDevGoalVersionPVO]] (HCM · BICC: 2/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | BusinessGroupId3 | — |
+| CREATED_BY | CreatedBy3 | — |
+| CREATION_DATE | CreationDate3 | — |
+| DESCRIPTION | Description | ✅ |
+| LANGUAGE | Language1 | — |
+| LAST_UPDATE_DATE | LastUpdateDate3 | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin3 | — |
+| LAST_UPDATED_BY | LastUpdatedBy3 | — |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber3 | — |
+| PROFILE_ID | ProfileId | — |
+| SOURCE_LANG | SourceLang | — |
+| SUMMARY | Summary | — |
+
+### [[careerdevgoalversionpvoviewall|CareerDevGoalVersionPVOViewAll]] (HCM · BICC: 2/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | BusinessGroupId3 | — |
+| CREATED_BY | CreatedBy3 | — |
+| CREATION_DATE | CreationDate3 | — |
+| DESCRIPTION | Description | ✅ |
+| LANGUAGE | Language1 | — |
+| LAST_UPDATE_DATE | LastUpdateDate3 | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin3 | — |
+| LAST_UPDATED_BY | LastUpdatedBy3 | — |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber3 | — |
+| PROFILE_ID | ProfileId | — |
+| SOURCE_LANG | SourceLang | — |
+| SUMMARY | Summary | — |
+
+### [[criticalityprofileitempvo|CriticalityProfileItemPVO]] (HCM)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | ProfileTranslationPEOBusinessGroupId | — |
+| DESCRIPTION | ProfileTranslationPEODescription | — |
+| LANGUAGE | Language | — |
+| PROFILE_ID | ProfileTranslationPEOProfileId | — |
+| SOURCE_LANG | SourceLang | — |
+| SUMMARY | ProfileTranslationPEOSummary | — |
+
+### [[customcontentprofilepvo|CustomContentProfilePVO]] (HCM · BICC: 1/7)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | ProfileTranslationPEOBusinessGroupId | — |
+| DESCRIPTION | ProfileTranslationPEODescription | — |
+| LANGUAGE | Language | — |
+| LAST_UPDATE_DATE | ProfileTranslationPEOLastUpdateDate | ✅ |
+| PROFILE_ID | ProfileTranslationPEOProfileId | — |
+| SOURCE_LANG | SourceLang | — |
+| SUMMARY | ProfileTranslationPEOSummary | — |
+
+### [[customcontentprofilepvo_viewall|CustomContentProfilePVO_Viewall]] (HCM · BICC: 1/7)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | ProfileTranslationPEOBusinessGroupId | — |
+| DESCRIPTION | ProfileTranslationPEODescription | — |
+| LANGUAGE | Language | — |
+| LAST_UPDATE_DATE | ProfileTranslationPEOLastUpdateDate | ✅ |
+| PROFILE_ID | ProfileTranslationPEOProfileId | — |
+| SOURCE_LANG | SourceLang | — |
+| SUMMARY | ProfileTranslationPEOSummary | — |
+
+### [[developmentgoalpvo|DevelopmentGoalPVO]] (HCM · BICC: 2/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | BusinessGroupId3 | — |
+| CREATED_BY | CreatedBy3 | — |
+| CREATION_DATE | CreationDate3 | — |
+| DESCRIPTION | Description | ✅ |
+| LANGUAGE | Language1 | — |
+| LAST_UPDATE_DATE | LastUpdateDate3 | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin3 | — |
+| LAST_UPDATED_BY | LastUpdatedBy3 | — |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber3 | — |
+| PROFILE_ID | ProfileId | — |
+| SOURCE_LANG | SourceLang | — |
+| SUMMARY | Summary | — |
+
+### [[developmentgoalpvoviewall|DevelopmentGoalPVOViewAll]] (HCM · BICC: 2/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | BusinessGroupId3 | — |
+| CREATED_BY | CreatedBy3 | — |
+| CREATION_DATE | CreationDate3 | — |
+| DESCRIPTION | Description | ✅ |
+| LANGUAGE | Language1 | — |
+| LAST_UPDATE_DATE | LastUpdateDate3 | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin3 | — |
+| LAST_UPDATED_BY | LastUpdatedBy3 | — |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber3 | — |
+| PROFILE_ID | ProfileId | — |
+| SOURCE_LANG | SourceLang | — |
+| SUMMARY | Summary | — |
+
+### [[genericprofilepvo|GenericProfilePVO]] (HCM)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | ProfileTranslationPEOBusinessGroupId | — |
+| DESCRIPTION | ProfileTranslationPEODescription | — |
+| LANGUAGE | Language | — |
+| LAST_UPDATE_DATE | ProfileTranslationPEOLastUpdateDate | — |
+| PROFILE_ID | ProfileTranslationPEOProfileId | — |
+| SOURCE_LANG | SourceLang | — |
+| SUMMARY | ProfileTranslationPEOSummary | — |
+
+### [[goalppvo1|GoalPPVO1]] (HCM · BICC: 1/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | BusinessGroupId3 | — |
+| CREATED_BY | CreatedBy3 | — |
+| CREATION_DATE | CreationDate3 | — |
+| DESCRIPTION | Description | — |
+| LANGUAGE | Language1 | — |
+| LAST_UPDATE_DATE | LastUpdateDate3 | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin3 | — |
+| LAST_UPDATED_BY | LastUpdatedBy3 | — |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber3 | — |
+| PROFILE_ID | ProfileId | — |
+| SOURCE_LANG | SourceLang | — |
+| SUMMARY | Summary | — |
+
+### [[goalpvo_copy|GoalPVO_Copy]] (HCM · BICC: 1/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | BusinessGroupId3 | — |
+| CREATED_BY | CreatedBy3 | — |
+| CREATION_DATE | CreationDate3 | — |
+| DESCRIPTION | Description | — |
+| LANGUAGE | Language1 | — |
+| LAST_UPDATE_DATE | LastUpdateDate3 | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin3 | — |
+| LAST_UPDATED_BY | LastUpdatedBy3 | — |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber3 | — |
+| PROFILE_ID | ProfileId | — |
+| SOURCE_LANG | SourceLang | — |
+| SUMMARY | Summary | — |
+
+### [[jobprofilepvo|JobProfilePVO]] (HCM · BICC: 2/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | ProfileTranslationPEOBusinessGroupId | — |
+| CREATED_BY | ProfileTranslationPEOCreatedBy | — |
+| CREATION_DATE | ProfileTranslationPEOCreationDate | — |
+| DESCRIPTION | ProfileTranslationPEODescription | ✅ |
+| LANGUAGE | ProfileTranslationPEOLanguage | — |
+| LAST_UPDATE_DATE | ProfileTranslationPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ProfileTranslationPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | ProfileTranslationPEOLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | ProfileTranslationPEOObjectVersionNumber | — |
+| PROFILE_ID | ProfileTranslationPEOProfileId | — |
+| SOURCE_LANG | ProfileTranslationPEOSourceLang | — |
+| SUMMARY | ProfileTranslationPEOSummary | — |
+
+### [[modelprofileitempvo|ModelProfileItemPVO]] (HCM · BICC: 2/6)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | ProfileTranslationPEOBusinessGroupId | — |
+| DESCRIPTION | ProfileTranslationPEODescription | ✅ |
+| LANGUAGE | Language | — |
+| PROFILE_ID | ProfileTranslationPEOProfileId | — |
+| SOURCE_LANG | SourceLang | — |
+| SUMMARY | ProfileTranslationPEOSummary | ✅ |
+
+### [[modelprofilepvo|ModelProfilePVO]] (HCM · BICC: 3/7)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | ProfileTranslationPEOBusinessGroupId | — |
+| DESCRIPTION | ProfileTranslationPEODescription | ✅ |
+| LANGUAGE | Language | — |
+| LAST_UPDATE_DATE | ProfileTranslationPEOLastUpdateDate | ✅ |
+| PROFILE_ID | ProfileTranslationPEOProfileId | — |
+| SOURCE_LANG | SourceLang | — |
+| SUMMARY | ProfileTranslationPEOSummary | ✅ |
+
+### [[performancegoalpvo|PerformanceGoalPVO]] (HCM)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | BusinessGroupId3 | — |
+| CREATED_BY | CreatedBy3 | — |
+| CREATION_DATE | CreationDate3 | — |
+| DESCRIPTION | Description | — |
+| LANGUAGE | Language1 | — |
+| LAST_UPDATE_DATE | LastUpdateDate3 | — |
+| LAST_UPDATE_LOGIN | LastUpdateLogin3 | — |
+| LAST_UPDATED_BY | LastUpdatedBy3 | — |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber3 | — |
+| PROFILE_ID | ProfileId | — |
+| SOURCE_LANG | SourceLang | — |
+| SUMMARY | Summary | — |
+
+### [[performancegoalpvoviewall|PerformanceGoalPVOViewAll]] (HCM · BICC: 1/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | BusinessGroupId3 | — |
+| CREATED_BY | CreatedBy3 | — |
+| CREATION_DATE | CreationDate3 | — |
+| DESCRIPTION | Description | — |
+| LANGUAGE | Language1 | — |
+| LAST_UPDATE_DATE | LastUpdateDate3 | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin3 | — |
+| LAST_UPDATED_BY | LastUpdatedBy3 | — |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber3 | — |
+| PROFILE_ID | ProfileId | — |
+| SOURCE_LANG | SourceLang | — |
+| SUMMARY | Summary | — |
+
+### [[performancegoalversionpvo|PerformanceGoalVersionPVO]] (HCM · BICC: 1/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | BusinessGroupId3 | — |
+| CREATED_BY | CreatedBy3 | — |
+| CREATION_DATE | CreationDate3 | — |
+| DESCRIPTION | Description | — |
+| LANGUAGE | Language1 | — |
+| LAST_UPDATE_DATE | LastUpdateDate3 | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin3 | — |
+| LAST_UPDATED_BY | LastUpdatedBy3 | — |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber3 | — |
+| PROFILE_ID | ProfileId | — |
+| SOURCE_LANG | SourceLang | — |
+| SUMMARY | Summary | — |
+
+### [[performancegoalversionpvoviewall|PerformanceGoalVersionPVOViewAll]] (HCM · BICC: 1/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | BusinessGroupId3 | — |
+| CREATED_BY | CreatedBy3 | — |
+| CREATION_DATE | CreationDate3 | — |
+| DESCRIPTION | Description | — |
+| LANGUAGE | Language1 | — |
+| LAST_UPDATE_DATE | LastUpdateDate3 | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin3 | — |
+| LAST_UPDATED_BY | LastUpdatedBy3 | — |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber3 | — |
+| PROFILE_ID | ProfileId | — |
+| SOURCE_LANG | SourceLang | — |
+| SUMMARY | Summary | — |
+
+### [[personalgoalpvo|PersonalGoalPVO]] (HCM)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | BusinessGroupId3 | — |
+| CREATED_BY | CreatedBy3 | — |
+| CREATION_DATE | CreationDate3 | — |
+| DESCRIPTION | Description | — |
+| LANGUAGE | Language1 | — |
+| LAST_UPDATE_DATE | LastUpdateDate3 | — |
+| LAST_UPDATE_LOGIN | LastUpdateLogin3 | — |
+| LAST_UPDATED_BY | LastUpdatedBy3 | — |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber3 | — |
+| PROFILE_ID | ProfileId | — |
+| SOURCE_LANG | SourceLang | — |
+| SUMMARY | Summary | — |
+
+### [[personprofileitempvo|PersonProfileItemPVO]] (HCM · BICC: 3/7)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | ProfileTranslationPEOBusinessGroupId | — |
+| DESCRIPTION | ProfileTranslationPEODescription | ✅ |
+| LANGUAGE | Language | ✅ |
+| LAST_UPDATE_DATE | ProfileTranslationPEOLastUpdateDate | ✅ |
+| PROFILE_ID | ProfileTranslationPEOProfileId | — |
+| SOURCE_LANG | SourceLang | — |
+| SUMMARY | ProfileTranslationPEOSummary | — |
+
+### [[personprofileperformanceratingpvo|PersonProfilePerformanceRatingPVO]] (HCM · BICC: 1/7)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | ProfileTranslationPEOBusinessGroupId | — |
+| DESCRIPTION | ProfileTranslationPEODescription | — |
+| LANGUAGE | Language | — |
+| LAST_UPDATE_DATE | ProfileTranslationPEOLastUpdateDate | ✅ |
+| PROFILE_ID | ProfileTranslationPEOProfileId | — |
+| SOURCE_LANG | SourceLang | — |
+| SUMMARY | ProfileTranslationPEOSummary | — |
+
+### [[personprofilepvo|PersonProfilePVO]] (HCM · BICC: 3/7)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | ProfileTranslationPEOBusinessGroupId | — |
+| DESCRIPTION | ProfileTranslationPEODescription | ✅ |
+| LANGUAGE | Language | ✅ |
+| LAST_UPDATE_DATE | ProfileTranslationPEOLastUpdateDate | ✅ |
+| PROFILE_ID | ProfileTranslationPEOProfileId | — |
+| SOURCE_LANG | SourceLang | — |
+| SUMMARY | ProfileTranslationPEOSummary | — |
+
+### [[previousemploymentprofilepvo|PreviousEmploymentProfilePVO]] (HCM · BICC: 1/7)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | ProfileTranslationPEOBusinessGroupId | — |
+| DESCRIPTION | ProfileTranslationPEODescription | — |
+| LANGUAGE | Language | — |
+| LAST_UPDATE_DATE | ProfileTranslationPEOLastUpdateDate | ✅ |
+| PROFILE_ID | ProfileTranslationPEOProfileId | — |
+| SOURCE_LANG | SourceLang | — |
+| SUMMARY | ProfileTranslationPEOSummary | — |
+
+### [[previousemploymentpvo|PreviousEmploymentPVO]] (HCM · BICC: 1/7)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | ProfileTranslationPEOBusinessGroupId | — |
+| DESCRIPTION | ProfileTranslationPEODescription | — |
+| LANGUAGE | Language | — |
+| LAST_UPDATE_DATE | ProfileTranslationPEOLastUpdateDate | ✅ |
+| PROFILE_ID | ProfileTranslationPEOProfileId | — |
+| SOURCE_LANG | SourceLang | — |
+| SUMMARY | ProfileTranslationPEOSummary | — |
+
+### [[profiletranslationextractpvo|ProfileTranslationExtractPVO]] (HCM · BICC: 12/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | BusinessGroupId | ✅ |
+| CREATED_BY | CreatedBy | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| DESCRIPTION | Description | ✅ |
+| LANGUAGE | Language | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | LastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | ✅ |
+| PROFILE_ID | ProfileId | ✅ |
+| SOURCE_LANG | SourceLang | ✅ |
+| SUMMARY | Summary | ✅ |
+
+### [[technicalpostpvo|TechnicalPostPVO]] (HCM · BICC: 1/7)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | ProfileTranslationPEOBusinessGroupId | — |
+| DESCRIPTION | ProfileTranslationPEODescription | — |
+| LANGUAGE | Language | — |
+| LAST_UPDATE_DATE | ProfileTranslationPEOLastUpdateDate | ✅ |
+| PROFILE_ID | ProfileTranslationPEOProfileId | — |
+| SOURCE_LANG | SourceLang | — |
+| SUMMARY | ProfileTranslationPEOSummary | — |

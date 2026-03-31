@@ -133,3 +133,47 @@ GROUP BY tl.NAME;
 
 - [Oracle Docs — GL_ENCUMBRANCE_TYPES_B](https://docs.oracle.com/en/cloud/saas/financials/25a/oedmf/glencumbrancetypesb-25086.html)
 - [[gl-module-data-dictionary]] — Dossiê do módulo GL
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[journalencumbranceextractpvo|JournalEncumbranceExtractPVO]] (OTHER · BICC: 9/15)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ATTRIBUTE1 | Attribute1 | — |
+| ATTRIBUTE2 | Attribute2 | — |
+| ATTRIBUTE3 | Attribute3 | — |
+| ATTRIBUTE4 | Attribute4 | — |
+| ATTRIBUTE5 | Attribute5 | — |
+| ATTRIBUTE_CATEGORY | AttributeCategory | — |
+| CREATED_BY | CreatedBy | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| ENABLED_FLAG | EnabledFlag | ✅ |
+| ENCUMBRANCE_TYPE_CODE | EncumbranceTypeCode | ✅ |
+| ENCUMBRANCE_TYPE_ID | EncumbranceTypeId | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | LastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | ✅ |
+
+### [[journalencumbrancepvo|JournalEncumbrancePVO]] (GL · BICC: 2/15)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ATTRIBUTE1 | Attribute1 | — |
+| ATTRIBUTE2 | Attribute2 | — |
+| ATTRIBUTE3 | Attribute3 | — |
+| ATTRIBUTE4 | Attribute4 | — |
+| ATTRIBUTE5 | Attribute5 | — |
+| ATTRIBUTE_CATEGORY | AttributeCategory | — |
+| CREATED_BY | CreatedBy | — |
+| CREATION_DATE | CreationDate | — |
+| ENABLED_FLAG | EnabledFlag | — |
+| ENCUMBRANCE_TYPE_CODE | EncumbranceTypeCode | — |
+| ENCUMBRANCE_TYPE_ID | EncumbranceTypeId | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | — |
+| LAST_UPDATED_BY | LastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | — |

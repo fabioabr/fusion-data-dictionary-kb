@@ -110,3 +110,47 @@ ORDER BY tl.LANGUAGE;
 
 - [Oracle Docs — WLF_EVENT_ASSIGNMENTS_F_TL](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/wlfeventassignmentsftl.html)
 - [[hcm-module-data-dictionary]] — Dossiê do módulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[eventassignmentrecordpvo|EventAssignmentRecordPVO]] (HCM · BICC: 3/15)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| COMMENTS | EventAssignmentTranslationDEOComments | ✅ |
+| CREATED_BY | EventAssignmentTranslationDEOCreatedBy | — |
+| CREATION_DATE | EventAssignmentTranslationDEOCreationDate | — |
+| DESCRIPTION | EventAssignmentTranslationDEODescription | ✅ |
+| EFFECTIVE_END_DATE | EventAssignmentTranslationDEOEffectiveEndDate | — |
+| EFFECTIVE_START_DATE | EventAssignmentTranslationDEOEffectiveStartDate | — |
+| ENTERPRISE_ID | EventAssignmentTranslationDEOEnterpriseId | — |
+| EVENT_ASSIGNMENT_ID | EventAssignmentTranslationDEOEventAssignmentId | — |
+| LANGUAGE | EventAssignmentTranslationDEOLanguage | — |
+| LAST_UPDATE_DATE | EventAssignmentTranslationDEOLastUpdateDate | — |
+| LAST_UPDATE_LOGIN | EventAssignmentTranslationDEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | EventAssignmentTranslationDEOLastUpdatedBy | — |
+| NAME | EventAssignmentTranslationDEOName | ✅ |
+| OBJECT_VERSION_NUMBER | EventAssignmentTranslationDEOObjectVersionNumber | — |
+| SOURCE_LANG | EventAssignmentTranslationDEOSourceLang | — |
+
+### [[eventassignmenttranslationpvo|EventAssignmentTranslationPVO]] (HCM · BICC: 7/15)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| COMMENTS | EventAssignmentTranslationDEOComments | — |
+| CREATED_BY | EventAssignmentTranslationDEOCreatedBy | — |
+| CREATION_DATE | EventAssignmentTranslationDEOCreationDate | — |
+| DESCRIPTION | EventAssignmentTranslationDEODescription | ✅ |
+| EFFECTIVE_END_DATE | EventAssignmentTranslationDEOEffectiveEndDate | ✅ |
+| EFFECTIVE_START_DATE | EventAssignmentTranslationDEOEffectiveStartDate | ✅ |
+| ENTERPRISE_ID | EventAssignmentTranslationDEOEnterpriseId | — |
+| EVENT_ASSIGNMENT_ID | EventAssignmentTranslationDEOEventAssignmentId | ✅ |
+| LANGUAGE | EventAssignmentTranslationDEOLanguage | ✅ |
+| LAST_UPDATE_DATE | EventAssignmentTranslationDEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | EventAssignmentTranslationDEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | EventAssignmentTranslationDEOLastUpdatedBy | — |
+| NAME | EventAssignmentTranslationDEOName | ✅ |
+| OBJECT_VERSION_NUMBER | EventAssignmentTranslationDEOObjectVersionNumber | — |
+| SOURCE_LANG | EventAssignmentTranslationDEOSourceLang | — |

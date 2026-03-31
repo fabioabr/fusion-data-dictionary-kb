@@ -136,6 +136,54 @@ WHERE  fl.INSTALLED_FLAG IN ('I', 'B')
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[negotiationstyledocumenttypetranslationpvo|NegotiationStyleDocumentTypeTranslationPVO]] (PO · BICC: 11/17)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| COVER_PAGE_TEXT | CoverPageText | — |
+| CREATED_BY | CreatedBy | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| DOCTYPE_ID | DoctypeId | ✅ |
+| INTRODUCTION_TEXT | IntroductionText | — |
+| LANGUAGE | Language | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | LastUpdatedBy | ✅ |
+| LINES_TEXT | LinesText | — |
+| NEGOTIATION_DISPLAY_NAME | NegotiationDisplayName | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | — |
+| REQUIREMENTS_TEXT | RequirementsText | — |
+| RESPONSE_DISPLAY_NAME | ResponseDisplayName | ✅ |
+| SOURCE_LANG | SourceLang | ✅ |
+| STYLE_ID | StyleId | ✅ |
+| TERMS_TEXT | TermsText | — |
+
+### [[negstyledoctypetranslationextractpvo|NegStyleDocTypeTranslationExtractPVO]] (PO · BICC: 17/17)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| COVER_PAGE_TEXT | CoverPageText | ✅ |
+| CREATED_BY | CreatedBy | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| DOCTYPE_ID | DoctypeId | ✅ |
+| INTRODUCTION_TEXT | IntroductionText | ✅ |
+| LANGUAGE | Language | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | LastUpdatedBy | ✅ |
+| LINES_TEXT | LinesText | ✅ |
+| NEGOTIATION_DISPLAY_NAME | NegotiationDisplayName | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | ✅ |
+| REQUIREMENTS_TEXT | RequirementsText | ✅ |
+| RESPONSE_DISPLAY_NAME | ResponseDisplayName | ✅ |
+| SOURCE_LANG | SourceLang | ✅ |
+| STYLE_ID | StyleId | ✅ |
+| TERMS_TEXT | TermsText | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — PON_DOCTYPE_STYLES_TL](https://docs.oracle.com/en/cloud/saas/procurement/25a/oedmf/pondoctypestylestl.html)

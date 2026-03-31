@@ -39,7 +39,6 @@ updated_at: 2026-03-25
 
 Armazena as **cobranças individuais** de benefícios. Cada registro representa um valor cobrado de um participante referente a um plano de benefício em um período específico.
 
-
 ---
 
 ## 🧠 Propósito de Negócio
@@ -108,6 +107,150 @@ WHERE  bc.CHARGE_STATUS = 'PENDING';
 
 - Cada cobrança está vinculada a um plano e um colaborador.
 - Detalhes da composição do valor estão em `BEN_BILL_CHARGE_DETAILS`.
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[billchargedetailspvo|BillChargeDetailsPVO]] (HCM · BICC: 24/65)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BCH_ATTRIBUTE1 | BchAttribute1 | — |
+| BCH_ATTRIBUTE10 | BchAttribute10 | — |
+| BCH_ATTRIBUTE2 | BchAttribute2 | — |
+| BCH_ATTRIBUTE3 | BchAttribute3 | — |
+| BCH_ATTRIBUTE4 | BchAttribute4 | — |
+| BCH_ATTRIBUTE5 | BchAttribute5 | — |
+| BCH_ATTRIBUTE6 | BchAttribute6 | — |
+| BCH_ATTRIBUTE7 | BchAttribute7 | — |
+| BCH_ATTRIBUTE8 | BchAttribute8 | — |
+| BCH_ATTRIBUTE9 | BchAttribute9 | — |
+| BCH_ATTRIBUTE_CATEGORY | BchAttributeCategory | — |
+| BCH_ATTRIBUTE_DATE1 | BchAttributeDate1 | — |
+| BCH_ATTRIBUTE_DATE2 | BchAttributeDate2 | — |
+| BCH_ATTRIBUTE_DATE3 | BchAttributeDate3 | — |
+| BCH_ATTRIBUTE_DATE4 | BchAttributeDate4 | — |
+| BCH_ATTRIBUTE_DATE5 | BchAttributeDate5 | — |
+| BCH_ATTRIBUTE_NUMBER1 | BchAttributeNumber1 | — |
+| BCH_ATTRIBUTE_NUMBER2 | BchAttributeNumber2 | — |
+| BCH_ATTRIBUTE_NUMBER3 | BchAttributeNumber3 | — |
+| BCH_ATTRIBUTE_NUMBER4 | BchAttributeNumber4 | — |
+| BCH_ATTRIBUTE_NUMBER5 | BchAttributeNumber5 | ✅ |
+| BILL_CAL_ID | BillCalId | — |
+| BILL_CHARGE_ID | BillChargeId1 | ✅ |
+| BILL_GENERATED | BillGenerated | ✅ |
+| BILL_GENERATED_DATE | BillGeneratedDate | ✅ |
+| BILL_NUM | BillNum | ✅ |
+| BILL_PERIOD | BillPeriod | ✅ |
+| BILL_REASON | BillReason | ✅ |
+| BILL_SOURCE | BillSource | ✅ |
+| BILL_YEAR | BillYear | ✅ |
+| BILLING_DATE | BillingDate | ✅ |
+| BUSINESS_GROUP_ID | BusinessGroupId1 | — |
+| COMMENTS | Comments | ✅ |
+| CONFIG_CHAR_1 | ConfigChar11 | — |
+| CONFIG_CHAR_2 | ConfigChar21 | — |
+| CONFIG_CHAR_3 | ConfigChar31 | — |
+| CONFIG_CHAR_4 | ConfigChar41 | — |
+| CONFIG_CHAR_5 | ConfigChar51 | — |
+| CONFIG_DATE_1 | ConfigDate11 | — |
+| CONFIG_DATE_2 | ConfigDate21 | — |
+| CONFIG_DATE_3 | ConfigDate31 | — |
+| CONFIG_DATE_4 | ConfigDate41 | — |
+| CONFIG_DATE_5 | ConfigDate51 | — |
+| CONFIG_NUM_1 | ConfigNum11 | — |
+| CONFIG_NUM_2 | ConfigNum21 | — |
+| CONFIG_NUM_3 | ConfigNum31 | — |
+| CONFIG_NUM_4 | ConfigNum41 | — |
+| CONFIG_NUM_5 | ConfigNum51 | — |
+| CREATED_BY | CreatedBy1 | ✅ |
+| CREATION_DATE | CreationDate1 | ✅ |
+| CURRENCY_CODE | CurrencyCode | ✅ |
+| CURRENT_BILL_AMT | CurrentBillAmt | ✅ |
+| HOLD_BILL_FLAG | HoldBillFlag | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate1 | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin1 | ✅ |
+| LAST_UPDATED_BY | LastUpdatedBy1 | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber1 | — |
+| OTHER_AMT_DUE | OtherAmtDue | ✅ |
+| PAST_AMT_DUE | PastAmtDue | ✅ |
+| PER_ACCT_NUM | PerAcctNum | — |
+| PER_BILL_INFO_ID | PerBillInfoId | — |
+| PERSON_ID | PersonId | — |
+| STATUS | Status1 | ✅ |
+| TOTAL_BILL_AMT | TotalBillAmt | ✅ |
+| TOTAL_TAX_AMT | TotalTaxAmt | ✅ |
+
+### [[billchargespvo|BillChargesPVO]] (HCM · BICC: 24/65)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BCH_ATTRIBUTE1 | BchAttribute1 | — |
+| BCH_ATTRIBUTE10 | BchAttribute10 | — |
+| BCH_ATTRIBUTE2 | BchAttribute2 | — |
+| BCH_ATTRIBUTE3 | BchAttribute3 | — |
+| BCH_ATTRIBUTE4 | BchAttribute4 | — |
+| BCH_ATTRIBUTE5 | BchAttribute5 | — |
+| BCH_ATTRIBUTE6 | BchAttribute6 | — |
+| BCH_ATTRIBUTE7 | BchAttribute7 | — |
+| BCH_ATTRIBUTE8 | BchAttribute8 | — |
+| BCH_ATTRIBUTE9 | BchAttribute9 | — |
+| BCH_ATTRIBUTE_CATEGORY | BchAttributeCategory | — |
+| BCH_ATTRIBUTE_DATE1 | BchAttributeDate1 | — |
+| BCH_ATTRIBUTE_DATE2 | BchAttributeDate2 | — |
+| BCH_ATTRIBUTE_DATE3 | BchAttributeDate3 | — |
+| BCH_ATTRIBUTE_DATE4 | BchAttributeDate4 | — |
+| BCH_ATTRIBUTE_DATE5 | BchAttributeDate5 | — |
+| BCH_ATTRIBUTE_NUMBER1 | BchAttributeNumber1 | — |
+| BCH_ATTRIBUTE_NUMBER2 | BchAttributeNumber2 | — |
+| BCH_ATTRIBUTE_NUMBER3 | BchAttributeNumber3 | — |
+| BCH_ATTRIBUTE_NUMBER4 | BchAttributeNumber4 | — |
+| BCH_ATTRIBUTE_NUMBER5 | BchAttributeNumber5 | — |
+| BILL_CAL_ID | BillCalId | — |
+| BILL_CHARGE_ID | BillChargeId | ✅ |
+| BILL_GENERATED | BillGenerated | ✅ |
+| BILL_GENERATED_DATE | BillGeneratedDate | ✅ |
+| BILL_NUM | BillNum | ✅ |
+| BILL_PERIOD | BillPeriod | ✅ |
+| BILL_REASON | BillReason | ✅ |
+| BILL_SOURCE | BillSource | ✅ |
+| BILL_YEAR | BillYear | ✅ |
+| BILLING_DATE | BillingDate | ✅ |
+| BUSINESS_GROUP_ID | BusinessGroupId | — |
+| COMMENTS | Comments | ✅ |
+| CONFIG_CHAR_1 | ConfigChar1 | — |
+| CONFIG_CHAR_2 | ConfigChar2 | — |
+| CONFIG_CHAR_3 | ConfigChar3 | — |
+| CONFIG_CHAR_4 | ConfigChar4 | — |
+| CONFIG_CHAR_5 | ConfigChar5 | — |
+| CONFIG_DATE_1 | ConfigDate1 | — |
+| CONFIG_DATE_2 | ConfigDate2 | — |
+| CONFIG_DATE_3 | ConfigDate3 | — |
+| CONFIG_DATE_4 | ConfigDate4 | — |
+| CONFIG_DATE_5 | ConfigDate5 | — |
+| CONFIG_NUM_1 | ConfigNum1 | — |
+| CONFIG_NUM_2 | ConfigNum2 | — |
+| CONFIG_NUM_3 | ConfigNum3 | — |
+| CONFIG_NUM_4 | ConfigNum4 | — |
+| CONFIG_NUM_5 | ConfigNum5 | — |
+| CREATED_BY | CreatedBy | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| CURRENCY_CODE | CurrencyCode | ✅ |
+| CURRENT_BILL_AMT | CurrentBillAmt | ✅ |
+| HOLD_BILL_FLAG | HoldBillFlag | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | LastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | — |
+| OTHER_AMT_DUE | OtherAmtDue | ✅ |
+| PAST_AMT_DUE | PastAmtDue | ✅ |
+| PER_ACCT_NUM | PerAcctNum | ✅ |
+| PER_BILL_INFO_ID | PerBillInfoId | — |
+| PERSON_ID | PersonId | — |
+| STATUS | Status | ✅ |
+| TOTAL_BILL_AMT | TotalBillAmt | ✅ |
+| TOTAL_TAX_AMT | TotalTaxAmt | ✅ |
 
 ---
 

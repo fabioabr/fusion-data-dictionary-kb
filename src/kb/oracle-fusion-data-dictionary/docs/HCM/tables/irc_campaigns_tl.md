@@ -111,3 +111,31 @@ WHERE  tl.CAMPAIGN_ID = :p_campaign_id;
 
 - [Oracle Docs — IRC_CAMPAIGNS_TL](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/irccampaignstl.html)
 - [[hcm-module-data-dictionary]] — Dossie do modulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[campaignpvo|CampaignPVO]] (HCM · BICC: 2/11)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CAMPAIGN_DESCRIPTION | CampaignTranslationPEOCampaignDescription | — |
+| CAMPAIGN_ID | CampaignTranslationPEOCampaignId1 | — |
+| CAMPAIGN_NAME | CampaignTranslationPEOCampaignName | ✅ |
+| CREATED_BY | CampaignTranslationPEOCreatedBy1 | — |
+| CREATION_DATE | CampaignTranslationPEOCreationDate1 | — |
+| LANGUAGE | CampaignTranslationPEOLanguage | — |
+| LAST_UPDATE_DATE | CampaignTranslationPEOLastUpdateDate1 | ✅ |
+| LAST_UPDATE_LOGIN | CampaignTranslationPEOLastUpdateLogin1 | — |
+| LAST_UPDATED_BY | CampaignTranslationPEOLastUpdatedBy1 | — |
+| OBJECT_VERSION_NUMBER | CampaignTranslationPEOObjectVersionNumber1 | — |
+| SOURCE_LANG | CampaignTranslationPEOSourceLang | — |
+
+### [[sourcetrackingviewallpvo|SourceTrackingViewAllPVO]] (HCM · BICC: 1/3)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CAMPAIGN_ID | CampaignTranslationPEOCampaignId | — |
+| CAMPAIGN_NAME | CampaignTranslationPEOCampaignName | ✅ |
+| LANGUAGE | CampaignTranslationPEOLanguage | — |

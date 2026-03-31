@@ -107,3 +107,41 @@ WHERE  r.PERSON_ID = :p_person_id;
 
 - [Oracle Docs — PER_RELIGIONS](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/perreligions.html)
 - [[hcm-module-data-dictionary]] — Dossiê do módulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[religionpvo|ReligionPVO]] (HCM · BICC: 12/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | ReligionPEOBusinessGroupId | ✅ |
+| CREATED_BY | ReligionPEOCreatedBy | ✅ |
+| CREATION_DATE | ReligionPEOCreationDate | ✅ |
+| LAST_UPDATE_DATE | ReligionPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ReligionPEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | ReligionPEOLastUpdatedBy | ✅ |
+| LEGISLATION_CODE | ReligionPEOLegislationCode | ✅ |
+| OBJECT_VERSION_NUMBER | ReligionPEOObjectVersionNumber | ✅ |
+| PERSON_ID | ReligionPEOPersonId | ✅ |
+| PRIMARY_FLAG | ReligionPEOPrimaryFlag | ✅ |
+| RELIGION | ReligionPEOReligion | ✅ |
+| RELIGION_ID | ReligionId | ✅ |
+
+### [[religionpvoviewall|ReligionPVOViewAll]] (HCM · BICC: 9/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | ReligionPEOBusinessGroupId | — |
+| CREATED_BY | ReligionPEOCreatedBy | ✅ |
+| CREATION_DATE | ReligionPEOCreationDate | ✅ |
+| LAST_UPDATE_DATE | ReligionPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ReligionPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | ReligionPEOLastUpdatedBy | ✅ |
+| LEGISLATION_CODE | ReligionPEOLegislationCode | ✅ |
+| OBJECT_VERSION_NUMBER | ReligionPEOObjectVersionNumber | — |
+| PERSON_ID | ReligionPEOPersonId | ✅ |
+| PRIMARY_FLAG | ReligionPEOPrimaryFlag | ✅ |
+| RELIGION | ReligionPEOReligion | ✅ |
+| RELIGION_ID | ReligionId | ✅ |

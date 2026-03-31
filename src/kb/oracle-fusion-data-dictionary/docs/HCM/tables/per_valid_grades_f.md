@@ -118,3 +118,92 @@ WHERE  vg.JOB_ID = :p_job_id
 
 - [Oracle Docs — PER_VALID_GRADES_F](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/pervalidgradesf.html)
 - [[hcm-module-data-dictionary]] — Dossiê do módulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[validgradespvo|ValidGradesPVO]] (GL · BICC: 14/80)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_OCCURRENCE_ID | ValidGradesPEOActionOccurrenceId | ✅ |
+| ATTRIBUTE1 | ValidGradesPEOAttribute1 | — |
+| ATTRIBUTE10 | ValidGradesPEOAttribute10 | — |
+| ATTRIBUTE11 | ValidGradesPEOAttribute11 | — |
+| ATTRIBUTE12 | ValidGradesPEOAttribute12 | — |
+| ATTRIBUTE13 | ValidGradesPEOAttribute13 | — |
+| ATTRIBUTE14 | ValidGradesPEOAttribute14 | — |
+| ATTRIBUTE15 | ValidGradesPEOAttribute15 | — |
+| ATTRIBUTE16 | ValidGradesPEOAttribute16 | — |
+| ATTRIBUTE17 | ValidGradesPEOAttribute17 | — |
+| ATTRIBUTE18 | ValidGradesPEOAttribute18 | — |
+| ATTRIBUTE19 | ValidGradesPEOAttribute19 | — |
+| ATTRIBUTE2 | ValidGradesPEOAttribute2 | — |
+| ATTRIBUTE20 | ValidGradesPEOAttribute20 | — |
+| ATTRIBUTE21 | ValidGradesPEOAttribute21 | — |
+| ATTRIBUTE22 | ValidGradesPEOAttribute22 | — |
+| ATTRIBUTE23 | ValidGradesPEOAttribute23 | — |
+| ATTRIBUTE24 | ValidGradesPEOAttribute24 | — |
+| ATTRIBUTE25 | ValidGradesPEOAttribute25 | — |
+| ATTRIBUTE26 | ValidGradesPEOAttribute26 | — |
+| ATTRIBUTE27 | ValidGradesPEOAttribute27 | — |
+| ATTRIBUTE28 | ValidGradesPEOAttribute28 | — |
+| ATTRIBUTE29 | ValidGradesPEOAttribute29 | — |
+| ATTRIBUTE3 | ValidGradesPEOAttribute3 | — |
+| ATTRIBUTE30 | ValidGradesPEOAttribute30 | — |
+| ATTRIBUTE4 | ValidGradesPEOAttribute4 | — |
+| ATTRIBUTE5 | ValidGradesPEOAttribute5 | — |
+| ATTRIBUTE6 | ValidGradesPEOAttribute6 | — |
+| ATTRIBUTE7 | ValidGradesPEOAttribute7 | — |
+| ATTRIBUTE8 | ValidGradesPEOAttribute8 | — |
+| ATTRIBUTE9 | ValidGradesPEOAttribute9 | — |
+| ATTRIBUTE_CATEGORY | ValidGradesPEOAttributeCategory | — |
+| ATTRIBUTE_DATE1 | ValidGradesPEOAttributeDate1 | — |
+| ATTRIBUTE_DATE10 | ValidGradesPEOAttributeDate10 | — |
+| ATTRIBUTE_DATE11 | ValidGradesPEOAttributeDate11 | — |
+| ATTRIBUTE_DATE12 | ValidGradesPEOAttributeDate12 | — |
+| ATTRIBUTE_DATE13 | ValidGradesPEOAttributeDate13 | — |
+| ATTRIBUTE_DATE14 | ValidGradesPEOAttributeDate14 | — |
+| ATTRIBUTE_DATE15 | ValidGradesPEOAttributeDate15 | — |
+| ATTRIBUTE_DATE2 | ValidGradesPEOAttributeDate2 | — |
+| ATTRIBUTE_DATE3 | ValidGradesPEOAttributeDate3 | — |
+| ATTRIBUTE_DATE4 | ValidGradesPEOAttributeDate4 | — |
+| ATTRIBUTE_DATE5 | ValidGradesPEOAttributeDate5 | — |
+| ATTRIBUTE_DATE6 | ValidGradesPEOAttributeDate6 | — |
+| ATTRIBUTE_DATE7 | ValidGradesPEOAttributeDate7 | — |
+| ATTRIBUTE_DATE8 | ValidGradesPEOAttributeDate8 | — |
+| ATTRIBUTE_DATE9 | ValidGradesPEOAttributeDate9 | — |
+| ATTRIBUTE_NUMBER1 | ValidGradesPEOAttributeNumber1 | — |
+| ATTRIBUTE_NUMBER10 | ValidGradesPEOAttributeNumber10 | — |
+| ATTRIBUTE_NUMBER11 | ValidGradesPEOAttributeNumber11 | — |
+| ATTRIBUTE_NUMBER12 | ValidGradesPEOAttributeNumber12 | — |
+| ATTRIBUTE_NUMBER13 | ValidGradesPEOAttributeNumber13 | — |
+| ATTRIBUTE_NUMBER14 | ValidGradesPEOAttributeNumber14 | — |
+| ATTRIBUTE_NUMBER15 | ValidGradesPEOAttributeNumber15 | — |
+| ATTRIBUTE_NUMBER16 | ValidGradesPEOAttributeNumber16 | — |
+| ATTRIBUTE_NUMBER17 | ValidGradesPEOAttributeNumber17 | — |
+| ATTRIBUTE_NUMBER18 | ValidGradesPEOAttributeNumber18 | — |
+| ATTRIBUTE_NUMBER19 | ValidGradesPEOAttributeNumber19 | — |
+| ATTRIBUTE_NUMBER2 | ValidGradesPEOAttributeNumber2 | — |
+| ATTRIBUTE_NUMBER20 | ValidGradesPEOAttributeNumber20 | — |
+| ATTRIBUTE_NUMBER3 | ValidGradesPEOAttributeNumber3 | — |
+| ATTRIBUTE_NUMBER4 | ValidGradesPEOAttributeNumber4 | — |
+| ATTRIBUTE_NUMBER5 | ValidGradesPEOAttributeNumber5 | — |
+| ATTRIBUTE_NUMBER6 | ValidGradesPEOAttributeNumber6 | — |
+| ATTRIBUTE_NUMBER7 | ValidGradesPEOAttributeNumber7 | — |
+| ATTRIBUTE_NUMBER8 | ValidGradesPEOAttributeNumber8 | — |
+| ATTRIBUTE_NUMBER9 | ValidGradesPEOAttributeNumber9 | — |
+| BUSINESS_GROUP_ID | ValidGradesPEOBusinessGroupId | ✅ |
+| CREATED_BY | ValidGradesPEOCreatedBy | ✅ |
+| CREATION_DATE | ValidGradesPEOCreationDate | ✅ |
+| EFFECTIVE_END_DATE | ValidGradesPEOEffectiveEndDate | ✅ |
+| EFFECTIVE_START_DATE | ValidGradesPEOEffectiveStartDate | ✅ |
+| GRADE_ID | ValidGradesPEOGradeId | ✅ |
+| JOB_ID | ValidGradesPEOJobId | ✅ |
+| LAST_UPDATE_DATE | ValidGradesPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ValidGradesPEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | ValidGradesPEOLastUpdatedBy | ✅ |
+| OBJECT_VERSION_NUMBER | ValidGradesPEOObjectVersionNumber | ✅ |
+| POSITION_ID | ValidGradesPEOPositionId | ✅ |
+| VALID_GRADE_ID | ValidGradesPEOValidGradeId | ✅ |

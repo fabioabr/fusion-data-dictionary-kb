@@ -150,6 +150,40 @@ ORDER BY jr.PERIOD_NAME;
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[journallinepvo|JournalLinePVO]] (GL · BICC: 4/6)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| JE_HEADER_ID | JrnlReconLineJeHeaderId | — |
+| JE_LINE_NUM | JrnlReconLineJeLineNum | — |
+| JGZZ_RECON_DATE | JrnlReconLineJgzzReconDate | ✅ |
+| JGZZ_RECON_ID | JrnlReconLineJgzzReconId | ✅ |
+| JGZZ_RECON_REF | JrnlReconLineJgzzReconRef | ✅ |
+| JGZZ_RECON_STATUS | JrnlReconLineJgzzReconStatus | ✅ |
+
+### [[journalreconlineextractpvo|JournalReconLineExtractPVO]] (OTHER · BICC: 14/14)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CREATED_BY | GlJeLinesReconCreatedBy | ✅ |
+| CREATION_DATE | GlJeLinesReconCreationDate | ✅ |
+| JE_HEADER_ID | GlJeLinesReconJeHeaderId | ✅ |
+| JE_LINE_NUM | GlJeLinesReconJeLineNum | ✅ |
+| JGZZ_RECON_DATE | GlJeLinesReconJgzzReconDate | ✅ |
+| JGZZ_RECON_ID | GlJeLinesReconJgzzReconId | ✅ |
+| JGZZ_RECON_REF | GlJeLinesReconJgzzReconRef | ✅ |
+| JGZZ_RECON_STATUS | GlJeLinesReconJgzzReconStatus | ✅ |
+| LAST_UPDATE_DATE | GlJeLinesReconLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | GlJeLinesReconLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | GlJeLinesReconLastUpdatedBy | ✅ |
+| LEDGER_ID | GlJeLinesReconLedgerId | ✅ |
+| OBJECT_VERSION_NUMBER | GlJeLinesReconObjectVersionNumber | ✅ |
+| RECON_RULE_ID | GlJeLinesReconReconRuleId | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — GL_JE_LINES_RECON](https://docs.oracle.com/en/cloud/saas/financials/25a/oedmf/gljelinesrecon.html)

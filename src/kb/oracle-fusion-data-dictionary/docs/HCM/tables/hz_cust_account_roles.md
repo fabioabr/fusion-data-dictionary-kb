@@ -66,3 +66,217 @@ updated_at: 2026-03-26
 ## 📎 Uso Típico
 
 (a ser preenchido na etapa 03)
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[accountcontact|AccountContact]] (AR · BICC: 11/16)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CONTACT_PERSON_ID | CustomerAccountContactContactPersonId | — |
+| CREATED_BY | CustomerAccountContactCreatedBy | ✅ |
+| CREATED_BY_MODULE | CustomerAccountContactCreatedByModule | ✅ |
+| CREATION_DATE | CustomerAccountContactCreationDate | ✅ |
+| CUST_ACCOUNT_ID | CustomerAccountContactCustAccountId | — |
+| CUST_ACCOUNT_ROLE_ID | CustAccountRoleId | ✅ |
+| CUST_ACCT_SITE_ID | CustomerAccountContactCustAcctSiteId | — |
+| LAST_UPDATE_DATE | CustomerAccountContactLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | CustomerAccountContactLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | CustomerAccountContactLastUpdatedBy | ✅ |
+| ORIG_SYSTEM_REFERENCE | CustomerAccountContactOrigSystemReference | ✅ |
+| PRIMARY_FLAG | CustomerAccountContactPrimaryFlag | ✅ |
+| RELATIONSHIP_ID | CustomerAccountContactRelationshipId | — |
+| ROLE_TYPE | CustomerAccountContactRoleType | ✅ |
+| SOURCE_CODE | CustomerAccountContactSourceCode | — |
+| STATUS | CustomerAccountContactStatus | ✅ |
+
+### [[accountcontactrelationship|AccountContactRelationShip]] (AR · BICC: 11/16)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CONTACT_PERSON_ID | CustomerAccountContactContactPersonId | — |
+| CREATED_BY | CustomerAccountContactCreatedBy | ✅ |
+| CREATED_BY_MODULE | CustomerAccountContactCreatedByModule | ✅ |
+| CREATION_DATE | CustomerAccountContactCreationDate | ✅ |
+| CUST_ACCOUNT_ID | CustomerAccountContactCustAccountId | — |
+| CUST_ACCOUNT_ROLE_ID | CustAccountRoleId | ✅ |
+| CUST_ACCT_SITE_ID | CustomerAccountContactCustAcctSiteId | — |
+| LAST_UPDATE_DATE | CustomerAccountContactLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | CustomerAccountContactLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | CustomerAccountContactLastUpdatedBy | ✅ |
+| ORIG_SYSTEM_REFERENCE | CustomerAccountContactOrigSystemReference | ✅ |
+| PRIMARY_FLAG | CustomerAccountContactPrimaryFlag | ✅ |
+| RELATIONSHIP_ID | CustomerAccountContactRelationshipId | — |
+| ROLE_TYPE | CustomerAccountContactRoleType | ✅ |
+| SOURCE_CODE | CustomerAccountContactSourceCode | — |
+| STATUS | CustomerAccountContactStatus | ✅ |
+
+### [[billingplan|BillingPlan]] (OTHER · BICC: 2/2)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CUST_ACCOUNT_ROLE_ID | BillToContactAccountCustAccountRoleId | ✅ |
+| RELATIONSHIP_ID | BillToContactAccountRelationshipId | ✅ |
+
+### [[fulfillline|FulfillLine]] (OTHER)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CUST_ACCOUNT_ROLE_ID | BillToContactAccountCustAccountRoleId | — |
+| RELATIONSHIP_ID | BillToContactAccountRelationshipId | — |
+
+### [[fulfilllineref|FulfillLineRef]] (OTHER)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CUST_ACCOUNT_ROLE_ID | BillToContactAccountCustAccountRoleId | — |
+| RELATIONSHIP_ID | BillToContactAccountRelationshipId | — |
+
+### [[headersalescreditpvo|HeaderSalesCreditPVO]] (AR)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CONTACT_PERSON_ID | BillToContactContactPersonId | — |
+| CUST_ACCOUNT_ROLE_ID | BillToContactCustAccountRoleId | — |
+
+### [[linesalescreditpvo|LineSalesCreditPVO]] (AR)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CONTACT_PERSON_ID | BillToContactContactPersonId | — |
+| CONTACT_PERSON_ID | SoldToContactContactPersonId | — |
+| CUST_ACCOUNT_ROLE_ID | BillToContactCustAccountRoleId | — |
+| CUST_ACCOUNT_ROLE_ID | SoldToContactCustAccountRoleId | — |
+
+### [[manualpriceadjustment|ManualPriceAdjustment]] (OTHER)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CUST_ACCOUNT_ROLE_ID | BillToContactAccountCustAccountRoleId | — |
+| RELATIONSHIP_ID | BillToContactAccountRelationshipId | — |
+
+### [[orderaddressbillto|OrderAddressBillTo]] (OTHER)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CUST_ACCOUNT_ROLE_ID | CustAccountRoleId | — |
+| RELATIONSHIP_ID | CustAcctContRelationshipId | — |
+
+### [[orderchargecomponent|OrderChargeComponent]] (OTHER · BICC: 2/2)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CUST_ACCOUNT_ROLE_ID | BillToContactAccountCustAccountRoleId | ✅ |
+| RELATIONSHIP_ID | BillToContactAccountRelationshipId | ✅ |
+
+### [[sitecontact|SiteContact]] (AR · BICC: 11/16)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CONTACT_PERSON_ID | CustomerAccountContactContactPersonId | — |
+| CREATED_BY | CustomerAccountContactCreatedBy | ✅ |
+| CREATED_BY_MODULE | CustomerAccountContactCreatedByModule | ✅ |
+| CREATION_DATE | CustomerAccountContactCreationDate | ✅ |
+| CUST_ACCOUNT_ID | CustomerAccountContactCustAccountId | — |
+| CUST_ACCOUNT_ROLE_ID | CustAccountRoleId | ✅ |
+| CUST_ACCT_SITE_ID | CustomerAccountContactCustAcctSiteId | — |
+| LAST_UPDATE_DATE | CustomerAccountContactLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | CustomerAccountContactLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | CustomerAccountContactLastUpdatedBy | ✅ |
+| ORIG_SYSTEM_REFERENCE | CustomerAccountContactOrigSystemReference | ✅ |
+| PRIMARY_FLAG | CustomerAccountContactPrimaryFlag | ✅ |
+| RELATIONSHIP_ID | CustomerAccountContactRelationshipId | — |
+| ROLE_TYPE | CustomerAccountContactRoleType | ✅ |
+| SOURCE_CODE | CustomerAccountContactSourceCode | — |
+| STATUS | CustomerAccountContactStatus | ✅ |
+
+### [[sitecontactrelationship|SiteContactRelationShip]] (AR · BICC: 10/16)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CONTACT_PERSON_ID | CustomerAccountContactContactPersonId | — |
+| CREATED_BY | CustomerAccountContactCreatedBy | ✅ |
+| CREATED_BY_MODULE | CustomerAccountContactCreatedByModule | ✅ |
+| CREATION_DATE | CustomerAccountContactCreationDate | ✅ |
+| CUST_ACCOUNT_ID | CustomerAccountContactCustAccountId | — |
+| CUST_ACCOUNT_ROLE_ID | CustAccountRoleId | ✅ |
+| CUST_ACCT_SITE_ID | CustomerAccountContactCustAcctSiteId | — |
+| LAST_UPDATE_DATE | CustomerAccountContactLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | CustomerAccountContactLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | CustomerAccountContactLastUpdatedBy | — |
+| ORIG_SYSTEM_REFERENCE | CustomerAccountContactOrigSystemReference | ✅ |
+| PRIMARY_FLAG | CustomerAccountContactPrimaryFlag | ✅ |
+| RELATIONSHIP_ID | CustomerAccountContactRelationshipId | — |
+| ROLE_TYPE | CustomerAccountContactRoleType | ✅ |
+| SOURCE_CODE | CustomerAccountContactSourceCode | — |
+| STATUS | CustomerAccountContactStatus | ✅ |
+
+### [[transactionheaderbillsreceivablepvo|TransactionHeaderBillsReceivablePVO]] (AR)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CONTACT_PERSON_ID | BillToContactContactPersonId | — |
+| CUST_ACCOUNT_ROLE_ID | BillToContactCustAccountRoleId | — |
+
+### [[transactionheadernovcpvo|TransactionHeaderNoVCPVO]] (AR)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CONTACT_PERSON_ID | BillToContactContactPersonId | — |
+| CUST_ACCOUNT_ROLE_ID | BillToContactCustAccountRoleId | — |
+
+### [[transactionheaderpvo|TransactionHeaderPVO]] (AR)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CONTACT_PERSON_ID | BillToContactContactPersonId | — |
+| CUST_ACCOUNT_ROLE_ID | BillToContactCustAccountRoleId | — |
+
+### [[transactionhistorydistributionpvo|TransactionHistoryDistributionPVO]] (AR)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CONTACT_PERSON_ID | BillToContactContactPersonId | — |
+| CONTACT_PERSON_ID | DraweeToContactContactPersonId | — |
+| CONTACT_PERSON_ID | ShipToContactContactPersonId | — |
+| CONTACT_PERSON_ID | SoldToContactContactPersonId | — |
+| CUST_ACCOUNT_ROLE_ID | BillToContactCustAccountRoleId | — |
+| CUST_ACCOUNT_ROLE_ID | DraweeToContactCustAccountRoleId | — |
+| CUST_ACCOUNT_ROLE_ID | ShipToContactCustAccountRoleId | — |
+| CUST_ACCOUNT_ROLE_ID | SoldToContactCustAccountRoleId | — |
+
+### [[transactionhistorypvo|TransactionHistoryPVO]] (AR)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CONTACT_PERSON_ID | BillToContactContactPersonId | — |
+| CONTACT_PERSON_ID | DraweeToContactContactPersonId | — |
+| CONTACT_PERSON_ID | ShipToContactContactPersonId | — |
+| CONTACT_PERSON_ID | SoldToContactContactPersonId | — |
+| CUST_ACCOUNT_ROLE_ID | BillToContactCustAccountRoleId | — |
+| CUST_ACCOUNT_ROLE_ID | DraweeToContactCustAccountRoleId | — |
+| CUST_ACCOUNT_ROLE_ID | ShipToContactCustAccountRoleId | — |
+| CUST_ACCOUNT_ROLE_ID | SoldToContactCustAccountRoleId | — |
+
+### [[transactionlinebillsreceivablepvo|TransactionLineBillsReceivablePVO]] (AR)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CONTACT_PERSON_ID | BillToContactContactPersonId | — |
+| CUST_ACCOUNT_ROLE_ID | BillToContactCustAccountRoleId | — |
+
+### [[transactionlinedistributionpvo|TransactionLineDistributionPVO]] (AR)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CONTACT_PERSON_ID | BillToContactContactPersonId | — |
+| CUST_ACCOUNT_ROLE_ID | BillToContactCustAccountRoleId | — |
+
+### [[transactionlinepvo|TransactionLinePVO]] (AR)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CONTACT_PERSON_ID | BillToContactContactPersonId | — |
+| CUST_ACCOUNT_ROLE_ID | BillToContactCustAccountRoleId | — |

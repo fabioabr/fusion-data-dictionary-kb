@@ -149,6 +149,145 @@ WHERE  aph.TRANSACTION_TYPE = 'PAYMENT CREATED'
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[disbursementhistoryheaderextractpvo|DisbursementHistoryHeaderExtractPVO]] (OTHER · BICC: 57/57)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACCOUNTING_DATE | ApPaymentHistoryAllAccountingDate | ✅ |
+| ACCOUNTING_EVENT_ID | ApPaymentHistoryAllAccountingEventId | ✅ |
+| BANK_CURRENCY_CODE | ApPaymentHistoryAllBankCurrencyCode | ✅ |
+| BANK_TO_BASE_XRATE | ApPaymentHistoryAllBankToBaseXrate | ✅ |
+| BANK_TO_BASE_XRATE_DATE | ApPaymentHistoryAllBankToBaseXrateDate | ✅ |
+| BANK_TO_BASE_XRATE_TYPE | ApPaymentHistoryAllBankToBaseXrateType | ✅ |
+| CHARGE_AMOUNT | ApPaymentHistoryAllChargeAmount | ✅ |
+| CHARGES_BANK_AMOUNT | ApPaymentHistoryAllChargesBankAmount | ✅ |
+| CHARGES_BASE_AMOUNT | ApPaymentHistoryAllChargesBaseAmount | ✅ |
+| CHARGES_PMT_AMOUNT | ApPaymentHistoryAllChargesPmtAmount | ✅ |
+| CHECK_ID | ApPaymentHistoryAllCheckId | ✅ |
+| CREATED_BY | ApPaymentHistoryAllCreatedBy | ✅ |
+| CREATION_DATE | ApPaymentHistoryAllCreationDate | ✅ |
+| CURRENCY_CODE | ApPaymentHistoryAllCurrencyCode | ✅ |
+| ERROR_AMOUNT | ApPaymentHistoryAllErrorAmount | ✅ |
+| ERRORS_BANK_AMOUNT | ApPaymentHistoryAllErrorsBankAmount | ✅ |
+| ERRORS_BASE_AMOUNT | ApPaymentHistoryAllErrorsBaseAmount | ✅ |
+| ERRORS_PMT_AMOUNT | ApPaymentHistoryAllErrorsPmtAmount | ✅ |
+| GAIN_LOSS_INDICATOR | ApPaymentHistoryAllGainLossIndicator | ✅ |
+| HISTORICAL_FLAG | ApPaymentHistoryAllHistoricalFlag | ✅ |
+| INVOICE_ADJUSTMENT_EVENT_ID | ApPaymentHistoryAllInvoiceAdjustmentEventId | ✅ |
+| LAST_UPDATE_DATE | ApPaymentHistoryAllLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ApPaymentHistoryAllLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | ApPaymentHistoryAllLastUpdatedBy | ✅ |
+| MATCHED_FLAG | ApPaymentHistoryAllMatchedFlag | ✅ |
+| MRC_BANK_TO_BASE_XRATE | ApPaymentHistoryAllMrcBankToBaseXrate | ✅ |
+| MRC_BANK_TO_BASE_XRATE_DATE | ApPaymentHistoryAllMrcBankToBaseXrateDate | ✅ |
+| MRC_BANK_TO_BASE_XRATE_TYPE | ApPaymentHistoryAllMrcBankToBaseXrateType | ✅ |
+| MRC_CHARGES_BASE_AMOUNT | ApPaymentHistoryAllMrcChargesBaseAmount | ✅ |
+| MRC_ERRORS_BASE_AMOUNT | ApPaymentHistoryAllMrcErrorsBaseAmount | ✅ |
+| MRC_EXCHANGE_RATE | ApPaymentHistoryAllMrcExchangeRate | ✅ |
+| MRC_EXCHANGE_RATE_DATE | ApPaymentHistoryAllMrcExchangeRateDate | ✅ |
+| MRC_EXCHANGE_RATE_TYPE | ApPaymentHistoryAllMrcExchangeRateType | ✅ |
+| MRC_PMT_TO_BASE_XRATE | ApPaymentHistoryAllMrcPmtToBaseXrate | ✅ |
+| MRC_PMT_TO_BASE_XRATE_DATE | ApPaymentHistoryAllMrcPmtToBaseXrateDate | ✅ |
+| MRC_PMT_TO_BASE_XRATE_TYPE | ApPaymentHistoryAllMrcPmtToBaseXrateType | ✅ |
+| MRC_TRX_BASE_AMOUNT | ApPaymentHistoryAllMrcTrxBaseAmount | ✅ |
+| OBJECT_VERSION_NUMBER | ApPaymentHistoryAllObjectVersionNumber | ✅ |
+| ORG_ID | ApPaymentHistoryAllOrgId | ✅ |
+| PAYMENT_HISTORY_ID | ApPaymentHistoryAllPaymentHistoryId | ✅ |
+| PMT_CURRENCY_CODE | ApPaymentHistoryAllPmtCurrencyCode | ✅ |
+| PMT_TO_BASE_XRATE | ApPaymentHistoryAllPmtToBaseXrate | ✅ |
+| PMT_TO_BASE_XRATE_DATE | ApPaymentHistoryAllPmtToBaseXrateDate | ✅ |
+| PMT_TO_BASE_XRATE_TYPE | ApPaymentHistoryAllPmtToBaseXrateType | ✅ |
+| POSTED_FLAG | ApPaymentHistoryAllPostedFlag | ✅ |
+| PROGRAM_APPLICATION_ID | ApPaymentHistoryAllProgramApplicationId | ✅ |
+| PROGRAM_ID | ApPaymentHistoryAllProgramId | ✅ |
+| PROGRAM_UPDATE_DATE | ApPaymentHistoryAllProgramUpdateDate | ✅ |
+| RELATED_EVENT_ID | ApPaymentHistoryAllRelatedEventId | ✅ |
+| REQUEST_ID | ApPaymentHistoryAllRequestId | ✅ |
+| REV_PMT_HIST_ID | ApPaymentHistoryAllRevPmtHistId | ✅ |
+| TRANSACTION_AMOUNT | ApPaymentHistoryAllTransactionAmount | ✅ |
+| TRANSACTION_DATE | ApPaymentHistoryAllTransactionDate | ✅ |
+| TRANSACTION_TYPE | ApPaymentHistoryAllTransactionType | ✅ |
+| TRX_BANK_AMOUNT | ApPaymentHistoryAllTrxBankAmount | ✅ |
+| TRX_BASE_AMOUNT | ApPaymentHistoryAllTrxBaseAmount | ✅ |
+| TRX_PMT_AMOUNT | ApPaymentHistoryAllTrxPmtAmount | ✅ |
+
+### [[disbursementhistoryheaderpvo|DisbursementHistoryHeaderPVO]] (AP · BICC: 21/57)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACCOUNTING_DATE | PaymentHistoryAccountingDate | ✅ |
+| ACCOUNTING_EVENT_ID | PaymentHistoryAccountingEventId | — |
+| BANK_CURRENCY_CODE | PaymentHistoryBankCurrencyCode | ✅ |
+| BANK_TO_BASE_XRATE | PaymentHistoryBankToBaseXrate | ✅ |
+| BANK_TO_BASE_XRATE_DATE | PaymentHistoryBankToBaseXrateDate | ✅ |
+| BANK_TO_BASE_XRATE_TYPE | PaymentHistoryBankToBaseXrateType | ✅ |
+| CHARGE_AMOUNT | PaymentHistoryChargeAmount | — |
+| CHARGES_BANK_AMOUNT | PaymentHistoryChargesBankAmount | — |
+| CHARGES_BASE_AMOUNT | PaymentHistoryChargesBaseAmount | — |
+| CHARGES_PMT_AMOUNT | PaymentHistoryChargesPmtAmount | — |
+| CHECK_ID | PaymentHistoryCheckId | — |
+| CREATED_BY | PaymentHistoryCreatedBy | — |
+| CREATION_DATE | PaymentHistoryCreationDate | — |
+| CURRENCY_CODE | PaymentHistoryCurrencyCode | ✅ |
+| ERROR_AMOUNT | PaymentHistoryErrorAmount | — |
+| ERRORS_BANK_AMOUNT | PaymentHistoryErrorsBankAmount | — |
+| ERRORS_BASE_AMOUNT | PaymentHistoryErrorsBaseAmount | — |
+| ERRORS_PMT_AMOUNT | PaymentHistoryErrorsPmtAmount | — |
+| GAIN_LOSS_INDICATOR | PaymentHistoryGainLossIndicator | ✅ |
+| HISTORICAL_FLAG | PaymentHistoryHistoricalFlag | — |
+| INVOICE_ADJUSTMENT_EVENT_ID | PaymentHistoryInvoiceAdjustmentEventId | — |
+| LAST_UPDATE_DATE | PaymentHistoryLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | PaymentHistoryLastUpdateLogin | — |
+| LAST_UPDATED_BY | PaymentHistoryLastUpdatedBy | — |
+| MATCHED_FLAG | PaymentHistoryMatchedFlag | ✅ |
+| MRC_BANK_TO_BASE_XRATE | PaymentHistoryMrcBankToBaseXrate | — |
+| MRC_BANK_TO_BASE_XRATE_DATE | PaymentHistoryMrcBankToBaseXrateDate | — |
+| MRC_BANK_TO_BASE_XRATE_TYPE | PaymentHistoryMrcBankToBaseXrateType | — |
+| MRC_CHARGES_BASE_AMOUNT | PaymentHistoryMrcChargesBaseAmount | — |
+| MRC_ERRORS_BASE_AMOUNT | PaymentHistoryMrcErrorsBaseAmount | — |
+| MRC_EXCHANGE_RATE | PaymentHistoryMrcExchangeRate | — |
+| MRC_EXCHANGE_RATE_DATE | PaymentHistoryMrcExchangeRateDate | — |
+| MRC_EXCHANGE_RATE_TYPE | PaymentHistoryMrcExchangeRateType | — |
+| MRC_PMT_TO_BASE_XRATE | PaymentHistoryMrcPmtToBaseXrate | — |
+| MRC_PMT_TO_BASE_XRATE_DATE | PaymentHistoryMrcPmtToBaseXrateDate | — |
+| MRC_PMT_TO_BASE_XRATE_TYPE | PaymentHistoryMrcPmtToBaseXrateType | — |
+| MRC_TRX_BASE_AMOUNT | PaymentHistoryMrcTrxBaseAmount | — |
+| OBJECT_VERSION_NUMBER | PaymentHistoryObjectVersionNumber | — |
+| ORG_ID | PaymentHistoryOrgId | — |
+| PAYMENT_HISTORY_ID | PaymentHistoryId | ✅ |
+| PMT_CURRENCY_CODE | PaymentHistoryPmtCurrencyCode | ✅ |
+| PMT_TO_BASE_XRATE | PaymentHistoryPmtToBaseXrate | ✅ |
+| PMT_TO_BASE_XRATE_DATE | PaymentHistoryPmtToBaseXrateDate | ✅ |
+| PMT_TO_BASE_XRATE_TYPE | PaymentHistoryPmtToBaseXrateType | ✅ |
+| POSTED_FLAG | PaymentHistoryPostedFlag | ✅ |
+| PROGRAM_APPLICATION_ID | PaymentHistoryProgramApplicationId | — |
+| PROGRAM_ID | PaymentHistoryProgramId | — |
+| PROGRAM_UPDATE_DATE | PaymentHistoryProgramUpdateDate | — |
+| RELATED_EVENT_ID | PaymentHistoryRelatedEventId | — |
+| REQUEST_ID | PaymentHistoryRequestId | — |
+| REV_PMT_HIST_ID | PaymentHistoryRevPmtHistId | — |
+| TRANSACTION_AMOUNT | PaymentHistoryTransactionAmount | ✅ |
+| TRANSACTION_DATE | PaymentHistoryTransactionDate | ✅ |
+| TRANSACTION_TYPE | PaymentHistoryTransactionType | ✅ |
+| TRX_BANK_AMOUNT | PaymentHistoryTrxBankAmount | ✅ |
+| TRX_BASE_AMOUNT | PaymentHistoryTrxBaseAmount | ✅ |
+| TRX_PMT_AMOUNT | PaymentHistoryTrxPmtAmount | ✅ |
+
+### [[paymenthistorydistributionpvo|PaymentHistoryDistributionPVO]] (AP · BICC: 3/6)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CHECK_ID | PaymentHistoryCheckId | — |
+| LAST_UPDATE_DATE | PaymentHistoryLastUpdateDate | ✅ |
+| ORG_ID | PaymentHistoryOrgId | — |
+| PAYMENT_HISTORY_ID | PaymentHistoryPaymentHistoryId | — |
+| POSTED_FLAG | PaymentHistoryPostedFlag | ✅ |
+| TRANSACTION_TYPE | PaymentHistoryTransactionType | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — AP_PAYMENT_HISTORY_ALL](https://docs.oracle.com/en/cloud/saas/financials/25a/oedmf/appaymenthistoryall-25730.html)

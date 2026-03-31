@@ -62,3 +62,32 @@ updated_at: 2026-03-26
 ## 📎 Uso Típico
 
 (a ser preenchido na etapa 03)
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[fndcalweek|FndCalWeek]] (GL · BICC: 6/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CAL_WEEK | CalWeek | ✅ |
+| CAL_WEEK_CODE | CalWeekCode | ✅ |
+| CAL_WEEK_END_DATE | CalWeekEndDate | ✅ |
+| CAL_WEEK_START_DATE | CalWeekStartDate | ✅ |
+| CREATED_BY | CreatedBy | — |
+| CREATION_DATE | CreationDate | — |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | — |
+| LAST_UPDATED_BY | LastUpdatedBy | — |
+| PARENT_YEAR | ParentYear | ✅ |
+| PRIOR_SEQUENTIAL_WEEK | PriorSequentialWeek | — |
+| PRIOR_YEAR_WEEK | PriorYearWeek | — |
+
+### [[resourcerequestweekpvo|ResourceRequestWeekPVO]] (OTHER · BICC: 1/3)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| CAL_WEEK | CalWeek | ✅ |
+| CAL_WEEK_END_DATE | CalWeekEndDate | — |
+| CAL_WEEK_START_DATE | CalWeekStartDate | — |

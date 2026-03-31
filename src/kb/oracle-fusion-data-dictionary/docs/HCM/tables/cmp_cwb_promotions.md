@@ -124,6 +124,62 @@ GROUP BY p.STATUS;
 
 ---
 
+## 🔗 PVOs Relacionados
+
+### [[promotionspvo|PromotionsPVO]] (HCM · BICC: 21/21)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ASG_CHANGE_DATE | PromotionPEOAsgChangeDate | ✅ |
+| ASSIGNMENT_ID | PromotionPEOAssignmentId | ✅ |
+| ASSIGNMENT_NAME | PromotionPEOAssignmentName | ✅ |
+| CREATED_BY | PromotionPEOCreatedBy | ✅ |
+| CREATION_DATE | PromotionPEOCreationDate | ✅ |
+| GRADE_ID | PromotionPEOGradeId | ✅ |
+| GRADE_MAX_VAL | PromotionPEOGradeMaxVal | ✅ |
+| GRADE_MID_POINT | PromotionPEOGradeMidPoint | ✅ |
+| GRADE_MIN_VAL | PromotionPEOGradeMinVal | ✅ |
+| JOB_ID | PromotionPEOJobId | ✅ |
+| LAST_UPDATE_DATE | PromotionPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | PromotionPEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | PromotionPEOLastUpdatedBy | ✅ |
+| NEW_ASSIGNMENT_OVN | PromotionPEONewAssignmentOvn | ✅ |
+| OBJECT_VERSION_NUMBER | PromotionPEOObjectVersionNumber | ✅ |
+| PERSON_ID | PromotionPEOPersonId | ✅ |
+| POSITION_ID | PromotionPEOPositionId | ✅ |
+| PROM_ORIG_UPDATED_BY | PromotionPEOPromOrigUpdatedBy | ✅ |
+| PROM_UPDATE_DATE | PromotionPEOPromUpdateDate | ✅ |
+| PROM_UPDATED_BY | PromotionPEOPromUpdatedBy | ✅ |
+| PROMOTION_ID | PromotionId | ✅ |
+
+### [[promotionspvoviewall|PromotionsPVOViewAll]] (HCM · BICC: 21/21)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ASG_CHANGE_DATE | PromotionPEOAsgChangeDate | ✅ |
+| ASSIGNMENT_ID | PromotionPEOAssignmentId | ✅ |
+| ASSIGNMENT_NAME | PromotionPEOAssignmentName | ✅ |
+| CREATED_BY | PromotionPEOCreatedBy | ✅ |
+| CREATION_DATE | PromotionPEOCreationDate | ✅ |
+| GRADE_ID | PromotionPEOGradeId | ✅ |
+| GRADE_MAX_VAL | PromotionPEOGradeMaxVal | ✅ |
+| GRADE_MID_POINT | PromotionPEOGradeMidPoint | ✅ |
+| GRADE_MIN_VAL | PromotionPEOGradeMinVal | ✅ |
+| JOB_ID | PromotionPEOJobId | ✅ |
+| LAST_UPDATE_DATE | PromotionPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | PromotionPEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | PromotionPEOLastUpdatedBy | ✅ |
+| NEW_ASSIGNMENT_OVN | PromotionPEONewAssignmentOvn | ✅ |
+| OBJECT_VERSION_NUMBER | PromotionPEOObjectVersionNumber | ✅ |
+| PERSON_ID | PromotionPEOPersonId | ✅ |
+| POSITION_ID | PromotionPEOPositionId | ✅ |
+| PROM_ORIG_UPDATED_BY | PromotionPEOPromOrigUpdatedBy | ✅ |
+| PROM_UPDATE_DATE | PromotionPEOPromUpdateDate | ✅ |
+| PROM_UPDATED_BY | PromotionPEOPromUpdatedBy | ✅ |
+| PROMOTION_ID | PromotionId | ✅ |
+
+---
+
 ## 📚 Referências
 
 - [Oracle Docs — CMP_CWB_PROMOTIONS](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/cmpcwbpromotions.html)

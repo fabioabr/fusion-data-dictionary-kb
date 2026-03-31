@@ -111,3 +111,33 @@ WHERE  tl.APPLY_FLOW_ID = :p_flow_id;
 
 - [Oracle Docs — IRC_APPLY_FLOWS_TL](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/ircapplyflowstl.html)
 - [[hcm-module-data-dictionary]] — Dossie do modulo HCM
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[applyflowpvo|ApplyFlowPVO]] (HCM · BICC: 3/11)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| APPLY_FLOW_ID | ApplyFlowTranslationPEOApplyFlowId1 | — |
+| APPLY_FLOW_NAME | ApplyFlowTranslationPEOApplyFlowName | ✅ |
+| CREATED_BY | ApplyFlowTranslationPEOCreatedBy | — |
+| CREATION_DATE | ApplyFlowTranslationPEOCreationDate | — |
+| DESCRIPTION | ApplyFlowTranslationPEODescription | ✅ |
+| LANGUAGE | ApplyFlowTranslationPEOLanguage | — |
+| LAST_UPDATE_DATE | ApplyFlowTranslationPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | ApplyFlowTranslationPEOLastUpdateLogin | — |
+| LAST_UPDATED_BY | ApplyFlowTranslationPEOLastUpdatedBy | — |
+| OBJECT_VERSION_NUMBER | ApplyFlowTranslationPEOObjectVersionNumber | — |
+| SOURCE_LANG | ApplyFlowTranslationPEOSourceLang | — |
+
+### [[applyflowversionpvo|ApplyFlowVersionPVO]] (HCM · BICC: 2/5)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| APPLY_FLOW_ID | ApplyFlowTranslationPEOApplyFlowId | — |
+| APPLY_FLOW_NAME | ApplyFlowTranslationPEOApplyFlowName | ✅ |
+| DESCRIPTION | ApplyFlowTranslationPEODescription | ✅ |
+| LANGUAGE | ApplyFlowTranslationPEOLanguage | — |
+| SOURCE_LANG | ApplyFlowTranslationPEOSourceLang | — |
