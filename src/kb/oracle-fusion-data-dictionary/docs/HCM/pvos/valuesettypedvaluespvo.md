@@ -1,0 +1,104 @@
+---
+id: DOC-HCM-PVO-ValueSetTypedValuesPVO
+doc_type: system-doc
+title: "ValueSetTypedValuesPVO — PVO Human Capital Management"
+system: Oracle Fusion Cloud ERP
+module: Human Capital Management
+domain: Técnico
+owner: fabio.patria
+team: dados
+status: draft
+confidentiality: internal
+tags:
+  - oracle-fusion
+  - hcm
+  - data-dictionary
+  - pvo
+  - bicc
+aliases:
+  - ValueSetTypedValuesPVO
+  - valuesettypedvaluespvo
+source_format: markdown
+conversion_pipeline: json-to-md-v1
+conversion_quality: 100
+qa_score: 0
+qa_status: not_reviewed
+created_at: 2026-03-31
+updated_at: 2026-03-31
+---
+
+# ValueSetTypedValuesPVO
+
+## 📌 Visão Geral
+
+Disponibiliza valores tipados de conjuntos de valores (value sets) do ERP. Referência para campos de seleção e validação de dados no Oracle Fusion.
+
+**Caminho:** `FscmTopModelAM.AnalyticsServiceAM.ValueSetTypedValuesPVO`
+
+| Atributos | Tabelas | PKs | BICC | BICC % |
+|-----------|---------|-----|------|--------|
+| 37 | 2 | 1 | 37 | 100% |
+
+---
+
+## 🔗 Tabelas Relacionadas
+
+- [[fnd_vs_values_b|FND_VS_VALUES_B]] — 14 atributos (1 PKs, 14 BICC)
+- [[fnd_vs_value_sets|FND_VS_VALUE_SETS]] — 23 atributos (23 BICC)
+
+---
+
+## ⚙️ Atributos
+
+### [[fnd_vs_values_b|FND_VS_VALUES_B]]
+
+| # | Atributo | Coluna | PK | BICC |
+|---|----------|--------|----|------|
+| 1 | CreatedBy | CREATED_BY | — | ✅ |
+| 2 | CreationDate | CREATION_DATE | — | ✅ |
+| 3 | EnabledFlag | ENABLED_FLAG | — | ✅ |
+| 4 | EndDateActive | END_DATE_ACTIVE | — | ✅ |
+| 5 | IndependentValue | INDEPENDENT_VALUE | — | ✅ |
+| 6 | LastUpdateDate | LAST_UPDATE_DATE | — | ✅ |
+| 7 | LastUpdateLogin | LAST_UPDATE_LOGIN | — | ✅ |
+| 8 | LastUpdatedBy | LAST_UPDATED_BY | — | ✅ |
+| 9 | SortOrder | SORT_ORDER | — | ✅ |
+| 10 | StartDateActive | START_DATE_ACTIVE | — | ✅ |
+| 11 | SummaryFlag | SUMMARY_FLAG | — | ✅ |
+| 12 | Value | VALUE | — | ✅ |
+| 13 | ValueId | VALUE_ID | 🔑 | ✅ |
+| 14 | ValueSetId | VALUE_SET_ID | — | ✅ |
+
+### [[fnd_vs_value_sets|FND_VS_VALUE_SETS]]
+
+| # | Atributo | Coluna | PK | BICC |
+|---|----------|--------|----|------|
+| 1 | CreatedBy1 | CREATED_BY | — | ✅ |
+| 2 | CreationDate1 | CREATION_DATE | — | ✅ |
+| 3 | DataSecurityObjectName | DATA_SECURITY_OBJECT_NAME | — | ✅ |
+| 4 | Description | DESCRIPTION | — | ✅ |
+| 5 | EnterpriseId | ENTERPRISE_ID | — | ✅ |
+| 6 | IndependentValueSetId | INDEPENDENT_VALUE_SET_ID | — | ✅ |
+| 7 | LastUpdateDate1 | LAST_UPDATE_DATE | — | ✅ |
+| 8 | LastUpdateLogin1 | LAST_UPDATE_LOGIN | — | ✅ |
+| 9 | LastUpdatedBy1 | LAST_UPDATED_BY | — | ✅ |
+| 10 | MaximumLength | MAXIMUM_LENGTH | — | ✅ |
+| 11 | MaximumValue | MAXIMUM_VALUE | — | ✅ |
+| 12 | MinimumValue | MINIMUM_VALUE | — | ✅ |
+| 13 | ModuleId | MODULE_ID | — | ✅ |
+| 14 | Precision | PRECISION | — | ✅ |
+| 15 | Scale | SCALE | — | ✅ |
+| 16 | SecurityEnabledFlag | SECURITY_ENABLED_FLAG | — | ✅ |
+| 17 | UppercaseOnlyFlag | UPPERCASE_ONLY_FLAG | — | ✅ |
+| 18 | ValidationType | VALIDATION_TYPE | — | ✅ |
+| 19 | ValueDataType | VALUE_DATA_TYPE | — | ✅ |
+| 20 | ValueSetCode | VALUE_SET_CODE | — | ✅ |
+| 21 | ValueSetId1 | VALUE_SET_ID | — | ✅ |
+| 22 | ValueSubtype | VALUE_SUBTYPE | — | ✅ |
+| 23 | ZeroFillFlag | ZERO_FILL_FLAG | — | ✅ |
+
+---
+
+## 📚 Referências
+
+- [[hcm-module-data-dictionary]] — Dossiê do módulo HCM

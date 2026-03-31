@@ -1,0 +1,132 @@
+---
+id: DOC-OTHER-PVO-WorkDefinitionExtractPVO
+doc_type: system-doc
+title: "WorkDefinitionExtractPVO — PVO Cross-Module"
+system: Oracle Fusion Cloud ERP
+module: Cross-Module
+domain: Técnico
+owner: fabio.patria
+team: dados
+status: draft
+confidentiality: internal
+tags:
+  - oracle-fusion
+  - other
+  - data-dictionary
+  - pvo
+  - bicc
+aliases:
+  - WorkDefinitionExtractPVO
+  - workdefinitionextractpvo
+source_format: markdown
+conversion_pipeline: json-to-md-v1
+conversion_quality: 100
+qa_score: 0
+qa_status: not_reviewed
+created_at: 2026-03-31
+updated_at: 2026-03-31
+---
+
+# WorkDefinitionExtractPVO
+
+## 📌 Visão Geral
+
+View Object para extração BICC de dados de Work Definition Extract. Acessa as tabelas: WIS_WORK_DEFINITIONS.
+
+**Caminho:** `FscmTopModelAM.ScmExtractAM.WisBiccExtractAM.WorkDefinitionExtractPVO`
+
+| Atributos | Tabelas | PKs | BICC | BICC % |
+|-----------|---------|-----|------|--------|
+| 71 | 1 | 1 | 71 | 100% |
+
+---
+
+## 🔗 Tabelas Relacionadas
+
+- [[wis_work_definitions|WIS_WORK_DEFINITIONS]] — 71 atributos (1 PKs, 71 BICC)
+
+---
+
+## ⚙️ Atributos
+
+### [[wis_work_definitions|WIS_WORK_DEFINITIONS]]
+
+| # | Atributo | Coluna | PK | BICC |
+|---|----------|--------|----|------|
+| 1 | AttributeCategory | ATTRIBUTE_CATEGORY | — | ✅ |
+| 2 | AttributeChar1 | ATTRIBUTE_CHAR1 | — | ✅ |
+| 3 | AttributeChar10 | ATTRIBUTE_CHAR10 | — | ✅ |
+| 4 | AttributeChar11 | ATTRIBUTE_CHAR11 | — | ✅ |
+| 5 | AttributeChar12 | ATTRIBUTE_CHAR12 | — | ✅ |
+| 6 | AttributeChar13 | ATTRIBUTE_CHAR13 | — | ✅ |
+| 7 | AttributeChar14 | ATTRIBUTE_CHAR14 | — | ✅ |
+| 8 | AttributeChar15 | ATTRIBUTE_CHAR15 | — | ✅ |
+| 9 | AttributeChar16 | ATTRIBUTE_CHAR16 | — | ✅ |
+| 10 | AttributeChar17 | ATTRIBUTE_CHAR17 | — | ✅ |
+| 11 | AttributeChar18 | ATTRIBUTE_CHAR18 | — | ✅ |
+| 12 | AttributeChar19 | ATTRIBUTE_CHAR19 | — | ✅ |
+| 13 | AttributeChar2 | ATTRIBUTE_CHAR2 | — | ✅ |
+| 14 | AttributeChar20 | ATTRIBUTE_CHAR20 | — | ✅ |
+| 15 | AttributeChar3 | ATTRIBUTE_CHAR3 | — | ✅ |
+| 16 | AttributeChar4 | ATTRIBUTE_CHAR4 | — | ✅ |
+| 17 | AttributeChar5 | ATTRIBUTE_CHAR5 | — | ✅ |
+| 18 | AttributeChar6 | ATTRIBUTE_CHAR6 | — | ✅ |
+| 19 | AttributeChar7 | ATTRIBUTE_CHAR7 | — | ✅ |
+| 20 | AttributeChar8 | ATTRIBUTE_CHAR8 | — | ✅ |
+| 21 | AttributeChar9 | ATTRIBUTE_CHAR9 | — | ✅ |
+| 22 | AttributeDate1 | ATTRIBUTE_DATE1 | — | ✅ |
+| 23 | AttributeDate2 | ATTRIBUTE_DATE2 | — | ✅ |
+| 24 | AttributeDate3 | ATTRIBUTE_DATE3 | — | ✅ |
+| 25 | AttributeDate4 | ATTRIBUTE_DATE4 | — | ✅ |
+| 26 | AttributeDate5 | ATTRIBUTE_DATE5 | — | ✅ |
+| 27 | AttributeNumber1 | ATTRIBUTE_NUMBER1 | — | ✅ |
+| 28 | AttributeNumber10 | ATTRIBUTE_NUMBER10 | — | ✅ |
+| 29 | AttributeNumber2 | ATTRIBUTE_NUMBER2 | — | ✅ |
+| 30 | AttributeNumber3 | ATTRIBUTE_NUMBER3 | — | ✅ |
+| 31 | AttributeNumber4 | ATTRIBUTE_NUMBER4 | — | ✅ |
+| 32 | AttributeNumber5 | ATTRIBUTE_NUMBER5 | — | ✅ |
+| 33 | AttributeNumber6 | ATTRIBUTE_NUMBER6 | — | ✅ |
+| 34 | AttributeNumber7 | ATTRIBUTE_NUMBER7 | — | ✅ |
+| 35 | AttributeNumber8 | ATTRIBUTE_NUMBER8 | — | ✅ |
+| 36 | AttributeNumber9 | ATTRIBUTE_NUMBER9 | — | ✅ |
+| 37 | AttributeTimestamp1 | ATTRIBUTE_TIMESTAMP1 | — | ✅ |
+| 38 | AttributeTimestamp2 | ATTRIBUTE_TIMESTAMP2 | — | ✅ |
+| 39 | AttributeTimestamp3 | ATTRIBUTE_TIMESTAMP3 | — | ✅ |
+| 40 | AttributeTimestamp4 | ATTRIBUTE_TIMESTAMP4 | — | ✅ |
+| 41 | AttributeTimestamp5 | ATTRIBUTE_TIMESTAMP5 | — | ✅ |
+| 42 | BillSequenceId | BILL_SEQUENCE_ID | — | ✅ |
+| 43 | CostingPriority | COSTING_PRIORITY | — | ✅ |
+| 44 | CreatedBy | CREATED_BY | — | ✅ |
+| 45 | CreationDate | CREATION_DATE | — | ✅ |
+| 46 | InactiveDate | INACTIVE_DATE | — | ✅ |
+| 47 | InventoryItemId | INVENTORY_ITEM_ID | — | ✅ |
+| 48 | LastUpdateDate | LAST_UPDATE_DATE | — | ✅ |
+| 49 | LastUpdateLogin | LAST_UPDATE_LOGIN | — | ✅ |
+| 50 | LastUpdatedBy | LAST_UPDATED_BY | — | ✅ |
+| 51 | MinimumTransferQuantity | MINIMUM_TRANSFER_QUANTITY | — | ✅ |
+| 52 | ObjectVersionNumber | OBJECT_VERSION_NUMBER | — | ✅ |
+| 53 | OrganizationId | ORGANIZATION_ID | — | ✅ |
+| 54 | PreassignLotFlag | PREASSIGN_LOT_FLAG | — | ✅ |
+| 55 | ProductionLineId | PRODUCTION_LINE_ID | — | ✅ |
+| 56 | ProductionPriority | PRODUCTION_PRIORITY | — | ✅ |
+| 57 | Quantity | QUANTITY | — | ✅ |
+| 58 | ResequenceFlag | RESEQUENCE_FLAG | — | ✅ |
+| 59 | SerialTrackingFlag | SERIAL_TRACKING_FLAG | — | ✅ |
+| 60 | StatusCode | STATUS_CODE | — | ✅ |
+| 61 | SystemGeneratedFlag | SYSTEM_GENERATED_FLAG | — | ✅ |
+| 62 | TransformFromItemId | TRANSFORM_FROM_ITEM_ID | — | ✅ |
+| 63 | UomCode | UOM_CODE | — | ✅ |
+| 64 | WdMntNameId | WD_MNT_NAME_ID | — | ✅ |
+| 65 | WorkDefinitionHeaderName | WORK_DEFINITION_HEADER_NAME | — | ✅ |
+| 66 | WorkDefinitionId | WORK_DEFINITION_ID | 🔑 | ✅ |
+| 67 | WorkDefinitionNameId | WORK_DEFINITION_NAME_ID | — | ✅ |
+| 68 | WorkDefinitionType | WORK_DEFINITION_TYPE | — | ✅ |
+| 69 | WorkMethodId | WORK_METHOD_ID | — | ✅ |
+| 70 | WorkOrderSubType | WORK_ORDER_SUB_TYPE | — | ✅ |
+| 71 | WorkOrderType | WORK_ORDER_TYPE | — | ✅ |
+
+---
+
+## 📚 Referências
+
+- [[other-module-data-dictionary]] — Dossiê do módulo OTHER

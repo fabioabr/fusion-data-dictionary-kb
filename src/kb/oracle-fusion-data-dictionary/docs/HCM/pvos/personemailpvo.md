@@ -1,0 +1,98 @@
+---
+id: DOC-HCM-PVO-PersonEmailPVO
+doc_type: system-doc
+title: "PersonEmailPVO — PVO Human Capital Management"
+system: Oracle Fusion Cloud ERP
+module: Human Capital Management
+domain: Técnico
+owner: fabio.patria
+team: dados
+status: draft
+confidentiality: internal
+tags:
+  - oracle-fusion
+  - hcm
+  - data-dictionary
+  - pvo
+  - bicc
+aliases:
+  - PersonEmailPVO
+  - personemailpvo
+source_format: markdown
+conversion_pipeline: json-to-md-v1
+conversion_quality: 100
+qa_score: 0
+qa_status: not_reviewed
+created_at: 2026-03-31
+updated_at: 2026-03-31
+---
+
+# PersonEmailPVO
+
+## 📌 Visão Geral
+
+Extrai os endereços de e-mail dos colaboradores, vinculados ao cadastro de pessoa. Utilizado para comunicações corporativas, integrações e diretório de contatos.
+
+**Caminho:** `HcmTopModelAnalyticsGlobalAM.PersonAM.PersonEmailPVO`
+
+| Atributos | Tabelas | PKs | BICC | BICC % |
+|-----------|---------|-----|------|--------|
+| 31 | 2 | 1 | 5 | 16% |
+
+---
+
+## 🔗 Tabelas Relacionadas
+
+- [[per_all_people_f|PER_ALL_PEOPLE_F]] — 18 atributos (2 BICC)
+- [[per_email_addresses|PER_EMAIL_ADDRESSES]] — 13 atributos (1 PKs, 3 BICC)
+
+---
+
+## ⚙️ Atributos
+
+### [[per_all_people_f|PER_ALL_PEOPLE_F]]
+
+| # | Atributo | Coluna | PK | BICC |
+|---|----------|--------|----|------|
+| 1 | PersonDetailsPEOApplicantNumber | APPLICANT_NUMBER | — | — |
+| 2 | PersonDetailsPEOBusinessGroupId | BUSINESS_GROUP_ID | — | — |
+| 3 | PersonDetailsPEOCreatedBy | CREATED_BY | — | — |
+| 4 | PersonDetailsPEOCreationDate | CREATION_DATE | — | — |
+| 5 | PersonDetailsPEOEffectiveEndDate | EFFECTIVE_END_DATE | — | — |
+| 6 | PersonDetailsPEOEffectiveStartDate | EFFECTIVE_START_DATE | — | ✅ |
+| 7 | PersonDetailsPEOLastUpdateDate | LAST_UPDATE_DATE | — | ✅ |
+| 8 | PersonDetailsPEOLastUpdateLogin | LAST_UPDATE_LOGIN | — | — |
+| 9 | PersonDetailsPEOLastUpdatedBy | LAST_UPDATED_BY | — | — |
+| 10 | PersonDetailsPEOMailingAddressId | MAILING_ADDRESS_ID | — | — |
+| 11 | PersonDetailsPEOObjectVersionNumber | OBJECT_VERSION_NUMBER | — | — |
+| 12 | PersonDetailsPEOPersonId | PERSON_ID | — | — |
+| 13 | PersonDetailsPEOPersonNumber | PERSON_NUMBER | — | — |
+| 14 | PersonDetailsPEOPrimaryEmailId | PRIMARY_EMAIL_ID | — | — |
+| 15 | PersonDetailsPEOPrimaryNidNumber | PRIMARY_NID_NUMBER | — | — |
+| 16 | PersonDetailsPEOPrimaryPhoneId | PRIMARY_PHONE_ID | — | — |
+| 17 | PersonDetailsPEOStartDate | START_DATE | — | — |
+| 18 | PersonDetailsPEOWaiveDataProtect | WAIVE_DATA_PROTECT | — | — |
+
+### [[per_email_addresses|PER_EMAIL_ADDRESSES]]
+
+| # | Atributo | Coluna | PK | BICC |
+|---|----------|--------|----|------|
+| 1 | EmailAddressId | EMAIL_ADDRESS_ID | 🔑 | ✅ |
+| 2 | EmailAddressesPEOBusinessGroupId | BUSINESS_GROUP_ID | — | — |
+| 3 | EmailAddressesPEOCreatedBy | CREATED_BY | — | — |
+| 4 | EmailAddressesPEOCreationDate | CREATION_DATE | — | — |
+| 5 | EmailAddressesPEODateFrom | DATE_FROM | — | — |
+| 6 | EmailAddressesPEODateTo | DATE_TO | — | — |
+| 7 | EmailAddressesPEOEmailAddress | EMAIL_ADDRESS | — | ✅ |
+| 8 | EmailAddressesPEOEmailType | EMAIL_TYPE | — | — |
+| 9 | EmailAddressesPEOLastUpdateDate | LAST_UPDATE_DATE | — | ✅ |
+| 10 | EmailAddressesPEOLastUpdateLogin | LAST_UPDATE_LOGIN | — | — |
+| 11 | EmailAddressesPEOLastUpdatedBy | LAST_UPDATED_BY | — | — |
+| 12 | EmailAddressesPEOObjectVersionNumber | OBJECT_VERSION_NUMBER | — | — |
+| 13 | EmailAddressesPEOPersonId | PERSON_ID | — | — |
+
+---
+
+## 📚 Referências
+
+- [[hcm-module-data-dictionary]] — Dossiê do módulo HCM
