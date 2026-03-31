@@ -1,0 +1,1100 @@
+---
+id: DOC-PO-PVO-NegotiationResponseRequirementAndAttributePVO
+doc_type: system-doc
+title: "NegotiationResponseRequirementAndAttributePVO — PVO Purchasing"
+system: Oracle Fusion Cloud ERP
+module: Purchasing
+domain: Técnico
+owner: fabio.patria
+team: dados
+status: draft
+confidentiality: internal
+tags:
+  - oracle-fusion
+  - po
+  - data-dictionary
+  - pvo
+  - bicc
+aliases:
+  - NegotiationResponseRequirementAndAttributePVO
+  - negotiationresponserequirementandattributepvo
+source_format: markdown
+conversion_pipeline: json-to-md-v1
+conversion_quality: 100
+qa_score: 0
+qa_status: not_reviewed
+created_at: 2026-03-31
+updated_at: 2026-03-31
+---
+
+# NegotiationResponseRequirementAndAttributePVO
+
+## 📌 Visão Geral
+
+Extrai requisitos, atributos e respostas das propostas de fornecedores em negociações. Suporta avaliação qualitativa, scoring técnico e análise de conformidade com especificações.
+
+**Caminho:** `FscmTopModelAM.PrcPonPublicViewAM.NegotiationResponseRequirementAndAttributePVO`
+
+| Atributos | Tabelas | PKs | BICC | BICC % |
+|-----------|---------|-----|------|--------|
+| 979 | 11 | 3 | 127 | 13% |
+
+---
+
+## 🔗 Tabelas Relacionadas
+
+- [[egp_categories_vl|EGP_CATEGORIES_VL]] — 96 atributos (1 BICC)
+- [[gl_daily_conversion_types|GL_DAILY_CONVERSION_TYPES]] — 26 atributos
+- [[hz_parties|HZ_PARTIES]] — 137 atributos (2 BICC)
+- [[pon_auction_attributes|PON_AUCTION_ATTRIBUTES]] — 35 atributos (5 BICC)
+- [[pon_auction_headers_all|PON_AUCTION_HEADERS_ALL]] — 219 atributos (30 BICC)
+- [[pon_auction_item_prices_all|PON_AUCTION_ITEM_PRICES_ALL]] — 152 atributos (26 BICC)
+- [[pon_auction_sections|PON_AUCTION_SECTIONS]] — 14 atributos (2 BICC)
+- [[pon_bid_attribute_values|PON_BID_ATTRIBUTE_VALUES]] — 32 atributos (3 PKs, 16 BICC)
+- [[pon_bid_headers|PON_BID_HEADERS]] — 75 atributos (22 BICC)
+- [[pon_bid_item_prices|PON_BID_ITEM_PRICES]] — 89 atributos (23 BICC)
+- [[po_system_parameters_all|PO_SYSTEM_PARAMETERS_ALL]] — 104 atributos
+
+---
+
+## ⚙️ Atributos
+
+### [[egp_categories_vl|EGP_CATEGORIES_VL]]
+
+| # | Atributo | Coluna | PK | BICC |
+|---|----------|--------|----|------|
+| 1 | Attribute101 | ATTRIBUTE10 | — | — |
+| 2 | Attribute110 | ATTRIBUTE1 | — | — |
+| 3 | Attribute111 | ATTRIBUTE11 | — | — |
+| 4 | Attribute121 | ATTRIBUTE12 | — | — |
+| 5 | Attribute131 | ATTRIBUTE13 | — | — |
+| 6 | Attribute141 | ATTRIBUTE14 | — | — |
+| 7 | Attribute151 | ATTRIBUTE15 | — | — |
+| 8 | Attribute21 | ATTRIBUTE2 | — | — |
+| 9 | Attribute31 | ATTRIBUTE3 | — | — |
+| 10 | Attribute41 | ATTRIBUTE4 | — | — |
+| 11 | Attribute51 | ATTRIBUTE5 | — | — |
+| 12 | Attribute61 | ATTRIBUTE6 | — | — |
+| 13 | Attribute71 | ATTRIBUTE7 | — | — |
+| 14 | Attribute81 | ATTRIBUTE8 | — | — |
+| 15 | Attribute91 | ATTRIBUTE9 | — | — |
+| 16 | AttributeCategory1 | ATTRIBUTE_CATEGORY | — | — |
+| 17 | AttributeDate11 | ATTRIBUTE_DATE1 | — | — |
+| 18 | AttributeDate21 | ATTRIBUTE_DATE2 | — | — |
+| 19 | AttributeDate31 | ATTRIBUTE_DATE3 | — | — |
+| 20 | AttributeDate41 | ATTRIBUTE_DATE4 | — | — |
+| 21 | AttributeDate51 | ATTRIBUTE_DATE5 | — | — |
+| 22 | AttributeNumber101 | ATTRIBUTE_NUMBER10 | — | — |
+| 23 | AttributeNumber11 | ATTRIBUTE_NUMBER1 | — | — |
+| 24 | AttributeNumber21 | ATTRIBUTE_NUMBER2 | — | — |
+| 25 | AttributeNumber31 | ATTRIBUTE_NUMBER3 | — | — |
+| 26 | AttributeNumber41 | ATTRIBUTE_NUMBER4 | — | — |
+| 27 | AttributeNumber51 | ATTRIBUTE_NUMBER5 | — | — |
+| 28 | AttributeNumber61 | ATTRIBUTE_NUMBER6 | — | — |
+| 29 | AttributeNumber71 | ATTRIBUTE_NUMBER7 | — | — |
+| 30 | AttributeNumber81 | ATTRIBUTE_NUMBER8 | — | — |
+| 31 | AttributeNumber91 | ATTRIBUTE_NUMBER9 | — | — |
+| 32 | AttributeTimestamp11 | ATTRIBUTE_TIMESTAMP1 | — | — |
+| 33 | AttributeTimestamp21 | ATTRIBUTE_TIMESTAMP2 | — | — |
+| 34 | AttributeTimestamp31 | ATTRIBUTE_TIMESTAMP3 | — | — |
+| 35 | AttributeTimestamp41 | ATTRIBUTE_TIMESTAMP4 | — | — |
+| 36 | AttributeTimestamp51 | ATTRIBUTE_TIMESTAMP5 | — | — |
+| 37 | CategoryContentCode | CATEGORY_CONTENT_CODE | — | — |
+| 38 | CategoryId1 | CATEGORY_ID | — | — |
+| 39 | CategoryName | CATEGORY_NAME | — | ✅ |
+| 40 | CreatedBy1 | CREATED_BY | — | — |
+| 41 | CreationDate1 | CREATION_DATE | — | — |
+| 42 | Description | DESCRIPTION | — | — |
+| 43 | EnabledFlag | ENABLED_FLAG | — | — |
+| 44 | EndDateActive | END_DATE_ACTIVE | — | — |
+| 45 | JobDefinitionName | JOB_DEFINITION_NAME | — | — |
+| 46 | JobDefinitionPackage | JOB_DEFINITION_PACKAGE | — | — |
+| 47 | LastUpdateDate1 | LAST_UPDATE_DATE | — | — |
+| 48 | LastUpdateLogin1 | LAST_UPDATE_LOGIN | — | — |
+| 49 | LastUpdatedBy1 | LAST_UPDATED_BY | — | — |
+| 50 | ObjectVersionNumber3 | OBJECT_VERSION_NUMBER | — | — |
+| 51 | RequestId | REQUEST_ID | — | — |
+| 52 | Segment1 | SEGMENT1 | — | — |
+| 53 | Segment10 | SEGMENT10 | — | — |
+| 54 | Segment11 | SEGMENT11 | — | — |
+| 55 | Segment12 | SEGMENT12 | — | — |
+| 56 | Segment13 | SEGMENT13 | — | — |
+| 57 | Segment14 | SEGMENT14 | — | — |
+| 58 | Segment15 | SEGMENT15 | — | — |
+| 59 | Segment16 | SEGMENT16 | — | — |
+| 60 | Segment17 | SEGMENT17 | — | — |
+| 61 | Segment18 | SEGMENT18 | — | — |
+| 62 | Segment19 | SEGMENT19 | — | — |
+| 63 | Segment2 | SEGMENT2 | — | — |
+| 64 | Segment20 | SEGMENT20 | — | — |
+| 65 | Segment3 | SEGMENT3 | — | — |
+| 66 | Segment4 | SEGMENT4 | — | — |
+| 67 | Segment5 | SEGMENT5 | — | — |
+| 68 | Segment6 | SEGMENT6 | — | — |
+| 69 | Segment7 | SEGMENT7 | — | — |
+| 70 | Segment8 | SEGMENT8 | — | — |
+| 71 | Segment9 | SEGMENT9 | — | — |
+| 72 | SegmentNumber1 | SEGMENT_NUMBER1 | — | — |
+| 73 | SegmentNumber10 | SEGMENT_NUMBER10 | — | — |
+| 74 | SegmentNumber11 | SEGMENT_NUMBER11 | — | — |
+| 75 | SegmentNumber12 | SEGMENT_NUMBER12 | — | — |
+| 76 | SegmentNumber13 | SEGMENT_NUMBER13 | — | — |
+| 77 | SegmentNumber14 | SEGMENT_NUMBER14 | — | — |
+| 78 | SegmentNumber15 | SEGMENT_NUMBER15 | — | — |
+| 79 | SegmentNumber16 | SEGMENT_NUMBER16 | — | — |
+| 80 | SegmentNumber17 | SEGMENT_NUMBER17 | — | — |
+| 81 | SegmentNumber18 | SEGMENT_NUMBER18 | — | — |
+| 82 | SegmentNumber19 | SEGMENT_NUMBER19 | — | — |
+| 83 | SegmentNumber2 | SEGMENT_NUMBER2 | — | — |
+| 84 | SegmentNumber20 | SEGMENT_NUMBER20 | — | — |
+| 85 | SegmentNumber3 | SEGMENT_NUMBER3 | — | — |
+| 86 | SegmentNumber4 | SEGMENT_NUMBER4 | — | — |
+| 87 | SegmentNumber5 | SEGMENT_NUMBER5 | — | — |
+| 88 | SegmentNumber6 | SEGMENT_NUMBER6 | — | — |
+| 89 | SegmentNumber7 | SEGMENT_NUMBER7 | — | — |
+| 90 | SegmentNumber8 | SEGMENT_NUMBER8 | — | — |
+| 91 | SegmentNumber9 | SEGMENT_NUMBER9 | — | — |
+| 92 | StartDateActive | START_DATE_ACTIVE | — | — |
+| 93 | StructureInstanceNumber | STRUCTURE_INSTANCE_NUMBER | — | — |
+| 94 | SummaryFlag | SUMMARY_FLAG | — | — |
+| 95 | SupplierEnabledFlag | SUPPLIER_ENABLED_FLAG | — | — |
+| 96 | WebStatus | WEB_STATUS | — | — |
+
+### [[gl_daily_conversion_types|GL_DAILY_CONVERSION_TYPES]]
+
+| # | Atributo | Coluna | PK | BICC |
+|---|----------|--------|----|------|
+| 1 | DailyConversionTypeNegoHdrConversionType | CONVERSION_TYPE | — | — |
+| 2 | DailyConversionTypeNegoHdrDescription | DESCRIPTION | — | — |
+| 3 | DailyConversionTypeNegoHdrEnableCrossRateFlag | ENABLE_CROSS_RATE_FLAG | — | — |
+| 4 | DailyConversionTypeNegoHdrEnforceInverseRateFlag | ENFORCE_INVERSE_RATE_FLAG | — | — |
+| 5 | DailyConversionTypeNegoHdrFemEnabledFlag | FEM_ENABLED_FLAG | — | — |
+| 6 | DailyConversionTypeNegoHdrFemRateTypeCode | FEM_RATE_TYPE_CODE | — | — |
+| 7 | DailyConversionTypeNegoHdrFemScenario | FEM_SCENARIO | — | — |
+| 8 | DailyConversionTypeNegoHdrFemTimeframe | FEM_TIMEFRAME | — | — |
+| 9 | DailyConversionTypeNegoHdrPivotCurrencyCode | PIVOT_CURRENCY_CODE | — | — |
+| 10 | DailyConversionTypeNegoHdrSecurityFlag | SECURITY_FLAG | — | — |
+| 11 | DailyConversionTypeNegoHdrUserConversionType | USER_CONVERSION_TYPE | — | — |
+| 12 | DailyConversionTypeNegoHdrUserOverrideCrossRateFlag | USER_OVERRIDE_CROSS_RATE_FLAG | — | — |
+| 13 | DailyConversionTypeResHdrConversionType | CONVERSION_TYPE | — | — |
+| 14 | DailyConversionTypeResHdrDescription | DESCRIPTION | — | — |
+| 15 | DailyConversionTypeResHdrEnableCrossRateFlag | ENABLE_CROSS_RATE_FLAG | — | — |
+| 16 | DailyConversionTypeResHdrEnforceInverseRateFlag | ENFORCE_INVERSE_RATE_FLAG | — | — |
+| 17 | DailyConversionTypeResHdrFemEnabledFlag | FEM_ENABLED_FLAG | — | — |
+| 18 | DailyConversionTypeResHdrFemRateTypeCode | FEM_RATE_TYPE_CODE | — | — |
+| 19 | DailyConversionTypeResHdrFemScenario | FEM_SCENARIO | — | — |
+| 20 | DailyConversionTypeResHdrFemTimeframe | FEM_TIMEFRAME | — | — |
+| 21 | DailyConversionTypeResHdrPivotCurrencyCode | PIVOT_CURRENCY_CODE | — | — |
+| 22 | DailyConversionTypeResHdrSecurityFlag | SECURITY_FLAG | — | — |
+| 23 | DailyConversionTypeResHdrUserConversionType | USER_CONVERSION_TYPE | — | — |
+| 24 | DailyConversionTypeResHdrUserOverrideCrossRateFlag | USER_OVERRIDE_CROSS_RATE_FLAG | — | — |
+| 25 | ObjectVersionNumber | OBJECT_VERSION_NUMBER | — | — |
+| 26 | ObjectVersionNumber1 | OBJECT_VERSION_NUMBER | — | — |
+
+### [[hz_parties|HZ_PARTIES]]
+
+| # | Atributo | Coluna | PK | BICC |
+|---|----------|--------|----|------|
+| 1 | CreatedByAddress1 | ADDRESS1 | — | — |
+| 2 | CreatedByAddress2 | ADDRESS2 | — | — |
+| 3 | CreatedByAddress3 | ADDRESS3 | — | — |
+| 4 | CreatedByAddress4 | ADDRESS4 | — | — |
+| 5 | CreatedByAnalysisFy | ANALYSIS_FY | — | — |
+| 6 | CreatedByAttribute1 | ATTRIBUTE1 | — | — |
+| 7 | CreatedByAttribute10 | ATTRIBUTE10 | — | — |
+| 8 | CreatedByAttribute11 | ATTRIBUTE11 | — | — |
+| 9 | CreatedByAttribute12 | ATTRIBUTE12 | — | — |
+| 10 | CreatedByAttribute13 | ATTRIBUTE13 | — | — |
+| 11 | CreatedByAttribute14 | ATTRIBUTE14 | — | — |
+| 12 | CreatedByAttribute15 | ATTRIBUTE15 | — | — |
+| 13 | CreatedByAttribute16 | ATTRIBUTE16 | — | — |
+| 14 | CreatedByAttribute17 | ATTRIBUTE17 | — | — |
+| 15 | CreatedByAttribute18 | ATTRIBUTE18 | — | — |
+| 16 | CreatedByAttribute19 | ATTRIBUTE19 | — | — |
+| 17 | CreatedByAttribute2 | ATTRIBUTE2 | — | — |
+| 18 | CreatedByAttribute20 | ATTRIBUTE20 | — | — |
+| 19 | CreatedByAttribute21 | ATTRIBUTE21 | — | — |
+| 20 | CreatedByAttribute22 | ATTRIBUTE22 | — | — |
+| 21 | CreatedByAttribute23 | ATTRIBUTE23 | — | — |
+| 22 | CreatedByAttribute24 | ATTRIBUTE24 | — | — |
+| 23 | CreatedByAttribute25 | ATTRIBUTE25 | — | — |
+| 24 | CreatedByAttribute26 | ATTRIBUTE26 | — | — |
+| 25 | CreatedByAttribute27 | ATTRIBUTE27 | — | — |
+| 26 | CreatedByAttribute28 | ATTRIBUTE28 | — | — |
+| 27 | CreatedByAttribute29 | ATTRIBUTE29 | — | — |
+| 28 | CreatedByAttribute3 | ATTRIBUTE3 | — | — |
+| 29 | CreatedByAttribute30 | ATTRIBUTE30 | — | — |
+| 30 | CreatedByAttribute4 | ATTRIBUTE4 | — | — |
+| 31 | CreatedByAttribute5 | ATTRIBUTE5 | — | — |
+| 32 | CreatedByAttribute6 | ATTRIBUTE6 | — | — |
+| 33 | CreatedByAttribute7 | ATTRIBUTE7 | — | — |
+| 34 | CreatedByAttribute8 | ATTRIBUTE8 | — | — |
+| 35 | CreatedByAttribute9 | ATTRIBUTE9 | — | — |
+| 36 | CreatedByAttributeCategory | ATTRIBUTE_CATEGORY | — | — |
+| 37 | CreatedByAttributeDate1 | ATTRIBUTE_DATE1 | — | — |
+| 38 | CreatedByAttributeDate10 | ATTRIBUTE_DATE10 | — | — |
+| 39 | CreatedByAttributeDate11 | ATTRIBUTE_DATE11 | — | — |
+| 40 | CreatedByAttributeDate12 | ATTRIBUTE_DATE12 | — | — |
+| 41 | CreatedByAttributeDate2 | ATTRIBUTE_DATE2 | — | — |
+| 42 | CreatedByAttributeDate3 | ATTRIBUTE_DATE3 | — | — |
+| 43 | CreatedByAttributeDate4 | ATTRIBUTE_DATE4 | — | — |
+| 44 | CreatedByAttributeDate5 | ATTRIBUTE_DATE5 | — | — |
+| 45 | CreatedByAttributeDate6 | ATTRIBUTE_DATE6 | — | — |
+| 46 | CreatedByAttributeDate7 | ATTRIBUTE_DATE7 | — | — |
+| 47 | CreatedByAttributeDate8 | ATTRIBUTE_DATE8 | — | — |
+| 48 | CreatedByAttributeDate9 | ATTRIBUTE_DATE9 | — | — |
+| 49 | CreatedByAttributeNumber1 | ATTRIBUTE_NUMBER1 | — | — |
+| 50 | CreatedByAttributeNumber10 | ATTRIBUTE_NUMBER10 | — | — |
+| 51 | CreatedByAttributeNumber11 | ATTRIBUTE_NUMBER11 | — | — |
+| 52 | CreatedByAttributeNumber12 | ATTRIBUTE_NUMBER12 | — | — |
+| 53 | CreatedByAttributeNumber2 | ATTRIBUTE_NUMBER2 | — | — |
+| 54 | CreatedByAttributeNumber3 | ATTRIBUTE_NUMBER3 | — | — |
+| 55 | CreatedByAttributeNumber4 | ATTRIBUTE_NUMBER4 | — | — |
+| 56 | CreatedByAttributeNumber5 | ATTRIBUTE_NUMBER5 | — | — |
+| 57 | CreatedByAttributeNumber6 | ATTRIBUTE_NUMBER6 | — | — |
+| 58 | CreatedByAttributeNumber7 | ATTRIBUTE_NUMBER7 | — | — |
+| 59 | CreatedByAttributeNumber8 | ATTRIBUTE_NUMBER8 | — | — |
+| 60 | CreatedByAttributeNumber9 | ATTRIBUTE_NUMBER9 | — | — |
+| 61 | CreatedByCategoryCode | CATEGORY_CODE | — | — |
+| 62 | CreatedByCeoName | CEO_NAME | — | — |
+| 63 | CreatedByCertReasonCode | CERT_REASON_CODE | — | — |
+| 64 | CreatedByCertificationLevel | CERTIFICATION_LEVEL | — | — |
+| 65 | CreatedByCity | CITY | — | — |
+| 66 | CreatedByComments | COMMENTS | — | — |
+| 67 | CreatedByCountry | COUNTRY | — | — |
+| 68 | CreatedByCounty | COUNTY | — | — |
+| 69 | CreatedByCreatedBy | CREATED_BY | — | — |
+| 70 | CreatedByCreatedByModule | CREATED_BY_MODULE | — | — |
+| 71 | CreatedByCreationDate | CREATION_DATE | — | — |
+| 72 | CreatedByCurrFyPotentialRevenue | CURR_FY_POTENTIAL_REVENUE | — | — |
+| 73 | CreatedByDateOfBirth | DATE_OF_BIRTH | — | — |
+| 74 | CreatedByDunsNumberC | DUNS_NUMBER_C | — | — |
+| 75 | CreatedByEmailAddress | EMAIL_ADDRESS | — | — |
+| 76 | CreatedByEmployeesTotal | EMPLOYEES_TOTAL | — | — |
+| 77 | CreatedByFiscalYearendMonth | FISCAL_YEAREND_MONTH | — | — |
+| 78 | CreatedByGender | GENDER | — | — |
+| 79 | CreatedByGroupType | GROUP_TYPE | — | — |
+| 80 | CreatedByGsaIndicatorFlag | GSA_INDICATOR_FLAG | — | — |
+| 81 | CreatedByHomeCountry | HOME_COUNTRY | — | — |
+| 82 | CreatedByHqBranchInd | HQ_BRANCH_IND | — | — |
+| 83 | CreatedByIdenAddrLocationId | IDEN_ADDR_LOCATION_ID | — | — |
+| 84 | CreatedByIdenAddrPartySiteId | IDEN_ADDR_PARTY_SITE_ID | — | — |
+| 85 | CreatedByInternalFlag | INTERNAL_FLAG | — | — |
+| 86 | CreatedByJgzzFiscalCode | JGZZ_FISCAL_CODE | — | — |
+| 87 | CreatedByLanguageName | LANGUAGE_NAME | — | — |
+| 88 | CreatedByLastUpdateDate | LAST_UPDATE_DATE | — | ✅ |
+| 89 | CreatedByLastUpdateLogin | LAST_UPDATE_LOGIN | — | — |
+| 90 | CreatedByLastUpdatedBy | LAST_UPDATED_BY | — | — |
+| 91 | CreatedByMaritalStatus | MARITAL_STATUS | — | — |
+| 92 | CreatedByMissionStatement | MISSION_STATEMENT | — | — |
+| 93 | CreatedByNextFyPotentialRevenue | NEXT_FY_POTENTIAL_REVENUE | — | — |
+| 94 | CreatedByObjectVersionNumber1 | OBJECT_VERSION_NUMBER | — | — |
+| 95 | CreatedByOrigSystemReference | ORIG_SYSTEM_REFERENCE | — | — |
+| 96 | CreatedByPartyId | PARTY_ID | — | — |
+| 97 | CreatedByPartyName | PARTY_NAME | — | ✅ |
+| 98 | CreatedByPartyNumber | PARTY_NUMBER | — | — |
+| 99 | CreatedByPartyType | PARTY_TYPE | — | — |
+| 100 | CreatedByPartyUniqueName | PARTY_UNIQUE_NAME | — | — |
+| 101 | CreatedByPersonAcademicTitle | PERSON_ACADEMIC_TITLE | — | — |
+| 102 | CreatedByPersonFirstName | PERSON_FIRST_NAME | — | — |
+| 103 | CreatedByPersonLastName | PERSON_LAST_NAME | — | — |
+| 104 | CreatedByPersonLastNamePrefix | PERSON_LAST_NAME_PREFIX | — | — |
+| 105 | CreatedByPersonMiddleName | PERSON_MIDDLE_NAME | — | — |
+| 106 | CreatedByPersonNameSuffix | PERSON_NAME_SUFFIX | — | — |
+| 107 | CreatedByPersonPreNameAdjunct | PERSON_PRE_NAME_ADJUNCT | — | — |
+| 108 | CreatedByPersonPreviousLastName | PERSON_PREVIOUS_LAST_NAME | — | — |
+| 109 | CreatedByPersonSecondLastName | PERSON_SECOND_LAST_NAME | — | — |
+| 110 | CreatedByPersonTitle | PERSON_TITLE | — | — |
+| 111 | CreatedByPostalCode | POSTAL_CODE | — | — |
+| 112 | CreatedByPrefFunctionalCurrency | PREF_FUNCTIONAL_CURRENCY | — | — |
+| 113 | CreatedByPreferredContactMethod | PREFERRED_CONTACT_METHOD | — | — |
+| 114 | CreatedByPreferredContactPersonId | PREFERRED_CONTACT_PERSON_ID | — | — |
+| 115 | CreatedByPreferredName | PREFERRED_NAME | — | — |
+| 116 | CreatedByPreferredNameId | PREFERRED_NAME_ID | — | — |
+| 117 | CreatedByPrimaryEmailContactPtId | PRIMARY_EMAIL_CONTACT_PT_ID | — | — |
+| 118 | CreatedByPrimaryPhoneAreaCode | PRIMARY_PHONE_AREA_CODE | — | — |
+| 119 | CreatedByPrimaryPhoneContactPtId | PRIMARY_PHONE_CONTACT_PT_ID | — | — |
+| 120 | CreatedByPrimaryPhoneCountryCode | PRIMARY_PHONE_COUNTRY_CODE | — | — |
+| 121 | CreatedByPrimaryPhoneExtension | PRIMARY_PHONE_EXTENSION | — | — |
+| 122 | CreatedByPrimaryPhoneLineType | PRIMARY_PHONE_LINE_TYPE | — | — |
+| 123 | CreatedByPrimaryPhoneNumber | PRIMARY_PHONE_NUMBER | — | — |
+| 124 | CreatedByPrimaryPhonePurpose | PRIMARY_PHONE_PURPOSE | — | — |
+| 125 | CreatedByPrimaryUrlContactPtId | PRIMARY_URL_CONTACT_PT_ID | — | — |
+| 126 | CreatedByProvince | PROVINCE | — | — |
+| 127 | CreatedBySalutation | SALUTATION | — | — |
+| 128 | CreatedBySicCode | SIC_CODE | — | — |
+| 129 | CreatedBySicCodeType | SIC_CODE_TYPE | — | — |
+| 130 | CreatedByState | STATE | — | — |
+| 131 | CreatedByStatus | STATUS | — | — |
+| 132 | CreatedByThirdPartyFlag | THIRD_PARTY_FLAG | — | — |
+| 133 | CreatedByTradingPartnerIdentifier | TRADING_PARTNER_IDENTIFIER | — | — |
+| 134 | CreatedByUrl | URL | — | — |
+| 135 | CreatedByUserGuid | USER_GUID | — | — |
+| 136 | CreatedByValidatedFlag | VALIDATED_FLAG | — | — |
+| 137 | CreatedByYearEstablished | YEAR_ESTABLISHED | — | — |
+
+### [[pon_auction_attributes|PON_AUCTION_ATTRIBUTES]]
+
+| # | Atributo | Coluna | PK | BICC |
+|---|----------|--------|----|------|
+| 1 | NegReqAttrAttrDispSeqNumber | ATTR_DISP_SEQ_NUMBER | — | ✅ |
+| 2 | NegReqAttrAttrGroupSeqNumber | ATTR_GROUP_SEQ_NUMBER | — | ✅ |
+| 3 | NegReqAttrAttrLevel | ATTR_LEVEL | — | — |
+| 4 | NegReqAttrAttrMaxScore | ATTR_MAX_SCORE | — | — |
+| 5 | NegReqAttrAttributeListId | ATTRIBUTE_LIST_ID | — | — |
+| 6 | NegReqAttrAttributeName | ATTRIBUTE_NAME | — | — |
+| 7 | NegReqAttrAuctionHeaderId | AUCTION_HEADER_ID | — | — |
+| 8 | NegReqAttrCreatedBy | CREATED_BY | — | — |
+| 9 | NegReqAttrCreationDate | CREATION_DATE | — | — |
+| 10 | NegReqAttrDatatype | DATATYPE | — | — |
+| 11 | NegReqAttrDateValue | DATE_VALUE | — | — |
+| 12 | NegReqAttrDisplayTargetFlag | DISPLAY_TARGET_FLAG | — | — |
+| 13 | NegReqAttrIpCategoryId | IP_CATEGORY_ID | — | — |
+| 14 | NegReqAttrIpDescriptorId | IP_DESCRIPTOR_ID | — | — |
+| 15 | NegReqAttrKnockoutScore | KNOCKOUT_SCORE | — | — |
+| 16 | NegReqAttrLastAmendmentUpdate | LAST_AMENDMENT_UPDATE | — | — |
+| 17 | NegReqAttrLastUpdateDate | LAST_UPDATE_DATE | — | ✅ |
+| 18 | NegReqAttrLastUpdateLogin | LAST_UPDATE_LOGIN | — | — |
+| 19 | NegReqAttrLastUpdatedBy | LAST_UPDATED_BY | — | — |
+| 20 | NegReqAttrLineNumber1 | LINE_NUMBER | — | — |
+| 21 | NegReqAttrModifiedDate | MODIFIED_DATE | — | — |
+| 22 | NegReqAttrModifiedFlag | MODIFIED_FLAG | — | — |
+| 23 | NegReqAttrNumberValue | NUMBER_VALUE | — | — |
+| 24 | NegReqAttrObjectVersionNumber1 | OBJECT_VERSION_NUMBER | — | — |
+| 25 | NegReqAttrProgramAppName | PROGRAM_APP_NAME | — | — |
+| 26 | NegReqAttrProgramName | PROGRAM_NAME | — | — |
+| 27 | NegReqAttrRequestId | REQUEST_ID | — | — |
+| 28 | NegReqAttrResponseType | RESPONSE_TYPE | — | ✅ |
+| 29 | NegReqAttrScoringMethod | SCORING_METHOD | — | — |
+| 30 | NegReqAttrScoringType | SCORING_TYPE | — | — |
+| 31 | NegReqAttrSectionId | SECTION_ID | — | — |
+| 32 | NegReqAttrSectionName | SECTION_NAME | — | ✅ |
+| 33 | NegReqAttrSequenceNumber1 | SEQUENCE_NUMBER | — | — |
+| 34 | NegReqAttrTextValue | TEXT_VALUE | — | — |
+| 35 | NegReqAttrWeight | WEIGHT | — | — |
+
+### [[pon_auction_headers_all|PON_AUCTION_HEADERS_ALL]]
+
+| # | Atributo | Coluna | PK | BICC |
+|---|----------|--------|----|------|
+| 1 | AllowAlternateLines | ALLOW_ALTERNATE_LINES | — | — |
+| 2 | BidRevisionType | BID_REVISION_TYPE | — | — |
+| 3 | BidRevisionTypeDspFlag | BID_REVISION_TYPE_DSP_FLAG | — | — |
+| 4 | ModeOfTransport | MODE_OF_TRANSPORT | — | — |
+| 5 | NegotiationHeaderAbstractDetails | ABSTRACT_DETAILS | — | — |
+| 6 | NegotiationHeaderAbstractStatus | ABSTRACT_STATUS | — | — |
+| 7 | NegotiationHeaderAdvanceNegotiableFlag | ADVANCE_NEGOTIABLE_FLAG | — | — |
+| 8 | NegotiationHeaderAllowOtherBidCurrencyFlag | ALLOW_OTHER_BID_CURRENCY_FLAG | — | — |
+| 9 | NegotiationHeaderAmendmentDescription | AMENDMENT_DESCRIPTION | — | — |
+| 10 | NegotiationHeaderAmendmentNumber | AMENDMENT_NUMBER | — | — |
+| 11 | NegotiationHeaderApprovalStatus | NEG_APPROVAL_STATUS | — | — |
+| 12 | NegotiationHeaderAttributeLineNumber | ATTRIBUTE_LINE_NUMBER | — | — |
+| 13 | NegotiationHeaderAttributesExist | ATTRIBUTES_EXIST | — | — |
+| 14 | NegotiationHeaderAuctionHeaderId | AUCTION_HEADER_ID | — | — |
+| 15 | NegotiationHeaderAuctionHeaderIdOrigAmend | AUCTION_HEADER_ID_ORIG_AMEND | — | — |
+| 16 | NegotiationHeaderAuctionHeaderIdOrigRound | AUCTION_HEADER_ID_ORIG_ROUND | — | — |
+| 17 | NegotiationHeaderAuctionHeaderIdPrevAmend | AUCTION_HEADER_ID_PREV_AMEND | — | — |
+| 18 | NegotiationHeaderAuctionHeaderIdPrevRound | AUCTION_HEADER_ID_PREV_ROUND | — | — |
+| 19 | NegotiationHeaderAuctionOriginationCode | AUCTION_ORIGINATION_CODE | — | — |
+| 20 | NegotiationHeaderAuctionRoundNumber | AUCTION_ROUND_NUMBER | — | ✅ |
+| 21 | NegotiationHeaderAuctionStatus | AUCTION_STATUS | — | ✅ |
+| 22 | NegotiationHeaderAuctionTitle | AUCTION_TITLE | — | ✅ |
+| 23 | NegotiationHeaderAutoExtendAllLinesFlag | AUTO_EXTEND_ALL_LINES_FLAG | — | — |
+| 24 | NegotiationHeaderAutoExtendDuration | AUTO_EXTEND_DURATION | — | — |
+| 25 | NegotiationHeaderAutoExtendEnabledFlag | AUTO_EXTEND_ENABLED_FLAG | — | — |
+| 26 | NegotiationHeaderAutoExtendFlag | AUTO_EXTEND_FLAG | — | — |
+| 27 | NegotiationHeaderAutoExtendMinTriggerRank | AUTO_EXTEND_MIN_TRIGGER_RANK | — | — |
+| 28 | NegotiationHeaderAutoExtendNumber | AUTO_EXTEND_NUMBER | — | — |
+| 29 | NegotiationHeaderAutoExtendTypeFlag | AUTO_EXTEND_TYPE_FLAG | — | — |
+| 30 | NegotiationHeaderAutoextendChangedFlag | AUTOEXTEND_CHANGED_FLAG | — | — |
+| 31 | NegotiationHeaderAwardApprAmeTransId | AWARD_APPR_AME_TRANS_ID | — | — |
+| 32 | NegotiationHeaderAwardApprAmeTransPrevId | AWARD_APPR_AME_TRANS_PREV_ID | — | — |
+| 33 | NegotiationHeaderAwardApprAmeTxnDate | AWARD_APPR_AME_TXN_DATE | — | — |
+| 34 | NegotiationHeaderAwardApprovalFlag | AWARD_APPROVAL_FLAG | — | — |
+| 35 | NegotiationHeaderAwardApprovalStatus | AWARD_APPROVAL_STATUS | — | — |
+| 36 | NegotiationHeaderAwardByDate | AWARD_BY_DATE | — | — |
+| 37 | NegotiationHeaderAwardCompleteDate | AWARD_COMPLETE_DATE | — | ✅ |
+| 38 | NegotiationHeaderAwardDate | AWARD_DATE | — | ✅ |
+| 39 | NegotiationHeaderAwardMode | AWARD_MODE | — | — |
+| 40 | NegotiationHeaderAwardStatus | AWARD_STATUS | — | — |
+| 41 | NegotiationHeaderBidDecrementMethod | BID_DECREMENT_METHOD | — | — |
+| 42 | NegotiationHeaderBidFrequencyCode | BID_FREQUENCY_CODE | — | — |
+| 43 | NegotiationHeaderBidListType | BID_LIST_TYPE | — | — |
+| 44 | NegotiationHeaderBidRanking | BID_RANKING | — | ✅ |
+| 45 | NegotiationHeaderBidScopeCode | BID_SCOPE_CODE | — | — |
+| 46 | NegotiationHeaderBidVisibilityCode | BID_VISIBILITY_CODE | — | ✅ |
+| 47 | NegotiationHeaderBuyerTransportEnabledFlag | BUYER_TRANSPORT_ENABLED_FLAG | — | — |
+| 48 | NegotiationHeaderBuyerTransportFlag | BUYER_TRANSPORT_FLAG | — | ✅ |
+| 49 | NegotiationHeaderCancelDate | CANCEL_DATE | — | — |
+| 50 | NegotiationHeaderCarrierId | CARRIER_ID | — | — |
+| 51 | NegotiationHeaderCloseBiddingDate | CLOSE_BIDDING_DATE | — | ✅ |
+| 52 | NegotiationHeaderCompleteFlag | COMPLETE_FLAG | — | — |
+| 53 | NegotiationHeaderContermsArticlesUpdDate | CONTERMS_ARTICLES_UPD_DATE | — | — |
+| 54 | NegotiationHeaderContermsDelivUpdDate | CONTERMS_DELIV_UPD_DATE | — | — |
+| 55 | NegotiationHeaderContermsExistFlag | CONTERMS_EXIST_FLAG | — | — |
+| 56 | NegotiationHeaderContractTemplateId | CONTRACT_TEMPLATE_ID | — | — |
+| 57 | NegotiationHeaderContractType | CONTRACT_TYPE | — | ✅ |
+| 58 | NegotiationHeaderCreatedBy | CREATED_BY | — | — |
+| 59 | NegotiationHeaderCreationDate | CREATION_DATE | — | — |
+| 60 | NegotiationHeaderCreationDateOrigAmend | CREATION_DATE_ORIG_AMEND | — | — |
+| 61 | NegotiationHeaderCurrencyCode | CURRENCY_CODE | — | ✅ |
+| 62 | NegotiationHeaderDescription | DESCRIPTION | — | — |
+| 63 | NegotiationHeaderDisplayBestPriceBlindFlag | DISPLAY_BEST_PRICE_BLIND_FLAG | — | — |
+| 64 | NegotiationHeaderDoctypeId | DOCTYPE_ID | — | — |
+| 65 | NegotiationHeaderDocumentNumber | DOCUMENT_NUMBER | — | ✅ |
+| 66 | NegotiationHeaderDraftLocked | DRAFT_LOCKED | — | — |
+| 67 | NegotiationHeaderDraftLockedDate | DRAFT_LOCKED_DATE | — | — |
+| 68 | NegotiationHeaderDraftUnlockedDate | DRAFT_UNLOCKED_DATE | — | — |
+| 69 | NegotiationHeaderEnforcePrevrndBidPriceFlag | ENFORCE_PREVRND_BID_PRICE_FLAG | — | — |
+| 70 | NegotiationHeaderEventId | EVENT_ID | — | — |
+| 71 | NegotiationHeaderEventTitle | EVENT_TITLE | — | — |
+| 72 | NegotiationHeaderExtAttribute1 | EXT_ATTRIBUTE1 | — | — |
+| 73 | NegotiationHeaderExtAttribute10 | EXT_ATTRIBUTE10 | — | — |
+| 74 | NegotiationHeaderExtAttribute11 | EXT_ATTRIBUTE11 | — | — |
+| 75 | NegotiationHeaderExtAttribute12 | EXT_ATTRIBUTE12 | — | — |
+| 76 | NegotiationHeaderExtAttribute13 | EXT_ATTRIBUTE13 | — | — |
+| 77 | NegotiationHeaderExtAttribute14 | EXT_ATTRIBUTE14 | — | — |
+| 78 | NegotiationHeaderExtAttribute15 | EXT_ATTRIBUTE15 | — | — |
+| 79 | NegotiationHeaderExtAttribute2 | EXT_ATTRIBUTE2 | — | — |
+| 80 | NegotiationHeaderExtAttribute3 | EXT_ATTRIBUTE3 | — | — |
+| 81 | NegotiationHeaderExtAttribute4 | EXT_ATTRIBUTE4 | — | — |
+| 82 | NegotiationHeaderExtAttribute5 | EXT_ATTRIBUTE5 | — | — |
+| 83 | NegotiationHeaderExtAttribute6 | EXT_ATTRIBUTE6 | — | — |
+| 84 | NegotiationHeaderExtAttribute7 | EXT_ATTRIBUTE7 | — | — |
+| 85 | NegotiationHeaderExtAttribute8 | EXT_ATTRIBUTE8 | — | — |
+| 86 | NegotiationHeaderExtAttribute9 | EXT_ATTRIBUTE9 | — | — |
+| 87 | NegotiationHeaderExtAttributeCategory | EXT_ATTRIBUTE_CATEGORY | — | — |
+| 88 | NegotiationHeaderFirstLineCloseDate | FIRST_LINE_CLOSE_DATE | — | — |
+| 89 | NegotiationHeaderFobCode | FOB_CODE | — | — |
+| 90 | NegotiationHeaderFreightTermsCode | FREIGHT_TERMS_CODE | — | — |
+| 91 | NegotiationHeaderFullQuantityBidCode | FULL_QUANTITY_BID_CODE | — | — |
+| 92 | NegotiationHeaderGlobalTemplateFlag | GLOBAL_TEMPLATE_FLAG | — | — |
+| 93 | NegotiationHeaderGroupEnabledFlag | GROUP_ENABLED_FLAG | — | — |
+| 94 | NegotiationHeaderHasHdrAttrFlag | HAS_HDR_ATTR_FLAG | — | — |
+| 95 | NegotiationHeaderHasItemsFlag | HAS_ITEMS_FLAG | — | — |
+| 96 | NegotiationHeaderHasPeForAllItems | HAS_PE_FOR_ALL_ITEMS | — | — |
+| 97 | NegotiationHeaderHasPriceElements | HAS_PRICE_ELEMENTS | — | — |
+| 98 | NegotiationHeaderHasScoringTeamsFlag | HAS_SCORING_TEAMS_FLAG | — | — |
+| 99 | NegotiationHeaderHdrAttrDisplayScore | HDR_ATTR_DISPLAY_SCORE | — | ✅ |
+| 100 | NegotiationHeaderHdrAttrEnableWeights | HDR_ATTR_ENABLE_WEIGHTS | — | ✅ |
+| 101 | NegotiationHeaderHdrAttrMaximumScore | HDR_ATTR_MAXIMUM_SCORE | — | — |
+| 102 | NegotiationHeaderHdrAttributeEnabledFlag | HDR_ATTRIBUTE_ENABLED_FLAG | — | — |
+| 103 | NegotiationHeaderImportFileName | IMPORT_FILE_NAME | — | — |
+| 104 | NegotiationHeaderIncludePdfInExternalPage | INCLUDE_PDF_IN_EXTERNAL_PAGE | — | — |
+| 105 | NegotiationHeaderIntAttribute1 | INT_ATTRIBUTE1 | — | — |
+| 106 | NegotiationHeaderIntAttribute10 | INT_ATTRIBUTE10 | — | — |
+| 107 | NegotiationHeaderIntAttribute11 | INT_ATTRIBUTE11 | — | — |
+| 108 | NegotiationHeaderIntAttribute12 | INT_ATTRIBUTE12 | — | — |
+| 109 | NegotiationHeaderIntAttribute13 | INT_ATTRIBUTE13 | — | — |
+| 110 | NegotiationHeaderIntAttribute14 | INT_ATTRIBUTE14 | — | — |
+| 111 | NegotiationHeaderIntAttribute15 | INT_ATTRIBUTE15 | — | — |
+| 112 | NegotiationHeaderIntAttribute2 | INT_ATTRIBUTE2 | — | — |
+| 113 | NegotiationHeaderIntAttribute3 | INT_ATTRIBUTE3 | — | — |
+| 114 | NegotiationHeaderIntAttribute4 | INT_ATTRIBUTE4 | — | — |
+| 115 | NegotiationHeaderIntAttribute5 | INT_ATTRIBUTE5 | — | — |
+| 116 | NegotiationHeaderIntAttribute6 | INT_ATTRIBUTE6 | — | — |
+| 117 | NegotiationHeaderIntAttribute7 | INT_ATTRIBUTE7 | — | — |
+| 118 | NegotiationHeaderIntAttribute8 | INT_ATTRIBUTE8 | — | — |
+| 119 | NegotiationHeaderIntAttribute9 | INT_ATTRIBUTE9 | — | — |
+| 120 | NegotiationHeaderIntAttributeCategory | INT_ATTRIBUTE_CATEGORY | — | — |
+| 121 | NegotiationHeaderIsPaused | IS_PAUSED | — | — |
+| 122 | NegotiationHeaderIsTemplateFlag | IS_TEMPLATE_FLAG | — | — |
+| 123 | NegotiationHeaderLanguageCode | LANGUAGE_CODE | — | — |
+| 124 | NegotiationHeaderLargeNegEnabledFlag | LARGE_NEG_ENABLED_FLAG | — | — |
+| 125 | NegotiationHeaderLastLineNumber | LAST_LINE_NUMBER | — | — |
+| 126 | NegotiationHeaderLastPauseDate | LAST_PAUSE_DATE | — | — |
+| 127 | NegotiationHeaderLastUpdateDate | LAST_UPDATE_DATE | — | ✅ |
+| 128 | NegotiationHeaderLastUpdateLogin | LAST_UPDATE_LOGIN | — | — |
+| 129 | NegotiationHeaderLastUpdatedBy | LAST_UPDATED_BY | — | — |
+| 130 | NegotiationHeaderLineAttributeEnabledFlag | LINE_ATTRIBUTE_ENABLED_FLAG | — | — |
+| 131 | NegotiationHeaderLineMasEnabledFlag | LINE_MAS_ENABLED_FLAG | — | — |
+| 132 | NegotiationHeaderLotEnabledFlag | LOT_ENABLED_FLAG | — | — |
+| 133 | NegotiationHeaderMaxBidColorSequenceId | MAX_BID_COLOR_SEQUENCE_ID | — | — |
+| 134 | NegotiationHeaderMaxDocumentLineNum | MAX_DOCUMENT_LINE_NUM | — | — |
+| 135 | NegotiationHeaderMaxInternalLineNum | MAX_INTERNAL_LINE_NUM | — | — |
+| 136 | NegotiationHeaderMaxRetainageNegotiableFlag | MAX_RETAINAGE_NEGOTIABLE_FLAG | — | — |
+| 137 | NegotiationHeaderMinBidChangeType | MIN_BID_CHANGE_TYPE | — | — |
+| 138 | NegotiationHeaderMinBidDecrement | MIN_BID_DECREMENT | — | — |
+| 139 | NegotiationHeaderNegTeamEnabledFlag | NEG_TEAM_ENABLED_FLAG | — | — |
+| 140 | NegotiationHeaderNumberOfBids | NUMBER_OF_BIDS | — | — |
+| 141 | NegotiationHeaderNumberOfExtensions | NUMBER_OF_EXTENSIONS | — | — |
+| 142 | NegotiationHeaderNumberOfLines | NUMBER_OF_LINES | — | — |
+| 143 | NegotiationHeaderNumberPriceDecimals | NUMBER_PRICE_DECIMALS | — | ✅ |
+| 144 | NegotiationHeaderObjectVersionNumber | OBJECT_VERSION_NUMBER | — | — |
+| 145 | NegotiationHeaderOpenAuctionNowFlag | OPEN_AUCTION_NOW_FLAG | — | ✅ |
+| 146 | NegotiationHeaderOpenBiddingDate | OPEN_BIDDING_DATE | — | ✅ |
+| 147 | NegotiationHeaderOriginalCloseBiddingDate | ORIGINAL_CLOSE_BIDDING_DATE | — | — |
+| 148 | NegotiationHeaderOutcomeStatus | OUTCOME_STATUS | — | — |
+| 149 | NegotiationHeaderPauseRemarks | PAUSE_REMARKS | — | — |
+| 150 | NegotiationHeaderPaymentTermsId | PAYMENT_TERMS_ID | — | — |
+| 151 | NegotiationHeaderPersonId | PERSON_ID | — | — |
+| 152 | NegotiationHeaderPfTypeAllowed | PF_TYPE_ALLOWED | — | — |
+| 153 | NegotiationHeaderPoAgreedAmount | PO_AGREED_AMOUNT | — | ✅ |
+| 154 | NegotiationHeaderPoEndDate | PO_END_DATE | — | ✅ |
+| 155 | NegotiationHeaderPoMinRelAmount | PO_MIN_REL_AMOUNT | — | ✅ |
+| 156 | NegotiationHeaderPoStartDate | PO_START_DATE | — | ✅ |
+| 157 | NegotiationHeaderPoStyleId | PO_STYLE_ID | — | — |
+| 158 | NegotiationHeaderPowerBiddingEnabledFlag | POWER_BIDDING_ENABLED_FLAG | — | — |
+| 159 | NegotiationHeaderPrcBuId | PRC_BU_ID | — | — |
+| 160 | NegotiationHeaderPriceDrivenAuctionFlag | PRICE_DRIVEN_AUCTION_FLAG | — | — |
+| 161 | NegotiationHeaderPriceElementEnabledFlag | PRICE_ELEMENT_ENABLED_FLAG | — | — |
+| 162 | NegotiationHeaderPriceTiersIndicator | PRICE_TIERS_INDICATOR | — | ✅ |
+| 163 | NegotiationHeaderProgramAppName | PROGRAM_APP_NAME | — | — |
+| 164 | NegotiationHeaderProgramName | PROGRAM_NAME | — | — |
+| 165 | NegotiationHeaderProgressPaymentType | PROGRESS_PAYMENT_TYPE | — | — |
+| 166 | NegotiationHeaderProgressPymtNegotiableFlag | PROGRESS_PYMT_NEGOTIABLE_FLAG | — | — |
+| 167 | NegotiationHeaderProjectId | PROJECT_ID | — | — |
+| 168 | NegotiationHeaderProxyBiddingEnabledFlag | PROXY_BIDDING_ENABLED_FLAG | — | — |
+| 169 | NegotiationHeaderPublishAuctionNowFlag | PUBLISH_AUCTION_NOW_FLAG | — | — |
+| 170 | NegotiationHeaderPublishDate | PUBLISH_DATE | — | ✅ |
+| 171 | NegotiationHeaderPublishDateOrigAmend | PUBLISH_DATE_ORIG_AMEND | — | — |
+| 172 | NegotiationHeaderPublishRatesToBiddersFlag | PUBLISH_RATES_TO_BIDDERS_FLAG | — | — |
+| 173 | NegotiationHeaderQtyPriceTiersEnabledFlag | QTY_PRICE_TIERS_ENABLED_FLAG | — | — |
+| 174 | NegotiationHeaderRankIndicator | RANK_INDICATOR | — | ✅ |
+| 175 | NegotiationHeaderRateDate | RATE_DATE | — | — |
+| 176 | NegotiationHeaderRateType | RATE_TYPE | — | — |
+| 177 | NegotiationHeaderRecoupmentNegotiableFlag | RECOUPMENT_NEGOTIABLE_FLAG | — | — |
+| 178 | NegotiationHeaderReminderDate | REMINDER_DATE | — | — |
+| 179 | NegotiationHeaderReqBuId | REQ_BU_ID | — | — |
+| 180 | NegotiationHeaderRequestDate | REQUEST_DATE | — | — |
+| 181 | NegotiationHeaderRequestId | REQUEST_ID | — | — |
+| 182 | NegotiationHeaderRequestedBy | REQUESTED_BY | — | — |
+| 183 | NegotiationHeaderRetainageNegotiableFlag | RETAINAGE_NEGOTIABLE_FLAG | — | — |
+| 184 | NegotiationHeaderRfiLineEnabledFlag | RFI_LINE_ENABLED_FLAG | — | — |
+| 185 | NegotiationHeaderScoringLockDate | SCORING_LOCK_DATE | — | — |
+| 186 | NegotiationHeaderSealedActualUnlockDate | SEALED_ACTUAL_UNLOCK_DATE | — | — |
+| 187 | NegotiationHeaderSealedActualUnsealDate | SEALED_ACTUAL_UNSEAL_DATE | — | — |
+| 188 | NegotiationHeaderSealedAuctionStatus | SEALED_AUCTION_STATUS | — | ✅ |
+| 189 | NegotiationHeaderShareAwardDecision | SHARE_AWARD_DECISION | — | — |
+| 190 | NegotiationHeaderShowBidderNotes | SHOW_BIDDER_NOTES | — | — |
+| 191 | NegotiationHeaderShowBidderScores | SHOW_BIDDER_SCORES | — | — |
+| 192 | NegotiationHeaderSourceDocId | SOURCE_DOC_ID | — | — |
+| 193 | NegotiationHeaderSourceDocLineMsg | SOURCE_DOC_LINE_MSG | — | — |
+| 194 | NegotiationHeaderSourceDocMsg | SOURCE_DOC_MSG | — | — |
+| 195 | NegotiationHeaderSourceDocMsgApp | SOURCE_DOC_MSG_APP | — | — |
+| 196 | NegotiationHeaderSourceDocNumber | SOURCE_DOC_NUMBER | — | ✅ |
+| 197 | NegotiationHeaderSourceReqsFlag | SOURCE_REQS_FLAG | — | — |
+| 198 | NegotiationHeaderStaggeredClosingInterval | STAGGERED_CLOSING_INTERVAL | — | — |
+| 199 | NegotiationHeaderStyleId | STYLE_ID | — | — |
+| 200 | NegotiationHeaderSupplierEnterablePymtFlag | SUPPLIER_ENTERABLE_PYMT_FLAG | — | — |
+| 201 | NegotiationHeaderSupplierViewType | SUPPLIER_VIEW_TYPE | — | — |
+| 202 | NegotiationHeaderTeamScoringEnabledFlag | TEAM_SCORING_ENABLED_FLAG | — | — |
+| 203 | NegotiationHeaderTechnicalActualUnlockDate | TECHNICAL_ACTUAL_UNLOCK_DATE | — | — |
+| 204 | NegotiationHeaderTechnicalActualUnsealDate | TECHNICAL_ACTUAL_UNSEAL_DATE | — | — |
+| 205 | NegotiationHeaderTechnicalEvaluationStatus | TECHNICAL_EVALUATION_STATUS | — | — |
+| 206 | NegotiationHeaderTechnicalLockStatus | TECHNICAL_LOCK_STATUS | — | ✅ |
+| 207 | NegotiationHeaderTemplateId | TEMPLATE_ID | — | — |
+| 208 | NegotiationHeaderTemplateScope | TEMPLATE_SCOPE | — | — |
+| 209 | NegotiationHeaderTemplateStatus | TEMPLATE_STATUS | — | — |
+| 210 | NegotiationHeaderTwoPartFlag | TWO_PART_FLAG | — | ✅ |
+| 211 | NegotiationHeaderVersionNum | VERSION_NUM | — | — |
+| 212 | NegotiationHeaderViewByDate | VIEW_BY_DATE | — | ✅ |
+| 213 | NegotiationHeaderWfApprovalItemKey | WF_APPROVAL_ITEM_KEY | — | — |
+| 214 | NegotiationHeaderWfAwardApprovalItemKey | WF_AWARD_APPROVAL_ITEM_KEY | — | — |
+| 215 | NegotiationHeaderWfItemKey | WF_ITEM_KEY | — | — |
+| 216 | NegotiationHeaderWfPoncomplCurrentRound | WF_PONCOMPL_CURRENT_ROUND | — | — |
+| 217 | NegotiationHeaderWfPoncomplItemKey | WF_PONCOMPL_ITEM_KEY | — | — |
+| 218 | NegotiationHeaderWfRoleName | WF_ROLE_NAME | — | — |
+| 219 | ServiceLevel | SERVICE_LEVEL | — | — |
+
+### [[pon_auction_item_prices_all|PON_AUCTION_ITEM_PRICES_ALL]]
+
+| # | Atributo | Coluna | PK | BICC |
+|---|----------|--------|----|------|
+| 1 | NegotiationLineAdditionalJobDetails | ADDITIONAL_JOB_DETAILS | — | — |
+| 2 | NegotiationLineAdvanceAmount | ADVANCE_AMOUNT | — | — |
+| 3 | NegotiationLineAllocationStatus | ALLOCATION_STATUS | — | — |
+| 4 | NegotiationLineAllowAlternateLines1 | ALLOW_ALTERNATE_LINES | — | — |
+| 5 | NegotiationLineAttribute1 | ATTRIBUTE1 | — | — |
+| 6 | NegotiationLineAttribute10 | ATTRIBUTE10 | — | — |
+| 7 | NegotiationLineAttribute11 | ATTRIBUTE11 | — | — |
+| 8 | NegotiationLineAttribute12 | ATTRIBUTE12 | — | — |
+| 9 | NegotiationLineAttribute13 | ATTRIBUTE13 | — | — |
+| 10 | NegotiationLineAttribute14 | ATTRIBUTE14 | — | — |
+| 11 | NegotiationLineAttribute15 | ATTRIBUTE15 | — | — |
+| 12 | NegotiationLineAttribute16 | ATTRIBUTE16 | — | — |
+| 13 | NegotiationLineAttribute17 | ATTRIBUTE17 | — | — |
+| 14 | NegotiationLineAttribute18 | ATTRIBUTE18 | — | — |
+| 15 | NegotiationLineAttribute19 | ATTRIBUTE19 | — | — |
+| 16 | NegotiationLineAttribute2 | ATTRIBUTE2 | — | — |
+| 17 | NegotiationLineAttribute20 | ATTRIBUTE20 | — | — |
+| 18 | NegotiationLineAttribute3 | ATTRIBUTE3 | — | — |
+| 19 | NegotiationLineAttribute4 | ATTRIBUTE4 | — | — |
+| 20 | NegotiationLineAttribute5 | ATTRIBUTE5 | — | — |
+| 21 | NegotiationLineAttribute6 | ATTRIBUTE6 | — | — |
+| 22 | NegotiationLineAttribute7 | ATTRIBUTE7 | — | — |
+| 23 | NegotiationLineAttribute8 | ATTRIBUTE8 | — | — |
+| 24 | NegotiationLineAttribute9 | ATTRIBUTE9 | — | — |
+| 25 | NegotiationLineAttributeCategory | ATTRIBUTE_CATEGORY | — | — |
+| 26 | NegotiationLineAttributeDate1 | ATTRIBUTE_DATE1 | — | — |
+| 27 | NegotiationLineAttributeDate10 | ATTRIBUTE_DATE10 | — | — |
+| 28 | NegotiationLineAttributeDate2 | ATTRIBUTE_DATE2 | — | — |
+| 29 | NegotiationLineAttributeDate3 | ATTRIBUTE_DATE3 | — | — |
+| 30 | NegotiationLineAttributeDate4 | ATTRIBUTE_DATE4 | — | — |
+| 31 | NegotiationLineAttributeDate5 | ATTRIBUTE_DATE5 | — | — |
+| 32 | NegotiationLineAttributeDate6 | ATTRIBUTE_DATE6 | — | — |
+| 33 | NegotiationLineAttributeDate7 | ATTRIBUTE_DATE7 | — | — |
+| 34 | NegotiationLineAttributeDate8 | ATTRIBUTE_DATE8 | — | — |
+| 35 | NegotiationLineAttributeDate9 | ATTRIBUTE_DATE9 | — | — |
+| 36 | NegotiationLineAttributeNumber1 | ATTRIBUTE_NUMBER1 | — | — |
+| 37 | NegotiationLineAttributeNumber10 | ATTRIBUTE_NUMBER10 | — | — |
+| 38 | NegotiationLineAttributeNumber2 | ATTRIBUTE_NUMBER2 | — | — |
+| 39 | NegotiationLineAttributeNumber3 | ATTRIBUTE_NUMBER3 | — | — |
+| 40 | NegotiationLineAttributeNumber4 | ATTRIBUTE_NUMBER4 | — | — |
+| 41 | NegotiationLineAttributeNumber5 | ATTRIBUTE_NUMBER5 | — | — |
+| 42 | NegotiationLineAttributeNumber6 | ATTRIBUTE_NUMBER6 | — | — |
+| 43 | NegotiationLineAttributeNumber7 | ATTRIBUTE_NUMBER7 | — | — |
+| 44 | NegotiationLineAttributeNumber8 | ATTRIBUTE_NUMBER8 | — | — |
+| 45 | NegotiationLineAttributeNumber9 | ATTRIBUTE_NUMBER9 | — | — |
+| 46 | NegotiationLineAttributeTimestamp1 | ATTRIBUTE_TIMESTAMP1 | — | — |
+| 47 | NegotiationLineAttributeTimestamp10 | ATTRIBUTE_TIMESTAMP10 | — | — |
+| 48 | NegotiationLineAttributeTimestamp2 | ATTRIBUTE_TIMESTAMP2 | — | — |
+| 49 | NegotiationLineAttributeTimestamp3 | ATTRIBUTE_TIMESTAMP3 | — | — |
+| 50 | NegotiationLineAttributeTimestamp4 | ATTRIBUTE_TIMESTAMP4 | — | — |
+| 51 | NegotiationLineAttributeTimestamp5 | ATTRIBUTE_TIMESTAMP5 | — | — |
+| 52 | NegotiationLineAttributeTimestamp6 | ATTRIBUTE_TIMESTAMP6 | — | — |
+| 53 | NegotiationLineAttributeTimestamp7 | ATTRIBUTE_TIMESTAMP7 | — | — |
+| 54 | NegotiationLineAttributeTimestamp8 | ATTRIBUTE_TIMESTAMP8 | — | — |
+| 55 | NegotiationLineAttributeTimestamp9 | ATTRIBUTE_TIMESTAMP9 | — | — |
+| 56 | NegotiationLineAuctionHeaderId | AUCTION_HEADER_ID | — | — |
+| 57 | NegotiationLineAwardMode | AWARD_MODE | — | — |
+| 58 | NegotiationLineAwardStatus | AWARD_STATUS | — | — |
+| 59 | NegotiationLineAwardedQuantity | AWARDED_QUANTITY | — | — |
+| 60 | NegotiationLineBestBidBidCurrencyCode | BEST_BID_BID_CURRENCY_CODE | — | — |
+| 61 | NegotiationLineBestBidBidCurrencyPrice | BEST_BID_BID_CURRENCY_PRICE | — | — |
+| 62 | NegotiationLineBestBidBidNumber | BEST_BID_BID_NUMBER | — | — |
+| 63 | NegotiationLineBestBidBidPrice | BEST_BID_BID_PRICE | — | — |
+| 64 | NegotiationLineBestBidCurrencyCode | BEST_BID_CURRENCY_CODE | — | ✅ |
+| 65 | NegotiationLineBestBidCurrencyPrice | BEST_BID_CURRENCY_PRICE | — | ✅ |
+| 66 | NegotiationLineBestBidFirstBidPrice | BEST_BID_FIRST_BID_PRICE | — | ✅ |
+| 67 | NegotiationLineBestBidNumber | BEST_BID_NUMBER | — | ✅ |
+| 68 | NegotiationLineBestBidPrice | BEST_BID_PRICE | — | ✅ |
+| 69 | NegotiationLineBestBidPromisedDate | BEST_BID_PROMISED_DATE | — | — |
+| 70 | NegotiationLineBestBidProxyLimitPrice | BEST_BID_PROXY_LIMIT_PRICE | — | — |
+| 71 | NegotiationLineBestBidQuantity | BEST_BID_QUANTITY | — | ✅ |
+| 72 | NegotiationLineBestBidScore | BEST_BID_SCORE | — | ✅ |
+| 73 | NegotiationLineBidStartPrice | BID_START_PRICE | — | ✅ |
+| 74 | NegotiationLineCarrierId | CARRIER_ID | — | — |
+| 75 | NegotiationLineCategoryId | CATEGORY_ID | — | — |
+| 76 | NegotiationLineCloseBiddingDate | CLOSE_BIDDING_DATE | — | — |
+| 77 | NegotiationLineCreatedBy | CREATED_BY | — | — |
+| 78 | NegotiationLineCreationDate | CREATION_DATE | — | — |
+| 79 | NegotiationLineCurrentPrice | CURRENT_PRICE | — | ✅ |
+| 80 | NegotiationLineDifferentialResponseType | DIFFERENTIAL_RESPONSE_TYPE | — | — |
+| 81 | NegotiationLineDispLineNumber | DISP_LINE_NUMBER | — | — |
+| 82 | NegotiationLineDisplayTargetPriceFlag | DISPLAY_TARGET_PRICE_FLAG | — | ✅ |
+| 83 | NegotiationLineDocumentDispLineNumber | DOCUMENT_DISP_LINE_NUMBER | — | ✅ |
+| 84 | NegotiationLineGroupType | GROUP_TYPE | — | ✅ |
+| 85 | NegotiationLineHasAttributesFlag | HAS_ATTRIBUTES_FLAG | — | — |
+| 86 | NegotiationLineHasBuyerPfsFlag | HAS_BUYER_PFS_FLAG | — | — |
+| 87 | NegotiationLineHasPaymentsFlag | HAS_PAYMENTS_FLAG | — | — |
+| 88 | NegotiationLineHasPriceDifferentialsFlag | HAS_PRICE_DIFFERENTIALS_FLAG | — | — |
+| 89 | NegotiationLineHasPriceElementsFlag | HAS_PRICE_ELEMENTS_FLAG | — | — |
+| 90 | NegotiationLineHasQuantityTiers | HAS_QUANTITY_TIERS | — | — |
+| 91 | NegotiationLineHasShipmentsFlag | HAS_SHIPMENTS_FLAG | — | — |
+| 92 | NegotiationLineInvOrgId | INV_ORG_ID | — | — |
+| 93 | NegotiationLineItemDescription | ITEM_DESCRIPTION | — | ✅ |
+| 94 | NegotiationLineItemId | ITEM_ID | — | ✅ |
+| 95 | NegotiationLineItemRevision | ITEM_REVISION | — | ✅ |
+| 96 | NegotiationLineJobId | JOB_ID | — | — |
+| 97 | NegotiationLineLastAmendmentUpdate | LAST_AMENDMENT_UPDATE | — | — |
+| 98 | NegotiationLineLastUpdateDate | LAST_UPDATE_DATE | — | ✅ |
+| 99 | NegotiationLineLastUpdateLogin | LAST_UPDATE_LOGIN | — | — |
+| 100 | NegotiationLineLastUpdatedBy | LAST_UPDATED_BY | — | — |
+| 101 | NegotiationLineLineNumber1 | LINE_NUMBER | — | — |
+| 102 | NegotiationLineLineOriginationCode | LINE_ORIGINATION_CODE | — | — |
+| 103 | NegotiationLineLineTypeId | LINE_TYPE_ID | — | — |
+| 104 | NegotiationLineMaxRetainageAmount | MAX_RETAINAGE_AMOUNT | — | — |
+| 105 | NegotiationLineMaxSubLineSequenceNumber | MAX_SUB_LINE_SEQUENCE_NUMBER | — | — |
+| 106 | NegotiationLineModeOfTransport1 | MODE_OF_TRANSPORT | — | — |
+| 107 | NegotiationLineModifiedDate | MODIFIED_DATE | — | — |
+| 108 | NegotiationLineModifiedFlag | MODIFIED_FLAG | — | — |
+| 109 | NegotiationLineNeedByDate | NEED_BY_DATE | — | ✅ |
+| 110 | NegotiationLineNoAward | NO_AWARD | — | — |
+| 111 | NegotiationLineNoteToBidders | NOTE_TO_BIDDERS | — | ✅ |
+| 112 | NegotiationLineNumberOfBids | NUMBER_OF_BIDS | — | — |
+| 113 | NegotiationLineNumberOfExtensions | NUMBER_OF_EXTENSIONS | — | — |
+| 114 | NegotiationLineObjectVersionNumber2 | OBJECT_VERSION_NUMBER | — | — |
+| 115 | NegotiationLineOrderTypeLookupCode | ORDER_TYPE_LOOKUP_CODE | — | — |
+| 116 | NegotiationLineParentLineNumber | PARENT_LINE_NUMBER | — | — |
+| 117 | NegotiationLinePoAgreedAmount | PO_AGREED_AMOUNT | — | ✅ |
+| 118 | NegotiationLinePoMinRelAmount | PO_MIN_REL_AMOUNT | — | ✅ |
+| 119 | NegotiationLinePrcBuId | PRC_BU_ID | — | — |
+| 120 | NegotiationLinePriceBreakNegFlag | PRICE_BREAK_NEG_FLAG | — | — |
+| 121 | NegotiationLinePriceBreakType | PRICE_BREAK_TYPE | — | — |
+| 122 | NegotiationLinePriceDiffShipmentNumber | PRICE_DIFF_SHIPMENT_NUMBER | — | — |
+| 123 | NegotiationLinePriceDisabledFlag | PRICE_DISABLED_FLAG | — | — |
+| 124 | NegotiationLineProgressPymtRatePercent | PROGRESS_PYMT_RATE_PERCENT | — | — |
+| 125 | NegotiationLineProjectAwardId | PROJECT_AWARD_ID | — | — |
+| 126 | NegotiationLineProjectExpOrganizationId | PROJECT_EXP_ORGANIZATION_ID | — | — |
+| 127 | NegotiationLineProjectExpenditureItemDate | PROJECT_EXPENDITURE_ITEM_DATE | — | — |
+| 128 | NegotiationLineProjectExpenditureType | PROJECT_EXPENDITURE_TYPE | — | — |
+| 129 | NegotiationLineProjectId | PROJECT_ID | — | — |
+| 130 | NegotiationLineProjectTaskId | PROJECT_TASK_ID | — | — |
+| 131 | NegotiationLinePurchaseBasis | PURCHASE_BASIS | — | — |
+| 132 | NegotiationLineQuantity | QUANTITY | — | ✅ |
+| 133 | NegotiationLineQuantityDisabledFlag | QUANTITY_DISABLED_FLAG | — | — |
+| 134 | NegotiationLineRecommendedAwardAmount | RECOMMENDED_AWARD_AMOUNT | — | — |
+| 135 | NegotiationLineRecoupmentRatePercent | RECOUPMENT_RATE_PERCENT | — | — |
+| 136 | NegotiationLineReqBuId | REQ_BU_ID | — | — |
+| 137 | NegotiationLineRequestedDeliveryDate | REQUESTED_DELIVERY_DATE | — | ✅ |
+| 138 | NegotiationLineRequestedShipDate | REQUESTED_SHIP_DATE | — | — |
+| 139 | NegotiationLineRequisitionNumber | REQUISITION_NUMBER | — | ✅ |
+| 140 | NegotiationLineRetainageRatePercent | RETAINAGE_RATE_PERCENT | — | — |
+| 141 | NegotiationLineServiceLevel1 | SERVICE_LEVEL | — | — |
+| 142 | NegotiationLineShipToLocationId | SHIP_TO_LOCATION_ID | — | — |
+| 143 | NegotiationLineSourceDocId | SOURCE_DOC_ID | — | — |
+| 144 | NegotiationLineSourceDocNumber | SOURCE_DOC_NUMBER | — | — |
+| 145 | NegotiationLineSourceLineId | SOURCE_LINE_ID | — | — |
+| 146 | NegotiationLineSourceLineNumber | SOURCE_LINE_NUMBER | — | ✅ |
+| 147 | NegotiationLineSubLineSequenceNumber | SUB_LINE_SEQUENCE_NUMBER | — | — |
+| 148 | NegotiationLineTargetPrice | TARGET_PRICE | — | ✅ |
+| 149 | NegotiationLineUnitDisplayTargetFlag | UNIT_DISPLAY_TARGET_FLAG | — | — |
+| 150 | NegotiationLineUnitTargetPrice | UNIT_TARGET_PRICE | — | — |
+| 151 | NegotiationLineUomCode1 | UOM_CODE | — | ✅ |
+| 152 | NegotiationLineWorkApproverUserId | WORK_APPROVER_USER_ID | — | — |
+
+### [[pon_auction_sections|PON_AUCTION_SECTIONS]]
+
+| # | Atributo | Coluna | PK | BICC |
+|---|----------|--------|----|------|
+| 1 | NegReqSectionAttrGroupSeqNumber | ATTR_GROUP_SEQ_NUMBER | — | — |
+| 2 | NegReqSectionAttributeListId | ATTRIBUTE_LIST_ID | — | — |
+| 3 | NegReqSectionAuctionHeaderId | AUCTION_HEADER_ID | — | — |
+| 4 | NegReqSectionCreatedBy | CREATED_BY | — | — |
+| 5 | NegReqSectionCreationDate | CREATION_DATE | — | — |
+| 6 | NegReqSectionLastUpdateDate | LAST_UPDATE_DATE | — | ✅ |
+| 7 | NegReqSectionLastUpdateLogin | LAST_UPDATE_LOGIN | — | — |
+| 8 | NegReqSectionLastUpdatedBy | LAST_UPDATED_BY | — | — |
+| 9 | NegReqSectionLineNumber | LINE_NUMBER | — | — |
+| 10 | NegReqSectionObjectVersionNumber | OBJECT_VERSION_NUMBER | — | — |
+| 11 | NegReqSectionPreviousSectionId | PREVIOUS_SECTION_ID | — | — |
+| 12 | NegReqSectionSectionId | SECTION_ID | — | — |
+| 13 | NegReqSectionSectionName | SECTION_NAME | — | — |
+| 14 | NegReqSectionTwoPartSectionType | TWO_PART_SECTION_TYPE | — | ✅ |
+
+### [[pon_bid_attribute_values|PON_BID_ATTRIBUTE_VALUES]]
+
+| # | Atributo | Coluna | PK | BICC |
+|---|----------|--------|----|------|
+| 1 | BidNumber | BID_NUMBER | 🔑 | ✅ |
+| 2 | LineNumber | LINE_NUMBER | 🔑 | ✅ |
+| 3 | NegResReqAttAttrLevel | ATTR_LEVEL | — | ✅ |
+| 4 | NegResReqAttAttributeName | ATTRIBUTE_NAME | — | ✅ |
+| 5 | NegResReqAttAuctionHeaderId | AUCTION_HEADER_ID | — | — |
+| 6 | NegResReqAttBatchId | BATCH_ID | — | — |
+| 7 | NegResReqAttCreatedBy | CREATED_BY | — | — |
+| 8 | NegResReqAttCreationDate | CREATION_DATE | — | ✅ |
+| 9 | NegResReqAttDatatype | DATATYPE | — | ✅ |
+| 10 | NegResReqAttDateOldValue | DATE_OLD_VALUE | — | — |
+| 11 | NegResReqAttDateValue | DATE_VALUE | — | ✅ |
+| 12 | NegResReqAttInterfaceLineId | INTERFACE_LINE_ID | — | — |
+| 13 | NegResReqAttInternalNote | INTERNAL_NOTE | — | ✅ |
+| 14 | NegResReqAttLastUpdateDate | LAST_UPDATE_DATE | — | ✅ |
+| 15 | NegResReqAttLastUpdateLogin | LAST_UPDATE_LOGIN | — | — |
+| 16 | NegResReqAttLastUpdatedBy | LAST_UPDATED_BY | — | — |
+| 17 | NegResReqAttNumberOldValue | NUMBER_OLD_VALUE | — | — |
+| 18 | NegResReqAttNumberValue | NUMBER_VALUE | — | ✅ |
+| 19 | NegResReqAttObjectVersionNumber | OBJECT_VERSION_NUMBER | — | — |
+| 20 | NegResReqAttProgramAppName | PROGRAM_APP_NAME | — | — |
+| 21 | NegResReqAttProgramApplicationId | PROGRAM_APPLICATION_ID | — | — |
+| 22 | NegResReqAttProgramId | PROGRAM_ID | — | — |
+| 23 | NegResReqAttProgramName | PROGRAM_NAME | — | — |
+| 24 | NegResReqAttProgramUpdateDate | PROGRAM_UPDATE_DATE | — | — |
+| 25 | NegResReqAttRequestId | REQUEST_ID | — | — |
+| 26 | NegResReqAttScore | SCORE | — | ✅ |
+| 27 | NegResReqAttTextOldValue | TEXT_OLD_VALUE | — | — |
+| 28 | NegResReqAttTextValue | TEXT_VALUE | — | ✅ |
+| 29 | NegResReqAttWeightedScore | WEIGHTED_SCORE | — | ✅ |
+| 30 | NegResReqAttWorksheetName | WORKSHEET_NAME | — | ✅ |
+| 31 | NegResReqAttWorksheetSequenceNumber | WORKSHEET_SEQUENCE_NUMBER | — | ✅ |
+| 32 | SequenceNumber | SEQUENCE_NUMBER | 🔑 | ✅ |
+
+### [[pon_bid_headers|PON_BID_HEADERS]]
+
+| # | Atributo | Coluna | PK | BICC |
+|---|----------|--------|----|------|
+| 1 | OriginalBidNumber | ORIGINAL_BID_NUMBER | — | ✅ |
+| 2 | ResponseHeaderAttributeLineNumber | ATTRIBUTE_LINE_NUMBER | — | — |
+| 3 | ResponseHeaderAuctionHeaderId | AUCTION_HEADER_ID | — | — |
+| 4 | ResponseHeaderAwardDate | AWARD_DATE | — | — |
+| 5 | ResponseHeaderAwardStatus | AWARD_STATUS | — | — |
+| 6 | ResponseHeaderBidCurrencyCode | BID_CURRENCY_CODE | — | ✅ |
+| 7 | ResponseHeaderBidExpirationDate | BID_EXPIRATION_DATE | — | — |
+| 8 | ResponseHeaderBidNumber | BID_NUMBER | — | — |
+| 9 | ResponseHeaderBidStatus | BID_STATUS | — | — |
+| 10 | ResponseHeaderBiddersBidNumber | BIDDERS_BID_NUMBER | — | — |
+| 11 | ResponseHeaderBuyerBidTotal | BUYER_BID_TOTAL | — | — |
+| 12 | ResponseHeaderCancelReason | CANCEL_REASON | — | ✅ |
+| 13 | ResponseHeaderCancelledDate | CANCELLED_DATE | — | ✅ |
+| 14 | ResponseHeaderColorSequenceId | COLOR_SEQUENCE_ID | — | — |
+| 15 | ResponseHeaderCreatedBy | CREATED_BY | — | ✅ |
+| 16 | ResponseHeaderCreationDate | CREATION_DATE | — | — |
+| 17 | ResponseHeaderCurrentRebate | CURRENT_REBATE | — | — |
+| 18 | ResponseHeaderCurrentTotalSpend | CURRENT_TOTAL_SPEND | — | — |
+| 19 | ResponseHeaderDisplayPriceFactorsFlag | DISPLAY_PRICE_FACTORS_FLAG | — | — |
+| 20 | ResponseHeaderDisqualifyReason | DISQUALIFY_REASON | — | — |
+| 21 | ResponseHeaderDraftLocked | DRAFT_LOCKED | — | ✅ |
+| 22 | ResponseHeaderDraftLockedBy | DRAFT_LOCKED_BY | — | — |
+| 23 | ResponseHeaderDraftLockedByContactId | DRAFT_LOCKED_BY_CONTACT_ID | — | — |
+| 24 | ResponseHeaderDraftLockedDate | DRAFT_LOCKED_DATE | — | ✅ |
+| 25 | ResponseHeaderDraftUnlockedBy | DRAFT_UNLOCKED_BY | — | — |
+| 26 | ResponseHeaderDraftUnlockedByContactId | DRAFT_UNLOCKED_BY_CONTACT_ID | — | — |
+| 27 | ResponseHeaderDraftUnlockedDate | DRAFT_UNLOCKED_DATE | — | ✅ |
+| 28 | ResponseHeaderFixedIncentive | FIXED_INCENTIVE | — | — |
+| 29 | ResponseHeaderHasRebateTiers | HAS_REBATE_TIERS | — | — |
+| 30 | ResponseHeaderImportFileName | IMPORT_FILE_NAME | — | — |
+| 31 | ResponseHeaderIncumbentFlag | INCUMBENT_FLAG | — | — |
+| 32 | ResponseHeaderInternalNote | INTERNAL_NOTE | — | ✅ |
+| 33 | ResponseHeaderLastUpdateDate | LAST_UPDATE_DATE | — | ✅ |
+| 34 | ResponseHeaderLastUpdateLogin | LAST_UPDATE_LOGIN | — | — |
+| 35 | ResponseHeaderLastUpdatedBy | LAST_UPDATED_BY | — | — |
+| 36 | ResponseHeaderMinBidChange | MIN_BID_CHANGE | — | — |
+| 37 | ResponseHeaderNoteToAuctionOwner | NOTE_TO_AUCTION_OWNER | — | ✅ |
+| 38 | ResponseHeaderNoteToSupplier | NOTE_TO_SUPPLIER | — | ✅ |
+| 39 | ResponseHeaderNumberPriceDecimals | NUMBER_PRICE_DECIMALS | — | ✅ |
+| 40 | ResponseHeaderObjectVersionNumber | OBJECT_VERSION_NUMBER | — | — |
+| 41 | ResponseHeaderOldBidExpirationDate | OLD_BID_EXPIRATION_DATE | — | — |
+| 42 | ResponseHeaderOldBidNumber | OLD_BID_NUMBER | — | — |
+| 43 | ResponseHeaderOldBidStatus | OLD_BID_STATUS | — | — |
+| 44 | ResponseHeaderOldBiddersBidNumber | OLD_BIDDERS_BID_NUMBER | — | — |
+| 45 | ResponseHeaderOldMinBidChange | OLD_MIN_BID_CHANGE | — | — |
+| 46 | ResponseHeaderOldNoteToAuctionOwner | OLD_NOTE_TO_AUCTION_OWNER | — | — |
+| 47 | ResponseHeaderOldSurrogBidReceiptDate | OLD_SURROG_BID_RECEIPT_DATE | — | — |
+| 48 | ResponseHeaderPartialResponseFlag | PARTIAL_RESPONSE_FLAG | — | ✅ |
+| 49 | ResponseHeaderPoAgreedAmount | PO_AGREED_AMOUNT | — | — |
+| 50 | ResponseHeaderProgramAppName | PROGRAM_APP_NAME | — | — |
+| 51 | ResponseHeaderProgramName | PROGRAM_NAME | — | — |
+| 52 | ResponseHeaderProxyBidFlag | PROXY_BID_FLAG | — | — |
+| 53 | ResponseHeaderPublishDate | PUBLISH_DATE | — | ✅ |
+| 54 | ResponseHeaderRate | RATE | — | — |
+| 55 | ResponseHeaderRateDate | RATE_DATE | — | — |
+| 56 | ResponseHeaderRateDsp | RATE_DSP | — | — |
+| 57 | ResponseHeaderRateType | RATE_TYPE | — | — |
+| 58 | ResponseHeaderRequestDate | REQUEST_DATE | — | — |
+| 59 | ResponseHeaderRequestId | REQUEST_ID | — | — |
+| 60 | ResponseHeaderRequestedBy | REQUESTED_BY | — | — |
+| 61 | ResponseHeaderScoreOverridenDate | SCORE_OVERRIDEN_DATE | — | — |
+| 62 | ResponseHeaderScoreOverridenFlag | SCORE_OVERRIDEN_FLAG | — | — |
+| 63 | ResponseHeaderShortlistFlag | SHORTLIST_FLAG | — | ✅ |
+| 64 | ResponseHeaderSurrogBidCreatedPersonId | SURROG_BID_CREATED_PERSON_ID | — | — |
+| 65 | ResponseHeaderSurrogBidFlag | SURROG_BID_FLAG | — | ✅ |
+| 66 | ResponseHeaderSurrogBidOnlineEntryDate | SURROG_BID_ONLINE_ENTRY_DATE | — | ✅ |
+| 67 | ResponseHeaderSurrogBidReceiptDate | SURROG_BID_RECEIPT_DATE | — | ✅ |
+| 68 | ResponseHeaderSurrogMethodOfResponse | SURROG_METHOD_OF_RESPONSE | — | ✅ |
+| 69 | ResponseHeaderTechnicalShortlistFlag | TECHNICAL_SHORTLIST_FLAG | — | ✅ |
+| 70 | ResponseHeaderTotalAwardAmount | TOTAL_AWARD_AMOUNT | — | — |
+| 71 | ResponseHeaderTradingPartnerContactId | TRADING_PARTNER_CONTACT_ID | — | — |
+| 72 | ResponseHeaderTradingPartnerId | TRADING_PARTNER_ID | — | — |
+| 73 | ResponseHeaderVendorId | VENDOR_ID | — | — |
+| 74 | ResponseHeaderVendorSiteId | VENDOR_SITE_ID | — | — |
+| 75 | TypeOfResponse | TYPE_OF_RESPONSE | — | ✅ |
+
+### [[pon_bid_item_prices|PON_BID_ITEM_PRICES]]
+
+| # | Atributo | Coluna | PK | BICC |
+|---|----------|--------|----|------|
+| 1 | AlternateLineDescription | ALTERNATE_LINE_DESCRIPTION | — | ✅ |
+| 2 | AlternateLineFlag | ALTERNATE_LINE_FLAG | — | ✅ |
+| 3 | AuctionLineNumber | AUCTION_LINE_NUMBER | — | — |
+| 4 | PurchasingItemDesc | PURCHASING_ITEM_DESC | — | ✅ |
+| 5 | PurchasingItemId | PURCHASING_ITEM_ID | — | — |
+| 6 | PurchasingItemRevision | PURCHASING_ITEM_REVISION | — | — |
+| 7 | ResponseLineAdvanceAmount | ADVANCE_AMOUNT | — | — |
+| 8 | ResponseLineAuctionHeaderId | AUCTION_HEADER_ID | — | — |
+| 9 | ResponseLineAwardDate | AWARD_DATE | — | — |
+| 10 | ResponseLineAwardPrice | AWARD_PRICE | — | ✅ |
+| 11 | ResponseLineAwardQuantity | AWARD_QUANTITY | — | — |
+| 12 | ResponseLineAwardShipmentNumber | AWARD_SHIPMENT_NUMBER | — | — |
+| 13 | ResponseLineAwardStatus | AWARD_STATUS | — | — |
+| 14 | ResponseLineBatchId | BATCH_ID | — | — |
+| 15 | ResponseLineBidCurrAdvanceAmount | BID_CURR_ADVANCE_AMOUNT | — | — |
+| 16 | ResponseLineBidCurrMaxRetainageAmt | BID_CURR_MAX_RETAINAGE_AMT | — | — |
+| 17 | ResponseLineBidCurrencyLimitPrice | BID_CURRENCY_LIMIT_PRICE | — | — |
+| 18 | ResponseLineBidCurrencyPrice | BID_CURRENCY_PRICE | — | — |
+| 19 | ResponseLineBidCurrencyTransPrice | BID_CURRENCY_TRANS_PRICE | — | — |
+| 20 | ResponseLineBidCurrencyUnitPrice | BID_CURRENCY_UNIT_PRICE | — | — |
+| 21 | ResponseLineBidNumber | BID_NUMBER | — | — |
+| 22 | ResponseLineBidStartPrice | BID_START_PRICE | — | ✅ |
+| 23 | ResponseLineCancelledLimitPrice | CANCELLED_LIMIT_PRICE | — | — |
+| 24 | ResponseLineCopyPriceForProxyFlag | COPY_PRICE_FOR_PROXY_FLAG | — | — |
+| 25 | ResponseLineCreatedBy | CREATED_BY | — | — |
+| 26 | ResponseLineCreationDate | CREATION_DATE | — | — |
+| 27 | ResponseLineDisplayPriceFactorsFlag | DISPLAY_PRICE_FACTORS_FLAG | — | — |
+| 28 | ResponseLineDocumentDispLineNumber | DOCUMENT_DISP_LINE_NUMBER | — | ✅ |
+| 29 | ResponseLineFirstBidPrice | FIRST_BID_PRICE | — | — |
+| 30 | ResponseLineFixedAmountComponent | FIXED_AMOUNT_COMPONENT | — | — |
+| 31 | ResponseLineGroupAmount | GROUP_AMOUNT | — | — |
+| 32 | ResponseLineHasAttributesFlag | HAS_ATTRIBUTES_FLAG | — | — |
+| 33 | ResponseLineHasBidFlag | HAS_BID_FLAG | — | ✅ |
+| 34 | ResponseLineHasBidPaymentsFlag | HAS_BID_PAYMENTS_FLAG | — | — |
+| 35 | ResponseLineHasPriceDifferentialsFlag | HAS_PRICE_DIFFERENTIALS_FLAG | — | — |
+| 36 | ResponseLineHasQuantityTiers | HAS_QUANTITY_TIERS | — | — |
+| 37 | ResponseLineHasShipmentsFlag | HAS_SHIPMENTS_FLAG | — | — |
+| 38 | ResponseLineInterfaceLineId | INTERFACE_LINE_ID | — | — |
+| 39 | ResponseLineIsChangedLineFlag | IS_CHANGED_LINE_FLAG | — | — |
+| 40 | ResponseLineLastUpdateDate | LAST_UPDATE_DATE | — | ✅ |
+| 41 | ResponseLineLastUpdateLogin | LAST_UPDATE_LOGIN | — | — |
+| 42 | ResponseLineLastUpdatedBy | LAST_UPDATED_BY | — | — |
+| 43 | ResponseLineLineNumber | LINE_NUMBER | — | — |
+| 44 | ResponseLineMaxRetainageAmount | MAX_RETAINAGE_AMOUNT | — | — |
+| 45 | ResponseLineNoteToAuctionOwner | NOTE_TO_AUCTION_OWNER | — | ✅ |
+| 46 | ResponseLineObjectVersionNumber | OBJECT_VERSION_NUMBER | — | — |
+| 47 | ResponseLineOldBidCurrAdvanceAmount | OLD_BID_CURR_ADVANCE_AMOUNT | — | — |
+| 48 | ResponseLineOldBidCurrMaxRetainageAmt | OLD_BID_CURR_MAX_RETAINAGE_AMT | — | — |
+| 49 | ResponseLineOldBidCurrencyLimitPrice | OLD_BID_CURRENCY_LIMIT_PRICE | — | — |
+| 50 | ResponseLineOldBidCurrencyPrice | OLD_BID_CURRENCY_PRICE | — | — |
+| 51 | ResponseLineOldBidCurrencyUnitPrice | OLD_BID_CURRENCY_UNIT_PRICE | — | — |
+| 52 | ResponseLineOldNoOfPayments | OLD_NO_OF_PAYMENTS | — | — |
+| 53 | ResponseLineOldNoteToAuctionOwner | OLD_NOTE_TO_AUCTION_OWNER | — | — |
+| 54 | ResponseLineOldPoBidMinRelAmount | OLD_PO_BID_MIN_REL_AMOUNT | — | — |
+| 55 | ResponseLineOldPrice | OLD_PRICE | — | — |
+| 56 | ResponseLineOldProgressPymtRatePercent | OLD_PROGRESS_PYMT_RATE_PERCENT | — | — |
+| 57 | ResponseLineOldPromisedDate | OLD_PROMISED_DATE | — | — |
+| 58 | ResponseLineOldPublishDate | OLD_PUBLISH_DATE | — | — |
+| 59 | ResponseLineOldQuantity | OLD_QUANTITY | — | — |
+| 60 | ResponseLineOldRecoupmentRatePercent | OLD_RECOUPMENT_RATE_PERCENT | — | — |
+| 61 | ResponseLineOldRetainageRatePercent | OLD_RETAINAGE_RATE_PERCENT | — | — |
+| 62 | ResponseLinePerUnitPriceComponent | PER_UNIT_PRICE_COMPONENT | — | ✅ |
+| 63 | ResponseLinePoBidMinRelAmount | PO_BID_MIN_REL_AMOUNT | — | ✅ |
+| 64 | ResponseLinePoMinRelAmount | PO_MIN_REL_AMOUNT | — | ✅ |
+| 65 | ResponseLinePrice | PRICE | — | ✅ |
+| 66 | ResponseLinePriceBreakType | PRICE_BREAK_TYPE | — | — |
+| 67 | ResponseLinePriceDiffShipmentNumber | PRICE_DIFF_SHIPMENT_NUMBER | — | — |
+| 68 | ResponseLineProgramAppName | PROGRAM_APP_NAME | — | — |
+| 69 | ResponseLineProgramName | PROGRAM_NAME | — | — |
+| 70 | ResponseLineProgramUpdateDate | PROGRAM_UPDATE_DATE | — | — |
+| 71 | ResponseLineProgressPymtRatePercent | PROGRESS_PYMT_RATE_PERCENT | — | — |
+| 72 | ResponseLinePromisedDate | PROMISED_DATE | — | ✅ |
+| 73 | ResponseLinePromisedDeliveryDate | PROMISED_DELIVERY_DATE | — | ✅ |
+| 74 | ResponseLinePromisedShipDate | PROMISED_SHIP_DATE | — | ✅ |
+| 75 | ResponseLineProxyBidFlag | PROXY_BID_FLAG | — | ✅ |
+| 76 | ResponseLineProxyBidLimitPrice | PROXY_BID_LIMIT_PRICE | — | ✅ |
+| 77 | ResponseLinePublishDate | PUBLISH_DATE | — | — |
+| 78 | ResponseLineQuantity | QUANTITY | — | ✅ |
+| 79 | ResponseLineRank | RANK | — | ✅ |
+| 80 | ResponseLineRecoupmentRatePercent | RECOUPMENT_RATE_PERCENT | — | — |
+| 81 | ResponseLineRequestId | REQUEST_ID | — | — |
+| 82 | ResponseLineRetainageRatePercent | RETAINAGE_RATE_PERCENT | — | — |
+| 83 | ResponseLineTotalWeightedScore | TOTAL_WEIGHTED_SCORE | — | ✅ |
+| 84 | ResponseLineTriggerBidNumber | TRIGGER_BID_NUMBER | — | — |
+| 85 | ResponseLineUnitPrice | UNIT_PRICE | — | ✅ |
+| 86 | ResponseLineWorksheetName | WORKSHEET_NAME | — | — |
+| 87 | ResponseLineWorksheetSequenceNumber | WORKSHEET_SEQUENCE_NUMBER | — | — |
+| 88 | UomCode | UOM_CODE | — | ✅ |
+| 89 | UomConversionFactor | UOM_CONVERSION_FACTOR | — | — |
+
+### [[po_system_parameters_all|PO_SYSTEM_PARAMETERS_ALL]]
+
+| # | Atributo | Coluna | PK | BICC |
+|---|----------|--------|----|------|
+| 1 | AgingOnsetPoint | AGING_ONSET_POINT | — | — |
+| 2 | AgingPeriodDays | AGING_PERIOD_DAYS | — | — |
+| 3 | AllowItemDescUpdateFlag | ALLOW_ITEM_DESC_UPDATE_FLAG | — | — |
+| 4 | AllowManulPriceUpdateOrder | ALLOW_MANUL_PRICE_UPDATE_ORDER | — | — |
+| 5 | AllowRetroPricing | ALLOW_RETRO_PRICING | — | — |
+| 6 | AwardApprovalEnabledFlag | AWARD_APPROVAL_ENABLED_FLAG | — | — |
+| 7 | BestPriceVisibleBlind | BEST_PRICE_VISIBLE_BLIND | — | — |
+| 8 | BuyerManagedTransportFlag | BUYER_MANAGED_TRANSPORT_FLAG | — | — |
+| 9 | CarrierId | CARRIER_ID | — | — |
+| 10 | CatAdminAuthoringAcceptance | CAT_ADMIN_AUTHORING_ACCEPTANCE | — | — |
+| 11 | CollabSecurityProfileId | COLLAB_SECURITY_PROFILE_ID | — | — |
+| 12 | ConsumptionAdviceFrequency | CONSUMPTION_ADVICE_FREQUENCY | — | — |
+| 13 | ConsumptionAdviceSummary | CONSUMPTION_ADVICE_SUMMARY | — | — |
+| 14 | CreateDebitMemoFlag | CREATE_DEBIT_MEMO_FLAG | — | — |
+| 15 | CreatedBy | CREATED_BY | — | — |
+| 16 | CreationDate | CREATION_DATE | — | — |
+| 17 | CurrencyCode | CURRENCY_CODE | — | — |
+| 18 | DefaultBuyerId | DEFAULT_BUYER_ID | — | — |
+| 19 | DefaultPromiseDate | DEFAULT_PROMISE_DATE | — | — |
+| 20 | DefaultRateType | DEFAULT_RATE_TYPE | — | — |
+| 21 | DoctypeId | DOCTYPE_ID | — | — |
+| 22 | EmailAttachmentFilename | EMAIL_ATTACHMENT_FILENAME | — | — |
+| 23 | EnforceBuyerAuthorityFlag | ENFORCE_BUYER_AUTHORITY_FLAG | — | — |
+| 24 | EnforceMinBidPrice | ENFORCE_MIN_BID_PRICE | — | — |
+| 25 | EnforceVendorHoldFlag | ENFORCE_VENDOR_HOLD_FLAG | — | — |
+| 26 | FobLookupCode | FOB_LOOKUP_CODE | — | — |
+| 27 | FreightTermsLookupCode | FREIGHT_TERMS_LOOKUP_CODE | — | — |
+| 28 | GenOrderForNegReqsFlag | GEN_ORDER_FOR_NEG_REQS_FLAG | — | — |
+| 29 | GlobalAttribute1 | GLOBAL_ATTRIBUTE1 | — | — |
+| 30 | GlobalAttribute10 | GLOBAL_ATTRIBUTE10 | — | — |
+| 31 | GlobalAttribute11 | GLOBAL_ATTRIBUTE11 | — | — |
+| 32 | GlobalAttribute12 | GLOBAL_ATTRIBUTE12 | — | — |
+| 33 | GlobalAttribute13 | GLOBAL_ATTRIBUTE13 | — | — |
+| 34 | GlobalAttribute14 | GLOBAL_ATTRIBUTE14 | — | — |
+| 35 | GlobalAttribute15 | GLOBAL_ATTRIBUTE15 | — | — |
+| 36 | GlobalAttribute16 | GLOBAL_ATTRIBUTE16 | — | — |
+| 37 | GlobalAttribute17 | GLOBAL_ATTRIBUTE17 | — | — |
+| 38 | GlobalAttribute18 | GLOBAL_ATTRIBUTE18 | — | — |
+| 39 | GlobalAttribute19 | GLOBAL_ATTRIBUTE19 | — | — |
+| 40 | GlobalAttribute2 | GLOBAL_ATTRIBUTE2 | — | — |
+| 41 | GlobalAttribute20 | GLOBAL_ATTRIBUTE20 | — | — |
+| 42 | GlobalAttribute3 | GLOBAL_ATTRIBUTE3 | — | — |
+| 43 | GlobalAttribute4 | GLOBAL_ATTRIBUTE4 | — | — |
+| 44 | GlobalAttribute5 | GLOBAL_ATTRIBUTE5 | — | — |
+| 45 | GlobalAttribute6 | GLOBAL_ATTRIBUTE6 | — | — |
+| 46 | GlobalAttribute7 | GLOBAL_ATTRIBUTE7 | — | — |
+| 47 | GlobalAttribute8 | GLOBAL_ATTRIBUTE8 | — | — |
+| 48 | GlobalAttribute9 | GLOBAL_ATTRIBUTE9 | — | — |
+| 49 | GlobalAttributeCategory | GLOBAL_ATTRIBUTE_CATEGORY | — | — |
+| 50 | GroupRequisitionLines | GROUP_REQUISITION_LINES | — | — |
+| 51 | GroupRequisitions | GROUP_REQUISITIONS | — | — |
+| 52 | HdrAttrDefaultMaxScore | HDR_ATTR_DEFAULT_MAX_SCORE | — | — |
+| 53 | HdrAttrDispScoreCriteria | HDR_ATTR_DISP_SCORE_CRITERIA | — | — |
+| 54 | HdrAttrEnableWeights | HDR_ATTR_ENABLE_WEIGHTS | — | — |
+| 55 | InspectionRequiredFlag | INSPECTION_REQUIRED_FLAG | — | — |
+| 56 | InventoryOrganizationId | INVENTORY_ORGANIZATION_ID | — | — |
+| 57 | InvoiceCloseCode | INVOICE_CLOSE_CODE | — | — |
+| 58 | InvoiceCloseTolerance | INVOICE_CLOSE_TOLERANCE | — | — |
+| 59 | LanguageCode | LANGUAGE_CODE | — | — |
+| 60 | LastUpdateDate | LAST_UPDATE_DATE | — | — |
+| 61 | LastUpdateLogin | LAST_UPDATE_LOGIN | — | — |
+| 62 | LastUpdatedBy | LAST_UPDATED_BY | — | — |
+| 63 | LineTypeId | LINE_TYPE_ID | — | — |
+| 64 | ManualReceiptNumType | MANUAL_RECEIPT_NUM_TYPE | — | — |
+| 65 | ManualReqNumType | MANUAL_REQ_NUM_TYPE | — | — |
+| 66 | MatchOption | MATCH_OPTION | — | — |
+| 67 | MaxAttachmentSize | MAX_ATTACHMENT_SIZE | — | — |
+| 68 | MinReleaseAmount | MIN_RELEASE_AMOUNT | — | — |
+| 69 | ModeOfTransport1 | MODE_OF_TRANSPORT | — | — |
+| 70 | NegApprovalEnabledFlag | NEG_APPROVAL_ENABLED_FLAG | — | — |
+| 71 | NextApproverLookupCode | NEXT_APPROVER_LOOKUP_CODE | — | — |
+| 72 | NextNegotiationNumber | NEXT_NEGOTIATION_NUMBER | — | — |
+| 73 | ObjectVersionNumber2 | OBJECT_VERSION_NUMBER | — | — |
+| 74 | PrcBuId | PRC_BU_ID | — | — |
+| 75 | PriceBreakLookupCode | PRICE_BREAK_LOOKUP_CODE | — | — |
+| 76 | PriceChangeAmount | PRICE_CHANGE_AMOUNT | — | — |
+| 77 | RankIndicator | RANK_INDICATOR | — | — |
+| 78 | RankVisibleBlind | RANK_VISIBLE_BLIND | — | — |
+| 79 | ReceiveCloseCode | RECEIVE_CLOSE_CODE | — | — |
+| 80 | ReceiveCloseTolerance | RECEIVE_CLOSE_TOLERANCE | — | — |
+| 81 | ReceivingFlag | RECEIVING_FLAG | — | — |
+| 82 | RfqOnlySiteFlag | RFQ_ONLY_SITE_FLAG | — | — |
+| 83 | ServiceLevel1 | SERVICE_LEVEL | — | — |
+| 84 | StyleId | STYLE_ID | — | — |
+| 85 | SupplierAuthoringAcceptance | SUPPLIER_AUTHORING_ACCEPTANCE | — | — |
+| 86 | SupplierHistoryDuration | SUPPLIER_HISTORY_DURATION | — | — |
+| 87 | SystemConfiguredFlag | SYSTEM_CONFIGURED_FLAG | — | — |
+| 88 | TaxFromItemFlag | TAX_FROM_ITEM_FLAG | — | — |
+| 89 | TaxFromShipToLocFlag | TAX_FROM_SHIP_TO_LOC_FLAG | — | — |
+| 90 | TaxFromSystemFlag | TAX_FROM_SYSTEM_FLAG | — | — |
+| 91 | TaxFromVendorFlag | TAX_FROM_VENDOR_FLAG | — | — |
+| 92 | TaxFromVendorSiteFlag | TAX_FROM_VENDOR_SITE_FLAG | — | — |
+| 93 | TaxHierItem | TAX_HIER_ITEM | — | — |
+| 94 | TaxHierShipToLoc | TAX_HIER_SHIP_TO_LOC | — | — |
+| 95 | TaxHierSystem | TAX_HIER_SYSTEM | — | — |
+| 96 | TaxHierVendor | TAX_HIER_VENDOR | — | — |
+| 97 | TaxHierVendorSite | TAX_HIER_VENDOR_SITE | — | — |
+| 98 | TaxableFlag | TAXABLE_FLAG | — | — |
+| 99 | TermsId | TERMS_ID | — | — |
+| 100 | UseNeedByDate | USE_NEED_BY_DATE | — | — |
+| 101 | UseSalesOrderNumberFlag | USE_SALES_ORDER_NUMBER_FLAG | — | — |
+| 102 | UseShipTo | USE_SHIP_TO | — | — |
+| 103 | UserDefinedReceiptNumCode | USER_DEFINED_RECEIPT_NUM_CODE | — | — |
+| 104 | UserDefinedReqNumCode | USER_DEFINED_REQ_NUM_CODE | — | — |
+
+---
+
+## 📚 Referências
+
+- [[po-module-data-dictionary]] — Dossiê do módulo PO
