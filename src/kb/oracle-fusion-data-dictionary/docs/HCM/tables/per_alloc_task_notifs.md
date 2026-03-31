@@ -75,8 +75,8 @@ Esta tabela é utilizada nos seguintes processos:
 ## 🔗 Relacionamentos
 
 ### Tabelas-pai (FK de entrada)
-- [[per_allocated_tasks]] — via `ALLOCATED_TASK_ID` (tarefa de checklist da notificaÃ§Ã£o)
-- [[per_all_people_f]] — via `RECIPIENT_PERSON_ID` (destinatÃ¡rio da notificaÃ§Ã£o de tarefa)
+- [[per_allocated_tasks]] — via `ALLOCATED_TASK_ID` (tarefa de checklist da notificação)
+- [[per_all_people_f]] — via `RECIPIENT_PERSON_ID` (destinatário da notificação de tarefa)
 
 ### Tabelas-filha (FK de saída)
 - - Nenhuma tabela-filha direta identificada.

@@ -72,11 +72,11 @@ Esta tabela é utilizada nos seguintes processos:
 ## 🔗 Relacionamentos
 
 ### Tabelas-pai (FK de entrada)
-- [[pay_dir_cards_f]] --- via `DIR_CARD_ID` (cartÃ£o de depÃ³sito direto do componente)
-- [[pay_dir_card_comp_defs_f]] --- via `DIR_CARD_COMP_DEF_ID` (definiÃ§Ã£o do componente do cartÃ£o)
+- [[pay_dir_cards_f]] --- via `DIR_CARD_ID` (cartão de depósito direto do componente)
+- [[pay_dir_card_comp_defs_f]] --- via `DIR_CARD_COMP_DEF_ID` (definição do componente do cartão)
 
 ### Tabelas-filha (FK de saída)
-- [[pay_dir_comp_details_f]] --- via `DIR_CARD_COMP_ID` (detalhes do componente do cartÃ£o)
+- [[pay_dir_comp_details_f]] --- via `DIR_CARD_COMP_ID` (detalhes do componente do cartão)
 
 ---
 

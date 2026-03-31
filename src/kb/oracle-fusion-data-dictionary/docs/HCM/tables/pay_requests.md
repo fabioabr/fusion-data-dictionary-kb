@@ -72,7 +72,7 @@ Esta tabela é utilizada nos seguintes processos:
 ## 🔗 Relacionamentos
 
 ### Tabelas-pai (FK de entrada)
-- [[pay_payroll_actions]] --- via `PAYROLL_ACTION_ID` (aÃ§Ã£o de folha solicitada)
+- [[pay_payroll_actions]] --- via `PAYROLL_ACTION_ID` (ação de folha solicitada)
 
 ### Tabelas-filha (FK de saída)
 - --- Tabela de requisicao, sem filhas conhecidas

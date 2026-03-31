@@ -72,10 +72,10 @@ Esta tabela é utilizada nos seguintes processos:
 ## 🔗 Relacionamentos
 
 ### Tabelas-pai (FK de entrada)
-- [[pay_deduction_groups_vl]] --- via `DEDUCTION_GROUP_ID` (grupo ao qual pertence a deduÃ§Ã£o)
+- [[pay_deduction_groups_vl]] --- via `DEDUCTION_GROUP_ID` (grupo ao qual pertence a dedução)
 
 ### Tabelas-filha (FK de saída)
-- [[pay_deduction_types_tl]] --- via `DEDUCTION_TYPE_ID` (traduÃ§Ãµes do tipo de deduÃ§Ã£o)
+- [[pay_deduction_types_tl]] --- via `DEDUCTION_TYPE_ID` (traduções do tipo de dedução)
 
 ---
 

@@ -262,6 +262,11 @@ pre.sql-code { margin: 0; padding: 16px; font-family: 'Courier New', monospace; 
 .bg-orange { background: var(--orange); } .bg-teal { background: var(--teal); }
 .bg-secondary { background: var(--secondary); }
 
+/* ====== PVO GROUPS ====== */
+.pvo-group .card-header .ri-arrow-down-s-line { transition: transform 0.2s; }
+.pvo-group.collapsed .pvo-group-body { display: none; }
+.pvo-group.collapsed .ri-arrow-down-s-line { transform: rotate(-90deg); }
+
 /* ====== RESPONSIVE ====== */
 @media (max-width: 768px) {
     .stats-grid { grid-template-columns: 1fr; }
@@ -1741,6 +1746,624 @@ const DATA = {
     "PJF_PROJ_ELEMENTS_TL": "HCM",
     "PJF_WORK_TYPES_VL": "HCM"
   },
+  "related_pvos": [
+    {
+      "column": "AUTHOR",
+      "pvo_name": "LearningRelatedContentPVO",
+      "pvo_attr": "RelatedContentDEOAuthor",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "CATALOG",
+      "pvo_name": "LearningRelatedContentPVO",
+      "pvo_attr": "RelatedContentDEOCatalog",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "CATALOG_NUMBER",
+      "pvo_name": "LearningRelatedContentPVO",
+      "pvo_attr": "RelatedContentDEOCatalogNumber",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "COMPLETION_ON_OPEN",
+      "pvo_name": "LearningRelatedContentPVO",
+      "pvo_attr": "RelatedContentDEOCompletionOnOpen",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "CONTENT_ID",
+      "pvo_name": "LearningRelatedContentPVO",
+      "pvo_attr": "RelatedContentDEOContentId",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "COPYRIGHT_TEXT",
+      "pvo_name": "LearningRelatedContentPVO",
+      "pvo_attr": "RelatedContentDEOCopyrightText",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "CREATED_BY",
+      "pvo_name": "LearningRelatedContentPVO",
+      "pvo_attr": "RelatedContentDEOCreatedBy",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "CREATION_DATE",
+      "pvo_name": "LearningRelatedContentPVO",
+      "pvo_attr": "RelatedContentDEOCreationDate",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "CURRENCY",
+      "pvo_name": "LearningRelatedContentPVO",
+      "pvo_attr": "RelatedContentDEOCurrency",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "DISABLE_REVIEW",
+      "pvo_name": "LearningRelatedContentPVO",
+      "pvo_attr": "RelatedContentDEODisableReview",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "EFFECTIVE_END_DATE",
+      "pvo_name": "LearningRelatedContentPVO",
+      "pvo_attr": "RelatedContentDEOEffectiveEndDate",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "EFFECTIVE_START_DATE",
+      "pvo_name": "LearningRelatedContentPVO",
+      "pvo_attr": "RelatedContentDEOEffectiveStartDate",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "ENTERPRISE_ID",
+      "pvo_name": "LearningRelatedContentPVO",
+      "pvo_attr": "RelatedContentDEOEnterpriseId",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "EXTERNAL_IDENTIFIER",
+      "pvo_name": "LearningRelatedContentPVO",
+      "pvo_attr": "RelatedContentDEOExternalIdentifier",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "HIDE_CORRECT_ANSWERS",
+      "pvo_name": "LearningRelatedContentPVO",
+      "pvo_attr": "RelatedContentDEOHideCorrectAnswers",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "HIDE_SCORE_ADMIN",
+      "pvo_name": "LearningRelatedContentPVO",
+      "pvo_attr": "RelatedContentDEOHideScoreAdmin",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "HIDE_SCORE_LEARNER",
+      "pvo_name": "LearningRelatedContentPVO",
+      "pvo_attr": "RelatedContentDEOHideScoreLearner",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "INGESTION_NAME",
+      "pvo_name": "LearningRelatedContentPVO",
+      "pvo_attr": "RelatedContentDEOIngestionName",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "INGESTION_STATUS",
+      "pvo_name": "LearningRelatedContentPVO",
+      "pvo_attr": "RelatedContentDEOIngestionStatus",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "INGESTION_STATUS_LOG",
+      "pvo_name": "LearningRelatedContentPVO",
+      "pvo_attr": "RelatedContentDEOIngestionStatusLog",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "IS_AUTO_COMMIT",
+      "pvo_name": "LearningRelatedContentPVO",
+      "pvo_attr": "RelatedContentDEOIsAutoCommit",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "IS_COPYRIGHTED",
+      "pvo_name": "LearningRelatedContentPVO",
+      "pvo_attr": "RelatedContentDEOIsCopyrighted",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "IS_VISIBLE",
+      "pvo_name": "LearningRelatedContentPVO",
+      "pvo_attr": "RelatedContentDEOIsVisible",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "KEYWORDS",
+      "pvo_name": "LearningRelatedContentPVO",
+      "pvo_attr": "RelatedContentDEOKeywords",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "LAST_UPDATE_DATE",
+      "pvo_name": "LearningRelatedContentPVO",
+      "pvo_attr": "RelatedContentDEOLastUpdateDate",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "LAST_UPDATE_LOGIN",
+      "pvo_name": "LearningRelatedContentPVO",
+      "pvo_attr": "RelatedContentDEOLastUpdateLogin",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "LAST_UPDATE_METHOD",
+      "pvo_name": "LearningRelatedContentPVO",
+      "pvo_attr": "RelatedContentDEOLastUpdateMethod",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "LAST_UPDATED_BY",
+      "pvo_name": "LearningRelatedContentPVO",
+      "pvo_attr": "RelatedContentDEOLastUpdatedBy",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "LAUNCH_DATA",
+      "pvo_name": "LearningRelatedContentPVO",
+      "pvo_attr": "RelatedContentDEOLaunchData",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "LEARNING_ITEM_ID",
+      "pvo_name": "LearningRelatedContentPVO",
+      "pvo_attr": "RelatedContentDEOLearningItemId",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "MASTERY_SCORE",
+      "pvo_name": "LearningRelatedContentPVO",
+      "pvo_attr": "RelatedContentDEOMasteryScore",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "MAX_ATTEMPTS",
+      "pvo_name": "LearningRelatedContentPVO",
+      "pvo_attr": "RelatedContentDEOMaxAttempts",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "OBJECT_VERSION_NUMBER",
+      "pvo_name": "LearningRelatedContentPVO",
+      "pvo_attr": "RelatedContentDEOObjectVersionNumber",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "PLAYABLE_ITEMS_COUNT",
+      "pvo_name": "LearningRelatedContentPVO",
+      "pvo_attr": "RelatedContentDEOPlayableItemsCount",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "PRICE",
+      "pvo_name": "LearningRelatedContentPVO",
+      "pvo_attr": "RelatedContentDEOPrice",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "RECORDED_ATTEMPT_REVIEW",
+      "pvo_name": "LearningRelatedContentPVO",
+      "pvo_attr": "RelatedContentDEORecordedAttemptReview",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "RECORDED_ATTEMPTS",
+      "pvo_name": "LearningRelatedContentPVO",
+      "pvo_attr": "RelatedContentDEORecordedAttempts",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "RELATED_CONTENT_ID",
+      "pvo_name": "LearningRelatedContentPVO",
+      "pvo_attr": "RelatedContentDEORelatedContentId",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "STARTING_URL",
+      "pvo_name": "LearningRelatedContentPVO",
+      "pvo_attr": "RelatedContentDEOStartingUrl",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "TIME_LIMIT",
+      "pvo_name": "LearningRelatedContentPVO",
+      "pvo_attr": "RelatedContentDEOTimeLimit",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "TIME_LIMIT_ACTION",
+      "pvo_name": "LearningRelatedContentPVO",
+      "pvo_attr": "RelatedContentDEOTimeLimitAction",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "TIME_LIMIT_UOM",
+      "pvo_name": "LearningRelatedContentPVO",
+      "pvo_attr": "RelatedContentDEOTimeLimitUom",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "TRACKING_TYPE",
+      "pvo_name": "LearningRelatedContentPVO",
+      "pvo_attr": "RelatedContentDEOTrackingType",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "VERSION",
+      "pvo_name": "LearningRelatedContentPVO",
+      "pvo_attr": "RelatedContentDEOVersion",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "AUTHOR",
+      "pvo_name": "SectionHierarchyPVO",
+      "pvo_attr": "ContentDEOAuthor",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "CATALOG",
+      "pvo_name": "SectionHierarchyPVO",
+      "pvo_attr": "ContentDEOCatalog",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "CATALOG_NUMBER",
+      "pvo_name": "SectionHierarchyPVO",
+      "pvo_attr": "ContentDEOCatalogNumber",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "COMPLETION_ON_OPEN",
+      "pvo_name": "SectionHierarchyPVO",
+      "pvo_attr": "ContentDEOCompletionOnOpen",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "CONTENT_ID",
+      "pvo_name": "SectionHierarchyPVO",
+      "pvo_attr": "ContentDEOContentId",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "COPYRIGHT_TEXT",
+      "pvo_name": "SectionHierarchyPVO",
+      "pvo_attr": "ContentDEOCopyrightText",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "CREATED_BY",
+      "pvo_name": "SectionHierarchyPVO",
+      "pvo_attr": "ContentDEOCreatedBy",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "CREATION_DATE",
+      "pvo_name": "SectionHierarchyPVO",
+      "pvo_attr": "ContentDEOCreationDate",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "CURRENCY",
+      "pvo_name": "SectionHierarchyPVO",
+      "pvo_attr": "ContentDEOCurrency",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "DISABLE_REVIEW",
+      "pvo_name": "SectionHierarchyPVO",
+      "pvo_attr": "ContentDEODisableReview",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "EFFECTIVE_END_DATE",
+      "pvo_name": "SectionHierarchyPVO",
+      "pvo_attr": "ContentDEOEffectiveEndDate",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "EFFECTIVE_START_DATE",
+      "pvo_name": "SectionHierarchyPVO",
+      "pvo_attr": "ContentDEOEffectiveStartDate",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "ENTERPRISE_ID",
+      "pvo_name": "SectionHierarchyPVO",
+      "pvo_attr": "ContentDEOEnterpriseId",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "EXTERNAL_IDENTIFIER",
+      "pvo_name": "SectionHierarchyPVO",
+      "pvo_attr": "ContentDEOExternalIdentifier",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "HIDE_CORRECT_ANSWERS",
+      "pvo_name": "SectionHierarchyPVO",
+      "pvo_attr": "ContentDEOHideCorrectAnswers",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "HIDE_SCORE_ADMIN",
+      "pvo_name": "SectionHierarchyPVO",
+      "pvo_attr": "ContentDEOHideScoreAdmin",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "HIDE_SCORE_LEARNER",
+      "pvo_name": "SectionHierarchyPVO",
+      "pvo_attr": "ContentDEOHideScoreLearner",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "INGESTION_NAME",
+      "pvo_name": "SectionHierarchyPVO",
+      "pvo_attr": "ContentDEOIngestionName",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "INGESTION_STATUS",
+      "pvo_name": "SectionHierarchyPVO",
+      "pvo_attr": "ContentDEOIngestionStatus",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "INGESTION_STATUS_LOG",
+      "pvo_name": "SectionHierarchyPVO",
+      "pvo_attr": "ContentDEOIngestionStatusLog",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "IS_AUTO_COMMIT",
+      "pvo_name": "SectionHierarchyPVO",
+      "pvo_attr": "ContentDEOIsAutoCommit",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "IS_COPYRIGHTED",
+      "pvo_name": "SectionHierarchyPVO",
+      "pvo_attr": "ContentDEOIsCopyrighted",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "IS_VISIBLE",
+      "pvo_name": "SectionHierarchyPVO",
+      "pvo_attr": "ContentDEOIsVisible",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "KEYWORDS",
+      "pvo_name": "SectionHierarchyPVO",
+      "pvo_attr": "ContentDEOKeywords",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "LAST_UPDATE_DATE",
+      "pvo_name": "SectionHierarchyPVO",
+      "pvo_attr": "ContentDEOLastUpdateDate",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "LAST_UPDATE_LOGIN",
+      "pvo_name": "SectionHierarchyPVO",
+      "pvo_attr": "ContentDEOLastUpdateLogin",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "LAST_UPDATE_METHOD",
+      "pvo_name": "SectionHierarchyPVO",
+      "pvo_attr": "ContentDEOLastUpdateMethod",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "LAST_UPDATED_BY",
+      "pvo_name": "SectionHierarchyPVO",
+      "pvo_attr": "ContentDEOLastUpdatedBy",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "LAUNCH_DATA",
+      "pvo_name": "SectionHierarchyPVO",
+      "pvo_attr": "ContentDEOLaunchData",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "LEARNING_ITEM_ID",
+      "pvo_name": "SectionHierarchyPVO",
+      "pvo_attr": "ContentDEOLearningItemId",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "MASTERY_SCORE",
+      "pvo_name": "SectionHierarchyPVO",
+      "pvo_attr": "ContentDEOMasteryScore",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "MAX_ATTEMPTS",
+      "pvo_name": "SectionHierarchyPVO",
+      "pvo_attr": "ContentDEOMaxAttempts",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "OBJECT_VERSION_NUMBER",
+      "pvo_name": "SectionHierarchyPVO",
+      "pvo_attr": "ContentDEOObjectVersionNumber",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "PLAYABLE_ITEMS_COUNT",
+      "pvo_name": "SectionHierarchyPVO",
+      "pvo_attr": "ContentDEOPlayableItemsCount",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "PRICE",
+      "pvo_name": "SectionHierarchyPVO",
+      "pvo_attr": "ContentDEOPrice",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "RECORDED_ATTEMPT_REVIEW",
+      "pvo_name": "SectionHierarchyPVO",
+      "pvo_attr": "ContentDEORecordedAttemptReview",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "RECORDED_ATTEMPTS",
+      "pvo_name": "SectionHierarchyPVO",
+      "pvo_attr": "ContentDEORecordedAttempts",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "RELATED_CONTENT_ID",
+      "pvo_name": "SectionHierarchyPVO",
+      "pvo_attr": "ContentDEORelatedContentId",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "STARTING_URL",
+      "pvo_name": "SectionHierarchyPVO",
+      "pvo_attr": "ContentDEOStartingUrl",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "TIME_LIMIT",
+      "pvo_name": "SectionHierarchyPVO",
+      "pvo_attr": "ContentDEOTimeLimit",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "TIME_LIMIT_ACTION",
+      "pvo_name": "SectionHierarchyPVO",
+      "pvo_attr": "ContentDEOTimeLimitAction",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "TIME_LIMIT_UOM",
+      "pvo_name": "SectionHierarchyPVO",
+      "pvo_attr": "ContentDEOTimeLimitUom",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "TRACKING_TYPE",
+      "pvo_name": "SectionHierarchyPVO",
+      "pvo_attr": "ContentDEOTrackingType",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "VERSION",
+      "pvo_name": "SectionHierarchyPVO",
+      "pvo_attr": "ContentDEOVersion",
+      "module_code": "HCM",
+      "bicc": false
+    }
+  ],
   "i18n": [
     {
       "id": 1,
@@ -2118,6 +2741,7 @@ const DATA = {
     <div id="tab-columns" class="tab-content"></div>
     <div id="tab-relationships" class="tab-content"></div>
     <div id="tab-sql" class="tab-content"></div>
+    <div id="tab-pvos" class="tab-content"></div>
 </main>
 
 <!-- ====== FOOTER ====== -->
@@ -2358,12 +2982,17 @@ function render() {
         overview: {pt:'Visão Geral', en:'Overview', es:'Visión General'},
         columns: {pt:'Colunas', en:'Columns', es:'Columnas'},
         relationships: {pt:'Relacionamentos', en:'Relationships', es:'Relaciones'},
-        sql: {pt:'SQL', en:'SQL', es:'SQL'}
+        sql: {pt:'SQL', en:'SQL', es:'SQL'},
+        pvos: {pt:'PVOs Relacionados', en:'Related PVOs', es:'PVOs Relacionados'}
     };
+    var _pvoNames = {};
+    (d.related_pvos || []).forEach(function(r) { _pvoNames[r.pvo_name] = 1; });
+    var pvosCount = Object.keys(_pvoNames).length;
     document.getElementById('tabs-nav').innerHTML =
         '<button class="tab-btn active" data-tab="overview" onclick="switchTab(\'overview\')"><i class="ri-information-line"></i> ' + t(tabLabels.overview) + '</button>' +
         '<button class="tab-btn" data-tab="columns" onclick="switchTab(\'columns\')"><i class="ri-table-line"></i> ' + t(tabLabels.columns) + ' <span class="tab-count">' + d.columns.length + '</span></button>' +
         '<button class="tab-btn" data-tab="relationships" onclick="switchTab(\'relationships\')"><i class="ri-git-branch-line"></i> ' + t(tabLabels.relationships) + ' <span class="tab-count">' + (d.relationships.parents.length + d.relationships.children.length) + '</span></button>' +
+        (pvosCount ? '<button class="tab-btn" data-tab="pvos" onclick="switchTab(\'pvos\')"><i class="ri-database-2-line"></i> ' + t(tabLabels.pvos) + ' <span class="tab-count">' + pvosCount + '</span></button>' : '') +
         '<button class="tab-btn" data-tab="sql" onclick="switchTab(\'sql\')"><i class="ri-code-s-slash-line"></i> SQL <span class="tab-count">' + d.sql.length + '</span></button>';
 
     // Tab 1: Overview
@@ -2373,6 +3002,7 @@ function render() {
         '<div class="stat-card"><div class="stat-card-icon bg-info"><i class="ri-links-line"></i></div><div class="stat-card-info"><div class="stat-card-number" style="color:var(--info)">' + d.relationships.parents.length + '</div><div class="stat-card-label">Foreign Keys</div></div></div>' +
         '<div class="stat-card"><div class="stat-card-icon bg-success"><i class="ri-shield-check-line"></i></div><div class="stat-card-info"><div class="stat-card-number" style="color:var(--success)">' + d.stats.avg_confidence + '%</div><div class="stat-card-label">' + t({pt:'Confiança Média', en:'Avg Confidence', es:'Confianza Promedio'}) + '</div></div></div>' +
         '<div class="stat-card"><div class="stat-card-icon bg-purple"><i class="ri-apps-line"></i></div><div class="stat-card-info"><div class="stat-card-number" style="color:var(--purple)">' + d.stats.categories + '</div><div class="stat-card-label">' + t({pt:'Categorias', en:'Categories', es:'Categorías'}) + '</div></div></div>' +
+        (pvosCount ? '<div class="stat-card"><div class="stat-card-icon bg-purple"><i class="ri-database-2-line"></i></div><div class="stat-card-info"><div class="stat-card-number" style="color:var(--purple)">' + pvosCount + '</div><div class="stat-card-label">PVOs</div></div></div>' : '') +
         '</div>';
 
     var overviewHtml = statsHtml +
@@ -2482,6 +3112,69 @@ function render() {
     }
     document.getElementById('tab-sql').innerHTML = sqlHtml;
 
+    // Tab 5: Related PVOs (grouped by PVO, table inside each group)
+    var pvosHtml = '';
+    if (d.related_pvos && d.related_pvos.length) {
+        // Group rows by pvo_name
+        var pvoGroups = {};
+        var pvoOrder = [];
+        d.related_pvos.forEach(function(row) {
+            var key = row.pvo_name;
+            if (!pvoGroups[key]) {
+                pvoGroups[key] = { pvo_name: row.pvo_name, module_code: row.module_code, rows: [] };
+                pvoOrder.push(key);
+            }
+            pvoGroups[key].rows.push(row);
+        });
+
+        pvosHtml += '<div class="search-container"><i class="ri-search-line search-icon"></i><input class="search-input" type="text" placeholder="' + t({pt:'Filtrar PVOs...', en:'Filter PVOs...', es:'Filtrar PVOs...'}) + '" oninput="filterPvos(this.value)"></div>';
+
+        var pvoHeaders = {
+            pt: ['#','Campo da Tabela','Campo do PVO','Disponível por BICC'],
+            en: ['#','Table Column','PVO Attribute','Available via BICC'],
+            es: ['#','Campo de Tabla','Campo del PVO','Disponible por BICC']
+        };
+        var ph = pvoHeaders[currentLang] || pvoHeaders['pt'];
+
+        pvosHtml += '<div id="pvos-groups">';
+        pvoOrder.forEach(function(key) {
+            var grp = pvoGroups[key];
+            var pvoFile = grp.pvo_name.toLowerCase() + '.html';
+            var pvoHref = (grp.module_code === m.module_code)
+                ? '../pvos/' + pvoFile
+                : '../../' + grp.module_code + '/pvos/' + pvoFile;
+            var biccCount = grp.rows.filter(function(r) { return r.bicc; }).length;
+
+            var grpSearchFields = grp.rows.map(function(r) { return r.column + ' ' + r.pvo_attr; }).join(' ');
+            pvosHtml += '<div class="card pvo-group" data-search="' + (grp.pvo_name + ' ' + grp.module_code + ' ' + grpSearchFields).toLowerCase() + '">' +
+                '<div class="card-header" style="cursor:pointer" onclick="this.parentElement.classList.toggle(\'collapsed\')">' +
+                '<div class="card-header-icon bg-purple"><i class="ri-database-2-line"></i></div>' +
+                '<div class="card-title"><a href="' + pvoHref + langParam() + '" class="wikilink" onclick="event.stopPropagation()">' + grp.pvo_name + '</a></div>' +
+                '<span class="pill pill-info">' + grp.module_code + '</span>' +
+                '<span class="card-badge pill-info" style="background:var(--info-light);color:var(--pill-info-text);border:1px solid var(--info-border)">' + grp.rows.length + ' attrs</span>' +
+                (biccCount ? '<span class="card-badge pill-success" style="background:var(--success-light);color:var(--pill-success-text);border:1px solid var(--success-border)">BICC ' + biccCount + '</span>' : '') +
+                '<i class="ri-arrow-down-s-line" style="font-size:1.2rem;color:var(--text-muted);margin-left:auto;transition:transform 0.2s"></i>' +
+                '</div>' +
+                '<div class="card-body pvo-group-body"><div class="table-wrapper"><table><thead><tr>';
+            ph.forEach(function(h, i) { pvosHtml += '<th' + (i === ph.length - 1 ? ' style="text-align:center"' : '') + '>' + h + '</th>'; });
+            pvosHtml += '</tr></thead><tbody>';
+            grp.rows.forEach(function(row, idx) {
+                var biccHtml = row.bicc
+                    ? '<span class="pill pill-success"><i class="ri-checkbox-circle-fill"></i> ' + t({pt:'Sim',en:'Yes',es:'Sí'}) + '</span>'
+                    : '<span class="pill pill-danger" style="opacity:0.5">' + t({pt:'Não',en:'No',es:'No'}) + '</span>';
+                pvosHtml += '<tr>' +
+                    '<td>' + (idx + 1) + '</td>' +
+                    '<td class="col-name">' + row.column + '</td>' +
+                    '<td class="col-name">' + row.pvo_attr + '</td>' +
+                    '<td style="text-align:center">' + biccHtml + '</td>' +
+                    '</tr>';
+            });
+            pvosHtml += '</tbody></table></div></div></div>';
+        });
+        pvosHtml += '</div>';
+    }
+    document.getElementById('tab-pvos').innerHTML = pvosHtml;
+
     // Footer
     document.getElementById('f-initials').textContent = m.author_initials || '';
     document.getElementById('f-name').textContent = m.author_name || '';
@@ -2528,6 +3221,16 @@ function filterColumns(query) {
     rows.forEach(function(row) {
         var text = row.getAttribute('data-search') || '';
         row.style.display = !q || text.indexOf(q) >= 0 ? '' : 'none';
+    });
+}
+
+/* ====== PVO FILTER ====== */
+function filterPvos(query) {
+    var q = query.toLowerCase().trim();
+    var groups = document.querySelectorAll('#pvos-groups .pvo-group');
+    groups.forEach(function(grp) {
+        var text = grp.getAttribute('data-search') || '';
+        grp.style.display = !q || text.indexOf(q) >= 0 ? '' : 'none';
     });
 }
 

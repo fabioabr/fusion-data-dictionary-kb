@@ -79,7 +79,7 @@ Esta tabela é utilizada nos seguintes processos:
 - - Nenhuma FK direta — tabela raiz de classificação de tipos de ação.
 
 ### Tabelas-filha (FK de saída)
-- [[per_action_types_tl]] — via `ACTION_TYPE_ID` (traduÃ§Ãµes do tipo de aÃ§Ã£o de RH)
+- [[per_action_types_tl]] — via `ACTION_TYPE_ID` (traduções do tipo de ação de RH)
 - [[per_actions_b]] — via `ACTION_TYPE_ID` (ações deste tipo)
 
 ---

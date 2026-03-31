@@ -77,7 +77,7 @@ Esta tabela é utilizada nos seguintes processos:
 ## 🔗 Relacionamentos
 
 ### Tabelas-pai (FK de entrada)
-- [[per_actions_b]] — via `ACTION_ID` (tabela base da aÃ§Ã£o de RH)
+- [[per_actions_b]] — via `ACTION_ID` (tabela base da ação de RH)
 
 ### Tabelas-filha (FK de saída)
 - - Nenhuma tabela-filha — tabela terminal de tradução.

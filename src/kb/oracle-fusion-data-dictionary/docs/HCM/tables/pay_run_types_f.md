@@ -76,7 +76,7 @@ Esta tabela é utilizada nos seguintes processos:
 - --- Tabela de configuracao raiz
 
 ### Tabelas-filha (FK de saída)
-- [[pay_run_types_tl]] --- via `RUN_TYPE_ID` (traduÃ§Ãµes do tipo de execuÃ§Ã£o de folha)
+- [[pay_run_types_tl]] --- via `RUN_TYPE_ID` (traduções do tipo de execução de folha)
 
 ---
 

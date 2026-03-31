@@ -77,9 +77,9 @@ Esta tabela é utilizada nos seguintes processos:
 ## 🔗 Relacionamentos
 
 ### Tabelas-pai (FK de entrada)
-- [[per_actions_b]] — via `ACTION_ID` (aÃ§Ã£o de RH realizada na ocorrÃªncia)
-- [[per_action_reasons_b]] — via `ACTION_REASON_ID` (motivo da aÃ§Ã£o de RH)
-- [[per_all_people_f]] — via `PERSON_ID` (colaborador afetado pela aÃ§Ã£o de RH)
+- [[per_actions_b]] — via `ACTION_ID` (ação de RH realizada na ocorrência)
+- [[per_action_reasons_b]] — via `ACTION_REASON_ID` (motivo da ação de RH)
+- [[per_all_people_f]] — via `PERSON_ID` (colaborador afetado pela ação de RH)
 
 ### Tabelas-filha (FK de saída)
 - - Nenhuma tabela-filha direta identificada.

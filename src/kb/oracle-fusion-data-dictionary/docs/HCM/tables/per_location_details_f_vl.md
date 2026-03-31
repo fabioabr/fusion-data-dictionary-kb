@@ -80,7 +80,7 @@ Esta view é utilizada nos seguintes processos:
 ## Relacionamentos
 
 ### Tabelas-pai (FK de entrada)
-- [[per_locations]] — via `LOCATION_ID` (localizaÃ§Ã£o da visÃ£o traduzida de detalhes)
+- [[per_locations]] — via `LOCATION_ID` (localização da visão traduzida de detalhes)
 
 ### Tabelas-filha (FK de saída)
 - Nenhuma — views não possuem FKs diretas.

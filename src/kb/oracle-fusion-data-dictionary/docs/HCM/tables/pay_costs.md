@@ -73,7 +73,7 @@ Esta tabela é utilizada nos seguintes processos:
 ## 🔗 Relacionamentos
 
 ### Tabelas-pai (FK de entrada)
-- [[pay_payroll_rel_actions]] --- via `PAYROLL_REL_ACTION_ID` (aÃ§Ã£o de folha que gerou o custo)
+- [[pay_payroll_rel_actions]] --- via `PAYROLL_REL_ACTION_ID` (ação de folha que gerou o custo)
 
 ### Tabelas-filha (FK de saída)
 - [[pay_payment_costs]] --- via `COST_ID` (custos de pagamento)

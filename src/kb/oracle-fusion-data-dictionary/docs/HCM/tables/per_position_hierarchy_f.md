@@ -85,7 +85,7 @@ Esta tabela é utilizada nos seguintes processos:
 - [[hr_all_positions_f]] — via `POSITION_ID` e `PARENT_POSITION_ID`
 
 ### Tabelas-filha (FK de saída)
-- [[per_position_hrchy_rf]] — via `POS_HIERARCHY_NODE_ID` (nÃ³s de referÃªncia da hierarquia de posiÃ§Ãµes)
+- [[per_position_hrchy_rf]] — via `POS_HIERARCHY_NODE_ID` (nós de referência da hierarquia de posições)
 
 ---
 

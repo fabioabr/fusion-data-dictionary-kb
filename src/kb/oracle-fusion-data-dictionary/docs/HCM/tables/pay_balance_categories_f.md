@@ -75,7 +75,7 @@ Esta tabela é utilizada nos seguintes processos:
 - --- Tabela de configuracao raiz de categorias de saldo
 
 ### Tabelas-filha (FK de saída)
-- [[pay_balance_categories_tl]] --- via `BALANCE_CATEGORY_ID` (traduÃ§Ãµes da categoria de saldo de folha)
+- [[pay_balance_categories_tl]] --- via `BALANCE_CATEGORY_ID` (traduções da categoria de saldo de folha)
 
 ---
 

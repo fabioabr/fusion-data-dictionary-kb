@@ -262,6 +262,11 @@ pre.sql-code { margin: 0; padding: 16px; font-family: 'Courier New', monospace; 
 .bg-orange { background: var(--orange); } .bg-teal { background: var(--teal); }
 .bg-secondary { background: var(--secondary); }
 
+/* ====== PVO GROUPS ====== */
+.pvo-group .card-header .ri-arrow-down-s-line { transition: transform 0.2s; }
+.pvo-group.collapsed .pvo-group-body { display: none; }
+.pvo-group.collapsed .ri-arrow-down-s-line { transform: rotate(-90deg); }
+
 /* ====== RESPONSIVE ====== */
 @media (max-width: 768px) {
     .stats-grid { grid-template-columns: 1fr; }
@@ -1703,6 +1708,848 @@ const DATA = {
     "PJF_PROJ_ELEMENTS_TL": "HCM",
     "PJF_WORK_TYPES_VL": "HCM"
   },
+  "related_pvos": [
+    {
+      "column": "ACTIVE_INACTIVE_FLAG",
+      "pvo_name": "DocumentTypesPVO",
+      "pvo_attr": "DocumentTypesPEOActiveInactiveFlag",
+      "module_code": "GL",
+      "bicc": true
+    },
+    {
+      "column": "ARCHIVE_CRITERIA_BASIS",
+      "pvo_name": "DocumentTypesPVO",
+      "pvo_attr": "DocumentTypesPEOArchiveCriteriaBasis",
+      "module_code": "GL",
+      "bicc": false
+    },
+    {
+      "column": "ARCHIVE_CRITERIA_DAYS",
+      "pvo_name": "DocumentTypesPVO",
+      "pvo_attr": "DocumentTypesPEOArchiveCriteriaDays",
+      "module_code": "GL",
+      "bicc": false
+    },
+    {
+      "column": "AUTHORIZATION_REQUIRED",
+      "pvo_name": "DocumentTypesPVO",
+      "pvo_attr": "DocumentTypesPEOAuthorizationRequired",
+      "module_code": "GL",
+      "bicc": true
+    },
+    {
+      "column": "BI_REPORT_PATH",
+      "pvo_name": "DocumentTypesPVO",
+      "pvo_attr": "BiReportPath",
+      "module_code": "GL",
+      "bicc": true
+    },
+    {
+      "column": "CATEGORY_CODE",
+      "pvo_name": "DocumentTypesPVO",
+      "pvo_attr": "DocumentTypesPEOCategoryCode",
+      "module_code": "GL",
+      "bicc": true
+    },
+    {
+      "column": "COMMENTS_REQUIRED",
+      "pvo_name": "DocumentTypesPVO",
+      "pvo_attr": "DocumentTypesPEOCommentsRequired",
+      "module_code": "GL",
+      "bicc": false
+    },
+    {
+      "column": "CREATED_BY",
+      "pvo_name": "DocumentTypesPVO",
+      "pvo_attr": "DocumentTypesPEOCreatedBy",
+      "module_code": "GL",
+      "bicc": true
+    },
+    {
+      "column": "CREATION_DATE",
+      "pvo_name": "DocumentTypesPVO",
+      "pvo_attr": "DocumentTypesPEOCreationDate",
+      "module_code": "GL",
+      "bicc": true
+    },
+    {
+      "column": "DATE_FROM_REQUIRED",
+      "pvo_name": "DocumentTypesPVO",
+      "pvo_attr": "DocumentTypesPEODateFromRequired",
+      "module_code": "GL",
+      "bicc": false
+    },
+    {
+      "column": "DATE_TO_REQUIRED",
+      "pvo_name": "DocumentTypesPVO",
+      "pvo_attr": "DocumentTypesPEODateToRequired",
+      "module_code": "GL",
+      "bicc": false
+    },
+    {
+      "column": "DFF_CTX_SEG_DEFAULT_VALUE",
+      "pvo_name": "DocumentTypesPVO",
+      "pvo_attr": "DocumentTypesPEODffCtxSegDefaultValue",
+      "module_code": "GL",
+      "bicc": false
+    },
+    {
+      "column": "DFF_CTX_SEG_DISPLAY_PREF",
+      "pvo_name": "DocumentTypesPVO",
+      "pvo_attr": "DocumentTypesPEODffCtxSegDisplayPref",
+      "module_code": "GL",
+      "bicc": false
+    },
+    {
+      "column": "DFF_GLB_SEG_DISPLAY_PREF",
+      "pvo_name": "DocumentTypesPVO",
+      "pvo_attr": "DocumentTypesPEODffGlbSegDisplayPref",
+      "module_code": "GL",
+      "bicc": false
+    },
+    {
+      "column": "DOCUMENT_NAME_REQUIRED",
+      "pvo_name": "DocumentTypesPVO",
+      "pvo_attr": "DocumentTypesPEODocumentNameRequired",
+      "module_code": "GL",
+      "bicc": false
+    },
+    {
+      "column": "DOCUMENT_NUMBER_REQUIRED",
+      "pvo_name": "DocumentTypesPVO",
+      "pvo_attr": "DocumentTypesPEODocumentNumberRequired",
+      "module_code": "GL",
+      "bicc": false
+    },
+    {
+      "column": "DOCUMENT_TYPE_ID",
+      "pvo_name": "DocumentTypesPVO",
+      "pvo_attr": "DocumentTypeId",
+      "module_code": "GL",
+      "bicc": true
+    },
+    {
+      "column": "DOCUMENT_TYPE_LEVEL",
+      "pvo_name": "DocumentTypesPVO",
+      "pvo_attr": "DocumentTypeLevel",
+      "module_code": "GL",
+      "bicc": true
+    },
+    {
+      "column": "DT_ATTRIBUTE1",
+      "pvo_name": "DocumentTypesPVO",
+      "pvo_attr": "DtAttribute1",
+      "module_code": "GL",
+      "bicc": false
+    },
+    {
+      "column": "DT_ATTRIBUTE10",
+      "pvo_name": "DocumentTypesPVO",
+      "pvo_attr": "DtAttribute10",
+      "module_code": "GL",
+      "bicc": false
+    },
+    {
+      "column": "DT_ATTRIBUTE2",
+      "pvo_name": "DocumentTypesPVO",
+      "pvo_attr": "DtAttribute2",
+      "module_code": "GL",
+      "bicc": false
+    },
+    {
+      "column": "DT_ATTRIBUTE3",
+      "pvo_name": "DocumentTypesPVO",
+      "pvo_attr": "DtAttribute3",
+      "module_code": "GL",
+      "bicc": false
+    },
+    {
+      "column": "DT_ATTRIBUTE4",
+      "pvo_name": "DocumentTypesPVO",
+      "pvo_attr": "DtAttribute4",
+      "module_code": "GL",
+      "bicc": false
+    },
+    {
+      "column": "DT_ATTRIBUTE5",
+      "pvo_name": "DocumentTypesPVO",
+      "pvo_attr": "DtAttribute5",
+      "module_code": "GL",
+      "bicc": false
+    },
+    {
+      "column": "DT_ATTRIBUTE6",
+      "pvo_name": "DocumentTypesPVO",
+      "pvo_attr": "DtAttribute6",
+      "module_code": "GL",
+      "bicc": false
+    },
+    {
+      "column": "DT_ATTRIBUTE7",
+      "pvo_name": "DocumentTypesPVO",
+      "pvo_attr": "DtAttribute7",
+      "module_code": "GL",
+      "bicc": false
+    },
+    {
+      "column": "DT_ATTRIBUTE8",
+      "pvo_name": "DocumentTypesPVO",
+      "pvo_attr": "DtAttribute8",
+      "module_code": "GL",
+      "bicc": false
+    },
+    {
+      "column": "DT_ATTRIBUTE9",
+      "pvo_name": "DocumentTypesPVO",
+      "pvo_attr": "DtAttribute9",
+      "module_code": "GL",
+      "bicc": false
+    },
+    {
+      "column": "DT_ATTRIBUTE_CATEGORY",
+      "pvo_name": "DocumentTypesPVO",
+      "pvo_attr": "DtAttributeCategory",
+      "module_code": "GL",
+      "bicc": false
+    },
+    {
+      "column": "DT_ATTRIBUTE_DATE1",
+      "pvo_name": "DocumentTypesPVO",
+      "pvo_attr": "DtAttributeDate1",
+      "module_code": "GL",
+      "bicc": false
+    },
+    {
+      "column": "DT_ATTRIBUTE_DATE10",
+      "pvo_name": "DocumentTypesPVO",
+      "pvo_attr": "DtAttributeDate10",
+      "module_code": "GL",
+      "bicc": false
+    },
+    {
+      "column": "DT_ATTRIBUTE_DATE2",
+      "pvo_name": "DocumentTypesPVO",
+      "pvo_attr": "DtAttributeDate2",
+      "module_code": "GL",
+      "bicc": false
+    },
+    {
+      "column": "DT_ATTRIBUTE_DATE3",
+      "pvo_name": "DocumentTypesPVO",
+      "pvo_attr": "DtAttributeDate3",
+      "module_code": "GL",
+      "bicc": false
+    },
+    {
+      "column": "DT_ATTRIBUTE_DATE4",
+      "pvo_name": "DocumentTypesPVO",
+      "pvo_attr": "DtAttributeDate4",
+      "module_code": "GL",
+      "bicc": false
+    },
+    {
+      "column": "DT_ATTRIBUTE_DATE5",
+      "pvo_name": "DocumentTypesPVO",
+      "pvo_attr": "DtAttributeDate5",
+      "module_code": "GL",
+      "bicc": false
+    },
+    {
+      "column": "DT_ATTRIBUTE_DATE6",
+      "pvo_name": "DocumentTypesPVO",
+      "pvo_attr": "DtAttributeDate6",
+      "module_code": "GL",
+      "bicc": false
+    },
+    {
+      "column": "DT_ATTRIBUTE_DATE7",
+      "pvo_name": "DocumentTypesPVO",
+      "pvo_attr": "DtAttributeDate7",
+      "module_code": "GL",
+      "bicc": false
+    },
+    {
+      "column": "DT_ATTRIBUTE_DATE8",
+      "pvo_name": "DocumentTypesPVO",
+      "pvo_attr": "DtAttributeDate8",
+      "module_code": "GL",
+      "bicc": false
+    },
+    {
+      "column": "DT_ATTRIBUTE_DATE9",
+      "pvo_name": "DocumentTypesPVO",
+      "pvo_attr": "DtAttributeDate9",
+      "module_code": "GL",
+      "bicc": false
+    },
+    {
+      "column": "DT_ATTRIBUTE_NUMBER1",
+      "pvo_name": "DocumentTypesPVO",
+      "pvo_attr": "DtAttributeNumber1",
+      "module_code": "GL",
+      "bicc": false
+    },
+    {
+      "column": "DT_ATTRIBUTE_NUMBER10",
+      "pvo_name": "DocumentTypesPVO",
+      "pvo_attr": "DtAttributeNumber10",
+      "module_code": "GL",
+      "bicc": false
+    },
+    {
+      "column": "DT_ATTRIBUTE_NUMBER2",
+      "pvo_name": "DocumentTypesPVO",
+      "pvo_attr": "DtAttributeNumber2",
+      "module_code": "GL",
+      "bicc": false
+    },
+    {
+      "column": "DT_ATTRIBUTE_NUMBER3",
+      "pvo_name": "DocumentTypesPVO",
+      "pvo_attr": "DtAttributeNumber3",
+      "module_code": "GL",
+      "bicc": false
+    },
+    {
+      "column": "DT_ATTRIBUTE_NUMBER4",
+      "pvo_name": "DocumentTypesPVO",
+      "pvo_attr": "DtAttributeNumber4",
+      "module_code": "GL",
+      "bicc": false
+    },
+    {
+      "column": "DT_ATTRIBUTE_NUMBER5",
+      "pvo_name": "DocumentTypesPVO",
+      "pvo_attr": "DtAttributeNumber5",
+      "module_code": "GL",
+      "bicc": false
+    },
+    {
+      "column": "DT_ATTRIBUTE_NUMBER6",
+      "pvo_name": "DocumentTypesPVO",
+      "pvo_attr": "DtAttributeNumber6",
+      "module_code": "GL",
+      "bicc": false
+    },
+    {
+      "column": "DT_ATTRIBUTE_NUMBER7",
+      "pvo_name": "DocumentTypesPVO",
+      "pvo_attr": "DtAttributeNumber7",
+      "module_code": "GL",
+      "bicc": false
+    },
+    {
+      "column": "DT_ATTRIBUTE_NUMBER8",
+      "pvo_name": "DocumentTypesPVO",
+      "pvo_attr": "DtAttributeNumber8",
+      "module_code": "GL",
+      "bicc": false
+    },
+    {
+      "column": "DT_ATTRIBUTE_NUMBER9",
+      "pvo_name": "DocumentTypesPVO",
+      "pvo_attr": "DtAttributeNumber9",
+      "module_code": "GL",
+      "bicc": false
+    },
+    {
+      "column": "DT_ATTRIBUTE_TIMESTAMP1",
+      "pvo_name": "DocumentTypesPVO",
+      "pvo_attr": "DtAttributeTimestamp1",
+      "module_code": "GL",
+      "bicc": false
+    },
+    {
+      "column": "DT_ATTRIBUTE_TIMESTAMP2",
+      "pvo_name": "DocumentTypesPVO",
+      "pvo_attr": "DtAttributeTimestamp2",
+      "module_code": "GL",
+      "bicc": false
+    },
+    {
+      "column": "DT_ATTRIBUTE_TIMESTAMP3",
+      "pvo_name": "DocumentTypesPVO",
+      "pvo_attr": "DtAttributeTimestamp3",
+      "module_code": "GL",
+      "bicc": false
+    },
+    {
+      "column": "DT_ATTRIBUTE_TIMESTAMP4",
+      "pvo_name": "DocumentTypesPVO",
+      "pvo_attr": "DtAttributeTimestamp4",
+      "module_code": "GL",
+      "bicc": false
+    },
+    {
+      "column": "DT_ATTRIBUTE_TIMESTAMP5",
+      "pvo_name": "DocumentTypesPVO",
+      "pvo_attr": "DtAttributeTimestamp5",
+      "module_code": "GL",
+      "bicc": false
+    },
+    {
+      "column": "DT_INFORMATION1",
+      "pvo_name": "DocumentTypesPVO",
+      "pvo_attr": "DtInformation1",
+      "module_code": "GL",
+      "bicc": false
+    },
+    {
+      "column": "DT_INFORMATION10",
+      "pvo_name": "DocumentTypesPVO",
+      "pvo_attr": "DtInformation10",
+      "module_code": "GL",
+      "bicc": false
+    },
+    {
+      "column": "DT_INFORMATION2",
+      "pvo_name": "DocumentTypesPVO",
+      "pvo_attr": "DtInformation2",
+      "module_code": "GL",
+      "bicc": false
+    },
+    {
+      "column": "DT_INFORMATION3",
+      "pvo_name": "DocumentTypesPVO",
+      "pvo_attr": "DtInformation3",
+      "module_code": "GL",
+      "bicc": false
+    },
+    {
+      "column": "DT_INFORMATION4",
+      "pvo_name": "DocumentTypesPVO",
+      "pvo_attr": "DtInformation4",
+      "module_code": "GL",
+      "bicc": false
+    },
+    {
+      "column": "DT_INFORMATION5",
+      "pvo_name": "DocumentTypesPVO",
+      "pvo_attr": "DtInformation5",
+      "module_code": "GL",
+      "bicc": false
+    },
+    {
+      "column": "DT_INFORMATION6",
+      "pvo_name": "DocumentTypesPVO",
+      "pvo_attr": "DtInformation6",
+      "module_code": "GL",
+      "bicc": false
+    },
+    {
+      "column": "DT_INFORMATION7",
+      "pvo_name": "DocumentTypesPVO",
+      "pvo_attr": "DtInformation7",
+      "module_code": "GL",
+      "bicc": false
+    },
+    {
+      "column": "DT_INFORMATION8",
+      "pvo_name": "DocumentTypesPVO",
+      "pvo_attr": "DtInformation8",
+      "module_code": "GL",
+      "bicc": false
+    },
+    {
+      "column": "DT_INFORMATION9",
+      "pvo_name": "DocumentTypesPVO",
+      "pvo_attr": "DtInformation9",
+      "module_code": "GL",
+      "bicc": false
+    },
+    {
+      "column": "DT_INFORMATION_CATEGORY",
+      "pvo_name": "DocumentTypesPVO",
+      "pvo_attr": "DtInformationCategory",
+      "module_code": "GL",
+      "bicc": false
+    },
+    {
+      "column": "DT_INFORMATION_DATE1",
+      "pvo_name": "DocumentTypesPVO",
+      "pvo_attr": "DtInformationDate1",
+      "module_code": "GL",
+      "bicc": false
+    },
+    {
+      "column": "DT_INFORMATION_DATE10",
+      "pvo_name": "DocumentTypesPVO",
+      "pvo_attr": "DtInformationDate10",
+      "module_code": "GL",
+      "bicc": false
+    },
+    {
+      "column": "DT_INFORMATION_DATE2",
+      "pvo_name": "DocumentTypesPVO",
+      "pvo_attr": "DtInformationDate2",
+      "module_code": "GL",
+      "bicc": false
+    },
+    {
+      "column": "DT_INFORMATION_DATE3",
+      "pvo_name": "DocumentTypesPVO",
+      "pvo_attr": "DtInformationDate3",
+      "module_code": "GL",
+      "bicc": false
+    },
+    {
+      "column": "DT_INFORMATION_DATE4",
+      "pvo_name": "DocumentTypesPVO",
+      "pvo_attr": "DtInformationDate4",
+      "module_code": "GL",
+      "bicc": false
+    },
+    {
+      "column": "DT_INFORMATION_DATE5",
+      "pvo_name": "DocumentTypesPVO",
+      "pvo_attr": "DtInformationDate5",
+      "module_code": "GL",
+      "bicc": false
+    },
+    {
+      "column": "DT_INFORMATION_DATE6",
+      "pvo_name": "DocumentTypesPVO",
+      "pvo_attr": "DtInformationDate6",
+      "module_code": "GL",
+      "bicc": false
+    },
+    {
+      "column": "DT_INFORMATION_DATE7",
+      "pvo_name": "DocumentTypesPVO",
+      "pvo_attr": "DtInformationDate7",
+      "module_code": "GL",
+      "bicc": false
+    },
+    {
+      "column": "DT_INFORMATION_DATE8",
+      "pvo_name": "DocumentTypesPVO",
+      "pvo_attr": "DtInformationDate8",
+      "module_code": "GL",
+      "bicc": false
+    },
+    {
+      "column": "DT_INFORMATION_DATE9",
+      "pvo_name": "DocumentTypesPVO",
+      "pvo_attr": "DtInformationDate9",
+      "module_code": "GL",
+      "bicc": false
+    },
+    {
+      "column": "DT_INFORMATION_NUMBER1",
+      "pvo_name": "DocumentTypesPVO",
+      "pvo_attr": "DtInformationNumber1",
+      "module_code": "GL",
+      "bicc": false
+    },
+    {
+      "column": "DT_INFORMATION_NUMBER10",
+      "pvo_name": "DocumentTypesPVO",
+      "pvo_attr": "DtInformationNumber10",
+      "module_code": "GL",
+      "bicc": false
+    },
+    {
+      "column": "DT_INFORMATION_NUMBER2",
+      "pvo_name": "DocumentTypesPVO",
+      "pvo_attr": "DtInformationNumber2",
+      "module_code": "GL",
+      "bicc": false
+    },
+    {
+      "column": "DT_INFORMATION_NUMBER3",
+      "pvo_name": "DocumentTypesPVO",
+      "pvo_attr": "DtInformationNumber3",
+      "module_code": "GL",
+      "bicc": false
+    },
+    {
+      "column": "DT_INFORMATION_NUMBER4",
+      "pvo_name": "DocumentTypesPVO",
+      "pvo_attr": "DtInformationNumber4",
+      "module_code": "GL",
+      "bicc": false
+    },
+    {
+      "column": "DT_INFORMATION_NUMBER5",
+      "pvo_name": "DocumentTypesPVO",
+      "pvo_attr": "DtInformationNumber5",
+      "module_code": "GL",
+      "bicc": false
+    },
+    {
+      "column": "DT_INFORMATION_NUMBER6",
+      "pvo_name": "DocumentTypesPVO",
+      "pvo_attr": "DtInformationNumber6",
+      "module_code": "GL",
+      "bicc": false
+    },
+    {
+      "column": "DT_INFORMATION_NUMBER7",
+      "pvo_name": "DocumentTypesPVO",
+      "pvo_attr": "DtInformationNumber7",
+      "module_code": "GL",
+      "bicc": false
+    },
+    {
+      "column": "DT_INFORMATION_NUMBER8",
+      "pvo_name": "DocumentTypesPVO",
+      "pvo_attr": "DtInformationNumber8",
+      "module_code": "GL",
+      "bicc": false
+    },
+    {
+      "column": "DT_INFORMATION_NUMBER9",
+      "pvo_name": "DocumentTypesPVO",
+      "pvo_attr": "DtInformationNumber9",
+      "module_code": "GL",
+      "bicc": false
+    },
+    {
+      "column": "DT_INFORMATION_TIMESTAMP1",
+      "pvo_name": "DocumentTypesPVO",
+      "pvo_attr": "DtInformationTimestamp1",
+      "module_code": "GL",
+      "bicc": false
+    },
+    {
+      "column": "DT_INFORMATION_TIMESTAMP2",
+      "pvo_name": "DocumentTypesPVO",
+      "pvo_attr": "DtInformationTimestamp2",
+      "module_code": "GL",
+      "bicc": false
+    },
+    {
+      "column": "DT_INFORMATION_TIMESTAMP3",
+      "pvo_name": "DocumentTypesPVO",
+      "pvo_attr": "DtInformationTimestamp3",
+      "module_code": "GL",
+      "bicc": false
+    },
+    {
+      "column": "DT_INFORMATION_TIMESTAMP4",
+      "pvo_name": "DocumentTypesPVO",
+      "pvo_attr": "DtInformationTimestamp4",
+      "module_code": "GL",
+      "bicc": false
+    },
+    {
+      "column": "DT_INFORMATION_TIMESTAMP5",
+      "pvo_name": "DocumentTypesPVO",
+      "pvo_attr": "DtInformationTimestamp5",
+      "module_code": "GL",
+      "bicc": false
+    },
+    {
+      "column": "ENTERPRISE_ID",
+      "pvo_name": "DocumentTypesPVO",
+      "pvo_attr": "DocumentTypesPEOEnterpriseId",
+      "module_code": "GL",
+      "bicc": false
+    },
+    {
+      "column": "HIERARCHY_CODE",
+      "pvo_name": "DocumentTypesPVO",
+      "pvo_attr": "DocumentTypesPEOHierarchyCode",
+      "module_code": "GL",
+      "bicc": true
+    },
+    {
+      "column": "ISSUED_DATE_REQUIRED",
+      "pvo_name": "DocumentTypesPVO",
+      "pvo_attr": "DocumentTypesPEOIssuedDateRequired",
+      "module_code": "GL",
+      "bicc": false
+    },
+    {
+      "column": "ISSUING_AUTHORITY_REQUIRED",
+      "pvo_name": "DocumentTypesPVO",
+      "pvo_attr": "DocumentTypesPEOIssuingAuthorityRequired",
+      "module_code": "GL",
+      "bicc": false
+    },
+    {
+      "column": "ISSUING_COUNTRY_REQUIRED",
+      "pvo_name": "DocumentTypesPVO",
+      "pvo_attr": "DocumentTypesPEOIssuingCountryRequired",
+      "module_code": "GL",
+      "bicc": false
+    },
+    {
+      "column": "ISSUING_LOCATION_REQUIRED",
+      "pvo_name": "DocumentTypesPVO",
+      "pvo_attr": "DocumentTypesPEOIssuingLocationRequired",
+      "module_code": "GL",
+      "bicc": false
+    },
+    {
+      "column": "LAST_UPDATE_DATE",
+      "pvo_name": "DocumentTypesPVO",
+      "pvo_attr": "DocumentTypesPEOLastUpdateDate",
+      "module_code": "GL",
+      "bicc": true
+    },
+    {
+      "column": "LAST_UPDATE_LOGIN",
+      "pvo_name": "DocumentTypesPVO",
+      "pvo_attr": "DocumentTypesPEOLastUpdateLogin",
+      "module_code": "GL",
+      "bicc": false
+    },
+    {
+      "column": "LAST_UPDATED_BY",
+      "pvo_name": "DocumentTypesPVO",
+      "pvo_attr": "DocumentTypesPEOLastUpdatedBy",
+      "module_code": "GL",
+      "bicc": true
+    },
+    {
+      "column": "LEGISLATION_CODE",
+      "pvo_name": "DocumentTypesPVO",
+      "pvo_attr": "DocumentTypesPEOLegislationCode",
+      "module_code": "GL",
+      "bicc": true
+    },
+    {
+      "column": "LOCK_CREATE",
+      "pvo_name": "DocumentTypesPVO",
+      "pvo_attr": "LockCreate",
+      "module_code": "GL",
+      "bicc": true
+    },
+    {
+      "column": "LOCK_CREATE_ROLE_LIST",
+      "pvo_name": "DocumentTypesPVO",
+      "pvo_attr": "DocumentTypesPEOLockCreateRoleList",
+      "module_code": "GL",
+      "bicc": false
+    },
+    {
+      "column": "LOCK_DELETE",
+      "pvo_name": "DocumentTypesPVO",
+      "pvo_attr": "LockDelete",
+      "module_code": "GL",
+      "bicc": true
+    },
+    {
+      "column": "LOCK_DELETE_ROLE_LIST",
+      "pvo_name": "DocumentTypesPVO",
+      "pvo_attr": "DocumentTypesPEOLockDeleteRoleList",
+      "module_code": "GL",
+      "bicc": false
+    },
+    {
+      "column": "LOCK_UPDATE",
+      "pvo_name": "DocumentTypesPVO",
+      "pvo_attr": "LockUpdate",
+      "module_code": "GL",
+      "bicc": true
+    },
+    {
+      "column": "LOCK_UPDATE_ROLE_LIST",
+      "pvo_name": "DocumentTypesPVO",
+      "pvo_attr": "DocumentTypesPEOLockUpdateRoleList",
+      "module_code": "GL",
+      "bicc": false
+    },
+    {
+      "column": "MIN_ATTACHMENTS_COUNT",
+      "pvo_name": "DocumentTypesPVO",
+      "pvo_attr": "MinAttachmentsCount",
+      "module_code": "GL",
+      "bicc": true
+    },
+    {
+      "column": "MODULE_ID",
+      "pvo_name": "DocumentTypesPVO",
+      "pvo_attr": "DocumentTypesPEOModuleId",
+      "module_code": "GL",
+      "bicc": false
+    },
+    {
+      "column": "MULTIPLE_OCCURENCES_FLAG",
+      "pvo_name": "DocumentTypesPVO",
+      "pvo_attr": "DocumentTypesPEOMultipleOccurencesFlag",
+      "module_code": "GL",
+      "bicc": true
+    },
+    {
+      "column": "OBJECT_VERSION_NUMBER",
+      "pvo_name": "DocumentTypesPVO",
+      "pvo_attr": "DocumentTypesPEOObjectVersionNumber",
+      "module_code": "GL",
+      "bicc": false
+    },
+    {
+      "column": "PUBLISH_REQUIRED",
+      "pvo_name": "DocumentTypesPVO",
+      "pvo_attr": "DocumentTypesPEOPublishRequired",
+      "module_code": "GL",
+      "bicc": true
+    },
+    {
+      "column": "PURGE_ARCHIVE_CRITERIA_DAYS",
+      "pvo_name": "DocumentTypesPVO",
+      "pvo_attr": "DocumentTypesPEOPurgeArchiveCriteriaDays",
+      "module_code": "GL",
+      "bicc": false
+    },
+    {
+      "column": "RESTRICT_CREATE_ATTACH",
+      "pvo_name": "DocumentTypesPVO",
+      "pvo_attr": "RestrictCreateAttach",
+      "module_code": "GL",
+      "bicc": true
+    },
+    {
+      "column": "RESTRICT_DELETE_ATTACH",
+      "pvo_name": "DocumentTypesPVO",
+      "pvo_attr": "RestrictDeleteAttach",
+      "module_code": "GL",
+      "bicc": true
+    },
+    {
+      "column": "RESTRICT_UPDATE_ATTACH",
+      "pvo_name": "DocumentTypesPVO",
+      "pvo_attr": "RestrictUpdateAttach",
+      "module_code": "GL",
+      "bicc": true
+    },
+    {
+      "column": "SEED_DATA_SOURCE",
+      "pvo_name": "DocumentTypesPVO",
+      "pvo_attr": "SeedDataSource",
+      "module_code": "GL",
+      "bicc": false
+    },
+    {
+      "column": "SUB_CATEGORY_CODE",
+      "pvo_name": "DocumentTypesPVO",
+      "pvo_attr": "DocumentTypesPEOSubCategoryCode",
+      "module_code": "GL",
+      "bicc": false
+    },
+    {
+      "column": "SYSTEM_DOCUMENT_TYPE",
+      "pvo_name": "DocumentTypesPVO",
+      "pvo_attr": "DocumentTypesPEOSystemDocumentType",
+      "module_code": "GL",
+      "bicc": true
+    },
+    {
+      "column": "TAG_LIST",
+      "pvo_name": "DocumentTypesPVO",
+      "pvo_attr": "DocumentTypesPEOTagList",
+      "module_code": "GL",
+      "bicc": false
+    },
+    {
+      "column": "WARNING_PERIOD",
+      "pvo_name": "DocumentTypesPVO",
+      "pvo_attr": "DocumentTypesPEOWarningPeriod",
+      "module_code": "GL",
+      "bicc": true
+    }
+  ],
   "i18n": [
     {
       "id": 1,
@@ -2020,6 +2867,7 @@ const DATA = {
     <div id="tab-columns" class="tab-content"></div>
     <div id="tab-relationships" class="tab-content"></div>
     <div id="tab-sql" class="tab-content"></div>
+    <div id="tab-pvos" class="tab-content"></div>
 </main>
 
 <!-- ====== FOOTER ====== -->
@@ -2260,12 +3108,17 @@ function render() {
         overview: {pt:'Visão Geral', en:'Overview', es:'Visión General'},
         columns: {pt:'Colunas', en:'Columns', es:'Columnas'},
         relationships: {pt:'Relacionamentos', en:'Relationships', es:'Relaciones'},
-        sql: {pt:'SQL', en:'SQL', es:'SQL'}
+        sql: {pt:'SQL', en:'SQL', es:'SQL'},
+        pvos: {pt:'PVOs Relacionados', en:'Related PVOs', es:'PVOs Relacionados'}
     };
+    var _pvoNames = {};
+    (d.related_pvos || []).forEach(function(r) { _pvoNames[r.pvo_name] = 1; });
+    var pvosCount = Object.keys(_pvoNames).length;
     document.getElementById('tabs-nav').innerHTML =
         '<button class="tab-btn active" data-tab="overview" onclick="switchTab(\'overview\')"><i class="ri-information-line"></i> ' + t(tabLabels.overview) + '</button>' +
         '<button class="tab-btn" data-tab="columns" onclick="switchTab(\'columns\')"><i class="ri-table-line"></i> ' + t(tabLabels.columns) + ' <span class="tab-count">' + d.columns.length + '</span></button>' +
         '<button class="tab-btn" data-tab="relationships" onclick="switchTab(\'relationships\')"><i class="ri-git-branch-line"></i> ' + t(tabLabels.relationships) + ' <span class="tab-count">' + (d.relationships.parents.length + d.relationships.children.length) + '</span></button>' +
+        (pvosCount ? '<button class="tab-btn" data-tab="pvos" onclick="switchTab(\'pvos\')"><i class="ri-database-2-line"></i> ' + t(tabLabels.pvos) + ' <span class="tab-count">' + pvosCount + '</span></button>' : '') +
         '<button class="tab-btn" data-tab="sql" onclick="switchTab(\'sql\')"><i class="ri-code-s-slash-line"></i> SQL <span class="tab-count">' + d.sql.length + '</span></button>';
 
     // Tab 1: Overview
@@ -2275,6 +3128,7 @@ function render() {
         '<div class="stat-card"><div class="stat-card-icon bg-info"><i class="ri-links-line"></i></div><div class="stat-card-info"><div class="stat-card-number" style="color:var(--info)">' + d.relationships.parents.length + '</div><div class="stat-card-label">Foreign Keys</div></div></div>' +
         '<div class="stat-card"><div class="stat-card-icon bg-success"><i class="ri-shield-check-line"></i></div><div class="stat-card-info"><div class="stat-card-number" style="color:var(--success)">' + d.stats.avg_confidence + '%</div><div class="stat-card-label">' + t({pt:'Confiança Média', en:'Avg Confidence', es:'Confianza Promedio'}) + '</div></div></div>' +
         '<div class="stat-card"><div class="stat-card-icon bg-purple"><i class="ri-apps-line"></i></div><div class="stat-card-info"><div class="stat-card-number" style="color:var(--purple)">' + d.stats.categories + '</div><div class="stat-card-label">' + t({pt:'Categorias', en:'Categories', es:'Categorías'}) + '</div></div></div>' +
+        (pvosCount ? '<div class="stat-card"><div class="stat-card-icon bg-purple"><i class="ri-database-2-line"></i></div><div class="stat-card-info"><div class="stat-card-number" style="color:var(--purple)">' + pvosCount + '</div><div class="stat-card-label">PVOs</div></div></div>' : '') +
         '</div>';
 
     var overviewHtml = statsHtml +
@@ -2384,6 +3238,69 @@ function render() {
     }
     document.getElementById('tab-sql').innerHTML = sqlHtml;
 
+    // Tab 5: Related PVOs (grouped by PVO, table inside each group)
+    var pvosHtml = '';
+    if (d.related_pvos && d.related_pvos.length) {
+        // Group rows by pvo_name
+        var pvoGroups = {};
+        var pvoOrder = [];
+        d.related_pvos.forEach(function(row) {
+            var key = row.pvo_name;
+            if (!pvoGroups[key]) {
+                pvoGroups[key] = { pvo_name: row.pvo_name, module_code: row.module_code, rows: [] };
+                pvoOrder.push(key);
+            }
+            pvoGroups[key].rows.push(row);
+        });
+
+        pvosHtml += '<div class="search-container"><i class="ri-search-line search-icon"></i><input class="search-input" type="text" placeholder="' + t({pt:'Filtrar PVOs...', en:'Filter PVOs...', es:'Filtrar PVOs...'}) + '" oninput="filterPvos(this.value)"></div>';
+
+        var pvoHeaders = {
+            pt: ['#','Campo da Tabela','Campo do PVO','Disponível por BICC'],
+            en: ['#','Table Column','PVO Attribute','Available via BICC'],
+            es: ['#','Campo de Tabla','Campo del PVO','Disponible por BICC']
+        };
+        var ph = pvoHeaders[currentLang] || pvoHeaders['pt'];
+
+        pvosHtml += '<div id="pvos-groups">';
+        pvoOrder.forEach(function(key) {
+            var grp = pvoGroups[key];
+            var pvoFile = grp.pvo_name.toLowerCase() + '.html';
+            var pvoHref = (grp.module_code === m.module_code)
+                ? '../pvos/' + pvoFile
+                : '../../' + grp.module_code + '/pvos/' + pvoFile;
+            var biccCount = grp.rows.filter(function(r) { return r.bicc; }).length;
+
+            var grpSearchFields = grp.rows.map(function(r) { return r.column + ' ' + r.pvo_attr; }).join(' ');
+            pvosHtml += '<div class="card pvo-group" data-search="' + (grp.pvo_name + ' ' + grp.module_code + ' ' + grpSearchFields).toLowerCase() + '">' +
+                '<div class="card-header" style="cursor:pointer" onclick="this.parentElement.classList.toggle(\'collapsed\')">' +
+                '<div class="card-header-icon bg-purple"><i class="ri-database-2-line"></i></div>' +
+                '<div class="card-title"><a href="' + pvoHref + langParam() + '" class="wikilink" onclick="event.stopPropagation()">' + grp.pvo_name + '</a></div>' +
+                '<span class="pill pill-info">' + grp.module_code + '</span>' +
+                '<span class="card-badge pill-info" style="background:var(--info-light);color:var(--pill-info-text);border:1px solid var(--info-border)">' + grp.rows.length + ' attrs</span>' +
+                (biccCount ? '<span class="card-badge pill-success" style="background:var(--success-light);color:var(--pill-success-text);border:1px solid var(--success-border)">BICC ' + biccCount + '</span>' : '') +
+                '<i class="ri-arrow-down-s-line" style="font-size:1.2rem;color:var(--text-muted);margin-left:auto;transition:transform 0.2s"></i>' +
+                '</div>' +
+                '<div class="card-body pvo-group-body"><div class="table-wrapper"><table><thead><tr>';
+            ph.forEach(function(h, i) { pvosHtml += '<th' + (i === ph.length - 1 ? ' style="text-align:center"' : '') + '>' + h + '</th>'; });
+            pvosHtml += '</tr></thead><tbody>';
+            grp.rows.forEach(function(row, idx) {
+                var biccHtml = row.bicc
+                    ? '<span class="pill pill-success"><i class="ri-checkbox-circle-fill"></i> ' + t({pt:'Sim',en:'Yes',es:'Sí'}) + '</span>'
+                    : '<span class="pill pill-danger" style="opacity:0.5">' + t({pt:'Não',en:'No',es:'No'}) + '</span>';
+                pvosHtml += '<tr>' +
+                    '<td>' + (idx + 1) + '</td>' +
+                    '<td class="col-name">' + row.column + '</td>' +
+                    '<td class="col-name">' + row.pvo_attr + '</td>' +
+                    '<td style="text-align:center">' + biccHtml + '</td>' +
+                    '</tr>';
+            });
+            pvosHtml += '</tbody></table></div></div></div>';
+        });
+        pvosHtml += '</div>';
+    }
+    document.getElementById('tab-pvos').innerHTML = pvosHtml;
+
     // Footer
     document.getElementById('f-initials').textContent = m.author_initials || '';
     document.getElementById('f-name').textContent = m.author_name || '';
@@ -2430,6 +3347,16 @@ function filterColumns(query) {
     rows.forEach(function(row) {
         var text = row.getAttribute('data-search') || '';
         row.style.display = !q || text.indexOf(q) >= 0 ? '' : 'none';
+    });
+}
+
+/* ====== PVO FILTER ====== */
+function filterPvos(query) {
+    var q = query.toLowerCase().trim();
+    var groups = document.querySelectorAll('#pvos-groups .pvo-group');
+    groups.forEach(function(grp) {
+        var text = grp.getAttribute('data-search') || '';
+        grp.style.display = !q || text.indexOf(q) >= 0 ? '' : 'none';
     });
 }
 

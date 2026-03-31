@@ -526,6 +526,14 @@ def load_table_map(mappings_path: str) -> dict:
     return table_map
 
 
+def load_pvo_map(path: str) -> dict:
+    """Carrega table_to_pvos_map.json e retorna {TABLE_NAME: [pvo_info, ...]}."""
+    if not path or not os.path.exists(path):
+        return {}
+    with open(path, 'r', encoding='utf-8') as f:
+        return json.load(f)
+
+
 # ============================================================
 # BUILD
 # ============================================================
@@ -793,10 +801,14 @@ def load_i18n_items(md_path: str) -> list:
     return data.get('items', [])
 
 
-def build_html(md_path: str, template_path: str, output_path: str, table_map: dict, variaveis: dict = None, mode: str = 'standalone', logo_dark: str = '', logo_light: str = ''):
+def build_html(md_path: str, template_path: str, output_path: str, table_map: dict, variaveis: dict = None, mode: str = 'standalone', logo_dark: str = '', logo_light: str = '', pvo_map: dict = None):
     """Gera o HTML final."""
     data = build_data(md_path, table_map, variaveis)
     fix_table_name(data, md_path)
+
+    # Inject related PVOs from reverse index
+    table_upper = Path(md_path).stem.upper()
+    data['related_pvos'] = (pvo_map or {}).get(table_upper, [])
 
     # Load i18n items and inject into DATA for JS-side lookup
     i18n_items = load_i18n_items(md_path)
@@ -841,6 +853,7 @@ def main():
     parser.add_argument('--template', default='', help='Path to template HTML')
     parser.add_argument('--logo-dark', default='../../../../assets/logos/logo-dark.png', help='Logo dark path (relative to HTML)')
     parser.add_argument('--logo-light', default='../../../../assets/logos/logo-light.png', help='Logo light path (relative to HTML)')
+    parser.add_argument('--pvo-map', default='', help='Path to table_to_pvos_map.json (reverse index)')
     args = parser.parse_args()
 
     # Find project root (look for CLAUDE.md)
@@ -868,6 +881,11 @@ def main():
 
     table_map = load_table_map(table_map_path) if table_map_path else {}
     print(f'Table map: {len(table_map)} tables loaded')
+
+    # PVO reverse index
+    pvo_map_path = args.pvo_map or str(project_root / 'scripts' / 'config' / 'table_to_pvos_map.json')
+    pvo_map = load_pvo_map(pvo_map_path)
+    print(f'PVO map: {len(pvo_map)} tables with related PVOs')
 
     # Variaveis
     variaveis_path = project_root / 'docs' / 'assets' / 'variaveis.md'
@@ -912,6 +930,7 @@ def main():
                 mode=args.mode,
                 logo_dark=args.logo_dark,
                 logo_light=args.logo_light,
+                pvo_map=pvo_map,
             )
             print(f'  OK {md_file.name} -> {result}')
         except Exception as e:

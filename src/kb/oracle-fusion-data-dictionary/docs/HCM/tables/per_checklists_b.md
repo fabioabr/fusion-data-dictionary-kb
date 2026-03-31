@@ -81,7 +81,7 @@ Esta tabela é utilizada nos seguintes processos:
 - - Nenhuma FK direta — tabela raiz de templates de checklist.
 
 ### Tabelas-filha (FK de saída)
-- [[per_checklists_tl]] — via `CHECKLIST_ID` (traduÃ§Ãµes do template de checklist)
+- [[per_checklists_tl]] — via `CHECKLIST_ID` (traduções do template de checklist)
 - [[per_checklist_contacts]] — via `CHECKLIST_ID` (contatos do template)
 - [[per_checklist_contents]] — via `CHECKLIST_ID` (conteúdos do template)
 - [[per_allocated_checklists]] — via `CHECKLIST_ID` (instâncias alocadas)

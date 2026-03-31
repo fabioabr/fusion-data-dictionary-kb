@@ -79,7 +79,7 @@ Esta tabela é utilizada nos seguintes processos:
 ## Relacionamentos
 
 ### Tabelas-pai (FK de entrada)
-- [[per_persons]] — via `PERSON_ID` (pessoa do mÃ©todo de entrega de documentos)
+- [[per_persons]] — via `PERSON_ID` (pessoa do método de entrega de documentos)
 
 ### Tabelas-filha (FK de saída)
 - Nenhuma relação direta identificada.

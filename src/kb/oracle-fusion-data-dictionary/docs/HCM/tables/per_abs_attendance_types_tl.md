@@ -77,7 +77,7 @@ Esta tabela é utilizada nos seguintes processos:
 ## 🔗 Relacionamentos
 
 ### Tabelas-pai (FK de entrada)
-- [[per_absence_attendance_types_b]] — via `ABSENCE_ATTENDANCE_TYPE_ID` (tabela base do tipo de ausÃªncia/presenÃ§a)
+- [[per_absence_attendance_types_b]] — via `ABSENCE_ATTENDANCE_TYPE_ID` (tabela base do tipo de ausência/presença)
 
 ### Tabelas-filha (FK de saída)
 - - Nenhuma tabela-filha — tabela terminal de tradução.

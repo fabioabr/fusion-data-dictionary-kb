@@ -262,6 +262,11 @@ pre.sql-code { margin: 0; padding: 16px; font-family: 'Courier New', monospace; 
 .bg-orange { background: var(--orange); } .bg-teal { background: var(--teal); }
 .bg-secondary { background: var(--secondary); }
 
+/* ====== PVO GROUPS ====== */
+.pvo-group .card-header .ri-arrow-down-s-line { transition: transform 0.2s; }
+.pvo-group.collapsed .pvo-group-body { display: none; }
+.pvo-group.collapsed .ri-arrow-down-s-line { transform: rotate(-90deg); }
+
 /* ====== RESPONSIVE ====== */
 @media (max-width: 768px) {
     .stats-grid { grid-template-columns: 1fr; }
@@ -1728,6 +1733,995 @@ const DATA = {
     "PJF_PROJ_ELEMENTS_TL": "HCM",
     "PJF_WORK_TYPES_VL": "HCM"
   },
+  "related_pvos": [
+    {
+      "column": "ACCESS_CD",
+      "pvo_name": "ManagerBudgetsForTopMgrPVO",
+      "pvo_attr": "AccessCd",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "BUDGET_LAST_UPD_DATE",
+      "pvo_name": "ManagerBudgetsForTopMgrPVO",
+      "pvo_attr": "BudgetLastUpdDate",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "BUDGET_POP_CD",
+      "pvo_name": "ManagerBudgetsForTopMgrPVO",
+      "pvo_attr": "BudgetPopCd",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "BUDGET_VAL_AMOUNT",
+      "pvo_name": "ManagerBudgetsForTopMgrPVO",
+      "pvo_attr": "BudgetValAmount",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "BUDGET_VAL_PERCENT",
+      "pvo_name": "ManagerBudgetsForTopMgrPVO",
+      "pvo_attr": "BudgetValPercent",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "BUDGETING_STYLE",
+      "pvo_name": "ManagerBudgetsForTopMgrPVO",
+      "pvo_attr": "BudgetingStyle",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "CREATED_BY",
+      "pvo_name": "ManagerBudgetsForTopMgrPVO",
+      "pvo_attr": "CreatedBy",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "CREATION_DATE",
+      "pvo_name": "ManagerBudgetsForTopMgrPVO",
+      "pvo_attr": "CreationDate",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "DFLT_DIST_BUDGET_VAL",
+      "pvo_name": "ManagerBudgetsForTopMgrPVO",
+      "pvo_attr": "DfltDistBudgetVal",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "DFLT_WS_BUDGET_VAL",
+      "pvo_name": "ManagerBudgetsForTopMgrPVO",
+      "pvo_attr": "DfltWsBudgetVal",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "DIST_BUDGET_ISSUE_DATE",
+      "pvo_name": "ManagerBudgetsForTopMgrPVO",
+      "pvo_attr": "DistBudgetIssueDate",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "DIST_BUDGET_ISSUE_VAL",
+      "pvo_name": "ManagerBudgetsForTopMgrPVO",
+      "pvo_attr": "DistBudgetIssueVal",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "DIST_BUDGET_VAL",
+      "pvo_name": "ManagerBudgetsForTopMgrPVO",
+      "pvo_attr": "DistBudgetVal",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "DIST_BUDGET_VAL_LAST_UPD_BY",
+      "pvo_name": "ManagerBudgetsForTopMgrPVO",
+      "pvo_attr": "DistBudgetValLastUpdBy",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "DIST_BUDGET_VAL_LAST_UPD_DATE",
+      "pvo_name": "ManagerBudgetsForTopMgrPVO",
+      "pvo_attr": "DistBudgetValLastUpdDate",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "LAST_UPDATE_DATE",
+      "pvo_name": "ManagerBudgetsForTopMgrPVO",
+      "pvo_attr": "LastUpdateDate",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "LAST_UPDATE_LOGIN",
+      "pvo_name": "ManagerBudgetsForTopMgrPVO",
+      "pvo_attr": "LastUpdateLogin",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "LAST_UPDATED_BY",
+      "pvo_name": "ManagerBudgetsForTopMgrPVO",
+      "pvo_attr": "LastUpdatedBy",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "OBJECT_VERSION_NUMBER",
+      "pvo_name": "ManagerBudgetsForTopMgrPVO",
+      "pvo_attr": "ObjectVersionNumber",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "OVERALL_BUDGET_AMOUNT",
+      "pvo_name": "ManagerBudgetsForTopMgrPVO",
+      "pvo_attr": "OverallBudgetAmount",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "OVERRIDE_OVER_ALLOCATE_CODE",
+      "pvo_name": "ManagerBudgetsForTopMgrPVO",
+      "pvo_attr": "OverrideOverAllocateCode",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "OVERRIDE_OVER_BUDGET_CODE",
+      "pvo_name": "ManagerBudgetsForTopMgrPVO",
+      "pvo_attr": "OverrideOverBudgetCode",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "PERIOD_ID",
+      "pvo_name": "ManagerBudgetsForTopMgrPVO",
+      "pvo_attr": "PeriodId",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "PERSON_EVENT_ID",
+      "pvo_name": "ManagerBudgetsForTopMgrPVO",
+      "pvo_attr": "PersonEventId",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "PLAN_ID",
+      "pvo_name": "ManagerBudgetsForTopMgrPVO",
+      "pvo_attr": "PlanId",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "POOL_ID",
+      "pvo_name": "ManagerBudgetsForTopMgrPVO",
+      "pvo_attr": "PoolId",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "PUBLISHED_DIST_BUDGET_AMOUNT",
+      "pvo_name": "ManagerBudgetsForTopMgrPVO",
+      "pvo_attr": "PublishedDistBudgetAmount",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "PUBLISHED_DIST_BUDGET_PCT",
+      "pvo_name": "ManagerBudgetsForTopMgrPVO",
+      "pvo_attr": "PublishedDistBudgetPct",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "PUBLISHED_WS_BUDGET_AMOUNT",
+      "pvo_name": "ManagerBudgetsForTopMgrPVO",
+      "pvo_attr": "PublishedWsBudgetAmount",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "PUBLISHED_WS_BUDGET_PCT",
+      "pvo_name": "ManagerBudgetsForTopMgrPVO",
+      "pvo_attr": "PublishedWsBudgetPct",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "REC_MN_VAL_ALL",
+      "pvo_name": "ManagerBudgetsForTopMgrPVO",
+      "pvo_attr": "RecMnValAll",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "REC_MX_VAL_ALL",
+      "pvo_name": "ManagerBudgetsForTopMgrPVO",
+      "pvo_attr": "RecMxValAll",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "REC_VAL_ALL",
+      "pvo_name": "ManagerBudgetsForTopMgrPVO",
+      "pvo_attr": "RecValAll",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "TOTAL_DIRECT_WORKERS",
+      "pvo_name": "ManagerBudgetsForTopMgrPVO",
+      "pvo_attr": "TotalDirectWorkers",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "TOTAL_ELIGIBLE_SALARY",
+      "pvo_name": "ManagerBudgetsForTopMgrPVO",
+      "pvo_attr": "TotalEligibleSalary",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "TOTAL_ELIGIBLE_WORKERS",
+      "pvo_name": "ManagerBudgetsForTopMgrPVO",
+      "pvo_attr": "TotalEligibleWorkers",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "UNPUBLISHED_DIST_BUDGET_AMOUNT",
+      "pvo_name": "ManagerBudgetsForTopMgrPVO",
+      "pvo_attr": "UnpublishedDistBudgetAmount",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "UNPUBLISHED_DIST_BUDGET_PCT",
+      "pvo_name": "ManagerBudgetsForTopMgrPVO",
+      "pvo_attr": "UnpublishedDistBudgetPct",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "UNPUBLISHED_WS_BUDGET_AMOUNT",
+      "pvo_name": "ManagerBudgetsForTopMgrPVO",
+      "pvo_attr": "UnpublishedWsBudgetAmount",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "UNPUBLISHED_WS_BUDGET_PCT",
+      "pvo_name": "ManagerBudgetsForTopMgrPVO",
+      "pvo_attr": "UnpublishedWsBudgetPct",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "USED_BUDGET",
+      "pvo_name": "ManagerBudgetsForTopMgrPVO",
+      "pvo_attr": "UsedBudget",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "USER_PREFERRED_EXCHANGE_RATE",
+      "pvo_name": "ManagerBudgetsForTopMgrPVO",
+      "pvo_attr": "UserPreferredExchangeRate",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "WS_BUDGET_ISSUE_DATE",
+      "pvo_name": "ManagerBudgetsForTopMgrPVO",
+      "pvo_attr": "WsBudgetIssueDate",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "WS_BUDGET_ISSUE_VAL",
+      "pvo_name": "ManagerBudgetsForTopMgrPVO",
+      "pvo_attr": "WsBudgetIssueVal",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "WS_BUDGET_VAL",
+      "pvo_name": "ManagerBudgetsForTopMgrPVO",
+      "pvo_attr": "WsBudgetVal",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "WS_BUDGET_VAL_LAST_UPD_BY",
+      "pvo_name": "ManagerBudgetsForTopMgrPVO",
+      "pvo_attr": "WsBudgetValLastUpdBy",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "WS_BUDGET_VAL_LAST_UPD_DATE",
+      "pvo_name": "ManagerBudgetsForTopMgrPVO",
+      "pvo_attr": "WsBudgetValLastUpdDate",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "ACCESS_CD",
+      "pvo_name": "ManagerBudgetsPVO",
+      "pvo_attr": "ManagerBudgetsPEOAccessCd",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "BUDGET_LAST_UPD_DATE",
+      "pvo_name": "ManagerBudgetsPVO",
+      "pvo_attr": "ManagerBudgetsPEOBudgetLastUpdDate",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "BUDGET_POP_CD",
+      "pvo_name": "ManagerBudgetsPVO",
+      "pvo_attr": "ManagerBudgetsPEOBudgetPopCd",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "BUDGET_VAL_AMOUNT",
+      "pvo_name": "ManagerBudgetsPVO",
+      "pvo_attr": "ManagerBudgetsPEOBudgetValAmount",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "BUDGET_VAL_PERCENT",
+      "pvo_name": "ManagerBudgetsPVO",
+      "pvo_attr": "ManagerBudgetsPEOBudgetValPercent",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "BUDGETING_STYLE",
+      "pvo_name": "ManagerBudgetsPVO",
+      "pvo_attr": "ManagerBudgetsPEOBudgetingStyle",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "CREATED_BY",
+      "pvo_name": "ManagerBudgetsPVO",
+      "pvo_attr": "ManagerBudgetsPEOCreatedBy",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "CREATION_DATE",
+      "pvo_name": "ManagerBudgetsPVO",
+      "pvo_attr": "ManagerBudgetsPEOCreationDate",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "DFLT_DIST_BUDGET_VAL",
+      "pvo_name": "ManagerBudgetsPVO",
+      "pvo_attr": "ManagerBudgetsPEODfltDistBudgetVal",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "DFLT_WS_BUDGET_VAL",
+      "pvo_name": "ManagerBudgetsPVO",
+      "pvo_attr": "ManagerBudgetsPEODfltWsBudgetVal",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "DIST_BUDGET_ISSUE_DATE",
+      "pvo_name": "ManagerBudgetsPVO",
+      "pvo_attr": "ManagerBudgetsPEODistBudgetIssueDate",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "DIST_BUDGET_ISSUE_VAL",
+      "pvo_name": "ManagerBudgetsPVO",
+      "pvo_attr": "ManagerBudgetsPEODistBudgetIssueVal",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "DIST_BUDGET_VAL",
+      "pvo_name": "ManagerBudgetsPVO",
+      "pvo_attr": "ManagerBudgetsPEODistBudgetVal",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "DIST_BUDGET_VAL_LAST_UPD_BY",
+      "pvo_name": "ManagerBudgetsPVO",
+      "pvo_attr": "ManagerBudgetsPEODistBudgetValLastUpdBy",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "DIST_BUDGET_VAL_LAST_UPD_DATE",
+      "pvo_name": "ManagerBudgetsPVO",
+      "pvo_attr": "ManagerBudgetsPEODistBudgetValLastUpdDate",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "LAST_UPDATE_DATE",
+      "pvo_name": "ManagerBudgetsPVO",
+      "pvo_attr": "ManagerBudgetsPEOLastUpdateDate",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "LAST_UPDATE_LOGIN",
+      "pvo_name": "ManagerBudgetsPVO",
+      "pvo_attr": "ManagerBudgetsPEOLastUpdateLogin",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "LAST_UPDATED_BY",
+      "pvo_name": "ManagerBudgetsPVO",
+      "pvo_attr": "ManagerBudgetsPEOLastUpdatedBy",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "OBJECT_VERSION_NUMBER",
+      "pvo_name": "ManagerBudgetsPVO",
+      "pvo_attr": "ManagerBudgetsPEOObjectVersionNumber",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "OVERALL_BUDGET_AMOUNT",
+      "pvo_name": "ManagerBudgetsPVO",
+      "pvo_attr": "ManagerBudgetsPEOOverallBudgetAmount",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "OVERRIDE_OVER_ALLOCATE_CODE",
+      "pvo_name": "ManagerBudgetsPVO",
+      "pvo_attr": "ManagerBudgetsPEOOverrideOverAllocateCode",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "OVERRIDE_OVER_BUDGET_CODE",
+      "pvo_name": "ManagerBudgetsPVO",
+      "pvo_attr": "ManagerBudgetsPEOOverrideOverBudgetCode",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "PERIOD_ID",
+      "pvo_name": "ManagerBudgetsPVO",
+      "pvo_attr": "ManagerBudgetsPEOPeriodId",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "PERSON_EVENT_ID",
+      "pvo_name": "ManagerBudgetsPVO",
+      "pvo_attr": "PersonEventId",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "PLAN_ID",
+      "pvo_name": "ManagerBudgetsPVO",
+      "pvo_attr": "ManagerBudgetsPEOPlanId",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "POOL_ID",
+      "pvo_name": "ManagerBudgetsPVO",
+      "pvo_attr": "ManagerBudgetsPEOPoolId",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "PUBLISHED_DIST_BUDGET_AMOUNT",
+      "pvo_name": "ManagerBudgetsPVO",
+      "pvo_attr": "PublishedDistBudgetAmount",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "PUBLISHED_DIST_BUDGET_PCT",
+      "pvo_name": "ManagerBudgetsPVO",
+      "pvo_attr": "PublishedDistBudgetPct",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "PUBLISHED_WS_BUDGET_AMOUNT",
+      "pvo_name": "ManagerBudgetsPVO",
+      "pvo_attr": "PublishedWsBudgetAmount",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "PUBLISHED_WS_BUDGET_PCT",
+      "pvo_name": "ManagerBudgetsPVO",
+      "pvo_attr": "PublishedWsBudgetPct",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "REC_MN_VAL_ALL",
+      "pvo_name": "ManagerBudgetsPVO",
+      "pvo_attr": "ManagerBudgetsPEORecMnValAll",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "REC_MX_VAL_ALL",
+      "pvo_name": "ManagerBudgetsPVO",
+      "pvo_attr": "ManagerBudgetsPEORecMxValAll",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "REC_VAL_ALL",
+      "pvo_name": "ManagerBudgetsPVO",
+      "pvo_attr": "ManagerBudgetsPEORecValAll",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "TOTAL_DIRECT_WORKERS",
+      "pvo_name": "ManagerBudgetsPVO",
+      "pvo_attr": "ManagerBudgetsPEOTotalDirectWorkers",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "TOTAL_ELIGIBLE_SALARY",
+      "pvo_name": "ManagerBudgetsPVO",
+      "pvo_attr": "ManagerBudgetsPEOTotalEligibleSalary",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "TOTAL_ELIGIBLE_WORKERS",
+      "pvo_name": "ManagerBudgetsPVO",
+      "pvo_attr": "ManagerBudgetsPEOTotalEligibleWorkers",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "UNPUBLISHED_DIST_BUDGET_AMOUNT",
+      "pvo_name": "ManagerBudgetsPVO",
+      "pvo_attr": "UnpublishedDistBudgetAmount",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "UNPUBLISHED_DIST_BUDGET_PCT",
+      "pvo_name": "ManagerBudgetsPVO",
+      "pvo_attr": "UnpublishedDistBudgetPct",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "UNPUBLISHED_WS_BUDGET_AMOUNT",
+      "pvo_name": "ManagerBudgetsPVO",
+      "pvo_attr": "UnpublishedWsBudgetAmount",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "UNPUBLISHED_WS_BUDGET_PCT",
+      "pvo_name": "ManagerBudgetsPVO",
+      "pvo_attr": "UnpublishedWsBudgetPct",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "USED_BUDGET",
+      "pvo_name": "ManagerBudgetsPVO",
+      "pvo_attr": "ManagerBudgetsPEOUsedBudget",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "USER_PREFERRED_EXCHANGE_RATE",
+      "pvo_name": "ManagerBudgetsPVO",
+      "pvo_attr": "ManagerBudgetsPEOUserPreferredExchangeRate",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "WS_BUDGET_ISSUE_DATE",
+      "pvo_name": "ManagerBudgetsPVO",
+      "pvo_attr": "ManagerBudgetsPEOWsBudgetIssueDate",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "WS_BUDGET_ISSUE_VAL",
+      "pvo_name": "ManagerBudgetsPVO",
+      "pvo_attr": "ManagerBudgetsPEOWsBudgetIssueVal",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "WS_BUDGET_VAL",
+      "pvo_name": "ManagerBudgetsPVO",
+      "pvo_attr": "ManagerBudgetsPEOWsBudgetVal",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "WS_BUDGET_VAL_LAST_UPD_BY",
+      "pvo_name": "ManagerBudgetsPVO",
+      "pvo_attr": "ManagerBudgetsPEOWsBudgetValLastUpdBy",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "WS_BUDGET_VAL_LAST_UPD_DATE",
+      "pvo_name": "ManagerBudgetsPVO",
+      "pvo_attr": "ManagerBudgetsPEOWsBudgetValLastUpdDate",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "ACCESS_CD",
+      "pvo_name": "ManagerBudgetsPVOViewAll",
+      "pvo_attr": "ManagerBudgetsPEOAccessCd",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "BUDGET_LAST_UPD_DATE",
+      "pvo_name": "ManagerBudgetsPVOViewAll",
+      "pvo_attr": "ManagerBudgetsPEOBudgetLastUpdDate",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "BUDGET_POP_CD",
+      "pvo_name": "ManagerBudgetsPVOViewAll",
+      "pvo_attr": "ManagerBudgetsPEOBudgetPopCd",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "BUDGET_VAL_AMOUNT",
+      "pvo_name": "ManagerBudgetsPVOViewAll",
+      "pvo_attr": "ManagerBudgetsPEOBudgetValAmount",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "BUDGET_VAL_PERCENT",
+      "pvo_name": "ManagerBudgetsPVOViewAll",
+      "pvo_attr": "ManagerBudgetsPEOBudgetValPercent",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "BUDGETING_STYLE",
+      "pvo_name": "ManagerBudgetsPVOViewAll",
+      "pvo_attr": "ManagerBudgetsPEOBudgetingStyle",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "CREATED_BY",
+      "pvo_name": "ManagerBudgetsPVOViewAll",
+      "pvo_attr": "ManagerBudgetsPEOCreatedBy",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "CREATION_DATE",
+      "pvo_name": "ManagerBudgetsPVOViewAll",
+      "pvo_attr": "ManagerBudgetsPEOCreationDate",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "DFLT_DIST_BUDGET_VAL",
+      "pvo_name": "ManagerBudgetsPVOViewAll",
+      "pvo_attr": "ManagerBudgetsPEODfltDistBudgetVal",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "DFLT_WS_BUDGET_VAL",
+      "pvo_name": "ManagerBudgetsPVOViewAll",
+      "pvo_attr": "ManagerBudgetsPEODfltWsBudgetVal",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "DIST_BUDGET_ISSUE_DATE",
+      "pvo_name": "ManagerBudgetsPVOViewAll",
+      "pvo_attr": "ManagerBudgetsPEODistBudgetIssueDate",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "DIST_BUDGET_ISSUE_VAL",
+      "pvo_name": "ManagerBudgetsPVOViewAll",
+      "pvo_attr": "ManagerBudgetsPEODistBudgetIssueVal",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "DIST_BUDGET_VAL",
+      "pvo_name": "ManagerBudgetsPVOViewAll",
+      "pvo_attr": "ManagerBudgetsPEODistBudgetVal",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "DIST_BUDGET_VAL_LAST_UPD_BY",
+      "pvo_name": "ManagerBudgetsPVOViewAll",
+      "pvo_attr": "ManagerBudgetsPEODistBudgetValLastUpdBy",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "DIST_BUDGET_VAL_LAST_UPD_DATE",
+      "pvo_name": "ManagerBudgetsPVOViewAll",
+      "pvo_attr": "ManagerBudgetsPEODistBudgetValLastUpdDate",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "LAST_UPDATE_DATE",
+      "pvo_name": "ManagerBudgetsPVOViewAll",
+      "pvo_attr": "ManagerBudgetsPEOLastUpdateDate",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "LAST_UPDATE_LOGIN",
+      "pvo_name": "ManagerBudgetsPVOViewAll",
+      "pvo_attr": "ManagerBudgetsPEOLastUpdateLogin",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "LAST_UPDATED_BY",
+      "pvo_name": "ManagerBudgetsPVOViewAll",
+      "pvo_attr": "ManagerBudgetsPEOLastUpdatedBy",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "OBJECT_VERSION_NUMBER",
+      "pvo_name": "ManagerBudgetsPVOViewAll",
+      "pvo_attr": "ManagerBudgetsPEOObjectVersionNumber",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "OVERALL_BUDGET_AMOUNT",
+      "pvo_name": "ManagerBudgetsPVOViewAll",
+      "pvo_attr": "ManagerBudgetsPEOOverallBudgetAmount",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "OVERRIDE_OVER_ALLOCATE_CODE",
+      "pvo_name": "ManagerBudgetsPVOViewAll",
+      "pvo_attr": "ManagerBudgetsPEOOverrideOverAllocateCode",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "OVERRIDE_OVER_BUDGET_CODE",
+      "pvo_name": "ManagerBudgetsPVOViewAll",
+      "pvo_attr": "ManagerBudgetsPEOOverrideOverBudgetCode",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "PERIOD_ID",
+      "pvo_name": "ManagerBudgetsPVOViewAll",
+      "pvo_attr": "ManagerBudgetsPEOPeriodId",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "PERSON_EVENT_ID",
+      "pvo_name": "ManagerBudgetsPVOViewAll",
+      "pvo_attr": "PersonEventId",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "PLAN_ID",
+      "pvo_name": "ManagerBudgetsPVOViewAll",
+      "pvo_attr": "ManagerBudgetsPEOPlanId",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "POOL_ID",
+      "pvo_name": "ManagerBudgetsPVOViewAll",
+      "pvo_attr": "ManagerBudgetsPEOPoolId",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "PUBLISHED_DIST_BUDGET_AMOUNT",
+      "pvo_name": "ManagerBudgetsPVOViewAll",
+      "pvo_attr": "PublishedDistBudgetAmount",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "PUBLISHED_DIST_BUDGET_PCT",
+      "pvo_name": "ManagerBudgetsPVOViewAll",
+      "pvo_attr": "PublishedDistBudgetPct",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "PUBLISHED_WS_BUDGET_AMOUNT",
+      "pvo_name": "ManagerBudgetsPVOViewAll",
+      "pvo_attr": "PublishedWsBudgetAmount",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "PUBLISHED_WS_BUDGET_PCT",
+      "pvo_name": "ManagerBudgetsPVOViewAll",
+      "pvo_attr": "PublishedWsBudgetPct",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "REC_MN_VAL_ALL",
+      "pvo_name": "ManagerBudgetsPVOViewAll",
+      "pvo_attr": "ManagerBudgetsPEORecMnValAll",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "REC_MX_VAL_ALL",
+      "pvo_name": "ManagerBudgetsPVOViewAll",
+      "pvo_attr": "ManagerBudgetsPEORecMxValAll",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "REC_VAL_ALL",
+      "pvo_name": "ManagerBudgetsPVOViewAll",
+      "pvo_attr": "ManagerBudgetsPEORecValAll",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "TOTAL_DIRECT_WORKERS",
+      "pvo_name": "ManagerBudgetsPVOViewAll",
+      "pvo_attr": "ManagerBudgetsPEOTotalDirectWorkers",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "TOTAL_ELIGIBLE_SALARY",
+      "pvo_name": "ManagerBudgetsPVOViewAll",
+      "pvo_attr": "ManagerBudgetsPEOTotalEligibleSalary",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "TOTAL_ELIGIBLE_WORKERS",
+      "pvo_name": "ManagerBudgetsPVOViewAll",
+      "pvo_attr": "ManagerBudgetsPEOTotalEligibleWorkers",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "UNPUBLISHED_DIST_BUDGET_AMOUNT",
+      "pvo_name": "ManagerBudgetsPVOViewAll",
+      "pvo_attr": "UnpublishedDistBudgetAmount",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "UNPUBLISHED_DIST_BUDGET_PCT",
+      "pvo_name": "ManagerBudgetsPVOViewAll",
+      "pvo_attr": "UnpublishedDistBudgetPct",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "UNPUBLISHED_WS_BUDGET_AMOUNT",
+      "pvo_name": "ManagerBudgetsPVOViewAll",
+      "pvo_attr": "UnpublishedWsBudgetAmount",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "UNPUBLISHED_WS_BUDGET_PCT",
+      "pvo_name": "ManagerBudgetsPVOViewAll",
+      "pvo_attr": "UnpublishedWsBudgetPct",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "USED_BUDGET",
+      "pvo_name": "ManagerBudgetsPVOViewAll",
+      "pvo_attr": "ManagerBudgetsPEOUsedBudget",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "USER_PREFERRED_EXCHANGE_RATE",
+      "pvo_name": "ManagerBudgetsPVOViewAll",
+      "pvo_attr": "ManagerBudgetsPEOUserPreferredExchangeRate",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "WS_BUDGET_ISSUE_DATE",
+      "pvo_name": "ManagerBudgetsPVOViewAll",
+      "pvo_attr": "ManagerBudgetsPEOWsBudgetIssueDate",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "WS_BUDGET_ISSUE_VAL",
+      "pvo_name": "ManagerBudgetsPVOViewAll",
+      "pvo_attr": "ManagerBudgetsPEOWsBudgetIssueVal",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "WS_BUDGET_VAL",
+      "pvo_name": "ManagerBudgetsPVOViewAll",
+      "pvo_attr": "ManagerBudgetsPEOWsBudgetVal",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "WS_BUDGET_VAL_LAST_UPD_BY",
+      "pvo_name": "ManagerBudgetsPVOViewAll",
+      "pvo_attr": "ManagerBudgetsPEOWsBudgetValLastUpdBy",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "WS_BUDGET_VAL_LAST_UPD_DATE",
+      "pvo_name": "ManagerBudgetsPVOViewAll",
+      "pvo_attr": "ManagerBudgetsPEOWsBudgetValLastUpdDate",
+      "module_code": "HCM",
+      "bicc": true
+    }
+  ],
   "i18n": [
     {
       "id": 1,
@@ -2099,6 +3093,7 @@ const DATA = {
     <div id="tab-columns" class="tab-content"></div>
     <div id="tab-relationships" class="tab-content"></div>
     <div id="tab-sql" class="tab-content"></div>
+    <div id="tab-pvos" class="tab-content"></div>
 </main>
 
 <!-- ====== FOOTER ====== -->
@@ -2339,12 +3334,17 @@ function render() {
         overview: {pt:'Visão Geral', en:'Overview', es:'Visión General'},
         columns: {pt:'Colunas', en:'Columns', es:'Columnas'},
         relationships: {pt:'Relacionamentos', en:'Relationships', es:'Relaciones'},
-        sql: {pt:'SQL', en:'SQL', es:'SQL'}
+        sql: {pt:'SQL', en:'SQL', es:'SQL'},
+        pvos: {pt:'PVOs Relacionados', en:'Related PVOs', es:'PVOs Relacionados'}
     };
+    var _pvoNames = {};
+    (d.related_pvos || []).forEach(function(r) { _pvoNames[r.pvo_name] = 1; });
+    var pvosCount = Object.keys(_pvoNames).length;
     document.getElementById('tabs-nav').innerHTML =
         '<button class="tab-btn active" data-tab="overview" onclick="switchTab(\'overview\')"><i class="ri-information-line"></i> ' + t(tabLabels.overview) + '</button>' +
         '<button class="tab-btn" data-tab="columns" onclick="switchTab(\'columns\')"><i class="ri-table-line"></i> ' + t(tabLabels.columns) + ' <span class="tab-count">' + d.columns.length + '</span></button>' +
         '<button class="tab-btn" data-tab="relationships" onclick="switchTab(\'relationships\')"><i class="ri-git-branch-line"></i> ' + t(tabLabels.relationships) + ' <span class="tab-count">' + (d.relationships.parents.length + d.relationships.children.length) + '</span></button>' +
+        (pvosCount ? '<button class="tab-btn" data-tab="pvos" onclick="switchTab(\'pvos\')"><i class="ri-database-2-line"></i> ' + t(tabLabels.pvos) + ' <span class="tab-count">' + pvosCount + '</span></button>' : '') +
         '<button class="tab-btn" data-tab="sql" onclick="switchTab(\'sql\')"><i class="ri-code-s-slash-line"></i> SQL <span class="tab-count">' + d.sql.length + '</span></button>';
 
     // Tab 1: Overview
@@ -2354,6 +3354,7 @@ function render() {
         '<div class="stat-card"><div class="stat-card-icon bg-info"><i class="ri-links-line"></i></div><div class="stat-card-info"><div class="stat-card-number" style="color:var(--info)">' + d.relationships.parents.length + '</div><div class="stat-card-label">Foreign Keys</div></div></div>' +
         '<div class="stat-card"><div class="stat-card-icon bg-success"><i class="ri-shield-check-line"></i></div><div class="stat-card-info"><div class="stat-card-number" style="color:var(--success)">' + d.stats.avg_confidence + '%</div><div class="stat-card-label">' + t({pt:'Confiança Média', en:'Avg Confidence', es:'Confianza Promedio'}) + '</div></div></div>' +
         '<div class="stat-card"><div class="stat-card-icon bg-purple"><i class="ri-apps-line"></i></div><div class="stat-card-info"><div class="stat-card-number" style="color:var(--purple)">' + d.stats.categories + '</div><div class="stat-card-label">' + t({pt:'Categorias', en:'Categories', es:'Categorías'}) + '</div></div></div>' +
+        (pvosCount ? '<div class="stat-card"><div class="stat-card-icon bg-purple"><i class="ri-database-2-line"></i></div><div class="stat-card-info"><div class="stat-card-number" style="color:var(--purple)">' + pvosCount + '</div><div class="stat-card-label">PVOs</div></div></div>' : '') +
         '</div>';
 
     var overviewHtml = statsHtml +
@@ -2463,6 +3464,69 @@ function render() {
     }
     document.getElementById('tab-sql').innerHTML = sqlHtml;
 
+    // Tab 5: Related PVOs (grouped by PVO, table inside each group)
+    var pvosHtml = '';
+    if (d.related_pvos && d.related_pvos.length) {
+        // Group rows by pvo_name
+        var pvoGroups = {};
+        var pvoOrder = [];
+        d.related_pvos.forEach(function(row) {
+            var key = row.pvo_name;
+            if (!pvoGroups[key]) {
+                pvoGroups[key] = { pvo_name: row.pvo_name, module_code: row.module_code, rows: [] };
+                pvoOrder.push(key);
+            }
+            pvoGroups[key].rows.push(row);
+        });
+
+        pvosHtml += '<div class="search-container"><i class="ri-search-line search-icon"></i><input class="search-input" type="text" placeholder="' + t({pt:'Filtrar PVOs...', en:'Filter PVOs...', es:'Filtrar PVOs...'}) + '" oninput="filterPvos(this.value)"></div>';
+
+        var pvoHeaders = {
+            pt: ['#','Campo da Tabela','Campo do PVO','Disponível por BICC'],
+            en: ['#','Table Column','PVO Attribute','Available via BICC'],
+            es: ['#','Campo de Tabla','Campo del PVO','Disponible por BICC']
+        };
+        var ph = pvoHeaders[currentLang] || pvoHeaders['pt'];
+
+        pvosHtml += '<div id="pvos-groups">';
+        pvoOrder.forEach(function(key) {
+            var grp = pvoGroups[key];
+            var pvoFile = grp.pvo_name.toLowerCase() + '.html';
+            var pvoHref = (grp.module_code === m.module_code)
+                ? '../pvos/' + pvoFile
+                : '../../' + grp.module_code + '/pvos/' + pvoFile;
+            var biccCount = grp.rows.filter(function(r) { return r.bicc; }).length;
+
+            var grpSearchFields = grp.rows.map(function(r) { return r.column + ' ' + r.pvo_attr; }).join(' ');
+            pvosHtml += '<div class="card pvo-group" data-search="' + (grp.pvo_name + ' ' + grp.module_code + ' ' + grpSearchFields).toLowerCase() + '">' +
+                '<div class="card-header" style="cursor:pointer" onclick="this.parentElement.classList.toggle(\'collapsed\')">' +
+                '<div class="card-header-icon bg-purple"><i class="ri-database-2-line"></i></div>' +
+                '<div class="card-title"><a href="' + pvoHref + langParam() + '" class="wikilink" onclick="event.stopPropagation()">' + grp.pvo_name + '</a></div>' +
+                '<span class="pill pill-info">' + grp.module_code + '</span>' +
+                '<span class="card-badge pill-info" style="background:var(--info-light);color:var(--pill-info-text);border:1px solid var(--info-border)">' + grp.rows.length + ' attrs</span>' +
+                (biccCount ? '<span class="card-badge pill-success" style="background:var(--success-light);color:var(--pill-success-text);border:1px solid var(--success-border)">BICC ' + biccCount + '</span>' : '') +
+                '<i class="ri-arrow-down-s-line" style="font-size:1.2rem;color:var(--text-muted);margin-left:auto;transition:transform 0.2s"></i>' +
+                '</div>' +
+                '<div class="card-body pvo-group-body"><div class="table-wrapper"><table><thead><tr>';
+            ph.forEach(function(h, i) { pvosHtml += '<th' + (i === ph.length - 1 ? ' style="text-align:center"' : '') + '>' + h + '</th>'; });
+            pvosHtml += '</tr></thead><tbody>';
+            grp.rows.forEach(function(row, idx) {
+                var biccHtml = row.bicc
+                    ? '<span class="pill pill-success"><i class="ri-checkbox-circle-fill"></i> ' + t({pt:'Sim',en:'Yes',es:'Sí'}) + '</span>'
+                    : '<span class="pill pill-danger" style="opacity:0.5">' + t({pt:'Não',en:'No',es:'No'}) + '</span>';
+                pvosHtml += '<tr>' +
+                    '<td>' + (idx + 1) + '</td>' +
+                    '<td class="col-name">' + row.column + '</td>' +
+                    '<td class="col-name">' + row.pvo_attr + '</td>' +
+                    '<td style="text-align:center">' + biccHtml + '</td>' +
+                    '</tr>';
+            });
+            pvosHtml += '</tbody></table></div></div></div>';
+        });
+        pvosHtml += '</div>';
+    }
+    document.getElementById('tab-pvos').innerHTML = pvosHtml;
+
     // Footer
     document.getElementById('f-initials').textContent = m.author_initials || '';
     document.getElementById('f-name').textContent = m.author_name || '';
@@ -2509,6 +3573,16 @@ function filterColumns(query) {
     rows.forEach(function(row) {
         var text = row.getAttribute('data-search') || '';
         row.style.display = !q || text.indexOf(q) >= 0 ? '' : 'none';
+    });
+}
+
+/* ====== PVO FILTER ====== */
+function filterPvos(query) {
+    var q = query.toLowerCase().trim();
+    var groups = document.querySelectorAll('#pvos-groups .pvo-group');
+    groups.forEach(function(grp) {
+        var text = grp.getAttribute('data-search') || '';
+        grp.style.display = !q || text.indexOf(q) >= 0 ? '' : 'none';
     });
 }
 

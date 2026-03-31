@@ -83,7 +83,7 @@ Esta tabela é utilizada nos seguintes processos:
 ## Relacionamentos
 
 ### Tabelas-pai (FK de entrada)
-- [[hr_all_positions_f]] — via `POSITION_ID` (posiÃ§Ã£o com dados legislativos)
+- [[hr_all_positions_f]] — via `POSITION_ID` (posição com dados legislativos)
 
 ### Tabelas-filha (FK de saída)
 - Nenhuma relação direta identificada.

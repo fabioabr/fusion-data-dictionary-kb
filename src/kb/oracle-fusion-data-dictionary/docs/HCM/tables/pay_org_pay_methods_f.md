@@ -73,12 +73,12 @@ Esta tabela é utilizada nos seguintes processos:
 ## 🔗 Relacionamentos
 
 ### Tabelas-pai (FK de entrada)
-- [[pay_payment_types]] --- via `PAYMENT_TYPE_ID` (tipo de pagamento do mÃ©todo organizacional)
+- [[pay_payment_types]] --- via `PAYMENT_TYPE_ID` (tipo de pagamento do método organizacional)
 
 ### Tabelas-filha (FK de saída)
-- [[pay_org_pay_methods_tl]] --- via `ORG_PAYMENT_METHOD_ID` (traduÃ§Ãµes do mÃ©todo de pagamento organizacional)
-- [[pay_org_pay_method_usages_f]] --- via `ORG_PAYMENT_METHOD_ID` (usos do mÃ©todo de pagamento nas folhas)
-- [[pay_person_pay_methods_f]] --- via `ORG_PAYMENT_METHOD_ID` (mÃ©todos pessoais vinculados ao mÃ©todo organizacional)
+- [[pay_org_pay_methods_tl]] --- via `ORG_PAYMENT_METHOD_ID` (traduções do método de pagamento organizacional)
+- [[pay_org_pay_method_usages_f]] --- via `ORG_PAYMENT_METHOD_ID` (usos do método de pagamento nas folhas)
+- [[pay_person_pay_methods_f]] --- via `ORG_PAYMENT_METHOD_ID` (métodos pessoais vinculados ao método organizacional)
 
 ---
 

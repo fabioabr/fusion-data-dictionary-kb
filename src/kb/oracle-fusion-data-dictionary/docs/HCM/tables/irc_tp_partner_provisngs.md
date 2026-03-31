@@ -73,7 +73,7 @@ Esta tabela é utilizada nos seguintes processos:
 
 ### Tabelas-pai (FK de entrada)
 - [[irc_tp_partners]] --- via `PARTNER_ID` (parceiro terceiro do provisionamento)
-- [[irc_requisitions_b]] --- via `REQUISITION_ID` (requisiÃ§Ã£o de vaga provisionada ao parceiro)
+- [[irc_requisitions_b]] --- via `REQUISITION_ID` (requisição de vaga provisionada ao parceiro)
 
 ### Tabelas-filha (FK de saída)
 - --- Tabela de associacao, sem filhas conhecidas

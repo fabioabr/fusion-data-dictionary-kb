@@ -75,8 +75,8 @@ Esta tabela é utilizada nos seguintes processos:
 - --- Tabela de configuracao raiz
 
 ### Tabelas-filha (FK de saída)
-- [[pay_org_pay_methods_f]] --- via `PAYMENT_TYPE_ID` (mÃ©todos de pagamento do tipo)
-- [[pay_payment_types_tl]] --- via `PAYMENT_TYPE_ID` (traduÃ§Ãµes do tipo de pagamento)
+- [[pay_org_pay_methods_f]] --- via `PAYMENT_TYPE_ID` (métodos de pagamento do tipo)
+- [[pay_payment_types_tl]] --- via `PAYMENT_TYPE_ID` (traduções do tipo de pagamento)
 
 ---
 

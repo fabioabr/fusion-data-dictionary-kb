@@ -75,7 +75,7 @@ Esta tabela é utilizada nos seguintes processos:
 - --- Tabela de configuracao raiz
 
 ### Tabelas-filha (FK de saída)
-- [[irc_states_tl]] --- via `STATE_ID` (traduÃ§Ãµes do estado do processo seletivo)
+- [[irc_states_tl]] --- via `STATE_ID` (traduções do estado do processo seletivo)
 
 ---
 

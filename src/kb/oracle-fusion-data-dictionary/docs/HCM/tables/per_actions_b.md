@@ -79,10 +79,10 @@ Esta tabela é utilizada nos seguintes processos:
 ## 🔗 Relacionamentos
 
 ### Tabelas-pai (FK de entrada)
-- [[per_action_types_b]] — via `ACTION_TYPE_ID` (tipo da aÃ§Ã£o de RH)
+- [[per_action_types_b]] — via `ACTION_TYPE_ID` (tipo da ação de RH)
 
 ### Tabelas-filha (FK de saída)
-- [[per_actions_tl]] — via `ACTION_ID` (traduÃ§Ãµes da aÃ§Ã£o de RH)
+- [[per_actions_tl]] — via `ACTION_ID` (traduções da ação de RH)
 - [[per_action_occurrences]] — via `ACTION_ID` (ocorrências da ação)
 - [[per_action_reason_usages]] — via `ACTION_ID` (motivos associados)
 

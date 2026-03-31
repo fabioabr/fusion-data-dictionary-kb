@@ -72,7 +72,7 @@ Esta tabela é utilizada nos seguintes processos:
 ## 🔗 Relacionamentos
 
 ### Tabelas-pai (FK de entrada)
-- [[per_dept_tree_node]] — via `TREE_NODE_ID` (nÃ³ da Ã¡rvore hierÃ¡rquica de departamentos)
+- [[per_dept_tree_node]] — via `TREE_NODE_ID` (nó da árvore hierárquica de departamentos)
 
 ### Tabelas-filha (FK de saída)
 - - Nenhuma tabela-filha direta identificada.

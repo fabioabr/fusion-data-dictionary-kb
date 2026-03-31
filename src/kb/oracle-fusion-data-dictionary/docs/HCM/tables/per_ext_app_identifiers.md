@@ -74,7 +74,7 @@ Esta tabela é utilizada nos seguintes processos:
 ## 🔗 Relacionamentos
 
 ### Tabelas-pai (FK de entrada)
-- [[per_all_people_f]] — via `PERSON_ID` (pessoa com identificador de aplicaÃ§Ã£o externa)
+- [[per_all_people_f]] — via `PERSON_ID` (pessoa com identificador de aplicação externa)
 
 ### Tabelas-filha (FK de saída)
 - - Nenhuma tabela-filha direta identificada.

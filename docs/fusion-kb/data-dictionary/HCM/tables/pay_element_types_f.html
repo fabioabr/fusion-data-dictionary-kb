@@ -262,6 +262,11 @@ pre.sql-code { margin: 0; padding: 16px; font-family: 'Courier New', monospace; 
 .bg-orange { background: var(--orange); } .bg-teal { background: var(--teal); }
 .bg-secondary { background: var(--secondary); }
 
+/* ====== PVO GROUPS ====== */
+.pvo-group .card-header .ri-arrow-down-s-line { transition: transform 0.2s; }
+.pvo-group.collapsed .pvo-group-body { display: none; }
+.pvo-group.collapsed .ri-arrow-down-s-line { transform: rotate(-90deg); }
+
 /* ====== RESPONSIVE ====== */
 @media (max-width: 768px) {
     .stats-grid { grid-template-columns: 1fr; }
@@ -467,7 +472,7 @@ const DATA = {
         "table": "pay_ele_classifications",
         "column": "CLASSIFICATION_ID",
         "desc": {
-          "pt": "classificaÃ§Ã£o do tipo de elemento de folha"
+          "pt": "classificação do tipo de elemento de folha"
         }
       }
     ],
@@ -490,14 +495,14 @@ const DATA = {
         "table": "pay_element_types_tl",
         "column": "ELEMENT_TYPE_ID",
         "desc": {
-          "pt": "traduÃ§Ãµes do tipo de elemento de folha"
+          "pt": "traduções do tipo de elemento de folha"
         }
       },
       {
         "table": "pay_element_criteria",
         "column": "ELEMENT_TYPE_ID",
         "desc": {
-          "pt": "critÃ©rios de elegibilidade do tipo de elemento"
+          "pt": "critérios de elegibilidade do tipo de elemento"
         }
       }
     ]
@@ -1728,6 +1733,1996 @@ const DATA = {
     "PJF_PROJ_ELEMENTS_TL": "HCM",
     "PJF_WORK_TYPES_VL": "HCM"
   },
+  "related_pvos": [
+    {
+      "column": "ADDITIONAL_ENTRY_ALLOWED_FLAG",
+      "pvo_name": "BIElementType",
+      "pvo_attr": "ElementTypeBaseDPEOAdditionalEntryAllowedFlag",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "ADJUSTMENT_ONLY_FLAG",
+      "pvo_name": "BIElementType",
+      "pvo_attr": "ElementTypeBaseDPEOAdjustmentOnlyFlag",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "ATTRIBUTE1",
+      "pvo_name": "BIElementType",
+      "pvo_attr": "ElementTypeBaseDPEOAttribute1",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "ATTRIBUTE10",
+      "pvo_name": "BIElementType",
+      "pvo_attr": "ElementTypeBaseDPEOAttribute10",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "ATTRIBUTE11",
+      "pvo_name": "BIElementType",
+      "pvo_attr": "ElementTypeBaseDPEOAttribute11",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "ATTRIBUTE12",
+      "pvo_name": "BIElementType",
+      "pvo_attr": "ElementTypeBaseDPEOAttribute12",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "ATTRIBUTE13",
+      "pvo_name": "BIElementType",
+      "pvo_attr": "ElementTypeBaseDPEOAttribute13",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "ATTRIBUTE14",
+      "pvo_name": "BIElementType",
+      "pvo_attr": "ElementTypeBaseDPEOAttribute14",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "ATTRIBUTE15",
+      "pvo_name": "BIElementType",
+      "pvo_attr": "ElementTypeBaseDPEOAttribute15",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "ATTRIBUTE16",
+      "pvo_name": "BIElementType",
+      "pvo_attr": "ElementTypeBaseDPEOAttribute16",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "ATTRIBUTE17",
+      "pvo_name": "BIElementType",
+      "pvo_attr": "ElementTypeBaseDPEOAttribute17",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "ATTRIBUTE18",
+      "pvo_name": "BIElementType",
+      "pvo_attr": "ElementTypeBaseDPEOAttribute18",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "ATTRIBUTE19",
+      "pvo_name": "BIElementType",
+      "pvo_attr": "ElementTypeBaseDPEOAttribute19",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "ATTRIBUTE2",
+      "pvo_name": "BIElementType",
+      "pvo_attr": "ElementTypeBaseDPEOAttribute2",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "ATTRIBUTE20",
+      "pvo_name": "BIElementType",
+      "pvo_attr": "ElementTypeBaseDPEOAttribute20",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "ATTRIBUTE21",
+      "pvo_name": "BIElementType",
+      "pvo_attr": "ElementTypeBaseDPEOAttribute21",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "ATTRIBUTE22",
+      "pvo_name": "BIElementType",
+      "pvo_attr": "ElementTypeBaseDPEOAttribute22",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "ATTRIBUTE23",
+      "pvo_name": "BIElementType",
+      "pvo_attr": "ElementTypeBaseDPEOAttribute23",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "ATTRIBUTE24",
+      "pvo_name": "BIElementType",
+      "pvo_attr": "ElementTypeBaseDPEOAttribute24",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "ATTRIBUTE25",
+      "pvo_name": "BIElementType",
+      "pvo_attr": "ElementTypeBaseDPEOAttribute25",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "ATTRIBUTE26",
+      "pvo_name": "BIElementType",
+      "pvo_attr": "ElementTypeBaseDPEOAttribute26",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "ATTRIBUTE27",
+      "pvo_name": "BIElementType",
+      "pvo_attr": "ElementTypeBaseDPEOAttribute27",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "ATTRIBUTE28",
+      "pvo_name": "BIElementType",
+      "pvo_attr": "ElementTypeBaseDPEOAttribute28",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "ATTRIBUTE29",
+      "pvo_name": "BIElementType",
+      "pvo_attr": "ElementTypeBaseDPEOAttribute29",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "ATTRIBUTE3",
+      "pvo_name": "BIElementType",
+      "pvo_attr": "ElementTypeBaseDPEOAttribute3",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "ATTRIBUTE30",
+      "pvo_name": "BIElementType",
+      "pvo_attr": "ElementTypeBaseDPEOAttribute30",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "ATTRIBUTE4",
+      "pvo_name": "BIElementType",
+      "pvo_attr": "ElementTypeBaseDPEOAttribute4",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "ATTRIBUTE5",
+      "pvo_name": "BIElementType",
+      "pvo_attr": "ElementTypeBaseDPEOAttribute5",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "ATTRIBUTE6",
+      "pvo_name": "BIElementType",
+      "pvo_attr": "ElementTypeBaseDPEOAttribute6",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "ATTRIBUTE7",
+      "pvo_name": "BIElementType",
+      "pvo_attr": "ElementTypeBaseDPEOAttribute7",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "ATTRIBUTE8",
+      "pvo_name": "BIElementType",
+      "pvo_attr": "ElementTypeBaseDPEOAttribute8",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "ATTRIBUTE9",
+      "pvo_name": "BIElementType",
+      "pvo_attr": "ElementTypeBaseDPEOAttribute9",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "ATTRIBUTE_CATEGORY",
+      "pvo_name": "BIElementType",
+      "pvo_attr": "ElementTypeBaseDPEOAttributeCategory",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "ATTRIBUTE_DATE1",
+      "pvo_name": "BIElementType",
+      "pvo_attr": "ElementTypeBaseDPEOAttributeDate1",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "ATTRIBUTE_DATE10",
+      "pvo_name": "BIElementType",
+      "pvo_attr": "ElementTypeBaseDPEOAttributeDate10",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "ATTRIBUTE_DATE11",
+      "pvo_name": "BIElementType",
+      "pvo_attr": "ElementTypeBaseDPEOAttributeDate11",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "ATTRIBUTE_DATE12",
+      "pvo_name": "BIElementType",
+      "pvo_attr": "ElementTypeBaseDPEOAttributeDate12",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "ATTRIBUTE_DATE13",
+      "pvo_name": "BIElementType",
+      "pvo_attr": "ElementTypeBaseDPEOAttributeDate13",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "ATTRIBUTE_DATE14",
+      "pvo_name": "BIElementType",
+      "pvo_attr": "ElementTypeBaseDPEOAttributeDate14",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "ATTRIBUTE_DATE15",
+      "pvo_name": "BIElementType",
+      "pvo_attr": "ElementTypeBaseDPEOAttributeDate15",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "ATTRIBUTE_DATE2",
+      "pvo_name": "BIElementType",
+      "pvo_attr": "ElementTypeBaseDPEOAttributeDate2",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "ATTRIBUTE_DATE3",
+      "pvo_name": "BIElementType",
+      "pvo_attr": "ElementTypeBaseDPEOAttributeDate3",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "ATTRIBUTE_DATE4",
+      "pvo_name": "BIElementType",
+      "pvo_attr": "ElementTypeBaseDPEOAttributeDate4",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "ATTRIBUTE_DATE5",
+      "pvo_name": "BIElementType",
+      "pvo_attr": "ElementTypeBaseDPEOAttributeDate5",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "ATTRIBUTE_DATE6",
+      "pvo_name": "BIElementType",
+      "pvo_attr": "ElementTypeBaseDPEOAttributeDate6",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "ATTRIBUTE_DATE7",
+      "pvo_name": "BIElementType",
+      "pvo_attr": "ElementTypeBaseDPEOAttributeDate7",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "ATTRIBUTE_DATE8",
+      "pvo_name": "BIElementType",
+      "pvo_attr": "ElementTypeBaseDPEOAttributeDate8",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "ATTRIBUTE_DATE9",
+      "pvo_name": "BIElementType",
+      "pvo_attr": "ElementTypeBaseDPEOAttributeDate9",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "ATTRIBUTE_NUMBER1",
+      "pvo_name": "BIElementType",
+      "pvo_attr": "ElementTypeBaseDPEOAttributeNumber1",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "ATTRIBUTE_NUMBER10",
+      "pvo_name": "BIElementType",
+      "pvo_attr": "ElementTypeBaseDPEOAttributeNumber10",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "ATTRIBUTE_NUMBER11",
+      "pvo_name": "BIElementType",
+      "pvo_attr": "ElementTypeBaseDPEOAttributeNumber11",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "ATTRIBUTE_NUMBER12",
+      "pvo_name": "BIElementType",
+      "pvo_attr": "ElementTypeBaseDPEOAttributeNumber12",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "ATTRIBUTE_NUMBER13",
+      "pvo_name": "BIElementType",
+      "pvo_attr": "ElementTypeBaseDPEOAttributeNumber13",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "ATTRIBUTE_NUMBER14",
+      "pvo_name": "BIElementType",
+      "pvo_attr": "ElementTypeBaseDPEOAttributeNumber14",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "ATTRIBUTE_NUMBER15",
+      "pvo_name": "BIElementType",
+      "pvo_attr": "ElementTypeBaseDPEOAttributeNumber15",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "ATTRIBUTE_NUMBER16",
+      "pvo_name": "BIElementType",
+      "pvo_attr": "ElementTypeBaseDPEOAttributeNumber16",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "ATTRIBUTE_NUMBER17",
+      "pvo_name": "BIElementType",
+      "pvo_attr": "ElementTypeBaseDPEOAttributeNumber17",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "ATTRIBUTE_NUMBER18",
+      "pvo_name": "BIElementType",
+      "pvo_attr": "ElementTypeBaseDPEOAttributeNumber18",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "ATTRIBUTE_NUMBER19",
+      "pvo_name": "BIElementType",
+      "pvo_attr": "ElementTypeBaseDPEOAttributeNumber19",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "ATTRIBUTE_NUMBER2",
+      "pvo_name": "BIElementType",
+      "pvo_attr": "ElementTypeBaseDPEOAttributeNumber2",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "ATTRIBUTE_NUMBER20",
+      "pvo_name": "BIElementType",
+      "pvo_attr": "ElementTypeBaseDPEOAttributeNumber20",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "ATTRIBUTE_NUMBER3",
+      "pvo_name": "BIElementType",
+      "pvo_attr": "ElementTypeBaseDPEOAttributeNumber3",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "ATTRIBUTE_NUMBER4",
+      "pvo_name": "BIElementType",
+      "pvo_attr": "ElementTypeBaseDPEOAttributeNumber4",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "ATTRIBUTE_NUMBER5",
+      "pvo_name": "BIElementType",
+      "pvo_attr": "ElementTypeBaseDPEOAttributeNumber5",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "ATTRIBUTE_NUMBER6",
+      "pvo_name": "BIElementType",
+      "pvo_attr": "ElementTypeBaseDPEOAttributeNumber6",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "ATTRIBUTE_NUMBER7",
+      "pvo_name": "BIElementType",
+      "pvo_attr": "ElementTypeBaseDPEOAttributeNumber7",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "ATTRIBUTE_NUMBER8",
+      "pvo_name": "BIElementType",
+      "pvo_attr": "ElementTypeBaseDPEOAttributeNumber8",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "ATTRIBUTE_NUMBER9",
+      "pvo_name": "BIElementType",
+      "pvo_attr": "ElementTypeBaseDPEOAttributeNumber9",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "BASE_ELEMENT_NAME",
+      "pvo_name": "BIElementType",
+      "pvo_attr": "ElementTypeBaseDPEOBaseElementName",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "CALCULATION_FORMULA_ID",
+      "pvo_name": "BIElementType",
+      "pvo_attr": "ElementTypeBaseDPEOCalculationFormulaId",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "CLASSIFICATION_ID",
+      "pvo_name": "BIElementType",
+      "pvo_attr": "ElementTypeBaseDPEOClassificationId",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "CLOSED_FOR_ENTRY_FLAG",
+      "pvo_name": "BIElementType",
+      "pvo_attr": "ElementTypeBaseDPEOClosedForEntryFlag",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "CREATED_BY",
+      "pvo_name": "BIElementType",
+      "pvo_attr": "ElementTypeBaseDPEOCreatedBy",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "CREATION_DATE",
+      "pvo_name": "BIElementType",
+      "pvo_attr": "ElementTypeBaseDPEOCreationDate",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "CREATOR_TYPE",
+      "pvo_name": "BIElementType",
+      "pvo_attr": "ElementTypeBaseDPEOCreatorType",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "DEDUCTION_OR_EXEMPTION",
+      "pvo_name": "BIElementType",
+      "pvo_attr": "ElementTypeBaseDPEODeductionOrExemption",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "DEDUCTION_TYPE_ID",
+      "pvo_name": "BIElementType",
+      "pvo_attr": "ElementTypeBaseDPEODeductionTypeId",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "DEFAULTING_FORMULA_ID",
+      "pvo_name": "BIElementType",
+      "pvo_attr": "ElementTypeBaseDPEODefaultingFormulaId",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "EFFECTIVE_END_DATE",
+      "pvo_name": "BIElementType",
+      "pvo_attr": "ElementTypeBaseDPEOEffectiveEndDate",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "EFFECTIVE_START_DATE",
+      "pvo_name": "BIElementType",
+      "pvo_attr": "ElementTypeBaseDPEOEffectiveStartDate",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "ELEMENT_INFORMATION1",
+      "pvo_name": "BIElementType",
+      "pvo_attr": "ElementTypeBaseDPEOElementInformation1",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "ELEMENT_INFORMATION10",
+      "pvo_name": "BIElementType",
+      "pvo_attr": "ElementTypeBaseDPEOElementInformation10",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "ELEMENT_INFORMATION11",
+      "pvo_name": "BIElementType",
+      "pvo_attr": "ElementTypeBaseDPEOElementInformation11",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "ELEMENT_INFORMATION12",
+      "pvo_name": "BIElementType",
+      "pvo_attr": "ElementTypeBaseDPEOElementInformation12",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "ELEMENT_INFORMATION13",
+      "pvo_name": "BIElementType",
+      "pvo_attr": "ElementTypeBaseDPEOElementInformation13",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "ELEMENT_INFORMATION14",
+      "pvo_name": "BIElementType",
+      "pvo_attr": "ElementTypeBaseDPEOElementInformation14",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "ELEMENT_INFORMATION15",
+      "pvo_name": "BIElementType",
+      "pvo_attr": "ElementTypeBaseDPEOElementInformation15",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "ELEMENT_INFORMATION16",
+      "pvo_name": "BIElementType",
+      "pvo_attr": "ElementTypeBaseDPEOElementInformation16",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "ELEMENT_INFORMATION17",
+      "pvo_name": "BIElementType",
+      "pvo_attr": "ElementTypeBaseDPEOElementInformation17",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "ELEMENT_INFORMATION18",
+      "pvo_name": "BIElementType",
+      "pvo_attr": "ElementTypeBaseDPEOElementInformation18",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "ELEMENT_INFORMATION19",
+      "pvo_name": "BIElementType",
+      "pvo_attr": "ElementTypeBaseDPEOElementInformation19",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "ELEMENT_INFORMATION2",
+      "pvo_name": "BIElementType",
+      "pvo_attr": "ElementTypeBaseDPEOElementInformation2",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "ELEMENT_INFORMATION20",
+      "pvo_name": "BIElementType",
+      "pvo_attr": "ElementTypeBaseDPEOElementInformation20",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "ELEMENT_INFORMATION21",
+      "pvo_name": "BIElementType",
+      "pvo_attr": "ElementTypeBaseDPEOElementInformation21",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "ELEMENT_INFORMATION22",
+      "pvo_name": "BIElementType",
+      "pvo_attr": "ElementTypeBaseDPEOElementInformation22",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "ELEMENT_INFORMATION23",
+      "pvo_name": "BIElementType",
+      "pvo_attr": "ElementTypeBaseDPEOElementInformation23",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "ELEMENT_INFORMATION24",
+      "pvo_name": "BIElementType",
+      "pvo_attr": "ElementTypeBaseDPEOElementInformation24",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "ELEMENT_INFORMATION25",
+      "pvo_name": "BIElementType",
+      "pvo_attr": "ElementTypeBaseDPEOElementInformation25",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "ELEMENT_INFORMATION26",
+      "pvo_name": "BIElementType",
+      "pvo_attr": "ElementTypeBaseDPEOElementInformation26",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "ELEMENT_INFORMATION27",
+      "pvo_name": "BIElementType",
+      "pvo_attr": "ElementTypeBaseDPEOElementInformation27",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "ELEMENT_INFORMATION28",
+      "pvo_name": "BIElementType",
+      "pvo_attr": "ElementTypeBaseDPEOElementInformation28",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "ELEMENT_INFORMATION29",
+      "pvo_name": "BIElementType",
+      "pvo_attr": "ElementTypeBaseDPEOElementInformation29",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "ELEMENT_INFORMATION3",
+      "pvo_name": "BIElementType",
+      "pvo_attr": "ElementTypeBaseDPEOElementInformation3",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "ELEMENT_INFORMATION30",
+      "pvo_name": "BIElementType",
+      "pvo_attr": "ElementTypeBaseDPEOElementInformation30",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "ELEMENT_INFORMATION4",
+      "pvo_name": "BIElementType",
+      "pvo_attr": "ElementTypeBaseDPEOElementInformation4",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "ELEMENT_INFORMATION5",
+      "pvo_name": "BIElementType",
+      "pvo_attr": "ElementTypeBaseDPEOElementInformation5",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "ELEMENT_INFORMATION6",
+      "pvo_name": "BIElementType",
+      "pvo_attr": "ElementTypeBaseDPEOElementInformation6",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "ELEMENT_INFORMATION7",
+      "pvo_name": "BIElementType",
+      "pvo_attr": "ElementTypeBaseDPEOElementInformation7",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "ELEMENT_INFORMATION8",
+      "pvo_name": "BIElementType",
+      "pvo_attr": "ElementTypeBaseDPEOElementInformation8",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "ELEMENT_INFORMATION9",
+      "pvo_name": "BIElementType",
+      "pvo_attr": "ElementTypeBaseDPEOElementInformation9",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "ELEMENT_INFORMATION_CATEGORY",
+      "pvo_name": "BIElementType",
+      "pvo_attr": "ElementTypeBaseDPEOElementInformationCategory",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "ELEMENT_INFORMATION_DATE1",
+      "pvo_name": "BIElementType",
+      "pvo_attr": "ElementTypeBaseDPEOElementInformationDate1",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "ELEMENT_INFORMATION_DATE10",
+      "pvo_name": "BIElementType",
+      "pvo_attr": "ElementTypeBaseDPEOElementInformationDate10",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "ELEMENT_INFORMATION_DATE11",
+      "pvo_name": "BIElementType",
+      "pvo_attr": "ElementTypeBaseDPEOElementInformationDate11",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "ELEMENT_INFORMATION_DATE12",
+      "pvo_name": "BIElementType",
+      "pvo_attr": "ElementTypeBaseDPEOElementInformationDate12",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "ELEMENT_INFORMATION_DATE13",
+      "pvo_name": "BIElementType",
+      "pvo_attr": "ElementTypeBaseDPEOElementInformationDate13",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "ELEMENT_INFORMATION_DATE14",
+      "pvo_name": "BIElementType",
+      "pvo_attr": "ElementTypeBaseDPEOElementInformationDate14",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "ELEMENT_INFORMATION_DATE15",
+      "pvo_name": "BIElementType",
+      "pvo_attr": "ElementTypeBaseDPEOElementInformationDate15",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "ELEMENT_INFORMATION_DATE2",
+      "pvo_name": "BIElementType",
+      "pvo_attr": "ElementTypeBaseDPEOElementInformationDate2",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "ELEMENT_INFORMATION_DATE3",
+      "pvo_name": "BIElementType",
+      "pvo_attr": "ElementTypeBaseDPEOElementInformationDate3",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "ELEMENT_INFORMATION_DATE4",
+      "pvo_name": "BIElementType",
+      "pvo_attr": "ElementTypeBaseDPEOElementInformationDate4",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "ELEMENT_INFORMATION_DATE5",
+      "pvo_name": "BIElementType",
+      "pvo_attr": "ElementTypeBaseDPEOElementInformationDate5",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "ELEMENT_INFORMATION_DATE6",
+      "pvo_name": "BIElementType",
+      "pvo_attr": "ElementTypeBaseDPEOElementInformationDate6",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "ELEMENT_INFORMATION_DATE7",
+      "pvo_name": "BIElementType",
+      "pvo_attr": "ElementTypeBaseDPEOElementInformationDate7",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "ELEMENT_INFORMATION_DATE8",
+      "pvo_name": "BIElementType",
+      "pvo_attr": "ElementTypeBaseDPEOElementInformationDate8",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "ELEMENT_INFORMATION_DATE9",
+      "pvo_name": "BIElementType",
+      "pvo_attr": "ElementTypeBaseDPEOElementInformationDate9",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "ELEMENT_INFORMATION_NUMBER1",
+      "pvo_name": "BIElementType",
+      "pvo_attr": "ElementTypeBaseDPEOElementInformationNumber1",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "ELEMENT_INFORMATION_NUMBER10",
+      "pvo_name": "BIElementType",
+      "pvo_attr": "ElementTypeBaseDPEOElementInformationNumber10",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "ELEMENT_INFORMATION_NUMBER11",
+      "pvo_name": "BIElementType",
+      "pvo_attr": "ElementTypeBaseDPEOElementInformationNumber11",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "ELEMENT_INFORMATION_NUMBER12",
+      "pvo_name": "BIElementType",
+      "pvo_attr": "ElementTypeBaseDPEOElementInformationNumber12",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "ELEMENT_INFORMATION_NUMBER13",
+      "pvo_name": "BIElementType",
+      "pvo_attr": "ElementTypeBaseDPEOElementInformationNumber13",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "ELEMENT_INFORMATION_NUMBER14",
+      "pvo_name": "BIElementType",
+      "pvo_attr": "ElementTypeBaseDPEOElementInformationNumber14",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "ELEMENT_INFORMATION_NUMBER15",
+      "pvo_name": "BIElementType",
+      "pvo_attr": "ElementTypeBaseDPEOElementInformationNumber15",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "ELEMENT_INFORMATION_NUMBER16",
+      "pvo_name": "BIElementType",
+      "pvo_attr": "ElementTypeBaseDPEOElementInformationNumber16",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "ELEMENT_INFORMATION_NUMBER17",
+      "pvo_name": "BIElementType",
+      "pvo_attr": "ElementTypeBaseDPEOElementInformationNumber17",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "ELEMENT_INFORMATION_NUMBER18",
+      "pvo_name": "BIElementType",
+      "pvo_attr": "ElementTypeBaseDPEOElementInformationNumber18",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "ELEMENT_INFORMATION_NUMBER19",
+      "pvo_name": "BIElementType",
+      "pvo_attr": "ElementTypeBaseDPEOElementInformationNumber19",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "ELEMENT_INFORMATION_NUMBER2",
+      "pvo_name": "BIElementType",
+      "pvo_attr": "ElementTypeBaseDPEOElementInformationNumber2",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "ELEMENT_INFORMATION_NUMBER20",
+      "pvo_name": "BIElementType",
+      "pvo_attr": "ElementTypeBaseDPEOElementInformationNumber20",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "ELEMENT_INFORMATION_NUMBER3",
+      "pvo_name": "BIElementType",
+      "pvo_attr": "ElementTypeBaseDPEOElementInformationNumber3",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "ELEMENT_INFORMATION_NUMBER4",
+      "pvo_name": "BIElementType",
+      "pvo_attr": "ElementTypeBaseDPEOElementInformationNumber4",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "ELEMENT_INFORMATION_NUMBER5",
+      "pvo_name": "BIElementType",
+      "pvo_attr": "ElementTypeBaseDPEOElementInformationNumber5",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "ELEMENT_INFORMATION_NUMBER6",
+      "pvo_name": "BIElementType",
+      "pvo_attr": "ElementTypeBaseDPEOElementInformationNumber6",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "ELEMENT_INFORMATION_NUMBER7",
+      "pvo_name": "BIElementType",
+      "pvo_attr": "ElementTypeBaseDPEOElementInformationNumber7",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "ELEMENT_INFORMATION_NUMBER8",
+      "pvo_name": "BIElementType",
+      "pvo_attr": "ElementTypeBaseDPEOElementInformationNumber8",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "ELEMENT_INFORMATION_NUMBER9",
+      "pvo_name": "BIElementType",
+      "pvo_attr": "ElementTypeBaseDPEOElementInformationNumber9",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "ELEMENT_TYPE_ID",
+      "pvo_name": "BIElementType",
+      "pvo_attr": "ElementTypeBaseDPEOElementTypeId",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "ENDING_TIME_DEF_ID",
+      "pvo_name": "BIElementType",
+      "pvo_attr": "ElementTypeBaseDPEOEndingTimeDefId",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "FORMULA_ID",
+      "pvo_name": "BIElementType",
+      "pvo_attr": "ElementTypeBaseDPEOFormulaId",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "GROSSUP_FLAG",
+      "pvo_name": "BIElementType",
+      "pvo_attr": "ElementTypeBaseDPEOGrossupFlag",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "INDIRECT_ONLY_FLAG",
+      "pvo_name": "BIElementType",
+      "pvo_attr": "ElementTypeBaseDPEOIndirectOnlyFlag",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "INPUT_CURRENCY_CODE",
+      "pvo_name": "BIElementType",
+      "pvo_attr": "ElementTypeBaseDPEOInputCurrencyCode",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "ITERATIVE_FLAG",
+      "pvo_name": "BIElementType",
+      "pvo_attr": "ElementTypeBaseDPEOIterativeFlag",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "ITERATIVE_FORMULA_ID",
+      "pvo_name": "BIElementType",
+      "pvo_attr": "ElementTypeBaseDPEOIterativeFormulaId",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "ITERATIVE_PRIORITY",
+      "pvo_name": "BIElementType",
+      "pvo_attr": "ElementTypeBaseDPEOIterativePriority",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "LAST_UPDATE_DATE",
+      "pvo_name": "BIElementType",
+      "pvo_attr": "ElementTypeBaseDPEOLastUpdateDate",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "LAST_UPDATE_LOGIN",
+      "pvo_name": "BIElementType",
+      "pvo_attr": "ElementTypeBaseDPEOLastUpdateLogin",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "LAST_UPDATED_BY",
+      "pvo_name": "BIElementType",
+      "pvo_attr": "ElementTypeBaseDPEOLastUpdatedBy",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "LEGISLATION_CODE",
+      "pvo_name": "BIElementType",
+      "pvo_attr": "ElementTypeBaseDPEOLegislationCode",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "LEGISLATIVE_DATA_GROUP_ID",
+      "pvo_name": "BIElementType",
+      "pvo_attr": "ElementTypeBaseDPEOLegislativeDataGroupId",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "MODULE_ID",
+      "pvo_name": "BIElementType",
+      "pvo_attr": "ElementTypeBaseDPEOModuleId",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "MULTIPLE_ENTRIES_ALLOWED_FLAG",
+      "pvo_name": "BIElementType",
+      "pvo_attr": "ElementTypeBaseDPEOMultipleEntriesAllowedFlag",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "OBJECT_VERSION_NUMBER",
+      "pvo_name": "BIElementType",
+      "pvo_attr": "ElementTypeBaseDPEOObjectVersionNumber",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "ONCE_EACH_PERIOD_FLAG",
+      "pvo_name": "BIElementType",
+      "pvo_attr": "ElementTypeBaseDPEOOnceEachPeriodFlag",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "OUTPUT_CURRENCY_CODE",
+      "pvo_name": "BIElementType",
+      "pvo_attr": "ElementTypeBaseDPEOOutputCurrencyCode",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "PROCESS_IN_RUN_FLAG",
+      "pvo_name": "BIElementType",
+      "pvo_attr": "ElementTypeBaseDPEOProcessInRunFlag",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "PROCESS_MODE",
+      "pvo_name": "BIElementType",
+      "pvo_attr": "ElementTypeBaseDPEOProcessMode",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "PROCESSING_PRIORITY",
+      "pvo_name": "BIElementType",
+      "pvo_attr": "ElementTypeBaseDPEOProcessingPriority",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "PROCESSING_TYPE",
+      "pvo_name": "BIElementType",
+      "pvo_attr": "ElementTypeBaseDPEOProcessingType",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "PRORATION_FORMULA_ID",
+      "pvo_name": "BIElementType",
+      "pvo_attr": "ElementTypeBaseDPEOProrationFormulaId",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "PRORATION_GROUP_ID",
+      "pvo_name": "BIElementType",
+      "pvo_attr": "ElementTypeBaseDPEOProrationGroupId",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "RECALC_EVENT_GROUP_ID",
+      "pvo_name": "BIElementType",
+      "pvo_attr": "ElementTypeBaseDPEORecalcEventGroupId",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "SECONDARY_CLASSIFICATION_ID",
+      "pvo_name": "BIElementType",
+      "pvo_attr": "ElementTypeBaseDPEOSecondaryClassificationId",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "STANDARD_LINK_FLAG",
+      "pvo_name": "BIElementType",
+      "pvo_attr": "ElementTypeBaseDPEOStandardLinkFlag",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "STARTING_TIME_DEF_ID",
+      "pvo_name": "BIElementType",
+      "pvo_attr": "ElementTypeBaseDPEOStartingTimeDefId",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "TIME_DEFINITION_ID",
+      "pvo_name": "BIElementType",
+      "pvo_attr": "ElementTypeBaseDPEOTimeDefinitionId",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "TIME_DEFINITION_TYPE",
+      "pvo_name": "BIElementType",
+      "pvo_attr": "ElementTypeBaseDPEOTimeDefinitionType",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "USE_AT_ASG_LEVEL",
+      "pvo_name": "BIElementType",
+      "pvo_attr": "ElementTypeBaseDPEOUseAtAsgLevel",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "USE_AT_REL_LEVEL",
+      "pvo_name": "BIElementType",
+      "pvo_attr": "ElementTypeBaseDPEOUseAtRelLevel",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "USE_AT_TERM_LEVEL",
+      "pvo_name": "BIElementType",
+      "pvo_attr": "ElementTypeBaseDPEOUseAtTermLevel",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "VALIDATION_FORMULA_ID",
+      "pvo_name": "BIElementType",
+      "pvo_attr": "ElementTypeBaseDPEOValidationFormulaId",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "VALIDATION_OVERRIDE_MESSAGE",
+      "pvo_name": "BIElementType",
+      "pvo_attr": "ElementTypeBaseDPEOValidationOverrideMessage",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "ADDITIONAL_ENTRY_ALLOWED_FLAG",
+      "pvo_name": "ElementTypeClassificationPVO",
+      "pvo_attr": "ElementTypeDPEOAdditionalEntryAllowedFlag",
+      "module_code": "GL",
+      "bicc": false
+    },
+    {
+      "column": "ADJUSTMENT_ONLY_FLAG",
+      "pvo_name": "ElementTypeClassificationPVO",
+      "pvo_attr": "ElementTypeDPEOAdjustmentOnlyFlag",
+      "module_code": "GL",
+      "bicc": false
+    },
+    {
+      "column": "BASE_ELEMENT_NAME",
+      "pvo_name": "ElementTypeClassificationPVO",
+      "pvo_attr": "ElementTypeDPEOBaseElementName",
+      "module_code": "GL",
+      "bicc": false
+    },
+    {
+      "column": "CALCULATION_FORMULA_ID",
+      "pvo_name": "ElementTypeClassificationPVO",
+      "pvo_attr": "ElementTypeDPEOCalculationFormulaId",
+      "module_code": "GL",
+      "bicc": false
+    },
+    {
+      "column": "CLASSIFICATION_ID",
+      "pvo_name": "ElementTypeClassificationPVO",
+      "pvo_attr": "ElementTypeDPEOClassificationId",
+      "module_code": "GL",
+      "bicc": false
+    },
+    {
+      "column": "CLOSED_FOR_ENTRY_FLAG",
+      "pvo_name": "ElementTypeClassificationPVO",
+      "pvo_attr": "ElementTypeDPEOClosedForEntryFlag",
+      "module_code": "GL",
+      "bicc": false
+    },
+    {
+      "column": "CREATED_BY",
+      "pvo_name": "ElementTypeClassificationPVO",
+      "pvo_attr": "ElementTypeDPEOCreatedBy",
+      "module_code": "GL",
+      "bicc": false
+    },
+    {
+      "column": "CREATION_DATE",
+      "pvo_name": "ElementTypeClassificationPVO",
+      "pvo_attr": "ElementTypeDPEOCreationDate",
+      "module_code": "GL",
+      "bicc": false
+    },
+    {
+      "column": "CREATOR_TYPE",
+      "pvo_name": "ElementTypeClassificationPVO",
+      "pvo_attr": "ElementTypeDPEOCreatorType",
+      "module_code": "GL",
+      "bicc": false
+    },
+    {
+      "column": "DEDUCTION_OR_EXEMPTION",
+      "pvo_name": "ElementTypeClassificationPVO",
+      "pvo_attr": "ElementTypeDPEODeductionOrExemption",
+      "module_code": "GL",
+      "bicc": false
+    },
+    {
+      "column": "DEDUCTION_TYPE_ID",
+      "pvo_name": "ElementTypeClassificationPVO",
+      "pvo_attr": "ElementTypeDPEODeductionTypeId",
+      "module_code": "GL",
+      "bicc": false
+    },
+    {
+      "column": "DEFAULTING_FORMULA_ID",
+      "pvo_name": "ElementTypeClassificationPVO",
+      "pvo_attr": "ElementTypeDPEODefaultingFormulaId",
+      "module_code": "GL",
+      "bicc": false
+    },
+    {
+      "column": "EFFECTIVE_END_DATE",
+      "pvo_name": "ElementTypeClassificationPVO",
+      "pvo_attr": "EffectiveEndDate",
+      "module_code": "GL",
+      "bicc": true
+    },
+    {
+      "column": "EFFECTIVE_START_DATE",
+      "pvo_name": "ElementTypeClassificationPVO",
+      "pvo_attr": "EffectiveStartDate",
+      "module_code": "GL",
+      "bicc": true
+    },
+    {
+      "column": "ELEMENT_TYPE_ID",
+      "pvo_name": "ElementTypeClassificationPVO",
+      "pvo_attr": "ElementTypeId",
+      "module_code": "GL",
+      "bicc": true
+    },
+    {
+      "column": "ENDING_TIME_DEF_ID",
+      "pvo_name": "ElementTypeClassificationPVO",
+      "pvo_attr": "ElementTypeDPEOEndingTimeDefId",
+      "module_code": "GL",
+      "bicc": false
+    },
+    {
+      "column": "FORMULA_ID",
+      "pvo_name": "ElementTypeClassificationPVO",
+      "pvo_attr": "ElementTypeDPEOFormulaId",
+      "module_code": "GL",
+      "bicc": false
+    },
+    {
+      "column": "GROSSUP_FLAG",
+      "pvo_name": "ElementTypeClassificationPVO",
+      "pvo_attr": "ElementTypeDPEOGrossupFlag",
+      "module_code": "GL",
+      "bicc": false
+    },
+    {
+      "column": "INDIRECT_ONLY_FLAG",
+      "pvo_name": "ElementTypeClassificationPVO",
+      "pvo_attr": "ElementTypeDPEOIndirectOnlyFlag",
+      "module_code": "GL",
+      "bicc": false
+    },
+    {
+      "column": "INPUT_CURRENCY_CODE",
+      "pvo_name": "ElementTypeClassificationPVO",
+      "pvo_attr": "ElementTypeDPEOInputCurrencyCode",
+      "module_code": "GL",
+      "bicc": false
+    },
+    {
+      "column": "ITERATIVE_FLAG",
+      "pvo_name": "ElementTypeClassificationPVO",
+      "pvo_attr": "ElementTypeDPEOIterativeFlag",
+      "module_code": "GL",
+      "bicc": false
+    },
+    {
+      "column": "ITERATIVE_FORMULA_ID",
+      "pvo_name": "ElementTypeClassificationPVO",
+      "pvo_attr": "ElementTypeDPEOIterativeFormulaId",
+      "module_code": "GL",
+      "bicc": false
+    },
+    {
+      "column": "ITERATIVE_PRIORITY",
+      "pvo_name": "ElementTypeClassificationPVO",
+      "pvo_attr": "ElementTypeDPEOIterativePriority",
+      "module_code": "GL",
+      "bicc": false
+    },
+    {
+      "column": "LAST_UPDATE_DATE",
+      "pvo_name": "ElementTypeClassificationPVO",
+      "pvo_attr": "ElementTypeDPEOLastUpdateDate",
+      "module_code": "GL",
+      "bicc": true
+    },
+    {
+      "column": "LAST_UPDATE_LOGIN",
+      "pvo_name": "ElementTypeClassificationPVO",
+      "pvo_attr": "ElementTypeDPEOLastUpdateLogin",
+      "module_code": "GL",
+      "bicc": false
+    },
+    {
+      "column": "LAST_UPDATED_BY",
+      "pvo_name": "ElementTypeClassificationPVO",
+      "pvo_attr": "ElementTypeDPEOLastUpdatedBy",
+      "module_code": "GL",
+      "bicc": false
+    },
+    {
+      "column": "LEGISLATION_CODE",
+      "pvo_name": "ElementTypeClassificationPVO",
+      "pvo_attr": "ElementTypeDPEOLegislationCode",
+      "module_code": "GL",
+      "bicc": false
+    },
+    {
+      "column": "LEGISLATIVE_DATA_GROUP_ID",
+      "pvo_name": "ElementTypeClassificationPVO",
+      "pvo_attr": "ElementTypeDPEOLegislativeDataGroupId",
+      "module_code": "GL",
+      "bicc": false
+    },
+    {
+      "column": "MODULE_ID",
+      "pvo_name": "ElementTypeClassificationPVO",
+      "pvo_attr": "ElementTypeDPEOModuleId",
+      "module_code": "GL",
+      "bicc": false
+    },
+    {
+      "column": "MULTIPLE_ENTRIES_ALLOWED_FLAG",
+      "pvo_name": "ElementTypeClassificationPVO",
+      "pvo_attr": "ElementTypeDPEOMultipleEntriesAllowedFlag",
+      "module_code": "GL",
+      "bicc": false
+    },
+    {
+      "column": "OBJECT_VERSION_NUMBER",
+      "pvo_name": "ElementTypeClassificationPVO",
+      "pvo_attr": "ElementTypeDPEOObjectVersionNumber",
+      "module_code": "GL",
+      "bicc": false
+    },
+    {
+      "column": "ONCE_EACH_PERIOD_FLAG",
+      "pvo_name": "ElementTypeClassificationPVO",
+      "pvo_attr": "ElementTypeDPEOOnceEachPeriodFlag",
+      "module_code": "GL",
+      "bicc": false
+    },
+    {
+      "column": "OUTPUT_CURRENCY_CODE",
+      "pvo_name": "ElementTypeClassificationPVO",
+      "pvo_attr": "ElementTypeDPEOOutputCurrencyCode",
+      "module_code": "GL",
+      "bicc": false
+    },
+    {
+      "column": "PROCESS_IN_RUN_FLAG",
+      "pvo_name": "ElementTypeClassificationPVO",
+      "pvo_attr": "ElementTypeDPEOProcessInRunFlag",
+      "module_code": "GL",
+      "bicc": false
+    },
+    {
+      "column": "PROCESS_MODE",
+      "pvo_name": "ElementTypeClassificationPVO",
+      "pvo_attr": "ElementTypeDPEOProcessMode",
+      "module_code": "GL",
+      "bicc": false
+    },
+    {
+      "column": "PROCESSING_PRIORITY",
+      "pvo_name": "ElementTypeClassificationPVO",
+      "pvo_attr": "ElementTypeDPEOProcessingPriority",
+      "module_code": "GL",
+      "bicc": false
+    },
+    {
+      "column": "PROCESSING_TYPE",
+      "pvo_name": "ElementTypeClassificationPVO",
+      "pvo_attr": "ElementTypeDPEOProcessingType",
+      "module_code": "GL",
+      "bicc": false
+    },
+    {
+      "column": "PRORATION_FORMULA_ID",
+      "pvo_name": "ElementTypeClassificationPVO",
+      "pvo_attr": "ElementTypeDPEOProrationFormulaId",
+      "module_code": "GL",
+      "bicc": false
+    },
+    {
+      "column": "PRORATION_GROUP_ID",
+      "pvo_name": "ElementTypeClassificationPVO",
+      "pvo_attr": "ElementTypeDPEOProrationGroupId",
+      "module_code": "GL",
+      "bicc": false
+    },
+    {
+      "column": "RECALC_EVENT_GROUP_ID",
+      "pvo_name": "ElementTypeClassificationPVO",
+      "pvo_attr": "ElementTypeDPEORecalcEventGroupId",
+      "module_code": "GL",
+      "bicc": false
+    },
+    {
+      "column": "SECONDARY_CLASSIFICATION_ID",
+      "pvo_name": "ElementTypeClassificationPVO",
+      "pvo_attr": "ElementTypeDPEOSecondaryClassificationId",
+      "module_code": "GL",
+      "bicc": false
+    },
+    {
+      "column": "STANDARD_LINK_FLAG",
+      "pvo_name": "ElementTypeClassificationPVO",
+      "pvo_attr": "ElementTypeDPEOStandardLinkFlag",
+      "module_code": "GL",
+      "bicc": false
+    },
+    {
+      "column": "STARTING_TIME_DEF_ID",
+      "pvo_name": "ElementTypeClassificationPVO",
+      "pvo_attr": "ElementTypeDPEOStartingTimeDefId",
+      "module_code": "GL",
+      "bicc": false
+    },
+    {
+      "column": "TIME_DEFINITION_ID",
+      "pvo_name": "ElementTypeClassificationPVO",
+      "pvo_attr": "ElementTypeDPEOTimeDefinitionId",
+      "module_code": "GL",
+      "bicc": false
+    },
+    {
+      "column": "TIME_DEFINITION_TYPE",
+      "pvo_name": "ElementTypeClassificationPVO",
+      "pvo_attr": "ElementTypeDPEOTimeDefinitionType",
+      "module_code": "GL",
+      "bicc": false
+    },
+    {
+      "column": "USE_AT_ASG_LEVEL",
+      "pvo_name": "ElementTypeClassificationPVO",
+      "pvo_attr": "ElementTypeDPEOUseAtAsgLevel",
+      "module_code": "GL",
+      "bicc": false
+    },
+    {
+      "column": "USE_AT_REL_LEVEL",
+      "pvo_name": "ElementTypeClassificationPVO",
+      "pvo_attr": "ElementTypeDPEOUseAtRelLevel",
+      "module_code": "GL",
+      "bicc": false
+    },
+    {
+      "column": "USE_AT_TERM_LEVEL",
+      "pvo_name": "ElementTypeClassificationPVO",
+      "pvo_attr": "ElementTypeDPEOUseAtTermLevel",
+      "module_code": "GL",
+      "bicc": false
+    },
+    {
+      "column": "VALIDATION_FORMULA_ID",
+      "pvo_name": "ElementTypeClassificationPVO",
+      "pvo_attr": "ElementTypeDPEOValidationFormulaId",
+      "module_code": "GL",
+      "bicc": false
+    },
+    {
+      "column": "VALIDATION_OVERRIDE_MESSAGE",
+      "pvo_name": "ElementTypeClassificationPVO",
+      "pvo_attr": "ElementTypeDPEOValidationOverrideMessage",
+      "module_code": "GL",
+      "bicc": false
+    },
+    {
+      "column": "ADDITIONAL_ENTRY_ALLOWED_FLAG",
+      "pvo_name": "OriginatingElement",
+      "pvo_attr": "ElementTypeAdditionalEntryAllowedFlag",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "ADJUSTMENT_ONLY_FLAG",
+      "pvo_name": "OriginatingElement",
+      "pvo_attr": "ElementTypeAdjustmentOnlyFlag",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "ATTRIBUTE_CATEGORY",
+      "pvo_name": "OriginatingElement",
+      "pvo_attr": "ElementTypeAttributeCategory",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "BASE_ELEMENT_NAME",
+      "pvo_name": "OriginatingElement",
+      "pvo_attr": "ElementTypeBaseElementName",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "CALCULATION_FORMULA_ID",
+      "pvo_name": "OriginatingElement",
+      "pvo_attr": "ElementTypeCalculationFormulaId",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "CLASSIFICATION_ID",
+      "pvo_name": "OriginatingElement",
+      "pvo_attr": "ElementTypeClassificationId",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "CLOSED_FOR_ENTRY_FLAG",
+      "pvo_name": "OriginatingElement",
+      "pvo_attr": "ElementTypeClosedForEntryFlag",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "CREATED_BY",
+      "pvo_name": "OriginatingElement",
+      "pvo_attr": "ElementTypeCreatedBy",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "CREATION_DATE",
+      "pvo_name": "OriginatingElement",
+      "pvo_attr": "ElementTypeCreationDate",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "CREATOR_TYPE",
+      "pvo_name": "OriginatingElement",
+      "pvo_attr": "ElementTypeCreatorType",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "DEDUCTION_OR_EXEMPTION",
+      "pvo_name": "OriginatingElement",
+      "pvo_attr": "ElementTypeDeductionOrExemption",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "DEDUCTION_TYPE_ID",
+      "pvo_name": "OriginatingElement",
+      "pvo_attr": "ElementTypeDeductionTypeId",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "DEFAULTING_FORMULA_ID",
+      "pvo_name": "OriginatingElement",
+      "pvo_attr": "ElementTypeDefaultingFormulaId",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "EFFECTIVE_END_DATE",
+      "pvo_name": "OriginatingElement",
+      "pvo_attr": "EffectiveEndDate",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "EFFECTIVE_START_DATE",
+      "pvo_name": "OriginatingElement",
+      "pvo_attr": "EffectiveStartDate",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "ELEMENT_INFORMATION_CATEGORY",
+      "pvo_name": "OriginatingElement",
+      "pvo_attr": "ElementTypeElementInformationCategory",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "ELEMENT_TYPE_ID",
+      "pvo_name": "OriginatingElement",
+      "pvo_attr": "ElementTypeId",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "ENDING_TIME_DEF_ID",
+      "pvo_name": "OriginatingElement",
+      "pvo_attr": "ElementTypeEndingTimeDefId",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "FORMULA_ID",
+      "pvo_name": "OriginatingElement",
+      "pvo_attr": "ElementTypeFormulaId",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "GROSSUP_FLAG",
+      "pvo_name": "OriginatingElement",
+      "pvo_attr": "ElementTypeGrossupFlag",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "INDIRECT_ONLY_FLAG",
+      "pvo_name": "OriginatingElement",
+      "pvo_attr": "ElementTypeIndirectOnlyFlag",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "INPUT_CURRENCY_CODE",
+      "pvo_name": "OriginatingElement",
+      "pvo_attr": "ElementTypeInputCurrencyCode",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "ITERATIVE_FLAG",
+      "pvo_name": "OriginatingElement",
+      "pvo_attr": "ElementTypeIterativeFlag",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "ITERATIVE_FORMULA_ID",
+      "pvo_name": "OriginatingElement",
+      "pvo_attr": "ElementTypeIterativeFormulaId",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "ITERATIVE_PRIORITY",
+      "pvo_name": "OriginatingElement",
+      "pvo_attr": "ElementTypeIterativePriority",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "LAST_UPDATE_DATE",
+      "pvo_name": "OriginatingElement",
+      "pvo_attr": "ElementTypeLastUpdateDate",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "LAST_UPDATE_LOGIN",
+      "pvo_name": "OriginatingElement",
+      "pvo_attr": "ElementTypeLastUpdateLogin",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "LAST_UPDATED_BY",
+      "pvo_name": "OriginatingElement",
+      "pvo_attr": "ElementTypeLastUpdatedBy",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "LEGISLATION_CODE",
+      "pvo_name": "OriginatingElement",
+      "pvo_attr": "ElementTypeLegislationCode",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "LEGISLATIVE_DATA_GROUP_ID",
+      "pvo_name": "OriginatingElement",
+      "pvo_attr": "ElementTypeLegislativeDataGroupId",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "MODULE_ID",
+      "pvo_name": "OriginatingElement",
+      "pvo_attr": "ElementTypeModuleId",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "MULTIPLE_ENTRIES_ALLOWED_FLAG",
+      "pvo_name": "OriginatingElement",
+      "pvo_attr": "ElementTypeMultipleEntriesAllowedFlag",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "OBJECT_VERSION_NUMBER",
+      "pvo_name": "OriginatingElement",
+      "pvo_attr": "ElementTypeObjectVersionNumber",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "ONCE_EACH_PERIOD_FLAG",
+      "pvo_name": "OriginatingElement",
+      "pvo_attr": "ElementTypeOnceEachPeriodFlag",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "OUTPUT_CURRENCY_CODE",
+      "pvo_name": "OriginatingElement",
+      "pvo_attr": "ElementTypeOutputCurrencyCode",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "PROCESS_IN_RUN_FLAG",
+      "pvo_name": "OriginatingElement",
+      "pvo_attr": "ElementTypeProcessInRunFlag",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "PROCESS_MODE",
+      "pvo_name": "OriginatingElement",
+      "pvo_attr": "ElementTypeProcessMode",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "PROCESSING_PRIORITY",
+      "pvo_name": "OriginatingElement",
+      "pvo_attr": "ElementTypeProcessingPriority",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "PROCESSING_TYPE",
+      "pvo_name": "OriginatingElement",
+      "pvo_attr": "ElementTypeProcessingType",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "PRORATION_FORMULA_ID",
+      "pvo_name": "OriginatingElement",
+      "pvo_attr": "ElementTypeProrationFormulaId",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "PRORATION_GROUP_ID",
+      "pvo_name": "OriginatingElement",
+      "pvo_attr": "ElementTypeProrationGroupId",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "RECALC_EVENT_GROUP_ID",
+      "pvo_name": "OriginatingElement",
+      "pvo_attr": "ElementTypeRecalcEventGroupId",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "SECONDARY_CLASSIFICATION_ID",
+      "pvo_name": "OriginatingElement",
+      "pvo_attr": "ElementTypeSecondaryClassificationId",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "STANDARD_LINK_FLAG",
+      "pvo_name": "OriginatingElement",
+      "pvo_attr": "ElementTypeStandardLinkFlag",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "STARTING_TIME_DEF_ID",
+      "pvo_name": "OriginatingElement",
+      "pvo_attr": "ElementTypeStartingTimeDefId",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "TIME_DEFINITION_ID",
+      "pvo_name": "OriginatingElement",
+      "pvo_attr": "ElementTypeTimeDefinitionId",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "TIME_DEFINITION_TYPE",
+      "pvo_name": "OriginatingElement",
+      "pvo_attr": "ElementTypeTimeDefinitionType",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "USE_AT_ASG_LEVEL",
+      "pvo_name": "OriginatingElement",
+      "pvo_attr": "ElementTypeUseAtAsgLevel",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "USE_AT_REL_LEVEL",
+      "pvo_name": "OriginatingElement",
+      "pvo_attr": "ElementTypeUseAtRelLevel",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "USE_AT_TERM_LEVEL",
+      "pvo_name": "OriginatingElement",
+      "pvo_attr": "ElementTypeUseAtTermLevel",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "VALIDATION_FORMULA_ID",
+      "pvo_name": "OriginatingElement",
+      "pvo_attr": "ElementTypeValidationFormulaId",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "VALIDATION_OVERRIDE_MESSAGE",
+      "pvo_name": "OriginatingElement",
+      "pvo_attr": "ElementTypeValidationOverrideMessage",
+      "module_code": "HCM",
+      "bicc": false
+    }
+  ],
   "i18n": [
     {
       "id": 1,
@@ -2063,6 +4058,7 @@ const DATA = {
     <div id="tab-columns" class="tab-content"></div>
     <div id="tab-relationships" class="tab-content"></div>
     <div id="tab-sql" class="tab-content"></div>
+    <div id="tab-pvos" class="tab-content"></div>
 </main>
 
 <!-- ====== FOOTER ====== -->
@@ -2303,12 +4299,17 @@ function render() {
         overview: {pt:'Visão Geral', en:'Overview', es:'Visión General'},
         columns: {pt:'Colunas', en:'Columns', es:'Columnas'},
         relationships: {pt:'Relacionamentos', en:'Relationships', es:'Relaciones'},
-        sql: {pt:'SQL', en:'SQL', es:'SQL'}
+        sql: {pt:'SQL', en:'SQL', es:'SQL'},
+        pvos: {pt:'PVOs Relacionados', en:'Related PVOs', es:'PVOs Relacionados'}
     };
+    var _pvoNames = {};
+    (d.related_pvos || []).forEach(function(r) { _pvoNames[r.pvo_name] = 1; });
+    var pvosCount = Object.keys(_pvoNames).length;
     document.getElementById('tabs-nav').innerHTML =
         '<button class="tab-btn active" data-tab="overview" onclick="switchTab(\'overview\')"><i class="ri-information-line"></i> ' + t(tabLabels.overview) + '</button>' +
         '<button class="tab-btn" data-tab="columns" onclick="switchTab(\'columns\')"><i class="ri-table-line"></i> ' + t(tabLabels.columns) + ' <span class="tab-count">' + d.columns.length + '</span></button>' +
         '<button class="tab-btn" data-tab="relationships" onclick="switchTab(\'relationships\')"><i class="ri-git-branch-line"></i> ' + t(tabLabels.relationships) + ' <span class="tab-count">' + (d.relationships.parents.length + d.relationships.children.length) + '</span></button>' +
+        (pvosCount ? '<button class="tab-btn" data-tab="pvos" onclick="switchTab(\'pvos\')"><i class="ri-database-2-line"></i> ' + t(tabLabels.pvos) + ' <span class="tab-count">' + pvosCount + '</span></button>' : '') +
         '<button class="tab-btn" data-tab="sql" onclick="switchTab(\'sql\')"><i class="ri-code-s-slash-line"></i> SQL <span class="tab-count">' + d.sql.length + '</span></button>';
 
     // Tab 1: Overview
@@ -2318,6 +4319,7 @@ function render() {
         '<div class="stat-card"><div class="stat-card-icon bg-info"><i class="ri-links-line"></i></div><div class="stat-card-info"><div class="stat-card-number" style="color:var(--info)">' + d.relationships.parents.length + '</div><div class="stat-card-label">Foreign Keys</div></div></div>' +
         '<div class="stat-card"><div class="stat-card-icon bg-success"><i class="ri-shield-check-line"></i></div><div class="stat-card-info"><div class="stat-card-number" style="color:var(--success)">' + d.stats.avg_confidence + '%</div><div class="stat-card-label">' + t({pt:'Confiança Média', en:'Avg Confidence', es:'Confianza Promedio'}) + '</div></div></div>' +
         '<div class="stat-card"><div class="stat-card-icon bg-purple"><i class="ri-apps-line"></i></div><div class="stat-card-info"><div class="stat-card-number" style="color:var(--purple)">' + d.stats.categories + '</div><div class="stat-card-label">' + t({pt:'Categorias', en:'Categories', es:'Categorías'}) + '</div></div></div>' +
+        (pvosCount ? '<div class="stat-card"><div class="stat-card-icon bg-purple"><i class="ri-database-2-line"></i></div><div class="stat-card-info"><div class="stat-card-number" style="color:var(--purple)">' + pvosCount + '</div><div class="stat-card-label">PVOs</div></div></div>' : '') +
         '</div>';
 
     var overviewHtml = statsHtml +
@@ -2427,6 +4429,69 @@ function render() {
     }
     document.getElementById('tab-sql').innerHTML = sqlHtml;
 
+    // Tab 5: Related PVOs (grouped by PVO, table inside each group)
+    var pvosHtml = '';
+    if (d.related_pvos && d.related_pvos.length) {
+        // Group rows by pvo_name
+        var pvoGroups = {};
+        var pvoOrder = [];
+        d.related_pvos.forEach(function(row) {
+            var key = row.pvo_name;
+            if (!pvoGroups[key]) {
+                pvoGroups[key] = { pvo_name: row.pvo_name, module_code: row.module_code, rows: [] };
+                pvoOrder.push(key);
+            }
+            pvoGroups[key].rows.push(row);
+        });
+
+        pvosHtml += '<div class="search-container"><i class="ri-search-line search-icon"></i><input class="search-input" type="text" placeholder="' + t({pt:'Filtrar PVOs...', en:'Filter PVOs...', es:'Filtrar PVOs...'}) + '" oninput="filterPvos(this.value)"></div>';
+
+        var pvoHeaders = {
+            pt: ['#','Campo da Tabela','Campo do PVO','Disponível por BICC'],
+            en: ['#','Table Column','PVO Attribute','Available via BICC'],
+            es: ['#','Campo de Tabla','Campo del PVO','Disponible por BICC']
+        };
+        var ph = pvoHeaders[currentLang] || pvoHeaders['pt'];
+
+        pvosHtml += '<div id="pvos-groups">';
+        pvoOrder.forEach(function(key) {
+            var grp = pvoGroups[key];
+            var pvoFile = grp.pvo_name.toLowerCase() + '.html';
+            var pvoHref = (grp.module_code === m.module_code)
+                ? '../pvos/' + pvoFile
+                : '../../' + grp.module_code + '/pvos/' + pvoFile;
+            var biccCount = grp.rows.filter(function(r) { return r.bicc; }).length;
+
+            var grpSearchFields = grp.rows.map(function(r) { return r.column + ' ' + r.pvo_attr; }).join(' ');
+            pvosHtml += '<div class="card pvo-group" data-search="' + (grp.pvo_name + ' ' + grp.module_code + ' ' + grpSearchFields).toLowerCase() + '">' +
+                '<div class="card-header" style="cursor:pointer" onclick="this.parentElement.classList.toggle(\'collapsed\')">' +
+                '<div class="card-header-icon bg-purple"><i class="ri-database-2-line"></i></div>' +
+                '<div class="card-title"><a href="' + pvoHref + langParam() + '" class="wikilink" onclick="event.stopPropagation()">' + grp.pvo_name + '</a></div>' +
+                '<span class="pill pill-info">' + grp.module_code + '</span>' +
+                '<span class="card-badge pill-info" style="background:var(--info-light);color:var(--pill-info-text);border:1px solid var(--info-border)">' + grp.rows.length + ' attrs</span>' +
+                (biccCount ? '<span class="card-badge pill-success" style="background:var(--success-light);color:var(--pill-success-text);border:1px solid var(--success-border)">BICC ' + biccCount + '</span>' : '') +
+                '<i class="ri-arrow-down-s-line" style="font-size:1.2rem;color:var(--text-muted);margin-left:auto;transition:transform 0.2s"></i>' +
+                '</div>' +
+                '<div class="card-body pvo-group-body"><div class="table-wrapper"><table><thead><tr>';
+            ph.forEach(function(h, i) { pvosHtml += '<th' + (i === ph.length - 1 ? ' style="text-align:center"' : '') + '>' + h + '</th>'; });
+            pvosHtml += '</tr></thead><tbody>';
+            grp.rows.forEach(function(row, idx) {
+                var biccHtml = row.bicc
+                    ? '<span class="pill pill-success"><i class="ri-checkbox-circle-fill"></i> ' + t({pt:'Sim',en:'Yes',es:'Sí'}) + '</span>'
+                    : '<span class="pill pill-danger" style="opacity:0.5">' + t({pt:'Não',en:'No',es:'No'}) + '</span>';
+                pvosHtml += '<tr>' +
+                    '<td>' + (idx + 1) + '</td>' +
+                    '<td class="col-name">' + row.column + '</td>' +
+                    '<td class="col-name">' + row.pvo_attr + '</td>' +
+                    '<td style="text-align:center">' + biccHtml + '</td>' +
+                    '</tr>';
+            });
+            pvosHtml += '</tbody></table></div></div></div>';
+        });
+        pvosHtml += '</div>';
+    }
+    document.getElementById('tab-pvos').innerHTML = pvosHtml;
+
     // Footer
     document.getElementById('f-initials').textContent = m.author_initials || '';
     document.getElementById('f-name').textContent = m.author_name || '';
@@ -2473,6 +4538,16 @@ function filterColumns(query) {
     rows.forEach(function(row) {
         var text = row.getAttribute('data-search') || '';
         row.style.display = !q || text.indexOf(q) >= 0 ? '' : 'none';
+    });
+}
+
+/* ====== PVO FILTER ====== */
+function filterPvos(query) {
+    var q = query.toLowerCase().trim();
+    var groups = document.querySelectorAll('#pvos-groups .pvo-group');
+    groups.forEach(function(grp) {
+        var text = grp.getAttribute('data-search') || '';
+        grp.style.display = !q || text.indexOf(q) >= 0 ? '' : 'none';
     });
 }
 

@@ -72,7 +72,7 @@ Esta tabela é utilizada nos seguintes processos:
 ## 🔗 Relacionamentos
 
 ### Tabelas-pai (FK de entrada)
-- [[irc_requisitions_b]] --- via `REQUISITION_ID` (requisiÃ§Ã£o de vaga vinculada ao modelo de workflow)
+- [[irc_requisitions_b]] --- via `REQUISITION_ID` (requisição de vaga vinculada ao modelo de workflow)
 
 ### Tabelas-filha (FK de saída)
 - --- Tabela de associacao workflow-requisicao

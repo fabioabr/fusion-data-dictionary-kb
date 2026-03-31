@@ -72,7 +72,7 @@ Esta tabela é utilizada nos seguintes processos:
 ## 🔗 Relacionamentos
 
 ### Tabelas-pai (FK de entrada)
-- [[pay_pre_payments]] --- via `PRE_PAYMENT_ID` (prÃ©-pagamento que gerou o custo)
+- [[pay_pre_payments]] --- via `PRE_PAYMENT_ID` (pré-pagamento que gerou o custo)
 - [[pay_costs]] --- via `COST_ID` (custo de folha vinculado ao pagamento)
 
 ### Tabelas-filha (FK de saída)

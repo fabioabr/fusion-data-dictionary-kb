@@ -78,8 +78,8 @@ Esta tabela é utilizada nos seguintes processos:
 ## 🔗 Relacionamentos
 
 ### Tabelas-pai (FK de entrada)
-- [[per_all_assignments_m]] — via `ASSIGNMENT_ID` (vÃ­nculo do step de grade salarial)
-- [[per_grade_steps_f]] — via `GRADE_STEP_ID` (step de grade salarial atribuÃ­do)
+- [[per_all_assignments_m]] — via `ASSIGNMENT_ID` (vínculo do step de grade salarial)
+- [[per_grade_steps_f]] — via `GRADE_STEP_ID` (step de grade salarial atribuído)
 
 ### Tabelas-filha (FK de saída)
 - - Nenhuma tabela-filha direta identificada.

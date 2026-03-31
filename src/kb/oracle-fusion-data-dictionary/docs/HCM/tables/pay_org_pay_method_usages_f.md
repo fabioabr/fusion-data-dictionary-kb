@@ -72,8 +72,8 @@ Esta tabela é utilizada nos seguintes processos:
 ## 🔗 Relacionamentos
 
 ### Tabelas-pai (FK de entrada)
-- [[pay_org_pay_methods_f]] --- via `ORG_PAYMENT_METHOD_ID` (mÃ©todo de pagamento organizacional utilizado)
-- [[pay_all_payrolls_f]] --- via `PAYROLL_ID` (folha de pagamento que usa o mÃ©todo)
+- [[pay_org_pay_methods_f]] --- via `ORG_PAYMENT_METHOD_ID` (método de pagamento organizacional utilizado)
+- [[pay_all_payrolls_f]] --- via `PAYROLL_ID` (folha de pagamento que usa o método)
 
 ### Tabelas-filha (FK de saída)
 - --- Tabela de associacao, sem filhas conhecidas

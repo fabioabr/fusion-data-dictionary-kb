@@ -82,7 +82,7 @@ Esta tabela é utilizada nos seguintes processos:
 - - Nenhuma FK direta — tabela raiz de famílias de cargos.
 
 ### Tabelas-filha (FK de saída)
-- [[per_job_family_f_tl]] — via `JOB_FAMILY_ID` (traduÃ§Ãµes da famÃ­lia de cargos)
+- [[per_job_family_f_tl]] — via `JOB_FAMILY_ID` (traduções da família de cargos)
 - [[per_jobs_f]] — via `JOB_FAMILY_ID` (cargos nesta família)
 
 ---

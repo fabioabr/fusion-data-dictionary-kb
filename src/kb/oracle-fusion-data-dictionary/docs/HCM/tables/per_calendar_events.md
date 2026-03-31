@@ -79,7 +79,7 @@ Esta tabela é utilizada nos seguintes processos:
 - - Nenhuma FK direta — tabela raiz de eventos de calendário.
 
 ### Tabelas-filha (FK de saída)
-- [[per_calendar_events_tl]] — via `CALENDAR_EVENT_ID` (traduÃ§Ãµes do evento de calendÃ¡rio)
+- [[per_calendar_events_tl]] — via `CALENDAR_EVENT_ID` (traduções do evento de calendário)
 
 ---
 

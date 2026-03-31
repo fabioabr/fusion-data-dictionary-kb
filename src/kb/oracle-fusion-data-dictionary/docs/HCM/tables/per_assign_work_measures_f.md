@@ -80,7 +80,7 @@ Esta tabela é utilizada nos seguintes processos:
 ## 🔗 Relacionamentos
 
 ### Tabelas-pai (FK de entrada)
-- [[per_all_assignments_m]] — via `ASSIGNMENT_ID` (vÃ­nculo da medida de trabalho)
+- [[per_all_assignments_m]] — via `ASSIGNMENT_ID` (vínculo da medida de trabalho)
 
 ### Tabelas-filha (FK de saída)
 - - Nenhuma tabela-filha direta identificada.

@@ -77,13 +77,13 @@ Esta tabela é utilizada nos seguintes processos:
 
 ### Tabelas-pai (FK de entrada)
 - [[per_checklists_b]] — via `CHECKLIST_ID` (template de checklist)
-- [[per_all_people_f]] — via `PERSON_ID` (colaborador responsÃ¡vel pelo checklist)
+- [[per_all_people_f]] — via `PERSON_ID` (colaborador responsável pelo checklist)
 
 ### Tabelas-filha (FK de saída)
-- [[per_allocated_checklists_tl]] — via `ALLOCATED_CHECKLIST_ID` (traduÃ§Ãµes do checklist alocado)
+- [[per_allocated_checklists_tl]] — via `ALLOCATED_CHECKLIST_ID` (traduções do checklist alocado)
 - [[per_allocated_tasks]] — via `ALLOCATED_CHECKLIST_ID` (tarefas alocadas)
 - [[per_alloc_chklst_contacts]] — via `ALLOCATED_CHECKLIST_ID` (contatos do checklist alocado)
-- [[per_alloc_chklst_contents]] — via `ALLOCATED_CHECKLIST_ID` (conteÃºdos do checklist alocado)
+- [[per_alloc_chklst_contents]] — via `ALLOCATED_CHECKLIST_ID` (conteúdos do checklist alocado)
 
 ---
 

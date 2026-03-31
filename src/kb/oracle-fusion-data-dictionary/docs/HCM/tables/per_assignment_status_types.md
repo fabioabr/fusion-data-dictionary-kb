@@ -80,7 +80,7 @@ Esta tabela é utilizada nos seguintes processos:
 - - Nenhuma FK direta — tabela de referência de status.
 
 ### Tabelas-filha (FK de saída)
-- [[per_assignment_status_types_tl]] — via `ASSIGNMENT_STATUS_TYPE_ID` (traduÃ§Ãµes do tipo de status de vÃ­nculo)
+- [[per_assignment_status_types_tl]] — via `ASSIGNMENT_STATUS_TYPE_ID` (traduções do tipo de status de vínculo)
 - [[per_all_assignments_m]] — via `ASSIGNMENT_STATUS_TYPE_ID` (assignments com este status)
 
 ---

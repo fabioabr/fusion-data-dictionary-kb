@@ -78,7 +78,7 @@ Esta tabela é utilizada nos seguintes processos:
 - - Nenhuma FK direta — tabela raiz de grupos legislativos.
 
 ### Tabelas-filha (FK de saída)
-- [[per_legislative_data_groups_tl]] — via `LEGISLATIVE_DATA_GROUP_ID` (traduÃ§Ãµes do grupo de dados legislativos)
+- [[per_legislative_data_groups_tl]] — via `LEGISLATIVE_DATA_GROUP_ID` (traduções do grupo de dados legislativos)
 
 ---
 

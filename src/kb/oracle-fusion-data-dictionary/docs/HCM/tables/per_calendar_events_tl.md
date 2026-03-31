@@ -76,7 +76,7 @@ Esta tabela é utilizada nos seguintes processos:
 ## 🔗 Relacionamentos
 
 ### Tabelas-pai (FK de entrada)
-- [[per_calendar_events]] — via `CALENDAR_EVENT_ID` (tabela base do evento de calendÃ¡rio)
+- [[per_calendar_events]] — via `CALENDAR_EVENT_ID` (tabela base do evento de calendário)
 
 ### Tabelas-filha (FK de saída)
 - - Nenhuma tabela-filha — tabela terminal de tradução.

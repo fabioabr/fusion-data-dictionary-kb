@@ -78,9 +78,9 @@ Esta tabela é utilizada nos seguintes processos:
 - --- Tabela raiz de configuracao de payroll
 
 ### Tabelas-filha (FK de saída)
-- [[pay_assigned_payrolls_f]] --- via `PAYROLL_ID` (folhas de pagamento atribuÃ­das ao payroll)
-- [[pay_time_periods]] --- via `PAYROLL_ID` (perÃ­odos de tempo do ciclo de folha)
-- [[pay_assigned_payrolls_dn]] --- via `PAYROLL_ID` (visÃ£o desnormalizada das folhas atribuÃ­das)
+- [[pay_assigned_payrolls_f]] --- via `PAYROLL_ID` (folhas de pagamento atribuídas ao payroll)
+- [[pay_time_periods]] --- via `PAYROLL_ID` (períodos de tempo do ciclo de folha)
+- [[pay_assigned_payrolls_dn]] --- via `PAYROLL_ID` (visão desnormalizada das folhas atribuídas)
 
 ---
 

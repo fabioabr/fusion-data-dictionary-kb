@@ -87,10 +87,10 @@ Esta tabela é utilizada nos seguintes processos:
 ## 🔗 Relacionamentos
 
 ### Tabelas-pai (FK de entrada)
-- [[per_locations]] — via `LOCATION_ID` (localizaÃ§Ã£o dos detalhes adicionais)
+- [[per_locations]] — via `LOCATION_ID` (localização dos detalhes adicionais)
 
 ### Tabelas-filha (FK de saída)
-- [[per_location_details_f_tl]] — via `LOCATION_DETAILS_ID` (traduÃ§Ãµes dos detalhes da localizaÃ§Ã£o)
+- [[per_location_details_f_tl]] — via `LOCATION_DETAILS_ID` (traduções dos detalhes da localização)
 
 ---
 

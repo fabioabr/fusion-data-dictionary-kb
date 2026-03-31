@@ -72,7 +72,7 @@ Esta tabela é utilizada nos seguintes processos:
 ## 🔗 Relacionamentos
 
 ### Tabelas-pai (FK de entrada)
-- [[irc_requisitions_b]] --- via `REQUISITION_ID` (requisiÃ§Ã£o de vaga do membro da equipe)
+- [[irc_requisitions_b]] --- via `REQUISITION_ID` (requisição de vaga do membro da equipe)
 - [[per_all_people_f]] --- via `PERSON_ID` (pessoa membro da equipe de recrutamento)
 
 ### Tabelas-filha (FK de saída)

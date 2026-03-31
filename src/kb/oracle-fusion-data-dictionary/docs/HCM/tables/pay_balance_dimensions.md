@@ -75,7 +75,7 @@ Esta tabela é utilizada nos seguintes processos:
 - --- Tabela de configuracao raiz
 
 ### Tabelas-filha (FK de saída)
-- [[pay_balance_validation]] --- via `BALANCE_DIMENSION_ID` (validaÃ§Ãµes da dimensÃ£o de saldo)
+- [[pay_balance_validation]] --- via `BALANCE_DIMENSION_ID` (validações da dimensão de saldo)
 
 ---
 

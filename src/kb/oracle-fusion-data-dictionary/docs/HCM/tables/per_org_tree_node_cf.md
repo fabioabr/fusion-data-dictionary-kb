@@ -87,7 +87,7 @@ Esta tabela é utilizada nos seguintes processos:
 - [[hr_all_organization_units]] — via `ORGANIZATION_ID`, `PARENT_ORGANIZATION_ID`, `ANCESTOR_ORGANIZATION_ID`
 
 ### Tabelas-filha (FK de saída)
-- [[per_org_tree_node_rf]] — via `TREE_NODE_ID` (nÃ³ de referÃªncia da Ã¡rvore organizacional)
+- [[per_org_tree_node_rf]] — via `TREE_NODE_ID` (nó de referência da árvore organizacional)
 
 ---
 

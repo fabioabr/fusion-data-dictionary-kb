@@ -76,7 +76,7 @@ Esta tabela é utilizada nos seguintes processos:
 
 ### Tabelas-pai (FK de entrada)
 - [[irc_candidates]] --- via `CANDIDATE_ID` (candidato que realizou a candidatura)
-- [[irc_requisitions_b]] --- via `REQUISITION_ID` (requisiÃ§Ã£o de vaga da candidatura)
+- [[irc_requisitions_b]] --- via `REQUISITION_ID` (requisição de vaga da candidatura)
 - [[irc_states_b]] --- via `CURRENT_STATE_ID` (estado atual da candidatura no processo seletivo)
 
 ### Tabelas-filha (FK de saída)

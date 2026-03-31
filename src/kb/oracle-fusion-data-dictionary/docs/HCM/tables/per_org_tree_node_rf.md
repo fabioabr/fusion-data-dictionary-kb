@@ -82,8 +82,8 @@ Esta tabela é utilizada nos seguintes processos:
 ## Relacionamentos
 
 ### Tabelas-pai (FK de entrada)
-- [[hr_all_organization_units]] — via `ORGANIZATION_ID` (unidade organizacional do nÃ³ da Ã¡rvore)
-- [[per_org_tree_node_cf]] — via `TREE_NODE_ID` (nÃ³ filho da Ã¡rvore organizacional)
+- [[hr_all_organization_units]] — via `ORGANIZATION_ID` (unidade organizacional do nó da árvore)
+- [[per_org_tree_node_cf]] — via `TREE_NODE_ID` (nó filho da árvore organizacional)
 
 ### Tabelas-filha (FK de saída)
 - Auto-referência via `PARENT_TREE_NODE_ID`

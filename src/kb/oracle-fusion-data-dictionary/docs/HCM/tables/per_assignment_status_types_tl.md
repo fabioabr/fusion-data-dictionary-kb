@@ -76,7 +76,7 @@ Esta tabela é utilizada nos seguintes processos:
 ## 🔗 Relacionamentos
 
 ### Tabelas-pai (FK de entrada)
-- [[per_assignment_status_types]] — via `ASSIGNMENT_STATUS_TYPE_ID` (tabela base do tipo de status de vÃ­nculo)
+- [[per_assignment_status_types]] — via `ASSIGNMENT_STATUS_TYPE_ID` (tabela base do tipo de status de vínculo)
 
 ### Tabelas-filha (FK de saída)
 - - Nenhuma tabela-filha — tabela terminal de tradução.

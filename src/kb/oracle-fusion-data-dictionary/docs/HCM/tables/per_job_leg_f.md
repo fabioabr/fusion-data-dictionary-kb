@@ -81,7 +81,7 @@ Esta tabela é utilizada nos seguintes processos:
 ## 🔗 Relacionamentos
 
 ### Tabelas-pai (FK de entrada)
-- [[per_jobs_f]] — via `JOB_ID` (cargo com informaÃ§Ãµes legislativas)
+- [[per_jobs_f]] — via `JOB_ID` (cargo com informações legislativas)
 
 ### Tabelas-filha (FK de saída)
 - - Nenhuma tabela-filha direta identificada.

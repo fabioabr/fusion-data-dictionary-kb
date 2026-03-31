@@ -87,8 +87,8 @@ Esta tabela é utilizada nos seguintes processos:
 - Nenhuma — tabela de configuração/referência.
 
 ### Tabelas-filha (FK de saída)
-- [[per_rates_f_tl]] — via `RATE_ID` (traduÃ§Ãµes da taxa salarial)
-- [[per_rate_values_f]] — via `RATE_ID` (valores atribuÃ­dos Ã  taxa salarial)
+- [[per_rates_f_tl]] — via `RATE_ID` (traduções da taxa salarial)
+- [[per_rate_values_f]] — via `RATE_ID` (valores atribuídos à taxa salarial)
 
 ---
 

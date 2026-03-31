@@ -78,7 +78,7 @@ Esta tabela é utilizada nos seguintes processos:
 - - Nenhuma FK direta — tabela raiz de definições de conteúdo.
 
 ### Tabelas-filha (FK de saída)
-- [[per_chk_content_defns_tl]] — via `CHK_CONTENT_DEFN_ID` (traduÃ§Ãµes da definiÃ§Ã£o de conteÃºdo de checklist)
+- [[per_chk_content_defns_tl]] — via `CHK_CONTENT_DEFN_ID` (traduções da definição de conteúdo de checklist)
 
 ---
 

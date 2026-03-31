@@ -84,7 +84,7 @@ Esta tabela é utilizada nos seguintes processos:
 
 ### Tabelas-pai (FK de entrada)
 - [[per_persons]] — via `PERSON_ID` e `MANAGER_ID` (pessoa na hierarquia gerencial)
-- [[per_all_assignments_m]] — via `ASSIGNMENT_ID` e `MANAGER_ASSIGNMENT_ID` (vÃ­nculo na hierarquia gerencial)
+- [[per_all_assignments_m]] — via `ASSIGNMENT_ID` e `MANAGER_ASSIGNMENT_ID` (vínculo na hierarquia gerencial)
 
 ### Tabelas-filha (FK de saída)
 

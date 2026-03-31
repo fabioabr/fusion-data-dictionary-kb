@@ -77,7 +77,7 @@ Esta view é utilizada nos seguintes processos:
 ## Relacionamentos
 
 ### Tabelas-pai (FK de entrada)
-- [[per_persons]] — via `PERSON_ID` (pessoa na visÃ£o de nomes)
+- [[per_persons]] — via `PERSON_ID` (pessoa na visão de nomes)
 
 ### Tabelas-filha (FK de saída)
 - Nenhuma — views não possuem FKs diretas.

@@ -77,7 +77,7 @@ Esta tabela é utilizada nos seguintes processos:
 ## Relacionamentos
 
 ### Tabelas-pai (FK de entrada)
-- [[per_requisitions_interface_b]] — via `REQUISITION_ID` (tabela base da requisiÃ§Ã£o de interface)
+- [[per_requisitions_interface_b]] — via `REQUISITION_ID` (tabela base da requisição de interface)
 
 ### Tabelas-filha (FK de saída)
 - Nenhuma relação direta identificada.

@@ -71,7 +71,7 @@ Esta tabela é utilizada nos seguintes processos:
 ## 🔗 Relacionamentos
 
 ### Tabelas-pai (FK de entrada)
-- [[pay_ele_classifications]] --- via `CLASSIFICATION_ID` (tabela base da classificaÃ§Ã£o de elemento)
+- [[pay_ele_classifications]] --- via `CLASSIFICATION_ID` (tabela base da classificação de elemento)
 
 ### Tabelas-filha (FK de saída)
 - --- Tabela de traducao, sem filhas

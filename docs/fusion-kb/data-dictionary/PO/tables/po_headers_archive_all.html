@@ -262,6 +262,11 @@ pre.sql-code { margin: 0; padding: 16px; font-family: 'Courier New', monospace; 
 .bg-orange { background: var(--orange); } .bg-teal { background: var(--teal); }
 .bg-secondary { background: var(--secondary); }
 
+/* ====== PVO GROUPS ====== */
+.pvo-group .card-header .ri-arrow-down-s-line { transition: transform 0.2s; }
+.pvo-group.collapsed .pvo-group-body { display: none; }
+.pvo-group.collapsed .ri-arrow-down-s-line { transform: rotate(-90deg); }
+
 /* ====== RESPONSIVE ====== */
 @media (max-width: 768px) {
     .stats-grid { grid-template-columns: 1fr; }
@@ -1722,6 +1727,764 @@ const DATA = {
     "PJF_PROJ_ELEMENTS_TL": "HCM",
     "PJF_WORK_TYPES_VL": "HCM"
   },
+  "related_pvos": [
+    {
+      "column": "ACCEPTANCE_DUE_DATE",
+      "pvo_name": "PurchasingDocumentVersionPVO",
+      "pvo_attr": "ArchivedPOHeaderAcceptanceDueDate",
+      "module_code": "PO",
+      "bicc": false
+    },
+    {
+      "column": "ACCEPTANCE_REQUIRED_FLAG",
+      "pvo_name": "PurchasingDocumentVersionPVO",
+      "pvo_attr": "ArchivedPOHeaderAcceptanceRequiredFlag",
+      "module_code": "PO",
+      "bicc": false
+    },
+    {
+      "column": "AGENT_ID",
+      "pvo_name": "PurchasingDocumentVersionPVO",
+      "pvo_attr": "ArchivedPOHeaderAgentId",
+      "module_code": "PO",
+      "bicc": false
+    },
+    {
+      "column": "AGING_ONSET_POINT",
+      "pvo_name": "PurchasingDocumentVersionPVO",
+      "pvo_attr": "ArchivedPOHeaderAgingOnsetPoint",
+      "module_code": "PO",
+      "bicc": true
+    },
+    {
+      "column": "AGING_PERIOD_DAYS",
+      "pvo_name": "PurchasingDocumentVersionPVO",
+      "pvo_attr": "ArchivedPOHeaderAgingPeriodDays",
+      "module_code": "PO",
+      "bicc": true
+    },
+    {
+      "column": "AMOUNT_LIMIT",
+      "pvo_name": "PurchasingDocumentVersionPVO",
+      "pvo_attr": "ArchivedPOHeaderAmountLimit",
+      "module_code": "PO",
+      "bicc": false
+    },
+    {
+      "column": "AUTO_SOURCING_FLAG",
+      "pvo_name": "PurchasingDocumentVersionPVO",
+      "pvo_attr": "ArchivedPOHeaderAutoSourcingFlag",
+      "module_code": "PO",
+      "bicc": false
+    },
+    {
+      "column": "BILL_TO_LOCATION_ID",
+      "pvo_name": "PurchasingDocumentVersionPVO",
+      "pvo_attr": "ArchivedPOHeaderBillToLocationId",
+      "module_code": "PO",
+      "bicc": false
+    },
+    {
+      "column": "BILLING_CYCLE_CLOSING_DATE",
+      "pvo_name": "PurchasingDocumentVersionPVO",
+      "pvo_attr": "ArchivedPOHeaderBillingCycleClosingDate",
+      "module_code": "PO",
+      "bicc": true
+    },
+    {
+      "column": "BILLTO_BU_ID",
+      "pvo_name": "PurchasingDocumentVersionPVO",
+      "pvo_attr": "ArchivedPOHeaderBilltoBuId",
+      "module_code": "PO",
+      "bicc": true
+    },
+    {
+      "column": "BLANKET_TOTAL_AMOUNT",
+      "pvo_name": "PurchasingDocumentVersionPVO",
+      "pvo_attr": "ArchivedPOHeaderBlanketTotalAmount",
+      "module_code": "PO",
+      "bicc": false
+    },
+    {
+      "column": "BUYER_MANAGED_TRANSPORT_FLAG",
+      "pvo_name": "PurchasingDocumentVersionPVO",
+      "pvo_attr": "ArchivedPOHeaderBuyerManagedTransportFlag",
+      "module_code": "PO",
+      "bicc": false
+    },
+    {
+      "column": "CANCEL_FLAG",
+      "pvo_name": "PurchasingDocumentVersionPVO",
+      "pvo_attr": "ArchivedPOHeaderCancelFlag",
+      "module_code": "PO",
+      "bicc": false
+    },
+    {
+      "column": "CARRIER_ID",
+      "pvo_name": "PurchasingDocumentVersionPVO",
+      "pvo_attr": "ArchivedPOHeaderCarrierId",
+      "module_code": "PO",
+      "bicc": false
+    },
+    {
+      "column": "CBC_ACCOUNTING_DATE",
+      "pvo_name": "PurchasingDocumentVersionPVO",
+      "pvo_attr": "ArchivedPOHeaderCbcAccountingDate",
+      "module_code": "PO",
+      "bicc": false
+    },
+    {
+      "column": "CHANGE_REQUESTED_BY",
+      "pvo_name": "PurchasingDocumentVersionPVO",
+      "pvo_attr": "ArchivedPOHeaderChangeRequestedBy",
+      "module_code": "PO",
+      "bicc": false
+    },
+    {
+      "column": "CHANGE_SUMMARY",
+      "pvo_name": "PurchasingDocumentVersionPVO",
+      "pvo_attr": "ArchivedPOHeaderChangeSummary",
+      "module_code": "PO",
+      "bicc": false
+    },
+    {
+      "column": "COMMENTS",
+      "pvo_name": "PurchasingDocumentVersionPVO",
+      "pvo_attr": "ArchivedPOHeaderComments",
+      "module_code": "PO",
+      "bicc": true
+    },
+    {
+      "column": "CONFIRMING_ORDER_FLAG",
+      "pvo_name": "PurchasingDocumentVersionPVO",
+      "pvo_attr": "ArchivedPOHeaderConfirmingOrderFlag",
+      "module_code": "PO",
+      "bicc": false
+    },
+    {
+      "column": "CONSIGNED_CONSUMPTION_FLAG",
+      "pvo_name": "PurchasingDocumentVersionPVO",
+      "pvo_attr": "ArchivedPOHeaderConsignedConsumptionFlag",
+      "module_code": "PO",
+      "bicc": false
+    },
+    {
+      "column": "CONSUME_REQ_DEMAND_FLAG",
+      "pvo_name": "PurchasingDocumentVersionPVO",
+      "pvo_attr": "ArchivedPOHeaderConsumeReqDemandFlag",
+      "module_code": "PO",
+      "bicc": false
+    },
+    {
+      "column": "CONSUMPTION_ADVICE_FREQUENCY",
+      "pvo_name": "PurchasingDocumentVersionPVO",
+      "pvo_attr": "ArchivedPOHeaderConsumptionAdviceFrequency",
+      "module_code": "PO",
+      "bicc": true
+    },
+    {
+      "column": "CONSUMPTION_ADVICE_SUMMARY",
+      "pvo_name": "PurchasingDocumentVersionPVO",
+      "pvo_attr": "ArchivedPOHeaderConsumptionAdviceSummary",
+      "module_code": "PO",
+      "bicc": true
+    },
+    {
+      "column": "CONTERMS_ARTICLES_UPD_DATE",
+      "pvo_name": "PurchasingDocumentVersionPVO",
+      "pvo_attr": "ArchivedPOHeaderContermsArticlesUpdDate",
+      "module_code": "PO",
+      "bicc": false
+    },
+    {
+      "column": "CONTERMS_DELIV_UPD_DATE",
+      "pvo_name": "PurchasingDocumentVersionPVO",
+      "pvo_attr": "ArchivedPOHeaderContermsDelivUpdDate",
+      "module_code": "PO",
+      "bicc": false
+    },
+    {
+      "column": "CONTERMS_EXIST_FLAG",
+      "pvo_name": "PurchasingDocumentVersionPVO",
+      "pvo_attr": "ArchivedPOHeaderContermsExistFlag",
+      "module_code": "PO",
+      "bicc": false
+    },
+    {
+      "column": "CPA_REFERENCE",
+      "pvo_name": "PurchasingDocumentVersionPVO",
+      "pvo_attr": "ArchivedPOHeaderCpaReference",
+      "module_code": "PO",
+      "bicc": false
+    },
+    {
+      "column": "CREATED_BY",
+      "pvo_name": "PurchasingDocumentVersionPVO",
+      "pvo_attr": "ArchivedPOHeaderCreatedBy",
+      "module_code": "PO",
+      "bicc": false
+    },
+    {
+      "column": "CREATED_LANGUAGE",
+      "pvo_name": "PurchasingDocumentVersionPVO",
+      "pvo_attr": "ArchivedPOHeaderCreatedLanguage",
+      "module_code": "PO",
+      "bicc": false
+    },
+    {
+      "column": "CREATION_DATE",
+      "pvo_name": "PurchasingDocumentVersionPVO",
+      "pvo_attr": "ArchivedPOHeaderCreationDate",
+      "module_code": "PO",
+      "bicc": false
+    },
+    {
+      "column": "CURRENCY_CODE",
+      "pvo_name": "PurchasingDocumentVersionPVO",
+      "pvo_attr": "ArchivedPOHeaderCurrencyCode",
+      "module_code": "PO",
+      "bicc": false
+    },
+    {
+      "column": "DEFAULT_CONSIGNMENT_LINE_FLAG",
+      "pvo_name": "PurchasingDocumentVersionPVO",
+      "pvo_attr": "ArchivedPOHeaderDefaultConsignmentLineFlag",
+      "module_code": "PO",
+      "bicc": true
+    },
+    {
+      "column": "DEFAULT_TAXATION_COUNTRY",
+      "pvo_name": "PurchasingDocumentVersionPVO",
+      "pvo_attr": "ArchivedPOHeaderDefaultTaxationCountry",
+      "module_code": "PO",
+      "bicc": false
+    },
+    {
+      "column": "DOCUMENT_CREATION_METHOD",
+      "pvo_name": "PurchasingDocumentVersionPVO",
+      "pvo_attr": "ArchivedPOHeaderDocumentCreationMethod",
+      "module_code": "PO",
+      "bicc": false
+    },
+    {
+      "column": "EMAIL_ADDRESS",
+      "pvo_name": "PurchasingDocumentVersionPVO",
+      "pvo_attr": "ArchivedPOHeaderEmailAddress",
+      "module_code": "PO",
+      "bicc": false
+    },
+    {
+      "column": "ENABLED_FLAG",
+      "pvo_name": "PurchasingDocumentVersionPVO",
+      "pvo_attr": "ArchivedPOHeaderEnabledFlag",
+      "module_code": "PO",
+      "bicc": false
+    },
+    {
+      "column": "ENCUMBRANCE_REQUIRED_FLAG",
+      "pvo_name": "PurchasingDocumentVersionPVO",
+      "pvo_attr": "ArchivedPOHeaderEncumbranceRequiredFlag",
+      "module_code": "PO",
+      "bicc": false
+    },
+    {
+      "column": "END_DATE",
+      "pvo_name": "PurchasingDocumentVersionPVO",
+      "pvo_attr": "ArchivedPOHeaderEndDate",
+      "module_code": "PO",
+      "bicc": false
+    },
+    {
+      "column": "ENTITY_CO_DISPOSITION",
+      "pvo_name": "PurchasingDocumentVersionPVO",
+      "pvo_attr": "ArchivedPOHeaderEntityCoDisposition",
+      "module_code": "PO",
+      "bicc": false
+    },
+    {
+      "column": "FAX",
+      "pvo_name": "PurchasingDocumentVersionPVO",
+      "pvo_attr": "ArchivedPOHeaderFax",
+      "module_code": "PO",
+      "bicc": false
+    },
+    {
+      "column": "FIRM_DATE",
+      "pvo_name": "PurchasingDocumentVersionPVO",
+      "pvo_attr": "ArchivedPOHeaderFirmDate",
+      "module_code": "PO",
+      "bicc": false
+    },
+    {
+      "column": "FIRM_STATUS_LOOKUP_CODE",
+      "pvo_name": "PurchasingDocumentVersionPVO",
+      "pvo_attr": "ArchivedPOHeaderFirmStatusLookupCode",
+      "module_code": "PO",
+      "bicc": false
+    },
+    {
+      "column": "FOB_LOOKUP_CODE",
+      "pvo_name": "PurchasingDocumentVersionPVO",
+      "pvo_attr": "ArchivedPOHeaderFobLookupCode",
+      "module_code": "PO",
+      "bicc": false
+    },
+    {
+      "column": "FREIGHT_TERMS_LOOKUP_CODE",
+      "pvo_name": "PurchasingDocumentVersionPVO",
+      "pvo_attr": "ArchivedPOHeaderFreightTermsLookupCode",
+      "module_code": "PO",
+      "bicc": false
+    },
+    {
+      "column": "FROM_CO_SEQ",
+      "pvo_name": "PurchasingDocumentVersionPVO",
+      "pvo_attr": "ArchivedPOHeaderFromCoSeq",
+      "module_code": "PO",
+      "bicc": true
+    },
+    {
+      "column": "FROM_HEADER_ID",
+      "pvo_name": "PurchasingDocumentVersionPVO",
+      "pvo_attr": "ArchivedPOHeaderFromHeaderId",
+      "module_code": "PO",
+      "bicc": false
+    },
+    {
+      "column": "FROM_TYPE_LOOKUP_CODE",
+      "pvo_name": "PurchasingDocumentVersionPVO",
+      "pvo_attr": "ArchivedPOHeaderFromTypeLookupCode",
+      "module_code": "PO",
+      "bicc": false
+    },
+    {
+      "column": "GENERATE_ORDERS_AUTOMATIC",
+      "pvo_name": "PurchasingDocumentVersionPVO",
+      "pvo_attr": "ArchivedPOHeaderGenerateOrdersAutomatic",
+      "module_code": "PO",
+      "bicc": false
+    },
+    {
+      "column": "GOVERNMENT_CONTEXT",
+      "pvo_name": "PurchasingDocumentVersionPVO",
+      "pvo_attr": "ArchivedPOHeaderGovernmentContext",
+      "module_code": "PO",
+      "bicc": false
+    },
+    {
+      "column": "GROUP_REQUISITION_LINES",
+      "pvo_name": "PurchasingDocumentVersionPVO",
+      "pvo_attr": "ArchivedPOHeaderGroupRequisitionLines",
+      "module_code": "PO",
+      "bicc": false
+    },
+    {
+      "column": "GROUP_REQUISITIONS",
+      "pvo_name": "PurchasingDocumentVersionPVO",
+      "pvo_attr": "ArchivedPOHeaderGroupRequisitions",
+      "module_code": "PO",
+      "bicc": false
+    },
+    {
+      "column": "INTERFACE_SOURCE_CODE",
+      "pvo_name": "PurchasingDocumentVersionPVO",
+      "pvo_attr": "ArchivedPOHeaderInterfaceSourceCode",
+      "module_code": "PO",
+      "bicc": false
+    },
+    {
+      "column": "JOB_DEFINITION_NAME",
+      "pvo_name": "PurchasingDocumentVersionPVO",
+      "pvo_attr": "ArchivedPOHeaderJobDefinitionName",
+      "module_code": "PO",
+      "bicc": false
+    },
+    {
+      "column": "JOB_DEFINITION_PACKAGE",
+      "pvo_name": "PurchasingDocumentVersionPVO",
+      "pvo_attr": "ArchivedPOHeaderJobDefinitionPackage",
+      "module_code": "PO",
+      "bicc": false
+    },
+    {
+      "column": "LAST_UPDATE_DATE",
+      "pvo_name": "PurchasingDocumentVersionPVO",
+      "pvo_attr": "ArchivedPOHeaderLastUpdateDate",
+      "module_code": "PO",
+      "bicc": true
+    },
+    {
+      "column": "LAST_UPDATE_LOGIN",
+      "pvo_name": "PurchasingDocumentVersionPVO",
+      "pvo_attr": "ArchivedPOHeaderLastUpdateLogin",
+      "module_code": "PO",
+      "bicc": false
+    },
+    {
+      "column": "LAST_UPDATED_BY",
+      "pvo_name": "PurchasingDocumentVersionPVO",
+      "pvo_attr": "ArchivedPOHeaderLastUpdatedBy",
+      "module_code": "PO",
+      "bicc": false
+    },
+    {
+      "column": "MIN_RELEASE_AMOUNT",
+      "pvo_name": "PurchasingDocumentVersionPVO",
+      "pvo_attr": "ArchivedPOHeaderMinReleaseAmount",
+      "module_code": "PO",
+      "bicc": false
+    },
+    {
+      "column": "MODE_OF_TRANSPORT",
+      "pvo_name": "PurchasingDocumentVersionPVO",
+      "pvo_attr": "ArchivedPOHeaderModeOfTransport",
+      "module_code": "PO",
+      "bicc": true
+    },
+    {
+      "column": "NOTE_TO_AUTHORIZER",
+      "pvo_name": "PurchasingDocumentVersionPVO",
+      "pvo_attr": "ArchivedPOHeaderNoteToAuthorizer",
+      "module_code": "PO",
+      "bicc": false
+    },
+    {
+      "column": "NOTE_TO_RECEIVER",
+      "pvo_name": "PurchasingDocumentVersionPVO",
+      "pvo_attr": "ArchivedPOHeaderNoteToReceiver",
+      "module_code": "PO",
+      "bicc": false
+    },
+    {
+      "column": "NOTE_TO_VENDOR",
+      "pvo_name": "PurchasingDocumentVersionPVO",
+      "pvo_attr": "ArchivedPOHeaderNoteToVendor",
+      "module_code": "PO",
+      "bicc": false
+    },
+    {
+      "column": "OBJECT_VERSION_NUMBER",
+      "pvo_name": "PurchasingDocumentVersionPVO",
+      "pvo_attr": "ArchivedPOHeaderObjectVersionNumber",
+      "module_code": "PO",
+      "bicc": false
+    },
+    {
+      "column": "ORCHESTRATION_ORDER_FLAG",
+      "pvo_name": "PurchasingDocumentVersionPVO",
+      "pvo_attr": "ArchivedPOHeaderOrchestrationOrderFlag",
+      "module_code": "PO",
+      "bicc": true
+    },
+    {
+      "column": "PAY_ON_CODE",
+      "pvo_name": "PurchasingDocumentVersionPVO",
+      "pvo_attr": "ArchivedPOHeaderPayOnCode",
+      "module_code": "PO",
+      "bicc": false
+    },
+    {
+      "column": "PAY_ON_USE_FLAG",
+      "pvo_name": "PurchasingDocumentVersionPVO",
+      "pvo_attr": "ArchivedPOHeaderPayOnUseFlag",
+      "module_code": "PO",
+      "bicc": true
+    },
+    {
+      "column": "PCARD_ID",
+      "pvo_name": "PurchasingDocumentVersionPVO",
+      "pvo_attr": "ArchivedPOHeaderPcardId",
+      "module_code": "PO",
+      "bicc": false
+    },
+    {
+      "column": "PENDING_SIGNATURE_FLAG",
+      "pvo_name": "PurchasingDocumentVersionPVO",
+      "pvo_attr": "ArchivedPOHeaderPendingSignatureFlag",
+      "module_code": "PO",
+      "bicc": false
+    },
+    {
+      "column": "PO_HEADER_ID",
+      "pvo_name": "PurchasingDocumentVersionPVO",
+      "pvo_attr": "ArchivedPOHeaderPoHeaderId",
+      "module_code": "PO",
+      "bicc": true
+    },
+    {
+      "column": "PRC_BU_ID",
+      "pvo_name": "PurchasingDocumentVersionPVO",
+      "pvo_attr": "ArchivedPOHeaderPrcBuId",
+      "module_code": "PO",
+      "bicc": false
+    },
+    {
+      "column": "PRICE_UPDATE_TOLERANCE",
+      "pvo_name": "PurchasingDocumentVersionPVO",
+      "pvo_attr": "ArchivedPOHeaderPriceUpdateTolerance",
+      "module_code": "PO",
+      "bicc": false
+    },
+    {
+      "column": "PROGRAM_APP_NAME",
+      "pvo_name": "PurchasingDocumentVersionPVO",
+      "pvo_attr": "ArchivedPOHeaderProgramAppName",
+      "module_code": "PO",
+      "bicc": false
+    },
+    {
+      "column": "PROGRAM_NAME",
+      "pvo_name": "PurchasingDocumentVersionPVO",
+      "pvo_attr": "ArchivedPOHeaderProgramName",
+      "module_code": "PO",
+      "bicc": false
+    },
+    {
+      "column": "RATE",
+      "pvo_name": "PurchasingDocumentVersionPVO",
+      "pvo_attr": "ArchivedPOHeaderRate",
+      "module_code": "PO",
+      "bicc": false
+    },
+    {
+      "column": "RATE_DATE",
+      "pvo_name": "PurchasingDocumentVersionPVO",
+      "pvo_attr": "ArchivedPOHeaderRateDate",
+      "module_code": "PO",
+      "bicc": false
+    },
+    {
+      "column": "RATE_TYPE",
+      "pvo_name": "PurchasingDocumentVersionPVO",
+      "pvo_attr": "ArchivedPOHeaderRateType",
+      "module_code": "PO",
+      "bicc": false
+    },
+    {
+      "column": "REFERENCE_NUM",
+      "pvo_name": "PurchasingDocumentVersionPVO",
+      "pvo_attr": "ArchivedPOHeaderReferenceNum",
+      "module_code": "PO",
+      "bicc": false
+    },
+    {
+      "column": "REQ_BU_ID",
+      "pvo_name": "PurchasingDocumentVersionPVO",
+      "pvo_attr": "ArchivedPOHeaderReqBuId",
+      "module_code": "PO",
+      "bicc": false
+    },
+    {
+      "column": "REQUEST_ID",
+      "pvo_name": "PurchasingDocumentVersionPVO",
+      "pvo_attr": "ArchivedPOHeaderRequestId",
+      "module_code": "PO",
+      "bicc": false
+    },
+    {
+      "column": "RETRO_PRICE_APPLY_UPDATES_FLAG",
+      "pvo_name": "PurchasingDocumentVersionPVO",
+      "pvo_attr": "ArchivedPOHeaderRetroPriceApplyUpdatesFlag",
+      "module_code": "PO",
+      "bicc": false
+    },
+    {
+      "column": "RETRO_PRICE_COMM_UPDATES_FLAG",
+      "pvo_name": "PurchasingDocumentVersionPVO",
+      "pvo_attr": "ArchivedPOHeaderRetroPriceCommUpdatesFlag",
+      "module_code": "PO",
+      "bicc": false
+    },
+    {
+      "column": "SEGMENT1",
+      "pvo_name": "PurchasingDocumentVersionPVO",
+      "pvo_attr": "ArchivedPOHeaderSegment1",
+      "module_code": "PO",
+      "bicc": false
+    },
+    {
+      "column": "SEGMENT2",
+      "pvo_name": "PurchasingDocumentVersionPVO",
+      "pvo_attr": "ArchivedPOHeaderSegment2",
+      "module_code": "PO",
+      "bicc": false
+    },
+    {
+      "column": "SEGMENT3",
+      "pvo_name": "PurchasingDocumentVersionPVO",
+      "pvo_attr": "ArchivedPOHeaderSegment3",
+      "module_code": "PO",
+      "bicc": false
+    },
+    {
+      "column": "SEGMENT4",
+      "pvo_name": "PurchasingDocumentVersionPVO",
+      "pvo_attr": "ArchivedPOHeaderSegment4",
+      "module_code": "PO",
+      "bicc": false
+    },
+    {
+      "column": "SEGMENT5",
+      "pvo_name": "PurchasingDocumentVersionPVO",
+      "pvo_attr": "ArchivedPOHeaderSegment5",
+      "module_code": "PO",
+      "bicc": false
+    },
+    {
+      "column": "SERVICE_LEVEL",
+      "pvo_name": "PurchasingDocumentVersionPVO",
+      "pvo_attr": "ArchivedPOHeaderServiceLevel",
+      "module_code": "PO",
+      "bicc": true
+    },
+    {
+      "column": "SHIP_TO_LOCATION_ID",
+      "pvo_name": "PurchasingDocumentVersionPVO",
+      "pvo_attr": "ArchivedPOHeaderShipToLocationId",
+      "module_code": "PO",
+      "bicc": false
+    },
+    {
+      "column": "SHIPPING_CONTROL",
+      "pvo_name": "PurchasingDocumentVersionPVO",
+      "pvo_attr": "ArchivedPOHeaderShippingControl",
+      "module_code": "PO",
+      "bicc": false
+    },
+    {
+      "column": "SOLDTO_LE_ID",
+      "pvo_name": "PurchasingDocumentVersionPVO",
+      "pvo_attr": "ArchivedPOHeaderSoldtoLeId",
+      "module_code": "PO",
+      "bicc": true
+    },
+    {
+      "column": "START_DATE",
+      "pvo_name": "PurchasingDocumentVersionPVO",
+      "pvo_attr": "ArchivedPOHeaderStartDate",
+      "module_code": "PO",
+      "bicc": false
+    },
+    {
+      "column": "STYLE_ID",
+      "pvo_name": "PurchasingDocumentVersionPVO",
+      "pvo_attr": "ArchivedPOHeaderStyleId",
+      "module_code": "PO",
+      "bicc": false
+    },
+    {
+      "column": "SUBMIT_APPROVAL_AUTOMATIC",
+      "pvo_name": "PurchasingDocumentVersionPVO",
+      "pvo_attr": "ArchivedPOHeaderSubmitApprovalAutomatic",
+      "module_code": "PO",
+      "bicc": false
+    },
+    {
+      "column": "SUBMIT_DATE",
+      "pvo_name": "PurchasingDocumentVersionPVO",
+      "pvo_attr": "ArchivedPOHeaderSubmitDate",
+      "module_code": "PO",
+      "bicc": false
+    },
+    {
+      "column": "SUMMARY_FLAG",
+      "pvo_name": "PurchasingDocumentVersionPVO",
+      "pvo_attr": "ArchivedPOHeaderSummaryFlag",
+      "module_code": "PO",
+      "bicc": false
+    },
+    {
+      "column": "SUPPLIER_NOTIF_METHOD",
+      "pvo_name": "PurchasingDocumentVersionPVO",
+      "pvo_attr": "ArchivedPOHeaderSupplierNotifMethod",
+      "module_code": "PO",
+      "bicc": false
+    },
+    {
+      "column": "TAX_DOCUMENT_SUBTYPE",
+      "pvo_name": "PurchasingDocumentVersionPVO",
+      "pvo_attr": "ArchivedPOHeaderTaxDocumentSubtype",
+      "module_code": "PO",
+      "bicc": false
+    },
+    {
+      "column": "TERMS_ID",
+      "pvo_name": "PurchasingDocumentVersionPVO",
+      "pvo_attr": "ArchivedPOHeaderTermsId",
+      "module_code": "PO",
+      "bicc": false
+    },
+    {
+      "column": "TO_CO_SEQ",
+      "pvo_name": "PurchasingDocumentVersionPVO",
+      "pvo_attr": "ArchivedPOHeaderToCoSeq",
+      "module_code": "PO",
+      "bicc": false
+    },
+    {
+      "column": "TYPE_LOOKUP_CODE",
+      "pvo_name": "PurchasingDocumentVersionPVO",
+      "pvo_attr": "ArchivedPOHeaderTypeLookupCode",
+      "module_code": "PO",
+      "bicc": false
+    },
+    {
+      "column": "UPDATE_SOURCING_RULES_FLAG",
+      "pvo_name": "PurchasingDocumentVersionPVO",
+      "pvo_attr": "ArchivedPOHeaderUpdateSourcingRulesFlag",
+      "module_code": "PO",
+      "bicc": false
+    },
+    {
+      "column": "USE_NEED_BY_DATE",
+      "pvo_name": "PurchasingDocumentVersionPVO",
+      "pvo_attr": "ArchivedPOHeaderUseNeedByDate",
+      "module_code": "PO",
+      "bicc": false
+    },
+    {
+      "column": "USE_SHIP_TO",
+      "pvo_name": "PurchasingDocumentVersionPVO",
+      "pvo_attr": "ArchivedPOHeaderUseShipTo",
+      "module_code": "PO",
+      "bicc": false
+    },
+    {
+      "column": "VENDOR_CONTACT_ID",
+      "pvo_name": "PurchasingDocumentVersionPVO",
+      "pvo_attr": "ArchivedPOHeaderVendorContactId",
+      "module_code": "PO",
+      "bicc": false
+    },
+    {
+      "column": "VENDOR_ID",
+      "pvo_name": "PurchasingDocumentVersionPVO",
+      "pvo_attr": "ArchivedPOHeaderVendorId",
+      "module_code": "PO",
+      "bicc": false
+    },
+    {
+      "column": "VENDOR_ORDER_NUM",
+      "pvo_name": "PurchasingDocumentVersionPVO",
+      "pvo_attr": "ArchivedPOHeaderVendorOrderNum",
+      "module_code": "PO",
+      "bicc": false
+    },
+    {
+      "column": "VENDOR_SITE_ID",
+      "pvo_name": "PurchasingDocumentVersionPVO",
+      "pvo_attr": "ArchivedPOHeaderVendorSiteId",
+      "module_code": "PO",
+      "bicc": false
+    },
+    {
+      "column": "XML_FLAG",
+      "pvo_name": "PurchasingDocumentVersionPVO",
+      "pvo_attr": "ArchivedPOHeaderXmlFlag",
+      "module_code": "PO",
+      "bicc": false
+    }
+  ],
   "i18n": [
     {
       "id": 1,
@@ -2087,6 +2850,7 @@ const DATA = {
     <div id="tab-columns" class="tab-content"></div>
     <div id="tab-relationships" class="tab-content"></div>
     <div id="tab-sql" class="tab-content"></div>
+    <div id="tab-pvos" class="tab-content"></div>
 </main>
 
 <!-- ====== FOOTER ====== -->
@@ -2327,12 +3091,17 @@ function render() {
         overview: {pt:'Visão Geral', en:'Overview', es:'Visión General'},
         columns: {pt:'Colunas', en:'Columns', es:'Columnas'},
         relationships: {pt:'Relacionamentos', en:'Relationships', es:'Relaciones'},
-        sql: {pt:'SQL', en:'SQL', es:'SQL'}
+        sql: {pt:'SQL', en:'SQL', es:'SQL'},
+        pvos: {pt:'PVOs Relacionados', en:'Related PVOs', es:'PVOs Relacionados'}
     };
+    var _pvoNames = {};
+    (d.related_pvos || []).forEach(function(r) { _pvoNames[r.pvo_name] = 1; });
+    var pvosCount = Object.keys(_pvoNames).length;
     document.getElementById('tabs-nav').innerHTML =
         '<button class="tab-btn active" data-tab="overview" onclick="switchTab(\'overview\')"><i class="ri-information-line"></i> ' + t(tabLabels.overview) + '</button>' +
         '<button class="tab-btn" data-tab="columns" onclick="switchTab(\'columns\')"><i class="ri-table-line"></i> ' + t(tabLabels.columns) + ' <span class="tab-count">' + d.columns.length + '</span></button>' +
         '<button class="tab-btn" data-tab="relationships" onclick="switchTab(\'relationships\')"><i class="ri-git-branch-line"></i> ' + t(tabLabels.relationships) + ' <span class="tab-count">' + (d.relationships.parents.length + d.relationships.children.length) + '</span></button>' +
+        (pvosCount ? '<button class="tab-btn" data-tab="pvos" onclick="switchTab(\'pvos\')"><i class="ri-database-2-line"></i> ' + t(tabLabels.pvos) + ' <span class="tab-count">' + pvosCount + '</span></button>' : '') +
         '<button class="tab-btn" data-tab="sql" onclick="switchTab(\'sql\')"><i class="ri-code-s-slash-line"></i> SQL <span class="tab-count">' + d.sql.length + '</span></button>';
 
     // Tab 1: Overview
@@ -2342,6 +3111,7 @@ function render() {
         '<div class="stat-card"><div class="stat-card-icon bg-info"><i class="ri-links-line"></i></div><div class="stat-card-info"><div class="stat-card-number" style="color:var(--info)">' + d.relationships.parents.length + '</div><div class="stat-card-label">Foreign Keys</div></div></div>' +
         '<div class="stat-card"><div class="stat-card-icon bg-success"><i class="ri-shield-check-line"></i></div><div class="stat-card-info"><div class="stat-card-number" style="color:var(--success)">' + d.stats.avg_confidence + '%</div><div class="stat-card-label">' + t({pt:'Confiança Média', en:'Avg Confidence', es:'Confianza Promedio'}) + '</div></div></div>' +
         '<div class="stat-card"><div class="stat-card-icon bg-purple"><i class="ri-apps-line"></i></div><div class="stat-card-info"><div class="stat-card-number" style="color:var(--purple)">' + d.stats.categories + '</div><div class="stat-card-label">' + t({pt:'Categorias', en:'Categories', es:'Categorías'}) + '</div></div></div>' +
+        (pvosCount ? '<div class="stat-card"><div class="stat-card-icon bg-purple"><i class="ri-database-2-line"></i></div><div class="stat-card-info"><div class="stat-card-number" style="color:var(--purple)">' + pvosCount + '</div><div class="stat-card-label">PVOs</div></div></div>' : '') +
         '</div>';
 
     var overviewHtml = statsHtml +
@@ -2451,6 +3221,69 @@ function render() {
     }
     document.getElementById('tab-sql').innerHTML = sqlHtml;
 
+    // Tab 5: Related PVOs (grouped by PVO, table inside each group)
+    var pvosHtml = '';
+    if (d.related_pvos && d.related_pvos.length) {
+        // Group rows by pvo_name
+        var pvoGroups = {};
+        var pvoOrder = [];
+        d.related_pvos.forEach(function(row) {
+            var key = row.pvo_name;
+            if (!pvoGroups[key]) {
+                pvoGroups[key] = { pvo_name: row.pvo_name, module_code: row.module_code, rows: [] };
+                pvoOrder.push(key);
+            }
+            pvoGroups[key].rows.push(row);
+        });
+
+        pvosHtml += '<div class="search-container"><i class="ri-search-line search-icon"></i><input class="search-input" type="text" placeholder="' + t({pt:'Filtrar PVOs...', en:'Filter PVOs...', es:'Filtrar PVOs...'}) + '" oninput="filterPvos(this.value)"></div>';
+
+        var pvoHeaders = {
+            pt: ['#','Campo da Tabela','Campo do PVO','Disponível por BICC'],
+            en: ['#','Table Column','PVO Attribute','Available via BICC'],
+            es: ['#','Campo de Tabla','Campo del PVO','Disponible por BICC']
+        };
+        var ph = pvoHeaders[currentLang] || pvoHeaders['pt'];
+
+        pvosHtml += '<div id="pvos-groups">';
+        pvoOrder.forEach(function(key) {
+            var grp = pvoGroups[key];
+            var pvoFile = grp.pvo_name.toLowerCase() + '.html';
+            var pvoHref = (grp.module_code === m.module_code)
+                ? '../pvos/' + pvoFile
+                : '../../' + grp.module_code + '/pvos/' + pvoFile;
+            var biccCount = grp.rows.filter(function(r) { return r.bicc; }).length;
+
+            var grpSearchFields = grp.rows.map(function(r) { return r.column + ' ' + r.pvo_attr; }).join(' ');
+            pvosHtml += '<div class="card pvo-group" data-search="' + (grp.pvo_name + ' ' + grp.module_code + ' ' + grpSearchFields).toLowerCase() + '">' +
+                '<div class="card-header" style="cursor:pointer" onclick="this.parentElement.classList.toggle(\'collapsed\')">' +
+                '<div class="card-header-icon bg-purple"><i class="ri-database-2-line"></i></div>' +
+                '<div class="card-title"><a href="' + pvoHref + langParam() + '" class="wikilink" onclick="event.stopPropagation()">' + grp.pvo_name + '</a></div>' +
+                '<span class="pill pill-info">' + grp.module_code + '</span>' +
+                '<span class="card-badge pill-info" style="background:var(--info-light);color:var(--pill-info-text);border:1px solid var(--info-border)">' + grp.rows.length + ' attrs</span>' +
+                (biccCount ? '<span class="card-badge pill-success" style="background:var(--success-light);color:var(--pill-success-text);border:1px solid var(--success-border)">BICC ' + biccCount + '</span>' : '') +
+                '<i class="ri-arrow-down-s-line" style="font-size:1.2rem;color:var(--text-muted);margin-left:auto;transition:transform 0.2s"></i>' +
+                '</div>' +
+                '<div class="card-body pvo-group-body"><div class="table-wrapper"><table><thead><tr>';
+            ph.forEach(function(h, i) { pvosHtml += '<th' + (i === ph.length - 1 ? ' style="text-align:center"' : '') + '>' + h + '</th>'; });
+            pvosHtml += '</tr></thead><tbody>';
+            grp.rows.forEach(function(row, idx) {
+                var biccHtml = row.bicc
+                    ? '<span class="pill pill-success"><i class="ri-checkbox-circle-fill"></i> ' + t({pt:'Sim',en:'Yes',es:'Sí'}) + '</span>'
+                    : '<span class="pill pill-danger" style="opacity:0.5">' + t({pt:'Não',en:'No',es:'No'}) + '</span>';
+                pvosHtml += '<tr>' +
+                    '<td>' + (idx + 1) + '</td>' +
+                    '<td class="col-name">' + row.column + '</td>' +
+                    '<td class="col-name">' + row.pvo_attr + '</td>' +
+                    '<td style="text-align:center">' + biccHtml + '</td>' +
+                    '</tr>';
+            });
+            pvosHtml += '</tbody></table></div></div></div>';
+        });
+        pvosHtml += '</div>';
+    }
+    document.getElementById('tab-pvos').innerHTML = pvosHtml;
+
     // Footer
     document.getElementById('f-initials').textContent = m.author_initials || '';
     document.getElementById('f-name').textContent = m.author_name || '';
@@ -2497,6 +3330,16 @@ function filterColumns(query) {
     rows.forEach(function(row) {
         var text = row.getAttribute('data-search') || '';
         row.style.display = !q || text.indexOf(q) >= 0 ? '' : 'none';
+    });
+}
+
+/* ====== PVO FILTER ====== */
+function filterPvos(query) {
+    var q = query.toLowerCase().trim();
+    var groups = document.querySelectorAll('#pvos-groups .pvo-group');
+    groups.forEach(function(grp) {
+        var text = grp.getAttribute('data-search') || '';
+        grp.style.display = !q || text.indexOf(q) >= 0 ? '' : 'none';
     });
 }
 

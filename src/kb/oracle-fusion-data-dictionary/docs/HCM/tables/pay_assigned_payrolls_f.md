@@ -74,10 +74,10 @@ Esta tabela é utilizada nos seguintes processos:
 
 ### Tabelas-pai (FK de entrada)
 - [[pay_pay_relationships_f]] --- via `PAYROLL_RELATIONSHIP_ID` (relacionamento de folha do colaborador)
-- [[pay_all_payrolls_f]] --- via `PAYROLL_ID` (definiÃ§Ã£o da folha de pagamento)
+- [[pay_all_payrolls_f]] --- via `PAYROLL_ID` (definição da folha de pagamento)
 
 ### Tabelas-filha (FK de saída)
-- [[pay_assigned_payrolls_dn]] --- via `ASSIGNED_PAYROLL_ID` (visÃ£o desnormalizada da folha atribuÃ­da)
+- [[pay_assigned_payrolls_dn]] --- via `ASSIGNED_PAYROLL_ID` (visão desnormalizada da folha atribuída)
 
 ---
 

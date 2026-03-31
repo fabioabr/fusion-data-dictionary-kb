@@ -84,7 +84,7 @@ Esta tabela é utilizada nos seguintes processos:
 - [[per_job_family_f]] — via `JOB_FAMILY_ID` (família do cargo)
 
 ### Tabelas-filha (FK de saída)
-- [[per_jobs_f_tl]] — via `JOB_ID` (traduÃ§Ãµes do cargo)
+- [[per_jobs_f_tl]] — via `JOB_ID` (traduções do cargo)
 - [[per_job_evaluations]] — via `JOB_ID` (avaliações do cargo)
 - [[per_job_extra_info_f]] — via `JOB_ID` (informações extras)
 - [[per_job_leg_f]] — via `JOB_ID` (dados legislativos)

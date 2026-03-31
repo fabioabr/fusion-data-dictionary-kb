@@ -73,7 +73,7 @@ Esta tabela é utilizada nos seguintes processos:
 ## 🔗 Relacionamentos
 
 ### Tabelas-pai (FK de entrada)
-- [[pay_dir_card_components_f]] --- via `DIR_CARD_COMP_ID` (componente do cartÃ£o ao qual pertence o detalhe)
+- [[pay_dir_card_components_f]] --- via `DIR_CARD_COMP_ID` (componente do cartão ao qual pertence o detalhe)
 
 ### Tabelas-filha (FK de saída)
 - --- Tabela de detalhe, nivel mais granular

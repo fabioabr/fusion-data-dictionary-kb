@@ -72,7 +72,7 @@ Esta tabela é utilizada nos seguintes processos:
 ## 🔗 Relacionamentos
 
 ### Tabelas-pai (FK de entrada)
-- [[pay_element_types_f]] --- via `ELEMENT_TYPE_ID` (tipo de elemento ao qual o critÃ©rio se aplica)
+- [[pay_element_types_f]] --- via `ELEMENT_TYPE_ID` (tipo de elemento ao qual o critério se aplica)
 
 ### Tabelas-filha (FK de saída)
 - --- Tabela de criterio, sem filhas conhecidas

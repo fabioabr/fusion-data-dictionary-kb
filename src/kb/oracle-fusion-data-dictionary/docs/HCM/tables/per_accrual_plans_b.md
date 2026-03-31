@@ -86,7 +86,7 @@ Esta tabela é utilizada nos seguintes processos:
 ### Tabelas-filha (FK de saída)
 - [[per_accrual_bands]] — via `ACCRUAL_PLAN_ID` (faixas de acumulação)
 - [[per_accrual_calc_rules]] — via `ACCRUAL_PLAN_ID` (regras de cálculo)
-- [[per_accrual_plans_tl]] — via `ACCRUAL_PLAN_ID` (traduÃ§Ãµes do plano de acÃºmulo de fÃ©rias/licenÃ§as)
+- [[per_accrual_plans_tl]] — via `ACCRUAL_PLAN_ID` (traduções do plano de acúmulo de férias/licenças)
 
 ---
 

@@ -71,7 +71,7 @@ Esta tabela é utilizada nos seguintes processos:
 ## 🔗 Relacionamentos
 
 ### Tabelas-pai (FK de entrada)
-- [[pay_run_types_f]] --- via `RUN_TYPE_ID` (tabela base do tipo de execuÃ§Ã£o de folha)
+- [[pay_run_types_f]] --- via `RUN_TYPE_ID` (tabela base do tipo de execução de folha)
 
 ### Tabelas-filha (FK de saída)
 - --- Tabela de traducao, sem filhas

@@ -80,8 +80,8 @@ Esta view é utilizada nos seguintes processos:
 ## Relacionamentos
 
 ### Tabelas-pai (FK de entrada)
-- [[per_persons]] — via `PERSON_ID` (pessoa com papel/funÃ§Ã£o atribuÃ­do)
-- [[per_all_assignments_m]] — via `ASSIGNMENT_ID` (vÃ­nculo do papel/funÃ§Ã£o atribuÃ­do)
+- [[per_persons]] — via `PERSON_ID` (pessoa com papel/função atribuído)
+- [[per_all_assignments_m]] — via `ASSIGNMENT_ID` (vínculo do papel/função atribuído)
 
 ### Tabelas-filha (FK de saída)
 - Nenhuma — views não possuem FKs diretas.

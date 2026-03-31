@@ -14,6 +14,7 @@ Pipeline de 10 passos para extrair, enriquecer, traduzir e publicar o dicionario
 | 04 | GENERATE-PVO-DESC | LLM gera descricoes de negocio para PVOs |
 | 05 | CREATE-I18N | Extrai conteudo traduzivel para .i18n.json |
 | 06 | TRANSLATE | Traduz i18n para EN e ES |
+| 06b | BUILD-REVERSE-INDEX | Gera indice reverso tabela → PVOs |
 | 07 | BUILD-TABLE-HTML | Gera HTML standalone a partir de .md |
 | 08 | BUILD-PVO-HTML | Gera HTML standalone a partir de .json (PVO) |
 | 09 | BUILD-MODULE-INDEX | Gera index.html por modulo |
@@ -43,15 +44,18 @@ Mapeamento de tabelas:
 | JSON PVO (.json) | `src/kb/oracle-fusion-data-dictionary/docs/{MODULE}/pvos/` |
 | HTML tabelas | `docs/fusion-kb/data-dictionary/{MODULE}/tables/` |
 | HTML PVOs | `docs/fusion-kb/data-dictionary/{MODULE}/pvos/` |
+| Indice reverso PVO | `scripts/config/table_to_pvos_map.json` |
 | Indice modulo | `docs/fusion-kb/data-dictionary/{MODULE}/index.html` |
 | Portal | `docs/index.html` |
 
 ## Grafo de Dependencias
 
 ```
-01 ──→ 03 ──→ 05 ──→ 06 ──→ 07 ──┐
-                                   ├──→ 09 ──→ 10
-02 ──→ 04 ──→ 05 ──→ 06 ──→ 08 ──┘
+01 ──→ 03 ──→ 05 ──→ 06 ──┬──→ 07 ──┐
+                           │         ├──→ 09 ──→ 10
+02 ──→ 04 ──→ 05 ──→ 06 ──┼──→ 08 ──┘
+                           │
+                           └──→ 06b ──→ 07
 ```
 
 **Legenda:**
@@ -60,6 +64,8 @@ Mapeamento de tabelas:
 - `02 → 04` — JSONs PVO alimentam geracao de descricoes
 - `03/04 → 05` — Conteudo enriquecido alimenta extracao i18n
 - `05 → 06` — Arquivos .i18n.json alimentam traducao
+- `06 → 06b` — PVO JSONs + i18n alimentam indice reverso tabela→PVOs
+- `06b → 07` — Indice reverso alimenta aba "PVOs Relacionados" no HTML de tabelas
 - `06 → 07/08` — Traducoes prontas alimentam geracao HTML
 - `07/08 → 09` — HTMLs individuais alimentam indice do modulo
 - `09 → 10` — Indices de modulo alimentam portal principal

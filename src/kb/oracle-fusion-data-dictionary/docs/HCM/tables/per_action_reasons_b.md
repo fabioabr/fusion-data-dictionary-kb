@@ -80,8 +80,8 @@ Esta tabela é utilizada nos seguintes processos:
 - - Nenhuma FK direta — tabela raiz de configuração de motivos de ação.
 
 ### Tabelas-filha (FK de saída)
-- [[per_action_reasons_tl]] — via `ACTION_REASON_ID` (traduÃ§Ãµes do motivo de aÃ§Ã£o de RH)
-- [[per_action_reason_usages]] — via `ACTION_REASON_ID` (associaÃ§Ãµes de uso do motivo de aÃ§Ã£o)
+- [[per_action_reasons_tl]] — via `ACTION_REASON_ID` (traduções do motivo de ação de RH)
+- [[per_action_reason_usages]] — via `ACTION_REASON_ID` (associações de uso do motivo de ação)
 - [[per_action_occurrences]] — via `ACTION_REASON_ID` (ocorrências que usam este motivo)
 
 ---

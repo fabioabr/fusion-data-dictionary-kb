@@ -82,7 +82,7 @@ Esta tabela é utilizada nos seguintes processos:
 
 ### Tabelas-pai (FK de entrada)
 - [[per_all_assignments_m]] — via `ASSIGNMENT_ID` (assignment supervisionado)
-- [[per_all_people_f]] — via `SUPERVISOR_ID` (pessoa que atua como supervisor do vÃ­nculo)
+- [[per_all_people_f]] — via `SUPERVISOR_ID` (pessoa que atua como supervisor do vínculo)
 
 ### Tabelas-filha (FK de saída)
 - - Nenhuma tabela-filha direta identificada.

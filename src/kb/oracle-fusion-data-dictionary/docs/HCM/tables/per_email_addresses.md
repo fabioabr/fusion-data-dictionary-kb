@@ -78,7 +78,7 @@ Esta tabela é utilizada nos seguintes processos:
 ## 🔗 Relacionamentos
 
 ### Tabelas-pai (FK de entrada)
-- [[per_all_people_f]] — via `PERSON_ID` (pessoa titular do endereÃ§o de e-mail)
+- [[per_all_people_f]] — via `PERSON_ID` (pessoa titular do endereço de e-mail)
 
 ### Tabelas-filha (FK de saída)
 - - Nenhuma tabela-filha direta identificada.

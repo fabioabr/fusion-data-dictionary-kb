@@ -73,8 +73,8 @@ Esta tabela é utilizada nos seguintes processos:
 ## 🔗 Relacionamentos
 
 ### Tabelas-pai (FK de entrada)
-- [[pay_element_entries_f]] --- via `ELEMENT_ENTRY_ID` (entrada de elemento Ã  qual pertence o valor)
-- [[pay_input_values_f]] --- via `INPUT_VALUE_ID` (definiÃ§Ã£o do valor de entrada do elemento)
+- [[pay_element_entries_f]] --- via `ELEMENT_ENTRY_ID` (entrada de elemento à qual pertence o valor)
+- [[pay_input_values_f]] --- via `INPUT_VALUE_ID` (definição do valor de entrada do elemento)
 
 ### Tabelas-filha (FK de saída)
 - --- Tabela de valores, nivel mais granular

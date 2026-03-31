@@ -77,7 +77,7 @@ Esta tabela é utilizada nos seguintes processos:
 ## Relacionamentos
 
 ### Tabelas-pai (FK de entrada)
-- [[per_persons]] — via `PERSON_ID` (pessoa com registro de religiÃ£o)
+- [[per_persons]] — via `PERSON_ID` (pessoa com registro de religião)
 
 ### Tabelas-filha (FK de saída)
 - Nenhuma relação direta identificada.

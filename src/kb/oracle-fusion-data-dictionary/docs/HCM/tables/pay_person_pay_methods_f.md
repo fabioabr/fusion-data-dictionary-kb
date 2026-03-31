@@ -74,11 +74,11 @@ Esta tabela é utilizada nos seguintes processos:
 ## 🔗 Relacionamentos
 
 ### Tabelas-pai (FK de entrada)
-- [[pay_pay_relationships_f]] --- via `PAYROLL_RELATIONSHIP_ID` (relacionamento de folha do mÃ©todo pessoal)
-- [[pay_org_pay_methods_f]] --- via `ORG_PAYMENT_METHOD_ID` (mÃ©todo organizacional base do mÃ©todo pessoal)
+- [[pay_pay_relationships_f]] --- via `PAYROLL_RELATIONSHIP_ID` (relacionamento de folha do método pessoal)
+- [[pay_org_pay_methods_f]] --- via `ORG_PAYMENT_METHOD_ID` (método organizacional base do método pessoal)
 
 ### Tabelas-filha (FK de saída)
-- [[pay_pre_payments]] --- via `PERSONAL_PAYMENT_METHOD_ID` (prÃ©-pagamentos do mÃ©todo pessoal)
+- [[pay_pre_payments]] --- via `PERSONAL_PAYMENT_METHOD_ID` (pré-pagamentos do método pessoal)
 
 ---
 

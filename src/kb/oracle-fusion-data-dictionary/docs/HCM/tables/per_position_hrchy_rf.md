@@ -80,8 +80,8 @@ Esta tabela é utilizada nos seguintes processos:
 ## Relacionamentos
 
 ### Tabelas-pai (FK de entrada)
-- [[hr_all_positions_f]] — via `POSITION_ID` e `ANCESTOR_POSITION_ID` (posiÃ§Ã£o no nÃ³ da hierarquia)
-- [[per_position_hierarchy_f]] — via `POSITION_HIERARCHY_ID` (hierarquia Ã  qual o nÃ³ de posiÃ§Ã£o pertence)
+- [[hr_all_positions_f]] — via `POSITION_ID` e `ANCESTOR_POSITION_ID` (posição no nó da hierarquia)
+- [[per_position_hierarchy_f]] — via `POSITION_HIERARCHY_ID` (hierarquia à qual o nó de posição pertence)
 
 ### Tabelas-filha (FK de saída)
 - Nenhuma relação direta identificada.

@@ -74,8 +74,8 @@ Esta tabela é utilizada nos seguintes processos:
 ## 🔗 Relacionamentos
 
 ### Tabelas-pai (FK de entrada)
-- [[per_actions_b]] — via `ACTION_ID` (aÃ§Ã£o de RH que usa o motivo)
-- [[per_action_reasons_b]] — via `ACTION_REASON_ID` (motivo utilizado pela aÃ§Ã£o de RH)
+- [[per_actions_b]] — via `ACTION_ID` (ação de RH que usa o motivo)
+- [[per_action_reasons_b]] — via `ACTION_REASON_ID` (motivo utilizado pela ação de RH)
 
 ### Tabelas-filha (FK de saída)
 - - Nenhuma tabela-filha — tabela de associação (junction table).

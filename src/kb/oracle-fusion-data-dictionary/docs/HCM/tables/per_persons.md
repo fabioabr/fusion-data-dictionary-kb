@@ -89,16 +89,16 @@ Esta tabela é utilizada nos seguintes processos:
 
 ### Tabelas-filha (FK de saída)
 - [[per_person_names_f]] — via `PERSON_ID` (nomes da pessoa ao longo do tempo)
-- [[per_periods_of_service]] — via `PERSON_ID` (perÃ­odos de serviÃ§o da pessoa)
-- [[per_all_assignments_m]] — via `PERSON_ID` (vÃ­nculos empregatÃ­cios da pessoa)
+- [[per_periods_of_service]] — via `PERSON_ID` (períodos de serviço da pessoa)
+- [[per_all_assignments_m]] — via `PERSON_ID` (vínculos empregatícios da pessoa)
 - [[per_national_identifiers]] — via `PERSON_ID` (documentos de identidade nacional da pessoa)
 - [[per_passports]] — via `PERSON_ID` (passaportes da pessoa)
 - [[per_phones]] — via `PERSON_ID` (telefones de contato da pessoa)
-- [[per_person_addr_usages_f]] — via `PERSON_ID` (usos de endereÃ§o da pessoa)
+- [[per_person_addr_usages_f]] — via `PERSON_ID` (usos de endereço da pessoa)
 - [[per_people_legislative_f]] — via `PERSON_ID` (dados legislativos)
 - [[per_person_dlvry_methods]] — via `PERSON_ID` (métodos de entrega)
 - [[per_person_type_usages_m]] — via `PERSON_ID` (tipos de pessoa)
-- [[per_religions]] — via `PERSON_ID` (registros de religiÃ£o da pessoa)
+- [[per_religions]] — via `PERSON_ID` (registros de religião da pessoa)
 
 ---
 

@@ -80,7 +80,7 @@ Esta tabela é utilizada nos seguintes processos:
 ## Relacionamentos
 
 ### Tabelas-pai (FK de entrada)
-- [[per_location_details_f]] — via `LOCATION_DETAILS_ID` (tabela base dos detalhes da localizaÃ§Ã£o)
+- [[per_location_details_f]] — via `LOCATION_DETAILS_ID` (tabela base dos detalhes da localização)
 
 ### Tabelas-filha (FK de saída)
 - Nenhuma relação direta identificada.

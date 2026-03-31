@@ -75,7 +75,7 @@ Esta tabela é utilizada nos seguintes processos:
 - --- Tabela base de grupos de desconto + traducoes
 
 ### Tabelas-filha (FK de saída)
-- [[pay_deduction_types]] --- via `DEDUCTION_GROUP_ID` (tipos de deduÃ§Ã£o do grupo)
+- [[pay_deduction_types]] --- via `DEDUCTION_GROUP_ID` (tipos de dedução do grupo)
 
 ---
 

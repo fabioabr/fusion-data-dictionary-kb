@@ -75,7 +75,7 @@ Esta tabela é utilizada nos seguintes processos:
 ## 🔗 Relacionamentos
 
 ### Tabelas-pai (FK de entrada)
-- [[per_job_family_f]] — via `JOB_FAMILY_ID` (tabela base da famÃ­lia de cargos)
+- [[per_job_family_f]] — via `JOB_FAMILY_ID` (tabela base da família de cargos)
 
 ### Tabelas-filha (FK de saída)
 - - Nenhuma tabela-filha — tabela terminal de tradução.

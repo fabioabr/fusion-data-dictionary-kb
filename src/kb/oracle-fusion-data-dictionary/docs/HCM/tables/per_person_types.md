@@ -80,9 +80,9 @@ Esta tabela é utilizada nos seguintes processos:
 - Nenhuma — tabela de configuração/referência.
 
 ### Tabelas-filha (FK de saída)
-- [[per_person_types_tl]] — via `PERSON_TYPE_ID` (traduÃ§Ãµes do tipo de pessoa)
+- [[per_person_types_tl]] — via `PERSON_TYPE_ID` (traduções do tipo de pessoa)
 - [[per_person_type_usages_m]] — via `PERSON_TYPE_ID` (usos do tipo de pessoa nos registros)
-- [[per_periods_of_service]] — via `PERSON_TYPE_ID` (perÃ­odos de serviÃ§o com este tipo de pessoa)
+- [[per_periods_of_service]] — via `PERSON_TYPE_ID` (períodos de serviço com este tipo de pessoa)
 
 ---
 

@@ -80,7 +80,7 @@ Esta tabela é utilizada nos seguintes processos:
 
 ### Tabelas-pai (FK de entrada)
 - [[wlf_learning_items_f]] — via `LEARNING_ITEM_ID` (item de aprendizado)
-- [[per_all_people_f]] — via `PERSON_ID` (pessoa com interaÃ§Ã£o social no aprendizado)
+- [[per_all_people_f]] — via `PERSON_ID` (pessoa com interação social no aprendizado)
 
 ### Tabelas-filha (FK de saída)
 - Nenhuma tabela-filha identificada.

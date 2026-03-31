@@ -73,7 +73,7 @@ Esta tabela é utilizada nos seguintes processos:
 
 ### Tabelas-pai (FK de entrada)
 - [[pay_element_entries_f]] --- via `ELEMENT_ENTRY_ID` (entrada de elemento utilizada no processamento)
-- [[pay_payroll_actions]] --- via `PAYROLL_ACTION_ID` (aÃ§Ã£o de folha que consumiu a entrada)
+- [[pay_payroll_actions]] --- via `PAYROLL_ACTION_ID` (ação de folha que consumiu a entrada)
 
 ### Tabelas-filha (FK de saída)
 - --- Tabela de controle, sem filhas conhecidas

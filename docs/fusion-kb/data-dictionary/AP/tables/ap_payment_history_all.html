@@ -262,6 +262,11 @@ pre.sql-code { margin: 0; padding: 16px; font-family: 'Courier New', monospace; 
 .bg-orange { background: var(--orange); } .bg-teal { background: var(--teal); }
 .bg-secondary { background: var(--secondary); }
 
+/* ====== PVO GROUPS ====== */
+.pvo-group .card-header .ri-arrow-down-s-line { transition: transform 0.2s; }
+.pvo-group.collapsed .pvo-group-body { display: none; }
+.pvo-group.collapsed .ri-arrow-down-s-line { transform: rotate(-90deg); }
+
 /* ====== RESPONSIVE ====== */
 @media (max-width: 768px) {
     .stats-grid { grid-template-columns: 1fr; }
@@ -1961,6 +1966,848 @@ const DATA = {
     "PJF_PROJ_ELEMENTS_TL": "HCM",
     "PJF_WORK_TYPES_VL": "HCM"
   },
+  "related_pvos": [
+    {
+      "column": "ACCOUNTING_DATE",
+      "pvo_name": "DisbursementHistoryHeaderExtractPVO",
+      "pvo_attr": "ApPaymentHistoryAllAccountingDate",
+      "module_code": "OTHER",
+      "bicc": true
+    },
+    {
+      "column": "ACCOUNTING_EVENT_ID",
+      "pvo_name": "DisbursementHistoryHeaderExtractPVO",
+      "pvo_attr": "ApPaymentHistoryAllAccountingEventId",
+      "module_code": "OTHER",
+      "bicc": true
+    },
+    {
+      "column": "BANK_CURRENCY_CODE",
+      "pvo_name": "DisbursementHistoryHeaderExtractPVO",
+      "pvo_attr": "ApPaymentHistoryAllBankCurrencyCode",
+      "module_code": "OTHER",
+      "bicc": true
+    },
+    {
+      "column": "BANK_TO_BASE_XRATE",
+      "pvo_name": "DisbursementHistoryHeaderExtractPVO",
+      "pvo_attr": "ApPaymentHistoryAllBankToBaseXrate",
+      "module_code": "OTHER",
+      "bicc": true
+    },
+    {
+      "column": "BANK_TO_BASE_XRATE_DATE",
+      "pvo_name": "DisbursementHistoryHeaderExtractPVO",
+      "pvo_attr": "ApPaymentHistoryAllBankToBaseXrateDate",
+      "module_code": "OTHER",
+      "bicc": true
+    },
+    {
+      "column": "BANK_TO_BASE_XRATE_TYPE",
+      "pvo_name": "DisbursementHistoryHeaderExtractPVO",
+      "pvo_attr": "ApPaymentHistoryAllBankToBaseXrateType",
+      "module_code": "OTHER",
+      "bicc": true
+    },
+    {
+      "column": "CHARGE_AMOUNT",
+      "pvo_name": "DisbursementHistoryHeaderExtractPVO",
+      "pvo_attr": "ApPaymentHistoryAllChargeAmount",
+      "module_code": "OTHER",
+      "bicc": true
+    },
+    {
+      "column": "CHARGES_BANK_AMOUNT",
+      "pvo_name": "DisbursementHistoryHeaderExtractPVO",
+      "pvo_attr": "ApPaymentHistoryAllChargesBankAmount",
+      "module_code": "OTHER",
+      "bicc": true
+    },
+    {
+      "column": "CHARGES_BASE_AMOUNT",
+      "pvo_name": "DisbursementHistoryHeaderExtractPVO",
+      "pvo_attr": "ApPaymentHistoryAllChargesBaseAmount",
+      "module_code": "OTHER",
+      "bicc": true
+    },
+    {
+      "column": "CHARGES_PMT_AMOUNT",
+      "pvo_name": "DisbursementHistoryHeaderExtractPVO",
+      "pvo_attr": "ApPaymentHistoryAllChargesPmtAmount",
+      "module_code": "OTHER",
+      "bicc": true
+    },
+    {
+      "column": "CHECK_ID",
+      "pvo_name": "DisbursementHistoryHeaderExtractPVO",
+      "pvo_attr": "ApPaymentHistoryAllCheckId",
+      "module_code": "OTHER",
+      "bicc": true
+    },
+    {
+      "column": "CREATED_BY",
+      "pvo_name": "DisbursementHistoryHeaderExtractPVO",
+      "pvo_attr": "ApPaymentHistoryAllCreatedBy",
+      "module_code": "OTHER",
+      "bicc": true
+    },
+    {
+      "column": "CREATION_DATE",
+      "pvo_name": "DisbursementHistoryHeaderExtractPVO",
+      "pvo_attr": "ApPaymentHistoryAllCreationDate",
+      "module_code": "OTHER",
+      "bicc": true
+    },
+    {
+      "column": "CURRENCY_CODE",
+      "pvo_name": "DisbursementHistoryHeaderExtractPVO",
+      "pvo_attr": "ApPaymentHistoryAllCurrencyCode",
+      "module_code": "OTHER",
+      "bicc": true
+    },
+    {
+      "column": "ERROR_AMOUNT",
+      "pvo_name": "DisbursementHistoryHeaderExtractPVO",
+      "pvo_attr": "ApPaymentHistoryAllErrorAmount",
+      "module_code": "OTHER",
+      "bicc": true
+    },
+    {
+      "column": "ERRORS_BANK_AMOUNT",
+      "pvo_name": "DisbursementHistoryHeaderExtractPVO",
+      "pvo_attr": "ApPaymentHistoryAllErrorsBankAmount",
+      "module_code": "OTHER",
+      "bicc": true
+    },
+    {
+      "column": "ERRORS_BASE_AMOUNT",
+      "pvo_name": "DisbursementHistoryHeaderExtractPVO",
+      "pvo_attr": "ApPaymentHistoryAllErrorsBaseAmount",
+      "module_code": "OTHER",
+      "bicc": true
+    },
+    {
+      "column": "ERRORS_PMT_AMOUNT",
+      "pvo_name": "DisbursementHistoryHeaderExtractPVO",
+      "pvo_attr": "ApPaymentHistoryAllErrorsPmtAmount",
+      "module_code": "OTHER",
+      "bicc": true
+    },
+    {
+      "column": "GAIN_LOSS_INDICATOR",
+      "pvo_name": "DisbursementHistoryHeaderExtractPVO",
+      "pvo_attr": "ApPaymentHistoryAllGainLossIndicator",
+      "module_code": "OTHER",
+      "bicc": true
+    },
+    {
+      "column": "HISTORICAL_FLAG",
+      "pvo_name": "DisbursementHistoryHeaderExtractPVO",
+      "pvo_attr": "ApPaymentHistoryAllHistoricalFlag",
+      "module_code": "OTHER",
+      "bicc": true
+    },
+    {
+      "column": "INVOICE_ADJUSTMENT_EVENT_ID",
+      "pvo_name": "DisbursementHistoryHeaderExtractPVO",
+      "pvo_attr": "ApPaymentHistoryAllInvoiceAdjustmentEventId",
+      "module_code": "OTHER",
+      "bicc": true
+    },
+    {
+      "column": "LAST_UPDATE_DATE",
+      "pvo_name": "DisbursementHistoryHeaderExtractPVO",
+      "pvo_attr": "ApPaymentHistoryAllLastUpdateDate",
+      "module_code": "OTHER",
+      "bicc": true
+    },
+    {
+      "column": "LAST_UPDATE_LOGIN",
+      "pvo_name": "DisbursementHistoryHeaderExtractPVO",
+      "pvo_attr": "ApPaymentHistoryAllLastUpdateLogin",
+      "module_code": "OTHER",
+      "bicc": true
+    },
+    {
+      "column": "LAST_UPDATED_BY",
+      "pvo_name": "DisbursementHistoryHeaderExtractPVO",
+      "pvo_attr": "ApPaymentHistoryAllLastUpdatedBy",
+      "module_code": "OTHER",
+      "bicc": true
+    },
+    {
+      "column": "MATCHED_FLAG",
+      "pvo_name": "DisbursementHistoryHeaderExtractPVO",
+      "pvo_attr": "ApPaymentHistoryAllMatchedFlag",
+      "module_code": "OTHER",
+      "bicc": true
+    },
+    {
+      "column": "MRC_BANK_TO_BASE_XRATE",
+      "pvo_name": "DisbursementHistoryHeaderExtractPVO",
+      "pvo_attr": "ApPaymentHistoryAllMrcBankToBaseXrate",
+      "module_code": "OTHER",
+      "bicc": true
+    },
+    {
+      "column": "MRC_BANK_TO_BASE_XRATE_DATE",
+      "pvo_name": "DisbursementHistoryHeaderExtractPVO",
+      "pvo_attr": "ApPaymentHistoryAllMrcBankToBaseXrateDate",
+      "module_code": "OTHER",
+      "bicc": true
+    },
+    {
+      "column": "MRC_BANK_TO_BASE_XRATE_TYPE",
+      "pvo_name": "DisbursementHistoryHeaderExtractPVO",
+      "pvo_attr": "ApPaymentHistoryAllMrcBankToBaseXrateType",
+      "module_code": "OTHER",
+      "bicc": true
+    },
+    {
+      "column": "MRC_CHARGES_BASE_AMOUNT",
+      "pvo_name": "DisbursementHistoryHeaderExtractPVO",
+      "pvo_attr": "ApPaymentHistoryAllMrcChargesBaseAmount",
+      "module_code": "OTHER",
+      "bicc": true
+    },
+    {
+      "column": "MRC_ERRORS_BASE_AMOUNT",
+      "pvo_name": "DisbursementHistoryHeaderExtractPVO",
+      "pvo_attr": "ApPaymentHistoryAllMrcErrorsBaseAmount",
+      "module_code": "OTHER",
+      "bicc": true
+    },
+    {
+      "column": "MRC_EXCHANGE_RATE",
+      "pvo_name": "DisbursementHistoryHeaderExtractPVO",
+      "pvo_attr": "ApPaymentHistoryAllMrcExchangeRate",
+      "module_code": "OTHER",
+      "bicc": true
+    },
+    {
+      "column": "MRC_EXCHANGE_RATE_DATE",
+      "pvo_name": "DisbursementHistoryHeaderExtractPVO",
+      "pvo_attr": "ApPaymentHistoryAllMrcExchangeRateDate",
+      "module_code": "OTHER",
+      "bicc": true
+    },
+    {
+      "column": "MRC_EXCHANGE_RATE_TYPE",
+      "pvo_name": "DisbursementHistoryHeaderExtractPVO",
+      "pvo_attr": "ApPaymentHistoryAllMrcExchangeRateType",
+      "module_code": "OTHER",
+      "bicc": true
+    },
+    {
+      "column": "MRC_PMT_TO_BASE_XRATE",
+      "pvo_name": "DisbursementHistoryHeaderExtractPVO",
+      "pvo_attr": "ApPaymentHistoryAllMrcPmtToBaseXrate",
+      "module_code": "OTHER",
+      "bicc": true
+    },
+    {
+      "column": "MRC_PMT_TO_BASE_XRATE_DATE",
+      "pvo_name": "DisbursementHistoryHeaderExtractPVO",
+      "pvo_attr": "ApPaymentHistoryAllMrcPmtToBaseXrateDate",
+      "module_code": "OTHER",
+      "bicc": true
+    },
+    {
+      "column": "MRC_PMT_TO_BASE_XRATE_TYPE",
+      "pvo_name": "DisbursementHistoryHeaderExtractPVO",
+      "pvo_attr": "ApPaymentHistoryAllMrcPmtToBaseXrateType",
+      "module_code": "OTHER",
+      "bicc": true
+    },
+    {
+      "column": "MRC_TRX_BASE_AMOUNT",
+      "pvo_name": "DisbursementHistoryHeaderExtractPVO",
+      "pvo_attr": "ApPaymentHistoryAllMrcTrxBaseAmount",
+      "module_code": "OTHER",
+      "bicc": true
+    },
+    {
+      "column": "OBJECT_VERSION_NUMBER",
+      "pvo_name": "DisbursementHistoryHeaderExtractPVO",
+      "pvo_attr": "ApPaymentHistoryAllObjectVersionNumber",
+      "module_code": "OTHER",
+      "bicc": true
+    },
+    {
+      "column": "ORG_ID",
+      "pvo_name": "DisbursementHistoryHeaderExtractPVO",
+      "pvo_attr": "ApPaymentHistoryAllOrgId",
+      "module_code": "OTHER",
+      "bicc": true
+    },
+    {
+      "column": "PAYMENT_HISTORY_ID",
+      "pvo_name": "DisbursementHistoryHeaderExtractPVO",
+      "pvo_attr": "ApPaymentHistoryAllPaymentHistoryId",
+      "module_code": "OTHER",
+      "bicc": true
+    },
+    {
+      "column": "PMT_CURRENCY_CODE",
+      "pvo_name": "DisbursementHistoryHeaderExtractPVO",
+      "pvo_attr": "ApPaymentHistoryAllPmtCurrencyCode",
+      "module_code": "OTHER",
+      "bicc": true
+    },
+    {
+      "column": "PMT_TO_BASE_XRATE",
+      "pvo_name": "DisbursementHistoryHeaderExtractPVO",
+      "pvo_attr": "ApPaymentHistoryAllPmtToBaseXrate",
+      "module_code": "OTHER",
+      "bicc": true
+    },
+    {
+      "column": "PMT_TO_BASE_XRATE_DATE",
+      "pvo_name": "DisbursementHistoryHeaderExtractPVO",
+      "pvo_attr": "ApPaymentHistoryAllPmtToBaseXrateDate",
+      "module_code": "OTHER",
+      "bicc": true
+    },
+    {
+      "column": "PMT_TO_BASE_XRATE_TYPE",
+      "pvo_name": "DisbursementHistoryHeaderExtractPVO",
+      "pvo_attr": "ApPaymentHistoryAllPmtToBaseXrateType",
+      "module_code": "OTHER",
+      "bicc": true
+    },
+    {
+      "column": "POSTED_FLAG",
+      "pvo_name": "DisbursementHistoryHeaderExtractPVO",
+      "pvo_attr": "ApPaymentHistoryAllPostedFlag",
+      "module_code": "OTHER",
+      "bicc": true
+    },
+    {
+      "column": "PROGRAM_APPLICATION_ID",
+      "pvo_name": "DisbursementHistoryHeaderExtractPVO",
+      "pvo_attr": "ApPaymentHistoryAllProgramApplicationId",
+      "module_code": "OTHER",
+      "bicc": true
+    },
+    {
+      "column": "PROGRAM_ID",
+      "pvo_name": "DisbursementHistoryHeaderExtractPVO",
+      "pvo_attr": "ApPaymentHistoryAllProgramId",
+      "module_code": "OTHER",
+      "bicc": true
+    },
+    {
+      "column": "PROGRAM_UPDATE_DATE",
+      "pvo_name": "DisbursementHistoryHeaderExtractPVO",
+      "pvo_attr": "ApPaymentHistoryAllProgramUpdateDate",
+      "module_code": "OTHER",
+      "bicc": true
+    },
+    {
+      "column": "RELATED_EVENT_ID",
+      "pvo_name": "DisbursementHistoryHeaderExtractPVO",
+      "pvo_attr": "ApPaymentHistoryAllRelatedEventId",
+      "module_code": "OTHER",
+      "bicc": true
+    },
+    {
+      "column": "REQUEST_ID",
+      "pvo_name": "DisbursementHistoryHeaderExtractPVO",
+      "pvo_attr": "ApPaymentHistoryAllRequestId",
+      "module_code": "OTHER",
+      "bicc": true
+    },
+    {
+      "column": "REV_PMT_HIST_ID",
+      "pvo_name": "DisbursementHistoryHeaderExtractPVO",
+      "pvo_attr": "ApPaymentHistoryAllRevPmtHistId",
+      "module_code": "OTHER",
+      "bicc": true
+    },
+    {
+      "column": "TRANSACTION_AMOUNT",
+      "pvo_name": "DisbursementHistoryHeaderExtractPVO",
+      "pvo_attr": "ApPaymentHistoryAllTransactionAmount",
+      "module_code": "OTHER",
+      "bicc": true
+    },
+    {
+      "column": "TRANSACTION_DATE",
+      "pvo_name": "DisbursementHistoryHeaderExtractPVO",
+      "pvo_attr": "ApPaymentHistoryAllTransactionDate",
+      "module_code": "OTHER",
+      "bicc": true
+    },
+    {
+      "column": "TRANSACTION_TYPE",
+      "pvo_name": "DisbursementHistoryHeaderExtractPVO",
+      "pvo_attr": "ApPaymentHistoryAllTransactionType",
+      "module_code": "OTHER",
+      "bicc": true
+    },
+    {
+      "column": "TRX_BANK_AMOUNT",
+      "pvo_name": "DisbursementHistoryHeaderExtractPVO",
+      "pvo_attr": "ApPaymentHistoryAllTrxBankAmount",
+      "module_code": "OTHER",
+      "bicc": true
+    },
+    {
+      "column": "TRX_BASE_AMOUNT",
+      "pvo_name": "DisbursementHistoryHeaderExtractPVO",
+      "pvo_attr": "ApPaymentHistoryAllTrxBaseAmount",
+      "module_code": "OTHER",
+      "bicc": true
+    },
+    {
+      "column": "TRX_PMT_AMOUNT",
+      "pvo_name": "DisbursementHistoryHeaderExtractPVO",
+      "pvo_attr": "ApPaymentHistoryAllTrxPmtAmount",
+      "module_code": "OTHER",
+      "bicc": true
+    },
+    {
+      "column": "ACCOUNTING_DATE",
+      "pvo_name": "DisbursementHistoryHeaderPVO",
+      "pvo_attr": "PaymentHistoryAccountingDate",
+      "module_code": "AP",
+      "bicc": true
+    },
+    {
+      "column": "ACCOUNTING_EVENT_ID",
+      "pvo_name": "DisbursementHistoryHeaderPVO",
+      "pvo_attr": "PaymentHistoryAccountingEventId",
+      "module_code": "AP",
+      "bicc": false
+    },
+    {
+      "column": "BANK_CURRENCY_CODE",
+      "pvo_name": "DisbursementHistoryHeaderPVO",
+      "pvo_attr": "PaymentHistoryBankCurrencyCode",
+      "module_code": "AP",
+      "bicc": true
+    },
+    {
+      "column": "BANK_TO_BASE_XRATE",
+      "pvo_name": "DisbursementHistoryHeaderPVO",
+      "pvo_attr": "PaymentHistoryBankToBaseXrate",
+      "module_code": "AP",
+      "bicc": true
+    },
+    {
+      "column": "BANK_TO_BASE_XRATE_DATE",
+      "pvo_name": "DisbursementHistoryHeaderPVO",
+      "pvo_attr": "PaymentHistoryBankToBaseXrateDate",
+      "module_code": "AP",
+      "bicc": true
+    },
+    {
+      "column": "BANK_TO_BASE_XRATE_TYPE",
+      "pvo_name": "DisbursementHistoryHeaderPVO",
+      "pvo_attr": "PaymentHistoryBankToBaseXrateType",
+      "module_code": "AP",
+      "bicc": true
+    },
+    {
+      "column": "CHARGE_AMOUNT",
+      "pvo_name": "DisbursementHistoryHeaderPVO",
+      "pvo_attr": "PaymentHistoryChargeAmount",
+      "module_code": "AP",
+      "bicc": false
+    },
+    {
+      "column": "CHARGES_BANK_AMOUNT",
+      "pvo_name": "DisbursementHistoryHeaderPVO",
+      "pvo_attr": "PaymentHistoryChargesBankAmount",
+      "module_code": "AP",
+      "bicc": false
+    },
+    {
+      "column": "CHARGES_BASE_AMOUNT",
+      "pvo_name": "DisbursementHistoryHeaderPVO",
+      "pvo_attr": "PaymentHistoryChargesBaseAmount",
+      "module_code": "AP",
+      "bicc": false
+    },
+    {
+      "column": "CHARGES_PMT_AMOUNT",
+      "pvo_name": "DisbursementHistoryHeaderPVO",
+      "pvo_attr": "PaymentHistoryChargesPmtAmount",
+      "module_code": "AP",
+      "bicc": false
+    },
+    {
+      "column": "CHECK_ID",
+      "pvo_name": "DisbursementHistoryHeaderPVO",
+      "pvo_attr": "PaymentHistoryCheckId",
+      "module_code": "AP",
+      "bicc": false
+    },
+    {
+      "column": "CREATED_BY",
+      "pvo_name": "DisbursementHistoryHeaderPVO",
+      "pvo_attr": "PaymentHistoryCreatedBy",
+      "module_code": "AP",
+      "bicc": false
+    },
+    {
+      "column": "CREATION_DATE",
+      "pvo_name": "DisbursementHistoryHeaderPVO",
+      "pvo_attr": "PaymentHistoryCreationDate",
+      "module_code": "AP",
+      "bicc": false
+    },
+    {
+      "column": "CURRENCY_CODE",
+      "pvo_name": "DisbursementHistoryHeaderPVO",
+      "pvo_attr": "PaymentHistoryCurrencyCode",
+      "module_code": "AP",
+      "bicc": true
+    },
+    {
+      "column": "ERROR_AMOUNT",
+      "pvo_name": "DisbursementHistoryHeaderPVO",
+      "pvo_attr": "PaymentHistoryErrorAmount",
+      "module_code": "AP",
+      "bicc": false
+    },
+    {
+      "column": "ERRORS_BANK_AMOUNT",
+      "pvo_name": "DisbursementHistoryHeaderPVO",
+      "pvo_attr": "PaymentHistoryErrorsBankAmount",
+      "module_code": "AP",
+      "bicc": false
+    },
+    {
+      "column": "ERRORS_BASE_AMOUNT",
+      "pvo_name": "DisbursementHistoryHeaderPVO",
+      "pvo_attr": "PaymentHistoryErrorsBaseAmount",
+      "module_code": "AP",
+      "bicc": false
+    },
+    {
+      "column": "ERRORS_PMT_AMOUNT",
+      "pvo_name": "DisbursementHistoryHeaderPVO",
+      "pvo_attr": "PaymentHistoryErrorsPmtAmount",
+      "module_code": "AP",
+      "bicc": false
+    },
+    {
+      "column": "GAIN_LOSS_INDICATOR",
+      "pvo_name": "DisbursementHistoryHeaderPVO",
+      "pvo_attr": "PaymentHistoryGainLossIndicator",
+      "module_code": "AP",
+      "bicc": true
+    },
+    {
+      "column": "HISTORICAL_FLAG",
+      "pvo_name": "DisbursementHistoryHeaderPVO",
+      "pvo_attr": "PaymentHistoryHistoricalFlag",
+      "module_code": "AP",
+      "bicc": false
+    },
+    {
+      "column": "INVOICE_ADJUSTMENT_EVENT_ID",
+      "pvo_name": "DisbursementHistoryHeaderPVO",
+      "pvo_attr": "PaymentHistoryInvoiceAdjustmentEventId",
+      "module_code": "AP",
+      "bicc": false
+    },
+    {
+      "column": "LAST_UPDATE_DATE",
+      "pvo_name": "DisbursementHistoryHeaderPVO",
+      "pvo_attr": "PaymentHistoryLastUpdateDate",
+      "module_code": "AP",
+      "bicc": true
+    },
+    {
+      "column": "LAST_UPDATE_LOGIN",
+      "pvo_name": "DisbursementHistoryHeaderPVO",
+      "pvo_attr": "PaymentHistoryLastUpdateLogin",
+      "module_code": "AP",
+      "bicc": false
+    },
+    {
+      "column": "LAST_UPDATED_BY",
+      "pvo_name": "DisbursementHistoryHeaderPVO",
+      "pvo_attr": "PaymentHistoryLastUpdatedBy",
+      "module_code": "AP",
+      "bicc": false
+    },
+    {
+      "column": "MATCHED_FLAG",
+      "pvo_name": "DisbursementHistoryHeaderPVO",
+      "pvo_attr": "PaymentHistoryMatchedFlag",
+      "module_code": "AP",
+      "bicc": true
+    },
+    {
+      "column": "MRC_BANK_TO_BASE_XRATE",
+      "pvo_name": "DisbursementHistoryHeaderPVO",
+      "pvo_attr": "PaymentHistoryMrcBankToBaseXrate",
+      "module_code": "AP",
+      "bicc": false
+    },
+    {
+      "column": "MRC_BANK_TO_BASE_XRATE_DATE",
+      "pvo_name": "DisbursementHistoryHeaderPVO",
+      "pvo_attr": "PaymentHistoryMrcBankToBaseXrateDate",
+      "module_code": "AP",
+      "bicc": false
+    },
+    {
+      "column": "MRC_BANK_TO_BASE_XRATE_TYPE",
+      "pvo_name": "DisbursementHistoryHeaderPVO",
+      "pvo_attr": "PaymentHistoryMrcBankToBaseXrateType",
+      "module_code": "AP",
+      "bicc": false
+    },
+    {
+      "column": "MRC_CHARGES_BASE_AMOUNT",
+      "pvo_name": "DisbursementHistoryHeaderPVO",
+      "pvo_attr": "PaymentHistoryMrcChargesBaseAmount",
+      "module_code": "AP",
+      "bicc": false
+    },
+    {
+      "column": "MRC_ERRORS_BASE_AMOUNT",
+      "pvo_name": "DisbursementHistoryHeaderPVO",
+      "pvo_attr": "PaymentHistoryMrcErrorsBaseAmount",
+      "module_code": "AP",
+      "bicc": false
+    },
+    {
+      "column": "MRC_EXCHANGE_RATE",
+      "pvo_name": "DisbursementHistoryHeaderPVO",
+      "pvo_attr": "PaymentHistoryMrcExchangeRate",
+      "module_code": "AP",
+      "bicc": false
+    },
+    {
+      "column": "MRC_EXCHANGE_RATE_DATE",
+      "pvo_name": "DisbursementHistoryHeaderPVO",
+      "pvo_attr": "PaymentHistoryMrcExchangeRateDate",
+      "module_code": "AP",
+      "bicc": false
+    },
+    {
+      "column": "MRC_EXCHANGE_RATE_TYPE",
+      "pvo_name": "DisbursementHistoryHeaderPVO",
+      "pvo_attr": "PaymentHistoryMrcExchangeRateType",
+      "module_code": "AP",
+      "bicc": false
+    },
+    {
+      "column": "MRC_PMT_TO_BASE_XRATE",
+      "pvo_name": "DisbursementHistoryHeaderPVO",
+      "pvo_attr": "PaymentHistoryMrcPmtToBaseXrate",
+      "module_code": "AP",
+      "bicc": false
+    },
+    {
+      "column": "MRC_PMT_TO_BASE_XRATE_DATE",
+      "pvo_name": "DisbursementHistoryHeaderPVO",
+      "pvo_attr": "PaymentHistoryMrcPmtToBaseXrateDate",
+      "module_code": "AP",
+      "bicc": false
+    },
+    {
+      "column": "MRC_PMT_TO_BASE_XRATE_TYPE",
+      "pvo_name": "DisbursementHistoryHeaderPVO",
+      "pvo_attr": "PaymentHistoryMrcPmtToBaseXrateType",
+      "module_code": "AP",
+      "bicc": false
+    },
+    {
+      "column": "MRC_TRX_BASE_AMOUNT",
+      "pvo_name": "DisbursementHistoryHeaderPVO",
+      "pvo_attr": "PaymentHistoryMrcTrxBaseAmount",
+      "module_code": "AP",
+      "bicc": false
+    },
+    {
+      "column": "OBJECT_VERSION_NUMBER",
+      "pvo_name": "DisbursementHistoryHeaderPVO",
+      "pvo_attr": "PaymentHistoryObjectVersionNumber",
+      "module_code": "AP",
+      "bicc": false
+    },
+    {
+      "column": "ORG_ID",
+      "pvo_name": "DisbursementHistoryHeaderPVO",
+      "pvo_attr": "PaymentHistoryOrgId",
+      "module_code": "AP",
+      "bicc": false
+    },
+    {
+      "column": "PAYMENT_HISTORY_ID",
+      "pvo_name": "DisbursementHistoryHeaderPVO",
+      "pvo_attr": "PaymentHistoryId",
+      "module_code": "AP",
+      "bicc": true
+    },
+    {
+      "column": "PMT_CURRENCY_CODE",
+      "pvo_name": "DisbursementHistoryHeaderPVO",
+      "pvo_attr": "PaymentHistoryPmtCurrencyCode",
+      "module_code": "AP",
+      "bicc": true
+    },
+    {
+      "column": "PMT_TO_BASE_XRATE",
+      "pvo_name": "DisbursementHistoryHeaderPVO",
+      "pvo_attr": "PaymentHistoryPmtToBaseXrate",
+      "module_code": "AP",
+      "bicc": true
+    },
+    {
+      "column": "PMT_TO_BASE_XRATE_DATE",
+      "pvo_name": "DisbursementHistoryHeaderPVO",
+      "pvo_attr": "PaymentHistoryPmtToBaseXrateDate",
+      "module_code": "AP",
+      "bicc": true
+    },
+    {
+      "column": "PMT_TO_BASE_XRATE_TYPE",
+      "pvo_name": "DisbursementHistoryHeaderPVO",
+      "pvo_attr": "PaymentHistoryPmtToBaseXrateType",
+      "module_code": "AP",
+      "bicc": true
+    },
+    {
+      "column": "POSTED_FLAG",
+      "pvo_name": "DisbursementHistoryHeaderPVO",
+      "pvo_attr": "PaymentHistoryPostedFlag",
+      "module_code": "AP",
+      "bicc": true
+    },
+    {
+      "column": "PROGRAM_APPLICATION_ID",
+      "pvo_name": "DisbursementHistoryHeaderPVO",
+      "pvo_attr": "PaymentHistoryProgramApplicationId",
+      "module_code": "AP",
+      "bicc": false
+    },
+    {
+      "column": "PROGRAM_ID",
+      "pvo_name": "DisbursementHistoryHeaderPVO",
+      "pvo_attr": "PaymentHistoryProgramId",
+      "module_code": "AP",
+      "bicc": false
+    },
+    {
+      "column": "PROGRAM_UPDATE_DATE",
+      "pvo_name": "DisbursementHistoryHeaderPVO",
+      "pvo_attr": "PaymentHistoryProgramUpdateDate",
+      "module_code": "AP",
+      "bicc": false
+    },
+    {
+      "column": "RELATED_EVENT_ID",
+      "pvo_name": "DisbursementHistoryHeaderPVO",
+      "pvo_attr": "PaymentHistoryRelatedEventId",
+      "module_code": "AP",
+      "bicc": false
+    },
+    {
+      "column": "REQUEST_ID",
+      "pvo_name": "DisbursementHistoryHeaderPVO",
+      "pvo_attr": "PaymentHistoryRequestId",
+      "module_code": "AP",
+      "bicc": false
+    },
+    {
+      "column": "REV_PMT_HIST_ID",
+      "pvo_name": "DisbursementHistoryHeaderPVO",
+      "pvo_attr": "PaymentHistoryRevPmtHistId",
+      "module_code": "AP",
+      "bicc": false
+    },
+    {
+      "column": "TRANSACTION_AMOUNT",
+      "pvo_name": "DisbursementHistoryHeaderPVO",
+      "pvo_attr": "PaymentHistoryTransactionAmount",
+      "module_code": "AP",
+      "bicc": true
+    },
+    {
+      "column": "TRANSACTION_DATE",
+      "pvo_name": "DisbursementHistoryHeaderPVO",
+      "pvo_attr": "PaymentHistoryTransactionDate",
+      "module_code": "AP",
+      "bicc": true
+    },
+    {
+      "column": "TRANSACTION_TYPE",
+      "pvo_name": "DisbursementHistoryHeaderPVO",
+      "pvo_attr": "PaymentHistoryTransactionType",
+      "module_code": "AP",
+      "bicc": true
+    },
+    {
+      "column": "TRX_BANK_AMOUNT",
+      "pvo_name": "DisbursementHistoryHeaderPVO",
+      "pvo_attr": "PaymentHistoryTrxBankAmount",
+      "module_code": "AP",
+      "bicc": true
+    },
+    {
+      "column": "TRX_BASE_AMOUNT",
+      "pvo_name": "DisbursementHistoryHeaderPVO",
+      "pvo_attr": "PaymentHistoryTrxBaseAmount",
+      "module_code": "AP",
+      "bicc": true
+    },
+    {
+      "column": "TRX_PMT_AMOUNT",
+      "pvo_name": "DisbursementHistoryHeaderPVO",
+      "pvo_attr": "PaymentHistoryTrxPmtAmount",
+      "module_code": "AP",
+      "bicc": true
+    },
+    {
+      "column": "CHECK_ID",
+      "pvo_name": "PaymentHistoryDistributionPVO",
+      "pvo_attr": "PaymentHistoryCheckId",
+      "module_code": "AP",
+      "bicc": false
+    },
+    {
+      "column": "LAST_UPDATE_DATE",
+      "pvo_name": "PaymentHistoryDistributionPVO",
+      "pvo_attr": "PaymentHistoryLastUpdateDate",
+      "module_code": "AP",
+      "bicc": true
+    },
+    {
+      "column": "ORG_ID",
+      "pvo_name": "PaymentHistoryDistributionPVO",
+      "pvo_attr": "PaymentHistoryOrgId",
+      "module_code": "AP",
+      "bicc": false
+    },
+    {
+      "column": "PAYMENT_HISTORY_ID",
+      "pvo_name": "PaymentHistoryDistributionPVO",
+      "pvo_attr": "PaymentHistoryPaymentHistoryId",
+      "module_code": "AP",
+      "bicc": false
+    },
+    {
+      "column": "POSTED_FLAG",
+      "pvo_name": "PaymentHistoryDistributionPVO",
+      "pvo_attr": "PaymentHistoryPostedFlag",
+      "module_code": "AP",
+      "bicc": true
+    },
+    {
+      "column": "TRANSACTION_TYPE",
+      "pvo_name": "PaymentHistoryDistributionPVO",
+      "pvo_attr": "PaymentHistoryTransactionType",
+      "module_code": "AP",
+      "bicc": true
+    }
+  ],
   "i18n": [
     {
       "id": 1,
@@ -2488,6 +3335,7 @@ const DATA = {
     <div id="tab-columns" class="tab-content"></div>
     <div id="tab-relationships" class="tab-content"></div>
     <div id="tab-sql" class="tab-content"></div>
+    <div id="tab-pvos" class="tab-content"></div>
 </main>
 
 <!-- ====== FOOTER ====== -->
@@ -2728,12 +3576,17 @@ function render() {
         overview: {pt:'Visão Geral', en:'Overview', es:'Visión General'},
         columns: {pt:'Colunas', en:'Columns', es:'Columnas'},
         relationships: {pt:'Relacionamentos', en:'Relationships', es:'Relaciones'},
-        sql: {pt:'SQL', en:'SQL', es:'SQL'}
+        sql: {pt:'SQL', en:'SQL', es:'SQL'},
+        pvos: {pt:'PVOs Relacionados', en:'Related PVOs', es:'PVOs Relacionados'}
     };
+    var _pvoNames = {};
+    (d.related_pvos || []).forEach(function(r) { _pvoNames[r.pvo_name] = 1; });
+    var pvosCount = Object.keys(_pvoNames).length;
     document.getElementById('tabs-nav').innerHTML =
         '<button class="tab-btn active" data-tab="overview" onclick="switchTab(\'overview\')"><i class="ri-information-line"></i> ' + t(tabLabels.overview) + '</button>' +
         '<button class="tab-btn" data-tab="columns" onclick="switchTab(\'columns\')"><i class="ri-table-line"></i> ' + t(tabLabels.columns) + ' <span class="tab-count">' + d.columns.length + '</span></button>' +
         '<button class="tab-btn" data-tab="relationships" onclick="switchTab(\'relationships\')"><i class="ri-git-branch-line"></i> ' + t(tabLabels.relationships) + ' <span class="tab-count">' + (d.relationships.parents.length + d.relationships.children.length) + '</span></button>' +
+        (pvosCount ? '<button class="tab-btn" data-tab="pvos" onclick="switchTab(\'pvos\')"><i class="ri-database-2-line"></i> ' + t(tabLabels.pvos) + ' <span class="tab-count">' + pvosCount + '</span></button>' : '') +
         '<button class="tab-btn" data-tab="sql" onclick="switchTab(\'sql\')"><i class="ri-code-s-slash-line"></i> SQL <span class="tab-count">' + d.sql.length + '</span></button>';
 
     // Tab 1: Overview
@@ -2743,6 +3596,7 @@ function render() {
         '<div class="stat-card"><div class="stat-card-icon bg-info"><i class="ri-links-line"></i></div><div class="stat-card-info"><div class="stat-card-number" style="color:var(--info)">' + d.relationships.parents.length + '</div><div class="stat-card-label">Foreign Keys</div></div></div>' +
         '<div class="stat-card"><div class="stat-card-icon bg-success"><i class="ri-shield-check-line"></i></div><div class="stat-card-info"><div class="stat-card-number" style="color:var(--success)">' + d.stats.avg_confidence + '%</div><div class="stat-card-label">' + t({pt:'Confiança Média', en:'Avg Confidence', es:'Confianza Promedio'}) + '</div></div></div>' +
         '<div class="stat-card"><div class="stat-card-icon bg-purple"><i class="ri-apps-line"></i></div><div class="stat-card-info"><div class="stat-card-number" style="color:var(--purple)">' + d.stats.categories + '</div><div class="stat-card-label">' + t({pt:'Categorias', en:'Categories', es:'Categorías'}) + '</div></div></div>' +
+        (pvosCount ? '<div class="stat-card"><div class="stat-card-icon bg-purple"><i class="ri-database-2-line"></i></div><div class="stat-card-info"><div class="stat-card-number" style="color:var(--purple)">' + pvosCount + '</div><div class="stat-card-label">PVOs</div></div></div>' : '') +
         '</div>';
 
     var overviewHtml = statsHtml +
@@ -2852,6 +3706,69 @@ function render() {
     }
     document.getElementById('tab-sql').innerHTML = sqlHtml;
 
+    // Tab 5: Related PVOs (grouped by PVO, table inside each group)
+    var pvosHtml = '';
+    if (d.related_pvos && d.related_pvos.length) {
+        // Group rows by pvo_name
+        var pvoGroups = {};
+        var pvoOrder = [];
+        d.related_pvos.forEach(function(row) {
+            var key = row.pvo_name;
+            if (!pvoGroups[key]) {
+                pvoGroups[key] = { pvo_name: row.pvo_name, module_code: row.module_code, rows: [] };
+                pvoOrder.push(key);
+            }
+            pvoGroups[key].rows.push(row);
+        });
+
+        pvosHtml += '<div class="search-container"><i class="ri-search-line search-icon"></i><input class="search-input" type="text" placeholder="' + t({pt:'Filtrar PVOs...', en:'Filter PVOs...', es:'Filtrar PVOs...'}) + '" oninput="filterPvos(this.value)"></div>';
+
+        var pvoHeaders = {
+            pt: ['#','Campo da Tabela','Campo do PVO','Disponível por BICC'],
+            en: ['#','Table Column','PVO Attribute','Available via BICC'],
+            es: ['#','Campo de Tabla','Campo del PVO','Disponible por BICC']
+        };
+        var ph = pvoHeaders[currentLang] || pvoHeaders['pt'];
+
+        pvosHtml += '<div id="pvos-groups">';
+        pvoOrder.forEach(function(key) {
+            var grp = pvoGroups[key];
+            var pvoFile = grp.pvo_name.toLowerCase() + '.html';
+            var pvoHref = (grp.module_code === m.module_code)
+                ? '../pvos/' + pvoFile
+                : '../../' + grp.module_code + '/pvos/' + pvoFile;
+            var biccCount = grp.rows.filter(function(r) { return r.bicc; }).length;
+
+            var grpSearchFields = grp.rows.map(function(r) { return r.column + ' ' + r.pvo_attr; }).join(' ');
+            pvosHtml += '<div class="card pvo-group" data-search="' + (grp.pvo_name + ' ' + grp.module_code + ' ' + grpSearchFields).toLowerCase() + '">' +
+                '<div class="card-header" style="cursor:pointer" onclick="this.parentElement.classList.toggle(\'collapsed\')">' +
+                '<div class="card-header-icon bg-purple"><i class="ri-database-2-line"></i></div>' +
+                '<div class="card-title"><a href="' + pvoHref + langParam() + '" class="wikilink" onclick="event.stopPropagation()">' + grp.pvo_name + '</a></div>' +
+                '<span class="pill pill-info">' + grp.module_code + '</span>' +
+                '<span class="card-badge pill-info" style="background:var(--info-light);color:var(--pill-info-text);border:1px solid var(--info-border)">' + grp.rows.length + ' attrs</span>' +
+                (biccCount ? '<span class="card-badge pill-success" style="background:var(--success-light);color:var(--pill-success-text);border:1px solid var(--success-border)">BICC ' + biccCount + '</span>' : '') +
+                '<i class="ri-arrow-down-s-line" style="font-size:1.2rem;color:var(--text-muted);margin-left:auto;transition:transform 0.2s"></i>' +
+                '</div>' +
+                '<div class="card-body pvo-group-body"><div class="table-wrapper"><table><thead><tr>';
+            ph.forEach(function(h, i) { pvosHtml += '<th' + (i === ph.length - 1 ? ' style="text-align:center"' : '') + '>' + h + '</th>'; });
+            pvosHtml += '</tr></thead><tbody>';
+            grp.rows.forEach(function(row, idx) {
+                var biccHtml = row.bicc
+                    ? '<span class="pill pill-success"><i class="ri-checkbox-circle-fill"></i> ' + t({pt:'Sim',en:'Yes',es:'Sí'}) + '</span>'
+                    : '<span class="pill pill-danger" style="opacity:0.5">' + t({pt:'Não',en:'No',es:'No'}) + '</span>';
+                pvosHtml += '<tr>' +
+                    '<td>' + (idx + 1) + '</td>' +
+                    '<td class="col-name">' + row.column + '</td>' +
+                    '<td class="col-name">' + row.pvo_attr + '</td>' +
+                    '<td style="text-align:center">' + biccHtml + '</td>' +
+                    '</tr>';
+            });
+            pvosHtml += '</tbody></table></div></div></div>';
+        });
+        pvosHtml += '</div>';
+    }
+    document.getElementById('tab-pvos').innerHTML = pvosHtml;
+
     // Footer
     document.getElementById('f-initials').textContent = m.author_initials || '';
     document.getElementById('f-name').textContent = m.author_name || '';
@@ -2898,6 +3815,16 @@ function filterColumns(query) {
     rows.forEach(function(row) {
         var text = row.getAttribute('data-search') || '';
         row.style.display = !q || text.indexOf(q) >= 0 ? '' : 'none';
+    });
+}
+
+/* ====== PVO FILTER ====== */
+function filterPvos(query) {
+    var q = query.toLowerCase().trim();
+    var groups = document.querySelectorAll('#pvos-groups .pvo-group');
+    groups.forEach(function(grp) {
+        var text = grp.getAttribute('data-search') || '';
+        grp.style.display = !q || text.indexOf(q) >= 0 ? '' : 'none';
     });
 }
 

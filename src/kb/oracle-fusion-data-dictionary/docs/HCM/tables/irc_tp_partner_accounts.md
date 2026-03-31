@@ -72,7 +72,7 @@ Esta tabela é utilizada nos seguintes processos:
 ## 🔗 Relacionamentos
 
 ### Tabelas-pai (FK de entrada)
-- [[irc_tp_partners]] --- via `PARTNER_ID` (parceiro terceiro proprietÃ¡rio da conta)
+- [[irc_tp_partners]] --- via `PARTNER_ID` (parceiro terceiro proprietário da conta)
 
 ### Tabelas-filha (FK de saída)
 - --- Tabela de configuracao, sem filhas conhecidas

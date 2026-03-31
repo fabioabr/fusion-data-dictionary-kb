@@ -82,7 +82,7 @@ Esta tabela é utilizada nos seguintes processos:
 ## Relacionamentos
 
 ### Tabelas-pai (FK de entrada)
-- [[hr_all_positions_f]] — via `POSITION_ID` e `ANCESTOR_POSITION_ID` (posiÃ§Ã£o no nÃ³ da Ã¡rvore de posiÃ§Ãµes)
+- [[hr_all_positions_f]] — via `POSITION_ID` e `ANCESTOR_POSITION_ID` (posição no nó da árvore de posições)
 
 ### Tabelas-filha (FK de saída)
 

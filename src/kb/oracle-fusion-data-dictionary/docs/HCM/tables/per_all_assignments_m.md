@@ -90,17 +90,17 @@ Esta tabela é utilizada nos seguintes processos:
 ## 🔗 Relacionamentos
 
 ### Tabelas-pai (FK de entrada)
-- [[per_all_people_f]] — via `PERSON_ID` (colaborador titular do vÃ­nculo empregatÃ­cio)
-- [[per_assignment_status_types]] — via `ASSIGNMENT_STATUS_TYPE_ID` (status do vÃ­nculo empregatÃ­cio)
-- [[per_jobs_f]] — via `JOB_ID` (cargo do vÃ­nculo empregatÃ­cio)
-- [[per_grades_f]] — via `GRADE_ID` (grade salarial do vÃ­nculo)
-- [[per_locations]] — via `LOCATION_ID` (localizaÃ§Ã£o de trabalho do vÃ­nculo)
+- [[per_all_people_f]] — via `PERSON_ID` (colaborador titular do vínculo empregatício)
+- [[per_assignment_status_types]] — via `ASSIGNMENT_STATUS_TYPE_ID` (status do vínculo empregatício)
+- [[per_jobs_f]] — via `JOB_ID` (cargo do vínculo empregatício)
+- [[per_grades_f]] — via `GRADE_ID` (grade salarial do vínculo)
+- [[per_locations]] — via `LOCATION_ID` (localização de trabalho do vínculo)
 
 ### Tabelas-filha (FK de saída)
 - [[per_assignment_extra_info_m]] — via `ASSIGNMENT_ID` (informações extras)
 - [[per_asg_responsibilities]] — via `ASSIGNMENT_ID` (responsabilidades)
-- [[per_assignment_supervisors_f]] — via `ASSIGNMENT_ID` (supervisores do vÃ­nculo empregatÃ­cio)
-- [[per_assign_grade_steps_f]] — via `ASSIGNMENT_ID` (steps de grade salarial do vÃ­nculo)
+- [[per_assignment_supervisors_f]] — via `ASSIGNMENT_ID` (supervisores do vínculo empregatício)
+- [[per_assign_grade_steps_f]] — via `ASSIGNMENT_ID` (steps de grade salarial do vínculo)
 - [[per_assign_work_measures_f]] — via `ASSIGNMENT_ID` (medidas de trabalho)
 
 ---

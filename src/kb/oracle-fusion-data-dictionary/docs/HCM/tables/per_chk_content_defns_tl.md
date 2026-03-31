@@ -75,7 +75,7 @@ Esta tabela é utilizada nos seguintes processos:
 ## 🔗 Relacionamentos
 
 ### Tabelas-pai (FK de entrada)
-- [[per_chk_content_defns_b]] — via `CHK_CONTENT_DEFN_ID` (tabela base da definiÃ§Ã£o de conteÃºdo de checklist)
+- [[per_chk_content_defns_b]] — via `CHK_CONTENT_DEFN_ID` (tabela base da definição de conteúdo de checklist)
 
 ### Tabelas-filha (FK de saída)
 - - Nenhuma tabela-filha — tabela terminal de tradução.

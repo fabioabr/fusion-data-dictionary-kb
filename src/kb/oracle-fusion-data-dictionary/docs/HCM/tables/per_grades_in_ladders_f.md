@@ -80,7 +80,7 @@ Esta tabela é utilizada nos seguintes processos:
 
 ### Tabelas-pai (FK de entrada)
 - [[per_grade_ladders_f]] — via `GRADE_LADDER_ID` (escada salarial)
-- [[per_grades_f]] — via `GRADE_ID` (grade salarial na escala hierÃ¡rquica)
+- [[per_grades_f]] — via `GRADE_ID` (grade salarial na escala hierárquica)
 
 ### Tabelas-filha (FK de saída)
 - - Nenhuma tabela-filha direta — tabela de associação.

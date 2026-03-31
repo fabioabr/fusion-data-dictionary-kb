@@ -78,7 +78,7 @@ Esta view é utilizada nos seguintes processos:
 
 ### Tabelas-pai (FK de entrada)
 - [[hr_all_positions_f]] — via `POSITION_ID`, `PARENT_POSITION_ID`
-- [[per_position_hierarchy_f]] — via `POSITION_HIERARCHY_ID` (hierarquia de posiÃ§Ãµes na visÃ£o top-down)
+- [[per_position_hierarchy_f]] — via `POSITION_HIERARCHY_ID` (hierarquia de posições na visão top-down)
 
 ### Tabelas-filha (FK de saída)
 - Nenhuma — views não possuem FKs diretas.

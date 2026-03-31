@@ -87,7 +87,7 @@ Esta tabela é utilizada nos seguintes processos:
 
 ### Tabelas-pai (FK de entrada)
 - [[per_rates_f]] — via `RATE_ID` (taxa salarial do valor)
-- [[per_all_assignments_m]] — via `ASSIGNMENT_ID` (vÃ­nculo ao qual o valor de taxa se aplica)
+- [[per_all_assignments_m]] — via `ASSIGNMENT_ID` (vínculo ao qual o valor de taxa se aplica)
 
 ### Tabelas-filha (FK de saída)
 - Nenhuma relação direta identificada.

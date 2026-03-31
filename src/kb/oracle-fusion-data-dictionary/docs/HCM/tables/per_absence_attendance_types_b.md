@@ -85,7 +85,7 @@ Esta tabela é utilizada nos seguintes processos:
 
 ### Tabelas-filha (FK de saída)
 - [[per_absence_attendances]] — via `ABSENCE_ATTENDANCE_TYPE_ID` (ausências deste tipo)
-- [[per_abs_attendance_types_tl]] — via `ABSENCE_ATTENDANCE_TYPE_ID` (traduÃ§Ãµes do tipo de ausÃªncia/presenÃ§a)
+- [[per_abs_attendance_types_tl]] — via `ABSENCE_ATTENDANCE_TYPE_ID` (traduções do tipo de ausência/presença)
 - [[per_abs_attendance_reasons]] — via `ABSENCE_ATTENDANCE_TYPE_ID` (motivos associados)
 
 ---

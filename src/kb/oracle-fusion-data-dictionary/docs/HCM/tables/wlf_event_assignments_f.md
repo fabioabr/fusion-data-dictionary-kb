@@ -84,8 +84,8 @@ Esta tabela é utilizada nos seguintes processos:
 - [[per_all_people_f]] — via `PERSON_ID` (pessoa inscrita)
 
 ### Tabelas-filha (FK de saída)
-- [[wlf_event_assignments_f_tl]] — via `EVENT_ASSIGNMENT_ID` (traduÃ§Ãµes da atribuiÃ§Ã£o de evento de aprendizado)
-- [[wlf_assignment_destinations_f]] — via `EVENT_ASSIGNMENT_ID` (destinos da atribuiÃ§Ã£o de evento de aprendizado)
+- [[wlf_event_assignments_f_tl]] — via `EVENT_ASSIGNMENT_ID` (traduções da atribuição de evento de aprendizado)
+- [[wlf_assignment_destinations_f]] — via `EVENT_ASSIGNMENT_ID` (destinos da atribuição de evento de aprendizado)
 
 ---
 

@@ -77,11 +77,11 @@ Esta tabela é utilizada nos seguintes processos:
 - [[per_all_people_f]] --- via `PERSON_ID` (pessoa vinculada ao relacionamento de folha)
 
 ### Tabelas-filha (FK de saída)
-- [[pay_assigned_payrolls_f]] --- via `PAYROLL_RELATIONSHIP_ID` (folhas atribuÃ­das ao relacionamento)
+- [[pay_assigned_payrolls_f]] --- via `PAYROLL_RELATIONSHIP_ID` (folhas atribuídas ao relacionamento)
 - [[pay_element_entries_f]] --- via `PAYROLL_RELATIONSHIP_ID` (entradas de elemento do relacionamento de folha)
-- [[pay_dir_cards_f]] --- via `PAYROLL_RELATIONSHIP_ID` (cartÃµes de depÃ³sito direto do relacionamento)
-- [[pay_payroll_rel_actions]] --- via `PAYROLL_RELATIONSHIP_ID` (aÃ§Ãµes de folha do relacionamento)
-- [[pay_person_pay_methods_f]] --- via `PAYROLL_RELATIONSHIP_ID` (mÃ©todos de pagamento pessoais do relacionamento)
+- [[pay_dir_cards_f]] --- via `PAYROLL_RELATIONSHIP_ID` (cartões de depósito direto do relacionamento)
+- [[pay_payroll_rel_actions]] --- via `PAYROLL_RELATIONSHIP_ID` (ações de folha do relacionamento)
+- [[pay_person_pay_methods_f]] --- via `PAYROLL_RELATIONSHIP_ID` (métodos de pagamento pessoais do relacionamento)
 
 ---
 

@@ -77,10 +77,10 @@ Esta tabela é utilizada nos seguintes processos:
 ## 🔗 Relacionamentos
 
 ### Tabelas-pai (FK de entrada)
-- [[pay_all_payrolls_f]] --- via `PAYROLL_ID` (folha de pagamento do perÃ­odo)
+- [[pay_all_payrolls_f]] --- via `PAYROLL_ID` (folha de pagamento do período)
 
 ### Tabelas-filha (FK de saída)
-- [[pay_payroll_actions]] --- via `TIME_PERIOD_ID` (aÃ§Ãµes processadas no perÃ­odo)
+- [[pay_payroll_actions]] --- via `TIME_PERIOD_ID` (ações processadas no período)
 
 ---
 

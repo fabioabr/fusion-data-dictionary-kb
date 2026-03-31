@@ -73,7 +73,7 @@ Esta tabela é utilizada nos seguintes processos:
 ## 🔗 Relacionamentos
 
 ### Tabelas-pai (FK de entrada)
-- [[per_checklists_b]] — via `CHECKLIST_ID` (template de checklist do conteÃºdo)
+- [[per_checklists_b]] — via `CHECKLIST_ID` (template de checklist do conteúdo)
 
 ### Tabelas-filha (FK de saída)
 - - Nenhuma tabela-filha direta identificada.

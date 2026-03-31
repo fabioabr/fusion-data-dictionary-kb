@@ -262,6 +262,11 @@ pre.sql-code { margin: 0; padding: 16px; font-family: 'Courier New', monospace; 
 .bg-orange { background: var(--orange); } .bg-teal { background: var(--teal); }
 .bg-secondary { background: var(--secondary); }
 
+/* ====== PVO GROUPS ====== */
+.pvo-group .card-header .ri-arrow-down-s-line { transition: transform 0.2s; }
+.pvo-group.collapsed .pvo-group-body { display: none; }
+.pvo-group.collapsed .ri-arrow-down-s-line { transform: rotate(-90deg); }
+
 /* ====== RESPONSIVE ====== */
 @media (max-width: 768px) {
     .stats-grid { grid-template-columns: 1fr; }
@@ -1968,6 +1973,477 @@ const DATA = {
     "PJF_PROJ_ELEMENTS_TL": "HCM",
     "PJF_WORK_TYPES_VL": "HCM"
   },
+  "related_pvos": [
+    {
+      "column": "UNIT_OF_MEASURE_ID",
+      "pvo_name": "InvoiceLinePVO",
+      "pvo_attr": "UomUnitOfMeasureId",
+      "module_code": "AP",
+      "bicc": false
+    },
+    {
+      "column": "UOM_CODE",
+      "pvo_name": "InvoiceLinePVO",
+      "pvo_attr": "UomUomCode",
+      "module_code": "AP",
+      "bicc": true
+    },
+    {
+      "column": "ATTRIBUTE1",
+      "pvo_name": "InvUnitsOfMeasurePVO",
+      "pvo_attr": "Attribute1",
+      "module_code": "OTHER",
+      "bicc": false
+    },
+    {
+      "column": "ATTRIBUTE10",
+      "pvo_name": "InvUnitsOfMeasurePVO",
+      "pvo_attr": "Attribute10",
+      "module_code": "OTHER",
+      "bicc": false
+    },
+    {
+      "column": "ATTRIBUTE11",
+      "pvo_name": "InvUnitsOfMeasurePVO",
+      "pvo_attr": "Attribute11",
+      "module_code": "OTHER",
+      "bicc": false
+    },
+    {
+      "column": "ATTRIBUTE12",
+      "pvo_name": "InvUnitsOfMeasurePVO",
+      "pvo_attr": "Attribute12",
+      "module_code": "OTHER",
+      "bicc": false
+    },
+    {
+      "column": "ATTRIBUTE13",
+      "pvo_name": "InvUnitsOfMeasurePVO",
+      "pvo_attr": "Attribute13",
+      "module_code": "OTHER",
+      "bicc": false
+    },
+    {
+      "column": "ATTRIBUTE14",
+      "pvo_name": "InvUnitsOfMeasurePVO",
+      "pvo_attr": "Attribute14",
+      "module_code": "OTHER",
+      "bicc": false
+    },
+    {
+      "column": "ATTRIBUTE15",
+      "pvo_name": "InvUnitsOfMeasurePVO",
+      "pvo_attr": "Attribute15",
+      "module_code": "OTHER",
+      "bicc": false
+    },
+    {
+      "column": "ATTRIBUTE2",
+      "pvo_name": "InvUnitsOfMeasurePVO",
+      "pvo_attr": "Attribute2",
+      "module_code": "OTHER",
+      "bicc": false
+    },
+    {
+      "column": "ATTRIBUTE3",
+      "pvo_name": "InvUnitsOfMeasurePVO",
+      "pvo_attr": "Attribute3",
+      "module_code": "OTHER",
+      "bicc": false
+    },
+    {
+      "column": "ATTRIBUTE4",
+      "pvo_name": "InvUnitsOfMeasurePVO",
+      "pvo_attr": "Attribute4",
+      "module_code": "OTHER",
+      "bicc": false
+    },
+    {
+      "column": "ATTRIBUTE5",
+      "pvo_name": "InvUnitsOfMeasurePVO",
+      "pvo_attr": "Attribute5",
+      "module_code": "OTHER",
+      "bicc": false
+    },
+    {
+      "column": "ATTRIBUTE6",
+      "pvo_name": "InvUnitsOfMeasurePVO",
+      "pvo_attr": "Attribute6",
+      "module_code": "OTHER",
+      "bicc": false
+    },
+    {
+      "column": "ATTRIBUTE7",
+      "pvo_name": "InvUnitsOfMeasurePVO",
+      "pvo_attr": "Attribute7",
+      "module_code": "OTHER",
+      "bicc": false
+    },
+    {
+      "column": "ATTRIBUTE8",
+      "pvo_name": "InvUnitsOfMeasurePVO",
+      "pvo_attr": "Attribute8",
+      "module_code": "OTHER",
+      "bicc": false
+    },
+    {
+      "column": "ATTRIBUTE9",
+      "pvo_name": "InvUnitsOfMeasurePVO",
+      "pvo_attr": "Attribute9",
+      "module_code": "OTHER",
+      "bicc": false
+    },
+    {
+      "column": "ATTRIBUTE_CATEGORY",
+      "pvo_name": "InvUnitsOfMeasurePVO",
+      "pvo_attr": "AttributeCategory",
+      "module_code": "OTHER",
+      "bicc": false
+    },
+    {
+      "column": "BASE_UOM_FLAG",
+      "pvo_name": "InvUnitsOfMeasurePVO",
+      "pvo_attr": "BaseUomFlag",
+      "module_code": "OTHER",
+      "bicc": true
+    },
+    {
+      "column": "CREATED_BY",
+      "pvo_name": "InvUnitsOfMeasurePVO",
+      "pvo_attr": "CreatedBy",
+      "module_code": "OTHER",
+      "bicc": true
+    },
+    {
+      "column": "CREATION_DATE",
+      "pvo_name": "InvUnitsOfMeasurePVO",
+      "pvo_attr": "CreationDate",
+      "module_code": "OTHER",
+      "bicc": true
+    },
+    {
+      "column": "DISABLE_DATE",
+      "pvo_name": "InvUnitsOfMeasurePVO",
+      "pvo_attr": "DisableDate",
+      "module_code": "OTHER",
+      "bicc": true
+    },
+    {
+      "column": "JOB_DEFINITION_NAME",
+      "pvo_name": "InvUnitsOfMeasurePVO",
+      "pvo_attr": "JobDefinitionName",
+      "module_code": "OTHER",
+      "bicc": true
+    },
+    {
+      "column": "JOB_DEFINITION_PACKAGE",
+      "pvo_name": "InvUnitsOfMeasurePVO",
+      "pvo_attr": "JobDefinitionPackage",
+      "module_code": "OTHER",
+      "bicc": true
+    },
+    {
+      "column": "LAST_UPDATE_DATE",
+      "pvo_name": "InvUnitsOfMeasurePVO",
+      "pvo_attr": "LastUpdateDate",
+      "module_code": "OTHER",
+      "bicc": true
+    },
+    {
+      "column": "LAST_UPDATE_LOGIN",
+      "pvo_name": "InvUnitsOfMeasurePVO",
+      "pvo_attr": "LastUpdateLogin",
+      "module_code": "OTHER",
+      "bicc": true
+    },
+    {
+      "column": "LAST_UPDATED_BY",
+      "pvo_name": "InvUnitsOfMeasurePVO",
+      "pvo_attr": "LastUpdatedBy",
+      "module_code": "OTHER",
+      "bicc": true
+    },
+    {
+      "column": "OBJECT_VERSION_NUMBER",
+      "pvo_name": "InvUnitsOfMeasurePVO",
+      "pvo_attr": "ObjectVersionNumber",
+      "module_code": "OTHER",
+      "bicc": true
+    },
+    {
+      "column": "REQUEST_ID",
+      "pvo_name": "InvUnitsOfMeasurePVO",
+      "pvo_attr": "RequestId",
+      "module_code": "OTHER",
+      "bicc": true
+    },
+    {
+      "column": "UNIT_OF_MEASURE_ID",
+      "pvo_name": "InvUnitsOfMeasurePVO",
+      "pvo_attr": "UnitOfMeasureId",
+      "module_code": "OTHER",
+      "bicc": true
+    },
+    {
+      "column": "UOM_CLASS",
+      "pvo_name": "InvUnitsOfMeasurePVO",
+      "pvo_attr": "UomClass",
+      "module_code": "OTHER",
+      "bicc": true
+    },
+    {
+      "column": "UOM_CODE",
+      "pvo_name": "InvUnitsOfMeasurePVO",
+      "pvo_attr": "UomCode",
+      "module_code": "OTHER",
+      "bicc": true
+    },
+    {
+      "column": "BASE_UOM_FLAG",
+      "pvo_name": "InvUomPVO",
+      "pvo_attr": "InvUomBPEOBaseUomFlag",
+      "module_code": "OTHER",
+      "bicc": true
+    },
+    {
+      "column": "CREATED_BY",
+      "pvo_name": "InvUomPVO",
+      "pvo_attr": "InvUomBPEOCreatedBy",
+      "module_code": "OTHER",
+      "bicc": false
+    },
+    {
+      "column": "CREATION_DATE",
+      "pvo_name": "InvUomPVO",
+      "pvo_attr": "InvUomBPEOCreationDate",
+      "module_code": "OTHER",
+      "bicc": false
+    },
+    {
+      "column": "DISABLE_DATE",
+      "pvo_name": "InvUomPVO",
+      "pvo_attr": "InvUomBPEODisableDate",
+      "module_code": "OTHER",
+      "bicc": false
+    },
+    {
+      "column": "JOB_DEFINITION_NAME",
+      "pvo_name": "InvUomPVO",
+      "pvo_attr": "InvUomBPEOJobDefinitionName",
+      "module_code": "OTHER",
+      "bicc": false
+    },
+    {
+      "column": "JOB_DEFINITION_PACKAGE",
+      "pvo_name": "InvUomPVO",
+      "pvo_attr": "InvUomBPEOJobDefinitionPackage",
+      "module_code": "OTHER",
+      "bicc": false
+    },
+    {
+      "column": "LAST_UPDATE_DATE",
+      "pvo_name": "InvUomPVO",
+      "pvo_attr": "InvUomBPEOLastUpdateDate",
+      "module_code": "OTHER",
+      "bicc": true
+    },
+    {
+      "column": "LAST_UPDATE_LOGIN",
+      "pvo_name": "InvUomPVO",
+      "pvo_attr": "InvUomBPEOLastUpdateLogin",
+      "module_code": "OTHER",
+      "bicc": false
+    },
+    {
+      "column": "LAST_UPDATED_BY",
+      "pvo_name": "InvUomPVO",
+      "pvo_attr": "InvUomBPEOLastUpdatedBy",
+      "module_code": "OTHER",
+      "bicc": false
+    },
+    {
+      "column": "OBJECT_VERSION_NUMBER",
+      "pvo_name": "InvUomPVO",
+      "pvo_attr": "InvUomBPEOObjectVersionNumber",
+      "module_code": "OTHER",
+      "bicc": false
+    },
+    {
+      "column": "REQUEST_ID",
+      "pvo_name": "InvUomPVO",
+      "pvo_attr": "InvUomBPEORequestId",
+      "module_code": "OTHER",
+      "bicc": false
+    },
+    {
+      "column": "STANDARD_PACK_FLAG",
+      "pvo_name": "InvUomPVO",
+      "pvo_attr": "InvUomBPEOStandardPackFlag",
+      "module_code": "OTHER",
+      "bicc": false
+    },
+    {
+      "column": "UNIT_OF_MEASURE_ID",
+      "pvo_name": "InvUomPVO",
+      "pvo_attr": "UnitOfMeasureId",
+      "module_code": "OTHER",
+      "bicc": true
+    },
+    {
+      "column": "UOM_CLASS",
+      "pvo_name": "InvUomPVO",
+      "pvo_attr": "InvUomBPEOUomClass",
+      "module_code": "OTHER",
+      "bicc": true
+    },
+    {
+      "column": "UOM_CODE",
+      "pvo_name": "InvUomPVO",
+      "pvo_attr": "InvUomBPEOUomCode",
+      "module_code": "OTHER",
+      "bicc": true
+    },
+    {
+      "column": "JOB_DEFINITION_NAME",
+      "pvo_name": "LineSalesCreditPVO",
+      "pvo_attr": "UomJobDefinitionName",
+      "module_code": "AR",
+      "bicc": false
+    },
+    {
+      "column": "UNIT_OF_MEASURE_ID",
+      "pvo_name": "LineSalesCreditPVO",
+      "pvo_attr": "UomUnitOfMeasureId",
+      "module_code": "AR",
+      "bicc": false
+    },
+    {
+      "column": "UOM_CODE",
+      "pvo_name": "LineSalesCreditPVO",
+      "pvo_attr": "UomUomCode",
+      "module_code": "AR",
+      "bicc": false
+    },
+    {
+      "column": "JOB_DEFINITION_NAME",
+      "pvo_name": "TransactionHistoryDistributionPVO",
+      "pvo_attr": "UomJobDefinitionName",
+      "module_code": "AR",
+      "bicc": false
+    },
+    {
+      "column": "OBJECT_VERSION_NUMBER",
+      "pvo_name": "TransactionHistoryDistributionPVO",
+      "pvo_attr": "UomObjectVersionNumber2",
+      "module_code": "AR",
+      "bicc": false
+    },
+    {
+      "column": "UNIT_OF_MEASURE_ID",
+      "pvo_name": "TransactionHistoryDistributionPVO",
+      "pvo_attr": "UomUnitOfMeasureId",
+      "module_code": "AR",
+      "bicc": false
+    },
+    {
+      "column": "UOM_CODE",
+      "pvo_name": "TransactionHistoryDistributionPVO",
+      "pvo_attr": "UomUomCode",
+      "module_code": "AR",
+      "bicc": false
+    },
+    {
+      "column": "JOB_DEFINITION_NAME",
+      "pvo_name": "TransactionHistoryPVO",
+      "pvo_attr": "UomJobDefinitionName",
+      "module_code": "AR",
+      "bicc": false
+    },
+    {
+      "column": "OBJECT_VERSION_NUMBER",
+      "pvo_name": "TransactionHistoryPVO",
+      "pvo_attr": "UomObjectVersionNumber2",
+      "module_code": "AR",
+      "bicc": false
+    },
+    {
+      "column": "UNIT_OF_MEASURE_ID",
+      "pvo_name": "TransactionHistoryPVO",
+      "pvo_attr": "UomUnitOfMeasureId",
+      "module_code": "AR",
+      "bicc": false
+    },
+    {
+      "column": "UOM_CODE",
+      "pvo_name": "TransactionHistoryPVO",
+      "pvo_attr": "UomUomCode",
+      "module_code": "AR",
+      "bicc": false
+    },
+    {
+      "column": "JOB_DEFINITION_NAME",
+      "pvo_name": "TransactionLineBillsReceivablePVO",
+      "pvo_attr": "UomJobDefinitionName",
+      "module_code": "AR",
+      "bicc": false
+    },
+    {
+      "column": "UNIT_OF_MEASURE_ID",
+      "pvo_name": "TransactionLineBillsReceivablePVO",
+      "pvo_attr": "UomUnitOfMeasureId",
+      "module_code": "AR",
+      "bicc": false
+    },
+    {
+      "column": "UOM_CODE",
+      "pvo_name": "TransactionLineBillsReceivablePVO",
+      "pvo_attr": "UomUomCode",
+      "module_code": "AR",
+      "bicc": false
+    },
+    {
+      "column": "JOB_DEFINITION_NAME",
+      "pvo_name": "TransactionLineDistributionPVO",
+      "pvo_attr": "UomJobDefinitionName",
+      "module_code": "AR",
+      "bicc": false
+    },
+    {
+      "column": "UNIT_OF_MEASURE_ID",
+      "pvo_name": "TransactionLineDistributionPVO",
+      "pvo_attr": "UomUnitOfMeasureId",
+      "module_code": "AR",
+      "bicc": false
+    },
+    {
+      "column": "UOM_CODE",
+      "pvo_name": "TransactionLineDistributionPVO",
+      "pvo_attr": "UomUomCode",
+      "module_code": "AR",
+      "bicc": false
+    },
+    {
+      "column": "JOB_DEFINITION_NAME",
+      "pvo_name": "TransactionLinePVO",
+      "pvo_attr": "UomJobDefinitionName",
+      "module_code": "AR",
+      "bicc": false
+    },
+    {
+      "column": "UNIT_OF_MEASURE_ID",
+      "pvo_name": "TransactionLinePVO",
+      "pvo_attr": "UomUnitOfMeasureId",
+      "module_code": "AR",
+      "bicc": false
+    },
+    {
+      "column": "UOM_CODE",
+      "pvo_name": "TransactionLinePVO",
+      "pvo_attr": "UomUomCode",
+      "module_code": "AR",
+      "bicc": false
+    }
+  ],
   "i18n": []
 };
 </script>
@@ -2020,6 +2496,7 @@ const DATA = {
     <div id="tab-columns" class="tab-content"></div>
     <div id="tab-relationships" class="tab-content"></div>
     <div id="tab-sql" class="tab-content"></div>
+    <div id="tab-pvos" class="tab-content"></div>
 </main>
 
 <!-- ====== FOOTER ====== -->
@@ -2260,12 +2737,17 @@ function render() {
         overview: {pt:'Visão Geral', en:'Overview', es:'Visión General'},
         columns: {pt:'Colunas', en:'Columns', es:'Columnas'},
         relationships: {pt:'Relacionamentos', en:'Relationships', es:'Relaciones'},
-        sql: {pt:'SQL', en:'SQL', es:'SQL'}
+        sql: {pt:'SQL', en:'SQL', es:'SQL'},
+        pvos: {pt:'PVOs Relacionados', en:'Related PVOs', es:'PVOs Relacionados'}
     };
+    var _pvoNames = {};
+    (d.related_pvos || []).forEach(function(r) { _pvoNames[r.pvo_name] = 1; });
+    var pvosCount = Object.keys(_pvoNames).length;
     document.getElementById('tabs-nav').innerHTML =
         '<button class="tab-btn active" data-tab="overview" onclick="switchTab(\'overview\')"><i class="ri-information-line"></i> ' + t(tabLabels.overview) + '</button>' +
         '<button class="tab-btn" data-tab="columns" onclick="switchTab(\'columns\')"><i class="ri-table-line"></i> ' + t(tabLabels.columns) + ' <span class="tab-count">' + d.columns.length + '</span></button>' +
         '<button class="tab-btn" data-tab="relationships" onclick="switchTab(\'relationships\')"><i class="ri-git-branch-line"></i> ' + t(tabLabels.relationships) + ' <span class="tab-count">' + (d.relationships.parents.length + d.relationships.children.length) + '</span></button>' +
+        (pvosCount ? '<button class="tab-btn" data-tab="pvos" onclick="switchTab(\'pvos\')"><i class="ri-database-2-line"></i> ' + t(tabLabels.pvos) + ' <span class="tab-count">' + pvosCount + '</span></button>' : '') +
         '<button class="tab-btn" data-tab="sql" onclick="switchTab(\'sql\')"><i class="ri-code-s-slash-line"></i> SQL <span class="tab-count">' + d.sql.length + '</span></button>';
 
     // Tab 1: Overview
@@ -2275,6 +2757,7 @@ function render() {
         '<div class="stat-card"><div class="stat-card-icon bg-info"><i class="ri-links-line"></i></div><div class="stat-card-info"><div class="stat-card-number" style="color:var(--info)">' + d.relationships.parents.length + '</div><div class="stat-card-label">Foreign Keys</div></div></div>' +
         '<div class="stat-card"><div class="stat-card-icon bg-success"><i class="ri-shield-check-line"></i></div><div class="stat-card-info"><div class="stat-card-number" style="color:var(--success)">' + d.stats.avg_confidence + '%</div><div class="stat-card-label">' + t({pt:'Confiança Média', en:'Avg Confidence', es:'Confianza Promedio'}) + '</div></div></div>' +
         '<div class="stat-card"><div class="stat-card-icon bg-purple"><i class="ri-apps-line"></i></div><div class="stat-card-info"><div class="stat-card-number" style="color:var(--purple)">' + d.stats.categories + '</div><div class="stat-card-label">' + t({pt:'Categorias', en:'Categories', es:'Categorías'}) + '</div></div></div>' +
+        (pvosCount ? '<div class="stat-card"><div class="stat-card-icon bg-purple"><i class="ri-database-2-line"></i></div><div class="stat-card-info"><div class="stat-card-number" style="color:var(--purple)">' + pvosCount + '</div><div class="stat-card-label">PVOs</div></div></div>' : '') +
         '</div>';
 
     var overviewHtml = statsHtml +
@@ -2384,6 +2867,69 @@ function render() {
     }
     document.getElementById('tab-sql').innerHTML = sqlHtml;
 
+    // Tab 5: Related PVOs (grouped by PVO, table inside each group)
+    var pvosHtml = '';
+    if (d.related_pvos && d.related_pvos.length) {
+        // Group rows by pvo_name
+        var pvoGroups = {};
+        var pvoOrder = [];
+        d.related_pvos.forEach(function(row) {
+            var key = row.pvo_name;
+            if (!pvoGroups[key]) {
+                pvoGroups[key] = { pvo_name: row.pvo_name, module_code: row.module_code, rows: [] };
+                pvoOrder.push(key);
+            }
+            pvoGroups[key].rows.push(row);
+        });
+
+        pvosHtml += '<div class="search-container"><i class="ri-search-line search-icon"></i><input class="search-input" type="text" placeholder="' + t({pt:'Filtrar PVOs...', en:'Filter PVOs...', es:'Filtrar PVOs...'}) + '" oninput="filterPvos(this.value)"></div>';
+
+        var pvoHeaders = {
+            pt: ['#','Campo da Tabela','Campo do PVO','Disponível por BICC'],
+            en: ['#','Table Column','PVO Attribute','Available via BICC'],
+            es: ['#','Campo de Tabla','Campo del PVO','Disponible por BICC']
+        };
+        var ph = pvoHeaders[currentLang] || pvoHeaders['pt'];
+
+        pvosHtml += '<div id="pvos-groups">';
+        pvoOrder.forEach(function(key) {
+            var grp = pvoGroups[key];
+            var pvoFile = grp.pvo_name.toLowerCase() + '.html';
+            var pvoHref = (grp.module_code === m.module_code)
+                ? '../pvos/' + pvoFile
+                : '../../' + grp.module_code + '/pvos/' + pvoFile;
+            var biccCount = grp.rows.filter(function(r) { return r.bicc; }).length;
+
+            var grpSearchFields = grp.rows.map(function(r) { return r.column + ' ' + r.pvo_attr; }).join(' ');
+            pvosHtml += '<div class="card pvo-group" data-search="' + (grp.pvo_name + ' ' + grp.module_code + ' ' + grpSearchFields).toLowerCase() + '">' +
+                '<div class="card-header" style="cursor:pointer" onclick="this.parentElement.classList.toggle(\'collapsed\')">' +
+                '<div class="card-header-icon bg-purple"><i class="ri-database-2-line"></i></div>' +
+                '<div class="card-title"><a href="' + pvoHref + langParam() + '" class="wikilink" onclick="event.stopPropagation()">' + grp.pvo_name + '</a></div>' +
+                '<span class="pill pill-info">' + grp.module_code + '</span>' +
+                '<span class="card-badge pill-info" style="background:var(--info-light);color:var(--pill-info-text);border:1px solid var(--info-border)">' + grp.rows.length + ' attrs</span>' +
+                (biccCount ? '<span class="card-badge pill-success" style="background:var(--success-light);color:var(--pill-success-text);border:1px solid var(--success-border)">BICC ' + biccCount + '</span>' : '') +
+                '<i class="ri-arrow-down-s-line" style="font-size:1.2rem;color:var(--text-muted);margin-left:auto;transition:transform 0.2s"></i>' +
+                '</div>' +
+                '<div class="card-body pvo-group-body"><div class="table-wrapper"><table><thead><tr>';
+            ph.forEach(function(h, i) { pvosHtml += '<th' + (i === ph.length - 1 ? ' style="text-align:center"' : '') + '>' + h + '</th>'; });
+            pvosHtml += '</tr></thead><tbody>';
+            grp.rows.forEach(function(row, idx) {
+                var biccHtml = row.bicc
+                    ? '<span class="pill pill-success"><i class="ri-checkbox-circle-fill"></i> ' + t({pt:'Sim',en:'Yes',es:'Sí'}) + '</span>'
+                    : '<span class="pill pill-danger" style="opacity:0.5">' + t({pt:'Não',en:'No',es:'No'}) + '</span>';
+                pvosHtml += '<tr>' +
+                    '<td>' + (idx + 1) + '</td>' +
+                    '<td class="col-name">' + row.column + '</td>' +
+                    '<td class="col-name">' + row.pvo_attr + '</td>' +
+                    '<td style="text-align:center">' + biccHtml + '</td>' +
+                    '</tr>';
+            });
+            pvosHtml += '</tbody></table></div></div></div>';
+        });
+        pvosHtml += '</div>';
+    }
+    document.getElementById('tab-pvos').innerHTML = pvosHtml;
+
     // Footer
     document.getElementById('f-initials').textContent = m.author_initials || '';
     document.getElementById('f-name').textContent = m.author_name || '';
@@ -2430,6 +2976,16 @@ function filterColumns(query) {
     rows.forEach(function(row) {
         var text = row.getAttribute('data-search') || '';
         row.style.display = !q || text.indexOf(q) >= 0 ? '' : 'none';
+    });
+}
+
+/* ====== PVO FILTER ====== */
+function filterPvos(query) {
+    var q = query.toLowerCase().trim();
+    var groups = document.querySelectorAll('#pvos-groups .pvo-group');
+    groups.forEach(function(grp) {
+        var text = grp.getAttribute('data-search') || '';
+        grp.style.display = !q || text.indexOf(q) >= 0 ? '' : 'none';
     });
 }
 

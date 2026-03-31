@@ -85,12 +85,12 @@ Esta tabela é utilizada nos seguintes processos:
 - Nenhuma tabela-pai identificada (tabela raiz do domínio Learning).
 
 ### Tabelas-filha (FK de saída)
-- [[wlf_learning_items_f_tl]] — via `LEARNING_ITEM_ID` (traduÃ§Ãµes do item de aprendizado)
-- [[wlf_event_assignments_f]] — via `LEARNING_ITEM_ID` (atribuiÃ§Ãµes de eventos do item de aprendizado)
+- [[wlf_learning_items_f_tl]] — via `LEARNING_ITEM_ID` (traduções do item de aprendizado)
+- [[wlf_event_assignments_f]] — via `LEARNING_ITEM_ID` (atribuições de eventos do item de aprendizado)
 - [[wlf_assignment_records_f]] — via `LEARNING_ITEM_ID` (registros de atribuição)
 - [[wlf_li_activities_f]] — via `LEARNING_ITEM_ID` (atividades do item de aprendizado)
 - [[wlf_li_classes_f]] — via `LEARNING_ITEM_ID` (turmas do item de aprendizado)
-- [[wlf_li_content_f]] — via `LEARNING_ITEM_ID` (conteÃºdos do item de aprendizado)
+- [[wlf_li_content_f]] — via `LEARNING_ITEM_ID` (conteúdos do item de aprendizado)
 - [[wlf_li_courses_f]] — via `LEARNING_ITEM_ID` (cursos do item de aprendizado)
 - [[wlf_li_elearnings_f]] — via `LEARNING_ITEM_ID` (e-learnings do item de aprendizado)
 - [[wlf_li_hierarchies_f]] — via `LEARNING_ITEM_ID` (hierarquias do item de aprendizado)

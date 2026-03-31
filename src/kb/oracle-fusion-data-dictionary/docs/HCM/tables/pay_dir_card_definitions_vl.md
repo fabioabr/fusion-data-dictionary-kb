@@ -75,8 +75,8 @@ Esta tabela é utilizada nos seguintes processos:
 - --- Tabela base de definicoes de cartao + traducoes
 
 ### Tabelas-filha (FK de saída)
-- [[pay_dir_cards_f]] --- via `DIR_CARD_DEFINITION_ID` (cartÃµes criados a partir desta definiÃ§Ã£o)
-- [[pay_dir_card_comp_defs_f]] --- via `DIR_CARD_DEFINITION_ID` (definiÃ§Ãµes de componentes do cartÃ£o)
+- [[pay_dir_cards_f]] --- via `DIR_CARD_DEFINITION_ID` (cartões criados a partir desta definição)
+- [[pay_dir_card_comp_defs_f]] --- via `DIR_CARD_DEFINITION_ID` (definições de componentes do cartão)
 
 ---
 

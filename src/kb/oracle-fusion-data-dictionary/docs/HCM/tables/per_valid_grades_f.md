@@ -79,9 +79,9 @@ Esta tabela é utilizada nos seguintes processos:
 ## Relacionamentos
 
 ### Tabelas-pai (FK de entrada)
-- [[per_jobs_f]] — via `JOB_ID` (cargo com grade salarial vÃ¡lida)
-- [[hr_all_positions_f]] — via `POSITION_ID` (posiÃ§Ã£o com grade salarial vÃ¡lida)
-- [[per_grades_f]] — via `GRADE_ID` (grade salarial vÃ¡lida para cargo/posiÃ§Ã£o)
+- [[per_jobs_f]] — via `JOB_ID` (cargo com grade salarial válida)
+- [[hr_all_positions_f]] — via `POSITION_ID` (posição com grade salarial válida)
+- [[per_grades_f]] — via `GRADE_ID` (grade salarial válida para cargo/posição)
 
 ### Tabelas-filha (FK de saída)
 - Nenhuma tabela-filha identificada.

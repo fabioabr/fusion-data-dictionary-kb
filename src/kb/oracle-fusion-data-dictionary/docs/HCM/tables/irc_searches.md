@@ -76,8 +76,8 @@ Esta tabela é utilizada nos seguintes processos:
 
 ### Tabelas-filha (FK de saída)
 - [[irc_search_results]] --- via `SEARCH_ID` (resultados da busca de candidatos)
-- [[irc_search_actions]] --- via `SEARCH_ID` (aÃ§Ãµes realizadas na busca de candidatos)
-- [[irc_searches_dn]] --- via `SEARCH_ID` (visÃ£o desnormalizada da busca de candidatos)
+- [[irc_search_actions]] --- via `SEARCH_ID` (ações realizadas na busca de candidatos)
+- [[irc_searches_dn]] --- via `SEARCH_ID` (visão desnormalizada da busca de candidatos)
 
 ---
 

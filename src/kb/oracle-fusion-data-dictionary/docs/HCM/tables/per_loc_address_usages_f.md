@@ -84,7 +84,7 @@ Esta tabela é utilizada nos seguintes processos:
 ## Relacionamentos
 
 ### Tabelas-pai (FK de entrada)
-- [[per_locations]] — via `LOCATION_ID` (localizaÃ§Ã£o do uso de endereÃ§o)
+- [[per_locations]] — via `LOCATION_ID` (localização do uso de endereço)
 
 ### Tabelas-filha (FK de saída)
 - Nenhuma relação direta identificada.

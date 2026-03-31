@@ -77,7 +77,7 @@ Esta tabela é utilizada nos seguintes processos:
 
 ### Tabelas-filha (FK de saída)
 - [[pay_element_entry_values_f]] --- via `INPUT_VALUE_ID` (valores preenchidos para este input)
-- [[pay_input_values_tl]] --- via `INPUT_VALUE_ID` (traduÃ§Ãµes do valor de entrada)
+- [[pay_input_values_tl]] --- via `INPUT_VALUE_ID` (traduções do valor de entrada)
 
 ---
 

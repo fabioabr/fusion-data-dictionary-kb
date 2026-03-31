@@ -82,7 +82,7 @@ Esta tabela é utilizada nos seguintes processos:
 
 ### Tabelas-pai (FK de entrada)
 - [[per_all_people_f]] — via `PERSON_ID` (pessoa solicitante do aprendizado)
-- [[per_all_people_f]] — via `APPROVER_PERSON_ID` (pessoa aprovadora da solicitaÃ§Ã£o de aprendizado)
+- [[per_all_people_f]] — via `APPROVER_PERSON_ID` (pessoa aprovadora da solicitação de aprendizado)
 - [[wlf_learning_items_f]] — via `LEARNING_ITEM_ID` (item solicitado)
 
 ### Tabelas-filha (FK de saída)

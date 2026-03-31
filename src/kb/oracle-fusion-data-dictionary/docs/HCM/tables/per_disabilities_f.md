@@ -82,7 +82,7 @@ Esta tabela é utilizada nos seguintes processos:
 ## 🔗 Relacionamentos
 
 ### Tabelas-pai (FK de entrada)
-- [[per_all_people_f]] — via `PERSON_ID` (colaborador com registro de deficiÃªncia)
+- [[per_all_people_f]] — via `PERSON_ID` (colaborador com registro de deficiência)
 
 ### Tabelas-filha (FK de saída)
 - - Nenhuma tabela-filha direta identificada.

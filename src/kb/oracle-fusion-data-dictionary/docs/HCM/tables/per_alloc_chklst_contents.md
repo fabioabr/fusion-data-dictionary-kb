@@ -74,7 +74,7 @@ Esta tabela é utilizada nos seguintes processos:
 ## 🔗 Relacionamentos
 
 ### Tabelas-pai (FK de entrada)
-- [[per_allocated_checklists]] — via `ALLOCATED_CHECKLIST_ID` (checklist ao qual pertence o conteÃºdo)
+- [[per_allocated_checklists]] — via `ALLOCATED_CHECKLIST_ID` (checklist ao qual pertence o conteúdo)
 
 ### Tabelas-filha (FK de saída)
 - - Nenhuma tabela-filha direta identificada.

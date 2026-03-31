@@ -262,6 +262,11 @@ pre.sql-code { margin: 0; padding: 16px; font-family: 'Courier New', monospace; 
 .bg-orange { background: var(--orange); } .bg-teal { background: var(--teal); }
 .bg-secondary { background: var(--secondary); }
 
+/* ====== PVO GROUPS ====== */
+.pvo-group .card-header .ri-arrow-down-s-line { transition: transform 0.2s; }
+.pvo-group.collapsed .pvo-group-body { display: none; }
+.pvo-group.collapsed .ri-arrow-down-s-line { transform: rotate(-90deg); }
+
 /* ====== RESPONSIVE ====== */
 @media (max-width: 768px) {
     .stats-grid { grid-template-columns: 1fr; }
@@ -553,14 +558,14 @@ const DATA = {
         "table": "per_persons",
         "column": "PERSON_ID",
         "desc": {
-          "pt": "pessoa do perÃ­odo de serviÃ§o"
+          "pt": "pessoa do período de serviço"
         }
       },
       {
         "table": "per_person_types",
         "column": "PERSON_TYPE_ID",
         "desc": {
-          "pt": "tipo de pessoa no perÃ­odo de serviÃ§o"
+          "pt": "tipo de pessoa no período de serviço"
         }
       }
     ],
@@ -569,7 +574,7 @@ const DATA = {
         "table": "per_all_assignments_m",
         "column": "PERIOD_OF_SERVICE_ID",
         "desc": {
-          "pt": "vÃ­nculos empregatÃ­cios do perÃ­odo de serviÃ§o"
+          "pt": "vínculos empregatícios do período de serviço"
         }
       }
     ]
@@ -1807,6 +1812,386 @@ const DATA = {
     "PJF_PROJ_ELEMENTS_TL": "HCM",
     "PJF_WORK_TYPES_VL": "HCM"
   },
+  "related_pvos": [
+    {
+      "column": "ACTUAL_TERMINATION_DATE",
+      "pvo_name": "GlobalPersonPVO",
+      "pvo_attr": "PeriodOfServicePEOActualTerminationDate",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "ADJUSTED_SVC_DATE",
+      "pvo_name": "GlobalPersonPVO",
+      "pvo_attr": "PeriodOfServicePEOAdjustedSvcDate",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "DATE_START",
+      "pvo_name": "GlobalPersonPVO",
+      "pvo_attr": "PeriodOfServicePEODateStart",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "LAST_UPDATE_DATE",
+      "pvo_name": "GlobalPersonPVO",
+      "pvo_attr": "PeriodOfServicePEOLastUpdateDate",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "NOTIFIED_TERMINATION_DATE",
+      "pvo_name": "GlobalPersonPVO",
+      "pvo_attr": "PeriodOfServicePEONotifiedTerminationDate",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "ORIGINAL_DATE_OF_HIRE",
+      "pvo_name": "GlobalPersonPVO",
+      "pvo_attr": "PeriodOfServicePEOOriginalDateOfHire",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "PERIOD_OF_SERVICE_ID",
+      "pvo_name": "GlobalPersonPVO",
+      "pvo_attr": "PeriodOfServicePEOPeriodOfServiceId",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "READY_TO_CONVERT",
+      "pvo_name": "GlobalPersonPVO",
+      "pvo_attr": "PeriodOfServicePEOReadyToConvert",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "REVOKE_USER_ACCESS",
+      "pvo_name": "GlobalPersonPVO",
+      "pvo_attr": "PeriodOfServicePEORevokeUserAccess",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "ACTUAL_TERMINATION_DATE",
+      "pvo_name": "GlobalPersonPVOViewAll",
+      "pvo_attr": "PeriodOfServicePEOActualTerminationDate",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "ADJUSTED_SVC_DATE",
+      "pvo_name": "GlobalPersonPVOViewAll",
+      "pvo_attr": "PeriodOfServicePEOAdjustedSvcDate",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "DATE_START",
+      "pvo_name": "GlobalPersonPVOViewAll",
+      "pvo_attr": "PeriodOfServicePEODateStart",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "LAST_UPDATE_DATE",
+      "pvo_name": "GlobalPersonPVOViewAll",
+      "pvo_attr": "PeriodOfServicePEOLastUpdateDate",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "NOTIFIED_TERMINATION_DATE",
+      "pvo_name": "GlobalPersonPVOViewAll",
+      "pvo_attr": "PeriodOfServicePEONotifiedTerminationDate",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "ORIGINAL_DATE_OF_HIRE",
+      "pvo_name": "GlobalPersonPVOViewAll",
+      "pvo_attr": "PeriodOfServicePEOOriginalDateOfHire",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "PERIOD_OF_SERVICE_ID",
+      "pvo_name": "GlobalPersonPVOViewAll",
+      "pvo_attr": "PeriodOfServicePEOPeriodOfServiceId",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "READY_TO_CONVERT",
+      "pvo_name": "GlobalPersonPVOViewAll",
+      "pvo_attr": "PeriodOfServicePEOReadyToConvert",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "REVOKE_USER_ACCESS",
+      "pvo_name": "GlobalPersonPVOViewAll",
+      "pvo_attr": "PeriodOfServicePEORevokeUserAccess",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "DATE_START",
+      "pvo_name": "PersonRefPVO",
+      "pvo_attr": "PeriodOfServicePEODateStart",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "PERIOD_OF_SERVICE_ID",
+      "pvo_name": "PersonRefPVO",
+      "pvo_attr": "PeriodOfServicePEOPeriodOfServiceId",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "ACCEPTED_TERMINATION_DATE",
+      "pvo_name": "WorkRelationshipPVO",
+      "pvo_attr": "WorkRelationshipPEOAcceptedTerminationDate",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "ACTION_OCCURRENCE_ID",
+      "pvo_name": "WorkRelationshipPVO",
+      "pvo_attr": "WorkRelationshipPEOActionOccurrenceId",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "ACTUAL_TERMINATION_DATE",
+      "pvo_name": "WorkRelationshipPVO",
+      "pvo_attr": "WorkRelationshipPEOActualTerminationDate",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "ADJUSTED_SVC_DATE",
+      "pvo_name": "WorkRelationshipPVO",
+      "pvo_attr": "WorkRelationshipPEOAdjustedSvcDate",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "BUSINESS_GROUP_ID",
+      "pvo_name": "WorkRelationshipPVO",
+      "pvo_attr": "WorkRelationshipPEOBusinessGroupId",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "COMMENTS",
+      "pvo_name": "WorkRelationshipPVO",
+      "pvo_attr": "WorkRelationshipPEOComments",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "CREATED_BY",
+      "pvo_name": "WorkRelationshipPVO",
+      "pvo_attr": "WorkRelationshipPEOCreatedBy",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "CREATION_DATE",
+      "pvo_name": "WorkRelationshipPVO",
+      "pvo_attr": "WorkRelationshipPEOCreationDate",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "DATE_EMPLOYEE_DATA_VERIFIED",
+      "pvo_name": "WorkRelationshipPVO",
+      "pvo_attr": "WorkRelationshipPEODateEmployeeDataVerified",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "DATE_START",
+      "pvo_name": "WorkRelationshipPVO",
+      "pvo_attr": "WorkRelationshipPEODateStart",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "FAST_PATH_EMPLOYEE",
+      "pvo_name": "WorkRelationshipPVO",
+      "pvo_attr": "WorkRelationshipPEOFastPathEmployee",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "LAST_UPDATE_DATE",
+      "pvo_name": "WorkRelationshipPVO",
+      "pvo_attr": "WorkRelationshipPEOLastUpdateDate",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "LAST_UPDATE_LOGIN",
+      "pvo_name": "WorkRelationshipPVO",
+      "pvo_attr": "WorkRelationshipPEOLastUpdateLogin",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "LAST_UPDATED_BY",
+      "pvo_name": "WorkRelationshipPVO",
+      "pvo_attr": "WorkRelationshipPEOLastUpdatedBy",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "LAST_WORKING_DATE",
+      "pvo_name": "WorkRelationshipPVO",
+      "pvo_attr": "WorkRelationshipPEOLastWorkingDate",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "LEGAL_ENTITY_ID",
+      "pvo_name": "WorkRelationshipPVO",
+      "pvo_attr": "WorkRelationshipPEOLegalEntityId",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "LEGISLATION_CODE",
+      "pvo_name": "WorkRelationshipPVO",
+      "pvo_attr": "WorkRelationshipPEOLegislationCode",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "NOTIFIED_TERMINATION_DATE",
+      "pvo_name": "WorkRelationshipPVO",
+      "pvo_attr": "WorkRelationshipPEONotifiedTerminationDate",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "OBJECT_VERSION_NUMBER",
+      "pvo_name": "WorkRelationshipPVO",
+      "pvo_attr": "WorkRelationshipPEOObjectVersionNumber",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "ON_MILITARY_SERVICE",
+      "pvo_name": "WorkRelationshipPVO",
+      "pvo_attr": "WorkRelationshipPEOOnMilitaryService",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "ORIGINAL_DATE_OF_HIRE",
+      "pvo_name": "WorkRelationshipPVO",
+      "pvo_attr": "WorkRelationshipPEOOriginalDateOfHire",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "PERIOD_OF_SERVICE_ID",
+      "pvo_name": "WorkRelationshipPVO",
+      "pvo_attr": "PeriodOfServiceId",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "PERIOD_TYPE",
+      "pvo_name": "WorkRelationshipPVO",
+      "pvo_attr": "WorkRelationshipPEOPeriodType",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "PERSON_ID",
+      "pvo_name": "WorkRelationshipPVO",
+      "pvo_attr": "WorkRelationshipPEOPersonId",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "PRIMARY_FLAG",
+      "pvo_name": "WorkRelationshipPVO",
+      "pvo_attr": "WorkRelationshipPEOPrimaryFlag",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "PROJECTED_TERMINATION_DATE",
+      "pvo_name": "WorkRelationshipPVO",
+      "pvo_attr": "WorkRelationshipPEOProjectedTerminationDate",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "REHIRE_AUTHORIZER_PERSON_ID",
+      "pvo_name": "WorkRelationshipPVO",
+      "pvo_attr": "WorkRelationshipPEORehireAuthorizerPersonId",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "REHIRE_AUTHORIZOR",
+      "pvo_name": "WorkRelationshipPVO",
+      "pvo_attr": "WorkRelationshipPEORehireAuthorizor",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "REHIRE_REASON",
+      "pvo_name": "WorkRelationshipPVO",
+      "pvo_attr": "WorkRelationshipPEORehireReason",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "REHIRE_RECOMMENDATION",
+      "pvo_name": "WorkRelationshipPVO",
+      "pvo_attr": "WorkRelationshipPEORehireRecommendation",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "REVOKE_USER_ACCESS",
+      "pvo_name": "WorkRelationshipPVO",
+      "pvo_attr": "WorkRelationshipPEORevokeUserAccess",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "TERMINATION_ACCEPTED_PERSON_ID",
+      "pvo_name": "WorkRelationshipPVO",
+      "pvo_attr": "WorkRelationshipPEOTerminationAcceptedPersonId",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "WORKER_COMMENTS",
+      "pvo_name": "WorkRelationshipPVO",
+      "pvo_attr": "WorkRelationshipPEOWorkerComments",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "WORKER_NUMBER",
+      "pvo_name": "WorkRelationshipPVO",
+      "pvo_attr": "WorkRelationshipPEOWorkerNumber",
+      "module_code": "HCM",
+      "bicc": true
+    }
+  ],
   "i18n": [
     {
       "id": 1,
@@ -2190,6 +2575,7 @@ const DATA = {
     <div id="tab-columns" class="tab-content"></div>
     <div id="tab-relationships" class="tab-content"></div>
     <div id="tab-sql" class="tab-content"></div>
+    <div id="tab-pvos" class="tab-content"></div>
 </main>
 
 <!-- ====== FOOTER ====== -->
@@ -2430,12 +2816,17 @@ function render() {
         overview: {pt:'Visão Geral', en:'Overview', es:'Visión General'},
         columns: {pt:'Colunas', en:'Columns', es:'Columnas'},
         relationships: {pt:'Relacionamentos', en:'Relationships', es:'Relaciones'},
-        sql: {pt:'SQL', en:'SQL', es:'SQL'}
+        sql: {pt:'SQL', en:'SQL', es:'SQL'},
+        pvos: {pt:'PVOs Relacionados', en:'Related PVOs', es:'PVOs Relacionados'}
     };
+    var _pvoNames = {};
+    (d.related_pvos || []).forEach(function(r) { _pvoNames[r.pvo_name] = 1; });
+    var pvosCount = Object.keys(_pvoNames).length;
     document.getElementById('tabs-nav').innerHTML =
         '<button class="tab-btn active" data-tab="overview" onclick="switchTab(\'overview\')"><i class="ri-information-line"></i> ' + t(tabLabels.overview) + '</button>' +
         '<button class="tab-btn" data-tab="columns" onclick="switchTab(\'columns\')"><i class="ri-table-line"></i> ' + t(tabLabels.columns) + ' <span class="tab-count">' + d.columns.length + '</span></button>' +
         '<button class="tab-btn" data-tab="relationships" onclick="switchTab(\'relationships\')"><i class="ri-git-branch-line"></i> ' + t(tabLabels.relationships) + ' <span class="tab-count">' + (d.relationships.parents.length + d.relationships.children.length) + '</span></button>' +
+        (pvosCount ? '<button class="tab-btn" data-tab="pvos" onclick="switchTab(\'pvos\')"><i class="ri-database-2-line"></i> ' + t(tabLabels.pvos) + ' <span class="tab-count">' + pvosCount + '</span></button>' : '') +
         '<button class="tab-btn" data-tab="sql" onclick="switchTab(\'sql\')"><i class="ri-code-s-slash-line"></i> SQL <span class="tab-count">' + d.sql.length + '</span></button>';
 
     // Tab 1: Overview
@@ -2445,6 +2836,7 @@ function render() {
         '<div class="stat-card"><div class="stat-card-icon bg-info"><i class="ri-links-line"></i></div><div class="stat-card-info"><div class="stat-card-number" style="color:var(--info)">' + d.relationships.parents.length + '</div><div class="stat-card-label">Foreign Keys</div></div></div>' +
         '<div class="stat-card"><div class="stat-card-icon bg-success"><i class="ri-shield-check-line"></i></div><div class="stat-card-info"><div class="stat-card-number" style="color:var(--success)">' + d.stats.avg_confidence + '%</div><div class="stat-card-label">' + t({pt:'Confiança Média', en:'Avg Confidence', es:'Confianza Promedio'}) + '</div></div></div>' +
         '<div class="stat-card"><div class="stat-card-icon bg-purple"><i class="ri-apps-line"></i></div><div class="stat-card-info"><div class="stat-card-number" style="color:var(--purple)">' + d.stats.categories + '</div><div class="stat-card-label">' + t({pt:'Categorias', en:'Categories', es:'Categorías'}) + '</div></div></div>' +
+        (pvosCount ? '<div class="stat-card"><div class="stat-card-icon bg-purple"><i class="ri-database-2-line"></i></div><div class="stat-card-info"><div class="stat-card-number" style="color:var(--purple)">' + pvosCount + '</div><div class="stat-card-label">PVOs</div></div></div>' : '') +
         '</div>';
 
     var overviewHtml = statsHtml +
@@ -2554,6 +2946,69 @@ function render() {
     }
     document.getElementById('tab-sql').innerHTML = sqlHtml;
 
+    // Tab 5: Related PVOs (grouped by PVO, table inside each group)
+    var pvosHtml = '';
+    if (d.related_pvos && d.related_pvos.length) {
+        // Group rows by pvo_name
+        var pvoGroups = {};
+        var pvoOrder = [];
+        d.related_pvos.forEach(function(row) {
+            var key = row.pvo_name;
+            if (!pvoGroups[key]) {
+                pvoGroups[key] = { pvo_name: row.pvo_name, module_code: row.module_code, rows: [] };
+                pvoOrder.push(key);
+            }
+            pvoGroups[key].rows.push(row);
+        });
+
+        pvosHtml += '<div class="search-container"><i class="ri-search-line search-icon"></i><input class="search-input" type="text" placeholder="' + t({pt:'Filtrar PVOs...', en:'Filter PVOs...', es:'Filtrar PVOs...'}) + '" oninput="filterPvos(this.value)"></div>';
+
+        var pvoHeaders = {
+            pt: ['#','Campo da Tabela','Campo do PVO','Disponível por BICC'],
+            en: ['#','Table Column','PVO Attribute','Available via BICC'],
+            es: ['#','Campo de Tabla','Campo del PVO','Disponible por BICC']
+        };
+        var ph = pvoHeaders[currentLang] || pvoHeaders['pt'];
+
+        pvosHtml += '<div id="pvos-groups">';
+        pvoOrder.forEach(function(key) {
+            var grp = pvoGroups[key];
+            var pvoFile = grp.pvo_name.toLowerCase() + '.html';
+            var pvoHref = (grp.module_code === m.module_code)
+                ? '../pvos/' + pvoFile
+                : '../../' + grp.module_code + '/pvos/' + pvoFile;
+            var biccCount = grp.rows.filter(function(r) { return r.bicc; }).length;
+
+            var grpSearchFields = grp.rows.map(function(r) { return r.column + ' ' + r.pvo_attr; }).join(' ');
+            pvosHtml += '<div class="card pvo-group" data-search="' + (grp.pvo_name + ' ' + grp.module_code + ' ' + grpSearchFields).toLowerCase() + '">' +
+                '<div class="card-header" style="cursor:pointer" onclick="this.parentElement.classList.toggle(\'collapsed\')">' +
+                '<div class="card-header-icon bg-purple"><i class="ri-database-2-line"></i></div>' +
+                '<div class="card-title"><a href="' + pvoHref + langParam() + '" class="wikilink" onclick="event.stopPropagation()">' + grp.pvo_name + '</a></div>' +
+                '<span class="pill pill-info">' + grp.module_code + '</span>' +
+                '<span class="card-badge pill-info" style="background:var(--info-light);color:var(--pill-info-text);border:1px solid var(--info-border)">' + grp.rows.length + ' attrs</span>' +
+                (biccCount ? '<span class="card-badge pill-success" style="background:var(--success-light);color:var(--pill-success-text);border:1px solid var(--success-border)">BICC ' + biccCount + '</span>' : '') +
+                '<i class="ri-arrow-down-s-line" style="font-size:1.2rem;color:var(--text-muted);margin-left:auto;transition:transform 0.2s"></i>' +
+                '</div>' +
+                '<div class="card-body pvo-group-body"><div class="table-wrapper"><table><thead><tr>';
+            ph.forEach(function(h, i) { pvosHtml += '<th' + (i === ph.length - 1 ? ' style="text-align:center"' : '') + '>' + h + '</th>'; });
+            pvosHtml += '</tr></thead><tbody>';
+            grp.rows.forEach(function(row, idx) {
+                var biccHtml = row.bicc
+                    ? '<span class="pill pill-success"><i class="ri-checkbox-circle-fill"></i> ' + t({pt:'Sim',en:'Yes',es:'Sí'}) + '</span>'
+                    : '<span class="pill pill-danger" style="opacity:0.5">' + t({pt:'Não',en:'No',es:'No'}) + '</span>';
+                pvosHtml += '<tr>' +
+                    '<td>' + (idx + 1) + '</td>' +
+                    '<td class="col-name">' + row.column + '</td>' +
+                    '<td class="col-name">' + row.pvo_attr + '</td>' +
+                    '<td style="text-align:center">' + biccHtml + '</td>' +
+                    '</tr>';
+            });
+            pvosHtml += '</tbody></table></div></div></div>';
+        });
+        pvosHtml += '</div>';
+    }
+    document.getElementById('tab-pvos').innerHTML = pvosHtml;
+
     // Footer
     document.getElementById('f-initials').textContent = m.author_initials || '';
     document.getElementById('f-name').textContent = m.author_name || '';
@@ -2600,6 +3055,16 @@ function filterColumns(query) {
     rows.forEach(function(row) {
         var text = row.getAttribute('data-search') || '';
         row.style.display = !q || text.indexOf(q) >= 0 ? '' : 'none';
+    });
+}
+
+/* ====== PVO FILTER ====== */
+function filterPvos(query) {
+    var q = query.toLowerCase().trim();
+    var groups = document.querySelectorAll('#pvos-groups .pvo-group');
+    groups.forEach(function(grp) {
+        var text = grp.getAttribute('data-search') || '';
+        grp.style.display = !q || text.indexOf(q) >= 0 ? '' : 'none';
     });
 }
 

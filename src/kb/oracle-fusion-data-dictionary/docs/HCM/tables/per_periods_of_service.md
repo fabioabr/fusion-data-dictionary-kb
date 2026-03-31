@@ -85,11 +85,11 @@ Esta tabela é utilizada nos seguintes processos:
 ## Relacionamentos
 
 ### Tabelas-pai (FK de entrada)
-- [[per_persons]] — via `PERSON_ID` (pessoa do perÃ­odo de serviÃ§o)
-- [[per_person_types]] — via `PERSON_TYPE_ID` (tipo de pessoa no perÃ­odo de serviÃ§o)
+- [[per_persons]] — via `PERSON_ID` (pessoa do período de serviço)
+- [[per_person_types]] — via `PERSON_TYPE_ID` (tipo de pessoa no período de serviço)
 
 ### Tabelas-filha (FK de saída)
-- [[per_all_assignments_m]] — via `PERIOD_OF_SERVICE_ID` (vÃ­nculos empregatÃ­cios do perÃ­odo de serviÃ§o)
+- [[per_all_assignments_m]] — via `PERIOD_OF_SERVICE_ID` (vínculos empregatícios do período de serviço)
 
 ---
 

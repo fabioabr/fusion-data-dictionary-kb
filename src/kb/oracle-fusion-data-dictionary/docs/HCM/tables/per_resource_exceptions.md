@@ -80,7 +80,7 @@ Esta tabela é utilizada nos seguintes processos:
 ## Relacionamentos
 
 ### Tabelas-pai (FK de entrada)
-- [[per_schedule_assignments]] — via `SCHEDULE_ID` (agenda de trabalho da exceÃ§Ã£o de recurso)
+- [[per_schedule_assignments]] — via `SCHEDULE_ID` (agenda de trabalho da exceção de recurso)
 
 ### Tabelas-filha (FK de saída)
 - Nenhuma relação direta identificada.

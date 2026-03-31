@@ -82,7 +82,7 @@ Esta tabela é utilizada nos seguintes processos:
 - [[per_grades_f]] — via `GRADE_ID` (grade salarial do step)
 
 ### Tabelas-filha (FK de saída)
-- [[per_grade_steps_f_tl]] — via `GRADE_STEP_ID` (traduÃ§Ãµes do step de grade salarial)
+- [[per_grade_steps_f_tl]] — via `GRADE_STEP_ID` (traduções do step de grade salarial)
 - [[per_assign_grade_steps_f]] — via `GRADE_STEP_ID` (assignments neste step)
 
 ---

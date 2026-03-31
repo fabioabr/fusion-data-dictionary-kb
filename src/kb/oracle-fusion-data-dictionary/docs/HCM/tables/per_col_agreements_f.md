@@ -83,7 +83,7 @@ Esta tabela é utilizada nos seguintes processos:
 - - Nenhuma FK direta — tabela raiz de acordos coletivos.
 
 ### Tabelas-filha (FK de saída)
-- [[per_col_agreements_f_tl]] — via `COL_AGREEMENT_ID` (traduÃ§Ãµes do acordo coletivo de trabalho)
+- [[per_col_agreements_f_tl]] — via `COL_AGREEMENT_ID` (traduções do acordo coletivo de trabalho)
 
 ---
 

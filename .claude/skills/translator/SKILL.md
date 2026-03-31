@@ -94,7 +94,7 @@ Ao ler o arquivo, classificar cada bloco em uma de duas categorias:
 Estes elementos **NUNCA** são enviados ao MCP. São copiados literalmente no `.i18n.md`:
 
 - **Front matter YAML** — bloco completo entre `---`
-- **Code blocks** — tudo entre `` ``` `` e `` ``` `` (SQL, YAML, JSON, etc.)
+- **Code blocks** — a **estrutura** entre `` ``` `` e `` ``` `` é intocável, **exceto comentários e prompts em pt-BR** (ver seção 3.5)
 - **Wikilinks** — `[[nome_da_tabela]]` preservados como estão
 - **Nomes de tabelas/colunas** — `AR_ADJUSTMENTS_ALL`, `CUSTOMER_TRX_ID`, `NUMBER(18)`, `VARCHAR2(30)`, etc.
 - **Tipos de dados SQL** — `NUMBER`, `DATE`, `TIMESTAMP`, `VARCHAR2(n)`, etc.
@@ -200,6 +200,64 @@ ENVIAR AO MCP:
 ```
 
 O MCP retorna a lista traduzida na mesma ordem numérica. O translator reinserere cada tradução no slot correspondente do template estrutural.
+
+#### 3.5. Comentários e prompts dentro de code blocks
+
+Code blocks são intocáveis **na estrutura** (sintaxe, indentação, palavras-chave), mas **comentários em linguagem natural** e **prompts/instruções em pt-BR** dentro deles **DEVEM ser traduzidos**.
+
+##### O que traduzir dentro de code blocks
+
+| Linguagem | Marcador de comentário | Exemplo |
+|-----------|----------------------|---------|
+| SQL | `--` | `-- Buscar todas as faturas em aberto` |
+| Python | `#` | `# Carregar dados do pipeline` |
+| YAML | `#` | `# Configuração do ambiente de produção` |
+| JavaScript/JSON | `//` | `// Inicializar conexão com o banco` |
+| Shell/Bash | `#` | `# Executar migração de dados` |
+
+##### Exemplos de tradução em code blocks
+
+```
+ORIGINAL (pt-BR):
+    ```sql
+    -- Buscar todas as faturas em aberto do período
+    SELECT invoice_id, amount
+    FROM ap_invoices_all
+    WHERE status = 'OPEN'
+    -- Filtrar por organização
+    AND org_id = :p_org_id
+    ```
+
+TRADUZIDO (EN):
+    ```sql
+    -- Fetch all open invoices for the period
+    SELECT invoice_id, amount
+    FROM ap_invoices_all
+    WHERE status = 'OPEN'
+    -- Filter by organization
+    AND org_id = :p_org_id
+    ```
+```
+
+##### Prompts e instruções antes/dentro de code blocks
+
+Textos instrucionais em pt-BR que antecedem ou estão embutidos em code blocks também são traduzíveis:
+
+```
+ORIGINAL:  "Execute a seguinte query para verificar os dados:"
+TRADUZIDO: "Run the following query to verify the data:"
+
+ORIGINAL:  "# Passo 1: Configurar variáveis de ambiente"
+TRADUZIDO: "# Step 1: Set up environment variables"
+```
+
+##### Regras para comentários em code blocks
+
+1. **Traduzir:** linhas que começam com marcador de comentário (`--`, `#`, `//`) seguido de texto em pt-BR
+2. **NÃO traduzir:** comentários que são identificadores técnicos (ex: `-- PK`, `# TODO`, `// FIXME`)
+3. **NÃO traduzir:** shebangs (`#!/bin/bash`), pragmas (`# -*- coding: utf-8 -*-`)
+4. **NÃO traduzir:** comentários que são nomes de tabelas/colunas (ex: `-- AR_ADJUSTMENTS_ALL`)
+5. **Preservar:** indentação e posição do comentário no bloco de código
 
 ### 4. Traduzir via MCP
 
@@ -330,7 +388,7 @@ O `prs-writer` deve:
 
 ### Extração (o que NÃO foi enviado ao MCP)
 - [ ] Front matter YAML **NÃO** enviado ao MCP
-- [ ] Code blocks (SQL, YAML, JSON) **NÃO** enviados ao MCP
+- [ ] Code blocks (SQL, YAML, JSON) — **estrutura** NÃO enviada ao MCP, mas **comentários em pt-BR** dentro deles SIM
 - [ ] Wikilinks (`[[...]]`) **NÃO** enviados ao MCP
 - [ ] Nomes de colunas/tabelas **NÃO** enviados ao MCP
 - [ ] Tipos SQL (`NUMBER(18)`, `VARCHAR2`) **NÃO** enviados ao MCP
@@ -346,7 +404,7 @@ O `prs-writer` deve:
 - [ ] Callouts Obsidian com marcadores (`> [!note]`, `> [!tip]`) preservados
 - [ ] Listas com marcadores e negrito de termos técnicos preservados
 - [ ] Wikilinks reinseridos nos mesmos pontos
-- [ ] Code blocks copiados intactos
+- [ ] Code blocks copiados com estrutura intacta e **comentários em pt-BR traduzidos**
 - [ ] Formatação Markdown (`**`, backticks) reaplicada
 
 ### Qualidade da tradução

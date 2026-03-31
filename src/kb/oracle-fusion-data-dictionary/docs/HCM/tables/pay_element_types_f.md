@@ -75,13 +75,13 @@ Esta tabela é utilizada nos seguintes processos:
 ## 🔗 Relacionamentos
 
 ### Tabelas-pai (FK de entrada)
-- [[pay_ele_classifications]] --- via `CLASSIFICATION_ID` (classificaÃ§Ã£o do tipo de elemento de folha)
+- [[pay_ele_classifications]] --- via `CLASSIFICATION_ID` (classificação do tipo de elemento de folha)
 
 ### Tabelas-filha (FK de saída)
 - [[pay_element_entries_f]] --- via `ELEMENT_TYPE_ID` (entradas de folha do tipo de elemento)
 - [[pay_input_values_f]] --- via `ELEMENT_TYPE_ID` (valores de entrada do tipo de elemento)
-- [[pay_element_types_tl]] --- via `ELEMENT_TYPE_ID` (traduÃ§Ãµes do tipo de elemento de folha)
-- [[pay_element_criteria]] --- via `ELEMENT_TYPE_ID` (critÃ©rios de elegibilidade do tipo de elemento)
+- [[pay_element_types_tl]] --- via `ELEMENT_TYPE_ID` (traduções do tipo de elemento de folha)
+- [[pay_element_criteria]] --- via `ELEMENT_TYPE_ID` (critérios de elegibilidade do tipo de elemento)
 
 ---
 

@@ -73,7 +73,7 @@ Esta tabela é utilizada nos seguintes processos:
 ## 🔗 Relacionamentos
 
 ### Tabelas-pai (FK de entrada)
-- [[pay_payroll_rel_actions]] --- via `PAYROLL_REL_ACTION_ID` (aÃ§Ã£o por relacionamento do resultado de cÃ¡lculo)
+- [[pay_payroll_rel_actions]] --- via `PAYROLL_REL_ACTION_ID` (ação por relacionamento do resultado de cálculo)
 - [[pay_element_types_f]] --- via `ELEMENT_TYPE_ID` (tipo de elemento calculado no resultado)
 
 ### Tabelas-filha (FK de saída)

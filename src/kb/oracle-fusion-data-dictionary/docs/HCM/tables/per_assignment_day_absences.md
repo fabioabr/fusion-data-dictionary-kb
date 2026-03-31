@@ -76,8 +76,8 @@ Esta tabela é utilizada nos seguintes processos:
 ## 🔗 Relacionamentos
 
 ### Tabelas-pai (FK de entrada)
-- [[per_absence_attendances]] — via `ABSENCE_ATTENDANCE_ID` (ausÃªncia detalhada por dia)
-- [[per_all_assignments_m]] — via `ASSIGNMENT_ID` (vÃ­nculo do dia de ausÃªncia)
+- [[per_absence_attendances]] — via `ABSENCE_ATTENDANCE_ID` (ausência detalhada por dia)
+- [[per_all_assignments_m]] — via `ASSIGNMENT_ID` (vínculo do dia de ausência)
 
 ### Tabelas-filha (FK de saída)
 - - Nenhuma tabela-filha direta identificada.

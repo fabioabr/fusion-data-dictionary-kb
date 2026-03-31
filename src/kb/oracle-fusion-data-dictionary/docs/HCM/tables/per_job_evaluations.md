@@ -75,7 +75,7 @@ Esta tabela é utilizada nos seguintes processos:
 ## 🔗 Relacionamentos
 
 ### Tabelas-pai (FK de entrada)
-- [[per_jobs_f]] — via `JOB_ID` (cargo avaliado na avaliaÃ§Ã£o de cargo)
+- [[per_jobs_f]] — via `JOB_ID` (cargo avaliado na avaliação de cargo)
 
 ### Tabelas-filha (FK de saída)
 - - Nenhuma tabela-filha direta identificada.

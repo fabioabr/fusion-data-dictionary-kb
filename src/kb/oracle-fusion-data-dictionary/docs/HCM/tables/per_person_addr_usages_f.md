@@ -82,8 +82,8 @@ Esta tabela é utilizada nos seguintes processos:
 ## Relacionamentos
 
 ### Tabelas-pai (FK de entrada)
-- [[per_persons]] — via `PERSON_ID` (pessoa do uso de endereÃ§o)
-- [[per_addresses_f]] — via `ADDRESS_ID` (endereÃ§o utilizado pela pessoa)
+- [[per_persons]] — via `PERSON_ID` (pessoa do uso de endereço)
+- [[per_addresses_f]] — via `ADDRESS_ID` (endereço utilizado pela pessoa)
 
 ### Tabelas-filha (FK de saída)
 - Nenhuma relação direta identificada.

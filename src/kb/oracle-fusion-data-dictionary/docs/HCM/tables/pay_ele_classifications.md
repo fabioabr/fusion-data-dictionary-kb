@@ -75,8 +75,8 @@ Esta tabela é utilizada nos seguintes processos:
 - --- Tabela de configuracao raiz (ou auto-referencia via `PARENT_CLASSIFICATION_ID`)
 
 ### Tabelas-filha (FK de saída)
-- [[pay_element_types_f]] --- via `CLASSIFICATION_ID` (tipos de elemento da classificaÃ§Ã£o)
-- [[pay_ele_classifications_tl]] --- via `CLASSIFICATION_ID` (traduÃ§Ãµes da classificaÃ§Ã£o de elemento)
+- [[pay_element_types_f]] --- via `CLASSIFICATION_ID` (tipos de elemento da classificação)
+- [[pay_ele_classifications_tl]] --- via `CLASSIFICATION_ID` (traduções da classificação de elemento)
 
 ---
 

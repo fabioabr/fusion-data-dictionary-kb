@@ -75,8 +75,8 @@ Esta tabela é utilizada nos seguintes processos:
 - --- Tabela de configuracao raiz
 
 ### Tabelas-filha (FK de saída)
-- [[pay_costs]] --- via `CONSOLIDATION_SET_ID` (custos agrupados no conjunto de consolidaÃ§Ã£o)
-- [[pay_pre_payments]] --- via `CONSOLIDATION_SET_ID` (prÃ©-pagamentos do conjunto de consolidaÃ§Ã£o)
+- [[pay_costs]] --- via `CONSOLIDATION_SET_ID` (custos agrupados no conjunto de consolidação)
+- [[pay_pre_payments]] --- via `CONSOLIDATION_SET_ID` (pré-pagamentos do conjunto de consolidação)
 
 ---
 

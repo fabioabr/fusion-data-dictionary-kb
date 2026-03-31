@@ -90,14 +90,14 @@ Esta tabela é utilizada nos seguintes processos:
 - - Nenhuma FK direta — tabela raiz de cadastro de pessoas.
 
 ### Tabelas-filha (FK de saída)
-- [[per_all_assignments_m]] — via `PERSON_ID` (vÃ­nculos empregatÃ­cios da pessoa)
-- [[per_addresses_f]] — via `PERSON_ID` (endereÃ§os do colaborador)
-- [[per_email_addresses]] — via `PERSON_ID` (endereÃ§os de e-mail do colaborador)
+- [[per_all_assignments_m]] — via `PERSON_ID` (vínculos empregatícios da pessoa)
+- [[per_addresses_f]] — via `PERSON_ID` (endereços do colaborador)
+- [[per_email_addresses]] — via `PERSON_ID` (endereços de e-mail do colaborador)
 - [[per_contact_relships_f]] — via `PERSON_ID` (contatos/dependentes)
 - [[per_citizenships]] — via `PERSON_ID` (cidadanias e nacionalidades do colaborador)
-- [[per_disabilities_f]] — via `PERSON_ID` (registros de deficiÃªncia do colaborador)
-- [[per_ethnicities]] — via `PERSON_ID` (informaÃ§Ãµes de etnia do colaborador)
-- [[per_drivers_licenses]] — via `PERSON_ID` (carteiras de habilitaÃ§Ã£o do colaborador)
+- [[per_disabilities_f]] — via `PERSON_ID` (registros de deficiência do colaborador)
+- [[per_ethnicities]] — via `PERSON_ID` (informações de etnia do colaborador)
+- [[per_drivers_licenses]] — via `PERSON_ID` (carteiras de habilitação do colaborador)
 
 ---
 

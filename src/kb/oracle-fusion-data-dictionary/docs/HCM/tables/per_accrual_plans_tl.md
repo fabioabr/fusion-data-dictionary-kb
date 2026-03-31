@@ -77,7 +77,7 @@ Esta tabela é utilizada nos seguintes processos:
 ## 🔗 Relacionamentos
 
 ### Tabelas-pai (FK de entrada)
-- [[per_accrual_plans_b]] — via `ACCRUAL_PLAN_ID` (tabela base do plano de acÃºmulo)
+- [[per_accrual_plans_b]] — via `ACCRUAL_PLAN_ID` (tabela base do plano de acúmulo)
 
 ### Tabelas-filha (FK de saída)
 - - Nenhuma tabela-filha — tabela terminal de tradução.

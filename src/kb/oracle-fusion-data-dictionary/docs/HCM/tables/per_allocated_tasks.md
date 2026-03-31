@@ -78,11 +78,11 @@ Esta tabela é utilizada nos seguintes processos:
 
 ### Tabelas-pai (FK de entrada)
 - [[per_allocated_checklists]] — via `ALLOCATED_CHECKLIST_ID` (checklist pai)
-- [[per_all_people_f]] — via `PERFORMER_PERSON_ID` (responsÃ¡vel pela execuÃ§Ã£o da tarefa)
+- [[per_all_people_f]] — via `PERFORMER_PERSON_ID` (responsável pela execução da tarefa)
 
 ### Tabelas-filha (FK de saída)
-- [[per_allocated_tasks_tl]] — via `ALLOCATED_TASK_ID` (traduÃ§Ãµes da tarefa alocada)
-- [[per_alloc_task_notifs]] — via `ALLOCATED_TASK_ID` (notificaÃ§Ãµes da tarefa alocada)
+- [[per_allocated_tasks_tl]] — via `ALLOCATED_TASK_ID` (traduções da tarefa alocada)
+- [[per_alloc_task_notifs]] — via `ALLOCATED_TASK_ID` (notificações da tarefa alocada)
 
 ---
 

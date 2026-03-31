@@ -262,6 +262,11 @@ pre.sql-code { margin: 0; padding: 16px; font-family: 'Courier New', monospace; 
 .bg-orange { background: var(--orange); } .bg-teal { background: var(--teal); }
 .bg-secondary { background: var(--secondary); }
 
+/* ====== PVO GROUPS ====== */
+.pvo-group .card-header .ri-arrow-down-s-line { transition: transform 0.2s; }
+.pvo-group.collapsed .pvo-group-body { display: none; }
+.pvo-group.collapsed .ri-arrow-down-s-line { transform: rotate(-90deg); }
+
 /* ====== RESPONSIVE ====== */
 @media (max-width: 768px) {
     .stats-grid { grid-template-columns: 1fr; }
@@ -489,7 +494,7 @@ const DATA = {
         "table": "per_all_people_f",
         "column": "PERFORMER_PERSON_ID",
         "desc": {
-          "pt": "responsÃ¡vel pela execuÃ§Ã£o da tarefa"
+          "pt": "responsável pela execução da tarefa"
         }
       }
     ],
@@ -498,14 +503,14 @@ const DATA = {
         "table": "per_allocated_tasks_tl",
         "column": "ALLOCATED_TASK_ID",
         "desc": {
-          "pt": "traduÃ§Ãµes da tarefa alocada"
+          "pt": "traduções da tarefa alocada"
         }
       },
       {
         "table": "per_alloc_task_notifs",
         "column": "ALLOCATED_TASK_ID",
         "desc": {
-          "pt": "notificaÃ§Ãµes da tarefa alocada"
+          "pt": "notificações da tarefa alocada"
         }
       }
     ]
@@ -1749,6 +1754,1219 @@ const DATA = {
     "PJF_PROJ_ELEMENTS_TL": "HCM",
     "PJF_WORK_TYPES_VL": "HCM"
   },
+  "related_pvos": [
+    {
+      "column": "ABS_ALLOCATED_CHECKLIST_ID",
+      "pvo_name": "AllocatedChecklistTasksPVO",
+      "pvo_attr": "AllocatedChecklistTasksPEOAbsAllocatedChecklistId",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "ACTION_TYPE",
+      "pvo_name": "AllocatedChecklistTasksPVO",
+      "pvo_attr": "AllocatedChecklistTasksPEOActionType",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "ACTUAL_END_DATE",
+      "pvo_name": "AllocatedChecklistTasksPVO",
+      "pvo_attr": "AllocatedChecklistTasksPEOActualEndDate",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "ACTUAL_START_DATE",
+      "pvo_name": "AllocatedChecklistTasksPVO",
+      "pvo_attr": "AllocatedChecklistTasksPEOActualStartDate",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "ALLOCATED_CHECKLIST_ID",
+      "pvo_name": "AllocatedChecklistTasksPVO",
+      "pvo_attr": "AllocatedChecklistTasksPEOAllocatedChecklistId",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "ALLOCATED_TASK_ID",
+      "pvo_name": "AllocatedChecklistTasksPVO",
+      "pvo_attr": "AllocatedTaskId",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "ATTRIBUTE1",
+      "pvo_name": "AllocatedChecklistTasksPVO",
+      "pvo_attr": "AllocatedChecklistTasksPEOAttribute1",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "ATTRIBUTE10",
+      "pvo_name": "AllocatedChecklistTasksPVO",
+      "pvo_attr": "AllocatedChecklistTasksPEOAttribute10",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "ATTRIBUTE11",
+      "pvo_name": "AllocatedChecklistTasksPVO",
+      "pvo_attr": "AllocatedChecklistTasksPEOAttribute11",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "ATTRIBUTE12",
+      "pvo_name": "AllocatedChecklistTasksPVO",
+      "pvo_attr": "AllocatedChecklistTasksPEOAttribute12",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "ATTRIBUTE13",
+      "pvo_name": "AllocatedChecklistTasksPVO",
+      "pvo_attr": "AllocatedChecklistTasksPEOAttribute13",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "ATTRIBUTE14",
+      "pvo_name": "AllocatedChecklistTasksPVO",
+      "pvo_attr": "AllocatedChecklistTasksPEOAttribute14",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "ATTRIBUTE15",
+      "pvo_name": "AllocatedChecklistTasksPVO",
+      "pvo_attr": "AllocatedChecklistTasksPEOAttribute15",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "ATTRIBUTE16",
+      "pvo_name": "AllocatedChecklistTasksPVO",
+      "pvo_attr": "AllocatedChecklistTasksPEOAttribute16",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "ATTRIBUTE17",
+      "pvo_name": "AllocatedChecklistTasksPVO",
+      "pvo_attr": "AllocatedChecklistTasksPEOAttribute17",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "ATTRIBUTE18",
+      "pvo_name": "AllocatedChecklistTasksPVO",
+      "pvo_attr": "AllocatedChecklistTasksPEOAttribute18",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "ATTRIBUTE19",
+      "pvo_name": "AllocatedChecklistTasksPVO",
+      "pvo_attr": "AllocatedChecklistTasksPEOAttribute19",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "ATTRIBUTE2",
+      "pvo_name": "AllocatedChecklistTasksPVO",
+      "pvo_attr": "AllocatedChecklistTasksPEOAttribute2",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "ATTRIBUTE20",
+      "pvo_name": "AllocatedChecklistTasksPVO",
+      "pvo_attr": "AllocatedChecklistTasksPEOAttribute20",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "ATTRIBUTE21",
+      "pvo_name": "AllocatedChecklistTasksPVO",
+      "pvo_attr": "AllocatedChecklistTasksPEOAttribute21",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "ATTRIBUTE22",
+      "pvo_name": "AllocatedChecklistTasksPVO",
+      "pvo_attr": "AllocatedChecklistTasksPEOAttribute22",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "ATTRIBUTE23",
+      "pvo_name": "AllocatedChecklistTasksPVO",
+      "pvo_attr": "AllocatedChecklistTasksPEOAttribute23",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "ATTRIBUTE24",
+      "pvo_name": "AllocatedChecklistTasksPVO",
+      "pvo_attr": "AllocatedChecklistTasksPEOAttribute24",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "ATTRIBUTE25",
+      "pvo_name": "AllocatedChecklistTasksPVO",
+      "pvo_attr": "AllocatedChecklistTasksPEOAttribute25",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "ATTRIBUTE26",
+      "pvo_name": "AllocatedChecklistTasksPVO",
+      "pvo_attr": "AllocatedChecklistTasksPEOAttribute26",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "ATTRIBUTE27",
+      "pvo_name": "AllocatedChecklistTasksPVO",
+      "pvo_attr": "AllocatedChecklistTasksPEOAttribute27",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "ATTRIBUTE28",
+      "pvo_name": "AllocatedChecklistTasksPVO",
+      "pvo_attr": "AllocatedChecklistTasksPEOAttribute28",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "ATTRIBUTE29",
+      "pvo_name": "AllocatedChecklistTasksPVO",
+      "pvo_attr": "AllocatedChecklistTasksPEOAttribute29",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "ATTRIBUTE3",
+      "pvo_name": "AllocatedChecklistTasksPVO",
+      "pvo_attr": "AllocatedChecklistTasksPEOAttribute3",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "ATTRIBUTE30",
+      "pvo_name": "AllocatedChecklistTasksPVO",
+      "pvo_attr": "AllocatedChecklistTasksPEOAttribute30",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "ATTRIBUTE4",
+      "pvo_name": "AllocatedChecklistTasksPVO",
+      "pvo_attr": "AllocatedChecklistTasksPEOAttribute4",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "ATTRIBUTE5",
+      "pvo_name": "AllocatedChecklistTasksPVO",
+      "pvo_attr": "AllocatedChecklistTasksPEOAttribute5",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "ATTRIBUTE6",
+      "pvo_name": "AllocatedChecklistTasksPVO",
+      "pvo_attr": "AllocatedChecklistTasksPEOAttribute6",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "ATTRIBUTE7",
+      "pvo_name": "AllocatedChecklistTasksPVO",
+      "pvo_attr": "AllocatedChecklistTasksPEOAttribute7",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "ATTRIBUTE8",
+      "pvo_name": "AllocatedChecklistTasksPVO",
+      "pvo_attr": "AllocatedChecklistTasksPEOAttribute8",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "ATTRIBUTE9",
+      "pvo_name": "AllocatedChecklistTasksPVO",
+      "pvo_attr": "AllocatedChecklistTasksPEOAttribute9",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "ATTRIBUTE_CATEGORY",
+      "pvo_name": "AllocatedChecklistTasksPVO",
+      "pvo_attr": "AllocatedChecklistTasksPEOAttributeCategory",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "ATTRIBUTE_DATE1",
+      "pvo_name": "AllocatedChecklistTasksPVO",
+      "pvo_attr": "AllocatedChecklistTasksPEOAttributeDate1",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "ATTRIBUTE_DATE10",
+      "pvo_name": "AllocatedChecklistTasksPVO",
+      "pvo_attr": "AllocatedChecklistTasksPEOAttributeDate10",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "ATTRIBUTE_DATE11",
+      "pvo_name": "AllocatedChecklistTasksPVO",
+      "pvo_attr": "AllocatedChecklistTasksPEOAttributeDate11",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "ATTRIBUTE_DATE12",
+      "pvo_name": "AllocatedChecklistTasksPVO",
+      "pvo_attr": "AllocatedChecklistTasksPEOAttributeDate12",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "ATTRIBUTE_DATE13",
+      "pvo_name": "AllocatedChecklistTasksPVO",
+      "pvo_attr": "AllocatedChecklistTasksPEOAttributeDate13",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "ATTRIBUTE_DATE14",
+      "pvo_name": "AllocatedChecklistTasksPVO",
+      "pvo_attr": "AllocatedChecklistTasksPEOAttributeDate14",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "ATTRIBUTE_DATE15",
+      "pvo_name": "AllocatedChecklistTasksPVO",
+      "pvo_attr": "AllocatedChecklistTasksPEOAttributeDate15",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "ATTRIBUTE_DATE2",
+      "pvo_name": "AllocatedChecklistTasksPVO",
+      "pvo_attr": "AllocatedChecklistTasksPEOAttributeDate2",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "ATTRIBUTE_DATE3",
+      "pvo_name": "AllocatedChecklistTasksPVO",
+      "pvo_attr": "AllocatedChecklistTasksPEOAttributeDate3",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "ATTRIBUTE_DATE4",
+      "pvo_name": "AllocatedChecklistTasksPVO",
+      "pvo_attr": "AllocatedChecklistTasksPEOAttributeDate4",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "ATTRIBUTE_DATE5",
+      "pvo_name": "AllocatedChecklistTasksPVO",
+      "pvo_attr": "AllocatedChecklistTasksPEOAttributeDate5",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "ATTRIBUTE_DATE6",
+      "pvo_name": "AllocatedChecklistTasksPVO",
+      "pvo_attr": "AllocatedChecklistTasksPEOAttributeDate6",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "ATTRIBUTE_DATE7",
+      "pvo_name": "AllocatedChecklistTasksPVO",
+      "pvo_attr": "AllocatedChecklistTasksPEOAttributeDate7",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "ATTRIBUTE_DATE8",
+      "pvo_name": "AllocatedChecklistTasksPVO",
+      "pvo_attr": "AllocatedChecklistTasksPEOAttributeDate8",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "ATTRIBUTE_DATE9",
+      "pvo_name": "AllocatedChecklistTasksPVO",
+      "pvo_attr": "AllocatedChecklistTasksPEOAttributeDate9",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "ATTRIBUTE_NUMBER1",
+      "pvo_name": "AllocatedChecklistTasksPVO",
+      "pvo_attr": "AllocatedChecklistTasksPEOAttributeNumber1",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "ATTRIBUTE_NUMBER10",
+      "pvo_name": "AllocatedChecklistTasksPVO",
+      "pvo_attr": "AllocatedChecklistTasksPEOAttributeNumber10",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "ATTRIBUTE_NUMBER11",
+      "pvo_name": "AllocatedChecklistTasksPVO",
+      "pvo_attr": "AllocatedChecklistTasksPEOAttributeNumber11",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "ATTRIBUTE_NUMBER12",
+      "pvo_name": "AllocatedChecklistTasksPVO",
+      "pvo_attr": "AllocatedChecklistTasksPEOAttributeNumber12",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "ATTRIBUTE_NUMBER13",
+      "pvo_name": "AllocatedChecklistTasksPVO",
+      "pvo_attr": "AllocatedChecklistTasksPEOAttributeNumber13",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "ATTRIBUTE_NUMBER14",
+      "pvo_name": "AllocatedChecklistTasksPVO",
+      "pvo_attr": "AllocatedChecklistTasksPEOAttributeNumber14",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "ATTRIBUTE_NUMBER15",
+      "pvo_name": "AllocatedChecklistTasksPVO",
+      "pvo_attr": "AllocatedChecklistTasksPEOAttributeNumber15",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "ATTRIBUTE_NUMBER16",
+      "pvo_name": "AllocatedChecklistTasksPVO",
+      "pvo_attr": "AllocatedChecklistTasksPEOAttributeNumber16",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "ATTRIBUTE_NUMBER17",
+      "pvo_name": "AllocatedChecklistTasksPVO",
+      "pvo_attr": "AllocatedChecklistTasksPEOAttributeNumber17",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "ATTRIBUTE_NUMBER18",
+      "pvo_name": "AllocatedChecklistTasksPVO",
+      "pvo_attr": "AllocatedChecklistTasksPEOAttributeNumber18",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "ATTRIBUTE_NUMBER19",
+      "pvo_name": "AllocatedChecklistTasksPVO",
+      "pvo_attr": "AllocatedChecklistTasksPEOAttributeNumber19",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "ATTRIBUTE_NUMBER2",
+      "pvo_name": "AllocatedChecklistTasksPVO",
+      "pvo_attr": "AllocatedChecklistTasksPEOAttributeNumber2",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "ATTRIBUTE_NUMBER20",
+      "pvo_name": "AllocatedChecklistTasksPVO",
+      "pvo_attr": "AllocatedChecklistTasksPEOAttributeNumber20",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "ATTRIBUTE_NUMBER3",
+      "pvo_name": "AllocatedChecklistTasksPVO",
+      "pvo_attr": "AllocatedChecklistTasksPEOAttributeNumber3",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "ATTRIBUTE_NUMBER4",
+      "pvo_name": "AllocatedChecklistTasksPVO",
+      "pvo_attr": "AllocatedChecklistTasksPEOAttributeNumber4",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "ATTRIBUTE_NUMBER5",
+      "pvo_name": "AllocatedChecklistTasksPVO",
+      "pvo_attr": "AllocatedChecklistTasksPEOAttributeNumber5",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "ATTRIBUTE_NUMBER6",
+      "pvo_name": "AllocatedChecklistTasksPVO",
+      "pvo_attr": "AllocatedChecklistTasksPEOAttributeNumber6",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "ATTRIBUTE_NUMBER7",
+      "pvo_name": "AllocatedChecklistTasksPVO",
+      "pvo_attr": "AllocatedChecklistTasksPEOAttributeNumber7",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "ATTRIBUTE_NUMBER8",
+      "pvo_name": "AllocatedChecklistTasksPVO",
+      "pvo_attr": "AllocatedChecklistTasksPEOAttributeNumber8",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "ATTRIBUTE_NUMBER9",
+      "pvo_name": "AllocatedChecklistTasksPVO",
+      "pvo_attr": "AllocatedChecklistTasksPEOAttributeNumber9",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "COMPLETED_BY",
+      "pvo_name": "AllocatedChecklistTasksPVO",
+      "pvo_attr": "AllocatedChecklistTasksPEOCompletedBy",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "COMPLETION_DATE",
+      "pvo_name": "AllocatedChecklistTasksPVO",
+      "pvo_attr": "AllocatedChecklistTasksPEOCompletionDate",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "CONTACT_DETAILS",
+      "pvo_name": "AllocatedChecklistTasksPVO",
+      "pvo_attr": "AllocatedChecklistTasksPEOContactDetails",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "CREATED_BY",
+      "pvo_name": "AllocatedChecklistTasksPVO",
+      "pvo_attr": "AllocatedChecklistTasksPEOCreatedBy",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "CREATION_DATE",
+      "pvo_name": "AllocatedChecklistTasksPVO",
+      "pvo_attr": "AllocatedChecklistTasksPEOCreationDate",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "DEF_ALLOCATION_DATE",
+      "pvo_name": "AllocatedChecklistTasksPVO",
+      "pvo_attr": "AllocatedChecklistTasksPEODefAllocationDate",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "DEFAULT_PERF_RESP_TYPE",
+      "pvo_name": "AllocatedChecklistTasksPVO",
+      "pvo_attr": "AllocatedChecklistTasksPEODefaultPerfRespType",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "DEPENDENT_ON_TASKS",
+      "pvo_name": "AllocatedChecklistTasksPVO",
+      "pvo_attr": "AllocatedChecklistTasksPEODependentOnTasks",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "DETAIL_ALLOC_CHECKLIST_ID",
+      "pvo_name": "AllocatedChecklistTasksPVO",
+      "pvo_attr": "AllocatedChecklistTasksPEODetailAllocChecklistId",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "DETAIL_CHECKLIST_ID",
+      "pvo_name": "AllocatedChecklistTasksPVO",
+      "pvo_attr": "AllocatedChecklistTasksPEODetailChecklistId",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "DOCUMENT_ENTITY_ID",
+      "pvo_name": "AllocatedChecklistTasksPVO",
+      "pvo_attr": "AllocatedChecklistTasksPEODocumentEntityId",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "DOCUMENT_TYPE_ID",
+      "pvo_name": "AllocatedChecklistTasksPVO",
+      "pvo_attr": "AllocatedChecklistTasksPEODocumentTypeId",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "ENTERPRISE_ID",
+      "pvo_name": "AllocatedChecklistTasksPVO",
+      "pvo_attr": "AllocatedChecklistTasksPEOEnterpriseId",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "ESIGN_TYPE",
+      "pvo_name": "AllocatedChecklistTasksPVO",
+      "pvo_attr": "AllocatedChecklistTasksPEOEsignType",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "EXPIRY_DAYS",
+      "pvo_name": "AllocatedChecklistTasksPVO",
+      "pvo_attr": "AllocatedChecklistTasksPEOExpiryDays",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "FLEX_CONTEXT_CODE",
+      "pvo_name": "AllocatedChecklistTasksPVO",
+      "pvo_attr": "AllocatedChecklistTasksPEOFlexContextCode",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "GENERATE_ATOM_FEED",
+      "pvo_name": "AllocatedChecklistTasksPVO",
+      "pvo_attr": "AllocatedChecklistTasksPEOGenerateAtomFeed",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "INFORMATION1",
+      "pvo_name": "AllocatedChecklistTasksPVO",
+      "pvo_attr": "AllocatedChecklistTasksPEOInformation1",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "INFORMATION10",
+      "pvo_name": "AllocatedChecklistTasksPVO",
+      "pvo_attr": "AllocatedChecklistTasksPEOInformation10",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "INFORMATION11",
+      "pvo_name": "AllocatedChecklistTasksPVO",
+      "pvo_attr": "AllocatedChecklistTasksPEOInformation11",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "INFORMATION12",
+      "pvo_name": "AllocatedChecklistTasksPVO",
+      "pvo_attr": "AllocatedChecklistTasksPEOInformation12",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "INFORMATION13",
+      "pvo_name": "AllocatedChecklistTasksPVO",
+      "pvo_attr": "AllocatedChecklistTasksPEOInformation13",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "INFORMATION14",
+      "pvo_name": "AllocatedChecklistTasksPVO",
+      "pvo_attr": "AllocatedChecklistTasksPEOInformation14",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "INFORMATION15",
+      "pvo_name": "AllocatedChecklistTasksPVO",
+      "pvo_attr": "AllocatedChecklistTasksPEOInformation15",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "INFORMATION16",
+      "pvo_name": "AllocatedChecklistTasksPVO",
+      "pvo_attr": "AllocatedChecklistTasksPEOInformation16",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "INFORMATION17",
+      "pvo_name": "AllocatedChecklistTasksPVO",
+      "pvo_attr": "AllocatedChecklistTasksPEOInformation17",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "INFORMATION18",
+      "pvo_name": "AllocatedChecklistTasksPVO",
+      "pvo_attr": "AllocatedChecklistTasksPEOInformation18",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "INFORMATION19",
+      "pvo_name": "AllocatedChecklistTasksPVO",
+      "pvo_attr": "AllocatedChecklistTasksPEOInformation19",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "INFORMATION2",
+      "pvo_name": "AllocatedChecklistTasksPVO",
+      "pvo_attr": "AllocatedChecklistTasksPEOInformation2",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "INFORMATION20",
+      "pvo_name": "AllocatedChecklistTasksPVO",
+      "pvo_attr": "AllocatedChecklistTasksPEOInformation20",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "INFORMATION21",
+      "pvo_name": "AllocatedChecklistTasksPVO",
+      "pvo_attr": "AllocatedChecklistTasksPEOInformation21",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "INFORMATION22",
+      "pvo_name": "AllocatedChecklistTasksPVO",
+      "pvo_attr": "AllocatedChecklistTasksPEOInformation22",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "INFORMATION23",
+      "pvo_name": "AllocatedChecklistTasksPVO",
+      "pvo_attr": "AllocatedChecklistTasksPEOInformation23",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "INFORMATION24",
+      "pvo_name": "AllocatedChecklistTasksPVO",
+      "pvo_attr": "AllocatedChecklistTasksPEOInformation24",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "INFORMATION25",
+      "pvo_name": "AllocatedChecklistTasksPVO",
+      "pvo_attr": "AllocatedChecklistTasksPEOInformation25",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "INFORMATION26",
+      "pvo_name": "AllocatedChecklistTasksPVO",
+      "pvo_attr": "AllocatedChecklistTasksPEOInformation26",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "INFORMATION27",
+      "pvo_name": "AllocatedChecklistTasksPVO",
+      "pvo_attr": "AllocatedChecklistTasksPEOInformation27",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "INFORMATION28",
+      "pvo_name": "AllocatedChecklistTasksPVO",
+      "pvo_attr": "AllocatedChecklistTasksPEOInformation28",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "INFORMATION29",
+      "pvo_name": "AllocatedChecklistTasksPVO",
+      "pvo_attr": "AllocatedChecklistTasksPEOInformation29",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "INFORMATION3",
+      "pvo_name": "AllocatedChecklistTasksPVO",
+      "pvo_attr": "AllocatedChecklistTasksPEOInformation3",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "INFORMATION30",
+      "pvo_name": "AllocatedChecklistTasksPVO",
+      "pvo_attr": "AllocatedChecklistTasksPEOInformation30",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "INFORMATION4",
+      "pvo_name": "AllocatedChecklistTasksPVO",
+      "pvo_attr": "AllocatedChecklistTasksPEOInformation4",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "INFORMATION5",
+      "pvo_name": "AllocatedChecklistTasksPVO",
+      "pvo_attr": "AllocatedChecklistTasksPEOInformation5",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "INFORMATION6",
+      "pvo_name": "AllocatedChecklistTasksPVO",
+      "pvo_attr": "AllocatedChecklistTasksPEOInformation6",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "INFORMATION7",
+      "pvo_name": "AllocatedChecklistTasksPVO",
+      "pvo_attr": "AllocatedChecklistTasksPEOInformation7",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "INFORMATION8",
+      "pvo_name": "AllocatedChecklistTasksPVO",
+      "pvo_attr": "AllocatedChecklistTasksPEOInformation8",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "INFORMATION9",
+      "pvo_name": "AllocatedChecklistTasksPVO",
+      "pvo_attr": "AllocatedChecklistTasksPEOInformation9",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "INFORMATION_CATEGORY",
+      "pvo_name": "AllocatedChecklistTasksPVO",
+      "pvo_attr": "AllocatedChecklistTasksPEOInformationCategory",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "LAST_UPDATE_DATE",
+      "pvo_name": "AllocatedChecklistTasksPVO",
+      "pvo_attr": "AllocatedChecklistTasksPEOLastUpdateDate",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "LAST_UPDATE_LOGIN",
+      "pvo_name": "AllocatedChecklistTasksPVO",
+      "pvo_attr": "AllocatedChecklistTasksPEOLastUpdateLogin",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "LAST_UPDATED_BY",
+      "pvo_name": "AllocatedChecklistTasksPVO",
+      "pvo_attr": "AllocatedChecklistTasksPEOLastUpdatedBy",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "MANDATORY_FLAG",
+      "pvo_name": "AllocatedChecklistTasksPVO",
+      "pvo_attr": "AllocatedChecklistTasksPEOMandatoryFlag",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "MEETING_OFFSET",
+      "pvo_name": "AllocatedChecklistTasksPVO",
+      "pvo_attr": "AllocatedChecklistTasksPEOMeetingOffset",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "MEETING_TIME",
+      "pvo_name": "AllocatedChecklistTasksPVO",
+      "pvo_attr": "AllocatedChecklistTasksPEOMeetingTime",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "NEXT_REMINDER_DATE",
+      "pvo_name": "AllocatedChecklistTasksPVO",
+      "pvo_attr": "AllocatedChecklistTasksPEONextReminderDate",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "OBJECT_VERSION_NUMBER",
+      "pvo_name": "AllocatedChecklistTasksPVO",
+      "pvo_attr": "AllocatedChecklistTasksPEOObjectVersionNumber",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "OWNER_RESP_TYPE",
+      "pvo_name": "AllocatedChecklistTasksPVO",
+      "pvo_attr": "AllocatedChecklistTasksPEOOwnerRespType",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "OWNER_RESP_TYPE_USERS",
+      "pvo_name": "AllocatedChecklistTasksPVO",
+      "pvo_attr": "AllocatedChecklistTasksPEOOwnerRespTypeUsers",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "PERFORMER_ORIG_SYS_ID",
+      "pvo_name": "AllocatedChecklistTasksPVO",
+      "pvo_attr": "AllocatedChecklistTasksPEOPerformerOrigSysId",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "PERFORMER_ORIG_SYSTEM",
+      "pvo_name": "AllocatedChecklistTasksPVO",
+      "pvo_attr": "AllocatedChecklistTasksPEOPerformerOrigSystem",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "PROCESSING_MODE",
+      "pvo_name": "AllocatedChecklistTasksPVO",
+      "pvo_attr": "AllocatedChecklistTasksPEOProcessingMode",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "QUESTIONNAIRE_ID",
+      "pvo_name": "AllocatedChecklistTasksPVO",
+      "pvo_attr": "AllocatedChecklistTasksPEOQuestionnaireId",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "REASSIGNED_BY",
+      "pvo_name": "AllocatedChecklistTasksPVO",
+      "pvo_attr": "AllocatedChecklistTasksPEOReassignedBy",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "REASSIGNED_DATE",
+      "pvo_name": "AllocatedChecklistTasksPVO",
+      "pvo_attr": "AllocatedChecklistTasksPEOReassignedDate",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "REMINDER_COUNT",
+      "pvo_name": "AllocatedChecklistTasksPVO",
+      "pvo_attr": "AllocatedChecklistTasksPEOReminderCount",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "REMINDER_DURATION",
+      "pvo_name": "AllocatedChecklistTasksPVO",
+      "pvo_attr": "AllocatedChecklistTasksPEOReminderDuration",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "REMINDER_RECURRENCE",
+      "pvo_name": "AllocatedChecklistTasksPVO",
+      "pvo_attr": "AllocatedChecklistTasksPEOReminderRecurrence",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "REMINDER_RELATIVE_TO",
+      "pvo_name": "AllocatedChecklistTasksPVO",
+      "pvo_attr": "AllocatedChecklistTasksPEOReminderRelativeTo",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "REMINDER_TEMPLATE_ID",
+      "pvo_name": "AllocatedChecklistTasksPVO",
+      "pvo_attr": "AllocatedChecklistTasksPEOReminderTemplateId",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "REOPEN_DATE",
+      "pvo_name": "AllocatedChecklistTasksPVO",
+      "pvo_attr": "AllocatedChecklistTasksPEOReopenDate",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "REOPENED_BY",
+      "pvo_name": "AllocatedChecklistTasksPVO",
+      "pvo_attr": "AllocatedChecklistTasksPEOReopenedBy",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "REPORT_PATH",
+      "pvo_name": "AllocatedChecklistTasksPVO",
+      "pvo_attr": "AllocatedChecklistTasksPEOReportPath",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "RESP_PERFORMER_AVAILABILITY",
+      "pvo_name": "AllocatedChecklistTasksPVO",
+      "pvo_attr": "AllocatedChecklistTasksPEORespPerformerAvailability",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "RESPONSIBILITY_TYPE",
+      "pvo_name": "AllocatedChecklistTasksPVO",
+      "pvo_attr": "AllocatedChecklistTasksPEOResponsibilityType",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "RESPONSIBILITY_TYPE_GUID",
+      "pvo_name": "AllocatedChecklistTasksPVO",
+      "pvo_attr": "AllocatedChecklistTasksPEOResponsibilityTypeGuid",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "SIGN_DATE",
+      "pvo_name": "AllocatedChecklistTasksPVO",
+      "pvo_attr": "AllocatedChecklistTasksPEOSignDate",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "SIGN_DOCUMENT",
+      "pvo_name": "AllocatedChecklistTasksPVO",
+      "pvo_attr": "AllocatedChecklistTasksPEOSignDocument",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "SIGN_TEMPLATE",
+      "pvo_name": "AllocatedChecklistTasksPVO",
+      "pvo_attr": "AllocatedChecklistTasksPEOSignTemplate",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "SIGNER_EMAIL",
+      "pvo_name": "AllocatedChecklistTasksPVO",
+      "pvo_attr": "AllocatedChecklistTasksPEOSignerEmail",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "SIGNER_NAME",
+      "pvo_name": "AllocatedChecklistTasksPVO",
+      "pvo_attr": "AllocatedChecklistTasksPEOSignerName",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "STATUS",
+      "pvo_name": "AllocatedChecklistTasksPVO",
+      "pvo_attr": "AllocatedChecklistTasksPEOStatus",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "TARGET_DURATION",
+      "pvo_name": "AllocatedChecklistTasksPVO",
+      "pvo_attr": "AllocatedChecklistTasksPEOTargetDuration",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "TARGET_DURATION_UOM",
+      "pvo_name": "AllocatedChecklistTasksPVO",
+      "pvo_attr": "AllocatedChecklistTasksPEOTargetDurationUom",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "TARGET_END_DATE",
+      "pvo_name": "AllocatedChecklistTasksPVO",
+      "pvo_attr": "AllocatedChecklistTasksPEOTargetEndDate",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "TARGET_START_DATE",
+      "pvo_name": "AllocatedChecklistTasksPVO",
+      "pvo_attr": "AllocatedChecklistTasksPEOTargetStartDate",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "TASK_ACTION_CODE",
+      "pvo_name": "AllocatedChecklistTasksPVO",
+      "pvo_attr": "AllocatedChecklistTasksPEOTaskActionCode",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "TASK_ACTION_ID",
+      "pvo_name": "AllocatedChecklistTasksPVO",
+      "pvo_attr": "AllocatedChecklistTasksPEOTaskActionId",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "TASK_COMMENTS",
+      "pvo_name": "AllocatedChecklistTasksPVO",
+      "pvo_attr": "AllocatedChecklistTasksPEOTaskComments",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "TASK_CONFIGURATION",
+      "pvo_name": "AllocatedChecklistTasksPVO",
+      "pvo_attr": "AllocatedChecklistTasksPEOTaskConfiguration",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "TASK_DELAY_DURATION",
+      "pvo_name": "AllocatedChecklistTasksPVO",
+      "pvo_attr": "AllocatedChecklistTasksPEOTaskDelayDuration",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "TASK_DELAY_DURATION_UOM",
+      "pvo_name": "AllocatedChecklistTasksPVO",
+      "pvo_attr": "AllocatedChecklistTasksPEOTaskDelayDurationUom",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "TASK_FEATURE1",
+      "pvo_name": "AllocatedChecklistTasksPVO",
+      "pvo_attr": "AllocatedChecklistTasksPEOTaskFeature1",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "TASK_IN_CHECKLIST_ID",
+      "pvo_name": "AllocatedChecklistTasksPVO",
+      "pvo_attr": "AllocatedChecklistTasksPEOTaskInChecklistId",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "TASK_INITIATOR",
+      "pvo_name": "AllocatedChecklistTasksPVO",
+      "pvo_attr": "AllocatedChecklistTasksPEOTaskInitiator",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "TASK_INITIATOR_PERSON_ID",
+      "pvo_name": "AllocatedChecklistTasksPVO",
+      "pvo_attr": "AllocatedChecklistTasksPEOTaskInitiatorPersonId",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "TASK_OWNER_PERSON_ID",
+      "pvo_name": "AllocatedChecklistTasksPVO",
+      "pvo_attr": "AllocatedChecklistTasksPEOTaskOwnerPersonId",
+      "module_code": "HCM",
+      "bicc": true
+    },
+    {
+      "column": "TASK_OWNER_USERNAME",
+      "pvo_name": "AllocatedChecklistTasksPVO",
+      "pvo_attr": "AllocatedChecklistTasksPEOTaskOwnerUsername",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "TASK_OWNERS",
+      "pvo_name": "AllocatedChecklistTasksPVO",
+      "pvo_attr": "AllocatedChecklistTasksPEOTaskOwners",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "TASK_PERCENTAGE_COMPLETE",
+      "pvo_name": "AllocatedChecklistTasksPVO",
+      "pvo_attr": "AllocatedChecklistTasksPEOTaskPercentageComplete",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "TASK_PERFORMERS",
+      "pvo_name": "AllocatedChecklistTasksPVO",
+      "pvo_attr": "AllocatedChecklistTasksPEOTaskPerformers",
+      "module_code": "HCM",
+      "bicc": false
+    },
+    {
+      "column": "TASK_SEQUENCE",
+      "pvo_name": "AllocatedChecklistTasksPVO",
+      "pvo_attr": "AllocatedChecklistTasksPEOTaskSequence",
+      "module_code": "HCM",
+      "bicc": false
+    }
+  ],
   "i18n": [
     {
       "id": 1,
@@ -2126,6 +3344,7 @@ const DATA = {
     <div id="tab-columns" class="tab-content"></div>
     <div id="tab-relationships" class="tab-content"></div>
     <div id="tab-sql" class="tab-content"></div>
+    <div id="tab-pvos" class="tab-content"></div>
 </main>
 
 <!-- ====== FOOTER ====== -->
@@ -2366,12 +3585,17 @@ function render() {
         overview: {pt:'Visão Geral', en:'Overview', es:'Visión General'},
         columns: {pt:'Colunas', en:'Columns', es:'Columnas'},
         relationships: {pt:'Relacionamentos', en:'Relationships', es:'Relaciones'},
-        sql: {pt:'SQL', en:'SQL', es:'SQL'}
+        sql: {pt:'SQL', en:'SQL', es:'SQL'},
+        pvos: {pt:'PVOs Relacionados', en:'Related PVOs', es:'PVOs Relacionados'}
     };
+    var _pvoNames = {};
+    (d.related_pvos || []).forEach(function(r) { _pvoNames[r.pvo_name] = 1; });
+    var pvosCount = Object.keys(_pvoNames).length;
     document.getElementById('tabs-nav').innerHTML =
         '<button class="tab-btn active" data-tab="overview" onclick="switchTab(\'overview\')"><i class="ri-information-line"></i> ' + t(tabLabels.overview) + '</button>' +
         '<button class="tab-btn" data-tab="columns" onclick="switchTab(\'columns\')"><i class="ri-table-line"></i> ' + t(tabLabels.columns) + ' <span class="tab-count">' + d.columns.length + '</span></button>' +
         '<button class="tab-btn" data-tab="relationships" onclick="switchTab(\'relationships\')"><i class="ri-git-branch-line"></i> ' + t(tabLabels.relationships) + ' <span class="tab-count">' + (d.relationships.parents.length + d.relationships.children.length) + '</span></button>' +
+        (pvosCount ? '<button class="tab-btn" data-tab="pvos" onclick="switchTab(\'pvos\')"><i class="ri-database-2-line"></i> ' + t(tabLabels.pvos) + ' <span class="tab-count">' + pvosCount + '</span></button>' : '') +
         '<button class="tab-btn" data-tab="sql" onclick="switchTab(\'sql\')"><i class="ri-code-s-slash-line"></i> SQL <span class="tab-count">' + d.sql.length + '</span></button>';
 
     // Tab 1: Overview
@@ -2381,6 +3605,7 @@ function render() {
         '<div class="stat-card"><div class="stat-card-icon bg-info"><i class="ri-links-line"></i></div><div class="stat-card-info"><div class="stat-card-number" style="color:var(--info)">' + d.relationships.parents.length + '</div><div class="stat-card-label">Foreign Keys</div></div></div>' +
         '<div class="stat-card"><div class="stat-card-icon bg-success"><i class="ri-shield-check-line"></i></div><div class="stat-card-info"><div class="stat-card-number" style="color:var(--success)">' + d.stats.avg_confidence + '%</div><div class="stat-card-label">' + t({pt:'Confiança Média', en:'Avg Confidence', es:'Confianza Promedio'}) + '</div></div></div>' +
         '<div class="stat-card"><div class="stat-card-icon bg-purple"><i class="ri-apps-line"></i></div><div class="stat-card-info"><div class="stat-card-number" style="color:var(--purple)">' + d.stats.categories + '</div><div class="stat-card-label">' + t({pt:'Categorias', en:'Categories', es:'Categorías'}) + '</div></div></div>' +
+        (pvosCount ? '<div class="stat-card"><div class="stat-card-icon bg-purple"><i class="ri-database-2-line"></i></div><div class="stat-card-info"><div class="stat-card-number" style="color:var(--purple)">' + pvosCount + '</div><div class="stat-card-label">PVOs</div></div></div>' : '') +
         '</div>';
 
     var overviewHtml = statsHtml +
@@ -2490,6 +3715,69 @@ function render() {
     }
     document.getElementById('tab-sql').innerHTML = sqlHtml;
 
+    // Tab 5: Related PVOs (grouped by PVO, table inside each group)
+    var pvosHtml = '';
+    if (d.related_pvos && d.related_pvos.length) {
+        // Group rows by pvo_name
+        var pvoGroups = {};
+        var pvoOrder = [];
+        d.related_pvos.forEach(function(row) {
+            var key = row.pvo_name;
+            if (!pvoGroups[key]) {
+                pvoGroups[key] = { pvo_name: row.pvo_name, module_code: row.module_code, rows: [] };
+                pvoOrder.push(key);
+            }
+            pvoGroups[key].rows.push(row);
+        });
+
+        pvosHtml += '<div class="search-container"><i class="ri-search-line search-icon"></i><input class="search-input" type="text" placeholder="' + t({pt:'Filtrar PVOs...', en:'Filter PVOs...', es:'Filtrar PVOs...'}) + '" oninput="filterPvos(this.value)"></div>';
+
+        var pvoHeaders = {
+            pt: ['#','Campo da Tabela','Campo do PVO','Disponível por BICC'],
+            en: ['#','Table Column','PVO Attribute','Available via BICC'],
+            es: ['#','Campo de Tabla','Campo del PVO','Disponible por BICC']
+        };
+        var ph = pvoHeaders[currentLang] || pvoHeaders['pt'];
+
+        pvosHtml += '<div id="pvos-groups">';
+        pvoOrder.forEach(function(key) {
+            var grp = pvoGroups[key];
+            var pvoFile = grp.pvo_name.toLowerCase() + '.html';
+            var pvoHref = (grp.module_code === m.module_code)
+                ? '../pvos/' + pvoFile
+                : '../../' + grp.module_code + '/pvos/' + pvoFile;
+            var biccCount = grp.rows.filter(function(r) { return r.bicc; }).length;
+
+            var grpSearchFields = grp.rows.map(function(r) { return r.column + ' ' + r.pvo_attr; }).join(' ');
+            pvosHtml += '<div class="card pvo-group" data-search="' + (grp.pvo_name + ' ' + grp.module_code + ' ' + grpSearchFields).toLowerCase() + '">' +
+                '<div class="card-header" style="cursor:pointer" onclick="this.parentElement.classList.toggle(\'collapsed\')">' +
+                '<div class="card-header-icon bg-purple"><i class="ri-database-2-line"></i></div>' +
+                '<div class="card-title"><a href="' + pvoHref + langParam() + '" class="wikilink" onclick="event.stopPropagation()">' + grp.pvo_name + '</a></div>' +
+                '<span class="pill pill-info">' + grp.module_code + '</span>' +
+                '<span class="card-badge pill-info" style="background:var(--info-light);color:var(--pill-info-text);border:1px solid var(--info-border)">' + grp.rows.length + ' attrs</span>' +
+                (biccCount ? '<span class="card-badge pill-success" style="background:var(--success-light);color:var(--pill-success-text);border:1px solid var(--success-border)">BICC ' + biccCount + '</span>' : '') +
+                '<i class="ri-arrow-down-s-line" style="font-size:1.2rem;color:var(--text-muted);margin-left:auto;transition:transform 0.2s"></i>' +
+                '</div>' +
+                '<div class="card-body pvo-group-body"><div class="table-wrapper"><table><thead><tr>';
+            ph.forEach(function(h, i) { pvosHtml += '<th' + (i === ph.length - 1 ? ' style="text-align:center"' : '') + '>' + h + '</th>'; });
+            pvosHtml += '</tr></thead><tbody>';
+            grp.rows.forEach(function(row, idx) {
+                var biccHtml = row.bicc
+                    ? '<span class="pill pill-success"><i class="ri-checkbox-circle-fill"></i> ' + t({pt:'Sim',en:'Yes',es:'Sí'}) + '</span>'
+                    : '<span class="pill pill-danger" style="opacity:0.5">' + t({pt:'Não',en:'No',es:'No'}) + '</span>';
+                pvosHtml += '<tr>' +
+                    '<td>' + (idx + 1) + '</td>' +
+                    '<td class="col-name">' + row.column + '</td>' +
+                    '<td class="col-name">' + row.pvo_attr + '</td>' +
+                    '<td style="text-align:center">' + biccHtml + '</td>' +
+                    '</tr>';
+            });
+            pvosHtml += '</tbody></table></div></div></div>';
+        });
+        pvosHtml += '</div>';
+    }
+    document.getElementById('tab-pvos').innerHTML = pvosHtml;
+
     // Footer
     document.getElementById('f-initials').textContent = m.author_initials || '';
     document.getElementById('f-name').textContent = m.author_name || '';
@@ -2536,6 +3824,16 @@ function filterColumns(query) {
     rows.forEach(function(row) {
         var text = row.getAttribute('data-search') || '';
         row.style.display = !q || text.indexOf(q) >= 0 ? '' : 'none';
+    });
+}
+
+/* ====== PVO FILTER ====== */
+function filterPvos(query) {
+    var q = query.toLowerCase().trim();
+    var groups = document.querySelectorAll('#pvos-groups .pvo-group');
+    groups.forEach(function(grp) {
+        var text = grp.getAttribute('data-search') || '';
+        grp.style.display = !q || text.indexOf(q) >= 0 ? '' : 'none';
     });
 }
 

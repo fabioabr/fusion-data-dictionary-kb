@@ -73,12 +73,12 @@ Esta tabela é utilizada nos seguintes processos:
 ## 🔗 Relacionamentos
 
 ### Tabelas-pai (FK de entrada)
-- [[pay_payroll_rel_actions]] --- via `PAYROLL_REL_ACTION_ID` (aÃ§Ã£o de folha que gerou o prÃ©-pagamento)
-- [[pay_person_pay_methods_f]] --- via `PERSONAL_PAYMENT_METHOD_ID` (mÃ©todo pessoal de pagamento utilizado)
-- [[pay_org_pay_methods_f]] --- via `ORG_PAYMENT_METHOD_ID` (mÃ©todo organizacional de pagamento utilizado)
+- [[pay_payroll_rel_actions]] --- via `PAYROLL_REL_ACTION_ID` (ação de folha que gerou o pré-pagamento)
+- [[pay_person_pay_methods_f]] --- via `PERSONAL_PAYMENT_METHOD_ID` (método pessoal de pagamento utilizado)
+- [[pay_org_pay_methods_f]] --- via `ORG_PAYMENT_METHOD_ID` (método organizacional de pagamento utilizado)
 
 ### Tabelas-filha (FK de saída)
-- [[pay_payment_costs]] --- via `PRE_PAYMENT_ID` (custos de pagamento do prÃ©-pagamento)
+- [[pay_payment_costs]] --- via `PRE_PAYMENT_ID` (custos de pagamento do pré-pagamento)
 
 ---
 

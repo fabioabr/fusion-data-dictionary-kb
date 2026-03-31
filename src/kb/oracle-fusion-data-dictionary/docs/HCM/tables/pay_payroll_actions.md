@@ -74,12 +74,12 @@ Esta tabela é utilizada nos seguintes processos:
 ## 🔗 Relacionamentos
 
 ### Tabelas-pai (FK de entrada)
-- [[pay_all_payrolls_f]] --- via `PAYROLL_ID` (folha de pagamento da aÃ§Ã£o processada)
-- [[pay_time_periods]] --- via `TIME_PERIOD_ID` (perÃ­odo de tempo da aÃ§Ã£o de folha)
+- [[pay_all_payrolls_f]] --- via `PAYROLL_ID` (folha de pagamento da ação processada)
+- [[pay_time_periods]] --- via `TIME_PERIOD_ID` (período de tempo da ação de folha)
 
 ### Tabelas-filha (FK de saída)
-- [[pay_payroll_rel_actions]] --- via `PAYROLL_ACTION_ID` (aÃ§Ãµes por relacionamento da aÃ§Ã£o de folha)
-- [[pay_run_results]] --- via `PAYROLL_ACTION_ID` (resultados de cÃ¡lculo da aÃ§Ã£o de folha)
+- [[pay_payroll_rel_actions]] --- via `PAYROLL_ACTION_ID` (ações por relacionamento da ação de folha)
+- [[pay_run_results]] --- via `PAYROLL_ACTION_ID` (resultados de cálculo da ação de folha)
 
 ---
 

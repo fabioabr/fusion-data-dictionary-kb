@@ -8,6 +8,7 @@ incorporando traducoes i18n e seguindo o design system do projeto.
 ## DoR (Definition of Ready)
 
 - Passo 06 concluido: `.i18n.json` com traducoes EN/ES preenchidas
+- Passo 06b concluido: `scripts/config/table_to_pvos_map.json` gerado (indice reverso tabela→PVOs)
 - Template HTML disponivel: `scripts/07-build-table-html/template_system_doc.html`
 - Playground de referencia: `.claude/behavior/ui_ux/playground.html`
 
@@ -17,12 +18,14 @@ incorporando traducoes i18n e seguindo o design system do projeto.
 - HTML e self-contained (CSS+JS inline, sem dependencias externas)
 - Seletor de idioma funcional (PT-BR / EN / ES)
 - Toggle tema claro/escuro funcional
-- Minimo 4 abas: Visao Geral, Colunas, Relacionamentos, SQL
+- 5 abas: Visao Geral, Colunas, Relacionamentos, PVOs Relacionados, SQL
+- Aba "PVOs Relacionados" exibe mapeamentos agrupados por PVO (condicional — so aparece se existirem PVOs)
 
 ## Entrada
 
 - `src/kb/oracle-fusion-data-dictionary/docs/{MODULE}/tables/{TABLE}.md`
 - `src/kb/oracle-fusion-data-dictionary/docs/{MODULE}/tables/{TABLE}.i18n.json`
+- `scripts/config/table_to_pvos_map.json` (indice reverso gerado pelo passo 06b)
 - `scripts/07-build-table-html/template_system_doc.html`
 
 ## Saida

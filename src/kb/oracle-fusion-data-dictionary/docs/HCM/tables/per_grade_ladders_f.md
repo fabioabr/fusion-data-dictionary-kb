@@ -81,7 +81,7 @@ Esta tabela é utilizada nos seguintes processos:
 - - Nenhuma FK direta — tabela raiz de escadas salariais.
 
 ### Tabelas-filha (FK de saída)
-- [[per_grade_ladders_f_tl]] — via `GRADE_LADDER_ID` (traduÃ§Ãµes da escala de grades salariais)
+- [[per_grade_ladders_f_tl]] — via `GRADE_LADDER_ID` (traduções da escala de grades salariais)
 - [[per_grades_in_ladders_f]] — via `GRADE_LADDER_ID` (grades na escada)
 
 ---

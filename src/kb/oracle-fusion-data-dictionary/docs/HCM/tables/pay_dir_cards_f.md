@@ -73,11 +73,11 @@ Esta tabela é utilizada nos seguintes processos:
 ## 🔗 Relacionamentos
 
 ### Tabelas-pai (FK de entrada)
-- [[pay_dir_card_definitions_vl]] --- via `DIR_CARD_DEFINITION_ID` (definiÃ§Ã£o do cartÃ£o de depÃ³sito direto)
-- [[pay_pay_relationships_f]] --- via `PAYROLL_RELATIONSHIP_ID` (relacionamento de folha do cartÃ£o de depÃ³sito)
+- [[pay_dir_card_definitions_vl]] --- via `DIR_CARD_DEFINITION_ID` (definição do cartão de depósito direto)
+- [[pay_pay_relationships_f]] --- via `PAYROLL_RELATIONSHIP_ID` (relacionamento de folha do cartão de depósito)
 
 ### Tabelas-filha (FK de saída)
-- [[pay_dir_card_components_f]] --- via `DIR_CARD_ID` (componentes do cartÃ£o de depÃ³sito direto)
+- [[pay_dir_card_components_f]] --- via `DIR_CARD_ID` (componentes do cartão de depósito direto)
 
 ---
 

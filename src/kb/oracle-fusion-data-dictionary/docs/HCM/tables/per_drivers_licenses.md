@@ -77,8 +77,8 @@ Esta tabela é utilizada nos seguintes processos:
 ## 🔗 Relacionamentos
 
 ### Tabelas-pai (FK de entrada)
-- [[per_all_people_f]] — via `PERSON_ID` (colaborador titular da carteira de habilitaÃ§Ã£o)
-- [[per_drivers_license_types]] — via `LICENSE_TYPE_ID` (tipo/categoria da carteira de habilitaÃ§Ã£o)
+- [[per_all_people_f]] — via `PERSON_ID` (colaborador titular da carteira de habilitação)
+- [[per_drivers_license_types]] — via `LICENSE_TYPE_ID` (tipo/categoria da carteira de habilitação)
 
 ### Tabelas-filha (FK de saída)
 - - Nenhuma tabela-filha direta identificada.

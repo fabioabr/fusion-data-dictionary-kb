@@ -82,12 +82,12 @@ Esta tabela é utilizada nos seguintes processos:
 ## Relacionamentos
 
 ### Tabelas-pai (FK de entrada)
-- [[hr_all_positions_f]] — via `POSITION_ID` (posiÃ§Ã£o da requisiÃ§Ã£o de interface)
-- [[hr_all_organization_units]] — via `ORGANIZATION_ID` (organizaÃ§Ã£o da requisiÃ§Ã£o de interface)
-- [[per_persons]] — via `HIRING_MANAGER_ID` (gestor responsÃ¡vel pela contrataÃ§Ã£o)
+- [[hr_all_positions_f]] — via `POSITION_ID` (posição da requisição de interface)
+- [[hr_all_organization_units]] — via `ORGANIZATION_ID` (organização da requisição de interface)
+- [[per_persons]] — via `HIRING_MANAGER_ID` (gestor responsável pela contratação)
 
 ### Tabelas-filha (FK de saída)
-- [[per_requisitions_interface_tl]] — via `REQUISITION_ID` (traduÃ§Ãµes da requisiÃ§Ã£o de interface)
+- [[per_requisitions_interface_tl]] — via `REQUISITION_ID` (traduções da requisição de interface)
 
 ---
 

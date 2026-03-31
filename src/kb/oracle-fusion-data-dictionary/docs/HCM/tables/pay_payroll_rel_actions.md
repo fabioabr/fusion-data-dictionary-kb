@@ -72,12 +72,12 @@ Esta tabela é utilizada nos seguintes processos:
 ## 🔗 Relacionamentos
 
 ### Tabelas-pai (FK de entrada)
-- [[pay_payroll_actions]] --- via `PAYROLL_ACTION_ID` (aÃ§Ã£o de folha principal do processamento)
+- [[pay_payroll_actions]] --- via `PAYROLL_ACTION_ID` (ação de folha principal do processamento)
 - [[pay_pay_relationships_f]] --- via `PAYROLL_RELATIONSHIP_ID` (relacionamento de folha processado)
 
 ### Tabelas-filha (FK de saída)
-- [[pay_costs]] --- via `PAYROLL_REL_ACTION_ID` (custos gerados pela aÃ§Ã£o de folha)
-- [[pay_run_results]] --- via `PAYROLL_REL_ACTION_ID` (resultados de cÃ¡lculo por relacionamento)
+- [[pay_costs]] --- via `PAYROLL_REL_ACTION_ID` (custos gerados pela ação de folha)
+- [[pay_run_results]] --- via `PAYROLL_REL_ACTION_ID` (resultados de cálculo por relacionamento)
 
 ---
 

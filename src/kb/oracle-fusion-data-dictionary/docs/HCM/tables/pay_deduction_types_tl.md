@@ -71,7 +71,7 @@ Esta tabela é utilizada nos seguintes processos:
 ## 🔗 Relacionamentos
 
 ### Tabelas-pai (FK de entrada)
-- [[pay_deduction_types]] --- via `DEDUCTION_TYPE_ID` (tabela base do tipo de deduÃ§Ã£o)
+- [[pay_deduction_types]] --- via `DEDUCTION_TYPE_ID` (tabela base do tipo de dedução)
 
 ### Tabelas-filha (FK de saída)
 - --- Tabela de traducao, sem filhas

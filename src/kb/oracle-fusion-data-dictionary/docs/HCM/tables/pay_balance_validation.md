@@ -72,7 +72,7 @@ Esta tabela é utilizada nos seguintes processos:
 ## 🔗 Relacionamentos
 
 ### Tabelas-pai (FK de entrada)
-- [[pay_balance_dimensions]] --- via `BALANCE_DIMENSION_ID` (dimensÃ£o de saldo validada)
+- [[pay_balance_dimensions]] --- via `BALANCE_DIMENSION_ID` (dimensão de saldo validada)
 
 ### Tabelas-filha (FK de saída)
 - --- Tabela de validacao, sem filhas conhecidas

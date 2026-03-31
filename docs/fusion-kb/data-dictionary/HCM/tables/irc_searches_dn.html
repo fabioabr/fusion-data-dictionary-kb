@@ -262,6 +262,11 @@ pre.sql-code { margin: 0; padding: 16px; font-family: 'Courier New', monospace; 
 .bg-orange { background: var(--orange); } .bg-teal { background: var(--teal); }
 .bg-secondary { background: var(--secondary); }
 
+/* ====== PVO GROUPS ====== */
+.pvo-group .card-header .ri-arrow-down-s-line { transition: transform 0.2s; }
+.pvo-group.collapsed .pvo-group-body { display: none; }
+.pvo-group.collapsed .ri-arrow-down-s-line { transform: rotate(-90deg); }
+
 /* ====== RESPONSIVE ====== */
 @media (max-width: 768px) {
     .stats-grid { grid-template-columns: 1fr; }
@@ -1670,6 +1675,540 @@ const DATA = {
     "PJF_PROJ_ELEMENTS_TL": "HCM",
     "PJF_WORK_TYPES_VL": "HCM"
   },
+  "related_pvos": [
+    {
+      "column": "CREATED_BY",
+      "pvo_name": "SearchPVO",
+      "pvo_attr": "SearchDNPEOCreatedBy",
+      "module_code": "PO",
+      "bicc": false
+    },
+    {
+      "column": "CREATION_DATE",
+      "pvo_name": "SearchPVO",
+      "pvo_attr": "SearchDNPEOCreationDate",
+      "module_code": "PO",
+      "bicc": false
+    },
+    {
+      "column": "FILTER_ASSESSMENT_PACKAGE",
+      "pvo_name": "SearchPVO",
+      "pvo_attr": "SearchDNPEOFilterAssessmentPackage",
+      "module_code": "PO",
+      "bicc": true
+    },
+    {
+      "column": "FILTER_ASSESSMENT_PERCENTILE",
+      "pvo_name": "SearchPVO",
+      "pvo_attr": "SearchDNPEOFilterAssessmentPercentile",
+      "module_code": "PO",
+      "bicc": true
+    },
+    {
+      "column": "FILTER_ASSESSMENT_RESULT",
+      "pvo_name": "SearchPVO",
+      "pvo_attr": "SearchDNPEOFilterAssessmentResult",
+      "module_code": "PO",
+      "bicc": true
+    },
+    {
+      "column": "FILTER_BASIC_INFO",
+      "pvo_name": "SearchPVO",
+      "pvo_attr": "SearchDNPEOFilterBasicInfo",
+      "module_code": "PO",
+      "bicc": true
+    },
+    {
+      "column": "FILTER_CANDIDATE_TYPE",
+      "pvo_name": "SearchPVO",
+      "pvo_attr": "SearchDNPEOFilterCandidateType",
+      "module_code": "PO",
+      "bicc": true
+    },
+    {
+      "column": "FILTER_COMPANIES",
+      "pvo_name": "SearchPVO",
+      "pvo_attr": "SearchDNPEOFilterCompanies",
+      "module_code": "PO",
+      "bicc": true
+    },
+    {
+      "column": "FILTER_DEGREES",
+      "pvo_name": "SearchPVO",
+      "pvo_attr": "SearchDNPEOFilterDegrees",
+      "module_code": "PO",
+      "bicc": true
+    },
+    {
+      "column": "FILTER_EVENT",
+      "pvo_name": "SearchPVO",
+      "pvo_attr": "SearchDNPEOFilterEvent",
+      "module_code": "PO",
+      "bicc": false
+    },
+    {
+      "column": "FILTER_JOB",
+      "pvo_name": "SearchPVO",
+      "pvo_attr": "SearchDNPEOFilterJob",
+      "module_code": "PO",
+      "bicc": true
+    },
+    {
+      "column": "FILTER_LABEL",
+      "pvo_name": "SearchPVO",
+      "pvo_attr": "SearchDNPEOFilterSearchByLabel",
+      "module_code": "PO",
+      "bicc": false
+    },
+    {
+      "column": "FILTER_LANGUAGE",
+      "pvo_name": "SearchPVO",
+      "pvo_attr": "SearchDNPEOFilterLanguage",
+      "module_code": "PO",
+      "bicc": true
+    },
+    {
+      "column": "FILTER_LAST_UPDATED_DATE",
+      "pvo_name": "SearchPVO",
+      "pvo_attr": "SearchDNPEOFilterLastUpdatedDate",
+      "module_code": "PO",
+      "bicc": true
+    },
+    {
+      "column": "FILTER_LICENSE",
+      "pvo_name": "SearchPVO",
+      "pvo_attr": "SearchDNPEOFilterLicense",
+      "module_code": "PO",
+      "bicc": true
+    },
+    {
+      "column": "FILTER_LOCATIONS",
+      "pvo_name": "SearchPVO",
+      "pvo_attr": "SearchDNPEOFilterLocations",
+      "module_code": "PO",
+      "bicc": true
+    },
+    {
+      "column": "FILTER_OPT_IN_MKT_EMAILS_PREF",
+      "pvo_name": "SearchPVO",
+      "pvo_attr": "SearchDNPEOFilterSearchByOptInMktEmailPref",
+      "module_code": "PO",
+      "bicc": false
+    },
+    {
+      "column": "FILTER_POOL",
+      "pvo_name": "SearchPVO",
+      "pvo_attr": "SearchDNPEOFilterPool",
+      "module_code": "PO",
+      "bicc": true
+    },
+    {
+      "column": "FILTER_REHIRE_RECOMMENDATION",
+      "pvo_name": "SearchPVO",
+      "pvo_attr": "SearchDNPEOFilterRehireRecommendation",
+      "module_code": "PO",
+      "bicc": true
+    },
+    {
+      "column": "FILTER_REQUISITION",
+      "pvo_name": "SearchPVO",
+      "pvo_attr": "SearchDNPEOFilterRequisition",
+      "module_code": "PO",
+      "bicc": false
+    },
+    {
+      "column": "FILTER_SKILL",
+      "pvo_name": "SearchPVO",
+      "pvo_attr": "SearchDNPEOFilterSkill",
+      "module_code": "PO",
+      "bicc": false
+    },
+    {
+      "column": "FILTER_SOURCE",
+      "pvo_name": "SearchPVO",
+      "pvo_attr": "SearchDNPEOFilterSource",
+      "module_code": "PO",
+      "bicc": true
+    },
+    {
+      "column": "FILTER_SOURCE_MEDIUM",
+      "pvo_name": "SearchPVO",
+      "pvo_attr": "SearchDNPEOFilterSourceMedium",
+      "module_code": "PO",
+      "bicc": true
+    },
+    {
+      "column": "FILTER_YEARS_OF_EXP",
+      "pvo_name": "SearchPVO",
+      "pvo_attr": "SearchDNPEOFilterYearsOfExp",
+      "module_code": "PO",
+      "bicc": true
+    },
+    {
+      "column": "LAST_UPDATE_DATE",
+      "pvo_name": "SearchPVO",
+      "pvo_attr": "SearchDNPEOLastUpdateDate",
+      "module_code": "PO",
+      "bicc": false
+    },
+    {
+      "column": "LAST_UPDATE_LOGIN",
+      "pvo_name": "SearchPVO",
+      "pvo_attr": "SearchDNPEOLastUpdateLogin",
+      "module_code": "PO",
+      "bicc": false
+    },
+    {
+      "column": "LAST_UPDATED_BY",
+      "pvo_name": "SearchPVO",
+      "pvo_attr": "SearchDNPEOLastUpdatedBy",
+      "module_code": "PO",
+      "bicc": false
+    },
+    {
+      "column": "OBJECT_VERSION_NUMBER",
+      "pvo_name": "SearchPVO",
+      "pvo_attr": "SearchDNPEOObjectVersionNumber",
+      "module_code": "PO",
+      "bicc": false
+    },
+    {
+      "column": "PRECRITERIA_CAND_DETAILS",
+      "pvo_name": "SearchPVO",
+      "pvo_attr": "SearchDNPEOPrecriteriaCandDetails",
+      "module_code": "PO",
+      "bicc": true
+    },
+    {
+      "column": "PRECRITERIA_COMPANY",
+      "pvo_name": "SearchPVO",
+      "pvo_attr": "SearchDNPEOPrecriteriaCompany",
+      "module_code": "PO",
+      "bicc": true
+    },
+    {
+      "column": "PRECRITERIA_EDUCATION",
+      "pvo_name": "SearchPVO",
+      "pvo_attr": "SearchDNPEOPrecriteriaEducation",
+      "module_code": "PO",
+      "bicc": true
+    },
+    {
+      "column": "PRECRITERIA_EXPERIENCE",
+      "pvo_name": "SearchPVO",
+      "pvo_attr": "SearchDNPEOPrecriteriaExperience",
+      "module_code": "PO",
+      "bicc": true
+    },
+    {
+      "column": "PRECRITERIA_LOCATION",
+      "pvo_name": "SearchPVO",
+      "pvo_attr": "SearchDNPEOPrecriteriaLocation",
+      "module_code": "PO",
+      "bicc": true
+    },
+    {
+      "column": "SEARCH_BY_EMAIL_FLAG",
+      "pvo_name": "SearchPVO",
+      "pvo_attr": "SearchDNPEOFilterSearchByEmailFlag",
+      "module_code": "PO",
+      "bicc": false
+    },
+    {
+      "column": "SEARCH_BY_PHONE_FLAG",
+      "pvo_name": "SearchPVO",
+      "pvo_attr": "SearchDNPEOFilterSearchByPhoneFlag",
+      "module_code": "PO",
+      "bicc": false
+    },
+    {
+      "column": "SEARCH_ID",
+      "pvo_name": "SearchPVO",
+      "pvo_attr": "SearchDNPEOSearchId",
+      "module_code": "PO",
+      "bicc": false
+    },
+    {
+      "column": "SEARCH_KEYWORDS",
+      "pvo_name": "SearchPVO",
+      "pvo_attr": "SearchDNPEOSearchKeywords",
+      "module_code": "PO",
+      "bicc": true
+    },
+    {
+      "column": "SEARCHDN_ID",
+      "pvo_name": "SearchPVO",
+      "pvo_attr": "SearchdnId",
+      "module_code": "PO",
+      "bicc": false
+    },
+    {
+      "column": "CREATED_BY",
+      "pvo_name": "SearchResultPVO",
+      "pvo_attr": "SearchDNPEOCreatedBy",
+      "module_code": "PO",
+      "bicc": false
+    },
+    {
+      "column": "CREATION_DATE",
+      "pvo_name": "SearchResultPVO",
+      "pvo_attr": "SearchDNPEOCreationDate",
+      "module_code": "PO",
+      "bicc": false
+    },
+    {
+      "column": "FILTER_ASSESSMENT_PACKAGE",
+      "pvo_name": "SearchResultPVO",
+      "pvo_attr": "SearchDNPEOFilterAssessmentPackage",
+      "module_code": "PO",
+      "bicc": true
+    },
+    {
+      "column": "FILTER_ASSESSMENT_PERCENTILE",
+      "pvo_name": "SearchResultPVO",
+      "pvo_attr": "SearchDNPEOFilterAssessmentPercentile",
+      "module_code": "PO",
+      "bicc": true
+    },
+    {
+      "column": "FILTER_ASSESSMENT_RESULT",
+      "pvo_name": "SearchResultPVO",
+      "pvo_attr": "SearchDNPEOFilterAssessmentResult",
+      "module_code": "PO",
+      "bicc": true
+    },
+    {
+      "column": "FILTER_BASIC_INFO",
+      "pvo_name": "SearchResultPVO",
+      "pvo_attr": "SearchDNPEOFilterBasicInfo",
+      "module_code": "PO",
+      "bicc": true
+    },
+    {
+      "column": "FILTER_CANDIDATE_TYPE",
+      "pvo_name": "SearchResultPVO",
+      "pvo_attr": "SearchDNPEOFilterCandidateType",
+      "module_code": "PO",
+      "bicc": true
+    },
+    {
+      "column": "FILTER_COMPANIES",
+      "pvo_name": "SearchResultPVO",
+      "pvo_attr": "SearchDNPEOFilterCompanies",
+      "module_code": "PO",
+      "bicc": true
+    },
+    {
+      "column": "FILTER_DEGREES",
+      "pvo_name": "SearchResultPVO",
+      "pvo_attr": "SearchDNPEOFilterDegrees",
+      "module_code": "PO",
+      "bicc": true
+    },
+    {
+      "column": "FILTER_EVENT",
+      "pvo_name": "SearchResultPVO",
+      "pvo_attr": "SearchDNPEOFilterEvent",
+      "module_code": "PO",
+      "bicc": false
+    },
+    {
+      "column": "FILTER_JOB",
+      "pvo_name": "SearchResultPVO",
+      "pvo_attr": "SearchDNPEOFilterJob",
+      "module_code": "PO",
+      "bicc": true
+    },
+    {
+      "column": "FILTER_LABEL",
+      "pvo_name": "SearchResultPVO",
+      "pvo_attr": "SearchDNPEOFilterSearchByLabel",
+      "module_code": "PO",
+      "bicc": false
+    },
+    {
+      "column": "FILTER_LANGUAGE",
+      "pvo_name": "SearchResultPVO",
+      "pvo_attr": "SearchDNPEOFilterLanguage",
+      "module_code": "PO",
+      "bicc": true
+    },
+    {
+      "column": "FILTER_LAST_UPDATED_DATE",
+      "pvo_name": "SearchResultPVO",
+      "pvo_attr": "SearchDNPEOFilterLastUpdatedDate",
+      "module_code": "PO",
+      "bicc": true
+    },
+    {
+      "column": "FILTER_LICENSE",
+      "pvo_name": "SearchResultPVO",
+      "pvo_attr": "SearchDNPEOFilterLicense",
+      "module_code": "PO",
+      "bicc": true
+    },
+    {
+      "column": "FILTER_LOCATIONS",
+      "pvo_name": "SearchResultPVO",
+      "pvo_attr": "SearchDNPEOFilterLocations",
+      "module_code": "PO",
+      "bicc": true
+    },
+    {
+      "column": "FILTER_OPT_IN_MKT_EMAILS_PREF",
+      "pvo_name": "SearchResultPVO",
+      "pvo_attr": "SearchDNPEOFilterSearchByOptInMktEmailPref",
+      "module_code": "PO",
+      "bicc": false
+    },
+    {
+      "column": "FILTER_POOL",
+      "pvo_name": "SearchResultPVO",
+      "pvo_attr": "SearchDNPEOFilterPool",
+      "module_code": "PO",
+      "bicc": true
+    },
+    {
+      "column": "FILTER_REHIRE_RECOMMENDATION",
+      "pvo_name": "SearchResultPVO",
+      "pvo_attr": "SearchDNPEOFilterRehireRecommendation",
+      "module_code": "PO",
+      "bicc": true
+    },
+    {
+      "column": "FILTER_REQUISITION",
+      "pvo_name": "SearchResultPVO",
+      "pvo_attr": "SearchDNPEOFilterRequisition",
+      "module_code": "PO",
+      "bicc": false
+    },
+    {
+      "column": "FILTER_SKILL",
+      "pvo_name": "SearchResultPVO",
+      "pvo_attr": "SearchDNPEOFilterSkill",
+      "module_code": "PO",
+      "bicc": false
+    },
+    {
+      "column": "FILTER_SOURCE",
+      "pvo_name": "SearchResultPVO",
+      "pvo_attr": "SearchDNPEOFilterSource",
+      "module_code": "PO",
+      "bicc": true
+    },
+    {
+      "column": "FILTER_SOURCE_MEDIUM",
+      "pvo_name": "SearchResultPVO",
+      "pvo_attr": "SearchDNPEOFilterSourceMedium",
+      "module_code": "PO",
+      "bicc": true
+    },
+    {
+      "column": "FILTER_YEARS_OF_EXP",
+      "pvo_name": "SearchResultPVO",
+      "pvo_attr": "SearchDNPEOFilterYearsOfExp",
+      "module_code": "PO",
+      "bicc": true
+    },
+    {
+      "column": "LAST_UPDATE_DATE",
+      "pvo_name": "SearchResultPVO",
+      "pvo_attr": "SearchDNPEOLastUpdateDate",
+      "module_code": "PO",
+      "bicc": false
+    },
+    {
+      "column": "LAST_UPDATE_LOGIN",
+      "pvo_name": "SearchResultPVO",
+      "pvo_attr": "SearchDNPEOLastUpdateLogin",
+      "module_code": "PO",
+      "bicc": false
+    },
+    {
+      "column": "LAST_UPDATED_BY",
+      "pvo_name": "SearchResultPVO",
+      "pvo_attr": "SearchDNPEOLastUpdatedBy",
+      "module_code": "PO",
+      "bicc": false
+    },
+    {
+      "column": "OBJECT_VERSION_NUMBER",
+      "pvo_name": "SearchResultPVO",
+      "pvo_attr": "SearchDNPEOObjectVersionNumber",
+      "module_code": "PO",
+      "bicc": false
+    },
+    {
+      "column": "PRECRITERIA_CAND_DETAILS",
+      "pvo_name": "SearchResultPVO",
+      "pvo_attr": "SearchDNPEOPrecriteriaCandDetails",
+      "module_code": "PO",
+      "bicc": true
+    },
+    {
+      "column": "PRECRITERIA_COMPANY",
+      "pvo_name": "SearchResultPVO",
+      "pvo_attr": "SearchDNPEOPrecriteriaCompany",
+      "module_code": "PO",
+      "bicc": true
+    },
+    {
+      "column": "PRECRITERIA_EDUCATION",
+      "pvo_name": "SearchResultPVO",
+      "pvo_attr": "SearchDNPEOPrecriteriaEducation",
+      "module_code": "PO",
+      "bicc": true
+    },
+    {
+      "column": "PRECRITERIA_EXPERIENCE",
+      "pvo_name": "SearchResultPVO",
+      "pvo_attr": "SearchDNPEOPrecriteriaExperience",
+      "module_code": "PO",
+      "bicc": true
+    },
+    {
+      "column": "PRECRITERIA_LOCATION",
+      "pvo_name": "SearchResultPVO",
+      "pvo_attr": "SearchDNPEOPrecriteriaLocation",
+      "module_code": "PO",
+      "bicc": true
+    },
+    {
+      "column": "SEARCH_BY_EMAIL_FLAG",
+      "pvo_name": "SearchResultPVO",
+      "pvo_attr": "SearchDNPEOFilterSearchByEmailFlag",
+      "module_code": "PO",
+      "bicc": false
+    },
+    {
+      "column": "SEARCH_BY_PHONE_FLAG",
+      "pvo_name": "SearchResultPVO",
+      "pvo_attr": "SearchDNPEOFilterSearchByPhoneFlag",
+      "module_code": "PO",
+      "bicc": false
+    },
+    {
+      "column": "SEARCH_ID",
+      "pvo_name": "SearchResultPVO",
+      "pvo_attr": "SearchDNPEOSearchId",
+      "module_code": "PO",
+      "bicc": false
+    },
+    {
+      "column": "SEARCH_KEYWORDS",
+      "pvo_name": "SearchResultPVO",
+      "pvo_attr": "SearchDNPEOSearchKeywords",
+      "module_code": "PO",
+      "bicc": true
+    },
+    {
+      "column": "SEARCHDN_ID",
+      "pvo_name": "SearchResultPVO",
+      "pvo_attr": "SearchdnId",
+      "module_code": "PO",
+      "bicc": false
+    }
+  ],
   "i18n": [
     {
       "id": 1,
@@ -1987,6 +2526,7 @@ const DATA = {
     <div id="tab-columns" class="tab-content"></div>
     <div id="tab-relationships" class="tab-content"></div>
     <div id="tab-sql" class="tab-content"></div>
+    <div id="tab-pvos" class="tab-content"></div>
 </main>
 
 <!-- ====== FOOTER ====== -->
@@ -2227,12 +2767,17 @@ function render() {
         overview: {pt:'Visão Geral', en:'Overview', es:'Visión General'},
         columns: {pt:'Colunas', en:'Columns', es:'Columnas'},
         relationships: {pt:'Relacionamentos', en:'Relationships', es:'Relaciones'},
-        sql: {pt:'SQL', en:'SQL', es:'SQL'}
+        sql: {pt:'SQL', en:'SQL', es:'SQL'},
+        pvos: {pt:'PVOs Relacionados', en:'Related PVOs', es:'PVOs Relacionados'}
     };
+    var _pvoNames = {};
+    (d.related_pvos || []).forEach(function(r) { _pvoNames[r.pvo_name] = 1; });
+    var pvosCount = Object.keys(_pvoNames).length;
     document.getElementById('tabs-nav').innerHTML =
         '<button class="tab-btn active" data-tab="overview" onclick="switchTab(\'overview\')"><i class="ri-information-line"></i> ' + t(tabLabels.overview) + '</button>' +
         '<button class="tab-btn" data-tab="columns" onclick="switchTab(\'columns\')"><i class="ri-table-line"></i> ' + t(tabLabels.columns) + ' <span class="tab-count">' + d.columns.length + '</span></button>' +
         '<button class="tab-btn" data-tab="relationships" onclick="switchTab(\'relationships\')"><i class="ri-git-branch-line"></i> ' + t(tabLabels.relationships) + ' <span class="tab-count">' + (d.relationships.parents.length + d.relationships.children.length) + '</span></button>' +
+        (pvosCount ? '<button class="tab-btn" data-tab="pvos" onclick="switchTab(\'pvos\')"><i class="ri-database-2-line"></i> ' + t(tabLabels.pvos) + ' <span class="tab-count">' + pvosCount + '</span></button>' : '') +
         '<button class="tab-btn" data-tab="sql" onclick="switchTab(\'sql\')"><i class="ri-code-s-slash-line"></i> SQL <span class="tab-count">' + d.sql.length + '</span></button>';
 
     // Tab 1: Overview
@@ -2242,6 +2787,7 @@ function render() {
         '<div class="stat-card"><div class="stat-card-icon bg-info"><i class="ri-links-line"></i></div><div class="stat-card-info"><div class="stat-card-number" style="color:var(--info)">' + d.relationships.parents.length + '</div><div class="stat-card-label">Foreign Keys</div></div></div>' +
         '<div class="stat-card"><div class="stat-card-icon bg-success"><i class="ri-shield-check-line"></i></div><div class="stat-card-info"><div class="stat-card-number" style="color:var(--success)">' + d.stats.avg_confidence + '%</div><div class="stat-card-label">' + t({pt:'Confiança Média', en:'Avg Confidence', es:'Confianza Promedio'}) + '</div></div></div>' +
         '<div class="stat-card"><div class="stat-card-icon bg-purple"><i class="ri-apps-line"></i></div><div class="stat-card-info"><div class="stat-card-number" style="color:var(--purple)">' + d.stats.categories + '</div><div class="stat-card-label">' + t({pt:'Categorias', en:'Categories', es:'Categorías'}) + '</div></div></div>' +
+        (pvosCount ? '<div class="stat-card"><div class="stat-card-icon bg-purple"><i class="ri-database-2-line"></i></div><div class="stat-card-info"><div class="stat-card-number" style="color:var(--purple)">' + pvosCount + '</div><div class="stat-card-label">PVOs</div></div></div>' : '') +
         '</div>';
 
     var overviewHtml = statsHtml +
@@ -2351,6 +2897,69 @@ function render() {
     }
     document.getElementById('tab-sql').innerHTML = sqlHtml;
 
+    // Tab 5: Related PVOs (grouped by PVO, table inside each group)
+    var pvosHtml = '';
+    if (d.related_pvos && d.related_pvos.length) {
+        // Group rows by pvo_name
+        var pvoGroups = {};
+        var pvoOrder = [];
+        d.related_pvos.forEach(function(row) {
+            var key = row.pvo_name;
+            if (!pvoGroups[key]) {
+                pvoGroups[key] = { pvo_name: row.pvo_name, module_code: row.module_code, rows: [] };
+                pvoOrder.push(key);
+            }
+            pvoGroups[key].rows.push(row);
+        });
+
+        pvosHtml += '<div class="search-container"><i class="ri-search-line search-icon"></i><input class="search-input" type="text" placeholder="' + t({pt:'Filtrar PVOs...', en:'Filter PVOs...', es:'Filtrar PVOs...'}) + '" oninput="filterPvos(this.value)"></div>';
+
+        var pvoHeaders = {
+            pt: ['#','Campo da Tabela','Campo do PVO','Disponível por BICC'],
+            en: ['#','Table Column','PVO Attribute','Available via BICC'],
+            es: ['#','Campo de Tabla','Campo del PVO','Disponible por BICC']
+        };
+        var ph = pvoHeaders[currentLang] || pvoHeaders['pt'];
+
+        pvosHtml += '<div id="pvos-groups">';
+        pvoOrder.forEach(function(key) {
+            var grp = pvoGroups[key];
+            var pvoFile = grp.pvo_name.toLowerCase() + '.html';
+            var pvoHref = (grp.module_code === m.module_code)
+                ? '../pvos/' + pvoFile
+                : '../../' + grp.module_code + '/pvos/' + pvoFile;
+            var biccCount = grp.rows.filter(function(r) { return r.bicc; }).length;
+
+            var grpSearchFields = grp.rows.map(function(r) { return r.column + ' ' + r.pvo_attr; }).join(' ');
+            pvosHtml += '<div class="card pvo-group" data-search="' + (grp.pvo_name + ' ' + grp.module_code + ' ' + grpSearchFields).toLowerCase() + '">' +
+                '<div class="card-header" style="cursor:pointer" onclick="this.parentElement.classList.toggle(\'collapsed\')">' +
+                '<div class="card-header-icon bg-purple"><i class="ri-database-2-line"></i></div>' +
+                '<div class="card-title"><a href="' + pvoHref + langParam() + '" class="wikilink" onclick="event.stopPropagation()">' + grp.pvo_name + '</a></div>' +
+                '<span class="pill pill-info">' + grp.module_code + '</span>' +
+                '<span class="card-badge pill-info" style="background:var(--info-light);color:var(--pill-info-text);border:1px solid var(--info-border)">' + grp.rows.length + ' attrs</span>' +
+                (biccCount ? '<span class="card-badge pill-success" style="background:var(--success-light);color:var(--pill-success-text);border:1px solid var(--success-border)">BICC ' + biccCount + '</span>' : '') +
+                '<i class="ri-arrow-down-s-line" style="font-size:1.2rem;color:var(--text-muted);margin-left:auto;transition:transform 0.2s"></i>' +
+                '</div>' +
+                '<div class="card-body pvo-group-body"><div class="table-wrapper"><table><thead><tr>';
+            ph.forEach(function(h, i) { pvosHtml += '<th' + (i === ph.length - 1 ? ' style="text-align:center"' : '') + '>' + h + '</th>'; });
+            pvosHtml += '</tr></thead><tbody>';
+            grp.rows.forEach(function(row, idx) {
+                var biccHtml = row.bicc
+                    ? '<span class="pill pill-success"><i class="ri-checkbox-circle-fill"></i> ' + t({pt:'Sim',en:'Yes',es:'Sí'}) + '</span>'
+                    : '<span class="pill pill-danger" style="opacity:0.5">' + t({pt:'Não',en:'No',es:'No'}) + '</span>';
+                pvosHtml += '<tr>' +
+                    '<td>' + (idx + 1) + '</td>' +
+                    '<td class="col-name">' + row.column + '</td>' +
+                    '<td class="col-name">' + row.pvo_attr + '</td>' +
+                    '<td style="text-align:center">' + biccHtml + '</td>' +
+                    '</tr>';
+            });
+            pvosHtml += '</tbody></table></div></div></div>';
+        });
+        pvosHtml += '</div>';
+    }
+    document.getElementById('tab-pvos').innerHTML = pvosHtml;
+
     // Footer
     document.getElementById('f-initials').textContent = m.author_initials || '';
     document.getElementById('f-name').textContent = m.author_name || '';
@@ -2397,6 +3006,16 @@ function filterColumns(query) {
     rows.forEach(function(row) {
         var text = row.getAttribute('data-search') || '';
         row.style.display = !q || text.indexOf(q) >= 0 ? '' : 'none';
+    });
+}
+
+/* ====== PVO FILTER ====== */
+function filterPvos(query) {
+    var q = query.toLowerCase().trim();
+    var groups = document.querySelectorAll('#pvos-groups .pvo-group');
+    groups.forEach(function(grp) {
+        var text = grp.getAttribute('data-search') || '';
+        grp.style.display = !q || text.indexOf(q) >= 0 ? '' : 'none';
     });
 }
 

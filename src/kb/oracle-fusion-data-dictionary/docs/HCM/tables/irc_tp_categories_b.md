@@ -75,7 +75,7 @@ Esta tabela é utilizada nos seguintes processos:
 - --- Tabela de configuracao raiz
 
 ### Tabelas-filha (FK de saída)
-- [[irc_tp_categories_tl]] --- via `CATEGORY_ID` (traduÃ§Ãµes da categoria de parceiro terceiro)
+- [[irc_tp_categories_tl]] --- via `CATEGORY_ID` (traduções da categoria de parceiro terceiro)
 - [[irc_tp_partners]] --- via `CATEGORY_ID` (parceiros terceiros da categoria)
 
 ---
