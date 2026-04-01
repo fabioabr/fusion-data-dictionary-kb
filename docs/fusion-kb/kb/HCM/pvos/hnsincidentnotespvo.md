@@ -1,0 +1,74 @@
+---
+id: DOC-HCM-PVO-HNSIncidentNotesPVO
+doc_type: system-doc
+title: "HNSIncidentNotesPVO — PVO Human Capital Management"
+system: Oracle Fusion Cloud ERP
+module: Human Capital Management
+domain: Técnico
+owner: fabio.patria
+team: dados
+status: draft
+confidentiality: internal
+tags:
+  - oracle-fusion
+  - hcm
+  - data-dictionary
+  - pvo
+  - bicc
+aliases:
+  - HNSIncidentNotesPVO
+  - hnsincidentnotespvo
+source_format: markdown
+conversion_pipeline: json-to-md-v1
+conversion_quality: 100
+qa_score: 0
+qa_status: not_reviewed
+created_at: 2026-03-31
+updated_at: 2026-03-31
+---
+
+# HNSIncidentNotesPVO
+
+## 📌 Visão Geral
+
+Extrai notas gerais de incidentes de saúde e segurança. Suporta registro narrativo e contextualização de ocorrências de SST.
+
+**Caminho:** `HcmTopModelAnalyticsGlobalAM.HealthandSafetyAM.HNSIncidentNotesPVO`
+
+| Atributos | Tabelas | PKs | BICC | BICC % |
+|-----------|---------|-----|------|--------|
+| 13 | 1 | 1 | 13 | 100% |
+
+---
+
+## 🔗 Tabelas Relacionadas
+
+- [[hns_notes|HNS_NOTES]] — 13 atributos (1 PKs, 13 BICC)
+
+---
+
+## ⚙️ Atributos
+
+### [[hns_notes|HNS_NOTES]]
+
+| # | Atributo | Coluna | PK | BICC |
+|---|----------|--------|----|------|
+| 1 | HNSNotesPEOAuthorId | AUTHOR_ID | — | ✅ |
+| 2 | HNSNotesPEOCreatedBy | CREATED_BY | — | ✅ |
+| 3 | HNSNotesPEOCreationDate | CREATION_DATE | — | ✅ |
+| 4 | HNSNotesPEOLastUpdateDate | LAST_UPDATE_DATE | — | ✅ |
+| 5 | HNSNotesPEOLastUpdateLogin | LAST_UPDATE_LOGIN | — | ✅ |
+| 6 | HNSNotesPEOLastUpdatedBy | LAST_UPDATED_BY | — | ✅ |
+| 7 | HNSNotesPEONotes | NOTES | — | ✅ |
+| 8 | HNSNotesPEONotesId | NOTES_ID | 🔑 | ✅ |
+| 9 | HNSNotesPEOObjectVersionNumber | OBJECT_VERSION_NUMBER | — | ✅ |
+| 10 | HNSNotesPEOTaskId | TASK_ID | — | ✅ |
+| 11 | HNSNotesPEOTaskTypeCode | TASK_TYPE_CODE | — | ✅ |
+| 12 | HNSNotesPEOUpdatedBy | UPDATED_BY | — | ✅ |
+| 13 | HNSNotesPEOUpdatedDate | UPDATED_DATE | — | ✅ |
+
+---
+
+## 📚 Referências
+
+- [[hcm-module-data-dictionary]] — Dossiê do módulo HCM

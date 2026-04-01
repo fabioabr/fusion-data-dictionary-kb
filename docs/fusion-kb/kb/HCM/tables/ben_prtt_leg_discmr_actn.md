@@ -1,0 +1,134 @@
+---
+id: DOC-HCM-062
+doc_type: system-doc
+title: "BEN_PRTT_LEG_DISCMR_ACTN — Ações de Disclaimer Legal por Participante"
+system: Oracle Fusion Cloud HCM
+module: Human Capital Management
+domain: Técnico
+owner: fabio.patria
+team: dados
+status: draft
+confidentiality: internal
+tags:
+  - oracle-fusion
+  - hcm
+  - data-dictionary
+  - benefits
+  - disclaimer-aceite
+  - legal-disclaimer-action
+aliases:
+  - BEN_PRTT_LEG_DISCMR_ACTN
+  - ben_prtt_leg_discmr_actn
+  - disclaimer-aceite-beneficios
+  - legal-disclaimer-action
+  - ben-prtt-leg-discmr
+source_format: markdown
+conversion_pipeline: manual-v1
+conversion_quality: 100
+qa_score: 0
+qa_date: 2026-03-25
+qa_status: not_reviewed
+created_at: 2026-03-25
+updated_at: 2026-03-25
+---
+
+# BEN_PRTT_LEG_DISCMR_ACTN
+
+## 📌 Visão Geral
+
+Armazena o **registro de aceite de disclaimers legais** pelos participantes durante o processo de inscrição de benefícios.
+
+---
+
+## 🧠 Propósito de Negócio
+
+Esta tabela é utilizada nos seguintes processos:
+
+- **Aceite registrado:** Comprova que o participante aceitou os termos.
+- **Compliance legal:** Documentação de aceite para fins legais.
+- **Auditoria:** Data/hora e IP do aceite.
+
+---
+
+## ⚙️ Colunas Principais
+
+> [!tip] Confiança
+> Escala de 0% a 100% — grau de certeza da descrição gerada por IA com base na documentação oficial Oracle (OEDMF/BICC Release 13/25A).
+> - 🟢 **81–100%** — Coluna presente na documentação oficial Oracle; nome, tipo e descrição confirmados.
+> - 🟡 **51–80%** — Coluna inferida por naming convention ou padrão Oracle; tipo exato pode variar.
+> - 🔴 **0–50%** — Existência ou tipo incertos; pode não existir no release atual; validar no ambiente.
+
+| # | Coluna | Tipo | Nulo? | Categoria | Descrição | FK | Confiança |
+|---|--------|------|-------|-----------|-----------|-----|-----------|
+| 1 | BEN_PRTT_ID | NUMBER(18) | NOT NULL | PK | Identificador único | — | 🟡 75% |
+| 2 | PERSON_ID | NUMBER(18) | NULL | FK | Colaborador | [[per_all_people_f]] | 🟡 80% |
+| 3 | CREATED_BY | VARCHAR2(64) | NOT NULL | Auditoria | Usuário que criou | — | 🟢 95% |
+| 4 | CREATION_DATE | TIMESTAMP | NOT NULL | Auditoria | Data/hora de criação | — | 🟢 95% |
+| 5 | LAST_UPDATED_BY | VARCHAR2(64) | NOT NULL | Auditoria | Último usuário que alterou | — | 🟢 95% |
+| 6 | LAST_UPDATE_DATE | TIMESTAMP | NOT NULL | Auditoria | Data/hora da última alteração | — | 🟢 95% |
+| 7 | OBJECT_VERSION_NUMBER | NUMBER(9) | NULL | Controle | Controle de versão otimista | — | 🟢 90% |
+
+---
+
+## 🔗 Relacionamentos
+
+### Tabelas-pai (FK de entrada)
+- [[per_all_people_f]] — via `PERSON_ID` (quando aplicável)
+
+### Tabelas-filha (FK de saída)
+- Consultar documentação Oracle para tabelas-filha específicas.
+
+---
+
+## 📎 Uso Típico
+
+### Consulta de ações de disclaimer legal por participante
+```sql
+SELECT * FROM BEN_PRTT_LEG_DISCMR_ACTN
+WHERE  ROWNUM <= 100;
+```
+
+### Filtros comuns
+- Consultar documentação Oracle para filtros específicos
+
+---
+
+## 🔒 Observações
+
+- Consultar documentação oficial Oracle para detalhes de uso.
+- Tabela do módulo Benefits (Ações de Disclaimer Legal por Participante).
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[participantdisclaimeractionpvo|ParticipantDisclaimerActionPVO]] (HCM · BICC: 17/19)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| ACTION_TIME | ActionTime | ✅ |
+| BENEFIT_RELATION_ID | BenefitRelationId | ✅ |
+| BUSINESS_GROUP_ID | BusinessGroupId | ✅ |
+| CREATED_BY | CreatedBy | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | LastUpdatedBy | ✅ |
+| LEGAL_DISCLAIMER_ID | LegalDisclaimerId | ✅ |
+| LEGAL_ENTITY_ID | LegalEntityId | ✅ |
+| LER_ID | LerId | ✅ |
+| PER_IN_LER_ID | PerInLerId | ✅ |
+| PERSON_ID | PersonId | ✅ |
+| PGM_ID | PgmId | ✅ |
+| PL_ID | PlId | ✅ |
+| PLIP_ID | PlipId | — |
+| PRTT_LEG_DISCMR_ACTN_ID | PrttLegDiscmrActnId | ✅ |
+| PTIP_ID | PtipId | — |
+| STATUS | Status | ✅ |
+
+---
+
+## 📚 Referências
+
+- [Oracle Docs — BEN_PRTT_LEG_DISCMR_ACTN](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/benprttlegdiscmractn.html)
+- [[hcm-module-data-dictionary]] — Dossiê do módulo HCM

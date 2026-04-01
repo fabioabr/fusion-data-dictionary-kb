@@ -1,0 +1,151 @@
+---
+id: DOC-HCM-143
+doc_type: system-doc
+title: "HRA_EVAL_ROLES — Papéis em Avaliações"
+system: Oracle Fusion Cloud HCM
+module: Human Capital Management
+domain: Técnico
+owner: fabio.patria
+team: dados
+status: draft
+confidentiality: internal
+tags:
+  - oracle-fusion
+  - hcm
+  - data-dictionary
+  - performance-management
+  - eval-role
+  - avaliacao
+  - hra
+aliases:
+  - HRA_EVAL_ROLES
+  - hra_eval_roles
+  - hra-eval-roles
+  - DOC-HCM-143
+  - papéis-em-avaliações
+source_format: markdown
+conversion_pipeline: manual-v1
+conversion_quality: 100
+qa_score: 0
+qa_date: 2026-03-25
+qa_status: not_reviewed
+created_at: 2026-03-25
+updated_at: 2026-03-25
+---
+
+# HRA_EVAL_ROLES
+
+## 📌 Visão Geral
+
+Armazena os **registros de papéis dos participantes em avaliações** no módulo de Performance Management. Cada registro contém dados operacionais do processo de avaliação e gestão de performance.
+
+---
+
+## 🧠 Propósito de Negócio
+
+Esta tabela é utilizada nos seguintes processos:
+
+- **Gestão de papéis dos participantes em avaliações:** Registro e controle operacional.
+- **Workflow de avaliação:** Suporte ao processo de avaliação de performance.
+- **Rastreabilidade:** Histórico completo de ações e decisões.
+- **Relatórios de performance:** Dados para dashboards e análises.
+- **Compliance:** Documentação de processos de avaliação.
+
+---
+
+## ⚙️ Colunas Principais
+
+> [!tip] Confiança
+> Escala de 0% a 100% — grau de certeza da descrição gerada por IA com base na documentação oficial Oracle (OEDMF/BICC Release 13/25A).
+> - 🟢 **81–100%** — Coluna presente na documentação oficial Oracle; nome, tipo e descrição confirmados.
+> - 🟡 **51–80%** — Coluna inferida por naming convention ou padrão Oracle; tipo exato pode variar.
+> - 🔴 **0–50%** — Existência ou tipo incertos; pode não existir no release atual; validar no ambiente.
+
+| # | Coluna | Tipo | Nulo? | Categoria | Descrição | FK | Confiança |
+|---|--------|------|-------|-----------|-----------|-----|-----------|
+| 1 | EVAL_ROLE_ID | NUMBER(18) | NOT NULL | PK | Identificador único | — | 🟢 90% |
+| 2 | PERSON_ID | NUMBER(18) | NULL | FK | Pessoa associada | [[per_all_people_f]] | 🟡 80% |
+| 3 | EVALUATION_ID | NUMBER(18) | NULL | FK | Avaliação associada | [[hra_evaluations]] | 🟡 80% |
+| 4 | STATUS | VARCHAR2(30) | NULL | Status | Status do registro | — | 🟡 75% |
+| 5 | DESCRIPTION | VARCHAR2(2000) | NULL | Texto | Descrição | — | 🟡 75% |
+| 6 | EFFECTIVE_DATE | DATE | NULL | Data | Data de efetividade | — | 🟡 75% |
+| 7 | CREATED_BY | VARCHAR2(64) | NOT NULL | Auditoria | Usuário que criou | — | 🟢 100% |
+| 8 | CREATION_DATE | TIMESTAMP | NOT NULL | Auditoria | Data/hora de criação | — | 🟢 100% |
+| 9 | LAST_UPDATED_BY | VARCHAR2(64) | NOT NULL | Auditoria | Último usuário que alterou | — | 🟢 100% |
+| 10 | LAST_UPDATE_DATE | TIMESTAMP | NOT NULL | Auditoria | Data/hora da última alteração | — | 🟢 100% |
+
+---
+
+## 🔗 Relacionamentos
+
+### Tabelas-pai (FK de entrada)
+- [[per_all_people_f]] — via `PERSON_ID` (colaborador com papel na avaliacao)
+- [[hra_evaluations]] — via `EVALUATION_ID` (avaliacao do papel atribuido)
+
+### Tabelas-filha (FK de saída)
+- Nenhum relacionamento de saída identificado até o momento.
+
+---
+
+## 📎 Uso Típico
+
+### Registros por avaliação
+```sql
+SELECT r.EVAL_ROLE_ID, r.PERSON_ID, r.STATUS, r.DESCRIPTION
+FROM   HRA_EVAL_ROLES r
+WHERE  r.EVALUATION_ID = :p_evaluation_id;
+```
+
+### Registros por pessoa
+```sql
+SELECT r.EVAL_ROLE_ID, r.EVALUATION_ID, r.STATUS
+FROM   HRA_EVAL_ROLES r
+WHERE  r.PERSON_ID = :p_person_id;
+```
+
+---
+
+## 🔒 Observações
+
+- Tabela operacional do processo de papéis dos participantes em avaliações.
+- Integra-se com o workflow de avaliação de performance.
+- O `STATUS` controla o ciclo de vida do registro.
+- Dados são consumidos por relatórios e dashboards de Talent Management.
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[evalroleextractpvo|EvalRoleExtractPVO]] (HCM · BICC: 12/12)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | BusinessGroupId | ✅ |
+| CREATED_BY | CreatedBy | ✅ |
+| CREATION_DATE | CreationDate | ✅ |
+| EVAL_ROLE_ID | EvalRoleId | ✅ |
+| EVALUATION_ID | EvaluationId | ✅ |
+| LAST_UPDATE_DATE | LastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | LastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | LastUpdatedBy | ✅ |
+| MINIMUM_NUM_PCPNS | MinimumNumPcpns | ✅ |
+| OBJECT_VERSION_NUMBER | ObjectVersionNumber | ✅ |
+| ROLE_TYPE_CODE | RoleTypeCode | ✅ |
+| TMPL_ROLE_ID | TmplRoleId | ✅ |
+
+### [[evaluationparticipantrolepvo|EvaluationParticipantRolePVO]] (HCM · BICC: 3/5)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| EVAL_ROLE_ID | EvalRoleId | ✅ |
+| LAST_UPDATE_DATE | EvalRolePEOLastUpdateDate | ✅ |
+| MINIMUM_NUM_PCPNS | EvalRolePEOMinimumNumPcpns | — |
+| ROLE_TYPE_CODE | EvalRolePEORoleTypeCode | ✅ |
+| TMPL_ROLE_ID | EvalRolePEOTmplRoleId | — |
+
+---
+
+## 📚 Referências
+
+- [Oracle Docs — HRA_EVAL_ROLES](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/hraevalroles.html)
+- [[hcm-module-data-dictionary]] — Dossiê do módulo HCM

@@ -1,0 +1,99 @@
+---
+id: DOC-GL-PVO-TcdMappingSetDetailPVO
+doc_type: system-doc
+title: "TcdMappingSetDetailPVO — PVO General Ledger"
+system: Oracle Fusion Cloud ERP
+module: General Ledger
+domain: Técnico
+owner: fabio.patria
+team: dados
+status: draft
+confidentiality: internal
+tags:
+  - oracle-fusion
+  - gl
+  - data-dictionary
+  - pvo
+  - bicc
+aliases:
+  - TcdMappingSetDetailPVO
+  - tcdmappingsetdetailpvo
+source_format: markdown
+conversion_pipeline: json-to-md-v1
+conversion_quality: 100
+qa_score: 0
+qa_status: not_reviewed
+created_at: 2026-03-31
+updated_at: 2026-03-31
+---
+
+# TcdMappingSetDetailPVO
+
+## 📌 Visão Geral
+
+View Object para extração BICC de dados de Tcd Mapping Set Detail. Acessa as tabelas: HWM_TCD_MAPPING_SETS_B, HWM_TCD_MAPPING_SETS_TL, HWM_TCD_MAPPING_SET_DTLS.
+
+**Caminho:** `HcmTopModelAnalyticsGlobalAM.MappingAM.TcdMappingSetDetailPVO`
+
+| Atributos | Tabelas | PKs | BICC | BICC % |
+|-----------|---------|-----|------|--------|
+| 26 | 3 | 1 | 16 | 62% |
+
+---
+
+## 🔗 Tabelas Relacionadas
+
+- [[hwm_tcd_mapping_sets_b|HWM_TCD_MAPPING_SETS_B]] — 11 atributos (7 BICC)
+- [[hwm_tcd_mapping_sets_tl|HWM_TCD_MAPPING_SETS_TL]] — 4 atributos (2 BICC)
+- [[hwm_tcd_mapping_set_dtls|HWM_TCD_MAPPING_SET_DTLS]] — 11 atributos (1 PKs, 7 BICC)
+
+---
+
+## ⚙️ Atributos
+
+### [[hwm_tcd_mapping_sets_b|HWM_TCD_MAPPING_SETS_B]]
+
+| # | Atributo | Coluna | PK | BICC |
+|---|----------|--------|----|------|
+| 1 | TcdMappingSetBPEOCreatedBy | CREATED_BY | — | ✅ |
+| 2 | TcdMappingSetBPEOCreationDate | CREATION_DATE | — | ✅ |
+| 3 | TcdMappingSetBPEOEnterpriseId | ENTERPRISE_ID | — | — |
+| 4 | TcdMappingSetBPEOLastUpdateDate | LAST_UPDATE_DATE | — | ✅ |
+| 5 | TcdMappingSetBPEOLastUpdateLogin | LAST_UPDATE_LOGIN | — | ✅ |
+| 6 | TcdMappingSetBPEOLastUpdatedBy | LAST_UPDATED_BY | — | ✅ |
+| 7 | TcdMappingSetBPEOModuleId | MODULE_ID | — | — |
+| 8 | TcdMappingSetBPEOObjectVersionNumber | OBJECT_VERSION_NUMBER | — | — |
+| 9 | TcdMappingSetBPEOSeedDataSource | SEED_DATA_SOURCE | — | — |
+| 10 | TcdMappingSetBPEOTcdMappingSetCd | TCD_MAPPING_SET_CD | — | ✅ |
+| 11 | TcdMappingSetBPEOTcdMappingSetId | TCD_MAPPING_SET_ID | — | ✅ |
+
+### [[hwm_tcd_mapping_sets_tl|HWM_TCD_MAPPING_SETS_TL]]
+
+| # | Atributo | Coluna | PK | BICC |
+|---|----------|--------|----|------|
+| 1 | TcdMappingSetTLPEODescription | DESCRIPTION | — | ✅ |
+| 2 | TcdMappingSetTLPEOLanguage | LANGUAGE | — | — |
+| 3 | TcdMappingSetTLPEOName | NAME | — | ✅ |
+| 4 | TcdMappingSetTLPEOTcdMappingSetId | TCD_MAPPING_SET_ID | — | — |
+
+### [[hwm_tcd_mapping_set_dtls|HWM_TCD_MAPPING_SET_DTLS]]
+
+| # | Atributo | Coluna | PK | BICC |
+|---|----------|--------|----|------|
+| 1 | TcdMappingSetDetailPEOCreatedBy | CREATED_BY | — | ✅ |
+| 2 | TcdMappingSetDetailPEOCreationDate | CREATION_DATE | — | ✅ |
+| 3 | TcdMappingSetDetailPEOEnterpriseId | ENTERPRISE_ID | — | — |
+| 4 | TcdMappingSetDetailPEOLastUpdateDate | LAST_UPDATE_DATE | — | ✅ |
+| 5 | TcdMappingSetDetailPEOLastUpdateLogin | LAST_UPDATE_LOGIN | — | ✅ |
+| 6 | TcdMappingSetDetailPEOLastUpdatedBy | LAST_UPDATED_BY | — | ✅ |
+| 7 | TcdMappingSetDetailPEOObjectVersionNumber | OBJECT_VERSION_NUMBER | — | — |
+| 8 | TcdMappingSetDetailPEOSeedDataSource | SEED_DATA_SOURCE | — | — |
+| 9 | TcdMappingSetDetailPEOTcdMappingId | TCD_MAPPING_ID | — | — |
+| 10 | TcdMappingSetDetailPEOTcdMappingSetDtlId | TCD_MAPPING_SET_DTL_ID | 🔑 | ✅ |
+| 11 | TcdMappingSetDetailPEOTcdMappingSetId | TCD_MAPPING_SET_ID | — | ✅ |
+
+---
+
+## 📚 Referências
+
+- [[gl-module-data-dictionary]] — Dossiê do módulo GL

@@ -1,0 +1,142 @@
+---
+id: DOC-HCM-148
+doc_type: system-doc
+title: "HRA_FEEDBACK_REQUEST_OBJECTS — Objetos de Solicitação de Feedback"
+system: Oracle Fusion Cloud HCM
+module: Human Capital Management
+domain: Técnico
+owner: fabio.patria
+team: dados
+status: draft
+confidentiality: internal
+tags:
+  - oracle-fusion
+  - hcm
+  - data-dictionary
+  - performance-management
+  - feedback-object
+  - avaliacao
+  - hra
+aliases:
+  - HRA_FEEDBACK_REQUEST_OBJECTS
+  - hra_feedback_request_objects
+  - hra-feedback-request-objects
+  - DOC-HCM-148
+  - objetos-de-solicitação-de-feedback
+source_format: markdown
+conversion_pipeline: manual-v1
+conversion_quality: 100
+qa_score: 0
+qa_date: 2026-03-25
+qa_status: not_reviewed
+created_at: 2026-03-25
+updated_at: 2026-03-25
+---
+
+# HRA_FEEDBACK_REQUEST_OBJECTS
+
+## 📌 Visão Geral
+
+Armazena os **registros de objetos associados a solicitações de feedback** no módulo de Performance Management. Cada registro contém dados operacionais do processo de avaliação e gestão de performance.
+
+---
+
+## 🧠 Propósito de Negócio
+
+Esta tabela é utilizada nos seguintes processos:
+
+- **Gestão de objetos associados a solicitações de feedback:** Registro e controle operacional.
+- **Workflow de avaliação:** Suporte ao processo de avaliação de performance.
+- **Rastreabilidade:** Histórico completo de ações e decisões.
+- **Relatórios de performance:** Dados para dashboards e análises.
+- **Compliance:** Documentação de processos de avaliação.
+
+---
+
+## ⚙️ Colunas Principais
+
+> [!tip] Confiança
+> Escala de 0% a 100% — grau de certeza da descrição gerada por IA com base na documentação oficial Oracle (OEDMF/BICC Release 13/25A).
+> - 🟢 **81–100%** — Coluna presente na documentação oficial Oracle; nome, tipo e descrição confirmados.
+> - 🟡 **51–80%** — Coluna inferida por naming convention ou padrão Oracle; tipo exato pode variar.
+> - 🔴 **0–50%** — Existência ou tipo incertos; pode não existir no release atual; validar no ambiente.
+
+| # | Coluna | Tipo | Nulo? | Categoria | Descrição | FK | Confiança |
+|---|--------|------|-------|-----------|-----------|-----|-----------|
+| 1 | FEEDBACK_REQUEST_OBJECT_ID | NUMBER(18) | NOT NULL | PK | Identificador único | — | 🟢 90% |
+| 2 | PERSON_ID | NUMBER(18) | NULL | FK | Pessoa associada | [[per_all_people_f]] | 🟡 80% |
+| 3 | EVALUATION_ID | NUMBER(18) | NULL | FK | Avaliação associada | [[hra_evaluations]] | 🟡 80% |
+| 4 | STATUS | VARCHAR2(30) | NULL | Status | Status do registro | — | 🟡 75% |
+| 5 | DESCRIPTION | VARCHAR2(2000) | NULL | Texto | Descrição | — | 🟡 75% |
+| 6 | EFFECTIVE_DATE | DATE | NULL | Data | Data de efetividade | — | 🟡 75% |
+| 7 | CREATED_BY | VARCHAR2(64) | NOT NULL | Auditoria | Usuário que criou | — | 🟢 100% |
+| 8 | CREATION_DATE | TIMESTAMP | NOT NULL | Auditoria | Data/hora de criação | — | 🟢 100% |
+| 9 | LAST_UPDATED_BY | VARCHAR2(64) | NOT NULL | Auditoria | Último usuário que alterou | — | 🟢 100% |
+| 10 | LAST_UPDATE_DATE | TIMESTAMP | NOT NULL | Auditoria | Data/hora da última alteração | — | 🟢 100% |
+
+---
+
+## 🔗 Relacionamentos
+
+### Tabelas-pai (FK de entrada)
+- [[per_all_people_f]] — via `PERSON_ID` (colaborador alvo do feedback solicitado)
+- [[hra_evaluations]] — via `EVALUATION_ID` (avaliacao do objeto de feedback)
+
+### Tabelas-filha (FK de saída)
+- Nenhum relacionamento de saída identificado até o momento.
+
+---
+
+## 📎 Uso Típico
+
+### Registros por avaliação
+```sql
+SELECT r.FEEDBACK_REQUEST_OBJECT_ID, r.PERSON_ID, r.STATUS, r.DESCRIPTION
+FROM   HRA_FEEDBACK_REQUEST_OBJECTS r
+WHERE  r.EVALUATION_ID = :p_evaluation_id;
+```
+
+### Registros por pessoa
+```sql
+SELECT r.FEEDBACK_REQUEST_OBJECT_ID, r.EVALUATION_ID, r.STATUS
+FROM   HRA_FEEDBACK_REQUEST_OBJECTS r
+WHERE  r.PERSON_ID = :p_person_id;
+```
+
+---
+
+## 🔒 Observações
+
+- Tabela operacional do processo de objetos associados a solicitações de feedback.
+- Integra-se com o workflow de avaliação de performance.
+- O `STATUS` controla o ciclo de vida do registro.
+- Dados são consumidos por relatórios e dashboards de Talent Management.
+
+---
+
+## 🔗 PVOs Relacionados
+
+### [[feedbackrequestobjextractpvo|FeedbackRequestObjExtractPVO]] (HCM · BICC: 13/13)
+
+| Coluna da Tabela | Atributo do PVO | BICC |
+|------------------|-----------------|------|
+| BUSINESS_GROUP_ID | FeedbackRequestObjPEOBusinessGroupId | ✅ |
+| CREATED_BY | FeedbackRequestObjPEOCreatedBy | ✅ |
+| CREATION_DATE | FeedbackRequestObjPEOCreationDate | ✅ |
+| FEEDBACK_REQ_ID | FeedbackRequestObjPEOFeedbackReqId | ✅ |
+| FEEDBACK_REQ_OBJ_ID | FeedbackRequestObjPEOFeedbackReqObjId | ✅ |
+| LAST_UPDATE_DATE | FeedbackRequestObjPEOLastUpdateDate | ✅ |
+| LAST_UPDATE_LOGIN | FeedbackRequestObjPEOLastUpdateLogin | ✅ |
+| LAST_UPDATED_BY | FeedbackRequestObjPEOLastUpdatedBy | ✅ |
+| OBJECT_ID | FeedbackRequestObjPEOObjectId | ✅ |
+| OBJECT_REFERENCE_DESCRIPTION | FeedbackRequestObjPEOObjectReferenceDescription | ✅ |
+| OBJECT_REFERENCE_NAME | FeedbackRequestObjPEOObjectReferenceName | ✅ |
+| OBJECT_TYPE | FeedbackRequestObjPEOObjectType | ✅ |
+| OBJECT_VERSION_NUMBER | FeedbackRequestObjPEOObjectVersionNumber | ✅ |
+
+---
+
+## 📚 Referências
+
+- [Oracle Docs — HRA_FEEDBACK_REQUEST_OBJECTS](https://docs.oracle.com/en/cloud/saas/human-resources/25a/oedmf/hrafeedbackrequestobjects.html)
+- [[hcm-module-data-dictionary]] — Dossiê do módulo HCM
